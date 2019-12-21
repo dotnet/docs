@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 1f3dbdf5-db0c-4b07-bbb7-375de2a63673
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ExceptionCatcherLeave Method
 Notifies the profiler that control is being passed out of the appropriate `catch` block.  

@@ -23,13 +23,13 @@ The [Type Library Importer (Tlbimp.exe)](../tools/tlbimp-exe-type-library-import
 ## Example  
  The following command produces the Loanlib.dll assembly in the `Loanlib` namespace.  
   
-```  
+```console  
 tlbimp Loanlib.tlb  
 ```  
   
  The following command produces an interop assembly with an altered name (LOANLib.dll).  
   
-```  
+```console  
 tlbimp LoanLib.tlb /out: LOANLib.dll  
 ```  
   

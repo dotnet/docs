@@ -1,5 +1,5 @@
 ---
-title: "Parsing text files with the TextFieldParser object (Visual Basic)"
+title: "Parsing text files with the TextFieldParser object"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "TextFieldParser object, using"
@@ -8,9 +8,11 @@ helpviewer_keywords:
 ms.assetid: fc31d6e6-af0c-403f-8a00-d556b2c57567
 ---
 # Parsing text files with the TextFieldParser object (Visual Basic)
+
 The `TextFieldParser` object allows you to parse and process very large file that are structured as delimited-width columns of text, such as log files or legacy database information. Parsing a text file with `TextFieldParser` is similar to iterating over a text file, while the parse method to extract fields of text is similar to string manipulation methods used to tokenize delimited strings.  
   
 ## Parsing different types of text files  
+
  Text files may have fields of various width, delimited by a character such as a comma or a tab space. Define `TextFieldType` and the delimiter, as in the following example, which uses the `SetDelimiters` method to define a tab-delimited text file:  
   
  [!code-vb[VbVbalrTextFieldParser#21](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrTextFieldParser/VB/Class1.vb#21)]  
@@ -24,6 +26,7 @@ The `TextFieldParser` object allows you to parse and process very large file tha
  If a field does not match the specified format, a <xref:Microsoft.VisualBasic.FileIO.MalformedLineException> exception is thrown. When such exceptions are thrown, the `ErrorLine` and `ErrorLineNumber` properties hold the text causing the exception and the line number of that text.  
   
 ## Parsing files with multiple formats  
+
  The `PeekChars` method of the `TextFieldParser` object can be used to check each field before reading it, allowing you to define multiple formats for the fields and react accordingly. For more information, see [How to: Read From Text Files with Multiple Formats](../../../../visual-basic/developing-apps/programming/drives-directories-files/how-to-read-from-text-files-with-multiple-formats.md).  
   
 ## See also

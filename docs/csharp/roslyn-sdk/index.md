@@ -28,8 +28,8 @@ code-related tasks in your tools and applications.
 The .NET Compiler Platform SDK dramatically lowers the barrier
 to entry for creating code focused tools and applications. It creates many
 opportunities for innovation in areas such as meta-programming, code
-generation and transformation, interactive use of the C# and VB languages,
-and embedding of C# and VB in domain specific languages.
+generation and transformation, interactive use of the C# and Visual Basic languages,
+and embedding of C# and Visual Basic in domain-specific languages.
 
 The .NET Compiler Platform SDK enables you to build ***analyzers*** and
 ***code fixes*** that find and correct coding mistakes. ***Analyzers***

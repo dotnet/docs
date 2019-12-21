@@ -1,5 +1,5 @@
 ---
-title: "Anonymous Types (Visual Basic)"
+title: "Anonymous Types"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.AnonymousType"

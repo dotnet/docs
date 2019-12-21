@@ -1,5 +1,5 @@
 ---
-title: "Attributes (Visual Basic)"
+title: "Attributes"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "attributes [Visual Basic]"

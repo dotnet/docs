@@ -1,9 +1,9 @@
 ---
-title: "How to: Make Multiple Web Requests in Parallel by Using async and await (C#)"
+title: "How to make multiple web requests in parallel by using async and await (C#)"
 ms.date: 07/20/2015
 ms.assetid: 19745899-f97a-4499-a7c7-e813d1447580
 ---
-# How to: Make Multiple Web Requests in Parallel by Using async and await (C#)
+# How to make multiple web requests in parallel by using async and await (C#)
 In an async method, tasks are started when they’re created. The [await](../../../language-reference/operators/await.md) operator is applied to the task at the point in the method where processing can’t continue until the task finishes. Often a task is awaited as soon as it’s created, as the following example shows.  
   
 ```csharp  
@@ -31,7 +31,7 @@ var result = await myTask;
 > [!NOTE]
 > To complete this project, you must have Visual Studio 2012 or higher and the .NET Framework 4.5 or higher installed on your computer.  
   
- For another example that starts multiple tasks at the same time, see [How to: Extend the async Walkthrough by Using Task.WhenAll (C#)](./how-to-extend-the-async-walkthrough-by-using-task-whenall.md).  
+ For another example that starts multiple tasks at the same time, see [How to extend the async walkthrough by using Task.WhenAll (C#)](./how-to-extend-the-async-walkthrough-by-using-task-whenall.md).
   
  You can download the code for this example from [Developer Code Samples](https://code.msdn.microsoft.com/Async-Make-Multiple-Web-49adb82e).  
   
@@ -222,4 +222,4 @@ namespace AsyncExample_MultipleTasks
 
 - [Walkthrough: Accessing the Web by Using async and await (C#)](./walkthrough-accessing-the-web-by-using-async-and-await.md)
 - [Asynchronous Programming with async and await (C#)](./index.md)
-- [How to: Extend the async Walkthrough by Using Task.WhenAll (C#)](./how-to-extend-the-async-walkthrough-by-using-task-whenall.md)
+- [How to extend the async walkthrough by using Task.WhenAll (C#)](./how-to-extend-the-async-walkthrough-by-using-task-whenall.md)

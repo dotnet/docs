@@ -1,5 +1,5 @@
 ---
-title: "How to: Add Custom Methods for LINQ Queries (Visual Basic)"
+title: "How to: Add Custom Methods for LINQ Queries"
 ms.date: 07/20/2015
 ms.assetid: 099b2e2a-83cd-45c6-aa4d-01b398b5faaf
 ---

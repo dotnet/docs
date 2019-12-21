@@ -1,5 +1,5 @@
 ---
-title: "How to: Serialize Using XmlSerializer (Visual Basic)"
+title: "How to: Serialize Using XmlSerializer"
 ms.date: 07/20/2015
 ms.assetid: cace24eb-0f43-4016-8e4b-199e5ef73a1c
 ---

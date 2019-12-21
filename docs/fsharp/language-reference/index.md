@@ -1,5 +1,5 @@
 ---
-title: F# Language Reference
+title: Language Reference
 description: Find F# language feature information from this reference to language tokens, concepts, types, expressions, and compiler-supported construct topics.
 ms.date: 05/16/2016
 ---
@@ -42,7 +42,7 @@ The following table shows reference topics available that describe language conc
 |[namespaces](namespaces.md)|Describes namespace support in F#. A namespace lets you organize code into areas of related functionality by enabling you to attach a name to a grouping of program elements.|
 |[Modules](modules.md)|Describes modules. An F# module is a grouping of F# code, such as values, types, and function values, in an F# program. Grouping code in modules helps keep related code together and helps avoid name conflicts in your program.|
 |[Import Declarations: The `open` Keyword](import-declarations-the-open-keyword.md)|Describes how `open` works. An import declaration specifies a module or namespace whose elements you can reference without using a fully qualified name.|
-|[Signatures](signatures.md)|Describes signatures and signature files. A signature file contains information about the public signatures of a set of F# program elements, such as types, namespaces, and modules. It can be used to specify the accessibility of these program elements.|
+|[Signatures](signature-files.md)|Describes signatures and signature files. A signature file contains information about the public signatures of a set of F# program elements, such as types, namespaces, and modules. It can be used to specify the accessibility of these program elements.|
 |[XML Documentation](xml-documentation.md)|Describes support for generating documentation files for XML doc comments, also known as triple slash comments. You can produce documentation from code comments in F# just as in other .NET languages.|
 |[Verbose Syntax](verbose-syntax.md)|Describes the syntax for F# constructs when lightweight syntax is not enabled. Verbose syntax is indicated by the `#light "off"` directive at the top of the code file.|
 
@@ -104,7 +104,3 @@ The following table lists topics that describe special compiler-supported constr
 |[Compiler Options](compiler-options.md)|Describes the command-line options for the F# compiler.|
 |[Compiler Directives](compiler-directives.md)|Describes processor directives and compiler directives.|
 |[Source Line, File, and Path Identifiers](source-line-file-path-identifiers.md)|Describes the identifiers `__LINE__`, `__SOURCE_DIRECTORY__` and `__SOURCE_FILE__`, which are built-in values that enable you to access the source line number, directory and file name in your code.|
-
-## See also
-
-- [Visual F#](../index.md)

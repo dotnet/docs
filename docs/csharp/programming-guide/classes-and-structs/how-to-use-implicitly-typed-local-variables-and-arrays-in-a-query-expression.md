@@ -1,12 +1,12 @@
 ---
-title: "How to: Use Implicitly Typed Local Variables and Arrays in a Query Expression - C# Programming Guide"
+title: "How to use implicitly typed local variables and arrays in a query expression - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "implicitly-typed local variables [C#], how to use"
 ms.assetid: 6b7354d2-af79-427a-b6a8-f74eb8fd0b91
 ---
-# How to: Use Implicitly Typed Local Variables and Arrays in a Query Expression (C# Programming Guide)
+# How to use implicitly typed local variables and arrays in a query expression (C# Programming Guide)
 You can use implicitly typed local variables whenever you want the compiler to determine the type of a local variable. You must use implicitly typed local variables to store anonymous types, which are often used in query expressions. The following examples illustrate both optional and required uses of implicitly typed local variables in queries.  
   
  Implicitly typed local variables are declared by using the [var](../../language-reference/keywords/var.md) contextual keyword. For more information, see [Implicitly Typed Local Variables](./implicitly-typed-local-variables.md) and [Implicitly Typed Arrays](../arrays/implicitly-typed-arrays.md).  
@@ -27,4 +27,4 @@ You can use implicitly typed local variables whenever you want the compiler to d
 - [Extension Methods](./extension-methods.md)
 - [LINQ (Language-Integrated Query)](../../linq/index.md)
 - [var](../../language-reference/keywords/var.md)
-- [LINQ Query Expressions](../linq-query-expressions/index.md)
+- [LINQ in C#](../../linq/index.md)

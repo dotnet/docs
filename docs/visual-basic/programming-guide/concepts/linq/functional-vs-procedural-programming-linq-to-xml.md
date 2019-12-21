@@ -1,5 +1,5 @@
 ---
-title: "Functional vs. Procedural Programming (LINQ to XML) (Visual Basic)"
+title: "Functional vs. Procedural Programming (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: ea1015a5-d4c8-4d79-8e1e-ba17a40a4f39
 ---

@@ -1,5 +1,5 @@
 ---
-title: "Sub Procedures (Visual Basic)"
+title: "Sub Procedures"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Sub procedures [Visual Basic], about Sub procedures"

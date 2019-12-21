@@ -26,15 +26,9 @@ ms.author: "mairaw"
 
 # Cryptographic Signatures
 
-<a name="top"></a> Cryptographic digital signatures use public key algorithms to provide data integrity. When you sign data with a digital signature, someone else can verify the signature, and can prove that the data originated from you and was not altered after you signed it. For more information about digital signatures, see [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md).
+Cryptographic digital signatures use public key algorithms to provide data integrity. When you sign data with a digital signature, someone else can verify the signature, and can prove that the data originated from you and was not altered after you signed it. For more information about digital signatures, see [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md).
 
 This topic explains how to generate and verify digital signatures using classes in the <xref:System.Security.Cryptography?displayProperty=nameWithType> namespace.
-
-- [Generating Signatures](#generate)
-
-- [Verifying Signatures](#verify)
-
-<a name="generate"></a>
 
 ## Generating Signatures
 
@@ -43,7 +37,6 @@ Digital signatures are usually applied to hash values that represent larger data
 Due to collision problems with SHA1, Microsoft recommends SHA256 or better.
 
 ```vb
-Imports System
 Imports System.Security.Cryptography
 
 Module Module1
@@ -107,10 +100,6 @@ class Class1
 The .NET Framework provides the <xref:System.Security.Cryptography.Xml> namespace, which enables you sign XML. Signing XML is important when you want to verify that the XML originates from a certain source. For example, if you are using a stock quote service that uses XML, you can verify the source of the XML if it is signed.
 
 The classes in this namespace follow the [XML-Signature Syntax and Processing recommendation](https://www.w3.org/TR/xmldsig-core/) from the World Wide Web Consortium.
-
-[Back to top](#top)
-
-<a name="verify"></a>
 
 ## Verifying Signatures
 

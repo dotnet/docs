@@ -7,7 +7,7 @@ author: natke
 ---
 # Machine learning tasks in ML.NET
 
-When building a machine learning model, you first need to define what you are hoping to achieve with your data. This allows you to choose the right machine learning task for your situation. The following list describes the different machine learning tasks that you can choose from and some common use cases.
+When building a machine learning model, you first need to define what you are hoping to achieve with your data. This allows you to choose the right machine learning task for your situation. The following list describes the different machine learning tasks that you can choose from and some common use cases. For more information about choosing the task that is appropriate for your scenario, see [Algorithms](../how-to-choose-an-ml-net-algorithm.md).
 
 Once you have decided which task works for your scenario, then you need to choose the best algorithm to train your model. The available algorithms are listed in the section for each task.
 
@@ -18,7 +18,7 @@ A [supervised machine learning](glossary.md#supervised-machine-learning) task th
 * [Understanding sentiment of Twitter comments](../tutorials/sentiment-analysis.md) as either "positive" or "negative".
 * Diagnosing whether a patient has a certain disease or not.
 * Making a decision to mark an email as "spam" or not.
-* Determining if a photo contains a dog or fruit.
+* Determining if a photo contains a particular item or not, such as a dog or fruit.
 
 For more information, see the [Binary classification](https://en.wikipedia.org/wiki/Binary_classification) article on Wikipedia.
 
@@ -28,15 +28,15 @@ You can train a binary classification model using the following algorithms:
 
 * <xref:Microsoft.ML.Trainers.AveragedPerceptronTrainer>
 * <xref:Microsoft.ML.Trainers.SdcaLogisticRegressionBinaryTrainer>
-* <xref:Microsoft.ML.Trainers.SdcaNonCalibratedBinaryTrainer> 
-* <xref:Microsoft.ML.Trainers.SymbolicSgdLogisticRegressionBinaryTrainer> 
-* <xref:Microsoft.ML.Trainers.LbfgsLogisticRegressionBinaryTrainer> 
-* <xref:Microsoft.ML.Trainers.LightGbm.LightGbmBinaryTrainer> 
-* <xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryTrainer> 
+* <xref:Microsoft.ML.Trainers.SdcaNonCalibratedBinaryTrainer>
+* <xref:Microsoft.ML.Trainers.SymbolicSgdLogisticRegressionBinaryTrainer>
+* <xref:Microsoft.ML.Trainers.LbfgsLogisticRegressionBinaryTrainer>
+* <xref:Microsoft.ML.Trainers.LightGbm.LightGbmBinaryTrainer>
+* <xref:Microsoft.ML.Trainers.FastTree.FastTreeBinaryTrainer>
 * <xref:Microsoft.ML.Trainers.FastTree.FastForestBinaryTrainer>
-* <xref:Microsoft.ML.Trainers.FastTree.GamBinaryTrainer> 
-* <xref:Microsoft.ML.Trainers.FieldAwareFactorizationMachineTrainer> 
-* <xref:Microsoft.ML.Trainers.PriorTrainer> 
+* <xref:Microsoft.ML.Trainers.FastTree.GamBinaryTrainer>
+* <xref:Microsoft.ML.Trainers.FieldAwareFactorizationMachineTrainer>
+* <xref:Microsoft.ML.Trainers.PriorTrainer>
 * <xref:Microsoft.ML.Trainers.LinearSvmTrainer>
 
 ### Binary classification inputs and outputs
@@ -46,7 +46,7 @@ For best results with binary classification, the training data should be balance
 The input label column data must be <xref:System.Boolean>.
 The input features column data must be a fixed-size vector of <xref:System.Single>.
 
-These trainers outputs the following columns:
+These trainers output the following columns:
 
 | Output Column Name | Column Type | Description|
 | -- | -- | -- |
@@ -73,10 +73,10 @@ You can train a multiclass classification model using the following training alg
 * <xref:Microsoft.ML.Trainers.LightGbm.LightGbmMulticlassTrainer>
 * <xref:Microsoft.ML.Trainers.SdcaMaximumEntropyMulticlassTrainer>
 * <xref:Microsoft.ML.Trainers.SdcaNonCalibratedMulticlassTrainer>
-* <xref:Microsoft.ML.Trainers.LbfgsMaximumEntropyMulticlassTrainer> 
-* <xref:Microsoft.ML.Trainers.NaiveBayesMulticlassTrainer> 
+* <xref:Microsoft.ML.Trainers.LbfgsMaximumEntropyMulticlassTrainer>
+* <xref:Microsoft.ML.Trainers.NaiveBayesMulticlassTrainer>
 * <xref:Microsoft.ML.Trainers.OneVersusAllTrainer>
-* <xref:Microsoft.ML.Trainers.PairwiseCouplingTrainer> 
+* <xref:Microsoft.ML.Trainers.PairwiseCouplingTrainer>
 
 ### Multiclass classification inputs and outputs
 
@@ -106,7 +106,7 @@ You can train a regression model using the following algorithms:
 * <xref:Microsoft.ML.Trainers.LightGbm.LightGbmRegressionTrainer>
 * <xref:Microsoft.ML.Trainers.SdcaRegressionTrainer>
 * <xref:Microsoft.ML.Trainers.OlsTrainer>
-* <xref:Microsoft.ML.Trainers.OnlineGradientDescentTrainer> 
+* <xref:Microsoft.ML.Trainers.OnlineGradientDescentTrainer>
 * <xref:Microsoft.ML.Trainers.FastTree.FastTreeRegressionTrainer>
 * <xref:Microsoft.ML.Trainers.FastTree.FastTreeTweedieTrainer>
 * <xref:Microsoft.ML.Trainers.FastTree.FastForestRegressionTrainer>
@@ -134,7 +134,7 @@ An [unsupervised machine learning](glossary.md#unsupervised-machine-learning) ta
 
 You can train a clustering model using the following algorithm:
 
-* <xref:Microsoft.ML.Trainers.KMeansTrainer> 
+* <xref:Microsoft.ML.Trainers.KMeansTrainer>
 
 ### Clustering inputs and outputs
 
@@ -187,7 +187,7 @@ A ranking task constructs a ranker from a set of labeled examples. This example 
 You can train a ranking model with the following algorithms:
 
 * <xref:Microsoft.ML.Trainers.LightGbm.LightGbmRankingTrainer>
-* <xref:Microsoft.ML.Trainers.FastTree.FastTreeRankingTrainer> 
+* <xref:Microsoft.ML.Trainers.FastTree.FastTreeRankingTrainer>
 
 ### Ranking input and outputs
 

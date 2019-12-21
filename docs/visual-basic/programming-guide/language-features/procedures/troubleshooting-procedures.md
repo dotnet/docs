@@ -1,5 +1,5 @@
 ---
-title: "Troubleshooting procedures (Visual Basic)"
+title: "Troubleshooting procedures"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "troubleshooting Visual Basic, procedures"

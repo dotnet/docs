@@ -8,7 +8,7 @@ ms.assetid: 7b18ca1e-d4d6-4c7a-afb9-ce3cebb98a8d
 ---
 # Quickstart (WCF Data Services)
 
-This quickstart helps you become familiar with WCF Data Services and the [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] through a series of tasks that support the topics in [Getting Started](getting-started-with-wcf-data-services.md).
+This quickstart helps you become familiar with WCF Data Services and the Open Data Protocol (OData) through a series of tasks that support the topics in [Getting Started](getting-started-with-wcf-data-services.md).
 
 ## What you'll learn
 
@@ -20,7 +20,7 @@ To complete this quickstart, you must install the following components:
 
 - Visual Studio
 
-- An instance of SQL Server. This includes SQL Server Express, which is included in a default installation of Visual Studio 2015, or as part of the **Data storage and processing** workload in Visual Studio 2017.
+- An instance of SQL Server. This includes SQL Server Express, which is included in a default installation of Visual Studio 2015, or as part of the **Data storage and processing** workload in Visual Studio 2017 or later.
 
 - The Northwind sample database. To download this sample database, see the download page, [Sample Databases for SQL Server](https://go.microsoft.com/fwlink/?linkid=24758).
 

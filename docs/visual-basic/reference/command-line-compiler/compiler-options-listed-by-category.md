@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic Compiler Options Listed by Category"
+title: "Compiler Options Listed by Category"
 ms.date: 04/12/2018
 helpviewer_keywords: 
   - "Visual Basic compiler, options"

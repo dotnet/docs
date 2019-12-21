@@ -1,5 +1,5 @@
 ---
-title: "My.Computer.FileSystem.SpecialDirectories Object (Visual Basic)"
+title: "My.Computer.FileSystem.SpecialDirectories Object"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My.Computer.FileSystem.SpecialDirectories object"

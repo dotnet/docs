@@ -6,8 +6,7 @@ ms.date: 05/01/2019
 ms.topic: overview
 ms.custom: mvc
 ms.author: nakersha
-author: natke
-#Customer intent: As a developer, I want to use ML.NET CLI to automatically select and train a model. 
+#Customer intent: As a developer, I want to use ML.NET CLI to automatically select and train a model.
 ---
 # Automated machine learning with ML.NET
 
@@ -18,7 +17,7 @@ Automated machine learning is a feature of ML.NET that performs automatic model 
 - the source code used for feature selection and model training (to understand the model)
 
 > [!NOTE]
-> This feature is currently in Preview, and material may be subject to change. 
+> This feature is currently in Preview, and material may be subject to change.
 
 Automated ML is currently limited to the machine learning [tasks](resources/tasks.md) of binary classification, multiclass classification, and regression. The other machine learning tasks will be supported in future releases.
 

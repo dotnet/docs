@@ -1,5 +1,5 @@
 ---
-title: "Custom Message Encoder: Custom Text Encoder - WCF"
+title: "Custom Message Encoder: Custom Text Encoder"
 ms.date: "03/30/2017"
 ms.assetid: 68ff5c74-3d33-4b44-bcae-e1d2f5dea0de
 ---
@@ -12,7 +12,7 @@ This sample demonstrates how to implement a custom text message encoder using Wi
 > 
 > `<InstallDrive>:\WF_WCF_Samples`
 > 
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
 > 
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\MessageEncoder\Text`
 
@@ -32,7 +32,7 @@ The custom encoder implementation consists of a message encoder factory, a messa
 
 1. Install ASP.NET 4.0 using the following command.
 
-    ```
+    ```console
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable
     ```
 

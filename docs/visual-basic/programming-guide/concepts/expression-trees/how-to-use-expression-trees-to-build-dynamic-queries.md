@@ -1,5 +1,5 @@
 ---
-title: "How to: Use Expression Trees to Build Dynamic Queries (Visual Basic)"
+title: "How to: Use Expression Trees to Build Dynamic Queries"
 ms.date: 07/20/2015
 ms.assetid: 16278787-7532-4b65-98b2-7a412406c4ee
 ---
@@ -95,7 +95,7 @@ Next
 
 This code uses a fixed number of expressions in the predicate that is passed to the `Queryable.Where` method. However, you can write an application that combines a variable number of predicate expressions that depends on the user input. You can also vary the standard query operators that are called in the query, depending on the input from the user.
 
-## Compiling the Code
+## Compile the code
 
 - Create a new **Console Application** project.
 

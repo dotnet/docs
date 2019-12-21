@@ -37,5 +37,5 @@ This example shows how to specify whether the binding updates only the binding t
 ## See also
 
 - <xref:System.Windows.Data.Binding>
-- [Data Binding Overview](data-binding-overview.md)
+- [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md)
 - [How-to Topics](data-binding-how-to-topics.md)

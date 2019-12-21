@@ -9,7 +9,7 @@ helpviewer_keywords:
 ms.assetid: 7aac0078-a1c5-41f8-b8b0-975510d9dca0
 ---
 # xml:lang Handling in XAML
-The `xml:lang` attribute is an [!INCLUDE[TLA2#tla_xml](../../../includes/tla2sharptla-xml-md.md)]-defined attribute that declares the language and culture information for an element in XML. This same meaning of the attribute persists in XAML; however, some additional considerations apply.  
+The `xml:lang` attribute is an XML-defined attribute that declares the language and culture information for an element in XML. This same meaning of the attribute persists in XAML; however, some additional considerations apply.  
   
 ## XAML Attribute Usage  
   
@@ -21,10 +21,10 @@ The `xml:lang` attribute is an [!INCLUDE[TLA2#tla_xml](../../../includes/tla2sha
   
 |||  
 |-|-|  
-|*rfc3066lang*|A string that is derived from the [RFC 3066](https://go.microsoft.com/fwlink/?LinkId=132454) standard and identifies either a language or a language-region. When it is the latter, the language and region are separated by a single hyphen. See <xref:System.Windows.Markup.XmlLanguage> for more information about the values and format.|  
+|*rfc3066lang*|A string that is derived from the [RFC 3066](https://www.ietf.org/rfc/rfc3066.txt) standard and identifies either a language or a language-region. When it is the latter, the language and region are separated by a single hyphen. See <xref:System.Windows.Markup.XmlLanguage> for more information about the values and format.|  
   
 ## Remarks  
- The definition for the `xml:lang` attribute in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] is derived from `xml:lang` as defined as a "special attribute" by the World Wide Web Consortium (W3C) for [!INCLUDE[TLA2#tla_xml](../../../includes/tla2sharptla-xml-md.md)]. Language and culture information is potentially processed in different ways by elements, depending on their implementations; however, there is no default [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] processing of the `xml:lang` attribute.  
+ The definition for the `xml:lang` attribute in [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] is derived from `xml:lang` as defined as a "special attribute" by the World Wide Web Consortium (W3C) for XML. Language and culture information is potentially processed in different ways by elements, depending on their implementations; however, there is no default [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] processing of the `xml:lang` attribute.  
   
  The default value of the `xml:lang` attribute is an empty string at the attribute level.  
   

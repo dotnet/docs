@@ -1,5 +1,5 @@
 ---
-title: "How to: Change the Value of a Procedure Argument (Visual Basic)"
+title: "How to: Change the Value of a Procedure Argument"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "procedures [Visual Basic], arguments"
@@ -63,7 +63,7 @@ When you call a procedure, each argument you supply corresponds to one of the pa
   
  You can prevent the procedure from modifying the variable itself in the calling code. See [How to: Protect a Procedure Argument Against Value Changes](./how-to-protect-a-procedure-argument-against-value-changes.md).  
   
-## Compiling the Code  
+## Compile the code  
  When you pass a variable by reference, you must use the `ByRef` keyword to specify this mechanism.  
   
  The default in Visual Basic is to pass arguments by value. However, it is good programming practice to include either the [ByVal](../../../../visual-basic/language-reference/modifiers/byval.md) or [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md) keyword with every declared parameter. This makes your code easier to read.  

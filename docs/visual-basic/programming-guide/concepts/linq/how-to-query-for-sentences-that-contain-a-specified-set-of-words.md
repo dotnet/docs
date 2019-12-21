@@ -1,5 +1,5 @@
 ---
-title: "How to: Query for Sentences that Contain a Specified Set of Words (LINQ) (Visual Basic)"
+title: "How to: Query for Sentences that Contain a Specified Set of Words (LINQ)"
 ms.date: 07/20/2015
 ms.assetid: a5ae8ced-61fe-4c10-bb8a-95630e50f603
 ---
@@ -57,9 +57,9 @@ The query works by first splitting the text into sentences, and then splitting t
 
 In the call to <xref:System.String.Split%2A>, the punctuation marks are used as separators in order to remove them from the string. If you did not do this, for example you could have a string "Historically," that would not match "Historically" in the `wordsToMatch` array. You may have to use additional separators, depending on the types of punctuation found in the source text.
 
-## Compiling the Code
+## Compile the code
 
-Create a VB.NET console application project, with an `Imports` statement for the System.Linq namespace.
+Create a Visual Basic console application project, with an `Imports` statement for the System.Linq namespace.
 
 ## See also
 

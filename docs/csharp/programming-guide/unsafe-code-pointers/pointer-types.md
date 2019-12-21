@@ -17,7 +17,7 @@ void* identifier; //allowed but not recommended
 
 The type specified before the `*` in a pointer type is called the **referent type**. Only an [unmanaged type](../../language-reference/builtin-types/unmanaged-types.md) can be a referent type.
 
-Pointer types do not inherit from [object](../../language-reference/keywords/object.md) and no conversions exist between pointer types and `object`. Also, boxing and unboxing do not support pointers. However, you can convert between different pointer types and between pointer types and integral types.
+Pointer types do not inherit from [object](../../language-reference/builtin-types/reference-types.md) and no conversions exist between pointer types and `object`. Also, boxing and unboxing do not support pointers. However, you can convert between different pointer types and between pointer types and integral types.
 
 When you declare multiple pointers in the same declaration, the asterisk (*) is written together with the underlying type only; it is not used as a prefix to each pointer name. For example:
 
@@ -81,5 +81,6 @@ For more information, see the [Pointer types](~/_csharplang/spec/unsafe-code.md#
 - [C# Programming Guide](../index.md)
 - [Unsafe Code and Pointers](index.md)
 - [Pointer Conversions](pointer-conversions.md)
-- [Types](../../language-reference/keywords/types.md)
+- [Reference types](../../language-reference/keywords/reference-types.md)
+- [Value types](../../language-reference/keywords/value-types.md)
 - [unsafe](../../language-reference/keywords/unsafe.md)

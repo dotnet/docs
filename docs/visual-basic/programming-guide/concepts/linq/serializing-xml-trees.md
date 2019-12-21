@@ -1,5 +1,5 @@
 ---
-title: "Serializing XML Trees (Visual Basic)"
+title: "Serializing XML Trees"
 ms.date: 07/20/2015
 ms.assetid: 2c340695-a726-4030-85be-6975d8a149cf
 ---

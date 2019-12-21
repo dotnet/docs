@@ -23,7 +23,7 @@ var v = new { Amount = 108, Message = "Hello" };
 Console.WriteLine(v.Amount + v.Message);  
 ```  
   
- Anonymous types typically are used in the [select](../../language-reference/keywords/select-clause.md) clause of a query expression to return a subset of the properties from each object in the source sequence. For more information about queries, see [LINQ Query Expressions](../linq-query-expressions/index.md).  
+ Anonymous types typically are used in the [select](../../language-reference/keywords/select-clause.md) clause of a query expression to return a subset of the properties from each object in the source sequence. For more information about queries, see [LINQ in C#](../../linq/index.md).  
   
  Anonymous types contain one or more public read-only properties. No other kinds of class members, such as methods or events, are valid. The expression that is used to initialize a property cannot be `null`, an anonymous function, or a pointer type.  
   
@@ -42,7 +42,7 @@ var anonArray = new[] { new { name = "apple", diam = 4 }, new { name = "grape", 
 ```  
   
 ## Remarks  
- Anonymous types are [class](../../language-reference/keywords/class.md) types that derive directly from [object](../../language-reference/keywords/object.md), and that cannot be cast to any type except [object](../../language-reference/keywords/object.md). The compiler provides a name for each anonymous type, although your application cannot access it. From the perspective of the common language runtime, an anonymous type is no different from any other reference type.  
+ Anonymous types are [class](../../language-reference/keywords/class.md) types that derive directly from [object](../../language-reference/builtin-types/reference-types.md), and that cannot be cast to any type except [object](../../language-reference/builtin-types/reference-types.md). The compiler provides a name for each anonymous type, although your application cannot access it. From the perspective of the common language runtime, an anonymous type is no different from any other reference type.  
   
  If two or more anonymous object initializers in an assembly specify a sequence of properties that are in the same order and that have the same names and types, the compiler treats the objects as instances of the same type. They share the same compiler-generated type information.  
   
@@ -54,5 +54,5 @@ var anonArray = new[] { new { name = "apple", diam = 4 }, new { name = "grape", 
 
 - [C# Programming Guide](../index.md)
 - [Object and Collection Initializers](./object-and-collection-initializers.md)
-- [Getting Started with LINQ in C#](../concepts/linq/getting-started-with-linq.md)
-- [LINQ Query Expressions](../linq-query-expressions/index.md)
+- [Getting Started with LINQ in C#](/dotnet/csharp/programming-guide/concepts/linq/)
+- [LINQ in C#](../../linq/index.md)

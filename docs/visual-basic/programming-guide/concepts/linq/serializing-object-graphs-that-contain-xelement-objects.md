@@ -1,5 +1,5 @@
 ---
-title: "Serializing Object Graphs that Contain XElement Objects (Visual Basic)"
+title: "Serializing Object Graphs that Contain XElement Objects"
 ms.date: 07/20/2015
 ms.assetid: c0cc5c92-5ca3-44b1-98dd-371601df721b
 ---

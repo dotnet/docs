@@ -7,19 +7,37 @@ Thank you for your interest in contributing to the .NET documentation!
 
 The document covers the process for contributing to the articles and code samples that are hosted on the [.NET documentation site](https://docs.microsoft.com/dotnet). Contributions may be as simple as typo corrections or as complex as new articles.
 
+- [DOs and DON'Ts](#dos-and-donts)
 - [Process for contributing](#process-for-contributing)
 - [The C# interactive experience](#the-c-interactive-experience)
-- [DOs and DON'Ts](#dos-and-donts)
 - [Contributor License Agreement](#contributor-license-agreement)
 
 This repository contains the conceptual documentation for .NET. The .NET documentation site is built from multiple repositories in addition to this one:
 
-- [Code samples and snippets](https://github.com/dotnet/samples)  
+- [Code samples and snippets](https://github.com/dotnet/samples)
     Issues and tasks for this repository are tracked in [dotnet/docs/issues](https://github.com/dotnet/docs/issues).
-- [.NET API reference](https://github.com/dotnet/dotnet-api-docs)  
+- [.NET API reference](https://github.com/dotnet/dotnet-api-docs)
     Issues and tasks for this repository are tracked in [dotnet/dotnet-api-docs/issues](https://github.com/dotnet/dotnet-api-docs/issues).
-- [.NET Compiler Platform SDK reference](https://github.com/dotnet/roslyn-api-docs)  
-    Issues and taks for this repo are tracked in [dotnet/docs/issues](https://github.com/dotnet/docs/issues).
+- [.NET Compiler Platform SDK reference](https://github.com/dotnet/roslyn-api-docs)
+    Issues and tasks for this repo are tracked in [dotnet/docs/issues](https://github.com/dotnet/docs/issues).
+
+## DOs and DON'Ts
+
+The following list shows some guiding rules that you should keep in mind when you're contributing to the .NET documentation:
+
+- **DON'T** surprise us with large pull requests. Instead, file an issue and start a discussion so we can agree on a direction before you invest a large amount of time. For bulk changes, break the work into smaller PRs (up to 100 files). This guideline is strongly recommended if your PR doesn't follow the following guidelines.
+- **DO** look at the current [up for grabs](https://github.com/dotnet/docs/labels/up-for-grabs) issues for suggestions on tasks.
+- **DO** create one PR for each task. PRs that include multiple unrelated changes are much harder to review. That delays reviews and merging PRs. This guideline applies to reviews as well: we try not to suggest unrelated changes in reviews; we ask that community reviews adhere to this guideline.
+- **DO** provide a clear description of the work in your PR. Tell us what changed and why. The default description of "update article.md" isn't helpful for reviewers.
+- **DON'T** submit PRs for style-only changes without prior discussion. These PRs take extra time to review for accuracy, and merging them often causes merge conflicts with other important updates. We are working toward following a consistent style, but we are balancing that work with other tasks. Articles are brought into style conformance when we make major updates for other reasons.
+- **DO** read the [style guide](./styleguide/template.md) and [voice and tone](./styleguide/voice-tone.md) guidelines. New additions should follow these guidelines.
+- **DO** create a separate branch on your fork before working on the articles.
+- **DO** follow the [GitHub Flow workflow](https://guides.github.com/introduction/flow/).
+- **DO** blog and tweet (or whatever) about your contributions, frequently!
+
+These guidelines help us respect everyone's time. Many people contribute to these repositories. Following these guidelines make it easier for us to review and merge your PR in a timely fashion. These practices minimize conflicts with PRs from other community members and our team. Because PRs that don't follow these guidelines often cause extra work for us and community members, those PRs may be rejected. If you want an exception, start by creating an issue.
+
+> Note: you might notice that some of the topics are not currently following all the guidelines specified here and on the [style guide](./styleguide/template.md) as well. We're working towards achieving consistency throughout the site.
 
 ## Process for contributing
 
@@ -38,7 +56,7 @@ You can also choose from existing issues for which community contributions are w
 
 - **New content authoring**. If you're interested in authoring your own topic, these issues list topics that we know we'd like to add to our doc set. Let us know before you begin working on a topic, though. If you're interested in writing a topic that isn't listed here, open an issue.
 
-You can also look at our [open issues](https://github.com/dotnet/docs/issues) list and volunteer to work on the ones you're interested in. We use the [up-for-grabs](https://github.com/dotnet/docs/labels/up-for-grabs) label to tag issues open for contribution. 
+You can also look at our [open issues](https://github.com/dotnet/docs/issues) list and volunteer to work on the ones you're interested in. We use the [up-for-grabs](https://github.com/dotnet/docs/labels/up-for-grabs) label to tag issues open for contribution.
 
 **Step 2:** Fork the `dotnet/docs`, `dotnet/samples` or `dotnet/dotnet-api-docs` repos as needed and create a branch for your changes.
 
@@ -114,7 +132,7 @@ For more information, see the [Samples Readme](https://github.com/dotnet/samples
 ## The C# interactive experience
 
 Short code samples in C# can use the `csharp-interactive` language tag to specify a C# sample that runs in the browser. (Inline code samples use the `csharp-interactive` tag, for snippets included from source, use the `code-csharp-interactive` tag.) These code samples display a code window and an output window in the article. The output window displays any output from
-executing the interactive code once the user has run the sample. 
+executing the interactive code once the user has run the sample.
 
 The C# interactive experience changes how we work with samples. Visitors can run the sample
 to see the results. A number of factors help determine if the sample
@@ -127,23 +145,10 @@ or corresponding text should include information about the output.
 - When both the sample and the expected output is short, consider showing the output. It saves a bit of time.
 - Articles explaining how current culture or invariant culture affect output should explain the expected output. The interactive REPL (Read Evaluate Print Loop) runs on a Linux-based host. The default culture, and the invariant culture produce different output on different operating systems and machines. The article should explain the output in Windows, Linux, and Mac systems.
 
-### When to exclude expected output from the sample 
+### When to exclude expected output from the sample
 
 - Articles where the sample generates a larger output should not include that in comments. It obscures the code once the sample has been run.
 - Articles where the sample demonstrates a topic, but the output isn't integral to understanding it. For example, code that runs a LINQ query to explain query syntax and then display every item in the output collection.
-
-## DOs and DON'Ts
-
-The following list shows some guiding rules that you should keep in mind when you're contributing to the .NET documentation:
-
-- **DON'T** surprise us with large pull requests. Instead, file an issue and start a discussion so we can agree on a direction before you invest a large amount of time. For bulk changes, break the work into smaller PRs (up to 100 files).
-- **DO** read the [style guide](./styleguide/template.md) and [voice and tone](./styleguide/voice-tone.md) guidelines.
-- **DO** use the [template](./styleguide/template.md) file as the starting point of your work.
-- **DO** create a separate branch on your fork before working on the articles.
-- **DO** follow the [GitHub Flow workflow](https://guides.github.com/introduction/flow/).
-- **DO** blog and tweet (or whatever) about your contributions, frequently!
-
-> Note: you might notice that some of the topics are not currently following all the guidelines specified here and on the [style guide](./styleguide/template.md) as well. We're working towards achieving consistency throughout the site.
 
 ## Contributor License Agreement
 

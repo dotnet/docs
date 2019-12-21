@@ -1,5 +1,5 @@
 ---
-title: "Implementing IEnumerable in Visual Basic"
+title: "Implementing IEnumerable"
 ms.date: 07/31/2018
 helpviewer_keywords: 
   - "control flow [Visual Basic]"

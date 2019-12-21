@@ -1,5 +1,5 @@
 ---
-title: "Creating XML Trees (Visual Basic)"
+title: "Creating XML Trees"
 ms.date: 07/20/2015
 ms.assetid: e86ba12b-17de-4579-81bb-66322b84cfbe
 ---

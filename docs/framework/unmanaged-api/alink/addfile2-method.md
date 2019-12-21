@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 03bc49bf-a89b-4fb6-a88d-97482e061195
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # AddFile2 Method
 Adds files to the assembly. Can also be used to create unbound modules.  

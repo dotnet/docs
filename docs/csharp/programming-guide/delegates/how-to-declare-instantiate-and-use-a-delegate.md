@@ -1,12 +1,12 @@
 ---
-title: "How to: Declare, Instantiate, and Use a Delegate - C# Programming Guide"
+title: "How to declare, instantiate, and use a delegate - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "delegates [C#], declaring and instantiating"
 ms.assetid: 61c4895f-f785-48f8-8bfe-db73b411c4ae
 ---
-# How to: Declare, Instantiate, and Use a Delegate (C# Programming Guide)
+# How to declare, instantiate, and use a Delegate (C# Programming Guide)
 In C# 1.0 and later, delegates can be declared as shown in the following example.  
   
  [!code-csharp[csProgGuideDelegates#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#13)]  
@@ -17,7 +17,7 @@ In C# 1.0 and later, delegates can be declared as shown in the following example
   
  [!code-csharp[csProgGuideDelegates#32](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#32)]  
   
- In C# 2.0 and later, it is also possible to use an anonymous method to declare and initialize a [delegate](../../language-reference/keywords/delegate.md), as shown in the following example.  
+ In C# 2.0 and later, it is also possible to use an anonymous method to declare and initialize a [delegate](../../language-reference/builtin-types/reference-types.md), as shown in the following example.  
   
  [!code-csharp[csProgGuideDelegates#15](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#15)]  
   

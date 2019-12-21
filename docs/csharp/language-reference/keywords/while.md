@@ -1,7 +1,6 @@
 ---
 title: "while - C# Reference"
 ms.custom: seodec18
-
 ms.date: 05/28/2018
 f1_keywords: 
   - "while_CSharpKeyword"
@@ -28,7 +27,7 @@ The following example shows the usage of the `while` statement. Select **Run** t
 
 ## C# language specification
 
-For more information, see [The while statement](~/_csharplang/spec/statements.md#the-while-statement) section of the [C# language specification](../language-specification/index.md).
+For more information, see [The while statement](~/_csharplang/spec/statements.md#the-while-statement) section of the [C# language specification](/dotnet/csharp/language-reference/language-specification/introduction).
 
 ## See also
 

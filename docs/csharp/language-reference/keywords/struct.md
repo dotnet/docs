@@ -47,7 +47,7 @@ For examples, see [Using Structs](../../programming-guide/classes-and-structs/us
 - [C# Keywords](index.md)
 - [Default Values Table](default-values-table.md)
 - [Built-In Types Table](built-in-types-table.md)
-- [Types](types.md)
+- [Types](/dotnet/csharp/language-reference/keywords)
 - [Value Types](value-types.md)
 - [class](class.md)
 - [interface](interface.md)

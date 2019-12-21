@@ -18,7 +18,7 @@ items:
 - title: Make decisions using the if statement
   durationInMinutes: 4
   content: |
-    Run the following code in the interactive window. To do that, type the following code block in the interactive window and click the **Run** button:
+    Run the following code in the interactive window. Select the **Enter focus mode** button. Then, type the following code block in the interactive window and select **Run**:
 
     ```csharp
     int a = 5;
@@ -35,7 +35,7 @@ items:
     int b = 3;
     ```
 
-    Click the **Run** button again. Because the answer is less than 10, nothing is printed. The **condition** you're testing is false. You don't have any code to execute because you've only
+    Select the **Run** button again. Because the answer is less than 10, nothing is printed. The **condition** you're testing is false. You don't have any code to execute because you've only
     written one of the possible branches for an `if` statement: the true branch.
 
     > [!TIP]
@@ -276,7 +276,7 @@ items:
 
 - title: Congratulations!
   content: |
-    You've completed the "branches and loops" interactive tutorial. You can click the **list collection** link below to start the next interactive tutorial, or you can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET Core SDK, create a project on your machine, and keep coding. The "Next steps" section brings you back to these tutorials.
+    You've completed the "branches and loops" interactive tutorial. You can select the **list collection** link below to start the next interactive tutorial, or you can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET Core SDK, create a project on your machine, and keep coding. The "Next steps" section brings you back to these tutorials.
 
     You can learn more about these concepts in these topics:
 

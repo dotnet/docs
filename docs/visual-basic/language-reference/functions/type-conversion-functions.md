@@ -1,5 +1,5 @@
 ---
-title: "Type Conversion Functions (Visual Basic)"
+title: "Type Conversion Functions"
 ms.date: 10/24/2018
 f1_keywords:
   - "vb.CUShort"

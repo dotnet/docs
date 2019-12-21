@@ -1,5 +1,5 @@
 ---
-title: "Events (Visual Basic)"
+title: "Events"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "events [Visual Basic], about events"

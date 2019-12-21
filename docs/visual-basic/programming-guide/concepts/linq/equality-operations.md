@@ -1,5 +1,5 @@
 ---
-title: "Equality Operations (Visual Basic)"
+title: "Equality Operations"
 ms.date: 07/20/2015
 ms.assetid: 1f2fcf87-6f52-4830-b9af-861f9ad999dc
 ---

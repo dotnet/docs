@@ -1,5 +1,5 @@
 ---
-title: "How to: Generate Text Files from XML (Visual Basic)"
+title: "How to: Generate Text Files from XML"
 ms.date: 07/20/2015
 ms.assetid: 3b33f191-4abe-4419-b81b-3cb81d9a317f
 ---

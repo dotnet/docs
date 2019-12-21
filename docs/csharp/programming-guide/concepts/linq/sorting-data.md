@@ -125,5 +125,5 @@ foreach (string str in query)
 - <xref:System.Linq>
 - [Standard Query Operators Overview (C#)](./standard-query-operators-overview.md)
 - [orderby clause](../../../language-reference/keywords/orderby-clause.md)
-- [How to: Order the Results of a Join Clause](../../linq-query-expressions/how-to-order-the-results-of-a-join-clause.md)
-- [How to: Sort or Filter Text Data by Any Word or Field (LINQ) (C#)](./how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md)
+- [Order the results of a join clause](../../../linq/order-the-results-of-a-join-clause.md)
+- [How to sort or filter text data by any word or field (LINQ) (C#)](./how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md)

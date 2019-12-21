@@ -1,5 +1,5 @@
 ---
-title: "XElement Class Overview (Visual Basic)"
+title: "XElement Class Overview"
 ms.date: 07/20/2015
 ms.assetid: 52331fcd-6023-4d19-b423-7b24f2d86ded
 ---

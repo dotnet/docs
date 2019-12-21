@@ -15,10 +15,10 @@ The following table shows the keywords for built-in C# types, which are aliases 
 
 |C# type|.NET type|  
 |--------------|-------------------------|  
-|[bool](bool.md)|<xref:System.Boolean?displayProperty=nameWithType>|  
+|[bool](../builtin-types/bool.md)|<xref:System.Boolean?displayProperty=nameWithType>|  
 |[byte](../builtin-types/integral-numeric-types.md)|<xref:System.Byte?displayProperty=nameWithType>|  
 |[sbyte](../builtin-types/integral-numeric-types.md)|<xref:System.SByte?displayProperty=nameWithType>|  
-|[char](char.md)|<xref:System.Char?displayProperty=nameWithType>|  
+|[char](../builtin-types/char.md)|<xref:System.Char?displayProperty=nameWithType>|  
 |[decimal](../builtin-types/floating-point-numeric-types.md)|<xref:System.Decimal?displayProperty=nameWithType>|  
 |[double](../builtin-types/floating-point-numeric-types.md)|<xref:System.Double?displayProperty=nameWithType>|  
 |[float](../builtin-types/floating-point-numeric-types.md)|<xref:System.Single?displayProperty=nameWithType>|  
@@ -26,10 +26,10 @@ The following table shows the keywords for built-in C# types, which are aliases 
 |[uint](../builtin-types/integral-numeric-types.md)|<xref:System.UInt32?displayProperty=nameWithType>|  
 |[long](../builtin-types/integral-numeric-types.md)|<xref:System.Int64?displayProperty=nameWithType>|  
 |[ulong](../builtin-types/integral-numeric-types.md)|<xref:System.UInt64?displayProperty=nameWithType>|  
-|[object](object.md)|<xref:System.Object?displayProperty=nameWithType>|  
+|[object](../builtin-types/reference-types.md)|<xref:System.Object?displayProperty=nameWithType>|  
 |[short](../builtin-types/integral-numeric-types.md)|<xref:System.Int16?displayProperty=nameWithType>|  
 |[ushort](../builtin-types/integral-numeric-types.md)|<xref:System.UInt16?displayProperty=nameWithType>|  
-|[string](string.md)|<xref:System.String?displayProperty=nameWithType>|  
+|[string](../builtin-types/reference-types.md)|<xref:System.String?displayProperty=nameWithType>|  
   
 ## Remarks
 
@@ -64,4 +64,4 @@ Console.WriteLine(doubleType.FullName);
 - [Value types](value-types.md)
 - [Reference types](reference-types.md)
 - [Default values table](default-values-table.md)
-- [dynamic](dynamic.md)
+- [dynamic](../builtin-types/reference-types.md)

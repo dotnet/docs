@@ -1,8 +1,8 @@
 ---
 title: .NET Core Guide
-description: .NET Core is a modular, high-performance implementation of .NET for creating Windows, Linux, and Mac apps. Learn about .NET Core to get started.
+description: .NET Core is a modular, high-performance implementation of .NET for creating Windows, Linux, and macOS apps. Learn about .NET Core to get started.
 author: richlander
-ms.date: 09/23/2019
+ms.date: 12/04/2019
 ms.custom: "updateeachrelease"
 ---
 # .NET Core Guide
@@ -19,13 +19,13 @@ Download the [.NET Core SDK](https://www.microsoft.com/net/download) to try .NET
 
 All .NET Core versions are available at [.NET Core Downloads](https://dotnet.microsoft.com/download/dotnet-core) if you're looking for another .NET Core version.
 
-## .NET Core 3.0
+## .NET Core 3.1
 
-The latest version is .NET Core 3.0. New features include Windows Desktop support with Windows Presentation Foundation (WPF) and Windows Forms, full stack C# web development with Blazor, new enhancements to SignalR and Azure SignalR Service, new C# language features with C# 8, and much more. For a full listing of the new features in .NET Core 3.0, see [What's new in .NET Core 3.0](./whats-new/dotnet-core-3-0.md).
+The latest version is .NET Core 3.1. 3.1 includes minor improvements over .NET Core 3.0, however, .NET Core 3.1 is a [long-term supported release](https://dotnet.microsoft.com/platform/support/policy/dotnet-core). For more information about the .NET Core 3.1 release, see [What's new in .NET Core 3.1](./whats-new/dotnet-core-3-1.md).
 
 ## Create your first application
 
-After installing the .NET Core SDK, open a command prompt. Type the following `dotnet` commands to create and run a C# application:
+After installing the .NET Core SDK, open a command prompt. Enter the following `dotnet` commands to create and run a C# application:
 
 ```dotnetcli
 dotnet new console

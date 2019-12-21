@@ -41,4 +41,4 @@ For the Microsoft Visual Basic .NET language specifically, you can use the langu
 - <xref:System.Windows.UIElement.AddHandler%2A>
 - [Marking Routed Events as Handled, and Class Handling](marking-routed-events-as-handled-and-class-handling.md)
 - [Routed Events Overview](routed-events-overview.md)
-- [XAML Overview (WPF)](xaml-overview-wpf.md)
+- [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)

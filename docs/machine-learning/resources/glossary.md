@@ -23,9 +23,9 @@ A [classification](#classification) case where the [label](#label) is only one o
 
 ## Calibration
 
-Calibration is the process of mapping a raw score onto a class membership, for binary and multiclass classification. Some ML.NET trainers have a `NonCalibrated` suffix. These algorithms produce a raw score that then must be mapped to a class probability. 
+Calibration is the process of mapping a raw score onto a class membership, for binary and multiclass classification. Some ML.NET trainers have a `NonCalibrated` suffix. These algorithms produce a raw score that then must be mapped to a class probability.
 
-## Catalog 
+## Catalog
 
 In ML.NET, a catalog is a collection of extension functions, grouped by a common purpose.
 
@@ -164,7 +164,7 @@ The process of identifying a [model](#model) for a given training data set. For 
 
 An ML.NET class that implements the <xref:Microsoft.ML.ITransformer> interface.
 
-A transformer transforms one <xref:Microsoft.ML.IDataView> into another. A transformer is created by training an [estimator](#estimator), or an estimator pipeline. 
+A transformer transforms one <xref:Microsoft.ML.IDataView> into another. A transformer is created by training an [estimator](#estimator), or an estimator pipeline.
 
 ## Unsupervised machine learning
 

@@ -8,9 +8,9 @@ ms.date: 10/02/2018
 
 As described earlier, when you use event-based communication, a microservice publishes an event when something notable happens, such as when it updates a business entity. Other microservices subscribe to those events. When a microservice receives an event, it can update its own business entities, which might lead to more events being published. This is the essence of the eventual consistency concept. This publish/subscribe system is usually performed by using an implementation of an event bus. The event bus can be designed as an interface with the API needed to subscribe and unsubscribe to events and to publish events. It can also have one or more implementations based on any inter-process or messaging communication, such as a messaging queue or a service bus that supports asynchronous communication and a publish/subscribe model.
 
-You can use events to implement business transactions that span multiple services, which gives you eventual consistency between those services. An eventually consistent transaction consists of a series of distributed actions. At each action, the microservice updates a business entity and publishes an event that triggers the next action.
+You can use events to implement business transactions that span multiple services, which gives you eventual consistency between those services. An eventually consistent transaction consists of a series of distributed actions. At each action, the microservice updates a business entity and publishes an event that triggers the next action. Figure 6-18 below, shows a PriceUpdated event published through and event bus, so the price update is propagated to the Basket and other microservices.
 
-![The Catalog microservice using event driven communication through an event bus, to achieve eventual consistency with Basket and additional microservices.](./media/image19.png)
+![Diagram of asynchronous event-driven communication with an event bus.](./media/integration-event-based-microservice-communications/event-driven-communication.png)
 
 **Figure 6-18**. Event-driven communication based on an event bus
 
@@ -59,11 +59,11 @@ There are only a few kinds of libraries you should share across microservices. O
 
 An event bus allows publish/subscribe-style communication between microservices without requiring the components to explicitly be aware of each other, as shown in Figure 6-19.
 
-![Basic pub/sub patter, Microservice A publishes to Event Bus, which distributes to subscribing microservices B and C, without the publisher needing to know the subscribers.](./media/image20.png)
+![A diagram showing the basic publish/subscribe pattern.](./media/integration-event-based-microservice-communications/publish-subscribe-basics.png)
 
 **Figure 6-19**. Publish/subscribe basics with an event bus
 
-The event bus is related to the Observer pattern and the publish-subscribe pattern.
+The above diagram shows that microservice A publishes to Event Bus, which distributes to subscribing microservices B and C, without the publisher needing to know the subscribers. The event bus is related to the Observer pattern and the publish-subscribe pattern.
 
 ### Observer pattern
 
@@ -87,11 +87,11 @@ In Figure 6-19 you can see how, from an application point of view, the event bus
 
 In Figure 6-20 you can see an abstraction of an event bus with multiple implementations based on infrastructure messaging technologies like RabbitMQ, Azure Service Bus, or another event/message broker.
 
-![It's good to have the event bus defined through an interface so it can be implemented with several technologies, like RabbitMQ Azure Service bus or others.](./media/image21.png)
+![Diagram showing the addition of an event bus abstraction layer.](./media/integration-event-based-microservice-communications/multiple-implementations-event-bus.png)
 
 **Figure 6- 20.** Multiple implementations of an event bus
 
-However, and as mentioned previously, using your own abstractions (the event bus interface) is good only if you need basic event bus features supported by your abstractions. If you need richer service bus features, you should probably use the API and abstractions provided by your preferred commercial service bus instead of your own abstractions.
+It's good to have the event bus defined through an interface so it can be implemented with several technologies, like RabbitMQ Azure Service bus or others. However, and as mentioned previously, using your own abstractions (the event bus interface) is good only if you need basic event bus features supported by your abstractions. If you need richer service bus features, you should probably use the API and abstractions provided by your preferred commercial service bus instead of your own abstractions.
 
 ### Defining an event bus interface
 
@@ -121,6 +121,19 @@ public interface IEventBus
 The `Publish` method is straightforward. The event bus will broadcast the integration event passed to it to any microservice, or even an external application, subscribed to that event. This method is used by the microservice that is publishing the event.
 
 The `Subscribe` methods (you can have several implementations depending on the arguments) are used by the microservices that want to receive events. This method has two arguments. The first is the integration event to subscribe to (`IntegrationEvent`). The second argument is the integration event handler (or callback method), named `IIntegrationEventHandler<T>`, to be executed when the receiver microservice gets that integration event message.
+
+## Additional resources
+
+Some production-ready messaging solutions:
+
+- **Azure Service Bus** \
+  <https://docs.microsoft.com/azure/service-bus-messaging/>
+  
+- **NServiceBus** \
+  <https://particular.net/nservicebus>
+  
+- **MassTransit** \
+  <https://masstransit-project.com/>
 
 > [!div class="step-by-step"]
 > [Previous](database-server-container.md)

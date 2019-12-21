@@ -42,7 +42,7 @@ Uniquely identifies elements that are created and referenced in a XAML-defined d
 |`markupExtensionUsage`|Within the markup extension delimiters {}, a markup extension usage that provides an object to use as a key. See Remarks.|  
   
 ## Remarks  
- `x:Key` supports the XAML resource dictionary concept. XAML as a language doesn't define a resource dictionary implementation, that is left to specific UI frameworks. To learn more about how XAML resource dictionaries are implemented in WPF, see [XAML Resources](../wpf/advanced/xaml-resources.md).  
+ `x:Key` supports the XAML resource dictionary concept. XAML as a language doesn't define a resource dictionary implementation, that is left to specific UI frameworks. To learn more about how XAML resource dictionaries are implemented in WPF, see [XAML Resources](../../desktop-wpf/fundamentals/xaml-resources-define.md).  
   
  In XAML 2006 and WPF, `x:Key` must be provided as an attribute. You can still use nonstring keys, but this requires a markup extension usage in order to provide the nonstring value in attribute form. If you are using XAML 2009, `x:Key` can be specified as an element, to explicitly support dictionaries keyed by object types other than strings without requiring a markup extension intermediate. See the "XAML 2009" section in this topic. The remainder of the Remarks section applies specifically to the XAML 2006 implementation.  
   
@@ -80,7 +80,7 @@ Uniquely identifies elements that are created and referenced in a XAML-defined d
   
 ### XAML Element Usage (XAML 2009 only)  
   
-```  
+```xaml  
 <object>  
   <x:Key>  
 keyObject  
@@ -102,10 +102,10 @@ keyObject
 - *keyObject* could also be a markup extension usage in object element form, rather than a direct object instance.  
   
 ## Silverlight Usage Notes  
- `x:Key` for Silverlight is documented separately. For more information, see [XAML Namespace (x:) Language Features (Silverlight)](https://go.microsoft.com/fwlink/?LinkId=199081).  
+ `x:Key` for Silverlight is documented separately. For more information, see [XAML Namespace (x:) Language Features (Silverlight)](https://docs.microsoft.com/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc188995(v=vs.95)).  
   
 ## See also
 
-- [XAML Resources](../wpf/advanced/xaml-resources.md)
+- [XAML Resources](../../desktop-wpf/fundamentals/xaml-resources-define.md)
 - [Resources and Code](../wpf/advanced/resources-and-code.md)
 - [StaticResource Markup Extension](../wpf/advanced/staticresource-markup-extension.md)

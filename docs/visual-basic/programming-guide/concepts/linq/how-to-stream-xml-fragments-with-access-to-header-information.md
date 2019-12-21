@@ -1,5 +1,5 @@
 ---
-title: "How to: Stream XML Fragments with Access to Header Information (Visual Basic)"
+title: "How to: Stream XML Fragments with Access to Header Information"
 ms.date: 07/20/2015
 ms.assetid: effd10df-87c4-4d7a-8a9a-1434d829dca5
 ---

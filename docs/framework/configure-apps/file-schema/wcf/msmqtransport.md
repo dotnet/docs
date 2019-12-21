@@ -74,7 +74,7 @@ Causes a channel to transfers messages on the MSMQ transport when it is included
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<binding>](../../../misc/binding.md)|Defines all binding capabilities of the custom binding.|  
+|[\<binding>](bindings.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
  The `msmqTransport` element enables the user to set the properties of the queued communication channel. The queued communication channel uses Message Queuing for its transport.  

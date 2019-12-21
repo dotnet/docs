@@ -102,7 +102,6 @@ class LinqSample
 Option Explicit On
 Option Strict On
 
-Imports System
 Imports System.Linq
 Imports System.Data.Objects
 Imports NorthwindModel
@@ -161,7 +160,6 @@ class ObjectQuerySample
 Option Explicit On
 Option Strict On
 
-Imports System
 Imports System.Data.Objects
 Imports NorthwindModel
 
@@ -229,7 +227,6 @@ class EntityClientSample
 Option Explicit On
 Option Strict On
 
-Imports System
 Imports System.Data
 Imports System.Data.Common
 Imports System.Data.EntityClient
@@ -308,7 +305,6 @@ using Northwind;
 Option Explicit On
 Option Strict On
 
-Imports System
 Imports System.Collections.Generic
 Imports System.Linq
 Imports System.Text

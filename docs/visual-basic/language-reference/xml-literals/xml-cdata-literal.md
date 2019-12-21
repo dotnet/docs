@@ -1,5 +1,5 @@
 ---
-title: "XML CDATA Literal (Visual Basic)"
+title: "XML CDATA Literal"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.XmlLiteralCdata"

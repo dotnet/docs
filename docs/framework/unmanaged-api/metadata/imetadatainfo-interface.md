@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 137cb264-64de-46ac-bc6e-2a7db97e8abe
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataInfo Interface
 Provides a method that gets information about the mapping of metadata from an on-disk file into memory.  

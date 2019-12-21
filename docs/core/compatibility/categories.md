@@ -5,7 +5,14 @@ ms.date: 06/10/2019
 ---
 # Breaking change categories
 
-*Compatibility* refers to the ability to compile or execute code on a version of a .NET implementation other than the one with which the code was originally developed. A particular change can affect compatibility in six different ways. The [individual kinds of changes that are considered when evaluating compatibility](index.md) fall into the first five categories.
+*Compatibility* refers to the ability to compile or execute code on a version of a .NET implementation other than the one with which the code was originally developed. A particular change can affect compatibility in six different ways. The [individual kinds of changes](index.md) that are considered when evaluating compatibility fall into the following categories:
+
+- [behavioral change](#behavioral-change)
+- [binary compatibility](#binary-compatibility)
+- [source compatibility](#source-compatibility)
+- [design-time compatibility](#design-time-compatibility)
+- [backwards compatibility](#backwards-compatibility)
+- [forward compatibility](#forward-compatibility) (not a goal of .NET Core)
 
 ## Behavioral change
 

@@ -33,7 +33,7 @@ The following tutorials are available for learning about .NET Core.
 
 ## Building applications with the .NET Core CLI tools
 
-- [Get started with .NET Core on Windows/Linux/macOS using the .NET Core CLI tools](using-with-xplat-cli.md)
+- [Get started with .NET Core on Windows/Linux/macOS using the .NET Core CLI tools](cli-create-console-app.md)
 - [Organizing and testing projects with the .NET Core CLI tools](testing-with-cli.md)
 - [Get started with F#](../../fsharp/get-started/get-started-command-line.md)
 

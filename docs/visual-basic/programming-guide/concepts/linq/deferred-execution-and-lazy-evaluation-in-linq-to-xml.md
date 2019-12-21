@@ -1,5 +1,5 @@
 ---
-title: "Deferred Execution and Lazy Evaluation in LINQ to XML (Visual Basic)"
+title: "Deferred Execution and Lazy Evaluation in LINQ to XML"
 ms.date: 07/20/2015
 ms.assetid: 31998eed-b95e-47fb-a865-9de1f337d1fb
 ---

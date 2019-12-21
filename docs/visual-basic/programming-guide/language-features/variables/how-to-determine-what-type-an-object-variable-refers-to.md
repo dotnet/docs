@@ -1,5 +1,5 @@
 ---
-title: "How to: Determine What Type an Object Variable Refers To (Visual Basic)"
+title: "How to: Determine What Type an Object Variable Refers To"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "TypeOf operator [Visual Basic], determining object variable type"
@@ -44,7 +44,7 @@ An object variable contains a pointer to data that is stored elsewhere. The type
 
     The criterion for compatibility depends on whether the specified type is a class, structure, or interface. In general, the types are compatible if the object is of the same type as, inherits from, or implements the specified type. For more information, see [TypeOf Operator](../../../../visual-basic/language-reference/operators/typeof-operator.md).
 
-## Compiling the Code
+## Compile the code
 
 Note that the specified type cannot be a variable or expression. It must be the name of a defined type, such as a class, structure, or interface. This includes intrinsic types such as `Integer` and `String`.
 

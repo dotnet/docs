@@ -3,10 +3,12 @@ title: "WPF and WF Integration in XAML"
 ms.date: "03/30/2017"
 ms.assetid: a4f53b48-fc90-4315-bca0-ba009562f488
 ---
-# WPF and WF Integration in XAML
-This sample demonstrates how to create an application that uses Windows Presentation Foundation (WPF) and Windows Workflow Foundation (WF) features in a single XAML document. To accomplish this, the sample uses Windows Workflow Foundation (WF) and XAML extensibility.
+# WPF and Windows Workflow Foundation integration in XAML
 
-## Sample Details
+This sample demonstrates how to create an application that uses Windows Presentation Foundation (WPF) and Windows Workflow Foundation (WF) features in a single XAML document. To accomplish this, the sample uses Windows Workflow Foundation and XAML extensibility.
+
+## Sample details
+
  The ShowWindow.xaml file deserializes into a <xref:System.Activities.Statements.Sequence> activity with two string variables that are manipulated by the sequence’s activities: `ShowWindow` and `WriteLine`. The <xref:System.Activities.Statements.WriteLine> activity outputs to the console window the expression that it assigns to the <xref:System.Activities.Statements.WriteLine.Text%2A> property. The `ShowWindow` activity displays a WPF window as part of its execution logic. The <xref:System.Activities.ActivityContext.DataContext%2A> of the window includes the variables declared in the sequence. The controls of the window declared in the `ShowWindow` activity use data binding to manipulate those variables. Finally, the window contains a button control. The `Click` event for the button is handled by a <xref:System.Activities.ActivityDelegate> named `MarkupExtension` that contains a `CloseWindow` activity. `MarkUpExtension` invokes the contained activity that provides, as context, any objects identified by an `x:Name`, as well as the <xref:System.Activities.ActivityContext.DataContext%2A> of the containing window. Thus, the `CloseWindow.InArgument<Window>` can be bound using an expression that references the window’s name.
 
  The `ShowWindow` activity derives from the <xref:System.Activities.AsyncCodeActivity%601> class to display a WPF window and completes when the window is closed. The `Window` property is of type `Func<Window>` that allows the window to be created on demand for each execution of the activity. The `Window` property uses a <xref:System.Xaml.XamlDeferringLoader> to enable this deferred evaluation model. The `FuncFactoryDeferringLoader` allows a `XamlReader` to be captured during serialization and then read during activity execution.
@@ -18,23 +20,23 @@ This sample demonstrates how to create an application that uses Windows Presenta
 > [!NOTE]
 > The default designer does not support the ShowWindow activity; as such, the ShowWindow.Xaml file does not display correctly in the designer.
 
-#### To use this sample
+## Run the sample
 
-1. Using Visual Studio 2010, open the WPFWFIntegration.sln solution file.
+1. Using Visual Studio, open the WPFWFIntegration.sln solution file.
 
-2. To build the solution, press CTRL+SHIFT+B.
+2. To build the solution, press **Ctrl**+**Shift**+**B**.
 
-3. To run the solution, press F5.
+3. To run the solution, press **F5**.
 
 4. Type your first and last name into the dialog.
 
 5. Close the dialog and the console echoes your name.
 
 > [!IMPORTANT]
-> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
-> `<InstallDrive>:\WF_WCF_Samples`  
->   
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.
+>
+> `<InstallDrive>:\WF_WCF_Samples`
+>
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
+>
 > `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\WPFWFIntegration`

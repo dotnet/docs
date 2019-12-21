@@ -1,5 +1,5 @@
 ---
-title: "Registry Summary (Visual Basic)"
+title: "Registry Summary"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "registry [Visual Basic]"

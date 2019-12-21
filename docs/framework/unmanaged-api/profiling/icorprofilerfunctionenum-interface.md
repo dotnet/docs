@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 0a1d4a38-cd0b-4231-91df-13646218ae72
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerFunctionEnum Interface
 Provides methods to sequentially iterate through a collection of functions in the common language runtime.  

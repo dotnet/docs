@@ -1,5 +1,5 @@
 ---
-title: "<remarks> (Visual Basic)"
+title: "<remarks>"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "<remarks> XML tag"

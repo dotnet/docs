@@ -58,7 +58,6 @@ You can use the <xref:System.Security.Principal.GenericIdentity> class in conjun
 The following code example demonstrates how to create an instance of a **GenericPrincipal** and a **GenericIdentity**. This code displays the values of these objects to the console.
 
 ```vb
-Imports System
 Imports System.Security.Principal
 Imports System.Threading
 

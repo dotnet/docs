@@ -1,5 +1,5 @@
 ---
-title: "Ref Return Values (Visual Basic)"
+title: "Ref Return Values"
 ms.date: 04/28/2017
 helpviewer_keywords:
   - "variables [Visual Basic]"

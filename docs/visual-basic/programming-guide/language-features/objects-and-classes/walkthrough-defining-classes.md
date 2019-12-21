@@ -1,5 +1,5 @@
 ---
-title: "Defining Classes (Visual Basic)"
+title: "Defining Classes"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "execution [Visual Basic], ending"

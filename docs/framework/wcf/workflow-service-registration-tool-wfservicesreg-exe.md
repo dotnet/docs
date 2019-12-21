@@ -13,7 +13,7 @@ WFServicesReg.exe [-c | -r | -v | -m | -i]
 ```  
   
 ## Remarks  
- The tool can be found at the [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)] installation location, specifically, %windir%\Microsoft.NET\Framework\v3.5, or at %windir%\Microsoft.NET\Framework64\v3.5 in 64-bit machines.  
+ The tool can be found at the .NET Framework 3.5 installation location, specifically, %windir%\Microsoft.NET\Framework\v3.5, or at %windir%\Microsoft.NET\Framework64\v3.5 in 64-bit machines.  
   
  The following tables describe the options that can be used with the Workflow Services Registration tool (WFServicesReg.exe).  
   
@@ -28,7 +28,7 @@ WFServicesReg.exe [-c | -r | -v | -m | -i]
 ## Registration  
  The tool inspects the Web.config file and registers the following:  
   
-- [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)] reference assemblies.  
+- .NET Framework 3.5 reference assemblies.  
   
 - A build provider for .xoml files.  
   
@@ -54,7 +54,7 @@ WFServicesReg.exe [-c | -r | -v | -m | -i]
   
  On 64-bit machines, the tool registers WOW mode scriptmaps if the `Enable32BitAppOnWin64` switch is enabled, or native 64-bit scriptmaps if the `Enable32BitAppOnWin64` switch is disabled.  
   
- On [!INCLUDE[wv](../../../includes/wv-md.md)] and Windows Server 2008 (IIS 7.0 and above) machines, two sets of .xoml and .rules handlers are registered: one for Integrated mode and one for Classic mode.  
+ On Windows Vista and Windows Server 2008 (IIS 7.0 and above) machines, two sets of .xoml and .rules handlers are registered: one for Integrated mode and one for Classic mode.  
   
  On 64-bit machines, three sets of handlers are registered (regardless of the state of the `Enable32BitAppOnWin64` switch): one for Integrated mode, one for WOW Classic mode and one for native 64-bit Classic mode.  
   
@@ -64,7 +64,7 @@ WFServicesReg.exe [-c | -r | -v | -m | -i]
 ## Usage Scenarios  
   
 ### Installing IIS after .NET Framework 3.5 is installed  
- On a [!INCLUDE[ws2003](../../../includes/ws2003-md.md)] machine, [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)] is installed prior to IIS installation. Due to the unavailability of the IIS metabase, installation of [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)] succeeds without installing .xoml and .rules scriptmaps.  
+ On a [!INCLUDE[ws2003](../../../includes/ws2003-md.md)] machine, .NET Framework 3.5 is installed prior to IIS installation. Due to the unavailability of the IIS metabase, installation of .NET Framework 3.5 succeeds without installing .xoml and .rules scriptmaps.  
   
  After IIS is installed, you can use the WFServicesReg.exe tool with the `/c` switch to install these specific scriptmaps.  
   
@@ -79,4 +79,4 @@ WFServicesReg.exe [-c | -r | -v | -m | -i]
  To repair deleted handlers for a particular Web site, you should run "WFServicesReg.exe /r" to remove handlers from all Web sites, then run "WFServicesReg.exe /c" to create the appropriate handlers for all Web sites.  
   
 ### Configuring handlers after switching IIS mode  
- When IIS is in shared configuration mode and [!INCLUDE[netfx35_short](../../../includes/netfx35-short-md.md)] is installed, the IIS metabase is configured under a shared location. If you switch IIS to non-shared configuration mode, the local metabase will not contain the required handlers. To configure the local metabase properly, you can either import the shared metabase to local, or run "WFServicesReg.exe /c", which configures the local metabase.
+ When IIS is in shared configuration mode and .NET Framework 3.5 is installed, the IIS metabase is configured under a shared location. If you switch IIS to non-shared configuration mode, the local metabase will not contain the required handlers. To configure the local metabase properly, you can either import the shared metabase to local, or run "WFServicesReg.exe /c", which configures the local metabase.

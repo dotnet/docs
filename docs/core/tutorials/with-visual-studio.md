@@ -14,7 +14,7 @@ This article provides a step-by-step introduction to building, debugging, and pu
 
 [Visual Studio 2017 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the ".NET Core cross-platform development" workload installed. You can develop your app with .NET Core 2.1 or later versions.
 
-For more information, see the [Prerequisites for .NET Core on Windows](../windows-prerequisites.md) article.
+For more information, see the [.NET Core dependencies and requirements](../install/sdk.md?tabs=netcore30&pivots=os-windows#install-with-visual-studio) article.
 
 ## A simple Hello World application
 

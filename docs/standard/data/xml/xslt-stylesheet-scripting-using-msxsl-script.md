@@ -25,7 +25,7 @@ The <xref:System.Xml.Xsl.XslTransform> class supports embedded scripting using t
   
  where `msxsl` is a prefix bound to the namespace `urn:schemas-microsoft-com:xslt`.  
   
- The `language` attribute is not mandatory, but if specified, its value must be one of the following: C#, VB, JScript, JavaScript, VisualBasic, or CSharp. If not specified, the language defaults to JScript. The `language-name` is not case-sensitive, so 'JavaScript' and 'javascript' are equivalent.  
+ The `language` attribute is not mandatory, but if specified, its value must be one of the following: `C#`, `VB`, `JScript`, `JavaScript`, `VisualBasic`, or `CSharp`. If not specified, the language defaults to JScript. The `language-name` is not case-sensitive, so 'JavaScript' and 'javascript' are equivalent.  
   
  The `implements-prefix` attribute is mandatory. This attribute is used to declare a namespace and associate it with the script block. The value of this attribute is the prefix that represents the namespace. This namespace can be defined somewhere in a style sheet.  
   

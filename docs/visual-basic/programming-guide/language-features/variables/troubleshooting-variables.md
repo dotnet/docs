@@ -1,5 +1,5 @@
 ---
-title: "Troubleshooting Variables in Visual Basic"
+title: "Troubleshooting Variables"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "troubleshooting [Visual Basic], variables"

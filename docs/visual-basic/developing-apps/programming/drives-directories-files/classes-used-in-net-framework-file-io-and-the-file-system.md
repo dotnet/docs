@@ -1,5 +1,5 @@
 ---
-title: "Classes Used in .NET Framework File I/O and the File System (Visual Basic)"
+title: "Classes Used in .NET Framework File I/O and the File System"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "file I/O classes"

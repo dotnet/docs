@@ -23,7 +23,7 @@ A workflow definition is a tree of configured activity objects. This tree of act
   
  [!code-csharp[CFX_WorkflowApplicationExample#49](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#49)]  
   
- For more information about object initializers, see [How to: Initialize Objects without Calling a Constructor (C# Programming Guide)](https://go.microsoft.com/fwlink/?LinkId=161015) and [How to: Declare an Object by Using an Object Initializer](https://go.microsoft.com/fwlink/?LinkId=161016).  
+ For more information about object initializers, see [How to: Initialize Objects without Calling a Constructor (C# Programming Guide)](../../csharp/programming-guide/classes-and-structs/how-to-initialize-objects-by-using-an-object-initializer.md) and [How to: Declare an Object by Using an Object Initializer](../../visual-basic/programming-guide/language-features/objects-and-classes/how-to-declare-an-object-by-using-an-object-initializer.md).  
   
 ### Working with Variables, Literal Values, and Expressions  
  When creating a workflow definition using code, be aware of what code executes as part of the creation of the workflow definition and what code executes as part of the execution of an instance of that workflow. For example, the following workflow is intended to generate a random number and write it to the console.  
@@ -44,7 +44,7 @@ new Assign<int>
 }  
 ```  
   
- C# expressions must be compiled before the workflow containing them is invoked. If the C# expressions are not compiled, a <xref:System.NotSupportedException> is thrown when the workflow is invoked with a message similar to the following: `Expression Activity type 'CSharpValue`1' requires compilation in order to run.  Please ensure that the workflow has been compiled.` In most scenarios involving workflows created in Visual Studio the C# expressions are compiled automatically, but in some scenarios, such as code workflows, the C# expressions must be manually compiled. For an example of how to compile C# expressions, see the [Using C# expressions in code workflows](csharp-expressions.md#CodeWorkflows) section of the [C# Expressions](csharp-expressions.md) topic.  
+ C# expressions must be compiled before the workflow containing them is invoked. If the C# expressions are not compiled, a <xref:System.NotSupportedException> is thrown when the workflow is invoked with a message similar to the following: ``Expression Activity type 'CSharpValue`1' requires compilation in order to run.  Please ensure that the workflow has been compiled.`` In most scenarios involving workflows created in Visual Studio the C# expressions are compiled automatically, but in some scenarios, such as code workflows, the C# expressions must be manually compiled. For an example of how to compile C# expressions, see the [Using C# expressions in code workflows](csharp-expressions.md#CodeWorkflows) section of the [C# Expressions](csharp-expressions.md) topic.  
   
  A <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601> represents an expression in Visual Basic syntax that can be used as an r-value in an expression, and a <xref:Microsoft.CSharp.Activities.CSharpValue%601> represents an expression in C# syntax that can be used as an r-value in an expression. These expressions are evaluated each time the containing activity is executed. The result of the expression is assigned to the workflow variable `n`, and these results are used by the next activity in the workflow. To access the value of the workflow variable `n` at runtime, the <xref:System.Activities.ActivityContext> is required. This can be accessed by using the following lambda expression.  
   
@@ -55,7 +55,7 @@ new Assign<int>
   
  [!code-csharp[CFX_WorkflowApplicationExample#52](~/samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#52)]  
   
- For more information about lambda expressions, see [Lambda Expressions (C# Programming Guide)](https://go.microsoft.com/fwlink/?LinkID=152436) or [Lambda Expressions (Visual Basic)](https://go.microsoft.com/fwlink/?LinkID=152437).  
+ For more information about lambda expressions, see [Lambda Expressions (C# Programming Guide)](../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md) or [Lambda Expressions (Visual Basic)](../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md).  
   
  Lambda expressions are not serializable to XAML format. If an attempt to serialize a workflow with lambda expressions is made, a <xref:System.Activities.Expressions.LambdaSerializationException> is thrown with the following message: "This workflow contains lambda expressions specified in code. These expressions are not XAML serializable. In order to make your workflow XAML-serializable, either use VisualBasicValue/VisualBasicReference or ExpressionServices.Convert(lambda). This will convert your lambda expressions into expression activities." To make this expression compatible with XAML, use <xref:System.Activities.Expressions.ExpressionServices> and <xref:System.Activities.Expressions.ExpressionServices.Convert%2A>, as shown in the following example.  
   

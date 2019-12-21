@@ -26,7 +26,7 @@ connection.CreateFunction(
     (double arg) => Math.Ceiling(arg));
 ```
 
-In 2017, .NET Core 2.0 experienced a change in strategy. It was decided that compatibility with .NET Framework was vital to the success of .NET Core. Many of the removed APIs, including the DataSet APIs, were added back. Like it did for many others, this unblocked System.Data.SQLite allowing it to also be ported to .NET Core. The original goal of Microsoft.Data.Sqlite to be lightweight and modern, however, still remains. See [ADO.NET limitations](limitations.md) for details about ADO.NET APIs not implemented by Microsoft.Data.Sqlite.
+In 2017, .NET Core 2.0 experienced a change in strategy. It was decided that compatibility with .NET Framework was vital to the success of .NET Core. Many of the removed APIs, including the DataSet APIs, were added back. Like it did for many others, this unblocked System.Data.SQLite allowing it to also be ported to .NET Core. The original goal of Microsoft.Data.Sqlite to be lightweight and modern, however, still remains. See [ADO.NET limitations](adonet-limitations.md) for details about ADO.NET APIs not implemented by Microsoft.Data.Sqlite.
 
 When new features are added to Microsoft.Data.Sqlite, the design of System.Data.SQLite is taken into account. We try, when possible, to minimize changes between the two to ease transitioning between them.
 
@@ -72,5 +72,5 @@ Microsoft.Data.Sqlite doesn't have any API for creating virtual table modules. U
 * [Data types](types.md)
 * [Connection strings](connection-strings.md)
 * [Encryption](encryption.md)
-* [ADO.NET limitations](limitations.md)
+* [ADO.NET limitations](adonet-limitations.md)
 * [Dapper limitations](dapper-limitations.md)

@@ -111,7 +111,7 @@ Data Source=Reference.db;Mode=ReadOnly
 
 ### In-memory
 
-A private in-memory database.
+A private, in-memory database.
 
 ```ConnectionString
 Data Source=:memory:
@@ -119,7 +119,7 @@ Data Source=:memory:
 
 ### Sharable in-memory
 
-A sharable in-memory database identified by the name *Sharable*.
+A sharable, in-memory database identified by the name *Sharable*.
 
 ```ConnectionString
 Data Source=Sharable;Mode=Memory;Cache=Shared

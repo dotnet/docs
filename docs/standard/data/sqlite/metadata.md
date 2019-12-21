@@ -36,7 +36,7 @@ The following example shows how to use `GetSchemaTable` to create a debug string
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/ResultMetadataSample/Program.cs?name=snippet_ResultMetadata)]
 
-For example, this query would produce the following debug string.
+For example, this query would produce the following debug string:
 
 ```sql
 SELECT id AS post_id,
@@ -55,7 +55,7 @@ post.body TEXT
 
 ## Schema metadata
 
-Microsoft.Data.Sqlite doesn't implement the GetSchema method on DbConnection. Instead, we recommend querying for schema information directly using the [sqlite_master](https://www.sqlite.org/fileformat.html#storage_of_the_sql_database_schema) table and PRAGMA statements like [table_info](https://www.sqlite.org/pragma.html#pragma_table_info) and [foreign_key_list](https://www.sqlite.org/pragma.html#pragma_foreign_key_list).
+Microsoft.Data.Sqlite doesn't implement the GetSchema method on DbConnection. Instead, you can query directly for schema information using the [sqlite_master](https://www.sqlite.org/fileformat.html#storage_of_the_sql_database_schema) table and PRAGMA statements like [table_info](https://www.sqlite.org/pragma.html#pragma_table_info) and [foreign_key_list](https://www.sqlite.org/pragma.html#pragma_foreign_key_list).
 
 For example, this query will retrieve metadata about all the columns in the database.
 

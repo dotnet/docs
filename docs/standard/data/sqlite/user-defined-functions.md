@@ -5,13 +5,13 @@ description: Learn how to create user-defined scalar and aggregate functions.
 ---
 # User-defined functions
 
-Most databases have a procedural dialect of SQL that you can use to define your own functions. SQLite however, runs in-process with your app. Instead of inventing a new dialect of SQL, they cleverly just let you use the programming language of your app.
+Most databases have a procedural dialect of SQL that you can use to define your own functions. SQLite however, runs in-process with your app. Instead of having to learn a new dialect of SQL, you can just use the programming language of your app.
 
 ## Scalar functions
 
 Scalar functions return a single, scalar value for each row in a query. Define new scalar functions and override the built-in ones using <xref:Microsoft.Data.Sqlite.SqliteConnection.CreateFunction%2A>.
 
-See [Data types](types.md) for a list of supported parameter and return types for the func argument.
+See [Data types](types.md) for a list of supported parameter and return types for the `func` argument.
 
 Specifying the `state` argument will pass that value into every invocation of the function. Use this to avoid closures.
 
@@ -49,9 +49,9 @@ If no `resultSelector` is specified, the final state of the context is used as t
 
 Specify `resultSelector` to calculate the final result from the context after iterating through all the rows.
 
-See [Data types](types.md) for a list of supported parameter types for the func argument and return types for resultSelector.
+See [Data types](types.md) for a list of supported parameter types for the `func` argument and return types for `resultSelector`.
 
-Specify `isDeterministic` if your function is deterministic to allow SQLite to use additional optimizations when compiling queries.
+If your function is deterministic, specify `isDeterministic` to allow SQLite to use additional optimizations when compiling queries.
 
 The following example defines an aggregate function to calculate the standard deviation of a column.
 

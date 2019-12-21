@@ -1,9 +1,9 @@
 ---
-title: In-Memory databases
+title: In-memory databases
 ms.date: 12/13/2019
 description: Learn how to use in-memory SQLite databases.
 ---
-# In-Memory databases
+# In-memory databases
 
 SQLite in-memory databases are databases stored entirely in memory, not on disk. Use the special data source filename `:memory:` to create an in-memory database. When the connection is closed, the database is deleted. When using `:memory:`, each connection creates its own database.
 

@@ -29,7 +29,7 @@ Install-Package SQLitePCLRaw.bundle_e_sqlcipher
 
 For more information about using a different native library for encryption, see [Custom SQLite versions](custom-versions.md).
 
-## Specifying the key
+## Specify the key
 
 To enable encryption, specify the key using the `Password` connection string keyword. Use <xref:Microsoft.Data.Sqlite.SqliteConnectionStringBuilder> to add or update the value from user input and avoid connection string injection attacks.
 

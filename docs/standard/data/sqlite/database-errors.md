@@ -5,7 +5,7 @@ description: Describes how database errors and retires are handled by the librar
 ---
 # Database errors
 
-<xref:Microsoft.Data.Sqlite.SqliteException> is thrown when a SQLite error is encountered. The message is provided by SQLite. The SqliteErrorCode and SqliteExtendedErrorCode properties contain the SQLite [result code](https://www.sqlite.org/rescode.html) of the error.
+<xref:Microsoft.Data.Sqlite.SqliteException> is thrown when a SQLite error is encountered. The message is provided by SQLite. The `SqliteErrorCode` and `SqliteExtendedErrorCode` properties contain the SQLite [result code](https://www.sqlite.org/rescode.html) of the error.
 
 Errors may be encountered any time the Microsoft.Data.Sqlite interacts with the native SQLite library. The following list shows the common scenarios where errors can occur:
 

@@ -5,7 +5,7 @@ description: Learn how to use SQLite's online backup feature.
 ---
 # Online backup
 
-SQLite can back up database files while the app is running. This functionality is available in `Microsoft.Data.Sqlite` as the <xref:Microsoft.Data.Sqlite.SqliteConnection.BackupDatabase%2A> method on `SqliteConnection`.
+SQLite can back up database files while the app is running. This functionality is available in Microsoft.Data.Sqlite as the <xref:Microsoft.Data.Sqlite.SqliteConnection.BackupDatabase%2A> method on `SqliteConnection`.
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/BackupSample/Program.cs?name=snippet_Backup)]
 

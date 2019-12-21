@@ -11,7 +11,7 @@ keywords and values.
 
 ## Keywords
 
-The following connection string keyword can be used with Microsoft.Data.Sqlite.
+The following connection string keywords can be used with Microsoft.Data.Sqlite:
 
 ### Data source
 
@@ -19,7 +19,7 @@ The path to the database file. *DataSource* (without a space) and *Filename* are
 
 SQLite treats paths relative to the current working directory. Absolute paths can also be specified.
 
-If **empty**, SQLite creates a temporary on-disk database that gets deleted when the connection is closed.
+If **empty**, SQLite creates a temporary on-disk database that's deleted when the connection is closed.
 
 If `:memory:`, an in-memory database is used. For more information, see [In-Memory databases](in-memory-databases.md).
 
@@ -70,7 +70,7 @@ SQLite library.
 
 ### Recursive triggers
 
-A value indicating whether to enable recursive triggers.
+A value that indicates whether to enable recursive triggers.
 
 | Value | Description                                                                 |
 | ----- | --------------------------------------------------------------------------- |
@@ -79,7 +79,7 @@ A value indicating whether to enable recursive triggers.
 
 ## Connection string builder
 
-You can use <xref:Microsoft.Data.Sqlite.SqliteConnectionStringBuilder> as a strongly-typed way of creating connection strings. It can also be used to prevent connection string injection attacks.
+You can use <xref:Microsoft.Data.Sqlite.SqliteConnectionStringBuilder> as a strongly typed way of creating connection strings. It can also be used to prevent connection string injection attacks.
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/EncryptionSample/Program.cs?name=snippet_ConnectionStringBuilder)]
 

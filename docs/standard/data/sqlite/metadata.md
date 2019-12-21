@@ -32,7 +32,7 @@ You can retrieve metadata about the results of a query using the <xref:Microsoft
 | `NumericPrecision` | Int16   | Always NULL. This may change in future versions of `Microsoft.Data.Sqlite`. |
 | `NumericScale`     | Int16   | Always NULL. This may change in future versions of `Microsoft.Data.Sqlite`. |
 
-The following example shows how to use `GetSchemaTable` to create a debug string showing metadata about a result:
+The following example shows how to use `GetSchemaTable` to create a debug string that shows metadata about a result:
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/ResultMetadataSample/Program.cs?name=snippet_ResultMetadata)]
 

@@ -28,13 +28,13 @@ connection.CreateFunction(
 
 In 2017, .NET Core 2.0 experienced a change in strategy. It was decided that compatibility with .NET Framework was vital to the success of .NET Core. Many of the removed APIs, including the DataSet APIs, were added back. Like it did for many others, this unblocked System.Data.SQLite allowing it to also be ported to .NET Core. The original goal of Microsoft.Data.Sqlite to be lightweight and modern, however, still remains. See [ADO.NET limitations](limitations.md) for details about ADO.NET APIs not implemented by Microsoft.Data.Sqlite.
 
-When new features are added to Microsoft.Data.Sqlite, the design of System.Data.SQLite is taken into account. We try to, when possible, minimize changes between the two to ease transitioning between them.
+When new features are added to Microsoft.Data.Sqlite, the design of System.Data.SQLite is taken into account. We try, when possible, to minimize changes between the two to ease transitioning between them.
 
 ## Data types
 
 The biggest difference between Microsoft.Data.Sqlite and System.Data.SQLite is how data types are handled. As described in [Data types](types.md), Microsoft.Data.Sqlite doesn't try to hide the underlying quirkiness of SQLite, which allows any arbitrary string to be specified as the column type, and only has four primitive types: INTEGER, REAL, TEXT, and BLOB.
 
-System.Data.SQLite applies additional semantics to column types mapping them directly to .NET types. This gives the provider a more strongly-typed feel, but it has some rough edges. For example, they had to introduce a new SQL statement (TYPES) to specify the column types of expressions in SELECT statements.
+System.Data.SQLite applies additional semantics to column types mapping them directly to .NET types. This gives the provider a more strongly typed feel, but it has some rough edges. For example, they had to introduce a new SQL statement (TYPES) to specify the column types of expressions in SELECT statements.
 
 ## Connection strings
 

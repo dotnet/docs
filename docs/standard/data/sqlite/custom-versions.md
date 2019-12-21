@@ -1,9 +1,9 @@
 ---
-title: Custom SQLite Versions
+title: Custom SQLite versions
 ms.date: 12/13/2019
 description: Learn how to use a custom version of the native SQLite library.
 ---
-# Custom SQLite Versions
+# Custom SQLite versions
 
 Microsoft.Data.Sqlite is built on top of SQLitePCLRaw. You can use custom versions of the native SQLite library by using a bundle or by configuring a SQLitePCLRaw provider.
 
@@ -15,13 +15,13 @@ The main Microsoft.Data.Sqlite package brings in SQLitePCLRaw.bundle_e_sqlite3 b
 
 To use a different bundle, install the `Microsoft.Data.Sqlite.Core` package instead along with the bundle package you want to use. Bundles are automatically initialized by Microsoft.Data.Sqlite.
 
-Bundle | Description
---- | ---
-SQLitePCLRaw.bundle_e_sqlite3 | Provides a consistent version of SQLite on all platforms. Includes the FTS4, FTS5, JSON1, and R*Tree extensions. This is the default
-SQLitePCLRaw.bundle_green | Same as bundle_e_sqlite3, except on iOS where it uses the system SQLite library
-SQLitePCLRaw.bundle_zetetic | Uses the official SQLCipher builds from Zetetic (not included)
-SQLitePCLRaw.bundle_winsqlite3 | Uses winsqlite3.dll, the system SQLite library on Windows 10
-SQLitePCLRaw.bundle_e_sqlcipher | Provides an unofficial, open-source build of SQLCipher
+| Bundle | Description |
+| --- | --- |
+| SQLitePCLRaw.bundle_e_sqlite3 | Provides a consistent version of SQLite on all platforms. Includes the FTS4, FTS5, JSON1, and | R*Tree extensions. This is the default. |
+| SQLitePCLRaw.bundle_green | Same as bundle_e_sqlite3, except on iOS where it uses the system SQLite library. |
+| SQLitePCLRaw.bundle_zetetic | Uses the official SQLCipher builds from Zetetic (not included). |
+| SQLitePCLRaw.bundle_winsqlite3 | Uses winsqlite3.dll, the system SQLite library on Windows 10. |
+| SQLitePCLRaw.bundle_e_sqlcipher | Provides an unofficial, open-source build of SQLCipher. |
 
 For example, to use the unofficial, open-source build of SQLCipher use the following commands.
 
@@ -41,7 +41,7 @@ Install-Package SQLitePCLRaw.bundle_e_sqlcipher
 
 ---
 
-## SQLitePCLRaw Providers
+## SQLitePCLRaw providers
 
 You can use your own build of SQLite by leveraging the `SQLitePCLRaw.provider.dynamic_cdecl` package. In this case, you're responsible for deploying the native library with your app. Note, the details of deploying native libraries with your app vary considerably depending on which .NET platform and runtime you're using.
 

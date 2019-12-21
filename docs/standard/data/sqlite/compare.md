@@ -11,7 +11,7 @@ The first version of .NET Core (released in 2016) was a single, lightweight, mod
 
 The Entity Framework team was somewhat familiar with the System.Data.SQLite codebase. Brice Lambson, a member of the EF team, had previously helped the SQLite team add support for Entity Framework versions 5 and 6. Brice was also experimenting with his own implementation of a SQLite ADO.NET provider around the same time that .NET Core was being planned. After a long discussion, the Entity Framework team decided to create Microsoft.Data.Sqlite based on Brice's prototype. This would allow them to create a new lightweight and modern implementation that would align with the goals of .NET Core.
 
-As an example of what we mean by more modern, here is code to create a [user-defined function](udfs.md) in both System.Data.SQLite and Microsoft.Data.Sqlite.
+As an example of what we mean by more modern, here is code to create a [user-defined function](user-defined-functions.md) in both System.Data.SQLite and Microsoft.Data.Sqlite.
 
 ```csharp
 // System.Data.SQLite
@@ -26,15 +26,15 @@ connection.CreateFunction(
     (double arg) => Math.Ceiling(arg));
 ```
 
-In 2017, .NET Core 2.0 experienced a change in strategy. It was decided that compatibility with .NET Framework was vital to the success of .NET Core. Many of the removed APIs, including the DataSet APIs, were added back. Like it did for many others, this unblocked System.Data.SQLite allowing it to also be ported to .NET Core. The original goal of Microsoft.Data.Sqlite to be lightweight and modern, however, still remains. See [ADO.NET Limitations](limitations.md) for details about ADO.NET APIs not implemented by Microsoft.Data.Sqlite.
+In 2017, .NET Core 2.0 experienced a change in strategy. It was decided that compatibility with .NET Framework was vital to the success of .NET Core. Many of the removed APIs, including the DataSet APIs, were added back. Like it did for many others, this unblocked System.Data.SQLite allowing it to also be ported to .NET Core. The original goal of Microsoft.Data.Sqlite to be lightweight and modern, however, still remains. See [ADO.NET limitations](adonet-limitations.md) for details about ADO.NET APIs not implemented by Microsoft.Data.Sqlite.
 
-When new features are added to Microsoft.Data.Sqlite, the design of System.Data.SQLite is taken into account. We try to, when possible, minimize changes between the two to ease transitioning between them.
+When new features are added to Microsoft.Data.Sqlite, the design of System.Data.SQLite is taken into account. We try, when possible, to minimize changes between the two to ease transitioning between them.
 
 ## Data types
 
-The biggest difference between Microsoft.Data.Sqlite and System.Data.SQLite is how data types are handled. As described in [Data Types](data-types.md), Microsoft.Data.Sqlite doesn't try to hide the underlying quirkiness of SQLite, which allows any arbitrary string to be specified as the column type, and only has four primitive types: INTEGER, REAL, TEXT, and BLOB.
+The biggest difference between Microsoft.Data.Sqlite and System.Data.SQLite is how data types are handled. As described in [Data types](types.md), Microsoft.Data.Sqlite doesn't try to hide the underlying quirkiness of SQLite, which allows any arbitrary string to be specified as the column type, and only has four primitive types: INTEGER, REAL, TEXT, and BLOB.
 
-System.Data.SQLite applies additional semantics to column types mapping them directly to .NET types. This gives the provider a more strongly-typed feel, but it has some rough edges. For example, they had to introduce a new SQL statement (TYPES) to specify the column types of expressions in SELECT statements.
+System.Data.SQLite applies additional semantics to column types mapping them directly to .NET types. This gives the provider a more strongly typed feel, but it has some rough edges. For example, they had to introduce a new SQL statement (TYPES) to specify the column types of expressions in SELECT statements.
 
 ## Connection strings
 
@@ -69,8 +69,8 @@ Microsoft.Data.Sqlite doesn't have any API for creating virtual table modules. U
 
 ## See also
 
-* [Data Types](data-types.md)
-* [Connection Strings](connection-strings.md)
+* [Data types](types.md)
+* [Connection strings](connection-strings.md)
 * [Encryption](encryption.md)
-* [ADO.NET Limitations](limitations.md)
-* [Dapper Limitations](dapper.md)
+* [ADO.NET limitations](adonet-limitations.md)
+* [Dapper limitations](dapper-limitations.md)

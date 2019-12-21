@@ -3,7 +3,7 @@ title: Overview
 ms.date: 12/13/2019
 description: An overview of Microsoft.Data.Sqlite
 ---
-# Overview
+# Microsoft.Data.Sqlite overview
 
 Microsoft.Data.Sqlite is a lightweight [ADO.NET](../../../framework/data/adonet/index.md) provider for SQLite. The [Entity Framework Core](/ef/core/) provider for SQLite is built on top of this library. However, it can also be used independently or with other data access libraries.
 
@@ -33,6 +33,6 @@ This library implements the common ADO.NET abstractions for connections, command
 
 ## See also
 
-* [Connection Strings](connection-strings.md)
+* [Connection strings](connection-strings.md)
 * [API Reference](/dotnet/api/?view=msdata-sqlite-3.0.0)
 * [SQL Syntax](https://www.sqlite.org/lang.html)

@@ -16,7 +16,7 @@ The following table shows supported format specifiers for formatting numeric res
 
 |Format specifier|Description|Examples|Result|  
 |----------------------|-----------------|--------------|------------|  
-|C or c|Currency|`string s = $"{2.5:C}";`<br /><br /> `string s = $"{-2.5:C}";`|$2.50<br /><br /> ($2.50)|  
+|C or c|Currency|`string s = $"{2.5:C}";`<br /><br /> `string s = $"{-2.5:C}";`|\\$2.50<br /><br /> (\\$2.50)|  
 |D or d|Decimal|`string s = $"{25:D5}";`|00025|  
 |E or e|Exponential|`string s = $"{250000:E2}";`|2.50E+005|  
 |F or f|Fixed-point|`string s = $"{2.5:F2}";`<br /><br /> `string s = $"{2.5:F0}";`|2.50<br /><br /> 3|  
@@ -52,4 +52,4 @@ For more information, see [Standard Numeric Format Strings](../../../standard/ba
 - [Formatting types](../../../standard/base-types/formatting-types.md)
 - [Composite formatting](../../../standard/base-types/composite-formatting.md)
 - [String interpolation](../tokens/interpolated.md)
-- [string](string.md)
+- [string](../builtin-types/reference-types.md)

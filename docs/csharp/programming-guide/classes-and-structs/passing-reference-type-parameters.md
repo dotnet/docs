@@ -31,7 +31,7 @@ A variable of a [reference type](../../language-reference/keywords/reference-typ
   
  In this example, the parameters need to be passed by reference to affect the variables in the calling program. If you remove the `ref` keyword from both the method header and the method call, no changes will take place in the calling program.  
   
- For more information about strings, see [string](../../language-reference/keywords/string.md).  
+ For more information about strings, see [string](../../language-reference/builtin-types/reference-types.md).  
   
 ## See also
 

@@ -96,5 +96,5 @@ Comment out the compiler directive.
 - [Trace Switches](trace-switches.md)
 - [Trace Listeners](trace-listeners.md)
 - [How to: Add Trace Statements to Application Code](how-to-add-trace-statements-to-application-code.md)
-- [How to: Set Environment Variables for the Visual Studio Command Line](../../csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md)
+- [How to set environment variables for the Visual Studio Command Line](../../csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md)
 - [How to: Invoke the Command-Line Compiler](../../visual-basic/reference/command-line-compiler/how-to-invoke-the-command-line-compiler.md)

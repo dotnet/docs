@@ -1,5 +1,5 @@
 ---
-title: "How to: Call an Operator Procedure (Visual Basic)"
+title: "How to: Call an Operator Procedure"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "operator procedures [Visual Basic], calling"
@@ -44,7 +44,7 @@ You call an operator procedure by using the operator symbol in an expression. In
   
  For an example of calling a conversation operator procedure, see [How to: Use a Class that Defines Operators](./how-to-use-a-class-that-defines-operators.md).  
   
-## Compiling the Code  
+## Compile the code  
  Be sure the class or structure you are using defines the operator you want to use.  
   
 ## See also

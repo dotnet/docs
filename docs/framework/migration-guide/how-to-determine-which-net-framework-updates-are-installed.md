@@ -1,7 +1,7 @@
 ---
-title: "How to: Determine which .NET Framework security updates and hotfixes are installed"
-description: "Learn how to determine which .NET Framework security updates and hotfixes are installed on a computer."
-ms.date: "11/27/2017"
+title: See installed .NET Framework security updates and hotfixes
+description: Learn how to determine which .NET Framework security updates and hotfixes are installed on a computer.
+ms.date: 11/27/2017
 dev_langs: 
   - "csharp"
   - "vb"
@@ -9,17 +9,17 @@ helpviewer_keywords:
   - "updates, determining for .NET Framework"
   - ".NET Framework, determining updates"
 ms.assetid: 53c7b5f7-d47a-402a-b194-7244a696a88b
-author: "mairaw"
-ms.author: "mairaw"
+author: mairaw
+ms.author: mairaw
 ---
-# How to: Determine which .NET Framework security updates and hotfixes are installed
+# How to determine which .NET Framework security updates and hotfixes are installed
 
 This article shows you how to find out which .NET Framework security updates and hotfixes are installed on a computer.
 
 > [!NOTE]
 > All the techniques shown in this article require an account with administrative privileges.
 
-## To find installed updates using the registry
+## Use Registry Editor
 
 The installed security updates and hotfixes for each version of the .NET Framework installed on a computer are listed in the Windows registry. You can use the Registry Editor (*regedit.exe*) program to view this information.
 
@@ -27,13 +27,13 @@ The installed security updates and hotfixes for each version of the .NET Framewo
 
 2. In the Registry Editor, open the following subkey:
 
-     `HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Updates`
+     **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Updates**
 
      The installed updates are listed under subkeys that identify the .NET Framework version they apply to. Each update is identified by a Knowledge Base (KB) number.
 
 In the Registry Editor, the .NET Framework versions and installed updates for each version are stored in different subkeys. For information about detecting the installed version numbers, see [How to: Determine which .NET Framework versions are installed](how-to-determine-which-versions-are-installed.md).
 
-## To find installed updates by querying the registry in code
+## Query the registry using code
 
 The following example programmatically determines the .NET Framework security updates and hotfixes that are installed on a computer:
 
@@ -61,7 +61,7 @@ Microsoft .NET Framework 4 Extended
   KB2600217
 ```
 
-## To find installed updates by querying the registry in PowerShell
+## Use PowerShell to query the registry
 
 The following example shows how to determine the .NET Framework security updates and hotfixes that are installed on a computer using PowerShell:
 

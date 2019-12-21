@@ -33,7 +33,7 @@ The following tutorials are available for learning about .NET Core.
 
 ## Building applications with the .NET Core CLI tools
 
-- [Get started with .NET Core on Windows/Linux/macOS using the .NET Core CLI tools](using-with-xplat-cli.md)
+- [Get started with .NET Core on Windows/Linux/macOS using the .NET Core CLI tools](cli-create-console-app.md)
 - [Organizing and testing projects with the .NET Core CLI tools](testing-with-cli.md)
 - [Get started with F#](../../fsharp/get-started/get-started-command-line.md)
 
@@ -43,6 +43,6 @@ The following tutorials are available for learning about .NET Core.
 - [Unit testing with MSTest and .NET Core](../testing/unit-testing-with-mstest.md)
 - [Developing Libraries with Cross Platform Tools](libraries.md)
 - [Hosting .NET Core from native code](netcore-hosting.md)
-- [Create a custom template for dotnet new](create-custom-template.md)
+- [Create a custom template for dotnet new](cli-templates-create-item-template.md)
 
 For tutorials about developing ASP.NET Core web applications, see the [ASP.NET Core documentation](/aspnet/core/).

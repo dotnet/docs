@@ -56,7 +56,7 @@ For a workflow service hosted in <xref:System.ServiceModel.WorkflowServiceHost>,
           <etwTracking profileName="Sample Tracking Profile" />
         </behavior>
    </serviceBehaviors>
-<behaviors>
+</behaviors>
 ```
 
 Alternatively, for a workflow service hosted in <xref:System.ServiceModel.WorkflowServiceHost>, you can add the <xref:System.Activities.Tracking.EtwTrackingParticipant> behavior extension through code. To add a custom tracking participant, create a new behavior extension and add it to the <xref:System.ServiceModel.ServiceHost> as shown in the following example code.
@@ -129,7 +129,7 @@ if (null != workflowServiceHost)
 ```
 
 > [!NOTE]
-> For more information on tracking profiles, refer to [Tracking Profiles](https://go.microsoft.com/fwlink/?LinkId=201310).
+> For more information on tracking profiles, refer to [Tracking Profiles](tracking-profiles.md).
 
 ### Configuring tracking using WorkflowInvoker
 
@@ -217,7 +217,7 @@ If events need to be written to a specific application log, follow these steps t
 
 6. Generate the resource DLL by following these steps.
 
-    1. Install the Windows SDK. The Windows SDK includes the message compiler ([mc.exe](https://go.microsoft.com/fwlink/?LinkId=184606)) and resource compiler ([rc.exe](https://go.microsoft.com/fwlink/?LinkId=184605)).
+    1. Install the Windows SDK. The Windows SDK includes the message compiler ([mc.exe](/windows/win32/wes/message-compiler--mc-exe-)) and resource compiler ([rc.exe](/windows/win32/menurc/using-rc-the-rc-command-line-)).
 
     2. In a Windows SDK command prompt, run mc.exe on the new manifest file.
 
@@ -245,7 +245,7 @@ If events need to be written to a specific application log, follow these steps t
         <provider name="Microsoft-Windows-Application Server-Applications_Provider1" guid="{2720e974-9fe9-477a-bb60-81fe3bf91eec}" symbol="Microsoft_Windows_ApplicationServer_ApplicationEvents" resourceFileName="<dll directory>\Microsoft.Windows.ApplicationServer.Applications_Provider1.dll" messageFileName="<dll directory>\Microsoft.Windows.ApplicationServer.Applications_Provider1.dll">
         ```
 
-    7. Use [wevtutil](https://go.microsoft.com/fwlink/?LinkId=184608) to register the manifest.
+    7. Use [wevtutil](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732848(v=ws.10)) to register the manifest.
 
         ```console
         wevtutil im Microsoft.Windows.ApplicationServer.Applications_Provider1.man
@@ -253,5 +253,5 @@ If events need to be written to a specific application log, follow these steps t
 
 ## See also
 
-- [Windows Server App Fabric Monitoring](https://go.microsoft.com/fwlink/?LinkId=201273)
-- [Monitoring Applications with App Fabric](https://go.microsoft.com/fwlink/?LinkId=201275)
+- [Windows Server App Fabric Monitoring](https://docs.microsoft.com/previous-versions/appfabric/ee677251(v=azure.10))
+- [Monitoring Applications with App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677276(v=azure.10))

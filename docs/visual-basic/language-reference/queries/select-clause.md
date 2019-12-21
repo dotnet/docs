@@ -1,5 +1,5 @@
 ---
-title: "Select Clause (Visual Basic)"
+title: "Select Clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.QuerySelect"

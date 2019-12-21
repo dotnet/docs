@@ -1,5 +1,5 @@
 ---
-title: "Into Clause (Visual Basic)"
+title: "Into Clause"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Into keyword [Visual Basic]"

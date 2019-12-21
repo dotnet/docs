@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 7c75aef9-c742-4b33-a14b-56ff94b0f725
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::DeleteFieldMarshal Method
 Destroys the PInvoke marshaling metadata signature for the object referenced by the specified token.  

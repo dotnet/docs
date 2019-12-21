@@ -1,5 +1,5 @@
 ---
-title: "How to: Generate XML from CSV Files (Visual Basic)"
+title: "How to: Generate XML from CSV Files"
 ms.date: 07/20/2015
 ms.assetid: fe4dbc87-7b0d-40bf-88c3-5d706ee89a4d
 ---

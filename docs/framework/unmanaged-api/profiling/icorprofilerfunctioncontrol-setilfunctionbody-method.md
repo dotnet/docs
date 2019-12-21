@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 2c33f0f7-75b2-4c19-b2c7-c94b54997576
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerFunctionControl::SetILFunctionBody Method
 Replaces the Common Intermediate Language (CIL) body of the method.  

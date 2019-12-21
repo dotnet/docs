@@ -7,7 +7,8 @@ helpviewer_keywords:
 ms.assetid: 11f96014-001e-41a0-bcc2-d0684a52fa43
 ---
 # What's New in Windows Workflow Foundation
-Windows Workflow Foundation (WF) in [!INCLUDE[netfx40_long](../../../includes/netfx40-long-md.md)] changes several development paradigms from previous versions. Workflows are now easier to create, execute, and maintain, and implement a host of new functionality. For more information about migrating .NET 3.0 and .NET 3.5 workflow applications to use the latest version, see [Migration Guidance](migration-guidance.md).  
+
+Windows Workflow Foundation (WF) in .NET Framework 4 changes several development paradigms from previous versions. Workflows are now easier to create, execute, and maintain, and implement a host of new functionality. For more information about migrating .NET 3.0 and .NET 3.5 workflow applications to use the latest version, see [Migration Guidance](migration-guidance.md).  
   
 ## Workflow Activity Model  
  The activity is now the base unit of creating a workflow, rather than using the <xref:System.Workflow.Activities.SequentialWorkflowActivity> or <xref:System.Workflow.Activities.StateMachineWorkflowActivity> classes. The <xref:System.Activities.Activity> class provides the base abstraction of workflow behavior. Activity authors can then implement either <xref:System.Activities.CodeActivity> for basic custom activity functionality, or <xref:System.Activities.NativeActivity> for custom activity functionality that uses the breadth of the runtime. <xref:System.Activities.Activity> is a class used by activity authors to express new behaviors declaratively in terms of other <xref:System.Activities.NativeActivity>, <xref:System.Activities.CodeActivity>, <xref:System.Activities.AsyncCodeActivity>, or <xref:System.Activities.DynamicActivity> objects, whether they are custom-developed or included in the [Built-In Activity Library](net-framework-4-5-built-in-activity-library.md).  
@@ -27,10 +28,10 @@ Windows Workflow Foundation (WF) in [!INCLUDE[netfx40_long](../../../includes/ne
 - New messaging activities such as <xref:System.ServiceModel.Activities.SendContent> and <xref:System.ServiceModel.Activities.ReceiveReply>.  
   
 ## Explicit Activity Data Model  
- [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)] includes new options for storing or moving data. Data can be stored in an activity using <xref:System.Activities.Variable>. When moving data in and out of an activity, specialized argument types are used to determine which direction data is moving. These types are <xref:System.Activities.InArgument>, <xref:System.Activities.InOutArgument>, and <xref:System.Activities.OutArgument>. For more information, see [Windows Workflow Foundation Data Model](data-model.md).  
+ .NET Framework 4 includes new options for storing or moving data. Data can be stored in an activity using <xref:System.Activities.Variable>. When moving data in and out of an activity, specialized argument types are used to determine which direction data is moving. These types are <xref:System.Activities.InArgument>, <xref:System.Activities.InOutArgument>, and <xref:System.Activities.OutArgument>. For more information, see [Windows Workflow Foundation Data Model](data-model.md).  
   
 ## Enhanced Hosting, Persistence, and Tracking Options  
- [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)] contains persistence enhancements such as the following:  
+ .NET Framework 4 contains persistence enhancements such as the following:  
   
 - There are more options for running workflows, including <xref:System.ServiceModel.Activities.WorkflowServiceHost>, <xref:System.Activities.WorkflowApplication>, and <xref:System.Activities.WorkflowInvoker>.  
   

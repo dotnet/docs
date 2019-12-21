@@ -1,9 +1,9 @@
 ---
-title: "How to: Project an Object Graph (C#)"
+title: "How to project an object graph (C#)"
 ms.date: 07/20/2015
 ms.assetid: 293d15d5-3eaf-48de-9a02-3e13cb117b5b
 ---
-# How to: Project an Object Graph (C#)
+# How to project an object graph (C#)
 This topic illustrates how to project, or populate, an object graph from XML.  
   
 ## Example  

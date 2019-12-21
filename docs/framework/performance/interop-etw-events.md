@@ -9,17 +9,11 @@ author: "mairaw"
 ms.author: "mairaw"
 ---
 # Interop ETW Events
-<a name="top"></a> Interop events capture information about Microsoft intermediate language (MSIL) stub generation and caching.  
-  
- This category consists of the following events:  
-  
-- [ILStubGenerated Event](#ilstubgenerated_event)  
-  
-- [ILStubCacheHit Event](#ilstubcachehit_event)  
-  
-<a name="ilstubgenerated_event"></a>   
-## ILStubGenerated Event  
- The following table shows the keyword and level. (For more information, see [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).)  
+Interop events capture information about Microsoft intermediate language (MSIL) stub generation and caching.  
+
+## ILStubGenerated Event
+
+The following table shows the keyword and level. (For more information, see [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).)  
   
 |Keyword for raising the event|Level|  
 |-----------------------------------|-----------|  
@@ -47,11 +41,9 @@ ms.author: "mairaw"
 |StubMethodILCode|win:UnicodeString|The MSIL code for the stub method.|  
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
   
- [Back to top](#top)  
-  
-<a name="ilstubcachehit_event"></a>   
 ## ILStubCacheHit Event  
- The following table shows the keyword and level.  
+
+The following table shows the keyword and level.  
   
 |Keyword for raising the event|Level|  
 |-----------------------------------|-----------|  
@@ -74,8 +66,6 @@ ms.author: "mairaw"
 |ManagedInteropMethodName|win:UnicodeString|The name of the managed interop method.|  
 |ManagedInteropMethodSignature|win:UnicodeString|The signature of the managed interop method.|  
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
-  
- [Back to top](#top)  
   
 ## See also
 

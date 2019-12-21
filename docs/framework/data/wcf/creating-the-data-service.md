@@ -8,7 +8,7 @@ ms.assetid: 34d1d971-5e18-4c22-9bf6-d3612e27ea59
 ---
 # Create the data service
 
-In this topic, you create a sample data service that uses WCF Data Services to expose an [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feed that's based on the Northwind sample database. The task involves the following basic steps:
+In this topic, you create a sample data service that uses WCF Data Services to expose an Open Data Protocol (OData) feed that's based on the Northwind sample database. The task involves the following basic steps:
 
 1. Create an ASP.NET Web application.
 
@@ -65,7 +65,7 @@ In this topic, you create a sample data service that uses WCF Data Services to e
    ![WCF Data Service item template in Visual Studio 2015](./media/wcf-data-service-item-template.png)
 
    > [!NOTE]
-   > The **WCF Data Service** template is available in Visual Studio 2015, but not in Visual Studio 2017.
+   > The **WCF Data Service** template is available in Visual Studio 2015, but not in Visual Studio 2017 or later.
 
 3. For the name of the service, type `Northwind`.
 

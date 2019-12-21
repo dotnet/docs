@@ -177,11 +177,11 @@ The following example uses binding to accomplish the same thing.
 
 [!code-xaml[UserControlNumericUpDown#Binding](~/samples/snippets/csharp/VS_Snippets_Wpf/UserControlNumericUpDown/CSharp/NumericUpDown.xaml#binding)]
 
-For more information about data binding, see [Data Binding Overview](../data/data-binding-overview.md).
+For more information about data binding, see [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md).
 
 ### Design for Designers
 
-To receive support for custom WPF controls in the [!INCLUDE[wpfdesigner_current_long](../../../../includes/wpfdesigner-current-long-md.md)] (for example, property editing with the Properties window), follow these guidelines.  For more information on developing for the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)], see [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio).
+To receive support for custom WPF controls in the WPF Designer for Visual Studio (for example, property editing with the Properties window), follow these guidelines.  For more information on developing for the WPF Designer, see [Design XAML in Visual Studio](/visualstudio/xaml-tools/designing-xaml-in-visual-studio).
 
 #### Dependency Properties
 
@@ -286,6 +286,6 @@ The following example sets the <xref:System.Windows.ThemeInfoAttribute.GenericDi
 
 ## See also
 
-- [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)
+- [Design XAML in Visual Studio](/visualstudio/xaml-tools/designing-xaml-in-visual-studio)
 - [Pack URIs in WPF](../app-development/pack-uris-in-wpf.md)
 - [Control Customization](control-customization.md)

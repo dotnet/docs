@@ -120,7 +120,7 @@ signtool [command] [options] [file_name | ...]
 |`/ds`  *Index*|Verifies the signature at a specified position.|  
 |`/hash` (`SHA1`&#124;`SHA256`)|Specifies an optional hash algorithm to use when searching for a file in a catalog.|  
 |`/kp`|Specifies that verification should be performed with the kernel-mode driver signing policy.|  
-|`/ms`|Uses multiple verification semantics. This is the default behavior of a [WinVerifyTrust](/windows/desktop/api/wintrust/nf-wintrust-winverifytrust) call on [!INCLUDE[win8](../../../includes/win8-md.md)] and above.|  
+|`/ms`|Uses multiple verification semantics. This is the default behavior of a [WinVerifyTrust](/windows/desktop/api/wintrust/nf-wintrust-winverifytrust) call on Windows 8 and above.|  
 |`/o` *Version*|Verifies the file by operating system version. *Version* has the following form: *PlatformID*:*VerMajor*.*VerMinor*.*BuildNumber*. *PlatformID* represents the underlying value of a <xref:System.PlatformID> enumeration member. **Important:**  The use of the `/o` switch is recommended. If `/o` is not specified, SignTool.exe may return unexpected results. For example, if you do not include the `/o` switch, system catalogs that validate correctly on an older operating system may not validate correctly on a newer operating system.|  
 |`/p7`|Verifies PKCS #7 files. No existing policies are used for PKCS #7 validation. The signature is checked and a chain is built for the signing certificate.|  
 |`/pa`|Specifies that the Default Authenticode Verification Policy should be used. If the `/pa` option is not specified, Sign Tool uses the Windows Driver Verification Policy. This option cannot be used with the `catdb` options.|  

@@ -1,5 +1,5 @@
 ---
-title: "Working with XML Namespaces (Visual Basic)"
+title: "Working with XML Namespaces"
 ms.date: 07/20/2015
 ms.assetid: 428bf4b0-e348-4ffd-986b-d905d5a0e7fa
 ---

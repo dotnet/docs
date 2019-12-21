@@ -1,5 +1,5 @@
 ---
-title: "Queries (Visual Basic)"
+title: "Queries"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "queries [Visual Basic]"

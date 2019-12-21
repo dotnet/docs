@@ -44,7 +44,7 @@ Uniquely identifies XAML-defined elements in a XAML namescope. XAML namescopes a
   
  For a WPF application that uses the Microsoft Visual Basic targets and includes XAML files with `Page` build action, a separate reference property is created during compilation that adds the `WithEvents` keyword to all elements that have an `x:Name`, to support `Handles` syntax for event handler delegates. This property is always public. For more information, see [Visual Basic and WPF Event Handling](../wpf/advanced/visual-basic-and-wpf-event-handling.md).  
   
- `x:Name` is used by the WPF XAML processor to register a name into a XAML namescope at load time, even for cases where the page is not markup-compiled by build actions (for example, loose XAML of a resource dictionary). One reason for this behavior is because the `x:Name` is potentially needed for <xref:System.Windows.Data.Binding.ElementName%2A> binding. For details, see [Data Binding Overview](../wpf/data/data-binding-overview.md).  
+ `x:Name` is used by the WPF XAML processor to register a name into a XAML namescope at load time, even for cases where the page is not markup-compiled by build actions (for example, loose XAML of a resource dictionary). One reason for this behavior is because the `x:Name` is potentially needed for <xref:System.Windows.Data.Binding.ElementName%2A> binding. For details, see [Data Binding Overview](../../desktop-wpf/data/data-binding-overview.md).  
   
  As mentioned previously, `x:Name` (or `Name`) should not be applied in situations that also use `x:Key`. The [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] <xref:System.Windows.ResourceDictionary> has a special behavior of defining itself as a XAML namescope but returning Not Implemented or null values for <xref:System.Windows.Markup.INameScope> APIs as a way to enforce this behavior. If the WPF XAML parser encounters `Name` or `x:Name` in a XAML-defined <xref:System.Windows.ResourceDictionary>, the name is not added to any XAML namescope. Attempting to find that name from any XAML namescope and the `FindName` methods will not return valid results.  
   
@@ -58,7 +58,7 @@ Uniquely identifies XAML-defined elements in a XAML namescope. XAML namescopes a
  <xref:System.Windows.FrameworkElement.Name%2A> can also be set using property element syntax with inner text, but that is uncommon. In contrast, `x:Name` cannot be set in XAML property element syntax, or in code using <xref:System.Windows.DependencyObject.SetValue%2A>; it can only be set using attribute syntax on objects because it is a directive.  
   
 ## Silverlight Usage Notes  
- `x:Name` for Silverlight is documented separately. For more information, see [XAML Namespace (x:) Language Features (Silverlight)](https://go.microsoft.com/fwlink/?LinkId=199081).  
+ `x:Name` for Silverlight is documented separately. For more information, see [XAML Namespace (x:) Language Features (Silverlight)](https://docs.microsoft.com/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc188995(v=vs.95)).  
   
 ## See also
 

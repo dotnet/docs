@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: ecf56646-7e5f-46c4-8340-f3a04e88920f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerFunctionControl::SetILInstrumentedCodeMap Method
 Sets a code map for the specified function by using the specified Common Intermediate Language (CIL) map entries.  

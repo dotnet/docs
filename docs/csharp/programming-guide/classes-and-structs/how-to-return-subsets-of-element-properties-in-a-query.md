@@ -1,12 +1,12 @@
 ---
-title: "How to: Return Subsets of Element Properties in a Query - C# Programming Guide"
+title: "How to return subsets of element properties in a query - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "anonymous types [C#], for subsets of element properties"
 ms.assetid: fabdf349-f443-4e3f-8368-6c471be1dd7b
 ---
-# How to: Return Subsets of Element Properties in a Query (C# Programming Guide)
+# How to return subsets of element properties in a query (C# Programming Guide)
 Use an anonymous type in a query expression when both of these conditions apply:  
   
 - You want to return only some of the properties of each source element.  
@@ -44,4 +44,4 @@ To run this code, copy and paste the class into a C# console application  with a
 
 - [C# Programming Guide](../index.md)
 - [Anonymous Types](./anonymous-types.md)
-- [LINQ Query Expressions](../linq-query-expressions/index.md)
+- [LINQ in C#](../../linq/index.md)

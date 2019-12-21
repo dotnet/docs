@@ -1,5 +1,5 @@
 ---
-title: "How to: Count Occurrences of a Word in a String (LINQ) (Visual Basic)"
+title: "How to: Count Occurrences of a Word in a String (LINQ)"
 ms.date: 07/20/2015
 ms.assetid: bc367e46-f7cc-45f9-936f-754e661b7bb9
 ---
@@ -52,9 +52,9 @@ End Class
 ' 3 occurrence(s) of the search term "data" were found.
 ```
 
-## Compiling the Code
+## Compile the code
 
-Create a VB.NET console application project, with an `Imports` statement for the System.Linq namespace.
+Create a Visual Basic console application project, with an `Imports` statement for the System.Linq namespace.
 
 ## See also
 

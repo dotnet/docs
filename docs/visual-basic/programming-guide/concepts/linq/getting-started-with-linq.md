@@ -1,5 +1,5 @@
 ---
-title: "Getting Started with LINQ in Visual Basic"
+title: "Getting Started with LINQ"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "queries [LINQ in Visual Basic], about LINQ in Visual Basic queries"
@@ -53,5 +53,5 @@ This section contains overviews, examples, and background information that will 
  [Language-Integrated Query (LINQ) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/index.md)  
  Provides links to topics that explain the LINQ technologies.  
   
- [Getting Started with LINQ in C#](../../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)  
+ [Getting Started with LINQ in C#](/dotnet/csharp/programming-guide/concepts/linq/)  
  Provides links to topics about using LINQ in C#.

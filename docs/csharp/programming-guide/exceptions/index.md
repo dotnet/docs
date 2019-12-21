@@ -41,13 +41,13 @@ See the following articles for more information about exceptions and exception h
 - [Exception Handling](exception-handling.md)
 - [Creating and Throwing Exceptions](creating-and-throwing-exceptions.md)
 - [Compiler-Generated Exceptions](compiler-generated-exceptions.md)
-- [How to: Handle an Exception Using try/catch (C# Programming Guide)](how-to-handle-an-exception-using-try-catch.md)
-- [How to: Execute Cleanup Code Using finally](how-to-execute-cleanup-code-using-finally.md)
-- [How to: Catch a non-CLS Exception](how-to-catch-a-non-cls-exception.md)
+- [How to handle an exception using try/catch (C# Programming Guide)](how-to-handle-an-exception-using-try-catch.md)
+- [How to execute cleanup code using finally](how-to-execute-cleanup-code-using-finally.md)
+- [How to catch a non-CLS exception](how-to-catch-a-non-cls-exception.md)
 
 ## C# Language Specification
 
-For more information, see [Exceptions](~/_csharplang/spec/exceptions.md) in the [C# Language Specification](../../language-reference/language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Exceptions](~/_csharplang/spec/exceptions.md) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
 
 ## See also
 

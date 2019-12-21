@@ -27,5 +27,5 @@ Function evaluation is disabled because a previous function evaluation timed out
   
 ## See also
 
-- [Debugging in Visual Studio](/visualstudio/debugger/debugging-in-visual-studio)
+- [Debugging in Visual Studio](/visualstudio/debugger/debugger-feature-tour)
 - [Navigating through Code with the Debugger](/visualstudio/debugger/navigating-through-code-with-the-debugger)

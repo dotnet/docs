@@ -14,7 +14,7 @@ ms.assetid: a09f4985-9f0d-48c8-b183-83d67a3dfe5f
 
 # Query Projections (WCF Data Services)
 
-Projection provides a mechanism in the [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] to reduce the amount of data in the feed returned by a query by specifying that only certain properties of an entity are returned in the response. For more information, see [OData: Select System Query Option ($select)](https://go.microsoft.com/fwlink/?LinkId=186076).
+Projection provides a mechanism in the Open Data Protocol (OData) to reduce the amount of data in the feed returned by a query by specifying that only certain properties of an entity are returned in the response. For more information, see [OData: Select System Query Option ($select)](https://go.microsoft.com/fwlink/?LinkId=186076).
 
 This topic describes how to define a query projection, what the requirements are for entity and non-entity types, making updates to projected results, creating projected types, and lists some projection considerations.
 
@@ -107,7 +107,7 @@ The following additional considerations apply when defining a query projection.
 
 - When a projection includes a navigation property, the related objects are loaded implicitly without having to call the <xref:System.Data.Services.Client.DataServiceQuery%601.Expand%2A> method. The <xref:System.Data.Services.Client.DataServiceQuery%601.Expand%2A> method is not supported for use in a projected query.
 
-- Query projections queries on the client are translated to use the `$select` query option in the request URI. When a query with projection is executed against a previous version of [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] that does not support the `$select` query option, an error is returned. This can also happen when the <xref:System.Data.Services.DataServiceBehavior.MaxProtocolVersion%2A> of the <xref:System.Data.Services.DataServiceBehavior> for the data service is set to a value of <xref:System.Data.Services.Common.DataServiceProtocolVersion.V1>. For more information, see [Data Service Versioning](data-service-versioning-wcf-data-services.md).
+- Query projections queries on the client are translated to use the `$select` query option in the request URI. When a query with projection is executed against a previous version of WCF Data Services that does not support the `$select` query option, an error is returned. This can also happen when the <xref:System.Data.Services.DataServiceBehavior.MaxProtocolVersion%2A> of the <xref:System.Data.Services.DataServiceBehavior> for the data service is set to a value of <xref:System.Data.Services.Common.DataServiceProtocolVersion.V1>. For more information, see [Data Service Versioning](data-service-versioning-wcf-data-services.md).
 
 For more information, see [How to: Project Query Results](how-to-project-query-results-wcf-data-services.md).
 

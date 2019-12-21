@@ -1,5 +1,5 @@
 ---
-title: "Get started with Visual Basic"
+title: "Get started"
 ms.date: 09/10/2018
 helpviewer_keywords:
   - "get started, Visual Basic"
@@ -35,7 +35,7 @@ Provides download links for Visual Studio versions that include Visual Basic sup
 - [Object-Oriented Programming](../programming-guide/concepts/object-oriented-programming.md)\
 Provides links to pages that introduce object-oriented programming and describe how to create your own objects and how to use objects to simplify your coding.
 
-- [Samples](../../visual-basic/sample-applications.md)\
+- [Samples](https://github.com/dotnet/samples/tree/master/snippets/visualbasic)\
 Provides links to sample code in Visual Basic.
 
 - [Walkthroughs](../../visual-basic/walkthroughs.md)\
@@ -47,7 +47,7 @@ Covers how to receive support and give feedback.
 - [Visual Studio](/visualstudio/)\
 Provides links into the Visual Studio documentation.
 
-- [C#](../../csharp/index.md)\
+- [C#](../../csharp/index.yml)\
 Provides links into the documentation on application development with Visual C#.
 
 - [Visual C++](/cpp/)\

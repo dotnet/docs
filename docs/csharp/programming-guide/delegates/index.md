@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: 97de039b-c76b-4b9c-a27d-8c1e1c8d93da
 ---
 # Delegates (C# Programming Guide)
-A [delegate](../../language-reference/keywords/delegate.md) is a type that represents references to methods with a particular parameter list and return type. When you instantiate a delegate, you can associate its instance with any method with a compatible signature and return type. You can invoke (or call) the method through the delegate instance.  
+A [delegate](../../language-reference/builtin-types/reference-types.md) is a type that represents references to methods with a particular parameter list and return type. When you instantiate a delegate, you can associate its instance with any method with a compatible signature and return type. You can invoke (or call) the method through the delegate instance.  
   
  Delegates are used to pass methods as arguments to other methods. Event handlers are nothing more than methods that are invoked through delegates. You create a custom method, and a class such as a windows control can call your method when a certain event occurs. The following example shows a delegate declaration:  
   
@@ -46,13 +46,13 @@ A [delegate](../../language-reference/keywords/delegate.md) is a type that repre
   
 - [Using Variance in Delegates](../concepts/covariance-contravariance/using-variance-in-delegates.md)  
   
-- [How to: Combine Delegates (Multicast Delegates)](./how-to-combine-delegates-multicast-delegates.md)  
+- [How to combine delegates (Multicast Delegates)](./how-to-combine-delegates-multicast-delegates.md)  
   
-- [How to: Declare, Instantiate, and Use a Delegate](./how-to-declare-instantiate-and-use-a-delegate.md)  
+- [How to declare, instantiate, and use a delegate](./how-to-declare-instantiate-and-use-a-delegate.md)
 
 ## C# Language Specification  
 
-For more information, see [Delegates](~/_csharplang/spec/delegates.md) in the [C# Language Specification](../../language-reference/language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Delegates](~/_csharplang/spec/delegates.md) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
   
 ## Featured Book Chapters  
  [Delegates, Events, and Lambda Expressions](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff518994%28v=orm.10%29) in [C# 3.0 Cookbook, Third Edition: More than 250 solutions for C# 3.0 programmers](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff518995%28v=orm.10%29)  

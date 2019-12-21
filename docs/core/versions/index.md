@@ -27,7 +27,7 @@ The third position of the SDK version number communicates both the minor and pat
 | Runtime and SDK Patch | 2.2.1             | 2.2.102           |
 | SDK Feature change    | 2.2.1             | 2.2.200           |
 
-(\*) This chart uses a future 2.2 .NET Core Runtime as the example because a historic artifact meant the first SDK for .NET Core 2.1 is 2.1.300. For more information, See the [.NET Core version selection](selection.md).
+(\*) This chart uses the 2.2 .NET Core Runtime as the example because a historic artifact meant the first SDK for .NET Core 2.1 is 2.1.300. For more information, See the [.NET Core version selection](selection.md).
 
 NOTES:
 

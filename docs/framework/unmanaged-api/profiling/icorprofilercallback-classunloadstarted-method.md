@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: bc93bead-f3a9-415c-b919-ddd3ca80facc
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ClassUnloadStarted Method
 Notifies the profiler that a class is being unloaded.  

@@ -24,7 +24,7 @@ Note: If after installing [.NET Core 2.2 SDK](https://dotnet.microsoft.com/downl
 
 ## Install
 
-The ML.NET CLI is installed like any other dotnet Global Tool. You use the `dotnet tool install` .NET Core CLI command. 
+The ML.NET CLI is installed like any other dotnet Global Tool. You use the `dotnet tool install` .NET Core CLI command.
 
 The following example shows how to install the ML.NET CLI in the default NuGet feed location:
 
@@ -107,7 +107,7 @@ On the machine where you'd like to enable completion, you'll need to do two thin
 
     ```console
     echo $profile
-    ``` 
+    ```
 
 (For other shells, [look for](https://github.com/dotnet/System.CommandLine/issues?q=is%3Aissue+is%3Aopen+label%3A%22shell+suggestion%22) or open an [issue](https://github.com/dotnet/System.CommandLine/issues).)
 
@@ -131,5 +131,5 @@ In this case, the .NET Core CLI doesn't add this location automatically to the P
 
 - [Tutorial on 'Getting Started with ML.NET CLI tool'](../tutorials/mlnet-cli.md)
 - [How to automatically train models with the ML.NET CLI tool](../automate-training-with-cli.md)
-- [ML.NET CLI auto-train command reference guide](../reference/ml-net-cli-reference.md) 
+- [ML.NET CLI auto-train command reference guide](../reference/ml-net-cli-reference.md)
 - [Telemetry in ML.NET CLI](../resources/ml-net-cli-telemetry.md)

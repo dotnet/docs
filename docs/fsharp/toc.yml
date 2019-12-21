@@ -1,5 +1,7 @@
-- name: F# guide
-  href: index.md
+- name: F# documentation
+  href: index.yml
+- name: What is F#
+  href: what-is-fsharp.md
 - name: Get Started
   href: get-started/index.md
   items:
@@ -7,14 +9,12 @@
     href: get-started/install-fsharp.md
   - name: Get Started with F# in Visual Studio
     href: get-started/get-started-visual-studio.md
-  - name: Get Started with F# in Visual Studio for Mac
-    href: get-started/get-started-with-visual-studio-for-mac.md
-  - name: Get Started with F# in Visual Studio Code and Ionide
+  - name: Get Started with F# in Visual Studio Code
     href: get-started/get-started-vscode.md
   - name: Get Started with F# with the .NET Core CLI
     href: get-started/get-started-command-line.md
-- name: What is F#
-  href: what-is-fsharp.md
+  - name: Get Started with F# in Visual Studio for Mac
+    href: get-started/get-started-with-visual-studio-for-mac.md
 - name: Tour of F#
   href: tour.md
 - name: Tutorials
@@ -39,6 +39,14 @@
       href: tutorials/type-providers/troubleshooting-type-providers.md
   - name: F# Interactive
     href: tutorials/fsharp-interactive/index.md
+- name: What's new in F#
+  items:
+  - name: F# 4.7
+    href: whats-new/fsharp-47.md
+  - name: F# 4.6
+    href: whats-new/fsharp-46.md
+  - name: F# 4.5
+    href: whats-new/fsharp-45.md
 - name: F# Language Reference
   href: language-reference/index.md
   items:

@@ -20,7 +20,7 @@ var query = from str in stringArray
             select stringGroup;
 ```
 
-For more information, see [LINQ Query Expressions](../../linq-query-expressions/index.md).
+For more information, see [LINQ Query Expressions](../../../linq/index.md).
 
 ## Implicitly Typed Variables (var)
 

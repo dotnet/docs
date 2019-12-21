@@ -6,20 +6,17 @@ ms.date: 12/20/2017
 
 # How to (C#)
 
-In the How to section of the C# Guide you can find quick answers
-to common questions. In some cases, articles may
-be listed in multiple sections. We wanted to make them easy to find
-for multiple search paths.
+In the How to section of the C# Guide, you can find quick answers to common questions. In some cases, articles may be listed in multiple sections. We wanted to make them easy to find for multiple search paths.
 
 ## General C# concepts
 
-There are several tips and tricks that are common C# developer practices.
+There are several tips and tricks that are common C# developer practices:
 
 - [Initialize objects using an object initializer](../programming-guide/classes-and-structs/how-to-initialize-objects-by-using-an-object-initializer.md).
 - [Learn the differences between passing a struct and a class to a method](../programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method.md).
 - [Use operator overloading](../language-reference/operators/operator-overloading.md).
 - [Implement and call a custom extension method](../programming-guide/classes-and-structs/how-to-implement-and-call-a-custom-extension-method.md).
-- Even C# programmers may want to [use the `My` namespace from VB](../programming-guide/namespaces/how-to-use-the-my-namespace.md).
+- Even C# programmers may want to [use the `My` namespace from Visual Basic](../programming-guide/namespaces/how-to-use-the-my-namespace.md).
 - [Create a new method for an `enum` type using extension methods](../programming-guide/classes-and-structs/how-to-create-a-new-method-for-an-enumeration.md).
 
 ### Class and struct members
@@ -63,8 +60,8 @@ You may need to convert an object to a different type.
 - [Convert a string to a number](../programming-guide/types/how-to-convert-a-string-to-a-number.md).
 - [Use pattern matching, the `as` and `is` operators to safely cast to a different type](../how-to/safely-cast-using-pattern-matching-is-and-as-operators.md).
 - [Define custom type conversions](../language-reference/operators/user-defined-conversion-operators.md).
-- [Determine if a type is a nullable value type](../programming-guide/nullable-types/how-to-identify-a-nullable-type.md).
-- [Convert between nullable and non-nullable value types](../programming-guide/nullable-types/using-nullable-types.md#conversion-from-a-nullable-value-type-to-an-underlying-type).
+- [Determine if a type is a nullable value type](../language-reference/builtin-types/nullable-value-types.md#how-to-identify-a-nullable-value-type).
+- [Convert between nullable and non-nullable value types](../language-reference/builtin-types/nullable-value-types.md#conversion-from-a-nullable-value-type-to-an-underlying-type).
 
 ## Equality and ordering comparisons
 

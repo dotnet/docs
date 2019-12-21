@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: 98fa8c61-66b6-4146-986c-3236c4045733
 ---
 # Delegates with Named vs. Anonymous Methods (C# Programming Guide)
-A [delegate](../../language-reference/keywords/delegate.md) can be associated with a named method. When you instantiate a delegate by using a named method, the method is passed as a parameter, for example:  
+A [delegate](../../language-reference/builtin-types/reference-types.md) can be associated with a named method. When you instantiate a delegate by using a named method, the method is passed as a parameter, for example:  
   
  [!code-csharp[csProgGuideDelegates#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDelegates/CS/Delegates.cs#1)]  
   
@@ -35,5 +35,5 @@ A [delegate](../../language-reference/keywords/delegate.md) can be associated wi
 
 - [C# Programming Guide](../index.md)
 - [Delegates](./index.md)
-- [How to: Combine Delegates (Multicast Delegates)](./how-to-combine-delegates-multicast-delegates.md)
+- [How to combine delegates (Multicast Delegates)](./how-to-combine-delegates-multicast-delegates.md)
 - [Events](../events/index.md)

@@ -1,5 +1,5 @@
 ---
-title: "Rapid Application Development with My.Resources and My.Settings (Visual Basic)"
+title: "Rapid Application Development with My.Resources and My.Settings"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My.Settings object [Visual Basic], developing applications"
@@ -9,9 +9,11 @@ helpviewer_keywords:
 ms.assetid: 68284ab1-b685-4814-a2a4-01ae40445ff8
 ---
 # Rapid Application Development with My.Resources and My.Settings (Visual Basic)
+
 The `My.Resources` object provides access to the application's resources and allows you to dynamically retrieve resources for your application.  
   
 ## Retrieving Resources  
+
  A number of resources such as audio files, icons, images, and strings can be retrieved through the `My.Resources` object. For example, you can access the application's culture-specific resource files. The following example sets the icon of the form to the icon named `Form1Icon` stored in the application's resource file.  
   
  [!code-vb[VbVbcnMy#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMy/VB/Class1.vb#7)]  

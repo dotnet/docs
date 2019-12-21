@@ -15,12 +15,12 @@ This article gives an overview of the steps necessary to start the .NET Core run
 
 ## Prerequisites
 
-Because hosts are native applications, this tutorial will cover constructing a C++ application to host .NET Core. You will need a C++ development environment (such as that provided by [Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)).
+Because hosts are native applications, this tutorial covers constructing a C++ application to host .NET Core. You will need a C++ development environment (such as that provided by [Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)).
 
 You will also want a simple .NET Core application to test the host with, so you should install the [.NET Core SDK](https://dotnet.microsoft.com/download) and [build a small .NET Core test app](with-visual-studio.md) (such as a 'Hello World' app). The 'Hello World' app created by the new .NET Core console project template is sufficient.
 
 ## Hosting APIs
-There are three different APIs that can be used to host .NET Core. This document (and its associated [samples](https://github.com/dotnet/samples/tree/master/core/hosting)) cover all options.
+There are three different APIs that can be used to host .NET Core. This article (and its associated [samples](https://github.com/dotnet/samples/tree/master/core/hosting)) covers all options.
 
 * The preferred method of hosting the .NET Core runtime in .NET Core 3.0 and above is with the `nethost` and `hostfxr` libraries' APIs. These entry points handle the complexity of finding and setting up the runtime for initialization and allow both launching a managed application and calling into a static managed method.
 * The preferred method of hosting the .NET Core runtime prior to .NET Core 3.0 is with the [CoreClrHost.h](https://github.com/dotnet/coreclr/blob/master/src/coreclr/hosts/inc/coreclrhost.h) API. This API exposes functions for easily starting and stopping the runtime and invoking managed code (either by launching a managed exe or by calling static managed methods).
@@ -83,7 +83,7 @@ The [Unix CoreRun host](https://github.com/dotnet/coreclr/tree/master/src/corecl
 
 The .NET Core runtime APIs are in *coreclr.dll* (on Windows), in *libcoreclr.so* (on Linux), or in *libcoreclr.dylib* (on macOS). The first step to hosting .NET Core is to load the CoreCLR library. Some hosts probe different paths or use input parameters to find the library while others know to load it from a certain path (next to the host, for example, or from a machine-wide location).
 
-Once found, the library is loaded with `LoadLibraryEx` (on Windows) or `dlopen` (on Linux/Mac).
+Once found, the library is loaded with `LoadLibraryEx` (on Windows) or `dlopen` (on Linux/macOS).
 
 [!code-cpp[CoreClrHost#1](~/samples/core/hosting/HostWithCoreClrHost/src/SampleHost.cpp#1)]
 
@@ -97,7 +97,7 @@ CoreClrHost has several important methods useful for hosting .NET Core:
 * `coreclr_shutdown`: Shuts down the .NET Core runtime.
 * `coreclr_shutdown_2`: Like `coreclr_shutdown`, but also retrieves the managed code's exit code.
 
-After loading the CoreCLR library, the next step is to get references to these functions using `GetProcAddress` (on Windows) or `dlsym` (on Linux/Mac).
+After loading the CoreCLR library, the next step is to get references to these functions using `GetProcAddress` (on Windows) or `dlsym` (on Linux/macOS).
 
 [!code-cpp[CoreClrHost#2](~/samples/core/hosting/HostWithCoreClrHost/src/SampleHost.cpp#2)]
 
@@ -116,7 +116,7 @@ Common properties include:
 * `NATIVE_DLL_SEARCH_DIRECTORIES`
    This property is a list of paths the loader should probe when looking for native libraries called via p/invoke.
 * `PLATFORM_RESOURCE_ROOTS`
-   This list includes paths to probe in for resource satellite assemblies (in culture-specific sub-directories).
+   This list includes paths to probe in for resource satellite assemblies (in culture-specific subdirectories).
 
 In this sample host, the TPA list is constructed by simply listing all libraries in the current directory:
 
@@ -170,21 +170,21 @@ The [CoreRun host](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hos
 The `ICLRRuntimeHost4` .NET Core hosting interface is defined in [MSCOREE.IDL](https://github.com/dotnet/coreclr/blob/master/src/inc/MSCOREE.IDL). A header version of this file (mscoree.h), which your host will need to reference, is produced via MIDL when the [.NET Core runtime](https://github.com/dotnet/coreclr/) is built. If you do not want to build the .NET Core runtime, mscoree.h is also available as a [pre-built header](https://github.com/dotnet/coreclr/tree/master/src/pal/prebuilt/inc) in the dotnet/coreclr repository. [Instructions on building the .NET Core runtime](https://github.com/dotnet/coreclr#building-the-repository) can be found in its GitHub repository.
 
 ### Step 1 - Identify the managed entry point
-After referencing necessary headers ([mscoree.h](https://github.com/dotnet/coreclr/tree/master/src/pal/prebuilt/inc/mscoree.h) and stdio.h, for example), one of the first things a .NET Core host must do is locate the managed entry point it will be using. In our sample host, this is done by just taking the first command line argument to our host as the path to a managed binary whose `main` method will be executed.
+After referencing necessary headers ([mscoree.h](https://github.com/dotnet/coreclr/tree/master/src/pal/prebuilt/inc/mscoree.h) and stdio.h, for example), one of the first things a .NET Core host must do is locate the managed entry point it will be using. In our sample host, this is done by just taking the first command-line argument to our host as the path to a managed binary whose `main` method will be executed.
 
 [!code-cpp[NetCoreHost#1](~/samples/core/hosting/HostWithMscoree/host.cpp#1)]
 
 ### Step 2 - Find and load CoreCLR
 The .NET Core runtime APIs are in *CoreCLR.dll* (on Windows). To get our hosting interface (`ICLRRuntimeHost4`), it's necessary to find and load *CoreCLR.dll*. It is up to the host to define a convention for how it will locate *CoreCLR.dll*. Some hosts expect the file to be present in a well-known machine-wide location (such as *%programfiles%\dotnet\shared\Microsoft.NETCore.App\2.1.6*). Others expect that *CoreCLR.dll* will be loaded from a location next to either the host itself or the app to be hosted. Still others might consult an environment variable to find the library.
 
-On Linux or Mac, the core runtime library is *libcoreclr.so* or *libcoreclr.dylib*, respectively.
+On Linux or macOS, the core runtime library is *libcoreclr.so* or *libcoreclr.dylib*, respectively.
 
-Our sample host probes a few common locations for *CoreCLR.dll*. Once found, it must be loaded via `LoadLibrary` (or `dlopen` on Linux/Mac).
+Our sample host probes a few common locations for *CoreCLR.dll*. Once found, it must be loaded via `LoadLibrary` (or `dlopen` on Linux/macOS).
 
 [!code-cpp[NetCoreHost#2](~/samples/core/hosting/HostWithMscoree/host.cpp#2)]
 
 ### Step 3 - Get an ICLRRuntimeHost4 Instance
-The `ICLRRuntimeHost4` hosting interface is retrieved by calling `GetProcAddress` (or `dlsym` on Linux/Mac) on `GetCLRRuntimeHost`, and then invoking that function.
+The `ICLRRuntimeHost4` hosting interface is retrieved by calling `GetProcAddress` (or `dlsym` on Linux/macOS) on `GetCLRRuntimeHost`, and then invoking that function.
 
 [!code-cpp[NetCoreHost#3](~/samples/core/hosting/HostWithMscoree/host.cpp#3)]
 
@@ -211,7 +211,7 @@ After deciding which AppDomain flags to use, AppDomain properties must be define
 Common AppDomain properties include:
 
 * `TRUSTED_PLATFORM_ASSEMBLIES`
-   This is a list of assembly paths (delimited by `;` on Windows and `:` on Linux/Mac) which the AppDomain should prioritize loading and give full trust to (even in partially-trusted domains). This list is meant to contain 'Framework' assemblies and other trusted modules, similar to the GAC in .NET Framework scenarios. Some hosts will put any library next to *coreclr.dll* on this list, others have hard-coded manifests listing trusted assemblies for their purposes.
+   This is a list of assembly paths (delimited by `;` on Windows and `:` on Linux/macOS) which the AppDomain should prioritize loading and give full trust to (even in partially trusted domains). This list is meant to contain 'Framework' assemblies and other trusted modules, similar to the GAC in .NET Framework scenarios. Some hosts will put any library next to *coreclr.dll* on this list, others have hard-coded manifests listing trusted assemblies for their purposes.
 * `APP_PATHS`
    This is a list of paths to probe in for an assembly if it can't be found in the trusted platform assemblies (TPA) list. Because the host has more control over which assemblies are loaded using the TPA list, it is a best practice for hosts to determine which assemblies they expect to load and list them explicitly. If probing at runtime is needed, however, this property can enable that scenario.
 * `APP_NI_PATHS`
@@ -219,7 +219,7 @@ Common AppDomain properties include:
 * `NATIVE_DLL_SEARCH_DIRECTORIES`
    This property is a list of paths the loader should probe when looking for native DLLs called via p/invoke.
 * `PLATFORM_RESOURCE_ROOTS`
-   This list includes paths to probe in for resource satellite assemblies (in culture-specific sub-directories).
+   This list includes paths to probe in for resource satellite assemblies (in culture-specific subdirectories).
 
 In our [simple sample host](https://github.com/dotnet/samples/tree/master/core/hosting/HostWithMscoree), these properties are set up as follows:
 
@@ -259,6 +259,6 @@ CoreCLR does not support unloading. Do not unload the CoreCLR library.
 ## Conclusion
 Once your host is built, it can be tested by running it from the command line and passing any arguments the host expects (like the managed app to run for the mscoree example host). When specifying the .NET Core app for the host to run, be sure to use the .dll that is produced by `dotnet build`. Executables (.exe files) produced by `dotnet publish` for self-contained applications are actually the default .NET Core host (so that the app can be launched directly from the command line in mainline scenarios); user code is compiled into a dll of the same name.
 
-If things don't work initially, double-check that *coreclr.dll* is available in the location expected by the host, that all necessary Framework libraries are in the TPA list, and that CoreCLR's bitness (32- or 64-bit) matches how the host was built.
+If things don't work initially, double-check that *coreclr.dll* is available in the location expected by the host, that all necessary Framework libraries are in the TPA list, and that CoreCLR's bitness (32-bit or 64-bit) matches how the host was built.
 
 Hosting the .NET Core runtime is an advanced scenario that many developers won't require, but for those who need to launch managed code from a native process, or who need more control over the .NET Core runtime's behavior, it can be very useful.

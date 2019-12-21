@@ -1,5 +1,5 @@
 ---
-title: "How to: Change the Namespace for an Entire XML Tree (Visual Basic)"
+title: "How to: Change the Namespace for an Entire XML Tree"
 ms.date: 07/20/2015
 ms.assetid: 1837324b-5cb5-4fa8-95b9-3071efa0f913
 ---

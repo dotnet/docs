@@ -1,5 +1,5 @@
 ---
-title: What is .NET for Apache Spark? 
+title: What is .NET for Apache Spark?
 description: Learn about .NET for Apache Spark, a free, open-source, and cross-platform big data analytics framework that takes Spark anywhere you write .NET code.
 author: mamccrea
 ms.topic: overview
@@ -14,10 +14,10 @@ ms.date: 10/15/2019
 
 .NET for Apache Spark empowers developers with .NET experience or code bases to participate in the world of big data analytics. .NET for Apache Spark provides high performance APIs for using Spark from C# and F#. With C# and F#, you can access:
 
-* DataFrame and SparkSQL for working with structured data
-* Spark Structured Streaming for working with streaming data
-* Spark SQL for writing queries with SQL syntax
-* Machine learning integration for faster training and prediction (i.e. use .NET for Apache Spark alongside [ML.NET](http://dot.net/ml))
+* DataFrame and SparkSQL for working with structured data.
+* Spark Structured Streaming for working with streaming data.
+* Spark SQL for writing queries with SQL syntax.
+* Machine learning integration for faster training and prediction (that is, use .NET for Apache Spark alongside [ML.NET](https://dot.net/ml)).
 
 .NET for Apache Spark is compliant with .NET Standard, a formal specification of .NET APIs that are common across .NET implementations. This means you can use .NET for Apache Spark anywhere you write .NET code allowing you to reuse all the knowledge, skills, code, and libraries you already have as a .NET developer.
 
@@ -34,7 +34,7 @@ You can learn about interop support for Spark language extensions from [the prop
 
 ## .NET for Apache Spark performance
 
-When compared against Python and Scala using the [TPC-H benchmark](http://www.tpc.org/tpch/), .NET for Apache Spark performs well in most cases and is 2x faster than Python when user-defined function performance is critical. There is an ongoing effort to improve and benchmark performance. 
+When compared against Python and Scala using the [TPC-H benchmark](http://www.tpc.org/tpch/), .NET for Apache Spark performs well in most cases and is 2x faster than Python when user-defined function performance is critical. There is an ongoing effort to improve and benchmark performance.
 
 To do your own benchmarking, see the benchmarks available on the [.NET for Apache Spark GitHub](https://github.com/dotnet/spark/tree/master/benchmark).
 

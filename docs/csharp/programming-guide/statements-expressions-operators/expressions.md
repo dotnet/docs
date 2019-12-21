@@ -41,7 +41,7 @@ System.Convert.ToInt32("35");
   
  [!code-csharp[csProgGuideStatements#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStatements/CS/Statements.cs#2)]  
   
- For more information on literals, see [Types](../../language-reference/keywords/types.md).  
+ For more information on literals, see [Types](/dotnet/csharp/language-reference/keywords).  
   
  In the preceding example, both `i` and `s` are simple names that identify local variables. When those variables are used in an expression, the variable name evaluates to the value that is currently stored in the variable's location in memory. This is shown in the following example:  
   

@@ -1,5 +1,5 @@
 ---
-title: "Generic Types in Visual Basic (Visual Basic)"
+title: "Generic Types"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "generic interfaces"

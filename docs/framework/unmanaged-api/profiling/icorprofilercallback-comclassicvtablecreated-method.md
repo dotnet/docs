@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 6e1834ab-c359-498a-b10b-984ae23cdda4
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::COMClassicVTableCreated Method
 Notifies the profiler that a COM interop vtable for the specified IID and class has been created.  

@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Accessing the Web by Using Async and Await (Visual Basic)"
+title: "Walkthrough: Accessing the Web by Using Async and Await"
 ms.date: 07/20/2015
 ms.assetid: 84fd047f-fab8-4d89-8ced-104fb7310a91
 ---
@@ -75,7 +75,7 @@ Visual Studio 2012 or later must be installed on your computer. For more informa
 
 6. Position the text box and the button so that both appear in the **MainWindow** window.
 
-    For more information about the WPF XAML Designer, see [Creating a UI by using XAML Designer](/visualstudio/designers/creating-a-ui-by-using-xaml-designer-in-visual-studio).
+    For more information about the WPF XAML Designer, see [Creating a UI by using XAML Designer](/visualstudio/xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio).
 
 ## Add a reference
 
@@ -655,10 +655,10 @@ End Class
 ## See also
 
 - [Async Sample: Accessing the Web Walkthrough (C# and Visual Basic)](https://code.msdn.microsoft.com/Async-Sample-Accessing-the-9c10497f)
-- [Await Operator](../../../../visual-basic/language-reference/operators/await-operator.md)
-- [Async](../../../../visual-basic/language-reference/modifiers/async.md)
-- [Asynchronous Programming with Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/index.md)
-- [Async Return Types (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/async-return-types.md)
-- [Task-based Asynchronous Programming (TAP)](https://go.microsoft.com/fwlink/?LinkId=204847)
-- [How to: Extend the Async Walkthrough by Using Task.WhenAll (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/how-to-extend-the-async-walkthrough-by-using-task-whenall.md)
-- [How to: Make Multiple Web Requests in Parallel by Using Async and Await (Visual Basic)](../../../../visual-basic/programming-guide/concepts/async/how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md)
+- [Await Operator](../../../language-reference/operators/await-operator.md)
+- [Async](../../../language-reference/modifiers/async.md)
+- [Asynchronous Programming with Async and Await (Visual Basic)](index.md)
+- [Async Return Types (Visual Basic)](async-return-types.md)
+- [Task-based Asynchronous Programming (TAP)](https://www.microsoft.com/download/details.aspx?id=19957)
+- [How to: Extend the Async Walkthrough by Using Task.WhenAll (Visual Basic)](how-to-extend-the-async-walkthrough-by-using-task-whenall.md)
+- [How to: Make Multiple Web Requests in Parallel by Using Async and Await (Visual Basic)](how-to-make-multiple-web-requests-in-parallel-by-using-async-and-await.md)

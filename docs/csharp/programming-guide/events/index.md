@@ -31,19 +31,19 @@ Events enable a [class](../../language-reference/keywords/class.md) or object to
 ## Related Sections  
  For more information, see:  
   
-- [How to: Subscribe to and Unsubscribe from Events](./how-to-subscribe-to-and-unsubscribe-from-events.md)  
-  
-- [How to: Publish Events that Conform to .NET Framework Guidelines](./how-to-publish-events-that-conform-to-net-framework-guidelines.md)  
-  
-- [How to: Raise Base Class Events in Derived Classes](./how-to-raise-base-class-events-in-derived-classes.md)  
-  
-- [How to:  Implement Interface Events](./how-to-implement-interface-events.md)  
-  
-- [How to: Implement Custom Event Accessors](./how-to-implement-custom-event-accessors.md)  
-  
+- [How to subscribe to and unsubscribe from events](./how-to-subscribe-to-and-unsubscribe-from-events.md)
+
+- [How to publish events that conform to .NET Framework Guidelines](./how-to-publish-events-that-conform-to-net-framework-guidelines.md)
+
+- [How to raise base class events in derived classes](./how-to-raise-base-class-events-in-derived-classes.md)
+
+- [How to implement interface events](./how-to-implement-interface-events.md)
+
+- [How to implement custom event accessors](./how-to-implement-custom-event-accessors.md)
+
 ## C# Language Specification  
 
-For more information, see [Events](~/_csharplang/spec/classes.md#events) in the [C# Language Specification](../../language-reference/language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Events](~/_csharplang/spec/classes.md#events) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
   
 ## Featured Book Chapters  
  [Delegates, Events, and Lambda Expressions](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff518994%28v=orm.10%29) in [C# 3.0 Cookbook, Third Edition: More than 250 solutions for C# 3.0 programmers](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ff518995%28v=orm.10%29)  

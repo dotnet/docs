@@ -24,13 +24,13 @@ In this part of the series you'll learn how to:
 ## Prerequisites
 
 * Complete [part 1](cli-templates-create-item-template.md) of this tutorial series.
-* Open a terminal and navigate to the _working\templates\\_ folder.
+* Open a terminal and navigate to the _working\templates_ folder.
 
 ## Create a project template
 
 Project templates produce ready-to-run projects that make it easy for users to start with a working set of code. .NET Core includes a few project templates such as a console application or a class library. In this example, you'll create a new console project that enables C# 8.0 and produces an `async main` entry point.
 
-In your terminal, navigate to the _working\templates\\_ folder and create a new subfolder named _consoleasync_. Enter the subfolder and run `dotnet new console` to generate the standard console application. You'll be editing the files produced by this template to create a new template.
+In your terminal, navigate to the _working\templates_ folder and create a new subfolder named _consoleasync_. Enter the subfolder and run `dotnet new console` to generate the standard console application. You'll be editing the files produced by this template to create a new template.
 
 ```console
 working
@@ -93,7 +93,7 @@ Now that you have the content of the template created, you need to create the te
 
 ## Create the template config
 
-Templates are recognized in .NET Core by a special folder and config file that exist at the root of your template. In this tutorial, your template folder is located at _working\templates\consoleasync\\_.
+Templates are recognized in .NET Core by a special folder and config file that exist at the root of your template. In this tutorial, your template folder is located at _working\templates\consoleasync_.
 
 When you create a template, all files and folders in the template folder are included as part of the template except for the special config folder. This config folder is named _.template.config_.
 

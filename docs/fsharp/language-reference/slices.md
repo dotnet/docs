@@ -1,5 +1,5 @@
 ---
-title: Slices (F#)
+title: Slices
 description: Learn about how to use slices for existing F# data types and how to define your own slices for other data types.
 ms.date: 01/22/2019
 ---
@@ -111,12 +111,19 @@ If you are defining slices for a type that is actually a struct, we recommend th
 ```fsharp
 open System
 
+type ReadOnlySpan<'T> with
+    // Note the 'inline' in the member definition
+    member sp.GetSlice(startIdx, endIdx) =
+        let s = defaultArg startIdx 0
+        let e = defaultArg endIdx sp.Length
+        sp.Slice(s, e - s)
+
 type Span<'T> with
     // Note the 'inline' in the member definition
     member inline sp.GetSlice(startIdx, endIdx) =
         let s = defaultArg startIdx 0
         let e = defaultArg endIdx sp.Length
-        sp.Slice(s, e)
+        sp.Slice(s, e - s)
 
 let printSpan (sp: Span<int>) =
     let arr = sp.ToArray()

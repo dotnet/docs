@@ -1,5 +1,5 @@
 ---
-title: "If...Then...Else Statement (Visual Basic)"
+title: "If...Then...Else Statement"
 ms.date: 04/16/2018
 f1_keywords:
   - "vb.ElseIf"

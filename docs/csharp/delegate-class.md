@@ -40,7 +40,7 @@ The compiler generates a class, derived from `System.Delegate`
 that matches the signature used (in this case, a method that
 returns an integer, and has two arguments). The type
 of that delegate is `Comparison`. The `Comparison` delegate
-type is a generic type. For details on generics see [here](generics.md).
+type is a generic type. For details on generics see [here](programming-guide/generics/index.md).
 
 Notice that the syntax may appear as though it is declaring
 a variable, but it is actually declaring a *type*. You can

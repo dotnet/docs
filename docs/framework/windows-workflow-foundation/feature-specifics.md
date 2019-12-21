@@ -6,7 +6,7 @@ ms.assetid: e84d12da-a055-45f6-b4d1-878d127b46b6
 
 # Windows Workflow Foundation Feature Specifics
 
-[!INCLUDE[netfx40_long](../../../includes/netfx40-long-md.md)] adds a number of features to Windows Workflow Foundation. This document describes a number of the new features, and gives details about scenarios in which they may be useful.
+.NET Framework 4 adds a number of features to Windows Workflow Foundation. This document describes a number of the new features, and gives details about scenarios in which they may be useful.
 
 ## Messaging Activities
 
@@ -90,15 +90,15 @@ The WCF configuration schema is complex and provides users with many hard to fin
 
 ### Getting Started
 
-- [A Developer's Guide to WCF 4.0](https://go.microsoft.com/fwlink/?LinkId=204940)
+- [A Developer's Guide to WCF 4.0](https://docs.microsoft.com/previous-versions/dotnet/articles/ee354381(v=msdn.10))
 
-- [Configuration Channel Factory](https://go.microsoft.com/fwlink/?LinkId=204941)
+- [Configuration Channel Factory](xref:System.ServiceModel.Configuration.ConfigurationChannelFactory%601)
 
-- [Standard Endpoint Element](https://go.microsoft.com/fwlink/?LinkId=204942)
+- [Standard Endpoint Element](xref:System.ServiceModel.Configuration.StandardEndpointElement)
 
-- [Service configuration improvements in .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=204943)
+- [Service configuration improvements in .NET Framework 4](https://blogs.msdn.microsoft.com/endpoint/2009/06/30/service-configuration-improvements-in-net-4/)
 
-- [Common User Mistake in .NET 4: Mistyping the WF/WCF Service Configuration Name](https://go.microsoft.com/fwlink/?LinkId=204944)
+- [Common User Mistake in .NET 4: Mistyping the WF/WCF Service Configuration Name](https://blogs.msdn.microsoft.com/endpoint/2009/11/09/common-user-mistake-in-net-4-mistyping-the-wfwcf-service-configuration-name/)
 
 ### Simplified Configuration Scenarios
 
@@ -120,9 +120,9 @@ The [DataContractResolver](../wcf/samples/datacontractresolver.md) solves these 
 
 ### Getting Started
 
-- [Data Contract Resolver API documentation](https://go.microsoft.com/fwlink/?LinkId=204946)
+- [Data Contract Resolver API documentation](xref:System.Runtime.Serialization.DataContractResolver)
 
-- [Introducing the Data Contract Resolver](https://go.microsoft.com/fwlink/?LinkId=204947)
+- [Introducing the Data Contract Resolver](https://blogs.msdn.microsoft.com/youssefm/2009/06/05/configuring-known-types-dynamically-introducing-the-datacontractresolver/)
 
 - Samples:
 
@@ -184,7 +184,7 @@ A flowchart activity can be used to implement a guessing game. The guessing game
 
 ## Procedural activities (Sequence, If, ForEach, Switch, Assign, DoWhile, While)
 
-Procedural activities provide a mechanism to model sequential control flow using concepts that are familiar to programmers. These activities enable traditionally structured programming language constructs and, when appropriate, provide language parity with common procedural languages such as C#/VB.
+Procedural activities provide a mechanism to model sequential control flow using concepts that are familiar to programmers. These activities enable traditionally structured programming language constructs and, when appropriate, provide language parity with common procedural languages such as C# and Visual Basic.
 
 ### Getting Started
 
@@ -226,7 +226,7 @@ The <xref:System.Activities.Statements.InvokeMethod> activity allows invoking pu
 
 ## Error handling activities
 
-The <xref:System.Activities.Statements.TryCatch> activity provides a mechanism for catching exceptions that occur during the execution of a set of contained activities (similar to the Try/Catch construct in C#/VB). <xref:System.Activities.Statements.TryCatch> provides exception handling at the workflow level. When an unhandled exception is thrown, the workflow is aborted and the Finally block won’t be executed. This behavior is consistent with C#.
+The <xref:System.Activities.Statements.TryCatch> activity provides a mechanism for catching exceptions that occur during the execution of a set of contained activities (similar to the Try/Catch construct in C# and Visual Basic). <xref:System.Activities.Statements.TryCatch> provides exception handling at the workflow level. When an unhandled exception is thrown, the workflow is aborted and the Finally block won’t be executed. This behavior is consistent with C#.
 
 ### Getting Started
 
@@ -282,7 +282,7 @@ The routing service in .NET 4 is designed to make these problems easier to solve
 
 2. Samples: [Routing Services &#91;WCF Samples&#93;](../wcf/samples/routing-services.md)
 
-3. Blog: [Routing Rules!](https://go.microsoft.com/fwlink/?LinkId=204956)
+3. Blog: [Routing Rules!](https://blogs.msdn.microsoft.com/RoutingRules/)
 
 ### Routing Scenarios
 
@@ -350,6 +350,6 @@ The <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> is a SQL
 
 1. In Visual Studio 2012, create a Workflow that contains an implicit or explicit <xref:System.Activities.Statements.Persist> activity. Add the <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> behavior to your workflow service host. This can be done in code or in the application configuration file.
 
-2. Samples: [Persistence](./samples/persistence.md)
+2. Samples: [Persistence](/previous-versions/dotnet/netframework-4.0/dd699769(v%3dvs.100))
 
 3. Conceptual documentation: [SQL Workflow Instance Store](sql-workflow-instance-store.md).

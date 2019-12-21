@@ -89,7 +89,7 @@ ms.assetid: 476b03dc-2b12-49a7-b067-41caeaa2f533
   
  During execution, managed code receives services such as garbage collection, security, interoperability with unmanaged code, cross-language debugging support, and enhanced deployment and versioning support.  
   
- In Microsoft [!INCLUDE[winxp](../../includes/winxp-md.md)] and [!INCLUDE[windowsver](../../includes/windowsver-md.md)], the operating system loader checks for managed modules by examining a bit in the COFF header. The bit being set denotes a managed module. If the loader detects managed modules, it loads mscoree.dll, and `_CorValidateImage` and `_CorImageUnloading` notify the loader when the managed module images are loaded and unloaded. `_CorValidateImage` performs the following actions:  
+ In Microsoft Windows Vista, the operating system loader checks for managed modules by examining a bit in the COFF header. The bit being set denotes a managed module. If the loader detects managed modules, it loads mscoree.dll, and `_CorValidateImage` and `_CorImageUnloading` notify the loader when the managed module images are loaded and unloaded. `_CorValidateImage` performs the following actions:  
   
 1. Ensures that the code is valid managed code.  
   

@@ -1,5 +1,5 @@
 ---
-title: "Type Conversions in Visual Basic"
+title: "Type Conversions"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "conversions [Visual Basic], type"

@@ -2,7 +2,7 @@
 title: 'Tutorial: Categorize iris flowers - k-means clustering'
 description: Learn how to use ML.NET in a clustering scenario
 author: pkulikov
-ms.date: 09/30/2019
+ms.date: 11/15/2019
 ms.topic: tutorial
 ms.custom: mvc, seodec18, title-hack-0516
 #Customer intent: As a developer, I want to use ML.NET so that I can build a k-means clustering model to categorize iris flowers based on its parameters.
@@ -44,7 +44,7 @@ As you don't know to which group each flower belongs to, you choose the [unsuper
 
 1. Install the **Microsoft.ML** NuGet package:
 
-    In **Solution Explorer**, right-click the project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the **Browse** tab, search for **Microsoft.ML**, select the **v1.0.0** package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
+    In **Solution Explorer**, right-click the project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the **Browse** tab, search for **Microsoft.ML** and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
 
 ## Prepare the data
 
@@ -113,9 +113,9 @@ In the `Main` method, replace the `Console.WriteLine("Hello World!");` line with
 
 The <xref:Microsoft.ML.MLContext?displayProperty=nameWithType> class represents the machine learning environment and provides mechanisms for logging and entry points for data loading, model training, prediction, and other tasks. This is comparable conceptually to using `DbContext` in Entity Framework.
 
-## Setup data loading
+## Set up data loading
 
-Add the following code to the `Main` method to setup the way to load data:
+Add the following code to the `Main` method to set up the way to load data:
 
 [!code-csharp[Create text loader](~/samples/machine-learning/tutorials/IrisFlowerClustering/Program.cs#CreateDataView)]
 

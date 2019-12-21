@@ -1,5 +1,5 @@
 ---
-title: "How to: Parse File Paths in Visual Basic"
+title: "How to: Parse File Paths"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "file names [Visual Basic], parsing [Visual Basic]"
@@ -7,6 +7,7 @@ helpviewer_keywords:
 ms.assetid: c1bd99c9-8160-456a-b5ab-60a49139b923
 ---
 # How to: Parse File Paths in Visual Basic
+
 The <xref:Microsoft.VisualBasic.FileIO.FileSystem> object offers a number of useful methods when parsing file paths.  
   
 - The <xref:Microsoft.VisualBasic.FileIO.FileSystem.CombinePath%2A> method takes two paths and returns a properly formatted combined path.  

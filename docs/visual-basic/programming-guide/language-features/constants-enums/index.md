@@ -1,5 +1,5 @@
 ---
-title: "Constants and Enumerations in Visual Basic"
+title: "Constants and Enumerations"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "enumerations [Visual Basic]"

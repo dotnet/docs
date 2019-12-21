@@ -31,13 +31,13 @@ This section describes the Visual Studio development tools that can assist you i
 ## Using the Tools without Administrator privilege  
  To enable users without administrator privilege to develop WCF services, an ACL (Access Control List) is created for the namespace "http://+:8731/Design_Time_Addresses" during the installation of Visual Studio. The ACL is set to (UI), which includes all interactive users logged on to the machine. Administrators can add or remove users from this ACL, or open additional ports.This ACL enables WCF or WF templates to send and receive data in their default configuration. It also enables users to use the WCF Service Auto Host (wcfSvcHost.exe) without granting them administrator privileges.  
   
- You can modify access using the Netsh.exe tool in [!INCLUDE[wv](../../../includes/wv-md.md)] under the elevated administrator account. The following is an example of using Netsh.exe.  
+ You can modify access using the Netsh.exe tool in Windows Vista under the elevated administrator account. The following is an example of using Netsh.exe.  
   
-```  
+```console  
 netsh http add urlacl url=http://+:8001/MyService user=<domain>\<user>  
 ```  
   
- For more information about Netsh.exe, see [How to Use the Netsh.exe Tool and Command-Line Switches](https://go.microsoft.com/fwlink/?LinkId=97877).  
+ For more information about Netsh.exe, see [How to Use the Netsh.exe Tool and Command-Line Switches](https://docs.microsoft.com/previous-versions/tn-archive/bb490939(v=technet.10)).  
   
 ## See also
 

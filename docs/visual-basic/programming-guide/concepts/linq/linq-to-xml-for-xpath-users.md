@@ -1,5 +1,5 @@
 ---
-title: "LINQ to XML for XPath Users (Visual Basic)"
+title: "LINQ to XML for XPath Users"
 ms.date: 07/20/2015
 ms.assetid: 0e64911c-a7cc-4c20-b927-ca99078b5656
 ---
@@ -13,7 +13,7 @@ This set of topics show a number of XPath expressions and their [!INCLUDE[sqltec
   
 |Topic|Description|  
 |-----------|-----------------|  
-|[Comparison of XPath and LINQ to XML](../../../../visual-basic/programming-guide/concepts/linq/comparison-of-xpath-and-linq-to-xml.md)|Provides an overview of the similarities and differences between XPath and [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)].|  
+|[Comparison of XPath and LINQ to XML](../../../../csharp/programming-guide/concepts/linq/comparison-of-xpath-and-linq-to-xml.md)|Provides an overview of the similarities and differences between XPath and [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)].|  
 |[How to: Find a Child Element (XPath-LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-find-a-child-element-xpath-linq-to-xml.md)|Compares the XPath child element axis to the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] <xref:System.Xml.Linq.XContainer.Element%2A> method.<br /><br /> The associated XPath expression is:`"DeliveryNotes"`.|  
 |[How to: Find a List of Child Elements (XPath-LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-find-a-list-of-child-elements-xpath-linq-to-xml.md)|Compares the XPath child elements axis to the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] <xref:System.Xml.Linq.XContainer.Elements%2A> axis.<br /><br /> The associated XPath expression is:`"./*"`|  
 |[How to: Find the Root Element (XPath-LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-find-the-root-element-xpath-linq-to-xml.md)|Compares how to get the root element with XPath and [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)].<br /><br /> The associated XPath expression is:`"/PurchaseOrders"`|  

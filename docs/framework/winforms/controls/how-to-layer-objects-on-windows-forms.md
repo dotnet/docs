@@ -12,8 +12,8 @@ helpviewer_keywords:
   - "controls [Windows Forms], positioning"
   - "z-order"
 ms.assetid: 1acc4281-2976-4715-86f4-bda68134baaf
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # How to: Layer objects on Windows Forms

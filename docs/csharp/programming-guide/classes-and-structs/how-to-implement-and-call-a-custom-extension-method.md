@@ -1,12 +1,12 @@
 ---
-title: "How to: Implement and Call a Custom Extension Method - C# Programming Guide"
+title: "How to implement and call a custom extension method - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "extension methods [C#], implementing and calling"
 ms.assetid: 7dab2a56-cf8e-4a47-a444-fe610a02772a
 ---
-# How to: Implement and Call a Custom Extension Method (C# Programming Guide)
+# How to implement and call a custom extension method (C# Programming Guide)
 This topic shows how to implement your own extension methods for any .NET type. Client code can use your extension methods by adding a reference to the DLL that contains them, and adding a [using](../../language-reference/keywords/using-directive.md) directive that specifies the namespace in which the extension methods are defined.  
   
 ## To define and call the extension method  

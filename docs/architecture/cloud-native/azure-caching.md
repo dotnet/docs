@@ -6,6 +6,8 @@ ms.date: 12/18/2019
 ---
 # Caching in a cloud-native app
 
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
 The benefits of caching are well understood. The technique works by temporarily copying frequently accessed data from a backend data store to *fast storage* that's located closer to the application. Caching is often implemented where...
 
 - Data remains relatively static.

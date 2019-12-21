@@ -1,5 +1,5 @@
 ---
-title: "Serialize control characters with DataContractJsonSerializer"
+title: Serialization of control characters with DataContractJsonSerializer
 ms.date: 04/07/2017
 helpviewer_keywords: 
   - ".NET Framework 4.7 retargeting changes"

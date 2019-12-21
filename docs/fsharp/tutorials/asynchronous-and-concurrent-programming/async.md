@@ -1,5 +1,5 @@
 ---
-title: Async Programming in F#
+title: Async Programming
 description: Learn how F# provides clean support for asynchrony based on a language-level programming model derived from core functional programming concepts.
 ms.date: 12/17/2018
 ---

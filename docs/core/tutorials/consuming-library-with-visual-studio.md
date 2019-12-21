@@ -1,9 +1,7 @@
 ---
 title: Consume a .NET Standard library in Visual Studio
 description: Build a .NET Core application that calls members of another class library with Visual Studio 2019.
-author: BillWagner
-ms.author: wiwagn
-ms.date: 06/05/2018
+ms.date: 12/20/2019
 dev_langs:
   - "csharp"
   - "vb"

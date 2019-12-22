@@ -82,7 +82,7 @@ Applications created with Windows Communication Foundation (WCF) can log securit
 |System|Application log|Security log|  
 |------------|---------------------|------------------|  
 |[!INCLUDE[wxpsp2](../../../../includes/wxpsp2-md.md)] or later|Supported|Not supported|  
-|[!INCLUDE[ws2003sp1](../../../../includes/ws2003sp1-md.md)] and Windows Vista|Supported|Thread context must possess `SeAuditPrivilege`|  
+|Windows Server 2003 SP1 and Windows Vista|Supported|Thread context must possess `SeAuditPrivilege`|  
   
 #### Other Factors  
  In addition to the operating system, the following table describes other settings that control the enablement of logging.  

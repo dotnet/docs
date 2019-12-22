@@ -2,13 +2,13 @@
 title: Cloud-native data
 description: Contrast data storage in monolithic and cloud-native applications
 author: robvet
-ms.date: 12/08/2019
+ms.date: 12/21/2019
 ---
 # Database-per-microservice
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-While a cloud-native approach transforms the way you design systems, it also changes the way you manage and store data.
+As we've seen throughout this book, a cloud-native approach changes the way you design, deploy, and manage applications. It also changes the way you manage and store data.
 
 Figure 5-1 contrasts the differences.
 

@@ -44,7 +44,7 @@ When possible, cloud-native services target the guarantees of data availability 
 
 NoSQL databases include a variety of data models for accessing and managing data shown in Figure 5-10.
 
-![Overview of Cosmos DB](./media/types-of-nosql-datastores.png)
+![NoSQL data models](./media/types-of-nosql-datastores.png)
 
 **Figure 5-10**: Data models for NoSQL databases
 
@@ -62,21 +62,54 @@ Based upon specific data needs, a cloud-native-based microservice can  implement
 | Your application will be deployed to commodity hardware, such as with public clouds | Your application will be deployed to large, high-end hardware | 
 |||
 
-Next, we look at how data storage requirements for cloud-natve systems can be implemented in the Azure cloud.
+## Data in the Azure cloud
 
-## Cloud-native data
+Let's now look at how data storage can be implemented for cloud-native systems in the Azure cloud.
 
-Blah
+To start, you could provision an Azure virtual machine and install your database of choice for each service. While you'd have full control over the environment, you'd forgo many built-in features of the cloud platform. You'd also be responsible for managing the virtual machine and database for each service. This approach could quickly become time-consuming and expensive.
 
-## Data storage in Azure  or Relational data in Azure
+Another option would be to containerize a database and deploy it to a container orchestrator such as Kubernetes.
 
-As we've seen in this book, the cloud changes how you design, deploy, and manage applications. As we move from a single shared database to an architecture where each service owns it own database, data management becomes complex. In this section, we'll explore how the Azure cloud can help streamline the way you store and manage your cloud-native data.
+The [Cloud Native Computing Foundation](https://www.cncf.io/) supports many such projects shown in Figure 5-11.
 
-To start, you could provision an Azure virtual machine and install your database of choice for each service. While you'd have full control over the environment, you'd forgo many built-in features of the cloud platform. You'd also be responsible for managing the virtual machine and database for each service. This approach would quickly become time-consuming and expensive.
+![CNCF databases](./media/cncf-databases.png)
+
+**Figure 5-9**. CNCF databases
+
+The open source projects in the previous figure are available from the Cloud Native Computing Foundation. They support distributed relational databases that are deployable to Kubernetes, scale horizontally, and support ACID transactions.
+
+While containerizing a database in a Kubernetes cluster automates the provisioning, health checking, and scaling, it introduces many challenges.
+
+Databases are stateful and long-lived; containers are typically stateless and ephemeral. The extra effort required to manage persistent data storage may make the container landscape less desirable. While containerized databases may be ideal for development, testing, and demo environments, they may not meet the strict performance and reliability requirements for a production environments, at least, not at this time.
 
 Instead, cloud-native applications favor fully managed [Database as a Service (DBaaS)](https://www.stratoscale.com/blog/dbaas/what-is-database-as-a-service/) data services. They provide compelling built-in cloud features such as security, scalability, and monitoring. These data services can be configured across multiple Azure availability zones and regions to achieve high availability. The hosting, maintenance, and licensing are managed by the vendor, Microsoft. They all support just-in-time capacity and a pay-as-you-go model. Azure features different kinds of managed data service options, each with specific benefits. 
 
+
+
+
+
 We'll first look at relational DBaaS services available in Azure. You'll see that Microsoft's flagship SQL Server database is available along with several open-source options. Then, we'll talk about the NoSQL data services in Azure.
+
+
+- this is primarily a bit of "If it ain't broke, don't fix it" wisdom. Containers as a technology are still relatively young, and although there are some use cases where they can provide performance benefits, they may not be the best choice for the strict and extremely high level of performance and reliability needed in a full-fledged production environment.
+
+
+
+you're still responsible for managing the database.
+
+
+
+puts you in the driver seat, but is closer to the full-ops option, but you do get some benefits in terms of the automation Kubernetes provides to keep the database application running. That said, it is important to remember that pods (the database application containers) are transient, so the likelihood of database application restarts or failovers is higher. Also, some of the more database-specific administrative tasks—backups, scaling, tuning, etc.—are different due to the added abstractions that come with containerization.
+
+Tips for running your database on Kubernetes
+When choosing to go down the Kubernetes route, think about what database you will be running, and how well it will work given the trade-offs previously discussed. Since pods are mortal, the likelihood of failover events is higher than a traditionally hosted or fully managed database. It will be easier to run a database on Kubernetes if it includes concepts like sharding, failover elections and replication built into its DNA (for example, ElasticSearch, Cassandra, or MongoDB). Some open source projects provide custom resources and operators to help with managing the database.
+Next, consider the function that database is performing in the context of your application and business. Databases that are storing more transient and caching layers are better fits for Kubernetes. Data layers of that type typically have more resilience built into the applications, making for a better overall experience
+
+
+
+## Cloud-native data
+
+
 
 ## Azure Relational Databases
 
@@ -103,6 +136,8 @@ The figure above presents four managed relational database offerings available i
 These built-in features are especially important to organizations who provision large numbers of databases, but have limited resources to administer them.
 
 ### Azure SQL Database
+## Data storage in Azure  or Relational data in Azure
+
 
 [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/) is a feature-rich, general-purpose relational database-as-a-service (DBaaS) based on the Microsoft SQL Server Database Engine. It's fully managed by Microsoft and is a high-performance, reliable, and secure cloud database. The service shares many of the features found in the on-premises version of SQL Server. 
 

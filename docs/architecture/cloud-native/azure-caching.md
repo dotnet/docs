@@ -85,7 +85,13 @@ This chapter presented a detailed look at data in cloud-native systems. We start
 
 - [Exploring the different types of NoSQL Databases Part II](https://www.3pillarglobal.com/insights/exploring-the-different-types-of-nosql-databases)
   
-- [Microservice - Data Considerations](https://docs.microsoft.com/azure/architecture/microservices/design/data-considerations)
+- [CockroachDB](https://www.cockroachlabs.com/)
+
+- [FoundationDB](https://www.foundationdb.org/)
+
+- [YugabyteDB](https://www.yugabyte.com/)
+
+- [Vitess](https://vitess.io/)
 
 >[!div class="step-by-step"]
 >[Previous](azure-data-storage.md)

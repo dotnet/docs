@@ -3,17 +3,5 @@
 > - [(3.0 | 3.1)](~/docs/core/compatibility/3.0-3.1.md)
 > - [(2.2 | 3.1)](~/docs/core/compatibility/2.2-3.1.md)
 > - [(2.2 | 3.0)](~/docs/core/compatibility/2.2-3.0.md)
+> - [(2.0 | 2.1)](~/docs/core/compatibility/2.0-2.1.md)
 > - [(.NET Framework | .NET Core)](~/docs/core/compatibility/fx-core.md)
-
-<!--
-
-> - [(2.2 | 3.0 Preview 7)](~/docs/core/compatibility/2.2-3.0.7.md)
-> - [(2.2 | 3.0 Preview 8)](~/docs/core/compatibility/2.2-3.0.8.md)
-> - [(2.2 | 3.0 Preview 9)](~/docs/core/compatibility/2.2-3.0.9.md)
-> - [(3.0 Preview 7| 3.0 Preview 9)](~/docs/core/compatibility/3.0.7-3.0.9.md)
-> - [(3.0 Preview 7| 3.0)](~/docs/core/compatibility/3.0.7-3.0.md)
-> - [(3.0 Preview 8| 3.0 Preview 9)](~/docs/core/compatibility/3.0.8-3.0.9.md)
-> - [(3.0 Preview 8| 3.0)](~/docs/core/compatibility/3.0.8-3.0.md)
-> - [(3.0 Preview 9| 3.0)](~/docs/core/compatibility/3.0.9-3.0.md)
-
--->

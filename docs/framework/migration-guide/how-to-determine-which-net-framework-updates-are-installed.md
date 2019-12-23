@@ -1,7 +1,7 @@
 ---
-title: Which .NET Framework security updates and hotfixes are installed
-description: "Learn how to determine which .NET Framework security updates and hotfixes are installed on a computer."
-ms.date: "11/27/2017"
+title: See installed .NET Framework security updates and hotfixes
+description: Learn how to determine which .NET Framework security updates and hotfixes are installed on a computer.
+ms.date: 11/27/2017
 dev_langs: 
   - "csharp"
   - "vb"
@@ -9,8 +9,8 @@ helpviewer_keywords:
   - "updates, determining for .NET Framework"
   - ".NET Framework, determining updates"
 ms.assetid: 53c7b5f7-d47a-402a-b194-7244a696a88b
-author: "mairaw"
-ms.author: "mairaw"
+author: mairaw
+ms.author: mairaw
 ---
 # How to determine which .NET Framework security updates and hotfixes are installed
 

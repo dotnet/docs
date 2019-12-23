@@ -11,9 +11,9 @@ One option for hosting Windows Communication Foundation (WCF) services is inside
 ## Versions of IIS  
  WCF can be hosted on the following versions of IIS on the following operating systems:  
   
-- IIS 5.1 on [!INCLUDE[wxpsp2](../../../../includes/wxpsp2-md.md)]. This environment is useful for the design and development of IIS-hosted applications that are later deployed on a server operating system such as [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)].  
+- IIS 5.1 on [!INCLUDE[wxpsp2](../../../../includes/wxpsp2-md.md)]. This environment is useful for the design and development of IIS-hosted applications that are later deployed on a server operating system such as Windows Server 2003.  
   
-- IIS 6.0 on [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)]. IIS 6.0 provides an advanced process model that offers improved scalability, reliability, and application isolation. This environment is suitable for production deployment of WCF services that use HTTP communication exclusively.  
+- IIS 6.0 on Windows Server 2003. IIS 6.0 provides an advanced process model that offers improved scalability, reliability, and application isolation. This environment is suitable for production deployment of WCF services that use HTTP communication exclusively.  
   
 - IIS 7.0 on Windows Vista and [!INCLUDE[lserver](../../../../includes/lserver-md.md)]. IIS 7.0 provides the same advanced process model as IIS 6.0, but uses the Windows Process Activation Service (WAS) to allow activation and network communication over protocols other than HTTP. This environment is suitable for the development of WCF services that communicate over any network protocol supported by WCF (including HTTP, net.tcp, net.pipe, and net.msmq). For more information about WAS, see [Hosting in Windows Process Activation Service](../../../../docs/framework/wcf/feature-details/hosting-in-windows-process-activation-service.md).  
   

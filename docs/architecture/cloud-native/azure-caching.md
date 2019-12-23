@@ -87,7 +87,7 @@ This chapter presented a detailed look at data in cloud-native systems. We start
   
 - [CockroachDB](https://www.cockroachlabs.com/)
 
-- [FoundationDB](https://www.foundationdb.org/)
+- [TiDB](https://pingcap.com/en/)
 
 - [YugabyteDB](https://www.yugabyte.com/)
 

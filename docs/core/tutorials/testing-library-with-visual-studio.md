@@ -1,7 +1,7 @@
 ---
 title: Test a .NET Standard class library with .NET Core in Visual Studio
 description: Create a unit test project for your .NET Core class library. Verify that your .NET Core class library works correctly with unit tests.
-ms.date: 12/20/2019
+ms.date: 12/23/2019
 dev_langs:
   - "csharp"
   - "vb"
@@ -99,31 +99,16 @@ You'll define three methods, each of which calls its <xref:Microsoft.VisualStudi
 
 To create the test methods:
 
-# [C#](#tab/csharp)
-
-1. In the *UnitTest1.cs* code window, replace the code with the following code:
+1. In the *UnitTest1.cs* or *UnitTest1.vb* code window, replace the code with the following code:
 
    [!code-csharp[Test#1](~/samples/snippets/csharp/getting_started/with_visual_studio_2017/testlib1.cs)]
+   [!code-vb[Test#1](~/samples/snippets/core/tutorials/vb-library-with-visual-studio/testlib.vb)]
 
    Note that your test of uppercase characters in the `TestStartsWithUpper` method includes the Greek capital letter alpha (U+0391) and the Cyrillic capital letter EM (U+041C), and the test of lowercase characters in the `TestDoesNotStartWithUpper` method includes the Greek small letter alpha (U+03B1) and the Cyrillic small letter Ghe (U+0433).
 
-1. On the menu bar, select **File** > **Save UnitTest1.cs As**. In the **Save File As** dialog, select the arrow beside the **Save** button, and select **Save with Encoding**.
+1. On the menu bar, select **File** > **Save UnitTest1.cs As** or **File** > **Save UnitTest1.vb As**. In the **Save File As** dialog, select the arrow beside the **Save** button, and select **Save with Encoding**.
 
-   ![Visual Studio Save File As dialog - C#](./media/testing-library-with-visual-studio/save-file-as-dialog.png)
-
-# [Visual Basic](#tab/vb)
-
-1. In the *UnitTest1.vb* code window, replace the code with the following code:
-
-    [!code-vb[Test#1](~/samples/snippets/core/tutorials/vb-library-with-visual-studio/testlib.vb)]
-
-   Note that your test of uppercase characters in the `TestStartsWithUpper` method includes the Greek capital letter alpha (U+0391) and the Cyrillic capital letter EM (U+041C), and the test of lowercase characters in the `TestDoesNotStartWithUpper` method includes the Greek small letter alpha (U+03B1) and the Cyrillic small letter Ghe (U+0433).
-
-1. On the menu bar, select **File** > **Save UnitTest1.vb As**. In the **Save File As** dialog, select the arrow beside the **Save** button, and select **Save with Encoding**.
-
-   ![Visual Studio Save File As dialog - Visual Basic](./media/testing-library-with-visual-studio/save-file-as-dialog.png)
-
----
+   ![Visual Studio Save File As dialog](./media/testing-library-with-visual-studio/save-file-as-dialog.png)
 
 1. In the **Confirm Save As** dialog, select the **Yes** button to save the file.
 
@@ -158,13 +143,13 @@ Your test run had no failures, but change it slightly so that one of the test me
 
    ![Test Explorer window with failing tests](./media/testing-library-with-visual-studio/failed-test-window.png)
 
-1. In the **Failed Tests** section, select the failed test, `TestDoesNotStartWith`. The **Test Explorer** window displays the message produced by the assert: "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Because of the failure, all strings in the array after "Error" were not tested.
+1. Select the failed test, `TestDoesNotStartWith`. The **Test Explorer** window displays the message produced by the assert: "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Because of the failure, all strings in the array after "Error" were not tested.
 
    ![Test Explorer window showing the Is False assertion failure](./media/testing-library-with-visual-studio/failed-test-detail.png)
 
 1. Undo the modification you did in step 1 and remove the string "Error". Rerun the test and the tests will pass.
 
-## Testing the Release version of the library
+## Test the Release version of the library
 
 You've been running your tests against the Debug version of the library. Now that your tests have all passed and you've adequately tested your library, you should run the tests an additional time against the Release build of the library. A number of factors, including compiler optimizations, can sometimes produce different behavior between Debug and Release builds.
 

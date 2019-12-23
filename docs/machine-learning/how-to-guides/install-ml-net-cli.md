@@ -8,7 +8,9 @@ author: natke
 
 # How to install the ML.NET Command-Line Interface (CLI) tool
 
-The ML.NET CLI (command-line interface) tool runs on any command-prompt (Windows, Mac, or Linux). It generates good quality ML.NET models and source code using automated machine learning (AutoML) and a training dataset.
+Learn how to install the ML.NET CLI (command-line interface) on Windows, Mac, or Linux.
+
+The ML.NET CLI generates good quality ML.NET models and source code using automated machine learning (AutoML) and a training dataset.
 
 > [!NOTE]
 > This topic refers to ML.NET CLI and ML.NET AutoML, which are currently in Preview, and material may be subject to change.
@@ -128,9 +130,9 @@ Note: the Global Tools are user-specific, not machine global. Being user-specifi
 Global Tools can also be installed in a specific directory. When installed in a specific directory, the user must ensure the command is available, by including that directory in the path, by calling the command with the directory specified, or calling the tool from within the specified directory.
 In this case, the .NET Core CLI doesn't add this location automatically to the PATH environment variable.
 
-## Next steps
+## See also
 
-- [Get started with the ML.NET CLI tool](../tutorials/sentiment-analysis-cli.md)
-- [How to automatically train models with the ML.NET CLI tool](../automate-training-with-cli.md)
+- [ML.NET CLI overview](../automate-training-with-cli.md)
+- [Tutorial: Analyze sentiment with the ML.NET CLI](../tutorials/sentiment-analysis-cli.md)
 - [ML.NET CLI auto-train command reference guide](../reference/ml-net-cli-reference.md)
 - [Telemetry in ML.NET CLI](../resources/ml-net-cli-telemetry.md)

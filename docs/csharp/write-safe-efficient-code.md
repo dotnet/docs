@@ -74,35 +74,35 @@ public struct Point3D
 {
     public Point3D(double x, double y, double z)
     {
-        this.X = x;
-        this.Y = y;
-        this.Z = z;
+        _x = x;
+        _y = y;
+        _z = z;
     }
 
     private double _x;
-    public double X 
-    { 
-        readonly get { return _x;}; 
-        set { _x = value; }
+    public double X
+    {
+        readonly get => _x;
+        set => _x = value;
     }
-    
+
     private double _y;
-    public double Y 
-    { 
-        readonly get { return _y;}; 
-        set { _y = value; }
+    public double Y
+    {
+        readonly get => _y;
+        set => _y = value;
     }
 
     private double _z;
-    public double Z 
-    { 
-        readonly get { return _z;}; 
-        set { _z = value; }
+    public double Z
+    {
+        readonly get => _z;
+        set => _z = value;
     }
 
     public readonly double Distance => Math.Sqrt(X * X + Y * Y + Z * Z);
 
-    public readonly override string ToString() => $"{X, Y, Z }";
+    public readonly override string ToString() => $"{X}, {Y}, {Z}";
 }
 ```
 

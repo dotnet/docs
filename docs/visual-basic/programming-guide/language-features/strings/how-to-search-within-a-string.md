@@ -1,5 +1,5 @@
 ---
-title: "How to: search within a string - Visual Basic"
+title: "How to: search within a string"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "strings [Visual Basic], finding"

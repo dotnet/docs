@@ -33,7 +33,7 @@ This topic lists all security exceptions.
 |CannotIssueRstTokenType|Cannot issue the token or specified type.|  
 |CannotObtainIssuedTokenKeySize|Cannot determine the key size of the issued token.|  
 |CannotPerformImpersonationOnUsernameToken|Impersonation using the client token is not possible. The specified binding for the specified contract uses the Username Security Token for client authentication with a Membership Provider registered. Use a different type of security token for the client.|  
-|CannotPerformS4UImpersonationOnPlatform|The specified binding for the specified contract supports impersonation only on [!INCLUDE[ws2003](../../../../../includes/ws2003-md.md)] and newer version of Windows. Use SspiNegotiated authentication and a binding with Secure Conversation with cancellation enabled.|  
+|CannotPerformS4UImpersonationOnPlatform|The specified binding for the specified contract supports impersonation only on Windows Server 2003 and newer version of Windows. Use SspiNegotiated authentication and a binding with Secure Conversation with cancellation enabled.|  
 |CannotReadKeyIdentifier|Cannot read the KeyIdentifier from the specified element with the specified namespace.|  
 |CannotReadToken|Cannot read the token from the specified element with the specified namespace for BinarySecretSecurityToken, with a specified ValueType. If this element is expected to be valid, ensure that security is configured to consume tokens with the name, namespace and value type specified.|  
 |CertificateUnsupportedForHttpTransportCredentialOnly|Certificate-based client authentication is not supported in TransportCredentialOnly security mode. Select the Transport security mode.|  

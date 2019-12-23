@@ -76,7 +76,7 @@ To create the unit test project, do the following:
 
    ![Visual Studio add project reference dialog](./media/testing-library-with-visual-studio/project-reference-manager.png)
 
-## Adding and running unit test methods
+## Add and run unit test methods
 
 When Visual Studio runs a unit test, it executes each method marked with the <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute> attribute in a unit test class, the class to which the  <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute> attribute is applied. A test method ends when the first failure is encountered or when all tests contained in the method have succeeded.
 
@@ -122,7 +122,7 @@ To create the test methods:
 
    ![Test Explorer window with passing tests](./media/testing-library-with-visual-studio/test-explorer-window.png)
 
-## Handling test failures
+## Handle test failures
 
 Your test run had no failures, but change it slightly so that one of the test methods fails:
 

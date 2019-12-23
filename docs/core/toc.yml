@@ -347,6 +347,8 @@
   items:
   - name: .NET Framework technologies unavailable for .NET Core
     href: porting/net-framework-tech-unavailable.md
+  - name: APIs that throw PlatformNotSupportedException
+    href: porting/unsupported-apis.md
   - name: Analyze third-party dependencies
     href: porting/third-party-deps.md
   - name: Port libraries

@@ -5,9 +5,12 @@ ms.date: 12/18/2019
 ---
 # Breaking changes for migration from .NET Framework to .NET Core
 
-If you're migrating an app from .NET Framework to .NET Core, the breaking changes listed in this article may affect you. In addition, the [.NET Framework technologies unavailable on .NET Core](../porting/net-framework-tech-unavailable.md) article provides information about technologies that aren't supported on .NET Core, for example, application domains and .NET remoting.
+If you're migrating an app from .NET Framework to .NET Core, the breaking changes listed in this article may affect you. Breaking changes are grouped by category.
 
-Breaking changes are grouped by category.
+In addition, the following articles contain information that may be useful to you:
+
+- [.NET Framework technologies unavailable on .NET Core](../porting/net-framework-tech-unavailable.md) article provides information about technologies that aren't supported on .NET Core, for example, application domains and .NET remoting.
+- [APIs that always throw exceptions on .NET Core](../porting/unsupported-apis.md)
 
 ## CoreFx
 
@@ -20,3 +23,4 @@ For information about breaking changes when you migrate a Windows Forms app from
 ## See also
 
 - [.NET Framework technologies unavailable on .NET Core](../porting/net-framework-tech-unavailable.md)
+- [APIs that always throw exceptions on .NET Core](../porting/unsupported-apis.md)

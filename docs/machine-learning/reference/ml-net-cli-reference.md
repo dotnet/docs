@@ -13,7 +13,7 @@ The `auto-train` command is the main command provided by the ML.NET CLI tool. Th
 
 ## Overview
 
-Example of usage:
+Example usage:
 
 ```console
 mlnet auto-train --task regression --dataset "cars.csv" --label-column-name price
@@ -49,7 +49,7 @@ Create and train a binary-classification model with a train dataset, a test data
 mlnet auto-train --task binary-classification --dataset "/MyDataSets/Population-Training.csv" --test-dataset "/MyDataSets/Population-Test.csv" --label-column-name "InsuranceRisk" --cache on --max-exploration-time 600
 ```
 
-## Synopsis
+## Command options
 
 `mlnet auto-train` trains multiple models based on the provided dataset and finally selects the best model, saves it as a serialized .zip file plus generates related C# code for scoring and training.
 
@@ -257,6 +257,6 @@ Prints out help for the command with a description for each command's parameter.
 ## See also
 
 - [How to install the ML.NET CLI tool](../how-to-guides/install-ml-net-cli.md)
-- [Automate model training with the ML.NET CLI](../automate-training-with-cli.md)
+- [Overview of the ML.NET CLI](../automate-training-with-cli.md)
 - [Tutorial: Auto generate a binary classifier using the ML.NET CLI](../tutorials/sentiment-analysis-cli.md)
 - [Telemetry in ML.NET CLI](../resources/ml-net-cli-telemetry.md)

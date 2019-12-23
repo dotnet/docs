@@ -2,12 +2,14 @@
 title: Machine learning tasks
 description: Explore the different machine learning tasks and associated tasks that are supported in ML.NET.
 ms.custom: seodec18
-ms.date: 04/23/2019
+ms.date: 12/23/2019
 author: natke
 ---
 # Machine learning tasks in ML.NET
 
-When building a machine learning model, you first need to define what you are hoping to achieve with your data. This allows you to choose the right machine learning task for your situation. The following list describes the different machine learning tasks that you can choose from and some common use cases. For more information about choosing the task that is appropriate for your scenario, see [Algorithms](../how-to-choose-an-ml-net-algorithm.md).
+A machine learning task is determined by the type of problem you are trying to solve and the data you have.
+
+The following list describes the different machine learning tasks that you can choose from and some common use cases. For more information about choosing the task that is appropriate for your scenario, see [Algorithms](../how-to-choose-an-ml-net-algorithm.md).
 
 Once you have decided which task works for your scenario, then you need to choose the best algorithm to train your model. The available algorithms are listed in the section for each task.
 
@@ -177,6 +179,7 @@ This trainer outputs the following:
 | Output Name | Type | Description|
 | -- | -- | -- |
 | `Score` | <xref:System.Single> | The non-negative, unbounded score that was calculated by the anomaly detection model |
+| `PredictedLabel` | <xref:System.Boolean> | A true/false value representing whether the input is an anomaly (PredictedLabel=true) or not (PredictedLabel=false) |
 
 ## Ranking
 

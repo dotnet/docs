@@ -5,11 +5,11 @@ helpviewer_keywords:
   - "WS-AT protocol [WCF], configuring WS-Atomic Transaction"
 ms.assetid: cb9f1c9c-1439-4172-b9bc-b01c3e09ac48
 ---
-# Configuring WS-Atomic Transaction Support
+# Configure WS-Atomic Transaction support
 
 This topic describes how you can configure WS-AtomicTransaction (WS-AT) support by using the WS-AT Configuration Utility.
 
-## Using the WS-AT Configuration Utility
+## Use the WS-AT configuration utility
 
 The WS-AT Configuration Utility (wsatConfig.exe) is used to configure WS-AT settings. In order to enable the WS-AT protocol service, you must use the configuration utility to configure the HTTPS port for WS-AT, bind an X.509 certificate to the HTTPS port, and configure authorized partner certificates by specifying certificate subject names or thumbprints. The configuration utility also allows you to select the tracing mode and set default outgoing and maximum incoming transaction timeouts.
 
@@ -31,7 +31,7 @@ To register the product, execute the following command from a Command Prompt win
 
 `regasm.exe /codebase WsatUI.dll`
 
-## Enabling WS-AT
+## Enable WS-AT
 
 To enable the WS-AT protocol service inside MSDTC using port 443 and an X.509 certificate with a private key that has been installed in the local machine store, use the wsatConfig.exe tool with the following command.
 
@@ -43,13 +43,13 @@ To disable the WS-AT protocol service inside MSDTC, use the wsatConfig.exe tool 
 
 `WsatConfig.exe –network:disable -restart`
 
-## Configuring Trust Between Two Machines
+## Configure trust between two machines
 
 The WS-AT protocol service requires the administrator to explicitly authorize individual accounts to participate in distributed transactions. If you are an administrator for two machines, you can configure both machines to establish a mutual trust relationship by exchanging the right set of certificates between the machines, installing them into the appropriate certificate stores, and using the wsatConfig.exe tool to add each machine's certificate to the other's list of authorized participant certificates. This step is necessary to perform distributed transactions between two machines using WS-AT.
 
 In the following example outlines the steps to establish trust between two machines, A and B.
 
-### Creating and Exporting Certificates
+### Create and export certificates
 
 This procedure requires the MMC Certificates snap-in. The snap-in can be accessed by opening the Start/Run menu, typing "mmc" in the input box and pressing OK. Then, in the **Console1** window, navigate to **the File/Add-Remove** Snap-in, click Add, and choose **Certificates** from the **Available Standalone Snapins** list. Finally, select **Computer Account** to manage and click **OK**. The **Certificates** node appears in the snap-in console.
 
@@ -63,7 +63,7 @@ You must already possess the required certificates to establish trust. To learn 
 
 4. Export certB's public key to a file if this has not been done already.
 
-### Establishing Mutual Trust Between Machines
+### Establish mutual trust between machines
 
 1. On machine A, import the file representation of certB into the LocalMachine\MY and LocalMachine\ROOT stores. This declares that machine A trusts certB to communicate with it.
 
@@ -71,7 +71,7 @@ You must already possess the required certificates to establish trust. To learn 
 
 After completing these steps, trust is established between the two machines, and they can be configured to communicate with each other using WS-AT.
 
-### Configuring MSDTC to Use Certificates
+### Configure MSDTC to use certificates
 
 Since the WS-AT protocol service acts as both a client and a server, it must both listen for incoming connections and initiate outgoing connections. Therefore, you need to configure MSDTC so that it knows which certificate to use when communicating with external parties, and which certificates to authorize when accepting incoming communication.
 
@@ -96,7 +96,7 @@ When deploying MSDTC, the administrator must ensure that any MSDTC data intercha
 
 ## Tracing
 
-The WS-AT protocol service supports integrated, transaction specific tracing that can be enabled and managed through the use of the [WS-AtomicTransaction Configuration MMC Snap-in](../../../../docs/framework/wcf/ws-atomictransaction-configuration-mmc-snap-in.md) tool.  Traces can include data indicating the time an enlistment is made for a specific transaction, the time a transaction reaches its terminal state, the outcome each transaction enlistment has received. All traces can be viewed using the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md) tool.
+The WS-AT protocol service supports integrated, transaction-specific tracing that can be enabled and managed through the use of the [WS-AtomicTransaction Configuration MMC Snap-in](../../../../docs/framework/wcf/ws-atomictransaction-configuration-mmc-snap-in.md) tool.  Traces can include data indicating the time an enlistment is made for a specific transaction, the time a transaction reaches its terminal state, the outcome each transaction enlistment has received. All traces can be viewed using the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md) tool.
 
 The WS-AT protocol service also supports integrated ServiceModel tracing through the ETW trace session. This provides more detailed, communication-specific traces in addition to the existing transaction traces.  To enable these additional traces, follow these steps
 
@@ -104,7 +104,7 @@ The WS-AT protocol service also supports integrated ServiceModel tracing through
 
 2. In the **Registry Editor**, navigate to the following folder on the left pane, Hkey_Local_Machine\SOFTWARE\Microsoft\WSAT\3.0\
 
-3. Right click the `ServiceModelDiagnosticTracing` value in the right pane and select **Modify**.
+3. Right-click the `ServiceModelDiagnosticTracing` value in the right pane and select **Modify**.
 
 4. In the **Value data** input box, enter one of the following valid values to specify the trace level you want to enable.
 

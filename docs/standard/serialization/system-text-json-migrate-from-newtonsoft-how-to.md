@@ -89,99 +89,19 @@ For more information, see issue [39473](https://github.com/dotnet/corefx/issues/
 
 When deserializing JSON data to a property of type `Object`, `Newtonsoft.Json` infers the type of a property based on the JSON property value. For example, if a JSON property has "2020-01-01T05:40Z", the `Newtonsoft.Json` deserializer infers that it's a `DateTime` unless you specify `DateParseHandling.None`. When `System.Text.Json` deserializes to type `Object`, it always creates a `JsonElement` object. 
 
-The `System.Text.Json` deserializer doesn't guess what type a given property value represents because type inference can be inaccurate. If the deserializer parses a JSON number that has no decimal point as a `long`, that might result in out-of-range issues if the value was originally serialized as a `ulong` or `BigInteger`. Parsing a number that has a decimal point as a `double` might lose precision if the number was originally serialized as a `decimal`.
-
-If your scenario requires type inference for `Object` properties, you can implement a custom converter. The following sample code converts:
-
-* `true` and `false` to `Boolean`
-* Numbers without a decimal to `long`
-* Numbers with a decimal to `double`
-* Dates to `DateTime`
-* Strings to `string`
-* Everything else to `JsonElement`
-
-[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/ObjectToInferredTypesConverter.cs)]
-
-[Register this custom converter](system-text-json-converters-how-to.md#register-a-custom-converter) by adding it to the `Converters` collection or by using the `[JsonConvert]` attribute on a property.
-
-Here's an example type with `Object` properties:
-
-[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/WeatherForecast.cs?name=SnippetWFWithObjectProperties)]
-
-The following example of JSON to deserialize contains values that will be deserialized as `DateTime`, `long`, and `string`:
-
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-  "Summary": "Hot",
-}
-```
-
-Without the custom converter, deserialization puts a `JsonElement` in each property.
-
-The [unit tests folder](https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle deserialization to Object properties. For more information, see issue [38713](https://github.com/dotnet/corefx/issues/38713) in the dotnet/corefx GitHub repository.
+To implement type inference for `Object` properties, create a converter like the example in [How to write custom converters](system-text-json-converters-how-to.md#deserialize-inferred-types-to-object-properties). See also issue [38713](https://github.com/dotnet/corefx/issues/38713) in the dotnet/corefx GitHub repository.
 
 ## Dictionary with non-string key
 
-`Newtonsoft.Json` supports collections of type `Dictionary<TKey, TValue>`. The built-in support for dictionary collections in `System.Text.Json` is limited to `Dictionary<string, TValue>`. That is, the key must be a string. To support a dictionary with an integer or some other type as the key, a custom converter is required.
+`Newtonsoft.Json` supports collections of type `Dictionary<TKey, TValue>`. The built-in support for dictionary collections in `System.Text.Json` is limited to `Dictionary<string, TValue>`. That is, the key must be a string.
 
-The following code shows a custom converter that works with `Dictionary<Enum,TValue>`:
-
-[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/DictionaryTKeyEnumTValueConverter.cs)]
-
-[Register this custom converter](system-text-json-converters-how-to.md#register-a-custom-converter) by adding it to the `Converters` collection or by using the `[JsonConvert]` attribute on a property.
-
-The converter can serialize and deserialize the `TemperatureRanges` property of the following class that uses the following `Enum`:
-
-[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/WeatherForecast.cs?name=SnippetWFWithEnumDictionary)]
-
-The JSON output from serialization looks like the following example:
-
-```json
-{
-  "Date": "2019-08-01T00:00:00-07:00",
-  "TemperatureCelsius": 25,
-  "Summary": "Hot",
-  "TemperatureRanges": {
-    "Cold": 20,
-    "Hot": 40
-  }
-}
-```
-
-The [unit tests folder](https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle non-string-key dictionaries. For more information, see issue [40120](https://github.com/dotnet/corefx/issues/40120) in the dotnet/corefx GitHub repository.
+To support a dictionary with an integer or some other type as the key, create a converter like the example in [How to write custom converters](system-text-json-converters-how-to.md#support-dictionary-with-non-string-key). See also issue [40120](https://github.com/dotnet/corefx/issues/40120) in the dotnet/corefx GitHub repository.
 
 ## Polymorphic deserialization
 
-`Newtonsoft.Json` can do polymorphic serialization and deserialization. Suppose, for example, you have a `Person` abstract base class, with `Employee` and `Customer` derived classes. Polymorphic deserialization means that at design time you can specify `Person` as the deserialization target, and `Customer` and `Employee` objects in the JSON are correctly deserialized at runtime. To do that, the deserializer has to find clues that identify the required type in the JSON. For example, a discriminator property might be available or you might have to rely on the presence or absence of a particular property. `Newtonsoft.Json` provides attributes that specify how to handle polymorphic deserialization scenarios. `System.Text.Json` doesn't provide such attributes. If there's no need for polymorphic deserialization, `System.Text.Json` can do [polymorphic serialization](system-text-json-how-to.md#serialize-properties-of-derived-classes). But the ability to do polymorphic deserialization or convert the same data in both directions requires a custom converter.
+`Newtonsoft.Json` provides attributes that specify how to handle polymorphic deserialization scenarios. `System.Text.Json` doesn't provide such attributes. `System.Text.Json` can do [polymorphic serialization](system-text-json-how-to.md#serialize-properties-of-derived-classes) but not polymorphic deserialization or conversion of the same data in both directions.
 
-The following code shows a base class, two derived classes, and a custom converter for them. The converter uses a discriminator property to do polymorphic deserialization. The type discriminator isn't in the class definitions but is created during serialization and is read during deserialization.
-
-[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/Person.cs?name=SnippetPerson)]
-
-[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/PersonConverterWithTypeDiscriminator.cs)]
-
-[Register this custom converter](system-text-json-converters-how-to.md#register-a-custom-converter) by adding it to the `Converters` collection.
-
-The converter can deserialize JSON that was created by using the same converter to serialize, for example:
-
-```json
-[
-  {
-    "TypeDiscriminator": 1,
-    "CreditLimit": 10000,
-    "Name": "John"
-  },
-  {
-    "TypeDiscriminator": 2,
-    "OfficeNumber": "555-1234",
-    "Name": "Nancy"
-  }
-]
-```
-
-For more information, see the following issues in the dotnet/corefx GitHub repository:
+To support polymorphic deserialization, create a converter like the example in [How to write custom converters](system-text-json-converters-how-to.md#support-polymorphic-deserialization). See also the following issues in the dotnet/corefx GitHub repository:
 
 * [38650](https://github.com/dotnet/corefx/issues/38650) Support polymorphic serialization
 * [39031](https://github.com/dotnet/corefx/issues/39031) Support polymorphic deserialization

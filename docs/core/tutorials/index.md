@@ -6,32 +6,31 @@ ms.date: 03/16/2017
 titleSuffix: ""
 ms.custom: seodec18
 ---
-# Learn .NET Core and the .NET Core SDK tools by exploring these Tutorials
+# Learn .NET Core and the .NET Core SDK tools by exploring these tutorials
 
 The following tutorials are available for learning about .NET Core.
 
-## Building applications with Visual Studio 2017
+## Create applications with Visual Studio
 
-- [Building a C# Hello World application](with-visual-studio.md)
-- [Debugging your C# Hello World application](debugging-with-visual-studio.md)
-- [Publishing your C# Hello World application](publishing-with-visual-studio.md)
-- [Building a C# class library](library-with-visual-studio.md)
-- [Building a class library with Visual Basic](vb-library-with-visual-studio.md)
-- [Testing a class library](testing-library-with-visual-studio.md)
-- [Consuming a class library](consuming-library-with-visual-studio.md)
+- [Create a Hello World console application](with-visual-studio.md)
+- [Debug your Hello World application](debugging-with-visual-studio.md)
+- [Publish your Hello World application](publishing-with-visual-studio.md)
+- [Build a class library](library-with-visual-studio.md)
+- [Test a class library](testing-library-with-visual-studio.md)
+- [Consume a class library](consuming-library-with-visual-studio.md)
 - [Azure Cosmos DB: Get started with the SQL API and .NET Core](/azure/cosmos-db/sql-api-dotnetcore-get-started)
 
-## Building applications with Visual Studio Code
+## Build applications with Visual Studio Code
 
 - [Get started with C# and Visual Studio Code](with-visual-studio-code.md)
 - [Get started with .NET Core on macOS](using-on-macos.md)
 
-## Building applications with Visual Studio for Mac
+## Build applications with Visual Studio for Mac
 
 - [Get started with .NET Core on macOS using Visual Studio for Mac](using-on-mac-vs.md)
 - [Building a complete .NET Core solution on macOS using Visual Studio for Mac](using-on-mac-vs-full-solution.md)
 
-## Building applications with the .NET Core CLI tools
+## Build applications with the .NET Core CLI tools
 
 - [Get started with .NET Core on Windows/Linux/macOS using the .NET Core CLI tools](cli-create-console-app.md)
 - [Organizing and testing projects with the .NET Core CLI tools](testing-with-cli.md)

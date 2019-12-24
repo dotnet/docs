@@ -117,7 +117,7 @@ using System.Data.Odbc;
 ```  
   
 > [!NOTE]
-> The .NET Framework Data Provider for ODBC requires MDAC 2.6 or a later version, and MDAC 2.8 SP1 is recommended. You can download MDAC 2.8 SP1 from the [Data Access and Storage Developer Center](https://go.microsoft.com/fwlink/?linkid=4173).  
+> The .NET Framework Data Provider for ODBC requires MDAC 2.6 or a later version, and MDAC 2.8 SP1 is recommended. You can download MDAC 2.8 SP1 from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=5793).
   
 ## .NET Framework Data Provider for Oracle  
  The .NET Framework Data Provider for Oracle (OracleClient) enables data access to Oracle data sources through Oracle client connectivity software. The data provider supports Oracle client software version 8.1.7 or a later version. The data provider supports both local and distributed transactions. For more information, see [Transactions and Concurrency](transactions-and-concurrency.md).  

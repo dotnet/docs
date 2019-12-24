@@ -1,5 +1,5 @@
 ---
-title: "Custom Message Encoder: Custom Text Encoder - WCF"
+title: "Custom Message Encoder: Custom Text Encoder"
 ms.date: "03/30/2017"
 ms.assetid: 68ff5c74-3d33-4b44-bcae-e1d2f5dea0de
 ---

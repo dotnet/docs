@@ -130,7 +130,7 @@ To make deserialization fail if no `Date` property is in the JSON, implement a c
 
 [Register this custom converter](system-text-json-converters-how-to.md#register-a-custom-converter) by using an attribute on the POCO class or by adding the converter to the `Converters` collection.
 
-If you follow this pattern, don't pass in the options object when recursively calling `Serialize` or `Deserialize`. The options object contains the `Converters` collection. If you pass it in to `Serialize` or `Deserialize`, the custom converter calls into itself, making an infinite loop that results in a stack overflow exception.
+If you follow this pattern, don't pass in the options object when recursively calling `Serialize` or `Deserialize`. The options object contains the `Converters` collection. If you pass it in to `Serialize` or `Deserialize`, the custom converter calls into itself, making an infinite loop that results in a stack overflow exception. If the default options are not feasible, create a new instance of the options with the settings that you need. This approach will be slow since each new instance caches independently.
 
 This is a simplified example. More complex code would be required if you need to handle attributes (such as `[JsonIgnore]`) or options (such as custom encoders).
 

@@ -47,9 +47,9 @@
     href: distributed-data.md
     items:
     - name: Database-per-microservice
-      href: distributed-data.md
-    - name: Data Storage in Azure
-      href: azure-data-storage.md
+      href: Database-per-microservice.md
+    - name: Relational vs. NoSQL data
+      href: relational-vs-nosql-data.md
     - name: Caching in a cloud-native application
       href: azure-caching.md
   - name: Cloud-native resiliency

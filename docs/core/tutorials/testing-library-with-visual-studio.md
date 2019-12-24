@@ -70,7 +70,8 @@ To create the unit test project, do the following:
 
 1. In **Solution Explorer**, right-click the **Dependencies** node of the **StringLibraryTest** project and select **Add Reference** from the context menu.
 
-   ![Context menu of StringLibraryTest dependencies](./media/testing-library-with-visual-studio/add-reference-context-menu.png)
+   > [!div class="mx-imgBorder"]
+   > ![Context menu of StringLibraryTest dependencies](./media/testing-library-with-visual-studio/add-reference-context-menu.png)
 
 1. In the **Reference Manager** dialog, expand the **Projects** node and check the box next to **StringLibrary**. Adding a reference to the `StringLibrary` assembly allows the compiler to find **StringLibrary** methods. Select the **OK** button. A reference is added to your class library project, `StringLibrary`.
 
@@ -108,19 +109,22 @@ To create the test methods:
 
 1. On the menu bar, select **File** > **Save UnitTest1.cs As** or **File** > **Save UnitTest1.vb As**. In the **Save File As** dialog, select the arrow beside the **Save** button, and select **Save with Encoding**.
 
-   ![Visual Studio Save File As dialog](./media/testing-library-with-visual-studio/save-file-as-dialog.png)
+   > [!div class="mx-imgBorder"]
+   > ![Visual Studio Save File As dialog](./media/testing-library-with-visual-studio/save-file-as-dialog.png)
 
 1. In the **Confirm Save As** dialog, select the **Yes** button to save the file.
 
 1. In the **Advanced Save Options** dialog, select **Unicode (UTF-8 with signature) - Codepage 65001** from the **Encoding** drop-down list and select **OK**.
 
-   ![Visual Studio Advanced Save Options dialog](./media/testing-library-with-visual-studio/advanced-save-options.png)
+   > [!div class="mx-imgBorder"]
+   > ![Visual Studio Advanced Save Options dialog](./media/testing-library-with-visual-studio/advanced-save-options.png)
 
    If you fail to save your source code as a UTF8-encoded file, Visual Studio may save it as an ASCII file. When that happens, the runtime doesn't accurately decode the UTF8 characters outside of the ASCII range, and the test results won't be correct.
 
 1. On the menu bar, select **Test** > **Run** > **All Tests**. The **Test Explorer** window opens and shows that the tests ran successfully. The three tests are listed in the **Passed Tests** section, and the **Summary** section reports the result of the test run.
 
-   ![Test Explorer window with passing tests](./media/testing-library-with-visual-studio/test-explorer-window.png)
+   > [!div class="mx-imgBorder"]
+   > ![Test Explorer window with passing tests](./media/testing-library-with-visual-studio/test-explorer-window.png)
 
 ## Handle test failures
 
@@ -141,11 +145,13 @@ Your test run had no failures, but change it slightly so that one of the test me
 
 1. Run the test by selecting **Test** > **Run** > **All Tests** from the menu bar. The **Test Explorer** window indicates that two tests succeeded and one failed.
 
-   ![Test Explorer window with failing tests](./media/testing-library-with-visual-studio/failed-test-window.png)
+   > [!div class="mx-imgBorder"]
+   > ![Test Explorer window with failing tests](./media/testing-library-with-visual-studio/failed-test-window.png)
 
 1. Select the failed test, `TestDoesNotStartWith`. The **Test Explorer** window displays the message produced by the assert: "Assert.IsFalse failed. Expected for 'Error': false; actual: True". Because of the failure, all strings in the array after "Error" weren't tested.
 
-   ![Test Explorer window showing the Is False assertion failure](./media/testing-library-with-visual-studio/failed-test-detail.png)
+   > [!div class="mx-imgBorder"]
+   > ![Test Explorer window showing the IsFalse assertion failure](./media/testing-library-with-visual-studio/failed-test-detail.png)
 
 1. Undo the modification you did in step 1 and remove the string "Error". Rerun the test and the tests will pass.
 
@@ -157,15 +163,17 @@ To test the Release build:
 
 1. In the Visual Studio toolbar, change the build configuration from **Debug** to **Release**.
 
-   ![Visual Studio toolbar with release build highlighted](./media/testing-library-with-visual-studio/visual-studio-toolbar-release.png)
+   > [!div class="mx-imgBorder"]
+   > ![Visual Studio toolbar with release build highlighted](./media/testing-library-with-visual-studio/visual-studio-toolbar-release.png)
 
 1. In **Solution Explorer**, right-click the **StringLibrary** project and select **Build** from the context menu to recompile the library.
 
-   ![StringLibrary context menu with build command](./media/testing-library-with-visual-studio/build-library-context-menu.png)
+   > [!div class="mx-imgBorder"]
+   > ![StringLibrary context menu with build command](./media/testing-library-with-visual-studio/build-library-context-menu.png)
 
 1. Run the unit tests by choosing **Test** > **Run** > **All Tests** from the menu bar. The tests pass.
 
-Now that you've finished testing your library, the next step is to make it available to callers. You can bundle it with one or more applications, or you can distribute it as a NuGet package. For more information, see [Consuming a .NET Standard Class Library](./consuming-library-with-visual-studio.md).
+Now that you've finished testing your library, the next step is to make it available to callers. You can bundle it with one or more applications, or you can distribute it as a NuGet package. For more information, see [Consuming a .NET Standard Class Library](consuming-library-with-visual-studio.md).
 
 ## See also
 

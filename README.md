@@ -14,7 +14,6 @@ To contribute, see the [Projects for .NET Community Contributors](https://github
 
 If you're interested in helping migrate existing code that targets the .NET Framework from the [retired Code Gallery](https://docs.microsoft.com/teamblog/msdn-code-gallery-retired) site to .NET Core applications stored in our [samples repository](https://github.com/dotnet/samples) and downloadable from the [Samples Browser](https://docs.microsoft.com/samples/browse), see the [Code Gallery migration](https://github.com/dotnet/docs/projects/88) project. The code gallery samples were moved to the [Microsoft Archive](https://github.com/microsoftarchive?q=msdn-code-gallery) organization.
 
-
 This project has adopted the code of conduct defined by the Contributor Covenant
 to clarify expected behavior in our community.
 For more information, see the [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct).

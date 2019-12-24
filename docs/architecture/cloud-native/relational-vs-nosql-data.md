@@ -8,6 +8,8 @@ ms.date: 12/23/2019
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
+## Introduction
+
 SQL and NoSQL are two types of databases commonly implemented in cloud-native apps. They're built differently, store data differently, and accessed differently.
 
 The impact of [NoSQL](https://www.geeksforgeeks.org/introduction-to-nosql/) technologies for distributed cloud-native systems can't be overstated. The proliferation of new data technologies in this space has disrupted solutions that once exclusively relied on relational databases.
@@ -16,11 +18,19 @@ The impact of [NoSQL](https://www.geeksforgeeks.org/introduction-to-nosql/) tech
 
 *No-SQL databases* refer to high-performance, non-relational data stores. They excel in their ease-of-use, scalability, resilience, and availability characteristics. Instead of joining tables of normalized data, NoSQL stores self-describing (schemaless) data typically in JSON documents. No-SQL databases typically don't provide [ACID](https://www.geeksforgeeks.org/acid-properties-in-dbms/) guarantees beyond the scope of a single database partition.
 
-As a way to understand the differences between these types of databases, consider the [CAP theorem](https://towardsdatascience.com/cap-theorem-and-distributed-database-management-systems-5c2be977950e), a set of principles applied to distributed systems that store state. Figure 5-9 shows the three properties of the CAP theorem.
+NoSQL databases include several different models for accessing and managing data, each suited to specific use cases. Figure 5-9 presents four common models.
+
+![NoSQL data models](./media/types-of-nosql-datastores.png)
+
+**Figure 5-9**: Data models for NoSQL databases
+
+## The CAP theorem
+
+As a way to understand the differences between these types of databases, consider the [CAP theorem](https://towardsdatascience.com/cap-theorem-and-distributed-database-management-systems-5c2be977950e), a set of principles applied to distributed systems that store state. Figure 5-10 shows the three properties of the CAP theorem.
 
 ![CAP theorem](./media/cap-theorem.png)
 
-**Figure 5-9**. The CAP theorem
+**Figure 5-10**. The CAP theorem
 
 The theorem states that distributed data systems will offer a trade-off between consistency, availability, and partition tolerance. And, that any database can only guarantee *two* of the three properties:
 
@@ -42,15 +52,11 @@ This kind of result is known as [eventual consistency](http://www.cloudcomputing
 
 High availability and massive scalability are often more critical to the business than strong consistency. Developers can implement techniques and patterns such as Sagas, CQRS, and asynchronous messaging to embrace eventual consistency.
 
-> Some care must be taken with these descriptions as some databases support configurations that can *"toggle"* these principles. For example, MySQL can be configured as either consistent and available or available and partition tolerant. Azure Cosmos DB also support five different consistency models as we'll see in the next section.
+> Care must be taken with these descriptions as a new type of database, NewSQL, extend the relational database engine to support the horizontal scalability and scalable performance of NoSQL systems.
 
-NoSQL databases include different kinds of data models for accessing and managing data. Several are shown in Figure 5-10.
+## Considerations for Relational vs. NoSQL systems
 
-![NoSQL data models](./media/types-of-nosql-datastores.png)
-
-**Figure 5-10**: Data models for NoSQL databases
-
-Based upon specific data needs, a cloud-native-based microservice can  implement a relational, NoSQL datastore or both.
+Based upon specific data requirements, a cloud-native-based microservice can  implement a relational, NoSQL datastore or both.
 
 |  Consider a NoSQL datastore when: | Consider a relational database when: | 
 | :-------- | :-------- |
@@ -66,25 +72,11 @@ Based upon specific data needs, a cloud-native-based microservice can  implement
 
 Let's now look at how data storage can be implemented for cloud-native systems in the Azure cloud.
 
-## Cloud-native databases
+## Database as a Service
 
-By implementing eventual consistency, we've seen that developers can increase the scalability and availability of data. But, by doing so, they must construct safeguards in their microservice code to manage problems caused by inconsistent data.
+Cloud-native applications typically favor data services exposed as a [Database as a Service (DBaaS)](https://www.stratoscale.com/blog/dbaas/what-is-database-as-a-service/). Fully managed by a cloud vendor, they provide built-in security, scalability, and monitoring. Instead of owning the service, you simply consume it as a [backing service](./definition.md#Request/Backing-services). The provider operates the resource at scale and bears the responsibility for performance and maintenance.
 
-*NewSQL* is a type of intermediate database. It combines the distributed scalability of NoSQL with the ACID guarantees of a relational database. They're especially important for businesses that must process high-volumes of data that have transactional and consistency requirements.
-
-The [Cloud Native Computing Foundation](https://www.cncf.io/) (CNCF) features several NewSQL database projects that promise the flexibility of NoSQL, along with full SQL support, elastic scale, geo-partitioning, and ACID transaction consistency.
-  
-Figure 5-11 shows four of these projects.
-
-![CNCF databases](./media/cncf-databases.png)
-
-**Figure 5-11**. Cloud-native databases
-
-The open-source projects in the previous figure are available from the Cloud Native Computing Foundation. Three of the offerings are full database products, which include .NET Core support. The other is a database clustering system that horizontally scales large clusters of MySQL instances. All four are built to run on commodity hardware and provide native Kubernetes support.
-
-## Database as a Service in the Azure cloud
-
-Cloud-native applications typically favor [Database as a Service (DBaaS)](https://www.stratoscale.com/blog/dbaas/what-is-database-as-a-service/) data services. Fully managed by the cloud vendor, they provide built-in security, scalability, and monitoring. They can be configured across multiple cloud availability zones and regions to achieve high availability. The hosting, maintenance, and licensing are managed by the vendor. They all support just-in-time capacity and a pay-as-you-go model. Azure features different kinds of managed data service options, each with specific benefits. 
+They can be configured across multiple cloud availability zones and regions to achieve high availability. They all support just-in-time capacity and a pay-as-you-go model. Azure features different kinds of managed data service options, each with specific benefits. 
 
 We'll first look at relational DBaaS services available in Azure. You'll see that Microsoft's flagship SQL Server database is available along with several open-source options. Then, we'll talk about the NoSQL data services in Azure.
 
@@ -171,8 +163,6 @@ Azure Database for PostgreSQL is available with two deployment options: Single S
 
 ## NoSQL data in Azure
 
-In a prior section, we said that the impact of NoSQL data technologies for distributed cloud-native systems can't be overstated
-
 Cosmos DB is a fully managed, globally distributed NoSQL database service in the Azure cloud.  If your application requires fast response time anywhere in the world, high availability, or elastic scalability for throughput and storage, Cosmos DB is a great choice. Figure 5-13 shows Cosmos DB.
 
 ![Overview of Cosmos DB](./media/cosmos-db-overview.png)
@@ -254,6 +244,29 @@ To partition the container, items are divided into distinct subsets called [log
 In Figure 5-18, each item includes a partition key of either ‘city’ or ‘airport’. The key determines the item’s logical partition. Items with a city code are assigned to the container on the left, and items with an airport code, to the container on the right. Combining the partition key value with the ID value creates an item's index, which uniquely identifies the item.
 
 Internally, Cosmos DB automatically manages the placement of [logical partitions](https://docs.microsoft.com/azure/cosmos-db/partition-data) on [physical partitions](https://docs.microsoft.com/azure/cosmos-db/partition-data) to satisfy the scalability and performance needs of the container. As application throughput and storage requirements  increase, Azure Cosmos DB redistributes logical partitions across a greater number of servers. Redistribution operations are managed by Cosmos DB and invoked without interruption or downtime.
+
+## NewSQL Databases
+
+*NewSQL* is an emerging type of specialized database technology that combines the distributed scalability of NoSQL with the ACID guarantees of a relational database. They're important for businesses that must process high-volumes of data, across distributed applications, with full transaction support and ACID compliance. While a NoSQL database can provide massive scalability, it places a complex burden on the development team to construct safeguards in their microservice code to manage problems caused by inconsistent data.
+
+The [Cloud Native Computing Foundation](https://www.cncf.io/) (CNCF) features several NewSQL database projects. Figure 5-11 shows four of these projects.
+
+![CNCF databases](./media/cncf-databases.png)
+
+**Figure 5-11**. Cloud-native databases
+
+The open-source projects in the previous figure are available from the Cloud Native Computing Foundation. Three of the offerings are full database products, which include .NET Core support. The other is a database clustering system that horizontally scales large clusters of MySQL instances. All four are built to run on commodity hardware and provide native Kubernetes support.
+
+
+
+
+
+By implementing eventual consistency, we've seen that developers can increase the scalability and availability of data. But, by doing so, they must construct safeguards in their microservice code to manage problems caused by inconsistent data.
+
+ manage this impressive feat at a rate of millions of transactions per second, potentially on commodity hardware.
+
+
+
 
 ## Data migration to the cloud
 

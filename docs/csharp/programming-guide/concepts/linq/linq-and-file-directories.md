@@ -28,7 +28,7 @@ Many file system operations are essentially queries and are therefore well-suite
  [How to query for duplicate files in a directory tree (LINQ) (C#)](./how-to-query-for-duplicate-files-in-a-directory-tree-linq.md)  
  Shows how to group for all file names that occur in more than one location in a specified directory tree. Also shows how to perform more complex comparisons based on a custom comparer.  
   
- [How to: Query the Contents of Files in a Folder (LINQ) (C#)](./how-to-query-the-contents-of-files-in-a-folder-lin.md)  
+ [How to query the contents of files in a folder (LINQ) (C#)](./how-to-query-the-contents-of-files-in-a-folder-lin.md)  
  Shows how to iterate through folders in a tree, open each file, and query the file's contents.  
   
 ## Comments  

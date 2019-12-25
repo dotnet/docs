@@ -173,4 +173,4 @@ The following code shows the complete example.
 - [dynamic](../../language-reference/builtin-types/reference-types.md)
 - [Using Type dynamic](../types/using-type-dynamic.md)
 - [Named and Optional Arguments](../classes-and-structs/named-and-optional-arguments.md)
-- [How to: Use Named and Optional Arguments in Office Programming](../classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md)
+- [How to use named and optional arguments in Office programming](../classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md)

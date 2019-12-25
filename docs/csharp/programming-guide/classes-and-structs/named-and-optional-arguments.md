@@ -123,7 +123,7 @@ C# 4 introduces named and optional arguments. *Named arguments* enable you to sp
   
 ## See also
 
-- [How to: use named and optional arguments in Office programming](./how-to-use-named-and-optional-arguments-in-office-programming.md)
+- [How to use named and optional arguments in Office programming](./how-to-use-named-and-optional-arguments-in-office-programming.md)
 - [Using Type dynamic](../types/using-type-dynamic.md)
 - [Using Constructors](./using-constructors.md)
 - [Using Indexers](../indexers/using-indexers.md)

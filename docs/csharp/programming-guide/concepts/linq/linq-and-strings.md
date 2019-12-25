@@ -46,7 +46,7 @@ Many different types of text files consist of a series of lines, often with simi
 
   Shows how to reorder fields in a line in a .csv file.
 
-- [How to: combine and compare string collections (LINQ) (C#)](how-to-combine-and-compare-string-collections-linq.md)
+- [How to combine and compare string collections (LINQ) (C#)](how-to-combine-and-compare-string-collections-linq.md)
 
   Shows how to combine string lists in various ways.
 

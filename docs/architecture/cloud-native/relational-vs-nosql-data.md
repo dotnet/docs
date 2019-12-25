@@ -56,7 +56,7 @@ High availability and massive scalability are often more critical to the busines
 
 ## Considerations for Relational vs. NoSQL systems
 
-Based upon specific data requirements, a cloud-native-based microservice can  implement a relational, NoSQL datastore or both.
+Based upon specific data requirements, a cloud-native-based microservice can implement a relational, NoSQL datastore or both.
 
 |  Consider a NoSQL datastore when: | Consider a relational database when: | 
 | :-------- | :-------- |
@@ -70,11 +70,13 @@ Based upon specific data requirements, a cloud-native-based microservice can  im
 | Your application will be deployed to commodity hardware, such as with public clouds | Your application will be deployed to large, high-end hardware | 
 |||
 
-Let's now look at how data storage can be implemented for cloud-native systems in the Azure cloud.
+In the next sections, we'll explore the options available in the Azure cloud for storing and managing your cloud-native data.
 
 ## Database as a Service
 
-Cloud-native applications typically favor data services exposed as a [Database as a Service (DBaaS)](https://www.stratoscale.com/blog/dbaas/what-is-database-as-a-service/). Fully managed by a cloud vendor, they provide built-in security, scalability, and monitoring. Instead of owning the service, you simply consume it as a [backing service](./definition.md#Request/Backing-services). The provider operates the resource at scale and bears the responsibility for performance and maintenance.
+To start, you could provision an Azure virtual machine and install your database of choice for each service. While you'd have full control over the environment, you'd forgo many built-in features of the cloud platform. You'd also be responsible for managing the virtual machine and database for each service. This approach could quickly become time-consuming and expensive.
+
+Instead, cloud-native applications favor data services exposed as a [Database as a Service (DBaaS)](https://www.stratoscale.com/blog/dbaas/what-is-database-as-a-service/). Fully managed by a cloud vendor, these services provide built-in security, scalability, and monitoring. Instead of owning the service, you simply consume it as a [backing service](./definition.md#Request/Backing-services). The provider operates the resource at scale and bears the responsibility for performance and maintenance.
 
 They can be configured across cloud availability zones and regions to achieve high availability. They all support just-in-time capacity and a pay-as-you-go model. Azure features different kinds of managed data service options, each with specific benefits.
 
@@ -82,33 +84,16 @@ We'll first look at relational DBaaS services available in Azure. You'll see tha
 
 ## Azure Relational Databases
 
-For cloud-native microservices that require relational data structures, Azure offers four managed relational database offerings, shown in Figure 5-12.
+For cloud-native microservices that require relational data, Azure offers four managed relational databases as a service (DBaaS) offerings, shown in Figure 5-12.
 
 ![Managed relational databases in Azure](./media/azure-managed-databases.png)
 
-**Figure 5-12**. Managed relational database available in Azure
+**Figure 5-12**. Managed relational databases available in Azure
 
-Each is built upon a common DBaaS infrastructure which feature key capabilities - at no additional cost:
-
-- Built-in [high availability](https://docs.microsoft.com/azure/mysql/concepts-high-availability) with a 99.99% service level agreement.
-
-- Upgrades, patching, and backups without user involvement.
-
-- Predictable performance with inclusive [pay-as-you-go pricing](https://docs.microsoft.com/azure/mysql/concepts-pricing-tiers).
-
-- [Vertical Scale](https://docs.microsoft.com/azure/mysql/concepts-high-availability) as needed within seconds.
-
-- [Monitoring and intelligent tuning](https://docs.microsoft.com/azure/sql-database/sql-database-monitoring-tuning-index) with continuous performance adjustments based on AI and machine learning.
-
-- [Active geo-replication](https://docs.microsoft.com/azure/sql-database/sql-database-active-geo-replication) to create readable secondary databases in the same or a different Azure data center.
-
-- [Automatic backups](https://docs.microsoft.com/azure/mysql/concepts-backup) and [point-in-time-restore](https://docs.microsoft.com/azure/mysql/concepts-backup) for up to 35 days.
-
-- Enterprise-grade security to protect sensitive data at-rest and in-motion.
-
-You can provision an Azure database in minutes by selecting the amount of processing cores, memory, and underlying storage. You can scale the database on-the-fly and dynamically adjust resources with little to no downtime.
+In the previous figure, note how each sits upon a common DBaaS infrastructure which features key capabilities at no additional cost.
 
 These features are especially important to organizations who provision large numbers of databases, but have limited resources to administer them.
+You can provision an Azure database in minutes by selecting the amount of processing cores, memory, and underlying storage. You can scale the database on-the-fly and dynamically adjust resources with little to no downtime.
 
 ## Azure SQL Database
 
@@ -117,25 +102,25 @@ Development teams with expertise in Microsoft SQL Server should consider
 
 For use with a cloud-native microservice, Azure SQL Database is available with three deployment options:
 
-- A [Single Database](https://docs.microsoft.com/azure/sql-database/sql-database-single-database) represents a fully managed SQL database running on a [SQL Database server](https://docs.microsoft.com/azure/sql-database/sql-database-servers). A single database is similar to a [contained database](https://docs.microsoft.com/sql/relational-databases/databases/contained-databases) in an on-premises SQL Server deployment.
-
+- A [Single Database](https://docs.microsoft.com/azure/sql-database/sql-database-single-database) represents a fully managed SQL Database running on an [Azure SQL Database server](https://docs.microsoft.com/azure/sql-database/sql-database-servers) in the Azure cloud. The database is considered [*contained*](https://docs.microsoft.com/sql/relational-databases/databases/contained-databases) as it no configuration dependencies on the underlying database server.
+  
 - A [Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) is a fully managed instance of the Microsoft SQL Server Database Engine that provides near-100% compatibility with an on-premises SQL Server. This option supports larger databases, up to 35 TB and is placed in an [Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) for better isolation.
 
 - [Azure SQL Database serverless](https://docs.microsoft.com/azure/sql-database/sql-database-serverless) is a compute tier for a single database that automatically scales based on workload demand. It bills only for the amount of compute used per second. The service is well suited for workloads with intermittent, unpredictable usage patterns, interspersed with periods of inactivity. The serverless compute tier also automatically pauses databases during inactive periods so that only storage charges are billed. It automatically resumes when activity returns.
 
-Beyond the traditional Microsoft SQL Server stack, Azure also features managed versions of several popular open-source databases.
+Beyond the traditional Microsoft SQL Server stack, Azure also features managed versions of three popular open-source databases.
 
 ## Open-source databases in Azure
 
-Open-source relational databases have become a popular choice for cloud-native applications. Many enterprises favor them over commercial products, especially for cost savings. Many development teams favor them for their flexibility, community-backed development, and ecosystem of tools and extensions. Open-source databases can be deployed across multiple cloud providers, helping minimize the concern of "vendor lock-in."
+Open-source relational databases have become a popular choice for cloud-native applications. Many enterprises favor them over commercial database products, especially for cost savings. Many development teams enjoy their flexibility, community-backed development, and ecosystem of tools and extensions. Open-source databases can be deployed across multiple cloud providers, helping minimize the concern of "vendor lock-in."
 
 Developers can easily self-host any open-source database on an Azure VM. While providing full control, this approach puts you on the hook for the management, monitoring, and maintenance of the database and VM.
 
-Microsoft continues its commitment to keeping Azure an “open platform” by offering several popular open-source databases as *fully managed* DBaaS services.
+However, Microsoft continues its commitment to keeping Azure an “open platform” by offering several popular open-source databases as *fully managed* DBaaS services.
 
 ### Azure Database for MySQL
 
-[MySQL](https://en.wikipedia.org/wiki/MySQL) is an open-source relational database and a pillar for applications built on the [LAMP software stack](https://en.wikipedia.org/wiki/LAMP_(software_bundle)). It's used by many large organizations, including Facebook, Twitter, and YouTube. The community edition is available for free, while the enterprise edition requires a license purchase. Originally created in 1995, the product was purchased by Sun Microsystems in 2008. Oracle acquired Sun and MySQL in 2010.
+[MySQL](https://en.wikipedia.org/wiki/MySQL) is an open-source relational database and a pillar for applications built on the [LAMP software stack](https://en.wikipedia.org/wiki/LAMP_(software_bundle)). Widely chosen for *read heavy* workloads, it's used by many large organizations, including Facebook, Twitter, and YouTube. The community edition is available for free, while the enterprise edition requires a license purchase. Originally created in 1995, the product was purchased by Sun Microsystems in 2008. Oracle acquired Sun and MySQL in 2010.
 
 [Azure Database for MySQL](https://azure.microsoft.com/services/mysql/) is a managed relational database service based on the open-source MySQL Server engine. It uses the MySQL Community edition. The [Azure MySQL server](https://docs.microsoft.com/azure/mysql/concepts-servers) is the administrative point for the service. It's the same MySQL server engine used for on-premises deployments. The engine can create a single database per server or multiple databases per server that share resources. You can continue to manage data using the same open-source tools without having to learn new skills or manage virtual machines.
 
@@ -151,7 +136,7 @@ MariaDB has a strong community and is used by many large enterprises. While Orac
 
 ### Azure Database for PostgreSQL
 
-[PostgreSQL](https://www.postgresql.org/) is an open-source relational database with over 30 years of active development. PostgresSQL has a strong reputation for reliability and data integrity. It’s feature rich, more robust, and considered more performant than MySQL. Many large enterprises including Apple, Red Hat, and Fujitsu have built products using PostgreSQL.
+[PostgreSQL](https://www.postgresql.org/) is an open-source relational database with over 30 years of active development. PostgresSQL has a strong reputation for reliability and data integrity. It’s feature rich, SQL compliant, and considered more performant than MySQL for complex queries and workloads with heavy writes. Many large enterprises including Apple, Red Hat, and Fujitsu have built products using PostgreSQL.
 
 [Azure Database for PostgreSQL](https://azure.microsoft.com/services/postgresql/) is a fully managed relational database service, based on the open-source Postgres database engine. The service supports many development platforms, including C++, Java, Python, Node, C\#, and PHP. You can migrate PostgreSQL databases to it using the [command-line interface](https://datamigration.microsoft.com/scenario/postgresql-to-azurepostgresql?step=1) tool or [Azure Data Migration Service](https://azure.microsoft.com/services/database-migration/).
 
@@ -247,7 +232,7 @@ Internally, Cosmos DB automatically manages the placement of [logical partitions
 
 ## NewSQL Databases
 
-*NewSQL* is an emerging database technology that combines the distributed scalability of NoSQL with the ACID guarantees of a relational database. They're important for business systems that must process high-volumes of data, across distributed applications, with full transactional support and ACID compliance. While a NoSQL database can provide massive scalability, it places a burden on the development team. Developers must construct safeguards in their microservice code to manage problems caused by inconsistent data.
+*NewSQL* is an emerging database technology that combines the distributed scalability of NoSQL with the ACID guarantees of a relational database. NewSQL databases are important for business systems that must process high-volumes of data, across distributed applications, with full transactional support and ACID compliance. While a NoSQL database can provide massive scalability, it places a burden on the development team. Developers must construct safeguards in their microservice code to manage problems caused by inconsistent data.
 
 The [Cloud Native Computing Foundation](https://www.cncf.io/) (CNCF) features several NewSQL database projects. Figure 5-11 shows four of the leading projects.
 
@@ -270,5 +255,5 @@ One of the more time consuming tasks is migrating data from one data platform to
 The service provides recommendations to guide you through the changes required to execute a migration, both small or large.
 
 >[!div class="step-by-step"]
->[Previous](distributed-data.md)
+>[Previous](Database-per-microservice.md)
 >[Next](azure-caching.md)

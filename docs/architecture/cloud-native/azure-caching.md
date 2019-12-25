@@ -26,11 +26,11 @@ Also consider caching to avoid repetitive computations. If an operation transfor
 
 ## Caching architecture
 
-Cloud native applications typically implement a distributed caching architecture. The cache is hosted as a [cloud-based backing service](./definition.md#backing-services), separate from the microservices. Figure 5- shows the architecture.
+Cloud native applications typically implement a distributed caching architecture. The cache is hosted as a [cloud-based backing service](./definition.md#backing-services), separate from the microservices. Figure 5-20 shows the architecture.
 
 ![Caching in a cloud native app](media/caching-in-a-cloud-native-app.png)
 
-**Figure 5-**: Caching in a cloud native app
+**Figure 5-20**: Caching in a cloud native app
 
 In the figure above, note how the cache is independent of and shared by the microservices. In this scenario, the cache is invoked by the [API Gateway](./front-end-communication.md#Front-end-client-communication). As discussed in chapter 4, the gateway serves as a front end for all incoming requests. The distributed cache increases system responsiveness by returning cached data whenever possible. Additionally, separating the cache from the services allows the cache to scale up or out independently to meet increased traffic demands.
 

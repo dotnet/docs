@@ -84,11 +84,11 @@ We'll first look at relational DBaaS services available in Azure. You'll see tha
 
 ## Azure Relational Databases
 
-For cloud-native microservices that require relational data, Azure offers four managed relational databases as a service (DBaaS) offerings, shown in Figure 5-12.
+For cloud-native microservices that require relational data, Azure offers four managed relational databases as a service (DBaaS) offerings, shown in Figure 5-11.
 
 ![Managed relational databases in Azure](./media/azure-managed-databases.png)
 
-**Figure 5-12**. Managed relational databases available in Azure
+**Figure 5-11**. Managed relational databases available in Azure
 
 In the previous figure, note how each sits upon a common DBaaS infrastructure which features key capabilities at no additional cost.
 
@@ -126,9 +126,7 @@ However, Microsoft continues its commitment to keeping Azure an “open platform
 
 ### Azure Database for MariaDB
 
-[MariaDB](https://mariadb.com/) Server is another popular open-source database server. It was created as a *fork* of MySQL when Oracle purchased Sun Microsystems, who owned MySQL. The intent was to ensure that MariaDB remained open-source.
-
-As MariaDB is a [fork of MySQL](https://blog.panoply.io/a-comparative-vmariadb-vs-mysql), the data and table definitions are compatible, and the client protocols, structures, and APIs, are close-knit.
+[MariaDB](https://mariadb.com/) Server is another popular open-source database server. It was created as a *fork* of MySQL when Oracle purchased Sun Microsystems, who owned MySQL. The intent was to ensure that MariaDB remained open-source. As MariaDB is a [fork of MySQL](https://blog.panoply.io/a-comparative-vmariadb-vs-mysql), the data and table definitions are compatible, and the client protocols, structures, and APIs, are close-knit.
 
 MariaDB has a strong community and is used by many large enterprises. While Oracle continues to maintain, enhance, and support MySQL, the MariaDB foundation manages MariaDB, allowing public contributions to the product and documentation.
 
@@ -148,19 +146,19 @@ Azure Database for PostgreSQL is available with two deployment options: Single S
 
 ## NoSQL data in Azure
 
-Cosmos DB is a fully managed, globally distributed NoSQL database service in the Azure cloud.  If your application requires fast response time anywhere in the world, high availability, or elastic scalability for throughput and storage, Cosmos DB is a great choice. Figure 5-13 shows Cosmos DB.
+Cosmos DB is a fully managed, globally distributed NoSQL database service in the Azure cloud.  If your services require fast response from anywhere in the world, high availability, or elastic scalability, Cosmos DB is a great choice. Figure 5-12 shows Cosmos DB.
 
 ![Overview of Cosmos DB](./media/cosmos-db-overview.png)
 
-**Figure 5-13**: Overview of Cosmos DB
+**Figure 5-12**: Overview of Cosmos DB
 
-Figure 5-13 presents many of the built-in cloud-native capabilities available in Cosmos DB. In this section, we’ll take a closer look at them.
+The previous figure presents many of the built-in cloud-native capabilities available in Cosmos DB. In this section, we’ll take a closer look at them.
 
 ### Global Support
 
 Cloud-native applications often have a global audience and require global scale.
 
-You can globally distribute Cosmos databases across regions and around the world, placing data close to your users, improving response time, and reducing latency. You can add or remove a database from a region without pausing or redeploying your services. In the background, Cosmos DB transparently replicates the data to all of the configured regions.
+You can globally distribute Cosmos databases across regions and around the world, placing data close to your users, improving response time and reducing latency. You can add or remove a database from a region without pausing or redeploying your services. In the background, Cosmos DB transparently replicates the data to all of the configured regions.
 
 Cosmos DB supports [active/active](https://kemptechnologies.com/white-papers/unfog-confusion-active-passive-activeactive-load-balancing/) clustering at the global level, enabling you to configure any or all your database regions to support both writes and reads.
 
@@ -176,23 +174,23 @@ With the Cosmos DB [Multi-Homing APIs](https://docs.microsoft.com/azure/cosmos-d
 
 ### Multi-Model Support
 
-When replatforming monolithic applications to a cloud-native architecture, development teams often have a need to migrate different kinds of open-source, NoSQL data stores. 
+When replatforming monolithic applications to a cloud-native architecture, development teams often have a need to migrate different kinds of open-source, NoSQL data stores.
 
-Cosmos DB enables you to preserve your investment in these NoSQL datastores with its *multi-model* data platform. Figure 5-14 shows the supported NoSQL [compatibility APIs](https://www.wikiwand.com/en/Cosmos_DB).
+Cosmos DB enables you to preserve your investment in these NoSQL datastores with its *multi-model* data platform. Figure 5-13 shows the supported NoSQL [compatibility APIs](https://www.wikiwand.com/en/Cosmos_DB).
 
 ![Cosmos DB providers](./media/cosmos-db-providers.png)
 
-**Figure 5-14**: Cosmos DB providers
+**Figure 5-13**: Cosmos DB providers
 
- Internally, Cosmos stores the data from these sources in a simple [struct](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/using-structs) format made up of primitive data types. For each request, the database engine translates the primitive data into the model representation you've selected. 
+> Internally, Cosmos stores the data in a simple [struct](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/using-structs) format made up of primitive data types. For each request, the database engine translates the primitive data into the model representation you've selected.
 
  Development teams can migrate existing Mongo, Gremlin, or Cassandra databases into Cosmos DB with minimal changes to data or code. For new apps, development teams can choose among open-source options or the built-in SQL API model.
 
-Note in Figure 5-14 how Cosmos DB supports [Azure Table Storage](https://azure.microsoft.com/services/storage/tables/). Both Cosmos DB and [Azure Table Storage](https://docs.microsoft.com/azure/cosmos-db/table-storage-overview) share the same underlying table model and expose many of the same table operations. However, the [Cosmos DB Table API](https://docs.microsoft.com/azure/cosmos-db/table-introduction) provides many premium enhancements not available in the Azure Storage API. These features are contrasted in Figure 5-15.
+Note in Figure 5-13 how Cosmos DB supports [Azure Table Storage](https://azure.microsoft.com/services/storage/tables/). Both Cosmos DB and [Azure Table Storage](https://docs.microsoft.com/azure/cosmos-db/table-storage-overview) share the same underlying table model and expose many of the same table operations. However, the [Cosmos DB Table API](https://docs.microsoft.com/azure/cosmos-db/table-introduction) provides many premium enhancements not available in the Azure Storage API. These features are contrasted in Figure 5-4.
 
 ![Azure Table API](media/azure-table-api.png)
 
-**Figure 5-15**: Azure Table API Providers
+**Figure 5-14**: Azure Table API Providers
 
 Applications written for Azure Table storage can migrate to Azure Cosmos DB by using the Table API. No code changes are required.
 
@@ -202,11 +200,19 @@ Earlier in the *Relational vs. NoSQL* section, we discussed the subject of *data
 
 Most distributed databases allow developers to choose between two consistency models: [strong consistency](https://en.wikipedia.org/wiki/Strong_consistency) and [eventual consistency](https://en.wikipedia.org/wiki/Eventual_consistency). *Strong consistency* is the gold standard of data programmability. It guarantees that a query will always return the most current data - even if the system must incur latency waiting for an update to replicate across all database copies. While a database configured for *eventual consistency* will return data immediately, even if that data isn't the most current copy. The latter option enables higher availability, greater scale, and increased performance.
 
-Azure Cosmos DB offers [five well-defined consistency models](https://docs.microsoft.com/azure/cosmos-db/consistency-levels) shown in Figure 5-16. These options enable you to make precise choices and granular tradeoffs for consistency, availability, and the performance for your data. In the article [Getting Behind the 9-Ball: Cosmos DB Consistency Levels Explained](https://blog.jeremylikness.com/blog/2018-03-23_getting-behind-the-9ball-cosmosdb-consistency-levels/), Microsoft Cloud Developer Advocate Jeremy Likeness provides an excellent explanation of the five models.
+Azure Cosmos DB offers [five well-defined consistency models](https://docs.microsoft.com/azure/cosmos-db/consistency-levels) shown in Figure 5-15.
+
+![Cosmos DB consistency graph](./media/cosmos-consistency-level-graph.png)
+
+**Figure 5-15**: Cosmos DB Consistency Levels
+
+ These options enable you to make precise choices and granular tradeoffs for consistency, availability, and the performance for your data. Figure 5-16 describes each level. 
 
 ![Cosmos DB consistency levels](./media/cosmos-db-consistency-levels.png)
 
-**Figure 5-16**: Cosmos DB Consistency Levels
+**Figure 5-16**: Cosmos DB Consistency Level Description
+
+In the article [Getting Behind the 9-Ball: Cosmos DB Consistency Levels Explained](https://blog.jeremylikness.com/blog/2018-03-23_getting-behind-the-9ball-cosmosdb-consistency-levels/), Microsoft Cloud Developer Advocate Jeremy Likeness provides an excellent explanation of the five models.
 
 ### Partitioning
 
@@ -226,7 +232,7 @@ To partition the container, items are divided into distinct subsets called [log
 
 **Figure 5-18**: Cosmos DB partitioning mechanics
 
-In Figure 5-18, each item includes a partition key of either ‘city’ or ‘airport’. The key determines the item’s logical partition. Items with a city code are assigned to the container on the left, and items with an airport code, to the container on the right. Combining the partition key value with the ID value creates an item's index, which uniquely identifies the item.
+In previous figure, each item includes a partition key of either ‘city’ or ‘airport’. The key determines the item’s logical partition. Items with a city code are assigned to the container on the left, and items with an airport code, to the container on the right. Combining the partition key value with the ID value creates an item's index, which uniquely identifies the item.
 
 Internally, Cosmos DB automatically manages the placement of [logical partitions](https://docs.microsoft.com/azure/cosmos-db/partition-data) on [physical partitions](https://docs.microsoft.com/azure/cosmos-db/partition-data) to satisfy the scalability and performance needs of the container. As application throughput and storage requirements  increase, Azure Cosmos DB redistributes logical partitions across a greater number of servers. Redistribution operations are managed by Cosmos DB and invoked without interruption or downtime.
 
@@ -234,11 +240,11 @@ Internally, Cosmos DB automatically manages the placement of [logical partitions
 
 *NewSQL* is an emerging database technology that combines the distributed scalability of NoSQL with the ACID guarantees of a relational database. NewSQL databases are important for business systems that must process high-volumes of data, across distributed applications, with full transactional support and ACID compliance. While a NoSQL database can provide massive scalability, it places a burden on the development team. Developers must construct safeguards in their microservice code to manage problems caused by inconsistent data.
 
-The [Cloud Native Computing Foundation](https://www.cncf.io/) (CNCF) features several NewSQL database projects. Figure 5-11 shows four of the leading projects.
+The [Cloud Native Computing Foundation](https://www.cncf.io/) (CNCF) features several NewSQL database projects. Figure 5-19 shows four of the leading projects.
 
 ![CNCF databases](./media/cncf-databases.png)
 
-**Figure 5-11**. Cloud-native databases
+**Figure 5-19**. Cloud-native databases
 
 The open-source projects in the previous figure are available from the Cloud Native Computing Foundation. Three of the offerings are full database products, which include .NET Core support. The other is a database clustering system that horizontally scales large clusters of MySQL instances. All four are built to run on commodity hardware and provide native Kubernetes support. None of them are available as managed backing services. Implementation would involve running them in an Azure virtual machine or Kubernetes cluster.  
 

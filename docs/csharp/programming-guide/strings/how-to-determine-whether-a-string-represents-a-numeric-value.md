@@ -1,5 +1,5 @@
 ---
-title: "How to: Determine Whether a String Represents a Numeric Value - C# Programming Guide"
+title: "How to determine whether a string represents a numeric value - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "strings [C#], numeric"
 ms.assetid: a4e84e10-ea0a-489f-a868-503dded9d85f
 ---
-# How to: Determine Whether a String Represents a Numeric Value (C# Programming Guide)
+# How to determine whether a string represents a numeric value (C# Programming Guide)
 To determine whether a string is a valid representation of a specified numeric type, use the static `TryParse` method that is implemented by all primitive numeric types and also by types such as <xref:System.DateTime> and <xref:System.Net.IPAddress>. The following example shows how to determine whether "108" is a valid [int](../../language-reference/builtin-types/integral-numeric-types.md).  
   
 ```csharp  

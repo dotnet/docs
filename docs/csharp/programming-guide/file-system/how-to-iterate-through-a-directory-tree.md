@@ -1,5 +1,5 @@
 ---
-title: "How to: Iterate Through a Directory Tree - C# Programming Guide"
+title: "How to iterate through a directory tree - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "file iteration [C#]"
 ms.assetid: c4be4a75-6b1b-46a7-9d38-bab353091ed7
 ---
-# How to: Iterate Through a Directory Tree (C# Programming Guide)
+# How to iterate through a directory tree (C# Programming Guide)
 The phrase "iterate a directory tree" means to access each file in each nested subdirectory under a specified root folder, to any depth. You do not necessarily have to open each file. You can just retrieve the name of the file or subdirectory as a `string`, or you can retrieve additional information in the form of a <xref:System.IO.FileInfo?displayProperty=nameWithType> or <xref:System.IO.DirectoryInfo?displayProperty=nameWithType> object.  
   
 > [!NOTE]

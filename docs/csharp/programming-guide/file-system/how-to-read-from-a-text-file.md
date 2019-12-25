@@ -1,5 +1,5 @@
 ---
-title: "How to: Read From a Text File - C# Programming Guide"
+title: "How to read from a text file - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
@@ -11,7 +11,7 @@ helpviewer_keywords:
   - "text files, reading"
 ms.assetid: 92246c5b-e819-4eea-9370-1a9460e12de3
 ---
-# How to: Read From a Text File (C# Programming Guide)
+# How to read from a text file (C# Programming Guide)
 This example reads the contents of a text file by using the static methods <xref:System.IO.File.ReadAllText%2A> and <xref:System.IO.File.ReadAllLines%2A> from the <xref:System.IO.File?displayProperty=nameWithType> class.  
   
  For an example that uses <xref:System.IO.StreamReader>, see [How to: Read a Text File One Line at a Time](./how-to-read-a-text-file-one-line-at-a-time.md).  

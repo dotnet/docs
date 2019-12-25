@@ -1,5 +1,5 @@
 ---
-title: "How to: Test for Reference Equality (Identity) - C# Programming Guide"
+title: "How to test for reference equality (Identity) - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "reference equality [C#]"
 ms.assetid: 91307fda-267b-4fd2-a338-2aada39ee791
 ---
-# How to: Test for Reference Equality (Identity) (C# Programming Guide)
+# How to test for reference equality (Identity) (C# Programming Guide)
 You do not have to implement any custom logic to support reference equality comparisons in your types. This functionality is provided for all types by the static <xref:System.Object.ReferenceEquals%2A?displayProperty=nameWithType> method.  
   
  The following example shows how to determine whether two variables have *reference equality*, which means that they refer to the same object in memory.  

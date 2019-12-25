@@ -33,7 +33,7 @@ ms.assetid: 756bfc1e-7c28-4d4d-b114-ac9288c73882
  You cannot create indexed properties of your own. The feature only supports consumption of existing indexed properties.  
   
 ## Example  
- The following code shows a complete example. For more information about how to set up a project that accesses the Office API, see [How to: Access Office Interop Objects by Using Visual C# Features](./how-to-access-office-onterop-objects.md).  
+ The following code shows a complete example. For more information about how to set up a project that accesses the Office API, see [How to access Office interop objects by using C# features](./how-to-access-office-onterop-objects.md).
   
  [!code-csharp[csProgGuideIndexedProperties#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguideindexedproperties/cs/program.cs#5)]  
   
@@ -42,6 +42,6 @@ ms.assetid: 756bfc1e-7c28-4d4d-b114-ac9288c73882
 - [Named and Optional Arguments](../classes-and-structs/named-and-optional-arguments.md)
 - [dynamic](../../language-reference/builtin-types/reference-types.md)
 - [Using Type dynamic](../types/using-type-dynamic.md)
-- [How to: Use Named and Optional Arguments in Office Programming](../classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md)
-- [How to: Access Office Interop Objects by Using Visual C# Features](./how-to-access-office-onterop-objects.md)
+- [How to use named and optional arguments in Office programming](../classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md)
+- [How to access Office interop objects by using C# features](./how-to-access-office-onterop-objects.md)
 - [Walkthrough: Office Programming](./walkthrough-office-programming.md)

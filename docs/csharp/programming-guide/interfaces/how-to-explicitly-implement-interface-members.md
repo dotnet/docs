@@ -27,4 +27,4 @@ This example declares an [interface](../../language-reference/keywords/interface
 - [C# Programming Guide](../index.md)
 - [Classes and Structs](../classes-and-structs/index.md)
 - [Interfaces](./index.md)
-- [How to: Explicitly Implement Members of Two Interfaces](./how-to-explicitly-implement-members-of-two-interfaces.md)
+- [How to explicitly implement members of two interfaces](./how-to-explicitly-implement-members-of-two-interfaces.md)

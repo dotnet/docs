@@ -51,4 +51,4 @@ These examples show you how to perform the following tasks:
 
 - [Standard Numeric Format Strings](../../../standard/base-types/standard-numeric-format-strings.md)
 - [Types](./index.md)
-- [How to: Determine Whether a String Represents a Numeric Value](../strings/how-to-determine-whether-a-string-represents-a-numeric-value.md)
+- [How to determine whether a string represents a numeric value](../strings/how-to-determine-whether-a-string-represents-a-numeric-value.md)

@@ -35,8 +35,8 @@ bool result = int.TryParse(s, out i); //i now = 108
   
 ## See also
 
-- [How to: Convert a byte Array to an int](../types/how-to-convert-a-byte-array-to-an-int.md)
-- [How to: Convert a String to a Number](../types/how-to-convert-a-string-to-a-number.md)
-- [How to: Convert Between Hexadecimal Strings and Numeric Types](../types/how-to-convert-between-hexadecimal-strings-and-numeric-types.md)
+- [How to convert a byte array to an int](../types/how-to-convert-a-byte-array-to-an-int.md)
+- [How to convert a string to a number](../types/how-to-convert-a-string-to-a-number.md)
+- [How to convert between hexadecimal strings and numeric types](../types/how-to-convert-between-hexadecimal-strings-and-numeric-types.md)
 - [Parsing Numeric Strings](../../../standard/base-types/parsing-numeric.md)
 - [Formatting Types](../../../standard/base-types/formatting-types.md)

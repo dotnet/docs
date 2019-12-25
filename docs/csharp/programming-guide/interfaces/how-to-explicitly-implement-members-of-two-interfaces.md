@@ -27,4 +27,4 @@ Explicit [interface](../../language-reference/keywords/interface.md) implementat
 - [C# Programming Guide](../index.md)
 - [Classes and Structs](../classes-and-structs/index.md)
 - [Interfaces](./index.md)
-- [How to: Explicitly Implement Interface Members](./how-to-explicitly-implement-interface-members.md)
+- [How to explicitly implement interface members](./how-to-explicitly-implement-interface-members.md)

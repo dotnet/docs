@@ -73,6 +73,6 @@ To compile and run the application from a command prompt, follow these steps:
 - <xref:System.Environment?displayProperty=nameWithType>
 - [C# Programming Guide](../index.md)
 - [Main() and Command-Line Arguments](index.md)
-- [How to: Display Command Line Arguments](how-to-display-command-line-arguments.md)
+- [How to dsplay command line arguments](how-to-display-command-line-arguments.md)
 - [Main() Return Values](main-return-values.md)
 - [Classes](../classes-and-structs/classes.md)

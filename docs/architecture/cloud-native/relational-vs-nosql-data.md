@@ -10,13 +10,13 @@ ms.date: 12/23/2019
 
 ## Introduction
 
-SQL and NoSQL are two types of databases commonly implemented in cloud-native apps. They're built differently, store data differently, and accessed differently.
+SQL and NoSQL are two types of database systems commonly implemented in cloud-native apps. They're built differently, store data differently, and accessed differently. In this section, we'll look at both and a new type of database technology called NewSQL.
 
 The impact of [NoSQL](https://www.geeksforgeeks.org/introduction-to-nosql/) technologies for distributed cloud-native systems can't be overstated. The proliferation of new data technologies in this space has disrupted solutions that once exclusively relied on relational databases.
 
-*Relational databases* have been a prevalent technology for decades. They're mature, proven, and widely implemented. Competing database products, tooling, and expertise abound. Relational databases provide a store of related data tables. These tables have a fixed schema, use SQL (Structured Query Language) to manage data, and support [ACID](https://www.geeksforgeeks.org/acid-properties-in-dbms/) guarantees. 
+*Relational databases* have been a prevalent technology for decades. They're mature, proven, and widely implemented. Competing database products, tooling, and expertise abound. Relational databases provide a store of related data tables. These tables have a fixed schema, use SQL (Structured Query Language) to manage data, and support [ACID](https://www.geeksforgeeks.org/acid-properties-in-dbms/) guarantees.
 
-*No-SQL databases* refer to high-performance, non-relational data stores. They excel in their ease-of-use, scalability, resilience, and availability characteristics. Instead of joining tables of normalized data, NoSQL stores self-describing (schemaless) data typically in JSON documents. No-SQL databases typically don't provide [ACID](https://www.geeksforgeeks.org/acid-properties-in-dbms/) guarantees beyond the scope of a single database partition.
+*No-SQL databases* refer to high-performance, non-relational data stores. They excel in their ease-of-use, scalability, resilience, and availability characteristics. Instead of joining tables of normalized data, NoSQL stores unstructured or semi-structured data, often in key-value pairs or JSON documents. No-SQL databases typically don't provide [ACID](https://www.geeksforgeeks.org/acid-properties-in-dbms/) guarantees beyond the scope of a single database partition. High volume services that require sub second response time favor NoSQL datastores.
 
 NoSQL databases include several different models for accessing and managing data, each suited to specific use cases. Figure 5-9 presents four common models.
 
@@ -40,9 +40,9 @@ The theorem states that distributed data systems will offer a trade-off between 
 
 - *Partition Tolerance.* Guarantees the system will continue to operate even if a replicated data node fails or loses connectivity with other replicated data nodes.
 
-Relational databases typically provide consistency and availability, but not partition tolerance. Relational databases scale-up, or vertically. Horizontally partitioning a relational database across multiple nodes, such as with [sharding](https://www.digitalocean.com/community/tutorials/understanding-database-sharding), is costly and time consuming to manage. Sharding can end up impacting performance, table joins, and referential integrity.
+Relational databases typically provide consistency and availability, but not partition tolerance. More often, the implemented as a single server and vertically scale. Horizontally partitioning a relational database across multiple nodes, such as with [sharding](https://www.digitalocean.com/community/tutorials/understanding-database-sharding), is costly and time consuming to manage. Sharding can end up impacting performance, table joins, and referential integrity.
 
-If data replicas were to lose network connectivity in a "highly consistent" relational database cluster, you wouldn't be able to write to the database. The system would reject the write operation as it can't replicate that change to every underlying data replica. Every data replica has to update before the transaction can complete.
+If data replicas were to lose network connectivity in a "highly consistent" relational database cluster, you wouldn't be able to write to the database. The system would reject the write operation as it can't replicate that change to the other data replica. Every data replica has to update before the transaction can complete.
 
 NoSQL databases typically support high availability and partition tolerance. They scale out horizontally, often across commodity servers. This approach provides tremendous availability, both within and across geographical regions at a reduced cost. You partition and replicate data across these machines, or nodes, providing redundancy and fault tolerance. The downside is consistency. A change to data on one NoSQL node can take some time to propagate to other nodes. Typically, a NoSQL database node will provide an immediate response to a query - even if the data that is presented is stale and hasn't updated yet.
 
@@ -76,7 +76,7 @@ Let's now look at how data storage can be implemented for cloud-native systems i
 
 Cloud-native applications typically favor data services exposed as a [Database as a Service (DBaaS)](https://www.stratoscale.com/blog/dbaas/what-is-database-as-a-service/). Fully managed by a cloud vendor, they provide built-in security, scalability, and monitoring. Instead of owning the service, you simply consume it as a [backing service](./definition.md#Request/Backing-services). The provider operates the resource at scale and bears the responsibility for performance and maintenance.
 
-They can be configured across multiple cloud availability zones and regions to achieve high availability. They all support just-in-time capacity and a pay-as-you-go model. Azure features different kinds of managed data service options, each with specific benefits. 
+They can be configured across cloud availability zones and regions to achieve high availability. They all support just-in-time capacity and a pay-as-you-go model. Azure features different kinds of managed data service options, each with specific benefits.
 
 We'll first look at relational DBaaS services available in Azure. You'll see that Microsoft's flagship SQL Server database is available along with several open-source options. Then, we'll talk about the NoSQL data services in Azure.
 
@@ -149,7 +149,7 @@ MariaDB has a strong community and is used by many large enterprises. While Orac
 
 [Azure Database for MariaDB](https://azure.microsoft.com/services/mariadb/) is a fully managed relational database as a service in the Azure cloud. The service is based on the [MariaDB community edition](https://mariadb.org/download/) server engine. It can handle mission-critical workloads with predictable performance and dynamic scalability.
 
-### Azure Database for PostgreSQL 
+### Azure Database for PostgreSQL
 
 [PostgreSQL](https://www.postgresql.org/) is an open-source relational database with over 30 years of active development. PostgresSQL has a strong reputation for reliability and data integrity. It’s feature rich, more robust, and considered more performant than MySQL. Many large enterprises including Apple, Red Hat, and Fujitsu have built products using PostgreSQL.
 
@@ -211,7 +211,7 @@ Note in Figure 5-14 how Cosmos DB supports [Azure Table Storage](https://azure.m
 
 Applications written for Azure Table storage can migrate to Azure Cosmos DB by using the Table API. No code changes are required.
 
-### Consistency Models
+### Tunable Consistency
 
 Earlier in the *Relational vs. NoSQL* section, we discussed the subject of *data consistency*. Data consistency refers to the integrity of your data. Cloud-native services with distributed data rely on replication and must make a fundamental tradeoff between read consistency, availability, and latency.
 
@@ -247,26 +247,15 @@ Internally, Cosmos DB automatically manages the placement of [logical partitions
 
 ## NewSQL Databases
 
-*NewSQL* is an emerging type of specialized database technology that combines the distributed scalability of NoSQL with the ACID guarantees of a relational database. They're important for businesses that must process high-volumes of data, across distributed applications, with full transaction support and ACID compliance. While a NoSQL database can provide massive scalability, it places a complex burden on the development team to construct safeguards in their microservice code to manage problems caused by inconsistent data.
+*NewSQL* is an emerging database technology that combines the distributed scalability of NoSQL with the ACID guarantees of a relational database. They're important for business systems that must process high-volumes of data, across distributed applications, with full transactional support and ACID compliance. While a NoSQL database can provide massive scalability, it places a burden on the development team. Developers must construct safeguards in their microservice code to manage problems caused by inconsistent data.
 
-The [Cloud Native Computing Foundation](https://www.cncf.io/) (CNCF) features several NewSQL database projects. Figure 5-11 shows four of these projects.
+The [Cloud Native Computing Foundation](https://www.cncf.io/) (CNCF) features several NewSQL database projects. Figure 5-11 shows four of the leading projects.
 
 ![CNCF databases](./media/cncf-databases.png)
 
 **Figure 5-11**. Cloud-native databases
 
-The open-source projects in the previous figure are available from the Cloud Native Computing Foundation. Three of the offerings are full database products, which include .NET Core support. The other is a database clustering system that horizontally scales large clusters of MySQL instances. All four are built to run on commodity hardware and provide native Kubernetes support.
-
-
-
-
-
-By implementing eventual consistency, we've seen that developers can increase the scalability and availability of data. But, by doing so, they must construct safeguards in their microservice code to manage problems caused by inconsistent data.
-
- manage this impressive feat at a rate of millions of transactions per second, potentially on commodity hardware.
-
-
-
+The open-source projects in the previous figure are available from the Cloud Native Computing Foundation. Three of the offerings are full database products, which include .NET Core support. The other is a database clustering system that horizontally scales large clusters of MySQL instances. All four are built to run on commodity hardware and provide native Kubernetes support. None of them are available as managed backing services. Implementation would involve running them in an Azure virtual machine or Kubernetes cluster.  
 
 ## Data migration to the cloud
 

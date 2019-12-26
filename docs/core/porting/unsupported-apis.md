@@ -9,6 +9,9 @@ The following APIs will always through a <xref:System.PlatformNotSupportedExcept
 
 This article organizes the affected API members by namespace.
 
+> [!NOTE]
+> This article is a work-in-progress. It is not a complete list of APIs that throw exceptions on .NET Core.
+
 ## System.Console
 
 | Member | Platform |

@@ -10,7 +10,7 @@ ms.date: 12/23/2019
 
 ## Introduction
 
-SQL and NoSQL are two types of database systems commonly implemented in cloud-native apps. They're built differently, store data differently, and accessed differently. In this section, we'll look at both and a new type of database technology called NewSQL.
+SQL and NoSQL are two types of database systems commonly implemented in cloud-native apps. They're built differently, store data differently, and accessed differently. In this section, we'll look at both, along with a new type of database technology called NewSQL, later in this module.
 
 The impact of [NoSQL](https://www.geeksforgeeks.org/introduction-to-nosql/) technologies for distributed cloud-native systems can't be overstated. The proliferation of new data technologies in this space has disrupted solutions that once exclusively relied on relational databases.
 
@@ -40,7 +40,11 @@ The theorem states that distributed data systems will offer a trade-off between 
 
 - *Partition Tolerance.* Guarantees the system will continue to operate even if a replicated data node fails or loses connectivity with other replicated data nodes.
 
-Relational databases typically provide consistency and availability, but not partition tolerance. More often, the implemented as a single server and vertically scale. Horizontally partitioning a relational database across multiple nodes, such as with [sharding](https://www.digitalocean.com/community/tutorials/understanding-database-sharding), is costly and time consuming to manage. Sharding can end up impacting performance, table joins, and referential integrity.
+Relational databases typically provide consistency and availability, but not partition tolerance. They're typically provisioned to a single server and scale vertically by adding more resources to the machine. 
+
+Many relational database systems support built-in replication features where copies of the primary database can be made to other secondary server instances. Write operations are made to the primary instance and replicated to each of the secondaries. Upon a failure, the primary instance can fail over to a secondary to provide high availability. Secondaries can also be used to distribute read operations. While writes operations always go against the primary replica, read operations can be routed to any of the secondaries to reduce system load.    
+
+Data can also be horizontally partitioned across multiple nodes, such as with [sharding](https://www.digitalocean.com/community/tutorials/understanding-database-sharding). But, sharding is costly and time consuming to manage. It can end up impacting performance, table joins, and referential integrity.
 
 If data replicas were to lose network connectivity in a "highly consistent" relational database cluster, you wouldn't be able to write to the database. The system would reject the write operation as it can't replicate that change to the other data replica. Every data replica has to update before the transaction can complete.
 
@@ -102,7 +106,7 @@ Development teams with expertise in Microsoft SQL Server should consider
 
 For use with a cloud-native microservice, Azure SQL Database is available with three deployment options:
 
-- A [Single Database](https://docs.microsoft.com/azure/sql-database/sql-database-single-database) represents a fully managed SQL Database running on an [Azure SQL Database server](https://docs.microsoft.com/azure/sql-database/sql-database-servers) in the Azure cloud. The database is considered [*contained*](https://docs.microsoft.com/sql/relational-databases/databases/contained-databases) as it no configuration dependencies on the underlying database server.
+- A [Single Database](https://docs.microsoft.com/azure/sql-database/sql-database-single-database) represents a fully managed SQL Database running on an [Azure SQL Database server](https://docs.microsoft.com/azure/sql-database/sql-database-servers) in the Azure cloud. The database is considered [*contained*](https://docs.microsoft.com/sql/relational-databases/databases/contained-databases) as it has no configuration dependencies on the underlying database server.
   
 - A [Managed Instance](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance) is a fully managed instance of the Microsoft SQL Server Database Engine that provides near-100% compatibility with an on-premises SQL Server. This option supports larger databases, up to 35 TB and is placed in an [Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview) for better isolation.
 

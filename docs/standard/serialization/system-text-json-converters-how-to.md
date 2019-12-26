@@ -183,7 +183,8 @@ Type inference can be inaccurate. If the deserializer parses a JSON number that 
 For scenarios that require type inference, the following code shows a custom converter for `Object` properties. The code converts:
 
 * `true` and `false` to `Boolean`
-* Numbers to `long` or `double`
+* Numbers without a decimal to `long`
+* Numbers with a decimal to `double`
 * Dates to `DateTime`
 * Strings to `string`
 * Everything else to `JsonElement`

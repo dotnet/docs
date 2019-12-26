@@ -25,7 +25,7 @@ The .NET Framework includes code generators and code compilers for <xref:Microso
   
 ## In this section
 
-- [Using the CodeDOM](using-the-codedom.md)  
+- [Using the CodeDOM](using-the-codedom.md)
 
   Describes common uses, and demonstrates building a simple object graph using the CodeDOM.  
   

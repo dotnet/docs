@@ -168,7 +168,7 @@ There is more to events and XAML in WPF than just this example of the attribute 
 In general, XAML is case-sensitive. For purposes of resolving backing types, WPF XAML is case-sensitive by the same rules that the CLR is case-sensitive. Object elements, property elements, and attribute names must all be specified by using the sensitive casing when compared by name to the underlying type in the assembly, or to a member of a type. XAML language keywords and primitives are also case-sensitive. Values are not always case-sensitive. Case sensitivity for values will depend on the type converter behavior associated with the property that takes the value, or the property value type. For example, properties that take the <xref:System.Boolean> type can take either `true` or `True` as equivalent values, but only because the native WPF XAML parser type conversion for string to <xref:System.Boolean> already permits these as equivalents.
 
 WPF XAML processors and serializers will ignore or drop all nonsignificant white space, and will normalize any significant white space. This is consistent with the default white-space behavior recommendations of the XAML specification. This behavior is only of consequence when you specify strings within XAML content properties. In simplest terms, XAML converts space, linefeed, and tab characters into spaces, and then preserves one space if found at either end of a contiguous string. The full explanation of XAML white-space handling is not covered in this article.
-<!--TODO For details, see [White space processing in XAML](../xaml-services/whitespace-processing.md).-->
+<!--TODO For details, see [White space processing in XAML](../xaml-services/white-space-processing.md).-->
 
 ## Markup extensions
 

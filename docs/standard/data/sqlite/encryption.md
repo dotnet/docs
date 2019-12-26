@@ -1,7 +1,7 @@
 ---
 title: Encryption
 ms.date: 12/13/2019
-description: Learn how to encrpt your database file.
+description: Learn how to encrypt your database file.
 ---
 # Encryption
 
@@ -27,11 +27,11 @@ Install-Package SQLitePCLRaw.bundle_e_sqlcipher
 
 ---
 
-For more information about using a different native library for encryption, see [Custom SQLite Versions](custom-sqlite.md).
+For more information about using a different native library for encryption, see [Custom SQLite versions](custom-versions.md).
 
-## Specifying the key
+## Specify the key
 
-To enable encryption, specify the key using the `Password` connection string keyword. Use [SqliteConnectionStringBuilder](/dotnet/api/microsoft.data.sqlite.sqliteconnectionstringbuilder) to add or update the value from user input and avoid connection string injection attacks.
+To enable encryption, specify the key using the `Password` connection string keyword. Use <xref:Microsoft.Data.Sqlite.SqliteConnectionStringBuilder> to add or update the value from user input and avoid connection string injection attacks.
 
 [!code-csharp[](../../../../samples/snippets/standard/data/sqlite/EncryptionSample/Program.cs?name=snippet_ConnectionStringBuilder)]
 

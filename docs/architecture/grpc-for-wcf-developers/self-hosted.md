@@ -80,11 +80,11 @@ public static IHostBuilder CreateHostBuilder(string[] args) =>
 Now publish your application. The application can be either framework dependent or self-contained for the relevant Linux runtime (for example, `linux-x64`). You can publish by using one of these methods:
 
 * From Visual Studio by right-clicking the project and selecting **Publish** on the shortcut menu. 
-* From the .NET Core CLI.
+* From the .NET Core CLI, by using the following command:
 
-```console
-dotnet publish -c Release -r linux-x64 -o ./publish
-```
+  ```console
+  dotnet publish -c Release -r linux-x64 -o ./publish
+  ```
 
 Copy the complete contents of the `publish` directory to an installation folder on the Linux host. Registering the service requires a special file, called a *unit file*, to be added to the `/etc/systemd/system` directory. You'll need root permission to create a file in this folder. Name the file with the identifier that you want `systemd` to use and the `.service` extension. For example, use `/etc/systemd/system/myapp.service`.
 
@@ -153,7 +153,7 @@ To learn more about querying the `systemd` journal from the command line by usin
 
 When you're running a gRPC application in production, you should use a TLS certificate from a trusted certificate authority (CA). This CA might be a public CA, or an internal one for your organization.
 
-On Windows hosts, you can load the certificate from a secure [certificate store](https://docs.microsoft.com/windows/win32/seccrypto/managing-certificates-with-certificate-stores) by using the [X509Store class](https://docs.microsoft.com/dotnet/api/system.security.cryptography.x509certificates.x509store?view=netcore-3.0). You can also use the `X509Store` class with the OpenSSL key store on some Linux hosts.
+On Windows hosts, you can load the certificate from a secure [certificate store](/windows/win32/seccrypto/managing-certificates-with-certificate-stores) by using the <xref:System.Security.Cryptography.X509Certificates.X509Store> class. You can also use the `X509Store` class with the OpenSSL key store on some Linux hosts.
 
 You can also create certificates by using one of the [X509Certificate2 constructors](xref:System.Security.Cryptography.X509Certificates.X509Certificate2.%23ctor%2A), from either:
 

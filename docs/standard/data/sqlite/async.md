@@ -1,9 +1,9 @@
 ---
-title: Async Limitations
+title: Async limitations
 ms.date: 12/13/2019
 description: Explains the limitations of the async APIs and some alternatives that you can use instead.
 ---
-# Async Limitations
+# Async limitations
 
 SQLite doesn't support asynchronous I/O. Async ADO.NET methods will execute synchronously in Microsoft.Data.Sqlite. Avoid calling them.
 

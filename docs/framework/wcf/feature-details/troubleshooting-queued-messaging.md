@@ -19,7 +19,7 @@ This section contains common questions and troubleshooting help for using queues
 
 **Q:** Do I have to upgrade MSMQ to use the <xref:System.ServiceModel.NetMsmqBinding> and `MsmqIntegration` bindings?
 
-**A:** No. Both bindings work with MSMQ 3.0 on [!INCLUDE[wxp](../../../../includes/wxp-md.md)] and [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)]. Certain features of the bindings become available when you upgrade to MSMQ 4.0 in Windows Vista.
+**A:** No. Both bindings work with MSMQ 3.0 on [!INCLUDE[wxp](../../../../includes/wxp-md.md)] and Windows Server 2003. Certain features of the bindings become available when you upgrade to MSMQ 4.0 in Windows Vista.
 
 **Q:** What features of the <xref:System.ServiceModel.NetMsmqBinding> and <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> bindings are available in MSMQ 4.0 but not in MSMQ 3.0?
 

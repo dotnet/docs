@@ -1,11 +1,11 @@
 ---
 title: Slices
-description: Learn about how to use slices for existing F# data types and how to define your own slices for other data types.
+description: Learn how to use slices for existing F# data types and how to define your own slices for other data types.
 ms.date: 12/23/2019
 ---
 # Slices
 
-In F#, a slice is a subset of any data type that defines a `GetSlice` method in its definition or in a [type extension](type-extensions.md) that is in scope. It is most commonly used with F# arrays and lists. This article explains how to take slices from existing F# types and how to define your own.
+In F#, a slice is a subset of any data type that has a `GetSlice` method in its definition or in an in-scope [type extension](type-extensions.md). It is most commonly used with F# arrays and lists. This article explains how to take slices from existing F# types and how to define your own slices.
 
 Slices are similar to [indexers](./members/indexed-properties.md), but instead of yielding a single value from the underlying data structure, they yield multiple ones.
 
@@ -83,7 +83,7 @@ let twoByTwo = A.[0..1,0..1]
 printfn "%A" twoByTwo
 ```
 
-The F# core library does not currently define `GetSlice`for 3D arrays. If you wish to slice those or other arrays of more dimensions, you must define the `GetSlice` member yourself.
+The F# core library does not currently define `GetSlice` for 3D arrays. If you wish to slice 3D arrays or other arrays of more dimensions, define the `GetSlice` member yourself.
 
 ## Defining slices for other data structures
 
@@ -138,7 +138,7 @@ printSpan sp.[1..2] // |2; 3|]
 
 ## Built-in F# slices are end-inclusive
 
-All intrinsic slices in F# are end-inclusive; that is, the upper bound is included in the slice. For a given slice with starting index `x` and ending index `y`, the resulting slice will include the `yth` value.
+All intrinsic slices in F# are end-inclusive; that is, the upper bound is included in the slice. For a given slice with starting index `x` and ending index `y`, the resulting slice will include the *yth* value.
 
 ```fsharp
 // Define a new list

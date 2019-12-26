@@ -1,9 +1,9 @@
 ---
-title: "How to: Join Content from Dissimilar Files (LINQ) (C#)"
+title: "How to join content from dissimilar files (LINQ) (C#)"
 ms.date: 06/27/2018
 ms.assetid: aa2d12a6-70a9-492f-a6db-b2b850d46811
 ---
-# How to: Join Content from Dissimilar Files (LINQ) (C#)
+# How to join content from dissimilar files (LINQ) (C#)
 
 This example shows how to join data from two comma-delimited files that share a common value that is used as a matching key. This technique can be useful if you have to combine data from two spreadsheets, or from a spreadsheet and from a file that has another format, into a new file. You can modify the example to work with any kind of structured text.  
   

@@ -1,5 +1,5 @@
 ---
-title: Slices (F#)
+title: Slices
 description: Learn about how to use slices for existing F# data types and how to define your own slices for other data types.
 ms.date: 01/22/2019
 ---

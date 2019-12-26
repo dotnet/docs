@@ -36,7 +36,7 @@ MsgBox(result)
 ' 8  
 ```  
   
-## Compiling the Code  
+## Compile the code  
   
 - Include the System.Linq.Expressions namespace.  
   

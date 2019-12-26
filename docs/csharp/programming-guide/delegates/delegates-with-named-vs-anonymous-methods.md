@@ -35,5 +35,5 @@ A [delegate](../../language-reference/builtin-types/reference-types.md) can be a
 
 - [C# Programming Guide](../index.md)
 - [Delegates](./index.md)
-- [How to: Combine Delegates (Multicast Delegates)](./how-to-combine-delegates-multicast-delegates.md)
+- [How to combine delegates (Multicast Delegates)](./how-to-combine-delegates-multicast-delegates.md)
 - [Events](../events/index.md)

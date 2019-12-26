@@ -1,7 +1,7 @@
 ---
 title: "Tutorial: Create a .NET Core solution in macOS using Visual Studio Code"
 description: This document provides the steps and workflow to create a .NET Core Solution using Visual Studio Code.
-ms.date: 03/23/2017
+ms.date: 12/19/2019
 ms.custom: seodec18
 ---
 # Tutorial: Create a .NET Core solution in macOS using Visual Studio Code
@@ -17,13 +17,13 @@ Install the [.NET Core SDK](https://dotnet.microsoft.com/download). The .NET Cor
 
 Install [Visual Studio Code](https://code.visualstudio.com). During the course of this article, you also install Visual Studio Code extensions that improve the .NET Core development experience.
 
-Install the Visual Studio Code C# extension by opening Visual Studio Code and pressing <kbd>F1</kbd> to open the Visual Studio Code palette. Type **ext install** to see the list of extensions. Select the C# extension. Restart Visual Studio Code to activate the extension. For more information, see the [Visual Studio Code C# Extension documentation](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md).
+Install the Visual Studio Code C# extension by opening Visual Studio Code and pressing <kbd>Fn</kbd>+<kbd>F1</kbd> to open the Visual Studio Code palette. Type **ext install** to see the list of extensions. Select the C# extension. Restart Visual Studio Code to activate the extension. For more information, see the [Visual Studio Code C# Extension documentation](https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger.md).
 
 ## Get started
 
-In this tutorial, you create three projects: a library project, tests for that library project, and a console application that makes use of the library. You can [view or download the source](https://github.com/dotnet/samples/tree/master/core/getting-started/golden) for this topic at the dotnet/samples repository on GitHub. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
+In this tutorial, you create three projects: a library project, tests for that library project, and a console application that makes use of the library. You can [view or download the source](https://github.com/dotnet/samples/tree/master/core/getting-started/golden) for this article at the dotnet/samples repository on GitHub. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
-Start Visual Studio Code. Press <kbd>Ctrl</kbd>+<kbd>\`</kbd> (the backquote or backtick character) or select **View > Integrated Terminal** from the menu to open an embedded terminal in Visual Studio Code. You can still open an external shell with the Explorer **Open in Command Prompt** command (**Open in Terminal** on Mac or Linux) if you prefer to work outside of Visual Studio Code.
+Start Visual Studio Code. Press <kbd>Ctrl</kbd>+<kbd>\`</kbd> (the backquote or backtick character) or select **View > Terminal** from the menu to open an embedded terminal in Visual Studio Code. You can still open an external shell with the Explorer **Open in Command Prompt** command (**Open in Terminal** on Mac or Linux) if you prefer to work outside of Visual Studio Code.
 
 Begin by creating a solution file, which serves as a container for one or more .NET Core projects. In the terminal, run the [`dotnet new`](../tools/dotnet-new.md) command to create a new solution *golden.sln* inside a new folder named *golden*:
 
@@ -204,13 +204,13 @@ dotnet run -p app/app.csproj
 
 ## Debug the application
 
-Set a breakpoint at the `WriteLine` statement in the `Main` method. Do this by either pressing the <kbd>F9</kbd> key when the cursor is over the `WriteLine` line or by clicking the mouse in the left margin on the line where you want to set the breakpoint. A red circle will appear in the margin next to the line of code. When the breakpoint is reached, code execution will stop *before* the breakpoint line is executed.
+Set a breakpoint at the `WriteLine` statement in the `Main` method. Do this by either pressing the <kbd>Fn</kbd>+<kbd>F9</kbd> key when the cursor is over the `WriteLine` line or by clicking the mouse in the left margin on the line where you want to set the breakpoint. A red circle will appear in the margin next to the line of code. When the breakpoint is reached, code execution will stop *before* the breakpoint line is executed.
 
-Open the debugger tab by selecting the Debug icon in the Visual Studio Code toolbar, selecting **View > Debug** from the menu bar, or using the keyboard shortcut <kbd>CTRL</kbd>+<kbd>SHIFT</kbd>+<kbd>D</kbd>:
+Open the debugger tab by selecting the Debug icon in the Visual Studio Code toolbar, selecting **View > Debug** from the menu bar, or using the keyboard shortcut <kbd>Command</kbd>+<kbd>SHIFT</kbd>+<kbd>D</kbd>:
 
 ![Visual Studio Code Debugger](./media/using-on-macos/visual-studio-code-debugger.png)
 
-Press the Play button to start the application under the debugger. The app begins execution and runs to the breakpoint, where it stops. Step into the `Get` method and make sure that you have passed in the correct arguments. Confirm that the answer is 42.
+Press the Play button to start the application under the debugger. You've created both a test project and an application in this project. The debugger asks which project you want to start. Select the "app" project. The app begins execution and runs to the breakpoint, where it stops. Step into the `Get` method and make sure that you have passed in the correct arguments. Confirm that the answer is 42.
 
 <a name="dotnet-restore-note"></a>
 [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]

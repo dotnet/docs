@@ -14,14 +14,14 @@ Side-by-side execution in the .NET Framework is the ability to execute an applic
  Backward compatibility means that an application is compiled for a newer version of the .NET Framework, but continues to run on earlier versions of the .NET Framework without any loss of functionality. Of course, this will not be the case for features introduced in a new version of the .NET Framework.  
   
 ## The .NET Framework Data Provider for ODBC  
- Starting with version 1.1, the .NET Framework Data Provider for ODBC (<xref:System.Data.Odbc>) is included as a part of the .NET Framework. The ODBC data provider is available to .NET Framework version 1.0 developers as a Web download from the [Data Access and Storage Developer Center](https://go.microsoft.com/fwlink/?linkid=4173). The namespace for the downloaded .NET Framework Data Provider for ODBC is **Microsoft.Data.Odbc**.  
+ Starting with version 1.1, the .NET Framework Data Provider for ODBC (<xref:System.Data.Odbc>) is included as a part of the .NET Framework.
   
  If you have an application developed for the .NET Framework version 1.0 that uses the ODBC data provider to connect to your data source, and you want to run that application on the .NET Framework version 1.1 or a later version, you must update the namespace for the ODBC data provider to **System.Data.Odbc**. You then must recompile it for the newer version of the .NET Framework.  
   
  If you have an application developed for the .NET Framework version 2.0 or later that uses the ODBC data provider to connect to your data source, and you want to run that application on the .NET Framework version 1.0, you must download the ODBC data provider and install it on the .NET Framework version 1.0 system. You then must change the namespace for the ODBC data provider to **Microsoft.Data.Odbc**, and recompile the application for the .NET Framework version 1.0.  
   
 ## The .NET Framework Data Provider for Oracle  
- Starting with version 1.1, the .NET Framework Data Provider for Oracle (<xref:System.Data.OracleClient>) is included as a part of the .NET Framework. The data provider is available to .NET Framework version 1.0 developers as a Web download from the [Data Access and Storage Developer Center](https://go.microsoft.com/fwlink/?linkid=4173).  
+ Starting with version 1.1, the .NET Framework Data Provider for Oracle (<xref:System.Data.OracleClient>) is included as a part of the .NET Framework.
   
  If you have an application developed for the .NET Framework version 2.0 or later that uses the data provider to connect to your data source, and you want to run that application on the .NET Framework version 1.0, you must download the data provider and install it on the .NET Framework version 1.0 system.  
   

@@ -1,9 +1,9 @@
 ---
-title: "How to: Parse a String (C#)"
+title: "How to parse a string (C#)"
 ms.date: 07/20/2015
 ms.assetid: 81e5686c-9658-42d8-a7e3-b11be0a2c98b
 ---
-# How to: Parse a String (C#)
+# How to parse a string (C#)
 
 This topic shows how to parse a string to create an XML tree in C#.
 

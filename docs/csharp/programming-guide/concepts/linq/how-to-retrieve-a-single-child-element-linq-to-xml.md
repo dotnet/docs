@@ -1,9 +1,9 @@
 ---
-title: "How to: Retrieve a Single Child Element (LINQ to XML) (C#)"
+title: "How to retrieve a single child element (LINQ to XML) (C#)"
 ms.date: 07/20/2015
 ms.assetid: ce37db9e-76fa-46eb-b4cc-e8f32d22ad90
 ---
-# How to: Retrieve a Single Child Element (LINQ to XML) (C#)
+# How to retrieve a single child element (LINQ to XML) (C#)
 This topic explains how to retrieve a single child element, given the name of the child element. When you know the name of the child element and that there is only one element that has this name, it can be convenient to retrieve just one element, instead of a collection.  
   
  The <xref:System.Xml.Linq.XContainer.Element%2A> method returns the first child <xref:System.Xml.Linq.XElement> with the specified <xref:System.Xml.Linq.XName>.  

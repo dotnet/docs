@@ -64,11 +64,6 @@
           "core/**/*.md",
           "core/**/*.yml"
         ]
-      },
-      {
-        "files": [
-          "index.md"
-        ]
       }
     ],
     "resource": [
@@ -141,7 +136,8 @@
       },
       "feedback_product_url": {
         "docs/fsharp/**/**.md": "https://github.com/Microsoft/visualfsharp",
-        "docs/machine-learning/**/**.md": "https://github.com/dotnet/machinelearning"
+        "docs/machine-learning/**/**.md": "https://github.com/dotnet/machinelearning",
+        "docs/standard/data/sqlite/**/*.md": "https://github.com/aspnet/EntityFrameworkCore"
       },
       "ms.prod": {
         "_csharplang/**/*.md": "dotnet-csharp",
@@ -239,6 +235,7 @@
         "docs/standard/base-types/**/**.md": "Thraka",
         "docs/standard/collections/**/**.md": "billwagner",
         "docs/standard/data/**/**.md": "gewarren",
+        "docs/standard/data/sqlite/**/**.md": "bricelam",
         "docs/standard/datetime/**/**.md": "Thraka",        
         "docs/standard/design-guidelines/**/**.md": "mairaw",
         "docs/standard/events/**/**.md": "gewarren",
@@ -256,7 +253,8 @@
         "docs/standard/serialization/**/**.md": "tdykstra",
         "docs/standard/threading/**/**.md": "billwagner",
         "docs/standard/whats-new/**/**.md": "mairaw",
-        "docs/visual-basic/**/**.md": "KathleenDollard"
+        "docs/visual-basic/**/**.md": "KathleenDollard",
+        "docs/whats-new/**/**.md": "billwagner"
       },
       "ms.author": {
         "_csharplang/**/*.md": "wiwagn",
@@ -264,20 +262,83 @@
         "docs/architecture/**/**.md": "nanil",
         "docs/architecture/grpc-for-wcf-developers/**/**.md": "soshir",
         "docs/core/**/**.md": "mairaw",
+        "docs/core/compatibility/**/**.md": "gewarren",
+        "docs/core/deploying/**/**.md": "adegeo",
+        "docs/core/diagnostics/**/**.md": "stmaclea",
+        "docs/core/docker/**/**.md": "adegeo",
+        "docs/core/native-interop/**/**.md": "jekoritz",
+        "docs/core/porting/**/**.md": "phcart",
         "docs/core/run-time-config/**/**.md": "gewarren",
-        "docs/core/docker/**.md": "adegeo",
+        "docs/core/testing/**/**.md": "wiwagn",
+        "docs/core/tools/**/**.md": "tdykstra",
+        "docs/core/tools/dotnet-**.md": "mairaw",
+        "docs/core/tutorials/**/**.md": "tdykstra",
+        "docs/core/versions/**/**.md": "wiwagn",
+        "docs/core/whats-new/**/**.md": "adegeo",
         "docs/csharp/**/**.md": "wiwagn",
         "docs/csharp/**/**.yml": "wiwagn",
+        "docs/framework/**/**.md": "mairaw",
+        "docs/framework/app-domains/**/**.md": "gewarren",        
         "docs/framework/configure-apps/file-schema/network/**/**.md": "ncldev",
         "docs/framework/configure-apps/file-schema/wcf/**/**.md": "wcfsrvt",
+        "docs/framework/configure-apps/file-schema/winforms/**/**.md": "adegeo",
         "docs/framework/data/adonet/**/**.md": "sstein",
         "docs/framework/data/wcf/**/**.md": "wcfsrvt",
+        "docs/framework/deployment/**/**.md": "adegeo",
+        "docs/framework/get-started/**/**.md": "mairaw",
+        "docs/framework/install/**/**.md": "adegeo",
+        "docs/framework/migration-guide/**/**.md": "gewarren",
+        "docs/framework/misc/**/**.md": "mairaw",
+        "docs/framework/net-native/**/**.md": "mairaw",
         "docs/framework/network-programming/**/**.md": "ncldev",
+        "docs/framework/performance/**/**.md": "mairaw",
+        "docs/framework/reflection-and-codedom/**/**.md": "adegeo",
+        "docs/framework/resources/**/**.md": "adegeo",
+        "docs/framework/tools/**/**.md": "tdykstra",
+        "docs/framework/ui-automation/**/**.md": "adegeo",
+        "docs/framework/unmanaged-api/alink/**/**.md": "jeffschw",
+        "docs/framework/unmanaged-api/debugging/**/**.md": "tommcdon",
+        "docs/framework/unmanaged-api/diagnostics/**/**.md": "tommcdon",
+        "docs/framework/unmanaged-api/fusion/**/**.md": "jeffschw",
+        "docs/framework/unmanaged-api/hosting/**/**.md": "jeffschw",
+        "docs/framework/unmanaged-api/profiling/**/**.md": "tommcdon",
+        "docs/framework/unmanaged-api/strong-naming/**/**.md": "jeffschw",
+        "docs/framework/unmanaged-api/tlbexp/**/**.md": "jeffschw",
+        "docs/framework/whats-new/**/**.md": "gewarren",
         "docs/framework/wcf/**/**.md": "wcfsrvt",
+        "docs/framework/winforms/**/**.md": "adegeo",
+        "docs/framework/wpf/**/**.md": "adegeo",
+        "docs/framework/xaml-services/**/**.md": "adegeo",
         "docs/fsharp/**/**.md": "phcart",
         "docs/machine-learning/**/**.md": "nakersha",
-        "docs/visual-basic/**/**.md": "kdollard",
-        "docs/spark/**/**.md": "mamccrea"
+        "docs/spark/**/**.md": "mamccrea",
+        "docs/standard/**/**.md": "gewarren",
+        "docs/standard/analyzers/**/**.md": "mairaw",
+        "docs/standard/assembly/**/**.md": "gewarren",
+        "docs/standard/asynchronous-programming-patterns/**/**.md": "wiwagn",
+        "docs/standard/attributes/**/**.md": "tdykstra",
+        "docs/standard/base-types/**/**.md": "adegeo",
+        "docs/standard/collections/**/**.md": "wiwagn",
+        "docs/standard/data/**/**.md": "gewarren",
+        "docs/standard/data/sqlite/**/**.md": "bricelam",
+        "docs/standard/datetime/**/**.md": "adegeo",        
+        "docs/standard/design-guidelines/**/**.md": "mairaw",
+        "docs/standard/events/**/**.md": "gewarren",
+        "docs/standard/exceptions/**/**.md": "tdykstra",
+        "docs/standard/garbage-collection/**/**.md": "wiwagn",
+        "docs/standard/generics/**/**.md": "adegeo",
+        "docs/standard/globalization-localization/**/**.md": "mairaw",
+        "docs/standard/io/**/**.md": "adegeo",
+        "docs/standard/library-guidance/**/**.md": "jamesnk",
+        "docs/standard/linq/**/**.md": "mairaw",
+        "docs/standard/memory-and-spans/**/**.md": "tdykstra",
+        "docs/standard/native-interop/**/**.md": "jekoritz",
+        "docs/standard/parallel-programming/**/**.md": "wiwagn",
+        "docs/standard/security/**/**.md": "gewarren",
+        "docs/standard/serialization/**/**.md": "tdykstra",
+        "docs/standard/threading/**/**.md": "wiwagn",
+        "docs/standard/whats-new/**/**.md": "mairaw",
+        "docs/visual-basic/**/**.md": "kdollard"
       },
       "ms.date": {
         "_csharplang/spec/*.md": "07/01/2017",
@@ -352,6 +413,7 @@
         "docs/framework/winforms/**/**.md": "dotnet-winforms",
         "docs/framework/wpf/**/**.md": "dotnet-wpf",
         "docs/framework/xaml-services/**/**.md": "dotnet-wpf",
+        "docs/standard/data/**/**.md": "dotnet-data",
         "docs/standard/security/**/**.md": "dotnet-security",
         "docs/visual-basic/language-reference/error-messages/**/**.md": "vb-diagnostics"
       },
@@ -453,6 +515,7 @@
         "docs/core/versions/**.md": ".NET Core",
         "docs/desktop-wpf/**/**.md": "WPF",
         "docs/machine-learning/**/**.md": "ML.NET",
+        "docs/standard/data/sqlite/**/**.md": "Microsoft.Data.Sqlite",
         "docs/visual-basic/**/**.md": "Visual Basic"
       },
       "ms.custom": {

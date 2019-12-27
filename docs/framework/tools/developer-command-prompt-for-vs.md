@@ -75,7 +75,7 @@ For easier access, you can add the Developer Command Prompt, or any other comman
 
 1. In the **Arguments** field, specify where to find the specific command prompt you want to use such as `/k "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools\VsDevCmd.bat"` (this command launches the Developer Command Prompt that is installed with Visual Studio 2019 Community). Change this value according to your Visual Studio version, edition, and installation location.
 
-1. Choose a value for the **Initial directory** field, such as **Project Directory**.
+1. In the **Initial directory** field, specify in which directory the command prompt will start. Choose a value such as **Project Directory** by selecting the arrow right next to the field.
 
 1. Choose the **OK** button.
 

@@ -20,7 +20,7 @@ This article shows how to migrate from [Newtonsoft.Json](https://www.newtonsoft.
 
 Most of this article is about how to use the <xref:System.Text.Json.JsonSerializer> API, but it also includes guidance on how to use the <xref:System.Text.Json.JsonDocument> Document Object Model (DOM) and the <xref:System.Text.Json.Utf8JsonReader> and <xref:System.Text.Json.Utf8JsonWriter> API. The article is organized into sections in the following order:
 
-* Differences in **default** `System.Text.Json.JsonSerializer` behavior compared to `Newtonsoft.Json`.
+* [Differences in **default** JsonSerializer behavior compared to Newtonsoft.Json](#differences-in-default-behavior).
 * [Scenarios using JsonSerializer that require workarounds](#scenarios-using-jsonserializer-that-require-workarounds).
 * [Scenarios that JsonSerializer currently doesn't support](#scenarios-that-jsonserializer-currently-doesnt-support).
 * [JsonDocument](#jsondocument).
@@ -78,7 +78,7 @@ When `Newtonsoft.Json` deserializes to `Object` properties in POCOs or in dictio
 
 To implement type inference for `Object` properties, create a converter like the example in [How to write custom converters](system-text-json-converters-how-to.md#deserialize-inferred-types-to-object-properties).
 
-## Maximum depth
+### Maximum depth
 
 `Newtonsoft.Json` doesn't have a maximum depth limit. For `System.Text.Json` there's a default limit  of 64, and it's configurable by setting (xref:System.Text.Json.JsonSerializerOptions.MaxDepth?displayProperty=nameWithType).
 

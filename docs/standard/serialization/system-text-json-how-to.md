@@ -106,7 +106,7 @@ Serializing to UTF-8 is about 5-10% faster than using the string-based methods. 
 * The [default encoder](xref:System.Text.Encodings.Web.JavaScriptEncoder.Default) escapes non-ASCII characters, HTML-sensitive characters within the ASCII-range, and characters that must be escaped according to [the RFC 8259 JSON spec](https://tools.ietf.org/html/rfc8259#section-7).
 * By default, JSON is minified. You can [pretty-print the JSON](#serialize-to-formatted-json).
 * By default, casing of JSON names matches the .NET names. You can [customize JSON name casing](#customize-json-names-and-values).
-* Circular references are detected and exceptions thrown.on GitHub.
+* Circular references are detected and exceptions thrown.
 * Currently, fields are excluded.
 
 Supported types include:

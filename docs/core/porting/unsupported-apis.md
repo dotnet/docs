@@ -26,6 +26,12 @@ This article organizes the affected API members by namespace.
 | <xref:System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromFile%2A?displayProperty=nameWithType> | All |
 | <xref:System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromSource%2A?displayProperty=nameWithType> | All |
 
+## System.Configuration
+
+| Member | Platform |
+| - | - |
+| <xref:System.Configuration.RsaProtectedConfigurationProvider?displayProperty=nameWithType> (all members) | All |
+
 ## System.Console
 
 | Member | Platform |
@@ -46,6 +52,8 @@ This article organizes the affected API members by namespace.
 
 ## System.Data.Common
 
+| Member | Platform |
+| - | - |
 | <xref:System.Data.Common.DbDataReader.GetSchemaTable%2A?displayProperty=nameWithType> | All (throws a <xref:System.NotSupportedException>) |
 
 ## System.Diagnostics.Process
@@ -143,6 +151,12 @@ This article organizes the affected API members by namespace.
 | - | - |
 | <xref:System.ServiceProcess.TimeoutException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
 
+## System.Text.RegularExpressions
+
+| Member | Platform |
+| - | - |
+| <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> | All |
+
 ## System.Threading
 
 | Member | Platform |
@@ -154,10 +168,11 @@ This article organizes the affected API members by namespace.
 
 ## System.Xml.Xsl
 
+| Member | Platform |
+| - | - |
 | <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A?displayProperty=nameWithType><br/>(if `msxsl:script` is used in the stylesheet) | All |
 | <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=nameWithType><br/>(if `msxsl:script` is used in the stylesheet) | All |
 | <xref:System.Xml.Xsl.XslTransform.Load%2A?displayProperty=nameWithType><br/>(if `msxsl:script` is used in the stylesheet) | All |
-
 
 ## See also
 

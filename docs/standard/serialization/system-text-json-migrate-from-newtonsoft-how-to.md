@@ -413,3 +413,4 @@ For a code example, see [Use JsonDocument for access to data](system-text-json-h
 * [How to write custom converters](system-text-json-converters-how-to.md)
 * [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
+* [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)

@@ -34,4 +34,5 @@ The library also provides classes for working with an in-memory document object 
 * [How to write converters](system-text-json-converters-how-to.md)
 * [System.Text.Json source code](https://github.com/dotnet/runtime/tree/master/src/libraries/System.Text.Json)
 * [System.Text.Json API reference](xref:System.Text.Json)
+* [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)
 <!-- * [Roadmap](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Text.Json/roadmap/README.md)-->

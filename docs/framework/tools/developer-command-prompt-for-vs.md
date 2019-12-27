@@ -17,19 +17,23 @@ The Developer Command Prompt for Visual Studio enables you to use .NET Framework
 
 ## Prerequisites
 
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or a later version.
+- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019).
 
 ## Search for the command prompt on your machine
 
-You may have multiple command prompts, depending on the version of Visual Studio and any additional SDKs you've installed. If the following steps don't work, you can try to [manually locate the files on your machine](#manually-locate-the-files-on-your-machine) or [run the command prompt from inside Visual Studio](#run-the-command-prompt-from-inside-visual-studio).
+You may have multiple command prompts, depending on the version of Visual Studio and any additional SDKs and workloads you've installed. If the following steps don't work, you can try to [manually locate the files on your machine](#manually-locate-the-files-on-your-machine) or [start the command prompt from inside Visual Studio](#start-the-command-prompt-from-inside-visual-studio).
 
 ### In Windows 10
 
-1. In the search box on the taskbar, start typing the name of the tool, such as `dev` or `developer command prompt`. This brings up a list of installed apps that match your search pattern. If you're looking for a different command prompt, try entering a different search term such as `prompt`.
+1. Select **Start** ![Windows logo key on the keyboard.](./media/developer-command-prompt-for-vs/windows-logo-key-graphic.png) and scroll to the letter **V**.
+
+1. Expand the **Visual Studio 2019** folder.
 
 1. Choose the **Developer Command Prompt for VS 2019** (or the command prompt you want to use).
 
-   ![Animated gif showing the search behavior on Windows 10](media/developer-command-prompt-for-vs/windows10-search.gif)
+   Alternatively, you can start typing the name of the command prompt in the search box on the taskbar, and choose the result you want as the result list starts to display the search matches.
+
+   ![Animated gif showing the search behavior on Windows 10](./media/developer-command-prompt-for-vs/windows10-search.gif)
 
 ### In Windows 8.1
 
@@ -51,9 +55,9 @@ If you have other SDKs installed, such as the [Windows 10 SDK](https://developer
 
 ## Manually locate the files on your machine
 
-Usually, the shortcuts for the command prompts you have installed are placed at the **Start Menu** folder for Visual Studio, such as in *C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019\Visual Studio Tools*. But if for some reason, searching for the command prompt doesn't bring the expected results, you can try to manually locate the shortcut on your machine. Try searching for the name of the command prompt file, such as *VsDevCmd.bat*, or go to the Tools folder such as *C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\Tools* (path changes according to your Visual Studio version, edition, and installation location).
+Usually, the shortcuts for the command prompts you have installed are placed at the **Start Menu** folder for Visual Studio, such as in *%ProgramData%\Microsoft\Windows\Start Menu\Programs\Visual Studio 2019\Visual Studio Tools*. But if for some reason, searching for the command prompt doesn't bring the expected results, you can try to manually locate the shortcut on your machine. Try searching for the name of the command prompt file, such as *VsDevCmd.bat*, or go to the Tools folder such as *%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Community\Common7\Tools* (path changes according to your Visual Studio version, edition, and installation location).
 
-## Run the command prompt from inside Visual Studio
+## Start the command prompt from inside Visual Studio
 
 For easier access, you can add the Developer Command Prompt, or any other command prompt, to the **Tools** menu in Visual Studio. To make the tool available, add it to the external tools list. Here are the steps:
 
@@ -83,5 +87,6 @@ For easier access, you can add the Developer Command Prompt, or any other comman
 
 ## See also
 
-- [Tools](index.md)
+- [.NET Framework Tools](index.md)
 - [Managing External Tools](/visualstudio/ide/managing-external-tools)
+- [Use the Microsoft C++ toolset from the command line](/cpp/build/building-on-the-command-line)

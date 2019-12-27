@@ -24,11 +24,12 @@ Most of this article is about how to use the <xref:System.Text.Json.JsonSerializ
 * [Scenarios using JsonSerializer that require workarounds](#scenarios-using-jsonserializer-that-require-workarounds).
 * [Scenarios that JsonSerializer currently doesn't support](#scenarios-that-jsonserializer-currently-doesnt-support).
 * [JsonDocument](#jsondocument).
-* [Utf8JsonReader and Utf8JsonWriter](#utf8jsonreader-and-utf8jsonwriter).
+* [Utf8JsonReader](#utf8jsonreader).
+* [Utf8JsonWriter](#utf8jsonwriter).
 
 ## Differences in default behavior
 
-`System.Text.Json` is strict by default and avoids any guessing or interpretation on the caller's behalf, emphasizing deterministic behavior. The library is intentionally designed this way for performance and security. `Newtonsoft.Json` is flexible by default`.
+`System.Text.Json` is strict by default and avoids any guessing or interpretation on the caller's behalf, emphasizing deterministic behavior. The library is intentionally designed this way for performance and security. `Newtonsoft.Json` is flexible by default.
 
 ### Case-insensitive deserialization 
 
@@ -50,14 +51,14 @@ The `Newtonsoft.Json` registration precedence for custom converters is as follow
 
 * Attribute on property
 * Attribute on type
-* `Converters` collection
+* [Converters](https://www.newtonsoft.com/json/help/html/P_Newtonsoft_Json_JsonSerializerSettings_Converters.htm) collection
 
 This order means that a custom converter in the `Converters` collection is overridden by a converter that is registered by applying an attribute at the type level. Both of those registrations are overridden by an attribute at the property level.
 
 The `System.Text.Json` registration precedence for custom converters is different:
 
 * Attribute on property
-* `Converters` collection
+* <xref:System.Text.Json.JsonSerializerOptions.Converters> collection
 * Attribute on type
 
 The difference here is that a custom converter in the `Converters` collection overrides an attribute at the type level. The intention behind this order of precedence is to make run-time changes override design-time choices. There's no way to change the precedence.
@@ -70,7 +71,7 @@ During serialization, `Newtonsoft.Json` is relatively permissive about letting c
 
 When `Newtonsoft.Json` deserializes to `Object` properties in POCOs or in dictionaries of type `Dictionary<string, Object>`, it:
 
-* "Guesses" the type of "primitive" values in the JSON and stores `string`/`long`/`double`/`boolean` as a boxed object.
+* "Guesses" the type of "primitive" values in the JSON and stores `string`/`long`/`double`/`boolean`/`DateTime` as a boxed object.
 * Stores "complex" values as `JObject`.
 * Stores `null` when the payload has "null".
 
@@ -244,6 +245,10 @@ Workarounds may be possible for some of the following scenarios, but they would 
 * <xref:System.TimeSpan>
 * <xref:System.DBNull>
 
+Custom converters for some of these types would not necessarily be complex. Here's an example of a `DBNull` converter that just converts `DBNull` to `null`:
+
+[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/DBNullConverter.cs)]
+
 ### Fields
 
 `Newtonsoft.Json` can serialize and deserialize fields as well as properties. `System.Text.Json` only works with properties.
@@ -283,7 +288,7 @@ The `Newtonsoft.Json` `JsonConvert.PopulateObject` method deserializes a JSON do
 
 ### Reuse rather than replace properties
 
-The `Newtonsoft.Json` `ObjetCreationHandling` setting lets you specify that objects in properties should be reused rather than replaced during deserialization. `System.Text.Json` always replaces objects in properties.
+The `Newtonsoft.Json` `ObjectCreationHandling` setting lets you specify that objects in properties should be reused rather than replaced during deserialization. `System.Text.Json` always replaces objects in properties.
 
 ### Add to collections without setters
 
@@ -325,17 +330,19 @@ Searches that use `Newtonsoft.Json` `JObject` or `JArray` tend to be relatively 
 
 For a code example, see [Use JsonDocument for access to data](system-text-json-how-to.md#use-jsondocument-for-access-to-data).
 
-## Utf8JsonReader and Utf8JsonWriter
+## Utf8JsonReader
 
 <xref:System.Text.Json.Utf8JsonReader?displayProperty=fullName> is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text, read from a `ReadOnlySpan<byte>`. The `Utf8JsonReader` is a low-level type that can be used to build custom parsers and deserializers.
 
-<xref:System.Text.Json.Utf8JsonWriter?displayProperty=fullName> is a high-performance way to write UTF-8 encoded JSON text from common .NET types like `String`, `Int32`, and `DateTime`. The writer is a low-level type that can be used to build custom serializers.
+The following sections explain recommended programming patterns for using `Utf8JsonReader`.
 
-The following sections explain recommended programming patterns for using `Utf8JsonReader` and `Utf8JsonWriter`.
+### Ref struct
 
-### Ref structs
+The `Utf8JsonReader` type is a *ref struct*, which means it has certain limitations. For example, it can't be stored as a field on a class or struct other than a ref struct. To achieve high performance, this type must be a `ref struct` since it needs to cache the input `Span<byte>`, which itself is a ref struct. In addition, this type is mutable since it holds state. Therefore, you should **pass it by ref** rather than by value. Passing it by value would result in a struct copy and the state changes would not be visible to the caller. This differs from `Newtonsoft.Json` since the `Newtonsoft.Json` `JsonTextReader` is a class. For more information about how to use ref structs, see [Write safe and efficient C# code](../../csharp/write-safe-efficient-code.md).
 
-The `Utf8JsonReader` and `Utf8JsonWriter` types are *ref structs*, which means they have certain limitations. For example, they can't be stored as a field on a class or struct other than a ref struct. To achieve high performance, these types must be `ref structs` since they need to cache the input or output `Span<byte>`, which itself is a ref struct. In addition, these types are mutable since they hold state. Therefore, you should **pass them by ref** rather than by value. Passing them by value would result in a struct copy and the state changes would not be visible to the caller. This differs from `Newtonsoft.Json` since the `Newtonsoft.Json` `JsonTextReader` and `JsonTextWriter` are classes. For more information about how to use ref structs, see [Write safe and efficient C# code](../../csharp/write-safe-efficient-code.md).
+### Read and write with UTF-8 text
+
+To achieve the best possible performance while using the `Utf8JsonReader`, read JSON payloads already encoded as UTF-8 text rather than as UTF-16 strings. For a code example, see [Filter data using Utf8JsonReader](system-text-json-how-to.md#filter-data-using-utf8jsonreader).
 
 ### Read with a Stream or PipeReader
 
@@ -359,20 +366,7 @@ while (reader.Read())
 }
 ```
 
-### WRiteRawValue
-
-The `Newtonsoft.Json` `WriteRawValue` method writes raw JSON where a value is expected. `System.Text.Json` has no direct equivalent, but here's a workaround:
-
-```csharp
-using JsonDocument doc = JsonDocument.Parse(string);
-doc.WriteTo(writer);
-```
-
-### Read and write with UTF-8 text
-
-To achieve the best possible performance while using the `Utf8JsonReader` and `Utf8JsonWriter`, read and write JSON payloads already encoded as UTF-8 text rather than as UTF-16 strings. For example, if you're writing string literals, consider caching them as static byte arrays, and write those instead. For a code example, see [Filter data using Utf8JsonReader](system-text-json-how-to.md#filter-data-using-utf8jsonreader).
-
-### Read and write null values
+### Read null values
 
 Code that uses the `Newtonsoft.Json` reader can compare a value token type of String to null, as in the following example:
 
@@ -411,6 +405,34 @@ public static string ReadAsString(this ref Utf8JsonReader reader)
 }
 ```
 
+### Multi-targeting
+
+If you need to continue to use `Newtonsoft.Json` for certain target frameworks, you can multi-target and have two implementations. However, this is not trivial and would require some `#ifdefs` and source duplication. One way to share as much code as possible is to create a `ref struct` wrapper around `Utf8JsonReader` and `Newtonsoft.Json` `JsonTextReader`. This wrapper would unify the public surface area while isolating the behavioral differences. This lets you isolate the changes mainly to the construction of the type, along with passing the new type around by reference. This is the pattern that the [.NET Core installer](https://github.com/dotnet/runtime/tree/master/src/installer) follows:
+
+* [UnifiedJsonReader.JsonTextReader.cs](https://github.com/dotnet/runtime/blob/35fe82c2e90fa345d0b6ad243c14da193fb123fd/src/installer/managed/Microsoft.Extensions.DependencyModel/UnifiedJsonReader.JsonTextReader.cs)
+* [UnifiedJsonReader.Utf8JsonReader.cs](https://github.com/dotnet/runtime/blob/35fe82c2e90fa345d0b6ad243c14da193fb123fd/src/installer/managed/Microsoft.Extensions.DependencyModel/UnifiedJsonReader.Utf8JsonReader.cs)
+
+## Utf8JsonWriter
+
+<xref:System.Text.Json.Utf8JsonWriter?displayProperty=fullName> is a high-performance way to write UTF-8 encoded JSON text from common .NET types like `String`, `Int32`, and `DateTime`. The writer is a low-level type that can be used to build custom serializers.
+
+The following sections explain recommended programming patterns for using `Utf8JsonWriter`.
+
+### Write with UTF-8 text
+
+To achieve the best possible performance while using the `Utf8JsonWriter`, write JSON payloads already encoded as UTF-8 text rather than as UTF-16 strings. For example, if you're writing string literals, consider caching them as static byte arrays, and write those instead.
+
+### WriteRawValue
+
+The `Newtonsoft.Json` `WriteRawValue` method writes raw JSON where a value is expected. `System.Text.Json` has no direct equivalent, but here's a workaround:
+
+```csharp
+using JsonDocument doc = JsonDocument.Parse(string);
+doc.WriteTo(writer);
+```
+
+### Write null values
+
 To write null values by using `Utf8JsonWriter`, call:
 
 * <xref:System.Text.Json.Utf8JsonWriter.WriteNull%2A> to write a key-value pair with null as the value.
@@ -420,14 +442,12 @@ For a string property, if the string is null, <xref:System.Text.Json.Utf8JsonWri
 
 ### Multi-targeting
 
-If you need to continue to use `Newtonsoft.Json` for certain target frameworks, you can multi-target and have two implementations. However, this is not trivial and would require some `#ifdefs` and source duplication. One way to share as much code as possible is to create a `ref struct` wrapper around `Utf8JsonReader` and `Newtonsoft.Json` `JsonTextReader`, and a wrapper around `Utf8JsonWriter` and `JsonTextWriter`. This wrapper would unify the public surface area while isolating the behavioral differences. This lets you isolate the changes mainly to the construction of the type, along with passing the new type around by reference. This is the pattern that the [.NET Core installer](https://github.com/dotnet/runtime/tree/master/src/installer) follows:
+If you need to continue to use `Newtonsoft.Json` for certain target frameworks, you can multi-target and have two implementations. However, this is not trivial and would require some `#ifdefs` and source duplication. One way to share as much code as possible is to create a wrapper around `Utf8JsonWriter` and `Newtonsoft` `JsonTextWriter`. This wrapper would unify the public surface area while isolating the behavioral differences. This lets you isolate the changes mainly to the construction of the type. This is the pattern that the [.NET Core installer](https://github.com/dotnet/runtime/tree/master/src/installer) follows:
 
-* [UnifiedJsonReader.JsonTextReader.cs](https://github.com/dotnet/runtime/blob/35fe82c2e90fa345d0b6ad243c14da193fb123fd/src/installer/managed/Microsoft.Extensions.DependencyModel/UnifiedJsonReader.JsonTextReader.cs)
-* [UnifiedJsonReader.Utf8JsonReader.cs](https://github.com/dotnet/runtime/blob/35fe82c2e90fa345d0b6ad243c14da193fb123fd/src/installer/managed/Microsoft.Extensions.DependencyModel/UnifiedJsonReader.Utf8JsonReader.cs)
 * [UnifiedJsonWriter.JsonTextWriter.cs](https://github.com/dotnet/runtime/blob/35fe82c2e90fa345d0b6ad243c14da193fb123fd/src/installer/managed/Microsoft.Extensions.DependencyModel/UnifiedJsonWriter.JsonTextWriter.cs)
 * [UnifiedJsonWriter.Utf8JsonWriter.cs](https://github.com/dotnet/runtime/blob/35fe82c2e90fa345d0b6ad243c14da193fb123fd/src/installer/managed/Microsoft.Extensions.DependencyModel/UnifiedJsonWriter.Utf8JsonWriter.cs)
 
-### Additional resources
+## Additional resources
 
 * <!-- [System.Text.Json roadmap](https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/roadmap/README.md)[Restore this when the roadmap is updated.]-->
 * [System.Text.Json overview](system-text-json-overview.md)

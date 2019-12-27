@@ -3,7 +3,7 @@ title: "Creating a Long-running Workflow Service"
 ms.date: "03/30/2017"
 ms.assetid: 4c39bd04-5b8a-4562-a343-2c63c2821345
 ---
-# Creating a Long-running Workflow Service
+# Create a Long-running Workflow Service
 
 This topic describes how to create a long-running workflow service. Long running workflow services may run for long periods of time. At some point the workflow may go idle waiting for some additional information. When this occurs the workflow is persisted to a SQL database and is removed from memory. When the additional information becomes available the workflow instance is loaded back into memory and continues executing.  In this scenario you are implementing a very simplified ordering system.  The client sends an initial message to the workflow service to start the order. It returns an order ID to the client. At this point the workflow service is waiting for another message from the client and goes into the idle state and is persisted to a SQL Server database.  When the client sends the next message to order an item, the workflow service is loaded back into memory and finishes processing the order. In the code sample it returns a string stating the item has been added to the order. The code sample is not meant to be a real world application of the technology, but rather a simple sample that illustrates long running workflow services. This topic assumes you know how to create Visual Studio 2012 projects and solutions.
 
@@ -19,7 +19,7 @@ You must have the following software installed to use this walkthrough:
 
 4. You are familiar with WCF and Visual Studio 2012 and know how to create projects/solutions.
 
-### To Setup the SQL Database
+## Set up the SQL Database
 
 1. In order for workflow service instances to be persisted you must have Microsoft SQL Server installed and you must configure a database to store the persisted workflow instances. Run Microsoft SQL Management Studio by clicking the **Start** button, selecting **All Programs**, **Microsoft SQL Server 2008**, and **Microsoft SQL Management Studio**.
 
@@ -31,7 +31,7 @@ You must have the following software installed to use this walkthrough:
 
 5. Run the SqlWorkflowInstanceStoreLogic.sql script file located in the C:\Windows\Microsoft.NET\Framework\v4.0\SQL\en directory on the SQLPersistenceStore database to set up the needed database logic.
 
-### To Create the Web Hosted Workflow Service
+## Create the Web Hosted Workflow Service
 
 1. Create an empty Visual Studio 2012 solution, name it `OrderProcessing`.
 
@@ -144,7 +144,7 @@ You must have the following software installed to use this walkthrough:
 
 9. Build the solution.
 
-### To Create a Client Application to Call the Workflow Service
+## Create a Client Application to Call the Workflow Service
 
 1. Add a new Console application project called `OrderClient` to the solution.
 

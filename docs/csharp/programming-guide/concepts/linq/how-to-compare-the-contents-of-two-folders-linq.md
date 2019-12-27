@@ -62,7 +62,7 @@ namespace QueryCompareTwoDirs
             // execute until the foreach statement.  
             var queryCommonFiles = list1.Intersect(list2, myFileCompare);  
   
-            if (queryCommonFiles.Count() > 0)  
+            if (queryCommonFiles.Any())  
             {  
                 Console.WriteLine("The following files are in both folders:");  
                 foreach (var v in queryCommonFiles)  

@@ -6,7 +6,6 @@ ms.date: 05/01/2019
 ms.topic: overview
 ms.custom: mvc
 ms.author: nakersha
-author: natke
 #Customer intent: As a developer, I want to use ML.NET CLI to automatically select and train a model.
 ---
 # Automated machine learning with ML.NET

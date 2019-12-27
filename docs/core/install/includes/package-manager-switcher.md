@@ -14,3 +14,5 @@
 > - [OpenSUSE 15 - x64](../linux-package-manager-opensuse15.md)
 > - [SLES 12 - x64](../linux-package-manager-sles12.md)
 > - [SLES 15 - x64](../linux-package-manager-sles15.md)
+
+_Package manager installs are only supported on the **x64** architecture_. Other architectures, such as **ARM**, must [manually install the .NET Core SDK](../sdk.md?pivots=os-linux#download-and-manually-install) or [manually install the .NET Core Runtime](../runtime.md?pivots=os-linux#download-and-manually-install). For more information, see [.NET Core dependencies and requirements](../dependencies.md).

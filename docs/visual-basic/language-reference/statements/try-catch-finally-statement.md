@@ -1,5 +1,5 @@
 ---
-title: "Try...Catch...Finally statement - Visual Basic"
+title: "Try...Catch...Finally statement"
 description: Learn to use exception handling with Visual Basic Try/Catch/Finally statements.
 ms.date: 12/07/2018
 f1_keywords: 

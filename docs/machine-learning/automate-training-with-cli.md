@@ -19,7 +19,7 @@ This process can be automated with the ML.NET CLI, which implements the ML.NET A
 
 ## What is the ML.NET Command-line Interface (CLI)?
 
-You can run the ML.NET CLI on any command-prompt (Windows, Mac, or Linux) for generating good quality ML.NET models and source code based on your training dataset.
+You can run the ML.NET CLI on any command-prompt (Windows, macOS, or Linux) for generating good quality ML.NET models and source code based on your training dataset.
 
 As shown in the figure below, it is simple to generate a high quality ML.NET model (serialized model .zip file) plus the sample C# code to run/score that model. In addition, the C# code to create/train that model is also generated, so that you can research and iterate on the algorithm and settings used for that generated "best model".
 
@@ -72,7 +72,7 @@ The following displays the binary classification ML task metrics list for the to
 
 Accuracy is a popular metric for classification problems, however accuracy is not always the best metric to select the best model from as explained in the references below. There are cases where you need to evaluate the quality of your model with additional metrics.
 
-To explore and understand the metrics that are output by the CLI, see [Metrics for binary classification](resources/metrics.md#metrics-for-binary-classification).
+To explore and understand the metrics that are output by the CLI, see [Evaluation metrics for binary classification](resources/metrics.md#evaluation-metrics-for-binary-classification).
 
 ### Metrics for Multi-class Classification models
 
@@ -80,7 +80,7 @@ The following displays the multi-class classification ML task metrics list for t
 
 ![image](media/automate-training-with-cli/cli-multiclass-classification-metrics.png)
 
-To explore and understand the metrics that are output by the CLI, see [Metrics for multiclass classification](resources/metrics.md#metrics-for-multi-class-classification).
+To explore and understand the metrics that are output by the CLI, see [Evaluation metrics for multiclass classification](resources/metrics.md#evaluation-metrics-for-multi-class-classification).
 
 ### Metrics for Regression models
 
@@ -90,7 +90,7 @@ You will see a similar list of metrics for the best top five quality models foun
 
 ![image](media/automate-training-with-cli/cli-regression-metrics.png)
 
-To explore and understand the metrics that are output by the CLI, see [Metrics for regression](resources/metrics.md#metrics-for-regression).
+To explore and understand the metrics that are output by the CLI, see [Evaluation metrics for regression](resources/metrics.md#evaluation-metrics-for-regression-and-recommendation).
 
 ## See also
 

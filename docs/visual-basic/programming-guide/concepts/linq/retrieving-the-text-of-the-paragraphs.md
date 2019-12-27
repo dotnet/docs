@@ -25,7 +25,7 @@ This example builds on the previous example, [Retrieving the Paragraphs and Thei
 Imports <xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">  
   
 Module Module1  
-    ' Following function is required because VB does not support short circuit evaluation  
+    ' Following function is required because Visual Basic does not support short circuit evaluation  
     Private Function GetStyleOfParagraph(ByVal styleNode As XElement, _  
                                          ByVal defaultStyle As String) As String  
         If (styleNode Is Nothing) Then  

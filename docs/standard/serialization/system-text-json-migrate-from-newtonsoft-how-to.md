@@ -73,7 +73,7 @@ During serialization, `Newtonsoft.Json` is relatively permissive about letting c
 
 ## Specify date format
 
-`Newtonsoft.Json` provides a `DateTimeZoneHandling` option that lets you specify the serialization format used for `DateTime` and `DateTimeOffset` properties. In `System.Text.Json`, the only format that has built-in support is ISO 8601-1:2019. To use any other format, create a custom converter. For more information, see [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md) and issue [41456](https://github.com/dotnet/corefx/issues/41456) in the dotnet/corefx GitHub repository.
+`Newtonsoft.Json` provides a `DateTimeZoneHandling` option that lets you specify the serialization format used for `DateTime` and `DateTimeOffset` properties. In `System.Text.Json`, the only format that has built-in support is ISO 8601-1:2019. To use any other format, create a custom converter. For more information, see [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md).
 
 ## Quoted numbers
 
@@ -83,31 +83,23 @@ During serialization, `Newtonsoft.Json` is relatively permissive about letting c
 
 [Register this custom converter](system-text-json-converters-how-to.md#register-a-custom-converter) by using an attribute on individual `long` properties or by adding the converter to the `Converters` collection.
 
-For more information, see issue [39473](https://github.com/dotnet/corefx/issues/39473) in the dotnet/corefx GitHub repository.
-
 ## Deserialize inferred types to Object properties
 
 When deserializing JSON data to a property of type `Object`, `Newtonsoft.Json` infers the type of a property based on the JSON property value. For example, if a JSON property has "2020-01-01T05:40Z", the `Newtonsoft.Json` deserializer infers that it's a `DateTime` unless you specify `DateParseHandling.None`. When `System.Text.Json` deserializes to type `Object`, it always creates a `JsonElement` object. 
 
-To implement type inference for `Object` properties, create a converter like the example in [How to write custom converters](system-text-json-converters-how-to.md#deserialize-inferred-types-to-object-properties). See also issue [38713](https://github.com/dotnet/corefx/issues/38713) in the dotnet/corefx GitHub repository.
+To implement type inference for `Object` properties, create a converter like the example in [How to write custom converters](system-text-json-converters-how-to.md#deserialize-inferred-types-to-object-properties).
 
 ## Dictionary with non-string key
 
 `Newtonsoft.Json` supports collections of type `Dictionary<TKey, TValue>`. The built-in support for dictionary collections in `System.Text.Json` is limited to `Dictionary<string, TValue>`. That is, the key must be a string.
 
-To support a dictionary with an integer or some other type as the key, create a converter like the example in [How to write custom converters](system-text-json-converters-how-to.md#support-dictionary-with-non-string-key). See also issue [40120](https://github.com/dotnet/corefx/issues/40120) in the dotnet/corefx GitHub repository.
+To support a dictionary with an integer or some other type as the key, create a converter like the example in [How to write custom converters](system-text-json-converters-how-to.md#support-dictionary-with-non-string-key).
 
 ## Polymorphic deserialization
 
 `Newtonsoft.Json` provides attributes that specify how to handle polymorphic deserialization scenarios. `System.Text.Json` doesn't provide such attributes. `System.Text.Json` can do [polymorphic serialization](system-text-json-how-to.md#serialize-properties-of-derived-classes) but not polymorphic deserialization or conversion of the same data in both directions.
 
-To support polymorphic deserialization, create a converter like the example in [How to write custom converters](system-text-json-converters-how-to.md#support-polymorphic-deserialization). See also the following issues in the dotnet/corefx GitHub repository:
-
-* [38650](https://github.com/dotnet/corefx/issues/38650) Support polymorphic serialization
-* [39031](https://github.com/dotnet/corefx/issues/39031) Support polymorphic deserialization
-* [41758](https://github.com/dotnet/corefx/issues/41758) System.Text.Json ignores JsonPropertyName on base class
-* [38154](https://github.com/dotnet/corefx/issues/38154) New modifier is not hiding base property
-* [39905](https://github.com/dotnet/corefx/issues/39905) Allow custom converters for base-classes
+To support polymorphic deserialization, create a converter like the example in [How to write custom converters](system-text-json-converters-how-to.md#support-polymorphic-deserialization).
 
 ## Required properties
 
@@ -134,8 +126,6 @@ If you follow this pattern, don't pass in the options object when recursively ca
 
 This is a simplified example. More complex code would be required if you need to handle attributes (such as `[JsonIgnore]`) or options (such as custom encoders).
 
-For more information, see issue [38492](https://github.com/dotnet/corefx/issues/38492) in the dotnet/corefx GitHub repository.
-
 ## Deserialize null to non-nullable type 
 
 `Newtonsoft.Json` doesn't throw an exception in the following scenario:
@@ -153,8 +143,6 @@ Another workaround is to make a converter for the type, such as the following ex
 
 [Register this custom converter](system-text-json-converters-how-to.md#register-a-custom-converter) by using an attribute on the property or by adding the converter to the `Converters` collection.
 
-For more information, see issue [40922](https://github.com/dotnet/corefx/issues/40922) in the dotnet/corefx GitHub repository.
-
 ## Deserialize to immutable classes and structs
 
 `Newtonsoft.Json` can deserialize to immutable classes and structs because it can use constructors that have parameters. `System.Text.Json` supports only parameterless constructors. As a workaround, you can call a constructor with parameters in a custom converter.
@@ -170,8 +158,6 @@ And here's a converter that serializes and deserializes this struct:
 [Register this custom converter](system-text-json-converters-how-to.md#register-a-custom-converter) by adding the converter to the `Converters` collection.
 
 For an example of a similar converter that handles open generic properties, see the [built-in converter for key-value pairs](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/Converters/JsonValueConverterKeyValuePair.cs).
-
-For more information, see issue [38569](https://github.com/dotnet/corefx/issues/38569) in the dotnet/corefx GitHub repository.
 
 ## Specify constructor to use
 
@@ -212,12 +198,6 @@ This approach requires complex code if:
 * The POCO includes complex properties.
 * You need to handle attributes such as `[JsonIgnore]` or options such as custom encoders.
 
-For more information, see the following issues in the dotnet/corefx GitHub repository:
-
-* [42001](https://github.com/dotnet/corefx/issues/42001) Equivalent of DefaultContractResolver
-* [40600](https://github.com/dotnet/corefx/issues/40600) Ignore selected properties when null 
-* [38878](https://github.com/dotnet/corefx/issues/38878) Ignore default values
-
 ## Callbacks
 
 `Newtonsoft.Json` lets you execute custom code at several points in the serialization or deserialization process:
@@ -238,28 +218,26 @@ If you use a custom converter that follows this example:
 * The `OnDeserializing` code doesn't have access to the new POCO instance. To manipulate the new POCO instance at the start of deserialization, put that code in the POCO constructor.
 * Don't pass in the options object when recursively calling `Serialize` or `Deserialize`. The options object contains the `Converters` collection. If you pass it in to `Serialize` or `Deserialize`, the converter will be used, making an infinite loop that results in a stack overflow exception.
 
-For more information, see issue [36639](https://github.com/dotnet/corefx/issues/36639) in the dotnet/corefx GitHub repository.
-
 ## Types without built-in support
 
-`System.Text.Json` doesn't provide built-in support for the following types. The list includes links to the issues that track the request for support:
+`System.Text.Json` doesn't provide built-in support for the following types:
 
-* <xref:System.Data.DataTable> and related types. [38712](https://github.com/dotnet/corefx/issues/38712)
-* F# types, such as [discriminated unions](../../fsharp/language-reference/discriminated-unions.md), [record types](../../fsharp/language-reference/records.md), and [anonymous record types](../../fsharp/language-reference/anonymous-records.md). [38348](https://github.com/dotnet/corefx/issues/38348)
-* Collection types in the <xref:System.Collections.Specialized> namespace. [40370](https://github.com/dotnet/corefx/issues/40370)
-* <xref:System.Dynamic.ExpandoObject>. [38007](https://github.com/dotnet/corefx/issues/38007)
-* <xref:System.TimeZoneInfo>. [41348](https://github.com/dotnet/corefx/issues/41348)
-* <xref:System.Numerics.BigInteger>. [33458](https://github.com/dotnet/corefx/issues/33458)
-* <xref:System.TimeSpan>. [38641](https://github.com/dotnet/corefx/issues/38641)
-* <xref:System.DBNull>. [418](https://github.com/dotnet/runtime/issues/418)
+* <xref:System.Data.DataTable> and related types
+* F# types, such as [discriminated unions](../../fsharp/language-reference/discriminated-unions.md), [record types](../../fsharp/language-reference/records.md), and [anonymous record types](../../fsharp/language-reference/anonymous-records.md).
+* Collection types in the <xref:System.Collections.Specialized> namespace
+* <xref:System.Dynamic.ExpandoObject>
+* <xref:System.TimeZoneInfo>
+* <xref:System.Numerics.BigInteger>
+* <xref:System.TimeSpan>
+* <xref:System.DBNull>
 
 ## Fields
 
-`Newtonsoft.Json` can serialize and deserialize fields as well as properties. `System.Text.Json` only works with properties. For more information, see issue [36505](https://github.com/dotnet/corefx/issues/36505) in the dotnet/corefx GitHub repository.
+`Newtonsoft.Json` can serialize and deserialize fields as well as properties. `System.Text.Json` only works with properties.
 
 ## Private setters
 
-`Newtonsoft.Json` can use private property setters. `System.Text.Json` supports only public setters. For more information, see issue [38163](https://github.com/dotnet/corefx/issues/38163) in the dotnet/corefx GitHub repository.
+`Newtonsoft.Json` can use private property setters. `System.Text.Json` supports only public setters.
 
 ## Preserve object references and handle loops
 
@@ -272,16 +250,11 @@ By default, `Newtonsoft.Json` serializes by value. For example, if an object con
 
 `Newtonsoft.Json` also has a `ReferenceLoopHandling` setting that lets you ignore circular references rather than throw an exception.
 
-`System.Text.Json` supports only serialization by value. For more information, see the following issues in the dotnet/corefx GitHub repository:
-
-* [37786](https://github.com/dotnet/corefx/issues/37786) Support for object references
-* [41002](https://github.com/dotnet/corefx/issues/41002) Circular reference handling
+`System.Text.Json` supports only serialization by value.
 
 ## System.Runtime.Serialization attributes
 
 `System.Text.Json` doesn't support attributes from the `System.Runtime.Serialization` namespace, such as `DataMemberAttribute` and `IgnoreDataMemberAttribute`.
-
-For more information, see issue [38758](https://github.com/dotnet/corefx/issues/38758) in the dotnet/corefx GitHub repository.
 
 ## Octal numbers
 
@@ -289,19 +262,19 @@ For more information, see issue [38758](https://github.com/dotnet/corefx/issues/
 
 ## Type name handling
 
-`Newtonsoft.Json` has a `TypeNameHandling` setting that adds type name metadata to the JSON while serializing, and it uses the metadata while deserializing. `System.Text.Json` lacks this feature. For more information, see issue [39031](https://github.com/dotnet/corefx/issues/39031) in the dotnet/corefx GitHub repository.
+`Newtonsoft.Json` has a `TypeNameHandling` setting that adds type name metadata to the JSON while serializing, and it uses the metadata while deserializing. `System.Text.Json` lacks this feature.
 
 ## Populate existing objects
 
-The `Newtonsoft.Json` `JsonConvert.PopulateObject` method deserializes a JSON document to an existing instance of a class, instead of creating a new instance. `System.Text.Json` always creates a new instance of the target type by using the default parameterless constructor. For more information, see issue [37627](https://github.com/dotnet/corefx/issues/37627) in the dotnet/corefx GitHub repository.
+The `Newtonsoft.Json` `JsonConvert.PopulateObject` method deserializes a JSON document to an existing instance of a class, instead of creating a new instance. `System.Text.Json` always creates a new instance of the target type by using the default parameterless constructor.
 
 ## Reuse rather than replace properties
 
-The `Newtonsoft.Json` `ObjetCreationHandling` setting lets you specify that objects in properties should be reused rather than replaced during deserialization. `System.Text.Json` always replaces objects in properties. For more information, see issue [42515](https://github.com/dotnet/corefx/issues/42515) in the dotnet/corefx GitHub repository.
+The `Newtonsoft.Json` `ObjetCreationHandling` setting lets you specify that objects in properties should be reused rather than replaced during deserialization. `System.Text.Json` always replaces objects in properties.
 
 ## Add to collections without setters
 
-During deserialization, `Newtonsoft.Json` adds objects to a collection even if the property has no setter. `System.Text.Json` ignores properties that don't have setters. For more information, see issue [39477](https://github.com/dotnet/corefx/issues/39477) in the dotnet/corefx GitHub repository.
+During deserialization, `Newtonsoft.Json` adds objects to a collection even if the property has no setter. `System.Text.Json` ignores properties that don't have setters.
 
 ## MissingMemberHandling
 
@@ -417,7 +390,7 @@ If you need to continue to use `Newtonsoft.Json` for certain target frameworks, 
 Since the `System.Text.Json` DOM can't add, remove, or modify JSON elements. If your scenario currently uses a writable DOM, one of the following workarounds might be feasible:
 
 * To build a `JsonDocument` from scratch, write JSON text by using the `Utf8JsonWriter` and parse the output from that to make a new `JsonDocument`.
-* To modify an existing `JsonDocument`, use it to write JSON text, making changes while you write, and parse the output from that to make a new `JsonDocument`. For more information, see issue [38589](https://github.com/dotnet/corefx/issues/38589) and issue [39922](https://github.com/dotnet/corefx/issues/39922) in the dotnet/corefx GitHub repository.
+* To modify an existing `JsonDocument`, use it to write JSON text, making changes while you write, and parse the output from that to make a new `JsonDocument`.
 
 ### JsonElement
 

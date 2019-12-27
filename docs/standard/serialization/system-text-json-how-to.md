@@ -106,7 +106,7 @@ Serializing to UTF-8 is about 5-10% faster than using the string-based methods. 
 * The [default encoder](xref:System.Text.Encodings.Web.JavaScriptEncoder.Default) escapes non-ASCII characters, HTML-sensitive characters within the ASCII-range, and characters that must be escaped according to [the RFC 8259 JSON spec](https://tools.ietf.org/html/rfc8259#section-7).
 * By default, JSON is minified. You can [pretty-print the JSON](#serialize-to-formatted-json).
 * By default, casing of JSON names matches the .NET names. You can [customize JSON name casing](#customize-json-names-and-values).
-* Circular references are detected and exceptions thrown. For more information, see [issue 38579 on circular references](https://github.com/dotnet/corefx/issues/38579) in the dotnet/corefx repository on GitHub.
+* Circular references are detected and exceptions thrown.on GitHub.
 * Currently, fields are excluded.
 
 Supported types include:
@@ -115,7 +115,7 @@ Supported types include:
 * User-defined [Plain Old CLR Objects (POCOs)](https://stackoverflow.com/questions/250001/poco-definition).
 * One-dimensional and jagged arrays (`ArrayName[][]`).
 * `Dictionary<string,TValue>` where `TValue` is `object`, `JsonElement`, or a POCO.
-* Collections from the following namespaces. For more information, see the [issue on collection support](https://github.com/dotnet/corefx/issues/36643) in the dotnet/corefx repository on GitHub.
+* Collections from the following namespaces.
   * <xref:System.Collections>
   * <xref:System.Collections.Generic>
   * <xref:System.Collections.Immutable>
@@ -151,13 +151,13 @@ To deserialize from UTF-8, call a <xref:System.Text.Json.JsonSerializer.Deserial
 * By default, property name matching is case-sensitive. You can [specify case-insensitivity](#case-insensitive-property-matching).
 * If the JSON contains a value for a read-only property, the value is ignored and no exception is thrown.
 * Deserialization to reference types without a parameterless constructor isn't supported.
-* Deserialization to immutable objects or read-only properties isn't supported. For more information, see GitHub [issue 38569 on immutable object support](https://github.com/dotnet/corefx/issues/38569) and [issue 38163 on read-only property support](https://github.com/dotnet/corefx/issues/38163) in the dotnet/corefx repository on GitHub.
+* Deserialization to immutable objects or read-only properties isn't supported. For more information.
 * By default, enums are supported as numbers. You can [serialize enum names as strings](#enums-as-strings).
 * Fields aren't supported.
 * By default, comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](#allow-comments-and-trailing-commas).
 * The [default maximum depth](xref:System.Text.Json.JsonReaderOptions.MaxDepth) is 64.
 
-You can [implement custom converters](system-text-json-converters-how-to.md) to provide functionality that isn't supported by the built-in converters.
+You can [implement custom converters](system-text-json-converters-how-to.md) to provide functionality that isn't supported by the built-in converters. For more information, see [How to migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md).
 
 ## Serialize to formatted JSON
 
@@ -623,7 +623,7 @@ To change this behavior, set <xref:System.Text.Json.JsonSerializerOptions.Ignore
 
 With this option, the `Summary` property of the `WeatherForecastWithDefault` object is the default value "No summary" after deserialization.
 
-Null values in the JSON are ignored only if they are valid. Null values for non-nullable value types cause exceptions. For more information, see [issue 40922 on non-nullable value types](https://github.com/dotnet/corefx/issues/40922) in the dotnet/corefx repository on GitHub.
+Null values in the JSON are ignored only if they are valid. Null values for non-nullable value types cause exceptions.
 
 ## Utf8JsonReader, Utf8JsonWriter, and JsonDocument
 

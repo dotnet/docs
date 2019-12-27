@@ -280,7 +280,7 @@ The converter can deserialize JSON that was created by using the same converter 
 
 ## Other custom converter samples
 
-The [Migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md) article contains samples of custom converters.
+The [Migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md) article contains additional samples of custom converters.
 
 The [unit tests folder](https://github.com/dotnet/runtime/blob/f77914d4c9045a01b3a91b63c28805f24850c274/src/libraries/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` source code includes other custom converter samples, such as:
 

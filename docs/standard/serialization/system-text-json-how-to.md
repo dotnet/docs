@@ -151,7 +151,7 @@ To deserialize from UTF-8, call a <xref:System.Text.Json.JsonSerializer.Deserial
 * By default, property name matching is case-sensitive. You can [specify case-insensitivity](#case-insensitive-property-matching).
 * If the JSON contains a value for a read-only property, the value is ignored and no exception is thrown.
 * Deserialization to reference types without a parameterless constructor isn't supported.
-* Deserialization to immutable objects or read-only properties isn't supported. For more information.
+* Deserialization to immutable objects or read-only properties isn't supported.
 * By default, enums are supported as numbers. You can [serialize enum names as strings](#enums-as-strings).
 * Fields aren't supported.
 * By default, comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](#allow-comments-and-trailing-commas).

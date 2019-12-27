@@ -32,7 +32,7 @@ This topic contains the following sections:
 
 ## The deployment process
 
-When you have the supporting infrastructure in place, you use Configuration Manager 2012 to deploy the .NET Framework redistributable package to computers on the network. Building the infrastructure involves creating and defining five primary areas: collections, a package and program for the software, distribution points, and deployments.
+When you have the supporting infrastructure in place, you use Configuration Manager to deploy the .NET Framework redistributable package to computers on the network. Building the infrastructure involves creating and defining five primary areas: collections, a package and program for the software, distribution points, and deployments.
 
 - **Collections** are groups of Configuration Manager resources, such as users, user groups, or computers, to which the .NET Framework is deployed. For more information, see [Introduction to collections in Configuration Manager](https://docs.microsoft.com/configmgr/core/clients/manage/collections/introduction-to-collections) in the Configuration Manager documentation library.
 
@@ -49,7 +49,7 @@ When you have the supporting infrastructure in place, you use Configuration Mana
 
 ## Deploying the .NET Framework
 
-You can use Configuration Manager 2012 to deploy a silent installation of the .NET Framework 4.5, where the users do not interact with the installation process. Follow these steps:
+You can use Configuration Manager to deploy a silent installation of the .NET Framework 4.5, where the users do not interact with the installation process. Follow these steps:
 
 1. [Create a collection](#creating_a_collection).
 

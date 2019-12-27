@@ -16,7 +16,7 @@ This section of the .NET Framework documentation provides information for develo
  Explains how developers can install .NET Framework on their users' computers with their applications.  
   
  [Deployment Guide for Administrators](guide-for-administrators.md)  
- Explains how a system administrator can deploy the .NET Framework and its system dependencies across a network by using Configuration Manager.  
+ Explains how a system administrator can deploy the .NET Framework and its system dependencies across a network by using Microsoft Endpoint Configuration Manager.  
   
  [Reducing System Restarts During .NET Framework 4.5 Installations](reducing-system-restarts.md)  
  Describes the Restart Manager, which prevents reboots whenever possible, and explains how applications that install the .NET Framework can take advantage of it.  

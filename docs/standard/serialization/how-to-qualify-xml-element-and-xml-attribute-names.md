@@ -75,7 +75,7 @@ End Module
 Public Class Books
     <XmlElement([Namespace] := "http://www.cohowinery.com")> _
     Public Book As Book
-End Class 'Books
+End Class
 
 <XmlType([Namespace] := "http://www.cpandl.com")> _
 Public Class Book
@@ -125,7 +125,7 @@ public class Program
         myPrice.price = (decimal) 9.95;
         myPrice.currency = "US Dollar";
         myBook.PRICE = myPrice;
-        Books myBooks = new Books();
+        var myBooks = new Books();
         myBooks.Book = myBook;
         mySerializer.Serialize(myWriter, myBooks, myNamespaces);
         myWriter.Close();

@@ -40,7 +40,6 @@ The following example creates an `XmlSerializerNamespaces`, and adds two prefix 
 Option Explicit
 Option Strict
 
-Imports System
 Imports System.IO
 Imports System.Xml
 Imports System.Xml.Serialization
@@ -84,7 +83,6 @@ End Class 'Books
 
 <XmlType([Namespace] := "http://www.cpandl.com")> _
 Public Class Book
-
     <XmlElement([Namespace] := "http://www.cpandl.com")> _
     Public TITLE As String
     <XmlElement([Namespace] := "http://www.cohowinery.com")> _
@@ -94,8 +92,8 @@ End Class
 Public Class Price
     <XmlAttribute([Namespace] := "http://www.cpandl.com")> _
     Public currency As String
-    Public <XmlElement([Namespace] := "http://www.cohowinery.com")> _
-        price As Decimal
+    <XmlElement([Namespace] := "http://www.cohowinery.com")> _
+    Public price As Decimal
 End Class
 ```
 

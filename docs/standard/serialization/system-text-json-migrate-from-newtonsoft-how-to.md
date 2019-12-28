@@ -245,10 +245,6 @@ Workarounds may be possible for some of the following scenarios, but they would 
 * <xref:System.TimeSpan>
 * <xref:System.DBNull>
 
-Custom converters for some of these types would not necessarily be complex. Here's an example of a `DBNull` converter that just converts `DBNull` to `null`:
-
-[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/DBNullConverter.cs)]
-
 ### Fields
 
 `Newtonsoft.Json` can serialize and deserialize fields as well as properties. `System.Text.Json` only works with properties.

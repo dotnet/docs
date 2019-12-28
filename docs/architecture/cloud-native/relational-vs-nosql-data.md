@@ -40,11 +40,11 @@ The theorem states that distributed data systems will offer a trade-off between 
 
 - *Partition Tolerance.* Guarantees the system will continue to operate even if a replicated data node fails or loses connectivity with other replicated data nodes.
 
-Relational databases typically provide consistency and availability, but not partition tolerance. They're typically provisioned to a single server and scale vertically by adding more resources to the machine. 
+Relational databases typically provide consistency and availability, but not partition tolerance. They're typically provisioned to a single server and scale vertically by adding more resources to the machine.
 
-Many relational database systems support built-in replication features where copies of the primary database can be made to other secondary server instances. Write operations are made to the primary instance and replicated to each of the secondaries. Upon a failure, the primary instance can fail over to a secondary to provide high availability. Secondaries can also be used to distribute read operations. While writes operations always go against the primary replica, read operations can be routed to any of the secondaries to reduce system load.    
+Many relational database systems support built-in replication features where copies of the primary database can be made to other secondary server instances. Write operations are made to the primary instance and replicated to each of the secondaries. Upon a failure, the primary instance can fail over to a secondary to provide high availability. Secondaries can also be used to distribute read operations. While writes operations always go against the primary replica, read operations can be routed to any of the secondaries to reduce system load.
 
-Data can also be horizontally partitioned across multiple nodes, such as with [sharding](https://www.digitalocean.com/community/tutorials/understanding-database-sharding). But, sharding is costly and time consuming to manage. It can end up impacting performance, table joins, and referential integrity.
+Data can also be horizontally partitioned across multiple nodes, such as with [sharding](https://www.digitalocean.com/community/tutorials/understanding-database-sharding). But, sharding dramatically increases operational overhead by spitting data across many pieces that cannot easily communicate. It can be costly and time consuming to manage. It can end up impacting performance, table joins, and referential integrity.
 
 If data replicas were to lose network connectivity in a "highly consistent" relational database cluster, you wouldn't be able to write to the database. The system would reject the write operation as it can't replicate that change to the other data replica. Every data replica has to update before the transaction can complete.
 
@@ -138,15 +138,15 @@ MariaDB has a strong community and is used by many large enterprises. While Orac
 
 ### Azure Database for PostgreSQL
 
-[PostgreSQL](https://www.postgresql.org/) is an open-source relational database with over 30 years of active development. PostgresSQL has a strong reputation for reliability and data integrity. It’s feature rich, SQL compliant, and considered more performant than MySQL for complex queries and workloads with heavy writes. Many large enterprises including Apple, Red Hat, and Fujitsu have built products using PostgreSQL.
+[PostgreSQL](https://www.postgresql.org/) is an open-source relational database with over 30 years of active development. PostgresSQL has a strong reputation for reliability and data integrity. It’s feature rich, SQL compliant, and considered more performant than MySQL, especially for workloads with complex queries and heavy writes. Many large enterprises including Apple, Red Hat, and Fujitsu have built products using PostgreSQL.
 
 [Azure Database for PostgreSQL](https://azure.microsoft.com/services/postgresql/) is a fully managed relational database service, based on the open-source Postgres database engine. The service supports many development platforms, including C++, Java, Python, Node, C\#, and PHP. You can migrate PostgreSQL databases to it using the [command-line interface](https://datamigration.microsoft.com/scenario/postgresql-to-azurepostgresql?step=1) tool or [Azure Data Migration Service](https://azure.microsoft.com/services/database-migration/).
 
-Azure Database for PostgreSQL is available with two deployment options: Single Server and Hyperscale (Citus), available for preview at time of the writing of this book:
+Azure Database for PostgreSQL is available with two deployment options: 
 
-- The [Single Server](https://docs.microsoft.com/azure/postgresql/concepts-servers) deployment option is a central administrative point for multiple databases. It's the same PostgreSQL server engine available for on-premises deployments. With it, you can create a single database per server to consume all resources or create multiple databases to share resources. The pricing is structured per-server based upon cores and storage.
+- The [Single Server](https://docs.microsoft.com/azure/postgresql/concepts-servers) deployment option is a central administrative point for multiple databases to which you can deploy many databases. The pricing is structured per-server based upon cores and storage.
 
-- The [Hyperscale (Citus) option](https://azure.microsoft.com/blog/get-high-performance-scaling-for-your-azure-database-workloads-with-hyperscale/) is powered by [Citus Data](https://www.citusdata.com/) technology. It enables high performance by *horizontally scaling* a single database across hundreds of nodes to deliver blazingly fast performance and scale. This option allows the engine to fit more data in memory, parallelize queries across hundreds of nodes, and index data faster. The Hyperscale feature is compatible with the latest innovations, versions, and tools for PostgreSQL enabling you to leverage your existing PostgreSQL expertise.
+- The [Hyperscale (Citus) option](https://azure.microsoft.com/blog/get-high-performance-scaling-for-your-azure-database-workloads-with-hyperscale/) is powered by [Citus Data](https://www.citusdata.com/) technology. It enables high performance by *horizontally scaling* a single database across hundreds of nodes to deliver fast performance and scale. This option allows the engine to fit more data in memory, parallelize queries across hundreds of nodes, and index data faster. 
 
 ## NoSQL data in Azure
 
@@ -162,11 +162,11 @@ The previous figure presents many of the built-in cloud-native capabilities avai
 
 Cloud-native applications often have a global audience and require global scale.
 
-You can globally distribute Cosmos databases across regions and around the world, placing data close to your users, improving response time and reducing latency. You can add or remove a database from a region without pausing or redeploying your services. In the background, Cosmos DB transparently replicates the data to all of the configured regions.
+You can distribute Cosmos databases across regions or around the world, placing data close to your users, improving response time and reducing latency. You can add or remove a database from a region without pausing or redeploying your services. In the background, Cosmos DB transparently replicates the data to each of the configured regions.
 
-Cosmos DB supports [active/active](https://kemptechnologies.com/white-papers/unfog-confusion-active-passive-activeactive-load-balancing/) clustering at the global level, enabling you to configure any or all your database regions to support both writes and reads.
+Cosmos DB supports [active/active](https://kemptechnologies.com/white-papers/unfog-confusion-active-passive-activeactive-load-balancing/) clustering at the global level, enabling you to configure any of your database regions to support *both writes and reads*.
 
-The [Multi-Master](https://docs.microsoft.com/azure/cosmos-db/how-to-multi-master) protocol is an important feature in Cosmos DB that enables the following functionality:
+The [Multi-Master](https://docs.microsoft.com/azure/cosmos-db/multi-master-benefits) protocol is an important feature in Cosmos DB that enables the following functionality:
 
 - Unlimited elastic write and read scalability.
 
@@ -178,17 +178,15 @@ With the Cosmos DB [Multi-Homing APIs](https://docs.microsoft.com/azure/cosmos-d
 
 ### Multi-Model Support
 
-When replatforming monolithic applications to a cloud-native architecture, development teams often have a need to migrate different kinds of open-source, NoSQL data stores.
-
-Cosmos DB enables you to preserve your investment in these NoSQL datastores with its *multi-model* data platform. Figure 5-13 shows the supported NoSQL [compatibility APIs](https://www.wikiwand.com/en/Cosmos_DB).
+When replatforming monolithic applications to a cloud-native architecture, development teams sometimes have to migrate open-source, NoSQL data stores. Cosmos DB can help you preserve your investment in these NoSQL datastores with its *multi-model* data platform. Figure 5-13 shows the supported NoSQL [compatibility APIs](https://www.wikiwand.com/en/Cosmos_DB).
 
 ![Cosmos DB providers](./media/cosmos-db-providers.png)
 
 **Figure 5-13**: Cosmos DB providers
 
-> Internally, Cosmos stores the data in a simple [struct](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/using-structs) format made up of primitive data types. For each request, the database engine translates the primitive data into the model representation you've selected.
+Development teams can migrate existing Mongo, Gremlin, or Cassandra databases into Cosmos DB with minimal changes to data or code. For new apps, development teams can choose among open-source options or the built-in SQL API model.
 
- Development teams can migrate existing Mongo, Gremlin, or Cassandra databases into Cosmos DB with minimal changes to data or code. For new apps, development teams can choose among open-source options or the built-in SQL API model.
+> Internally, Cosmos stores the data in a simple [struct](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/using-structs) format made up of primitive data types. For each request, the database engine translates the primitive data into the model representation you've selected.
 
 Note in Figure 5-13 how Cosmos DB supports [Azure Table Storage](https://azure.microsoft.com/services/storage/tables/). Both Cosmos DB and [Azure Table Storage](https://docs.microsoft.com/azure/cosmos-db/table-storage-overview) share the same underlying table model and expose many of the same table operations. However, the [Cosmos DB Table API](https://docs.microsoft.com/azure/cosmos-db/table-introduction) provides many premium enhancements not available in the Azure Storage API. These features are contrasted in Figure 5-4.
 
@@ -196,11 +194,11 @@ Note in Figure 5-13 how Cosmos DB supports [Azure Table Storage](https://azure.m
 
 **Figure 5-14**: Azure Table API Providers
 
-Applications written for Azure Table storage can migrate to Azure Cosmos DB by using the Table API. No code changes are required.
+Microservices that consume Azure Table storage can migrate to Azure Cosmos DB by using the Table API. No code changes are required.
 
 ### Tunable Consistency
 
-Earlier in the *Relational vs. NoSQL* section, we discussed the subject of *data consistency*. Data consistency refers to the integrity of your data. Cloud-native services with distributed data rely on replication and must make a fundamental tradeoff between read consistency, availability, and latency.
+Earlier in the *Relational vs. NoSQL* section, we discussed the subject of *data consistency*. Data consistency refers to the *integrity* of your data. Cloud-native services with distributed data rely on replication and must make a fundamental tradeoff between read consistency, availability, and latency.
 
 Most distributed databases allow developers to choose between two consistency models: [strong consistency](https://en.wikipedia.org/wiki/Strong_consistency) and [eventual consistency](https://en.wikipedia.org/wiki/Eventual_consistency). *Strong consistency* is the gold standard of data programmability. It guarantees that a query will always return the most current data - even if the system must incur latency waiting for an update to replicate across all database copies. While a database configured for *eventual consistency* will return data immediately, even if that data isn't the most current copy. The latter option enables higher availability, greater scale, and increased performance.
 
@@ -220,37 +218,50 @@ In the article [Getting Behind the 9-Ball: Cosmos DB Consistency Levels Explaine
 
 ### Partitioning
 
-Azure Cosmos DB uses automatic [partitioning](https://docs.microsoft.com/azure/cosmos-db/partitioning-overview) to scale the database to meet the performance needs of your cloud-native service. 
+Azure Cosmos DB embraces automatic [partitioning](https://docs.microsoft.com/azure/cosmos-db/partitioning-overview) to scale a database to meet the performance needs of your cloud-native services.
 
-You manage data in Cosmos DB data by creating [databases, containers, and items](https://docs.microsoft.com/azure/cosmos-db/databases-containers-items), shown in Figure 5-17.
+You manage data in Cosmos DB data by creating [databases, containers, and items](https://docs.microsoft.com/azure/cosmos-db/databases-containers-items).
 
-![Cosmos DB objects](./media/cosmos-db-entities.png)
+Containers live in a database and represent a schema-agnostic grouping of items. Items are the data that you add to the container. They're represented as documents, rows, nodes, or edges. All items added to a container are automatically indexed.
 
-**Figure 5-17**: Hierarchy of Cosmos DB entities
-
-You start by creating a database inside a Cosmos DB database account. That database becomes the unit of management for a set of containers. A container is a schema-agnostic grouping of items expressed as a collection, table, or graph. The items are the data that you add to the container. They're represented as documents, rows, nodes, or edges. All items added to a container are automatically indexed without requiring explicit index or schema management.
-
-To partition the container, items are divided into distinct subsets called [logical partitions](https://docs.microsoft.com/azure/cosmos-db/partition-data). Logical partitions are populated based on the value of a partition key that is associated with each item in a container. Figure 5-18 shows two containers each with a logical partition based on a partition key value.
+To partition the container, items are divided into distinct subsets called [logical partitions](https://docs.microsoft.com/azure/cosmos-db/partition-data). Logical partitions are populated based on the value of a [partition key](https://medium.com/@willvelida/understanding-partitioning-in-azure-cosmos-db-361c4e120852) that is associated with each item in a container. Figure 5-18 shows two containers each with a logical partition based on a partition key value.
 
 ![Cosmos DB partitioning mechanics](./media/cosmos-db-partitioning.png)
 
 **Figure 5-18**: Cosmos DB partitioning mechanics
 
-In previous figure, each item includes a partition key of either ‘city’ or ‘airport’. The key determines the item’s logical partition. Items with a city code are assigned to the container on the left, and items with an airport code, to the container on the right. Combining the partition key value with the ID value creates an item's index, which uniquely identifies the item.
+Note in the  previous figure how each item includes a partition key of either ‘city’ or ‘airport’. The key determines the item’s logical partition. Items with a city code are assigned to the container on the left, and items with an airport code, to the container on the right. Combining the partition key value with the ID value creates an item's index, which uniquely identifies the item.
 
 Internally, Cosmos DB automatically manages the placement of [logical partitions](https://docs.microsoft.com/azure/cosmos-db/partition-data) on [physical partitions](https://docs.microsoft.com/azure/cosmos-db/partition-data) to satisfy the scalability and performance needs of the container. As application throughput and storage requirements  increase, Azure Cosmos DB redistributes logical partitions across a greater number of servers. Redistribution operations are managed by Cosmos DB and invoked without interruption or downtime.
 
 ## NewSQL Databases
 
-*NewSQL* is an emerging database technology that combines the distributed scalability of NoSQL with the ACID guarantees of a relational database. NewSQL databases are important for business systems that must process high-volumes of data, across distributed applications, with full transactional support and ACID compliance. While a NoSQL database can provide massive scalability, it places a burden on the development team. Developers must construct safeguards in their microservice code to manage problems caused by inconsistent data.
+*NewSQL* is an emerging database technology that combines the distributed scalability of NoSQL with the ACID guarantees of a relational database. NewSQL databases are important for business systems that must process high-volumes of data, across distributed applications, with full transactional support and ACID compliance. While a NoSQL database can provide massive scalability, intermittent problems from inconsistent data can places a burden on the development team. Developers must construct safeguards in their microservice code to manage problems caused by inconsistent data.
 
-The [Cloud Native Computing Foundation](https://www.cncf.io/) (CNCF) features several NewSQL database projects. Figure 5-19 shows four of the leading projects.
+The [Cloud Native Computing Foundation](https://www.cncf.io/) (CNCF) features several NewSQL database projects, shown in Figure 5-19.
 
 ![CNCF databases](./media/cncf-databases.png)
 
 **Figure 5-19**. Cloud-native databases
 
-The open-source projects in the previous figure are available from the Cloud Native Computing Foundation. Three of the offerings are full database products, which include .NET Core support. The other is a database clustering system that horizontally scales large clusters of MySQL instances. All four are built to run on commodity hardware and provide native Kubernetes support. None of them are available as managed backing services. Implementation would involve running them in an Azure virtual machine or Kubernetes cluster.  
+The open-source projects in the previous figure are available from the Cloud Native Computing Foundation. Three of the offerings are full database products, which include .NET Core support. The other is a database clustering system that horizontally scales large clusters of MySQL instances. All four are built to provide native Kuberetes support on run on commodity hardware.
+
+The goal of NewSQL databases are to run natively in a Kubernetes cluster. There, they can take full advantage of the platforms's resiliency and scalability capabilities. NewSQL databases are designed to thrive in ephemeral cloud environments where virtual machines could be restarted or rescheduled at a moment’s notice. Databases with this factor should be able to survive node failures with no data loss and no downtime. For example, CockroachDB is able to survive machine loss by maintaining three consistent replicas of any piece of data among the nodes in a cluster.
+
+Kubernetes uses Services to allow clients to address a group of identical processes as a whole through a convenient DNS entry. By decoupling the pod from the address of the service with which it is associated, we can scale without disrupting existing application instances. Sending a request to any service at a given time will always yield the same result.
+
+In the NewSQL world, techniques like consensus replication allow databases any CockroachDB node to handle any request. If the node that receives a load-balanced request happens to have the data it needs locally, it will respond immediately. If not, rather than sending an error back to the client (or providing a stale result), that node will become a gateway and will forward the request to the appropriate nodes behind the scenes to get the correct answer. From the requester’s point of view, every node is exactly the same. When you combine database API symmetry with Kubernetes Service objects, you can create what is effectively a single logical database with the consistency guarantees of a single-machine system, despite there actually being dozens or even hundreds of nodes working behind the scenes.
+
+
+ Databases with this factor should be able to survive node failures with no data loss and no downtime. 
+
+
+
+They work natively with Kubernetes bringing end-to-end cloud-native stacks within reach of IT teams.
+
+NewSQL databases exhibit disposability. They can handle processes stopping, starting, or crashing. When a disruption occurs, Kubernetes will reschedule pods on a different node.
+
+ . None of them are available as managed backing services. Implementation would involve running them in an Azure virtual machine or Kubernetes cluster.  
 
 ## Data migration to the cloud
 

@@ -252,16 +252,11 @@ Kubernetes uses Services to allow clients to address a group of identical proces
 
 In the NewSQL world, techniques like consensus replication allow databases any CockroachDB node to handle any request. If the node that receives a load-balanced request happens to have the data it needs locally, it will respond immediately. If not, rather than sending an error back to the client (or providing a stale result), that node will become a gateway and will forward the request to the appropriate nodes behind the scenes to get the correct answer. From the requester’s point of view, every node is exactly the same. When you combine database API symmetry with Kubernetes Service objects, you can create what is effectively a single logical database with the consistency guarantees of a single-machine system, despite there actually being dozens or even hundreds of nodes working behind the scenes.
 
-
- Databases with this factor should be able to survive node failures with no data loss and no downtime. 
-
-
-
-They work natively with Kubernetes bringing end-to-end cloud-native stacks within reach of IT teams.
-
-NewSQL databases exhibit disposability. They can handle processes stopping, starting, or crashing. When a disruption occurs, Kubernetes will reschedule pods on a different node.
-
- . None of them are available as managed backing services. Implementation would involve running them in an Azure virtual machine or Kubernetes cluster.  
+> Extra stuff:
+> Databases with this factor should be able to survive node failures with no data loss and no downtime. 
+> They work natively with Kubernetes bringing end-to-end cloud-native stacks within reach of IT teams.
+> NewSQL databases exhibit disposability. They can handle processes stopping, starting, or crashing. When a disruption occurs, Kubernetes will reschedule pods on a different node.
+>. None of them are available as managed backing services. Implementation would involve running them in an Azure virtual machine or Kubernetes cluster.  
 
 ## Data migration to the cloud
 

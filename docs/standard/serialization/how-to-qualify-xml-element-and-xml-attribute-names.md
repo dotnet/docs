@@ -49,7 +49,7 @@ Public Class Run
     Public Shared Sub Main()
         Dim test As New Run()
         test.SerializeObject("XmlNamespaces.xml")
-    End Sub 'Main
+    End Sub
 
     Public Sub SerializeObject(filename As String)
         Dim mySerializer As New XmlSerializer(GetType(Books))

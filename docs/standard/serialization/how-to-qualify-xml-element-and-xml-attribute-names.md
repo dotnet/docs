@@ -44,11 +44,10 @@ Imports System.IO
 Imports System.Xml
 Imports System.Xml.Serialization
 
-Public Class Run
+Public Module Program
 
-    Public Shared Sub Main()
-        Dim test As New Run()
-        test.SerializeObject("XmlNamespaces.xml")
+    Public Sub Main()
+        SerializeObject("XmlNamespaces.xml")
     End Sub
 
     Public Sub SerializeObject(filename As String)
@@ -74,7 +73,7 @@ Public Class Run
         mySerializer.Serialize(myWriter, myBooks, myNamespaces)
         myWriter.Close()
     End Sub
-End Class
+End Module
 
 Public Class Books
     <XmlElement([Namespace] := "http://www.cohowinery.com")> _
@@ -103,15 +102,14 @@ using System.IO;
 using System.Xml;
 using System.Xml.Serialization;
 
-public class Run
+public class Program
 {
     public static void Main()
     {
-        var test = new Run();
-        test.SerializeObject("XmlNamespaces.xml");
+        SerializeObject("XmlNamespaces.xml");
     }
     
-    public void SerializeObject(string filename)
+    public static void SerializeObject(string filename)
     {
         var mySerializer = new XmlSerializer(typeof(Books));
         // Writing a file requires a TextWriter.

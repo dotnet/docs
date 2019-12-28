@@ -36,17 +36,8 @@ By creating an instance of `XmlSerializerNamespaces` and adding the namespace pa
 
 The following example creates an `XmlSerializerNamespaces`, and adds two prefix and namespace pairs to the object. The code creates an `XmlSerializer` that is used to serialize an instance of the `Books` class. The code calls the `Serialize` method with the `XmlSerializerNamespaces`, allowing the XML to contain prefixed namespaces.
 
-<!-- TODO: THE FOLLOWING VB SNIPPET ISN'T CORRECT!! -->
 ```vb
 Option Explicit
-public class Price
-{
-    [XmlAttribute(Namespace = "http://www.cpandl.com")]
-    public string currency;
-    [XmlElement(Namespace = "http://www.cohowinery.com")]
-    public decimal price;
-}
-
 Option Strict
 
 Imports System
@@ -121,6 +112,7 @@ public class Run
         Run test = new Run();
         test.SerializeObject("XmlNamespaces.xml");
     }
+    
     public void SerializeObject(string filename)
     {
         XmlSerializer mySerializer = new XmlSerializer(typeof(Books));
@@ -161,6 +153,14 @@ public class Book
     public string TITLE;
     [XmlElement(Namespace ="http://www.cohowinery.com")]
     public Price PRICE;
+}
+
+public class Price
+{
+    [XmlAttribute(Namespace = "http://www.cpandl.com")]
+    public string currency;
+    [XmlElement(Namespace = "http://www.cohowinery.com")]
+    public decimal price;
 }
 ```
 

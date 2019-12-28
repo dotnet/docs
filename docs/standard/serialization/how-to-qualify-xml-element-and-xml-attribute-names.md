@@ -109,33 +109,32 @@ public class Run
 {
     public static void Main()
     {
-        Run test = new Run();
+        var test = new Run();
         test.SerializeObject("XmlNamespaces.xml");
     }
     
     public void SerializeObject(string filename)
     {
-        XmlSerializer mySerializer = new XmlSerializer(typeof(Books));
+        var mySerializer = new XmlSerializer(typeof(Books));
         // Writing a file requires a TextWriter.
         TextWriter myWriter = new StreamWriter(filename);
 
         // Creates an XmlSerializerNamespaces and adds two
         // prefix-namespace pairs.
-        XmlSerializerNamespaces myNamespaces =
-        new XmlSerializerNamespaces();
+        var myNamespaces = new XmlSerializerNamespaces();
         myNamespaces.Add("books", "http://www.cpandl.com");
         myNamespaces.Add("money", "http://www.cohowinery.com");
 
         // Creates a Book.
-        Book myBook = new Book();
+        var myBook = new Book();
         myBook.TITLE = "A Book Title";
-        Price myPrice = new Price();
+        var myPrice = new Price();
         myPrice.price = (decimal) 9.95;
         myPrice.currency = "US Dollar";
         myBook.PRICE = myPrice;
         Books myBooks = new Books();
         myBooks.Book = myBook;
-        mySerializer.Serialize(myWriter,myBooks,myNamespaces);
+        mySerializer.Serialize(myWriter, myBooks, myNamespaces);
         myWriter.Close();
     }
 }

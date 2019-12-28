@@ -18,7 +18,6 @@ This article organizes the affected API members by namespace.
 | - | - |
 | <xref:System.AppDomain.CreateDomain%2A?displayProperty=nameWithType> | All |
 | <xref:System.AppDomain.ExecuteAssembly(System.String,System.String[],System.Byte[],System.Configuration.Assemblies.AssemblyHashAlgorithm)?displayProperty=nameWithType> | All |
-|
 | <xref:System.Console.CapsLock?displayProperty=nameWithType> | Unix |
 | <xref:System.Console.NumberLock?displayProperty=nameWithType> | Unix |
 | <xref:System.Delegate.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
@@ -48,7 +47,6 @@ This article organizes the affected API members by namespace.
 
 | Member | Platform |
 | - | - |
-| 
 | <xref:System.Configuration.RsaProtectedConfigurationProvider?displayProperty=nameWithType> (all members) | All |
 
 ## System.Console
@@ -73,7 +71,7 @@ This article organizes the affected API members by namespace.
 
 | Member | Platform |
 | - | - |
-| <xref:System.Data.Common.DbDataReader.GetSchemaTable%2A?displayProperty=nameWithType> | All (throws a <xref:System.NotSupportedException>) |
+| <xref:System.Data.Common.DbDataReader.GetSchemaTable%2A?displayProperty=nameWithType> (throws <xref:System.NotSupportedException>) | All |
 
 ## System.Diagnostics.Process
 
@@ -98,7 +96,7 @@ This article organizes the affected API members by namespace.
 | Member | Platform |
 | - | - |
 | <xref:System.IO.FileSystemInfo.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
-| <xref:System.IO.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
+| <xref:System.IO.FileSystemInfo.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
 
 ## System.IO.IsolatedStorage
 
@@ -161,7 +159,6 @@ This article organizes the affected API members by namespace.
 
 | Member | Platform |
 | - | - |
-|
 | <xref:System.Net.Sockets.Socket.DuplicateAndClose(System.Int32)?displayProperty=nameWithType> | All |
 
 ## System.Net.WebSockets
@@ -240,8 +237,7 @@ This article organizes the affected API members by namespace.
 | Member | Platform |
 | - | - |
 | <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create(System.String)?displayProperty=nameWithType> | All |
-| <xref:System.Security.Cryptography.CspKeyContainerInfo.%23ctor%2A?displayProperty=nameWithType>
-| <xref:System.Security.Cryptography.CspKeyContainerInfo?displayProperty=nameWithType> | non-Windows |
+| <xref:System.Security.Cryptography.CspKeyContainerInfo.%23ctor%2A?displayProperty=nameWithType> | non-Windows |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.Accessible?displayProperty=nameWithType> | non-Windows |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.Exportable?displayProperty=nameWithType> | non-Windows |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.HardwareDevice?displayProperty=nameWithType> | non-Windows |
@@ -260,7 +256,7 @@ This article organizes the affected API members by namespace.
 | <xref:System.Security.Cryptography.HMAC.Create(System.String)?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.HMAC.HashCore%2A?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.HMAC.HashFinal%2A?displayProperty=nameWithType> | All |
-| <xref:System.Security.Cryptography.HMAC.HashName%2A?displayProperty=nameWithType><br/>(except when setting to current value) | All |
+| <xref:System.Security.Cryptography.HMAC.HashName%2A?displayProperty=nameWithType> (except when setting to current value) | All |
 | <xref:System.Security.Cryptography.HMAC.Initialize%2A?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.KeyedHashAlgorithm.Create?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.KeyedHashAlgorithm.Create(System.String)?displayProperty=nameWithType> | All |
@@ -335,9 +331,9 @@ This article organizes the affected API members by namespace.
 
 | Member | Platform |
 | - | - |
-| <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A?displayProperty=nameWithType><br/>(if `msxsl:script` is used in the stylesheet) | All |
-| <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=nameWithType><br/>(if `msxsl:script` is used in the stylesheet) | All |
-| <xref:System.Xml.Xsl.XslTransform.Load%2A?displayProperty=nameWithType><br/>(if `msxsl:script` is used in the stylesheet) | All |
+| <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A?displayProperty=nameWithType> (if `msxsl:script` is used in the stylesheet) | All |
+| <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=nameWithType> (if `msxsl:script` is used in the stylesheet) | All |
+| <xref:System.Xml.Xsl.XslTransform.Load%2A?displayProperty=nameWithType> (if `msxsl:script` is used in the stylesheet) | All |
 
 ## See also
 

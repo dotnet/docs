@@ -1,6 +1,6 @@
 ---
-title: "How to: Qualify XML Element and XML Attribute Names"
-ms.date: "03/30/2017"
+title: How to qualify XML element and XML attribute names
+ms.date: 03/30/2017
 dev_langs:
   - "csharp"
   - "vb"
@@ -10,7 +10,7 @@ helpviewer_keywords:
   - "XML namespaces, qualifying elements and names in"
 ms.assetid: 44719f90-7e15-42e8-a9e2-282287e2b5bf
 ---
-# How to: Qualify XML Element and XML Attribute Names
+# How to qualify XML element and XML attribute names
 
 XML namespaces contained by instances of the <xref:System.Xml.Serialization.XmlSerializerNamespaces> class must conform to the World Wide Web Consortium (W3C) specification called [Namespaces in XML](https://www.w3.org/TR/REC-xml-names/).
 

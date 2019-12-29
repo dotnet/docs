@@ -145,7 +145,7 @@ let main argv =
 
 Now you can run your console app from the command line:
 
-```console
+```dotnetcli
 dotnet run apple banana
 ```
 

@@ -1,5 +1,5 @@
 ---
-title: How to deserialize an object
+title: How to deserialize an object using XmlSerializer
 ms.date: 03/30/2017
 dev_langs: 
   - "csharp"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "objects, deserializing steps"
 ms.assetid: 287129c8-035a-4fea-b7b3-4790057ca076
 ---
-# How to deserialize an object
+# How to deserialize an object using XmlSerializer
 
 When you deserialize an object, the transport format determines whether you will create a stream or file object. After the transport format is determined, you can call the <xref:System.Xml.Serialization.XmlSerializer.Serialize%2A> or <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> methods, as required.
 

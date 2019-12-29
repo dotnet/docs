@@ -1,14 +1,14 @@
 ---
-title: "Atomized XName and XNamespace Objects (LINQ to XML)"
+title: Atomized XName and XNamespace objects (LINQ to XML)
 ms.date: 07/20/2015
 ms.assetid: 21ee7585-7df9-40b4-8c76-a12bb5f29bb3
 ---
 
-# Atomized XName and XNamespace Objects (LINQ to XML) (Visual Basic)
+# Atomized XName and XNamespace objects (LINQ to XML) (Visual Basic)
 
 <xref:System.Xml.Linq.XName> and <xref:System.Xml.Linq.XNamespace> objects are *atomized*; that is, if they contain the same qualified name, they refer to the same object. This yields performance benefits for queries: When you compare two atomized names for equality, the underlying intermediate language only has to determine whether the two references point to the same object. The underlying code does not have to do string comparisons, which would be time consuming.
 
-## Atomization Semantics
+## Atomization semantics
 
 Atomization means that if two <xref:System.Xml.Linq.XName> objects have the same local name, and they are in the same namespace, they share the same instance. In the same way, if two <xref:System.Xml.Linq.XNamespace> objects have the same namespace URI, they share the same instance.
 
@@ -53,9 +53,9 @@ The following example passes an <xref:System.Xml.Linq.XName> to the <xref:System
 ```vb
 Dim root As New XElement("Root", New XElement("C1", 1), New XElement("Z1", New XElement("C1", 2), New XElement("C1", 1)))
 
-Dim query = From e In root.Descendants("C1") Where CInt(e) = 1e
+Dim query = From e In root.Descendants("C1") Where CInt(e) = 1
 
-For Each z As var In query
+For Each z In query
     Console.WriteLine(z)
 Next
 ```
@@ -69,4 +69,4 @@ This example produces the following output:
 
 ## See also
 
-- [Performance (LINQ to XML) (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/performance-linq-to-xml.md)
+- [Performance (LINQ to XML) (Visual Basic)](performance-linq-to-xml.md)

@@ -38,7 +38,7 @@ Next, create a *MathService* directory. The following outline shows the director
 Make *MathService* the current directory and run the following command to create the source project:
 
 ```dotnetcli
-dotnet new classlib -lang F#
+dotnet new classlib -lang "F#"
 ```
 
 You create a failing implementation of the math service:
@@ -70,7 +70,7 @@ Next, create the *MathService.Tests* directory. The following outline shows the 
 Make the *MathService.Tests* directory the current directory and create a new project using the following command:
 
 ```dotnetcli
-dotnet new nunit -lang F#
+dotnet new nunit -lang "F#"
 ```
 
 This creates a test project that uses NUnit as the test framework. The generated template configures the test runner in the *MathServiceTests.fsproj*:

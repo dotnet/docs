@@ -25,7 +25,7 @@ Inside the solution directory, create a *MathService* directory. The directory a
     /MathService
 ```
 
-Make *MathService* the current directory and run [`dotnet new classlib -lang F#`](../tools/dotnet-new.md) to create the source project.  You'll create a failing implementation of the math service:
+Make *MathService* the current directory and run [`dotnet new classlib -lang "F#"`](../tools/dotnet-new.md) to create the source project.  You'll create a failing implementation of the math service:
 
 ```fsharp
 module MyMath =
@@ -48,7 +48,7 @@ Next, create the *MathService.Tests* directory. The following outline shows the 
     /MathService.Tests
 ```
 
-Make the *MathService.Tests* directory the current directory and create a new project using [`dotnet new mstest -lang F#`](../tools/dotnet-new.md). This creates a test project that uses MSTest as the test framework. The generated template configures the test runner in the *MathServiceTests.fsproj*:
+Make the *MathService.Tests* directory the current directory and create a new project using [`dotnet new mstest -lang "F#"`](../tools/dotnet-new.md). This creates a test project that uses MSTest as the test framework. The generated template configures the test runner in the *MathServiceTests.fsproj*:
 
 ```xml
 <ItemGroup>

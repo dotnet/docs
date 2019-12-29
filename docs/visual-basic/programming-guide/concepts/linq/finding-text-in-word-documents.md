@@ -11,15 +11,27 @@ This topic extends the previous queries to do something useful: find all occurre
 
 This example processes a WordprocessingML document, to find all the occurrences of a specific piece of text in the document. To do this, we use a query that finds the string "Hello". This example builds on the previous examples in this tutorial. The new query is called out in comments in the code below.
 
-For instructions for creating the source document for this example, see [Creating the Source Office Open XML Document (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-the-source-office-open-xml-document.md).
+For instructions for creating the source document for this example, see [Creating the Source Office Open XML Document (Visual Basic)](creating-the-source-office-open-xml-document.md).
 
 This example uses classes found in the WindowsBase assembly. It uses types in the <xref:System.IO.Packaging?displayProperty=nameWithType> namespace.
 
+> [!TIP]
+> For .NET Core application, you need to run the following command to add **System.IO.Packaging** NuGet package.
+>
+> ```dotnetcli
+> dotnet add package System.IO.Packaging
+> ```
+
 ```vb
+Imports System.IO
+Imports System.IO.Packaging
+Imports System.Runtime.CompilerServices
+Imports System.Text
+Imports System.Xml
 Imports <xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
 
 Module Module1
-    <System.Runtime.CompilerServices.Extension()> _
+    <Extension()>
     Public Function StringConcatenate(ByVal source As IEnumerable(Of String)) As String
         Dim sb As StringBuilder = New StringBuilder()
         For Each s As String In source
@@ -28,8 +40,8 @@ Module Module1
         Return sb.ToString()
     End Function
 
-    <System.Runtime.CompilerServices.Extension()> _
-    Public Function StringConcatenate(Of T)(ByVal source As IEnumerable(Of T), _
+    <Extension()>
+    Public Function StringConcatenate(Of T)(ByVal source As IEnumerable(Of T),
     ByVal func As Func(Of T, String)) As String
         Dim sb As StringBuilder = New StringBuilder()
         For Each item As T In source
@@ -38,8 +50,8 @@ Module Module1
         Return sb.ToString()
     End Function
 
-    <System.Runtime.CompilerServices.Extension()> _
-    Public Function StringConcatenate(Of T)(ByVal source As IEnumerable(Of T), _
+    <Extension()>
+    Public Function StringConcatenate(Of T)(ByVal source As IEnumerable(Of T),
     ByVal separator As String) As String
         Dim sb As StringBuilder = New StringBuilder()
         For Each s As T In source
@@ -48,8 +60,8 @@ Module Module1
         Return sb.ToString()
     End Function
 
-    <System.Runtime.CompilerServices.Extension()> _
-    Public Function StringConcatenate(Of T)(ByVal source As IEnumerable(Of T), _
+    <Extension()>
+    Public Function StringConcatenate(Of T)(ByVal source As IEnumerable(Of T),
     ByVal func As Func(Of T, String), ByVal separator As String) As String
         Dim sb As StringBuilder = New StringBuilder()
         For Each item As T In source
@@ -83,7 +95,7 @@ Module Module1
 
         Using wdPackage As Package = Package.Open(fileName, FileMode.Open, FileAccess.Read)
             Dim docPackageRelationship As PackageRelationship = wdPackage.GetRelationshipsByType(documentRelationshipType).FirstOrDefault()
-            If (docPackageRelationship IsNot Nothing) Then
+            If docPackageRelationship IsNot Nothing Then
                 Dim documentUri As Uri = PackUriHelper.ResolvePartUri(New Uri("/", UriKind.Relative), docPackageRelationship.TargetUri)
                 Dim documentPart As PackagePart = wdPackage.GetPart(documentUri)
 
@@ -102,46 +114,42 @@ Module Module1
             End If
         End Using
 
-        Dim defaultStyle As String = _
-            ( _
-                From style In styleDoc.Root.<w:style> _
-                Where style.@w:type = "paragraph" And _
-                      style.@w:default = "1" _
-                Select style _
-            ).First().@w:styleId
+        Dim defaultStyle As String =
+            (From style In styleDoc.Root.<w:style>
+             Where style.@w:type = "paragraph" AndAlso style.@w:default = "1"
+             Select style).First().@w:styleId
 
         ' Find all paragraphs in the document.
-        Dim paragraphs = _
-            From para In xDoc.Root.<w:body>...<w:p> _
-        Let styleNode As XElement = para.<w:pPr>.<w:pStyle>.FirstOrDefault _
-        Select New With { _
-            .ParagraphNode = para, _
-            .StyleName = GetStyleOfParagraph(styleNode, defaultStyle) _
-        }
+        Dim paragraphs =
+            From para In xDoc.Root.<w:body>...<w:p>
+            Let styleNode As XElement = para.<w:pPr>.<w:pStyle>.FirstOrDefault
+            Select New With {
+                .ParagraphNode = para,
+                .StyleName = GetStyleOfParagraph(styleNode, defaultStyle)
+            }
 
         ' Retrieve the text of each paragraph.
-        Dim paraWithText = _
-            From para In paragraphs _
-            Select New With { _
-                .ParagraphNode = para.ParagraphNode, _
-                .StyleName = para.StyleName, _
-                .Text = ParagraphText(para.ParagraphNode) _
+        Dim paraWithText =
+            From para In paragraphs
+            Select New With {
+                .ParagraphNode = para.ParagraphNode,
+                .StyleName = para.StyleName,
+                .Text = ParagraphText(para.ParagraphNode)
             }
 
         ' Following is the new query that retrieves all paragraphs
         ' that have specific text in them.
-        Dim helloParagraphs = _
-            From para In paraWithText _
-            Where para.Text.Contains("Hello") _
-            Select New With _
-            { _
-                .ParagraphNode = para.ParagraphNode, _
-                .StyleName = para.StyleName, _
-                .Text = para.Text _
+        Dim helloParagraphs =
+            From para In paraWithText
+            Where para.Text.Contains("Hello")
+            Select New With {
+                .ParagraphNode = para.ParagraphNode,
+                .StyleName = para.StyleName,
+                .Text = para.Text
             }
 
         For Each p In helloParagraphs
-            Console.WriteLine("StyleName:{0} >{1}<", p.StyleName, p.Text)
+            Console.WriteLine($"StyleName:{p.StyleName} >{p.Text}<")
         Next
     End Sub
 End Module
@@ -298,14 +306,14 @@ Of course, this example could be enhanced in a number of ways. For example, we c
 
 Note that this example performs approximately as well as if it were written as a single query. Because each query is implemented in a lazy, deferred fashion, each query does not yield its results until the query is iterated. For more information about execution and lazy evaluation, see [Deferred Execution and Lazy Evaluation in LINQ to XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/deferred-execution-and-lazy-evaluation-in-linq-to-xml.md).
 
-## Next Steps
+## Next steps
 
 The next section provides more information about WordprocessingML documents:
 
-- [Details of Office Open XML WordprocessingML Documents (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/details-of-office-open-xml-wordprocessingml-documents.md)
+- [Details of Office Open XML WordprocessingML Documents (Visual Basic)](details-of-office-open-xml-wordprocessingml-documents.md)
 
 ## See also
 
-- [Tutorial: Manipulating Content in a WordprocessingML Document (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/tutorial-manipulating-content-in-a-wordprocessingml-document.md)
-- [Refactoring Using a Pure Function (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/refactoring-using-a-pure-function.md)
-- [Deferred Execution and Lazy Evaluation in LINQ to XML (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/deferred-execution-and-lazy-evaluation-in-linq-to-xml.md)
+- [Tutorial: Manipulating Content in a WordprocessingML Document (Visual Basic)](tutorial-manipulating-content-in-a-wordprocessingml-document.md)
+- [Refactoring Using a Pure Function (Visual Basic)](refactoring-using-a-pure-function.md)
+- [Deferred Execution and Lazy Evaluation in LINQ to XML (Visual Basic)](deferred-execution-and-lazy-evaluation-in-linq-to-xml.md)

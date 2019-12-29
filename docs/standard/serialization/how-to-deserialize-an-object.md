@@ -37,7 +37,7 @@ When you deserialize an object, the transport format determines whether you will
     // To read the file, create a FileStream.
     var myFileStream = new FileStream("myFileName.xml", FileMode.Open);
     // Call the Deserialize method and cast to the object type.
-    var myObject = (MySerializableClass) mySerializer.Deserialize(myFileStream)  
+    var myObject = (MySerializableClass) mySerializer.Deserialize(myFileStream)
     ```
 
 ## See also

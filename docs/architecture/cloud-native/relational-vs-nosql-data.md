@@ -2,7 +2,7 @@
 title: Relational vs. NoSQL data
 description: Learn about relational and NoSQL data in cloud-native applications
 author: robvet
-ms.date: 12/23/2019
+ms.date: 12/28/2019
 ---
 # Relational vs. NoSQL data
 
@@ -10,7 +10,7 @@ ms.date: 12/23/2019
 
 ## Introduction
 
-SQL and NoSQL are two types of database systems commonly implemented in cloud-native apps. They're built differently, store data differently, and accessed differently. In this section, we'll look at both, along with a new type of database technology called NewSQL, later in this module.
+SQL and NoSQL are two types of database systems commonly implemented in cloud-native apps. They're built differently, store data differently, and accessed differently. In this section, we'll look at both. Later in this module, we'll look at an emerging database technology called *NewSQL*.
 
 The impact of [NoSQL](https://www.geeksforgeeks.org/introduction-to-nosql/) technologies for distributed cloud-native systems can't be overstated. The proliferation of new data technologies in this space has disrupted solutions that once exclusively relied on relational databases.
 
@@ -44,7 +44,7 @@ Relational databases typically provide consistency and availability, but not par
 
 Many relational database systems support built-in replication features where copies of the primary database can be made to other secondary server instances. Write operations are made to the primary instance and replicated to each of the secondaries. Upon a failure, the primary instance can fail over to a secondary to provide high availability. Secondaries can also be used to distribute read operations. While writes operations always go against the primary replica, read operations can be routed to any of the secondaries to reduce system load.
 
-Data can also be horizontally partitioned across multiple nodes, such as with [sharding](https://www.digitalocean.com/community/tutorials/understanding-database-sharding). But, sharding dramatically increases operational overhead by spitting data across many pieces that cannot easily communicate. It can be costly and time consuming to manage. It can end up impacting performance, table joins, and referential integrity.
+Data can also be horizontally partitioned across multiple nodes, such as with [sharding](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-scale-introduction). But, sharding dramatically increases operational overhead by spitting data across many pieces that cannot easily communicate. It can be costly and time consuming to manage. It can end up impacting performance, table joins, and referential integrity.
 
 If data replicas were to lose network connectivity in a "highly consistent" relational database cluster, you wouldn't be able to write to the database. The system would reject the write operation as it can't replicate that change to the other data replica. Every data replica has to update before the transaction can complete.
 
@@ -138,7 +138,7 @@ MariaDB has a strong community and is used by many large enterprises. While Orac
 
 ### Azure Database for PostgreSQL
 
-[PostgreSQL](https://www.postgresql.org/) is an open-source relational database with over 30 years of active development. PostgresSQL has a strong reputation for reliability and data integrity. It’s feature rich, SQL compliant, and considered more performant than MySQL, especially for workloads with complex queries and heavy writes. Many large enterprises including Apple, Red Hat, and Fujitsu have built products using PostgreSQL.
+[PostgreSQL](https://www.postgresql.org/) is an open-source relational database with over 30 years of active development. PostgresSQL has a strong reputation for reliability and data integrity. It’s feature rich, SQL compliant, and considered more performant than MySQL - especially for workloads with complex queries and heavy writes. Many large enterprises including Apple, Red Hat, and Fujitsu have built products using PostgreSQL.
 
 [Azure Database for PostgreSQL](https://azure.microsoft.com/services/postgresql/) is a fully managed relational database service, based on the open-source Postgres database engine. The service supports many development platforms, including C++, Java, Python, Node, C\#, and PHP. You can migrate PostgreSQL databases to it using the [command-line interface](https://datamigration.microsoft.com/scenario/postgresql-to-azurepostgresql?step=1) tool or [Azure Data Migration Service](https://azure.microsoft.com/services/database-migration/).
 
@@ -150,7 +150,9 @@ Azure Database for PostgreSQL is available with two deployment options:
 
 ## NoSQL data in Azure
 
-Cosmos DB is a fully managed, globally distributed NoSQL database service in the Azure cloud.  If your services require fast response from anywhere in the world, high availability, or elastic scalability, Cosmos DB is a great choice. Figure 5-12 shows Cosmos DB.
+Cosmos DB is a fully managed, globally distributed NoSQL database service in the Azure cloud. It has been adopted by many large companies across the world,  including Coca-Cola, Skype, ExxonMobil, and Liberty Mutual.
+
+If your services require fast response from anywhere in the world, high availability, or elastic scalability, Cosmos DB is a great choice. Figure 5-12 shows Cosmos DB.
 
 ![Overview of Cosmos DB](./media/cosmos-db-overview.png)
 
@@ -162,7 +164,7 @@ The previous figure presents many of the built-in cloud-native capabilities avai
 
 Cloud-native applications often have a global audience and require global scale.
 
-You can distribute Cosmos databases across regions or around the world, placing data close to your users, improving response time and reducing latency. You can add or remove a database from a region without pausing or redeploying your services. In the background, Cosmos DB transparently replicates the data to each of the configured regions.
+You can distribute Cosmos databases across regions or around the world, placing data close to your users, improving response time, and reducing latency. You can add or remove a database from a region without pausing or redeploying your services. In the background, Cosmos DB transparently replicates the data to each of the configured regions.
 
 Cosmos DB supports [active/active](https://kemptechnologies.com/white-papers/unfog-confusion-active-passive-activeactive-load-balancing/) clustering at the global level, enabling you to configure any of your database regions to support *both writes and reads*.
 
@@ -208,7 +210,7 @@ Azure Cosmos DB offers [five well-defined consistency models](https://docs.micro
 
 **Figure 5-15**: Cosmos DB Consistency Levels
 
- These options enable you to make precise choices and granular tradeoffs for consistency, availability, and the performance for your data. Figure 5-16 describes each level. 
+ These options enable you to make precise choices and granular tradeoffs for consistency, availability, and the performance for your data. Figure 5-16 describes each level.
 
 ![Cosmos DB consistency levels](./media/cosmos-db-consistency-levels.png)
 
@@ -236,7 +238,7 @@ Internally, Cosmos DB automatically manages the placement of [logical partitions
 
 ## NewSQL Databases
 
-*NewSQL* is an emerging database technology that combines the distributed scalability of NoSQL with the ACID guarantees of a relational database. NewSQL databases are important for business systems that must process high-volumes of data, across distributed applications, with full transactional support and ACID compliance. While a NoSQL database can provide massive scalability, intermittent problems from inconsistent data can places a burden on the development team. Developers must construct safeguards in their microservice code to manage problems caused by inconsistent data.
+*NewSQL* is an emerging database technology that combines the distributed scalability of NoSQL with the ACID guarantees of a relational database. NewSQL databases are important for business systems that must process high-volumes of data, across distributed environments, with full transactional support and ACID compliance. While a NoSQL database can provide massive scalability, it does not guarantee data consistency. Intermittent problems from inconsistent data can place a burden on the development team. Developers must construct safeguards into their microservice code to manage problems caused by inconsistent data.
 
 The [Cloud Native Computing Foundation](https://www.cncf.io/) (CNCF) features several NewSQL database projects, shown in Figure 5-19.
 
@@ -244,19 +246,17 @@ The [Cloud Native Computing Foundation](https://www.cncf.io/) (CNCF) features se
 
 **Figure 5-19**. Cloud-native databases
 
-The open-source projects in the previous figure are available from the Cloud Native Computing Foundation. Three of the offerings are full database products, which include .NET Core support. The other is a database clustering system that horizontally scales large clusters of MySQL instances. All four are built to provide native Kuberetes support on run on commodity hardware.
+The open-source projects in the previous figure are available from the Cloud Native Computing Foundation. Three of the offerings are full database products, which include .NET Core support. The other, Vitess, is a database clustering system that horizontally scales large clusters of MySQL instances. 
 
-The goal of NewSQL databases are to run natively in a Kubernetes cluster. There, they can take full advantage of the platforms's resiliency and scalability capabilities. NewSQL databases are designed to thrive in ephemeral cloud environments where virtual machines could be restarted or rescheduled at a moment’s notice. Databases with this factor should be able to survive node failures with no data loss and no downtime. For example, CockroachDB is able to survive machine loss by maintaining three consistent replicas of any piece of data among the nodes in a cluster.
+A key design goal for NewSQL databases is to work natively in Kubernetes, taking advantage of the platform's resiliency and scalability.
 
-Kubernetes uses Services to allow clients to address a group of identical processes as a whole through a convenient DNS entry. By decoupling the pod from the address of the service with which it is associated, we can scale without disrupting existing application instances. Sending a request to any service at a given time will always yield the same result.
+NewSQL databases are designed to thrive in ephemeral cloud environments where underlying virtual machines can be restarted or rescheduled at a moment’s notice. The databases are designed to survive node failures without data loss nor downtime. CockroachDB, for example, is able to survive a machine loss by maintaining three consistent replicas of any data across the nodes in a cluster.
 
-In the NewSQL world, techniques like consensus replication allow databases any CockroachDB node to handle any request. If the node that receives a load-balanced request happens to have the data it needs locally, it will respond immediately. If not, rather than sending an error back to the client (or providing a stale result), that node will become a gateway and will forward the request to the appropriate nodes behind the scenes to get the correct answer. From the requester’s point of view, every node is exactly the same. When you combine database API symmetry with Kubernetes Service objects, you can create what is effectively a single logical database with the consistency guarantees of a single-machine system, despite there actually being dozens or even hundreds of nodes working behind the scenes.
+Then, Kubernetes uses a *Services construct* to allow a client to address a group of identical NewSQL databases processes from a single DNS entry. By decoupling the database instances from the address of the service with which it's associated, we can scale without disrupting existing application instances. Sending a request to any service at a given time will always yield the same result.
 
-> Extra stuff:
-> Databases with this factor should be able to survive node failures with no data loss and no downtime. 
-> They work natively with Kubernetes bringing end-to-end cloud-native stacks within reach of IT teams.
-> NewSQL databases exhibit disposability. They can handle processes stopping, starting, or crashing. When a disruption occurs, Kubernetes will reschedule pods on a different node.
->. None of them are available as managed backing services. Implementation would involve running them in an Azure virtual machine or Kubernetes cluster.  
+In this scenario, all database instances are equal. There are no primary or secondary relationships. Techniques like *consensus replication* found in CockroachDB allow any database node to handle any request. If the node that receives a load-balanced request has the data it needs locally, it'll respond immediately. If not, the node becomes a gateway and forwards the request to the appropriate nodes to get the correct answer. From the client's perspective, every database node is the same: They appear as a single *logical* database with the consistency guarantees of a single-machine system, despite there actually being dozens or even hundreds of nodes working behind the scenes.
+
+The article [DASH: Four Properties of Kubernetes-Native Databases](https://thenewstack.io/dash-four-properties-of-kubernetes-native-databases/) provides a detailed look at the mechanics behind NewSQL databases.
 
 ## Data migration to the cloud
 

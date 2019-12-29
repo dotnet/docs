@@ -1,5 +1,5 @@
 ---
-title: "Accessing data in Visual Basic applications"
+title: Accessing data
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "data [Visual Basic]"

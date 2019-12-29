@@ -1,5 +1,5 @@
 ---
-title: Analyze sentiment using the ML.NET CLI
+title: Analyze sentiment using the CLI
 description: Automatically generate an ML model and related C# code from a sample dataset
 author: cesardl
 ms.author: cesardl

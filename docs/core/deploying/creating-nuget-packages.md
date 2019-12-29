@@ -1,5 +1,5 @@
 ---
-title: Create a NuGet package with .NET Core CLI
+title: Create a NuGet package with CLI
 description: Learn how to create a NuGet package with the 'dotnet pack' command.
 author: cartermp
 ms.date: 06/20/2016

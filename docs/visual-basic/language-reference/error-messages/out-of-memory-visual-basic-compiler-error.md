@@ -1,5 +1,5 @@
 ---
-title: "Out of memory (Visual Basic Compiler Error)"
+title: "Out of memory - Compiler error"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbc2004"

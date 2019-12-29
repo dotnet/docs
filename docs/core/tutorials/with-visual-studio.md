@@ -1,5 +1,5 @@
 ---
-title: Create a Hello World application with .NET Core in Visual Studio
+title: Create a Hello World application in Visual Studio
 description: Learn how to create your first .NET Core console application with C# or Visual Basic using Visual Studio.
 author: BillWagner
 ms.author: wiwagn

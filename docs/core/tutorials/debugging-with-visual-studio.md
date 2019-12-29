@@ -1,5 +1,5 @@
 ---
-title: Debug your Hello World .NET Core application with Visual Studio
+title: Debug your Hello World application with Visual Studio
 description: Learn how to debug a Hello World app written in C# or Visual Basic with Visual Studio.
 ms.date: 12/05/2019
 ms.custom: "vs-dotnet"

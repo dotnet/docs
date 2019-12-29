@@ -1,5 +1,5 @@
 ---
-title: Create a .NET Core application with plugins
+title: Create an application with plugins
 description: Learn how to create a .NET Core application that supports plugins.
 author: jkoritzinsky
 ms.author: jekoritz

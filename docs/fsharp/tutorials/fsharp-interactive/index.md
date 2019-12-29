@@ -1,9 +1,9 @@
 ---
-title: F# Interactive (fsi.exe) Reference
+title: Interactive (fsi.exe) reference
 description: Learn how F# Interactive (fsi.exe) is used to run F# code interactively at the console or to execute F# scripts.
 ms.date: 05/16/2016
 ---
-# Interactive Programming with F\#
+# Interactive programming with F\#
 
 > [!NOTE]
 > This article currently describes the experience for Windows only.  It will be rewritten.

@@ -1,5 +1,5 @@
 ---
-title: "'<elementname>' is obsolete (Visual Basic Warning)"
+title: "'<elementname>' is obsolete - Warning"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbc40008"

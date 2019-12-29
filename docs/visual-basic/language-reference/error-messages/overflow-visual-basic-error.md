@@ -1,5 +1,5 @@
 ---
-title: "Overflow (Visual Basic Error)"
+title: "Overflow error"
 ms.date: 07/20/2015
 f1_keywords: 
   - "bc30036"

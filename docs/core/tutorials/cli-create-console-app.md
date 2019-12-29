@@ -1,5 +1,5 @@
 ---
-title: Get started with .NET Core using the CLI - .NET Core CLI
+title: Get started using the CLI
 description: A step-by-step tutorial showing how to get started with .NET Core on Windows, Linux, or macOS using the .NET Core command-line interface (CLI).
 author: thraka
 ms.author: adegeo

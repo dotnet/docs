@@ -1,5 +1,5 @@
 ---
-title: "Language-Integrated Axes in Visual Basic (LINQ to XML)"
+title: "Language-Integrated Axes (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: d450a556-a134-4261-b011-44e399660894
 ---

@@ -1,5 +1,5 @@
 ---
-title: .NET Core Application Deployment
+title: Application deployment
 description: Learn about the ways to deploy a .NET Core application.
 ms.date: 12/03/2018
 ---

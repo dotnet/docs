@@ -1,5 +1,5 @@
 ---
-title: "Overview of the Visual Basic Application Model"
+title: "Overview of the application model"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My.Application object [Visual Basic], Visual Basic application model"

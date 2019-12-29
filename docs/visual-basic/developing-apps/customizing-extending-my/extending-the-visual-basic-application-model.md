@@ -1,5 +1,5 @@
 ---
-title: "Extending the Visual Basic Application Model"
+title: Extending the application model
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "Visual Basic Application Model, extending"

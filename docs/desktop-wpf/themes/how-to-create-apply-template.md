@@ -1,5 +1,5 @@
 ---
-title: Create a template in WPF - .NET Desktop
+title: Create a template - .NET Desktop
 description: Learn how to create and reference a control template in Windows Presentation Foundation and .NET Core.
 author: thraka
 ms.author: adegeo

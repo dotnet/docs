@@ -1,5 +1,5 @@
 ---
-title:  ML.NET resources
+title: Resources
 description: Learn more about machine learning and ML.NET
 ms.topic: reference
 ms.date: 11/07/2019

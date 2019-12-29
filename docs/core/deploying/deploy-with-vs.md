@@ -1,5 +1,5 @@
 ---
-title: Deploy .NET Core apps with Visual Studio
+title: Deploy apps with Visual Studio
 description: Learn to deploy a .NET Core app with Visual Studio.
 ms.date: 09/03/2018
 dev_langs: 

@@ -1,5 +1,6 @@
 ---
 title: Get started with ASP.NET Core
+titleSuffix: ""
 description: Learn more about ASP.NET Core with tutorials in the ASP.NET Core documentation.
 ms.date: 06/20/2016
 ---

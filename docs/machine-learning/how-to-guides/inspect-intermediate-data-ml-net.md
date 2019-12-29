@@ -1,5 +1,5 @@
 ---
-title: Inspect intermediate data during ML.NET processing
+title: Inspect intermediate data during processing
 description: Learn how to inspect intermediate data during ML.NET machine learning pipeline loading, processing and model training steps in ML.NET.
 ms.date: 06/25/2019
 author: luisquintanilla

@@ -1,5 +1,5 @@
 ---
-title: ML.NET CLI Command Reference
+title: CLI Command Reference
 description: Overview, samples, and reference for the auto-train command in the ML.NET CLI tool.
 ms.date: 12/18/2019
 ---

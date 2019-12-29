@@ -1,5 +1,5 @@
 ---
-title: Select the Visual Basic language version
+title: Select the language version
 description: Configure the compiler to perform syntax validation using a specific compiler version.
 ms.date: 05/24/2018
 ---

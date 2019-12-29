@@ -1,5 +1,5 @@
 ---
-title: "Overflow (Visual Basic Run-Time Error)"
+title: "Overflow - Run-Time error"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrERRID_Overflow"

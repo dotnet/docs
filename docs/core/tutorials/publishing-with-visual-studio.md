@@ -1,5 +1,5 @@
 ---
-title: Publish your .NET Core Hello World application with Visual Studio
+title: Publish your Hello World application with Visual Studio
 description: Publishing creates the set of files that are needed to run your .NET Core application.
 author: BillWagner
 ms.author: wiwagn

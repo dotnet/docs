@@ -1,5 +1,5 @@
 ---
-title: ML.NET metrics
+title: Metrics
 description: Understand the metrics that are used to evaluate the performance of an ML.NET model
 ms.date: 12/17/2019
 ---

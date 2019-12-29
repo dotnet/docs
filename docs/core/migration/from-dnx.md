@@ -1,9 +1,9 @@
 ---
-title: Migrating from DNX to .NET Core CLI
+title: Migrate from DNX to CLI
 description: Migrate from using DNX tooling to .NET Core CLI tooling.
 ms.date: 06/20/2016
 ---
-# Migrating from DNX to .NET Core CLI (project.json)
+# Migrate from DNX to .NET Core CLI (project.json)
 
 ## Overview
 The RC1 release of .NET Core and ASP.NET Core 1.0 introduced DNX tooling. The RC2 release of .NET

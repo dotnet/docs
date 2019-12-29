@@ -1,5 +1,5 @@
 ---
-title: .NET Core Global Tools
+title: Global tools
 description: An overview of what .NET Core Global Tools are and the .NET Core CLI commands available for them. 
 author: KathleenDollard
 ms.date: 05/29/2018

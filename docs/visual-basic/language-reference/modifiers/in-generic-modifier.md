@@ -1,5 +1,5 @@
 ---
-title: "In (Generic Modifier) - Visual Basic"
+title: "In (Generic Modifier)"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.VarianceIn"

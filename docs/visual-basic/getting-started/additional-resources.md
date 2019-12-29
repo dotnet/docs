@@ -1,5 +1,5 @@
 ---
-title: "Additional resources for Visual Basic programmers"
+title: Additional resources
 description: "Discover resources on the web for you to learn, ask questions and find out more information about Visual Basic."
 ms.date: 02/21/2018
 helpviewer_keywords: 

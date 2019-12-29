@@ -1,5 +1,5 @@
 ---
-title: How to choose an ML.NET algorithm
+title: How to choose an algorithm
 description: Learn how to choose an ML.NET algorithm for your machine learning model
 ms.topic: overview
 ms.date: 06/05/2019

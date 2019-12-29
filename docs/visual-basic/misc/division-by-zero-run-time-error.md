@@ -1,5 +1,5 @@
 ---
-title: "Division by zero (Visual Basic Run-Time Error)"
+title: "Division by zero - Run-Time error"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID11"

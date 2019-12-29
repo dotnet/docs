@@ -1,5 +1,5 @@
 ---
-title: Publish .NET Core apps with the CLI
+title: Publish apps with the CLI
 description: Learn to publish a .NET Core app with the .NET Core SDK command-line interface (CLI) tools.
 author: thraka
 ms.author: adegeo

@@ -1,5 +1,5 @@
 ---
-title: ML.NET how-to guides
+title: How-to guides
 description: Learn how to do specific tasks to assist with custom AI solutions creation and Machine Learning integration into your .NET applications.
 ms.date: 03/01/2019
 ---

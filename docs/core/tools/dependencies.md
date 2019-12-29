@@ -1,5 +1,5 @@
 ---
-title: Managing dependencies in .NET Core tooling
+title: Managing dependencies
 description: Explains how to manage your dependencies with the .NET Core tools.
 ms.date: 03/06/2017
 ---

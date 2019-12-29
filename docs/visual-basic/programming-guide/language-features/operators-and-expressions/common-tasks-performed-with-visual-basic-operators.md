@@ -1,5 +1,5 @@
 ---
-title: "Common Tasks Performed with Visual Basic Operators"
+title: Common Tasks Performed with operators
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "operators [Visual Basic], logical"

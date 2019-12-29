@@ -1,5 +1,5 @@
 ---
-title: Test a .NET Standard class library with .NET Core in Visual Studio
+title: Test a .NET Standard class library with in Visual Studio
 description: Create a unit test project for your .NET Core class library. Verify that your .NET Core class library works correctly with unit tests.
 ms.date: 12/24/2019
 dev_langs:

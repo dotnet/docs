@@ -1,5 +1,5 @@
 ---
-title: How to create a .NET Core Global Tool
+title: How to create a global tool
 description: Describes how to create a Global Tool. The Global Tool is a console application that is installed through the .NET Core CLI.
 author: Thraka
 ms.author: adegeo

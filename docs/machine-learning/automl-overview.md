@@ -1,5 +1,5 @@
 ---
-title: Automated machine learning with ML.NET
+title: Automated machine learning
 description: Overview of automatic model selection and training
 ms.date: 05/01/2019
 ms.topic: overview

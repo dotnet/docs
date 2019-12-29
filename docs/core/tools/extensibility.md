@@ -1,5 +1,5 @@
 ---
-title: .NET Core CLI extensibility model
+title: Extensibility model
 description: Learn how you can extend the Command-line Interface (CLI) tools.
 ms.date: 04/12/2017
 ---

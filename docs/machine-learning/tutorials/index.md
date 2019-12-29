@@ -1,5 +1,5 @@
 ---
-title:  ML.NET tutorials
+title: Tutorials
 description: Explore the ML.NET tutorials to learn how to build custom AI solutions and integrate them into your .NET applications.
 ms.date: 07/08/2019
 ---

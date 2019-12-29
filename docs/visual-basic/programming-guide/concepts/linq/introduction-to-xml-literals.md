@@ -1,5 +1,5 @@
 ---
-title: "Introduction to XML Literals in Visual Basic2"
+title: Introduction to XML literals
 ms.date: 07/20/2015
 ms.assetid: 94fc0e03-978e-4c08-ab6c-0dc3c1e64f10
 ---

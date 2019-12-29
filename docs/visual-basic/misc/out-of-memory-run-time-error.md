@@ -1,5 +1,5 @@
 ---
-title: "Out of memory (Visual Basic Run-Time Error)"
+title: "Out of memory - Run-Time error"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID7"

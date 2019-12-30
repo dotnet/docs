@@ -17,7 +17,7 @@ The topic [How to stream XML fragments with access to header information (C#)](.
  The topic [How to perform streaming transform of large XML documents (C#)](./how-to-perform-streaming-transform-of-large-xml-documents.md) contains an example of using LINQ to XML to transform extremely large XML documents while maintaining a small memory footprint.  
   
 ## Example  
- This example creates a custom axis method. You can query it by using a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query. The custom axis method, `StreamRootChildDoc`, is a method that is designed specifically to read a document that has a repeating `Child` element.  
+ This example creates a custom axis method. You can query it by using a LINQ query. The custom axis method, `StreamRootChildDoc`, is a method that is designed specifically to read a document that has a repeating `Child` element.  
   
 ```csharp  
 static IEnumerable<XElement> StreamRootChildDoc(StringReader stringReader)  

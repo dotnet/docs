@@ -36,7 +36,7 @@ ms.assetid: 73d13345-eece-471a-af40-4cc7a2f11655
  Provides overviews of LINQ technologies in Visual Basic.
   
  [LINQ](../../../../../visual-basic/programming-guide/language-features/linq/index.md)  
- Describes [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] technologies for Visual Basic users.  
+ Describes LINQ technologies for Visual Basic users.  
   
  [LINQ and ADO.NET](../../linq-and-ado-net.md)  
  Links to the ADO.NET portal.  

@@ -26,7 +26,7 @@ LINQ to ADO.NET enables you to query over any enumerable object in ADO.NET by us
  For more information, see [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md).  
   
 ## LINQ to Entities  
- Through the Entity Data Model, relational data is exposed as objects in the .NET environment. This makes the object layer an ideal target for [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] support, allowing developers to formulate queries against the database from the language used to build the business logic. This capability is known as LINQ to Entities. See [LINQ to Entities](../../../../framework/data/adonet/ef/language-reference/linq-to-entities.md) for more information.  
+ Through the Entity Data Model, relational data is exposed as objects in the .NET environment. This makes the object layer an ideal target for LINQ support, allowing developers to formulate queries against the database from the language used to build the business logic. This capability is known as LINQ to Entities. See [LINQ to Entities](../../../../framework/data/adonet/ef/language-reference/linq-to-entities.md) for more information.  
   
 ## See also
 

@@ -10,7 +10,7 @@ This section contains overviews, examples, and background information that will 
   
 ## In This Section  
  [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  
- Provides an introduction to [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] providers, operators, query structure, and language features.  
+ Provides an introduction to LINQ providers, operators, query structure, and language features.  
   
  [How to: Query a Database](../../../../visual-basic/programming-guide/language-features/linq/how-to-query-a-database-by-using-linq.md)  
  Provides an example of how to connect to a SQL Server database and execute a query by using LINQ.  

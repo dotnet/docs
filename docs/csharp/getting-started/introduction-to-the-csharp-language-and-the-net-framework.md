@@ -42,7 +42,7 @@ C# is an elegant and type-safe object-oriented language that enables developers 
   
 - For detailed information about specific aspects of the C# language, see the [C# Reference](../language-reference/index.md).  
   
-- For more information about [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)], see [LINQ (Language-Integrated Query)](../programming-guide/concepts/linq/index.md).  
+- For more information about LINQ, see [LINQ (Language-Integrated Query)](../programming-guide/concepts/linq/index.md).  
 
 ## .NET Framework Platform Architecture
 

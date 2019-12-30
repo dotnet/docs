@@ -7,7 +7,7 @@ ms.assetid: fe4dbc87-7b0d-40bf-88c3-5d706ee89a4d
 This example shows how to use [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] and [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] to generate an XML file from a comma-separated value (CSV) file.  
   
 ## Example  
- The following code performs a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query on an array of strings.  
+ The following code performs a LINQ query on an array of strings.  
   
 ```vb  
       ' Create the text file.  

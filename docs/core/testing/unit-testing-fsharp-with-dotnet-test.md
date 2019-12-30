@@ -168,4 +168,3 @@ You've built a small library and a set of unit tests for that library. You've st
 - [dotnet sln](../tools/dotnet-new.md)
 - [dotnet add reference](../tools/dotnet-add-reference.md)
 - [dotnet test](../tools/dotnet-test.md)
-

@@ -8,24 +8,27 @@ ms.date: 12/28/2019
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-Elasticsearch is a distributed, open source search, and analytics engine that supports searching across all types of data. It's built on top of the open source Apache Lucene search engine. The engine is known for the following characteristics:
+Elasticsearch is a distributed search and analytics system that enables complex search capabilities across many types of data. It's open source and widely popular. Consider companies that use Elasticsearch:
 
-- A simple RESTful API interface.
-- A distributed architecture which can scale to thousands of nodes
-- High availability with multiple copies of data.
-- Index data without an explicit schema.
+- [Wikipedia](https://blog.wikimedia.org/2014/01/06/wikimedia-moving-to-elasticsearch/) for full-text and incremental (search as you type) searching.
+- [GitHub](https://www.elastic.co/customers/github) to index and expose over 8 million code repositories.  
+- [Docker](https://www.elastic.co/customers/docker) for making its container library discoverable.
 
-THe engine enables you to rank your search results on a variety of factors, including the frequency of a serach term, recency, and popularity.   
-  
-Elasticsearch detects failures to keep your cluster (and your data) safe and available. With cross-cluster replication, a secondary cluster can spring into action as a hot backup. Elasticsearch operates in a distributed environment designed from the ground up for perpetual peace of mind.
+Elasticsearch is built on top of the [Apache Lucene](https://lucene.apache.org/core/) full-text search engine. Lucene provides high-performance document indexing and querying. It indexes data with an [inverted indexing](https://www.baeldung.com/lucene) scheme – instead of mapping pages to keywords, it maps keywords to pages just like a glossary at the end of a book. Lucene has powerful [query syntax](https://www.baeldung.com/lucene)  capabilities and can query data by:
 
- is known for simple REST APIs, a distributed architecture, speed, and scalability. Elasticsearch is the central component of the Elastic Stack, a set of open source tools for data ingestion, enrichment, storage, analysis, and visualization.
+- Term (a full word) 
+- Prefix (starts-with word)
+- Wildcard (using "*" or "?" filters)
+- Phrase (a sequence of text in a document)
+- Boolean value (complex searches combining queries)
 
-Elastic Stack lets you reliably and securely take data from any source, in any format, and search, analyze, and visualize it in real time. Elastic is the company behind the Elastic
+While Lucene provides low-level plumbing for searching, Elasticsearch is a server that sits on top. Elasticsearch adds higher-level functionality, including a RESTful API to access Lucene’s indexing and searching functionality. It also provides a distributed searching infrastructure capable of massive scalability, fault tolerance, and high availability.
+
+For larger cloud-native applications with complex search requirements, Elasticsearch is available as [managed PaaS service in Azure](https://azuremarketplace.microsoft.com/marketplace/apps/elastic.elasticsearch?utm_campaign=social&utm_content=b7b94333e78f42d7a4dfc8348a6f48ac&utm_medium=t&utm_source=mkt-elasticsearchelasticsearch). From the Microsoft Azure Marketplace, developers can utilize preconfigured templates built by Elastic to quickly deploy an Elasticsearch cluster on Azure. Using the Azure-managed offering, you can deploy up to 50 data nodes, 20 coordinating nodes, and three dedicated master nodes.
 
 ## Summary
 
-This chapter presented a detailed look at data in cloud-native systems. We started by contrasting data storage in monolithic applications with that in cloud-native systems. We looked at data patterns implemented in cloud-native systems, including cross-service queries, distributed transactions, and patterns to deal with high-volume systems. We contrasted SQL with NoSQL data stores. We looked at data storage options available in Azure that include both Microsoft-centric and open-source options. Finally, we discussed caching in a cloud-native application.
+This chapter presented a detailed look at data in cloud-native systems. We started by contrasting data storage in monolithic applications with that in cloud-native systems. We looked at data patterns implemented in cloud-native systems, including cross-service queries, distributed transactions, and patterns to deal with high-volume systems. We contrasted SQL with NoSQL data. We looked at data storage options available in Azure that include both Microsoft-centric and open-source options. Finally, we discussed caching and Elasticsearch in a cloud-native application.
 
 ### References
 
@@ -66,6 +69,10 @@ This chapter presented a detailed look at data in cloud-native systems. We start
 - [YugabyteDB](https://www.yugabyte.com/)
 
 - [Vitess](https://vitess.io/)
+
+- [Elasticsearch: The Definitive Guide](http://shop.oreilly.com/product/0636920028505.do)
+  
+- [Introduction to Apache Lucene](https://www.baeldung.com/lucene)
 
 >[!div class="step-by-step"]
 >[Previous](azure-caching.md)

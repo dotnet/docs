@@ -17,7 +17,7 @@ ms.date: 06/26/2019
 
 ## Synopsis
 
-`dotnet add [<PROJECT>] reference [-f|--framework] <PROJECT_REFERENCES> [-h|--help] [--interactive]`
+`dotnet add [<PROJECT>] reference [-f|--framework <FRAMEWORK>] <PROJECT_REFERENCES> [-h|--help] [--interactive]`
 
 ## Description
 

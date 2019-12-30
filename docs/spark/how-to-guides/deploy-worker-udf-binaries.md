@@ -19,8 +19,8 @@ When deploying workers and writing UDFs, there are a few commonly used environme
 
 <table>
   <tr>
-    <td width="25%"><b>Environment Variable</b></td>
-    <td width="75%"><b>Description</b></td>
+  <td width="25%"><b>Environment Variable</b></td>
+  <td width="75%"><b>Description</b></td>
   </tr>
   <tr>
     <td><b>DOTNET_WORKER_DIR</b></td>

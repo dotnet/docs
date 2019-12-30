@@ -67,6 +67,7 @@ For detailed instructions, you can see [Building .NET for Apache Spark from Sour
     ```
 
 ## Running your .NET for Apache Spark App
+
 - Open your terminal and navigate into your app folder.
 
     ```shell

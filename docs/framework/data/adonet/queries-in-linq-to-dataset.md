@@ -7,7 +7,7 @@ dev_langs:
 ms.assetid: c1a78fa8-9f0c-40bc-a372-5575a48708fe
 ---
 # Queries in LINQ to DataSet
-A query is an expression that retrieves data from a data source. Queries are usually expressed in a specialized query language, such as SQL for relational databases and XQuery for XML. Therefore, developers have had to learn a new query language for each type of data source or data format that they query. [!INCLUDE[vbteclinqext](../../../../includes/vbteclinqext-md.md)] offers a simpler, consistent model for working with data across various kinds of data sources and formats. In a LINQ query, you always work with programming objects.  
+A query is an expression that retrieves data from a data source. Queries are usually expressed in a specialized query language, such as SQL for relational databases and XQuery for XML. Therefore, developers have had to learn a new query language for each type of data source or data format that they query. Language-Integrated Query (LINQ) offers a simpler, consistent model for working with data across various kinds of data sources and formats. In a LINQ query, you always work with programming objects.  
   
  A LINQ query operation consists of three actions: obtain the data source or sources, create the query, and execute the query.  
   

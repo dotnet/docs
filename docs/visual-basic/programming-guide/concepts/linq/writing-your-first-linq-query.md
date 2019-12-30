@@ -10,7 +10,7 @@ ms.assetid: 4affb732-3e9b-4479-aa31-1f9bd8183cbe
 # Writing Your First LINQ Query (Visual Basic)
 A *query* is an expression that retrieves data from a data source. Queries are expressed in a dedicated query language. Over time, different languages have been developed for different types of data sources, for example, SQL for relational databases and XQuery for XML. This makes it necessary for the application developer to learn a new query language for each type of data source or data format that is supported.  
   
- [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] simplifies the situation by offering a consistent model for working with data across various kinds of data sources and formats. In a LINQ query, you are always working with objects. You use the same basic coding patterns to query and transform data in XML documents, SQL databases, ADO.NET datasets and entities, .NET Framework collections, and any other source or format for which a LINQ provider is available. This document describes the three phases of the creation and use of basic LINQ queries.  
+ Language-Integrated Query (LINQ) simplifies the situation by offering a consistent model for working with data across various kinds of data sources and formats. In a LINQ query, you are always working with objects. You use the same basic coding patterns to query and transform data in XML documents, SQL databases, ADO.NET datasets and entities, .NET Framework collections, and any other source or format for which a LINQ provider is available. This document describes the three phases of the creation and use of basic LINQ queries.  
   
 ## Three Stages of a Query Operation  
  LINQ query operations consist of three actions:  

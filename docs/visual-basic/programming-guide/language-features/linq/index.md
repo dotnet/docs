@@ -6,7 +6,7 @@ helpviewer_keywords:
 ms.assetid: ddba5545-ff6e-46c3-8967-5c4280db5aca
 ---
 # LINQ in Visual Basic
-This section contains overviews, examples, and background information that will help you understand and use Visual Basic and [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)].  
+This section contains overviews, examples, and background information that will help you understand and use Visual Basic and Language-Integrated Query (LINQ).  
   
 ## In This Section  
  [Introduction to LINQ in Visual Basic](../../../../visual-basic/programming-guide/language-features/linq/introduction-to-linq.md)  

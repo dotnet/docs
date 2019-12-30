@@ -14,7 +14,7 @@ ms.assetid: b5ff4da5-f3fd-4a8e-aaac-1cbf52fa16f6
 ---
 # Type Relationships in Query Operations (Visual Basic)
 
-Variables used in [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] query operations are strongly typed and must be compatible with each other. Strong typing is used in the data source, in the query itself, and in the query execution. The following illustration identifies terms used to describe a LINQ query. For more information about the parts of a query, see [Basic Query Operations (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/basic-query-operations.md).
+Variables used in Language-Integrated Query (LINQ) query operations are strongly typed and must be compatible with each other. Strong typing is used in the data source, in the query itself, and in the query execution. The following illustration identifies terms used to describe a LINQ query. For more information about the parts of a query, see [Basic Query Operations (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/basic-query-operations.md).
 
 ![Screenshot showing a pseudocode query with elements highlighted.](./media/type-relationships-in-query-operations/linq-query-description-terms.png)
 

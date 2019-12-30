@@ -18,7 +18,7 @@ If you're new to .NET, see [Get started](get-started.md).
 
 If you prefer to have a guided tour through major features of .NET, see [Tour of .NET](tour.md).
 
-For an overview of the various "pieces" of .NET and how they fit together, see [.NET architectural components](components.md).
+For an overview of the various pieces of .NET and how they fit together, see [.NET architectural components](components.md).
 
 ## New to .NET Core
 
@@ -30,7 +30,7 @@ If you're new to .NET Standard, see [.NET Standard](net-standard.md).
 
 ## Port .NET Framework code to .NET Core
 
-If you want to port an application, service, or some component of a system to .NET Core, see [Port to .NET Core from .NET Framework](../core/porting/index.md).
+To port an application, service, or some component of a system to .NET Core, see [Port to .NET Core from .NET Framework](../core/porting/index.md).
 
 ## Port a NuGet package from .NET Framework to .NET Standard or .NET Core
 
@@ -38,7 +38,7 @@ If you want to port a NuGet package to .NET Standard, see [Port to .NET Core fro
 
 ## .NET concepts
 
-If you're interested in some of the major concepts of .NET, see:
+For more information about the major concepts of .NET, see:
 
 * [.NET architectural components](components.md)
 * [.NET Standard](net-standard.md)

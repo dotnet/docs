@@ -110,7 +110,7 @@ Once the Spark application is [bundled](https://spark.apache.org/docs/latest/sub
 #### 4. Question: How to run my spark application with UDFs on YARN? Which environment variables and parameters should I use?
 
 **Answer:** To launch the spark application on YARN, the environment variables should be specified as `spark.yarn.appMasterEnv.[EnvironmentVariableName]`. Please see below as an example using `spark-submit`:
-```console
+```shell
 spark-submit \
 --class org.apache.spark.deploy.dotnet.DotnetRunner \
 --master yarn \

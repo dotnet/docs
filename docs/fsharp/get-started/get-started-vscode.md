@@ -14,7 +14,7 @@ To begin, ensure that you have [F# and the Ionide plugin correctly installed](in
 To create a new F# project, open a command line and create a new project with the .NET Core CLI:
 
 ```dotnetcli
-dotnet new console -lang F# -o FirstIonideProject
+dotnet new console -lang "F#" -o FirstIonideProject
 ```
 
 Once it completes, change directory to the project and open Visual Studio Code:
@@ -145,7 +145,7 @@ let main argv =
 
 Now you can run your console app from the command line:
 
-```console
+```dotnetcli
 dotnet run apple banana
 ```
 

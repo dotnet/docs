@@ -17,7 +17,7 @@ C# 8.0 introduces **nullable reference types** and **non-nullable reference type
 
 This new feature provides significant benefits over the handling of reference variables in earlier versions of C# where the design intent couldn't be determined from the variable declaration. The compiler didn't provide safety against null reference exceptions for reference types:
 
-- **A reference can be null**. No warnings are issued when a reference type is initialized to null, or null assigned to it later.
+- **A reference can be null**. No warning is issued when a reference type is initialized to null, or null is later assigned to it.
 - **A reference is assumed to be not null**. The compiler doesn't issue any warnings when reference types are dereferenced. (With nullable references,  the compiler issues warnings whenever you dereference a variable that may be null).
 
 With the addition of nullable reference types, you can declare your intent more clearly. The `null` value is the correct way to represent that a variable doesn't refer to a value. Don't use this feature to remove all `null` values from your code. Rather, you should declare your intent to the compiler and other developers that read your code. By declaring your intent, the compiler informs you when you write code that is inconsistent with that intent.
@@ -42,7 +42,7 @@ Any reference type can have one of four *nullabilities*, which describes when wa
 
 - *Nonnullable*: Null can't be assigned to variables of this type. Variables of this type don't need to be null-checked before dereferencing.
 - *Nullable*: Null can be assigned to variables of this type. Dereferencing variables of this type without first checking for `null` causes a warning.
-- *Oblivious*: This is the pre-C# 8.0 state. Variables of this type can be dereferenced or be assigned without warnings.
+- *Oblivious*: This is the pre-C# 8.0 state. Variables of this type can be dereferenced or assigned to without warnings.
 - *Unknown*: This is generally for type parameters where constraints don't tell the compiler that the type must be *nullable* or *nonnullable*.
 
 The nullability of a type in a variable declaration is controlled by the *nullable context* in which the variable is declared.
@@ -87,7 +87,7 @@ By default, nullable annotation and warning contexts are **disabled**. That mean
 The compiler uses the following rules in a disabled nullable annotation context:
 
 - You can't declare nullable references in a disabled context.
-- null may be assigned to all reference variables.
+- All reference variables may be assigned a value of null.
 - No warnings are generated when a variable of a reference type is dereferenced.
 - The null-forgiving operator may not be used in a disabled context.
 

@@ -1,5 +1,5 @@
 ---
-title: Async Programming in F#
+title: Async Programming
 description: Learn how F# provides clean support for asynchrony based on a language-level programming model derived from core functional programming concepts.
 ms.date: 12/17/2018
 ---
@@ -10,7 +10,7 @@ Asynchronous programming is a mechanism that is essential to modern applications
 - Presenting a server process that can service a significant number of concurrent incoming requests, while minimizing the system resources occupied while request processing awaits inputs from systems or services external to that process
 - Maintaining a responsive UI or main thread while concurrently progressing background work
 
-Although background work often does involve the utilization of multiple threads, it's important to consider the concepts of asynchrony and multi-threading separately. In fact, they are separate concerns, and one does not imply the other. What follows in this article will describe this in more detail.
+Although background work often does involve the utilization of multiple threads, it's important to consider the concepts of asynchrony and multi-threading separately. In fact, they are separate concerns, and one does not imply the other. What follows in this article describes this in more detail.
 
 ## Asynchrony defined
 
@@ -63,13 +63,13 @@ let main argv =
     0
 ```
 
-In the example, the `printTotalFileBytes` function is of type `string -> Async<unit>`. Calling the function does not actually execute the asynchronous computation. Instead, it returns an `Async<unit>` that acts as a *specification- of the work that is to execute asynchronously. It will call `Async.AwaitTask` in its body, which will convert the result of <xref:System.IO.File.WriteAllBytesAsync%2A> to an appropriate type when it is called.
+In the example, the `printTotalFileBytes` function is of type `string -> Async<unit>`. Calling the function does not actually execute the asynchronous computation. Instead, it returns an `Async<unit>` that acts as a *specification* of the work that is to execute asynchronously. It calls `Async.AwaitTask` in its body, which converts the result of <xref:System.IO.File.WriteAllBytesAsync%2A> to an appropriate type.
 
 Another important line is the call to `Async.RunSynchronously`. This is one of the Async module starting functions that you'll need to call if you want to actually execute an F# asynchronous computation.
 
-This is a fundamental difference with the C#/VB style of `async` programming. In F#, asynchronous computations can be thought of as **Cold tasks**. They must be explicitly started to actually execute. This has some advantages, as it allows you to combine and sequence asynchronous work much more easily than in C#/VB.
+This is a fundamental difference with the C#/Visual Basic style of `async` programming. In F#, asynchronous computations can be thought of as **Cold tasks**. They must be explicitly started to actually execute. This has some advantages, as it allows you to combine and sequence asynchronous work much more easily than in C# or Visual Basic.
 
-## Combining asynchronous computations
+## Combine asynchronous computations
 
 Here is an example that builds upon the previous one by combining computations:
 
@@ -104,7 +104,7 @@ As you can see, the `main` function has quite a few more calls made. Conceptuall
 
 When this program runs, `printTotalFileBytes` runs in parallel for each command-line argument. Because asynchronous computations execute independently of program flow, there is no order in which they print their information and finish executing. The computations will be scheduled in parallel, but their order of execution is not guaranteed.
 
-## Sequencing asynchronous computations
+## Sequence asynchronous computations
 
 Because `Async<'T>` is a specification of work rather than an already-running task, you can perform more intricate transformations easily. Here is an example that sequences a set of Async computations so they execute one after another.
 
@@ -324,7 +324,7 @@ What to watch out for:
 - Exceptions raised by computations started with `Async.Start` aren't propagated to the caller. The call stack will be completely unwound.
 - Any effectful work (such as calling `printfn`) started with `Async.Start` won't cause the effect to happen on the main thread of a program's execution.
 
-## Interoperating with .NET
+## Interoperate with .NET
 
 You may be working with a .NET library or C# codebase that uses [async/await](../../../standard/async.md)-style asynchronous programming. Because C# and the majority of .NET libraries use the <xref:System.Threading.Tasks.Task%601> and <xref:System.Threading.Tasks.Task> types as their core abstractions rather than `Async<'T>`, you must cross a boundary between these two approaches to asynchrony.
 
@@ -365,7 +365,7 @@ module Async =
 
 There is already an `Async.AwaitTask` that accepts a <xref:System.Threading.Tasks.Task> as input. With this and the previously defined `startTaskFromAsyncUnit` function, you can start and await <xref:System.Threading.Tasks.Task> types from an F# async computation.
 
-## Relationship to multithreading
+## Relationship to multi-threading
 
 Although threading is mentioned throughout this article, there are two important things to remember:
 

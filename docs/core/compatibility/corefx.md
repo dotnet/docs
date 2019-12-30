@@ -58,3 +58,11 @@ The following is a list of CoreFx breaking changes by .NET Core version. CoreFx 
 ## .NET Core 3.0 Preview 7
 
 [!INCLUDE[JsonElement API changes](~/includes/core-changes/corefx/3.0/jsonelement-api-changes.md)]
+
+## .NET Core 2.1
+
+[!INCLUDE[Instantiate struct](~/includes/core-changes/corefx/2.1/instantiate-struct.md)]
+
+***
+
+[!INCLUDE[Process.Start changes](~/includes/core-changes/corefx/2.1/process-start-changes.md)]

@@ -16,7 +16,7 @@ Figure 5-1 contrasts the differences.
 
 **Figure 5-1**. Data management in cloud-native applications
 
-Experienced developers will recognize the architecture on the left-side of figure 5-1. In a *monolithic application*, business service components collocate together in a shared services tier, sharing data from a single relational database.
+Experienced developers will easily recognize the architecture on the left-side of figure 5-1. In this *monolithic application*, business service components collocate together in a shared services tier, sharing data from a single relational database.
 
 In many ways, a single database keeps data management simple. Querying data across multiple tables is straightforward. Changes to data update together or they all rollback. [ACID transactions](https://docs.microsoft.com/windows/desktop/cossdk/acid-properties) guarantee strong and immediate consistency.
 

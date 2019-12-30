@@ -10,13 +10,13 @@ ms.date: 12/30/2019
 
 ## Introduction
 
-SQL and NoSQL are two types of database systems commonly implemented in cloud-native apps. They're built differently, store data differently, and accessed differently. In this section, we'll look at both. Later in this module, we'll look at an emerging database technology called *NewSQL*.
-
-The impact of [NoSQL](https://www.geeksforgeeks.org/introduction-to-nosql/) technologies for distributed cloud-native systems can't be overstated. The proliferation of new data technologies in this space has disrupted solutions that once exclusively relied on relational databases.
+Relational and NoSQL are two types of database systems commonly implemented in cloud-native apps. They're built differently, store data differently, and accessed differently. In this section, we'll look at both. Later in this module, we'll look at an emerging database technology called *NewSQL*.
 
 *Relational databases* have been a prevalent technology for decades. They're mature, proven, and widely implemented. Competing database products, tooling, and expertise abound. Relational databases provide a store of related data tables. These tables have a fixed schema, use SQL (Structured Query Language) to manage data, and support [ACID](https://www.geeksforgeeks.org/acid-properties-in-dbms/) guarantees.
 
 *No-SQL databases* refer to high-performance, non-relational data stores. They excel in their ease-of-use, scalability, resilience, and availability characteristics. Instead of joining tables of normalized data, NoSQL stores unstructured or semi-structured data, often in key-value pairs or JSON documents. No-SQL databases typically don't provide [ACID](https://www.geeksforgeeks.org/acid-properties-in-dbms/) guarantees beyond the scope of a single database partition. High volume services that require sub second response time favor NoSQL datastores.
+
+The impact of [NoSQL](https://www.geeksforgeeks.org/introduction-to-nosql/) technologies for distributed cloud-native systems can't be overstated. The proliferation of new data technologies in this space has disrupted solutions that once exclusively relied on relational databases.
 
 NoSQL databases include several different models for accessing and managing data, each suited to specific use cases. Figure 5-9 presents four common models.
 
@@ -190,7 +190,7 @@ Development teams can migrate existing Mongo, Gremlin, or Cassandra databases in
 
 > Internally, Cosmos stores the data in a simple [struct](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/using-structs) format made up of primitive data types. For each request, the database engine translates the primitive data into the model representation you've selected.
 
-In the previous figure, 5-13, note the [Table API]((https://docs.microsoft.com/azure/cosmos-db/table-introduction)) option. This API is an evolution of [Azure Table Storage](https://azure.microsoft.com/services/storage/tables/). Both share the same underlying table model, but the Cosmos DB Table API provides many premium enhancements not available in the Azure Storage API. These features are contrasted in Figure 5-4.
+In the previous figure, 5-13, note the [Table API]((https://docs.microsoft.com/azure/cosmos-db/table-introduction)) option. This API is an evolution of [Azure Table Storage](https://azure.microsoft.com/services/storage/tables/). Both share the same underlying table model, but the Cosmos DB Table API adds premium enhancements not available in the Azure Storage API. These features are contrasted in Figure 5-4.
 
 ![Azure Table API](media/azure-table-api.png)
 

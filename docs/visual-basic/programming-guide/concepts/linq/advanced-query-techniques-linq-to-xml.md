@@ -3,7 +3,7 @@ title: Advanced query techniques (LINQ to XML)
 ms.date: 07/20/2015
 ms.assetid: 79be877c-fadc-4dfb-9f03-426082b13656
 ---
-# Advanced query techniques (LINQ to XML) (Visual Basic)
+# Advanced LINQ to XML query techniques (Visual Basic)
 
 This section provides examples of more advanced [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] query techniques.
 

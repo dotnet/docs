@@ -20,7 +20,7 @@ For a detailed tutorial that explains how this example works, see [Pure Function
 This example uses classes found in the WindowsBase assembly. It uses types in the <xref:System.IO.Packaging?displayProperty=nameWithType> namespace.
 
 > [!TIP]
-> For .NET Core application, you need to run the following command to add **System.IO.Packaging** NuGet package.
+> For .NET Core apps, run the following command to add the **System.IO.Packaging** NuGet package.
 >
 > ```dotnetcli
 > dotnet add package System.IO.Packaging

@@ -11,12 +11,12 @@ This topic extends the previous queries to do something useful: find all occurre
 
 This example processes a WordprocessingML document, to find all the occurrences of a specific piece of text in the document. To do this, we use a query that finds the string "Hello". This example builds on the previous examples in this tutorial. The new query is called out in comments in the code below.
 
-For instructions for creating the source document for this example, see [Creating the Source Office Open XML Document (Visual Basic)](creating-the-source-office-open-xml-document.md).
+For instructions to create the source document for this example, see [Create the source Office Open XML document (Visual Basic)](creating-the-source-office-open-xml-document.md).
 
 This example uses classes found in the WindowsBase assembly. It uses types in the <xref:System.IO.Packaging?displayProperty=nameWithType> namespace.
 
 > [!TIP]
-> For .NET Core application, you need to run the following command to add **System.IO.Packaging** NuGet package.
+> For .NET Core apps, run the following command to add the **System.IO.Packaging** NuGet package.
 >
 > ```dotnetcli
 > dotnet add package System.IO.Packaging

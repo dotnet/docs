@@ -2,7 +2,7 @@
 title: Relational vs. NoSQL data
 description: Learn about relational and NoSQL data in cloud-native applications
 author: robvet
-ms.date: 12/28/2019
+ms.date: 12/30/2019
 ---
 # Relational vs. NoSQL data
 
@@ -190,13 +190,13 @@ Development teams can migrate existing Mongo, Gremlin, or Cassandra databases in
 
 > Internally, Cosmos stores the data in a simple [struct](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/using-structs) format made up of primitive data types. For each request, the database engine translates the primitive data into the model representation you've selected.
 
-Note in Figure 5-13 how Cosmos DB supports [Azure Table Storage](https://azure.microsoft.com/services/storage/tables/). Both Cosmos DB and [Azure Table Storage](https://docs.microsoft.com/azure/cosmos-db/table-storage-overview) share the same underlying table model and expose many of the same table operations. However, the [Cosmos DB Table API](https://docs.microsoft.com/azure/cosmos-db/table-introduction) provides many premium enhancements not available in the Azure Storage API. These features are contrasted in Figure 5-4.
+In the previous figure, 5-13, note the [Table API]((https://docs.microsoft.com/azure/cosmos-db/table-introduction)) option. This API is an evolution of [Azure Table Storage](https://azure.microsoft.com/services/storage/tables/). Both share the same underlying table model, but the Cosmos DB Table API provides many premium enhancements not available in the Azure Storage API. These features are contrasted in Figure 5-4.
 
 ![Azure Table API](media/azure-table-api.png)
 
 **Figure 5-14**: Azure Table API Providers
 
-Microservices that consume Azure Table storage can migrate to Azure Cosmos DB by using the Table API. No code changes are required.
+Microservices that consume Azure Table storage can easily migrate to the Cosmos DB Table API. No code changes are required.
 
 ### Tunable Consistency
 

@@ -7,7 +7,7 @@ ms.date: 12/18/2019
 ---
 # How to install localized IntelliSense files for .NET Core
 
-[IntelliSense](/visualstudio/ide/using-intellisense) is a code-completion aid that is available in different integrated development environments (IDEs), such as Visual Studio. By default, when you're developing .NET Core projects, the SDK only includes the English version of the IntelliSense files. This article explains:
+[IntelliSense](/visualstudio/ide/using-intellisense) is a code-completion aid that is available in different Integrated Development Environments (IDEs), such as Visual Studio. By default, when you're developing .NET Core projects, the SDK only includes the English version of the IntelliSense files. This article explains:
 
 - How to install the localized version of those files.
 - How to modify the Visual Studio installation to use a different language.
@@ -28,9 +28,10 @@ ms.date: 12/18/2019
 
 1. Extract the contents of the zip file.
 
-1. Navigate to the .NET Core installation folder. By default, it's under *%ProgramFiles%\dotnet\packs*.
+1. Navigate to the moniker folder.
 
-   - Choose which SDK you want to install the IntelliSense for, and navigate to the associated path. You have the following options:
+   1. Navigate to the .NET Core installation folder. By default, it's under *%ProgramFiles%\dotnet\packs*.
+   1. Choose which SDK you want to install the IntelliSense for, and navigate to the associated path. You have the following options:
 
       | SDK type        | Path                               |
       | --------------- | ---------------------------------- |
@@ -38,9 +39,9 @@ ms.date: 12/18/2019
       | Windows Desktop | *Microsoft.WindowsDesktop.App.Ref* |
       | .NET Standard   | *NETStandard.Library.Ref*          |
    
-   - Navigate to the version you want to install the localized IntelliSense for. For example, *3.1.0*.
-   - Open the *ref* folder.
-   - Open the moniker folder. For example, *netcoreapp3.1*.
+   1. Navigate to the version you want to install the localized IntelliSense for. For example, *3.1.0*.
+   1. Open the *ref* folder.
+   1. Open the moniker folder. For example, *netcoreapp3.1*.
 
    So, the full path that you'd navigate to would look similar to *C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\3.1.0\ref\netcoreapp3.1*.
 
@@ -70,7 +71,7 @@ For Visual Studio to use a different language for IntelliSense, install the appr
 If you didn't install the desired language pack during setup, update Visual Studio as follows to install the language pack:
 
 > [!IMPORTANT]
-> To install, update, or modify Visual Studio, you must log on with an account that has administrative permissions. For more information, see [User permissions and Visual Studio](/visualstudio/ide/user-permissions-and-visual-studio).
+> To install, update, or modify Visual Studio, you must log on with an account that has administration permission. For more information, see [User permissions and Visual Studio](/visualstudio/ide/user-permissions-and-visual-studio).
 
 1. Find the Visual Studio Installer on your computer.
 
@@ -107,9 +108,9 @@ Once you've installed the desired language packs, modify your Visual Studio sett
 
 1. On the start window, choose **Continue without code**.
 
-1. On the main menu, select **Tools** > **Options**. The Options dialog opens.
+1. On the menu bar, select **Tools** > **Options**. The Options dialog opens.
 
-1. Under the **Environment** folder, choose **International Settings**.
+1. Under the **Environment** node, choose **International Settings**.
 
 1. On the **Language** drop-down, select the desired language. Choose **OK**. 
 

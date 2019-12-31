@@ -258,5 +258,5 @@ Prints out help for the command with a description for each command's parameter.
 
 - [How to install the ML.NET CLI tool](../how-to-guides/install-ml-net-cli.md)
 - [Overview of the ML.NET CLI](../automate-training-with-cli.md)
-- [Tutorial: Auto generate a binary classifier using the ML.NET CLI](../tutorials/sentiment-analysis-cli.md)
+- [Tutorial: Analyze sentiment using the ML.NET CLI](../tutorials/sentiment-analysis-cli.md)
 - [Telemetry in ML.NET CLI](../resources/ml-net-cli-telemetry.md)

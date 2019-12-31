@@ -105,7 +105,7 @@ The `Join` keyword is equivalent to an `INNER JOIN` in SQL. It combines two coll
 
 [!code-vb[VbLINQBasicOps#10](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQBasicOps/VB/Class1.vb#10)]
 
-`Group Join` combines collections into a single hierarchical collection, just like a `LEFT JOIN` in SQL. For more information, see [Join Clause](../../../language-reference/queries/join-clause.md) and [Group Join Clause](../../../language-reference/queries/group-join-clause.md).
+`Group Join` combines collections into a single hierarchical collection, just like a `LEFT JOIN` in SQL. For more information, see [Join clause](../../../language-reference/queries/join-clause.md) and [Group Join clause](../../../language-reference/queries/group-join-clause.md).
 
 ## Group Data (`Group By`)
 

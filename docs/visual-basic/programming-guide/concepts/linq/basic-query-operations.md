@@ -90,7 +90,7 @@ To select multiple fields from the data source, you have two choices:
 
      [!code-vb[VbLINQBasicOps#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbLINQBasicOps/VB/Class1.vb#8)]
 
-For more information about how to use the `Select` clause in Visual Basic, see [Select Clause](../../../language-reference/queries/select-clause.md).
+For more information about how to use the `Select` clause in Visual Basic, see [Select clause](../../../language-reference/queries/select-clause.md).
 
 ## Join data (`Join` and `Group Join`)
 

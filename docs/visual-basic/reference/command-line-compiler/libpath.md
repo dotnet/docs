@@ -31,7 +31,7 @@ Specifies the location of referenced assemblies.
   
 2. The common language runtime system directory.  
   
-3. Directories specified by `/libpath`.  
+3. Directories specified by `-libpath`.  
   
 4. Directories specified by the LIB environment variable.  
   

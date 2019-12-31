@@ -18,7 +18,7 @@ This article shows how to migrate from [Newtonsoft.Json](https://www.newtonsoft.
 
 <!-- For information about which features might be added in future releases, see the [Roadmap](https://github.com/dotnet/runtime/tree/master/src/libraries/System.Text.Json/roadmap/README.md). [Restore this when the roadmap is updated.]-->
 
-Most of this article is about how to use the <xref:System.Text.Json.JsonSerializer> API, but it also includes guidance on how to use the <xref:System.Text.Json.JsonDocument> Document Object Model (DOM) and the <xref:System.Text.Json.Utf8JsonReader> and <xref:System.Text.Json.Utf8JsonWriter> API. The article is organized into sections in the following order:
+Most of this article is about how to use the <xref:System.Text.Json.JsonSerializer> API, but it also includes guidance on how to use the <xref:System.Text.Json.JsonDocument> (which represents the Document Object Model or DOM), the <xref:System.Text.Json.Utf8JsonReader> and the <xref:System.Text.Json.Utf8JsonWriter> types. The article is organized into sections in the following order:
 
 * [Differences in **default** JsonSerializer behavior compared to Newtonsoft.Json](#differences-in-default-behavior).
 * [Scenarios using JsonSerializer that require workarounds](#scenarios-using-jsonserializer-that-require-workarounds).
@@ -27,13 +27,13 @@ Most of this article is about how to use the <xref:System.Text.Json.JsonSerializ
 * [Utf8JsonReader](#utf8jsonreader).
 * [Utf8JsonWriter](#utf8jsonwriter).
 
-## Differences in default behavior
+## Differences in default JsonSerializer behavior compared to Newtonsoft.Json
 
 `System.Text.Json` is strict by default and avoids any guessing or interpretation on the caller's behalf, emphasizing deterministic behavior. The library is intentionally designed this way for performance and security. `Newtonsoft.Json` is flexible by default.
 
 ### Case-insensitive deserialization 
 
-During deserialization, `Newtonsoft.Json` does case-insensitive property name matching by default. The `System.Text.Json` default is case-sensitive, which gives better performance. For information about how to do case-insensitive matching, see [Case-insensitive property matching](system-text-json-how-to.md#case-insensitive-property-matching).
+During deserialization, `Newtonsoft.Json` does case-insensitive property name matching by default. The `System.Text.Json` default is case-sensitive, which gives better performance since it's doing an exact match. For information about how to do case-insensitive matching, see [Case-insensitive property matching](system-text-json-how-to.md#case-insensitive-property-matching).
 
 If you're using `System.Text.Json` indirectly by using ASP.NET Core, you don't need to do anything to get behavior like `Newtonsoft.Json`. ASP.NET Core specifies the case-insensitive setting when it uses `System.Text.Json`.
 
@@ -72,10 +72,10 @@ During serialization, `Newtonsoft.Json` is relatively permissive about letting c
 When `Newtonsoft.Json` deserializes to `Object` properties in POCOs or in dictionaries of type `Dictionary<string, Object>`, it:
 
 * "Guesses" the type of "primitive" values in the JSON and stores `string`/`long`/`double`/`boolean`/`DateTime` as a boxed object.
-* Stores "complex" values as `JObject`.
-* Stores `null` when the payload has "null".
+* Returns the stored complex values as a `JObject` or `JArray`. *Complex values* are collections of JSON key-value pairs within braces (`{}` ) or lists of values within brackets (`[]`). The properties and values within the braces or brackets can have additional properties or values.
+* Returns a `null` reference when the payload has the `null` JSON literal.
 
-`System.Text.Json` stores a boxed `JsonElement` for "primitive" and "complex" values within the System.Object property or dictionary value. It stores `null` when the payload has "null" in it.
+`System.Text.Json` stores a boxed `JsonElement` for both primitive and complex values within the `System.Object` property or dictionary value. However, it treats `null` the same as `Newtonsoft.Json` and returns a null reference when the payload has the `null` JSON literal in it.
 
 To implement type inference for `Object` properties, create a converter like the example in [How to write custom converters](system-text-json-converters-how-to.md#deserialize-inferred-types-to-object-properties).
 
@@ -89,11 +89,14 @@ The following scenarios aren't supported by built-in functionality, but sample c
 
 ### Specify date format
 
-`Newtonsoft.Json` provides a `DateTimeZoneHandling` option that lets you specify the serialization format used for `DateTime` and `DateTimeOffset` properties. In `System.Text.Json`, the only format that has built-in support is ISO 8601-1:2019. To use any other format, create a custom converter. For more information, see [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md).
+`Newtonsoft.Json` provides a `DateTimeZoneHandling` option that lets you specify the serialization format used for `DateTime` and `DateTimeOffset` properties. In `System.Text.Json`, the only format that has built-in support is ISO 8601-1:2019 since it is widely adopted, unambiguous, and makes round trips precisely. To use any other format, create a custom converter. For more information, see [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md).
 
 ### Quoted numbers
 
-`Newtonsoft.Json` can serialize or deserialize numbers in quotes. For example, it can accept: `{ "DegreesCelsius":"23" }` instead of `{ "DegreesCelsius":23 }`. To enable that behavior in `System.Text.Json`, implement a custom converter like the following example, which uses quotes for properties defined as `long`.
+`Newtonsoft.Json` can serialize or deserialize numbers represented by JSON strings (surrounded by quotes). For example, it can accept: `{ "DegreesCelsius":"23" }` instead of `{ "DegreesCelsius":23 }`. To enable that behavior in `System.Text.Json`, implement a custom converter like the following example. The converter handles properties defined as `long`:
+
+* It serializes them as JSON strings. 
+* It accepts JSON numbers and numbers within quotes while deserializing.
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/LongToStringConverter.cs)]
 
@@ -134,7 +137,7 @@ To make deserialization fail if no `Date` property is in the JSON, implement a c
 
 If you follow this pattern, don't pass in the options object when recursively calling `Serialize` or `Deserialize`. The options object contains the `Converters` collection. If you pass it in to `Serialize` or `Deserialize`, the custom converter calls into itself, making an infinite loop that results in a stack overflow exception. If the default options are not feasible, create a new instance of the options with the settings that you need. This approach will be slow since each new instance caches independently.
 
-This is a simplified example. More complex code would be required if you need to handle attributes (such as `[JsonIgnore]`) or options (such as custom encoders).
+This is a simplified example. Additional logic would be required if you need to handle attributes (such as `[JsonIgnore]`) or different options (such as custom encoders).
 
 ### Deserialize null to non-nullable type 
 

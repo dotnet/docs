@@ -18,7 +18,7 @@ ms.assetid: 1146f6d0-fcb8-4f4d-8223-c9db52620d21
 ---
 # Basic query operations (Visual Basic)
 
-This topic provides a brief introduction to [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expressions in Visual Basic, and to some of the typical kinds of operations that you perform in a query. For more information, see the following topics:
+This article provides a brief introduction to Language-Integrated Query (LINQ) expressions in Visual Basic. It explores some of the typical kinds of operations that you perform in a query. For more information, see the following articles:
 
 - [Introduction to LINQ in Visual Basic](../../language-features/linq/introduction-to-linq.md)
 - [Queries](../../../language-reference/queries/index.md)

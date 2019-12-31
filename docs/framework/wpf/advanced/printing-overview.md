@@ -41,7 +41,7 @@ With Microsoft .NET Framework, application developers using Windows Presentation
   
 - Native support of advanced color profiles, which include 32 bits per channel (bpc), CMYK, named-colors, n-inks, and native support of transparency and gradients.  
   
-- Improved print performance for both .NET Framework and [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] based applications.  
+- Improved print performance for both .NET Framework and Win32 based applications.  
   
 - Industry standard XPS format.  
   

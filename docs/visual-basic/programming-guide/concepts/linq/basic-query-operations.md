@@ -107,7 +107,7 @@ The `Join` keyword is equivalent to an `INNER JOIN` in SQL. It combines two coll
 
 `Group Join` combines collections into a single hierarchical collection, just like a `LEFT JOIN` in SQL. For more information, see [Join Clause](../../../language-reference/queries/join-clause.md) and [Group Join Clause](../../../language-reference/queries/group-join-clause.md).
 
-## Groupi Data (`Group By`)
+## Group Data (`Group By`)
 
 You can add a `Group By` clause to group the elements in a query result according to one or more fields of the elements. For example, the following code groups students by class year.
 

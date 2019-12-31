@@ -56,7 +56,7 @@ Apache Spark is downloaded as a compressed .tgz file. Use an extraction program,
 
 The commands used in the following steps assume you have [downloaded and installed Apache Spark 2.4.1](https://archive.apache.org/dist/spark/spark-2.4.1/spark-2.4.1-bin-hadoop2.7.tgz). If you wish to use a different version, replace **2.4.1** with the appropriate version number. Then, extract the *.tar* file and the Apache Spark files.
 
-To extract the nested **.tar** file:
+To extract the nested *.tar* file:
 
 1. Locate the *spark-2.4.1-bin-hadoop2.7.tgz* file that you downloaded.
 1. Right click on the file and select **7-Zip** > **Extract here**.

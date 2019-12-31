@@ -78,7 +78,7 @@ If a `Customer` instance is a large object that has many fields, and all that yo
 
 To select multiple fields from the data source, you have two choices:
 
-- In the `Select` clause, specify the fields you want to include in the result. The compiler will define an anonymous type that has those fields as its properties. For more information, see [Anonymous Types](../../language-features/objects-and-classes/anonymous-types.md).
+- In the `Select` clause, specify the fields you want to include in the result. The compiler will define an anonymous type that has those fields as its properties. For more information, see [Anonymous types](../../language-features/objects-and-classes/anonymous-types.md).
 
      Because the returned elements in the following example are instances of an anonymous type, you cannot refer to the type by name elsewhere in your code. The compiler-designated name for the type contains characters that are not valid in normal Visual Basic code. In the following example, the elements in the collection that is returned by the query in `londonCusts4` are instances of an anonymous type
 

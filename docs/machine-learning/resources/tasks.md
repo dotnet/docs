@@ -7,9 +7,11 @@ author: natke
 ---
 # Machine learning tasks in ML.NET
 
-A machine learning task is determined by the type of problem you are trying to solve and the data you have.
+A machine learning task is the type of prediction or inference being made, based on the problem or question that is being asked, and the available data. For example, the classification task assigns data to categories, and the clustering task groups data according to similarity.
 
-The following list describes the different machine learning tasks that you can choose from and some common use cases. For more information about choosing the task that is appropriate for your scenario, see [Algorithms](../how-to-choose-an-ml-net-algorithm.md).
+Machine learning tasks rely on patterns in the data rather than being explicitly programmed.
+
+This article describes the different machine learning tasks that you can choose from in ML.NET and some common use cases.
 
 Once you have decided which task works for your scenario, then you need to choose the best algorithm to train your model. The available algorithms are listed in the section for each task.
 

@@ -284,11 +284,11 @@ The [Migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-
 
 The [unit tests folder](https://github.com/dotnet/runtime/blob/f77914d4c9045a01b3a91b63c28805f24850c274/src/libraries/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` source code includes other custom converter samples, such as:
 
-* `Int32` converter that converts null to 0 on deserialize
-* `Int32` converter that allows both string and number values on deserialize
-* `Enum` converter
-* `List<T>` converter that accepts external data
-* `Long[]` converter that works with a comma-delimited list of numbers 
+* [Int32 converter that converts null to 0 on deserialize](https://github.com/dotnet/runtime/blob/f77914d4c9045a01b3a91b63c28805f24850c274/src/libraries/System.Text.Json/tests/Serialization/CustomConverterTests.NullValueType.cs)
+* [Int32 converter that allows both string and number values on deserialize](https://github.com/dotnet/runtime/blob/f77914d4c9045a01b3a91b63c28805f24850c274/src/libraries/System.Text.Json/tests/Serialization/CustomConverterTests.Int32.cs)
+* [Enum converter](https://github.com/dotnet/runtime/blob/f77914d4c9045a01b3a91b63c28805f24850c274/src/libraries/System.Text.Json/tests/Serialization/CustomConverterTests.Enum.cs)
+* [List\<T> converter that accepts external data](https://github.com/dotnet/runtime/blob/f77914d4c9045a01b3a91b63c28805f24850c274/src/libraries/System.Text.Json/tests/Serialization/CustomConverterTests.List.cs)
+* [Long[] converter that works with a comma-delimited list of numbers](https://github.com/dotnet/runtime/blob/f77914d4c9045a01b3a91b63c28805f24850c274/src/libraries/System.Text.Json/tests/Serialization/CustomConverterTests.Array.cs) 
 
 If you need to make a converter that modifies the behavior of an existing built-in converter, you can get [the source code of the existing converter](https://github.com/dotnet/runtime/tree/f77914d4c9045a01b3a91b63c28805f24850c274/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/Converters) to serve as a starting point for customization.
 

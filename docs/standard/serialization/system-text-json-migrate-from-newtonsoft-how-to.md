@@ -20,12 +20,12 @@ This article shows how to migrate from [Newtonsoft.Json](https://www.newtonsoft.
 
 Most of this article is about how to use the <xref:System.Text.Json.JsonSerializer> API, but it also includes guidance on how to use the <xref:System.Text.Json.JsonDocument> (which represents the Document Object Model or DOM), the <xref:System.Text.Json.Utf8JsonReader> and the <xref:System.Text.Json.Utf8JsonWriter> types. The article is organized into sections in the following order:
 
-* [Differences in **default** JsonSerializer behavior compared to Newtonsoft.Json](#differences-in-default-behavior).
-* [Scenarios using JsonSerializer that require workarounds](#scenarios-using-jsonserializer-that-require-workarounds).
-* [Scenarios that JsonSerializer currently doesn't support](#scenarios-that-jsonserializer-currently-doesnt-support).
-* [JsonDocument](#jsondocument).
-* [Utf8JsonReader](#utf8jsonreader).
-* [Utf8JsonWriter](#utf8jsonwriter).
+* [Differences in **default** JsonSerializer behavior compared to Newtonsoft.Json](#differences-in-default-behavior)
+* [Scenarios using JsonSerializer that require workarounds](#scenarios-using-jsonserializer-that-require-workarounds)
+* [Scenarios that JsonSerializer currently doesn't support](#scenarios-that-jsonserializer-currently-doesnt-support)
+* [JsonDocument](#jsondocument)
+* [Utf8JsonReader](#utf8jsonreader)
+* [Utf8JsonWriter](#utf8jsonwriter)
 
 ## Differences in default JsonSerializer behavior compared to Newtonsoft.Json
 
@@ -85,7 +85,7 @@ To implement type inference for `Object` properties, create a converter like the
 
 ## Scenarios using JsonSerializer that require workarounds
 
-The following scenarios aren't supported by built-in functionality, but sample code is provided for workarounds.
+The following scenarios aren't supported by built-in functionality, but sample code is provided for workarounds. Most of the workarounds require that you implement [custom converters](system-text-json-converters-how-to.md).
 
 ### Specify date format
 
@@ -100,7 +100,7 @@ The following scenarios aren't supported by built-in functionality, but sample c
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/LongToStringConverter.cs)]
 
-[Register this custom converter](system-text-json-converters-how-to.md#register-a-custom-converter) by using an attribute on individual `long` properties or by adding the converter to the `Converters` collection.
+Register this custom converter by [using an attribute](system-text-json-converters-how-to.md#registration-sample---jsonconverter-on-a-property) on individual `long` properties or by [adding the converter to the `Converters` collection](system-text-json-converters-how-to.md#registration-sample---converters-collection).
 
 ### Dictionary with non-string key
 
@@ -110,7 +110,7 @@ To support a dictionary with an integer or some other type as the key, create a 
 
 ### Polymorphic deserialization
 
-`Newtonsoft.Json` provides attributes that specify how to handle polymorphic deserialization scenarios. `System.Text.Json` doesn't provide such attributes. `System.Text.Json` can do [polymorphic serialization](system-text-json-how-to.md#serialize-properties-of-derived-classes) but not polymorphic deserialization or conversion of the same data in both directions.
+`Newtonsoft.Json` has a `TypeNameHandling` setting that adds type name metadata to the JSON while serializing. It uses the metadata while deserializing to do polymorphic deserialization. `System.Text.Json` can do [polymorphic serialization](system-text-json-how-to.md#serialize-properties-of-derived-classes) but not polymorphic deserialization.
 
 To support polymorphic deserialization, create a converter like the example in [How to write custom converters](system-text-json-converters-how-to.md#support-polymorphic-deserialization).
 
@@ -276,10 +276,6 @@ By default, `Newtonsoft.Json` serializes by value. For example, if an object con
 ### Octal numbers
 
 `Newtonsoft.Json` treats numbers with a leading zero as octal numbers. `System.Text.Json` doesn't allow leading zeroes because the [RFC 8259](https://tools.ietf.org/html/rfc8259) specification doesn't allow them.
-
-### Type name handling
-
-`Newtonsoft.Json` has a `TypeNameHandling` setting that adds type name metadata to the JSON while serializing, and it uses the metadata while deserializing. `System.Text.Json` lacks this feature.
 
 ### Populate existing objects
 

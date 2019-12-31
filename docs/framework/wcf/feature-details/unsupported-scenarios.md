@@ -13,7 +13,8 @@ For various reasons, Windows Communication Foundation (WCF) does not support som
  When a WCF client makes asynchronous calls to a WCF service using Windows authentication under impersonation, authentication might occur with the identity of the client process instead of the impersonated identity.
 
 ### Windows XP and Secure Context Token Cookie Enabled
- WCF does not support impersonation and an <xref:System.InvalidOperationException> is thrown when the following conditions exist:
+
+WCF does not support impersonation and an <xref:System.InvalidOperationException> is thrown when the following conditions exist:
 
 - The operating system is [!INCLUDE[wxp](../../../../includes/wxp-md.md)].
 
@@ -31,33 +32,41 @@ For various reasons, Windows Communication Foundation (WCF) does not support som
 > The preceding requirements are specific. For example, the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateKerberosBindingElement%2A> creates a binding element that results in a Windows identity, but does not establish an SCT. Therefore, you can use it with the `Required` option on [!INCLUDE[wxp](../../../../includes/wxp-md.md)].
 
 ### Possible ASP.NET Conflict
- WCF and ASP.NET can both enable or disable impersonation. When ASP.NET hosts a WCF application, a conflict may exist between the WCF and ASP.NET configuration settings. In case of conflict, the WCF setting takes precedence, unless the <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> property is set to <xref:System.ServiceModel.ImpersonationOption.NotAllowed>, in which case the ASP.NET impersonation setting takes precedence.
+
+WCF and ASP.NET can both enable or disable impersonation. When ASP.NET hosts a WCF application, a conflict may exist between the WCF and ASP.NET configuration settings. In case of conflict, the WCF setting takes precedence, unless the <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> property is set to <xref:System.ServiceModel.ImpersonationOption.NotAllowed>, in which case the ASP.NET impersonation setting takes precedence.
 
 ### Assembly Loads May Fail Under Impersonation
- If the impersonated context does not have access rights to load an assembly and if it is the first time the common language runtime (CLR) is attempting to load the assembly for that AppDomain, the <xref:System.AppDomain> caches the failure. Subsequent attempts to load that assembly (or assemblies) fail, even after reverting the impersonation, and even if the reverted context has access rights to load the assembly. This is because the CLR does not reattempt the load after the user context is changed. You must restart the application domain to recover from the failure.
+
+If the impersonated context does not have access rights to load an assembly and if it is the first time the common language runtime (CLR) is attempting to load the assembly for that AppDomain, the <xref:System.AppDomain> caches the failure. Subsequent attempts to load that assembly (or assemblies) fail, even after reverting the impersonation, and even if the reverted context has access rights to load the assembly. This is because the CLR does not reattempt the load after the user context is changed. You must restart the application domain to recover from the failure.
 
 > [!NOTE]
 > The default value for the <xref:System.ServiceModel.Security.WindowsClientCredential.AllowedImpersonationLevel%2A> property of the <xref:System.ServiceModel.Security.WindowsClientCredential> class is <xref:System.Security.Principal.TokenImpersonationLevel.Identification>. In most cases, an identification-level impersonation context has no rights to load any additional assemblies. This is the default value, so this is a very common condition to be aware of. Identification-level impersonation also occurs when the impersonating process does not have the `SeImpersonate` privilege. For more information, see [Delegation and Impersonation](delegation-and-impersonation-with-wcf.md).
 
 ### Delegation Requires Credential Negotiation
- To use the Kerberos authentication protocol with delegation, you must implement the Kerberos protocol with credential negotiation (sometimes called multi-leg or multi-step Kerberos). If you implement Kerberos authentication without credential negotiation (sometimes called one-shot or single-leg Kerberos), an exception is thrown. For more information about how to implement credential negotiation, see [Debugging Windows Authentication Errors](debugging-windows-authentication-errors.md).
+
+To use the Kerberos authentication protocol with delegation, you must implement the Kerberos protocol with credential negotiation (sometimes called multi-leg or multi-step Kerberos). If you implement Kerberos authentication without credential negotiation (sometimes called one-shot or single-leg Kerberos), an exception is thrown. For more information about how to implement credential negotiation, see [Debugging Windows Authentication Errors](debugging-windows-authentication-errors.md).
 
 ## Cryptography
 
 ### SHA-256 Supported Only for Symmetric Key Usages
- WCF supports a variety of encryption and signature digest creation algorithms that you can specify using the algorithm suite in the system-provided bindings. For improved security, WCF supports Secure Hash Algorithm (SHA) 2 algorithms, specifically SHA-256, for creating signature digest hashes. This release supports SHA-256 only for symmetric key usages, such as Kerberos keys, and where an X.509 certificate is not used to sign the message. WCF does not support RSA signatures (used in X.509 certificates) using SHA-256 hash due to the current lack of support for RSA-SHA256 in the WinFX.
+
+WCF supports a variety of encryption and signature digest creation algorithms that you can specify using the algorithm suite in the system-provided bindings. For improved security, WCF supports Secure Hash Algorithm (SHA) 2 algorithms, specifically SHA-256, for creating signature digest hashes. This release supports SHA-256 only for symmetric key usages, such as Kerberos keys, and where an X.509 certificate is not used to sign the message. WCF does not support RSA signatures (used in X.509 certificates) using SHA-256 hash due to the current lack of support for RSA-SHA256 in the WinFX.
 
 ### FIPS-Compliant SHA-256 Hashes not Supported
- WCF does not support SHA-256 FIPS-compliant hashes, so algorithm suites that use SHA-256 are not supported by WCF on systems where use of FIPS-compliant algorithms is required.
+
+WCF does not support SHA-256 FIPS-compliant hashes, so algorithm suites that use SHA-256 are not supported by WCF on systems where use of FIPS-compliant algorithms is required.
 
 ### FIPS-Compliant Algorithms May Fail if Registry Is Edited
- You can enable and disable Federal Information Processing Standards (FIPS)-compliant algorithms by using the Local Security Settings Microsoft Management Console (MMC) snap-in. You can also access the setting in the registry. Note, however, that WCF does not support using the registry to reset the setting. If the value is set to anything other than 1 or 0, inconsistent results can occur between the CLR and the operating system.
+
+You can enable and disable Federal Information Processing Standards (FIPS)-compliant algorithms by using the Local Security Settings Microsoft Management Console (MMC) snap-in. You can also access the setting in the registry. Note, however, that WCF does not support using the registry to reset the setting. If the value is set to anything other than 1 or 0, inconsistent results can occur between the CLR and the operating system.
 
 ### FIPS-Compliant AES Encryption Limitation
- FIPS-compliant AES encryption does not work in duplex callbacks under identification level impersonation.
+
+FIPS-compliant AES encryption does not work in duplex callbacks under identification level impersonation.
 
 ### CNG/KSP Certificates
- *Cryptography API: Next Generation (CNG)* is the long-term replacement for the CryptoAPI. This API is available in unmanaged code on Windows Vista, Windows Server 2008, and later Windows versions.
+
+*Cryptography API: Next Generation (CNG)* is the long-term replacement for the CryptoAPI. This API is available in unmanaged code on Windows Vista, Windows Server 2008, and later Windows versions.
 
  .NET Framework 4.6.1 and earlier versions do not support these certificates because they use the legacy CryptoAPI to handle CNG/KSP certificates. The use of these certificates with   .NET Framework 4.6.1 and earlier versions will cause an exception.
 
@@ -80,12 +89,14 @@ WCF does not support the following combination of settings because they can prev
 The work-around is to turn off the ASP.NET compatibility mode. Or, if the ASP.NET compatibility mode is required, disable the ASP.NET impersonation feature and use WCF-provided impersonation instead. For more information, see [Delegation and Impersonation](delegation-and-impersonation-with-wcf.md).
 
 ## IPv6 Literal Address Failure
- Security requests fail when the client and service are on the same machine, and IPv6 literal addresses are used for the service.
+
+Security requests fail when the client and service are on the same machine, and IPv6 literal addresses are used for the service.
 
  Literal IPv6 addresses work if the service and client are on different machines.
 
 ## WSDL Retrieval Failures with Federated Trust
- WCF requires exactly one WSDL document for each node in the federated trust chain. Be careful not to set up a loop when specifying endpoints. One way in which loops can arise is using a WSDL download of federated trust chains with two or more links in the same WSDL document. A common scenario that can produce this problem is a federated service where the Security Token Server and the service are contained inside the same ServiceHost.
+
+WCF requires exactly one WSDL document for each node in the federated trust chain. Be careful not to set up a loop when specifying endpoints. One way in which loops can arise is using a WSDL download of federated trust chains with two or more links in the same WSDL document. A common scenario that can produce this problem is a federated service where the Security Token Server and the service are contained inside the same ServiceHost.
 
  An example of this situation is a service with the following three endpoint addresses:
 
@@ -100,7 +111,8 @@ The work-around is to turn off the ASP.NET compatibility mode. Or, if the ASP.NE
  You can make this scenario work by putting the `issue_ticket` endpoint elsewhere.
 
 ## WSDL Import Attributes can be Lost
- WCF loses track of the attributes on a `<wst:Claims>` element in an `RST` template when doing a WSDL import. This happens during a WSDL import if you specify `<Claims>` directly in `WSFederationHttpBinding.Security.Message.TokenRequestParameters` or `IssuedSecurityTokenRequestParameters.AdditionalRequestParameters` instead of using the claim type collections directly.  Since the import loses the attributes, the binding does not round trip properly through WSDL and hence is incorrect on the client side.
+
+WCF loses track of the attributes on a `<wst:Claims>` element in an `RST` template when doing a WSDL import. This happens during a WSDL import if you specify `<Claims>` directly in `WSFederationHttpBinding.Security.Message.TokenRequestParameters` or `IssuedSecurityTokenRequestParameters.AdditionalRequestParameters` instead of using the claim type collections directly.  Since the import loses the attributes, the binding does not round trip properly through WSDL and hence is incorrect on the client side.
 
  The fix is to modify the binding directly on the client after doing the import.
 

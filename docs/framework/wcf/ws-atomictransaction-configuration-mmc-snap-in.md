@@ -8,7 +8,8 @@ ms.assetid: 23592973-1d51-44cc-b887-bf8b0d801e9e
 The WS-AtomicTransaction Configuration MMC snap-in is used to configure a portion of the WS-AtomicTransaction settings on both local and remote machines.
 
 ## Remarks
- If you are running [!INCLUDE[wxp](../../../includes/wxp-md.md)] or Windows Server 2003, the MMC snap-in can be found by navigating to **Control Panel/Administrative Tools/Component Services/**, right-clicking **My Computer**, and selecting **Properties**. This is the same location where you can configure the MSDTC. Options available for configuration are grouped under the **WS-AT** tab.
+
+If you are running [!INCLUDE[wxp](../../../includes/wxp-md.md)] or Windows Server 2003, the MMC snap-in can be found by navigating to **Control Panel/Administrative Tools/Component Services/**, right-clicking **My Computer**, and selecting **Properties**. This is the same location where you can configure the MSDTC. Options available for configuration are grouped under the **WS-AT** tab.
 
  If you are running Windows Vista or Windows Server 2008, MMC snap-in can be found by clicking the **Start** button, and typing in `dcomcnfg.exe` in the **Search** box. When the MMC is opened, navigate to the **My Computer\Distributed Transaction Coordinator\Local DTC** node, right click and select **Properties**. Options available for configuration are grouped under the **WS-AT** tab.
 
@@ -31,14 +32,16 @@ regasm.exe /codebase WsatUI.dll
  You should be aware that both the MMC Snap-in and the command-line tool do not support configuring all WS-AT settings. These settings can be edited only by modifying the registry directly. For more information about these registry settings, see [Configuring WS-Atomic Transaction Support](./feature-details/configuring-ws-atomic-transaction-support.md).
 
 ### User Interface Description
- **Enable WS-Atomic Transaction Network Support**:
+
+**Enable WS-Atomic Transaction Network Support**:
 
  Toggling this checkbox enables or disables all the GUI components of this snap-in.
 
  Before you check this box, you should make sure that Network DTC Access is enabled with inbound or outbound communication, or both. This value can be verified in the **Security** Tab of the MSDTC snap-in.
 
 #### Network Group Box
- You can specify the HTTPS port and additional security settings such as SSL encryption in the Network group. This group is disabled (grayed out) if DTC Network Transactions are not enabled.
+
+You can specify the HTTPS port and additional security settings such as SSL encryption in the Network group. This group is disabled (grayed out) if DTC Network Transactions are not enabled.
 
  **HTTPS Port**
 
@@ -65,10 +68,12 @@ regasm.exe /codebase WsatUI.dll
  Clicking the **Select** button displays a list of currently available certificates on the LocalMachine. You can then select which certificate identities are allowed to participate in WS-Atomic transactions.
 
 #### Timeout Group Box
- The **Timeout** group box allows you to specify the default and maximum timeout for a WS-Atomic transaction. A valid value for outgoing timeout is between 1 and 3600. A valid value for incoming timeout is between 0 and 3600.
+
+The **Timeout** group box allows you to specify the default and maximum timeout for a WS-Atomic transaction. A valid value for outgoing timeout is between 1 and 3600. A valid value for incoming timeout is between 0 and 3600.
 
 #### Tracing and Logging Group Box
- The **Tracing and Logging** group box allows you to configure the desired tracing and logging level.
+
+The **Tracing and Logging** group box allows you to configure the desired tracing and logging level.
 
  Clicking the **Options** button invokes a page where you can specify additional settings.
 

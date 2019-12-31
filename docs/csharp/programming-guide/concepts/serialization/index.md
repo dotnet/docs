@@ -27,7 +27,7 @@ Serialization allows the developer to save the state of an object and re-create 
 
 The [System.Text.Json namespace](../../../../standard/serialization/system-text-json-overview.md) contains classes for JavaScript Object Notation (JSON) serialization and deserialization. JSON is an open standard that is commonly used for sharing data across the web.
 
-JSON serialization serializes the public properties of an object into a string, byte array, or stream that conforms to [the RFC 8259 JSON specification](https://tools.ietf.org/html/rfc8259#section-7). To control the way <xref:System.Text.Json.JsonSerializer> serializes or deserializes an instance of the class:
+JSON serialization serializes the public properties of an object into a string, byte array, or stream that conforms to [the RFC 8259 JSON specification](https://tools.ietf.org/html/rfc8259). To control the way <xref:System.Text.Json.JsonSerializer> serializes or deserializes an instance of the class:
 
 * Use a [JsonSerializerOptions](xref:System.Text.Json.JsonSerializerOptions) object
 * Apply attributes from the [System.Text.Json](xref:System.Text.Json.Serialization) namespace to classes or properties

@@ -18,7 +18,7 @@ The object is serialized to a stream that carries the data. The stream may also 
 
 Serialization allows the developer to save the state of an object and re-create it as needed, providing storage of objects as well as data exchange. Through serialization, a developer can perform actions such as:
 
-* Sending the object to a remote application by means of a web Service
+* Sending the object to a remote application by using a web service
 * Passing an object from one domain to another
 * Passing an object through a firewall as a JSON or XML string
 * Maintaining security or user-specific information across applications
@@ -27,7 +27,7 @@ Serialization allows the developer to save the state of an object and re-create 
 
 The [System.Text.Json namespace](../../../../standard/serialization/system-text-json-overview.md) contains classes for JavaScript Object Notation (JSON) serialization and deserialization. JSON is an open standard that is commonly used for sharing data across the web.
 
-JSON serialization serializes the public properties of an object into a string, byte array, or stream that conforms to [the RFC 8259 JSON specification](https://tools.ietf.org/html/rfc8259#section-7). To control the way <xref:System.Text.Json.JsonSerializer> serializes or deserializes an instance of the class, you can:
+JSON serialization serializes the public properties of an object into a string, byte array, or stream that conforms to [the RFC 8259 JSON specification](https://tools.ietf.org/html/rfc8259#section-7). To control the way <xref:System.Text.Json.JsonSerializer> serializes or deserializes an instance of the class:
 
 * Use a [JsonSerializerOptions](xref:System.Text.Json.JsonSerializerOptions) object
 * Apply attributes from the [System.Text.Json](xref:System.Text.Json.Serialization) namespace to classes or properties
@@ -51,7 +51,7 @@ For binary or XML serialization, you need:
 
 Apply the <xref:System.SerializableAttribute> attribute to a type to indicate that instances of the type can be serialized. An  exception is thrown if you attempt to serialize but the type doesn't have the <xref:System.SerializableAttribute> attribute.
 
-If you don't want a field within a class to be serializable, apply the <xref:System.NonSerializedAttribute> attribute. If a field of a serializable type contains a pointer, a handle, or some other data structure that is specific to a particular environment, and the field cannot be meaningfully reconstituted in a different environment, then you may want to make it nonserializable.
+To prevent a field from being serialized, apply the <xref:System.NonSerializedAttribute> attribute. If a field of a serializable type contains a pointer, a handle, or some other data structure that is specific to a particular environment, and the field cannot be meaningfully reconstituted in a different environment, then you may want to make it nonserializable.
 
 If a serialized class contains references to objects of other classes that are marked <xref:System.SerializableAttribute>, those objects will also be serialized.
 
@@ -78,8 +78,8 @@ Designer serialization is a special form of serialization that involves the kind
 [Walkthrough: Persisting an Object in Visual Studio (C#)](walkthrough-persisting-an-object-in-visual-studio.md)  
 Demonstrates how serialization can be used to persist an object's data between instances, allowing you to store values and retrieve them the next time the object is instantiated.
 
-[How to: Read Object Data from an XML File (C#)](how-to-read-object-data-from-an-xml-file.md)  
+[How to read object data from an XML file (C#)](how-to-read-object-data-from-an-xml-file.md)  
  Shows how to read object data that was previously written to an XML file using the <xref:System.Xml.Serialization.XmlSerializer> class.
 
-[How to: Write Object Data to an XML File (C#)](how-to-write-object-data-to-an-xml-file.md)  
+[How to write object data to an XML file (C#)](how-to-write-object-data-to-an-xml-file.md)  
 Shows how to write the object from a class to an XML file using the <xref:System.Xml.Serialization.XmlSerializer> class.

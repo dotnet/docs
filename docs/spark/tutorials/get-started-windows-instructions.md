@@ -48,7 +48,7 @@ For detailed instructions, you can see [Building .NET for Apache Spark from Sour
         }
     }
     ```
-    
+
 - Build the solution
 
 ## Running your .NET for Apache Spark App

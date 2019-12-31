@@ -20,21 +20,9 @@ If you prefer to have a guided tour through major features of .NET, see [Tour of
 
 For an overview of the various pieces of .NET and how they fit together, see [.NET architectural components](components.md).
 
-## New to .NET Core
+## Port .NET Framework code or NuGet packages
 
-If you're new to .NET Core, see [Get started with .NET Core](../core/get-started.md).
-
-## New to .NET Standard
-
-If you're new to .NET Standard, see [.NET Standard](net-standard.md).
-
-## Port .NET Framework code to .NET Core
-
-To port an application, service, or some component of a system to .NET Core, see [Port to .NET Core from .NET Framework](../core/porting/index.md).
-
-## Port a NuGet package from .NET Framework to .NET Standard or .NET Core
-
-If you want to port a NuGet package to .NET Standard, see [Port to .NET Core from .NET Framework](../core/porting/index.md). Tooling for .NET Standard and .NET Core is shared, so the content is relevant for porting to both .NET Standard and .NET Core.
+To port an application, service, component, or NuGet package to .NET Standard or .NET Core, see [Port to .NET Core from .NET Framework](../core/porting/index.md). Tooling for .NET Standard and .NET Core is shared, so the content is relevant for porting to both frameworks.
 
 ## .NET concepts
 
@@ -57,4 +45,4 @@ For information about the three major .NET languages, see:
 
 ## API reference
 
-To understand the breadth of APIs that are available, see [.NET API reference](../../api/index.md).
+For detailed information about all of the APIs that are available in .NET, see [.NET API reference](../../api/index.md).

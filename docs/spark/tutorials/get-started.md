@@ -45,33 +45,36 @@ Select the appropriate version for your operating system. For example, select **
 
 Apache Spark is downloaded as a compressed .tgz file. Use an extraction program, like 7-zip, to extract the file.
 
-* Visit [7-Zip downloads](https://www.7-zip.org/).
-* In the first table on the page, select the 32-bit x86 or 64-bit x64 download, depending on your operating system.
-* When the download completes, run the installer.
+1. Visit [7-Zip downloads](https://www.7-zip.org/).
+1. In the first table on the page, select the **32-bit x86** or **64-bit x64** download, depending on your operating system.
 
-![7Zip Download](https://dotnet.microsoft.com/static/images/7-zip-downloads.png?v=W6qWtFC1tTMKv3YGXz7lBa9F3M22uWyTvkMmunyroNk)
+  ![7Zip Download](https://dotnet.microsoft.com/static/images/7-zip-downloads.png)
+
+1. When the download completes, run the installer.
 
 ### 4. Install Apache Spark
 
 [Download and install Apache Spark](https://spark.apache.org/downloads.html). You'll need to select from version 2.3.* or 2.4.0, 2.4.1, 2.4.3, or 2.4.4 (.NET for Apache Spark is not compatible with other versions of Apache Spark).
 
-The commands used in the following steps assume you have [downloaded and installed Apache Spark 2.4.1](https://archive.apache.org/dist/spark/spark-2.4.1/spark-2.4.1-bin-hadoop2.7.tgz). If you wish to use a different version, replace **2.4.1** with the appropriate version number. Then, extract the **.tar** file and the Apache Spark files.
+The commands used in the following steps assume you have [downloaded and installed Apache Spark 2.4.1](https://archive.apache.org/dist/spark/spark-2.4.1/spark-2.4.1-bin-hadoop2.7.tgz). If you wish to use a different version, replace **2.4.1** with the appropriate version number. Then, extract the *.tar* file and the Apache Spark files.
 
 To extract the nested **.tar** file:
 
-* Locate the **spark-2.4.1-bin-hadoop2.7.tgz** file that you downloaded.
-* Right click on the file and select **7-Zip -> Extract here**.
-* **spark-2.4.1-bin-hadoop2.7.tar** is created alongside the **.tgz** file you downloaded.
+1. Locate the *spark-2.4.1-bin-hadoop2.7.tgz* file that you downloaded.
+1. Right click on the file and select **7-Zip** > **Extract here**.
+1. *spark-2.4.1-bin-hadoop2.7.tar* is created alongside the *.tgz* file you downloaded.
 
 To extract the Apache Spark files:
 
-* Right click on **spark-2.4.1-bin-hadoop2.7.tar** and select **7-Zip -> Extract files...**
-* Enter **C:\bin** in the **Extract to** field.
-* Uncheck the checkbox below the **Extract to** field.
-* Select **OK**.
-* The Apache Spark files are extracted to C:\bin\spark-2.4.1-bin-hadoop2.7\
+1. Right click on **spark-2.4.1-bin-hadoop2.7.tar** and select **7-Zip** > **Extract files**.
+1. Enter **C:\bin** in the **Extract to** field.
+1. Uncheck the checkbox under the **Extract to** field.
 
-![Install Spark](https://dotnet.microsoft.com/static/images/spark-extract-with-7-zip.png?v=YvjUv54LIxI9FbALPC3h8zSQdyMtK2-NKbFOliG-f8M)
+  ![Install Spark](https://dotnet.microsoft.com/static/images/spark-extract-with-7-zip.png)
+
+1. Select **OK**.
+1. The Apache Spark files are extracted to C:\bin\spark-2.4.1-bin-hadoop2.7\
+
 
 Run the following commands to set the environment variables used to locate Apache Spark:
 
@@ -94,17 +97,18 @@ Download the [Microsoft.Spark.Worker](https://github.com/dotnet/spark/releases) 
 
 To extract the Microsoft.Spark.Worker:
 
-* Locate the **Microsoft.Spark.Worker.netcoreapp2.1.win-x64-0.6.0.zip** file that you downloaded.
-* Right click and select **7-Zip -> Extract files...**.
-* Enter **C:\bin** in the **Extract to** field.
-* Uncheck the checkbox below the **Extract to** field.
-* Select **OK**.
+1. Locate the *Microsoft.Spark.Worker.netcoreapp2.1.win-x64-0.6.0.zip* file that you downloaded.
+1. Right click and select **7-Zip** > **Extract files**.
+1. Enter **C:\bin** in the **Extract to** field.
+1. Uncheck the checkbox below the **Extract to** field.
 
-![Install .NET Spark](https://dotnet.microsoft.com/static/images/dotnet-for-spark-extract-with-7-zip.png?v=jwCyum9mL0mGIi4V5zC7yuvLfcj1_nL-QFFD8TClhZk)
+  ![Install .NET Spark](https://dotnet.microsoft.com/static/images/dotnet-for-spark-extract-with-7-zip.png)
+
+1. Select **OK**.
 
 ### 6. Install WinUtils
 
-.NET for Apache Spark requires WinUtils to be installed alongside Apache Spark. [Download winutils.exe](https://github.com/steveloughran/winutils/blob/master/hadoop-2.7.1/bin/winutils.exe). Then, copy WinUtils into **C:\bin\spark-2.4.1-bin-hadoop2.7\bin**.
+.NET for Apache Spark requires WinUtils to be installed alongside Apache Spark. [Download winutils.exe](https://github.com/steveloughran/winutils/blob/master/hadoop-2.7.1/bin/winutils.exe). Then, copy WinUtils into *C:\bin\spark-2.4.1-bin-hadoop2.7\bin*.
 
 > [!NOTE]
 > If you are using a different version of Hadoop, which is annotated at the end of your Spark install folder name, [select the version of WinUtils](https://github.com/steveloughran/winutils) that's compatible with your version of Hadoop.
@@ -132,9 +136,11 @@ The `dotnet` command creates a `new` application of type `console` for you. The 
 
 ### 2. Install NuGet package
 
-To use .NET for Apache Spark in an app, install the Microsoft.Spark package. In your command prompt, run the following command:
+To use .NET for Apache Spark in an app, install the `Microsoft.Spark` package. In your command prompt, run the following command:
 
-`dotnet add package Microsoft.Spark --version 0.6.0`
+```dotnetcli
+dotnet add package Microsoft.Spark --version 0.6.0
+```
 
 ### 3. Code your app
 
@@ -195,13 +201,13 @@ This .NET app counts words with Apache Spark
    dotnet build
    ```
 
-2. Run the following command to submit your application to run on Apache Spark:
+1. Run the following command to submit your application to run on Apache Spark:
 
    ```powershell
    %SPARK_HOME%\bin\spark-submit --class org.apache.spark.deploy.dotnet.DotnetRunner --master local bin\Debug\netcoreapp3.0\microsoft-spark-2.4.x-0.6.0.jar dotnet bin\Debug\netcoreapp3.0\mySparkApp.dll
    ```
 
-3. When your app runs, the word count data of the *input.txt* file is written to the console.
+1. When your app runs, the word count data of the *input.txt* file is written to the console.
 
 Congratulations! You successfully authored and ran a .NET for Apache Spark app.
 

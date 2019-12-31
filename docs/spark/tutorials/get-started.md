@@ -39,7 +39,7 @@ Install [Java 8.1](https://www.oracle.com/technetwork/java/javase/downloads/jdk8
 
 Select the appropriate version for your operating system. For example, select **jdk-8u201-windows-x64.exe** for a Windows x64 machine. Then, use the command `java` to verify the installation.
 
-![Java Download](https://dotnet.microsoft.com/static/images/java-jdk-downloads-windows.png?v=6BbJHoNyDO-PyYVciImr5wzh2AW_YHNcyb3p093AwPA)
+![Java Download](https://dotnet.microsoft.com/static/images/java-jdk-downloads-windows.png)
 
 ### 3. Install 7-zip
 
@@ -47,9 +47,7 @@ Apache Spark is downloaded as a compressed .tgz file. Use an extraction program,
 
 1. Visit [7-Zip downloads](https://www.7-zip.org/).
 1. In the first table on the page, select the **32-bit x86** or **64-bit x64** download, depending on your operating system.
-
   ![7Zip Download](https://dotnet.microsoft.com/static/images/7-zip-downloads.png)
-
 1. When the download completes, run the installer.
 
 ### 4. Install Apache Spark
@@ -69,12 +67,9 @@ To extract the Apache Spark files:
 1. Right click on **spark-2.4.1-bin-hadoop2.7.tar** and select **7-Zip** > **Extract files**.
 1. Enter **C:\bin** in the **Extract to** field.
 1. Uncheck the checkbox under the **Extract to** field.
-
   ![Install Spark](https://dotnet.microsoft.com/static/images/spark-extract-with-7-zip.png)
-
 1. Select **OK**.
-1. The Apache Spark files are extracted to C:\bin\spark-2.4.1-bin-hadoop2.7\
-
+1. The Apache Spark files are extracted to *C:\bin\spark-2.4.1-bin-hadoop2.7\*
 
 Run the following commands to set the environment variables used to locate Apache Spark:
 
@@ -101,9 +96,7 @@ To extract the Microsoft.Spark.Worker:
 1. Right click and select **7-Zip** > **Extract files**.
 1. Enter **C:\bin** in the **Extract to** field.
 1. Uncheck the checkbox below the **Extract to** field.
-
   ![Install .NET Spark](https://dotnet.microsoft.com/static/images/dotnet-for-spark-extract-with-7-zip.png)
-
 1. Select **OK**.
 
 ### 6. Install WinUtils

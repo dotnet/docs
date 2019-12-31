@@ -15,7 +15,7 @@ This tutorial takes you through an interactive experience building a sample solu
 ## Creating the source project
 
 Open a shell window. Create a directory called *unit-testing-with-fsharp* to hold the solution.
-Inside this new directory, run [`dotnet new sln`](../tools/dotnet-new.md) to create a new solution. This
+Inside this new directory, run `dotnet new sln` to create a new solution. This
 makes it easier to manage both the class library and the unit test project.
 Inside the solution directory, create a *MathService* directory. The directory and file structure thus far is shown below:
 
@@ -25,15 +25,14 @@ Inside the solution directory, create a *MathService* directory. The directory a
     /MathService
 ```
 
-Make *MathService* the current directory and run [`dotnet new classlib -lang F#`](../tools/dotnet-new.md) to create the source project.  You'll create a failing implementation of the math service:
+Make *MathService* the current directory, and run `dotnet new classlib -lang "F#"` to create the source project. You'll create a failing implementation of the math service:
 
 ```fsharp
 module MyMath =
     let squaresOfOdds xs = raise (System.NotImplementedException("You haven't written a test yet!"))
 ```
 
-Change the directory back to the *unit-testing-with-fsharp* directory. Run [`dotnet sln add .\MathService\MathService.fsproj`](../tools/dotnet-sln.md)
-to add the class library project to the solution.
+Change the directory back to the *unit-testing-with-fsharp* directory. Run `dotnet sln add .\MathService\MathService.fsproj` to add the class library project to the solution.
 
 ## Creating the test project
 
@@ -48,7 +47,7 @@ Next, create the *MathService.Tests* directory. The following outline shows the 
     /MathService.Tests
 ```
 
-Make the *MathService.Tests* directory the current directory and create a new project using [`dotnet new xunit -lang F#`](../tools/dotnet-new.md). This creates a test project that uses xUnit as the test library. The generated template configures the test runner in the *MathServiceTests.fsproj*:
+Make the *MathService.Tests* directory the current directory and create a new project using `dotnet new xunit -lang "F#"`. This creates a test project that uses xUnit as the test library. The generated template configures the test runner in the *MathServiceTests.fsproj*:
 
 ```xml
 <ItemGroup>
@@ -58,7 +57,7 @@ Make the *MathService.Tests* directory the current directory and create a new pr
 </ItemGroup>
 ```
 
-The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added xUnit and the xUnit runner. Now, add the `MathService` class library as another dependency to the project. Use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
+The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added xUnit and the xUnit runner. Now, add the `MathService` class library as another dependency to the project. Use the `dotnet add reference` command:
 
 ```dotnetcli
 dotnet add reference ../MathService/MathService.fsproj
@@ -79,7 +78,7 @@ You have the following final solution layout:
         MathServiceTests.fsproj
 ```
 
-Execute [`dotnet sln add .\MathService.Tests\MathService.Tests.fsproj`](../tools/dotnet-sln.md) in the *unit-testing-with-fsharp* directory. 
+Execute `dotnet sln add .\MathService.Tests\MathService.Tests.fsproj` in the *unit-testing-with-fsharp* directory. 
 
 ## Creating the first test
 
@@ -94,7 +93,7 @@ let ``My test`` () =
 let ``Fail every time`` () = Assert.True(false)
 ```
 
-The `[<Fact>]` attribute denotes a test method that is run by the test runner. From the *unit-testing-with-fsharp*, execute [`dotnet test`](../tools/dotnet-test.md) to build the tests and the class library and then run the tests. The xUnit test runner contains the program entry point to run your tests. `dotnet test` starts the test runner using the unit test project you've created.
+The `[<Fact>]` attribute denotes a test method that is run by the test runner. From the *unit-testing-with-fsharp*, execute `dotnet test` to build the tests and the class library and then run the tests. The xUnit test runner contains the program entry point to run your tests. `dotnet test` starts the test runner using the unit test project you've created.
 
 These two tests show the most basic passing and failing tests. `My test` passes, and `Fail every time` fails. Now, create a test for the `squaresOfOdds` method. The `squaresOfOdds` method returns a sequence of the squares of all odd integer values that are part of the input sequence. Rather than trying to write all of those functions at once, you can iteratively create tests that validate the functionality. Making each test pass means creating the necessary functionality for the method.
 
@@ -162,3 +161,10 @@ let squaresOfOdds xs =
 ```
 
 You've built a small library and a set of unit tests for that library. You've structured the solution so that adding new packages and tests is part of the normal workflow. You've concentrated most of your time and effort on solving the goals of the application.
+
+## See also
+
+- [dotnet new](../tools/dotnet-new.md)
+- [dotnet sln](../tools/dotnet-new.md)
+- [dotnet add reference](../tools/dotnet-add-reference.md)
+- [dotnet test](../tools/dotnet-test.md)

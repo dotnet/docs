@@ -25,13 +25,13 @@ A *join* of two data sources is the association of objects in one data source wi
   
 ### Join  
   
-The following example uses the `join … in … on … equals …` clause to join two sequences based on specific value
+The following example uses the `join … in … on … equals …` clause to join two sequences based on specific value:
   
 [!code-csharp[Join](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQJoin/CS/JoinOperation.cs#Join)]  
 
 ### GroupJoin  
 
-The following example uses the `join … in … on … equals … into …` clause to join two sequences based on specific value and groups the resulting matches for each element
+The following example uses the `join … in … on … equals … into …` clause to join two sequences based on specific value and groups the resulting matches for each element:
   
 [!code-csharp[GroupJoin](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQJoin/CS/JoinOperation.cs#GroupJoin)]  
   

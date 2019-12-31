@@ -62,7 +62,7 @@ It often is convenient to sort returned data into a particular order. The `Order
 
 To order the results in reverse order, from Z to A, use the `Order By...Descending` clause. The default is `Ascending` when neither `Ascending` nor `Descending` is specified.
 
-For more information about how to use the `Order By` clause in Visual Basic, see [Order By Clause](../../../language-reference/queries/order-by-clause.md).
+For more information about how to use the `Order By` clause in Visual Basic, see [Order By clause](../../../language-reference/queries/order-by-clause.md).
 
 ## Select data (`Select`)
 

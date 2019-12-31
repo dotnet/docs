@@ -58,7 +58,7 @@ items:
 
     You've added two more names to the end of the list. You've also removed one as well. The output from this block of code shows the initial contents, then prints a blank line and the new contents.
 
-    The <xref:System.Collections.Generic.List%601> enables you to reference individual items by **index** as well. You access items using the `[` and `]` tokens. Add the following code below what you've already written and try it:
+    The <xref:System.Collections.Generic.List%601> enables you to reference individual items by **index** as well. You access items using the `[` and `]` tokens. Add the following code below to what you've already written and try it:
 
     ```csharp
     Console.WriteLine($"My name is {names[0]}.");

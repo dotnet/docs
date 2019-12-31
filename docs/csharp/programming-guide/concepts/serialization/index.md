@@ -75,7 +75,7 @@ Designer serialization is a special form of serialization that involves the kind
 Shows how to get the `System.Text.Json` library.
 
 [How to serialize and deserialize JSON in .NET](../../../../standard/serialization/system-text-json-how-to.md). 
-Shows how to use the `System.Text.Json` library.
+Shows how to read and write object data to and from JSON using the <xref:System.Text.Json.JsonSerializer> class.
 
 [Walkthrough: Persisting an Object in Visual Studio (C#)](walkthrough-persisting-an-object-in-visual-studio.md)  
 Demonstrates how serialization can be used to persist an object's data between instances, allowing you to store values and retrieve them the next time the object is instantiated.

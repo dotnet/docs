@@ -71,7 +71,7 @@ During serialization, `Newtonsoft.Json` is relatively permissive about letting c
 
 When `Newtonsoft.Json` deserializes to `Object` properties in POCOs or in dictionaries of type `Dictionary<string, Object>`, it:
 
-* "Guesses" the type of "primitive" values in the JSON and stores `string`/`long`/`double`/`boolean`/`DateTime` as a boxed object.
+* Infers the type of primitive values in the JSON payload (other than `null`) and returns the stored `string`, `long`, `double`, `boolean`, or `DateTime` as a boxed object. *Primitive values* are single JSON values such as a JSON number, string, true, false, or null.
 * Returns the stored complex values as a `JObject` or `JArray`. *Complex values* are collections of JSON key-value pairs within braces (`{}` ) or lists of values within brackets (`[]`). The properties and values within the braces or brackets can have additional properties or values.
 * Returns a `null` reference when the payload has the `null` JSON literal.
 

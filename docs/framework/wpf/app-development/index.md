@@ -21,11 +21,11 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
 > [!NOTE]
 > Using WPF types in a Windows service is strongly discouraged. If you attempt to use these features in a Windows service, they may not work as expected.  
   
- To build this set of applications, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] implements a host of services. This topic provides an overview of these services and where to find more information.  
+ To build this set of applications, WPF implements a host of services. This topic provides an overview of these services and where to find more information.  
 
 <a name="Application_Management"></a>   
 ## Application Management  
- Executable [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications commonly require a core set of functionality that includes the following:  
+ Executable WPF applications commonly require a core set of functionality that includes the following:  
   
 - Creating and managing common application infrastructure (including creating an entry point method and a Windows message loop to receive system and input messages).  
   
@@ -49,13 +49,13 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
   
 <a name="WPF_Application_Resource__Content__and_Data_Files"></a>   
 ## WPF Application Resource, Content, and Data Files  
- [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] extends the core support in the Microsoft .NET Framework for embedded resources with support for three kinds of non-executable data files: resource, content, and data. For more information, see [WPF Application Resource, Content, and Data Files](wpf-application-resource-content-and-data-files.md).  
+ WPF extends the core support in the Microsoft .NET Framework for embedded resources with support for three kinds of non-executable data files: resource, content, and data. For more information, see [WPF Application Resource, Content, and Data Files](wpf-application-resource-content-and-data-files.md).  
   
  A key component of the support for WPF non-executable data files is the ability to identify and load them using a unique URI. For more information, see [Pack URIs in WPF](pack-uris-in-wpf.md).  
   
 <a name="Windows_and_Dialog_Boxes"></a>   
 ## Windows and Dialog Boxes  
- Users interact with [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] standalone applications through windows. The purpose of a window is to host application content and expose application functionality that usually allows users to interact with the content. In [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], windows are encapsulated by the <xref:System.Windows.Window> class, which supports:  
+ Users interact with WPF standalone applications through windows. The purpose of a window is to host application content and expose application functionality that usually allows users to interact with the content. In WPF, windows are encapsulated by the <xref:System.Windows.Window> class, which supports:  
   
 - Creating and showing windows.  
   
@@ -69,7 +69,7 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
   
  <xref:System.Windows.Window> supports the ability to create a special type of window known as a dialog box. Both modal and modeless types of dialog boxes can be created.  
   
- For convenience, and the benefits of reusability and a consistent user experience across applications, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] exposes three of the common Windows dialog boxes: <xref:Microsoft.Win32.OpenFileDialog>, <xref:Microsoft.Win32.SaveFileDialog>, and <xref:System.Windows.Controls.PrintDialog>.  
+ For convenience, and the benefits of reusability and a consistent user experience across applications, WPF exposes three of the common Windows dialog boxes: <xref:Microsoft.Win32.OpenFileDialog>, <xref:Microsoft.Win32.SaveFileDialog>, and <xref:System.Windows.Controls.PrintDialog>.  
   
  A message box is a special type of dialog box for showing important textual information to users, and for asking simple Yes/No/OK/Cancel questions. You use the <xref:System.Windows.MessageBox> class to create and show message boxes.  
   
@@ -77,7 +77,7 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
   
 <a name="Navigation"></a>   
 ## Navigation  
- [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] supports Web-style navigation using pages (<xref:System.Windows.Controls.Page>) and hyperlinks (<xref:System.Windows.Documents.Hyperlink>). Navigation can be implemented in a variety of ways that include the following:  
+ WPF supports Web-style navigation using pages (<xref:System.Windows.Controls.Page>) and hyperlinks (<xref:System.Windows.Documents.Hyperlink>). Navigation can be implemented in a variety of ways that include the following:  
   
 - Standalone pages that are hosted in a Web browser.  
   
@@ -87,7 +87,7 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
   
 - Pages that are hosted by a frame (<xref:System.Windows.Controls.Frame>), which may be hosted in a standalone page, or a page compiled into either an XBAP or a standalone application.  
   
- To facilitate navigation, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] implements the following:  
+ To facilitate navigation, WPF implements the following:  
   
 - <xref:System.Windows.Navigation.NavigationService>, the shared navigation engine for processing navigation requests that is used by <xref:System.Windows.Controls.Frame>, <xref:System.Windows.Navigation.NavigationWindow>, and XBAPs to support intra-application navigation.  
   
@@ -99,7 +99,7 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
   
  For information, see [Navigation Overview](navigation-overview.md).  
   
- [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] also supports a special type of navigation known as structured navigation. Structured navigation can be used to call one or more pages that return data in a structured and predictable way that is consistent with calling functions. This capability depends on the <xref:System.Windows.Navigation.PageFunction%601> class, which is described further in [Structured Navigation Overview](structured-navigation-overview.md). <xref:System.Windows.Navigation.PageFunction%601> also serves to simplify the creation of complex navigation topologies, which are described in [Navigation Topologies Overview](navigation-topologies-overview.md).  
+ WPF also supports a special type of navigation known as structured navigation. Structured navigation can be used to call one or more pages that return data in a structured and predictable way that is consistent with calling functions. This capability depends on the <xref:System.Windows.Navigation.PageFunction%601> class, which is described further in [Structured Navigation Overview](structured-navigation-overview.md). <xref:System.Windows.Navigation.PageFunction%601> also serves to simplify the creation of complex navigation topologies, which are described in [Navigation Topologies Overview](navigation-topologies-overview.md).  
   
 <a name="Hosting"></a>   
 ## Hosting  
@@ -107,7 +107,7 @@ Windows Presentation Foundation (WPF) is a presentation framework that can be us
   
 <a name="Build_and_Deploy"></a>   
 ## Build and Deploy  
- Although simple [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications can be built from a command prompt using command-line compilers, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] integrates with Visual Studio to provide additional support that simplified the development and build process. For more information, see [Building a WPF Application](building-a-wpf-application-wpf.md).  
+ Although simple WPF applications can be built from a command prompt using command-line compilers, WPF integrates with Visual Studio to provide additional support that simplified the development and build process. For more information, see [Building a WPF Application](building-a-wpf-application-wpf.md).  
   
  Depending on the type of application you build, there are one or more deployment options to choose from. For more information, see [Deploying a WPF Application](deploying-a-wpf-application-wpf.md).  
   

@@ -8,7 +8,7 @@ ms.date: 12/28/2019
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-Elasticsearch is a distributed search and analytics system that enables complex search capabilities across many types of data. It's open source and widely popular. Consider companies that use Elasticsearch:
+Elasticsearch is a distributed search and analytics system that enables complex search capabilities across diverse types of data. It's open source and widely popular. Consider how the following companies integrate Elasticsearch into their application:
 
 - [Wikipedia](https://blog.wikimedia.org/2014/01/06/wikimedia-moving-to-elasticsearch/) for full-text and incremental (search as you type) searching.
 - [GitHub](https://www.elastic.co/customers/github) to index and expose over 8 million code repositories.  
@@ -22,9 +22,9 @@ Elasticsearch is built on top of the [Apache Lucene](https://lucene.apache.org/c
 - Phrase (a sequence of text in a document)
 - Boolean value (complex searches combining queries)
 
-While Lucene provides low-level plumbing for searching, Elasticsearch is a server that sits on top. Elasticsearch adds higher-level functionality, including a RESTful API to access Lucene’s indexing and searching functionality. It also provides a distributed searching infrastructure capable of massive scalability, fault tolerance, and high availability.
+While Lucene provides low-level plumbing for searching, Elasticsearch provides the server that sits on top of Lucene. Elasticsearch adds higher-level functionality to simplify working Lucene, including a RESTful API to access Lucene’s indexing and searching functionality. It also provides a distributed infrastructure capable of massive scalability, fault tolerance, and high availability.
 
-For larger cloud-native applications with complex search requirements, Elasticsearch is available as [managed PaaS service in Azure](https://azuremarketplace.microsoft.com/marketplace/apps/elastic.elasticsearch?utm_campaign=social&utm_content=b7b94333e78f42d7a4dfc8348a6f48ac&utm_medium=t&utm_source=mkt-elasticsearchelasticsearch). From the Microsoft Azure Marketplace, developers can utilize preconfigured templates built by Elastic to quickly deploy an Elasticsearch cluster on Azure. Using the Azure-managed offering, you can deploy up to 50 data nodes, 20 coordinating nodes, and three dedicated master nodes.
+For larger cloud-native applications with complex search requirements, Elasticsearch is available as [managed PaaS service in Azure](https://azuremarketplace.microsoft.com/marketplace/apps/elastic.elasticsearch?utm_campaign=social&utm_content=b7b94333e78f42d7a4dfc8348a6f48ac&utm_medium=t&utm_source=mkt-elasticsearchelasticsearch). From the Microsoft Azure Marketplace, developers can use preconfigured templates built to quickly deploy an Elasticsearch cluster on Azure. Using the Azure-managed offering, you can deploy up to 50 data nodes, 20 coordinating nodes, and three dedicated master nodes.
 
 ## Summary
 

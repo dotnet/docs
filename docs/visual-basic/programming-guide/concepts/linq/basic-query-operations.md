@@ -52,7 +52,7 @@ To return customers from London or Paris, use the following code:
 Where cust.City = "London" OrElse cust.City = "Paris"
 ```
 
-For more information about how to use the `Where` clause in Visual Basic, see [Where Clause](../../../language-reference/queries/where-clause.md).
+For more information about how to use the `Where` clause in Visual Basic, see [Where clause](../../../language-reference/queries/where-clause.md).
 
 ## Order data (`Order By`)
 

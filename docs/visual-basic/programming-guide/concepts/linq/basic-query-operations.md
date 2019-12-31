@@ -32,7 +32,7 @@ In a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query, the first step is 
 
 The `From` clause specifies the data source, `customers`, and a *range variable*, `cust`. The range variable is like a loop iteration variable, except that in a query expression, no actual iteration occurs. When the query is executed, often by using a `For Each` loop, the range variable serves as a reference to each successive element in `customers`. Because the compiler can infer the type of `cust`, you do not have to specify it explicitly. For examples of queries written with and without explicit typing, see [Type Relationships in Query Operations (Visual Basic)](type-relationships-in-query-operations.md).
 
-For more information about how to use the `From` clause in Visual Basic, see [From Clause](../../../language-reference/queries/from-clause.md).
+For more information about how to use the `From` clause in Visual Basic, see [From clause](../../../language-reference/queries/from-clause.md).
 
 ## Filter data (`Where`)
 

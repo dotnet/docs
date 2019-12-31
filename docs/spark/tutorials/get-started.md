@@ -21,7 +21,7 @@ In this tutorial, you learn how to:
 
 ## Prepare your environment
 
-Before you begin writing your app, you need to set up some prerequisite dependencies. If you can run `dotnet`, `java`, `mvn`, `spark-shell` from your command line environment, then your environment is already prepared and you can skip to the next section. If you cannot run any or all of the commands, do the following steps.
+Before you begin writing your app, you need to set up some prerequisite dependencies. If you can run `dotnet`, `java`, `mvn`, and `spark-shell` from your command line environment, then your environment is already prepared and you can skip to the next section. If you cannot run any or all of the commands, do the following steps.
 
 ### 1. Install .NET
 
@@ -43,7 +43,7 @@ Select the appropriate version for your operating system. For example, select **
 
 ### 3. Install 7-zip
 
-Apache Spark is downloaded as a compressed .tgz file. Use an extraction program, like 7-zip, to extract the file.
+Apache Spark is downloaded as a compressed *.tgz* file. Use an extraction program, like 7-zip, to extract the file.
 
 1. Visit [7-Zip downloads](https://www.7-zip.org/).
 1. In the first table on the page, select the **32-bit x86** or **64-bit x64** download, depending on your operating system.
@@ -52,7 +52,7 @@ Apache Spark is downloaded as a compressed .tgz file. Use an extraction program,
 
 ### 4. Install Apache Spark
 
-[Download and install Apache Spark](https://spark.apache.org/downloads.html). You'll need to select from version 2.3.* or 2.4.0, 2.4.1, 2.4.3, or 2.4.4 (.NET for Apache Spark is not compatible with other versions of Apache Spark).
+[Download and install Apache Spark](https://spark.apache.org/downloads.html). Select a version from 2.3.\*, 2.4.0, 2.4.1, 2.4.3, or 2.4.4. .NET for Apache Spark is not compatible with other versions of Apache Spark.
 
 The commands used in the following steps assume you have [downloaded and installed Apache Spark 2.4.1](https://archive.apache.org/dist/spark/spark-2.4.1/spark-2.4.1-bin-hadoop2.7.tgz). If you wish to use a different version, replace **2.4.1** with the appropriate version number. Then, extract the *.tar* file and the Apache Spark files.
 
@@ -125,7 +125,7 @@ dotnet new console -o mySparkApp
 cd mySparkApp
 ```
 
-The `dotnet` command creates a `new` application of type `console` for you. The `-o` parameter creates a directory named *mySparkApp* where your app is stored and populates it with the required files. The `cd mySparkApp` command changes the directory to the app directory you just created.
+The `dotnet` command creates a new application of type `console` for you. The `-o` parameter creates a directory named *mySparkApp* where your app is stored and populates it with the required files. The `cd mySparkApp` command changes the directory to the app directory you just created.
 
 ### 2. Install NuGet package
 

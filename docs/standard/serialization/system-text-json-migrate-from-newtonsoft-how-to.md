@@ -20,7 +20,7 @@ This article shows how to migrate from [Newtonsoft.Json](https://www.newtonsoft.
 
 Most of this article is about how to use the <xref:System.Text.Json.JsonSerializer> API, but it also includes guidance on how to use the <xref:System.Text.Json.JsonDocument> (which represents the Document Object Model or DOM), the <xref:System.Text.Json.Utf8JsonReader> and the <xref:System.Text.Json.Utf8JsonWriter> types. The article is organized into sections in the following order:
 
-* [Differences in **default** JsonSerializer behavior compared to Newtonsoft.Json](#differences-in-default-behavior)
+* [Differences in **default** JsonSerializer behavior compared to Newtonsoft.Json](#differences-in-default-jsonserializer-behavior-compared-to-newtonsoftjson)
 * [Scenarios using JsonSerializer that require workarounds](#scenarios-using-jsonserializer-that-require-workarounds)
 * [Scenarios that JsonSerializer currently doesn't support](#scenarios-that-jsonserializer-currently-doesnt-support)
 * [JsonDocument](#jsondocument)
@@ -133,7 +133,7 @@ To make deserialization fail if no `Date` property is in the JSON, implement a c
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/WeatherForecastRequiredPropertyConverter.cs)]
 
-[Register this custom converter](system-text-json-converters-how-to.md#register-a-custom-converter) by using an attribute on the POCO class or by adding the converter to the `Converters` collection.
+Register this custom converter by [using an attribute](system-text-json-converters-how-to.md#registration-sample---jsonconverter-on-a-type) on the POCO class or by [adding the converter to the `Converters` collection](system-text-json-converters-how-to.md#registration-sample---converters-collection).
 
 If you follow this pattern, don't pass in the options object when recursively calling `Serialize` or `Deserialize`. The options object contains the `Converters` collection. If you pass it in to `Serialize` or `Deserialize`, the custom converter calls into itself, making an infinite loop that results in a stack overflow exception. If the default options are not feasible, create a new instance of the options with the settings that you need. This approach will be slow since each new instance caches independently.
 
@@ -154,7 +154,7 @@ Another workaround is to make a converter for the type, such as the following ex
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/DateTimeOffsetNullHandlingConverter.cs)]
 
-[Register this custom converter](system-text-json-converters-how-to.md#register-a-custom-converter) by using an attribute on the property or by adding the converter to the `Converters` collection.
+Register this custom converter by [using an attribute](system-text-json-converters-how-to.md#registration-sample---jsonconverter-on-a-property) on the property or by [adding the converter to the `Converters` collection](system-text-json-converters-how-to.md#registration-sample---converters-collection).
 
 ### Deserialize to immutable classes and structs
 
@@ -168,7 +168,7 @@ And here's a converter that serializes and deserializes this struct:
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/ImmutablePointConverter.cs)]
 
-[Register this custom converter](system-text-json-converters-how-to.md#register-a-custom-converter) by adding the converter to the `Converters` collection.
+Register this custom converter by [adding the converter to the `Converters` collection](system-text-json-converters-how-to.md#registration-sample---converters-collection).
 
 For an example of a similar converter that handles open generic properties, see the [built-in converter for key-value pairs](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/Converters/JsonValueConverterKeyValuePair.cs).
 
@@ -204,9 +204,9 @@ For that functionality, you can write a custom converter. Here's a sample POCO a
 
 The converter causes the `Summary` property to be omitted from serialization if its value is null, an empty string, or "N/A". 
 
-[Register this custom converter](system-text-json-converters-how-to.md#register-a-custom-converter) by adding the converter to the `Converters` collection or by applying the `[JsonConvert]` attribute to the class.
+Register this custom converter by [using an attribute](system-text-json-converters-how-to.md#registration-sample---jsonconverter-on-a-type) on the class or by [adding the converter to the `Converters` collection](system-text-json-converters-how-to.md#registration-sample---converters-collection).
 
-This approach requires complex code if:
+This approach requires additional logic if:
 
 * The POCO includes complex properties.
 * You need to handle attributes such as `[JsonIgnore]` or options such as custom encoders.
@@ -224,7 +224,7 @@ In `System.Text.Json`, you can simulate callbacks by writing a custom converter.
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/WeatherForecastCallbacksConverter.cs)]
 
-[Register the converter](system-text-json-converters-how-to.md#register-a-custom-converter) by adding the converter to the `Converters` collection or by applying the `[JsonConvert]` attribute to the class.
+Register this custom converter by [using an attribute](system-text-json-converters-how-to.md#registration-sample---jsonconverter-on-a-type) on the class or by [adding the converter to the `Converters` collection](system-text-json-converters-how-to.md#registration-sample---converters-collection).
 
 If you use a custom converter that follows this example:
 

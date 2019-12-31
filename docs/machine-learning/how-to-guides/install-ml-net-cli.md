@@ -21,7 +21,7 @@ The ML.NET CLI generates good quality ML.NET models and source code using automa
 
 - (Optional) [Visual Studio 2017 or 2019](https://visualstudio.microsoft.com/vs/)
 
-You can run the generated C# code projects with Visual Studio F5 or with `dotnet run` (.NET Core CLI).
+You can run the generated C# code projects with Visual Studio by pressing the `F5` key or with `dotnet run` (.NET Core CLI).
 
 Note: If after installing [.NET Core 2.2 SDK](https://dotnet.microsoft.com/download/dotnet-core/2.2) the `dotnet tool` command is not working, sign out from Windows and sign in again.
 

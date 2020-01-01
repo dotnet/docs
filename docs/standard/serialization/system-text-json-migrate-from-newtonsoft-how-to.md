@@ -158,7 +158,7 @@ Register this custom converter by [using an attribute](system-text-json-converte
 
 ### Deserialize to immutable classes and structs
 
-`Newtonsoft.Json` can deserialize to immutable classes and structs because it can use constructors that have parameters. `System.Text.Json` supports only parameterless constructors. As a workaround, you can call a constructor with parameters in a custom converter.
+`Newtonsoft.Json` can deserialize to immutable classes and structs because it can use constructors that have parameters. `System.Text.Json` supports only public parameterless constructors. As a workaround, you can call a constructor with parameters in a custom converter.
 
 Here's an immutable struct with multiple constructor parameters:
 
@@ -181,7 +181,7 @@ The `Newtonsoft.Json` `[JsonConstructor]` attribute lets you specify which const
 `Newtonsoft.Json` has several ways to conditionally ignore a property on serialization or deserialization:
 
 * `DefaultContractResolver` lets you select properties to include or exclude, based on arbitrary criteria. 
-* The `NullValueHandling` and `DefaultValueHandling` setting on `JsonSerializerOptions` lets you specify that all null-value or default-value properties should be ignored.
+* The `NullValueHandling` and `DefaultValueHandling` setting on `JsonSerializerSettings` lets you specify that all null-value or default-value properties should be ignored.
 * The `NullValueHandling` and `DefaultValueHandling` setting on `[JsonProperty]` attribute lets you specify individual properties that should be ignored when set to null or default value.
 
 `System.Text.Json` provides the following ways to omit properties while serializing:
@@ -189,7 +189,7 @@ The `Newtonsoft.Json` `[JsonConstructor]` attribute lets you specify which const
 * The [[JsonIgnore]](system-text-json-how-to.md#exclude-individual-properties) attribute on a property causes the property to be omitted from the JSON during serialization.
 * The [IgnoreNullValues](system-text-json-how-to.md#exclude-all-null-value-properties) global option lets you exclude all null-value properties.
 
-These options don't let you:
+These options **don't** let you:
 
 * Ignore all properties that have the default value for the type.
 * Ignore selected properties that have the default value for the type.
@@ -226,7 +226,7 @@ In `System.Text.Json`, you can simulate callbacks by writing a custom converter.
 
 Register this custom converter by [using an attribute](system-text-json-converters-how-to.md#registration-sample---jsonconverter-on-a-type) on the class or by [adding the converter](system-text-json-converters-how-to.md#registration-sample---converters-collection) to the <xref:System.Text.Json.JsonSerializerOptions.Converters> collection.
 
-If you use a custom converter that follows this example:
+If you use a custom converter that follows the preceding sample:
 
 * The `OnDeserializing` code doesn't have access to the new POCO instance. To manipulate the new POCO instance at the start of deserialization, put that code in the POCO constructor.
 * Don't pass in the options object when recursively calling `Serialize` or `Deserialize`. The options object contains the `Converters` collection. If you pass it in to `Serialize` or `Deserialize`, the converter will be used, making an infinite loop that results in a stack overflow exception.

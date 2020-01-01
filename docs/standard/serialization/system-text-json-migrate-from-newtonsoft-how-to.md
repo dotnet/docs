@@ -156,6 +156,22 @@ Another workaround is to make a converter for the type, such as the following ex
 
 Register this custom converter by [using an attribute](system-text-json-converters-how-to.md#registration-sample---jsonconverter-on-a-property) on the property or by [adding the converter](system-text-json-converters-how-to.md#registration-sample---converters-collection) to the <xref:System.Text.Json.JsonSerializerOptions.Converters> collection.
 
+The preceding converter handles null values differently than `Newtonsoft.Json` does for POCOs that specify default values. For example, suppose the following code represents your target object:
+
+[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/WeatherForecast.cs?name=SnippetWFWithDefault)]
+
+And suppose the following JSON is deserialized by using the preceding converter:
+
+```json
+{
+  "Date": null,
+  "TemperatureCelsius": 25,
+  "Summary": null
+}
+```
+
+After deserialization, the `Date` property has 1/1/0001 (`default(DateTimeOffset)`), that is, the value set in the constructor is overwritten. Given the same POCO and JSON, `Newtonsoft.Json` deserialization would leave 1/1/2001 in the `Date` property.
+
 ### Deserialize to immutable classes and structs
 
 `Newtonsoft.Json` can deserialize to immutable classes and structs because it can use constructors that have parameters. `System.Text.Json` supports only public parameterless constructors. As a workaround, you can call a constructor with parameters in a custom converter.
@@ -188,6 +204,7 @@ The `Newtonsoft.Json` `[JsonConstructor]` attribute lets you specify which const
 
 * The [[JsonIgnore]](system-text-json-how-to.md#exclude-individual-properties) attribute on a property causes the property to be omitted from the JSON during serialization.
 * The [IgnoreNullValues](system-text-json-how-to.md#exclude-all-null-value-properties) global option lets you exclude all null-value properties.
+* The [IgnoreReadOnlyProperties](system-text-json-how-to.md#exclude-all-read-only-properties) global option lets you exclude all read-only properties.
 
 These options **don't** let you:
 

@@ -6,7 +6,7 @@ ms.date: 21/12/2019
 
 # F# Compiler Messages
 
-This section details compiler errors and warnings that the F# compiler will emit for certain constructs. The default sets of errors can be changed by
+This section details compiler errors and warnings that the F# compiler will emit for certain constructs. The default sets of errors can be changed by:
 
 - Treating specific warnings as if they were errors by using the `-warnaserror+` compiler option,
 

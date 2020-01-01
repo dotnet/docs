@@ -3,10 +3,9 @@ title: "Collections and Collection Types for XAML"
 ms.date: "03/30/2017"
 ms.assetid: 58f8e7c6-9a41-4f25-8551-c042f1315baa
 ---
+# Collections and collection types for XAML
 
-# Collections and Collection Types for XAML
-
-This topic describes how to define properties of types that are intended to support a collection, and to support the XAML syntax for instantiating collection items as element children of a parent object element or property element.
+This article describes how to define properties of types that are intended to support a collection, and to support the XAML syntax for instantiating collection items as element children of a parent object element or property element.
 
 ## XAML Collection Concepts
 
@@ -22,7 +21,7 @@ In .NET Framework XAML Services, the concept of XAML collection support is more 
 
 3. <xref:System.Array> represents an array, and an array supports <xref:System.Collections.IList> methods.
 
-In each of these collection concepts, a .NET Framework XAML Services XAML processor expects to call the `Add` method on a specific instance of the collection property's type. Or, in a serialization scenario, a XAML processor produces discrete XAML-type instances for each item found in the list, dictionary or array based on each collection's specific concept of "Items". These are : <xref:System.Collections.IList.Item%2A>; <xref:System.Collections.IDictionary.Item%2A>; the explicit <xref:System.Array.System%23Collections%23IList%23Item%2A> for <xref:System.Array>.
+In each of these collection concepts, a .NET Framework XAML Services XAML processor expects to call the `Add` method on a specific instance of the collection property's type. Or, in a serialization scenario, a XAML processor produces discrete XAML-type instances for each item found in the list, dictionary, or array based on each collection's specific concept of "Items". These items are: <xref:System.Collections.IList.Item%2A?displayProperty=nameWithType>; <xref:System.Collections.IDictionary.Item%2A?displayProperty=nameWithType>; the explicit <xref:System.Array.System%23Collections%23IList%23Item%2A?displayProperty=nameWithType> for <xref:System.Array>.
 
 ## Generic Collections
 
@@ -42,4 +41,4 @@ Beyond the basic mechanics of parsing XAML and populating or serializing collect
 
 2. <xref:System.Xaml.XamlType.IsDictionary%2A> and <xref:System.Xaml.XamlType.IsArray%2A> can further identify which collection mode the XAML type supports. For custom XAML processors that are based on .NET Framework XAML Services and the XAML type system but not based on existing <xref:System.Xaml.XamlWriter> implementations, knowing which collection mode is used might be necessary in order to know which method to invoke for collection processing.
 
-3. Each of the previous property values are potentially influenced by overrides of <xref:System.Xaml.XamlType.LookupCollectionKind%2A> on a XAML type.
+3. Each of the previous property values is potentially influenced by overrides of <xref:System.Xaml.XamlType.LookupCollectionKind%2A> on a XAML type.

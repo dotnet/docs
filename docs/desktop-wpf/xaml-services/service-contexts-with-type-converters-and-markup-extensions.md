@@ -10,7 +10,7 @@ Authors of the types that support type converter and markup extension usages mus
   
 <a name="obtaining_services"></a>   
 ## Obtaining Services  
- As an implementer of a value converter, you often need access to some type of context in which the value converter is applied. This context might include information such as the active XAML schema context, access to the type mapping system that the XAML schema context and XAML object writer provide, and so on. The services available for a markup extension or type converter implementation are communicated through the context parameters that are part of the signature of each virtual method. In every case, you have <xref:System.IServiceProvider> implemented in the context, and can call <xref:System.IServiceProvider.GetService%2A?displayProperty=nameWithType> to request a service.  
+ As an implementer of a value converter, you often need access to some type of context in which the value converter is applied. This context might include information such as the active XAML schema context, access to the type-mapping system that the XAML schema context and XAML object writer provide, and so on. The services available for a markup extension or type converter implementation are communicated through the context parameters that are part of the signature of each virtual method. In every case, you have <xref:System.IServiceProvider> implemented in the context, and can call <xref:System.IServiceProvider.GetService%2A?displayProperty=nameWithType> to request a service.  
   
 <a name="services_for_a_markup_extension"></a>   
 ## Services for a Markup Extension  
@@ -60,7 +60,7 @@ public override object ConvertFrom(ITypeDescriptorContext typeDescriptorContext,
   
 <a name="using_the_xaml_service_provider_contexts"></a>   
 ## Using the XAML Service Provider Contexts  
- The service provider for <xref:System.IServiceProvider.GetService%2A> access to XAML services available to markup extensions or type converters is implemented as an internal class, with exposure only through the interface and how it is passed into the relevant context . Whenever a XAML processing operation in the default .NET Framework XAML Services implementations of load path or save path invokes the relevant markup extension or type converter methods that require a service context, this internal object is passed. Depending on the circumstance, the system service context provides either `MarkupExtensionContext` or `TextSyntaxContext`, but the specifics of both of these classes are internal. Your interaction with these classes is limited to requesting services from them, through <xref:System.IServiceProvider.GetService%2A>.  
+ The service provider for <xref:System.IServiceProvider.GetService%2A> access to XAML services available to markup extensions or type converters is implemented as an internal class, with exposure only through the interface and how it is passed into the relevant context. Whenever a XAML processing operation in the default .NET Framework XAML Services implementations of load path or save path invokes the relevant markup extension or type converter methods that require a service context, this internal object is passed. Depending on the circumstance, the system service context provides either `MarkupExtensionContext` or `TextSyntaxContext`, but the specifics of both of these classes are internal. Your interaction with these classes is limited to requesting services from them, through <xref:System.IServiceProvider.GetService%2A>.  
   
 <a name="available_systemxaml_services"></a>   
 ## Available Services from the .NET Framework XAML Service Context  
@@ -110,7 +110,7 @@ public override object ConvertFrom(ITypeDescriptorContext typeDescriptorContext,
   
  **Relevant to:** Load path handling and type lookup deferrals or optimizations.  
   
- **Service APIs:**  <xref:System.Xaml.IAmbientProvider.GetAllAmbientValues%2A>, 3 others.  
+ **Service APIs:**  <xref:System.Xaml.IAmbientProvider.GetAllAmbientValues%2A>, three others.  
   
  The ambience concept in XAML is a technique for marking a particular member of a type as ambient. Alternatively, a type can be ambient so that all property values that hold an instance of the type should be considered ambient properties. Markup extensions or type converters that are further along the XAML node stream and that are descendants in the object graph can access the ambient property or type instance at load time; or they can use knowledge of the ambient structure at save time. This can affect the degree of qualification that is needed to resolve types for other services, such as for <xref:System.Windows.Markup.IXamlTypeResolver> or for `x:Type`. See also <xref:System.Xaml.AmbientPropertyValue>.  
   

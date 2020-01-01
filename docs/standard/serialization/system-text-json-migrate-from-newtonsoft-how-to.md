@@ -143,7 +143,7 @@ This is a simplified example. Additional logic would be required if you need to 
 
 `Newtonsoft.Json` doesn't throw an exception in the following scenario:
 
-* `NullValueHandling` is set to `Ignore`
+* `NullValueHandling` is set to `Ignore`, and
 * During deserialization, the JSON contains a null value for a non-nullable type.
 
 In the same scenario, `System.Text.Json` does throw an exception. (The corresponding null handling setting is <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues?displayProperty=nameWithType>.)

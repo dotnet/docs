@@ -18,7 +18,7 @@ This article shows how to migrate from [Newtonsoft.Json](https://www.newtonsoft.
 
 <!-- For information about which features might be added in future releases, see the [Roadmap](https://github.com/dotnet/runtime/tree/master/src/libraries/System.Text.Json/roadmap/README.md). [Restore this when the roadmap is updated.]-->
 
-Most of this article is about how to use the <xref:System.Text.Json.JsonSerializer> API, but it also includes guidance on how to use the <xref:System.Text.Json.JsonDocument> (which represents the Document Object Model or DOM), the <xref:System.Text.Json.Utf8JsonReader> and the <xref:System.Text.Json.Utf8JsonWriter> types. The article is organized into sections in the following order:
+Most of this article is about how to use the <xref:System.Text.Json.JsonSerializer> API, but it also includes guidance on how to use the <xref:System.Text.Json.JsonDocument> (which represents the Document Object Model or DOM), <xref:System.Text.Json.Utf8JsonReader>, and <xref:System.Text.Json.Utf8JsonWriter> types. The article is organized into sections in the following order:
 
 * [Differences in **default** JsonSerializer behavior compared to Newtonsoft.Json](#differences-in-default-jsonserializer-behavior-compared-to-newtonsoftjson)
 * [Scenarios using JsonSerializer that require workarounds](#scenarios-using-jsonserializer-that-require-workarounds)
@@ -44,6 +44,20 @@ During deserialization, `Newtonsoft.Json` ignores comments in the JSON by defaul
 ### Trailing commas
 
 During deserialization, `Newtonsoft.Json` ignores trailing commas by default. It also ignores multiple trailing commas (for example, `[{"Color":"Red"},{"Color":"Green"},,]`). The `System.Text.Json` default is to throw exceptions for trailing commas because the [RFC 8259](https://tools.ietf.org/html/rfc8259) specification doesn't include them. For information about how to allow trailing commas, see [Allow comments and trailing commas](system-text-json-how-to.md#allow-comments-and-trailing-commas). There's no way to allow multiple trailing commas.
+
+### Property names
+
+During deserialization, `Newtonsoft.Json` accepts property names surrounded by double quotes, single quotes, or without quotes. For example:
+
+```json
+{
+  "name1": "value",
+  'name2': "value",
+  name3: "value"
+}
+```
+
+`System.Text.Json` only accepts names in double quotes because that format is required by the [RFC 8259](https://tools.ietf.org/html/rfc8259) specification.
 
 ### Converter registration precedence
 
@@ -72,8 +86,8 @@ During serialization, `Newtonsoft.Json` is relatively permissive about letting c
 When `Newtonsoft.Json` deserializes to `Object` properties in POCOs or in dictionaries of type `Dictionary<string, Object>`, it:
 
 * Infers the type of primitive values in the JSON payload (other than `null`) and returns the stored `string`, `long`, `double`, `boolean`, or `DateTime` as a boxed object. *Primitive values* are single JSON values such as a JSON number, string, true, false, or null.
-* Returns the stored complex values as a `JObject` or `JArray`. *Complex values* are collections of JSON key-value pairs within braces (`{}` ) or lists of values within brackets (`[]`). The properties and values within the braces or brackets can have additional properties or values.
-* Returns a `null` reference when the payload has the `null` JSON literal.
+* Returns the stored complex values as a `JObject` or `JArray`. *Complex values* are collections of JSON key-value pairs within braces (`{}`) or lists of values within brackets (`[]`). The properties and values within the braces or brackets can have additional properties or values.
+* Returns a null reference when the payload has the `null` JSON literal.
 
 `System.Text.Json` stores a boxed `JsonElement` for both primitive and complex values within the `System.Object` property or dictionary value. However, it treats `null` the same as `Newtonsoft.Json` and returns a null reference when the payload has the `null` JSON literal in it.
 
@@ -83,17 +97,26 @@ To implement type inference for `Object` properties, create a converter like the
 
 `Newtonsoft.Json` doesn't have a maximum depth limit. For `System.Text.Json` there's a default limit  of 64, and it's configurable by setting (xref:System.Text.Json.JsonSerializerOptions.MaxDepth?displayProperty=nameWithType).
 
+### Stack type handling
+
+Properties of type <xref:System.Collections.Stack> and <xref:System.Collections.Generic.Stack%601> don't have the same value after making a round trip to and from JSON. The order of a stack's contents is reversed when it's serialized. A custom converter could be implemented to keep stack contents in the same order.
+
 ## Scenarios using JsonSerializer that require workarounds
 
 The following scenarios aren't supported by built-in functionality, but sample code is provided for workarounds. Most of the workarounds require that you implement [custom converters](system-text-json-converters-how-to.md).
 
 ### Specify date format
 
-`Newtonsoft.Json` provides a `DateTimeZoneHandling` option that lets you specify the serialization format used for `DateTime` and `DateTimeOffset` properties. In `System.Text.Json`, the only format that has built-in support is ISO 8601-1:2019 since it is widely adopted, unambiguous, and makes round trips precisely. To use any other format, create a custom converter. For more information, see [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md).
+`Newtonsoft.Json` provides several ways to control how properties of `DateTime` and `DateTimeOffset` types are serialized and deserialized:
+
+* The `DateTimeZoneHandling` setting can be used to serialize all `DateTime` values as UTC dates.
+* The `DateFormatString` setting and `DateTime` converters can be used to customize the format of date strings.
+
+In `System.Text.Json`, the only format that has built-in support is ISO 8601-1:2019 since it's widely adopted, unambiguous, and makes round trips precisely. To use any other format, create a custom converter. For more information, see [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md).
 
 ### Quoted numbers
 
-`Newtonsoft.Json` can serialize or deserialize numbers represented by JSON strings (surrounded by quotes). For example, it can accept: `{ "DegreesCelsius":"23" }` instead of `{ "DegreesCelsius":23 }`. To enable that behavior in `System.Text.Json`, implement a custom converter like the following example. The converter handles properties defined as `long`:
+`Newtonsoft.Json` can serialize or deserialize numbers represented by JSON strings (surrounded by quotes). For example, it can accept: `{"DegreesCelsius":"23"}` instead of `{"DegreesCelsius":23}`. To enable that behavior in `System.Text.Json`, implement a custom converter like the following example. The converter handles properties defined as `long`:
 
 * It serializes them as JSON strings. 
 * It accepts JSON numbers and numbers within quotes while deserializing.
@@ -137,7 +160,11 @@ Register this custom converter by [using an attribute](system-text-json-converte
 
 If you follow this pattern, don't pass in the options object when recursively calling `Serialize` or `Deserialize`. The options object contains the `Converters` collection. If you pass it in to `Serialize` or `Deserialize`, the custom converter calls into itself, making an infinite loop that results in a stack overflow exception. If the default options are not feasible, create a new instance of the options with the settings that you need. This approach will be slow since each new instance caches independently.
 
-This is a simplified example. Additional logic would be required if you need to handle attributes (such as `[JsonIgnore]`) or different options (such as custom encoders).
+The preceding converter code is a simplified example. Additional logic would be required if you need to handle attributes (such as `[JsonIgnore]`) or different options (such as custom encoders). Also, the example code doesn't handle properties for which a default value is set in the constructor. And this approach doesn't differentiate between the following scenarios:
+
+* A property is missing from the JSON.
+* A property for a non-nullable type is present in the JSON, but the value is the default for the type, such as zero for an `int`.
+* A property for a nullable type is present in the JSON, but the value is null.
 
 ### Deserialize null to non-nullable type 
 
@@ -250,7 +277,7 @@ If you use a custom converter that follows the preceding sample:
 
 ## Scenarios that JsonSerializer currently doesn't support
 
-Workarounds may be possible for some of the following scenarios, but they would be relatively difficult or impractical to implement.
+Workarounds are possible for the following scenarios, but some of them would be relatively difficult to implement. Code samples for workarounds are not available for these scenarios.
 
 ### Types without built-in support
 
@@ -264,10 +291,13 @@ Workarounds may be possible for some of the following scenarios, but they would 
 * <xref:System.Numerics.BigInteger>
 * <xref:System.TimeSpan>
 * <xref:System.DBNull>
+* <xref:System.Type>
+
+Custom converters can be implemented for types that don't have built-in support.
 
 ### Public and non-public fields
 
-`Newtonsoft.Json` can serialize and deserialize fields as well as properties. `System.Text.Json` only works with public properties.
+`Newtonsoft.Json` can serialize and deserialize fields as well as properties. `System.Text.Json` only works with public properties. 
 
 ### Internal and private property setters and getters
 

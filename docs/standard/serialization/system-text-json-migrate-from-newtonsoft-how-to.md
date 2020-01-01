@@ -297,11 +297,11 @@ Custom converters can be implemented for types that don't have built-in support.
 
 ### Public and non-public fields
 
-`Newtonsoft.Json` can serialize and deserialize fields as well as properties. `System.Text.Json` only works with public properties. 
+`Newtonsoft.Json` can serialize and deserialize fields as well as properties. `System.Text.Json` only works with public properties. Custom converters can provide this functionality.
 
 ### Internal and private property setters and getters
 
-`Newtonsoft.Json` can use private and internal property setters and getters via the `JsonProperty` attribute. `System.Text.Json` supports only public setters.
+`Newtonsoft.Json` can use private and internal property setters and getters via the `JsonProperty` attribute. `System.Text.Json` supports only public setters. Custom converters can provide this functionality.
 
 ### Preserve object references and handle loops
 
@@ -326,15 +326,15 @@ By default, `Newtonsoft.Json` serializes by value. For example, if an object con
 
 ### Populate existing objects
 
-The `JsonConvert.PopulateObject` method in `Newtonsoft.Json` deserializes a JSON document to an existing instance of a class, instead of creating a new instance. `System.Text.Json` always creates a new instance of the target type by using the default public parameterless constructor.
+The `JsonConvert.PopulateObject` method in `Newtonsoft.Json` deserializes a JSON document to an existing instance of a class, instead of creating a new instance. `System.Text.Json` always creates a new instance of the target type by using the default public parameterless constructor. Custom converters can provide this functionality.
 
 ### Reuse rather than replace properties
 
-The `Newtonsoft.Json` `ObjectCreationHandling` setting lets you specify that objects in properties should be reused rather than replaced during deserialization. `System.Text.Json` always replaces objects in properties.
+The `Newtonsoft.Json` `ObjectCreationHandling` setting lets you specify that objects in properties should be reused rather than replaced during deserialization. `System.Text.Json` always replaces objects in properties.  Custom converters can provide this functionality.
 
 ### Add to collections without setters
 
-During deserialization, `Newtonsoft.Json` adds objects to a collection even if the property has no setter. `System.Text.Json` ignores properties that don't have setters.
+During deserialization, `Newtonsoft.Json` adds objects to a collection even if the property has no setter. `System.Text.Json` ignores properties that don't have setters. Custom converters can provide this functionality.
 
 ### MissingMemberHandling
 

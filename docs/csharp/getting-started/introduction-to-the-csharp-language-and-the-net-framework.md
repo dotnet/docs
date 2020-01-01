@@ -30,7 +30,7 @@ C# is an elegant and type-safe object-oriented language that enables developers 
   
 - Inline XML documentation comments.  
   
-- Language-Integrated Query (LINQ) which provides built-in query capabilities across a variety of data sources.  
+- Language-Integrated Query (LINQ), which provides built-in query capabilities across a variety of data sources.  
   
  If you have to interact with other Windows software such as COM objects or native Win32 DLLs, you can do this in C# through a process called "Interop". Interop enables C# programs to do almost anything that a native C++ application can do. C# even supports pointers and the concept of "unsafe" code for those cases in which direct memory access is absolutely critical.  
   

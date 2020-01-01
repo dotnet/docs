@@ -24,7 +24,7 @@ A *query* is an expression that retrieves data from a data source. Queries are u
   
  [!code-csharp[CsLINQGettingStarted#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#1)]  
   
- The following illustration shows the complete query operation. In LINQ the execution of the query is distinct from the query itself; in other words you have not retrieved any data just by creating a query variable.  
+ The following illustration shows the complete query operation. In LINQ, the execution of the query is distinct from the query itself. In other words, you have not retrieved any data just by creating a query variable.  
   
  ![Diagram of the complete LINQ query operation.](./media/introduction-to-linq-queries/linq-query-complete-operation.png)  
   

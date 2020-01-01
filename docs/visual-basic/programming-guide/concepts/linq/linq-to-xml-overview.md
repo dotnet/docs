@@ -6,7 +6,7 @@ ms.assetid: 502661e0-bc5d-438d-94c2-7efb63bb6fbd
 # LINQ to XML Overview (Visual Basic)
 XML has been widely adopted as a way to format data in many contexts. For example, you can find XML on the Web, in configuration files, in Microsoft Office Word files, and in databases.  
   
- [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] is an up-to-date, redesigned approach to programming with XML. It provides the in-memory document modification capabilities of the Document Object Model (DOM), and supports LINQ query expressions. Although these query expressions are syntactically different from XPath, they provide similar functionality.  
+ [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] is an up-to-date, redesigned approach to programming with XML. It provides the in-memory document-modification capabilities of the Document Object Model (DOM) and supports LINQ query expressions. Although these query expressions are syntactically different from XPath, they provide similar functionality.  
   
 ## LINQ to XML Developers  
  [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] targets a variety of developers. For an average developer who just wants to get something done, [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] makes XML easier by providing a query experience that is similar to SQL. With just a bit of study, programmers can learn to write succinct and powerful queries in their programming language of choice.  

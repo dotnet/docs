@@ -61,7 +61,7 @@ Let's do a quick walkthrough:
     ```dotnetcli
     dotnet run
     ```
-	
+
     ```console
     Hello World!
     ```
@@ -71,7 +71,7 @@ Let's do a quick walkthrough:
     ```dotnetcli
     dotnet bin\Debug\netcoreapp3.1\Hello.dll
     ```
-	
+
     ```console
     Hello World!
     ```

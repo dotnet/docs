@@ -7,7 +7,7 @@ dev_langs:
 ms.assetid: 5632d74a-ff53-4ea7-9fe7-4a148eeb1c68
 ---
 # Filtering with DataView (LINQ to DataSet)
-The ability to filter data using specific criteria and then present the data to a client through a UI control is an important aspect of data binding. <xref:System.Data.DataView> provides several ways to filter data and return subsets of data rows meeting specific filter criteria. In addition to the string-based filtering capabilities <xref:System.Data.DataView> also provides the ability to use [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] expressions for the filtering criteria. [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] expressions allow for much more complex and powerful filtering operations than the string-based filtering.  
+The ability to filter data using specific criteria and then present the data to a client through a UI control is an important aspect of data binding. <xref:System.Data.DataView> provides several ways to filter data and return subsets of data rows meeting specific filter criteria. In addition to the string-based filtering capabilities, <xref:System.Data.DataView> also provides the ability to use LINQ expressions for the filtering criteria. LINQ expressions allow for much more complex and powerful filtering operations than the string-based filtering.  
   
  There are two ways to filter data using a <xref:System.Data.DataView>:  
   

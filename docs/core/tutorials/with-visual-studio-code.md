@@ -127,7 +127,7 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
     ```dotnetcli
     dotnet run
     ```
-	
+
     ```console
     Hello World! Happy coding!
     ```

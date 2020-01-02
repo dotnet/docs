@@ -29,10 +29,10 @@ When you add the image name to your Dockerfile file, you can select the operatin
 
 | Image | Comments |
 |-------|----------|
-| mcr.microsoft.com/dotnet/core/runtime:2.2 | .NET Core 2.2 multi-architecture: Supports Linux and Windows Nano Server depending on the Docker host. |
-| mcr.microsoft.com/dotnet/core/aspnet:2.2 | ASP.NET Core 2.2 multi-architecture: Supports Linux and Windows Nano Server depending on the Docker host. <br/> The aspnetcore image has a few optimizations for ASP.NET Core. |
-| mcr.microsoft.com/dotnet/core/aspnet:2.2-alpine | .NET Core 2.2 runtime-only on Linux Alpine distro |
-| mcr.microsoft.com/dotnet/core/aspnet:2.2-nanoserver-1803 | .NET Core 2.2 runtime-only on Windows Nano Server (Windows Server version 1803) |
+| mcr.microsoft.com/dotnet/core/runtime:3.1 | .NET Core 3.1 multi-architecture: Supports Linux and Windows Nano Server depending on the Docker host. |
+| mcr.microsoft.com/dotnet/core/aspnet:3.1 | ASP.NET Core 3.1 multi-architecture: Supports Linux and Windows Nano Server depending on the Docker host. <br/> The aspnetcore image has a few optimizations for ASP.NET Core. |
+| mcr.microsoft.com/dotnet/core/aspnet:3.1-alpine | .NET Core 3.1 runtime-only on Linux Alpine distro |
+| mcr.microsoft.com/dotnet/core/aspnet:3.1-nanoserver-1909 | .NET Core 3.1 runtime-only on Windows Nano Server (Windows Server version 1909) |
 
 ## Additional resources
 

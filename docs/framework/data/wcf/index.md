@@ -41,9 +41,9 @@ Just show me some code...
 
 I want to know more about OData...
 
-- [Whitepaper: Introducing OData](https://docs.microsoft.com/dotnet/framework/wcf/index)
+- [Whitepaper: Introducing OData](../../../framework/wcf/index.md)
 
-- [Open Data Protocol Web site](https://www.odata.org/developers/protocols/)
+- [Open Data Protocol Web site](https://www.odata.org/documentation/)
 
 - [OData: SDK](https://www.odata.org/wp-content/uploads/sites/21/odatasdkcodesamples.zip)
 
@@ -77,7 +77,7 @@ What can I do with it?
 
 - [Overview](wcf-data-services-overview.md)
 
-- [Whitepaper: Introducing OData](https://docs.microsoft.com/dotnet/framework/wcf/index)
+- [Whitepaper: Introducing OData](../../wcf/index.md)
 
 - [Application Scenarios](application-scenarios-wcf-data-services.md)
 
@@ -103,7 +103,7 @@ I still need some more information...
 
 - [Resources](wcf-data-services-resources.md)
 
-- [WCF Data Services Developer Center](https://docs.microsoft.com/dotnet/framework/wcf/index)
+- [WCF Data Services Developer Center](../../wcf/index.md)
 
 - [Open Data Protocol Web site](https://www.odata.org/developers/protocols/)
 

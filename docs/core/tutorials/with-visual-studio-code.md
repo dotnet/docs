@@ -124,8 +124,11 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 
 5. Save your changes and run your program again. The new message should appear with the appended string.
 
+    ```dotnetcli
+    dotnet run
+	```
+	
     ```console
-    > dotnet run
     Hello World! Happy coding!
     ```
 

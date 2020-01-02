@@ -58,17 +58,21 @@ Let's do a quick walkthrough:
 
     [dotnet run](../tools/dotnet-run.md) calls [dotnet build](../tools/dotnet-build.md) to ensure that the build targets have been built, and then calls `dotnet <assembly.dll>` to run the target application.
     
-    ```console
+    ```dotnetcli
     dotnet run
-
+    ```
+	
+	```console
     Hello World!
     ```
     
     Alternatively, you can also run `dotnet build` to compile the code without running the build console applications. This results in a compiled application, as a DLL file, based on the name of the project. In this case, the file created is named *Hello.dll*. This app can be run with `dotnet bin\Debug\netcoreapp3.1\Hello.dll` on Windows (use `/` for non-Windows systems).
     
-    ```console
+    ```dotnetcli
     dotnet bin\Debug\netcoreapp3.1\Hello.dll
-
+    ```
+	
+	```console
     Hello World!
     ```
     
@@ -92,8 +96,13 @@ Let's change the program a bit. Fibonacci numbers are fun, so let's add that and
 
 03. Run the program passing a parameter to the app. When you use the `dotnet` command to run an app, add `--` to the end. Anything to the right of `--` will be passed as a parameter to the app. In the following example, the value `John` is passed to the app.
 
-    ```console
-    $ dotnet run -- John
+    ```dotnetcli
+    dotnet run -- John
+	```
+	
+	The output is the following:
+	
+	```console
     Hello John!
     Fibonacci Numbers 1-15:
     1: 0
@@ -131,8 +140,11 @@ Single files are fine for simple one-off programs, but if you're building a more
 
 04. Run your app by executing [dotnet run](../tools/dotnet-run.md). The following shows the program output:
 
-    ```console
-    $ dotnet run
+    ```dotnetcli
+    dotnet run
+	```
+	
+	```console
     0
     1
     1
@@ -154,8 +166,11 @@ Single files are fine for simple one-off programs, but if you're building a more
 
 Once you're ready to distribute your app, use the [dotnet publish](../tools/dotnet-publish.md) command to generate the _publish_ folder at _bin\\debug\\netcoreapp3.1\\publish\\_ (use `/` for non-Windows systems). You can distribute the contents of the _publish_ folder to other platforms as long as they've already installed the dotnet runtime.
 
-```console
+```dotnetcli
 dotnet publish
+```
+
+```console
 Microsoft (R) Build Engine version 16.4.0+e901037fe for .NET Core
 Copyright (C) Microsoft Corporation. All rights reserved.
 
@@ -168,9 +183,11 @@ The output above may differ based on your current folder and operating system, b
 
 You can run your published app with the [dotnet](../tools/dotnet.md) command:
 
-```console
+```dotnetcli
 dotnet bin\Debug\netcoreapp3.1\publish\Hello.dll
+```
 
+```console
 Hello World!
 ```
 

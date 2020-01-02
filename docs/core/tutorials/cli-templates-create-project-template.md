@@ -82,8 +82,11 @@ Let's update the C# language version the project uses to version 8.0. Edit the _
 
 Before you complete a project template, you should test it to make sure it compiles and runs correctly. In your terminal, run the `dotnet run` command and you should see the following output:
 
+```dotnetcli
+dotnet run
+```
+
 ```console
-C:\working\templates\consoleasync> dotnet run
 Hello World with C# 8.0!
 ```
 
@@ -128,12 +131,15 @@ This config file contains all of the settings for your template. You can see the
 
 The `classifications` item represents the **tags** column you see when you run `dotnet new` and get a list of templates. Users can also search based on classification tags. Don't confuse the `tags` property in the json file with the `classifications` tags list. They're two different things unfortunately named similarly. The full schema for the *template.json* file is found at the [JSON Schema Store](http://json.schemastore.org/template). For more information about the *template.json* file, see the [dotnet templating wiki](https://github.com/dotnet/templating/wiki).
 
-Now that you have a valid _.template.config/template.json_ file, your template is ready to be installed. Before you install the template, make sure that you delete any extra files folders and files you don't want included in your template, like the _bin_ or _obj_ folders. In your terminal, navigate to the _consoleasync_ folder and run `dotnet new -i .\` to install the template located at the current folder. If you're using a Linux or MacOS operating system, use a forward slash: `dotnet new -i ./`.
+Now that you have a valid _.template.config/template.json_ file, your template is ready to be installed. Before you install the template, make sure that you delete any extra files folders and files you don't want included in your template, like the _bin_ or _obj_ folders. In your terminal, navigate to the _consoleasync_ folder and run `dotnet new -i .\` to install the template located at the current folder. If you're using a Linux or macOS operating system, use a forward slash: `dotnet new -i ./`.
 
 This command outputs the list of templates installed, which should include yours.
 
+```dotnetcli
+dotnet new -i .\
+```
+
 ```console
-C:\working\templates\consoleasync> dotnet new -i .\
 Usage: new [options]
 
 Options:
@@ -156,13 +162,19 @@ Worker Service                                    worker                [C#]    
 
 Now that you have an item template installed, test it. Navigate to the _test_ folder and create a new console application with `dotnet new consoleasync`. This generates a working project you can easily test with the `dotnet run` command.
 
-```console
-C:\test> dotnet new consoleasync
-The template "Example templates: async project" was created successfully.
+```dotnetcli
+dotnet new consoleasync
 ```
 
 ```console
-C:\test> dotnet run
+The template "Example templates: async project" was created successfully.
+```
+
+```dotnetcli
+dotnet run
+```
+
+```console
 Hello World with C# 8.0!
 ```
 
@@ -172,8 +184,11 @@ Congratulations! You created and deployed a project template with .NET Core. In 
 
 Because you installed the template by using a file path, you must uninstall it with the **absolute** file path. You can see a list of templates installed by running the `dotnet new -u` command. Your template should be listed last. Use the path listed to uninstall your template with the `dotnet new -u <ABSOLUTE PATH TO TEMPLATE DIRECTORY>` command.
 
+```dotnetcli
+dotnet new -u
+```
+
 ```console
-C:\working> dotnet new -u
 Template Instantiation Commands for .NET Core CLI
 
 Currently installed items:
@@ -201,8 +216,8 @@ Currently installed items:
       Example templates: async project (consoleasync) C#
 ```
 
-```console
-C:\working> dotnet new -u C:\working\templates\consoleasync
+```dotnetcli
+dotnet new -u C:\working\templates\consoleasync
 ```
 
 ## Next steps

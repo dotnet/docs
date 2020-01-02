@@ -129,7 +129,7 @@ Restore the NuGet dependencies, `dotnet restore` and run `dotnet build` to build
 
 Change directory to the `src/App` console project and run the project passing `Hello World` as arguments:
 
-```console
+```dotnetcli
 cd src/App
 dotnet run Hello World
 ```

@@ -200,11 +200,10 @@ Those enumerated assets are explained in the following steps of the tutorial.
 
     Run the console app from the command-prompt by typing the following commands:
 
-     ```bash
-     > cd SampleBinaryClassification
-     > cd SampleBinaryClassification.ConsoleApp
-
-     > dotnet run
+     ```dotnetcli
+     cd SampleBinaryClassification
+     cd SampleBinaryClassification.ConsoleApp
+     dotnet run
      ```
 
     ![ML.NET CLI auto-train on PowerShell](./media/mlnet-cli/sample-cli-prediction-execution-bash.png))

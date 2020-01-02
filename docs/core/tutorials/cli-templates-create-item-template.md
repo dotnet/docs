@@ -146,8 +146,11 @@ Worker Service                                    worker                [C#]    
 
 Now that you have an item template installed, test it. Navigate to the _test/_ folder and create a new console application with `dotnet new console`. This generates a working project you can easily test with the `dotnet run` command.
 
+```dotnetcli
+dotnet new console
+```
+
 ```console
-C:\test> dotnet new console
 The template "Console Application" was created successfully.
 
 Processing post-creation actions...
@@ -157,15 +160,21 @@ Running 'dotnet restore' on C:\test\test.csproj...
 Restore succeeded.
 ```
 
+```dotnetcli
+dotnet run
+```
+
 ```console
-C:\test> dotnet run
 Hello World!
 ```
 
 Next, run `dotnet new stringext` to generate the _CommonExtensions.cs_ from the template.
 
+```dotnetcli
+dotnet new stringext
+```
+
 ```console
-C:\test> dotnet new stringext
 The template "Example templates: string extensions" was created successfully.
 ```
 
@@ -177,8 +186,11 @@ Console.WriteLine("Hello World!".Reverse());
 
 Run the program again and you'll see that the result is reversed.
 
+```dotnetcli
+dotnet run
+```
+
 ```console
-C:\test> dotnet run
 !dlroW olleH
 ```
 
@@ -188,8 +200,11 @@ Congratulations! You created and deployed an item template with .NET Core. In pr
 
 Because you installed the template by file path, you must uninstall it with the **absolute** file path. You can see a list of templates installed by running the `dotnet new -u` command. Your template should be listed last. Use the path listed to uninstall your template with the `dotnet new -u <ABSOLUTE PATH TO TEMPLATE DIRECTORY>` command.
 
+```dotnetcli
+dotnet new -u
+```
+
 ```console
-C:\working> dotnet new -u
 Template Instantiation Commands for .NET Core CLI
 
 Currently installed items:
@@ -217,8 +232,8 @@ Currently installed items:
       Example templates: string extensions (stringext) C#
 ```
 
-```console
-C:\working> dotnet new -u C:\working\templates\extensions
+```dotnetcli
+dotnet new -u C:\working\templates\extensions
 ```
 
 ## Next steps

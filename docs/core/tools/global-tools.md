@@ -95,7 +95,7 @@ You can find which tools are included in an installed Global Tool package by lis
 
 You can also look for usage instructions at the tool's website or by typing one of the following commands:
 
-```console
+```dotnetcli
 <command> --help
 dotnet <command> --help
 ```

@@ -1,6 +1,6 @@
 ---
-title: Design with nullable reference types
-description: This advanced tutorial provides an introduction to nullable reference types. You'll learn to express your design intent on when reference values may be null, and have the compiler enforce when they cannot be null.
+title: Learn strategies for enforcing nullable reference types in existing applications.
+description: This advanced tutorial explores how you can benefit from enabling nullable reference types in your existing applications. You'll see how to interpret warnings to discover original design intent. You'll use that design intent to update code and remove warnings.
 ms.date: 02/19/2019
 ms.technology: csharp-null-safety
 ms.custom: mvc

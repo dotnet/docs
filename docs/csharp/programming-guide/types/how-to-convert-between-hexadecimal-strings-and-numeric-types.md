@@ -1,5 +1,5 @@
 ---
-title: "How to: Convert Between Hexadecimal Strings and Numeric Types - C# Programming Guide"
+title: "How to convert between hexadecimal strings and numeric types - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "hexadecimal strings [C#]"
 ms.assetid: 7115c49f-7d1d-40c3-8bd9-aae0cc1d46b6
 ---
-# How to: Convert Between Hexadecimal Strings and Numeric Types (C# Programming Guide)
+# How to convert between hexadecimal strings and numeric types (C# Programming Guide)
 These examples show you how to perform the following tasks:  
   
 - Obtain the hexadecimal value of each character in a [string](../../language-reference/builtin-types/reference-types.md).  
@@ -51,4 +51,4 @@ These examples show you how to perform the following tasks:
 
 - [Standard Numeric Format Strings](../../../standard/base-types/standard-numeric-format-strings.md)
 - [Types](./index.md)
-- [How to: Determine Whether a String Represents a Numeric Value](../strings/how-to-determine-whether-a-string-represents-a-numeric-value.md)
+- [How to determine whether a string represents a numeric value](../strings/how-to-determine-whether-a-string-represents-a-numeric-value.md)

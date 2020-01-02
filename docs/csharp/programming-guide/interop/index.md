@@ -18,13 +18,13 @@ Interoperability enables you to preserve and take advantage of existing investme
  [Interoperability Overview](./interoperability-overview.md)  
  Describes methods to interoperate between C# managed code and unmanaged code.  
   
- [How to: Access Office Interop Objects by Using Visual C# Features](./how-to-access-office-onterop-objects.md)  
+ [How to access Office interop objects by using C# features](./how-to-access-office-onterop-objects.md)  
  Describes features that are introduced in Visual C# to facilitate Office programming.  
   
- [How to: Use Indexed Properties in COM Interop Programming](./how-to-use-indexed-properties-in-com-interop-rogramming.md)  
+ [How to use indexed properties in COM interop programming](./how-to-use-indexed-properties-in-com-interop-rogramming.md)  
  Describes how to use indexed properties to access COM properties that have parameters.  
   
- [How to: Use Platform Invoke to Play a Wave File](./how-to-use-platform-invoke-to-play-a-wave-file.md)  
+ [How to use platform invoke to play a WAV file](./how-to-use-platform-invoke-to-play-a-wave-file.md)  
  Describes how to use platform invoke services to play a .wav sound file on the Windows operating system.  
   
  [Walkthrough: Office Programming](./walkthrough-office-programming.md)  

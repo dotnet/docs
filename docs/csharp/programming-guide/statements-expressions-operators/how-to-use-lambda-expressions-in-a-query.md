@@ -1,12 +1,12 @@
 ---
-title: "How to: Use Lambda Expressions in a Query - C# Programming Guide"
+title: "How to use lambda expressions in a query - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "lambda expressions [C#], in LINQ"
 ms.assetid: 3cac4d25-d11f-4abd-9e7c-0f02e97ae06d
 ---
-# How to: Use Lambda Expressions in a Query (C# Programming Guide)
+# How to use lambda expressions in a query (C# Programming Guide)
 You do not use lambda expressions directly in query syntax, but you do use them in method calls, and query expressions can contain method calls. In fact, some query operations can only be expressed in method syntax. For more information about the difference between query syntax and method syntax, see [Query Syntax and Method Syntax in LINQ](../concepts/linq/query-syntax-and-method-syntax-in-linq.md).  
   
 ## Example  
@@ -22,7 +22,7 @@ You do not use lambda expressions directly in query syntax, but you do use them 
  [!code-csharp[csProgGuideLINQ#2](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideLINQ/CS/csrefLINQHowTos.cs#2)]  
   
 ## Compiling the Code  
- To run this code, copy and paste the method into the `StudentClass` that is provided in [How to: Query a Collection of Objects](../../linq/query-a-collection-of-objects.md) and call it from the `Main` method.  
+ To run this code, copy and paste the method into the `StudentClass` that is provided in [Query a collection of objects](../../linq/query-a-collection-of-objects.md) and call it from the `Main` method.
   
 ## See also
 

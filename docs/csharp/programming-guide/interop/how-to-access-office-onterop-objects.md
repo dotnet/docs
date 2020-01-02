@@ -1,5 +1,5 @@
 ---
-title: "How to: Access Office Interop Objects by Using Visual C# Features - C# Programming Guide"
+title: "How to access Office interop objects - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
@@ -11,9 +11,9 @@ helpviewer_keywords:
   - "Office programming [C#]"
 ms.assetid: 041b25c2-3512-4e0f-a4ea-ceb2999e4d5e
 ---
-# How to: Access Office Interop Objects by Using Visual C# Features (C# Programming Guide)
+# How to access Office interop objects (C# Programming Guide)
 
-Visual C# has features that simplify access to Office API objects. The new features include named and optional arguments, a new type called `dynamic`, and the ability to pass arguments to reference parameters in COM methods as if they were value parameters.
+C# has features that simplify access to Office API objects. The new features include named and optional arguments, a new type called `dynamic`, and the ability to pass arguments to reference parameters in COM methods as if they were value parameters.
 
 In this topic you will use the new features to write code that creates and displays a Microsoft Office Excel worksheet. You will then write code to add an Office Word document that contains an icon that is linked to the Excel worksheet.
 
@@ -173,4 +173,4 @@ The following code shows the complete example.
 - [dynamic](../../language-reference/builtin-types/reference-types.md)
 - [Using Type dynamic](../types/using-type-dynamic.md)
 - [Named and Optional Arguments](../classes-and-structs/named-and-optional-arguments.md)
-- [How to: Use Named and Optional Arguments in Office Programming](../classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md)
+- [How to use named and optional arguments in Office programming](../classes-and-structs/how-to-use-named-and-optional-arguments-in-office-programming.md)

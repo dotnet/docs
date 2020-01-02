@@ -72,7 +72,7 @@ Let's do a quick walkthrough:
     dotnet bin\Debug\netcoreapp3.1\Hello.dll
     ```
 	
-	```console
+    ```console
     Hello World!
     ```
     
@@ -98,11 +98,11 @@ Let's change the program a bit. Fibonacci numbers are fun, so let's add that and
 
     ```dotnetcli
     dotnet run -- John
-	```
-	
-	The output is the following:
-	
-	```console
+    ```
+
+    The output is the following:
+
+    ```console
     Hello John!
     Fibonacci Numbers 1-15:
     1: 0
@@ -142,9 +142,9 @@ Single files are fine for simple one-off programs, but if you're building a more
 
     ```dotnetcli
     dotnet run
-	```
-	
-	```console
+    ```
+
+    ```console
     0
     1
     1

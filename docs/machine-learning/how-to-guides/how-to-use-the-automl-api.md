@@ -33,6 +33,7 @@ Before creating an experiment, determine the kind of machine learning problem yo
 * Binary Classification
 * Multiclass Classification
 * Regression
+* Recommendation
 
 ## Create experiment settings
 

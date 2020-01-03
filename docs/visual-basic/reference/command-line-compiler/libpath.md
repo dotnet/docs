@@ -39,7 +39,7 @@ Specifies the location of referenced assemblies.
   
  Use `-reference` to specify an assembly reference.  
   
-|To set /libpath in the Visual Studio integrated development environment|  
+|To set -libpath in the Visual Studio integrated development environment|  
 |---|  
 |1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. <br />2.  Click the **References** tab.<br />3.  Click the **Reference Paths...** button.<br />4.  In the **Reference Paths** dialog box, enter the directory name in the **Folder:** box.<br />5.  Click **Add Folder**.|  
   

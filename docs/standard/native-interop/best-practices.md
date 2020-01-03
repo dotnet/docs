@@ -56,7 +56,7 @@ If you *do* use `StringBuilder`, be aware that the capacity does not include a h
 
 ![check mark icon](../../media/check-mark.png) **CONSIDER** using `char[]`s from an `ArrayPool`.
 
-For more information on string marshaling, see [Default Marshaling for Strings](../../framework/interop/default-marshaling-for-strings.md) and [Customizing string marshaling](customize-parameter-marshaling.md#customizing-string-parameters).
+For more information on string marshaling, see [Default Marshaling for Strings](../../framework/interop/default-marshaling-for-strings.md) and [Customizing string marshaling](customize-parameter-marshaling.md#customize-string-parameters).
 
 > __Windows Specific__  
 > For `[Out]` strings, the CLR uses `CoTaskMemFree` by default to free strings or `SysStringFree` for strings that are marked as `UnmanagedType.BSTR`.  

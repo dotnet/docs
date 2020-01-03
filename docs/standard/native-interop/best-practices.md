@@ -125,7 +125,7 @@ For more information, see:
 - [Blittable and Non-Blittable Types](../../framework/interop/blittable-and-non-blittable-types.md)  
 - [Type Marshaling](type-marshaling.md)
 
-## Keeping managed objects alive
+## Keep managed objects alive
 
 `GC.KeepAlive()` will ensure an object stays in scope until the KeepAlive method is hit.
 

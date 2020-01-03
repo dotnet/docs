@@ -8,12 +8,11 @@ dev_langs:
   - "csharp"
   - "cpp"
 ---
-
-# Customizing structure marshaling
+# Customize structure marshaling
 
 Sometimes the default marshaling rules for structures aren't exactly what you need. The .NET runtimes provide a few extension points for you to customize your structure's layout and how fields are marshaled.
 
-## Customizing structure layout
+## Customize structure layout
 
 .NET provides the <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=nameWithType> attribute and the <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=nameWithType> enumeration to allow you to customize how fields are placed in memory. The following guidance will help you avoid common issues.
 
@@ -23,7 +22,7 @@ Sometimes the default marshaling rules for structures aren't exactly what you ne
 
 **![no icon](../../media/no.png) AVOID** using `LayoutKind.Explicit` when marshaling structures on non-Windows platforms if you need to target runtimes before .NET Core 3.0. The .NET Core runtime before 3.0 doesn't support passing explicit structures by value to native functions on Intel or AMD 64-bit non-Windows systems. However, the runtime supports passing explicit structures by reference on all platforms.
 
-## Customizing boolean field marshaling
+## Customize boolean field marshaling
 
 Native code has many different boolean representations. On Windows alone, there are three ways to represent boolean values. The runtime doesn't know the native definition of your structure, so the best it can do is make a guess on how to marshal your boolean values. The .NET runtime provides a way to indicate how to marshal your boolean field. The following examples show how to marshal .NET `bool` to different native boolean types.
 
@@ -97,7 +96,7 @@ struct VariantBool
 > [!NOTE]
 > `VARIANT_BOOL` is different than most bool types in that `VARIANT_TRUE = -1` and `VARIANT_FALSE = 0`. Additionally, all values that aren't equal to `VARIANT_TRUE` are considered false.
 
-## Customizing array field marshaling
+## Customize array field marshaling
 
 .NET also includes a few ways to customize array marshaling.
 
@@ -156,7 +155,7 @@ struct InPlaceArray
 > [!NOTE]
 > .NET doesn't support marshaling a variable length array field as a C99 Flexible Array Member.
 
-## Customizing string field marshaling
+## Customize string field marshaling
 
 .NET also provides a wide variety of customizations for marshaling string fields.
 
@@ -312,7 +311,7 @@ struct DefaultString
 };
 ```
 
-## Customizing decimal field marshaling
+## Customize decimal field marshaling
 
 If you're working on Windows, you might encounter some APIs that use the native [`CY` or `CURRENCY`](/windows/win32/api/wtypes/ns-wtypes-cy~r1) structure. By default, the .NET `decimal` type marshals to the native [`DECIMAL`](/windows/win32/api/wtypes/ns-wtypes-decimal~r1) structure. However, you can use a <xref:System.Runtime.InteropServices.MarshalAsAttribute> with the <xref:System.Runtime.InteropServices.UnmanagedType.Currency?displayProperty=nameWithType> value to instruct the marshaler to convert a `decimal` value to a native `CY` value.
 
@@ -331,7 +330,7 @@ struct Currency
 };
 ```
 
-## Marshaling `System.Object`s
+## Marshal System.Objects
 
 On Windows, you can marshal `object`-typed fields to native code. You can marshal these fields to one of three types:
 

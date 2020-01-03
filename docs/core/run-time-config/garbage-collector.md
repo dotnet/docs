@@ -215,14 +215,14 @@ Example:
 {
    "runtimeOptions": {
       "configProperties": {
-         "System.GC.HeapHardLimit": 80000
+         "System.GC.HeapHardLimit": 209715200
       }
    }
 }
 ```
 
 > [!TIP]
-> If you're setting the option in *runtimeconfig.json*, specify a decimal value. If you're setting the option as an environment variable, specify a hexadecimal value. For example, to specify a heap hard limit of 80,000 bytes, the values would be 80000 for the JSON file and 0x13880 or 13880 for the environment variable.
+> If you're setting the option in *runtimeconfig.json*, specify a decimal value. If you're setting the option as an environment variable, specify a hexadecimal value. For example, to specify a heap hard limit of 200 mebibytes (MiB), the values would be 209715200 for the JSON file and 0xC800000 or C800000 for the environment variable.
 
 ### System.GC.HeapHardLimitPercent/COMPlus_GCHeapHardLimitPercent
 

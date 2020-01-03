@@ -39,12 +39,15 @@ Now you can start your .NET application with a C# debugger ([Visual Studio Debug
 **Note that this is currently supported only on Windows with Visual Studio Debugger.**
 
 Before running `spark-submit`, set the following environment variable:
+
 ```bat
 set DOTNET_WORKER_DEBUG=1
 ```
+
 Now, when you run your Spark application, a `Choose Just-In-Time Debugger` window will pop up. Choose a Visual Studio debugger.
 
 The debugger will break at the following location in [TaskRunner.cs](../src/csharp/Microsoft.Spark.Worker/TaskRunner.cs):
+
 ```C#
 if (EnvironmentUtils.GetEnvironmentVariableAsBool("DOTNET_WORKER_DEBUG"))
 {

@@ -28,9 +28,11 @@ If you already have all the pre-requisites, skip to the [build](ubuntu-instructi
   1. Download and install **[.NET Core 2.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/2.1)** or the **[.NET Core 3.0 preview SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0)** - installing the SDK will add the `dotnet` toolchain to your path.
   2. Install **[OpenJDK 8](https://openjdk.java.net/install/)** 
      - You can use the following command:
+
        ```bash
        sudo apt install openjdk-8-jdk
        ```
+
      - Verify you are able to run `java` from your command-line
        <details>
        <summary>&#x1F4D9; Click to see sample java -version output</summary>
@@ -40,12 +42,16 @@ If you already have all the pre-requisites, skip to the [build](ubuntu-instructi
        OpenJDK Runtime Environment (build 1.8.0_191-8u191-b12-2ubuntu0.18.04.1-b12)
        OpenJDK 64-Bit Server VM (build 25.191-b12, mixed mode)
        ```
+
      - If you already have multiple OpenJDK versions installed and want to select OpenJDK 8, use the following command:
+
        ```bash
        sudo update-alternatives --config java
        ```
+
   3. Install **[Apache Maven 3.6.0+](https://maven.apache.org/download.cgi)**
      - Run the following command:
+
        ```bash
        mkdir -p ~/bin/maven
        cd ~/bin/maven
@@ -69,9 +75,11 @@ If you already have all the pre-requisites, skip to the [build](ubuntu-instructi
        Default locale: en, platform encoding: UTF-8
        OS name: "linux", version: "4.4.0-17763-microsoft", arch: "amd64", family: "unix"
        ```
+
   4. Install **[Apache Spark 2.3+](https://spark.apache.org/downloads.html)**
      - Download [Apache Spark 2.3+](https://spark.apache.org/downloads.html) and extract it into a local folder (e.g., `~/bin/spark-2.3.2-bin-hadoop2.7`)
      - Add the necessary [environment variables](https://www.java.com/en/download/help/path.xml) `SPARK_HOME` e.g., `~/bin/spark-2.3.2-bin-hadoop2.7/`
+
        ```bash
        export SPARK_HOME=~/bin/spark-2.3.2-hadoop2.7
        export PATH="$SPARK_HOME/bin:$PATH"
@@ -121,6 +129,7 @@ Let us now build the Spark .NET Scala extension layer. This is easy to do:
 cd src/scala
 mvn clean package 
 ```
+
 You should see JARs created for the supported Spark versions:
 * `microsoft-spark-2.3.x/target/microsoft-spark-2.3.x-<version>.jar`
 * `microsoft-spark-2.4.x/target/microsoft-spark-2.4.x-<version>.jar`
@@ -128,10 +137,12 @@ You should see JARs created for the supported Spark versions:
 ### Building .NET Sample Applications using .NET Core CLI
 
   1. Build the Worker
+
       ```bash
       cd ~/dotnet.spark/src/csharp/Microsoft.Spark.Worker/
       dotnet publish -f netcoreapp2.1 -r ubuntu.18.04-x64
       ```
+
       <details>
       <summary>&#x1F4D9; Click to see sample console output</summary>
 
@@ -150,10 +161,12 @@ You should see JARs created for the supported Spark versions:
       </details>
 
   2. Build the Samples
+
       ```bash
       cd ~/dotnet.spark/examples/Microsoft.Spark.CSharp.Examples/
       dotnet publish -f netcoreapp2.1 -r ubuntu.18.04-x64
       ```
+
       <details>
       <summary>&#x1F4D9; Click to see sample console output</summary>
 
@@ -178,6 +191,7 @@ Once you build the samples, you can use `spark-submit` to submit your .NET Core 
   1. Set the `DOTNET_WORKER_DIR` or `PATH` environment variable to include the path where the `Microsoft.Spark.Worker` binary has been generated (e.g., `~/dotnet.spark/artifacts/bin/Microsoft.Spark.Worker/Debug/netcoreapp2.1/ubuntu.18.04-x64/publish`)
   2. Open a terminal and go to the directory where your app binary has been generated (e.g., `~/dotnet.spark/artifacts/bin/Microsoft.Spark.CSharp.Examples/Debug/netcoreapp2.1/ubuntu.18.04-x64/publish`)
   3. Running your app follows the basic structure:
+
      ```bash
      spark-submit \
        [--jars <any-jars-your-app-is-dependent-on>] \
@@ -189,6 +203,7 @@ Once you build the samples, you can use `spark-submit` to submit your .NET Core 
 
      Here are some examples you can run:
      - **[Microsoft.Spark.Examples.Sql.Batch.Basic](../../examples/Microsoft.Spark.CSharp.Examples/Sql/Batch/Basic.cs)**
+
          ```bash
          spark-submit \
          --class org.apache.spark.deploy.dotnet.DotnetRunner \
@@ -196,7 +211,9 @@ Once you build the samples, you can use `spark-submit` to submit your .NET Core 
          ~/dotnet.spark/src/scala/microsoft-spark-<version>/target/microsoft-spark-<version>.jar \
          Microsoft.Spark.CSharp.Examples Sql.Batch.Basic $SPARK_HOME/examples/src/main/resources/people.json
          ```
+
      - **[Microsoft.Spark.Examples.Sql.Streaming.StructuredNetworkWordCount](../../examples/Microsoft.Spark.CSharp.Examples/Sql/Streaming/StructuredNetworkWordCount.cs)**
+
          ```bash
          spark-submit \
          --class org.apache.spark.deploy.dotnet.DotnetRunner \
@@ -204,7 +221,9 @@ Once you build the samples, you can use `spark-submit` to submit your .NET Core 
          ~/dotnet.spark/src/scala/microsoft-spark-<version>/target/microsoft-spark-<version>.jar \
          Microsoft.Spark.CSharp.Examples Sql.Streaming.StructuredNetworkWordCount localhost 9999
          ```
+
      - **[Microsoft.Spark.Examples.Sql.Streaming.StructuredKafkaWordCount (maven accessible)](../../examples/Microsoft.Spark.CSharp.Examples/Sql/Streaming/StructuredKafkaWordCount.cs)**
+
          ```bash
          spark-submit \
          --packages org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.2 \
@@ -213,7 +232,9 @@ Once you build the samples, you can use `spark-submit` to submit your .NET Core 
          ~/dotnet.spark/src/scala/microsoft-spark-<version>/target/microsoft-spark-<version>.jar \
          Microsoft.Spark.CSharp.Examples Sql.Streaming.StructuredKafkaWordCount localhost:9092 subscribe test
          ```
+
      - **[Microsoft.Spark.Examples.Sql.Streaming.StructuredKafkaWordCount (jars provided)](../../examples/Microsoft.Spark.CSharp.Examples/Sql/Streaming/StructuredKafkaWordCount.cs)**
+     
          ```bash
          spark-submit \
          --jars path/to/net.jpountz.lz4/lz4-1.3.0.jar,path/to/org.apache.kafka/kafka-clients-0.10.0.1.jar,path/to/org.apache.spark/spark-sql-kafka-0-10_2.11-2.3.2.jar,`path/to/org.slf4j/slf4j-api-1.7.6.jar,path/to/org.spark-project.spark/unused-1.0.0.jar,path/to/org.xerial.snappy/snappy-java-1.1.2.6.jar \

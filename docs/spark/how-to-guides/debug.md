@@ -6,9 +6,9 @@ ms.topic: conceptual
 ms.custom: mvc,how-to
 ---
 
-# Debug a .NET for Apache Spark application
+# Debugging .NET for Apache Spark Application
 
-This how-to provides the commands you need to run to debug your .NET for Apache Spark application and Scala code on Windows.
+This how-to provides the steps to debug your .NET for Apache Spark application on Windows.
 
 ## Debug your application
 
@@ -30,13 +30,37 @@ When you run the command, you see the following output:
 ***********************************************************************
 ```
 
-In this debug mode, `DotnetRunner` does not launch the .NET application, but it waits for it to connect. Leave this command prompt window open.
+In this debug mode, `DotnetRunner` does not launch the .NET application, but waits for it to connect. Leave this command prompt window open.
 
-Now you can run your .NET application with any debugger to debug your application.
+Now you can start your .NET application with a C# debugger ([Visual Studio Debugger for Windows/macOS](https://visualstudio.microsoft.com/vs/) or [C# Debugger Extension in Visual Code](https://code.visualstudio.com/Docs/editor/debugging)) to debug your application.
 
-## Debug Scala code
+## Debugging User Defined Function (UDF)
 
-If you need to debug the Scala side code, such as `DotnetRunner` or `DotnetBackendHandler`, run the following command:
+**Note that this is currently supported only on Windows with Visual Studio Debugger.**
+
+Before running `spark-submit`, set the following environment variable:
+```bat
+set DOTNET_WORKER_DEBUG=1
+```
+Now, when you run your Spark application, a `Choose Just-In-Time Debugger` window will pop up. Choose a Visual Studio debugger.
+
+The debugger will break at the following location in [TaskRunner.cs](../src/csharp/Microsoft.Spark.Worker/TaskRunner.cs):
+```C#
+if (EnvironmentUtils.GetEnvironmentVariableAsBool("DOTNET_WORKER_DEBUG"))
+{
+    Debugger.Launch(); // <-- The debugger will break here.
+}
+```
+
+Now, navigate to the `.cs` file that contains the UDF that you plan to debug, and set a breakpoint. (The breakpoint will say `The breakpoint will not currently be hit` because the worker hasn't loaded the assembly that contains UDF yet.)
+
+Hit `F5` to continue your application and the breakpoint will eventually be hit.
+
+**Note that the `Choose Just-In-Time Debugger` window will pop-up for each task. Therefore, make sure to set the number of executors to a low number. For example, you can use `--master local[1]` option for `spark-submit` to set the number of tasks to 1, and hence launching a single debugger instance.**
+
+## Debugging Scala code
+
+If you need to debug the Scala side code (`DotnetRunner`, `DotnetBackendHandler`, etc.), you can use the following command, and attach a debugger to the running process using [IntelliJ](https://www.jetbrains.com/help/idea/attaching-to-local-process.html):
 
 ```shell
 spark-submit \

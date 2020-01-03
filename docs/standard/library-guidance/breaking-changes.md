@@ -21,11 +21,11 @@ How a library is used by the .NET community changes the effect of breaking chang
 
   High-level libraries are directly referenced in an end-user application. If breaking changes occur, the developer can choose to update to the latest version, or can modify their application to work with the breaking change.
 
-**![yes icon](../../media/yes.png) DO** think about how your library will be used. What effect will breaking changes have on applications and libraries that use it?
+![check mark icon](../../media/check-mark.png) **DO** think about how your library will be used. What effect will breaking changes have on applications and libraries that use it?
 
-**![yes icon](../../media/yes.png) DO** minimize breaking changes when developing a low-level .NET library.
+![check mark icon](../../media/check-mark.png) **DO** minimize breaking changes when developing a low-level .NET library.
 
-**![yes icon](../../media/yes.png) CONSIDER** publishing a major rewrite of a library as a new NuGet package.
+![check mark icon](../../media/check-mark.png) **CONSIDER** publishing a major rewrite of a library as a new NuGet package.
 
 ## Types of breaking changes
 
@@ -52,23 +52,23 @@ Adding features and improving bad behaviors is a good thing, but without care it
 
 For example, ASP.NET Core MVC has the concept of a [compatibility version](/aspnet/core/mvc/compatibility-version) that modifies the features enabled and disabled on `MvcOptions`.
 
-**![yes icon](../../media/yes.png) CONSIDER** leaving new features off by default, if they affect existing users, and let developers opt in to the feature with a setting.
+![check mark icon](../../media/check-mark.png) **CONSIDER** leaving new features off by default, if they affect existing users, and let developers opt in to the feature with a setting.
 
 ### Binary breaking change
 
 A binary breaking change happens when you change the public API of your library, so assemblies compiled against older versions of your library are no longer able to call the API. For example, changing a method's signature by adding a new parameter will cause assemblies compiled against the older version of the library to throw a <xref:System.MissingMethodException>.
 
-A binary breaking change can also break an **entire assembly**. Renaming an assembly with `AssemblyName` will change the assembly's identity, as will adding, removing, or changing the assembly's strong naming key. A change of an assembly's identity will break all compiled code that uses it.
+A binary breaking change can also break an entire assembly. Renaming an assembly with `AssemblyName` changes the assembly's identity, as does adding, removing, or changing the assembly's strong naming key. Changing an assembly's identity will break all compiled code that uses it.
 
-**![no icon](../../media/no.png) DO NOT** change an assembly name.
+![x icon](../../media/x.png) **DO NOT** change an assembly name.
 
-**![no icon](../../media/no.png) DO NOT** add, remove, or change the strong naming key.
+![x icon](../../media/x.png) **DO NOT** add, remove, or change the strong naming key.
 
-**![yes icon](../../media/yes.png) CONSIDER** using abstract base classes instead of interfaces.
+![check mark icon](../../media/check-mark.png) **CONSIDER** using abstract base classes instead of interfaces.
 
 > Adding anything to an interface will cause existing types that implement it to fail. An abstract base class allows you to add a default virtual implementation.
 
-**![yes icon](../../media/yes.png) CONSIDER** placing the <xref:System.ObsoleteAttribute> on types and members that you intend to remove. The attribute should have instructions for updating code to no longer use the obsolete API.
+![check mark icon](../../media/check-mark.png) **CONSIDER** placing the <xref:System.ObsoleteAttribute> on types and members that you intend to remove. The attribute should have instructions for updating code to no longer use the obsolete API.
 
 > Code that calls types and methods with the <xref:System.ObsoleteAttribute> will generate a build warning with the message supplied to the attribute. The warnings give people who use the obsolete API surface time to migrate so that when the obsolete API is removed, most are no longer using it.
 
@@ -88,7 +88,7 @@ public class Document
 }
 ```
 
-**![yes icon](../../media/yes.png) CONSIDER** keeping types and methods with the <xref:System.ObsoleteAttribute> indefinitely in low and middle-level libraries.
+![check mark icon](../../media/check-mark.png) **CONSIDER** keeping types and methods with the <xref:System.ObsoleteAttribute> indefinitely in low and middle-level libraries.
 
 > Removing APIs is a binary breaking change. Considering keeping obsolete types and methods if maintaining them is low cost and doesn't add lot of technical debt to your library. Not removing types and methods can help avoid the worst-case scenarios mentioned above.
 

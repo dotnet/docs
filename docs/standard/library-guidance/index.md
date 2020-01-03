@@ -7,9 +7,11 @@ ms.date: 10/17/2018
 ---
 # Open-source library guidance
 
-This guidance provides recommendations for developers to create high-quality .NET libraries. This documentation focuses on the *what* and the *why* when building a .NET library, not the *how*.
+This guidance provides recommendations for creating high-quality .NET libraries. This documentation focuses on the *what* and the *why* when building a .NET library, not the *how*.
 
-Aspects of high-quality open-source .NET libraries:
+## High-quality features
+
+Features of high-quality open-source .NET libraries are:
 
 > [!div class="checklist"]
 >
@@ -28,19 +30,19 @@ Each article presents four types of recommendations: **Do**, **Consider**, **Avo
 
 You should almost always follow a **Do** recommendation. For example:
 
-**![yes icon](../../media/yes.png) DO** distribute your library using a NuGet package.
+![check mark icon](../../media/check-mark.png) **DO** distribute your library using a NuGet package.
 
 On the other hand, **Consider** recommendations should generally be followed, but there are legitimate exceptions to the rule and you shouldn't feel bad about not following the guidance:
 
-**![yes icon](../../media/yes.png) CONSIDER** using [SemVer 2.0.0](https://semver.org/) to version your NuGet package.
+![check mark icon](../../media/check-mark.png) **CONSIDER** using [SemVer 2.0.0](https://semver.org/) to version your NuGet package.
 
 **Avoid** recommendations mention things that are generally not a good idea, but breaking the rule sometimes makes sense:
 
-**![no icon](../../media/no.png) AVOID** NuGet package references that demand an exact version.
+![x icon](../../media/x.png) **AVOID** NuGet package references that demand an exact version.
 
 And finally, **Do not** recommendations indicate something you should almost never do:
 
-**![no icon](../../media/no.png) DO NOT** publish strong-named and non-strong-named versions of your library. For example, `Contoso.Api` and `Contoso.Api.StrongNamed`.
+![x icon](../../media/x.png) **DO NOT** publish strong-named and non-strong-named versions of your library. For example, `Contoso.Api` and `Contoso.Api.StrongNamed`.
 
 >[!div class="step-by-step"]
 >[Next](get-started.md)

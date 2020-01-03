@@ -13,12 +13,12 @@ ms.date: 01/18/2019
 
 The guidance in this section applies to all interop scenarios.
 
-- **![yes icon](../../media/yes.png) DO** use the same naming and capitalization for your methods and parameters as the native method you want to call.
-- **![yes icon](../../media/yes.png) CONSIDER** using the same naming and capitalization for constant values.
-- **![yes icon](../../media/yes.png) DO** use .NET types that map closest to the native type. For example, in C#, use `uint` when the native type is `unsigned int`.
-- **![yes icon](../../media/yes.png) DO** only use `[In]` and `[Out]` attributes when the behavior you want differs from the default behavior.
-- **![yes icon](../../media/yes.png) CONSIDER** using <xref:System.Buffers.ArrayPool%601?displayProperty=nameWithType> to pool your native array buffers.
-- **![yes icon](../../media/yes.png) CONSIDER** wrapping your P/Invoke declarations in a class with the same name and capitalization as your native library.
+- ![check mark icon](../../media/check-mark.png) **DO** use the same naming and capitalization for your methods and parameters as the native method you want to call.
+- ![check mark icon](../../media/check-mark.png) **CONSIDER** using the same naming and capitalization for constant values.
+- ![check mark icon](../../media/check-mark.png) **DO** use .NET types that map closest to the native type. For example, in C#, use `uint` when the native type is `unsigned int`.
+- ![check mark icon](../../media/check-mark.png) **DO** only use `[In]` and `[Out]` attributes when the behavior you want differs from the default behavior.
+- ![check mark icon](../../media/check-mark.png) **CONSIDER** using <xref:System.Buffers.ArrayPool%601?displayProperty=nameWithType> to pool your native array buffers.
+- ![check mark icon](../../media/check-mark.png) **CONSIDER** wrapping your P/Invoke declarations in a class with the same name and capitalization as your native library.
   - This allows your `[DllImport]` attributes to use the C# `nameof` language feature to pass in the name of the native library and ensure that you didn't misspell the name of the native library.
 
 ## DllImport attribute settings
@@ -36,9 +36,9 @@ When the CharSet is Unicode or the argument is explicitly marked as `[MarshalAs(
 
 Remember to mark the `[DllImport]` as `Charset.Unicode` unless you explicitly want ANSI treatment of your strings.
 
-**![no icon](../../media/no.png) DO NOT** use `[Out] string` parameters. String parameters passed by value with the `[Out]` attribute can destabilize the runtime if the string is an interned string. See more information about string interning in the documentation for <xref:System.String.Intern%2A?displayProperty=nameWithType>.
+![x icon](../../media/x.png) **DO NOT** use `[Out] string` parameters. String parameters passed by value with the `[Out]` attribute can destabilize the runtime if the string is an interned string. See more information about string interning in the documentation for <xref:System.String.Intern%2A?displayProperty=nameWithType>.
 
-**![no icon](../../media/no.png) AVOID** `StringBuilder` parameters. `StringBuilder` marshaling *always* creates a native buffer copy. As such, it can be extremely inefficient. Take the typical scenario of calling a Windows API that takes a string:
+![x icon](../../media/x.png) **AVOID** `StringBuilder` parameters. `StringBuilder` marshaling *always* creates a native buffer copy. As such, it can be extremely inefficient. Take the typical scenario of calling a Windows API that takes a string:
 
 1. Create a SB of the desired capacity (allocates managed capacity) **{1}**
 2. Invoke
@@ -52,15 +52,14 @@ in another call but this still only saves *1* allocation. It's much better to us
 
 The other issue with `StringBuilder` is that it always copies the return buffer back up to the first null. If the passed back string isn't terminated or is a double-null-terminated string, your P/Invoke is incorrect at best.
 
-If you *do* use `StringBuilder`, one last gotcha is that the capacity does **not** include a hidden null, which is always accounted for in interop. It's common for people to get this wrong as most APIs want the size of the buffer *including* the null. This can result in wasted/unnecessary allocations. Additionally, this gotcha prevents the runtime from optimizing `StringBuilder` marshaling to minimize copies.
+If you *do* use `StringBuilder`, be aware that the capacity does not include a hidden null, which is always accounted for in interop. It's common for people to get this wrong, as most APIs want the size of the buffer *including* the null. This can result in wasted or unnecessary allocations. Additionally, this mistake prevents the runtime from optimizing `StringBuilder` marshaling to minimize copies.
 
-**![yes icon](../../media/yes.png) CONSIDER** using `char[]`s from an `ArrayPool`.
+![check mark icon](../../media/check-mark.png) **CONSIDER** using `char[]`s from an `ArrayPool`.
 
 For more information on string marshaling, see [Default Marshaling for Strings](../../framework/interop/default-marshaling-for-strings.md) and [Customizing string marshaling](customize-parameter-marshaling.md#customizing-string-parameters).
 
 > __Windows Specific__  
-> For `[Out]` strings the CLR will use `CoTaskMemFree` by default to free strings or `SysStringFree` for strings that are marked
-as `UnmanagedType.BSTR`.  
+> For `[Out]` strings, the CLR uses `CoTaskMemFree` by default to free strings or `SysStringFree` for strings that are marked as `UnmanagedType.BSTR`.  
 > **For most APIs with an output string buffer:**  
 > The passed in character count must include the null. If the returned value is less than the passed in character count the call has succeeded and the value is the number of characters *without* the trailing null. Otherwise the count is the required size of the buffer *including* the null character.  
 >
@@ -70,7 +69,7 @@ as `UnmanagedType.BSTR`.
 
 ## Boolean parameters and fields
 
-Booleans are easy to mess up. By default, a .NET `bool` is marshaled to a Windows `BOOL`, where it's a 4-byte value. However, the `_Bool`, and `bool` types in C and C++ are a *single* byte. This can lead to hard to track down bugs as half the return value will be discarded, which will only *potentially* change the result. For more for information on marshaling .NET `bool` values to C or C++ `bool` types, see the documentation on [customizing boolean field marshaling](customize-struct-marshaling.md#customizing-boolean-field-marshaling).
+Booleans are easy to mess up. By default, a .NET `bool` is marshaled to a Windows `BOOL`, where it's a 4-byte value. However, the `_Bool`, and `bool` types in C and C++ are a *single* byte. This can lead to hard to track down bugs as half the return value will be discarded, which will only *potentially* change the result. For more for information on marshaling .NET `bool` values to C or C++ `bool` types, see the documentation on [customizing boolean field marshaling](customize-struct-marshaling.md#customize-boolean-field-marshaling).
 
 ## GUIDs
 
@@ -80,7 +79,7 @@ GUIDs are usable directly in signatures. Many Windows APIs take `GUID&` type ali
 |------|-------------|
 | `KNOWNFOLDERID` | `REFKNOWNFOLDERID` |
 
-**![no icon](../../media/no.png) DO NOT** Use `[MarshalAs(UnmanagedType.LPStruct)]` for anything other than `ref` GUID parameters.
+![x icon](../../media/x.png) **DO NOT** Use `[MarshalAs(UnmanagedType.LPStruct)]` for anything other than `ref` GUID parameters.
 
 ## Blittable types
 
@@ -118,7 +117,7 @@ public struct UnicodeCharStruct
 
 You can see if a type is blittable by attempting to create a pinned `GCHandle`. If the type isn't a string or considered blittable, `GCHandle.Alloc` will throw an `ArgumentException`.
 
-**![yes icon](../../media/yes.png) DO** make your structures blittable when possible.
+![check mark icon](../../media/check-mark.png) **DO** make your structures blittable when possible.
 
 For more information, see:
 
@@ -213,9 +212,9 @@ Blittable structs are much more performant as they can simply be used directly b
 
 Pointers to structs in definitions must either be passed by `ref` or use `unsafe` and `*`.
 
-**![yes icon](../../media/yes.png) DO** match the managed struct as closely as possible to the shape and names that are used in the official platform documentation or header.
+![check mark icon](../../media/check-mark.png) **DO** match the managed struct as closely as possible to the shape and names that are used in the official platform documentation or header.
 
-**![yes icon](../../media/yes.png) DO** use the C# `sizeof()` instead of `Marshal.SizeOf<MyStruct>()` for blittable structures to improve performance.
+![check mark icon](../../media/check-mark.png) **DO** use the C# `sizeof()` instead of `Marshal.SizeOf<MyStruct>()` for blittable structures to improve performance.
 
 An array like `INT_PTR Reserved1[2]` has to be marshaled to two `IntPtr` fields, `Reserved1a` and `Reserved1b`. When the native array is a primitive type, we can use the `fixed` keyword to write it a little more cleanly. For example, `SYSTEM_PROCESS_INFORMATION` looks like this in the native header:
 

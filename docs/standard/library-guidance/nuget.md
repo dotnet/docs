@@ -30,7 +30,7 @@ There are two main ways to create a NuGet package. The newer and recommended way
 
 The older way of creating a NuGet package is with a `*.nuspec` file and the `nuget.exe` command-line tool. A nuspec file gives you great control but you must carefully specify what assemblies and targets to include in the final NuGet package. It's easy to make a mistake or for someone to forget to update the nuspec when making changes. The advantage of a nuspec is you can use it create NuGet packages for frameworks that don't yet support an SDK-style project file.
 
-**![yes icon](../../media/yes.png) CONSIDER** using an SDK-style project file to create the NuGet package.
+![check mark icon](../../media/check-mark.png) **CONSIDER** using an SDK-style project file to create the NuGet package.
 
 ## Package dependencies
 
@@ -55,15 +55,15 @@ A NuGet package supports many [metadata properties](/nuget/reference/nuspec). Th
 > [!IMPORTANT]
 > A project without a license defaults to [exclusive copyright](https://choosealicense.com/no-permission/), making it legally impossible for other people to use.
 
-**![yes icon](../../media/yes.png) CONSIDER** choosing a NuGet package name with a prefix that meets NuGet's prefix reservation [criteria](/nuget/reference/id-prefix-reservation).
+![check mark icon](../../media/check-mark.png) **CONSIDER** choosing a NuGet package name with a prefix that meets NuGet's prefix reservation [criteria](/nuget/reference/id-prefix-reservation).
 
-**![yes icon](../../media/yes.png) DO** use an HTTPS href to your package icon.
+![check mark icon](../../media/check-mark.png) **DO** use an HTTPS href to your package icon.
 
 > Sites like NuGet.org run with HTTPS enabled and displaying a non-HTTPS image will create a mixed content warning.
 
-**![yes icon](../../media/yes.png) DO** use a package icon image that is 64x64 and has a transparent background for best viewing results.
+![check mark icon](../../media/check-mark.png) **DO** use a package icon image that is 64x64 and has a transparent background for best viewing results.
 
-**![yes icon](../../media/yes.png) CONSIDER** setting up [Source Link](./sourcelink.md) to add source control metadata to your assemblies and NuGet package.
+![check mark icon](../../media/check-mark.png) **CONSIDER** setting up [Source Link](./sourcelink.md) to add source control metadata to your assemblies and NuGet package.
 
 > Source Link automatically adds `RepositoryUrl` and `RepositoryType` metadata to the NuGet package. Source Link also adds information about the exact source code the package was built from. For example, a package created from a Git repository will have the commit hash added as metadata.
 
@@ -80,9 +80,9 @@ NuGet packages with a version suffix are considered [pre-release](/nuget/create-
 
 ![NuGet pre-release package dependency](./media/nuget/nuget-prerelease-package.png "NuGet pre-release package dependency")
 
-**![yes icon](../../media/yes.png) DO** publish a pre-release package when testing, previewing, or experimenting.
+![check mark icon](../../media/check-mark.png) **DO** publish a pre-release package when testing, previewing, or experimenting.
 
-**![yes icon](../../media/yes.png) DO** publish a stable package when its ready so other stable packages can reference it.
+![check mark icon](../../media/check-mark.png) **DO** publish a stable package when its ready so other stable packages can reference it.
 
 ## Symbol packages
 
@@ -108,7 +108,7 @@ An alternative to creating a symbol package is embedding symbol files in the mai
 
 The downside of embedding symbol files is that they increase the package size by about 30% for .NET libraries compiled using SDK-style projects. If package size is a concern, you should publish symbols in a symbol package instead.
 
-**![yes icon](../../media/yes.png) CONSIDER** publishing symbols as a symbol package (`*.snupkg`) to NuGet.org
+![check mark icon](../../media/check-mark.png) **CONSIDER** publishing symbols as a symbol package (`*.snupkg`) to NuGet.org
 
 > Symbol packages (`*.snupkg`) provide developers a good on-demand debugging experience without bloating the main package size and impacting restore performance for those who don't intend to debug the NuGet package.
 >

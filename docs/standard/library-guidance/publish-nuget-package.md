@@ -5,7 +5,7 @@ author: jamesnk
 ms.author: mairaw
 ms.date: 10/02/2018
 ---
-# Publishing a NuGet package
+# Publish a NuGet package
 
 NuGet packages are published and consumed from package repositories. While NuGet.org is the most widely known and used repository, there are many places to publish NuGet packages:
 
@@ -18,11 +18,11 @@ NuGet packages are published and consumed from package repositories. While NuGet
 > [!NOTE]
 > NuGet.org [does not allow a package to be deleted](/nuget/policies/deleting-packages) once it is uploaded. A package can be unlisted so that it is not publicly visible in the UI but the `*.nupkg` can still be downloaded on restore. Also, nuget.org does not allow duplicate package versions. To correct a NuGet package with an error you have to unlist the incorrect package, increment the version number and publish a new version of the package.
 
-**![yes icon](../../media/yes.png) DO** [publish stable packages and pre-release packages](/nuget/create-packages/publish-a-package) you want community feedback on to NuGet.org.
+![check mark icon](../../media/check-mark.png) **DO** [publish stable packages and pre-release packages](/nuget/create-packages/publish-a-package) you want community feedback on to NuGet.org.
 
-**![yes icon](../../media/yes.png) CONSIDER** publishing pre-release packages to a MyGet feed from a continuous integration build.
+![check mark icon](../../media/check-mark.png) **CONSIDER** publishing pre-release packages to a MyGet feed from a continuous integration build.
 
-**![yes icon](../../media/yes.png) CONSIDER** testing packages in your development environment using a local feed or MyGet. Check the package works then publish it to NuGet.org.
+![check mark icon](../../media/check-mark.png) **CONSIDER** testing packages in your development environment using a local feed or MyGet. Check the package works then publish it to NuGet.org.
 
 ## NuGet.org security
 
@@ -30,11 +30,11 @@ It's important that bad actors can't access your NuGet account and upload a mali
 
 ![alt text](./media/publish-nuget-package/nuget-2fa.png "NuGet Account Security")
 
-**![yes icon](../../media/yes.png) DO** use a Microsoft account to sign in to NuGet.
+![check mark icon](../../media/check-mark.png) **DO** use a Microsoft account to sign in to NuGet.
 
-**![yes icon](../../media/yes.png) DO** enable two-factor authentication for accessing NuGet.
+![check mark icon](../../media/check-mark.png) **DO** enable two-factor authentication for accessing NuGet.
 
-**![yes icon](../../media/yes.png) DO** enable email notification when a package is published.
+![check mark icon](../../media/check-mark.png) **DO** enable email notification when a package is published.
 
 >[!div class="step-by-step"]
 >[Previous](sourcelink.md)

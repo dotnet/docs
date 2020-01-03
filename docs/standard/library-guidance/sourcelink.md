@@ -13,15 +13,15 @@ Source Link is a technology that enables source code debugging of .NET assemblie
 
 > [!VIDEO https://www.youtube.com/embed/gyRGhCQPkB4?start=61]
 
-## Using Source Link
+## Use Source Link
 
 Instructions for using Source Link can be found on the [dotnet/sourcelink](https://github.com/dotnet/sourcelink/blob/master/README.md) GitHub repository.
 
-You can use [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer) to confirm that the Source Link metadata has been successfully embedded in the package. Check the `Repository` metadata is present with a commit identifier and that .pdb files are located with each target's .dll.
+You can use [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer) to confirm that the Source Link metadata has been successfully embedded in the package. Check the `Repository` metadata is present with a commit identifier and that .pdb files are located with each target's .dll file.
 
 ![Source Link in NuGet Package Explorer](./media/sourcelink/nuget-package-explorer-sourcelink.png "Source Link in NuGet Package Explorer")
 
-**![yes icon](../../media/yes.png) CONSIDER** using Source Link to add source control metadata to your assemblies and NuGet packages.
+![check mark icon](../../media/check-mark.png) **CONSIDER** using Source Link to add source control metadata to your assemblies and NuGet packages.
 
 > [!TIP]
 > You can further enhance a developer's debugging experience by adding debugger attributes to your types.
@@ -30,9 +30,9 @@ You can use [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuG
 > * <xref:System.Diagnostics.DebuggerStepThroughAttribute> instructs the debugger to step through the code instead of stepping into the code.
 > * <xref:System.Diagnostics.DebuggerBrowsableAttribute> controls whether a member is displayed in the debugger variable windows.
 
-**![yes icon](../../media/yes.png) CONSIDER** publishing symbol files (`*.pdb`).
+![check mark icon](../../media/check-mark.png) **CONSIDER** publishing symbol files (*.pdb).
 
-> For the best debugging experience your library should publish symbol files as well as use Source Link. For more information about symbol files and symbol packages, see [Symbol packages](./nuget.md#symbol-packages).
+> For the best debugging experience, your library should publish symbol files as well as use Source Link. For more information about symbol files and symbol packages, see [Symbol packages](./nuget.md#symbol-packages).
 
 >[!div class="step-by-step"]
 >[Previous](dependencies.md)

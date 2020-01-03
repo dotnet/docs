@@ -17,7 +17,7 @@ It's a common situation for a .NET project to have multiple versions of a packag
 
 At build time, NuGet analyzes all the packages that a project depends on, including the dependencies of dependencies. When multiple versions of a package are detected, rules are evaluated to pick one. Unifying packages is necessary because running side-by-side versions of an assembly in the same application is problematic in .NET.
 
-Most diamond dependencies are easily resolved; however, they can create issues in certain circumstances:
+Most diamond dependencies are easily resolved. However, they can create issues in certain circumstances:
 
 1. **Conflicting NuGet package references** prevent a version from being resolved during package restore.
 2. **Breaking changes between the versions** cause bugs and exceptions at runtime.
@@ -25,7 +25,7 @@ Most diamond dependencies are easily resolved; however, they can create issues i
 
 It's not possible to know what packages will be used alongside your own. A good way to reduce the likelihood of a diamond dependency breaking your library is to minimize the number of packages you depend on.
 
-**![yes icon](../../media/yes.png) DO** review your .NET library for unnecessary dependencies.
+![check mark icon](../../media/check-mark.png) **DO** review your .NET library for unnecessary dependencies.
 
 ## NuGet dependency version ranges
 
@@ -52,11 +52,11 @@ Upper version limits will cause NuGet to fail if there's a conflict. For example
 
 ![Diamond dependency conflict](./media/dependencies/diamond-dependency-conflict.png "Diamond dependency conflict")
 
-**![no icon](../../media/no.png) DO NOT** have NuGet package references with no minimum version.
+![x icon](../../media/x.png) **DO NOT** have NuGet package references with no minimum version.
 
-**![no icon](../../media/no.png) AVOID** NuGet package references that demand an exact version.
+![x icon](../../media/x.png) **AVOID** NuGet package references that demand an exact version.
 
-**![no icon](../../media/no.png) AVOID** NuGet package references with a version upper limit.
+![x icon](../../media/x.png) **AVOID** NuGet package references with a version upper limit.
 
 ## NuGet shared source packages
 
@@ -74,19 +74,19 @@ Shared source packages are great for including small pieces of functionality. Fo
 
 Shared source packages have some limitations. They can only be referenced by `PackageReference`, so older `packages.config` projects are excluded. Also shared source packages are only usable by projects with the same language type. Because of these limitations shared source packages are best used to share functionality within an open-source project.
 
-**![yes icon](../../media/yes.png) CONSIDER** referencing shared source packages for small, internal pieces of functionality.
+![check mark icon](../../media/check-mark.png) **CONSIDER** referencing shared source packages for small, internal pieces of functionality.
 
-**![yes icon](../../media/yes.png) CONSIDER** making your package a shared source package if it provides small, internal pieces of functionality.
+![check mark icon](../../media/check-mark.png) **CONSIDER** making your package a shared source package if it provides small, internal pieces of functionality.
 
-**![yes icon](../../media/yes.png) DO** reference shared source packages with `PrivateAssets="All"`.
+![check mark icon](../../media/check-mark.png) **DO** reference shared source packages with `PrivateAssets="All"`.
 
 > This setting tells NuGet the package is only to be used at development time and shouldn't be exposed as a public dependency.
 
-**![no icon](../../media/no.png) DO NOT** have shared source package types in your public API.
+![x icon](../../media/x.png) **DO NOT** have shared source package types in your public API.
 
 > Shared source types are compiled into the referencing assembly and can't be exchanged across assembly boundaries. For example, a shared-source `IRepository` type in one project is a separate type from the same shared-source `IRepository` in another project. Types in shared source packages should have an `internal` visibility.
 
-**![no icon](../../media/no.png) DO NOT** publish shared source packages to NuGet.org.
+![x icon](../../media/x.png) **DO NOT** publish shared source packages to NuGet.org.
 
 > Shared source packages contain source code and can only be used by projects with the same language type. For example, a C# shared source package cannot be used by an F# application.
 >

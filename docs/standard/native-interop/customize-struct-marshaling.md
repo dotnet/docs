@@ -10,17 +10,17 @@ dev_langs:
 ---
 # Customize structure marshaling
 
-Sometimes the default marshaling rules for structures aren't exactly what you need. The .NET runtimes provide a few extension points for you to customize your structure's layout and how fields are marshaled.
+Sometimes the default marshaling rules for structures aren't exactly what you need. The runtimes in .NET provide a few extension points for customizing a structure's layout and how fields are marshaled.
 
 ## Customize structure layout
 
 .NET provides the <xref:System.Runtime.InteropServices.StructLayoutAttribute?displayProperty=nameWithType> attribute and the <xref:System.Runtime.InteropServices.LayoutKind?displayProperty=nameWithType> enumeration to allow you to customize how fields are placed in memory. The following guidance will help you avoid common issues.
 
-**![yes icon](../../media/yes.png) CONSIDER** using `LayoutKind.Sequential` whenever possible.
+![check mark icon](../../media/check-mark.png) **CONSIDER** using `LayoutKind.Sequential` whenever possible.
 
-**![yes icon](../../media/yes.png) DO** only use `LayoutKind.Explicit` in marshaling when your native struct is also has an explicit layout, such as a union.
+![check mark icon](../../media/check-mark.png) **DO** only use `LayoutKind.Explicit` in marshaling when your native struct is also has an explicit layout, such as a union.
 
-**![no icon](../../media/no.png) AVOID** using `LayoutKind.Explicit` when marshaling structures on non-Windows platforms if you need to target runtimes before .NET Core 3.0. The .NET Core runtime before 3.0 doesn't support passing explicit structures by value to native functions on Intel or AMD 64-bit non-Windows systems. However, the runtime supports passing explicit structures by reference on all platforms.
+![x icon](../../media/x.png) **AVOID** using `LayoutKind.Explicit` when marshaling structures on non-Windows platforms if you need to target runtimes before .NET Core 3.0. The .NET Core runtime before 3.0 doesn't support passing explicit structures by value to native functions on Intel or AMD 64-bit non-Windows systems. However, the runtime supports passing explicit structures by reference on all platforms.
 
 ## Customize boolean field marshaling
 
@@ -330,7 +330,7 @@ struct Currency
 };
 ```
 
-## Marshal System.Objects
+## Marshal System.Object fields
 
 On Windows, you can marshal `object`-typed fields to native code. You can marshal these fields to one of three types:
 

@@ -24,9 +24,9 @@ The downside to strong naming is that the .NET Framework on Windows enables stri
 </configuration>
 ```
 
-When .NET developers complain about strong naming, what they're usually complaining about is strict assembly loading. Fortunately, this issue is isolated to the .NET Framework. .NET Core, Xamarin, UWP, and most other .NET implementations don't have strict assembly loading and removes the main downside of strong naming.
+When .NET developers complain about strong naming, what they're usually complaining about is strict assembly loading. Fortunately, this issue is isolated to .NET Framework. .NET Core, Xamarin, UWP, and most other .NET implementations don't have strict assembly loading and removes the main downside of strong naming.
 
-One important aspect of strong naming is that it's viral: a strong named assembly can only reference other strong named assemblies. If your library isn't strong named, then you have excluded developers who are building an application or library that needs strong naming from using it.
+One important aspect of strong naming is that it's viral: a strong-named assembly can only reference other strong named assemblies. If your library isn't strong named, then you have excluded developers who are building an application or library that needs strong naming from using it.
 
 The benefits of strong naming are:
 
@@ -41,9 +41,9 @@ You should strong name your open-source .NET libraries. Strong naming an assembl
 > [!NOTE]
 > This guidance is specific to publicly distributed .NET libraries, such as .NET libraries published on NuGet.org. Strong naming is not required by most .NET applications and should not be done by default.
 
-**![yes icon](../../media/yes.png) CONSIDER** strong naming your library's assemblies.
+![check mark icon](../../media/check-mark.png) **CONSIDER** strong naming your library's assemblies.
 
-**![yes icon](../../media/yes.png) CONSIDER** adding the strong naming key to your source control system.
+![check mark icon](../../media/check-mark.png) **CONSIDER** adding the strong naming key to your source control system.
 
 > A publicly available key lets developers modify and recompile your library source code with the same key.
 > 
@@ -52,15 +52,15 @@ You should strong name your open-source .NET libraries. Strong naming an assembl
 > [!IMPORTANT]
 > When the identity of the publisher of the code is desired, [Authenticode](/windows-hardware/drivers/install/authenticode) and [NuGet Package Signing](/nuget/create-packages/sign-a-package) are recommended. Code Access Security (CAS) should not be used as a security mitigation.
 
-**![yes icon](../../media/yes.png) CONSIDER** incrementing the assembly version on only major version changes to help users reduce binding redirects, and how often they're updated.
+![check mark icon](../../media/check-mark.png) **CONSIDER** incrementing the assembly version on only major version changes to help users reduce binding redirects, and how often they're updated.
 
 > Read more about [versioning and the assembly version](./versioning.md#assembly-version).
 
-**![no icon](../../media/no.png) DO NOT** add, remove, or change the strong naming key.
+![x icon](../../media/x.png) **DO NOT** add, remove, or change the strong naming key.
 
 > Modifying an assembly's strong naming key changes the assembly's identity and breaks compiled code that uses it. For more information, see [binary breaking changes](./breaking-changes.md#binary-breaking-change).
 
-**![no icon](../../media/no.png) DO NOT** publish strong-named and non-strong-named versions of your library. For example, `Contoso.Api` and `Contoso.Api.StrongNamed`.
+![x icon](../../media/x.png) **DO NOT** publish strong-named and non-strong-named versions of your library. For example, `Contoso.Api` and `Contoso.Api.StrongNamed`.
 
 > Publishing two packages forks your developer eco-system. Also, if an application ends up depending on both packages the developer can encounter type name conflicts. As far as .NET is concerned they are different types in different assemblies.
 

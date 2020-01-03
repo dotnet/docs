@@ -29,11 +29,11 @@ The NuGet package identifier combined with the NuGet package version is used to 
 
 Because the NuGet package version is the most visible version to developers, it's a good idea to update it using [Semantic Versioning (SemVer)](https://semver.org/). SemVer indicates the significance of changes between release and helps developers make an informed decision when choosing what version to use. For example, going from `1.0` to `2.0` indicates that there are potentially breaking changes.
 
-**✔️ CONSIDER** using [SemVer 2.0.0](https://semver.org/) to version your NuGet package.
+**![yes icon](../../media/yes.png) CONSIDER** using [SemVer 2.0.0](https://semver.org/) to version your NuGet package.
 
-**✔️ DO** use the NuGet package version in public documentation as it's the version number that users will commonly see.
+**![yes icon](../../media/yes.png) DO** use the NuGet package version in public documentation as it's the version number that users will commonly see.
 
-**✔️ DO** include a pre-release suffix when releasing a non-stable package.
+**![yes icon](../../media/yes.png) DO** include a pre-release suffix when releasing a non-stable package.
 
 > Users must opt in to getting pre-release packages, so they will understand that the package is not complete.
 
@@ -49,11 +49,11 @@ The Windows .NET Framework CLR demands an exact match to load a strong named ass
 
 Strong naming combined with assembly version enables [strict assembly version loading](../assembly/versioning.md). While strong naming a library has a number of benefits, it often results in runtime exceptions that an assembly can't be found and [requires binding redirects](../../framework/configure-apps/redirect-assembly-versions.md) in `app.config`/`web.config` to be fixed. .NET Core assembly loading has been relaxed, and the .NET Core CLR will automatically load assemblies at runtime with a higher version.
 
-**✔️ CONSIDER** only including a major version in the AssemblyVersion.
+**![yes icon](../../media/yes.png) CONSIDER** only including a major version in the AssemblyVersion.
 
 > e.g. Library 1.0 and Library 1.0.1 both have an AssemblyVersion of `1.0.0.0`, while Library 2.0 has AssemblyVersion of `2.0.0.0`. When the assembly version changes less often, it reduces binding redirects.
 
-**✔️ CONSIDER** keeping the major version number of the AssemblyVersion and the NuGet package version in sync.
+**![yes icon](../../media/yes.png) CONSIDER** keeping the major version number of the AssemblyVersion and the NuGet package version in sync.
 
 > The AssemblyVersion is included in some informational messages displayed to the user, e.g. the assembly name and assembly qualified type names in exception messages. Maintaining a relationship between the versions provides more information to developers about which version they are using.
 
@@ -71,11 +71,11 @@ The assembly file version is used to display a file version in Windows and has n
 
 ![Windows Explorer](./media/versioning/win-properties.png "Windows Explorer")
 
-**✔️ CONSIDER** including a continuous integration build number as the AssemblyFileVersion revision.
+**![yes icon](../../media/yes.png) CONSIDER** including a continuous integration build number as the AssemblyFileVersion revision.
 
 > For example, you are building version 1.0.0 of your project, and the continuous integration build number is 99 so your AssemblyFileVersion is 1.0.0.99.
 
-**✔️ DO** use the format `Major.Minor.Build.Revision` for file version.
+**![yes icon](../../media/yes.png) DO** use the format `Major.Minor.Build.Revision` for file version.
 
 > While the file version is never used by .NET, [Windows expects the file version](/windows/desktop/menurc/versioninfo-resource) to be in the `Major.Minor.Build.Revision` format. A warning is raised if the version doesn't follow this format.
 

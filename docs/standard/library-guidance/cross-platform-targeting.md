@@ -23,7 +23,7 @@ Targeting .NET Standard, and successfully compiling your project, doesn't guaran
 > [!TIP]
 > The .NET team [offers a Roslyn analyzer](../analyzers/api-analyzer.md) to help you discover possible issues.
 
-**✔️ DO** start with including a `netstandard2.0` target.
+**![yes icon](../../media/yes.png) DO** start with including a `netstandard2.0` target.
 
 > Most general-purpose libraries should not need APIs outside of .NET Standard 2.0. .NET Standard 2.0 is supported by all modern platforms and is the recommended way to support multiple platforms with one target.
 
@@ -31,7 +31,7 @@ Targeting .NET Standard, and successfully compiling your project, doesn't guaran
 
 > .NET Standard 1.x is distributed as a granular set of NuGet packages, which creates a large package dependency graph and results in developers downloading a lot of packages when building. Modern .NET platforms, including .NET Framework 4.6.1, UWP and Xamarin, all support .NET Standard 2.0. You should only target .NET Standard 1.x if you specifically need to target an older platform.
 
-**✔️ DO** include a `netstandard2.0` target if you require a `netstandard1.x` target.
+**![yes icon](../../media/yes.png) DO** include a `netstandard2.0` target if you require a `netstandard1.x` target.
 
 > All platforms supporting .NET Standard 2.0 will use the `netstandard2.0` target and benefit from having a smaller package graph while older platforms will still work and fall back to using the `netstandard1.x` target.
 
@@ -47,7 +47,7 @@ To shield your consumers from having to build for individual frameworks, you sho
 
 ![NuGet package with multiple assemblies](./media/cross-platform-targeting/nuget-package-multiple-assemblies.png "NuGet package with multiple assemblies")
 
-**✔️ CONSIDER** targeting .NET implementations in addition to .NET Standard.
+**![yes icon](../../media/yes.png) CONSIDER** targeting .NET implementations in addition to .NET Standard.
 
 > Targeting .NET implementations allows you to call platform-specific APIs that are outside of .NET Standard.
 >
@@ -88,15 +88,15 @@ public static class GpsLocation
 
 > The .NET Standard assembly will automatically be used by NuGet. Targeting individual .NET implementations increases the `*.nupkg` size for no benefit.
 
-**✔️ CONSIDER** adding a target for `net461` when you're offering a `netstandard2.0` target.
+**![yes icon](../../media/yes.png) CONSIDER** adding a target for `net461` when you're offering a `netstandard2.0` target.
 
 > Using .NET Standard 2.0 from .NET Framework has some issues that were addressed in .NET Framework 4.7.2. You can improve the experience for developers that are still on .NET Framework 4.6.1 - 4.7.1 by offering them a binary that is built for .NET Framework 4.6.1.
 
-**✔️ DO** distribute your library using a NuGet package.
+**![yes icon](../../media/yes.png) DO** distribute your library using a NuGet package.
 
 > NuGet will select the best target for the developer and shield them having to pick the appropriate implementation.
 
-**✔️ DO** use a project file's `TargetFrameworks` property when multi-targeting.
+**![yes icon](../../media/yes.png) DO** use a project file's `TargetFrameworks` property when multi-targeting.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -107,7 +107,7 @@ public static class GpsLocation
 </Project>
 ```
 
-**✔️ CONSIDER** using [MSBuild.Sdk.Extras](https://github.com/onovotny/MSBuildSdkExtras) when multi-targeting for UWP and Xamarin as it greatly simplifies your project file.
+**![yes icon](../../media/yes.png) CONSIDER** using [MSBuild.Sdk.Extras](https://github.com/onovotny/MSBuildSdkExtras) when multi-targeting for UWP and Xamarin as it greatly simplifies your project file.
 
 ## Older targets
 

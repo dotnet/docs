@@ -13,12 +13,12 @@ ms.date: 01/18/2019
 
 The guidance in this section applies to all interop scenarios.
 
-- **✔️ DO** use the same naming and capitalization for your methods and parameters as the native method you want to call.
-- **✔️ CONSIDER** using the same naming and capitalization for constant values.
-- **✔️ DO** use .NET types that map closest to the native type. For example, in C#, use `uint` when the native type is `unsigned int`.
-- **✔️ DO** only use `[In]` and `[Out]` attributes when the behavior you want differs from the default behavior.
-- **✔️ CONSIDER** using <xref:System.Buffers.ArrayPool%601?displayProperty=nameWithType> to pool your native array buffers.
-- **✔️ CONSIDER** wrapping your P/Invoke declarations in a class with the same name and capitalization as your native library.
+- **![yes icon](../../media/yes.png) DO** use the same naming and capitalization for your methods and parameters as the native method you want to call.
+- **![yes icon](../../media/yes.png) CONSIDER** using the same naming and capitalization for constant values.
+- **![yes icon](../../media/yes.png) DO** use .NET types that map closest to the native type. For example, in C#, use `uint` when the native type is `unsigned int`.
+- **![yes icon](../../media/yes.png) DO** only use `[In]` and `[Out]` attributes when the behavior you want differs from the default behavior.
+- **![yes icon](../../media/yes.png) CONSIDER** using <xref:System.Buffers.ArrayPool%601?displayProperty=nameWithType> to pool your native array buffers.
+- **![yes icon](../../media/yes.png) CONSIDER** wrapping your P/Invoke declarations in a class with the same name and capitalization as your native library.
   - This allows your `[DllImport]` attributes to use the C# `nameof` language feature to pass in the name of the native library and ensure that you didn't misspell the name of the native library.
 
 ## DllImport attribute settings
@@ -54,7 +54,7 @@ The other issue with `StringBuilder` is that it always copies the return buffer 
 
 If you *do* use `StringBuilder`, one last gotcha is that the capacity does **not** include a hidden null, which is always accounted for in interop. It's common for people to get this wrong as most APIs want the size of the buffer *including* the null. This can result in wasted/unnecessary allocations. Additionally, this gotcha prevents the runtime from optimizing `StringBuilder` marshaling to minimize copies.
 
-**✔️ CONSIDER** using `char[]`s from an `ArrayPool`.
+**![yes icon](../../media/yes.png) CONSIDER** using `char[]`s from an `ArrayPool`.
 
 For more information on string marshaling, see [Default Marshaling for Strings](../../framework/interop/default-marshaling-for-strings.md) and [Customizing string marshaling](customize-parameter-marshaling.md#customizing-string-parameters).
 
@@ -118,7 +118,7 @@ public struct UnicodeCharStruct
 
 You can see if a type is blittable by attempting to create a pinned `GCHandle`. If the type isn't a string or considered blittable, `GCHandle.Alloc` will throw an `ArgumentException`.
 
-**✔️ DO** make your structures blittable when possible.
+**![yes icon](../../media/yes.png) DO** make your structures blittable when possible.
 
 For more information, see:
 
@@ -213,9 +213,9 @@ Blittable structs are much more performant as they can simply be used directly b
 
 Pointers to structs in definitions must either be passed by `ref` or use `unsafe` and `*`.
 
-**✔️ DO** match the managed struct as closely as possible to the shape and names that are used in the official platform documentation or header.
+**![yes icon](../../media/yes.png) DO** match the managed struct as closely as possible to the shape and names that are used in the official platform documentation or header.
 
-**✔️ DO** use the C# `sizeof()` instead of `Marshal.SizeOf<MyStruct>()` for blittable structures to improve performance.
+**![yes icon](../../media/yes.png) DO** use the C# `sizeof()` instead of `Marshal.SizeOf<MyStruct>()` for blittable structures to improve performance.
 
 An array like `INT_PTR Reserved1[2]` has to be marshaled to two `IntPtr` fields, `Reserved1a` and `Reserved1b`. When the native array is a primitive type, we can use the `fixed` keyword to write it a little more cleanly. For example, `SYSTEM_PROCESS_INFORMATION` looks like this in the native header:
 

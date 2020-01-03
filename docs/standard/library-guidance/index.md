@@ -36,11 +36,11 @@ On the other hand, **Consider** recommendations should generally be followed, bu
 
 **Avoid** recommendations mention things that are generally not a good idea, but breaking the rule sometimes makes sense:
 
-**❌ AVOID** NuGet package references that demand an exact version.
+**![no icon](../../media/no.png) AVOID** NuGet package references that demand an exact version.
 
 And finally, **Do not** recommendations indicate something you should almost never do:
 
-**❌ DO NOT** publish strong-named and non-strong-named versions of your library. For example, `Contoso.Api` and `Contoso.Api.StrongNamed`.
+**![no icon](../../media/no.png) DO NOT** publish strong-named and non-strong-named versions of your library. For example, `Contoso.Api` and `Contoso.Api.StrongNamed`.
 
 >[!div class="step-by-step"]
 >[Next](get-started.md)

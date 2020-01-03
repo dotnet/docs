@@ -209,7 +209,7 @@ On German Windows, if this resources.dll is placed in a de-DE folder next to the
 |Code|Original English BAML|Localized BAML|
 |Culturally neutral resources|Other resources in English|Other resources localized to German|
 
-The .NET framework automatically chooses which satellite resources assembly to load based on the application’s `Thread.CurrentThread.CurrentUICulture`. This defaults to the culture of your Windows OS. So if you are using German Windows, the de-DE\MyDialog.resources.dll loads, if you are using English Windows, the en-US\MyDialog.resources.dll loads. You can set the ultimate fallback resource for your application by specifying the NeutralResourcesLanguage in your project’s AssemblyInfo.*. For example if you specify:
+.NET Framework automatically chooses which satellite resources assembly to load based on the application’s `Thread.CurrentThread.CurrentUICulture`. This defaults to the culture of your Windows OS. So if you are using German Windows, the de-DE\MyDialog.resources.dll loads, if you are using English Windows, the en-US\MyDialog.resources.dll loads. You can set the ultimate fallback resource for your application by specifying the NeutralResourcesLanguage in your project’s AssemblyInfo.*. For example if you specify:
 
 `[assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]`
 

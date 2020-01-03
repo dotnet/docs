@@ -7,9 +7,6 @@ ms.custom: mvc,how-to
 ---
 
 
-Building Spark .NET on Ubuntu 18.04
-==========================
-
 # Table of Contents
 - [Open Issues](#open-issues)
 - [Pre-requisites](#pre-requisites)
@@ -234,7 +231,7 @@ Once you build the samples, you can use `spark-submit` to submit your .NET Core 
          ```
 
      - **[Microsoft.Spark.Examples.Sql.Streaming.StructuredKafkaWordCount (jars provided)](../../examples/Microsoft.Spark.CSharp.Examples/Sql/Streaming/StructuredKafkaWordCount.cs)**
-     
+
          ```bash
          spark-submit \
          --jars path/to/net.jpountz.lz4/lz4-1.3.0.jar,path/to/org.apache.kafka/kafka-clients-0.10.0.1.jar,path/to/org.apache.spark/spark-sql-kafka-0-10_2.11-2.3.2.jar,`path/to/org.slf4j/slf4j-api-1.7.6.jar,path/to/org.spark-project.spark/unused-1.0.0.jar,path/to/org.xerial.snappy/snappy-java-1.1.2.6.jar \

@@ -20,12 +20,12 @@ Building Spark .NET on Windows
     - [Using .NET Core CLI for .NET Core](#using-net-core-cli-for-net-core)
 - [Run Samples](#run-samples)
 
-# Open Issues:
+## Open Issues:
 - [Allow users to choose which .NET framework to build for]()
 - [Building through Visual Studio Code]()
 - [Building fully automatically through .NET Core CLI]()
 
-# Pre-requisites:
+## Pre-requisites:
 
 If you already have all the pre-requisites, skip to the [build](windows-instructions.md#building) steps below.
 
@@ -87,7 +87,7 @@ Please make sure you are able to run `dotnet`, `java`, `mvn`, `spark-shell` from
 
 > **Note**: A new instance of the command-line may be required if any environment variables were updated.
 
-# Building
+## Building
 
 For the rest of the section, it is assumed that you have cloned Spark .NET repo into your machine e.g., `c:\github\dotnet-spark\`
 
@@ -95,7 +95,7 @@ For the rest of the section, it is assumed that you have cloned Spark .NET repo 
 git clone https://github.com/dotnet/spark.git c:\github\dotnet-spark
 ```
 
-## Building Spark .NET Scala Extensions Layer
+### Building Spark .NET Scala Extensions Layer
 
 When you submit a .NET application, Spark .NET has the necessary logic written in Scala that inform Apache Spark how to handle your requests (e.g., request to create a new Spark Session, request to transfer data from .NET side to JVM side etc.). This logic can be found in the [Spark .NET Scala Source Code](../../../src/scala).
 
@@ -109,9 +109,9 @@ You should see JARs created for the supported Spark versions:
 * `microsoft-spark-2.3.x\target\microsoft-spark-2.3.x-<version>.jar`
 * `microsoft-spark-2.4.x\target\microsoft-spark-2.4.x-<version>.jar`
 
-## Building .NET Samples Application
+### Building .NET Samples Application
 
-### Using Visual Studio for .NET Framework
+#### Using Visual Studio for .NET Framework
 
   1. Open `src\csharp\Microsoft.Spark.sln` in Visual Studio and build the `Microsoft.Spark.CSharp.Examples` project under the `examples` folder (this will in turn build the .NET bindings project as well). If you want, you can write your own code in the `Microsoft.Spark.Examples` project:
   
@@ -156,7 +156,7 @@ You should see JARs created for the supported Spark versions:
 
       </details>
 
-### Using .NET Core CLI for .NET Core
+#### Using .NET Core CLI for .NET Core
 
 > Note: We are currently working on automating .NET Core builds for Spark .NET. Until then, we appreciate your patience in performing some of the steps manually.
 
@@ -203,7 +203,7 @@ You should see JARs created for the supported Spark versions:
 
       </details>
 
-# Run Samples
+## Run Samples
 
 Once you build the samples, running them will be through `spark-submit` regardless of whether you are targeting .NET Framework or .NET Core apps. Make sure you have followed the [pre-requisites](#pre-requisites) section and installed Apache Spark.
 

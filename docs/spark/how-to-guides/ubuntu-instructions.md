@@ -1,5 +1,5 @@
 ---
-title: Building .NET for Apache Sapark on Ubuntu
+title: Building .NET for Apache Sapark application on Ubuntu
 description: Learn how to build your .NET for Apache Spark application on Ubuntu
 ms.date: 01/02/2020
 ms.topic: conceptual
@@ -18,10 +18,10 @@ Building Spark .NET on Ubuntu 18.04
   - [Building .NET Sample Applications using .NET Core CLI](#building-net-sample-applications-using-net-core-cli)
 - [Run Samples](#run-samples)
 
-# Open Issues:
+## Open Issues:
 - [Building through Visual Studio Code]()
 
-# Pre-requisites:
+## Pre-requisites:
 
 If you already have all the pre-requisites, skip to the [build](ubuntu-instructions.md#building) steps below.
 
@@ -103,7 +103,7 @@ If you already have all the pre-requisites, skip to the [build](ubuntu-instructi
 
 Please make sure you are able to run `dotnet`, `java`, `mvn`, `spark-shell` from your command-line before you move to the next section. Feel there is a better way? Please [open an issue](https://github.com/dotnet/spark/issues) and feel free to contribute.
 
-# Building
+## Building
 
 For the rest of the section, it is assumed that you have cloned Spark .NET repo into your machine e.g., `~/dotnet.spark/`
 
@@ -111,7 +111,7 @@ For the rest of the section, it is assumed that you have cloned Spark .NET repo 
 git clone https://github.com/dotnet/spark.git ~/dotnet.spark
 ```
 
-## Building Spark .NET Scala Extensions Layer
+### Building Spark .NET Scala Extensions Layer
 
 When you submit a .NET application, Spark .NET has the necessary logic written in Scala that inform Apache Spark how to handle your requests (e.g., request to create a new Spark Session, request to transfer data from .NET side to JVM side etc.). This logic can be found in the [Spark .NET Scala Source Code](../../../src/scala).
 
@@ -125,7 +125,7 @@ You should see JARs created for the supported Spark versions:
 * `microsoft-spark-2.3.x/target/microsoft-spark-2.3.x-<version>.jar`
 * `microsoft-spark-2.4.x/target/microsoft-spark-2.4.x-<version>.jar`
 
-## Building .NET Sample Applications using .NET Core CLI
+### Building .NET Sample Applications using .NET Core CLI
 
   1. Build the Worker
       ```bash
@@ -171,7 +171,7 @@ You should see JARs created for the supported Spark versions:
 
      </details>
 
-# Run Samples
+## Run Samples
 
 Once you build the samples, you can use `spark-submit` to submit your .NET Core apps. Make sure you have followed the [pre-requisites](#pre-requisites) section and installed Apache Spark.
 

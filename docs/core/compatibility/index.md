@@ -109,7 +109,7 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - **![yes icon](../../media/yes.png) Calling a new event that wasn't previously defined**
 
-- **![maybe icon](../../media/question-mark.png) Adding a new instance field to a type**
+- **![maybe icon](../../media/maybe.png) Adding a new instance field to a type**
 
    This change impacts serialization.
 

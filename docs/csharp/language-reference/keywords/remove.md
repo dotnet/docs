@@ -15,7 +15,7 @@ The `remove` contextual keyword is used to define a custom event accessor that i
 
 ## Example
 
-The following example shows an event with custom [add](add.md) and `remove` accessors. For the full example, see [How to:  Implement Interface Events](../../programming-guide/events/how-to-implement-interface-events.md).
+The following example shows an event with custom [add](add.md) and `remove` accessors. For the full example, see [How to implement interface events](../../programming-guide/events/how-to-implement-interface-events.md).
 
  [!code-csharp[csrefKeywordsContextual#15](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsContextual/CS/csrefKeywordsContextual.cs#15)]
 

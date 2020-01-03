@@ -1,13 +1,16 @@
 ---
 title: How to install the ML.NET Command-Line Interface (CLI) tool
-description: Overview and installation of the ML.NET Command-Line Interface (CLI) tool.
-ms.date: 04/16/2019
-ms.custom: ""
+description: Learn how to install, upgrade, downgrade, and uninstall the ML.NET Command-Line Interface (CLI) tool.
+ms.date: 12/18/2019
+ms.author: nakersha
+author: natke
 ---
 
 # How to install the ML.NET Command-Line Interface (CLI) tool
 
-The ML.NET CLI (command-line interface) is a tool you can run on any command-prompt (Windows, Mac, or Linux) for generating good quality ML.NET models and source code based on training datasets you provide.
+Learn how to install the ML.NET CLI (command-line interface) on Windows, Mac, or Linux.
+
+The ML.NET CLI generates good quality ML.NET models and source code using automated machine learning (AutoML) and a training dataset.
 
 > [!NOTE]
 > This topic refers to ML.NET CLI and ML.NET AutoML, which are currently in Preview, and material may be subject to change.
@@ -18,7 +21,7 @@ The ML.NET CLI (command-line interface) is a tool you can run on any command-pro
 
 - (Optional) [Visual Studio 2017 or 2019](https://visualstudio.microsoft.com/vs/)
 
-You can either run the generated C# code projects with Visual Studio F5 or with `dotnet run` (.NET Core CLI).
+You can run the generated C# code projects with Visual Studio by pressing the `F5` key or with `dotnet run` (.NET Core CLI).
 
 Note: If after installing [.NET Core 2.2 SDK](https://dotnet.microsoft.com/download/dotnet-core/2.2) the `dotnet tool` command is not working, sign out from Windows and sign in again.
 
@@ -129,7 +132,7 @@ In this case, the .NET Core CLI doesn't add this location automatically to the P
 
 ## See also
 
-- [Tutorial on 'Getting Started with ML.NET CLI tool'](../tutorials/mlnet-cli.md)
-- [How to automatically train models with the ML.NET CLI tool](../automate-training-with-cli.md)
+- [ML.NET CLI overview](../automate-training-with-cli.md)
+- [Tutorial: Analyze sentiment with the ML.NET CLI](../tutorials/sentiment-analysis-cli.md)
 - [ML.NET CLI auto-train command reference guide](../reference/ml-net-cli-reference.md)
 - [Telemetry in ML.NET CLI](../resources/ml-net-cli-telemetry.md)

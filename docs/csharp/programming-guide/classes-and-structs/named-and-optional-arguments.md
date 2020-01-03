@@ -107,7 +107,7 @@ C# 4 introduces named and optional arguments. *Named arguments* enable you to sp
   
  [!code-csharp[csProgGuideNamedAndOptional#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidenamedandoptional/cs/namedandoptcom.cs#13)]  
   
- For more information and examples, see [How to use named and optional arguments in Office programming](./how-to-use-named-and-optional-arguments-in-office-programming.md) and [How to: Access Office Interop Objects by Using Visual C# Features](../interop/how-to-access-office-onterop-objects.md).  
+ For more information and examples, see [How to use named and optional arguments in Office programming](./how-to-use-named-and-optional-arguments-in-office-programming.md) and [How to access Office interop objects by using C# features](../interop/how-to-access-office-onterop-objects.md).  
   
 ## Overload Resolution  
  Use of named and optional arguments affects overload resolution in the following ways:  
@@ -123,7 +123,7 @@ C# 4 introduces named and optional arguments. *Named arguments* enable you to sp
   
 ## See also
 
-- [How to: use named and optional arguments in Office programming](./how-to-use-named-and-optional-arguments-in-office-programming.md)
+- [How to use named and optional arguments in Office programming](./how-to-use-named-and-optional-arguments-in-office-programming.md)
 - [Using Type dynamic](../types/using-type-dynamic.md)
 - [Using Constructors](./using-constructors.md)
 - [Using Indexers](../indexers/using-indexers.md)

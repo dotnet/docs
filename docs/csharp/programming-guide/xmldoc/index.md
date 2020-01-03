@@ -38,7 +38,7 @@ public class MyClass {}
   
 - [Delimiters for Documentation Tags](./delimiters-for-documentation-tags.md)  
   
-- [How to: Use the XML Documentation Features](./how-to-use-the-xml-documentation-features.md)  
+- [How to use the XML documentation features](./how-to-use-the-xml-documentation-features.md)
   
 ## Related Sections  
  For more information, see:  

@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a File or Folder - C# Programming Guide"
+title: "How to create a file or folder - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "creating folders [C#]"
 ms.assetid: 4582ee2d-d72d-4687-bcb9-08d336c62c25
 ---
-# How to: Create a File or Folder (C# Programming Guide)
+# How to create a file or folder (C# Programming Guide)
 You can programmatically create a folder on your computer, create a subfolder, create a file in the subfolder, and write data to the file.  
   
 ## Example  

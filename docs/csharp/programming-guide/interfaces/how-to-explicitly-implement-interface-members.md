@@ -1,12 +1,12 @@
 ---
-title: "How to: Explicitly Implement Interface Members - C# Programming Guide"
+title: "How to explicitly implement interface members - C# Programming Guide"
 ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "interfaces [C#], explicitly implementing"
 ms.assetid: 514cde76-f981-474e-8b40-9493619f899c
 ---
-# How to: Explicitly Implement Interface Members (C# Programming Guide)
+# How to explicitly implement interface members (C# Programming Guide)
 This example declares an [interface](../../language-reference/keywords/interface.md), `IDimensions`, and a class, `Box`, which explicitly implements the interface members `getLength` and `getWidth`. The members are accessed through the interface instance `dimensions`.  
   
 ## Example  
@@ -27,4 +27,4 @@ This example declares an [interface](../../language-reference/keywords/interface
 - [C# Programming Guide](../index.md)
 - [Classes and Structs](../classes-and-structs/index.md)
 - [Interfaces](./index.md)
-- [How to: Explicitly Implement Members of Two Interfaces](./how-to-explicitly-implement-members-of-two-interfaces.md)
+- [How to explicitly implement members of two interfaces](./how-to-explicitly-implement-members-of-two-interfaces.md)

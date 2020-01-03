@@ -28,7 +28,7 @@ i = "Hello"; // error CS0029: Cannot implicitly convert type 'string' to 'int'
   
 - **User-defined conversions**: User-defined conversions are performed by special methods that you can define to enable explicit and implicit conversions between custom types that do not have a base class–derived class relationship. For more information, see [User-defined conversion operators](../../language-reference/operators/user-defined-conversion-operators.md).  
   
-- **Conversions with helper classes**: To convert between non-compatible types, such as integers and <xref:System.DateTime?displayProperty=nameWithType> objects, or hexadecimal strings and byte arrays, you can use the <xref:System.BitConverter?displayProperty=nameWithType> class, the <xref:System.Convert?displayProperty=nameWithType> class, and the `Parse` methods of the built-in numeric types, such as <xref:System.Int32.Parse%2A?displayProperty=nameWithType>. For more information, see [How to: Convert a byte Array to an int](./how-to-convert-a-byte-array-to-an-int.md), [How to: Convert a String to a Number](./how-to-convert-a-string-to-a-number.md), and [How to: Convert Between Hexadecimal Strings and Numeric Types](./how-to-convert-between-hexadecimal-strings-and-numeric-types.md).  
+- **Conversions with helper classes**: To convert between non-compatible types, such as integers and <xref:System.DateTime?displayProperty=nameWithType> objects, or hexadecimal strings and byte arrays, you can use the <xref:System.BitConverter?displayProperty=nameWithType> class, the <xref:System.Convert?displayProperty=nameWithType> class, and the `Parse` methods of the built-in numeric types, such as <xref:System.Int32.Parse%2A?displayProperty=nameWithType>. For more information, see [How to convert a byte array to an int](./how-to-convert-a-byte-array-to-an-int.md), [How to convert a string to a number](./how-to-convert-a-string-to-a-number.md), and [How to convert between hexadecimal strings and numeric types](./how-to-convert-between-hexadecimal-strings-and-numeric-types.md).
   
 ## Implicit conversions
 
@@ -90,4 +90,4 @@ For more information, see the [Conversions](~/_csharplang/spec/conversions.md) s
 - [() cast operator](../../language-reference/operators/type-testing-and-cast.md#cast-operator-)
 - [User-defined conversion operators](../../language-reference/operators/user-defined-conversion-operators.md)
 - [Generalized Type Conversion](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/yy580hbd(v=vs.120))
-- [How to: Convert a String to a Number](./how-to-convert-a-string-to-a-number.md)
+- [How to convert a string to a number](./how-to-convert-a-string-to-a-number.md)

@@ -56,17 +56,17 @@ An interface has the following properties:
 [Explicit Interface Implementation](explicit-interface-implementation.md)  
  Explains how to create a class member that’s specific to an interface.  
   
- [How to: Explicitly Implement Interface Members](how-to-explicitly-implement-interface-members.md)  
+ [How to explicitly implement interface members](how-to-explicitly-implement-interface-members.md)  
  Provides an example of how to explicitly implement members of interfaces.  
   
- [How to: Explicitly Implement Members of Two Interfaces](how-to-explicitly-implement-members-of-two-interfaces.md)  
+ [How to explicitly implement members of two interfaces](how-to-explicitly-implement-members-of-two-interfaces.md)  
  Provides an example of how to explicitly implement members of interfaces with inheritance.  
   
 ## <a name="BKMK_RelatedSections"></a> Related Sections
 
 - [Interface Properties](../classes-and-structs/interface-properties.md)  
 - [Indexers in Interfaces](../indexers/indexers-in-interfaces.md)  
-- [How to:  Implement Interface Events](../events/how-to-implement-interface-events.md)  
+- [How to implement interface events](../events/how-to-implement-interface-events.md)
 - [Classes and Structs](../classes-and-structs/index.md)  
 - [Inheritance](../classes-and-structs/inheritance.md)  
 - [Methods](../classes-and-structs/methods.md)  

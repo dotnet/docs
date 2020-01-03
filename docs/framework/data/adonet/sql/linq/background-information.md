@@ -49,7 +49,7 @@ The topics in this section pertain to concepts and procedures that extend beyond
  Describes optimistic concurrency and defines terms.  
   
  [Query Concepts](query-concepts.md)  
- Describes aspects of queries in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] that differ from queries in [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)].  
+ Describes aspects of queries in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] that differ from queries in LINQ.  
   
  [Retrieving Objects from the Identity Cache](retrieving-objects-from-the-identity-cache.md)  
  Describes the types of queries that retrieve objects from the identity cache.  

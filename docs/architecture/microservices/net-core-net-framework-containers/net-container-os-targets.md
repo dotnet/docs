@@ -12,11 +12,11 @@ For Windows, you can use Windows Server Core or Windows Nano Server. These Windo
 
 For Linux, multiple distros are available and supported in official .NET Docker images (like Debian).
 
-In Figure 3-1 you can see the possible OS version depending on the .NET Framework used.
+In Figure 3-1 you can see the possible OS version depending on the .NET framework used.
 
 ![Diagram showing what OS to use with which .NET containers.](./media/net-container-os-targets/targeting-operating-systems.png)
 
-**Figure 3-1.** Operating systems to target depending on versions of the .NET Framework
+**Figure 3-1.** Operating systems to target depending on versions of the .NET framework
 
 When deploying legacy .NET Framework applications you have to target Windows Server Core, compatible with legacy apps and IIS, but it has a larger image. When deploying .NET Core applications, you can target Windows Nano Server, which is cloud optimized, uses Kestrel and is smaller and starts faster. You can also target Linux, supporting Debian, Alpine and others. Also uses Kestrel, is smaller, and starts faster.
 

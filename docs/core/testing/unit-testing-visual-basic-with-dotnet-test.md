@@ -37,8 +37,7 @@ Namespace Prime.Services
 End Namespace
 ```
 
-Change the directory back to the *unit-testing-vb-using-dotnet-test* directory. Run [`dotnet sln add .\PrimeService\PrimeService.vbproj`](../tools/dotnet-sln.md)
-to add the class library project to the solution.
+Change the directory back to the *unit-testing-vb-using-dotnet-test* directory. Run [`dotnet sln add .\PrimeService\PrimeService.vbproj`](../tools/dotnet-sln.md) to add the class library project to the solution.
 
 ## Creating the test project
 

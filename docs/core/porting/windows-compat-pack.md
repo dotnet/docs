@@ -13,12 +13,7 @@ found in the .NET Framework. The *Windows Compatibility Pack* provides many
 of these technologies, so it's much easier to build .NET Core applications and .NET
 Standard libraries.
 
-This package is a logical [extension of .NET Standard 2.0](../whats-new/dotnet-core-2-0.md#api-changes-and-library-support)
-that significantly increases API set and existing code compiles with almost no
-modifications. But in order to keep the promise of .NET Standard ("it is the set
-of APIs that all .NET implementations provide"), this didn't include
-technologies that can't work across all platforms, such as registry, Windows
-Management Instrumentation (WMI), or reflection emit APIs.
+This package is a logical [extension of .NET Standard 2.0](../whats-new/dotnet-core-2-0.md#api-changes-and-library-support) that significantly increases API set and existing code compiles with almost no modifications. But in order to keep the promise of .NET Standard ("it is the set of APIs that all .NET implementations provide"), this didn't include technologies that can't work across all platforms, such as registry, Windows Management Instrumentation (WMI), or reflection emit APIs.
 
 The *Windows Compatibility Pack* sits on top of .NET Standard and provides
 access to technologies that are Windows only. It's especially useful for

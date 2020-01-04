@@ -1,5 +1,5 @@
 ---
-title: "LINQ and File Directories (C#)"
+title: "LINQ and file directories (C#)"
 ms.date: 07/20/2015
 ms.assetid: b66c55e4-0f72-44e5-b086-519f9962335c
 ---

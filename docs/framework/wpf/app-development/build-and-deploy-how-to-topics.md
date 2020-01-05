@@ -22,7 +22,7 @@ The following topics show how to create project files for the various [!INCLUDE[
 
 ## Related sections
 
-[Building a WPF Application](building-a-wpf-application-wpf.md)
-[Deploying a WPF Application](deploying-a-wpf-application-wpf.md)
-[Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md)
+[Building a WPF Application](building-a-wpf-application-wpf.md)\
+[Deploying a WPF Application](deploying-a-wpf-application-wpf.md)\
+[Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md)\
 [How to: Create a New WPF Browser Application Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb628663(v=vs.100))

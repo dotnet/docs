@@ -2,7 +2,7 @@
 title: Uninstall Tool
 description: An overview of the .NET Core Uninstall Tool, a guided tool that enables the controlled clean-up of .NET Core SDKs and runtimes.
 author: sfoslund
-ms.date: 1/6/2019
+ms.date: 01/06/2020
 ---
 # .NET Core Uninstall Tool
 

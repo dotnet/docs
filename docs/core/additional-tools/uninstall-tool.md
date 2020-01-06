@@ -447,7 +447,7 @@ Notes:
   Sets the verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default value is `normal`.
 
 * **`-y, --yes`**
-  Executes the command without requiring Y/n confirmation.
+  Executes the command without requiring Y/N confirmation.
   
 * **`--force`**
   Forces removal of versions that might be used by Visual Studio or SDKs.

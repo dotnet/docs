@@ -1,6 +1,5 @@
 ---
 title: "readonly keyword - C# Reference"
-ms.custom: seodec18
 ms.date: 06/21/2018
 f1_keywords: 
   - "readonly_CSharpKeyword"

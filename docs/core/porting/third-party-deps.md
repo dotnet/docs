@@ -3,7 +3,6 @@ title: Analyze dependencies to port code to .NET Core
 description: Learn how to analyze external dependencies in order to port your project from .NET Framework to .NET Core.
 author: cartermp
 ms.date: 10/22/2019
-ms.custom: seodec18
 ---
 # Analyze your dependencies to port code to .NET Core
 

@@ -1,6 +1,5 @@
 ---
 title: "Main() Return Values - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 08/02/2017
 helpviewer_keywords: 
   - "Main method [C#], return values"

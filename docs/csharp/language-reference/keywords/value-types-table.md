@@ -1,6 +1,5 @@
 ---
 title: "Value types table - C# reference"
-ms.custom: seodec18
 ms.date: 11/06/2019
 helpviewer_keywords: 
   - "value types [C#], table"

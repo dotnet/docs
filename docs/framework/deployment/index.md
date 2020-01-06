@@ -9,8 +9,6 @@ helpviewer_keywords:
   - ".NET Framework, deploying"
   - ".NET Framework application deployment"
 ms.assetid: 238d8284-6042-4a38-a7f6-1ee8efd719da
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Deploying the .NET Framework and Applications
 

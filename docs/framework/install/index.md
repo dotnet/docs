@@ -1,8 +1,6 @@
 ---
 title: .NET Framework installation guide
 description: Learn how to install the .NET Framework on Windows.
-author: rlander
-ms.author: mairaw
 ms.date: 08/03/2017
 ---
 # Installation guide

@@ -1,6 +1,6 @@
 ---
 title: "Developer Command Prompt for Visual Studio"
-ms.date: "12/26/2019"
+ms.date: 01/05/2020
 helpviewer_keywords:
   - "command prompt, Windows SDK"
   - "Visual Studio command prompt"
@@ -17,7 +17,7 @@ Developer Command Prompt for Visual Studio enables you to use .NET Framework too
 
 ## Prerequisites
 
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019).
+- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
 
 ## Search for the command prompt on your machine
 

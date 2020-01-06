@@ -81,6 +81,7 @@ You can train a multiclass classification model using the following training alg
 * <xref:Microsoft.ML.Trainers.NaiveBayesMulticlassTrainer>
 * <xref:Microsoft.ML.Trainers.OneVersusAllTrainer>
 * <xref:Microsoft.ML.Trainers.PairwiseCouplingTrainer>
+* <xref:Microsoft.ML.VisionCatalog.ImageClassification>
 
 ### Multiclass classification inputs and outputs
 
@@ -221,3 +222,13 @@ A recommendation task enables producing a list of recommended products or servic
 You can train a recommendation model with the following algorithm:
 
 * <xref:Microsoft.ML.Trainers.MatrixFactorizationTrainer>
+
+## Forecasting
+
+The forecasting task use past time-series data to make predictions about future behavior. Scenarios applicable to forecasting include weather forecasting, seasonal sales predictions, and predictive maintenance,
+
+### Forecasting trainers
+
+You can train a forecasting model with the following algorithm:
+
+<xref:Microsoft.ML.TimeSeriesCatalog.ForecastBySsa>

@@ -111,6 +111,7 @@ To create a custom exception, follow these steps:
         End Sub
     End Class
     ```
+
 ## Create localized exception messages
 
 You have created a custom exception, and you can throw it anywhere with code like the following:

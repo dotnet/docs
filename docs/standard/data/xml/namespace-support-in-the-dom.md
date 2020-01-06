@@ -3,8 +3,6 @@ title: "Namespace Support in the DOM"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: f0548ead-0fed-41ee-b33e-117ba900d3bc
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Namespace Support in the DOM
 The XML Document Object Model (DOM) is completely namespace-aware. Only namespace-aware XML documents are supported. The World Wide Web Consortium (W3C) specifies that DOM applications that implement Level 1 can be non-namespace-aware, and DOM Level 2 features are namespace-aware. However, all features in the XML DOM are namespace-aware, regardless if the method is from the Level 1 or Level 2 DOM Recommendation.  

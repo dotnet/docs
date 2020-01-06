@@ -12,7 +12,8 @@ helpviewer_keywords:
   - "escape sequence [XAML Services]"
 ms.assetid: 3ce3e2ad-a868-43f9-9c98-b29561cb146e
 ---
-# {} Escape Sequence / Markup Extension
+# {} Escape sequence / markup extension
+
 Provides the XAML escape sequence for attribute values. The escape sequence allows the subsequent values in the attribute to be interpreted as a literal.  
   
 ## XAML Attribute Usage  
@@ -38,7 +39,7 @@ Provides the XAML escape sequence for attribute values. The escape sequence allo
 |*literalValue*|The literal string that follows the escape sequence. Typically this string contains an open or close brace ({ or }).|  
   
 ## Remarks  
- The escape sequence ({}) is used so that an open brace ({)can be used as a literal character in XAML.  
+ The escape sequence ({}) is used so that an open brace ({) can be used as a literal character in XAML.  
   
  XAML readers typically use the open brace ({) to denote the entry point of a markup extension; however, they first check the next character to determine whether it is a closing brace (}). Only when the two braces ({}) are adjacent, are they considered an escape sequence.  
   
@@ -48,7 +49,7 @@ Provides the XAML escape sequence for attribute values. The escape sequence allo
   
  A quotation mark (") cannot be used as an escape sequence in this manner. If you need to set a quotation mark as a property value for a noncontent property, use property element syntax and place the quotation mark as a string inside the property element, or use an XML character entity. For a content property, the quotation mark can be the entire content.  
   
- The escape sequence ({}) is frequently required when specifying an XML type that must include a namespace qualifier in a location where a XAML markup extension might appear. This includes the start of a XAML attribute value, and in a markup extension, immediately after an equal sign (=). The following example shows escape sequences for an XML namespace that appears at the start of a XAML attribute value.  
+ The escape sequence ({}) is frequently required when specifying an XML type that must include a namespace qualifier in a location where a XAML markup extension might appear. This location includes the start of a XAML attribute value, and in a markup extension immediately after an equal sign (=). The following example shows escape sequences for an XML namespace that appears at the start of a XAML attribute value.  
   
  [!code-xaml[XLINQExample#StackPanelResources](~/samples/snippets/csharp/VS_Snippets_Wpf/XLinqExample/CSharp/Window1.xaml#stackpanelresources)]  
   

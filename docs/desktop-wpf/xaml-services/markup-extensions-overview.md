@@ -6,9 +6,9 @@ helpviewer_keywords:
   - "XAML [XAML Services], markup extensions"
 ms.assetid: 261b2b11-2dc0-462f-8c66-55b8c9c6e436
 ---
-# Markup Extensions for XAML Overview
+# Overview of markup extensions for XAML
 
-Markup extensions are a XAML technique for obtaining a value that is neither a primitive nor a specific XAML type. For attribute usage, markup extensions use the known character sequence of an opening curly brace `{` to enter the markup extension scope, and a closing curly brace `}` to exit. When using .NET Framework XAML Services, you can use some of the predefined XAML language markup extensions from the System.Xaml assembly. You can also subclass from the <xref:System.Windows.Markup.MarkupExtension> class, defined in System.Xaml, and define your own markup extensions. Or you can use markup extensions defined by a particular framework if you are already referencing that framework.
+Markup extensions are a XAML technique for obtaining a value that's not a primitive or a specific XAML type. For attribute usage, markup extensions use the known character sequence of an opening curly brace `{` to enter the markup extension scope, and a closing curly brace `}` to exit. When using .NET Framework XAML Services, you can use some of the predefined XAML language markup extensions from the System.Xaml assembly. You can also subclass from the <xref:System.Windows.Markup.MarkupExtension> class, defined in System.Xaml, and define your own markup extensions. Or you can use markup extensions defined by a particular framework if you are already referencing that framework.
 
 When a markup extension usage is accessed, the XAML object writer can provide services to a custom <xref:System.Windows.Markup.MarkupExtension> class through a service connection point in the <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A?displayProperty=nameWithType> override. The services can be used to obtain context about the usage, specific capabilities of the object writer, XAML schema context, and so on.
 
@@ -50,7 +50,7 @@ Other `x:` constructs to support XAML language features exist, but these are not
 
 To define a custom markup extension that can interact with the default implementations of XAML readers and XAML writers in System.Xaml, you derive a class from the abstract <xref:System.Windows.Markup.MarkupExtension> class. That class has one method to override, which is <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A>. You might also need to define additional constructors to support arguments to the markup extension usage, and matching settable properties.
 
-Through <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A>, a custom markup extension has access to a service context that reports the environment where the markup extension is actually invoked by a XAML processor. In the load path this is typically a <xref:System.Xaml.XamlObjectWriter>. In the save path this is typically a <xref:System.Xaml.XamlXmlWriter>. Each report the service context as an internal XAML service provider context class that implements a service provider pattern. For more information about the available services and what they represent, see [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions.md).
+Through <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A>, a custom markup extension has access to a service context that reports the environment where the markup extension is invoked by a XAML processor. In the load path, this is typically a <xref:System.Xaml.XamlObjectWriter>. In the save path this is typically a <xref:System.Xaml.XamlXmlWriter>. Each report the service context as an internal XAML service provider context class that implements a service provider pattern. For more information about the available services and what they represent, see [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions.md).
 
 Your markup extension class must use a public access level; XAML processors must always be able to instantiate the markup extension's support class in order to use its services.
 

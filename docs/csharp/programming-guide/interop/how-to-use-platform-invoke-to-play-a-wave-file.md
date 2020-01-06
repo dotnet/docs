@@ -1,6 +1,5 @@
 ---
 title: "How to use platform invoke to play a WAV file - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "platform invoke, sound files"

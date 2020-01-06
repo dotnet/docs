@@ -3,7 +3,6 @@ title: Write a custom .NET Core runtime host
 description: Learn to host the .NET Core runtime from native code to support advanced scenarios that require controlling how the .NET Core runtime works.
 author: mjrousos
 ms.date: 12/21/2018
-ms.custom: seodec18
 ---
 # Write a custom .NET Core host to control the .NET runtime from your native code
 

@@ -1,6 +1,5 @@
 ---
 title: "Object and Collection Initializers - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 12/19/2018
 helpviewer_keywords: 
   - "object initializers [C#]"

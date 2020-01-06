@@ -5,7 +5,6 @@ helpviewer_keywords:
   - "Visual C#, getting started"
   - "getting started, Visual C#"
 ms.date: 04/05/2019
-ms.custom: seoapril2019
 ---
 # Get started with C\#
 

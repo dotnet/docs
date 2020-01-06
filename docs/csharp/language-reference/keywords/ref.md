@@ -1,7 +1,5 @@
 ---
 title: "ref keyword - C# Reference"
-ms.custom: seodec18
-
 ms.date: 03/26/2019
 f1_keywords: 
   - "ref_CSharpKeyword"

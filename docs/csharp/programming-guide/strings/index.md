@@ -1,6 +1,5 @@
 ---
 title: "Strings - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 06/27/2019
 helpviewer_keywords: 
   - "C# language, strings"

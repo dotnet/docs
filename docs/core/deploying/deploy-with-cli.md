@@ -7,7 +7,6 @@ ms.date: 12/12/2019
 dev_langs:
   - "csharp"
   - "vb"
-ms.custom: seodec18
 ---
 
 # Publish .NET Core apps with the CLI

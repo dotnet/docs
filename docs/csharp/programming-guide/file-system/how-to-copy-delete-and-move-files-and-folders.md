@@ -1,6 +1,5 @@
 ---
 title: "How to copy, delete, and move files and folders - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "I/O [C#]"

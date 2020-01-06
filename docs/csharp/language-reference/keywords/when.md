@@ -1,7 +1,5 @@
 ---
 title: "when contextual keyword - C# Reference"
-ms.custom: seodec18
-
 ms.date: 03/07/2017
 f1_keywords: 
   - "when_CSharpKeyword"

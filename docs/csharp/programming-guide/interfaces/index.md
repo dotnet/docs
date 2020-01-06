@@ -1,6 +1,5 @@
 ---
 title: "Interfaces - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 08/21/2018
 helpviewer_keywords: 
   - "interfaces [C#]"

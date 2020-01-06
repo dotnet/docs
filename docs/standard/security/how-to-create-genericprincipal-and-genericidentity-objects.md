@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "Creating GenericPrincipal Objects"
   - "GenericIdentity Objects"
 ms.assetid: 465694cf-258b-4747-9dae-35b01a5bcdbb
-author: "mairaw"
-ms.author: "mairaw"
 ---
 
 # How to: Create GenericPrincipal and GenericIdentity Objects

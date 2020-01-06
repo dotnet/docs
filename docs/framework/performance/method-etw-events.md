@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "ETW, method events (CLR)"
   - "method events [.NET Framework]"
 ms.assetid: 167a4459-bb6e-476c-9046-7920880f2bb5
-author: "mairaw"
-ms.author: "mairaw"
 ---
 
 # Method ETW Events

@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "ETW, common language runtime"
   - "ETW, CLR events"
 ms.assetid: ef2b31c3-7426-43e7-9924-92339b96556d
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CLR ETW Events
 The topics in this section describe event tracing for Windows (ETW) events. Each event has an associated keyword and level, which are described in the [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md) topic. The CLR has two providers for the events:  

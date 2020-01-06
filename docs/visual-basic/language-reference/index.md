@@ -60,7 +60,7 @@ This section provides reference information for various aspects of the Visual Ba
  Documents the properties available in Visual Basic.  
   
  [Queries](../../visual-basic/language-reference/queries/index.md)  
- Provides reference information about using [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expressions in your code.  
+ Provides reference information about using Language-Integrated Query (LINQ) expressions in your code.  
   
  [Statements](../../visual-basic/language-reference/statements/index.md)  
  Documents the declaration and executable statements available in Visual Basic.  
@@ -79,8 +79,5 @@ This section provides reference information for various aspects of the Visual Ba
   
 ## Related Sections  
 
- [Visual Basic](../../visual-basic/index.md)  
- Provides comprehensive help on all areas of the Visual Basic language.  
-  
  [Visual Basic Command-Line Compiler](../../visual-basic/reference/command-line-compiler/index.md)  
  Describes how to use the command-line compiler as an alternative to compiling programs from within the Visual Studio integrated development environment (IDE).

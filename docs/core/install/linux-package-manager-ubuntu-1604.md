@@ -3,7 +3,7 @@ title: Install .NET Core on Ubuntu 16.04 package manager - .NET Core
 description: Use a package manager to install .NET Core SDK and runtime on Ubuntu 16.04.
 author: thraka
 ms.author: adegeo
-ms.date: 11/06/2019
+ms.date: 12/04/2019
 ---
 
 # Ubuntu 16.04 Package Manager - Install .NET Core
@@ -37,11 +37,11 @@ Update the products available for installation, then install the .NET Core SDK. 
 sudo apt-get update
 sudo apt-get install apt-transport-https
 sudo apt-get update
-sudo apt-get install dotnet-sdk-3.0
+sudo apt-get install dotnet-sdk-3.1
 ```
 
 > [!IMPORTANT]
-> If you receive an error message similar to **Unable to locate package dotnet-sdk-3.0**, see the [Troubleshoot the package manager](#troubleshoot-the-package-manager) section.
+> If you receive an error message similar to **Unable to locate package dotnet-sdk-3.1**, see the [Troubleshoot the package manager](#troubleshoot-the-package-manager) section.
 
 ## Install the ASP.NET Core runtime
 
@@ -51,11 +51,11 @@ Update the products available for installation, then install the ASP.NET Core ru
 sudo apt-get update
 sudo apt-get install apt-transport-https
 sudo apt-get update
-sudo apt-get install aspnetcore-runtime-3.0
+sudo apt-get install aspnetcore-runtime-3.1
 ```
 
 > [!IMPORTANT]
-> If you receive an error message similar to **Unable to locate package aspnetcore-runtime-3.0**, see the [Troubleshoot the package manager](#troubleshoot-the-package-manager) section.
+> If you receive an error message similar to **Unable to locate package aspnetcore-runtime-3.1**, see the [Troubleshoot the package manager](#troubleshoot-the-package-manager) section.
 
 ## Install the .NET Core runtime
 
@@ -65,11 +65,11 @@ Update the products available for installation, then install the .NET Core runti
 sudo apt-get update
 sudo apt-get install apt-transport-https
 sudo apt-get update
-sudo apt-get install dotnet-runtime-3.0
+sudo apt-get install dotnet-runtime-3.1
 ```
 
 > [!IMPORTANT]
-> If you receive an error message similar to **Unable to locate package dotnet-runtime-3.0**, see the [Troubleshoot the package manager](#troubleshoot-the-package-manager) section.
+> If you receive an error message similar to **Unable to locate package dotnet-runtime-3.1**, see the [Troubleshoot the package manager](#troubleshoot-the-package-manager) section.
 
 ## How to install other versions
 
@@ -89,7 +89,7 @@ If that doesn't work, you can run a manual install with the following commands.
 
 ```bash
 sudo apt-get install -y gpg
-wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor microsoft.asc.gpg
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o microsoft.asc.gpg
 sudo mv microsoft.asc.gpg /etc/apt/trusted.gpg.d/
 wget -q https://packages.microsoft.com/config/ubuntu/16.04/prod.list
 sudo mv prod.list /etc/apt/sources.list.d/microsoft-prod.list

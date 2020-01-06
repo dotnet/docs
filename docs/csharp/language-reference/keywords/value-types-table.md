@@ -1,6 +1,5 @@
 ---
 title: "Value types table - C# reference"
-ms.custom: seodec18
 ms.date: 11/06/2019
 helpviewer_keywords: 
   - "value types [C#], table"
@@ -18,7 +17,7 @@ The following table shows the C# value types:
 |[char](../builtin-types/char.md)|Unsigned, numeric, [integral](../builtin-types/integral-numeric-types.md)|
 |`decimal`|Numeric, [floating-point](../builtin-types/floating-point-numeric-types.md)|
 |`double`|Numeric, [floating-point](../builtin-types/floating-point-numeric-types.md)|
-|[enum](enum.md)|Enumeration|
+|[enum](../builtin-types/enum.md)|Enumeration|
 |`float`|Numeric, [floating-point](../builtin-types/floating-point-numeric-types.md)|
 |`int`|Signed, numeric, [integral](../builtin-types/integral-numeric-types.md)|
 |`long`|Signed, numeric, [integral](../builtin-types/integral-numeric-types.md)|

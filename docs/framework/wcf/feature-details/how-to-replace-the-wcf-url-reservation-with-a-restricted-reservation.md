@@ -8,7 +8,7 @@ A URL reservation allows you to restrict who can receive messages from a URL or 
   
  As part of the default operating system configuration, Windows Communication Foundation (WCF) creates a globally accessible reservation for port 80 to enable all users to run applications that use a dual HTTP binding for duplex communication. Because the ACL on this reservation is for everyone, administrators cannot explicitly allow or disallow permission to listen on a URL or set of URLs. This topic explains how to delete this reservation and how to re-create the reservation with a restricted ACL.  
   
- On [!INCLUDE[wv](../../../../includes/wv-md.md)] or [!INCLUDE[lserver](../../../../includes/lserver-md.md)] you can view all of the HTTP URL reservations from an elevated command prompt by typing `netsh http show urlacl`.  The following example shows what a WCF URL reservation should resemble.  
+On Windows Vista or Windows Server 2008, you can view all of the HTTP URL reservations from an elevated command prompt by entering `netsh http show urlacl`. The following example shows what a WCF URL reservation should resemble:
 
 ```
 Reserved URL : http://+:80/Temporary_Listen_Addresses/  

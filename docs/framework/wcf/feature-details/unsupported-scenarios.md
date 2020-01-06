@@ -56,7 +56,7 @@ For various reasons, Windows Communication Foundation (WCF) does not support som
  FIPS compliant AES encryption does not work in duplex callbacks under identification level impersonation.  
   
 ### CNG/KSP Certificates  
- *Cryptography API: Next Generation (CNG)* is the long-term replacement for the CryptoAPI. This API is available in unmanaged code on [!INCLUDE[wv](../../../../includes/wv-md.md)],  [!INCLUDE[lserver](../../../../includes/lserver-md.md)] and later Windows versions.  
+ *Cryptography API: Next Generation (CNG)* is the long-term replacement for the CryptoAPI. This API is available in unmanaged code on Windows Vista, Windows Server 2008, and later Windows versions.  
   
  .NET Framework 4.6.1 and earlier versions do not support these certificates because they use the legacy CryptoAPI to handle CNG/KSP certificates. The use of these certificates with   .NET Framework 4.6.1 and earlier versions will cause an exception.  
   

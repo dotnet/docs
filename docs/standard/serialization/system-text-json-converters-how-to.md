@@ -1,8 +1,6 @@
 ---
 title: "How to write custom converters for JSON serialization - .NET"
-author: tdykstra
-ms.author: tdykstra
-ms.date: "12/20/2019"
+ms.date: "01/07/2020"
 helpviewer_keywords: 
   - "JSON serialization"
   - "serializing objects"

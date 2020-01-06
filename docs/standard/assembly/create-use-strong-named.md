@@ -1,5 +1,5 @@
 ---
-title: "Create and use strong-named ssemblies"
+title: "Create and use strong-named assemblies"
 ms.date: "08/19/2019"
 helpviewer_keywords:
   - "strong-name bypass feature"

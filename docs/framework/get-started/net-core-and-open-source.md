@@ -2,8 +2,6 @@
 title: ".NET Core and Open-Source"
 ms.date: "03/30/2017"
 ms.assetid: e6bd4655-ce37-4003-8462-468a6fe2c40f
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # .NET Core and Open-Source
 This topic provides a brief overview  of what .NET Core is and shows how you can find more information. To find the complete list of topics for .NET Core, visit the [.NET Core Guide](../../core/index.md).

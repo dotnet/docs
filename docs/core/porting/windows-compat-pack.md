@@ -3,7 +3,6 @@ title: Use the Windows Compatibility Pack to port code to .NET Core
 description: Learn about the Windows Compatibility Pack and how can you use it to port existing .NET Framework code to .NET Core
 author: terrajobst
 ms.date: 12/07/2018
-ms.custom: seodec18
 ---
 # Use the Windows Compatibility Pack to port code to .NET Core
 

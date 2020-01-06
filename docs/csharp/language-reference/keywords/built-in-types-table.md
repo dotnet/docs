@@ -1,7 +1,5 @@
 ---
 title: "Built-in types table - C# Reference"
-ms.custom: seodec18
-
 description: "Keywords for built-in C# types"
 ms.date: 08/17/2018
 helpviewer_keywords: 

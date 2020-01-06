@@ -1,12 +1,10 @@
 - name: Visual Basic Guide
-  href: index.md
+  href: index.yml
 - name: What's New for Visual Basic
   href: getting-started/whats-new.md
 - name: Get Started
   href: getting-started/index.md
   items:
-  - name: Visual Basic Breaking Changes in Visual Studio
-    href: getting-started/breaking-changes-in-visual-studio.md
   - name: Additional Resources for Visual Basic Programmers
     href: getting-started/additional-resources.md
 - name: Developing Applications
@@ -1325,7 +1323,7 @@
         href: reference/command-line-compiler/errorreport.md
       - name: -filealign
         href: reference/command-line-compiler/filealign.md
-      - name: -help, /?
+      - name: -help, -?
         href: reference/command-line-compiler/help.md
       - name: -highentropyva
         href: reference/command-line-compiler/highentropyva.md

@@ -3,7 +3,6 @@ title: How the .NET Core Runtime and SDK are versioned
 description: This article teaches you how the .NET Core SDK and Runtime are versioned (similar to semantic versioning).
 author: bleroy
 ms.date: 07/26/2018
-ms.custom: "seodec18"
 ---
 
 # Overview of how .NET Core is versioned
@@ -27,7 +26,7 @@ The third position of the SDK version number communicates both the minor and pat
 | Runtime and SDK Patch | 2.2.1             | 2.2.102           |
 | SDK Feature change    | 2.2.1             | 2.2.200           |
 
-(\*) This chart uses a future 2.2 .NET Core Runtime as the example because a historic artifact meant the first SDK for .NET Core 2.1 is 2.1.300. For more information, See the [.NET Core version selection](selection.md).
+(\*) This chart uses the 2.2 .NET Core Runtime as the example because a historic artifact meant the first SDK for .NET Core 2.1 is 2.1.300. For more information, See the [.NET Core version selection](selection.md).
 
 NOTES:
 

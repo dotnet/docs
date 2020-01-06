@@ -1,6 +1,5 @@
 ---
 title: "Instance Constructors - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "constructors [C#], instance constructors"

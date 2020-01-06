@@ -3,11 +3,10 @@ title: Organize projects for .NET Framework and .NET Core
 description: Help for project owners who want to compile their solution against .NET Framework and .NET Core side-by-side.
 author: conniey
 ms.date: 12/07/2018
-ms.custom: seodec18
 ---
 # Organize your project to support both .NET Framework and .NET Core
 
-Learn how to create a solution that compiles for both .NET Framework and .NET Core side-by-side. See several options to organize projects to help you achieve this goal. Here are some typical scenarios to consider when you're deciding how to setup your project layout with .NET Core. The list may not cover everything you want; prioritize based on your project's needs.
+Learn how to create a solution that compiles for both .NET Framework and .NET Core side-by-side. See several options to organize projects to help you achieve this goal. Here are some typical scenarios to consider when you're deciding how to set up your project layout with .NET Core. The list may not cover everything you want; prioritize based on your project's needs.
 
 - [**Combine existing projects and .NET Core projects into single projects**](#replace-existing-projects-with-a-multi-targeted-net-core-project)
 
@@ -18,12 +17,12 @@ Learn how to create a solution that compiles for both .NET Framework and .NET Co
   - Allows you to write code for a specific .NET Framework version in your libraries through the use of compiler directives.
 
   *Unsupported scenarios:*
-  - Requires developers to use Visual Studio 2017 to open existing projects. To support older versions of Visual Studio, [keeping your project files in different folders](#support-vs) is a better option.
+  - Requires developers to use Visual Studio 2017 or a later version to open existing projects. To support older versions of Visual Studio, [keeping your project files in different folders](#support-vs) is a better option.
 
 - <a name="support-vs"></a>[**Keep existing projects and new .NET Core projects separate**](#keep-existing-projects-and-create-a-net-core-project)
 
   *What this is good for:*
-  - Continuing to support development on existing projects without having to upgrade for developers/contributors who may not have Visual Studio 2017.
+  - Supporting development on existing projects for developers and contributors who may not have Visual Studio 2017 or a later version.
   - Decreasing the possibility of creating new bugs in existing projects because no code churn is required in those projects.
 
 ## Example
@@ -40,7 +39,7 @@ The following describes several ways to add support for .NET Core for this repos
 
 Reorganize the repository so that any existing *\*.csproj* files are removed and a single *\*.csproj* file is created that targets multiple frameworks. This is a great option because a single project is able to compile for different frameworks. It also has the power to handle different compilation options and dependencies per targeted framework.
 
-![Create an csproj that targets multiple frameworks](./media/project-structure/multi-targeted-project.png)
+![Create a csproj that targets multiple frameworks](./media/project-structure/multi-targeted-project.png)
 
 [**Source Code**](https://github.com/dotnet/samples/tree/master/framework/libraries/migrate-library-csproj/)
 

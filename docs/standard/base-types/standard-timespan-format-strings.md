@@ -1,5 +1,5 @@
 ---
-title: "Standard TimeSpan Format Strings"
+title: "Standard TimeSpan format strings"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -18,9 +18,9 @@ helpviewer_keywords:
   - "formatting [.NET Framework], time intervals"
 ms.assetid: 9f6c95eb-63ae-4dcc-9c32-f81985c75794
 ---
-# Standard TimeSpan Format Strings
+# Standard TimeSpan format strings
 
-A standard <xref:System.TimeSpan> format string uses a single format specifier to define the text representation of a <xref:System.TimeSpan> value that results from a formatting operation. Any format string that contains more than one character, including white space, is interpreted as a custom <xref:System.TimeSpan> format string. For more information, see [Custom TimeSpan Format Strings](../../../docs/standard/base-types/custom-timespan-format-strings.md) .  
+A standard <xref:System.TimeSpan> format string uses a single format specifier to define the text representation of a <xref:System.TimeSpan> value that results from a formatting operation. Any format string that contains more than one character, including white space, is interpreted as a custom <xref:System.TimeSpan> format string. For more information, see [Custom TimeSpan format strings](../../../docs/standard/base-types/custom-timespan-format-strings.md) .  
   
  The string representations of <xref:System.TimeSpan> values are produced by calls to the overloads of the <xref:System.TimeSpan.ToString%2A?displayProperty=nameWithType> method, as well as by methods that support composite formatting, such as <xref:System.String.Format%2A?displayProperty=nameWithType>. For more information, see [Formatting Types](../../../docs/standard/base-types/formatting-types.md) and [Composite Formatting](../../../docs/standard/base-types/composite-formatting.md). The following example illustrates the use of standard format strings in formatting operations.  
   

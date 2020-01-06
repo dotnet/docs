@@ -1,6 +1,5 @@
 ---
 title: "default operator - C# reference"
-ms.custom: seodec18
 description: "Use the default operator to produce the default value of a type"
 ms.date: 08/01/2019
 helpviewer_keywords: 

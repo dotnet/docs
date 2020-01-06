@@ -30,7 +30,7 @@ You must enable several ports or programs in the firewall so that the Windows Co
   
     - On Windows 7 or Windows Server 2008 r2, click **Allow a program or feature through Windows Firewall**. Click **Change Settings**, Allow **Another Program…**.  
   
-    - On [!INCLUDE[wv](../../../../includes/wv-md.md)] or [!INCLUDE[lserver](../../../../includes/lserver-md.md)], click **Allow a program through Windows Firewall**.  
+    - On Windows Vista or Windows Server 2008, click **Allow a program through Windows Firewall**.  
   
 4. On the **Exceptions** tab, click **Add Program**.  
   
@@ -66,7 +66,7 @@ You must enable several ports or programs in the firewall so that the Windows Co
   
     10. Click **Outbound Rules** and repeat steps c to h.  
   
-3. On [!INCLUDE[wv](../../../../includes/wv-md.md)] or [!INCLUDE[lserver](../../../../includes/lserver-md.md)], follow these steps.  
+3. On Windows Vista or Windows Server 2008, follow these steps.  
   
     1. Click **Allow a program through Windows Firewall**.  
   

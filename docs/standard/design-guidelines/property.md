@@ -6,7 +6,6 @@ helpviewer_keywords:
   - "member design guidelines, properties"
   - "properties [.NET Framework], design guidelines"
 ms.assetid: 127cbc0c-cbed-48fd-9c89-7c5d4f98f163
-author: "KrzysztofCwalina"
 ---
 # Property Design
 Although properties are technically very similar to methods, they are quite different in terms of their usage scenarios. They should be seen as smart fields. They have the calling syntax of fields, and the flexibility of methods.  

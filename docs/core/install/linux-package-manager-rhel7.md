@@ -10,7 +10,7 @@ ms.date: 12/03/2019
 
 [!INCLUDE [package-manager-switcher](includes/package-manager-switcher.md)]
 
-This article describes how to use a package manager to install .NET Core on RHEL 7.
+This article describes how to use a package manager to install .NET Core on RHEL 7. .NET Core 3.1 is not yet available for RHEL 7.
 
 ## Register your Red Hat subscription
 
@@ -18,7 +18,7 @@ To install .NET Core from Red Hat on RHEL, you first need to register using the 
 
 ## Install the .NET Core SDK
 
-After registering with the Subscription Manager, you're ready to install and enable the .NET Core SDK. In your terminal, run the following commands to enable the RHEL 7 dotnet channel and install .
+After registering with the Subscription Manager, you're ready to install and enable the .NET Core SDK. In your terminal, run the following commands to enable the RHEL 7 dotnet channel and install.
 
 ```bash
 subscription-manager repos --enable=rhel-7-server-dotnet-rpms

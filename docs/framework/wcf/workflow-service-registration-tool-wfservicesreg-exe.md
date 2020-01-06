@@ -50,11 +50,11 @@ WFServicesReg.exe [-c | -r | -v | -m | -i]
   
  The tool also registers .xoml and .rules scriptmaps and handlers in the IIS metabase.  
   
- On [!INCLUDE[ws2003](../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../includes/wxp-md.md)] machines (IIS 5.1 and IIS 6.0), one set of .xoml and .rules scriptmaps are registered.  
+ On Windows Server 2003 and [!INCLUDE[wxp](../../../includes/wxp-md.md)] machines (IIS 5.1 and IIS 6.0), one set of .xoml and .rules scriptmaps are registered.  
   
  On 64-bit machines, the tool registers WOW mode scriptmaps if the `Enable32BitAppOnWin64` switch is enabled, or native 64-bit scriptmaps if the `Enable32BitAppOnWin64` switch is disabled.  
   
- On [!INCLUDE[wv](../../../includes/wv-md.md)] and Windows Server 2008 (IIS 7.0 and above) machines, two sets of .xoml and .rules handlers are registered: one for Integrated mode and one for Classic mode.  
+ On Windows Vista and Windows Server 2008 (IIS 7.0 and above) machines, two sets of .xoml and .rules handlers are registered: one for Integrated mode and one for Classic mode.  
   
  On 64-bit machines, three sets of handlers are registered (regardless of the state of the `Enable32BitAppOnWin64` switch): one for Integrated mode, one for WOW Classic mode and one for native 64-bit Classic mode.  
   
@@ -64,17 +64,17 @@ WFServicesReg.exe [-c | -r | -v | -m | -i]
 ## Usage Scenarios  
   
 ### Installing IIS after .NET Framework 3.5 is installed  
- On a [!INCLUDE[ws2003](../../../includes/ws2003-md.md)] machine, .NET Framework 3.5 is installed prior to IIS installation. Due to the unavailability of the IIS metabase, installation of .NET Framework 3.5 succeeds without installing .xoml and .rules scriptmaps.  
+ On a Windows Server 2003 machine, .NET Framework 3.5 is installed prior to IIS installation. Due to the unavailability of the IIS metabase, installation of .NET Framework 3.5 succeeds without installing .xoml and .rules scriptmaps.  
   
  After IIS is installed, you can use the WFServicesReg.exe tool with the `/c` switch to install these specific scriptmaps.  
   
 ### Repairing the Scriptmaps  
   
 #### Scriptmap deleted under Web Sites node  
- On a [!INCLUDE[ws2003](../../../includes/ws2003-md.md)] machine, .xoml or .rules is accidentally deleted from the Web Sites node. This can be repaired by running the WFServicesReg.exe tool with the `/c` switch.  
+ On a Windows Server 2003 machine, .xoml or .rules is accidentally deleted from the Web Sites node. This can be repaired by running the WFServicesReg.exe tool with the `/c` switch.  
   
 #### Scriptmap deleted under a particular Web site  
- On a [!INCLUDE[ws2003](../../../includes/ws2003-md.md)] machine, .xoml or .rules is accidentally deleted from a particular Web site (for example, the Default Web Site) rather than from the Web Sites node.  
+ On a Windows Server 2003 machine, .xoml or .rules is accidentally deleted from a particular Web site (for example, the Default Web Site) rather than from the Web Sites node.  
   
  To repair deleted handlers for a particular Web site, you should run "WFServicesReg.exe /r" to remove handlers from all Web sites, then run "WFServicesReg.exe /c" to create the appropriate handlers for all Web sites.  
   

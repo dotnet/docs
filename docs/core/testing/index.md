@@ -4,7 +4,6 @@ description: This article gives a brief overview of unit testing for .NET Core a
 author: ardalis
 ms.author: wiwagn
 ms.date: 08/30/2017
-ms.custom: "seodec18"
 ---
 
 # Unit testing in .NET Core and .NET Standard
@@ -36,7 +35,7 @@ More information on unit testing in .NET Core projects:
 
 - [C#](../../csharp/index.yml)
 - [F#](../../fsharp/index.yml)
-- [Visual Basic](../../visual-basic/index.md) 
+- [Visual Basic](../../visual-basic/index.yml) 
 
 You can also choose between:
 

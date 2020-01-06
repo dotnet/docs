@@ -1,8 +1,6 @@
 ---
 title: Source Link and .NET libraries
 description: Best practice recommendations for using Source Link to improve debugging for .NET libraries.
-author: jamesnk
-ms.author: mairaw
 ms.date: 01/15/2019
 ---
 # Source Link

@@ -5,10 +5,10 @@ ms.assetid: 1050d395-092e-44d3-b4ba-66be3b039ffb
 ---
 # Configuring Internet Information Services 7.0 for Windows Communication Foundation
 
-Internet Information Services (IIS) 7.0 has a modular design that allows you to selectively install components that are required. This design is based on the new manifest-driven componentization technology introduced in [!INCLUDE[wv](../../../../includes/wv-md.md)]. There are more than 40 standalone feature components of IIS 7.0 that can be installed independently. This allows IT professionals to easily customize the installation as required. This topic discusses how to configure IIS 7.0 for use with Windows Communication Foundation (WCF) and determine which components are required.
+Internet Information Services (IIS) 7.0 has a modular design that allows you to selectively install components that are required. This design is based on the new manifest-driven componentization technology introduced in Windows Vista. There are more than 40 standalone feature components of IIS 7.0 that can be installed independently. This allows IT professionals to easily customize the installation as required. This topic discusses how to configure IIS 7.0 for use with Windows Communication Foundation (WCF) and determine which components are required.
 
 ## Minimal Installation: Installing WAS
- The minimal installation of the whole IIS 7.0 package is to install the Windows Process Activation Service (WAS). WAS is a standalone feature and it is the only feature from the IIS 7.0 that is available for all [!INCLUDE[wv](../../../../includes/wv-md.md)] operating systems (Home Basic, Home Premium, Business, and Ultimate and Enterprise).
+ The minimal installation of the whole IIS 7.0 package is to install the Windows Process Activation Service (WAS). WAS is a standalone feature and it is the only feature from the IIS 7.0 that is available for all Windows Vista operating systems (Home Basic, Home Premium, Business, and Ultimate and Enterprise).
 
  From the Control Panel, click **Programs** and then click **Turn Windows features on or off** which is listed under **Programs and Features**, the WAS component is shown in the list as in the following illustration.
 
@@ -48,7 +48,7 @@ Internet Information Services (IIS) 7.0 has a modular design that allows you to 
  With this installation, you have everything required to use IIS 7.0, ASP.NET and WCF features and samples available on the Web.
 
 ## Request Limits
- On [!INCLUDE[wv](../../../../includes/wv-md.md)] with IIS 7 the default value of the `maxUri` and `maxQueryStringSize` settings have been changed. By default, request filtering in IIS 7.0 allows a URL length of 4096 characters and a query string length of 2048 characters. To change these defaults add the following XML to your App.config file.
+ On Windows Vista with IIS 7 the default value of the `maxUri` and `maxQueryStringSize` settings have been changed. By default, request filtering in IIS 7.0 allows a URL length of 4096 characters and a query string length of 2048 characters. To change these defaults add the following XML to your App.config file.
 
 ```xml
  <system.webServer>

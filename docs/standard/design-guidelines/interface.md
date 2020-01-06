@@ -7,7 +7,6 @@ helpviewer_keywords:
   - "type design guidelines, interfaces"
   - "class library design guidelines [.NET Framework], interfaces"
 ms.assetid: a016bd18-6710-4358-9438-9f190a295392
-author: "KrzysztofCwalina"
 ---
 # Interface Design
 Although most APIs are best modeled using classes and structs, there are cases in which interfaces are more appropriate or are the only option.  

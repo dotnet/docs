@@ -33,9 +33,11 @@ Congratulations! You've created a simple .NET Core application. You can also use
 
 ## Tutorials
 
-Get started developing .NET Core applications by following these step-by-step tutorials.
+Get started developing .NET Core applications by following these step-by-step tutorials:
 
-### Windows
+<!-- markdownlint-disable MD025 -->
+
+# [Windows](#tab/windows)
 
 - [Create your first .NET Core console application in Visual Studio 2019](./tutorials/with-visual-studio.md)
 - [Build a class library with .NET Standard in Visual Studio](./tutorials/library-with-visual-studio.md)
@@ -48,7 +50,7 @@ Get started developing .NET Core applications by following these step-by-step tu
 
 See the [.NET Core SDK and runtime dependencies](install/dependencies.md?pivots=os-windows) article for a list of the supported Windows versions.
 
-### Linux
+# [Linux](#tab/linux)
 
 Get started developing .NET Core applications by following these step-by-step tutorials:
 
@@ -60,7 +62,7 @@ Get started developing .NET Core applications by following these step-by-step tu
 
 See the [.NET Core SDK and runtime dependencies](install/dependencies.md?pivots=os-linux) article for a list of the supported Linux distros and versions.
 
-### macOS
+# [macOS](#tab/macos)
 
 Get started developing .NET Core applications by following these step-by-step tutorials:
 
@@ -74,3 +76,5 @@ Get started developing .NET Core applications by following these step-by-step tu
 | ![movie camera icon for video](media/video-icon.png "Watch a video") | Watch a video on [getting started with Visual Studio Code using C# and .NET Core on macOS](https://channel9.msdn.com/Blogs/dotnet/Get-started-VSCode-NET-Core-Mac). |
 
 See the [.NET Core SDK and runtime dependencies](install/dependencies.md?pivots=os-macos) article for a list of the supported OS X / macOS versions.
+
+---

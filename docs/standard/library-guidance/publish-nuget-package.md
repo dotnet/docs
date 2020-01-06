@@ -1,8 +1,6 @@
 ---
 title: Publishing a NuGet package
 description: Best practice recommendations for publishing .NET libraries to NuGet.
-author: jamesnk
-ms.author: mairaw
 ms.date: 10/02/2018
 ---
 # Publishing a NuGet package

@@ -30,18 +30,9 @@ A scenario is a description of the type of prediction you want to make using you
 - detect whether a banking transaction is fraudulent
 - route customer feedback issues to the correct team in your company
 
-## Choose a model type
+### Which machine learning scenario is right for me?
 
-In Model Builder, you need to select a machine learning model type. The type of model depends on what sort of prediction you are trying to make.
-
-For scenarios that predict a number, the machine learning model type is called `regression`.
-
-For scenarios that predict a category, the model type is `classification`. There are two types of classification:
-
-- where there are only 2 categories: `binary classification`.
-- where there are three or more categories: `multiclass classification`.
-
-### Which model type is right for me?
+In Model Builder, you need to select a machine scenario. The type of scenario depends on what sort of prediction you are trying to make.
 
 #### Predict a category (when there are only two categories)
 
@@ -73,9 +64,13 @@ Price prediction can be used to predict house prices using location, size, and o
 
 You can use the price prediction template for your scenario if you want to predict a numerical value with your own dataset.
 
-#### Custom scenario (choose your model type)
+#### Classify images into categories
 
-The custom scenario allows you to manually choose your model type.
+This scenario is a special case of multiclass classification, where the input data to be categorized is a set of images.
+
+#### Custom scenario
+
+The custom scenario allows you to manually choose your scenario.
 
 ## Data
 
@@ -111,6 +106,7 @@ If you don't have your own data yet, try out one of these datasets:
 |Sentiment analysis|binary classification|[website comment data](https://raw.githubusercontent.com/dotnet/machinelearning/master/test/data/wikipedia-detox-250-line-data.tsv)|Label (0 when negative sentiment, 1 when positive)|Comment, Year|
 |Fraud detection|binary classification|[credit card data](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/BinaryClassification_CreditCardFraudDetection/CreditCardFraudDetection.Trainer/assets/input/creditcardfraud-dataset.zip)|Class (1 when fraudulent, 0 otherwise)|Amount, V1-V28 (anonymized features)|
 |Text classification|multiclass classification|[GitHub issue data](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/end-to-end-apps/MulticlassClassification-GitHubLabeler/GitHubLabeler/Data/corefx-issues-train.tsv)|Area|Title, Description|
+|Image classification|multiclass classification|[Flowers images](http://download.tensorflow.org/example_images/flower_photos.tgz)|The image data itself|
 
 ## Train
 
@@ -122,11 +118,59 @@ Training is an automatic process by which Model Builder teaches your model how t
 
 Because Model Builder uses automated machine learning (AutoML), it does not require any input or tuning from you during training.
 
+### How long should I train for?
+
+Model Builder uses AutoML to explore multiple models to find you the best performing model.
+
+Longer training periods allow AutoML to explore more models with a wider range of settings.
+
+The table below summarizes the average time taken to get good performance for a suite of example datasets.
+
+|Dataset size|Dataset type|Average time to train|
+|------------|------------|---------------------|
+|0-10Mb|Numeric and text|10 sec|
+|10-100 Mb|Numeric and text|10 min|
+|100 - 500 Mb|Numeric and text|30 min|
+|500 - 1Gb|Numeric and text|60 min|
+|1Gb+|Numeric and text|3+ hours|
+
 ## Evaluate
 
 Evaluation is the process of using the trained model to make predictions with new test data, and then measuring how good the predictions are.
 
-Model Builder splits the training data into a training set and a test set. The training data (80%) is used to train your model and the test data (20%) is held back to evaluate your model. Model Builder uses metrics to measure how good the model is. The specific metrics used are dependent on the type of model. For more information, see [model evaluation metrics](resources/metrics.md).
+Model Builder splits the training data into a training set and a test set. The training data (80%) is used to train your model and the test data (20%) is held back to evaluate your model. Model Builder uses evaluation metrics to measure how good the model is.
+
+### How do I understand my model performance?
+
+A scenario maps to a machine learning task. Each ML task has its own set of evaluation metrics. The table below describes these mappings of scenario and ML tasks.
+
+#### Regression (e.g. Price Prediction)
+
+The default metric for regression problems is RSquared, the value of RSquared ranges between 0 and 1. 1 is the best possible value or in other words the closer the value of RSquared to 1 the better your model is performing.
+
+Other metrics reported such as absolute-loss, squared-loss and RMS loss are additional metrics which can be used to understand how your model is performing and comparing it against other regression models.
+
+#### Binary Classification (e.g. Sentiment Analysis)
+
+The default metric for classification problems is accuracy. Accuracy defines the proportion of correct predictions your model is making over the test dataset. The closer to 100% or 1.0 the better it is.
+
+Other metrics reported such as AUC (Area under the curve), which measures the true positive rate vs. the false positive rate should be greater than 0.50 for models to be acceptable.
+
+Additional metrics like F1 score can be used to control the balance between Precision and Recall.
+
+#### Multi-Class Classification (e.g. Issue Classification, Image Classification)
+
+The default metric for Multi-class classification is Micro Accuracy. The closer the Micro Accuracy to 100% or 1.0 the better it is.
+
+Another important metric for Multi-class classification is Macro-accuracy, similar to Micro-accuracy the closer to 1.0 the better it is. A good way to think about these two is:
+
+Micro-accuracy -- how often does an incoming ticket get classified to the right team?
+
+Macro-accuracy -- for an average team, how often is an incoming ticket correct for their team?
+
+### More information on evaluation metrics
+
+For more information, see [model evaluation metrics](resources/metrics.md).
 
 ## Improve
 

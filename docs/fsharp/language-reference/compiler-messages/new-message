@@ -1,0 +1,33 @@
+#! /usr/bin/env bash
+
+set +eux
+
+function usage () {
+    echo "usage: new-message <####> <title>"
+    exit 1;
+}
+
+[[ -z $1 || $# -gt 2 ]] && usage
+
+message_number="FS$1"
+message_title=$2
+year=$(date "+%Y")
+month=$(date "+%m")
+day=$(date "+%d")
+file_name="fs$1.md"
+
+echo "Writing new migration to ${file_name}"
+
+
+cat >"${file_name}" <<EOF
+---
+title: "Compiler Error $message_number"
+ms.date: $month/$day/$year
+f1_keywords:
+  - "$message_number"
+helpviewer_keywords:
+  - "$message_number"
+---
+
+# $message_number: $message_title
+EOF

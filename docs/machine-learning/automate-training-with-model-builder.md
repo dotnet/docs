@@ -128,11 +128,11 @@ The table below summarizes the average time taken to get good performance for a 
 
 |Dataset size|Dataset type|Average time to train|
 |------------|------------|---------------------|
-|0-10Mb|Numeric and text|10 sec|
-|10-100 Mb|Numeric and text|10 min|
-|100 - 500 Mb|Numeric and text|30 min|
-|500 - 1 Gb|Numeric and text|60 min|
-|1 Gb+|Numeric and text|3+ hours|
+|0-10 MB|Numeric and text|10 sec|
+|10-100 MB|Numeric and text|10 min|
+|100 - 500 MB|Numeric and text|30 min|
+|500 - 1 GB|Numeric and text|60 min|
+|1 GB+|Numeric and text|3+ hours|
 
 ## Evaluate
 

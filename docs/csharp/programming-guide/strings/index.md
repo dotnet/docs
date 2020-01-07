@@ -1,6 +1,5 @@
 ---
 title: "Strings - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 06/27/2019
 helpviewer_keywords: 
   - "C# language, strings"
@@ -119,7 +118,7 @@ string s = String.Empty;
  [!code-csharp[TestStringBuilder#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideStrings/CS/TestStringBuilder.cs)]
   
 ## Strings, Extension Methods and LINQ  
- Because the <xref:System.String> type implements <xref:System.Collections.Generic.IEnumerable%601>, you can use the extension methods defined in the <xref:System.Linq.Enumerable> class on strings. To avoid visual clutter, these methods are excluded from IntelliSense for the <xref:System.String> type, but they are available nevertheless. You can also use [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query expressions on strings. For more information, see [LINQ and Strings](../concepts/linq/linq-and-strings.md).  
+ Because the <xref:System.String> type implements <xref:System.Collections.Generic.IEnumerable%601>, you can use the extension methods defined in the <xref:System.Linq.Enumerable> class on strings. To avoid visual clutter, these methods are excluded from IntelliSense for the <xref:System.String> type, but they are available nevertheless. You can also use LINQ query expressions on strings. For more information, see [LINQ and Strings](../concepts/linq/linq-and-strings.md).  
   
 ## Related Topics  
   

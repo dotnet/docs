@@ -8,7 +8,6 @@ helpviewer_keywords:
   - "class library design guidelines [.NET Framework], type design guidelines"
   - "types [.NET Framework], design guidelines"
 ms.assetid: 6b49314e-8bba-43ea-97ca-4e0255812f95
-author: "KrzysztofCwalina"
 ---
 # Type Design Guidelines
 From the CLR perspective, there are only two categories of types—reference types and value types—but for the purpose of a discussion about framework design, we divide types into more logical groups, each with its own specific design rules.  

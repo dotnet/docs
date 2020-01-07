@@ -1,8 +1,6 @@
 ---
 title: Open-source .NET library guidance
 description: Best practice recommendations for developers to create high quality .NET libraries.
-author: jamesnk
-ms.author: mairaw
 ms.date: 10/17/2018
 ---
 # Open-source library guidance

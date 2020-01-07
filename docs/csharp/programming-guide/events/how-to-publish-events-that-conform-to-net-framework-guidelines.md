@@ -1,6 +1,5 @@
 ---
 title: "How to publish events that conform to .NET Framework Guidelines - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "events [C#], implementation guidelines"

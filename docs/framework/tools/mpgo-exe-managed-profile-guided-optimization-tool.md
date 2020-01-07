@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "Ngen.exe"
   - "Ngen.exe, profilers and native images"
 ms.assetid: f6976502-a000-4fbe-aaf5-a7aab9ce4ec2
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Mpgo.exe (Managed Profile Guided Optimization Tool)
 

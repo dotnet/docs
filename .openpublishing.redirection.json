@@ -399,7 +399,7 @@
     },
     {
       "source_path": "docs/core/versions/lts-current.md",
-      "redirect_url": "https://dotnet.microsoft.com/platform/support/policy"
+      "redirect_url": "https://dotnet.microsoft.com/platform/support/policy/dotnet-core"
     },
     {
       "source_path": "docs/core/versions/servicing.md",
@@ -3135,6 +3135,11 @@
     {
       "source_path": "docs/machine-learning/tutorials/movie-recommmendation.md",
       "redirect_url": "/dotnet/machine-learning/tutorials/movie-recommendation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/machine-learning/tutorials/ml-cli.md",
+      "redirect_url": "/dotnet/machine-learning/tutorials/sentiment-analysis-cli",
       "redirect_document_id": true
     },
     {

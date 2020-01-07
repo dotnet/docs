@@ -3,7 +3,6 @@ title: How the .NET Core Runtime and SDK are versioned
 description: This article teaches you how the .NET Core SDK and Runtime are versioned (similar to semantic versioning).
 author: bleroy
 ms.date: 07/26/2018
-ms.custom: "seodec18"
 ---
 
 # Overview of how .NET Core is versioned

@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 8e4450dc-56b3-472b-b467-32f5694f83ad
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Select Nodes Using XPath Navigation
 The XML Document Object Model (DOM) contains methods that allow you to use XML Path Language (XPath) navigation to query information in the DOM. You can use XPath to find a single, specific node or to find all nodes that match some criteria.  

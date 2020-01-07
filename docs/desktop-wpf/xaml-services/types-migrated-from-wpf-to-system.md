@@ -7,7 +7,8 @@ helpviewer_keywords:
   - "System.Xaml [XAML Services], types migrated from WPF"
 ms.assetid: d79dabf5-a2ec-4e8d-a37a-67c4ba8a2b91
 ---
-# Types Migrated from WPF to System.Xaml
+# Types migrated from WPF to System.Xaml
+
 In .NET Framework 3.5 and .NET Framework 3.0, both [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] and Windows Workflow Foundation included a XAML language implementation. Many of the public types that provided extensibility for the WPF XAML implementation existed in the WindowsBase, PresentationCore, and PresentationFramework assemblies. Likewise, public types that provided extensibility for Windows Workflow Foundation XAML existed in the System.Workflow.ComponentModel assembly. In the .NET Framework 4, some of the XAML-related types are migrated to the System.Xaml assembly. A common .NET Framework implementation of XAML language services enables many XAML extensibility scenarios that were originally defined by a specific framework's XAML implementation but are now part of overall .NET Framework 4 XAML language support. This topic lists the types that are migrated and discusses issues related to the migration.  
   
 <a name="assemblies_and_namespaces"></a>   
@@ -101,13 +102,13 @@ In .NET Framework 3.5 and .NET Framework 3.0, both [!INCLUDE[TLA#tla_winclient](
   
 <a name="miscellaneous_classes"></a>   
 ## Miscellaneous Classes  
- The <xref:System.Windows.Markup.IComponentConnector> interface existed in WindowsBase in the .NET Framework 3.5 and .NET Framework 3.0, but exists in System.Xaml in .NET Framework 4. <xref:System.Windows.Markup.IComponentConnector> is primarily intended for tooling support and XAML markup compilers.  
+ The <xref:System.Windows.Markup.IComponentConnector> interface existed in WindowsBase in .NET Framework 3.5 and .NET Framework 3.0, but exists in System.Xaml in .NET Framework 4. <xref:System.Windows.Markup.IComponentConnector> is primarily intended for tooling support and XAML markup compilers.  
   
- The <xref:System.Windows.Markup.INameScope> interface existed in WindowsBase in the .NET Framework 3.5 and .NET Framework 3.0, but exists in System.Xaml in .NET Framework 4. <xref:System.Windows.Markup.INameScope> defines basic operations for a XAML namescope.  
+ The <xref:System.Windows.Markup.INameScope> interface existed in WindowsBase in .NET Framework 3.5 and .NET Framework 3.0, but exists in System.Xaml in .NET Framework 4. <xref:System.Windows.Markup.INameScope> defines basic operations for a XAML namescope.  
   
 <a name="xamlrelated_classes_with_shared_names_that_exist_in_wpf_and_systemxaml"></a>   
 ## XAML-related Classes with Shared Names that Exist in WPF and System.Xaml  
- The following classes exist in both the WPF assemblies and the System.Xaml assembly in the .NET Framework 4:  
+ The following classes exist in both the WPF assemblies and the System.Xaml assembly in .NET Framework 4:  
   
  `XamlReader`  
   

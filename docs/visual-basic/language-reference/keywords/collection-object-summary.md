@@ -11,9 +11,9 @@ Visual Basic language keywords and run-time library members are organized by pur
 |Action|Language element|  
 |------------|----------------------|  
 |Create a `Collection` object.|<xref:Microsoft.VisualBasic.Collection>|  
-|Add an item to a collection.|<xref:Microsoft.VisualBasic.Collection.Add*>|  
-|Remove an object from a collection.|<xref:Microsoft.VisualBasic.Collection.Remove*>|  
-|Reference an item in a collection.|<xref:Microsoft.VisualBasic.Collection.Item*>|  
+|Add an item to a collection.|<xref:Microsoft.VisualBasic.Collection.Add%2A>|  
+|Remove an object from a collection.|<xref:Microsoft.VisualBasic.Collection.Remove%2A>|  
+|Reference an item in a collection.|<xref:Microsoft.VisualBasic.Collection.Item%2A>|  
 |Return a reference to an <xref:System.Collections.IEnumerator> interface.|<xref:Microsoft.VisualBasic.Collection.System%23Collections%23IEnumerable%23GetEnumerator%2A>|  
   
 ## See also

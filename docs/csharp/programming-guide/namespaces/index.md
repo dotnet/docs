@@ -1,6 +1,5 @@
 ---
 title: "Namespaces - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 08/21/2018
 helpviewer_keywords: 
   - "C# language, namespaces"
@@ -44,7 +43,7 @@ For more information, see the [Namespaces](~/_csharplang/spec/namespaces.md) sec
 
 - [C# Programming Guide](../index.md)
 - [Using Namespaces](using-namespaces.md)
-- [How to: Use the My Namespace](how-to-use-the-my-namespace.md)
+- [How to use the My namespace](how-to-use-the-my-namespace.md)
 - [Identifier names](../inside-a-program/identifier-names.md)
 - [using Directive](../../language-reference/keywords/using-directive.md)
 - [:: Operator](../../language-reference/operators/namespace-alias-qualifier.md)

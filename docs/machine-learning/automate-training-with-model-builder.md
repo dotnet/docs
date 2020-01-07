@@ -106,7 +106,7 @@ If you don't have your own data yet, try out one of these datasets:
 |Sentiment analysis|binary classification|[website comment data](https://raw.githubusercontent.com/dotnet/machinelearning/master/test/data/wikipedia-detox-250-line-data.tsv)|Label (0 when negative sentiment, 1 when positive)|Comment, Year|
 |Fraud detection|binary classification|[credit card data](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/BinaryClassification_CreditCardFraudDetection/CreditCardFraudDetection.Trainer/assets/input/creditcardfraud-dataset.zip)|Class (1 when fraudulent, 0 otherwise)|Amount, V1-V28 (anonymized features)|
 |Text classification|multiclass classification|[GitHub issue data](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/end-to-end-apps/MulticlassClassification-GitHubLabeler/GitHubLabeler/Data/corefx-issues-train.tsv)|Area|Title, Description|
-|Image classification|multiclass classification|[Flowers images](http://download.tensorflow.org/example_images/flower_photos.tgz)|The image data itself|
+|Image classification|multiclass classification|[Flowers images](http://download.tensorflow.org/example_images/flower_photos.tgz)|The type of flower: daisy, dandelion, roses, sunflowers, tulips|The image data itself|
 
 ## Train
 
@@ -126,13 +126,13 @@ Longer training periods allow AutoML to explore more models with a wider range o
 
 The table below summarizes the average time taken to get good performance for a suite of example datasets.
 
-|Dataset size|Dataset type|Average time to train|
-|------------|------------|---------------------|
-|0-10 MB|Numeric and text|10 sec|
-|10-100 MB|Numeric and text|10 min|
-|100 - 500 MB|Numeric and text|30 min|
-|500 - 1 GB|Numeric and text|60 min|
-|1 GB+|Numeric and text|3+ hours|
+|Dataset size|Average time to train|
+|------------|---------------------|
+|0 - 10 MB|10 sec|
+|10 - 100 MB|10 min|
+|100 - 500 MB|30 min|
+|500 - 1 GB||60 min|
+|1 GB+|3+ hours|
 
 ## Evaluate
 

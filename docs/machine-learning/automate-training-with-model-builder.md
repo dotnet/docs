@@ -32,7 +32,7 @@ A scenario is a description of the type of prediction you want to make using you
 
 ### Which machine learning scenario is right for me?
 
-In Model Builder, you need to select a machine scenario. The type of scenario depends on what sort of prediction you are trying to make.
+In Model Builder, you need to select a machine scenario. The type of scenario depends on what type of prediction you are trying to make.
 
 #### Predict a category (when there are only two categories)
 
@@ -131,8 +131,8 @@ The table below summarizes the average time taken to get good performance for a 
 |0-10Mb|Numeric and text|10 sec|
 |10-100 Mb|Numeric and text|10 min|
 |100 - 500 Mb|Numeric and text|30 min|
-|500 - 1Gb|Numeric and text|60 min|
-|1Gb+|Numeric and text|3+ hours|
+|500 - 1 Gb|Numeric and text|60 min|
+|1 Gb+|Numeric and text|3+ hours|
 
 ## Evaluate
 
@@ -144,13 +144,13 @@ Model Builder splits the training data into a training set and a test set. The t
 
 A scenario maps to a machine learning task. Each ML task has its own set of evaluation metrics. The table below describes these mappings of scenario and ML tasks.
 
-#### Regression (e.g. Price Prediction)
+#### Regression (for example, Price Prediction)
 
 The default metric for regression problems is RSquared, the value of RSquared ranges between 0 and 1. 1 is the best possible value or in other words the closer the value of RSquared to 1 the better your model is performing.
 
-Other metrics reported such as absolute-loss, squared-loss and RMS loss are additional metrics which can be used to understand how your model is performing and comparing it against other regression models.
+Other metrics reported such as absolute-loss, squared-loss, and RMS loss are additional metrics, which can be used to understand how your model is performing and comparing it against other regression models.
 
-#### Binary Classification (e.g. Sentiment Analysis)
+#### Binary Classification (for example, Sentiment Analysis)
 
 The default metric for classification problems is accuracy. Accuracy defines the proportion of correct predictions your model is making over the test dataset. The closer to 100% or 1.0 the better it is.
 
@@ -158,11 +158,11 @@ Other metrics reported such as AUC (Area under the curve), which measures the tr
 
 Additional metrics like F1 score can be used to control the balance between Precision and Recall.
 
-#### Multi-Class Classification (e.g. Issue Classification, Image Classification)
+#### Multi-Class Classification (for example, Issue Classification, Image Classification)
 
 The default metric for Multi-class classification is Micro Accuracy. The closer the Micro Accuracy to 100% or 1.0 the better it is.
 
-Another important metric for Multi-class classification is Macro-accuracy, similar to Micro-accuracy the closer to 1.0 the better it is. A good way to think about these two is:
+Another important metric for Multi-class classification is Macro-accuracy, similar to Micro-accuracy the closer to 1.0 the better it is. A good way to think about these two types of accuracy is:
 
 Micro-accuracy -- how often does an incoming ticket get classified to the right team?
 

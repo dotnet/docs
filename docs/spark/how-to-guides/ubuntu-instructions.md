@@ -22,9 +22,8 @@ If you already have all the prerequisites, skip to the [build](#Build) steps bel
        sudo apt install openjdk-8-jdk
        ```
 
-     - Verify you are able to run `java` from your command-line.
-       <details>
-       <summary>Click to see sample java -version output</summary>
+     - Verify you are able to run `java` from your command-line.       
+       Click to see sample java -version output
        
        ```bash
        openjdk version "1.8.0_191"

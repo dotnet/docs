@@ -18,7 +18,6 @@ file_name="fs$1.md"
 
 echo "Writing new migration to ${file_name}"
 
-
 cat >"${file_name}" <<EOF
 ---
 title: "Compiler Error $message_number"
@@ -30,4 +29,11 @@ helpviewer_keywords:
 ---
 
 # $message_number: $message_title
+EOF
+
+echo "Writing TOC entry"
+
+cat >toc.yml <<EOF
+  - name: $message_number - $message_title
+    href: ./$file_name
 EOF

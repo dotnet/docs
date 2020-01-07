@@ -78,7 +78,7 @@ You can install a specific version using the `-Version|--version` argument. The 
   > [!NOTE]
   > This parameter is obsolete and may be removed in a future version of the script. The recommended alternative is the `-Runtime|--runtime` option.
 
-  Installs just the shared runtime bits, not the entire SDK. This is equivalent to specifying `-Runtime dotnet`.
+  Installs just the shared runtime bits, not the entire SDK. This option is equivalent to specifying `-Runtime|--runtime dotnet`.
 
 - **`-Runtime|--runtime <RUNTIME>`**
 

@@ -52,7 +52,7 @@ This CLR is built from the same code base as the CLR. Originally, CoreCLR was th
 
 .NET Core Base Class Library (BCL)
 
-A set of libraries that comprise the System.* (and to a limited extent  Microsoft.*) namespaces. The BCL is a general purpose, lower-level framework that higher-level application frameworks, such as ASP.NET Core, build on. The source code of the .NET Core BCL is contained in the [CoreFX repository](https://github.com/dotnet/corefx). However, the majority of the .NET Core APIs are also available in the .NET Framework, so you can think of CoreFX as a fork of the .NET Framework BCL.
+A set of libraries that comprise the System.\* (and to a limited extent Microsoft.\*) namespaces. The BCL is a general purpose, lower-level framework that higher-level application frameworks, such as ASP.NET Core, build on. The source code of the .NET Core BCL is contained in the [.NET Core runtime repository](https://github.com/dotnet/runtime). However, the majority of the .NET Core APIs are also available in the .NET Framework, so you can think of CoreFX as a fork of the .NET Framework BCL.
 
 ## CoreRT
 

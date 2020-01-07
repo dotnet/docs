@@ -4,8 +4,6 @@ description: ML.NET gives you the ability to add machine learning to .NET applic
 ms.date: 11/5/2019
 ms.topic: overview
 ms.custom: mvc
-ms.author: nakersha
-author: natke
 #Customer intent: As a developer, I want to learn how ML.NET works so that I can leverage machine learning in my applications.
 ---
 

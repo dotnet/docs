@@ -13,11 +13,19 @@ ms.date: 01/06/2020
 
 Windows:
 
-`dotnet-install.ps1 [-Channel] [-Version] [-JSonFile] [-InstallDir] [-Architecture] [-SharedRuntime] [-Runtime] [-DryRun] [-NoPath] [-Verbose] [-AzureFeed] [-UncachedFeed] [-NoCdn] [-FeedCredential] [-ProxyAddress] [-ProxyUseDefaultCredentials] [-SkipNonVersionedFiles] [-Help]`
+```powershell
+dotnet-install.ps1 [-Channel] [-Version] [-JSonFile] [-InstallDir] [-Architecture] [-SharedRuntime] 
+    [-Runtime] [-DryRun] [-NoPath] [-Verbose] [-AzureFeed] [-UncachedFeed] [-NoCdn] [-FeedCredential] 
+    [-ProxyAddress] [-ProxyUseDefaultCredentials] [-SkipNonVersionedFiles] [-Help]
+```
 
 Linux/macOs:
 
-`dotnet-install.sh [--channel] [--version] [--jsonfile] [--install-dir] [--architecture] [--shared-runtime] [--runtime] [--dry-run] [--no-path] [--verbose] [--azure-feed] [--uncached-feed] [--no-cdn] [--feed-credential] [--runtime-id] [--skip-non-versioned-files] [--help]`
+```bash
+dotnet-install.sh [--channel] [--version] [--jsonfile] [--install-dir] [--architecture] [--shared-runtime] 
+    [--runtime] [--dry-run] [--no-path] [--verbose] [--azure-feed] [--uncached-feed] [--no-cdn] [--feed-credential] 
+    [--runtime-id] [--skip-non-versioned-files] [--help]
+```
 
 ## Description
 
@@ -115,6 +123,10 @@ You can install a specific version using the `-Version|--version` argument. The 
 - **`-FeedCredential|--feed-credential`**
 
   Used as a query string to append to the Azure feed. It allows changing the URL to use non-public blob storage accounts.
+
+- **`--runtime-id`**
+
+  Specifies the [runtime identifier](../rid-catalog.md) for which the tools are being installed. Use `linux-x64` for portable Linux. (Only valid for Linux/macOS)
 
 - **`-ProxyAddress`**
 

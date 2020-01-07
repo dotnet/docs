@@ -23,7 +23,7 @@ If you already have all the prerequisites, skip to the [build](#Build) steps bel
        ```
 
      - Verify you are able to run `java` from your command-line.       
-       Click to see sample java -version output
+       Sample java -version output:
        
        ```bash
        openjdk version "1.8.0_191"
@@ -54,9 +54,8 @@ If you already have all the prerequisites, skip to the [build](#Build) steps bel
        
        Note that these environment variables will be lost when you close your terminal. If you want the changes to be permanent, add the `export` lines to your `~/.bashrc` file.
 
-     - Verify you are able to run `mvn` from your command-line
-       <details>
-       <summary>Click to see sample mvn -version output</summary>
+     - Verify you are able to run `mvn` from your command-line       
+       Sample mvn -version output:
        
        ```
        Apache Maven 3.6.0 (97c98ec64a1fdfee7767ce5ffb20918da4f719f3; 2018-10-24T18:41:47Z)
@@ -79,9 +78,8 @@ If you already have all the prerequisites, skip to the [build](#Build) steps bel
        
        Note that these environment variables will be lost when you close your terminal. If you want the changes to be permanent, add the `export` lines to your `~/.bashrc` file.
 
-     - Verify you are able to run `spark-shell` from your command-line
-        <details>
-        <summary>Click to see sample console output</summary>
+     - Verify you are able to run `spark-shell` from your command-line        
+        Sample console output:
         
         ```
         Welcome to
@@ -98,8 +96,7 @@ If you already have all the prerequisites, skip to the [build](#Build) steps bel
         scala> sc
         res0: org.apache.spark.SparkContext = org.apache.spark.SparkContext@6eaa6b0c
         ```
-                   
-        </details>
+                          
 
 Make sure you are able to run `dotnet`, `java`, `mvn`, `spark-shell` from your command-line before you move to the next section. Feel there is a better way? Please [open an issue](https://github.com/dotnet/spark/issues) and feel free to contribute.
 
@@ -135,9 +132,8 @@ You should see JARs created for the supported Spark versions:
       cd ~/dotnet.spark/src/csharp/Microsoft.Spark.Worker/
       dotnet publish -f netcoreapp2.1 -r ubuntu.18.04-x64
       ```
-
-      <details>
-      <summary>Click to see sample console output</summary>
+      
+      Sample console output:
 
       ```bash
       user@machine:/home/user/dotnet.spark/src/csharp/Microsoft.Spark.Worker$ dotnet publish -f netcoreapp2.1 -r ubuntu.18.04-x64
@@ -150,8 +146,7 @@ You should see JARs created for the supported Spark versions:
         Microsoft.Spark.Worker -> /home/user/dotnet.spark/artifacts/bin/Microsoft.Spark.Worker/Debug/netcoreapp2.1/ubuntu.18.04-x64/Microsoft.Spark.Worker.dll
         Microsoft.Spark.Worker -> /home/user/dotnet.spark/artifacts/bin/Microsoft.Spark.Worker/Debug/netcoreapp2.1/ubuntu.18.04-x64/publish/
       ```
-
-      </details>
+     
 
   2. Build the samples.
 
@@ -159,9 +154,8 @@ You should see JARs created for the supported Spark versions:
       cd ~/dotnet.spark/examples/Microsoft.Spark.CSharp.Examples/
       dotnet publish -f netcoreapp2.1 -r ubuntu.18.04-x64
       ```
-
-      <details>
-      <summary>Click to see sample console output</summary>
+      
+      Sample console output:
 
       ```bash
       user@machine:/home/user/dotnet.spark/examples/Microsoft.Spark.CSharp.Examples$ dotnet publish -f netcoreapp2.1 -r ubuntu.18.04-x64
@@ -174,8 +168,7 @@ You should see JARs created for the supported Spark versions:
         Microsoft.Spark.CSharp.Examples -> /home/user/dotnet.spark/artifacts/bin/Microsoft.Spark.CSharp.Examples/Debug/netcoreapp2.1/ubuntu.18.04-x64/Microsoft.Spark.CSharp.Examples.dll
         Microsoft.Spark.CSharp.Examples -> /home/user/dotnet.spark/artifacts/bin/Microsoft.Spark.CSharp.Examples/Debug/netcoreapp2.1/ubuntu.18.04-x64/publish/
       ```
-
-     </details>
+   
 
 ## Run samples
 

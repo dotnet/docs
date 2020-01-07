@@ -32,9 +32,8 @@ If you already have all the prerequisites, skip to the [build](windows-instructi
      - Download [Apache Spark 2.3+](https://spark.apache.org/downloads.html) and extract it into a local folder (e.g., `c:\bin\spark-2.3.2-bin-hadoop2.7\`) using [7-zip](https://www.7-zip.org/).
      - Add Apache Spark to your [PATH environment variable](https://www.java.com/en/download/help/path.xml) e.g., `c:\bin\spark-2.3.2-bin-hadoop2.7\bin`.
      - Add a [new environment variable](https://www.java.com/en/download/help/path.xml) `SPARK_HOME` e.g., `C:\bin\spark-2.3.2-bin-hadoop2.7\`.
-     - Verify you are able to run `spark-shell` from your command-line.
-        <details>
-        <summary>Click to see sample console output</summary>
+     - Verify you are able to run `spark-shell` from your command-line.        
+        Sample console output:
 
         ```
         Welcome to
@@ -121,9 +120,8 @@ You should see JARs created for the supported Spark versions:
         df.Filter(df["age"] > 21).Show();
       ```
 
-     Once the build is successfuly, you will see the appropriate binaries produced in the output directory.
-     <details>
-     <summary>Click to see sample console output</summary>
+     Once the build is successfuly, you will see the appropriate binaries produced in the output directory.     
+     Sample console output:
      
       ```powershell
             Directory: C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.CSharp.Examples\Debug\net461
@@ -144,8 +142,7 @@ You should see JARs created for the supported Spark versions:
         -a----        3/16/2019  12:00 AM         332363 Microsoft.Spark.xml
         ------------------------------------------- More framework files -------------------------------------
       ```
-
-      </details>
+     
 
 #### Using .NET Core CLI for .NET Core
 
@@ -158,9 +155,8 @@ You should see JARs created for the supported Spark versions:
       cd C:\github\dotnet-spark\src\csharp\Microsoft.Spark.Worker\
       dotnet publish -f netcoreapp2.1 -r win10-x64
       ```
-
-      <details>
-      <summary>Click to see sample console output</summary>
+      
+      Sample console output:
 
       ```powershell
       PS C:\github\dotnet-spark\src\csharp\Microsoft.Spark.Worker> dotnet publish -f netcoreapp2.1 -r win10-x64
@@ -173,8 +169,7 @@ You should see JARs created for the supported Spark versions:
         Microsoft.Spark.Worker -> C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.Worker\Debug\netcoreapp2.1\win10-x64\Microsoft.Spark.Worker.dll
         Microsoft.Spark.Worker -> C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.Worker\Debug\netcoreapp2.1\win10-x64\publish\
       ```
-
-      </details>
+    
 
   2. Build the samples.
 
@@ -182,9 +177,8 @@ You should see JARs created for the supported Spark versions:
       cd C:\github\dotnet-spark\examples\Microsoft.Spark.CSharp.Examples\
       dotnet publish -f netcoreapp2.1 -r win10-x64
       ```
-
-      <details>
-      <summary>Click to see sample console output</summary>
+   
+      Sample console output:
 
       ```powershell
       PS C:\github\dotnet-spark\examples\Microsoft.Spark.CSharp.Examples> dotnet publish -f netcoreapp2.1 -r win10-x64
@@ -197,8 +191,7 @@ You should see JARs created for the supported Spark versions:
         Microsoft.Spark.CSharp.Examples -> C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.CSharp.Examples\Debug\netcoreapp2.1\win10-x64\Microsoft.Spark.CSharp.Examples.dll
         Microsoft.Spark.CSharp.Examples -> C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.CSharp.Examples\Debug\netcoreapp2.1\win10-x64\publish\
       ```
-
-      </details>
+     
 
 ## Run samples
 

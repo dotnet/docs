@@ -5,19 +5,20 @@ helpviewer_keywords:
   - "defining custom types [XAML Services]"
 ms.assetid: c2667cbd-2f46-4a7f-9dfc-53696e35e8e4
 ---
-# Defining Custom Types for Use with .NET Framework XAML Services
+# Define custom types for use with .NET Framework XAML Services
+
 When you define custom types that are business objects or are types that do not have a dependency on specific frameworks, there are certain best practices for XAML you can follow. If you follow these practices, .NET Framework XAML Services and its XAML readers and XAML writers can discover the XAML characteristics of your type and give it appropriate representation in a XAML node stream using the XAML type system. This topic describes best practices for type definitions, member definitions, and CLR attributing of types or members.  
   
 ## Constructor Patterns and Type Definitions for XAML  
- To be instantiated as an object element in XAML, a custom class must meet the following requirements:  
+
+To be instantiated as an object element in XAML, a custom class must meet the following requirements:  
   
 - The custom class must be public and must expose a parameterless public constructor. (See following section for notes regarding structures.)  
   
 - The custom class must not be a nested class. The extra "dot" in the full-name path makes the class-namespace division ambiguous, and interferes with other XAML features such as attached properties.  
+If an object can be instantiated as an object element, the created object can fill the property element form of any properties that take the object as their underlying type.  
   
- If an object can be instantiated as an object element, the created object can fill the property element form of any properties that take the object as their underlying type.  
-  
- You can still provide object values for types that do not meet these criteria, if you enable a value converter. For more information, see [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions.md).  
+You can still provide object values for types that do not meet these criteria, if you enable a value converter. For more information, see [Type Converters and Markup Extensions for XAML](type-converters-and-markup-extensions.md).  
   
 ### Structures  
  Structures are always able to be constructed in XAML, by CLR definition. This is because a CLR compiler implicitly creates a parameterless constructor for a structure. This constructor initializes all property values to their defaults.  
@@ -28,7 +29,7 @@ When you define custom types that are business objects or are types that do not 
  Interfaces can be used as underlying types of members. The XAML type system checks the assignable list and expects that the object that is provided as the value can be assigned to the interface. There is no concept of how the interface must be presented as a XAML type as long as a relevant assignable type supports the XAML construction requirements.  
   
 ### Factory Methods  
- Factory methods are a XAML 2009 feature. They modify the XAML principle that objects must have parameterless constructors. Factory methods are not documented in this topic. See [x:FactoryMethod Directive](xfactorymethod-directive.md).  
+ Factory methods are a XAML 2009 feature. They modify the XAML principle that objects must have parameterless constructors. Factory methods are not documented in this article. See [x:FactoryMethod Directive](xfactorymethod-directive.md).  
   
 ## Enumerations  
  Enumerations have XAML native type conversion behavior. Enumeration constant names specified in XAML are resolved against the underlying enumeration type, and return the enumeration value to a XAML object writer.  
@@ -36,7 +37,7 @@ When you define custom types that are business objects or are types that do not 
  XAML supports a flags-style usage for enumerations with <xref:System.FlagsAttribute> applied. For more information, see [XAML Syntax In Detail](../../framework/wpf/advanced/xaml-syntax-in-detail.md). ([XAML Syntax In Detail](../../framework/wpf/advanced/xaml-syntax-in-detail.md) is written for the WPF audience, but most of the information in that topic is relevant for XAML that is not specific to a particular implementing framework.)  
   
 ## Member Definitions  
- Types can define members for XAML usage. It is possible for types that define members that are XAML-usable even if that specific type is not XAML-usable. This is possible because of CLR inheritance. So long as some type that inherits the member supports XAML usage as a type, and the member supports XAML usage for its underlying type or has a native XAML syntax available, that member is XAML-usable.  
+ Types can define members for XAML usage. It's possible for types to define members that are XAML-usable even if that specific type is not XAML-usable. This is possible because of CLR inheritance. So long as some type that inherits the member supports XAML usage as a type, and the member supports XAML usage for its underlying type or has a native XAML syntax available, that member is XAML-usable.  
   
 ### Properties  
  If you define properties as a public CLR property using the typical CLR `get` and `set` accessor patterns and language-appropriate keywording, the XAML type system can report the property as a member with appropriate information provided for <xref:System.Xaml.XamlMember> properties, such as <xref:System.Xaml.XamlMember.IsReadPublic%2A> and <xref:System.Xaml.XamlMember.IsWritePublic%2A>.  
@@ -48,10 +49,10 @@ When you define custom types that are business objects or are types that do not 
  If using XAML 2009, [x:Reference Markup Extension](xreference-markup-extension.md) can be used to provide values if the previous considerations are not met; however, that is more of a usage issue than a type definition issue.  
   
 ### Events  
- If you define events as a public CLR event, the XAML type system can report the event as a member with <xref:System.Xaml.XamlMember.IsEvent%2A> as `true`. Wiring the event handlers is not within the scope of .NET Framework XAML Services capabilities; this is left to specific frameworks and implementations.  
+ If you define events as a public CLR event, the XAML type system can report the event as a member with <xref:System.Xaml.XamlMember.IsEvent%2A> as `true`. Wiring the event handlers is not within the scope of .NET Framework XAML Services capabilities; wiring is left to specific frameworks and implementations.  
   
 ### Methods  
- Inline code for methods is not a default XAML capability. In most cases you do not directly reference method members from XAML, and the role of methods in XAML is only to provide support for specific XAML patterns. [x:FactoryMethod Directive](xfactorymethod-directive.md) is an exception.  
+ Inline code for methods is not a default XAML capability. In most cases, you do not directly reference method members from XAML, and the role of methods in XAML is only to provide support for specific XAML patterns. [x:FactoryMethod Directive](xfactorymethod-directive.md) is an exception.  
   
 ### Fields  
  CLR design guidelines discourage nonstatic fields. For static fields, you can access static field values only through [x:Static Markup Extension](xstatic-markup-extension.md); in this case you are not doing anything special in the CLR definition to expose a field for [x:Static](xstatic-markup-extension.md) usages.  
@@ -62,34 +63,40 @@ When you define custom types that are business objects or are types that do not 
  Be cautious of name collisions between these patterns and other methods of a type. If a member exists that matches one of the patterns, it can be interpreted as an attachable member usage pathway by a XAML processor even if that was not your intention.  
   
 #### The GetPropertyName Accessor  
- The signature for the `Get`*PropertyName* accessor must be:  
+
+The signature for the `Get`*PropertyName* accessor must be:  
   
- `public static object Get` *PropertyName* `(object`  `target` `)`  
+`public static object Get` *PropertyName* `(object`  `target` `)`  
   
 - The `target` object can be specified as a more specific type in your implementation. You can use this to scope the usage of your attachable member; usages outside your intended scope will throw invalid cast exceptions that are then surfaced by a XAML parse error. The parameter name `target` is not a requirement, but is named `target` by convention in most implementations.  
   
 - The return value can be specified as a more specific type in your implementation.  
   
- To support a <xref:System.ComponentModel.TypeConverter> enabled text syntax for attribute usage of the attachable member, apply <xref:System.ComponentModel.TypeConverterAttribute> to the `Get`*PropertyName* accessor. Applying to the `get` instead of the `set` may seem nonintuitive; however, this convention can support the concept of read-only attachable members that are serializable, which is useful in designer scenarios.  
+To support a <xref:System.ComponentModel.TypeConverter> enabled text syntax for attribute usage of the attachable member, apply <xref:System.ComponentModel.TypeConverterAttribute> to the `Get`*PropertyName* accessor. Applying to the `get` instead of the `set` may seem nonintuitive; however, this convention can support the concept of read-only attachable members that are serializable, which is useful in designer scenarios.  
   
 #### The SetPropertyName Accessor  
- The signature for the Set*PropertyName* accessor must be:  
+
+The signature for the Set*PropertyName* accessor must be:  
   
- `public static void Set` *PropertyName* `(object`  `target` `, object`  `value` `)`  
+`public static void Set` *PropertyName* `(object`  `target` `, object`  `value` `)`  
   
 - The `target` object can be specified as a more specific type in your implementation, with same logic and consequences as described in the previous section.  
   
 - The `value` object can be specified as a more specific type in your implementation.  
   
- Remember that the value for this method is the input coming from the XAML usage, typically in attribute form. From attribute form there must be value converter support for a text syntax, and you attribute on the `Get`*PropertyName* accessor.  
+Remember that the value for this method is the input coming from the XAML usage, typically in attribute form. From attribute form there must be value converter support for a text syntax, and you attribute on the `Get`*PropertyName* accessor.  
   
 ### Attachable Member Stores  
  The accessor methods are typically not enough to provide a means to place attachable member values into an object graph, or to retrieve values out of the object graph and serialize them properly. To provide this functionality, the `target` objects in the previous accessor signatures must be capable of storing values. The storage mechanism should be consistent with the attachable member principle that the member is attachable to targets where the attachable member is not in the members list. .NET Framework XAML Services provides an implementation technique for attachable member stores through the APIs <xref:System.Xaml.IAttachedPropertyStore> and <xref:System.Xaml.AttachablePropertyServices>. <xref:System.Xaml.IAttachedPropertyStore> is used by the XAML writers to discover the store implementation, and should be implemented on the type that is the `target` of the accessors. The static <xref:System.Xaml.AttachablePropertyServices> APIs are used within the body of the accessors, and refer to the attachable member by its <xref:System.Xaml.AttachableMemberIdentifier>.  
   
 ## XAML-Related CLR Attributes  
- Correctly attributing your types, members, and assemblies is important in order to report XAML type system information to .NET Framework XAML Services. This is relevant if you intend your types for use with XAML systems that are directly based on .NET Framework XAML Services XAML readers and XAML writers, or if you define or use a XAML-utilizing framework that is based on those XAML readers and XAML writers.  
+
+Correctly attributing your types, members, and assemblies is important in order to report XAML type system information to .NET Framework XAML Services. Reporting XAML type system information is relevant if either of the following situations apply:
+ 
+- You intend your types for use with XAML systems that are directly based on .NET Framework XAML Services XAML readers and XAML writers.
+- You define or use a XAML-utilizing framework that's based on those XAML readers and XAML writers.  
   
- For a listing of each XAML-related attribute that is relevant for XAML support of your custom types, see [XAML-Related CLR Attributes for Custom Types and Libraries](clr-attributes-with-custom-types-and-libraries.md).  
+For a listing of each XAML-related attribute that's relevant for XAML support of your custom types, see [XAML-Related CLR Attributes for Custom Types and Libraries](clr-attributes-with-custom-types-and-libraries.md).  
   
 ## Usage  
  Usage of custom types requires that the markup author must map a prefix for the assembly and CLR namespace that contain the custom type. This procedure is not documented in this topic.  

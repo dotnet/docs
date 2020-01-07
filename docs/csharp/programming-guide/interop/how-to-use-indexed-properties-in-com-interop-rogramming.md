@@ -1,6 +1,5 @@
 ---
 title: "How to use indexed properties in COM interop programming - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "indexed properties [C#]"

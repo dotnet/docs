@@ -3,8 +3,6 @@ title: "XML Type Support Implementation Notes"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: 26b071f3-1261-47ef-8690-0717f5cd93c1
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # XML Type Support Implementation Notes
 This topic describes some implementation details that you want to be aware of.  

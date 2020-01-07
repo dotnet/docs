@@ -9,7 +9,6 @@ helpviewer_keywords:
   - "class library design guidelines [.NET Framework], enumerations"
   - "flags enumerations"
 ms.assetid: dd53c952-9d9a-4736-86ff-9540e815d545
-author: "KrzysztofCwalina"
 ---
 # Enum Design
 

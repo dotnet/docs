@@ -9,7 +9,6 @@ helpviewer_keywords:
   - "case sensitivity, capitalization conventions"
   - "names [.NET Framework], capitalization"
 ms.assetid: 4c4ea526-9203-486f-b72d-29d61c5b3c6d
-author: "KrzysztofCwalina"
 ---
 # Capitalization Conventions
 The guidelines in this chapter lay out a simple method for using case that, when applied consistently, make identifiers for types, members, and parameters easy to read.  

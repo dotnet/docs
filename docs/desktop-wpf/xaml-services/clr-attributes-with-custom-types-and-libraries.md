@@ -5,7 +5,8 @@ helpviewer_keywords:
   - "CLR attributes for custom types [XAML Services]"
 ms.assetid: 5dfb299a-b6e2-41b8-8694-e6ac987547f1
 ---
-# XAML-Related CLR Attributes for Custom Types and Libraries
+# XAML-related CLR attributes for custom types and libraries
+
 This topic describes the common language runtime (CLR) attributes that are defined by .NET Framework XAML Services. It also describes other CLR attributes that are defined in the .NET Framework that have a XAML-related scenario for application to assemblies or types. Attributing assemblies, types, or members with these CLR attributes provides XAML type system information related to your types. Information is provided to any XAML consumer that uses .NET Framework XAML Services for processing the XAML node stream directly or through the dedicated XAML readers and XAML writers.  
   
 ## XAML-Related CLR Attributes for Custom Types and Custom Members  
@@ -22,7 +23,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  <xref:System.Windows.Markup.AmbientAttribute> indicates that the property, or all properties that take the attributed type, should be interpreted under the ambient property concept in XAML. The ambient concept relates to how XAML processors determine type owners of members. An ambient property is a property where the value is expected to be available in the parser context when creating an object graph, but where typical type-member lookup is suspended for the immediate XAML node set being created.  
   
- The ambient concept can be applied to attachable members, which are not represented as properties in terms of how CLR attribution defines <xref:System.AttributeTargets>. The method attribution usage should be applied only in the case of a `get` accessor that supports attachable usage for XAML.  
+ The ambient concept can be applied to attachable members, which are not represented as properties in terms of how CLR attribution defines <xref:System.AttributeTargets>. The method attribution usage should be applied only for a `get` accessor that supports attachable usage for XAML.  
   
 ### ConstructorArgumentAttribute  
  **Reference Documentation:**  <xref:System.Windows.Markup.ConstructorArgumentAttribute>  
@@ -53,7 +54,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  **Arguments:** A <xref:System.Type> that specifies the type to use as the content wrapper type for foreign content.  
   
- <xref:System.Windows.Markup.ContentWrapperAttribute> specifies one or more types on the associated collection type that will be used to wrap foreign content. Foreign content refers to cases where the type system constraints on the type of the content property do not capture all of the possible content cases that XAML usage for the owning type would support. For example, XAML support for content of a particular type might support strings in a strongly typed generic <xref:System.Collections.ObjectModel.Collection%601>. Content wrappers are useful for migrating preexisting markup conventions into XAML's conception of assignable values for collections, such as migrating text-related content models.  
+ <xref:System.Windows.Markup.ContentWrapperAttribute> specifies one or more types on the associated collection type that will be used to wrap foreign content. Foreign content refers to cases where the type system constraints on the type of the content property do not capture all of the possible content cases that XAML usage for the owning type would support. For example, XAML support for content of a particular type might support strings in a strongly typed generic <xref:System.Collections.ObjectModel.Collection%601>. Content wrappers are useful for migrating pre-existing markup conventions into XAML's conception of assignable values for collections, such as migrating text-related content models.  
   
  To specify more than one content wrapper type, apply the attribute multiple times.  
   
@@ -119,7 +120,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  <xref:System.ComponentModel.TypeConverterAttribute> in a XAML context references a custom <xref:System.ComponentModel.TypeConverter>. This <xref:System.ComponentModel.TypeConverter> provides type conversion behavior for custom types, or members of that type.  
   
- You apply the <xref:System.ComponentModel.TypeConverterAttribute> attribute to your type, referencing your type converter implementation. You can define type converters for XAML on classes, structures, or interfaces. You do not need to provide type conversion for enumerations, that conversion is enabled natively.  
+ Apply the <xref:System.ComponentModel.TypeConverterAttribute> attribute to your type, referencing your type converter implementation. You can define type converters for XAML on classes, structures, or interfaces. You do not need to provide type conversion for enumerations, that conversion is enabled natively.  
   
  Your type converter should be able to convert from a string that is used for attributes or initialization text in markup, into your intended destination type. For more information, see [TypeConverters and XAML](../../framework/wpf/advanced/typeconverters-and-xaml.md).  
   
@@ -127,7 +128,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  A type converter behavior for XAML usage of a custom attachable member can be assigned by applying <xref:System.ComponentModel.TypeConverterAttribute> to the `get` method accessor that supports the XAML usage.  
   
- Similar to <xref:System.ComponentModel.TypeConverter>, <xref:System.ComponentModel.TypeConverterAttribute> existed in the .NET Framework prior to the existence of XAML, and the type converter model served other purposes. In order to reference and use <xref:System.ComponentModel.TypeConverterAttribute>, you must fully qualify it or provide a `using` statement for <xref:System.ComponentModel>. You must also include the System assembly in your project.  
+ Similar to <xref:System.ComponentModel.TypeConverter>, <xref:System.ComponentModel.TypeConverterAttribute> existed in the .NET Framework prior to the existence of XAML, and the type converter model served other purposes. In order to reference and use <xref:System.ComponentModel.TypeConverterAttribute>, you must fully qualify it or provide a `using` statement for <xref:System.ComponentModel>. Also include the System assembly in your project.  
   
 ### UidPropertyAttribute  
  **Reference Documentation:**  <xref:System.Windows.Markup.UidPropertyAttribute>  
@@ -143,9 +144,9 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  **Applies to:** Class  
   
- **Arguments:** A Boolean. If used for the attribute's intended purpose, this should always be specified as `true`.  
+ **Arguments:** A Boolean. If used for the attribute's intended purpose, the value should be set to `true`.  
   
- Indicates whether this type is built top-down during XAML object graph creation. This is an advanced concept, which is probably closely related to the definition of your programming model. For more information, see <xref:System.Windows.Markup.UsableDuringInitializationAttribute>.  
+ Indicates whether the type is built top-down during XAML object graph creation. This is an advanced concept, which is probably closely related to the definition of your programming model. For more information, see <xref:System.Windows.Markup.UsableDuringInitializationAttribute>.  
   
 ### ValueSerializerAttribute  
  **Reference Documentation:**  <xref:System.Windows.Markup.ValueSerializerAttribute>  
@@ -154,7 +155,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  **Arguments:** A <xref:System.Type> that specifies the value serializer support class to use when serializing all properties of the attributed type, or the specific attributed property.  
   
- <xref:System.Windows.Markup.ValueSerializer> specifies a value serialization class that requires more state and context than a <xref:System.ComponentModel.TypeConverter> does. <xref:System.Windows.Markup.ValueSerializer> can be associated with an attachable member by applying the <xref:System.Windows.Markup.ValueSerializerAttribute> attribute on the static `get` accessor method for the attachable member. Value serialization is also applicable for enumerations, interfaces and structures, but not for delegates.  
+ <xref:System.Windows.Markup.ValueSerializer> specifies a value serialization class that requires more state and context than a <xref:System.ComponentModel.TypeConverter> does. <xref:System.Windows.Markup.ValueSerializer> can be associated with an attachable member by applying the <xref:System.Windows.Markup.ValueSerializerAttribute> attribute on the static `get` accessor method for the attachable member. Value serialization is also applicable for enumerations, interfaces, and structures, but not for delegates.  
   
 ### WhitespaceSignificantCollectionAttribute  
  **Reference Documentation:**  <xref:System.Windows.Markup.WhitespaceSignificantCollectionAttribute>  
@@ -199,7 +200,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  **Arguments:** A string that specifies the name of the property to alias to `xml:lang` on the attributed type.  
   
- <xref:System.Windows.Markup.XmlLangPropertyAttribute> reports a property of the attributed type that maps to the XML `lang` directive. The property is not necessarily of type <xref:System.String>, but must be assignable from a string (this could be accomplished by associating a type converter with the property's type, or with the specific property). The property must be read/write.  
+ <xref:System.Windows.Markup.XmlLangPropertyAttribute> reports a property of the attributed type that maps to the XML `lang` directive. The property is not necessarily of type <xref:System.String> but must be assignable from a string (assignment could be accomplished by associating a type converter with the property's type or with the specific property). The property must be read/write.  
   
  The scenario for mapping `xml:lang` is so that a runtime object model has access to XML-specified language information without specifically processing with an XMLDOM.  
   
@@ -238,7 +239,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
 - You define a CLR namespace in the assembly, and you want it to be accessible through more than one XAML namespace. This scenario occurs when you are supporting multiple vocabularies with the same codebase.  
   
-- You define XAML language support in one or more CLR namespaces. For these, the <xref:System.Windows.Markup.XmlnsDefinitionAttribute.XmlNamespace%2A> value should be `http://schemas.microsoft.com/winfx/2006/xaml`.  
+- You define XAML language support in one or more CLR namespaces. In this case, the <xref:System.Windows.Markup.XmlnsDefinitionAttribute.XmlNamespace%2A> value should be `http://schemas.microsoft.com/winfx/2006/xaml`.  
   
 ### XmlnsPrefixAttribute  
  **Reference Documentation:**  <xref:System.Windows.Markup.XmlnsPrefixAttribute>  
@@ -253,7 +254,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  More than one <xref:System.Windows.Markup.XmlnsPrefixAttribute> can be applied to an assembly. This might be done for any combination of the following reasons:  
   
-- Your assembly defines types for more than one XAML namespace. In this case you should define different prefix values for each XAML namespace.  
+- Your assembly defines types for more than one XAML namespace. In this case, define different prefix values for each XAML namespace.  
   
 - You are supporting multiple vocabularies, and you use different prefixes for each vocabulary and XAML namespace.  
   

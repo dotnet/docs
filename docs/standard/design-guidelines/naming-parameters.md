@@ -6,7 +6,6 @@ helpviewer_keywords:
   - "parameters, names"
   - "names [.NET Framework], parameters"
 ms.assetid: ca3c956e-725a-441b-b4e3-eab5d472f41c
-author: "KrzysztofCwalina"
 ---
 # Naming Parameters
 Beyond the obvious reason of readability, it is important to follow the guidelines for parameter names because parameters are displayed in documentation and in the designer when visual design tools provide Intellisense and class browsing functionality.  

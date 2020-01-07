@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 76ee440b-d134-4f8f-8262-b917ad6dcbf6
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Perform an XSLT Transformation by Using an Assembly
 The XSLT compiler (xsltc.exe) compiles XSLT style sheets and generates an assembly. The assembly can be passed directly into the <xref:System.Xml.Xsl.XslCompiledTransform.Load%28System.Type%29?displayProperty=nameWithType> method.  

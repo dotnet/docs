@@ -2,7 +2,6 @@
 title: "Tutorial: Create a .NET Core solution in macOS using Visual Studio Code"
 description: This document provides the steps and workflow to create a .NET Core Solution using Visual Studio Code.
 ms.date: 12/19/2019
-ms.custom: seodec18
 ---
 # Tutorial: Create a .NET Core solution in macOS using Visual Studio Code
 

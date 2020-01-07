@@ -11,7 +11,8 @@ ms.assetid: 0e11f386-808c-4eae-9ba6-029ad7ba2211
 This topic describes the capabilities of a technology set known as .NET Framework XAML Services. The majority of the services and APIs described are located in the assembly System.Xaml, which is an assembly introduced with the .NET Framework 4 set of .NET core assemblies. Services include readers and writers, schema classes and schema support, factories, attributing of classes, XAML language intrinsic support, and other XAML language features.  
   
 ## About This Documentation  
- Conceptual documentation for .NET Framework XAML Services assumes that you have previous experience with the XAML language and how it might apply to a specific framework, for example Windows Presentation Foundation (WPF) or Windows Workflow Foundation, or a specific technology feature area, for example the build customization features in <xref:Microsoft.Build.Framework.XamlTypes>. This documentation does not attempt to explain the basics of XAML as a markup language, XAML syntax terminology, or other introductory material. Instead, this documentation focuses on specifically using the .NET Framework XAML Services that are enabled in the System.Xaml assembly library. Most of these APIs are for scenarios of XAML language integration and extensibility. This might include any of the following:  
+
+Conceptual documentation for .NET Framework XAML Services assumes that you have previous experience with the XAML language and how it might apply to a specific framework, for example Windows Presentation Foundation (WPF) or Windows Workflow Foundation, or a specific technology feature area, for example the build customization features in <xref:Microsoft.Build.Framework.XamlTypes>. This documentation does not attempt to explain the basics of XAML as a markup language, XAML syntax terminology, or other introductory material. Instead, this documentation focuses on specifically using the .NET Framework XAML Services that are enabled in the System.Xaml assembly library. Most of these APIs are for scenarios of XAML language integration and extensibility. This might include any of the following scenarios:  
   
 - Extending the capabilities of the base XAML readers or XAML writers (processing the XAML node stream directly; deriving your own XAML reader or XAML writer).  
   
@@ -21,13 +22,13 @@ This topic describes the capabilities of a technology set known as .NET Framewor
   
 - Writing XAML value converters (markup extensions; type converters for custom types).  
   
-- Defining a custom XAML schema context (using alternate assembly-loading techniques for backing type sources; using known-types lookup techniques instead of always reflecting assemblies; using loaded assembly concepts that do not use the CLR `AppDomain` and its associated security model).  
+- Defining a custom XAML schema context (using alternate assembly-loading techniques for backing type sources; using known-types lookup techniques instead of always reflecting assemblies; using loaded assembly concepts that do not use the common language runtime (CLR) `AppDomain` and its associated security model).  
   
 - Extending the base XAML type system.  
   
 - Using the `Lookup` or `Invoker` techniques to influence the XAML type system and how type backings are evaluated.  
   
- If you are looking for introductory material on XAML as a language, you might try [XAML Overview (WPF)](../fundamentals/xaml.md). That topic discusses XAML for an audience that is new both to Windows Presentation Foundation (WPF) and also to using XAML markup and XAML language features. Another useful document is the introductory material in the [XAML language specification](https://docs.microsoft.com/previous-versions/msp-n-p/ff650760(v=pandp.10)).  
+If you are looking for introductory material on XAML as a language, you might try [XAML Overview (WPF)](../fundamentals/xaml.md). That topic discusses XAML for an audience that is new both to Windows Presentation Foundation (WPF) and also to using XAML markup and XAML language features. Another useful document is the introductory material in the [XAML language specification](https://docs.microsoft.com/previous-versions/msp-n-p/ff650760(v=pandp.10)).  
   
 ## .NET Framework XAML Services and System.Xaml in the .NET Architecture  
  In previous versions of Microsoft .NET Framework, support for XAML language features was implemented by frameworks that built on Microsoft .NET Framework (Windows Presentation Foundation (WPF)), Windows Workflow Foundation and Windows Communication Foundation (WCF)), and therefore varied in its behavior and the API used depending on which specific framework you were using. This included the XAML parser and its object graph creation mechanism, XAML language intrinsics, serialization support, and so on.  
@@ -55,7 +56,7 @@ This topic describes the capabilities of a technology set known as .NET Framewor
   
 - Pass the resulting nodes from the XAML node stream to a <xref:System.Xaml.XamlObjectWriter> API. <xref:System.Xaml.XamlObjectWriter> is a <xref:System.Xaml.XamlWriter> subclass.  
   
-- The <xref:System.Xaml.XamlObjectWriter> writes an object graph, one object at a time, in accordance to progress through the source XAML node stream. This is done with the assistance of a XAML schema context and an implementation that can access the assemblies and types of a backing type system and framework.  
+- The <xref:System.Xaml.XamlObjectWriter> writes an object graph, one object at a time, in accordance to progress through the source XAML node stream. Object writing is done with the assistance of a XAML schema context and an implementation that can access the assemblies and types of a backing type system and framework.  
   
 - Call <xref:System.Xaml.XamlObjectWriter.Result%2A> at the end of the XAML node stream to obtain the root object of the object graph.  
   
@@ -95,7 +96,7 @@ This topic describes the capabilities of a technology set known as .NET Framewor
   
  APIs such as <xref:System.Xaml.XamlType.GetAllMembers%2A> and <xref:System.Xaml.XamlType.GetMember%2A> and <xref:System.Xaml.XamlMember.DeclaringType%2A> report the relationships between a <xref:System.Xaml.XamlType> and <xref:System.Xaml.XamlMember>.  
   
- The default behavior of the XAML type system as implemented by .NET Framework XAML Services is based on the common language runtime (CLR), and static analysis of CLR types in assemblies by using reflection. Therefore, for a specific CLR type, the default implementation of the XAML type system can expose the XAML schema of that type and its members and report it in terms of the XAML type system. In the default XAML type system, the concept of assignability of types is mapped onto CLR inheritance, and the concepts of instances, value types and so on are also mapped to the supporting behaviors and features of the CLR.  
+ The default behavior of the XAML type system as implemented by .NET Framework XAML Services is based on the common language runtime (CLR), and static analysis of CLR types in assemblies by using reflection. Therefore, for a specific CLR type, the default implementation of the XAML type system can expose the XAML schema of that type and its members and report it in terms of the XAML type system. In the default XAML type system, the concept of assignability of types is mapped onto CLR inheritance, and the concepts of instances, value types, and so on, are also mapped to the supporting behaviors and features of the CLR.  
   
 ## Reference for XAML Language Features  
  To support XAML, .NET Framework XAML Services provides specific implementation of XAML language concepts as defined for the XAML language XAML namespace. These are documented as specific reference pages. The language features are documented from the perspective of how these language features behave when they are processed by a XAML reader or XAML writer that is defined by .NET Framework XAML Services. For more information, see [XAML Namespace (x:) Language Features](namespace-language-features.md).

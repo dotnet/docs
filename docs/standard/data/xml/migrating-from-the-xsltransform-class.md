@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 9404d758-679f-4ffb-995d-3d07d817659e
-author: "mairaw"
-ms.author: "mairaw"
 ---
 
 # Migrating From the XslTransform Class

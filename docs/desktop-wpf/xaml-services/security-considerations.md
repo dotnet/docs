@@ -6,8 +6,9 @@ helpviewer_keywords:
   - "XAML security [XAML Services]"
 ms.assetid: 544296d4-f38e-4498-af49-c9f4dad28964
 ---
-# XAML Security Considerations
-This topic describes best practices for security in applications when you use XAML and .NET Framework XAML Services API.  
+# XAML security considerations
+
+This article describes best practices for security in applications when you use XAML and .NET Framework XAML Services API.  
   
 ## Untrusted XAML in Applications  
  In the most general sense, untrusted XAML is any XAML source that your application did not specifically include or emit.  
@@ -21,7 +22,7 @@ This topic describes best practices for security in applications when you use XA
  In addition to its language-level capabilities, XAML is used for UI definition in many technologies. Loading untrusted XAML might mean loading a malicious spoofing UI.  
   
 ## Sharing Context Between Readers and Writers  
- The .NET Framework XAML Services architecture for XAML readers and XAML writers often requires sharing a XAML reader to a XAML writer, or a shared XAML schema context. Sharing objects or contexts might be required if you are writing XAML node loop logic, or providing a custom save path. You should not share XAML reader instances, nondefault XAML schema context, or settings for XAML reader/writer classes between trusted and untrusted code.  
+ The .NET Framework XAML Services architecture for XAML readers and XAML writers often requires sharing a XAML reader to a XAML writer, or a shared XAML schema context. Sharing objects or contexts might be required if you are writing XAML node loop logic, or providing a custom save path. Don't share XAML reader instances, nondefault XAML schema context, or settings for XAML reader/writer classes between trusted and untrusted code.  
   
  Most scenarios and operations involving XAML object writing for a CLR-based type backing can just use default XAML schema context. The default XAML schema context does not explicitly include settings that could compromise full trust. It is thus safe to share context between trusted and untrusted XAML reader/writer components. However, if you do this, it is still a best practice to keep such readers and writers in separate <xref:System.AppDomain> scopes, with one of them specifically intended/sandboxed for partial trust.  
   

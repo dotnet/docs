@@ -23,6 +23,6 @@ Automated ML is currently limited to the machine learning [tasks](resources/task
 
 There are three ways to use automated ML:
 
-- With a graphical user interface, using the [ML.NET Model Builder](automate-training-with-model-builder.md)
-- On the command line, with the [ML.NET CLI](automate-training-with-cli.md)
-- Via an application, with the [automated ML API](how-to-guides/how-to-use-the-automl-api.md)
+1. With a graphical user interface, with the [ML.NET Model Builder](automate-training-with-model-builder.md)
+1. On the command line, with the [ML.NET CLI](automate-training-with-cli.md)
+1. Via an application, with the [automated ML API](how-to-guides/how-to-use-the-automl-api.md)

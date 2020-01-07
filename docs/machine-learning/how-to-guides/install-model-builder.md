@@ -36,8 +36,8 @@ ML.NET Model builder can be installed either through the Visual Studio Marketpla
 
 ### Visual Studio Marketplace
 
-1. Download from [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=MLNET.07).
-1. Follow prompts to install onto respective Visual Studio version.
+1. Download from [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=MLNET.07)
+1. Follow prompts to install onto respective Visual Studio version
 
 ### Visual Studio 2017
 

@@ -210,7 +210,7 @@ Once the objects in the pipeline have been created, data can be used to train th
 
 Calling `Fit()` uses the input training data to estimate the parameters of the model. This is known as training the model. Remember, the linear regression model above had two model parameters: **bias** and **weight**. After the `Fit()` call, the values of the parameters are known. Most models will have many more parameters than this.
 
-You can learn more about model training in [How to train your model](./how-to-guides/train-machine-learning-model-ml-net.md).
+You can learn more about model training in [How to train your model](./how-to-guides/train-machine-learning-model-ml-net.md)
 
 The resulting model object implements the <xref:Microsoft.ML.ITransformer> interface. That is, the model transforms input data into predictions.
 

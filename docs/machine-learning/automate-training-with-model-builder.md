@@ -68,6 +68,10 @@ You can use the price prediction template for your scenario if you want to predi
 
 This scenario is a special case of multiclass classification, where the input data to be categorized is a set of images.
 
+Image classification can be used to identify images of different types. For example, different types of terrain or animals or manufacturing defects.
+
+You can use the image classification template for your scenario if you have a set of images, and you want to classify the images into different types.
+
 #### Custom scenario
 
 The custom scenario allows you to manually choose your scenario.
@@ -77,6 +81,10 @@ The custom scenario allows you to manually choose your scenario.
 Once you have chosen your scenario, Model Builder asks you to provide a dataset. The data is used to train, evaluate, and choose the best model for your scenario.
 
 ![Diagram showing Model Builder steps](media/model-builder-steps.png)
+
+Model Builder supports datasets in .tsv, .csv, .txt formats, as well as SQL database format. If you have a .txt file, columns should be separated with `,`, `;` or `/t` and the file must have a header row.
+
+If the dataset is made up of images, the supported file types are `.jpg` and `.png`.
 
 ### Choose the output to predict (label)
 
@@ -124,7 +132,7 @@ Model Builder uses AutoML to explore multiple models to find you the best perfor
 
 Longer training periods allow AutoML to explore more models with a wider range of settings.
 
-The table below summarizes the average time taken to get good performance for a suite of example datasets.
+The table below summarizes the average time taken to get good performance for a suite of example datasets, on a local machine.
 
 |Dataset size|Average time to train|
 |------------|---------------------|
@@ -133,6 +141,13 @@ The table below summarizes the average time taken to get good performance for a 
 |100 - 500 MB|30 min|
 |500 - 1 GB|60 min|
 |1 GB+|3+ hours|
+
+These numbers are a guide only. The exact length of training is dependent on:
+
+- the number of features (columns) being used to as input to the model
+- the type of columns
+- the ML task
+- the CPU, disk and memory performance of the machine used for training
 
 ## Evaluate
 

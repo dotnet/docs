@@ -164,9 +164,8 @@ The default metric for Multi-class classification is Micro Accuracy. The closer 
 
 Another important metric for Multi-class classification is Macro-accuracy, similar to Micro-accuracy the closer to 1.0 the better it is. A good way to think about these two types of accuracy is:
 
-Micro-accuracy -- how often does an incoming ticket get classified to the right team?
-
-Macro-accuracy -- for an average team, how often is an incoming ticket correct for their team?
+- Micro-accuracy: How often does an incoming ticket get classified to the right team?
+- Macro-accuracy: For an average team, how often is an incoming ticket correct for their team?
 
 ### More information on evaluation metrics
 

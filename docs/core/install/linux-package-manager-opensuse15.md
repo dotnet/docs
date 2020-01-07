@@ -3,7 +3,7 @@ title: Install .NET Core on openSUSE 15 - package manager - .NET Core
 description: Use a package manager to install .NET Core SDK and runtime on openSUSE 15.
 author: thraka
 ms.author: adegeo
-ms.date: 12/04/2019
+ms.date: 12/26/2019
 ---
 
 # openSUSE 15 Package Manager - Install .NET Core
@@ -16,9 +16,9 @@ This article describes how to use a package manager to install .NET Core on open
 
 Before installing .NET, you'll need to:
 
-- Register the Microsoft key
-- register the product repository
-- Install required dependencies
+- Register the Microsoft key.
+- Register the product repository.
+- Install required dependencies.
 
 This only needs to be done once per machine.
 
@@ -32,6 +32,14 @@ sudo mv prod.repo /etc/zypp/repos.d/microsoft-prod.repo
 sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 ```
 
+## Dependency error with .NET Core 3.1
+
+The .NET Core 3.1 package feed for openSUSE has a problem with the **krb5** dependency. Use the following command to install the correct dependencies prior to installing .NET Core 3.1 or ASP.NET Core 3.1.
+
+```bash
+sudo zypper install https://packages.microsoft.com/opensuse/15/prod/dotnet-runtime-deps-3.1.0-opensuse.42-x64.rpm
+```
+
 ## Install the .NET Core SDK
 
 Update the products available for installation, then install the .NET Core SDK. In your terminal, run the following command.
@@ -39,6 +47,13 @@ Update the products available for installation, then install the .NET Core SDK. 
 ```bash
 sudo zypper install dotnet-sdk-3.1
 ```
+
+> [!IMPORTANT]
+> The .NET Core 3.1 package feed for openSUSE has a problem with the **krb5** dependency. Use the following command to install the correct dependencies, then install the .NET Core 3.1 SDK.
+>
+> ```bash
+> sudo zypper install https://packages.microsoft.com/opensuse/15/prod/dotnet-runtime-deps-3.1.0-opensuse.42-x64.rpm
+> ```
 
 ## Install the ASP.NET Core runtime
 
@@ -48,6 +63,13 @@ Update the products available for installation, then install the ASP.NET runtime
 sudo zypper install aspnetcore-runtime-3.1
 ```
 
+> [!IMPORTANT]
+> The .NET Core 3.1 package feed for openSUSE has a problem with the **krb5** dependency. Use the following command to install the correct dependencies, then install the ASP.NET Core 3.1 runtime.
+>
+> ```bash
+> sudo zypper install https://packages.microsoft.com/opensuse/15/prod/dotnet-runtime-deps-3.1.0-opensuse.42-x64.rpm
+> ```
+
 ## Install the .NET Core runtime
 
 Update the products available for installation, then install the .NET Core runtime. In your terminal, run the following command.
@@ -55,6 +77,13 @@ Update the products available for installation, then install the .NET Core runti
 ```bash
 sudo zypper install dotnet-runtime-3.1
 ```
+
+> [!IMPORTANT]
+> The .NET Core 3.1 package feed for openSUSE has a problem with the **krb5** dependency. Use the following command to install the correct dependencies, then install the .NET Core 3.1 runtime.
+>
+> ```bash
+> sudo zypper install https://packages.microsoft.com/opensuse/15/prod/dotnet-runtime-deps-3.1.0-opensuse.42-x64.rpm
+> ```
 
 ## How to install other versions
 

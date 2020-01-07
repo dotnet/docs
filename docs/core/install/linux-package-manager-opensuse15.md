@@ -34,7 +34,7 @@ sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 
 ## Dependency error with .NET Core 3.1
 
-The .NET Core 3.1 package feed for openSUSE has a problem with the **krb5** dependency. Use the following command to install the correct dependencies prior to installing  .NET Core 3.1 or ASP.NET Core 3.1.
+The .NET Core 3.1 package feed for openSUSE has a problem with the **krb5** dependency. Use the following command to install the correct dependencies prior to installing .NET Core 3.1 or ASP.NET Core 3.1.
 
 ```bash
 sudo zypper install https://packages.microsoft.com/opensuse/15/prod/dotnet-runtime-deps-3.1.0-opensuse.42-x64.rpm

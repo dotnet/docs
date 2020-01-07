@@ -20,6 +20,8 @@ dotnet migrate [-h|--help]
 
 ## Description
 
+This command is deprecated. It is no longer available in and after .NET Core 3.x SDK. It can only migrate a Preview 2 .NET Core project to a 1.x .NET Core project which is currently out of support.
+
 The `dotnet migrate` command migrates a valid Preview 2 *project.json*-based project to a valid .NET Core SDK-style *csproj* project.
 
 By default, the command migrates the root project and any project references that the root project contains. This behavior is disabled using the `--skip-project-references` option at runtime.

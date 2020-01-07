@@ -9,6 +9,9 @@ If you're migrating an app from .NET Framework to .NET Core, the breaking change
 
 Breaking changes are grouped by category.
 
+> [!NOTE]
+> This article is not a complete list of breaking changes between .NET Framework and .NET Core. The most important breaking changes are added here as we become aware of them.
+
 ## CoreFx
 
 [!INCLUDE[Process.Start changes](~/includes/core-changes/corefx/2.1/process-start-changes.md)]

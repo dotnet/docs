@@ -497,15 +497,22 @@ In the preceding example scenario, both approaches cause the `WindSpeed` propert
 ```
 
 > [!IMPORTANT]
-> Polymorphic serialization is supported only for the root object to be serialized, not for properties of that root object. 
+> These approaches provide polymorphic serialization only for the root object to be serialized, not for properties of that root object. 
 
-It's not possible to call `GetType` for lower-level objects, but you can get polymorphic serialization for them if you define them as type `Object`. For example, suppose your `WeatherForecast` class has a property named `PreviousForecast` that can be defined as type `WeatherForecast` or `Object`:
+You can get polymorphic serialization for lower-level objects if you define them as type `Object`. For example, suppose your `WeatherForecast` class has a property named `PreviousForecast` that can be defined as type `WeatherForecast` or `Object`:
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/WeatherForecast.cs?name=SnippetWFWithPrevious)]
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/WeatherForecast.cs?name=SnippetWFWithPreviousAsObject)]
 
-If the `PreviousForecast` property contains an instance of `WeatherForecastDerived`, the JSON output from serialization includes `WindSpeed` **only if `PreviousForecast` is defined as `Object`**:
+If the `PreviousForecast` property contains an instance of `WeatherForecastDerived`:
+
+* The JSON output from serializing `WeatherForecastWithPreview` doesn't include `WindSpeed`.
+* The JSON output from serializing `WeatherForecastWithPreviewAsObject` includes `WindSpeed`.
+
+To serialize `WeatherForecastWithPreviousAsObject`, it isn't necessary to call `Serialize<object>` or `GetType` because the root object isn't the one that may be of a derived type:
+
+[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/SerializePolymorphic.cs?name=SnippetSerializeGetTypeSecondLevel)]
 
 ```json
 {

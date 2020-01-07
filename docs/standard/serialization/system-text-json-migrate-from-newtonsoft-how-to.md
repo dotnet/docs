@@ -175,9 +175,9 @@ Register this custom converter by [using an attribute](system-text-json-converte
 
 To support a dictionary with an integer or some other type as the key, create a converter like the example in [How to write custom converters](system-text-json-converters-how-to.md#support-dictionary-with-non-string-key).
 
-### Polymorphic deserialization
+### Polymorphic serialization
 
-`Newtonsoft.Json` automatically does polymorphic serialization. For information about the limited polymorphic serialization capabilities of <xref:System.Text.Json> See [Serialize properties of derived classes](system-text-json-how-to.md#serialize-properties-of-derived-classes).
+`Newtonsoft.Json` automatically does polymorphic serialization. For information about the limited polymorphic serialization capabilities of <xref:System.Text.Json>, see [Serialize properties of derived classes](system-text-json-how-to.md#serialize-properties-of-derived-classes).
 
 The workaround described there is to define properties that may contain derived classes as type `Object`. If that isn't possible, another option is to create a converter with a `Write` method like the example in [How to write custom converters](system-text-json-converters-how-to.md#support-polymorphic-deserialization).
 

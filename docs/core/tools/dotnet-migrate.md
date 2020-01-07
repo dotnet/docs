@@ -1,7 +1,7 @@
 ---
 title: dotnet migrate command
 description: The dotnet migrate command migrates a project and all of its dependencies.
-ms.date: 08/08/2019
+ms.date: 01/07/2020
 ---
 # dotnet migrate
 
@@ -20,7 +20,7 @@ dotnet migrate [-h|--help]
 
 ## Description
 
-This command is deprecated. The `dotnet migrate` command is no longer available starting with .NET Core 3.0 SDK. It can only migrate a Preview 2 .NET Core project to a 1.x .NET Core project which is currently out of support.
+This command is deprecated. The `dotnet migrate` command is no longer available starting with .NET Core 3.0 SDK. It can only migrate a Preview 2 .NET Core project to a 1.x .NET Core project, which is out of support.
 
 By default, the command migrates the root project and any project references that the root project contains. This behavior is disabled using the `--skip-project-references` option at runtime.
 

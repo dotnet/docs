@@ -45,32 +45,21 @@ During deserialization, `Newtonsoft.Json` ignores comments in the JSON by defaul
 
 During deserialization, `Newtonsoft.Json` ignores trailing commas by default. It also ignores multiple trailing commas (for example, `[{"Color":"Red"},{"Color":"Green"},,]`). The <xref:System.Text.Json> default is to throw exceptions for trailing commas because the [RFC 8259](https://tools.ietf.org/html/rfc8259) specification doesn't include them. For information about how to allow trailing commas, see [Allow comments and trailing commas](system-text-json-how-to.md#allow-comments-and-trailing-commas). There's no way to allow multiple trailing commas.
 
-### Property names
+### JSON strings
 
-During deserialization, `Newtonsoft.Json` accepts property names surrounded by double quotes, single quotes, or without quotes. For example:
+During deserialization, `Newtonsoft.Json` accepts property names surrounded by double quotes, single quotes, or without quotes. It accepts string values surrounded by double quotes or single quotes. For example:For example:
 
 ```json
 {
   "name1": "value",
   'name2': "value",
-  name3: "value"
+  name3: 'value'
 }
 ```
 
-`System.Text.Json` only accepts names in double quotes because that format is required by the [RFC 8259](https://tools.ietf.org/html/rfc8259) specification and is the only format considered valid JSON..
+`System.Text.Json` only accepts names and string values in double quotes because that format is required by the [RFC 8259](https://tools.ietf.org/html/rfc8259) specification and is the only format considered valid JSON.
 
-### String values
-
-During deserialization, `Newtonsoft.Json` accepts string values surrounded by double quotes or single quotes. For example:
-
-```json
-{
-  "name1": "value",
-  "name2': 'value'
-}
-```
-
-`System.Text.Json` only accepts strings in double quotes because that format is required by the [RFC 8259](https://tools.ietf.org/html/rfc8259) specification. A value enclosed in single quotes results in a [JsonException](xref:System.Text.Json.JsonException) with the following message:
+A value enclosed in single quotes results in a [JsonException](xref:System.Text.Json.JsonException) with the following message:
 
 ```
 ''' is an invalid start of a value.
@@ -179,7 +168,7 @@ To support a dictionary with an integer or some other type as the key, create a 
 
 `Newtonsoft.Json` automatically does polymorphic serialization. For information about the limited polymorphic serialization capabilities of <xref:System.Text.Json>, see [Serialize properties of derived classes](system-text-json-how-to.md#serialize-properties-of-derived-classes).
 
-The workaround described there is to define properties that may contain derived classes as type `Object`. If that isn't possible, another option is to create a converter with a `Write` method like the example in [How to write custom converters](system-text-json-converters-how-to.md#support-polymorphic-deserialization).
+The workaround described there is to define properties that may contain derived classes as type `Object`. If that isn't possible, another option is to create a converter with a `Write` for the whole type like the example in [How to write custom converters](system-text-json-converters-how-to.md#support-polymorphic-deserialization).
 
 ### Polymorphic deserialization
 
@@ -400,7 +389,9 @@ During deserialization, `Newtonsoft.Json` adds objects to a collection even if t
 
 ### IDisposable
 
-`JsonDocument` builds an in-memory view of the data into a pooled buffer. Therefore, unlike `JObject` or `JArray` from `Newtonsoft.Json`, the `JsonDocument` type implements `IDisposable` and needs to be used inside a using block.
+`JsonDocument` builds an in-memory view of the data into a pooled buffer. Therefore, unlike `JObject` or `JArray` from `Newtonsoft.Json`, the `JsonDocument` type implements `IDisposable` and needs to be used inside a using block. Only return a `JsonDocument` from your API if you want to transfer lifetime ownership and dispose responsibility to the caller. Otherwise, return a Cloned JsonElement.
+
+
 
 ### Read-only
 
@@ -408,7 +399,7 @@ The <xref:System.Text.Json> DOM can't add, remove, or modify JSON elements. It's
 
 * To build a `JsonDocument` from scratch (that is, without passing in an existing JSON payload to the `Parse` method), write the JSON text by using the `Utf8JsonWriter` and parse the output from that to make a new `JsonDocument`.
 * To modify an existing `JsonDocument`, use it to write JSON text, making changes while you write, and parse the output from that to make a new `JsonDocument`.
-* To merge existing JSON documents, see [this GitHub issue](https://github.com/dotnet/corefx/issues/42466#issuecomment-570475853).
+* To merge existing JSON documents, equivalent to the `JObject.Merge` or `JContainer.Merge` APIs from `Newtonsoft.Json`, see [this GitHub issue](https://github.com/dotnet/corefx/issues/42466#issuecomment-570475853).
 
 ### JsonElement
 

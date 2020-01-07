@@ -45,9 +45,9 @@ During deserialization, `Newtonsoft.Json` ignores comments in the JSON by defaul
 
 During deserialization, `Newtonsoft.Json` ignores trailing commas by default. It also ignores multiple trailing commas (for example, `[{"Color":"Red"},{"Color":"Green"},,]`). The <xref:System.Text.Json> default is to throw exceptions for trailing commas because the [RFC 8259](https://tools.ietf.org/html/rfc8259) specification doesn't include them. For information about how to allow trailing commas, see [Allow comments and trailing commas](system-text-json-how-to.md#allow-comments-and-trailing-commas). There's no way to allow multiple trailing commas.
 
-### JSON strings
+### JSON strings (property names and string values)
 
-During deserialization, `Newtonsoft.Json` accepts property names surrounded by double quotes, single quotes, or without quotes. It accepts string values surrounded by double quotes or single quotes. For example:For example:
+During deserialization, `Newtonsoft.Json` accepts property names surrounded by double quotes, single quotes, or without quotes. It accepts string values surrounded by double quotes or single quotes. For example:
 
 ```json
 {
@@ -57,7 +57,7 @@ During deserialization, `Newtonsoft.Json` accepts property names surrounded by d
 }
 ```
 
-`System.Text.Json` only accepts names and string values in double quotes because that format is required by the [RFC 8259](https://tools.ietf.org/html/rfc8259) specification and is the only format considered valid JSON.
+`System.Text.Json` only accepts property names and string values in double quotes because that format is required by the [RFC 8259](https://tools.ietf.org/html/rfc8259) specification and is the only format considered valid JSON.
 
 A value enclosed in single quotes results in a [JsonException](xref:System.Text.Json.JsonException) with the following message:
 
@@ -168,11 +168,11 @@ To support a dictionary with an integer or some other type as the key, create a 
 
 `Newtonsoft.Json` automatically does polymorphic serialization. For information about the limited polymorphic serialization capabilities of <xref:System.Text.Json>, see [Serialize properties of derived classes](system-text-json-how-to.md#serialize-properties-of-derived-classes).
 
-The workaround described there is to define properties that may contain derived classes as type `Object`. If that isn't possible, another option is to create a converter with a `Write` for the whole type like the example in [How to write custom converters](system-text-json-converters-how-to.md#support-polymorphic-deserialization).
+The workaround described there is to define properties that may contain derived classes as type `Object`. If that isn't possible, another option is to create a converter with a `Write` method for the whole inheritance type hierarchy like the example in [How to write custom converters](system-text-json-converters-how-to.md#support-polymorphic-deserialization).
 
 ### Polymorphic deserialization
 
-`Newtonsoft.Json` has a `TypeNameHandling` setting that adds type name metadata to the JSON while serializing. It uses the metadata while deserializing to do polymorphic deserialization. <xref:System.Text.Json> can do [polymorphic serialization](system-text-json-how-to.md#serialize-properties-of-derived-classes) but not polymorphic deserialization.
+`Newtonsoft.Json` has a `TypeNameHandling` setting that adds type name metadata to the JSON while serializing. It uses the metadata while deserializing to do polymorphic deserialization. <xref:System.Text.Json> can do a limited range of [polymorphic serialization](system-text-json-how-to.md#serialize-properties-of-derived-classes) but not polymorphic deserialization at all.
 
 To support polymorphic deserialization, create a converter like the example in [How to write custom converters](system-text-json-converters-how-to.md#support-polymorphic-deserialization).
 
@@ -389,8 +389,7 @@ During deserialization, `Newtonsoft.Json` adds objects to a collection even if t
 
 ### IDisposable
 
-`JsonDocument` builds an in-memory view of the data into a pooled buffer. Therefore, unlike `JObject` or `JArray` from `Newtonsoft.Json`, the `JsonDocument` type implements `IDisposable` and needs to be used inside a using block. Only return a `JsonDocument` from your API if you want to transfer lifetime ownership and dispose responsibility to the caller. Otherwise, return a Cloned JsonElement.
-
+`JsonDocument` builds an in-memory view of the data into a pooled buffer. Therefore, unlike `JObject` or `JArray` from `Newtonsoft.Json`, the `JsonDocument` type implements `IDisposable` and needs to be used inside a using block. Only return a `JsonDocument` from your API if you want to transfer lifetime ownership and dispose responsibility to the caller. Otherwise, return the `Clone` of the `RootElement`, which is a `JsonElement`.
 
 
 ### Read-only

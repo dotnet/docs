@@ -57,7 +57,51 @@ During deserialization, `Newtonsoft.Json` accepts property names surrounded by d
 }
 ```
 
-`System.Text.Json` only accepts names in double quotes because that format is required by the [RFC 8259](https://tools.ietf.org/html/rfc8259) specification.
+`System.Text.Json` only accepts names in double quotes because that format is required by the [RFC 8259](https://tools.ietf.org/html/rfc8259) specification and is the only format considered valid JSON..
+
+### String values
+
+During deserialization, `Newtonsoft.Json` accepts string values surrounded by double quotes or single quotes. For example:
+
+```json
+{
+  "name1": "value",
+  "name2': 'value'
+}
+```
+
+`System.Text.Json` only accepts strings in double quotes because that format is required by the [RFC 8259](https://tools.ietf.org/html/rfc8259) specification. A value enclosed in single quotes results in a [JsonException](xref:System.Text.Json.JsonException) with the following message:
+
+```
+''' is an invalid start of a value.
+```
+
+### Non-string values for string properties
+
+`Newtonsoft.Json` accepts non-string values, such as a number or the literals `true` and `false`, for deserialization to properties of type string. For example, here's an example of JSON that Newtonsoft.Json successfully deserializes to the following class:
+
+```json
+{
+  "String1": 1,
+  "String2": true,
+  "String3": false
+}
+```
+
+```csharp
+public class ExampleClass
+{
+    public string String1 { get; set; }
+    public string String2 { get; set; }
+    public string String3 { get; set; }
+}
+```
+
+`System.Text.Json` doesn't deserialize non-string values into string properties. A non-string value received for a string field results in a [JsonException](xref:System.Text.Json.JsonException) with the following message:
+
+```
+The JSON value could not be converted to System.String.
+```
 
 ### Converter registration precedence
 
@@ -130,6 +174,12 @@ Register this custom converter by [using an attribute](system-text-json-converte
 `Newtonsoft.Json` supports collections of type `Dictionary<TKey, TValue>`. The built-in support for dictionary collections in <xref:System.Text.Json> is limited to `Dictionary<string, TValue>`. That is, the key must be a string.
 
 To support a dictionary with an integer or some other type as the key, create a converter like the example in [How to write custom converters](system-text-json-converters-how-to.md#support-dictionary-with-non-string-key).
+
+### Polymorphic deserialization
+
+`Newtonsoft.Json` automatically does polymorphic serialization. For information about the limited polymorphic serialization capabilities of <xref:System.Text.Json> See [Serialize properties of derived classes](system-text-json-how-to.md#serialize-properties-of-derived-classes).
+
+The workaround described there is to define properties that may contain derived classes as type `Object`. If that isn't possible, another option is to create a converter with a `Write` method like the example in [How to write custom converters](system-text-json-converters-how-to.md#support-polymorphic-deserialization).
 
 ### Polymorphic deserialization
 
@@ -358,6 +408,7 @@ The <xref:System.Text.Json> DOM can't add, remove, or modify JSON elements. It's
 
 * To build a `JsonDocument` from scratch (that is, without passing in an existing JSON payload to the `Parse` method), write the JSON text by using the `Utf8JsonWriter` and parse the output from that to make a new `JsonDocument`.
 * To modify an existing `JsonDocument`, use it to write JSON text, making changes while you write, and parse the output from that to make a new `JsonDocument`.
+* To merge existing JSON documents, see [this GitHub issue](https://github.com/dotnet/corefx/issues/42466#issuecomment-570475853).
 
 ### JsonElement
 

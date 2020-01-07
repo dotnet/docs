@@ -475,7 +475,7 @@ In this scenario, the `WindSpeed` property is not serialized even if the `weathe
 
 This behavior is intended to help prevent accidental exposure of data in a derived runtime-created type.
 
-To serialize the properties of the derived type, use one of the following approaches:
+To serialize the properties of the derived type in the preceding example, use one of the following approaches:
 
 * Call an overload of <xref:System.Text.Json.JsonSerializer.Serialize%2A> that lets you specify the type at runtime:
 
@@ -489,14 +489,39 @@ In the preceding example scenario, both approaches cause the `WindSpeed` propert
 
 ```json
 {
+  "WindSpeed": 35,
   "Date": "2019-08-01T00:00:00-07:00",
   "TemperatureCelsius": 25,
-  "Summary": "Hot",
-  "WindSpeed": 35
+  "Summary": "Hot"
 }
 ```
 
-This section shows how to do **serialization**. For information about polymorphic **deserialization**, see [How to migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md#polymorphic-deserialization).
+> [!IMPORTANT]
+> Polymorphic serialization is supported only for the root object to be serialized, not for properties of that root object. 
+
+It's not possible to call `GetType` for lower-level objects, but you can get polymorphic serialization for them if you define them as type `Object`. For example, suppose your `WeatherForecast` class has a property named `PreviousForecast` that can be defined as type `WeatherForecast` or `Object`:
+
+[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/WeatherForecast.cs?name=SnippetWFWithPrevious)]
+
+[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/WeatherForecast.cs?name=SnippetWFWithPreviousAsObject)]
+
+If the `PreviousForecast` property contains an instance of `WeatherForecastDerived`, the JSON output from serialization includes `WindSpeed` **only if `PreviousForecast` is defined as `Object`**:
+
+```json
+{
+  "Date": "2019-08-01T00:00:00-07:00",
+  "TemperatureCelsius": 25,
+  "Summary": "Hot",
+  "PreviousForecast": {
+    "WindSpeed": 35,
+    "Date": "2019-08-01T00:00:00-07:00",
+    "TemperatureCelsius": 25,
+    "Summary": "Hot"
+  }
+}
+```
+
+For more information about polymorphic **serialization**, and for information about **deserialization**, see [How to migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md#polymorphic-serialization).
 
 ## Allow comments and trailing commas
 

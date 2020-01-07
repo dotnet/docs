@@ -131,7 +131,7 @@ The table below summarizes the average time taken to get good performance for a 
 |0 - 10 MB|10 sec|
 |10 - 100 MB|10 min|
 |100 - 500 MB|30 min|
-|500 - 1 GB||60 min|
+|500 - 1 GB|60 min|
 |1 GB+|3+ hours|
 
 ## Evaluate

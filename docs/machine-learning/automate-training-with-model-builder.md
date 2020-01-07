@@ -40,7 +40,7 @@ Binary classification is used to categorize data into two categories (yes/no; pa
 
 ![Diagram showing examples of binary classification including fraud detection, risk mitigation, and application screening](media/binary-classification-examples.png)
 
-Sentiment analysis can be used to predict positive or negative sentiment of customer feedback. It is an example of a binary classification model type.
+Sentiment analysis can be used to predict positive or negative sentiment of customer feedback. It is an example of the binary classification machine learning task.
 
 If your scenario requires classification into two categories, you can use this template with your own dataset.
 
@@ -50,7 +50,7 @@ Multiclass classification can be used to categorize data into three or more clas
 
 ![Examples of multiclass classification including document and product classification, support ticket routing, and customer issue prioritization](media/multiclass-classification-examples.png)
 
-Issue classification can be used to categorize customer feedback (for example, on GitHub) issues using the issue title and description. It is an example of the multi-class classification model type.
+Issue classification can be used to categorize customer feedback (for example, on GitHub) issues using the issue title and description. It is an example of the multi-class classification machine learning task.
 
 You can use the issue classification template for your scenario if you want to categorize data into three or more categories.
 
@@ -60,7 +60,7 @@ Regression is used to predict numbers.
 
 ![Diagram showing regression examples such as price prediction, sales forecasting, and predictive maintenance](media/regression-examples.png)
 
-Price prediction can be used to predict house prices using location, size, and other characteristics of the house. It is an example of a regression model type.
+Price prediction can be used to predict house prices using location, size, and other characteristics of the house. It is an example of the regression machine learning task.
 
 You can use the price prediction template for your scenario if you want to predict a numerical value with your own dataset.
 
@@ -74,7 +74,7 @@ The custom scenario allows you to manually choose your scenario.
 
 ## Data
 
-Once you have chosen your model type, Model Builder asks you to provide a dataset. The data is used to train, evaluate, and choose the best model for your scenario.
+Once you have chosen your scenario, Model Builder asks you to provide a dataset. The data is used to train, evaluate, and choose the best model for your scenario.
 
 ![Diagram showing Model Builder steps](media/model-builder-steps.png)
 
@@ -99,7 +99,7 @@ The label is the historical house price for that row of square footage, bedroom,
 
 If you don't have your own data yet, try out one of these datasets:
 
-|Scenario|Model Type|Data|Label|Features|
+|Scenario|ML task|Data|Label|Features|
 |-|-|-|-|-|
 |Price prediction|regression|[taxi fare data](https://github.com/dotnet/machinelearning-samples/blob/master/datasets/taxi-fare-train.csv)|Fare|Trip time, distance|
 |Anomaly detection|binary classification|[product sales data](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/AnomalyDetection_Sales/SpikeDetection/Data/product-sales.csv)|Product Sales|Month|

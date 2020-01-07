@@ -42,7 +42,7 @@ The installation scripts download the ZIP/tarball file from the CLI build drops 
 
 By default, the script adds the install location to the $PATH for the current session. Override this default behavior by specifying the `-NoPath|--no-path` argument.
 
-Before running the script, install the required [dependencies](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md).
+Before running the script, install the required [dependencies](../install/dependencies.md).
 
 You can install a specific version using the `-Version|--version` argument. The version must be specified as a three-part version (for example, `2.1.0`). If not provided, it uses the `latest` version. 
 

@@ -18,7 +18,7 @@ If you already have all the prerequisites, skip to the [build](windows-instructi
      * .NET desktop development
        * All Required Components
          * .NET Framework 4.6.1 Development Tools
-     * .NET Core cross-platform development	
+     * .NET Core cross-platform development
        * All Required Components
   3. Install **[Java 1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)**. 
      - Select the appropriate version for your operating system e.g., jdk-8u201-windows-x64.exe for Win x64 machine.
@@ -67,7 +67,6 @@ If you already have all the prerequisites, skip to the [build](windows-instructi
        ```powershell
        set PATH=%HADOOP_HOME%\bin;%PATH%
        ```
-
 
 Make sure you are able to run `dotnet`, `java`, `mvn`, `spark-shell` from your command-line before you move to the next section. Feel there is a better way? Please [open an issue](https://github.com/dotnet/spark/issues) and feel free to contribute.
 
@@ -141,8 +140,7 @@ You should see JARs created for the supported Spark versions:
         -a----        3/16/2019  12:00 AM          23552 Microsoft.Spark.Worker.xml
         -a----        3/16/2019  12:00 AM         332363 Microsoft.Spark.xml
         ------------------------------------------- More framework files -------------------------------------
-      ```
-     
+      ```     
 
 #### Using .NET Core CLI for .NET Core
 
@@ -168,8 +166,7 @@ You should see JARs created for the supported Spark versions:
         Microsoft.Spark -> C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark\Debug\netstandard2.0\Microsoft.Spark.dll
         Microsoft.Spark.Worker -> C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.Worker\Debug\netcoreapp2.1\win10-x64\Microsoft.Spark.Worker.dll
         Microsoft.Spark.Worker -> C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.Worker\Debug\netcoreapp2.1\win10-x64\publish\
-      ```
-    
+      ```    
 
   2. Build the samples.
 
@@ -190,8 +187,7 @@ You should see JARs created for the supported Spark versions:
         Microsoft.Spark -> C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark\Debug\netstandard2.0\Microsoft.Spark.dll
         Microsoft.Spark.CSharp.Examples -> C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.CSharp.Examples\Debug\netcoreapp2.1\win10-x64\Microsoft.Spark.CSharp.Examples.dll
         Microsoft.Spark.CSharp.Examples -> C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.CSharp.Examples\Debug\netcoreapp2.1\win10-x64\publish\
-      ```
-     
+      ```     
 
 ## Run samples
 

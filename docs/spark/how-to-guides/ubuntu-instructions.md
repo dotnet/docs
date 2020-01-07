@@ -95,8 +95,7 @@ If you already have all the prerequisites, skip to the [build](#Build) steps bel
 
         scala> sc
         res0: org.apache.spark.SparkContext = org.apache.spark.SparkContext@6eaa6b0c
-        ```
-                          
+        ```                      
 
 Make sure you are able to run `dotnet`, `java`, `mvn`, `spark-shell` from your command-line before you move to the next section. Feel there is a better way? Please [open an issue](https://github.com/dotnet/spark/issues) and feel free to contribute.
 
@@ -146,7 +145,6 @@ You should see JARs created for the supported Spark versions:
         Microsoft.Spark.Worker -> /home/user/dotnet.spark/artifacts/bin/Microsoft.Spark.Worker/Debug/netcoreapp2.1/ubuntu.18.04-x64/Microsoft.Spark.Worker.dll
         Microsoft.Spark.Worker -> /home/user/dotnet.spark/artifacts/bin/Microsoft.Spark.Worker/Debug/netcoreapp2.1/ubuntu.18.04-x64/publish/
       ```
-     
 
   2. Build the samples.
 
@@ -167,8 +165,7 @@ You should see JARs created for the supported Spark versions:
         Microsoft.Spark -> /home/user/dotnet.spark/artifacts/bin/Microsoft.Spark/Debug/netstandard2.0/Microsoft.Spark.dll
         Microsoft.Spark.CSharp.Examples -> /home/user/dotnet.spark/artifacts/bin/Microsoft.Spark.CSharp.Examples/Debug/netcoreapp2.1/ubuntu.18.04-x64/Microsoft.Spark.CSharp.Examples.dll
         Microsoft.Spark.CSharp.Examples -> /home/user/dotnet.spark/artifacts/bin/Microsoft.Spark.CSharp.Examples/Debug/netcoreapp2.1/ubuntu.18.04-x64/publish/
-      ```
-   
+      ```  
 
 ## Run samples
 

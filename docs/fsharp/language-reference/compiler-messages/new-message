@@ -33,7 +33,7 @@ EOF
 
 echo "Writing TOC entry"
 
-cat >toc.yml <<EOF
+cat >>toc.yml <<EOF
   - name: $message_number - $message_title
     href: ./$file_name
 EOF

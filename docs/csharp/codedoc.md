@@ -5,7 +5,7 @@ ms.date: 02/14/2017
 ms.technology: csharp-fundamentals
 ms.assetid: 8e75e317-4a55-45f2-a866-e76124171838
 ---
-# Documenting your code with XML comments
+# Document your code with XML comments
 
 XML documentation comments are a special kind of comment, added above the definition of any user-defined type or member.
 They are special because they can be processed by the compiler to generate an XML documentation file at compile time.
@@ -168,7 +168,7 @@ Make an unordered list of every math operation your `Math` library supports.
 
 You can make an ordered list or table by changing the `type` attribute to `number` or `table`, respectively.
 
-### Putting it all together
+### Put it all together
 
 If you've followed this tutorial and applied the tags to your code where necessary, your code should now look similar to the following:
 
@@ -201,10 +201,10 @@ The `name` attribute represents the name specifier in the tag that precedes the 
 
 The `id` attribute which can be used in place of `name` represents the ID for the tag that precedes the comments.
 
-### User Defined Tags
+### User-defined tags
 
 All the tags outlined above represent those that are recognized by the C# compiler. However, a user is free to define their own tags.
-Tools like Sandcastle bring support for extra tags like [`<event>`](https://ewsoftware.github.io/XMLCommentsGuide/html/81bf7ad3-45dc-452f-90d5-87ce2494a182.htm), [`<note>`](https://ewsoftware.github.io/XMLCommentsGuide/html/4302a60f-e4f4-4b8d-a451-5f453c4ebd46.htm)
+Tools like Sandcastle bring support for extra tags like [\<event>](https://ewsoftware.github.io/XMLCommentsGuide/html/81bf7ad3-45dc-452f-90d5-87ce2494a182.htm) and [\<note>](https://ewsoftware.github.io/XMLCommentsGuide/html/4302a60f-e4f4-4b8d-a451-5f453c4ebd46.htm),
 and even support [documenting namespaces](https://ewsoftware.github.io/XMLCommentsGuide/html/BD91FAD4-188D-4697-A654-7C07FD47EF31.htm).
 Custom or in-house documentation generation tools can also be used with the standard tags and multiple output formats from HTML to PDF can be supported.
 
@@ -217,7 +217,7 @@ Documenting code is recommended for many reasons. What follows are some best pra
 - At a bare minimum, types and their members should have a `<summary>` tag because its content is needed for IntelliSense.
 - Documentation text should be written using complete sentences ending with full stops.
 - Partial classes are fully supported, and documentation information will be concatenated into a single entry for that type.
-- The compiler verifies the syntax of the `<exception>`, `<include>`, `<param>`, `<see>`, `<seealso>` and `<typeparam>` tags.
+- The compiler verifies the syntax of the `<exception>`, `<include>`, `<param>`, `<see>`, `<seealso>`, and `<typeparam>` tags.
 - The compiler validates the parameters that contain file paths and references to other parts of the code.
 
 ## See also

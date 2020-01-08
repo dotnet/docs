@@ -24,8 +24,8 @@ Most of this article is about how to use the <xref:System.Text.Json.JsonSerializ
 * [Scenarios using JsonSerializer that require workarounds](#scenarios-using-jsonserializer-that-require-workarounds)
 * [Scenarios that JsonSerializer currently doesn't support](#scenarios-that-jsonserializer-currently-doesnt-support)
 * [JsonDocument and JsonElement compared to JToken (like JObject, JArray)](#jsondocument-and-jsonelement-compared-to-jtoken-like-jobject-jarray)
-* [Utf8JsonReader](#utf8jsonreader)
-* [Utf8JsonWriter](#utf8jsonwriter)
+* [Utf8JsonReader compared to JsonTextReader](#utf8jsonreader-compared-to-jsontextreader)
+* [Utf8JsonWriter compared to JsonTextWriter](#utf8jsonwriter-compared-to-jsontextwriter)
 
 ## Differences in default JsonSerializer behavior compared to Newtonsoft.Json
 
@@ -222,7 +222,7 @@ Another workaround is to make a converter for the type, such as the following ex
 
 Register this custom converter by [using an attribute](system-text-json-converters-how-to.md#registration-sample---jsonconverter-on-a-property) on the property or by [adding the converter](system-text-json-converters-how-to.md#registration-sample---converters-collection) to the <xref:System.Text.Json.JsonSerializerOptions.Converters> collection.
 
-The preceding converter handles null values differently than `Newtonsoft.Json` does for POCOs that specify default values. For example, suppose the following code represents your target object:
+**Note:** The preceding converter **handles null values differently** than `Newtonsoft.Json` does for POCOs that specify default values. For example, suppose the following code represents your target object:
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/WeatherForecast.cs?name=SnippetWFWithDefault)]
 
@@ -391,7 +391,6 @@ During deserialization, `Newtonsoft.Json` adds objects to a collection even if t
 
 `JsonDocument` builds an in-memory view of the data into a pooled buffer. Therefore, unlike `JObject` or `JArray` from `Newtonsoft.Json`, the `JsonDocument` type implements `IDisposable` and needs to be used inside a using block. Only return a `JsonDocument` from your API if you want to transfer lifetime ownership and dispose responsibility to the caller. Otherwise, return the `Clone` of the `RootElement`, which is a `JsonElement`.
 
-
 ### Read-only
 
 The <xref:System.Text.Json> DOM can't add, remove, or modify JSON elements. It's designed this way for performance and to reduce allocations for parsing common JSON payload sizes (that is, < 1 MB). If your scenario currently uses a writable/modifiable DOM, one of the following workarounds might be feasible:
@@ -413,7 +412,7 @@ Searches for JSON tokens using `JObject` or `JArray` from `Newtonsoft.Json` tend
 
 For a code example, see [Use JsonDocument for access to data](system-text-json-how-to.md#use-jsondocument-for-access-to-data).
 
-## Utf8JsonReader
+## Utf8JsonReader compared to JsonTextReader
 
 <xref:System.Text.Json.Utf8JsonReader?displayProperty=fullName> is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text, read from a `ReadOnlySpan<byte>`. The `Utf8JsonReader` is a low-level type that can be used to build custom parsers and deserializers.
 
@@ -495,7 +494,7 @@ If you need to continue to use `Newtonsoft.Json` for certain target frameworks, 
 * [UnifiedJsonReader.JsonTextReader.cs](https://github.com/dotnet/runtime/blob/35fe82c2e90fa345d0b6ad243c14da193fb123fd/src/installer/managed/Microsoft.Extensions.DependencyModel/UnifiedJsonReader.JsonTextReader.cs)
 * [UnifiedJsonReader.Utf8JsonReader.cs](https://github.com/dotnet/runtime/blob/35fe82c2e90fa345d0b6ad243c14da193fb123fd/src/installer/managed/Microsoft.Extensions.DependencyModel/UnifiedJsonReader.Utf8JsonReader.cs)
 
-## Utf8JsonWriter
+## Utf8JsonWriter compared to JsonTextWriter
 
 <xref:System.Text.Json.Utf8JsonWriter?displayProperty=fullName> is a high-performance way to write UTF-8 encoded JSON text from common .NET types like `String`, `Int32`, and `DateTime`. The writer is a low-level type that can be used to build custom serializers.
 
@@ -532,7 +531,7 @@ If you need to continue to use `Newtonsoft.Json` for certain target frameworks, 
 
 ## Additional resources
 
-* <!-- [System.Text.Json roadmap](https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/roadmap/README.md)[Restore this when the roadmap is updated.]-->
+<!-- * [System.Text.Json roadmap](https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/roadmap/README.md)[Restore this when the roadmap is updated.]-->
 * [System.Text.Json overview](system-text-json-overview.md)
 * [How to use System.Text.Json](system-text-json-how-to.md)
 * [How to write custom converters](system-text-json-converters-how-to.md)

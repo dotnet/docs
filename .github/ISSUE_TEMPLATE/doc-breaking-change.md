@@ -1,8 +1,8 @@
 ---
 name: Breaking change
-about: Report a change in .NET Core that breaks something that worked in a previous version of .NET. (Intended mostly for product-team use.)
-
+about: Report a change in .NET Core that breaks something that worked in a previous version (intended mostly for product-team use)
 ---
+
 <!--
 This issue template is for use in opening issues that document breaking changes. This template can be used to create an issue:
 
@@ -11,8 +11,8 @@ This issue template is for use in opening issues that document breaking changes.
 - By Microsoft customers who are experiencing a compatibility issue between .NET Framework and .NET Core or between versions of .NET Core.
 
 Text in brackets are placeholders; replace the text with the requested information and remove the brackets before submitting the issue. Also, remove this comment before submitting the issue.
-
 -->
+
 ## [Change Title]
 
 [Brief description of the change]

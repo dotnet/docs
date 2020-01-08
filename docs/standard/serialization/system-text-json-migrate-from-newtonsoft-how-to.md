@@ -128,7 +128,7 @@ To implement type inference for `Object` properties, create a converter like the
 
 ### Maximum depth
 
-`Newtonsoft.Json` doesn't have a maximum depth limit. For <xref:System.Text.Json> there's a default limit  of 64, and it's configurable by setting (xref:System.Text.Json.JsonSerializerOptions.MaxDepth?displayProperty=nameWithType).
+`Newtonsoft.Json` doesn't have a maximum depth limit by default. For <xref:System.Text.Json> there's a default limit  of 64, and it's configurable by setting (xref:System.Text.Json.JsonSerializerOptions.MaxDepth?displayProperty=nameWithType).
 
 ### Stack type handling
 
@@ -389,7 +389,7 @@ During deserialization, `Newtonsoft.Json` adds objects to a collection even if t
 
 ### IDisposable
 
-`JsonDocument` builds an in-memory view of the data into a pooled buffer. Therefore, unlike `JObject` or `JArray` from `Newtonsoft.Json`, the `JsonDocument` type implements `IDisposable` and needs to be used inside a using block. Only return a `JsonDocument` from your API if you want to transfer lifetime ownership and dispose responsibility to the caller. Otherwise, return the `Clone` of the `RootElement`, which is a `JsonElement`.
+`JsonDocument` builds an in-memory view of the data into a pooled buffer. Therefore, unlike `JObject` or `JArray` from `Newtonsoft.Json`, the `JsonDocument` type implements `IDisposable` and needs to be used inside a using block. Only return a `JsonDocument` from your API if you want to transfer lifetime ownership and dispose responsibility to the caller. Otherwise, return the <xref:System.Text.Json.JsonElement.Clone%2A> of the <xref:System.Text.Json.JsonDocument.RootElement%2A>, which is a `JsonElement`.
 
 ### Read-only
 

@@ -155,7 +155,7 @@ To deserialize from UTF-8, call a <xref:System.Text.Json.JsonSerializer.Deserial
 * By default, comments or trailing commas in the JSON throw exceptions. You can [allow comments and trailing commas](#allow-comments-and-trailing-commas).
 * The [default maximum depth](xref:System.Text.Json.JsonReaderOptions.MaxDepth) is 64.
 
-You can [implement custom converters](system-text-json-converters-how-to.md) to provide functionality that isn't supported by the built-in converters. For more information, see [How to migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md).
+You can [implement custom converters](system-text-json-converters-how-to.md) to provide functionality that isn't supported by the built-in converters.
 
 ## Serialize to formatted JSON
 
@@ -453,7 +453,9 @@ To minimize escaping you can use <xref:System.Text.Encodings.Web.JavaScriptEncod
 
 ## Serialize properties of derived classes
 
-Polymorphic serialization isn't supported when you specify at compile time the type to be serialized. For example, suppose you have a `WeatherForecast` class and a derived class `WeatherForecastDerived`:
+Serialization of deep, strongly-typed polymorphic type heirarchy within an object graph is not supported. This includes interfaces and abstract classes where the runtime types differ from the statically defined types declared on the object. One exception to this is properties of the <xref:System.Object> type itself.
+
+For example, suppose you have a `WeatherForecast` class and a derived class `WeatherForecastDerived`:
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/WeatherForecast.cs?name=SnippetWF)]
 
@@ -507,12 +509,12 @@ You can get polymorphic serialization for lower-level objects if you define them
 
 If the `PreviousForecast` property contains an instance of `WeatherForecastDerived`:
 
-* The JSON output from serializing `WeatherForecastWithPreview` doesn't include `WindSpeed`.
-* The JSON output from serializing `WeatherForecastWithPreviewAsObject` includes `WindSpeed`.
+* The JSON output from serializing `WeatherForecastWithPrevious` **doesn't include** `WindSpeed`.
+* The JSON output from serializing `WeatherForecastWithPreviousAsObject` **includes** `WindSpeed`.
 
 To serialize `WeatherForecastWithPreviousAsObject`, it isn't necessary to call `Serialize<object>` or `GetType` because the root object isn't the one that may be of a derived type:
 
-[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/SerializePolymorphic.cs?name=SnippetSerializeGetTypeSecondLevel)]
+[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/SerializePolymorphic.cs?name=SnippetSerializeSecondLevel)]
 
 ```json
 {
@@ -524,6 +526,28 @@ To serialize `WeatherForecastWithPreviousAsObject`, it isn't necessary to call `
     "Date": "2019-08-01T00:00:00-07:00",
     "TemperatureCelsius": 25,
     "Summary": "Hot"
+  }
+}
+```
+
+The same approach of defining properties as Object works with interfaces. Suppose you have the following interface, implementation, and class that you want to serialize:
+
+[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/IMyInterface.cs)]
+
+When you serialize an instance of `PolymorphicTestInterface`, only the property defined as `Object` shows both properties of the interface implementation:
+
+[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/SerializePolymorphic.cs?name=SnippetSerializeInterface)]
+
+The following example shows the JSON that results from the preceding code:
+
+```json
+{
+  "MyInterface": {
+    "Count": 5
+  },
+  "MyObject": {
+    "Count": 5,
+    "Name": "Implementation"
   }
 }
 ```

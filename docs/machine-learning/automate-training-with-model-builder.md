@@ -1,8 +1,7 @@
 ---
 title: What is Model Builder and how does it work?
 description: How to use the ML.NET Model Builder to automatically train a machine learning model
-author: natke
-ms.date: 08/07/2019
+ms.date: 01/07/2020
 ms.custom: overview
 #Customer intent: As a developer, I want to use Model Builder to automatically train a model using a visual interface.
 ---
@@ -30,18 +29,9 @@ A scenario is a description of the type of prediction you want to make using you
 - detect whether a banking transaction is fraudulent
 - route customer feedback issues to the correct team in your company
 
-## Choose a model type
+### Which machine learning scenario is right for me?
 
-In Model Builder, you need to select a machine learning model type. The type of model depends on what sort of prediction you are trying to make.
-
-For scenarios that predict a number, the machine learning model type is called `regression`.
-
-For scenarios that predict a category, the model type is `classification`. There are two types of classification:
-
-- where there are only 2 categories: `binary classification`.
-- where there are three or more categories: `multiclass classification`.
-
-### Which model type is right for me?
+In Model Builder, you need to select a scenario. The type of scenario depends on what type of prediction you are trying to make.
 
 #### Predict a category (when there are only two categories)
 
@@ -49,7 +39,7 @@ Binary classification is used to categorize data into two categories (yes/no; pa
 
 ![Diagram showing examples of binary classification including fraud detection, risk mitigation, and application screening](media/binary-classification-examples.png)
 
-Sentiment analysis can be used to predict positive or negative sentiment of customer feedback. It is an example of a binary classification model type.
+Sentiment analysis can be used to predict positive or negative sentiment of customer feedback. It is an example of the binary classification machine learning task.
 
 If your scenario requires classification into two categories, you can use this template with your own dataset.
 
@@ -59,7 +49,7 @@ Multiclass classification can be used to categorize data into three or more clas
 
 ![Examples of multiclass classification including document and product classification, support ticket routing, and customer issue prioritization](media/multiclass-classification-examples.png)
 
-Issue classification can be used to categorize customer feedback (for example, on GitHub) issues using the issue title and description. It is an example of the multi-class classification model type.
+Issue classification can be used to categorize customer feedback (for example, on GitHub) issues using the issue title and description. It is an example of the multi-class classification machine learning task.
 
 You can use the issue classification template for your scenario if you want to categorize data into three or more categories.
 
@@ -69,19 +59,33 @@ Regression is used to predict numbers.
 
 ![Diagram showing regression examples such as price prediction, sales forecasting, and predictive maintenance](media/regression-examples.png)
 
-Price prediction can be used to predict house prices using location, size, and other characteristics of the house. It is an example of a regression model type.
+Price prediction can be used to predict house prices using location, size, and other characteristics of the house. It is an example of the regression machine learning task.
 
 You can use the price prediction template for your scenario if you want to predict a numerical value with your own dataset.
 
-#### Custom scenario (choose your model type)
+#### Classify images into categories
 
-The custom scenario allows you to manually choose your model type.
+This scenario is a special case of multiclass classification, where the input data to be categorized is a set of images.
+
+Image classification can be used to identify images of different categories. For example, different types of terrain or animals or manufacturing defects.
+
+You can use the image classification template for your scenario if you have a set of images, and you want to classify the images into different categories.
+
+#### Custom scenario
+
+The custom scenario allows you to manually choose your scenario.
 
 ## Data
 
-Once you have chosen your model type, Model Builder asks you to provide a dataset. The data is used to train, evaluate, and choose the best model for your scenario.
+Once you have chosen your scenario, Model Builder asks you to provide a dataset. The data is used to train, evaluate, and choose the best model for your scenario.
 
 ![Diagram showing Model Builder steps](media/model-builder-steps.png)
+
+Model Builder supports datasets in .tsv, .csv, .txt formats, as well as SQL database format. If you have a .txt file, columns should be separated with `,`, `;` or `/t` and the file must have a header row.
+
+If the dataset is made up of images, the supported file types are `.jpg` and `.png`.
+
+For more information, see [Load training data into Model Builder](how-to-guides/load-data-model-builder.md).
 
 ### Choose the output to predict (label)
 
@@ -104,13 +108,14 @@ The label is the historical house price for that row of square footage, bedroom,
 
 If you don't have your own data yet, try out one of these datasets:
 
-|Scenario|Model Type|Data|Label|Features|
+|Scenario|ML task|Data|Label|Features|
 |-|-|-|-|-|
 |Price prediction|regression|[taxi fare data](https://github.com/dotnet/machinelearning-samples/blob/master/datasets/taxi-fare-train.csv)|Fare|Trip time, distance|
 |Anomaly detection|binary classification|[product sales data](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/AnomalyDetection_Sales/SpikeDetection/Data/product-sales.csv)|Product Sales|Month|
 |Sentiment analysis|binary classification|[website comment data](https://raw.githubusercontent.com/dotnet/machinelearning/master/test/data/wikipedia-detox-250-line-data.tsv)|Label (0 when negative sentiment, 1 when positive)|Comment, Year|
 |Fraud detection|binary classification|[credit card data](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/BinaryClassification_CreditCardFraudDetection/CreditCardFraudDetection.Trainer/assets/input/creditcardfraud-dataset.zip)|Class (1 when fraudulent, 0 otherwise)|Amount, V1-V28 (anonymized features)|
 |Text classification|multiclass classification|[GitHub issue data](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/end-to-end-apps/MulticlassClassification-GitHubLabeler/GitHubLabeler/Data/corefx-issues-train.tsv)|Area|Title, Description|
+|Image classification|multiclass classification|[Flowers images](http://download.tensorflow.org/example_images/flower_photos.tgz)|The type of flower: daisy, dandelion, roses, sunflowers, tulips|The image data itself|
 
 ## Train
 
@@ -122,11 +127,65 @@ Training is an automatic process by which Model Builder teaches your model how t
 
 Because Model Builder uses automated machine learning (AutoML), it does not require any input or tuning from you during training.
 
+### How long should I train for?
+
+Model Builder uses AutoML to explore multiple models to find you the best performing model.
+
+Longer training periods allow AutoML to explore more models with a wider range of settings.
+
+The table below summarizes the average time taken to get good performance for a suite of example datasets, on a local machine.
+
+|Dataset size|Average time to train|
+|------------|---------------------|
+|0 - 10 MB|10 sec|
+|10 - 100 MB|10 min|
+|100 - 500 MB|30 min|
+|500 - 1 GB|60 min|
+|1 GB+|3+ hours|
+
+These numbers are a guide only. The exact length of training is dependent on:
+
+- the number of features (columns) being used to as input to the model
+- the type of columns
+- the ML task
+- the CPU, disk and memory performance of the machine used for training
+
 ## Evaluate
 
-Evaluation is the process of using the trained model to make predictions with new test data, and then measuring how good the predictions are.
+Evaluation is the process of measuring how good your model is. Model Builder uses the trained model to make predictions with new test data, and then measures how good the predictions are.
 
-Model Builder splits the training data into a training set and a test set. The training data (80%) is used to train your model and the test data (20%) is held back to evaluate your model. Model Builder uses metrics to measure how good the model is. The specific metrics used are dependent on the type of model. For more information, see [model evaluation metrics](resources/metrics.md).
+Model Builder splits the training data into a training set and a test set. The training data (80%) is used to train your model and the test data (20%) is held back to evaluate your model. 
+
+### How do I understand my model performance?
+
+A scenario maps to a machine learning task. Each ML task has its own set of evaluation metrics. The table below describes these mappings of scenario and ML tasks.
+
+#### Regression (for example, Price Prediction)
+
+The default metric for regression problems is RSquared, the value of RSquared ranges between 0 and 1. 1 is the best possible value or in other words the closer the value of RSquared to 1 the better your model is performing.
+
+Other metrics reported such as absolute-loss, squared-loss, and RMS loss are additional metrics, which can be used to understand how your model is performing and comparing it against other regression models.
+
+#### Binary Classification (for example, Sentiment Analysis)
+
+The default metric for classification problems is accuracy. Accuracy defines the proportion of correct predictions your model is making over the test dataset. The closer to 100% or 1.0 the better it is.
+
+Other metrics reported such as AUC (Area under the curve), which measures the true positive rate vs. the false positive rate should be greater than 0.50 for models to be acceptable.
+
+Additional metrics like F1 score can be used to control the balance between Precision and Recall.
+
+#### Multi-Class Classification (for example, Issue Classification, Image Classification)
+
+The default metric for Multi-class classification is Micro Accuracy. The closer the Micro Accuracy to 100% or 1.0 the better it is.
+
+Another important metric for Multi-class classification is Macro-accuracy, similar to Micro-accuracy the closer to 1.0 the better it is. A good way to think about these two types of accuracy is:
+
+- Micro-accuracy: How often does an incoming ticket get classified to the right team?
+- Macro-accuracy: For an average team, how often is an incoming ticket correct for their team?
+
+### More information on evaluation metrics
+
+For more information, see [model evaluation metrics](resources/metrics.md).
 
 ## Improve
 

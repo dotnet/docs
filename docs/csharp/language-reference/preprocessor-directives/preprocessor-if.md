@@ -1,6 +1,5 @@
 ---
 title: "#if preprocessor directive - C# Reference"
-ms.custom: seodec18
 ms.date: 10/27/2019
 f1_keywords: 
   - "#if"

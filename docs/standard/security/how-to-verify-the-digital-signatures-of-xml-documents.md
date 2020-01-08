@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "XML digital signatures"
   - "digital signatures, verifying"
 ms.assetid: a4d5ceb1-b9f5-47e8-9e4a-a2b39110002f
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Verify the Digital Signatures of XML Documents
 You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace to verify XML data signed with a digital signature. XML digital signatures (XMLDSIG) allow you to verify that data was not altered after it was signed. For more information about the XMLDSIG standard, see the World Wide Web Consortium (W3C) specification at <https://www.w3.org/TR/xmldsig-core/>.

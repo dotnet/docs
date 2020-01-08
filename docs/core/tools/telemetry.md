@@ -3,7 +3,6 @@ title: .NET Core SDK telemetry
 description: Discover the .NET Core SDK telemetry features that collect usage information for analysis, which data is collected, and how to disable it.
 author: KathleenDollard
 ms.date: 08/27/2019
-ms.custom: "seodec18"
 ---
 # .NET Core SDK telemetry
 

@@ -1,6 +1,5 @@
 ---
 title: "stackalloc operator - C# reference"
-ms.custom: seodec18
 ms.date: 09/20/2019
 f1_keywords: 
   - "stackalloc_CSharpKeyword"

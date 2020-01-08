@@ -9,7 +9,7 @@ ms.assetid: ff5037c2-bba7-4cae-8abb-6475b686c48e
 ---
 # Walkthrough: Create a Button by Using Microsoft Expression Blend
 
-This walkthrough steps you through the process of creating a [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] customized button using Microsoft Expression Blend.
+This walkthrough steps you through the process of creating a WPF customized button using Microsoft Expression Blend.
 
 > [!IMPORTANT]
 > Microsoft Expression Blend works by generating [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] that is then compiled to make the executable program. If you would rather work with XAML directly, there is another walkthrough that creates the same application as this one using XAML with Visual Studio rather than Blend. See [Create a Button by Using XAML](walkthrough-create-a-button-by-using-xaml.md) for more information.
@@ -34,7 +34,7 @@ In the first part of this walkthrough you create the custom look of the custom b
 
 5. Name the project `CustomButton` and press **OK**.
 
-At this point you have a blank [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] project. You can press F5 to run the application. As you might expect, the application consists of only a blank window. Next, you create a rounded rectangle and convert it into a button.
+At this point you have a blank WPF project. You can press F5 to run the application. As you might expect, the application consists of only a blank window. Next, you create a rounded rectangle and convert it into a button.
 
 ### To convert a Rectangle to a Button
 

@@ -7,7 +7,7 @@ dev_langs:
 ms.assetid: 8fe0eadf-297b-487c-8d4b-7816753c2883
 ---
 # Comparing DataRows (LINQ to DataSet)
-[!INCLUDE[vbteclinqext](../../../../includes/vbteclinqext-md.md)] defines various set operators to compare source elements to see if they are equal. [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] provides the following set operators:  
+Language-Integrated Query (LINQ) defines various set operators to compare source elements to see if they are equal. LINQ provides the following set operators:  
   
 - <xref:System.Linq.Enumerable.Distinct%2A>  
   

@@ -5,7 +5,7 @@ ms.date: 12/20/2019
 dev_langs:
   - "csharp"
   - "vb"
-ms.custom: "vs-dotnet, seodec18"
+ms.custom: "vs-dotnet"
 ---
 # Consume a .NET Standard library in Visual Studio
 

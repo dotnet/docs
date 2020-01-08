@@ -1,6 +1,5 @@
 ---
 title: "- and -= operators - C# reference"
-ms.custom: seodec18
 ms.date: 05/27/2019
 f1_keywords: 
   - "-_CSharpKeyword"

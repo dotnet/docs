@@ -12,6 +12,9 @@ In addition, the following articles contain information that may be useful to yo
 - [.NET Framework technologies unavailable on .NET Core](../porting/net-framework-tech-unavailable.md) article provides information about technologies that aren't supported on .NET Core, for example, application domains and .NET remoting.
 - [APIs that always throw exceptions on .NET Core](../porting/unsupported-apis.md)
 
+> [!NOTE]
+> This article is not a complete list of breaking changes between .NET Framework and .NET Core. The most important breaking changes are added here as we become aware of them.
+
 ## CoreFx
 
 [!INCLUDE[Process.Start changes](~/includes/core-changes/corefx/2.1/process-start-changes.md)]

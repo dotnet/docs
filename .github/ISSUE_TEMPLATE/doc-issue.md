@@ -1,7 +1,6 @@
 ---
-name: Doc issue
-about: Create an issue to help us improve
-
+name: .NET doc issue
+about: Report a problem in the .NET documentation
 ---
 
 **Before you open an issue**

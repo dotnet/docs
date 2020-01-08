@@ -209,7 +209,7 @@ The following example of JSON to deserialize contains values that will be deseri
 
 Without the custom converter, deserialization puts a `JsonElement` in each property.
 
-The [unit tests folder](https://github.com/dotnet/corefx/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle deserialization to Object properties.
+The [unit tests folder](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle deserialization to Object properties.
 
 ### Support Dictionary with non-string key
 
@@ -241,7 +241,7 @@ The JSON output from serialization looks like the following example:
 }
 ```
 
-The [unit tests folder](https://github.com/dotnet/corefx/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle non-string-key dictionaries.
+The [unit tests folder](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle non-string-key dictionaries.
 
 ### Support polymorphic deserialization
 

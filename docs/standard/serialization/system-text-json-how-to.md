@@ -755,7 +755,7 @@ The following example shows how to read a file synchronously and search for a va
 The preceding code:
 
 * Assumes the JSON contains an array of objects and each object may contain a "name" property of type string.
-* Counts objects and `name` property values that end with "University".
+* Counts objects and "name" property values that end with "University".
 * Assumes the file is encoded as UTF-16 and transcodes it into UTF-8. A file encoded as UTF-8 can be read directly into a `ReadOnlySpan<byte>`, by using the following code:
 
   ```csharp

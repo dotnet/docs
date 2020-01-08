@@ -12,7 +12,7 @@ ms.technology: dotnet-cli
 
 .NET Standard and .NET Core libraries are expected to be distributed as NuGet packages. This is in fact how all of the .NET Standard libraries are distributed and consumed. This is most easily done with the `dotnet pack` command.
 
-Imagine that you just wrote an awesome new library that you would like to distribute over NuGet. You can create a NuGet package with cross platform tools to do exactly that! The following example assumes a library called **SuperAwesomeLibrary that targets `netstandard1.0`.
+Imagine that you just wrote an awesome new library that you would like to distribute over NuGet. You can create a NuGet package with cross-platform tools to do exactly that! The following example assumes a library called **SuperAwesomeLibrary** that targets `netstandard1.0`.
 
 If you have transitive dependencies, that is, a project that depends on another package, make sure to restore packages for the entire solution with the `dotnet restore` command before you create a NuGet package. Failing to do so will result in the `dotnet pack` command not working properly.
 

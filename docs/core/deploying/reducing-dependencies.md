@@ -28,12 +28,12 @@ Currently, there is no official `dotnet` command that trims package references. 
 
 You can find out which packages you don't need by one of the following ways:
 
-1. Trial and error.  This involves removing a package, restoring, seeing if your library still compiles, and repeating this process.
-2. Using a tool such as [ILSpy](https://github.com/icsharpcode/ILSpy#ilspy-------) or [.NET Reflector](https://www.red-gate.com/products/dotnet-development/reflector) to peek at references to see what your code is actually using.  You can then remove packages that don't correspond to types you're using.
+1. Trial and error. This involves removing a package, restoring, seeing if your library still compiles, and repeating this process.
+2. Using a tool such as [ILSpy](https://github.com/icsharpcode/ILSpy#ilspy-------) or [.NET Reflector](https://www.red-gate.com/products/dotnet-development/reflector) to peek at references to see what your code is actually using. You can then remove packages that don't correspond to types you're using.
 
 ## Example
 
-Imagine that you wrote a library that provided additional functionality to generic collection types.  Such a library would need to depend on packages such as `System.Collections`, but may not at all depend on packages such as `System.Net.Http`.  As such, it would be good to trim package dependencies down to only what this library required!
+Imagine that you wrote a library that provided additional functionality to generic collection types. Such a library would need to depend on packages such as `System.Collections`, but may not at all depend on packages such as `System.Net.Http`. As such, it would be good to trim package dependencies down to only what this library required!
 
 To trim this library, you start with the `project.json` file and add a reference to `NETStandard.Library` version `1.6.0`.
 

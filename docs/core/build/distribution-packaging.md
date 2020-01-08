@@ -119,7 +119,7 @@ The following lists the recommended packages:
 - `dotnet-runtime-deps-[major].[minor]` _(Optional)_ - Installs the dependencies for running self-contained applications
   - **Version:** \<runtime version>
   - **Example:** dotnet-runtime-deps-2.1
-  - **Dependencies:** _distro-specific dependencies_
+  - **Dependencies:** _distribution-specific dependencies_
 
 - `dotnet-runtime-[major].[minor]` - Installs a specific runtime
   - **Version:** \<runtime version>

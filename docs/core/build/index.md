@@ -37,7 +37,7 @@ You have to be on the particular platform to build that platform.
 The build has two main `buildTypes`:
 
 - Debug (default)- Compiles the runtime with minimal optimizations and additional runtime checks (asserts). This reduction in optimization level and the additional checks slow runtime execution but are valuable for debugging. This is the recommended setting for development and testing environments.
-- Release - Compiles the runtime with full optimizations and without the additional runtime checks. This will yield much faster run time performance but it can take a bit longer to build and can be difficult to debug. Pass `release` to the build script to select this build type.
+- Release - Compiles the runtime with full optimizations and without the additional runtime checks. This will yield much faster run-time performance, but it can take a bit longer to build and can be difficult to debug. Pass `release` to the build script to select this build type.
 
 In addition, by default the build not only creates the runtime executables, but it also builds all the tests.
 There are quite a few tests, taking a significant amount of time that isn't necessary if you just want to experiment with changes.

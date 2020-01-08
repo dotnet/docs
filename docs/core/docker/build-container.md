@@ -418,7 +418,7 @@ Docker has many different commands that cover what you want to do with your cont
 
 ## Clean up resources
 
-During this tutorial you created containers and images. If you want, delete these resources. Use the following commands to
+During this tutorial, you created containers and images. If you want, delete these resources. Use the following commands to
 
 01. List all containers
 

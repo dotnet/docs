@@ -65,7 +65,7 @@ The following steps explain how to create a converter by following the basic pat
 * Override the `Write` method to serialize the incoming object of type `T`. Use the <xref:System.Text.Json.Utf8JsonWriter> that is passed to the method to write the JSON.
 * Override the `CanConvert` method only if necessary. The default implementation returns `true` when the type to convert is type `T`. Therefore, converters that support only type `T` don't need to override this method. For an example of a converter that does need to override this method, see the [polymorphic deserialization](#support-polymorphic-deserialization) section later in this article.
 
-You can refer to the [built-in converters source code](https://github.com/dotnet/runtime/tree/master/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/Converters) as reference implementations for writing custom converters.
+You can refer to the [built-in converters source code](https://github.com/dotnet/corefx/tree/master/src/System.Text.Json/src/System/Text/Json/Serialization/Converters/) as reference implementations for writing custom converters.
 
 ## Steps to follow the factory pattern
 
@@ -208,7 +208,7 @@ The following example of JSON to deserialize contains values that will be deseri
 
 Without the custom converter, deserialization puts a `JsonElement` in each property.
 
-The [unit tests folder](https://github.com/dotnet/runtime/tree/master/src/libraries/System.Text.Json/tests/Serialization) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle deserialization to Object properties.
+The [unit tests folder](https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle deserialization to Object properties.
 
 ### Support Dictionary with non-string key
 
@@ -240,7 +240,7 @@ The JSON output from serialization looks like the following example:
 }
 ```
 
-The [unit tests folder](https://github.com/dotnet/runtime/tree/master/src/libraries/System.Text.Json/tests/Serialization) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle non-string-key dictionaries.
+The [unit tests folder](https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle non-string-key dictionaries.
 
 ### Support polymorphic deserialization
 
@@ -277,7 +277,7 @@ The converter can deserialize JSON that was created by using the same converter 
 
 ## Other custom converter samples
 
-The [unit tests folder](https://github.com/dotnet/runtime/tree/master/src/libraries/System.Text.Json/tests/Serialization) in the `System.Text.Json.Serialization` source code includes other custom converter samples, such as:
+The [unit tests folder](https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` source code includes other custom converter samples, such as:
 
 * `Int32` converter that converts null to 0 on deserialize
 * `Int32` converter that allows both string and number values on deserialize
@@ -290,7 +290,7 @@ The [unit tests folder](https://github.com/dotnet/runtime/tree/master/src/librar
 * [System.Text.Json overview](system-text-json-overview.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [How to use System.Text.Json](system-text-json-how-to.md)
-* [Source code for built-in converters](https://github.com/dotnet/runtime/tree/master/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/Converters)
+* [Source code for built-in converters](https://github.com/dotnet/corefx/tree/master/src/System.Text.Json/src/System/Text/Json/Serialization/Converters/)
 * GitHub issues related to custom converters for `System.Text.Json`
   * [36639 Introducing custom converters](https://github.com/dotnet/corefx/issues/36639)
   * [38713 About deserializing to Object](https://github.com/dotnet/corefx/issues/38713)

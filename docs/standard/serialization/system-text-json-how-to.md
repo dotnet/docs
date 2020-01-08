@@ -530,11 +530,11 @@ To serialize `WeatherForecastWithPreviousAsObject`, it isn't necessary to call `
 }
 ```
 
-The same approach of defining properties as Object works with interfaces. Suppose you have the following interface, implementation, and class that you want to serialize:
+The same approach of defining properties as `Object` works with interfaces. Suppose you have the following interface and implementation, and you want to serialize a class with properties that contain implementation instances:
 
-[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/IMyInterface.cs)]
+[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/IForecast.cs)]
 
-When you serialize an instance of `PolymorphicTestInterface`, only the property defined as `Object` shows both properties of the interface implementation:
+When you serialize an instance of `Forecasts`, only `Tuesday` shows the `WindSpeed` property, because `Tuesday` is defined as `Object`:
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/SerializePolymorphic.cs?name=SnippetSerializeInterface)]
 
@@ -542,12 +542,16 @@ The following example shows the JSON that results from the preceding code:
 
 ```json
 {
-  "MyInterface": {
-    "Count": 5
+  "Monday": {
+    "Date": "2020-01-06T00:00:00-08:00",
+    "TemperatureCelsius": 10,
+    "Summary": "Cool"
   },
-  "MyObject": {
-    "Count": 5,
-    "Name": "Implementation"
+  "Tuesday": {
+    "Date": "2020-01-07T00:00:00-08:00",
+    "TemperatureCelsius": 11,
+    "Summary": "Rainy",
+    "WindSpeed": 10
   }
 }
 ```

@@ -4,8 +4,6 @@ description: Learn how to transfer the knowledge from an existing TensorFlow mod
 ms.date: 11/15/2019
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
-author: natke
-ms.author: nakersha
 #Customer intent: As a developer, I want to use a pre-trained TensorFlow model with ML.NET so that I can classify images with a small amount of training data.
 ---
 # Tutorial: Generate an ML.NET image classification model from a pre-trained TensorFlow model

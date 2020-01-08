@@ -19,6 +19,9 @@
 # In each subsection folders are order first by depth, then alphabetically.
 # This should make it easy to add new rules without breaking existing ones.
 
+############ WHATS NEW ###############
+/docs/whats-new/** @mairaw @billwagner
+
 ############  GUIDES  ################
 # .NET Core
 /docs/core/** @mairaw
@@ -58,6 +61,8 @@
 /docs/core/whats-new/** @Thraka
 # Deployment
 /docs/core/deploying/** @Thraka
+# Diagnostics
+/docs/core/diagnostics/** @sdmaclea @mairaw
 # Install
 /docs/core/install/** @Thraka
 # Breaking changes
@@ -123,6 +128,8 @@
 /docs/standard/collections/** @BillWagner
 # Data
 /docs/standard/data/** @gewarren
+# Data - SQLite
+/docs/standard/data/sqlite/** @bricelam
 # Datetime
 /docs/standard/datetime/** @Thraka
 # Design guidelines

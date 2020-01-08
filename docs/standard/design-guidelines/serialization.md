@@ -3,7 +3,6 @@ title: "Serialization"
 ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 ms.assetid: bebb27ac-9712-4196-9931-de19fc04dbac
-author: "KrzysztofCwalina"
 ---
 # Serialization
 Serialization is the process of converting an object into a format that can be readily persisted or transported. For example, you can serialize an object, transport it over the Internet using HTTP, and deserialized it at the destination machine.  

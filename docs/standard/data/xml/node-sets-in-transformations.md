@@ -3,8 +3,6 @@ title: "Node Sets in Transformations"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: ad034f0e-ff8b-4a71-9a4c-528c754263c4
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Node Sets in Transformations
 Node sets are one of four basic data types that are returned from XML Path Language (XPath) expressions. A node set, which is an unordered collection of nodes without duplicates, created in document order, can be assigned to a variable in a style sheet.  

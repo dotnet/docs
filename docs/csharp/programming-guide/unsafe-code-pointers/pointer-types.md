@@ -1,6 +1,5 @@
 ---
 title: "Pointer types - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 04/20/2018
 helpviewer_keywords: 
   - "unsafe code [C#], pointers"
@@ -81,5 +80,6 @@ For more information, see the [Pointer types](~/_csharplang/spec/unsafe-code.md#
 - [C# Programming Guide](../index.md)
 - [Unsafe Code and Pointers](index.md)
 - [Pointer Conversions](pointer-conversions.md)
-- [Types](/dotnet/csharp/language-reference/keywords)
+- [Reference types](../../language-reference/keywords/reference-types.md)
+- [Value types](../../language-reference/keywords/value-types.md)
 - [unsafe](../../language-reference/keywords/unsafe.md)

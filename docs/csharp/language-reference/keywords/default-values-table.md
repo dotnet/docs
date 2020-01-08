@@ -1,8 +1,7 @@
 ---
 title: "Default values table - C# reference"
-ms.custom: seodec18
 description: Learn what are the default values of C# types.
-ms.date: 07/29/2019
+ms.date: 12/18/2019
 helpviewer_keywords: 
   - "default [C#]"
   - "parameterless constructor [C#]"
@@ -40,6 +39,8 @@ For a value type, the implicit parameterless constructor also produces the defau
 var n = new System.Numerics.Complex();
 Console.WriteLine(n);  // output: (0, 0)
 ```
+
+At run time, if the <xref:System.Type?displayProperty=nameWithType> instance represents a value type, you can use the <xref:System.Activator.CreateInstance(System.Type)?displayProperty=nameWithType> method to invoke the parameterless constructor to obtain the default value of the type.
 
 ## C# language specification
 

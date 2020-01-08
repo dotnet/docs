@@ -337,7 +337,7 @@ It is outside the scope of this document to go into detail on what Windows Runti
 
 ### Managed and non-managed WinMDs
 
-If a developer uses Visual Studio to create a new Windows Runtime Component project, a build of that project produces a WinMD file that describes the metadata (the type descriptions of classes, interfaces, etc.) authored by the developer. If this project is a managed language project written in C# or VB, that same WinMD file also contains the implementation of those types (meaning that it contains all the IL compiled from the developer’s source code). Such files are known as managed WinMD files. They're interesting in that they contain both Windows Runtime metadata and the underlying implementation.
+If a developer uses Visual Studio to create a new Windows Runtime Component project, a build of that project produces a WinMD file that describes the metadata (the type descriptions of classes, interfaces, etc.) authored by the developer. If this project is a managed language project written in C# or Visual Basic, that same WinMD file also contains the implementation of those types (meaning that it contains all the IL compiled from the developer’s source code). Such files are known as managed WinMD files. They're interesting in that they contain both Windows Runtime metadata and the underlying implementation.
 
 In contrast, if a developer creates a Windows Runtime Component project for C++, a build of that project produces a WinMD file that contains only metadata, and the implementation is compiled into a separate native DLL. Similarly, the WinMD files that ship in the Windows SDK contain only metadata, with the implementation compiled into separate native DLLs that ship as part of Windows.
 

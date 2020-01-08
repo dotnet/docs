@@ -29,7 +29,7 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
  Describes how to declare a class and its fields, properties, methods, and events.
 
 - [Writing Queries in Visual Basic](programming-guide/concepts/linq/walkthrough-writing-queries.md)  
- Demonstrates how you can use Visual Basic language features to write [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] query expressions.
+ Demonstrates how you can use Visual Basic language features to write Language-Integrated Query (LINQ) query expressions.
 
 - [Implementing IEnumerable(Of T) in Visual Basic](programming-guide/language-features/control-flow/walkthrough-implementing-ienumerable-of-t.md)  
  Demonstrates how to create a class that implements the `IEnumerable(Of String)` interface and a class that implements the `IEnumerator(Of String)` interface to read a text file one line at a time.

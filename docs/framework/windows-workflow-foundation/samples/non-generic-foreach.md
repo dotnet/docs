@@ -11,7 +11,7 @@ ms.assetid: 576cd07a-d58d-4536-b514-77bad60bff38
  This sample shows how to implement a non-generic <xref:System.Activities.Statements.ForEach%601> activity and its designer. This activity can be used to iterate through <xref:System.Collections.ArrayList>.  
   
 ## ForEach Activity  
- The C#/VB `foreach` statement enumerates the elements of a collection, executing an embedded statement for each element of the collection. The [!INCLUDE[wf1](../../../../includes/wf1-md.md)] equivalent activities of `foreach` are <xref:System.Activities.Statements.ForEach%601> and <xref:System.Activities.Statements.ParallelForEach%601>. The <xref:System.Activities.Statements.ForEach%601> activity contains a list of values and a body. At runtime, the list is iterated and the body is executed for each value in the list.  
+ The C#/Visual Basic `foreach` statement enumerates the elements of a collection, executing an embedded statement for each element of the collection. The [!INCLUDE[wf1](../../../../includes/wf1-md.md)] equivalent activities of `foreach` are <xref:System.Activities.Statements.ForEach%601> and <xref:System.Activities.Statements.ParallelForEach%601>. The <xref:System.Activities.Statements.ForEach%601> activity contains a list of values and a body. At runtime, the list is iterated and the body is executed for each value in the list.  
   
  For most cases, the generic version of the activity should be the preferred solution, because it covers most of the scenarios in which it would be used, and provides type checking at compile time. The non-generic version can be used for iterating through types that implement the non-generic <xref:System.Collections.IEnumerable> interface.  
   

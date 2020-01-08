@@ -1,8 +1,6 @@
 ---
 title: Breaking changes and .NET libraries
 description: Best practice recommendations for navigating breaking changes when creating .NET libraries.
-author: jamesnk
-ms.author: mairaw
 ms.date: 10/02/2018
 ---
 # Breaking changes
@@ -96,7 +94,7 @@ public class Document
 
 - [Version and update considerations for C# developers](../../csharp/whats-new/version-update-considerations.md)
 - [A definitive guide to API-breaking changes in .NET](https://stackoverflow.com/questions/1456785/a-definitive-guide-to-api-breaking-changes-in-net)
-- [CoreFX Breaking Change Rules](https://github.com/dotnet/corefx/blob/master/Documentation/coding-guidelines/breaking-change-rules.md)
+- [.NET breaking change rules](https://github.com/dotnet/runtime/blob/master/docs/coding-guidelines/breaking-change-rules.md)
 
 >[!div class="step-by-step"]
 >[Previous](versioning.md)

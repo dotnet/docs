@@ -31,7 +31,7 @@ A scenario is a description of the type of prediction you want to make using you
 
 ### Which machine learning scenario is right for me?
 
-In Model Builder, you need to select a machine scenario. The type of scenario depends on what type of prediction you are trying to make.
+In Model Builder, you need to select a scenario. The type of scenario depends on what type of prediction you are trying to make.
 
 #### Predict a category (when there are only two categories)
 

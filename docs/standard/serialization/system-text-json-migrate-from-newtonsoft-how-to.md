@@ -35,7 +35,7 @@ Most of this article is about how to use the <xref:System.Text.Json.JsonSerializ
 
 During deserialization, `Newtonsoft.Json` does case-insensitive property name matching by default. The <xref:System.Text.Json> default is case-sensitive, which gives better performance since it's doing an exact match. For information about how to do case-insensitive matching, see [Case-insensitive property matching](system-text-json-how-to.md#case-insensitive-property-matching).
 
-If you're using `System.Text.Json` indirectly by using ASP.NET Core, you don't need to do anything to get behavior like `Newtonsoft.Json`. ASP.NET Core specifies the case-insensitive setting when it uses `System.Text.Json`.
+If you're using `System.Text.Json` indirectly by using ASP.NET Core, you don't need to do anything to get behavior like `Newtonsoft.Json`. ASP.NET Core specifies the settings for [camel-casing property names](system-text-json-how-to.md#use-camel-case-for-all-json-property-names) and case-insensitive matching when it uses `System.Text.Json`.
 
 ### Comments
 
@@ -133,6 +133,10 @@ To implement type inference for `Object` properties, create a converter like the
 ### Stack type handling
 
 In <xref:System.Text.Json>, properties of type <xref:System.Collections.Stack> and <xref:System.Collections.Generic.Stack%601> don't have the same value after making a round trip to and from JSON. The order of a stack's contents is reversed when it's serialized. A custom converter could be implemented to keep stack contents in the same order.
+
+## Omit null-value properties
+
+`Newtonsoft.Json` has a global setting that causes null-value properties to be excluded from serialization: [NullValueHandling.Ignore](https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_NullValueHandling.htm). The corresponding option in <xref:System.Text.Json> is <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues%2A>.
 
 ## Scenarios using JsonSerializer that require workarounds
 
@@ -387,11 +391,11 @@ During deserialization, `Newtonsoft.Json` adds objects to a collection even if t
 
 <xref:System.Text.Json.JsonDocument?displayProperty=fullName> provides the ability to parse and build a **read-only** Document Object Model (DOM) from existing JSON payloads. The DOM provides random access to data in a JSON payload. The JSON elements that compose the payload can be accessed via the <xref:System.Text.Json.JsonElement> type. The `JsonElement` type provides APIs to convert JSON text to common .NET types. `JsonDocument` exposes a <xref:System.Text.Json.JsonDocument.RootElement> property.
 
-### IDisposable
+### JsonDocument is IDisposable
 
 `JsonDocument` builds an in-memory view of the data into a pooled buffer. Therefore, unlike `JObject` or `JArray` from `Newtonsoft.Json`, the `JsonDocument` type implements `IDisposable` and needs to be used inside a using block. Only return a `JsonDocument` from your API if you want to transfer lifetime ownership and dispose responsibility to the caller. Otherwise, return the <xref:System.Text.Json.JsonElement.Clone%2A> of the <xref:System.Text.Json.JsonDocument.RootElement%2A>, which is a `JsonElement`.
 
-### Read-only
+### JsonDocument is read-only
 
 The <xref:System.Text.Json> DOM can't add, remove, or modify JSON elements. It's designed this way for performance and to reduce allocations for parsing common JSON payload sizes (that is, < 1 MB). If your scenario currently uses a writable/modifiable DOM, one of the following workarounds might be feasible:
 
@@ -399,11 +403,11 @@ The <xref:System.Text.Json> DOM can't add, remove, or modify JSON elements. It's
 * To modify an existing `JsonDocument`, use it to write JSON text, making changes while you write, and parse the output from that to make a new `JsonDocument`.
 * To merge existing JSON documents, equivalent to the `JObject.Merge` or `JContainer.Merge` APIs from `Newtonsoft.Json`, see [this GitHub issue](https://github.com/dotnet/corefx/issues/42466#issuecomment-570475853).
 
-### JsonElement
+### JsonElement is a union struct
 
 `JsonDocument` exposes the `RootElement` as a property of type <xref:System.Text.Json.JsonElement>, which is a union, struct type that encompasses any JSON element. `Newtonsoft.Json` uses dedicated hierarchical types like `JObject`,`JArray`, `JToken`, and so forth. `JsonElement` is what you can search and enumerate over, and you can use `JsonElement` to materialize JSON elements into .NET types.
 
-### Search a JsonDocument
+### How to search a JsonDocument and JsonElement for sub-elements
 
 Searches for JSON tokens using `JObject` or `JArray` from `Newtonsoft.Json` tend to be relatively fast because they're look-ups in some dictionary. By comparison, searches on `JsonElement` require a sequential search of the properties and hence is relatively slow (for example when using `TryGetProperty`). <xref:System.Text.Json> is designed to minimize initial parse time rather than look-up time. Therefore, use the following approaches to optimize performance when searching through a `JsonDocument` object:
 
@@ -414,76 +418,85 @@ For a code example, see [Use JsonDocument for access to data](system-text-json-h
 
 ## Utf8JsonReader compared to JsonTextReader
 
-<xref:System.Text.Json.Utf8JsonReader?displayProperty=fullName> is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text, read from a `ReadOnlySpan<byte>`. The `Utf8JsonReader` is a low-level type that can be used to build custom parsers and deserializers.
+<xref:System.Text.Json.Utf8JsonReader?displayProperty=fullName> is a high-performance, low allocation, forward-only reader for UTF-8 encoded JSON text, read from a [ReadOnlySpan\<byte>](xref:System.ReadOnlySpan%601) or `ReadOnlySequence<byte>`. The `Utf8JsonReader` is a low-level type that can be used to build custom parsers and deserializers.
 
 The following sections explain recommended programming patterns for using `Utf8JsonReader`.
 
 ### Ref struct
 
-The `Utf8JsonReader` type is a *ref struct*, which means it has certain limitations. For example, it can't be stored as a field on a class or struct other than a ref struct. To achieve high performance, this type must be a `ref struct` since it needs to cache the input `Span<byte>`, which itself is a ref struct. In addition, this type is mutable since it holds state. Therefore, you should **pass it by ref** rather than by value. Passing it by value would result in a struct copy and the state changes would not be visible to the caller. This differs from `Newtonsoft.Json` since the `Newtonsoft.Json` `JsonTextReader` is a class. For more information about how to use ref structs, see [Write safe and efficient C# code](../../csharp/write-safe-efficient-code.md).
+The `Utf8JsonReader` type is a *ref struct*, which means it has [certain limitations](../../csharp/language-reference/keywords/ref.md#ref-struct-types). For example, it can't be stored as a field on a class or struct other than a ref struct. To achieve high performance, this type must be a `ref struct` since it needs to cache the input [ReadOnlySpan\<byte>](xref:System.ReadOnlySpan%601), which itself is a ref struct. In addition, this type is mutable since it holds state. Therefore, **pass it by ref** rather than by value. Passing it by value would result in a struct copy and the state changes would not be visible to the caller. This differs from `Newtonsoft.Json` since the `Newtonsoft.Json` `JsonTextReader` is a class. For more information about how to use ref structs, see [Write safe and efficient C# code](../../csharp/write-safe-efficient-code.md).
 
-### Read and write with UTF-8 text
+### Read UTF-8 text
 
 To achieve the best possible performance while using the `Utf8JsonReader`, read JSON payloads already encoded as UTF-8 text rather than as UTF-16 strings. For a code example, see [Filter data using Utf8JsonReader](system-text-json-how-to.md#filter-data-using-utf8jsonreader).
 
 ### Read with a Stream or PipeReader
 
-The `Utf8JsonReader` supports reading from a UTF-8 encoded `ReadOnlySpan<byte>` or `ReadOnlySequence<byte>` (which is the result of reading from a `PipeReader`). For synchronous reading, you could read the JSON payload until the end of the stream into a byte array and pass that into the reader. For reading from a string (which is encoded as UTF-16), you should use the `Encoding.UTF8.GetBytes` API to first transcode the string to a UTF-8 encoded byte array. Then pass that to the `Utf8JsonReader`. For code examples, see [Use Utf8JsonReader](system-text-json-how-to.md#use-utf8jsonreader).
+The `Utf8JsonReader` supports reading from a UTF-8 encoded [ReadOnlySpan\<byte>](xref:System.ReadOnlySpan%601) or [ReadOnlySequence\<byte>](xref:System.ReadOnlySequence%601) (which is the result of reading from a <xref:System.IO.Pipelines.PipeReader>).
+
+For synchronous reading, you could read the JSON payload until the end of the stream into a byte array and pass that into the reader. For reading from a string (which is encoded as UTF-16), call <xref:System.Text.Encoding.UTF8>.<xref:System.Text.Encoding.GetBytes%2A> to first transcode the string to a UTF-8 encoded byte array. Then pass that to the `Utf8JsonReader`. 
+
+Since the `Utf8JsonReader` considers the input to be JSON text, a UTF-8 byte order mark (BOM) is considered invalid JSON. The caller needs to filter that out before passing the data to the reader.
+
+For code examples, see [Use Utf8JsonReader](system-text-json-how-to.md#use-utf8jsonreader).
 
 ### Read with multi-segment ReadOnlySequence
 
-If your JSON input is a `ReadOnlySpan<byte>`, each JSON element can be accessed from the `ValueSpan` property on the reader as you go through the read loop. However, if your input is a `ReadOnlySequence<byte>` (which is the result of reading from a `PipeReader`), some JSON elements might straddle multiple segments of the `ReadOnlySequence<byte>` object. These elements would not be accessible from `ValueSpan` in a contiguous memory block. Instead, whenever you have a multi-segment `ReadOnlySequence<byte>` as input, you should always poll the `HasValueSequence` property on the reader to figure out how to access the current JSON element. Here's a recommended pattern:
+If your JSON input is a [ReadOnlySpan\<byte>](xref:System.ReadOnlySpan%601), each JSON element can be accessed from the `ValueSpan` property on the reader as you go through the read loop. However, if your input is a [ReadOnlySequence\<byte>](xref:System.ReadOnlySequence%601) (which is the result of reading from a <xref:System.IO.Pipelines.PipeReader>), some JSON elements might straddle multiple segments of the `ReadOnlySequence<byte>` object. These elements would not be accessible from <xref:System.Text.Json.Utf8JsonReader.ValueSpan%2A> in a contiguous memory block. Instead, whenever you have a multi-segment `ReadOnlySequence<byte>` as input, poll the <xref:System.Text.Json.Utf8JsonReader.HasValueSequence%2A> property on the reader to figure out how to access the current JSON element. Here's a recommended pattern:
 
 ```csharp
 while (reader.Read())
 {
-  switch (reader.TokenType)
-  {
-    // ...
-    ReadOnlySpan<byte> jsonElement = reader.HasValueSequence ?
-                reader.ValueSequence.ToArray() :
-                reader.ValueSpan;
-    // ...
-  }
-}
-```
-
-### Read null values
-
-Code that uses the `Newtonsoft.Json` reader can compare a value token type of String to null, as in the following example:
-
-```csharp
-public static string ReadAsString(this JsonTextReader reader)
-{
-    reader.Read();
-
-    if (reader.TokenType != JsonToken.String)
+    switch (reader.TokenType)
     {
-        throw new InvalidDataException();
+        // ...
+        ReadOnlySpan<byte> jsonElement = reader.HasValueSequence ?
+            reader.ValueSequence.ToArray() :
+            reader.ValueSpan;
+        // ...
     }
-
-    return reader.Value?.ToString();
 }
 ```
 
-This code doesn't work correctly in <xref:System.Text.Json>, which considers the `null` literal to be its own token type. When using `Utf8JsonReader`, check for the `JsonTokenType.Null` token type, as shown in the following example:
+### Use ValueTextEquals for property name lookups
+
+Don't use <xref:System.Text.Json.Utf8JsonReader.ValueSpan%2A> to do byte-by-byte comparisons by calling <xref:System.MemoryExtensions.SequenceEqual%2A> for property name lookups. Call <xref:System.Text.Json.Utf8JsonReader.ValueTextEquals%2A> instead, because that method unescapes any characters that are escaped  in the JSON. Here's an example:
+
+[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/Utf8ReaderFromFile.cs?highlight=10,37)]
+
+### Read null values into nullable value types
+
+`Newtonsoft.Json` provides APIs like `ReadAsBoolean`, which handle a `Null` `TokenType` for you by returning a `bool?`. The built-in `System.Text.Json` APIs return only non-nullable value types. For example, <xref:System.Text.Json.Utf8JsonReader.GetBoolean?displayProperty=nameWithType> returns a `bool`. It throws an exception if it finds `Null` in the JSON. The following examples show two ways to handle nulls, one by returning a nullable value type and one by returning the default value:
 
 ```csharp
-public static string ReadAsString(this ref Utf8JsonReader reader)
+public bool? ReadAsNullableBoolean()
 {
-    reader.Read();
-
-    if (reader.TokenType == JsonTokenType.Null)
+    _reader.Read();
+    if (_reader.TokenType == JsonTokenType.Null)
     {
         return null;
     }
-
-    if (reader.TokenType != JsonTokenType.String)
+    if (_reader.TokenType != JsonTokenType.True && _reader.TokenType != JsonTokenType.False)
     {
-        throw new InvalidDataException();
+        throw CreateUnexpectedException(ref _reader, "a JSON true or false literal token");
     }
+    return _reader.GetBoolean();
+}
+```
 
-    return reader.GetString();
+```csharp
+public bool ReadAsBoolean(bool defaultValue)
+{
+    _reader.Read();
+    if (_reader.TokenType == JsonTokenType.Null)
+    {
+        return defaultValue;
+    }
+    if (_reader.TokenType != JsonTokenType.True && _reader.TokenType != JsonTokenType.False)
+    {
+        throw CreateUnexpectedException(ref _reader, "a JSON true or false literal token");
+    }
+    return _reader.GetBoolean();
 }
 ```
 

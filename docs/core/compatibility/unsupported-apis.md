@@ -79,7 +79,6 @@ This article organizes the affected API members by namespace.
 | - | - |
 | <xref:System.Diagnostics.Process.MaxWorkingSet?displayProperty=nameWithType> (set only) | Linux |
 | <xref:System.Diagnostics.Process.MinWorkingSet?displayProperty=nameWithType> (set only) | Linux |
-| <xref:System.Diagnostics.Process.MaxWorkingSet?displayProperty=nameWithType> (for other processes) | macOS |
 | <xref:System.Diagnostics.Process.ProcessorAffinity?displayProperty=nameWithType> | macOS |
 | <xref:System.Diagnostics.Process.MainWindowHandle?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Diagnostics.Process.Start%2A?displayProperty=nameWithType> | Linux and macOS |
@@ -97,18 +96,6 @@ This article organizes the affected API members by namespace.
 | - | - |
 | <xref:System.IO.FileSystemInfo.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
 | <xref:System.IO.FileSystemInfo.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
-
-## System.IO.IsolatedStorage
-
-| Member | Platform |
-| - | - |
-| <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A?displayProperty=nameWithType> (when specifying identity or evidence types) | All |
-
-## System.IO.MemoryMappedFiles
-
-| Member | Platform |
-| - | - |
-| <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateNew(System.String,System.Int64)?displayProperty=nameWithType> (when passed a named, memory-mapped file) | Linux and macOS |
 
 ## System.IO.Pipes
 
@@ -256,7 +243,6 @@ This article organizes the affected API members by namespace.
 | <xref:System.Security.Cryptography.HMAC.Create(System.String)?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.HMAC.HashCore%2A?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.HMAC.HashFinal%2A?displayProperty=nameWithType> | All |
-| <xref:System.Security.Cryptography.HMAC.HashName%2A?displayProperty=nameWithType> (except when setting to current value) | All |
 | <xref:System.Security.Cryptography.HMAC.Initialize%2A?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.KeyedHashAlgorithm.Create?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.KeyedHashAlgorithm.Create(System.String)?displayProperty=nameWithType> | All |

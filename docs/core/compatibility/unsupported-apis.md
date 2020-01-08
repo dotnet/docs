@@ -327,14 +327,6 @@ This article organizes the affected API members by namespace.
 | <xref:System.Xml.XmlDictionaryReader.CreateMtomReader(System.IO.Stream,System.Text.Encoding[],System.String,System.Xml.XmlDictionaryReaderQuotas,System.Int32,System.Xml.OnXmlDictionaryReaderClose)?displayProperty=nameWithType> | All |
 | <xref:System.Xml.XmlDictionaryWriter.CreateMtomWriter(System.IO.Stream,System.Text.Encoding,System.Int32,System.String,System.String,System.String,System.Boolean,System.Boolean)?displayProperty=nameWithType> | All |
 
-## System.Xml.Xsl
-
-| Member | Platform |
-| - | - |
-| <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A?displayProperty=nameWithType> (if `msxsl:script` is used in the stylesheet) | All |
-| <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=nameWithType> (if `msxsl:script` is used in the stylesheet) | All |
-| <xref:System.Xml.Xsl.XslTransform.Load%2A?displayProperty=nameWithType> (if `msxsl:script` is used in the stylesheet) | All |
-
 ## See also
 
 - [Breaking changes for migration from .NET Framework to .NET Core](../compatibility/fx-core.md)

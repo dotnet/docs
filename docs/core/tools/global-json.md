@@ -54,7 +54,7 @@ If you don't set this value explicitly, the default value depends on whether you
 
 - Available since: .NET Core 3.0 SDK.
 
-The roll-forward policy to use when selecting an SDK version, either as a fallback when a specific SDK version is missing or as a directive to use a later version. A [version](#version) must be specified with a `rollForward` value, unless you're setting it to `latestMajor`. 
+The roll-forward policy to use when selecting an SDK version, either as a fallback when a specific SDK version is missing or as a directive to use a higher version. A [version](#version) must be specified with a `rollForward` value, unless you're setting it to `latestMajor`. 
 
 To understand the available policies and their behavior, consider the following definitions for an SDK version in the format `x.y.znn`:
 
@@ -68,13 +68,13 @@ The following table shows the possible values for the `rollForward` key:
 | Value         | Behavior |
 | ------------- | ---------- |
 | `patch`       | Uses the specified version. <br> If not found, rolls forward to the latest patch level. <br> If not found, fails. <br><br> This value is the legacy behavior from the earlier versions of the SDK. |
-| `feature`     | Uses the latest patch level for the specified major, minor, and feature band. <br> If not found, rolls forward to the next available feature band within the same major/minor and uses the latest patch level for that feature band. <br> If not found, fails. |
-| `minor`       | Uses the latest patch level for the specified major, minor, and feature band. <br> If not found, rolls forward to the next available feature band within the same major/minor version and uses the latest patch level for that feature band. <br> If not found, rolls forward to the next available minor and feature band within the same major and uses the latest patch level for that feature band. <br> If not found, fails. |
-| `major`       | Uses the latest patch level for the specified major, minor, and feature band. <br> If not found, rolls forward to the next available feature band within the same major/minor version and uses the latest patch level for that feature band. <br> If not found, rolls forward to the next available minor and feature band within the same major and uses the latest patch level for that feature band. <br> If not found, rolls forward to the next available major, minor, and feature band and uses the latest patch level for that feature band. <br> If not found, fails. |
+| `feature`     | Uses the latest patch level for the specified major, minor, and feature band. <br> If not found, rolls forward to the next higher feature band within the same major/minor and uses the latest patch level for that feature band. <br> If not found, fails. |
+| `minor`       | Uses the latest patch level for the specified major, minor, and feature band. <br> If not found, rolls forward to the next higher feature band within the same major/minor version and uses the latest patch level for that feature band. <br> If not found, rolls forward to the next higher minor and feature band within the same major and uses the latest patch level for that feature band. <br> If not found, fails. |
+| `major`       | Uses the latest patch level for the specified major, minor, and feature band. <br> If not found, rolls forward to the next higher feature band within the same major/minor version and uses the latest patch level for that feature band. <br> If not found, rolls forward to the next higher minor and feature band within the same major and uses the latest patch level for that feature band. <br> If not found, rolls forward to the next higher major, minor, and feature band and uses the latest patch level for that feature band. <br> If not found, fails. |
 | `latestPatch` | Uses the latest installed patch level that matches the requested major, minor, and feature band with a patch level and that is greater or equal than the specified value. <br> If not found, fails. |
-| `latestFeature` | Uses the latest installed feature band and patch level that matches the requested major and minor with a feature band that is greater or equal than the specified value. <br> If not found, fails. |
-| `latestMinor` | Uses the latest installed minor, feature band, and patch level that matches the requested major with a minor that is greater or equal than the specified value. <br> If not found, fails. |
-| `latestMajor` | Uses the latest .NET Core SDK available with a major that is greater or equal than the specified value. <br> If not found, fail. |
+| `latestFeature` | Uses the highest installed feature band and patch level that matches the requested major and minor with a feature band that is greater or equal than the specified value. <br> If not found, fails. |
+| `latestMinor` | Uses the highest installed minor, feature band, and patch level that matches the requested major with a minor that is greater or equal than the specified value. <br> If not found, fails. |
+| `latestMajor` | Uses the highest installed .NET Core SDK with a major that is greater or equal than the specified value. <br> If not found, fail. |
 | `disable`     | Doesn't roll forward. Exact match required. |
 
 ## Examples
@@ -144,10 +144,10 @@ dotnet new globaljson --sdk-version 3.0.100
 
 Starting with .NET Core 3.0, the following rules apply when determining which version of the SDK to use:
 
-- If no *global.json* file is found, or *global.json* doesn't specify an SDK version nor an `allowPrerelease` value, the latest installed SDK version is used (equivalent to setting `rollForward` to `latestMajor`). Whether the latest SDK version can be release or prerelease depends on how `dotnet` is being invoked.
+- If no *global.json* file is found, or *global.json* doesn't specify an SDK version nor an `allowPrerelease` value, the highest installed SDK version is used (equivalent to setting `rollForward` to `latestMajor`). Whether prerelease SDK versions are considered depends on how `dotnet` is being invoked.
   - If you're **not** in Visual Studio, prerelease versions are considered.
   - If you are in Visual Studio, it uses the prerelease status requested. That is, if you're using a Preview version of Visual Studio or you set the **Use previews of the .NET Core SDK** option (under **Tools** > **Options** > **Environment** > **Preview Features**), prerelease versions are considered; otherwise, only release versions are considered.
-- If a *global.json* file is found that doesn't specify an SDK version but it specifies an `allowPrerelease` value, the latest installed SDK version is used (equivalent to setting `rollForward` to `latestMajor`). Whether the latest SDK version can be release or prerelease depends on the value of `allowPrerelease`. `true` indicates prerelease versions are considered; `false` indicates that only release versions are considered.
+- If a *global.json* file is found that doesn't specify an SDK version but it specifies an `allowPrerelease` value, the highest installed SDK version is used (equivalent to setting `rollForward` to `latestMajor`). Whether the latest SDK version can be release or prerelease depends on the value of `allowPrerelease`. `true` indicates prerelease versions are considered; `false` indicates that only release versions are considered.
 - If a *global.json* file is found and it specifies an SDK version:
 
   - If no `rollFoward` value is set, it uses `major` as the default `rollForward` policy. Otherwise, check each value and their behavior in the [rollForward](#rollforward) section.

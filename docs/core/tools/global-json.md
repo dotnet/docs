@@ -1,14 +1,16 @@
 ---
 title: global.json overview
 description: Learn how to use the global.json file to set the .NET Core SDK version when running .NET Core CLI commands.
-ms.date: 12/15/2019
+ms.date: 01/08/2020
 ms.custom: "updateeachrelease"
 ---
 # global.json overview
 
-**This article applies to: ✓** .NET Core 2.x SDK and later versions
+**This article applies to: ✓** .NET Core 2.0 SDK and later versions
 
-The *global.json* file allows you to define which .NET Core SDK version is used when you run .NET Core CLI commands. Selecting the .NET Core SDK is independent from specifying the runtime your project targets. The .NET Core SDK version indicates which versions of the .NET Core CLI tools are used. In general, you want to use the latest version of the tools, so no *global.json* file is needed.
+The *global.json* file allows you to define which .NET Core SDK version is used when you run .NET Core CLI commands. Selecting the .NET Core SDK is independent from specifying the runtime your project targets. The .NET Core SDK version indicates which versions of the .NET Core CLI tools are used. 
+
+In general, you want to use the latest version of the SDK tools, so no *global.json* file is needed. In some advanced scenarios, you might want to control the version of the SDK tools, and this article explains how to do this.
 
 For more information about specifying the runtime instead, see [Target frameworks](../../standard/frameworks.md).
 
@@ -30,7 +32,7 @@ Specifies information about the .NET Core SDK to select.
 
 The version of the .NET Core SDK to use.
 
-Note that this field:
+This field:
 
 - Doesn't have globbing support, that is, the full version number has to be specified.
 - Doesn't support version ranges.
@@ -150,7 +152,7 @@ Starting with .NET Core 3.0, the following rules apply when determining which ve
 - If a *global.json* file is found that doesn't specify an SDK version but it specifies an `allowPrerelease` value, the highest installed SDK version is used (equivalent to setting `rollForward` to `latestMajor`). Whether the latest SDK version can be release or prerelease depends on the value of `allowPrerelease`. `true` indicates prerelease versions are considered; `false` indicates that only release versions are considered.
 - If a *global.json* file is found and it specifies an SDK version:
 
-  - If no `rollFoward` value is set, it uses `major` as the default `rollForward` policy. Otherwise, check each value and their behavior in the [rollForward](#rollforward) section.
+  - If no `rollFoward` value is set, it uses `latestPatch` as the default `rollForward` policy. Otherwise, check each value and their behavior in the [rollForward](#rollforward) section.
   - Whether prerelease versions are considered and what's the default behavior when `allowPrerelease` isn't set is described in the [allowPrerelease](#allowprerelease) section.
 
 ## [.NET Core 2.x](#tab/netcore2x)
@@ -180,7 +182,7 @@ The **patch version** is defined by the last two digits (`yz`) in the last porti
 > [!WARNING]
 > You are working with a preview version of the .NET Core SDK. You can define the SDK version via a global.json file in the current project. More at <https://go.microsoft.com/fwlink/?linkid=869452>
 
-This warning indicates that your project was compiled using a prerelease version of the .NET Core SDK. .NET Core SDK versions have a history and commitment of being high quality. However, if you don't want to use a prerelease version, check the different strategies you can use with .NET Core 3.0 SDK or a later version in the [allowPrerelease](#allowprerelease) section. For SDK versions earlier than .NET Core 3.0 SDK, you need to create a *global.json* file and specify the exact version you want to use. 
+This warning indicates that your project was compiled using a prerelease version of the .NET Core SDK. .NET Core SDK versions have a history and commitment of being high quality. However, if you don't want to use a prerelease version, check the different strategies you can use with the .NET Core 3.0 SDK or a later version in the [allowPrerelease](#allowprerelease) section. For machines that have never had a .NET Core 3.0 or higher Runtime or SDK installed, you need to create a *global.json* file and specify the exact version you want to use.
 
 > [!WARNING]
 > Startup project '{startupProject}' targets framework '.NETCoreApp' version '{targetFrameworkVersion}'. This version of the Entity Framework Core .NET Command-line Tools only supports version 2.0 or higher. For information on using older versions of the tools, see <https://go.microsoft.com/fwlink/?linkid=871254>

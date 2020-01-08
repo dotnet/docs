@@ -209,7 +209,7 @@ The following example of JSON to deserialize contains values that will be deseri
 
 Without the custom converter, deserialization puts a `JsonElement` in each property.
 
-The [unit tests folder](https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle deserialization to Object properties.
+The [unit tests folder](https://github.com/dotnet/corefx/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle deserialization to Object properties.
 
 ### Support Dictionary with non-string key
 
@@ -299,4 +299,4 @@ If you need to make a converter that modifies the behavior of an existing built-
 * [How to migrate from Newtonsoft.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
 * [System.Text.Json API reference](xref:System.Text.Json)
 * [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)
-<!-- * [System.Text.Json roadmap](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Text.Json/roadmap/README.md)-->
+<!-- * [System.Text.Json roadmap](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/roadmap/README.md)-->

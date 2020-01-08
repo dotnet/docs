@@ -134,7 +134,7 @@ To implement type inference for `Object` properties, create a converter like the
 
 In <xref:System.Text.Json>, properties of type <xref:System.Collections.Stack> and <xref:System.Collections.Generic.Stack%601> don't have the same value after making a round trip to and from JSON. The order of a stack's contents is reversed when it's serialized. A custom converter could be implemented to keep stack contents in the same order.
 
-## Omit null-value properties
+### Omit null-value properties
 
 `Newtonsoft.Json` has a global setting that causes null-value properties to be excluded from serialization: [NullValueHandling.Ignore](https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_NullValueHandling.htm). The corresponding option in <xref:System.Text.Json> is <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues%2A>.
 
@@ -460,13 +460,15 @@ while (reader.Read())
 
 ### Use ValueTextEquals for property name lookups
 
-Don't use <xref:System.Text.Json.Utf8JsonReader.ValueSpan%2A> to do byte-by-byte comparisons by calling <xref:System.MemoryExtensions.SequenceEqual%2A> for property name lookups. Call <xref:System.Text.Json.Utf8JsonReader.ValueTextEquals%2A> instead, because that method unescapes any characters that are escaped  in the JSON. Here's an example:
+Don't use <xref:System.Text.Json.Utf8JsonReader.ValueSpan%2A> to do byte-by-byte comparisons by calling <xref:System.MemoryExtensions.SequenceEqual%2A> for property name lookups. Call <xref:System.Text.Json.Utf8JsonReader.ValueTextEquals%2A> instead, because that method unescapes any characters that are escaped  in the JSON. Here's an example that shows how to search for a property that is named "name":
 
-[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/Utf8ReaderFromFile.cs?highlight=10,37)]
+[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/ValueTextEqualsExample.cs?name=SnippetDefineUtf8Var)]
+
+[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/ValueTextEqualsExample.cs?name=SnippetUseUtf8Var&highlight=11)]
 
 ### Read null values into nullable value types
 
-`Newtonsoft.Json` provides APIs like `ReadAsBoolean`, which handle a `Null` `TokenType` for you by returning a `bool?`. The built-in `System.Text.Json` APIs return only non-nullable value types. For example, <xref:System.Text.Json.Utf8JsonReader.GetBoolean?displayProperty=nameWithType> returns a `bool`. It throws an exception if it finds `Null` in the JSON. The following examples show two ways to handle nulls, one by returning a nullable value type and one by returning the default value:
+`Newtonsoft.Json` provides APIs that return <xref:System.Nullable%601>, such as `ReadAsBoolean`, which handles a `Null` `TokenType` for you by returning a `bool?`. The built-in `System.Text.Json` APIs return only non-nullable value types. For example, <xref:System.Text.Json.Utf8JsonReader.GetBoolean?displayProperty=nameWithType> returns a `bool`. It throws an exception if it finds `Null` in the JSON. The following examples show two ways to handle nulls, one by returning a nullable value type and one by returning the default value:
 
 ```csharp
 public bool? ReadAsNullableBoolean()
@@ -478,7 +480,7 @@ public bool? ReadAsNullableBoolean()
     }
     if (_reader.TokenType != JsonTokenType.True && _reader.TokenType != JsonTokenType.False)
     {
-        throw CreateUnexpectedException(ref _reader, "a JSON true or false literal token");
+        throw new JsonException();
     }
     return _reader.GetBoolean();
 }
@@ -494,7 +496,7 @@ public bool ReadAsBoolean(bool defaultValue)
     }
     if (_reader.TokenType != JsonTokenType.True && _reader.TokenType != JsonTokenType.False)
     {
-        throw CreateUnexpectedException(ref _reader, "a JSON true or false literal token");
+        throw new JsonException();
     }
     return _reader.GetBoolean();
 }

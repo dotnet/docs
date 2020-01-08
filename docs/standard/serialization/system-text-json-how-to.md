@@ -764,7 +764,6 @@ The preceding code:
 
   If the file contains a UTF-8 byte order mark (BOM), remove it before passing the bytes to the `Utf8JsonReader`, since the reader expects text. Otherwise, the BOM is considered invalid JSON, and the reader throws an exception.
 
-
 Here's a JSON sample that the preceding code can read. The resulting summary message is "2 out of 4 have names that end with 'University'":
 
 [!code-json[](~/samples/snippets/core/system-text-json/csharp/Universities.json)]

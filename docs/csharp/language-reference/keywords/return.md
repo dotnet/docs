@@ -1,7 +1,5 @@
 ---
 title: "return statement - C# Reference"
-ms.custom: seodec18
-
 ms.date: 07/20/2015
 f1_keywords: 
   - "return_CSharpKeyword"

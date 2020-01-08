@@ -1,7 +1,7 @@
 ---
 title: ASP.NET Core breaking changes - .NET Core
 description: Lists the breaking changes in ASP.NET Core.
-ms.date: "12/18/2019"
+ms.date: "12/20/2019"
 author: "scottaddie"
 ms.author: "scaddie"
 ---
@@ -36,6 +36,10 @@ The following is a list of ASP.NET Core breaking changes by ASP.NET Core version
 ***
 
 [!INCLUDE[Authorization: AddAuthorization overload assembly change](~/includes/core-changes/aspnetcore/3.0/authz-assembly-change.md)]
+
+***
+
+[!INCLUDE[Authorization: IAllowAnonymous removed from AuthorizationFilterContext.Filters](~/includes/core-changes/aspnetcore/3.0/authz-iallowanonymous-removed-from-collection.md)]
 
 ***
 

@@ -49,18 +49,16 @@
   items:
   - name: Get started with C# and Visual Studio Code
     href: tutorials/with-visual-studio-code.md
-  - name: Build a C# Hello World app in Visual Studio
+  - name: Get started with .NET Core on macOS using Visual Studio Code
+    href: tutorials/using-on-macos.md
+  - name: Create your first console app in Visual Studio
     href: tutorials/with-visual-studio.md
-  - name: Build a Visual Basic Hello World app in Visual Studio
-    href: tutorials/vb-with-visual-studio.md
   - name: Debug an application using Visual Studio
     href: tutorials/debugging-with-visual-studio.md
   - name: Publish an application with Visual Studio
     href: tutorials/publishing-with-visual-studio.md
-  - name: Build a .NET Standard library with C# in Visual Studio
+  - name: Create a .NET Standard library in Visual Studio
     href: tutorials/library-with-visual-studio.md
-  - name: Build a .NET Standard library with Visual Basic in Visual Studio
-    href: tutorials/vb-library-with-visual-studio.md
   - name: Test a .NET Standard library in Visual Studio
     href: tutorials/testing-library-with-visual-studio.md
   - name: Consume a .NET Standard library in Visual Studio
@@ -91,8 +89,6 @@
       href: tutorials/cli-templates-create-project-template.md
     - name: 3 - Create a template pack
       href: tutorials/cli-templates-create-template-pack.md
-  - name: Get started with .NET Core on macOS
-    href: tutorials/using-on-macos.md
   - name: Get started with .NET Core using Visual Studio for Mac
     href: tutorials/using-on-mac-vs.md
   - name: Build a complete .NET Core solution on macOS

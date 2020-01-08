@@ -175,5 +175,5 @@ To learn more about topics mentioned in this tutorial, visit the following resou
 
 - [Model Builder Scenarios](../automate-training-with-model-builder.md#scenarios)
 - [Regression](../resources/glossary.md#regression)
-- [Regression Model Metrics](../resources/metrics.md#metrics-for-regression)
+- [Regression Model Metrics](../resources/metrics.md#evaluation-metrics-for-regression-and-recommendation)
 - [NYC TLC Taxi Trip data set](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page)

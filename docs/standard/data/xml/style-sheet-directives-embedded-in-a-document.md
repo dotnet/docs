@@ -3,8 +3,6 @@ title: "Style Sheet Directives Embedded in a Document"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: d79fb295-ebc7-438d-ba1b-05be7d534834
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Style Sheet Directives Embedded in a Document
 

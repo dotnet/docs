@@ -66,6 +66,9 @@
       - name: Develop for multiple platforms with .NET
         tocHref: /dotnet/standard/cross-platform/
         topicHref: /dotnet/standard/cross-platform/index
+      - name: Microsoft.Data.Sqlite
+        tocHref: /dotnet/standard/data/sqlite/
+        topicHref: /dotnet/standard/data/sqlite/index
       - name: XML documents and data
         tocHref: /dotnet/standard/data/xml/
         topicHref: /dotnet/standard/data/xml/index
@@ -223,7 +226,7 @@
           - name: Windows Forms configuration section
             tocHref: /dotnet/framework/configure-apps/file-schema/winforms/
             topicHref: /dotnet/framework/configure-apps/file-schema/winforms/index
-      - name: Data and modeling in the .NET Framework
+      - name: Data and modeling
         tocHref: /dotnet/framework/data/
         topicHref: /dotnet/framework/data/index
         items:
@@ -281,13 +284,13 @@
       - name: Compile apps with .NET Native
         tocHref: /dotnet/framework/net-native/
         topicHref: /dotnet/framework/net-native/index
-      - name: Network programming in the .NET Framework
+      - name: Network programming
         tocHref: /dotnet/framework/network-programming/
         topicHref: /dotnet/framework/network-programming/index
       - name: .NET Framework performance
         tocHref: /dotnet/framework/performance/
         topicHref: /dotnet/framework/performance/index
-      - name: Dynamic programming in the .NET Framework
+      - name: Dynamic programming
         tocHref: /dotnet/framework/reflection-and-codedom/
         topicHref: /dotnet/framework/reflection-and-codedom/index
       - name: Resources in desktop apps

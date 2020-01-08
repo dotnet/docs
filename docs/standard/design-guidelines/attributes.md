@@ -6,7 +6,6 @@ helpviewer_keywords:
   - "attributes [.NET Framework], about"
   - "class library design guidelines [.NET Framework], attributes"
 ms.assetid: ee0038ef-b247-4747-a650-3c5c5cd58d8b
-author: "KrzysztofCwalina"
 ---
 # Attributes
 <xref:System.Attribute?displayProperty=nameWithType> is a base class used to define custom attributes.  

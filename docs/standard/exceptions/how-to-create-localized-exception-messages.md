@@ -1,10 +1,13 @@
 ---
-title: "How to: create user-defined exceptions with localized exception messages"
-description: "Learn how to create user-defined exceptions with localized exception messages"
+title: How to create user-defined exceptions with localized exception messages
+description: Learn how to create user-defined exceptions with localized exception messages
 author: Youssef1313
+dev_langs:
+  - csharp
+  - vb
 ms.date: 09/13/2019
 ---
-# How to: create user-defined exceptions with localized exception messages
+# How to create user-defined exceptions with localized exception messages
 
 In this article, you will learn how to create user-defined exceptions that are inherited from the base <xref:System.Exception> class with localized exception messages using satellite assemblies.
 
@@ -21,6 +24,13 @@ To create a custom exception, follow these steps:
     [Serializable]
     public class StudentNotFoundException : Exception { }
     ```
+    
+    ```vb
+    <Serializable>
+    Public Class StudentNotFoundException
+        Inherits Exception
+    End Class
+    ```
 
 1. Add the default constructors:
 
@@ -36,6 +46,24 @@ To create a custom exception, follow these steps:
         public StudentNotFoundException(string message, Exception inner)
             : base(message, inner) { }
     }
+    ```
+    
+    ```vb
+    <Serializable>
+    Public Class StudentNotFoundException
+        Inherits Exception
+
+        Public Sub New()
+        End Sub
+
+        Public Sub New(message As String)
+            MyBase.New(message)
+        End Sub
+
+        Public Sub New(message As String, inner As Exception)
+            MyBase.New(message, inner)
+        End Sub
+    End Class
     ```
 
 1. Define any additional properties and constructors:
@@ -62,12 +90,41 @@ To create a custom exception, follow these steps:
     }
     ```
 
+    ```vb
+    <Serializable>
+    Public Class StudentNotFoundException
+        Inherits Exception
+
+        Public ReadOnly Property StudentName As String
+
+        Public Sub New()
+        End Sub
+
+        Public Sub New(message As String)
+            MyBase.New(message)
+        End Sub
+
+        Public Sub New(message As String, inner As Exception)
+            MyBase.New(message, inner)
+        End Sub
+
+        Public Sub New(message As String, studentName As String)
+            Me.New(message)
+            StudentName = studentName
+        End Sub
+    End Class
+    ```
+
 ## Create localized exception messages
 
 You have created a custom exception, and you can throw it anywhere with code like the following:
 
 ```csharp
 throw new StudentNotFoundException("The student cannot be found.", "John");
+```
+
+```vb
+Throw New StudentNotFoundException("The student cannot be found.", "John")
 ```
 
 The problem with the previous line is that `"The student cannot be found."` is just a constant string. In a localized application, you want to have different messages depending on user culture.
@@ -94,8 +151,8 @@ To create the localized exception messages:
     throw new StudentNotFoundException(resourceManager.GetString("StudentNotFound"), "John");
     ```
 
-  > [!NOTE]
-  > If the project name is `TestProject` and the resource file *ExceptionMessages.resx* resides in the *Resources* folder of the project, the fully qualified name of the resource file is `TestProject.Resources.ExceptionMessages`.
+    > [!NOTE]
+    > If the project name is `TestProject` and the resource file *ExceptionMessages.resx* resides in the *Resources* folder of the project, the fully qualified name of the resource file is `TestProject.Resources.ExceptionMessages`.
 
 ## See also
 

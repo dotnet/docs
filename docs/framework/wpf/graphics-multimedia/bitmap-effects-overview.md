@@ -28,10 +28,10 @@ Bitmap effects enable designers and developers to apply visual effects to render
 - <xref:System.Windows.Media.Effects.EmbossBitmapEffect> creates a bump mapping of a <xref:System.Windows.Media.Visual> to give the impression of depth and texture from an artificial light source.  
   
 > [!NOTE]
-> [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] bitmap effects are rendered in software mode. Any object that applies an effect will also be rendered in software. Performance is degraded the most when using Bitmap effects on large visuals or animating properties of a Bitmap effect. This is not to say that you should not use Bitmap effects in this way at all, but you should use caution and test thoroughly to ensure that your users are getting the experience you expect.  
+> WPF bitmap effects are rendered in software mode. Any object that applies an effect will also be rendered in software. Performance is degraded the most when using Bitmap effects on large visuals or animating properties of a Bitmap effect. This is not to say that you should not use Bitmap effects in this way at all, but you should use caution and test thoroughly to ensure that your users are getting the experience you expect.  
   
 > [!NOTE]
-> [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] bitmap effects do not support partial trust execution. An application must have full trust permissions to use bitmap effects.  
+> WPF bitmap effects do not support partial trust execution. An application must have full trust permissions to use bitmap effects.  
   
 <a name="applyeffects"></a>   
 ## How to Apply an Effect  
@@ -50,7 +50,7 @@ Bitmap effects enable designers and developers to apply visual effects to render
   
 <a name="customeffects"></a>   
 ## Creating Custom Effects  
- [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] also provides unmanaged interfaces to create custom effects that can be used in managed [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications. For additional reference material for creating custom bitmap effects, see the [Unmanaged WPF Bitmap Effect](https://docs.microsoft.com/previous-versions/windows/desktop/wibe/-wibe-lh) documentation.  
+ WPF also provides unmanaged interfaces to create custom effects that can be used in managed WPF applications. For additional reference material for creating custom bitmap effects, see the [Unmanaged WPF Bitmap Effect](https://docs.microsoft.com/previous-versions/windows/desktop/wibe/-wibe-lh) documentation.  
   
 ## See also
 

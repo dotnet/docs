@@ -12,7 +12,6 @@ helpviewer_keywords:
   - "parameterless constructors"
   - "static constructors"
 ms.assetid: b4496afe-5fa7-4bb0-85ca-70b0ef21e6fc
-author: "KrzysztofCwalina"
 ---
 # Constructor Design
 

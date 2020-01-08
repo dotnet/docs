@@ -3,7 +3,7 @@ title: Containerize an app with Docker tutorial
 description: In this tutorial, you will learn how to containerize a .NET Core application with Docker.
 ms.date: 06/26/2019
 ms.topic: tutorial
-ms.custom: "mvc, seodec18"
+ms.custom: "mvc"
 #Customer intent: As a developer, I want to containerize my .NET Core app so that I can deploy it to the cloud.
 ---
 
@@ -418,7 +418,7 @@ Docker has many different commands that cover what you want to do with your cont
 
 ## Clean up resources
 
-During this tutorial you created containers and images. If you want, delete these resources. Use the following commands to
+During this tutorial, you created containers and images. If you want, delete these resources. Use the following commands to
 
 01. List all containers
 

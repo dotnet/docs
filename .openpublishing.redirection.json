@@ -382,6 +382,14 @@
       "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
     },
     {
+      "source_path": "docs/core/tutorials/vb-with-visual-studio.md",
+      "redirect_url": "/dotnet/core/tutorials/with-visual-studio"
+    },
+    {
+      "source_path": "docs/core/tutorials/vb-library-with-visual-studio.md",
+      "redirect_url": "/dotnet/core/tutorials/library-with-visual-studio"
+    },
+    {
       "source_path": "docs/core/tutorials/using-with-xplat-cli.md",
       "redirect_url": "/dotnet/core/tutorials/cli-create-console-app"
     },
@@ -391,7 +399,7 @@
     },
     {
       "source_path": "docs/core/versions/lts-current.md",
-      "redirect_url": "https://dotnet.microsoft.com/platform/support/policy"
+      "redirect_url": "https://dotnet.microsoft.com/platform/support/policy/dotnet-core"
     },
     {
       "source_path": "docs/core/versions/servicing.md",
@@ -2774,7 +2782,232 @@
     },
     {
       "source_path": "docs/framework/xaml-services/{}-escape-sequence-markup-extension.md",
-      "redirect_url": "/dotnet/framework/xaml-services/escape-sequence-markup-extension",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/escape-sequence-markup-extension",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/framework/xaml-services/built-in-types-for-common-xaml-language-primitives.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/types-for-primitives",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/collections-and-collection-types-for-xaml.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/collections-and-types",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/default-xaml-schema-context-and-wpf-xaml-schema-context.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/default-schema-context",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/defining-custom-types-for-use-with-net-framework-xaml-services.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/define-custom-types",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/escape-sequence-markup-extension.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/escape-sequence-markup-extension",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/generics-in-xaml.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/generics",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/index.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/markup-extensions-for-xaml-overview.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/markup-extensions-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/service-contexts-available-to-type-converters-and-markup-extensions.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/service-contexts-with-type-converters-and-markup-extensions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/type-converters-and-markup-extensions-for-xaml.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/type-converters-and-markup-extensions",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/type-converters-for-xaml-overview.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/type-converters-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/types-migrated-from-wpf-to-system",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/understanding-xaml-node-stream-structures-and-concepts.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/understanding-xaml-node-stream-structures-and-concepts",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/whitespace-processing-in-xaml.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/white-space-processing",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/xaml-2009-language-features.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/xaml-2009-language-features",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/xamlname-grammar.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/xamlname-grammar",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/xaml-namespaces-for-net-framework-xaml-services.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/namespaces",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/xaml-namespace-x-language-features.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/namespace-language-features",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/xaml-related-clr-attributes-for-custom-types-and-libraries.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/clr-attributes-with-custom-types-and-libraries",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/xaml-security-considerations.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/security-considerations",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/xamlservices-class-and-basic-xaml-reading-or-writing.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/basic-reading-writing",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/x-arguments-directive.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/xarguments-directive",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/x-array-markup-extension.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/xarray-markup-extension",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/x-class-directive.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/xclass-directive",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/x-classmodifier-directive.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/xclassmodifier-directive",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/x-code-intrinsic-xaml-type.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/xcode-intrinsic-xaml-type",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/x-factorymethod-directive.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/xfactorymethod-directive",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/x-fieldmodifier-directive.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/xfieldmodifier-directive",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/x-key-directive.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/xkey-directive",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/x-member-directive.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/xmember-directive",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/x-members-directive.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/xmembers-directive",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/xml-character-entities-and-xaml.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/xml-character-entities",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/xml-lang-handling-in-xaml.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/xml-language-handling",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/xml-space-handling-in-xaml.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/xml-space-handling",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/x-name-directive.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/xname-directive",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/x-null-markup-extension.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/xnull-markup-extension",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/x-property-directive.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/xproperty-directive",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/x-reference-markup-extension.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/xreference-markup-extension",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/x-shared-attribute.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/xshared-attribute",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/x-static-markup-extension.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/xstatic-markup-extension",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/x-subclass-directive.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/xsubclass-directive",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/x-typearguments-directive.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/xtypearguments-directive",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/x-type-markup-extension.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/xtype-markup-extension",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/x-uid-directive.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/xuid-directive",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/xaml-services/x-xdata-intrinsic-xaml-type.md",
+      "redirect_url": "/dotnet/desktop-wpf/xaml-services/xdata-intrinsic-xaml-type",
       "redirect_document_id": true
     },
     {
@@ -2902,6 +3135,11 @@
     {
       "source_path": "docs/machine-learning/tutorials/movie-recommmendation.md",
       "redirect_url": "/dotnet/machine-learning/tutorials/movie-recommendation",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/machine-learning/tutorials/ml-cli.md",
+      "redirect_url": "/dotnet/machine-learning/tutorials/sentiment-analysis-cli",
       "redirect_document_id": true
     },
     {
@@ -3537,8 +3775,12 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "docs/visual-basic/getting-started/breaking-changes-in-visual-studio.md",
+      "redirect_url": "https://docs.microsoft.com/visualstudio/porting/porting-migrating-and-upgrading-visual-studio-projects?view=vs-2015"
+    },
+    {
       "source_path": "docs/visual-basic/getting-started/breaking-changes-in-visual-studio-2015.md",
-      "redirect_url": "/dotnet/visual-basic/getting-started/breaking-changes-in-visual-studio"
+      "redirect_url": "https://docs.microsoft.com/visualstudio/porting/porting-migrating-and-upgrading-visual-studio-projects?view=vs-2015"
     },
     {
       "source_path": "docs/visual-basic/language-reference/data-types/data-type-summary.md",

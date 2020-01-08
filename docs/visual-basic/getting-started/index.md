@@ -12,46 +12,43 @@ This section of the documentation helps you get started with Visual Basic applic
 
 ## Get started with Visual Basic and .NET Core
 
-[Build a Visual Basic Hello World application with .NET Core in Visual Studio 2017](../../core/tutorials/vb-with-visual-studio.md)
+[Build a Hello World application with .NET Core in Visual Studio](../../core/tutorials/with-visual-studio.md)
 
-[Build a class library with Visual Basic and .NET Core in Visual Studio 2017](../../core/tutorials/vb-library-with-visual-studio.md)
+[Build a class library with .NET Standard in Visual Studio](../../core/tutorials/library-with-visual-studio.md)
 
 ## Additional information
 
-- [What's new for Visual Basic](whats-new.md)\
+- [What's new for Visual Basic](whats-new.md)
 Lists new features in each of the versions of Visual Basic .NET.
 
-- [Visual Basic Breaking Changes in Visual Studio](breaking-changes-in-visual-studio.md)\
-Lists changes in this release that might prevent an application from compiling or change its run-time behavior.
-
-- [Additional Resources for Visual Basic Programmers](additional-resources.md)\
+- [Additional Resources for Visual Basic Programmers](additional-resources.md)
 Provides a list of Web sites and newsgroups that can help you find answers to common problems.
 
 ## See also
 
-- [Get Visual Basic](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)  
+- [Get Visual Basic](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
 Provides download links for Visual Studio versions that include Visual Basic support, including free versions.
 
-- [Object-Oriented Programming](../programming-guide/concepts/object-oriented-programming.md)\
+- [Object-Oriented Programming](../programming-guide/concepts/object-oriented-programming.md)
 Provides links to pages that introduce object-oriented programming and describe how to create your own objects and how to use objects to simplify your coding.
 
-- [Samples](https://github.com/dotnet/samples/tree/master/snippets/visualbasic)\
+- [Samples](https://github.com/dotnet/samples/tree/master/snippets/visualbasic)
 Provides links to sample code in Visual Basic.
 
-- [Walkthroughs](../../visual-basic/walkthroughs.md)\
+- [Walkthroughs](../walkthroughs.md)
 Provides a list of Help pages that demonstrate aspects of the Visual Basic language.
 
-- [Feedback options for Visual Studio](/visualstudio/ide/feedback-options)\
+- [Feedback options for Visual Studio](/visualstudio/ide/feedback-options)
 Covers how to receive support and give feedback.
 
-- [Visual Studio](/visualstudio/)\
+- [Visual Studio](/visualstudio/)
 Provides links into the Visual Studio documentation.
 
-- [C#](../../csharp/index.yml)\
+- [C#](../../csharp/index.yml)
 Provides links into the documentation on application development with Visual C#.
 
-- [Visual C++](/cpp/)\
+- [Visual C++](/cpp/)
 Provides links into the Visual C++ documentation.
 
-- [Office and SharePoint Development](/visualstudio/vsto/office-and-sharepoint-development-in-visual-studio)\
+- [Office and SharePoint Development](/visualstudio/vsto/office-and-sharepoint-development-in-visual-studio)
 Provides information about using Microsoft Office and Visual Studio as part of a business application.

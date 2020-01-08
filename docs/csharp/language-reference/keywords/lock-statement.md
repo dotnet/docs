@@ -1,6 +1,5 @@
 ---
 title: "lock statement - C# reference"
-ms.custom: seodec18
 description: "Use the C# lock statement to synchronize thread access to a shared resource"
 ms.date: 10/01/2018
 f1_keywords: 

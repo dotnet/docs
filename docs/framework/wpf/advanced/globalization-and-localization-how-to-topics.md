@@ -25,6 +25,6 @@ The topics in this section describe how to develop world-ready applications.
   
  <xref:System.Resources.NeutralResourcesLanguageAttribute>  
   
- [xml:lang Handling in XAML](../../xaml-services/xml-lang-handling-in-xaml.md)  
+ [xml:lang Handling in XAML](../../../desktop-wpf/xaml-services/xml-language-handling.md)  
   
 ## Related Sections

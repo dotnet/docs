@@ -14,7 +14,7 @@ This article organizes the affected API members by namespace.
 
 ## System
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.AppDomain.CreateDomain%2A?displayProperty=nameWithType> | All |
@@ -30,7 +30,7 @@ This article organizes the affected API members by namespace.
 
 ## System.CodeDom.Compiler
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.CodeDom.Compiler.CodeDomProvider.CompileAssemblyFromDom%2A?displayProperty=nameWithType> | All |
@@ -39,7 +39,7 @@ This article organizes the affected API members by namespace.
 
 ## System.Collections.Specialized
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.Collections.Specialized.NameObjectCollectionBase.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
@@ -48,14 +48,14 @@ This article organizes the affected API members by namespace.
 
 ## System.Configuration
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.Configuration.RsaProtectedConfigurationProvider?displayProperty=nameWithType> (all members) | All |
 
 ## System.Console
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.Console.Beep?displayProperty=nameWithType> | Unix |
@@ -74,14 +74,14 @@ This article organizes the affected API members by namespace.
 
 ## System.Data.Common
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.Data.Common.DbDataReader.GetSchemaTable%2A?displayProperty=nameWithType> (throws <xref:System.NotSupportedException>) | All |
 
 ## System.Diagnostics.Process
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.Diagnostics.Process.MaxWorkingSet?displayProperty=nameWithType> (set only) | Linux |
@@ -100,7 +100,7 @@ This article organizes the affected API members by namespace.
 
 ## System.IO
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.IO.FileSystemInfo.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
@@ -108,21 +108,21 @@ This article organizes the affected API members by namespace.
 
 ## System.IO.IsolatedStorage
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.IO.IsolatedStorage.IsolatedStorageFile.GetStore%2A?displayProperty=nameWithType> (when specifying identity or evidence types) | All |
 
 ## System.IO.MemoryMappedFiles
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateNew(System.String,System.Int64)?displayProperty=nameWithType> (when passed a named, memory-mapped file) | non-Windows |
 
 ## System.IO.Pipes
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.IO.Pipes.NamedPipeClientStream.NumberOfServerInstances?displayProperty=nameWithType> | Unix |
@@ -134,14 +134,14 @@ This article organizes the affected API members by namespace.
 
 ## System.Media
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.Media.SoundPlayer.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
 
 ## System.Net
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.Net.AuthenticationManager.Authenticate(System.String,System.Net.WebRequest,System.Net.ICredentials)?displayProperty=nameWithType> | All |
@@ -164,28 +164,28 @@ This article organizes the affected API members by namespace.
 
 ## System.Net.NetworkInformation
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.Net.NetworkInformation.Ping.Send%2A?displayProperty=nameWithType> | Windows (UWP) |
 
 ## System.Net.Sockets
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.Net.Sockets.Socket.DuplicateAndClose(System.Int32)?displayProperty=nameWithType> | All |
 
 ## System.Net.WebSockets
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.Net.WebSockets.WebSocket.RegisterPrefixes?displayProperty=nameWithType> | All |
 
 ## System.Reflection
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.Reflection.Assembly.ReflectionOnlyLoad%2A?displayProperty=nameWithType> | All |
@@ -198,14 +198,14 @@ This article organizes the affected API members by namespace.
 
 ## System.Runtime.CompilerServices
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.Runtime.CompilerServices.DebugInfoGenerator.CreatePdbGenerator?displayProperty=nameWithType> | All |
 
 ## System.Runtime.InteropServices
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.Runtime.InteropServices.Marshal.GetIDispatchForObject(System.Object)?displayProperty=nameWithType> | All |
@@ -218,14 +218,14 @@ This article organizes the affected API members by namespace.
 
 ## System.Runtime.Serialization
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.Runtime.Serialization.XsdDataContractExporter.Schemas?displayProperty=nameWithType> | All |
 
 ## System.Security
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.Security.CodeAccessPermission.Deny?displayProperty=nameWithType> | All |
@@ -245,7 +245,7 @@ This article organizes the affected API members by namespace.
 
 ## System.Security.Claims
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.Security.Claims.ClaimsPrincipal.%23ctor?displayProperty=nameWithType> | All |
@@ -256,7 +256,7 @@ This article organizes the affected API members by namespace.
 
 ## System.Security.Cryptography
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create(System.String)?displayProperty=nameWithType> | All |
@@ -292,7 +292,7 @@ This article organizes the affected API members by namespace.
 
 ## System.Security.Cryptography.Pkcs
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.Security.Cryptography.Pkcs.CmsSigner.%23ctor(System.Security.Cryptography.CspParameters)?displayProperty=nameWithType> | All |
@@ -301,7 +301,7 @@ This article organizes the affected API members by namespace.
 
 ## System.Security.Cryptography.X509Certificates
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.Security.Cryptography.X509Certificates.X509Certificate.Import%2A?displayProperty=nameWithType> | All |
@@ -311,35 +311,35 @@ This article organizes the affected API members by namespace.
 
 ## System.Security.Authentication.ExtendedProtection
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
 
 ## System.Security.Policy
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.Security.Policy.Hash.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
 
 ## System.ServiceProcess.ServiceController
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.ServiceProcess.TimeoutException.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
 
 ## System.Text.RegularExpressions
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> | All |
 
 ## System.Threading
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.Threading.CompressedStack.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
@@ -351,7 +351,7 @@ This article organizes the affected API members by namespace.
 
 ## System.Xml
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.Xml.XmlDictionaryReader.CreateMtomReader(System.Byte[],System.Int32,System.Int32,System.Text.Encoding[],System.String,System.Xml.XmlDictionaryReaderQuotas,System.Int32,System.Xml.OnXmlDictionaryReaderClose)?displayProperty=nameWithType> | All |
@@ -360,7 +360,7 @@ This article organizes the affected API members by namespace.
 
 ## System.Xml.Xsl
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol1BreakAll"]
 > | Member | Platform |
 > | - | - |
 > | <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A?displayProperty=nameWithType> (if `msxsl:script` is used in the stylesheet) | All |

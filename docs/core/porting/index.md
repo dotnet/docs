@@ -15,7 +15,7 @@ You might have code that currently runs on the .NET Framework that you're intere
 
 We recommend you use the following process when porting your project to .NET Core:
 
-1. Retarget all projects you wish to port to target the .NET Framework 4.7.2 or higher.
+1. Retarget all projects you wish to port to target .NET Framework 4.7.2 or higher.
 
    This step ensures that you can use API alternatives for .NET Framework-specific targets when .NET Core doesn't support a particular API.
 

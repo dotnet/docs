@@ -85,6 +85,8 @@ Model Builder supports datasets in .tsv, .csv, .txt formats, as well as SQL data
 
 If the dataset is made up of images, the supported file types are `.jpg` and `.png`.
 
+For more information, see [Load training data into Model Builder](how-to-guides/load-data-model-builder.md).
+
 ### Choose the output to predict (label)
 
 A dataset is a table of rows of training examples, and columns of attributes. Each row has:

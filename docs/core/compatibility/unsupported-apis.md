@@ -18,8 +18,8 @@ This article organizes the affected API members by namespace.
 | - | - |
 | <xref:System.AppDomain.CreateDomain%2A?displayProperty=nameWithType> | All |
 | <xref:System.AppDomain.ExecuteAssembly(System.String,System.String[],System.Byte[],System.Configuration.Assemblies.AssemblyHashAlgorithm)?displayProperty=nameWithType> | All |
-| <xref:System.Console.CapsLock?displayProperty=nameWithType> | Unix |
-| <xref:System.Console.NumberLock?displayProperty=nameWithType> | Unix |
+| <xref:System.Console.CapsLock?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Console.NumberLock?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Delegate.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
 | <xref:System.Exception.SerializeObjectState?displayProperty=nameWithType> | All |
 | <xref:System.MarshalByRefObject.GetLifetimeService?displayProperty=nameWithType> | All |
@@ -53,19 +53,19 @@ This article organizes the affected API members by namespace.
 
 | Member | Platform |
 | - | - |
-| <xref:System.Console.Beep?displayProperty=nameWithType> | Unix |
-| <xref:System.Console.BufferHeight?displayProperty=nameWithType> (set only) | Unix |
-| <xref:System.Console.BufferWidth?displayProperty=nameWithType> (set only) | Unix |
-| <xref:System.Console.CursorSize?displayProperty=nameWithType> (set only) | Unix |
-| <xref:System.Console.CursorVisible?displayProperty=nameWithType> (get only) | Unix |
-| <xref:System.Console.MoveBufferArea%2A?displayProperty=nameWithType> | Unix |
-| <xref:System.Console.SetWindowPosition%2A?displayProperty=nameWithType> | Unix |
-| <xref:System.Console.SetWindowSize%2A?displayProperty=nameWithType> | Unix |
-| <xref:System.Console.Title?displayProperty=nameWithType> (get only) | Unix |
-| <xref:System.Console.WindowHeight?displayProperty=nameWithType> (set only) | Unix |
-| <xref:System.Console.WindowLeft?displayProperty=nameWithType> (set only) | Unix |
-| <xref:System.Console.WindowTop?displayProperty=nameWithType> (set only) | Unix |
-| <xref:System.Console.WindowWidth?displayProperty=nameWithType> (set only) | Unix |
+| <xref:System.Console.Beep?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Console.BufferHeight?displayProperty=nameWithType> (set only) | Linux and macOS |
+| <xref:System.Console.BufferWidth?displayProperty=nameWithType> (set only) | Linux and macOS |
+| <xref:System.Console.CursorSize?displayProperty=nameWithType> (set only) | Linux and macOS |
+| <xref:System.Console.CursorVisible?displayProperty=nameWithType> (get only) | Linux and macOS |
+| <xref:System.Console.MoveBufferArea%2A?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Console.SetWindowPosition%2A?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Console.SetWindowSize%2A?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Console.Title?displayProperty=nameWithType> (get only) | Linux and macOS |
+| <xref:System.Console.WindowHeight?displayProperty=nameWithType> (set only) | Linux and macOS |
+| <xref:System.Console.WindowLeft?displayProperty=nameWithType> (set only) | Linux and macOS |
+| <xref:System.Console.WindowTop?displayProperty=nameWithType> (set only) | Linux and macOS |
+| <xref:System.Console.WindowWidth?displayProperty=nameWithType> (set only) | Linux and macOS |
 
 ## System.Data.Common
 
@@ -79,17 +79,17 @@ This article organizes the affected API members by namespace.
 | - | - |
 | <xref:System.Diagnostics.Process.MaxWorkingSet?displayProperty=nameWithType> (set only) | Linux |
 | <xref:System.Diagnostics.Process.MinWorkingSet?displayProperty=nameWithType> (set only) | Linux |
-| <xref:System.Diagnostics.Process.MaxWorkingSet?displayProperty=nameWithType> (for other processes) | OSX |
-| <xref:System.Diagnostics.Process.ProcessorAffinity?displayProperty=nameWithType> | OSX |
-| <xref:System.Diagnostics.Process.MainWindowHandle?displayProperty=nameWithType> | Unix |
-| <xref:System.Diagnostics.Process.Start%2A?displayProperty=nameWithType> | Unix |
-| <xref:System.Diagnostics.ProcessStartInfo.UserName?displayProperty=nameWithType> | Unix |
-| <xref:System.Diagnostics.ProcessStartInfo.PasswordInClearText?displayProperty=nameWithType> | Unix |
-| <xref:System.Diagnostics.ProcessStartInfo.Domain?displayProperty=nameWithType> | Unix |
-| <xref:System.Diagnostics.ProcessStartInfo.LoadUserProfile?displayProperty=nameWithType> | Unix |
-| <xref:System.Diagnostics.ProcessThread.BasePriority?displayProperty=nameWithType> (set only) | Unix |
-| <xref:System.Diagnostics.ProcessThread.BasePriority?displayProperty=nameWithType> (get only) | OSX |
-| <xref:System.Diagnostics.ProcessThread.ProcessorAffinity?displayProperty=nameWithType> (set only) | Unix |
+| <xref:System.Diagnostics.Process.MaxWorkingSet?displayProperty=nameWithType> (for other processes) | macOS |
+| <xref:System.Diagnostics.Process.ProcessorAffinity?displayProperty=nameWithType> | macOS |
+| <xref:System.Diagnostics.Process.MainWindowHandle?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Diagnostics.Process.Start%2A?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Diagnostics.ProcessStartInfo.UserName?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Diagnostics.ProcessStartInfo.PasswordInClearText?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Diagnostics.ProcessStartInfo.Domain?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Diagnostics.ProcessStartInfo.LoadUserProfile?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Diagnostics.ProcessThread.BasePriority?displayProperty=nameWithType> (set only) | Linux and macOS |
+| <xref:System.Diagnostics.ProcessThread.BasePriority?displayProperty=nameWithType> (get only) | macOS |
+| <xref:System.Diagnostics.ProcessThread.ProcessorAffinity?displayProperty=nameWithType> (set only) | Linux and macOS |
 
 ## System.IO
 
@@ -108,18 +108,18 @@ This article organizes the affected API members by namespace.
 
 | Member | Platform |
 | - | - |
-| <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateNew(System.String,System.Int64)?displayProperty=nameWithType> (when passed a named, memory-mapped file) | non-Windows |
+| <xref:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateNew(System.String,System.Int64)?displayProperty=nameWithType> (when passed a named, memory-mapped file) | Linux and macOS |
 
 ## System.IO.Pipes
 
 | Member | Platform |
 | - | - |
-| <xref:System.IO.Pipes.NamedPipeClientStream.NumberOfServerInstances?displayProperty=nameWithType> | Unix |
-| <xref:System.IO.Pipes.NamedPipeServerStream.GetImpersonationUserName?displayProperty=nameWithType> | Unix |
-| <xref:System.IO.Pipes.PipeStream.InBufferSize?displayProperty=nameWithType> | Unix |
-| <xref:System.IO.Pipes.PipeStream.OutBufferSize?displayProperty=nameWithType> | Unix |
-| <xref:System.IO.Pipes.PipeStream.ReadMode?displayProperty=nameWithType> (set only) | Unix |
-| <xref:System.IO.Pipes.PipeStream.WaitForPipeDrain?displayProperty=nameWithType> | Unix |
+| <xref:System.IO.Pipes.NamedPipeClientStream.NumberOfServerInstances?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.IO.Pipes.NamedPipeServerStream.GetImpersonationUserName?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.IO.Pipes.PipeStream.InBufferSize?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.IO.Pipes.PipeStream.OutBufferSize?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.IO.Pipes.PipeStream.ReadMode?displayProperty=nameWithType> (set only) | Linux and macOS |
+| <xref:System.IO.Pipes.PipeStream.WaitForPipeDrain?displayProperty=nameWithType> | Linux and macOS |
 
 ## System.Media
 
@@ -193,9 +193,9 @@ This article organizes the affected API members by namespace.
 | <xref:System.Runtime.InteropServices.RuntimeEnvironment.SystemConfigurationFile?displayProperty=nameWithType> | All |
 | <xref:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsIntPtr(System.Guid,System.Guid)?displayProperty=nameWithType> | All |
 | <xref:System.Runtime.InteropServices.RuntimeEnvironment.GetRuntimeInterfaceAsObject(System.Guid,System.Guid)?displayProperty=nameWithType> | All |
-| <xref:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.StringToHString(System.String)?displayProperty=nameWithType> | non-Windows |
-| <xref:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.PtrToStringHString(System.IntPtr)?displayProperty=nameWithType> | non-Windows |
-| <xref:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.FreeHString(System.IntPtr)?displayProperty=nameWithType> | non-Windows |
+| <xref:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.StringToHString(System.String)?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.PtrToStringHString(System.IntPtr)?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Runtime.InteropServices.WindowsRuntime.WindowsRuntimeMarshal.FreeHString(System.IntPtr)?displayProperty=nameWithType> | Linux and macOS |
 
 ## System.Runtime.Serialization
 
@@ -237,19 +237,19 @@ This article organizes the affected API members by namespace.
 | Member | Platform |
 | - | - |
 | <xref:System.Security.Cryptography.AsymmetricAlgorithm.Create(System.String)?displayProperty=nameWithType> | All |
-| <xref:System.Security.Cryptography.CspKeyContainerInfo.%23ctor%2A?displayProperty=nameWithType> | non-Windows |
-| <xref:System.Security.Cryptography.CspKeyContainerInfo.Accessible?displayProperty=nameWithType> | non-Windows |
-| <xref:System.Security.Cryptography.CspKeyContainerInfo.Exportable?displayProperty=nameWithType> | non-Windows |
-| <xref:System.Security.Cryptography.CspKeyContainerInfo.HardwareDevice?displayProperty=nameWithType> | non-Windows |
-| <xref:System.Security.Cryptography.CspKeyContainerInfo.KeyContainerName?displayProperty=nameWithType> | non-Windows |
-| <xref:System.Security.Cryptography.CspKeyContainerInfo.KeyNumber?displayProperty=nameWithType> | non-Windows |
-| <xref:System.Security.Cryptography.CspKeyContainerInfo.MachineKeyStore?displayProperty=nameWithType> | non-Windows |
-| <xref:System.Security.Cryptography.CspKeyContainerInfo.Protected?displayProperty=nameWithType> | non-Windows |
-| <xref:System.Security.Cryptography.CspKeyContainerInfo.ProviderName?displayProperty=nameWithType> | non-Windows |
-| <xref:System.Security.Cryptography.CspKeyContainerInfo.ProviderType?displayProperty=nameWithType> | non-Windows |
-| <xref:System.Security.Cryptography.CspKeyContainerInfo.RandomlyGenerated?displayProperty=nameWithType> | non-Windows |
-| <xref:System.Security.Cryptography.CspKeyContainerInfo.Removable?displayProperty=nameWithType> | non-Windows |
-| <xref:System.Security.Cryptography.CspKeyContainerInfo.UniqueKeyContainerName?displayProperty=nameWithType> | non-Windows |
+| <xref:System.Security.Cryptography.CspKeyContainerInfo.%23ctor%2A?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.CspKeyContainerInfo.Accessible?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.CspKeyContainerInfo.Exportable?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.CspKeyContainerInfo.HardwareDevice?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.CspKeyContainerInfo.KeyContainerName?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.CspKeyContainerInfo.KeyNumber?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.CspKeyContainerInfo.MachineKeyStore?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.CspKeyContainerInfo.Protected?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.CspKeyContainerInfo.ProviderName?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.CspKeyContainerInfo.ProviderType?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.CspKeyContainerInfo.RandomlyGenerated?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.CspKeyContainerInfo.Removable?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.CspKeyContainerInfo.UniqueKeyContainerName?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.HashAlgorithm.Create?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.HashAlgorithm.Create(System.String)?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.HMAC.Create?displayProperty=nameWithType> | All |
@@ -260,8 +260,8 @@ This article organizes the affected API members by namespace.
 | <xref:System.Security.Cryptography.HMAC.Initialize%2A?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.KeyedHashAlgorithm.Create?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.KeyedHashAlgorithm.Create(System.String)?displayProperty=nameWithType> | All |
-| <xref:System.Security.Cryptography.ProtectedData.Protect%2A?displayProperty=nameWithType> | non-Windows |
-| <xref:System.Security.Cryptography.ProtectedData.Unprotect%2A?displayProperty=nameWithType> | non-Windows |
+| <xref:System.Security.Cryptography.ProtectedData.Protect%2A?displayProperty=nameWithType> | Linux and macOS |
+| <xref:System.Security.Cryptography.ProtectedData.Unprotect%2A?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.RSA.FromXmlString%2A?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.RSA.ToXmlString%2A?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.SymmetricAlgorithm.Create?displayProperty=nameWithType> | All |
@@ -281,7 +281,7 @@ This article organizes the affected API members by namespace.
 | - | - |
 | <xref:System.Security.Cryptography.X509Certificates.X509Certificate.Import%2A?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
-| <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.FriendlyName?displayProperty=nameWithType> (set only) | non-Windows |
+| <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.FriendlyName?displayProperty=nameWithType> (set only) | Linux and macOS |
 | <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.PrivateKey?displayProperty=nameWithType> (set only) | All |
 
 ## System.Security.Authentication.ExtendedProtection

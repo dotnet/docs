@@ -1,7 +1,6 @@
 ---
-name: Doc request
-about: Request a new article to help us improve
-
+name: .NET doc request
+about: Request a new article to provide missing information
 ---
 
 **Help us make content visible**

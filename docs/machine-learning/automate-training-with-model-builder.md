@@ -67,7 +67,7 @@ You can use the price prediction template for your scenario if you want to predi
 
 This scenario is a special case of multiclass classification, where the input data to be categorized is a set of images.
 
-Image classification can be used to identify images of different types. For example, different types of terrain or animals or manufacturing defects.
+Image classification can be used to identify images of different categories. For example, different types of terrain or animals or manufacturing defects.
 
 You can use the image classification template for your scenario if you have a set of images, and you want to classify the images into different categories.
 

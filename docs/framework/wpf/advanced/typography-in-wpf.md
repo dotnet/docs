@@ -53,7 +53,7 @@ Text with ClearType y-direction antialiasing
   
 - Font behavior independent of global settings, such as system locale.  
   
-- Separate <xref:System.Windows.FontWeight>, <xref:System.Windows.FontStretch>, and <xref:System.Windows.FontStyle> types for defining a <xref:System.Windows.Media.FontFamily>. This provides greater flexibility than in [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] programming, in which Boolean combinations of italic and bold are used to define a font family.  
+- Separate <xref:System.Windows.FontWeight>, <xref:System.Windows.FontStretch>, and <xref:System.Windows.FontStyle> types for defining a <xref:System.Windows.Media.FontFamily>. This provides greater flexibility than in Win32 programming, in which Boolean combinations of italic and bold are used to define a font family.  
   
 - Writing direction (horizontal versus vertical) handled independent of font name.  
   

@@ -176,11 +176,11 @@ Although these rules very strongly restrict usage, they do so to fulfill the pro
 Byref returns from F# functions or members can be produced and consumed. When consuming a `byref`-returning method, the value is implicitly dereferenced. For example:
 
 ```fsharp
+let mutable sum = 0
 let safeSum(bytes: Span<byte>) =
-    let mutable sum = 0
     for i in 0 .. bytes.Length - 1 do
         sum <- sum + int bytes.[i]
-    sum
+    &sum
 
 let sum = safeSum(mySpanOfBytes)
 printfn "%d" sum // 'sum' is of type 'int'

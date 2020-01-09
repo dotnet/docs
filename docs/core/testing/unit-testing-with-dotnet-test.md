@@ -27,24 +27,24 @@ In this section, a solution is created that contains the source and test project
 
 The following instructions provide the steps to create the test solution. See [Commands to create test solution](#create-test-cmd) for instructions to create the test solution in one step.
 
-* Open a shell window.
-* Run the following command:
+- Open a shell window.
+- Run the following command:
 
   ```dotnetcli
   dotnet new sln -o unit-testing-using-dotnet-test
   ```
 
   The [`dotnet new sln`](../tools/dotnet-new.md) command creates a new solution in the *unit-testing-using-dotnet-test* directory.
-* Change directory to the *unit-testing-using-dotnet-test* folder.
-* Run the following command:
+- Change directory to the *unit-testing-using-dotnet-test* folder.
+- Run the following command:
 
   ```dotnetcli
   dotnet new classlib -o PrimeService
   ```
 
    The [`dotnet new classlib`](../tools/dotnet-new.md) command creates a new class library project  in the *PrimeService* folder. The new class library will contain the code to be tested.
-* Rename *Class1.cs* to *PrimeService.cs*.
-* Replace the code in *PrimeService.cs* with the following code:
+- Rename *Class1.cs* to *PrimeService.cs*.
+- Replace the code in *PrimeService.cs* with the following code:
   
   ```csharp
     using System;
@@ -61,38 +61,38 @@ The following instructions provide the steps to create the test solution. See [C
     }
   ```
 
-* The preceding code:
-  * Throws a <xref:System.NotImplementedException> with a message indicating it's not implemented.
-  * Is updated later in the tutorial.
+- The preceding code:
+  - Throws a <xref:System.NotImplementedException> with a message indicating it's not implemented.
+  - Is updated later in the tutorial.
 
 <!-- preceding code shows an english bias. Message makes no sense outside english -->
 
-* In the *unit-testing-using-dotnet-test* directory, run the following command to add the class library project to the solution:
+- In the *unit-testing-using-dotnet-test* directory, run the following command to add the class library project to the solution:
 
   ```dotnetcli
   dotnet sln add ./PrimeService/PrimeService.csproj
   ```
 
-* Create the *PrimeService.Tests* project by running the following command:
+- Create the *PrimeService.Tests* project by running the following command:
 
   ```dotnetcli
   dotnet new xunit -o PrimeService.Tests
   ```
 
-* The preceding command:
-  * Creates the *PrimeService.Tests* project in the *PrimeService.Tests* directory. The test project uses [xUnit](https://xunit.github.io/) as the test library.
-  * Configures the test runner by adding the following `<PackageReference />`elements to the project file:
-    * "Microsoft.NET.Test.Sdk"
-    * "xunit"
-    * "xunit.runner.visualstudio"
+- The preceding command:
+  - Creates the *PrimeService.Tests* project in the *PrimeService.Tests* directory. The test project uses [xUnit](https://xunit.github.io/) as the test library.
+  - Configures the test runner by adding the following `<PackageReference />`elements to the project file:
+    - "Microsoft.NET.Test.Sdk"
+    - "xunit"
+    - "xunit.runner.visualstudio"
 
-* Add the test project to the solution file by running the following command:
+- Add the test project to the solution file by running the following command:
 
   ```dotnetcli
   dotnet sln add ./PrimeService.Tests/PrimeService.Tests.csproj
   ```
 
-* Add the `PrimeService` class library as a dependency to the *PrimeService.Tests* project:
+- Add the `PrimeService` class library as a dependency to the *PrimeService.Tests* project:
 
   ```dotnetcli
   dotnet add ./PrimeService.Tests/PrimeService.Tests.csproj reference ./PrimeService/PrimeService.csproj  
@@ -125,9 +125,9 @@ A popular approach in test driven development (TDD) is to write a test before im
 
 Update the *PrimeService.Tests* project:
 
-* Delete *PrimeService.Tests/UnitTest1.cs*.
-* Create a *PrimeService.Tests/PrimeService_IsPrimeShould.cs*  file.
-* Replace the code in *PrimeService_IsPrimeShould.cs* with the following code:
+- Delete *PrimeService.Tests/UnitTest1.cs*.
+- Create a *PrimeService.Tests/PrimeService_IsPrimeShould.cs*  file.
+- Replace the code in *PrimeService_IsPrimeShould.cs* with the following code:
 
 ```csharp
 using Xunit;

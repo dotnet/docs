@@ -16,12 +16,12 @@ Learn how to forecast demand for a bike rental service using univariate time ser
 In this tutorial, you learn how to:
 > [!div class="checklist"]
 >
-> * Understand the problem
-> * Load data from a database
-> * Create a forecasting model
-> * Evaluate forecasting model
-> * Save a forecasting model
-> * Use a forecasting model
+> - Understand the problem
+> - Load data from a database
+> - Create a forecasting model
+> - Evaluate forecasting model
+> - Save a forecasting model
+> - Use a forecasting model
 
 ## Prerequisites
 

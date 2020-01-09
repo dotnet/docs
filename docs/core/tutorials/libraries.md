@@ -3,9 +3,8 @@ title: Developing Libraries with Cross Platform Tools
 description: Learn how to create .NET Core libraries using the .NET Core CLI tools. You'll create a library that supports multiple frameworks.
 author: cartermp
 ms.date: 05/01/2017
-ms.custom: seodec18
 ---
-# Developing Libraries with Cross Platform Tools
+# Develop libraries with cross-platform tools
 
 This article covers how to write libraries for .NET using cross-platform CLI tools. The CLI provides an efficient and low-level experience that works across any supported OS. You can still build libraries with Visual Studio, and if that is your preferred experience [refer to the Visual Studio guide](library-with-visual-studio.md).
 
@@ -15,9 +14,9 @@ You need [the .NET Core SDK and CLI](https://dotnet.microsoft.com/download) inst
 
 For the sections of this document dealing with .NET Framework versions, you need the [.NET Framework](https://dotnet.microsoft.com) installed on a Windows machine.
 
-Additionally, if you wish to support older .NET Framework targets, you need to install targeting/developer packs for older framework versions from the [.NET download archives page](https://dotnet.microsoft.com/download/archives). Refer to this table:
+Additionally, if you wish to support older .NET Framework targets, you need to install targeting packs or developer packs from the [.NET download archives page](https://dotnet.microsoft.com/download/archives). Refer to this table:
 
-| .NET Framework Version | What to download                                       |
+| .NET Framework version | What to download                                       |
 | ---------------------- | ------------------------------------------------------ |
 | 4.6.1                  | .NET Framework 4.6.1 Targeting Pack                    |
 | 4.6                    | .NET Framework 4.6 Targeting Pack                      |
@@ -29,19 +28,19 @@ Additionally, if you wish to support older .NET Framework targets, you need to i
 
 ## How to target the .NET Standard
 
-If you're not quite familiar with the .NET Standard, refer to the [.NET Standard](../../standard/net-standard.md) to learn more.
+If you're not familiar with .NET Standard, refer to [.NET Standard](../../standard/net-standard.md) to learn more.
 
-In that article, there is a table which maps .NET Standard versions to various implementations:
+In that article, there is a table that maps .NET Standard versions to various implementations:
 
 [!INCLUDE [net-standard-table](../../../includes/net-standard-table.md)]
 
 Here's what this table means for the purposes of creating a library:
 
-The version of the .NET Standard you pick will be a tradeoff between access to the newest APIs and the ability to target more .NET implementations and .NET Standard versions. You control the range of targetable platforms and versions by picking a version of `netstandardX.X` (Where `X.X` is a version number) and adding it to your project file (`.csproj` or `.fsproj`).
+The version of .NET Standard you pick will be a tradeoff between access to the newest APIs and the ability to target more .NET implementations and .NET Standard versions. You control the range of targetable platforms and versions by picking a version of `netstandardX.X` (where `X.X` is a version number) and adding it to your project file (`.csproj` or `.fsproj`).
 
-You have three primary options when targeting the .NET Standard, depending on your needs.
+You have three primary options when targeting .NET Standard, depending on your needs.
 
-1. You can use the default version of the .NET Standard supplied by templates - `netstandard1.4` - which gives you access to most APIs on .NET Standard while still being compatible with UWP, .NET Framework 4.6.1, and the forthcoming .NET Standard 2.0.
+1. You can use the default version of .NET Standard supplied by templates, `netstandard1.4`, which gives you access to most APIs on .NET Standard while still being compatible with UWP, .NET Framework 4.6.1, and .NET Standard 2.0.
 
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">
@@ -51,20 +50,20 @@ You have three primary options when targeting the .NET Standard, depending on yo
     </Project>
     ```
 
-2. You can use a lower or higher version of the .NET Standard by modifying the value in the `TargetFramework` node of your project file.
+2. You can use a lower or higher version of .NET Standard by modifying the value in the `TargetFramework` node of your project file.
 
-    .NET Standard versions are backward compatible. That means that `netstandard1.0` libraries run on `netstandard1.1` platforms and higher. However, there is no forward compatibility - lower .NET Standard platforms cannot reference higher ones. This means that `netstandard1.0` libraries cannot reference libraries targeting `netstandard1.1` or higher. Select the Standard version that has the right mix of APIs and platform support for your needs. We recommend `netstandard1.4` for now.
+    .NET Standard versions are backward compatible. That means that `netstandard1.0` libraries run on `netstandard1.1` platforms and higher. However, there is no forward compatibility. Lower .NET Standard platforms cannot reference higher ones. This means that `netstandard1.0` libraries cannot reference libraries targeting `netstandard1.1` or higher. Select the Standard version that has the right mix of APIs and platform support for your needs. We recommend `netstandard1.4` for now.
 
-3. If you want to target the .NET Framework versions 4.0 or below, or you wish to use an API available in the .NET Framework but not in the .NET Standard (for example, `System.Drawing`), read the following sections and learn how to multitarget.
+3. If you want to target .NET Framework versions 4.0 or below, or you wish to use an API available in .NET Framework but not in .NET Standard (for example, `System.Drawing`), read the following sections and learn how to multitarget.
 
-## How to target the .NET Framework
+## How to target .NET Framework
 
 > [!NOTE]
-> These instructions assume you have the .NET Framework installed on your machine. Refer to the [Prerequisites](#prerequisites) to get dependencies installed.
+> These instructions assume you have .NET Framework installed on your machine. Refer to the [Prerequisites](#prerequisites) to get dependencies installed.
 
-Keep in mind that some of the .NET Framework versions used here are no longer in support. Refer to the [.NET Framework Support Lifecycle Policy FAQ](https://support.microsoft.com/gp/framework_faq/en-us) about unsupported versions.
+Keep in mind that some of the .NET Framework versions used here are no longer supported. Refer to the [.NET Framework Support Lifecycle Policy FAQ](https://support.microsoft.com/gp/framework_faq/en-us) about unsupported versions.
 
-If you want to reach the maximum number of developers and projects, use the .NET Framework 4.0 as your baseline target. To target the .NET Framework, you will need to begin by using the correct Target Framework Moniker (TFM) that corresponds to the .NET Framework version you wish to support.
+If you want to reach the maximum number of developers and projects, use .NET Framework 4.0 as your baseline target. To target .NET Framework, begin by using the correct Target Framework Moniker (TFM) that corresponds to the .NET Framework version you wish to support.
 
 | .NET Framework version | TFM      |
 | ---------------------- | -------- |
@@ -81,7 +80,7 @@ If you want to reach the maximum number of developers and projects, use the .NET
 | .NET Framework 4.7     | `net47`  |
 | .NET Framework 4.8     | `net48`  |
 
-You then insert this TFM into the `TargetFramework` section of your project file. For example, here's how you would write a library which targets the .NET Framework 4.0:
+You then insert this TFM into the `TargetFramework` section of your project file. For example, here's how you would write a library that targets .NET Framework 4.0:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -91,9 +90,9 @@ You then insert this TFM into the `TargetFramework` section of your project file
 </Project>
 ```
 
-And that's it! Although this compiled only for the .NET Framework 4, you can use the library on newer versions of the .NET Framework.
+And that's it! Although this compiled only for .NET Framework 4, you can use the library on newer versions of .NET Framework.
 
-## How to Multitarget
+## How to multitarget
 
 > [!NOTE]
 > The following instructions assume you have the .NET Framework installed on your machine. Refer to the [Prerequisites](#prerequisites) section to learn which dependencies you need to install and where to download them from.
@@ -252,7 +251,7 @@ It's important to be able to test across platforms. You can use either [xUnit](h
 
 1. Verify that xUnit runs by executing the `dotnet test` command. If you chose to use MSTest, then the MSTest console runner should run instead.
 
-And that's it! You can now test your library across all platforms using command line tools. To continue testing now that you have everything set up, testing your library is very simple:
+And that's it! You can now test your library across all platforms using command-line tools. To continue testing now that you have everything set up, testing your library is very simple:
 
 1. Make changes to your library.
 1. Run tests from the command line, in your test directory, with `dotnet test` command.
@@ -263,7 +262,7 @@ Your code will be automatically rebuilt when you invoke `dotnet test` command.
 
 A common need for larger libraries is to place functionality in different projects.
 
-Imagine you wished to build a library which could be consumed in idiomatic C# and F#. That would mean that consumers of your library consume them in ways which are natural to C# or F#. For example, in C# you might consume the library like this:
+Imagine you want to build a library that could be consumed in idiomatic C# and F#. That would mean that consumers of your library consume it in ways that are natural to C# or F#. For example, in C# you might consume the library like this:
 
 ```csharp
 using AwesomeLibrary.CSharp;
@@ -289,7 +288,7 @@ let doWork data = async {
 
 Consumption scenarios like this mean that the APIs being accessed have to have a different structure for C# and F#.  A common approach to accomplishing this is to factor all of the logic of a library into a core project, with C# and F# projects defining the API layers that call into that core project.  The rest of the section will use the following names:
 
-* **AwesomeLibrary.Core** - A core project which contains all logic for the library
+* **AwesomeLibrary.Core** - A core project that contains all logic for the library
 * **AwesomeLibrary.CSharp** - A project with public APIs intended for consumption in C#
 * **AwesomeLibrary.FSharp** - A project with public APIs intended for consumption in F#
 
@@ -309,7 +308,7 @@ dotnet sln add AwesomeLibrary.CSharp/AwesomeLibrary.CSharp.csproj
 dotnet sln add AwesomeLibrary.FSharp/AwesomeLibrary.FSharp.fsproj
 ```
 
-This will add the three projects above and a solution file which links them together. Creating the solution file and linking projects will allow you to restore and build projects from a top-level.
+This will add the three projects above and a solution file that links them together. Creating the solution file and linking projects will allow you to restore and build projects from a top level.
 
 ### Project-to-project referencing
 

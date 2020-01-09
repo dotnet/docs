@@ -3,8 +3,6 @@ title: "XML Processing Options"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: 33ced8ee-1745-4e71-8dee-ebe70ec067c7
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # XML Processing Options
 See the following tables for a list of Microsoft technologies you can use to process XML data.  

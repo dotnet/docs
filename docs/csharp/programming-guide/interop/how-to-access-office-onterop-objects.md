@@ -1,6 +1,5 @@
 ---
 title: "How to access Office interop objects - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "optional parameters [C#], Office programming"

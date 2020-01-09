@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "data streams, reading text from files"
   - "I/O [.NET Framework], reading text from files"
 ms.assetid: ed180baa-dfc6-4c69-a725-46e87edafb27
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Read text from a file
 The following examples show how to read text synchronously and asynchronously from a text file using .NET for desktop apps. In both examples, when you create the instance of the <xref:System.IO.StreamReader> class, you provide the relative or absolute path to the file. 

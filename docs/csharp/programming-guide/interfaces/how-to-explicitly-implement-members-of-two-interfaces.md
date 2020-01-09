@@ -1,6 +1,5 @@
 ---
 title: "How to explicitly implement members of two interfaces - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "inheritance [C#], explicitly implementing interface members"

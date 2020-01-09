@@ -12,7 +12,6 @@ helpviewer_keywords:
   - ".NET Framework regular expressions, backreference constructs"
   - "regular expressions, backreference constructs"
 ms.assetid: 567a4b8d-0e79-49dc-8df9-f4b1aa376a2a
-ms.custom: seodec18
 ---
 
 # Backreference Constructs in Regular Expressions

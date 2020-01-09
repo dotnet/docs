@@ -1,6 +1,5 @@
 ---
 title: "How to create a file or folder - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "folders [C#]"

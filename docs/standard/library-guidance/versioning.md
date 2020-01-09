@@ -1,8 +1,6 @@
 ---
 title: Versioning and .NET libraries
 description: Best practice recommendations for versioning .NET libraries.
-author: jamesnk
-ms.author: mairaw
 ms.date: 12/10/2018
 ---
 # Versioning

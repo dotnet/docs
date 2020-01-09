@@ -1,6 +1,5 @@
 ---
 title: "How to use lambda expressions in a query - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "lambda expressions [C#], in LINQ"

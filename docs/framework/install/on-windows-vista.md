@@ -2,8 +2,6 @@
 title: Install the .NET Framework on Windows Vista
 description: Learn how to install the .NET Framework on Windows Vista.
 ms.custom: "updateeachrelease"
-author: rlander
-ms.author: mairaw
 ms.date: 04/18/2019
 ---
 

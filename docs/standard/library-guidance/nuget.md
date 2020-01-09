@@ -1,8 +1,6 @@
 ---
 title: NuGet and .NET libraries
 description: Best practice recommendations for packaging with NuGet for .NET libraries.
-author: jamesnk
-ms.author: mairaw
 ms.date: 01/15/2019
 ---
 # NuGet

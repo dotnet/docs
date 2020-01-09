@@ -32,7 +32,7 @@ This topic provides a guided tour of the Windows Presentation Foundation (WPF) c
   
 <a name="System_Threading_DispatcherObject"></a>   
 ## System.Threading.DispatcherObject  
- Most objects in WPF derive from <xref:System.Windows.Threading.DispatcherObject>, which provides the basic constructs for dealing with concurrency and threading. WPF is based on a messaging system implemented by the dispatcher. This works much like the familiar [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] message pump; in fact, the WPF dispatcher uses User32 messages for performing cross thread calls.  
+ Most objects in WPF derive from <xref:System.Windows.Threading.DispatcherObject>, which provides the basic constructs for dealing with concurrency and threading. WPF is based on a messaging system implemented by the dispatcher. This works much like the familiar Win32 message pump; in fact, the WPF dispatcher uses User32 messages for performing cross thread calls.  
   
  There are really two core concepts to understand when discussing concurrency in WPF – the dispatcher and thread affinity.  
   

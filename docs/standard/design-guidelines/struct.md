@@ -11,7 +11,6 @@ helpviewer_keywords:
   - "type design guidelines, structures"
   - "structures [.NET Framework], design guidelines"
 ms.assetid: 1f48b2d8-608c-4be6-9ba4-d8f203ed9f9f
-author: "KrzysztofCwalina"
 ---
 # Struct Design
 The general-purpose value type is most often referred to as a struct, its C# keyword. This section provides guidelines for general struct design.  

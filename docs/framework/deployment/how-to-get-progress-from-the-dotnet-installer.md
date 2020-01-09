@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "progress information, .NET Framework installer"
   - ".NET Framework, installing"
 ms.assetid: 0a1a3ba3-7e46-4df2-afd3-f3a8237e1c4f
-author: "mairaw"
-ms.author: "mairaw"
 ---
 
 # How to: Get Progress from the .NET Framework 4.5 Installer

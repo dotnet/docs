@@ -28,8 +28,8 @@ Browser and specification changes as outlined in the preceding text.
 
 Apps that interact with remote sites, such as through third-party login, need to:
 
-* Test those scenarios on multiple browsers.
-* Apply the cookie policy browser sniffing mitigation discussed in [Support older browsers](#support-older-browsers).
+- Test those scenarios on multiple browsers.
+- Apply the cookie policy browser sniffing mitigation discussed in [Support older browsers](#support-older-browsers).
 
 For testing and browser sniffing instructions, see the following section.
 
@@ -43,8 +43,8 @@ Chrome 78 and later yield misleading test results. Those versions have a tempora
 
 Google doesn't make older Chrome versions available. You can, however, download older versions of Chromium, which will suffice for testing. Follow the instructions at [Download Chromium](https://www.chromium.org/getting-involved/download-chromium).
 
-* [Chromium 76 Win64](https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html?prefix=Win_x64/664998/)
-* [Chromium 74 Win64](https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html?prefix=Win_x64/638880/)
+- [Chromium 76 Win64](https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html?prefix=Win_x64/664998/)
+- [Chromium 74 Win64](https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html?prefix=Win_x64/638880/)
 
 ##### Safari
 
@@ -124,9 +124,9 @@ The `Microsoft.AspNetCore.SuppressSameSiteNone` compatibility switch enables you
 
 Related `SameSite` patches are forthcoming for:
 
-* ASP.NET Core 2.1, 2.2, and 3.0
-* `Microsoft.Owin` 4.1
-* `System.Web` (for .NET Framework 4.7.2 and later)
+- ASP.NET Core 2.1, 2.2, and 3.0
+- `Microsoft.Owin` 4.1
+- `System.Web` (for .NET Framework 4.7.2 and later)
 
 #### Category
 

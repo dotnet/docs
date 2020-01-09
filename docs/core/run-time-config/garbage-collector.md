@@ -1,7 +1,7 @@
 ---
 title: Garbage collector config settings
 description: Learn about run-time settings for configuring how the garbage collector manages memory for .NET Core apps.
-ms.date: 11/13/2019
+ms.date: 01/09/2020
 ms.topic: reference
 ---
 # Run-time configuration options for garbage collection
@@ -80,7 +80,7 @@ For more information about some of these settings, see the [Middle ground betwee
 ### System.GC.HeapCount/COMPlus_GCHeapCount
 
 - Limits the number of heaps created by the garbage collector.
-- Applies to server garbage collection (GC) only.
+- Applies to server garbage collection only.
 - If GC processor affinity is enabled, which is the default, the heap count setting affinitizes `n` GC heaps/threads to the first `n` processors. (Use the affinitize mask or affinitize ranges settings to specify exactly which processors to affinitize.)
 - If GC processor affinity is disabled, this setting limits the number of GC heaps.
 - For more information, see the [GCHeapCount remarks](../../framework/configure-apps/file-schema/runtime/gcheapcount-element.md#remarks).
@@ -110,7 +110,7 @@ Example:
 
 - Specifies the exact processors that garbage collector threads should use.
 - If processor affinity is disabled by setting `System.GC.NoAffinitize` to `true`, this setting is ignored.
-- Applies to server garbage collection (GC) only.
+- Applies to server garbage collection only.
 - The value is a bit mask that defines the processors that are available to the process. For example, a decimal value of 1023 (or a hexadecimal value of 0x3FF or 3FF if you're using the environment variable) is 0011 1111 1111 in binary notation. This specifies that the first 10 processors are to be used. To specify the next 10 processors, that is, processors 10-19, specify a decimal value of 1047552 (or a hexadecimal value of 0xFFC00 or FFC00), which is equivalent to a binary value of 1111 1111 1100 0000 0000.
 
 | | Setting name | Values | Version introduced |
@@ -137,7 +137,7 @@ Example:
 - This setting is similar to `System.GC.HeapAffinitizeMask`, except it allows you to specify more than 64 processors.
 - For Windows operating systems, prefix the processor number or range with the corresponding [CPU group](/windows/win32/procthread/processor-groups), for example, "0:1-10,0:12,1:50-52,1:70".
 - If processor affinity is disabled by setting `System.GC.NoAffinitize` to `true`, this setting is ignored.
-- Applies to server garbage collection (GC) only.
+- Applies to server garbage collection only.
 - For more information, see [Making CPU configuration better for GC on machines with > 64 CPUs](https://devblogs.microsoft.com/dotnet/making-cpu-configuration-better-for-gc-on-machines-with-64-cpus/) on Maoni Stephens' blog.
 
 | | Setting name | Values | Version introduced |
@@ -163,7 +163,7 @@ Example:
 
   When a 64-bit Windows computer has multiple CPU groups, that is, there are more than 64 processors, enabling this element extends garbage collection across all CPU groups. The garbage collector uses all cores to create and balance heaps.
 
-- Applies to server garbage collection (GC) on 64-bit Windows operation systems only.
+- Applies to server garbage collection on 64-bit Windows operation systems only.
 - Default: Disabled (`0`).
 - For more information, see [Making CPU configuration better for GC on machines with > 64 CPUs](https://devblogs.microsoft.com/dotnet/making-cpu-configuration-better-for-gc-on-machines-with-64-cpus/) on Maoni Stephens' blog.
 
@@ -179,7 +179,7 @@ Example:
 ### System.GC.NoAffinitize/COMPlus_GCNoAffinitize
 
 - Specifies whether to *affinitize* garbage collection threads with processors. To affinitize a GC thread means that it can only run on its specific CPU. A heap is created for each GC thread.
-- Applies to server garbage collection (GC) only.
+- Applies to server garbage collection only.
 - Default: Affinitize garbage collection threads with processors (`false`).
 
 | | Setting name | Values | Version introduced |

@@ -12,9 +12,9 @@ In this tutorial, you'll learn how to:
 
 > [!div class="checklist"]
 >
-> * Create interfaces with implementations that describe discrete features.
-> * Create classes that use the default implementations.
-> * Create classes that override some or all of the default implementations.
+> - Create interfaces with implementations that describe discrete features.
+> - Create classes that use the default implementations.
+> - Create classes that override some or all of the default implementations.
 
 ## Prerequisites
 

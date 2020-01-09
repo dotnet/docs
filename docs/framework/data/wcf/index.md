@@ -29,8 +29,6 @@ I want to jump right in...
 
 - [Silverlight Quickstart](http://www.silverlight.net/learn/quickstarts/consuming-odata-feeds/)
 
-- [Silverlight Quickstart for Windows Phone Development](http://create.msdn.com/en-US/education/quickstarts/odataservice)
-
 Just show me some code...
 
 - [Quickstart](quickstart-wcf-data-services.md)
@@ -68,14 +66,6 @@ What can I do with it?
 - [Overview](wcf-data-services-overview.md)
 
 - [Application Scenarios](application-scenarios-wcf-data-services.md)
-
-I want to use Silverlight...
-
-- [Silverlight Quickstart](http://www.silverlight.net/learn/quickstarts/consuming-odata-feeds/)
-
-- [WCF Data Services (Silverlight)](https://docs.microsoft.com/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc838234(v=vs.95))
-
-- [Getting Started with Silverlight](https://docs.microsoft.com/previous-versions/windows/silverlight/dotnet-windows-silverlight/bb404703(v=vs.95))
 
 I want to use LINQ...
 

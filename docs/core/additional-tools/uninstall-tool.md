@@ -51,45 +51,45 @@ dotnet-core-uninstall list [options]
 
 ## [Windows](#tab/windows)
 
-* **`--aspnet-runtime`**
+- **`--aspnet-runtime`**
 
   Lists all the ASP.NET Core runtimes that can be uninstalled with this tool.
 
-* **`--hosting-bundle`**
+- **`--hosting-bundle`**
 
   Lists all the .NET Core runtime and hosting bundles that can be uninstalled with this tool.
 
-* **`--runtime`**
+- **`--runtime`**
 
   Lists all .NET Core runtimes that can be uninstalled with this tool.
 
-* **`--sdk`**
+- **`--sdk`**
 
   Lists all .NET Core SDKs that can be uninstalled with this tool.
 
-* **`-v, --verbosity <LEVEL>`**
+- **`-v, --verbosity <LEVEL>`**
 
   Sets the verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default value is `normal`.
 
-* **`--x64`**
+- **`--x64`**
 
   Lists all x64 .NET Core SDKs and runtimes that can be uninstalled with this tool.
 
-* **`--x86`**
+- **`--x86`**
 
   Lists all x86 .NET Core SDKs and runtimes that can be uninstalled with this tool.
 
 ## [macOS](#tab/macos)
 
-* **`--runtime`**
+- **`--runtime`**
 
   Lists all .NET Core runtimes that can be uninstalled with this tool.
 
-* **`--sdk`**
+- **`--sdk`**
 
   Lists all .NET Core SDKs that can be uninstalled with this tool.
 
-* **`-v, --verbosity <LEVEL>`**
+- **`-v, --verbosity <LEVEL>`**
 
   Sets the verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default value is `normal`.
   
@@ -97,19 +97,19 @@ dotnet-core-uninstall list [options]
 
 #### Examples
 
-* List all .NET Core SDKs and runtimes that can be removed with this tool:
+- List all .NET Core SDKs and runtimes that can be removed with this tool:
 
   ```console
   dotnet-core-uninstall list
   ```
 
-* List all x64 .NET Core SDKs and runtimes:
+- List all x64 .NET Core SDKs and runtimes:
 
   ```console
   dotnet-core-uninstall list --x64
   ```
 
-* List all x86 .NET Core SDKs:
+- List all x86 .NET Core SDKs:
 
   ```console
   dotnet-core-uninstall list --sdk --x86
@@ -131,7 +131,7 @@ dotnet-core-uninstall whatif [options] [<VERSION>...]
 
 #### Arguments
 
-* **`VERSION`**
+- **`VERSION`**
 
   The specified version to uninstall. You may list several versions one after the other, separated by spaces. Response files are also supported.
 
@@ -145,67 +145,68 @@ dotnet-core-uninstall whatif [options] [<VERSION>...]
 
 ## [Windows](#tab/windows)
 
-* **`--all`**
+- **`--all`**
 
   Removes all .NET Core SDKs and runtimes.
 
-* **`--all-below <VERSION>`**
+- **`--all-below <VERSION>`**
 
   Removes only the .NET Core SDKs and runtimes with a version smaller than the specified version. The specified version remains installed.
 
-* **`--all-but <VERSIONS>`**
+- **`--all-but <VERSIONS>`**
 
   Removes all .NET Core SDKs and runtimes, except those versions specified.
 
-* **`--all-but-latest`**
+- **`--all-but-latest`**
 
   Removes .NET Core SDKs and runtimes, except the one highest version.
 
-* **`--all-lower-patches`**
+- **`--all-lower-patches`**
 
   Removes .NET Core SDKs and runtimes superseded by higher patches. This option protects global.json.
 
-* **`--all-previews`**
+- **`--all-previews`**
 
   Removes .NET Core SDKs and runtimes marked as previews.
 
-* **`--all-previews-but-latest`**
+- **`--all-previews-but-latest`**
 
   Removes .NET Core SDKs and runtimes marked as previews except the one highest preview.
 
-* **`--aspnet-runtime`**
+- **`--aspnet-runtime`**
 
   Removes ASP.NET Core runtimes only.
 
-* **`--hosting-bundle`**
+- **`--hosting-bundle`**
 
   Removes .NET Core runtime and hosting bundles only.
 
-* **`--major-minor <MAJOR_MINOR>`**
+- **`--major-minor <MAJOR_MINOR>`**
 
   Removes .NET Core SDKs and runtimes that match the specified `major.minor` version.
 
-* **`--runtime`**
+- **`--runtime`**
 
   Removes .NET Core runtimes only.
 
-* **`--sdk`**
+- **`--sdk`**
 
   Removes .NET Core SDKs only.
 
-* **`-v, --verbosity <LEVEL>`**
+- **`-v, --verbosity <LEVEL>`**
 
   Sets the verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default value is `normal`.
 
-* **`--x64`**
+- **`--x64`**
 
   Must be used with `--sdk`, `--runtime`, and `--aspnet-runtime` to remove x64 SDKs or runtimes.
 
-* **`--x86`**
+- **`--x86`**
 
   Must be used with `--sdk`, `--runtime`, and `--aspnet-runtime` to remove x86 SDKs or runtimes.
 
-* **`--force`**
+- **`--force`**
+
   Forces removal of versions that might be used by Visual Studio.
 
 Notes:
@@ -216,51 +217,52 @@ Notes:
 
 ## [macOS](#tab/macos)
 
-* **`--all`**
+- **`--all`**
 
   Removes all .NET Core SDKs and runtimes.
 
-* **`--all-below <VERSION>`**
+- **`--all-below <VERSION>`**
 
   Removes .NET Core SDKs and runtimes below the specified version. The specified version will remain.
 
-* **`--all-but <VERSIONS>`**
+- **`--all-but <VERSIONS>`**
 
   Removes .NET Core SDKs and runtimes, except those versions specified.
 
-* **`--all-but-latest`**
+- **`--all-but-latest`**
 
   Removes .NET Core SDKs and runtimes, except the one highest version.
 
-* **`--all-lower-patches`**
+- **`--all-lower-patches`**
 
   Removes .NET Core SDKs and runtimes superseded by higher patches. This option protects global.json.
 
-* **`--all-previews`**
+- **`--all-previews`**
 
   Removes .NET Core SDKs and runtimes marked as previews.
 
-* **`--all-previews-but-latest`**
+- **`--all-previews-but-latest`**
 
   Removes .NET Core SDKs and runtimes marked as previews except the one highest preview.
 
-* **`--major-minor <MAJOR_MINOR>`**
+- **`--major-minor <MAJOR_MINOR>`**
 
   Removes .NET Core SDKs and runtimes that match the specified `major.minor` version.
 
-* **`--runtime`**
+- **`--runtime`**
 
   Removes .NET Core runtimes only.
 
-* **`--sdk`**
+- **`--sdk`**
 
   Removes .NET Core SDKs only.
 
-* **`-v, --verbosity <LEVEL>`**
+- **`-v, --verbosity <LEVEL>`**
 
   Sets the verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default value is `normal`.
   
-* **`--force`**
+- **`--force`**
+
   Forces removal of versions that might be used by Visual Studio or SDKs.
 
 Notes:
@@ -275,13 +277,13 @@ Notes:
 > [!NOTE]
 > By default, .NET Core SDKs and runtimes that may be required by Visual Studio or other SDKs are not included in `dotnet-core-uninstall dry-run` output. In the following examples, some of the specified SDKs and runtimes may not be included in the output, depending on the state of the machine. To include all SDKs and runtimes, list them explicitly as arguments or use the `--force` option.
 
-* Dry run of removing all .NET Core runtimes that have been superseded by higher patches:
+- Dry run of removing all .NET Core runtimes that have been superseded by higher patches:
 
   ```console
   dotnet-core-uninstall dry-run --all-lower-patches --runtime
   ```
 
-* Dry run of removing all .NET Core SDKs below the version `2.2.301`:
+- Dry run of removing all .NET Core SDKs below the version `2.2.301`:
 
   ```console
   dotnet-core-uninstall whatif --all-below 2.2.301 --sdk
@@ -314,7 +316,7 @@ dotnet-core-uninstall remove [options] [<VERSION>...]
 
 #### Arguments
 
-* **`VERSION`**
+- **`VERSION`**
 
   The specified version to uninstall. You may list several versions one after the other, separated by spaces. Response files are also supported.
 
@@ -328,70 +330,72 @@ dotnet-core-uninstall remove [options] [<VERSION>...]
 
 ## [Windows](#tab/windows)
 
-* **`--all`**
+- **`--all`**
 
   Removes all .NET Core SDKs and runtimes.
 
-* **`--all-below <VERSION>`**
+- **`--all-below <VERSION>`**
 
   Removes only the .NET Core SDKs and runtimes with a version smaller than the specified version. The specified version remains installed.
 
-* **`--all-but <VERSIONS>`**
+- **`--all-but <VERSIONS>`**
 
   Removes all .NET Core SDKs and runtimes, except those versions specified.
 
-* **`--all-but-latest`**
+- **`--all-but-latest`**
 
   Removes .NET Core SDKs and runtimes, except the one highest version.
 
-* **`--all-lower-patches`**
+- **`--all-lower-patches`**
 
   Removes .NET Core SDKs and runtimes superseded by higher patches. This option protects global.json.
 
-* **`--all-previews`**
+- **`--all-previews`**
 
   Removes .NET Core SDKs and runtimes marked as previews.
 
-* **`--all-previews-but-latest`**
+- **`--all-previews-but-latest`**
 
   Removes .NET Core SDKs and runtimes marked as previews except the one highest preview.
 
-* **`--aspnet-runtime`**
+- **`--aspnet-runtime`**
 
   Removes ASP.NET Core runtimes only.
 
-* **`--hosting-bundle`**
+- **`--hosting-bundle`**
 
   Removes .NET Core runtime and hosting bundles only.
 
-* **`--major-minor <MAJOR_MINOR>`**
+- **`--major-minor <MAJOR_MINOR>`**
 
   Removes .NET Core SDKs and runtimes that match the specified `major.minor` version.
 
-* **`--runtime`**
+- **`--runtime`**
 
   Removes .NET Core runtimes only.
 
-* **`--sdk`**
+- **`--sdk`**
 
   Removes .NET Core SDKs only.
 
-* **`-v, --verbosity <LEVEL>`**
+- **`-v, --verbosity <LEVEL>`**
 
   Sets the verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default value is `normal`.
 
-* **`--x64`**
+- **`--x64`**
 
   Must be used with `--sdk`, `--runtime`, and `--aspnet-runtime` to remove x64 SDKs or runtimes.
 
-* **`--x86`**
+- **`--x86`**
 
   Must be used with `--sdk`, `--runtime`, and `--aspnet-runtime` to remove x86 SDKs or runtimes.
 
-* **`-y, --yes`**
+- **`-y, --yes`**
+
   Executes the command without requiring a yes or no confirmation.
 
-* **`--force`**
+- **`--force`**
+
   Forces removal of versions that might be used by Visual Studio.
 
 Notes:
@@ -402,54 +406,56 @@ Notes:
 
 ## [macOS](#tab/macos)
 
-* **`--all`**
+- **`--all`**
 
   Removes all .NET Core SDKs and runtimes.
 
-* **`--all-below <VERSION>`**
+- **`--all-below <VERSION>`**
 
   Removes .NET Core SDKs and runtimes below the specified version. The specified version will remain.
 
-* **`--all-but <VERSIONS>`**
+- **`--all-but <VERSIONS>`**
 
   Removes .NET Core SDKs and runtimes, except those versions specified.
 
-* **`--all-but-latest`**
+- **`--all-but-latest`**
 
   Removes .NET Core SDKs and runtimes, except the one highest version.
 
-* **`--all-lower-patches`**
+- **`--all-lower-patches`**
 
   Removes .NET Core SDKs and runtimes superseded by higher patches. This option protects global.json.
 
-* **`--all-previews`**
+- **`--all-previews`**
 
   Removes .NET Core SDKs and runtimes marked as previews.
 
-* **`--all-previews-but-latest`**
+- **`--all-previews-but-latest`**
 
   Removes .NET Core SDKs and runtimes marked as previews except the one highest preview.
 
-* **`--major-minor <MAJOR_MINOR>`**
+- **`--major-minor <MAJOR_MINOR>`**
 
   Removes .NET Core SDKs and runtimes that match the specified `major.minor` version.
 
-* **`--runtime`**
+- **`--runtime`**
 
   Removes .NET Core runtimes only.
 
-* **`--sdk`**
+- **`--sdk`**
 
   Removes .NET Core SDKs only.
 
-* **`-v, --verbosity <LEVEL>`**
+- **`-v, --verbosity <LEVEL>`**
 
   Sets the verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default value is `normal`.
 
-* **`-y, --yes`**
+- **`-y, --yes`**
+
   Executes the command without requiring Y/n confirmation.
   
-* **`--force`**
+- **`--force`**
+
   Forces removal of versions that might be used by Visual Studio or SDKs.
 
 Notes:
@@ -464,37 +470,37 @@ Notes:
 > [!NOTE]
 > By default, .NET Core SDKs and runtimes that may be required by Visual Studio or other SDKs are kept. In the following examples, some of the specified SDKs and runtimes may remain, depending on the state of the machine. To remove all SDKs and runtimes, list them explicitly as arguments or use the `--force` option.
 
-* Remove all x86 .NET Core runtimes except the version `3.0.0-preview6-27804-01` without requiring Y/n confirmation:
+- Remove all x86 .NET Core runtimes except the version `3.0.0-preview6-27804-01` without requiring Y/n confirmation:
 
   ```console
   dotnet-core-uninstall remove --all-but 3.0.0-preview6-27804-01 --runtime --yes
   ```
 
-* Remove all .NET Core 1.1 SDKs without requiring Y/n confirmation:
+- Remove all .NET Core 1.1 SDKs without requiring Y/n confirmation:
 
   ```console
   dotnet-core-uninstall remove --sdk --major-minor 1.1 -y
   ```
 
-* Remove the .NET Core 1.1.11 SDK with no console output:
+- Remove the .NET Core 1.1.11 SDK with no console output:
 
   ```console
   dotnet-core-uninstall remove 1.1.11 --sdk --yes -verbosity q
   ```
 
-* Remove all .NET Core SDKs that can safely be removed by this tool:
+- Remove all .NET Core SDKs that can safely be removed by this tool:
 
   ```console
   dotnet-core-uninstall remove --all --sdk
   ```
 
-* Remove all .NET Core SDKs that can be removed by this tool, including those SDKs that may be required by Visual Studio (not recommended):
+- Remove all .NET Core SDKs that can be removed by this tool, including those SDKs that may be required by Visual Studio (not recommended):
 
   ```console
   dotnet-core-uninstall remove --all --sdk --force
   ```
 
-* Remove all .NET Core SDKs that are specified in the response file `versions.rsp`
+- Remove all .NET Core SDKs that are specified in the response file `versions.rsp`
 
   ```console
   dotnet-core-uninstall remove --sdk @versions.rsp

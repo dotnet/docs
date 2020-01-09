@@ -279,9 +279,9 @@ This article organizes the affected API members by namespace.
 
 | Member | Platform |
 | - | - |
+| <xref:System.Security.Cryptography.X509Certificates.X509Certificate.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.X509Certificates.X509Certificate.Import%2A?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
-| <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.FriendlyName?displayProperty=nameWithType> (set only) | non-Windows |
 | <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.PrivateKey?displayProperty=nameWithType> (set only) | All |
 
 ## System.Security.Authentication.ExtendedProtection

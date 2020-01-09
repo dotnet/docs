@@ -4,18 +4,18 @@ description: Understand the porting process and discover tools you may find help
 author: cartermp
 ms.date: 10/22/2019
 ---
-# Overview of the porting process from .NET Framework to .NET Core
+# Overview of porting from .NET Framework to .NET Core
 
 You might have code that currently runs on the .NET Framework that you're interested in porting to .NET Core. This article provides:
 
 * An overview of the porting process.
-* A list of the tools you may find helpful when you're porting your code to .NET Core.
+* A list of tools that you may find helpful when you're porting your code to .NET Core.
 
 ## Overview of the porting process
 
-We recommend you to use the following process when porting your project to .NET Core:
+We recommend you use the following process when porting your project to .NET Core:
 
-1. Retarget all projects you wish to port to target the .NET Framework 4.7.2 or higher.
+1. Retarget all projects you wish to port to target .NET Framework 4.7.2 or higher.
 
    This step ensures that you can use API alternatives for .NET Framework-specific targets when .NET Core doesn't support a particular API.
 
@@ -25,7 +25,7 @@ We recommend you to use the following process when porting your project to .NET 
 
 3. Install the [.NET API analyzer](../../standard/analyzers/api-analyzer.md) into your projects to identify APIs throwing <xref:System.PlatformNotSupportedException> on some platforms and some other potential compatibility issues.
 
-   This tool is similar to the portability analyzer, but instead of analyzing if things can build on .NET Core, it will analyze if you're using an API in a way that will throw the <xref:System.PlatformNotSupportedException> at runtime. Although this isn't common if you're moving from .NET Framework 4.7.2 or higher, it's good to check.
+   This tool is similar to the portability analyzer, but instead of analyzing if things can build on .NET Core, it analyzes if you're using an API in a way that will throw the <xref:System.PlatformNotSupportedException> at run time. Although this isn't common if you're moving from .NET Framework 4.7.2 or higher, it's good to check.
 
 4. Convert all of your `packages.config` dependencies to the [PackageReference](/nuget/consume-packages/package-references-in-project-files) format with the [conversion tool in Visual Studio](/nuget/consume-packages/migrate-packages-config-to-package-reference).
 
@@ -37,9 +37,11 @@ We recommend you to use the following process when porting your project to .NET 
 
 6. Port your test code.
 
-   Because porting to .NET Core is such a significant change to your codebase, it's highly recommended to get your tests ported, so that you can run tests as you port your code over. MSTest, xUnit, and NUnit all work on .NET Core.
+   Because porting to .NET Core is such a significant change to your codebase, it's highly recommended to port your test projects so that you can run tests as you port your code over. MSTest, xUnit, and NUnit all work on .NET Core.
 
-Additionally, you can attempt to port smaller solutions or individual projects to the .NET Core project file format with the [dotnet try-convert](https://github.com/dotnet/try-convert) tool in one operation. `dotnet try-convert` is not guaranteed to work for all your projects, and it may cause subtle changes in behavior that you may find that you depended on. It should be used as a _starting point_ that automates the basic things that can be automated. It isn't a guaranteed solution to migrating a project.
+Additionally, you can attempt to port smaller solutions or individual projects in one operation to the .NET Core project file format with the [dotnet try-convert](https://github.com/dotnet/try-convert) tool. `dotnet try-convert` is not guaranteed to work for all your projects, and it may cause subtle changes in behavior that you depended on. Use it as a _starting point_ that automates the basic things that can be automated. It isn't a guaranteed solution to migrating a project.
 
->[!div class="step-by-step"]
->[Next](net-framework-tech-unavailable.md)
+## Next steps
+
+>[!div class="nextstepaction"]
+>[Unavailable technologies on .NET Core](net-framework-tech-unavailable.md)

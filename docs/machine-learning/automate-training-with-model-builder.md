@@ -158,7 +158,7 @@ Model Builder splits the training data into a training set and a test set. The t
 
 ### How do I understand my model performance?
 
-A scenario maps to a machine learning task. Each ML task has its own set of evaluation metrics. The table below describes these mappings of scenario and ML tasks.
+A scenario maps to a machine learning task. Each ML task has its own set of evaluation metrics.
 
 #### Regression (for example, Price Prediction)
 

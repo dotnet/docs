@@ -27,14 +27,14 @@ dotnet-trace [-h, --help] [--version] <command>
 
 The `dotnet-trace` tool:
 
-* Is a cross-platform .NET Core tool.
-* Enables the collection of .NET Core traces of a running process without a native profiler.
-* Is built around the cross-platform `EventPipe` technology of the .NET Core runtime.
-* Delivers the same experience on Windows, Linux, or macOS.
+- Is a cross-platform .NET Core tool.
+- Enables the collection of .NET Core traces of a running process without a native profiler.
+- Is built around the cross-platform `EventPipe` technology of the .NET Core runtime.
+- Delivers the same experience on Windows, Linux, or macOS.
 
 ## Options
 
-- **`--version`**  
+- **`--version`**
 
   Displays the version of the dotnet-counters utility.
 
@@ -181,8 +181,8 @@ On Linux, the trace can be viewed by changing the output format of `dotnet-trace
 
 `dotnet-trace` can:
 
-* Use `EventCounter` for basic health monitoring in performance-sensitive environments. For example, in production.
-* Collect traces so they don't need to be viewed in real time.
+- Use `EventCounter` for basic health monitoring in performance-sensitive environments. For example, in production.
+- Collect traces so they don't need to be viewed in real time.
 
 For example, to collect runtime performance counter values, use the following command:
 

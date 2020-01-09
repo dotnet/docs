@@ -1,6 +1,6 @@
 ---
 title: Containerize an app with Docker tutorial
-description: In this tutorial, you will learn how to containerize a .NET Core application with Docker.
+description: In this tutorial, you'll learn how to containerize a .NET Core application with Docker.
 ms.date: 01/09/2020
 ms.topic: tutorial
 ms.custom: "mvc"
@@ -160,9 +160,9 @@ myapp.deps.json  myapp.dll  myapp.pdb  myapp.runtimeconfig.json
 
 ## Create the Dockerfile
 
-The *Dockerfile* file is used by the `docker build` command to create a container image. This file is a plaintext file named *Dockerfile* that does not have an extension.
+The *Dockerfile* file is used by the `docker build` command to create a container image. This file is a plaintext file named *Dockerfile* that doesn't have an extension.
 
-In your terminal, navigate up a directory to the working folder you created at the start. Create a file named *Dockerfile* in your working folder and open it in a text editor. Depending on the type of application you're going to containerize, choose the ASP.NET Core runtime or the .NET Core runtime. When in doubt, choose the ASP.NET Core runtime which includes the .NET Core runtime.
+In your terminal, navigate up a directory to the working folder you created at the start. Create a file named *Dockerfile* in your working folder and open it in a text editor. Depending on the type of application you're going to containerize, choose the ASP.NET Core runtime or the .NET Core runtime. When in doubt, choose the ASP.NET Core runtime, which includes the .NET Core runtime.
 
 - ASP.NET Core runtime
 
@@ -297,7 +297,7 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 
 ### Connect to a container
 
-After a container is running, you can connect to it to see the output. Use the `docker start` and `docker attach` commands to start the container and peek at the output stream. In this example, the <kbd>CTRL + C</kbd> command is used to detach from the running container. This may actually end the process in the container, which will stop the container. The `--sig-proxy=false` parameter ensures that <kbd>CTRL + C</kbd> won't stop the process in the container.
+After a container is running, you can connect to it to see the output. Use the `docker start` and `docker attach` commands to start the container and peek at the output stream. In this example, the <kbd>CTRL + C</kbd> keystroke is used to detach from the running container. This keystroke may actually end the process in the container, which will stop the container. The `--sig-proxy=false` parameter ensures that <kbd>CTRL + C</kbd> won't stop the process in the container.
 
 After you detach from the container, reattach to verify that it's still running and counting.
 
@@ -354,7 +354,7 @@ Counter: 5
 ^C
 ```
 
-With `docker run -it`, the <kbd>CTRL + C</kbd> command will stop process that is running in the container, which in turn, stops the container. Since the `--rm` parameter was provided, the container is automatically deleted when the process is stopped. Verify that it does not exist:
+With `docker run -it`, the <kbd>CTRL + C</kbd> command will stop process that is running in the container, which in turn, stops the container. Since the `--rm` parameter was provided, the container is automatically deleted when the process is stopped. Verify that it doesn't exist:
 
 ```console
 > docker ps -a

@@ -41,29 +41,19 @@ Just show me some code...
 
 I want to know more about OData...
 
-- [Whitepaper: Introducing OData](../../../framework/wcf/index.md)
+- [Whitepaper: Introducing OData](https://download.microsoft.com/download/E/5/A/E5A59052-EE48-4D64-897B-5F7C608165B8/IntroducingOData.pdf)
 
-- [Open Data Protocol Web site](https://www.odata.org/documentation/)
+- [Open Data Protocol Web site](https://www.odata.org/)
 
-- [OData: SDK](https://www.odata.org/wp-content/uploads/sites/21/odatasdkcodesamples.zip)
-
-- [OData: Frequently Asked Questions](https://www.odata.org/faq)
-
-I want to watch some videos...
-
-- [Beginner's Guide to WCF Data Services](https://docs.microsoft.com/dotnet/framework/wcf/index)
-
-- [WCF Data Services Developer Videos](https://docs.microsoft.com/sql/connect/sql-data-developer&view=sql-server-ver15#dataservices)
+- [OData: SDK](https://www.odata.org/ecosystem/)
 
 - [OData: Developers Web site](https://www.odata.org/developers/articles/)
 
 I want to see end-to-end samples...
 
-- [WCF Data Services Documentation Samples on MSDN Samples Gallery](https://docs.microsoft.com/samples/browse/-samples)
+- [WCF Data Services Quickstart](https://github.com/microsoftarchive/msdn-code-gallery-community-s-z/tree/master/WCF%20Data%20Services%20Quickstart%20(OData%20Service%20and%20WPF%20Client))
 
-- [Other WCF Data Services Samples on MSDN Samples Gallery](https://docs.microsoft.com/samples/browse/-samples)
-
-- [OData: SDK](https://www.odata.org/wp-content/uploads/sites/21/odatasdkcodesamples.zip)
+- [OData SDK - Sample Code](https://www.odata.org/ecosystem/#sdk)
 
 How does it integrate with Visual Studio?
 
@@ -76,8 +66,6 @@ How does it integrate with Visual Studio?
 What can I do with it?
 
 - [Overview](wcf-data-services-overview.md)
-
-- [Whitepaper: Introducing OData](../../wcf/index.md)
 
 - [Application Scenarios](application-scenarios-wcf-data-services.md)
 
@@ -99,13 +87,9 @@ I want to use LINQ...
 
 I still need some more information...
 
-- [WCF Data Services Team Blog](https://blogs.msdn.microsoft.com/astoriateam/)
+- [WCF Data Services Team Blog](https://docs.microsoft.com/archive/blogs/astoriateam/)
 
 - [Resources](wcf-data-services-resources.md)
-
-- [WCF Data Services Developer Center](../../wcf/index.md)
-
-- [Open Data Protocol Web site](https://www.odata.org/developers/protocols/)
 
 ## In This Section
 

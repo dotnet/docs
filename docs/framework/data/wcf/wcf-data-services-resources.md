@@ -26,23 +26,17 @@ WCF Data Services introductory topics can be found in the following locations. M
  [WCF Data Services Forum](https://social.msdn.microsoft.com/Forums/en-US/home?forum=adodotnetdataservices)  
  Data programming support for WCF Data Services developers.  
   
- [WCF Data Services Team Blog](https://blogs.msdn.microsoft.com/astoriateam/)  
+ [WCF Data Services Team Blog](https://docs.microsoft.com/archive/blogs/astoriateam/)  
  Blog that contains updates and discussion of WCF Data Services features and functionality.  
   
- [OData Web Site](https://www.odata.org/developers/protocols/)  
+ [OData website](https://www.odata.org/)  
  The primary source of information about OData.  
   
- [OData SDK](https://www.odata.org/wp-content/uploads/sites/21/odatasdkcodesamples.zip)  
+ [OData SDK - Sample Code](https://www.odata.org/ecosystem/#sdk)  
  Contains sample services, samples, and programming libraries that enable you to work with OData feeds.  
   
  [OData Blog](https://www.odata.org/blog/)  
  Blog that contains discussions about OData programming.  
-  
- [Data Access and Storage Developer Center](https://docs.microsoft.com/sql/connect/sql-data-developer&view=sql-server-ver15)  
- Central location for finding information and resources for working with data.  
-  
- [Data Platform How Do I? Videos: WCF Data Services Series](https://docs.microsoft.com/sql/connect/sql-data-developer&view=sql-server-ver15#entity)  
- Contains a set of video screen casts that demonstrate how to build and access data services.  
   
  [Overview: WCF Data Services](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/cc956153(v=msdn.10))  
  A white paper that provides more high-level information about the benefits of WCF Data Services.  

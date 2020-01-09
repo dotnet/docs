@@ -43,7 +43,7 @@ You can access a service that exposes an Open Data Protocol (OData) feed by supp
   
  You can use the **Add Service Reference** dialog in Visual Studio to add a reference to a data service. This tool requests the service metadata from a referenced data service and generates the <xref:System.Data.Services.Client.DataServiceContext> that represents a data service, as well as generates the client data service classes that represent entities. For more information, see [Generating the Data Service Client Library](generating-the-data-service-client-library-wcf-data-services.md).  
   
- There are programming libraries available that you can use to consume an OData feed in other kinds of client applications. For more information on OData SDK, see the Sample Code  section of the [OData: Ecosystem](https://www.odata.org/ecosystem/).
+ There are programming libraries available that you can use to consume an OData feed in other kinds of client applications. For more information on OData SDK, see [OData SDK - Sample Code](https://www.odata.org/ecosystem/#sdk).
   
 ## See also
 

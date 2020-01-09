@@ -42,7 +42,7 @@ OData defines a set of extensions to the Atom Publishing Protocol (AtomPub). It 
   
  WCF Data Services includes client libraries for both .NET Framework-based and Silverlight-based client applications. These client libraries enable you to interact with data services by using .NET Framework objects. They also support object-based queries and LINQ queries, loading related objects, change tracking, and identity resolution. For more information, see [WCF Data Services Client Library](wcf-data-services-client-library.md).  
   
- In addition to the OData client libraries included with the .NET Framework and with Silverlight, there are other client libraries that enable you to consume an OData feed in client applications, such as PHP, AJAX, and Java applications. For more information on OData SDK, see the Sample Code  section of the [OData: Ecosystem](https://www.odata.org/ecosystem/).
+ In addition to the OData client libraries included with the .NET Framework and with Silverlight, there are other client libraries that enable you to consume an OData feed in client applications, such as PHP, AJAX, and Java applications. For more information on OData SDK, see [OData SDK - Sample Code](https://www.odata.org/ecosystem/#sdk).
   
 ## Architecture Overview  
  The following diagram illustrates the WCF Data Services architecture for exposing OData feeds and using these feeds in OData-enabled client libraries:  

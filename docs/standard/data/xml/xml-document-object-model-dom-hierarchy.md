@@ -3,8 +3,6 @@ title: "XML Document Object Model (DOM) Hierarchy"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: 9d187d4f-c76e-4223-a670-cc290783ce47
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # XML Document Object Model (DOM) Hierarchy
 The following illustration shows the class hierarchy for the XML Document Object Model (DOM), with the World Wide Web Consortium (W3C) name in parenthesis along with the class name where it is relevant.  

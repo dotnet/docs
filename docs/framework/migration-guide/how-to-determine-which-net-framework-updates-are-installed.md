@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "updates, determining for .NET Framework"
   - ".NET Framework, determining updates"
 ms.assetid: 53c7b5f7-d47a-402a-b194-7244a696a88b
-author: mairaw
-ms.author: mairaw
 ---
 # How to determine which .NET Framework security updates and hotfixes are installed
 

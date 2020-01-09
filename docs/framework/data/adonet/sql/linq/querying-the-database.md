@@ -8,7 +8,7 @@ This group of topics describes how to develop and execute queries in [!INCLUDE[v
   
 ## In This Section  
  [How to: Query for Information](how-to-query-for-information.md)  
- Briefly shows how [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] queries are basically the same as [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] queries generally.  
+ Briefly shows how [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] queries are basically the same as LINQ queries generally.  
   
  [How to: Retrieve Information As Read-Only](how-to-retrieve-information-as-read-only.md)  
  Describes how to increase query performance when no change to the data is planned.  

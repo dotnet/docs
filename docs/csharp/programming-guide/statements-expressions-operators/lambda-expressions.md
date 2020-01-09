@@ -1,6 +1,5 @@
 ---
 title: "Lambda expressions - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/29/2019
 helpviewer_keywords: 
   - "lambda expressions [C#]"

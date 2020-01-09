@@ -1,6 +1,5 @@
 ---
 title: "?: operator - C# reference"
-ms.custom: seodec18
 ms.date: "11/20/2018"
 f1_keywords:
   - "?:_CSharpKeyword"

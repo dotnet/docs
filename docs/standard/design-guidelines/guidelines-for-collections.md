@@ -3,7 +3,6 @@ title: "Guidelines for Collections"
 ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 ms.assetid: 297b8f1d-b11f-4dc6-960a-8e990817304e
-author: "KrzysztofCwalina"
 ---
 # Guidelines for Collections
 Any type designed specifically to manipulate a group of objects having some common characteristic can be considered a collection. It is almost always appropriate for such types to implement <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601>, so in this section we only consider types implementing one or both of those interfaces to be collections.  

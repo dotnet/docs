@@ -66,7 +66,7 @@ To create the unit test project, do the following:
 
    - It applies the [TestClass](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestClassAttribute) attribute to the `UnitTest1` class. Each test method in a test class tagged with the [TestMethod](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute) attribute is executed automatically when the unit test is run.
 
-   - It applies the [TestMethod](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute) attribute to define `TestMethod1` as a test method for automatic execution when the unit test is run.
+   - It applies the [TestMethod](xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute) attribute to define `TestMethod1` in C# or `TestSub` in Visual Basic as a test method for automatic execution when the unit test is run.
 
 1. In **Solution Explorer**, right-click the **Dependencies** node of the **StringLibraryTest** project and select **Add Reference** from the context menu.
 
@@ -86,7 +86,7 @@ The most common tests call members of the <xref:Microsoft.VisualStudio.TestTools
 | Assert methods     | Function |
 | ------------------ | -------- |
 | `Assert.AreEqual`  | Verifies that two values or objects are equal. The assert fails if the values or objects aren't equal. |
-} `Assert.AreSame`   | Verifies that two object variables refer to the same object. The assert fails if the variables refer to different objects. |
+| `Assert.AreSame`   | Verifies that two object variables refer to the same object. The assert fails if the variables refer to different objects. |
 | `Assert.IsFalse`   | Verifies that a condition is `false`. The assert fails if the condition is `true`. |
 | `Assert.IsNotNull` | Verifies that an object isn't `null`. The assert fails if the object is `null`. |
 

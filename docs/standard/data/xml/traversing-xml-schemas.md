@@ -7,8 +7,6 @@ dev_langs:
   - "vb"
   - "cpp"
 ms.assetid: cce69574-5861-4a30-b730-2e18d915d8ee
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Traversing XML Schemas
 

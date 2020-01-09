@@ -2,8 +2,6 @@
 title: "The .NET Framework and Out-of-Band Releases"
 ms.date: 10/10/2018
 ms.assetid: 721f10fa-3189-4124-a00d-56ddabd889b3
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # The .NET Framework and Out-of-Band Releases
 

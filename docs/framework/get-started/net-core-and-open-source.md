@@ -2,11 +2,10 @@
 title: ".NET Core and Open-Source"
 ms.date: "03/30/2017"
 ms.assetid: e6bd4655-ce37-4003-8462-468a6fe2c40f
-author: "mairaw"
-ms.author: "mairaw"
 ---
-# .NET Core and Open-Source
-This topic provides a brief overview  of what .NET Core is and shows how you can find more information. To find the complete list of topics for .NET Core, visit the [.NET Core Guide](../../core/index.md).
+# .NET Core and open source
+
+This article provides a brief overview of what .NET Core is and shows how you can find more information. To find the complete list of documentation for .NET Core, visit the [.NET Core guide](../../core/index.md).
   
 <a name="BKMK_WhatisNETCore"></a>   
 ## What is .NET Core?  
@@ -14,7 +13,7 @@ This topic provides a brief overview  of what .NET Core is and shows how you can
   
  To get started with .NET Core, visit the .NET tutorial [Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro).  
   
- Here are the main characteristics of .NET Core:  
+The main characteristics of .NET Core are:
   
 - **Cross-platform:** .NET Core provides key functionality to implement the app features you need and reuse this code regardless of your platform target. It currently supports three main operating systems (OS): Windows, Linux and macOS. You can write apps and libraries that run unmodified across supported operating systems. To see the list of supported operating systems, visit [.NET Core roadmap](https://github.com/dotnet/core/blob/master/roadmap.md).
   
@@ -24,23 +23,22 @@ This topic provides a brief overview  of what .NET Core is and shows how you can
 
 - **Modular:** .NET Core is modular because it's released through NuGet in smaller assembly packages. Rather than one large assembly that contains most of the core functionality, .NET Core is made available as smaller feature-centric packages. This enables a more agile development model for us and allows you to optimize your app to include just the NuGet packages you need. The benefits of a smaller app surface area include tighter security, reduced servicing, improved performance, and decreased costs in a pay-for-what-you-use model.  
   
-## The .NET Core Platform  
- The .NET Core platform is made of several components, which includes the managed compilers, the runtime, the base class libraries, and numerous application models, such as ASP.NET Core. You can learn more about the different components and get engaged, by visiting the following [GitHub](https://github.com/) repos:  
+## The .NET Core platform
   
-- [.NET Core](https://github.com/dotnet/core)  
+The .NET Core platform is made up of several components, including the managed compilers, the runtime, the base class libraries, and numerous application models, such as ASP.NET Core. You can learn more about the different components and get engaged by visiting the following [GitHub](https://github.com/) repos:  
   
-- [CoreFX - .NET Core foundational libraries](https://github.com/dotnet/corefx)  
+- [.NET Core home](https://github.com/dotnet/core)  
   
-- [CoreCLR - .NET Core runtime](https://github.com/dotnet/coreclr)  
+- [Runtime - .NET Core platform and runtime](https://github.com/dotnet/runtime)  
   
 - [CLI - .NET Core command-line tools](https://github.com/dotnet/cli)  
   
 - [Roslyn - .NET Compiler Platform](https://github.com/dotnet/roslyn)  
   
-- [ASP.NET Core](https://github.com/aspnet/home)  
+- [ASP.NET Core](https://github.com/dotnet/aspnetcore)  
   
 ## See also
 
-- [.NET Tutorial - Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro)
-- [.NET Core Guide](../../core/index.md)
-- [ASP.NET Core Documentation](/aspnet/core/)
+- [.NET tutorial - Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro)
+- [.NET Core guide](../../core/index.md)
+- [ASP.NET Core docs](/aspnet/core/)

@@ -4,7 +4,7 @@ description: Learn how to use ML.NET in a clustering scenario
 author: pkulikov
 ms.date: 11/15/2019
 ms.topic: tutorial
-ms.custom: mvc, seodec18, title-hack-0516
+ms.custom: mvc, title-hack-0516
 #Customer intent: As a developer, I want to use ML.NET so that I can build a k-means clustering model to categorize iris flowers based on its parameters.
 ---
 # Tutorial: Categorize iris flowers using k-means clustering with ML.NET

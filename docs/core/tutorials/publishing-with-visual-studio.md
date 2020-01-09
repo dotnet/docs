@@ -4,7 +4,7 @@ description: Publishing creates the set of files that are needed to run your .NE
 author: BillWagner
 ms.author: wiwagn
 ms.date: 12/10/2019
-ms.custom: "vs-dotnet, seodec18"
+ms.custom: "vs-dotnet"
 ---
 # Publish your .NET Core Hello World application with Visual Studio
 

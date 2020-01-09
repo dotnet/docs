@@ -11,7 +11,6 @@ helpviewer_keywords:
   - "names [.NET Framework]"
   - "format naming guidelines [.NET Framework]"
 ms.assetid: fc076d66-9b5f-42d3-aa65-61d970c794a3
-author: "KrzysztofCwalina"
 ---
 # Naming Guidelines
 Following a consistent set of naming conventions in the development of a framework can be a major contribution to the framework’s usability. It allows the framework to be used by many developers on widely separated projects. Beyond consistency of form, names of framework elements must be easily understood and must convey the function of each element.  

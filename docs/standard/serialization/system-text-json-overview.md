@@ -1,14 +1,11 @@
 ---
 title: "Serialize and deserialize JSON using C# - .NET"
-author: tdykstra
-ms.author: tdykstra
 ms.date: "09/16/2019"
 helpviewer_keywords: 
   - "JSON serialization"
   - "serializing objects"
   - "serialization"
   - "objects, serializing"
-ms.assetid: 4d1111c0-9447-4231-a997-96a2b74b3453
 ---
 
 # JSON serialization in .NET - overview

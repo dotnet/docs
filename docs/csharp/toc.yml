@@ -323,7 +323,7 @@
       href: programming-guide/main-and-command-args/index.md
     - name: Command-Line Arguments
       href: programming-guide/main-and-command-args/command-line-arguments.md
-    - name: "How to: Display Command-Line Arguments"
+    - name: "How to display command-line arguments"
       href: programming-guide/main-and-command-args/how-to-display-command-line-arguments.md
     - name: Main() Return Values
       href: programming-guide/main-and-command-args/main-return-values.md
@@ -525,7 +525,7 @@
             href: programming-guide/concepts/linq/how-to-query-for-the-largest-file-or-files-in-a-directory-tree-linq.md
           - name: "How to query for duplicate files in a directory tree (LINQ)"
             href: programming-guide/concepts/linq/how-to-query-for-duplicate-files-in-a-directory-tree-linq.md
-          - name: "How to: Query the Contents of Files in a Folder (LINQ)"
+          - name: "How to query the contents of files in a folder (LINQ)"
             href: programming-guide/concepts/linq/how-to-query-the-contents-of-files-in-a-folder-lin.md
         - name: "How to query an ArrayList with LINQ"
           href: programming-guide/concepts/linq/how-to-query-an-arraylist-with-linq.md
@@ -915,15 +915,15 @@
         href: programming-guide/statements-expressions-operators/anonymous-functions.md
       - name: Lambda expressions
         href: programming-guide/statements-expressions-operators/lambda-expressions.md
-      - name: "How to: use lambda expressions in a query"
+      - name: "How to use lambda expressions in a query"
         href: programming-guide/statements-expressions-operators/how-to-use-lambda-expressions-in-a-query.md
     - name: Equality and equality comparisons
       items:
       - name: Equality comparisons
         href: programming-guide/statements-expressions-operators/equality-comparisons.md
-      - name: "How to: define value equality for a type"
+      - name: "How to define value equality for a type"
         href: programming-guide/statements-expressions-operators/how-to-define-value-equality-for-a-type.md
-      - name: "How to: test for reference equality (identity)"
+      - name: "How to test for reference equality (identity)"
         href: programming-guide/statements-expressions-operators/how-to-test-for-reference-equality-identity.md
   - name: Types
     items:
@@ -933,11 +933,11 @@
       href: programming-guide/types/casting-and-type-conversions.md
     - name: Boxing and Unboxing
       href: programming-guide/types/boxing-and-unboxing.md
-    - name: "How to: Convert a byte Array to an int"
+    - name: "How to convert a byte array to an int"
       href: programming-guide/types/how-to-convert-a-byte-array-to-an-int.md
-    - name: "How to: Convert a String to a Number"
+    - name: "How to convert a string to a number"
       href: programming-guide/types/how-to-convert-a-string-to-a-number.md
-    - name: "How to: Convert Between Hexadecimal Strings and Numeric Types"
+    - name: "How to convert between hexadecimal strings and numeric types"
       href: programming-guide/types/how-to-convert-between-hexadecimal-strings-and-numeric-types.md
     - name: Using Type dynamic
       href: programming-guide/types/using-type-dynamic.md
@@ -1053,9 +1053,9 @@
       href: programming-guide/classes-and-structs/destructors.md
     - name: Object and Collection Initializers
       href: programming-guide/classes-and-structs/object-and-collection-initializers.md
-    - name: "How to: initialize objects by using an object initializer"
+    - name: "How to initialize objects by using an object initializer"
       href: programming-guide/classes-and-structs/how-to-initialize-objects-by-using-an-object-initializer.md
-    - name: "How to: Initialize a Dictionary with a Collection Initializer"
+    - name: "How to initialize a dictionary with a collection initializer"
       href: programming-guide/classes-and-structs/how-to-initialize-a-dictionary-with-a-collection-initializer.md
     - name: Nested Types
       href: programming-guide/classes-and-structs/nested-types.md
@@ -1071,9 +1071,9 @@
       href: programming-guide/interfaces/index.md
     - name: Explicit Interface Implementation
       href: programming-guide/interfaces/explicit-interface-implementation.md
-    - name: "How to: Explicitly Implement Interface Members"
+    - name: "How to explicitly implement interface members"
       href: programming-guide/interfaces/how-to-explicitly-implement-interface-members.md
-    - name: "How to: Explicitly Implement Members of Two Interfaces"
+    - name: "How to explicitly implement members of two interfaces"
       href: programming-guide/interfaces/how-to-explicitly-implement-members-of-two-interfaces.md
   - name: Delegates
     items:
@@ -1109,7 +1109,7 @@
     items:
     - name: Programming with strings
       href: programming-guide/strings/index.md
-    - name: "How to: Determine Whether a String Represents a Numeric Value"
+    - name: "How to determine whether a string represents a numeric value"
       href: programming-guide/strings/how-to-determine-whether-a-string-represents-a-numeric-value.md
   - name: Indexers
     items:
@@ -1167,7 +1167,7 @@
       href: programming-guide/namespaces/index.md
     - name: Using namespaces
       href: programming-guide/namespaces/using-namespaces.md
-    - name: "How to: use the My namespace"
+    - name: "How to use the My namespace"
       href: programming-guide/namespaces/how-to-use-the-my-namespace.md
   - name: Unsafe Code and Pointers
     items:
@@ -1181,7 +1181,7 @@
         href: programming-guide/unsafe-code-pointers/pointer-types.md
       - name: Pointer conversions
         href: programming-guide/unsafe-code-pointers/pointer-conversions.md
-      - name: "How to: use pointers to copy an array of bytes"
+      - name: "How to use pointers to copy an array of bytes"
         href: programming-guide/unsafe-code-pointers/how-to-use-pointers-to-copy-an-array-of-bytes.md
   - name: XML Documentation Comments
     items:
@@ -1193,7 +1193,7 @@
       href: programming-guide/xmldoc/processing-the-xml-file.md
     - name: Delimiters for Documentation Tags
       href: programming-guide/xmldoc/delimiters-for-documentation-tags.md
-    - name: "How to: Use the XML Documentation Features"
+    - name: "How to use the XML documentation features"
       href: programming-guide/xmldoc/how-to-use-the-xml-documentation-features.md
     - name: Documentation tag reference
       items:
@@ -1257,23 +1257,23 @@
     items:
     - name: Overview
       href: programming-guide/file-system/index.md
-    - name: "How to: Iterate Through a Directory Tree"
+    - name: "How to iterate through a directory tree"
       href: programming-guide/file-system/how-to-iterate-through-a-directory-tree.md
-    - name: "How to: Get Information About Files, Folders, and Drives"
+    - name: "How to get information about files, folders, and drives"
       href: programming-guide/file-system/how-to-get-information-about-files-folders-and-drives.md
-    - name: "How to: Create a File or Folder"
+    - name: "How to create a file or folder"
       href: programming-guide/file-system/how-to-create-a-file-or-folder.md
-    - name: "How to: Copy, Delete, and Move Files and Folders"
+    - name: "How to copy, delete, and move files and folders"
       href: programming-guide/file-system/how-to-copy-delete-and-move-files-and-folders.md
-    - name: "How to: Provide a Progress Dialog Box for File Operations"
+    - name: "How to provide a progress dialog box for file operations"
       href: programming-guide/file-system/how-to-provide-a-progress-dialog-box-for-file-operations.md
-    - name: "How to: Write to a Text File"
+    - name: "How to write to a text file"
       href: programming-guide/file-system/how-to-write-to-a-text-file.md
-    - name: "How to: Read From a Text File"
+    - name: "How to read From a text file"
       href: programming-guide/file-system/how-to-read-from-a-text-file.md
-    - name: "How to: Read a Text File One Line at a Time (Visual C#)"
+    - name: "How to read a text file one line at a time"
       href: programming-guide/file-system/how-to-read-a-text-file-one-line-at-a-time.md
-    - name: "How to: Create a Key In the Registry (Visual C#)"
+    - name: "How to create a key in the registry"
       href: programming-guide/file-system/how-to-create-a-key-in-the-registry.md
   - name: Interoperability
     items:
@@ -1281,11 +1281,11 @@
       href: programming-guide/interop/index.md
     - name: Interoperability Overview
       href: programming-guide/interop/interoperability-overview.md
-    - name: "How to: Access Office Interop Objects by Using Visual C# Features"
+    - name: "How to access Office interop objects by using C# features"
       href: programming-guide/interop/how-to-access-office-onterop-objects.md
-    - name: "How to: Use Indexed Properties in COM Interop Programming"
+    - name: "How to use indexed properties in COM interop programming"
       href: programming-guide/interop/how-to-use-indexed-properties-in-com-interop-rogramming.md
-    - name: "How to: Use Platform Invoke to Play a Wave File"
+    - name: "How to use platform invoke to play a WAV file"
       href: programming-guide/interop/how-to-use-platform-invoke-to-play-a-wave-file.md
     - name: "Walkthrough: Office Programming (C# and Visual Basic)"
       href: programming-guide/interop/walkthrough-office-programming.md

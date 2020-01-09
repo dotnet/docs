@@ -22,11 +22,11 @@ When implementing a serialization mechanism in an object-oriented environment, y
 
 [!INCLUDE [binary-serialization-warning](../../../includes/binary-serialization-warning.md)]
 
-As the nature of binary serialization allows the modification of private members inside an object and therefore changing the state of it, other serialization frameworks like JSON.NET which operate on the public API surface are recommended.
+Binary serialization allows modifying private members inside an object and therefore changing the state of it. Because of this, other serialization frameworks, like JSON.NET, that operate on the public API surface are recommended.
 
 ## Binary serialization in .NET Core
 
-.NET Core supports binary serialization with a subset of types. You can see the list of supported types in the [Serializable types section](#serializable-types). The defined set of types are guaranteed to be serializable between .NET Framework 4.5.1 and later versions and .NET Core 2.0 and later versions. Other .NET implementations, such as Mono, aren't officially supported but should also be working.
+.NET Core supports binary serialization for a subset of types. You can see the list of supported types in the [Serializable types](#serializable-types) section that follows. The listed types are guaranteed to be serializable between .NET Framework 4.5.1 and later versions and between .NET Core 2.0 and later versions. Other .NET implementations, such as Mono, aren't officially supported but should also work.
 
 ### Serializable types
 
@@ -329,35 +329,10 @@ As the nature of binary serialization allows the modification of private members
 - <xref:System.Xml.Xsl.XsltCompileException?displayProperty=nameWithType> (available in .NET Core 2.0.4 and later versions)
 - <xref:System.Xml.Xsl.XsltException?displayProperty=nameWithType> (available in .NET Core 2.0.4 and later versions)
 
-## In this section
-
-- [Serialization Concepts](../../../docs/standard/serialization/serialization-concepts.md)\
-Discusses two scenarios where serialization is useful: when persisting data to storage and when passing objects across application domains.
-
-- [Basic Serialization](../../../docs/standard/serialization/basic-serialization.md)\
-Describes how to use the binary and SOAP formatters to serialize objects.
-
-- [Selective Serialization](../../../docs/standard/serialization/selective-serialization.md)\
-Describes how to prevent some members of a class from being serialized.
-
-- [Custom Serialization](../../../docs/standard/serialization/custom-serialization.md)\
-Describes how to customize serialization for a class by using the <xref:System.Runtime.Serialization.ISerializable> interface.
-
-- [Steps in the Serialization Process](../../../docs/standard/serialization/steps-in-the-serialization-process.md)\
-Describes the course of action serialization takes when the <xref:System.Runtime.Serialization.Formatter.Serialize%2A> method is called on a formatter.
-
-- [Version Tolerant Serialization](../../../docs/standard/serialization/version-tolerant-serialization.md)\
-Explains how to create serializable types that can be modified over time without causing applications to throw exceptions.
-
-- [Serialization Guidelines](../../../docs/standard/serialization/serialization-guidelines.md)\
-Provides some general guidelines for deciding when to serialize an object.
-
-## Reference
+## See also
 
 - <xref:System.Runtime.Serialization>\
 Contains classes that can be used for serializing and deserializing objects.
-
-## Related sections
 
 - [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)\
 Describes the XML serialization mechanism that is included with the common language runtime.
@@ -366,7 +341,7 @@ Describes the XML serialization mechanism that is included with the common langu
 Describes the secure coding guidelines to follow when writing code that performs serialization.
 
 - [.NET Remoting](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/72x4h507(v=vs.100))\
-Describes the various communications methods available in the .NET Framework for remote communications.
+Describes the various methods available in .NET Framework for remote communications.
 
 - [XML Web Services Created Using ASP.NET and XML Web Service Clients](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/7bkzywba(v=vs.100))\
-Provides topics that describe and explain how to program XML Web services created using ASP.NET.
+Articles that describe and explain how to program XML Web services created using ASP.NET.

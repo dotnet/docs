@@ -236,6 +236,6 @@ We're still publishing more diagnostic tutorials. You can read the draft version
 
 This tutorial covered the basics of key .NET diagnostic tools. For advanced usage, see the following reference documentation:
 
-* [dotnet-trace](dotnet-trace.md) to list processes.
-* [dotnet-counters](dotnet-counters.md) to check managed memory usage.
-* [dotnet-dump](dotnet-dump.md) to collect and analyze a dump file.
+- [dotnet-trace](dotnet-trace.md) to list processes.
+- [dotnet-counters](dotnet-counters.md) to check managed memory usage.
+- [dotnet-dump](dotnet-dump.md) to collect and analyze a dump file.

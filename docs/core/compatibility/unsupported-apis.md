@@ -10,6 +10,7 @@ The following APIs will always through a <xref:System.PlatformNotSupportedExcept
 This article organizes the affected API members by namespace.
 
 > [!NOTE]
+>
 > - This article is a work-in-progress. It is not a complete list of APIs that throw exceptions on .NET Core.
 > - This article does not include the explicit interface implementations for binary serialization that throw on .NET Core. For more information, see [Binary serialization in .NET Core](../../standard/serialization/binary-serialization#binary-serialization-in-net-core.md).
 

@@ -44,4 +44,4 @@ Additionally, you can attempt to port smaller solutions or individual projects i
 ## Next steps
 
 >[!div class="nextstepaction"]
->[Unavailable technologies on .NET Core](net-framework-tech-unavailable.md)
+>[Analyze dependencies](third-party-deps.md)

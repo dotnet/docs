@@ -278,8 +278,8 @@ In real-life applications, your model training and evaluation code will be separ
 
 ## Next steps
 
-* Learn how to build applications using different machine learning tasks with more realistic data sets in the [tutorials](./tutorials/index.md).
+- Learn how to build applications using different machine learning tasks with more realistic data sets in the [tutorials](./tutorials/index.md).
 
-* Learn about specific topics in more depth in the [How To Guides](./how-to-guides/index.md).
+- Learn about specific topics in more depth in the [How To Guides](./how-to-guides/index.md).
 
-* If you're super keen, you can dive straight into the [API Reference documentation](https://docs.microsoft.com/dotnet/api/?view=ml-dotnet).
+- If you're super keen, you can dive straight into the [API Reference documentation](https://docs.microsoft.com/dotnet/api/?view=ml-dotnet).

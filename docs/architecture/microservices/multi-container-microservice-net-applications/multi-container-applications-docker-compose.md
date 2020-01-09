@@ -178,9 +178,9 @@ By default, Compose reads two files, a docker-compose.yml and an optional docker
 
 **docker-compose** project file structure:
 
-* *.dockerignore* - used to ignore files
-* *docker-compose.yml* - used to compose microservices
-* *docker-compose.override.yml* - used to configure microservices environment
+- *.dockerignore* - used to ignore files
+- *docker-compose.yml* - used to compose microservices
+- *docker-compose.override.yml* - used to configure microservices environment
 
 You can edit the docker-compose files with any editor, like Visual Studio Code or Sublime, and run the application with the docker-compose up command.
 

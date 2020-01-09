@@ -1,7 +1,7 @@
 ---
 title: Create a REST client using .NET Core
 description: This tutorial teaches you a number of features in .NET Core and the C# language.
-ms.date: 03/06/2017
+ms.date: 01/09/2019
 ms.assetid: 51033ce2-7a53-4cdd-966d-9da15c8204d2
 ---
 
@@ -63,28 +63,11 @@ needs additional libraries for some of its features, you add those
 dependencies into your C# project (\*.csproj) file. For our example, you'll need to add the `System.Runtime.Serialization.Json` package
 so your application can process JSON responses.
 
-Open your `csproj` project file. The first line of the file should appear as:
+You'll need the `System.Runtime.Serialization.Json` package for this application. Add it to your project by running the following [.NET CLI](../core/tools/dotnet-add-package.md) command:
 
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
+```console
+dotnet add package System.Runtime.Serialization.Json
 ```
-
-Add the following immediately after this line:
-
-```xml
-   <ItemGroup>
-      <PackageReference Include="System.Runtime.Serialization.Json" Version="4.3.0" />
-   </ItemGroup>
-```
-
-Most code editors will provide completion for different versions of these
-libraries. You'll usually want to use the latest version of any package
-that you add. However, it is important to make sure that the versions
-of all packages match, and that they also match the version of the .NET
-Core Application framework.
-
-After you've made these changes, execute `dotnet restore` ([see note](#dotnet-restore-note)) so
-that the package is installed on your system.
 
 ## Making Web Requests
 
@@ -126,13 +109,12 @@ Next, rename the namespace defined in the `namespace` statement from its default
 
 Next, update the `Main` method to call this method. The
 `ProcessRepositories` method returns a Task, and you shouldn't exit the
-program before that task finishes. Therefore, you must use the `Wait`
-method to block and wait for the task to finish:
+program before that task finishes. Therefore, you must change the signature of `Main`. Add the `async` modifier, and change the return type to `Task`. Then, in the body of the method, add a call to `ProcessRepositories`. Make sure that you `await` that method call:
 
 ```csharp
-static void Main(string[] args)
+static Task Main(string[] args)
 {
-    ProcessRepositories().Wait();
+    await ProcessRepositories();
 }
 ```
 
@@ -148,7 +130,7 @@ namespace WebAPIClient
     {
         private static readonly HttpClient client = new HttpClient();
 
-        static void Main(string[] args)
+        static Task Main(string[] args)
         {
             //...
         }
@@ -290,16 +272,7 @@ the JSON key names and the C# class and member names. The two attributes used ar
 and <xref:System.Runtime.Serialization.DataMemberAttribute> attributes. By convention, all Attribute classes end in the suffix
 `Attribute`. However, you do not need to use that suffix when you apply an attribute.
 
-The <xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute> attributes are in a different library, so you'll need to add
-that library to your C# project file as a dependency. Add the following line to the `<ItemGroup>` section of your project file:
-
-```xml
-<PackageReference Include="System.Runtime.Serialization.Primitives" Version="4.3.0" />
-```
-
-After you save the file, run `dotnet restore` ([see note](#dotnet-restore-note)) to retrieve this package.
-
-Next, open the `repo.cs` file. Let's change the name to use Pascal Case, and fully spell out the name
+Open the `repo.cs` file. Let's change the name to use Pascal Case, and fully spell out the name
 `Repository`. We still want to map JSON 'repo' nodes to this type, so you'll need to add the
 <xref:System.Runtime.Serialization.DataContractAttribute> attribute to the class declaration. You'll set the `Name` property of the attribute
 to the name of the JSON nodes that map to this type:

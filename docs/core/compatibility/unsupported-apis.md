@@ -10,7 +10,9 @@ The following APIs will always through a <xref:System.PlatformNotSupportedExcept
 This article organizes the affected API members by namespace.
 
 > [!NOTE]
-> This article is a work-in-progress. It is not a complete list of APIs that throw exceptions on .NET Core.
+>
+> - This article is a work-in-progress. It is not a complete list of APIs that throw exceptions on .NET Core.
+> - This article does not include the explicit interface implementations for binary serialization that throw on .NET Core. For more information, see [Binary serialization in .NET Core](../../standard/serialization/binary-serialization.md#binary-serialization-in-net-core).
 
 ## System
 
@@ -267,8 +269,6 @@ This article organizes the affected API members by namespace.
 | - | - |
 | <xref:System.Security.Cryptography.X509Certificates.X509Certificate.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.X509Certificates.X509Certificate.Import%2A?displayProperty=nameWithType> | All |
-| <xref:System.Security.Cryptography.X509Certificates.X509Certificate.System%23Runtime%23Serialization%23IDeserializationCallback%23OnDeserialization%2A?displayProperty=nameWithType> | All |
-| <xref:System.Security.Cryptography.X509Certificates.X509Certificate.System%23Runtime%23Serialization%23ISerializable%23GetObjectData%2A?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.%23ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.X509Certificates.X509Certificate2.PrivateKey?displayProperty=nameWithType> (set only) | All |
 
@@ -318,4 +318,5 @@ This article organizes the affected API members by namespace.
 ## See also
 
 - [Breaking changes for migration from .NET Framework to .NET Core](../compatibility/fx-core.md)
+- [Binary serialization in .NET Core](../../standard/serialization/binary-serialization.md#binary-serialization-in-net-core)
 - [.NET portability analyzer](../../standard/analyzers/portability-analyzer.md)

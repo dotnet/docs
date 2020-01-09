@@ -42,9 +42,9 @@ Using the **ASP.NET Core Web Application** project template as an example, this 
 
     3a. There are several services search options available within the **Configure WCF Web Service Reference** wizard:
 
-     * To search for services defined in the current solution, click the **Discover** button.
-     * To search for services hosted at a specified address, enter a service URL in the **Address** box and click the **Go** button.
-     * To select a WSDL file that contains the web service metadata information, click the **Browse** button.
+     - To search for services defined in the current solution, click the **Discover** button.
+     - To search for services hosted at a specified address, enter a service URL in the **Address** box and click the **Go** button.
+     - To select a WSDL file that contains the web service metadata information, click the **Browse** button.
 
     3b. Select the service from the search results list in the **Services** box. If needed, enter the namespace for the generated code in the corresponding **Namespace** text box.
 

@@ -173,12 +173,12 @@ The *Dockerfile* file is used by the `docker build` command to create a containe
 
 In your terminal, navigate up a directory to the working folder you created at the start. Create a file named *Dockerfile* in your working folder and open it in a text editor. Add the following command as the first line of the file:
 
-# .NET Core Runtime
+### .NET Core Runtime
 ```dockerfile
 FROM mcr.microsoft.com/dotnet/core/runtime:2.2
 ```
 
-# ASP.NET Core Runtime
+### ASP.NET Core Runtime
 ```dockerfile
 FROM mcr.microsoft.com/dotnet/core/aspnet:2.2
 ```

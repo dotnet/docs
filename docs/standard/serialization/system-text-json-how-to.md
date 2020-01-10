@@ -1,6 +1,6 @@
 ---
 title: "How to serialize and deserialize JSON using C# - .NET"
-ms.date: "01/07/2020"
+ms.date: "01/10/2020"
 helpviewer_keywords: 
   - "JSON serialization"
   - "serializing objects"

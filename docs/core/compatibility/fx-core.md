@@ -14,7 +14,7 @@ If you're migrating an app from .NET Framework to .NET Core, the breaking change
 
 Breaking changes:
 
-- [Change in default value of UseShellExecute](#change-in-default-value-of-useshellexecu)
+- [Change in default value of UseShellExecute](#change-in-default-value-of-useshellexecute)
 
 ### .NET Core 2.1
 

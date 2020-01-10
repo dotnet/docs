@@ -43,8 +43,6 @@ I want to know more about OData...
 
 - [OData: SDK](https://www.odata.org/ecosystem/)
 
-- [OData: Developers Web site](https://www.odata.org/developers/articles/)
-
 I want to see end-to-end samples...
 
 - [WCF Data Services Quickstart](https://github.com/microsoftarchive/msdn-code-gallery-community-s-z/tree/master/WCF%20Data%20Services%20Quickstart%20(OData%20Service%20and%20WPF%20Client))

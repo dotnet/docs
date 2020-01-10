@@ -134,7 +134,14 @@ To implement type inference for `object` properties, create a converter like the
 
 ### Stack type handling
 
-In <xref:System.Text.Json>, properties of type <xref:System.Collections.Stack> and <xref:System.Collections.Generic.Stack%601> don't have the same value after making a round trip to and from JSON. The order of a stack's contents is reversed when it's serialized. A custom converter could be implemented to keep stack contents in the same order.
+In <xref:System.Text.Json>, the order of a stack's contents is reversed when it's serialized. This behavior applies to the following types and interface and user-defined types that derive from them:
+
+* <xref:System.Collections.Stack>
+* <xref:System.Collections.Generic.Stack%601>
+* <xref:System.Collections.Immutable.ImmutableStack%601>
+* <xref:System.Collections.Immutable.IImmutableStack%601>
+
+A custom converter could be implemented to keep stack contents in the same order.
 
 ### Omit null-value properties
 

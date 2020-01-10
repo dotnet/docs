@@ -1,14 +1,13 @@
 ---
 title: Migrating C++/CLI projects to .NET Core
-description: Learn about porting C++/CLI projects to .NET Core
+description: Learn about porting C++/CLI projects to .NET Core.
 author: mjrousos
-ms.author: 
-ms.date: 12/12/2019
+ms.date: 01/10/2020
 ---
 
 # How to port a C++/CLI project to .NET Core
 
-Beginning with .NET Core 3.1 and Visual Studio 2019 version 16.4, [C++/CLI projects](https://docs.microsoft.com/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp) can target .NET Core. This support makes it possible to port Windows desktop applications with C++/CLI interop layers to .NET Core. This article describes how to port C++/CLI projects from .NET Framework to .NET Core 3.1.
+Beginning with .NET Core 3.1 and Visual Studio 2019 version 16.4, [C++/CLI projects](/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp) can target .NET Core. This support makes it possible to port Windows desktop applications with C++/CLI interop layers to .NET Core. This article describes how to port C++/CLI projects from .NET Framework to .NET Core 3.1.
 
 ## C++/CLI .NET Core limitations
 
@@ -24,11 +23,10 @@ There are some important limitations to porting C++/CLI projects to .NET Core co
 
 To port a C++/CLI project to .NET Core, make the following changes to the vcxproj file. These migration steps differ from the steps needed for other project types because C++/CLI projects don't use SDK-style project files.
 
-1. Replace `<CLRSupport>true</CLRSupport>` properties with `<CLRSupport>NetCore</CLRSupport>`.
-    1. This property is often in configuration-specific property groups, so you may need to replace it in multiple places.
+1. Replace `<CLRSupport>true</CLRSupport>` properties with `<CLRSupport>NetCore</CLRSupport>`. This property is often in configuration-specific property groups, so you may need to replace it in multiple places.
 2. Replace `<TargetFrameworkVersion>` properties with `<TargetFramework>netcoreapp3.1</TargetFramework>`.
 3. Remove any .NET Framework references (like `<Reference Include="System" />`). .NET Core SDK assemblies are automatically referenced when using `<CLRSupport>NetCore</CLRSupport>`.
-4. Update API usage in cpp files, as necessary, to remove APIs unavailable to .NET Core. Because C++/CLI projects tend to be fairly thin interop layers, there are often not many changes needed. The [.NET Portability Analyzer](https://docs.microsoft.com/dotnet/standard/analyzers/portability-analyzer) can be used to identify unsupported .NET APIs used by C++/CLI binaries just as with purely managed binaries. Guidelines for determining code portability and updating projects to work with .NET Core APIs are available in the [library porting guidance](./libraries.md#determining-the-portability-of-your-code).
+4. Update API usage in cpp files, as necessary, to remove APIs unavailable to .NET Core. Because C++/CLI projects tend to be fairly thin interop layers, there are often not many changes needed. The [.NET Portability Analyzer](../../standard/analyzers/portability-analyzer) can be used to identify unsupported .NET APIs used by C++/CLI binaries just as with purely managed binaries. Guidelines for determining code portability and updating projects to work with .NET Core APIs are available in the [library porting guidance](./libraries.md#determining-the-portability-of-your-code).
 
 ### WPF and Windows Forms usage
 

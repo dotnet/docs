@@ -22,7 +22,7 @@ When implementing a serialization mechanism in an object-oriented environment, y
 
 [!INCLUDE [binary-serialization-warning](../../../includes/binary-serialization-warning.md)]
 
-Binary serialization allows modifying private members inside an object and therefore changing the state of it. Because of this, other serialization frameworks, like JSON.NET, that operate on the public API surface are recommended.
+Binary serialization allows modifying private members inside an object and therefore changing the state of it. Because of this, other serialization frameworks, like <xref:System.Text.Json?displayProperty=fullName>, that operate on the public API surface are recommended.
 
 ## .NET Core
 

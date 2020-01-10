@@ -81,7 +81,7 @@ You can train a multiclass classification model using the following training alg
 * <xref:Microsoft.ML.Trainers.NaiveBayesMulticlassTrainer>
 * <xref:Microsoft.ML.Trainers.OneVersusAllTrainer>
 * <xref:Microsoft.ML.Trainers.PairwiseCouplingTrainer>
-* <xref:Microsoft.ML.VisionCatalog.ImageClassification>
+* <xref:Microsoft.ML.Vision.ImageClassificationTrainer>
 
 ### Multiclass classification inputs and outputs
 
@@ -231,4 +231,4 @@ The forecasting task use past time-series data to make predictions about future 
 
 You can train a forecasting model with the following algorithm:
 
-<xref:Microsoft.ML.TimeSeriesCatalog.ForecastBySsa>
+<xref:Microsoft.ML.TimeSeriesCatalog.ForecastBySsa*>

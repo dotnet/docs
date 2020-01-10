@@ -27,8 +27,6 @@ I want to jump right in...
 
 - [Getting Started](getting-started-with-wcf-data-services.md)
 
-- [Silverlight Quickstart](http://www.silverlight.net/learn/quickstarts/consuming-odata-feeds/)
-
 Just show me some code...
 
 - [Quickstart](quickstart-wcf-data-services.md)

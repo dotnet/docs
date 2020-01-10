@@ -33,7 +33,7 @@ Configuring a data service to support the streaming of binary data requires the 
 
 5. Enable access to binary resources on the server or in a data source.
 
-The examples in this topic are based on a sample streaming photo service, which is discussed in depth in the post [Data Services Streaming Provider Series: Implementing a Streaming Provider (Part 1)](https://blogs.msdn.microsoft.com/astoriateam/2010/08/04/data-services-streaming-provider-series-implementing-a-streaming-provider-part-1/). The source code for the Streaming Photo Data Service sample is available on [GitHub](https://github.com/microsoftarchive/msdn-code-gallery-community-s-z/tree/master/Streaming%20Photo%20OData%20Service%20Sample).
+The examples in this topic are based on a sample streaming photo service, which is discussed in depth in the post [Data Services Streaming Provider Series: Implementing a Streaming Provider (Part 1)](https://docs.microsoft.com/archive/blogs/astoriateam/data-services-streaming-provider-series-implementing-a-streaming-provider-part-1). The source code for the Streaming Photo Data Service sample is available on [GitHub](https://github.com/microsoftarchive/msdn-code-gallery-community-s-z/tree/master/Streaming%20Photo%20OData%20Service%20Sample).
 
 ## Defining a Media Link Entry in the Data Model
 

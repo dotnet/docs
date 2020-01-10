@@ -41,7 +41,7 @@ Just show me some code...
 
 I want to know more about OData...
 
-- [Whitepaper: Introducing OData](https://go.microsoft.com/fwlink/?LinkId=220867)
+- [White paper: Introducing OData](https://go.microsoft.com/fwlink/?LinkId=220867)
 
 - [Open Data Protocol Web site](https://go.microsoft.com/fwlink/?LinkID=184554)
 
@@ -77,7 +77,7 @@ What can I do with it?
 
 - [Overview](wcf-data-services-overview.md)
 
-- [Whitepaper: Introducing OData](https://go.microsoft.com/fwlink/?LinkId=220867)
+- [White paper: Introducing OData](https://go.microsoft.com/fwlink/?LinkId=220867)
 
 - [Application Scenarios](application-scenarios-wcf-data-services.md)
 

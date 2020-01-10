@@ -232,9 +232,9 @@ using System.Text.Json;
 
 Notice that you're now using <xref:System.Net.Http.HttpClient.GetStreamAsync(System.String)> instead of <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)>. The serializer
 uses a stream instead of a string as its source. Let's explain a couple features of the C#
-language that are being used in the second line above. The argument to <xref:System.Text.Json.JsonSerializer.DeserializeAsync%601?displayProperty=nameWithType> is an
-`await` expression. Await expressions can appear almost anywhere in your code, even though
-up to now, you've only seen them as part of an assignment statement. The `Deserialize` method is *generic*, which means you must supply type arguments for what kind of objects should be created from the JSON text. In this example, you're deserializing to a `List<Repository>`, which is another generic object, the <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>. The `List<>` class stores a collection of objects. The type argument declares the type of objects stored in the `List<>`. The Json text represents a collection of repo objects, so the type argument is `Repository`.
+language that are being used in the second line of the preceding code snippet. The first argument to <xref:System.Text.Json.JsonSerializer.DeserializeAsync%60%601(System.IO.Stream,System.Text.Json.JsonSerializerOptions,System.Threading.CancellationToken)?displayProperty=nameWithType> is an
+`await` expression. (The other two parameters are optional and are omitted in the code snippet.) Await expressions can appear almost anywhere in your code, even though
+up to now, you've only seen them as part of an assignment statement. The `Deserialize` method is *generic*, which means you must supply type arguments for what kind of objects should be created from the JSON text. In this example, you're deserializing to a `List<Repository>`, which is another generic object, the <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>. The `List<>` class stores a collection of objects. The type argument declares the type of objects stored in the `List<>`. The JSON text represents a collection of repo objects, so the type argument is `Repository`.
 
 You're almost done with this section. Now that you've converted the JSON to C# objects, let's display
 the name of each repository. Replace the lines that read:

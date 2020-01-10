@@ -1,7 +1,7 @@
 ---
 title: ASP.NET Core breaking changes - .NET Core
 description: Lists the breaking changes in ASP.NET Core.
-ms.date: "12/20/2019"
+ms.date: "01/10/2020"
 author: "scottaddie"
 ms.author: "scaddie"
 ---
@@ -68,6 +68,10 @@ The following is a list of ASP.NET Core breaking changes by ASP.NET Core version
 ***
 
 [!INCLUDE[Hosting: Generic host restriction on Startup constructor injection](~/includes/core-changes/aspnetcore/3.0/hosting-generic-host-startup-ctor-restriction.md)]
+
+***
+
+[!INCLUDE[Hosting: HTTPS redirection enabled for IIS OutOfProcess](~/includes/core-changes/aspnetcore/3.0/hosting-https-redirection-iis-outofprocess.md)]
 
 ***
 

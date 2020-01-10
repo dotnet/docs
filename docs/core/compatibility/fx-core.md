@@ -14,7 +14,7 @@ If you're migrating an app from .NET Framework to .NET Core, the breaking change
 
 Breaking changes:
 
-- [Change in default value of UseShellExecute](#change-in-default-value-of-UseShellExecute)
+- [Change in default value of UseShellExecute](#change-in-default-value-of-useshellexecu)
 
 ### .NET Core 2.1
 
@@ -22,7 +22,7 @@ Breaking changes:
 
 ## Windows Forms
 
-Windows Forms support was added to .NET Core in version 3.0. If you're migrating a Windows Forms app from .NET Framework to .NET Core, the breaking changes listed in this article may affect your app.
+Windows Forms support was added to .NET Core in version 3.0. If you're migrating a Windows Forms app from .NET Framework to .NET Core, the breaking changes listed here may affect your app.
 
 Breaking changes are grouped by the .NET Core version in which they were introduced.
 

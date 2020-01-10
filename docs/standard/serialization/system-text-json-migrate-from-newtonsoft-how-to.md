@@ -409,9 +409,9 @@ During deserialization, `Newtonsoft.Json` adds objects to a collection even if t
 
 `JsonDocument` builds an in-memory view of the data into a pooled buffer. Therefore, unlike `JObject` or `JArray` from `Newtonsoft.Json`, the `JsonDocument` type implements `IDisposable` and needs to be used inside a using block. 
 
-Only return a `JsonDocument` from your API if you want to transfer lifetime ownership and dispose responsibility to the caller. In most scenarios, that isn't necessary. If the caller needs to work with the entire JSON document, return the <xref:System.Text.Json.JsonElement.Clone%2A> of the <xref:System.Text.Json.JsonDocument.RootElement%2A>, which is a <xref:System.Text.Json.JsonElement>. If the caller needs to work with a particular element within the JSON document, return the <xref:System.Text.Json.JsonElement.Clone%2A> of that <xref:System.Text.Json.JsonElement>.
+Only return a `JsonDocument` from your API if you want to transfer lifetime ownership and dispose responsibility to the caller. In most scenarios, that isn't necessary. If the caller needs to work with the entire JSON document, return the <xref:System.Text.Json.JsonElement.Clone%2A> of the <xref:System.Text.Json.JsonDocument.RootElement%2A>, which is a <xref:System.Text.Json.JsonElement>. If the caller needs to work with a particular element within the JSON document, return the <xref:System.Text.Json.JsonElement.Clone%2A> of that <xref:System.Text.Json.JsonElement>. If you return the `RootElement` or a sub-element directly without making a `Clone`, the caller won't be able to access the returned `JsonElement` after the `JsonDocument` that owns it is disposed.
 
-Here's an example:
+Here's an example that requires you to make a `Clone`:
 
 ```csharp
 public JsonElement LookAndLoad(JsonElement source)
@@ -426,6 +426,15 @@ public JsonElement LookAndLoad(JsonElement source)
 ```
 
 The preceding code expects a `JsonElement` that contains a `fileName` property. It opens the JSON file and creates a `JsonDocument`. The method assumes that the caller wants to work with the entire document, so it returns the `Clone` of the `RootElement`. 
+
+If you receive a `JsonElement` that isn't owned by a `JsonDocument` and return a sub-element, it's not necessary to return a `Clone` of the sub-element. For example:
+
+```csharp
+public JsonElement ReturnFileName(JsonElement source)
+{
+   return source.GetProperty("fileName");
+}
+```
 
 ### JsonDocument is read-only
 

@@ -114,7 +114,7 @@ Next, rename the namespace defined in the `namespace` statement from its default
 
 Next, update the `Main` method to call this method. The
 `ProcessRepositories` method returns a Task, and you shouldn't exit the
-program before that task finishes. Therefore, you must change the signature of `Main`. Add the `async` modifier, and change the return type to `Task`. Then, in the body of the method, add a call to `ProcessRepositories`. Make sure that you `await` that method call:
+program before that task finishes. Therefore, you must change the signature of `Main`. Add the `async` modifier, and change the return type to `Task`. Then, in the body of the method, add a call to `ProcessRepositories`. Add the `await` keyword when to that method call:
 
 ```csharp
 static Task Main(string[] args)

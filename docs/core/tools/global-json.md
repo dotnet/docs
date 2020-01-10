@@ -34,7 +34,7 @@ The version of the .NET Core SDK to use.
 
 This field:
 
-- Doesn't have globbing support, that is, the full version number has to be specified.
+- Doesn't have wildcard support, that is, the full version number has to be specified.
 - Doesn't support version ranges.
 
 #### allowPrerelease

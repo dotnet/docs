@@ -183,9 +183,9 @@
       href: diagnostics/dotnet-trace.md
   - name: .NET Core diagnostics tutorials
     items:
-    - name: Debugging a memory leak
+    - name: Debug a memory leak
       href: diagnostics/debug-memory-leak.md
-- name: Unit Testing
+- name: Unit testing
   href: testing/index.md
   items:
   - name: Unit testing best practices
@@ -339,8 +339,9 @@
   - name: XML Serializer Generator
     href: additional-tools/xml-serializer-generator.md
 - name: Port from .NET Framework
-  href: porting/index.md
   items:
+  - name: Overview
+    href: porting/index.md
   - name: .NET Framework technologies unavailable for .NET Core
     href: porting/net-framework-tech-unavailable.md
   - name: Analyze third-party dependencies

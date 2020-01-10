@@ -335,6 +335,7 @@ Workarounds are possible for the following scenarios, but some of them would be 
 * <xref:System.TimeSpan>
 * <xref:System.DBNull>
 * <xref:System.Type>
+* <xref:System.ValueTuple> and its associated generic types
 
 Custom converters can be implemented for types that don't have built-in support.
 

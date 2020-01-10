@@ -57,15 +57,15 @@ Microsoft.Data.Sqlite has a lot fewer [connection string](connection-strings.md)
 
 ## Authorization
 
-Microsoft.Data.Sqlite doesn't have any API exposing SQLite's authorization callback. Use issue [#13835](https://github.com/aspnet/EntityFrameworkCore/issues/13835) to provide feedback about this feature.
+Microsoft.Data.Sqlite doesn't have any API exposing SQLite's authorization callback. Use issue [#13835](https://github.com/dotnet/efcore/issues/13835) to provide feedback about this feature.
 
 ## Data change notifications
 
-Microsoft.Data.Sqlite doesn't have any API exposing SQLite's data change notifications. Use issue [#13827](https://github.com/aspnet/EntityFrameworkCore/issues/13827) to provide feedback about this feature.
+Microsoft.Data.Sqlite doesn't have any API exposing SQLite's data change notifications. Use issue [#13827](https://github.com/dotnet/efcore/issues/13827) to provide feedback about this feature.
 
 ## Virtual table modules
 
-Microsoft.Data.Sqlite doesn't have any API for creating virtual table modules. Use issue [#13823](https://github.com/aspnet/EntityFrameworkCore/issues/13823) to provide feedback about this feature.
+Microsoft.Data.Sqlite doesn't have any API for creating virtual table modules. Use issue [#13823](https://github.com/dotnet/efcore/issues/13823) to provide feedback about this feature.
 
 ## See also
 

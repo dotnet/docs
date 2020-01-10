@@ -28,7 +28,7 @@ Breaking changes:
 
 - [Removed controls](#removed-controls)
 - [CellFormatting event not raised if tooltip is shown](#cellformatting-event-not-raised-if-tooltip-is-shown)
-- [Control.DefaultFont changed to Segoe UI 9pt](#controldefaultfont-changed-to-segoe-ui-9pt)
+- [Control.DefaultFont changed to Segoe UI 9pt](#default-control-font-changed-to-segoe-ui-9pt)
 - [Modernization of the FolderBrowserDialog](#modernization-of-the-folderbrowserdialog)
 - [SerializableAttribute removed from some Windows Forms types](#serializableattribute-removed-from-some-windows-forms-types)
 - [AllowUpdateChildControlIndexForTabControls compatibility switch not supported](#allowupdatechildcontrolindexfortabcontrols-compatibility-switch-not-supported)

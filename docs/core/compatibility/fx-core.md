@@ -28,7 +28,7 @@ Breaking changes:
 
 - [Removed controls](#removed-controls)
 - [CellFormatting event not raised if tooltip is shown](#cellformatting-event-not-raised-if-tooltip-is-shown)
-- [Control.DefaultFont changed to Segoe UI 9pt](#default-control-font-changed-to-segoe-ui-9pt)
+- [Control.DefaultFont changed to Segoe UI 9 pt](#default-control-font-changed-to-segoe-ui-9-pt)
 - [Modernization of the FolderBrowserDialog](#modernization-of-the-folderbrowserdialog)
 - [SerializableAttribute removed from some Windows Forms types](#serializableattribute-removed-from-some-windows-forms-types)
 - [AllowUpdateChildControlIndexForTabControls compatibility switch not supported](#allowupdatechildcontrolindexfortabcontrols-compatibility-switch-not-supported)
@@ -52,7 +52,7 @@ Breaking changes:
 
 ### .NET Core 3.0
 
-[!INCLUDE[Control.DefaultFont changed to Segoe UI 9pt](~/includes/core-changes/windowsforms/3.0/control-defaultfont-changed.md)]
+[!INCLUDE[Control.DefaultFont changed to Segoe UI 9 pt](~/includes/core-changes/windowsforms/3.0/control-defaultfont-changed.md)]
 
 ***
 

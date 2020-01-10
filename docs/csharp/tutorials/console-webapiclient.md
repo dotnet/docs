@@ -1,7 +1,7 @@
 ---
 title: Create a REST client using .NET Core
 description: This tutorial teaches you a number of features in .NET Core and the C# language.
-ms.date: 01/09/2019
+ms.date: 01/09/2020
 ms.assetid: 51033ce2-7a53-4cdd-966d-9da15c8204d2
 ---
 
@@ -42,7 +42,7 @@ comfortable with.
 
 The first step is to create a new application. Open a command prompt and
 create a new directory for your application. Make that the current
-directory. Type the following command in a console window:
+directory. Enter the following command in a console window:
 
 ```console
 dotnet new console --name WebApiClient
@@ -65,7 +65,7 @@ when it makes sense for your project.
 One of the key design goals for .NET Core is to minimize the size of
 the .NET installation. If an application
 needs additional libraries for some of its features, you add those
-dependencies into your C# project (\*.csproj) file. For our example, you'll need to add the `System.Runtime.Serialization.Json` package
+dependencies into your C# project (\*.csproj) file. For our example, you'll need to add the `System.Runtime.Serialization.Json` package,
 so your application can process JSON responses.
 
 You'll need the `System.Runtime.Serialization.Json` package for this application. Add it to your project by running the following [.NET CLI](../../core/tools/dotnet-add-package.md) command:
@@ -190,7 +190,7 @@ At this point, you've written the code to retrieve a response from a web server,
 the text that is contained in that response. Next, let's convert that JSON response into C#
 objects.
 
-The <xref:System.Text.Json.JsonSerializer?displayProperty=nameWithType> class serializes objects to JSOn and deserializes JSON into objects. Start by defining a class to represent the `repo` JSON object returned from the GitHub API:
+The <xref:System.Text.Json.JsonSerializer?displayProperty=nameWithType> class serializes objects to JSON and deserializes JSON into objects. Start by defining a class to represent the `repo` JSON object returned from the GitHub API:
 
 ```csharp
 using System;
@@ -224,7 +224,7 @@ var repositories = await JsonSerializer.DeserializeAsync<List<Repository>>(await
 return repositories;
 ```
 
-You're using a new namespace, so you'll need to add it as well at the top of the file:
+You're using a new namespace, so you'll need to add it at the top of the file as well:
 
 ```csharp
 using System.Text.Json;
@@ -234,7 +234,7 @@ Notice that you're now using <xref:System.Net.Http.HttpClient.GetStreamAsync(Sys
 uses a stream instead of a string as its source. Let's explain a couple features of the C#
 language that are being used in the second line above. The argument to <xref:System.Text.Json.JsonSerializer.DeserializeAsync%601?displayProperty=nameWithType> is an
 `await` expression. Await expressions can appear almost anywhere in your code, even though
-up to now, you've only seen them as part of an assignment statement. The `Deserialize` method is *generic*, which means you must supply type arguments for what kind of objects should be created from the JSON text. In this example, you're deserializing to a `List<Repository>`, which is another generic object, the <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>. The `List<>` class stores a collection of objects. The type argument declares the type of objects stored in the `List<>`. The Json text represents a collection of `repo` objects, so the type argument is a `Repository`.
+up to now, you've only seen them as part of an assignment statement. The `Deserialize` method is *generic*, which means you must supply type arguments for what kind of objects should be created from the JSON text. In this example, you're deserializing to a `List<Repository>`, which is another generic object, the <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>. The `List<>` class stores a collection of objects. The type argument declares the type of objects stored in the `List<>`. The Json text represents a collection of repo objects, so the type argument is `Repository`.
 
 You're almost done with this section. Now that you've converted the JSON to C# objects, let's display
 the name of each repository. Replace the lines that read:
@@ -270,7 +270,7 @@ This change means you need to change the code that writes the name of each repos
 Console.WriteLine(repo.Name);
 ```
 
-Do a `dotnet run` to make sure you've got the mappings correct. You should
+Execute `dotnet run` to make sure you've got the mappings correct. You should
 see the same output as before.
 
 Let's make one more change before adding new features. The `ProcessRepositories` method can do the async
@@ -357,7 +357,7 @@ this fashion in the JSON response:
 That format does not follow any of the standard .NET <xref:System.DateTime> formats. Because of that, you'll need to write
 a custom conversion method. You also probably don't want the raw string exposed to users of the `Repository`
 class. Attributes can help control that as well. First, define a `public` property that will hold the
-string representation of the date time in your `Repository` class and a `LastPush` readonly property that returns a formatted string representing the date returned:
+string representation of the date and time in your `Repository` class and a `LastPush` `readonly` property that returns a formatted string that represents the returned date:
 
 ```csharp
 [JsonPropertyName(Name="pushed_at")]
@@ -367,7 +367,7 @@ public DateTime LastPush =>
     DateTime.ParseExact(JsonDate, "yyyy-MM-ddTHH:mm:ssZ", CultureInfo.InvariantCulture);
 ```
 
-Let's go over the new constructs above. The `LastPush` property is defined using an *expression bodied member* for hte `get` accessor. There is no `set` accessor. Omitting the `set` accessor is how you define a *read-only* property in C#. (Yes,
+Let's go over the new constructs we just defined. The `LastPush` property is defined using an *expression-bodied member* for the `get` accessor. There is no `set` accessor. Omitting the `set` accessor is how you define a *read-only* property in C#. (Yes,
 you can create *write-only* properties in C#, but their value is limited.) The <xref:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider)>
 method parses a string and creates a <xref:System.DateTime> object using a provided date format, and adds additional
 metadata to the `DateTime` using a `CultureInfo` object. If the parse operation fails, the

@@ -162,7 +162,7 @@ myapp.deps.json  myapp.dll  myapp.pdb  myapp.runtimeconfig.json
 
 The *Dockerfile* file is used by the `docker build` command to create a container image. This file is a text file named *Dockerfile* that doesn't have an extension.
 
-In your terminal, navigate up a directory to the working folder you created at the start. Create a file named *Dockerfile* in your working folder and open it in a text editor. Depending on the type of application you're going to containerize, choose the ASP.NET Core runtime or the .NET Core runtime. When in doubt, choose the ASP.NET Core runtime, which includes the .NET Core runtime. This tutorial will use the ASP.NET Core runtime image, but the application created is a .NET Core application.
+In your terminal, navigate up a directory to the working folder you created at the start. Create a file named *Dockerfile* in your working folder and open it in a text editor. Depending on the type of application you're going to containerize, you'll choose either the ASP.NET Core runtime or the .NET Core runtime. When in doubt, choose the ASP.NET Core runtime, which includes the .NET Core runtime. This tutorial will use the ASP.NET Core runtime image, but the application created in the previous sections is an .NET Core application.
 
 - ASP.NET Core runtime
 
@@ -176,14 +176,13 @@ In your terminal, navigate up a directory to the working folder you created at t
   FROM mcr.microsoft.com/dotnet/core/runtime:3.1
   ```
 
-The `FROM` command tells Docker to pull down the image tagged **3.1** from the **mcr.microsoft.com/dotnet/core/aspnet** repository. Make sure that you pull the runtime version that matches the runtime targeted by your SDK. For example, the app created in the previous section used the .NET Core 3.1 SDK and the base image referred to in the *Dockerfile* is tagged with **3.1**.
+The `FROM` command tells Docker to pull down the image tagged **3.1** from the specified repository. Make sure that you pull the runtime version that matches the runtime targeted by your SDK. For example, the app created in the previous section used the .NET Core 3.1 SDK and the base image referred to in the *Dockerfile* is tagged with **3.1**.
 
 Save the *Dockerfile* file. The directory structure of the working folder should look like the following. Some of the deeper-level files and folders have been cut to save space in the article:
 
 ```
 docker-working
 │   Dockerfile
-│   global.json
 │
 └───app
     │   myapp.csproj

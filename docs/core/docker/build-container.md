@@ -48,7 +48,6 @@ Your folder tree will look like the following:
 
 ```
 docker-working
-│   global.json
 │
 └───app
     │   myapp.csproj
@@ -56,6 +55,7 @@ docker-working
     │
     └───obj
             myapp.csproj.nuget.cache
+            myapp.csproj.nuget.dgspec.json
             myapp.csproj.nuget.g.props
             myapp.csproj.nuget.g.targets
             project.assets.json
@@ -162,7 +162,7 @@ myapp.deps.json  myapp.dll  myapp.pdb  myapp.runtimeconfig.json
 
 The *Dockerfile* file is used by the `docker build` command to create a container image. This file is a plaintext file named *Dockerfile* that doesn't have an extension.
 
-In your terminal, navigate up a directory to the working folder you created at the start. Create a file named *Dockerfile* in your working folder and open it in a text editor. Depending on the type of application you're going to containerize, choose the ASP.NET Core runtime or the .NET Core runtime. When in doubt, choose the ASP.NET Core runtime, which includes the .NET Core runtime.
+In your terminal, navigate up a directory to the working folder you created at the start. Create a file named *Dockerfile* in your working folder and open it in a text editor. Depending on the type of application you're going to containerize, choose the ASP.NET Core runtime or the .NET Core runtime. When in doubt, choose the ASP.NET Core runtime, which includes the .NET Core runtime. This tutorial will use the ASP.NET Core runtime image, but the application created is a .NET Core application.
 
 - ASP.NET Core runtime
 

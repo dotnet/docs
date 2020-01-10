@@ -5,7 +5,7 @@ ms.date: 12/18/2019
 ---
 # Breaking changes for migration from .NET Framework to .NET Core
 
-If you're migrating an app from .NET Framework to .NET Core, the breaking changes listed in this article may affect you. Breaking changes are grouped by category.
+If you're migrating an app from .NET Framework to .NET Core, the breaking changes listed in this article may affect you. Breaking changes are grouped by category, and within those categories, by the version of .NET Core they were introduced in.
 
 > [!NOTE]
 > This article is not a complete list of breaking changes between .NET Framework and .NET Core. The most important breaking changes are added here as we become aware of them.
@@ -15,6 +15,8 @@ If you're migrating an app from .NET Framework to .NET Core, the breaking change
 Breaking changes:
 
 - [Change in default value of UseShellExecute](#change-in-default-value-of-UseShellExecute)
+
+### .NET Core 2.1
 
 [!INCLUDE[Process.Start changes](~/includes/core-changes/corefx/2.1/process-start-changes.md)]
 

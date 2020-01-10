@@ -54,7 +54,7 @@ To use both Windows Forms and WPF APIs, add this reference to the vcxproj file:
 <FrameworkReference Include="Microsoft.WindowsDesktop.App" />
 ```
 
-Currently, it's not possible to add these references using Visual Studio's reference manager. Instead, update the project file manually. This can be done in Visual Studio by unloading the project and then editing the project file. You can also use another editor like VS Code.
+Currently, it's not possible to add these references using Visual Studio's reference manager. Instead, update the project file manually. This update can be done in Visual Studio by unloading the project and then editing the project file. You can also use another editor like VS Code.
 
 ## Build without MSBuild
 

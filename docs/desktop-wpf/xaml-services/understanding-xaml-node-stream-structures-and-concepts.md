@@ -100,7 +100,7 @@ A XAML node loop walks through a XAML node stream in a linear way. The node stre
 
 The first node in a node stream when it is opened by a XAML reader is the start-object node of the root object. By definition, this object is always a single object node and has no peers. In any real-world XAML example, the root object is defined to have one or more properties that hold more objects, and these properties have member nodes. The member nodes then have one or more object nodes, or might also terminate in a value node instead. The root object typically defines XAML namescopes, which are syntactically assigned as attributes in the XAML text markup but map to a `Namescope` node type in the XAML node stream representation.
 
-Consider the following XAML example (this is arbitrary XAML, not backed by existing types in the .NET Framework). Assume that in this object model, `FavorCollection` is `List<T>` of `Favor`, `Balloon` and `NoiseMaker` are assignable to `Favor`, the `Balloon.Color` property is backed by a `Color` object similar to how WPF defines colors as known color names, and `Color` supports a type converter for attribute syntax.
+Consider the following XAML example (this is arbitrary XAML, not backed by existing types in .NET). Assume that in this object model, `FavorCollection` is `List<T>` of `Favor`, `Balloon` and `NoiseMaker` are assignable to `Favor`, the `Balloon.Color` property is backed by a `Color` object similar to how WPF defines colors as known color names, and `Color` supports a type converter for attribute syntax.
 
 |XAML markup|Resulting XAML node stream|
 |-----------------|--------------------------------|

@@ -322,6 +322,8 @@ If you use a custom converter that follows the preceding sample:
 
 Workarounds are possible for the following scenarios, but some of them would be relatively difficult to implement. Code samples for workarounds are not available for these scenarios.
 
+If you implement a workaround for one of these scenarios and can share the code, select the button at the bottom of the page to send feedback for **This page**. That creates a GitHub issue and adds it to the issues that are listed at the bottom of the page.
+
 ### Types without built-in support
 
 <xref:System.Text.Json> doesn't provide built-in support for the following types:

@@ -68,7 +68,7 @@ needs additional libraries for some of its features, you add those
 dependencies into your C# project (\*.csproj) file. For our example, you'll need to add the `System.Runtime.Serialization.Json` package
 so your application can process JSON responses.
 
-You'll need the `System.Runtime.Serialization.Json` package for this application. Add it to your project by running the following [.NET CLI](../core/tools/dotnet-add-package.md) command:
+You'll need the `System.Runtime.Serialization.Json` package for this application. Add it to your project by running the following [.NET CLI](../../core/tools/dotnet-add-package.md) command:
 
 ```console
 dotnet add package System.Text.Json
@@ -232,7 +232,7 @@ using System.Text.Json;
 
 Notice that you're now using <xref:System.Net.Http.HttpClient.GetStreamAsync(System.String)> instead of <xref:System.Net.Http.HttpClient.GetStringAsync(System.String)>. The serializer
 uses a stream instead of a string as its source. Let's explain a couple features of the C#
-language that are being used in the second line above. The argument to <xref:System.Text.Json.Serializer.Deserialize%601?displayProperty=nameWithType> is an
+language that are being used in the second line above. The argument to <xref:System.Text.Json.JsonSerializer.DeserializeAsync%601?displayProperty=nameWithType> is an
 `await` expression. Await expressions can appear almost anywhere in your code, even though
 up to now, you've only seen them as part of an assignment statement. The `Deserialize` method is *generic*, which means you must supply type arguments for what kind of objects should be created from the JSON text. In this example, you're deserializing to a `List<Repository>`, which is another generic object, the <xref:System.Collections.Generic.List%601?displayProperty=nameWithType>. The `List<>` class stores a collection of objects. The type argument declares the type of objects stored in the `List<>`. The Json text represents a collection of `repo` objects, so the type argument is a `Repository`.
 

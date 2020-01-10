@@ -1,4 +1,4 @@
-### `Control.DefaultFont` changed to `Segoe UI 9pt`
+### :::no-loc text="Control.DefaultFont"::: changed to :::no-loc text="Segoe UI 9pt":::
 
 #### Change description
 

@@ -7,7 +7,7 @@ ms.date: 11/04/2019
 
 F# has two major feature areas that deal in the space of low-level programming:
 
-* The `byref`/`inref`/`outref` types, which are a managed pointers. They have restrictions on usage so that you cannot compile a program that is invalid at runtime.
+* The `byref`/`inref`/`outref` types, which are managed pointers. They have restrictions on usage so that you cannot compile a program that is invalid at run time.
 * A `byref`-like struct, which is a [structure](structures.md) that has similar semantics and the same compile-time restrictions as `byref<'T>`. One example is <xref:System.Span%601>.
 
 ## Syntax
@@ -169,7 +169,7 @@ A "`byref`-like" struct in F# is a stack-bound value type. It is never allocated
 
 This last point is crucial for F# pipeline-style programming, as `|>` is a generic function that parameterizes its input types. This restriction may be relaxed for `|>` in the future, as it is inline and does not make any calls to non-inlined generic functions in its body.
 
-Although these rules very strongly restrict usage, they do so to fulfill the promise of high-performance computing in a safe manner.
+Although these rules strongly restrict usage, they do so to fulfill the promise of high-performance computing in a safe manner.
 
 ## Byref returns
 

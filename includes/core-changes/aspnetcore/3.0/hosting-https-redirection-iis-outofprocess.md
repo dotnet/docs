@@ -14,7 +14,7 @@ The ASP.NET Core 2.1 project template first introduced support for HTTPS tools l
 
 #### New behavior
 
-In ASP.NET Core 3.0, the IIS HTTPS scenario was [enhanced](https://github.com/aspnet/AspNetCore/pull/4685). With the enhancement, an app could discover the server's HTTPS ports and make `UseHttpsRedirection` work by default. InProcess accomplished port discovery with the `IServerAddresses` feature, which only affects ASP.NET Core 3.0 apps because the InProcess library is versioned with the framework. OutOfProcess changed to automatically add the `ASPNETCORE_HTTPS_PORT` environment variable. This change affected both ASP.NET Core 2.2 and 3.0 apps because the OutOfProcess component is shared globally. ASP.NET Core 2.1 apps aren't affected because they use a prior version of ANCM by default.
+In ASP.NET Core 3.0, the IIS HTTPS scenario was [enhanced](https://github.com/dotnet/AspNetCore/pull/4685). With the enhancement, an app could discover the server's HTTPS ports and make `UseHttpsRedirection` work by default. InProcess accomplished port discovery with the `IServerAddresses` feature, which only affects ASP.NET Core 3.0 apps because the InProcess library is versioned with the framework. OutOfProcess changed to automatically add the `ASPNETCORE_HTTPS_PORT` environment variable. This change affected both ASP.NET Core 2.2 and 3.0 apps because the OutOfProcess component is shared globally. ASP.NET Core 2.1 apps aren't affected because they use a prior version of ANCM by default.
 
 #### Reason for change
 

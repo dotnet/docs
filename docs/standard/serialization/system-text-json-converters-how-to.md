@@ -20,7 +20,7 @@ A *converter* is a class that converts an object or a value to and from JSON. Th
 
 You can also write custom converters to customize or extend `System.Text.Json` with functionality not included in the current release. The following scenarios are covered later in this article:
 
-* [Deserialize inferred types to Object properties](#deserialize-inferred-types-to-object-properties).
+* [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
 * [Support Dictionary with non-string key](#support-dictionary-with-non-string-key).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
 
@@ -168,17 +168,17 @@ A built-in converter is chosen only if no applicable custom converter is registe
 
 The following sections provide converter samples that address some common scenarios that built-in functionality doesn't handle.
 
-* [Deserialize inferred types to Object properties](#deserialize-inferred-types-to-object-properties)
+* [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties)
 * [Support Dictionary with non-string key](#support-dictionary-with-non-string-key)
 * [Support polymorphic deserialization](#support-polymorphic-deserialization)
 
-### Deserialize inferred types to Object properties
+### Deserialize inferred types to object properties
 
-When deserializing to a property of type `Object`, a `JsonElement` object is created. The reason is that the deserializer doesn't know what CLR type to create, and it doesn't try to guess. For example, if a JSON property has "true", the deserializer doesn't infer that the value is a `Boolean`, and if an element has "01/01/2019", the deserializer doesn't infer that it's a `DateTime`.
+When deserializing to a property of type `object`, a `JsonElement` object is created. The reason is that the deserializer doesn't know what CLR type to create, and it doesn't try to guess. For example, if a JSON property has "true", the deserializer doesn't infer that the value is a `Boolean`, and if an element has "01/01/2019", the deserializer doesn't infer that it's a `DateTime`.
 
 Type inference can be inaccurate. If the deserializer parses a JSON number that has no decimal point as a `long`, that might result in out-of-range issues if the value was originally serialized as a `ulong` or `BigInteger`. Parsing a number that has a decimal point as a `double` might lose precision if the number was originally serialized as a `decimal`.
 
-For scenarios that require type inference, the following code shows a custom converter for `Object` properties. The code converts:
+For scenarios that require type inference, the following code shows a custom converter for `object` properties. The code converts:
 
 * `true` and `false` to `Boolean`
 * Numbers without a decimal to `long`
@@ -193,7 +193,7 @@ The following code registers the converter:
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/DeserializeInferredTypesToObject.cs?name=SnippetRegister)]
 
-Here's an example type with `Object` properties:
+Here's an example type with `object` properties:
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/WeatherForecast.cs?name=SnippetWFWithObjectProperties)]
 
@@ -209,7 +209,7 @@ The following example of JSON to deserialize contains values that will be deseri
 
 Without the custom converter, deserialization puts a `JsonElement` in each property.
 
-The [unit tests folder](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle deserialization to Object properties.
+The [unit tests folder](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle deserialization to `object` properties.
 
 ### Support Dictionary with non-string key
 

@@ -453,7 +453,7 @@ To minimize escaping you can use <xref:System.Text.Encodings.Web.JavaScriptEncod
 
 ## Serialize properties of derived classes
 
-Serialization of deep, strongly-typed polymorphic type heirarchy within an object graph is not supported. This includes interfaces and abstract classes where the runtime types differ from the statically defined types declared on the object. One exception to this is properties of the <xref:System.Object> type itself.
+Serialization of a polymorphic type hierarchy is not supported. For example, if a property is defined as an interface or an abstract class, only the properties defined on the interface or abstract class are serialized, even if the runtime type has additional properties. The exceptions to this behavior are explained in this section.
 
 For example, suppose you have a `WeatherForecast` class and a derived class `WeatherForecastDerived`:
 
@@ -501,7 +501,7 @@ In the preceding example scenario, both approaches cause the `WindSpeed` propert
 > [!IMPORTANT]
 > These approaches provide polymorphic serialization only for the root object to be serialized, not for properties of that root object. 
 
-You can get polymorphic serialization for lower-level objects if you define them as type `Object`. For example, suppose your `WeatherForecast` class has a property named `PreviousForecast` that can be defined as type `WeatherForecast` or `Object`:
+You can get polymorphic serialization for lower-level objects if you define them as type `object`. For example, suppose your `WeatherForecast` class has a property named `PreviousForecast` that can be defined as type `WeatherForecast` or `object`:
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/WeatherForecast.cs?name=SnippetWFWithPrevious)]
 
@@ -512,9 +512,11 @@ If the `PreviousForecast` property contains an instance of `WeatherForecastDeriv
 * The JSON output from serializing `WeatherForecastWithPrevious` **doesn't include** `WindSpeed`.
 * The JSON output from serializing `WeatherForecastWithPreviousAsObject` **includes** `WindSpeed`.
 
-To serialize `WeatherForecastWithPreviousAsObject`, it isn't necessary to call `Serialize<object>` or `GetType` because the root object isn't the one that may be of a derived type:
+To serialize `WeatherForecastWithPreviousAsObject`, it isn't necessary to call `Serialize<object>` or `GetType` because the root object isn't the one that may be of a derived type. The following code example doesn't call `Serialize<object>` or `GetType`:
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/SerializePolymorphic.cs?name=SnippetSerializeSecondLevel)]
+
+The preceding code correctly serializes `WeatherForecastWithPreviousAsObject`:
 
 ```json
 {
@@ -530,11 +532,11 @@ To serialize `WeatherForecastWithPreviousAsObject`, it isn't necessary to call `
 }
 ```
 
-The same approach of defining properties as `Object` works with interfaces. Suppose you have the following interface and implementation, and you want to serialize a class with properties that contain implementation instances:
+The same approach of defining properties as `object` works with interfaces. Suppose you have the following interface and implementation, and you want to serialize a class with properties that contain implementation instances:
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/IForecast.cs)]
 
-When you serialize an instance of `Forecasts`, only `Tuesday` shows the `WindSpeed` property, because `Tuesday` is defined as `Object`:
+When you serialize an instance of `Forecasts`, only `Tuesday` shows the `WindSpeed` property, because `Tuesday` is defined as `object`:
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/SerializePolymorphic.cs?name=SnippetSerializeInterface)]
 

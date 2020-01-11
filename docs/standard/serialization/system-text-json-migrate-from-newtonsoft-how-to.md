@@ -427,7 +427,7 @@ public JsonElement LookAndLoad(JsonElement source)
 
 The preceding code expects a `JsonElement` that contains a `fileName` property. It opens the JSON file and creates a `JsonDocument`. The method assumes that the caller wants to work with the entire document, so it returns the `Clone` of the `RootElement`. 
 
-If you receive a `JsonElement` that isn't owned by a `JsonDocument` and return a sub-element, it's not necessary to return a `Clone` of the sub-element. For example:
+If you receive a `JsonElement` and are returning a sub-element, it's not necessary to return a `Clone` of the sub-element. The caller is responsible for keeping alive the `JsonDocument` that the passed-in `JsonElement` belongs to. For example:
 
 ```csharp
 public JsonElement ReturnFileName(JsonElement source)

@@ -10,7 +10,7 @@ Windows 8 introduces a new type of application called Windows Store applications
  A subset of WCF functionality is available from within a Windows Store application, see the following sections for more details.  
   
 > [!IMPORTANT]
-> Use the WinRT syndication APIs instead of those exposed by WCF. For more information see, [WinRT Syndication API](https://go.microsoft.com/fwlink/?LinkId=236265)  
+> Use the WinRT syndication APIs instead of those exposed by WCF. For more information see, [WinRT Syndication API](https://docs.microsoft.com/uwp/api/Windows.Web.Syndication)  
   
 > [!WARNING]
 > Using Add Service Reference to add a web service reference to a Windows Runtime Component isn’t supported.  

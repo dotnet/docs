@@ -27,13 +27,13 @@ Additionally, `Microsoft.AspNetCore.App` contained the following subcomponents:
 A reference to `Microsoft.AspNetCore.App` no longer requires a `<PackageReference>` element in the project file. The .NET Core SDK supports a new element called
 `<FrameworkReference>`, which replaces the use of `<PackageReference>`.
 
-For more information, see [aspnet/AspNetCore#3612](https://github.com/aspnet/AspNetCore/issues/3612).
+For more information, see [dotnet/aspnetcore#3612](https://github.com/dotnet/aspnetcore/issues/3612).
 
 Entity Framework Core ships as NuGet packages. This change aligns the shipping model with all other data access libraries on .NET. It provides Entity Framework Core the simplest path to continue innovating while supporting the various .NET platforms. The move of Entity Framework Core out of the shared framework has no impact on its status as a Microsoft-developed, supported, and serviceable library. The [.NET Core support policy](https://www.microsoft.com/net/platform/support-policy) continues to cover it.
 
 Json.NET and Entity Framework Core continue to work with ASP.NET Core. They won't, however, be included in the shared framework.
 
-For more information, see [The future of JSON in .NET Core 3.0](https://github.com/dotnet/announcements/issues/90). Also see [the complete list of binaries](https://github.com/aspnet/AspNetCore/issues/3755) removed from the shared framework.
+For more information, see [The future of JSON in .NET Core 3.0](https://github.com/dotnet/announcements/issues/90). Also see [the complete list of binaries](https://github.com/dotnet/aspnetcore/issues/3755) removed from the shared framework.
 
 #### Reason for change
 
@@ -47,16 +47,16 @@ It won't be necessary for projects to consume assemblies in `Microsoft.AspNetCor
 
 This change doesn't apply to all binaries referenced via `Microsoft.AspNetCore.App` in ASP.NET Core 2.x. Notable exceptions include:
 
-- `Microsoft.Extensions` libraries that continue to target .NET Standard will be available as NuGet packages (see https://github.com/aspnet/Extensions).
+- `Microsoft.Extensions` libraries that continue to target .NET Standard will be available as NuGet packages (see https://github.com/dotnet/extensions).
 - APIs produced by the ASP.NET Core team that aren't part of `Microsoft.AspNetCore.App`. For example, the following components are available as NuGet packages:
   - Entity Framework Core
   - APIs that provide third-party integration
   - Experimental features
-  - APIs with dependencies that couldn't [fulfill the requirements to be in the shared framework](https://github.com/aspnet/AspNetCore/blob/4e44e5bcbedd961cc0d4f6b846699c7c494f5597/docs/SharedFramework.md)
+  - APIs with dependencies that couldn't [fulfill the requirements to be in the shared framework](https://github.com/dotnet/aspnetcore/blob/4e44e5bcbedd961cc0d4f6b846699c7c494f5597/docs/SharedFramework.md)
 - Extensions to MVC that maintain support for Json.NET. An API will be provided as a NuGet package to support using Json.NET and MVC.
 - The SignalR .NET client will continue to support .NET Standard and ship as a NuGet package. It's intended for use on many .NET runtimes, such as Xamarin and UWP.
 
-For more information, see [Stop producing packages for shared framework assemblies in 3.0](https://github.com/aspnet/AspNetCore/issues/3756). For discussion, see [aspnet/AspNetCore#3757](https://github.com/aspnet/AspNetCore/issues/3757).
+For more information, see [Stop producing packages for shared framework assemblies in 3.0](https://github.com/dotnet/aspnetcore/issues/3756). For discussion, see [dotnet/aspnetcore#3757](https://github.com/dotnet/aspnetcore/issues/3757).
 
 #### Category
 

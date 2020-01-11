@@ -9,7 +9,7 @@ There are a few limitations you should be aware of when using Microsoft.Data.Sql
 
 ## Parameters
 
-SQLite parameter names are case-sensitive. Ensure that the parameter names used in SQL match the case of the anonymous object's properties. Issue [#18861](https://github.com/aspnet/EntityFrameworkCore/issues/18861) would improve this experience.
+SQLite parameter names are case-sensitive. Ensure that the parameter names used in SQL match the case of the anonymous object's properties. Issue [#18861](https://github.com/dotnet/efcore/issues/18861) would improve this experience.
 
 Dapper also expects parameters to use the `@` prefix. Other prefixes won't work.
 

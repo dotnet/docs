@@ -17,9 +17,9 @@ helpviewer_keywords:
 ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
 ---
 # WPF Partial Trust Security
-<a name="introduction"></a> In general, Internet applications should be restricted from having direct access to critical system resources, to prevent malicious damage. By default, HTML and client-side scripting languages are not able to access critical system resources. Because Windows Presentation Foundation (WPF) browser-hosted applications can be launched from the browser, they should conform to a similar set of restrictions. To enforce these restrictions, [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] relies on both Code Access Security (CAS) and ClickOnce (see [WPF Security Strategy - Platform Security](wpf-security-strategy-platform-security.md)). By default, browser-hosted applications request the Internet zone CAS set of permissions, irrespective of whether they are launched from the Internet, the local intranet, or the local computer. Applications that run with anything less than the full set of permissions are said to be running with partial trust.  
+<a name="introduction"></a> In general, Internet applications should be restricted from having direct access to critical system resources, to prevent malicious damage. By default, HTML and client-side scripting languages are not able to access critical system resources. Because Windows Presentation Foundation (WPF) browser-hosted applications can be launched from the browser, they should conform to a similar set of restrictions. To enforce these restrictions, WPF relies on both Code Access Security (CAS) and ClickOnce (see [WPF Security Strategy - Platform Security](wpf-security-strategy-platform-security.md)). By default, browser-hosted applications request the Internet zone CAS set of permissions, irrespective of whether they are launched from the Internet, the local intranet, or the local computer. Applications that run with anything less than the full set of permissions are said to be running with partial trust.  
   
- [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] provides a wide variety of support to ensure that as much functionality as possible can be used safely in partial trust, and along with CAS, provides additional support for partial trust programming.  
+ WPF provides a wide variety of support to ensure that as much functionality as possible can be used safely in partial trust, and along with CAS, provides additional support for partial trust programming.  
   
  This topic contains the following sections:  
   
@@ -44,7 +44,7 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
 |Editing|Spell Checking<br /><br /> RichTextBox<br /><br /> Plaintext and Ink Clipboard Support<br /><br /> User-Initiated Paste<br /><br /> Copying Selected Content|  
 |Controls|General Controls|  
   
- This table covers the [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] features at a high level. For more detailed information, the Windows SDK documents the permissions that are required by each member in [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)]. Additionally, the following features have more detailed information regarding partial trust execution, including special considerations.  
+ This table covers the WPF features at a high level. For more detailed information, the Windows SDK documents the permissions that are required by each member in WPF. Additionally, the following features have more detailed information regarding partial trust execution, including special considerations.  
   
 - [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] (see [XAML Overview (WPF)](../../desktop-wpf/fundamentals/xaml.md)).  
   
@@ -60,7 +60,7 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
   
 - Open File Dialog Box (see <xref:Microsoft.Win32.OpenFileDialog?displayProperty=nameWithType>).  
   
- The following table outlines the [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] features that are not safe to run within the limits of the Internet zone permission set.  
+ The following table outlines the WPF features that are not safe to run within the limits of the Internet zone permission set.  
   
  Table 2: WPF Features that are Not Safe in Partial Trust  
   
@@ -83,7 +83,7 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
 > [!NOTE]
 > The behavior described in the previous table is for full trust XBAPs that do not follow the ClickOnce Trusted Deployment model.  
   
- In general, code that may exceed the allowed permissions is likely to be common code that is shared between both standalone and browser-hosted applications. CAS and [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] offer several techniques for managing this scenario.  
+ In general, code that may exceed the allowed permissions is likely to be common code that is shared between both standalone and browser-hosted applications. CAS and WPF offer several techniques for managing this scenario.  
   
 <a name="Detecting_Permissions_using_CAS"></a>   
 ### Detecting Permissions Using CAS  

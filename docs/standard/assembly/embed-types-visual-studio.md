@@ -47,7 +47,7 @@ The first step is to create the type equivalence interface assembly.
 
 1. In Visual Studio, select **File** > **New** > **Project**.
 
-1. In the **Create a new project** dialog box, type *class library* in the **Search for templates** box. Select either the C# or VB **Class Library (.NET Framework)** template from the list, and then select **Next**.
+1. In the **Create a new project** dialog box, type *class library* in the **Search for templates** box. Select either the C# or Visual Basic **Class Library (.NET Framework)** template from the list, and then select **Next**.
 
 1. In the **Configure your new project** dialog box, under **Project name**, type *TypeEquivalenceInterface*, and then select **Create**. The new project is created.
 
@@ -114,7 +114,7 @@ Next, create the type equivalence runtime class.
 
 1. In Visual Studio, select **File** > **New** > **Project**.
 
-1. In the **Create a new project** dialog box, type *class library* in the **Search for templates** box. Select either the C# or VB **Class Library (.NET Framework)** template from the list, and then select **Next**.
+1. In the **Create a new project** dialog box, type *class library* in the **Search for templates** box. Select either the C# or Visual Basic **Class Library (.NET Framework)** template from the list, and then select **Next**.
 
 1. In the **Configure your new project** dialog box, under **Project name**, type *TypeEquivalenceRuntime*, and then select **Create**. The new project is created.
 
@@ -186,7 +186,7 @@ Finally, create a type equivalence client program that references the interface 
 
 1. In Visual Studio, select **File** > **New** > **Project**.
 
-1. In the **Create a new project** dialog box, type *console* in the **Search for templates** box. Select either the C# or VB **Console App (.NET Framework)** template from the list, and then select **Next**.
+1. In the **Create a new project** dialog box, type *console* in the **Search for templates** box. Select either the C# or Visual Basic **Console App (.NET Framework)** template from the list, and then select **Next**.
 
 1. In the **Configure your new project** dialog box, under **Project name**, type *TypeEquivalenceClient*, and then select **Create**. The new project is created.
 

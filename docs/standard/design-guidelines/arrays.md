@@ -7,7 +7,6 @@ helpviewer_keywords:
   - "arrays [.NET Framework], usage guidelines"
   - "empty arrays"
 ms.assetid: 66a1b3d8-6f3f-4715-b235-e1ff95e32d8e
-author: "KrzysztofCwalina"
 ---
 # Arrays
 **✓ DO** prefer using collections over arrays in public APIs. The [Collections](../../../docs/standard/design-guidelines/guidelines-for-collections.md) section provides details about how to choose between collections and arrays.  

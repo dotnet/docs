@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: d5c87cbe-4d69-429f-aad5-3103c2ca2770
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Changing Namespace Prefix Properties
 The **XmlNode** class allows you to change the namespace prefix associated with a given node. For example, the following code shows the prefix of an element being changed.  

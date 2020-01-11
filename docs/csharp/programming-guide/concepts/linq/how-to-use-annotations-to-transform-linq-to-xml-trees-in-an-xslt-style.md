@@ -1,9 +1,9 @@
 ---
-title: "How to: Use Annotations to Transform LINQ to XML Trees in an XSLT Style (C#)"
+title: "How to use annotations to transform LINQ to XML trees in an XSLT style (C#)"
 ms.date: 07/20/2015
 ms.assetid: 12a95902-a6b7-4a1e-ad52-04a518db226f
 ---
-# How to: Use Annotations to Transform LINQ to XML Trees in an XSLT Style (C#)
+# How to use annotations to transform LINQ to XML trees in an XSLT style (C#)
 Annotations can be used to facilitate transforms of an XML tree.  
   
  Some XML documents are "document centric with mixed content." With such documents, you don't necessarily know the shape of child nodes of an element. For instance, a node that contains text may look like this:  

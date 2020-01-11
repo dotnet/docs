@@ -1,6 +1,5 @@
 ---
 title: "Exceptions and Exception Handling - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "exception handling [C#]"
@@ -41,9 +40,9 @@ See the following articles for more information about exceptions and exception h
 - [Exception Handling](exception-handling.md)
 - [Creating and Throwing Exceptions](creating-and-throwing-exceptions.md)
 - [Compiler-Generated Exceptions](compiler-generated-exceptions.md)
-- [How to: Handle an Exception Using try/catch (C# Programming Guide)](how-to-handle-an-exception-using-try-catch.md)
-- [How to: Execute Cleanup Code Using finally](how-to-execute-cleanup-code-using-finally.md)
-- [How to: Catch a non-CLS Exception](how-to-catch-a-non-cls-exception.md)
+- [How to handle an exception using try/catch (C# Programming Guide)](how-to-handle-an-exception-using-try-catch.md)
+- [How to execute cleanup code using finally](how-to-execute-cleanup-code-using-finally.md)
+- [How to catch a non-CLS exception](how-to-catch-a-non-cls-exception.md)
 
 ## C# Language Specification
 

@@ -300,4 +300,4 @@ To learn more about topics mentioned in this tutorial, visit the following resou
 
 - [Model Builder Scenarios](../automate-training-with-model-builder.md#scenarios)
 - [Binary Classification](../resources/glossary.md#binary-classification)
-- [Binary Classification Model Metrics](../resources/metrics.md#metrics-for-binary-classification)
+- [Binary Classification Model Metrics](../resources/metrics.md#evaluation-metrics-for-binary-classification)

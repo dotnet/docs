@@ -4,7 +4,7 @@ description: Learn how to use ML.NET in a clustering scenario
 author: pkulikov
 ms.date: 11/15/2019
 ms.topic: tutorial
-ms.custom: mvc, seodec18, title-hack-0516
+ms.custom: mvc, title-hack-0516
 #Customer intent: As a developer, I want to use ML.NET so that I can build a k-means clustering model to categorize iris flowers based on its parameters.
 ---
 # Tutorial: Categorize iris flowers using k-means clustering with ML.NET
@@ -113,9 +113,9 @@ In the `Main` method, replace the `Console.WriteLine("Hello World!");` line with
 
 The <xref:Microsoft.ML.MLContext?displayProperty=nameWithType> class represents the machine learning environment and provides mechanisms for logging and entry points for data loading, model training, prediction, and other tasks. This is comparable conceptually to using `DbContext` in Entity Framework.
 
-## Setup data loading
+## Set up data loading
 
-Add the following code to the `Main` method to setup the way to load data:
+Add the following code to the `Main` method to set up the way to load data:
 
 [!code-csharp[Create text loader](~/samples/machine-learning/tutorials/IrisFlowerClustering/Program.cs#CreateDataView)]
 

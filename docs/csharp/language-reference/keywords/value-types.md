@@ -1,6 +1,5 @@
 ---
 title: "Value types - C# Reference"
-ms.custom: seodec18
 ms.date: 11/26/2018
 f1_keywords: 
   - "cs.valuetypes"
@@ -16,7 +15,7 @@ There are two kinds of value types:
 
 - [Structs](struct.md)
 
-- [Enumerations](enum.md)
+- [Enumerations](../builtin-types/enum.md)
 
 ## Main features of value types
 

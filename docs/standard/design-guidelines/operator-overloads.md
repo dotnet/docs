@@ -8,7 +8,6 @@ helpviewer_keywords:
   - "member design guidelines, operators"
   - "overloaded operators"
 ms.assetid: 37585bf2-4c27-4dee-849a-af70e3338cc1
-author: "KrzysztofCwalina"
 ---
 # Operator Overloads
 Operator overloads allow framework types to appear as if they were built-in language primitives.  

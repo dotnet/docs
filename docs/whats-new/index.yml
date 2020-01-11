@@ -1,0 +1,62 @@
+### YamlMime:Landing
+
+title: .NET documentation - what's new?
+summary: "Welcome to what's new in .NET docs. Use this page to quickly find the latest changes"
+
+metadata:
+  title: .NET documentation what's new?
+  description: "Learn about new and updated content in .NET docs."
+  ms.topic: landing-page
+  ms.date: 12/12/2019
+
+landingContent:
+  - title: "Find .NET updates"
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: December 2019
+            url: 2019-12.md
+          - text: November 2019
+            url: 2019-11.md
+          - text: October 2019
+            url: 2019-10.md
+          - text: September 2019
+            url: 2019-09.md
+
+  - title: "Get involved - contribute to .NET docs"
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: ".NET docs repository"
+            url: https://github.com/dotnet/docs/blob/master/README.md
+          - text: Project structure and labels for issues and pull requests
+            url: https://github.com/dotnet/docs/blob/master/styleguide/labels-projects.md
+      - linkListType: concept
+        links:
+          - text: Microsoft docs contributor guide
+            url: https://docs.microsoft.com/contribute
+          - text: ".NET docs contributor guide"
+            url: https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md
+          - text: ".NET API reference docs contributor guide"
+            url: https://github.com/dotnet/dotnet-api-docs/blob/master/CONTRIBUTING.md
+          - text: ".NET samples contributor guide"
+            url: https://github.com/dotnet/samples/blob/master/CONTRIBUTING.md
+
+  - title: "Related what's new pages"
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: Xamarin docs updates
+            url: https://docs.microsoft.com/xamarin/whats-new/
+          - text: .NET Core release notes
+            url: https://github.com/dotnet/core/blob/master/release-notes/README.md
+          - text: ASP.NET Core release notes
+            url: https://docs.microsoft.com/aspnet/core/release-notes/aspnetcore-3.1
+          - text: C# compiler (Roslyn) release notes
+            url: https://github.com/dotnet/roslyn/tree/master/docs/ide
+          - text: Visual Studio release notes
+            url: https://docs.microsoft.com//visualstudio/releases/2019/release-notes
+          - text: Visual Studio for Mac release notes
+            url: https://docs.microsoft.com/visualstudio/releasenotes/vs2019-mac-relnotes
+          - text: Visual Studio Code release notes
+            url: https://code.visualstudio.com/updates

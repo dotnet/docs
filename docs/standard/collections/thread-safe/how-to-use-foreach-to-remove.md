@@ -8,8 +8,6 @@ dev_langs:
 helpviewer_keywords:
   - "thread-safe collections, how to enumerate blocking collection"
 ms.assetid: 2096103c-22f7-420d-b631-f102bc33a6dd
-author: "mairaw"
-ms.author: "mairaw"
 ---
 
 # How to: Use ForEach to Remove Items in a BlockingCollection

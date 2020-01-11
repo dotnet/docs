@@ -137,21 +137,23 @@ dotnet publish -c Release
 
 This command compiles your app to the *publish* folder. The path to the *publish* folder from the working folder should be `.\app\bin\Release\netcoreapp3.1\publish\`
 
-Get a directory listing of the publish folder to verify that the *myapp.dll* was created. From the *app* folder, run one of the following commands:
+From the *app* folder, get a directory listing of the publish folder to verify that the *myapp.dll* file was created. 
 
 ```console
 > dir bin\Release\netcoreapp3.1\publish
 
     Directory:  C:\docker-working\app\bin\Release\netcoreapp3.1\publish
 
-Mode                LastWriteTime     Length Name
-----                -------------     ------ ----
--a---          1/9/2020  11:41 AM      407   myapp.deps.json
--a---          1/9/2020  11:41 AM     4.50KB myapp.dll
--a---          1/9/2020  11:41 AM   166.00KB myapp.exe
--a---          1/9/2020  11:41 AM      672   myapp.pdb
--a---          1/9/2020  11:41 AM      154   myapp.runtimeconfig.json
+01/09/2020  11:41 AM    <DIR>          .
+01/09/2020  11:41 AM    <DIR>          ..
+01/09/2020  11:41 AM               407 myapp.deps.json
+01/09/2020  12:15 PM             4,608 myapp.dll
+01/09/2020  12:15 PM           169,984 myapp.exe
+01/09/2020  12:15 PM               736 myapp.pdb
+01/09/2020  11:41 AM               154 myapp.runtimeconfig.json
 ```
+
+If you're using Linux or macOS, use the `ls` command to get a directory listing and verify that the *myapp.dll* file was created.
 
 ```bash
 me@DESKTOP:/docker-working/app$ ls bin/Release/netcoreapp3.1/publish

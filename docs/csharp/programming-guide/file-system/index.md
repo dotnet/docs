@@ -9,7 +9,7 @@ ms.assetid: 0f2511cf-2b02-4b41-b001-b1754677c38f
 ---
 # File system and the registry (C# Programming Guide)
 
-The following topics show how to use C# and the .NET Framework to perform various basic operations on files, folders, and the registry.
+The following articles show how to use C# and .NET to perform various basic operations on files, folders, and the registry.
 
 ## In this section
 

@@ -58,4 +58,4 @@ For more information, see the following sections of the [C# language specificati
 - [C# reference](../index.md)
 - [C# operators](index.md)
 - [User-defined conversion operators](user-defined-conversion-operators.md)
-- [Why are overloaded operators always static in C#?](https://blogs.msdn.microsoft.com/ericlippert/2007/05/14/why-are-overloaded-operators-always-static-in-c/)
+- [Why are overloaded operators always static in C#?](https://docs.microsoft.com/archive/blogs/ericlippert/why-are-overloaded-operators-always-static-in-c)

@@ -56,4 +56,4 @@ For more information and examples, see [Static Constructors](./static-constructo
 - [Classes and Structs](./index.md)
 - [Finalizers](./destructors.md)
 - [static](../../language-reference/keywords/static.md)
-- [Why Do Initializers Run In The Opposite Order As Constructors? Part One](https://blogs.msdn.microsoft.com/ericlippert/2008/02/15/why-do-initializers-run-in-the-opposite-order-as-constructors-part-one)
+- [Why Do Initializers Run In The Opposite Order As Constructors? Part One](https://docs.microsoft.com/archive/blogs/ericlippert/why-do-initializers-run-in-the-opposite-order-as-constructors-part-one)

@@ -1,6 +1,6 @@
 ---
 title: "How to write custom converters for JSON serialization - .NET"
-ms.date: "10/16/2019"
+ms.date: "01/10/2020"
 helpviewer_keywords: 
   - "JSON serialization"
   - "serializing objects"
@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "converters"
 ---
 
-# How to write custom converters for JSON serialization in .NET
+# How to write custom converters for JSON serialization (marshalling) in .NET
 
 This article shows how to create custom converters for the JSON serialization classes that are provided in the <xref:System.Text.Json> namespace. For an introduction to `System.Text.Json`, see [How to serialize and deserialize JSON in .NET](system-text-json-how-to.md).
 
@@ -18,9 +18,9 @@ A *converter* is a class that converts an object or a value to and from JSON. Th
 * To override the default behavior of a built-in converter. For example, you might want `DateTime` values to be represented by mm/dd/yyyy format instead of the default  ISO 8601-1:2019 format.
 * To support a custom value type. For example, a `PhoneNumber` struct.
 
-You can also write custom converters to extend `System.Text.Json` with functionality not included in the current release. The following scenarios are covered later in this article:
+You can also write custom converters to customize or extend `System.Text.Json` with functionality not included in the current release. The following scenarios are covered later in this article:
 
-* [Deserialize inferred types to Object properties](#deserialize-inferred-types-to-object-properties).
+* [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties).
 * [Support Dictionary with non-string key](#support-dictionary-with-non-string-key).
 * [Support polymorphic deserialization](#support-polymorphic-deserialization).
 
@@ -63,9 +63,9 @@ The following steps explain how to create a converter by following the basic pat
 * Create a class that derives from <xref:System.Text.Json.Serialization.JsonConverter%601> where `T` is the type to be serialized and deserialized.
 * Override the `Read` method to deserialize the incoming JSON and convert it to type `T`. Use the <xref:System.Text.Json.Utf8JsonReader> that is passed to the method to read the JSON.
 * Override the `Write` method to serialize the incoming object of type `T`. Use the <xref:System.Text.Json.Utf8JsonWriter> that is passed to the method to write the JSON.
-* Override the `CanConvert` method only if necessary. The default implementation returns `true` when the type to convert is type `T`. Therefore, converters that support only type `T` don't need to override this method. For an example of a converter that does need to override this method, see the [polymorphic deserialization](#support-polymorphic-deserialization) section later in this article.
+* Override the `CanConvert` method only if necessary. The default implementation returns `true` when the type to convert is of type `T`. Therefore, converters that support only type `T` don't need to override this method. For an example of a converter that does need to override this method, see the [polymorphic deserialization](#support-polymorphic-deserialization) section later in this article.
 
-You can refer to the [built-in converters source code](https://github.com/dotnet/corefx/tree/master/src/System.Text.Json/src/System/Text/Json/Serialization/Converters/) as reference implementations for writing custom converters.
+You can refer to the [built-in converters source code](https://github.com/dotnet/runtime/tree/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/Converters/) as reference implementations for writing custom converters.
 
 ## Steps to follow the factory pattern
 
@@ -168,20 +168,21 @@ A built-in converter is chosen only if no applicable custom converter is registe
 
 The following sections provide converter samples that address some common scenarios that built-in functionality doesn't handle.
 
-* [Deserialize inferred types to Object properties](#deserialize-inferred-types-to-object-properties)
+* [Deserialize inferred types to object properties](#deserialize-inferred-types-to-object-properties)
 * [Support Dictionary with non-string key](#support-dictionary-with-non-string-key)
 * [Support polymorphic deserialization](#support-polymorphic-deserialization)
 
-### Deserialize inferred types to Object properties
+### Deserialize inferred types to object properties
 
-When deserializing to a property of type `Object`, a `JsonElement` object is created. The reason is that the deserializer doesn't know what CLR type to create, and it doesn't try to guess. For example, if a JSON property has "true", the deserializer doesn't infer that the value is a `Boolean`, and if an element has "01/01/2019", the deserializer doesn't infer that it's a `DateTime`.
+When deserializing to a property of type `object`, a `JsonElement` object is created. The reason is that the deserializer doesn't know what CLR type to create, and it doesn't try to guess. For example, if a JSON property has "true", the deserializer doesn't infer that the value is a `Boolean`, and if an element has "01/01/2019", the deserializer doesn't infer that it's a `DateTime`.
 
 Type inference can be inaccurate. If the deserializer parses a JSON number that has no decimal point as a `long`, that might result in out-of-range issues if the value was originally serialized as a `ulong` or `BigInteger`. Parsing a number that has a decimal point as a `double` might lose precision if the number was originally serialized as a `decimal`.
 
-For scenarios that require type inference, the following code shows a custom converter for `Object` properties. The code converts:
+For scenarios that require type inference, the following code shows a custom converter for `object` properties. The code converts:
 
 * `true` and `false` to `Boolean`
-* Numbers to `long` or `double`
+* Numbers without a decimal to `long`
+* Numbers with a decimal to `double`
 * Dates to `DateTime`
 * Strings to `string`
 * Everything else to `JsonElement`
@@ -190,9 +191,9 @@ For scenarios that require type inference, the following code shows a custom con
 
 The following code registers the converter:
 
-[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/ConvertInferredTypesToObject.cs?name=SnippetRegister)]
+[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/DeserializeInferredTypesToObject.cs?name=SnippetRegister)]
 
-Here's an example type with `Object` properties:
+Here's an example type with `object` properties:
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/WeatherForecast.cs?name=SnippetWFWithObjectProperties)]
 
@@ -208,7 +209,7 @@ The following example of JSON to deserialize contains values that will be deseri
 
 Without the custom converter, deserialization puts a `JsonElement` in each property.
 
-The [unit tests folder](https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle deserialization to Object properties.
+The [unit tests folder](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle deserialization to `object` properties.
 
 ### Support Dictionary with non-string key
 
@@ -220,7 +221,7 @@ The following code shows a custom converter that works with `Dictionary<Enum,TVa
 
 The following code registers the converter:
 
-[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/ConvertDictionaryTkeyEnumTValue.cs?name=SnippetRegister)]
+[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/RoundtripDictionaryTkeyEnumTValue.cs?name=SnippetRegister)]
 
 The converter can serialize and deserialize the `TemperatureRanges` property of the following class that uses the following `Enum`:
 
@@ -240,11 +241,11 @@ The JSON output from serialization looks like the following example:
 }
 ```
 
-The [unit tests folder](https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle non-string-key dictionaries.
+The [unit tests folder](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` namespace has more examples of custom converters that handle non-string-key dictionaries.
 
 ### Support polymorphic deserialization
 
-[Polymorphic serialization](system-text-json-how-to.md#serialize-properties-of-derived-classes) doesn't require a custom converter, but deserialization does require a custom converter.
+Built-in features provide a limited range of [polymorphic serialization](system-text-json-how-to.md#serialize-properties-of-derived-classes) but no support for deserialization at all. Deserialization requires a custom converter.
 
 Suppose, for example, you have a `Person` abstract base class, with `Employee` and `Customer` derived classes. Polymorphic deserialization means that at design time you can specify `Person` as the deserialization target, and `Customer` and `Employee` objects in the JSON are correctly deserialized at runtime. During deserialization, you have to find clues that identify the required type in the JSON. The kinds of clues available vary with each scenario. For example, a discriminator property might be available or you might have to rely on the presence or absence of a particular property. The current release of `System.Text.Json` doesn't provide attributes to specify how to handle polymorphic deserialization scenarios, so custom converters are required.
 
@@ -256,7 +257,7 @@ The following code shows a base class, two derived classes, and a custom convert
 
 The following code registers the converter:
 
-[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/ConvertPolymorphic.cs?name=SnippetRegister)]
+[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/RoundtripPolymorphic.cs?name=SnippetRegister)]
 
 The converter can deserialize JSON that was created by using the same converter to serialize, for example:
 
@@ -277,22 +278,25 @@ The converter can deserialize JSON that was created by using the same converter 
 
 ## Other custom converter samples
 
-The [unit tests folder](https://github.com/dotnet/corefx/blob/master/src/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` source code includes other custom converter samples, such as:
+The [Migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md) article contains additional samples of custom converters.
 
-* `Int32` converter that converts null to 0 on deserialize
-* `Int32` converter that allows both string and number values on deserialize
-* `Enum` converter
-* `List<T>` converter that accepts external data
-* `Long[]` converter that works with a comma-delimited list of numbers 
+The [unit tests folder](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/tests/Serialization/) in the `System.Text.Json.Serialization` source code includes other custom converter samples, such as:
+
+* [Int32 converter that converts null to 0 on deserialize](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/tests/Serialization/CustomConverterTests.NullValueType.cs)
+* [Int32 converter that allows both string and number values on deserialize](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/tests/Serialization/CustomConverterTests.Int32.cs)
+* [Enum converter](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/tests/Serialization/CustomConverterTests.Enum.cs)
+* [List\<T> converter that accepts external data](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/tests/Serialization/CustomConverterTests.List.cs)
+* [Long[] converter that works with a comma-delimited list of numbers](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/tests/Serialization/CustomConverterTests.Array.cs) 
+
+If you need to make a converter that modifies the behavior of an existing built-in converter, you can get [the source code of the existing converter](https://github.com/dotnet/runtime/tree/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/Converters) to serve as a starting point for customization.
 
 ## Additional resources
 
+* [Source code for built-in converters](https://github.com/dotnet/runtime/tree/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/src/System/Text/Json/Serialization/Converters)
+* [DateTime and DateTimeOffset support in System.Text.Json](../datetime/system-text-json-support.md)
 * [System.Text.Json overview](system-text-json-overview.md)
-* [System.Text.Json API reference](xref:System.Text.Json)
 * [How to use System.Text.Json](system-text-json-how-to.md)
-* [Source code for built-in converters](https://github.com/dotnet/corefx/tree/master/src/System.Text.Json/src/System/Text/Json/Serialization/Converters/)
-* GitHub issues related to custom converters for `System.Text.Json`
-  * [36639 Introducing custom converters](https://github.com/dotnet/corefx/issues/36639)
-  * [38713 About deserializing to Object](https://github.com/dotnet/corefx/issues/38713)
-  * [40120 About non-string-key dictionaries](https://github.com/dotnet/corefx/issues/40120)
-  * [37787 About polymorphic deserialization](https://github.com/dotnet/corefx/issues/37787)
+* [How to migrate from Newtonsoft.Json](system-text-json-migrate-from-newtonsoft-how-to.md)
+* [System.Text.Json API reference](xref:System.Text.Json)
+* [System.Text.Json.Serialization API reference](xref:System.Text.Json.Serialization)
+<!-- * [System.Text.Json roadmap](https://github.com/dotnet/runtime/blob/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/roadmap/README.md)-->

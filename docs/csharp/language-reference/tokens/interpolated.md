@@ -103,7 +103,7 @@ If an interpolated string has the type <xref:System.IFormattable> or <xref:Syste
 > Console.WriteLine(line);  // output: The pi constant is 3.14159
 > ```
 >
-> However, that also might result in heap allocations of the additional `string` instances. Benchmark your code to choose the implementation that fits your needs.
+> However, that also might result in heap allocations of the additional `string` instances. The performance difference between the two preceding examples depends on .NET implementation. Do benchmarking to choose the code that fits your needs.
 
 ## C# language specification
 

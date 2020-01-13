@@ -1,7 +1,7 @@
 ---
 title: "$ - string interpolation - C# reference"
 description: String interpolation provides a more readable and convenient syntax to format string output than traditional string composite formatting.
-ms.date: 09/02/2019
+ms.date: 01/13/2020
 f1_keywords: 
   - "$_CSharpKeyword"
   - "$"
@@ -85,6 +85,23 @@ If you are new to string interpolation, see the [String interpolation in C#](../
 If an interpolated string has the type `string`, it's typically transformed into a <xref:System.String.Format%2A?displayProperty=nameWithType> method call. The compiler may replace <xref:System.String.Format%2A?displayProperty=nameWithType> with <xref:System.String.Concat%2A?displayProperty=nameWithType> if the analyzed behavior would be equivalent to concatenation.
 
 If an interpolated string has the type <xref:System.IFormattable> or <xref:System.FormattableString>, the compiler generates a call to the <xref:System.Runtime.CompilerServices.FormattableStringFactory.Create%2A?displayProperty=nameWithType> method.
+
+> [!NOTE]
+> String interpolation can cause [boxing](../../programming-guide/types/boxing-and-unboxing.md), as it happens in the following example:
+>
+> ```csharp-interactive
+> double pi = Math.PI;
+> string line = $"The pi constant is {pi:F5}";
+> Console.WriteLine(line);  // output: The pi constant is 3.14159
+> ```
+>
+> If you need to avoid boxing, format an instance of a value type explicitly, as the following example shows:
+>
+> ```csharp-interactive
+> double pi = Math.PI;
+> string line = $"The pi constant is {pi.ToString("F5")}";
+> Console.WriteLine(line);  // output: The pi constant is 3.14159
+> ```
 
 ## C# language specification
 

@@ -95,13 +95,15 @@ If an interpolated string has the type <xref:System.IFormattable> or <xref:Syste
 > Console.WriteLine(line);  // output: The pi constant is 3.14159
 > ```
 >
-> If you need to avoid boxing, format an instance of a value type explicitly, as the following example shows:
+> To avoid heap allocations caused by boxing, consider formatting an instance of a value type explicitly, as the following example shows:
 >
 > ```csharp-interactive
 > double pi = Math.PI;
 > string line = $"The pi constant is {pi.ToString("F5")}";
 > Console.WriteLine(line);  // output: The pi constant is 3.14159
 > ```
+>
+> However, that also might result in heap allocations of the additional `string` instances. Benchmark your code to choose the implementation that fits your needs.
 
 ## C# language specification
 

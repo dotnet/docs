@@ -10,7 +10,7 @@ For discussion, see [dotnet/AspNetCore#15243](https://github.com/dotnet/AspNetCo
 
 #### Old behavior
 
-The ASP.NET Core 2.1 project template first introduced support for HTTPS middleware methods like <xref:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection%2A> and <xref:Microsoft.AspNetCore.Builder.HstsBuilderExtensions.UseHsts%2A>. Enabling HTTPS redirection required the addition of configuration since apps in development don't use the default port of 443. [HTTP Strict Transport Security (HSTS)](https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html) is active only if the request is already using HTTPS. Localhost is skipped by default.
+The ASP.NET Core 2.1 project template first introduced support for HTTPS middleware methods like <xref:Microsoft.AspNetCore.Builder.HttpsPolicyBuilderExtensions.UseHttpsRedirection%2A> and <xref:Microsoft.AspNetCore.Builder.HstsBuilderExtensions.UseHsts%2A>. Enabling HTTPS redirection required the addition of configuration, since apps in development don't use the default port of 443. [HTTP Strict Transport Security (HSTS)](https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html) is active only if the request is already using HTTPS. Localhost is skipped by default.
 
 #### New behavior
 
@@ -18,7 +18,7 @@ In ASP.NET Core 3.0, the IIS HTTPS scenario was [enhanced](https://github.com/do
 
 The preceding behavior was modified in ASP.NET Core 3.0.1 and 3.1.0 Preview 3 to reverse the behavior changes in ASP.NET Core 2.x. These changes only affect IIS out-of-process apps.
 
-As detailed above, installing ASP.NET Core 3.0.0 had the side effect of also activating the `UseHttpsRedirection` middleware in ASP.NET Core 2.x apps. A change was made to ANCM in ASP.NET Core 3.0.1 and 3.1.0 Preview 3 such that installing them no longer has this effect on ASP.NET Core 2.x apps. The `ASPNETCORE_HTTPS_PORT` environment variable that ANCM populated in ASP.NET Core 3.0.0 was changed to `ASPNETCORE_ANCM_HTTPS_PORT` in ASP.NET Core 3.0.1 and 3.1.0 Preview 3. `UseHttpsRedirection` was also updated in these releases to understand both the new and old variables. ASP.NET Core 2.x won't be updated. As a result, its reverts to the previous behavior of disabled by default.
+As detailed above, installing ASP.NET Core 3.0.0 had the side effect of also activating the `UseHttpsRedirection` middleware in ASP.NET Core 2.x apps. A change was made to ANCM in ASP.NET Core 3.0.1 and 3.1.0 Preview 3 such that installing them no longer has this effect on ASP.NET Core 2.x apps. The `ASPNETCORE_HTTPS_PORT` environment variable that ANCM populated in ASP.NET Core 3.0.0 was changed to `ASPNETCORE_ANCM_HTTPS_PORT` in ASP.NET Core 3.0.1 and 3.1.0 Preview 3. `UseHttpsRedirection` was also updated in these releases to understand both the new and old variables. ASP.NET Core 2.x won't be updated. As a result, it reverts to the previous behavior of being disabled by default.
 
 #### Reason for change
 
@@ -28,7 +28,7 @@ Improved ASP.NET Core 3.0 functionality.
 
 No action is required if you want all clients to use HTTPS. To allow some clients to use HTTP, take one of the following steps:
 
-* Remove the calls to `UseHttpsRedirection` and `UseHsts` from your project's `Startup.Configure` method and redeploy the app.
+* Remove the calls to `UseHttpsRedirection` and `UseHsts` from your project's `Startup.Configure` method, and redeploy the app.
 * In your *web.config* file, set the `ASPNETCORE_HTTPS_PORT` environment variable to an empty string. This change can occur directly on the server without redeploying the app. For example:
 
     ```xml

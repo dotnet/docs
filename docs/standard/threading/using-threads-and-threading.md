@@ -22,7 +22,7 @@ You create a new thread by creating a new instance of the <xref:System.Threading
 
 ## How to: Stop a thread
 
-To terminate the execution of a thread, use the <xref:System.Threading.CancellationToken?displayProperty=nameWithType>. It provides an unified way to stop threads cooperatively. For more information, see [Cancellation in managed threads](cancellation-in-managed-threads.md).
+To terminate the execution of a thread, use the <xref:System.Threading.CancellationToken?displayProperty=nameWithType>. It provides a unified way to stop threads cooperatively. For more information, see [Cancellation in managed threads](cancellation-in-managed-threads.md).
 
 Sometimes it is not possible to stop a thread cooperatively, because it runs third-party code not designed for cooperative cancellation. In this case, you might want to terminate its execution forcibly. To terminate the execution of a thread forcibly, in .NET Framework you can use the <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method. That method raises a <xref:System.Threading.ThreadAbortException> on the thread on which it's invoked. For more information, see [Destroying threads](destroying-threads.md). The <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method is not supported in .NET Core. If you need to terminate the execution of third-party code forcibly in .NET Core, run it in the separate process and use <xref:System.Diagnostics.Process.Kill%2A?displayProperty=nameWithType>.
 

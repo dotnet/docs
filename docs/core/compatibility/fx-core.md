@@ -16,9 +16,13 @@ Breaking changes:
 
 - [Change in default value of UseShellExecute](#change-in-default-value-of-useshellexecute)
 
+***
+
 ### .NET Core 2.1
 
 [!INCLUDE[Process.Start changes](~/includes/core-changes/corefx/2.1/process-start-changes.md)]
+
+***
 
 ## Windows Forms
 
@@ -103,6 +107,8 @@ Breaking changes:
 ***
 
 [!INCLUDE[Duplicated APIs removed from Windows Forms](~/includes/core-changes/windowsforms/3.0/remove-duplicated-apis.md)]
+
+***
 
 ## See also
 

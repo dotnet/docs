@@ -5,7 +5,7 @@ ms.date: 12/23/2019
 ---
 # APIs that always throw exceptions on .NET Core
 
-The following APIs will always throw a <xref:System.PlatformNotSupportedException> when for .NET Core on all or a subset of platforms.
+The following APIs will always throw a <xref:System.PlatformNotSupportedException> on .NET Core on all or a subset of platforms.
 
 This article organizes the affected API members by namespace.
 

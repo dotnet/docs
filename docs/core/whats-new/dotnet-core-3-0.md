@@ -515,4 +515,4 @@ Many times when you're developing an application, you want to use an unencrypted
 ## Next steps
 
 - [Review the breaking changes between .NET Core 2.2 and 3.0.](../compatibility/2.2-3.0.md)
-- [Review the breaking changes between .NET Framework and .NET Core 3.0 for Windows Forms apps.](../porting/winforms-breaking-changes.md)
+- [Review the breaking changes in .NET Core 3.0 for Windows Forms apps.](../compatibility/winforms.md#net-core-30)

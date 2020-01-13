@@ -50,6 +50,8 @@ Breaking changes:
 
 [!INCLUDE[CellFormatting event](~/includes/core-changes/windowsforms/3.1/cellformatting-event-not-raised.md)]
 
+***
+
 ### .NET Core 3.0
 
 [!INCLUDE[Control.DefaultFont changed to Segoe UI 9 pt](~/includes/core-changes/windowsforms/3.0/control-defaultfont-changed.md)]

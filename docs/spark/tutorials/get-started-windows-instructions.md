@@ -32,6 +32,9 @@ For detailed instructions, you can see [Building .NET for Apache Spark from Sour
 ## Authoring a .NET for Apache Spark App
 
 - Open Visual Studio -> Create New Project -> Console App (.NET Core) -> Name: `HelloSpark`
+
+  For detailed instructions, you can see [How to create the app in Visual Studio](https://docs.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio?tabs=csharp)
+
 1. Install `Microsoft.Spark` Nuget package into the solution from the [spark nuget.org feed](https://www.nuget.org/profiles/spark) - see [Ways to install Nuget Package](https://docs.microsoft.com/nuget/consume-packages/ways-to-install-a-package)
 1. Write the following code into *Program.cs*:
 
@@ -44,8 +47,8 @@ For detailed instructions, you can see [Building .NET for Apache Spark from Sour
         {
             static void Main(string[] args)
             {
-                var spark = SparkSession.Builder().GetOrCreate();
-                var df = spark.Read().Json("people.json");
+                SparkSession spark = SparkSession.Builder().GetOrCreate();
+                DataFrame df = spark.Read().Json("people.json");
                 df.Show();
             }
         }

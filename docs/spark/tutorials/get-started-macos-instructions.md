@@ -63,7 +63,7 @@ This tutorial will show you how to run a .NET for Apache Spark app using .NET Co
             static void Main(string[] args)
             {
                 var spark = SparkSession.Builder().GetOrCreate();
-                var df = spark.Read().Json("people.json");
+                DataFrame df = spark.Read().Json("people.json");
                 df.Show();
             }
         }

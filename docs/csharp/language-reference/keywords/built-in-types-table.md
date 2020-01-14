@@ -61,5 +61,5 @@ Console.WriteLine(doubleType.FullName);
 - [C# Keywords](index.md)
 - [Value types](value-types.md)
 - [Reference types](reference-types.md)
-- [Default values table](default-values-table.md)
-- [dynamic](../builtin-types/reference-types.md)
+- [Default values of C# types](../builtin-types/default-values.md)
+- [dynamic](../builtin-types/reference-types.md#the-dynamic-type)

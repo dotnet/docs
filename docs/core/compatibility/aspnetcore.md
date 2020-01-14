@@ -12,7 +12,7 @@ The following is a list of ASP.NET Core breaking changes by ASP.NET Core version
 Index:
 
 - [HTTP: Browser SameSite changes impact authentication](#http-browser-samesite-changes-impact-authentication)
-- [obsolete Antiforgery, CORS, Diagnostics, MVC, and Routing APIs removed](#obsolete-antiforgery-cors-diagnostics-mvc-and-routing-apis-removed)
+- [Obsolete Antiforgery, CORS, Diagnostics, MVC, and Routing APIs removed](#obsolete-antiforgery-cors-diagnostics-mvc-and-routing-apis-removed)
 - [Authentication: Google+ deprecation](#authentication-google-deprecated-and-replaced)
 - [Authentication: HttpContext.Authentication property removed](#authentication-httpcontextauthentication-property-removed)
 - [Authentication: Newtonsoft.Json types replaced](#authentication-newtonsoftjson-types-replaced)
@@ -71,7 +71,7 @@ Index:
 
 ## ASP.NET Core 3.0
 
-[!INCLUDE[obsolete Antiforgery, CORS, Diagnostics, MVC, and Routing APIs removed](~/includes/core-changes/aspnetcore/3.0/obsolete-apis-removed.md)]
+[!INCLUDE[Obsolete Antiforgery, CORS, Diagnostics, MVC, and Routing APIs removed](~/includes/core-changes/aspnetcore/3.0/obsolete-apis-removed.md)]
 
 ***
 

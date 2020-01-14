@@ -20,6 +20,14 @@ If you prefer to have a guided tour through major features of .NET, see [Tour of
 
 For an overview of the various pieces of .NET and how they fit together, see [.NET architectural components](components.md).
 
+## New to .NET Core
+
+If you're new to .NET Core, check out [Get started with .NET Core](../core/get-started.md).
+
+## New to .NET Standard
+
+If you're new to .NET Standard, check out [.NET Standard](net-standard.md).
+
 ## Port .NET Framework code to .NET Standard or .NET Core
 
 To port an application, service, component, or NuGet package to .NET Standard or .NET Core, see [Port to .NET Core from .NET Framework](../core/porting/index.md). Tooling for .NET Standard and .NET Core is shared, so the content is relevant for porting to both frameworks.

@@ -16,4 +16,4 @@ Two sequences whose corresponding elements are equal and which have the same num
 
 - <xref:System.Linq>
 - [Standard Query Operators Overview (C#)](./standard-query-operators-overview.md)
-- [How to: Compare the Contents of Two Folders (LINQ) (C#)](./how-to-compare-the-contents-of-two-folders-linq.md)
+- [How to compare the contents of two folders (LINQ) (C#)](./how-to-compare-the-contents-of-two-folders-linq.md)

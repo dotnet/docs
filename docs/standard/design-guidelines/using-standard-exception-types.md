@@ -8,7 +8,6 @@ helpviewer_keywords:
   - "exceptions, catching"
   - "exceptions, throwing"
 ms.assetid: ab22ce03-78f9-4dca-8824-c7ed3bdccc27
-author: "KrzysztofCwalina"
 ---
 # Using Standard Exception Types
 This section describes the standard exceptions provided by the Framework and the details of their usage. The list is by no means exhaustive. Please refer to the .NET Framework reference documentation for usage of other Framework exception types.  

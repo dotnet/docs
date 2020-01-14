@@ -31,7 +31,7 @@ To address those mentioned issues and make the management of `HttpClient` instan
 - Manage the lifetime of `HttpClientMessageHandlers` to avoid the mentioned problems/issues that can occur when managing `HttpClient` lifetimes yourself.
 
 > [!NOTE]
-> `HttpClientFactory` is tightly tied to the dependency injection (DI) implementation in the `Microsoft.Extensions.DependencyInjection` NuGet package. For more information about using other dependency injection containers, see this [GitHub discussion](https://github.com/aspnet/Extensions/issues/1345).
+> `HttpClientFactory` is tightly tied to the dependency injection (DI) implementation in the `Microsoft.Extensions.DependencyInjection` NuGet package. For more information about using other dependency injection containers, see this [GitHub discussion](https://github.com/dotnet/extensions/issues/1345).
 
 ## Multiple ways to use HttpClientFactory
 
@@ -50,11 +50,13 @@ So, what's a "Typed Client"? It's just an `HttpClient` that's configured upon in
 
 The following diagram shows how Typed Clients are used with `HttpClientFactory`:
 
-![A ClientService (used by a controller or client code) uses an HttpClient created by the registered IHttpClientFactory. This factory assigns the HttpClient an HttpMessageHandler from a pool it manages. The HttpClient can be configured with Polly's policies when registering the IHttpClientFactory in the DI container with the extension method AddHttpClient.](./media/image3.5.png)
+![Diagram showing how typed clients are used with HttpClientFactory.](./media/use-httpclientfactory-to-implement-resilient-http-requests/client-application-code.png)
 
 **Figure 8-4**. Using HttpClientFactory with Typed Client classes.
 
-First, setup `HttpClientFactory` in your application by installing the `Microsoft.Extensions.Http` NuGet package that includes the `AddHttpClient()` extension method for `IServiceCollection`. This extension method registers the `DefaultHttpClientFactory` to be used as a singleton for the interface `IHttpClientFactory`. It defines a transient configuration for the `HttpMessageHandlerBuilder`. This message handler (`HttpMessageHandler` object), taken from a pool, is used by the `HttpClient` returned from the factory.
+In the above image, a ClientService (used by a controller or client code) uses an `HttpClient` created by the registered `IHttpClientFactory`. This factory assigns the `HttpClient` an `HttpMessageHandler` from a pool it manages. The `HttpClient` can be configured with Polly's policies when registering the `IHttpClientFactory` in the DI container with the extension method `AddHttpClient`.
+
+To configure the above structure, add `HttpClientFactory` in your application by installing the `Microsoft.Extensions.Http` NuGet package that includes the `AddHttpClient()` extension method for `IServiceCollection`. This extension method registers the `DefaultHttpClientFactory` to be used as a singleton for the interface `IHttpClientFactory`. It defines a transient configuration for the `HttpMessageHandlerBuilder`. This message handler (`HttpMessageHandler` object), taken from a pool, is used by the `HttpClient` returned from the factory.
 
 In the next code, you can see how `AddHttpClient()` can be used to register Typed Clients (Service Agents) that need to use `HttpClient`.
 
@@ -180,14 +182,14 @@ Up to this point, the code shown is just performing regular Http requests, but t
 - **Using HttpClientFactory in .NET Core**  
   [https://docs.microsoft.com/aspnet/core/fundamentals/http-requests](/aspnet/core/fundamentals/http-requests)
 
-- **HttpClientFactory source code in the `aspnet/Extensions` GitHub repository**  
-  <https://github.com/aspnet/Extensions/tree/master/src/HttpClientFactory>
+- **HttpClientFactory source code in the `dotnet/extensions` GitHub repository**  
+  <https://github.com/dotnet/extensions/tree/master/src/HttpClientFactory>
 
 - **Polly (.NET resilience and transient-fault-handling library)**  
   <http://www.thepollyproject.org/>
   
 - **Using HttpClientFactory without dependency injection (GitHub issue)**  
-  <https://github.com/aspnet/Extensions/issues/1345>
+  <https://github.com/dotnet/extensions/issues/1345>
 
 >[!div class="step-by-step"]
 >[Previous](explore-custom-http-call-retries-exponential-backoff.md)

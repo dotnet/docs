@@ -1,5 +1,5 @@
 ---
-title: "Subscript out of range (Visual Basic)"
+title: "Subscript out of range"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID9"

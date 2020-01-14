@@ -19,7 +19,7 @@ This section contains common questions and troubleshooting help for using queues
 
 **Q:** Do I have to upgrade MSMQ to use the <xref:System.ServiceModel.NetMsmqBinding> and `MsmqIntegration` bindings?
 
-**A:** No. Both bindings work with MSMQ 3.0 on [!INCLUDE[wxp](../../../../includes/wxp-md.md)] and [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)]. Certain features of the bindings become available when you upgrade to MSMQ 4.0 in [!INCLUDE[wv](../../../../includes/wv-md.md)].
+**A:** No. Both bindings work with MSMQ 3.0 on [!INCLUDE[wxp](../../../../includes/wxp-md.md)] and Windows Server 2003. Certain features of the bindings become available when you upgrade to MSMQ 4.0 in Windows Vista.
 
 **Q:** What features of the <xref:System.ServiceModel.NetMsmqBinding> and <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> bindings are available in MSMQ 4.0 but not in MSMQ 3.0?
 
@@ -97,7 +97,7 @@ A. Check your service contract. You may have forgotten to put "IsOneWay=`true`" 
 
 2. If the `NetMsmqActivator` is monitoring queues on a remote machine, ensure that `NetMsmqActivator` does not run under a restricted token. To run the `NetMsmqActivator` with an unrestricted token:
 
-    ```
+    ```console
     sc sidtype NetMsmqActivator unrestricted
     ```
 
@@ -115,7 +115,7 @@ For non-security related Web host issues refer to: [Web Hosting a Queued Applica
 
 **A:** There is a fundamental difference in the way queued session messages and queued datagram messages are composed. Because of this, a service that is expecting to read a queued session message cannot receive a queued datagram message and a service expecting to read a queued datagram message cannot receive a session message. Attempting to read both types of messages from the same queue throws the following exception:
 
-```
+```console
 System.ServiceModel.MsmqPoisonMessageException: The transport channel detected a poison message. This occurred because the message exceeded the maximum number of delivery attempts or because the channel detected a fundamental problem with the message. The inner exception may contain additional information.
 ---> System.ServiceModel.ProtocolException: An incoming MSMQ message contained invalid or unexpected .NET Message Framing information in its body. The message cannot be received. Ensure that the sender is using a compatible service contract with a matching SessionMode.
 ```
@@ -128,9 +128,9 @@ The system dead-letter queue, as well as any custom dead-letter queue, is partic
 
 **A:** When you use the MSMQ integration binding, you must use the msmq.formatname scheme. For example, msmq.formatname:DIRECT=OS:.\private$\OrdersQueue. But when you specify the custom dead-letter queue, you must use the net.msmq scheme.
 
-**Q:** When I use a public or private format name and open the service host on [!INCLUDE[wv](../../../../includes/wv-md.md)], I get an error. Why?
+**Q:** When I use a public or private format name and open the service host on Windows Vista, I get an error. Why?
 
-**A:** The WCF integration channel on [!INCLUDE[wv](../../../../includes/wv-md.md)] checks to see if a sub-queue can be opened for the main application queue for handling poison messages. The sub-queue name is derived from an msmq.formatname URI passed to the listener. The sub-queue name in MSMQ can only be a direct format name. So you see the error. Change the queue URI to a direct format name.
+**A:** The WCF integration channel on Windows Vista checks to see if a sub-queue can be opened for the main application queue for handling poison messages. The sub-queue name is derived from an msmq.formatname URI passed to the listener. The sub-queue name in MSMQ can only be a direct format name. So you see the error. Change the queue URI to a direct format name.
 
 **Q:** When receiving a message from an MSMQ application, the message sits in the queue and is not read by the receiving WCF application. Why?
 
@@ -194,7 +194,7 @@ Yet another workaround is to install MSMQ with Active Directory integration.
 
 - Make sure that MSDTC is in the list of exceptions in the **Internet Connection Firewall** settings.
 
-- Ensure that you are using [!INCLUDE[wv](../../../../includes/wv-md.md)]. MSMQ on [!INCLUDE[wv](../../../../includes/wv-md.md)] supports remote transacted read. MSMQ on earlier Windows releases does not support remote transacted read.
+- Ensure that you are using Windows Vista. MSMQ on Windows Vista supports remote transacted read. MSMQ on earlier Windows releases does not support remote transacted read.
 
 **Q:** When the service reading from the queue is a network service, for example, in a Web host, why do I get an access-denied exception is raised when reading from the queue?
 

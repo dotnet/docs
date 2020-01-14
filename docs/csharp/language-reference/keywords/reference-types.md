@@ -1,7 +1,5 @@
 ---
 title: "Reference types - C# Reference"
-ms.custom: seodec18
-
 ms.date: 07/20/2015
 f1_keywords: 
   - "cs.referencetypes"
@@ -36,5 +34,5 @@ There are two kinds of types in C#: reference types and value types. Variables o
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Types](/dotnet/csharp/language-reference/keywords)
-- [Value Types](value-types.md)
+- [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md)
+- [Value types](value-types.md)

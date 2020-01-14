@@ -1,6 +1,5 @@
 ---
 title: "Using foreach with arrays - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 05/23/2018
 helpviewer_keywords: 
   - "arrays [C#], foreach"

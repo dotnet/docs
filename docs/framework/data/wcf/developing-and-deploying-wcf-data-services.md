@@ -14,7 +14,7 @@ This topic provides information about developing and deploying WCF Data Services
 
 ## Develop WCF Data Services
 
-When you use WCF Data Services to create a data service that supports the [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)], you must perform the following basic tasks during development:
+When you use WCF Data Services to create a data service that supports the Open Data Protocol (OData), you must perform the following basic tasks during development:
 
 1. **Define the data model**
 
@@ -64,7 +64,7 @@ When you develop a WCF Data Service as an ASP.NET application or ASP.NET Web sit
 
 3. **Windows Azure Development Environment**
 
-     Windows Azure Tools for Visual Studio includes an integrated set of tools for developing Windows Azure services in Visual Studio. With these tools, you can develop a data service that can be deployed to Windows Azure, and you can test the data service on the local computer before deployment. Use these tools when using Visual Studio to develop a data service that runs on the Windows Azure platform. You can download the Windows Azure Tools for Visual Studio from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkID=201848). For more information about developing a data service that runs on Windows Azure, see the post [Deploying an OData Service in Windows Azure](https://go.microsoft.com/fwlink/?LinkId=201847).
+     Windows Azure Tools for Visual Studio includes an integrated set of tools for developing Windows Azure services in Visual Studio. With these tools, you can develop a data service that can be deployed to Windows Azure, and you can test the data service on the local computer before deployment. Use these tools when using Visual Studio to develop a data service that runs on the Windows Azure platform. You can download the Windows Azure Tools for Visual Studio from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkID=201848). For more information about developing a data service that runs on Windows Azure, see the post [Deploying an OData Service in Windows Azure](https://docs.microsoft.com/archive/blogs/astoriateam/deploying-an-odata-service-in-windows-azure).
 
 ### Development Tips
 
@@ -74,7 +74,7 @@ You should consider the following when you develop a data service:
 
 - An HTTP inspection program can be very helpful when debugging a data service by enabling you to inspect the contents of request and response messages. Any network packet analyzer that can display raw packets can be used to inspect HTTP requests to and responses from the data service.
 
-- When debugging a data service, you may want to get more information about an error from the data service than during regular operation. You can get additional error information from the data service by setting the <xref:System.Data.Services.DataServiceConfiguration.UseVerboseErrors%2A> property in the <xref:System.Data.Services.DataServiceConfiguration> to `true` and by setting the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A> property of the <xref:System.ServiceModel.Description.ServiceDebugBehavior> attribute on the data service class to `true`. For more information, see the post [Debugging WCF Data Services](https://go.microsoft.com/fwlink/?LinkId=201868). You can also enable tracing in WCF to view exceptions raised in the HTTP messaging layer. For more information, see [Configuring Tracing](../../wcf/diagnostics/tracing/configuring-tracing.md).
+- When debugging a data service, you may want to get more information about an error from the data service than during regular operation. You can get additional error information from the data service by setting the <xref:System.Data.Services.DataServiceConfiguration.UseVerboseErrors%2A> property in the <xref:System.Data.Services.DataServiceConfiguration> to `true` and by setting the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A> property of the <xref:System.ServiceModel.Description.ServiceDebugBehavior> attribute on the data service class to `true`. For more information, see the post [Debugging WCF Data Services](https://blogs.msdn.microsoft.com/phaniraj/?m=20086). You can also enable tracing in WCF to view exceptions raised in the HTTP messaging layer. For more information, see [Configuring Tracing](../../wcf/diagnostics/tracing/configuring-tracing.md).
 
 - A data service is usually developed as an ASP.NET application project, but you can also create you data service as an ASP.NET Web site project in Visual Studio. For information about the differences between the two types of projects, see [Web Application Projects versus Web Site Projects in Visual Studio](https://docs.microsoft.com/previous-versions/aspnet/dd547590(v=vs.110)).
 
@@ -109,7 +109,7 @@ WCF Data Service provides flexibility in choosing the process that hosts the dat
 
 - **Windows Azure**
 
-     You can deploy a data service to Windows Azure by using Windows Azure Tools for Visual Studio. You can download the Windows Azure Tools for Visual Studio from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkID=201848). For more information about deploying a data service to Windows Azure, see the post [Deploying an OData Service in Windows Azure](https://go.microsoft.com/fwlink/?LinkId=201847).
+     You can deploy a data service to Windows Azure by using Windows Azure Tools for Visual Studio. You can download the Windows Azure Tools for Visual Studio from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkID=201848). For more information about deploying a data service to Windows Azure, see the post [Deploying an OData Service in Windows Azure](https://docs.microsoft.com/archive/blogs/astoriateam/deploying-an-odata-service-in-windows-azure).
 
 ### Deployment Considerations
 
@@ -117,7 +117,7 @@ You should consider the following when deploying a data service:
 
 - When you deploy a data service that uses the Entity Framework provider to access a SQL Server database, you might also have to propagate data structures, data, or both with your data service deployment. Visual Studio can automatically create scripts (.sql files) to do this in the destination database, and these scripts can be included in the Web deployment package of an ASP.NET application. For more information, see [How to: Deploy a Database With a Web Application Project](https://docs.microsoft.com/previous-versions/dd465343(v=vs.100)). For an ASP.NET Web site, you can do this by using the **Database Publishing Wizard** in Visual Studio. For more information, see [Publishing a SQL Database](https://docs.microsoft.com/previous-versions/aspnet/bb907585(v=vs.100)).
 
-- Because WCF Data Services includes a basic WCF implementation, you can use Windows Server AppFabric to monitor a data service deployed to IIS running on Windows Server. For more information about using Windows Server AppFabric to monitor a data service, see the post [Tracking WCF Data Services with Windows Server AppFabric](https://go.microsoft.com/fwlink/?LinkID=202005).
+- Because WCF Data Services includes a basic WCF implementation, you can use Windows Server AppFabric to monitor a data service deployed to IIS running on Windows Server. For more information about using Windows Server AppFabric to monitor a data service, see the post [Tracking WCF Data Services with Windows Server AppFabric](https://docs.microsoft.com/archive/blogs/rjacobs/tracking-wcf-data-services-with-windows-server-appfabric).
 
 ## See also
 

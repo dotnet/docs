@@ -1,5 +1,5 @@
 ---
-title: "-refonly (Visual Basic)"
+title: "-refonly"
 ms.date: 03/16/2018
 f1_keywords: 
   - "-refonly"

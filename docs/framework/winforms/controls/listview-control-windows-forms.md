@@ -37,17 +37,11 @@ The Windows Forms `ListView` control displays a list of items with icons. You ca
  [How to: Group Items in a Windows Forms ListView Control](how-to-group-items-in-a-windows-forms-listview-control.md)  
  Describes how to create groups for categorized display and how to assign items to each group.  
   
- This feature is available only for [!INCLUDE[WinXpFamily](../../../../includes/winxpfamily-md.md)].  
-  
  [How to: Enable Tile View in a Windows Forms ListView Control](how-to-enable-tile-view-in-a-windows-forms-listview-control.md)  
  Describes how to display items as tiles, each of which is comprised of a large icon and multiple lines of text.  
   
- This feature is available only for [!INCLUDE[WinXpFamily](../../../../includes/winxpfamily-md.md)].  
-  
  [How to: Display an Insertion Mark in a Windows Forms ListView Control](how-to-display-an-insertion-mark-in-a-windows-forms-listview-control.md)  
  Describes how to implement user-feedback for drag-and-drop operations in which an insertion mark indicates the drop location for each mouse-pointer position.  
-  
- This feature is available only for [!INCLUDE[WinXpFamily](../../../../includes/winxpfamily-md.md)].  
   
  [How to: Add Search Capabilities to a ListView Control](how-to-add-search-capabilities-to-a-listview-control.md)  
  Describes how to programmatically find an item using either text search or screen coordinates.  

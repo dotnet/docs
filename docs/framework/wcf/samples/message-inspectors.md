@@ -13,7 +13,7 @@ This sample demonstrates how to implement and configure client and service messa
 ## Message Inspector  
  Client message inspectors implement the <xref:System.ServiceModel.Dispatcher.IClientMessageInspector> interface and service message inspectors implement the <xref:System.ServiceModel.Dispatcher.IDispatchMessageInspector> interface. The implementations can be combined into a single class to form a message inspector that works for both sides. This sample implements such a combined message inspector. The inspector is constructed passing in a set of schemas against which incoming and outgoing messages are validated and allows the developer to specify whether incoming or outgoing messages are validated and whether the inspector is in dispatch or client mode, which affects the error handling as discussed later in this topic.  
   
-```csharp  
+```csharp
 public class SchemaValidationMessageInspector : IClientMessageInspector, IDispatchMessageInspector  
 {  
     XmlSchemaSet schemaSet;  
@@ -200,7 +200,7 @@ void ValidateMessageBody(ref System.ServiceModel.Channels.Message message, bool 
   
  The following `SchemaValidationBehavior` class is the behavior used to add this sample's message inspector to the client or dispatch runtime. The implementation is rather basic in both cases. In <xref:System.ServiceModel.Description.IEndpointBehavior.ApplyClientBehavior%2A> and <xref:System.ServiceModel.Description.IEndpointBehavior.ApplyDispatchBehavior%2A>, the message inspector is created and added to the <xref:System.ServiceModel.Dispatcher.ClientRuntime.MessageInspectors%2A> collection of the respective runtime.  
   
-```csharp  
+```csharp
 public class SchemaValidationBehavior : IEndpointBehavior  
 {  
     XmlSchemaSet schemaSet;   
@@ -293,7 +293,7 @@ public class SchemaValidationBehavior : IEndpointBehavior
   
  The overridden `CreateBehavior` method turns the configuration data into a behavior object when the runtime evaluates the configuration data as it builds a client or an endpoint.  
   
-```csharp  
+```csharp
 public class SchemaValidationBehaviorExtensionElement : BehaviorExtensionElement  
 {  
     public SchemaValidationBehaviorExtensionElement()  
@@ -403,6 +403,6 @@ catch (Exception e)
 >   
 > `<InstallDrive>:\WF_WCF_Samples`  
 >   
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\MessageInspectors`  

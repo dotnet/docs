@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 1e1f0be6-c4e8-4d6c-98cd-d5fa9f686e87
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedScope2::GetConstantCount Method
 Gets a count of the constants defined within this scope.  

@@ -1,5 +1,5 @@
 ---
-title: "Programming in Visual Basic"
+title: "Programming"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "programming [Visual Basic], Visual Basic"
@@ -7,9 +7,11 @@ helpviewer_keywords:
 ms.assetid: bc45a3de-ea36-46e6-a106-309a413d7804
 ---
 # Programming in Visual Basic
+
 This section discusses programming tasks that you may want to learn more about as you create your Visual Basic application.  
   
 ## In this section  
+
  [Accessing Computer Resources](../../../visual-basic/developing-apps/programming/computer-resources/index.md)  
  Contains documentation on how to use the `My.Computer` object to access information about the computer on which an application runs and how to control the computer.  
   

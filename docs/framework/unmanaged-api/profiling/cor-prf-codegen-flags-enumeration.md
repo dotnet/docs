@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 3e184022-0247-4824-a23d-6b29593d8d01
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # COR_PRF_CODEGEN_FLAGS Enumeration
 Defines the code generation flags that can be set with the [ICorProfilerFunctionControl::SetCodegenFlags](../../../../docs/framework/unmanaged-api/profiling/icorprofilerfunctioncontrol-setcodegenflags-method.md) method.  

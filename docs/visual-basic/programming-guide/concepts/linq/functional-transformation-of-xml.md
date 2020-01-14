@@ -1,5 +1,5 @@
 ---
-title: "Functional Transformation of XML (Visual Basic)"
+title: "Functional Transformation of XML"
 ms.date: 07/20/2015
 ms.assetid: fdbe5b91-f457-4b4e-a11b-def4bdd77bab
 ---

@@ -1,6 +1,5 @@
 ---
 title: "<summary> - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
   - "<summary>"

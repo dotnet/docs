@@ -1,12 +1,12 @@
 ---
-title: "How to: Query an ArrayList with LINQ (C#)"
+title: "How to query an ArrayList with LINQ (C#)"
 ms.date: 07/20/2015
 ms.assetid: 2bfb471c-6e9a-4e60-bd83-4a1778abde11
 ---
-# How to: Query an ArrayList with LINQ (C#)
+# How to query an ArrayList with LINQ (C#)
 When using LINQ to query non-generic <xref:System.Collections.IEnumerable> collections such as <xref:System.Collections.ArrayList>, you must explicitly declare the type of the range variable to reflect the specific type of the objects in the collection. For example, if you have an <xref:System.Collections.ArrayList> of `Student` objects, your [from clause](../../../language-reference/keywords/from-clause.md) should look like this:  
   
-```csharp  
+```csharp
 var query = from Student s in arrList  
 //...
 ```  

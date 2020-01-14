@@ -2,7 +2,7 @@
 title: Introduction to Docker
 description: This article provides an introduction and overview to Docker in the context of a .NET Core application.
 ms.date: 03/20/2019
-ms.custom: "mvc, seodec18"
+ms.custom: "mvc"
 ---
 
 # Introduction to .NET and Docker
@@ -56,7 +56,7 @@ Deploy web apps or APIs using Linux containers in a PaaS environment.
 - [Azure Container Instances](https://azure.microsoft.com/services/container-instances/)\
 Host your container in the cloud without any higher-level management services.
 
- [Azure Batch](https://azure.microsoft.com/services/batch/)\
+- [Azure Batch](https://azure.microsoft.com/services/batch/)\
 Run repetitive compute jobs using containers.
 
 - [Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/)\

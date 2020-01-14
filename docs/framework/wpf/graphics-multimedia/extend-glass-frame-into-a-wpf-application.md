@@ -14,10 +14,10 @@ ms.assetid: 74388a3a-4b69-4a9d-ba1f-e107636bd660
 
 # Extend Glass Frame Into a WPF Application
 
-This topic demonstrates how to extend the [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)] glass frame into the client area of a Windows Presentation Foundation (WPF) application.
+This topic demonstrates how to extend the Windows Vista glass frame into the client area of a Windows Presentation Foundation (WPF) application.
 
 > [!NOTE]
-> This example will only work on a [!INCLUDE[TLA2#tla_winvista](../../../../includes/tla2sharptla-winvista-md.md)] machine running the Desktop Window Manager (DWM) with glass enabled. [!INCLUDE[TLA2#tla_winvista](../../../../includes/tla2sharptla-winvista-md.md)] Home Basic edition does not support the transparent glass effect. Areas that would typically render with the transparent glass effect on other editions of [!INCLUDE[TLA2#tla_winvista](../../../../includes/tla2sharptla-winvista-md.md)] are rendered opaque.
+> This example will only work on a Windows Vista machine running the Desktop Window Manager (DWM) with glass enabled. Windows Vista Home Basic edition does not support the transparent glass effect. Areas that would typically render with the transparent glass effect on other editions of Windows Vista are rendered opaque.
 
 ## Example
 
@@ -25,7 +25,7 @@ The following image illustrates the glass frame extended into the address bar of
 
 ![Screenshot showing glass frame extended behind IE7 address bar.](./media/extend-glass-frame-into-a-wpf-application/internet-explorer-glass-frame-extended-address-bar.png)
 
-To extend the glass frame on a [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] application, access to unmanaged API is needed. The following code example does a Platform Invoke (pinvoke) for the two API needed to extend the frame into the client area. Each of these API are declared in a class called **NonClientRegionAPI**.
+To extend the glass frame on a WPF application, access to unmanaged API is needed. The following code example does a Platform Invoke (pinvoke) for the two API needed to extend the frame into the client area. Each of these API are declared in a class called **NonClientRegionAPI**.
 
 ```csharp
 [StructLayout(LayoutKind.Sequential)]
@@ -61,7 +61,7 @@ End Function
 
 ## Example
 
-To use the [DwmExtendFrameIntoClientArea](/windows/desktop/api/dwmapi/nf-dwmapi-dwmextendframeintoclientarea) function, a window handle must be obtained. In [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], the window handle can be obtained from the <xref:System.Windows.Interop.HwndSource.Handle%2A> property of an <xref:System.Windows.Interop.HwndSource>. In the following example, the frame is extended into the client area on the <xref:System.Windows.FrameworkElement.Loaded> event of the window.
+To use the [DwmExtendFrameIntoClientArea](/windows/desktop/api/dwmapi/nf-dwmapi-dwmextendframeintoclientarea) function, a window handle must be obtained. In WPF, the window handle can be obtained from the <xref:System.Windows.Interop.HwndSource.Handle%2A> property of an <xref:System.Windows.Interop.HwndSource>. In the following example, the frame is extended into the client area on the <xref:System.Windows.FrameworkElement.Loaded> event of the window.
 
 ```csharp
 void OnLoaded(object sender, RoutedEventArgs e)
@@ -140,7 +140,7 @@ The following example shows a simple window in which the frame is extended into 
 </Window>
 ```
 
-The following image illustrates the glass frame extended into a [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] application:
+The following image illustrates the glass frame extended into a WPF application:
 
 ![Screenshot showing a glass frame extended into a WPF application.](./media/extend-glass-frame-into-a-wpf-application/glass-frame-extended-wpf-application.png)
 

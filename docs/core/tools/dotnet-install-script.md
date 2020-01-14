@@ -189,7 +189,7 @@ You can install a specific version using the `--version` argument. The version m
   macOS/Linux:
 
   ```bash
-  curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin <additional install-script args>
+  curl -ssl https://dot.net/v1/dotnet-install.sh | bash /dev/stdin <additional install-script args>
   ```
 
 ## See also

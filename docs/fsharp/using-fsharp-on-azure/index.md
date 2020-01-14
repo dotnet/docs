@@ -82,7 +82,7 @@ Azure Event Hubs can be used with F# in two ways:
 Azure Notification Hubs can be used with F# in two ways:
 
 1. Through the creation of F# Azure Functions which send results to a notification hub. See [Azure Function output triggers for Notification Hubs](/azure/azure-functions/functions-bindings-notification-hubs), or
-2. By using the [.NET SDK for Azure](https://blogs.msdn.microsoft.com/azuremobile/2014/04/08/push-notifications-using-notification-hub-and-net-backend/). Note these examples are in C#.
+2. By using the [.NET SDK for Azure](https://docs.microsoft.com/archive/blogs/azuremobile/push-notifications-using-notification-hub-and-net-backend). Note these examples are in C#.
 
 ## Implementing WebHooks on Azure with F\#
 

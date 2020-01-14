@@ -5,8 +5,6 @@ helpviewer_keywords:
   - ".NET Framework, deploying"
   - "deployment [.NET Framework]"
 ms.assetid: 19df26c5-4008-461d-a7d7-18f4506312d2
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Deploying the .NET Framework
 This section of the .NET Framework documentation provides information for developers who want to install the .NET Framework with their applications, and administrators who want to deploy the .NET Framework across a network. It also discusses activation and restart issues associated with deployment, and how to monitor the progress of your .NET Framework installation.  
@@ -16,7 +14,7 @@ This section of the .NET Framework documentation provides information for develo
  Explains how developers can install .NET Framework on their users' computers with their applications.  
   
  [Deployment Guide for Administrators](guide-for-administrators.md)  
- Explains how a system administrator can deploy the .NET Framework and its system dependencies across a network by using System Center Configuration Manager (SCCM).  
+ Explains how a system administrator can deploy the .NET Framework and its system dependencies across a network by using Microsoft Endpoint Configuration Manager.  
   
  [Reducing System Restarts During .NET Framework 4.5 Installations](reducing-system-restarts.md)  
  Describes the Restart Manager, which prevents reboots whenever possible, and explains how applications that install the .NET Framework can take advantage of it.  

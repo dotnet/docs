@@ -47,4 +47,4 @@ from (select ref(o) as r from LOB.Orders as o) as o2
 - [Entity SQL Overview](entity-sql-overview.md)
 - [Entity SQL Reference](entity-sql-reference.md)
 - [CAST](cast-entity-sql.md)
-- [CSDL, SSDL, and MSL Specifications](csdl-ssdl-and-msl-specifications.md)
+- [CSDL, SSDL, and MSL Specifications](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec)

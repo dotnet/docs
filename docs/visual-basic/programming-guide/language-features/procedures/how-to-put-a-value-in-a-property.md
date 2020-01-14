@@ -1,5 +1,5 @@
 ---
-title: "How to: Put a Value in a Property (Visual Basic)"
+title: "How to: Put a Value in a Property"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "property values [Visual Basic]"

@@ -223,7 +223,7 @@ That informs the compiler that any code where the return value is `false` need n
 
 ```csharp
 string? userInput = GetUserInput();
-if (!(string.IsNullOrEmpty(userInput))
+if (!string.IsNullOrEmpty(userInput))
 {
    int messageLength = userInput.Length; // no null check needed.
 }

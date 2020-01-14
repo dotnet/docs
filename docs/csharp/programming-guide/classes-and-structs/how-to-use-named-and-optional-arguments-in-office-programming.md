@@ -1,6 +1,5 @@
 ---
-title: "How to: Use Named and Optional Arguments in Office Programming - C# Programming Guide"
-ms.custom: seodec18
+title: "How to use named and optional arguments in Office programming - C# Programming Guide"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "named and optional arguments [C#], Office programming"
@@ -8,7 +7,7 @@ helpviewer_keywords:
   - "named arguments [C#], Office programming"
 ms.assetid: 65b8a222-bcd8-454c-845f-84adff5a356f
 ---
-# How to: Use Named and Optional Arguments in Office Programming (C# Programming Guide)
+# How to use named and optional arguments in Office programming (C# Programming Guide)
 
 Named arguments and optional arguments, introduced in C# 4, enhance convenience, flexibility, and readability in C# programming. In addition, these features greatly facilitate access to COM interfaces such as the Microsoft Office automation APIs.
 

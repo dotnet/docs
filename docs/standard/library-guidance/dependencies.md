@@ -1,8 +1,6 @@
 ---
 title: Dependencies and .NET libraries
 description: Best practice recommendations for managing NuGet dependencies in .NET libraries.
-author: jamesnk
-ms.author: mairaw
 ms.date: 10/02/2018
 ---
 # Dependencies

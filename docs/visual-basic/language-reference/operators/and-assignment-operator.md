@@ -1,5 +1,5 @@
 ---
-title: "&amp;= Operator (Visual Basic)"
+title: "&amp;= Operator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.&="

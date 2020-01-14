@@ -1,5 +1,5 @@
 ---
-title: "How to: Compare the Contents of Two Folders (LINQ) (Visual Basic)"
+title: "How to: Compare the Contents of Two Folders (LINQ)"
 ms.date: 07/20/2015
 ms.assetid: 903c7e9a-f48d-4a07-a8a8-5450d2646efa
 ---
@@ -108,9 +108,9 @@ Module CompareDirs
 End Module
 ```
 
-## Compiling the Code
+## Compile the code
 
-Create a VB.NET console application project, with an `Imports` statement for the System.Linq namespace.
+Create a Visual Basic console application project, with an `Imports` statement for the System.Linq namespace.
 
 ## See also
 

@@ -181,7 +181,7 @@ For more information about data binding, see [Data Binding Overview](../../../de
 
 ### Design for Designers
 
-To receive support for custom WPF controls in the [!INCLUDE[wpfdesigner_current_long](../../../../includes/wpfdesigner-current-long-md.md)] (for example, property editing with the Properties window), follow these guidelines.  For more information on developing for the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)], see [Design XAML in Visual Studio](/visualstudio/xaml-tools/designing-xaml-in-visual-studio).
+To receive support for custom WPF controls in the WPF Designer for Visual Studio (for example, property editing with the Properties window), follow these guidelines.  For more information on developing for the WPF Designer, see [Design XAML in Visual Studio](/visualstudio/xaml-tools/designing-xaml-in-visual-studio).
 
 #### Dependency Properties
 

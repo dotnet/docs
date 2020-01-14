@@ -1,5 +1,5 @@
 ---
-title: "How to: Call Windows APIs (Visual Basic)"
+title: "How to: Call Windows APIs"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "API calls [Visual Basic]"
@@ -14,7 +14,7 @@ This example defines and calls the `MessageBox` function in user32.dll and then 
 ## Example  
  [!code-vb[VbVbalrInterop#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrInterop/VB/Class1.vb#1)]  
   
-## Compiling the Code  
+## Compile the code  
  This example requires:  
   
 - A reference to the <xref:System> namespace.  

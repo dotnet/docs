@@ -1,6 +1,6 @@
 ---
 title: Get started with F# with command-line tools
-description: Learn how to build a simple multi-project solution on F# using the .NET Core CLI on any operating system (Windows, macOs or Linux).
+description: Learn how to build a simple multi-project solution on F# using the .NET Core CLI on any operating system (Windows, macOS, or Linux).
 ms.date: 03/26/2018
 ---
 # Get started with F# with the .NET Core CLI
@@ -35,7 +35,7 @@ Change directories to *FSNetCore*.
 Use the `dotnet new` command, create a class library project in the **src** folder named Library.
 
 ```dotnetcli
-dotnet new classlib -lang F# -o src/Library
+dotnet new classlib -lang "F#" -o src/Library
 ```
 
 The following directory structure is produced after running the previous command:
@@ -79,7 +79,7 @@ Run `dotnet build` to build the project. Unresolved dependencies will be restore
 Use the `dotnet new` command, create a console application in the **src** folder named App.
 
 ```dotnetcli
-dotnet new console -lang F# -o src/App
+dotnet new console -lang "F#" -o src/App
 ```
 
 The following directory structure is produced after running the previous command:

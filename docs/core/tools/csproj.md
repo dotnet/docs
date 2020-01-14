@@ -180,6 +180,8 @@ A `<DotNetCliToolReference>` item element specifies the CLI tool that the user w
 <DotNetCliToolReference Include="<package-id>" Version="" />
 ```
 
+Note that `DotNetCliToolReference` is [now deprecated](https://github.com/dotnet/announcements/issues/107) in favor of [.NET Core Local Tools](https://aka.ms/local-tools).
+
 #### Version
 
 `Version` specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](/nuget/create-packages/dependency-versions#version-ranges) scheme. The default behavior is an exact version match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3]` for the exact 1.2.3 version of the package.
@@ -222,6 +224,31 @@ The following example specifies the fallbacks only for the `netcoreapp2.1` targe
     $(PackageTargetFallback);portable-net45+win8+wpa81+wp8
 </PackageTargetFallback >
 ```
+
+## Build events
+
+The way that pre-build and post-build events are specified in the project file has changed. The properties PreBuildEvent and PostBuildEvent are not recommended in the SDK-style project format, because macros such as $(ProjectDir) are not resolved. For example, the following code is no longer supported:
+
+```xml
+<PropertyGroup>
+    <PreBuildEvent>"$(ProjectDir)PreBuildEvent.bat" "$(ProjectDir)..\" "$(ProjectDir)" "$(TargetDir)" />
+</PropertyGroup>
+```
+
+In SDK-style projects, use an MSBuild target named `PreBuild` or `PostBuild` and set the `BeforeTargets` property for `PreBuild` or the `AfterTargets` property for `PostBuild`. For the preceding example, use the following code:
+
+```xml
+<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="&quot;$(ProjectDir)PreBuildEvent.bat&quot; &quot;$(ProjectDir)..\&quot; &quot;$(ProjectDir)&quot; &quot;$(TargetDir)&quot;" />
+</Target>
+
+<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+   <Exec Command="echo Output written to $(TargetDir)" />
+</Target>
+```
+
+> [!NOTE]
+>You can use any name for the MSBuild targets, but the Visual Studio IDE recognizes `PreBuild` and `PostBuild` targets, so we recommend using those names so that you can edit the commands in the Visual Studio IDE. 
 
 ## NuGet metadata properties
 

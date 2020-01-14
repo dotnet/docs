@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: be83af41-3dec-4c77-8529-9dd6b8042af6
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback3 Interface
 Provides callback methods that the common language runtime (CLR) uses to communicate attach and detach state information to the profiler.  

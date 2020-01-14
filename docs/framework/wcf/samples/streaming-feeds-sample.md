@@ -27,7 +27,7 @@ interface IStreamingFeedService
   
  The service implements this contract by using an `ItemGenerator` class to create a potentially infinite stream of <xref:System.ServiceModel.Syndication.SyndicationItem> instances using an iterator, as shown in the following code.  
   
-```csharp  
+```csharp
 class ItemGenerator  
 {  
     public IEnumerable<SyndicationItem> GenerateItems()  
@@ -45,7 +45,7 @@ class ItemGenerator
   
  When the service implementation creates the feed, the output of `ItemGenerator.GenerateItems()` is used instead of a buffered collection of items.  
   
-```csharp  
+```csharp
 public Atom10FeedFormatter StreamedFeed()  
 {  
     SyndicationFeed feed = new SyndicationFeed("Streamed feed", "Feed to test streaming", null);  
@@ -108,7 +108,7 @@ private IEnumerable<SyndicationItem> DelayReadItems(XmlReader reader, Syndicatio
 >   
 > `<InstallDrive>:\WF_WCF_Samples`  
 >   
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Syndication\StreamingFeeds`  
   

@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Analyze sentiment - binary classification'
 description: This tutorial shows you how to create a Razor Pages application that classifies sentiment from website comments and takes the appropriate action. The binary sentiment classifier uses Model Builder in Visual Studio.
-ms.date: 10/08/2019
+ms.date: 11/21/2019
 author: luisquintanilla
 ms.author: luquinta
 ms.topic: tutorial
@@ -44,7 +44,7 @@ For a list of pre-requisites and installation instructions, visit the [Model Bui
     1. In the New Project dialog, select the **Visual C#** node followed by the **Web** node.
     1. Then select the **ASP.NET Core Web Application** project template.
     1. In the **Name** text box, type "SentimentRazor".
-    1. The **Create a directory for solution** checkbox should be checked by default. If that's not the case, check it.
+    1. Make sure **Place solution and project in the same directory** is **unchecked** (VS 2019), or **Create directory for solution** is **checked** (VS 2017).
     1. Select the **OK** button.
     1. Choose **Web Application** in the window that displays the different types of ASP.NET Core Projects, and then select the **OK** button.
 
@@ -156,7 +156,7 @@ To make a single prediction, you have to create a [`PredictionEngine`](xref:Micr
 
         string fullPath = Path.Combine(assemblyFolderPath, relativePath);
         return fullPath;
-    }    
+    }
     ```
 
 1. Use the `GetAbsolutePath` method in the `Startup` class constructor to set the `_modelPath`.
@@ -197,7 +197,7 @@ Predictions will be made inside the main page of the application. Therefore, a m
     public IndexModel(PredictionEnginePool<ModelInput, ModelOutput> predictionEnginePool)
     {
         _predictionEnginePool = predictionEnginePool;
-    }    
+    }
     ```
 
 1. Create a method handler that uses the `PredictionEnginePool` to make predictions from user input received from the web page.
@@ -300,4 +300,4 @@ To learn more about topics mentioned in this tutorial, visit the following resou
 
 - [Model Builder Scenarios](../automate-training-with-model-builder.md#scenarios)
 - [Binary Classification](../resources/glossary.md#binary-classification)
-- [Binary Classification Model Metrics](../resources/metrics.md#metrics-for-binary-classification)
+- [Binary Classification Model Metrics](../resources/metrics.md#evaluation-metrics-for-binary-classification)

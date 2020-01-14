@@ -28,7 +28,7 @@ You need Visual Studio to complete this walkthrough.
   
     - System.Windows.Forms  
   
-3. Open MainWindow.xaml in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].  
+3. Open MainWindow.xaml in the WPF Designer.  
   
 4. In the <xref:System.Windows.Window> element, add the following namespace mapping. The `wf` namespace mapping establishes a reference to the assembly that contains the Windows Forms control.  
   

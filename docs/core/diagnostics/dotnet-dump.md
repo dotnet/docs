@@ -1,8 +1,6 @@
 ---
 title: dotnet-dump - .NET Core
 description: Installing and using the dotnet-dump command-line tool.
-author: sdmaclea
-ms.author: stmaclea
 ms.date: 10/14/2019
 ---
 # Dump collection and analysis utility (`dotnet-dump`)
@@ -69,7 +67,7 @@ dotnet-dump collect [-h|--help] [-p|--process-id] [--type] [-o|--output] [--diag
 
 - **`--type <Heap|Mini>`**
 
-  Specifies the dumb type, which determines the kinds of information that are collected from the process. There are two types:
+  Specifies the dump type, which determines the kinds of information that are collected from the process. There are two types:
 
   - `Heap` - A large and relatively comprehensive dump containing module lists, thread lists, all stacks, exception information, handle information, and all memory except for mapped images.
   - `Mini` - A small dump containing module lists, thread lists, exception information, and all stacks.
@@ -154,7 +152,7 @@ dotnet-dump analyze <dump_path> [-h|--help] [-c|--command]
 
 ## Using `dotnet-dump`
 
-The first step is to collect a dump. This step can be skipped if a core dump has already been generated. The operating system or the .NET Core runtime's built-in [dump generation feature](https://github.com/dotnet/coreclr/blob/master/Documentation/botr/xplat-minidump-generation.md#configurationpolicy) can each create core dumps.
+The first step is to collect a dump. This step can be skipped if a core dump has already been generated. The operating system or the .NET Core runtime's built-in [dump generation feature](https://github.com/dotnet/runtime/blob/master/docs/design/coreclr/botr/xplat-minidump-generation.md) can each create core dumps.
 
 ```console
 $ dotnet-dump collect --process-id 1902

@@ -1,9 +1,9 @@
 ---
-title: "How to: Perform Streaming Transformations of Text to XML (C#)"
+title: "How to perform streaming transformations of text to XML (C#)"
 ms.date: 07/20/2015
 ms.assetid: 9b3bd941-d0ff-4f2d-ae41-7c3b81d8fae6
 ---
-# How to: Perform Streaming Transformations of Text to XML (C#)
+# How to perform streaming transformations of text to XML (C#)
 
 One approach to processing a text file is to write an extension method that streams the text file a line at a time using the `yield return` construct. You then can write a LINQ query that processes the text file in a lazy deferred fashion. If you then use <xref:System.Xml.Linq.XStreamingElement> to stream output, you then can create a transformation from the text file to XML that uses a minimal amount of memory, regardless of the size of the source text file.
 

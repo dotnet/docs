@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 08dff60c-f01b-4050-8865-ea3f95361c9f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # EnumCustomAttributes Method
 Retrieves assembly-level custom attributes.  

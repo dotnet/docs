@@ -1,5 +1,5 @@
 ---
-title: "Access Levels in Visual Basic"
+title: "Access Levels"
 ms.date: 05/10/2018
 helpviewer_keywords:
   - "members [Visual Basic], accessing in Visual Basic"

@@ -1,10 +1,10 @@
 ---
-title: "F# Compiler Errors and Warnings"
+title: "Compiler errors and warnings"
 description: Descriptions and solutions for errors and warnings that the F# compiler will emit
 ms.date: 12/21/2019
 ---
 
-# F# Compiler Messages
+# F# compiler messages
 
 This section details compiler errors and warnings that the F# compiler will emit for certain constructs. The default sets of errors can be changed by:
 

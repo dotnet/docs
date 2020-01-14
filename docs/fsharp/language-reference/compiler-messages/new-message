@@ -20,7 +20,7 @@ echo "Writing new migration to ${file_name}"
 
 cat >"${file_name}" <<EOF
 ---
-title: "Compiler Error $message_number"
+title: "Compiler error $message_number"
 ms.date: $month/$day/$year
 f1_keywords:
   - "$message_number"

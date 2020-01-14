@@ -27,7 +27,7 @@ There are a number of ways to get started with .NET. Because .NET is a massive p
 
 ## Get started using .NET Standard
 
-* For an introductory tutorial, see [Build a .NET Standard library in Visual Studio](../core/tutorialslibrary-with-visual-studio.md).
+* For an introductory tutorial, see [Build a .NET Standard library in Visual Studio](../core/tutorials/library-with-visual-studio.md).
 
 ## Get started using .NET Core on Docker
 

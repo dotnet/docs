@@ -227,4 +227,4 @@ For more information, see the [Anonymous function expressions](~/_csharplang/spe
 - [Local functions compared to lambda expressions](../../local-functions-vs-lambdas.md)
 - [Implicitly typed lambda expressions](../../implicitly-typed-lambda-expressions.md)
 - [Visual Studio 2008 C# Samples (see LINQ Sample Queries files and XQuery program)](https://code.msdn.microsoft.com/Visual-Studio-2008-C-d295cdba)
-- [Recursive lambda expressions](https://blogs.msdn.microsoft.com/madst/2007/05/11/recursive-lambda-expressions/)
+- [Recursive lambda expressions](https://docs.microsoft.com/archive/blogs/madst/recursive-lambda-expressions)

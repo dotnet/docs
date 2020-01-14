@@ -33,7 +33,7 @@ Configuring a data service to support the streaming of binary data requires the 
 
 5. Enable access to binary resources on the server or in a data source.
 
-The examples in this topic are based on a sample streaming photo service, which is discussed in depth in the post [Data Services Streaming Provider Series: Implementing a Streaming Provider (Part 1)](https://go.microsoft.com/fwlink/?LinkID=198989). The source code for this sample service is available on the [Streaming Photo Data Service Sample page](https://go.microsoft.com/fwlink/?LinkID=198988) on MSDN Code Gallery.
+The examples in this topic are based on a sample streaming photo service, which is discussed in depth in the post [Data Services Streaming Provider Series: Implementing a Streaming Provider (Part 1)](https://docs.microsoft.com/archive/blogs/astoriateam/data-services-streaming-provider-series-implementing-a-streaming-provider-part-1). The source code for the Streaming Photo Data Service sample is available on [GitHub](https://github.com/microsoftarchive/msdn-code-gallery-community-s-z/tree/master/Streaming%20Photo%20OData%20Service%20Sample).
 
 ## Defining a Media Link Entry in the Data Model
 
@@ -47,7 +47,7 @@ To indicate that an entity is a media link entry, add the `HasStream` attribute 
 
 You must also add the namespace `xmlns:m=http://schemas.microsoft.com/ado/2007/08/dataservices/metadata` either to the entity or to the root of the .edmx or .csdl file that defines the data model.
 
-For an example of a data service that uses the Entity Framework provider and exposes a media resource, see the post [Data Services Streaming Provider Series: Implementing a Streaming Provider (Part 1)](https://go.microsoft.com/fwlink/?LinkID=198989).
+For an example of a data service that uses the Entity Framework provider and exposes a media resource, see the post [Data Services Streaming Provider Series: Implementing a Streaming Provider (Part 1)](https://docs.microsoft.com/archive/blogs/astoriateam/data-services-streaming-provider-series-implementing-a-streaming-provider-part-1).
 
 **Reflection Provider**
 

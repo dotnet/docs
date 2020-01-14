@@ -32,9 +32,9 @@ The term *performance* generally refers to the execution speed of a program. You
   
 - [Performance Tips and Tricks in .NET Applications](https://docs.microsoft.com/previous-versions/dotnet/articles/ms973839(v=msdn.10))  
 
-- [Rico Mariani's Performance Tidbits](https://blogs.msdn.microsoft.com/ricom/)  
+- [Rico Mariani's Performance Tidbits](https://docs.microsoft.com/archive/blogs/ricom/)  
 
-- [Vance Morrison's Blog](https://blogs.msdn.microsoft.com/vancem/)
+- [Vance Morrison's Blog](https://docs.microsoft.com/archive/blogs/vancem/)
   
 ## See also
 

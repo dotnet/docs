@@ -27,7 +27,7 @@ This tutorial will show you how to run a .NET for Apache Spark app using .NET Co
  >
  > Create a [new environment variable](https://www.java.com/en/download/help/path.xml) `DOTNET_WORKER_DIR` and set it to the directory where you downloaded and extracted the Microsoft.Spark.Worker (for example, *c:\bin\Microsoft.Spark.Worker*).
 
-For detailed instructions, you can see [Building .NET for Apache Spark from Source on Windows](../building/windows-instructions.md).
+For detailed instructions, you can see [Building .NET for Apache Spark from Source on Windows](../how-to-guides/windows-instructions.md).
 
 ## Authoring a .NET for Apache Spark App
 

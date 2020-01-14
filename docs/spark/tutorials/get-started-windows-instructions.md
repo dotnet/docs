@@ -84,7 +84,7 @@ For detailed instructions, you can see [Building .NET for Apache Spark from Sour
     ```
     
     **Note**: This command assumes you have downloaded Apache Spark and added it to your PATH environment variable to be able to use `spark-submit`, otherwise, you would have to use the full path (e.g., `c:\bin\apache-spark\bin\spark-submit`). For detailed instructions, you can see [Building .NET for Apache Spark from Source on Windows](../building/windows-instructions.md).
-- The output of the application should look similar to the output below:
+1. The output of the application should look similar to the following output:
 
     ```text
     +----+-------+

@@ -13,7 +13,7 @@ This tutorial shows you how to run a .NET for Apache Spark app using .NET Core o
 
 > [!div class="checklist"]
 >
-> * Pre-requisites to run your .NET for Apache Spark application
+> * Prerequisites to run a .NET for Apache Spark application
 > * Write a simple .NET for Apache Spark application
 > * Build and run your .NET for Apache Spark application
 

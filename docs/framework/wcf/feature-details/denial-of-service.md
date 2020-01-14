@@ -46,7 +46,7 @@ Denial of service occurs when a system is overwhelmed in such a way that message
  Mitigation: Use only trusted code. That is, use only code that you have written and tested, or that comes from a trusted provider. Do not allow untrusted extensions of <xref:System.IdentityModel.Policy.IAuthorizationPolicy> to be plugged into your code without due consideration. This applies to all extensions used in a service implementation. WCF does not make any distinction between application code and foreign code that is plugged in using extensibility points.  
   
 ## Kerberos Maximum Token Size May Need Resizing  
- If a client belongs to a large number of groups (approximately 900, although the actual number varies depending on the groups), a problem may occur when a message header's block exceeds 64 kilobytes. In that case, you can increase the maximum Kerberos token size, as described in the Microsoft Support article "[Internet Explorer Kerberos authentication does not work because of an insufficient buffer connecting to IIS](https://support.microsoft.com/help/269643)." You may also need to increase the maximum WCF message size to accommodate the larger Kerberos token.  
+ If a client belongs to a large number of groups (approximately 900, although the actual number varies depending on the groups), a problem may occur when a message header's block exceeds 64 kilobytes. In that case, you can increase the maximum Kerberos token size. You may also need to increase the maximum WCF message size to accommodate the larger Kerberos token.  
   
 ## Autoenrollment Results in Multiple Certificates with Same Subject Name for Machine  
  *Autoenrollment* is the capability of Windows Server 2003 to automatically enroll users and computers for certificates. When a machine is on a domain with the feature enabled, an X.509 certificate with the intended purpose of client authentication is automatically created and inserted into the local computer's Personal certificates store whenever a new machine is joined to the network. However, autoenrollment uses the same subject name for all certificates it creates in the cache.  
@@ -55,7 +55,7 @@ Denial of service occurs when a system is overwhelmed in such a way that message
   
  To mitigate this, reference the exact certificate to use by using a more precise search criterion on the [\<serviceCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md). For example, use the <xref:System.Security.Cryptography.X509Certificates.X509FindType.FindByThumbprint> option, and specify the certificate by its unique thumbprint (hash).  
   
- For more information about the autoenrollment feature, see [Certificate Autoenrollment in Windows Server 2003](https://docs.microsoft.com/).  
+ For more information about the autoenrollment feature, see [Certificate Autoenrollment in Windows Server 2003](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc778954(v%3dws.10)).  
   
 ## Last of Multiple Alternative Subject Names Used for Authorization  
  In the rare case when an X.509 certificate contains multiple alternative subject names, and you authorize using the alternative subject name, authorization may fail.  

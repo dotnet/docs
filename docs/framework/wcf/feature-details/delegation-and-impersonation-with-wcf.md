@@ -193,11 +193,8 @@ sh.Credentials.ClientCertificate.Authentication.MapClientCertificateToWindowsAcc
   
 4. On the domain controller, configure the middle tier computer to use constrained delegation, by clicking the **Trust this computer for delegation to specified services only** option.  
   
- For more detailed instructions about configuring constrained delegation, see the following topics on MSDN:  
+ For more detailed instructions about configuring constrained delegation, see [Kerberos Protocol Transition and Constrained Delegation](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc739587(v=ws.10)).
   
-- [Troubleshooting Kerberos Delegation](https://docs.microsoft.com/)  
-  
-- [Kerberos Protocol Transition and Constrained Delegation](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc739587(v=ws.10))  
   
 ## See also
 

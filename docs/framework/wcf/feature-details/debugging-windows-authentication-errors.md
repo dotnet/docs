@@ -12,7 +12,7 @@ ms.assetid: 181be4bd-79b1-4a66-aee2-931887a6d7cc
 # Debugging Windows Authentication Errors
 When using Windows authentication as a security mechanism, the Security Support Provider Interface (SSPI) handles security processes. When security errors occur at the SSPI layer, they are surfaced by Windows Communication Foundation (WCF). This topic provides a framework and set of questions to help diagnose the errors.  
   
- For an overview of the Kerberos protocol, see [Kerberos Explained](https://docs.microsoft.com/); for an overview of SSPI, see [SSPI](/windows/win32/secauthn/sspi).  
+ For an overview of the Kerberos protocol, see [Kerberos Explained](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-2000-server/bb742516(v=technet.10)); for an overview of SSPI, see [SSPI](/windows/win32/secauthn/sspi).  
   
  For Windows authentication, WCF typically uses the *Negotiate* Security Support Provider (SSP), which performs Kerberos mutual authentication between the client and service. If the Kerberos protocol is not available, by default WCF falls back to NT LAN Manager (NTLM). However, you can configure WCF to use only the Kerberos protocol (and to throw an exception if Kerberos is not available). You can also configure WCF to use restricted forms of the Kerberos protocol.  
   

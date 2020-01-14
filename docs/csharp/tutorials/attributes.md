@@ -1,5 +1,5 @@
 ---
-title: Attributes - C#
+title: "Tutorial: Use attributes - C#"
 description: Learn how attributes work in C#.
 author: mgroves
 ms.technology: csharp-fundamentals

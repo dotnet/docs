@@ -75,7 +75,7 @@ For detailed instructions, you can see [Building .NET for Apache Spark from Sour
     
 1. Run your app
 
-    ```
+    ```batch
     spark-submit `
     --class org.apache.spark.deploy.dotnet.DotnetRunner `
     --master local `

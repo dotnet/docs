@@ -41,7 +41,7 @@ For detailed instructions, you can see [Building .NET for Apache Spark from Sour
     dotnet add package Microsoft.Spark
     ```
 
-- Replace the contents of the `Program.cs` file with the following code:
+1. Replace the contents of the *Program.cs* file with the following code:
 
     ```csharp
     using Microsoft.Spark.Sql;

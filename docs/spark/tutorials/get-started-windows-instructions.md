@@ -70,7 +70,7 @@ For detailed instructions, you can see [Building .NET for Apache Spark from Sour
     {"name":"Justin", "age":19}
     ```
     
-- Run your app
+1. Run your app
 
     ```
     spark-submit `

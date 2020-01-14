@@ -1,5 +1,5 @@
 ---
-title: Get Started with .NET for Apache Spark on MacOSX
+title: Get started with .NET for Apache Spark on macOS
 description: Discover how to run a .NET for Apache Spark app using .NET Core on MacOSX.
 ms.date: 12/30/2019
 ms.topic: tutorial

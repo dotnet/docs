@@ -28,7 +28,7 @@ For detailed instructions, you can see [Building .NET for Apache Spark from Sour
 
 ## Authoring a .NET for Apache Spark App
 
-- Use the `dotnet` CLI to create a console application.
+1. Use the .NET Core CLI to create a console application.
 
    ```shell
    dotnet new console -o HelloSpark

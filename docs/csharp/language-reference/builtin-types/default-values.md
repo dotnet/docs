@@ -1,5 +1,6 @@
 ---
 title: "Default values of C# types - C# reference"
+description: "Learn the default values of C# types such as bool, char, int, float, double and more."
 ms.date: 12/18/2019
 helpviewer_keywords: 
   - "default [C#]"

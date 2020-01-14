@@ -84,7 +84,7 @@ This tutorial will show you how to run a .NET for Apache Spark app using .NET Co
     cd <your-app-output-directory>
     ```
     
-- Create `people.json` with the following content:
+1. Create *people.json* with the following content:
     
     ```json
     { "name" : "Michael" }

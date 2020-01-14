@@ -17,7 +17,7 @@ This tutorial shows you how to run a .NET for Apache Spark app using .NET Core o
 > * Write a simple .NET for Apache Spark application
 > * Build and run a .NET for Apache Spark application
 
-## Pre-requisites
+## Prerequisites
 
 - Download and install **[.NET Core 2.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/2.1)** 
 - Install **[Java 8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)** 

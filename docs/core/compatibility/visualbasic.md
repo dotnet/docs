@@ -10,7 +10,7 @@ The following is a list of breaking changes in Visual Basic:
 - [Types in Microsoft.VisualBasic.ApplicationServices namespace not available](#types-in-microsoftvisualbasicapplicationservices-namespace-not-available)
 - [Types in Microsoft.VisualBasic.Devices namespace not available](#types-in-microsoftvisualbasicdevices-namespace-not-available)
 - [Types in Microsoft.VisualBasic.MyServices namespace not available](#types-in-microsoftvisualbasicmyservices-namespace-not-available)
-- [vbNewLine is obsolete](#microsoftvisualbasicconstantsvbnewline-is-obsolete)
+- [Microsoft.VisualBasic.Constants.vbNewLine is obsolete](#microsoftvisualbasicconstantsvbnewline-is-obsolete)
 
 ## .NET Core 3.0 Preview 9
 

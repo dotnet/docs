@@ -119,7 +119,7 @@ This tutorial shows you how to run a .NET for Apache Spark app using .NET Core o
    
 ## Next steps
 
-In this tutorial, you learn how to run your .NET for Apache Spark on MacOSX. Continue to learn more about how to run your .NET for Apache Spark on Windows and Ubuntu.
+In this tutorial, you learned how to run your .NET for Apache Spark on macOS. Continue to learn more about how to run your .NET for Apache Spark on Windows and Ubuntu.
 > [!div class="nextstepaction"]
 
 > [!div class="nextstepaction"]

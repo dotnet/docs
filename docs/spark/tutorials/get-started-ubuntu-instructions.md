@@ -30,7 +30,7 @@ For detailed instructions, you can see [Building .NET for Apache Spark from Sour
 
 1. Use the .NET Core CLI to create a console application.
 
-   ```shell
+   ```dotnetcli
    dotnet new console -o HelloSpark
    ```
 

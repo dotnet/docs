@@ -76,7 +76,7 @@ This tutorial shows you how to run a .NET for Apache Spark app using .NET Core o
     dotnet build
     ```
 
-## Running your .NET for Apache Spark App
+## Run your .NET for Apache Spark app
 
 1. Open your terminal and navigate into your app folder:
     

@@ -1,5 +1,9 @@
 #! /usr/bin/env bash
 
+# This script is a helper for generating a new, templated doc entry.
+# It can be invoked like: `./new-message <4-digit error number> "title of new error page"`
+# It ensures some title, date, and SEO keywords are in place for the new file.
+
 set +eux
 
 function usage () {

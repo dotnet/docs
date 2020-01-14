@@ -9,7 +9,7 @@ ms.custom: mvc
 
 # Tutorial: Get started with .NET for Apache Spark on macOS
 
-This tutorial will show you how to run a .NET for Apache Spark app using .NET Core on macOS.
+This tutorial shows you how to run a .NET for Apache Spark app using .NET Core on macOS.
 
 > [!div class="checklist"]
 >

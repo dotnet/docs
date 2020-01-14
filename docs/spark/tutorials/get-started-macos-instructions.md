@@ -40,7 +40,7 @@ This tutorial will show you how to run a .NET for Apache Spark app using .NET Co
 
 - Use the `dotnet` CLI to create a console application.
 
-    ```
+    ```dotnetcli
     dotnet new console -o HelloSpark
     ```
     

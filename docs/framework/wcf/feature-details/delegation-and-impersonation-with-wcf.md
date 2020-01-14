@@ -195,7 +195,6 @@ sh.Credentials.ClientCertificate.Authentication.MapClientCertificateToWindowsAcc
   
  For more detailed instructions about configuring constrained delegation, see [Kerberos Protocol Transition and Constrained Delegation](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc739587(v=ws.10)).
   
-  
 ## See also
 
 - <xref:System.ServiceModel.OperationBehaviorAttribute>

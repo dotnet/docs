@@ -1,5 +1,5 @@
 ---
-title: "Reference (Visual Basic)"
+title: "Reference"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "language reference"
@@ -29,5 +29,5 @@ This section provides links to reference information about various aspects of Vi
  [XML Tools in Visual Studio](/visualstudio/xml-tools/xml-tools-in-visual-studio)  
  Provides links to topics on various XML tools available in Visual Studio.  
   
- [Automation and Extensibility Reference](/visualstudio/extensibility/extensibility-in-visual-studio)  
+ [Automation and Extensibility Reference](/visualstudio/extensibility/extensibility-in-visual-studio?view=vs-2015)  
  Provides links to topics covering automation and extensibility in Visual Studio, for both shared and language-specific components.

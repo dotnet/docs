@@ -1,6 +1,5 @@
 ---
 title: "Constructors - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 05/05/2017
 helpviewer_keywords: 
   - "constructors [C#]"
@@ -49,7 +48,7 @@ For more information and examples, see [Static Constructors](./static-constructo
   
  [Static Constructors](./static-constructors.md)  
   
- [How to: Write a Copy Constructor](./how-to-write-a-copy-constructor.md)  
+ [How to write a copy constructor](./how-to-write-a-copy-constructor.md)  
   
 ## See also
 
@@ -57,4 +56,4 @@ For more information and examples, see [Static Constructors](./static-constructo
 - [Classes and Structs](./index.md)
 - [Finalizers](./destructors.md)
 - [static](../../language-reference/keywords/static.md)
-- [Why Do Initializers Run In The Opposite Order As Constructors? Part One](https://blogs.msdn.microsoft.com/ericlippert/2008/02/15/why-do-initializers-run-in-the-opposite-order-as-constructors-part-one)
+- [Why Do Initializers Run In The Opposite Order As Constructors? Part One](https://docs.microsoft.com/archive/blogs/ericlippert/why-do-initializers-run-in-the-opposite-order-as-constructors-part-one)

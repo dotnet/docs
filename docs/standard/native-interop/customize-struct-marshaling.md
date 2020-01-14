@@ -1,8 +1,6 @@
 ---
 title: Customizing structure marshaling - .NET
 description: Learn how to customize how .NET marshals your structures to a native representation.
-author: jkoritzinsky
-ms.author: jekoritz
 ms.date: 01/18/2019
 dev_langs:
   - "csharp"
@@ -21,7 +19,7 @@ Sometimes the default marshaling rules for structures aren't exactly what you ne
 
 **✔️ DO** only use `LayoutKind.Explicit` in marshaling when your native struct is also has an explicit layout, such as a union.
 
-**❌ AVOID** using `LayoutKind.Explicit` when marshaling structures on non-Windows platforms. The .NET Core runtime doesn't support passing explicit structures by value to native functions on Intel or AMD 64-bit non-Windows systems. However, the runtime supports passing explicit structures by reference on all platforms.
+**❌ AVOID** using `LayoutKind.Explicit` when marshaling structures on non-Windows platforms if you need to target runtimes before .NET Core 3.0. The .NET Core runtime before 3.0 doesn't support passing explicit structures by value to native functions on Intel or AMD 64-bit non-Windows systems. However, the runtime supports passing explicit structures by reference on all platforms.
 
 ## Customizing boolean field marshaling
 

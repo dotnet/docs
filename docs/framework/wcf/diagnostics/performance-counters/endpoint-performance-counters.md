@@ -15,4 +15,4 @@ Endpoint performance counters capture data that reveals how an endpoint is accep
   
 ## See also
 
-- [Performance Counters](../../../../../docs/framework/wcf/diagnostics/performance-counters/index.md)
+- [Performance Counters](index.md)

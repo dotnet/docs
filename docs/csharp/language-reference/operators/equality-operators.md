@@ -33,9 +33,9 @@ Operands of the [built-in value types](../keywords/value-types-table.md) are equ
 > [!NOTE]
 > For the `==`, [`<`, `>`, `<=`, and `>=`](comparison-operators.md) operators, if any of the operands is not a number (<xref:System.Double.NaN?displayProperty=nameWithType> or <xref:System.Single.NaN?displayProperty=nameWithType>), the result of operation is `false`. That means that the `NaN` value is neither greater than, less than, nor equal to any other `double` (or `float`) value, including `NaN`. For more information and examples, see the <xref:System.Double.NaN?displayProperty=nameWithType> or <xref:System.Single.NaN?displayProperty=nameWithType> reference article.
 
-Two operands of the same [enum](../keywords/enum.md) type are equal if the corresponding values of the underlying integral type are equal.
+Two operands of the same [enum](../builtin-types/enum.md) type are equal if the corresponding values of the underlying integral type are equal.
 
-User-defined [struct](../keywords/struct.md) types don't support the `==` operator by default. To support the `==` operator, a user-defined struct must [overload](#operator-overloadability) it.
+User-defined [struct](../keywords/struct.md) types don't support the `==` operator by default. To support the `==` operator, a user-defined struct must [overload](operator-overloading.md) it.
 
 Beginning with C# 7.3, the `==` and `!=` operators are supported by C# [tuples](../../tuples.md). For more information, see the [Equality and tuples](../../tuples.md#equality-and-tuples) section of the [C# tuple types](../../tuples.md) article.
 
@@ -49,11 +49,11 @@ As the example shows, user-defined reference types support the `==` operator by 
 
 ### String equality
 
-Two [string](../keywords/string.md) operands are equal when both of them are `null` or both string instances are of the same length and have identical characters in each character position:
+Two [string](../builtin-types/reference-types.md#the-string-type) operands are equal when both of them are `null` or both string instances are of the same length and have identical characters in each character position:
 
 [!code-csharp-interactive[string equality](~/samples/csharp/language-reference/operators/EqualityOperators.cs#StringEquality)]
 
-That is case-sensitive ordinal comparison. For more information about string comparison, see [How to compare strings in C#](../../how-to/compare-strings.md).
+That is a case-sensitive ordinal comparison. For more information about string comparison, see [How to compare strings in C#](../../how-to/compare-strings.md).
 
 ### Delegate equality
 

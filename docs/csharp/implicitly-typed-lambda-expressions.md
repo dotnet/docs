@@ -2,6 +2,7 @@
 title: Implicitly typed lambda expressions
 description: Learn why you can't use an implicitly-typed variable declaration to declare a lambda expression.
 ms.date: 06/20/2016
+ms.technology: csharp-advanced-concepts
 ms.assetid: a3851da9-e018-4389-9922-233db7d0f841
 ---
 
@@ -24,4 +25,4 @@ object on the other side of the assignment operator and see if my type
 matches.
 
 You can get even more details on why the C# language specifies that behavior
-by reading [this article](https://download.microsoft.com/download/5/4/B/54B83DFE-D7AA-4155-9687-B0CF58FF65D7/type-inference.pdf) (PDF Download)
+by reading [this article](https://download.microsoft.com/download/5/4/B/54B83DFE-D7AA-4155-9687-B0CF58FF65D7/type-inference.pdf) (PDF download).

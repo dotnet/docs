@@ -1,6 +1,5 @@
 ---
 title: "<returns> - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
   - "returns"
@@ -24,7 +23,7 @@ ms.assetid: bb2d9958-62fc-47c7-9511-6311171f119f
 ## Remarks  
  The \<returns> tag should be used in the comment for a method declaration to describe the return value.  
   
- Compile with [/doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
+ Compile with [-doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
   
 ## Example  
  [!code-csharp[csProgGuideDocComments#10](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#10)]  

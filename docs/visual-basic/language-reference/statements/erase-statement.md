@@ -1,5 +1,5 @@
 ---
-title: "Erase Statement (Visual Basic)"
+title: "Erase Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Erase"
@@ -13,7 +13,7 @@ Used to release array variables and deallocate the memory used for their element
   
 ## Syntax  
   
-```  
+```vb  
 Erase arraylist  
 ```  
   

@@ -1,13 +1,10 @@
 ---
 title: Types of RPC - gRPC for WCF Developers
 description: A review of the types of Remote Procedure Call supported by WCF and their equivalents in gRPC
-author: markrendle
 ms.date: 09/02/2019
 ---
 
 # Types of RPC
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 As a Windows Communication Foundation (WCF) developer, you're probably used to dealing with the following types of Remote Procedure Call (RPC):
 

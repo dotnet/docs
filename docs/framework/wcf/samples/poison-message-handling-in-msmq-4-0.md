@@ -12,12 +12,12 @@ This sample demonstrates how to perform poison message handling in a service. Th
 
  Based on the version of MSMQ, the NetMsmqBinding supports limited detection to full detection of poison messages. After the message has been detected as poisoned, then it can be handled in several ways. Again, based on the version of MSMQ, the NetMsmqBinding supports limited handling to full handling of poison messages.
 
- This sample illustrates the limited poison facilities provided on [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)] platform and the full poison facilities provided on [!INCLUDE[wv](../../../../includes/wv-md.md)]. In both samples, the objective is move the poison message out of the queue to another queue which then can be serviced by a poison message service.
+ This sample illustrates the limited poison facilities provided on Windows Server 2003 and [!INCLUDE[wxp](../../../../includes/wxp-md.md)] platform and the full poison facilities provided on Windows Vista. In both samples, the objective is move the poison message out of the queue to another queue which then can be serviced by a poison message service.
 
 ## MSMQ v4.0 Poison Handling Sample
- In [!INCLUDE[wv](../../../../includes/wv-md.md)], MSMQ provides a poison sub-queue facility that can be used to store poison messages. This sample demonstrates the best practice of dealing with poison messages using [!INCLUDE[wv](../../../../includes/wv-md.md)].
+ In Windows Vista, MSMQ provides a poison sub-queue facility that can be used to store poison messages. This sample demonstrates the best practice of dealing with poison messages using Windows Vista.
 
- The poison message detection in [!INCLUDE[wv](../../../../includes/wv-md.md)] is quite sophisticated. There are 3 properties that help with detection. The <xref:System.ServiceModel.MsmqBindingBase.ReceiveRetryCount%2A> is number of times a given message is re-read from the queue and dispatched to the application for processing. A message is re-read from the queue when it is put back into the queue because the message cannot be dispatched to the application or the application rolls back the transaction in the service operation. <xref:System.ServiceModel.MsmqBindingBase.MaxRetryCycles%2A> is the number of times the message is moved to the retry queue. When <xref:System.ServiceModel.MsmqBindingBase.ReceiveRetryCount%2A> is reached, the message is moved to the retry queue. The property <xref:System.ServiceModel.MsmqBindingBase.RetryCycleDelay%2A> is the time delay after which the message is moved from the retry queue back to the main queue. The <xref:System.ServiceModel.MsmqBindingBase.ReceiveRetryCount%2A> is reset to 0. The message is tried again. If all attempts to read the message have failed, then the message is marked as poisoned.
+ The poison message detection in Windows Vista is quite sophisticated. There are 3 properties that help with detection. The <xref:System.ServiceModel.MsmqBindingBase.ReceiveRetryCount%2A> is number of times a given message is re-read from the queue and dispatched to the application for processing. A message is re-read from the queue when it is put back into the queue because the message cannot be dispatched to the application or the application rolls back the transaction in the service operation. <xref:System.ServiceModel.MsmqBindingBase.MaxRetryCycles%2A> is the number of times the message is moved to the retry queue. When <xref:System.ServiceModel.MsmqBindingBase.ReceiveRetryCount%2A> is reached, the message is moved to the retry queue. The property <xref:System.ServiceModel.MsmqBindingBase.RetryCycleDelay%2A> is the time delay after which the message is moved from the retry queue back to the main queue. The <xref:System.ServiceModel.MsmqBindingBase.ReceiveRetryCount%2A> is reset to 0. The message is tried again. If all attempts to read the message have failed, then the message is marked as poisoned.
 
  Once the message is marked as poisoned, the message is dealt with according to the settings in the <xref:System.ServiceModel.MsmqBindingBase.ReceiveErrorHandling%2A> enumeration. To reiterate the possible values:
 
@@ -25,9 +25,9 @@ This sample demonstrates how to perform poison message handling in a service. Th
 
 - Drop: To drop the message.
 
-- Move: To move the message to the poison message sub-queue. This value is available only on [!INCLUDE[wv](../../../../includes/wv-md.md)].
+- Move: To move the message to the poison message sub-queue. This value is available only on Windows Vista.
 
-- Reject: To reject the message, sending the message back to the sender's dead-letter queue. This value is available only on [!INCLUDE[wv](../../../../includes/wv-md.md)].
+- Reject: To reject the message, sending the message back to the sender's dead-letter queue. This value is available only on Windows Vista.
 
  The sample demonstrates using the `Move` disposition for the poison message. `Move` causes the message to move to the poison sub-queue.
 
@@ -227,7 +227,7 @@ public class OrderProcessorService : IOrderProcessor
 
  The service starts running, processing orders and at random starts to terminate processing. If the message indicates it has processed the order, you can run the client again to send another message until you see the service has actually terminated a message. Based on the configured poison settings, the message is tried once for processing before moving it to the final poison queue.
 
-```
+```console
 The service is ready.
 Press <ENTER> to terminate service.
 
@@ -252,7 +252,7 @@ Aborting transaction, cannot process purchase order: 23e0b991-fbf9-4438-a0e2-20a
 
  Start up the poison message service to read the poisoned message from the poison queue. In this example, the poison message service reads the message and processes it. You could see that the purchase order that was terminated and poisoned is read by the poison message service.
 
-```
+```console
 The service is ready.
 Press <ENTER> to terminate service.
 
@@ -315,6 +315,6 @@ Processing Purchase Order: 23e0b991-fbf9-4438-a0e2-20adf93a4f89
 >   
 > `<InstallDrive>:\WF_WCF_Samples`  
 >   
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\MSMQ\Poison\MSMQ4`

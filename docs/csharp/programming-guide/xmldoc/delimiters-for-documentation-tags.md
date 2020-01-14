@@ -1,6 +1,5 @@
 ---
 title: "Delimiters for Documentation Tags - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "XML [C#], delimiters"
@@ -76,5 +75,5 @@ The use of XML doc comments requires delimiters, which indicate to the compiler 
 
 - [C# Programming Guide](../index.md)
 - [XML Documentation Comments](./index.md)
-- [/doc (C# Compiler Options)](../../language-reference/compiler-options/doc-compiler-option.md)
+- [-doc (C# Compiler Options)](../../language-reference/compiler-options/doc-compiler-option.md)
 - [XML Documentation Comments](./index.md)

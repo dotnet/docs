@@ -1,5 +1,5 @@
 ---
-title: "Dates and Times Summary (Visual Basic)"
+title: "Dates and Times Summary"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "dates [Visual Basic], Visual Basic data types"

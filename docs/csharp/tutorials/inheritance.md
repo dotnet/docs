@@ -1,9 +1,8 @@
 ---
 title: Inheritance in C#
 description: Learn to use inheritance in C# libraries and applications.
-author: rpetrusha
-ms.author: ronpet
 ms.date: 07/05/2018
+ms.technology: csharp-fundamentals
 ms.assetid: aeb68c74-0ea0-406f-9fbe-2ce02d47ef31
 ---
 # Inheritance in C# and .NET

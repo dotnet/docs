@@ -71,7 +71,7 @@ XAML as implemented in common language runtime (CLR) frameworks supports the abi
   
 - The object that is the collection object does not need to be specified in object element syntax. The presence of that collection type is implicit whenever you specify a property in XAML that takes a collection type.  
   
-- Child elements of the collection property in markup are processed to become members of the collection. Ordinarily, the code access to the members of a collection is performed through list/dictionary methods such as `Add`, or through an indexer. But XAML syntax does not support methods or indexers (exception: XAML 2009 can support methods, but using XAML 2009 restricts the possible WPF usages; see [XAML 2009 Language Features](../../xaml-services/xaml-2009-language-features.md)). Collections are obviously a very common requirement for building a tree of elements, and you need some way to populate these collections in declarative XAML. Therefore, child elements of a collection property are processed by adding them to the collection that is the collection property type value.  
+- Child elements of the collection property in markup are processed to become members of the collection. Ordinarily, the code access to the members of a collection is performed through list/dictionary methods such as `Add`, or through an indexer. But XAML syntax does not support methods or indexers (exception: XAML 2009 can support methods, but using XAML 2009 restricts the possible WPF usages; see [XAML 2009 Language Features](../../../desktop-wpf/xaml-services/xaml-2009-language-features.md)). Collections are obviously a very common requirement for building a tree of elements, and you need some way to populate these collections in declarative XAML. Therefore, child elements of a collection property are processed by adding them to the collection that is the collection property type value.  
   
  The .NET Framework XAML Services implementation and thus the WPF XAML processor uses the following definition for what constitutes a collection property. The property type of the property must implement one of the following:  
   
@@ -79,7 +79,7 @@ XAML as implemented in common language runtime (CLR) frameworks supports the abi
   
 - Implements <xref:System.Collections.IDictionary> or the generic equivalent (<xref:System.Collections.Generic.IDictionary%602>).  
   
-- Derives from <xref:System.Array> (for more information about arrays in XAML, see [x:Array Markup Extension](../../xaml-services/x-array-markup-extension.md).)  
+- Derives from <xref:System.Array> (for more information about arrays in XAML, see [x:Array Markup Extension](../../../desktop-wpf/xaml-services/xarray-markup-extension.md).)  
   
 - Implements <xref:System.Windows.Markup.IAddChild> (an interface defined by [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]).  
   
@@ -106,7 +106,7 @@ XAML as implemented in common language runtime (CLR) frameworks supports the abi
   
 ## See also
 
-- [XAML Overview (WPF)](xaml-overview-wpf.md)
+- [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)
 - [Custom Dependency Properties](custom-dependency-properties.md)
 - [Control Authoring Overview](../controls/control-authoring-overview.md)
 - [Base Elements Overview](base-elements-overview.md)

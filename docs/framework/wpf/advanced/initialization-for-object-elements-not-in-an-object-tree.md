@@ -38,4 +38,4 @@ Some aspects of [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-wi
 
 - [Trees in WPF](trees-in-wpf.md)
 - [WPF Graphics Rendering Overview](../graphics-multimedia/wpf-graphics-rendering-overview.md)
-- [XAML Overview (WPF)](xaml-overview-wpf.md)
+- [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)

@@ -3,6 +3,8 @@
 - name: Overview
   expanded: true
   items:
+  - name: What is Apache Spark?
+    href: what-is-spark.md
   - name: What is .NET for Apache Spark?
     href: what-is-apache-spark-dotnet.md
 - name: Tutorials
@@ -15,10 +17,18 @@
     href: tutorials/amazon-emr-spark-deployment.md
   - name: Deploy to Databricks
     href: tutorials/databricks-deployment.md
+  - name: Batch processing
+    href: tutorials/batch-processing.md
+  - name: Structured streaming
+    href: tutorials/streaming.md
 - name: How-to guides
   items:
   - name: Debug your application
     href: how-to-guides/debug.md
+  - name: Submit jobs to HDInsight
+    href: how-to-guides/hdinsight-deploy-methods.md
+  - name: Submit jobs to Databricks
+    href: how-to-guides/databricks-deploy-methods.md
 - name: Reference
   items:
   - name: API Reference

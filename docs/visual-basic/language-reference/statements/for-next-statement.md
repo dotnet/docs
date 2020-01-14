@@ -1,5 +1,5 @@
 ---
-title: "For...Next Statement (Visual Basic)"
+title: "For...Next Statement"
 ms.date: 07/20/2015
 f1_keywords:
   - "vb.Step"
@@ -30,7 +30,7 @@ Repeats a group of statements a specified number of times.
 
 ## Syntax
 
-```
+```vb
 For counter [ As datatype ] = start To end [ Step step ]
     [ statements ]
     [ Continue For ]

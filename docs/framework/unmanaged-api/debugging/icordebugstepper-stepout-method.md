@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: aae0f48c-4ede-4256-9251-a7fc85a229dc
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugStepper::StepOut Method
 Causes this ICorDebugStepper to single-step through its containing thread, and to complete when the current frame returns control to the calling frame.  

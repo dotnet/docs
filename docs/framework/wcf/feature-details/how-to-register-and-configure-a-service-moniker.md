@@ -61,7 +61,7 @@ Before using the Windows Communication Foundation (WCF) service moniker within a
   
      You can use either of these moniker strings from within a Visual Basic 6.0 application, after adding a reference to the assembly that contains the `IMathService` types, as shown in the following sample code.  
   
-    ```vb  
+    ```vb
     Dim MathProxy As IMathService  
     Dim result As Integer  
   
@@ -81,7 +81,7 @@ Before using the Windows Communication Foundation (WCF) service moniker within a
     > [!NOTE]
     > : If the moniker is malformed or if the service is unavailable, the call to `GetObject` returns an error of "Invalid Syntax". If you receive this error, make sure the moniker you are using is correct and the service is available.  
   
-     Although this topic focuses on using the service moniker from VB 6.0 code, you can use a service moniker from other languages. When using a moniker from C++ code the Svcutil.exe generated assembly should be imported with "no_namespace named_guids raw_interfaces_only" as shown in the following code.  
+     Although this topic focuses on using the service moniker from Visual Basic 6.0 code, you can use a service moniker from other languages. When using a moniker from C++ code the Svcutil.exe generated assembly should be imported with "no_namespace named_guids raw_interfaces_only" as shown in the following code.  
   
     ```cpp
     #import "ComTestProxy.tlb" no_namespace named_guids  

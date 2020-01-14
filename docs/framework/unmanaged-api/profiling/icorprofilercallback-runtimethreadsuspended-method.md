@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: de830a8b-6ee1-4900-ace3-4237108f6b12
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::RuntimeThreadSuspended Method
 Notifies the profiler that the specified thread has been suspended or is about to be suspended.  

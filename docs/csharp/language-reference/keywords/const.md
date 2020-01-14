@@ -1,7 +1,5 @@
 ---
 title: "const keyword - C# Reference"
-ms.custom: seodec18
-
 ms.date: 07/20/2015
 f1_keywords: 
   - "const_CSharpKeyword"
@@ -63,5 +61,5 @@ This example demonstrates how to use constants as local variables.
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](./index.md)
-- [Modifiers](./modifiers.md)
+- [Modifiers](index.md)
 - [readonly](./readonly.md)

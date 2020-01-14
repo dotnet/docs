@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 3d705463-e640-4249-8036-4e8206d03cfe
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEval2::NewParameterizedObject Method
 Instantiates a new parameterized type object and calls the object's constructor method.  

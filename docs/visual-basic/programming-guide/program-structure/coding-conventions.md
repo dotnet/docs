@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic Coding Conventions"
+title: "Coding Conventions"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "coding conventions [Visual Basic], Visual Basic"
@@ -40,7 +40,7 @@ Microsoft develops samples and documentation that follow the guidelines in this 
   
 - If **Pretty listing (reformatting) of code** doesn't format continuation lines automatically, manually indent continuation lines one tab stop. However, always left-align items in a list.  
   
-    ```  
+    ```vb  
     a As Integer,  
     b As Integer  
     ```  

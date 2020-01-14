@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: cccb650f-abe0-41e2-9fd1-b383788eb1f6
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostAssemblyStore Interface
 Provides methods that allow a host to load assemblies and modules independently of the common language runtime (CLR).  

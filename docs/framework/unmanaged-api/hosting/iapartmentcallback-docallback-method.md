@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 8edad30c-30ff-4bee-813c-75525a82fc93
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IApartmentCallback::DoCallback Method
 Executes the specified function within an apartment.  

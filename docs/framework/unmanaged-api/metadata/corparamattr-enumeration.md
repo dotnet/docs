@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: a7ff90ad-dad8-48e8-917d-4aa9a118cbc8
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorParamAttr Enumeration
 Contains values that describe the metadata of a method parameter.  

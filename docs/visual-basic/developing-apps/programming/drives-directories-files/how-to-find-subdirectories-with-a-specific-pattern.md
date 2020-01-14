@@ -1,5 +1,5 @@
 ---
-title: "How to: Find Subdirectories with a Specific Pattern in Visual Basic"
+title: "How to: Find Subdirectories with a Specific Pattern"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "pattern matching"

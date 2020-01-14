@@ -1,5 +1,5 @@
 ---
-title: "Yield Statement (Visual Basic)"
+title: "Yield Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Yield"
@@ -14,7 +14,7 @@ Sends the next element of a collection to a `For Each...Next` statement.
   
 ## Syntax  
   
-```  
+```vb  
 Yield expression  
 ```  
   

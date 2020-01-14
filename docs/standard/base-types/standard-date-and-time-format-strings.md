@@ -1,5 +1,5 @@
 ---
-title: "Standard Date and Time Format Strings"
+title: "Standard date and time format strings"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs:
@@ -14,12 +14,10 @@ helpviewer_keywords:
   - "formatting [.NET Framework], time"
   - "date and time strings"
 ms.assetid: bb79761a-ca08-44ee-b142-b06b3e2fc22b
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
-# Standard Date and Time Format Strings
+# Standard date and time format strings
 
-A standard date and time format string uses a single format specifier to define the text representation of a date and time value. Any date and time format string that contains more than one character, including white space, is interpreted as a custom date and time format string; for more information, see [Custom Date and Time Format Strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md). A standard or custom format string can be used in two ways:
+A standard date and time format string uses a single format specifier to define the text representation of a date and time value. Any date and time format string that contains more than one character, including white space, is interpreted as a custom date and time format string; for more information, see [Custom date and time format strings](../../../docs/standard/base-types/custom-date-and-time-format-strings.md). A standard or custom format string can be used in two ways:
 
 - To define the string that results from a formatting operation.
 

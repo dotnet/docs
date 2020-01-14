@@ -1,13 +1,10 @@
 ---
 title: Service meshes - gRPC for WCF Developers
 description: Using a service mesh to route and balance requests to gRPC services in a Kubernetes cluster.
-author: markrendle
 ms.date: 09/02/2019
 ---
 
 # Service meshes
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 A service mesh is an infrastructure component that takes control of routing service requests within a network. Service meshes can handle all kinds of network-level concerns within a Kubernetes cluster, including:
 
@@ -19,7 +16,7 @@ A service mesh is an infrastructure component that takes control of routing serv
 
 Kubernetes service meshes work by adding an extra container, called a *sidecar proxy*, to each pod included in the mesh. The proxy takes over handling all inbound and outbound network requests, allowing configuration and management of networking matters to be kept separate from the application containers and, in many cases, without requiring any changes to the application code.
 
-Take the [previous chapter's example](kubernetes.md#testing-the-application), where the gRPC requests from the web application were all routed to a single instance of the gRPC service. This happens because the service's hostname is resolved to an IP address, and that IP address is cached for the lifetime of the `HttpClientHandler` instance. It might be possible to work around this by handling DNS lookups manually or creating multiple clients, but this would complicate the application code considerably without adding any business or customer value.
+Take the [previous chapter's example](kubernetes.md#test-the-application), where the gRPC requests from the web application were all routed to a single instance of the gRPC service. This happens because the service's hostname is resolved to an IP address, and that IP address is cached for the lifetime of the `HttpClientHandler` instance. It might be possible to work around this by handling DNS lookups manually or creating multiple clients, but this would complicate the application code considerably without adding any business or customer value.
 
 Using a service mesh, the requests from the application container are sent to the sidecar proxy, which can distribute them intelligently across all instances of the other service. The mesh can also:
 
@@ -39,9 +36,9 @@ Service meshes only apply to traffic within a cluster. For external clients, see
 
 There are three general-purpose service mesh implementations currently available for use with Kubernetes: Istio, Linkerd, and Consul Connect. All three provide request routing/proxying, traffic encryption, resilience, host-to-host authentication, and traffic control.
 
-Choosing a service mesh depends multiple factors: 
+Choosing a service mesh depends multiple factors:
 
-- The organization's specific requirements around costs, compliance, paid support plans, and so on. 
+- The organization's specific requirements around costs, compliance, paid support plans, and so on.
 - The nature of the cluster, its size, the number of services deployed, and the volume of traffic within the cluster network.
 - Ease of deploying and managing the mesh and using it with services.
 

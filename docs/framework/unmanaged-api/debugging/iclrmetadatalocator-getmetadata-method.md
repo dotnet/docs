@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 704a8893-ac56-43b4-90ea-715f38ccb40e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRMetadataLocator::GetMetadata Method
 Called by the common language runtime (CLR) data access services to retrieve the metadata of an image.  

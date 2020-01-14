@@ -1,33 +1,30 @@
 ---
-title: Kubernetes - gRPC for WCF Developers
+title: Kubernetes - gRPC for WCF developers
 description: Running ASP.NET Core gRPC services in a Kubernetes cluster.
-author: markrendle
 ms.date: 09/02/2019
 ---
 
 # Kubernetes
 
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
-
-Although it's possible to run containers manually on Docker hosts, for reliable production systems it's preferable to use a Container Orchestration Engine to manage multiple instances running across several servers in a cluster. There are various Container Orchestration Engines available, including Kubernetes, Docker Swarm and Apache Mesos. But of these engines, Kubernetes is far and away the most widely used, so it will be the focus of this chapter.
+Although it's possible to run containers manually on Docker hosts, for reliable production systems it's better to use a container orchestration engine to manage multiple instances running across several servers in a cluster. There are various container orchestration engines available, including Kubernetes, Docker Swarm, and Apache Mesos. But of these engines, Kubernetes is far and away the most widely used, so it will be the focus of this chapter.
 
 Kubernetes includes the following functionality:
 
 - **Scheduling** runs containers on multiple nodes within a cluster, ensuring balanced usage of the available resource, keeping containers running if there are outages, and handling rolling updates to new versions of images or new configurations.
 - **Health checks** monitor containers to ensure continued service.
 - **DNS & service discovery** handles routing between services within a cluster.
-- **Ingress** exposes selected services externally, and generally provides load-balancing across instances of those services.
-- **Resource management** attaches external resources such as storage to containers.
+- **Ingress** exposes selected services externally and generally provides load-balancing across instances of those services.
+- **Resource management** attaches external resources like storage to containers.
 
-This chapter will detail how to deploy an ASP.NET Core gRPC service and a website that consumes the service into a Kubernetes cluster. The sample application used is available from on the [RendleLabs/grpc-for-wcf-developers](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/master/KubernetesSample) repository on GitHub,
+This chapter will detail how to deploy an ASP.NET Core gRPC service and a website that consumes the service into a Kubernetes cluster. The sample application used is available in the [dotnet-architecture/grpc-for-wcf-developers](https://github.com/dotnet-architecture/grpc-for-wcf-developers/tree/master/KubernetesSample) repository on GitHub.
 
 ## Kubernetes terminology
 
-Kubernetes uses *desired state configuration*: the API is used to describe objects such as *Pods*, *Deployments* and *Services*, and the *Control Plane* takes care of implementing the desired state across all the *nodes* in a *cluster*. A Kubernetes cluster has a *Master* node that runs the *Kubernetes API*, which can be communicated with programmatically or using the `kubectl` command-line tool. `kubectl` can create and manage objects using command-line arguments, but works best with YAML files that contain declaration data for Kubernetes objects.
+Kubernetes uses *desired state configuration*: the API is used to describe objects like *Pods*, *Deployments*, and *Services*, and the *Control Plane* takes care of implementing the desired state across all the *nodes* in a *cluster*. A Kubernetes cluster has a *Master* node that runs the *Kubernetes API*, which you can communicate with programmatically or by using the `kubectl` command-line tool. `kubectl` can create and manage objects through command-line arguments, but it works best with YAML files that contain declaration data for Kubernetes objects.
 
 ### Kubernetes YAML files
 
-Every Kubernetes YAML file will have at least three top-level properties.
+Every Kubernetes YAML file will have at least three top-level properties:
 
 ```yaml
 apiVersion: v1
@@ -36,39 +33,39 @@ metadata:
   # Object properties
 ```
 
-The `apiVersion` property is used to specify which version (and which API) the file is intended for. The `kind` property specifies the kind of object the YAML represents. The `metadata` property contains object properties such as `name`, `namespace`, or `labels`.
+The `apiVersion` property is used to specify which version (and which API) the file is intended for. The `kind` property specifies the kind of object the YAML represents. The `metadata` property contains object properties like `name`, `namespace`, and `labels`.
 
 Most Kubernetes YAML files will also have a `spec` section that describes the resources and configuration necessary to create the object.
 
 ### Pods
 
-Pods are the basic units of execution in Kubernetes. They can run multiple containers, but are also used to run single containers. The pod also includes any storage resources required by the container(s), and the network IP address.
+Pods are the basic units of execution in Kubernetes. They can run multiple containers, but they're also used to run single containers. The pod also includes any storage resources required by the containers, and the network IP address.
 
 ### Services
 
-Services are meta-objects that describe pods (or sets of pods) and provide a way to access them within the cluster, such as mapping a service name to a set of pod IP addresses using the cluster DNS service.
+Services are meta-objects that describe Pods (or sets of Pods) and provide a way to access them within the cluster, such as mapping a service name to a set of pod IP addresses by using the cluster DNS service.
 
 ### Deployments
 
-Deployments are the *described state* objects for Pods. If you create a Pod manually, when it terminates it won't be restarted. Deployments are used to tell the cluster which pods, and how many replicas of those pods, should be running at the present time.
+Deployments are the *desired state* objects for Pods. If you create a pod manually, it won't be restarted when it terminates. Deployments are used to tell the cluster which Pods, and how many replicas of those Pods, should be running at the present time.
 
 ### Other objects
 
-Pods, Services, and Deployments are just three of the most basic object types. There are dozens of other types of object that are managed by a Kubernetes cluster. For more information, see the [Kubernetes Concepts](https://kubernetes.io/docs/concepts/) documentation.
+Pods, Services, and Deployments are just three of the most basic object types. There are dozens of other object types that are managed by Kubernetes clusters. For more information, see the [Kubernetes Concepts](https://kubernetes.io/docs/concepts/) documentation.
 
 ### Namespaces
 
-Kubernetes clusters are designed to scale to hundreds or thousands of nodes, and run similar numbers of services. To avoid clashes between object names, namespaces are used to group objects together as part of larger applications. Kubernetes own services run in a `default` namespace. All user objects should be created in their own namespaces to avoid potential clashes with default objects or other tenants in the cluster.
+Kubernetes clusters are designed to scale to hundreds or thousands of nodes and to run similar numbers of services. To avoid clashes between object names, namespaces are used to group objects together as part of larger applications. Kubernetes's own services run in a `default` namespace. All user objects should be created in their own namespaces to avoid potential clashes with default objects or other tenants in the cluster.
 
 ## Get started with Kubernetes
 
-If you're running Docker Desktop for Windows or macOS, Kubernetes is already available. Just enable it in the Kubernetes section of the Settings window.
+If you're running Docker Desktop for Windows or Docker Desktop for Mac, Kubernetes is already available. Just enable it in the **Kubernetes** section of the **Settings** window:
 
 ![Enable Kubernetes in Docker Desktop](media/kubernetes/enable-kubernetes-docker-desktop.png)
 
-To run a local Kubernetes cluster in Linux, look at [minikube](https://github.com/kubernetes/minikube), or [MicroK8s](https://microk8s.io/) if your Linux distribution supports [snaps](https://snapcraft.io/).
+To run a local Kubernetes cluster on Linux, consider [minikube](https://github.com/kubernetes/minikube), or [MicroK8s](https://microk8s.io/) if your Linux distribution supports [snaps](https://snapcraft.io/).
 
-To check that your cluster is running and accessible, run the `kubectl version` command.
+To confirm that your cluster is running and accessible, run the `kubectl version` command:
 
 ```console
 kubectl version
@@ -80,19 +77,19 @@ In this example, both the `kubectl` CLI and the Kubernetes server are running ve
 
 ## Run services on Kubernetes
 
-The sample application has a `kube` directory containing three YAML files. The `namespace.yml` file declares a custom namespace, `stocks`. The `stockdata.yml` file declares the Deployment and the Service for the gRPC application, and the `stockweb.yml` file declares the Deployment and Service for an ASP.NET Core 3.0 MVC web application that consumes the gRPC service.
+The sample application has a `kube` directory that contains three YAML files. The `namespace.yml` file declares a custom namespace: `stocks`. The `stockdata.yml` file declares the Deployment and the Service for the gRPC application, and the `stockweb.yml` file declares the Deployment and Service for an ASP.NET Core 3.0 MVC web application that consumes the gRPC service.
 
-To use a `YAML` file with `kubectl`, use the `apply -f` command.
+To use a `YAML` file with `kubectl`, run the `apply -f` command:
 
 ```console
 kubectl apply -f object.yml
 ```
 
-The `apply` command will check the validity of the YAML file and display any errors received from the API, but doesn't wait until all the objects declared in the file have been created as this can take some time. Use the `kubectl get` command with the relevant object types to check on object creation in the cluster.
+The `apply` command will check the validity of the YAML file and display any errors received from the API, but doesn't wait until all the objects declared in the file have been created because this can take some time. Use the `kubectl get` command with the relevant object types to check on object creation in the cluster.
 
 ### The namespace declaration
 
-Namespace declaration is simple and requires only assigning a `name`.
+Namespace declaration is simple and requires only assigning a `name`:
 
 ```yaml
 apiVersion: v1
@@ -101,7 +98,7 @@ metadata:
   name: stocks
 ```
 
-Use `kubectl` to apply the `namespace.yml` file and check the namespace is created successfully.
+Use `kubectl` to apply the `namespace.yml` file and to confirm the namespace is created successfully:
 
 ```console
 > kubectl apply -f namespace.yml
@@ -118,7 +115,7 @@ The `stockdata.yml` file declares two objects: a Deployment and a Service.
 
 #### The StockData Deployment
 
-The Deployment part provides the `spec` for the deployment itself, including the number of replicas required, and a `template` for the Pod objects to be created and managed by the deployment. Note that Deployment objects are managed with the `apps` API, as specified in `apiVersion`, rather than the main Kubernetes API.
+The Deployment part of the YAML file provides the `spec` for the deployment itself, including the number of replicas required, and a `template` for the Pod objects to be created and managed by the deployment. Note that Deployment objects are managed by the `apps` API, as specified in `apiVersion`, rather than the main Kubernetes API.
 
 ```yaml
 apiVersion: apps/v1
@@ -150,17 +147,17 @@ spec:
 
 The `spec.selector` property is used to match running Pods to the Deployment. The Pod's `metadata.labels` property must match the `matchLabels` property or the API call will fail.
 
-The `template.spec` section declares the container to be run. When working with a local Kubernetes cluster, such as the one provided by Docker Desktop, you can specify images that were built locally as long as they have a version tag.
+The `template.spec` section declares the container to be run. When you're working with a local Kubernetes cluster, such as the one provided by Docker Desktop, you can specify images that were built locally as long as they have a version tag.
 
 > [!IMPORTANT]
 > By default, Kubernetes will always check for and try to pull a new image. If it can't find the image in any of its known repositories, the Pod creation will fail. To work with local images, set the `imagePullPolicy` to `Never`.
 
-The `ports` property specifies which container ports should be published on the Pod.  The `stockservice` image runs the service on the standard HTTP port, so port 80 is published.
+The `ports` property specifies which container ports should be published on the Pod. The `stockservice` image runs the service on the standard HTTP port, so port 80 is published.
 
-The `resources` section applies resource limits to the container running within the pod. This is good practice as it prevents an individual pod from consuming all the available CPU or memory on a node.
+The `resources` section applies resource limits to the container running within the Pod. This is a good practice because it prevents an individual Pod from consuming all the available CPU or memory on a node.
 
 > [!NOTE]
-> ASP.NET Core 3.0 has been optimized and tuned to run in resource-limited containers, and the `dotnet/core/aspnet` Docker image sets an environment variable to tell the `dotnet` runtime that it's in a container.
+> ASP.NET Core 3.0 has been optimized and tuned to run in resource-limited containers. The `dotnet/core/aspnet` Docker image sets an environment variable to tell the `dotnet` runtime that it's in a container.
 
 #### The StockData Service
 
@@ -179,11 +176,11 @@ spec:
     run: stockdata
 ```
 
-The Service spec uses the `selector` property to match running `Pods`, in this case looking for Pods with a label `run: stockdata`. The specified `port` on matching Pods are published by the named service. Other Pods running in the `stocks` namespace can access HTTP on this service using `http://stockdata` as the address. Pods running in other namespaces can use the `http://stockdata.stocks` hostname. You can control cross-namespace service access using [Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/).
+The Service `spec` uses the `selector` property to match running `Pods`, in this case looking for Pods that have a label `run: stockdata`. The specified `port` on matching Pods is published by the named service. Other Pods running in the `stocks` namespace can access HTTP on this service by using `http://stockdata` as the address. Pods running in other namespaces can use the `http://stockdata.stocks` host name. You can control cross-namespace service access by using [Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/).
 
 #### Deploy the StockData application
 
-Use `kubectl` to apply the `stockdata.yml` file and check that the Deployment and Service were created.
+Use `kubectl` to apply the `stockdata.yml` file and confirm that the Deployment and Service were created:
 
 ```console
 > kubectl apply -f .\stockdata.yml
@@ -252,31 +249,31 @@ spec:
 
 #### Environment variables
 
-The `env` section of the Deployment object specifies environment variables to be set in the container running the `stockweb:1.0.0` images.
+The `env` section of the Deployment object specifies environment variables to be set in the container that's running the `stockweb:1.0.0` images.
 
 The **`StockData__Address`** environment variable will map to the `StockData:Address` configuration setting thanks to the EnvironmentVariables configuration provider. This setting uses double underscores between names to separate sections. The address uses the service name of the `stockdata` Service, which is running in the same Kubernetes namespace.
 
-The **`DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2UNENCRYPTEDSUPPORT`** environment variable sets an <xref:System.AppContext> switch that enables unencrypted HTTP/2 connections for <xref:System.Net.Http.HttpClient>. This environment variable is the equivalent of setting the switch in code as shown here.
+The **`DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2UNENCRYPTEDSUPPORT`** environment variable sets an <xref:System.AppContext> switch that enables unencrypted HTTP/2 connections for <xref:System.Net.Http.HttpClient>. This environment variable does the same thing as setting the switch in code, as shown here:
 
 ```csharp
 AppContext.SetSwitch("System.Net.Http.SocketsHttpHandler.Http2UnencryptedSupport", true);
 ```
 
-Using an environment variable for the switch means the setting can easily be changed depending on the context in which the application is running.
+If you use an environment variable for the switch, you can easily change the context depending on the context in which the application is running.
 
 #### Service types
 
-To make the Web application accessible from outside the cluster, the `type: NodePort` property is used. This property type causes Kubernetes to publish port 80 on the Service to an arbitrary port on the cluster's external network sockets. The port assigned can be found using the `kubectl get service` command.
+The `type: NodePort` property is used to make the web application accessible from outside the cluster. This property type causes Kubernetes to publish port 80 on the Service to an arbitrary port on the cluster's external network sockets. You can find the assigned port by using the `kubectl get service` command.
 
-The `stockdata` service shouldn't be accessible from outside the cluster, so it used the default type, `ClusterIP`.
+The `stockdata` Service shouldn't be accessible from outside the cluster, so it uses the default type, `ClusterIP`.
 
-Production systems will most likely use an integrated load-balancer to expose public applications to external consumers. Services exposed in this way should use the `LoadBalancer` type.
+Production systems will most likely use an integrated load balancer to expose public applications to external consumers. Services exposed in this way should use the `LoadBalancer` type.
 
-For more information on service types, see the [Kubernetes' Publishing Services](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types) documentation.
+For more information on Service types, see the [Kubernetes Publishing Services](https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types) documentation.
 
 #### Deploy the StockWeb application
 
-Use `kubectl` to apply the `stockweb.yml` file and check that the Deployment and Service were created.
+Use `kubectl` to apply the `stockweb.yml` file and confirm that the Deployment and Service were created:
 
 ```console
 > kubectl apply -f .\stockweb.yml
@@ -292,23 +289,23 @@ NAME       TYPE       CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
 stockweb   NodePort   10.106.141.5   <none>        80:32564/TCP   13s
 ```
 
-The output from the `get service` command shows that the HTTP port has been published to port `32564` on the external network; for Docker Desktop, this will be localhost. The application can be accessed by browsing to `http://localhost:32564`.
+The output of the `get service` command shows that the HTTP port has been published to port 32564 on the external network. For Docker Desktop, this will be localhost. You can access the application by browsing to `http://localhost:32564`.
 
-### Testing the application
+### Test the application
 
-The StockWeb application displays a list of NASDAQ stocks that are retrieved from a simple request-reply service. For demonstration purposes, each line also shows the unique ID of the service instance that returned it.
+The StockWeb application displays a list of NASDAQ stocks that are retrieved from a simple request-reply service. For this demonstration, each line also shows the unique ID of the Service instance that returned it.
 
 ![StockWeb screenshot](media/kubernetes/stockweb-screenshot.png)
 
-If the number of replicas of the `stockdata` service were increased, you might expect the **Server** value to change from line to line, but in fact all 100 records are always returned from the same instance. If you refresh the page every few seconds, the server ID remains the same. Why does this happen? There are two factors at play here.
+If the number of replicas of the `stockdata` Service were increased, you might expect the **Server** value to change from line to line, but in fact all 100 records are always returned from the same instance. If you refresh the page every few seconds, the server ID remains the same. Why does this happen? There are two factors at play here.
 
-First, the Kubernetes service discovery system uses "round-robin" load-balancing by default. The first time the DNS server is queried, it will return the first matching IP address for the service. The next time, the next IP address in the list, and so on, until the end, at which point it loops back to the start.
+First, the Kubernetes Service discovery system uses round-robin load balancing by default. The first time the DNS server is queried, it will return the first matching IP address for the Service. The next time, it will return the next IP address in the list, and so on, until the end. At that point it loops back to the start.
 
-Second, the `HttpClient` used for the StockWeb application's gRPC client is created and managed by the [ASP.NET Core HttpClientFactory](../microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests.md), and a single instance of this client is used for every call to the page. The client only does one DNS lookup, so all requests are routed to the same IP address. Furthermore, because the `HttpClientHandler` is cached for performance reasons, multiple requests in quick succession will *all* use the same IP address, until the cached DNS entry expires or the handler instance is disposed for some reason.
+Second, the `HttpClient` used for the StockWeb application's gRPC client is created and managed by the [ASP.NET Core HttpClientFactory](../microservices/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests.md), and a single instance of this client is used for every call to the page. The client only does one DNS lookup, so all requests are routed to the same IP address. And because the `HttpClientHandler` is cached for performance reasons, multiple requests in quick succession will *all* use the same IP address, until the cached DNS entry expires or the handler instance is disposed for some reason.
 
-This means that by default requests to a gRPC service aren't balanced across all instances of that service in the cluster. Different consumers will use different instances, but that doesn't guarantee a good distribution of requests and a balanced use of resources.
+The result is that by default requests to a gRPC Service aren't balanced across all instances of that Service in the cluster. Different consumers will use different instances, but that doesn't guarantee a good distribution of requests or a balanced use of resources.
 
-The next chapter, [Service Meshes](service-mesh.md), will look at how to address this problem.
+The next chapter, [Service meshes](service-mesh.md), will address this problem.
 
 >[!div class="step-by-step"]
 >[Previous](docker.md)

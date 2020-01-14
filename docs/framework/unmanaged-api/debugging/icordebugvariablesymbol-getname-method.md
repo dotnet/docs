@@ -2,8 +2,6 @@
 title: "ICorDebugVariableSymbol::GetName Method"
 ms.date: "03/30/2017"
 ms.assetid: c922b7d4-44e5-45e4-aef3-cc9c35a0be80
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugVariableSymbol::GetName Method
 Gets the name of a variable.  

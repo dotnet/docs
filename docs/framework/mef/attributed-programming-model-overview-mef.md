@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "MEF, attributed programming model"
   - "attributed programming model [MEF]"
 ms.assetid: 49b787ff-2741-4836-ad51-c3017dc592d4
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # Attributed Programming Model Overview (MEF)
@@ -786,7 +784,7 @@ public class MyAttribute : ExportAttribute
 }
 ```
 
-This class defines a custom attribute named `MyAttribute` with contract type `IMyData` and some metadata named `MyMetadata`. All properties in a class marked with the `MetadataAttribute` attribute are considered to be metadata defined in the custom attribute. The following two declarations are equivalent.
+This class defines a custom attribute named `MyAttribute` with contract type `IMyAddin` and some metadata named `MyMetadata`. All properties in a class marked with the `MetadataAttribute` attribute are considered to be metadata defined in the custom attribute. The following two declarations are equivalent.
 
 ```vb
 <Export(GetType(IMyAddin))>

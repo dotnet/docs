@@ -5,11 +5,11 @@ ms.date: 10/08/2018
 ---
 # Use enumeration classes instead of enum types
 
-[Enumerations](../../../csharp/language-reference/keywords/enum.md) (or *enum types* for short) are a thin language wrapper around an integral type. You might want to limit their use to when you are storing one value from a closed set of values. Classification based on sizes (small, medium, large) is a good example. Using enums for control flow or more robust abstractions can be a [code smell](https://deviq.com/code-smells/). This type of usage leads to fragile code with many control flow statements checking values of the enum.
+[Enumerations](../../../csharp/language-reference/builtin-types/enum.md) (or *enum types* for short) are a thin language wrapper around an integral type. You might want to limit their use to when you are storing one value from a closed set of values. Classification based on sizes (small, medium, large) is a good example. Using enums for control flow or more robust abstractions can be a [code smell](https://deviq.com/code-smells/). This type of usage leads to fragile code with many control flow statements checking values of the enum.
 
 Instead, you can create Enumeration classes that enable all the rich features of an object-oriented language.
 
-However, this isn't a critical topic and in many cases, for simplicity, you can still use regular [enum types](../../../csharp/language-reference/keywords/enum.md) if that's your preference. Anyway, the use of enumeration classes is more related to business-related concepts.
+However, this isn't a critical topic and in many cases, for simplicity, you can still use regular [enum types](../../../csharp/language-reference/builtin-types/enum.md) if that's your preference. Anyway, the use of enumeration classes is more related to business-related concepts.
 
 ## Implement an Enumeration base class
 
@@ -22,28 +22,28 @@ public abstract class Enumeration : IComparable
 
     public int Id { get; private set; }
 
-    protected Enumeration(int id, string name) 
+    protected Enumeration(int id, string name)
     {
-        Id = id; 
-        Name = name; 
+        Id = id;
+        Name = name;
     }
 
     public override string ToString() => Name;
 
     public static IEnumerable<T> GetAll<T>() where T : Enumeration
     {
-        var fields = typeof(T).GetFields(BindingFlags.Public | 
-                                         BindingFlags.Static | 
-                                         BindingFlags.DeclaredOnly); 
+        var fields = typeof(T).GetFields(BindingFlags.Public |
+                                         BindingFlags.Static |
+                                         BindingFlags.DeclaredOnly);
 
         return fields.Select(f => f.GetValue(null)).Cast<T>();
     }
 
-    public override bool Equals(object obj) 
+    public override bool Equals(object obj)
     {
-        var otherValue = obj as Enumeration; 
+        var otherValue = obj as Enumeration;
 
-        if (otherValue == null) 
+        if (otherValue == null)
             return false;
 
         var typeMatches = GetType().Equals(obj.GetType());
@@ -52,9 +52,9 @@ public abstract class Enumeration : IComparable
         return typeMatches && valueMatches;
     }
 
-    public int CompareTo(object other) => Id.CompareTo(((Enumeration)other).Id); 
+    public int CompareTo(object other) => Id.CompareTo(((Enumeration)other).Id);
 
-    // Other utility methods ... 
+    // Other utility methods ...
 }
 ```
 

@@ -37,7 +37,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
 ## Prerequisites
  In order to complete this walkthrough, you will need:
 
-- Microsoft Visual Studio 2010.
+- Visual Studio 2010.
 
 - A text file that contains a small amount of text. (You will display the contents of the text file in a message box.) The code illustrated in the walkthrough assumes that you are working with the following file:
 
@@ -72,7 +72,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
      The WPF Designer opens in **Design** view and displays the MainWindow.xaml file. Visual Studio creates the **My Project** folder, the Application.xaml file, and the MainWindow.xaml file.
 
 ## Targeting the .NET Framework and Adding a Reference to the Caching Assemblies
- By default, WPF applications target the [!INCLUDE[net_client_v40_long](../../../../includes/net-client-v40-long-md.md)]. To use the <xref:System.Runtime.Caching> namespace in a WPF application, the application must target the .NET Framework 4 (not the [!INCLUDE[net_client_v40_long](../../../../includes/net-client-v40-long-md.md)]) and must include a reference to the namespace.
+ By default, WPF applications target the .NET Framework 4 Client Profile. To use the <xref:System.Runtime.Caching> namespace in a WPF application, the application must target the .NET Framework 4 (not the .NET Framework 4 Client Profile) and must include a reference to the namespace.
 
  Therefore, the next step is to change the .NET Framework target and add a reference to the <xref:System.Runtime.Caching> namespace.
 
@@ -91,7 +91,7 @@ Caching enables you to store data in memory for rapid access. When the data is a
 
      The **Advanced Compiler Settings** dialog box is displayed.
 
-4. In the **Target framework (all configurations)** list, select .NET Framework 4. (Do not select [!INCLUDE[net_client_v40_long](../../../../includes/net-client-v40-long-md.md)].)
+4. In the **Target framework (all configurations)** list, select .NET Framework 4. (Do not select .NET Framework 4 Client Profile.)
 
 5. Click **OK**.
 

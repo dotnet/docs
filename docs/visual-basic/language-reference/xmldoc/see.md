@@ -1,5 +1,5 @@
 ---
-title: "<see> (Visual Basic)"
+title: "<see>"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "see XML tag"
@@ -22,7 +22,7 @@ Specifies a link to another member.
 ## Remarks  
  Use the `<see>` tag to specify a link from within text. Use [\<seealso>](../../../visual-basic/language-reference/xmldoc/seealso.md) to indicate text that you might want to appear in a "See Also" section.  
   
- Compile with [/doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
+ Compile with [-doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
   
 ## Example  
  This example uses the `<see>` tag in the `UpdateRecord` remarks section to refer to the `DoesRecordExist` method.  

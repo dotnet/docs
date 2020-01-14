@@ -1,6 +1,5 @@
 ---
 title: "<typeparamref> - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
   - "typeparamref"
@@ -25,7 +24,7 @@ ms.assetid: 6d8ffc58-12c5-4688-8db6-833a7ded5886
   
  Use this tag to enable consumers of the documentation file to format the word in some distinct way, for example in italics.  
   
- Compile with [/doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
+ Compile with [-doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
   
 ## Example  
  [!code-csharp[csProgGuideDocComments#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#13)]  

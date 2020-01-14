@@ -1,5 +1,5 @@
 ---
-title: "Dim Statement (Visual Basic)"
+title: "Dim Statement"
 ms.date: 05/12/2018
 f1_keywords:
   - "vb.Dim"
@@ -36,7 +36,7 @@ Declares and allocates storage space for one or more variables.
 
 ## Syntax
 
-```
+```vb
 [ <attributelist> ] [ accessmodifier ] [[ Shared ] [ Shadows ] | [ Static ]] [ ReadOnly ]
 Dim [ WithEvents ] variablelist
 ```

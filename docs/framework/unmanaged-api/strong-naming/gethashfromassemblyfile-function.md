@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 751ed69f-b7ab-4e07-80de-e17ca9319b0c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetHashFromAssemblyFile Function
 Gets a hash of the specified assembly file, using the specified hash algorithm.  

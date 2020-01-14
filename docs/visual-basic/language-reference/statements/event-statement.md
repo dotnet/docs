@@ -1,5 +1,5 @@
 ---
-title: "Event Statement (Visual Basic)"
+title: "Event Statement"
 ms.date: 05/12/2018
 f1_keywords: 
   - "vb.Event"
@@ -24,7 +24,7 @@ Declares a user-defined event.
   
 ## Syntax  
   
-```  
+```vb  
 [ <attrlist> ] [ accessmodifier ] _  
 [ Shared ] [ Shadows ] Event eventname[(parameterlist)] _  
 [ Implements implementslist ]  

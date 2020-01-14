@@ -20,7 +20,7 @@ Microsoft is committed to protecting end-users' privacy. When you build an appli
   
  The address component of an endpoint address is a Uniform Resource Identifier (URI) that identifies the endpoint. The address can be a network address or a logical address. The address may include machine name (hostname, fully qualified domain name) and an IP address. The endpoint address may also contain a globally unique identifier (GUID), or a collection of GUIDs for temporary addressing used to discern each address. Each message contains a message ID that is a GUID. This feature follows the WS-Addressing reference standard.  
   
- The WCF messaging layer does not write any personal information to the local machine. However, it might propagate personal information at the network level if a service developer has created a service that exposes such information (for example, by using a person's name in an endpoint name, or including personal information in the endpoint's Web Services Description Language but not requiring clients to use https to access the WSDL). Also, if a developer runs the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) tool against an endpoint that exposes personal information, the tool's output could contain that information, and the output file is written to the local hard disk.  
+ The WCF messaging layer does not write any personal information to the local machine. However, it might propagate personal information at the network level if a service developer has created a service that exposes such information (for example, by using a person's name in an endpoint name, or including personal information in the endpoint's Web Services Description Language but not requiring clients to use https to access the WSDL). Also, if a developer runs the [ServiceModel Metadata Utility Tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md) tool against an endpoint that exposes personal information, the tool's output could contain that information, and the output file is written to the local hard disk.  
   
 ## Hosting  
  The hosting feature in WCF allows applications to start on demand or to enable port sharing between multiple applications. An WCF application can be hosted in Internet Information Services (IIS), similar to ASP.NET.  
@@ -48,7 +48,7 @@ Microsoft is committed to protecting end-users' privacy. When you build an appli
 ## Auditing  
  Auditing records the success and failure of authentication and authorization events. Auditing records contain the following data: service URI, action URI, and the caller's identification.  
   
- Auditing also records when the administrator modifies the configuration of message logging (turning it on or off), because message logging may log application-specific data in headers and bodies. For [!INCLUDE[wxp](../../../includes/wxp-md.md)], a record is logged in the application event log. For [!INCLUDE[wv](../../../includes/wv-md.md)] and [!INCLUDE[ws2003](../../../includes/ws2003-md.md)], a record is logged in the security event log.  
+ Auditing also records when the administrator modifies the configuration of message logging (turning it on or off), because message logging may log application-specific data in headers and bodies. For [!INCLUDE[wxp](../../../includes/wxp-md.md)], a record is logged in the application event log. For Windows Vista and Windows Server 2003, a record is logged in the security event log.  
   
 ## Transactions  
  The transactions feature provides transactional services to a WCF application.  
@@ -398,4 +398,4 @@ Microsoft is committed to protecting end-users' privacy. When you build an appli
 ## See also
 
 - [Windows Communication Foundation](index.md)
-- [Security](../../../docs/framework/wcf/feature-details/security.md)
+- [Security](./feature-details/security.md)

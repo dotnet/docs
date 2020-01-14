@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a String from An Array of Char Values (Visual Basic)"
+title: "How to: Create a String from An Array of Char Values"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "examples [Visual Basic], arrays"
@@ -12,7 +12,7 @@ This example creates the string "abcd" from individual characters.
 ## Example  
  [!code-vb[VbVbalrStrings#61](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#61)]  
   
-## Compiling the Code  
+## Compile the code  
  This method has no special requirements.  
   
  The syntax `"a"c`, where a single `c` follows a single character in quotation marks, is used to create a character literal.  

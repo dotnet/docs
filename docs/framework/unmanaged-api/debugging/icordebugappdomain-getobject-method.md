@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 78232e6f-ae18-4cfa-a6cd-e79471cf9d76
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugAppDomain::GetObject Method
 Gets an interface pointer to the common language runtime (CLR) application domain.  

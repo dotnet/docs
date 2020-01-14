@@ -1,5 +1,5 @@
 ---
-title: "How to: Find All Nodes in a Namespace (Visual Basic)"
+title: "How to: Find All Nodes in a Namespace"
 ms.date: 07/20/2015
 ms.assetid: b735d7da-5727-48a3-ab57-a16378adc32e
 ---
@@ -39,7 +39,7 @@ End Module
   
  This code produces the following output:  
   
-```  
+```console  
 Nodes in the http://www.adventure-works.com namespace  
 {http://www.adventure-works.com}Child3  
 {http://www.adventure-works.com}GrandChild2  

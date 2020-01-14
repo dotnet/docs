@@ -1,5 +1,6 @@
 ---
 title: "Framework Design Guidelines"
+titleSuffix: ""
 ms.date: "10/22/2008"
 ms.technology: dotnet-standard
 helpviewer_keywords: 
@@ -7,7 +8,6 @@ helpviewer_keywords:
   - "class library design guidelines [.NET Framework], about"
   - "class library design guidelines [.NET Framework]"
 ms.assetid: 5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b
-author: "KrzysztofCwalina"
 ---
 # Framework Design Guidelines
 This section provides guidelines for designing libraries that extend and interact with the .NET Framework. The goal is to help library designers ensure API consistency and ease of use by providing a unified programming model that is independent of the programming language used for development. We recommend that you follow these design guidelines when developing classes and components that extend the .NET Framework. Inconsistent library design adversely affects developer productivity and discourages adoption.  

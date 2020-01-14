@@ -1,5 +1,5 @@
 ---
-title: "How to: Call an Event Handler in Visual Basic"
+title: "How to: Call an Event Handler"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "Visual Basic code, procedures"

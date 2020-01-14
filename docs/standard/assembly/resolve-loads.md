@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "assemblies [.NET Framework], loading"
   - "application domains, resolving assembly loads"
 ms.assetid: 5099e549-f4fd-49fb-a290-549edd456c6a
-author: "rpetrusha"
-ms.author: "ronpet"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -156,7 +154,6 @@ Process is terminated due to StackOverflowException.
 ```
 
 ```vb
-Imports System
 Imports System.Reflection
 
 Class BadExample

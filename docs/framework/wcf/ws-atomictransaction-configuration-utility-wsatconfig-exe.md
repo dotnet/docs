@@ -8,18 +8,18 @@ The WS-AtomicTransaction Configuration Utility is used to configure basic WS-Ato
   
 ## Syntax  
   
-```  
+```console  
 wsatConfig [Options]  
 ```  
   
 ## Remarks  
- This command line tool can be used to configure basic WS-AT settings in a local machine only. If you have to configure settings on both local and remote machines, you should use the MMC snap-in as described in [Configuring WS-Atomic Transaction Support](../../../docs/framework/wcf/feature-details/configuring-ws-atomic-transaction-support.md).  
+ This command line tool can be used to configure basic WS-AT settings in a local machine only. If you have to configure settings on both local and remote machines, you should use the MMC snap-in as described in [Configuring WS-Atomic Transaction Support](./feature-details/configuring-ws-atomic-transaction-support.md).  
   
  The command line tool can be found in the Windows SDK installation location, specifically,  
   
  %SystemRoot%\Microsoft.Net\Framework\v3.0\Windows Communication Foundation\wsatConfig.exe  
   
- If you are running [!INCLUDE[wxp](../../../includes/wxp-md.md)] or [!INCLUDE[ws2003](../../../includes/ws2003-md.md)], you must download an update before running WsatConfig.exe. For more information about this update, see [Update for Commerce Server 2007 (KB912817)](https://go.microsoft.com/fwlink/?LinkId=95340) and [Availability of Windows XP COM+ Hotfix Rollup Package 13](https://go.microsoft.com/fwlink/?LinkId=95341).  
+ If you are running [!INCLUDE[wxp](../../../includes/wxp-md.md)] or Windows Server 2003, you must download an update before running WsatConfig.exe. For more information about this update, see [Update for Windows Communication Foundation (KB912817)](https://www.microsoft.com/download/details.aspx?id=21520).  
   
  The following table shows the options that can be used with WS-AtomicTransaction Configuration Utility (wsatConfig.exe).  
   
@@ -45,5 +45,5 @@ wsatConfig [Options]
   
 ## See also
 
-- [Using WS-AtomicTransaction](../../../docs/framework/wcf/feature-details/using-ws-atomictransaction.md)
-- [Configuring WS-Atomic Transaction Support](../../../docs/framework/wcf/feature-details/configuring-ws-atomic-transaction-support.md)
+- [Using WS-AtomicTransaction](./feature-details/using-ws-atomictransaction.md)
+- [Configuring WS-Atomic Transaction Support](./feature-details/configuring-ws-atomic-transaction-support.md)

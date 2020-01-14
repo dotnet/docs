@@ -2,7 +2,6 @@
 title: .NET Guide
 description: Learn about .NET.
 author: cartermp
-ms.author: ronpet
 ms.date: 05/02/2017
 ms.technology: dotnet-standard
 ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
@@ -44,7 +43,7 @@ If you're interested in some of the major concepts of .NET, check out:
 * [.NET Architectural Components](components.md)
 * [.NET Standard](net-standard.md)
 * [Native Interoperability](native-interop/index.md)
-* [Garbage Collection](garbagecollection/index.md)
+* [Garbage Collection](garbage-collection/index.md)
 * [Base Types in .NET](base-types/index.md)
 * [Collections](collections/index.md)
 * [Dates, times, and time zones](datetime/index.md)
@@ -52,9 +51,9 @@ If you're interested in some of the major concepts of .NET, check out:
 
 Additionally, check out each language guide to learn about the three major .NET languages:
 
-* [C# Guide](../csharp/index.md)
-* [F# Guide](../fsharp/index.md)
-* [Visual Basic Guide](../visual-basic/index.md)
+* [C# Guide](../csharp/index.yml)
+* [F# Guide](../fsharp/index.yml)
+* [Visual Basic Guide](../visual-basic/index.yml)
 
 ## API Reference
 

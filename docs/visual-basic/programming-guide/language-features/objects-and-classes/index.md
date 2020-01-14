@@ -1,5 +1,5 @@
 ---
-title: "Objects and classes in Visual Basic"
+title: "Objects and classes"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "classes [Visual Basic]"
@@ -233,7 +233,7 @@ In the following example, suppose you want to define a special kind of <xref:Sys
 
 Derived classes inherit members from the class they are based on, allowing you to add complexity as you progress in a class hierarchy. For more information, see [Inheritance Basics](../../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md).
 
-### Compiling the code
+### Compile the code
 
 Be sure the compiler can access the class from which you intend to derive your new class. This might mean fully qualifying its name, as in the preceding example, or identifying its namespace in an [Imports Statement (.NET Namespace and Type)](../../../../visual-basic/language-reference/statements/imports-statement-net-namespace-and-type.md). If the class is in a different project, you might need to add a reference to that project. For more information, see [Managing references in a project](/visualstudio/ide/managing-references-in-a-project).
 

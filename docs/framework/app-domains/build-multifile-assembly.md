@@ -17,8 +17,6 @@ dev_langs:
   - "vb"
   - "cpp"
 ms.assetid: 261c5583-8a76-412d-bda7-9b8ee3b131e5
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Build a multifile assembly
 
@@ -68,8 +66,6 @@ This article explains how to create a multifile assembly and provides code that 
 
    ```vb
    ' Assembly building example in the .NET Framework.
-   Imports System
-
    Namespace myStringer
        Public Class Stringer
            Public Sub StringerMethod()
@@ -140,7 +136,6 @@ This article explains how to create a multifile assembly and provides code that 
    ```
 
    ```vb
-   Imports System
    Imports myStringer
 
    Class MainClientApp

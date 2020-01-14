@@ -1,5 +1,5 @@
 ---
-title: "How to: Retrieve a Collection of Attributes (LINQ to XML) (Visual Basic)"
+title: "How to: Retrieve a Collection of Attributes (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: a07e9645-b45b-403b-b698-f652f904c7d2
 ---
@@ -22,7 +22,7 @@ Next
   
  This code produces the following output:  
   
-```  
+```console  
 ID="1243"  
 Type="int"  
 ConvertableTo="double"  

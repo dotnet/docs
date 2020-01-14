@@ -1,5 +1,5 @@
 ---
-title: "How to: Concatenate Multiple Strings (C# Guide)"
+title: "How to concatenate multiple strings (C# Guide)"
 description: There are multiple ways to concatenate strings in C#. Learn the options and the reasons behind different choices.
 ms.date: 02/20/2018
 helpviewer_keywords: 
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "strings [C#], concatenation"
 ms.assetid: 8e16736f-4096-4f3f-be0f-9d4c3ff63520
 ---
-# How to: Concatenate Multiple Strings (C# Guide)
+# How to concatenate multiple strings (C# Guide)
 
 *Concatenation* is the process of appending one string to the end of another string. You concatenate strings by using the `+` operator. For string literals and string constants, concatenation occurs at compile time; no run-time concatenation occurs. For string variables, concatenation occurs only at run time.
 
@@ -35,7 +35,7 @@ In other cases you may be combining strings in a loop, where you don't know how 
   
 [!code-csharp-interactive[string concatenation using string builder](../../../samples/snippets/csharp/how-to/strings/Concatenate.cs#4)]  
 
-You can read more about the [reasons to choose string concatenation or the `StringBuilder` class](xref:System.Text.StringBuilder#StringAndSB)
+You can read more about the [reasons to choose string concatenation or the `StringBuilder` class](xref:System.Text.StringBuilder#StringAndSB).
 
 Another option to join strings from a collection is to use <xref:System.String.Concat%2A?displayProperty=nameWithType> method. Use <xref:System.String.Join%2A?displayProperty=nameWithType> method if source strings should be separated by a delimeter. The following code combines an array of words using both methods:
 

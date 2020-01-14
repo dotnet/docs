@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "common language runtime, about"
   - "common language runtime, overview"
 ms.assetid: 29848c96-fc36-462d-8072-ba223a40b697
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # Overview of the .NET Framework
@@ -93,4 +91,4 @@ The Windows Forms classes are a comprehensive set of reusable types that vastly 
 - [Development Guide](../development-guide.md)
 - [Tools](../tools/index.md)
 - [.NET samples and tutorials](../../samples-and-tutorials/index.md)
-- [.NET Framework Class Library](https://go.microsoft.com/fwlink/?LinkID=227195)
+- [.NET API browser](../../../api/index.md)

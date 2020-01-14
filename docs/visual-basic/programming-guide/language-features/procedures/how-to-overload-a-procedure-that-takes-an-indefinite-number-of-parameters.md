@@ -1,5 +1,5 @@
 ---
-title: "How to: Overload a Procedure that Takes an Indefinite Number of Parameters (Visual Basic)"
+title: "How to: Overload a Procedure that Takes an Indefinite Number of Parameters"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "procedures [Visual Basic], parameters"
@@ -41,7 +41,7 @@ If a procedure has a [ParamArray](../../../../visual-basic/language-reference/mo
   
  The code in the overloaded versions does not have to test whether the calling code supplied one or more values for the `ParamArray` parameter, or if so, how many. Visual Basic passes control to the version matching the calling argument list.  
   
-## Compiling the Code  
+## Compile the code  
  Because a procedure with a `ParamArray` parameter is equivalent to a set of overloaded versions, you cannot overload such a procedure with a parameter list corresponding to any of these implicit overloads. For more information, see [Considerations in Overloading Procedures](./considerations-in-overloading-procedures.md).  
   
 ## .NET Framework Security  

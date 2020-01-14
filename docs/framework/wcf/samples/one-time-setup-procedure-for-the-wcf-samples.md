@@ -10,13 +10,13 @@ Most of the Windows Communication Foundation (WCF) samples are hosted in Interne
 The **ServiceModelSamples** virtual directory is used for building and running all samples that use an IIS-hosted service. This is the only virtual directory that is required to run the samples. Building a sample will replace any previously deployed service at this virtual directory; only the most recently built sample will be deployed and available in this virtual directory.
 
 > [!NOTE]
-> You must run all commands under a local administrator account. If you are using Windows 7, [!INCLUDE[windowsver](../../../../includes/windowsver-md.md)], or Windows Server 2008 R2, you must also run the command prompt with elevated privileges. To do so, right-click the command prompt icon, and then click **Run as administrator**. All commands in this topic must be run in a command prompt that has the appropriate path settings.  The easiest way to ensure this is by using the Visual Studio Command Prompt. To open this prompt, click **Start**, select **All Programs**, scroll down to **Visual Studio 2010**, select **Visual Studio Tools**, right-click **Visual Studio Command Prompt (2010)**, and then click **Run as administrator**. If you have one of the Visual Studio Express editions installed, this command prompt is not available, and you will have to add "C:\Windows\Microsoft.Net\Framework\v4.0" to the system path.
+> You must run all commands under a local administrator account. If you are using Windows 7, Windows Vista, or Windows Server 2008 R2, you must also run the command prompt with elevated privileges. To do so, right-click the command prompt icon, and then click **Run as administrator**. All commands in this topic must be run in a command prompt that has the appropriate path settings.  The easiest way to ensure this is by using the Visual Studio Command Prompt. To open this prompt, click **Start**, select **All Programs**, scroll down to **Visual Studio 2010**, select **Visual Studio Tools**, right-click **Visual Studio Command Prompt (2010)**, and then click **Run as administrator**. If you have one of the Visual Studio Express editions installed, this command prompt is not available, and you will have to add "C:\Windows\Microsoft.Net\Framework\v4.0" to the system path.
 
 ### One-time setup procedure for WCF samples
 
 1. Ensure that ASP.NET is set up. For more information about how to set up ASP.NET, see [Internet Information Service Hosting Instructions](../../../../docs/framework/wcf/samples/internet-information-service-hosting-instructions.md).
 
-2. Ensure that [!INCLUDE[netfx40_long](../../../../includes/netfx40-long-md.md)] is installed. Search the following directory for v4.0 (or later): **\Windows\Microsoft.NET\Framework**
+2. Ensure that .NET Framework 4 is installed. Search the following directory for v4.0 (or later): **\Windows\Microsoft.NET\Framework**
 
 3. If Visual Studio 2012 is not installed, and your operating system is not Windows Server 2008 SP2 or later, install [Hotfix 251798](https://go.microsoft.com/fwlink/?LinkId=184693).
 
@@ -25,19 +25,19 @@ The **ServiceModelSamples** virtual directory is used for building and running a
     > [!WARNING]
     > If IIS is reinstalled, the following commands will need to be run again.
 
-    ```
+    ```console
     "%WINDIR%\Microsoft.Net\Framework\v4.0.30319\aspnet_regiis" –i –enable
     "%WINDIR%\Microsoft.Net\Framework\v4.0.30319\ServiceModelReg.exe" -r
     ```
 
     > [!WARNING]
-    > Running the command `aspnet_regiis –i –enable` will make the Default App Pool run using [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)], which may produce incompatibility issues for other applications on the same computer.
+    > Running the command `aspnet_regiis –i –enable` will make the Default App Pool run using .NET Framework 4, which may produce incompatibility issues for other applications on the same computer.
 
 5. Follow the [Firewall Instructions](../../../../docs/framework/wcf/samples/firewall-instructions.md) for enabling the ports used by the samples.
 
 6. Check for the following default directory: \<InstallDrive>:**\WF_WCF_Samples**. If the samples were previously installed, this is the default directory.
 
-7. If the samples are not installed, install them from the samples download location for [Visual C#](https://go.microsoft.com/fwlink/?LinkId=190939) or [Visual Basic](https://go.microsoft.com/fwlink/?LinkID=193373).
+7. If the samples are not installed, install them from the samples download location for [C#](https://go.microsoft.com/fwlink/?LinkId=190939).
 
 8. After installing the samples, go to : \<InstallDrive>:**\WF_WCF_Samples\WCF\Setup\\**
 
@@ -57,7 +57,7 @@ The **ServiceModelSamples** virtual directory is used for building and running a
     > [!NOTE]
     > If this step is not completed, all IIS-hosted samples will fail while building. Ensure that you set the permissions correctly, or run both the SDK command prompt and Visual Studio Command Prompt (2012) as Administrator.
 
-11. Create a C:\logs directory on the computer; some samples might be expecting it. Make sure that the appropriate account has write access granted to this folder. For Windows 7, [!INCLUDE[wv](../../../../includes/wv-md.md)], and Windows Server 2008 R2, this account is **Network Service**. For  [!INCLUDE[lserver](../../../../includes/lserver-md.md)], the account is NT Authority\Network Service. For [!INCLUDE[wxp](../../../../includes/wxp-md.md)] and [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)], the account is ASPNET.
+11. Create a C:\logs directory on the computer; some samples might be expecting it. Make sure that the appropriate account has write access granted to this folder. For Windows 7, Windows Vista, and Windows Server 2008 R2, this account is **Network Service**. For  Windows Server 2008, the account is NT Authority\Network Service. For [!INCLUDE[wxp](../../../../includes/wxp-md.md)] and Windows Server 2003, the account is ASPNET.
 
 12. Run the Setupcerttool.bat file. This file is located in the  \<InstallPath>\WF_WCF_Samples\WCF\Setup\  folder.  This script will perform the following tasks:
 

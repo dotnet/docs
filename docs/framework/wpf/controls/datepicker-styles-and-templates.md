@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: c430a657-692f-44bd-a549-2341f92d6115
 ---
 # DatePicker Styles and Templates
-This topic describes the styles and templates for the <xref:System.Windows.Controls.DatePicker> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md).  
+This topic describes the styles and templates for the <xref:System.Windows.Controls.DatePicker> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](../../../desktop-wpf/themes/how-to-create-apply-template.md).  
   
 ## DatePicker Parts  
  The following table lists the named parts for the <xref:System.Windows.Controls.DatePicker> control.  
@@ -76,5 +76,5 @@ This topic describes the styles and templates for the <xref:System.Windows.Contr
 - <xref:System.Windows.Controls.ControlTemplate>
 - [Control Styles and Templates](control-styles-and-templates.md)
 - [Control Customization](control-customization.md)
-- [Styling and Templating](styling-and-templating.md)
-- [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)
+- [Create a template for a control](../../../desktop-wpf/themes/how-to-create-apply-template.md)

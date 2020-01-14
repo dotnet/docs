@@ -1,5 +1,5 @@
 ---
-title: "IsNot Operator (Visual Basic)"
+title: "IsNot Operator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.isnot"
@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 8dd2bcdb-0166-48a2-9094-60dfb448f36c
 ---
 # IsNot Operator (Visual Basic)
+
 Compares two object reference variables.
 
 ## Syntax

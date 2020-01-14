@@ -80,7 +80,7 @@ ms.assetid: f440c23f-fa5d-4d5a-852f-ba61150e6405
   
 <a name="enabling_visual_styles"></a>   
 ## Enabling Visual Styles  
- [!INCLUDE[TLA#tla_winxp](../../../../includes/tlasharptla-winxp-md.md)] visual styles on a [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control may not be enabled. The <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType> method is called in the template for a [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] application. Although this method is not called by default, if you use [!INCLUDE[TLA2#tla_visualstu](../../../../includes/tla2sharptla-visualstu-md.md)] to create a project, you will get [!INCLUDE[TLA#tla_winxp](../../../../includes/tlasharptla-winxp-md.md)] visual styles for controls, if version 6.0 of Comctl32.dll is available. You must call the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A> method before handles are created on the thread. For more information, see [How to: Enable Visual Styles in a Hybrid Application](how-to-enable-visual-styles-in-a-hybrid-application.md).  
+ Microsoft Windows XP visual styles on a [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control may not be enabled. The <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType> method is called in the template for a [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] application. Although this method is not called by default, if you use Visual Studio to create a project, you will get Microsoft Windows XP visual styles for controls, if version 6.0 of Comctl32.dll is available. You must call the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A> method before handles are created on the thread. For more information, see [How to: Enable Visual Styles in a Hybrid Application](how-to-enable-visual-styles-in-a-hybrid-application.md).  
   
 <a name="licensed_controls"></a>   
 ## Licensed Controls  
@@ -90,7 +90,7 @@ ms.assetid: f440c23f-fa5d-4d5a-852f-ba61150e6405
   
 <a name="wpf_designer"></a>   
 ## WPF Designer  
- You can design your WPF content by using the [!INCLUDE[wpfdesigner_current_long](../../../../includes/wpfdesigner-current-long-md.md)]. The following sections list some common problems that can occur when authoring hybrid applications with the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].  
+ You can design your WPF content by using the WPF Designer for Visual Studio. The following sections list some common problems that can occur when authoring hybrid applications with the WPF Designer.  
   
 ### BackColorTransparent is ignored at design time  
  The <xref:System.Windows.Forms.Integration.ElementHost.BackColorTransparent%2A> property might not work as expected at design time.  

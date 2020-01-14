@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: a17b3155-7216-4e16-8c9f-abce21f549e7
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IEnumReferenceIdentity Interface
 Serves as an enumerator for a collection of `IReferenceIdentity` objects.  

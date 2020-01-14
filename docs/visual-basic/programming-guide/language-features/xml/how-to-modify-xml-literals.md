@@ -1,5 +1,5 @@
 ---
-title: "How to: Modify XML Literals (Visual Basic)"
+title: "How to: Modify XML Literals"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "XML axis [Visual Basic], Value"

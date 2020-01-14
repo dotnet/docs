@@ -2,6 +2,7 @@
 title: Write safe and efficient C# code
 description: Recent enhancements to the C# language enable you to write verifiable safe code that the performance previously associated with unsafe code. 
 ms.date: 10/23/2018
+ms.technology: csharp-advanced-concepts
 ms.custom: mvc
 ---
 # Write safe and efficient C# code
@@ -16,9 +17,10 @@ This article focuses on techniques for efficient resource management. One advant
 This article focuses on the following resource management techniques:
 
 - Declare a [`readonly struct`](language-reference/keywords/readonly.md#readonly-struct-example) to express that a type is **immutable** and enables the compiler to save copies when using [`in`](language-reference/keywords/in-parameter-modifier.md) parameters.
+- If a type can't be immutable, declare `struct` members `readonly` to indicate that the member doesn't modify state.
 - Use a [`ref readonly`](language-reference/keywords/ref.md#reference-return-values) return when the return value is a `struct` larger than <xref:System.IntPtr.Size?displayProperty=nameWithType> and the storage lifetime is greater than the method returning the value.
 - When the size of a `readonly struct` is bigger than <xref:System.IntPtr.Size?displayProperty=nameWithType>, you should pass it as an `in` parameter for performance reasons.
-- Never pass a `struct` as an `in` parameter unless it's declared with the `readonly` modifier because it may negatively affect performance and could lead to an obscure behavior.
+- Never pass a `struct` as an `in` parameter unless it's declared with the `readonly` modifier or the method calls only `readonly` members of the struct. Violating this guidance may negatively affect performance and could lead to an obscure behavior.
 - Use a [`ref struct`](language-reference/keywords/ref.md#ref-struct-types), or a `readonly ref struct` such as <xref:System.Span%601> or <xref:System.ReadOnlySpan%601> to work with memory as a sequence of bytes.
 
 These techniques force you to balance two competing goals with regard to **references** and **values**. Variables that are [reference types](programming-guide/types/index.md#reference-types) hold a reference to the location in memory. Variables that are [value types](programming-guide/types/index.md#value-types) directly contain their value. These differences highlight the key differences that are important for managing memory resources. **Value types** are typically copied when passed to a method or returned from a method. This behavior includes copying the value of `this` when calling members of a value type. The cost of the copy is related to the size of the type. **Reference types** are allocated on the managed heap. Each new object requires a new allocation, and subsequently must be reclaimed. Both these operations take time. The reference is copied when a reference type is passed as an argument to a method or returned from a method.
@@ -63,6 +65,51 @@ readonly public struct ReadonlyPoint3D
 
 Follow this recommendation whenever your design intent is to create an immutable value type. Any performance improvements are an added benefit. The `readonly struct` clearly expresses your design intent.
 
+## Declare readonly members when a struct can't be immutable
+
+In C# 8.0 and later, when a struct type is mutable, you should declare members that don't cause mutation to be `readonly`. For example, the following is a mutable variation of the 3D point structure:
+
+```csharp
+public struct Point3D
+{
+    public Point3D(double x, double y, double z)
+    {
+        _x = x;
+        _y = y;
+        _z = z;
+    }
+
+    private double _x;
+    public double X
+    {
+        readonly get => _x;
+        set => _x = value;
+    }
+
+    private double _y;
+    public double Y
+    {
+        readonly get => _y;
+        set => _y = value;
+    }
+
+    private double _z;
+    public double Z
+    {
+        readonly get => _z;
+        set => _z = value;
+    }
+
+    public readonly double Distance => Math.Sqrt(X * X + Y * Y + Z * Z);
+
+    public readonly override string ToString() => $"{X}, {Y}, {Z}";
+}
+```
+
+The preceding sample shows many of the locations where you can apply the `readonly` modifier: methods, properties, and property accessors. If you use auto-implemented properties, the compiler adds the `readonly` modifier to the `get` accessor for read-write properties. The compiler adds the `readonly` modifier to the auto-implemented property declarations for properties with only a `get` accessor.
+
+Adding the `readonly` modifier to members that don't mutate state provides two related benefits. First, the compiler enforces your intent. That member can't mutate the struct's state, nor can it access a member that isn't also marked `readonly`. Second, the compiler won't create defensive copies of `in` parameters when accessing a `readonly` member. The compiler can make this optimization safely because it guarantees that the `struct` is not modified by a `readonly` member.
+
 ## Use `ref readonly return` statements for large structures when possible
 
 You can return values by reference when the value being returned isn't local to the returning method. Returning by reference means that only the reference is copied, not the structure. In the following example, the `Origin` property can't use a `ref` return because the value being returned is a local variable:
@@ -85,7 +132,7 @@ public struct Point3D
 }
 ```
 
-You don't want callers modifying the origin, so you should return the value by `readonly ref`:
+You don't want callers modifying the origin, so you should return the value by `ref readonly`:
 
 ```csharp
 public struct Point3D
@@ -100,7 +147,7 @@ public struct Point3D
 
 Returning `ref readonly` enables you to save copying larger structures and preserve the immutability of your internal data members.
 
-At the call site, callers make the choice to use the `Origin` property as a `readonly ref` or as a value:
+At the call site, callers make the choice to use the `Origin` property as a `ref readonly` or as a value:
 
 [!code-csharp[AssignRefReadonly](../../samples/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#AssignRefReadonly "Assigning a ref readonly")]
 
@@ -224,7 +271,7 @@ The techniques described above explain how to avoid copies by returning referenc
 
 The `Point3D` structure is *not* a readonly struct. There are six different property access calls in the body of this method. On first examination, you may have thought these accesses were safe. After all, a `get` accessor shouldn't modify the state of the object. But there's no language rule that enforces that. It's only a common convention. Any type could implement a `get` accessor that modified the internal state. Without some language guarantee, the compiler must create a temporary copy of the argument before calling any member. The temporary storage is created on the stack, the values of the argument are copied to the temporary storage, and the value is copied to the stack for each member access as the `this` argument. In many situations, these copies harm performance enough that pass-by-value is faster than pass-by-readonly-reference when the argument type isn't a `readonly struct`.
 
-Instead, if the distance calculation uses the immutable struct, `ReadonlyPoint3D`, temporary objects are not needed:
+Instead, if the distance calculation uses the immutable struct, `ReadonlyPoint3D`, temporary objects aren't needed:
 
 [!code-csharp[readonlyInArgument](../../samples/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#ReadOnlyInArgument "Specifying a readonly in argument")]
 
@@ -233,9 +280,9 @@ The compiler generates more efficient code when you call members of a
 is always an `in` parameter passed by reference to the member method. This optimization
 saves copying when you use a `readonly struct` as an `in` argument.
 
-You should not pass a nullable value type as an `in` argument. The <xref:System.Nullable%601> type is not declared as a read-only struct. That means the compiler must generate defensive copies for any nullable value type argument passed to a method using the `in` modifier on the parameter declaration.
+You shouldn't pass a nullable value type as an `in` argument. The <xref:System.Nullable%601> type isn't declared as a read-only struct. That means the compiler must generate defensive copies for any nullable value type argument passed to a method using the `in` modifier on the parameter declaration.
 
-You can see an example program that demonstrates the performance differences using [Benchmark.net](https://www.nuget.org/packages/BenchmarkDotNet/) in our [samples repository](https://github.com/dotnet/samples/tree/master/csharp/safe-efficient-code/benchmark) on GitHub. It compares passing a mutable struct by value and by reference with passing an immutable struct by value and by reference. The use of the immutable struct and pass by reference is fastest.
+You can see an example program that demonstrates the performance differences using [BenchmarkDotNet](https://www.nuget.org/packages/BenchmarkDotNet/) in our [samples repository](https://github.com/dotnet/samples/tree/master/csharp/safe-efficient-code/benchmark) on GitHub. It compares passing a mutable struct by value and by reference with passing an immutable struct by value and by reference. The use of the immutable struct and pass by reference is fastest.
 
 ## Use `ref struct` types to work with blocks or memory on a single stack frame
 

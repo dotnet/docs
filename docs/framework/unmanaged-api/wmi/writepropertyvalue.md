@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "WritePropertyValue function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # WritePropertyValue function
 Writes a specified number of bytes to a property identified by a property handle.

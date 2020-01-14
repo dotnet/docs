@@ -21,17 +21,17 @@ To learn how to set up a development environment to run the code samples, see th
 
 .NET supports multiple programming languages. The .NET implementations implement the [Common Language Infrastructure (CLI)](https://visualstudio.microsoft.com/license-terms/ecma-c-common-language-infrastructure-standards/), which among other things specifies a language-independent runtime and language interoperability. This means that you choose any .NET language to build apps and services on .NET.
 
-Microsoft actively develops and supports three .NET languages: C#, F#, and Visual Basic (VB). 
+Microsoft actively develops and supports three .NET languages: C#, F#, and Visual Basic. 
 
-* C# is simple, powerful, type-safe, and object-oriented, while retaining the expressiveness and elegance of C-style languages. Anyone familiar with C and similar languages finds few problems in adapting to C#. Check out the [C# Guide](../csharp/index.md) to learn more about C#.
+* C# is simple, powerful, type-safe, and object-oriented, while retaining the expressiveness and elegance of C-style languages. Anyone familiar with C and similar languages finds few problems in adapting to C#. Check out the [C# Guide](../csharp/index.yml) to learn more about C#.
 
-* F# is a cross-platform, functional-first programming language that also supports traditional object-oriented and imperative programming. Check out the [F# Guide](../fsharp/index.md) to learn more about F#.
+* F# is a cross-platform, functional-first programming language that also supports traditional object-oriented and imperative programming. Check out the [F# Guide](../fsharp/index.yml) to learn more about F#.
 
-* Visual Basic is an easy language to learn that you use to build a variety of apps that run on .NET. Among the .NET languages, the syntax of VB is the closest to ordinary human language, often making it easier for people new to software development.
+* Visual Basic is an easy language to learn that you use to build a variety of apps that run on .NET. Among the .NET languages, the syntax of Visual Basic is the closest to ordinary human language, often making it easier for people new to software development.
 
 ## Automatic memory management
 
-.NET uses [garbage collection (GC)](garbagecollection/index.md) to provide automatic memory management for programs. The GC operates on a lazy approach to memory management, preferring app throughput to the immediate collection of memory. To learn more about the .NET GC, check out [Fundamentals of garbage collection (GC)](garbagecollection/fundamentals.md).
+.NET uses [garbage collection (GC)](garbage-collection/index.md) to provide automatic memory management for programs. The GC operates on a lazy approach to memory management, preferring app throughput to the immediate collection of memory. To learn more about the .NET GC, check out [Fundamentals of garbage collection (GC)](garbage-collection/fundamentals.md).
 
 The following two lines both allocate memory:
 
@@ -41,7 +41,7 @@ There's no analogous keyword to de-allocate memory, as de-allocation happens aut
 
 The garbage collector is one of the services that help ensure *memory safety*. A program is memory safe if it accesses only allocated memory. For instance, the runtime ensures that an app doesn't access unallocated memory beyond the bounds of an array.
 
-In the following example, the runtime throws an `InvalidIndexException` exception to enforce memory safety:
+In the following example, the runtime throws an <xref:System.IndexOutOfRangeException> exception to enforce memory safety:
 
 [!code-csharp[MemoryManagement](../../samples/csharp/snippets/tour/MemoryManagement.csx#L4-L5)]
 
@@ -49,7 +49,7 @@ In the following example, the runtime throws an `InvalidIndexException` exceptio
 
 Some objects reference *unmanaged resources*. Unmanaged resources are resources that aren't automatically maintained by the .NET runtime. For example, a file handle is an unmanaged resource. A <xref:System.IO.FileStream> object is a managed object, but it references a file handle, which is unmanaged. When you're done using the <xref:System.IO.FileStream>, you need to release the file handle.
 
-In .NET, objects that reference unmanaged resources implement the <xref:System.IDisposable> interface. When you're done using the object, you call the object's <xref:System.IDisposable.Dispose> method, which is responsible for releasing any unmanaged resources. .NET languages provide a convenient `using` syntax for such objects, as shown in the following example:
+In .NET, objects that reference unmanaged resources implement the <xref:System.IDisposable> interface. When you're done using the object, you call the object's <xref:System.IDisposable.Dispose> method, which is responsible for releasing any unmanaged resources. .NET languages provide a convenient [`using` statement](../csharp/language-reference/keywords/using.md) for such objects, as shown in the following example:
 
 [!code-csharp[UnmanagedResources](../../samples/csharp/snippets/tour/UnmanagedResources.csx#L1-L6)]
 
@@ -59,7 +59,7 @@ For more details, see the following topics:
 
 * For C#, see the [using Statement (C# Reference)](../csharp/language-reference/keywords/using-statement.md) topic.
 * For F#, see [Resource Management: The use Keyword](../fsharp/language-reference/resource-management-the-use-keyword.md).
-* For VB, see the [Using Statement (Visual Basic)](../visual-basic/language-reference/statements/using-statement.md) topic.
+* For Visual Basic, see the [Using Statement (Visual Basic)](../visual-basic/language-reference/statements/using-statement.md) topic.
 
 ## Type safety
 
@@ -73,11 +73,11 @@ Type safety is also used to help enforce encapsulation by guaranteeing the fidel
 
 [!code-csharp[TypeSafety](../../samples/csharp/snippets/tour/TypeSafety.csx#L3-L3)]
 
-C#, VB, and F# support local *type inference*. Type inference means that the compiler deduces the type of the expression on the left-hand side from the expression on the right-hand side. This doesn't mean that the type safety is broken or avoided. The resulting type does have a strong type with everything that implies. From the previous example, `dog` is rewritten to introduce type inference, and the remainder of the example is unchanged:
+C#, Visual Basic, and F# support local *type inference*. Type inference means that the compiler deduces the type of the expression on the left-hand side from the expression on the right-hand side. This doesn't mean that the type safety is broken or avoided. The resulting type does have a strong type with everything that implies. From the previous example, `dog` is rewritten to introduce type inference, and the remainder of the example is unchanged:
 
 [!code-csharp[TypeSafety](../../samples/csharp/snippets/tour/TypeSafety.csx#L28-L34)]
 
-F# has even further type inference capabilities than the method-local type inference found in C# and VB. To learn more, see [Type Inference](../fsharp/language-reference/type-inference.md).
+F# has even further type inference capabilities than the method-local type inference found in C# and Visual Basic. To learn more, see [Type Inference](../fsharp/language-reference/type-inference.md).
 
 ## Delegates and lambdas
 
@@ -91,7 +91,7 @@ In .NET, delegates are commonly used in event handlers, in defining asynchronous
 
 Generics allow the programmer to introduce a *type parameter* when designing their classes that allows the client code (the users of the type) to specify the exact type to use in place of the type parameter.
 
-Generics were added to help programmers implement generic data structures. Before their arrival in order for a type such as the `List` type to be generic, it would have to work with elements that were of type `object`. This had various performance and semantic problems, along with possible subtle runtime errors. The most notorious of the latter is when a data structure contains, for instance, both integers and strings, and an `InvalidCastException` is thrown on working with the list's members.
+Generics were added to help programmers implement generic data structures. Before their arrival, in order for a type such as the `List` type to be generic, it would have to work with elements that were of type `object`. This had various performance and semantic problems, along with possible subtle run-time errors. A common run-time error is when a data structure contains, for example, both integers and strings, and an <xref:System.InvalidCastException> is thrown while processing the list's members.
 
 The following sample shows a basic program running using an instance of <xref:System.Collections.Generic.List%601> types:
 
@@ -107,7 +107,7 @@ To learn more about async programming in .NET, start with the [Async overview](a
 
 ## Language Integrated Query (LINQ)
 
-LINQ is a powerful set of features for C# and VB that allow you to write simple, declarative code for operating on data. The data can be in many forms (such as in-memory objects, a SQL database, or an XML document), but the LINQ code you write typically doesn't differ by data source.
+LINQ is a powerful set of features for C# and Visual Basic that allow you to write simple, declarative code for operating on data. The data can be in many forms (such as in-memory objects, a SQL database, or an XML document), but the LINQ code you write typically doesn't differ by data source.
 
 To learn more and see some samples, see the [LINQ (Language Integrated Query)](using-linq.md) topic.
 

@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "exceptions [.NET]"
   - "common language runtime, exceptions"
 ms.assetid: f99a1d29-a2a8-47af-9707-9909f9010735
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Handling and throwing exceptions in .NET
 
@@ -63,4 +61,4 @@ The following table lists some common exceptions with examples of what can cause
 - [How to: Use Finally Blocks](how-to-use-finally-blocks.md)
 - [Handling COM Interop Exceptions](handling-com-interop-exceptions.md)
 - [Best Practices for Exceptions](best-practices-for-exceptions.md)
-- [What Every Dev needs to Know About Exceptions in the Runtime](https://github.com/dotnet/coreclr/blob/master/Documentation/botr/exceptions.md)
+- [What Every Dev needs to Know About Exceptions in the Runtime](https://github.com/dotnet/runtime/blob/master/docs/design/coreclr/botr/exceptions.md)

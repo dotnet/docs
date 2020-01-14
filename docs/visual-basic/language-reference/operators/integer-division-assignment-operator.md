@@ -1,5 +1,5 @@
 ---
-title: "\\= Operator (Visual Basic)"
+title: "\\= Operator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "\\="
@@ -17,7 +17,7 @@ Divides the value of a variable or property by the value of an expression and as
   
 ## Syntax  
   
-```  
+```vb  
 variableorproperty \= expression  
 ```  
   

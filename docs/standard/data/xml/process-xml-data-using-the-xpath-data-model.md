@@ -3,8 +3,6 @@ title: "Process XML Data Using the XPath Data Model"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: 536c6fce-1453-4654-9c72-bca54d47e081
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Process XML Data Using the XPath Data Model
 The <xref:System.Xml?displayProperty=nameWithType> namespace provides a programmatic representation of XML documents, fragments, nodes, or node-sets in-memory, using the <xref:System.Xml.XmlDocument> or <xref:System.Xml.XPath.XPathDocument> classes.  

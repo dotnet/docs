@@ -3,7 +3,7 @@ title: How to install Model Builder
 description: Learn how to install the ML.NET Model Builder tool
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 06/21/2019
+ms.date: 11/21/2019
 ms.custom: mvc, how-to
 #Customer intent: As a non-developer I want know how to install Model Builder to add machine learning to my .NET application.
 ---
@@ -15,10 +15,13 @@ Learn how to install ML.NET Model Builder to add machine learning to your .NET a
 > [!NOTE]
 > Model Builder is currently in Preview.
 
-## Pre-requisites
+## Prerequisites
 
-- Visual Studio 2017 15.9.12 or later / Visual Studio 2019
-- .NET Core 2.1 or later SDK
+- Visual Studio 2017 version 15.9.12 or later / Visual Studio 2019
+- .NET Core 2.1 SDK or later.
+
+> [!NOTE]
+> .NET Core 3.0 SDK is not currently supported.
 
 ## Limitations
 
@@ -29,7 +32,7 @@ Learn how to install ML.NET Model Builder to add machine learning to your .NET a
 
 ## Install
 
-ML.NET Model builder can be installed either through the Visual Studio Marketplace or from within Visual Studio. 
+ML.NET Model builder can be installed either through the Visual Studio Marketplace or from within Visual Studio.
 
 ### Visual Studio Marketplace
 

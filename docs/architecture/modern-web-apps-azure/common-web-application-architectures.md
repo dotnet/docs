@@ -260,7 +260,6 @@ The `docker-compose.yml` file references the `Dockerfile` in the `Web` project. 
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2 AS build
 WORKDIR /app
 
-COPY *.sln .
 COPY . .
 WORKDIR /app/src/Web
 RUN dotnet restore
@@ -297,6 +296,8 @@ If you want to add Docker support to your application using Visual Studio, make 
   <https://github.com/ardalis/cleanarchitecture>
 - **Architecting Microservices e-book**  
   <https://aka.ms/MicroservicesEbook>
+- **DDD (Domain-Driven Design)**  
+  <https://docs.microsoft.com/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/>
 
 >[!div class="step-by-step"]
 >[Previous](architectural-principles.md)

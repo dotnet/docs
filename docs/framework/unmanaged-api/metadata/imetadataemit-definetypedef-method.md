@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: dd11c485-be95-4b97-9cd8-68679a4fb432
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::DefineTypeDef Method
 Creates a type definition for a common language runtime type, and gets a metadata token for that type definition.  

@@ -1,5 +1,5 @@
 ---
-title: "-reference (Visual Basic)"
+title: "-reference"
 ms.date: 03/13/2018
 helpviewer_keywords: 
   - "/reference compiler option [Visual Basic]"
@@ -15,9 +15,13 @@ Causes the compiler to make type information in the specified assemblies availab
   
 ## Syntax  
   
-```  
+```console  
 -reference:fileList  
-' -or-  
+```
+
+or
+
+```console
 -r:fileList  
 ```  
   
@@ -28,7 +32,7 @@ Causes the compiler to make type information in the specified assemblies availab
 |`fileList`|Required. Comma-delimited list of assembly file names. If the file name contains a space, enclose the name in quotation marks.|  
   
 ## Remarks  
- The file(s) you import must contain assembly metadata. Only public types are visible outside the assembly. The [/addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md) option imports metadata from a module.  
+ The file(s) you import must contain assembly metadata. Only public types are visible outside the assembly. The [-addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md) option imports metadata from a module.  
   
  If you reference an assembly (Assembly A) which itself references another assembly (Assembly B), you need to reference Assembly B if:  
   
@@ -42,7 +46,7 @@ Causes the compiler to make type information in the specified assemblies availab
   
  The Vbc.rsp response file, which references commonly used .NET Framework assemblies, is used by default. Use `-noconfig` if you do not want the compiler to use Vbc.rsp.  
   
- The short form of `-reference` is `/r`.  
+ The short form of `-reference` is `-r`.  
   
 ## Example  
  The following command compiles source file `Input.vb` and reference assemblies from `Metad1.dll` and `Metad2.dll` to produce `Out.exe`.  

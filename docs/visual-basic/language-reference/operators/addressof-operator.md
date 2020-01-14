@@ -1,5 +1,5 @@
 ---
-title: "AddressOf Operator (Visual Basic)"
+title: "AddressOf Operator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "AddressOf"

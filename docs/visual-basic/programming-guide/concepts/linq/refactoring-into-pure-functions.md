@@ -1,5 +1,5 @@
 ---
-title: "Refactoring Into Pure Functions (Visual Basic)"
+title: "Refactoring Into Pure Functions"
 ms.date: 07/20/2015
 ms.assetid: 99e7d27b-a3ff-4577-bdb2-5a8278d6d7af
 ---
@@ -43,7 +43,7 @@ End Module
 
 This code produces the following output:
 
-```
+```console
 StringOne-StringTwo
 ```
 

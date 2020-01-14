@@ -1,5 +1,5 @@
 ---
-title: "Differences Between Parameters and Arguments (Visual Basic)"
+title: "Differences Between Parameters and Arguments"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "procedures [Visual Basic], arguments"

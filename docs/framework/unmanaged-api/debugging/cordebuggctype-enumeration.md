@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 880ca92a-42d4-42a5-9b9c-c2848eb39c6a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugGCType Enumeration
 Indicates whether the garbage collector is running on a workstation or a server.  

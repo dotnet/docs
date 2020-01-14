@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "I/O [.NET Framework], access control list entries"
   - "access control lists [.NET Framework]"
 ms.assetid: 53758b39-bd9b-4640-bb04-cad5ed8d0abf
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Add or remove Access Control List entries (.NET Framework only)
 To add or remove Access Control List (ACL) entries to or from a file or directory, get the <xref:System.Security.AccessControl.FileSecurity> or <xref:System.Security.AccessControl.DirectorySecurity> object from the file or directory. Modify the object, and then apply it back to the file or directory.  

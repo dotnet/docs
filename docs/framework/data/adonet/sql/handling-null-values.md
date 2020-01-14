@@ -10,7 +10,7 @@ ms.assetid: f18b288f-b265-4bbe-957f-c6833c0645ef
 A null value in a relational database is used when the value in a column is unknown or missing. A null is neither an empty string (for character or datetime data types) nor a zero value (for numeric data types). The ANSI SQL-92 specification states that a null must be the same for all data types, so that all nulls are handled consistently. The <xref:System.Data.SqlTypes> namespace provides null semantics by implementing the <xref:System.Data.SqlTypes.INullable> interface. Each of the data types in <xref:System.Data.SqlTypes> has its own `IsNull` property and a `Null` value that can be assigned to an instance of that data type.  
   
 > [!NOTE]
-> The .NET Framework version 2.0 introduced support for nullable types, which allow programmers to extend a value type to represent all values of the underlying type. These CLR nullable types represent an instance of the <xref:System.Nullable> structure. This capability is especially useful when value types are boxed and unboxed, providing enhanced compatibility with object types. CLR nullable types are not intended for storage of database nulls because an ANSI SQL null does not behave the same way as a `null` reference (or `Nothing` in Visual Basic). For working with database ANSI SQL null values, use <xref:System.Data.SqlTypes> nulls rather than <xref:System.Nullable>. For more information on working with CLR nullable types in Visual Basic see [Nullable Value Types](../../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md), and for C# see [Using nullable value types](../../../../csharp/programming-guide/nullable-types/using-nullable-types.md).  
+> The .NET Framework version 2.0 introduced support for nullable types, which allow programmers to extend a value type to represent all values of the underlying type. These CLR nullable types represent an instance of the <xref:System.Nullable> structure. This capability is especially useful when value types are boxed and unboxed, providing enhanced compatibility with object types. CLR nullable types are not intended for storage of database nulls because an ANSI SQL null does not behave the same way as a `null` reference (or `Nothing` in Visual Basic). For working with database ANSI SQL null values, use <xref:System.Data.SqlTypes> nulls rather than <xref:System.Nullable>. For more information on working with CLR nullable types in Visual Basic see [Nullable Value Types](../../../../visual-basic/programming-guide/language-features/data-types/nullable-value-types.md), and for C# see [Nullable value types](../../../../csharp/language-reference/builtin-types/nullable-value-types.md).  
   
 ## Nulls and Three-Valued Logic  
  Allowing null values in column definitions introduces three-valued logic into your application. A comparison can evaluate to one of three conditions:  
@@ -33,19 +33,19 @@ A null value in a relational database is used when the value in a column is unkn
   
  The ANSI SQL-92 standard does not support *columnName* = NULL in a WHERE clause. In SQL Server, the ANSI_NULLS option controls both default nullability in the database and evaluation of comparisons against null values. If ANSI_NULLS is turned on (the default), the IS NULL operator must be used in expressions when testing for null values. For example, the following comparison always yields unknown when ANSI_NULLS is on:  
   
-```  
+```sql
 colname > NULL  
 ```  
   
  Comparison to a variable containing a null value also yields unknown:  
   
-```  
+```sql
 colname > @MyVariable  
 ```  
   
  Use the IS NULL or IS NOT NULL predicate to test for a null value. This can add complexity to the WHERE clause. For example, the TerritoryID column in the AdventureWorks Customer table allows null values. If a SELECT statement is to test for null values in addition to others, it must include an IS NULL predicate:  
   
-```  
+```sql
 SELECT CustomerID, AccountNumber, TerritoryID  
 FROM AdventureWorks.Sales.Customer  
 WHERE TerritoryID IN (1, 2, 3)  
@@ -106,7 +106,7 @@ WHERE TerritoryID IN (1, 2, 3)
   
  This example displays the following results:  
   
-```  
+```output
 isColumnNull=False, ID=123, Description=Side Mirror  
 isColumnNull=True, ID=Null, Description=Null  
 ```  
@@ -121,7 +121,7 @@ isColumnNull=True, ID=Null, Description=Null
   
  The code produces the following output:  
   
-```  
+```output
 SqlString.Equals shared/static method:  
   Two nulls=Null  
   

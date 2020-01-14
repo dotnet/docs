@@ -1,5 +1,5 @@
 ---
-title: "Inherits Statement (Visual Basic)"
+title: "Inherits Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Inherits"
@@ -14,7 +14,7 @@ Causes the current class or interface to inherit the attributes, variables, prop
   
 ## Syntax  
   
-```  
+```vb  
 Inherits basetypenames  
 ```  
   

@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "metadata, emit interfaces"
   - "reflection emit, overview"
   - "assemblies [.NET Framework], emitting dynamic assemblies"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Emitting Dynamic Methods and Assemblies
 
@@ -30,7 +28,7 @@ Reflection emit provides the following capabilities:
   
 In addition to the managed types in the <xref:System.Reflection.Emit> namespace, there are unmanaged metadata interfaces which are described in the [Metadata Interfaces](../unmanaged-api/metadata/metadata-interfaces.md) reference documentation. Managed reflection emit provides stronger semantic error checking and a higher level of abstraction of the metadata than the unmanaged metadata interfaces.  
   
-Another useful resource for working with metadata and MSIL is the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics" and "Partition III: CIL Instruction Set". The documentation is available online on [MSDN](https://go.microsoft.com/fwlink/?LinkID=65555) and at the [Ecma Web site](https://go.microsoft.com/fwlink/?LinkId=116487).  
+Another useful resource for working with metadata and MSIL is the Common Language Infrastructure (CLI) documentation, especially "Partition II: Metadata Definition and Semantics" and "Partition III: CIL Instruction Set". The documentation is available online at the [Ecma Web site](https://www.ecma-international.org/publications/standards/Ecma-335.htm).  
   
 ## In This Section
   

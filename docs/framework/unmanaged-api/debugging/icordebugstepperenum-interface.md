@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 988718c1-1a4a-40f2-a04c-7d67e5cfe1e2
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugStepperEnum Interface
 Implements ICorDebugEnum methods, and enumerates ICorDebugStepper arrays.  

@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "debugging structures [.NET Framework]"
   - "structures [.NET Framework debugging]"
 ms.assetid: 173ba2c2-ab34-49ae-b6a8-e5c49882bf05
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Debugging Structures
 

@@ -13,7 +13,7 @@ ms.assetid: 12ae4b67-cd0c-4c4d-a188-2c3de173bbb9
 A resource is an object that can be reused in different places in your application. WPF supports different types of resources. These resources are primarily two types of resources: XAML resources and resource data files. Examples of XAML resources include brushes and styles. Resource data files are non-executable data files that an application needs.  
   
 ## In This Section  
- [XAML Resources](xaml-resources.md)  
+ [XAML Resources](../../../desktop-wpf/fundamentals/xaml-resources-define.md)  
  [WPF Application Resource, Content, and Data Files](../app-development/wpf-application-resource-content-and-data-files.md)  
  [Pack URIs in WPF](../app-development/pack-uris-in-wpf.md)  
   
@@ -24,7 +24,7 @@ A resource is an object that can be reused in different places in your applicati
   
  [DynamicResource Markup Extension](dynamicresource-markup-extension.md)  
   
- [x:Key Directive](../../xaml-services/x-key-directive.md)  
+ [x:Key Directive](../../../desktop-wpf/xaml-services/xkey-directive.md)  
   
 ## Related Sections  
  [XAML in WPF](xaml-in-wpf.md)

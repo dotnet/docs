@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 84e1e605-37c1-49a5-8e12-35db85654622
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess::GetHelperThreadID Method
 Gets the operating system (OS) thread ID of the debugger's internal helper thread.  

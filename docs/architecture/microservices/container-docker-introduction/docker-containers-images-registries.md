@@ -13,9 +13,11 @@ Developers should store images in a registry, which acts as a library of images 
 
 Figure 2-4 shows how images and registries in Docker relate to other components. It also shows the multiple registry offerings from vendors.
 
-![Basic taxonomy in Docker: The registry is like a bookshelf where images are stored and available to be pulled for building containers to run services or web apps. There are private Docker registries on-prem and on the public cloud. Docker Hub is a public registry maintained by Docker, along the Docker Trusted Registry an enterprise-grade solution, Azure offers the Azure Container Registry. AWS, Google and others also have container registries.](./media/image5.PNG)
+![A diagram showing the basic taxonomy in Docker.](./media/docker-containers-images-registries/taxonomy-of-docker-terms-and-concepts.png)
 
 **Figure 2-4**. Taxonomy of Docker terms and concepts
+
+The registry is like a bookshelf where images are stored and available to be pulled for building containers to run services or web apps. There are private Docker registries on-premises and on the public cloud. Docker Hub is a public registry maintained by Docker, along the Docker Trusted Registry an enterprise-grade solution, Azure offers the Azure Container Registry. AWS, Google and others also have container registries.
 
 Putting images in a registry lets you store static and immutable application bits, including all their dependencies at a framework level. Those images can then be versioned and deployed in multiple environments and therefore provide a consistent deployment unit.
 

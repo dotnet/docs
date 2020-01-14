@@ -21,7 +21,7 @@ In addition, the [Windows Compatibility Pack](../../../core/porting/windows-comp
 
 However, even with that exceptional progression since .NET Standard 2.0 and .NET Core 2.1, there might be cases where certain NuGet packages need Windows to run and might not support .NET Core. If those packages are critical for your application, then you will need to use .NET Framework on Windows Containers.
 
-## Using .NET technologies not available for .NET Core 
+## Using .NET technologies not available for .NET Core
 
 Some .NET Framework technologies are not available in the current version of .NET Core (version 2.2 as of this writing). Some of them will be available in later .NET Core releases (.NET Core 2.x), but others do not apply to the new application patterns targeted by .NET Core and might never be available.
 
@@ -33,7 +33,7 @@ The following list shows most of the technologies that are not available in .NET
 
 - Workflow-related services. Windows Workflow Foundation (WF), Workflow Services (WCF + WF in a single service), and WCF Data Services (formerly known as ADO.NET Data Services) are only available on .NET Framework. There are currently no plans to bring them to .NET Core.
 
-In addition to the technologies listed in the official [.NET Core roadmap](https://github.com/aspnet/Home/wiki/Roadmap), other features might be ported to .NET Core. For a full list, look at the items tagged as [port-to-core](https://github.com/dotnet/corefx/issues?q=is%3Aopen+is%3Aissue+label%3Aport-to-core) on the CoreFX GitHub site. Note that this list does not represent a commitment from Microsoft to bring those components to .NET Core — the items simply capture requests from the community. If you care about any of the components listed above, consider participating in the discussions on GitHub so that your voice can be heard. And if you think something is missing, please [file a new issue in the CoreFX repository](https://github.com/dotnet/corefx/issues/new).
+In addition to the technologies listed in the official [.NET Core roadmap](https://github.com/dotnet/aspnetcore/wiki/Roadmap), other features might be ported to .NET Core. For a full list, look at the items tagged as [port-to-core](https://github.com/dotnet/corefx/issues?q=is%3Aopen+is%3Aissue+label%3Aport-to-core) on the CoreFX GitHub site. Note that this list does not represent a commitment from Microsoft to bring those components to .NET Core — the items simply capture requests from the community. If you care about any of the components listed above, consider participating in the discussions on GitHub so that your voice can be heard. And if you think something is missing, please [file a new issue in the Runtime repository](https://github.com/dotnet/runtime/issues/new).
 
 Even though .NET Core 3 (at the time of this writing this is in the works) will include support for a lot of existing .NET Framework APIs, these are desktop oriented so, currently, they are of no use in the container world.
 
@@ -45,16 +45,16 @@ In the meantime, if any platform or service in Azure still doesn't support .NET 
 
 ### Additional resources
 
-- **.NET Core Guide**  
+- **.NET Core Guide** \
   [https://docs.microsoft.com/dotnet/core/index](../../../core/index.md)
 
-- **Porting from .NET Framework to .NET Core**  
+- **Porting from .NET Framework to .NET Core** \
   [https://docs.microsoft.com/dotnet/core/porting/index](../../../core/porting/index.md)
 
-- **.NET Core on Docker Guide**
-    [https://docs.microsoft.com/dotnet/core/docker/introduction](../../../core/docker/introduction.md)
+- **.NET Core on Docker Guide** \
+  [https://docs.microsoft.com/dotnet/core/docker/introduction](../../../core/docker/introduction.md)
 
-- **.NET Components Overview**  
+- **.NET Components Overview** \
   [https://docs.microsoft.com/dotnet/standard/components](../../../standard/components.md)
 
 >[!div class="step-by-step"]

@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: ce2df341-a1a4-4e97-8e1b-cd45b8e3e71e
-author: "mairaw"
-ms.author: "mairaw"
 ---
 
 # Accessing Attributes in the DOM
@@ -23,7 +21,6 @@ If you want all the attributes of an element node put into a collection, call th
 The following code example shows how to retrieve an attribute collection and, using the **Count** method for the looping index, iterate over it. The code then shows how to retrieve a single attribute from the collection and display its value.
 
 ```vb
-Imports System
 Imports System.IO
 Imports System.Xml
 
@@ -117,7 +114,7 @@ This example displays the following output:
 
 Display all the attributes in the collection.
 
-```
+```console
 genre = novel
 ISBN = 1-861001-57-5
 misc = sale item
@@ -142,7 +139,6 @@ Because the **XmlAttributeCollection** is a collection and can be iterated over 
 Option Explicit On
 Option Strict On
 
-Imports System
 Imports System.IO
 Imports System.Xml
 
@@ -192,7 +188,6 @@ public class Sample
 To retrieve a single attribute node from an element, the <xref:System.Xml.XmlElement.GetAttributeNode%2A?displayProperty=nameWithType> method is used. It returns an object of type **XmlAttribute**. Once you have an **XmlAttribute**, all the methods and properties available in the <xref:System.Xml.XmlAttribute?displayProperty=nameWithType> class are available on that object, such as finding the **OwnerElement**.
 
 ```vb
-Imports System
 Imports System.IO
 Imports System.Xml
 

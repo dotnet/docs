@@ -35,4 +35,3 @@ Where necessary, you can [create your own custom type providers](creating-a-type
 
 - [Tutorial: Create a Type Provider](creating-a-type-provider.md)
 - [F# Language Reference](../../language-reference/index.md)
-- [Visual F#](../../index.md)

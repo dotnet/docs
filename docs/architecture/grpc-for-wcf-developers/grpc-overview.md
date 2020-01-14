@@ -1,13 +1,10 @@
 ---
 title: Overview of gRPC - gRPC for WCF Developers
 description: Learn about the set of principles guiding the development of gRPC.
-author: markrendle
 ms.date: 09/02/2019
 ---
 
 # gRPC overview
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 After looking at the genesis of both WCF and gRPC in the last chapter, this chapter will consider some of the key features of gRPC and how they compare to WCF.
 
@@ -15,7 +12,7 @@ ASP.NET Core 3.0 is the first release of ASP.NET that natively supports gRPC as 
 
 ## Key principles
 
-As discussed in chapter 1, Google wanted to use the introduction of HTTP/2 to rework Stubby, its internal, general purpose RPC infrastructure. Stubby, renamed gRPC, now could take advantage of standardization and would extend its applicability to mobile computing, the cloud, and the Internet of Things.
+As discussed in chapter 1, Google wanted to use the introduction of HTTP/2 to replace Stubby, its internal, general purpose RPC infrastructure. gRPC, based on Stubby, now could take advantage of standardization and would extend its applicability to mobile computing, the cloud, and the Internet of Things.
 
 To achieve this, the [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) established a set of principles that would govern gRPC. The following list shows the most relevant ones, which are mainly concerned with maximizing accessibility and usability:
 

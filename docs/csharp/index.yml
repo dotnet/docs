@@ -1,0 +1,115 @@
+### YamlMime:Landing
+
+title: "C# documentation"
+summary: "Learn how to write any application using the C# programming language on the .NET platform."
+
+metadata:
+  title: "C# docs - get started, tutorials, reference."
+  description: "Learn C# programming - for beginning developers, developers new to C#, and experienced C# / .NET developers"
+  ms.topic: landing-page # Required
+  ms.date: 11/19/2019
+
+landingContent:
+  - title: "Learn to program in C#"
+    linkLists:
+      - linkListType: get-started
+        links:
+          - text: Online, interactive Hello world
+            url: tutorials/intro-to-csharp/hello-world.yml
+          - text: "Math and numbers in C#"
+            url: tutorials/intro-to-csharp/numbers-in-csharp.yml
+          - text: Introductory tutorials
+            url: tutorials/intro-to-csharp/index.md
+          - text: "Create C# apps with Visual Studio"
+            url: https://docs.microsoft.com/visualstudio/get-started/csharp/tutorial-console
+      - linkListType: video
+        links:
+          - text: "What is C#?"
+            url: https://channel9.msdn.com/Series/CSharp-101/What-is-C/player
+          - text: "C# 101 video series"
+            url: https://aka.ms/dotnet3-csharp
+      - linkListType: download
+        links:
+          - text: Download the .NET Core SDK
+            url: https://dotnet.microsoft.com/download
+
+  - title: "C# fundamentals"
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: "A tour of C#"
+            url: tour-of-csharp/index.md
+          - text: "Inside a C# program"
+            url: programming-guide/inside-a-program/index.md
+          - text: Main() and command-line arguments
+            url: programming-guide/main-and-command-args/index.md
+      - linkListType: concept
+        links:
+          - text: "The C# and .NET type system"
+            url: programming-guide/types/index.md
+          - text: Language Integrated Query (LINQ)
+            url: linq/index.md
+          - text: async and await
+            url: programming-guide/concepts/async/index.md
+      - linkListType: tutorial
+        links:
+          - text: Object-oriented inheritance
+            url: tutorials/inheritance.md
+          - text: Use LINQ to query data
+            url: tutorials/working-with-linq.md
+          - text: Format text using string interpolation
+            url: tutorials/string-interpolation.md
+          - text: Browse all tutorials
+            url: tutorials/index.md
+  
+  - title: "New features in C# 8.0"
+    linkLists:
+      - linkListType: whats-new
+        links:
+          - text: "What's new in C# 8.0"
+            url: whats-new/csharp-8.md
+      - linkListType: overview
+        links:
+          - text: Pattern matching
+            url: pattern-matching.md
+          - text: Nullable reference types
+            url: nullable-references.md
+      - linkListType: concept
+        links:
+          - text: Annotate APIs for nullability
+            url: nullable-attributes.md
+      - linkListType: tutorial
+        links:
+          - text: Consume and generate async streams
+            url: tutorials/generate-consume-asynchronous-stream.md
+          - text: Develop with nullable reference types
+            url: tutorials/nullable-reference-types.md
+          - text: Upgrade existing code to use nullable reference types
+            url: tutorials/upgrade-to-nullable-references.md
+          - text: Use pattern matching for more expressive algorithms
+            url: tutorials/pattern-matching.md
+          - text: Safely version interfaces with default interface members
+            url: tutorials/default-interface-methods-versions.md
+          - text: Mix in functionality with default interface members
+            url: tutorials/mixins-with-default-interface-methods.md
+          - text: Work with subsets using ranges and indices
+            url: tutorials/ranges-indexes.md
+      - linkListType: reference
+        links:
+          - text: Breaking changes in the C# compiler
+            url: whats-new/breaking-changes.md
+
+  - title: "C# language reference"
+    linkLists:
+      - linkListType: reference
+        links:
+          - text: "Language reference"
+            url: language-reference/index.md
+          - text: "C# keywords"
+            url: language-reference/keywords/index.md
+          - text: "C# operators"
+            url: language-reference/operators/index.md
+          - text: Configure language version
+            url: language-reference/configure-language-version.md
+          - text: "C# language specification"
+            url: ../../_csharplang/spec/introduction.md

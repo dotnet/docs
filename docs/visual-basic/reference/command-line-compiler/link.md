@@ -1,5 +1,5 @@
 ---
-title: "-link (Visual Basic)"
+title: "-link"
 ms.date: 03/10/2018
 helpviewer_keywords: 
   - "l compiler option [Visual Basic]"
@@ -17,9 +17,13 @@ Causes the compiler to make COM type information in the specified assemblies ava
   
 ## Syntax  
   
-```  
+```console  
 -link:fileList  
-' -or-  
+```
+
+or  
+
+```console
 -l:fileList  
 ```  
   
@@ -49,7 +53,7 @@ Causes the compiler to make COM type information in the specified assemblies ava
   
  Use [-libpath](libpath.md) to specify the directory in which one or more of your assembly references is located.  
   
- Like the [/reference](reference.md) compiler option, the `-link` compiler option uses the Vbc.rsp response file, which references frequently used .NET Framework assemblies. Use the [-noconfig](noconfig.md) compiler option if you do not want the compiler to use the Vbc.rsp file.  
+ Like the [-reference](reference.md) compiler option, the `-link` compiler option uses the Vbc.rsp response file, which references frequently used .NET Framework assemblies. Use the [-noconfig](noconfig.md) compiler option if you do not want the compiler to use the Vbc.rsp file.  
   
  The short form of `-link` is `-l`.  
   
@@ -76,7 +80,7 @@ Causes the compiler to make COM type information in the specified assemblies ava
  The following command line compiles source file `OfficeApp.vb` and reference assemblies from `COMData1.dll` and `COMData2.dll` to produce `OfficeApp.exe`.  
   
 ```console  
-vbc -link:COMData1.dll,COMData2.dll /out:OfficeApp.exe OfficeApp.vb  
+vbc -link:COMData1.dll,COMData2.dll -out:OfficeApp.exe OfficeApp.vb  
 ```  
   
 ## See also

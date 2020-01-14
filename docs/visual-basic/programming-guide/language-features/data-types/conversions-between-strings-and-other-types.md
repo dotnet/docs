@@ -1,5 +1,5 @@
 ---
-title: "Conversions Between Strings and Other Types (Visual Basic)"
+title: "Conversions Between Strings and Other Types"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "data type conversion [Visual Basic], string"
@@ -22,7 +22,7 @@ You can convert a numeric, `Boolean`, or date/time value to a `String`. You can 
   
  Note that the concatenation (`&`) operator can convert a number to a string implicitly, as the following example shows.  
   
-```  
+```vb  
 ' The following statement converts count to a String value.  
 Str = "The total count is " & count  
 ```  
@@ -43,4 +43,4 @@ Str = "The total count is " & count
 - [Array Conversions](../../../../visual-basic/programming-guide/language-features/data-types/array-conversions.md)
 - [Data Types](../../../../visual-basic/language-reference/data-types/index.md)
 - [Type Conversion Functions](../../../../visual-basic/language-reference/functions/type-conversion-functions.md)
-- [Introduction to International Applications Based on the .NET Framework](/visualstudio/ide/introduction-to-international-applications-based-on-the-dotnet-framework)
+- [Develop globalized and localized apps](/visualstudio/ide/globalizing-and-localizing-applications)

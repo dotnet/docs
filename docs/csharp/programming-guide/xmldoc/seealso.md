@@ -1,6 +1,5 @@
 ---
 title: "<seealso> - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
   - "cref"
@@ -30,7 +29,7 @@ ms.assetid: 8e157f3f-f220-4fcf-9010-88905b080b18
 ## Remarks  
  The \<seealso> tag lets you specify the text that you might want to appear in a See Also section. Use [\<see>](./see.md) to specify a link from within text.  
   
- Compile with [/doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
+ Compile with [-doc](../../language-reference/compiler-options/doc-compiler-option.md) to process documentation comments to a file.  
   
 ## Example  
  See [\<summary>](./summary.md) for an example of using \<seealso>.  

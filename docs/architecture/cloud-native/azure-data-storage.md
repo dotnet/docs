@@ -9,7 +9,7 @@ ms.date: 06/30/2019
 
 As we've seen throughout this book, the cloud is changing the way applications are designed, deployed, and managed. When moving to the cloud, a critical question is how do you move your data? Fortunately, the Azure cloud offers many options.
 
-You could just provision an Azure virtual machine and install your database of choice. This is known as [Infrastructure as a Service (IaaS)](https://www.techopedia.com/definition/141/infrastructure-as-a-service-iaas). This approach simplifies moving an on-premises database to the cloud, as-is, but shifts the burden of managing the virtual machine and the database to you.  
+You could just provision an Azure virtual machine and install your database of choice. This is known as [Infrastructure as a Service (IaaS)](https://www.techopedia.com/definition/141/infrastructure-as-a-service-iaas). This approach simplifies moving an on-premises database to the cloud, as-is, but shifts the burden of managing the virtual machine and the database to you.
 
 Instead, a fully managed [Database as a Service (DBaaS)](https://www.stratoscale.com/blog/dbaas/what-is-database-as-a-service/) is a better option. You get many built-in features while the hosting, maintenance, and licensing are managed by Microsoft. Azure features different kinds of fully managed data storage options, each with specific benefits. They all support just-in-time capacity and a pay-as-you-go model.
 
@@ -17,7 +17,7 @@ We'll next look at DBaaS options available in Azure. You'll see how Microsoft co
 
 ## Azure SQL Database
 
-[Azure SQL Database](https://docs.microsoft.com/azure/sql-database/) is a feature-rich, general-purpose relational database-as-a-service (DBaaS) based on the Microsoft SQL Server Database Engine. It's fully managed by Microsoft and is a high-performance, reliable, and secure cloud database. The service shares many of the features found in the on-premises version of SQL Server. 
+[Azure SQL Database](https://docs.microsoft.com/azure/sql-database/) is a feature-rich, general-purpose relational database-as-a-service (DBaaS) based on the Microsoft SQL Server Database Engine. It's fully managed by Microsoft and is a high-performance, reliable, and secure cloud database. The service shares many of the features found in the on-premises version of SQL Server.
 
 You can provision a SQL Database server and database in minutes. When demand for your application grows from a handful of customers to millions, Azure SQL Database scales on-the-fly with minimal downtime. You can dynamically add or remove resources, including CPU power, memory, IO throughput, and storage allocated to your databases.
 
@@ -41,7 +41,7 @@ Azure SQL Database includes [built-in monitoring and intelligent tuning](https:/
 
 [Azure SQL Database serverless](https://docs.microsoft.com/azure/sql-database/sql-database-serverless) (available for preview at time of the writing of this book) is a compute tier for single databases that automatically scales based on workload demand, and bills for the amount of compute used per second. The serverless compute tier also automatically pauses databases during inactive periods so that only storage charges are billed. It automatically resumes when activity returns.
 
-Finally, there's the new [Azure SQL Database Hyperscale](https://azure.microsoft.com/services/sql-database/) pricing tier. It's powered by a highly scalable storage architecture and enables your database to grow as needed, eliminating the need to pre-provision storage resources. You can scale compute and storage resources independently, providing the flexibility to optimize performance for each workload. Azure SQL Database Hyperscale is optimized for [OLTP](https://en.wikipedia.org/wiki/Online_transaction_processing) processing and high throughput analytic workloads with storage up to 100 TB.  With read-intensive workloads, Hyperscale provides rapid scale-out by provisioning additional read replicas as needed for offloading read workloads. 
+Finally, there's the new [Azure SQL Database Hyperscale](https://azure.microsoft.com/services/sql-database/) pricing tier. It's powered by a highly scalable storage architecture and enables your database to grow as needed, eliminating the need to pre-provision storage resources. You can scale compute and storage resources independently, providing the flexibility to optimize performance for each workload. Azure SQL Database Hyperscale is optimized for [OLTP](https://en.wikipedia.org/wiki/Online_transaction_processing) processing and high throughput analytic workloads with storage up to 100 TB.  With read-intensive workloads, Hyperscale provides rapid scale-out by provisioning additional read replicas as needed for offloading read workloads.
 
 In addition to the traditional Microsoft SQL Server stack, Azure also features managed versions of several popular open-source databases.
 
@@ -53,7 +53,7 @@ In addition to the traditional Microsoft SQL Server stack, Azure also features m
 
 - Built-in [high availability](https://docs.microsoft.com/azure/mysql/concepts-high-availability).
 
-- Predictable performance, using inclusive [pay-as-you-go pricing](https://docs.microsoft.com/azure/mysql/concepts-pricing-tiers). 
+- Predictable performance, using inclusive [pay-as-you-go pricing](https://docs.microsoft.com/azure/mysql/concepts-pricing-tiers).
 
 - [Scale](https://docs.microsoft.com/azure/mysql/concepts-high-availability) as needed within seconds.
 
@@ -63,7 +63,7 @@ In addition to the traditional Microsoft SQL Server stack, Azure also features m
 
 - Enterprise-grade security and compliance.
 
-These built-in PaaS features are important for organizations who have hundreds of “tactical" (non-strategic) databases in their data centers, but don't have the resources to perform patching, backup, security, and performance monitoring. 
+These built-in PaaS features are important for organizations who have hundreds of “tactical" (non-strategic) databases in their data centers, but don't have the resources to perform patching, backup, security, and performance monitoring.
 
 Additionally, the [Azure Data Migration Service](https://azure.microsoft.com/services/database-migration/) can migrate data from multiple database sources to Azure Data platforms with minimal downtime. The service generates assessment reports and provides recommendations to guide you through the changes required to performing a migration, both small or large.
 
@@ -81,8 +81,8 @@ MariaDB has a strong following and is used by many large enterprises. While Orac
 
 - Built-in [high availability](https://docs.microsoft.com/azure/mariadb/concepts-high-availability).
 
-- Predictable performance, using inclusive [pay-as-you-go pricing](https://docs.microsoft.com/azure/mariadb/concepts-pricing-tiers). 
- 
+- Predictable performance, using inclusive [pay-as-you-go pricing](https://docs.microsoft.com/azure/mariadb/concepts-pricing-tiers).
+
 - [Scaling](https://docs.microsoft.com/azure/mariadb/concepts-high-availability) as needed within seconds.
 
 - Secured protection of sensitive data at rest and in-motion.
@@ -91,7 +91,7 @@ MariaDB has a strong following and is used by many large enterprises. While Orac
 
 - Enterprise-grade security and compliance.
 
-## Azure Database for PostgreSQL 
+## Azure Database for PostgreSQL
 
 [PostgreSQL](https://www.postgresql.org/) is another popular, open-source relational database with over 30 years of active development. It's a general purpose and object-relational database management system. Its licensing is considered to be “liberal” and the product is free to use, modify, and distribute in any form. Many large enterprises including Apple, Red Hat, and Fujitsu have built products using PostgreSQL.
 
@@ -135,7 +135,7 @@ With the Cosmos DB [Multi-Homing APIs](https://docs.microsoft.com/azure/cosmos-d
 
 ### Multi-Model Support
 
-Cosmos DB is a *multi-model data platform* enabling you to interact with your data using a number of supported NoSQL models, including documents, key-value pairs, wide-column, and graph representations. Internally, data is stored in a simple [struct](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/using-structs) format made up of primitive data types, including strings, bools, and numbers. For each request, the database engine translates data into the model representation you have selected. You can choose from a proprietary Cosmos DB SQL-based API or any of the [compatibility APIs](https://www.wikiwand.com/en/Cosmos_DB) shown in Figure 5-14.
+Cosmos DB is a *multi-model data platform* that enables you to interact with your data using a number of supported NoSQL models, including documents, key-value pairs, wide-column, and graph representations. Internally, data is stored in a simple [struct](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/using-structs) format made up of primitive data types, including strings, booleans, and numbers. For each request, the database engine translates data into the model representation you have selected. You can choose from a proprietary Cosmos DB SQL-based API or any of the [compatibility APIs](https://www.wikiwand.com/en/Cosmos_DB) shown in Figure 5-14.
 
 ![Cosmos DB providers](./media/cosmos-db-providers.png)
 
@@ -149,7 +149,7 @@ Note in Figure 5-14 how Cosmos DB supports [Table Storage](https://azure.microso
 
 Applications written for Azure Table storage can migrate to Azure Cosmos DB by using the Table API with no code changes.
 
-In [Brownfield](https://en.wikipedia.org/wiki/Brownfield_(software_development) application scenarios, development teams can migrate existing Mongo, Gremlin, or Cassandra databases into Cosmos DB with minimal changes to the existing data or application code. For [Greenfield](https://en.wikipedia.org/wiki/Greenfield_project) scenarios, development teams can choose the data model that best meets their requirements and preferences, including fully supported open-source options for the MongoDB, Cassandra, and Gremlin platforms.
+In [Brownfield](https://en.wikipedia.org/wiki/Brownfield_(software_development)) application scenarios, development teams can migrate existing Mongo, Gremlin, or Cassandra databases into Cosmos DB with minimal changes to the existing data or application code. For [Greenfield](https://en.wikipedia.org/wiki/Greenfield_project) scenarios, development teams can choose the data model that best meets their requirements and preferences, including fully supported open-source options for the MongoDB, Cassandra, and Gremlin platforms.
 
 ### Consistency Models
 
@@ -157,7 +157,7 @@ Earlier in the *Relational versus NoSQL* section, we discussed the subject of *d
 
 Most distributed databases allow developers to choose between two consistency models: [strong consistency](https://en.wikipedia.org/wiki/Strong_consistency) and [eventual consistency](https://en.wikipedia.org/wiki/Eventual_consistency). *Strong consistency* is the gold standard of data programmability. It guarantees that a query result will always return the most current data, even if  the system must incur latency waiting for an update to replicate across all database copies. On the other hand, a system configured for *eventual consistency* will return data immediately, even if that data isn't the most current copy. This option enables higher availability, greater scale, and increased performance.
 
-Azure Cosmos DB offers a spectrum of [five well-defined consistency models](https://docs.microsoft.com/azure/cosmos-db/consistency-levels) shown in Figure 5-16. These options enable you to make precise choices and granular tradeoffs with respect to availability and performance based on the needs of your application. These models are well-defined, intuitive, and backed by the service level agreements (SLAs). 
+Azure Cosmos DB offers a spectrum of [five well-defined consistency models](https://docs.microsoft.com/azure/cosmos-db/consistency-levels) shown in Figure 5-16. These options enable you to make precise choices and granular tradeoffs with respect to availability and performance based on the needs of your application. These models are well-defined, intuitive, and backed by the service level agreements (SLAs).
 
 ![Cosmos DB consistency levels](./media/cosmos-db-consistency-levels.png)
 
@@ -165,7 +165,7 @@ Azure Cosmos DB offers a spectrum of [five well-defined consistency models](http
 
 ### Partitioning
 
-Azure Cosmos DB uses automatic [partitioning](https://docs.microsoft.com/azure/cosmos-db/partitioning-overview) to scale the database to meet the performance needs of your application. 
+Azure Cosmos DB uses automatic [partitioning](https://docs.microsoft.com/azure/cosmos-db/partitioning-overview) to scale the database to meet the performance needs of your application.
 
 You manage data in Cosmos DB data by creating [databases, containers, and items](https://docs.microsoft.com/azure/cosmos-db/databases-containers-items), shown in Figure 5-17.
 
@@ -173,7 +173,7 @@ You manage data in Cosmos DB data by creating [databases, containers, and items]
 
 **Figure 5-17**: Hierarchy of Cosmos DB entities
 
-Note in Figure 5-17 how you start by creating a Cosmos DB database inside of an Azure account. That database becomes the unit of management for a set of containers. A container is a schema-agnostic grouping of items that can be expressed as a collection, table, or graph, based on your selected API provider (discussed in the prior section). Items are the data that you add to the container and are represented as documents, rows, nodes, or edges. By default, all items that you add to a container are automatically indexed without requiring explicit index or schema management.
+Note in Figure 5-17 how you start by creating a Cosmos DB database inside of a database account. That database becomes the unit of management for a set of containers. A container is a schema-agnostic grouping of items that can be expressed as a collection, table, or graph, based on your selected API provider (discussed in the prior section). Items are the data that you add to the container and are represented as documents, rows, nodes, or edges. By default, all items that you add to a container are automatically indexed without requiring explicit index or schema management.
 
 To partition the container, items are divided into distinct subsets called [logical partitions](https://docs.microsoft.com/azure/cosmos-db/partition-data). Logical partitions are created based on the value of a partition key that is associated with each item in a container. Figure 5-18 shows how all items in a logical partition have the same partition key value.
 
@@ -187,7 +187,7 @@ Internally, Cosmos DB automatically manages the placement of [logical partitions
 
 ## Azure Redis Cache
 
-The benefits of caching to improve performance and scalability are well understood. 
+The benefits of caching to improve performance and scalability are well understood.
 
 For a cloud-native application, a common location to add caching is inside the API Gateway. The gateway serves as a front end for all incoming requests. By adding caching, you can increase performance and responsiveness by returning cached data and avoiding round-trips to a local database or downstream service. Figure 5-19 shows a caching architecture for a cloud-native application.
 

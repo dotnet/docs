@@ -17,9 +17,9 @@ helpviewer_keywords:
 ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
 ---
 # WPF Partial Trust Security
-<a name="introduction"></a> In general, Internet applications should be restricted from having direct access to critical system resources, to prevent malicious damage. By default, HTML and client-side scripting languages are not able to access critical system resources. Because Windows Presentation Foundation (WPF) browser-hosted applications can be launched from the browser, they should conform to a similar set of restrictions. To enforce these restrictions, [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] relies on both Code Access Security (CAS) and ClickOnce (see [WPF Security Strategy - Platform Security](wpf-security-strategy-platform-security.md)). By default, browser-hosted applications request the Internet zone CAS set of permissions, irrespective of whether they are launched from the Internet, the local intranet, or the local computer. Applications that run with anything less than the full set of permissions are said to be running with partial trust.  
+<a name="introduction"></a> In general, Internet applications should be restricted from having direct access to critical system resources, to prevent malicious damage. By default, HTML and client-side scripting languages are not able to access critical system resources. Because Windows Presentation Foundation (WPF) browser-hosted applications can be launched from the browser, they should conform to a similar set of restrictions. To enforce these restrictions, WPF relies on both Code Access Security (CAS) and ClickOnce (see [WPF Security Strategy - Platform Security](wpf-security-strategy-platform-security.md)). By default, browser-hosted applications request the Internet zone CAS set of permissions, irrespective of whether they are launched from the Internet, the local intranet, or the local computer. Applications that run with anything less than the full set of permissions are said to be running with partial trust.  
   
- [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] provides a wide variety of support to ensure that as much functionality as possible can be used safely in partial trust, and along with CAS, provides additional support for partial trust programming.  
+ WPF provides a wide variety of support to ensure that as much functionality as possible can be used safely in partial trust, and along with CAS, provides additional support for partial trust programming.  
   
  This topic contains the following sections:  
   
@@ -44,9 +44,9 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
 |Editing|Spell Checking<br /><br /> RichTextBox<br /><br /> Plaintext and Ink Clipboard Support<br /><br /> User-Initiated Paste<br /><br /> Copying Selected Content|  
 |Controls|General Controls|  
   
- This table covers the [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] features at a high level. For more detailed information, the Windows SDK documents the permissions that are required by each member in [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)]. Additionally, the following features have more detailed information regarding partial trust execution, including special considerations.  
+ This table covers the WPF features at a high level. For more detailed information, the Windows SDK documents the permissions that are required by each member in WPF. Additionally, the following features have more detailed information regarding partial trust execution, including special considerations.  
   
-- [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] (see [XAML Overview (WPF)](./advanced/xaml-overview-wpf.md)).  
+- [!INCLUDE[TLA2#tla_xaml](../../../includes/tla2sharptla-xaml-md.md)] (see [XAML Overview (WPF)](../../desktop-wpf/fundamentals/xaml.md)).  
   
 - Popups (see <xref:System.Windows.Controls.Primitives.Popup?displayProperty=nameWithType>).  
   
@@ -60,7 +60,7 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
   
 - Open File Dialog Box (see <xref:Microsoft.Win32.OpenFileDialog?displayProperty=nameWithType>).  
   
- The following table outlines the [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] features that are not safe to run within the limits of the Internet zone permission set.  
+ The following table outlines the WPF features that are not safe to run within the limits of the Internet zone permission set.  
   
  Table 2: WPF Features that are Not Safe in Partial Trust  
   
@@ -72,7 +72,7 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
   
 <a name="Partial_Trust_Programming"></a>   
 ## Partial Trust Programming  
- For [!INCLUDE[TLA2#tla_xbap](../../../includes/tla2sharptla-xbap-md.md)] applications, code that exceeds the default permission set will have different behavior depending on the security zone. In some cases, the user will receive a warning when they attempt to install it. The user can choose to continue or cancel the installation. The following table describes the behavior of the application for each security zone and what you have to do for the application to receive full trust.  
+ For XBAP applications, code that exceeds the default permission set will have different behavior depending on the security zone. In some cases, the user will receive a warning when they attempt to install it. The user can choose to continue or cancel the installation. The following table describes the behavior of the application for each security zone and what you have to do for the application to receive full trust.  
   
 |Security Zone|Behavior|Getting Full Trust|  
 |-------------------|--------------|------------------------|  
@@ -83,11 +83,11 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
 > [!NOTE]
 > The behavior described in the previous table is for full trust XBAPs that do not follow the ClickOnce Trusted Deployment model.  
   
- In general, code that may exceed the allowed permissions is likely to be common code that is shared between both standalone and browser-hosted applications. CAS and [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] offer several techniques for managing this scenario.  
+ In general, code that may exceed the allowed permissions is likely to be common code that is shared between both standalone and browser-hosted applications. CAS and WPF offer several techniques for managing this scenario.  
   
 <a name="Detecting_Permissions_using_CAS"></a>   
 ### Detecting Permissions Using CAS  
- In some situations, it is possible for shared code in library assemblies to be used by both standalone applications and [!INCLUDE[TLA2#tla_xbap#plural](../../../includes/tla2sharptla-xbapsharpplural-md.md)]. In these cases, code may execute functionality that could require more permissions than the application's awarded permission set allows. Your application can detect whether or not it has a certain permission by using Microsoft .NET Framework security. Specifically, it can test whether it has a specific permission by calling the <xref:System.Security.CodeAccessPermission.Demand%2A> method on the instance of the desired permission. This is shown in the following example, which has code that queries for whether it has the ability to save a file to the local disk:  
+ In some situations, it is possible for shared code in library assemblies to be used by both standalone applications and XBAPs. In these cases, code may execute functionality that could require more permissions than the application's awarded permission set allows. Your application can detect whether or not it has a certain permission by using Microsoft .NET Framework security. Specifically, it can test whether it has a specific permission by calling the <xref:System.Security.CodeAccessPermission.Demand%2A> method on the instance of the desired permission. This is shown in the following example, which has code that queries for whether it has the ability to save a file to the local disk:  
   
  [!code-csharp[PartialTrustSecurityOverviewSnippets#DetectPermsCODE1](~/samples/snippets/csharp/VS_Snippets_Wpf/PartialTrustSecurityOverviewSnippets/CSharp/FileHandling.cs#detectpermscode1)]
  [!code-vb[PartialTrustSecurityOverviewSnippets#DetectPermsCODE1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PartialTrustSecurityOverviewSnippets/VisualBasic/FileHandling.vb#detectpermscode1)]  
@@ -111,14 +111,14 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
   
 <a name="Browser_Host_Detection"></a>   
 ### Browser Host Detection  
- Using CAS to check for permissions is a suitable technique when you need to check on a per-permission basis. Although, this technique depends on catching exceptions as a part of normal processing, which is not recommended in general and can have performance issues. Instead, if your [!INCLUDE[TLA#tla_xbap](../../../includes/tlasharptla-xbap-md.md)] only runs within the Internet zone sandbox, you can use the <xref:System.Windows.Interop.BrowserInteropHelper.IsBrowserHosted%2A?displayProperty=nameWithType> property, which returns true for [!INCLUDE[TLA#tla_xbap#plural](../../../includes/tlasharptla-xbapsharpplural-md.md)].  
+ Using CAS to check for permissions is a suitable technique when you need to check on a per-permission basis. Although, this technique depends on catching exceptions as a part of normal processing, which is not recommended in general and can have performance issues. Instead, if your XAML browser application (XBAP) only runs within the Internet zone sandbox, you can use the <xref:System.Windows.Interop.BrowserInteropHelper.IsBrowserHosted%2A?displayProperty=nameWithType> property, which returns true for XAML browser applications (XBAPs).  
   
 > [!NOTE]
 > <xref:System.Windows.Interop.BrowserInteropHelper.IsBrowserHosted%2A> only distinguishes whether an application is running in a browser, not which set of permissions an application is running with.  
   
 <a name="Managing_Permissions"></a>   
 ## Managing Permissions  
- By default, [!INCLUDE[TLA2#tla_xbap#plural](../../../includes/tla2sharptla-xbapsharpplural-md.md)] run with partial trust (default Internet zone permission set). However, depending on the requirements of the application, it is possible to change the set of permissions from the default. For example, if an [!INCLUDE[TLA2#tla_xbap#plural](../../../includes/tla2sharptla-xbapsharpplural-md.md)] is launched from a local intranet, it can take advantage of an increased permission set, which is shown in the following table.  
+ By default, XBAPs run with partial trust (default Internet zone permission set). However, depending on the requirements of the application, it is possible to change the set of permissions from the default. For example, if an XBAPs is launched from a local intranet, it can take advantage of an increased permission set, which is shown in the following table.  
   
  Table 3: LocalIntranet and Internet Permissions  
   
@@ -153,7 +153,7 @@ ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
   
 - [Securing ClickOnce Applications](/visualstudio/deployment/securing-clickonce-applications).  
   
- If your [!INCLUDE[TLA2#tla_xbap](../../../includes/tla2sharptla-xbap-md.md)] requires full trust, you can use the same tools to increase the requested permissions. Although an [!INCLUDE[TLA2#tla_xbap](../../../includes/tla2sharptla-xbap-md.md)] will only receive full trust if it is installed on and launched from the local computer, the intranet, or from a URL that is listed in the browser's trusted or allowed sites. If the application is installed from the intranet or a trusted site, the user will receive the standard ClickOnce prompt notifying them of the elevated permissions. The user can choose to continue or cancel the installation.  
+ If your XBAP requires full trust, you can use the same tools to increase the requested permissions. Although an XBAP will only receive full trust if it is installed on and launched from the local computer, the intranet, or from a URL that is listed in the browser's trusted or allowed sites. If the application is installed from the intranet or a trusted site, the user will receive the standard ClickOnce prompt notifying them of the elevated permissions. The user can choose to continue or cancel the installation.  
   
  Alternatively, you can use the ClickOnce Trusted Deployment model for full trust deployment from any security zone. For more information, see [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview) and [Security](security-wpf.md).  
   

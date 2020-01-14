@@ -1,8 +1,6 @@
 ---
-title: Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8
+title: Install .NET Framework 3.5 on Windows 10, 8.1, 8
 description: Learn how to install the .NET Framework 3.5 on Windows 10, Windows 8.1 and Windows 8.
-author: rlander
-ms.author: mairaw
 ms.date: 07/16/2018
 ---
 # Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8
@@ -13,7 +11,7 @@ You may need the .NET Framework 3.5 to run an app on Windows 10, Windows 8.1, an
 
 You may see the following configuration dialog if you try to run an app that requires the .NET Framework 3.5. Choose **Install this feature** to enable the .NET Framework 3.5. This option requires an Internet connection.
 
-![.NET Framework Installation Dialog](./media/dotnet-framework-installation-dialog.jpg)
+![Screenshot of the .NET Framework installation dialog.](./media/dotnet-35-windows-10/dotnet-framework-installation-dialog.png)
 
 ### Why am I getting this pop-up?
 
@@ -23,11 +21,11 @@ The .NET Framework is created by Microsoft and provides an environment for runni
 
 You can enable the .NET Framework 3.5 through the Windows Control Panel. This option requires an Internet connection.
 
-1. Press the Windows key Windows ![Windows logo](https://i-msdn.sec.s-msft.com/dynimg/IC721376.jpeg) on your keyboard, type "Windows Features", and press Enter. The **Turn Windows features on or off** dialog box appears.
+1. Press the Windows key ![Screenshot of the Windows key logo.](./media/dotnet-35-windows-10/windows-keyboard-logo.png) on your keyboard, type "Windows Features", and press Enter. The **Turn Windows features on or off** dialog box appears.
 
 2. Select the **.NET Framework 3.5 (includes .NET 2.0 and 3.0)** check box, select **OK**, and reboot your computer if prompted.
 
-   ![Installing .NET with the control panel](./media/dotnet-control-panel.png)
+   ![Screenshot showing installation of .NET with the control panel.](./media/dotnet-35-windows-10/dotnet-control-panel.png)
 
    You don't need to select the child items for **Windows Communication Foundation (WCF) HTTP Activation** and **Windows Communication Foundation (WCF) Non-HTTP Activation** unless you're a developer or server administrator who requires this functionality.
 

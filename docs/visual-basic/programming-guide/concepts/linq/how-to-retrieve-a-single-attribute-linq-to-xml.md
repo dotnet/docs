@@ -1,5 +1,5 @@
 ---
-title: "How to: Retrieve a Single Attribute (LINQ to XML) (Visual Basic)"
+title: "How to: Retrieve a Single Attribute (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 11b938d7-c011-4048-900e-8b9183c41c94
 ---
@@ -26,7 +26,7 @@ Next
   
  This code produces the following output:  
   
-```  
+```console  
 home  
 work  
 ```  
@@ -49,7 +49,7 @@ Next
   
  This code produces the following output:  
   
-```  
+```console  
 home  
 work  
 ```  
@@ -81,7 +81,7 @@ End Module
   
  This code produces the following output:  
   
-```  
+```console  
 home  
 work  
 ```  

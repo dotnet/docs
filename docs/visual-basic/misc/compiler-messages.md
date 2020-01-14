@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic Compiler Messages"
+title: "Compiler Messages"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "compiler errors"

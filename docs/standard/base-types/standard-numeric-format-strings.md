@@ -1,5 +1,5 @@
 ---
-title: "Standard Numeric Format Strings"
+title: "Standard numeric format strings"
 ms.date: "06/10/2018"
 ms.technology: dotnet-standard
 dev_langs:
@@ -16,10 +16,8 @@ helpviewer_keywords:
   - "standard numeric format strings"
   - "formatting numbers [.NET Framework]"
   - "format specifiers, standard numeric format strings"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
-# Standard Numeric Format Strings
+# Standard numeric format strings
 
 Standard numeric format strings are used to format common numeric types. A standard numeric format string takes the form `Axx`, where:
 

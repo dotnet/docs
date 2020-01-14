@@ -1,5 +1,5 @@
 ---
-title: "Handling Reentrancy in Async Apps (Visual Basic)"
+title: "Handling Reentrancy in Async Apps"
 ms.date: 07/20/2015
 ms.assetid: ef3dc73d-13fb-4c5f-a686-6b84148bbffe
 ---
@@ -9,6 +9,9 @@ When you include asynchronous code in your app, you should consider and possibly
 
 > [!NOTE]
 > To run the example, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.
+
+> [!NOTE]
+> Transport Layer Security (TLS) version 1.2 is now the minimum version to use in your app development. If your app targets a .NET framework version earlier than 4.7, please refer to the following article for [Transport Layer Security (TLS) best practices with the .NET Framework](../../../../framework/network-programming/tls.md) 
 
 ## <a name="BKMK_RecognizingReentrancy"></a> Recognizing Reentrancy
 
@@ -555,7 +558,7 @@ The following section provides the code to build the example as a WPF app.
 
 4. In the list of project types, choose **WPF Application**.
 
-5. Name the project `WebsiteDownloadWPF`, and then choose the **OK** button.
+5. Name the project `WebsiteDownloadWPF`, choose .NET Framework version of 4.6 or higher and then click the **OK** button.
 
      The new project appears in **Solution Explorer**.
 
@@ -583,7 +586,9 @@ The following section provides the code to build the example as a WPF app.
 
      A simple window that contains a text box and a button appears in the **Design** view of MainWindow.xaml.
 
-8. Add a reference for <xref:System.Net.Http>.
+8. In **Solution Explorer**, right-click on **References** and select **Add Reference**.
+
+     Add a reference for <xref:System.Net.Http>, if it is not selected already.
 
 9. In **Solution Explorer**, open the shortcut menu for MainWindow.xaml.vb, and then choose **View Code**.
 
@@ -597,6 +602,8 @@ The following section provides the code to build the example as a WPF app.
     Class MainWindow
 
         Private Async Sub StartButton_Click(sender As Object, e As RoutedEventArgs)
+            System.Net.ServicePointManager.SecurityProtocol = System.Net.ServicePointManager.SecurityProtocol Or System.Net.SecurityProtocolType.Tls12
+
             ' This line is commented out to make the results clearer in the output.
             'ResultsTextBox.Text = ""
 

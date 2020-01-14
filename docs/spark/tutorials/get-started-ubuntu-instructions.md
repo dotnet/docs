@@ -74,7 +74,7 @@ For detailed instructions, you can see [Building .NET for Apache Spark from Sour
     cd <your-app-output-directory>
     ```
 
-- Create `people.json` with the following content:
+1. Create *people.json* with the following content:
 
     ```json
     {"name":"Michael"}

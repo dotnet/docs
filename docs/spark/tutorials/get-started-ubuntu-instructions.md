@@ -53,7 +53,7 @@ For detailed instructions, you can see [Building .NET for Apache Spark from Sour
             static void Main(string[] args)
             {
                 var spark = SparkSession.Builder().GetOrCreate();
-                var df = spark.Read().Json("people.json");
+                DataFrame df = spark.Read().Json("people.json");
                 df.Show();
             }
         }

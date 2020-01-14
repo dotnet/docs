@@ -12,7 +12,7 @@ ms.date: 11/4/2019
 -->
 ## Name
 
-`dotnet sln` - Options for the projects in a .NET Core solution file.
+`dotnet sln` - Options for listing or modifying the projects in a .NET Core solution file.
 
 ## Synopsis
 
@@ -73,7 +73,7 @@ Adds one or more projects to the solution file.
 #### Synopsis
 
 ```dotnetcli
-dotnet sln [<SOLUTION_FILE>] add [--in-root] [-s|--solution-folder <SOLUTION_FOLDER>] <PROJECT_PATH> [<PROJECT_PATH>...]
+dotnet sln [<SOLUTION_FILE>] add [--in-root] [-s|--solution-folder] <PROJECT_PATH> [<PROJECT_PATH>...]
 dotnet sln add [-h|--help]
 ```
 
@@ -81,7 +81,7 @@ dotnet sln add [-h|--help]
 
 - **`SOLUTION_FILE`**
 
-  The solution file to use. The command searches the current directory for one if it's left unspecified, failing if there are multiple solution files.
+  The solution file to use. If it is unspecified, the command searches the current directory for one and fails if there are multiple solution files.
 
 - **`PROJECT_PATH`**
 
@@ -116,7 +116,7 @@ dotnet sln [<SOLUTION_FILE>] remove [-h|--help]
 
 - **`SOLUTION_FILE`**
 
-  The solution file to use. The command searches the current directory for one if it's left unspecified, failing if there are multiple solution files.
+  The solution file to use. If is left unspecified, the command searches the current directory for one and fails if there are multiple solution files.
 
 - **`PROJECT_PATH`**
 

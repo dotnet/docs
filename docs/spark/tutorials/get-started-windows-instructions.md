@@ -31,7 +31,7 @@ For detailed instructions, you can see [Building .NET for Apache Spark from Sour
 
 ## Authoring a .NET for Apache Spark App
 
-- Open Visual Studio -> Create New Project -> Console App (.NET Core) -> Name: `HelloSpark`
+1. Open Visual Studio > **Create New Project** > **Console App (.NET Core)** > Name: `HelloSpark`.
 
   For detailed instructions, you can see [How to create the app in Visual Studio](https://docs.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio?tabs=csharp)
 

@@ -139,8 +139,7 @@ dotnet new globaljson --sdk-version 3.0.100
 ## Matching rules
 
 > [!NOTE]
-> The matching rules are governed by the apphost, which is part of the .NET Core runtime.
-> The latest version of the host is used when you have multiple runtimes installed side-by-side.
+> The matching rules are governed by the `dotnet.exe` entry point, which is common across all installed .NET Core installed runtimes. The matching rules for the latest installed version of the .NET Core Runtime are used when you have multiple runtimes installed side-by-side.
 
 ## [.NET Core 3.x](#tab/netcore3x)
 

@@ -7,7 +7,7 @@ ms.custom: mvc
 # Customer intent: As a developer, I want to write a simple custom application using .NET for Apache Spark on MacOSX.
 ---
 
-# Tutorial: Get Started with .NET for Apache Spark on MacOS
+# Tutorial: Get started with .NET for Apache Spark on macOS
 
 This tutorial will show you how to run a .NET for Apache Spark app using .NET Core on MacOSX.
 

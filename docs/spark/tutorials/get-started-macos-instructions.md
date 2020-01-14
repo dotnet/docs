@@ -92,7 +92,7 @@ This tutorial will show you how to run a .NET for Apache Spark app using .NET Co
     { "name" : "Justin", "age" : 19 }
     ```
     
-- Run your app
+1. Run your app
     
     ```bash
     spark-submit \

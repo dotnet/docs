@@ -38,9 +38,9 @@ The camelCasing convention, used only for parameter names, capitalizes the first
 `ioStream`
 `htmlTag`
 
-![Check-mark icon](../../media/check-mark.svg) **DO** use PascalCasing for all public member, type, and namespace names consisting of multiple words.
+![Check-mark icon](../../media/check-mark.png) **DO** use PascalCasing for all public member, type, and namespace names consisting of multiple words.
 
-![Check-mark icon](../../media/check-mark.svg) **DO** use camelCasing for parameter names.
+![Check-mark icon](../../media/check-mark.png) **DO** use camelCasing for parameter names.
 
 The following table describes the capitalization rules for different types of identifiers.
 
@@ -60,7 +60,7 @@ The following table describes the capitalization rules for different types of id
 
 Most compound terms are treated as single words for purposes of capitalization.
 
-![Not allowed icon](../../media/not-allowed.svg) **DO NOT** capitalize each word in so-called closed-form compound words.
+![X icon](../../media/x.png) **DO NOT** capitalize each word in so-called closed-form compound words.
 
 These are compound words written as a single word, such as endpoint. For the purpose of casing guidelines, treat a closed-form compound word as a single word. Use a current dictionary to determine if a compound word is written in closed form.
 
@@ -96,7 +96,7 @@ These are compound words written as a single word, such as endpoint. For the pur
 
 Languages that can run on the CLR are not required to support case-sensitivity, although some do. Even if your language supports it, other languages that might access your framework do not. Any APIs that are externally accessible, therefore, cannot rely on case alone to distinguish between two names in the same context.
 
-![Not allowed icon](../../media/not-allowed.svg) **DO NOT** assume that all programming languages are case sensitive. They are not. Names cannot differ by case alone.
+![X icon](../../media/x.png) **DO NOT** assume that all programming languages are case sensitive. They are not. Names cannot differ by case alone.
 
 *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*
 

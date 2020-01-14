@@ -7,7 +7,7 @@ ms.custom: mvc
 # Customer intent: As a developer, I want to write a simple custom application using .NET for Apache Spark on Windows.
 ---
 
-# Tutorial: Get Started with .NET for Apache Spark on Windows
+# Tutorial: Get started with .NET for Apache Spark on Windows
 
 This tutorial will show you how to run a .NET for Apache Spark app using .NET Core on Windows.
 

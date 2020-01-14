@@ -62,7 +62,7 @@ For detailed instructions, you can see [Building .NET for Apache Spark from Sour
 
 1. Use the .NET Core CLI to build the application:
 
-    ```shell
+    ```dotnetcli
     dotnet build
     ```
 

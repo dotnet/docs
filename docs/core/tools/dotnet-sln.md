@@ -131,38 +131,38 @@ dotnet sln list [-h|--help]
 
 ## Examples
 
-Add a C# project to a solution:
+- Add a C# project to a solution:
 
-```dotnetcli
-dotnet sln todo.sln add todo-app/todo-app.csproj
-```
+  ```dotnetcli
+  dotnet sln todo.sln add todo-app/todo-app.csproj
+  ```
 
-Remove a C# project from a solution:
+- Remove a C# project from a solution:
 
-```dotnetcli
-dotnet sln todo.sln remove todo-app/todo-app.csproj
-```
+  ```dotnetcli
+  dotnet sln todo.sln remove todo-app/todo-app.csproj
+  ```
 
-Add multiple C# projects to a solution:
+- Add multiple C# projects to a solution:
 
-```dotnetcli
-dotnet sln todo.sln add todo-app/todo-app.csproj back-end/back-end.csproj
-```
+  ```dotnetcli
+  dotnet sln todo.sln add todo-app/todo-app.csproj back-end/back-end.csproj
+  ```
 
-Remove multiple C# projects from a solution:
+- Remove multiple C# projects from a solution:
 
-```dotnetcli
-dotnet sln todo.sln remove todo-app/todo-app.csproj back-end/back-end.csproj
-```
+  ```dotnetcli
+  dotnet sln todo.sln remove todo-app/todo-app.csproj back-end/back-end.csproj
+  ```
 
-Add multiple C# projects to a solution using a globbing pattern (Unix/Linux only):
+- Add multiple C# projects to a solution using a globbing pattern (Unix/Linux only):
 
-```dotnetcli
-dotnet sln todo.sln add **/*.csproj
-```
+  ```dotnetcli
+  dotnet sln todo.sln add **/*.csproj
+  ```
 
-Remove multiple C# projects from a solution using a globbing pattern (Unix/Linux only):
+- Remove multiple C# projects from a solution using a globbing pattern (Unix/Linux only):
 
-```dotnetcli
-dotnet sln todo.sln remove **/*.csproj
-```
+  ```dotnetcli
+  dotnet sln todo.sln remove **/*.csproj
+  ```

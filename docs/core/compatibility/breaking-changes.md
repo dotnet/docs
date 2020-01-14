@@ -13,9 +13,6 @@ Select the .NET version that you're currently targeting and then the .NET Core v
 
 [!INCLUDE[versionselector](~/includes/core-changes/versionselector.md)]
 
-> [!TIP]
-> If you're migrating a Windows Forms app from .NET Framework to .NET Core, see [Breaking changes in Windows Forms (.NET Framework to .NET Core)](../porting/winforms-breaking-changes.md) instead of using the version selector.
-
 ## By area
 
 Select the .NET Core technology area that you're interested in. Individual changes are ordered by .NET Core version.

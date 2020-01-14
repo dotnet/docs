@@ -40,7 +40,7 @@ The section [Audit your code and make code changes](#audit-your-code-and-make-co
 
 This article explains how to enable the strongest security available for the version of the .NET Framework that your app targets and runs on. When an app explicitly sets a security protocol and version, it opts out of any other alternative, and opts out of .NET Framework and OS default behavior. If you want your app to be able to negotiate a TLS 1.2 connection, explicitly setting to a lower TLS version prevents a TLS 1.2 connection.
 
-If you can't avoid hardcoding a protocol version, we strongly recommend that you specify TLS 1.2. For guidance on identifying and removing TLS 1.0 dependencies, download the [Solving the TLS 1.0 Problem](https://www.microsoft.com/download/details.aspx?id=55266) whitepaper.
+If you can't avoid hardcoding a protocol version, we strongly recommend that you specify TLS 1.2. For guidance on identifying and removing TLS 1.0 dependencies, download the [Solving the TLS 1.0 Problem](https://www.microsoft.com/download/details.aspx?id=55266) white paper.
 
 WCF Supports TLS1.0, 1.1 and 1.2 as the default in .NET Framework 4.7. Starting with .NET Framework 4.7.1, WCF defaults to the operating system configured version. If an application is explicitly configured with `SslProtocols.None`, WCF uses the operating system default setting when using the NetTcp transport.
 

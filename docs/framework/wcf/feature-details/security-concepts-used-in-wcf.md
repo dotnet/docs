@@ -9,7 +9,7 @@ Windows Communication Foundation (WCF) security is built upon concepts already i
  WCF supports some of those infrastructures, such as Secure Sockets Layer (SSL) over HTTP (HTTPS). However, WCF goes beyond supporting existing security infrastructures by implementing newer interoperable security standards (such as WS-Security) over SOAP-encoded messages. Whether you are using existing mechanisms or new interoperable standards, the security concepts behind both are the same. Understanding the concepts behind existing infrastructures and the newer standards is central to implementing the best security model for an application.  
   
 ## Introduction to Security for WCF Web Services  
- The Microsoft Patterns and Practices group wrote an in-depth whitepaper on WCF security guidance which is available for download here: [WCF Security Guide](https://go.microsoft.com/fwlink/?LinkId=210210). This whitepaper describes the fundamental security concepts as they relate to web services, key WCF security concepts, intranet application scenarios, and internet application scenarios.  
+ The Microsoft Patterns and Practices group wrote an in-depth white paper on WCF security guidance which is available for download here: [WCF Security Guide](https://go.microsoft.com/fwlink/?LinkId=210210). This white paper describes the fundamental security concepts as they relate to web services, key WCF security concepts, intranet application scenarios, and internet application scenarios.  
   
 ## Industry-Wide Security Specifications  
   

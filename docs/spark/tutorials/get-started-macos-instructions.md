@@ -105,7 +105,7 @@ This tutorial shows you how to run a .NET for Apache Spark app using .NET Core o
     > [!NOTE]
     > This command assumes you have downloaded Apache Spark and added it to your PATH environment variable to be able to use `spark-submit`. Otherwise, you would have to use the full path (for example, `~/spark/bin/spark-submit`).
     
-1. The output of the application should look similar to the output below:
+1. The output of the application should look similar to the following output:
     
     ```text
     +----+-------+

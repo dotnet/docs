@@ -44,7 +44,7 @@ The first step is to create a new application. Open a command prompt and
 create a new directory for your application. Make that the current
 directory. Enter the following command in a console window:
 
-```console
+```dotnetcli
 dotnet new console --name WebApiClient
 ```
 

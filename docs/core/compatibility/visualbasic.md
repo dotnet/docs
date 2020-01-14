@@ -29,5 +29,3 @@ The following is a list of breaking changes in Visual Basic:
 ## .NET Core 3.0 Preview 8
 
 [!INCLUDE[vbNewLine is obsolete](~/includes/core-changes/visualbasic/3.0/vbnewline-is-obsolete.md)]
-
-***

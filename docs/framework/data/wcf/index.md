@@ -37,8 +37,8 @@ Just show me some code...
 
 I want to know more about OData...
 
-- [Whitepaper: Introducing OData](https://download.microsoft.com/download/E/5/A/E5A59052-EE48-4D64-897B-5F7C608165B8/IntroducingOData.pdf)
-- [Open Data Protocol Web site](https://www.odata.org/)
+- [White paper: Introducing OData](https://download.microsoft.com/download/E/5/A/E5A59052-EE48-4D64-897B-5F7C608165B8/IntroducingOData.pdf)
+- [Open Data Protocol website](https://www.odata.org/)
 - [OData: SDK](https://www.odata.org/ecosystem/)
 
 I want to see end-to-end samples...

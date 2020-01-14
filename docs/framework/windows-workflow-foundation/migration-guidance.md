@@ -15,7 +15,8 @@ In the .NET Framework 4, Microsoft is releasing the second major version of Wind
   
  Thus, the decision to adopt the .NET Framework 4 is decoupled from your decision to move to WF4 (System.Activities.\*) from WF3 (System.Workflow.\*). This topic provides links to WF migration guidance that provides information about working with WF3 and WF4.  
   
-## WF Migration Whitepapers and Cookbooks  
+## WF migration white papers and cookbooks
+
  The [WF Migration Overview](https://docs.microsoft.com/previous-versions/appfabric/ff383417(v=azure.10)) topic provides a broad overview of the relationship between WF3 and WF4 and migration strategies. Companion topics drill into specific topics.  
   
  [WF Migration Overview](https://docs.microsoft.com/previous-versions/appfabric/ff383417(v=azure.10))  

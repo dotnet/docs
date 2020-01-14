@@ -1,14 +1,14 @@
 ---
-title: .NET Standard guide
+title: .NET guide
 description: Learn about .NET and .NET Standard.
 author: cartermp
 ms.date: 12/27/2019
 ms.technology: dotnet-standard
 ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
 ---
-# .NET Standard guide
+# .NET guide
 
-The .NET Standard guide provides information about .NET Standard. Depending on your familiarity with .NET, you may wish to explore different sections of this guide and other guides such as [.NET Core](../core/index.md) or [.NET Framework](../framework/index.md).
+The .NET guide provides information about .NET. Depending on your familiarity with .NET, you may wish to explore different sections of this guide and other guides such as [.NET Core](../core/index.md) or [.NET Framework](../framework/index.md).
 
 ## New to .NET
 
@@ -20,7 +20,7 @@ If you prefer to have a guided tour through major features of .NET, see [Tour of
 
 For an overview of the various pieces of .NET and how they fit together, see [.NET architectural components](components.md).
 
-## Port .NET Framework code or NuGet packages
+## Port .NET Framework code to .NET Standard or .NET Core
 
 To port an application, service, component, or NuGet package to .NET Standard or .NET Core, see [Port to .NET Core from .NET Framework](../core/porting/index.md). Tooling for .NET Standard and .NET Core is shared, so the content is relevant for porting to both frameworks.
 

@@ -78,7 +78,7 @@ This tutorial will show you how to run a .NET for Apache Spark app using .NET Co
 
 ## Running your .NET for Apache Spark App
 
-- Open your terminal and navigate into your app folder:
+1. Open your terminal and navigate into your app folder:
     
     ```bash
     cd <your-app-output-directory>

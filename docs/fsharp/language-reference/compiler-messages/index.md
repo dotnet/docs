@@ -16,4 +16,4 @@ If a particular warning or error is not yet recorded in this section, go to the 
 
 ## See also
 
-- [F# Compiler Options](../compiler-options/index.md)
+- [F# Compiler Options](../compiler-options.md)

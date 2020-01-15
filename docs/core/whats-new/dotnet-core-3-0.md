@@ -492,7 +492,7 @@ System.Console.WriteLine($"RuntimeInformation.FrameworkDescription: {System.Runt
 
 ### Fast built-in JSON support
 
-.NET users have largely relied on [Newtonsoft.Json (Json.NET)](https://www.newtonsoft.com/json) and other popular JSON libraries, which continue to be good choices. `Newtonsoft.Json` uses .NET strings as its base datatype, which is UTF-16 under the hood.
+.NET users have largely relied on [Newtonsoft.Json](https://www.newtonsoft.com/json) and other popular JSON libraries, which continue to be good choices. `Newtonsoft.Json` uses .NET strings as its base datatype, which is UTF-16 under the hood.
 
 The new built-in JSON support is high-performance, low allocation, and works with UTF-8 encoded JSON text. For more information about the <xref:System.Text.Json> namespace and types, see the following articles:
 

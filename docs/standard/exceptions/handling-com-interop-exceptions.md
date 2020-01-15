@@ -27,7 +27,7 @@ Longjump interop is held to the same constraints as exception handling and is cu
 
 When unmanaged code moves on through a `longjmp` instruction, the runtime observes different behaviors between Windows and Unix operating systems. On Windows, there is support to unwind the stack properly when dealing with exceptions thrown by external components. On the other hand, Unix does not support exception interop as currently the Unix ABI has no definition for it. Therefore, exceptions thrown this way end up resulting in unpredictable behaviors and potential crashes.
 
-For further information, take a look at `longjmp` [documentation](https://docs.microsoft.com/en-us/cpp/c-runtime-library/reference/longjmp).
+For further information, take a look at `longjmp` [documentation](https://docs.microsoft.com/cpp/c-runtime-library/reference/longjmp).
 
 ## See also
 

@@ -14,18 +14,62 @@ helpviewer_keywords:
 
 This article shows how to migrate from [Newtonsoft.Json](https://www.newtonsoft.com/json) to <xref:System.Text.Json>.
 
- `System.Text.Json` focuses primarily on performance, security, and standards compliance. It has some key differences in default behavior and doesn't aim to have feature parity with `Newtonsoft.Json`. For some scenarios, `System.Text.Json` has no built-in functionality, but there are recommended workarounds. For other scenarios, workarounds are impractical. If your application depends on a missing feature, consider [filing an issue](https://github.com/dotnet/runtime/issues/new) to find out if support for your scenario can be added.
+`System.Text.Json` focuses primarily on performance, security, and standards compliance. It has some key differences in default behavior and doesn't aim to have feature parity with `Newtonsoft.Json`. For some scenarios, `System.Text.Json` has no built-in functionality, but there are recommended workarounds. For other scenarios, workarounds are impractical. If your application depends on a missing feature, consider [filing an issue](https://github.com/dotnet/runtime/issues/new) to find out if support for your scenario can be added.
 
 <!-- For information about which features might be added in future releases, see the [Roadmap](https://github.com/dotnet/runtime/tree/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/roadmap/README.md). [Restore this when the roadmap is updated.]-->
 
 Most of this article is about how to use the <xref:System.Text.Json.JsonSerializer> API, but it also includes guidance on how to use the <xref:System.Text.Json.JsonDocument> (which represents the Document Object Model or DOM), <xref:System.Text.Json.Utf8JsonReader>, and <xref:System.Text.Json.Utf8JsonWriter> types. The article is organized into sections in the following order:
 
+* [Table of differences between Newtonsoft.Json and System.Text.Json](#table-of-differences-between-newtonsoftjson-and-systemtextjson)
 * [Differences in **default** JsonSerializer behavior compared to Newtonsoft.Json](#differences-in-default-jsonserializer-behavior-compared-to-newtonsoftjson)
 * [Scenarios using JsonSerializer that require workarounds](#scenarios-using-jsonserializer-that-require-workarounds)
 * [Scenarios that JsonSerializer currently doesn't support](#scenarios-that-jsonserializer-currently-doesnt-support)
 * [JsonDocument and JsonElement compared to JToken (like JObject, JArray)](#jsondocument-and-jsonelement-compared-to-jtoken-like-jobject-jarray)
 * [Utf8JsonReader compared to JsonTextReader](#utf8jsonreader-compared-to-jsontextreader)
 * [Utf8JsonWriter compared to JsonTextWriter](#utf8jsonwriter-compared-to-jsontextwriter)
+
+## Table of differences between Newtonsoft.Json and System.Text.Json
+
+| `Newtonsoft.Json` feature                           | `System.Text.Json` equivalent |
+|-----------------------------------------------------|-------------------------------|
+| Case-insensitive deserialization by default         | [PropertyNameCaseInsensitive global setting](#case-insensitive-deserialization) |
+| Allow comments                                      | [ReadCommentHandling global setting](#comments) |
+| Allow trailing commas                               | [AllowTrailingCommas global setting](#trailing-commas) |
+| Allow property names without quotes                 | [Not supported](#json-strings-property-names-and-string-values) |
+| Allow single quotes around string values            | [Not supported](#json-strings-property-names-and-string-values) |
+| Allow non-string JSON values for string properties  | [Not supported](#non-string-values-for-string-properties) |
+| Custom converter registration                       | [Order of precedence differs](#converter-registration-precedence) |
+| Minimal character escaping                          | [Strict character escaping, configurable](#character-escaping) |
+| Deserialize inferred type to `object` properties    | [Requires a custom converter, sample provided](#deserialization-of-object-properties) |
+| No maximum depth by default                         | [Default maximum depth 64, configurable](#maximum-depth) |
+| `DateTimeZoneHandling`, `DateFormatString` settings | [Requires a custom converter, sample provided](#specify-date-format) |
+| Deserialize strings as numbers                      | [Requires a custom converter, sample provided](#quoted-numbers) |
+| Deserialize `Dictionary` with non-string key        | [Requires a custom converter, sample provided](#dictionary-with-non-string-key) |
+| Polymorphic serialization                           | [Requires a custom converter, sample provided](#polymorphic-serialization) |
+| Polymorphic deserialization                         | [Requires a custom converter, sample provided](#polymorphic-serialization) |
+| Required properties                                 | [Requires a custom converter, sample provided](#required-properties) |
+| Deserialize JSON `null` literal to non-nullable types | [Requires a custom converter, sample provided](#deserialize-null-to-non-nullable-type) |
+| Deserialize to immutable classes and structs        | [Requires a custom converter, sample provided](#deserialize-to-immutable-classes-and-structs) |
+| `[JsonConstructor]` attribute                       | [Requires a custom converter, sample provided](#specify-constructor-to-use) |
+| Use `DefaultContractResolver` to include or exclude properties | [Requires a custom converter, sample provided](#conditionally-ignore-a-property) |
+| `NullValueHandling.Ignore` global setting           | [IgnoreNullValues global option](#omit-null-value-properties) |
+| `NullValueHandling.Ignore` setting on `[JsonProperty]` attribute | [Requires a custom converter, sample provided](#conditionally-ignore-a-property)  |
+| `DefaultValueHandling` global setting               |[Requires a custom converter, sample provided](#conditionally-ignore-a-property) |
+| `DefaultValueHandling` setting on `[JsonProperty]` attribute | [Requires a custom converter, sample provided](#conditionally-ignore-a-property)  |
+| Callbacks                                           | [Requires a custom converter, sample provided](#callbacks) |
+| Support for a broad range of types                  | [Some types require custom converters](#types-without-built-in-support) |
+| Support for public and non-public fields            | [Requires a custom converter](#public-and-non-public-fields) |
+| Support for internal and private property setters and getters | [Requires a custom converter](#internal-and-private-property-setters-and-getters) |
+| `PreserveReferencesHandling` global setting         | [Not supported](#preserve-object-references-and-handle-loops) |
+| `ReferenceLoopHandling` global setting              | [Not supported](#preserve-object-references-and-handle-loops) |
+| Support for `System.Runtime.Serialization` attributes | [Not supported](#systemruntimeserialization-attributes) |
+| `JsonConvert.PopulateObject` method                 | [Requires a custom converter](#populate-existing-objects) |
+| `ObjectCreationHandling` global setting             | [Requires a custom converter](#reuse-rather-than-replace-properties) |
+| Add to collections without setters                  | [Requires a custom converter](#add-to-collections-without-setters) |
+| `MissingMemberHandling` global setting              | [Not supported](#missingmemberhandling) |
+| `JToken` (like `JObject`, `JArray`)                 | [JsonDocument and JsonElement](#jsondocument-and-jsonelement-compared-to-jtoken-like-jobject-jarray) |
+| `JsonTextReader`                                    | [Utf8JsonReader](#utf8jsonreader-compared-to-jsontextreader) |
+| `JsonTextWriter`                                    | [Utf8JsonWriter](#utf8jsonwriter-compared-to-jsontextwriter) |
 
 ## Differences in default JsonSerializer behavior compared to Newtonsoft.Json
 

@@ -3,7 +3,7 @@ title: Characteristics of modern web applications
 description: Architect Modern Web Applications with ASP.NET Core and Azure | Characteristics of modern web applications
 author: ardalis
 ms.author: wiwagn
-ms.date: 12/4/2019
+ms.date: 12/04/2019
 ---
 
 # Characteristics of Modern Web Applications
@@ -56,11 +56,11 @@ Many web applications involve a combination of traditional web application behav
 
 ## Simple development and deployment
 
-ASP.NET Core applications can be written using simple text editors and command line interfaces, or full-featured development environments like Visual Studio. Monolithic applications are typically deployed to a single endpoint. Deployments can easily be automated to occur as part of a continuous integration (CI) and continuous delivery (CD) pipeline. In addition to traditional CI/CD tools, Windows Azure has integrated support for git repositories and can automatically deploy updates as they are made to a specified git branch or tag. Azure DevOps provides a full-featured CI/CD build and deployment pipeline, and GitHub Actions provide another option for projects hosted there.
+ASP.NET Core applications can be written using simple text editors and command-line interfaces, or full-featured development environments like Visual Studio. Monolithic applications are typically deployed to a single endpoint. Deployments can easily be automated to occur as part of a continuous integration (CI) and continuous delivery (CD) pipeline. In addition to traditional CI/CD tools, Microsoft Azure has integrated support for git repositories and can automatically deploy updates as they are made to a specified git branch or tag. Azure DevOps provides a full-featured CI/CD build and deployment pipeline, and GitHub Actions provide another option for projects hosted there.
 
 ## Traditional ASP.NET and Web Forms
 
-In addition to ASP.NET Core, traditional ASP.NET 4.x continues to be a robust and reliable platform for building web applications. ASP.NET supports MVC and Web API development models, as well as Web Forms, which is well-suited to rich page-based application development and features a rich third-party component ecosystem. Windows Azure has great longstanding support for ASP.NET 4.x applications, and many developers are familiar with this platform.
+In addition to ASP.NET Core, traditional ASP.NET 4.x continues to be a robust and reliable platform for building web applications. ASP.NET supports MVC and Web API development models, as well as Web Forms, which is well suited to rich page-based application development and features a rich third-party component ecosystem. Microsoft Azure has great longstanding support for ASP.NET 4.x applications, and many developers are familiar with this platform.
 
 ## Blazor
 
@@ -73,7 +73,7 @@ Blazor is included with ASP.NET Core 3.0 and later. It provides a new mechanism 
 > - **Testing in ASP.NET Core**  
 >   <https://docs.microsoft.com/aspnet/core/testing/>
 > - **Blazor - Get Started**  
->   <(https://blazor.net/docs/get-started.html>
+>   <https://blazor.net/docs/get-started.html>
 
 >[!div class="step-by-step"]
 >[Previous](index.md)

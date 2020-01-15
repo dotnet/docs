@@ -3,7 +3,7 @@ title: Common client side web technologies
 description: Architect Modern Web Applications with ASP.NET Core and Azure | Common client side web technologies
 author: ardalis
 ms.author: wiwagn
-ms.date: 12/4/2019
+ms.date: 12/04/2019
 ---
 # Common client side web technologies
 
@@ -14,11 +14,12 @@ ASP.NET Core applications are web applications and they typically rely on client
 
 While HTML and CSS are relatively stable, JavaScript, by means of the application frameworks and utilities developers work with to build web-based applications, is evolving at breakneck speed. This chapter looks at a few ways JavaScript is used by web developers as part of developing applications, as provides a high-level overview of the Angular and React client side libraries.
 
-**Note:** Blazor provides an alternative to JavaScript frameworks for building rich, interactive client user interfaces. Client-side Blazor support is still in preview so for now it is out of scope for this chapter.
+> [!NOTE]
+> Blazor provides an alternative to JavaScript frameworks for building rich, interactive client user interfaces. Client-side Blazor support is still in preview, so for now it's out of scope for this chapter.
 
 ## HTML
 
-HTML (HyperText Markup Language) is the standard markup language used to create web pages and web applications. Its elements form the building blocks of pages, representing formatted text, images, form inputs, and other structures. When a browser makes a request to a URL, whether fetching a page or an application, the first thing that is returned is an HTML document. This HTML document may reference or include additional information about its look and layout in the form of CSS, or behavior in the form of JavaScript.
+HTML is the standard markup language used to create web pages and web applications. Its elements form the building blocks of pages, representing formatted text, images, form inputs, and other structures. When a browser makes a request to a URL, whether fetching a page or an application, the first thing that is returned is an HTML document. This HTML document may reference or include additional information about its look and layout in the form of CSS, or behavior in the form of JavaScript.
 
 ## CSS
 

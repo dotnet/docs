@@ -3,7 +3,7 @@ title: Choose between traditional web apps and single page apps
 description: Learn how to choose between traditional web apps and single page applications (SPAs) when building web applications.
 author: ardalis
 ms.author: wiwagn
-ms.date: 12/4/2019
+ms.date: 12/04/2019
 ---
 
 # Choose Between Traditional Web Apps and Single Page Apps (SPAs)
@@ -29,7 +29,7 @@ You should use a SPA when:
 
 - Your application must already expose an API for other (internal or public) clients.
 
-Additionally, SPA frameworks require greater architectural and security expertise. They experience greater churn due to frequent updates and new frameworks than traditional web applications. Configuring automated build and deployment processes and utilizing deployment options like containers mahy be more difficult with SPA applications than traditional web apps.
+Additionally, SPA frameworks require greater architectural and security expertise. They experience greater churn due to frequent updates and new frameworks than traditional web applications. Configuring automated build and deployment processes and utilizing deployment options like containers may be more difficult with SPA applications than traditional web apps.
 
 Improvements in user experience made possible by the SPA approach must be weighed against these considerations.
 

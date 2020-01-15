@@ -10,7 +10,7 @@ The topics in the section describe service hosting. A service can be hosted by I
   
 ## In This Section  
  [Hosting in Internet Information Services](../../../../docs/framework/wcf/feature-details/hosting-in-internet-information-services.md)  
- Describes how a Windows Communication Foundation (WCF) service is hosted in Internet Information Services or [Windows Server AppFabric](https://msdn.microsoft.com/library/aa139632.aspx).  
+ Describes how a Windows Communication Foundation (WCF) service is hosted in Internet Information Services or [Windows Server AppFabric](https://docs.microsoft.com/previous-versions/appfabric/ff384253(v=azure.10)).  
   
  [Hosting in Windows Process Activation Service](../../../../docs/framework/wcf/feature-details/hosting-in-windows-process-activation-service.md)  
  Describes how a WCF service is hosted by Windows Process Activation Service.  

@@ -31,7 +31,7 @@ The installation process for .NET Framework automatically registers WCF with IIS
 
 - Windows 7 and Windows Server 2003: Use the [ServiceModel Registration Tool (ServiceModelReg.exe)](../../../../docs/framework/wcf/servicemodelreg-exe.md) tool to register WCF with IIS. To use this tool, type **ServiceModelReg.exe /i /x** in the [Developer Command Prompt for Visual Studio](../../tools/developer-command-prompt-for-vs.md).
 
-- Windows 7: Finally, you must verify that ASP.NET is configured to use the .NET Framework version 4 or later. You do this by running the ASPNET_Regiis tool with the `–i` option. For more information, see [ASP.NET IIS Registration Tool](https://docs.microsoft.com/previous-versions/k6h9cz8h(v=vs.140)).
+- Windows 7: Finally, you must verify that ASP.NET is configured to use the .NET Framework version 4 or later. You do this by running the ASPNET_Regiis tool with the `–i` option. For more information, see [ASP.NET IIS Registration Tool](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/k6h9cz8h(v=vs.90)).
 
 ## Create a New IIS Application or Reuse an Existing ASP.NET Application
 
@@ -65,7 +65,7 @@ WCF services hosted in IIS use the same dynamic compilation model as ASP.NET 2.0
 
 - As uncompiled code placed directly in the .svc file. Implementation code can also be located inline in the service’s .svc file, after the \@ServiceHost directive. Any changes to inline code cause the application to be recycled and recompiled when the next request is received.
 
-For more information about the ASP.NET 2.0 compilation model, see [ASP.NET Compilation Overview](https://docs.microsoft.com/previous-versions/ms178466(v=vs.140)).
+For more information about the ASP.NET 2.0 compilation model, see [ASP.NET Compilation Overview](https://docs.microsoft.com/previous-versions/aspnet/ms178466(v=vs.100)).
 
 ## Configure the WCF Service
 

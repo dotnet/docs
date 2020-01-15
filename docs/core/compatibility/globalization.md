@@ -5,7 +5,7 @@ ms.date: "09/20/2019"
 ---
 # Globalization breaking changes
 
-The following is a list of breaking changes in globalization:
+The following breaking changes are documented on this page:
 
 - ["C" locale maps to the invariant locale](#c-locale-maps-to-the-invariant-locale)
 

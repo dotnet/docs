@@ -7,9 +7,9 @@ ms.author: "scaddie"
 ---
 # ASP.NET Core breaking changes
 
-The following is a list of ASP.NET Core breaking changes by ASP.NET Core version. ASP.NET Core provides the web app development features used by .NET Core.
+ASP.NET Core provides the web app development features used by .NET Core.
 
-Index:
+The following breaking changes are documented on this page:
 
 - [HTTP: Browser SameSite changes impact authentication](#http-browser-samesite-changes-impact-authentication)
 - [Obsolete Antiforgery, CORS, Diagnostics, MVC, and Routing APIs removed](#obsolete-antiforgery-cors-diagnostics-mvc-and-routing-apis-removed)

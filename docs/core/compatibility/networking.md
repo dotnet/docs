@@ -5,7 +5,7 @@ ms.date: "10/03/2019"
 ---
 # Networking breaking changes
 
-The following is a list of breaking changes in networking:
+The following breaking changes are documented on this page:
 
 - [Default value of HttpRequestMessage.Version changed to 1.1](#default-value-of-httprequestmessageversion-changed-to-11)
 

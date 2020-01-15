@@ -5,9 +5,9 @@ ms.date: "09/20/2019"
 ---
 # CoreFx breaking changes
 
-The following is a list of CoreFx breaking changes. CoreFx provides the primitives and other general types used by .NET Core.
+CoreFx provides the primitives and other general types used by .NET Core.
 
-Index:
+The following breaking changes are documented on this page:
 
 - [APIs that report version now report product and not file version](#apis-that-report-version-now-report-product-and-not-file-version)
 - [Custom EncoderFallbackBuffer instances cannot fall back recursively](#custom-encoderfallbackbuffer-instances-cannot-fall-back-recursively)

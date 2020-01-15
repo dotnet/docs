@@ -5,7 +5,7 @@ ms.date: "09/20/2019"
 ---
 # Cryptography breaking changes
 
-The following is a list of cryptography-related breaking changes:
+The following breaking changes are documented on this page:
 
 - [EnvelopedCms defaults to AES-256 encryption](#envelopedcms-defaults-to-aes-256-encryption)
 - [Minimum size for RSAOpenSsl key generation has increased](#minimum-size-for-rsaopenssl-key-generation-has-increased)

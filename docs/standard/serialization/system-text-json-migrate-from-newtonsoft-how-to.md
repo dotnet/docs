@@ -132,17 +132,6 @@ To implement type inference for `object` properties, create a converter like the
 
 `Newtonsoft.Json` doesn't have a maximum depth limit by default. For <xref:System.Text.Json> there's a default limit  of 64, and it's configurable by setting <xref:System.Text.Json.JsonSerializerOptions.MaxDepth?displayProperty=nameWithType>.
 
-### Stack type handling
-
-In <xref:System.Text.Json>, the order of a stack's contents is reversed when it's serialized. This behavior applies to the following types and interface and user-defined types that derive from them:
-
-* <xref:System.Collections.Stack>
-* <xref:System.Collections.Generic.Stack%601>
-* <xref:System.Collections.Immutable.ImmutableStack%601>
-* <xref:System.Collections.Immutable.IImmutableStack%601>
-
-A custom converter could be implemented to keep stack contents in the same order.
-
 ### Omit null-value properties
 
 `Newtonsoft.Json` has a global setting that causes null-value properties to be excluded from serialization: [NullValueHandling.Ignore](https://www.newtonsoft.com/json/help/html/T_Newtonsoft_Json_NullValueHandling.htm). The corresponding option in <xref:System.Text.Json> is <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues%2A>.

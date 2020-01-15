@@ -5,6 +5,18 @@ ms.date: 09/17/2019
 ---
 # About .NET Core
 
+.NET Core is a [.NET Foundation project](https://dotnetfoundation.org/), maintained by Microsoft and the .NET community on [GitHub](https://github.com/dotnet/core)
+
+## Support
+
+.NET Core is [supported by Microsoft](https://dotnet.microsoft.com/platform/support/policy), on Windows, macOS, and Linux. It's updated for security and quality monthly.
+
+.NET Core binary distributions are built and tested on Microsoft-maintained servers in Azure and supported just like any Microsoft product.
+
+[Red Hat supports .NET Core](http://redhatloves.net/) on Red Hat Enterprise Linux (RHEL). Red Hat builds .NET Core from source and makes it available in the [Red Hat Software Collections](https://developers.redhat.com/products/softwarecollections/overview/). Red Hat and Microsoft collaborate to ensure that .NET Core works well on RHEL.
+
+## Characteristics
+
 .NET Core has the following characteristics:
 
 - **Cross-platform:** Runs on Windows, macOS, and Linux [operating systems](https://github.com/dotnet/core/blob/master/os-lifecycle-policy.md).

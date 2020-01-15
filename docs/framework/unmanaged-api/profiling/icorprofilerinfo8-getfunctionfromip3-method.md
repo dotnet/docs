@@ -24,7 +24,7 @@ HRESULT GetFunctionFromIP3([in] LPCBYTE ip,
                            [out] ReJITID * pReJitId);
 ```
 
-#### Parameters
+## Parameters
 
 `ip` \
 [in] The instruction pointer in managed code.

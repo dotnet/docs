@@ -27,13 +27,16 @@ HRESULT ExceptionCatcherEnter(
     [in] ObjectID   objectId);  
 ```  
   
-## Parameters  
- `functionId`  
- [in] The identifier of the function containing the `catch` block.  
+## Parameters
+
+- `functionId`
+
+  \[in] The identifier of the function containing the `catch` block.
   
- `objectId`  
- [in] The identifier of the exception being handled.  
-  
+- `objectId`
+
+  \[in] The identifier of the exception being handled.
+
 ## Remarks  
  The `ExceptionCatcherEnter` method is called only if the catch point is in code compiled with the just-in-time (JIT) compiler. An exception that is caught in unmanaged code or in the internal code of the runtime will not call this notification. The `objectId` value is passed again since a garbage collection could have moved the object since the `ExceptionThrown` notification.  
   

@@ -25,8 +25,10 @@ void __stdcall FunctionLeave3(FunctionOrRemappedID functionOrRemappedID);
 ```  
   
 ## Parameters  
- `functionOrRemappedID`  
- [in] The identifier of the function from which control is returned.  
+
+- `functionOrRemappedID`
+
+  \[in] The identifier of the function from which control is returned.
   
 ## Remarks  
  The `FunctionLeave3` callback function notifies the profiler as functions are being called, but does not support return value inspection. Use the [ICorProfilerInfo3::SetEnterLeaveFunctionHooks3 method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-setenterleavefunctionhooks3-method.md) to register your implementation of this function.  

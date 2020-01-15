@@ -25,19 +25,23 @@ HRESULT GetILToNativeMapping3( [in]  UINT_PTR pNativeCodeStartAddress,
                                [out] COR_DEBUG_IL_TO_NATIVE_MAP map[]);
 ```
 
-#### Parameters
+## Parameters
 
-`pNativeCodeStartAddress` \
-[in] A pointer to the start of a native function.
+- `pNativeCodeStartAddress`
 
-`cMap` \
-[in] The maximum size of the `map` array.
+  \[in] A pointer to the start of a native function.
 
-`pcMap` \
-[out] The total number of available COR_DEBUG_IL_TO_NATIVE_MAP structures.
+- `cMap`
 
-`map` \
-[out] An array of [COR_DEBUG_IL_TO_NATIVE_MAP](../debugging/cor-debug-il-to-native-map-structure.md) structures, each of which specifies the offsets. After the `GetILToNativeMapping3` method returns, `map` will contain some or all of the `COR_DEBUG_IL_TO_NATIVE_MAP` structures.
+  \[in] The maximum size of the `map` array.
+
+- `pcMap`
+
+  \[out] The total number of available COR_DEBUG_IL_TO_NATIVE_MAP structures.
+
+- `map`
+
+  \[out] An array of [COR_DEBUG_IL_TO_NATIVE_MAP](../debugging/cor-debug-il-to-native-map-structure.md) structures, each of which specifies the offsets. After the `GetILToNativeMapping3` method returns, `map` will contain some or all of the `COR_DEBUG_IL_TO_NATIVE_MAP` structures.
 
 ## Remarks
 

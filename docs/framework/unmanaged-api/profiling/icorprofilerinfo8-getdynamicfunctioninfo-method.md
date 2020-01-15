@@ -28,7 +28,7 @@ HRESULT GetDynamicFunctionInfo( [in]  FunctionID              functionId,
                                 [out] WCHAR                   wszName[]);
 ```
 
-#### Parameters
+## Parameters
 
 `functionId` \
 [in] The ID of the function for which to retrieve information.

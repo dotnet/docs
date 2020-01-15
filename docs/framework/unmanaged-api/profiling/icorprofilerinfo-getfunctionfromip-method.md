@@ -27,13 +27,16 @@ HRESULT GetFunctionFromIP(
     [out] FunctionID *pFunctionId);  
 ```  
   
-## Parameters  
- `ip`  
- [in] The instruction pointer in managed code.  
-  
- `pFunctionId`  
- [out] The returned function ID.  
-  
+## Parameters
+
+- `ip`
+
+  \[in] The instruction pointer in managed code.
+
+- `pFunctionId`
+
+  \[out] The returned function ID.
+
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   

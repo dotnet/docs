@@ -26,22 +26,27 @@ HRESULT GetNativeCodeStartAddresses( [in]  FunctionID functionID,
                                      [out] UINT_PTR codeStartAddresses[]);
 ```
 
-#### Parameters
+## Parameters
 
-`functionId` \
-[in] The ID of the function whose native code start addresses should be returned.
+- `functionId`
 
-`reJitId` \
-[in] The identity of the JIT-recompiled function.
+  \[in] The ID of the function whose native code start addresses should be returned.
 
-`cCodeStartAddresses` \
-[in] The maximum size of the `codeStartAddresses` array.
+- `reJitId`
 
-`pcCodeStartAddresses` \
-[out] The number of available addresses.
+  \[in] The identity of the JIT-recompiled function.
 
-`codeStartAddresses` \
-[out] An array of `UINT_PTR`, each one of which is the start address for a native body for the specified function.
+- `cCodeStartAddresses`
+
+  \[in] The maximum size of the `codeStartAddresses` array.
+
+- `pcCodeStartAddresses`
+
+  \[out] The number of available addresses.
+
+- `codeStartAddresses`
+
+  \[out] An array of `UINT_PTR`, each one of which is the start address for a native body for the specified function.
 
 ## Remarks
 

@@ -27,12 +27,15 @@ void __stdcall FunctionTailcall3WithInfo(
 ```  
   
 ## Parameters  
- `functionIDOrClientID`  
- [in] The identifier of the currently executing function that is about to make a tail call.  
-  
- `eltInfo`  
- [in] An opaque handle that represents information about a given stack frame. This handle is valid only during the callback to which it is passed.  
-  
+
+- `functionIDOrClientID`
+
+  \[in] The identifier of the currently executing function that is about to make a tail call.
+
+- `eltInfo`
+
+  \[in] An opaque handle that represents information about a given stack frame. This handle is valid only during the callback to which it is passed.
+
 ## Remarks  
  The `FunctionTailcall3WithInfo` callback method notifies the profiler as functions are called, and allows the profiler to use the [ICorProfilerInfo3::GetFunctionTailcall3Info method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-getfunctiontailcall3info-method.md) to inspect the stack frame. To access stack frame information, the `COR_PRF_ENABLE_FRAME_INFO` flag has to be set. The profiler can use the [ICorProfilerInfo::SetEventMask method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-seteventmask-method.md) to set the event flags, and then use the [ICorProfilerInfo3::SetEnterLeaveFunctionHooks3WithInfo method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-setenterleavefunctionhooks3withinfo-method.md) to register your implementation of this function.  
   

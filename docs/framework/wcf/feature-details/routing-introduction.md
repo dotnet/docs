@@ -359,7 +359,7 @@ rc.FilterTable.Add(new MatchAllMessageFilter(), backupList);
 The following table describes the patterns that are compatible with the use of backup endpoint lists, along with notes describing the details of error handling for specific patterns.
 
 |Pattern|Session|Transaction|Receive Context|Backup List Supported|Notes|
-|:-:|:-:|:-:|:-:|:-:|:-:|
+|:-:|:-:|:-:|:-:|:-:|-|
 |One-Way||||Yes|Attempts to resend the message on a backup endpoint. If this message is being multicast, only the message on the failed channel is moved to its backup destination.|
 |One-Way||![check mark icon](../../../media/check-mark.png)||No|An exception is thrown and the transaction is rolled back.|
 |One-Way|||![check mark icon](../../../media/check-mark.png)|Yes|Attempts to resend the message on a backup endpoint. After the message is successfully received, complete all receive contexts. If the message is not successfully received by any endpoint, do not complete the receive context.<br /><br /> When this message is being multicast, the receive context is only completed if the message is successfully received by at least one endpoint (primary or backup). If none of the endpoints in any of the multicast paths successfully receive the message, do not complete the receive context.|

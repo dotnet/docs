@@ -57,25 +57,24 @@ Runtime directives files recognize three categories of policy types: reflection,
 
   The following table lists the serialization policy types and the program elements with which they can be used.
 
-  > [!div class="mx-tdBreakAll"]
-  > |Element|Serialize|DataContractSerializer|DataContractJsonSerializer|XmlSerializer|
-  > |-|:-:|:-:|:-:|
-  > |[\<Application>](application-element-net-native.md)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|
-  > |[\<Assembly>](assembly-element-net-native.md)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|
-  > |[\<AttributeImplies>](attributeimplies-element-net-native.md)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|
-  > |[\<Event>](event-element-net-native.md)|||||
-  > |[\<Field>](field-element-net-native.md)|![check mark icon](../../media/check-mark.png)||||
-  > |[\<GenericParameter>](genericparameter-element-net-native.md)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|
-  > |[\<ImpliesType>](impliestype-element-net-native.md)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|
-  > |[\<Method>](method-element-net-native.md)|||||
-  > |[\<MethodInstantiation>](methodinstantiation-element-net-native.md)|||||
-  > |[\<Namespace>](namespace-element-net-native.md)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|
-  > |[\<Parameter>](parameter-element-net-native.md)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|
-  > |[\<Property>](property-element-net-native.md)|![check mark icon](../../media/check-mark.png)||||
-  > |[\<Subtypes>](subtypes-element-net-native.md)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|
-  > |[\<Type>](type-element-net-native.md)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|
-  > |[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|
-  > |[\<TypeParameter>](typeparameter-element-net-native.md)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|
+  |Element|Serialize|DataContractSerializer|DataContractJsonSerializer|XmlSerializer|
+  |-|:-:|:-:|:-:|
+  |[\<Application>](application-element-net-native.md)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|
+  |[\<Assembly>](assembly-element-net-native.md)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|
+  |[\<AttributeImplies>](attributeimplies-element-net-native.md)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|
+  |[\<Event>](event-element-net-native.md)|||||
+  |[\<Field>](field-element-net-native.md)|![check mark icon](../../media/check-mark.png)||||
+  |[\<GenericParameter>](genericparameter-element-net-native.md)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|
+  |[\<ImpliesType>](impliestype-element-net-native.md)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|
+  |[\<Method>](method-element-net-native.md)|||||
+  |[\<MethodInstantiation>](methodinstantiation-element-net-native.md)|||||
+  |[\<Namespace>](namespace-element-net-native.md)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|
+  |[\<Parameter>](parameter-element-net-native.md)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|
+  |[\<Property>](property-element-net-native.md)|![check mark icon](../../media/check-mark.png)||||
+  |[\<Subtypes>](subtypes-element-net-native.md)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|
+  |[\<Type>](type-element-net-native.md)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|
+  |[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|
+  |[\<TypeParameter>](typeparameter-element-net-native.md)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|![check mark icon](../../media/check-mark.png)|
 
 - Interop policy types determine which metadata is made available at run time to pass references types, value types, and function pointers to COM and the Windows Runtime:
 

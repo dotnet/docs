@@ -7,9 +7,9 @@ ms.custom: "updateeachrelease"
 ---
 # .NET Core guide
 
-[.NET Core](about.md) is an [open-source](https://github.com/dotnet/runtime/blob/master/LICENSE.TXT), general-purpose development platform. You can create .NET Core apps for Windows, macOS, and Linux, for x64, x86, ARM32 and ARM64 processors, with C#, F# and VB languages. Frameworks and APIs are provided for cloud, IoT, client UI, and machine learning.
+[.NET Core](about.md) is an [open-source](https://github.com/dotnet/runtime/blob/master/LICENSE.TXT), general-purpose development platform. You can create .NET Core apps for Windows, macOS, and Linux, for x64, x86, ARM32 and ARM64 processors, with [C#](/dotnet/csharp/), [F#](/dotnet/fsharp/) and [VB](/dotnet/visual-basic/) languages. Frameworks and APIs are provided for [cloud](/aspnet/core/), [IoT](/archive/msdn-magazine/2019/august/net-core-cross-platform-iot-programming-with-net-core-3-0), [client UI](/dotnet/desktop-wpf/overview/index), and [machine learning](/dotnet/machine-learning/).
 
-You can [download the .NET Core SDK](https://dotnet.microsoft.com/download) to try .NET Core on your machine. The latest version is [.NET Core 3.1](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-1/) 
+You can [download the .NET Core SDK](https://dotnet.microsoft.com/download) to try .NET Core on your machine. The latest version is [.NET Core 3.1](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-1/).
 
 See [About .NET Core](about.md) to learn more about .NET Core, and  [What's new in .NET Core 3.1](./whats-new/dotnet-core-3-1.md) to learn about the latest release.
 
@@ -49,3 +49,7 @@ Hello World!
 * Contributions should be made on one of the project repos, such as [dotnet/runtime](https://github.com/dotnet/runtime), [dotnet/sdk](https://github.com/dotnet/sdk), [dotnet/rosyln](https://github.com/dotnet/roslyn), or [aspnetcore](https://github.com/dotnet/aspnetcore)
 
 Thanks! .NET Core was made with love.
+
+## Support
+
+.NET Core is supported by Microsoft on Windows, macOS and Linux and by Red Hat on Red Hat Enterprise Linux.

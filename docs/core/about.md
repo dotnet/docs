@@ -10,7 +10,7 @@ ms.date: 09/17/2019
 - **Cross-platform:** Runs on Windows, macOS, and Linux [operating systems](https://github.com/dotnet/core/blob/master/os-lifecycle-policy.md).
 - **Open source:** The .NET Core platform is [open source](https://github.com/dotnet/core), using MIT and Apache 2 licenses. .NET Core is a [.NET Foundation](https://dotnetfoundation.org/) project.
 - **Modern:** It implements modern paradigms like asyncronous programming, no-copy patterns using structs, and resource governance for containers.
-- **High performance:** Uses [hardware intrinsics](https://devblogs.microsoft.com/dotnet/hardware-intrinsics-in-net-core/) and [constant investment](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-core-3-0/) to improve performance with every release.
+- **Performance:**  Delivers [high performance](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-core-3-0/) with features like [hardware intrinsics](https://devblogs.microsoft.com/dotnet/hardware-intrinsics-in-net-core/), [tiered compilation](https://github.com/dotnet/coreclr/blob/master/Documentation/design-docs/tiered-compilation.md), and [Span<T>](../standard/memory-and-spans/index.md).
 - **Consistent across environments:** Runs your code with the same behavior on multiple OSes and architectures, including x64, x86, and ARM.
 - **Command-line tools:**  Includes easy-to-use command-line tools that can be used for local development and for continuous-integration.
 - **Flexible deployment:** You can include .NET Core in your app or install it side-by-side (user-wide or system-wide installations). Can be used with [Docker containers](docker/introduction.md).

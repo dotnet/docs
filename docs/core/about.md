@@ -64,3 +64,5 @@ Many APIs are included that satisfy common needs, such as:
 .NET Core binary distributions from Microsoft are built and tested on Microsoft-maintained servers in Azure and follow Microsoft engineering and security practices.
 
 [Red Hat supports .NET Core](http://redhatloves.net/) on Red Hat Enterprise Linux (RHEL). Red Hat builds .NET Core from source and makes it available in the [Red Hat Software Collections](https://developers.redhat.com/products/softwarecollections/overview/). Red Hat and Microsoft collaborate to ensure that .NET Core works well on RHEL.
+
+[Tizen supports .NET Core](https://developer.tizen.org/development/training/.net-application) on Tizen platforms.

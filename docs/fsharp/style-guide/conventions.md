@@ -550,7 +550,7 @@ F# values are immutable by default, which allows you to avoid certain classes of
 
 Use of `mutable` in F# may feel at odds with functional purity. This is understandable, but functional purity everywhere can be at odds with performance goals. A compromise is to encapsulate mutation such that callers need not care about what happens when they call a funciton. This allows you to write a functional interface over a mutation-based implementation for performance critical code.
 
-### Wrap mutable code in immutable interfaces
+#### Wrap mutable code in immutable interfaces
 
 With referential transparency as a goal, it is critical to write code that does not expose the mutable underbelly of performance-critical functions. For example, the following code implements the `Array.contains` function in the F# core library:
 
@@ -568,7 +568,7 @@ let inline contains value (array:'T[]) =
 
 Calling this function multiple times does not change the underlying array, nor does it require you to maintain any mutable state in consuming it. It is referentially transparent, even though almost every line of code within it uses mutation.
 
-### Consider encapsulating mutable data in classes
+#### Consider encapsulating mutable data in classes
 
 The previous example used a single function to encapsulate operations using mutable data. This is not always sufficient for more complex sets of data. Consider the following sets of functions:
 
@@ -614,7 +614,7 @@ type Closure1Table() =
 
 `Closure1Table` encapsulates the underlying mutation-based data structure, thereby not forcing callers to maintain the underlying data structure. Classes are a powerful way to encapsulate data and routines that are mutation-based without exposing the details to callers.
 
-### Prefer `let mutable` to reference cells
+#### Prefer `let mutable` to reference cells
 
 Reference cells are a way to represent the reference to a value rather than the value itself. Although they can be used for performance-critical code, they are generally not recommended. Consider the following example:
 

@@ -14,16 +14,16 @@ ms.date: 01/07/2020
 Windows:
 
 ```powershell
-dotnet-install.ps1 [-Channel] [-Version] [-JSonFile] [-InstallDir] [-Architecture] [-SharedRuntime] 
-    [-Runtime] [-DryRun] [-NoPath] [-Verbose] [-AzureFeed] [-UncachedFeed] [-NoCdn] [-FeedCredential] 
+dotnet-install.ps1 [-Channel] [-Version] [-JSonFile] [-InstallDir] [-Architecture] [-SharedRuntime]
+    [-Runtime] [-DryRun] [-NoPath] [-Verbose] [-AzureFeed] [-UncachedFeed] [-NoCdn] [-FeedCredential]
     [-ProxyAddress] [-ProxyUseDefaultCredentials] [-SkipNonVersionedFiles] [-Help]
 ```
 
 Linux/macOs:
 
 ```bash
-dotnet-install.sh [--channel] [--version] [--jsonfile] [--install-dir] [--architecture] [--shared-runtime] 
-    [--runtime] [--dry-run] [--no-path] [--verbose] [--azure-feed] [--uncached-feed] [--no-cdn] [--feed-credential] 
+dotnet-install.sh [--channel] [--version] [--jsonfile] [--install-dir] [--architecture] [--shared-runtime]
+    [--runtime] [--dry-run] [--no-path] [--verbose] [--azure-feed] [--uncached-feed] [--no-cdn] [--feed-credential]
     [--runtime-id] [--skip-non-versioned-files] [--help]
 ```
 
@@ -44,7 +44,7 @@ By default, the script adds the install location to the $PATH for the current se
 
 Before running the script, install the required [dependencies](../install/dependencies.md).
 
-You can install a specific version using the `-Version|--version` argument. The version must be specified as a three-part version (for example, `2.1.0`). If not provided, it uses the `latest` version. 
+You can install a specific version using the `-Version|--version` argument. The version must be specified as a three-part version (for example, `2.1.0`). If not provided, it uses the `latest` version.
 
 ## Options
 
@@ -57,7 +57,7 @@ You can install a specific version using the `-Version|--version` argument. The 
   - Two-part version in X.Y format representing a specific release (for example, `2.1` or `3.0`).
   - Branch name: for example, `release/3.1.1xx` or `master` (for nightly releases). Use this option to install a version from a preview channel. Use the name of the channel as listed in [Installers and Binaries](https://github.com/dotnet/core-sdk#installers-and-binaries).
 
-  The default value is `LTS`. For more information on .NET support channels, see the [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) page.  
+  The default value is `LTS`. For more information on .NET support channels, see the [.NET Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) page.
 
 - **`-Version|--version <VERSION>`**
 

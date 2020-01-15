@@ -7,6 +7,24 @@ ms.date: 01/08/2020
 
 Windows Forms support was added to .NET Core in version 3.0. This articles lists breaking changes for Windows Forms by the .NET Core version in which they were introduced. If you're upgrading a Windows Forms app from .NET Framework or from a previous version of .NET Core (3.0 or later), this article is applicable to you.
 
+The following breaking changes are documented on this page:
+
+- [Removed controls](#removed-controls)
+- [CellFormatting event not raised if tooltip is shown](#cellformatting-event-not-raised-if-tooltip-is-shown)
+- [Control.DefaultFont changed to Segoe UI 9 pt](#default-control-font-changed-to-segoe-ui-9-pt)
+- [Modernization of the FolderBrowserDialog](#modernization-of-the-folderbrowserdialog)
+- [SerializableAttribute removed from some Windows Forms types](#serializableattribute-removed-from-some-windows-forms-types)
+- [AllowUpdateChildControlIndexForTabControls compatibility switch not supported](#allowupdatechildcontrolindexfortabcontrols-compatibility-switch-not-supported)
+- [DomainUpDown.UseLegacyScrolling compatibility switch not supported](#domainupdownuselegacyscrolling-compatibility-switch-not-supported)
+- [DoNotLoadLatestRichEditControl compatibility switch not supported](#donotloadlatestricheditcontrol-compatibility-switch-not-supported)
+- [DoNotSupportSelectAllShortcutInMultilineTextBox compatibility switch not supported](#donotsupportselectallshortcutinmultilinetextbox-compatibility-switch-not-supported)
+- [DontSupportReentrantFilterMessage compatibility switch not supported](#dontsupportreentrantfiltermessage-compatibility-switch-not-supported)
+- [EnableVisualStyleValidation compatibility switch not supported](#enablevisualstylevalidation-compatibility-switch-not-supported)
+- [UseLegacyContextMenuStripSourceControlValue compatibility switch not supported](#uselegacycontextmenustripsourcecontrolvalue-compatibility-switch-not-supported)
+- [UseLegacyImages compatibility switch not supported](#uselegacyimages-compatibility-switch-not-supported)
+- [Change of access for AccessibleObject.RuntimeIDFirstItem](#change-of-access-for-accessibleobjectruntimeidfirstitem)
+- [Duplicated APIs removed from Windows Forms](#duplicated-apis-removed-from-windows-forms)
+
 ## .NET Core 3.1
 
 [!INCLUDE[Removed controls](~/includes/core-changes/windowsforms/3.1/remove-controls-3.1.md)]
@@ -14,6 +32,8 @@ Windows Forms support was added to .NET Core in version 3.0. This articles lists
 ***
 
 [!INCLUDE[CellFormatting event](~/includes/core-changes/windowsforms/3.1/cellformatting-event-not-raised.md)]
+
+***
 
 ## .NET Core 3.0
 
@@ -66,6 +86,8 @@ Windows Forms support was added to .NET Core in version 3.0. This articles lists
 ***
 
 [!INCLUDE[Duplicated APIs removed from Windows Forms](~/includes/core-changes/windowsforms/3.0/remove-duplicated-apis.md)]
+
+***
 
 ## See also
 

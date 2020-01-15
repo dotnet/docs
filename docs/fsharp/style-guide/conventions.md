@@ -1,7 +1,7 @@
 ---
 title: F# coding conventions
 description: Learn general guidelines and idioms when writing F# code.
-ms.date: 11/04/2019
+ms.date: 01/15/2020
 ---
 # F# coding conventions
 
@@ -437,9 +437,118 @@ Finally, automatic generalization is not always a boon for people who are new to
 
 ## Performance
 
+### Prefer structs for small data types
+
+Using structs (also called Value Types) can often result in higher performance for some code because it avoids allocating and de-allocating objects on the managed heap in .NET. However, structs are not always a "go faster" button: if the size of the data in a struct exceeds 16 bytes, copying the data can often result in more CPU time spend than using a reference type.
+
+A good rule of thumb for using structs intead of value types is:
+
+* If the size of your data is 16 bytes or smaller (measure with a call to `sizeof`)
+* If your data type is made up of other value types (e.g., a record of `int`s)
+
+If both points apply to your data type, it is generally a good idea to use a struct.
+
+#### Prefer struct tuples when grouping small value types
+
+Consider the following two functions:
+
+```fsharp
+let rec runWithTuple t offset times =
+    let offsetValues x y z offset =
+        (x + offset, y + offset, z + offset)
+
+    if times <= 0 then
+        t
+    else
+        let (x, y, z) = t
+        let r = offsetValues x y z offset
+        runWithTuple r offset (times - 1)
+
+let rec runWithStructTuple t offset times =
+    let offsetValues x y z offset =
+        struct(x + offset, y + offset, z + offset)
+
+    if times <= 0 then
+        t
+    else
+        let struct(x, y, z) = t
+        let r = offsetValues x y z offset
+        runWithStructTuple r offset (times - 1)
+```
+
+When you benchmark these functions with a statistical benchmarking tool like [BenchmarkDotNet](https://benchmarkdotnet.org/), you'll find that the `runWithStructTuple` function that uses struct tuples runs 40% faster and allocates no memory. This is because all of the values being processed are also value types, and the size of the tuple is smaller than 16 bytes.
+
+However, this will not always be the case in your own code. Depeneding on if you mark a function as `inline`, code that uses reference tuples may get some additional optimizations, or code that would allocate could simply be optimized away. You should always measure code whenever performance is concerned, and never operate based on assumption or intuition.
+
+#### Prefer struct records when the data type is small
+
+The rule of thumb described earlier also holds for [F# record types](../language-reference/records.md). Consider the following data types and functions that process them:
+
+```fsharp
+type Point = { X: float; Y: float; Z: float }
+
+[<Struct>]
+type SPoint = { X: float; Y: float; Z: float }
+
+let rec processPoint (p: Point) offset times =
+    let inline offsetValues (p: Point) offset =
+        { p with X = p.X + offset; Y = p.Y + offset; Z = p.Z + offset }
+
+    if times <= 0 then
+        p
+    else
+        let r = offsetValues p offset
+        processPoint r offset (times - 1)
+
+let rec processStructPoint (p: SPoint) offset times =
+    let inline offsetValues (p: SPoint) offset =
+        { p with X = p.X + offset; Y = p.Y + offset; Z = p.Z + offset }
+
+    if times <= 0 then
+        p
+    else
+        let r = offsetValues p offset
+        processStructPoint r offset (times - 1)
+```
+
+This is very similar to the tuple code before, but this time using records and an inlined inner function.
+
+When you benchmark these functions with a statistical benchmarking tool like [BenchmarkDotNet](https://benchmarkdotnet.org/), you'll find that `processStructPoint` runs nearly 60% faster and allocates nothing on the managed heap. Because this follows the rule of thumb - a small data type containing value types - the results are unsurprising.
+
+You will notice similar results if you define record types that also contain reference types, so long as the overall record definition is small. These will result in more allocations than the examples shown above, but
+
+#### Prefer struct discriminated unions when the data type is small
+
+The previous observations about performance with struct tuples and records also holds for [F# Discriminated Unions](../language-reference/discriminated-unions.md). Consider the following code:
+
+```fsharp
+    type Name = Name of string
+    
+    [<Struct>]
+    type SName = SName of string
+
+    let reverseName (Name s) =
+        s.ToCharArray()
+        |> Array.rev
+        |> string
+        |> Name
+
+    let structReverseName (SName s) =
+        s.ToCharArray()
+        |> Array.rev
+        |> string
+        |> SName
+```
+
+In this case, the rule of thumb partially holds because the data types are very small. It's very common to define discriminated unions like this for domain modeling. However, the underlying data is not a value type. This ends up not being much of a factor, though, and when you benchmark these functions with a statistical benchmarking tool like [BenchmarkDotNet](https://benchmarkdotnet.org/) you'll find that `structReverseName` runs about 25% faster than `reverseName` for small strings. For very large strings, both will perform about the same, so it is always preferable to use a struct discriminated union in this case.
+
+However, it is quite common to have larger Discriminated Unions when modeling a domain, so take care to measure any changes you make and not assume that a struct will perform better.
+
+### Functional programming and mutation
+
 F# values are immutable by default, which allows you to avoid certain classes of bugs (especially those involving concurrency and parallelism). However, in certain cases, in order to achieve optimal (or even reasonable) efficiency of execution time or memory allocations, a span of work may best be implemented by using in-place mutation of state. This is possible in an opt-in basis with F# with the `mutable` keyword.
 
-However, use of `mutable` in F# may feel at odds with functional purity. This is fine, if you adjust expectations from purity to [referential transparency](https://en.wikipedia.org/wiki/Referential_transparency). Referential transparency - not purity - is the end goal when writing F# functions. This allows you to write a functional interface over a mutation-based implementation for performance critical code.
+Use of `mutable` in F# may feel at odds with functional purity. This is understandable, but functional purity everywhere can be at odds with performance goals. A compromise is to encapsulate mutation such that callers need not care about what happens when they call a funciton. This allows you to write a functional interface over a mutation-based implementation for performance critical code.
 
 ### Wrap mutable code in immutable interfaces
 

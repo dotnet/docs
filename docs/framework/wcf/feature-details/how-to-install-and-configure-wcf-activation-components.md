@@ -100,4 +100,4 @@ After installing and configuring WAS, see [How to: Host a WCF Service in WAS](..
 - [TCP Activation](../../../../docs/framework/wcf/samples/tcp-activation.md)
 - [MSMQ Activation](../../../../docs/framework/wcf/samples/msmq-activation.md)
 - [NamedPipe Activation](../../../../docs/framework/wcf/samples/namedpipe-activation.md)
-- [Windows Server App Fabric Hosting Features](https://go.microsoft.com/fwlink/?LinkId=201276)
+- [Windows Server App Fabric Hosting Features](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))

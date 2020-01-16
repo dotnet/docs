@@ -59,9 +59,9 @@ Dim [ WithEvents ] variablelist
 
   - [Private](../modifiers/private.md)
 
-  - [Protected Friend](../protected-friend.md)
+  - [Protected Friend](../modifiers/protected-friend.md)
 
-  - [Private Protected](../private-protected.md)
+  - [Private Protected](../modifiers/private-protected.md)
 
   See [Access levels in Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).
 

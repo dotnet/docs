@@ -54,7 +54,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Deserialize strings as numbers                        | [Not supported, workaround, sample](#quoted-numbers) |
 | Deserialize `Dictionary` with non-string key          | [Not supported, workaround, sample](#dictionary-with-non-string-key) |
 | Polymorphic serialization                             | [Not supported, workaround, sample](#polymorphic-serialization) |
-| Polymorphic deserialization                           | [Not supported, workaround, sample](#polymorphic-serialization) |
+| Polymorphic deserialization                           | [Not supported, workaround, sample](#polymorphic-deserialization) |
 | `Required` setting on [JsonProperty] attribute        | [Not supported, workaround, sample](#required-properties) |
 | Deserialize JSON `null` literal to non-nullable types | [Not supported, workaround, sample](#deserialize-null-to-non-nullable-type) |
 | Deserialize to immutable classes and structs          | [Not supported, workaround, sample](#deserialize-to-immutable-classes-and-structs) |

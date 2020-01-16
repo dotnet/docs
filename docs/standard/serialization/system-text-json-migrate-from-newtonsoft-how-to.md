@@ -30,46 +30,52 @@ Most of this article is about how to use the <xref:System.Text.Json.JsonSerializ
 
 ## Table of differences between Newtonsoft.Json and System.Text.Json
 
-| `Newtonsoft.Json` feature                           | `System.Text.Json` equivalent |
+The following table lists `Newtonsoft.Json` features and `System.Text.Json` equivalents. The equivalents fall into the following categories:
+
+* Supported by built-in functionality. May require use of an attribute or global option in `System.Text.Json`.
+* Not supported, workaround is possible. The workarounds are [custom converters](system-text-json-converters-how-to.md) and may not provide 100% of the `Newtonsoft.Json` functionality. For some of these, sample code is provided.
+* Not supported, workaround is not practical.
+
+| Newtonsoft.Json feature                             | System.Text.Json equivalent |
 |-----------------------------------------------------|-------------------------------|
-| Case-insensitive deserialization by default         | [PropertyNameCaseInsensitive global setting](#case-insensitive-deserialization) |
-| Allow comments                                      | [ReadCommentHandling global setting](#comments) |
-| Allow trailing commas                               | [AllowTrailingCommas global setting](#trailing-commas) |
-| Allow property names without quotes                 | [Not supported](#json-strings-property-names-and-string-values) |
-| Allow single quotes around string values            | [Not supported](#json-strings-property-names-and-string-values) |
-| Allow non-string JSON values for string properties  | [Not supported](#non-string-values-for-string-properties) |
-| Custom converter registration                       | [Order of precedence differs](#converter-registration-precedence) |
-| Minimal character escaping                          | [Strict character escaping, configurable](#character-escaping) |
-| Deserialize inferred type to `object` properties    | [Requires a custom converter, sample provided](#deserialization-of-object-properties) |
-| No maximum depth by default                         | [Default maximum depth 64, configurable](#maximum-depth) |
-| `DateTimeZoneHandling`, `DateFormatString` settings | [Requires a custom converter, sample provided](#specify-date-format) |
-| Deserialize strings as numbers                      | [Requires a custom converter, sample provided](#quoted-numbers) |
-| Deserialize `Dictionary` with non-string key        | [Requires a custom converter, sample provided](#dictionary-with-non-string-key) |
-| Polymorphic serialization                           | [Requires a custom converter, sample provided](#polymorphic-serialization) |
-| Polymorphic deserialization                         | [Requires a custom converter, sample provided](#polymorphic-serialization) |
-| Required properties                                 | [Requires a custom converter, sample provided](#required-properties) |
-| Deserialize JSON `null` literal to non-nullable types | [Requires a custom converter, sample provided](#deserialize-null-to-non-nullable-type) |
-| Deserialize to immutable classes and structs        | [Requires a custom converter, sample provided](#deserialize-to-immutable-classes-and-structs) |
-| `[JsonConstructor]` attribute                       | [Requires a custom converter, sample provided](#specify-constructor-to-use) |
-| Use `DefaultContractResolver` to include or exclude properties | [Requires a custom converter, sample provided](#conditionally-ignore-a-property) |
-| `NullValueHandling.Ignore` global setting           | [IgnoreNullValues global option](#omit-null-value-properties) |
-| `NullValueHandling.Ignore` setting on `[JsonProperty]` attribute | [Requires a custom converter, sample provided](#conditionally-ignore-a-property)  |
-| `DefaultValueHandling` global setting               |[Requires a custom converter, sample provided](#conditionally-ignore-a-property) |
-| `DefaultValueHandling` setting on `[JsonProperty]` attribute | [Requires a custom converter, sample provided](#conditionally-ignore-a-property)  |
-| Callbacks                                           | [Requires a custom converter, sample provided](#callbacks) |
-| Support for a broad range of types                  | [Some types require custom converters](#types-without-built-in-support) |
-| Support for public and non-public fields            | [Requires a custom converter](#public-and-non-public-fields) |
-| Support for internal and private property setters and getters | [Requires a custom converter](#internal-and-private-property-setters-and-getters) |
-| `PreserveReferencesHandling` global setting         | [Not supported](#preserve-object-references-and-handle-loops) |
-| `ReferenceLoopHandling` global setting              | [Not supported](#preserve-object-references-and-handle-loops) |
+| Case-insensitive deserialization by default           | [PropertyNameCaseInsensitive global setting](#case-insensitive-deserialization) |
+| Allow comments                                        | [ReadCommentHandling global setting](#comments) |
+| Allow trailing commas                                 | [AllowTrailingCommas global setting](#trailing-commas) |
+| Custom converter registration                         | [Order of precedence differs](#converter-registration-precedence) |
+| Minimal character escaping                            | [Strict character escaping, configurable](#character-escaping) |
+| No maximum depth by default                           | [Default maximum depth 64, configurable](#maximum-depth) |
+| `NullValueHandling.Ignore` global setting             | [IgnoreNullValues global option](#omit-null-value-properties) |
+| `JToken` (like `JObject`, `JArray`)                   | [JsonDocument and JsonElement](#jsondocument-and-jsonelement-compared-to-jtoken-like-jobject-jarray) |
+| `JsonTextReader`                                      | [Utf8JsonReader](#utf8jsonreader-compared-to-jsontextreader) |
+| `JsonTextWriter`                                      | [Utf8JsonWriter](#utf8jsonwriter-compared-to-jsontextwriter) |
+| Support for a broad range of types                    | [Some types require custom converters](#types-without-built-in-support) |
+| Deserialize inferred type to `object` properties      | [Not supported, workaround, sample](#deserialization-of-object-properties) |
+| `DateTimeZoneHandling`, `DateFormatString` settings   | [Not supported, workaround, sample](#specify-date-format) |
+| Deserialize strings as numbers                        | [Not supported, workaround, sample](#quoted-numbers) |
+| Deserialize `Dictionary` with non-string key          | [Not supported, workaround, sample](#dictionary-with-non-string-key) |
+| Polymorphic serialization                             | [Not supported, workaround, sample](#polymorphic-serialization) |
+| Polymorphic deserialization                           | [Not supported, workaround, sample](#polymorphic-serialization) |
+| `Required` setting on [JsonProperty] attribute        | [Not supported, workaround, sample](#required-properties) |
+| Deserialize JSON `null` literal to non-nullable types | [Not supported, workaround, sample](#deserialize-null-to-non-nullable-type) |
+| Deserialize to immutable classes and structs          | [Not supported, workaround, sample](#deserialize-to-immutable-classes-and-structs) |
+| `[JsonConstructor]` attribute                         | [Not supported, workaround, sample](#specify-constructor-to-use) |
+| `DefaultContractResolver` to exclude properties       | [Not supported, workaround, sample](#conditionally-ignore-a-property) |
+| `NullValueHandling` setting on `[JsonProperty]` attribute | [Not supported, workaround, sample](#conditionally-ignore-a-property)  |
+| `DefaultValueHandling` setting on `[JsonProperty]` attribute | [Not supported, workaround, sample](#conditionally-ignore-a-property)  |
+| `DefaultValueHandling` global setting                 | [Not supported, workaround, sample](#conditionally-ignore-a-property) |
+| Callbacks                                             | [Not supported, workaround, sample](#callbacks) |
+| Support for public and non-public fields              | [Not supported, workaround](#public-and-non-public-fields) |
+| Support for internal and private property setters and getters | [Not supported, workaround](#internal-and-private-property-setters-and-getters) |
+| `JsonConvert.PopulateObject` method                   | [Not supported, workaround](#populate-existing-objects) |
+| `ObjectCreationHandling` global setting               | [Not supported, workaround](#reuse-rather-than-replace-properties) |
+| Add to collections without setters                    | [Not supported, workaround](#add-to-collections-without-setters) |
+| `PreserveReferencesHandling` global setting           | [Not supported](#preserve-object-references-and-handle-loops) |
+| `ReferenceLoopHandling` global setting                | [Not supported](#preserve-object-references-and-handle-loops) |
 | Support for `System.Runtime.Serialization` attributes | [Not supported](#systemruntimeserialization-attributes) |
-| `JsonConvert.PopulateObject` method                 | [Requires a custom converter](#populate-existing-objects) |
-| `ObjectCreationHandling` global setting             | [Requires a custom converter](#reuse-rather-than-replace-properties) |
-| Add to collections without setters                  | [Requires a custom converter](#add-to-collections-without-setters) |
-| `MissingMemberHandling` global setting              | [Not supported](#missingmemberhandling) |
-| `JToken` (like `JObject`, `JArray`)                 | [JsonDocument and JsonElement](#jsondocument-and-jsonelement-compared-to-jtoken-like-jobject-jarray) |
-| `JsonTextReader`                                    | [Utf8JsonReader](#utf8jsonreader-compared-to-jsontextreader) |
-| `JsonTextWriter`                                    | [Utf8JsonWriter](#utf8jsonwriter-compared-to-jsontextwriter) |
+| `MissingMemberHandling` global setting                | [Not supported](#missingmemberhandling) |
+| Allow property names without quotes                   | [Not supported](#json-strings-property-names-and-string-values) |
+| Allow single quotes around string values              | [Not supported](#json-strings-property-names-and-string-values) |
+| Allow non-string JSON values for string properties    | [Not supported](#non-string-values-for-string-properties) |
 
 ## Differences in default JsonSerializer behavior compared to Newtonsoft.Json
 
@@ -362,7 +368,7 @@ If you use a custom converter that follows the preceding sample:
 
 ## Scenarios that JsonSerializer currently doesn't support
 
-Workarounds are possible for the following scenarios, but some of them would be relatively difficult to implement. This article doesn't provide code samples for workarounds for these scenarios.
+For some of the following scenarios, workarounds are possible by implementing custom converters, but sample code is not available. The scenarios that can't be addressed by using a custom converter are listed last.
 
 This is not an exhaustive list of `Newtonsoft.Json` features that have no equivalents in `System.Text.Json`. The list includes many of the scenarios that have been requested in [GitHub issues](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json) or [StackOverflow](https://stackoverflow.com/questions/tagged/system.text.json) posts.
 
@@ -374,7 +380,6 @@ If you implement a workaround for one of these scenarios and can share the code,
 
 * <xref:System.Data.DataTable> and related types
 * F# types, such as [discriminated unions](../../fsharp/language-reference/discriminated-unions.md), [record types](../../fsharp/language-reference/records.md), and [anonymous record types](../../fsharp/language-reference/anonymous-records.md).
-* Collection types in the <xref:System.Collections.Specialized> namespace
 * <xref:System.Dynamic.ExpandoObject>
 * <xref:System.TimeZoneInfo>
 * <xref:System.Numerics.BigInteger>
@@ -392,6 +397,18 @@ Custom converters can be implemented for types that don't have built-in support.
 ### Internal and private property setters and getters
 
 `Newtonsoft.Json` can use private and internal property setters and getters via the `JsonProperty` attribute. <xref:System.Text.Json> supports only public setters. Custom converters can provide this functionality.
+
+### Populate existing objects
+
+The `JsonConvert.PopulateObject` method in `Newtonsoft.Json` deserializes a JSON document to an existing instance of a class, instead of creating a new instance. <xref:System.Text.Json> always creates a new instance of the target type by using the default public parameterless constructor. Custom converters can deserialize to an existing instance.
+
+### Reuse rather than replace properties
+
+The `Newtonsoft.Json` `ObjectCreationHandling` setting lets you specify that objects in properties should be reused rather than replaced during deserialization. <xref:System.Text.Json> always replaces objects in properties.  Custom converters can provide this functionality.
+
+### Add to collections without setters
+
+During deserialization, `Newtonsoft.Json` adds objects to a collection even if the property has no setter. <xref:System.Text.Json> ignores properties that don't have setters. Custom converters can provide this functionality.
 
 ### Preserve object references and handle loops
 
@@ -413,18 +430,6 @@ By default, `Newtonsoft.Json` serializes by value. For example, if an object con
 ### Octal numbers
 
 `Newtonsoft.Json` treats numbers with a leading zero as octal numbers. <xref:System.Text.Json> doesn't allow leading zeroes because the [RFC 8259](https://tools.ietf.org/html/rfc8259) specification doesn't allow them.
-
-### Populate existing objects
-
-The `JsonConvert.PopulateObject` method in `Newtonsoft.Json` deserializes a JSON document to an existing instance of a class, instead of creating a new instance. <xref:System.Text.Json> always creates a new instance of the target type by using the default public parameterless constructor. Custom converters can deserialize to an existing instance.
-
-### Reuse rather than replace properties
-
-The `Newtonsoft.Json` `ObjectCreationHandling` setting lets you specify that objects in properties should be reused rather than replaced during deserialization. <xref:System.Text.Json> always replaces objects in properties.  Custom converters can provide this functionality.
-
-### Add to collections without setters
-
-During deserialization, `Newtonsoft.Json` adds objects to a collection even if the property has no setter. <xref:System.Text.Json> ignores properties that don't have setters. Custom converters can provide this functionality.
 
 ### MissingMemberHandling
 

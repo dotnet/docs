@@ -444,7 +444,7 @@ Using structs (also called Value Types) can often result in higher performance f
 A good rule of thumb for using structs intead of value types is:
 
 * If the size of your data is 16 bytes or smaller (measure with a call to `sizeof`)
-* If your data type is made up of other value types (e.g., a record of `int`s)
+* If your data type is made up of other value types (for example, a record of `int`s)
 
 If one of these points applies to your code, it is generally a good idea to use a struct. If both apply, using a struct will almost always yield better performance.
 

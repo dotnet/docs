@@ -54,11 +54,11 @@ You should strong name your open-source .NET libraries. Strong naming an assembl
 
 > Read more about [versioning and the assembly version](./versioning.md#assembly-version).
 
-**❌ DO NOT** add, remove, or change the strong naming key.
+❌ DO NOT add, remove, or change the strong naming key.
 
 > Modifying an assembly's strong naming key changes the assembly's identity and breaks compiled code that uses it. For more information, see [binary breaking changes](./breaking-changes.md#binary-breaking-change).
 
-**❌ DO NOT** publish strong-named and non-strong-named versions of your library. For example, `Contoso.Api` and `Contoso.Api.StrongNamed`.
+❌ DO NOT publish strong-named and non-strong-named versions of your library. For example, `Contoso.Api` and `Contoso.Api.StrongNamed`.
 
 > Publishing two packages forks your developer eco-system. Also, if an application ends up depending on both packages the developer can encounter type name conflicts. As far as .NET is concerned they are different types in different assemblies.
 

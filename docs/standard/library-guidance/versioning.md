@@ -55,7 +55,7 @@ Strong naming combined with assembly version enables [strict assembly version lo
 
 > The AssemblyVersion is included in some informational messages displayed to the user, e.g. the assembly name and assembly qualified type names in exception messages. Maintaining a relationship between the versions provides more information to developers about which version they are using.
 
-**❌ DO NOT** have a fixed AssemblyVersion.
+❌ DO NOT have a fixed AssemblyVersion.
 
 > While an unchanging AssemblyVersion avoids the need for binding redirects, it means that only a single version of the assembly can be installed in the Global Assembly Cache (GAC). Also, the applications that reference the assembly in the GAC will break if another application updates the GAC assembly with breaking changes.
 
@@ -88,7 +88,7 @@ The assembly informational version is used to record additional version informat
 > [!NOTE]
 > Older versions of Visual Studio raise a build warning if this version doesn't follow the format `Major.Minor.Build.Revision`. The warning can be safely ignored.
 
-**❌ AVOID** setting the assembly informational version yourself.
+❌ AVOID setting the assembly informational version yourself.
 
 > Allow SourceLink to automatically generate the version containing NuGet and source control metadata.
 

@@ -58,9 +58,9 @@ A binary breaking change happens when you change the public API of your library,
 
 A binary breaking change can also break an **entire assembly**. Renaming an assembly with `AssemblyName` will change the assembly's identity, as will adding, removing, or changing the assembly's strong naming key. A change of an assembly's identity will break all compiled code that uses it.
 
-**❌ DO NOT** change an assembly name.
+❌ DO NOT change an assembly name.
 
-**❌ DO NOT** add, remove, or change the strong naming key.
+❌ DO NOT add, remove, or change the strong naming key.
 
 ✔️ CONSIDER using abstract base classes instead of interfaces.
 

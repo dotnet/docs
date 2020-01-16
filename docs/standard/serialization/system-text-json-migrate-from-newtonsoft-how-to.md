@@ -36,46 +36,46 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 * Not supported, workaround is possible. The workarounds are [custom converters](system-text-json-converters-how-to.md) and may not provide 100% of the `Newtonsoft.Json` functionality. For some of these, sample code is provided.
 * Not supported, workaround is not practical.
 
-| Newtonsoft.Json feature                             | System.Text.Json equivalent |
-|-----------------------------------------------------|-------------------------------|
-| Case-insensitive deserialization by default           | [PropertyNameCaseInsensitive global setting](#case-insensitive-deserialization) |
-| Allow comments                                        | [ReadCommentHandling global setting](#comments) |
-| Allow trailing commas                                 | [AllowTrailingCommas global setting](#trailing-commas) |
-| Custom converter registration                         | [Order of precedence differs](#converter-registration-precedence) |
-| Minimal character escaping                            | [Strict character escaping, configurable](#character-escaping) |
-| No maximum depth by default                           | [Default maximum depth 64, configurable](#maximum-depth) |
-| `NullValueHandling.Ignore` global setting             | [IgnoreNullValues global option](#omit-null-value-properties) |
-| `JToken` (like `JObject`, `JArray`)                   | [JsonDocument and JsonElement](#jsondocument-and-jsonelement-compared-to-jtoken-like-jobject-jarray) |
-| `JsonTextReader`                                      | [Utf8JsonReader](#utf8jsonreader-compared-to-jsontextreader) |
-| `JsonTextWriter`                                      | [Utf8JsonWriter](#utf8jsonwriter-compared-to-jsontextwriter) |
-| Support for a broad range of types                    | [Some types require custom converters](#types-without-built-in-support) |
-| Deserialize inferred type to `object` properties      | [Not supported, workaround, sample](#deserialization-of-object-properties) |
-| `DateTimeZoneHandling`, `DateFormatString` settings   | [Not supported, workaround, sample](#specify-date-format) |
-| Deserialize strings as numbers                        | [Not supported, workaround, sample](#quoted-numbers) |
-| Deserialize `Dictionary` with non-string key          | [Not supported, workaround, sample](#dictionary-with-non-string-key) |
-| Polymorphic serialization                             | [Not supported, workaround, sample](#polymorphic-serialization) |
-| Polymorphic deserialization                           | [Not supported, workaround, sample](#polymorphic-deserialization) |
-| `Required` setting on [JsonProperty] attribute        | [Not supported, workaround, sample](#required-properties) |
-| Deserialize JSON `null` literal to non-nullable types | [Not supported, workaround, sample](#deserialize-null-to-non-nullable-type) |
-| Deserialize to immutable classes and structs          | [Not supported, workaround, sample](#deserialize-to-immutable-classes-and-structs) |
-| `[JsonConstructor]` attribute                         | [Not supported, workaround, sample](#specify-constructor-to-use) |
-| `DefaultContractResolver` to exclude properties       | [Not supported, workaround, sample](#conditionally-ignore-a-property) |
-| `NullValueHandling` setting on `[JsonProperty]` attribute | [Not supported, workaround, sample](#conditionally-ignore-a-property)  |
-| `DefaultValueHandling` setting on `[JsonProperty]` attribute | [Not supported, workaround, sample](#conditionally-ignore-a-property)  |
-| `DefaultValueHandling` global setting                 | [Not supported, workaround, sample](#conditionally-ignore-a-property) |
-| Callbacks                                             | [Not supported, workaround, sample](#callbacks) |
-| Support for public and non-public fields              | [Not supported, workaround](#public-and-non-public-fields) |
-| Support for internal and private property setters and getters | [Not supported, workaround](#internal-and-private-property-setters-and-getters) |
-| `JsonConvert.PopulateObject` method                   | [Not supported, workaround](#populate-existing-objects) |
-| `ObjectCreationHandling` global setting               | [Not supported, workaround](#reuse-rather-than-replace-properties) |
-| Add to collections without setters                    | [Not supported, workaround](#add-to-collections-without-setters) |
-| `PreserveReferencesHandling` global setting           | [Not supported](#preserve-object-references-and-handle-loops) |
-| `ReferenceLoopHandling` global setting                | [Not supported](#preserve-object-references-and-handle-loops) |
-| Support for `System.Runtime.Serialization` attributes | [Not supported](#systemruntimeserialization-attributes) |
-| `MissingMemberHandling` global setting                | [Not supported](#missingmemberhandling) |
-| Allow property names without quotes                   | [Not supported](#json-strings-property-names-and-string-values) |
-| Allow single quotes around string values              | [Not supported](#json-strings-property-names-and-string-values) |
-| Allow non-string JSON values for string properties    | [Not supported](#non-string-values-for-string-properties) |
+| Newtonsoft.Json feature                               | System.Text.Json equivalent |
+|-------------------------------------------------------|-----------------------------|
+| Case-insensitive deserialization by default           | ![check mark icon](../../../images/core/check-mark.png) [PropertyNameCaseInsensitive global setting](#case-insensitive-deserialization) |
+| Allow comments                                        | ![check mark icon](../../../images/core/check-mark.png) [ReadCommentHandling global setting](#comments) |
+| Allow trailing commas                                 | ![check mark icon](../../../images/core/check-mark.png) [AllowTrailingCommas global setting](#trailing-commas) |
+| Custom converter registration                         | ![check mark icon](../../../images/core/check-mark.png) [Order of precedence differs](#converter-registration-precedence) |
+| Minimal character escaping                            | ![check mark icon](../../../images/core/check-mark.png) [Strict character escaping, configurable](#character-escaping) |
+| No maximum depth by default                           | ![check mark icon](../../../images/core/check-mark.png) [Default maximum depth 64, configurable](#maximum-depth) |
+| `NullValueHandling.Ignore` global setting             | ![check mark icon](../../../images/core/check-mark.png) [IgnoreNullValues global option](#omit-null-value-properties) |
+| `JToken` (like `JObject`, `JArray`)                   | ![check mark icon](../../../images/core/check-mark.png) [JsonDocument and JsonElement](#jsondocument-and-jsonelement-compared-to-jtoken-like-jobject-jarray) |
+| `JsonTextReader`                                      | ![check mark icon](../../../images/core/check-mark.png) [Utf8JsonReader](#utf8jsonreader-compared-to-jsontextreader) |
+| `JsonTextWriter`                                      | ![check mark icon](../../../images/core/check-mark.png) [Utf8JsonWriter](#utf8jsonwriter-compared-to-jsontextwriter) |
+| Support for a broad range of types                    | ![warning icon](../../../images/core/yellow-warning.png) [Some types require custom converters](#types-without-built-in-support) |
+| Deserialize inferred type to `object` properties      | ![warning icon](../../../images/core/yellow-warning.png) [Not supported, workaround, sample](#deserialization-of-object-properties) |
+| `DateTimeZoneHandling`, `DateFormatString` settings   | ![warning icon](../../../images/core/yellow-warning.png) [Not supported, workaround, sample](#specify-date-format) |
+| Deserialize strings as numbers                        | ![warning icon](../../../images/core/yellow-warning.png) [Not supported, workaround, sample](#quoted-numbers) |
+| Deserialize `Dictionary` with non-string key          | ![warning icon](../../../images/core/yellow-warning.png) [Not supported, workaround, sample](#dictionary-with-non-string-key) |
+| Polymorphic serialization                             | ![warning icon](../../../images/core/yellow-warning.png) [Not supported, workaround, sample](#polymorphic-serialization) |
+| Polymorphic deserialization                           | ![warning icon](../../../images/core/yellow-warning.png) [Not supported, workaround, sample](#polymorphic-deserialization) |
+| `Required` setting on [JsonProperty] attribute        | ![warning icon](../../../images/core/yellow-warning.png) [Not supported, workaround, sample](#required-properties) |
+| Deserialize JSON `null` literal to non-nullable types | ![warning icon](../../../images/core/yellow-warning.png) [Not supported, workaround, sample](#deserialize-null-to-non-nullable-type) |
+| Deserialize to immutable classes and structs          | ![warning icon](../../../images/core/yellow-warning.png) [Not supported, workaround, sample](#deserialize-to-immutable-classes-and-structs) |
+| `[JsonConstructor]` attribute                         | ![warning icon](../../../images/core/yellow-warning.png) [Not supported, workaround, sample](#specify-constructor-to-use) |
+| `DefaultContractResolver` to exclude properties       | ![warning icon](../../../images/core/yellow-warning.png) [Not supported, workaround, sample](#conditionally-ignore-a-property) |
+| `NullValueHandling` setting on `[JsonProperty]` attribute | ![warning icon](../../../images/core/yellow-warning.png) [Not supported, workaround, sample](#conditionally-ignore-a-property)  |
+| `DefaultValueHandling` setting on `[JsonProperty]` attribute | ![warning icon](../../../images/core/yellow-warning.png) [Not supported, workaround, sample](#conditionally-ignore-a-property)  |
+| `DefaultValueHandling` global setting                 | ![warning icon](../../../images/core/yellow-warning.png) [Not supported, workaround, sample](#conditionally-ignore-a-property) |
+| Callbacks                                             | ![warning icon](../../../images/core/yellow-warning.png) [Not supported, workaround, sample](#callbacks) |
+| Support for public and non-public fields              | ![warning icon](../../../images/core/yellow-warning.png) [Not supported, workaround](#public-and-non-public-fields) |
+| Support for internal and private property setters and getters | ![warning icon](../../../images/core/yellow-warning.png) [Not supported, workaround](#internal-and-private-property-setters-and-getters) |
+| `JsonConvert.PopulateObject` method                   | ![warning icon](../../../images/core/yellow-warning.png) [Not supported, workaround](#populate-existing-objects) |
+| `ObjectCreationHandling` global setting               | ![warning icon](../../../images/core/yellow-warning.png) [Not supported, workaround](#reuse-rather-than-replace-properties) |
+| Add to collections without setters                    | ![warning icon](../../../images/core/yellow-warning.png) [Not supported, workaround](#add-to-collections-without-setters) |
+| `PreserveReferencesHandling` global setting           | ![red x icon icon](../../../images/core/x.png) [Not supported](#preserve-object-references-and-handle-loops) |
+| `ReferenceLoopHandling` global setting                | ![red x icon icon](../../../images/core/x.png) [Not supported](#preserve-object-references-and-handle-loops) |
+| Support for `System.Runtime.Serialization` attributes | ![red x icon icon](../../../images/core/x.png) [Not supported](#systemruntimeserialization-attributes) |
+| `MissingMemberHandling` global setting                | ![red x icon icon](../../../images/core/x.png) [Not supported](#missingmemberhandling) |
+| Allow property names without quotes                   | ![red x icon icon](../../../images/core/x.png) [Not supported](#json-strings-property-names-and-string-values) |
+| Allow single quotes around string values              | ![red x icon icon](../../../images/core/x.png) [Not supported](#json-strings-property-names-and-string-values) |
+| Allow non-string JSON values for string properties    | ![red x icon icon](../../../images/core/x.png) [Not supported](#non-string-values-for-string-properties) |
 
 ## Differences in default JsonSerializer behavior compared to Newtonsoft.Json
 

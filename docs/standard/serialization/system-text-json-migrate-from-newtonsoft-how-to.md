@@ -18,15 +18,7 @@ This article shows how to migrate from [Newtonsoft.Json](https://www.newtonsoft.
 
 <!-- For information about which features might be added in future releases, see the [Roadmap](https://github.com/dotnet/runtime/tree/81bf79fd9aa75305e55abe2f7e9ef3f60624a3a1/src/libraries/System.Text.Json/roadmap/README.md). [Restore this when the roadmap is updated.]-->
 
-Most of this article is about how to use the <xref:System.Text.Json.JsonSerializer> API, but it also includes guidance on how to use the <xref:System.Text.Json.JsonDocument> (which represents the Document Object Model or DOM), <xref:System.Text.Json.Utf8JsonReader>, and <xref:System.Text.Json.Utf8JsonWriter> types. The article is organized into sections in the following order:
-
-* [Table of differences between Newtonsoft.Json and System.Text.Json](#table-of-differences-between-newtonsoftjson-and-systemtextjson)
-* [Differences in **default** JsonSerializer behavior compared to Newtonsoft.Json](#differences-in-default-jsonserializer-behavior-compared-to-newtonsoftjson)
-* [Scenarios using JsonSerializer that require workarounds](#scenarios-using-jsonserializer-that-require-workarounds)
-* [Scenarios that JsonSerializer currently doesn't support](#scenarios-that-jsonserializer-currently-doesnt-support)
-* [JsonDocument and JsonElement compared to JToken (like JObject, JArray)](#jsondocument-and-jsonelement-compared-to-jtoken-like-jobject-jarray)
-* [Utf8JsonReader compared to JsonTextReader](#utf8jsonreader-compared-to-jsontextreader)
-* [Utf8JsonWriter compared to JsonTextWriter](#utf8jsonwriter-compared-to-jsontextwriter)
+Most of this article is about how to use the <xref:System.Text.Json.JsonSerializer> API, but it also includes guidance on how to use the <xref:System.Text.Json.JsonDocument> (which represents the Document Object Model or DOM), <xref:System.Text.Json.Utf8JsonReader>, and <xref:System.Text.Json.Utf8JsonWriter> types.
 
 ## Table of differences between Newtonsoft.Json and System.Text.Json
 
@@ -45,9 +37,6 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Minimal character escaping                            | ✔️ [Strict character escaping, configurable](#character-escaping) |
 | No maximum depth by default                           | ✔️ [Default maximum depth 64, configurable](#maximum-depth) |
 | `NullValueHandling.Ignore` global setting             | ✔️ [IgnoreNullValues global option](#omit-null-value-properties) |
-| `JToken` (like `JObject`, `JArray`)                   | ✔️ [JsonDocument and JsonElement](#jsondocument-and-jsonelement-compared-to-jtoken-like-jobject-jarray) |
-| `JsonTextReader`                                      | ✔️ [Utf8JsonReader](#utf8jsonreader-compared-to-jsontextreader) |
-| `JsonTextWriter`                                      | ✔️ [Utf8JsonWriter](#utf8jsonwriter-compared-to-jsontextwriter) |
 | Support for a broad range of types                    | ⚠️ [Some types require custom converters](#types-without-built-in-support) |
 | Deserialize inferred type to `object` properties      | ⚠️ [Not supported, workaround, sample](#deserialization-of-object-properties) |
 | `DateTimeZoneHandling`, `DateFormatString` settings   | ⚠️ [Not supported, workaround, sample](#specify-date-format) |

@@ -3,14 +3,13 @@ title: Additions to the csproj format for .NET Core
 description: Learn about the differences between existing and .NET Core csproj files
 ms.date: 04/08/2019
 ---
-
 # Additions to the csproj format for .NET Core
 
-This document outlines the changes that were added to the project files as part of the move from *project.json* to *csproj* and [MSBuild](https://github.com/Microsoft/MSBuild). For more information about general project file syntax and reference, see [the MSBuild project file](/visualstudio/msbuild/msbuild-project-file-schema-reference) documentation.
+This article outlines the changes that were added to project files as part of the move from *project.json* to *csproj* and [MSBuild](https://github.com/Microsoft/MSBuild). For more information about general project file syntax and reference, see [the MSBuild project file](/visualstudio/msbuild/msbuild-project-file-schema-reference) documentation.
 
 ## Implicit package references
 
-Metapackages are implicitly referenced based on the target framework(s) specified in the `<TargetFramework>` or `<TargetFrameworks>` property of your project file. `<TargetFrameworks>` is ignored if `<TargetFramework>` is specified, independent of order. For more information, see [Packages, metapackages, and frameworks](../packages.md). 
+Metapackages are implicitly referenced based on the target frameworks specified in the `<TargetFramework>` or `<TargetFrameworks>` property of the project file. `<TargetFrameworks>` is ignored if `<TargetFramework>` is specified, independent of order. For more information, see [Packages, metapackages, and frameworks](../packages.md).
 
 ```xml
  <PropertyGroup>
@@ -26,17 +25,17 @@ Metapackages are implicitly referenced based on the target framework(s) specifie
 
 ### Recommendations
 
-Since `Microsoft.NETCore.App` or `NETStandard.Library` metapackages are implicitly referenced, the following are our recommended best practices:
+Since `Microsoft.NETCore.App` or `NETStandard.Library` metapackages are implicitly referenced, consider the following guidelines:
 
 - When targeting .NET Core or .NET Standard, never have an explicit reference to the `Microsoft.NETCore.App` or `NETStandard.Library` metapackages via a `<PackageReference>` item in your project file.
-- If you need a specific version of the runtime when targeting .NET Core, you should use the `<RuntimeFrameworkVersion>` property in your project (for example, `1.0.4`) instead of referencing the metapackage.
-  - This might happen if you are using [self-contained deployments](../deploying/index.md#self-contained-deployments-scd) and you need a specific patch version of 1.0.0 LTS runtime, for example.
+- If you need a specific version of the runtime when targeting .NET Core, use the `<RuntimeFrameworkVersion>` property in your project (for example, `1.0.4`) instead of referencing the metapackage.
+  For example, if you're using [self-contained deployments](../deploying/index.md#self-contained-deployments-scd), you might need a specific patch version of 1.0.0 LTS runtime.
 - If you need a specific version of the `NETStandard.Library` metapackage when targeting .NET Standard, you can use the `<NetStandardImplicitPackageVersion>` property and set the version you need.
-- Don't explicitly add or update references to either the `Microsoft.NETCore.App` or `NETStandard.Library` metapackage in .NET Framework projects. If any version of `NETStandard.Library` is needed when using a .NET Standard-based NuGet package, NuGet automatically installs that version.
+- For .NET Framework projects, don't explicitly add or update references to either the `Microsoft.NETCore.App` or `NETStandard.Library` metapackage. If any version of `NETStandard.Library` is needed when using a .NET Standard-based NuGet package, NuGet automatically installs that version.
 
 ## Implicit version for some package references
 
-Most usages of [`<PackageReference>`](#packagereference) require setting the `Version` attribute to specify the NuGet package version to be used. When using .NET Core 2.1 or 2.2 and referencing [Microsoft.AspNetCore.App](/aspnet/core/fundamentals/metapackage-app) or [Microsoft.AspNetCore.All](/aspnet/core/fundamentals/metapackage), however, the  attribute is unnecessary. The .NET Core SDK can automatically select the version of these packages that should be used.
+Most usages of [`<PackageReference>`](#packagereference) require setting the `Version` attribute to specify the NuGet package version to be used. However, when using .NET Core 2.1 or 2.2 and referencing [Microsoft.AspNetCore.App](/aspnet/core/fundamentals/metapackage-app) or [Microsoft.AspNetCore.All](/aspnet/core/fundamentals/metapackage), the `Version` attribute is unnecessary. The .NET Core SDK can automatically select the appropriate version of these packages.
 
 ### Recommendation
 
@@ -48,7 +47,7 @@ When referencing the `Microsoft.AspNetCore.App` or `Microsoft.AspNetCore.All` pa
 </ItemGroup>
 ```
 
-> Known issue: the .NET Core 2.1 SDK only supported this syntax when the project also uses Microsoft.NET.Sdk.Web. This is resolved in the .NET Core 2.2 SDK.
+> Known issue: the .NET Core 2.1 SDK only supported this syntax when the project also used Microsoft.NET.Sdk.Web. This is resolved in the .NET Core 2.2 SDK.
 
 These references to ASP.NET Core metapackages have a slightly different behavior from most normal NuGet packages. [Framework-dependent deployments](../deploying/index.md#framework-dependent-deployments-fdd) of applications that use these metapackages automatically take advantage of the ASP.NET Core shared framework. When you use the metapackages, **no** assets from the referenced ASP.NET Core NuGet packages are deployed with the application—the ASP.NET Core shared framework contains these assets. The assets in the shared framework are optimized for the target platform to improve application startup time. For more information about shared framework, see [.NET Core distribution packaging](../build/distribution-packaging.md).
 
@@ -86,7 +85,7 @@ In order to get around this error, you can either remove the explicit `Compile` 
 </PropertyGroup>
 ```
 
-Setting this property to `false` will disable implicit inclusion, reverting to the behavior of previous SDKs where you had to specify the default globs in your project.
+Setting this property to `false` disables implicit inclusion, reverting to the behavior of previous SDKs where you had to specify the default globs in your project.
 
 This change does not modify the main mechanics of other includes. However, if you wish to specify, for example, some files to get published with your app, you can still use the known mechanisms in *csproj* for that (for example, the `<Content>` element).
 
@@ -122,13 +121,15 @@ If the project has multiple target frameworks, the results of the command should
 
 The root `<Project>` element of the *.csproj* file has a new attribute called `Sdk`. `Sdk` specifies which SDK will be used by the project. The SDK, as the [layering document](cli-msbuild-architecture.md) describes, is a set of MSBuild [tasks](/visualstudio/msbuild/msbuild-tasks) and [targets](/visualstudio/msbuild/msbuild-targets) that can build .NET Core code. The following SDKs are available for .NET Core:
 
-1. The .NET Core SDK with the ID of `Microsoft.NET.Sdk`
-2. The .NET Core web SDK with the ID of `Microsoft.NET.Sdk.Web`
-3. The .NET Core Razor Class Library SDK with the ID of `Microsoft.NET.Sdk.Razor`
-4. The .NET Core Worker Service with the ID of `Microsoft.NET.Sdk.Worker` (since .NET Core 3.0)
-5. The .NET Core WinForms and WPF with the ID of `Microsoft.NET.Sdk.WindowsDesktop` (since .NET Core 3.0)
+| Description | ID | Introduced version |
+| - | - | - |
+| The .NET Core SDK | `Microsoft.NET.Sdk` |
+| The .NET Core web SDK | `Microsoft.NET.Sdk.Web` |
+| The .NET Core Razor Class Library SDK | `Microsoft.NET.Sdk.Razor` |
+| The .NET Core Worker Service SDK | `Microsoft.NET.Sdk.Worker` | .NET Core 3.0 |
+| The .NET Core WinForms and WPF SDK | `Microsoft.NET.Sdk.WindowsDesktop` | .NET Core 3.0 |
 
-You need to have the `Sdk` attribute set to one of those IDs on the `<Project>` element in order to use the .NET Core tools and build your code.
+To use the .NET Core tools and build your code, set the `Sdk` attribute on the `<Project>` element to one of these IDs.
 
 ### PackageReference
 
@@ -144,21 +145,16 @@ The required `Version` attribute specifies the version of the package to restore
 
 #### IncludeAssets, ExcludeAssets, and PrivateAssets
 
-`IncludeAssets` attribute specifies which assets belonging to the package specified by `<PackageReference>` should be
-consumed. By default, all package assets are included.
+`IncludeAssets` attribute specifies which assets belonging to the package specified by `<PackageReference>` should be consumed. By default, all package assets are included.
 
-`ExcludeAssets` attribute specifies which assets belonging to the package specified by `<PackageReference>` should not
-be consumed.
+`ExcludeAssets` attribute specifies which assets belonging to the package specified by `<PackageReference>` should not be consumed.
 
-`PrivateAssets` attribute specifies which assets belonging to the package specified by `<PackageReference>` should be
-consumed but not flow to the next project. The `Analyzers`, `Build` and `ContentFiles` assets are private by default
-when this attribute is not present.
+`PrivateAssets` attribute specifies which assets belonging to the package specified by `<PackageReference>` should be consumed but not flow to the next project. The `Analyzers`, `Build`, and `ContentFiles` assets are private, by default, when this attribute is not present.
 
 > [!NOTE]
 > `PrivateAssets` is equivalent to the *project.json*/*xproj* `SuppressParent` element.
 
-These attributes can contain one or more of the following items, separated by the semicolon `;` character if more than
-one is listed:
+These attributes can contain one or more of the following items, separated by the semicolon `;` character if more than one is listed:
 
 - `Compile` – the contents of the *lib* folder are available to compile against.
 - `Runtime` – the contents of the *runtime* folder are distributed.
@@ -180,7 +176,8 @@ A `<DotNetCliToolReference>` item element specifies the CLI tool that the user w
 <DotNetCliToolReference Include="<package-id>" Version="" />
 ```
 
-Note that `DotNetCliToolReference` is [now deprecated](https://github.com/dotnet/announcements/issues/107) in favor of [.NET Core Local Tools](https://aka.ms/local-tools).
+> [!NOTE]
+> `DotNetCliToolReference` is [deprecated](https://github.com/dotnet/announcements/issues/107) in favor of [.NET Core Local Tools](https://aka.ms/local-tools).
 
 #### Version
 
@@ -188,8 +185,7 @@ Note that `DotNetCliToolReference` is [now deprecated](https://github.com/dotnet
 
 ### RuntimeIdentifiers
 
-The `<RuntimeIdentifiers>` property element lets you specify a semicolon-delimited list of [Runtime Identifiers (RIDs)](../rid-catalog.md) for the project.
-RIDs enable publishing self-contained deployments.
+The `<RuntimeIdentifiers>` property element lets you specify a semicolon-delimited list of [Runtime Identifiers (RIDs)](../rid-catalog.md) for the project. RIDs enable publishing self-contained deployments.
 
 ```xml
 <RuntimeIdentifiers>win10-x64;osx.10.11-x64;ubuntu.16.04-x64</RuntimeIdentifiers>
@@ -227,7 +223,7 @@ The following example specifies the fallbacks only for the `netcoreapp2.1` targe
 
 ## Build events
 
-The way that pre-build and post-build events are specified in the project file has changed. The properties PreBuildEvent and PostBuildEvent are not recommended in the SDK-style project format, because macros such as $(ProjectDir) are not resolved. For example, the following code is no longer supported:
+The way that pre-build and post-build events are specified in the project file has changed. The properties `PreBuildEvent` and `PostBuildEvent` are not recommended in the SDK-style project format, because macros such as `$(ProjectDir)` are not resolved. For example, the following code is no longer supported:
 
 ```xml
 <PropertyGroup>
@@ -248,39 +244,39 @@ In SDK-style projects, use an MSBuild target named `PreBuild` or `PostBuild` and
 ```
 
 > [!NOTE]
->You can use any name for the MSBuild targets, but the Visual Studio IDE recognizes `PreBuild` and `PostBuild` targets, so we recommend using those names so that you can edit the commands in the Visual Studio IDE. 
+> You can use any name for the MSBuild targets. However, the Visual Studio integrated development environment (IDE) recognizes `PreBuild` and `PostBuild` targets, so use those names if you want to edit the commands in Visual Studio.
 
 ## NuGet metadata properties
 
-With the move to MSBuild, we have moved the input metadata that is used when packing a NuGet package from *project.json* to *.csproj* files. The inputs are MSBuild properties so they have to go within a `<PropertyGroup>` group. The following is the list of properties that are used as inputs to the packing process when using the `dotnet pack` command or the `Pack` MSBuild target that is part of the SDK:
+With the move to MSBuild, the input metadata that's used when packing a NuGet package has moved from *project.json* to *.csproj* files. The inputs are MSBuild properties, so they have to go within a `<PropertyGroup>` group. The following is the list of properties that are used as inputs to the packing process when using the `dotnet pack` command or the `Pack` MSBuild target that's part of the SDK:
 
 ### IsPackable
 
-A Boolean value that specifies whether the project can be packed. The default value is `true`.
+Boolean value that specifies whether the project can be packed. The default value is `true`.
 
 ### PackageVersion
 
-Specifies the version that the resulting package will have. Accepts all forms of NuGet version string. Default is the value of `$(Version)`, that is, of the property `Version` in the project.
+Specifies the version for the resulting package. Accepts all forms of NuGet version string. Default is the value of `$(Version)`, that is, of the property `Version` in the project.
 
 ### PackageId
 
-Specifies the name for the resulting package. If not specified, the `pack` operation will default to using the `AssemblyName` or directory name as the name of the package.
+Specifies the name for the resulting package. If not specified, the `pack` operation defaults to using the `AssemblyName` or directory name as the name of the package.
 
 ### Title
 
-A human-friendly title of the package, typically used in UI displays as on nuget.org and the Package Manager in Visual Studio. If not specified, the package ID is used instead.
+Human-friendly title of the package, typically used in UI displays as on nuget.org and the Package Manager in Visual Studio. If not specified, the package ID is used instead.
 
 ### Authors
 
-A semicolon-separated list of packages authors, matching the profile names on nuget.org. These are displayed in the NuGet Gallery on nuget.org and are used to cross-reference packages by the same authors.
+Semicolon-separated list of packages authors, matching the profile names on nuget.org. These are displayed in the NuGet Gallery on nuget.org and are used to cross-reference packages by the same authors.
 
 ### PackageDescription
 
-A long description of the package for UI display.
+Long description of the package for UI display.
 
 ### Description
 
-A long description for the assembly. If `PackageDescription` is not specified, then this property is also used as the description of the package.
+Long description for the assembly. If `PackageDescription` is not specified, then this property is also used as the description of the package.
 
 ### Copyright
 
@@ -288,7 +284,7 @@ Copyright details for the package.
 
 ### PackageRequireLicenseAcceptance
 
-A Boolean value that specifies whether the client must prompt the consumer to accept the package license before installing the package. The default is `false`.
+Boolean value that specifies whether the client must prompt the consumer to accept the package license before installing the package. The default is `false`.
 
 ### PackageLicenseExpression
 
@@ -315,15 +311,15 @@ license-expression =  1*1(simple-expression / compound-expression / UNLICENSED)
 ```
 
 > [!NOTE]
-> Only one of `PackageLicenseExpression`, `PackageLicenseFile` and `PackageLicenseUrl` can be specified at a time.
+> Only one of `PackageLicenseExpression`, `PackageLicenseFile`, and `PackageLicenseUrl` can be specified at a time.
 
 ### PackageLicenseFile
 
-Path to a license file within the package if you are using a license that hasn’t been assigned an SPDX identifier, or it is a custom license (Otherwise `PackageLicenseExpression` is preferred)
+Path to a license file within the package if you're using a license that hasn’t been assigned an SPDX identifier, or it's a custom license (otherwise, `PackageLicenseExpression` is preferred).
 
-Replaces `PackageLicenseUrl`, can't be combined with `PackageLicenseExpression` and requires Visual Studio 15.9.4, .NET SDK 2.1.502 or 2.2.101, or newer.
+Replaces `PackageLicenseUrl`, can't be combined with `PackageLicenseExpression`, and requires Visual Studio 15.9.4, .NET SDK 2.1.502 or 2.2.101, or newer.
 
-You will need to ensure the license file is packed by adding it explicitly to the project, example usage:
+Ensure that the license file is packed by adding it explicitly to the project, for example:
 
 ```xml
 <PropertyGroup>
@@ -336,7 +332,7 @@ You will need to ensure the license file is packed by adding it explicitly to th
 
 ### PackageLicenseUrl
 
-A URL to the license that is applicable to the package. (_deprecated since Visual Studio 15.9.4, .NET SDK 2.1.502 and 2.2.101_)
+A URL to the license that is applicable to the package. (Deprecated since Visual Studio 15.9.4, and .NET SDK 2.1.502 or 2.2.101.)
 
 ### PackageIconUrl
 
@@ -355,14 +351,16 @@ A semicolon-delimited list of tags that designates the package.
 Determines the output path in which the packed package will be dropped. Default is `$(OutputPath)`.
 
 ### IncludeSymbols
-This Boolean value indicates whether the package should create an additional symbols package when the project is packed. The symbols package's format is controlled by the `SymbolPackageFormat` property.
+
+Boolean value that indicates whether the package should create an additional symbols package when the project is packed. The symbols package's format is controlled by the `SymbolPackageFormat` property.
 
 ### SymbolPackageFormat
-Specifies the format of the symbols package. If "symbols.nupkg", a legacy symbols package will be created with a *.symbols.nupkg* extension containing PDBs, DLLs, and other output files. If "snupkg", a snupkg symbol package will be created containing the portable PDBs. Default is "symbols.nupkg".
+
+Specifies the format of the symbols package. If "symbols.nupkg", a legacy symbols package is created with a *.symbols.nupkg* extension that contains PDBs, DLLs, and other output files. If "snupkg", a snupkg symbol package is created that contains the portable PDBs. Default is "symbols.nupkg".
 
 ### IncludeSource
 
-This Boolean value indicates whether the pack process should create a source package. The source package contains the library's source code as well as PDB files. Source files are put under the `src/ProjectName` directory in the resulting package file.
+Boolean value that indicates whether the pack process should create a source package. The source package contains the library's source code as well as PDB files. Source files are put under the `src/ProjectName` directory in the resulting package file.
 
 ### IsTool
 
@@ -370,16 +368,18 @@ Specifies whether all output files are copied to the *tools* folder instead of t
 
 ### RepositoryUrl
 
-Specifies the URL for the repository where the source code for the package resides and/or from which it's being built.
+Specifies the URL for the repository where the source code for the package resides or from which it's built.
 
 ### RepositoryType
 
 Specifies the type of the repository. Default is "git".
 
 ### RepositoryBranch
+
 Specifies the name of the source branch in the repository. When the project is packaged in a NuGet package, it's added to the package metadata.
 
 ### RepositoryCommit
+
 Optional repository commit or changeset to indicate which source the package was built against. `RepositoryUrl` must also be specified for this property to be included. When the project is packaged in a NuGet package, this commit or changeset is added to the package metadata.
 
 ### NoPackageAnalysis
@@ -388,30 +388,30 @@ Specifies that pack should not run package analysis after building the package.
 
 ### MinClientVersion
 
-Specifies the minimum version of the NuGet client that can install this package, enforced by nuget.exe and the Visual Studio Package Manager.
+Specifies the minimum version of the NuGet client that can install this package. Enforced by nuget.exe and the Visual Studio Package Manager.
 
 ### IncludeBuildOutput
 
-This Boolean value specifies whether the build output assemblies should be packed into the *.nupkg* file or not.
+Boolean value that specifies whether the build output assemblies should be packed into the *.nupkg* file or not.
 
 ### IncludeContentInPack
 
-This Boolean value specifies whether any items that have a type of `Content` will be included in the resulting package automatically. The default is `true`.
+Boolean value that specifies whether any items that have a type of `Content` will be included in the resulting package automatically. The default is `true`.
 
 ### BuildOutputTargetFolder
 
-Specifies the folder where to place the output assemblies. The output assemblies (and other output files) are copied into their respective framework folders.
+Specifies the folder in which to place the output assemblies. The output assemblies (and other output files) are copied into their respective framework folders.
 
 ### ContentTargetFolders
 
-This property specifies the default location of where all the content files should go if `PackagePath` is not specified for them. The default value is "content;contentFiles".
+Specifies the default location to place the content files if `PackagePath` is not specified for them. The default value is "content;contentFiles".
 
 ### NuspecFile
 
 Relative or absolute path to the *.nuspec* file being used for packing.
 
 > [!NOTE]
-> If the *.nuspec* file is specified, it's used **exclusively** for packaging information and any information in the projects is not used.
+> If the *.nuspec* file is specified, it's exclusively used for packaging information. Any information in the projects is not used.
 
 ### NuspecBasePath
 
@@ -427,7 +427,7 @@ Semicolon separated list of key=value pairs.
 
 ### Properties per attribute
 
-Each attribute has a property that control its content and another to disable its generation as shown in the following table:
+As shown in the following table, each attribute has a property that control its content and another to disable its generation:
 
 | Attribute                                                      | Property               | Property to disable                             |
 |----------------------------------------------------------------|------------------------|-------------------------------------------------|
@@ -442,7 +442,7 @@ Each attribute has a property that control its content and another to disable it
 | <xref:System.Reflection.AssemblyVersionAttribute>              | `AssemblyVersion`      | `GenerateAssemblyVersionAttribute`              |
 | <xref:System.Resources.NeutralResourcesLanguageAttribute>      | `NeutralLanguage`      | `GenerateNeutralResourcesLanguageAttribute`     |
 
-Notes:
+Remarks:
 
 - `AssemblyVersion` and `FileVersion` default is to take the value of `$(Version)` without suffix. For example, if `$(Version)` is `1.2.3-beta.4`, then the value would be `1.2.3`.
 - `InformationalVersion` defaults to the value of `$(Version)`.
@@ -457,3 +457,7 @@ A Boolean that enable or disable all the AssemblyInfo generation. The default va
 ### GeneratedAssemblyInfoFile
 
 The path of the generated assembly info file. Default to a file in the `$(IntermediateOutputPath)` (obj) directory.
+
+## See also
+
+- [MSBuild items](/visualstudio/msbuild/msbuild-items)

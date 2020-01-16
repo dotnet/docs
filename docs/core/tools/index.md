@@ -5,7 +5,7 @@ ms.date: 08/14/2017
 ---
 # .NET Core command-line interface (CLI) tools
 
-The .NET Core command-line interface (CLI) is a new cross-platform toolchain for developing .NET applications. The CLI is a foundation upon which higher-level tools, such as Integrated Development Environments (IDEs), editors, and build orchestrators, can rest.
+The .NET Core command-line interface (CLI) is a cross-platform toolchain for developing .NET applications. The CLI is a foundation upon which higher-level tools, such as integrated development environments (IDEs), editors, and build orchestrators, can rest.
 
 ## Installation
 

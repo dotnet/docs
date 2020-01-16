@@ -1,6 +1,7 @@
 
 > [!div class="op_single_selector"]
 >
+> - [Ubuntu 19.10 - x64](../linux-package-manager-ubuntu-1910.md)
 > - [Ubuntu 19.04 - x64](../linux-package-manager-ubuntu-1904.md)
 > - [Ubuntu 18.04 - x64](../linux-package-manager-ubuntu-1804.md)
 > - [Ubuntu 16.04 - x64](../linux-package-manager-ubuntu-1604.md)

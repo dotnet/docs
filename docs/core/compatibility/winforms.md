@@ -5,7 +5,7 @@ ms.date: 01/08/2020
 ---
 # Breaking changes in Windows Forms
 
-Windows Forms support was added to .NET Core in version 3.0. This articles lists breaking changes for Windows Forms by the .NET Core version in which they were introduced. If you're upgrading a Windows Forms app from .NET Framework or from a previous version of .NET Core (3.0 or later), this article is applicable to you.
+Windows Forms support was added to .NET Core in version 3.0. This article lists breaking changes for Windows Forms by the .NET Core version in which they were introduced. If you're upgrading a Windows Forms app from .NET Framework or from a previous version of .NET Core (3.0 or later), this article is applicable to you.
 
 The following breaking changes are documented on this page:
 

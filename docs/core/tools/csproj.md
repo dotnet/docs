@@ -10,7 +10,7 @@ This document outlines the changes that were added to the project files as part 
 
 ## Implicit package references
 
-Metapackages are implicitly referenced based on the target framework(s) specified in the `<TargetFramework>` or `<TargetFrameworks>` property of your project file. `<TargetFrameworks>` is ignored if `<TargetFramework>` is specified, independent of order. For more information, see [Packages, metapackages and frameworks](../packages.md). 
+Metapackages are implicitly referenced based on the target framework(s) specified in the `<TargetFramework>` or `<TargetFrameworks>` property of your project file. `<TargetFrameworks>` is ignored if `<TargetFramework>` is specified, independent of order. For more information, see [Packages, metapackages, and frameworks](../packages.md). 
 
 ```xml
  <PropertyGroup>
@@ -142,7 +142,7 @@ A `<PackageReference>` item element specifies a [NuGet dependency in the project
 
 The required `Version` attribute specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](/nuget/reference/package-versioning#version-ranges-and-wildcards) scheme. The default behavior is an exact version match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3]` for the exact 1.2.3 version of the package.
 
-#### IncludeAssets, ExcludeAssets and PrivateAssets
+#### IncludeAssets, ExcludeAssets, and PrivateAssets
 
 `IncludeAssets` attribute specifies which assets belonging to the package specified by `<PackageReference>` should be
 consumed. By default, all package assets are included.
@@ -280,7 +280,7 @@ A long description of the package for UI display.
 
 ### Description
 
-A long description for the assembly. If `PackageDescription` is not specified then this property is also used as the description of the package.
+A long description for the assembly. If `PackageDescription` is not specified, then this property is also used as the description of the package.
 
 ### Copyright
 
@@ -336,7 +336,7 @@ You will need to ensure the license file is packed by adding it explicitly to th
 
 ### PackageLicenseUrl
 
-An URL to the license that is applicable to the package. (_deprecated since Visual Studio 15.9.4, .NET SDK 2.1.502 and 2.2.101_)
+A URL to the license that is applicable to the package. (_deprecated since Visual Studio 15.9.4, .NET SDK 2.1.502 and 2.2.101_)
 
 ### PackageIconUrl
 
@@ -366,7 +366,7 @@ This Boolean value indicates whether the pack process should create a source pac
 
 ### IsTool
 
-Specifies whether all output files are copied to the *tools* folder instead of the *lib* folder. Note that this is different from a `DotNetCliTool` which is specified by setting the `PackageType` in the *.csproj* file.
+Specifies whether all output files are copied to the *tools* folder instead of the *lib* folder. This is different from a `DotNetCliTool`, which is specified by setting the `PackageType` in the *.csproj* file.
 
 ### RepositoryUrl
 
@@ -392,7 +392,7 @@ Specifies the minimum version of the NuGet client that can install this package,
 
 ### IncludeBuildOutput
 
-This Boolean values specifies whether the build output assemblies should be packed into the *.nupkg* file or not.
+This Boolean value specifies whether the build output assemblies should be packed into the *.nupkg* file or not.
 
 ### IncludeContentInPack
 

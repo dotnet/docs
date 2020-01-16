@@ -6,7 +6,7 @@ ms.technology: csharp-advanced-concepts
 ms.assetid: b453c591-acc6-4e08-8175-97e5bc65958e
 ---
 
-# Translating Expression Trees
+# Translate expression trees
 
 [Previous -- Building Expressions](expression-trees-building.md)
 
@@ -84,7 +84,7 @@ tree. That's safe, because the nodes in the existing tree cannot be
 modified. This can result in significant memory efficiencies.
 The same nodes can be used throughout a tree, or in multiple
 expression trees. Since nodes can't be modified, the
-same node can be reused whenever its needed.
+same node can be reused whenever it's needed.
 
 ## Traversing and Executing an Addition
 
@@ -124,7 +124,7 @@ There's quite a bit of code here, but the concepts are very approachable.
 This code visits children in a depth first search. When it encounters a
 constant node, the visitor returns the value of the constant. After the
 visitor has visited both children, those children will have computed the sum
-computed for that sub-tree. The addition node can now compute its sum.
+computed for that subtree. The addition node can now compute its sum.
 Once all the nodes in the expression tree have been visited, the sum
 will have been computed. You can trace the execution by running the sample
 in the debugger and tracing the execution.

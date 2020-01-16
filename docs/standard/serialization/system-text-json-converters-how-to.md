@@ -1,6 +1,7 @@
 ---
 title: "How to write custom converters for JSON serialization - .NET"
 ms.date: "01/10/2020"
+no-loc: [System.Text.Json, Newtonsoft.Json]
 helpviewer_keywords: 
   - "JSON serialization"
   - "serializing objects"

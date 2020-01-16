@@ -6,7 +6,7 @@ ms.technology: csharp-advanced-concepts
 ms.assetid: b453c591-acc6-4e08-8175-97e5bc65958e
 ---
 
-# Translate Expression Trees
+# Translate expression trees
 
 [Previous -- Building Expressions](expression-trees-building.md)
 
@@ -84,7 +84,7 @@ tree. That's safe, because the nodes in the existing tree cannot be
 modified. This can result in significant memory efficiencies.
 The same nodes can be used throughout a tree, or in multiple
 expression trees. Since nodes can't be modified, the
-same node can be reused whenever it is needed.
+same node can be reused whenever it's needed.
 
 ## Traversing and Executing an Addition
 

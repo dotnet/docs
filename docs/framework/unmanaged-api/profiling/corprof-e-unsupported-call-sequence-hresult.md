@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: f2fc441f-d62e-4f72-a011-354ea13c8c59
 ---
 # CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT
+
 The CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT was introduced in .NET Framework version 2.0. .NET Framework 4 returns this HRESULT in two scenarios:  
   
 - When a hijacking profiler forcibly resets a thread's register context at an arbitrary time so that the thread tries to access structures that are in an inconsistent state.  
@@ -17,7 +18,8 @@ The CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT was introduced in .NET Framework
 These two scenarios are discussed in the following sections.  
   
 ## Hijacking Profilers  
- (This scenario is primarily an issue with hijacking profilers, although there are cases where non-hijacking profilers can see this HRESULT.)  
+
+  (This scenario is primarily an issue with hijacking profilers, although there are cases where non-hijacking profilers can see this HRESULT.)  
   
  In this scenario, a hijacking profiler forcibly resets a thread's register context at an arbitrary time so that the thread can enter profiler code or reenter the common language runtime (CLR) through an [ICorProfilerInfo](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md) method.  
   

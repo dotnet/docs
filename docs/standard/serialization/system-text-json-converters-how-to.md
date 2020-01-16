@@ -276,6 +276,8 @@ The converter can deserialize JSON that was created by using the same converter 
 ]
 ```
 
+The converter code in the preceding example reads and writes each property manually. An alternative is to call `Deserialize` or `Serialize` to do some of the work. For an example, see [this StackOverflow post](https://stackoverflow.com/a/59744873/12509023).
+
 ## Other custom converter samples
 
 The [Migrate from Newtonsoft.Json to System.Text.Json](system-text-json-migrate-from-newtonsoft-how-to.md) article contains additional samples of custom converters.

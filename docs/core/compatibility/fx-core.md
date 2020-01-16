@@ -12,11 +12,7 @@ If you're migrating an app from .NET Framework to .NET Core, the breaking change
 
 ## CoreFx
 
-Breaking changes:
-
 - [Change in default value of UseShellExecute](#change-in-default-value-of-useshellexecute)
-
-***
 
 ### .NET Core 2.1
 
@@ -27,8 +23,6 @@ Breaking changes:
 ## Windows Forms
 
 Windows Forms support was added to .NET Core in version 3.0. If you're migrating a Windows Forms app from .NET Framework to .NET Core, the breaking changes listed here may affect your app.
-
-Breaking changes:
 
 - [Removed controls](#removed-controls)
 - [CellFormatting event not raised if tooltip is shown](#cellformatting-event-not-raised-if-tooltip-is-shown)

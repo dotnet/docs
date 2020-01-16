@@ -23,7 +23,7 @@ service on GitHub. You'll read information in JSON format, and convert
 that JSON packet into C# objects. Finally, you'll see how to work with
 C# objects.
 
-There are a lot of features in this tutorial. Let’s build them one by one.
+There are many features in this tutorial. Let’s build them one by one.
 
 If you prefer to follow along with the [final sample](https://github.com/dotnet/samples/tree/master/csharp/getting-started/console-webapiclient) for this topic, you can download it. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
@@ -48,10 +48,7 @@ directory. Enter the following command in a console window:
 dotnet new console --name WebApiClient
 ```
 
-This creates the starter files for a basic "Hello World" application. The project name is "WebApiClient". As this is a
-new project, none of the dependencies are in place, so the first run will
-download the .NET Core framework, install a development certificate and run
-the NuGet package manager to restore missing dependencies.
+This creates the starter files for a basic "Hello World" application. The project name is "WebApiClient". As this is a new project, none of the dependencies are in place. The first run will download the .NET Core framework, install a development certificate, and run the NuGet package manager to restore missing dependencies.
 
 Before you start making modifications, type
 `dotnet run` ([see note](#dotnet-restore-note)) at the command prompt to

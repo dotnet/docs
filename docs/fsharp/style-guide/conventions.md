@@ -439,14 +439,14 @@ Finally, automatic generalization is not always a boon for people who are new to
 
 ### Prefer structs for small data types
 
-Using structs (also called Value Types) can often result in higher performance for some code because it avoids allocating and de-allocating objects on the managed heap in .NET. However, structs are not always a "go faster" button: if the size of the data in a struct exceeds 16 bytes, copying the data can often result in more CPU time spend than using a reference type.
+Using structs (also called Value Types) can often result in higher performance for some code because it typically avoids allocating objects. However, structs are not always a "go faster" button: if the size of the data in a struct exceeds 16 bytes, copying the data can often result in more CPU time spend than using a reference type.
 
-A good rule of thumb for using structs intead of value types is:
+To determine if you should use a struct, consider the following two points:
 
-* If the size of your data is 16 bytes or smaller (measure with a call to `sizeof`)
-* If your data type is made up of other value types (for example, a record of `int`s)
+1. If the size of your data is 16 bytes or smaller
+2. If you are likely to have many of these data types resident in memory in a running program
 
-If one of these points applies to your code, it is generally a good idea to use a struct. If both apply, using a struct will almost always yield better performance.
+If the first point applies, you should generally use a struct. If both apply, you should almost always use a struct.
 
 #### Prefer struct tuples when grouping small value types
 
@@ -476,9 +476,9 @@ let rec runWithStructTuple t offset times =
         runWithStructTuple r offset (times - 1)
 ```
 
-When you benchmark these functions with a statistical benchmarking tool like [BenchmarkDotNet](https://benchmarkdotnet.org/), you'll find that the `runWithStructTuple` function that uses struct tuples runs 40% faster and allocates no memory. This is because all of the values being processed are also value types, and the size of the tuple is smaller than 16 bytes.
+When you benchmark these functions with a statistical benchmarking tool like [BenchmarkDotNet](https://benchmarkdotnet.org/), you'll find that the `runWithStructTuple` function that uses struct tuples runs 40% faster and allocates no memory.
 
-However, this will not always be the case in your own code. Depeneding on if you mark a function as `inline`, code that uses reference tuples may get some additional optimizations, or code that would allocate could simply be optimized away. You should always measure code whenever performance is concerned, and never operate based on assumption or intuition.
+However, these results will not always be the case in your own code. Depeneding on if you mark a function as `inline`, code that uses reference tuples may get some additional optimizations, or code that would allocate could simply be optimized away. You should always measure results whenever performance is concerned, and never operate based on assumption or intuition.
 
 #### Prefer struct records when the data type is small
 
@@ -513,9 +513,7 @@ let rec processStructPoint (p: SPoint) offset times =
 
 This is very similar to the tuple code before, but this time using records and an inlined inner function.
 
-When you benchmark these functions with a statistical benchmarking tool like [BenchmarkDotNet](https://benchmarkdotnet.org/), you'll find that `processStructPoint` runs nearly 60% faster and allocates nothing on the managed heap. Because this follows the rule of thumb - a small data type containing value types - the results are unsurprising.
-
-You will notice similar results if you define record types that also contain reference types, so long as the overall record definition is small. These will result in more allocations than the examples shown above, but
+When you benchmark these functions with a statistical benchmarking tool like [BenchmarkDotNet](https://benchmarkdotnet.org/), you'll find that `processStructPoint` runs nearly 60% faster and allocates nothing on the managed heap.
 
 #### Prefer struct discriminated unions when the data type is small
 
@@ -540,9 +538,9 @@ The previous observations about performance with struct tuples and records also 
         |> SName
 ```
 
-In this case, the rule of thumb partially holds because the data types are very small. It's very common to define discriminated unions like this for domain modeling. However, the underlying data is not a value type. This ends up not being much of a factor, though, and when you benchmark these functions with a statistical benchmarking tool like [BenchmarkDotNet](https://benchmarkdotnet.org/) you'll find that `structReverseName` runs about 25% faster than `reverseName` for small strings. For very large strings, both will perform about the same, so it is always preferable to use a struct discriminated union in this case.
+It's very common to define single-case Discriminated Unions like this for domain modeling. When you benchmark these functions with a statistical benchmarking tool like [BenchmarkDotNet](https://benchmarkdotnet.org/) you'll find that `structReverseName` runs about 25% faster than `reverseName` for small strings. For very large strings, both will perform about the same, so in this case it is always preferable to use a struct. As mentioned before, always measure and do not operate on assumptions or intuition.
 
-However, it is quite common to have larger Discriminated Unions when modeling a domain, so take care to measure any changes you make and not assume that a struct will perform better.
+Although the previous example showed that a struct Discriminated Union yielded better performance, it is quite common to have larger Discriminated Unions when modeling a domain. Larger data types like that may not perform as well if they are structs depending on the operations on them, since more copying could be involved.
 
 ### Functional programming and mutation
 

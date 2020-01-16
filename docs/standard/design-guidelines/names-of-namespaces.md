@@ -23,7 +23,7 @@ As with other naming guidelines, the goal when naming namespaces is creating suf
 
  ✔️ DO use a stable, version-independent product name at the second level of a namespace name.
 
- **X DO NOT** use organizational hierarchies as the basis for names in namespace hierarchies, because group names within corporations tend to be short-lived. Organize the hierarchy of namespaces around groups of related technologies.
+ ❌ DO NOT use organizational hierarchies as the basis for names in namespace hierarchies, because group names within corporations tend to be short-lived. Organize the hierarchy of namespaces around groups of related technologies.
 
  ✔️ DO use PascalCasing, and separate namespace components with periods (e.g., `Microsoft.Office.PowerPoint`). If your brand employs nontraditional casing, you should follow the casing defined by your brand, even if it deviates from normal namespace casing.
 
@@ -31,12 +31,12 @@ As with other naming guidelines, the goal when naming namespaces is creating suf
 
  For example, use `System.Collections` instead of `System.Collection`. Brand names and acronyms are exceptions to this rule, however. For example, use `System.IO` instead of `System.IOs`.
 
- **X DO NOT** use the same name for a namespace and a type in that namespace.
+ ❌ DO NOT use the same name for a namespace and a type in that namespace.
 
  For example, do not use `Debug` as a namespace name and then also provide a class named `Debug` in the same namespace. Several compilers require such types to be fully qualified.
 
 ### Namespaces and Type Name Conflicts
- **X DO NOT** introduce generic type names such as `Element`, `Node`, `Log`, and `Message`.
+ ❌ DO NOT introduce generic type names such as `Element`, `Node`, `Log`, and `Message`.
 
  There is a very high probability that doing so will lead to type name conflicts in common scenarios. You should qualify the generic type names (`FormElement`, `XmlNode`, `EventLog`, `SoapMessage`).
 
@@ -49,7 +49,7 @@ As with other naming guidelines, the goal when naming namespaces is creating suf
      `System.Windows*`
      `System.Web.UI*`
 
-     **X DO NOT** give the same name to types in namespaces within a single application model.
+     ❌ DO NOT give the same name to types in namespaces within a single application model.
 
      For example, do not add a type named `Page` to the <xref:System.Web.UI.Adapters?displayProperty=nameWithType> namespace, because the <xref:System.Web.UI?displayProperty=nameWithType> namespace already contains a type named `Page`.
 
@@ -61,7 +61,7 @@ As with other naming guidelines, the goal when naming namespaces is creating suf
 
      Core namespaces include all `System` namespaces, excluding namespaces of the application models and the Infrastructure namespaces. Core namespaces include, among others, `System`, `System.IO`, `System.Xml`, and `System.Net`.
 
-     **X DO NOT** give types names that would conflict with any type in the Core namespaces.
+     ❌ DO NOT give types names that would conflict with any type in the Core namespaces.
 
      For example, never use `Stream` as a type name. It would conflict with <xref:System.IO.Stream?displayProperty=nameWithType>, a very commonly used type.
 
@@ -69,9 +69,9 @@ As with other naming guidelines, the goal when naming namespaces is creating suf
 
      This category includes all namespaces with the same first two namespace nodes `(<Company>.<Technology>*`), such as `Microsoft.Build.Utilities` and `Microsoft.Build.Tasks`. It is important that types belonging to a single technology do not conflict with each other.
 
-     **X DO NOT** assign type names that would conflict with other types within a single technology.
+     ❌ DO NOT assign type names that would conflict with other types within a single technology.
 
-     **X DO NOT** introduce type name conflicts between types in technology namespaces and an application model namespace (unless the technology is not intended to be used with the application model).
+     ❌ DO NOT introduce type name conflicts between types in technology namespaces and an application model namespace (unless the technology is not intended to be used with the application model).
 
  *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*
 

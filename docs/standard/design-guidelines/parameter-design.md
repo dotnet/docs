@@ -18,11 +18,11 @@ This section provides broad guidelines on parameter design, including sections w
 
  For example, suppose you want to design a method that enumerates a collection and prints each item to the console. Such a method should take <xref:System.Collections.IEnumerable> as the parameter, not <xref:System.Collections.ArrayList> or <xref:System.Collections.IList>, for example.
 
- **X DO NOT** use reserved parameters.
+ ❌ DO NOT use reserved parameters.
 
  If more input to a member is needed in some future version, a new overload can be added.
 
- **X DO NOT** have publicly exposed methods that take pointers, arrays of pointers, or multidimensional arrays as parameters.
+ ❌ DO NOT have publicly exposed methods that take pointers, arrays of pointers, or multidimensional arrays as parameters.
 
  Pointers and multidimensional arrays are relatively difficult to use properly. In almost all cases, APIs can be redesigned to avoid taking these types as parameters.
 
@@ -37,7 +37,7 @@ This section provides broad guidelines on parameter design, including sections w
 ### Choose between enum and boolean parameters
  ✔️ DO use enums if a member would otherwise have two or more Boolean parameters.
 
- **X DO NOT** use Booleans unless you are absolutely sure there will never be a need for more than two values.
+ ❌ DO NOT use Booleans unless you are absolutely sure there will never be a need for more than two values.
 
  Enums give you some room for future addition of values, but you should be aware of all the implications of adding values to enums, which are described in [Enum Design](../../../docs/standard/design-guidelines/enum.md).
 
@@ -54,7 +54,7 @@ This section provides broad guidelines on parameter design, including sections w
 
  Do not assume enum arguments will be in the range defined by the enum. The CLR allows casting any integer value into an enum value even if the value is not defined in the enum.
 
- **X DO NOT** use <xref:System.Enum.IsDefined%2A?displayProperty=nameWithType> for enum range checks.
+ ❌ DO NOT use <xref:System.Enum.IsDefined%2A?displayProperty=nameWithType> for enum range checks.
 
  ✔️ DO be aware that mutable arguments might have changed after they were validated.
 
@@ -73,7 +73,7 @@ This section provides broad guidelines on parameter design, including sections w
 
  Using `out` or `ref` parameters requires experience with pointers, understanding how value types and reference types differ, and handling methods with multiple return values. Also, the difference between `out` and `ref` parameters is not widely understood. Framework architects designing for a general audience should not expect users to master working with `out` or `ref` parameters.
 
- **X DO NOT** pass reference types by reference.
+ ❌ DO NOT pass reference types by reference.
 
  There are some limited exceptions to the rule, such as a method that can be used to swap references.
 
@@ -110,7 +110,7 @@ public class String {
 
  For example, members with byte array parameters would almost never be called by passing individual bytes. For this reason, byte array parameters in the .NET Framework do not use the params keyword.
 
- **X DO NOT** use params arrays if the array is modified by the member taking the params array parameter.
+ ❌ DO NOT use params arrays if the array is modified by the member taking the params array parameter.
 
  Because of the fact that many compilers turn the arguments to the member into a temporary array at the call site, the array might be a temporary object, and therefore any modifications to the array will be lost.
 
@@ -130,7 +130,7 @@ public class String {
 
  You should validate that the array is not null before processing.
 
- **X DO NOT** use the `varargs` methods, otherwise known as the ellipsis.
+ ❌ DO NOT use the `varargs` methods, otherwise known as the ellipsis.
 
  Some CLR languages, such as C++, support an alternative convention for passing variable parameter lists called `varargs` methods. The convention should not be used in frameworks, because it is not CLS compliant.
 

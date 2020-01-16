@@ -20,19 +20,19 @@ A nested type is a type defined within the scope of another type, which is calle
 
  ✔️ DO use nested types when the relationship between the nested type and its outer type is such that member-accessibility semantics are desirable.
 
- **X DO NOT** use public nested types as a logical grouping construct; use namespaces for this.
+ ❌ DO NOT use public nested types as a logical grouping construct; use namespaces for this.
 
  ❌ AVOID publicly exposed nested types. The only exception to this is if variables of the nested type need to be declared only in rare scenarios such as subclassing or other advanced customization scenarios.
 
- **X DO NOT** use nested types if the type is likely to be referenced outside of the containing type.
+ ❌ DO NOT use nested types if the type is likely to be referenced outside of the containing type.
 
  For example, an enum passed to a method defined on a class should not be defined as a nested type in the class.
 
- **X DO NOT** use nested types if they need to be instantiated by client code.  If a type has a public constructor, it should probably not be nested.
+ ❌ DO NOT use nested types if they need to be instantiated by client code.  If a type has a public constructor, it should probably not be nested.
 
  If a type can be instantiated, that seems to indicate the type has a place in the framework on its own (you can create it, work with it, and destroy it without ever using the outer type), and thus should not be nested. Inner types should not be widely reused outside of the outer type without any relationship whatsoever to the outer type.
 
- **X DO NOT** define a nested type as a member of an interface. Many languages do not support such a construct.
+ ❌ DO NOT define a nested type as a member of an interface. Many languages do not support such a construct.
 
  *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*
 

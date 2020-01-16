@@ -27,20 +27,20 @@ This section describes general naming conventions that relate to word choice, gu
 
  The property name `CanScrollHorizontally` is better than `ScrollableX` (an obscure reference to the X-axis).
 
- **X DO NOT** use underscores, hyphens, or any other nonalphanumeric characters.
+ ❌ DO NOT use underscores, hyphens, or any other nonalphanumeric characters.
 
- **X DO NOT** use Hungarian notation.
+ ❌ DO NOT use Hungarian notation.
 
  ❌ AVOID using identifiers that conflict with keywords of widely used programming languages.
 
  According to Rule 4 of the Common Language Specification (CLS), all compliant languages must provide a mechanism that allows access to named items that use a keyword of that language as an identifier. C#, for example, uses the @ sign as an escape mechanism in this case. However, it is still a good idea to avoid common keywords because it is much more difficult to use a method with the escape sequence than one without it.
 
 ## Using Abbreviations and Acronyms
- **X DO NOT** use abbreviations or contractions as part of identifier names.
+ ❌ DO NOT use abbreviations or contractions as part of identifier names.
 
  For example, use `GetWindow` rather than `GetWin`.
 
- **X DO NOT** use any acronyms that are not widely accepted, and even if they are, only when necessary.
+ ❌ DO NOT use any acronyms that are not widely accepted, and even if they are, only when necessary.
 
 ## Avoiding Language-Specific Names
  ✔️ DO use semantically interesting names rather than language-specific keywords for type names.
@@ -83,7 +83,7 @@ This section describes general naming conventions that relate to word choice, gu
 
  ✔️ DO use a numeric suffix to indicate a new version of an existing API, particularly if the existing name of the API is the only name that makes sense (i.e., if it is an industry standard) and if adding any meaningful suffix (or changing the name) is not an appropriate option.
 
- **X DO NOT** use the "Ex" (or a similar) suffix for an identifier to distinguish it from an earlier version of the same API.
+ ❌ DO NOT use the "Ex" (or a similar) suffix for an identifier to distinguish it from an earlier version of the same API.
 
  ✔️ DO use the "64" suffix when introducing versions of APIs that operate on a 64-bit integer (a long integer) instead of a 32-bit integer. You only need to take this approach when the existing 32-bit API exists; don’t do it for brand new APIs with only a 64-bit version.
 

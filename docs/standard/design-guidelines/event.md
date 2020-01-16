@@ -34,11 +34,11 @@ Events are the most commonly used form of callbacks (constructs that allow the f
 
  The parameter should be named `e` and should be typed as the event argument class.
 
- **X DO NOT** pass null as the sender when raising a nonstatic event.
+ ❌ DO NOT pass null as the sender when raising a nonstatic event.
 
  ✔️ DO pass null as the sender when raising a static event.
 
- **X DO NOT** pass null as the event data parameter when raising an event.
+ ❌ DO NOT pass null as the event data parameter when raising an event.
 
  You should pass `EventArgs.Empty` if you don’t want to pass any data to the event handling method. Developers expect this parameter not to be null.
 
@@ -57,7 +57,7 @@ Events are the most commonly used form of callbacks (constructs that allow the f
 
  ✔️ DO use <xref:System.EventArgs?displayProperty=nameWithType> or its subclass as the type of the second parameter of the event handler, and call it `e`.
 
- **X DO NOT** have more than two parameters on event handlers.
+ ❌ DO NOT have more than two parameters on event handlers.
 
  *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*
 

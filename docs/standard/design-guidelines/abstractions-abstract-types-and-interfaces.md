@@ -20,7 +20,7 @@ An abstraction is a type that describes a contract but does not provide a full i
 
  However, abstractions provide extremely powerful extensibility that the other extensibility mechanisms cannot often match. They are at the core of many architectural patterns, such as plug-ins, inversion of control (IoC), pipelines, and so on. They are also extremely important for testability of frameworks. Good abstractions make it possible to stub out heavy dependencies for the purpose of unit testing. In summary, abstractions are responsible for the sought-after richness of the modern object-oriented frameworks.
 
- **X DO NOT** provide abstractions unless they are tested by developing several concrete implementations and APIs consuming the abstractions.
+ ❌ DO NOT provide abstractions unless they are tested by developing several concrete implementations and APIs consuming the abstractions.
 
  ✔️ DO choose carefully between an abstract class and an interface when designing an abstraction.
 

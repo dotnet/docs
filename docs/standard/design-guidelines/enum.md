@@ -22,9 +22,9 @@ Flag enums are designed to support bitwise operations on the enum values. A comm
 
 ✔️ DO favor using an enum instead of static constants.
 
-**X DO NOT** use an enum for open sets (such as the operating system version, names of your friends, etc.).
+❌ DO NOT use an enum for open sets (such as the operating system version, names of your friends, etc.).
 
-**X DO NOT** provide reserved enum values that are intended for future use.
+❌ DO NOT provide reserved enum values that are intended for future use.
 
 You can always simply add values to the existing enum at a later stage. See [Adding Values to Enums](#add_value) for more details on adding values to enums. Reserved values just pollute the set of real values and tend to lead to user errors.
 
@@ -32,7 +32,7 @@ You can always simply add values to the existing enum at a later stage. See [Add
 
 A common practice for ensuring future extensibility of C APIs is to add reserved parameters to method signatures. Such reserved parameters can be expressed as enums with a single default value. This should not be done in managed APIs. Method overloading allows adding parameters in future releases.
 
-**X DO NOT** include sentinel values in enums.
+❌ DO NOT include sentinel values in enums.
 
 Although they are sometimes helpful to framework developers, sentinel values are confusing to users of the framework. They are used to track the state of the enum rather than being one of the values from the set represented by the enum.
 
@@ -58,7 +58,7 @@ For in-memory usage, be aware that managed objects are always `DWORD`-aligned, s
 
 ✔️ DO name flag enums with plural nouns or noun phrases and simple enums with singular nouns or noun phrases.
 
-**X DO NOT** extend <xref:System.Enum?displayProperty=nameWithType> directly.
+❌ DO NOT extend <xref:System.Enum?displayProperty=nameWithType> directly.
 
 <xref:System.Enum?displayProperty=nameWithType> is a special type used by the CLR to create user-defined enumerations. Most programming languages provide a programming element that gives you access to this functionality. For example, in C# the `enum` keyword is used to define an enumeration.
 

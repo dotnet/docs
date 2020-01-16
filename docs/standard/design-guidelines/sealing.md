@@ -14,7 +14,7 @@ One of the features of object-oriented frameworks is that developers can extend 
 
  A powerful mechanism that prevents extensibility is sealing. You can seal either the class or individual members. Sealing a class prevents users from inheriting from the class. Sealing a member prevents users from overriding a particular member.
 
- **X DO NOT** seal classes without having a good reason to do so.
+ ❌ DO NOT seal classes without having a good reason to do so.
 
  Sealing a class because you cannot think of an extensibility scenario is not a good reason. Framework users like to inherit from classes for various nonobvious reasons, like adding convenience members. See [Unsealed Classes](../../../docs/standard/design-guidelines/unsealed-classes.md) for examples of nonobvious reasons users want to inherit from a type.
 
@@ -28,7 +28,7 @@ One of the features of object-oriented frameworks is that developers can extend 
 
 - The class is an attribute that requires very fast runtime look-up. Sealed attributes have slightly higher performance levels than unsealed ones. See [Attributes](../../../docs/standard/design-guidelines/attributes.md).
 
- **X DO NOT** declare protected or virtual members on sealed types.
+ ❌ DO NOT declare protected or virtual members on sealed types.
 
  By definition, sealed types cannot be inherited from. This means that protected members on sealed types cannot be called, and virtual methods on sealed types cannot be overridden.
 

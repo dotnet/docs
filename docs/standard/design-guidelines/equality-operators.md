@@ -13,7 +13,7 @@ ms.assetid: bc496a91-fefb-4ce0-ab4c-61f09964119a
 # Equality Operators
 This section discusses overloading equality operators and refers to `operator==` and `operator!=` as equality operators.
 
- **X DO NOT** overload one of the equality operators and not the other.
+ ❌ DO NOT overload one of the equality operators and not the other.
 
  ✔️ DO ensure that <xref:System.Object.Equals%2A?displayProperty=nameWithType> and the equality operators have exactly the same semantics and similar performance characteristics.
 

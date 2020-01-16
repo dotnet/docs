@@ -22,11 +22,11 @@ Operator overloads allow framework types to appear as if they were built-in lang
 
  ✔️ DO define operator overloads in structs that represent numbers (such as <xref:System.Decimal?displayProperty=nameWithType>).
 
- **X DO NOT** be cute when defining operator overloads.
+ ❌ DO NOT be cute when defining operator overloads.
 
  Operator overloading is useful in cases in which it is immediately obvious what the result of the operation will be. For example, it makes sense to be able to subtract one <xref:System.DateTime> from another `DateTime` and get a <xref:System.TimeSpan>. However, it is not appropriate to use the logical union operator to union two database queries, or to use the shift operator to write to a stream.
 
- **X DO NOT** provide operator overloads unless at least one of the operands is of the type defining the overload.
+ ❌ DO NOT provide operator overloads unless at least one of the operands is of the type defining the overload.
 
  ✔️ DO overload operators in a symmetric fashion.
 
@@ -85,17 +85,17 @@ Operator overloads allow framework types to appear as if they were built-in lang
 ### Conversion Operators
  Conversion operators are unary operators that allow conversion from one type to another. The operators must be defined as static members on either the operand or the return type. There are two types of conversion operators: implicit and explicit.
 
- **X DO NOT** provide a conversion operator if such conversion is not clearly expected by the end users.
+ ❌ DO NOT provide a conversion operator if such conversion is not clearly expected by the end users.
 
- **X DO NOT** define conversion operators outside of a type’s domain.
+ ❌ DO NOT define conversion operators outside of a type’s domain.
 
  For example, <xref:System.Int32>, <xref:System.Double>, and <xref:System.Decimal> are all numeric types, whereas <xref:System.DateTime> is not. Therefore, there should be no conversion operator to convert a `Double(long)` to a `DateTime`. A constructor is preferred in such a case.
 
- **X DO NOT** provide an implicit conversion operator if the conversion is potentially lossy.
+ ❌ DO NOT provide an implicit conversion operator if the conversion is potentially lossy.
 
  For example, there should not be an implicit conversion from `Double` to `Int32` because `Double` has a wider range than `Int32`. An explicit conversion operator can be provided even if the conversion is potentially lossy.
 
- **X DO NOT** throw exceptions from implicit casts.
+ ❌ DO NOT throw exceptions from implicit casts.
 
  It is very difficult for end users to understand what is happening, because they might not be aware that a conversion is taking place.
 

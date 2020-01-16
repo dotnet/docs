@@ -23,7 +23,7 @@ Beyond the obvious reason of readability, it is important to follow the guidelin
 
  ✔️ CONSIDER meaningful names for operator overload parameters if doing so adds significant value.
 
- **X DO NOT** use abbreviations or numeric indices for operator overload parameter names.
+ ❌ DO NOT use abbreviations or numeric indices for operator overload parameter names.
 
  *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*
 

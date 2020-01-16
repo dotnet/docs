@@ -14,7 +14,7 @@ Although properties are technically very similar to methods, they are quite diff
 
  Keep in mind that if the type of the property is a mutable reference type, the property value can be changed even if the property is get-only.
 
- **X DO NOT** provide set-only properties or properties with the setter having broader accessibility than the getter.
+ ❌ DO NOT provide set-only properties or properties with the setter having broader accessibility than the getter.
 
  For example, do not use properties with a public setter and a protected getter.
 
@@ -53,13 +53,13 @@ Although properties are technically very similar to methods, they are quite diff
 
  In C#, indexers are by default named Item. The <xref:System.Runtime.CompilerServices.IndexerNameAttribute> can be used to customize this name.
 
- **X DO NOT** provide both an indexer and methods that are semantically equivalent.
+ ❌ DO NOT provide both an indexer and methods that are semantically equivalent.
 
- **X DO NOT** provide more than one family of overloaded indexers in one type.
+ ❌ DO NOT provide more than one family of overloaded indexers in one type.
 
  This is enforced by the C# compiler.
 
- **X DO NOT** use nondefault indexed properties.
+ ❌ DO NOT use nondefault indexed properties.
 
  This is enforced by the C# compiler.
 

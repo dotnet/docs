@@ -20,15 +20,15 @@ A dependency property (DP) is a regular property that stores its value in a prop
 
  ✔️ DO name the dependency property static field by suffixing the name of the property with "Property."
 
- **X DO NOT** set default values of dependency properties explicitly in code; set them in metadata instead.
+ ❌ DO NOT set default values of dependency properties explicitly in code; set them in metadata instead.
 
  If you set a property default explicitly, you might prevent that property from being set by some implicit means, such as a styling.
 
- **X DO NOT** put code in the property accessors other than the standard code to access the static field.
+ ❌ DO NOT put code in the property accessors other than the standard code to access the static field.
 
  That code won’t execute if the property is set by implicit means, such as a styling, because styling uses the static field directly.
 
- **X DO NOT** use dependency properties to store secure data. Even private dependency properties can be accessed publicly.
+ ❌ DO NOT use dependency properties to store secure data. Even private dependency properties can be accessed publicly.
 
 ## Attached Dependency Property Design
  Dependency properties described in the preceding section represent intrinsic properties of the declaring type; for example, the `Text` property is a property of `TextButton`, which declares it. A special kind of dependency property is the attached dependency property.
@@ -74,15 +74,15 @@ public class Grid {
 
  Unfortunately dependency property accessors cannot contain arbitrary validation code. Instead, dependency property validation logic needs to be specified during property registration.
 
- **X DO NOT** put dependency property validation logic in the property’s accessors. Instead, pass a validation callback to `DependencyProperty.Register` method.
+ ❌ DO NOT put dependency property validation logic in the property’s accessors. Instead, pass a validation callback to `DependencyProperty.Register` method.
 
 ## Dependency Property Change Notifications
- **X DO NOT** implement change notification logic in dependency property accessors. Dependency properties have a built-in change notifications feature that must be used by supplying a change notification callback to the <xref:System.Windows.PropertyMetadata>.
+ ❌ DO NOT implement change notification logic in dependency property accessors. Dependency properties have a built-in change notifications feature that must be used by supplying a change notification callback to the <xref:System.Windows.PropertyMetadata>.
 
 ## Dependency Property Value Coercion
  Property coercion takes place when the value given to a property setter is modified by the setter before the property store is actually modified.
 
- **X DO NOT** implement coercion logic in dependency property accessors.
+ ❌ DO NOT implement coercion logic in dependency property accessors.
 
  Dependency properties have a built-in coercion feature, and it can be used by supplying a coercion callback to the `PropertyMetadata`.
 

@@ -34,11 +34,11 @@ public static class Console {
 
  ✔️ DO make only the longest overload virtual (if extensibility is required). Shorter overloads should simply call through to a longer overload.
 
- **X DO NOT** use `ref` or `out` modifiers to overload members.
+ ❌ DO NOT use `ref` or `out` modifiers to overload members.
 
  Some languages cannot resolve calls to overloads like this. In addition, such overloads usually have completely different semantics and probably should not be overloads but two separate methods instead.
 
- **X DO NOT** have overloads with parameters at the same position and similar types yet with different semantics.
+ ❌ DO NOT have overloads with parameters at the same position and similar types yet with different semantics.
 
  ✔️ DO  allow `null` to be passed for optional arguments.
 

@@ -13,7 +13,7 @@ Exception-throwing guidelines described in this section require a good definitio
 
  Most developers have become comfortable with using exceptions for usage errors such as division by zero or null references. In the Framework, exceptions are used for all error conditions, including execution errors.
 
- **X DO NOT** return error codes.
+ ❌ DO NOT return error codes.
 
  Exceptions are the primary means of reporting errors in frameworks.
 
@@ -21,7 +21,7 @@ Exception-throwing guidelines described in this section require a good definitio
 
  ✔️ CONSIDER terminating the process by calling `System.Environment.FailFast` (.NET Framework 2.0 feature) instead of throwing an exception if your code encounters a situation where it is unsafe for further execution.
 
- **X DO NOT** use exceptions for the normal flow of control, if possible.
+ ❌ DO NOT use exceptions for the normal flow of control, if possible.
 
  Except for system failures and operations with potential race conditions, framework designers should design APIs so users can write code that does not throw exceptions. For example, you can provide a way to check preconditions before calling a member so users can write code that does not throw exceptions.
 
@@ -35,9 +35,9 @@ Exception-throwing guidelines described in this section require a good definitio
 
  Exceptions that are a part of the contract should not change from one version to the next (i.e., exception type should not change, and new exceptions should not be added).
 
- **X DO NOT** have public members that can either throw or not based on some option.
+ ❌ DO NOT have public members that can either throw or not based on some option.
 
- **X DO NOT** have public members that return exceptions as the return value or an `out` parameter.
+ ❌ DO NOT have public members that return exceptions as the return value or an `out` parameter.
 
  Returning exceptions from public APIs instead of throwing them defeats many of the benefits of exception-based error reporting.
 
@@ -47,7 +47,7 @@ Exception-throwing guidelines described in this section require a good definitio
 
  Also, members that throw exceptions are not getting inlined. Moving the throw statement inside the builder might allow the member to be inlined.
 
- **X DO NOT** throw exceptions from exception filter blocks.
+ ❌ DO NOT throw exceptions from exception filter blocks.
 
  When an exception filter raises an exception, the exception is caught by the CLR, and the filter returns false. This behavior is indistinguishable from the filter executing and returning false explicitly and is therefore very difficult to debug.
 

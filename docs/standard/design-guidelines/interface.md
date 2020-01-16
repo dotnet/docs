@@ -31,7 +31,7 @@ Although most APIs are best modeled using classes and structs, there are cases i
 
  Doing this helps to validate the interface design. For example, <xref:System.Collections.Generic.List%601.Sort%2A?displayProperty=nameWithType> consumes the <xref:System.Collections.Generic.IComparer%601?displayProperty=nameWithType> interface.
 
- **X DO NOT** add members to an interface that has previously shipped.
+ ❌ DO NOT add members to an interface that has previously shipped.
 
  Doing so would break implementations of the interface. You should create a new interface in order to avoid versioning problems.
 

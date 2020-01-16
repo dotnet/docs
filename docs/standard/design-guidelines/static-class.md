@@ -20,9 +20,9 @@ A static class is defined as a class that contains only static members (of cours
 
  Static classes should be used only as supporting classes for the object-oriented core of the framework.
 
- **X DO NOT** treat static classes as a miscellaneous bucket.
+ ❌ DO NOT treat static classes as a miscellaneous bucket.
 
- **X DO NOT** declare or override instance members in static classes.
+ ❌ DO NOT declare or override instance members in static classes.
 
  ✔️ DO declare static classes as sealed, abstract, and add a private instance constructor if your programming language does not have built-in support for static classes.
 

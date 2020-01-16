@@ -17,7 +17,7 @@ Because localizable resources can be referenced via certain objects as if they w
 
  ✔️ DO provide descriptive rather than short identifiers.
 
- **X DO NOT** use language-specific keywords of the main CLR languages.
+ ❌ DO NOT use language-specific keywords of the main CLR languages.
 
  ✔️ DO use only alphanumeric characters and underscores in naming resources.
 

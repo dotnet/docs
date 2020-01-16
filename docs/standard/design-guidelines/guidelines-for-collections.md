@@ -7,23 +7,23 @@ ms.assetid: 297b8f1d-b11f-4dc6-960a-8e990817304e
 # Guidelines for Collections
 Any type designed specifically to manipulate a group of objects having some common characteristic can be considered a collection. It is almost always appropriate for such types to implement <xref:System.Collections.IEnumerable> or <xref:System.Collections.Generic.IEnumerable%601>, so in this section we only consider types implementing one or both of those interfaces to be collections.
 
- **X DO NOT** use weakly typed collections in public APIs.
+ ❌ DO NOT use weakly typed collections in public APIs.
 
  The type of all return values and parameters representing collection items should be the exact item type, not any of its base types (this applies only to public members of the collection).
 
- **X DO NOT** use <xref:System.Collections.ArrayList> or <xref:System.Collections.Generic.List%601> in public APIs.
+ ❌ DO NOT use <xref:System.Collections.ArrayList> or <xref:System.Collections.Generic.List%601> in public APIs.
 
  These types are data structures designed to be used in internal implementation, not in public APIs. `List<T>` is optimized for performance and power at the cost of cleanness of the APIs and flexibility. For example, if you return `List<T>`, you will not ever be able to receive notifications when client code modifies the collection. Also, `List<T>` exposes many members, such as <xref:System.Collections.Generic.List%601.BinarySearch%2A>, that are not useful or applicable in many scenarios. The following two sections describe types (abstractions) designed specifically for use in public APIs.
 
- **X DO NOT** use `Hashtable` or `Dictionary<TKey,TValue>` in public APIs.
+ ❌ DO NOT use `Hashtable` or `Dictionary<TKey,TValue>` in public APIs.
 
  These types are data structures designed to be used in internal implementation. Public APIs should use <xref:System.Collections.IDictionary>, `IDictionary <TKey, TValue>`, or a custom type implementing one or both of the interfaces.
 
- **X DO NOT** use <xref:System.Collections.Generic.IEnumerator%601>, <xref:System.Collections.IEnumerator>, or any other type that implements either of these interfaces, except as the return type of a `GetEnumerator` method.
+ ❌ DO NOT use <xref:System.Collections.Generic.IEnumerator%601>, <xref:System.Collections.IEnumerator>, or any other type that implements either of these interfaces, except as the return type of a `GetEnumerator` method.
 
  Types returning enumerators from methods other than `GetEnumerator` cannot be used with the `foreach` statement.
 
- **X DO NOT** implement both `IEnumerator<T>` and `IEnumerable<T>` on the same type. The same applies to the nongeneric interfaces `IEnumerator` and `IEnumerable`.
+ ❌ DO NOT implement both `IEnumerator<T>` and `IEnumerable<T>` on the same type. The same applies to the nongeneric interfaces `IEnumerator` and `IEnumerable`.
 
 ## Collection Parameters
  ✔️ DO use the least-specialized type possible as a parameter type. Most members taking collections as parameters use the `IEnumerable<T>` interface.
@@ -33,7 +33,7 @@ Any type designed specifically to manipulate a group of objects having some comm
  Instead, consider using `IEnumerable<T>` or `IEnumerable` and dynamically checking whether the object implements `ICollection<T>` or `ICollection`.
 
 ## Collection Properties and Return Values
- **X DO NOT** provide settable collection properties.
+ ❌ DO NOT provide settable collection properties.
 
  Users can replace the contents of the collection by clearing the collection first and then adding the new contents. If replacing the whole collection is a common scenario, consider providing the `AddRange` method on the collection.
 
@@ -59,14 +59,14 @@ Any type designed specifically to manipulate a group of objects having some comm
 
  Keyed collections usually have larger memory footprints and should not be used if the memory overhead outweighs the benefits of having the keys.
 
- **X DO NOT** return null values from collection properties or from methods returning collections. Return an empty collection or an empty array instead.
+ ❌ DO NOT return null values from collection properties or from methods returning collections. Return an empty collection or an empty array instead.
 
  The general rule is that null and empty (0 item) collections or arrays should be treated the same.
 
 ### Snapshots Versus Live Collections
  Collections representing a state at some point in time are called snapshot collections. For example, a collection containing rows returned from a database query would be a snapshot. Collections that always represent the current state are called live collections. For example, a collection of `ComboBox` items is a live collection.
 
- **X DO NOT** return snapshot collections from properties. Properties should return live collections.
+ ❌ DO NOT return snapshot collections from properties. Properties should return live collections.
 
  Property getters should be very lightweight operations. Returning a snapshot requires creating a copy of an internal collection in an O(n) operation.
 
@@ -85,7 +85,7 @@ Any type designed specifically to manipulate a group of objects having some comm
 
  ✔️ DO use byte arrays instead of collections of bytes.
 
- **X DO NOT** use arrays for properties if the property would have to return a new array (e.g., a copy of an internal array) every time the property getter is called.
+ ❌ DO NOT use arrays for properties if the property would have to return a new array (e.g., a copy of an internal array) every time the property getter is called.
 
 ## Implementing Custom Collections
  ✔️ CONSIDER inheriting from `Collection<T>`, `ReadOnlyCollection<T>`, or `KeyedCollection<TKey,TItem>` when designing new collections.
@@ -98,7 +98,7 @@ Any type designed specifically to manipulate a group of objects having some comm
 
  ❌ AVOID implementing collection interfaces on types with complex APIs unrelated to the concept of a collection.
 
- **X DO NOT** inherit from nongeneric base collections such as `CollectionBase`. Use `Collection<T>`, `ReadOnlyCollection<T>`, and `KeyedCollection<TKey,TItem>` instead.
+ ❌ DO NOT inherit from nongeneric base collections such as `CollectionBase`. Use `Collection<T>`, `ReadOnlyCollection<T>`, and `KeyedCollection<TKey,TItem>` instead.
 
 ### Naming Custom Collections
  Collections (types that implement `IEnumerable`) are created mainly for two reasons: (1) to create a new data structure with structure-specific operations and often different performance characteristics than existing data structures (e.g.,  <xref:System.Collections.Generic.List%601>, <xref:System.Collections.Generic.LinkedList%601>, <xref:System.Collections.Generic.Stack%601>), and (2) to create a specialized collection for holding a specific set of items (e.g.,  <xref:System.Collections.Specialized.StringCollection>). Data structures are most often used in the internal implementation of applications and libraries. Specialized collections are mainly to be exposed in APIs (as property and parameter types).

@@ -13,7 +13,7 @@ ms.assetid: 3ad6aad9-08e6-4232-b336-0e301f2493e6
 # Exceptions and Performance
 One common concern related to exceptions is that if exceptions are used for code that routinely fails, the performance of the implementation will be unacceptable. This is a valid concern. When a member throws an exception, its performance can be orders of magnitude slower. However, it is possible to achieve good performance while strictly adhering to the exception guidelines that disallow using error codes. Two patterns described in this section suggest ways to do this.
 
- **X DO NOT** use error codes because of concerns that exceptions might affect performance negatively.
+ ❌ DO NOT use error codes because of concerns that exceptions might affect performance negatively.
 
  To improve performance, it is possible to use either the Tester-Doer Pattern or the Try-Parse Pattern, described in the next two sections.
 

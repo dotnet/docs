@@ -34,7 +34,7 @@ public class String {
 
  ✔️ DO name properties using a noun, noun phrase, or adjective.
 
- **X DO NOT** have properties that match the name of "Get" methods as in the following example:
+ ❌ DO NOT have properties that match the name of "Get" methods as in the following example:
 
  `public string TextWriter { get {...} set {...} }`
  `public string GetTextWriter(int value) { ... }`
@@ -67,7 +67,7 @@ public class Control {
 
  For example, a close event that is raised before a window is closed would be called `Closing`, and one that is raised after the window is closed would be called `Closed`.
 
- **X DO NOT** use "Before" or "After" prefixes or postfixes to indicate pre- and post-events. Use present and past tenses as just described.
+ ❌ DO NOT use "Before" or "After" prefixes or postfixes to indicate pre- and post-events. Use present and past tenses as just described.
 
  ✔️ DO name event handlers (delegates used as types of events) with the "EventHandler" suffix, as shown in the following example:
 
@@ -86,7 +86,7 @@ public class Control {
 
  ✔️ DO name fields using a noun, noun phrase, or adjective.
 
- **X DO NOT** use a prefix for field names.
+ ❌ DO NOT use a prefix for field names.
 
  For example, do not use "g_" or "s_" to indicate static fields.
 

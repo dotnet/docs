@@ -25,13 +25,13 @@ Extension methods are a language feature that allows static methods to be called
 
  Note that the guideline applies to other languages where the same binding behavior is present, or where extension methods are not supported.
 
- **X DO NOT** put extension methods in the same namespace as the extended type unless it is for adding methods to interfaces or for dependency management.
+ ❌ DO NOT put extension methods in the same namespace as the extended type unless it is for adding methods to interfaces or for dependency management.
 
  ❌ AVOID defining two or more extension methods with the same signature, even if they reside in different namespaces.
 
  ✔️ CONSIDER defining extension methods in the same namespace as the extended type if the type is an interface and if the extension methods are meant to be used in most or all cases.
 
- **X DO NOT** define extension methods implementing a feature in namespaces normally associated with other features. Instead, define them in the namespace associated with the feature they belong to.
+ ❌ DO NOT define extension methods implementing a feature in namespaces normally associated with other features. Instead, define them in the namespace associated with the feature they belong to.
 
  ❌ AVOID generic naming of namespaces dedicated to extension methods (e.g., "Extensions"). Use a descriptive name (e.g., "Routing") instead.
 

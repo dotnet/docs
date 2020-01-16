@@ -63,7 +63,7 @@ Calling a virtual member will cause the most derived override to be called, even
 
 A static constructor, also called a class constructor, is used to initialize a type. The CLR calls the static constructor before the first instance of the type is created or any static members on that type are called. The user has no control over when the static constructor is called. If a static constructor is not private, it can be called by code other than the CLR. Depending on the operations performed in the constructor, this can cause unexpected behavior. The C# compiler forces static constructors to be private.
 
-**X DO NOT** throw exceptions from static constructors.
+❌ DO NOT throw exceptions from static constructors.
 
 If an exception is thrown from a type constructor, the type is not usable in the current application domain.
 

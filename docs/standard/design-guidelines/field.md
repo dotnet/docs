@@ -15,7 +15,7 @@ The principle of encapsulation is one of the most important notions in object-or
 
  We exclude constant and static read-only fields from this strict restriction, because such fields, almost by definition, are never required to change.
 
- **X DO NOT** provide instance fields that are public or protected.
+ ❌ DO NOT provide instance fields that are public or protected.
 
  You should provide properties for accessing fields instead of making them public or protected.
 
@@ -27,7 +27,7 @@ The principle of encapsulation is one of the most important notions in object-or
 
  If there are predefined instances of the type, declare them as public read-only static fields of the type itself.
 
- **X DO NOT** assign instances of mutable types to `readonly` fields.
+ ❌ DO NOT assign instances of mutable types to `readonly` fields.
 
  A mutable type is a type with instances that can be modified after they are instantiated. For example, arrays, most collections, and streams are mutable types, but <xref:System.Int32?displayProperty=nameWithType>, <xref:System.Uri?displayProperty=nameWithType>, and <xref:System.String?displayProperty=nameWithType> are all immutable. The read-only modifier on a reference type field prevents the instance stored in the field from being replaced, but it does not prevent the field’s instance data from being modified by calling members changing the instance.
 

@@ -56,7 +56,7 @@ The guidelines in this chapter lay out a simple method for using case that, when
 ## Capitalizing Compound Words and Common Terms
  Most compound terms are treated as single words for purposes of capitalization.
 
- **X DO NOT** capitalize each word in so-called closed-form compound words.
+ ❌ DO NOT capitalize each word in so-called closed-form compound words.
 
  These are compound words written as a single word, such as endpoint. For the purpose of casing guidelines, treat a closed-form compound word as a single word. Use a current dictionary to determine if a compound word is written in closed form.
 
@@ -91,7 +91,7 @@ The guidelines in this chapter lay out a simple method for using case that, when
 ## Case Sensitivity
  Languages that can run on the CLR are not required to support case-sensitivity, although some do. Even if your language supports it, other languages that might access your framework do not. Any APIs that are externally accessible, therefore, cannot rely on case alone to distinguish between two names in the same context.
 
- **X DO NOT** assume that all programming languages are case sensitive. They are not. Names cannot differ by case alone.
+ ❌ DO NOT assume that all programming languages are case sensitive. They are not. Names cannot differ by case alone.
 
  *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*
 

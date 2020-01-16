@@ -5,7 +5,7 @@ ms.date: 10/14/2019
 ---
 # Dump collection and analysis utility (`dotnet-dump`)
 
-**This article applies to: ✓** .NET Core 3.0 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
 
 > [!NOTE]
 > `dotnet-dump` isn't supported on macOS.

@@ -26,11 +26,11 @@ Each article presents four types of recommendations: **Do**, **Consider**, **Avo
 
 You should almost always follow a **Do** recommendation. For example:
 
-**✔️ DO** distribute your library using a NuGet package.
+✔️ DO distribute your library using a NuGet package.
 
 On the other hand, **Consider** recommendations should generally be followed, but there are legitimate exceptions to the rule and you shouldn't feel bad about not following the guidance:
 
-**✔️ CONSIDER** using [SemVer 2.0.0](https://semver.org/) to version your NuGet package.
+✔️ CONSIDER using [SemVer 2.0.0](https://semver.org/) to version your NuGet package.
 
 **Avoid** recommendations mention things that are generally not a good idea, but breaking the rule sometimes makes sense:
 

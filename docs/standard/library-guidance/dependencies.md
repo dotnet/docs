@@ -23,7 +23,7 @@ Most diamond dependencies are easily resolved; however, they can create issues i
 
 It's not possible to know what packages will be used alongside your own. A good way to reduce the likelihood of a diamond dependency breaking your library is to minimize the number of packages you depend on.
 
-**✔️ DO** review your .NET library for unnecessary dependencies.
+✔️ DO review your .NET library for unnecessary dependencies.
 
 ## NuGet dependency version ranges
 
@@ -72,11 +72,11 @@ Shared source packages are great for including small pieces of functionality. Fo
 
 Shared source packages have some limitations. They can only be referenced by `PackageReference`, so older `packages.config` projects are excluded. Also shared source packages are only usable by projects with the same language type. Because of these limitations shared source packages are best used to share functionality within an open-source project.
 
-**✔️ CONSIDER** referencing shared source packages for small, internal pieces of functionality.
+✔️ CONSIDER referencing shared source packages for small, internal pieces of functionality.
 
-**✔️ CONSIDER** making your package a shared source package if it provides small, internal pieces of functionality.
+✔️ CONSIDER making your package a shared source package if it provides small, internal pieces of functionality.
 
-**✔️ DO** reference shared source packages with `PrivateAssets="All"`.
+✔️ DO reference shared source packages with `PrivateAssets="All"`.
 
 > This setting tells NuGet the package is only to be used at development time and shouldn't be exposed as a public dependency.
 

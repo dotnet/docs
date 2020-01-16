@@ -2,7 +2,7 @@
 title: "Exceptions and Performance"
 ms.date: "10/22/2008"
 ms.technology: dotnet-standard
-helpviewer_keywords: 
+helpviewer_keywords:
   - "tester-doer pattern"
   - "TryParse pattern"
   - "exceptions, throwing"
@@ -38,7 +38,7 @@ if (!numbers.IsReadOnly)
 
  The member used to test a condition, which in our example is the property `IsReadOnly`, is referred to as the tester. The member used to perform a potentially throwing operation, the `Add` method in our example, is referred to as the doer.
 
- **✓ CONSIDER** the Tester-Doer Pattern for members that might throw exceptions in common scenarios to avoid performance problems related to exceptions.
+ ✔️ CONSIDER the Tester-Doer Pattern for members that might throw exceptions in common scenarios to avoid performance problems related to exceptions.
 
 ## Try-Parse Pattern
  For extremely performance-sensitive APIs, an even faster pattern than the Tester-Doer Pattern described in the previous section should be used. The pattern calls for adjusting the member name to make a well-defined test case a part of the member semantics. For example, <xref:System.DateTime> defines a <xref:System.DateTime.Parse%2A> method that throws an exception if parsing of a string fails. It also defines a corresponding <xref:System.DateTime.TryParse%2A> method that attempts to parse, but returns false if parsing is unsuccessful and returns the result of a successful parsing using an `out` parameter.
@@ -59,11 +59,11 @@ public struct DateTime
 
  When using this pattern, it is important to define the try functionality in strict terms. If the member fails for any reason other than the well-defined try, the member must still throw a corresponding exception.
 
- **✓ CONSIDER** the Try-Parse Pattern for members that might throw exceptions in common scenarios to avoid performance problems related to exceptions.
+ ✔️ CONSIDER the Try-Parse Pattern for members that might throw exceptions in common scenarios to avoid performance problems related to exceptions.
 
- **✓ DO** use the prefix "Try" and Boolean return type for methods implementing this pattern.
+ ✔️ DO use the prefix "Try" and Boolean return type for methods implementing this pattern.
 
- **✓ DO** provide an exception-throwing member for each member using the Try-Parse Pattern.
+ ✔️ DO provide an exception-throwing member for each member using the Try-Parse Pattern.
 
  *Portions © 2005, 2009 Microsoft Corporation. All rights reserved.*
 

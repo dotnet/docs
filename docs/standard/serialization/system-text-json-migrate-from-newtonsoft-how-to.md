@@ -69,13 +69,13 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | `JsonConvert.PopulateObject` method                   | ![warning icon](../../../images/core/yellow-warning.png) [Not supported, workaround](#populate-existing-objects) |
 | `ObjectCreationHandling` global setting               | ![warning icon](../../../images/core/yellow-warning.png) [Not supported, workaround](#reuse-rather-than-replace-properties) |
 | Add to collections without setters                    | ![warning icon](../../../images/core/yellow-warning.png) [Not supported, workaround](#add-to-collections-without-setters) |
-| `PreserveReferencesHandling` global setting           | ![red x icon icon](../../../images/core/x.png) [Not supported](#preserve-object-references-and-handle-loops) |
-| `ReferenceLoopHandling` global setting                | ![red x icon icon](../../../images/core/x.png) [Not supported](#preserve-object-references-and-handle-loops) |
-| Support for `System.Runtime.Serialization` attributes | ![red x icon icon](../../../images/core/x.png) [Not supported](#systemruntimeserialization-attributes) |
-| `MissingMemberHandling` global setting                | ![red x icon icon](../../../images/core/x.png) [Not supported](#missingmemberhandling) |
-| Allow property names without quotes                   | ![red x icon icon](../../../images/core/x.png) [Not supported](#json-strings-property-names-and-string-values) |
-| Allow single quotes around string values              | ![red x icon icon](../../../images/core/x.png) [Not supported](#json-strings-property-names-and-string-values) |
-| Allow non-string JSON values for string properties    | ![red x icon icon](../../../images/core/x.png) [Not supported](#non-string-values-for-string-properties) |
+| `PreserveReferencesHandling` global setting           | ![red x icon](../../../images/core/x.png) [Not supported](#preserve-object-references-and-handle-loops) |
+| `ReferenceLoopHandling` global setting                | ![red x icon](../../../images/core/x.png) [Not supported](#preserve-object-references-and-handle-loops) |
+| Support for `System.Runtime.Serialization` attributes | ![red x icon](../../../images/core/x.png) [Not supported](#systemruntimeserialization-attributes) |
+| `MissingMemberHandling` global setting                | ![red x icon](../../../images/core/x.png) [Not supported](#missingmemberhandling) |
+| Allow property names without quotes                   | ![red x icon](../../../images/core/x.png) [Not supported](#json-strings-property-names-and-string-values) |
+| Allow single quotes around string values              | ![red x icon](../../../images/core/x.png) [Not supported](#json-strings-property-names-and-string-values) |
+| Allow non-string JSON values for string properties    | ![red x icon](../../../images/core/x.png) [Not supported](#non-string-values-for-string-properties) |
 
 ## Differences in default JsonSerializer behavior compared to Newtonsoft.Json
 

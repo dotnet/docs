@@ -37,10 +37,10 @@
             "labels-add": ":books: Area - .NET Guide"
           },
           "(?i)dotnet-ml-api$": {
-            "labels-add": ":books: Area - API Reference,:file_folder: Repo - ml-api-docs"
+            "labels-add": ":books: Area - API Reference"
           },
           "(?i)dotnet-roslyn-api$": {
-            "labels-add": ":books: Area - Roslyn API Reference,:file_folder: Repo - roslyn-api-docs"
+            "labels-add": ":books: Area - Roslyn API Reference"
           },
           "(?i)dotnet-whats-new$": {
             "labels-add": ":star2: What's New"
@@ -124,7 +124,7 @@
           "(?i).*master\/docs\/standard\/security.*": {
             "labels-add": ":card_file_box: Technology - Security"
           },
-          "(?i).*master\/docs\/standard\/standard\/design-guidelines\/.*": {
+          "(?i).*master\/docs\/standard\/design-guidelines\/.*": {
             "labels-add": ":book: guide - Framework Design Guidelines"
           },
           "(?i).*docs\/whats-new\/.*": {
@@ -253,7 +253,7 @@
               "(?i).*docs\/standard\/security.*": {
                 "labels-add": ":card_file_box: Technology - Security"
               },
-              "(?i).*docs\/standard\/standard\/design-guidelines\/.*": {
+              "(?i).*docs\/standard\/design-guidelines\/.*": {
                 "labels-add": ":book: guide - Framework Design Guidelines"
               },
               "(?i).*docs\/visual-basic.*": {

@@ -17,7 +17,7 @@ Keeping policy secure is important, especially in federation scenarios where sen
 
 ## Memory Dumps Can Reveal Claim Information
 
-When an application fails, log files, such as those produced by Dr. Watson, can contain the claim information. This information should not be exported to other entities, such as support teams; otherwise, the claim information that contains private data is also exported. You can mitigate this by not sending the log files to unknown entities. For more information, see [Windows Server 2003](https://go.microsoft.com/fwlink/?LinkId=89160).
+When an application fails, log files, such as those produced by Dr. Watson, can contain the claim information. This information should not be exported to other entities, such as support teams; otherwise, the claim information that contains private data is also exported. You can mitigate this by not sending the log files to unknown entities.
 
 ## Endpoint Addresses
 

@@ -1,7 +1,7 @@
 ---
-title: ".NET Framework Versions and Dependencies"
-ms.custom: "updateeachrelease"
-ms.date: "01/17/2020"
+title: .NET Framework & Windows OS versions
+ms.custom: updateeachrelease
+ms.date: 01/17/2020
 helpviewer_keywords:
   - "versions, .NET Framework"
 ms.assetid: f75a72de-e2f2-4a7a-9574-3f278684ea90
@@ -9,10 +9,6 @@ ms.assetid: f75a72de-e2f2-4a7a-9574-3f278684ea90
 # .NET Framework versions and dependencies
 
 Each version of .NET Framework contains the common language runtime (CLR), the base class libraries, and other managed libraries. This article describes the key features of .NET Framework by version, provides information about the underlying CLR versions and associated development environments, and identifies the versions that are installed by the Windows operating system (OS).
-
-## Version information
-
-The following tables summarize .NET Framework version history and correlate each version with Visual Studio, Windows, and Windows Server. Visual Studio supports multi-targeting, so you're not limited to the version of .NET Framework that's listed.
 
 Each new version of .NET Framework adds new features but retains features from previous versions.
 
@@ -24,7 +20,12 @@ The CLR is identified by its own version number. The .NET Framework version numb
 > - For downloads, see [Install the .NET Framework for developers](../install/guide-for-developers.md).
 > - For information about determining which versions of .NET Framework are installed on a computer, see [How to determine which .NET Framework versions are installed](how-to-determine-which-versions-are-installed.md).
 
-In the tables that follow, the check mark icon ✔️ denotes OS versions on which .NET Framework is installed but must be enabled [in Control Panel](../install/dotnet-35-windows-10.md) (for Windows) or through the Server Manager (for Windows Server). The plus sign icon ➕ denotes OS versions on which .NET Framework doesn't come installed but can be installed.
+## Version information
+
+The tables that follow summarize .NET Framework version history and correlate each version with Visual Studio, Windows, and Windows Server. Visual Studio supports multi-targeting, so you're not limited to the version of .NET Framework that's listed.
+
+- The check mark icon ✔️ denotes OS versions on which .NET Framework is installed but must be enabled [in Control Panel](../install/dotnet-35-windows-10.md) (for Windows) or through the Server Manager (for Windows Server).
+- The plus sign icon ➕ denotes OS versions on which .NET Framework doesn't come installed but can be installed.
 
 ### .NET Framework 4.8
 
@@ -48,10 +49,12 @@ In the tables that follow, the check mark icon ✔️ denotes OS versions on whi
 |||
 |-|-|
 |**CLR version**|4|
-|**Included in Visual Studio version**|2019 (requires installing the **.NET desktop development**, **ASP.NET and web development**, **Azure development**, **Office/SharePoint development**, **Mobile development with .NET**, or **.NET Core cross-platform development** workloads)|
+|**Included in Visual Studio version**|2019<sup>1</sup>|
 |**Windows versions**|✔️ 10 October 2018 Update (Version 1809)<br/>✔️ 10 April 2018 Update (Version 1803)<br/>➕ 10 Fall Creators Update (Version 1709)<br/>➕ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
 |**Windows Server versions**|✔️ Windows Server 2019<br/>✔️ Windows Server, version 1809<br/>✔️ Windows Server, version 1803<br/>➕ Windows Server, version 1709<br/>➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 SP1|
 |**To determine installed .NET version**|Use `Release` DWORD:<br/>- 461814 (Windows 10 October 2018 Update)<br/>- 461808 (Windows 10 April 2018 Update and Windows Server, version 1803)<br/>- 461814 (all other OS versions)<br/>(See [instructions](how-to-determine-which-versions-are-installed.md))|
+
+<sup>1</sup> Requires installing the **.NET desktop development**, **ASP.NET and web development**, **Azure development**, **Office/SharePoint development**, **Mobile development with .NET**, or **.NET Core cross-platform development** workloads.
 
 ### .NET Framework 4.7.1
 
@@ -98,10 +101,12 @@ In the tables that follow, the check mark icon ✔️ denotes OS versions on whi
 |||
 |-|-|
 |**CLR version**|4|
-|**Included in Visual Studio version**|2017 (requires installing the **.NET desktop development**, **ASP.NET and web development**, **Azure development**, **Office/SharePoint development**, **Mobile development with .NET**, or **.NET Core cross-platform development** workloads)|
+|**Included in Visual Studio version**|2017<sup>1</sup>|
 |**Windows versions**|✔️ 10 November Update (Version 1511)<br/>➕ 10<br />➕ 8.1<br />➕ 8<br />➕ 7|
 |**Windows Server versions**|➕ 2012 R2<br />➕ 2012<br />➕ 2008 R2 SP1|
 |**To determine installed .NET version**|Use `Release` DWORD:<br /><br/>- 394254 (Windows 10 November Update)<br />- 394271 (all other OS versions)<br /><br/>(See [instructions](how-to-determine-which-versions-are-installed.md))|
+
+<sup>1</sup> Requires installing the **.NET desktop development**, **ASP.NET and web development**, **Azure development**, **Office/SharePoint development**, **Mobile development with .NET**, or **.NET Core cross-platform development** workloads.
 
 ### .NET Framework 4.6
 

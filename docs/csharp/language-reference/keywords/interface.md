@@ -29,7 +29,7 @@ These preceding member declarations typically do not contain a body. Beginning w
 - [Constants](const.md)
 - [Operators](../operators/operator-overloading.md)
 - [Static constructor](../../programming-guide/classes-and-structs/constructors.md#static-constructors).
-- [Nested types](../../programming-guide/classes-and-structs/nested-types)
+- [Nested types](../../programming-guide/classes-and-structs/nested-types.md)
 - [Static fields, methods, properties, indexers, and events](static.md)
 - Member declarations using the explicit interface implementation syntax.
 - Explicit access modifiers (the default access is [`public`](access-modifiers.md)).

@@ -15,6 +15,7 @@ The following tables summarize .NET Framework version history and correlate each
 Each new version of .NET Framework retains features from the previous versions and adds new features. The CLR is identified by its own version number. The .NET Framework version number is incremented at each release, although the CLR version is not always incremented. For example, .NET Framework 4, 4.5, and later releases include CLR 4, but .NET Framework 2.0, 3.0, and 3.5 include CLR 2.0. (There was no version 3 of the CLR.)
 
 > [!TIP]
+>
 > - For a complete list of supported operating systems, see [System requirements](../get-started/system-requirements.md).
 > - For downloads, see [Install the .NET Framework for developers](../install/guide-for-developers.md).
 > - For information about determining which versions of .NET Framework are installed on a computer, see [How to determine which .NET Framework versions are installed](how-to-determine-which-versions-are-installed.md).

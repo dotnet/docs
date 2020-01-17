@@ -446,7 +446,7 @@ To determine if you should use a struct, consider the following conditions:
 - If the size of your data is 16 bytes or smaller.
 - If you're likely to have many of these data types resident in memory in a running program.
 
-If the first condition applies, you should generally use a struct. If both apply, you should almost always use a struct.
+If the first condition applies, you should generally use a struct. If both apply, you should almost always use a struct. There may be some cases where the previous conditions apply, but using a struct is no better or worse than using a reference type, but they are likely to be rare. It's important to always measure when making changes like this, though, and not operate on assumption or intuition.
 
 #### Prefer struct tuples when grouping small value types
 

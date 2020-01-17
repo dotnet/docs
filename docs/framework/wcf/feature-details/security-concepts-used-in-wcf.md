@@ -9,12 +9,14 @@ Windows Communication Foundation (WCF) security is built upon concepts already i
  WCF supports some of those infrastructures, such as Secure Sockets Layer (SSL) over HTTP (HTTPS). However, WCF goes beyond supporting existing security infrastructures by implementing newer interoperable security standards (such as WS-Security) over SOAP-encoded messages. Whether you are using existing mechanisms or new interoperable standards, the security concepts behind both are the same. Understanding the concepts behind existing infrastructures and the newer standards is central to implementing the best security model for an application.  
   
 ## Introduction to Security for WCF Web Services  
- The Microsoft Patterns and Practices group wrote an in-depth white paper on WCF security guidance which is available for download here: [WCF Security Guide](https://archive.codeplex.com/?p=wcfsecurityguide). This white paper describes the fundamental security concepts as they relate to web services, key WCF security concepts, intranet application scenarios, and internet application scenarios.  
+
+The Microsoft Patterns and Practices group wrote an in-depth white paper called [WCF Security Guide](https://archive.codeplex.com/?p=wcfsecurityguide). This white paper describes the fundamental security concepts as they relate to web services, key WCF security concepts, intranet application scenarios, and internet application scenarios.  
   
 ## Industry-Wide Security Specifications  
   
 ### Public Key Infrastructure  
- Public Key Infrastructure (PKI) is a system of digital certificates, certification authorities, and other registration authorities that verify and authenticate each party involved in an electronic transaction through the use of public key cryptography. For more information, see [Windows Server 2008 R2 Certificate Services](https://azure.microsoft.com/?ocid=cloudplat_hp).  
+
+Public Key Infrastructure (PKI) is a system of digital certificates, certification authorities, and other registration authorities that verify and authenticate each party involved in an electronic transaction through the use of public-key cryptography.
   
 ### Kerberos Protocol  
  The *Kerberos protocol* is a specification for creating a security mechanism that authenticates users on a Windows domain. It allows a user to establish a secure context with other entities within a domain. Windows 2000 and later platforms use the Kerberos protocol by default. Understanding the mechanisms of the system is useful when creating a service that will interact with intranet clients. In addition, since the *Web Services Security Kerberos Binding* is widely published, you can use the Kerberos protocol to communicate with Internet clients (that is, the Kerberos protocol is interoperable). For more information about how the Kerberos protocol is implemented in Windows, see  [Microsoft Kerberos](/windows/win32/secauthn/microsoft-kerberos).  

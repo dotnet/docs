@@ -42,7 +42,8 @@ To configure certificates for use with IIS 7.0, see [Configuring Server Certific
  To configure certificates for use with IIS 6.0, see [Certificates_IIS_SP1_Ops](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc757474(v=ws.10)).  
   
 ### Using HttpCfg for SSL  
- If you are creating a self-hosted WCF application, download the HttpCfg.exe tool, available at the [Windows XP Service Pack 2 Support Tools site](https://support.microsoft.com/help/838079).  
+
+ If you're creating a self-hosted WCF application, use the [HttpCfg.exe](/windows/win32/http/httpcfg-exe) tool.
   
  For more information about using the HttpCfg.exe tool to set up a port with an X.509 certificate, see [How to: Configure a Port with an SSL Certificate](../../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md).  
   

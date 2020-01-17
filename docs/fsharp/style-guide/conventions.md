@@ -441,12 +441,12 @@ Finally, automatic generalization is not always a boon for people who are new to
 
 Using structs (also called Value Types) can often result in higher performance for some code because it typically avoids allocating objects. However, structs are not always a "go faster" button: if the size of the data in a struct exceeds 16 bytes, copying the data can often result in more CPU time spend than using a reference type.
 
-To determine if you should use a struct, consider the following two points:
+To determine if you should use a struct, consider the following conditions:
 
-1. If the size of your data is 16 bytes or smaller
-2. If you are likely to have many of these data types resident in memory in a running program
+- If the size of your data is 16 bytes or smaller.
+- If you're likely to have many of these data types resident in memory in a running program.
 
-If the first point applies, you should generally use a struct. If both apply, you should almost always use a struct.
+If the first condition applies, you should generally use a struct. If both apply, you should almost always use a struct.
 
 #### Prefer struct tuples when grouping small value types
 
@@ -478,7 +478,7 @@ let rec runWithStructTuple t offset times =
 
 When you benchmark these functions with a statistical benchmarking tool like [BenchmarkDotNet](https://benchmarkdotnet.org/), you'll find that the `runWithStructTuple` function that uses struct tuples runs 40% faster and allocates no memory.
 
-However, these results will not always be the case in your own code. Depeneding on if you mark a function as `inline`, code that uses reference tuples may get some additional optimizations, or code that would allocate could simply be optimized away. You should always measure results whenever performance is concerned, and never operate based on assumption or intuition.
+However, these results won't always be the case in your own code. If you mark a function as `inline`, code that uses reference tuples may get some additional optimizations, or code that would allocate could simply be optimized away. You should always measure results whenever performance is concerned, and never operate based on assumption or intuition.
 
 #### Prefer struct records when the data type is small
 
@@ -511,7 +511,7 @@ let rec processStructPoint (p: SPoint) offset times =
         processStructPoint r offset (times - 1)
 ```
 
-This is very similar to the tuple code before, but this time using records and an inlined inner function.
+This is very similar to the previous tuple code, but this time the example uses records and an inlined inner function.
 
 When you benchmark these functions with a statistical benchmarking tool like [BenchmarkDotNet](https://benchmarkdotnet.org/), you'll find that `processStructPoint` runs nearly 60% faster and allocates nothing on the managed heap.
 
@@ -538,7 +538,7 @@ The previous observations about performance with struct tuples and records also 
         |> SName
 ```
 
-It's very common to define single-case Discriminated Unions like this for domain modeling. When you benchmark these functions with a statistical benchmarking tool like [BenchmarkDotNet](https://benchmarkdotnet.org/) you'll find that `structReverseName` runs about 25% faster than `reverseName` for small strings. For very large strings, both will perform about the same, so in this case it is always preferable to use a struct. As mentioned before, always measure and do not operate on assumptions or intuition.
+It's very common to define single-case Discriminated Unions like this for domain modeling. When you benchmark these functions with a statistical benchmarking tool like [BenchmarkDotNet](https://benchmarkdotnet.org/), you'll find that `structReverseName` runs about 25% faster than `reverseName` for small strings. For very large strings, both perform about the same. So, in this case, it's always preferable to use a struct. As previously mentioned, always measure and do not operate on assumptions or intuition.
 
 Although the previous example showed that a struct Discriminated Union yielded better performance, it is quite common to have larger Discriminated Unions when modeling a domain. Larger data types like that may not perform as well if they are structs depending on the operations on them, since more copying could be involved.
 
@@ -546,7 +546,7 @@ Although the previous example showed that a struct Discriminated Union yielded b
 
 F# values are immutable by default, which allows you to avoid certain classes of bugs (especially those involving concurrency and parallelism). However, in certain cases, in order to achieve optimal (or even reasonable) efficiency of execution time or memory allocations, a span of work may best be implemented by using in-place mutation of state. This is possible in an opt-in basis with F# with the `mutable` keyword.
 
-Use of `mutable` in F# may feel at odds with functional purity. This is understandable, but functional purity everywhere can be at odds with performance goals. A compromise is to encapsulate mutation such that callers need not care about what happens when they call a funciton. This allows you to write a functional interface over a mutation-based implementation for performance critical code.
+Use of `mutable` in F# may feel at odds with functional purity. This is understandable, but functional purity everywhere can be at odds with performance goals. A compromise is to encapsulate mutation such that callers need not care about what happens when they call a function. This allows you to write a functional interface over a mutation-based implementation for performance-critical code.
 
 #### Wrap mutable code in immutable interfaces
 

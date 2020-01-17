@@ -7,6 +7,10 @@ ms.date: 07/16/2018
 
 You may need the .NET Framework 3.5 to run an app on Windows 10, Windows 8.1, and Windows 8. You can also use these instructions for earlier Windows versions.
 
+## Download the offline installer
+
+The .NET Framework 3.5 SP1 offline installer is available on the [.NET Framework 3.5 SP1 Download page](https://dotnet.microsoft.com/download/dotnet-framework/net35-sp1).
+
 ## Install the .NET Framework 3.5 on Demand
 
 You may see the following configuration dialog if you try to run an app that requires the .NET Framework 3.5. Choose **Install this feature** to enable the .NET Framework 3.5. This option requires an Internet connection.
@@ -17,7 +21,7 @@ You may see the following configuration dialog if you try to run an app that req
 
 The .NET Framework is created by Microsoft and provides an environment for running applications. There are different versions available. Many companies develop their apps to run using the .NET Framework, and these apps target a specific version. If you see this pop-up, you're trying to run an application that requires the .NET Framework version 3.5, but that version is not installed on your system.
 
-## Enable the .NET Framework 3.5 in Control Panel
+## Enable .NET Framework 3.5 in Control Panel
 
 You can enable the .NET Framework 3.5 through the Windows Control Panel. This option requires an Internet connection.
 

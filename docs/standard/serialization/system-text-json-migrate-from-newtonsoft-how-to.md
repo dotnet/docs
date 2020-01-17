@@ -48,7 +48,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Deserialize JSON `null` literal to non-nullable types | ⚠️ [Not supported, workaround, sample](#deserialize-null-to-non-nullable-type) |
 | Deserialize to immutable classes and structs          | ⚠️ [Not supported, workaround, sample](#deserialize-to-immutable-classes-and-structs) |
 | `[JsonConstructor]` attribute                         | ⚠️ [Not supported, workaround, sample](#specify-constructor-to-use) |
-| `Required` setting on [JsonProperty] attribute        | ⚠️ [Not supported, workaround, sample](#required-properties) |
+| `Required` setting on `[JsonProperty]` attribute        | ⚠️ [Not supported, workaround, sample](#required-properties) |
 | `NullValueHandling` setting on `[JsonProperty]` attribute | ⚠️ [Not supported, workaround, sample](#conditionally-ignore-a-property)  |
 | `DefaultValueHandling` setting on `[JsonProperty]` attribute | ⚠️ [Not supported, workaround, sample](#conditionally-ignore-a-property)  |
 | `DefaultValueHandling` global setting                 | ⚠️ [Not supported, workaround, sample](#conditionally-ignore-a-property) |

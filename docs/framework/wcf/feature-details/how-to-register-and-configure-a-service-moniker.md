@@ -66,12 +66,12 @@ Before using the Windows Communication Foundation (WCF) service moniker within a
     Dim mathProxy As IMathService
     Dim result As Integer
 
-    Set MathProxy = GetObject( _
+    Set mathProxy = GetObject( _
             "service4:address=http://localhost/MathService, _
             binding=wsHttpBinding, _
             bindingConfiguration=Binding1")
 
-    result = MathProxy.Add(3, 5)
+    result = mathProxy.Add(3, 5)
     ```
 
      In this example, the definition for the binding configuration `Binding1` is stored in a suitably named configuration file for the client application, such as *vb6appname.exe.config*.

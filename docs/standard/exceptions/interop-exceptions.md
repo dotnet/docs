@@ -24,4 +24,4 @@ For further information, take a look at `longjmp` [documentation](https://docs.m
 ## See also
 
 - [Exceptions](index.md)
-- [Interop with Native Libraries](https://www.mono-project.com/docs/advanced/pinvoke)
+- [Interop with Native Libraries](https://www.mono-project.com/docs/advanced/pinvoke/#runtime-exception-propagation)

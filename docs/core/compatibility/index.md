@@ -18,7 +18,7 @@ This article outlines the categories of compatibility changes (or breaking chang
 > [!NOTE]
 > For a definition of compatibility categories, such as binary compatibility and backward compatibility, see [Breaking change categories](categories.md).
 
-The following sections describes the categories of changes made to .NET Core APIs and their impact on application compatibility. Changes are either allowed ✔️, disallowed ❌, or require judgement and an evaluation of how predictable, obvious, and consistent the previous behavior was ❓.
+The following sections describe the categories of changes made to .NET Core APIs and their impact on application compatibility. Changes are either allowed ✔️, disallowed ❌, or require judgment and an evaluation of how predictable, obvious, and consistent the previous behavior was ❓.
 
 > [!NOTE]
 > In addition to serving as a guide to how changes to .NET Core libraries are evaluated, library developers can also use these criteria to evaluate changes to their libraries that target multiple .NET implementations and versions.
@@ -31,21 +31,21 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ✔️ **ALLOWED: Removing an interface implementation from a type when the interface is already implemented by a base type**
 
-- ❓ **ALLOWED OR DISALLOWED: Adding a new interface implementation to a type**
+- ❓ **REQUIRES JUDGMENT: Adding a new interface implementation to a type**
 
   This is an acceptable change because it does not adversely affect existing clients. Any changes to the type must work within the boundaries of acceptable changes defined here for the new implementation to remain acceptable. Extreme caution is necessary when adding interfaces that directly affect the ability of a designer or serializer to generate code or data that cannot be consumed down-level. An example is the <xref:System.Runtime.Serialization.ISerializable> interface.
 
-- ❓ **ALLOWED OR DISALLOWED: Introducing a new base class**
+- ❓ **REQUIRES JUDGMENT: Introducing a new base class**
 
-  A type can be introduced into an hierarchy between two existing types if it doesn't introduce any new [abstract](../../csharp/language-reference/keywords/abstract.md) members or change the semantics or behavior of existing types. For example, in .NET Framework 2.0, the <xref:System.Data.Common.DbConnection> class became a new base class for <xref:System.Data.SqlClient.SqlConnection>, which had previously derived directly from <xref:System.ComponentModel.Component>.
+  A type can be introduced into a hierarchy between two existing types if it doesn't introduce any new [abstract](../../csharp/language-reference/keywords/abstract.md) members or change the semantics or behavior of existing types. For example, in .NET Framework 2.0, the <xref:System.Data.Common.DbConnection> class became a new base class for <xref:System.Data.SqlClient.SqlConnection>, which had previously derived directly from <xref:System.ComponentModel.Component>.
 
 - ✔️ **ALLOWED: Moving a type from one assembly to another**
 
-  Note that the *old* assembly must be marked with the <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute> that points to the new assembly.
+  The *old* assembly must be marked with the <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute> that points to the new assembly.
 
 - ✔️ **ALLOWED: Changing a [struct](../../csharp/language-reference/keywords/struct.md) type to a `readonly struct` type**
 
-  Note that changing a `readonly struct` type to a `struct` type is not allowed.
+  Changing a `readonly struct` type to a `struct` type is not allowed.
 
 - ✔️ **ALLOWED: Adding the [sealed](../../csharp/language-reference/keywords/sealed.md) or [abstract](../../csharp/language-reference/keywords/abstract.md) keyword to a type when there are no *accessible* (public or protected) constructors**
 
@@ -67,13 +67,13 @@ Changes in this category modify the public surface area of a type. Most of the c
 
    If an interface implements an interface that it previously did not implement, all types that implemented the original version of the interface are broken.
 
-- ❓ **ALLOWED OR DISALLOWED: Removing a class from the set of base classes or an interface from the set of implemented interfaces**
+- ❓ **REQUIRES JUDGMENT: Removing a class from the set of base classes or an interface from the set of implemented interfaces**
 
   There is one exception to the rule for interface removal: you can add the implementation of an interface that derives from the removed interface. For example, you can remove <xref:System.IDisposable> if the type or interface now implements <xref:System.ComponentModel.IComponent>, which implements <xref:System.IDisposable>.
 
 - ❌ **DISALLOWED: Changing a `readonly struct` type to a [struct](../../csharp/language-reference/keywords/struct.md) type**
 
-  Note that the change of a `struct` type to a `readonly struct` type is allowed.
+  The change of a `struct` type to a `readonly struct` type is allowed, however.
 
 - ❌ **DISALLOWED: Changing a [struct](../../csharp/language-reference/keywords/struct.md) type to a `ref struct` type, and vice versa**
 
@@ -95,7 +95,7 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ✔️ **ALLOWED: Adding or removing an override**
 
-  Note that introducing an override might cause previous consumers to skip over the override when calling [base](../../csharp/language-reference/keywords/base.md).
+  Introducing an override might cause previous consumers to skip over the override when calling [base](../../csharp/language-reference/keywords/base.md).
 
 - ✔️ **ALLOWED: Adding a constructor to a class, along with a parameterless constructor if the class previously had no constructors**
 
@@ -109,7 +109,7 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ✔️ **ALLOWED: Calling a new event that wasn't previously defined**
 
-- ❓ **ALLOWED OR DISALLOWED: Adding a new instance field to a type**
+- ❓ **REQUIRES JUDGMENT: Adding a new instance field to a type**
 
    This change impacts serialization.
 
@@ -117,7 +117,7 @@ Changes in this category modify the public surface area of a type. Most of the c
 
    This breaks all code that uses the renamed or removed member, or parameter.
 
-   Note that this includes removing or renaming a getter or setter from a property, as well as renaming or removing enumeration members.
+   This includes removing or renaming a getter or setter from a property, as well as renaming or removing enumeration members.
 
 - ❌ **DISALLOWED: Adding a member to an interface**
 
@@ -172,9 +172,9 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ❌ **DISALLOWED: Reducing the visibility of a member**
 
-   This includes reducing the visibility of a [protected](../../csharp/language-reference/keywords/protected.md) member when there are *accessible* (public or protected) constructors and the type is *not* [sealed](../../csharp/language-reference/keywords/sealed.md). If this is not the case, reducing the visibility of a protected member is allowed.
+   This includes reducing the visibility of a [protected](../../csharp/language-reference/keywords/protected.md) member when there are *accessible* (`public` or `protected`) constructors and the type is *not* [sealed](../../csharp/language-reference/keywords/sealed.md). If this is not the case, reducing the visibility of a protected member is allowed.
 
-   Note that increasing the visibility of a member is allowed.
+   Increasing the visibility of a member is allowed.
 
 - ❌ **DISALLOWED: Changing the type of a member**
 
@@ -203,7 +203,7 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ✔️ **ALLOWED: Increasing the range of accepted values for a property or parameter if the member is not [virtual](../../csharp/language-reference/keywords/virtual.md)**
 
-  Note that while the range of values that can be passed to the method or are returned by the member can expand, the parameter or member type cannot. For example, while the values passed to a method can expand from 0-124 to 0-255, the parameter type cannot change from <xref:System.Byte> to <xref:System.Int32>.
+  While the range of values that can be passed to the method or are returned by the member can expand, the parameter or member type cannot. For example, while the values passed to a method can expand from 0-124 to 0-255, the parameter type cannot change from <xref:System.Byte> to <xref:System.Int32>.
 
 - ❌ **DISALLOWED: Increasing the range of accepted values for a property or parameter if the member is [virtual](../../csharp/language-reference/keywords/virtual.md)**
 
@@ -219,7 +219,7 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ❌ **DISALLOWED: Changing the precision of a numeric return value**
 
-- ❓ **ALLOWED OR DISALLOWED: A change in the parsing of input and throwing new exceptions (even if parsing behavior is not specified in the documentation**
+- ❓ **REQUIRES JUDGMENT: A change in the parsing of input and throwing new exceptions (even if parsing behavior is not specified in the documentation**
 
 ### Exceptions
 
@@ -240,7 +240,7 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ✔️ **ALLOWED: Throwing a new exception in a new code path**
 
-  The exception must apply only to a new code-path which is executed with new parameter values or state, and that can't be executed by existing code that targets the previous version.
+  The exception must apply only to a new code-path that's executed with new parameter values or state and that can't be executed by existing code that targets the previous version.
 
 - ✔️ **ALLOWED: Removing an exception to enable more robust behavior or new scenarios**
 
@@ -260,7 +260,7 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ❌ **DISALLOWED: Changing the value of an attribute that *is* observable**
 
-- ❓ **ALLOWED OR DISALLOWED: Removing an attribute**
+- ❓ **REQUIRES JUDGMENT: Removing an attribute**
 
   In most cases, removing an attribute (such as <xref:System.NonSerializedAttribute>) is a breaking change.
 
@@ -272,17 +272,17 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 ## Internal implementation changes
 
-- ❓ **ALLOWED OR DISALLOWED: Changing the surface area of an internal type**
+- ❓ **REQUIRES JUDGMENT: Changing the surface area of an internal type**
 
    Such changes are generally allowed, although they break private reflection. In some cases, where popular third-party libraries or a large number of developers depend on the internal APIs, such changes may not be allowed.
 
-- ❓ **ALLOWED OR DISALLOWED: Changing the internal implementation of a member**
+- ❓ **REQUIRES JUDGMENT: Changing the internal implementation of a member**
 
   These changes are generally allowed, although they break private reflection. In some cases, where customer code frequently depends on private reflection or where the change introduces unintended side effects, these changes may not be allowed.
 
 - ✔️ **ALLOWED: Improving the performance of an operation**
 
-   The ability to modify the performance of an operation is essential, but such changes can break code that relies upon the current speed of an operation. This is particularly true of code that depends on the timing of asynchronous operations. Note that the performance change should have no effect on other behavior of the API in question; otherwise, the change will be breaking.
+   The ability to modify the performance of an operation is essential, but such changes can break code that relies upon the current speed of an operation. This is particularly true of code that depends on the timing of asynchronous operations. The performance change should have no effect on other behavior of the API in question; otherwise, the change will be breaking.
 
 - ✔️ **ALLOWED: Indirectly (and often adversely) changing the performance of an operation**
 

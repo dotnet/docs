@@ -109,7 +109,7 @@ For non-security related Web host issues refer to: [Web Hosting a Queued Applica
 
 **Q:** Where can I find answers to common questions on MSMQ?
 
-**A:** For more information about MSMQ, see [Microsoft Message Queuing](https://go.microsoft.com/fwlink/?LinkId=87810).
+**A:** For more information about MSMQ, see [Microsoft Message Queuing](https://www.microsoft.com/windowsserver2003/technologies/msmq/default.mspx).
 
 **Q:** Why does my service throw a `ProtocolException` when reading from a queue that contains both queued session messages and queued datagram messages?
 

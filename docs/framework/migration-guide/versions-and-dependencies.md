@@ -48,6 +48,7 @@ In the tables that follow, the check mark icon ✔️ denotes OS versions on whi
 |||
 |-|-|
 |**CLR version**|4|
+|**Included in Visual Studio version**|2019 (requires installing the **.NET desktop development**, **ASP.NET and web development**, **Azure development**, **Office/SharePoint development**, **Mobile development with .NET**, or **.NET Core cross-platform development** workloads)|
 |**Windows versions**|✔️ 10 October 2018 Update (Version 1809)<br/>✔️ 10 April 2018 Update (Version 1803)<br/>➕ 10 Fall Creators Update (Version 1709)<br/>➕ 10 Creators Update (Version 1703)<br/>➕ 10 Anniversary Update (Version 1607)<br/>➕ 8.1<br/>➕7|
 |**Windows Server versions**|✔️ Windows Server 2019<br/>✔️ Windows Server, version 1809<br/>✔️ Windows Server, version 1803<br/>➕ Windows Server, version 1709<br/>➕ 2016<br/>➕ 2012 R2<br/>➕ 2012<br/>➕ 2008 R2 SP1|
 |**To determine installed .NET version**|Use `Release` DWORD:<br/>- 461814 (Windows 10 October 2018 Update)<br/>- 461808 (Windows 10 April 2018 Update and Windows Server, version 1803)<br/>- 461814 (all other OS versions)<br/>(See [instructions](how-to-determine-which-versions-are-installed.md))|
@@ -97,6 +98,7 @@ In the tables that follow, the check mark icon ✔️ denotes OS versions on whi
 |||
 |-|-|
 |**CLR version**|4|
+|**Included in Visual Studio version**|2017 (requires installing the **.NET desktop development**, **ASP.NET and web development**, **Azure development**, **Office/SharePoint development**, **Mobile development with .NET**, or **.NET Core cross-platform development** workloads)|
 |**Windows versions**|✔️ 10 November Update (Version 1511)<br/>➕ 10<br />➕ 8.1<br />➕ 8<br />➕ 7|
 |**Windows Server versions**|➕ 2012 R2<br />➕ 2012<br />➕ 2008 R2 SP1|
 |**To determine installed .NET version**|Use `Release` DWORD:<br /><br/>- 394254 (Windows 10 November Update)<br />- 394271 (all other OS versions)<br /><br/>(See [instructions](how-to-determine-which-versions-are-installed.md))|

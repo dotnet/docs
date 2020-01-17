@@ -79,7 +79,7 @@ Before using the Windows Communication Foundation (WCF) service moniker within a
     > You can use similar code in a C#, a C++, or any other .NET Language application.  
   
     > [!NOTE]
-    > : If the moniker is malformed or if the service is unavailable, the call to `GetObject` returns an error of "Invalid Syntax". If you receive this error, make sure the moniker you are using is correct and the service is available.  
+    > If the moniker is malformed or if the service is unavailable, the call to `GetObject` returns an error of "Invalid Syntax". If you receive this error, make sure the moniker you are using is correct and the service is available.  
   
      Although this topic focuses on using the service moniker from Visual Basic 6.0 code, you can use a service moniker from other languages. When using a moniker from C++ code the Svcutil.exe generated assembly should be imported with "no_namespace named_guids raw_interfaces_only" as shown in the following code.  
   

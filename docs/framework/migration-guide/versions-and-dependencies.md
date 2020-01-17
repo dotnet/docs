@@ -161,7 +161,7 @@ The tables that follow summarize .NET Framework version history and correlate ea
 
 ### .NET Framework 4
 
-- [New features](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms171868(v=vs.100))
+[New features](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ms171868(v=vs.100))
 
 |||
 |-|-|
@@ -173,16 +173,16 @@ The tables that follow summarize .NET Framework version history and correlate ea
 
 ### .NET Framework 3.5
 
-- [New features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ms171868\(v=vs.90\)):
+[New features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/ms171868\(v=vs.90\)):
 
-  - LINQ
-  - Expression trees
-  - Improved ASP.NET support for AJAX development
-  - HashSet collections
-  - DateTimeOffset
-  - WCF and WF integration
-  - Peer-to-Peer networking
-  - Add-ins for extensibility
+- LINQ
+- Expression trees
+- Improved ASP.NET support for AJAX development
+- HashSet collections
+- DateTimeOffset
+- WCF and WF integration
+- Peer-to-Peer networking
+- Add-ins for extensibility
 
 |||
 |-|-|
@@ -194,12 +194,12 @@ The tables that follow summarize .NET Framework version history and correlate ea
 
 ### .NET Framework 3.0
 
-- [New features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bb822048(v=vs.90)):
+[New features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/bb822048(v=vs.90)):
 
-  - Windows Presentation Foundation
-  - Windows Communication Foundation
-  - Windows Workflow Foundation
-  - Windows CardSpace
+- Windows Presentation Foundation
+- Windows Communication Foundation
+- Windows Workflow Foundation
+- Windows CardSpace
 
 |||
 |-|-|
@@ -210,14 +210,14 @@ The tables that follow summarize .NET Framework version history and correlate ea
 
 ### .NET Framework 2.0
 
-- [New features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/t357fb32%28v%3dvs.90%29):
+[New features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/t357fb32%28v%3dvs.90%29):
 
-  - Generics
-  - Debugger edit and continue
-  - Improved scalability and performance
-  - ClickOnce deployment
-  - In ASP.NET 2.0, new controls and support for a broad array of browsers
-  - 64-bit support
+- Generics
+- Debugger edit and continue
+- Improved scalability and performance
+- ClickOnce deployment
+- In ASP.NET 2.0, new controls and support for a broad array of browsers
+- 64-bit support
 
 |||
 |-|-|
@@ -229,11 +229,11 @@ The tables that follow summarize .NET Framework version history and correlate ea
 
 ### .NET Framework 1.1
 
-- [New features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/h88tthh0%28v%3dvs.90%29):
+[New features](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/h88tthh0%28v%3dvs.90%29):
 
-  - ASP.NET mobile controls
-  - Side-by-side execution
-  - IPv6 support
+- ASP.NET mobile controls
+- Side-by-side execution
+- IPv6 support
 
 |||
 |-|-|

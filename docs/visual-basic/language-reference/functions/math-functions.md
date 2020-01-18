@@ -45,6 +45,27 @@ The following table lists methods of the <xref:System.Math?displayProperty=nameW
 |<xref:System.Math.Tanh%2A>|Returns the hyperbolic tangent of the specified angle.|
 |<xref:System.Math.Truncate%2A>|Calculates the integral part of a specified `Decimal` or `Double` number.|
 
+The following table lists methods of the <xref:System.Math?displayProperty=nameWithType> class that don't exist in .NET Framework but are added in .NET Standard or .NET Core:
+
+|.NET method|Description|Available in|
+|---------------------------|-----------------|
+|<xref:System.Math.Acosh%2A>|Returns the angle whose hyperbolic cosine is the specified number.|Starting with .NET Core 2.1 and .NET Standard 2.1|
+|<xref:System.Math.Asinh%2A>|Returns the angle whose hyperbolic sine is the specified number.|Starting with .NET Core 2.1 and .NET Standard 2.1|
+|<xref:System.Math.Atanh%2A>|Returns the angle whose hyperbolic tangent is the specified number.|Starting with .NET Core 2.1 and .NET Standard 2.1|
+|<xref:System.Math.BitDecrement%2A>|Returns the next smallest value that compares less than `x`.|Starting with .NET Core 3.0|
+|<xref:System.Math.BitIncrement%2A>|Returns the next largest value that compares greater than `x`.|Starting with .NET Core 3.0|
+|<xref:System.Math.Cbrt%2A>|Returns the cube root of a specified number.|Starting with .NET Core 2.1 and .NET Standard 2.1|
+|<xref:System.Math.Clamp%2A>|Returns `value` clamped to the inclusive range of `min` and `max`.|Starting with .NET Core 2.0 and .NET Standard 2.1|
+|<xref:System.Math.CopySign%2A>|Returns a value with the magnitude of `x` and the sign of `y`.|Starting with .NET Core 3.0|
+|<xref:System.Math.FusedMultiplyAdd%2A>|Returns (x \* y) + z, rounded as one ternary operation.|Starting with .NET Core 3.0|
+|<xref:System.Math.ILogB%2A>|Returns the base 2 integer logarithm of a specified number.|Starting with .NET Core 3.0|
+|<xref:System.Math.Log2%2A>|Returns the base 2 logarithm of a specified number.|Starting with .NET Core 3.0|
+|<xref:System.Math.MaxMagnitude%2A>|Returns the larger magnitude of two double-precision floating-point numbers.|Starting with .NET Core 3.0|
+|<xref:System.Math.MinMagnitude%2A>|Returns the smaller magnitude of two double-precision floating-point numbers.|Starting with .NET Core 3.0|
+|<xref:System.Math.ScaleB%2A>|Returns x \* 2^n computed efficiently.|Starting with .NET Core 3.0|
+
+
+
 To use these functions without qualification, import the <xref:System.Math?displayProperty=nameWithType> namespace into your project by adding the following code to the top of your source file:
 
 ```vb

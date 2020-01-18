@@ -64,8 +64,6 @@ The following table lists methods of the <xref:System.Math?displayProperty=nameW
 |<xref:System.Math.MinMagnitude%2A>|Returns the smaller magnitude of two double-precision floating-point numbers.|Starting with .NET Core 3.0|
 |<xref:System.Math.ScaleB%2A>|Returns x \* 2^n computed efficiently.|Starting with .NET Core 3.0|
 
-
-
 To use these functions without qualification, import the <xref:System.Math?displayProperty=nameWithType> namespace into your project by adding the following code to the top of your source file:
 
 ```vb
@@ -138,8 +136,10 @@ End Function
 This example uses the <xref:System.Math.Round%2A> method of the <xref:System.Math> class to round a number to the nearest integer.
 
 ```vb
-' Returns 3.
-Dim MyVar2 As Double = Math.Round(2.8)
+Dim myVar2 As Double = Math.Round(2.8)
+Console.WriteLine(myVar2)
+' The code produces the following output:
+' 3
 ```
 
 ## Example
@@ -147,12 +147,16 @@ Dim MyVar2 As Double = Math.Round(2.8)
 This example uses the <xref:System.Math.Sign%2A> method of the <xref:System.Math> class to determine the sign of a number.
 
 ```vb
-' Returns 1.
-Dim MySign1 As Integer = Math.Sign(12)
-' Returns -1.
-Dim MySign2 As Integer = Math.Sign(-2.4)
-' Returns 0.
-Dim MySign3 As Integer = Math.Sign(0)
+Dim mySign1 As Integer = Math.Sign(12)
+Dim mySign2 As Integer = Math.Sign(-2.4)
+Dim mySign3 As Integer = Math.Sign(0)
+Console.WriteLine(mySign1)
+Console.WriteLine(mySign2)
+Console.WriteLine(mySign3)
+' The code produces the following output:
+' 1
+' -1
+' 0
 ```
 
 ## Example
@@ -171,14 +175,19 @@ End Function
 This example uses the <xref:System.Math.Sqrt%2A> method of the <xref:System.Math> class to calculate the square root of a number.
 
 ```vb
-' Returns 2.
-Dim MySqr1 As Double = Math.Sqrt(4)
-' Returns 4.79583152331272.
-Dim MySqr2 As Double = Math.Sqrt(23)
-' Returns 0.
-Dim MySqr3 As Double = Math.Sqrt(0)
-' Returns NaN (not a number).
-Dim MySqr4 As Double = Math.Sqrt(-4)
+Dim mySqrt1 As Double = Math.Sqrt(4)
+Dim mySqrt2 As Double = Math.Sqrt(23)
+Dim mySqrt3 As Double = Math.Sqrt(0)
+Dim mySqrt4 As Double = Math.Sqrt(-4)
+Console.WriteLine(mySqrt1)
+Console.WriteLine(mySqrt2)
+Console.WriteLine(mySqrt3)
+Console.WriteLine(mySqrt4)
+' The code produces the following output:
+' 2
+' 4.79583152331272
+' 0
+' NaN
 ```
 
 ## Example

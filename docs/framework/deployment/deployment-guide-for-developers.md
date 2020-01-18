@@ -56,7 +56,7 @@ When you're ready to publish your app to a web server or other centralized locat
 |Install from disc|- [InstallAware](#installaware-deployment)<br />- [InstallShield](#installshield-deployment)<br />- [WiX toolset](#wix)<br />- [Manual installation](#installing_manually)|[Offline installer](#redistributable-packages)|
 |Install from a local area network (for enterprise apps)|- [ClickOnce](#clickonce-deployment)|Either [web installer](#redistributable-packages) (see [ClickOnce](#clickonce-deployment) for restrictions) or [offline installer](#redistributable-packages)|
 
-## Redistributable Packages
+## Redistributable packages
 
 The .NET Framework is available in two redistributable packages: web installer (bootstrapper) and offline installer (stand-alone redistributable). All .NET Framework downloads are hosted on the [Download .NET Framework page](https://dotnet.microsoft.com/download/dotnet-framework/). The following table compares the two packages:
 

@@ -1,5 +1,5 @@
 ---
-title: "Platform Neutral Interop Exceptions"
+title: "Exceptions Interoperability"
 ms.date: "01/16/2020"
 ms.technology: dotnet-standard
 helpviewer_keywords:
@@ -7,15 +7,12 @@ helpviewer_keywords:
   - "exceptions, unmanaged code"
   - "interop, exceptions"
   - "exceptions, interop"
-  - "stack, jump"
-  - "jump, stack"
-description: Information the use of unmanaged code interop exceptions.
 ---
 # Working with Interop Exceptions in Unmanaged Code
-Unmanaged code exception interop is not supported due to the portability issues that arise, since managed code can't know how these exception mechanisms work under the covers in non-Windows platforms.
+Unmanaged code exception interop is not supported due to the portability issues that arise, since managed code can't know how these exception mechanisms work under the covers.
 
-## Longjump Behaviors
-Longjump interop is held to the same constraints as exception handling and is only supported on Windows.
+## Setjmp/Longjmp Behaviors
+Setjmp/Longjmp interop is held to the same constraints as exception handling as it is not supported to skip over managed frames this way.
 
 When unmanaged code moves on through the `longjmp` C library function, the runtime observes different behaviors between Windows and Unix operating systems. On Windows, there is support to unwind the stack properly when dealing with exceptions thrown by external components. On the other hand, Unix does not support exception interop as currently the Unix ABI has no definition for it. Therefore, exceptions here end up resulting in unpredictable behaviors and potential crashes.
 

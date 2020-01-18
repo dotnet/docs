@@ -58,7 +58,7 @@ When you're ready to publish your app to a web server or other centralized locat
 
 ## Redistributable Packages
 
-The .NET Framework is available in two redistributable packages: web installer (bootstrapper) and offline installer (stand-alone redistributable). All .NET Framework downloads are hosted on the [Download .NET Framework page](https://dotnet.microsoft.com/download/dotnet-framework/). The following table compares the two packages.
+The .NET Framework is available in two redistributable packages: web installer (bootstrapper) and offline installer (stand-alone redistributable). All .NET Framework downloads are hosted on the [Download .NET Framework page](https://dotnet.microsoft.com/download/dotnet-framework/). The following table compares the two packages:
 
 ||Web installer|Offline installer|
 |-|-------------------|-----------------------|

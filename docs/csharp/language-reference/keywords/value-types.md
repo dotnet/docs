@@ -1,6 +1,5 @@
 ---
 title: "Value types - C# Reference"
-ms.custom: seodec18
 ms.date: 11/26/2018
 f1_keywords: 
   - "cs.valuetypes"
@@ -28,7 +27,7 @@ Unlike with reference types, you cannot derive a new type from a value type. How
 
 Value type variables cannot be `null` by default. However, variables of the corresponding [nullable value types](../builtin-types/nullable-value-types.md) can be `null`.
 
-Each value type has an implicit parameterless constructor that initializes the default value of that type. For information about default values of value types, see [Default values table](default-values-table.md).
+Each value type has an implicit parameterless constructor that initializes the default value of that type. For information about default values of value types, see [Default values of C# types](../builtin-types/default-values.md).
 
 ## Simple types
 
@@ -82,7 +81,7 @@ int myInt = new int();
 int myInt = 0;
 ```
 
-Using the [new](../operators/new-operator.md) operator calls the parameterless constructor of the specific type and assigns the default value to the variable. In the preceding example, the parameterless constructor assigned the value `0` to `myInt`. For more information about values assigned by calling parameterless constructors, see [Default values table](default-values-table.md).
+Using the [new](../operators/new-operator.md) operator calls the parameterless constructor of the specific type and assigns the default value to the variable. In the preceding example, the parameterless constructor assigned the value `0` to `myInt`. For more information about values assigned by calling parameterless constructors, see [Default values of C# types](../builtin-types/default-values.md).
 
 With user-defined types, use [new](../operators/new-operator.md) to invoke the parameterless constructor. For example, the following statement invokes the parameterless constructor of the `Point` struct:
 

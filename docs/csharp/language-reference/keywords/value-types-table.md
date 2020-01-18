@@ -1,6 +1,5 @@
 ---
 title: "Value types table - C# reference"
-ms.custom: seodec18
 ms.date: 11/06/2019
 helpviewer_keywords: 
   - "value types [C#], table"
@@ -32,6 +31,6 @@ The following table shows the C# value types:
 ## See also
 
 - [C# reference](../index.md)
-- [Default values table](default-values-table.md)
+- [Default values of C# types](../builtin-types/default-values.md)
 - [Value types](value-types.md)
 - [Formatting numeric results table](formatting-numeric-results-table.md)

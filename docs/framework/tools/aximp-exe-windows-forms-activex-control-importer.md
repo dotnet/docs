@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "Aximp.exe"
   - "Windows Forms ActiveX Control Importer"
 ms.assetid: 482c0d83-7144-4497-b626-87d2351b78d0
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Aximp.exe (Windows Forms ActiveX Control Importer)
 The ActiveX Control Importer converts type definitions in a COM type library for an ActiveX control into a Windows Forms control.  

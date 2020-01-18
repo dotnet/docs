@@ -1,6 +1,5 @@
 ---
 title: "Versioning with the Override and New Keywords - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "C# language, versioning"

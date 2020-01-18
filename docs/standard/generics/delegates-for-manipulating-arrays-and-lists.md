@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "lists [.NET Framework], generic delegates"
   - "generics [.NET Framework], delegates"
 ms.assetid: 416be383-cc61-4102-9b1b-88b51adb963e
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Generic Delegates for Manipulating Arrays and Lists
 This topic provides an overview of generic delegates for conversions, search predicates, and actions to be taken on elements of an array or collection.  

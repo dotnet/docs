@@ -2,7 +2,6 @@
 title: A Tour of C# - C# Guide
 description: New to C#? Learn the basics of the language.
 ms.date: 04/05/2019
-ms.custom: seoapril2019
 ---
 
 # A tour of the C# language

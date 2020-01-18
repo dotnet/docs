@@ -5,7 +5,7 @@ author: thraka
 ms.author: adegeo
 ms.date: 12/05/2019
 ms.technology: dotnet-cli
-ms.custom: "seodec18,updateeachrelease"
+ms.custom: "updateeachrelease"
 ---
 # Get started with .NET Core on Windows/Linux/macOS using the command line
 

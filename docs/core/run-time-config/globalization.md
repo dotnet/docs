@@ -10,7 +10,7 @@ ms.topic: reference
 
 - Determines whether a .NET Core app runs in globalization invariant mode without access to culture-specific data and behavior or whether it has access to cultural data.
 - Default: Run the app with access to cultural data (`false`).
-- For more information, see [.NET Core globalization invariant mode](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md).
+- For more information, see [.NET Core globalization invariant mode](https://github.com/dotnet/runtime/blob/master/docs/design/features/globalization-invariant-mode.md).
 
 | | Setting name | Values |
 | - | - | - |

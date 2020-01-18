@@ -3,7 +3,6 @@ title: Build .NET Core from source
 description: Learn how to build .NET Core and the .NET Core CLI from the source code.
 author: bleroy
 ms.date: 06/28/2017
-ms.custom: "seodec18"
 ---
 
 # Build .NET Core from source
@@ -13,7 +12,7 @@ This article gives guidance to developers who want to build and distribute their
 
 ## Build the CLR from source
 
-The source code for the .NET CoreCLR can be found in the [dotnet/coreclr](https://github.com/dotnet/coreclr/) repository on GitHub.
+The source code for the .NET CoreCLR can be found in the [dotnet/runtime](https://github.com/dotnet/runtime/) repository on GitHub.
 
 The build currently depends on the following prerequisites:
 
@@ -22,7 +21,7 @@ The build currently depends on the following prerequisites:
 - [Python](https://www.python.org/)
 - a C++ compiler.
 
-After you've installed these prerequisites, you can build the CLR by invoking the build script (`build.cmd` on Windows, or `build.sh` on Linux and macOS) at the base of the [dotnet/coreclr](https://github.com/dotnet/coreclr/) repository.
+After you've installed these prerequisites, you can build the CLR by invoking the build script (`build.cmd` on Windows, or `build.sh` on Linux and macOS) at the base of the [dotnet/runtime](https://github.com/dotnet/runtime/) repository.
 
 Installing the components differ depending on the operating system (OS). See the build instructions for your specific OS:
 
@@ -38,7 +37,7 @@ You have to be on the particular platform to build that platform.
 The build has two main `buildTypes`:
 
 - Debug (default)- Compiles the runtime with minimal optimizations and additional runtime checks (asserts). This reduction in optimization level and the additional checks slow runtime execution but are valuable for debugging. This is the recommended setting for development and testing environments.
-- Release - Compiles the runtime with full optimizations and without the additional runtime checks. This will yield much faster run time performance but it can take a bit longer to build and can be difficult to debug. Pass `release` to the build script to select this build type.
+- Release - Compiles the runtime with full optimizations and without the additional runtime checks. This will yield much faster run-time performance, but it can take a bit longer to build and can be difficult to debug. Pass `release` to the build script to select this build type.
 
 In addition, by default the build not only creates the runtime executables, but it also builds all the tests.
 There are quite a few tests, taking a significant amount of time that isn't necessary if you just want to experiment with changes.
@@ -67,13 +66,13 @@ While the 'raw' output of the build is sometimes useful, normally you're only in
 There are two basic techniques for using your new runtime:
 
  1. **Use dotnet.exe and NuGet to compose an application**.
-    See [Using Your Build](https://github.com/dotnet/coreclr/blob/master/Documentation/workflow/UsingYourBuild.md) for instructions on creating a program that uses your new runtime by using the NuGet packages you just created and the 'dotnet' command-line interface (CLI). This technique is the expected way non-runtime developers are likely to consume your new runtime.
+    See [Using Your Build](https://github.com/dotnet/runtime/blob/master/docs/workflow/testing/using-your-build.md) for instructions on creating a program that uses your new runtime by using the NuGet packages you just created and the 'dotnet' command-line interface (CLI). This technique is the expected way non-runtime developers are likely to consume your new runtime.
 
  2. **Use corerun.exe to run an application using unpackaged DLLs**.
     This repository also defines a simple host called corerun.exe that does NOT take any dependency on NuGet.
     You need to tell the host where to get the required DLLs you actually use, and you have to manually gather them together.
-    This technique is used by all the tests in the [dotnet/coreclr](https://github.com/dotnet/coreclr) repo, and is useful for quick local 'edit-compile-debug' loop such as preliminary unit testing.
-    See [Executing .NET Core Apps with CoreRun.exe](https://github.com/dotnet/coreclr/blob/master/Documentation/workflow/UsingCoreRun.md) for details on using this technique.
+    This technique is used by all the tests in the [dotnet/runtime](https://github.com/dotnet/runtime) repo, and is useful for quick local 'edit-compile-debug' loop such as preliminary unit testing.
+    See [Executing .NET Core Apps with CoreRun.exe](https://github.com/dotnet/runtime/blob/master/docs/workflow/testing/using-corerun.md) for details on using this technique.
 
 ## Build the CLI from source
 
@@ -96,6 +95,6 @@ Use the `dotnet` executable from *artifacts/{os}-{arch}/stage2* to try out the n
 
 ## See also
 
-- [.NET Core Common Language Runtime (CoreCLR)](https://github.com/dotnet/coreclr/blob/master/README.md)
+- [.NET Runtime](https://github.com/dotnet/runtime/blob/master/README.md)
 - [.NET Core CLI Developer Guide](https://github.com/dotnet/cli/blob/master/Documentation/project-docs/developer-guide.md)
 - [.NET Core distribution packaging](./distribution-packaging.md)

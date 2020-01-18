@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "try/catch blocks"
   - "catch blocks"
 ms.assetid: 12af9ff3-8587-4f31-90cf-6c2244e0fdae
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to use specific exceptions in a catch block
 

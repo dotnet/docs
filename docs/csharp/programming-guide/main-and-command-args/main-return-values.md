@@ -1,6 +1,5 @@
 ---
 title: "Main() Return Values - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 08/02/2017
 helpviewer_keywords: 
   - "Main method [C#], return values"
@@ -96,4 +95,4 @@ When the application entry point returns a `Task` or `Task<int>`, the compiler g
 - [C# Programming Guide](../index.md)
 - [C# Reference](../index.md)
 - [Main() and Command-Line Arguments](index.md)
-- [How to: Display Command Line Arguments](./how-to-display-command-line-arguments.md)
+- [How to display command line arguments](./how-to-display-command-line-arguments.md)

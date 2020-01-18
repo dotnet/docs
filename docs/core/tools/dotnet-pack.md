@@ -5,7 +5,7 @@ ms.date: 08/08/2019
 ---
 # dotnet pack
 
-**This topic applies to: ✓** .NET Core 1.x SDK and later versions
+**This article applies to:** ✔️ .NET Core 1.x SDK and later versions
 
 <!-- todo: uncomment when all CLI commands are reviewed
 [!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
@@ -18,15 +18,15 @@ ms.date: 08/08/2019
 ## Synopsis
 
 ```dotnetcli
-dotnet pack [<PROJECT>|<SOLUTION>] [-c|--configuration] [--force] [--include-source] [--include-symbols] [--interactive] 
-    [--no-build] [--no-dependencies] [--no-restore] [--nologo] [-o|--output] [--runtime] [-s|--serviceable] 
+dotnet pack [<PROJECT>|<SOLUTION>] [-c|--configuration] [--force] [--include-source] [--include-symbols] [--interactive]
+    [--no-build] [--no-dependencies] [--no-restore] [--nologo] [-o|--output] [--runtime] [-s|--serviceable]
     [-v|--verbosity] [--version-suffix]
 dotnet pack [-h|--help]
 ```
 
 ## Description
 
-The `dotnet pack` command builds the project and creates NuGet packages. The result of this command is a NuGet package (that is, a *.nupkg* file). 
+The `dotnet pack` command builds the project and creates NuGet packages. The result of this command is a NuGet package (that is, a *.nupkg* file).
 
 If you want to generate a package that contains the debug symbols, you have two options available:
 

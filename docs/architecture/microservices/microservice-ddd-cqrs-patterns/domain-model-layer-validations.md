@@ -48,7 +48,7 @@ A similar approach can be used in the entity’s constructor, raising an excepti
 
 ### Use validation attributes in the model based on data annotations
 
-Data annotations, like the Required or MaxLength attributes, can be used to configure EF Core database field properties, as explained in detail in the [Table mapping](infrastructure-persistence-layer-implemenation-entity-framework-core.md#table-mapping) section, but [they no longer work for entity validation in EF Core](https://github.com/aspnet/EntityFrameworkCore/issues/3680) (neither does the <xref:System.ComponentModel.DataAnnotations.IValidatableObject.Validate%2A?displayProperty=nameWithType> method), as they have done since EF 4.x in .NET Framework.
+Data annotations, like the Required or MaxLength attributes, can be used to configure EF Core database field properties, as explained in detail in the [Table mapping](infrastructure-persistence-layer-implemenation-entity-framework-core.md#table-mapping) section, but [they no longer work for entity validation in EF Core](https://github.com/dotnet/efcore/issues/3680) (neither does the <xref:System.ComponentModel.DataAnnotations.IValidatableObject.Validate%2A?displayProperty=nameWithType> method), as they have done since EF 4.x in .NET Framework.
 
 Data annotations and the <xref:System.ComponentModel.DataAnnotations.IValidatableObject> interface can still be used for model validation during model binding, prior to the controller’s actions invocation as usual, but that model is meant to be a ViewModel or DTO and that’s an MVC or API concern not a domain model concern.
 
@@ -56,7 +56,7 @@ Having made the conceptual difference clear, you can still use data annotations 
 
 You can still implement custom validation in the entity class using data annotations and the `IValidatableObject.Validate` method, by overriding the DbContext’s SaveChanges method.
 
-You can see a sample implementation for validating `IValidatableObject` entities in [this comment on GitHub](https://github.com/aspnet/EntityFrameworkCore/issues/3680#issuecomment-155502539). That sample doesn’t do attribute-based validations, but they should be easy to implement using reflection in the same override.
+You can see a sample implementation for validating `IValidatableObject` entities in [this comment on GitHub](https://github.com/dotnet/efcore/issues/3680#issuecomment-155502539). That sample doesn't do attribute-based validations, but they should be easy to implement using reflection in the same override.
 
 However, from a DDD point of view, the domain model is best kept lean with the use of exceptions in your entity’s behavior methods, or by implementing the Specification and Notification patterns to enforce validation rules.
 

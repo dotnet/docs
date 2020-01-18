@@ -113,7 +113,7 @@ open System
 
 type ReadOnlySpan<'T> with
     // Note the 'inline' in the member definition
-    member sp.GetSlice(startIdx, endIdx) =
+    member inline sp.GetSlice(startIdx, endIdx) =
         let s = defaultArg startIdx 0
         let e = defaultArg endIdx sp.Length
         sp.Slice(s, e - s)

@@ -197,8 +197,7 @@
         "docs/framework/configure-apps/file-schema/network/**/**.md": "karelz",
         "docs/framework/configure-apps/file-schema/wcf/**/**.md": "HongGit",
         "docs/framework/configure-apps/file-schema/winforms/**/**.md": "Thraka",
-        "docs/framework/data/adonet/**/**.md": "stevestein",
-        "docs/framework/data/wcf/**/**.md": "HongGit",
+        "docs/framework/data/**/**.md": "stevestein",
         "docs/framework/deployment/**/**.md": "Thraka",
         "docs/framework/get-started/**/**.md": "mairaw",
         "docs/framework/install/**/**.md": "Thraka",
@@ -237,7 +236,7 @@
         "docs/standard/data/**/**.md": "gewarren",
         "docs/standard/data/sqlite/**/**.md": "bricelam",
         "docs/standard/datetime/**/**.md": "Thraka",        
-        "docs/standard/design-guidelines/**/**.md": "mairaw",
+        "docs/standard/design-guidelines/**/**.md": "KrzysztofCwalina",
         "docs/standard/events/**/**.md": "gewarren",
         "docs/standard/exceptions/**/**.md": "tdykstra",
         "docs/standard/garbage-collection/**/**.md": "billwagner",
@@ -516,11 +515,8 @@
         "docs/desktop-wpf/**/**.md": "WPF",
         "docs/machine-learning/**/**.md": "ML.NET",
         "docs/standard/data/sqlite/**/**.md": "Microsoft.Data.Sqlite",
+        "docs/standard/design-guidelines/**/**.md": "Framework Design Guidelines",
         "docs/visual-basic/**/**.md": "Visual Basic"
-      },
-      "ms.custom": {
-        "docs/fsharp/tutorials/**/**.md": "seodec18",
-        "docs/fsharp/language-reference/**/**.md": "seodec18"
       },
       "open_to_public_contributors": {
 	      "docs/standard/design-guidelines/**.md": false

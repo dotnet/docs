@@ -3,7 +3,6 @@ title: Get started with C# and Visual Studio Code
 description: Learn how to create and debug your first .NET Core application in C# using Visual Studio Code.
 author: kendrahavens
 ms.date: 12/05/2018
-ms.custom: "seodec18"
 ---
 # Get started with C# and Visual Studio Code
 

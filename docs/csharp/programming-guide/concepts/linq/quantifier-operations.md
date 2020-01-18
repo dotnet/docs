@@ -41,5 +41,5 @@ The following example uses the `Contains` to check an array have a specific elem
 
 - <xref:System.Linq>
 - [Standard Query Operators Overview (C#)](./standard-query-operators-overview.md)
-- [How to: Dynamically Specify Predicate Filters at Runtime](../../../linq/dynamically-specify-predicate-filters-at-runtime.md)
+- [Dynamically specify predicate filters at runtime](../../../linq/dynamically-specify-predicate-filters-at-runtime.md)
 - [How to query for sentences that contain a specified set of words (LINQ) (C#)](./how-to-query-for-sentences-that-contain-a-specified-set-of-words-linq.md)

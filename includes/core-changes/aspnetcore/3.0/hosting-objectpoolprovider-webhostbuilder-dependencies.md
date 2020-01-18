@@ -2,7 +2,7 @@
 
 As part of making ASP.NET Core more pay for play, the `ObjectPoolProvider` was removed from the main set of dependencies. Specific components relying on `ObjectPoolProvider` now add it themselves.
 
-For discussion, see [aspnet/AspNetCore#5944](https://github.com/aspnet/AspNetCore/issues/5944).
+For discussion, see [dotnet/aspnetcore#5944](https://github.com/dotnet/aspnetcore/issues/5944).
 
 #### Version introduced
 

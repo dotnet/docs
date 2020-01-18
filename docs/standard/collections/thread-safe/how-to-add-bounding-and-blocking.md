@@ -5,8 +5,6 @@ ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "thread-safe collections, custom blocking collections"
 ms.assetid: 4c2492de-3876-4873-b5a1-000bb404d770
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Add Bounding and Blocking Functionality to a Collection
 This example shows how to add bounding and blocking functionality to a custom collection class by implementing the <xref:System.Collections.Concurrent.IProducerConsumerCollection%601?displayProperty=nameWithType> interface in the class, and then using a class instance as the internal storage mechanism for a <xref:System.Collections.Concurrent.BlockingCollection%601?displayProperty=nameWithType>. For more information about bounding and blocking, see [BlockingCollection Overview](../../../../docs/standard/collections/thread-safe/blockingcollection-overview.md).  

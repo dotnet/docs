@@ -3,7 +3,7 @@ title: Additional CLI tools
 description: An overview of the additional tools you can install that support and extend .NET Core functionality.
 author: mlacouture
 ms.date: 12/02/2019
-ms.custom: "mvc, seodec18"
+ms.custom: "mvc"
 ---
 # .NET Core additional tools overview
 

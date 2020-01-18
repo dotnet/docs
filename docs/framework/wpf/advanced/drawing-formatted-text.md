@@ -20,7 +20,7 @@ This topic provides an overview of the features of the <xref:System.Windows.Medi
  ![Text displayed using FormattedText object](./media/typography-in-wpf/text-formatted-linear-gradient.jpg)  
   
 > [!NOTE]
-> For those developers migrating from the [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] API, the table in the [Win32 Migration](#win32_migration) section lists the [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] DrawText flags and the approximate equivalent in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)].  
+> For those developers migrating from the Win32 API, the table in the [Win32 Migration](#win32_migration) section lists the Win32 DrawText flags and the approximate equivalent in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)].  
   
 ### Reasons for Using Formatted Text  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] includes multiple controls for drawing text to the screen. Each control is targeted to a different scenario and has its own list of features and limitations. In general, the <xref:System.Windows.Controls.TextBlock> element should be used when limited text support is required, such as a brief sentence in a [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)]. <xref:System.Windows.Controls.Label> can be used when minimal text support is required. For more information, see [Documents in WPF](documents-in-wpf.md).  
@@ -44,7 +44,7 @@ This topic provides an overview of the features of the <xref:System.Windows.Medi
  [!code-vb[FormattedTextSnippets#FormattedTextSnippets1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FormattedTextSnippets/visualbasic/window1.xaml.vb#formattedtextsnippets1)]  
   
 ### Font Size Unit of Measure  
- As with other text objects in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications, the <xref:System.Windows.Media.FormattedText> object uses device-independent pixels as the unit of measure. However, most [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] applications use points as the unit of measure. If you want to use display text in units of points in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications, you need to convert device-independent units (1/96th inch per unit) to points. The following code example shows how to perform this conversion.  
+ As with other text objects in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications, the <xref:System.Windows.Media.FormattedText> object uses device-independent pixels as the unit of measure. However, most Win32 applications use points as the unit of measure. If you want to use display text in units of points in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications, you need to convert device-independent units (1/96th inch per unit) to points. The following code example shows how to perform this conversion.  
   
  [!code-csharp[FormattedTextSnippets#FormattedTextSnippets2](~/samples/snippets/csharp/VS_Snippets_Wpf/FormattedTextSnippets/CSharp/Window1.xaml.cs#formattedtextsnippets2)]
  [!code-vb[FormattedTextSnippets#FormattedTextSnippets2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/FormattedTextSnippets/visualbasic/window1.xaml.vb#formattedtextsnippets2)]  
@@ -80,15 +80,15 @@ Sphere following the path geometry of text
   
 <a name="win32_migration"></a>   
 ## Win32 Migration  
- The features of <xref:System.Windows.Media.FormattedText> for drawing text are similar to the features of the [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] DrawText function. For those developers migrating from the [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] API, the following table lists the [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] DrawText flags and the approximate equivalent in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)].  
+ The features of <xref:System.Windows.Media.FormattedText> for drawing text are similar to the features of the Win32 DrawText function. For those developers migrating from the Win32 API, the following table lists the Win32 DrawText flags and the approximate equivalent in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)].  
   
 |DrawText flag|WPF equivalent|Notes|  
 |-------------------|--------------------|-----------|  
-|DT_BOTTOM|<xref:System.Windows.Media.FormattedText.Height%2A>|Use the <xref:System.Windows.Media.FormattedText.Height%2A> property to compute an appropriate [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] DrawText 'y' position.|  
+|DT_BOTTOM|<xref:System.Windows.Media.FormattedText.Height%2A>|Use the <xref:System.Windows.Media.FormattedText.Height%2A> property to compute an appropriate Win32 DrawText 'y' position.|  
 |DT_CALCRECT|<xref:System.Windows.Media.FormattedText.Height%2A>, <xref:System.Windows.Media.FormattedText.Width%2A>|Use the <xref:System.Windows.Media.FormattedText.Height%2A> and <xref:System.Windows.Media.FormattedText.Width%2A> properties to calculate the output rectangle.|  
 |DT_CENTER|<xref:System.Windows.Media.FormattedText.TextAlignment%2A>|Use the <xref:System.Windows.Media.FormattedText.TextAlignment%2A> property with the value set to <xref:System.Windows.TextAlignment.Center>.|  
 |DT_EDITCONTROL|None|Not required. Space width and last line rendering are the same as in the framework edit control.|  
-|DT_END_ELLIPSIS|<xref:System.Windows.Media.FormattedText.Trimming%2A>|Use the <xref:System.Windows.Media.FormattedText.Trimming%2A> property with the value <xref:System.Windows.TextTrimming.CharacterEllipsis>.<br /><br /> Use <xref:System.Windows.TextTrimming.WordEllipsis> to get [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] DT_END_ELLIPSIS with DT_WORD_ELIPSIS end ellipsis—in this case, character ellipsis only occurs on words that do not fit on a single line.|  
+|DT_END_ELLIPSIS|<xref:System.Windows.Media.FormattedText.Trimming%2A>|Use the <xref:System.Windows.Media.FormattedText.Trimming%2A> property with the value <xref:System.Windows.TextTrimming.CharacterEllipsis>.<br /><br /> Use <xref:System.Windows.TextTrimming.WordEllipsis> to get Win32 DT_END_ELLIPSIS with DT_WORD_ELIPSIS end ellipsis—in this case, character ellipsis only occurs on words that do not fit on a single line.|  
 |DT_EXPAND_TABS|None|Not required. Tabs are automatically expanded to stops every 4 ems, which is approximately the width of 8 language-independent characters.|  
 |DT_EXTERNALLEADING|None|Not required. External leading is always included in line spacing. Use the <xref:System.Windows.Media.FormattedText.LineHeight%2A> property to create user-defined line spacing.|  
 |DT_HIDEPREFIX|None|Not supported. Remove the '&' from the string before constructing the <xref:System.Windows.Media.FormattedText> object.|  
@@ -104,8 +104,8 @@ Sphere following the path geometry of text
 |DT_RTLREADING|<xref:System.Windows.Media.FormattedText.FlowDirection%2A>|Set the <xref:System.Windows.Media.FormattedText.FlowDirection%2A> property to <xref:System.Windows.FlowDirection.RightToLeft>.|  
 |DT_SINGLELINE|None|Not required. <xref:System.Windows.Media.FormattedText> objects behave as a single line control, unless either the <xref:System.Windows.Media.FormattedText.MaxTextWidth%2A> property is set or the text contains a carriage return/line feed (CR/LF).|  
 |DT_TABSTOP|None|No support for user-defined tab stop positions.|  
-|DT_TOP|<xref:System.Windows.Media.FormattedText.Height%2A>|Not required. Top justification is the default. Other vertical positioning values can be defined by using the <xref:System.Windows.Media.FormattedText.Height%2A> property to compute an appropriate [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] DrawText 'y' position.|  
-|DT_VCENTER|<xref:System.Windows.Media.FormattedText.Height%2A>|Use the <xref:System.Windows.Media.FormattedText.Height%2A> property to compute an appropriate [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] DrawText 'y' position.|  
+|DT_TOP|<xref:System.Windows.Media.FormattedText.Height%2A>|Not required. Top justification is the default. Other vertical positioning values can be defined by using the <xref:System.Windows.Media.FormattedText.Height%2A> property to compute an appropriate Win32 DrawText 'y' position.|  
+|DT_VCENTER|<xref:System.Windows.Media.FormattedText.Height%2A>|Use the <xref:System.Windows.Media.FormattedText.Height%2A> property to compute an appropriate Win32 DrawText 'y' position.|  
 |DT_WORDBREAK|None|Not required. Word breaking happens automatically with <xref:System.Windows.Media.FormattedText> objects. You cannot disable it.|  
 |DT_WORD_ELLIPSIS|<xref:System.Windows.Media.FormattedText.Trimming%2A>|Use the <xref:System.Windows.Media.FormattedText.Trimming%2A> property with the value <xref:System.Windows.TextTrimming.WordEllipsis>.|  
   

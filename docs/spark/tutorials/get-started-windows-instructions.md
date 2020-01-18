@@ -33,7 +33,7 @@ For detailed instructions, you can see [Building .NET for Apache Spark from Sour
 
 1. Open Visual Studio > **Create New Project** > **Console App (.NET Core)** > Name: `HelloSpark`.
 
-   For detailed instructions, you can see [How to create the app in Visual Studio](https://docs.microsoft.com/en-us/dotnet/core/tutorials/with-visual-studio?tabs=csharp).
+   For detailed instructions, you can see [How to create the app in Visual Studio](../../core/tutorials/with-visual-studio.md).
 
 1. Install `Microsoft.Spark` Nuget package into the solution from the [spark nuget.org feed](https://www.nuget.org/profiles/spark) - see [Ways to install Nuget Package](https://docs.microsoft.com/nuget/consume-packages/ways-to-install-a-package)
 1. Write the following code into *Program.cs*:
@@ -75,11 +75,11 @@ For detailed instructions, you can see [Building .NET for Apache Spark from Sour
     
 1. Run your app
 
-    ```batch
-    spark-submit `
-    --class org.apache.spark.deploy.dotnet.DotnetRunner `
-    --master local `
-    microsoft-spark-2.4.x-<version>.jar `
+    ```bash
+    spark-submit \
+    --class org.apache.spark.deploy.dotnet.DotnetRunner \
+    --master local \
+    microsoft-spark-2.4.x-<version>.jar \
     dotnet HelloSpark.dll
     ```
     

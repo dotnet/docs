@@ -25,9 +25,13 @@ Starting with .NET Core 2.1, the .NET CLI has options you can use to list the ve
 
 # [Windows](#tab/windows)
 
+By running the following command:
+
 ```dotnetcli
 dotnet --list-sdks
 ```
+
+You get output similar to the following:
 
 ```console
 2.1.200-preview-007474 [C:\Program Files\dotnet\sdk]
@@ -47,9 +51,13 @@ dotnet --list-sdks
 2.1.400-preview-009171 [C:\Program Files\dotnet\sdk]
 ```
 
+And by running the following command:
+
 ```dotnetcli
 dotnet --list-runtimes
 ```
+
+You get output similar to the following:
 
 ```console
 Microsoft.AspNetCore.All 2.1.0-preview2-final [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.All]
@@ -71,9 +79,13 @@ Microsoft.NETCore.App 2.1.2 [C:\Program Files\dotnet\shared\Microsoft.NETCore.Ap
 
 # [Linux](#tab/linux)
 
+By running the following command:
+
 ```dotnetcli
 dotnet --list-sdks
 ```
+
+You get output similar to the following:
 
 ```console
 1.0.1 [/usr/share/dotnet/sdk]
@@ -87,9 +99,13 @@ dotnet --list-sdks
 2.1.301 [/usr/share/dotnet/sdk]
 ```
 
+And by running the following command:
+
 ```dotnetcli
 dotnet --list-runtimes
 ```
+
+You get output similar to the following:
 
 ```console
 Microsoft.AspNetCore.All 2.1.0-preview2-final [/usr/share/dotnet/shared/Microsoft.AspNetCore.All]
@@ -113,9 +129,13 @@ Microsoft.NETCore.App 2.1.1 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
 
 # [macOS](#tab/macos)
 
+By running the following command:
+
 ```dotnetcli
 dotnet --list-sdks
 ```
+
+You get output similar to the following:
 
 ```console
 1.0.1 [/usr/local/share/dotnet/sdk]
@@ -129,9 +149,13 @@ dotnet --list-sdks
 2.1.301 [/usr/local/share/dotnet/sdk]
 ```
 
+And by running the following command:
+
 ```dotnetcli
 dotnet --list-runtimes
 ```
+
+You get output similar to the following:
 
 ```console
 Microsoft.AspNetCore.All 2.1.0-preview2-final [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.All]

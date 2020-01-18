@@ -80,11 +80,15 @@ Let's update the C# language version the project uses to version 8.0. Edit the _
 
 ## Build the project
 
-Before you complete a project template, you should test it to make sure it compiles and runs correctly. In your terminal, run the `dotnet run` command and you should see the following output:
+Before you complete a project template, you should test it to make sure it compiles and runs correctly.
+
+In your terminal, run the following command:
 
 ```dotnetcli
 dotnet run
 ```
+
+You get the following output:
 
 ```console
 Hello World with C# 8.0!
@@ -139,6 +143,8 @@ This command outputs the list of templates installed, which should include yours
 dotnet new -i .\
 ```
 
+You get output similar to the following:
+
 ```console
 Usage: new [options]
 
@@ -160,23 +166,33 @@ Worker Service                                    worker                [C#]    
 
 ### Test the project template
 
-Now that you have an item template installed, test it. Navigate to the _test_ folder and create a new console application with `dotnet new consoleasync`. This generates a working project you can easily test with the `dotnet run` command.
+Now that you have an item template installed, test it.
 
-```dotnetcli
-dotnet new consoleasync
-```
+1. Navigate to the _test_ folder
 
-```console
-The template "Example templates: async project" was created successfully.
-```
+1. Create a new console application with the following command which generates a working project you can easily test with the `dotnet run` command.
 
-```dotnetcli
-dotnet run
-```
+    ```dotnetcli
+    dotnet new consoleasync
+    ```
 
-```console
-Hello World with C# 8.0!
-```
+    You get the following output:
+
+    ```console
+    The template "Example templates: async project" was created successfully.
+    ```
+
+1. Run the project using the following command:
+
+    ```dotnetcli
+    dotnet run
+    ```
+
+    You get the following output:
+
+    ```console
+    Hello World with C# 8.0!
+    ```
 
 Congratulations! You created and deployed a project template with .NET Core. In preparation for the next part of this tutorial series, you must uninstall the template you created. Make sure to delete all files from the _test_ folder too. This will get you back to a clean state ready for the next major section of this tutorial.
 
@@ -187,6 +203,8 @@ Because you installed the template by using a file path, you must uninstall it w
 ```dotnetcli
 dotnet new -u
 ```
+
+You get output similar to the following:
 
 ```console
 Template Instantiation Commands for .NET Core CLI
@@ -215,6 +233,8 @@ Currently installed items:
     Templates:
       Example templates: async project (consoleasync) C#
 ```
+
+To uninstall a template, run the following command:
 
 ```dotnetcli
 dotnet new -u C:\working\templates\consoleasync

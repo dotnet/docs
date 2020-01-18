@@ -150,6 +150,8 @@ Now that you have an item template installed, test it. Navigate to the _test/_ f
 dotnet new console
 ```
 
+You get output similar to the following:
+
 ```console
 The template "Console Application" was created successfully.
 
@@ -160,9 +162,13 @@ Running 'dotnet restore' on C:\test\test.csproj...
 Restore succeeded.
 ```
 
+Run the project with:
+
 ```dotnetcli
 dotnet run
 ```
+
+You get the following output:
 
 ```console
 Hello World!
@@ -173,6 +179,8 @@ Next, run `dotnet new stringext` to generate the _CommonExtensions.cs_ from the 
 ```dotnetcli
 dotnet new stringext
 ```
+
+You get the following output:
 
 ```console
 The template "Example templates: string extensions" was created successfully.
@@ -190,6 +198,8 @@ Run the program again and you'll see that the result is reversed.
 dotnet run
 ```
 
+You get the following output:
+
 ```console
 !dlroW olleH
 ```
@@ -203,6 +213,8 @@ Because you installed the template by file path, you must uninstall it with the 
 ```dotnetcli
 dotnet new -u
 ```
+
+You get output similar to the following:
 
 ```console
 Template Instantiation Commands for .NET Core CLI
@@ -231,6 +243,8 @@ Currently installed items:
     Templates:
       Example templates: string extensions (stringext) C#
 ```
+
+To uninstall a template, run the following command:
 
 ```dotnetcli
 dotnet new -u C:\working\templates\extensions

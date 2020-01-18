@@ -24,6 +24,8 @@ You can see which versions of the .NET Core SDK are currently installed with a t
 dotnet --list-sdks
 ```
 
+You get output similar to the following:
+
 ::: zone pivot="os-windows"
 
 ```console
@@ -76,6 +78,8 @@ You can see which versions of the .NET Core runtime are currently installed with
 ```dotnetcli
 dotnet --list-runtimes
 ```
+
+You get output similar to the following:
 
 ::: zone pivot="os-windows"
 

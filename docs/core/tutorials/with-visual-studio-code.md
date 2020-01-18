@@ -128,6 +128,8 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
     dotnet run
     ```
 
+    You get the following output:
+
     ```console
     Hello World! Happy coding!
     ```

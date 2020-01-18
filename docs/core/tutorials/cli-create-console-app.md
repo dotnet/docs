@@ -62,6 +62,8 @@ Let's do a quick walkthrough:
     dotnet run
     ```
 
+    You get the following output:
+
     ```console
     Hello World!
     ```
@@ -71,6 +73,8 @@ Let's do a quick walkthrough:
     ```dotnetcli
     dotnet bin\Debug\netcoreapp3.1\Hello.dll
     ```
+
+    You get the following output:
 
     ```console
     Hello World!
@@ -100,7 +104,7 @@ Let's change the program a bit. Fibonacci numbers are fun, so let's add that and
     dotnet run -- John
     ```
 
-    The output is the following:
+    You get the following output:
 
     ```console
     Hello John!
@@ -144,6 +148,8 @@ Single files are fine for simple one-off programs, but if you're building a more
     dotnet run
     ```
 
+    You get the following output:
+
     ```console
     0
     1
@@ -170,6 +176,8 @@ Once you're ready to distribute your app, use the [dotnet publish](../tools/dotn
 dotnet publish
 ```
 
+You get output similar to the following:
+
 ```console
 Microsoft (R) Build Engine version 16.4.0+e901037fe for .NET Core
 Copyright (C) Microsoft Corporation. All rights reserved.
@@ -186,6 +194,8 @@ You can run your published app with the [dotnet](../tools/dotnet.md) command:
 ```dotnetcli
 dotnet bin\Debug\netcoreapp3.1\publish\Hello.dll
 ```
+
+You get the following output:
 
 ```console
 Hello World!

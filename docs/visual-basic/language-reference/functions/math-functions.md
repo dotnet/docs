@@ -48,7 +48,7 @@ The following table lists methods of the <xref:System.Math?displayProperty=nameW
 The following table lists methods of the <xref:System.Math?displayProperty=nameWithType> class that don't exist in .NET Framework but are added in .NET Standard or .NET Core:
 
 |.NET method|Description|Available in|
-|---------------------------|-----------------|
+|---------------------------|-----------------|-----------|
 |<xref:System.Math.Acosh%2A>|Returns the angle whose hyperbolic cosine is the specified number.|Starting with .NET Core 2.1 and .NET Standard 2.1|
 |<xref:System.Math.Asinh%2A>|Returns the angle whose hyperbolic sine is the specified number.|Starting with .NET Core 2.1 and .NET Standard 2.1|
 |<xref:System.Math.Atanh%2A>|Returns the angle whose hyperbolic tangent is the specified number.|Starting with .NET Core 2.1 and .NET Standard 2.1|

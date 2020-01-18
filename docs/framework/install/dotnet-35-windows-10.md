@@ -21,7 +21,7 @@ You may see the following configuration dialog if you try to run an app that req
 
 The .NET Framework is created by Microsoft and provides an environment for running applications. There are different versions available. Many companies develop their apps to run using the .NET Framework, and these apps target a specific version. If you see this pop-up, you're trying to run an application that requires the .NET Framework version 3.5, but that version is not installed on your system.
 
-## Enable .NET Framework 3.5 in Control Panel
+## Enable the .NET Framework 3.5 in Control Panel
 
 You can enable the .NET Framework 3.5 through the Windows Control Panel. This option requires an Internet connection.
 

@@ -1,7 +1,7 @@
 ---
 title: ".NET Framework deployment guide for developers"
 ms.custom: "updateeachrelease"
-ms.date: "04/18/2019"
+ms.date: "01/17/2020"
 helpviewer_keywords:
   - "developer's guide, deploying .NET Framework"
   - "deployment [.NET Framework], developer's guide"
@@ -42,7 +42,7 @@ You can download the redistributable packages and language packs for .NET Framew
 
 - Uninstalling .NET Framework 4.5 or one of its point releases also removes pre-existing .NET Framework 4 files. If you want to go back to .NET Framework 4, you must reinstall it and any updates to it. See [Installing the .NET Framework 4](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/5a4x27ek(v=vs.100)).
 
-- The .NET Framework 4.5 redistributable was updated on October 9, 2012 to correct an issue related to an improper timestamp on a digital certificate, which caused the digital signature on files produced and signed by Microsoft to expire prematurely. If you previously installed the .NET Framework 4.5 redistributable package dated August 16, 2012, we recommend that you update your copy with the latest redistributable from the [Microsoft Download Center](https://dotnet.microsoft.com/download/dotnet-framework/net45). For more information about this issue, see [Microsoft Security Advisory 2749655](https://docs.microsoft.com/security-updates/SecurityAdvisories/2012/2749655).
+- The .NET Framework 4.5 redistributable was updated on October 9, 2012 to correct an issue related to an improper timestamp on a digital certificate, which caused the digital signature on files produced and signed by Microsoft to expire prematurely. If you previously installed the .NET Framework 4.5 redistributable package dated August 16, 2012, we recommend that you update your copy with the latest redistributable from the [.NET Framework download page](https://dotnet.microsoft.com/download/dotnet-framework/net45). For more information about this issue, see [Microsoft Security Advisory 2749655](https://docs.microsoft.com/security-updates/SecurityAdvisories/2012/2749655).
 
 For information about how a system administrator can deploy the .NET Framework and its system dependencies across a network, see [Deployment Guide for Administrators](guide-for-administrators.md).
 
@@ -119,7 +119,7 @@ In Visual Studio, to choose ClickOnce deployment and add a dependency on the .NE
 
 7. Choose an option to specify the source location for the prerequisites, and then choose **OK**.
 
-     If you supply a URL for the .NET Framework download location, you can specify either the Microsoft Download Center site or a site of your own. If you are placing the redistributable package on your own server, it must be the offline installer and not the web installer. You can only link to the web installer on the Microsoft Download Center. The URL can also specify a disc on which your own app is being distributed.
+     If you supply a URL for the .NET Framework download location, you can specify either the .NET Framework download page or a site of your own. If you are placing the redistributable package on your own server, it must be the offline installer and not the web installer. You can only link to the web installer on the .NET Framework download page. The URL can also specify a disc on which your own app is being distributed.
 
 8. In the **Property Pages** dialog box, choose **OK**.
 

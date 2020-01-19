@@ -38,7 +38,7 @@ The method definition specifies the names and types of any parameters that are r
 
 ## Passing by reference vs. passing by value
 
-By default, when a value type is passed to a method, a copy is passed instead of the object itself. Therefore, changes to the argument have no effect on the original copy in the calling method. You can pass a value-type by reference by using the ref keyword. For more information, see [Passing Value-Type Parameters](./passing-value-type-parameters.md). For a list of built-in value types, see [Value Types Table](../../language-reference/keywords/value-types-table.md).
+By default, when an instance of a [value type](../../language-reference/builtin-types/value-types.md) is passed to a method, its copy is passed instead of the instance itself. Therefore, changes to the argument have no effect on the original instance in the calling method. To pass a value-type instance by reference, use the `ref` keyword. For more information, see [Passing Value-Type Parameters](./passing-value-type-parameters.md).
 
 When an object of a reference type is passed to a method, a reference to the object is passed. That is, the method receives not the object itself but an argument that indicates the location of the object. If you change a member of the object by using this reference, the change is reflected in the argument in the calling method, even if you pass the object by value.
 

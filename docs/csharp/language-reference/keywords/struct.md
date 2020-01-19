@@ -41,12 +41,10 @@ For examples, see [Using Structs](../../programming-guide/classes-and-structs/us
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Keywords](index.md)
-- [Built-In Types Table](built-in-types-table.md)
-- [Types](/dotnet/csharp/language-reference/keywords)
-- [Value Types](value-types.md)
+- [C# reference](../index.md)
+- [C# keywords](index.md)
+- [Built-in types table](built-in-types-table.md)
+- [Value types](../builtin-types/value-types.md)
 - [class](class.md)
 - [interface](interface.md)
-- [Classes and Structs](../../programming-guide/classes-and-structs/index.md)
+- [Classes and structs](../../programming-guide/classes-and-structs/index.md)

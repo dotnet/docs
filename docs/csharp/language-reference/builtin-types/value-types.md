@@ -29,7 +29,7 @@ Value type variables cannot be `null` by default. However, variables of the corr
 
 Each value type has an implicit parameterless constructor that initializes the default value of that type. For information about default values of value types, see [Default values of C# types](../builtin-types/default-values.md).
 
-## Simple types
+## Built-in value types. Simple types
 
 The *simple types* are a set of predefined struct types provided by C# and comprise the following types:
 

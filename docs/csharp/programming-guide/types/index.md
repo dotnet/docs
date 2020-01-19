@@ -107,7 +107,7 @@ You use the [struct](../../language-reference/keywords/struct.md) keyword to cre
 
 [!code-csharp[csProgGuideObjects#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#1)]
 
-For more information about structs, see [Structs](../classes-and-structs/structs.md). For more information about value types in .NET, see [Value Types](../../language-reference/keywords/value-types.md).
+For more information about structs, see [Structs](../classes-and-structs/structs.md). For more information about value types, see [Value types](../../language-reference/builtin-types/value-types.md).
 
 The other category of value types is [enum](../../language-reference/builtin-types/enum.md). An enum defines a set of named integral constants. For example, the <xref:System.IO.FileMode?displayProperty=nameWithType> enumeration in the .NET class library contains a set of named constant integers that specify how a file should be opened. It is defined as shown in the following example:
 
@@ -142,7 +142,7 @@ Reference types fully support inheritance. When you create a class, you can inhe
 
 ## Types of literal values
 
-In C#, literal values receive a type from the compiler. You can specify how a numeric literal should be typed by appending a letter to the end of the number. For example, to specify that the value 4.56 should be treated as a float, append an "f" or "F" after the number: `4.56f`. If no letter is appended, the compiler will infer a type for the literal. For more information about which types can be specified with letter suffixes, see the reference pages for individual types in [Value Types](../../language-reference/keywords/value-types.md).
+In C#, literal values receive a type from the compiler. You can specify how a numeric literal should be typed by appending a letter to the end of the number. For example, to specify that the value 4.56 should be treated as a float, append an "f" or "F" after the number: `4.56f`. If no letter is appended, the compiler will infer a type for the literal. For more information about which types can be specified with letter suffixes, see [Integral numeric types](../../language-reference/builtin-types/integral-numeric-types.md) and [Floating-point numeric types](../../language-reference/builtin-types/floating-point-numeric-types.md).
 
 Because literals are typed, and all types derive ultimately from <xref:System.Object?displayProperty=nameWithType>, you can write and compile code such as the following:
 
@@ -179,7 +179,7 @@ For more information, see the following topics:
 
 - [Using Type dynamic](./using-type-dynamic.md)
 
-- [Value Types](../../language-reference/keywords/value-types.md)
+- [Value Types](../../language-reference/builtin-types/value-types.md)
 
 - [Reference Types](../../language-reference/keywords/reference-types.md)
 

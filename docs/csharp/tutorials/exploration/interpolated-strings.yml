@@ -46,7 +46,7 @@ items:
     ```csharp
     var item = (Name: "eggplant", Price: 1.99m, perPackage: 3);
     var date = DateTime.Now;
-    Console.WriteLine($"On {date}, the price of {item.Name} was {item.Price:C2} per {item.perPackage} items.");
+    Console.WriteLine($"On {date}, the price of {item.Name} was {item.Price} per {item.perPackage} items.");
     ```
 
     Note that the interpolation expression `item.Price` in the interpolated string resolves to the text "1.99" in the result string. That's because, when the type of the expression result is not a string, the result is resolved to a string in the following way:

@@ -83,7 +83,7 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
 {
    // ...
    modelBuilder.ApplyConfiguration(new OrderEntityTypeConfiguration());
-   // Other entities’ configuration ...
+   // Other entities' configuration ...
 }
 
 // At OrderEntityTypeConfiguration.cs from eShopOnContainers
@@ -214,7 +214,7 @@ The DbContext instantiation mode should not be configured as ServiceLifetime.Tra
 
 ## The repository instance lifetime in your IoC container
 
-In a similar way, repository’s lifetime should usually be set as scoped (InstancePerLifetimeScope in Autofac). It could also be transient (InstancePerDependency in Autofac), but your service will be more efficient in regards memory when using the scoped lifetime.
+In a similar way, repository's lifetime should usually be set as scoped (InstancePerLifetimeScope in Autofac). It could also be transient (InstancePerDependency in Autofac), but your service will be more efficient in regards memory when using the scoped lifetime.
 
 ```csharp
 // Registering a Repository in Autofac IoC container
@@ -260,7 +260,7 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
 {
    // ...
    modelBuilder.ApplyConfiguration(new OrderEntityTypeConfiguration());
-   // Other entities’ configuration ...
+   // Other entities' configuration ...
 }
 
 // At OrderEntityTypeConfiguration.cs from eShopOnContainers
@@ -393,7 +393,7 @@ public abstract class BaseSpecification<T> : ISpecification<T>
 }
 ```
 
-The following specification loads a single basket entity given either the basket’s ID or the ID of the buyer to whom the basket belongs. It will [eagerly load](https://docs.microsoft.com/ef/core/querying/related-data) the basket’s Items collection.
+The following specification loads a single basket entity given either the basket's ID or the ID of the buyer to whom the basket belongs. It will [eagerly load](https://docs.microsoft.com/ef/core/querying/related-data) the basket's Items collection.
 
 ```csharp
 // SAMPLE QUERY SPECIFICATION IMPLEMENTATION
@@ -440,7 +440,7 @@ public IEnumerable<T> List(ISpecification<T> spec)
 
 In addition to encapsulating filtering logic, the specification can specify the shape of the data to be returned, including which properties to populate.
 
-Although we don’t recommend to return IQueryable from a repository, it’s perfectly fine to use them within the repository to build up a set of results. You can see this approach used in the List method above, which uses intermediate IQueryable expressions to build up the query’s list of includes before executing the query with the specification’s criteria on the last line.
+Although we don't recommend to return IQueryable from a repository, it's perfectly fine to use them within the repository to build up a set of results. You can see this approach used in the List method above, which uses intermediate IQueryable expressions to build up the query's list of includes before executing the query with the specification's criteria on the last line.
 
 ### Additional resources
 

@@ -95,7 +95,7 @@ It's good to have the event bus defined through an interface so it can be implem
 
 ### Defining an event bus interface
 
-Let’s start with some implementation code for the event bus interface and possible implementations for exploration purposes. The interface should be generic and straightforward, as in the following interface.
+Let's start with some implementation code for the event bus interface and possible implementations for exploration purposes. The interface should be generic and straightforward, as in the following interface.
 
 ```csharp
 public interface IEventBus

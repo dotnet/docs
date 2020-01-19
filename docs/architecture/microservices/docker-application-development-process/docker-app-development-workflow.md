@@ -447,7 +447,7 @@ The above command will create a new container instance from the specified image,
 
 In this case, the command binds the internal port 5000 of the container to port 80 of the host machine. This means that the host is listening on port 80 and forwarding to port 5000 on the container.
 
-The hash shown is the container id and it’s also assigned a random readable name if the `--name` option is not used.
+The hash shown is the container id and it's also assigned a random readable name if the `--name` option is not used.
 
 #### Using Visual Studio
 

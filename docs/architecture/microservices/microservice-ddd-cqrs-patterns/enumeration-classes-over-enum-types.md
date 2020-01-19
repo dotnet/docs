@@ -76,7 +76,7 @@ public class CardType : Enumeration
 
 ## Additional resources
 
-- **Enum’s are evil—update** \
+- **Enum's are evil—update** \
   <https://www.planetgeek.ch/2009/07/01/enums-are-evil/>
 
 - **Daniel Hardman. How Enums Spread Disease — And How To Cure It** \

@@ -27,7 +27,7 @@ gRPC does not provide an equivalent to WS-ReliableMessaging. Retry semantics sho
 
 ## WS-Transaction, WS-Coordination
 
-WCF's implementation of distributed transactions uses Windows’ Microsoft Distributed Transaction Coordinator or MSDTC. It works with resource managers that specifically support it, like SQL Server, MSMQ, or Windows file systems. In the modern microservices world, in part due to the wider range of technologies in use, there is no equivalent as yet. For a discussion of transactions, see [Appendix A](appendix.md).
+WCF's implementation of distributed transactions uses Windows' Microsoft Distributed Transaction Coordinator or MSDTC. It works with resource managers that specifically support it, like SQL Server, MSMQ, or Windows file systems. In the modern microservices world, in part due to the wider range of technologies in use, there is no equivalent as yet. For a discussion of transactions, see [Appendix A](appendix.md).
 
 >[!div class="step-by-step"]
 >[Previous](error-handling.md)

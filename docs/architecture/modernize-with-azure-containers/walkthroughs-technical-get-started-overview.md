@@ -57,7 +57,7 @@ The next figure shows the initial app screenshots.
 
 ![ASP.NET MVC and ASP.NET Web Forms applications (existing/legacy technologies)](./media/image5-2.png)
 
-Dependencies in ASP.NET 4.x or earlier versions (either for MVC or for Web Forms) means that these applications won’t run on .NET Core unless the code is fully rewritten by using ASP.NET Core MVC.
+Dependencies in ASP.NET 4.x or earlier versions (either for MVC or for Web Forms) means that these applications won't run on .NET Core unless the code is fully rewritten by using ASP.NET Core MVC.
 
 ### Scenario 2: WCF service and WinForms client app (3-Tier app)
 
@@ -168,7 +168,7 @@ Azure currently provides a VM named **Windows Server 2016 with Containers**. You
 
 ### Benefits
 
-Although Windows Containers can be deployed to on-premises Windows Server 2016 VMs, when you deploy to Azure, you get an easier way to get started, with ready-to-use Windows Server Container VMs. You also get a common online location that’s accessible to testers, and automatic scalability through Azure virtual machine scale sets.
+Although Windows Containers can be deployed to on-premises Windows Server 2016 VMs, when you deploy to Azure, you get an easier way to get started, with ready-to-use Windows Server Container VMs. You also get a common online location that's accessible to testers, and automatic scalability through Azure virtual machine scale sets.
 
 ### Next steps
 

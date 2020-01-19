@@ -93,7 +93,7 @@ If you want to specify response types for Swagger, you need to use explicit DTO 
 
 **Cons**: As mentioned earlier, when updating the code, it takes some more steps to update the DTO classes.
 
-*Tip based on our experience*: In the queries implemented at the Ordering microservice in eShopOnContainers, we started developing by using dynamic ViewModels as it was very straightforward and agile on the early development stages. But, once the development was stabilized, we chose to refactor the APIs and use static or pre-defined DTOs for the ViewModels, because it is clearer for the microservice’s consumers to know explicit DTO types, used as "contracts".
+*Tip based on our experience*: In the queries implemented at the Ordering microservice in eShopOnContainers, we started developing by using dynamic ViewModels as it was very straightforward and agile on the early development stages. But, once the development was stabilized, we chose to refactor the APIs and use static or pre-defined DTOs for the ViewModels, because it is clearer for the microservice's consumers to know explicit DTO types, used as "contracts".
 
 In the following example, you can see how the query is returning data by using an explicit ViewModel DTO class: the OrderSummary class.
 

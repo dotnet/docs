@@ -14,7 +14,7 @@ Figure 4-3 positions Cloud-Native apps in the application modernization maturity
 
 **Figure 4-3.** Positioning Cloud-Native applications
 
-The Cloud-Native modernization maturity level usually requires new development investments. Moving to the Cloud- Native level typically is driven by business need to modernize applications as much as possible to drastically improve scale in large applications by creating autonomous subsystems (microservices) that can be deployed and scale independently from other areas of the application while lowering costs in the long term and increase evolution agility of those autonomous app’s parts that provide significant compete advantages.
+The Cloud-Native modernization maturity level usually requires new development investments. Moving to the Cloud- Native level typically is driven by business need to modernize applications as much as possible to drastically improve scale in large applications by creating autonomous subsystems (microservices) that can be deployed and scale independently from other areas of the application while lowering costs in the long term and increase evolution agility of those autonomous app's parts that provide significant compete advantages.
 
 The main pillars of Cloud-Native applications are based on microservices architecture approaches, which can evolve with agility and scale to limits that would be difficult to achieve in a monolithic architecture, deployed to either on-premises or cloud environment.
 

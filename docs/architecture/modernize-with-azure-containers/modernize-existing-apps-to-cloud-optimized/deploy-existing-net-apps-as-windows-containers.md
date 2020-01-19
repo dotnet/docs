@@ -7,7 +7,7 @@ ms.date: 04/29/2018
 
 Deployments that are based on Windows Containers are applicable to Cloud-Optimized applications and Cloud-Native applications.
 
-However, in this guide and especially in the following sections, it mostly focuses on using Windows Containers for *Cloud-Optimized* applications where you don’t need to rearchitect your application.
+However, in this guide and especially in the following sections, it mostly focuses on using Windows Containers for *Cloud-Optimized* applications where you don't need to rearchitect your application.
 
 ## What are containers? (Linux or Windows)
 
@@ -129,8 +129,8 @@ Running a container on Windows with or without Hyper-V isolation is a run-time d
 
 ## The container ecosystem in Azure
 
-In previous sections, it’s been explained what the benefits of Docker containers are as well as details on the specific container images for .NET applications. All that generic information is fundamental in order to develop or containerize an application.
-However, when thinking about the production deployment environment or even QA and Dev/Test environments, Microsoft Azure provides an open and broad variety of choices, a full container ecosystem in the cloud (shown in the diagram below). Depending on your specific application’s needs, you should choose one or another Azure product.
+In previous sections, it's been explained what the benefits of Docker containers are as well as details on the specific container images for .NET applications. All that generic information is fundamental in order to develop or containerize an application.
+However, when thinking about the production deployment environment or even QA and Dev/Test environments, Microsoft Azure provides an open and broad variety of choices, a full container ecosystem in the cloud (shown in the diagram below). Depending on your specific application's needs, you should choose one or another Azure product.
 
 ![Diagram of the container ecosystem in Azure.](./media/deploy-existing-net-apps-as-windows-containers/azure-container-ecosystem.png)
 

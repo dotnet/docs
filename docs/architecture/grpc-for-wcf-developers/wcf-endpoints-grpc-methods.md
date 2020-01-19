@@ -26,7 +26,7 @@ Chapter 3 showed that Protobuf message definitions are used to generate data cla
 
 ## OperationContract properties
 
-The [OperationContract](xref:System.ServiceModel.OperationContractAttribute) attribute has properties to control or refine how it works. gRPC methods don’t offer this type of control. The following table sets out those `OperationContract` properties and how the functionality they specify is (or isn’t) dealt with in gRPC:
+The [OperationContract](xref:System.ServiceModel.OperationContractAttribute) attribute has properties to control or refine how it works. gRPC methods don't offer this type of control. The following table sets out those `OperationContract` properties and how the functionality they specify is (or isn't) dealt with in gRPC:
 
 | `OperationContract` property | gRPC                                             |
 | ---------------------------- | ------------------------------------------------ |

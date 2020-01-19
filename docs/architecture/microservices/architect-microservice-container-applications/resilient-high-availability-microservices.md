@@ -25,8 +25,8 @@ In the [Implementing health checks in ASP.NET Core services](../implement-resili
 
 You also have the option of using an excellent open-source library called Beat Pulse, available on [GitHub](https://github.com/Xabaril/BeatPulse) and as a [NuGet package](https://www.nuget.org/packages/BeatPulse/). This library also does health checks, with a twist, it handles two types of checks:
 
-- **Liveness**: Checks if the microservice is alive, that is, if it’s able to accept requests and respond.
-- **Readiness**: Checks if the microservice's dependencies (Database, queue services, etc.) are themselves ready, so the microservice can do what it’s supposed to do.
+- **Liveness**: Checks if the microservice is alive, that is, if it's able to accept requests and respond.
+- **Readiness**: Checks if the microservice's dependencies (Database, queue services, etc.) are themselves ready, so the microservice can do what it's supposed to do.
 
 ### Using diagnostics and logs event streams
 

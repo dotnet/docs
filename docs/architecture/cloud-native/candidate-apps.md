@@ -78,7 +78,7 @@ With the introduction behind, we now dive into a much more detailed look at clou
 
 - [What is Infrastructure as Code](https://docs.microsoft.com/azure/devops/learn/what-is-infrastructure-as-code)
 
-- [Uber Engineering’s Micro Deploy: Deploying Daily with Confidence](https://eng.uber.com/micro-deploy/)
+- [Uber Engineering's Micro Deploy: Deploying Daily with Confidence](https://eng.uber.com/micro-deploy/)
 
 - [How Netflix Deploys Code](https://www.infoq.com/news/2013/06/netflix/)
 

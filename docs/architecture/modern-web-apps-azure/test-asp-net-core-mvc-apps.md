@@ -140,7 +140,7 @@ public IActionResult GetImage(int id)
 
 The \_logger and \_imageService are both injected as dependencies. Now you can test that the same id that is passed to the action method is passed to the \_imageService, and that the resulting bytes are returned as part of the FileResult. You can also test that error logging is happening as expected, and that a NotFound result is returned if the image is missing, assuming this is important application behavior (that is, not just temporary code the developer added to diagnose an issue). The actual file logic has moved into a separate implementation service, and has been augmented to return an application-specific exception for the case of a missing file. You can test this implementation independently, using an integration test.
 
-In most cases, you’ll want to use global exception handlers in your controllers, so the amount of logic in them should be minimal and probably not worth unit testing. You should do most of your testing of controller actions using functional tests and the `TestServer` class described below.
+In most cases, you'll want to use global exception handlers in your controllers, so the amount of logic in them should be minimal and probably not worth unit testing. You should do most of your testing of controller actions using functional tests and the `TestServer` class described below.
 
 ## Integration testing ASP.NET Core apps
 

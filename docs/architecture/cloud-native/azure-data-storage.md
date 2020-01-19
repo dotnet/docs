@@ -113,7 +113,7 @@ Azure Cosmos DB is a fully managed, globally distributed NoSQL database service 
 
 **Figure 5-13**: Overview of Cosmos DB
 
-Note in the Figure 5-13 how Cosmos DB is a robust and highly versatile database service with many built-in cloud-native capabilities. In this section, we’ll take a closer look at them.
+Note in the Figure 5-13 how Cosmos DB is a robust and highly versatile database service with many built-in cloud-native capabilities. In this section, we'll take a closer look at them.
 
 ### Global Support
 
@@ -181,7 +181,7 @@ To partition the container, items are divided into distinct subsets called [log
 
 **Figure 5-18**: Cosmos DB partitioning mechanics
 
-Note in Figure 5-18 how each item includes a partition key of either ‘city’ or ‘airport’. This partition key determines the item’s logical partition. Each city code is assigned to a logical partition in the container on the left-side and those with an airport code to the container on the right. Combining the partition key value with an item's ID value creates the item's index, which uniquely identifies the item.
+Note in Figure 5-18 how each item includes a partition key of either `city` or `airport`. This partition key determines the item's logical partition. Each city code is assigned to a logical partition in the container on the left-side and those with an airport code to the container on the right. Combining the partition key value with an item's ID value creates the item's index, which uniquely identifies the item.
 
 Internally, Cosmos DB automatically manages the placement of [logical partitions](https://docs.microsoft.com/azure/cosmos-db/partition-data) on [physical partitions](https://docs.microsoft.com/azure/cosmos-db/partition-data) to efficiently satisfy the scalability and performance needs of the container. As the throughput and storage requirements of an application increase, Azure Cosmos DB moves logical partitions to redistribute the load across a greater number of servers. These redistribution operations are managed by Cosmos DB and are performed without any interruption or downtime.
 

@@ -261,6 +261,12 @@ the following changes to the declaration of the `name` field in repo.cs:
 public string Name { get; set; }
 ```
 
+To use `[JsonPropertyName]` attribute, you will need to add the <xref:System.Text.Json.Serialization> namespace to the `using` statements:
+
+```csharp
+using System.Text.Json.Serialization;
+```
+
 This change means you need to change the code that writes the name of each repository in program.cs:
 
 ```csharp

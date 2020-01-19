@@ -91,7 +91,7 @@ You can then check the status using the URI `http://localhost:5103/failing`, as 
 
 ![Screenshot of checking the status of failing middleware simulation.](./media/implement-circuit-breaker-pattern/failing-middleware-simulation.png)
 
-**Figure 8-5**. Checking the state of the “Failing” ASP.NET middleware – In this case, disabled.
+**Figure 8-5**. Checking the state of the "Failing" ASP.NET middleware – In this case, disabled.
 
 At this point, the Basket microservice responds with status code 500 whenever you call invoke it.
 

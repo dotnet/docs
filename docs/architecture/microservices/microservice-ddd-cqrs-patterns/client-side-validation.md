@@ -45,7 +45,7 @@ The implementation of client-side validation depends on what kind of client appl
 
 In summary, these are the most important concepts in regards to validation:
 
-- Entities and aggregates should enforce their own consistency and be "always valid”. Aggregate roots are responsible for multi-entity consistency within the same aggregate.
+- Entities and aggregates should enforce their own consistency and be "always valid". Aggregate roots are responsible for multi-entity consistency within the same aggregate.
 
 - If you think that an entity needs to enter an invalid state, consider using a different object model—for example, using a temporary DTO until you create the final domain entity.
 

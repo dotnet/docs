@@ -238,7 +238,7 @@ Note that using the singleton lifetime for the repository could cause you seriou
 
 ## Table mapping
 
-Table mapping identifies the table data to be queried from and saved to the database. Previously you saw how domain entities (for example, a product or order domain) can be used to generate a related database schema. EF is strongly designed around the concept of *conventions*. Conventions address questions like “What will the name of a table be?” or “What property is the primary key?” Conventions are typically based on conventional names—for example, it is typical for the primary key to be a property that ends with Id.
+Table mapping identifies the table data to be queried from and saved to the database. Previously you saw how domain entities (for example, a product or order domain) can be used to generate a related database schema. EF is strongly designed around the concept of *conventions*. Conventions address questions like "What will the name of a table be?" or "What property is the primary key?" Conventions are typically based on conventional names—for example, it is typical for the primary key to be a property that ends with Id.
 
 By convention, each entity will be set up to map to a table with the same name as the `DbSet<TEntity>` property that exposes the entity on the derived context. If no `DbSet<TEntity>` value is provided for the given entity, the class name is used.
 

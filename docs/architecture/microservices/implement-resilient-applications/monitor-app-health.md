@@ -38,9 +38,9 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-In the previous code, the `services.AddHealthChecks()` method configures a basic HTTP check that returns a status code **200** with “Healthy”.  Further, the `AddCheck()` extension method configures a custom `SqlConnectionHealthCheck` that checks the related SQL Database's health.
+In the previous code, the `services.AddHealthChecks()` method configures a basic HTTP check that returns a status code **200** with "Healthy".  Further, the `AddCheck()` extension method configures a custom `SqlConnectionHealthCheck` that checks the related SQL Database's health.
 
-The `AddCheck()` method adds a new health check with a specified name and the implementation of type `IHealthCheck`. You can add multiple Health Checks using AddCheck method, so a microservice won't provide a “healthy” status until all its checks are healthy.
+The `AddCheck()` method adds a new health check with a specified name and the implementation of type `IHealthCheck`. You can add multiple Health Checks using AddCheck method, so a microservice won't provide a "healthy" status until all its checks are healthy.
 
 `SqlConnectionHealthCheck` is a custom class that implements `IHealthCheck`, which takes a connection string as a constructor parameter and executes a simple query to check if the connection to the SQL database is successful. It returns `HealthCheckResult.Healthy()` if the query was executed successfully and a `FailureStatus` with the actual exception when it fails.
 
@@ -94,7 +94,7 @@ public class SqlConnectionHealthCheck : IHealthCheck
 
 Note that in the previous code, `Select 1` is the query used to check the Health of the database. To monitor the availability of your microservices, orchestrators like Kubernetes and Service Fabric periodically perform health checks by sending requests to test the microservices. It's important to keep your database queries efficient so that these operations are quick and don't result in a higher utilization of resources.
 
-Finally, create a middleware that responds to the url path “/hc”:
+Finally, create a middleware that responds to the url path "/hc":
 
 ```csharp
 // Startup.cs from .NET Core 2.2 Web Api sample
@@ -169,7 +169,7 @@ public static IServiceCollection AddCustomHealthCheck(this IServiceCollection se
 }
 ```
 
-Finally, we add the HealthCheck middleware to listen to “/hc” endpoint:
+Finally, we add the HealthCheck middleware to listen to "/hc" endpoint:
 
 ```csharp
 // HealthCheck middleware
@@ -240,7 +240,7 @@ public void ConfigureServices(IServiceCollection services)
 public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 {
     //…
-    app.UseHealthChecksUI(config=> config.UIPath = “/hc-ui”);
+    app.UseHealthChecksUI(config=> config.UIPath = "/hc-ui");
     //…
 }
 ```

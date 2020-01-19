@@ -11,7 +11,7 @@ Your goal is to create a single cohesive domain model for each business microser
 
 ## The Domain Entity pattern
 
-Entities represent domain objects and are primarily defined by their identity, continuity, and persistence over time, and not only by the attributes that comprise them. As Eric Evans says, “an object primarily defined by its identity is called an Entity.” Entities are very important in the domain model, since they are the base for a model. Therefore, you should identify and design them carefully.
+Entities represent domain objects and are primarily defined by their identity, continuity, and persistence over time, and not only by the attributes that comprise them. As Eric Evans says, "an object primarily defined by its identity is called an Entity." Entities are very important in the domain model, since they are the base for a model. Therefore, you should identify and design them carefully.
 
 *An entity's identity can cross multiple microservices or Bounded Contexts.*
 
@@ -60,7 +60,7 @@ Some people say that the anemic domain model is an anti-pattern. It really depen
 
 ### The Value Object pattern
 
-As Eric Evans has noted, “Many objects do not have conceptual identity. These objects describe certain characteristics of a thing.”
+As Eric Evans has noted, "Many objects do not have conceptual identity. These objects describe certain characteristics of a thing."
 
 An entity requires an identity, but there are many objects in a system that do not, like the Value Object pattern. A value object is an object with no conceptual identity that describes a domain aspect. These are objects that you instantiate to represent design elements that only concern you temporarily. You care about *what* they are, not *who* they are. Examples include numbers and strings, but can also be higher-level concepts like groups of attributes.
 

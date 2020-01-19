@@ -124,7 +124,7 @@ var brandsWithItems = await _context.CatalogBrands
 You can include multiple relationships, and you can also include sub-relationships using ThenInclude. EF Core will execute a single query to retrieve the resulting set of entities. Alternately you can include navigation properties of navigation properties by passing a '.'-separated string to the `.Include()` extension method, like so:
 
 ```csharp
-    .Include(“Items.Products”)
+    .Include("Items.Products")
 ```
 
 In addition to encapsulating filtering logic, a specification can specify the shape of the data to be returned, including which properties to populate. The eShopOnWeb sample includes several specifications that demonstrate encapsulating eager loading information within the specification. You can see how the specification is used as part of a query here:

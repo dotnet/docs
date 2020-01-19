@@ -13,7 +13,7 @@ You could just provision an Azure virtual machine and install your database of c
 
 Instead, a fully managed [Database as a Service (DBaaS)](https://www.stratoscale.com/blog/dbaas/what-is-database-as-a-service/) is a better option. You get many built-in features while the hosting, maintenance, and licensing are managed by Microsoft. Azure features different kinds of fully managed data storage options, each with specific benefits. They all support just-in-time capacity and a pay-as-you-go model.
 
-We'll next look at DBaaS options available in Azure. You'll see how Microsoft continues is commitment to keeping Azure an “open platform,” offering managed support for many open-source relational and NoSQL databases and making key contributions to the various open-source foundations as an active member.
+We'll next look at DBaaS options available in Azure. You'll see how Microsoft continues is commitment to keeping Azure an "open platform", offering managed support for many open-source relational and NoSQL databases and making key contributions to the various open-source foundations as an active member.
 
 ## Azure SQL Database
 
@@ -63,7 +63,7 @@ In addition to the traditional Microsoft SQL Server stack, Azure also features m
 
 - Enterprise-grade security and compliance.
 
-These built-in PaaS features are important for organizations who have hundreds of “tactical" (non-strategic) databases in their data centers, but don't have the resources to perform patching, backup, security, and performance monitoring.
+These built-in PaaS features are important for organizations who have hundreds of "tactical" (non-strategic) databases in their data centers, but don't have the resources to perform patching, backup, security, and performance monitoring.
 
 Additionally, the [Azure Data Migration Service](https://azure.microsoft.com/services/database-migration/) can migrate data from multiple database sources to Azure Data platforms with minimal downtime. The service generates assessment reports and provides recommendations to guide you through the changes required to performing a migration, both small or large.
 
@@ -93,7 +93,7 @@ MariaDB has a strong following and is used by many large enterprises. While Orac
 
 ## Azure Database for PostgreSQL
 
-[PostgreSQL](https://www.postgresql.org/) is another popular, open-source relational database with over 30 years of active development. It's a general purpose and object-relational database management system. Its licensing is considered to be “liberal” and the product is free to use, modify, and distribute in any form. Many large enterprises including Apple, Red Hat, and Fujitsu have built products using PostgreSQL.
+[PostgreSQL](https://www.postgresql.org/) is another popular, open-source relational database with over 30 years of active development. It's a general purpose and object-relational database management system. Its licensing is considered to be "liberal" and the product is free to use, modify, and distribute in any form. Many large enterprises including Apple, Red Hat, and Fujitsu have built products using PostgreSQL.
 
 [Azure Database for PostgreSQL](https://azure.microsoft.com/services/postgresql/) is a fully managed relational database service, based on the open-source Postgres database engine. It can handle mission-critical workloads with predictable performance, security, high availability, and dynamic scalability. It supports several open-source frameworks and languages—including C++, Java, Python, Node, C\#, and PHP. It enables [migration](https://datamigration.microsoft.com/scenario/postgresql-to-azurepostgresql?step=1) of PostgreSQL databases through a command-line interface or the [Azure Data Migration Service](https://azure.microsoft.com/services/database-migration/).
 

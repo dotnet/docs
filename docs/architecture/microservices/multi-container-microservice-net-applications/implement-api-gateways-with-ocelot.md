@@ -21,7 +21,7 @@ The following architecture diagram shows how API Gateways are implemented with O
 
 **Figure 6-28**. eShopOnContainers architecture with API Gateways
 
-That diagram shows how the whole application is deployed into a single Docker host or development PC with “Docker for Windows” or “Docker for Mac”. However, deploying into any orchestrator would be pretty similar but any container in the diagram could be scaled-out in the orchestrator.
+That diagram shows how the whole application is deployed into a single Docker host or development PC with "Docker for Windows" or "Docker for Mac". However, deploying into any orchestrator would be pretty similar but any container in the diagram could be scaled-out in the orchestrator.
 
 In addition, the infrastructure assets such as databases, cache, and message brokers should be offloaded from the orchestrator and deployed into high available systems for infrastructure, like Azure SQL Database, Azure Cosmos DB, Azure Redis, Azure Service Bus, or any HA clustering solution on-premises.
 
@@ -123,7 +123,7 @@ docker-compose run --service-ports catalog.api
 
 This command only runs the catalog.api service container plus dependencies that are specified in the docker-compose.yml. In this case, the SQL Server container and RabbitMQ container.
 
-Then, you can directly access the Catalog microservice and see its methods through the Swagger UI accessing directly through that “external” port, in this case `http://localhost:5101/swagger`:
+Then, you can directly access the Catalog microservice and see its methods through the Swagger UI accessing directly through that "external" port, in this case `http://localhost:5101/swagger`:
 
 ![Screenshot of Swagger UI showing the Catalog.API REST API.](./media/implement-api-gateways-with-ocelot/test-catalog-microservice.png)
 
@@ -279,7 +279,7 @@ In eShopOnContainers we're using a single Docker container image with the Ocelot
 
 **Figure 6-33**. Re-using a single Ocelot Docker image across multiple API Gateway types
 
-In eShopOnContainers, the “Generic Ocelot API Gateway Docker Image” is created with the project named 'OcelotApiGw' and the image name “eshop/ocelotapigw” that is specified in the docker-compose.yml file. Then, when deploying to Docker, there will be four API-Gateway containers created from that same Docker image, as shown in the following extract from the docker-compose.yml file.
+In eShopOnContainers, the "Generic Ocelot API Gateway Docker Image" is created with the project named 'OcelotApiGw' and the image name "eshop/ocelotapigw" that is specified in the docker-compose.yml file. Then, when deploying to Docker, there will be four API-Gateway containers created from that same Docker image, as shown in the following extract from the docker-compose.yml file.
 
 ```yml
   mobileshoppingapigw:
@@ -355,7 +355,7 @@ Because of that previous code, and as shown in the Visual Studio Explorer below,
 
 By splitting the API Gateway into multiple API Gateways, different development teams focusing on different subsets of microservices can manage their own API Gateways by using independent Ocelot configuration files. Plus, at the same time they can reuse the same Ocelot Docker image.
 
-Now, if you run eShopOnContainers with the API Gateways (included by default in VS when opening eShopOnContainers-ServicesAndWebApps.sln solution or if running “docker-compose up”), the following sample routes will be performed.
+Now, if you run eShopOnContainers with the API Gateways (included by default in VS when opening eShopOnContainers-ServicesAndWebApps.sln solution or if running "docker-compose up"), the following sample routes will be performed.
 
 For instance, when visiting the upstream URL `http://localhost:5202/api/v1/c/catalog/items/2/` served by the webshoppingapigw API Gateway, you get the same result from the internal Downstream URL `http://catalog.api/api/v1/2` within the Docker host, as in the following browser.
 
@@ -369,7 +369,7 @@ Because of testing or debugging reasons, if you wanted to directly access to the
 
 **Figure 6-36**. Direct access to a microservice for testing purposes
 
-But the application is configured so it accesses all the microservices through the API Gateways, not though the direct port “shortcuts”.
+But the application is configured so it accesses all the microservices through the API Gateways, not though the direct port "shortcuts".
 
 ### The Gateway aggregation pattern in eShopOnContainers
 
@@ -383,7 +383,7 @@ In the following diagram, you can also see how the aggregator services work with
 
 **Figure 6-37**. eShopOnContainers architecture with aggregator services
 
-Zooming in further, on the “Shopping” business area in the following image, you can see that chattiness between the client apps and the microservices is reduced when using the aggregator services in the API Gateways.
+Zooming in further, on the "Shopping" business area in the following image, you can see that chattiness between the client apps and the microservices is reduced when using the aggregator services in the API Gateways.
 
 ![Diagram showing eShopOnContainers architecture zoom in.](./media/implement-api-gateways-with-ocelot/zoom-in-vision-aggregator-services.png)
 
@@ -391,7 +391,7 @@ Zooming in further, on the “Shopping” business area in the following image, 
 
 You can notice how when the diagram shows the possible requests coming from the API Gateways it can get pretty complex. Although you can see how the arrows in blue would be simplified, from a client apps perspective, when using the aggregator pattern by reducing chattiness and latency in the communication, ultimately significantly improving the user experience for the remote apps (mobile and SPA apps), especially.
 
-In the case of the “Marketing” business area and microservices, it is a very simple use case so there was no need to use aggregators, but it could also be possible, if needed.
+In the case of the "Marketing" business area and microservices, it is a very simple use case so there was no need to use aggregators, but it could also be possible, if needed.
 
 ### Authentication and authorization in Ocelot API Gateways
 
@@ -482,7 +482,7 @@ namespace Microsoft.eShopOnContainers.Services.Basket.API.Controllers
 }
 ```
 
-The ValidAudiences such as “basket” are correlated with the audience defined in each microservice with `AddJwtBearer()` at the ConfigureServices() of the Startup class, such as in the code below.
+The ValidAudiences such as "basket" are correlated with the audience defined in each microservice with `AddJwtBearer()` at the ConfigureServices() of the Startup class, such as in the code below.
 
 ```csharp
 // prevent from mapping "sub" claim to nameidentifier.
@@ -527,7 +527,7 @@ As a definition, an Ingress is a collection of rules that allow inbound connecti
 
 In eShopOnContainers, when developing locally and using just your development machine as the Docker host, you are not using any ingress but only the multiple API Gateways.
 
-However, when targeting a “production” environment based on Kubernetes, eShopOnContainers is using an ingress in front of the API gateways. That way, the clients still call the same base URL but the requests are routed to multiple API Gateways or BFF.
+However, when targeting a "production" environment based on Kubernetes, eShopOnContainers is using an ingress in front of the API gateways. That way, the clients still call the same base URL but the requests are routed to multiple API Gateways or BFF.
 
 Note that API Gateways are front-ends or façades surfacing only the services but not the web applications that are usually out of their scope. In addition, the API Gateways might hide certain internal microservices.
 
@@ -549,9 +549,9 @@ A Kubernetes Ingress acts as a reverse proxy for all traffic to the app, includi
 - `/mobileshoppingapigw` for the mobile BFF and shopping business processes
 - `/mobilemarketingapigw` for the mobile BFF and marketing business processes
 
-When deploying to Kubernetes, each Ocelot API Gateway is using a different “configuration.json” file for each _pod_ running the API Gateways. Those “configuration.json” files are provided by mounting (originally with the deploy.ps1 script) a volume created based on a Kubernetes _config map_ named `ocelot`. Each container mounts its related configuration file in the container's folder named `/app/configuration`.
+When deploying to Kubernetes, each Ocelot API Gateway is using a different *configuration.json* file for each _pod_ running the API Gateways. Those *configuration.json* files are provided by mounting (originally with the deploy.ps1 script) a volume created based on a Kubernetes _config map_ named `ocelot`. Each container mounts its related configuration file in the container's folder named `/app/configuration`.
 
-In the source code files of eShopOnContainers, the original “configuration.json” files can be found within the `k8s/ocelot/` folder. There's one file for each BFF/APIGateway.
+In the source code files of eShopOnContainers, the original *configuration.json* files can be found within the `k8s/ocelot/` folder. There's one file for each BFF/APIGateway.
 
 ## Additional cross-cutting features in an Ocelot API Gateway
 

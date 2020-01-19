@@ -113,7 +113,7 @@ Each Typed Client can have its own configured handler lifetime value. Set the li
 
 ### Implement your Typed Client classes that use the injected and configured HttpClient
 
-As a previous step, you need to have your Typed Client classes defined, such as the classes in the sample code, like 'BasketService', 'CatalogService', 'OrderingService', etc. – A Typed Client is a class that accepts an `HttpClient` object (injected through its constructor) and uses it to call some remote HTTP service. For example:
+As a previous step, you need to have your Typed Client classes defined, such as the classes in the sample code, like `BasketService`, `CatalogService`, `OrderingService`, etc. – A Typed Client is a class that accepts an `HttpClient` object (injected through its constructor) and uses it to call some remote HTTP service. For example:
 
 ```csharp
 public class CatalogService : ICatalogService

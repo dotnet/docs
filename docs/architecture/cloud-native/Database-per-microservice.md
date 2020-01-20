@@ -100,7 +100,7 @@ Saga patterns are typically choreographed as a series of related events, or orch
 
 ## High volume data
 
-Large cloud-native applications often support high-volume data requirements. In these scenarios, traditional data storage techniques can cause bottlenecks. For complex systems that deploy on a large scale, both CQRS and Event Sourcing may improve application performance.  
+Large cloud-native applications often support high-volume data requirements. In these scenarios, traditional data storage techniques can cause bottlenecks. For complex systems that deploy on a large scale, both Command and Query Responsibility Segregation (CQRS) and Event Sourcing may improve application performance.  
 
 ### CQRS
 

@@ -34,7 +34,7 @@ To write JSON to a string or to a file, call the <xref:System.Text.Json.JsonSeri
 
 The following example creates JSON as a string:
 
-[!code-csharp[](~/samples/snippets/core/system-text-json/csharp/RoundtripToString.cs?name=SnippetSerialize)]
+:::code language="csharp" source="~/samples/snippets/core/system-text-json/csharp/RoundtripToString.cs" id="SnippetSerialize":::
 
 The following example uses synchronous code to create a JSON file:
 

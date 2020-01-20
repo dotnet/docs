@@ -1,18 +1,18 @@
 ---
-title: Common client side web technologies
-description: Architect Modern Web Applications with ASP.NET Core and Azure | Common client side web technologies
+title: Common client-side web technologies
+description: Architect Modern Web Applications with ASP.NET Core and Azure | Common client-side web technologies
 author: ardalis
 ms.author: wiwagn
 ms.date: 12/04/2019
 ---
-# Common client side web technologies
+# Common client-side web technologies
 
 > "Websites should look good from the inside and out."  
 > _- Paul Cookson_
 
 ASP.NET Core applications are web applications and they typically rely on client-side web technologies like HTML, CSS, and JavaScript. By separating the content of the page (the HTML) from its layout and styling (the CSS), and its behavior (via JavaScript), complex web apps can leverage the Separation of Concerns principle. Future changes to the structure, design, or behavior of the application can be made more easily when these concerns are not intertwined.
 
-While HTML and CSS are relatively stable, JavaScript, by means of the application frameworks and utilities developers work with to build web-based applications, is evolving at breakneck speed. This chapter looks at a few ways JavaScript is used by web developers as part of developing applications, as provides a high-level overview of the Angular and React client side libraries.
+While HTML and CSS are relatively stable, JavaScript, by means of the application frameworks and utilities developers work with to build web-based applications, is evolving at breakneck speed. This chapter looks at a few ways JavaScript is used by web developers as part of developing applications, as provides a high-level overview of the Angular and React client-side libraries.
 
 > [!NOTE]
 > Blazor provides an alternative to JavaScript frameworks for building rich, interactive client user interfaces. Client-side Blazor support is still in preview, so for now it's out of scope for this chapter.
@@ -33,13 +33,13 @@ It's best to keep styles in their own separate stylesheet files, and to use sele
 
 ### CSS preprocessors
 
-CSS stylesheets lack support for conditional logic, variables, and other programming language features. Thus, large stylesheets often include a lot of repetition, as the same color, font, or other setting is applied to many different variations of HTML elements and CSS classes. CSS preprocessors can help your stylesheets follow the [DRY principle](https://deviq.com/don-t-repeat-yourself/) by adding support for variables and logic.
+CSS stylesheets lack support for conditional logic, variables, and other programming language features. Thus, large stylesheets often include quite a bit of repetition, as the same color, font, or other setting is applied to many different variations of HTML elements and CSS classes. CSS preprocessors can help your stylesheets follow the [DRY principle](https://deviq.com/don-t-repeat-yourself/) by adding support for variables and logic.
 
 The most popular CSS preprocessors are Sass and LESS. Both extend CSS and are backward compatible with it, meaning that a plain CSS file is a valid Sass or LESS file. Sass is Ruby-based and LESS is JavaScript based, and both typically run as part of your local development process. Both have command line tools available, as well as built-in support in Visual Studio for running them using Gulp or Grunt tasks.
 
 ## JavaScript
 
-JavaScript is a dynamic, interpreted programming language that has been standardized in the ECMAScript language specification. It is the programming language of the web. Like CSS, JavaScript can be defined as attributes within HTML elements, as blocks of script within a page, or in separate files. Just like CSS, it's generally recommended to organize JavaScript into separate files, keeping it separated as much as possible from the HTML found on individual web pages or application views.
+JavaScript is a dynamic, interpreted programming language that has been standardized in the ECMAScript language specification. It is the programming language of the web. Like CSS, JavaScript can be defined as attributes within HTML elements, as blocks of script within a page, or in separate files. Just like CSS, it's recommended to organize JavaScript into separate files, keeping it separated as much as possible from the HTML found on individual web pages or application views.
 
 When working with JavaScript in your web application, there are a few tasks that you'll commonly need to perform:
 
@@ -57,7 +57,7 @@ You can perform all of these tasks with JavaScript alone, but many libraries exi
 
 Although ancient by JavaScript framework standards, jQuery continues to be a very commonly used library for working with HTML/CSS and building applications that make client-side calls to web APIs. However, jQuery operates at the level of the browser document object model (DOM), and by default offers only an imperative, rather than declarative, model.
 
-For example, imagine that if a textbox's value exceeds 10, an element on the page should be made visible. In jQuery, this would typically be implemented by writing an event handler with code that would inspect the textbox's value and set the visibility of the target element based on that value. This is an imperative, code-based approach. Another framework might instead use databinding to bind the visibility of the element to the value of the textbox declaratively. This would not require writing any code, but instead only requires decorating the elements involved with data binding attributes. As client side behaviors grow more complex, data binding approaches frequently result in simpler solutions with less code and conditional complexity.
+For example, imagine that if a textbox's value exceeds 10, an element on the page should be made visible. In jQuery, this would typically be implemented by writing an event handler with code that would inspect the textbox's value and set the visibility of the target element based on that value. This is an imperative, code-based approach. Another framework might instead use databinding to bind the visibility of the element to the value of the textbox declaratively. This would not require writing any code, but instead only requires decorating the elements involved with data binding attributes. As client-side behaviors grow more complex, data binding approaches frequently result in simpler solutions with less code and conditional complexity.
 
 ### jQuery vs a SPA Framework
 
@@ -151,7 +151,7 @@ var app = new Vue({
 
 This is enough to render "Hello Vue!" on the page. Note, however, that Vue isn't simply rendering the message to the div once. It supports databinding and dynamic updates such that if the value of `message` changes, the value in the `<div>` is immediately updated to reflect it.
 
-Of course, this only scratches the surface of what Vue is capable of. It's gained a great deal of popularity in the last several years and has a lot of community support. There's a [huge and growing list of supporting components and libraries](https://github.com/vuejs/awesome-vue#redux) that work with Vue to extend it as well. If you're looking to add client-side behavior to your web application or considering building a full SPA, Vue is worth investigating.
+Of course, this only scratches the surface of what Vue is capable of. It's gained a great deal of popularity in the last several years and has a large community. There's a [huge and growing list of supporting components and libraries](https://github.com/vuejs/awesome-vue#redux) that work with Vue to extend it as well. If you're looking to add client-side behavior to your web application or considering building a full SPA, Vue is worth investigating.
 
 ### Choosing a SPA Framework
 
@@ -163,9 +163,9 @@ When considering which JavaScript framework will work best to support your SPA, 
 
 - Does it (or a companion library) include all of the features your app requires?
 
-- Is it well-documented?
+- Is it well documented?
 
-- How active is its community? Are new projects building built with it?
+- How active is its community? Are new projects built with it?
 
 - How active is its core team? Are issues being resolved and new versions shipped regularly?
 

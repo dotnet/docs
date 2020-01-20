@@ -38,7 +38,7 @@ The theorem states that distributed data systems will offer a trade-off between 
 
 - *Availability.* Every node returns an immediate response, even if that response isn't the most recent data. If you query an "available system" for an item that is updating, you'll get the best possible answer the service can provide at that moment.
 
-- *Partition Tolerance.* Guarantees the system will continue to operate even if a replicated data node fails or loses connectivity with other replicated data nodes.
+- *Partition Tolerance.* Guarantees the system continues to operate even if a replicated data node fails or loses connectivity with other replicated data nodes.
 
 Relational databases typically provide consistency and availability, but not partition tolerance. They're typically provisioned to a single server and scale vertically by adding more resources to the machine.
 

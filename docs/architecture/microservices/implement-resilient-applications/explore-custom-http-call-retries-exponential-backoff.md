@@ -75,7 +75,7 @@ public struct ExponentialBackoff
         {
             m_pow = m_pow << 1; // m_pow = Pow(2, m_retries - 1)
         }
-        int delay = Math.Min(m_delayMilliseconds * (m_pow - 1) / 2,
+        int delay = (int)Math.Min((long)m_delayMilliseconds * (m_pow - 1) / 2,
             m_maxDelayMilliseconds);
         return Task.Delay(delay);
     }

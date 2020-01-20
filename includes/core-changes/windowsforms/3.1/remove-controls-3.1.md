@@ -53,7 +53,7 @@ Each removed control has a recommended replacement control. Refer to the followi
 | ContextMenu | ContextMenuStrip | |
 | Menu | ToolStripDropDown, ToolstripDropDownMenu | MenuItemCollection |
 | MainMenu | MenuStrip | |
-| MenuItem | ToolstripMenuItem | |
+| MenuItem | ToolStripMenuItem | |
 
 #### Category
 

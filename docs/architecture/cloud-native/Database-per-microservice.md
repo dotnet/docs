@@ -68,7 +68,7 @@ Instead, a widely accepted pattern for removing cross-service dependencies is th
 
 ![Materialized view pattern](./media/materialized-view-pattern.png)
 
-**Figure5-4**. Materialized View Pattern
+**Figure 5-4**. Materialized View Pattern
 
 With this pattern, you place a local data table (known as a *read model*) in the shopping basket service. This table contains a denormalized copy of the data needed from the product and pricing microservices. Copying the data directly into the shopping basket microservice eliminates the need for expensive cross-service calls. With the data local to the service, you improve the service's response time and reliability. Additionally, having its own copy of the data makes the shopping basket service more resilient. If the catalog service should become unavailable, it wouldn't directly impact the shopping basket service. The shopping basket can continue operating with the data from its own store. 
 

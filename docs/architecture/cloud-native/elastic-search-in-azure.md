@@ -14,7 +14,7 @@ Elasticsearch is a distributed search and analytics system that enables complex 
 - [GitHub](https://www.elastic.co/customers/github) to index and expose over 8 million code repositories.  
 - [Docker](https://www.elastic.co/customers/docker) for making its container library discoverable.
 
-Elasticsearch is built on top of the [Apache Lucene](https://lucene.apache.org/core/) full-text search engine. Lucene provides high-performance document indexing and querying. It indexes data with an [inverted indexing](https://www.baeldung.com/lucene) scheme – instead of mapping pages to keywords, it maps keywords to pages just like a glossary at the end of a book. Lucene has powerful [query syntax](https://www.baeldung.com/lucene)  capabilities and can query data by:
+Elasticsearch is built on top of the [Apache Lucene](https://lucene.apache.org/core/) full-text search engine. Lucene provides high-performance document indexing and querying. It indexes data with an [inverted indexing](https://www.baeldung.com/lucene) scheme – instead of mapping pages to keywords, it maps keywords to pages just like a glossary at the end of a book. Lucene has powerful [query syntax](https://www.baeldung.com/lucene) capabilities and can query data by:
 
 - Term (a full word) 
 - Prefix (starts-with word)

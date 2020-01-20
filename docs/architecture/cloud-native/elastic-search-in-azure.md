@@ -18,7 +18,7 @@ Elasticsearch is built on top of the [Apache Lucene](https://lucene.apache.org/c
 
 - Term (a full word) 
 - Prefix (starts-with word)
-- Wildcard (using "*" or "?" filters)
+- Wildcard (using "\*" or "?" filters)
 - Phrase (a sequence of text in a document)
 - Boolean value (complex searches combining queries)
 

@@ -104,7 +104,7 @@ Large cloud-native applications often support high-volume data requirements. In 
 
 ### CQRS
 
-CQRS, or [Command and Query Responsibility Segregation](https://docs.microsoft.com/azure/architecture/patterns/cqrs), is an architectural pattern that can help maximize performance, scalability, and security. The pattern separates operations that read data from those operations that write data. 
+[CQRS](https://docs.microsoft.com/azure/architecture/patterns/cqrs), is an architectural pattern that can help maximize performance, scalability, and security. The pattern separates operations that read data from those operations that write data. 
 
 For normal scenarios, the same entity model and [data repository](https://martinfowler.com/eaaCatalog/repository.html) object are used for *both* read and write operations.
 

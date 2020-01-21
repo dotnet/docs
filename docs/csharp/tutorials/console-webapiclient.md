@@ -110,11 +110,11 @@ as you fill in the method.
 Next, rename the namespace defined in the `namespace` statement from its default of `ConsoleApp` to `WebAPIClient`. We'll later define a `repo` class in this namespace.
 
 Next, update the `Main` method to call this method. The
-`ProcessRepositories` method returns a Task, and you shouldn't exit the
-program before that task finishes. Therefore, you must change the signature of `Main`. Add the `async` modifier, and change the return type to `Task`. Then, in the body of the method, add a call to `ProcessRepositories`. Add the `await` keyword when to that method call:
+`ProcessRepositories` method returns a task, and you shouldn't exit the
+program before that task finishes. Therefore, you must change the signature of `Main`. Add the `async` modifier, and change the return type to `Task`. Then, in the body of the method, add a call to `ProcessRepositories`. Add the `await` keyword to that method call:
 
 ```csharp
-static Task Main(string[] args)
+static async Task Main(string[] args)
 {
     await ProcessRepositories();
 }
@@ -123,7 +123,7 @@ static Task Main(string[] args)
 Now, you have a program that does nothing, but does it asynchronously. Let's improve it.
 
 First you need an object that is capable to retrieve data from the web; you can use
- a <xref:System.Net.Http.HttpClient> to do that. This object handles the request and the responses. Instantiate a single instance of that type in the `Program` class inside the Program.cs file.
+ a <xref:System.Net.Http.HttpClient> to do that. This object handles the request and the responses. Instantiate a single instance of that type in the `Program` class inside the *Program.cs* file.
 
 ```csharp
 namespace WebAPIClient
@@ -132,7 +132,7 @@ namespace WebAPIClient
     {
         private static readonly HttpClient client = new HttpClient();
 
-        static Task Main(string[] args)
+        static async Task Main(string[] args)
         {
             //...
         }
@@ -299,7 +299,7 @@ Then, let's modify the `Main` method so that it captures those results and write
 to the console. Your `Main` method now looks like this:
 
 ```csharp
-public static Task Main(string[] args)
+public static async Task Main(string[] args)
 {
     var repositories = await ProcessRepositories();
 

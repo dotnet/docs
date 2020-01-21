@@ -30,14 +30,14 @@ When you run the command, you see the following output:
 ***********************************************************************
 ```
 
-In this debug mode, `DotnetRunner` does not launch the .NET application, but waits for it to connect. Leave this command prompt window open.
+In this debug mode, `DotnetRunner` does not launch the .NET application but instead waits for it to connect. Leave this command prompt window open.
 
 Now you can start your .NET application with a C# debugger ([Visual Studio Debugger for Windows/macOS](https://visualstudio.microsoft.com/vs/) or [C# Debugger Extension in Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging)) to debug your application.
 
-## Debug a User-Defined Function (UDF)
+## Debug a user-defined function (UDF)
 
 > [!NOTE]
-> This is currently supported only on Windows with Visual Studio Debugger.
+> User-defined functions are supported only on Windows with Visual Studio Debugger.
 
 Before running `spark-submit`, set the following environment variable:
 
@@ -47,7 +47,7 @@ set DOTNET_WORKER_DEBUG=1
 
 Now, when you run your Spark application, a `Choose Just-In-Time Debugger` window will pop up. Choose a Visual Studio debugger.
 
-The debugger will break at the following location in [TaskRunner.cs](https://github.com/dotnet/spark/blob/master/src/csharp/Microsoft.Spark.Worker/TaskRunner.cs):
+The debugger will break at the following location in [TaskRunner.cs](https://github.com/dotnet/spark/blob/5e9c08b430b4bc56b5f42252c4b73437377afaed/src/csharp/Microsoft.Spark.Worker/TaskRunner.cs#L52):
 
 ```csharp
 if (EnvironmentUtils.GetEnvironmentVariableAsBool("DOTNET_WORKER_DEBUG"))
@@ -56,16 +56,16 @@ if (EnvironmentUtils.GetEnvironmentVariableAsBool("DOTNET_WORKER_DEBUG"))
 }
 ```
 
-Now, navigate to the *.cs* file that contains the UDF that you plan to debug, and set a breakpoint. The breakpoint will say `The breakpoint will not currently be hit` because the worker hasn't loaded the assembly that contains UDF yet.
+Now, navigate to the *.cs* file that contains the UDF that you plan to debug, and [set a breakpoint](https://docs.microsoft.com/en-us/visualstudio/debugger/using-breakpoints?view=vs-2019). The breakpoint will say `The breakpoint will not currently be hit` because the worker hasn't loaded the assembly that contains UDF yet.
 
-Hit `F5` to continue your application and the breakpoint will eventually be hit.
+Hit `F5` to continue your application, and the breakpoint will eventually be hit.
 
 > [!NOTE] 
 > The Choose Just-In-Time Debugger window pops up for each task. To avoid excessive pop-ups, set the number of executors to a low number. For example, you can use the --master local[1] option for spark-submit to set the number of tasks to 1, which launches a single debugger instance.
 
 ## Debug Scala code
 
-If you need to debug the Scala side code (`DotnetRunner`, `DotnetBackendHandler`, etc.), you can use the following command, and attach a debugger to the running process using [IntelliJ](https://www.jetbrains.com/help/idea/attaching-to-local-process.html):
+If you need to debug the Scala-side code (`DotnetRunner`, `DotnetBackendHandler`, etc.), you can use the following command and attach a debugger to the running process using [IntelliJ](https://www.jetbrains.com/help/idea/attaching-to-local-process.html):
 
 ```shell
 spark-submit \

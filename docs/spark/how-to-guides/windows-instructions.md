@@ -75,17 +75,17 @@ Make sure you are able to run `dotnet`, `java`, `mvn`, `spark-shell` from your c
 
 ## Build
 
-For the rest of the section, it is assumed that you have cloned the .NET for Apache Spark repository into your machine e.g., `c:\github\dotnet-spark\`.
+For the remainder of this guide, you will need to have cloned the .NET for Apache Spark repository into your machine. You can choose any location for the cloned repository, e.g., `C:\github\dotnet-spark\`.
 
 ```bash
-git clone https://github.com/dotnet/spark.git c:\github\dotnet-spark
+git clone https://github.com/dotnet/spark.git C:\github\dotnet-spark
 ```
 
-### Build Spark .NET Scala extensions layer
+### Build .NET for Apache Spark Scala extensions layer
 
-When you submit a .NET application, Spark .NET has the necessary logic written in Scala that inform Apache Spark how to handle your requests (e.g., request to create a new Spark Session, request to transfer data from .NET side to JVM side etc.). This logic can be found in the [Spark .NET Scala Source Code](https://github.com/dotnet/spark/tree/master/src/scala).
+When you submit a .NET application, .NET for Apache Spark has the necessary logic written in Scala that inform Apache Spark how to handle your requests (e.g., request to create a new Spark Session, request to transfer data from .NET side to JVM side etc.). This logic can be found in the [Spark .NET Scala Source Code](https://github.com/dotnet/spark/tree/master/src/scala).
 
-Regardless of whether you are using .NET Framework or .NET Core, you will need to build the Spark .NET Scala extension layer. This is easy to do:
+Regardless of whether you are using .NET Framework or .NET Core, you will need to build the .NET for Apache Spark Scala extension layer:
 
 ```powershell
 cd src\scala
@@ -97,7 +97,7 @@ You should see JARs created for the supported Spark versions:
 * `microsoft-spark-2.3.x\target\microsoft-spark-2.3.x-<version>.jar`
 * `microsoft-spark-2.4.x\target\microsoft-spark-2.4.x-<version>.jar`
 
-### Build a .NET samples application
+### Build the .NET for Spark sample applications
 
 #### Using Visual Studio for .NET Framework
 
@@ -119,7 +119,7 @@ You should see JARs created for the supported Spark versions:
         df.Filter(df["age"] > 21).Show();
       ```
 
-     Once the build is successfuly, you will see the appropriate binaries produced in the output directory.     
+     Once the build is successful, you will see the appropriate binaries produced in the output directory.     
      Sample console output:
      
       ```powershell
@@ -147,7 +147,7 @@ You should see JARs created for the supported Spark versions:
 > [!NOTE]
 > We are currently working on automating .NET Core builds for Spark .NET. Until then, we appreciate your patience in performing some of the steps manually.
 
-  1. Build the worker.
+  1. Build the worker:
 
       ```powershell
       cd C:\github\dotnet-spark\src\csharp\Microsoft.Spark.Worker\
@@ -168,7 +168,7 @@ You should see JARs created for the supported Spark versions:
         Microsoft.Spark.Worker -> C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.Worker\Debug\netcoreapp2.1\win10-x64\publish\
       ```    
 
-  2. Build the samples.
+  2. Build the samples:
 
       ```powershell
       cd C:\github\dotnet-spark\examples\Microsoft.Spark.CSharp.Examples\
@@ -189,12 +189,17 @@ You should see JARs created for the supported Spark versions:
         Microsoft.Spark.CSharp.Examples -> C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.CSharp.Examples\Debug\netcoreapp2.1\win10-x64\publish\
       ```     
 
-## Run samples
+## Run the .NET for Spark sample applications
 
-Once you build the samples, running them will be through `spark-submit` regardless of whether you are targeting .NET Framework or .NET Core apps. Make sure you have followed the [prerequisites](#prerequisites) section and installed Apache Spark.
+Once you build the samples, running them will be through `spark-submit` regardless of whether you are targeting .NET Framework or .NET Core. Make sure you have followed the [prerequisites](#prerequisites) section and installed Apache Spark.
 
-  1. Set the `DOTNET_WORKER_DIR` or `PATH` environment variable to include the path where the `Microsoft.Spark.Worker` binary has been generated (e.g., `c:\github\dotnet\spark\artifacts\bin\Microsoft.Spark.Worker\Debug\net461` for .NET Framework, `c:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.Worker\Debug\netcoreapp2.1\win10-x64\publish` for .NET Core).
-  2. Open Powershell and go to the directory where your app binary has been generated (e.g., `c:\github\dotnet\spark\artifacts\bin\Microsoft.Spark.CSharp.Examples\Debug\net461` for .NET Framework, `c:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.CSharp.Examples\Debug\netcoreapp2.1\win10-x64\publish` for .NET Core).
+  1. Set the `DOTNET_WORKER_DIR` or `PATH` environment variable to include the path where the `Microsoft.Spark.Worker` binary has been generated (e.g., `C:\github\dotnet\spark\artifacts\bin\Microsoft.Spark.Worker\Debug\net461` for .NET Framework, `C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.Worker\Debug\netcoreapp2.1\win10-x64\publish` for .NET Core):
+
+  ```powershell
+  set DOTNET_WORKER_DIR=C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.Worker\Debug\netcoreapp2.1\win10-x64\publish
+  ```
+  
+  2. Open Powershell and go to the directory where your app binary has been generated (e.g., `C:\github\dotnet\spark\artifacts\bin\Microsoft.Spark.CSharp.Examples\Debug\net461` for .NET Framework, `C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.CSharp.Examples\Debug\netcoreapp2.1\win10-x64\publish` for .NET Core).
   3. Running your app follows the basic structure:
 
      ```powershell
@@ -249,5 +254,3 @@ Once you build the samples, running them will be through `spark-submit` regardle
          C:\github\dotnet-spark\src\scala\microsoft-spark-<version>\target\microsoft-spark-<version>.jar `
          Microsoft.Spark.CSharp.Examples.exe Sql.Streaming.StructuredKafkaWordCount localhost:9092 subscribe test
           ```
-
-Feel this experience is complicated? Help us by taking up [Simplify User Experience for Running an App](https://github.com/dotnet/spark/issues/6).

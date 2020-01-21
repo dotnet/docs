@@ -23,6 +23,7 @@ If you already have all the prerequisites, skip to the [build](#Build) steps bel
        ```
 
      - Verify you are able to run `java` from your command-line.       
+
        Sample java -version output:
        
        ```bash
@@ -55,6 +56,7 @@ If you already have all the prerequisites, skip to the [build](#Build) steps bel
        Note that these environment variables will be lost when you close your terminal. If you want the changes to be permanent, add the `export` lines to your `~/.bashrc` file.
 
      - Verify you are able to run `mvn` from your command-line       
+
        Sample mvn -version output:
        
        ```
@@ -68,7 +70,7 @@ If you already have all the prerequisites, skip to the [build](#Build) steps bel
   4. Install **[Apache Spark 2.3+](https://spark.apache.org/downloads.html)**.
 
      - Download [Apache Spark 2.3+](https://spark.apache.org/downloads.html) and extract it into a local folder (e.g., `~/bin/spark-2.3.2-bin-hadoop2.7`)
-     - Add the necessary [environment variables](https://www.java.com/en/download/help/path.xml) `SPARK_HOME` e.g., `~/bin/spark-2.3.2-bin-hadoop2.7/`
+     - Add the necessary [environment variables](https://www.java.com/en/download/help/path.xml) `SPARK_HOME` (e.g., `~/bin/spark-2.3.2-bin-hadoop2.7/`) and `PATH` (e.g., `$SPARK_HOME/bin:$PATH`)
 
        ```bash
        export SPARK_HOME=~/bin/spark-2.3.2-hadoop2.7
@@ -78,7 +80,8 @@ If you already have all the prerequisites, skip to the [build](#Build) steps bel
        
        Note that these environment variables will be lost when you close your terminal. If you want the changes to be permanent, add the `export` lines to your `~/.bashrc` file.
 
-     - Verify you are able to run `spark-shell` from your command-line        
+     - Verify you are able to run `spark-shell` from your command-line.
+
         Sample console output:
         
         ```
@@ -101,17 +104,17 @@ Make sure you are able to run `dotnet`, `java`, `mvn`, `spark-shell` from your c
 
 ## Build
 
-For the rest of the section, it is assumed that you have cloned the Spark .NET repository into your machine e.g., `~/dotnet.spark/`
+For the remainder of this guide, you will need to have cloned the .NET for Apache Spark repository into your machine e.g., `~/dotnet.spark/`.
 
 ```bash
 git clone https://github.com/dotnet/spark.git ~/dotnet.spark
 ```
 
-### Build Spark .NET Scala extensions layer
+### Build .NET for Spark Scala extensions layer
 
-When you submit a .NET application, .NET for Apache Spark has the necessary logic written in Scala that inform Apache Spark how to handle your requests (e.g., request to create a new Spark Session, request to transfer data from .NET side to JVM side etc.). This logic can be found in the [.NET for Apache Spark Scala Source Code](https://github.com/dotnet/spark/tree/master/src/scala).
+When you submit a .NET application, .NET for Apache Spark has the necessary logic written in Scala that informs Apache Spark how to handle your requests (e.g., request to create a new Spark Session, request to transfer data from .NET side to JVM side etc.). This logic can be found in the [.NET for Apache Spark Scala Source Code](https://github.com/dotnet/spark/tree/master/src/scala).
 
-The next step is to build the .NET for Apache Spark Scala extension layer.
+The next step is to build the .NET for Apache Spark Scala extension layer:
 
 ```bash
 cd src/scala
@@ -125,7 +128,7 @@ You should see JARs created for the supported Spark versions:
 
 ### Build .NET sample applications using .NET Core CLI
 
-  1. Build the worker,
+  1. Build the worker.
 
       ```dotnetcli
       cd ~/dotnet.spark/src/csharp/Microsoft.Spark.Worker/
@@ -167,11 +170,16 @@ You should see JARs created for the supported Spark versions:
         Microsoft.Spark.CSharp.Examples -> /home/user/dotnet.spark/artifacts/bin/Microsoft.Spark.CSharp.Examples/Debug/netcoreapp2.1/ubuntu.18.04-x64/publish/
       ```  
 
-## Run samples
+## Run the .NET for Spark sample applications
 
 Once you build the samples, you can use `spark-submit` to submit your .NET Core apps. Make sure you have followed the [prerequisites](#prerequisites) section and installed Apache Spark.
 
   1. Set the `DOTNET_WORKER_DIR` or `PATH` environment variable to include the path where the `Microsoft.Spark.Worker` binary has been generated (e.g., `~/dotnet.spark/artifacts/bin/Microsoft.Spark.Worker/Debug/netcoreapp2.1/ubuntu.18.04-x64/publish`).
+
+  ```bash
+  export DOTNET_WORKER_DIR=~/dotnet.spark/artifacts/bin/Microsoft.Spark.Worker/Debug/netcoreapp2.1/ubuntu.18.04-x64/publish
+  ```
+
   2. Open a terminal and go to the directory where your app binary has been generated (e.g., `~/dotnet.spark/artifacts/bin/Microsoft.Spark.CSharp.Examples/Debug/netcoreapp2.1/ubuntu.18.04-x64/publish`).
   3. Running your app follows the basic structure:
 
@@ -227,5 +235,3 @@ Once you build the samples, you can use `spark-submit` to submit your .NET Core 
          ~/dotnet.spark/src/scala/microsoft-spark-<version>/target/microsoft-spark-<version>.jar \
          Microsoft.Spark.CSharp.Examples Sql.Streaming.StructuredKafkaWordCount localhost:9092 subscribe test
           ```
-
-Feel this experience is complicated? Help us by taking up [Simplify User Experience for Running an App](https://github.com/dotnet/spark/issues/6).

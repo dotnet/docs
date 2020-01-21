@@ -95,7 +95,7 @@ private static async Task ProcessRepositories()
 }
 ```
 
-You'll need to add a `using` statement at the top of your `Main` method so
+You'll need to add a `using` directive at the top of your `Main` method so
 that the C# compiler recognizes the <xref:System.Threading.Tasks.Task> type:
 
 ```csharp
@@ -157,7 +157,7 @@ private static async Task ProcessRepositories()
 }
 ```
 
-You'll need to also add two new using statements at the top of the file for this to compile:
+You'll need to also add two new `using` directives at the top of the file for this to compile:
 
 ```csharp
 using System.Net.Http;
@@ -259,6 +259,12 @@ the following changes to the declaration of the `name` field in repo.cs:
 ```csharp
 [JsonPropertyName("name")]
 public string Name { get; set; }
+```
+
+To use `[JsonPropertyName]` attribute, you will need to add the <xref:System.Text.Json.Serialization> namespace to the `using` directives:
+
+```csharp
+using System.Text.Json.Serialization;
 ```
 
 This change means you need to change the code that writes the name of each repository in program.cs:
@@ -370,7 +376,7 @@ method parses a string and creates a <xref:System.DateTime> object using a provi
 metadata to the `DateTime` using a `CultureInfo` object. If the parse operation fails, the
 property accessor throws an exception.
 
-To use <xref:System.Globalization.CultureInfo.InvariantCulture>, you will need to add the <xref:System.Globalization> namespace to the `using` statements
+To use <xref:System.Globalization.CultureInfo.InvariantCulture>, you will need to add the <xref:System.Globalization> namespace to the `using` directives
 in `repo.cs`:
 
 ```csharp

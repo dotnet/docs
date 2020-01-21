@@ -42,7 +42,7 @@ working
 
 ## Modify Program.cs
 
-Open up the _program.cs_ file. The console project doesn't use an asynchronous entry point, so let's add that. Change your code to the following and save the file:
+Open up the _program.cs_ file. The console project doesn't use an asynchronous entry point, so let's add that. Change your code to the following and save the file.
 
 ```csharp
 using System;
@@ -82,7 +82,7 @@ Let's update the C# language version the project uses to version 8.0. Edit the _
 
 Before you complete a project template, you should test it to make sure it compiles and runs correctly.
 
-In your terminal, run the following command:
+In your terminal, run the following command.
 
 ```dotnetcli
 dotnet run
@@ -104,7 +104,7 @@ Templates are recognized in .NET Core by a special folder and config file that e
 
 When you create a template, all files and folders in the template folder are included as part of the template except for the special config folder. This config folder is named _.template.config_.
 
-First, create a new subfolder named _.template.config_, enter it. Then, create a new file named _template.json_. Your folder structure should look like this:
+First, create a new subfolder named _.template.config_, enter it. Then, create a new file named _template.json_. Your folder structure should look like this.
 
 ```console
 working

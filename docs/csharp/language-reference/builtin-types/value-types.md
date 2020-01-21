@@ -15,7 +15,7 @@ ms.assetid: 471eb994-2958-49d5-a6be-19b4313f80a3
 
 [!code-csharp[copy of values](~/samples/csharp/language-reference/builtin-types/ValueTypes.cs#ValueTypeCopied)]
 
-As the preceding example shows, operations on a value-type variable don't affect other variables.
+As the preceding example shows, operations on a value-type variable affect only that instance of the value type, stored in the variable.
 
 If a value type contains a data member of a reference type, only the reference to the instance of the reference type is copied when a value-type instance is copied. Both the copy and original value-type instance have access to the same reference-type instance. The following example demonstrates that behavior:
 

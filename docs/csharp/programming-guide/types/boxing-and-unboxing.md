@@ -12,7 +12,7 @@ ms.assetid: 8da9bbf4-bce9-4b08-b2e5-f64c11c56514
 ---
 # Boxing and Unboxing (C# Programming Guide)
 
-Boxing is the process of converting a [value type](../../language-reference/keywords/value-types.md) to the type `object` or to any interface type implemented by this value type. When the common language runtime (CLR) boxes a value type, it wraps the value inside a <xref:System.Object?displayProperty=nameWithType> instance and stores it on the managed heap. Unboxing extracts the value type from the object. Boxing is implicit; unboxing is explicit. The concept of boxing and unboxing underlies the C# unified view of the type system in which a value of any type can be treated as an object.
+Boxing is the process of converting a [value type](../../language-reference/builtin-types/value-types.md) to the type `object` or to any interface type implemented by this value type. When the common language runtime (CLR) boxes a value type, it wraps the value inside a <xref:System.Object?displayProperty=nameWithType> instance and stores it on the managed heap. Unboxing extracts the value type from the object. Boxing is implicit; unboxing is explicit. The concept of boxing and unboxing underlies the C# unified view of the type system in which a value of any type can be treated as an object.
 
 In the following example, the integer variable `i` is *boxed* and assigned to object `o`.
 
@@ -32,7 +32,7 @@ In relation to simple assignments, boxing and unboxing are computationally expen
 
 ## Boxing
 
-Boxing is used to store value types in the garbage-collected heap. Boxing is an implicit conversion of a [value type](../../language-reference/keywords/value-types.md) to the type `object` or to any interface type implemented by this value type. Boxing a value type allocates an object instance on the heap and copies the value into the new object.
+Boxing is used to store value types in the garbage-collected heap. Boxing is an implicit conversion of a [value type](../../language-reference/builtin-types/value-types.md) to the type `object` or to any interface type implemented by this value type. Boxing a value type allocates an object instance on the heap and copies the value into the new object.
 
 Consider the following declaration of a value-type variable:
 
@@ -60,7 +60,7 @@ This example converts an integer variable `i` to an object `o` by using boxing. 
 
 ## Unboxing
 
-Unboxing is an explicit conversion from the type `object` to a [value type](../../language-reference/keywords/value-types.md) or from an interface type to a value type that implements the interface. An unboxing operation consists of:
+Unboxing is an explicit conversion from the type `object` to a [value type](../../language-reference/builtin-types/value-types.md) or from an interface type to a value type that implements the interface. An unboxing operation consists of:
 
 - Checking the object instance to make sure that it is a boxed value of the given value type.
 
@@ -106,14 +106,8 @@ the conversion will be performed, and you will get the output:
 
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
 
-## Related sections
-
-For more information:
-
-- [Reference Types](../../language-reference/keywords/reference-types.md)
-
-- [Value Types](../../language-reference/keywords/value-types.md)
-
 ## See also
 
-- [C# Programming Guide](../index.md)
+- [C# programming guide](../index.md)
+- [Reference types](../../language-reference/keywords/reference-types.md)
+- [Value types](../../language-reference/builtin-types/value-types.md)

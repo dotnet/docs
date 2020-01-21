@@ -9,12 +9,10 @@ helpviewer_keywords:
   - "exceptions, interop"
 ---
 # Working with Interop Exceptions in Unmanaged Code
-Unmanaged code exception interop is not supported due to the portability issues that arise, since managed code can't know how these exception mechanisms work under the covers.
+Unmanaged code exception interop is not supported in non-Windows platforms, due to the portability issues that arise, since managed code can't know how these exception mechanisms work under the covers. The Unix ABI has no definition for this and therefore, exceptions end up resulting in unpredictable behaviors and potential crashes.
 
 ## Setjmp/Longjmp Behaviors
-Setjmp/Longjmp interop is held to the same constraints as exception handling as it is not supported to skip over managed frames this way.
-
-When unmanaged code moves on through the `longjmp` C library function, the runtime observes different behaviors between Windows and Unix operating systems. On Windows, there is support to unwind the stack properly when dealing with exceptions thrown by external components. On the other hand, Unix does not support exception interop as currently the Unix ABI has no definition for it. Therefore, exceptions here end up resulting in unpredictable behaviors and potential crashes.
+`Setjmp`/`Longjmp` interop is held to the same constraints as exception handling as it is not supported to skip over managed frames this way.
 
 For further information, take a look at `longjmp` [documentation](https://docs.microsoft.com/cpp/c-runtime-library/reference/longjmp).
 

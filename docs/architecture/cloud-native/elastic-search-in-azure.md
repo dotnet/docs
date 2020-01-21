@@ -14,7 +14,7 @@ Elasticsearch is a distributed search and analytics system that enables complex 
 - [GitHub](https://www.elastic.co/customers/github) to index and expose over 8 million code repositories.  
 - [Docker](https://www.elastic.co/customers/docker) for making its container library discoverable.
 
-Elasticsearch is built on top of the [Apache Lucene](https://lucene.apache.org/core/) full-text search engine. Lucene provides high-performance document indexing and querying. It indexes data with an [inverted indexing](https://www.baeldung.com/lucene) scheme – instead of mapping pages to keywords, it maps keywords to pages just like a glossary at the end of a book. Lucene has powerful [query syntax](https://www.baeldung.com/lucene)  capabilities and can query data by:
+Elasticsearch is built on top of the [Apache Lucene](https://lucene.apache.org/core/) full-text search engine. Lucene provides high-performance document indexing and querying. It indexes data with an inverted indexing scheme – instead of mapping pages to keywords, it maps keywords to pages just like a glossary at the end of a book. Lucene has powerful query syntax capabilities and can query data by:
 
 - Term (a full word) 
 - Prefix (starts-with word)
@@ -24,11 +24,13 @@ Elasticsearch is built on top of the [Apache Lucene](https://lucene.apache.org/c
 
 While Lucene provides low-level plumbing for searching, Elasticsearch provides the server that sits on top of Lucene. Elasticsearch adds higher-level functionality to simplify working Lucene, including a RESTful API to access Lucene’s indexing and searching functionality. It also provides a distributed infrastructure capable of massive scalability, fault tolerance, and high availability.
 
-For larger cloud-native applications with complex search requirements, Elasticsearch is available as [managed PaaS service in Azure](https://azuremarketplace.microsoft.com/marketplace/apps/elastic.elasticsearch?utm_campaign=social&utm_content=b7b94333e78f42d7a4dfc8348a6f48ac&utm_medium=t&utm_source=mkt-elasticsearchelasticsearch). From the Microsoft Azure Marketplace, developers can use preconfigured templates built to quickly deploy an Elasticsearch cluster on Azure. Using the Azure-managed offering, you can deploy up to 50 data nodes, 20 coordinating nodes, and three dedicated master nodes.
+For larger cloud-native applications with complex search requirements, Elasticsearch is available as managed service in Azure. The Microsoft Azure Marketplace features preconfigured templates which developers can use to deploy an Elasticsearch cluster on Azure.
+
+From the Microsoft Azure Marketplace, developers can use preconfigured templates built to quickly deploy an Elasticsearch cluster on Azure. Using the Azure-managed offering, you can deploy up to 50 data nodes, 20 coordinating nodes, and three dedicated master nodes.
 
 ## Summary
 
-This chapter presented a detailed look at data in cloud-native systems. We started by contrasting data storage in monolithic applications with that in cloud-native systems. We looked at data patterns implemented in cloud-native systems, including cross-service queries, distributed transactions, and patterns to deal with high-volume systems. We contrasted SQL with NoSQL data. We looked at data storage options available in Azure that include both Microsoft-centric and open-source options. Finally, we discussed caching and Elasticsearch in a cloud-native application.
+This chapter presented a detailed look at data in cloud-native systems. We started by contrasting data storage in monolithic applications with data storage patterns in cloud-native systems. We looked at data patterns implemented in cloud-native systems, including cross-service queries, distributed transactions, and patterns to deal with high-volume systems. We contrasted SQL with NoSQL data. We looked at data storage options available in Azure that include both Microsoft-centric and open-source options. Finally, we discussed caching and Elasticsearch in a cloud-native application.
 
 ### References
 

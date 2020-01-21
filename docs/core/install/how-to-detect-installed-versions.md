@@ -18,7 +18,7 @@ If any command in this article fails, you don't have the runtime or SDK installe
 
 ## Check SDK versions
 
-You can see which versions of the .NET Core SDK are currently installed with a terminal. Open a terminal and run the following command:
+You can see which versions of the .NET Core SDK are currently installed with a terminal. Open a terminal and run the following command.
 
 ```dotnetcli
 dotnet --list-sdks

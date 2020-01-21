@@ -25,16 +25,13 @@ You can download the redistributable packages and language packs for .NET Framew
 
  Important notes:
 
-> [!NOTE]
-> The phrase ".NET Framework 4.5 and its point releases" refers to .NET Framework 4.5 and all later versions.
-
 - Versions of the .NET Framework from .NET Framework 4.5.1 through [!INCLUDE[net_current](../../../includes/net-current-version.md)] are in-place updates to .NET Framework 4.5, which means they use the same runtime version, but the assembly versions are updated and include new types and members.
 
-- .NET Framework 4.5 and its point releases are built incrementally on .NET Framework 4. When you install .NET Framework 4.5 or its point releases on a system that has .NET Framework 4 installed, the version 4 assemblies are replaced with newer versions.
+- .NET Framework 4.5 and later versions are built incrementally on .NET Framework 4. When you install .NET Framework 4.5 or later versions on a system that has .NET Framework 4 installed, the version 4 assemblies are replaced with newer versions.
 
 - If you are referencing a Microsoft [out-of-band package](../get-started/the-net-framework-and-out-of-band-releases.md) in your app, the assembly will be included in the app package.
 
-- You must have administrator privileges to install .NET Framework 4.5 and its point releases.
+- You must have administrator privileges to install .NET Framework 4.5 or later versions.
 
 - .NET Framework 4.5 is included in Windows 8 and Windows Server 2012, so you don't have to deploy it with your app on those operating systems. Similarly, .NET Framework 4.5.1 is included in Windows 8.1 and Windows Server 2012 R2. .NET Framework 4.5.2 isn't included in any operating systems. .NET Framework 4.6 is included in Windows 10, .NET Framework 4.6.1 is included in Windows 10 November Update, and .NET Framework 4.6.2 is included in Windows 10 Anniversary Update.  .NET Framework 4.7 is included in Windows 10 Creators Update, .NET Framework 4.7.1 is included in Windows 10 Fall Creators Update, and .NET Framework 4.7.2 is included in Windows 10 October 2018 Update and Windows 10 April 2018 Update. .NET Framework 4.8 is included in Windows 10 May 2019 Update. For a full list of hardware and software requirements, see [System Requirements](../get-started/system-requirements.md).
 
@@ -342,7 +339,7 @@ See the following content:
 
 ## Uninstalling the .NET Framework
 
-Starting with Windows 8, you can uninstall .NET Framework 4.5 or one of its point releases by using **Turn Windows features on and off** in Control Panel. In older versions of Windows, you can uninstall .NET Framework 4.5 or one of its point releases by using **Add or Remove Programs** in Control Panel.
+Starting with Windows 8, you can uninstall .NET Framework 4.5 or later versions by using **Turn Windows features on and off** in Control Panel. In older versions of Windows, you can uninstall .NET Framework 4.5 or later versions by using **Add or Remove Programs** in Control Panel.
 
 > [!IMPORTANT]
 > For Windows 7 and earlier operating systems, uninstalling .NET Framework 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, or 4.8 doesn't restore .NET Framework 4.5 files, and uninstalling .NET Framework 4.5 doesn't restore .NET Framework 4 files. If you want to go back to the older version, you must reinstall it and any updates to it.
@@ -373,7 +370,7 @@ The following table lists options that you can include when you chain the .NET F
 
 ### Supported languages
 
-The following table lists .NET Framework language packs that are available for .NET Framework 4.5 and its point releases.
+The following table lists .NET Framework language packs that are available for .NET Framework 4.5 and later versions.
 
 |LCID|Language – country/region|Culture|
 |----------|--------------------------------|-------------|

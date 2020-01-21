@@ -19,7 +19,7 @@ As the preceding example shows, operations on a value-type variable affect only 
 
 If a value type contains a data member of a reference type, only the reference to the instance of the reference type is copied when a value-type instance is copied. Both the copy and original value-type instance have access to the same reference-type instance. The following example demonstrates that behavior:
 
-[!code-csharp[shallow copy](~/samples/csharp/language-reference/builtin-types/ValueTypes.cs#ShallowCopy)]
+:::code language="csharp" source="~/samples/csharp/language-reference/builtin-types/ValueTypes.cs" id="ShallowCopy":::
 
 > [!NOTE]
 > To make your code less error-prone and more robust, define and use immutable value types. This article uses mutable value types only for demonstration purposes.

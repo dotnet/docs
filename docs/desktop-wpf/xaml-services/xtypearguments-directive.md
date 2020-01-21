@@ -34,7 +34,7 @@ Passes constraining type arguments of a generic to the constructor of the generi
   
  If the generic constraints themselves use generic types, the nested constraint type arguments can be contained by parentheses ().  
   
- Note that this definition of `x:TypeArguments` is specific to .NET Framework XAML Services and using CLR backing. A language-level definition can be found in [\[MS-XAML\] Section 5.3.11](https://docs.microsoft.com/previous-versions/msp-n-p/ff650760(v=pandp.10)).  
+ Note that this definition of `x:TypeArguments` is specific to .NET XAML Services and using CLR backing. A language-level definition can be found in [\[MS-XAML\] Section 5.3.11](https://docs.microsoft.com/previous-versions/msp-n-p/ff650760(v=pandp.10)).  
   
 ## Usage Examples  
  For these examples, assume that the following XAML namespace definitions are declared:  
@@ -65,7 +65,7 @@ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
 - `x:TypeArguments` cannot reference nested generic constraints.  
   
 ## XAML 2009 or XAML 2006 with No WPF 3.0 or WPF 3.5 Dependency  
- In .NET Framework XAML Services for either XAML 2006 or XAML 2009, the WPF-related restrictions on generic XAML usage are relaxed. You can instantiate a generic object element at any position in XAML markup that the backing type system and object model can support.  
+ In .NET XAML Services for either XAML 2006 or XAML 2009, the WPF-related restrictions on generic XAML usage are relaxed. You can instantiate a generic object element at any position in XAML markup that the backing type system and object model can support.  
   
  If you use XAML 2009 instead of mapping the CLR base types to obtain XAML types for common language primitives, you can use [Built-in Types for Common XAML Language Primitives](types-for-primitives.md) as information items in a `typeString`. For example, you could declare the following (prefix mappings not shown, but x is the XAML language XAML namespace for XAML 2009):  
   
@@ -73,7 +73,7 @@ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
 <my:BusinessObject x:TypeArguments="x:String,x:Int32"/>  
 ```  
   
- In WPF and when targeting .NET Framework 4, you can use XAML 2009 features together with `x:TypeArguments` but only for loose XAML (XAML that is not markup-compiled). Markup-compiled XAML for WPF and the BAML form of XAML do not currently support the XAML 2009 keywords and features. If you need to markup compile the XAML, you must operate under the restrictions noted in the "XAML 2006 and WPF Generic XAML Usages" section.  
+ In WPF and when targeting .NET Framework 4 or .NET Core 3.0 (or later), you can use XAML 2009 features together with `x:TypeArguments` but only for loose XAML (XAML that is not markup-compiled). Markup-compiled XAML for WPF and the BAML form of XAML do not currently support the XAML 2009 keywords and features. If you need to markup compile the XAML, you must operate under the restrictions noted in the [XAML 2006 and WPF Generic XAML Usages](#xaml-2006-and-wpf-generic-xaml-usages) section. BAML is only supported in .NET Framework.
   
 ## See also
 

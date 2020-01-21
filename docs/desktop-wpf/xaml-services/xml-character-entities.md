@@ -54,7 +54,7 @@ XAML uses character entities defined in XML for special characters. This topic d
   
 <a name="xml_processing_instructions"></a>   
 ## XML Processing Instructions  
- XAML handles XML processing instructions according to XML specifications, which state that the instructions must be passed through. XAML processing in .NET Framework XAML Services  does not use any processing instructions. Other existing frameworks that use XAML also do not use processing instructions from XAML.  
+ XAML handles XML processing instructions according to XML specifications, which state that the instructions must be passed through. XAML processing in .NET XAML Services  does not use any processing instructions. Other existing frameworks that use XAML also do not use processing instructions from XAML.  
   
 ## See also
 

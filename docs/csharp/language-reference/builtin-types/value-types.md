@@ -33,7 +33,7 @@ A value type can be one of the two following kinds:
 
 A [nullable value type](nullable-value-types.md) `T?` represents all values of its underlying value type `T` and an additional [null](../keywords/null.md) value. You cannot assign `null` to a variable of a value type, unless it's a nullable value type.
 
-## Built-in value types. Simple types
+## Built-in value types
 
 C# provides the following built-in value types, also known as *simple types*:
 

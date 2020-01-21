@@ -1,6 +1,6 @@
 ---
-title: "Value types - C# Reference"
-ms.date: 11/26/2018
+title: "Value types - C# reference"
+ms.date: 01/22/2020
 f1_keywords: 
   - "cs.valuetypes"
 helpviewer_keywords: 
@@ -9,95 +9,59 @@ helpviewer_keywords:
   - "C# language, value types"
 ms.assetid: 471eb994-2958-49d5-a6be-19b4313f80a3
 ---
-# Value types (C# Reference)
+# Value types (C# reference)
 
-There are two kinds of value types:
+*Value types* and [reference types](../keywords/reference-types.md) are the two main categories of C# types. A variable of a value type contains an instance of the type. This differs from a variable of a reference type, which contains a reference to an instance of the type. By default, on [assignment](../operators/assignment-operator.md), passing an argument to a method, or returning a method result, variable values are copied. In the case of value-type variables, the corresponding type instances are copied. The following example demonstrates that behavior:
 
-- [Structs](struct.md)
+[!code-csharp[copy of values](~/samples/csharp/language-reference/builtin-types/ValueTypes.cs#ValueTypeCopied)]
 
-- [Enumerations](../builtin-types/enum.md)
+As the preceding example shows, operations on a value-type variable don't affect other variables.
 
-## Main features of value types
+If a value type contains a data member of a reference type, only the reference to the instance of the reference type is copied when a value-type instance is copied. Both the copy and original value-type instance have access to the same reference-type instance. The following example demonstrates that behavior:
 
-A variable of a value type contains a value of the type. For example, a variable of the `int` type might contain the value `42`. This differs from a variable of a reference type, which contains a reference to an instance of the type, also known as an object. When you assign a new value to a variable of a value type, that value is copied. When you assign a new value to a variable of a reference type, the reference is copied, not the object itself.
+[!code-csharp[shallow copy](~/samples/csharp/language-reference/builtin-types/ValueTypes.cs#ShallowCopy)]
 
-All value types are derived implicitly from the <xref:System.ValueType?displayProperty=nameWithType>.
+> [!NOTE]
+> To make your code less error-prone and more robust, define and use immutable value types. This article uses mutable value types only for demonstration purposes.
 
-Unlike with reference types, you cannot derive a new type from a value type. However, like reference types, structs can implement interfaces.
+## Kinds of value types
 
-Value type variables cannot be `null` by default. However, variables of the corresponding [nullable value types](../builtin-types/nullable-value-types.md) can be `null`.
+A value type can be one of the two following kinds:
 
-Each value type has an implicit parameterless constructor that initializes the default value of that type. For information about default values of value types, see [Default values of C# types](../builtin-types/default-values.md).
+- a [structure type](../keywords/struct.md), which encapsulates data and related functionality
+- an [enumeration type](enum.md), which is defined by a set of named constants and represents a choice or a combination of choices
+
+A [nullable value type](nullable-value-types.md) `T?` represents all values of its underlying value type `T` and an additional [null](../keywords/null.md) value. You cannot assign `null` to a variable of a value type, unless it's a nullable value type.
 
 ## Built-in value types. Simple types
 
-The *simple types* are a set of predefined struct types provided by C# and comprise the following types:
+C# provides the following built-in value types, also known as *simple types*:
 
-- [Integral types](../builtin-types/integral-numeric-types.md): integer numeric types and the [char](../builtin-types/char.md) type
-- [Floating-point types](../builtin-types/floating-point-numeric-types.md)
-- [bool](../builtin-types/bool.md)
+- [Integral numeric types](integral-numeric-types.md)
+- [Floating-point numeric types](floating-point-numeric-types.md)
+- [bool](bool.md) that represents a Boolean value
+- [char](char.md) that represents a Unicode UTF-16 character
 
-The simple types are identified through keywords, but these keywords are simply aliases for predefined struct types in the <xref:System> namespace. For example, [int](../builtin-types/integral-numeric-types.md) is an alias of <xref:System.Int32?displayProperty=nameWithType>. For a complete list of aliases, see [Built-in types table](built-in-types-table.md).
+All simple types are structure types and differ from other structure types in that they permit certain additional operations:
 
-The simple types differ from other struct types in that they permit certain additional operations:
+- You can use literals to provide a value of a simple type. For example, `'A'` is a literal of the type `char` and `2001` is a literal of the type `int`.
 
-- Simple types can be initialized by using literals. For example, `'A'` is a literal of the type `char` and `2001` is a literal of the type `int`.
+- You can declare constants of the simple types with the [const](../keywords/const.md) keyword. It's not possible to have constants of other structure types.
 
-- You can declare constants of the simple types with the [const](const.md) keyword. It's not possible to have constants of other struct types.
+- Constant expressions, whose operands are all constants of the simple types, are evaluated at compile time.
 
-- Constant expressions, whose operands are all simple type constants, are evaluated at compile time.
+Beginning with C# 7.0, C# supports [value tuples](../../tuples.md). A value tuple is a value type, but not a simple type.
 
-For more information, see the [Simple types](~/_csharplang/spec/types.md#simple-types) section of the [C# language specification](/dotnet/csharp/language-reference/language-specification/introduction).
+## C# language specification
 
-## Initializing value types
+For more information, see the following sections of the [C# language specification](~/_csharplang/spec/introduction.md):
 
-Local variables in C# must be initialized before they are used. For example, you might declare a local variable without initialization as in the following example:
-
-```csharp
-int myInt;
-```
-
-You cannot use it before you initialize it. You can initialize it using the following statement:
-
-```csharp
-myInt = new int();  // Invoke parameterless constructor for int type.
-```
-
-This statement is equivalent to the following statement:
-
-```csharp
-myInt = 0;         // Assign an initial value, 0 in this example.
-```
-
-You can, of course, have the declaration and the initialization in the same statement as in the following examples:
-
-```csharp
-int myInt = new int();
-```
-
-–or–
-
-```csharp
-int myInt = 0;
-```
-
-Using the [new](../operators/new-operator.md) operator calls the parameterless constructor of the specific type and assigns the default value to the variable. In the preceding example, the parameterless constructor assigned the value `0` to `myInt`. For more information about values assigned by calling parameterless constructors, see [Default values of C# types](../builtin-types/default-values.md).
-
-With user-defined types, use [new](../operators/new-operator.md) to invoke the parameterless constructor. For example, the following statement invokes the parameterless constructor of the `Point` struct:
-
-```csharp
-var p = new Point(); // Invoke parameterless constructor for the struct.
-```
-
-After this call, the struct is considered to be definitely assigned; that is, all its members are initialized to their default values.
-
-For more information about the `new` operator, see [new](../operators/new-operator.md).
-
-For information about formatting the output of numeric types, see [Formatting numeric results table](formatting-numeric-results-table.md).
+- [Value types](~/_csharplang/spec/types.md#value-types)
+- [Simple types](~/_csharplang/spec/types.md#simple-types)
+- [Variables](~/_csharplang/spec/variables.md)
 
 ## See also
 
 - [C# reference](../index.md)
-- [C# keywords](index.md)
-- [Reference types](reference-types.md)
-- [Nullable value types](../builtin-types/nullable-value-types.md)
+- <xref:System.ValueType?displayProperty=nameWithType>
+- [Reference types](../keywords/reference-types.md)

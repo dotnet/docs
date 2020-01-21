@@ -40,7 +40,7 @@ The following provides an overview of C#’s type system.
     - User-defined types of the form `delegate int D(...)`
 
 [ValueTypes]: ../language-reference/builtin-types/value-types.md
-[SimpleTypes]: ../language-reference/builtin-types/value-types.md#built-in-value-types-simple-types
+[SimpleTypes]: ../language-reference/builtin-types/value-types.md#built-in-value-types
 [EnumTypes]: ../language-reference/builtin-types/enum.md
 [StructTypes]: ../language-reference/keywords/struct.md
 [NullableTypes]: ../language-reference/builtin-types/nullable-value-types.md

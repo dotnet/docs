@@ -36,7 +36,7 @@ This series uses a "working folder" where your template source is contained and 
 
 First, create the parent folder, the name does not matter. Then, create a subfolder named _working_. Inside of the _working_ folder, create a subfolder named _templates_.
 
-Next, create a folder under the parent folder named _test_. The folder structure should look like the following:
+Next, create a folder under the parent folder named _test_. The folder structure should look like the following.
 
 ```console
 parent_folder
@@ -94,7 +94,7 @@ working
                 template.json
 ```
 
-Open the _template.json_ with your favorite text editor and paste in the following JSON code and save it:
+Open the _template.json_ with your favorite text editor and paste in the following JSON code and save it.
 
 ```json
 {
@@ -150,7 +150,7 @@ Now that you have an item template installed, test it. Navigate to the _test/_ f
 dotnet new console
 ```
 
-You get output similar to the following:
+You get output similar to the following.
 
 ```console
 The template "Console Application" was created successfully.
@@ -162,13 +162,13 @@ Running 'dotnet restore' on C:\test\test.csproj...
 Restore succeeded.
 ```
 
-Run the project with:
+Run the project with.
 
 ```dotnetcli
 dotnet run
 ```
 
-You get the following output:
+You get the following output.
 
 ```console
 Hello World!
@@ -180,7 +180,7 @@ Next, run `dotnet new stringext` to generate the _CommonExtensions.cs_ from the 
 dotnet new stringext
 ```
 
-You get the following output:
+You get the following output.
 
 ```console
 The template "Example templates: string extensions" was created successfully.
@@ -198,7 +198,7 @@ Run the program again and you'll see that the result is reversed.
 dotnet run
 ```
 
-You get the following output:
+You get the following output.
 
 ```console
 !dlroW olleH
@@ -214,7 +214,7 @@ Because you installed the template by file path, you must uninstall it with the 
 dotnet new -u
 ```
 
-You get output similar to the following:
+You get output similar to the following.
 
 ```console
 Template Instantiation Commands for .NET Core CLI
@@ -244,7 +244,7 @@ Currently installed items:
       Example templates: string extensions (stringext) C#
 ```
 
-To uninstall a template, run the following command:
+To uninstall a template, run the following command.
 
 ```dotnetcli
 dotnet new -u C:\working\templates\extensions

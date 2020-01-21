@@ -1,6 +1,6 @@
 ---
 title: "static modifier - C# Reference"
-ms.date: 07/20/2015
+ms.date: 001/22/2020
 f1_keywords: 
   - "static"
   - "static_CSharpKeyword"
@@ -10,7 +10,7 @@ ms.assetid: 5509e215-2183-4da3-bab4-6b7e607a4fdf
 ---
 # static (C# Reference)
 
-Use the `static` modifier to declare a static member, which belongs to the type itself rather than to a specific object. The `static` modifier can be used with classes, fields, methods, properties, operators, events, and constructors, but it cannot be used with indexers, finalizers, or types other than classes. For more information, see [Static Classes and Static Class Members](../../programming-guide/classes-and-structs/static-classes-and-static-class-members.md).
+Use the `static` modifier to declare a static member, which belongs to the type itself rather than to a specific object. The `static` modifier can be used to declare static classes. In classes and structs, the static modifier may be used on fields, methods, properties, operators, events, and constructors, but it cannot be used with indexers, finalizers. Interfaces may declare static methods, properties, operators, events, and constructors. For more information, see [Static Classes and Static Class Members](../../programming-guide/classes-and-structs/static-classes-and-static-class-members.md).
 
 ## Example
 
@@ -36,7 +36,7 @@ It is not possible to use [this](this.md) to reference static methods or propert
 
 If the `static` keyword is applied to a class, all the members of the class must be static.
 
-Classes and static classes may have static constructors. Static constructors are called at some point between when the program starts and the class is instantiated.
+Classes, interfaces, and static classes may have static constructors. Static constructors are called at some point between when the program starts and the class is instantiated.
 
 > [!NOTE]
 > The `static` keyword has more limited uses than in C++. To compare with the C++ keyword, see [Storage classes (C++)](/cpp/cpp/storage-classes-cpp#static).

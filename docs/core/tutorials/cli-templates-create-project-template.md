@@ -88,7 +88,7 @@ In your terminal, run the following command:
 dotnet run
 ```
 
-You get the following output:
+You get the following output.
 
 ```console
 Hello World with C# 8.0!
@@ -114,7 +114,7 @@ working
                 template.json
 ```
 
-Open the _template.json_ with your favorite text editor and paste in the following json code and save it:
+Open the _template.json_ with your favorite text editor and paste in the following json code and save it.
 
 ```json
 {
@@ -143,7 +143,7 @@ This command outputs the list of templates installed, which should include yours
 dotnet new -i .\
 ```
 
-You get output similar to the following:
+You get output similar to the following.
 
 ```console
 Usage: new [options]
@@ -176,19 +176,19 @@ Now that you have an item template installed, test it.
     dotnet new consoleasync
     ```
 
-    You get the following output:
+    You get the following output.
 
     ```console
     The template "Example templates: async project" was created successfully.
     ```
 
-1. Run the project using the following command:
+1. Run the project using the following command.
 
     ```dotnetcli
     dotnet run
     ```
 
-    You get the following output:
+    You get the following output.
 
     ```console
     Hello World with C# 8.0!
@@ -204,7 +204,7 @@ Because you installed the template by using a file path, you must uninstall it w
 dotnet new -u
 ```
 
-You get output similar to the following:
+You get output similar to the following.
 
 ```console
 Template Instantiation Commands for .NET Core CLI
@@ -234,7 +234,7 @@ Currently installed items:
       Example templates: async project (consoleasync) C#
 ```
 
-To uninstall a template, run the following command:
+To uninstall a template, run the following command.
 
 ```dotnetcli
 dotnet new -u C:\working\templates\consoleasync

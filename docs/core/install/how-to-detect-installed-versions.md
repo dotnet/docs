@@ -73,7 +73,7 @@ You get output similar to the following.
 
 ## Check runtime versions
 
-You can see which versions of the .NET Core runtime are currently installed with the following command:
+You can see which versions of the .NET Core runtime are currently installed with the following command.
 
 ```dotnetcli
 dotnet --list-runtimes

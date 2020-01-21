@@ -21,7 +21,7 @@ When writing a constructor with parameters for a struct, you must explicitly ini
 
 There is no inheritance for structs as there is for classes. A struct cannot inherit from another struct or class, and it cannot be the base of a class. Structs, however, inherit from the base class <xref:System.Object>. A struct can implement interfaces, and it does that exactly as classes do.
 
-You cannot declare a class using the keyword `struct`. In C#, classes and structs are semantically different. A struct is a value type, while a class is a reference type. For more information, see [Value types](../../language-reference/keywords/value-types.md) and [Reference types](../../language-reference/keywords/reference-types.md).
+You cannot declare a class using the keyword `struct`. In C#, classes and structs are semantically different. A struct is a value type, while a class is a reference type. For more information, see [Value types](../../language-reference/builtin-types/value-types.md) and [Reference types](../../language-reference/keywords/reference-types.md).
 
 Unless you need reference-type semantics, a small class may be more efficiently handled by the system if you declare it as a struct instead.
 

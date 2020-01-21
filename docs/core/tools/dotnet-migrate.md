@@ -5,7 +5,7 @@ ms.date: 01/07/2020
 ---
 # dotnet migrate
 
-**This article applies to: ✓** .NET Core 1.x SDK **✓** .NET Core 2.x SDK
+**This article applies to:** ✔️ .NET Core 1.x SDK ✔️ .NET Core 2.x SDK
 
 ## Name
 

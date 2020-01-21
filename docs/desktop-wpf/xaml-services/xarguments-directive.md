@@ -102,5 +102,5 @@ public Food TryLookupFood(string name)
   
 ## See also
 
-- [Defining Custom Types for Use with .NET Framework XAML Services](define-custom-types.md)
+- [Defining Custom Types for Use with .NET XAML Services](define-custom-types.md)
 - [XAML Overview (WPF)](../fundamentals/xaml.md)

@@ -34,7 +34,14 @@ These preceding member declarations typically do not contain a body. Beginning w
 - Member declarations using the explicit interface implementation syntax.
 - Explicit access modifiers (the default access is [`public`](access-modifiers.md)).
 
-Interfaces may not contain instance state. While static fields are now permitted, instance fields are not permitted in interfaces. [Instance auto-properties](../../programming-guide/classes-and-structs/auto-implemented-properties.md) are not supported in interfaces, as they would implicitly declare a hidden field.
+Interfaces may not contain instance state. While static fields are now permitted, instance fields are not permitted in interfaces. [Instance auto-properties](../../programming-guide/classes-and-structs/auto-implemented-properties.md) are not supported in interfaces, as they would implicitly declare a hidden field. This rule has a subtle effect on property declarations. In an interface declaration, the following does not declare an auto-implemented property as it does in a `class` or `struct`. Instead, it declares a property that doesn't have a default implementation, but must be implemented in any type that implements the interface:
+
+```csharp
+public interface INamed
+{
+  public string Name {get; set;}
+}
+```
 
 An interface can inherit from one or more base interfaces. When an interface [overrides a method](override.md) implemented in a base interface, it must use the explicit interface implementation syntax.
 

@@ -22,7 +22,7 @@ If you're unfamiliar with the .NET Core CLI toolset, read the [.NET Core SDK ove
 
 You can [view or download the sample code](https://github.com/dotnet/samples/tree/master/core/console-apps/HelloMsBuild) from the dotnet/samples GitHub repository. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
-Open a command prompt and create a folder named *Hello*. Navigate to the folder you created and type the following:
+Open a command prompt and create a folder named *Hello*. Navigate to the folder you created and type the following.
 
 ```dotnetcli
 dotnet new console
@@ -62,7 +62,7 @@ Let's do a quick walkthrough:
     dotnet run
     ```
 
-    You get the following output:
+    You get the following output.
 
     ```console
     Hello World!
@@ -74,7 +74,7 @@ Let's do a quick walkthrough:
     dotnet bin\Debug\netcoreapp3.1\Hello.dll
     ```
 
-    You get the following output:
+    You get the following output.
 
     ```console
     Hello World!
@@ -104,7 +104,7 @@ Let's change the program a bit. Fibonacci numbers are fun, so let's add that and
     dotnet run -- John
     ```
 
-    You get the following output:
+    You get the following output.
 
     ```console
     Hello John!
@@ -142,13 +142,13 @@ Single files are fine for simple one-off programs, but if you're building a more
 
 03. Run [dotnet build](../tools/dotnet-build.md) to compile the changes.
 
-04. Run your app by executing [dotnet run](../tools/dotnet-run.md). The following shows the program output:
+04. Run your app by executing [dotnet run](../tools/dotnet-run.md).
 
     ```dotnetcli
     dotnet run
     ```
 
-    You get the following output:
+    You get the following output.
 
     ```console
     0
@@ -176,7 +176,7 @@ Once you're ready to distribute your app, use the [dotnet publish](../tools/dotn
 dotnet publish
 ```
 
-You get output similar to the following:
+You get output similar to the following.
 
 ```console
 Microsoft (R) Build Engine version 16.4.0+e901037fe for .NET Core
@@ -195,7 +195,7 @@ You can run your published app with the [dotnet](../tools/dotnet.md) command:
 dotnet bin\Debug\netcoreapp3.1\publish\Hello.dll
 ```
 
-You get the following output:
+You get the following output.
 
 ```console
 Hello World!

@@ -1,7 +1,7 @@
 ---
 title: Get started with .NET for Apache Spark on macOS
 description: Discover how to run a .NET for Apache Spark app using .NET Core on MacOSX.
-ms.date: 12/30/2019
+ms.date: 01/22/2019
 ms.topic: tutorial
 ms.custom: mvc
 # Customer intent: As a developer, I want to write a simple custom application using .NET for Apache Spark on MacOSX.
@@ -19,7 +19,7 @@ This tutorial shows you how to run a .NET for Apache Spark app using .NET Core o
 
 ## Prerequisites
 
-- Download and install **[.NET Core 2.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/2.1)** 
+- Download and install **[.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1)** 
 - Install **[Java 8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)** 
   - Select the appropriate version for your operating system, for example, `jdk-8u231-macosx-x64.dmg`.
   - Install using the installer and verify you are able to run `java` from the command line

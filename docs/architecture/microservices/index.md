@@ -41,7 +41,7 @@ After you have studied this guide, your next step would be to learn about produc
 
 ## Version
 
-This guide has been revised to cover **.NET Core 3.1** version plus many additional updates related to the same “wave” of technologies (that is. Azure and additional 3rd party technologies) coinciding in time with .NET Core 3.1. That’s why the book version has also been updated to version **3.1**.
+This guide has been revised to cover **.NET Core 3.1** version along with many additional updates related to the same “wave” of technologies (that is. Azure and additional third-party technologies) coinciding in time with .NET Core 3.1 release. That’s why the book version has also been updated to version **3.1**.
 
 ## What this guide does not cover
 
@@ -156,7 +156,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright © 2019 by Microsoft Corporation
+Copyright © 2020 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 

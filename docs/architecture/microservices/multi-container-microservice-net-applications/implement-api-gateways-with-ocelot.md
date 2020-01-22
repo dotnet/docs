@@ -6,9 +6,9 @@ ms.date: 10/02/2018
 
 # Implement API Gateways with Ocelot
 
-The reference microservice application [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) is currently using [Envoy](https://www.envoyproxy.io/) instead of [Ocelot](https://github.com/ThreeMammals/Ocelot) as the API gateway, mostly because Envoy supports the WebSocket protocol  required by the new gRPC inter-service communications implemented in eShopOnContainers.
+>[!IMPORTANT] The reference microservice application [eShopOnContainers](https://github.com/dotnet-architecture/eShopOnContainers) is currently using features provided by [Envoy](https://www.envoyproxy.io/) to implement the API Gateway instead of the earlier referenced [Ocelot](https://github.com/ThreeMammals/Ocelot). We made this design choice because of Envoy's  built-in support for the WebSocket protocol, required by the new gRPC inter-service communications implemented in eShopOnContainers.
 
-However, section remains in the guide, so you can consider Ocelot as a simple, capable, and lightweight API Gateway suitable for production-grade scenarios.
+However, we've retained this section in the guide so you can consider Ocelot as a simple, capable, and lightweight API Gateway suitable for production-grade scenarios.
 
 ## Architect and design your API Gateways
 

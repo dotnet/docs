@@ -11,7 +11,7 @@ ms.custom: mvc,how-to
 
 ## Prerequisites
 
-If you already have all the prerequisites, skip to the [build](#Build) steps below.
+If you already have all the prerequisites, skip to the [build](#build) steps below.
 
   1. Download and install the **[.NET Core SDK](https://dotnet.microsoft.com/download/dotnet-core/2.1)** - installing the SDK will add the `dotnet` toolchain to your path. .NET Core 2.1, 2.2 and 3.1 are supported.
   2. Install **[Visual Studio 2019](https://www.visualstudio.com/downloads/)** (Version 16.3 or later). The Community version is completely free. When configuring your installation, include these components at minimum:

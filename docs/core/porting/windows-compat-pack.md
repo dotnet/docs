@@ -8,7 +8,7 @@ ms.date: 12/07/2018
 
 Some of the most common issues found when porting existing code to .NET Core are dependencies on APIs and technologies that are only found in .NET Framework. The *Windows Compatibility Pack* provides many of these technologies, so it's much easier to build .NET Core applications and .NET Standard libraries.
 
-This package is a logical [extension of .NET Standard 2.0](../whats-new/dotnet-core-2-0.md#api-changes-and-library-support) that significantly increases API set and existing code compiles with almost no modifications. In order to keep the promise of .NET Standard ("it is the set of APIs that all .NET implementations provide"), the pack doesn't include technologies that can't work across all platforms, such as registry, Windows Management Instrumentation (WMI), or reflection emit APIs.
+This package is a logical [extension of .NET Standard 2.0](../whats-new/dotnet-core-2-0.md#api-changes-and-library-support) that significantly increases API set and existing code compiles with almost no modifications. In order to keep the promise of .NET Standard ("it is the set of APIs that all .NET implementations provide"), it doesn't include Windows-specific technologies, such as registry, Windows Management Instrumentation (WMI).
 
 The Windows Compatibility Pack sits on top of .NET Standard and provides access to technologies that are Windows only. It's especially useful for customers that want to move to .NET Core but plan to stay on Windows as a first step. In that scenario, not being able to use Windows-only technologies is only a migration hurdle with no architectural benefits.
 

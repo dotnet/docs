@@ -18,13 +18,13 @@ ms.date: 01/21/2020
 
 - The [runtimeconfig.json file](#runtimeconfigjson)
 
-- [SDK-style project files](#project-file)
+- [MSBuild properties](#msbuild-property)
 
 - [Environment variables](#environment-variable)
 
 Some configuration values can also be set programmatically by calling the <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method.
 
-The articles in this section of the documentation are organized by category, for example, [debugging](debugging-profiling.md) and [garbage collection](garbage-collector.md). Where applicable, configuration options are shown for *runtimeconfig.json* files, SDK-style project files, environment variables, and, for cross-reference, *app.config* files for .NET Framework projects.
+The articles in this section of the documentation are organized by category, for example, [debugging](debugging-profiling.md) and [garbage collection](garbage-collector.md). Where applicable, configuration options are shown for *runtimeconfig.json* files, MSBuild properties, environment variables, and, for cross-reference, *app.config* files for .NET Framework projects.
 
 ## runtimeconfig.json
 
@@ -77,11 +77,11 @@ If you're placing the options in the template JSON file, omit the `runtimeOption
 }
 ```
 
-## Project file
+## MSBuild property
 
-Some run-time configuration options can be set in the *.csproj* or *.vbproj* file of SDK-style .NET Core projects. Any options you set here take precedence over options set in the *runtimeconfig.template.json* file. They also overwrite any options you set in the *[appname].runtimeconfig.json* file at build time.
+Some run-time configuration options can be set using MSBuild properties in the *.csproj* or *.vbproj* file of SDK-style .NET Core projects. MSBuild properties take precedence over options set in the *runtimeconfig.template.json* file. They also overwrite any options you set in the *[appname].runtimeconfig.json* file at build time.
 
-Here is an example SDK-style project file with run-time configuration options set:
+Here is an example SDK-style project file with MSBuild properties for configuring run-time behavior:
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -100,7 +100,7 @@ Here is an example SDK-style project file with run-time configuration options se
 </Project>
 ```
 
-Options that can be configured in the project file are noted in the individual articles for each area, for example, [garbage collection](garbage-collector.md).
+MSBuild properties for configuring run-time behavior are noted in the individual articles for each area, for example, [garbage collection](garbage-collector.md).
 
 ## Environment variable
 

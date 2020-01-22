@@ -111,7 +111,7 @@ For more information about the IL Linker tool, see the [documentation](https://a
 
 The main benefit of tiered compilation is to provide two ways of jitting methods: in a lower-quality-but-faster tier or a higher-quality-but-slower tier. The quality refers to how well the method is optimized. TC helps to improve the performance of an application as it goes through various stages of execution, from startup through steady state. When tiered compilation is disabled, every method is compiled in a single way that's biased to steady-state performance over startup performance.
 
-When TC is enabled, the following code is used for a method when an app starts up:
+When TC is enabled, the following behavior applies for method compilation when an app starts up:
 
 - If the method has ahead-of-time-compiled code, or [ReadyToRun](#readytorun-images), the pregenerated code is used.
 - Otherwise, the method is jitted. Typically, these methods are generics over value types.

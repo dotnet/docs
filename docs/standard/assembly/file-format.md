@@ -2,7 +2,6 @@
 title: .NET assembly file format
 description: Learn about the .NET assembly file format, which is used to describe and contain .NET apps and libraries.
 author: richlander
-ms.author: mairaw
 ms.date: 08/20/2019
 ms.technology: dotnet-standard
 ms.assetid: 6520323e-ff28-4c8a-ba80-e64a413199e6

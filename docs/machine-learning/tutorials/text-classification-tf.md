@@ -4,8 +4,6 @@ description: This tutorial shows you how to use a pre-trained TensorFlow model t
 ms.date: 11/15/2019
 ms.topic: tutorial
 ms.custom: mvc
-ms.author: nakersha
-author: natke
 #Customer intent: As a developer, I want to use ML.NET to make inferences with a pre-trained TensorFlow model.
 ---
 # Tutorial: Analyze sentiment of movie reviews using a pre-trained TensorFlow model in ML.NET

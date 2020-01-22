@@ -1,8 +1,6 @@
 ---
 title: COM Interop in .NET
 description: Learn how to interoperate with COM libraries in .NET.
-author: jkoritzinsky
-ms.author: jekoritz
 ms.date: 07/11/2019
 ---
 

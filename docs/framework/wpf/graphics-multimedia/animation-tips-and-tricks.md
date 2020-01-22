@@ -16,7 +16,7 @@ helpviewer_keywords:
 ms.assetid: e467796b-d5d4-45a6-a108-8c5d7ff69a0f
 ---
 # Animation Tips and Tricks
-When working with animations in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], there are a number of tips and tricks that can make your animations perform better and save you frustration.  
+When working with animations in WPF, there are a number of tips and tricks that can make your animations perform better and save you frustration.  
   
 <a name="generalissuessection"></a>   
 ## General Issues  
@@ -87,7 +87,7 @@ When working with animations in [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla
   
  When you run the <xref:System.Windows.Media.Animation.Storyboard>, you might expect the <xref:System.Windows.Media.TranslateTransform.X%2A> property of the <xref:System.Windows.Media.TranslateTransform> to animate from 0 to 350, then revert to 0 after it completes (because it has a <xref:System.Windows.Media.Animation.FillBehavior> setting of <xref:System.Windows.Media.Animation.FillBehavior.Stop>), and then animate from 0 to 500. Instead, the <xref:System.Windows.Media.TranslateTransform> animates from 0 to 350 and then to 500.  
   
- That's because of the order in which [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] raises events and because property values are cached and are not recalculated unless the property is invalidated. The <xref:System.Windows.Media.Animation.Timeline.Completed> event is processed first because it was triggered by the root timeline (the first <xref:System.Windows.Media.Animation.Storyboard>). At this time, the <xref:System.Windows.Media.TranslateTransform.X%2A> property still returns its animated value because it hasn't been invalidated yet. The second <xref:System.Windows.Media.Animation.Storyboard> uses the cached value as its starting value and begins animating.  
+ That's because of the order in which WPF raises events and because property values are cached and are not recalculated unless the property is invalidated. The <xref:System.Windows.Media.Animation.Timeline.Completed> event is processed first because it was triggered by the root timeline (the first <xref:System.Windows.Media.Animation.Storyboard>). At this time, the <xref:System.Windows.Media.TranslateTransform.X%2A> property still returns its animated value because it hasn't been invalidated yet. The second <xref:System.Windows.Media.Animation.Storyboard> uses the cached value as its starting value and begins animating.  
   
 <a name="performancesection"></a>   
 ## Performance  

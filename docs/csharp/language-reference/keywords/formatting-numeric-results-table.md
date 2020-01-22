@@ -1,7 +1,5 @@
 ---
 title: "Formatting numeric results table - C# Reference"
-ms.custom: seodec18
-
 description: "Learn about C# standard numeric format strings"
 ms.date: 09/20/2018
 helpviewer_keywords: 

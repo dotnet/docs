@@ -28,7 +28,7 @@ The meaning of a single data point can be difficult to interpret. Building conte
 
 Although more data samples and features can help improve the accuracy of the model, they may also introduce noise since not all data and features are meaningful. Therefore, it is important to understand which features are the ones that most heavily impact decisions made by the algorithm. Using techniques like Permutation Feature Importance (PFI) can help identify those salient features and not only help explain the model but also use the output as a feature selection method to reduce the amount of noisy features going into the training process.
 
-Learn to use PFI by visiting the following [link](../how-to-guides/explain-machine-learning-model-permutation-feature-importance-ml-net.md)
+For more information about using PFI, see [Explain model predictions using Permutation Feature Importance](../how-to-guides/explain-machine-learning-model-permutation-feature-importance-ml-net.md).
 
 ## Cross-validation
 

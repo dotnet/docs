@@ -4,7 +4,7 @@ description: An overview of the Microsoft XML Serializer Generator. Use the XML 
 author: mlacouture
 ms.date: 01/19/2017
 ms.topic: tutorial
-ms.custom: "mvc, seodec18"
+ms.custom: "mvc"
 ---
 # Using Microsoft XML Serializer Generator on .NET Core
 

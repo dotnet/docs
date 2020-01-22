@@ -22,7 +22,7 @@ This sample demonstrates how to perform transacted queued communication by using
   
 5. If you want to be certain that HTTP is used for communication, you can enable MSMQ to run in hardened mode. This ensures that no messages to any queue hosted on the machine can arrive using any non-HTTP transport.  
   
-6. After you have selected MSMQ to run in hardened mode, the machine requires a re-boot on [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)].  
+6. After you have selected MSMQ to run in hardened mode, the machine requires a re-boot on Windows Server 2003.  
   
 7. Run the service.  
   

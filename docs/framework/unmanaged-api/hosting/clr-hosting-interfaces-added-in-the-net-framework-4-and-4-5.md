@@ -16,7 +16,7 @@ This section describes interfaces that unmanaged hosts can use to integrate the 
   
 - They do not use COM types such as `BSTR`, `SAFEARRAY`, or `VARIANT`.  
   
-- There are no apartment models, aggregation, or registry activation that use the [CoCreateInstance function](https://go.microsoft.com/fwlink/?LinkId=142894).  
+- There are no apartment models, aggregation, or registry activation that use the [CoCreateInstance function](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance).  
   
 ## In This Section  
  [ICLRAppDomainResourceMonitor Interface](../../../../docs/framework/unmanaged-api/hosting/iclrappdomainresourcemonitor-interface.md)  

@@ -17,7 +17,6 @@ gRPC is an open-source communication protocol that originates from Google. It's 
 
 gRPC is a modern implementation of the RPC model that is lightweight and highly performant. It uses HTTP/2 for its transport protocol. While compatible with HTTP 1.1, HTTP/2 features many advanced capabilities:
 
-
 - HTTP/2 is a binary protocol, unlike HTTP 1.1, which sends data as clear text.
 - HTTP/2 supports multiplexing, or multiple parallel requests over the same connection, while HTTP 1.1 is limited to processing one request/response round trip at a time.
 - HTTP/2 supports full-duplex, or bidirectional communication, where both client and server and can communicate at the same time. The client can be sending request data at the same time the server is returning response data.

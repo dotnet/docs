@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "hardware encryption"
   - "CspParameters"
 ms.assetid: b0e734df-6eb4-4b16-b48c-6f0fe82d5f17
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Access Hardware Encryption Devices
 You can use the <xref:System.Security.Cryptography.CspParameters> class to access hardware encryption devices. For example, you can use this class to integrate your application with a smart card, a hardware random number generator, or a hardware implementation of a particular cryptographic algorithm.  

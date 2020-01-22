@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "base streams"
   - "streams, backing stores"
 ms.assetid: da761658-a535-4f26-a452-b30df47f73d5
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Compose streams
 A *backing store* is a storage medium, such as a disk or memory. Each different backing store implements its own stream as an implementation of the <xref:System.IO.Stream> class. 

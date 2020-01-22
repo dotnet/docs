@@ -51,7 +51,7 @@ Each removed control has a recommended replacement control. Refer to the followi
 | ToolBar | ToolStrip | ToolBarAppearance |
 | ToolBarButton | ToolStripButton | ToolBarButtonClickEventArgs, ToolBarButtonClickEventHandler, ToolBarButtonStyle, ToolBarTextAlign|
 | ContextMenu | ContextMenuStrip | |
-| Menu | ToolStripDropDown, ToolstripDropDownMenu | MenuItemCollection |
+| Menu | ToolStripDropDown, ToolStripDropDownMenu | MenuItemCollection |
 | MainMenu | MenuStrip | |
 | MenuItem | ToolStripMenuItem | |
 

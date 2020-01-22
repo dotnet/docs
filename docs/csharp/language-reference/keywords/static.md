@@ -1,6 +1,6 @@
 ---
 title: "static modifier - C# Reference"
-ms.date: 001/22/2020
+ms.date: 01/22/2020
 f1_keywords: 
   - "static"
   - "static_CSharpKeyword"
@@ -10,7 +10,7 @@ ms.assetid: 5509e215-2183-4da3-bab4-6b7e607a4fdf
 ---
 # static (C# Reference)
 
-Use the `static` modifier to declare a static member, which belongs to the type itself rather than to a specific object. The `static` modifier can be used to declare static classes. In classes, interfaces and structs, you may add the static modifier to fields, methods, properties, operators, events, and constructors. The static modifier can't be used with indexers, finalizers. For more information, see [Static Classes and Static Class Members](../../programming-guide/classes-and-structs/static-classes-and-static-class-members.md).
+Use the `static` modifier to declare a static member, which belongs to the type itself rather than to a specific object. The `static` modifier can be used to declare static classes. In classes, interfaces, and structs, you may add the `static` modifier to fields, methods, properties, operators, events, and constructors. The `static` modifier can't be used with indexers or finalizers. For more information, see [Static Classes and Static Class Members](../../programming-guide/classes-and-structs/static-classes-and-static-class-members.md).
 
 ## Example
 
@@ -34,12 +34,12 @@ It isn't possible to use [`this`](this.md) to reference static methods or proper
 
 If the `static` keyword is applied to a class, all the members of the class must be `static`.
 
-Classes, interfaces, and static classes may have static constructors. Static constructors are called at some point between when the program starts and the class is instantiated.
+Classes, interfaces, and static classes may have static constructors. A static constructor is called at some point between when the program starts and the class is instantiated.
 
 > [!NOTE]
 > The `static` keyword has more limited uses than in C++. To compare with the C++ keyword, see [Storage classes (C++)](/cpp/cpp/storage-classes-cpp#static).
 
-To demonstrate static members, consider a class that represents a company employee. Assume that the class contains a method to count employees and a field to store the number of employees. Both the method and the field don't belong to any instance employee. Instead they belong to the company class. They should be declared as `static` members of the class.
+To demonstrate static members, consider a class that represents a company employee. Assume that the class contains a method to count employees and a field to store the number of employees. Both the method and the field don't belong to any one employee instance. Instead, they belong to the class of employees as a whole. They should be declared as `static` members of the class.
 
 ## Example
 

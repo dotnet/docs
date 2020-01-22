@@ -10,6 +10,7 @@ helpviewer_keywords:
 ms.assetid: 46d329b1-5b84-4537-9e17-73ca97313e4e
 ---
 # \<inheritdoc> (C# Programming Guide)
+
 ## Syntax  
   
 ```xml  

@@ -2,7 +2,7 @@
 title: Database-per-microservice
 description: Contrast data storage in monolithic and cloud-native applications
 author: robvet
-ms.date: 12/23/2019
+ms.date: 1/22/2020
 ---
 # Database-per-microservice
 

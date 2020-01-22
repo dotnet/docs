@@ -2,7 +2,7 @@
 title: Elasticsearch in cloud-native applications
 description: Learn about adding Elastic Search capabilities to cloud-native applications.
 author: robvet
-ms.date: 12/28/2019
+ms.date: 1/22/2020
 ---
 # Elasticsearch in a cloud-native app
 

@@ -2,7 +2,7 @@
 title: Caching in a cloud-native application
 description: Learn about caching strategies in a cloud-native application.
 author: robvet
-ms.date: 12/28/2019
+ms.date: 1/22/2020
 ---
 # Caching in a cloud-native app
 
@@ -26,7 +26,7 @@ Also consider caching to avoid repetitive computations. If an operation transfor
 
 ## Caching architecture
 
-Cloud native applications typically implement a distributed caching architecture. The cache is hosted as a [cloud-based backing service](./definition.md#backing-services), separate from the microservices. Figure 5-20 shows the architecture.
+Cloud native applications typically implement a distributed caching architecture. The cache is hosted as a cloud-based [backing service](./definition.md#backing-services), separate from the microservices. Figure 5-20 shows the architecture.
 
 ![Caching in a cloud native app](media/caching-in-a-cloud-native-app.png)
 
@@ -40,11 +40,11 @@ As a shared cache grows, it might prove beneficial to partition its data across 
 
 ## Azure Cache for Redis
 
-[Azure Cache for Redis](https://azure.microsoft.com/services/cache/) is a secure data caching and messaging broker service, fully managed by Microsoft. Consumed as a [Platform as a Service (PaaS)](https://azure.microsoft.com/overview/what-is-paas/) offering, it provides high throughput and low-latency access to data. The service is accessible to any application within or outside of Azure.
+[Azure Cache for Redis](https://azure.microsoft.com/services/cache/) is a secure data caching and messaging broker service, fully managed by Microsoft. Consumed as a Platform as a Service (PaaS) offering, it provides high throughput and low-latency access to data. The service is accessible to any application within or outside of Azure.
 
-The Azure Cache for Redis service manages access to open-source Redis servers hosted across Azure data centers. The service acts as a facade providing management, access control, and security. The service natively supports a rich set of data structures, including [strings](http://redis.io/topics/data-types#strings), [hashes](http://redis.io/topics/data-types#hashes), [lists](http://redis.io/topics/data-types#sets), and [sets](http://redis.io/topics/data-types#sets). If your application already uses Redis, it will work as-is with Azure Cache for Redis.
+The Azure Cache for Redis service manages access to open-source Redis servers hosted across Azure data centers. The service acts as a facade providing management, access control, and security. The service natively supports a rich set of data structures, including strings, hashes, lists, and sets. If your application already uses Redis, it will work as-is with Azure Cache for Redis.
 
-Azure Cache for Redis is [more than a simple cache server](https://docs.microsoft.com/azure/azure-cache-for-redis/cache-overview). It can support a number of scenarios to enhance a microservices architecture:
+Azure Cache for Redis is more than a simple cache server. It can support a number of scenarios to enhance a microservices architecture:
 
 - An in-memory data store
 - A distributed non-relational database
@@ -57,4 +57,4 @@ Azure Redis Cache is available across a number of predefined configurations and 
 
 >[!div class="step-by-step"]
 >[Previous](relational-vs-nosql-data.md)
->[Next](elastic-search-in-azure.md) <!-- Next Chapter -->
+>[Next](elastic-search-in-azure.md)

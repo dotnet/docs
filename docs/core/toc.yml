@@ -16,32 +16,36 @@
     href: install/how-to-detect-installed-versions.md
   - name: Linux package managers
     items:
-    - name: RHEL 7
-      href: install/linux-package-manager-rhel7.md
-    - name: RHEL 8.1
-      href: install/linux-package-manager-rhel81.md
-    - name: Ubuntu 16.04
-      href: install/linux-package-manager-ubuntu-1604.md
-    - name: Ubuntu 18.04
-      href: install/linux-package-manager-ubuntu-1804.md
+    - name: Ubuntu 19.10
+      href: install/linux-package-manager-ubuntu-1910.md
     - name: Ubuntu 19.04
       href: install/linux-package-manager-ubuntu-1904.md
-    - name: Debian 9
-      href: install/linux-package-manager-debian9.md
-    - name: Debian 10
-      href: install/linux-package-manager-debian10.md
-    - name: Fedora 29
-      href: install/linux-package-manager-fedora29.md
-    - name: Fedora 30
-      href: install/linux-package-manager-fedora30.md
+    - name: Ubuntu 18.04
+      href: install/linux-package-manager-ubuntu-1804.md
+    - name: Ubuntu 16.04
+      href: install/linux-package-manager-ubuntu-1604.md
     - name: CentOS 7
       href: install/linux-package-manager-centos7.md
+    - name: Debian 10
+      href: install/linux-package-manager-debian10.md
+    - name: Debian 9
+      href: install/linux-package-manager-debian9.md
+    - name: Fedora 31
+      href: install/linux-package-manager-fedora31.md
+    - name: Fedora 30
+      href: install/linux-package-manager-fedora30.md
+    - name: Fedora 29
+      href: install/linux-package-manager-fedora29.md
     - name: OpenSUSE 15
       href: install/linux-package-manager-opensuse15.md
-    - name: SLES 12
-      href: install/linux-package-manager-sles12.md
+    - name: RHEL 8.1
+      href: install/linux-package-manager-rhel81.md
+    - name: RHEL 7
+      href: install/linux-package-manager-rhel7.md
     - name: SLES 15
       href: install/linux-package-manager-sles15.md
+    - name: SLES 12
+      href: install/linux-package-manager-sles12.md
   - name: Install localized IntelliSense
     href: install/localized-intellisense.md
 - name: Get started
@@ -49,18 +53,16 @@
   items:
   - name: Get started with C# and Visual Studio Code
     href: tutorials/with-visual-studio-code.md
-  - name: Build a C# Hello World app in Visual Studio
+  - name: Get started with .NET Core on macOS using Visual Studio Code
+    href: tutorials/using-on-macos.md
+  - name: Create your first console app in Visual Studio
     href: tutorials/with-visual-studio.md
-  - name: Build a Visual Basic Hello World app in Visual Studio
-    href: tutorials/vb-with-visual-studio.md
   - name: Debug an application using Visual Studio
     href: tutorials/debugging-with-visual-studio.md
   - name: Publish an application with Visual Studio
     href: tutorials/publishing-with-visual-studio.md
-  - name: Build a .NET Standard library with C# in Visual Studio
+  - name: Create a .NET Standard library in Visual Studio
     href: tutorials/library-with-visual-studio.md
-  - name: Build a .NET Standard library with Visual Basic in Visual Studio
-    href: tutorials/vb-library-with-visual-studio.md
   - name: Test a .NET Standard library in Visual Studio
     href: tutorials/testing-library-with-visual-studio.md
   - name: Consume a .NET Standard library in Visual Studio
@@ -91,8 +93,6 @@
       href: tutorials/cli-templates-create-project-template.md
     - name: 3 - Create a template pack
       href: tutorials/cli-templates-create-template-pack.md
-  - name: Get started with .NET Core on macOS
-    href: tutorials/using-on-macos.md
   - name: Get started with .NET Core using Visual Studio for Mac
     href: tutorials/using-on-mac-vs.md
   - name: Build a complete .NET Core solution on macOS
@@ -187,9 +187,9 @@
       href: diagnostics/dotnet-trace.md
   - name: .NET Core diagnostics tutorials
     items:
-    - name: Debugging a memory leak
+    - name: Debug a memory leak
       href: diagnostics/debug-memory-leak.md
-- name: Unit Testing
+- name: Unit testing
   href: testing/index.md
   items:
   - name: Unit testing best practices
@@ -343,28 +343,27 @@
   - name: XML Serializer Generator
     href: additional-tools/xml-serializer-generator.md
 - name: Port from .NET Framework
-  href: porting/index.md
   items:
-  - name: .NET Framework technologies unavailable for .NET Core
-    href: porting/net-framework-tech-unavailable.md
+  - name: Overview
+    href: porting/index.md
   - name: Analyze third-party dependencies
     href: porting/third-party-deps.md
   - name: Port libraries
     href: porting/libraries.md
   - name: Organize projects for .NET Core
     href: porting/project-structure.md
+  - name: Unavailable technologies
+    href: porting/net-framework-tech-unavailable.md 
   - name: Tools
     href: porting/tools.md
   - name: Use the Windows Compatibility Pack
     href: porting/windows-compat-pack.md
   - name: Port Windows Forms projects
-    items:
-    - name: How to port a project
-      href: porting/winforms.md
-    - name: Breaking changes
-      href: porting/winforms-breaking-changes.md
+    href: porting/winforms.md
   - name: Port WPF projects
     href: porting/wpf.md
+  - name: Port C++/CLI projects
+    href: porting/cpp-cli.md    
 - name: Dependency loading
   items:
   - name: Overview

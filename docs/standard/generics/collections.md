@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "generic collections [.NET]"
   - "generic types [.NET]"
 ms.assetid: 5b646751-6ab7-465c-916c-b1a76aefa9f5
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Generic collections in .NET
 

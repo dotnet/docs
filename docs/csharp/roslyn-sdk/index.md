@@ -41,7 +41,7 @@ and the associated code fixes are packaged together in a single project.
 Analyzers and code fixes use static analysis to understand code. They
 do not run the code or provide other testing benefits. They can, however,
 point out practices that often lead to bugs, unmaintainable code, or
-standard guideline validation.
+standard guideline violation.
 
 The .NET Compiler Platform SDK provides a single set of APIs that enable
 you to examine and understand a C# or Visual Basic codebase. Because you

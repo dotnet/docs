@@ -226,7 +226,7 @@
           - name: Windows Forms configuration section
             tocHref: /dotnet/framework/configure-apps/file-schema/winforms/
             topicHref: /dotnet/framework/configure-apps/file-schema/winforms/index
-      - name: Data and modeling in the .NET Framework
+      - name: Data and modeling
         tocHref: /dotnet/framework/data/
         topicHref: /dotnet/framework/data/index
         items:
@@ -284,13 +284,13 @@
       - name: Compile apps with .NET Native
         tocHref: /dotnet/framework/net-native/
         topicHref: /dotnet/framework/net-native/index
-      - name: Network programming in the .NET Framework
+      - name: Network programming
         tocHref: /dotnet/framework/network-programming/
         topicHref: /dotnet/framework/network-programming/index
       - name: .NET Framework performance
         tocHref: /dotnet/framework/performance/
         topicHref: /dotnet/framework/performance/index
-      - name: Dynamic programming in the .NET Framework
+      - name: Dynamic programming
         tocHref: /dotnet/framework/reflection-and-codedom/
         topicHref: /dotnet/framework/reflection-and-codedom/index
       - name: Resources in desktop apps
@@ -451,12 +451,6 @@
       - name: What's new
         tocHref: /dotnet/csharp/whats-new/
         topicHref: /dotnet/csharp/whats-new/index
-      - name: Interactive
-        tocHref: /dotnet/csharp/interactive/
-        topicHref: /dotnet/csharp/interactive/index
-      - name: Concepts
-        tocHref: /dotnet/csharp/concepts/
-        topicHref: /dotnet/csharp/concepts/index
       - name: .NET Compiler Platform SDK
         tocHref: /dotnet/csharp/roslyn-sdk/
         topicHref: /dotnet/csharp/roslyn-sdk/index
@@ -497,9 +491,6 @@
         - name: Interoperability
           tocHref: /dotnet/csharp/programming-guide/interop/
           topicHref: /dotnet/csharp/programming-guide/interop/index
-        - name: LINQ
-          tocHref: /dotnet/csharp/programming-guide/linq/
-          topicHref: /dotnet/csharp/programming-guide/linq/index
         - name: Main() and command-line arguments
           tocHref: /dotnet/csharp/programming-guide/main-and-command-args/
           topicHref: /dotnet/csharp/programming-guide/main-and-command-args/index

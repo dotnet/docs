@@ -1,6 +1,5 @@
 ---
 title: "Expression-bodied members - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 02/06/2019
 helpviewer_keywords: 
   - "expression-bodied members[C#]"

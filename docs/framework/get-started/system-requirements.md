@@ -90,7 +90,7 @@ The .NET Framework requires administrator privileges for installation. If you do
 
  **Notes:**
 
-- Windows Server 2012 includes .NET Framework 4.5, so you don't have to install it separately. Similarly, [!INCLUDE[winblue_server_2](../../../includes/winblue-server-2-md.md)] includes .NET Framework 4.5.1.
+- Windows Server 2012 includes .NET Framework 4.5, so you don't have to install it separately. Similarly, Windows Server 2012 R2 includes .NET Framework 4.5.1.
 
 - The .NET Framework has limited support for the Server Core Role with Windows Server 2008 R2 SP1 or later. See [Server Core .NET Functionality](https://docs.microsoft.com/previous-versions//dd745015(v=vs.85)) for a list of unsupported APIs.
 

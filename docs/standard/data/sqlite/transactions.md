@@ -15,7 +15,7 @@ For more information about locking, retries, and timeouts, see [Database errors]
 
 ## Isolation levels
 
-Transactions are **serializable** by default in SQLite. This isolation level guarantees that any changes made within a transaction are completely isolated. Other statements executed during this transaction will not be affected by its changes.
+Transactions are **serializable** by default in SQLite. This isolation level guarantees that any changes made within a transaction are completely isolated. Other statements executed outside of the transaction aren't affected by the transaction's changes.
 
 SQLite also supports **read uncommitted** when using a shared cache. This level allows dirty reads, nonrepeatable reads, and phantoms:
 

@@ -180,7 +180,7 @@ Exceptions to cross-targeting:
 .NET Core 3.0 introduces an opt-in feature that allows your app to roll forward to the latest major version of .NET Core. Additionally, a new setting has been added to control how roll forward is applied to your app. This can be configured in the following ways:
 
 - Project file property: `RollForward`
-- Runtime configuration file property: `rollForward`
+- Run-time configuration file property: `rollForward`
 - Environment variable: `DOTNET_ROLL_FORWARD`
 - Command-line argument: `--roll-forward`
 

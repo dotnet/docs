@@ -6,9 +6,9 @@ ms.custom: "updateeachrelease"
 ---
 # global.json overview
 
-**This article applies to: ✓** .NET Core 2.0 SDK and later versions
+**This article applies to:** ✔️ .NET Core 2.0 SDK and later versions
 
-The *global.json* file allows you to define which .NET Core SDK version is used when you run .NET Core CLI commands. Selecting the .NET Core SDK is independent from specifying the runtime your project targets. The .NET Core SDK version indicates which versions of the .NET Core CLI tools are used. 
+The *global.json* file allows you to define which .NET Core SDK version is used when you run .NET Core CLI commands. Selecting the .NET Core SDK is independent from specifying the runtime your project targets. The .NET Core SDK version indicates which versions of the .NET Core CLI tools are used.
 
 In general, you want to use the latest version of the SDK tools, so no *global.json* file is needed. In some advanced scenarios, you might want to control the version of the SDK tools, and this article explains how to do this.
 
@@ -56,7 +56,7 @@ If you don't set this value explicitly, the default value depends on whether you
 
 - Available since: .NET Core 3.0 SDK.
 
-The roll-forward policy to use when selecting an SDK version, either as a fallback when a specific SDK version is missing or as a directive to use a higher version. A [version](#version) must be specified with a `rollForward` value, unless you're setting it to `latestMajor`. 
+The roll-forward policy to use when selecting an SDK version, either as a fallback when a specific SDK version is missing or as a directive to use a higher version. A [version](#version) must be specified with a `rollForward` value, unless you're setting it to `latestMajor`.
 
 To understand the available policies and their behavior, consider the following definitions for an SDK version in the format `x.y.znn`:
 

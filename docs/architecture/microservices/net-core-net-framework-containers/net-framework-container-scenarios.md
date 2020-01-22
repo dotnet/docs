@@ -7,7 +7,6 @@ ms.date: 01/07/2019
 
 While .NET Core offers significant benefits for new applications and application patterns, .NET Framework will continue to be a good choice for many existing scenarios.
 
-However, the recent release of [.NET Core 3.0](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-0/), and even more recent [3.1 release](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-1/), with Long Term Support (LTS). includes significant performance improvements that can help justify a migration. The Windows Desktop related features don't really have an impact on the microservices applications.
 
 ## Migrating existing applications directly to a Windows Server container
 

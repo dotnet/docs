@@ -10,7 +10,7 @@ Some of the most common issues found when porting existing code to .NET Core are
 
 This package is a logical [extension of .NET Standard 2.0](../whats-new/dotnet-core-2-0.md#api-changes-and-library-support) that significantly increases API set and existing code compiles with almost no modifications. In order to keep the promise of .NET Standard ("it is the set of APIs that all .NET implementations provide"), it doesn't include Windows-specific technologies, such as registry, Windows Management Instrumentation (WMI).
 
-The Windows Compatibility Pack sits on top of .NET Standard and provides access to technologies that are Windows only. It's especially useful for customers that want to move to .NET Core but plan to stay on Windows as a first step. In that scenario, not being able to use Windows-only technologies is only a migration hurdle with no architectural benefits.
+The Windows Compatibility Pack sits on top of .NET Standard and provides access to technologies that are Windows only. It's especially useful for customers that want to move to .NET Core but plan to stay on Windows as a first step. In that case, not being able to use Windows-only technologies wouldn't be helpful.
 
 ## Package contents
 

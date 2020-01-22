@@ -103,7 +103,7 @@ This section explains how to build the [sample applications](https://github.com/
 
 #### Using Visual Studio for .NET Framework
 
-  1. Open `src\csharp\Microsoft.Spark.sln` in Visual Studio and build the `Microsoft.Spark.CSharp.Examples` project under the `examples` folder (this will in turn build the .NET bindings project as well). If you want, you can write your own code in the `Microsoft.Spark.Examples` project:
+  1. Open `src\csharp\Microsoft.Spark.sln` in Visual Studio and build the `Microsoft.Spark.CSharp.Examples` project under the `examples` folder (this will in turn build the .NET bindings project as well). If you want, you can write your own code in the `Microsoft.Spark.Examples` project (the 'input_file.json' in this example is a json file with the data you want to create the dataframe with):
   
       ```csharp
         // Instantiate a session
@@ -113,7 +113,7 @@ This section explains how to build the [sample applications](https://github.com/
             .GetOrCreate();
 
         // Create initial DataFrame
-        DataFrame df = spark.Read().Json(args[0]);
+        DataFrame df = spark.Read().Json(input_file.json);
 
         // Print schema
         df.PrintSchema();

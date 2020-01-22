@@ -70,6 +70,11 @@ If you already have all the prerequisites, skip to the [build](#Build) steps bel
   4. Install **[Apache Spark 2.3+](https://spark.apache.org/downloads.html)**.
 
      - Download [Apache Spark 2.3+](https://spark.apache.org/downloads.html) and extract it into a local folder (e.g., `~/bin/spark-2.3.2-bin-hadoop2.7`)
+
+     ```bash
+     tar -xvzf /path/to/spark-2.3.2-bin-hadoop2.7.tgz -C ~/bin/spark-2.3.2-bin-hadoop2.7
+     ```
+
      - Add the necessary [environment variables](https://www.java.com/en/download/help/path.xml) `SPARK_HOME` (e.g., `~/bin/spark-2.3.2-bin-hadoop2.7/`) and `PATH` (e.g., `$SPARK_HOME/bin:$PATH`)
 
        ```bash
@@ -127,6 +132,8 @@ You should see JARs created for the supported Spark versions:
 * `microsoft-spark-2.4.x/target/microsoft-spark-2.4.x-<version>.jar`
 
 ### Build .NET sample applications using .NET Core CLI
+
+This section explains how to build the [sample applications](https://github.com/dotnet/spark/tree/master/examples) for .NET for Apache Spark. These steps will help in understanding the overall building process for any .NET for Spark application.
 
   1. Build the worker:
 

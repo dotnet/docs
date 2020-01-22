@@ -16,7 +16,7 @@ ms.topic: reference
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | `System.Runtime.TieredCompilation` | `true` - enabled<br/>`false` - disabled |
-| **Project file** | `TieredCompilation` | `true` - enabled<br/>`false` - disabled |
+| **MSBuild property** | `TieredCompilation` | `true` - enabled<br/>`false` - disabled |
 | **Environment variable** | `COMPlus_TieredCompilation` | `1` - enabled<br/>`0` - disabled |
 
 ### Examples
@@ -54,7 +54,7 @@ Project file:
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | `System.Runtime.TieredCompilation.QuickJit` | `true` - enabled<br/>`false` - disabled |
-| **Project file** | `TieredCompilationQuickJit` | `true` - enabled<br/>`false` - disabled |
+| **MSBuild property** | `TieredCompilationQuickJit` | `true` - enabled<br/>`false` - disabled |
 
 ### Examples
 
@@ -90,7 +90,7 @@ Project file:
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | `System.Runtime.TieredCompilation.QuickJitForLoops` | `false` - disabled<br/>`true` - enabled |
-| **Project file** | `TieredCompilationQuickJitForLoops` | `false` - disabled<br/>`true` - enabled |
+| **MSBuild property** | `TieredCompilationQuickJitForLoops` | `false` - disabled<br/>`true` - enabled |
 
 ### Examples
 

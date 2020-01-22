@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "thread pool events [.NET Framework]"
   - "ETW, thread pool events (CLR)"
 ms.assetid: f2a21e3a-3b6c-4433-97f3-47ff16855ecc
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Thread Pool ETW Events
 These events collect information about worker and I/O threads.  

@@ -35,7 +35,7 @@ This section provides conceptual information and examples for programming with L
  Describes security issues in LINQ to DataSet.  
   
  [LINQ to DataSet Examples](linq-to-dataset-examples.md)  
- Provides query examples that use the [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] operators.  
+ Provides query examples that use the LINQ operators.  
   
 ## Reference  
  <xref:System.Data.DataRowComparer>  

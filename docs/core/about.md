@@ -51,7 +51,7 @@ Multiple frameworks have been built on top of .NET Core:
 .NET Core is composed of the following parts:
 
 - The [.NET Core runtime](https://github.com/dotnet/runtime/tree/master/src/coreclr), which provides a type system, assembly loading, a garbage collector, native interop, and other basic services. [.NET Core framework libraries](https://github.com/dotnet/runtime/tree/master/src/libraries) provide primitive data types, app composition types, and fundamental utilities.
-- The [ASP.NET runtime](https://github.com/aspnet/home), which provides a framework for building modern cloud-based internet connected applications, such as web apps, IoT apps, and mobile backends.
+- The [ASP.NET Core runtime](https://github.com/dotnet/aspnetcore), which provides a framework for building modern cloud-based internet connected applications, such as web apps, IoT apps, and mobile backends.
 - The [.NET Core CLI tools](https://github.com/dotnet/sdk) and language compilers ([Roslyn](https://github.com/dotnet/roslyn) and [F#](https://github.com/microsoft/visualfsharp)) that enable the .NET Core developer experience.
 - The [dotnet tool](https://github.com/dotnet/core-setup), which is used to launch .NET Core apps and CLI tools. It selects the runtime and hosts the runtime, provides an assembly loading policy, and launches apps and tools.
 
@@ -107,7 +107,7 @@ Because .NET Core supports side-by-side installation and its runtime is complete
 
 ### Comparison with Mono
 
-[Mono](https://www.mono-project.com/) is the original cross-platform implementation of .NET. It started out as an [open-source](https://github.com/mono/mono) alternative to .NET Framework and transitioned to targeting mobile devices as iOS and Android devices became popular. It can be thought of as a community clone of the .NET Framework. The Mono project team relied on the open [.NET standards](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) (notably ECMA 335) published by Microsoft to provide a compatible implementation.
+[Mono](https://www.mono-project.com/) is the original cross-platform implementation of .NET. It started out as an [open-source](https://github.com/mono/mono) alternative to .NET Framework and transitioned to targeting mobile devices as iOS and Android devices became popular. It can be thought of as a community clone of the .NET Framework. The Mono project team relied on the open [.NET standards](https://github.com/dotnet/runtime/blob/master/docs/project/dotnet-standards.md) (notably ECMA 335) published by Microsoft to provide a compatible implementation.
 
 The major differences between .NET Core and Mono:
 

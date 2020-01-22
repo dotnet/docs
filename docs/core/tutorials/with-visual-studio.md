@@ -4,7 +4,7 @@ description: Learn how to create your first .NET Core console application with C
 author: BillWagner
 ms.author: wiwagn
 ms.date: 12/09/2019
-ms.custom: "vs-dotnet, seodec18"
+ms.custom: "vs-dotnet"
 ---
 # Tutorial: Create your first .NET Core console application in Visual Studio 2019
 

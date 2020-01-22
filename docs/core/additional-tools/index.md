@@ -3,7 +3,7 @@ title: Additional CLI tools
 description: An overview of the additional tools you can install that support and extend .NET Core functionality.
 author: mlacouture
 ms.date: 12/02/2019
-ms.custom: "mvc, seodec18"
+ms.custom: "mvc"
 ---
 # .NET Core additional tools overview
 
@@ -11,7 +11,7 @@ This section compiles a list of tools that support and extend the .NET Core func
 
 ## [.NET Core Uninstall Tool](uninstall-tool.md)
 
-The [.NET Core Uninstall Tool](https://dotnet.microsoft.com/download/dotnet-core/uninstall-tool) (`dotnet-core-uninstall`) lets you clean up .NET Core SDKs and Runtimes on a system such that only the specified versions remain. A collection of options is available to specify which versions are uninstalled.
+The [.NET Core Uninstall Tool](https://github.com/dotnet/cli-lab/releases) (`dotnet-core-uninstall`) lets you clean up .NET Core SDKs and Runtimes on a system such that only the specified versions remain. A collection of options is available to specify which versions are uninstalled.
 
 ## [WCF Web Service Reference tool](wcf-web-service-reference-guide.md)
 

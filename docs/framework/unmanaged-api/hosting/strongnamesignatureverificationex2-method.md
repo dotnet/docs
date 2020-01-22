@@ -47,7 +47,7 @@ HRESULT StrongNameSignatureVerificationEx (
  [out] `true` if the strong name signature was verified; otherwise, `false`. This parameter is also set to `false` if the verification was successful due to registry settings.  
   
 ## Return Value  
- `S_OK` if the verification was successful; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](https://go.microsoft.com/fwlink/?LinkId=213878) for a list).  
+ `S_OK` if the verification was successful; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](/windows/win32/seccrypto/common-hresult-values) for a list).  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

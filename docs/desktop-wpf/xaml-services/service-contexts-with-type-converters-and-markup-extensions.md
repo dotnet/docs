@@ -6,11 +6,11 @@ helpviewer_keywords:
 ms.assetid: b4dad00f-03da-4579-a4e9-d8d72d2ccbce
 ---
 # Service Contexts Available to Type Converters and Markup Extensions
-Authors of the types that support type converter and markup extension usages must often have contextual information about where a usage is located in the markup, or in surrounding object graph structure. Information might be needed so that the provided object is instantiated correctly or so that object references to existing objects in the object graph can be made. When using .NET Framework XAML Services, the context that might be required is exposed as a series of service interfaces. Type converter or markup extension support code can query for a service by using a service provider context that is available and passed through from <xref:System.Xaml.XamlObjectWriter> or related types. The XAML schema context is directly available through one such service. This topic describes how to access service contexts from a value converter implementation, and lists typically available services and their roles.  
+Authors of the types that support type converter and markup extension usages must often have contextual information about where a usage is located in the markup, or in surrounding object graph structure. Information might be needed so that the provided object is instantiated correctly or so that object references to existing objects in the object graph can be made. When using .NET XAML Services, the context that might be required is exposed as a series of service interfaces. Type converter or markup extension support code can query for a service by using a service provider context that is available and passed through from <xref:System.Xaml.XamlObjectWriter> or related types. The XAML schema context is directly available through one such service. This topic describes how to access service contexts from a value converter implementation, and lists typically available services and their roles.  
   
 <a name="obtaining_services"></a>   
 ## Obtaining Services  
- As an implementer of a value converter, you often need access to some type of context in which the value converter is applied. This context might include information such as the active XAML schema context, access to the type mapping system that the XAML schema context and XAML object writer provide, and so on. The services available for a markup extension or type converter implementation are communicated through the context parameters that are part of the signature of each virtual method. In every case, you have <xref:System.IServiceProvider> implemented in the context, and can call <xref:System.IServiceProvider.GetService%2A?displayProperty=nameWithType> to request a service.  
+ As an implementer of a value converter, you often need access to some type of context in which the value converter is applied. This context might include information such as the active XAML schema context, access to the type-mapping system that the XAML schema context and XAML object writer provide, and so on. The services available for a markup extension or type converter implementation are communicated through the context parameters that are part of the signature of each virtual method. In every case, you have <xref:System.IServiceProvider> implemented in the context, and can call <xref:System.IServiceProvider.GetService%2A?displayProperty=nameWithType> to request a service.  
   
 <a name="services_for_a_markup_extension"></a>   
 ## Services for a Markup Extension  
@@ -60,21 +60,21 @@ public override object ConvertFrom(ITypeDescriptorContext typeDescriptorContext,
   
 <a name="using_the_xaml_service_provider_contexts"></a>   
 ## Using the XAML Service Provider Contexts  
- The service provider for <xref:System.IServiceProvider.GetService%2A> access to XAML services available to markup extensions or type converters is implemented as an internal class, with exposure only through the interface and how it is passed into the relevant context . Whenever a XAML processing operation in the default .NET Framework XAML Services implementations of load path or save path invokes the relevant markup extension or type converter methods that require a service context, this internal object is passed. Depending on the circumstance, the system service context provides either `MarkupExtensionContext` or `TextSyntaxContext`, but the specifics of both of these classes are internal. Your interaction with these classes is limited to requesting services from them, through <xref:System.IServiceProvider.GetService%2A>.  
+ The service provider for <xref:System.IServiceProvider.GetService%2A> access to XAML services available to markup extensions or type converters is implemented as an internal class, with exposure only through the interface and how it is passed into the relevant context. Whenever a XAML processing operation in the default .NET XAML Services implementations of load path or save path invokes the relevant markup extension or type converter methods that require a service context, this internal object is passed. Depending on the circumstance, the system service context provides either `MarkupExtensionContext` or `TextSyntaxContext`, but the specifics of both of these classes are internal. Your interaction with these classes is limited to requesting services from them, through <xref:System.IServiceProvider.GetService%2A>.  
   
 <a name="available_systemxaml_services"></a>   
-## Available Services from the .NET Framework XAML Service Context  
- .NET Framework XAML Services defines services for markup extensions, type converters, value serializers, and potentially other usages. The following sections describe each of these services and provide guidance about how the service might be used in an implementation.  
+## Available Services from the .NET XAML Service Context  
+ .NET XAML Services defines services for markup extensions, type converters, value serializers, and potentially other usages. The following sections describe each of these services and provide guidance about how the service might be used in an implementation.  
   
 ### IServiceProvider  
  **Reference documentation**: <xref:System.IServiceProvider>  
   
- **Relevant to:** Basic operation of a service-based infrastructure in the .NET Framework so that you can call <xref:System.IServiceProvider.GetService%2A?displayProperty=nameWithType>.  
+ **Relevant to:** Basic operation of a service-based infrastructure in .NET so that you can call <xref:System.IServiceProvider.GetService%2A?displayProperty=nameWithType>.  
   
 ### ITypeDescriptorContext  
  **Reference documentation**: <xref:System.ComponentModel.ITypeDescriptorContext>  
   
- Derives from <xref:System.IServiceProvider>. This class represents context in the standard <xref:System.ComponentModel.TypeConverter> signatures; <xref:System.ComponentModel.TypeConverter> is a class that has existed since .NET Framework 1.0. It predates XAML and the XAML <xref:System.ComponentModel.TypeConverter> scenario for string-value type conversion. In the .NET Framework XAML Services context, methods of <xref:System.ComponentModel.TypeConverter> are implemented explicitly. The explicit implementation's behavior indicates to callers that the <xref:System.ComponentModel.ITypeDescriptorContext> API is not relevant for XAML type systems, or for reading or writing objects from XAML. <xref:System.ComponentModel.ITypeDescriptorContext.Container%2A>, <xref:System.ComponentModel.ITypeDescriptorContext.Instance%2A>, and <xref:System.ComponentModel.ITypeDescriptorContext.PropertyDescriptor%2A> generally return `null` from .NET Framework XAML Services contexts.  
+ Derives from <xref:System.IServiceProvider>. This class represents context in the standard <xref:System.ComponentModel.TypeConverter> signatures; <xref:System.ComponentModel.TypeConverter> is a class that has existed since .NET Framework 1.0. It predates XAML and the XAML <xref:System.ComponentModel.TypeConverter> scenario for string-value type conversion. In .NET XAML Services context, methods of <xref:System.ComponentModel.TypeConverter> are implemented explicitly. The explicit implementation's behavior indicates to callers that the <xref:System.ComponentModel.ITypeDescriptorContext> API is not relevant for XAML type systems, or for reading or writing objects from XAML. <xref:System.ComponentModel.ITypeDescriptorContext.Container%2A>, <xref:System.ComponentModel.ITypeDescriptorContext.Instance%2A>, and <xref:System.ComponentModel.ITypeDescriptorContext.PropertyDescriptor%2A> generally return `null` from .NET XAML Services contexts.  
   
 ### IValueSerializerContext  
  **Reference documentation**: <xref:System.Windows.Markup.IValueSerializerContext>  
@@ -110,7 +110,7 @@ public override object ConvertFrom(ITypeDescriptorContext typeDescriptorContext,
   
  **Relevant to:** Load path handling and type lookup deferrals or optimizations.  
   
- **Service APIs:**  <xref:System.Xaml.IAmbientProvider.GetAllAmbientValues%2A>, 3 others.  
+ **Service APIs:**  <xref:System.Xaml.IAmbientProvider.GetAllAmbientValues%2A>, three others.  
   
  The ambience concept in XAML is a technique for marking a particular member of a type as ambient. Alternatively, a type can be ambient so that all property values that hold an instance of the type should be considered ambient properties. Markup extensions or type converters that are further along the XAML node stream and that are descendants in the object graph can access the ambient property or type instance at load time; or they can use knowledge of the ambient structure at save time. This can affect the degree of qualification that is needed to resolve types for other services, such as for <xref:System.Windows.Markup.IXamlTypeResolver> or for `x:Type`. See also <xref:System.Xaml.AmbientPropertyValue>.  
   
@@ -167,7 +167,7 @@ public override object ConvertFrom(ITypeDescriptorContext typeDescriptorContext,
   
  **Service APIs:**  <xref:System.Xaml.IXamlNameResolver.Resolve%2A>; other APIs for more advanced scenarios such as dealing with forward references.  
   
- The .NET Framework XAML Services implementation of `x:Reference` handling relies on this service. Specific frameworks or tools that support the framework use this service for `x:Name` handling or equivalent (<xref:System.Windows.Markup.RuntimeNamePropertyAttribute> attributed) property handling.  
+ .NET XAML Services implementation of `x:Reference` handling relies on this service. Specific frameworks or tools that support the framework use this service for `x:Name` handling or equivalent (<xref:System.Windows.Markup.RuntimeNamePropertyAttribute> attributed) property handling.  
   
 ### IDestinationTypeProvider  
  **Reference documentation**: <xref:System.Xaml.IDestinationTypeProvider>  

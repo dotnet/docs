@@ -16,7 +16,8 @@ helpviewer_keywords:
   - "x:Int32 [XAML Services]"
 ms.assetid: 11de2f08-5b95-4989-b5ec-5178eb968184
 ---
-# Built-in Types for Common XAML Language Primitives
+# Built-in types for common XAML language primitives
+
 XAML 2009 introduces XAML language-level support for several data types that are frequently used primitives in the common language runtime (CLR) and in other programming languages. XAML 2009 adds support for these primitives: `x:Object`, `x:Boolean`, `x:Char`, `x:String`, `x:Decimal`, `x:Single`, `x:Double`, `x:Int16`, `x:Int32`, `x:Int64`, `x:TimeSpan`, `x:Uri`, `x:Byte`, and `x:Array`  
   
 <a name="previous_techniques_for_language_primitives_in_xaml_markup"></a>   
@@ -60,7 +61,7 @@ xmlns:sys="clr-namespace:System;assembly=mscorlib">
 ### x:Decimal  
  For CLR backing, the `x:Decimal` primitive corresponds to <xref:System.Decimal>.  
   
- Note that XAML parsing is inherently done under `en-US` culture. Under `en-US` culture, the correct separator for the components of a decimal is always a period (`.`) regardless of culture settings of the development environment, or of the eventual client target where the XAML is loaded at run time.  
+ XAML parsing is inherently done under `en-US` culture. Under `en-US` culture, the correct separator for the components of a decimal is always a period (`.`) regardless of culture settings of the development environment, or of the eventual client target where the XAML is loaded at run time.  
   
  For the XAML language specification definition, see [\[MS-XAML\] Sections 5.2.14 and 5.4.8](https://docs.microsoft.com/previous-versions/msp-n-p/ff650760(v=pandp.10)).  
   
@@ -100,7 +101,7 @@ xmlns:sys="clr-namespace:System;assembly=mscorlib">
 ### x:TimeSpan  
  For CLR backing, the `x:TimeSpan` primitive corresponds to <xref:System.TimeSpan>.  
   
- Note that XAML parsing for time-date format is inherently done under `en-US` culture.  
+ XAML parsing for time-date format is inherently done under `en-US` culture.  
   
  For the XAML language specification definition, see [\[MS-XAML\] Sections 5.2.16 and 5.4.10](https://docs.microsoft.com/previous-versions/msp-n-p/ff650760(v=pandp.10)).  
   

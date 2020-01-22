@@ -54,7 +54,7 @@ You can also use the `~` symbol to declare finalizers. For more information, see
 
 ## Left-shift operator \<\<
 
-The `<<` operator shifts its left-hand operand left by the number of bits defined by its right-hand operand.
+The `<<` operator shifts its left-hand operand left by the [number of bits defined by its right-hand operand](#shift-count-of-the-shift-operators).
 
 The left-shift operation discards the high-order bits that are outside the range of the result type and sets the low-order empty bit positions to zero, as the following example shows:
 
@@ -68,7 +68,7 @@ For information about how the right-hand operand of the `<<` operator defines th
 
 ## Right-shift operator >>
 
-The `>>` operator shifts its left-hand operand right by the number of bits defined by its right-hand operand.
+The `>>` operator shifts its left-hand operand right by the [number of bits defined by its right-hand operand](#shift-count-of-the-shift-operators).
 
 The right-shift operation discards the low-order bits, as the following example shows:
 
@@ -164,11 +164,14 @@ The following example demonstrates that behavior:
 
 [!code-csharp-interactive[shift count example](~/samples/csharp/language-reference/operators/BitwiseAndShiftOperators.cs#ShiftCount)]
 
+> [!NOTE]
+> As the preceding example shows, the result of a shift operation can be non-zero even if the value of the right-hand operand is greater than the number of bits in the left-hand operand.
+
 ## Enumeration logical operators
 
 The `~`, `&`, `|`, and `^` operators are also supported by any [enumeration](../builtin-types/enum.md) type. For operands of the same enumeration type, a logical operation is performed on the corresponding values of the underlying integral type. For example, for any `x` and `y` of an enumeration type `T` with an underlying type `U`, the `x & y` expression produces the same result as the `(T)((U)x & (U)y)` expression.
 
-You typically use bitwise logical operators with an enumeration type which is defined with the [Flags](xref:System.FlagsAttribute) attribute. For more information, see the [Enumeration types as bit flags](../builtin-types/enum.md#enumeration-types-as-bit-flags) section of the [Enumeration types](../builtin-types/enum.md) article.
+You typically use bitwise logical operators with an enumeration type that is defined with the [Flags](xref:System.FlagsAttribute) attribute. For more information, see the [Enumeration types as bit flags](../builtin-types/enum.md#enumeration-types-as-bit-flags) section of the [Enumeration types](../builtin-types/enum.md) article.
 
 ## Operator overloadability
 

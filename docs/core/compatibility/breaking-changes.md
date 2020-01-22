@@ -13,9 +13,6 @@ Select the .NET version that you're currently targeting and then the .NET Core v
 
 [!INCLUDE[versionselector](~/includes/core-changes/versionselector.md)]
 
-> [!TIP]
-> If you're migrating a Windows Forms app from .NET Framework to .NET Core, see [Breaking changes in Windows Forms (.NET Framework to .NET Core)](../porting/winforms-breaking-changes.md) instead of using the version selector.
-
 ## By area
 
 Select the .NET Core technology area that you're interested in. Individual changes are ordered by .NET Core version.
@@ -28,7 +25,7 @@ You can also view individual issues that detail the breaking changes introduced 
 
 - For .NET Core, the [dotnet/docs](https://github.com/dotnet/docs/issues?q=is%3Aissue+label%3Abreaking-change) repository.
 - For ASP.NET Core, the [aspnet/Announcements](https://github.com/aspnet/Announcements/issues?q=is%3Aissue+is%3Aopen+label%3A%22Breaking+change%22+label%3A3.0.0) repository.
-- For Entity Framework Core, the [aspnet/EntityFrameworkCore](https://github.com/aspnet/EntityFrameworkCore/issues?q=is%3Aopen+is%3Aissue+label%3Abreaking-change) repository.
+- For Entity Framework Core, the [dotnet/efcore](https://github.com/dotnet/efcore/issues?q=is%3Aopen+is%3Aissue+label%3Abreaking-change) repository.
 
 ## See also
 

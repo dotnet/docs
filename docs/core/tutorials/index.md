@@ -4,7 +4,6 @@ description: Follow tutorials for learning .NET Core to build apps and libraries
 author: richlander
 ms.date: 03/16/2017
 titleSuffix: ""
-ms.custom: seodec18
 ---
 # Learn .NET Core and the .NET Core SDK tools by exploring these tutorials
 

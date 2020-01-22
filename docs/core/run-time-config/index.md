@@ -18,9 +18,9 @@ ms.date: 01/21/2020
 
 - The [runtimeconfig.json file](#runtimeconfigjson)
 
-- [SDK-style project files](#)
+- [SDK-style project files](#project-file)
 
-- [Environment variables](#environment-variables)
+- [Environment variables](#environment-variable)
 
 Some configuration values can also be set programmatically by calling the <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method.
 
@@ -77,7 +77,32 @@ If you're placing the options in the template JSON file, omit the `runtimeOption
 }
 ```
 
-## Environment variables
+## Project file
+
+Some run-time configuration options can be set in the *.csproj* or *.vbproj* file of SDK-style .NET Core projects. Any options you set here take precedence over options set in the *runtimeconfig.template.json* file. They also overwrite any options you set in the *[appname].runtimeconfig.json* file at build time.
+
+Here is an example SDK-style project file with run-time configuration options set:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <ConcurrentGarbageCollection>false</ConcurrentGarbageCollection>
+    <ThreadPoolMinThreads>4</ThreadPoolMinThreads>
+    <ThreadPoolMaxThreads>25</ThreadPoolMaxThreads>
+  </PropertyGroup>
+
+</Project>
+```
+
+Options that can be configured in the project file are noted in the individual articles for each area, for example, [garbage collection](garbage-collector.md).
+
+## Environment variable
 
 Environment variables can be used to supply some run-time configuration information. Configuration knobs specified as environment variables generally have the prefix **COMPlus_**.
 

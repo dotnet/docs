@@ -157,7 +157,7 @@ However, the persistence of that value object into the database was performed li
 
 With EF Core 2.0 and later, there are new and better ways to persist value objects.
 
-## Persist value objects as owned entity types in EF Core 2.0 and up
+## Persist value objects as owned entity types in EF Core 2.0 and later
 
 Even with some gaps between the canonical value object pattern in DDD and the owned entity type in EF Core, it's currently the best way to persist value objects with EF Core 2.0. You can see limitations at the end of this section.
 

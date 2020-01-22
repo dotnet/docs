@@ -13,7 +13,7 @@ ms.custom: mvc,how-to
 
 If you already have all the prerequisites, skip to the [build](#Build) steps below.
 
-  1. Download and install **[.NET Core 2.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/2.1)** or the **[.NET Core 3.0 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.0)** - installing the SDK adds the `dotnet` toolchain to your path.
+  1. Download and install **[.NET Core 2.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/2.1)** or the **[.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1)** - installing the SDK adds the `dotnet` toolchain to your path.
   2. Install **[OpenJDK 8](https://openjdk.java.net/install/)**. 
 
      - You can use the following command:
@@ -128,7 +128,7 @@ You should see JARs created for the supported Spark versions:
 
 ### Build .NET sample applications using .NET Core CLI
 
-  1. Build the worker.
+  1. Build the worker:
 
       ```dotnetcli
       cd ~/dotnet.spark/src/csharp/Microsoft.Spark.Worker/
@@ -149,7 +149,7 @@ You should see JARs created for the supported Spark versions:
         Microsoft.Spark.Worker -> /home/user/dotnet.spark/artifacts/bin/Microsoft.Spark.Worker/Debug/netcoreapp2.1/ubuntu.18.04-x64/publish/
       ```
 
-  2. Build the samples.
+  2. Build the samples:
 
       ```dotnetcli
       cd ~/dotnet.spark/examples/Microsoft.Spark.CSharp.Examples/
@@ -181,6 +181,11 @@ Once you build the samples, you can use `spark-submit` to submit your .NET Core 
       ```
 
   2. Open a terminal and go to the directory where your app binary has been generated (e.g., `~/dotnet.spark/artifacts/bin/Microsoft.Spark.CSharp.Examples/Debug/netcoreapp2.1/ubuntu.18.04-x64/publish`).
+
+      ```bash
+      cd ~/dotnet.spark/artifacts/bin/Microsoft.Spark.CSharp.Examples/Debug/netcoreapp2.1/ubuntu.18.04-x64/publish
+      ```
+
   3. Running your app follows the basic structure:
 
      ```bash

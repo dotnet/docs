@@ -83,7 +83,7 @@ git clone https://github.com/dotnet/spark.git C:\github\dotnet-spark
 
 ### Build .NET for Apache Spark Scala extensions layer
 
-When you submit a .NET application, .NET for Apache Spark has the necessary logic written in Scala that inform Apache Spark how to handle your requests (e.g., request to create a new Spark Session, request to transfer data from .NET side to JVM side etc.). This logic can be found in the [Spark .NET Scala Source Code](https://github.com/dotnet/spark/tree/master/src/scala).
+When you submit a .NET application, .NET for Apache Spark has the necessary logic written in Scala that informs Apache Spark how to handle your requests (e.g., request to create a new Spark Session, request to transfer data from .NET side to JVM side etc.). This logic can be found in the [.NET for Spark Scala Source Code](https://github.com/dotnet/spark/tree/master/src/scala).
 
 Regardless of whether you are using .NET Framework or .NET Core, you will need to build the .NET for Apache Spark Scala extension layer:
 
@@ -99,6 +99,8 @@ You should see JARs created for the supported Spark versions:
 
 ### Build the .NET for Spark sample applications
 
+This section explains how to build the [sample applications](https://github.com/dotnet/spark/tree/master/examples) for .NET for Apache Spark. These steps will help in understanding the overall building process for any .NET for Spark application.
+
 #### Using Visual Studio for .NET Framework
 
   1. Open `src\csharp\Microsoft.Spark.sln` in Visual Studio and build the `Microsoft.Spark.CSharp.Examples` project under the `examples` folder (this will in turn build the .NET bindings project as well). If you want, you can write your own code in the `Microsoft.Spark.Examples` project:
@@ -110,7 +112,8 @@ You should see JARs created for the supported Spark versions:
             .AppName("Hello Spark!")
             .GetOrCreate();
 
-        var df = spark.Read().Json(args[0]);
+        // Create initial DataFrame
+        DataFrame df = spark.Read().Json(args[0]);
 
         // Print schema
         df.PrintSchema();
@@ -199,7 +202,12 @@ Once you build the samples, running them will be through `spark-submit` regardle
       set DOTNET_WORKER_DIR=C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.Worker\Debug\netcoreapp2.1\win10-x64\publish
       ```
   
-  2. Open Powershell and go to the directory where your app binary has been generated (e.g., `C:\github\dotnet\spark\artifacts\bin\Microsoft.Spark.CSharp.Examples\Debug\net461` for .NET Framework, `C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.CSharp.Examples\Debug\netcoreapp2.1\win10-x64\publish` for .NET Core).
+  2. Open Powershell and go to the directory where your app binary has been generated (e.g., `C:\github\dotnet\spark\artifacts\bin\Microsoft.Spark.CSharp.Examples\Debug\net461` for .NET Framework, `C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.CSharp.Examples\Debug\netcoreapp2.1\win10-x64\publish` for .NET Core):
+
+      ```powershell
+      cd C:\github\dotnet-spark\artifacts\bin\Microsoft.Spark.CSharp.Examples\Debug\netcoreapp2.1\win10-x64\publish
+      ```
+
   3. Running your app follows the basic structure:
 
      ```powershell

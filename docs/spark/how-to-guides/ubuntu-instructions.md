@@ -11,7 +11,7 @@ ms.custom: mvc,how-to
 
 ## Prerequisites
 
-If you already have all the prerequisites, skip to the [build](#Build) steps below.
+If you already have all the prerequisites, skip to the [build](#build) steps below.
 
   1. Download and install **[.NET Core 2.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/2.1)** or the **[.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1)** - installing the SDK adds the `dotnet` toolchain to your path.
   2. Install **[OpenJDK 8](https://openjdk.java.net/install/)**. 

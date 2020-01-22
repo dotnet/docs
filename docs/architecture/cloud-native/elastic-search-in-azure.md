@@ -77,5 +77,5 @@ This chapter presented a detailed look at data in cloud-native systems. We start
 - [Introduction to Apache Lucene](https://www.baeldung.com/lucene)
 
 >[!div class="step-by-step"]
->[Previous](azure-cdocs/architecture/cloud-native/service-to-service-communication.mdaching.md)
+>[Previous](azure-caching.md)
 >[Next](resiliency.md) <!-- Next Chapter -->

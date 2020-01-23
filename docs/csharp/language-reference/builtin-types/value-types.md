@@ -13,13 +13,13 @@ ms.assetid: 471eb994-2958-49d5-a6be-19b4313f80a3
 
 *Value types* and [reference types](../keywords/reference-types.md) are the two main categories of C# types. A variable of a value type contains an instance of the type. This differs from a variable of a reference type, which contains a reference to an instance of the type. By default, on [assignment](../operators/assignment-operator.md), passing an argument to a method, or returning a method result, variable values are copied. In the case of value-type variables, the corresponding type instances are copied. The following example demonstrates that behavior:
 
-:::code language="csharp" source="~/samples/csharp/language-reference/builtin-types/ValueTypes.cs" id="ValueTypeCopied":::
+[!code-csharp[copy of values](~/samples/csharp/language-reference/builtin-types/ValueTypes.cs#ValueTypeCopied)]
 
 As the preceding example shows, operations on a value-type variable affect only that instance of the value type, stored in the variable.
 
 If a value type contains a data member of a reference type, only the reference to the instance of the reference type is copied when a value-type instance is copied. Both the copy and original value-type instance have access to the same reference-type instance. The following example demonstrates that behavior:
 
-:::code language="csharp" source="~/samples/csharp/language-reference/builtin-types/ValueTypes.cs" id="ShallowCopy":::
+[!code-csharp[shallow copy](~/samples/csharp/language-reference/builtin-types/ValueTypes.cs#ShallowCopy)]
 
 > [!NOTE]
 > To make your code less error-prone and more robust, define and use immutable value types. This article uses mutable value types only for demonstration purposes.

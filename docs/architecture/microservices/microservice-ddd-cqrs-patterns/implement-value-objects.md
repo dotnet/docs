@@ -173,7 +173,7 @@ The identity of instances of owned types is not completely their own. It consist
 
 - The navigation property pointing to them
 
-- In the case of collections of owned types, an independent component (in 2.2 and up).
+- In the case of collections of owned types, an independent component (supported in 2.2 and later).
 
 For example, in the Ordering domain model at eShopOnContainers, as part of the Order entity, the Address value object is implemented as an owned entity type within the owner entity, which is the Order entity. Address is a type with no identity property defined in the domain model. It is used as a property of the Order type to specify the shipping address for a particular order.
 

@@ -8,10 +8,10 @@ ms.topic: reference
 
 ## Tiered compilation
 
-- Configures whether the just-in-time (JIT) compiler uses [tiered compilation](../whats-new/dotnet-core-3-0.md#tiered-compilation).
+- Configures whether the just-in-time (JIT) compiler uses [tiered compilation](../whats-new/dotnet-core-3-0.md#tiered-compilation). Tiered compilation includes two distinct behaviors: [quick JIT](#quick-jit) and the use of [ReadyToRun](../whats-new/dotnet-core-3-0.md#readytorun-images) (pre-compiled) code.
 - In .NET Core 3.0 and later, tiered compilation is enabled by default.
 - In .NET Core 2.1 and 2.2, tiered compilation is disabled by default.
-- For more information, see the [Tiered compilation](https://devblogs.microsoft.com/dotnet/tiered-compilation-preview-in-net-core-2-1/) blog entry.
+- For more information, see the [Tiered compilation guide](https://github.com/dotnet/runtime/blob/master/docs/design/features/tiered-compilation-guide.md).
 
 | | Setting name | Values |
 | - | - | - |
@@ -47,14 +47,17 @@ Project file:
 
 ## Quick JIT
 
-- Configures whether the JIT compiler uses *Quick JIT*. Quick JIT compiles methods that don't have loops quickly to improve application startup performance.
-- In .NET Core 3.0 and later, Quick JIT is enabled by default.
-- In .NET Core 2.1 and 2.2, Quick JIT is disabled by default.
+- Configures whether the JIT compiler uses *quick JIT*. For methods that don't contain loops and for which pre-compiled code is not available, quick JIT compiles them more quickly but without optimizations.
+- Enabling quick JIT decreases startup time but can produce code with degraded performance characteristics. For example, the code may use more stack space, allocate more memory, and run slower.
+- If quick JIT is disabled but [tiered compilation](#tiered-compilation) is enabled, only pre-compiled code participates in tiered compilation. If a method is not pre-compiled with [ReadyToRun](../whats-new/dotnet-core-3-0.md#readytorun-images), the JIT behavior is the same as if [tiered compilation](#tiered-compilation) were disabled.
+- In .NET Core 3.0 and later, quick JIT is enabled by default.
+- In .NET Core 2.1 and 2.2, quick JIT is disabled by default.
 
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | `System.Runtime.TieredCompilation.QuickJit` | `true` - enabled<br/>`false` - disabled |
 | **MSBuild property** | `TieredCompilationQuickJit` | `true` - enabled<br/>`false` - disabled |
+| **Environment variable** | `COMPlus_TC_QuickJit` | `1` - enabled<br/>`0` - disabled |
 
 ### Examples
 
@@ -84,13 +87,16 @@ Project file:
 
 ## Quick JIT for loops
 
-- Configures whether the JIT compiler uses Quick JIT on methods that contain loops.
+- Configures whether the JIT compiler uses quick JIT on methods that contain loops.
+- Enabling quick JIT for loops may improve startup performance. However, long-running loops can get stuck in less-optimized code for long periods.
+- If [quick JIT](#quick-jit) is disabled, this setting has no effect.
 - Default: Disabled (`false`).
 
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | `System.Runtime.TieredCompilation.QuickJitForLoops` | `false` - disabled<br/>`true` - enabled |
 | **MSBuild property** | `TieredCompilationQuickJitForLoops` | `false` - disabled<br/>`true` - enabled |
+| **Environment variable** | `COMPlus_TC_QuickJitForLoops` | `0` - disabled<br/>`1` - enabled |
 
 ### Examples
 

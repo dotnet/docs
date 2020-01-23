@@ -18,9 +18,9 @@ ms.date: 01/21/2020
 
 - The [runtimeconfig.json file](#runtimeconfigjson)
 
-- [MSBuild properties](#msbuild-property)
+- [MSBuild properties](#msbuild-properties)
 
-- [Environment variables](#environment-variable)
+- [Environment variables](#environment-variables)
 
 Some configuration values can also be set programmatically by calling the <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method.
 
@@ -77,7 +77,7 @@ If you're placing the options in the template JSON file, omit the `runtimeOption
 }
 ```
 
-## MSBuild property
+## MSBuild properties
 
 Some run-time configuration options can be set using MSBuild properties in the *.csproj* or *.vbproj* file of SDK-style .NET Core projects. MSBuild properties take precedence over options set in the *runtimeconfig.template.json* file. They also overwrite any options you set in the *[appname].runtimeconfig.json* file at build time.
 
@@ -102,7 +102,7 @@ Here is an example SDK-style project file with MSBuild properties for configurin
 
 MSBuild properties for configuring run-time behavior are noted in the individual articles for each area, for example, [garbage collection](garbage-collector.md).
 
-## Environment variable
+## Environment variables
 
 Environment variables can be used to supply some run-time configuration information. Configuration knobs specified as environment variables generally have the prefix **COMPlus_**.
 

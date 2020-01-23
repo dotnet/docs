@@ -24,7 +24,7 @@ This tutorial shows you how to run a .NET for Apache Spark app using .NET Core o
   - Select the appropriate version for your operating system, for example, `jdk-8u231-macosx-x64.dmg`.
   - Install using the installer and verify you are able to run `java` from the command line
 - Download and install **[Apache Spark 2.4.4](https://archive.apache.org/dist/spark/spark-2.4.4/spark-2.4.4-bin-hadoop2.7.tgz)**:
-  - Add the necessary environment variable SPARK_HOME with a value of, for example, `~/bin/spark-2.4.4-bin-hadoop2.7/`
+  - Add the necessary environment variable SPARK_HOME with a value of, for example, *~/bin/spark-2.4.4-bin-hadoop2.7/*
   
     ```bash
     export SPARK_HOME=~/bin/spark-2.4.4-bin-hadoop2.7/

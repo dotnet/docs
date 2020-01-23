@@ -34,7 +34,7 @@ For detailed instructions, you can see [Building .NET for Apache Spark from Sour
    dotnet new console -o HelloSpark
    ```
 
-1. Install the `Microsoft.Spark` NuGet package into the project from the [spark nuget.org feed](https://www.nuget.org/profiles/spark) - see [Ways to install Nuget Package](https://docs.microsoft.com/en-us/nuget/consume-packages/ways-to-install-a-package).
+1. Install the `Microsoft.Spark` NuGet package into the project from the [spark nuget.org feed](https://www.nuget.org/profiles/spark). For more information, see [Ways to install NuGet Package](https://docs.microsoft.com/nuget/consume-packages/ways-to-install-a-package).
 
     ```shell
     cd HelloSpark

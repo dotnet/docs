@@ -46,7 +46,7 @@ This tutorial shows you how to run a .NET for Apache Spark app using .NET Core o
     
 1. Install the `Microsoft.Spark` NuGet package into the project from the [spark nuget.org feed](https://www.nuget.org/profiles/spark). For more information, see [Ways to install Nuget Package](https://docs.microsoft.com/nuget/consume-packages/ways-to-install-a-package).
     
-    ```
+    ```dotnetcli
     cd HelloSpark
     dotnet add package Microsoft.Spark
     ```

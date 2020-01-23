@@ -8,7 +8,9 @@ ms.topic: reference
 
 ## Tiered compilation
 
-- Configures whether the just-in-time (JIT) compiler uses [tiered compilation](../whats-new/dotnet-core-3-0.md#tiered-compilation). Tiered compilation includes two distinct behaviors: [quick JIT](#quick-jit) and the use of [ReadyToRun](../whats-new/dotnet-core-3-0.md#readytorun-images) (pre-compiled) code.
+- Configures whether the just-in-time (JIT) compiler uses [tiered compilation](../whats-new/dotnet-core-3-0.md#tiered-compilation). Tiered compilation transitions methods through two tiers:
+  - The first tier generates code more quickly ([quick JIT](#quick-jit)) or loads pre-compiled code ([ReadyToRun](../whats-new/dotnet-core-3-0.md#readytorun-images)).
+  - The second tier generates optimized code in the background ("optimizing JIT").
 - In .NET Core 3.0 and later, tiered compilation is enabled by default.
 - In .NET Core 2.1 and 2.2, tiered compilation is disabled by default.
 - For more information, see the [Tiered compilation guide](https://github.com/dotnet/runtime/blob/master/docs/design/features/tiered-compilation-guide.md).

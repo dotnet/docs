@@ -97,7 +97,7 @@ The folders marked with `(*)` are used by multiple packages. Some package format
 
 .NET Core versioning is based on the runtime component `[major].[minor]` version numbers.
 The SDK version uses the same `[major].[minor]` and has an independent `[patch]` that combines feature and patch semantics for the SDK.
-For example: SDK version 2.2.302 is the second patch release of the third feature release of the SDK that supports the 2.2 runtime. For more information about how versioning works, see [.NET Core versioning overview](../versions/index.md).
+For example: SDK version 2.2.302 is the second patch release of the third feature release of the SDK that supports the 2.2 runtime. For more information about how versioning works, see [.NET Core versioning overview](./versions/index.md).
 
 Some of the packages include part of the version number in their name. This allows you to install a specific version.
 The rest of the version isn't included in the version name. This allows the OS package manager to update the packages (for example, automatically installing security fixes). Supported package managers are Linux specific.

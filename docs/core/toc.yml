@@ -109,6 +109,10 @@
     href: tutorials/aspnet-core.md
   - name: Host .NET Core from native code
     href: tutorials/netcore-hosting.md
+- name: Project files
+  items:
+  - name: MSBuild property reference
+    href: core-sdk-msbuild-props.md
 - name: Run-time configuration
   items:
   - name: Settings

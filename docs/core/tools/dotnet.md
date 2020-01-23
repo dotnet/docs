@@ -101,7 +101,7 @@ Defines behavior when the required shared framework is not available. `N` can be
 
 Path to a *runtimeconfig.json* file.
 
-A *runtimeconfig.json* file is a configuration file containing run-time settings. For more information, see [.NET Core run-time configuration settings](../run-time-config/index.md#runtimeconfigjson) on GitHub.
+A *runtimeconfig.json* file is a configuration file containing run-time settings. For more information, see [.NET Core run-time configuration settings](../run-time-config/index.md#runtimeconfigjson).
 
 `-v|--verbosity <LEVEL>`
 

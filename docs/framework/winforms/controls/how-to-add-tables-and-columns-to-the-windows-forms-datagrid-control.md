@@ -1,5 +1,5 @@
 ---
-title: "How to: Add Tables and Columns to the Windows Forms DataGrid Control"
+title: Add Tables and Columns to DataGrid Control
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

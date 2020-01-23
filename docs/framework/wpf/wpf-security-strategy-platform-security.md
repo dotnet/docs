@@ -1,5 +1,5 @@
 ---
-title: "WPF Security Strategy - Platform Security"
+title: Platform security strategy
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

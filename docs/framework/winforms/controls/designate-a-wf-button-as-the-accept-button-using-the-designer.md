@@ -1,5 +1,5 @@
 ---
-title: "How to: Designate a Windows Forms Button as the Accept Button Using the Designer"
+title: Designate a Button as the Accept Button Using the Designer
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "buttons [Windows Forms], default on Windows Forms"

@@ -1,5 +1,5 @@
 ---
-title: "MainMenu Component Overview (Windows Forms)"
+title: "MainMenu Component Overview"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "MenuItem"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Display Error Icons for Form Validation with the Windows Forms ErrorProvider Component"
+title: Display Error Icons for Form Validation with ErrorProvider Component
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

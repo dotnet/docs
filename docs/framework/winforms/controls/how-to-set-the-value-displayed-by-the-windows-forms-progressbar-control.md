@@ -1,5 +1,5 @@
 ---
-title: "How to: Set the Value Displayed by the Windows Forms ProgressBar Control"
+title: Set the Value Displayed by ProgressBar Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

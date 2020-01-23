@@ -1,5 +1,5 @@
 ---
-title: "WPF Security Strategy - Security Engineering"
+title: Security strategy and engineering
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "security [WPF], testing techniques"

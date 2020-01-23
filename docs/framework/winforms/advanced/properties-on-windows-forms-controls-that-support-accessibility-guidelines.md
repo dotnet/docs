@@ -1,5 +1,5 @@
 ---
-title: "Properties on Windows Forms Controls That Support Accessibility Guidelines"
+title: Accessibility properties on controls
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Forms, accessibility properties of controls"

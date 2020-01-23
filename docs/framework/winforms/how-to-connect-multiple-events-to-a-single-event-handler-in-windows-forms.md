@@ -1,5 +1,5 @@
 ---
-title: "How to: Connect Multiple Events to a Single Event Handler in Windows Forms"
+title: "How to: Connect Multiple Events to a Single Event Handler"
 ms.date: "03/30/2017"
 dev_langs: 
   - "vb"

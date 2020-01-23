@@ -1,5 +1,5 @@
 ---
-title: "Ways to Select a Windows Forms Button Control"
+title: Ways to Select a Button Control
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Button control [Windows Forms], selecting"

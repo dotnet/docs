@@ -2,7 +2,7 @@
 title: Caching in a cloud-native application
 description: Learn about caching strategies in a cloud-native application.
 author: robvet
-ms.date: 1/22/2020
+ms.date: 01/22/2020
 ---
 # Caching in a cloud-native app
 

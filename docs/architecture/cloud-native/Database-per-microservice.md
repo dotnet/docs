@@ -1,8 +1,8 @@
 ---
 title: Database-per-microservice
-description: Contrast data storage in monolithic and cloud-native applications
+description: Contrast data storage in monolithic and cloud-native applications.
 author: robvet
-ms.date: 1/22/2020
+ms.date: 01/22/2020
 ---
 # Database-per-microservice
 
@@ -68,7 +68,7 @@ Instead, a widely accepted pattern for removing cross-service dependencies is th
 
 ![Materialized view pattern](./media/materialized-view-pattern.png)
 
-**Figure5-4**. Materialized View Pattern
+**Figure 5-4**. Materialized View Pattern
 
 With this pattern, you place a local data table (known as a *read model*) in the shopping basket service. This table contains a denormalized copy of the data needed from the product and pricing microservices. Copying the data directly into the shopping basket microservice eliminates the need for expensive cross-service calls. With the data local to the service, you improve the service's response time and reliability. Additionally, having its own copy of the data makes the shopping basket service more resilient. If the catalog service should become unavailable, it wouldn't directly impact the shopping basket service. The shopping basket can continue operating with the data from its own store. 
 
@@ -96,15 +96,15 @@ A popular pattern for adding distributed transactional support is the Saga patte
 
 In the above figure, the *Update Inventory* operation has failed in the Inventory microservice. The Saga invokes a set of compensating transactions (in red) to adjust the inventory counts, cancel the payment and the order, and return the data for each microservice back to a consistent state.
 
-Saga patterns are typically choreographed as a series of related events, or orchestrated as a set of related commands. In Chapter 4, we discussed the service aggregator pattern that would be the foundation for an orchestrated saga implementation. We also discussed eventing along with Azure Service Bus and Azure Event Grid *topics that would be a foundation for a choreographed saga implementation.
+Saga patterns are typically choreographed as a series of related events, or orchestrated as a set of related commands. In Chapter 4, we discussed the service aggregator pattern that would be the foundation for an orchestrated saga implementation. We also discussed eventing along with Azure Service Bus and Azure Event Grid topics that would be a foundation for a choreographed saga implementation.
 
 ## High volume data
 
-Large cloud-native applications often support high-volume data requirements. In these scenarios, traditional data storage techniques can cause bottlenecks. For complex systems that deploy on a large scale, both CQRS and Event Sourcing may improve application performance.  
+Large cloud-native applications often support high-volume data requirements. In these scenarios, traditional data storage techniques can cause bottlenecks. For complex systems that deploy on a large scale, both Command and Query Responsibility Segregation (CQRS) and Event Sourcing may improve application performance.  
 
 ### CQRS
 
-CQRS, or [Command and Query Responsibility Segregation](https://docs.microsoft.com/azure/architecture/patterns/cqrs), is an architectural pattern that can help maximize performance, scalability, and security. The pattern separates operations that read data from those operations that write data. 
+[CQRS](https://docs.microsoft.com/azure/architecture/patterns/cqrs), is an architectural pattern that can help maximize performance, scalability, and security. The pattern separates operations that read data from those operations that write data. 
 
 For normal scenarios, the same entity model and data repository object are used for *both* read and write operations.
 

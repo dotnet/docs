@@ -1,7 +1,7 @@
 ---
 title: dotnet-install scripts
 description: Learn about the dotnet-install scripts to install the .NET Core SDK and the shared runtime.
-ms.date: 01/15/2020
+ms.date: 01/23/2020
 ---
 # dotnet-install scripts reference
 

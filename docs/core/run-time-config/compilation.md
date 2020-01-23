@@ -125,3 +125,28 @@ Project file:
 
 </Project>
 ```
+
+## ReadyToRun
+
+- 
+- Default: Enabled (`true`).
+
+| | Setting name | Values |
+| - | - | - |
+| **runtimeconfig.json** | 
+| **MSBuild property** | `PublishReadyToRun` | `true` - enabled<br/>`false` - disabled |
+| **Environment variable** | `COMPlus_ReadyToRun` | `1` - enabled<br/>`0` - disabled |
+
+### Examples
+
+Project file:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <PublishReadyToRun>false</PublishReadyToRun>
+  </PropertyGroup>
+
+</Project>
+```

@@ -290,6 +290,10 @@ Copyright details for the package.
 
 A Boolean value that specifies whether the client must prompt the consumer to accept the package license before installing the package. The default is `false`.
 
+### DevelopmentDependency
+
+A Boolean value specifying whether the package is be marked as a development-only-dependency, which prevents the package from being included as a dependency in other packages. With PackageReference (NuGet 4.8+), this flag also means that it will exclude compile-time assets from compilation. See [DevelopmentDependency support for PackageReference](https://github.com/NuGet/Home/wiki/DevelopmentDependency-support-for-PackageReference)
+
 ### PackageLicenseExpression
 
 An [SPDX license identifier](https://spdx.org/licenses/) or expression. For example, `Apache-2.0`.

@@ -65,4 +65,4 @@ In either case, and in both classes and structs, your implementation should foll
 
 - [Equality comparisons](equality-comparisons.md)
 - [C# programming guide](../index.md)
- 
+

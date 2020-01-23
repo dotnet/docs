@@ -26,7 +26,7 @@ This tutorial will show you how to run a .NET for Apache Spark app using .NET Co
 
 For detailed instructions, you can see [Building .NET for Apache Spark from Source on Ubuntu](../building/ubuntu-instructions.md).
 
-## Authoring a .NET for Apache Spark App
+## Author a .NET for Apache Spark app
 
 1. Use the .NET Core CLI to create a console application.
 

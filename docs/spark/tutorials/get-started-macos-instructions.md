@@ -125,4 +125,4 @@ In this tutorial, you learned how to run your .NET for Apache Spark on macOS. Co
 > [!div class="nextstepaction"]
 > [Tutorial: Get Started with .NET for Apache Spark on Windows](get-started-windows-instructions.md)
 
-> [Tutorial: Get Started with .NET for Apache Spark on MacOSX](get-started-ubuntu-instructions.md)
+> [Tutorial: Get Started with .NET for Apache Spark on Ubuntu](get-started-ubuntu-instructions.md)

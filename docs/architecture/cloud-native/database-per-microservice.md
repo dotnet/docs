@@ -39,7 +39,7 @@ Figure 5-2 presents the principle of polyglot persistence in a cloud-native syst
 
 **Figure 5-2**. Polyglot data persistence
 
-Note in the above figure how each microservice supports a different type of data store.
+Note in the previous figure how each microservice supports a different type of data store.
 
 - The product catalog microservice consumes a relational database to accommodate the rich relational structure of its underlying data.
 - The shopping cart microservice consumes a distributed cache that supports its simple, key-value data store.
@@ -72,7 +72,7 @@ Instead, a widely accepted pattern for removing cross-service dependencies is th
 
 With this pattern, you place a local data table (known as a *read model*) in the shopping basket service. This table contains a denormalized copy of the data needed from the product and pricing microservices. Copying the data directly into the shopping basket microservice eliminates the need for expensive cross-service calls. With the data local to the service, you improve the service's response time and reliability. Additionally, having its own copy of the data makes the shopping basket service more resilient. If the catalog service should become unavailable, it wouldn't directly impact the shopping basket service. The shopping basket can continue operating with the data from its own store. 
 
-The catch with this approach is that you now have duplicate data in your system. However, *strategically* duplicating data in cloud-native systems is an established practice and not considered an anti-pattern, or bad practice. Keep in mind that *one and only one service* can own a data set and have authority over it. You'll need to synchronize the read models when the system of record is updated. Synchronization is typically implemented via asynchronous messaging with a [publish/subscribe pattern](service-to-service-communication.md#events), also shown above in Figure 5.4.
+The catch with this approach is that you now have duplicate data in your system. However, *strategically* duplicating data in cloud-native systems is an established practice and not considered an anti-pattern, or bad practice. Keep in mind that *one and only one service* can own a data set and have authority over it. You'll need to synchronize the read models when the system of record is updated. Synchronization is typically implemented via asynchronous messaging with a [publish/subscribe pattern](service-to-service-communication.md#events), as shown in Figure 5.4.
 
 ## Distributed transactions
 
@@ -94,7 +94,7 @@ A popular pattern for adding distributed transactional support is the Saga patte
 
 **Figure 5-6**. Rolling back a transaction
 
-In the above figure, the *Update Inventory* operation has failed in the Inventory microservice. The Saga invokes a set of compensating transactions (in red) to adjust the inventory counts, cancel the payment and the order, and return the data for each microservice back to a consistent state.
+In the previous figure, the *Update Inventory* operation has failed in the Inventory microservice. The Saga invokes a set of compensating transactions (in red) to adjust the inventory counts, cancel the payment and the order, and return the data for each microservice back to a consistent state.
 
 Saga patterns are typically choreographed as a series of related events, or orchestrated as a set of related commands. In Chapter 4, we discussed the service aggregator pattern that would be the foundation for an orchestrated saga implementation. We also discussed eventing along with Azure Service Bus and Azure Event Grid topics that would be a foundation for a choreographed saga implementation.
 
@@ -122,7 +122,7 @@ This separation enables reads and writes to scale independently. Read operations
 
 Implementing CQRS can improve application performance for cloud-native services. However, it does result in a more complex design. Apply this principle carefully and strategically to those sections of your cloud-native application that will benefit from it. For more on CQRS, see the Microsoft book [.NET Microservices: Architecture for Containerized .NET Applications](https://docs.microsoft.com/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/apply-simplified-microservice-cqrs-ddd-patterns).
 
-### Event Sourcing
+### Event sourcing
 
 Another approach to optimizing high volume data scenarios involves [Event Sourcing](https://docs.microsoft.com/azure/architecture/patterns/event-sourcing).
 
@@ -136,7 +136,7 @@ Event Sourcing takes a different approach to capturing data. Each operation that
 
 **Figure 5-8**. Event Sourcing
 
-In the figure above note how each entry (in blue) for a user's shopping cart is appended to an underlying event store. In the adjoining materialized view, the system projects the current state by replaying all the events associated with each shopping cart. This view, or read model, is then exposed back to the UI. Events can also be integrated with external systems and applications or queried to determine the current state of an entity. With this approach, you maintain history. You know not only the current state of an entity, but also how you reached this state.
+In the previous figure, note how each entry (in blue) for a user's shopping cart is appended to an underlying event store. In the adjoining materialized view, the system projects the current state by replaying all the events associated with each shopping cart. This view, or read model, is then exposed back to the UI. Events can also be integrated with external systems and applications or queried to determine the current state of an entity. With this approach, you maintain history. You know not only the current state of an entity, but also how you reached this state.
 
 Mechanically speaking, event sourcing simplifies the write model. There are no updates or deletes. Appending each data entry as an immutable event minimizes contention, locking, and concurrency conflicts associated with relational databases. Building read models with the materialized view pattern enables you to decouple the view from the write model and choose the best data store to optimize the needs of your application UI.
 
@@ -144,5 +144,6 @@ For this pattern, consider a data store that directly supports event sourcing. A
 
 As with all patterns and technologies, implement strategically and when needed. While event sourcing can provide increased performance and scalability, it comes at the expense of complexity and a learning curve.
 
+>[!div class="step-by-step"]
 >[Previous](service-mesh-communication-infrastructure.md)
 >[Next](relational-vs-nosql-data.md)

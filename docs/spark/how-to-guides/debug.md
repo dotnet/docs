@@ -30,7 +30,7 @@ When you run the command, you see the following output:
 ***********************************************************************
 ```
 
-In this debug mode, `DotnetRunner` does not launch the .NET application but instead waits for it to connect. Leave this command prompt window open.
+In this debug mode, DotnetRunner does not launch the .NET application but instead waits for it to connect. Leave this command prompt window open, and start your .NET application through C# debugger to debug your application.
 
 Now you can start your .NET application with a C# debugger ([Visual Studio Debugger for Windows/macOS](https://visualstudio.microsoft.com/vs/) or [C# Debugger Extension in Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging)) to debug your application.
 

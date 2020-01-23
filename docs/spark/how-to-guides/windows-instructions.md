@@ -25,13 +25,23 @@ If you already have all the prerequisites, skip to the [build](#build) steps bel
      - Install using the installer and verify you are able to run `java` from your command-line.
   4. Install **[Apache Maven 3.6.0+](https://maven.apache.org/download.cgi)**.
      - Download [Apache Maven 3.6.0](http://mirror.metrocast.net/apache/maven/maven-3/3.6.0/binaries/apache-maven-3.6.0-bin.zip).
-     - Extract to a local directory e.g., `c:\bin\apache-maven-3.6.0\`.
-     - Add Apache Maven to your [PATH environment variable](https://www.java.com/en/download/help/path.xml) e.g., `c:\bin\apache-maven-3.6.0\bin`.
+     - Extract to a local directory e.g., `C:\bin\apache-maven-3.6.0\`.
+     - Add Apache Maven to your [PATH environment variable](https://www.java.com/en/download/help/path.xml) e.g., `C:\bin\apache-maven-3.6.0\bin`.
      - Verify you are able to run `mvn` from your command-line.
   5. Install **[Apache Spark 2.3+](https://spark.apache.org/downloads.html)**.
-     - Download [Apache Spark 2.3+](https://spark.apache.org/downloads.html) and extract it into a local folder (e.g., `c:\bin\spark-2.3.2-bin-hadoop2.7\`) using [7-zip](https://www.7-zip.org/).
-     - Add Apache Spark to your [PATH environment variable](https://www.java.com/en/download/help/path.xml) e.g., `c:\bin\spark-2.3.2-bin-hadoop2.7\bin`.
+     - Download [Apache Spark 2.3+](https://spark.apache.org/downloads.html) and extract it into a local folder (e.g., `C:\bin\spark-2.3.2-bin-hadoop2.7\`) using [7-zip](https://www.7-zip.org/). (The supported spark versions are 2.3.*, 2.4.0, 2.4.1, 2.4.3 and 2.4.4)
      - Add a [new environment variable](https://www.java.com/en/download/help/path.xml) `SPARK_HOME` e.g., `C:\bin\spark-2.3.2-bin-hadoop2.7\`.
+
+       ```powershell
+       set SPARK_HOME=C:\bin\spark-2.3.2-bin-hadoop2.7\       
+       ```
+
+     - Add Apache Spark to your [PATH environment variable](https://www.java.com/en/download/help/path.xml) e.g., `C:\bin\spark-2.3.2-bin-hadoop2.7\bin`.
+
+       ```powershell       
+       set PATH=%SPARK_HOME%\bin;%PATH%
+       ```
+     
      - Verify you are able to run `spark-shell` from your command-line.        
         Sample console output:
 
@@ -55,11 +65,11 @@ If you already have all the prerequisites, skip to the [build](#build) steps bel
 
   6. Install **[WinUtils](https://github.com/steveloughran/winutils)**.
      - Download `winutils.exe` binary from [WinUtils repository](https://github.com/steveloughran/winutils). You should select the version of Hadoop the Spark distribution was compiled with, e.g. use hadoop-2.7.1 for Spark 2.3.2.
-     - Save `winutils.exe` binary to a directory of your choice e.g., `c:\hadoop\bin`.
+     - Save `winutils.exe` binary to a directory of your choice e.g., `C:\hadoop\bin`.
      - Set `HADOOP_HOME` to reflect the directory with winutils.exe (without bin). For instance, using command-line:
 
        ```powershell
-       set HADOOP_HOME=c:\hadoop
+       set HADOOP_HOME=C:\hadoop
        ```
 
      - Set PATH environment variable to include `%HADOOP_HOME%\bin`. For instance, using command-line:

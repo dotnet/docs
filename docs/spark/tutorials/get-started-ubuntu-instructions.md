@@ -114,4 +114,4 @@ In this tutorial, you learn how to run your .NET for Apache Spark on Ubuntu. Con
 
 > [Tutorial: Get Started with .NET for Apache Spark on Windows](get-started-windows-instructions.md)
 
-> [Tutorial: Get Started with .NET for Apache Spark on MacOSX](get-started-macos-instructions.md)
+> [Tutorial: Get started with .NET for Apache Spark on macOS](get-started-macos-instructions.md)

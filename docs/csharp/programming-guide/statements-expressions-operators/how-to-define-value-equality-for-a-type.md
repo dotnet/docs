@@ -24,7 +24,7 @@ In either case, and in both classes and structs, your implementation should foll
 4. Successive invocations of `x.Equals(y)` return the same value as long as the objects referenced by x and y are not modified.  
   
 5. Any non-null value is not equal to null. However, the CLR checks for null on all method calls and throws a `NullReferenceException` if the `this` reference would be null. Therefore, `x.Equals(y)` throws an exception when `x` is null. That breaks rules 1 or 2, depending on the argument to `Equals`.
-  
+ 
  Any struct that you define already has a default implementation of value equality that it inherits from the <xref:System.ValueType?displayProperty=nameWithType> override of the <xref:System.Object.Equals%28System.Object%29?displayProperty=nameWithType> method. This implementation uses reflection to examine all the fields and properties in the type. Although this implementation produces correct results, it is relatively slow compared to a custom implementation that you write specifically for the type.  
   
  The implementation details for value equality are different for classes and structs. However, both classes and structs require the same basic steps for implementing equality:  
@@ -64,5 +64,5 @@ In either case, and in both classes and structs, your implementation should foll
 ## See also
 
 -[Equality comparisons](equality-comparisons.md)
-- [C# Programming Guide](../index.md)
+-[C# Programming Guide](../index.md)
  

@@ -14,7 +14,7 @@ ms.date: 01/15/2020
 Windows:
 
 ```powershell
-dotnet-install.ps1 [-Channel] [-Version] [-JSonFile] [-InstallDir] [-Architecture] [-SharedRuntime]
+dotnet-install.ps1 [-Channel] [-Version] [-JSonFile] [-InstallDir] [-Architecture]
     [-Runtime] [-DryRun] [-NoPath] [-Verbose] [-AzureFeed] [-UncachedFeed] [-NoCdn] [-FeedCredential]
     [-ProxyAddress] [-ProxyUseDefaultCredentials] [-SkipNonVersionedFiles] [-Help]
 ```
@@ -22,7 +22,7 @@ dotnet-install.ps1 [-Channel] [-Version] [-JSonFile] [-InstallDir] [-Architectur
 Linux/macOs:
 
 ```bash
-dotnet-install.sh [--channel] [--version] [--jsonfile] [--install-dir] [--architecture] [--shared-runtime]
+dotnet-install.sh [--channel] [--version] [--jsonfile] [--install-dir] [--architecture]
     [--runtime] [--dry-run] [--no-path] [--verbose] [--azure-feed] [--uncached-feed] [--no-cdn] [--feed-credential]
     [--runtime-id] [--skip-non-versioned-files] [--help]
 ```

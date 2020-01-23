@@ -23,7 +23,7 @@ Most diamond dependencies are easily resolved; however, they can create issues i
 
 It's not possible to know what packages will be used alongside your own. A good way to reduce the likelihood of a diamond dependency breaking your library is to minimize the number of packages you depend on.
 
-**✔️ DO** review your .NET library for unnecessary dependencies.
+✔️ DO review your .NET library for unnecessary dependencies.
 
 ## NuGet dependency version ranges
 
@@ -50,11 +50,11 @@ Upper version limits will cause NuGet to fail if there's a conflict. For example
 
 ![Diamond dependency conflict](./media/dependencies/diamond-dependency-conflict.png "Diamond dependency conflict")
 
-**❌ DO NOT** have NuGet package references with no minimum version.
+❌ DO NOT have NuGet package references with no minimum version.
 
-**❌ AVOID** NuGet package references that demand an exact version.
+❌ AVOID NuGet package references that demand an exact version.
 
-**❌ AVOID** NuGet package references with a version upper limit.
+❌ AVOID NuGet package references with a version upper limit.
 
 ## NuGet shared source packages
 
@@ -72,19 +72,19 @@ Shared source packages are great for including small pieces of functionality. Fo
 
 Shared source packages have some limitations. They can only be referenced by `PackageReference`, so older `packages.config` projects are excluded. Also shared source packages are only usable by projects with the same language type. Because of these limitations shared source packages are best used to share functionality within an open-source project.
 
-**✔️ CONSIDER** referencing shared source packages for small, internal pieces of functionality.
+✔️ CONSIDER referencing shared source packages for small, internal pieces of functionality.
 
-**✔️ CONSIDER** making your package a shared source package if it provides small, internal pieces of functionality.
+✔️ CONSIDER making your package a shared source package if it provides small, internal pieces of functionality.
 
-**✔️ DO** reference shared source packages with `PrivateAssets="All"`.
+✔️ DO reference shared source packages with `PrivateAssets="All"`.
 
 > This setting tells NuGet the package is only to be used at development time and shouldn't be exposed as a public dependency.
 
-**❌ DO NOT** have shared source package types in your public API.
+❌ DO NOT have shared source package types in your public API.
 
 > Shared source types are compiled into the referencing assembly and can't be exchanged across assembly boundaries. For example, a shared-source `IRepository` type in one project is a separate type from the same shared-source `IRepository` in another project. Types in shared source packages should have an `internal` visibility.
 
-**❌ DO NOT** publish shared source packages to NuGet.org.
+❌ DO NOT publish shared source packages to NuGet.org.
 
 > Shared source packages contain source code and can only be used by projects with the same language type. For example, a C# shared source package cannot be used by an F# application.
 >

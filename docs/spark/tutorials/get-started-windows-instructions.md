@@ -1,7 +1,7 @@
 ---
 title: Get started with .NET for Apache Spark on Windows
 description: Discover how to run a .NET for Apache Spark app using .NET Core on Windows.
-ms.date: 01/22/2019
+ms.date: 01/22/2020
 ms.topic: tutorial
 ms.custom: mvc
 # Customer intent: As a developer, I want to write a simple custom application using .NET for Apache Spark on Windows.
@@ -25,7 +25,7 @@ This tutorial will show you how to run a .NET for Apache Spark app using .NET Co
 
  > [!IMPORTANT]
  >
- > Create a [new environment variable](https://www.java.com/en/download/help/path.xml) `DOTNET_WORKER_DIR` and set it to the directory where you downloaded and extracted the Microsoft.Spark.Worker (for example, *c:\bin\Microsoft.Spark.Worker*).
+ > Create a [new environment variable](https://www.java.com/en/download/help/path.xml) `DOTNET_WORKER_DIR` and set it to the directory where you downloaded and extracted the Microsoft.Spark.Worker (for example, `c:\bin\Microsoft.Spark.Worker\`).
 
 For detailed instructions, you can see [Building .NET for Apache Spark from Source on Windows](../how-to-guides/windows-instructions.md).
 
@@ -103,6 +103,6 @@ In this tutorial, you learn how to run your .NET for Apache Spark on Windows. Co
 
 > [!div class="nextstepaction"]
 
-> [Tutorial: Get Started with .NET for Apache Spark on Ubuntu](get-started-ubuntu-instructions.md)
+> [Tutorial: Get started with .NET for Apache Spark on Ubuntu](get-started-ubuntu-instructions.md)
 
-> [Tutorial: Get Started with .NET for Apache Spark on MacOSX](get-started-macos-instructions.md)
+> [Tutorial: Get started with .NET for Apache Spark on macOS](get-started-macos-instructions.md)

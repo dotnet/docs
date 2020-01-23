@@ -68,7 +68,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Allow single quotes around string values              | ❌ [Not supported](#json-strings-property-names-and-string-values) |
 | Allow non-string JSON values for string properties    | ❌ [Not supported](#non-string-values-for-string-properties) |
 
-This is not an exhaustive list of `Newtonsoft.Json` features. The list includes many of the scenarios that have been requested in [GitHub issues](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json) or [StackOverflow](https://stackoverflow.com/questions/tagged/system.text.json) posts. If you implement a workaround for one of the scenarios listed here without sample code, and if you want to share your solution, select the "**This page**" button at the bottom of the page. That creates a GitHub issue and adds it to the issues that are listed at the bottom of the page.
+This is not an exhaustive list of `Newtonsoft.Json` features. The list includes many of the scenarios that have been requested in [GitHub issues](https://github.com/dotnet/runtime/issues?q=is%3Aopen+is%3Aissue+label%3Aarea-System.Text.Json) or [StackOverflow](https://stackoverflow.com/questions/tagged/system.text.json) posts. If you implement a workaround for one of the scenarios listed here that doesn't currently have sample code, and if you want to share your solution, select **This page** in the [Feedback section](/dotnet/standard/serialization/system-text-json-migrate-from-newtonsoft-how-to#feedback) of this page. That creates a GitHub issue and lists it at the bottom of this page.
 
 ## Differences in default JsonSerializer behavior compared to Newtonsoft.Json
 

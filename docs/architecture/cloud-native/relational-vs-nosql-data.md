@@ -165,7 +165,7 @@ If your services require fast response from anywhere in the world, high availabi
 
 The previous figure presents many of the built-in cloud-native capabilities available in Cosmos DB. In this section, we’ll take a closer look at them.
 
-### Global Support
+### Global support
 
 Cloud-native applications often have a global audience and require global scale.
 

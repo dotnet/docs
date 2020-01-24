@@ -1,6 +1,5 @@
 ---
 title: "Types - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "value types [C#]"
@@ -62,7 +61,7 @@ C# provides a standard set of built-in numeric types to represent integers, floa
 
 ## Custom types
 
-You use the [struct](../../language-reference/keywords/struct.md), [class](../../language-reference/keywords/class.md), [interface](../../language-reference/keywords/interface.md), and [enum](../../language-reference/keywords/enum.md) constructs to create your own custom types. The .NET class library itself is a collection of custom types provided by Microsoft that you can use in your own applications. By default, the most frequently used types in the class library are available in any C# program. Others become available only when you explicitly add a project reference to the assembly in which they are defined. After the compiler has a reference to the assembly, you can declare variables (and constants) of the types declared in that assembly in source code. For more information, see [.NET Class Library](../../../standard/class-library-overview.md).
+You use the [struct](../../language-reference/keywords/struct.md), [class](../../language-reference/keywords/class.md), [interface](../../language-reference/keywords/interface.md), and [enum](../../language-reference/builtin-types/enum.md) constructs to create your own custom types. The .NET class library itself is a collection of custom types provided by Microsoft that you can use in your own applications. By default, the most frequently used types in the class library are available in any C# program. Others become available only when you explicitly add a project reference to the assembly in which they are defined. After the compiler has a reference to the assembly, you can declare variables (and constants) of the types declared in that assembly in source code. For more information, see [.NET Class Library](../../../standard/class-library-overview.md).
 
 ## The common type system
 
@@ -85,7 +84,7 @@ The following image shows value types and reference types in the CTS:
 
 Value types derive from <xref:System.ValueType?displayProperty=nameWithType>, which derives from <xref:System.Object?displayProperty=nameWithType>. Types that derive from <xref:System.ValueType?displayProperty=nameWithType> have special behavior in the CLR. Value type variables directly contain their values, which means that the memory is allocated inline in whatever context the variable is declared. There is no separate heap allocation or garbage collection overhead for value-type variables.
 
-There are two categories of value types: [struct](../../language-reference/keywords/struct.md) and [enum](../../language-reference/keywords/enum.md).
+There are two categories of value types: [struct](../../language-reference/keywords/struct.md) and [enum](../../language-reference/builtin-types/enum.md).
 
 The built-in numeric types are structs, and they have properties and methods that you can access:
 
@@ -108,15 +107,15 @@ You use the [struct](../../language-reference/keywords/struct.md) keyword to cre
 
 [!code-csharp[csProgGuideObjects#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#1)]
 
-For more information about structs, see [Structs](../classes-and-structs/structs.md). For more information about value types in .NET, see [Value Types](../../language-reference/keywords/value-types.md).
+For more information about structs, see [Structs](../classes-and-structs/structs.md). For more information about value types, see [Value types](../../language-reference/builtin-types/value-types.md).
 
-The other category of value types is [enum](../../language-reference/keywords/enum.md). An enum defines a set of named integral constants. For example, the <xref:System.IO.FileMode?displayProperty=nameWithType> enumeration in the .NET class library contains a set of named constant integers that specify how a file should be opened. It is defined as shown in the following example:
+The other category of value types is [enum](../../language-reference/builtin-types/enum.md). An enum defines a set of named integral constants. For example, the <xref:System.IO.FileMode?displayProperty=nameWithType> enumeration in the .NET class library contains a set of named constant integers that specify how a file should be opened. It is defined as shown in the following example:
 
 [!code-csharp[csProgGuideTypes#44](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsProgGuideTypes/CS/Class1.cs#44)]
 
 The `System.IO.FileMode.Create` constant has a value of 2. However, the name is much more meaningful for humans reading the source code, and for that reason it is better to use enumerations instead of constant literal numbers. For more information, see <xref:System.IO.FileMode?displayProperty=nameWithType>.
 
-All enums inherit from <xref:System.Enum?displayProperty=nameWithType>, which inherits from <xref:System.ValueType?displayProperty=nameWithType>. All the rules that apply to structs also apply to enums. For more information about enums, see [Enumeration Types](../enumeration-types.md).
+All enums inherit from <xref:System.Enum?displayProperty=nameWithType>, which inherits from <xref:System.ValueType?displayProperty=nameWithType>. All the rules that apply to structs also apply to enums. For more information about enums, see [Enumeration types](../../language-reference/builtin-types/enum.md).
 
 ### Reference types
 
@@ -143,7 +142,7 @@ Reference types fully support inheritance. When you create a class, you can inhe
 
 ## Types of literal values
 
-In C#, literal values receive a type from the compiler. You can specify how a numeric literal should be typed by appending a letter to the end of the number. For example, to specify that the value 4.56 should be treated as a float, append an "f" or "F" after the number: `4.56f`. If no letter is appended, the compiler will infer a type for the literal. For more information about which types can be specified with letter suffixes, see the reference pages for individual types in [Value Types](../../language-reference/keywords/value-types.md).
+In C#, literal values receive a type from the compiler. You can specify how a numeric literal should be typed by appending a letter to the end of the number. For example, to specify that the value 4.56 should be treated as a float, append an "f" or "F" after the number: `4.56f`. If no letter is appended, the compiler will infer a type for the literal. For more information about which types can be specified with letter suffixes, see [Integral numeric types](../../language-reference/builtin-types/integral-numeric-types.md) and [Floating-point numeric types](../../language-reference/builtin-types/floating-point-numeric-types.md).
 
 Because literals are typed, and all types derive ultimately from <xref:System.Object?displayProperty=nameWithType>, you can write and compile code such as the following:
 
@@ -180,7 +179,7 @@ For more information, see the following topics:
 
 - [Using Type dynamic](./using-type-dynamic.md)
 
-- [Value Types](../../language-reference/keywords/value-types.md)
+- [Value Types](../../language-reference/builtin-types/value-types.md)
 
 - [Reference Types](../../language-reference/keywords/reference-types.md)
 

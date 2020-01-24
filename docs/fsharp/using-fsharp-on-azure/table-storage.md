@@ -189,5 +189,5 @@ to learn about more complex storage tasks and the Azure Cosmos DB Table API.
 - [Introduction to Azure Cosmos DB Table API](https://docs.microsoft.com/azure/cosmos-db/table-introduction)
 - [Storage Client Library for .NET reference](https://docs.microsoft.com/dotnet/api/overview/azure/storage)
 - [Azure Storage Type Provider](https://fsprojects.github.io/AzureStorageTypeProvider/)
-- [Azure Storage Team Blog](https://blogs.msdn.microsoft.com/windowsazurestorage/)
+- [Azure Storage Team Blog](https://docs.microsoft.com/archive/blogs/windowsazurestorage/)
 - [Configuring Connection Strings](https://docs.microsoft.com/azure/storage/common/storage-configure-connection-string)

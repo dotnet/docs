@@ -1,5 +1,5 @@
 ---
-title: "How to: Bind data to the Windows Forms DataGridView control"
+title: Bind data to DataGridView Control
 ms.date: "02/08/2019"
 dev_langs: 
   - "csharp"

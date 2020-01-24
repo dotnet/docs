@@ -12,7 +12,7 @@ This example creates the string "abcd" from individual characters.
 ## Example  
  [!code-vb[VbVbalrStrings#61](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrStrings/VB/Class2.vb#61)]  
   
-## Compiling the Code  
+## Compile the code  
  This method has no special requirements.  
   
  The syntax `"a"c`, where a single `c` follows a single character in quotation marks, is used to create a character literal.  

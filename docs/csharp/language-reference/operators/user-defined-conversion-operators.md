@@ -43,4 +43,4 @@ For more information, see the following sections of the [C# language specificati
 - [Operator overloading](operator-overloading.md)
 - [Type-testing and cast operators](type-testing-and-cast.md)
 - [Casting and type conversion](../../programming-guide/types/casting-and-type-conversions.md)
-- [Chained user-defined explicit conversions in C#](https://blogs.msdn.microsoft.com/ericlippert/2007/04/16/chained-user-defined-explicit-conversions-in-c/)
+- [Chained user-defined explicit conversions in C#](https://docs.microsoft.com/archive/blogs/ericlippert/chained-user-defined-explicit-conversions-in-c)

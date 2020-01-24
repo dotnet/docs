@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "XML encryption"
   - "decryption"
 ms.assetid: dd5de491-dafe-4b94-966d-99714b2e754a
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Decrypt XML Elements with Asymmetric Keys
 You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace to encrypt and decrypt an element within an XML document.  XML Encryption is a standard way to exchange or store encrypted XML data, without worrying about the data being easily read.  For more information about the XML Encryption standard, see the World Wide Web Consortium (W3C) recommendation [XML Signature Syntax and Processing](https://www.w3.org/TR/xmldsig-core/).  

@@ -1,6 +1,5 @@
 ---
 title: "Delegates with Named vs. Anonymous Methods - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "delegates [C#], with named vs. anonymous methods"
@@ -35,5 +34,5 @@ A [delegate](../../language-reference/builtin-types/reference-types.md) can be a
 
 - [C# Programming Guide](../index.md)
 - [Delegates](./index.md)
-- [How to: Combine Delegates (Multicast Delegates)](./how-to-combine-delegates-multicast-delegates.md)
+- [How to combine delegates (Multicast Delegates)](./how-to-combine-delegates-multicast-delegates.md)
 - [Events](../events/index.md)

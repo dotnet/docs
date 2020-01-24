@@ -96,9 +96,9 @@ The WCF configuration schema is complex and provides users with many hard to fin
 
 - [Standard Endpoint Element](xref:System.ServiceModel.Configuration.StandardEndpointElement)
 
-- [Service configuration improvements in .NET Framework 4](https://blogs.msdn.microsoft.com/endpoint/2009/06/30/service-configuration-improvements-in-net-4/)
+- [Service configuration improvements in .NET Framework 4](https://docs.microsoft.com/archive/blogs/endpoint/service-configuration-improvements-in-net-4)
 
-- [Common User Mistake in .NET 4: Mistyping the WF/WCF Service Configuration Name](https://blogs.msdn.microsoft.com/endpoint/2009/11/09/common-user-mistake-in-net-4-mistyping-the-wfwcf-service-configuration-name/)
+- [Common User Mistake in .NET 4: Mistyping the WF/WCF Service Configuration Name](https://docs.microsoft.com/archive/blogs/endpoint/common-user-mistake-in-net-4-mistyping-the-wfwcf-service-configuration-name)
 
 ### Simplified Configuration Scenarios
 
@@ -122,7 +122,7 @@ The [DataContractResolver](../wcf/samples/datacontractresolver.md) solves these 
 
 - [Data Contract Resolver API documentation](xref:System.Runtime.Serialization.DataContractResolver)
 
-- [Introducing the Data Contract Resolver](https://blogs.msdn.microsoft.com/youssefm/2009/06/05/configuring-known-types-dynamically-introducing-the-datacontractresolver/)
+- [Introducing the Data Contract Resolver](https://docs.microsoft.com/archive/blogs/youssefm/configuring-known-types-dynamically-introducing-the-datacontractresolver)
 
 - Samples:
 
@@ -184,7 +184,7 @@ A flowchart activity can be used to implement a guessing game. The guessing game
 
 ## Procedural activities (Sequence, If, ForEach, Switch, Assign, DoWhile, While)
 
-Procedural activities provide a mechanism to model sequential control flow using concepts that are familiar to programmers. These activities enable traditionally structured programming language constructs and, when appropriate, provide language parity with common procedural languages such as C#/VB.
+Procedural activities provide a mechanism to model sequential control flow using concepts that are familiar to programmers. These activities enable traditionally structured programming language constructs and, when appropriate, provide language parity with common procedural languages such as C# and Visual Basic.
 
 ### Getting Started
 
@@ -226,7 +226,7 @@ The <xref:System.Activities.Statements.InvokeMethod> activity allows invoking pu
 
 ## Error handling activities
 
-The <xref:System.Activities.Statements.TryCatch> activity provides a mechanism for catching exceptions that occur during the execution of a set of contained activities (similar to the Try/Catch construct in C#/VB). <xref:System.Activities.Statements.TryCatch> provides exception handling at the workflow level. When an unhandled exception is thrown, the workflow is aborted and the Finally block won’t be executed. This behavior is consistent with C#.
+The <xref:System.Activities.Statements.TryCatch> activity provides a mechanism for catching exceptions that occur during the execution of a set of contained activities (similar to the Try/Catch construct in C# and Visual Basic). <xref:System.Activities.Statements.TryCatch> provides exception handling at the workflow level. When an unhandled exception is thrown, the workflow is aborted and the Finally block won’t be executed. This behavior is consistent with C#.
 
 ### Getting Started
 
@@ -282,7 +282,7 @@ The routing service in .NET 4 is designed to make these problems easier to solve
 
 2. Samples: [Routing Services &#91;WCF Samples&#93;](../wcf/samples/routing-services.md)
 
-3. Blog: [Routing Rules!](https://blogs.msdn.microsoft.com/RoutingRules/)
+3. Blog: [Routing Rules!](https://docs.microsoft.com/archive/blogs/RoutingRules/)
 
 ### Routing Scenarios
 

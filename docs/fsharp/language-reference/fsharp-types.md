@@ -1,5 +1,5 @@
 ---
-title: F# Types
+title: Types
 description: Learn about the types that are used in F# and how F# types are named and described.
 ms.date: 05/16/2016
 ---

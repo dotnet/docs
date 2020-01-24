@@ -1,5 +1,5 @@
 ---
-title: "Documents in WPF"
+title: "Documents"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "documents [WPF], packaging"

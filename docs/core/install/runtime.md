@@ -37,7 +37,32 @@ macOS has standalone installers that can be used to install the .NET Core 3.1 ru
 
 ## Install with a package manager
 
-You can install the .NET Core Runtime with many of the common Linux package managers. For more information, see [Linux Package Manager - Install .NET Core](linux-package-manager-rhel7.md).
+You can install the .NET Core Runtime with many of the common Linux package managers. For more information, see [Linux Package Manager - Install .NET Core](linux-package-managers.md).
+
+Installing it with a package manager is only supported on the x64 architecture. If you're installing the .NET Core Runtime with a different architecture, such as ARM, follow the instructions on the [Download and manually install](#download-and-manually-install) section. For more information about what architectures are supported, see [.NET Core dependencies and requirements](dependencies.md).
+
+## Download and manually install
+
+To extract the runtime and make the .NET Core CLI commands available at the terminal, first [download](#all-net-core-downloads) a .NET Core binary release. Then, open a terminal and run the following commands.
+
+```bash
+mkdir -p $HOME/dotnet && tar zxf aspnetcore-runtime-3.1.0-linux-x64.tar.gz -C $HOME/dotnet
+export DOTNET_ROOT=$HOME/dotnet
+export PATH=$PATH:$HOME/dotnet
+```
+
+> [!TIP]
+> The preceding `export` commands only make the .NET Core CLI commands available for the terminal session in which it was run.
+>
+> You can edit your shell profile to permanently add the commands. There are a number of different shells available for Linux and each has a different profile. For example:
+>
+> - **Bash Shell**: *~/.bash_profile*, *~/.bashrc*
+> - **Korn Shell**: *~/.kshrc* or *.profile*
+> - **Z Shell**: *~/.zshrc* or *.zprofile*
+> 
+> Edit the appropriate source file for your shell and add `:$HOME/dotnet` to the end of the existing `PATH` statement. If no `PATH` statement is included, add a new line with `export PATH=$PATH:$HOME/dotnet`.
+>
+> Also, add `export DOTNET_ROOT=$HOME/dotnet` to the end of the file.
 
 ::: zone-end
 
@@ -67,7 +92,7 @@ The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for aut
 The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET Core 3.1. You can choose a specific release by specifying the `current` switch. Include the `runtime` switch to install a runtime. Otherwise, the script installs the [SDK](sdk.md).
 
 ```bash
-./dotnet-install.sh --current 3.1 --runtime aspnetcore
+./dotnet-install.sh --channel 3.1 --runtime aspnetcore
 ```
 
 > [!NOTE]

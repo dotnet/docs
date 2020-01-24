@@ -10,12 +10,39 @@ ms.topic: reference
 
 - Determines whether a .NET Core app runs in globalization invariant mode without access to culture-specific data and behavior or whether it has access to cultural data.
 - Default: Run the app with access to cultural data (`false`).
-- For more information, see [.NET Core globalization invariant mode](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md).
+- For more information, see [.NET Core globalization invariant mode](https://github.com/dotnet/runtime/blob/master/docs/design/features/globalization-invariant-mode.md).
 
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | `System.Globalization.Invariant` | `false` - access to cultural data<br/>`true` - run in invariant mode |
+| **MSBuild property** | `InvariantGlobalization` | `false` - access to cultural data<br/>`true` - run in invariant mode |
 | **Environment variable** | `DOTNET_SYSTEM_GLOBALIZATION_INVARIANT` | `0` - access to cultural data<br/>`1` - run in invariant mode |
+
+### Examples
+
+*runtimeconfig.json* file:
+
+```json
+{
+   "runtimeOptions": {
+      "configProperties": {
+         "System.Globalization.Invariant": true
+      }
+   }
+}
+```
+
+Project file:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+</Project>
+```
 
 ## Era year ranges
 

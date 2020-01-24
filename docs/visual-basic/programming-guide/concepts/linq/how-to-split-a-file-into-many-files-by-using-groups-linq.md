@@ -110,9 +110,9 @@ End Class
 
 The program writes a separate file for each group in the same folder as the data files.
 
-## Compiling the Code
+## Compile the code
 
-Create a VB.NET console application project, with an `Imports` statement for the System.Linq namespace.
+Create a Visual Basic console application project, with an `Imports` statement for the System.Linq namespace.
 
 ## See also
 

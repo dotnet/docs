@@ -1,5 +1,6 @@
 ---
-title: "Walkthrough: Hosting Direct3D9 Content in WPF"
+title: Host Direct3D9 content in WPF
+titleSuffix: ""
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Direct3D9 [WPF interoperability], hosting Direct3D9 content"

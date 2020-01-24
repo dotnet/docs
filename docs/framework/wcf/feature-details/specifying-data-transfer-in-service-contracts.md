@@ -135,13 +135,13 @@ public float GetAirfare(
 ```  
   
 ## Describing Empty Messages  
- An empty request message can be described by having no input or reference parameters. For example in C#:  
+ An empty request message can be described by having no input or reference parameters. For example, in C#:  
   
  `[OperationContract]`  
   
  `public int GetCurrentTemperature();`  
   
- For example in VB:  
+ For example, in Visual Basic:  
   
  `<OperationContract()>`  
   

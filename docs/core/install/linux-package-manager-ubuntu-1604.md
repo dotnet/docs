@@ -16,9 +16,9 @@ This article describes how to use a package manager to install .NET Core on Ubun
 
 Before installing .NET, you'll need to:
 
-- Register the Microsoft key
-- register the product repository
-- Install required dependencies
+- Register the Microsoft key.
+- Register the product repository.
+- Install required dependencies.
 
 This only needs to be done once per machine.
 
@@ -89,7 +89,7 @@ If that doesn't work, you can run a manual install with the following commands.
 
 ```bash
 sudo apt-get install -y gpg
-wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor microsoft.asc.gpg
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o microsoft.asc.gpg
 sudo mv microsoft.asc.gpg /etc/apt/trusted.gpg.d/
 wget -q https://packages.microsoft.com/config/ubuntu/16.04/prod.list
 sudo mv prod.list /etc/apt/sources.list.d/microsoft-prod.list

@@ -1,5 +1,5 @@
 ---
-title: "Label Control (Windows Forms)"
+title: "Label Control"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Label control [Windows Forms]"

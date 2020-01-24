@@ -47,7 +47,7 @@ The search pattern describes the text you search for. The following table descri
 [!code-csharp-interactive[Search using regular expressions](../../../samples/snippets/csharp/how-to/strings/SearchStrings.cs#3)]
   
 > [!TIP]
-> The `string` methods are usually better choices when you are searching for an exact string. Regular expressions are better when you are searching for some pattern is a source string.
+> The `string` methods are usually better choices when you are searching for an exact string. Regular expressions are better when you are searching for some pattern in a source string.
 
 ## Does a string follow a pattern?
 

@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Password Text Box with the Windows Forms TextBox Control"
+title: Create a Password Text Box with TextBox Control
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

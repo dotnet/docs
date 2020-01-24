@@ -16,7 +16,6 @@ helpviewer_keywords:
   - ".NET Framework regular expressions, anchors"
   - ".NET Framework regular expressions, atomic zero-width assertions"
 ms.assetid: 336391f6-2614-499b-8b1b-07a6837108a7
-ms.custom: seodec18
 ---
 # Anchors in Regular Expressions
 Anchors, or atomic zero-width assertions, specify a position in the string where a match must occur. When you use an anchor in your search expression, the regular expression engine does not advance through the string or consume characters; it looks for a match in the specified position only. For example, `^` specifies that the match must start at the beginning of a line or string. Therefore, the regular expression `^http:` matches "http:" only when it occurs at the beginning of a line. The following table lists the anchors supported by the regular expressions in .NET.  

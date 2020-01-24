@@ -1,5 +1,6 @@
 ---
-title: "Walkthrough: Hosting a WPF Composite Control in Windows Forms"
+title: Host a WPF composite control in Windows Forms
+titleSuffix: ""
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "hosting WPF content in Windows Forms [WPF]"

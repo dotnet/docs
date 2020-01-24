@@ -1,5 +1,5 @@
 ---
-title: "How to: Specify the Edit Mode for the Windows Forms DataGridView Control"
+title: Specify the Edit Mode for DataGridView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

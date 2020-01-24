@@ -1,5 +1,5 @@
 ---
-title: "PageSetupDialog Component (Windows Forms)"
+title: "PageSetupDialog Component"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "printing [Windows Forms], page setup"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Remove Items from Windows Forms DomainUpDown Controls"
+title: Remove Items from DomainUpDown Controls
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

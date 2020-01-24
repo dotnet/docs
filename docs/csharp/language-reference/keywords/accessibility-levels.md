@@ -1,7 +1,5 @@
 ---
 title: "Accessibility Levels - C# Reference"
-ms.custom: seodec18
-
 ms.date: 12/06/2017
 helpviewer_keywords: 
   - "access modifiers [C#], accessibility levels"

@@ -12,7 +12,7 @@ This example shows how to import the XML namespace prefix `ns` and use it in an 
 ## Example  
  [!code-vb[VbXMLSamples#8](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbXMLSamples/VB/XMLSamples3.vb#8)]  
   
-## Compiling the Code  
+## Compile the code  
  This example requires:  
   
 - A reference to the <xref:System.Xml.Linq> namespace.  

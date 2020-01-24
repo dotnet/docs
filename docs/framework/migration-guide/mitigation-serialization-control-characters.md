@@ -1,6 +1,6 @@
 ---
-title: "Mitigation: Serialization of Control Characters with the DataContractJsonSerializer"
-ms.date: "04/07/2017"
+title: Serialization of control characters with DataContractJsonSerializer
+ms.date: 04/07/2017
 helpviewer_keywords: 
   - ".NET Framework 4.7 retargeting changes"
   - "retargeting changes"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "serialization changes"
 ms.assetid: e065d458-a128-44f2-9f17-66af9d5be954
 ---
-# Mitigation: Serialization of Control Characters with the DataContractJsonSerializer
+# Mitigation: Serialization of control characters with the DataContractJsonSerializer
 
 Starting with the .NET Framework 4.7, the way in which control characters are serialized with the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> has changed to conform to ECMAScript V6 and V8. 
  

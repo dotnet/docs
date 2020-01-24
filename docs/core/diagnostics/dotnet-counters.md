@@ -1,13 +1,11 @@
 ---
 title: dotnet-counters - .NET Core
 description: Learn how to install and use the dotnet-counter command-line tool.
-author: sdmaclea
-ms.author: stmaclea
 ms.date: 10/14/2019
 ---
 # dotnet-counters
 
-**This article applies to: ✓** .NET Core 3.0 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
 
 ## Install dotnet-counters
 
@@ -123,7 +121,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [--refreshInterval] [count
       GC Heap Size (MB)                            811
   ```
 
-- Monitor `EventCounter` values from user-defined `EventSource`. For more information, see [Tutorial: How to measure performance for very frequent events using EventCounters](https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.Tracing/documentation/EventCounterTutorial.md).
+- Monitor `EventCounter` values from user-defined `EventSource`. For more information, see [Tutorial: How to measure performance for very frequent events using EventCounters](https://github.com/dotnet/runtime/blob/master/src/libraries/System.Diagnostics.Tracing/documentation/EventCounterTutorial.md).
 
   ```console
   > dotnet-counters monitor --process-id 1902 Samples-EventCounterDemos-Minimal

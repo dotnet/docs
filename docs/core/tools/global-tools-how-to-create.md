@@ -110,7 +110,7 @@ static void ShowBot(string message)
 
 ### Test the tool
 
-Run the project and see the output. Try these variations of the command-line to see different results:
+Run the project and see the output. Try these variations at the command line to see different results:
 
 ```dotnetcli
 dotnet run

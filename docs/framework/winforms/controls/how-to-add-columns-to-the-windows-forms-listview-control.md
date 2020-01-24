@@ -1,5 +1,5 @@
 ---
-title: "How to: Add Columns to the Windows Forms ListView Control"
+title: Add Columns to ListView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

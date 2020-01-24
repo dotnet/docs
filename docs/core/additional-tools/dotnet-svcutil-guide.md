@@ -3,7 +3,6 @@ title: WCF svcutil tool overview
 description: An overview of the Microsoft WCF dotnet-svcutil tool that adds functionality for .NET Core and ASP.NET Core projects, similar to the WCF svcutil tool for .NET Framework projects.
 author: mlacouture
 ms.date: 02/22/2019
-ms.custom: "seodec18"
 ---
 # WCF dotnet-svcutil tool for .NET Core
 

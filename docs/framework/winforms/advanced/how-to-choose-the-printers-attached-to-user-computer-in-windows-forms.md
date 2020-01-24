@@ -1,5 +1,5 @@
 ---
-title: "How to: Choose the Printers Attached to a User's Computer in Windows Forms"
+title: "How to: Choose the Printers Attached to a User's Computer"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

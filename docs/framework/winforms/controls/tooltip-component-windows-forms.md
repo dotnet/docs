@@ -1,5 +1,5 @@
 ---
-title: "ToolTip Component (Windows Forms)"
+title: "ToolTip Component"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "tooltips [Windows Forms]"

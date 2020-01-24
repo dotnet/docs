@@ -12,7 +12,7 @@ metadata:
   ms.collection: collection
   author: BillWagner
   ms.author: wiwagn
-  ms.date: 12/05/2019
+  ms.date: 12/19/2019
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -31,6 +31,10 @@ highlightedContent:
     - title: "Create your first web app."
       itemType: learn
       url: https://dotnet.microsoft.com/learn/aspnet/hello-world-tutorial/intro
+    # Card
+    - title: "What's new in .NET docs"
+      itemType: whats-new
+      url: whats-new/index.yml
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -45,7 +49,7 @@ conceptualContent:
         - url: core/index.md
           itemType: overview
           text: .NET Core overview
-        - url: core/whats-new/dotnet-core-3-0.md
+        - url: core/whats-new/dotnet-core-3-1.md
           itemType: whats-new
           text: What's new in .NET Core 3.1
         - url: standard/tour.md
@@ -73,6 +77,12 @@ conceptualContent:
         - url: standard/net-standard.md
           itemType: overview
           text: .NET Standard
+        - url: /aspnet/core/
+          itemType: overview
+          text: ASP.NET Core
+        - url: /ef/core/
+          itemType: overview
+          text: Entity Framework Core
         - url: standard/get-started.md
           itemType: get-started
           text: Get started
@@ -94,7 +104,10 @@ conceptualContent:
           text: .NET Core CLI overview
         - url: core/porting/index.md
           itemType: how-to-guide
-          text: Porting from .NET Framework to .NET Core
+          text: Port from .NET Framework to .NET Core
+        - url: core/compatibility/index.md
+          itemType: concept
+          text: .NET Core breaking changes
         - url: desktop-wpf/overview/index.md
           itemType: overview
           text: Create .NET Core desktop apps for Windows

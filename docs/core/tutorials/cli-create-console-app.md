@@ -5,7 +5,7 @@ author: thraka
 ms.author: adegeo
 ms.date: 12/05/2019
 ms.technology: dotnet-cli
-ms.custom: "seodec18,updateeachrelease"
+ms.custom: "updateeachrelease"
 ---
 # Get started with .NET Core on Windows/Linux/macOS using the command line
 
@@ -177,7 +177,7 @@ Hello World!
 As mentioned at the start of this article, an operating system-specific executable was created along with the `Hello.dll`. On Windows, this would be `Hello.exe`; on Linux or macOS, this would be `hello`. With the example above, the file is named with `Hello.exe` or `Hello`. You can run this published executable directly.
 
 ```console
-.\bin\Debug\netcoreapp3.1\Hello.exe
+.\bin\Debug\netcoreapp3.1\publish\Hello.exe
 
 Hello World!
 ```

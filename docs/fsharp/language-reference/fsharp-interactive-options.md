@@ -1,5 +1,5 @@
 ---
-title: F# Interactive Options
+title: Interactive Options
 description: Learn about the command-line options supported by F# Interactive, fsi.exe.
 ms.date: 05/16/2016
 ---

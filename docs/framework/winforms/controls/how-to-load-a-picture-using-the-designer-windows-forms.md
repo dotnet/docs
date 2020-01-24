@@ -1,5 +1,5 @@
 ---
-title: "How to: Load a Picture Using the Designer (Windows Forms)"
+title: "How to: Load a Picture Using the Designer"
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "picture formats"

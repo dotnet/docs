@@ -1,5 +1,6 @@
 ---
 title: "Windows Forms and WPF Property Mapping"
+titleSuffix: ""
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "property mapping [WPF interoperability]"

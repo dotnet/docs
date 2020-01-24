@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "interprocess communication [.NET Framework], pipes"
   - "I/O [.NET Framework], pipes"
 ms.assetid: 7b964ebd-7a4f-4d28-8194-7841f9e4c702
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Pipe Operations in .NET
 Pipes provide a means for interprocess communication. There are two types of pipes:  

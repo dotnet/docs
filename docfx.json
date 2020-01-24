@@ -15,7 +15,6 @@
         "src": "docs",
         "dest": ".",
         "exclude": [
-          "api/overwrites/**",
           "samples/**/*.*",
           "**/includes/**",
           "***/contributing.md"
@@ -136,7 +135,8 @@
       },
       "feedback_product_url": {
         "docs/fsharp/**/**.md": "https://github.com/Microsoft/visualfsharp",
-        "docs/machine-learning/**/**.md": "https://github.com/dotnet/machinelearning"
+        "docs/machine-learning/**/**.md": "https://github.com/dotnet/machinelearning",
+        "docs/standard/data/sqlite/**/*.md": "https://github.com/aspnet/EntityFrameworkCore"
       },
       "ms.prod": {
         "_csharplang/**/*.md": "dotnet-csharp",
@@ -196,8 +196,7 @@
         "docs/framework/configure-apps/file-schema/network/**/**.md": "karelz",
         "docs/framework/configure-apps/file-schema/wcf/**/**.md": "HongGit",
         "docs/framework/configure-apps/file-schema/winforms/**/**.md": "Thraka",
-        "docs/framework/data/adonet/**/**.md": "stevestein",
-        "docs/framework/data/wcf/**/**.md": "HongGit",
+        "docs/framework/data/**/**.md": "stevestein",
         "docs/framework/deployment/**/**.md": "Thraka",
         "docs/framework/get-started/**/**.md": "mairaw",
         "docs/framework/install/**/**.md": "Thraka",
@@ -234,8 +233,9 @@
         "docs/standard/base-types/**/**.md": "Thraka",
         "docs/standard/collections/**/**.md": "billwagner",
         "docs/standard/data/**/**.md": "gewarren",
+        "docs/standard/data/sqlite/**/**.md": "bricelam",
         "docs/standard/datetime/**/**.md": "Thraka",        
-        "docs/standard/design-guidelines/**/**.md": "mairaw",
+        "docs/standard/design-guidelines/**/**.md": "KrzysztofCwalina",
         "docs/standard/events/**/**.md": "gewarren",
         "docs/standard/exceptions/**/**.md": "tdykstra",
         "docs/standard/garbage-collection/**/**.md": "billwagner",
@@ -251,7 +251,8 @@
         "docs/standard/serialization/**/**.md": "tdykstra",
         "docs/standard/threading/**/**.md": "billwagner",
         "docs/standard/whats-new/**/**.md": "mairaw",
-        "docs/visual-basic/**/**.md": "KathleenDollard"
+        "docs/visual-basic/**/**.md": "KathleenDollard",
+        "docs/whats-new/**/**.md": "billwagner"
       },
       "ms.author": {
         "_csharplang/**/*.md": "wiwagn",
@@ -317,6 +318,7 @@
         "docs/standard/base-types/**/**.md": "adegeo",
         "docs/standard/collections/**/**.md": "wiwagn",
         "docs/standard/data/**/**.md": "gewarren",
+        "docs/standard/data/sqlite/**/**.md": "bricelam",
         "docs/standard/datetime/**/**.md": "adegeo",        
         "docs/standard/design-guidelines/**/**.md": "mairaw",
         "docs/standard/events/**/**.md": "gewarren",
@@ -409,6 +411,7 @@
         "docs/framework/winforms/**/**.md": "dotnet-winforms",
         "docs/framework/wpf/**/**.md": "dotnet-wpf",
         "docs/framework/xaml-services/**/**.md": "dotnet-wpf",
+        "docs/standard/data/**/**.md": "dotnet-data",
         "docs/standard/security/**/**.md": "dotnet-security",
         "docs/visual-basic/language-reference/error-messages/**/**.md": "vb-diagnostics"
       },
@@ -496,6 +499,8 @@
         "_csharplang/proposals/csharp-7.3/*.md": "C# 7.3 specification proposals",
         "_csharplang/proposals/csharp-8.0/*.md": "C# 8.0 specification proposals",
         "docs/framework/wcf/**/**.md": "WCF",
+        "docs/framework/winforms/**/**.md": "Windows Forms",
+        "docs/framework/wpf/**/**.md": "WPF",
         "docs/fsharp/tutorials/**/**.md": "F#",
         "docs/fsharp/language-reference/**/**.md": "F#",
         "docs/core/additional-tools/**.md": ".NET Core",
@@ -510,11 +515,9 @@
         "docs/core/versions/**.md": ".NET Core",
         "docs/desktop-wpf/**/**.md": "WPF",
         "docs/machine-learning/**/**.md": "ML.NET",
+        "docs/standard/data/sqlite/**/**.md": "Microsoft.Data.Sqlite",
+        "docs/standard/design-guidelines/**/**.md": "Framework Design Guidelines",
         "docs/visual-basic/**/**.md": "Visual Basic"
-      },
-      "ms.custom": {
-        "docs/fsharp/tutorials/**/**.md": "seodec18",
-        "docs/fsharp/language-reference/**/**.md": "seodec18"
       },
       "open_to_public_contributors": {
 	      "docs/standard/design-guidelines/**.md": false

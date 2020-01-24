@@ -1,5 +1,5 @@
 ---
-title: "OpenFileDialog Component (Windows Forms)"
+title: "OpenFileDialog Component"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Open File dialog box"

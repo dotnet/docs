@@ -38,7 +38,7 @@ Many different types of text files consist of a series of lines, often with simi
 
   Shows how to find all the strings that are present in one list but not the other.
 
-- [How to: Sort or Filter Text Data by Any Word or Field (LINQ) (C#)](how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md)
+- [How to sort or filter text data by any word or field (LINQ) (C#)](how-to-sort-or-filter-text-data-by-any-word-or-field-linq.md)
 
   Shows how to sort text lines based on any word or field.
 
@@ -46,7 +46,7 @@ Many different types of text files consist of a series of lines, often with simi
 
   Shows how to reorder fields in a line in a .csv file.
 
-- [How to: combine and compare string collections (LINQ) (C#)](how-to-combine-and-compare-string-collections-linq.md)
+- [How to combine and compare string collections (LINQ) (C#)](how-to-combine-and-compare-string-collections-linq.md)
 
   Shows how to combine string lists in various ways.
 
@@ -58,7 +58,7 @@ Many different types of text files consist of a series of lines, often with simi
   
   Shows how to combine strings in two lists into a single string by using a matching key.
 
-- [How to: Split a File Into Many Files by Using Groups (LINQ) (C#)](how-to-split-a-file-into-many-files-by-using-groups-linq.md)
+- [How to split a file into many files by using groups (LINQ) (C#)](how-to-split-a-file-into-many-files-by-using-groups-linq.md)
   
   Shows how to create new files by using a single file as a data source.
 

@@ -18,7 +18,7 @@ The **ServiceModelSamples** virtual directory is used for building and running a
 
 2. Ensure that .NET Framework 4 is installed. Search the following directory for v4.0 (or later): **\Windows\Microsoft.NET\Framework**
 
-3. If Visual Studio 2012 is not installed, and your operating system is not Windows Server 2008 SP2 or later, install [Hotfix 251798](https://go.microsoft.com/fwlink/?LinkId=184693).
+3. Ensure you have Visual Studio 2012 or later installed, or your operating system is Windows Server 2008 SP2 or later.
 
 4. Run the following commands. For more information about why these commands must be run, see [IIS Hosted Service Fails](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms752252(v=vs.90)).
 
@@ -57,7 +57,7 @@ The **ServiceModelSamples** virtual directory is used for building and running a
     > [!NOTE]
     > If this step is not completed, all IIS-hosted samples will fail while building. Ensure that you set the permissions correctly, or run both the SDK command prompt and Visual Studio Command Prompt (2012) as Administrator.
 
-11. Create a C:\logs directory on the computer; some samples might be expecting it. Make sure that the appropriate account has write access granted to this folder. For Windows 7, Windows Vista, and Windows Server 2008 R2, this account is **Network Service**. For  [!INCLUDE[lserver](../../../../includes/lserver-md.md)], the account is NT Authority\Network Service. For [!INCLUDE[wxp](../../../../includes/wxp-md.md)] and [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)], the account is ASPNET.
+11. Create a C:\logs directory on the computer; some samples might be expecting it. Make sure that the appropriate account has write access granted to this folder. For Windows 7, Windows Vista, and Windows Server 2008 R2, this account is **Network Service**. For  Windows Server 2008, the account is NT Authority\Network Service. For [!INCLUDE[wxp](../../../../includes/wxp-md.md)] and Windows Server 2003, the account is ASPNET.
 
 12. Run the Setupcerttool.bat file. This file is located in the  \<InstallPath>\WF_WCF_Samples\WCF\Setup\  folder.  This script will perform the following tasks:
 

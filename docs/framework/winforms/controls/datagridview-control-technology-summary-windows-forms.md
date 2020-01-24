@@ -1,5 +1,5 @@
 ---
-title: "DataGridView Control Technology Summary (Windows Forms)"
+title: "DataGridView Control Technology Summary"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], about DataGridView control"

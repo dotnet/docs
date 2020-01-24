@@ -1,5 +1,5 @@
 ---
-title: "MainMenu Component (Windows Forms)"
+title: "MainMenu Component"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "MainMenu control [Windows Forms]"

@@ -159,7 +159,7 @@ public class ExampleClass
 
 `System.Text.Json` doesn't deserialize non-string values into string properties. A non-string value received for a string field results in a [JsonException](xref:System.Text.Json.JsonException) with the following message:
 
-```
+```output
 The JSON value could not be converted to System.String.
 ```
 

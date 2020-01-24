@@ -20,7 +20,9 @@ Dim root1 As XName = "Root"
 Dim data As XName = "Data"
 Dim id As XName = "ID"
 
-Dim root2 As New XElement(root1, New XElement(data, New XAttribute(id, "1"), "4,100,000"), New XElement(data, New XAttribute(id, "2"), "3,700,000"), New XElement(data, New XAttribute(id, "3"), "1,150,000"))
+Dim root2 As New XElement(root1, New XElement(data, New XAttribute(id, "1"), "4,100,000"),
+                          New XElement(data, New XAttribute(id, "2"), "3,700,000"),
+                          New XElement(data, New XAttribute(id, "3"), "1,150,000"))
 
 Console.WriteLine(root2)
 ```
@@ -43,7 +45,10 @@ Dim root1 As XName = aw + "Root"
 Dim data As XName = aw + "Data"
 Dim id As XName = "ID"
 
-Dim root2 As New XElement(root1, New XAttribute(XNamespace.Xmlns + "aw", aw), New XElement(data, New XAttribute(id, "1"), "4,100,000"), New XElement(data, New XAttribute(id, "2"), "3,700,000"), New XElement(data, New XAttribute(id, "3"), "1,150,000"))
+Dim root2 As New XElement(root1, New XAttribute(XNamespace.Xmlns + "aw", aw),
+                          New XElement(data, New XAttribute(id, "1"), "4,100,000"),
+                          New XElement(data, New XAttribute(id, "2"), "3,700,000"),
+                          New XElement(data, New XAttribute(id, "3"), "1,150,000"))
 
 Console.WriteLine(root2)
 ```
@@ -66,7 +71,8 @@ Dim data As XName = "Data"
 Dim id As XName = "ID"
   
 Dim sw As Stopwatch = Stopwatch.StartNew()
-Dim root2 As New XElement(root1, From i In Enumerable.Range(1, 100000) Select New XElement(data, New XAttribute(ID, i), i * 5))
+Dim root2 As New XElement(root1, From i In Enumerable.Range(1, 100000)
+                                 Select New XElement(data, New XAttribute(ID, i), i * 5))
 sw.Stop()
 Console.WriteLine($"Time to construct: {sw.ElapsedMilliseconds} milliseconds")
 ```  
@@ -75,7 +81,8 @@ The previous example performs better than the following example, in which names 
 
 ```vb
 Dim sw As Stopwatch = Stopwatch.StartNew()
-Dim root As New XElement("Root", From i In Enumerable.Range(1, 100000) Select New XElement("Data", New XAttribute("ID", i), i * 5))
+Dim root As New XElement("Root", From i In Enumerable.Range(1, 100000)
+                                 Select New XElement("Data", New XAttribute("ID", i), i * 5))
 sw.Stop()
 Console.WriteLine($"Time to construct: {sw.ElapsedMilliseconds} milliseconds")
 ```

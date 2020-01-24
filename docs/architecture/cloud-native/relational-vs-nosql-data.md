@@ -203,7 +203,7 @@ In the previous figure, 5-13, note the [Table API](https://docs.microsoft.com/az
 
 Microservices that consume Azure Table storage can easily migrate to the Cosmos DB Table API. No code changes are required.
 
-### Tunable Consistency
+### Tunable consistency
 
 Earlier in the *Relational vs. NoSQL* section, we discussed the subject of *data consistency*. Data consistency refers to the *integrity* of your data. Cloud-native services with distributed data rely on replication and must make a fundamental tradeoff between read consistency, availability, and latency.
 

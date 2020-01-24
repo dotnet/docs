@@ -183,7 +183,7 @@ The [Multi-Master](https://docs.microsoft.com/azure/cosmos-db/multi-master-benef
 
 With the Cosmos DB [Multi-Homing APIs](https://docs.microsoft.com/azure/cosmos-db/distribute-data-globally), your microservice is automatically aware of the nearest Azure region and sends requests to it. The nearest region is identified by Cosmos DB without any configuration changes. Should a region become unavailable, the Multi-Homing feature will automatically route requests to the next nearest available region.
 
-### Multi-Model Support
+### Multi-model support
 
 When replatforming monolithic applications to a cloud-native architecture, development teams sometimes have to migrate open-source, NoSQL data stores. Cosmos DB can help you preserve your investment in these NoSQL datastores with its *multi-model* data platform. Figure 5-13 shows the supported NoSQL [compatibility APIs](https://www.wikiwand.com/en/Cosmos_DB).
 

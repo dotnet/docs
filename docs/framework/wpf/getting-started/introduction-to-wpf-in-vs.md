@@ -1,5 +1,6 @@
 ---
 title: "Introduction to WPF in Visual Studio"
+titleSuffix: ""
 ms.date: "01/26/2018"
 helpviewer_keywords: 
   - "typography [WPF]"

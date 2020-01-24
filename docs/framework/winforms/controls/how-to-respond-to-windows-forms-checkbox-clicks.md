@@ -1,5 +1,5 @@
 ---
-title: "How to: Respond to Windows Forms CheckBox Clicks"
+title: Respond to CheckBox Clicks
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

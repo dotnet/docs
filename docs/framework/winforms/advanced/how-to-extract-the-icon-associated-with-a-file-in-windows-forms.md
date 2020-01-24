@@ -1,5 +1,5 @@
 ---
-title: "How to: Extract the Icon Associated with a File in Windows Forms"
+title: "How to: Extract the Icon Associated with a File"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

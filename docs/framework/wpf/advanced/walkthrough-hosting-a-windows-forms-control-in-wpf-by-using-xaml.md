@@ -1,5 +1,6 @@
 ---
-title: "Walkthrough: Hosting a Windows Forms Control in WPF by Using XAML"
+title: Host a Windows Forms control in WPF using XAML
+titleSuffix: ""
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "hosting Windows Forms control in WPF [WPF]"

@@ -18,7 +18,7 @@ The **ServiceModelSamples** virtual directory is used for building and running a
 
 2. Ensure that .NET Framework 4 is installed. Search the following directory for v4.0 (or later): **\Windows\Microsoft.NET\Framework**
 
-3. If Visual Studio 2012 is not installed, and your operating system is not Windows Server 2008 SP2 or later, install [Hotfix 251798](https://go.microsoft.com/fwlink/?LinkId=184693).
+3. Ensure you have Visual Studio 2012 or later installed, or your operating system is Windows Server 2008 SP2 or later.
 
 4. Run the following commands. For more information about why these commands must be run, see [IIS Hosted Service Fails](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms752252(v=vs.90)).
 

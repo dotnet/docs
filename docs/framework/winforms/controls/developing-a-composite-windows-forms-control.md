@@ -1,5 +1,5 @@
 ---
-title: "Developing a Composite Windows Forms Control"
+title: Develop a Composite Control
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "custom controls [Windows Forms], composite controls"

@@ -1,5 +1,6 @@
 ---
-title: "WPF and Windows Forms Interoperation"
+title: WPF and Windows Forms interop
+titleSuffix: ""
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Forms [WPF], interoperability with"

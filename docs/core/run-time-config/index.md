@@ -1,7 +1,7 @@
 ---
-title: Run-time config
+title: Run-time config options
 description: Learn how to configure .NET Core applications by using run-time configuration settings.
-ms.date: 11/13/2019
+ms.date: 01/21/2020
 ---
 # .NET Core run-time configuration settings
 
@@ -12,49 +12,95 @@ ms.date: 11/13/2019
 - Multiple instances of your application run at the same time on a single system, and you want to configure each for optimum performance.
 
 > [!NOTE]
-> This documentation is a work in progress. If you notice that the information presented here is either incomplete or inaccurate, either [open an issue](https://github.com/dotnet/docs/issues) to let us know about it, or [submit a pull request](https://github.com/dotnet/docs/pulls) to address the issue. For information on submitting pull requests for the dotnet/docs repository, see the [contributor's guide](https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md).
+> This documentation is a work in progress. If you notice that the information presented here is either incomplete or inaccurate, either [open an issue](https://github.com/dotnet/docs/issues) to let us know about it, or [submit a pull request](https://github.com/dotnet/docs/pulls) to address the issue. For information about submitting pull requests for the dotnet/docs repository, see the [contributor's guide](https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md).
 
-.NET Core provides the following mechanisms for configuring applications at run time:
+.NET Core provides the following mechanisms for configuring run-time application behavior:
 
 - The [runtimeconfig.json file](#runtimeconfigjson)
 
+- [MSBuild properties](#msbuild-properties)
+
 - [Environment variables](#environment-variables)
 
-The articles in this section of the documentation include are organized by category, for example, debugging and garbage collection. Where applicable, configuration options are shown for *runtimeconfig.json* (.NET Core only), *app.config* (.NET Framework only), and environment variables.
+Some configuration values can also be set programmatically by calling the <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method.
+
+The articles in this section of the documentation are organized by category, for example, [debugging](debugging-profiling.md) and [garbage collection](garbage-collector.md). Where applicable, configuration options are shown for *runtimeconfig.json* files, MSBuild properties, environment variables, and, for cross-reference, *app.config* files for .NET Framework projects.
 
 ## runtimeconfig.json
 
-Specify run-time configuration options in the **configProperties** section of the app's *runtimeconfig.json* file. This section has the form:
+When a project is [built](../tools/dotnet-build.md), an *[appname].runtimeconfig.json* file is generated in the output directory. If a *runtimeconfig.template.json* file exists in the same folder as the project file, any configuration options it contains are merged into the *[appname].runtimeconfig.json* file. If you're building the app yourself, put any configuration options in the *runtimeconfig.template.json* file. If you're just running the app, insert them directly into the *[appname].runtimeconfig.json* file.
+
+> [!NOTE]
+> The *[appname].runtimeconfig.json* file will get overwritten on subsequent builds.
+
+Specify run-time configuration options in the **configProperties** section of the *runtimeconfig.json* files. This section has the form:
 
 ```json
-{
-   "runtimeOptions": {
-      "configProperties": {
-         "config-property-name1": "config-value1",
-         "config-property-name2": "config-value2"
-      }
-   }
+"configProperties": {
+  "config-property-name1": "config-value1",
+  "config-property-name2": "config-value2"
 }
 ```
 
-Here is an example file:
+### Example [appname].runtimeconfig.json file
+
+If you're placing the options in the output JSON file, nest them under the `runtimeOptions` property.
 
 ```json
 {
-   "runtimeOptions": {
-      "configProperties": {
-         "System.GC.Concurrent": true,
-         "System.GC.RetainVM": true,
-         "System.Threading.ThreadPool.MinThreads": "4",
-         "System.Threading.ThreadPool.MaxThreads": "25"
-      }
-   }
+  "runtimeOptions": {
+    "tfm": "netcoreapp3.1",
+    "framework": {
+      "name": "Microsoft.NETCore.App",
+      "version": "3.1.0"
+    },
+    "configProperties": {
+      "System.GC.Concurrent": false,
+      "System.Threading.ThreadPool.MinThreads": 4,
+      "System.Threading.ThreadPool.MaxThreads": 25
+    }
+  }
 }
 ```
 
-The *runtimeconfig.json* file is automatically created in the build directory by the [dotnet build](../tools/dotnet-build.md) command. It's also created when you select the **Build** menu option in Visual Studio. You can then edit the file once it's created.
+### Example runtimeconfig.template.json file
 
-Some configuration values can also be set programmatically by calling the <xref:System.AppContext.SetSwitch%2A?displayProperty=nameWithType> method.
+If you're placing the options in the template JSON file, omit the `runtimeOptions` property.
+
+```json
+{
+  "configProperties": {
+    "System.GC.Concurrent": false,
+    "System.Threading.ThreadPool.MinThreads": "4",
+    "System.Threading.ThreadPool.MaxThreads": "25"
+  }
+}
+```
+
+## MSBuild properties
+
+Some run-time configuration options can be set using MSBuild properties in the *.csproj* or *.vbproj* file of SDK-style .NET Core projects. MSBuild properties take precedence over options set in the *runtimeconfig.template.json* file. They also overwrite any options you set in the *[appname].runtimeconfig.json* file at build time.
+
+Here is an example SDK-style project file with MSBuild properties for configuring run-time behavior:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <ConcurrentGarbageCollection>false</ConcurrentGarbageCollection>
+    <ThreadPoolMinThreads>4</ThreadPoolMinThreads>
+    <ThreadPoolMaxThreads>25</ThreadPoolMaxThreads>
+  </PropertyGroup>
+
+</Project>
+```
+
+MSBuild properties for configuring run-time behavior are noted in the individual articles for each area, for example, [garbage collection](garbage-collector.md).
 
 ## Environment variables
 

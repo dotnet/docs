@@ -1,5 +1,5 @@
 ---
-title: "ClickOnce Deployment for Windows Forms"
+title: "ClickOnce Deployment"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "ClickOnce deployment [Windows Forms]"

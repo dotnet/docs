@@ -1,5 +1,5 @@
 ---
-title: "How to: Hide Column Headers in the Windows Forms DataGridView Control"
+title: Hide Column Headers in DataGridView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

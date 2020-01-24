@@ -1,5 +1,5 @@
 ---
-title: "Data Sources Supported by Windows Forms"
+title: Supported Data Sources
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "collections [Windows Forms], binding to"

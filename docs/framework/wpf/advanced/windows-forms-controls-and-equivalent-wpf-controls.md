@@ -1,5 +1,6 @@
 ---
 title: "Windows Forms Controls and Equivalent WPF Controls"
+titleSuffix: ""
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Forms [WPF], interoperability with"

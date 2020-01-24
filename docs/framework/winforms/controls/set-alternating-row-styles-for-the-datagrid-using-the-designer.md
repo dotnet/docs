@@ -1,5 +1,5 @@
 ---
-title: "How to: Set Alternating Row Styles for the Windows Forms DataGridView Control Using the Designer"
+title: Set Alternating Row Styles for DataGridView Control Using the Designer
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "ledger-like formats"

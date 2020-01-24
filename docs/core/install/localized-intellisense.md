@@ -1,7 +1,7 @@
 ---
 title: Install localized IntelliSense files
 description: Learn how to set up your development machine to use localized IntelliSense files for .NET Core projects in Visual Studio.
-ms.date: 12/18/2019
+ms.date: 01/23/2020
 ---
 # How to install localized IntelliSense files for .NET Core
 
@@ -26,7 +26,7 @@ ms.date: 12/18/2019
 
 1. Extract the contents of the zip file.
 
-1. Navigate to the moniker folder.
+1. Navigate to the .NET Core Intellisense folder.
 
    1. Navigate to the .NET Core installation folder. By default, it's under *%ProgramFiles%\dotnet\packs*.
    1. Choose which SDK you want to install the IntelliSense for, and navigate to the associated path. You have the following options:
@@ -69,7 +69,7 @@ For Visual Studio to use a different language for IntelliSense, install the appr
 If you didn't install the desired language pack during setup, update Visual Studio as follows to install the language pack:
 
 > [!IMPORTANT]
-> To install, update, or modify Visual Studio, you must log on with an account that has administration permission. For more information, see [User permissions and Visual Studio](/visualstudio/ide/user-permissions-and-visual-studio).
+> To install, update, or modify Visual Studio, you must log on with an account that has administrator permission. For more information, see [User permissions and Visual Studio](/visualstudio/ide/user-permissions-and-visual-studio).
 
 1. Find the Visual Studio Installer on your computer.
 

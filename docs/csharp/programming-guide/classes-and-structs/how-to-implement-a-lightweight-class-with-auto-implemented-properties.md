@@ -52,6 +52,8 @@ class Contact
 {
     // Read-only property.
     public string Name { get; }
+
+    // Read-write property with a private set accessor.
     public string Address { get; private set; }
 
     // Public constructor.
@@ -67,7 +69,9 @@ class Contact
 // static method and private constructor to initialize its properties.
 public class Contact2
 {
+    // Read-write property with a private set accessor.
     public string Name { get; private set; }
+
     // Read-only property.
     public string Address { get; }
 

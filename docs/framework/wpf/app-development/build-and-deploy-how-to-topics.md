@@ -16,7 +16,6 @@ The following topics show how to create project files for the various [!INCLUDE[
 
 - [Configure IIS 5.0 and IIS 6.0 to Deploy WPF Applications](how-to-configure-iis-5-0-and-iis-6-0-to-deploy-wpf-applications.md)
 - [Configure Visual Studio to Debug a XAML Browser Application to Call a Web Service](configure-vs-to-debug-a-xaml-browser-to-call-a-web-service.md)
-- [Determine the Installed Version of WPF](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa349641(v=vs.90))
 - [Detect Whether the .NET Framework 3.0 Is Installed](how-to-detect-whether-the-net-framework-3-0-is-installed.md)
 - [Detect Whether the .NET Framework 3.5 Is Installed](how-to-detect-whether-the-net-framework-3-5-is-installed.md)
 - [Detect Whether the WPF Plug-In for Firefox Is Installed](how-to-detect-whether-the-wpf-plug-in-for-firefox-is-installed.md)
@@ -27,3 +26,4 @@ The following topics show how to create project files for the various [!INCLUDE[
 - [Deploying a WPF Application](deploying-a-wpf-application-wpf.md)
 - [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md)
 - [How to: Create a New WPF Browser Application Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb628663(v=vs.100))
+- [Determine the Installed Version of WPF](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa349641(v=vs.90))

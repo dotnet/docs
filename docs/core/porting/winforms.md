@@ -3,7 +3,7 @@ title: Port a Windows Forms app to .NET Core
 description: Teaches you how to port a .NET Framework Windows Forms application to .NET Core for Windows.
 author: Thraka
 ms.author: adegeo
-ms.date: 03/01/2019
+ms.date: 01/24/2020
 ---
 # How to port a Windows Forms desktop app to .NET Core
 
@@ -54,10 +54,6 @@ When porting a .NET Framework Windows Forms application, there are a few things 
 01. Update the NuGet packages used by your project.
 
     It's always a good practice to use the latest versions of NuGet packages before any migration. If your application is referencing any NuGet packages, update them to the latest version. Ensure your application builds successfully. After upgrading, if there are any package errors, downgrade the package to the latest version that doesn't break your code.
-
-01. Visual Studio 2019 doesn't yet support the Forms Designer for .NET Core 3.0
-
-    Currently, you need to keep your existing .NET Framework Windows Forms project file if you want to use the Forms Designer from Visual Studio.
 
 ## Create a new SDK project
 

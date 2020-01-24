@@ -1,7 +1,7 @@
 ---
 title: Deploy a .NET for Apache Spark application to Azure HDInsight
 description: Discover how to deploy a .NET for Apache Spark application to HDInsight.
-ms.date: 05/17/2019
+ms.date: 01/23/2020
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to deployment .NET for Apache Spark application to HDInsight.
@@ -165,7 +165,7 @@ Once your cluster is running and you've uploaded your files to Azure, you run th
    ```bash
    $SPARK_HOME/bin/spark-submit \
    --master yarn \
-   --class org.apache.spark.deploy.DotnetRunner \
+   --class org.apache.spark.deploy.dotnet.DotnetRunner \
    wasbs://mycontainer@mystorageaccount.blob.core.windows.net/microsoft-spark-2.3.x-0.6.0.jar \
    wasbs://mycontainer@mystorageaccount.blob.core.windows.net/publish.zip mySparkApp
    ```

@@ -1,5 +1,5 @@
 ---
-title: Add web browser capabilities to a Windows Forms application
+title: Add web browser capabilities to application
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

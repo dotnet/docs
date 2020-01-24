@@ -128,25 +128,9 @@ Project file:
 
 ## ReadyToRun
 
-- 
-- Default: Enabled (`true`).
+- Configures whether the .NET Core runtime uses pre-compiled images for framework code (and user assemblies, if pre-compiled images are available). Disabling this option forces the runtime to JIT-compile framework code.
+- Default: Enabled (`1`).
 
 | | Setting name | Values |
 | - | - | - |
-| **runtimeconfig.json** | 
-| **MSBuild property** | `PublishReadyToRun` | `true` - enabled<br/>`false` - disabled |
 | **Environment variable** | `COMPlus_ReadyToRun` | `1` - enabled<br/>`0` - disabled |
-
-### Examples
-
-Project file:
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <PropertyGroup>
-    <PublishReadyToRun>false</PublishReadyToRun>
-  </PropertyGroup>
-
-</Project>
-```

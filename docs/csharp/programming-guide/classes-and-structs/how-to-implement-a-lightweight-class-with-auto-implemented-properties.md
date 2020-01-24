@@ -67,8 +67,8 @@ class Contact
 // static method and private constructor to initialize its properties.
 public class Contact2
 {
-    // Read-only property.
     public string Name { get; private set; }
+    // Read-only property.
     public string Address { get; }
 
     // Private constructor.

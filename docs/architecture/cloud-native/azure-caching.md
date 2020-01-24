@@ -30,7 +30,7 @@ Cloud native applications typically implement a distributed caching architecture
 
 ![Caching in a cloud native app](media/caching-in-a-cloud-native-app.png)
 
-**Figure 5-20**: Caching in a cloud native app
+**Figure 5-19**: Caching in a cloud native app
 
 In the previous figure, note how the cache is independent of and shared by the microservices. In this scenario, the cache is invoked by the [API Gateway](./front-end-communication.md). As discussed in chapter 4, the gateway serves as a front end for all incoming requests. The distributed cache increases system responsiveness by returning cached data whenever possible. Additionally, separating the cache from the services allows the cache to scale up or out independently to meet increased traffic demands.
 

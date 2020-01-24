@@ -245,13 +245,9 @@ Internally, Cosmos DB automatically manages the placement of [logical partitions
 
 *NewSQL* is an emerging database technology that combines the distributed scalability of NoSQL with the ACID guarantees of a relational database. NewSQL databases are important for business systems that must process high-volumes of data, across distributed environments, with full transactional support and ACID compliance. While a NoSQL database can provide massive scalability, it does not guarantee data consistency. Intermittent problems from inconsistent data can place a burden on the development team. Developers must construct safeguards into their microservice code to manage problems caused by inconsistent data.
 
-The Cloud Native Computing Foundation (CNCF) features several NewSQL database projects, shown in Figure 5-19.
+The Cloud Native Computing Foundation (CNCF) features several NewSQL database projects.
 
-![CNCF databases](./media/cncf-databases.png)
-
-**Figure 5-19**. Cloud-native databases
-
-| Product | Characteristics |
+| Project | Characteristics |
 | :-------- | :-------- |
 | Cockroach DB |An ACID compliant, relational database that scales globally. Add a new node to a cluster and CockroachDB takes care of balancing the data across instances and geographies. It creates, manages and distributes replicas to ensure reliability. It’s open source and freely available.  |
 | TiDB | An open-source database that supports Hybrid Transactional and Analytical Processing (HTAP) workloads. It is MySQL-compatible and features horizontal scalability, strong consistency, and high availability.  TiDB acts like a MySQL server. You can continue to use existing MySQL client libraries, without requiring extensive code changes to your application. |

@@ -65,14 +65,16 @@ The use of XML doc comments requires delimiters, which indicate to the compiler 
 
   - The compiler finds no pattern in the following comment for two reasons. First, the number of spaces before the asterisk is not consistent. Second, the fifth line begins with a tab, which does not match spaces. Therefore, all text from lines two through five is processed as part of the comment.
 
+    <!-- markdownlint-disable MD010 -->
     ```csharp
     /**
       * <summary>
       * text
      *  text2
-		*  </summary>
+    	*  </summary>
     */
     ```
+    <!-- markdownlint-enable MD010 -->
 
 ## See also
 

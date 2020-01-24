@@ -1,5 +1,5 @@
 ---
-title: "How to: Determine When Formatting Attributes Change in the Windows Forms RichTextBox Control"
+title: Determine When Formatting Attributes Change in RichTextBox Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

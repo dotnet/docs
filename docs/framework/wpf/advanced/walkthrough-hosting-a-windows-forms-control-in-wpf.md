@@ -1,5 +1,6 @@
 ---
-title: "Walkthrough: Hosting a Windows Forms Control in WPF"
+title: Host a Windows Forms control in WPF
+titleSuffix: ""
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

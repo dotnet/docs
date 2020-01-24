@@ -1,5 +1,5 @@
 ---
-title: "Column Fill Mode in the Windows Forms DataGridView Control"
+title: Column Fill Mode in DataGridView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

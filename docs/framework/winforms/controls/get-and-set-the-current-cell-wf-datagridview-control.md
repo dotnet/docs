@@ -1,5 +1,5 @@
 ---
-title: "How to: Get and Set the Current Cell in the Windows Forms DataGridView Control"
+title: Get and Set the Current Cell in DataGridView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

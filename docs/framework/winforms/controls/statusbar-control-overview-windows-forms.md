@@ -1,5 +1,5 @@
 ---
-title: "StatusBar Control Overview (Windows Forms)"
+title: "StatusBar Control Overview"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "StatusBar"

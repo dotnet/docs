@@ -1,5 +1,5 @@
 ---
-title: "TableLayoutPanel Control (Windows Forms)"
+title: "TableLayoutPanel Control"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "TableLayoutPanel control [Windows Forms]"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Customize Sorting in the Windows Forms DataGridView Control"
+title: Customize Sorting in a DataGridView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

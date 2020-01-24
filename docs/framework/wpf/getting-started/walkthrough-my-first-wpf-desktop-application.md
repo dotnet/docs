@@ -1,5 +1,6 @@
 ---
-title: 'Tutorial: Create your first WPF application in Visual Studio 2019 - .NET Framework'
+title: Create your first WPF app in Visual Studio 2019 - .NET Framework
+titleSuffix: ""
 ms.date: 09/06/2019
 dev_langs:
   - "csharp"

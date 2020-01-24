@@ -15,7 +15,34 @@ ms.topic: reference
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | `System.Globalization.Invariant` | `false` - access to cultural data<br/>`true` - run in invariant mode |
+| **MSBuild property** | `InvariantGlobalization` | `false` - access to cultural data<br/>`true` - run in invariant mode |
 | **Environment variable** | `DOTNET_SYSTEM_GLOBALIZATION_INVARIANT` | `0` - access to cultural data<br/>`1` - run in invariant mode |
+
+### Examples
+
+*runtimeconfig.json* file:
+
+```json
+{
+   "runtimeOptions": {
+      "configProperties": {
+         "System.Globalization.Invariant": true
+      }
+   }
+}
+```
+
+Project file:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+</Project>
+```
 
 ## Era year ranges
 

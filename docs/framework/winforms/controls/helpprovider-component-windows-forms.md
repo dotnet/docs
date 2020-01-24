@@ -1,5 +1,5 @@
 ---
-title: "HelpProvider Component (Windows Forms)"
+title: "HelpProvider Component"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "forms [Windows Forms], Help"

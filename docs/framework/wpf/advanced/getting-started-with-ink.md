@@ -1,5 +1,5 @@
 ---
-title: Create an InkCanvas in a WPF app in Visual Studio
+title: Create InkCanvas in Visual Studio
 ms.date: 08/15/2018
 dev_langs:
   - "csharp"

@@ -32,10 +32,10 @@ class Contact
         Address = contactAddress;
     }
 
-    // Name isn't accessible here. This will generate a compile error.
+    // Name isn't assignable here. This will generate a compile error.
     //public void ChangeName(string newName) => Name = newName; 
 
-    // Address is accessible here.
+    // Address is assignable here.
     public void ChangeAddress(string newAddress) => Address = newAddress
 }
 ```

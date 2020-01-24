@@ -37,7 +37,7 @@ The sample uses Azure Functions and Microsoft Cognitive Services Custom Vision S
 
 For example, you can train your model with Orlando landmarks, such as the Orlando Eye. Custom Vision will recognize an image of the Orlando Eye, and the function will create a photo mosaic composed of Bing image search results for "Orlando Eye."
 
-For more information, see [Azure Functions photo mosaic generator](https://azure.microsoft.com/resources/samples/functions-dotnet-photo-mosaic/).
+For more information, see [Azure Functions photo mosaic generator](https://github.com/lindydonna/photo-mosaic).
 
 ## Migrate an existing application to the cloud
 
@@ -77,12 +77,12 @@ The full link shortener repository with instructions is available here: [Serverl
 
 The sample consists of an Azure IoT Hub and an Azure Function. A new message on the IoT Hub triggers the Azure Function. The serverless code sends the same message content back to the device that sent it. The project has all the code and deployment configuration needed for the solution.
 
-For more information, see [Azure IoT Hub ping](https://azure.microsoft.com/resources/samples/iot-hub-node-ping/).
+For more information, see [Azure IoT Hub ping](https://github.com/Azure-Samples/iot-hub-node-ping).
 
 ## Recommended resources
 
-- [Azure Functions photo mosaic generator](https://azure.microsoft.com/resources/samples/functions-dotnet-photo-mosaic/)
-- [Azure IoT Hub ping](https://azure.microsoft.com/resources/samples/iot-hub-node-ping/)
+- [Azure Functions photo mosaic generator](https://github.com/lindydonna/photo-mosaic)
+- [Azure IoT Hub ping](https://github.com/Azure-Samples/iot-hub-node-ping)
 - [Azure Storage for serverless .NET apps in minutes](https://devblogs.microsoft.com/aspnet/azure-storage-for-serverless-net-apps-in-minutes/)
 - [Bring your own app](https://github.com/JeremyLikness/bring-own-app-connect-17)
 - [CSV import lab](https://github.com/JeremyLikness/azure-fn-file-process-hol)

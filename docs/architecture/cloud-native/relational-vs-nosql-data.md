@@ -91,7 +91,7 @@ They can be configured across cloud availability zones and regions to achieve hi
 
 We'll first look at relational DBaaS services available in Azure. You'll see that Microsoft's flagship SQL Server database is available along with several open-source options. Then, we'll talk about the NoSQL data services in Azure.
 
-## Azure Relational Databases
+## Azure relational databases
 
 For cloud-native microservices that require relational data, Azure offers four managed relational databases as a service (DBaaS) offerings, shown in Figure 5-11.
 

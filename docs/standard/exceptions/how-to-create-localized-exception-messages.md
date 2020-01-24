@@ -153,7 +153,7 @@ To create the localized exception messages:
 
     ```vb
     Dim resourceManager As New ResourceManager("FULLY_QIALIFIED_NAME_OF_RESOURCE_FILE", Assembly.GetExecutingAssembly())
-    Throw New StudentNotFoundException(resourceManager.GetString("StudentNotFound"), "John");
+    Throw New StudentNotFoundException(resourceManager.GetString("StudentNotFound"), "John")
     ```
 
     > [!NOTE]

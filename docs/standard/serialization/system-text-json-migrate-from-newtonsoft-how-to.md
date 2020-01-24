@@ -132,7 +132,7 @@ During deserialization, `Newtonsoft.Json` accepts property names surrounded by d
 
 A value enclosed in single quotes results in a [JsonException](xref:System.Text.Json.JsonException) with the following message:
 
-```
+```output
 ''' is an invalid start of a value.
 ```
 

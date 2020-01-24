@@ -139,35 +139,35 @@ public class SelfDescribingServiceHostFactory : ServiceHostFactory
   
  To use a custom factory with a service implementation, we must add some additional metadata to the service’s .svc file.  
   
-```  
-<%@ServiceHost Service="Microsoft.ServiceModel.Samples.CalculatorService"  
-               Factory="Microsoft.ServiceModel.Samples.SelfDescribingServiceHostFactory"  
-               language=c# Debug="true" %>  
-```  
+```xml
+<%@ServiceHost Service="Microsoft.ServiceModel.Samples.CalculatorService"
+               Factory="Microsoft.ServiceModel.Samples.SelfDescribingServiceHostFactory"
+               language=c# Debug="true" %>
+```
   
  Here we have added an additional `Factory` attribute to the `@ServiceHost` directive, and passed the CLR type name of our custom factory as the attribute’s value. When IIS or WAS receives a message for this service, the WCF hosting infrastructure first creates an instance of the ServiceHostFactory and then instantiate the service host itself by calling `ServiceHostFactory.CreateServiceHost()`.  
   
 ## Running the Sample  
  Although this sample does provide a fully-functional client and service implementation, the point of the sample is to illustrate how to alter a service’s run-time behavior by means of a custom host., do the following steps:  
   
-#### To observe the effect of the custom host  
+### Observe the effect of the custom host
   
 1. Open the service’s Web.config file and observe that there is no configuration explicitly enabling metadata for the service.  
   
 2. Open the service’s .svc file and observe that its @ServiceHost directive contains a Factory attribute that specifies the name of a custom ServiceHostFactory.  
   
-#### To set up, build, and run the sample  
+### Set up, build, and run the sample
   
-1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
-  
-2. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/building-the-samples.md).  
-  
-3. After the solution has been built, run Setup.bat to set up the ServiceModelSamples Application in IIS 7.0. The ServiceModelSamples directory should now appear as an IIS 7.0 Application.  
-  
-4. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
-  
-5. To remove the IIS 7.0 application, run Cleanup.bat.  
-  
+1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](one-time-setup-procedure-for-the-wcf-samples.md).
+
+2. To build the solution, follow the instructions in [Building the Windows Communication Foundation Samples](building-the-samples.md).
+
+3. After the solution has been built, run Setup.bat to set up the ServiceModelSamples Application in IIS 7.0. The ServiceModelSamples directory should now appear as an IIS 7.0 Application.
+
+4. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](running-the-samples.md).
+
+5. To remove the IIS 7.0 application, run *Cleanup.bat*.
+
 ## See also
 
-- [How to: Host a WCF Service in IIS](../../../../docs/framework/wcf/feature-details/how-to-host-a-wcf-service-in-iis.md)
+- [How to: Host a WCF Service in IIS](../feature-details/how-to-host-a-wcf-service-in-iis.md)

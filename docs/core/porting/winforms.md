@@ -20,7 +20,7 @@ In this article, various names are used to identify types of files used for migr
 
 ## Prerequisites
 
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) for any designer work you want to do.
+- [Visual Studio 2019 16.5 Preview 1](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&ch=pre&rel=16) for any designer work you want to do.
 
   Install the following Visual Studio workloads:
   - .NET desktop development
@@ -28,7 +28,6 @@ In this article, various names are used to identify types of files used for migr
 
 - A working Windows Forms project in a solution that builds and runs without issue.
 - A project coded in C#.
-- [.NET Core](https://dotnet.microsoft.com/download/dotnet-core) 3.0 or later.
 
 > [!NOTE]
 > .NET Core 3.0 projects are only supported in **Visual Studio 2019** or a later version. Starting with **Visual Studio 2019 version 16.5 Preview 1**, the .NET Core Windows Forms designer is also supported.

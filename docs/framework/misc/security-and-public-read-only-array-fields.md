@@ -12,7 +12,7 @@ Never use read-only public array fields from managed libraries to define the bou
   
 ## Remarks  
 
-Some .NET classes include read-only public fields that contain platform-specific boundary parameters.  For example, the <xref:System.IO.Path.InvalidPathChars> field is an array that describes the characters that are not allowed in a file path string.  Many similar fields are present throughout .NET.  
+Some .NET classes include read-only public fields that contain platform-specific boundary parameters. For example, the <xref:System.IO.Path.InvalidPathChars> field is an array that describes the characters that are not allowed in a file path string. Many similar fields are present throughout .NET.  
   
  The values of public read-only fields like <xref:System.IO.Path.InvalidPathChars> can be modified by your code or code that shares your code’s application domain.  You should not use read-only public array fields like this to define the boundary behavior of your applications.  If you do, malicious code can alter the boundary definitions and use your code in unexpected ways.  
   

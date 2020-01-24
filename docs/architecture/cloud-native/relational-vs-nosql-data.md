@@ -63,7 +63,7 @@ High availability and massive scalability are often more critical to the busines
 
 > Nowadays, care must be taken when conidering the CAP theorem constraints. A new type of database, called NewSQL, has emerged which extends the relational database engine to support both horizontal scalability and the scalable performance of NoSQL systems.
 
-## Considerations for Relational vs. NoSQL systems
+## Considerations for relational vs. NoSQL systems
 
 Based upon specific data requirements, a cloud-native-based microservice can implement a relational, NoSQL datastore or both.
 

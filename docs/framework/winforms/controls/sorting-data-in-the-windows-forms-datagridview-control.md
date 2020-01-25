@@ -1,5 +1,5 @@
 ---
-title: "Sorting data in the Windows Forms DataGridView control"
+title: Sorting data in DataGridView control
 ms.date: "02/13/2018"
 helpviewer_keywords: 
   - "data [Windows Forms], sorting in grids"

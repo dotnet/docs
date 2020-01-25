@@ -15,7 +15,6 @@
         "src": "docs",
         "dest": ".",
         "exclude": [
-          "api/overwrites/**",
           "samples/**/*.*",
           "**/includes/**",
           "***/contributing.md"
@@ -500,6 +499,8 @@
         "_csharplang/proposals/csharp-7.3/*.md": "C# 7.3 specification proposals",
         "_csharplang/proposals/csharp-8.0/*.md": "C# 8.0 specification proposals",
         "docs/framework/wcf/**/**.md": "WCF",
+        "docs/framework/winforms/**/**.md": "Windows Forms",
+        "docs/framework/wpf/**/**.md": "WPF",
         "docs/fsharp/tutorials/**/**.md": "F#",
         "docs/fsharp/language-reference/**/**.md": "F#",
         "docs/core/additional-tools/**.md": ".NET Core",

@@ -1,5 +1,5 @@
 ---
-title: "Putting Controls on Windows Forms"
+title: Put controls on forms
 ms.date: "03/30/2017"
 f1_keywords: 
   - "ENV.Window.Toolbox"

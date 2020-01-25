@@ -1,5 +1,6 @@
 ---
-title: "Walkthrough: Hosting a WPF Clock in Win32"
+title: "Walkthrough: Host a WPF Clock in Win32"
+titleSuffix: ""
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "interoperability [WPF], tutorials"
@@ -7,8 +8,7 @@ helpviewer_keywords:
   - "interoperability [WPF], Win32"
 ms.assetid: 555e55a7-0851-4ec8-b1c6-0acba7e9b648
 ---
-
-# Walkthrough: Hosting a WPF Clock in Win32
+# Walkthrough: Host a WPF Clock in Win32
 
 To put [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] inside Win32 applications, use <xref:System.Windows.Interop.HwndSource>, which provides the HWND that contains your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content. First you create the <xref:System.Windows.Interop.HwndSource>, giving it parameters similar to CreateWindow. Then you tell the <xref:System.Windows.Interop.HwndSource> about the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] content you want inside it. Finally, you get the HWND out of the <xref:System.Windows.Interop.HwndSource>. This walkthrough illustrates how to create a mixed [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] inside Win32 application that reimplements the operating system **Date and Time Properties** dialog.
 

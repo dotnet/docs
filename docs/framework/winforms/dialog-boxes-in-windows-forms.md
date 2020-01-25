@@ -1,5 +1,5 @@
 ---
-title: "Dialog Boxes in Windows Forms"
+title: "Dialog Boxes"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "dialog boxes [Windows Forms], Windows Forms"

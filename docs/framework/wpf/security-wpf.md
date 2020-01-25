@@ -1,5 +1,5 @@
 ---
-title: "Security (WPF)"
+title: "Security"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "XAML files [WPF], sandbox behavior"

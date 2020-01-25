@@ -1,5 +1,5 @@
 ---
-title: "Change Notification in Windows Forms Data Binding"
+title: Change Notification in Data Binding
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Forms, data binding"

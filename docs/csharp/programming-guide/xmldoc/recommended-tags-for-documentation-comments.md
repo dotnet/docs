@@ -1,6 +1,6 @@
 ---
 title: "Recommended tags for documentation comments - C# programming guide"
-ms.date: 07/20/2015
+ms.date: 01/21/2020
 helpviewer_keywords:
   - "XML [C#], tags"
   - "XML documentation [C#], tags"
@@ -13,20 +13,20 @@ The C# compiler processes documentation comments in your code and formats them a
 Tags are processed on code constructs such as types and type members.
 
 > [!NOTE]
-> Documentation comments cannot be applied to a namespace.
-
-The compiler will process any tag that is valid XML. The following tags provide generally used functionality in user documentation.
-
-## Tags
-
-||||  
-|---|---|---|
-|[\<c>](./code-inline.md)|[\<para>](./para.md)|[\<see>](./see.md)\*|
-|[\<code>](./code.md)|[\<param>](./param.md)\*|[\<seealso>](./seealso.md)\*|  
+> Documentation comments cannot be applied to a namespace.  
+  
+ The compiler will process any tag that is valid XML. The following tags provide generally used functionality in user documentation.  
+  
+## Tags  
+  
+|||||  
+|---|---|---|---|
+|[\<c>](./code-inline.md)|[\<para>](./para.md)|[\<see>](./see.md)*|[\<value>](./value.md)  
+|[\<code>](./code.md)|[\<param>](./param.md)*|[\<seealso>](./seealso.md)*|  
 |[\<example>](./example.md)|[\<paramref>](./paramref.md)|[\<summary>](./summary.md)|  
-|[\<exception>](./exception.md)\*|[\<permission>](./permission.md)\*|[\<typeparam>](./typeparam.md)\*|  
-|[\<include>](./include.md)\*|[\<remarks>](./remarks.md)|[\<typeparamref>](./typeparamref.md)|  
-|[\<list>](./list.md)|[\<returns>](./returns.md)|[\<value>](./value.md)|  
+|[\<exception>](./exception.md)*|[\<permission>](./permission.md)*|[\<typeparam>](./typeparam.md)*|  
+|[\<include>](./include.md)*|[\<remarks>](./remarks.md)|[\<typeparamref>](./typeparamref.md)|  
+|[\<list>](./list.md)|[\<inheritdoc>](./inheritdoc.md)|[\<returns>](./returns.md)|
   
 (\* denotes that the compiler verifies syntax.)
 

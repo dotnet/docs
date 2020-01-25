@@ -44,7 +44,7 @@ In your terminal, navigate to the _working_ folder. Create a new project and set
 dotnet new console -n templatepack -o .
 ```
 
-The `-n` parameter sets the _.csproj_ filename to _templatepack.csproj_. The `-o` parameters creates the files in the current directory. You should see a result similar to the following output.
+The `-n` parameter sets the _.csproj_ filename to _templatepack.csproj_. The `-o` parameter creates the files in the current directory. You should see a result similar to the following output.
 
 ```console
 C:\working> dotnet new console -n templatepack -o .

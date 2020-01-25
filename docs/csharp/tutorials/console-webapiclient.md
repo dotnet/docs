@@ -290,7 +290,7 @@ private static async Task<List<Repository>> ProcessRepositories()
 Then, just return the repositories after processing the JSON response:
 
 ```csharp
-var repositories = serializer.ReadObject(await streamTask) as List<Repository>;
+var streamTask = client.GetStreamAsync("https://api.github.com/orgs/dotnet/repos");
 return repositories;
 ```
 

@@ -70,7 +70,7 @@ To use these functions without qualification, import the <xref:System.Math?displ
 Imports System.Math
 ```
 
-## Example
+## Example - Abs
 
 This example uses the <xref:System.Math.Abs%2A> method of the <xref:System.Math> class to compute the absolute value of a number.
 
@@ -84,7 +84,7 @@ Console.WriteLine(y)
 ' 50.3
 ```  
 
-## Example
+## Example - Atan
 
 This example uses the <xref:System.Math.Atan%2A> method of the <xref:System.Math> class to calculate the value of pi.
 
@@ -98,7 +98,7 @@ End Function
 > [!NOTE]
 > The <xref:System.Math?displayProperty=nameWithType> class contains <xref:System.Math.PI?displayProperty=nameWithType> constant field. You can use it rather than calculating it.
 
-## Example
+## Example - Cos
 
 This example uses the <xref:System.Math.Cos%2A> method of the <xref:System.Math> class to return the cosine of an angle.
 
@@ -109,7 +109,7 @@ Public Function Sec(angle As Double) As Double
 End Function
 ```
 
-## Example
+## Example - Exp
 
 This example uses the <xref:System.Math.Exp%2A> method of the <xref:System.Math> class to return e raised to a power.
 
@@ -120,7 +120,7 @@ Public Function Sinh(angle As Double) As Double
 End Function
 ```
 
-## Example
+## Example - Log
 
 This example uses the <xref:System.Math.Log%2A> method of the <xref:System.Math> class to return the natural logarithm of a number.
 
@@ -131,7 +131,7 @@ Public Function Asinh(value As Double) As Double
 End Function
 ```
 
-## Example
+## Example - Round
 
 This example uses the <xref:System.Math.Round%2A> method of the <xref:System.Math> class to round a number to the nearest integer.
 
@@ -142,7 +142,7 @@ Console.WriteLine(myVar2)
 ' 3
 ```
 
-## Example
+## Example - Sign
 
 This example uses the <xref:System.Math.Sign%2A> method of the <xref:System.Math> class to determine the sign of a number.
 
@@ -159,7 +159,7 @@ Console.WriteLine(mySign3)
 ' 0
 ```
 
-## Example
+## Example - Sin
 
 This example uses the <xref:System.Math.Sin%2A> method of the <xref:System.Math> class to return the sine of an angle.
 
@@ -170,7 +170,7 @@ Public Function Csc(angle As Double) As Double
 End Function
 ```
 
-## Example
+## Example - Sqrt
 
 This example uses the <xref:System.Math.Sqrt%2A> method of the <xref:System.Math> class to calculate the square root of a number.
 
@@ -190,7 +190,7 @@ Console.WriteLine(mySqrt4)
 ' NaN
 ```
 
-## Example
+## Example - Tan
 
 This example uses the <xref:System.Math.Tan%2A> method of the <xref:System.Math> class to return the tangent of an angle.
 

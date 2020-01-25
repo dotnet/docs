@@ -10,11 +10,8 @@ General:
 
 ItemGroup
 PropertyGroup
-
-Name:
-
+Sdk attribute (Project)
 AssemblyName
-PackageId
 
 Version:
 
@@ -43,7 +40,7 @@ Dependencies:
 
 NetStandardImplicitPackageVersion
 RuntimeFrameworkVersion
-PackageReference (with variations for other purposes e.g. test runner)
+PackageReference + attributes
 PackageTargetFallback
 ProjectReference
 
@@ -61,6 +58,9 @@ OutputType
 AssemblyOriginatorKeyFile
 SignAssembly
 PublicSign
+EnableDefaultCompileItems
+EnableDefaultNoneItems
+EnableDefaultItems
 
 <PropertyGroup>
   <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
@@ -73,7 +73,7 @@ PublicSign
   <DefineConstants>$(DefineConstants);TEST;OTHERCONDITION</DefineConstants>
 </PropertyGroup>
 
-Pack options:
+Pack options (NuGet):
 
 <PropertyGroup>
   <PackageTags>machine learning;framework</PackageTags>
@@ -81,10 +81,61 @@ Pack options:
   <PackageIconUrl>http://numl.net/images/ico.png</PackageIconUrl>
   <PackageProjectUrl>http://numl.net</PackageProjectUrl>
   <PackageLicenseUrl>https://raw.githubusercontent.com/sethjuarez/numl/master/LICENSE.md</PackageLicenseUrl>
-  <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
   <RepositoryType>git</RepositoryType>
   <RepositoryUrl>https://raw.githubusercontent.com/sethjuarez/numl</RepositoryUrl>
 </PropertyGroup>
+IsPackable
+PackageVersion
+PackageId
+PackageDescription
+Title
+Authors
+PackageRequireLicenseAcceptance
+PackageLicenseExpression
+PackageLicenseFile
+PackageOutputPath
+IncludeSymbols
+SymbolPackageFormat
+IncludeSource
+IsTool
+RepositoryUrl
+RepositoryType
+RepositoryBranch
+RepositoryCommit
+NoPackageAnalysis
+MinClientVersion
+IncludeBuildOutput
+IncludeContentInPack
+BuildOutputTargetFolder
+ContentTargetFolders
+NuspecFile
+NuspecBasePath
+NuspecProperties
+
+Assembly info:
+
+GenerateAssemblyInfo
+GeneratedAssemblyInfoFile
+Company
+GenerateAssemblyCompanyAttribute
+Configuration
+GenerateAssemblyConfigurationAttribute
+Copyright
+GenerateAssemblyCopyrightAttribute
+Description
+GenerateAssemblyDescriptionAttribute
+FileVersion
+GenerateAssemblyFileVersionAttribute
+InformationalVersion
+GenerateAssemblyInformationalVersionAttribute
+Product
+GenerateAssemblyProductAttribute
+AssemblyTitle
+GenerateAssemblyTitleAttribute
+AssemblyVersion
+GenerateAssemblyVersionAttribute
+NeutralLanguage
+GenerateNeutralResourcesLanguageAttribute
 
 Pre-/post-compile scripts:
 
@@ -104,7 +155,7 @@ Files:
   <EmbeddedResource Include="..\Shared\*.resx" />
   <Content Include="Views\**\*" PackagePath="%(Identity)" />
   <None Include="some/path/in/project.txt" Pack="true" PackagePath="in/package.txt" />
-  
+
   <None Include="notes.txt" CopyToOutputDirectory="Always" />
   <!-- CopyToOutputDirectory = { Always, PreserveNewest, Never } -->
 
@@ -113,9 +164,23 @@ Files:
   <!-- CopyToPublishDirectory = { Always, PreserveNewest, Never } -->
 </ItemGroup>
 
+Publish:
+
+PublishReadyToRun
+RuntimeIdentifier
+RuntimeIdentifiers
+
 
 LangVersion
+
+LinkBase
+AppendTargetFrameworkToOutputPath
 
 ## See also
 
 - [.NET Core run-time configuration settings](../run-time-config/index.md)
+- [MSBuild properties for ASP.NET Core Razor SDK](/aspnet/core/razor-pages/sdk#properties)
+- [MSBuild schema reference](/visualstudio/msbuild/msbuild-project-file-schema-reference)
+- [Common MSBuild properties](/visualstudio/msbuild/common-msbuild-project-properties)
+- [MSBuild properties for NuGet pack](/nuget/reference/msbuild-targets#pack-target)
+- [MSBuild properties for NuGet restore](/nuget/reference/msbuild-targets#restore-properties)

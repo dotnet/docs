@@ -1,5 +1,5 @@
 ---
-title: "Argument not optional (Visual Basic)"
+title: "Argument not optional"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID449"

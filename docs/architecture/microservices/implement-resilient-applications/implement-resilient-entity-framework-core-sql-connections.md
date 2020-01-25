@@ -82,7 +82,7 @@ public async Task<IActionResult> UpdateProduct(
 }
 ```
 
-The first <xref:Microsoft.EntityFrameworkCore.DbContext> is `_catalogContext` and the second `DbContext` is within the `_integrationEventLogService` object. The Commit action is performed across all `DbContext` objects using an EF execution strategy.
+The first <xref:Microsoft.EntityFrameworkCore.DbContext> is `_catalogContext` and the second `DbContext` is within the `_catalogIntegrationEventService` object. The Commit action is performed across all `DbContext` objects using an EF execution strategy.
 
 To achieve this multiple `DbContext` commit, the `SaveEventAndCatalogContextChangesAsync` uses a `ResilientTransaction` class, as shown in the following code:
 

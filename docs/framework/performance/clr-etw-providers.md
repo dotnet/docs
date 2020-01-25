@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "ETW, CLR providers"
   - "CLR ETW providers"
 ms.assetid: 0beafad4-b2c8-47f4-b342-83411d57a51f
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CLR ETW Providers
 The common language runtime (CLR) has two providers: the runtime provider and the rundown provider.  

@@ -1,5 +1,5 @@
 ---
-title: "How Culture Affects Strings in Visual Basic"
+title: "How Culture Affects Strings"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "locale [Visual Basic], effect on strings"

@@ -1,9 +1,9 @@
 ---
-title: "How to: Validate Using XSD (LINQ to XML) (C#)"
+title: "How to validate using XSD (LINQ to XML) (C#)"
 ms.date: 07/20/2015
 ms.assetid: 6a7f83a9-2d74-4c2b-8417-0a8595879516
 ---
-# How to: Validate Using XSD (LINQ to XML) (C#)
+# How to validate using XSD (LINQ to XML) (C#)
 The <xref:System.Xml.Schema> namespace contains extension methods that make it easy to validate an XML tree against an XML Schema Definition Language (XSD) file. For more information, see the <xref:System.Xml.Schema.Extensions.Validate%2A> method documentation.  
   
 ## Example  

@@ -1,5 +1,5 @@
 ---
-title: "Recursive Procedures (Visual Basic)"
+title: "Recursive Procedures"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "Visual Basic code, procedures"

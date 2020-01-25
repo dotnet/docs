@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: d941102b-2679-4c49-b15e-c0fc9c53e11f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # FreeWin32ResBlob Method
 Releases the Win32 resource blob and associated resources.  

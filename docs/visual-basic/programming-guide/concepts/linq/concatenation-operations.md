@@ -1,5 +1,5 @@
 ---
-title: "Concatenation Operations (Visual Basic)"
+title: "Concatenation Operations"
 ms.date: 07/20/2015
 ms.assetid: 4021e019-a8f7-477b-879e-07dd7f44feb9
 ---

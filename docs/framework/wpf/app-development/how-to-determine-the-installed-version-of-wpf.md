@@ -1,5 +1,6 @@
 ---
-title: "How to: Determine the Installed Version of WPF"
+title: Determine Installed Version of WPF
+titleSuffix: ""
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "version [WPF], finding"

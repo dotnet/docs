@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 6b5be4fc-2e86-499c-8b09-833160bca767
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::DefineField Method
 Creates a definition for a field with the specified metadata signature, and gets a token to that field definition.  

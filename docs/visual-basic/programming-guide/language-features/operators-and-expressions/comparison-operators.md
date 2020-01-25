@@ -1,5 +1,5 @@
 ---
-title: "Comparison Operators in Visual Basic"
+title: "Comparison Operators"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "comparison operators [Visual Basic], comparing strings"

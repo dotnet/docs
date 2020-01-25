@@ -1,5 +1,5 @@
 ---
-title: "How to: Bind Windows Forms Controls to DBNull Database Values"
+title: Bind Controls to DBNull Database Values
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

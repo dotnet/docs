@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 8d3080ee-39fe-4c57-8950-51323632d045
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorRegFlags Enumeration
 Provides flag values used for registration when installing a module or composite image.  

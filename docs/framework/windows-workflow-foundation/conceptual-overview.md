@@ -11,7 +11,7 @@ This section contains a set of topics discussing the larger concepts behind Wind
   
 ## In This Section  
  [Windows Workflow Overview](overview.md)  
- Describes the foundation that enables users to create system or human workflows in their applications written for [!INCLUDE[wv](../../../includes/wv-md.md)], [!INCLUDE[wxp](../../../includes/wxp-md.md)], [!INCLUDE[ws2003](../../../includes/ws2003-md.md)], and [!INCLUDE[lserver](../../../includes/lserver-md.md)] operating systems.  
+ Describes the foundation that enables users to create system or human workflows in their applications written for Windows Vista, [!INCLUDE[wxp](../../../includes/wxp-md.md)], Windows Server 2003, and Windows Server 2008 operating systems.  
   
  [Fundamental Windows Workflow Concepts](fundamental-concepts.md)  
  Describes fundamental concepts used in Windows Workflow Foundation development that may be new to some developers.  

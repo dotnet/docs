@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "streams, writing text to files"
   - "data streams, writing text to files"
 ms.assetid: 060cbe06-2adf-4337-9e7b-961a5c840208
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Write text to a file
 This topic shows different ways to write text to a file for a .NET app. 

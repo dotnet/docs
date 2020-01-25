@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: ca2af325-eb9d-4a91-90e4-267e45b98611
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorMethodSemanticsAttr Enumeration
 Contains values that describe the relationship between a method and an associated property or event.  

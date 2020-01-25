@@ -1,5 +1,5 @@
 ---
-title: "How to: Declare Custom Events To Avoid Blocking (Visual Basic)"
+title: "How to: Declare Custom Events To Avoid Blocking"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "declaring events [Visual Basic], custom"

@@ -1,5 +1,5 @@
 ---
-title: "Covariance and Contravariance (Visual Basic)"
+title: "Covariance and Contravariance"
 ms.date: 07/20/2015
 ms.assetid: 59224c46-9931-466b-8c6e-3648c3e609c6
 ---

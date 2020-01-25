@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 5a278bc9-88e2-4c69-b035-9d550dd77081
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerThreadEnum::Clone Method
 Gets an interface pointer to a copy of this [ICorProfilerThreadEnum](../../../../docs/framework/unmanaged-api/profiling/icorprofilerthreadenum-interface.md) interface.  

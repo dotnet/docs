@@ -1,5 +1,5 @@
 ---
-title: "How to: Associate a Shortcut Menu with a Windows Forms NotifyIcon Component"
+title: Associate a Shortcut Menu with NotifyIcon Component
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

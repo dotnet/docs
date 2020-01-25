@@ -61,7 +61,7 @@ Path containing probing policy and assemblies to probe.
 
 Path to a *deps.json* file.
 
-A *deps.json* file contains a list of dependencies, compilation dependencies and version information used to address assembly conflicts. For more information about this file, see [Runtime Configuration Files](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md) on GitHub.
+A *deps.json* file contains a list of dependencies, compilation dependencies, and version information used to address assembly conflicts. For more information about this file, see [Runtime Configuration Files](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md) on GitHub.
 
 `-d|--diagnostics`
 
@@ -101,7 +101,7 @@ Defines behavior when the required shared framework is not available. `N` can be
 
 Path to a *runtimeconfig.json* file.
 
-A *runtimeconfig.json* file is a configuration file containing runtime configuration settings. For more information, see [Runtime Configuration Files](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md) on GitHub.
+A *runtimeconfig.json* file is a configuration file containing run-time settings. For more information, see [.NET Core run-time configuration settings](../run-time-config/index.md#runtimeconfigjson).
 
 `-v|--verbosity <LEVEL>`
 
@@ -151,7 +151,7 @@ Prints out detailed information about a .NET Core installation and the machine e
 
 Path to a *runtimeconfig.json* file.
 
-A *runtimeconfig.json* file is a configuration file containing runtime configuration settings. For more details, see [Runtime Configuration Files on GitHub](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md).
+A *runtimeconfig.json* file is a configuration file containing run-time settings. For more information, see [.NET Core run-time configuration settings](../run-time-config/index.md#runtimeconfigjson).
 
 `-v|--verbosity <LEVEL>`
 
@@ -193,7 +193,7 @@ Prints out detailed information about a .NET Core installation and the machine e
 
 Path to a *runtimeconfig.json* file.
 
-A *runtimeconfig.json* file is a configuration file containing runtime configuration settings. For more details, see [Runtime Configuration Files on GitHub](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md).
+A *runtimeconfig.json* file is a configuration file containing run-time settings. For more information, see [.NET Core run-time configuration settings](../run-time-config/index.md#runtimeconfigjson).
 
 `-v|--verbosity <LEVEL>`
 
@@ -393,3 +393,4 @@ Specifies whether data about the .NET Core tools usage is collected and sent to 
 ## See also
 
 - [Runtime Configuration Files](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md)
+- [.NET Core run-time configuration settings](../run-time-config/index.md)

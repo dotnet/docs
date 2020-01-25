@@ -1,5 +1,5 @@
 ---
-title: "Accessing Application Web Services (Visual Basic)"
+title: "Accessing Application Web Services"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "Web services [Visual Basic], My.WebServices object"

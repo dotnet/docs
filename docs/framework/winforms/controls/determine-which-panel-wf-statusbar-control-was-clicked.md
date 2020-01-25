@@ -1,5 +1,5 @@
 ---
-title: "How to: Determine Which Panel in the Windows Forms StatusBar Control Was Clicked"
+title: Determine Which Panel in StatusBar Control Was Clicked
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

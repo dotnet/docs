@@ -1,5 +1,5 @@
 ---
-title: "How to: Resize Windows Forms"
+title: Resize form
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

@@ -1,5 +1,5 @@
 ---
-title: "Rapid Application Development with My.Resources and My.Settings (Visual Basic)"
+title: "Rapid Application Development with My.Resources and My.Settings"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My.Settings object [Visual Basic], developing applications"

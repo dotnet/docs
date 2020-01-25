@@ -1,5 +1,6 @@
 ---
-title: "Walkthrough: Hosting an ActiveX Control in WPF"
+title: Host an ActiveX control in WPF
+titleSuffix: ""
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

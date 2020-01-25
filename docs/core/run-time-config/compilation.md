@@ -129,7 +129,7 @@ Project file:
 ## ReadyToRun
 
 - Configures whether the .NET Core runtime uses pre-compiled code for images with available ReadyToRun data. Disabling this option forces the runtime to JIT-compile framework code.
-- For more information see [ReadyToRun](../whats-new/dotnet-core-3-0.md#readytorun-images).
+- For more information, see [ReadyToRun](../whats-new/dotnet-core-3-0.md#readytorun-images).
 - Default: Enabled (`1`).
 
 | | Setting name | Values |

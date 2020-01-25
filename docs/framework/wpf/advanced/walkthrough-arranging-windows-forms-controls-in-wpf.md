@@ -12,7 +12,7 @@ ms.assetid: a1db8049-15c7-45d6-ae3d-36a6735cb848
 ---
 # Walkthrough: Arranging Windows Forms Controls in WPF
 
-This walkthrough shows you how to use [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] layout features to arrange [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls in a hybrid application.
+This walkthrough shows you how to use [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] layout features to arrange Windows Forms controls in a hybrid application.
 
 Tasks illustrated in this walkthrough include:
 
@@ -33,7 +33,7 @@ Tasks illustrated in this walkthrough include:
 
 For a complete code listing of the tasks illustrated in this walkthrough, see [Arranging Windows Forms Controls in WPF Sample](https://go.microsoft.com/fwlink/?LinkID=159971).
 
-When you are finished, you will have an understanding of [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] layout features in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]-based applications.
+When you are finished, you will have an understanding of Windows Forms layout features in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]-based applications.
 
 ## Prerequisites
 
@@ -53,7 +53,7 @@ To create and set up the project, follow these steps:
 
 3. Double-click *MainWindow.xaml* to open it in XAML view.
 
-4. In the <xref:System.Windows.Window> element, add the following [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] namespace mapping.
+4. In the <xref:System.Windows.Window> element, add the following Windows Forms namespace mapping.
 
     ```xaml
     xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
@@ -65,7 +65,7 @@ To create and set up the project, follow these steps:
 
 ## Using Default Layout Settings
 
-By default, the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element handles the layout for the hosted [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control.
+By default, the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element handles the layout for the hosted Windows Forms control.
 
 To use default layout settings, follow these steps:
 
@@ -73,7 +73,7 @@ To use default layout settings, follow these steps:
 
      [!code-xaml[WpfLayoutHostingWfWithXaml#3](~/samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#3)]
 
-2. Press <kbd>F5</kbd> to build and run the application. The [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] <xref:System.Windows.Forms.Button?displayProperty=nameWithType> control appears in the <xref:System.Windows.Controls.Canvas>. The hosted control is sized based on its content, and the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element is sized to accommodate the hosted control.
+2. Press <kbd>F5</kbd> to build and run the application. The Windows Forms <xref:System.Windows.Forms.Button?displayProperty=nameWithType> control appears in the <xref:System.Windows.Controls.Canvas>. The hosted control is sized based on its content, and the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element is sized to accommodate the hosted control.
 
 ## Sizing to Content
 
@@ -109,7 +109,7 @@ To specify size explicitly, follow these steps:
 
      [!code-xaml[WpfLayoutHostingWfWithXaml#6](~/samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#6)]
 
-2. Press <kbd>F5</kbd> to build and run the application. The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element is set to a size of 50 pixels wide by 70 pixels high, which is smaller than the default layout settings. The content of the [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control is rearranged accordingly.
+2. Press <kbd>F5</kbd> to build and run the application. The <xref:System.Windows.Forms.Integration.WindowsFormsHost> element is set to a size of 50 pixels wide by 70 pixels high, which is smaller than the default layout settings. The content of the Windows Forms control is rearranged accordingly.
 
 ## Setting Layout Properties
 
@@ -158,7 +158,7 @@ To dock a hosted control, follow these steps:
 
 ## Setting Visibility
 
-You can make your [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control invisible or collapse it by setting the <xref:System.Windows.UIElement.Visibility%2A> property on the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element. When a control is invisible, it is not displayed, but it occupies layout space. When a control is collapsed, it is not displayed, nor does it occupy layout space.
+You can make your Windows Forms control invisible or collapse it by setting the <xref:System.Windows.UIElement.Visibility%2A> property on the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element. When a control is invisible, it is not displayed, but it occupies layout space. When a control is collapsed, it is not displayed, nor does it occupy layout space.
 
 To set the visibility of a hosted control, follow these steps:
 
@@ -175,11 +175,11 @@ To set the visibility of a hosted control, follow these steps:
 
 4. Click the **Click to make invisible** button to make the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element invisible.
 
-5. Click the **Click to collapse** button to hide the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element from the layout entirely. When the [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control is collapsed, the surrounding elements are rearranged to occupy its space.
+5. Click the **Click to collapse** button to hide the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element from the layout entirely. When the Windows Forms control is collapsed, the surrounding elements are rearranged to occupy its space.
 
 ## Hosting a Control That Does Not Stretch
 
-Some [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls have a fixed size and do not stretch to fill available space in the layout. For example, the <xref:System.Windows.Forms.MonthCalendar> control displays a month in a fixed space.
+Some Windows Forms controls have a fixed size and do not stretch to fill available space in the layout. For example, the <xref:System.Windows.Forms.MonthCalendar> control displays a month in a fixed space.
 
 To host a control that does not stretch, follow these steps:
 
@@ -217,7 +217,7 @@ To see the effect of rotation in a hybrid application, follow these steps:
 
 ## Setting Padding and Margins
 
-Padding and margins in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] layout are similar to padding and margins in [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]. Simply set the <xref:System.Windows.Controls.Control.Padding%2A> and <xref:System.Windows.FrameworkElement.Margin%2A> properties on the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element.
+Padding and margins in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] layout are similar to padding and margins in Windows Forms. Simply set the <xref:System.Windows.Controls.Control.Padding%2A> and <xref:System.Windows.FrameworkElement.Margin%2A> properties on the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element.
 
 To set padding and margins for a hosted control, follow these steps:
 
@@ -226,11 +226,11 @@ To set padding and margins for a hosted control, follow these steps:
      [!code-xaml[WpfLayoutHostingWfWithXaml#14](~/samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#14)]
     [!code-xaml[WpfLayoutHostingWfWithXaml#15](~/samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#15)]
 
-2. Press <kbd>F5</kbd> to build and run the application. The padding and margin settings are applied to the hosted [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls in the same way they would be applied in [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)].
+2. Press <kbd>F5</kbd> to build and run the application. The padding and margin settings are applied to the hosted Windows Forms controls in the same way they would be applied in Windows Forms.
 
 ## Using Dynamic Layout Containers
 
-[!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] provides two dynamic layout containers, <xref:System.Windows.Forms.FlowLayoutPanel> and <xref:System.Windows.Forms.TableLayoutPanel>. You can also use these containers in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] layouts.
+Windows Forms provides two dynamic layout containers, <xref:System.Windows.Forms.FlowLayoutPanel> and <xref:System.Windows.Forms.TableLayoutPanel>. You can also use these containers in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] layouts.
 
 To use a dynamic layout container, follow these steps:
 

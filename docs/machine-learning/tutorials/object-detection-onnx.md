@@ -114,7 +114,7 @@ Now that you have a general understanding of what ONNX is and how Tiny YOLOv2 wo
 
 Open the *Program.cs* file and add the following additional `using` statements to the top of the file:
 
-[!code-csharp [ProgramUsings](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L1-L7)]
+[!code-csharp [ProgramUsings](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L1-L9)]
 
 Next, define the paths of the various assets.
 
@@ -209,7 +209,7 @@ The data output by the model contains coordinates and dimensions of the bounding
 
     [!code-csharp [DimensionsBaseClass](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/DimensionsBase.cs#L3-L9)]
 
-    `DimensionsBase` has the following `float` fields:
+    `DimensionsBase` has the following `float` properties:
 
     - `X` contains the position of the object along the x-axis.
     - `Y` contains the position of the object along the y-axis.
@@ -233,7 +233,7 @@ Next, create a class for your bounding boxes.
 
     [!code-csharp [YoloBoundingBoxClass](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloBoundingBox.cs#L7-L21)]
 
-    `YoloBoundingBox` has the following fields:
+    `YoloBoundingBox` has the following properties:
 
     - `Dimensions` contains dimensions of the bounding box.
     - `Label` contains the class of object detected within the bounding box.
@@ -256,7 +256,7 @@ Now that the classes for dimensions and bounding boxes are created, it's time to
 
     [!code-csharp [YoloParserUsings](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L10)]
 
-1. Inside the `YoloOutputParser` class definition, add the following constant and fields.
+1. Inside the `YoloOutputParser` class definition, add the following constants and fields.
 
     [!code-csharp [ParserVarDefinitions](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/YoloParser/YoloOutputParser.cs#L12-L21)]
 

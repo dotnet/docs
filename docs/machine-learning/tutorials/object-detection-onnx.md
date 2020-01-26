@@ -114,7 +114,7 @@ Now that you have a general understanding of what ONNX is and how Tiny YOLOv2 wo
 
 Open the *Program.cs* file and add the following additional `using` statements to the top of the file:
 
-[!code-csharp [ProgramUsings](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L1-L9)]
+[!code-csharp [ProgramUsings](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ObjectDetection_Onnx/ObjectDetectionConsoleApp/Program.cs#L1-L7)]
 
 Next, define the paths of the various assets.
 

@@ -41,7 +41,7 @@ struct DacpGetModuleAddress
 
 | Method                                                                                               | Description                                                                    |
 | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| [Request](../../../../docs/framework/unmanaged-api/debugging/dacpgetmoduleaddress-request-method.md) | Performs a request to populate the structure from the given runtime structure. |
+| [Request](dacpgetmoduleaddress-request-method.md) | Performs a request to populate the structure from the given runtime structure. |
 
 ## Remarks
 
@@ -55,5 +55,5 @@ This structure lives inside the runtime and is not exposed through any headers o
 
 ## See also
 
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
+- [Debugging](index.md)
+- [Debugging Structures](debugging-structures.md)

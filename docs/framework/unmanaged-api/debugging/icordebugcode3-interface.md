@@ -22,7 +22,7 @@ Provides a method that extends "ICorDebugCode" and "ICorDebugCode2" to provide i
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetReturnValueLiveOffset Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcode3-getreturnvalueliveoffset-method.md)|For a specified IL offset, gets the native offsets where a breakpoint should be placed so that the debugger can obtain the return value from a function.|  
+|[GetReturnValueLiveOffset Method](icordebugcode3-getreturnvalueliveoffset-method.md)|For a specified IL offset, gets the native offsets where a breakpoint should be placed so that the debugger can obtain the return value from a function.|  
   
 ## Remarks  
   
@@ -40,5 +40,5 @@ Provides a method that extends "ICorDebugCode" and "ICorDebugCode2" to provide i
   
 ## See also
 
-- [ICorDebugILFrame3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe3-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugILFrame3 Interface](icordebugilframe3-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

@@ -55,5 +55,5 @@ typedef enum CorDebugStepReason {
   
 ## See also
 
-- [StepComplete Method](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-stepcomplete-method.md)
-- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)
+- [StepComplete Method](icordebugmanagedcallback-stepcomplete-method.md)
+- [Debugging Enumerations](debugging-enumerations.md)

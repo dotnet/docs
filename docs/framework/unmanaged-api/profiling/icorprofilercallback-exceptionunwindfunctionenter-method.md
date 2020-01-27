@@ -26,10 +26,12 @@ HRESULT ExceptionUnwindFunctionEnter(
     [in] FunctionID functionId);  
 ```  
   
-## Parameters  
- `functionId`  
- [in] The ID of the function that is being unwound.  
-  
+## Parameters
+
+- `functionId`
+
+  \[in] The ID of the function that is being unwound.
+
 ## Remarks  
  The profiler should not block in its implementation of this method because the stack may not be in a state that allows garbage collection, and therefore preemptive garbage collection cannot be enabled. If the profiler blocks here and garbage collection is attempted, the runtime will block until this callback returns.  
   

@@ -24,10 +24,12 @@ Notifies the profiler that control is being passed to a function.
 void __stdcall FunctionEnter3(FunctionOrRemappedID functionOrRemappedID);  
 ```  
   
-## Parameters  
- `functionOrRemappedID`  
- [in] The identifier of the function to which control is passed.  
-  
+## Parameters
+
+- `functionOrRemappedID`
+
+  \[in] The identifier of the function to which control is passed.
+
 ## Remarks  
  The `FunctionEnter3` callback function notifies the profiler as functions are being called, but does not support argument inspection. Use the [ICorProfilerInfo3::SetEnterLeaveFunctionHooks3 method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-setenterleavefunctionhooks3-method.md) to register your implementation of this function.  
   

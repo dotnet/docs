@@ -27,13 +27,16 @@ HRESULT AppDomainShutdownFinished(
     [in] HRESULT     hrStatus);  
 ```  
   
-## Parameters  
- `appDomainId`  
- [in] Identifies the domain in which the application's assemblies are stored.  
-  
- `hrStatus`  
- [in] An HRESULT that indicates whether the application domain was unloaded successfully.  
-  
+## Parameters
+
+- `appDomainId`
+
+  \[in] Identifies the domain in which the application's assemblies are stored.
+
+- `hrStatus`
+
+  \[in] An HRESULT that indicates whether the application domain was unloaded successfully.
+
 ## Remarks  
  The value of `appDomainId` is not valid for an information request after the [ICorProfilerCallback::AppDomainShutdownStarted](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-appdomainshutdownstarted-method.md) method returns.  
   

@@ -22,10 +22,11 @@ Gets the value of the configured large object heap (LOH) threshold.
 HRESULT GetLOHObjectSizeThreshold( [out] DWORD *pThreshold );
 ```
 
-#### Parameters
+## Parameters
 
-`pThreshold` \
-[out] The large object heap threshold in bytes.
+- `pThreshold`
+
+  \[out] The large object heap threshold in bytes.
 
 ## Remarks
 

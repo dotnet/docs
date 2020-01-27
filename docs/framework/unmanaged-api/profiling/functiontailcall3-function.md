@@ -24,10 +24,12 @@ Notifies the profiler that the currently executing function is about to perform 
 void __stdcall FunctionTailcall3 (FunctionOrRemappedID functionOrRemappedID);  
 ```  
   
-## Parameters  
- `functionOrRemappedID`  
- [in] The identifier of the currently executing function that is about to make a tail call.  
-  
+## Parameters
+
+- `functionOrRemappedID`
+
+  \[in] The identifier of the currently executing function that is about to make a tail call.
+
 ## Remarks  
  The `FunctionTailcall3` callback function notifies the profiler as functions are being called. Use the [ICorProfilerInfo3::SetEnterLeaveFunctionHooks3 method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-setenterleavefunctionhooks3-method.md) to register your implementation of this function.  
   

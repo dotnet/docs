@@ -26,9 +26,11 @@ HRESULT ExceptionSearchFunctionEnter(
     [in] FunctionID functionId);  
 ```  
   
-## Parameters  
- `functionId`  
- [in] The ID of the function that has been entered.  
+## Parameters
+
+- `functionId`
+
+  \[in] The ID of the function that has been entered.
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

@@ -26,10 +26,12 @@ HRESULT AppDomainShutdownStarted(
     [in] AppDomainID appDomainId);  
 ```  
   
-## Parameters  
- `appDomainId`  
- [in] Identifies the domain in which the application's assemblies are stored.  
-  
+## Parameters
+
+- `appDomainId`
+
+  \[in] Identifies the domain in which the application's assemblies are stored.
+
 ## Remarks  
  The value of `appDomainId` is not valid for any information request after the `AppDomainShutdownStarted` method returns — this is the profiler's last chance to get information about this application domain.  
   

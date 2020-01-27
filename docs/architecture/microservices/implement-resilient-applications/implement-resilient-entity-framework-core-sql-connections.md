@@ -35,7 +35,7 @@ public class Startup
 
 ## Execution strategies and explicit transactions using BeginTransaction and multiple DbContexts
 
-When retries are enabled in EF Core connections, each operation you perform using EF Core becomes its own retriable operation. Each query and each call to `SaveChanges` will be retried as a unit if a transient failure occurs.
+When retries are enabled in EF Core connections, each operation you perform using EF Core becomes its own retryable operation. Each query and each call to `SaveChanges` will be retried as a unit if a transient failure occurs.
 
 However, if your code initiates a transaction using `BeginTransaction`, you're defining your own group of operations that need to be treated as a unit. Everything inside the transaction has to be rolled back if a failure occurs.
 

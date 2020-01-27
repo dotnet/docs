@@ -2,7 +2,7 @@
 title: Deploy .NET Core apps with Visual Studio
 description: Learn to deploy a .NET Core app with Visual Studio.
 ms.date: 09/03/2018
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
 ms.custom: vs-dotnet
@@ -22,7 +22,7 @@ For information on using Visual Studio to develop .NET Core applications, see [.
 
 ## Framework-dependent deployment
 
-Deploying a framework-dependent deployment with no third-party dependencies simply involves building, testing, and publishing the app. A simple example written in C# illustrates the process.  
+Deploying a framework-dependent deployment with no third-party dependencies simply involves building, testing, and publishing the app. A simple example written in C# illustrates the process.
 
 1. Create the project.
 
@@ -104,7 +104,7 @@ Once you've finished debugging, you can publish your self-contained deployment:
 
 <!-- markdownlint-disable MD025 -->
 
-# [Visual Studio 15.6 and earlier](#tab/vs156)
+# [Visual Studio version 15.6 and earlier](#tab/vs156)
 
 After you've debugged and tested the program, create the files to be deployed with your app for each platform that it targets.
 
@@ -183,7 +183,7 @@ For each platform that your application targets, do the following:
    If you've already created a profile, right-click on the project to open the **Publish** dialog if it isn't already open. Then select **New Profile**.
 
    The **Pick a Publish Target** dialog box opens.
-  
+
 1. Select the location where Visual Studio publishes your application.
 
    If you're only publishing to a single platform, you can accept the default value in the **Choose a folder** text box; this publishes the framework-dependent deployment of your application to the *\<project-directory>\bin\Release\netcoreapp2.1\publish* directory.
@@ -238,7 +238,7 @@ In addition, Visual Studio creates a separate publishing profile (\*.pubxml) for
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-https://go.microsoft.com/fwlink/?LinkID=208121. 
+https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
@@ -268,7 +268,7 @@ Deploying a self-contained deployment with one or more third-party dependencies 
 
 The following is the complete *csproj* file for this project:
 
-# [Visual Studio 15.6 and earlier](#tab/vs156)
+# [Visual Studio version 15.6 and earlier](#tab/vs156)
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

@@ -6,12 +6,25 @@ ms.topic: reference
 ---
 # MSBuild properties for .NET Core projects
 
+.NET Core projects are based on the [MSBuild](/visualstudio/msbuild/msbuild) format. Project files are in XML format. Each property in the file can have attributes and subitems.
+
+> [!NOTE]
+> This page is a work in progress and does not list all of the MSBuild properties for the .NET Core SDKs.
+
+- .NET Core SDK
+- Web SDK
+- Targets
+- Properties
+
 General:
 
 ItemGroup
 PropertyGroup
 Sdk attribute (Project)
 AssemblyName
+RootNamespace (VB, F#)
+ApplicationIcon
+StartupObject
 
 Version:
 
@@ -36,10 +49,63 @@ Frameworks:
 TargetFramework
 TargetFrameworks
 
+Framework reference resolution:
+
+FrameworkReference
+KnownFrameworkReference
+TargetFrameworkIdentifier
+_TargetFrameworkVersionWithoutV
+NetCoreTargetingPackRoot
+BundledRuntimeIdentifierGraphFile
+SelfContained
+RuntimeIdentifier
+RuntimeIdentifiers
+RuntimeFrameworkVersion
+TargetLatestRuntimePatch
+_TargetLatestRuntimePatchIsDefault
+EnableTargetingPackDownload
+AppHostRuntimeIdentifier
+DefaultAppHostRuntimeIdentifier
+PackAsToolShimRuntimeIdentifiers
+_PackAsToolShimRuntimeIdentifiers
+_DotNetAppHostExecutableNameWithoutExtension
+_DotNetComHostLibraryNameWithoutExtension
+_DotNetIjwHostLibraryNameWithoutExtension
+BundledRuntimeIdentifierGraphFile
+KnownAppHostPack
+
+UserSecretsId
+GenerateUserSecretsAttribute
+GeneratedUserSecretsAttributeFile
+CopyLocalLockFileAssemblies
+SelfContained
+ResolvedRuntimePack
+UnavailableRuntimePack
+SatelliteResourceLanguages
+DesignTimeBuild
+CopyLocalLockFileAssemblies
+
+MicrosoftNETBuildTasksAssembly
+
+GenerateErrorForMissingTargetingPacks
+DesignTimeBuild
+
+IjwHostSourcePath
+ComHostSourcePath
+AppHostSourcePath
+
+UsePackageDownload
+MSBuildRuntimeType
+PackageDownloadSupported
+
+BundledRuntimeIdentifierGraphFile
+
+EnableComHosting
+UseIJWHost
+
 Dependencies:
 
 NetStandardImplicitPackageVersion
-RuntimeFrameworkVersion
 PackageReference + attributes
 PackageTargetFallback
 ProjectReference
@@ -166,15 +232,16 @@ Files:
 
 Publish:
 
-PublishReadyToRun
+PublishReadyToRun (and PublishReadyToRunExclude)
 RuntimeIdentifier
 RuntimeIdentifiers
-
+UseAppHost - see https://github.com/dotnet/docs/issues/16407#issuecomment-571772518
 
 LangVersion
-
 LinkBase
 AppendTargetFrameworkToOutputPath
+OutputPath
+CodeAnalysisRuleSet
 
 ## See also
 

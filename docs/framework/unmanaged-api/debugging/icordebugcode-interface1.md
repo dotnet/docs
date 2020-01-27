@@ -23,15 +23,15 @@ Represents a segment of either Microsoft intermediate language (MSIL) code or na
   
 |Method|Description|  
 |------------|-----------------|  
-|[CreateBreakpoint Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcode-createbreakpoint-method.md)|Creates a breakpoint at the specified offset.|  
-|[GetAddress Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcode-getaddress-method.md)|Gets the relative virtual address (RVA) of the code segment that this `ICorDebugCode` represents.|  
-|[GetCode Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcode-getcode-method.md)|Gets all the code for the specified function, formatted for disassembly. This method has been deprecated; use [ICorDebugCode2::GetCodeChunks](../../../../docs/framework/unmanaged-api/debugging/icordebugcode2-getcodechunks-method.md) instead.|  
-|[GetEnCRemapSequencePoints Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcode-getencremapsequencepoints-method.md)|Not implemented.|  
-|[GetFunction Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcode-getfunction-method.md)|Gets the "ICorDebugFunction" associated with this `ICorDebugCode`.|  
-|[GetILToNativeMapping Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcode-getiltonativemapping-method.md)|Gets an array of "COR_DEBUG_IL_TO_NATIVE_MAP" instances that represent mappings from MSIL offsets to native offsets.|  
-|[GetSize Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcode-getsize-method.md)|Gets the size, in bytes, of the binary code represented by this `ICorDebugCode`.|  
-|[GetVersionNumber Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcode-getversionnumber-method.md)|Gets the one-based number that identifies the version of the code that this `ICorDebugCode` represents.|  
-|[IsIL Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcode-isil-method.md)|Gets a value that indicates whether this `ICorDebugCode` is compiled in MSIL.|  
+|[CreateBreakpoint Method](icordebugcode-createbreakpoint-method.md)|Creates a breakpoint at the specified offset.|  
+|[GetAddress Method](icordebugcode-getaddress-method.md)|Gets the relative virtual address (RVA) of the code segment that this `ICorDebugCode` represents.|  
+|[GetCode Method](icordebugcode-getcode-method.md)|Gets all the code for the specified function, formatted for disassembly. This method has been deprecated; use [ICorDebugCode2::GetCodeChunks](icordebugcode2-getcodechunks-method.md) instead.|  
+|[GetEnCRemapSequencePoints Method](icordebugcode-getencremapsequencepoints-method.md)|Not implemented.|  
+|[GetFunction Method](icordebugcode-getfunction-method.md)|Gets the "ICorDebugFunction" associated with this `ICorDebugCode`.|  
+|[GetILToNativeMapping Method](icordebugcode-getiltonativemapping-method.md)|Gets an array of "COR_DEBUG_IL_TO_NATIVE_MAP" instances that represent mappings from MSIL offsets to native offsets.|  
+|[GetSize Method](icordebugcode-getsize-method.md)|Gets the size, in bytes, of the binary code represented by this `ICorDebugCode`.|  
+|[GetVersionNumber Method](icordebugcode-getversionnumber-method.md)|Gets the one-based number that identifies the version of the code that this `ICorDebugCode` represents.|  
+|[IsIL Method](icordebugcode-isil-method.md)|Gets a value that indicates whether this `ICorDebugCode` is compiled in MSIL.|  
   
 ## Remarks  
  `ICorDebugCode` can represent either MSIL or native code. An "ICorDebugFunction" object that represents MSIL code can have either zero or one `ICorDebugCode` objects associated with it. An "ICorDebugFunction" object that represents native code can have any number of `ICorDebugCode` objects associated with it.  
@@ -50,5 +50,5 @@ Represents a segment of either Microsoft intermediate language (MSIL) code or na
   
 ## See also
 
-- [ICorDebugCode3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugcode3-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugCode3 Interface](icordebugcode3-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

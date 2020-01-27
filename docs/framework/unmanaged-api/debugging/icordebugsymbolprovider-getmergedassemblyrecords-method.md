@@ -24,7 +24,7 @@ HRESULT GetMergedAssemblyRecords(
  [out] A pointer to the number of symbol records retrieved by the method.  
   
  `pRecords`  
- A pointer to an array of [ICorDebugMergedAssemblyRecord](../../../../docs/framework/unmanaged-api/debugging/icordebugmergedassemblyrecord-interface.md) objects.  
+ A pointer to an array of [ICorDebugMergedAssemblyRecord](icordebugmergedassemblyrecord-interface.md) objects.  
   
 ## Remarks  
   
@@ -42,5 +42,5 @@ HRESULT GetMergedAssemblyRecords(
   
 ## See also
 
-- [ICorDebugSymbolProvider Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugSymbolProvider Interface](icordebugsymbolprovider-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugBlockingObjectEnum::Next Method
-Gets the specified number of [CorDebugBlockingObject](../../../../docs/framework/unmanaged-api/debugging/cordebugblockingobject-structure.md) objects from the enumeration, starting at the current position.  
+Gets the specified number of [CorDebugBlockingObject](cordebugblockingobject-structure.md) objects from the enumeration, starting at the current position.  
   
 ## Syntax  
   
@@ -33,7 +33,7 @@ HRESULT Next([in] ULONG  celt,
  [in] The number of objects to retrieve.  
   
  `values`  
- [out] An array of pointers to [CorDebugBlockingObject](../../../../docs/framework/unmanaged-api/debugging/cordebugblockingobject-structure.md) objects.  
+ [out] An array of pointers to [CorDebugBlockingObject](cordebugblockingobject-structure.md) objects.  
   
  `pceltFetched`  
  [out] A pointer to the number of objects that were retrieved.  
@@ -52,7 +52,7 @@ HRESULT Next([in] ULONG  celt,
  The input array values must be at least of size `celt`. The array will be filled with either the next `celt` values in the enumeration or with all remaining values if fewer than `celt` remain. When this method returns, `pceltFetched` will be filled with the number of values that were retrieved. If `values` contains invalid pointers or points to a buffer that is smaller than `celt`, or if `pceltFetched` is an invalid pointer, the result is undefined.  
   
 > [!NOTE]
-> Although the [CorDebugBlockingObject](../../../../docs/framework/unmanaged-api/debugging/cordebugblockingobject-structure.md) structure does not need to be released, the "ICorDebugValue" interface inside of it does need to be released.  
+> Although the [CorDebugBlockingObject](cordebugblockingobject-structure.md) structure does not need to be released, the "ICorDebugValue" interface inside of it does need to be released.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -65,6 +65,6 @@ HRESULT Next([in] ULONG  celt,
   
 ## See also
 
-- [ICorDebugDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [ICorDebugDataTarget Interface](icordebugdatatarget-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

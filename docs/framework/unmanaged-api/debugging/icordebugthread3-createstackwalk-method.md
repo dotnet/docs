@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugThread3::CreateStackWalk Method
-Creates an [ICorDebugStackWalk](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-interface.md) object for the thread whose stack you want to unwind.  
+Creates an [ICorDebugStackWalk](icordebugstackwalk-interface.md) object for the thread whose stack you want to unwind.  
   
 ## Syntax  
   
@@ -27,7 +27,7 @@ HRESULT CreateStackWalk([out] ICorDebugStackWalk **ppStackWalk);
   
 ## Parameters  
  `ppStackWalk`  
- [out] A pointer to address of the [ICorDebugStackWalk](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-interface.md) object for the thread whose stack you want to unwind.  
+ [out] A pointer to address of the [ICorDebugStackWalk](icordebugstackwalk-interface.md) object for the thread whose stack you want to unwind.  
   
 ## Return Value  
  This method returns the following specific HRESULTs as well as HRESULT errors that indicate method failure.  
@@ -53,5 +53,5 @@ HRESULT CreateStackWalk([out] ICorDebugStackWalk **ppStackWalk);
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

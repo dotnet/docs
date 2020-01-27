@@ -69,3 +69,11 @@ sudo apt-get install dotnet-runtime-3.1
 ## How to install other versions
 
 [!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
+
+## Troubleshoot the package manager
+
+This section provides information on common errors you may get while using the package manager to install .NET Core.
+
+### Failed to fetch
+
+While installing the .NET Core package, you may see an error similar to `Failed to fetch ... File has unexpected size ... Mirror sync in progress?`. In general, this error means that the package feed for .NET Core is being upgraded with newer versions and you should try again later. If you continually receive this error for some time, please file an issue at <https://github.com/dotnet/core/issues>.

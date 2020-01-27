@@ -77,6 +77,10 @@ sudo apt-get install dotnet-runtime-3.1
 
 ## Troubleshoot the package manager
 
+This section provides information on common errors you may get while using the package manager to install .NET Core.
+
+### Unable to locate
+
 If you receive an error message similar to **Unable to locate package {the .NET Core package}**, run the following commands.
 
 ```bash
@@ -99,3 +103,7 @@ sudo apt-get install -y apt-transport-https
 sudo apt-get update
 sudo apt-get install {the .NET Core package}
 ```
+
+### Failed to fetch
+
+While installing the .NET Core package, you may see an error similar to `Failed to fetch ... File has unexpected size ... Mirror sync in progress?`. In general, this error means that the package feed for .NET Core is being upgraded with newer versions and you should try again later. If you continually receive this error for some time, please file an issue at <https://github.com/dotnet/core/issues>.

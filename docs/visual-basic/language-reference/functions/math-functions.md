@@ -1,6 +1,6 @@
 ---
 title: Math functions
-ms.date: 07/20/2015
+ms.date: 01/27/2020
 helpviewer_keywords: 
   - "math functions, Visual Basic"
   - "arithmetic operations, math functions"

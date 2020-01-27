@@ -1,10 +1,10 @@
 ---
-title: MSBuild properties for .NET Core SDK projects
-description: Reference for the MSBuild properties that are understood by the .NET Core SDK.
+title: MSBuild properties for Microsoft.NET.Sdk
+description: Reference for the MSBuild targets and properties that are understood by the .NET Core SDK.
 ms.date: 01/28/2020
 ms.topic: reference
 ---
-# MSBuild properties for .NET Core projects
+# MSBuild targets and properties for .NET Core SDK projects
 
 .NET Core projects are based on the [MSBuild](/visualstudio/msbuild/msbuild) format. Project files are in XML format. Each property in the file can have attributes and subitems.
 
@@ -12,7 +12,11 @@ ms.topic: reference
 > This page is a work in progress and does not list all of the MSBuild properties for the .NET Core SDKs.
 
 - .NET Core SDK
-- Web SDK
+- Web SDK (/aspnet/core/razor-pages/web-sdk)
+- Razor Class Library SDK (/aspnet/core/razor-pages/sdk#properties)
+- .NET Core Worker Service SDK (new in 3.0)
+- WinForms and WPF SDK (Microsoft.NET.Sdk.WindowsDesktop) - RootNamespace, UseWindowsForms
+
 - Targets
 - Properties
 

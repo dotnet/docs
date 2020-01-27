@@ -114,7 +114,7 @@ The advantage of verbatim strings is that escape sequences are *not* processed, 
 To include a double quotation mark in an @-quoted string, double it:
 
 ```csharp
-@"""Ahoy!"" cried the captain." // "Ahoy!" cried the captain.
+@"""Ahoy!""" cried the captain." // "Ahoy!" cried the captain.
 ```
 
 ## The delegate type

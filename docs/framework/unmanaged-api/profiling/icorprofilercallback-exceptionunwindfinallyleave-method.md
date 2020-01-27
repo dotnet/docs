@@ -41,5 +41,5 @@ HRESULT ExceptionUnwindFinallyLeave();
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
-- [ExceptionUnwindFinallyEnter Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-exceptionunwindfinallyenter-method.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [ExceptionUnwindFinallyEnter Method](icorprofilercallback-exceptionunwindfinallyenter-method.md)

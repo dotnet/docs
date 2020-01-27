@@ -16,13 +16,13 @@ topic_type:
   - "apiref"
 ---
 # ICLRProfiling Interface
-Provides the [ICLRProfiling::AttachProfiler](../../../../docs/framework/unmanaged-api/profiling/iclrprofiling-attachprofiler-method.md) method, which enables a profiler to attach to a running process.  
+Provides the [ICLRProfiling::AttachProfiler](iclrprofiling-attachprofiler-method.md) method, which enables a profiler to attach to a running process.  
   
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
-|[AttachProfiler Method](../../../../docs/framework/unmanaged-api/profiling/iclrprofiling-attachprofiler-method.md)|Attaches the specified profiler to the specified process.|  
+|[AttachProfiler Method](iclrprofiling-attachprofiler-method.md)|Attaches the specified profiler to the specified process.|  
   
 ## Remarks  
   
@@ -37,5 +37,5 @@ Provides the [ICLRProfiling::AttachProfiler](../../../../docs/framework/unmanage
   
 ## See also
 
-- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
-- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+- [Profiling Interfaces](profiling-interfaces.md)
+- [ICorProfilerInfo Interface](icorprofilerinfo-interface.md)

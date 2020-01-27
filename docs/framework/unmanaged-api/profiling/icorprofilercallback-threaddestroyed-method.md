@@ -44,5 +44,5 @@ HRESULT ThreadDestroyed(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
-- [ThreadCreated Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-threadcreated-method.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [ThreadCreated Method](icorprofilercallback-threadcreated-method.md)

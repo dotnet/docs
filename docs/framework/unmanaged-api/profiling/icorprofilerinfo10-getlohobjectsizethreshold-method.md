@@ -44,4 +44,4 @@ Objects larger than the large object heap threshold will be allocated on the lar
 
 ## See also
 
-- [ICorProfilerInfo10 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo10-interface.md)
+- [ICorProfilerInfo10 Interface](icorprofilerinfo10-interface.md)

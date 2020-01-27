@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerFunctionEnum::Clone Method
-Gets an interface pointer to a copy of this [ICorProfilerFunctionEnum](../../../../docs/framework/unmanaged-api/profiling/icorprofilerfunctionenum-interface.md) interface.  
+Gets an interface pointer to a copy of this [ICorProfilerFunctionEnum](icorprofilerfunctionenum-interface.md) interface.  
   
 ## Syntax  
   
@@ -27,7 +27,7 @@ HRESULT Clone([out] ICorProfilerFunctionEnum **ppEnum);
   
 ## Parameters  
  `ppEnum`  
- [out] A pointer to the interface pointer, which, in turn, points to the copy of this [ICorProfilerFunctionEnum](../../../../docs/framework/unmanaged-api/profiling/icorprofilerfunctionenum-interface.md) interface. The copy of the enumerator maintains its own enumeration state separately from this enumerator. However, the copy's initial cursor position is the same as this enumerator's current cursor position.  
+ [out] A pointer to the interface pointer, which, in turn, points to the copy of this [ICorProfilerFunctionEnum](icorprofilerfunctionenum-interface.md) interface. The copy of the enumerator maintains its own enumeration state separately from this enumerator. However, the copy's initial cursor position is the same as this enumerator's current cursor position.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -40,5 +40,5 @@ HRESULT Clone([out] ICorProfilerFunctionEnum **ppEnum);
   
 ## See also
 
-- [ICorProfilerFunctionEnum Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerfunctionenum-interface.md)
-- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+- [ICorProfilerFunctionEnum Interface](icorprofilerfunctionenum-interface.md)
+- [Profiling Interfaces](profiling-interfaces.md)

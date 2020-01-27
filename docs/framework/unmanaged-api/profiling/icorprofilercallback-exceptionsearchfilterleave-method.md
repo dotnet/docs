@@ -36,5 +36,5 @@ HRESULT ExceptionSearchFilterLeave();
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
-- [ExceptionSearchFilterEnter Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-exceptionsearchfilterenter-method.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [ExceptionSearchFilterEnter Method](icorprofilercallback-exceptionsearchfilterenter-method.md)

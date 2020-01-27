@@ -44,7 +44,7 @@ HRESULT GetDynamicFunctionInfo( [in]  FunctionID              functionId,
 
 - `pbSig`
 
-\[out] A pointer to the count of bytes for the function signature.
+  \[out] A pointer to the count of bytes for the function signature.
 
 - `cchName`
 

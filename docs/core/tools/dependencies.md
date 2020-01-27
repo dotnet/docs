@@ -36,7 +36,7 @@ Adding a dependency to your project is straightforward. Here is an example of ho
 
 When you open your project file, you will see two or more `<ItemGroup>` nodes. You will notice that one of the nodes already has `<PackageReference>` elements in it. You can add your new dependency to this node, or create a new one; it is up to you, as the result will be the same.
 
-In this example, we'll use the default template that's dropped by `dotnet new console`. This is a simple console application. When you open up the project, you'll find the `<ItemGroup>` with already existing `<PackageReference>` in it. Add the following to it:
+The following example uses the default template that's dropped by `dotnet new console`. This is a simple console application. When you open up the project, you'll find the `<ItemGroup>` with already existing `<PackageReference>` in it. Add the following to it:
 
 ```xml
 <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />

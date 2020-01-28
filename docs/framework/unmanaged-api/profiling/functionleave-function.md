@@ -29,10 +29,12 @@ void __stdcall FunctionLeave (
 );  
 ```  
   
-## Parameters  
- `funcID`  
- [in] The identifier of the function that is returning.  
-  
+## Parameters
+
+- `funcID`
+
+  \[in] The identifier of the function that is returning.
+
 ## Remarks  
  The `FunctionLeave` function is a callback; you must implement it. The implementation must use the `__declspec`(`naked`) storage-class attribute.  
   

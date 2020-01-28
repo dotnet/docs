@@ -1,5 +1,5 @@
 ---
-title: "How to: Set the Format for the Windows Forms NumericUpDown Control"
+title: Set the Format for NumericUpDown Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

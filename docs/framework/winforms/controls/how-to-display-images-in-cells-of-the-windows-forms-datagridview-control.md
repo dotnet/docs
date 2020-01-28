@@ -1,5 +1,5 @@
 ---
-title: "How to: Display Images in Cells of the Windows Forms DataGridView Control"
+title: Display Images in Cells of DataGridView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

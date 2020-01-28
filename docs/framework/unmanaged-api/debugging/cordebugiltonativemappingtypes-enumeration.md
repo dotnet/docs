@@ -47,5 +47,5 @@ typedef enum CorDebugIlToNativeMappingTypes {
   
 ## See also
 
-- [GetILToNativeMapping Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcode-getiltonativemapping-method.md)
-- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)
+- [GetILToNativeMapping Method](icordebugcode-getiltonativemapping-method.md)
+- [Debugging Enumerations](debugging-enumerations.md)

@@ -27,13 +27,16 @@ UINT_PTR __stdcall FunctionIDMapper (
 );  
 ```  
   
-## Parameters  
- `funcId`  
- [in] The function identifier to be remapped.  
-  
- `pbHookFunction`  
- [out] A pointer to a value that the profiler sets to `true` if it wants to receive `FunctionEnter2`, `FunctionLeave2`, and `FunctionTailcall2` callbacks; otherwise, it sets this value to `false`.  
-  
+## Parameters
+
+- `funcId`
+
+  \[in] The function identifier to be remapped.
+
+- `pbHookFunction`
+
+  \[out] A pointer to a value that the profiler sets to `true` if it wants to receive `FunctionEnter2`, `FunctionLeave2`, and `FunctionTailcall2` callbacks; otherwise, it sets this value to `false`.
+
 ## Return Value  
  The profiler returns a value that the execution engine uses as an alternative function identifier. The return value cannot be null unless `false` is returned in `pbHookFunction`. Otherwise, a null return value will produce unpredictable results, including possibly halting the process.  
   

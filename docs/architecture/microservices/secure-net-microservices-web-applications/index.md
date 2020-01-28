@@ -115,7 +115,7 @@ else
 }
 ```
 
-If you choose the **Individual User Account** authentication option when you create the ASP.NET Code web application project in Visual Studio, all the code necessary to sign in with an external provider is already in the project, as shown in Figure 9-3.
+If you choose the **Individual User Account** authentication option when you create the ASP.NET Core web application project in Visual Studio, all the code necessary to sign in with an external provider is already in the project, as shown in Figure 9-3.
 
 ![Screenshot of the New ASP.NET Core Web Application dialog.](./media/index/select-external-authentication-option.png)
 

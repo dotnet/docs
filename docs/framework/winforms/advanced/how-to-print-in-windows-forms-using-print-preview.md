@@ -1,5 +1,5 @@
 ---
-title: "How to: Print in Windows Forms Using Print Preview"
+title: Print Using Print Preview
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

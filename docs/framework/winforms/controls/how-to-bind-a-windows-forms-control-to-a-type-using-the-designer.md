@@ -1,5 +1,5 @@
 ---
-title: "How to: Bind a Windows Forms Control to a Type Using the Designer"
+title: Bind Control to a Type Using the Designer
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "controls [Windows Forms], binding to a type"

@@ -17,7 +17,7 @@ ms.assetid: b909e388-3f24-4997-b6d4-bd9c35c2dc27
  Efficiency is also improved by the ability to listen for events only within a defined scope. For example, a client can listen for focus change events on all [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] elements in the tree, or on just one element and its descendants.  
   
 > [!NOTE]
-> Do not assume that all possible events are raised by a [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] provider. For example, not all property changes cause events to be raised by the standard proxy providers for [!INCLUDE[TLA#tla_winforms](../../../includes/tlasharptla-winforms-md.md)] and Win32 controls.  
+> Do not assume that all possible events are raised by a [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] provider. For example, not all property changes cause events to be raised by the standard proxy providers for Windows Forms and Win32 controls.  
   
  For a broader view of [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] events, see [UI Automation Events Overview](ui-automation-events-overview.md).  
   

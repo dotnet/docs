@@ -27,13 +27,16 @@ HRESULT ClassLoadFinished(
     [in] HRESULT hrStatus);  
 ```  
   
-## Parameters  
- `classId`  
- [in] Identifies the class that was loaded.  
-  
- `hrStatus`  
- [in] An HRESULT that indicates whether the class loaded successfully.  
-  
+## Parameters
+
+- `classId`
+
+  \[in] Identifies the class that was loaded.
+
+- `hrStatus`
+
+  \[in] An HRESULT that indicates whether the class loaded successfully.
+
 ## Remarks  
  The value of `classId` is not valid for an information request until the `ClassLoadFinished` method is called.  
   

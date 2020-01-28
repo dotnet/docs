@@ -1,5 +1,5 @@
 ---
-title: "How to: Prevent Row Addition and Deletion in the Windows Forms DataGridView Control"
+title: Prevent Row Addition and Deletion in DataGridView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

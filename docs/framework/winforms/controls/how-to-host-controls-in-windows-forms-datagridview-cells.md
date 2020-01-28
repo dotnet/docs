@@ -1,5 +1,5 @@
 ---
-title: "How to: Host Controls in Windows Forms DataGridView Cells"
+title: Host Controls in DataGridView Cells
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

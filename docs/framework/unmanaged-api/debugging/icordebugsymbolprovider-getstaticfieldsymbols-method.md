@@ -32,7 +32,7 @@ HRESULT GetStaticFieldSymbols(
  [out] A pointer to the number of symbols retrieved by the method.  
   
  `pSymbols`  
- [out] A pointer to an [ICorDebugStaticFieldSymbol](../../../../docs/framework/unmanaged-api/debugging/icordebugstaticfieldsymbol-interface.md) array that contains the requested static field symbols.  
+ [out] A pointer to an [ICorDebugStaticFieldSymbol](icordebugstaticfieldsymbol-interface.md) array that contains the requested static field symbols.  
   
 ## Remarks  
   
@@ -50,6 +50,6 @@ HRESULT GetStaticFieldSymbols(
   
 ## See also
 
-- [GetInstanceFieldSymbols Method](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-getinstancefieldsymbols-method.md)
-- [ICorDebugSymbolProvider Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [GetInstanceFieldSymbols Method](icordebugsymbolprovider-getinstancefieldsymbols-method.md)
+- [ICorDebugSymbolProvider Interface](icordebugsymbolprovider-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

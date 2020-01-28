@@ -26,10 +26,12 @@ HRESULT AssemblyLoadStarted(
     [in] AssemblyID assemblyId);  
 ```  
   
-## Parameters  
- `assemblyId`  
- [in] Identifies the assembly that is being loaded.  
-  
+## Parameters
+
+- `assemblyId`
+
+  \[in] Identifies the assembly that is being loaded.
+
 ## Remarks  
  The value of `assemblyId` is not valid for an information request until the [ICorProfilerCallback::AssemblyLoadFinished](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-assemblyloadfinished-method.md) method is called.  
   

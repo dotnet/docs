@@ -26,10 +26,12 @@ HRESULT AssemblyUnloadStarted(
     [in] AssemblyID assemblyId);  
 ```  
   
-## Parameters  
- `assemblyId`  
- [in] Identifies the assembly that is being unloaded.  
-  
+## Parameters
+
+- `assemblyId`
+
+  \[in] Identifies the assembly that is being unloaded.
+
 ## Remarks  
  The value of `assemblyId` is not valid for an information request after the `AssemblyUnloadStarted` method returns — this is the profiler's last chance to get information about this assembly.  
   

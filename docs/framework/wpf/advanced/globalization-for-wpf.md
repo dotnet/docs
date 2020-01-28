@@ -1,5 +1,5 @@
 ---
-title: "Globalization for WPF"
+title: Globalization
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "XAML [WPF], international user interface"

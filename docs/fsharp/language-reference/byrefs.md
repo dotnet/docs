@@ -183,10 +183,8 @@ let squareAndPrint (data : byref<int>) =
 To return a value byref, the variable which contains the value must live longer than the current scope.
 Also, to return byref, use &value (where value is a variable that lives longer than the current scope).
 
-
 ```fsharp
 let mutable sum = 0
-
 let safeSum (bytes: Span<byte>) =
     for i in 0 .. bytes.Length - 1 do
         sum <- sum + int bytes.[i]

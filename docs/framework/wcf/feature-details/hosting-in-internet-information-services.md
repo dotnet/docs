@@ -13,7 +13,7 @@ One option for hosting Windows Communication Foundation (WCF) services is inside
 
 WCF can be hosted on the following versions of IIS on the following operating systems:
 
-- IIS 5.1 on [!INCLUDE[wxpsp2](../../../../includes/wxpsp2-md.md)]. This environment is useful for the design and development of IIS-hosted applications that are later deployed on a server operating system such as Windows Server 2003.
+- IIS 5.1 on Windows XP SP2. This environment is useful for the design and development of IIS-hosted applications that are later deployed on a server operating system such as Windows Server 2003.
 
 - IIS 6.0 on Windows Server 2003. IIS 6.0 provides an advanced process model that offers improved scalability, reliability, and application isolation. This environment is suitable for production deployment of WCF services that use HTTP communication exclusively.
 

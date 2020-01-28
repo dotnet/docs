@@ -10,7 +10,7 @@ This document outlines the changes that were added to the project files as part 
 
 ## Implicit package references
 
-Metapackages are implicitly referenced based on the target framework(s) specified in the `<TargetFramework>` or `<TargetFrameworks>` property of your project file. `<TargetFrameworks>` is ignored if `<TargetFramework>` is specified, independent of order. For more information, see [Packages, metapackages, and frameworks](../packages.md). 
+Metapackages are implicitly referenced based on the target framework(s) specified in the `<TargetFramework>` or `<TargetFrameworks>` property of your project file. `<TargetFrameworks>` is ignored if `<TargetFramework>` is specified, independent of order. For more information, see [Packages, metapackages, and frameworks](../packages.md).
 
 ```xml
  <PropertyGroup>
@@ -248,7 +248,7 @@ In SDK-style projects, use an MSBuild target named `PreBuild` or `PostBuild` and
 ```
 
 > [!NOTE]
->You can use any name for the MSBuild targets, but the Visual Studio IDE recognizes `PreBuild` and `PostBuild` targets, so we recommend using those names so that you can edit the commands in the Visual Studio IDE. 
+>You can use any name for the MSBuild targets, but the Visual Studio IDE recognizes `PreBuild` and `PostBuild` targets, so we recommend using those names so that you can edit the commands in the Visual Studio IDE.
 
 ## NuGet metadata properties
 
@@ -321,7 +321,7 @@ license-expression =  1*1(simple-expression / compound-expression / UNLICENSED)
 
 Path to a license file within the package if you are using a license that hasn’t been assigned an SPDX identifier, or it is a custom license (Otherwise `PackageLicenseExpression` is preferred)
 
-Replaces `PackageLicenseUrl`, can't be combined with `PackageLicenseExpression` and requires Visual Studio 15.9.4, .NET SDK 2.1.502 or 2.2.101, or newer.
+Replaces `PackageLicenseUrl`, can't be combined with `PackageLicenseExpression`, and requires Visual Studio version 15.9.4 and .NET SDK 2.1.502 or 2.2.101 or newer.
 
 You will need to ensure the license file is packed by adding it explicitly to the project, example usage:
 
@@ -427,7 +427,7 @@ Semicolon separated list of key=value pairs.
 
 ### Properties per attribute
 
-Each attribute has a property that control its content and another to disable its generation as shown in the following table:
+As shown in the following table, each attribute has a property that controls its content and another that disables its generation:
 
 | Attribute                                                      | Property               | Property to disable                             |
 |----------------------------------------------------------------|------------------------|-------------------------------------------------|

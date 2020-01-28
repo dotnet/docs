@@ -26,10 +26,12 @@ HRESULT ClassUnloadStarted(
     [in] ClassID classId);  
 ```  
   
-## Parameters  
- `classId`  
- [in] Identifies the class that is being unloaded.  
-  
+## Parameters
+
+- `classId`
+
+  \[in] Identifies the class that is being unloaded.
+
 ## Remarks  
  The value of `classId` is not valid for an information request after the `ClassUnloadStarted` method returns — this is the profiler's last chance to obtain information about this class.  
   

@@ -26,10 +26,12 @@ HRESULT FunctionUnloadStarted(
     [in] FunctionID functionId);   
 ```  
   
-## Parameters  
- `functionId`  
- [in] The ID of the function that is being unloaded.  
-  
+## Parameters
+
+- `functionId`
+
+  \[in] The ID of the function that is being unloaded.
+
 ## Remarks  
  The value of the `functionId` parameter is no longer valid after this method returns to the caller.  
   

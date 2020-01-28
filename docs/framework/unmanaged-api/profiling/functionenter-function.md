@@ -29,10 +29,12 @@ void __stdcall FunctionEnter (
 );  
 ```  
   
-## Parameters  
- `funcID`  
- [in] The identifier of the function to which control is passed.  
-  
+## Parameters
+
+- `funcID`
+
+  \[in] The identifier of the function to which control is passed.
+
 ## Remarks  
  The `FunctionEnter` function is a callback; you must implement it. The implementation must use the `__declspec`(`naked`) storage-class attribute.  
   

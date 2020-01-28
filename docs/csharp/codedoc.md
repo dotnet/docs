@@ -1,7 +1,7 @@
 ---
 title: Documenting your code with XML comments
 description: Learn how to document your code with XML documentation comments and generate an XML documentation file at compile time.
-ms.date: 02/14/2017
+ms.date: 01/21/2020
 ms.technology: csharp-fundamentals
 ms.assetid: 8e75e317-4a55-45f2-a866-e76124171838
 ---
@@ -167,6 +167,12 @@ Make an unordered list of every math operation your `Math` library supports.
 [!code-csharp[List Tag](~/samples/snippets/csharp/concepts/codedoc/list-tag.cs)]
 
 You can make an ordered list or table by changing the `type` attribute to `number` or `table`, respectively.
+
+## \<inheritdoc>
+
+You can use the `<inheritdoc>` tag to inherit XML comments from base classes, interfaces, and similar methods. This eliminates unwanted copying and pasting of duplicate XML comments and automatically keeps XML comments synchronized.
+
+[!code-csharp-interactive[InheritDoc Tag](~/samples/snippets/csharp/concepts/codedoc/inheritdoc-tag.cs)]
 
 ### Put it all together
 

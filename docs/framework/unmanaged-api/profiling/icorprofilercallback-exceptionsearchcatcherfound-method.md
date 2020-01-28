@@ -26,10 +26,12 @@ RESULT ExceptionSearchCatcherFound(
     [in] FunctionID functionId);  
 ```  
   
-## Parameters  
- `functionId`  
- [in] The ID of the function that contains the exception handler.  
-  
+## Parameters
+
+- `functionId`
+
+  \[in] The ID of the function that contains the exception handler.
+
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
   

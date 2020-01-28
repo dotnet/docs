@@ -29,10 +29,12 @@ void __stdcall FunctionTailcall (
 );  
 ```  
   
-## Parameters  
- `funcID`  
- [in] The identifier of the currently executing function that is about to make a tail call.  
-  
+## Parameters
+
+- `funcID`
+
+  \[in] The identifier of the currently executing function that is about to make a tail call.
+
 ## Remarks  
  The target function of the tail call will use the current stack frame, and will return directly to the caller of the function that made the tail call. This means that a [FunctionLeave](../../../../docs/framework/unmanaged-api/profiling/functionleave-function.md) callback will not be issued for a function that is the target of a tail call.  
   

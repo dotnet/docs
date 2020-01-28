@@ -24,16 +24,19 @@ HRESULT EnumerateObjectReferences( [in] ObjectID objectId,
                                    [in] void* clientData);
 ```
 
-#### Parameters
+## Parameters
 
-`objectId` \
-[in] The object to enumerate references on.
+- `objectId`
 
-`callback` \
-[in] The function that will be called with the references for the object.
+  \[in] The object to enumerate references on.
 
-`clientData` \
-[in] Profiler-provided data to pass to the `callback` function.
+- `callback`
+
+  \[in] The function that will be called with the references for the object.
+
+- `clientData`
+
+  \[in] Profiler-provided data to pass to the `callback` function.
 
 ## Remarks
 

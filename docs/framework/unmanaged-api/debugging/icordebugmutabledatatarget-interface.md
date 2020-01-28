@@ -4,18 +4,18 @@ ms.date: "03/30/2017"
 ms.assetid: 14aad5b3-84ab-4bbc-94e3-1eb92e258d10
 ---
 # ICorDebugMutableDataTarget Interface
-Extends the [ICorDebugDataTarget](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget-interface.md) interface to support mutable data targets.  
+Extends the [ICorDebugDataTarget](icordebugdatatarget-interface.md) interface to support mutable data targets.  
   
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
-|[ContinueStatusChanged Method](../../../../docs/framework/unmanaged-api/debugging/icordebugmutabledatatarget-continuestatuschanged-method.md)|Changes the continuation status for the outstanding debug event on the specified thread.|  
-|[SetThreadContext Method](../../../../docs/framework/unmanaged-api/debugging/icordebugmutabledatatarget-setthreadcontext-method.md)|Sets the context (register values) for a thread.|  
-|[WriteVirtual Method](../../../../docs/framework/unmanaged-api/debugging/icordebugmutabledatatarget-writevirtual-method.md)|Writes memory into the target process address space.|  
+|[ContinueStatusChanged Method](icordebugmutabledatatarget-continuestatuschanged-method.md)|Changes the continuation status for the outstanding debug event on the specified thread.|  
+|[SetThreadContext Method](icordebugmutabledatatarget-setthreadcontext-method.md)|Sets the context (register values) for a thread.|  
+|[WriteVirtual Method](icordebugmutabledatatarget-writevirtual-method.md)|Writes memory into the target process address space.|  
   
 ## Remarks  
- This extension to the [ICorDebugDataTarget](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget-interface.md) interface can be implemented by debugging tools that wish to modify the target process (for example, to perform live invasive debugging).  
+ This extension to the [ICorDebugDataTarget](icordebugdatatarget-interface.md) interface can be implemented by debugging tools that wish to modify the target process (for example, to perform live invasive debugging).  
   
  All of these methods are optional in the sense that no core inspection-based debugging functionality is lost by not implementing this interface or by the failure of calls to these methods.  Any failure `HRESULT` from these methods will propagate out as the `HRESULT` from the ICorDebug method call.  
   
@@ -32,5 +32,5 @@ Extends the [ICorDebugDataTarget](../../../../docs/framework/unmanaged-api/debug
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

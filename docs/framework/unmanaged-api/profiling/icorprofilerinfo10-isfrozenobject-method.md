@@ -23,13 +23,15 @@ HRESULT IsFrozenObject( [in]  ObjectID objectId,
                         [out] BOOL *pbFrozen);
 ```
 
-#### Parameters
+## Parameters
 
-`objectId` \
-[in] The object to examine.
+- `objectId`
 
-`pbFrozen` \
-[out] A `BOOL` indicating if the object is in a read-only segment.
+  \[in] The object to examine.
+
+- `pbFrozen`
+
+  \[out] A `BOOL` indicating if the object is in a read-only segment.
 
 ## Requirements
 
@@ -43,4 +45,4 @@ HRESULT IsFrozenObject( [in]  ObjectID objectId,
 
 ## See also
 
-- [ICorProfilerInfo10 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo10-interface.md)
+- [ICorProfilerInfo10 Interface](icorprofilerinfo10-interface.md)

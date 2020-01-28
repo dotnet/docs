@@ -26,9 +26,11 @@ HRESULT AppDomainCreationStarted(
     [in] AppDomainID appDomainId);  
 ```  
   
-## Parameters  
- `appDomainId`  
- [in] Identifies the domain which is being created.  
+## Parameters
+
+- `appDomainId`
+
+  \[in] Identifies the domain which is being created.
   
 ## Remarks  
  The ID is not valid for any information request until the [ICorProfilerCallback::AppDomainCreationFinished](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-appdomaincreationfinished-method.md) method is called.  

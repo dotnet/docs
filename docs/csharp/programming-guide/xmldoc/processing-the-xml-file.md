@@ -1,12 +1,12 @@
 ---
-title: "Processing the XML File - C# Programming Guide"
+title: "Processing the XML file - C# programming guide"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "XML processing [C#]"
   - "XML [C#], processing"
 ms.assetid: 60c71193-9dac-4cd3-98c5-100bd0edcc42
 ---
-# Processing the XML File (C# Programming Guide)
+# Processing the XML file (C# programming guide)
 
 The compiler generates an ID string for each construct in your code that is tagged to generate documentation. (For information about how to tag your code, see [Recommended Tags for Documentation Comments](./recommended-tags-for-documentation-comments.md).) The ID string uniquely identifies the construct. Programs that process the XML file can use the ID string to identify the corresponding .NET Framework metadata/reflection item that the documentation applies to.
 
@@ -21,7 +21,7 @@ The compiler observes the following rules when it generates the ID strings:
     |Character|Description|
     |---------------|-----------------|
     |N|namespace<br /><br /> You cannot add documentation comments to a namespace, but you can make cref references to them, where supported.|
-    |T|type: class, interface, struct, enum, delegate|
+    |T|type: class, interface, struct, enum, or delegate|
     |F|field|
     |P|property (including indexers or other indexed properties)|
     |M|method (including such special methods as constructors, operators, and so forth)|
@@ -78,6 +78,6 @@ The following examples show how the ID strings for a class and its members would
 
 ## See also
 
-- [C# Programming Guide](../index.md)
-- [-doc (C# Compiler Options)](../../language-reference/compiler-options/doc-compiler-option.md)
-- [XML Documentation Comments](./index.md)
+- [C# programming guide](../index.md)
+- [-doc (C# compiler options)](../../language-reference/compiler-options/doc-compiler-option.md)
+- [XML documentation comments](./index.md)

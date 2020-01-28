@@ -23,13 +23,13 @@ A subclass of "ICorDebugValue" that represents a value that contains an object.
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetClass Method](../../../../docs/framework/unmanaged-api/debugging/icordebugobjectvalue-getclass-method.md)|Gets an interface pointer to the common language runtime (CLR) <xref:System.Type> of the object that this `ICorDebugObjectValue` references.|  
-|[GetContext Method](../../../../docs/framework/unmanaged-api/debugging/icordebugobjectvalue-getcontext-method.md)|Not implemented.|  
-|[GetFieldValue Method](../../../../docs/framework/unmanaged-api/debugging/icordebugobjectvalue-getfieldvalue-method.md)|Gets an interface pointer to an [ICorDebugValue](../../../../docs/framework/unmanaged-api/debugging/icordebugvalue-interface.md) that represents the value of the specified field of the specified class.|  
-|[GetManagedCopy Method](../../../../docs/framework/unmanaged-api/debugging/icordebugobjectvalue-getmanagedcopy-method.md)|Obsolete. Do not call this method.|  
-|[GetVirtualMethod Method](../../../../docs/framework/unmanaged-api/debugging/icordebugobjectvalue-getvirtualmethod-method.md)|Not implemented.|  
-|[IsValueClass Method](../../../../docs/framework/unmanaged-api/debugging/icordebugobjectvalue-isvalueclass-method.md)|Gets a value that indicates whether the object referenced by this `ICorDebugObjectValue` is a value type.|  
-|[SetFromManagedCopy Method](../../../../docs/framework/unmanaged-api/debugging/icordebugobjectvalue-setfrommanagedcopy-method.md)|Obsolete. Do not call this method.|  
+|[GetClass Method](icordebugobjectvalue-getclass-method.md)|Gets an interface pointer to the common language runtime (CLR) <xref:System.Type> of the object that this `ICorDebugObjectValue` references.|  
+|[GetContext Method](icordebugobjectvalue-getcontext-method.md)|Not implemented.|  
+|[GetFieldValue Method](icordebugobjectvalue-getfieldvalue-method.md)|Gets an interface pointer to an [ICorDebugValue](icordebugvalue-interface.md) that represents the value of the specified field of the specified class.|  
+|[GetManagedCopy Method](icordebugobjectvalue-getmanagedcopy-method.md)|Obsolete. Do not call this method.|  
+|[GetVirtualMethod Method](icordebugobjectvalue-getvirtualmethod-method.md)|Not implemented.|  
+|[IsValueClass Method](icordebugobjectvalue-isvalueclass-method.md)|Gets a value that indicates whether the object referenced by this `ICorDebugObjectValue` is a value type.|  
+|[SetFromManagedCopy Method](icordebugobjectvalue-setfrommanagedcopy-method.md)|Obsolete. Do not call this method.|  
   
 ## Remarks  
  An `ICorDebugObjectValue` remains valid until the process being debugged is continued.  
@@ -48,4 +48,4 @@ A subclass of "ICorDebugValue" that represents a value that contains an object.
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

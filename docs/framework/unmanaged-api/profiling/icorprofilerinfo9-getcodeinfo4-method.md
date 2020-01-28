@@ -25,19 +25,23 @@ HRESULT GetCodeInfo4( [in]  UINT_PTR pNativeCodeStartAddress,
                       [out] COR_PRF_CODE_INFO codeInfos[]);
 ```
 
-#### Parameters
+## Parameters
 
-`pNativeCodeStartAddress` \
-[in] A pointer to the start of a native function.
+- `pNativeCodeStartAddress`
 
-`cCodeInfos` \
-[in] The size of the `codeInfos` array.
+  \[in] A pointer to the start of a native function.
 
-`pcCodeInfos` \
-[out] A pointer to the total number of [COR_PRF_CODE_INFO](../../../../docs/framework/unmanaged-api/profiling/cor-prf-code-info-structure.md) structures available.
+- `cCodeInfos`
 
-`codeInfos` \
-[out] A caller-provided buffer. After the method returns, it contains an array of `COR_PRF_CODE_INFO` structures, each of which describes a block of native code.
+  \[in] The size of the `codeInfos` array.
+
+- `pcCodeInfos`
+
+  \[out] A pointer to the total number of [COR_PRF_CODE_INFO](../../../../docs/framework/unmanaged-api/profiling/cor-prf-code-info-structure.md) structures available.
+
+- `codeInfos`
+
+  \[out] A caller-provided buffer. After the method returns, it contains an array of `COR_PRF_CODE_INFO` structures, each of which describes a block of native code.
 
 ## Remarks
 

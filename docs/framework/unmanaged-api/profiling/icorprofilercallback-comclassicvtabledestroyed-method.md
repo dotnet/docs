@@ -31,16 +31,20 @@ HRESULT COMClassicVTableDestroyed(
     [in] void    *pVTable);  
 ```  
   
-## Parameters  
- `wrappedClassId`  
- [in] The ID of the class for which this vtable was created.  
-  
- `implementedIID`  
- [in] The ID of the interface implemented by the class. This value may be NULL if the interface is internal only.  
-  
- `pVTable`  
- [in] A pointer to the start of the vtable.  
-  
+## Parameters
+
+- `wrappedClassId`
+
+  \[in] The ID of the class for which this vtable was created.
+
+- `implementedIID`
+
+  \[in] The ID of the interface implemented by the class. This value may be NULL if the interface is internal only.
+
+- `pVTable`
+
+  \[in] A pointer to the start of the vtable.
+
 ## Remarks  
  The profiler should not block in its implementation of this method because the stack may not be in a state that allows garbage collection, and therefore preemptive garbage collection cannot be enabled. If the profiler blocks here and garbage collection is attempted, the runtime will block until this callback returns.  
   

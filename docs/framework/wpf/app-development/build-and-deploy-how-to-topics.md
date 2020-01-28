@@ -26,4 +26,4 @@ The following topics show how to create project files for the various [!INCLUDE[
 - [Deploying a WPF Application](deploying-a-wpf-application-wpf.md)
 - [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md)
 - [How to: Create a New WPF Browser Application Project](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb628663(v=vs.100))
-- [Determine the Installed Version of WPF](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa349641(v=vs.90))
+- [Determine the Installed Version of WPF (.NET Framework 3.5)](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa349641(v=vs.90))

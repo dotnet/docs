@@ -25,7 +25,4 @@ The Windows Forms <xref:System.Windows.Forms.SaveFileDialog> component is a pre-
  Provides a complete list of Windows Forms controls, with links to information on their use.  
   
  [Dialog-Box Controls and Components](dialog-box-controls-and-components-windows-forms.md)  
- Describes a set of controls and components that allow users to perform standard interactions with the application or system.  
-  
- [Essential Code for Windows Forms Dialog Boxes](https://go.microsoft.com/fwlink/?LinkID=102575)  
- Discusses the Windows Forms dialog box controls and components and the code necessary for executing their basic functions. (MSDN Online Library technical article)
+ Describes a set of controls and components that allow users to perform standard interactions with the application or system.

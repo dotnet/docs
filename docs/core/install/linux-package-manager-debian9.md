@@ -76,4 +76,4 @@ This section provides information on common errors you may get while using the p
 
 ### Failed to fetch
 
-While installing the .NET Core package, you may see an error similar to `Failed to fetch ... File has unexpected size ... Mirror sync in progress?`. In general, this error means that the package feed for .NET Core is being upgraded with newer versions and you should try again later. If you continually receive this error for some time, please file an issue at <https://github.com/dotnet/core/issues>.
+While installing the .NET Core package, you may see an error similar to `Failed to fetch ... File has unexpected size ... Mirror sync in progress?`. Generally speaking, this error means that the package feed for .NET Core is being upgraded with newer package versions, and that you should try again later. During an upgrade, the package feed should not be unavailable for more than 2 hours. If you continually receive this error for more than 2 hours, please file an issue at <https://github.com/dotnet/core/issues>.

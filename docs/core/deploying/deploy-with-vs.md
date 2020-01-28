@@ -104,7 +104,7 @@ Once you've finished debugging, you can publish your self-contained deployment:
 
 <!-- markdownlint-disable MD025 -->
 
-# [Visual Studio version 15.6 and earlier](#tab/vs156)
+# [Visual Studio 15.6 and earlier](#tab/vs156)
 
 After you've debugged and tested the program, create the files to be deployed with your app for each platform that it targets.
 
@@ -268,7 +268,7 @@ Deploying a self-contained deployment with one or more third-party dependencies 
 
 The following is the complete *csproj* file for this project:
 
-# [Visual Studio version 15.6 and earlier](#tab/vs156)
+# [Visual Studio 15.6 and earlier](#tab/vs156)
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">

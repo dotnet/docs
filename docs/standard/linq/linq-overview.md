@@ -1,22 +1,23 @@
 ---
-title: LINQ (Language Integrated Query)
-description: Learn how LINQ provides language-level querying capabilities and an API to C# and Visual Basic as a way to write expressive, declarative code.
-author: cartermp
+title: LINQ (Language-Integrated Query) overview  
+description: LINQ provides language-level querying capabilities and an API to C# and VB as a way to write expressive, declarative code.
+author: cartermp  
 ms.author: wiwagn
 ms.date: 06/20/2016
-dev_langs: 
+ms.technology: dotnet-standard
+dev_langs:  
   - "csharp"
   - "vb"
-ms.technology: dotnet-standard
 ms.assetid: c00939e1-59e3-4e61-8fe9-08ad6b3f1295
 ---
-# LINQ (Language Integrated Query)
 
-## What is it?
+# LINQ (Language-Integrated Query) overview (C# and Visual Basic)
 
 LINQ provides language-level querying capabilities and a [higher-order function](https://en.wikipedia.org/wiki/Higher-order_function) API to C# and Visual Basic as a way to write expressive, declarative code.
 
-Language-level query syntax:
+## Example: Language-level query syntax
+
+This is the language-level query syntax:
 
 ```csharp
 var linqExperts = from p in programmers
@@ -30,7 +31,7 @@ Dim linqExperts = From p in programmers
                   Select New LINQExpert(p)
 ```
 
-Same example using the `IEnumerable<T>` API:
+This is the same example using the `IEnumerable<T>` API:
 
 ```csharp
 var linqExperts = programmers.Where(p => p.IsNewToLINQ)
@@ -42,11 +43,11 @@ Dim linqExperts = programmers.Where(Function(p) p.IsNewToLINQ).
                              Select(Function(p) New LINQExpert(p))
 ```
 
-## LINQ is Expressive
+## Example: LINQ is expressive
 
 Imagine you have a list of pets, but want to convert it into a dictionary where you can access a pet directly by its `RFID` value.
 
-Traditional imperative code:
+This is traditional imperative code:
 
 ```csharp
 var petLookup = new Dictionary<int, Pet>();
@@ -67,7 +68,7 @@ Next
 
 The intention behind the code is not to create a new `Dictionary<int, Pet>` and add to it via a loop, it is to convert an existing list into a dictionary! LINQ preserves the intention whereas the imperative code does not.
 
-Equivalent LINQ expression:
+This is the equivalent LINQ expression:
 
 ```csharp
 var petLookup = pets.ToDictionary(pet => pet.RFID);
@@ -79,11 +80,11 @@ Dim petLookup = pets.ToDictionary(Function(pet) pet.RFID)
 
 The code using LINQ is valuable because it evens the playing field between intent and code when reasoning as a programmer. Another bonus is code brevity. Imagine reducing large portions of a codebase by 1/3 as done above. Pretty sweet deal, right?
 
-## LINQ Providers Simplify Data Access
+## Example: LINQ providers simplify data access
 
 For a significant chunk of software out in the wild, everything revolves around dealing with data from some source (Databases, JSON, XML, etc). Often this involves learning a new API for each data source, which can be annoying. LINQ simplifies this by abstracting common elements of data access into a query syntax which looks the same no matter which data source you pick.
 
-Consider the following: finding all XML elements with a specific attribute value.
+This finds all XML elements with a specific attribute value:
 
 ```csharp
 public static IEnumerable<XElement> FindAllElementsWithAttribute(XElement documentRoot, string elementName,
@@ -102,16 +103,15 @@ Public Shared Function FindAllElementsWithAttribute(documentRoot As XElement, el
            Where el.Element(attributeName).ToString() = value
            Select el
 End Function
-
 ```
 
 Writing code to manually traverse the XML document to perform this task would be far more challenging.
 
-Interacting with XML isn’t the only thing you can do with LINQ Providers. [Linq to SQL](../../docs/framework/data/adonet/sql/linq/index.md) is a fairly bare-bones Object-Relational Mapper (ORM) for an MSSQL Server Database. The [JSON.NET](https://www.newtonsoft.com/json/help/html/LINQtoJSON.htm) library provides efficient JSON Document traversal via LINQ. Furthermore, if there isn’t a library which does what you need, you can also [write your own LINQ Provider](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2012/bb546158(v=vs.110))!
+Interacting with XML isn’t the only thing you can do with LINQ Providers. [Linq to SQL](../../framework/data/adonet/sql/linq/index.md) is a fairly bare-bones Object-Relational Mapper (ORM) for an MSSQL Server Database. The [JSON.NET](https://www.newtonsoft.com/json/help/html/LINQtoJSON.htm) library provides efficient JSON Document traversal via LINQ. Furthermore, if there isn’t a library which does what you need, you can also [write your own LINQ Provider](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2012/bb546158(v=vs.110))!
 
-## Why Use the Query Syntax?
+## Reasons to use the query syntax
 
-This is a question which often comes up. After all, this,
+Why use query syntax? This is a question which often comes up. After all, this,
 
 ```csharp
 var filteredItems = myItems.Where(item => item.Foo);
@@ -143,23 +143,23 @@ So this begs the question, **should you just use the query syntax?**
 
 The answer to this question is **yes** if...
 
-* Your existing codebase already uses the query syntax
-* You need to scope variables within your queries due to complexity
-* You prefer the query syntax and it won’t distract from your codebase
+- Your existing codebase already uses the query syntax
+- You need to scope variables within your queries due to complexity
+- You prefer the query syntax and it won’t distract from your codebase
 
 The answer to this question is **no** if...
 
-* Your existing codebase already uses the API syntax
-* You have no need to scope variables within your queries
-* You prefer the API syntax and it won’t distract from your codebase
+- Your existing codebase already uses the API syntax
+- You have no need to scope variables within your queries
+- You prefer the API syntax and it won’t distract from your codebase
 
-## Essential Samples
+## Examples: Essential LINQ
 
 For a truly comprehensive list of LINQ samples, visit [101 LINQ Samples](https://code.msdn.microsoft.com/101-LINQ-Samples-3fb9811b).
 
 The following is a quick demonstration of some of the essential pieces of LINQ. This is in no way comprehensive, as LINQ provides significantly more functionality than what is showcased here.
 
-* The bread and butter - `Where`, `Select`, and `Aggregate`:
+### The bread and butter - `Where`, `Select`, and `Aggregate`
 
 ```csharp
 // Filtering a list.
@@ -203,7 +203,7 @@ Dim seed As Integer = 0
 Dim sumOfStrings As Integer = strings.Aggregate(seed, Function(s1, s2) s1.Length + s2.Length)
 ```
 
-* Flattening a list of lists:
+### Flattening a list of lists
 
 ```csharp
 // Transforms the list of kennels into a list of all their dogs.
@@ -215,7 +215,7 @@ var allDogsFromKennels = kennels.SelectMany(kennel => kennel.Dogs);
 Dim allDogsFromKennels = kennels.SelectMany(Function(kennel) kennel.Dogs)
 ```
 
-* Union between two sets (with custom comparator):
+### Union between two sets (with custom comparator)
 
 ```csharp
 public class DogHairLengthComparer : IEqualityComparer<Dog>
@@ -243,15 +243,15 @@ public class DogHairLengthComparer : IEqualityComparer<Dog>
         return d.GetHashCode();
     }
 }
-
 ...
 
 // Gets all the short-haired dogs between two different kennels.
 var allShortHairedDogs = kennel1.Dogs.Union(kennel2.Dogs, new DogHairLengthComparer());
+
 ```
 
 ```vb
-Public Class DogHairLengthComparer 
+Public Class DogHairLengthComparer  
   Inherits IEqualityComparer(Of Dog)
 
   Public Function Equals(a As Dog,b As Dog) As Boolean
@@ -276,7 +276,7 @@ End Class
 Dim allShortHairedDogs = kennel1.Dogs.Union(kennel2.Dogs, New DogHairLengthComparer())
 ```
 
-* Intersection between two sets:
+### Intersection between two sets
 
 ```csharp
 // Gets the volunteers who spend share time with two humane societies.
@@ -290,7 +290,7 @@ Dim volunteers = humaneSociety1.Volunteers.Intersect(humaneSociety2.Volunteers,
                                                      New VolunteerTimeComparer())
 ```
 
-* Ordering:
+### Ordering
 
 ```csharp
 // Get driving directions, ordering by if it's toll-free before estimated driving time.
@@ -306,7 +306,9 @@ Dim results = DirectionsProcessor.GetDirections(start, end).
                 ThenBy(Function(direction) direction.EstimatedTime)
 ```
 
-* Finally, a more advanced sample: determining if the values of the properties of two instances of the same type are equal (Borrowed and modified from [this StackOverflow post](https://stackoverflow.com/a/844855)):
+### Equality of instance properties
+
+Finally, a more advanced sample: determining if the values of the properties of two instances of the same type are equal (Borrowed and modified from [this StackOverflow post](https://stackoverflow.com/a/844855)):
 
 ```csharp
 public static bool PublicInstancePropertiesEqual<T>(this T self, T to, params string[] ignore) where T : class
@@ -315,7 +317,7 @@ public static bool PublicInstancePropertiesEqual<T>(this T self, T to, params st
     {
         return self == to;
     }
-    
+  
     // Selects the properties which have unequal values into a sequence of those properties.
     var unequalProperties = from property in typeof(T).GetProperties(BindingFlags.Public | BindingFlags.Instance)
                             where !ignore.Contains(property.Name)
@@ -328,14 +330,14 @@ public static bool PublicInstancePropertiesEqual<T>(this T self, T to, params st
 ```
 
 ```vb
-<System.Runtime.CompilerServices.Extension()> 
+<System.Runtime.CompilerServices.Extension()>  
 Public Function PublicInstancePropertiesEqual(Of T As Class)(self As T, [to] As T, ParamArray ignore As String()) As Boolean
     If self Is Nothing OrElse [to] Is Nothing Then
         Return self Is [to]
     End If
 
     ' Selects the properties which have unequal values into a sequence of those properties.
-    Dim unequalProperties = From [property] In GetType(T).GetProperties(BindingFlags.Public Or BindingFlags.Instance) 
+    Dim unequalProperties = From [property] In GetType(T).GetProperties(BindingFlags.Public Or BindingFlags.Instance)  
                             Where Not ignore.Contains([property].Name)
                             Let selfValue = [property].GetValue(self, Nothing)
                             Let toValue = [property].GetValue([to], Nothing)
@@ -344,7 +346,7 @@ Public Function PublicInstancePropertiesEqual(Of T As Class)(self As T, [to] As 
 End Function
 ```
 
-## PLINQ
+## Example: PLINQ
 
 PLINQ, or Parallel LINQ, is a parallel execution engine for LINQ expressions. In other words, a regular LINQ expression can be trivially parallelized across any number of threads. This is accomplished via a call to `AsParallel()` preceding the expression.
 
@@ -382,12 +384,12 @@ This code will partition `facebookUsers` across system threads as necessary, sum
 
 In diagram form:
 
-![PLINQ diagram](./media/using-linq/plinq-diagram.png)
+![PLINQ diagram](../media/using-linq/plinq-diagram.png)
 
 Parallelizable CPU-bound jobs which can be easily expressed via LINQ (in other words, are pure functions and have no side effects) are a great candidate for PLINQ. For jobs which _do_ have a side effect, consider using the [Task Parallel Library](./parallel-programming/task-parallel-library-tpl.md).
 
-## Further Resources:
+## Further resources
 
-* [101 LINQ Samples](https://code.msdn.microsoft.com/101-LINQ-Samples-3fb9811b)
-* [Linqpad](https://www.linqpad.net/), a playground environment and Database querying engine for C#/F#/Visual Basic
-* [EduLinq](https://codeblog.jonskeet.uk/2011/02/23/reimplementing-linq-to-objects-part-45-conclusion-and-list-of-posts/), an e-book for learning how LINQ-to-objects is implemented
+- [101 LINQ Samples](https://code.msdn.microsoft.com/101-LINQ-Samples-3fb9811b)
+- [Linqpad](https://www.linqpad.net/), a playground environment and Database querying engine for C#/F#/Visual Basic
+- [EduLinq](https://codeblog.jonskeet.uk/2011/02/23/reimplementing-linq-to-objects-part-45-conclusion-and-list-of-posts/), an e-book for learning how LINQ-to-objects is implemented

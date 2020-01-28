@@ -11,9 +11,9 @@ ms.custom: seodec18
 With the `dotnet test` command in .NET Core, you can use a filter expression to run selective tests. This article demonstrates how to filter which test are run. The following examples use `dotnet test`. If you're using `vstest.console.exe`, replace `--filter` with `--testcasefilter:`.
 
 > [!NOTE]
-> Using filters that include exclamation mark (!) on `*nix` requires escaping since `!` is reserverd. For example, this filter
+> Using filters that include exclamation mark (!) on `*nix` requires escaping since `!` is reserved. For example, this filter
 > skips all tests if name space contains IntegrationTests `dotnet test --filter FullyQualifiedName\!~IntegrationTests`.
-> Note the backslash that preceds the exclamation mark 
+> Note the backslash that precedes the exclamation mark.
 
 ## MSTest
 

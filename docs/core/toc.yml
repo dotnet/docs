@@ -109,10 +109,20 @@
     href: tutorials/aspnet-core.md
   - name: Host .NET Core from native code
     href: tutorials/netcore-hosting.md
-- name: Project files
+- name: SDKs and project files
   items:
-  - name: MSBuild property reference
-    href: core-sdk-msbuild-props.md
+  - name: Overview
+    href: sdk/overview.md
+  - name: Microsoft.NET.Sdk
+    items:
+    - name: MSBuild properties reference
+      href: sdk/sdk-msbuild-props.md
+    - name: MSBuild targets reference
+      href: sdk/sdk-msbuild-targets.md
+  - name: Microsoft.NET.Sdk.Web
+    href: /aspnet/core/razor-pages/web-sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
+  - name: Microsoft.NET.Sdk.Razor
+    href: /aspnet/core/razor-pages/sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
 - name: Run-time configuration
   items:
   - name: Settings
@@ -233,8 +243,6 @@
     href: versions/remove-runtime-sdk-versions.md
 - name: Runtime Identifier (RID) catalog
   href: rid-catalog.md
-- name: .NET Core SDK overview
-  href: sdk.md
 - name: .NET Core CLI
   items:
   - name: Overview
@@ -357,7 +365,7 @@
   - name: Organize projects for .NET Core
     href: porting/project-structure.md
   - name: Unavailable technologies
-    href: porting/net-framework-tech-unavailable.md 
+    href: porting/net-framework-tech-unavailable.md
   - name: Tools
     href: porting/tools.md
   - name: Use the Windows Compatibility Pack
@@ -367,7 +375,7 @@
   - name: Port WPF projects
     href: porting/wpf.md
   - name: Port C++/CLI projects
-    href: porting/cpp-cli.md    
+    href: porting/cpp-cli.md
 - name: Dependency loading
   items:
   - name: Overview

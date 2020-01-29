@@ -10,11 +10,11 @@ ms.topic: conceptual
 
 | Description | ID | Introduced version |
 | - | - | - |
-| .NET Core SDK | `Microsoft.NET.Sdk` |
-| [.NET Core Web SDK](/aspnet/core/razor-pages/web-sdk) | `Microsoft.NET.Sdk.Web` |
-| [.NET Core Razor SDK](/aspnet/core/razor-pages/sdk) | `Microsoft.NET.Sdk.Razor` |
-| .NET Core Worker Service SDK | `Microsoft.NET.Sdk.Worker` | .NET Core 3.0 |
-| .NET Core WinForms and WPF SDK | `Microsoft.NET.Sdk.WindowsDesktop` | .NET Core 3.0 |
+| The .NET Core SDK | `Microsoft.NET.Sdk` |
+| The .NET Core [Web SDK](/aspnet/core/razor-pages/web-sdk) | `Microsoft.NET.Sdk.Web` |
+| The .NET Core [Razor SDK](/aspnet/core/razor-pages/sdk) | `Microsoft.NET.Sdk.Razor` |
+| The .NET Core Worker Service SDK | `Microsoft.NET.Sdk.Worker` | .NET Core 3.0 |
+| The .NET Core WinForms and WPF SDK | `Microsoft.NET.Sdk.WindowsDesktop` | .NET Core 3.0 |
 
 The .NET Core SDK is the base SDK for .NET Core. The other SDKs depend on the .NET Core SDK. For example, the Web SDK depends on the .NET Core SDK and the Razor SDK. The .NET Core SDK is a set of libraries and tools that allow developers to create .NET Core applications and libraries. It contains the following components that are used to build and run applications:
 
@@ -41,7 +41,7 @@ Another way to specify the SDK is with the top-level [Sdk](/visualstudio/msbuild
 </Project>
 ```
 
-Referencing an SDK in one of these ways greatly simplifies project files for .NET Core. The SDK takes care of importing all of the [properties](msbuild-props.md) and [targets](msbuild-targets.md) necessary to build a .NET Core project. While evaluating the project, MSBuild adds implicit imports for `Sdk.props` at the top of the project file and `Sdk.targets` at the bottom.
+Referencing an SDK in one of these ways greatly simplifies project files for .NET Core. While evaluating the project, MSBuild adds implicit imports for `Sdk.props` at the top of the project file and `Sdk.targets` at the bottom.
 
 ```xml
 <Project>
@@ -56,11 +56,8 @@ Referencing an SDK in one of these ways greatly simplifies project files for .NE
 > [!TIP]
 > On a Windows machine, the *Sdk.props* and *Sdk.targets* files can be found in the *%ProgramFiles%\dotnet\sdk\\[version]\Sdks\Microsoft.NET.Sdk\Sdk* folder.
 
-
-For information about MSBuild *properties* for the .NET Core SDK, see [MSBuild properties for .NET Core SDK projects](msbuild-props.md). For information about MSBuild *targets* for the .NET Core SDK, see [MSBuild targets for .NET Core SDK projects](msbuild-targets.md).
-
 ## See also
 
 - [Install the SDK](../install/sdk.md)
-- [.NET Core CLI](tools/index.md)
+- [The .NET Core CLI](tools/index.md)
 - [How to use MSBuild project SDKs](/visualstudio/msbuild/how-to-use-project-sdk)

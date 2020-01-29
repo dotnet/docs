@@ -1,7 +1,7 @@
 ---
 title: Build a .NET for Apache Spark application on Windows
 description: Learn how to build your .NET for Apache Spark application on Windows.
-ms.date: 01/02/2020
+ms.date: 01/29/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
 ---
@@ -9,9 +9,11 @@ ms.custom: mvc,how-to
 
 # Learn how to build your .NET for Apache Spark application on Windows
 
+This article teaches you how to build your .NET for Apache Spark applications on Windows.
+
 ## Prerequisites
 
-If you already have all the prerequisites, skip to the [build](#build) steps below.
+If you already have all of the following prerequisites, skip to the [build](#build) steps.
 
   1. Download and install the **[.NET Core SDK](https://dotnet.microsoft.com/download/dotnet-core/2.1)** - installing the SDK will add the `dotnet` toolchain to your path. .NET Core 2.1, 2.2 and 3.1 are supported.
   2. Install **[Visual Studio 2019](https://www.visualstudio.com/downloads/)** (Version 16.3 or later). The Community version is completely free. When configuring your installation, include these components at minimum:

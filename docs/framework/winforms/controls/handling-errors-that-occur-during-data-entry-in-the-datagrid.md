@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Handling Errors that Occur During Data Entry in the Windows Forms DataGridView Control"
+title: "Walkthrough: Handling errors that occur during data entry in DataGridView control"
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

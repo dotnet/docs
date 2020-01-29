@@ -1,5 +1,5 @@
 ---
-title: "How to: Bind Data to the Windows Forms DataGridView Control Using the Designer"
+title: Bind Data to DataGridView Control Using the Designer
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Windows Forms controls, binding to a data source"

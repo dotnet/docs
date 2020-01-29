@@ -11,7 +11,7 @@ ms.assetid: 18997e71-745a-4425-9c69-2cbce1d8669e
 ---
 # Walkthrough: Binding to Data in Hybrid Applications
 
-Binding a data source to a control is essential for providing users with access to underlying data, whether you are using [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] or [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. This walkthrough shows how you can use data binding in hybrid applications that include both [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] and [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls.
+Binding a data source to a control is essential for providing users with access to underlying data, whether you are using Windows Forms or [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. This walkthrough shows how you can use data binding in hybrid applications that include both Windows Forms and [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls.
 
 Tasks illustrated in this walkthrough include:
 
@@ -55,7 +55,7 @@ You need the following components to complete this walkthrough:
 
 3. Open MainWindow.xaml in the WPF Designer.
 
-4. In the <xref:System.Windows.Window> element, add the following [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] namespaces mapping.
+4. In the <xref:System.Windows.Window> element, add the following Windows Forms namespaces mapping.
 
     ```xaml
     xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
@@ -107,7 +107,7 @@ The details of each customer record are displayed in several <xref:System.Window
 
 ## Displaying Data by Using Interoperation
 
-The orders corresponding to the selected customer are displayed in a <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> control named `dataGridView1`. The `dataGridView1` control is bound to the data source in the code-behind file. A <xref:System.Windows.Forms.Integration.WindowsFormsHost> control is the parent of this [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] control.
+The orders corresponding to the selected customer are displayed in a <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> control named `dataGridView1`. The `dataGridView1` control is bound to the data source in the code-behind file. A <xref:System.Windows.Forms.Integration.WindowsFormsHost> control is the parent of this Windows Forms control.
 
 ### To display data in the DataGridView control
 

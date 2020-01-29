@@ -158,9 +158,9 @@ You can also set certificates by using configuration. If you are creating a serv
 
 ## Mapping a Certificate to a User Account
 
-A feature of IIS and Active Directory is the ability to map a certificate to a Windows user account. For more information about the feature, see [Map certificates to user accounts](https://go.microsoft.com/fwlink/?LinkId=88917).
+A feature of IIS and Active Directory is the ability to map a certificate to a Windows user account. For more information about the feature, see [Map certificates to user accounts](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc736706(v=ws.10)).
 
-For more information about using Active Directory mapping, see [Mapping Client Certificates with Directory Service Mapping](https://go.microsoft.com/fwlink/?LinkId=88918).
+For more information about using Active Directory mapping, see [Mapping Client Certificates with Directory Service Mapping](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc758484(v=ws.10)).
 
 With this capability enabled, you can set the <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication.MapClientCertificateToWindowsAccount%2A> property of the <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication> class to `true`. In configuration, you can set the `mapClientCertificateToWindowsAccount` attribute of the [\<authentication>](../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-servicecertificate-element.md) element to `true`, as shown in the following code.
 

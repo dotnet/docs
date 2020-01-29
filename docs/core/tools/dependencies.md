@@ -3,23 +3,24 @@ title: Managing dependencies in .NET Core tooling
 description: Explains how to manage your dependencies with the .NET Core tools.
 ms.date: 03/06/2017
 ---
-# Managing dependencies with .NET Core SDK 1.0
+# Manage dependencies with .NET Core SDK 1.0
 
-With the move of .NET Core projects from project.json to csproj and MSBuild, a significant investment also happened that resulted in unification of the project file and assets that allow tracking of dependencies. For .NET Core projects this is similar to what project.json did. There is no separate JSON or XML file that tracks NuGet dependencies. With this change, we've also introduced another type of *reference* into the csproj syntax called the `<PackageReference>`. 
+With the move of .NET Core projects from project.json to csproj and MSBuild, a significant investment also happened that resulted in unification of the project file and assets that allow tracking of dependencies. For .NET Core projects, this is similar to what project.json did. There is no separate JSON or XML file that tracks NuGet dependencies. With this change, we've also introduced another type of *reference* into the csproj syntax called the `<PackageReference>`.
 
-This document describes the new reference type. It also shows how to add a package dependency using this new reference type to your project. 
+This document describes the new reference type. It also shows how to add a package dependency using this new reference type to your project.
 
 ## The new \<PackageReference> element
+
 The `<PackageReference>` has the following basic structure:
 
 ```xml
 <PackageReference Include="PACKAGE_ID" Version="PACKAGE_VERSION" />
 ```
 
-If you are familiar with MSBuild, it will look familiar to the other reference types that already exist. The key is the `Include` statement which specifies the package id that you wish to add to the project. The `<Version>` child element specifies the version to get. The versions are specified as per [NuGet version rules](/nuget/create-packages/dependency-versions#version-ranges).
+If you are familiar with MSBuild, it will look familiar to the other reference types that already exist. The key is the `Include` statement, which specifies the package id that you wish to add to the project. The `<Version>` child element specifies the version to get. The versions are specified as per [NuGet version rules](/nuget/create-packages/dependency-versions#version-ranges).
 
 > [!NOTE]
-> If you are not familiar with the overall `csproj` syntax, see the [MSBuild project reference](/visualstudio/msbuild/msbuild-project-file-schema-reference) documentation for more information.  
+> If you are not familiar with the overall `csproj` syntax, see the [MSBuild project reference](/visualstudio/msbuild/msbuild-project-file-schema-reference) documentation for more information.
 
 Adding a dependency that is available only in a specific target is done using conditions like in the following example:
 
@@ -27,20 +28,21 @@ Adding a dependency that is available only in a specific target is done using co
 <PackageReference Include="PACKAGE_ID" Version="PACKAGE_VERSION" Condition="'$(TargetFramework)' == 'netcoreapp2.1'" />
 ```
 
-The above means that the dependency will only be valid if the build is happening for that given target. The `$(TargetFramework)` in the condition is an MSBuild property that is being set in the project. For most common .NET Core applications, you will not need to do this. 
+The above means that the dependency will only be valid if the build is happening for that given target. The `$(TargetFramework)` in the condition is an MSBuild property that is being set in the project. For most common .NET Core applications, you will not need to do this.
 
-## Adding a dependency to your project
-Adding a dependency to your project is straightforward. Here is an example of how to add Json.NET version `9.0.1` to your project. Of course, it is applicable to any other NuGet dependency. 
+## Add a dependency to the project
 
-When you open your project file, you will see two or more `<ItemGroup>` nodes. You will notice that one of the nodes already has `<PackageReference>` elements in it. You can add your new dependency to this node, or create a new one; it is completely up to you as the result will be the same. 
+Adding a dependency to your project is straightforward. Here is an example of how to add Json.NET version `9.0.1` to your project. Of course, it is applicable to any other NuGet dependency.
 
-In this example we will use the default template that is dropped by `dotnet new console`. This is a simple console application. When we open up the project, we first find the `<ItemGroup>` with already existing `<PackageReference>` in it. We then add the following to it:
+When you open your project file, you will see two or more `<ItemGroup>` nodes. You will notice that one of the nodes already has `<PackageReference>` elements in it. You can add your new dependency to this node, or create a new one; it is up to you, as the result will be the same.
+
+The following example uses the default template that's dropped by `dotnet new console`. This is a simple console application. When you open up the project, you'll find the `<ItemGroup>` with already existing `<PackageReference>` in it. Add the following to it:
 
 ```xml
 <PackageReference Include="Newtonsoft.Json" Version="9.0.1" />
 ```
 
-After this, we save the project and run the `dotnet restore` command to install the dependency. 
+After this, save the project and run the `dotnet restore` command to install the dependency.
 
 [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
@@ -59,5 +61,6 @@ The full project looks like this:
 </Project>
 ```
 
-## Removing a dependency from the project
+## Remove a dependency from the project
+
 Removing a dependency from the project file involves simply removing the `<PackageReference>` from the project file.

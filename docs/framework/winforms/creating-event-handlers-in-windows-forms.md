@@ -1,5 +1,5 @@
 ---
-title: "Creating Event Handlers in Windows Forms"
+title: "Create Event Handlers"
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "event handling [Windows Forms]"

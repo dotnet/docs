@@ -27,13 +27,16 @@ HRESULT AppDomainCreationFinished(
     [in] HRESULT     hrStatus);   
 ```  
   
-## Parameters  
- `appDomainId`  
- [in] Identifies the domain which has been created.  
-  
- `hrStatus`  
- [in] An HRESULT that indicates whether creation of the application domain completed successfully.  
-  
+## Parameters
+
+- `appDomainId`
+
+  \[in] Identifies the domain which has been created.
+
+- `hrStatus`
+
+  \[in] An HRESULT that indicates whether creation of the application domain completed successfully.
+
 ## Remarks  
  The application ID is not valid for any information request until the `AppDomainCreationFinished` method is called.  
   
@@ -50,4 +53,4 @@ HRESULT AppDomainCreationFinished(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)

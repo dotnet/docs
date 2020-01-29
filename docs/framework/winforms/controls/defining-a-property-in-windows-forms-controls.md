@@ -1,5 +1,5 @@
 ---
-title: "Defining a Property in Windows Forms Controls"
+title: Define control properties
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

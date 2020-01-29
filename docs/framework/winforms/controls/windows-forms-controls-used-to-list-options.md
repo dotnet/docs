@@ -1,5 +1,5 @@
 ---
-title: "Windows Forms Controls Used to List Options"
+title: Controls Used to List Options
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Forms controls, listing options"

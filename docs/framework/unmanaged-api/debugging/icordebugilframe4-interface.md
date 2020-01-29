@@ -20,12 +20,12 @@ topic_type:
   
 |Method|Description|  
 |------------|-----------------|  
-|[EnumerateLocalVariablesEx Method](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-enumeratelocalvariablesex-method.md)|Returns a list of the local variables available in the current frame.|  
-|[GetCodeEx Method](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-getcodeex-method.md)|Returns the code that this stack frame is running.|  
-|[GetLocalVariableEx Method](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe4-getlocalvariableex-method.md)|Returns the value of a local variable in the IL frame.|  
+|[EnumerateLocalVariablesEx Method](icordebugilframe4-enumeratelocalvariablesex-method.md)|Returns a list of the local variables available in the current frame.|  
+|[GetCodeEx Method](icordebugilframe4-getcodeex-method.md)|Returns the code that this stack frame is running.|  
+|[GetLocalVariableEx Method](icordebugilframe4-getlocalvariableex-method.md)|Returns the value of a local variable in the IL frame.|  
   
 ## Remarks  
- These methods offer functionality in addition to that provided by the [EnumerateLocalVariables](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe-enumeratelocalvariables-method.md), [GetCode](../../../../docs/framework/unmanaged-api/debugging/icordebugframe-getcode-method.md), and [GetLocalVariable](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe-getlocalvariable-method.md) methods. Each method includes a `flags` parameter that specifies whether additional local variables or code defined by a profiler's ReJIT request are visible.  
+ These methods offer functionality in addition to that provided by the [EnumerateLocalVariables](icordebugilframe-enumeratelocalvariables-method.md), [GetCode](icordebugframe-getcode-method.md), and [GetLocalVariable](icordebugilframe-getlocalvariable-method.md) methods. Each method includes a `flags` parameter that specifies whether additional local variables or code defined by a profiler's ReJIT request are visible.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -38,5 +38,5 @@ topic_type:
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

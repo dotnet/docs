@@ -57,5 +57,5 @@ HRESULT GetInstrumentedILMap(
 ## See also
 
 - [ICorProfilerInfo::SetILInstrumentedCodeMap](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-setilinstrumentedcodemap-method.md)
-- [ICorDebugILCode2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode2-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugILCode2 Interface](icordebugilcode2-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

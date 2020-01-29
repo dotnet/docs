@@ -18,11 +18,11 @@ The proxy class allows you to call the Web service methods synchronously, where 
 > [!NOTE]
 > This code does not work in Web applications, because ASP.NET does not support the `My.WebServices` object.
 
-### To call a Web service asynchronously
+## Call a Web service asynchronously
 
 1. Reference the DemoTemperatureService Web service at `http://www.xmethods.net`. The address is
 
-    ```
+    ```http
     http://www.xmethods.net/sd/2001/DemoTemperatureService.wsdl
     ```
 
@@ -63,5 +63,5 @@ The proxy class allows you to call the Web service methods synchronously, where 
 
 ## See also
 
-- [Accessing Application Web Services](../../../visual-basic/developing-apps/programming/accessing-application-web-services.md)
-- [My.WebServices Object](../../../visual-basic/language-reference/objects/my-webservices-object.md)
+- [Accessing Application Web Services](accessing-application-web-services.md)
+- [My.WebServices Object](../../language-reference/objects/my-webservices-object.md)

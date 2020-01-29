@@ -10,12 +10,12 @@ Logically extends the ICorDebugProcess interface to enable features such as deco
   
 |Method|Description|  
 |------------|-----------------|  
-|[DecodeEvent Method](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-decodeevent-method.md)|Decodes managed debug events that have been encapsulated in the payload of specially crafted native exception debug events.|  
-|[EnableVirtualModuleSplitting Method](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-enablevirtualmodulesplitting-method.md)|Enables or disables virtual module splitting.|  
-|[GetCode Method](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-getcode-method.md)|Gets information about the managed code at a particular code address.|  
-|[GetExportStepInfo Method](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-getexportstepinfo-method.md)|Provides information on runtime exported functions to help step through managed code.|  
-|[MarkDebuggerAttached Method](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-markdebuggerattached-method.md)|Changes the internal state of the debugee so that the <xref:System.Diagnostics.Debugger.IsAttached%2A?displayProperty=nameWithType> method in the .NET Framework Class Library returns `true`.|  
-|[ProcessStateChanged Method](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-processstatechanged-method.md)|Notifies [ICorDebug](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md) that the process is running.|  
+|[DecodeEvent Method](icordebugprocess6-decodeevent-method.md)|Decodes managed debug events that have been encapsulated in the payload of specially crafted native exception debug events.|  
+|[EnableVirtualModuleSplitting Method](icordebugprocess6-enablevirtualmodulesplitting-method.md)|Enables or disables virtual module splitting.|  
+|[GetCode Method](icordebugprocess6-getcode-method.md)|Gets information about the managed code at a particular code address.|  
+|[GetExportStepInfo Method](icordebugprocess6-getexportstepinfo-method.md)|Provides information on runtime exported functions to help step through managed code.|  
+|[MarkDebuggerAttached Method](icordebugprocess6-markdebuggerattached-method.md)|Changes the internal state of the debugee so that the <xref:System.Diagnostics.Debugger.IsAttached%2A?displayProperty=nameWithType> method in the .NET Framework Class Library returns `true`.|  
+|[ProcessStateChanged Method](icordebugprocess6-processstatechanged-method.md)|Notifies [ICorDebug](icordebug-interface.md) that the process is running.|  
   
 ## Remarks  
   
@@ -33,5 +33,5 @@ Logically extends the ICorDebugProcess interface to enable features such as deco
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

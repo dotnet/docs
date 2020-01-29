@@ -29,19 +29,24 @@ HRESULT COMClassicVTableCreated(
     [in] ULONG   cSlots);  
 ```  
   
-## Parameters  
- `wrappedClasId`  
- [in] The ID of the class for which the vtable has been created.  
-  
- `implementedIID`  
- [in] The ID of the interface implemented by the class. This value may be NULL if the interface is internal only.  
-  
- `pVTable`  
- [in] A pointer to the start of the vtable.  
-  
- `cSlots`  
- [in] The number of slots that are in the vtable.  
-  
+## Parameters
+
+- `wrappedClasId`
+
+  \[in] The ID of the class for which the vtable has been created.
+
+- `implementedIID`
+
+  \[in] The ID of the interface implemented by the class. This value may be NULL if the interface is internal only.
+
+- `pVTable`
+
+  \[in] A pointer to the start of the vtable.
+
+- `cSlots`
+
+  \[in] The number of slots that are in the vtable.
+
 ## Remarks  
  The profiler should not block in its implementation of this method because the stack may not be in a state that allows garbage collection, and therefore preemptive garbage collection cannot be enabled. If the profiler blocks here and garbage collection is attempted, the runtime will block until this callback returns.  
   
@@ -58,5 +63,5 @@ HRESULT COMClassicVTableCreated(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
-- [COMClassicVTableDestroyed Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-comclassicvtabledestroyed-method.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [COMClassicVTableDestroyed Method](icorprofilercallback-comclassicvtabledestroyed-method.md)

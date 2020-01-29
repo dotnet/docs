@@ -1,5 +1,5 @@
 ---
-title: "How to: Set and Return Numeric Values with the Windows Forms NumericUpDown Control"
+title: Set and Return Numeric Values with NumericUpDown Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

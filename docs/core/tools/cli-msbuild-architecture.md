@@ -1,5 +1,5 @@
 ---
-title: Tools architecture
+title: Command-line tools architecture
 description: Learn about the .NET Core tooling layers and what has changed in recent versions.
 ms.date: 03/06/2017
 ---

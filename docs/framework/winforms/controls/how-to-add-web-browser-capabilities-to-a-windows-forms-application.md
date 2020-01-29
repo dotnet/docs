@@ -1,5 +1,5 @@
 ---
-title: Add web browser capabilities to application
+title: Add web browser capabilities to app
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

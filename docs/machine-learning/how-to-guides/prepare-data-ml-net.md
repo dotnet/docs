@@ -182,7 +182,26 @@ The result of binning creates bin bounds of `[0,200000,Infinity]`. Therefore the
 
 ## Work with categorical data
 
-Non-numeric categorical data needs to be converted to a number before being used to build a machine learning model.
+One of the most common types of data is categorical data. Categorical data is that which has a finite number of categories. For example, the states of the USA, or a list of the types of animals found in a set of pictures. Whether these are features or labels, they must be mapped onto a numerical value in order to be used to generate a machine learning model. There are a number of ways of doing this in ML.NET, depending on the problem you are solving.
+
+### Key value mapping
+
+In ML.NET, a key is an integer value representing a category. Key value mapping is most often used to map string labels into unique integer values for training, then back to their string values when the model is used to make a prediction.
+
+The transforms used to perform key value mapping are [MapValueToKey](xref:Microsoft.ML.ConversionsExtensionsCatalog.MapValueToKey%2A) and [MapKeyToValue](Microsoft.ML.ConversionsExtensionsCatalog.MapKeyToValue%2A).
+
+`MapValueToKey` adds a dictionary of mappings in the model, so that `MapKeyToValue` can perform the reverse transform when making a prediction.
+
+### One hot encoding
+
+One hot encoding takes a finite set of values and maps them onto integers whose binary representation has a single `1` value in unique positions in the string. One hot encoding can be the best choice if there is no implicit ordering of the categorical data. The following table shows an example with zip codes as raw values.
+
+|Raw value|One hot encoded value|
+|---------|---------------------|
+|98052|00...01|
+|98100|00...10|
+|||
+|98109|10...00|
 
 Using the following input data which is loaded into an [`IDataView`](xref:Microsoft.ML.IDataView):
 
@@ -207,7 +226,7 @@ CarData[] cars = new CarData[]
 };
 ```
 
-The categorical `VehicleType` property can be converted into a number using the [`OneHotEncoding`](xref:Microsoft.ML.CategoricalCatalog.OneHotEncoding*) method.
+The categorical `VehicleType` property can be converted into a number using the [`OneHotEncoding`](xref:Microsoft.ML.CategoricalCatalog.OneHotEncoding%2A) method.
 
 ```csharp
 // Define categorical transform estimator
@@ -231,6 +250,12 @@ The resulting transform converts the text value of `VehicleType` to a number. Th
 ]
 ```
 
+### Hashing
+
+Hashing is another one to convert categorical data to numbers. A hash function maps data of an arbitrary size (a string of text for example) onto a number with fixed range. Hashing can be a fast and space-efficient way of vectorizing features. One notable example of hashing in machine learning is email spam filtering where, instead of maintaining a dictionary of known words, every word in the email is hashed and added to a large feature vector. Using hashing in this way avoids the problem of malicious spam filtering circumvention by the use of words that are not in the dictionary.
+
+ML.NET provides [Hash](xref:Microsoft.ML.ConversionsExtensionsCatalog.Hash%2A) transform to perform hashing on text, dates, and numerical data. Like value key mapping, the outputs of the hash transform are key types.
+
 ## Work with text data
 
 Text data needs to be transformed into numbers before using it to build a machine learning model. Visit the [transforms page](../resources/transforms.md) for a more detailed list and description of text transforms.
@@ -253,7 +278,7 @@ ReviewData[] reviews = new ReviewData[]
 };
 ```
 
-The minimum step to convert text to a numerical vector representation is to use the [`FeaturizeText`](xref:Microsoft.ML.TextCatalog.FeaturizeText*) method. By using the [`FeaturizeText`](xref:Microsoft.ML.TextCatalog.FeaturizeText*) transform, a series of transformations is applied to the input text column resulting in a numerical vector representing the lp-normalized word and character ngrams.
+The minimum step to convert text to a numerical vector representation is to use the [`FeaturizeText`](xref:Microsoft.ML.TextCatalog.FeaturizeText%2A) method. By using the [`FeaturizeText`](xref:Microsoft.ML.TextCatalog.FeaturizeText%2A) transform, a series of transformations is applied to the input text column resulting in a numerical vector representing the lp-normalized word and character ngrams.
 
 ```csharp
 // Define text transform estimator
@@ -267,7 +292,7 @@ ITransformer textTransformer = textEstimator.Fit(data);
 IDataView transformedData = textTransformer.Transform(data);
 ```
 
-The resulting transform would convert the text values in the `Description` column to a numerical vector that looks similar to the output below:
+The resulting transform converts the text values in the `Description` column to a numerical vector that looks similar to the output below:
 
 ```text
 [ 0.2041241, 0.2041241, 0.2041241, 0.4082483, 0.2041241, 0.2041241, 0.2041241, 0.2041241, 0.2041241, 0.2041241, 0.2041241, 0.2041241, 0.2041241, 0.2041241, 0.2041241, 0.2041241, 0.2041241, 0.2041241, 0.2041241, 0.2041241, 0.2041241, 0, 0, 0, 0, 0.4472136, 0.4472136, 0.4472136, 0.4472136, 0.4472136, 0 ]
@@ -285,7 +310,7 @@ var textEstimator = mlContext.Transforms.Text.NormalizeText("Description")
     .Append(mlContext.Transforms.NormalizeLpNorm("Description"));
 ```
 
-`textEstimator` contains a subset of operations performed by the [`FeaturizeText`](xref:Microsoft.ML.TextCatalog.FeaturizeText*) method. The benefit of a more complex pipeline is control and visibility over the transformations applied to the data.
+`textEstimator` contains a subset of operations performed by the [`FeaturizeText`](xref:Microsoft.ML.TextCatalog.FeaturizeText%2A) method. The benefit of a more complex pipeline is control and visibility over the transformations applied to the data.
 
 Using the first entry as an example, the following is a detailed description of the results produced by the transformation steps defined by `textEstimator`:
 

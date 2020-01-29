@@ -9,6 +9,8 @@ ms.custom: mvc,how-to
 
 # Learn how to build your .NET for Apache Spark application on Ubuntu
 
+This article teaches you how to build your .NET for Apache Spark applications on Ubuntu.
+
 ## Prerequisites
 
 If you already have all of the following prerequisites, skip to the [build](#build) steps.

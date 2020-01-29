@@ -59,7 +59,7 @@ These components are distributed in the following ways:
 
 - [.NET Core Runtime](https://dotnet.microsoft.com/download) -- includes the .NET Core runtime and framework libraries.
 - [ASP.NET Core Runtime](https://dotnet.microsoft.com/download) -- includes ASP.NET Core and .NET Core runtime and framework libraries.
-- [.NET Core SDK](https://dotnet.microsoft.com/download) -- includes the .NET CLI, ASP.NET Core runtime, and .NET Core runtime and framework.
+- [.NET Core SDK](https://dotnet.microsoft.com/download) -- includes the .NET Core CLI, ASP.NET Core runtime, and .NET Core runtime and framework.
 
 ### Open source
 

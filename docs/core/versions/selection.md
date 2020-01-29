@@ -24,7 +24,7 @@ The rest of this document examines those four scenarios.
 
 ## The SDK uses the latest installed version
 
-SDK commands include `dotnet new` and `dotnet run`. the .NET Core CLI must choose an SDK version for every `dotnet` command. It uses the latest SDK installed on the machine by default, even if:
+SDK commands include `dotnet new` and `dotnet run`. The .NET Core CLI must choose an SDK version for every `dotnet` command. It uses the latest SDK installed on the machine by default, even if:
 
 - The project targets an earlier version of the .NET Core runtime.
 - The latest version of the .NET Core SDK is a preview version.

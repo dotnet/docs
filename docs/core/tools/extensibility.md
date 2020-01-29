@@ -9,7 +9,7 @@ ms.date: 04/12/2017
 This article covers the different ways you can extend the .NET Core CLI and explain the scenarios that drive each one of them.
 You'll see how to consume the tools as well as how to build the different types of tools.
 
-## How to extend CLI
+## How to extend the CLI
 The CLI can be extended in three main ways:
 
 1. [Via NuGet packages on a per-project basis](#per-project-based-extensibility)

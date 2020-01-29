@@ -5,7 +5,7 @@ ms.date: 08/14/2017
 ---
 # .NET Core CLI overview
 
-The .NET Core CLI is a cross-platform toolchain for developing .NET applications. The CLI is a foundation upon which higher-level tools, such as integrated development environments (IDEs), editors, and build orchestrators, can rest.
+The .NET Core command-line interface (CLI) is a cross-platform toolchain for developing .NET applications. The CLI is a foundation upon which higher-level tools, such as integrated development environments (IDEs), editors, and build orchestrators, can rest.
 
 The .NET Core CLI is included with the [.NET Core SDK](../sdk.md). To learn how to install the .NET Core SDK, see [Install the .NET Core SDK](../install/sdk.md).
 

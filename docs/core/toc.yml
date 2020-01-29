@@ -151,7 +151,7 @@
 - name: Application deployment
   href: deploying/index.md
   items:
-  - name: Publish apps with the .NET Core CLI
+  - name: Publish apps with the CLI
     href: deploying/deploy-with-cli.md
   - name: Deploy apps with Visual Studio
     href: deploying/deploy-with-vs.md
@@ -353,7 +353,7 @@
   - name: Organize projects for .NET Core
     href: porting/project-structure.md
   - name: Unavailable technologies
-    href: porting/net-framework-tech-unavailable.md 
+    href: porting/net-framework-tech-unavailable.md
   - name: Tools
     href: porting/tools.md
   - name: Use the Windows Compatibility Pack
@@ -363,7 +363,7 @@
   - name: Port WPF projects
     href: porting/wpf.md
   - name: Port C++/CLI projects
-    href: porting/cpp-cli.md    
+    href: porting/cpp-cli.md
 - name: Dependency loading
   items:
   - name: Overview

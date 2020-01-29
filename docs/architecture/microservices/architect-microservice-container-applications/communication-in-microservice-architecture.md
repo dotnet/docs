@@ -1,7 +1,7 @@
 ---
 title: Communication in a microservice architecture
 description: Explore different ways of communication between microservices, understanding the implications of synchronous and asynchronous ways.
-ms.date: 09/20/2018
+ms.date: 01/30/2020
 ---
 # Communication in a microservice architecture
 

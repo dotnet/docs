@@ -1,7 +1,7 @@
 ---
 title: Orchestrating microservices and multi-container applications for high scalability and availability
 description: Discover the options to orchestrate microservices and multi-container applications for high scalability and availability and the possibilities of Azure Dev Spaces while developing Kubernetes application lifecycle.
-ms.date: 09/20/2018
+ms.date: 01/30/2020
 ---
 # Orchestrating microservices and multi-container applications for high scalability and availability
 

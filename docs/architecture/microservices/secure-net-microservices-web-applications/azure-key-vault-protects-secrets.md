@@ -3,7 +3,7 @@ title: Using Azure Key Vault to protect secrets at production time
 description: Security in .NET Microservices and Web Applications - Azure Key Vault is an excellent way to handle application secrets that are completely controlled by administrators. Administrators can even assign and revoke development values without developers having to handle them.
 author: mjrousos
 ms.author: wiwagn
-ms.date: 10/19/2018
+ms.date: 01/30/2020
 ---
 # Use Azure Key Vault to protect secrets at production time
 

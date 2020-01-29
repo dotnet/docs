@@ -1,7 +1,7 @@
 ---
 title: Designing a microservice domain model
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand the key concepts when designing a DDD-oriented domain model.
-ms.date: 10/08/2018
+ms.date: 01/30/2020
 ---
 # Design a microservice domain model
 

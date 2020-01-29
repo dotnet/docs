@@ -1,7 +1,7 @@
 ---
 title: Development workflow for Docker apps
 description: Understand the details of the workflow for developing Docker-based applications. Begin step by step and get into some details to optimize Dockerfiles and end with the simplified workflow available when using Visual Studio.
-ms.date: 01/07/2019
+ms.date: 01/30/2020
 ---
 # Development workflow for Docker apps
 

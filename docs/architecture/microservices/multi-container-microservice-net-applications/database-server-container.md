@@ -1,7 +1,7 @@
 ---
 title: Using a database server running as a container
 description: .NET Microservices Architecture for Containerized .NET Applications | Using a database server running as a container? only for development! Understand why.
-ms.date: 10/02/2018
+ms.date: 01/30/2020
 ---
 # Using a database server running as a container
 

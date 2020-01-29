@@ -3,7 +3,7 @@ title: Storing application secrets safely during development
 description: Security in .NET Microservices and Web Applications - Don't store your application secrets like passwords, connection strings or API keys in source control, understand the options you can use in ASP.NET Core, in particular you have to understand how to handle "user secrets".
 author: mjrousos
 ms.author: wiwagn
-ms.date: 10/19/2018
+ms.date: 01/30/2020
 ---
 # Store application secrets safely during development
 

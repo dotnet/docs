@@ -1,7 +1,7 @@
 ---
 title: What OS to target with .NET containers
 description: .NET Microservices Architecture for Containerized .NET Applications | What OS to target with .NET containers
-ms.date: 01/07/2019
+ms.date: 01/30/2020
 ---
 
 # What OS to target with .NET containers

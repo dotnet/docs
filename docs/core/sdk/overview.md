@@ -8,19 +8,20 @@ ms.topic: conceptual
 
 .NET Core projects are associated with a .NET software development kit (SDK). These SDKs, as the [layering document](../tools/cli-msbuild-architecture.md) describes, are a set of MSBuild [tasks](/visualstudio/msbuild/msbuild-tasks) and [targets](/visualstudio/msbuild/msbuild-targets) that can build .NET Core code. The following SDKs are available for .NET Core:
 
-| Description | ID | Introduced version |
+| ID | Description |
 | - | - | - |
-| The .NET Core SDK | `Microsoft.NET.Sdk` |
-| The .NET Core [Web SDK](/aspnet/core/razor-pages/web-sdk) | `Microsoft.NET.Sdk.Web` |
-| The .NET Core [Razor SDK](/aspnet/core/razor-pages/sdk) | `Microsoft.NET.Sdk.Razor` |
-| The .NET Core Worker Service SDK | `Microsoft.NET.Sdk.Worker` | .NET Core 3.0 |
-| The .NET Core WinForms and WPF SDK | `Microsoft.NET.Sdk.WindowsDesktop` | .NET Core 3.0 |
+| `Microsoft.NET.Sdk` | The .NET Core SDK |
+| `Microsoft.NET.Sdk.Web` | The .NET Core [Web SDK](/aspnet/core/razor-pages/web-sdk) |
+| `Microsoft.NET.Sdk.Razor` | The .NET Core [Razor SDK](/aspnet/core/razor-pages/sdk) |
+| `Microsoft.NET.Sdk.Worker` | The .NET Core Worker Service SDK |
+| `Microsoft.NET.Sdk.WindowsDesktop` | The .NET Core WinForms and WPF SDK |
 
-The .NET Core SDK is the base SDK for .NET Core. The other SDKs depend on the .NET Core SDK. For example, the Web SDK depends on the .NET Core SDK and the Razor SDK. The .NET Core SDK is a set of libraries and tools that allow developers to create .NET Core applications and libraries. It contains the following components that are used to build and run applications:
+The .NET Core SDK is the base SDK for .NET Core. The other SDKs depend on the .NET Core SDK. For example, the Web SDK depends on the .NET Core SDK and the Razor SDK.
 
-- .NET Core [CLI](tools/index.md)
+The .NET Core SDK is a set of libraries and tools that allow developers to create .NET Core applications and libraries. It contains the following components that are used to build and run applications:
+
+- .NET Core [CLI](../tools/index.md)
 - .NET Core libraries and runtime
-- The `dotnet` [driver](tools/index.md#driver)
 
 ## Project files
 
@@ -59,5 +60,5 @@ Referencing an SDK in one of these ways greatly simplifies project files for .NE
 ## See also
 
 - [Install the SDK](../install/sdk.md)
-- [The .NET Core CLI](tools/index.md)
+- [The .NET Core CLI](../tools/index.md)
 - [How to use MSBuild project SDKs](/visualstudio/msbuild/how-to-use-project-sdk)

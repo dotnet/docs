@@ -98,19 +98,19 @@
       "ms.prod":"dotnet",
       "ms.topic": "conceptual",
       "_op_documentIdPathDepotMapping": {
-	"docs/architecture/containerized-lifecycle/": { 
+	"docs/architecture/containerized-lifecycle/": {
 	   "folder_relative_path_in_docset": "docs/standard/containerized-lifecycle-architecture/"
 	},
-	"docs/architecture/microservices/": { 
+	"docs/architecture/microservices/": {
 	   "folder_relative_path_in_docset": "docs/standard/microservices-architecture/"
 	},
-	"docs/architecture/modern-web-apps-azure/": { 
+	"docs/architecture/modern-web-apps-azure/": {
 	   "folder_relative_path_in_docset": "docs/standard/modern-web-apps-azure-architecture/"
 	},
-	"docs/architecture/modernize-with-azure-containers/": { 
+	"docs/architecture/modernize-with-azure-containers/": {
 	   "folder_relative_path_in_docset": "docs/standard/modernize-with-azure-and-containers/"
 	},
-	"docs/architecture/serverless/": { 
+	"docs/architecture/serverless/": {
 	   "folder_relative_path_in_docset": "docs/standard/serverless-architecture/"
 	}
       },
@@ -183,6 +183,7 @@
         "docs/core/native-interop/**/**.md": "jkoritzinsky",
         "docs/core/porting/**/**.md": "cartermp",
         "docs/core/run-time-config/**/**.md": "gewarren",
+        "docs/core/sdk/**/**.md": "gewarren",
         "docs/core/testing/**/**.md": "billwagner",
         "docs/core/tools/**/**.md": "tdykstra",
         "docs/core/tools/dotnet-**.md": "mairaw",
@@ -192,7 +193,7 @@
         "docs/csharp/**/**.md": "billwagner",
         "docs/csharp/**/**.yml": "billwagner",
         "docs/framework/**/**.md": "mairaw",
-        "docs/framework/app-domains/**/**.md": "gewarren",        
+        "docs/framework/app-domains/**/**.md": "gewarren",
         "docs/framework/configure-apps/file-schema/network/**/**.md": "karelz",
         "docs/framework/configure-apps/file-schema/wcf/**/**.md": "HongGit",
         "docs/framework/configure-apps/file-schema/winforms/**/**.md": "Thraka",
@@ -234,7 +235,7 @@
         "docs/standard/collections/**/**.md": "billwagner",
         "docs/standard/data/**/**.md": "gewarren",
         "docs/standard/data/sqlite/**/**.md": "bricelam",
-        "docs/standard/datetime/**/**.md": "Thraka",        
+        "docs/standard/datetime/**/**.md": "Thraka",
         "docs/standard/design-guidelines/**/**.md": "KrzysztofCwalina",
         "docs/standard/events/**/**.md": "gewarren",
         "docs/standard/exceptions/**/**.md": "tdykstra",
@@ -267,6 +268,7 @@
         "docs/core/native-interop/**/**.md": "jekoritz",
         "docs/core/porting/**/**.md": "phcart",
         "docs/core/run-time-config/**/**.md": "gewarren",
+        "docs/core/sdk/**/**.md": "gewarren",
         "docs/core/testing/**/**.md": "wiwagn",
         "docs/core/tools/**/**.md": "tdykstra",
         "docs/core/tools/dotnet-**.md": "mairaw",
@@ -276,7 +278,7 @@
         "docs/csharp/**/**.md": "wiwagn",
         "docs/csharp/**/**.yml": "wiwagn",
         "docs/framework/**/**.md": "mairaw",
-        "docs/framework/app-domains/**/**.md": "gewarren",        
+        "docs/framework/app-domains/**/**.md": "gewarren",
         "docs/framework/configure-apps/file-schema/network/**/**.md": "ncldev",
         "docs/framework/configure-apps/file-schema/wcf/**/**.md": "wcfsrvt",
         "docs/framework/configure-apps/file-schema/winforms/**/**.md": "adegeo",
@@ -319,7 +321,7 @@
         "docs/standard/collections/**/**.md": "wiwagn",
         "docs/standard/data/**/**.md": "gewarren",
         "docs/standard/data/sqlite/**/**.md": "bricelam",
-        "docs/standard/datetime/**/**.md": "adegeo",        
+        "docs/standard/datetime/**/**.md": "adegeo",
         "docs/standard/design-guidelines/**/**.md": "mairaw",
         "docs/standard/events/**/**.md": "gewarren",
         "docs/standard/exceptions/**/**.md": "tdykstra",
@@ -422,7 +424,7 @@
         "_csharplang/spec/types.md": "Types",
         "_csharplang/spec/variables.md": "Variables",
         "_csharplang/spec/conversions.md": "Conversions",
-        "_csharplang/spec/expressions.md": "Expressions", 
+        "_csharplang/spec/expressions.md": "Expressions",
         "_csharplang/spec/statements.md": "Statements",
         "_csharplang/spec/namespaces.md": "Namespaces",
         "_csharplang/spec/classes.md": "Classes",
@@ -435,7 +437,7 @@
         "_csharplang/spec/attributes.md": "Attributes",
         "_csharplang/spec/unsafe-code.md": "Unsafe code",
         "_csharplang/spec/documentation-comments.md": "Documentation comments",
-  
+
         "_csharplang/proposals/csharp-7.0/pattern-matching.md": "Pattern matching",
         "_csharplang/proposals/csharp-7.0/local-functions.md": "Local functions",
         "_csharplang/proposals/csharp-7.0/out-var.md": "Out variable declarations",
@@ -476,7 +478,7 @@
         "_csharplang/proposals/csharp-8.0/readonly-instance-members.md": "Readonly instance members",
         "_csharplang/proposals/csharp-8.0/static-local-functions.md": "Static local functions",
         "_csharplang/proposals/csharp-8.0/nested-stackalloc.md": "Nested stackalloc expressions",
-        
+
         "_vblang/spec/introduction.md": "Introduction",
         "_vblang/spec/lexical-grammar.md": "Lexical grammar",
         "_vblang/spec/preprocessing-directives.md": "Preprocessing directives",
@@ -489,7 +491,7 @@
         "_vblang/spec/statements.md": "Statements",
         "_vblang/spec/expressions.md": "Expressions",
         "_vblang/spec/documentation-comments.md": "Documentation comments",
-        "_vblang/spec/overload-resolution.md": "Overload resolution"  
+        "_vblang/spec/overload-resolution.md": "Overload resolution"
       },
       "titleSuffix": {
         "_csharplang/spec/*.md": "C# language specification",
@@ -509,6 +511,8 @@
         "docs/core/docker/**.md": ".NET Core",
         "docs/core/migration/**.md": ".NET Core",
         "docs/core/porting/**.md": ".NET Core",
+        "docs/core/run-time-config/**.md": ".NET Core",
+        "docs/core/sdk/**.md": ".NET Core",
         "docs/core/testing/**.md": ".NET Core",
         "docs/core/tools/**.md": ".NET Core CLI",
         "docs/core/tutorials/**.md": ".NET Core",

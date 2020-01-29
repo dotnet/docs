@@ -7,7 +7,7 @@ ms.topic: reference
 # MSBuild properties for .NET Core SDK projects
 
 > [!NOTE]
-> This page is a work in progress and does not list all of the MSBuild properties for the .NET Core SDKs.
+> This page is a work in progress and does not list all of the MSBuild properties for the .NET Core SDK.
 
 General:
 
@@ -189,7 +189,7 @@ Files:
 Publish:
 
 PublishReadyToRun (and PublishReadyToRunExclude)
-RuntimeIdentifier
+RuntimeIdentifier - see https://docs.microsoft.com/en-us/dotnet/core/rid-catalog
 RuntimeIdentifiers
 UseAppHost - see https://github.com/dotnet/docs/issues/16407#issuecomment-571772518
 

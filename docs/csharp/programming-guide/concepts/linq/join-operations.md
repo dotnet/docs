@@ -5,6 +5,7 @@ ms.assetid: 5105e0da-1267-4c00-837a-f0e9602279b8
 no-loc: [Join, GroupJoin]
 ---
 # Join Operations (C#)
+
 A *join* of two data sources is the association of objects in one data source with objects that share a common attribute in another data source.  
   
  Joining is an important operation in queries that target data sources whose relationships to each other cannot be followed directly. In object-oriented programming, this could mean a correlation between objects that is not modeled, such as the backwards direction of a one-way relationship. An example of a one-way relationship is a Customer class that has a property of type City, but the City class does not have a property that is a collection of Customer objects. If you have a list of City objects and you want to find all the customers in each city, you could use a join operation to find them.  
@@ -28,13 +29,13 @@ A *join* of two data sources is the association of objects in one data source wi
   
 The following example uses the `join … in … on … equals …` clause to join two sequences based on specific value:
   
-[!code-csharp[Join](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQJoin/CS/JoinOperation.cs#Join)]  
+[!code-csharp[Join](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csLINQJoinOperation/CS/JoinOperation.cs#Join)]  
 
 ### GroupJoin  
 
 The following example uses the `join … in … on … equals … into …` clause to join two sequences based on specific value and groups the resulting matches for each element:
   
-[!code-csharp[GroupJoin](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQJoin/CS/JoinOperation.cs#GroupJoin)]  
+[!code-csharp[GroupJoin](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csLINQJoinOperation/CS/JoinOperation.cs#GroupJoin)]  
   
 ## See also
 

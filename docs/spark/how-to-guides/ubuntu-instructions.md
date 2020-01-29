@@ -1,7 +1,7 @@
 ---
 title: Build a .NET for Apache Spark application on Ubuntu
 description: Learn how to build your .NET for Apache Spark application on Ubuntu
-ms.date: 01/02/2020
+ms.date: 01/29/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
 ---
@@ -11,7 +11,7 @@ ms.custom: mvc,how-to
 
 ## Prerequisites
 
-If you already have all the prerequisites, skip to the [build](#build) steps below.
+If you already have all of the following prerequisites, skip to the [build](#build) steps.
 
   1. Download and install **[.NET Core 2.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/2.1)** or the **[.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1)** - installing the SDK adds the `dotnet` toolchain to your path.  .NET Core 2.1, 2.2 and 3.1 are supported.
   2. Install **[OpenJDK 8](https://openjdk.java.net/install/)**. 
@@ -69,13 +69,13 @@ If you already have all the prerequisites, skip to the [build](#build) steps bel
 
   4. Install **[Apache Spark 2.3+](https://spark.apache.org/downloads.html)**.
 
-     - Download [Apache Spark 2.3+](https://spark.apache.org/downloads.html) and extract it into a local folder (e.g., `~/bin/spark-2.3.2-bin-hadoop2.7`). (The supported spark versions are 2.3.*, 2.4.0, 2.4.1, 2.4.3 and 2.4.4)
+   Download [Apache Spark 2.3+](https://spark.apache.org/downloads.html) and extract it into a local folder (e.g., `~/bin/spark-2.3.2-bin-hadoop2.7`). (The supported spark versions are 2.3.*, 2.4.0, 2.4.1, 2.4.3 and 2.4.4)
 
-     ```bash
-     tar -xvzf /path/to/spark-2.3.2-bin-hadoop2.7.tgz -C ~/bin/spark-2.3.2-bin-hadoop2.7
-     ```
+   ```bash
+   tar -xvzf /path/to/spark-2.3.2-bin-hadoop2.7.tgz -C ~/bin/spark-2.3.2-bin-hadoop2.7
+   ```
 
-     - Add the necessary [environment variables](https://www.java.com/en/download/help/path.xml) `SPARK_HOME` (e.g., `~/bin/spark-2.3.2-bin-hadoop2.7/`) and `PATH` (e.g., `$SPARK_HOME/bin:$PATH`)
+   - Add the necessary [environment variables](https://www.java.com/en/download/help/path.xml) `SPARK_HOME` (e.g., `~/bin/spark-2.3.2-bin-hadoop2.7/`) and `PATH` (e.g., `$SPARK_HOME/bin:$PATH`)
 
        ```bash
        export SPARK_HOME=~/bin/spark-2.3.2-hadoop2.7

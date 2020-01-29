@@ -222,10 +222,10 @@ When `Newtonsoft.Json` deserializes to <xref:System.Object>, it:
 
 <xref:System.Text.Json> stores a boxed `JsonElement` for both primitive and complex values whenever deserializing to <xref:System.Object>, for example:
 
-* An `object` property
-* An `object` dictionary value
-* An `object` array value
-* A root `object`
+* An `object` property.
+* An `object` dictionary value.
+* An `object` array value.
+* A root `object`.
 
 However, `System.Text.Json` treats `null` the same as `Newtonsoft.Json` and returns a null reference when the payload has the `null` JSON literal in it.
 

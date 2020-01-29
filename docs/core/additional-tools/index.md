@@ -1,5 +1,5 @@
 ---
-title: Additional CLI tools
+title: Additional tools
 description: An overview of the additional tools you can install that support and extend .NET Core functionality.
 author: mlacouture
 ms.date: 12/02/2019
@@ -7,7 +7,7 @@ ms.custom: "mvc"
 ---
 # .NET Core additional tools overview
 
-This section compiles a list of tools that support and extend the .NET Core functionality, in addition to the [.NET Core command-line interface (CLI)](../tools/index.md) tools.
+This section compiles a list of tools that support and extend the .NET Core functionality.
 
 ## [.NET Core Uninstall Tool](uninstall-tool.md)
 

@@ -8,7 +8,7 @@ ms.custom: "updateeachrelease"
 
 **This article applies to:** ✔️ .NET Core 2.0 SDK and later versions
 
-The *global.json* file allows you to define which .NET Core SDK version is used when you run .NET Core CLI commands. Selecting the .NET Core SDK is independent from specifying the runtime your project targets. The .NET Core SDK version indicates which versions of the .NET Core CLI tools are used.
+The *global.json* file allows you to define which .NET Core SDK version is used when you run .NET Core CLI commands. Selecting the .NET Core SDK is independent from specifying the runtime your project targets. The .NET Core SDK version indicates which versions of the .NET Core CLI is used.
 
 In general, you want to use the latest version of the SDK tools, so no *global.json* file is needed. In some advanced scenarios, you might want to control the version of the SDK tools, and this article explains how to do this.
 

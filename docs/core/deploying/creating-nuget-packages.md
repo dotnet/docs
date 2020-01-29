@@ -5,7 +5,7 @@ author: cartermp
 ms.date: 06/20/2016
 ms.technology: dotnet-cli
 ---
-# How to create a NuGet package with .NET Core command-line interface (CLI) tools
+# How to create a NuGet package with .NET Core CLI
 
 > [!NOTE]
 > The following shows command-line samples using Unix. The `dotnet pack` command as shown here works the same way on Windows.

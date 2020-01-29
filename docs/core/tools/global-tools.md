@@ -24,7 +24,7 @@ If you want to use a .NET Core Global Tool:
 
 ## Find a .NET Core Global Tool
 
-Currently, there isn't a Global Tool search feature in the .NET Core Command-line Interface (CLI). The following are some recommendations on how to find tools:
+Currently, there isn't a Global Tool search feature in the .NET Core CLI. The following are some recommendations on how to find tools:
 
 * You can find .NET Core Global Tools on [NuGet](https://www.nuget.org). However, NuGet doesn't yet allow you to search specifically for .NET Core Global Tools.
 * You may find tool recommendations in blog posts or in the [natemcmaster/dotnet-tools](https://github.com/natemcmaster/dotnet-tools) GitHub repository.

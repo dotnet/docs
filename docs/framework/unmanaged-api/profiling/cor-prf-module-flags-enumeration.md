@@ -46,7 +46,7 @@ typedef enum
 |COR_PRF_MODULE_WINDOWS_RUNTIME|The Windows Runtime content type flag is set in the metadata for this module's assembly. This is the case for all Windows Metadata (.winmd) modules.|  
   
 ## Remarks  
- Bits from COR_PRF_MODULE_FLAGS are returned to the profiler in the `pdwModuleFlags` output parameter of the [ICorProfilerInfo3::GetModuleInfo2](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-getmoduleinfo2-method.md) method. Some combinations of two or more flags are possible, but not all combinations are possible.  
+ Bits from COR_PRF_MODULE_FLAGS are returned to the profiler in the `pdwModuleFlags` output parameter of the [ICorProfilerInfo3::GetModuleInfo2](icorprofilerinfo3-getmoduleinfo2-method.md) method. Some combinations of two or more flags are possible, but not all combinations are possible.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -59,4 +59,4 @@ typedef enum
   
 ## See also
 
-- [Profiling Enumerations](../../../../docs/framework/unmanaged-api/profiling/profiling-enumerations.md)
+- [Profiling Enumerations](profiling-enumerations.md)

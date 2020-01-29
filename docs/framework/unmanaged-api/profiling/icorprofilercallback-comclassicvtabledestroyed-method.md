@@ -61,5 +61,5 @@ HRESULT COMClassicVTableDestroyed(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
-- [COMClassicVTableCreated Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-comclassicvtablecreated-method.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [COMClassicVTableCreated Method](icorprofilercallback-comclassicvtablecreated-method.md)

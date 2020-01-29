@@ -35,12 +35,13 @@ The main difference is that the CLI is not the foundational layer anymore; this 
 > [!NOTE]
 > A "target" is an MSBuild term that indicates a named operation that MSBuild can invoke. It is usually coupled with one or more tasks that execute some logic that the target is supposed to do. MSBuild supports many ready-made targets such as `Copy` or `Execute`; it also allows users to write their own tasks using managed code and define targets to execute those tasks. For more information, see [MSBuild tasks](/visualstudio/msbuild/msbuild-tasks).
 
-All the toolsets now consume the shared SDK component and its targets, CLI included. For example, the next version of Visual Studio will not call into `dotnet restore` ([see note](#dotnet-restore-note)) command to restore dependencies for .NET Core projects, it will use the "Restore" target directly. Since these are MSBuild targets, you can also use raw MSBuild to execute them using the [dotnet msbuild](dotnet-msbuild.md) command.
+All the toolsets now consume the shared SDK component and its targets, CLI included. For example, Visual Studio 2019 doesn't call into the `dotnet restore` ([see note](#dotnet-restore-note)) command to restore dependencies for .NET Core projects. Instead, it uses the "Restore" target directly. Since these are MSBuild targets, you can also use raw MSBuild to execute them using the [dotnet msbuild](dotnet-msbuild.md) command.
 
 ### CLI commands
+
 The shared SDK component means that the majority of existing CLI commands have been re-implemented as MSBuild tasks and targets. What does this mean for the CLI commands and your usage of the toolset?
 
-From an usage perspective, it doesn't change the way you use the CLI. The CLI still has the core commands that exist in Preview 2 release:
+From a usage perspective, it doesn't change the way you use the CLI. The CLI still has the core commands that existed in the .NET Core 1.0 Preview 2 release:
 
 - `new`
 - `restore`
@@ -50,21 +51,21 @@ From an usage perspective, it doesn't change the way you use the CLI. The CLI st
 - `test`
 - `pack`
 
-These commands still do what you expect them to do (new up a project, build it, publish it, pack it and so on). Majority of the options are not changed, and are still there, and you can consult either the commands' help screens (using `dotnet <command> --help`) or documentation on this site to get familiar with any changes.
+These commands still do what you expect them to do (new up a project, build it, publish it, pack it, and so on). You can consult either the command's help screen (using `dotnet <command> --help`) or documentation on this site to get familiar with their behavior.
 
-From an execution perspective, the CLI commands will take their parameters and construct a call to "raw" MSBuild that will set the needed properties and run the desired target. To better illustrate this, consider the following command:
+From an execution perspective, the CLI commands take their parameters and construct a call to "raw" MSBuild that sets the needed properties and runs the desired target. To better illustrate this, consider the following command:
 
    ```dotnetcli
    dotnet publish -o pub -c Release
    ```
 
-This command is publishing an application into a `pub` folder using the "Release" configuration. Internally, this command gets translated into the following MSBuild invocation:
+This command publishes an application into a `pub` folder using the "Release" configuration. Internally, this command gets translated into the following MSBuild invocation:
 
    ```dotnetcli
    dotnet msbuild -t:Publish -p:OutputPath=pub -p:Configuration=Release
    ```
 
-The notable exception to this rule are `new` and `run` commands, as they have not been implemented as MSBuild targets.
+Notable exceptions to this rule are the `new` and `run` commands. They have not been implemented as MSBuild targets.
 
 <a name="dotnet-restore-note"></a>
 [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]

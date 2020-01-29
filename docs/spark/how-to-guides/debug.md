@@ -1,7 +1,7 @@
 ---
 title: Debug a .NET for Apache Spark application on Windows
 description: Learn how to debug your .NET for Apache Spark application on Windows.
-ms.date: 08/15/2019
+ms.date: 01/29/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
 ---
@@ -12,7 +12,7 @@ This how-to provides the steps to debug your .NET for Apache Spark application o
 
 ## Debug your application
 
-Open a new command prompt window, run the following:
+Open a new command prompt window and run the following command:
 
 ```shell
 spark-submit \
@@ -30,9 +30,7 @@ When you run the command, you see the following output:
 ***********************************************************************
 ```
 
-In this debug mode, DotnetRunner does not launch the .NET application but instead waits for you to start the .NET app. Leave this command prompt window open, and start your .NET application through C# debugger to debug your application.
-
-Now you can start your .NET application with a C# debugger ([Visual Studio Debugger for Windows/macOS](https://visualstudio.microsoft.com/vs/) or [C# Debugger Extension in Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging)) to debug your application.
+In debug mode, DotnetRunner does not launch the .NET application, but instead waits for you to start the .NET app. Leave this command prompt window open and start your .NET application through C# debugger to debug your application. Start your .NET application with a C# debugger ([Visual Studio Debugger for Windows/macOS](https://visualstudio.microsoft.com/vs/) or [C# Debugger Extension in Visual Studio Code](https://code.visualstudio.com/Docs/editor/debugging)) to debug your application.
 
 ## Debug a user-defined function (UDF)
 
@@ -45,7 +43,7 @@ Before running `spark-submit`, set the following environment variable:
 set DOTNET_WORKER_DEBUG=1
 ```
 
-Now, when you run your Spark application, a `Choose Just-In-Time Debugger` window will pop up. Choose a Visual Studio debugger.
+When you run your Spark application, a `Choose Just-In-Time Debugger` window will pop up. Choose a Visual Studio debugger.
 
 The debugger will break at the following location in [TaskRunner.cs](https://github.com/dotnet/spark/blob/5e9c08b430b4bc56b5f42252c4b73437377afaed/src/csharp/Microsoft.Spark.Worker/TaskRunner.cs#L52):
 
@@ -56,12 +54,12 @@ if (EnvironmentUtils.GetEnvironmentVariableAsBool("DOTNET_WORKER_DEBUG"))
 }
 ```
 
-Now, navigate to the *.cs* file that contains the UDF that you plan to debug, and [set a breakpoint](https://docs.microsoft.com/visualstudio/debugger/using-breakpoints?view=vs-2019). The breakpoint will say `The breakpoint will not currently be hit` because the worker hasn't loaded the assembly that contains UDF yet.
+Navigate to the *.cs* file that contains the UDF that you plan to debug, and [set a breakpoint](https://docs.microsoft.com/visualstudio/debugger/using-breakpoints?view=vs-2019). The breakpoint will say `The breakpoint will not currently be hit` because the worker hasn't loaded the assembly that contains UDF yet.
 
-Hit `F5` to continue your application, and the breakpoint will eventually be hit.
+Hit `F5` to continue your application and the breakpoint will eventually be hit.
 
 > [!NOTE] 
-> The Choose Just-In-Time Debugger window pops up for each task. To avoid excessive pop-ups, set the number of executors to a low number. For example, you can use the --master local[1] option for spark-submit to set the number of tasks to 1, which launches a single debugger instance.
+> The Choose Just-In-Time Debugger window pops up for each task. To avoid excessive pop-ups, set the number of executors to a low number. For example, you can use the **--master local[1]** option for spark-submit to set the number of tasks to 1, which launches a single debugger instance.
 
 ## Debug Scala code
 

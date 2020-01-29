@@ -132,44 +132,7 @@ EnableDefaultItems
   <DefineConstants>$(DefineConstants);TEST;OTHERCONDITION</DefineConstants>
 </PropertyGroup>
 
-Pack options (NuGet):
-
-<PropertyGroup>
-  <PackageTags>machine learning;framework</PackageTags>
-  <PackageReleaseNotes>Version 0.9.12-beta</PackageReleaseNotes>
-  <PackageIconUrl>http://numl.net/images/ico.png</PackageIconUrl>
-  <PackageProjectUrl>http://numl.net</PackageProjectUrl>
-  <PackageLicenseUrl>https://raw.githubusercontent.com/sethjuarez/numl/master/LICENSE.md</PackageLicenseUrl>
-  <RepositoryType>git</RepositoryType>
-  <RepositoryUrl>https://raw.githubusercontent.com/sethjuarez/numl</RepositoryUrl>
-</PropertyGroup>
-IsPackable
-PackageVersion
-PackageId
-PackageDescription
-Title
-Authors
-PackageRequireLicenseAcceptance
-PackageLicenseExpression
-PackageLicenseFile
-PackageOutputPath
-IncludeSymbols
-SymbolPackageFormat
-IncludeSource
-IsTool
-RepositoryUrl
-RepositoryType
-RepositoryBranch
-RepositoryCommit
-NoPackageAnalysis
-MinClientVersion
-IncludeBuildOutput
-IncludeContentInPack
-BuildOutputTargetFolder
-ContentTargetFolders
-NuspecFile
-NuspecBasePath
-NuspecProperties
+Pack options - link to NuGet docs.
 
 Assembly info:
 
@@ -237,6 +200,8 @@ OutputPath
 CodeAnalysisRuleSet
 
 EnableDynamicLoading, EnableComHosting - see https://github.com/dotnet/sdk/pull/3305#issuecomment-504549489
+
+AssetTargetFallback
 
 ## See also
 

@@ -9,7 +9,7 @@ ms.assetid: 883cd93d-50ce-4144-b7c9-2df28d9c11a0
 
 This tutorial teaches you a number of features in .NET Core and the C# language. You'll learn:
 
-- The basics of .NET Core CLI
+- The basics of the .NET Core CLI
 - The structure of a C# Console Application
 - Console I/O
 - The basics of File I/O APIs in .NET

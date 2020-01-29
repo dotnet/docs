@@ -189,5 +189,5 @@ And that's it! Now, you can start using the basic concepts learned here to creat
 ## See also
 
 - [Organizing and testing projects with the .NET Core CLI](testing-with-cli.md)
-- [Publish .NET Core apps with the .NET Core CLI](deploy-with-cli.md)
-- [Learn more about app deployment](../deploying/index.md)
+- [Publish .NET Core apps with the .NET Core CLI](../deploying/deploy-with-cli.md)
+- [.NET Core application deployment](../deploying/index.md)

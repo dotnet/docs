@@ -75,7 +75,7 @@ The Docker extension for VS Code provides the following features:
 
 To install the Docker extension, press Ctrl+Shift+P, type `ext install`, and then run the Install Extension command to bring up the Marketplace extension list. Next, type **docker** to filter the results, and then select the Docker Support extension, as depicted in Figure 4-23.
 
-![View of the Docker extension for VS Code.](./media/docker-apps-inner-loop-workflow/install-docker-extension-vs-code.png)
+![View of the Docker extension for VS Code.](media/docker-apps-inner-loop-workflow/install-docker-extension-vs-code.png)
 
 **Figure 4-23**. Installing the Docker Extension in Visual Studio Code
 
@@ -88,9 +88,15 @@ The `DockerFile` is commonly placed in the root folder of your app or service an
 > [!TIP]
 > You can use the Docker extension to guide you when using the `Dockerfile` and `docker-compose.yml` files related to your Docker containers. Eventually, you'll probably write these kinds of files without this tool, but using the Docker extension is a good starting point that will accelerate your learning curve.
 
-In Figure 4-24, you can see how a docker-compose file is added by using the Docker Extension for VS Code.
+In Figure 4-24, you can see the steps to add the docker files to a project by using the Docker Extension for VS Code:
 
-![Console view of Docker extension for VS Code.](./media/docker-apps-inner-loop-workflow/add-docker-files-to-workspace-command.png)
+1. Select "Add Docker Files to Workspace" command.
+2. Select Application Platform (ASP.NET Core)
+3. Select Operating System (Linux)
+4. Enter ports to publish (80, 443)
+5. Select project
+
+![Steps to add docker files with docker extension](media/docker-apps-inner-loop-workflow/add-docker-files-to-workspace-command.png)
 
 **Figure 4-24**. Docker files added using the **Add Docker files to Workspace command**
 
@@ -103,26 +109,33 @@ Using an official repository of a language stack with a version number ensures t
 The following is a sample DockerFile for a .NET Core container:
 
 ```Dockerfile
-# Base Docker image to use  
-FROM mcr.microsoft.com/dotnet/core/aspnet:2.2
-  
-# Set the Working Directory and files to be copied to the image  
-ARG source  
-WORKDIR /app  
-COPY ${source:-bin/Release/PublishOutput} .  
-  
-# Configure the listening port to 80 (Internal/Secured port within Docker host)  
-EXPOSE 80  
-  
-# Application entry point  
-ENTRYPOINT ["dotnet", "MyCustomMicroservice.dll"]
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
+WORKDIR /app
+EXPOSE 80
+EXPOSE 443
+
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
+WORKDIR /src
+COPY ["src/WebMvcApplication/WebMvcApplication.csproj", "src/WebMvcApplication/"]
+RUN dotnet restore "src/WebMvcApplication/WebMvcApplication.csproj"
+COPY . .
+WORKDIR "/src/src/WebMvcApplication"
+RUN dotnet build "WebMvcApplication.csproj" -c Release -o /app/build
+
+FROM build AS publish
+RUN dotnet publish "WebMvcApplication.csproj" -c Release -o /app/publish
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "WebMvcApplication.dll"]
 ```
 
-In this case, the image is based on version 2.2 of the official ASP.NET Core Docker image (multi-arch for Linux and Windows), as per the line `FROM mcr.microsoft.com/dotnet/core/aspnet:2.2`. (For more information about this topic, see the [ASP.NET Core Docker Image](https://hub.docker.com/_/microsoft-dotnet-core-aspnet/) page and the [.NET Core Docker Image](https://hub.docker.com/_/microsoft-dotnet-core/) page).
+In this case, the image is based on version 3.1 of the official ASP.NET Core Docker image (multi-arch for Linux and Windows), as per the line `FROM mcr.microsoft.com/dotnet/core/aspnet:3.1`. (For more information about this topic, see the [ASP.NET Core Docker Image](https://hub.docker.com/_/microsoft-dotnet-core-aspnet/) page and the [.NET Core Docker Image](https://hub.docker.com/_/microsoft-dotnet-core/) page).
 
 In the DockerFile, you can also instruct Docker to listen to the TCP port that you'll use at runtime (such as port 80).
 
-You can specify additional configuration settings in the Dockerfile, depending on the language and framework you're using. For instance, the `ENTRYPOINT` line with `["dotnet", "MySingleContainerWebApp.dll"]` tells Docker to run a .NET Core application. If you're using the SDK and the .NET Core CLI (`dotnet CLI`) to build and run the .NET application, this setting would be different. The key point here is that the ENTRYPOINT line and other settings depend on the language and platform you choose for your application.
+You can specify additional configuration settings in the Dockerfile, depending on the language and framework you're using. For instance, the `ENTRYPOINT` line with `["dotnet", "WebMvcApplication.dll"]` tells Docker to run a .NET Core application. If you're using the SDK and the .NET Core CLI (`dotnet CLI`) to build and run the .NET application, this setting would be different. The key point here is that the ENTRYPOINT line and other settings depend on the language and platform you choose for your application.
 
 > [!TIP]
 > For more information about building Docker images for .NET Core applications, go to <https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images>.

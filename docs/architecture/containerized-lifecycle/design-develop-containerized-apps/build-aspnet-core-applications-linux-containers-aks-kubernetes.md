@@ -1,7 +1,7 @@
 ---
 title: Build ASP.NET Core 3.1 applications deployed as Linux containers into AKS/Kubernetes clusters
 description: Containerized Docker Application Lifecycle with Microsoft Platform and Tools
-ms.date: 02/25/2019
+ms.date: 01/30/2020
 ---
 # Build ASP.NET Core 3.1 applications deployed as Linux containers into an AKS/Kubernetes orchestrator
 

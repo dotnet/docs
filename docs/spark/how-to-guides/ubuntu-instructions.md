@@ -77,7 +77,7 @@ If you already have all of the following prerequisites, skip to the [build](#bui
    tar -xvzf /path/to/spark-2.3.2-bin-hadoop2.7.tgz -C ~/bin/spark-2.3.2-bin-hadoop2.7
    ```
 
-   - Add the necessary [environment variables](https://www.java.com/en/download/help/path.xml) `SPARK_HOME` (e.g., `~/bin/spark-2.3.2-bin-hadoop2.7/`) and `PATH` (e.g., `$SPARK_HOME/bin:$PATH`)
+- Add the necessary [environment variables](https://www.java.com/en/download/help/path.xml) `SPARK_HOME` (e.g., `~/bin/spark-2.3.2-bin-hadoop2.7/`) and `PATH` (e.g., `$SPARK_HOME/bin:$PATH`)
 
        ```bash
        export SPARK_HOME=~/bin/spark-2.3.2-hadoop2.7
@@ -87,7 +87,7 @@ If you already have all of the following prerequisites, skip to the [build](#bui
        
        Note that these environment variables will be lost when you close your terminal. If you want the changes to be permanent, add the `export` lines to your `~/.bashrc` file.
 
-     - Verify you are able to run `spark-shell` from your command-line.
+  - Verify you are able to run `spark-shell` from your command-line.
 
         Sample console output:
         

@@ -243,3 +243,5 @@ LinkBase
 AppendTargetFrameworkToOutputPath
 OutputPath
 CodeAnalysisRuleSet
+
+EnableDynamicLoading, EnableComHosting - see https://github.com/dotnet/sdk/pull/3305#issuecomment-504549489

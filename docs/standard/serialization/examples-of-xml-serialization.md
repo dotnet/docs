@@ -198,7 +198,7 @@ The serialized class instance might resemble the following, if two items are ord
 
 ## Serializing a Class that Implements the ICollection Interface
 
-You can create your own collection classes by implementing the <xref:System.Collections.ICollection> interface, and use the <xref:System.Xml.Serialization.XmlSerializer> to serialize instances of these classes. Note that when a class implements the <xref:System.Collections.ICollection> interface, only the collection contained by the class is serialized. Any public properties or fields added to the class will not be serialized. The class must include an **Add** method and an **Item** property (C# indexer) to be serialized.
+You can create your own collection classes by implementing the <xref:System.Collections.ICollection> interface, and use the <xref:System.Xml.Serialization.XmlSerializer> to serialize instances of these classes. Note that when a class implements the <xref:System.Collections.ICollection> interface, only the collection contained by the class is serialized. Any public properties or fields added to the class will not be serialized. The class must include an **Add** method to be serialized.
 
 ```vb
 Imports System.Collections

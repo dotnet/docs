@@ -188,7 +188,7 @@ One of the most common types of data is categorical data. Categorical data has a
 
 In ML.NET, a key is an integer value representing a category. Key value mapping is most often used to map string labels into unique integer values for training, then back to their string values when the model is used to make a prediction.
 
-The transforms used to perform key value mapping are [MapValueToKey](xref:Microsoft.ML.ConversionsExtensionsCatalog.MapValueToKey%2A) and [MapKeyToValue](Microsoft.ML.ConversionsExtensionsCatalog.MapKeyToValue%2A).
+The transforms used to perform key value mapping are [MapValueToKey](xref:Microsoft.ML.ConversionsExtensionsCatalog.MapValueToKey%2A) and [MapKeyToValue](xref:Microsoft.ML.ConversionsExtensionsCatalog.MapKeyToValue%2A).
 
 `MapValueToKey` adds a dictionary of mappings in the model, so that `MapKeyToValue` can perform the reverse transform when making a prediction.
 

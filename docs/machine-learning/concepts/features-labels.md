@@ -17,7 +17,7 @@ A machine learning algorithm uses training data containing example features and 
 
 Features and labels must be numerical values in order to be processed by a machine learning algorithm
 
-Often the available data is not numbers but rather text, images, and dates, and must be transformed into numbers before being processed by the training algorithm.
+Often the available data is not numbers but rather text, images, and dates, and must be transformed into numbers before being processed by an ML.NET training algorithm.
 
 ## Categorical data
 
@@ -32,6 +32,17 @@ The transforms used to perform key value mapping are [MapValueToKey](xref:Micros
 `MapValueToKey` adds a dictionary of mappings in the model, so that `MapKeyToValue` can perform the reverse transform when making a prediction.
 
 ### One hot encoding
+
+One hot encoding takes a finite set of values and maps them onto integers whose binary representation has a single `1` value in unique positions in the string. The following table shows an example with zip codes as raw values.
+
+|Raw value|One hot encoded value|
+|---------|---------------------|
+|98052|00...01|
+|98100|00...10|
+|||
+|98109|10...00|
+
+
 
 ### Hashing
 

@@ -133,7 +133,7 @@ For details on configuring your app for an external provider, see the [External 
 > [!TIP]
 All details are handled by the authorization middleware and services mentioned above, so you just have to choose the **Individual User Account** authentication option when you create the ASP.NET Code web application project in Visual Studio, as shown in Figure 9-3, besides registering the authentication providers mentioned above.
 
-![Screenshot of the New ASP.NET Core Web Application dialog.](./media/index/select-external-authentication-option.png)
+![Screenshot of the New ASP.NET Core Web Application dialog.](./media/index/select-individual-user-account-authentication-option.png)
 
 **Figure 9-3**. Selecting the Individual User Accounts option, for using external authentication, when creating a web application project in Visual Studio 2019.
 

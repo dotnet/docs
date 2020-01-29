@@ -27,16 +27,16 @@ HRESULT DecodeEvent(
  [in] The number of elements in the `pRecord` byte array.  
   
  `format`  
- [in] A [CorDebugRecordFormat](../../../../docs/framework/unmanaged-api/debugging/cordebugrecordformat-enumeration.md) enumeration member that specifies the format of the unmanaged debug event.  
+ [in] A [CorDebugRecordFormat](cordebugrecordformat-enumeration.md) enumeration member that specifies the format of the unmanaged debug event.  
   
  `dwFlags`  
- [in] A bit field that depends on the target architecture and that specifies additional information about the debug event. For Windows systems, it can be a member of the [CorDebugDecodeEventFlagsWindows](../../../../docs/framework/unmanaged-api/debugging/cordebugdecodeeventflagswindows-enumeration.md) enumeration.  
+ [in] A bit field that depends on the target architecture and that specifies additional information about the debug event. For Windows systems, it can be a member of the [CorDebugDecodeEventFlagsWindows](cordebugdecodeeventflagswindows-enumeration.md) enumeration.  
   
  `dwThreadId`  
  [in] The operating system identifier of the thread on which the exception was thrown.  
   
  `ppEvent`  
- [out] A pointer to the address of an [ICorDebugDebugEvent](../../../../docs/framework/unmanaged-api/debugging/icordebugdebugevent-interface.md) object that represents a decoded managed debug event.  
+ [out] A pointer to the address of an [ICorDebugDebugEvent](icordebugdebugevent-interface.md) object that represents a decoded managed debug event.  
   
 ## Remarks  
   
@@ -54,5 +54,5 @@ HRESULT DecodeEvent(
   
 ## See also
 
-- [ICorDebugProcess6 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugProcess6 Interface](icordebugprocess6-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

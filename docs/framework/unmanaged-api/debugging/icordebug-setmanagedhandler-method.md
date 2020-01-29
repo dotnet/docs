@@ -29,7 +29,7 @@ HRESULT SetManagedHandler (
   
 ## Parameters  
  `pCallback`  
- [in] A pointer to an [ICorDebugManagedCallback](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md) object, which is the event handler object.  
+ [in] A pointer to an [ICorDebugManagedCallback](icordebugmanagedcallback-interface.md) object, which is the event handler object.  
   
 ## Remarks  
  `SetManagedHandler` must be called at creation time.  
@@ -47,4 +47,4 @@ HRESULT SetManagedHandler (
   
 ## See also
 
-- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
+- [ICorDebug Interface](icordebug-interface.md)

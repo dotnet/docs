@@ -22,13 +22,13 @@ Represents a type, either basic or complex (that is, user-defined). If the type 
   
 |Method|Description|  
 |------------|-----------------|  
-|[EnumerateTypeParameters Method](../../../../docs/framework/unmanaged-api/debugging/icordebugtype-enumeratetypeparameters-method.md)|Gets an interface pointer to an ICorDebugTypeEnum that references the generic <xref:System.Type> parameters of the class referenced by this `ICorDebugType`.|  
-|[GetBase Method](../../../../docs/framework/unmanaged-api/debugging/icordebugtype-getbase-method.md)|Gets an interface pointer to an `ICorDebugType` that references the base class of the class referenced by this `ICorDebugType`, if one exists.|  
-|[GetClass Method](../../../../docs/framework/unmanaged-api/debugging/icordebugtype-getclass-method.md)|Gets an interface pointer to an ICorDebugClass that references the typed constructor of this `ICorDebugType`.|  
-|[GetFirstTypeParameter Method](../../../../docs/framework/unmanaged-api/debugging/icordebugtype-getfirsttypeparameter-method.md)|Gets an interface pointer to an `ICorDebugType` that references the first generic <xref:System.Type> parameter for the constructor of the class referenced by this `ICorDebugType`.|  
-|[GetRank Method](../../../../docs/framework/unmanaged-api/debugging/icordebugtype-getrank-method.md)|Gets the number of dimensions in an array type.|  
-|[GetStaticFieldValue Method](../../../../docs/framework/unmanaged-api/debugging/icordebugtype-getstaticfieldvalue-method.md)|Gets an interface pointer to an ICorDebugValue that contains the value of the static field referenced by the specified field token in the specified stack frame.|  
-|[GetType Method](../../../../docs/framework/unmanaged-api/debugging/icordebugtype-gettype-method.md)|Gets a CorElementType value that describes the native type of the common language runtime <xref:System.Type> referenced by this `ICorDebugType`.|  
+|[EnumerateTypeParameters Method](icordebugtype-enumeratetypeparameters-method.md)|Gets an interface pointer to an ICorDebugTypeEnum that references the generic <xref:System.Type> parameters of the class referenced by this `ICorDebugType`.|  
+|[GetBase Method](icordebugtype-getbase-method.md)|Gets an interface pointer to an `ICorDebugType` that references the base class of the class referenced by this `ICorDebugType`, if one exists.|  
+|[GetClass Method](icordebugtype-getclass-method.md)|Gets an interface pointer to an ICorDebugClass that references the typed constructor of this `ICorDebugType`.|  
+|[GetFirstTypeParameter Method](icordebugtype-getfirsttypeparameter-method.md)|Gets an interface pointer to an `ICorDebugType` that references the first generic <xref:System.Type> parameter for the constructor of the class referenced by this `ICorDebugType`.|  
+|[GetRank Method](icordebugtype-getrank-method.md)|Gets the number of dimensions in an array type.|  
+|[GetStaticFieldValue Method](icordebugtype-getstaticfieldvalue-method.md)|Gets an interface pointer to an ICorDebugValue that contains the value of the static field referenced by the specified field token in the specified stack frame.|  
+|[GetType Method](icordebugtype-gettype-method.md)|Gets a CorElementType value that describes the native type of the common language runtime <xref:System.Type> referenced by this `ICorDebugType`.|  
   
 ## Remarks  
  If the type is generic, `ICorDebugClass` represents the uninstantiated type. The `ICorDebugType` interface represents an instantiated generic type. For example, Hashtable\<K, V> would be represented by `ICorDebugClass`, whereas Hashtable\<Int32, String> would be represented by `ICorDebugType`.  
@@ -49,4 +49,4 @@ Represents a type, either basic or complex (that is, user-defined). If the type 
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

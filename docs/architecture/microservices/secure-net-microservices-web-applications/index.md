@@ -126,52 +126,16 @@ In all cases, You have to complete an application registration procedure that's 
 1. Getting a Client Application Id.
 2. Getting a Client Application Secret.
 3. Configuring an redirection URL, that's handled by the authorization middleware and the registered provider
+4. Optionally configure a logout URL, to properly handle logout in a Single Sign On (SSO) scenario.
 
-For details on configuring your app for external provider, see the [External provider authentication in the ASP.NET Core documentation](/aspnet/core/security/authentication/social/)).
-
-Once the middleware is registered in `Startup.Configure`, you can prompt users to sign in from any controller action. To do this, you create an `AuthenticationProperties` object that includes the authentication provider’s name and a redirect URL. You then return a Challenge response that passes the `AuthenticationProperties` object. The following code shows an example of this.
-
-The redirectUrl parameter includes the URL that the external provider should redirect to once the user has authenticated. The URL should represent an action that will sign the user in based on external identity information, as in the following simplified example:
-
-```csharp
-// Sign in the user with this external login provider if the user
-// already has a login.
-var result = await _signInManager.ExternalLoginSignInAsync(info.LoginProvider, info.ProviderKey, isPersistent: false);
-
-if (result.Succeeded)
-{
-    return RedirectToLocal(returnUrl);
-}
-else
-{
-    ApplicationUser newUser = new ApplicationUser
-    {
-        // The user object can be constructed with claims from the
-        // external authentication provider, combined with information
-        // supplied by the user after they have authenticated with
-        // the external provider.
-        UserName = info.Principal.FindFirstValue(ClaimTypes.Name),
-        Email = info.Principal.FindFirstValue(ClaimTypes.Email)
-    };
-    var identityResult = await _userManager.CreateAsync(newUser);
-    if (identityResult.Succeeded)
-    {
-        identityResult = await _userManager.AddLoginAsync(newUser, info);
-        if (identityResult.Succeeded)
-        {
-            await _signInManager.SignInAsync(newUser, isPersistent: false);
-        }
-        return RedirectToLocal(returnUrl);
-    }
-}
-```
+For details on configuring your app for an external provider, see the [External provider authentication in the ASP.NET Core documentation](/aspnet/core/security/authentication/social/)).
 
 > [!TIP]
-If you choose the **Individual User Account** authentication option when you create the ASP.NET Code web application project in Visual Studio, as shown in Figure 9-3, all the code necessary to sign in with an external provider is already in the project, and you don't need to implement the code above.
+All details are handled by the authorization middleware and services mentioned above, so you just have to choose the **Individual User Account** authentication option when you create the ASP.NET Code web application project in Visual Studio, as shown in Figure 9-3, besides registering the authentication providers mentioned above.
 
 ![Screenshot of the New ASP.NET Core Web Application dialog.](./media/index/select-external-authentication-option.png)
 
-**Figure 9-3**. Selecting an option for using external authentication when creating a web application project in Visual Studio 2019.
+**Figure 9-3**. Selecting the Individual User Accounts option, for using external authentication, when creating a web application project in Visual Studio 2019.
 
 In addition to the external authentication providers listed previously, third-party packages are available that provide middleware for using many more external authentication providers. For a list, see the [AspNet.Security.OAuth.Providers](https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers/tree/dev/src) repo on GitHub.
 

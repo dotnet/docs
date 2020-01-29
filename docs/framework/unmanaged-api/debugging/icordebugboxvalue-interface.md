@@ -23,7 +23,7 @@ A subclass of "ICorDebugHeapValue" that represents a boxed value class object.
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetObject Method](../../../../docs/framework/unmanaged-api/debugging/icordebugboxvalue-getobject-method.md)|Gets an interface pointer to the boxed "ICorDebugObjectValue" instance.|  
+|[GetObject Method](icordebugboxvalue-getobject-method.md)|Gets an interface pointer to the boxed "ICorDebugObjectValue" instance.|  
   
 ## Remarks  
   
@@ -41,4 +41,4 @@ A subclass of "ICorDebugHeapValue" that represents a boxed value class object.
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

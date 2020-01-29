@@ -26,12 +26,14 @@ HRESULT ClassLoadStarted(
     [in] ClassID classId);  
 ```  
   
-## Parameters  
- `classId`  
- [in] Identifies the class that is being loaded.  
-  
+## Parameters
+
+- `classId`
+
+  \[in] Identifies the class that is being loaded.
+
 ## Remarks  
- The value of `classId` is not valid for an information request until the [ICorProfilerCallback::ClassLoadFinished](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-classloadfinished-method.md) method is called.  
+ The value of `classId` is not valid for an information request until the [ICorProfilerCallback::ClassLoadFinished](icorprofilercallback-classloadfinished-method.md) method is called.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -44,4 +46,4 @@ HRESULT ClassLoadStarted(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)

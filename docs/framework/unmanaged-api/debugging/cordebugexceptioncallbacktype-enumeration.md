@@ -16,7 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorDebugExceptionCallbackType Enumeration
-Indicates the type of callback that is made from an [ICorDebugManagedCallback2::Exception](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-exception-method.md) event.  
+Indicates the type of callback that is made from an [ICorDebugManagedCallback2::Exception](icordebugmanagedcallback2-exception-method.md) event.  
   
 ## Syntax  
   
@@ -49,4 +49,4 @@ typedef enum CorDebugExceptionCallbackType {
   
 ## See also
 
-- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)
+- [Debugging Enumerations](debugging-enumerations.md)

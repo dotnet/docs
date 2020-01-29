@@ -136,10 +136,10 @@ In this tutorial, only bridge deck images are used.
 
         `ModelInput` contains the following properties:
 
-        - `ImagePath` is the fully qualified path where the image is stored.
-        - `Label` is the category the image belongs to. This is the value to predict.
         - `Image` is the `byte[]` representation of the image. The model expects image data to be of this type for training.
         - `LabelAsKey` is the numerical representation of the `Label`.
+        - `ImagePath` is the fully qualified path where the image is stored.
+        - `Label` is the category the image belongs to. This is the value to predict.
 
         Only `Image` and `LabelAsKey` are used to train the model and make predictions. The `ImagePath` and `Label` properties are kept for convenience to access the original image file name and category.
 
@@ -167,7 +167,7 @@ When training and validation data do not change often, it is good practice to ca
 
     [!code-csharp [DefinePaths](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L15-L17)]
 
-1. Then, initialize the `mlContext` variable with a new instance of [MLContext](xref:Microsoft.ML.MLContext).
+1. Initialize the `mlContext` variable with a new instance of [MLContext](xref:Microsoft.ML.MLContext).
 
     [!code-csharp [MLContext](~/machinelearning-samples/samples/csharp/getting-started/DeepLearning_ImageClassification_Binary/DeepLearning_ImageClassification_Binary/Program.cs#L19)]
 

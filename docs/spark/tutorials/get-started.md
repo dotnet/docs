@@ -80,7 +80,6 @@ setx HADOOP_HOME C:\bin\spark-2.4.1-bin-hadoop2.7\
 setx SPARK_HOME C:\bin\spark-2.4.1-bin-hadoop2.7\
 ```
 
-
 Run the following commands to set the environment variables used to locate Apache Spark on **MacOS**:
 
 ```bash

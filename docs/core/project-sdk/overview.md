@@ -56,7 +56,7 @@ Referencing an SDK in one of these ways greatly simplifies project files for .NE
 
 ## Preprocess the project file
 
-You can see the fully expanded project as MSBuild sees it after the SDK and its targets are included by using the `dotnet msbuild -preprocess` command. The [preprocess](/visualstudio/msbuild/msbuild-command-line-reference#preprocess) switch of the [`dotnet msbuild`](dotnet-msbuild.md) command shows which files are imported, their sources, and their contributions to the build without actually building the project. If the project has multiple target frameworks, focus the results of the command on only one framework by specifying it as an MSBuild property. For example:
+You can see the fully expanded project as MSBuild sees it after the SDK and its targets are included by using the `dotnet msbuild -preprocess` command. The [preprocess](/visualstudio/msbuild/msbuild-command-line-reference#preprocess) switch of the [`dotnet msbuild`](../tools/dotnet-msbuild.md) command shows which files are imported, their sources, and their contributions to the build without actually building the project. If the project has multiple target frameworks, focus the results of the command on only one framework by specifying it as an MSBuild property. For example:
 
 `dotnet msbuild -property:TargetFramework=netcoreapp2.0 -preprocess:output.xml`
 

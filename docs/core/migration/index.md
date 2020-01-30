@@ -59,7 +59,7 @@ You'll get this error if you have a *global.json* file in the current or parent 
 If you are still using DNX for .NET Core development, your migration process should be done in two stages:
 
 1. Use the [existing DNX migration guidance](from-dnx.md) to migrate from DNX to project-json enabled CLI.
-2. Follow the steps from the previous section to migrate from *project.json* to *.csproj*.  
+2. Follow the steps from the previous section to migrate from *project.json* to *.csproj*.
 
 > [!NOTE]
 > DNX has become officially deprecated during the Preview 1 release of the .NET Core CLI.
@@ -74,7 +74,7 @@ The .NET Core csproj format has been changing and evolving with each new pre-rel
 - Remove the `<Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" />` and `<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />` statements from the top and bottom of the project. These import statements are implied by the SDK, so there is no need for them to be in the project.
 - If you have `Microsoft.NETCore.App` or `NETStandard.Library` `<PackageReference>` items in your project, you should remove them. These package references are [implied by the SDK](https://aka.ms/sdkimplicitrefs).
 - Remove the `Microsoft.NET.Sdk` `<PackageReference>` element, if it exists. The SDK reference comes through the `Sdk` attribute on the `<Project>` element.
-- Remove the [globs](https://en.wikipedia.org/wiki/Glob_(programming)) that are [implied by the SDK](../tools/csproj.md#default-compilation-includes-in-net-core-projects). Leaving these globs in your project will cause an error on build because compile items will be duplicated.
+- Remove the [globs](https://en.wikipedia.org/wiki/Glob_(programming)) that are [implied by the SDK](../project-sdk/overview.md#default-compilation-includes). Leaving these globs in your project will cause an error on build because compile items will be duplicated.
 
 After these steps your project should be fully compatible with the RTM .NET Core csproj format.
 

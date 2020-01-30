@@ -189,7 +189,7 @@ Files:
 Publish:
 
 PublishReadyToRun (and PublishReadyToRunExclude)
-RuntimeIdentifier - see https://docs.microsoft.com/en-us/dotnet/core/rid-catalog
+RuntimeIdentifier - see https://docs.microsoft.com/dotnet/core/rid-catalog
 RuntimeIdentifiers
 UseAppHost - see https://github.com/dotnet/docs/issues/16407#issuecomment-571772518
 

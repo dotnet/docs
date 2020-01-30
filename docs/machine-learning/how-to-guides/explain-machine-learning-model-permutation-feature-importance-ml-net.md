@@ -1,7 +1,7 @@
 ---
-title: Interpret ML.NET models using PFI
+title: Interpret ML.NET models with Permutation Feature Importance
 description: Understand the feature importance of models with Permutation Feature Importance in ML.NET
-ms.date: 01/14/2020
+ms.date: 01/30/2020
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc,how-to

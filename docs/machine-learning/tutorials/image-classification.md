@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Generate an image classification model from a TensorFlow model'
+title: 'Tutorial: ML.NET image classification model from TensorFlow'
 description: Learn how to transfer the knowledge from an existing TensorFlow model into a new ML.NET image classification model. The TensorFlow model was trained to classify images into a thousand categories. The ML.NET model makes use of transfer learning to classify images into fewer broader categories.
 ms.date: 11/15/2019
 ms.topic: tutorial

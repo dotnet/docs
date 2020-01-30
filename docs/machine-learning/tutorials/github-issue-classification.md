@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Categorize support issues'
+title: 'Tutorial: Categorize support issues - multiclass classification'
 description: Discover how to use ML.NET in a multiclass classification scenario to classify GitHub issues to assign them to a given area.
 ms.date: 01/14/2020
 ms.topic: tutorial

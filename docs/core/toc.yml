@@ -109,20 +109,18 @@
     href: tutorials/aspnet-core.md
   - name: Host .NET Core from native code
     href: tutorials/netcore-hosting.md
-- name: SDKs and project files
+- name: Project SDKs
   items:
   - name: Overview
-    href: sdk/overview.md
-  - name: Microsoft.NET.Sdk
+    href: project-sdk/overview.md
+  - name: Reference
     items:
-    - name: MSBuild properties reference
-      href: sdk/msbuild-props.md
-    - name: MSBuild targets reference
-      href: sdk/msbuild-targets.md
-  - name: Microsoft.NET.Sdk.Web
-    href: /aspnet/core/razor-pages/web-sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
-  - name: Microsoft.NET.Sdk.Razor
-    href: /aspnet/core/razor-pages/sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
+    - name: Microsoft.NET.Sdk
+      href: project-sdk/msbuild-props.md
+    - name: Microsoft.NET.Sdk.Web
+      href: /aspnet/core/razor-pages/web-sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
+    - name: Microsoft.NET.Sdk.Razor
+      href: /aspnet/core/razor-pages/sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
 - name: Run-time configuration
   items:
   - name: Settings
@@ -243,6 +241,8 @@
     href: versions/remove-runtime-sdk-versions.md
 - name: Runtime Identifier (RID) catalog
   href: rid-catalog.md
+- name: .NET Core SDK overview
+  href: sdk.md
 - name: .NET Core CLI
   items:
   - name: Overview

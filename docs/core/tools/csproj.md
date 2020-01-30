@@ -184,7 +184,7 @@ Note that `DotNetCliToolReference` is [now deprecated](https://github.com/dotnet
 
 #### Version
 
-`Version` specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](/nuget/create-packages/dependency-versions#version-ranges) scheme. The default behavior is an exact version match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3]` for the exact 1.2.3 version of the package.
+`Version` specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](/nuget/create-packages/dependency-versions#version-ranges) scheme. The default behavior is a minimum version, inclusive match. For example, specifying `Version="1.2.3"` means the resolved package will have the version 1.2.3 if available or greater otherwise.
 
 ### RuntimeIdentifiers
 

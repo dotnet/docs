@@ -1,12 +1,14 @@
 ---
 title: .NET Core project SDK overview
 description: Learn about the .NET Core project SDKs.
-ms.date: 01/28/2020
+ms.date: 02/02/2020
 ms.topic: conceptual
 ---
 # .NET Core project SDKs
 
-.NET Core projects are associated with a software development kit (SDK). Each project SDK is a set of MSBuild [targets](/visualstudio/msbuild/msbuild-targets) and associated [tasks](/visualstudio/msbuild/msbuild-tasks) that are responsible for compiling code, publishing it, packing NuGet packages, and so on.
+.NET Core projects are associated with a software development kit (SDK). Each project SDK is a set of MSBuild [targets](/visualstudio/msbuild/msbuild-targets) and associated [tasks](/visualstudio/msbuild/msbuild-tasks) that are responsible for compiling, packing, and publishing code.
+
+## Available SDKs
 
 The following SDKs are available for .NET Core:
 
@@ -18,11 +20,11 @@ The following SDKs are available for .NET Core:
 | `Microsoft.NET.Sdk.Worker` | The .NET Core Worker Service SDK |
 | `Microsoft.NET.Sdk.WindowsDesktop` | The .NET Core WinForms and WPF SDK |
 
-The .NET Core SDK is the base SDK for .NET Core. The other SDKs depend on the .NET Core SDK. For example, the Web SDK depends on the .NET Core SDK and the Razor SDK.
+The .NET Core SDK is the base SDK for .NET Core. The other SDKs depend on the .NET Core SDK. For example, the Web SDK depends on both the .NET Core SDK and the Razor SDK.
 
 ## Project files
 
-.NET Core projects are based on the [MSBuild](/visualstudio/msbuild/msbuild) format. Project files, which have extensions like *.csproj* for C# projects and *.fsproj* for F# projects, are in XML format. The root element of an MSBuild project file is the [Project](/msbuild/project-element-msbuild) element. The `Project` element has an optional `Sdk` attribute that specifies which SDK (and version) to use. To use the .NET Core tools and build your code, set the `Sdk` attribute to one of the IDs in the previous table.
+.NET Core projects are based on the [MSBuild](/visualstudio/msbuild/msbuild) format. Project files, which have extensions like *.csproj* for C# projects and *.fsproj* for F# projects, are in XML format. The root element of an MSBuild project file is the [Project](/msbuild/project-element-msbuild) element. The `Project` element has an optional `Sdk` attribute that specifies which SDK (and version) to use. To use the .NET Core tools and build your code, set the `Sdk` attribute to one of the IDs in the [Available SDKs](#available-sdks) table.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -54,15 +56,17 @@ Referencing an SDK in one of these ways greatly simplifies project files for .NE
 > [!TIP]
 > On a Windows machine, the *Sdk.props* and *Sdk.targets* files can be found in the *%ProgramFiles%\dotnet\sdk\\[version]\Sdks\Microsoft.NET.Sdk\Sdk* folder.
 
-## Preprocess the project file
+### Preprocess the project file
 
-You can see the fully expanded project as MSBuild sees it after the SDK and its targets are included by using the `dotnet msbuild -preprocess` command. The [preprocess](/visualstudio/msbuild/msbuild-command-line-reference#preprocess) switch of the [`dotnet msbuild`](../tools/dotnet-msbuild.md) command shows which files are imported, their sources, and their contributions to the build without actually building the project. If the project has multiple target frameworks, focus the results of the command on only one framework by specifying it as an MSBuild property. For example:
+You can see the fully expanded project as MSBuild sees it after the SDK and its targets are included by using the `dotnet msbuild -preprocess` command. The [preprocess](/visualstudio/msbuild/msbuild-command-line-reference#preprocess) switch of the [`dotnet msbuild`](../tools/dotnet-msbuild.md) command shows which files are imported, their sources, and their contributions to the build without actually building the project.
+
+If the project has multiple target frameworks, focus the results of the command on only one framework by specifying it as an MSBuild property. For example:
 
 `dotnet msbuild -property:TargetFramework=netcoreapp2.0 -preprocess:output.xml`
 
-## Default compilation includes
+### Default compilation includes
 
-The default includes and excludes for compile items and embedded resources are in the SDK properties files. Unlike .NET Framework projects, you don't need to specify these items in your project file, because the defaults cover most common use cases. This leads to smaller project files that are easier to understand as well as edit by hand, if needed.
+The default includes and excludes for compile items and embedded resources are in the SDK properties file. Unlike .NET Framework projects, you don't need to specify these items in your project file, because the defaults cover most common use cases. This leads to smaller project files that are easier to understand as well as edit by hand, if needed.
 
 The following table shows which element and which [globs](https://en.wikipedia.org/wiki/Glob_(programming)) are included and excluded in the .NET Core SDK:
 
@@ -89,7 +93,7 @@ To resolve the error, remove the explicit `Compile` items that match the ones li
 
 If you want to specify, for example, some files to get published with your app, you can still use the known MSBuild mechanisms for that, for example, the `Content` element.
 
-`EnableDefaultCompileItems` only disables `Compile` globs but doesn't affect other globs, like the implicit `None` glob that also applies to \*.cs items. Because of that, Solution Explorer shows \*.cs items as part of the project, included as `None` items. To disable the implicit `None` glob, set `EnableDefaultNoneItems` to `false`:
+`EnableDefaultCompileItems` only disables `Compile` globs but doesn't affect other globs, like the implicit `None` glob that also applies to \*.cs items. Because of that, Solution Explorer in Visual Studio shows \*.cs items as part of the project, included as `None` items. To disable the implicit `None` glob, set `EnableDefaultNoneItems` to `false`:
 
 ```xml
 <PropertyGroup>
@@ -104,6 +108,10 @@ To disable *all* implicit globs, set the `EnableDefaultItems` property to `false
   <EnableDefaultItems>false</EnableDefaultItems>
 </PropertyGroup>
 ```
+
+## Customize the build
+
+There are various ways to [customize a build](/visualstudio/msbuild/customize-your-build). You may want to override a property by passing it as an argument to an [msbuild](/visualstudio/msbuild/msbuild-command-line-reference) or [dotnet](../tools/index.md) command. You can also add the property to the project file or to a *Directory.Build.props* file. For a list of useful properties for .NET Core projects, see [MSBuild properties for .NET Core SDK projects](msbuild-props.md).
 
 ## See also
 

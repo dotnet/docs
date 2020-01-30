@@ -141,5 +141,5 @@ If you used Preview 2 tooling to produce *project.json*-based projects, consult 
 
 ## See also
 
-- [dotnet/CLI GitHub Repository](https://github.com/dotnet/cli/)
+- [dotnet/sdk GitHub repository](https://github.com/dotnet/sdk/)
 - [.NET Core installation guide](https://aka.ms/dotnetcoregs)

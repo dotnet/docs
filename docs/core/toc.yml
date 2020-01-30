@@ -97,7 +97,7 @@
     href: tutorials/using-on-mac-vs.md
   - name: Build a complete .NET Core solution on macOS
     href: tutorials/using-on-mac-vs-full-solution.md
-  - name: Get started with .NET Core using the CLI tools
+  - name: Get started with .NET Core using the CLI
     href: tutorials/cli-create-console-app.md
   - name: Organize and test projects with the .NET Core CLI
     href: tutorials/testing-with-cli.md
@@ -151,11 +151,11 @@
 - name: Application deployment
   href: deploying/index.md
   items:
-  - name: Deploy apps with CLI tools
+  - name: Publish apps with the CLI
     href: deploying/deploy-with-cli.md
   - name: Deploy apps with Visual Studio
     href: deploying/deploy-with-vs.md
-  - name: Create a NuGet package with cross-platform tools
+  - name: Create a NuGet package with the CLI
     href: deploying/creating-nuget-packages.md
   - name: Self-contained deployment runtime roll forward
     href: deploying/runtime-patch-selection.md
@@ -353,7 +353,7 @@
   - name: Organize projects for .NET Core
     href: porting/project-structure.md
   - name: Unavailable technologies
-    href: porting/net-framework-tech-unavailable.md 
+    href: porting/net-framework-tech-unavailable.md
   - name: Tools
     href: porting/tools.md
   - name: Use the Windows Compatibility Pack
@@ -363,7 +363,7 @@
   - name: Port WPF projects
     href: porting/wpf.md
   - name: Port C++/CLI projects
-    href: porting/cpp-cli.md    
+    href: porting/cpp-cli.md
 - name: Dependency loading
   items:
   - name: Overview

@@ -1,17 +1,17 @@
 ---
-title: Get started with .NET Core using the CLI - .NET Core CLI
-description: A step-by-step tutorial showing how to get started with .NET Core on Windows, Linux, or macOS using the .NET Core command-line interface (CLI).
+title: Get started with .NET Core using the CLI
+description: A step-by-step tutorial showing how to get started with .NET Core on Windows, Linux, or macOS using the .NET Core CLI.
 author: thraka
 ms.author: adegeo
 ms.date: 12/05/2019
 ms.technology: dotnet-cli
 ms.custom: "updateeachrelease"
 ---
-# Get started with .NET Core on Windows/Linux/macOS using the command line
+# Get started with .NET Core using the .NET Core CLI
 
-This article will show you how to start developing cross-platforms apps in your machine using the .NET Core CLI tools.
+This article will show you how to start developing .NET Core apps that work on Windows, Linux, and macOS using the .NET Core CLI.
 
-If you're unfamiliar with the .NET Core CLI toolset, read the [.NET Core SDK overview](../tools/index.md).
+If you're unfamiliar with the .NET Core CLI, see the [.NET Core CLI overview](../tools/index.md).
 
 ## Prerequisites
 
@@ -188,6 +188,6 @@ And that's it! Now, you can start using the basic concepts learned here to creat
 
 ## See also
 
-- [Organizing and testing projects with the .NET Core CLI tools](testing-with-cli.md)
-- [Publish .NET Core apps with the CLI](../deploying/deploy-with-cli.md)
-- [Learn more about app deployment](../deploying/index.md)
+- [Organizing and testing projects with the .NET Core CLI](testing-with-cli.md)
+- [Publish .NET Core apps with the .NET Core CLI](../deploying/deploy-with-cli.md)
+- [.NET Core application deployment](../deploying/index.md)

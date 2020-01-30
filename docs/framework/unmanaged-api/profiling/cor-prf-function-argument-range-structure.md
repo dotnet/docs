@@ -45,4 +45,4 @@ typedef struct _COR_PRF_FUNCTION_ARGUMENT_RANGE {
   
 ## See also
 
-- [Profiling Structures](../../../../docs/framework/unmanaged-api/profiling/profiling-structures.md)
+- [Profiling Structures](profiling-structures.md)

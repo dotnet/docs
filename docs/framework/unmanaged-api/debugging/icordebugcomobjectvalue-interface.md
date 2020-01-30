@@ -22,8 +22,8 @@ Provides methods to retrieve information associated with a runtime callable wrap
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetCachedInterfacePointers Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcomobjectvalue-getcachedinterfacepointers-method.md)|Gets the raw interface pointers cached on the current RCW.|  
-|[GetCachedInterfaceTypes Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcomobjectvalue-getcachedinterfacetypes-method.md)|Provides an enumerator for the interface types that the current object has been cased to or used as.|  
+|[GetCachedInterfacePointers Method](icordebugcomobjectvalue-getcachedinterfacepointers-method.md)|Gets the raw interface pointers cached on the current RCW.|  
+|[GetCachedInterfaceTypes Method](icordebugcomobjectvalue-getcachedinterfacetypes-method.md)|Provides an enumerator for the interface types that the current object has been cased to or used as.|  
   
 ## Remarks  
  To check whether an instance of an "ICorDebugValue" interface represents an RCW, a debugger calls `QueryInterface` on "ICorDebugValue" with `IID_ICorDebugComObjectValue`.  
@@ -39,5 +39,5 @@ Provides methods to retrieve information associated with a runtime callable wrap
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

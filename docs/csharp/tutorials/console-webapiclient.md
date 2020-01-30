@@ -7,11 +7,9 @@ ms.assetid: 51033ce2-7a53-4cdd-966d-9da15c8204d2
 
 # REST client
 
-## Introduction
-
 This tutorial teaches you a number of features in .NET Core and the C# language. You’ll learn:
 
-* The basics of the .NET Core Command Line Interface (CLI).
+* The basics of the .NET Core CLI.
 * An overview of C# Language features.
 * Managing dependencies with NuGet
 * HTTP Communications
@@ -23,7 +21,7 @@ service on GitHub. You'll read information in JSON format, and convert
 that JSON packet into C# objects. Finally, you'll see how to work with
 C# objects.
 
-There are a lot of features in this tutorial. Let’s build them one by one.
+There are many features in this tutorial. Let’s build them one by one.
 
 If you prefer to follow along with the [final sample](https://github.com/dotnet/samples/tree/master/csharp/getting-started/console-webapiclient) for this topic, you can download it. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
@@ -48,10 +46,7 @@ directory. Enter the following command in a console window:
 dotnet new console --name WebApiClient
 ```
 
-This creates the starter files for a basic "Hello World" application. The project name is "WebApiClient". As this is a
-new project, none of the dependencies are in place, so the first run will
-download the .NET Core framework, install a development certificate and run
-the NuGet package manager to restore missing dependencies.
+This creates the starter files for a basic "Hello World" application. The project name is "WebApiClient". As this is a new project, none of the dependencies are in place. The first run will download the .NET Core framework, install a development certificate, and run the NuGet package manager to restore missing dependencies.
 
 Before you start making modifications, type
 `dotnet run` ([see note](#dotnet-restore-note)) at the command prompt to
@@ -98,7 +93,7 @@ private static async Task ProcessRepositories()
 }
 ```
 
-You'll need to add a `using` statement at the top of your `Main` method so
+You'll need to add a `using` directive at the top of your `Main` method so
 that the C# compiler recognizes the <xref:System.Threading.Tasks.Task> type:
 
 ```csharp
@@ -113,11 +108,11 @@ as you fill in the method.
 Next, rename the namespace defined in the `namespace` statement from its default of `ConsoleApp` to `WebAPIClient`. We'll later define a `repo` class in this namespace.
 
 Next, update the `Main` method to call this method. The
-`ProcessRepositories` method returns a Task, and you shouldn't exit the
-program before that task finishes. Therefore, you must change the signature of `Main`. Add the `async` modifier, and change the return type to `Task`. Then, in the body of the method, add a call to `ProcessRepositories`. Add the `await` keyword when to that method call:
+`ProcessRepositories` method returns a task, and you shouldn't exit the
+program before that task finishes. Therefore, you must change the signature of `Main`. Add the `async` modifier, and change the return type to `Task`. Then, in the body of the method, add a call to `ProcessRepositories`. Add the `await` keyword to that method call:
 
 ```csharp
-static Task Main(string[] args)
+static async Task Main(string[] args)
 {
     await ProcessRepositories();
 }
@@ -126,7 +121,7 @@ static Task Main(string[] args)
 Now, you have a program that does nothing, but does it asynchronously. Let's improve it.
 
 First you need an object that is capable to retrieve data from the web; you can use
- a <xref:System.Net.Http.HttpClient> to do that. This object handles the request and the responses. Instantiate a single instance of that type in the `Program` class inside the Program.cs file.
+ a <xref:System.Net.Http.HttpClient> to do that. This object handles the request and the responses. Instantiate a single instance of that type in the `Program` class inside the *Program.cs* file.
 
 ```csharp
 namespace WebAPIClient
@@ -135,7 +130,7 @@ namespace WebAPIClient
     {
         private static readonly HttpClient client = new HttpClient();
 
-        static Task Main(string[] args)
+        static async Task Main(string[] args)
         {
             //...
         }
@@ -160,7 +155,7 @@ private static async Task ProcessRepositories()
 }
 ```
 
-You'll need to also add two new using statements at the top of the file for this to compile:
+You'll need to also add two new `using` directives at the top of the file for this to compile:
 
 ```csharp
 using System.Net.Http;
@@ -199,7 +194,7 @@ namespace WebAPIClient
 {
     public class Repository
     {
-        public string name { get; set; };
+        public string name { get; set; }
     }
 }
 ```
@@ -221,7 +216,6 @@ Next, you'll use the serializer to convert JSON into C# objects. Replace the cal
 ```csharp
 var streamTask = client.GetStreamAsync("https://api.github.com/orgs/dotnet/repos");
 var repositories = await JsonSerializer.DeserializeAsync<List<Repository>>(await streamTask);
-return repositories;
 ```
 
 You're using a new namespace, so you'll need to add it at the top of the file as well:
@@ -264,6 +258,12 @@ the following changes to the declaration of the `name` field in repo.cs:
 public string Name { get; set; }
 ```
 
+To use `[JsonPropertyName]` attribute, you will need to add the <xref:System.Text.Json.Serialization> namespace to the `using` directives:
+
+```csharp
+using System.Text.Json.Serialization;
+```
+
 This change means you need to change the code that writes the name of each repository in program.cs:
 
 ```csharp
@@ -287,7 +287,8 @@ private static async Task<List<Repository>> ProcessRepositories()
 Then, just return the repositories after processing the JSON response:
 
 ```csharp
-var repositories = serializer.ReadObject(await streamTask) as List<Repository>;
+var streamTask = client.GetStreamAsync("https://api.github.com/orgs/dotnet/repos");
+var repositories = await JsonSerializer.DeserializeAsync<List<Repository>>(await streamTask);
 return repositories;
 ```
 
@@ -296,7 +297,7 @@ Then, let's modify the `Main` method so that it captures those results and write
 to the console. Your `Main` method now looks like this:
 
 ```csharp
-public static Task Main(string[] args)
+public static async Task Main(string[] args)
 {
     var repositories = await ProcessRepositories();
 
@@ -315,16 +316,16 @@ Let's start by adding a few more simple types to the `Repository` class definiti
 to that class:
 
 ```csharp
-[JsonPropertyName(Name="description")]
+[JsonPropertyName("description")]
 public string Description { get; set; }
 
-[JsonPropertyName(Name="html_url")]
+[JsonPropertyName("html_url")]
 public Uri GitHubHomeUrl { get; set; }
 
-[JsonPropertyName(Name="homepage")]
+[JsonPropertyName("homepage")]
 public Uri Homepage { get; set; }
 
-[JsonPropertyName(Name="watchers")]
+[JsonPropertyName("watchers")]
 public int Watchers { get; set; }
 ```
 
@@ -360,7 +361,7 @@ class. Attributes can help control that as well. First, define a `public` proper
 string representation of the date and time in your `Repository` class and a `LastPush` `readonly` property that returns a formatted string that represents the returned date:
 
 ```csharp
-[JsonPropertyName(Name="pushed_at")]
+[JsonPropertyName("pushed_at")]
 public string JsonDate { get; set; }
 
 public DateTime LastPush =>
@@ -373,7 +374,7 @@ method parses a string and creates a <xref:System.DateTime> object using a provi
 metadata to the `DateTime` using a `CultureInfo` object. If the parse operation fails, the
 property accessor throws an exception.
 
-To use <xref:System.Globalization.CultureInfo.InvariantCulture>, you will need to add the <xref:System.Globalization> namespace to the `using` statements
+To use <xref:System.Globalization.CultureInfo.InvariantCulture>, you will need to add the <xref:System.Globalization> namespace to the `using` directives
 in `repo.cs`:
 
 ```csharp

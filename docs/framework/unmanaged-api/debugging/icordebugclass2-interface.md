@@ -17,14 +17,14 @@ topic_type:
 ---
 # ICorDebugClass2 Interface
 
-Represents a generic class or a class with a method parameter of type <xref:System.Type>. This interface extends [ICorDebugClass](../../../../docs/framework/unmanaged-api/debugging/icordebugclass-interface.md).  
+Represents a generic class or a class with a method parameter of type <xref:System.Type>. This interface extends [ICorDebugClass](icordebugclass-interface.md).  
   
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetParameterizedType Method](../../../../docs/framework/unmanaged-api/debugging/icordebugclass2-getparameterizedtype-method.md)|Gets the type declaration for this class.|  
-|[SetJMCStatus Method](../../../../docs/framework/unmanaged-api/debugging/icordebugclass2-setjmcstatus-method.md)|For each method of this class, sets a value that indicates whether the method is user-defined code.|  
+|[GetParameterizedType Method](icordebugclass2-getparameterizedtype-method.md)|Gets the type declaration for this class.|  
+|[SetJMCStatus Method](icordebugclass2-setjmcstatus-method.md)|For each method of this class, sets a value that indicates whether the method is user-defined code.|  
   
 ## Remarks  
   
@@ -42,5 +42,5 @@ Represents a generic class or a class with a method parameter of type <xref:Syst
   
 ## See also
 
-- [ICorDebugClass Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugclass-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugClass Interface](icordebugclass-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

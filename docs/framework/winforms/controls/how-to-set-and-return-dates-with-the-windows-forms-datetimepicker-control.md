@@ -1,5 +1,5 @@
 ---
-title: "How to: Set and Return Dates with the Windows Forms DateTimePicker Control"
+title: Set and Return Dates with DateTimePicker Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

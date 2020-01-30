@@ -25,6 +25,6 @@ This topic describes the relationship between the transaction programming models
 ## MSDTC Transactions  
  The Microsoft Distributed Transaction Coordinator (MSDTC) is a transaction manager that provides support for distributed transactions.  
   
- For more information, see the [DTC Programmer's Reference](https://go.microsoft.com/fwlink/?LinkId=94948).  
+ For more information, see the [DTC Programmer's Reference](https://docs.microsoft.com/previous-versions/windows/desktop/ms686108(v=vs.85)).  
   
  In a WCF service or application, MSDTC provides the infrastructure for the coordination of transactions created within a client or service.

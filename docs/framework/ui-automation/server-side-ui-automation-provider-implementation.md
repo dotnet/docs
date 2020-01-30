@@ -14,7 +14,7 @@ ms.assetid: 6acc6d08-bd67-4e2e-915c-9c1d34eb86fe
 
 This section describes how to implement a server-side UI Automation provider for a custom control.
 
-The implementation for Windows Presentation Foundation (WPF) elements and non-WPF elements (such as those designed for [!INCLUDE[TLA#tla_winforms](../../../includes/tlasharptla-winforms-md.md)]) is fundamentally different. WPF elements provide support for [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] through a class derived from <xref:System.Windows.Automation.Peers.AutomationPeer>. Non-WPF elements provide support through implementations of provider interfaces.
+The implementation for Windows Presentation Foundation (WPF) elements and non-WPF elements (such as those designed for Windows Forms) is fundamentally different. WPF elements provide support for [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] through a class derived from <xref:System.Windows.Automation.Peers.AutomationPeer>. Non-WPF elements provide support through implementations of provider interfaces.
 
 <a name="Security_Considerations"></a>
 
@@ -34,7 +34,7 @@ For more information on this topic, please see [UI Automation of a WPF Custom Co
 
 ## Provider Implementation by non-WPF Elements
 
-Custom controls that are not part of the WPF framework, but that are written in managed code (most often these are [!INCLUDE[TLA#tla_winforms](../../../includes/tlasharptla-winforms-md.md)] controls), provide support for [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] by implementing interfaces. Every element must implement at least one of the interfaces listed in the first table in the next section. In addition, if the element supports one or more control patterns, it must implement the appropriate interface for each control pattern.
+Custom controls that are not part of the WPF framework, but that are written in managed code (most often these are Windows Forms controls), provide support for [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] by implementing interfaces. Every element must implement at least one of the interfaces listed in the first table in the next section. In addition, if the element supports one or more control patterns, it must implement the appropriate interface for each control pattern.
 
 Your [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] provider project must reference the following assemblies:
 
@@ -111,7 +111,7 @@ Providers for HWND based controls do not usually need to provide the following p
 > [!NOTE]
 > The <xref:System.Windows.Automation.AutomationElementIdentifiers.RuntimeIdProperty> of a simple element or fragment root hosted in a window is obtained from the window; however, fragment elements below the root (such as list items in a list box) must provide their own identifiers. For more information, see <xref:System.Windows.Automation.Provider.IRawElementProviderFragment.GetRuntimeId%2A>.
 >
-> The <xref:System.Windows.Automation.AutomationElementIdentifiers.IsKeyboardFocusableProperty> should be returned for providers hosted in a [!INCLUDE[TLA#tla_winforms](../../../includes/tlasharptla-winforms-md.md)] control. In this case, the default window provider may be unable to retrieve the correct value.
+> The <xref:System.Windows.Automation.AutomationElementIdentifiers.IsKeyboardFocusableProperty> should be returned for providers hosted in a Windows Forms control. In this case, the default window provider may be unable to retrieve the correct value.
 >
 > The <xref:System.Windows.Automation.AutomationElementIdentifiers.NameProperty> is usually supplied by the host provider. For example, if a custom control is derived from <xref:System.Windows.Forms.Control>, the name is derived from the `Text` property of the control.
 

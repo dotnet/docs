@@ -12,10 +12,10 @@ The Windows Communication Foundation (WCF) support for ASP.NET Asynchronous Java
   
 ## In This Section  
  [Creating WCF Services for ASP.NET AJAX](../../../../docs/framework/wcf/feature-details/creating-wcf-services-for-aspnet-ajax.md)  
- Describes how an WCF service can be exposed to AJAX clients by adding the appropriate AJAX endpoint either through configuration or by using a service host factory customized to generate a service host that configures the AJAX endpoint automatically.  
+ Describes how a WCF service can be exposed to AJAX clients by adding the appropriate AJAX endpoint either through configuration or by using a service host factory customized to generate a service host that configures the AJAX endpoint automatically.  
   
  [Creating WCF AJAX Services without ASP.NET](../../../../docs/framework/wcf/feature-details/creating-wcf-ajax-services-without-aspnet.md)  
- Describes how to create an WCF service without using ASP.NET.  
+ Describes how to create a WCF service without using ASP.NET.  
   
  [Support for JSON and Other Data Transfer Formats](../../../../docs/framework/wcf/feature-details/support-for-json-and-other-data-transfer-formats.md)  
  Describes the support of the JSON format typically used (instead of XML) for messaging with ASP.NET AJAX services.  

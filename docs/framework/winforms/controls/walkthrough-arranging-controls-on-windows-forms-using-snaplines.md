@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Arranging Controls on Windows Forms Using Snaplines"
+title: Arranging Controls Using Snaplines
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "controls [Windows Forms], arranging with snaplines"

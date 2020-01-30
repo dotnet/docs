@@ -1,5 +1,5 @@
 ---
-title: "How to: Change the Windows Forms MonthCalendar Control's Appearance"
+title: Change MonthCalendar Control's Appearance
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

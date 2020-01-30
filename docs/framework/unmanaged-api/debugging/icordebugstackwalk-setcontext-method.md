@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugStackWalk::SetContext Method
-Sets the [ICorDebugStackWalk](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-interface.md) object’s current context to a valid context for the thread.  
+Sets the [ICorDebugStackWalk](icordebugstackwalk-interface.md) object’s current context to a valid context for the thread.  
   
 ## Syntax  
   
@@ -29,7 +29,7 @@ HRESULT SetContext([in] CorDebugSetContextFlag flag,
   
 ## Parameters  
  `flag`  
- [in] A [CorDebugSetContextFlag](../../../../docs/framework/unmanaged-api/debugging/cordebugsetcontextflag-enumeration.md) flag that indicates whether the context is from the active frame on the stack, or a context obtained by unwinding the stack.  
+ [in] A [CorDebugSetContextFlag](cordebugsetcontextflag-enumeration.md) flag that indicates whether the context is from the active frame on the stack, or a context obtained by unwinding the stack.  
   
  `contextSize`  
  [in] The allocated size of the `CONTEXT` buffer.  
@@ -54,7 +54,7 @@ HRESULT SetContext([in] CorDebugSetContextFlag flag,
   
  Setting the current context to an invalid context may cause unpredictable results from the stack walker.  
   
- You can retrieve an exact bitwise copy of this context by immediately calling the [ICorDebugStackWalk::GetContext](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-getcontext-method.md) method.  
+ You can retrieve an exact bitwise copy of this context by immediately calling the [ICorDebugStackWalk::GetContext](icordebugstackwalk-getcontext-method.md) method.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -67,5 +67,5 @@ HRESULT SetContext([in] CorDebugSetContextFlag flag,
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

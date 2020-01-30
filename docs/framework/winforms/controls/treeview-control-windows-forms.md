@@ -1,5 +1,5 @@
 ---
-title: "TreeView Control (Windows Forms)"
+title: "TreeView Control"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "checked list items [Windows Forms], Windows Forms controls"

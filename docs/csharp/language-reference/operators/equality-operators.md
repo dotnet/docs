@@ -26,7 +26,7 @@ The equality operator `==` returns `true` if its operands are equal, `false` oth
 
 ### Value types equality
 
-Operands of the [built-in value types](../keywords/value-types-table.md) are equal if their values are equal:
+Operands of the [built-in value types](../builtin-types/value-types.md#built-in-value-types) are equal if their values are equal:
 
 [!code-csharp-interactive[value types equality](~/samples/csharp/language-reference/operators/EqualityOperators.cs#ValueTypesEquality)]
 

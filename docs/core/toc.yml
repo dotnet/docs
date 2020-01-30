@@ -16,32 +16,36 @@
     href: install/how-to-detect-installed-versions.md
   - name: Linux package managers
     items:
-    - name: RHEL 7
-      href: install/linux-package-manager-rhel7.md
-    - name: RHEL 8.1
-      href: install/linux-package-manager-rhel81.md
-    - name: Ubuntu 16.04
-      href: install/linux-package-manager-ubuntu-1604.md
-    - name: Ubuntu 18.04
-      href: install/linux-package-manager-ubuntu-1804.md
+    - name: Ubuntu 19.10
+      href: install/linux-package-manager-ubuntu-1910.md
     - name: Ubuntu 19.04
       href: install/linux-package-manager-ubuntu-1904.md
-    - name: Debian 9
-      href: install/linux-package-manager-debian9.md
-    - name: Debian 10
-      href: install/linux-package-manager-debian10.md
-    - name: Fedora 29
-      href: install/linux-package-manager-fedora29.md
-    - name: Fedora 30
-      href: install/linux-package-manager-fedora30.md
+    - name: Ubuntu 18.04
+      href: install/linux-package-manager-ubuntu-1804.md
+    - name: Ubuntu 16.04
+      href: install/linux-package-manager-ubuntu-1604.md
     - name: CentOS 7
       href: install/linux-package-manager-centos7.md
+    - name: Debian 10
+      href: install/linux-package-manager-debian10.md
+    - name: Debian 9
+      href: install/linux-package-manager-debian9.md
+    - name: Fedora 31
+      href: install/linux-package-manager-fedora31.md
+    - name: Fedora 30
+      href: install/linux-package-manager-fedora30.md
+    - name: Fedora 29
+      href: install/linux-package-manager-fedora29.md
     - name: OpenSUSE 15
       href: install/linux-package-manager-opensuse15.md
-    - name: SLES 12
-      href: install/linux-package-manager-sles12.md
+    - name: RHEL 8.1
+      href: install/linux-package-manager-rhel81.md
+    - name: RHEL 7
+      href: install/linux-package-manager-rhel7.md
     - name: SLES 15
       href: install/linux-package-manager-sles15.md
+    - name: SLES 12
+      href: install/linux-package-manager-sles12.md
   - name: Install localized IntelliSense
     href: install/localized-intellisense.md
 - name: Get started
@@ -93,7 +97,7 @@
     href: tutorials/using-on-mac-vs.md
   - name: Build a complete .NET Core solution on macOS
     href: tutorials/using-on-mac-vs-full-solution.md
-  - name: Get started with .NET Core using the CLI tools
+  - name: Get started with .NET Core using the CLI
     href: tutorials/cli-create-console-app.md
   - name: Organize and test projects with the .NET Core CLI
     href: tutorials/testing-with-cli.md
@@ -147,11 +151,11 @@
 - name: Application deployment
   href: deploying/index.md
   items:
-  - name: Deploy apps with CLI tools
+  - name: Publish apps with the CLI
     href: deploying/deploy-with-cli.md
   - name: Deploy apps with Visual Studio
     href: deploying/deploy-with-vs.md
-  - name: Create a NuGet package with cross-platform tools
+  - name: Create a NuGet package with the CLI
     href: deploying/creating-nuget-packages.md
   - name: Self-contained deployment runtime roll forward
     href: deploying/runtime-patch-selection.md
@@ -349,7 +353,7 @@
   - name: Organize projects for .NET Core
     href: porting/project-structure.md
   - name: Unavailable technologies
-    href: porting/net-framework-tech-unavailable.md 
+    href: porting/net-framework-tech-unavailable.md
   - name: Tools
     href: porting/tools.md
   - name: Use the Windows Compatibility Pack
@@ -359,7 +363,7 @@
   - name: Port WPF projects
     href: porting/wpf.md
   - name: Port C++/CLI projects
-    href: porting/cpp-cli.md    
+    href: porting/cpp-cli.md
 - name: Dependency loading
   items:
   - name: Overview
@@ -382,10 +386,7 @@
       href: tutorials/creating-app-with-plugin-support.md
     - name: How to use and debug assembly unloadability in .NET Core
       href: ../standard/assembly/unloadability-howto.md
-- name: Build .NET Core from source
-  href: build/index.md
+- name: .NET Core distribution packaging
   items:
-  - name: .NET Core distribution packaging
-    href: build/distribution-packaging.md
-- name: VS 2015/project.json docs
-  href: ../project-json.md
+  - name: Overview
+    href: distribution-packaging.md

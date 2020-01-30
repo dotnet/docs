@@ -57,9 +57,8 @@ Console.WriteLine(doubleType.FullName);
 ## See also
 
 - [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
-- [Value types](value-types.md)
+- [Value types](../builtin-types/value-types.md)
 - [Reference types](reference-types.md)
 - [Default values of C# types](../builtin-types/default-values.md)
 - [dynamic](../builtin-types/reference-types.md#the-dynamic-type)

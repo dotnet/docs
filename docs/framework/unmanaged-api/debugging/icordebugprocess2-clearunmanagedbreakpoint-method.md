@@ -32,7 +32,7 @@ HRESULT ClearUnmanagedBreakpoint (
  [in] A `CORDB_ADDRESS` value that specifies the address at which the breakpoint was set.  
   
 ## Remarks  
- The specified breakpoint would have been previously set by an earlier call to [ICorDebugProcess2::SetUnmanagedBreakpoint](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess2-setunmanagedbreakpoint-method.md).  
+ The specified breakpoint would have been previously set by an earlier call to [ICorDebugProcess2::SetUnmanagedBreakpoint](icordebugprocess2-setunmanagedbreakpoint-method.md).  
   
  The `ClearUnmanagedBreakpoint` method can be called while the process being debugged is running.  
   

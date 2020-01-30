@@ -1,5 +1,5 @@
 ---
-title: "WPF XAML Browser Applications Overview"
+title: "XAML Browser Applications Overview"
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

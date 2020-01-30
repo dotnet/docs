@@ -1,5 +1,5 @@
 ---
-title: "TextBox Control (Windows Forms)"
+title: "TextBox Control"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "text boxes"

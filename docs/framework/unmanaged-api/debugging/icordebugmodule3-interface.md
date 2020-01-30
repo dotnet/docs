@@ -35,7 +35,7 @@ interface ICorDebugModule3 : IUnknown
   
 |Method|Description|  
 |------------|-----------------|  
-|[ICorDebugModule3::CreateReaderForInMemorySymbols Method](../../../../docs/framework/unmanaged-api/debugging/icordebugmodule3-createreaderforinmemorysymbols-method.md)|Creates a symbol reader (typically [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)) for a dynamic module.|  
+|[ICorDebugModule3::CreateReaderForInMemorySymbols Method](icordebugmodule3-createreaderforinmemorysymbols-method.md)|Creates a symbol reader (typically [ISymUnmanagedReader Interface](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md)) for a dynamic module.|  
   
 ## Remarks  
  This interface logically extends the "ICorDebugModule" and "ICorDebugModule2" interfaces.  
@@ -54,7 +54,7 @@ interface ICorDebugModule3 : IUnknown
   
 ## See also
 
-- [ICorDebugRemoteTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremotetarget-interface.md)
-- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
+- [ICorDebugRemoteTarget Interface](icordebugremotetarget-interface.md)
+- [ICorDebug Interface](icordebug-interface.md)
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

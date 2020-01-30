@@ -29,10 +29,10 @@ The following tutorials are available for learning about .NET Core.
 - [Get started with .NET Core on macOS using Visual Studio for Mac](using-on-mac-vs.md)
 - [Building a complete .NET Core solution on macOS using Visual Studio for Mac](using-on-mac-vs-full-solution.md)
 
-## Build applications with the .NET Core CLI tools
+## Build applications with the .NET Core CLI
 
-- [Get started with .NET Core on Windows/Linux/macOS using the .NET Core CLI tools](cli-create-console-app.md)
-- [Organizing and testing projects with the .NET Core CLI tools](testing-with-cli.md)
+- [Get started with .NET Core on Windows/Linux/macOS using the .NET Core CLI](cli-create-console-app.md)
+- [Organizing and testing projects with the .NET Core CLI](testing-with-cli.md)
 - [Get started with F#](../../fsharp/get-started/get-started-command-line.md)
 
 ## Other

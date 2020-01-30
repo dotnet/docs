@@ -7,10 +7,10 @@ ms.assetid: 5dfb299a-b6e2-41b8-8694-e6ac987547f1
 ---
 # XAML-related CLR attributes for custom types and libraries
 
-This topic describes the common language runtime (CLR) attributes that are defined by .NET Framework XAML Services. It also describes other CLR attributes that are defined in the .NET Framework that have a XAML-related scenario for application to assemblies or types. Attributing assemblies, types, or members with these CLR attributes provides XAML type system information related to your types. Information is provided to any XAML consumer that uses .NET Framework XAML Services for processing the XAML node stream directly or through the dedicated XAML readers and XAML writers.  
+This topic describes the common language runtime (CLR) attributes that are defined by .NET XAML Services. It also describes other CLR attributes that are defined in .NET that have a XAML-related scenario for application to assemblies or types. Attributing assemblies, types, or members with these CLR attributes provides XAML type system information related to your types. Information is provided to any XAML consumer that uses .NET XAML Services for processing the XAML node stream directly or through the dedicated XAML readers and XAML writers.  
   
 ## XAML-Related CLR Attributes for Custom Types and Custom Members  
- Using CLR attributes entails that you are using the overall CLR to define your types, otherwise such attributes are not available. If you use the CLR to define type backing, then the default XAML schema context used by .NET  Framework XAML Services XAML writers can read CLR attribution through reflection against backing assemblies.  
+ Using CLR attributes entails that you are using the overall CLR to define your types, otherwise such attributes are not available. If you use the CLR to define type backing, then the default XAML schema context used by .NET XAML Services XAML writers can read CLR attribution through reflection against backing assemblies.  
   
  The following sections describe the XAML-related attributes that you can apply to custom types or custom members. Each CLR attribute communicates information that is relevant to a XAML type system. In the load path, the attributed information either helps the XAML reader form a valid XAML node stream, or it helps the XAML writer produce a valid object graph. In the save path, the attributed information either helps the XAML reader form a valid XAML node stream that reconstitutes XAML type system information; or it declares serialization hints or requirements for the XAML writer or other XAML consumers.  
   
@@ -128,7 +128,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
  A type converter behavior for XAML usage of a custom attachable member can be assigned by applying <xref:System.ComponentModel.TypeConverterAttribute> to the `get` method accessor that supports the XAML usage.  
   
- Similar to <xref:System.ComponentModel.TypeConverter>, <xref:System.ComponentModel.TypeConverterAttribute> existed in the .NET Framework prior to the existence of XAML, and the type converter model served other purposes. In order to reference and use <xref:System.ComponentModel.TypeConverterAttribute>, you must fully qualify it or provide a `using` statement for <xref:System.ComponentModel>. Also include the System assembly in your project.  
+ Similar to <xref:System.ComponentModel.TypeConverter>, <xref:System.ComponentModel.TypeConverterAttribute> existed in .NET prior to the existence of XAML, and the type converter model served other purposes. In order to reference and use <xref:System.ComponentModel.TypeConverterAttribute>, you must fully qualify it or provide a `using` statement for <xref:System.ComponentModel>. Also include the System assembly in your project.  
   
 ### UidPropertyAttribute  
  **Reference Documentation:**  <xref:System.Windows.Markup.UidPropertyAttribute>  
@@ -207,7 +207,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
  The definition inherits to all derived types that are assignable to the defining type. You can override the definition on a specific derived type by applying <xref:System.Windows.Markup.XmlLangPropertyAttribute> on the specific derived type, although that is an uncommon scenario.  
   
 ## XAML-Related CLR Attributes at the Assembly Level  
- The following sections describe the XAML-related attributes that are not applied to types or member definitions, but are instead applied to assemblies. These attributes are pertinent to the overall goal of defining a library that contains custom types to use in XAML. Some of the attributes do not necessarily influence the XAML node stream directly, but are passed on in the node stream for other consumers to use. Consumers for the information include design environments or serialization processes that need XAML namespace information and associated prefix information. A XAML schema context (including the .NET Framework XAML Services default) also uses this information.  
+ The following sections describe the XAML-related attributes that are not applied to types or member definitions, but are instead applied to assemblies. These attributes are pertinent to the overall goal of defining a library that contains custom types to use in XAML. Some of the attributes do not necessarily influence the XAML node stream directly, but are passed on in the node stream for other consumers to use. Consumers for the information include design environments or serialization processes that need XAML namespace information and associated prefix information. A XAML schema context (including the .NET XAML Services default) also uses this information.  
   
 ### XmlnsCompatibleWithAttribute  
  **Reference Documentation:**  <xref:System.Windows.Markup.XmlnsCompatibleWithAttribute>  
@@ -250,7 +250,7 @@ This topic describes the common language runtime (CLR) attributes that are defin
   
 - A string that specifies a recommended prefix.  
   
- <xref:System.Windows.Markup.XmlnsDefinitionAttribute> specifies a recommended prefix to use for a XAML namespace. The prefix is useful when writing elements and attributes in a XAML file that is serialized by the .NET Framework XAML Services <xref:System.Xaml.XamlXmlWriter>, or when a XAML-implementing library interacts with a design environment that has XAML editing features.  
+ <xref:System.Windows.Markup.XmlnsDefinitionAttribute> specifies a recommended prefix to use for a XAML namespace. The prefix is useful when writing elements and attributes in a XAML file that is serialized by .NET XAML Services <xref:System.Xaml.XamlXmlWriter>, or when a XAML-implementing library interacts with a design environment that has XAML editing features.  
   
  More than one <xref:System.Windows.Markup.XmlnsPrefixAttribute> can be applied to an assembly. This might be done for any combination of the following reasons:  
   
@@ -261,9 +261,9 @@ This topic describes the common language runtime (CLR) attributes that are defin
 - You define XAML language support in the assembly and have a <xref:System.Windows.Markup.XmlnsDefinitionAttribute> for `http://schemas.microsoft.com/winfx/2006/xaml`. In this case, you typically should promote the prefix `x`.  
   
 > [!NOTE]
-> .NET Framework XAML Services also defines the XAML-related attribute <xref:System.Windows.Markup.RootNamespaceAttribute>. This attribute is an assembly-level attribute for project system support, and it is not relevant for XAML custom types.  
+> .NET XAML Services also defines the XAML-related attribute <xref:System.Windows.Markup.RootNamespaceAttribute>. This attribute is an assembly-level attribute for project system support, and it is not relevant for XAML custom types.  
   
 ## See also
 
 - <xref:System.Attribute>
-- [Defining Custom Types for Use with .NET Framework XAML Services](define-custom-types.md)
+- [Defining Custom Types for Use with .NET XAML Services](define-custom-types.md)

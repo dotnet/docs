@@ -58,20 +58,6 @@ If a version *is* specified, it's treated as the *minimum* version of ASP.NET Co
 
 ## Additions
 
-### Sdk attribute
-
-The root `<Project>` element of the *.csproj* file has a new attribute called `Sdk`. `Sdk` specifies which SDK will be used by the project. The SDK, as the [layering document](cli-msbuild-architecture.md) describes, is a set of MSBuild [tasks](/visualstudio/msbuild/msbuild-tasks) and [targets](/visualstudio/msbuild/msbuild-targets) that can build .NET Core code. The following SDKs are available for .NET Core:
-
-| Description | ID | Introduced version |
-| - | - | - |
-| The .NET Core SDK | `Microsoft.NET.Sdk` |
-| The .NET Core web SDK | `Microsoft.NET.Sdk.Web` |
-| The .NET Core Razor Class Library SDK | `Microsoft.NET.Sdk.Razor` |
-| The .NET Core Worker Service SDK | `Microsoft.NET.Sdk.Worker` | .NET Core 3.0 |
-| The .NET Core WinForms and WPF SDK | `Microsoft.NET.Sdk.WindowsDesktop` | .NET Core 3.0 |
-
-To use the .NET Core tools and build your code, set the `Sdk` attribute on the `<Project>` element to one of these IDs.
-
 ### PackageReference
 
 A `<PackageReference>` item element specifies a [NuGet dependency in the project](/nuget/consume-packages/package-references-in-project-files). The `Include` attribute specifies the package ID.

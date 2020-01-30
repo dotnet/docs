@@ -1,5 +1,6 @@
 ---
 title: .NET Core CLI
+titleSuffix: ""
 description: An overview of the .NET Core CLI and its features.
 ms.date: 08/14/2017
 ---

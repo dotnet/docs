@@ -52,14 +52,14 @@ Multiple frameworks have been built on top of .NET Core:
 
 - The [.NET Core runtime](https://github.com/dotnet/runtime/tree/master/src/coreclr), which provides a type system, assembly loading, a garbage collector, native interop, and other basic services. [.NET Core framework libraries](https://github.com/dotnet/runtime/tree/master/src/libraries) provide primitive data types, app composition types, and fundamental utilities.
 - The [ASP.NET Core runtime](https://github.com/dotnet/aspnetcore), which provides a framework for building modern cloud-based internet connected applications, such as web apps, IoT apps, and mobile backends.
-- The [.NET Core CLI tools](https://github.com/dotnet/sdk) and language compilers ([Roslyn](https://github.com/dotnet/roslyn) and [F#](https://github.com/microsoft/visualfsharp)) that enable the .NET Core developer experience.
-- The [dotnet tool](https://github.com/dotnet/core-setup), which is used to launch .NET Core apps and CLI tools. It selects the runtime and hosts the runtime, provides an assembly loading policy, and launches apps and tools.
+- The [.NET Core SDK](https://github.com/dotnet/sdk) and language compilers ([Roslyn](https://github.com/dotnet/roslyn) and [F#](https://github.com/microsoft/visualfsharp)) that enable the .NET Core developer experience.
+- The [dotnet command](./tools/dotnet.md), which is used to launch .NET Core apps and CLI commands. It selects the runtime and hosts the runtime, provides an assembly loading policy, and launches apps and tools.
 
 These components are distributed in the following ways:
 
 - [.NET Core Runtime](https://dotnet.microsoft.com/download) -- includes the .NET Core runtime and framework libraries.
 - [ASP.NET Core Runtime](https://dotnet.microsoft.com/download) -- includes ASP.NET Core and .NET Core runtime and framework libraries.
-- [.NET Core SDK](https://dotnet.microsoft.com/download) -- includes the .NET CLI Tools, ASP.NET Core runtime, and .NET Core runtime and framework.
+- [.NET Core SDK](https://dotnet.microsoft.com/download) -- includes the .NET Core CLI, ASP.NET Core runtime, and .NET Core runtime and framework.
 
 ### Open source
 

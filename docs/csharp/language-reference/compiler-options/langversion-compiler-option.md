@@ -21,8 +21,9 @@ Causes the compiler to accept only syntax that is included in the chosen C# lang
 
 ## Arguments
 
- `option`  
- The following values are valid:
+`option`
+
+The following values are valid:
 
 |Option|Meaning|
 |------------|-------------|
@@ -46,12 +47,12 @@ The default language version depends on the target framework for your applicatio
 ## Remarks
 
 Metadata referenced by your C# application is not subject to **-langversion** compiler option.
-  
+
 Because each version of the C# compiler contains extensions to the language specification, **-langversion** does not give you the equivalent functionality of an earlier version of the compiler.
 
 Additionally, while C# version updates generally coincide with major .NET Framework releases, the new syntax and features are not necessarily tied to that specific framework version. While the new features definitely require a new compiler update that is also released alongside the C# revision, each specific feature has its own minimum .NET API or common language runtime requirements that may allow it to run on downlevel frameworks by including NuGet packages or other libraries.
 
-Regardless of which **-langversion** setting you use, you will use the current version of the common language runtime to create your .exe or .dll. One exception is friend assemblies and [-moduleassemblyname (C# Compiler Option)](./moduleassemblyname-compiler-option.md), which work under **-langversion:ISO-1**.  
+Regardless of which **-langversion** setting you use, use the current version of the common language runtime to create your .exe or .dll. One exception is friend assemblies and [-moduleassemblyname (C# Compiler Option)](./moduleassemblyname-compiler-option.md), which work under **-langversion:ISO-1**.
 
 For other ways to specify the C# language version, see the [Select the C# language version](../configure-language-version.md) article.
 

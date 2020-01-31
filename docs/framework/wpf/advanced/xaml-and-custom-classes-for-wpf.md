@@ -1,5 +1,5 @@
 ---
-title: "XAML and Custom Classes for WPF"
+title: XAML and custom classes
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "custom classes in XAML [WPF]"

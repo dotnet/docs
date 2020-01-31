@@ -1,5 +1,5 @@
 ---
-title: "MenuStrip Control (Windows Forms)"
+title: "MenuStrip Control"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "MenuStrip control [Windows Forms]"

@@ -113,7 +113,7 @@ If you want your users to start your app directly and avoid the `dotnet file.dll
 
 ## See also
 
-- [Deploying .NET Core Apps with CLI Tools.](deploy-with-cli.md)
+- [Deploying .NET Core Apps with .NET Core CLI.](deploy-with-cli.md)
 - [Deploying .NET Core Apps with Visual Studio.](deploy-with-vs.md)
 - [Packages, Metapackages, and Frameworks.](../packages.md)
 - [.NET Core Runtime IDentifier (RID) catalog.](../rid-catalog.md)

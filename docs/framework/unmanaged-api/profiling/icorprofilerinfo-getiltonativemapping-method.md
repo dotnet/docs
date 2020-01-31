@@ -61,7 +61,7 @@ HRESULT GetILToNativeMapping(
   
 ## See also
 
-- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
-- [GetILToNativeMapping2 Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-getiltonativemapping2-method.md)
-- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
-- [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)
+- [ICorProfilerInfo Interface](icorprofilerinfo-interface.md)
+- [GetILToNativeMapping2 Method](icorprofilerinfo4-getiltonativemapping2-method.md)
+- [Profiling Interfaces](profiling-interfaces.md)
+- [Profiling](index.md)

@@ -1,5 +1,5 @@
 ---
-title: "How to: Create Event Handlers at Run Time for Windows Forms"
+title: "How to: Create Event Handlers at Run Time"
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

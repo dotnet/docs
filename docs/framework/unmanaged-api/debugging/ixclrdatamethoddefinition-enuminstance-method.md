@@ -52,7 +52,7 @@ The provided method is part of the `IXCLRDataMethodDefinition` interface and cor
 
 ## See also
 
-- [CLRDataSourceType Enumeration](../../../../docs/framework/unmanaged-api/debugging/clrdatasourcetype-enumeration.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-- [IXCLRDataMethodDefinition Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethoddefinition-interface.md)
-- [IXCLRDataMethodInstance Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethodinstance-interface.md)
+- [CLRDataSourceType Enumeration](clrdatasourcetype-enumeration.md)
+- [Debugging](index.md)
+- [IXCLRDataMethodDefinition Interface](ixclrdatamethoddefinition-interface.md)
+- [IXCLRDataMethodInstance Interface](ixclrdatamethodinstance-interface.md)

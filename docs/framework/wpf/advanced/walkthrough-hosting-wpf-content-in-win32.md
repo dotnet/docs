@@ -1,5 +1,6 @@
 ---
-title: "Walkthrough: Hosting WPF Content in Win32"
+title: Host WPF content in Win32
+titleSuffix: ""
 ms.date: "03/30/2017"
 dev_langs:
   - "cpp"

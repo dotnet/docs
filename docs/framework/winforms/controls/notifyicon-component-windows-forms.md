@@ -1,5 +1,5 @@
 ---
-title: "NotifyIcon Component (Windows Forms)"
+title: "NotifyIcon Component"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "application icons [Windows Forms], background processes"

@@ -1,5 +1,5 @@
 ---
-title: "Networking in Windows Forms Applications"
+title: Networking
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "networking [Windows Forms], Windows Forms"

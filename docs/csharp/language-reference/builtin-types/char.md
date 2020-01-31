@@ -52,3 +52,4 @@ For more information, see the [Integral types](~/_csharplang/spec/types.md#integ
 - [C# reference](../index.md)
 - [Built-in types table](../keywords/built-in-types-table.md)
 - [Strings](../../programming-guide/strings/index.md)
+- <xref:System.Text.Rune?displayProperty=nameWithType>

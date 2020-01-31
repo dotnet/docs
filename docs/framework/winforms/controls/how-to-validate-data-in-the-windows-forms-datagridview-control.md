@@ -1,5 +1,5 @@
 ---
-title: "How to: Validate Data in the Windows Forms DataGridView Control"
+title: Validate Data in DataGridView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

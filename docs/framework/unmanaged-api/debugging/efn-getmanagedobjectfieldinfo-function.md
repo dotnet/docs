@@ -60,4 +60,4 @@ HRESULT _EFN_GetManagedObjectFieldInfo(
   
 ## See also
 
-- [Debugging Global Static Functions](../../../../docs/framework/unmanaged-api/debugging/debugging-global-static-functions.md)
+- [Debugging Global Static Functions](debugging-global-static-functions.md)

@@ -1,0 +1,43 @@
+#! /usr/bin/env bash
+
+# This script is a helper for generating a new, templated doc entry.
+# It can be invoked like: `./new-message <4-digit error number> "title of new error page"`
+# It ensures some title, date, and SEO keywords are in place for the new file.
+
+set +eux
+
+function usage () {
+    echo "usage: new-message <####> <title>"
+    exit 1;
+}
+
+[[ -z $1 || $# -gt 2 ]] && usage
+
+message_number="FS$1"
+message_title=$2
+year=$(date "+%Y")
+month=$(date "+%m")
+day=$(date "+%d")
+file_name="fs$1.md"
+
+echo "Writing new migration to ${file_name}"
+
+cat >"${file_name}" <<EOF
+---
+title: "Compiler error $message_number"
+ms.date: $month/$day/$year
+f1_keywords:
+  - "$message_number"
+helpviewer_keywords:
+  - "$message_number"
+---
+
+# $message_number: $message_title
+EOF
+
+echo "Writing TOC entry"
+
+cat >>toc.yml <<EOF
+  - name: $message_number - $message_title
+    href: ./$file_name
+EOF

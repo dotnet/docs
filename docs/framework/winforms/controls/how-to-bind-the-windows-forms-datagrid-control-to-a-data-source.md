@@ -1,5 +1,5 @@
 ---
-title: "How to: Bind the Windows Forms DataGrid Control to a Data Source"
+title: Bind DataGrid Control to a Data Source
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

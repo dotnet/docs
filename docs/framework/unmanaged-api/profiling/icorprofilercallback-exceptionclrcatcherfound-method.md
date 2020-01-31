@@ -36,5 +36,5 @@ HRESULT ExceptionCLRCatcherFound();
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
-- [ExceptionCLRCatcherExecute Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-exceptionclrcatcherexecute-method.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [ExceptionCLRCatcherExecute Method](icorprofilercallback-exceptionclrcatcherexecute-method.md)

@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Basic Windows Forms ToolStrip with Standard Items Using the Designer"
+title: Create a Basic ToolStrip with Standard Items Using the Designer
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "ToolStrip control [Windows Forms], creating"

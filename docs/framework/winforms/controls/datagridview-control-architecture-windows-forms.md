@@ -1,5 +1,5 @@
 ---
-title: "DataGridView Control Architecture (Windows Forms)"
+title: "DataGridView Control Architecture"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], architecture"

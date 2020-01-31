@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorPublishEnum::Clone Method
-Creates a copy of this [ICorPublishEnum](../../../../docs/framework/unmanaged-api/debugging/icorpublishenum-interface.md) object.  
+Creates a copy of this [ICorPublishEnum](icorpublishenum-interface.md) object.  
   
 ## Syntax  
   
@@ -42,4 +42,4 @@ HRESULT Clone (
   
 ## See also
 
-- [ICorPublishEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishenum-interface.md)
+- [ICorPublishEnum Interface](icorpublishenum-interface.md)

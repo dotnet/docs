@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugThread3::GetActiveInternalFrames Method
-Returns an array of internal frames ([ICorDebugInternalFrame2](../../../../docs/framework/unmanaged-api/debugging/icordebuginternalframe2-interface.md) objects) on the stack.  
+Returns an array of internal frames ([ICorDebugInternalFrame2](icordebuginternalframe2-interface.md) objects) on the stack.  
   
 ## Syntax  
   
@@ -46,7 +46,7 @@ HRESULT GetActiveInternalFrames
   
 |HRESULT|Description|  
 |-------------|-----------------|  
-|S_OK|The [ICorDebugInternalFrame2](../../../../docs/framework/unmanaged-api/debugging/icordebuginternalframe2-interface.md) object was successfully created.|  
+|S_OK|The [ICorDebugInternalFrame2](icordebuginternalframe2-interface.md) object was successfully created.|  
 |E_INVALIDARG|`cInternalFrames` is not zero and `ppInternalFrames` is `null`, or `pcInternalFrames` is `null`.|  
 |HRESULT_FROM_WIN32(ERROR_INSUFFICIENT_BUFFER)|`ppInternalFrames` is smaller than the count of internal frames.|  
   
@@ -59,7 +59,7 @@ HRESULT GetActiveInternalFrames
   
  `GetActiveInternalFrames` should then be called a second time. You should pass the proper count (`pcInternalFrames`) in the `cInternalFrames` parameter, and specify a pointer to an appropriately sized array in `ppInternalFrames`.  
   
- Use the [ICorDebugStackWalk::GetFrame](../../../../docs/framework/unmanaged-api/debugging/icordebugthread3-getactiveinternalframes-method.md) method to return actual stack frames.  
+ Use the [ICorDebugStackWalk::GetFrame](icordebugthread3-getactiveinternalframes-method.md) method to return actual stack frames.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -72,5 +72,5 @@ HRESULT GetActiveInternalFrames
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

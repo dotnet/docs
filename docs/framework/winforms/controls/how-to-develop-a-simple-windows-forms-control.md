@@ -1,5 +1,5 @@
 ---
-title: "How to: Develop a Simple Windows Forms Control"
+title: Develop a Simple Control
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

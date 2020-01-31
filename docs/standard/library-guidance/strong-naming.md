@@ -39,26 +39,26 @@ You should strong name your open-source .NET libraries. Strong naming an assembl
 > [!NOTE]
 > This guidance is specific to publicly distributed .NET libraries, such as .NET libraries published on NuGet.org. Strong naming is not required by most .NET applications and should not be done by default.
 
-**✔️ CONSIDER** strong naming your library's assemblies.
+✔️ CONSIDER strong naming your library's assemblies.
 
-**✔️ CONSIDER** adding the strong naming key to your source control system.
+✔️ CONSIDER adding the strong naming key to your source control system.
 
 > A publicly available key lets developers modify and recompile your library source code with the same key.
-> 
+>
 > You shouldn't make the strong naming key public if it has been used in the past to give special permissions in [partial-trust scenarios](../../framework/misc/using-libraries-from-partially-trusted-code.md). Otherwise, you might compromise existing environments.
 
 > [!IMPORTANT]
 > When the identity of the publisher of the code is desired, [Authenticode](/windows-hardware/drivers/install/authenticode) and [NuGet Package Signing](/nuget/create-packages/sign-a-package) are recommended. Code Access Security (CAS) should not be used as a security mitigation.
 
-**✔️ CONSIDER** incrementing the assembly version on only major version changes to help users reduce binding redirects, and how often they're updated.
+✔️ CONSIDER incrementing the assembly version on only major version changes to help users reduce binding redirects, and how often they're updated.
 
 > Read more about [versioning and the assembly version](./versioning.md#assembly-version).
 
-**❌ DO NOT** add, remove, or change the strong naming key.
+❌ DO NOT add, remove, or change the strong naming key.
 
 > Modifying an assembly's strong naming key changes the assembly's identity and breaks compiled code that uses it. For more information, see [binary breaking changes](./breaking-changes.md#binary-breaking-change).
 
-**❌ DO NOT** publish strong-named and non-strong-named versions of your library. For example, `Contoso.Api` and `Contoso.Api.StrongNamed`.
+❌ DO NOT publish strong-named and non-strong-named versions of your library. For example, `Contoso.Api` and `Contoso.Api.StrongNamed`.
 
 > Publishing two packages forks your developer eco-system. Also, if an application ends up depending on both packages the developer can encounter type name conflicts. As far as .NET is concerned they are different types in different assemblies.
 

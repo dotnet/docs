@@ -35,13 +35,13 @@ HRESULT GetTypeFields(
  [in] The identifier of the type whose field information is retrieved.  
   
  `celt`  
- [in] The number of [COR_FIELD](../../../../docs/framework/unmanaged-api/debugging/cor-field-structure.md) objects whose field information is to be retrieved.  
+ [in] The number of [COR_FIELD](cor-field-structure.md) objects whose field information is to be retrieved.  
   
  `fields`  
- [out] An array of [COR_FIELD](../../../../docs/framework/unmanaged-api/debugging/cor-field-structure.md) objects that provide information about the fields that belong to the type.  
+ [out] An array of [COR_FIELD](cor-field-structure.md) objects that provide information about the fields that belong to the type.  
   
  `pceltNeeded`  
- [out] A pointer to the number of [COR_FIELD](../../../../docs/framework/unmanaged-api/debugging/cor-field-structure.md) objects included in `fields`.  
+ [out] A pointer to the number of [COR_FIELD](cor-field-structure.md) objects included in `fields`.  
   
 ## Remarks  
  The `celt` parameter, which specifies the number of fields whose field information the method uses to populate `fields`, should correspond to the value of the `COR_TYPE_LAYOUT::numFields` field.  
@@ -57,5 +57,5 @@ HRESULT GetTypeFields(
   
 ## See also
 
-- [ICorDebugProcess5 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess5-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugProcess5 Interface](icordebugprocess5-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

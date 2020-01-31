@@ -12,7 +12,7 @@ This sample demonstrates how to perform poison message handling in a service. Th
 
  Based on the version of MSMQ, the NetMsmqBinding supports limited detection to full detection of poison messages. After the message has been detected as poisoned, then it can be handled in several ways. Again, based on the version of MSMQ, the NetMsmqBinding supports limited handling to full handling of poison messages.
 
- This sample illustrates the limited poison facilities provided on Windows Server 2003 and [!INCLUDE[wxp](../../../../includes/wxp-md.md)] platform and the full poison facilities provided on Windows Vista. In both samples, the objective is move the poison message out of the queue to another queue which then can be serviced by a poison message service.
+ This sample illustrates the limited poison facilities provided on Windows Server 2003 and Windows XP platform and the full poison facilities provided on Windows Vista. In both samples, the objective is move the poison message out of the queue to another queue which then can be serviced by a poison message service.
 
 ## MSMQ v4.0 Poison Handling Sample
  In Windows Vista, MSMQ provides a poison sub-queue facility that can be used to store poison messages. This sample demonstrates the best practice of dealing with poison messages using Windows Vista.

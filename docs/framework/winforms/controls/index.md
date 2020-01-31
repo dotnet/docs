@@ -1,5 +1,5 @@
 ---
-title: "Windows Forms Controls"
+title: Controls
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Windows Forms controls"

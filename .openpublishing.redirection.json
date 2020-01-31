@@ -9,6 +9,18 @@
       "redirect_url": "/dotnet/standard/components"
     },
     {
+      "source_path": "docs/architecture/cloud-native/azure-data-storage.md",
+      "redirect_url": "/dotnet/architecture/cloud-native/relational-vs-nosql-data"
+    },
+    {
+      "source_path": "docs/architecture/cloud-native/data-patterns.md",
+      "redirect_url": "/dotnet/architecture/cloud-native/database-per-microservice"
+    },
+    {
+      "source_path": "docs/architecture/cloud-native/distributed-data.md",
+      "redirect_url": "/dotnet/architecture/cloud-native/database-per-microservice"
+    },    
+    {
       "source_path": "docs/architecture/microservices/architect-microservice-container-applications/communication-between-microservices.md",
       "redirect_url": "/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture",
       "redirect_document_id": true
@@ -90,6 +102,11 @@
       "redirect_url": "/dotnet/core/deploying/index"
     },
     {
+      "source_path": "docs/core/build/distribution-packaging.md",
+      "redirect_url": "/dotnet/core/distribution-packaging",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "docs/core/compatibility/3.0.6-3.0.7.md",
       "redirect_url": "/dotnet/core/compatibility/2.2-3.0"
     },
@@ -107,7 +124,7 @@
     },
     {
       "source_path": "docs/core/compatibility/framework-core.md",
-      "redirect_url": "/dotnet/core/porting/winforms-breaking-changes"
+      "redirect_url": "/dotnet/core/compatibility/fx-core"
     },
     {
       "source_path": "docs/core/deploying/applications.md",
@@ -157,6 +174,10 @@
     {
       "source_path": "docs/core/porting/nuget-packages.md",
       "redirect_url": "/dotnet/core/packages"
+    },
+    {
+      "source_path": "docs/core/porting/winforms-breaking-changes.md",
+      "redirect_url": "/dotnet/core/compatibility/fx-core"
     },
     {
       "source_path": "docs/core/porting/wpf.md",
@@ -581,6 +602,10 @@
       "redirect_url": "/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types"
     },
     {
+      "source_path": "docs/csharp/language-reference/keywords/default-values-table.md",
+      "redirect_url": "/dotnet/csharp/language-reference/builtin-types/default-values"
+    },
+    {
       "source_path": "docs/csharp/language-reference/keywords/delegate.md",
       "redirect_url": "/dotnet/csharp/language-reference/builtin-types/reference-types"
     },
@@ -763,6 +788,14 @@
     {
       "source_path": "docs/csharp/language-reference/keywords/ulong.md",
       "redirect_url": "/dotnet/csharp/language-reference/builtin-types/integral-numeric-types"
+    },
+    {
+      "source_path": "docs/csharp/language-reference/keywords/value-types.md",
+      "redirect_url": "/dotnet/csharp/language-reference/builtin-types/value-types"
+    },
+    {
+      "source_path": "docs/csharp/language-reference/keywords/value-types-table.md",
+      "redirect_url": "/dotnet/csharp/language-reference/builtin-types/value-types"
     },
     {
       "source_path": "docs/csharp/language-reference/language-specification/index.md",
@@ -2126,6 +2159,10 @@
       "redirect_url": "/dotnet/framework/unmanaged-api/profiling/cor-prf-monitor-enumeration"
     },
     {
+      "source_path": "docs/framework/ui-automation/ui-automation-specification-and-community-promise.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb986605(v=vs.100)"
+    },
+    {
       "source_path": "docs/framework/wcf/wcf-system-requirements.md",
       "redirect_url": "/dotnet/framework/get-started/system-requirements"
     },
@@ -2737,6 +2774,10 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "docs/framework/wpf/app-development/how-to-determine-the-installed-version-of-wpf.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa349641(v=vs.90)"
+    },
+    {
       "source_path": "docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md",
       "redirect_url": "/dotnet/desktop-wpf/themes/how-to-create-apply-template"
     },
@@ -3326,6 +3367,14 @@
     {
       "source_path": "docs/standard/base-types/grouping.md",
       "redirect_url": "/dotnet/standard/base-types/grouping-constructs-in-regular-expressions"
+    },
+    {
+      "source_path": "docs/standard/base-types/how-to-convert-numeric-user-input-in-web-controls-to-numbers.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb762964(v=vs.100)"
+    },
+    {
+      "source_path": "docs/standard/base-types/how-to-display-localized-date-and-time-information-to-web-users.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb882561(v=vs.100)"
     },
     {
       "source_path": "docs/standard/base-types/miscellaneous.md",

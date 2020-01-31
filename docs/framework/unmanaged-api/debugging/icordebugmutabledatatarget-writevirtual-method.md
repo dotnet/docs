@@ -42,5 +42,5 @@ HRESULT WriteVirtual(
   
 ## See also
 
-- [ICorDebugMutableDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmutabledatatarget-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugMutableDataTarget Interface](icordebugmutabledatatarget-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

@@ -27,13 +27,16 @@ HRESULT ClassLoadFinished(
     [in] HRESULT hrStatus);  
 ```  
   
-## Parameters  
- `classId`  
- [in] Identifies the class that was loaded.  
-  
- `hrStatus`  
- [in] An HRESULT that indicates whether the class loaded successfully.  
-  
+## Parameters
+
+- `classId`
+
+  \[in] Identifies the class that was loaded.
+
+- `hrStatus`
+
+  \[in] An HRESULT that indicates whether the class loaded successfully.
+
 ## Remarks  
  The value of `classId` is not valid for an information request until the `ClassLoadFinished` method is called.  
   
@@ -50,5 +53,5 @@ HRESULT ClassLoadFinished(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
-- [ClassLoadStarted Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-classloadstarted-method.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [ClassLoadStarted Method](icorprofilercallback-classloadstarted-method.md)

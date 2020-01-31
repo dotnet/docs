@@ -1,5 +1,5 @@
 ---
-title: "More Secure File and Data Access in Windows Forms"
+title: "More Secure File and Data Access"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

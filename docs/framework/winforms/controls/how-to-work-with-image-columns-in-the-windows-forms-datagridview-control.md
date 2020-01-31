@@ -1,5 +1,5 @@
 ---
-title: "How to: Work with Image Columns in the Windows Forms DataGridView Control"
+title: Work with Image Columns in DataGridView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

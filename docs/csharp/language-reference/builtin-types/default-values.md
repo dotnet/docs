@@ -1,25 +1,25 @@
 ---
-title: "Default values table - C# reference"
-description: Learn what are the default values of C# types.
+title: "Default values of C# types - C# reference"
+description: "Learn the default values of C# types such as bool, char, int, float, double and more."
 ms.date: 12/18/2019
 helpviewer_keywords: 
   - "default [C#]"
   - "parameterless constructor [C#]"
 ---
-# Default values table (C# reference)
+# Default values of C# types (C# reference)
 
 The following table shows the default values of C# types:
 
 |Type|Default value|
 |---------|------------------|
 |Any reference type|`null`|
-|Any [built-in integral numeric type](../builtin-types/integral-numeric-types.md)|0 (zero)|
-|Any [built-in floating-point numeric type](../builtin-types/floating-point-numeric-types.md)|0 (zero)|
-|[bool](../builtin-types/bool.md)|`false`|
-|[char](../builtin-types/char.md)|`'\0'` (U+0000)|
-|[enum](../builtin-types/enum.md)|The value produced by the expression `(E)0`, where `E` is the enum identifier.|
-|[struct](struct.md)|The value produced by setting all value-type fields to their default values and all reference-type fields to `null`.|
-|Any [nullable value type](../builtin-types/nullable-value-types.md)|An instance for which the <xref:System.Nullable%601.HasValue%2A> property is `false` and the <xref:System.Nullable%601.Value%2A> property is undefined. That default value is also known as the *null* value of a nullable value type.|
+|Any [built-in integral numeric type](integral-numeric-types.md)|0 (zero)|
+|Any [built-in floating-point numeric type](floating-point-numeric-types.md)|0 (zero)|
+|[bool](bool.md)|`false`|
+|[char](char.md)|`'\0'` (U+0000)|
+|[enum](enum.md)|The value produced by the expression `(E)0`, where `E` is the enum identifier.|
+|[struct](../keywords/struct.md)|The value produced by setting all value-type fields to their default values and all reference-type fields to `null`.|
+|Any [nullable value type](nullable-value-types.md)|An instance for which the <xref:System.Nullable%601.HasValue%2A> property is `false` and the <xref:System.Nullable%601.Value%2A> property is undefined. That default value is also known as the *null* value of a nullable value type.|
 
 Use the [default operator](../operators/default.md) to produce the default value of a type, as the following example shows:
 
@@ -52,6 +52,4 @@ For more information, see the following sections of the [C# language specificati
 ## See also
 
 - [C# reference](../index.md)
-- [C# keywords](index.md)
-- [Built-in types table](built-in-types-table.md)
 - [Constructors](../../programming-guide/classes-and-structs/constructors.md)

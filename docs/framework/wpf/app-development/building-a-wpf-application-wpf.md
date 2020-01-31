@@ -1,5 +1,5 @@
 ---
-title: "Building a WPF Application (WPF)"
+title: "Compile an app"
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "WPF application [WPF], building"
 ms.assetid: a58696fd-bdad-4b55-9759-136dfdf8b91c
 ---
-# Building a WPF Application (WPF)
+# Compile a WPF Application
 
 Windows Presentation Foundation (WPF) applications can be built as .NET Framework executables (.exe), libraries (.dll), or a combination of both types of assemblies. This topic introduces how to build WPF applications and describes the key steps in the build process.
 

@@ -26,10 +26,12 @@ HRESULT AssemblyUnloadStarted(
     [in] AssemblyID assemblyId);  
 ```  
   
-## Parameters  
- `assemblyId`  
- [in] Identifies the assembly that is being unloaded.  
-  
+## Parameters
+
+- `assemblyId`
+
+  \[in] Identifies the assembly that is being unloaded.
+
 ## Remarks  
  The value of `assemblyId` is not valid for an information request after the `AssemblyUnloadStarted` method returns — this is the profiler's last chance to get information about this assembly.  
   
@@ -44,5 +46,5 @@ HRESULT AssemblyUnloadStarted(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
-- [AssemblyUnloadFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-assemblyunloadfinished-method.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [AssemblyUnloadFinished Method](icorprofilercallback-assemblyunloadfinished-method.md)

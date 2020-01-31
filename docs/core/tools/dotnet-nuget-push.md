@@ -6,7 +6,7 @@ ms.date: 12/04/2019
 ---
 # dotnet nuget push
 
-**This topic applies to: ✓** .NET Core 1.x SDK and later versions
+**This article applies to:** ✔️ .NET Core 1.x SDK and later versions
 
 <!-- todo: uncomment when all CLI commands are reviewed
 [!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
@@ -71,7 +71,7 @@ The `dotnet nuget push` command pushes a package to the server and publishes it.
 * **`--skip-duplicate`**
 
   When pushing multiple packages to an HTTP(S) server, treats any 409 Conflict response as a warning so that the push can continue. Available since .NET Core 3.1 SDK.
-                                 
+
 * **`-sk|--symbol-api-key <API_KEY>`**
 
   The API key for the symbol server.
@@ -92,7 +92,13 @@ The `dotnet nuget push` command pushes a package to the server and publishes it.
   dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a
   ```
 
-* Push *foo.nupkg* to the custom push source `https://customsource`, specifying an API key:
+* Push *foo.nupkg* to the official NuGet server, specifying an API key:
+
+  ```dotnetcli
+  dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -s https://api.nuget.org/v3/index.json
+  ```
+  
+  * Push *foo.nupkg* to the custom push source `https://customsource`, specifying an API key:
 
   ```dotnetcli
   dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -s https://customsource/
@@ -121,12 +127,12 @@ The `dotnet nuget push` command pushes a package to the server and publishes it.
   ```dotnetcli
   dotnet nuget push *.nupkg
   ```
-  
+
   > [!NOTE]
   > If this command doesn't work, it might be due to a bug that existed in older versions of the SDK (.NET Core 2.1 SDK and earlier versions).
   > To fix this, upgrade your SDK version or run the following command instead:
   > `dotnet nuget push **/*.nupkg`
-  
+
 * Pushes all *.nupkg* files even if a 409 Conflict response is returned by an HTTP(S) server:
 
   ```dotnetcli

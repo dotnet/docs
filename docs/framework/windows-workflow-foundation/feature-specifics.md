@@ -96,9 +96,9 @@ The WCF configuration schema is complex and provides users with many hard to fin
 
 - [Standard Endpoint Element](xref:System.ServiceModel.Configuration.StandardEndpointElement)
 
-- [Service configuration improvements in .NET Framework 4](https://blogs.msdn.microsoft.com/endpoint/2009/06/30/service-configuration-improvements-in-net-4/)
+- [Service configuration improvements in .NET Framework 4](https://docs.microsoft.com/archive/blogs/endpoint/service-configuration-improvements-in-net-4)
 
-- [Common User Mistake in .NET 4: Mistyping the WF/WCF Service Configuration Name](https://blogs.msdn.microsoft.com/endpoint/2009/11/09/common-user-mistake-in-net-4-mistyping-the-wfwcf-service-configuration-name/)
+- [Common User Mistake in .NET 4: Mistyping the WF/WCF Service Configuration Name](https://docs.microsoft.com/archive/blogs/endpoint/common-user-mistake-in-net-4-mistyping-the-wfwcf-service-configuration-name)
 
 ### Simplified Configuration Scenarios
 
@@ -122,7 +122,7 @@ The [DataContractResolver](../wcf/samples/datacontractresolver.md) solves these 
 
 - [Data Contract Resolver API documentation](xref:System.Runtime.Serialization.DataContractResolver)
 
-- [Introducing the Data Contract Resolver](https://blogs.msdn.microsoft.com/youssefm/2009/06/05/configuring-known-types-dynamically-introducing-the-datacontractresolver/)
+- [Introducing the Data Contract Resolver](https://docs.microsoft.com/archive/blogs/youssefm/configuring-known-types-dynamically-introducing-the-datacontractresolver)
 
 - Samples:
 
@@ -282,7 +282,7 @@ The routing service in .NET 4 is designed to make these problems easier to solve
 
 2. Samples: [Routing Services &#91;WCF Samples&#93;](../wcf/samples/routing-services.md)
 
-3. Blog: [Routing Rules!](https://blogs.msdn.microsoft.com/RoutingRules/)
+3. Blog: [Routing Rules!](https://docs.microsoft.com/archive/blogs/RoutingRules/)
 
 ### Routing Scenarios
 

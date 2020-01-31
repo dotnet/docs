@@ -22,7 +22,7 @@ Implements "ICorDebugEnum" methods and enumerates "ICorDebugValue" arrays.
   
 |Method|Description|  
 |------------|-----------------|  
-|[Next Method](../../../../docs/framework/unmanaged-api/debugging/icordebugvalueenum-next-method.md)|Gets the specified number of `ICorDebugValue` instances from the enumeration, starting at the current position.|  
+|[Next Method](icordebugvalueenum-next-method.md)|Gets the specified number of `ICorDebugValue` instances from the enumeration, starting at the current position.|  
   
 ## Remarks  
   
@@ -40,4 +40,4 @@ Implements "ICorDebugEnum" methods and enumerates "ICorDebugValue" arrays.
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

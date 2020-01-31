@@ -1,5 +1,6 @@
 ---
-title: "WPF and Direct3D9 Interoperation"
+title: WPF and Direct3D9 interop
+titleSuffix: ""
 ms.date: "03/30/2017"
 dev_langs: 
   - "cpp"

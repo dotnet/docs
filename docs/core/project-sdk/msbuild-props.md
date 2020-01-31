@@ -11,7 +11,15 @@ This page describes MSBuild properties for configuring .NET Core projects.
 > [!NOTE]
 > This page is a work in progress and does not list all of the useful MSBuild properties for the .NET Core SDK.
 
-## Dependency properties
+## Framework and dependency properties
+
+- [NetStandardImplicitPackageVersion](#netstandardimplicitpackageversion)
+- [PackageReference](#packagereference)
+- [PackageTargetFallback](#packagetargetfallback)
+- [RuntimeIdentifier](#runtimeidentifier)
+- [RuntimeIdentifiers](#runtimeidentifiers)
+- [TargetFramework](#targetframework)
+- [TargetFrameworks](#targetframeworks)
 
 ### NetStandardImplicitPackageVersion
 
@@ -25,6 +33,25 @@ Use the `NetStandardImplicitPackageVersion` property when you want to specify a 
   </PropertyGroup>
 </Project>
 ```
+
+### PackageReference
+
+Use the `PackageReference` property lets you specify a NuGet dependency. For example, you may want to reference a single package instead of a [metapackage](../packages.md#metapackages). The `Include` attribute specifies the package ID. The project file snippet in the following example references the [System.Runtime](https://www.nuget.org/packages/System.Runtime/) package.
+
+```xml
+<PackageReference Include="<package-id>" Version="" PrivateAssets="" IncludeAssets="" ExcludeAssets="" />
+```
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  ...
+  <ItemGroup>
+    <PackageReference Include="System.Runtime" Version="4.3.0" />
+  </ItemGroup>
+</Project>
+```
+
+For more information, see [Package references in project files](/nuget/consume-packages/package-references-in-project-files).
 
 ### PackageTargetFallback
 
@@ -87,25 +114,6 @@ Use the `TargetFrameworks` property when you want your app to target multiple pl
 ```
 
 For more information, see [Target frameworks in SDK-style projects](../../standard/frameworks.md).
-
-### PackageReference
-
-Use the `PackageReference` property lets you specify a NuGet dependency. For example, you may want to reference a single package instead of a [metapackage](../packages.md#metapackages). The `Include` attribute specifies the package ID. The project file snippet in the following example references the [System.Runtime](https://www.nuget.org/packages/System.Runtime/) package.
-
-```xml
-<PackageReference Include="<package-id>" Version="" PrivateAssets="" IncludeAssets="" ExcludeAssets="" />
-```
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  ...
-  <ItemGroup>
-    <PackageReference Include="System.Runtime" Version="4.3.0" />
-  </ItemGroup>
-</Project>
-```
-
-For more information, see [Package references in project files](/nuget/consume-packages/package-references-in-project-files).
 
 #### Attributes
 

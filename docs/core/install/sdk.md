@@ -12,15 +12,6 @@ zone_pivot_groups: operating-systems-set-one
 
 In this article, you'll learn how to install the .NET Core SDK. The .NET Core SDK is used to create .NET Core apps and libraries. The .NET Core runtime is always installed with the SDK.
 
-You can install the SDK using native installers or installation scripts.
-
-The native installers are primarily meant for developer's machines. The SDK is distributed using each supported platform's native install mechanism, such as DEB packages on Ubuntu or MSI bundles on Windows. These installers install
-and set up the environment as needed for the user to use the SDK immediately after the install. However, they also require administrative privileges on the machine. You can find the SDK to install on the [.NET downloads](https://dotnet.microsoft.com/download) page.
-
-Installation scripts, on the other hand, don't require administrative privileges. However, they also don't install any prerequisites on the machine, and you must install all of the prerequisites manually. The scripts are meant mostly for setting up build servers or when you wish to install the tools without admin privileges. You can find more information in the [install script reference](../tools/dotnet-install-script.md) article. For information about setting up the SDK on a CI build server, see [Using .NET Core SDK and tools in Continuous Integration (CI)](../tools/using-ci-with-cli.md).
-
-By default, the SDK installs in a "side-by-side" manner, which means multiple versions of the CLI tools can coexist on a single machine. For information about which version gets picked when you run CLI commands, see [Select the .NET Core version to use](../versions/selection.md).
-
 ::: zone pivot="os-windows"
 
 ## Install with an installer

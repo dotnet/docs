@@ -21,7 +21,7 @@ Applications you create with .NET Core can be published in two different ways. E
 
     In general, platform-specific apps can be created for platforms other than your current platform. The `-r <RID>` switch sets the target [runtime-identifier](../rid-catalog.md).
 
-01. A cross-platform c-dependent *dll* file.
+01. A cross-platform *dll* file.
 
     Commands that produce a runtime-dependent *dll* app:
 

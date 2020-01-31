@@ -64,6 +64,9 @@ export PATH=$PATH:$HOME/dotnet
 >
 > Also, add `export DOTNET_ROOT=$HOME/dotnet` to the end of the file.
 
+> [!TIP]
+> This approach lets you install multiple different versions into separate locations and choose explicitly which one to use by which application.
+
 ::: zone-end
 
 ::: zone pivot="os-windows"
@@ -80,6 +83,24 @@ dotnet-install.ps1 -Channel 3.1 -Runtime aspnetcore
 
 > [!NOTE]
 > The command above installs the ASP.NET Core runtime for maximum compatability. The ASP.NET Core runtime also includes the standard .NET Core runtime.
+
+## Download and manual install
+
+First [download](#all-net-core-downloads) a .NET Core binary release. Then create a directory to install to, for example `%USERPROFILE%\dotnet`. And finally extract the downloaded zip file into that directory.
+
+.NET Core installed in this way will not be picked up by default, you have to explicitly choose to use it. To do so, change the environment variables with which an application is started:
+
+```
+set DOTNET_ROOT=%USERPROFILE%\dotnet
+set PATH=%USERPROFILE%\dotnet;%PATH%
+```
+
+> [!TIP] 
+> This approach lets you install multiple different versions into separate locations and choose explicitly which one to use by which application. Even with the application started under this environment, .NET Core will still consider the default global install location (typically `C:\Program Files\dotnet`) which is used by the installers. To disable this and ask the runtime to only consider the custom install location also modify this environment variable:
+>
+> ```
+> set DOTNET_MULTILEVEL_LOOKUP=0
+> ```
 
 ::: zone-end
 

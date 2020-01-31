@@ -5,7 +5,7 @@ ms.date: 01/31/2020
 ---
 # .NET Core application publishing overview
 
-Applications you create with .NET Core can be published in two different ways. Each way affects how a user installs and runs your app:
+Applications you create with .NET Core can be published in two different ways. Each way affects how a user installs and runs your app. Platform-specific executables are generated for a target platform, and runtime-dependent *dll* files are generated for cross-platform use.
 
 01. A platform-specific executable.
 
@@ -21,7 +21,7 @@ Applications you create with .NET Core can be published in two different ways. E
 
     In general, platform-specific apps can be created for platforms other than your current platform. The `-r <RID>` switch sets the target [runtime-identifier](../rid-catalog.md).
 
-01. A cross-platform *dll* file.
+01. A runtime-dependent cross-platform *dll* file.
 
     Commands that produce a runtime-dependent *dll* app:
 

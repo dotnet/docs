@@ -52,30 +52,19 @@ You can select an algorithm for different reasons: for example, for data integri
 Here is a list of recommended algorithms by application:
 
 - Data privacy:
-
   - <xref:System.Security.Cryptography.Aes>
-
 - Data integrity:
-
   - <xref:System.Security.Cryptography.HMACSHA256>
   - <xref:System.Security.Cryptography.HMACSHA512>
-
 - Digital signature:
-
   - <xref:System.Security.Cryptography.ECDsa>
   - <xref:System.Security.Cryptography.RSA>
-
 - Key exchange:
-
   - <xref:System.Security.Cryptography.ECDiffieHellman>
   - <xref:System.Security.Cryptography.RSA>
-
 - Random number generation:
-
   - <xref:System.Security.Cryptography.RNGCryptoServiceProvider>
-
 - Generating a key from a password:
-
   - <xref:System.Security.Cryptography.Rfc2898DeriveBytes>
 
 ## See also

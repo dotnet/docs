@@ -49,4 +49,3 @@ The following XML file is used in various examples in the LINQ to XML documentat
   </Data>  
 </Root>  
 ```  
-  

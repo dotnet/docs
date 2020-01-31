@@ -22,7 +22,7 @@ If you are familiar with MSBuild, it will look familiar to the other reference t
 > [!NOTE]
 > If you're not familiar with the project-file syntax, see the [MSBuild project reference](/visualstudio/msbuild/msbuild-project-file-schema-reference) documentation for more information.
 
-Use conditions to add a dependency that's available only in a specific target as shown in the following example:
+Use conditions to add a dependency that's available only in a specific target, as shown in the following example:
 
 ```xml
 <PackageReference Include="PACKAGE_ID" Version="PACKAGE_VERSION" Condition="'$(TargetFramework)' == 'netcoreapp2.1'" />
@@ -34,7 +34,7 @@ The dependency will only be valid if the build is happening for that given targe
 
 Adding a dependency to your project is straightforward. Here is an example of how to add Json.NET version `9.0.1` to your project. Of course, it is applicable to any other NuGet dependency.
 
-When you open your project file, you will see two or more `<ItemGroup>` nodes. You will notice that one of the nodes already has `<PackageReference>` elements in it. You can add your new dependency to this node or create a new one; the result will be the same.
+Your project file has two or more `<ItemGroup>` nodes. One of the nodes already has `<PackageReference>` elements in it. You can add your new dependency to this node or create a new one; the result will be the same.
 
 The following example uses the default template that's dropped by `dotnet new console`. This is a simple console application. When you open up the project, you'll find the `<ItemGroup>` with already existing `<PackageReference>` in it. Add the following to it:
 

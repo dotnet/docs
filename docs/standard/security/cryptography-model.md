@@ -62,19 +62,16 @@ Here is a list of recommended algorithms by application:
 - Data integrity:
 
   - <xref:System.Security.Cryptography.HMACSHA256>
-
   - <xref:System.Security.Cryptography.HMACSHA512>
 
 - Digital signature:
 
   - <xref:System.Security.Cryptography.ECDsa>
-
   - <xref:System.Security.Cryptography.RSA>
 
 - Key exchange:
 
   - <xref:System.Security.Cryptography.ECDiffieHellman>
-
   - <xref:System.Security.Cryptography.RSA>
 
 - Random number generation:

@@ -67,7 +67,7 @@ These components are distributed in the following ways:
 
 ### Designed for adaptability
 
-.NET Core has been built as a very similar but unique product compared to other .NET products. It was designed to enable broad adaptability to new platforms and workloads and it has several OS and CPU ports available (and it may be ported to many more).
+.NET Core has been built as a similar but unique product compared to other .NET products. It was designed to enable broad adaptability to new platforms and workloads and it has several OS and CPU ports available (and it may be ported to many more).
 
 The product is broken into several pieces, enabling the various parts to be adapted to new platforms at different times. The runtime and platform-specific foundational libraries must be ported as a unit. Platform-agnostic libraries should work as-is on all platforms, by construction. There's a project bias towards reducing platform-specific implementations to increase developer efficiency, preferring platform-neutral C# code whenever an algorithm or API can be implemented in-full or in-part that way.
 
@@ -122,7 +122,7 @@ The major differences between .NET Core and Mono:
 It was announced that .NET 5 will be the next release of .NET Core and represents a unification of the platform. The project aims to improve .NET in a few key ways:
 
 - Produce a single .NET runtime and framework that can be used everywhere and that has uniform runtime behaviors and developer experiences.
-- Expand the capabilities of .NET by taking the best of .NET Core, .NET Framework, Xamarin and Mono.
+- Expand the capabilities of .NET by taking the best of .NET Core, .NET Framework, Xamarin, and Mono.
 - Build that product out of a single code-base that developers (Microsoft and the community) can work on and expand together and that improves all scenarios.
 
 For more details about what's being planned for .NET 5, see [Introducing .NET 5](https://devblogs.microsoft.com/dotnet/introducing-net-5/).

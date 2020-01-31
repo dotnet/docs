@@ -5,7 +5,7 @@ dev_langs:
   - "csharp"
 author: thraka
 ms.author: adegeo
-ms.date: 10/22/2019
+ms.date: 01/27/2020
 ---
 
 # What's new in .NET Core 3.0
@@ -175,7 +175,7 @@ Exceptions to cross-targeting:
 
 ## Runtime/SDK
 
-### Major-version Roll Forward
+### Major-version runtime roll forward
 
 .NET Core 3.0 introduces an opt-in feature that allows your app to roll forward to the latest major version of .NET Core. Additionally, a new setting has been added to control how roll forward is applied to your app. This can be configured in the following ways:
 
@@ -221,6 +221,15 @@ There are some operations, like linking and razor page publishing that will stil
 Local tools rely on a manifest file name `dotnet-tools.json` in your current directory. This manifest file defines the tools to be available at that folder and below. You can distribute the manifest file with your code to ensure that anyone who works with your code can restore and use the same tools.
 
 For both global and local tools, a compatible version of the runtime is required. Many tools currently on NuGet.org target .NET Core Runtime 2.1. To install these tools globally or locally, you would still need to install the [NET Core 2.1 Runtime](https://dotnet.microsoft.com/download/dotnet-core/2.1).
+
+### New global.json options
+
+The *global.json* file has new options that provide more flexibility when you're trying to define which version of the .NET Core SDK is used. The new options are:
+
+- `allowPrerelease`: Indicates whether the SDK resolver should consider prerelease versions when selecting the SDK version to use.
+- `rollForward`: Indicates the roll-forward policy to use when selecting an SDK version, either as a fallback when a specific SDK version is missing or as a directive to use a higher version.
+
+For more information about the changes including default values, supported values, and new matching rules, see [global.json overview](../tools/global-json.md).
 
 ### Smaller Garbage Collection heap sizes
 

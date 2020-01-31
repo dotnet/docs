@@ -19,7 +19,7 @@ wsatConfig [Options]
   
  %SystemRoot%\Microsoft.Net\Framework\v3.0\Windows Communication Foundation\wsatConfig.exe  
   
- If you are running [!INCLUDE[wxp](../../../includes/wxp-md.md)] or Windows Server 2003, you must download an update before running WsatConfig.exe. For more information about this update, see [Update for Windows Communication Foundation (KB912817)](https://www.microsoft.com/download/details.aspx?id=21520).  
+ If you are running Windows XP or Windows Server 2003, you must download an update before running WsatConfig.exe. For more information about this update, see [Update for Windows Communication Foundation (KB912817)](https://www.microsoft.com/download/details.aspx?id=21520).  
   
  The following table shows the options that can be used with WS-AtomicTransaction Configuration Utility (wsatConfig.exe).  
   

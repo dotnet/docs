@@ -161,7 +161,7 @@ See [.NET Core](../core/index.md).
 
 A cross-platform toolchain for developing .NET Core applications.
 
-See [.NET Core command-line interface (CLI) tools](../core/tools/index.md).
+See [.NET Core CLI](../core/tools/index.md).
 
 ## .NET Core SDK
 

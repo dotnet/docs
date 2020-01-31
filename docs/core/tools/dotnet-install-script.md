@@ -29,7 +29,7 @@ dotnet-install.sh [--channel] [--version] [--jsonfile] [--install-dir] [--archit
 
 ## Description
 
-The `dotnet-install` scripts are used to perform a non-admin installation of the .NET Core SDK, which includes the .NET Core CLI tools and the shared runtime.
+The `dotnet-install` scripts are used to perform a non-admin installation of the .NET Core SDK, which includes the .NET Core CLI and the shared runtime.
 
 We recommend that you use the stable version of the scripts:
 
@@ -102,7 +102,7 @@ You can install a specific version using the `-Version|--version` argument. The 
 
 - **`-NoPath|--no-path`**
 
-  If set, the installation folder isn't exported to the path for the current session. By default, the script modifies the PATH, which makes the CLI tools available immediately after install.
+  If set, the installation folder isn't exported to the path for the current session. By default, the script modifies the PATH, which makes the .NET Core CLI available immediately after install.
 
 - **`-Verbose|--verbose`**
 

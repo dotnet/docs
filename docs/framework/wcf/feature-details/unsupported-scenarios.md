@@ -5,7 +5,7 @@ ms.assetid: 72027d0f-146d-40c5-9d72-e94392c8bb40
 ---
 # Unsupported scenarios
 
-For various reasons, Windows Communication Foundation (WCF) does not support some specific security scenarios. For example, [!INCLUDE[wxp](../../../../includes/wxp-md.md)] Home Edition does not implement the SSPI or Kerberos authentication protocols, and therefore WCF does not support running a service with Windows authentication on that platform. Other authentication mechanisms, such as username/password and HTTP/HTTPS integrated authentication are supported when running WCF under Windows XP Home Edition.
+For various reasons, Windows Communication Foundation (WCF) does not support some specific security scenarios. For example, Windows XP Home Edition does not implement the SSPI or Kerberos authentication protocols, and therefore WCF does not support running a service with Windows authentication on that platform. Other authentication mechanisms, such as username/password and HTTP/HTTPS integrated authentication are supported when running WCF under Windows XP Home Edition.
 
 ## Impersonation scenarios
 
@@ -16,7 +16,7 @@ For various reasons, Windows Communication Foundation (WCF) does not support som
 
 WCF does not support impersonation and an <xref:System.InvalidOperationException> is thrown when the following conditions exist:
 
-- The operating system is [!INCLUDE[wxp](../../../../includes/wxp-md.md)].
+- The operating system is Windows XP.
 
 - The authentication mode results in a Windows identity.
 
@@ -29,7 +29,7 @@ WCF does not support impersonation and an <xref:System.InvalidOperationException
  Alternatively, in configuration, the token is enabled by creating a <`customBinding`>, then adding a <`security`> element, and setting the `authenticationMode` attribute to SecureConversation and the `requireSecurityContextCancellation` attribute to `true`.
 
 > [!NOTE]
-> The preceding requirements are specific. For example, the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateKerberosBindingElement%2A> creates a binding element that results in a Windows identity, but does not establish an SCT. Therefore, you can use it with the `Required` option on [!INCLUDE[wxp](../../../../includes/wxp-md.md)].
+> The preceding requirements are specific. For example, the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateKerberosBindingElement%2A> creates a binding element that results in a Windows identity, but does not establish an SCT. Therefore, you can use it with the `Required` option on Windows XP.
 
 ### Possible ASP.NET conflict
 

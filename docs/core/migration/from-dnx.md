@@ -30,9 +30,9 @@ DNVM, short for *DotNet Version Manager* was a bash/PowerShell script used to in
 users get the DNX they need from the feed they specified (or default ones) as well as mark a certain DNX "active", which
 would put it on the $PATH for the given session. This would allow you to use the various tools.
 
-DNVM was discontinued because its feature set was made redundant by changes coming in the .NET Core CLI tools.
+DNVM was discontinued because its feature set was made redundant by changes coming in the .NET Core CLI.
 
-The CLI tools come packaged in two main ways:
+The CLI comes packaged in two main ways:
 
 1. Native installers for a given platform
 2. Install script for other situations (like CI servers)
@@ -76,7 +76,7 @@ The CLI does not support this concept. It does, however, support the concept of 
 invoked using the familiar `dotnet <command>` syntax.
 
 ### Installing dependencies
-As of v1, the .NET Core CLI tools don't have an `install` command for installing dependencies. In order to install a
+As of v1, the .NET Core CLI doesn't have an `install` command for installing dependencies. In order to install a
 package from NuGet, you would need to add it as a dependency to your `project.json` file and then run `dotnet restore` ([see note](#dotnet-restore-note)).
 
 ### Running your code
@@ -94,7 +94,7 @@ In addition to using new commands when working with your code, there are three m
 3. Migrating off of any DNX APIs to their BCL counterparts.
 
 ### Changing the global.json file
-The `global.json` file acts like a solution file for both the RC1 and RC2 (or later) projects. In order for the CLI tools (as well
+The `global.json` file acts like a solution file for both the RC1 and RC2 (or later) projects. In order for the .NET Core CLI (as well
 as Visual Studio) to differentiate between RC1 and later versions, they use the `"sdk": { "version" }` property to make the distinction
 which project is RC1 or later. If `global.json` doesn't have this node at all, it is assumed to be the latest.
 

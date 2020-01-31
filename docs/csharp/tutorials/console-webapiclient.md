@@ -7,11 +7,9 @@ ms.assetid: 51033ce2-7a53-4cdd-966d-9da15c8204d2
 
 # REST client
 
-## Introduction
-
 This tutorial teaches you a number of features in .NET Core and the C# language. You’ll learn:
 
-* The basics of the .NET Core Command Line Interface (CLI).
+* The basics of the .NET Core CLI.
 * An overview of C# Language features.
 * Managing dependencies with NuGet
 * HTTP Communications

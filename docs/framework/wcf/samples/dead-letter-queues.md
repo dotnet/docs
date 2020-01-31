@@ -10,7 +10,7 @@ This sample demonstrates how to handle and process messages that have failed del
 > The setup procedure and build instructions for this sample are located at the end of this topic.
 
 > [!NOTE]
-> This sample demonstrates each application dead letter queue that is only available on Windows Vista. The sample can be modified to use the default system-wide queues for MSMQ 3.0 on Windows Server 2003 and [!INCLUDE[wxp](../../../../includes/wxp-md.md)].
+> This sample demonstrates each application dead letter queue that is only available on Windows Vista. The sample can be modified to use the default system-wide queues for MSMQ 3.0 on Windows Server 2003 and Windows XP.
 
  In queued communication, the client communicates to the service using a queue. More precisely, the client sends messages to a queue. The service receives messages from the queue. The service and client therefore, do not have to be running at the same time to communicate using a queue.
 

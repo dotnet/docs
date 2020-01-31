@@ -241,7 +241,7 @@ In fact, any WCF client usage that depends on the `<system.serviceModel>` app.co
 
 There are two ways to automatically generate .NET Standard-compatible WCF clients:
 
-- The `dotnet-svcutil` tool is a .NET Core CLI tool that generates WCF clients in a way that is similar to how Svcutil worked previously.
+- The `dotnet-svcutil` tool is a .NET tool that generates WCF clients in a way that is similar to how Svcutil worked previously.
 - Visual Studio can generate WCF clients using the [WCF Web Service Reference](../../core/additional-tools/wcf-web-service-reference-guide.md) option of its Connected Services feature.
 
 Either approach works well. Alternatively, of course, you could write the WCF client code yourself. For this sample, I chose to use the Visual Studio Connected Service feature. To do that, right-click on the *BeanTraderClient.Core* project in Visual Studio's solution explorer and select **Add** > **Connected Service**. Next, choose the WCF Web Service Reference Provider. This will bring up a dialog where you can specify the address of the backend Bean Trader web service (`localhost:8080` if you are running the server locally) and the namespace that generated types should use (**BeanTrader.Service**, for example).

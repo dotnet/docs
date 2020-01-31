@@ -88,3 +88,4 @@ Here is a list of recommended algorithms by application:
 ## See also
 
 - [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)
+- [Applied Cryptography Protocols, Algorithms, and Source Code in C, by Bruce Schneier](https://www.schneier.com/books/applied_cryptography/)

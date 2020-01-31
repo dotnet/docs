@@ -177,7 +177,7 @@ Byref returns from F# functions or members can be produced and consumed. When co
 
 ```fsharp
 let squareAndPrint (data : byref<int>) = 
-    let squared = data*data    // data is implicitly implicitly dereferenced
+    let squared = data*data    // data is implicitly dereferenced
     printfn "%d" squared
 ```
 To return a value byref, the variable which contains the value must live longer than the current scope.

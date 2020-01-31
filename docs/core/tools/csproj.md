@@ -58,43 +58,6 @@ If a version *is* specified, it's treated as the *minimum* version of ASP.NET Co
 
 ## Additions
 
-### PackageReference
-
-A `<PackageReference>` item element specifies a [NuGet dependency in the project](/nuget/consume-packages/package-references-in-project-files). The `Include` attribute specifies the package ID.
-
-```xml
-<PackageReference Include="<package-id>" Version="" PrivateAssets="" IncludeAssets="" ExcludeAssets="" />
-```
-
-#### Version
-
-The required `Version` attribute specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](/nuget/reference/package-versioning#version-ranges-and-wildcards) scheme. The default behavior is a minimum version, inclusive match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3, )` and means the resolved package will have the version 1.2.3 if available or greater otherwise.
-
-#### IncludeAssets, ExcludeAssets, and PrivateAssets
-
-`IncludeAssets` attribute specifies which assets belonging to the package specified by `<PackageReference>` should be consumed. By default, all package assets are included.
-
-`ExcludeAssets` attribute specifies which assets belonging to the package specified by `<PackageReference>` should not be consumed.
-
-`PrivateAssets` attribute specifies which assets belonging to the package specified by `<PackageReference>` should be consumed but not flow to the next project. The `Analyzers`, `Build`, and `ContentFiles` assets are private, by default, when this attribute is not present.
-
-> [!NOTE]
-> `PrivateAssets` is equivalent to the *project.json*/*xproj* `SuppressParent` element.
-
-These attributes can contain one or more of the following items, separated by the semicolon `;` character if more than one is listed:
-
-- `Compile` – the contents of the *lib* folder are available to compile against.
-- `Runtime` – the contents of the *runtime* folder are distributed.
-- `ContentFiles` – the contents of the *contentfiles* folder are used.
-- `Build` – the props/targets in the *build* folder are used.
-- `Native` – the contents from native assets are copied to the *output* folder for runtime.
-- `Analyzers` – the analyzers are used.
-
-Alternatively, the attribute can contain:
-
-- `None` – none of the assets are used.
-- `All` – all assets are used.
-
 ### DotNetCliToolReference
 
 A `<DotNetCliToolReference>` item element specifies the CLI tool that the user wants to restore in the context of the project. It's a replacement for the `tools` node in *project.json*.
@@ -109,44 +72,6 @@ A `<DotNetCliToolReference>` item element specifies the CLI tool that the user w
 #### Version
 
 `Version` specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](/nuget/create-packages/dependency-versions#version-ranges) scheme. The default behavior is a minimum version, inclusive match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3, )` and means the resolved package will have the version 1.2.3 if available or greater otherwise.
-
-### RuntimeIdentifiers
-
-The `<RuntimeIdentifiers>` property element lets you specify a semicolon-delimited list of [Runtime Identifiers (RIDs)](../rid-catalog.md) for the project. RIDs enable publishing self-contained deployments.
-
-```xml
-<RuntimeIdentifiers>win10-x64;osx.10.11-x64;ubuntu.16.04-x64</RuntimeIdentifiers>
-```
-
-### RuntimeIdentifier
-
-The `<RuntimeIdentifier>` property element allows you to specify only one [Runtime Identifier (RID)](../rid-catalog.md) for the project. The RID enables publishing a self-contained deployment.
-
-```xml
-<RuntimeIdentifier>ubuntu.16.04-x64</RuntimeIdentifier>
-```
-
-Use `<RuntimeIdentifiers>` (plural) instead if you need to publish for multiple runtimes. `<RuntimeIdentifier>` can provide faster builds when only a single runtime is required.
-
-### PackageTargetFallback
-
-The `<PackageTargetFallback>` property element allows you to specify a set of compatible targets to be used when restoring packages. It's designed to allow packages that use the dotnet [TxM (Target x Moniker)](/nuget/schema/target-frameworks) to operate with packages that don't declare a dotnet TxM. If your project uses the dotnet TxM, then all the packages it depends on must also have a dotnet TxM, unless you add the `<PackageTargetFallback>` to your project in order to allow non-dotnet platforms to be compatible with dotnet.
-
-The following example provides the fallbacks for all targets in your project:
-
-```xml
-<PackageTargetFallback>
-    $(PackageTargetFallback);portable-net45+win8+wpa81+wp8
-</PackageTargetFallback >
-```
-
-The following example specifies the fallbacks only for the `netcoreapp2.1` target:
-
-```xml
-<PackageTargetFallback Condition="'$(TargetFramework)'=='netcoreapp2.1'">
-    $(PackageTargetFallback);portable-net45+win8+wpa81+wp8
-</PackageTargetFallback >
-```
 
 ## Build events
 

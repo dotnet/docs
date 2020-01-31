@@ -54,7 +54,7 @@ To make an X.509 certificate accessible to Windows Communication Foundation (WCF
         |Client (console or WinForms application).|Currently logged in user.|  
         |Service that is self-hosted.|Currently logged in user.|  
         |Service that is hosted in IIS 6.0 (Windows Server 2003) or IIS 7.0 (Windows Vista).|NETWORK SERVICE|  
-        |Service that is hosted in IIS 5.X ([!INCLUDE[wxp](../../../../includes/wxp-md.md)]).|Controlled by the `<processModel>` element in the Machine.config file. The default account is ASPNET.|  
+        |Service that is hosted in IIS 5.X (Windows XP).|Controlled by the `<processModel>` element in the Machine.config file. The default account is ASPNET.|  
   
     5. Grant read access to the file that contains the private key to the account that WCF is running under, using a tool such as icacls.exe.  
   

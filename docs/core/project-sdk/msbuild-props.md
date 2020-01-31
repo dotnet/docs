@@ -11,6 +11,47 @@ This page describes MSBuild properties for configuring .NET Core projects.
 > [!NOTE]
 > This page is a work in progress and does not list all of the useful MSBuild properties for the .NET Core SDK.
 
+## Dependency properties
+
+## TargetFramework
+
+The `TargetFramework` property specifies the target framework version for the app, which implicitly references a [metapackage](../packages.md#metapackages). For a list of valid target framework monikers, see [Target frameworks in SDK-style projects](../../standard/frameworks.md#supported-target-framework-versions).
+
+```xml
+<PropertyGroup>
+  <TargetFramework>netcoreapp3.1</TargetFramework>
+</PropertyGroup>
+```
+
+For more information, see [Target frameworks in SDK-style projects](../../standard/frameworks.md).
+
+## TargetFrameworks
+
+Use the `TargetFrameworks` property when you want your app to target multiple platforms. This property is ignored if `TargetFramework` is specified. For a list of valid target framework monikers, see [Target frameworks in SDK-style projects](../../standard/frameworks.md#supported-target-framework-versions).
+
+```xml
+<PropertyGroup>
+  <TargetFrameworks>netcoreapp3.1;net462</TargetFrameworks>
+</PropertyGroup>
+```
+
+For more information, see [Target frameworks in SDK-style projects](../../standard/frameworks.md).
+
+## PackageReference
+
+The `PackageReference` property lets you reference a single package instead of a [metapackage](../packages.md#metapackages). The project file snippet in the following example references the [System.Runtime](https://www.nuget.org/packages/System.Runtime/) package.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  ...
+  <ItemGroup>
+    <PackageReference Include="System.Runtime" Version="4.3.0" />
+  </ItemGroup>
+</Project>
+```
+
+For more information, see [Package references in project files](/nuget/consume-packages/package-references-in-project-files).
+
 ## Compile properties
 
 ### LangVersion
@@ -19,6 +60,7 @@ The `LangVersion` property lets you specify a specific programming language vers
 
 ```xml
 <PropertyGroup>
+  ...
   <LangVersion>preview</LangVersion>
 </PropertyGroup>
 ```

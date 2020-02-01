@@ -46,7 +46,14 @@ IEnumerable<string> partNos =  from item in purchaseOrder.Descendants("Item")
                                select (string) item.Attribute("PartNumber");
 ```
 
-```vb  
+```vb
+' Load the XML file from our project directory containing the purchase orders
+Dim filename = "PurchaseOrder.xml"
+Dim currentDirectory = Directory.GetCurrentDirectory()
+Dim purchaseOrderFilepath = Path.Combine(currentDirectory, filename)
+
+Dim purchaseOrder As XElement = XElement.Load(purchaseOrderFilepath)
+
 Dim partNos = _  
     From item In purchaseOrder...<Item> _  
     Select item.@PartNumber  
@@ -75,6 +82,13 @@ IEnumerable<XElement> pricesByPartNos =  from item in purchaseOrder.Descendants(
 ```
 
 ```vb  
+' Load the XML file from our project directory containing the purchase orders
+Dim filename = "PurchaseOrder.xml"
+Dim currentDirectory = Directory.GetCurrentDirectory()
+Dim purchaseOrderFilepath = Path.Combine(currentDirectory, filename)
+
+Dim purchaseOrder As XElement = XElement.Load(purchaseOrderFilepath)
+
 Dim partNos = _  
 From item In purchaseOrder...<Item> _  
 Where (item.<Quantity>.Value * _  
@@ -143,11 +157,11 @@ Dim contacts As XElement = _
 > [!NOTE]
 > The Visual Basic version of the example uses XML literals. You can also use <xref:System.Xml.Linq.XElement> in Visual Basic, as in the C# version.
 
-For more information, see [XML trees](./functional-construction.md).
+For more information, see [XML trees](functional-construction.md).
 
 ## See also
 
-- [Reference](./reference.md)
-- [LINQ to XML vs. DOM](./linq-xml-vs-dom.md)
-- [LINQ to XML vs. other XML technologies](./linq-xml-vs-xml-technologies.md)
+- [Reference](reference.md)
+- [LINQ to XML vs. DOM](linq-xml-vs-dom.md)
+- [LINQ to XML vs. other XML technologies](linq-xml-vs-xml-technologies.md)
 - <xref:System.Xml.Linq>

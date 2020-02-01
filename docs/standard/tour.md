@@ -15,13 +15,13 @@ This article offers a guided tour through some of the key features of the .NET. 
 
 ## How to run the code samples
 
-To learn how to set up a development environment to run the code samples, see the [Getting Started](get-started.md) topic. Copy and paste code samples from this page into your environment to execute them. 
+To learn how to set up a development environment to run the code samples, see the [Getting Started](get-started.md) topic. Copy and paste code samples from this page into your environment to execute them.
 
 ## Programming languages
 
 .NET supports multiple programming languages. The .NET implementations implement the [Common Language Infrastructure (CLI)](https://visualstudio.microsoft.com/license-terms/ecma-c-common-language-infrastructure-standards/), which among other things specifies a language-independent runtime and language interoperability. This means that you choose any .NET language to build apps and services on .NET.
 
-Microsoft actively develops and supports three .NET languages: C#, F#, and Visual Basic. 
+Microsoft actively develops and supports three .NET languages: C#, F#, and Visual Basic.
 
 * C# is simple, powerful, type-safe, and object-oriented, while retaining the expressiveness and elegance of C-style languages. Anyone familiar with C and similar languages finds few problems in adapting to C#. Check out the [C# Guide](../csharp/index.yml) to learn more about C#.
 
@@ -109,7 +109,7 @@ To learn more about async programming in .NET, start with the [Async overview](a
 
 LINQ is a powerful set of features for C# and Visual Basic that allow you to write simple, declarative code for operating on data. The data can be in many forms (such as in-memory objects, a SQL database, or an XML document), but the LINQ code you write typically doesn't differ by data source.
 
-To learn more and see some samples, see the [LINQ (Language Integrated Query)](using-linq.md) topic.
+To learn more and see some samples, see the [LINQ (Language Integrated Query) overview](./linq/index.md) article.
 
 ## Native interoperability
 

@@ -180,6 +180,7 @@ let squareAndPrint (data : byref<int>) =
     let squared = data*data    // data is implicitly dereferenced
     printfn "%d" squared
 ```
+
 To return a value byref, the variable which contains the value must live longer than the current scope.
 Also, to return byref, use &value (where value is a variable that lives longer than the current scope).
 

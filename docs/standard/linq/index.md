@@ -1,6 +1,6 @@
 ---
 title: LINQ overview
-description: LINQ provides language-level querying capabilities and an API to C# and VB as a way to write expressive, declarative code.
+description: LINQ provides language-level querying capabilities and an API to C# and Visual Basic as a way to write expressive, declarative code.
 author: cartermp
 ms.author: wiwagn
 ms.date: 06/20/2016

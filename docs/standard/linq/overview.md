@@ -1,14 +1,13 @@
 ---
-title: LINQ (Language-Integrated Query) overview  
+title: LINQ overview
 description: LINQ provides language-level querying capabilities and an API to C# and VB as a way to write expressive, declarative code.
-author: cartermp  
+author: cartermp
 ms.author: wiwagn
 ms.date: 06/20/2016
 ms.technology: dotnet-standard
-dev_langs:  
+dev_langs:
   - "csharp"
   - "vb"
-ms.assetid: c00939e1-59e3-4e61-8fe9-08ad6b3f1295
 ---
 
 # LINQ (Language-Integrated Query) overview (C# and Visual Basic)
@@ -163,11 +162,11 @@ The following is a quick demonstration of some of the essential pieces of LINQ. 
 
 ```csharp
 // Filtering a list.
-var germanShepards = dogs.Where(dog => dog.Breed == DogBreed.GermanShepard);
+var germanShepherds = dogs.Where(dog => dog.Breed == DogBreed.GermanShepherd);
 
 // Using the query syntax.
-var queryGermanShepards = from dog in dogs
-                          where dog.Breed == DogBreed.GermanShepard
+var queryGermanShepherds = from dog in dogs
+                          where dog.Breed == DogBreed.GermanShepherd
                           select dog;
 
 // Mapping a list from type A to type B.
@@ -184,11 +183,11 @@ int sumOfStrings = strings.Aggregate(seed, (s1, s2) => s1.Length + s2.Length);
 
 ```vb
 ' Filtering a list.
-Dim germanShepards = dogs.Where(Function(dog) dog.Breed = DogBreed.GermanShepard)
+Dim germanShepherds = dogs.Where(Function(dog) dog.Breed = DogBreed.GermanShepherd)
 
 ' Using the query syntax.
-Dim queryGermanShepards = From dog In dogs
-                          Where dog.Breed = DogBreed.GermanShepard
+Dim queryGermanShepherds = From dog In dogs
+                          Where dog.Breed = DogBreed.GermanShepherd
                           Select dog
 
 ' Mapping a list from type A to type B.
@@ -251,7 +250,7 @@ var allShortHairedDogs = kennel1.Dogs.Union(kennel2.Dogs, new DogHairLengthCompa
 ```
 
 ```vb
-Public Class DogHairLengthComparer  
+Public Class DogHairLengthComparer
   Inherits IEqualityComparer(Of Dog)
 
   Public Function Equals(a As Dog,b As Dog) As Boolean
@@ -317,7 +316,7 @@ public static bool PublicInstancePropertiesEqual<T>(this T self, T to, params st
     {
         return self == to;
     }
-  
+
     // Selects the properties which have unequal values into a sequence of those properties.
     var unequalProperties = from property in typeof(T).GetProperties(BindingFlags.Public | BindingFlags.Instance)
                             where !ignore.Contains(property.Name)
@@ -330,14 +329,14 @@ public static bool PublicInstancePropertiesEqual<T>(this T self, T to, params st
 ```
 
 ```vb
-<System.Runtime.CompilerServices.Extension()>  
+<System.Runtime.CompilerServices.Extension()>
 Public Function PublicInstancePropertiesEqual(Of T As Class)(self As T, [to] As T, ParamArray ignore As String()) As Boolean
     If self Is Nothing OrElse [to] Is Nothing Then
         Return self Is [to]
     End If
 
     ' Selects the properties which have unequal values into a sequence of those properties.
-    Dim unequalProperties = From [property] In GetType(T).GetProperties(BindingFlags.Public Or BindingFlags.Instance)  
+    Dim unequalProperties = From [property] In GetType(T).GetProperties(BindingFlags.Public Or BindingFlags.Instance)
                             Where Not ignore.Contains([property].Name)
                             Let selfValue = [property].GetValue(self, Nothing)
                             Let toValue = [property].GetValue([to], Nothing)

@@ -13,7 +13,7 @@ There are various types of XML applications:
 - Some applications take source XML documents, and insert records into a database.
 - Some applications take data from another source, such as a database, and create XML documents from it.
 
-These are not all of the types of XML applications, but these are a representative set of the types of functionality that an XML programmer has to implement.
+These aren't all of the types of XML applications, but these are a representative set of the types of functionality that an XML programmer has to implement.
 
 With all of these types of applications, there are two contrasting approaches that a developer can take:
 
@@ -26,8 +26,8 @@ When using the functional approach, you write transformations that take the sour
 
 When modifying an XML tree in place, you write code that traverses and navigates through nodes in an in-memory XML tree, inserting, deleting, and modifying nodes as necessary.
 
-You can use LINQ to XML with either approach. You use the same classes, and in some cases the same methods. However, the structure and goals of the two approaches are very different. For example, in different situations, one or the other approach will often have better performance, and use more or less memory. In addition, one or the other approach will be easier to write and yield more maintainable code.
+You can use LINQ to XML with either approach. You use the same classes, and in some cases the same methods. However, the structure and goals of the two approaches are different. For example, in different situations, one or the other approach will often have better performance, and use more or less memory. In addition, one or the other approach will be easier to write and yield more maintainable code.
 
-To see the two approaches contrasted, see [In-memory XML tree modification vs. functional construction](in-memory-xml-tree-modification-vs-functional-construction.md).
+To see the two approaches contrasted, see [In-memory XML tree modification vs. functional construction (LINQ to XML)](in-memory-xml-tree-modification-vs-functional-construction.md).
 
-For a tutorial on writing functional transformations, see [Introduction to pure functional transformations](introduction-pure-functional-transformations.md).
+For a tutorial on writing functional transformations, see [Introduction to pure functional transformations](pure-functional-transformations.md).

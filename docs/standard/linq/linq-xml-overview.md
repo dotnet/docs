@@ -1,16 +1,16 @@
 ---
-title: "LINQ to XML overview - .NET"
+title: "Overview - LINQ to XML"
 description: LINQ to XML provides an in-memory XML programming interface that leverages the .NET Language-Integrated Query (LINQ) Framework.
 ms.date: 10/30/2018
-dev_langs:  
+dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 716b94d3-0091-4de1-8e05-41bc069fa9dd
 ---
 
-# LINQ to XML overview (C# and Visual Basic)
+# LINQ to XML overview
 
-LINQ to XML provides an in-memory XML programming interface that leverages the .NET Language-Integrated Query (LINQ) Framework. LINQ to XML uses .NET capabilities and is comparable to an updated, redesigned Document Object Model (DOM) XML programming interface.  
+LINQ to XML provides an in-memory XML programming interface that leverages the .NET Language-Integrated Query (LINQ) Framework. LINQ to XML uses .NET capabilities and is comparable to an updated, redesigned Document Object Model (DOM) XML programming interface.
 
 XML has been widely adopted as a way to format data in many contexts. For example, you can find XML on the Web, in configuration files, in Microsoft Office Word files, and in databases.
 
@@ -26,7 +26,7 @@ Professional developers can use LINQ to XML to greatly increase their productivi
 
 LINQ to XML is a LINQ-enabled, in-memory XML programming interface that enables you to work with XML from within the .NET Framework programming languages.
 
-LINQ to XML is like the Document Object Model (DOM) in that it brings the XML document into memory. You can query and modify the document, and after you modify it you can save it to a file or serialize it and send it over the Internet. However, LINQ to XML differs from DOM: 
+LINQ to XML is like the Document Object Model (DOM) in that it brings the XML document into memory. You can query and modify the document, and after you modify it you can save it to a file or serialize it and send it over the Internet. However, LINQ to XML differs from DOM:
 
 - It provides a new object model that is lighter weight and easier to work with.
 - It takes advantage of language features in C# and Visual Basic.
@@ -57,9 +57,9 @@ Dim purchaseOrderFilepath = Path.Combine(currentDirectory, filename)
 
 Dim purchaseOrder As XElement = XElement.Load(purchaseOrderFilepath)
 
-Dim partNos = _  
-    From item In purchaseOrder...<Item> _  
-    Select item.@PartNumber  
+Dim partNos = _
+    From item In purchaseOrder...<Item> _
+    Select item.@PartNumber
 ```
 
 In C# this can be rewritten in method syntax form:
@@ -84,7 +84,7 @@ IEnumerable<XElement> pricesByPartNos =  from item in purchaseOrder.Descendants(
                                  select item;
 ```
 
-```vb  
+```vb
 ' Load the XML file from our project directory containing the purchase orders
 Dim filename = "PurchaseOrder.xml"
 Dim currentDirectory = Directory.GetCurrentDirectory()
@@ -92,13 +92,13 @@ Dim purchaseOrderFilepath = Path.Combine(currentDirectory, filename)
 
 Dim purchaseOrder As XElement = XElement.Load(purchaseOrderFilepath)
 
-Dim partNos = _  
-From item In purchaseOrder...<Item> _  
-Where (item.<Quantity>.Value * _  
-       item.<USPrice>.Value) > 100 _  
-Order By item.<PartNumber>.Value _  
-Select item  
-```  
+Dim partNos = _
+From item In purchaseOrder...<Item> _
+Where (item.<Quantity>.Value * _
+       item.<USPrice>.Value) > 100 _
+Order By item.<PartNumber>.Value _
+Select item
+```
 
 Again, in C# this can be rewritten in method syntax form:
 
@@ -141,21 +141,21 @@ new XElement("Contacts",
 );
 ```
 
-```vb  
-Dim contacts As XElement = _  
-    <Contacts>  
-        <Contact>  
-            <Name>Patrick Hines</Name>  
-            <Phone>206-555-0144</Phone>  
-            <Address>  
-                <Street1>123 Main St</Street1>  
-                <City>Mercer Island</City>  
-                <State>WA</State>  
-                <Postal>68042</Postal>  
-            </Address>  
-        </Contact>  
-    </Contacts>  
-```  
+```vb
+Dim contacts As XElement = _
+    <Contacts>
+        <Contact>
+            <Name>Patrick Hines</Name>
+            <Phone>206-555-0144</Phone>
+            <Address>
+                <Street1>123 Main St</Street1>
+                <City>Mercer Island</City>
+                <State>WA</State>
+                <Postal>68042</Postal>
+            </Address>
+        </Contact>
+    </Contacts>
+```
 
 > [!NOTE]
 > The Visual Basic version of the example uses XML literals. You can also use <xref:System.Xml.Linq.XElement> in Visual Basic, as in the C# version.

@@ -1,5 +1,5 @@
 ---
-title: "LINQ to XML classes overview"
+title: "Classes overview - LINQ to XML"
 ms.date: 07/20/2015
 ms.assetid: bf666100-5392-4968-97f4-f6b9d3287d7b
 ---

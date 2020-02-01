@@ -50,7 +50,7 @@
     href: install/localized-intellisense.md
 - name: Get started
   items:
-  - name: Get started with C# and the CLI
+  - name: Get started with C#
     href: get-started.md
   - name: Get started with C# and Visual Studio Code
     href: tutorials/with-visual-studio-code.md
@@ -85,7 +85,7 @@
   href: compatibility/
 - name: Tutorials
   items:
-  - name: Index of tutorials
+  - name: Overview
     href: tutorials/index.md
   - name: Get started with .NET Core using Visual Studio for Mac
     href: tutorials/using-on-mac-vs.md
@@ -392,5 +392,5 @@
       href: tutorials/creating-app-with-plugin-support.md
     - name: How to use and debug assembly unloadability in .NET Core
       href: ../standard/assembly/unloadability-howto.md
-  - name: .NET Core distribution packaging
-    href: distribution-packaging.md
+- name: .NET Core distribution packaging
+  href: distribution-packaging.md

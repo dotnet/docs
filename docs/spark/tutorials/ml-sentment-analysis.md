@@ -16,29 +16,66 @@ In this tutorial, you learn how to:
 > [!div class="checklist"]
 >
 > * Write a .NET for Apache Spark app that performs sentiment analysis.
-> * Use netcat to create a data stream
-> * Use user-defined functions and SparkSQL to analyze streaming data
+> * Use the ML.NET model builder in Visual Studio.
+> * 
 
 ## Prerequisites
 
 If this is your first .NET for Apache Spark application, start with the [Getting Started tutorial](get-started.md) to become familiar with the basics.
 
-## Create a console application
+This tutorial uses the ML.NET Model Builder (preview), a visual interface available in Visual Studio. If you do not already have Visual Studio, you can [download the Community version of Visual Studio](https://visualstudio.microsoft.com/downloads/) for free.
 
-1. In your command prompt, run the following commands to create a new console application:
+[Download and install](https://marketplace.visualstudio.com/items?itemName=MLNET.07) ML.NET Model Builder (preview).
 
-   ```console
-   dotnet new console -o mySparkStreamingApp
-   cd mySparkStreamingApp
+## Build your machine learning model
+
+1. Open Visual Studio and create a new C# Console App (.NET Core). Name the project *MLSparkModel*.
+
+1. In **Solution Explorer**, right-click the *MLSparkModel* project. Then select **Add > Machine Learning**.
+
+1. From the ML.NET Model Builder, select the **Sentiment Analysis** scenario tile.
+
+1. On the **Add data** page, upload the *Amazon* reviews data set. 
+
+1. Choose *Column2* from the **Columns to Predict** dropdown.
+
+1. On the **Train** page, set the time to train to *60 seconds* and select **Start training**. Notice the status of your training under **Progress**.
+
+## Create a console app
+
+1. Create another C# Console App (.NET Core) called *myMLSparkApp*.
+
+1. Access the NuGet Package Manager from **Tools > NuGet Package Manager > Manage NuGet Packages for Solution**.
+
+1. Search for **Microsoft.ML** and **Microsoft.Spark**, and install the packages.
+
+1. Double-click on your *myMLSparkApp* C# project and add the following code to add a reference to your *MLSparkModel* project.
+
+   ```xml
+   <ItemGroup>
+       <ProjectReference Include="<path to project>\MLSparkModel\MLSparkModel.Model.csproj" />
+   </ItemGroup>
    ```
 
-   The `dotnet` command creates a `new` application of type `console` for you. The `-o` parameter creates a directory named *mySparkStreamingApp* where your app is stored and populates it with the required files. The `cd mySparkStreamingApp` command changes the directory to the app directory you just created.
+   If you receive an error that the reference could not be found, open a command prompt and navigate to your *myMLSparkApp*. Then, run the following command to clean up dependencies in your project.
 
-1. To use .NET for Apache Spark in an app, install the Microsoft.Spark package. In your console, run the following command:
-
-   ```console
-   dotnet add package Microsoft.Spark
+   ```dotnet cli
+   dotnet restore
    ```
+
+## heading
+
+1. Add the following `using` statements to the top of the *Program.cs* file in *myMLSparkApp*:
+
+   ```csharp
+   using System;
+   using System.Collections.Generic;
+   using Microsoft.ML;
+   using Microsoft.ML.Data;
+   using Microsoft.Spark.Sql;
+   ```
+
+
 
 ## Establish and connect to a data stream
 

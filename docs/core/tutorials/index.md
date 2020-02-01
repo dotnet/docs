@@ -41,6 +41,8 @@ The following tutorials are available for learning about .NET Core.
 - [Unit testing with MSTest and .NET Core](../testing/unit-testing-with-mstest.md)
 - [Developing Libraries with Cross Platform Tools](libraries.md)
 - [Hosting .NET Core from native code](netcore-hosting.md)
-- [Create a custom template for dotnet new](cli-templates-create-item-template.md)
+- [Create a custom item template for the CLI](cli-templates-create-item-template.md)
+- [Create a custom project template for the CLI](cli-templates-create-project-template.md)
+- [Create a template pack for the CLI](cli-templates-create-template-pack.md)
 
 For tutorials about developing ASP.NET Core web applications, see the [ASP.NET Core documentation](/aspnet/core/).

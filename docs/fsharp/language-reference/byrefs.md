@@ -176,14 +176,20 @@ Although these rules strongly restrict usage, they do so to fulfill the promise 
 Byref returns from F# functions or members can be produced and consumed. When consuming a `byref`-returning method, the value is implicitly dereferenced. For example:
 
 ```fsharp
-let safeSum(bytes: Span<byte>) =
-    let mutable sum = 0
+let squareAndPrint (data : byref<int>) = 
+    let squared = data*data    // data is implicitly dereferenced
+    printfn "%d" squared
+```
+
+To return a value byref, the variable which contains the value must live longer than the current scope.
+Also, to return byref, use &value (where value is a variable that lives longer than the current scope).
+
+```fsharp
+let mutable sum = 0
+let safeSum (bytes: Span<byte>) =
     for i in 0 .. bytes.Length - 1 do
         sum <- sum + int bytes.[i]
-    sum
-
-let sum = safeSum(mySpanOfBytes)
-printfn "%d" sum // 'sum' is of type 'int'
+    &sum  // sum lives longer than the scope of this function.
 ```
 
 To avoid the implicit dereference, such as passing a reference through multiple chained calls, use `&x` (where `x` is the value).

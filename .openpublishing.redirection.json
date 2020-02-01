@@ -1137,7 +1137,72 @@
     },
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/sample-xml-documents-linq-to-xml.md",
-      "redirect_url": "/dotnet/csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml-1"
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-typical-purchase-order"
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/sample-xml-file-books-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-books",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/sample-xml-file-consolidated-purchase-orders.md",
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-consolidated-purchase-orders",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-in-a-namespace.md",
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-customers-orders-namespace",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-linq-to-xml-2.md",
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-customers-orders",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-in-a-namespace.md",
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-multiple-purchase-orders-namespace",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-multiple-purchase-orders",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/sample-xml-file-numerical-data-in-a-namespace.md",
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-numerical-data-namespace",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/sample-xml-file-numerical-data-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-numerical-data",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/sample-xml-file-test-configuration-in-a-namespace1.md",
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-test-configuration-namespace",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/sample-xml-file-test-configuration-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-test-configuration",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-in-a-namespace.md",
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-typical-purchase-order-namespace",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml-1.md",
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-typical-purchase-order",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/sample-xsd-file-customers-and-orders1.md",
+      "redirect_url": "/dotnet/standard/linq/sample-xsd-file-customers-orders",
+      "redirect_document_id": true
     },
     {
       "source_path": "docs/csharp/programming-guide/concepts/threading/how-to-use-a-thread-pool.md",
@@ -4040,6 +4105,58 @@
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/namespaces-linq-to-xml.md",
       "redirect_url": "/dotnet/visual-basic/programming-guide/concepts/linq/namespaces-overview-linq-to-xml"
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/sample-xml-file-books-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-books"
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/sample-xml-file-consolidated-purchase-orders.md",
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-consolidated-purchase-orders"
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-in-a-namespace.md",
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-customers-orders-namespace"
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-customers-orders"
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-in-a-namespace.md",
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-multiple-purchase-orders-namespace"
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-multiple-purchase-orders"
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/sample-xml-file-numerical-data-in-a-namespace.md",
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-numerical-data-namespace"
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/sample-xml-file-numerical-data-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-numerical-data"
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/sample-xml-file-test-configuration-in-a-namespace.md",
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-test-configuration-namespace"
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/sample-xml-file-test-configuration-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-test-configuration"
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-in-a-namespace.md",
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-typical-purchase-order-namespace"
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-typical-purchase-order"
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/sample-xsd-file-customers-and-orders.md",
+      "redirect_url": "/dotnet/standard/linq/sample-xsd-file-customers-orders"
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/threading/how-to-use-a-thread-pool.md",

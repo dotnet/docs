@@ -1,11 +1,11 @@
 ---
-title: "Sample XML File: Books (LINQ to XML)"
+title: "Sample XML file: Books - LINQ to XML"
 ms.date: 07/20/2015
-ms.assetid: 27ca5847-2289-40c0-8331-ede67ec59d1c
+ms.assetid: b75ab1a2-fb76-4df9-bd01-c45ec22a29ef
 ---
-# Sample XML File: Books (LINQ to XML)
+# Sample XML file: Books (LINQ to XML)
 
-The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] documentation. The file contains information about books.
+The following XML file is used in various examples in the LINQ to XML documentation. The file contains information about books.
 
 ## books.xml
 
@@ -33,7 +33,3 @@ The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq]
    </Book>
 </Catalog>
 ```
-
-## See also
-
-- [Sample XML Documents (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-documents-linq-to-xml.md)

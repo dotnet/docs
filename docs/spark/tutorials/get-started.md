@@ -37,19 +37,13 @@ If the command runs and prints out information about how to use dotnet, can move
 
 Install [Java 8.1](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) for Windows and MacOS, or [OpenJDK 8](https://openjdk.java.net/install/) for Ubuntu.
 
-Select the appropriate version for your operating system. For example, select **jdk-8u201-windows-x64.exe** for a Windows x64 machine or **jdk-8u231-macosx-x64.dmg** for MacOS. Then, use the command `java` to verify the installation.
+Select the appropriate version for your operating system. For example, select **jdk-8u201-windows-x64.exe** for a Windows x64 machine (as shown below) or **jdk-8u231-macosx-x64.dmg** for MacOS. Then, use the command `java` to verify the installation.
 
 ![Java Download](https://dotnet.microsoft.com/static/images/java-jdk-downloads-windows.png?v=6BbJHoNyDO-PyYVciImr5wzh2AW_YHNcyb3p093AwPA)
 
-### 3. Install 7-zip
+### 3. Install compression software
 
-Apache Spark is downloaded as a compressed .tgz file. Use an extraction program, like 7-zip, to extract the file.
-
-* Visit [7-Zip downloads](https://www.7-zip.org/).
-* In the first table on the page, select the 32-bit x86 or 64-bit x64 download, depending on your operating system.
-* When the download completes, run the installer.
-
-![7Zip Download](https://dotnet.microsoft.com/static/images/7-zip-downloads.png?v=W6qWtFC1tTMKv3YGXz7lBa9F3M22uWyTvkMmunyroNk)
+Apache Spark is downloaded as a compressed .tgz file. Use an extraction program, like [7-Zip](https://www.7-zip.org/) or [WinZip](https://www.winzip.com/), to extract the file.
 
 ### 4. Install Apache Spark
 

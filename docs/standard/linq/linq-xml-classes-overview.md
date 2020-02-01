@@ -12,7 +12,7 @@ This article provides a list of the LINQ to XML classes in the <xref:System.Xml.
 
 ### XAttribute class
 
-<xref:System.Xml.Linq.XAttribute> represents an XML attribute. For detailed information and examples, see [XAttribute class overview](./xattribute-class-overview.md).
+<xref:System.Xml.Linq.XAttribute> represents an XML attribute. For detailed information and examples, see [XAttribute class overview](xattribute-class-overview.md).
 
 ### XCData class
 
@@ -35,7 +35,7 @@ This article provides a list of the LINQ to XML classes in the <xref:System.Xml.
 
 ### XDocument class
 
-<xref:System.Xml.Linq.XDocument> represents an XML document. For detailed information and examples, see [XDocument class overview](./xdocument-class-overview.md).
+<xref:System.Xml.Linq.XDocument> represents an XML document. For detailed information and examples, see [XDocument class overview](xdocument-class-overview.md).
 
 ### XDocumentType class
 
@@ -43,11 +43,11 @@ This article provides a list of the LINQ to XML classes in the <xref:System.Xml.
 
 ### XElement class
 
-<xref:System.Xml.Linq.XElement> represents an XML element. For detailed information and examples, see [XElement class overview](./xelement-class-overview.md).
+<xref:System.Xml.Linq.XElement> represents an XML element. For detailed information and examples, see [XElement class overview](xelement-class-overview.md).
 
 ### XName class
 
-<xref:System.Xml.Linq.XName> represents names of elements (<xref:System.Xml.Linq.XElement>) and attributes (<xref:System.Xml.Linq.XAttribute>). For detailed information and examples, see [XDocument class overview](./xdocument-class-overview.md).
+<xref:System.Xml.Linq.XName> represents names of elements (<xref:System.Xml.Linq.XElement>) and attributes (<xref:System.Xml.Linq.XAttribute>). For detailed information and examples, see [XDocument class overview](xdocument-class-overview.md).
 
 LINQ to XML is designed to make XML names as straightforward as possible. Due to their complexity, XML names are often considered to be an advanced article in XML. Arguably, this complexity comes not from namespaces, which developers use regularly in programming, but from namespace prefixes. Namespace prefixes can be useful to reduce the keystrokes required when you input XML, or to make XML easier to read. However, prefixes are often just a shortcut for using the full XML namespace, and are not required in most cases. LINQ to XML simplifies XML names by resolving all prefixes to their corresponding XML namespace. Prefixes are available, if they are required, through the <xref:System.Xml.Linq.XElement.GetPrefixOfNamespace%2A> method.
 

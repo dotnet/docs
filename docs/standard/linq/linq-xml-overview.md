@@ -143,7 +143,7 @@ Dim contacts As XElement = _
 > [!NOTE]
 > The Visual Basic version of the example uses XML literals. You can also use <xref:System.Xml.Linq.XElement> in Visual Basic, as in the C# version.
 
-For more information, see [Create XML trees in C#](./create-xml-trees-csharp.md) and [Create XML trees in Visual Basic](./create-xml-trees-visual-basic.md).
+For more information, see [XML trees](./functional-construction.md).
 
 ## See also
 

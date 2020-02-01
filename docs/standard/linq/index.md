@@ -1,5 +1,5 @@
 ---
-title: LINQ overview
+title: LINQ overview - .NET
 description: LINQ provides language-level querying capabilities and an API to C# and Visual Basic as a way to write expressive, declarative code.
 author: cartermp
 ms.author: wiwagn
@@ -10,9 +10,9 @@ dev_langs:
   - "vb"
 ---
 
-# LINQ (Language-Integrated Query) overview (C# and Visual Basic)
+# LINQ overview
 
-LINQ provides language-level querying capabilities and a [higher-order function](https://en.wikipedia.org/wiki/Higher-order_function) API to C# and Visual Basic as a way to write expressive, declarative code.
+Language-Integrated Query (LINQ) provides language-level querying capabilities and a [higher-order function](https://en.wikipedia.org/wiki/Higher-order_function) API to C# and Visual Basic as a way to write expressive, declarative code.
 
 ## Example: Language-level query syntax
 
@@ -77,11 +77,11 @@ var petLookup = pets.ToDictionary(pet => pet.RFID);
 Dim petLookup = pets.ToDictionary(Function(pet) pet.RFID)
 ```
 
-The code using LINQ is valuable because it evens the playing field between intent and code when reasoning as a programmer. Another bonus is code brevity. Imagine reducing large portions of a codebase by 1/3 as done above. Pretty sweet deal, right?
+The code using LINQ is valuable because it evens the playing field between intent and code when reasoning as a programmer. Another bonus is code brevity. Imagine reducing large portions of a codebase by 1/3 as done above. Sweet deal, right?
 
 ## Example: LINQ providers simplify data access
 
-For a significant chunk of software out in the wild, everything revolves around dealing with data from some source (Databases, JSON, XML, etc). Often this involves learning a new API for each data source, which can be annoying. LINQ simplifies this by abstracting common elements of data access into a query syntax which looks the same no matter which data source you pick.
+For a significant chunk of software out in the wild, everything revolves around dealing with data from some source (Databases, JSON, XML, and so on). Often this involves learning a new API for each data source, which can be annoying. LINQ simplifies this by abstracting common elements of data access into a query syntax that looks the same no matter which data source you pick.
 
 This finds all XML elements with a specific attribute value:
 
@@ -106,11 +106,11 @@ End Function
 
 Writing code to manually traverse the XML document to perform this task would be far more challenging.
 
-Interacting with XML isn’t the only thing you can do with LINQ Providers. [Linq to SQL](../../framework/data/adonet/sql/linq/index.md) is a fairly bare-bones Object-Relational Mapper (ORM) for an MSSQL Server Database. The [JSON.NET](https://www.newtonsoft.com/json/help/html/LINQtoJSON.htm) library provides efficient JSON Document traversal via LINQ. Furthermore, if there isn’t a library which does what you need, you can also [write your own LINQ Provider](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2012/bb546158(v=vs.110))!
+Interacting with XML isn’t the only thing you can do with LINQ Providers. [Linq to SQL](../../framework/data/adonet/sql/linq/index.md) is a fairly bare-bones Object-Relational Mapper (ORM) for an MSSQL Server Database. The [JSON.NET](https://www.newtonsoft.com/json/help/html/LINQtoJSON.htm) library provides efficient JSON Document traversal via LINQ. Furthermore, if there isn’t a library that does what you need, you can also [write your own LINQ Provider](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2012/bb546158(v=vs.110))!
 
 ## Reasons to use the query syntax
 
-Why use query syntax? This is a question which often comes up. After all, this,
+Why use query syntax? This is a question that often comes up. After all, the following code:
 
 ```csharp
 var filteredItems = myItems.Where(item => item.Foo);
@@ -136,15 +136,15 @@ Dim filteredItems = From item In myItems
 
 Isn’t the API syntax just a more concise way to do the query syntax?
 
-No. The query syntax allows for the use of the **let** clause, which allows you to introduce and bind a variable within the scope of the expression, using it in subsequent pieces of the expression. Reproducing the same code with only the API syntax can be done, but will most likely lead to code which is hard to read.
+No. The query syntax allows for the use of the **let** clause, which allows you to introduce and bind a variable within the scope of the expression, using it in subsequent pieces of the expression. Reproducing the same code with only the API syntax can be done, but will most likely lead to code that is hard to read.
 
 So this begs the question, **should you just use the query syntax?**
 
-The answer to this question is **yes** if...
+The answer to this question is **yes** if:
 
-- Your existing codebase already uses the query syntax
-- You need to scope variables within your queries due to complexity
-- You prefer the query syntax and it won’t distract from your codebase
+- Your existing codebase already uses the query syntax.
+- You need to scope variables within your queries because of complexity.
+- You prefer the query syntax and it won’t distract from your codebase.
 
 The answer to this question is **no** if...
 
@@ -156,7 +156,7 @@ The answer to this question is **no** if...
 
 For a truly comprehensive list of LINQ samples, visit [101 LINQ Samples](https://code.msdn.microsoft.com/101-LINQ-Samples-3fb9811b).
 
-The following is a quick demonstration of some of the essential pieces of LINQ. This is in no way comprehensive, as LINQ provides significantly more functionality than what is showcased here.
+The following examples are a quick demonstration of some of the essential pieces of LINQ. This is in no way comprehensive, as LINQ provides more functionality than what is showcased here.
 
 ### The bread and butter - `Where`, `Select`, and `Aggregate`
 
@@ -385,10 +385,10 @@ In diagram form:
 
 ![PLINQ diagram](./media/index/plinq-diagram.png)
 
-Parallelizable CPU-bound jobs which can be easily expressed via LINQ (in other words, are pure functions and have no side effects) are a great candidate for PLINQ. For jobs which _do_ have a side effect, consider using the [Task Parallel Library](../parallel-programming/task-parallel-library-tpl.md).
+Parallelizable CPU-bound jobs that can be easily expressed via LINQ (in other words, are pure functions and have no side effects) are a great candidate for PLINQ. For jobs that _do_ have a side effect, consider using the [Task Parallel Library](../parallel-programming/task-parallel-library-tpl.md).
 
 ## Further resources
 
 - [101 LINQ Samples](https://code.msdn.microsoft.com/101-LINQ-Samples-3fb9811b)
-- [Linqpad](https://www.linqpad.net/), a playground environment and Database querying engine for C#/F#/Visual Basic
-- [EduLinq](https://codeblog.jonskeet.uk/2011/02/23/reimplementing-linq-to-objects-part-45-conclusion-and-list-of-posts/), an e-book for learning how LINQ-to-objects is implemented
+- [Linqpad](https://www.linqpad.net/), a playground environment and database querying engine for C#, F#, and Visual Basic.
+- [EduLinq](https://codeblog.jonskeet.uk/2011/02/23/reimplementing-linq-to-objects-part-45-conclusion-and-list-of-posts/), an e-book for learning how LINQ-to-objects is implemented.

@@ -1,38 +1,35 @@
 ---
-title: "How to: Build LINQ to XML examples"
+title: "How to build LINQ to XML examples"
 ms.date: 07/20/2015
-dev_langs:
-  - "csharp"
-  - "vb"
 ms.assetid: e5d18fa1-2704-48fe-a44b-1564f97c9e9c
 ---
 
-# How to: Build LINQ to XML examples (C# and Visual Basic)
+# How to build LINQ to XML examples
 
-The various snippets and examples in this documentation use classes and types from a variety of namespaces. When compiling C# code you need to supply appropriate `using` directives, and when compiling Visual Basic code you need to supply appropriate `Imports` statements.  
+The various snippets and examples in this documentation use classes and types from a variety of namespaces. When compiling C# code you need to supply appropriate `using` directives, and when compiling Visual Basic code you need to supply appropriate `Imports` statements.
 
-## Example: Code with `using` directives and `Import` statements  
+## Example
 
 The following code contains the `using` directives that the C# examples require to build and run. Not all `using` directives are required for every example.
 
-```csharp  
-using System;  
-using System.Diagnostics;  
-using System.Collections;  
-using System.Collections.Generic;  
-using System.Collections.Specialized;  
-using System.Text;  
-using System.Linq;  
-using System.Xml;  
-using System.Xml.Linq;  
-using System.Xml.Schema;  
-using System.Xml.XPath;  
-using System.Xml.Xsl;  
-using System.IO;  
-using System.Threading;  
-using System.Reflection;  
-using System.IO.Packaging;  
-```  
+```csharp
+using System;
+using System.Diagnostics;
+using System.Collections;
+using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.Text;
+using System.Linq;
+using System.Xml;
+using System.Xml.Linq;
+using System.Xml.Schema;
+using System.Xml.XPath;
+using System.Xml.Xsl;
+using System.IO;
+using System.Threading;
+using System.Reflection;
+using System.IO.Packaging;
+```
 
 The following code contains the `Imports` statements that the Visual Basic examples require to build and run. Not all `Imports` statements are required for every example.
 
@@ -53,7 +50,7 @@ Imports System.Threading
 Imports System.Reflection
 Imports System.IO.Packaging
 ```
-  
+
 ## See also
 
 - [LINQ to XML overview](./linq-xml-overview.md)

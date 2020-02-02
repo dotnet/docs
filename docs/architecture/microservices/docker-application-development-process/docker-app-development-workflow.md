@@ -436,10 +436,10 @@ If your application only has a single container, you can run it by deploying it 
 You can run a Docker container using the `docker run` command, as shown in Figure 5-9:
 
 ```console
-  docker run -t -d -p 80:5000 cesardl/netcore-webapi-microservice-docker:first
+docker run -t -d -p 80:5000 cesardl/netcore-webapi-microservice-docker:first
 ```
 
-The above command will create a new container instance from the specified image, every time it's run. You can use the `--name` parameter to give a name to the container and then use `docker start {name}` (or use the container id or automatic name) to run an existing container instance.
+The above command will create a new container instance from the specified image, every time it's run. You can use the `--name` parameter to give a name to the container and then use `docker start {name}` (or use the container ID or automatic name) to run an existing container instance.
 
 ![Screenshot running a Docker container using the docker run command.](./media/docker-app-development-workflow/use-docker-run-command.png)
 
@@ -447,7 +447,7 @@ The above command will create a new container instance from the specified image,
 
 In this case, the command binds the internal port 5000 of the container to port 80 of the host machine. This means that the host is listening on port 80 and forwarding to port 5000 on the container.
 
-The hash shown is the container id and it’s also assigned a random readable name if the `--name` option is not used.
+The hash shown is the container ID and it’s also assigned a random readable name if the `--name` option is not used.
 
 #### Using Visual Studio
 
@@ -494,7 +494,7 @@ The important point here is that, as shown in Figure 5-12, in Visual Studio 2017
 
 ### A note about testing and deploying with orchestrators
 
-The docker-compose up and docker run commands (or running and debugging the containers in Visual Studio) are adequate for testing containers in your development environment. But you should not use this approach for production deployments, where you should target orchestrators like [Kubernetes](https://kubernetes.io/) or [Service Fabric](https://azure.microsoft.com/services/service-fabric/). If you're using Kubernetes you have to use [pods](https://kubernetes.io/docs/concepts/workloads/pods/pod/) to organize containers and [services](https://kubernetes.io/docs/concepts/services-networking/service/) to network them. You also use [deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) to organize pod creation and modification.
+The docker-compose up and docker run commands (or running and debugging the containers in Visual Studio) are adequate for testing containers in your development environment. But you should not use this approach for production deployments, where you should target orchestrators like [Kubernetes](https://kubernetes.io/) or [Service Fabric](https://azure.microsoft.com/services/service-fabric/). If you're using Kubernetes, you have to use [pods](https://kubernetes.io/docs/concepts/workloads/pods/pod/) to organize containers and [services](https://kubernetes.io/docs/concepts/services-networking/service/) to network them. You also use [deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) to organize pod creation and modification.
 
 ![Image for the Step 6.](./media/docker-app-development-workflow/step-6-test-app-microservices.png)
 

@@ -95,7 +95,9 @@ set DOTNET_ROOT=%USERPROFILE%\dotnet
 set PATH=%USERPROFILE%\dotnet;%PATH%
 ```
 
-This approach lets you install multiple different versions into separate locations and explicitly choose which application should use which install location by running the application with its own set of environment variable values. Even with the application started under this environment .NET Core will still consider the default global install location (typically `C:\Program Files\dotnet`) which is used by the installers when selecting the best framework for running the application. You can instruct the runtime to only use the custom install location by setting this environment variable as well:
+This approach lets you install multiple different versions into separate locations and explicitly choose which application should use which install location by running the application with its own set of environment variable values.
+
+Even with the application started under this environment .NET Core will still consider the default global install location (typically `C:\Program Files\dotnet`) which is used by the installers when selecting the best framework for running the application. You can instruct the runtime to only use the custom install location by setting this environment variable as well:
 
 ```console
 set DOTNET_MULTILEVEL_LOOKUP=0

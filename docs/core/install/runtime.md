@@ -86,9 +86,9 @@ dotnet-install.ps1 -Channel 3.1 -Runtime aspnetcore
 
 ## Download and manually install
 
-First [download](#all-net-core-downloads) a .NET Core binary release. Then create a directory to install to, for example `%USERPROFILE%\dotnet`. And finally extract the downloaded zip file into that directory.
+To extract the runtime and make the .NET Core CLI commands available at the terminal, first [download](#all-net-core-downloads) a .NET Core binary release. Then, create a directory to install to, for example `%USERPROFILE%\dotnet`. Finally, extract the downloaded zip file into that directory.
 
-.NET Core installed in this way will not be picked up by default, you have to explicitly choose to use it. To do so, change the environment variables with which an application is started:
+By default, .NET Core CLI commands and apps will not use .NET Core installed in this way. You have to explicitly choose to use it. To do so, change the environment variables with which an application is started:
 
 ```
 set DOTNET_ROOT=%USERPROFILE%\dotnet

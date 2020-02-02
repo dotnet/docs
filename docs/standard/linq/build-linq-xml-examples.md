@@ -53,4 +53,4 @@ Imports System.IO.Packaging
 
 ## See also
 
-- [LINQ to XML overview](./linq-xml-overview.md)
+- [LINQ to XML overview](linq-xml-overview.md)

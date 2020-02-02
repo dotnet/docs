@@ -106,4 +106,4 @@ The example produces this output in test.xml:
 
 ## See also
 
-- [LINQ to XML overview](./linq-xml-overview.md)
+- [LINQ to XML overview](linq-xml-overview.md)

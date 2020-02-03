@@ -36,11 +36,7 @@ Use the `NetStandardImplicitPackageVersion` property when you want to specify a 
 
 ### PackageReference
 
-Use the `PackageReference` property lets you specify a NuGet dependency. For example, you may want to reference a single package instead of a [metapackage](../packages.md#metapackages). The `Include` attribute specifies the package ID. The project file snippet in the following example references the [System.Runtime](https://www.nuget.org/packages/System.Runtime/) package.
-
-```xml
-<PackageReference Include="<package-id>" Version="" PrivateAssets="" IncludeAssets="" ExcludeAssets="" />
-```
+The `PackageReference` property lets you specify a NuGet dependency. For example, you may want to reference a single package instead of a [metapackage](../packages.md#metapackages). The `Include` attribute specifies the package ID. The project file snippet in the following example references the [System.Runtime](https://www.nuget.org/packages/System.Runtime/) package.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -53,9 +49,36 @@ Use the `PackageReference` property lets you specify a NuGet dependency. For exa
 
 For more information, see [Package references in project files](/nuget/consume-packages/package-references-in-project-files).
 
+#### Attributes
+
+```xml
+<PackageReference Include="<package-id>" Version="" IncludeAssets="" ExcludeAssets="" PrivateAssets="" />
+```
+
+The required `Version` attribute specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](/nuget/reference/package-versioning#version-ranges-and-wildcards) scheme. The default behavior is a minimum-version, inclusive match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3, )` and means the resolved package will have the version 1.2.3 if it's available or a later version if not.
+
+The `IncludeAssets` attribute specifies which assets belonging to the package specified by `PackageReference` should be consumed. By default, all package assets are included.
+
+The `ExcludeAssets` attribute specifies which assets belonging to the package specified by `PackageReference` should not be consumed.
+
+The `PrivateAssets` attribute specifies which assets belonging to the package specified by `PackageReference` should be consumed but not flow to the next project. The `Analyzers`, `Build`, and `ContentFiles` assets are private, by default, when this attribute is not present.
+
+The :::no-loc text="assets"::: attributes can contain one or more of the following values. Separate multiple values with a semicolon `;` character.
+
+| Value | Effect |
+| - | - |
+| `Compile` | The contents of the *lib* folder are available to compile against. |
+| `Runtime` | The contents of the *runtime* folder are distributed. |
+| `ContentFiles` | The contents of the *contentfiles* folder are used. |
+| `Build` | The props/targets in the *build* folder are used. |
+| `Native` | The contents from native assets are copied to the *output* folder for runtime. |
+| `Analyzers` | The analyzers are used. |
+| `None` | None of the assets are used. (This value cannot be combined.) |
+| `All` | All assets are used. (This value cannot be combined.) |
+
 ### PackageTargetFallback
 
-The `PackageTargetFallback` property allows you to specify a set of compatible targets to be used when restoring packages. It's designed to allow packages that use the dotnet [TxM (Target x Moniker)](/nuget/schema/target-frameworks) to operate with packages that don't declare a dotnet TxM. If you don't add the `PackageTargetFallback` property, then all the packages your project depends on must also have a dotnet TxM.
+The `PackageTargetFallback` property lets you specify a set of compatible targets to be used when restoring packages. It's designed to allow packages that use the dotnet [TxM (Target x Moniker)](/nuget/schema/target-frameworks) to operate with packages that don't declare a dotnet TxM. If you don't add the `PackageTargetFallback` property, then all the packages your project depends on must also have a dotnet TxM.
 
 The following example specifies fallbacks for all targets:
 
@@ -75,7 +98,7 @@ The following example uses the `Condition` attribute to specify fallbacks only f
 
 ### RuntimeIdentifier
 
-The `RuntimeIdentifier` property allows you to specify a single [runtime identifier (RID)](../rid-catalog.md) for the project. The RID enables publishing a self-contained deployment.
+The `RuntimeIdentifier` property lets you specify a single [runtime identifier (RID)](../rid-catalog.md) for the project. The RID enables publishing a self-contained deployment.
 
 ```xml
 <RuntimeIdentifier>ubuntu.16.04-x64</RuntimeIdentifier>
@@ -114,29 +137,6 @@ Use the `TargetFrameworks` property when you want your app to target multiple pl
 ```
 
 For more information, see [Target frameworks in SDK-style projects](../../standard/frameworks.md).
-
-#### Attributes
-
-The required `Version` attribute specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](/nuget/reference/package-versioning#version-ranges-and-wildcards) scheme. The default behavior is a minimum-version, inclusive match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3, )` and means the resolved package will have the version 1.2.3 if it's available or a later version if not.
-
-The `IncludeAssets` attribute specifies which assets belonging to the package specified by `PackageReference` should be consumed. By default, all package assets are included.
-
-The `ExcludeAssets` attribute specifies which assets belonging to the package specified by `PackageReference` should not be consumed.
-
-The `PrivateAssets` attribute specifies which assets belonging to the package specified by `PackageReference` should be consumed but not flow to the next project. The `Analyzers`, `Build`, and `ContentFiles` assets are private, by default, when this attribute is not present.
-
-The :::no-loc text="assets"::: attributes can contain one or more of the following values. Separate multiple values with a semicolon `;` character.
-
-| Value | Effect |
-| - | - |
-| `Compile` | The contents of the *lib* folder are available to compile against. |
-| `Runtime` | The contents of the *runtime* folder are distributed. |
-| `ContentFiles` | The contents of the *contentfiles* folder are used. |
-| `Build` | The props/targets in the *build* folder are used. |
-| `Native` | The contents from native assets are copied to the *output* folder for runtime. |
-| `Analyzers` | The analyzers are used. |
-| `None` | None of the assets are used. (This value cannot be combined.) |
-| `All` | All assets are used. (This value cannot be combined.) |
 
 ## Compile properties
 

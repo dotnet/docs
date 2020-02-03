@@ -1,5 +1,5 @@
 ---
-title: "Performance Counters in ADO.NET"
+title: "Performance Counters"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

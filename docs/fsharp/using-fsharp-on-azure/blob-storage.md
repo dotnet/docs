@@ -238,7 +238,7 @@ A free, standalone app from Microsoft that enables you to work visually with Azu
 
 ### Related guides
 
-- [Getting Started with Azure Blob Storage in C#](https://docs.microsoft.com/samples/azure-samples/storage-blob-dotnet-getting-started/storage-blob-dotnet-getting-started/)
+- [Azure Blob Storage Samples for .NET](https://docs.microsoft.com/samples/azure-samples/storage-blob-dotnet-getting-started/storage-blob-dotnet-getting-started/)
 - [Get started with AzCopy](/azure/storage/common/storage-use-azcopy-v10)
 - [Configure Azure Storage connection strings](/azure/storage/common/storage-configure-connection-string)
 - [Azure Storage Team Blog](https://docs.microsoft.com/archive/blogs/windowsazurestorage/)

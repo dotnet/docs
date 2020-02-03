@@ -9,7 +9,7 @@ This document describes the changes associated with moving from *project.json* t
 
 ## Moving away from project.json
 
-The biggest change in the tooling for .NET Core is certainly the [move away from project.json to csproj](https://devblogs.microsoft.com/dotnet/changes-to-project-json/) as the project system. The latest versions of the command-line tools don't support *project.json* files. That means that it cannot be used to build, run, or publish project.json based applications and libraries. In order to use this version of the tools, migrate your existing projects or start new ones.
+The biggest change in the tooling for .NET Core is certainly the [move away from project.json to csproj](https://devblogs.microsoft.com/dotnet/changes-to-project-json/) as the project system. The latest versions of the command-line tools don't support *project.json* files. That means that it cannot be used to build, run, or publish project.json based applications and libraries. To use this version of the tools, migrate your existing projects or start new ones.
 
 As part of this move, the custom build engine that was developed to build project.json projects was replaced with a mature and fully capable build engine called [MSBuild](https://github.com/Microsoft/msbuild). MSBuild is a well-known engine in the .NET community. It has been a key technology since the platform's first release. Because it needs to build .NET Core applications, MSBuild has been ported to .NET Core and can be used on any platform that .NET Core runs on. One of the main promises of .NET Core is that of a cross-platform development stack, and we have made sure that this move does not break that promise.
 
@@ -24,7 +24,7 @@ Let's start with a quick refresher on Preview 2 layering as shown in the followi
 
 ![Preview 2 tools high-level architecture](media/cli-msbuild-architecture/p2-arch.png)
 
-The layering of the tools is quite simple. At the bottom, the foundation is the .NET Core command-line tools. All other, higher-level tools, such as Visual Studio or Visual Studio Code, depend and rely on the CLI to build projects, restore dependencies, and so on. For example, if Visual Studio wanted to perform a restore operation, it would call into `dotnet restore` ([see note](#dotnet-restore-note)) command in the CLI.
+The layering of the tools is quite simple. At the bottom, the foundation is the .NET Core CLI. All other, higher-level tools, such as Visual Studio or Visual Studio Code, depend and rely on the CLI to build projects, restore dependencies, and so on. For example, if Visual Studio wanted to perform a restore operation, it would call into `dotnet restore` ([see note](#dotnet-restore-note)) command in the CLI.
 
 With the move to the new project system, the previous diagram changes:
 

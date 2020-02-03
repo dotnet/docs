@@ -69,7 +69,7 @@ Delegates that are produced from evaluation of semantically identical [lambda ex
 
 ## Inequality operator !=
 
-The inequality operator `!=` returns `true` if its operands are not equal, `false` otherwise. For the operands of the [built-in types](../keywords/built-in-types-table.md), the expression `x != y` produces the same result as the expression `!(x == y)`. For more information about type equality, see the [Equality operator](#equality-operator-) section.
+The inequality operator `!=` returns `true` if its operands are not equal, `false` otherwise. For the operands of the [built-in types](../builtin-types/built-in-types.md), the expression `x != y` produces the same result as the expression `!(x == y)`. For more information about type equality, see the [Equality operator](#equality-operator-) section.
 
 The following example demonstrates the usage of the `!=` operator:
 

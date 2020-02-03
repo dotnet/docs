@@ -40,5 +40,5 @@ For more information, see [The bool type](~/_csharplang/spec/types.md#the-bool-t
 ## See also
 
 - [C# reference](../index.md)
-- [Built-in types table](../keywords/built-in-types-table.md)
+- [Value types](value-types.md)
 - [true and false operators](../operators/true-false-operators.md)

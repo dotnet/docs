@@ -24,7 +24,7 @@ HRESULT ResumeRuntime();
 
 ## Requirements
 
-**Platforms:** See [.NET Core supported operating systems](../../../core/windows-prerequisites.md#net-core-supported-operating-systems).
+**Platforms:** See [.NET Core supported operating systems](../../../core/install/dependencies.md?tabs=netcore30&pivots=os-windows).
 
 **Header:** CorProf.idl, CorProf.h
 
@@ -34,4 +34,4 @@ HRESULT ResumeRuntime();
 
 ## See also
 
-- [ICorProfilerInfo10 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo10-interface.md)
+- [ICorProfilerInfo10 Interface](icorprofilerinfo10-interface.md)

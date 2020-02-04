@@ -29,7 +29,7 @@ HRESULT ApplyMetaData(
  [in] The identifier of the module whose metadata was changed.  
   
 ## Remarks  
- If metadata changes are made after the [ModuleLoadFinished](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-moduleloadfinished-method.md) callback, you must call this method before using the new metadata.  
+ If metadata changes are made after the [ModuleLoadFinished](icorprofilercallback-moduleloadfinished-method.md) callback, you must call this method before using the new metadata.  
   
  `ApplyMetaData` only supports adding the following types of metadata:  
   
@@ -49,7 +49,7 @@ Starting with .NET Core 3.0, `ApplyMetaData` also supports the following types:
 
 - `TypeDef` records, which you create by calling the [IMetaDataEmit::DefineTypeDef](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-definetypedef-method.md) method.
 
-- `MethodDef` records, which you create by calling the [IMetaDataEmit::DefineMethod](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-definemethod-method.md) method. However, adding virtual methods to an existing type is not supported. Virtual methods must be added before the [ModuleLoadFinished](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-moduleloadfinished-method.md) callback.
+- `MethodDef` records, which you create by calling the [IMetaDataEmit::DefineMethod](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-definemethod-method.md) method. However, adding virtual methods to an existing type is not supported. Virtual methods must be added before the [ModuleLoadFinished](icorprofilercallback-moduleloadfinished-method.md) callback.
 
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -62,4 +62,4 @@ Starting with .NET Core 3.0, `ApplyMetaData` also supports the following types:
   
 ## See also
 
-- [ICorProfilerInfo7 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo7-interface.md)
+- [ICorProfilerInfo7 Interface](icorprofilerinfo7-interface.md)

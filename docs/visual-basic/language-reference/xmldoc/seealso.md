@@ -1,5 +1,5 @@
 ---
-title: "<seealso> (Visual Basic)"
+title: "<seealso>"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "<seealso> XML tag"

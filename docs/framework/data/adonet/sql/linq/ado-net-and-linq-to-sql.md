@@ -1,5 +1,6 @@
 ---
 title: "ADO.NET and LINQ to SQL"
+titleSuffix: ""
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

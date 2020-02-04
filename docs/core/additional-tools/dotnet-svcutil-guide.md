@@ -3,15 +3,14 @@ title: WCF svcutil tool overview
 description: An overview of the Microsoft WCF dotnet-svcutil tool that adds functionality for .NET Core and ASP.NET Core projects, similar to the WCF svcutil tool for .NET Framework projects.
 author: mlacouture
 ms.date: 02/22/2019
-ms.custom: "seodec18"
 ---
 # WCF dotnet-svcutil tool for .NET Core
 
-The Windows Communication Foundation (WCF) **dotnet-svcutil** tool is a .NET Core CLI tool that retrieves metadata from a web service on a network location or from a WSDL file, and generates a WCF class containing client proxy methods that access the web service operations.
+The Windows Communication Foundation (WCF) **dotnet-svcutil** tool is a .NET tool that retrieves metadata from a web service on a network location or from a WSDL file, and generates a WCF class containing client proxy methods that access the web service operations.
 
 Similar to the [**Service Model Metadata - svcutil**](../../framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) tool for .NET Framework projects, the **dotnet-svcutil** is a command-line tool for generating a web service reference compatible with .NET Core and .NET Standard projects.
 
-The **dotnet-svcutil** tool is an alternative option to the [**WCF Web Service Reference**](wcf-web-service-reference-guide.md) Visual Studio connected service provider that first shipped with Visual Studio 2017 version 15.5. The **dotnet-svcutil** tool as a .NET Core CLI tool, is available cross-platform on Linux, macOS, and Windows.
+The **dotnet-svcutil** tool is an alternative option to the [**WCF Web Service Reference**](wcf-web-service-reference-guide.md) Visual Studio connected service provider that first shipped with Visual Studio 2017 version 15.5. The **dotnet-svcutil** tool as a .NET tool, is available cross-platform on Linux, macOS, and Windows.
 
 > [!IMPORTANT]
 > You should only reference services from a trusted source. Adding references from an untrusted source may compromise security.

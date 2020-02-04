@@ -19,7 +19,7 @@ topic_type:
 # ICorDebugEval::NewArray Method
 Allocates a new array of the specified element type and dimensions.  
   
- This method is obsolete in the .NET Framework version 2.0. Use [ICorDebugEval2::NewParameterizedArray](../../../../docs/framework/unmanaged-api/debugging/icordebugeval2-newparameterizedarray-method.md) instead.  
+ This method is obsolete in the .NET Framework version 2.0. Use [ICorDebugEval2::NewParameterizedArray](icordebugeval2-newparameterizedarray-method.md) instead.  
   
 ## Syntax  
   

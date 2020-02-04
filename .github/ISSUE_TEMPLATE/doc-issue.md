@@ -1,14 +1,13 @@
 ---
-name: Doc issue
-about: Create an issue to help us improve
-
+name: .NET doc issue
+about: Report a problem in the .NET documentation
 ---
 
 **Before you open an issue**
 
 If the issue is:
 
-- A simple typo or similar correction, you can submit a PR. See [the contributor guide](https://docs.microsoft.com/contribute/#quick-edits-to-existing-documents) for instructions.
+- A simple typo or similar correction, consider submitting a PR to fix it instead of logging an issue. See [the contributor guide](https://docs.microsoft.com/contribute/#quick-edits-to-existing-documents) for instructions.
 - A general support question, consider asking on a support forum site.
 - A site design concern, create an issue at [MicrosoftDocs/feedback](https://github.com/MicrosoftDocs/feedback/issues/new/choose).
 - A problem completing a tutorial, compare your code with the completed sample.

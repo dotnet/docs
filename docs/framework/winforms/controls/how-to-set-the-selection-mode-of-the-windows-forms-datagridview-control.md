@@ -1,5 +1,5 @@
 ---
-title: "How to: Set the Selection Mode of the Windows Forms DataGridView Control"
+title: Set the Selection Mode of DataGridView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

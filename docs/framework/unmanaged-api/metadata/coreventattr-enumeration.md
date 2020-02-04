@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: dc2b3281-3820-487e-930d-350b66dc6417
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorEventAttr Enumeration
 Contains values that describe the metadata of an event.  

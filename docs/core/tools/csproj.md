@@ -10,7 +10,7 @@ This document outlines the changes that were added to the project files as part 
 
 ## Implicit package references
 
-Metapackages are implicitly referenced based on the target framework(s) specified in the `<TargetFramework>` or `<TargetFrameworks>` property of your project file. `<TargetFrameworks>` is ignored if `<TargetFramework>` is specified, independent of order. For more information, see [Packages, metapackages and frameworks](../packages.md). 
+Metapackages are implicitly referenced based on the target framework(s) specified in the `<TargetFramework>` or `<TargetFrameworks>` property of your project file. `<TargetFrameworks>` is ignored if `<TargetFramework>` is specified, independent of order. For more information, see [Packages, metapackages, and frameworks](../packages.md).
 
 ```xml
  <PropertyGroup>
@@ -50,7 +50,7 @@ When referencing the `Microsoft.AspNetCore.App` or `Microsoft.AspNetCore.All` pa
 
 > Known issue: the .NET Core 2.1 SDK only supported this syntax when the project also uses Microsoft.NET.Sdk.Web. This is resolved in the .NET Core 2.2 SDK.
 
-These references to ASP.NET Core metapackages have a slightly different behavior from most normal NuGet packages. [Framework-dependent deployments](../deploying/index.md#framework-dependent-deployments-fdd) of applications that use these metapackages automatically take advantage of the ASP.NET Core shared framework. When you use the metapackages, **no** assets from the referenced ASP.NET Core NuGet packages are deployed with the application—the ASP.NET Core shared framework contains these assets. The assets in the shared framework are optimized for the target platform to improve application startup time. For more information about shared framework, see [.NET Core distribution packaging](../build/distribution-packaging.md).
+These references to ASP.NET Core metapackages have a slightly different behavior from most normal NuGet packages. [Framework-dependent deployments](../deploying/index.md#framework-dependent-deployments-fdd) of applications that use these metapackages automatically take advantage of the ASP.NET Core shared framework. When you use the metapackages, **no** assets from the referenced ASP.NET Core NuGet packages are deployed with the application—the ASP.NET Core shared framework contains these assets. The assets in the shared framework are optimized for the target platform to improve application startup time. For more information about shared framework, see [.NET Core distribution packaging](../distribution-packaging.md).
 
 If a version *is* specified, it's treated as the *minimum* version of ASP.NET Core shared framework for framework-dependent deployments and as an *exact* version for self-contained deployments. This can have the following consequences:
 
@@ -140,9 +140,9 @@ A `<PackageReference>` item element specifies a [NuGet dependency in the project
 
 #### Version
 
-The required `Version` attribute specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](/nuget/reference/package-versioning#version-ranges-and-wildcards) scheme. The default behavior is an exact version match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3]` for the exact 1.2.3 version of the package.
+The required `Version` attribute specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](/nuget/reference/package-versioning#version-ranges-and-wildcards) scheme. The default behavior is a minimum version, inclusive match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3, )` and means the resolved package will have the version 1.2.3 if available or greater otherwise.
 
-#### IncludeAssets, ExcludeAssets and PrivateAssets
+#### IncludeAssets, ExcludeAssets, and PrivateAssets
 
 `IncludeAssets` attribute specifies which assets belonging to the package specified by `<PackageReference>` should be
 consumed. By default, all package assets are included.
@@ -180,9 +180,11 @@ A `<DotNetCliToolReference>` item element specifies the CLI tool that the user w
 <DotNetCliToolReference Include="<package-id>" Version="" />
 ```
 
+Note that `DotNetCliToolReference` is [now deprecated](https://github.com/dotnet/announcements/issues/107) in favor of [.NET Core Local Tools](https://aka.ms/local-tools).
+
 #### Version
 
-`Version` specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](/nuget/create-packages/dependency-versions#version-ranges) scheme. The default behavior is an exact version match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3]` for the exact 1.2.3 version of the package.
+`Version` specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](/nuget/create-packages/dependency-versions#version-ranges) scheme. The default behavior is a minimum version, inclusive match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3, )` and means the resolved package will have the version 1.2.3 if available or greater otherwise.
 
 ### RuntimeIdentifiers
 
@@ -246,7 +248,7 @@ In SDK-style projects, use an MSBuild target named `PreBuild` or `PostBuild` and
 ```
 
 > [!NOTE]
->You can use any name for the MSBuild targets, but the Visual Studio IDE recognizes `PreBuild` and `PostBuild` targets, so we recommend using those names so that you can edit the commands in the Visual Studio IDE. 
+>You can use any name for the MSBuild targets, but the Visual Studio IDE recognizes `PreBuild` and `PostBuild` targets, so we recommend using those names so that you can edit the commands in the Visual Studio IDE.
 
 ## NuGet metadata properties
 
@@ -278,7 +280,7 @@ A long description of the package for UI display.
 
 ### Description
 
-A long description for the assembly. If `PackageDescription` is not specified then this property is also used as the description of the package.
+A long description for the assembly. If `PackageDescription` is not specified, then this property is also used as the description of the package.
 
 ### Copyright
 
@@ -319,7 +321,7 @@ license-expression =  1*1(simple-expression / compound-expression / UNLICENSED)
 
 Path to a license file within the package if you are using a license that hasn’t been assigned an SPDX identifier, or it is a custom license (Otherwise `PackageLicenseExpression` is preferred)
 
-Replaces `PackageLicenseUrl`, can't be combined with `PackageLicenseExpression` and requires Visual Studio 15.9.4, .NET SDK 2.1.502 or 2.2.101, or newer.
+Replaces `PackageLicenseUrl`, can't be combined with `PackageLicenseExpression`, and requires Visual Studio version 15.9.4 and .NET SDK 2.1.502 or 2.2.101 or newer.
 
 You will need to ensure the license file is packed by adding it explicitly to the project, example usage:
 
@@ -334,7 +336,7 @@ You will need to ensure the license file is packed by adding it explicitly to th
 
 ### PackageLicenseUrl
 
-An URL to the license that is applicable to the package. (_deprecated since Visual Studio 15.9.4, .NET SDK 2.1.502 and 2.2.101_)
+A URL to the license that is applicable to the package. (_deprecated since Visual Studio 15.9.4, .NET SDK 2.1.502 and 2.2.101_)
 
 ### PackageIconUrl
 
@@ -364,7 +366,7 @@ This Boolean value indicates whether the pack process should create a source pac
 
 ### IsTool
 
-Specifies whether all output files are copied to the *tools* folder instead of the *lib* folder. Note that this is different from a `DotNetCliTool` which is specified by setting the `PackageType` in the *.csproj* file.
+Specifies whether all output files are copied to the *tools* folder instead of the *lib* folder. This is different from a `DotNetCliTool`, which is specified by setting the `PackageType` in the *.csproj* file.
 
 ### RepositoryUrl
 
@@ -390,7 +392,7 @@ Specifies the minimum version of the NuGet client that can install this package,
 
 ### IncludeBuildOutput
 
-This Boolean values specifies whether the build output assemblies should be packed into the *.nupkg* file or not.
+This Boolean value specifies whether the build output assemblies should be packed into the *.nupkg* file or not.
 
 ### IncludeContentInPack
 
@@ -425,7 +427,7 @@ Semicolon separated list of key=value pairs.
 
 ### Properties per attribute
 
-Each attribute has a property that control its content and another to disable its generation as shown in the following table:
+As shown in the following table, each attribute has a property that controls its content and another that disables its generation:
 
 | Attribute                                                      | Property               | Property to disable                             |
 |----------------------------------------------------------------|------------------------|-------------------------------------------------|

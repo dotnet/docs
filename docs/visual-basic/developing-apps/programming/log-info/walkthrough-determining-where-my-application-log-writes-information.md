@@ -1,5 +1,5 @@
 ---
-title: "Determining Where My.Application.Log Writes Information (Visual Basic)"
+title: "Determining Where My.Application.Log Writes Information"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "My.Log object, output location"

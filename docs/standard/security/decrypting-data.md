@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "asymmetric decryption"
   - "decryption"
 ms.assetid: 9b266b6c-a9b2-4d20-afd8-b3a0d8fd48a0
-author: "mairaw"
-ms.author: "mairaw"
 ---
 
 # Decrypting Data
@@ -38,12 +36,11 @@ CryptoStream cryptStream = new CryptoStream(myStream, rmCrypto.CreateDecryptor(K
 The following example shows the entire process of creating a stream, decrypting the stream, reading from the stream, and closing the streams. A <xref:System.Net.Sockets.TcpListener> object is created that initializes a network stream when a connection to the listening object is made. The network stream is then decrypted using the **CryptoStream** class and the **RijndaelManaged** class. This example assumes that the key and IV values have been either successfully transferred or previously agreed upon. It does not show the code needed to encrypt and transfer these values.
 
 ```vb
-Imports System
-Imports System.Net.Sockets
-Imports System.Threading
 Imports System.IO
 Imports System.Net
+Imports System.Net.Sockets
 Imports System.Security.Cryptography
+Imports System.Threading
 
 Module Module1
     Sub Main()
@@ -100,11 +97,11 @@ End Module
 
 ```csharp
 using System;
-using System.Net.Sockets;
-using System.Threading;
 using System.IO;
 using System.Net;
+using System.Net.Sockets;
 using System.Security.Cryptography;
+using System.Threading;
 
 class Class1
 {

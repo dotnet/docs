@@ -1,5 +1,5 @@
 ---
-title: "Scope of Default Namespaces in Visual Basic"
+title: "Scope of Default Namespaces"
 ms.date: 07/20/2015
 ms.assetid: d4cce80c-342f-4097-be8b-40ab0bfa90ba
 ---

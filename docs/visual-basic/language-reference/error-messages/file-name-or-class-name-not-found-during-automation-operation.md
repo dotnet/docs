@@ -1,5 +1,5 @@
 ---
-title: "File name or class name not found during Automation operation (Visual Basic)"
+title: "File name or class name not found during Automation operation"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID432"

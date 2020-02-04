@@ -1,5 +1,5 @@
 ---
-title: "AttributeUsage (Visual Basic)"
+title: "AttributeUsage"
 ms.date: 07/20/2015
 ms.assetid: 48757216-c21d-4051-86d5-8a3e03c39d2c
 ---
@@ -30,10 +30,6 @@ End Class
 The first `AttributeUsage` argument must be one or more elements of the <xref:System.AttributeTargets> enumeration. Multiple target types can be linked together with the OR operator, like this:
 
 ```vb
-Imports System
-```
-
-```vb
 <AttributeUsage(AttributeTargets.Property Or AttributeTargets.Field)>
 Class NewPropertyOrFieldAttribute
     Inherits Attribute
@@ -41,10 +37,6 @@ End Class
 ```
 
 If the `AllowMultiple` argument is set to `true`, then the resulting attribute can be applied more than once to a single entity, like this:
-
-```vb
-Imports System
-```
 
 ```vb
 <AttributeUsage(AttributeTargets.Class, AllowMultiple:=True)>
@@ -60,10 +52,6 @@ End Class
 In this case `MultiUseAttr` can be applied repeatedly because `AllowMultiple` is set to `true`. Both formats shown for applying multiple attributes are valid.
 
 If `Inherited` is set to `false`, then the attribute is not inherited by classes that are derived from a class that is attributed. For example:
-
-```vb
-Imports System
-```
 
 ```vb
 <AttributeUsage(AttributeTargets.Class, Inherited:=False)>
@@ -92,10 +80,6 @@ For more information, see [Accessing Attributes by Using Reflection (Visual Basi
 ## Example
 
 The following example demonstrates the effect of the `Inherited` and `AllowMultiple` arguments to the `AttributeUsage` attribute, and how the custom attributes applied to a class can be enumerated.
-
-```vb
-Imports System
-```
 
 ```vb
 ' Create some custom attributes:

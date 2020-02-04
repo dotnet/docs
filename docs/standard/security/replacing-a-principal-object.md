@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "security [.NET Framework], replacing principal objects"
   - "security [.NET Framework], principals"
 ms.assetid: c323687e-b196-487b-beba-f38f9b3f961b
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Replacing a Principal Object
 Applications that provide authentication services must be able to replace the **Principal** object (<xref:System.Security.Principal.IPrincipal>) for a given thread. Furthermore, the security system must help protect the ability to replace **Principal** objects because a maliciously attached, incorrect **Principal** compromises the security of your application by claiming an untrue identity or role. Therefore, applications that require the ability to replace **Principal** objects must be granted the <xref:System.Security.Permissions.SecurityPermission?displayProperty=nameWithType> object for principal control. (Note that this permission is not required for performing role-based security checks or for creating **Principal** objects.)  

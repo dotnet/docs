@@ -1,5 +1,5 @@
 ---
-title: "Skip Clause (Visual Basic)"
+title: "Skip Clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.QuerySkip"

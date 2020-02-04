@@ -1,5 +1,5 @@
 ---
-title: "How to: Specify Default Values for New Rows in the Windows Forms DataGridView Control"
+title: Specify Default Values for New Rows in DataGridView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -15,11 +15,9 @@ helpviewer_keywords:
 ms.assetid: 0eed759f-cce8-405d-88dc-9ee293a38928
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo::GetFunctionFromToken Method
-Gets the ID of a function. This method is obsolete in the .NET Framework version 2.0. Use the [ICorProfilerInfo2::GetFunctionFromTokenAndTypeArgs](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-getfunctionfromtokenandtypeargs-method.md) method instead.  
+Gets the ID of a function. This method is obsolete in the .NET Framework version 2.0. Use the [ICorProfilerInfo2::GetFunctionFromTokenAndTypeArgs](icorprofilerinfo2-getfunctionfromtokenandtypeargs-method.md) method instead.  
   
 ## Syntax  
   
@@ -44,4 +42,4 @@ HRESULT GetFunctionFromToken(
   
 ## See also
 
-- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+- [ICorProfilerInfo Interface](icorprofilerinfo-interface.md)

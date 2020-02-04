@@ -1,5 +1,5 @@
 ---
-title: "-platform (Visual Basic)"
+title: "-platform"
 ms.date: 03/13/2018
 helpviewer_keywords: 
   - "platform compiler option [Visual Basic]"

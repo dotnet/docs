@@ -1,5 +1,5 @@
 ---
-title: "Efficient Combination of Operators (Visual Basic)"
+title: "Efficient Combination of Operators"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "expressions [Visual Basic], parentheses"

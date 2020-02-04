@@ -1,5 +1,5 @@
 ---
-title: "Declared Elements in Visual Basic"
+title: "Declared Elements"
 ms.date: 07/20/2015
 ms.assetid: 0d1d1bb5-ac0b-485f-8922-cdcec5574c79
 ---

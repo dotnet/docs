@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: da984f89-4f53-4ab0-ae6f-3e2ee6085994
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::RuntimeThreadResumed Method
 Notifies the profiler that the specified thread has resumed after being suspended.  
@@ -43,5 +41,5 @@ HRESULT RuntimeThreadResumed(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
-- [RuntimeThreadSuspended Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-runtimethreadsuspended-method.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [RuntimeThreadSuspended Method](icorprofilercallback-runtimethreadsuspended-method.md)

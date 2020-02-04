@@ -1,6 +1,6 @@
 ---
 title: "-nostdlib (C# Compiler Options)"
-ms.date: 07/20/2015
+ms.date: 12/20/2019
 f1_keywords:
   - "/nostdlib"
 helpviewer_keywords:
@@ -28,7 +28,7 @@ If you do not specify **-nostdlib**, mscorlib.dll is imported into your program 
 ### To set this compiler option in Visual Studio
 
 > [!NOTE]
-> The following instructions apply to Visual Studio 2015 (and earlier versions) only. The **Do not reference mscorlib.dll** build property doesn't exist in Visual Studio 2017.
+> The following instructions apply to Visual Studio 2015 (and earlier versions) only. The **Do not reference mscorlib.dll** build property doesn't exist in newer versions of Visual Studio.
 
 1. Open the **Properties** page for the project.
 

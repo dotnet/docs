@@ -1,5 +1,5 @@
 ---
-title: "Rendering a Windows Forms Control"
+title: Render a control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

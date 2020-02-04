@@ -1,5 +1,5 @@
 ---
-title: "How to: Freeze Columns in the Windows Forms DataGridView Control Using the Designer"
+title: Freeze Columns in DataGridView Control Using the Designer
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Windows Forms, columns"

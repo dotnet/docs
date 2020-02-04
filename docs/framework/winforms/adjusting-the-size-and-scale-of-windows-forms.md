@@ -1,5 +1,5 @@
 ---
-title: "Adjusting the size and scale of Windows Forms"
+title: "Adjust the size and scale"
 ms.date: "04/07/2017"
 helpviewer_keywords: 
   - "Windows Forms, changing size"

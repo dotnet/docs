@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: fe4150e8-071d-43fb-8e06-c3c616dbeed2
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorSetENC Enumeration
 Contains values used to influence behavior during the generation of metadata.  

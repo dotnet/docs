@@ -1,5 +1,5 @@
 ---
-title: "Private Protected (Visual Basic)"
+title: "Private Protected"
 ms.date: 05/10/2018
 helpviewer_keywords:
   - "Private Protected keyword [Visual Basic]"

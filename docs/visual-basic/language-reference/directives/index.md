@@ -1,5 +1,5 @@
 ---
-title: "Directives (Visual Basic)"
+title: "Directives"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "directives, Visual Basic compiler"
@@ -37,4 +37,3 @@ The topics in this section document the Visual Basic source code compiler direct
 
  [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)  
   
- [Visual Basic](../../../visual-basic/index.md)

@@ -6,7 +6,6 @@ helpviewer_keywords:
   - "design patterns in class libraries"
   - "class library design guidelines [.NET Framework], design patterns"
 ms.assetid: f7bd1361-4ab2-4132-972d-a044b8f197e1
-author: "KrzysztofCwalina"
 ---
 # Common Design Patterns
 There are numerous books on software patterns, pattern languages, and antipatterns that address the very broad subject of patterns. Thus, this chapter provides guidelines and discussion related to a very limited set of patterns that are used frequently in the design of the .NET Framework APIs.  

@@ -24,24 +24,27 @@ HRESULT EnumerateObjectReferences( [in] ObjectID objectId,
                                    [in] void* clientData);
 ```
 
-#### Parameters
+## Parameters
 
-`objectId` \
-[in] The object to enumerate references on.
+- `objectId`
 
-`callback` \
-[in] The function that will be called with the references for the object.
+  \[in] The object to enumerate references on.
 
-`clientData` \
-[in] Profiler-provided data to pass to the `callback` function.
+- `callback`
+
+  \[in] The function that will be called with the references for the object.
+
+- `clientData`
+
+  \[in] Profiler-provided data to pass to the `callback` function.
 
 ## Remarks
 
-The `EnumerateObjectReferences` method is similar to [ObjectReferences](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-objectreferences-method.md), except that it walks the references on demand for the profiler instead of pre-allocating an array to store the references.
+The `EnumerateObjectReferences` method is similar to [ObjectReferences](icorprofilercallback-objectreferences-method.md), except that it walks the references on demand for the profiler instead of pre-allocating an array to store the references.
 
 ## Requirements
 
-**Platforms:** See [.NET Core supported operating systems](../../../core/windows-prerequisites.md#net-core-supported-operating-systems).
+**Platforms:** See [.NET Core supported operating systems](../../../core/install/dependencies.md?tabs=netcore30&pivots=os-windows).
 
 **Header:** CorProf.idl, CorProf.h
 
@@ -51,4 +54,4 @@ The `EnumerateObjectReferences` method is similar to [ObjectReferences](../../..
 
 ## See also
 
-- [ICorProfilerInfo10 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo10-interface.md)
+- [ICorProfilerInfo10 Interface](icorprofilerinfo10-interface.md)

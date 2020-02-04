@@ -1,5 +1,5 @@
 ---
-title: "Private (Visual Basic)"
+title: "Private"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Private"
@@ -59,7 +59,8 @@ Specifies that one or more declared programming elements are accessible only fro
 - [Protected](../../../visual-basic/language-reference/modifiers/protected.md)
 - [Friend](../../../visual-basic/language-reference/modifiers/friend.md)
 - [Private Protected](./private-protected.md)
-- [Protected Friend](./protected-friend.md)    [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)
+- [Protected Friend](./protected-friend.md)
+- [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)
 - [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)
 - [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)
 - [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

@@ -1,5 +1,5 @@
 ---
-title: "How to: Access Characters in Strings in Visual Basic"
+title: "How to: Access Characters in Strings"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "strings [Visual Basic], accessing characters"

@@ -22,14 +22,14 @@ Represents a step in code execution that is performed by a debugger, serves as a
   
 |Method|Description|  
 |------------|-----------------|  
-|[Deactivate Method](../../../../docs/framework/unmanaged-api/debugging/icordebugstepper-deactivate-method.md)|Causes this `ICorDebugStepper` to cancel the last step command it received.|  
-|[IsActive Method](../../../../docs/framework/unmanaged-api/debugging/icordebugstepper-isactive-method.md)|Gets a value that indicates whether this `ICorDebugStepper` is currently executing a step.|  
-|[SetInterceptMask Method](../../../../docs/framework/unmanaged-api/debugging/icordebugstepper-setinterceptmask-method.md)|Sets a CorDebugIntercept value that specifies the types of code that are stepped into.|  
-|[SetRangeIL Method](../../../../docs/framework/unmanaged-api/debugging/icordebugstepper-setrangeil-method.md)|Sets a value that indicates whether calls to [ICorDebugStepper::StepRange](../../../../docs/framework/unmanaged-api/debugging/icordebugstepper-steprange-method.md) pass argument values relative to the native code or to Microsoft intermediate language (MSIL) code of the method that is being stepped through.|  
-|[SetUnmappedStopMask Method](../../../../docs/framework/unmanaged-api/debugging/icordebugstepper-setunmappedstopmask-method.md)|Sets a CorDebugUnmappedStop value that specifies the type of unmapped code in which execution will halt.|  
-|[Step Method](../../../../docs/framework/unmanaged-api/debugging/icordebugstepper-step-method.md)|Causes this `ICorDebugStepper` to single-step through its containing thread, and optionally, to continue single-stepping through functions that are called within the thread.|  
-|[StepOut Method](../../../../docs/framework/unmanaged-api/debugging/icordebugstepper-stepout-method.md)|Causes this `ICorDebugStepper` to single-step through its containing thread, and to complete when the current frame returns control to the calling frame.|  
-|[StepRange Method](../../../../docs/framework/unmanaged-api/debugging/icordebugstepper-steprange-method.md)|Causes this `ICorDebugStepper` to single-step through its containing thread, and to return when it reaches code beyond the last of the specified ranges.|  
+|[Deactivate Method](icordebugstepper-deactivate-method.md)|Causes this `ICorDebugStepper` to cancel the last step command it received.|  
+|[IsActive Method](icordebugstepper-isactive-method.md)|Gets a value that indicates whether this `ICorDebugStepper` is currently executing a step.|  
+|[SetInterceptMask Method](icordebugstepper-setinterceptmask-method.md)|Sets a CorDebugIntercept value that specifies the types of code that are stepped into.|  
+|[SetRangeIL Method](icordebugstepper-setrangeil-method.md)|Sets a value that indicates whether calls to [ICorDebugStepper::StepRange](icordebugstepper-steprange-method.md) pass argument values relative to the native code or to Microsoft intermediate language (MSIL) code of the method that is being stepped through.|  
+|[SetUnmappedStopMask Method](icordebugstepper-setunmappedstopmask-method.md)|Sets a CorDebugUnmappedStop value that specifies the type of unmapped code in which execution will halt.|  
+|[Step Method](icordebugstepper-step-method.md)|Causes this `ICorDebugStepper` to single-step through its containing thread, and optionally, to continue single-stepping through functions that are called within the thread.|  
+|[StepOut Method](icordebugstepper-stepout-method.md)|Causes this `ICorDebugStepper` to single-step through its containing thread, and to complete when the current frame returns control to the calling frame.|  
+|[StepRange Method](icordebugstepper-steprange-method.md)|Causes this `ICorDebugStepper` to single-step through its containing thread, and to return when it reaches code beyond the last of the specified ranges.|  
   
 ## Remarks  
  The `ICorDebugStepper` interface serves the following purposes:  
@@ -58,4 +58,4 @@ Represents a step in code execution that is performed by a debugger, serves as a
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

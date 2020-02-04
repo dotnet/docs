@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 91a7ce63-f5b8-4f16-b2c4-e1d0baa88944
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ExportType Method
 Specifies that a type is exportable.  

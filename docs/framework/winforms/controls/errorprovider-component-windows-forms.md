@@ -1,5 +1,5 @@
 ---
-title: "ErrorProvider Component (Windows Forms)"
+title: "ErrorProvider Component"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "error messages [Windows Forms], displaying"

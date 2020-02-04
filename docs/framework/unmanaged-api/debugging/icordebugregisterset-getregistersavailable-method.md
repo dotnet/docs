@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugRegisterSet::GetRegistersAvailable Method
-Gets a bit mask indicating which registers in this [ICorDebugRegisterSet](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-interface.md) are currently available.  
+Gets a bit mask indicating which registers in this [ICorDebugRegisterSet](icordebugregisterset-interface.md) are currently available.  
   
 ## Syntax  
   
@@ -47,5 +47,5 @@ HRESULT GetRegistersAvailable (
   
 ## See also
 
-- [ICorDebugRegisterSet Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-interface.md)
-- [ICorDebugRegisterSet2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset2-interface.md)
+- [ICorDebugRegisterSet Interface](icordebugregisterset-interface.md)
+- [ICorDebugRegisterSet2 Interface](icordebugregisterset2-interface.md)

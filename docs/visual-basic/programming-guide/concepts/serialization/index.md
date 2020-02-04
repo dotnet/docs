@@ -1,5 +1,5 @@
 ---
-title: "Serialization (Visual Basic)"
+title: "Serialization"
 ms.date: 07/20/2015
 ms.assetid: 67379a76-5465-4af8-a781-0b0b25a62d9a
 ---

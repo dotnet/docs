@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 0da1ef80-d242-4636-87d0-43e0470b342a
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo::ForceGC Method
 Forces garbage collection to occur within the common language runtime (CLR).  
@@ -41,4 +39,4 @@ HRESULT ForceGC();
   
 ## See also
 
-- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+- [ICorProfilerInfo Interface](icorprofilerinfo-interface.md)

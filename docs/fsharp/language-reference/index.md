@@ -1,5 +1,5 @@
 ---
-title: F# Language Reference
+title: Language Reference
 description: Find F# language feature information from this reference to language tokens, concepts, types, expressions, and compiler-supported construct topics.
 ms.date: 05/16/2016
 ---
@@ -104,7 +104,3 @@ The following table lists topics that describe special compiler-supported constr
 |[Compiler Options](compiler-options.md)|Describes the command-line options for the F# compiler.|
 |[Compiler Directives](compiler-directives.md)|Describes processor directives and compiler directives.|
 |[Source Line, File, and Path Identifiers](source-line-file-path-identifiers.md)|Describes the identifiers `__LINE__`, `__SOURCE_DIRECTORY__` and `__SOURCE_FILE__`, which are built-in values that enable you to access the source line number, directory and file name in your code.|
-
-## See also
-
-- [Visual F#](../index.md)

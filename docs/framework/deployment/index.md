@@ -9,8 +9,6 @@ helpviewer_keywords:
   - ".NET Framework, deploying"
   - ".NET Framework application deployment"
 ms.assetid: 238d8284-6042-4a38-a7f6-1ee8efd719da
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Deploying the .NET Framework and Applications
 
@@ -159,7 +157,7 @@ Security considerations can also affect how you deploy your application. Securit
 |[How the Runtime Locates Assemblies](how-the-runtime-locates-assemblies.md)|Describes how the common language runtime determines which assembly to use to fulfill a binding request.|
 |[Best Practices for Assembly Loading](best-practices-for-assembly-loading.md)|Discusses ways to avoid problems of type identity that can lead to <xref:System.InvalidCastException>, <xref:System.MissingMethodException>, and other errors.|
 |[Reducing System Restarts During .NET Framework 4.5 Installations](reducing-system-restarts.md)|Describes the Restart Manager, which prevents reboots whenever possible, and explains how applications that install the .NET Framework can take advantage of it.|
-|[Deployment Guide for Administrators](guide-for-administrators.md)|Explains how a system administrator can deploy the .NET Framework and its system dependencies across a network by using System Center Configuration Manager (SCCM).|
+|[Deployment Guide for Administrators](guide-for-administrators.md)|Explains how a system administrator can deploy the .NET Framework and its system dependencies across a network by using Microsoft Endpoint Configuration Manager.|
 |[Deployment Guide for Developers](deployment-guide-for-developers.md)|Explains how developers can install .NET Framework on their users' computers with their applications.|
 |[Deploying Applications, Services, and Components](/visualstudio/deployment/deploying-applications-services-and-components)|Discusses deployment options in Visual Studio, including instructions for publishing an application using the ClickOnce and Windows Installer technologies.|
 |[Publishing ClickOnce Applications](/visualstudio/deployment/publishing-clickonce-applications)|Describes how to package a Windows Forms application and deploy it with ClickOnce to client computers on a network.|

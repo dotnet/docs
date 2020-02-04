@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 2c33f0f7-75b2-4c19-b2c7-c94b54997576
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerFunctionControl::SetILFunctionBody Method
 Replaces the Common Intermediate Language (CIL) body of the method.  
@@ -44,7 +42,7 @@ HRESULT SetILFunctionBody(
 |S_OK|The replacement was successful.|  
   
 ## Remarks  
- Unlike the [ICorProfilerInfo::SetILFunctionBody](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-setilfunctionbody-method.md) method, the `SetILFunctionBody` method manages the memory required for the new CIL body. This means that the CIL body provided by the profiler does not have to be allocated by using the [IMethodMalloc](../../../../docs/framework/unmanaged-api/profiling/imethodmalloc-interface.md) interface or allocated within a particular range. It can be allocated on any heap. The profiler can free the memory used for its CIL body after `SetILFunctionBody` returns.  
+ Unlike the [ICorProfilerInfo::SetILFunctionBody](icorprofilerinfo-setilfunctionbody-method.md) method, the `SetILFunctionBody` method manages the memory required for the new CIL body. This means that the CIL body provided by the profiler does not have to be allocated by using the [IMethodMalloc](imethodmalloc-interface.md) interface or allocated within a particular range. It can be allocated on any heap. The profiler can free the memory used for its CIL body after `SetILFunctionBody` returns.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -57,4 +55,4 @@ HRESULT SetILFunctionBody(
   
 ## See also
 
-- [ICorProfilerFunctionControl Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerfunctioncontrol-interface.md)
+- [ICorProfilerFunctionControl Interface](icorprofilerfunctioncontrol-interface.md)

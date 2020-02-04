@@ -1,5 +1,5 @@
 ---
-title: "How to: Sort An Array in Visual Basic"
+title: "How to: Sort An Array"
 ms.date: 07/20/2015
 f1_keywords: 
   - "Array.Sort"

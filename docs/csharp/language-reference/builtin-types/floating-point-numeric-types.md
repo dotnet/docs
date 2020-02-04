@@ -46,8 +46,8 @@ Because the `decimal` type has more precision and a smaller range than both `flo
 
 You can mix [integral](integral-numeric-types.md) types and floating-point types in an expression. In this case, the integral types are converted to floating-point types. The evaluation of the expression is performed according to the following rules:
 
-- If one of the floating-point types is `double`, the expression evaluates to `double`, or to [bool](../keywords/bool.md) in relational and equality comparisons.
-- If there is no `double` type in the expression, the expression evaluates to `float`, or to [bool](../keywords/bool.md) in relational and equality comparisons.
+- If one of the floating-point types is `double`, the expression evaluates to `double`, or to [bool](bool.md) in relational and equality comparisons.
+- If there is no `double` type in the expression, the expression evaluates to `float`, or to [bool](bool.md) in relational and equality comparisons.
 
 A floating-point expression can contain the following sets of values:
 
@@ -114,7 +114,6 @@ For more information, see the following sections of the [C# language specificati
 - [C# reference](../index.md)
 - [Built-in types table](../keywords/built-in-types-table.md)
 - [Integral types](integral-numeric-types.md)
-- [Formatting numeric results table](../keywords/formatting-numeric-results-table.md)
 - [Standard numeric format strings](../../../standard/base-types/standard-numeric-format-strings.md)
 - [Numerics in .NET](../../../standard/numerics.md)
 - <xref:System.Numerics.Complex?displayProperty=nameWithType>

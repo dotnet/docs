@@ -8,8 +8,6 @@ dev_langs:
 helpviewer_keywords: 
   - "BlockingCollection, overview"
 ms.assetid: 987ea3d7-0ad5-4238-8b64-331ce4eb3f0b
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # BlockingCollection Overview
 <xref:System.Collections.Concurrent.BlockingCollection%601> is a thread-safe collection class that provides the following features:  

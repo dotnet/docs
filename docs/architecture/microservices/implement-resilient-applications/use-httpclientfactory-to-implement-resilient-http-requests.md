@@ -31,7 +31,7 @@ To address those mentioned issues and make the management of `HttpClient` instan
 - Manage the lifetime of `HttpClientMessageHandlers` to avoid the mentioned problems/issues that can occur when managing `HttpClient` lifetimes yourself.
 
 > [!NOTE]
-> `HttpClientFactory` is tightly tied to the dependency injection (DI) implementation in the `Microsoft.Extensions.DependencyInjection` NuGet package. For more information about using other dependency injection containers, see this [GitHub discussion](https://github.com/aspnet/Extensions/issues/1345).
+> `HttpClientFactory` is tightly tied to the dependency injection (DI) implementation in the `Microsoft.Extensions.DependencyInjection` NuGet package. For more information about using other dependency injection containers, see this [GitHub discussion](https://github.com/dotnet/extensions/issues/1345).
 
 ## Multiple ways to use HttpClientFactory
 
@@ -182,14 +182,14 @@ Up to this point, the code shown is just performing regular Http requests, but t
 - **Using HttpClientFactory in .NET Core**  
   [https://docs.microsoft.com/aspnet/core/fundamentals/http-requests](/aspnet/core/fundamentals/http-requests)
 
-- **HttpClientFactory source code in the `aspnet/Extensions` GitHub repository**  
-  <https://github.com/aspnet/Extensions/tree/master/src/HttpClientFactory>
+- **HttpClientFactory source code in the `dotnet/extensions` GitHub repository**  
+  <https://github.com/dotnet/extensions/tree/master/src/HttpClientFactory>
 
 - **Polly (.NET resilience and transient-fault-handling library)**  
   <http://www.thepollyproject.org/>
   
 - **Using HttpClientFactory without dependency injection (GitHub issue)**  
-  <https://github.com/aspnet/Extensions/issues/1345>
+  <https://github.com/dotnet/extensions/issues/1345>
 
 >[!div class="step-by-step"]
 >[Previous](explore-custom-http-call-retries-exponential-backoff.md)

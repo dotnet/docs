@@ -246,7 +246,7 @@ For more information about app startup, see [App startup](app-startup.md).
 
 ## Migrate HTTP modules and handlers to middleware
 
-HTTP modules and handlers are common patterns in Web Forms to control the HTTP request pipeline. Classes that implement `IHttpModule` or `IHttpHandler` could be registered and process incoming requests. Web Forms configures modules and handlers in the *web.config* file. Web Forms is also heavily based on app lifecycle event handling. ASP.NET Core uses middleware instead. Middlewares are registered in the `Configure` method of the `Startup` class. Middleware execution order is determined by the registration order.
+HTTP modules and handlers are common patterns in Web Forms to control the HTTP request pipeline. Classes that implement `IHttpModule` or `IHttpHandler` could be registered and process incoming requests. Web Forms configures modules and handlers in the *web.config* file. Web Forms is also heavily based on app lifecycle event handling. ASP.NET Core uses middleware instead. Middleware is registered in the `Configure` method of the `Startup` class. Middleware execution order is determined by the registration order.
 
 In the [Enable startup process](#enable-startup-process) section, a lifecycle event was raised by Web Forms as the `Application_BeginRequest` method. This event isn't available in ASP.NET Core. One way to achieve this behavior is to implement middleware as seen in the *Startup.cs* file example. This middleware does the same logic and then transfers control to the next handler in the middleware pipeline.
 

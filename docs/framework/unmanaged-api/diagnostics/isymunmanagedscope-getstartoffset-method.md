@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: da6bbc75-94d1-4354-9722-0d455b4428fb
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedScope::GetStartOffset Method
 Gets the start offset for this scope.  

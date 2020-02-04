@@ -1,5 +1,5 @@
 ---
-title: "Atomized XName and XNamespace Objects (LINQ to XML) (Visual Basic)"
+title: "Atomized XName and XNamespace Objects (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 21ee7585-7df9-40b4-8c76-a12bb5f29bb3
 ---

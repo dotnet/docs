@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 480d596a-759f-4d29-ac1a-3dbff8f3544d
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::SetTypeDefProps Method
 Sets features of a type defined by a prior call to [IMetaDataEmit::DefineTypeDef](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-definetypedef-method.md).  

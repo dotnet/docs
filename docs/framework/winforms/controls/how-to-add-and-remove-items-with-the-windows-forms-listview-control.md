@@ -1,5 +1,5 @@
 ---
-title: "How to: Add and Remove Items with the Windows Forms ListView Control"
+title: Add and Remove Items with ListView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

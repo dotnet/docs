@@ -368,15 +368,15 @@
     href: porting/wpf.md
   - name: Port C++/CLI projects
     href: porting/cpp-cli.md    
-- name: Dependency management
-  href: tools/dependencies.md
-- name: Dependency loading
+- name: Dependency management and loading
   items:
-  - name: Overview
+  - name: Dependency management
+    href: tools/dependencies.md
+  - name: Dependency loading
     href: dependency-loading/overview.md
   - name: Understand AssemblyLoadContext
     href: dependency-loading/understanding-assemblyloadcontext.md
-  - name: Loading details
+  - name: Dependency loading details
     items:
     - name: Default dependency probing
       href: dependency-loading/default-probing.md

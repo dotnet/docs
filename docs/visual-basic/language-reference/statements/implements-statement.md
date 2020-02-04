@@ -1,5 +1,5 @@
 ---
-title: "Implements Statement (Visual Basic)"
+title: "Implements Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Implements"

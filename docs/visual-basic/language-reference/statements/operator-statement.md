@@ -1,5 +1,5 @@
 ---
-title: "Operator Statement (Visual Basic)"
+title: "Operator Statement"
 ms.date: 07/20/2015
 f1_keywords:
   - "vb.operator"

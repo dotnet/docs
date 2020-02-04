@@ -8,7 +8,7 @@ ms.topic: tutorial
 #Customer intent: As a developer, I want to use ML.NET to apply a recommendation learning algorithm so that I can understand how to recommend items based on a user's history.
 ---
 
-# Tutorial: Build a movie recommender using matrix factorizaton with ML.NET
+# Tutorial: Build a movie recommender using matrix factorization with ML.NET
 
 This tutorial shows you how to build a movie recommender with ML.NET in a .NET Core console application. The steps use C# and Visual Studio 2019.
 

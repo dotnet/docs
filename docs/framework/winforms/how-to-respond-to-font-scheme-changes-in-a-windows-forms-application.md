@@ -1,5 +1,6 @@
 ---
-title: "How to: Respond to Font Scheme Changes in a Windows Forms Application"
+title: Respond to Font Scheme Changes in a Windows Forms app
+titleSuffix: ""
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Catch Parsing Errors (Visual Basic)"
+title: "How to: Catch Parsing Errors"
 ms.date: 07/20/2015
 ms.assetid: 22e9068e-ea58-447b-816e-cd1852c11787
 ---

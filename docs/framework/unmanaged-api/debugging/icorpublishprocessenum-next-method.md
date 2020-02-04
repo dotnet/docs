@@ -35,7 +35,7 @@ HRESULT Next (
  [in] The number of processes to be retrieved.  
   
  `objects`  
- [out] A pointer to the array of retrieved [ICorPublishProcess](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md) objects, each of which represents a process.  
+ [out] A pointer to the array of retrieved [ICorPublishProcess](icorpublishprocess-interface.md) objects, each of which represents a process.  
   
  `pceltFetched`  
  [out] Pointer to the number of processes actually returned. This value may be null if `celt` is one.  
@@ -51,4 +51,4 @@ HRESULT Next (
   
 ## See also
 
-- [ICorPublishProcessEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocessenum-interface.md)
+- [ICorPublishProcessEnum Interface](icorpublishprocessenum-interface.md)

@@ -46,10 +46,10 @@ HRESULT GetReturnValueLiveOffset(
  An array of native offsets. Typically, `pOffsets` contains a single offset, although a single IL instruction can map to multiple map to multiple `CALL` assembly instructions.  
   
 ## Remarks  
- This method is used along with the [ICorDebugILFrame3::GetReturnValueForILOffset](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe3-getreturnvalueforiloffset-method.md) method to get the return value of a method that returns a reference type. Passing an IL offset to a function call site to this method returns one or more native offsets. The debugger can then set breakpoints on these native offsets in the function. When the debugger hits one of the breakpoints, you can then pass the same IL offset that you passed to this method to the [ICorDebugILFrame3::GetReturnValueForILOffset](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe3-getreturnvalueforiloffset-method.md) method to get the return value. The debugger should then clear all the breakpoints that it set.  
+ This method is used along with the [ICorDebugILFrame3::GetReturnValueForILOffset](icordebugilframe3-getreturnvalueforiloffset-method.md) method to get the return value of a method that returns a reference type. Passing an IL offset to a function call site to this method returns one or more native offsets. The debugger can then set breakpoints on these native offsets in the function. When the debugger hits one of the breakpoints, you can then pass the same IL offset that you passed to this method to the [ICorDebugILFrame3::GetReturnValueForILOffset](icordebugilframe3-getreturnvalueforiloffset-method.md) method to get the return value. The debugger should then clear all the breakpoints that it set.  
   
 > [!WARNING]
-> The `ICorDebugCode3::GetReturnValueLiveOffset` and [ICorDebugILFrame3::GetReturnValueForILOffset](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe3-getreturnvalueforiloffset-method.md) methods allow you to get return value information for reference types only. Retrieving return value information from value types (that is, all types that derive from <xref:System.ValueType>) is not supported.  
+> The `ICorDebugCode3::GetReturnValueLiveOffset` and [ICorDebugILFrame3::GetReturnValueForILOffset](icordebugilframe3-getreturnvalueforiloffset-method.md) methods allow you to get return value information for reference types only. Retrieving return value information from value types (that is, all types that derive from <xref:System.ValueType>) is not supported.  
   
  The function returns the `HRESULT` values shown in the following table.  
   
@@ -72,5 +72,5 @@ HRESULT GetReturnValueLiveOffset(
   
 ## See also
 
-- [GetReturnValueForILOffset Method](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe3-getreturnvalueforiloffset-method.md)
-- [ICorDebugCode3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugcode3-interface.md)
+- [GetReturnValueForILOffset Method](icordebugilframe3-getreturnvalueforiloffset-method.md)
+- [ICorDebugCode3 Interface](icordebugcode3-interface.md)

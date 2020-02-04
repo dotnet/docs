@@ -1,5 +1,5 @@
 ---
-title: "Typographic and Code Conventions (Visual Basic)"
+title: "Typographic and Code Conventions"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "coding conventions [Visual Basic], Visual Basic"
@@ -12,6 +12,7 @@ helpviewer_keywords:
 ms.assetid: 1916cd81-ea9d-4faa-81f7-4a0d864b60f4
 ---
 # Typographic and Code Conventions (Visual Basic)
+
 Visual Basic documentation uses the following typographic and code conventions.  
   
 ## Typographic Conventions  

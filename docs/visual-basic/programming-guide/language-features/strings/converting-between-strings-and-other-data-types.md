@@ -1,5 +1,5 @@
 ---
-title: "Converting between strings and other data types in Visual Basic"
+title: "Converting between strings and other data types"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "Visual Basic, strings"

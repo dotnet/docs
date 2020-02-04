@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 3c4f6b54-5ce7-4a2a-83e1-6dec16441f50
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::DeletePinvokeMap Method
 Destroys the PInvoke mapping metadata for the object referenced by the specified token.  

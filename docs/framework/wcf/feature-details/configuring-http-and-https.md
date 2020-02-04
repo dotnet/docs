@@ -1,5 +1,5 @@
 ---
-title: "Configuring HTTP and HTTPS - WCF"
+title: "Configuring HTTP and HTTPS"
 ms.date: "04/08/2019"
 helpviewer_keywords: 
   - "configuring HTTP [WCF]"

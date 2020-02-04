@@ -23,7 +23,7 @@ Represents a runtime-internal frame on the stack. This interface is a subclass o
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetFrameType Method](../../../../docs/framework/unmanaged-api/debugging/icordebuginternalframe-getframetype-method.md)|Gets the type of this internal frame.|  
+|[GetFrameType Method](icordebuginternalframe-getframetype-method.md)|Gets the type of this internal frame.|  
   
 ## Remarks  
   
@@ -41,4 +41,4 @@ Represents a runtime-internal frame on the stack. This interface is a subclass o
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

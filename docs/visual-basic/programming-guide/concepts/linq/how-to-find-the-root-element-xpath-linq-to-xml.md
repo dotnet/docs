@@ -1,5 +1,5 @@
 ---
-title: "How to: Find the Root Element (XPath-LINQ to XML) (Visual Basic)"
+title: "How to: Find the Root Element (XPath-LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 72c3aed5-9522-4454-a876-2070aad13f2e
 ---

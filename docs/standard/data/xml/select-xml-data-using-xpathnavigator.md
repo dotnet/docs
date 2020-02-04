@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: c268c49e-32b9-4171-b782-dcb7b065fa73
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Select XML Data Using XPathNavigator
 The <xref:System.Xml.XPath.XPathNavigator> class provides a set of methods used to select a set of nodes in an <xref:System.Xml.XPath.XPathDocument> or <xref:System.Xml.XmlDocument> object using an XPath expression. Once selected, you can iterate over the selected set of nodes.  

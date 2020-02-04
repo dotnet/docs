@@ -49,5 +49,5 @@ HRESULT UnloadClass (
   
 ## See also
 
-- [LoadClass Method](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-loadclass-method.md)
-- [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)
+- [LoadClass Method](icordebugmanagedcallback-loadclass-method.md)
+- [ICorDebugManagedCallback Interface](icordebugmanagedcallback-interface.md)

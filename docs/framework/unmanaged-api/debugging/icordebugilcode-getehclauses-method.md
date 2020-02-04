@@ -35,7 +35,7 @@ HRESULT GetEHClauses(
  [out] The number of clauses about which information is written to the `clauses` array.  
   
  clauses  
- [out] An array of [CorDebugEHClause](../../../../docs/framework/unmanaged-api/debugging/cordebugehclause-structure.md) objects that contain information on exception handling clauses defined for this IL.  
+ [out] An array of [CorDebugEHClause](cordebugehclause-structure.md) objects that contain information on exception handling clauses defined for this IL.  
   
 ## Remarks  
  If `cClauses` is 0 and `pcClauses` is non-**null**, `pcClauses` is set to the number of available exception handling clauses. If `cClauses` is non-zero, it represents the storage capacity of the `clauses` array. When the method returns, `clauses` contains a maximum of `cClauses` items, and `pcClauses` is set to the number of clauses actually written to the `clauses` array.  
@@ -51,6 +51,6 @@ HRESULT GetEHClauses(
   
 ## See also
 
-- [ICorDebugILCode Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode-interface.md)
-- [CorDebugEHClause Structure](../../../../docs/framework/unmanaged-api/debugging/cordebugehclause-structure.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugILCode Interface](icordebugilcode-interface.md)
+- [CorDebugEHClause Structure](cordebugehclause-structure.md)
+- [Debugging Interfaces](debugging-interfaces.md)

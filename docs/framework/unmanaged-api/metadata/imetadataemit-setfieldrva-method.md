@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 6dc37f9d-87ee-4cb3-9216-ced600184ce8
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::SetFieldRVA Method
 Sets a global variable value for the relative virtual address of the field referenced by the specified token.  

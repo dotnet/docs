@@ -1,15 +1,11 @@
 ---
 title: dotnet new command
 description: The dotnet new command creates new .NET Core projects based on the specified template.
-ms.date: 09/17/2019
+ms.date: 02/03/2020
 ---
 # dotnet new
 
-**This article applies to: ✓** .NET Core 1.0 SDK and later versions
-
-<!-- todo: uncomment when all CLI commands are reviewed
-[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
--->
+**This article applies to: ✓** .NET Core 2.0 SDK and later versions
 
 ## Name
 
@@ -44,12 +40,12 @@ The command contains a default list of templates. Use `dotnet new -l` to obtain 
 |----------------------------------------------|---------------------------------|--------------|---------------------------------------|------------|
 | Console Application                          | [console](#console)             | [C#], F#, VB | Common/Console                        | 1.0        |
 | Class library                                | [classlib](#classlib)           | [C#], F#, VB | Common/Library                        | 1.0        |
-| WPF Application                              | [wpf](#desktop)                 | [C#]         | Common/WPF                            | 3.0        |
-| WPF Class library                            | [wpflib](#desktop)              | [C#]         | Common/WPF                            | 3.0        |
-| WPF Custom Control Library                   | [wpfcustomcontrollib](#desktop) | [C#]         | Common/WPF                            | 3.0        |
-| WPF User Control Library                     | [wpfusercontrollib](#desktop)   | [C#]         | Common/WPF                            | 3.0        |
-| Windows Forms (WinForms) Application         | [winforms](#desktop)            | [C#]         | Common/WinForms                       | 3.0        |
-| Windows Forms (WinForms) Class library       | [winformslib](#desktop)         | [C#]         | Common/WinForms                       | 3.0        |
+| WPF Application                              | [wpf](#wpf)                     | [C#]         | Common/WPF                            | 3.0        |
+| WPF Class library                            | [wpflib](#wpf)                  | [C#]         | Common/WPF                            | 3.0        |
+| WPF Custom Control Library                   | [wpfcustomcontrollib](#wpf)     | [C#]         | Common/WPF                            | 3.0        |
+| WPF User Control Library                     | [wpfusercontrollib](#wpf)       | [C#]         | Common/WPF                            | 3.0        |
+| Windows Forms (WinForms) Application         | [winforms](#winforms)           | [C#]         | Common/WinForms                       | 3.0        |
+| Windows Forms (WinForms) Class library       | [winformslib](#winforms)        | [C#]         | Common/WinForms                       | 3.0        |
 | Worker Service                               | [worker](#worker)               | [C#]         | Common/Worker/Web                     | 3.0        |
 | Unit Test Project                            | [mstest](#test)                 | [C#], F#, VB | Test/MSTest                           | 1.0        |
 | NUnit 3 Test Project                         | [nunit](#test)                  | [C#], F#, VB | Test/NUnit                            | 2.1.400    |
@@ -61,88 +57,84 @@ The command contains a default list of templates. Use `dotnet new -l` to obtain 
 | MVC ViewStart                                | `viewstart`                     | [C#]         | Web/ASP.NET                           | 2.0        |
 | Blazor Server App                            | [blazorserver](#tbd)            | [C#]         | Web/Blazor                            | 3.0        |
 | ASP.NET Core Empty                           | [web](#web)                     | [C#], F#     | Web/Empty                             | 1.0        |
-| ASP.NET Core Web App (Model-View-Controller) | `mvc`                 | [C#], F#     | Web/MVC                               | 1.0        |
-| ASP.NET Core Web App                         | `webapp`, `razor`     | [C#]         | Web/MVC/Razor Pages                   | 2.2, 2.0   |
-| ASP.NET Core with Angular                    | `angular`             | [C#]         | Web/MVC/SPA                           | 2.0        |
-| ASP.NET Core with React.js                   | `react`               | [C#]         | Web/MVC/SPA                           | 2.0        |
-| ASP.NET Core with React.js and Redux         | `reactredux`          | [C#]         | Web/MVC/SPA                           | 2.0        |
-| Razor Class Library                          | `razorclasslib`       | [C#]         | Web/Razor/Library/Razor Class Library | 2.1        |
-| ASP.NET Core Web API                         | `webapi`              | [C#], F#     | Web/WebAPI                            | 1.0        |
-| ASP.NET Core gRPC Service                    | `grpc`                | [C#]         | Web/gRPC                              | 3.0        |
-| Protocol Buffer File                         | `proto`               |              | Web/gRPC                              | 3.0        |
-| dotnet gitignore file                        | `gitignore`           |              | Config                                | 3.0        |
-| global.json file                             | `globaljson`          |              | Config                                | 2.0        |
-| NuGet Config                                 | `nugetconfig`         |              | Config                                | 1.0        |
-| dotnet local tool manifest file              | `tool-manifest`       |              | Config                                | 3.0        |
-| Web Config                                   | `webconfig`           |              | Config                                | 1.0        |
-| Solution File                                | `sln`                 |              | Solution                              | 1.0        |
+| ASP.NET Core Web App (Model-View-Controller) | `mvc`                           | [C#], F#     | Web/MVC                               | 1.0        |
+| ASP.NET Core Web App                         | `webapp`, `razor`               | [C#]         | Web/MVC/Razor Pages                   | 2.2, 2.0   |
+| ASP.NET Core with Angular                    | `angular`                       | [C#]         | Web/MVC/SPA                           | 2.0        |
+| ASP.NET Core with React.js                   | `react`                         | [C#]         | Web/MVC/SPA                           | 2.0        |
+| ASP.NET Core with React.js and Redux         | `reactredux`                    | [C#]         | Web/MVC/SPA                           | 2.0        |
+| Razor Class Library                          | `razorclasslib`                 | [C#]         | Web/Razor/Library/Razor Class Library | 2.1        |
+| ASP.NET Core Web API                         | `webapi`                        | [C#], F#     | Web/WebAPI                            | 1.0        |
+| ASP.NET Core gRPC Service                    | `grpc`                          | [C#]         | Web/gRPC                              | 3.0        |
+| Protocol Buffer File                         | `proto`                         |              | Web/gRPC                              | 3.0        |
+| dotnet gitignore file                        | `gitignore`                     |              | Config                                | 3.0        |
+| global.json file                             | `globaljson`                    |              | Config                                | 2.0        |
+| NuGet Config                                 | `nugetconfig`                   |              | Config                                | 1.0        |
+| dotnet local tool manifest file              | `tool-manifest`                 |              | Config                                | 3.0        |
+| Web Config                                   | `webconfig`                     |              | Config                                | 1.0        |
+| Solution File                                | `sln`                           |              | Solution                              | 1.0        |
 
 ## Options
 
 - **`--dry-run`**
 
-Displays a summary of what would happen if the given command were run if it would result in a template creation. Available since .NET Core 2.2 SDK.
+  Displays a summary of what would happen if the given command were run if it would result in a template creation. Available since .NET Core 2.2 SDK.
 
 - **`--force`**
 
-Forces content to be generated even if it would change existing files. This is required when the output directory already contains a project. Available since .NET Core 2.0 SDK.
+  Forces content to be generated even if it would change existing files. This is required when the output directory already contains a project.
 
 - **`-h|--help`**
 
-Prints out help for the command. It can be invoked for the `dotnet new` command itself or for any template, such as `dotnet new mvc --help`.
+  Prints out help for the command. It can be invoked for the `dotnet new` command itself or for any template, such as `dotnet new mvc --help`.
 
 - **`-i|--install <PATH|NUGET_ID>`**
 
-Installs a source or template pack from the `PATH` or `NUGET_ID` provided. If you want to install a prerelease version of a template package, you need to specify the version in the format of `<package-name>::<package-version>`. By default, `dotnet new` passes \* for the version, which represents the last stable package version. See an example at the [Examples](#examples) section. Available since .NET Core 2.0 SDK.
+  Installs a source or template pack from the `PATH` or `NUGET_ID` provided. If you want to install a prerelease version of a template package, you need to specify the version in the format of `<package-name>::<package-version>`. By default, `dotnet new` passes \* for the version, which represents the last stable package version. See an example at the [Examples](#examples) section.
 
-For information on creating custom templates, see [Custom templates for dotnet new](custom-templates.md).
+  For information on creating custom templates, see [Custom templates for dotnet new](custom-templates.md).
 
 - **`-l|--list`**
 
-Lists templates containing the specified name. If invoked for the `dotnet new` command, it lists the possible templates available for the given directory. For example if the directory already contains a project, it doesn't list all project templates.
+  Lists templates containing the specified name. If invoked for the `dotnet new` command, it lists the possible templates available for the given directory. For example if the directory already contains a project, it doesn't list all project templates.
 
 - **`-lang|--language {C#|F#|VB}`**
 
-The language of the template to create. The language accepted varies by the template (see defaults in the [arguments](#arguments) section). Not valid for some templates.
+  The language of the template to create. The language accepted varies by the template (see defaults in the [arguments](#arguments) section). Not valid for some templates.
 
-> [!NOTE]
-> Some shells interpret `#` as a special character. In those cases, you need to enclose the language parameter value, such as `dotnet new console -lang "F#"`.
+  > [!NOTE]
+  > Some shells interpret `#` as a special character. In those cases, you need to enclose the language parameter value, such as `dotnet new console -lang "F#"`.
 
 - **`-n|--name <OUTPUT_NAME>`**
 
-The name for the created output. If no name is specified, the name of the current directory is used.
+  The name for the created output. If no name is specified, the name of the current directory is used.
 
 - **`--nuget-source`**
 
-Specifies a NuGet source to use during install. Available since .NET Core 2.1 SDK.
+  Specifies a NuGet source to use during install. Available since .NET Core 2.1 SDK.
 
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
-Location to place the generated output. The default is the current directory.
+  Location to place the generated output. The default is the current directory.
 
 - **`--type`**
 
-Filters templates based on available types. Predefined values are "project", "item", or "other". Available since .NET Core 2.0 SDK.
+  Filters templates based on available types. Predefined values are "project", "item", or "other".
 
 - **`-u|--uninstall <PATH|NUGET_ID>`**
 
-Uninstalls a source or template pack at the `PATH` or `NUGET_ID` provided. When excluding the `<PATH|NUGET_ID>` value, all currently installed template packs and their associated templates are displayed. Available since .NET Core 2.0 SDK.
+  Uninstalls a source or template pack at the `PATH` or `NUGET_ID` provided. When excluding the `<PATH|NUGET_ID>` value, all currently installed template packs and their associated templates are displayed.
 
-> [!NOTE]
-> To uninstall a template using a `PATH`, you need to fully qualify the path. For example, *C:/Users/\<USER>/Documents/Templates/GarciaSoftware.ConsoleTemplate.CSharp* will work, but *./GarciaSoftware.ConsoleTemplate.CSharp* from the containing folder will not.
-> Additionally, do not include a final terminating directory slash on your template path.
+  > [!NOTE]
+  > To uninstall a template using a `PATH`, you need to fully qualify the path. For example, *C:/Users/\<USER>/Documents/Templates/GarciaSoftware.ConsoleTemplate.CSharp* will work, but *./GarciaSoftware.ConsoleTemplate.CSharp* from the containing folder will not.
+  > Additionally, do not include a final terminating directory slash on your template path.
 
 - **`--update-apply`**
 
-Checks if there are updates available for the template packs that are currently installed and installs them. Available since .NET Core 3.0 SDK.
+  Checks if there are updates available for the template packs that are currently installed and installs them. Available since .NET Core 3.0 SDK.
 
 - **`--update-check`**
 
-Checks if there are updates available for the template packs that are currently installed. Available since .NET Core 3.0 SDK.
-
-- **`-all|--show-all`**
-
-**Deprecated** Shows all templates for a specific type of project when running in the context of the `dotnet new` command alone. When running in the context of a specific template, such as `dotnet new web -all`, - **`-all`** is interpreted as a force creation flag. This is required when the output directory already contains a project. Available only in .NET Core 1.x SDK.
+  Checks if there are updates available for the template packs that are currently installed. Available since .NET Core 3.0 SDK.
 
 ## Template options
 
@@ -150,44 +142,83 @@ Each project template may have additional options available. The core templates 
 
 ### console
 
-- **`-f|--framework <FRAMEWORK>`** - Specifies the [framework](../../standard/frameworks.md) to target. The default value is `netcoreapp3.0` in .NET Core 3.0 SDK. Option not available in .NET Core 2.x SDK.
+- **`-f|--framework <FRAMEWORK>`**
 
-- **`--langVersion <VERSION_NUMBER>`** - Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3. Not supported for F#. Available since .NET Core 2.2 SDK.
+  Specifies the [framework](../../standard/frameworks.md) to target. Available since .NET Core 3.0 SDK.
 
-- **`--no-restore`** - If specified, doesn't execute an implicit restore during project creation. Available since .NET Core 2.2 SDK.
+  The following table lists the default values according to the SDK version number you're using:
+
+  | SDK version | Default value   |
+  | 3.1         | `netcoreapp3.1` |
+  | 3.0         | `netcoreapp3.0` |
+
+- **`--langVersion <VERSION_NUMBER>`**
+
+  Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3. Not supported for F#. Available since .NET Core 2.2 SDK.
+
+- **`--no-restore`** 
+
+  If specified, doesn't execute an implicit restore during project creation. Available since .NET Core 2.2 SDK.
 
 ***
 
 ### classlib
 
-- **`-f|--framework <FRAMEWORK>`** - Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp<version>` to create a .NET Core Class Library or `netstandard<version>` to create a .NET Standard Class Library. 
+- **`-f|--framework <FRAMEWORK>`**
 
-    The following table lists the default values according to the SDK version number you're using:
+  Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp<version>` to create a .NET Core Class Library or `netstandard<version>` to create a .NET Standard Class Library. The default value is `netstandard2.0`.
 
-    | SDK version | Default value    |
-    | 3.x         | `netstandard2.0` |
-    | 2.x         | `netstandard2.0` |
-    | 1.x         | `netstandard1.4` |
+- **`--langVersion <VERSION_NUMBER>`**
 
-- **`--langVersion <VERSION_NUMBER>`** - Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3. Not supported for F#. Available since .NET Core 2.2 SDK.
+  Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3. Not supported for F#. Available since .NET Core 2.2 SDK.
 
-- **`--no-restore`** - Doesn't execute an implicit restore during project creation. Available since .NET Core 2.0 SDK.
+- **`--no-restore`**
+
+  Doesn't execute an implicit restore during project creation. Available since .NET Core 2.0 SDK.
 
 ***
 
-### <a name="desktop"></a> wpf, wpflib, wpfcustomcontrollib, wpfusercontrollib, winforms, winformslib
+### <a name="wpf"></a> wpf, wpflib, wpfcustomcontrollib, wpfusercontrollib
 
-- **`--langVersion <VERSION_NUMBER>`** - Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3.
+- **`-f|--framework <FRAMEWORK>`**
 
-- **`--no-restore`** - Doesn't execute an implicit restore during project creation.
+  Specifies the [framework](../../standard/frameworks.md) to target. The default value is `netcoreapp3.1`. Available since .NET Core 3.1 SDK. 
+
+- **`--langVersion <VERSION_NUMBER>`**
+
+  Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3.
+
+- **`--no-restore`**
+
+  Doesn't execute an implicit restore during project creation.
+
+***
+
+### <a name="winforms"></a> winforms, winformslib
+
+- **`--langVersion <VERSION_NUMBER>`**
+
+  Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3.
+
+- **`--no-restore`**
+
+  Doesn't execute an implicit restore during project creation.
 
 ***
 
 ### worker
 
-- **`--exclude-launch-settings`** - Excludes *launchSettings.json* from the generated template.
+- **`-f|--framework <FRAMEWORK>`**
 
-- **`--no-restore`** - Doesn't execute an implicit restore during project creation.
+  Specifies the [framework](../../standard/frameworks.md) to target. The default value is `netcoreapp3.1`. Available since .NET Core 3.1 SDK. 
+
+- **`--exclude-launch-settings`**
+
+  Excludes *launchSettings.json* from the generated template.
+
+- **`--no-restore`**
+
+  Doesn't execute an implicit restore during project creation.
 
 ***
 

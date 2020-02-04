@@ -1,5 +1,5 @@
 ---
-title: "How to: Save Files with the Windows Forms RichTextBox Control"
+title: Save Files with RichTextBox Control
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

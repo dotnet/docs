@@ -2,8 +2,6 @@
 title: Install the .NET Framework on Windows Vista
 description: Learn how to install the .NET Framework on Windows Vista.
 ms.custom: "updateeachrelease"
-author: rlander
-ms.author: mairaw
 ms.date: 04/18/2019
 ---
 
@@ -17,13 +15,13 @@ These instructions will help you install the .NET Framework versions you need. T
 
 ## .NET Framework 4.6
 
-The [.NET Framework 4.6](https://www.microsoft.com/download/details.aspx?id=48130&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True) is the latest supported .NET Framework version on Windows Vista and Windows Server 2008.
+The [.NET Framework 4.6](https://dotnet.microsoft.com/download/dotnet-framework/net46) is the latest supported .NET Framework version on Windows Vista and Windows Server 2008.
 
-The [.NET Framework 4.6](https://www.microsoft.com/download/details.aspx?id=48130&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True) supports applications built for .NET Framework 4.0 through 4.6.
+The [.NET Framework 4.6](https://dotnet.microsoft.com/download/dotnet-framework/net46&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True) supports applications built for .NET Framework 4.0 through 4.6.
 
 ## .NET Framework 3.5
 
-You can install the [.NET Framework 3.5](https://go.microsoft.com/fwlink/?LinkID=213834&dotnetdocs) on Windows Vista.
+You can install the [.NET Framework 3.5](https://dotnet.microsoft.com/download/dotnet-framework/net35-sp1) on Windows Vista.
 
 The .NET Framework 3.5 supports apps built for .NET Framework 1.0 through 3.5.
 

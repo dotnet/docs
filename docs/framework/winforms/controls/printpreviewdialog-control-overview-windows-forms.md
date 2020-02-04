@@ -1,5 +1,5 @@
 ---
-title: "PrintPreviewDialog Control Overview (Windows Forms)"
+title: "PrintPreviewDialog Control Overview"
 ms.date: "01/08/2018"
 f1_keywords:
   - "PrintPreviewDialog"

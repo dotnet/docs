@@ -1,5 +1,5 @@
 ---
-title: "Connection Strings in ADO.NET"
+title: "Connection Strings"
 ms.date: "10/10/2018"
 ms.assetid: 745c5f95-2f02-4674-b378-6d51a7ec2490
 ---

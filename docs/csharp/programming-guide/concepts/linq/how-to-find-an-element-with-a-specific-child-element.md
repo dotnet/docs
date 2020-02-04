@@ -1,9 +1,9 @@
 ---
-title: "How to: Find an Element with a Specific Child Element (C#)"
+title: "How to find an element with a specific child element (C#)"
 ms.date: 07/20/2015
 ms.assetid: 00cf5555-374e-4369-bf93-7bd2e7f21db3
 ---
-# How to: Find an Element with a Specific Child Element (C#)
+# How to find an element with a specific child element (C#)
 This topic shows how to find a particular element that has a child element with a specific value.  
   
 ## Example  

@@ -1,5 +1,5 @@
 ---
-title: "How to: Insert a MenuStrip into an MDI Drop-Down Menu (Windows Forms)"
+title: "How to: Insert a MenuStrip into an MDI Drop-Down Menu"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

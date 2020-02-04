@@ -22,7 +22,7 @@ Used by the data access services layer to locate metadata of assemblies in a tar
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetMetadata Method](../../../../docs/framework/unmanaged-api/debugging/iclrmetadatalocator-getmetadata-method.md)|Retrieves the metadata of an image from the target process.|  
+|[GetMetadata Method](iclrmetadatalocator-getmetadata-method.md)|Retrieves the metadata of an image from the target process.|  
   
 ## Remarks  
  The API client (that is, the debugger) must implement this interface as appropriate for the particular target process. For example, the implementation for a live process would be different from that of a memory dump.  
@@ -38,4 +38,4 @@ Used by the data access services layer to locate metadata of assemblies in a tar
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

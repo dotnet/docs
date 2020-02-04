@@ -25,7 +25,7 @@ This topic describes the <xref:System.Windows.Media.GlyphRun> object and the <xr
   
     - Microsoft XPS Document Writer.  
   
-    - Previous printer drivers, output from [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] applications to the fixed format.  
+    - Previous printer drivers, output from Win32 applications to the fixed format.  
   
     - Print spool format.  
   

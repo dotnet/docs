@@ -1,5 +1,5 @@
 ---
-title: "XDocument Class Overview (Visual Basic)"
+title: "XDocument Class Overview"
 ms.date: 07/20/2015
 ms.assetid: 45cb7e71-196a-47da-bfe9-7a5589db1eed
 ---

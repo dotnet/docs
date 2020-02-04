@@ -1,5 +1,5 @@
 ---
-title: "How to: Access Keyed Collections in Windows Forms"
+title: "How to: Access Keyed Collections"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

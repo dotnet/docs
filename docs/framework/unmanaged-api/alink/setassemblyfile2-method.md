@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: eedb9125-1ef1-4000-abfc-7de86e5a1f17
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # SetAssemblyFile2 Method
 Sets the name of and options for a new assembly. Do not call this method when you produce unbound modules.  

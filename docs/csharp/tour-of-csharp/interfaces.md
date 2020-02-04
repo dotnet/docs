@@ -35,4 +35,4 @@ Explicit interface members can only be accessed via the interface type. For exam
 
 >[!div class="step-by-step"]
 >[Previous](arrays.md)
->[Next](enums.md)
+>[Next](delegates.md)

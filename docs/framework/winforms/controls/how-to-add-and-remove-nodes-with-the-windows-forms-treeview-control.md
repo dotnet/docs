@@ -1,5 +1,5 @@
 ---
-title: "How to: Add and Remove Nodes with the Windows Forms TreeView Control"
+title: Add and Remove Nodes with TreeView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

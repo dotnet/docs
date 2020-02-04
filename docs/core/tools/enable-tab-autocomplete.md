@@ -6,7 +6,7 @@ ms.author: adegeo
 ms.date: 11/03/2019
 ---
 
-# How to enable TAB completion for .NET Core CLI
+# How to enable TAB completion for the .NET Core CLI
 
 Starting with .NET Core 2.0 SDK, the .NET Core CLI supports tab completion. This article describes how to configure tab completion for three shells, PowerShell, Bash, and zsh. Other shells may have support for auto completion. Refer to their documentation on how to configure auto completion, the steps should be similar to the steps described in this article.
 

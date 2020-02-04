@@ -1,5 +1,5 @@
 ---
-title: "Selection and Clipboard Use with the Windows Forms DataGridView Control"
+title: Selection and Clipboard Use with DataGridView Control
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], Clipboard use"

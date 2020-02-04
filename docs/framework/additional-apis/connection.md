@@ -1,6 +1,7 @@
 ---
-title: "Connection Class"
+title: "Connection Class (System.Net)"
 ms.date: "05/01/2017"
+ms.technology: "dotnet-networking"
 topic_type: 
   - "apiref"
 api_name: 

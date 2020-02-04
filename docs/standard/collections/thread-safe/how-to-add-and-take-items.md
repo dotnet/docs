@@ -8,8 +8,6 @@ dev_langs:
 helpviewer_keywords: 
   - "thread-safe collections, blocking dictionary"
 ms.assetid: 38f2f3d8-15e5-4bf4-9c83-2b5b6f22bad1
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Add and Take Items Individually from a BlockingCollection
 This example shows how to add and remove items from a <xref:System.Collections.Concurrent.BlockingCollection%601> in both a blocking and a non-blocking manner. For more information on <xref:System.Collections.Concurrent.BlockingCollection%601>, see [BlockingCollection Overview](../../../../docs/standard/collections/thread-safe/blockingcollection-overview.md).  

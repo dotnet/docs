@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: f0a4a5e0-4689-474b-b0f4-37ca0639c918
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerModuleEnum::GetCount Method
 Gets the number of managed modules that were loaded into the application.  
@@ -42,5 +40,5 @@ HRESULT GetCount([out] ULONG * pcelt);
   
 ## See also
 
-- [ICorProfilerModuleEnum Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilermoduleenum-interface.md)
-- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+- [ICorProfilerModuleEnum Interface](icorprofilermoduleenum-interface.md)
+- [Profiling Interfaces](profiling-interfaces.md)

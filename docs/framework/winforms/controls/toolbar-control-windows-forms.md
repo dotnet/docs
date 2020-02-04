@@ -1,5 +1,5 @@
 ---
-title: "ToolBar Control (Windows Forms)"
+title: "ToolBar Control"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "toolbars [Windows Forms]"

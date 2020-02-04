@@ -1,5 +1,5 @@
 ---
-title: "Supported deployment scenarios - WCF"
+title: "Supported deployment scenarios"
 ms.date: "03/30/2017"
 ms.assetid: 3399f208-3504-4c70-a22e-a7c02a8b94a6
 ---
@@ -29,7 +29,7 @@ In addition to SOAP messaging using one of the supported SOAP bindings, WCF supp
 
 Workflow Services require Full Trust permissions and cannot be used in partially trusted applications.
 
-For more information, see [How to: Use Medium Trust in ASP.NET 2.0](https://go.microsoft.com/fwlink/?LinkId=84603).
+For more information, see [How to: Use Medium Trust in ASP.NET 2.0](https://docs.microsoft.com/previous-versions/msp-n-p/ff648344(v=pandp.10)).
 
 ## Partial trust on the client
 

@@ -9,7 +9,7 @@ ms.assetid: 7c82658f-e7c0-46b6-834d-6592f67ab5ea
 
 # Application Scenarios (WCF Data Services)
 
-[!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] supports a core set of scenarios for exposing and consuming data as Open Data Protocol (OData) feeds. This topic points you to the topics relevant to these scenarios.
+WCF Data Services supports a core set of scenarios for exposing and consuming data as Open Data Protocol (OData) feeds. This topic points you to the topics relevant to these scenarios.
 
 Expose relational data from a database as an OData feed.
 
@@ -47,9 +47,9 @@ Consume an OData feed in an AJAX-based client application.
 
 - [Using a Data Service in a Client Application](using-a-data-service-in-a-client-application-wcf-data-services.md)
 
-- [OData: URI Conventions](https://go.microsoft.com/fwlink/?LinkId=185564)
+- [OData: URI Conventions](https://www.odata.org/documentation/odata-version-2-0/uri-conventions/)
 
-- [OData: JavaScript Object Notation (JSON) Format](https://go.microsoft.com/fwlink/?LinkId=185790)
+- [OData: JavaScript Object Notation (JSON) Format](https://www.odata.org/developers/protocols/json-format/)
 
 Create an end-to-end data solution that uses OData to transfer data between client and server.
 

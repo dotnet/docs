@@ -36,7 +36,7 @@ ms.assetid: 73d13345-eece-471a-af40-4cc7a2f11655
  Provides overviews of LINQ technologies in Visual Basic.
   
  [LINQ](../../../../../visual-basic/programming-guide/language-features/linq/index.md)  
- Describes [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] technologies for Visual Basic users.  
+ Describes LINQ technologies for Visual Basic users.  
   
  [LINQ and ADO.NET](../../linq-and-ado-net.md)  
  Links to the ADO.NET portal.  
@@ -48,4 +48,4 @@ ms.assetid: 73d13345-eece-471a-af40-4cc7a2f11655
  Describes how to download sample databases used in the documentation.  
   
  [LinqDataSource Web Server Control Overview](https://docs.microsoft.com/previous-versions/aspnet/bb547113(v=vs.100))  
- Describes how the <xref:System.Web.UI.WebControls.LinqDataSource> control exposes [!INCLUDE[vbteclinqext](../../../../../../includes/vbteclinqext-md.md)] to Web developers through the ASP.NET data-source control architecture.
+ Describes how the <xref:System.Web.UI.WebControls.LinqDataSource> control exposes Language-Integrated Query (LINQ) to Web developers through the ASP.NET data-source control architecture.

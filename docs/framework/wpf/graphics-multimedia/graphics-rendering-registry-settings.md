@@ -18,7 +18,7 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
   
 <a name="xpdmandwddm"></a>   
 ## What are XPDM and WDDM?  
- Some of the graphics rendering registry settings have different default values, depending on whether your video card uses an XPDM or WDDM driver. XPDM is the [!INCLUDE[TLA#tla_winxp](../../../../includes/tlasharptla-winxp-md.md)] Display Driver Model and WDDM is the Windows Display Driver Model. WDDM is available on computers running [!INCLUDE[TLA2#tla_winvista](../../../../includes/tla2sharptla-winvista-md.md)] and [!INCLUDE[win7](../../../../includes/win7-md.md)]. XPDM is available on computers running [!INCLUDE[TLA2#tla_winvista](../../../../includes/tla2sharptla-winvista-md.md)], [!INCLUDE[TLA#tla_winxp](../../../../includes/tlasharptla-winxp-md.md)], and [!INCLUDE[TLA#tla_winnetsvrfam](../../../../includes/tlasharptla-winnetsvrfam-md.md)]. For more information about WDDM, see [Windows Vista Display Driver Model Design Guide](https://go.microsoft.com/fwlink/?LinkId=178394).  
+ Some of the graphics rendering registry settings have different default values, depending on whether your video card uses an XPDM or WDDM driver. XPDM is the Microsoft Windows XP Display Driver Model and WDDM is the Windows Display Driver Model. WDDM is available on computers running Windows Vista and Windows 7. XPDM is available on computers running Windows Vista, Microsoft Windows XP, and Microsoft Windows Server 2003. For more information about WDDM, see [Windows Vista Display Driver Model Design Guide](https://go.microsoft.com/fwlink/?LinkId=178394).  
   
 <a name="registry_settings"></a>   
 ## Registry Settings  
@@ -51,7 +51,7 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
 |------------------|----------------|  
 |`HKEY_CURRENT_USER\SOFTWARE\Microsoft\Avalon.Graphics\MaxMultisampleType`|DWORD|  
   
- The **maximum multisample value** enables you to adjust the maximum amount of antialiasing of 3-D content. Use this level to disable 3-D antialiasing in [!INCLUDE[TLA2#tla_winvista](../../../../includes/tla2sharptla-winvista-md.md)] or enable it in [!INCLUDE[TLA#tla_winxp](../../../../includes/tlasharptla-winxp-md.md)].  
+ The **maximum multisample value** enables you to adjust the maximum amount of antialiasing of 3-D content. Use this level to disable 3-D antialiasing in Windows Vista.  
   
  The **maximum multisample value** is a DWORD value that ranges from 0 to 16. A value of 0 specifies that multisample antialiasing of 3-D content should be disabled, and a value of 16 will attempt to use up to 16x multisample antialiasing, if supported by the video card. Beware that setting this registry key value on computers using XPDM drivers will cause applications to use a large amount of additional video memory, decrease the performance of 3-D rendering, and has the potential to introduce rendering errors and stability problems.  
   

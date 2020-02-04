@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: 24b9df1b-b54b-4795-a033-edf333675de6
 ---
 # How to: Intercept Data Service Messages (WCF Data Services)
-With [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)], you can intercept request messages so that you can add custom logic to an operation. To intercept a message, you use specially attributed methods in the data service. For more information, see [Interceptors](interceptors-wcf-data-services.md).  
+With WCF Data Services, you can intercept request messages so that you can add custom logic to an operation. To intercept a message, you use specially attributed methods in the data service. For more information, see [Interceptors](interceptors-wcf-data-services.md).  
   
  The example in this topic uses the Northwind sample data service. This service is created when you complete the [WCF Data Services quickstart](quickstart-wcf-data-services.md).  
   

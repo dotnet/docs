@@ -6,7 +6,7 @@ ms.assetid: 312bd7b2-1300-4b12-801e-ebe742bd2287
 # Stand-Alone JSON Serialization using DataContractJsonSerializer
 
 > [!NOTE]
-> This article is about <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>. For most scenarios that involve serializing and deserializing JSON, we recommend the tools in the [System.Text.Json namespace](../../../standard/serialization/system-text-json-overview.md). 
+> This article is about <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer>. For most scenarios that involve serializing and deserializing JSON, we recommend the APIs in the [System.Text.Json namespace](../../../standard/serialization/system-text-json-overview.md). 
 
 JSON (JavaScript Object Notation) is a data format that is specifically designed to be used by JavaScript code running on Web pages inside the browser. It is the default data format used by ASP.NET AJAX services created in Windows Communication Foundation (WCF).
 
@@ -119,7 +119,7 @@ The data contract versioning features, including the <xref:System.Runtime.Serial
 
 When using ASP.NET AJAX endpoints with the HTTP GET verb (using the <xref:System.ServiceModel.Web.WebGetAttribute> attribute), incoming parameters appear in the request URL instead of the message body. JSON is supported even in the request URL, so if you have an operation that takes an `Int` called "number" and a `Person` complex type called "p", the URL may resemble the following URL.
 
-```
+```html
 http://example.com/myservice.svc/MyOperation?number=7&p={"name":"John","age":42}
 ```
 
@@ -155,7 +155,7 @@ The conversion only takes place if the "/" characters are escaped (that is, the 
 
 #### XmlElement
 
-<xref:System.Xml.XmlElement> is serialized as is, with no wrapping. For example, data member "x" of type <xref:System.Xml.XmlElement> that contains \<abc/> is as represented as follows.
+<xref:System.Xml.XmlElement> is serialized as is, with no wrapping. For example, data member "x" of type <xref:System.Xml.XmlElement> that contains \<abc/> is represented as follows:
 
 ```json
 {"x":"<abc/>"}

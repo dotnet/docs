@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Creating a Windows Forms Control That Takes Advantage of Visual Studio Design-Time Features"
+title: Create a Control That Takes Advantage of Visual Studio Design-Time Features
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

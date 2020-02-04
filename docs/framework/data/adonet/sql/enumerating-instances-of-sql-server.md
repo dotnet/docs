@@ -1,5 +1,5 @@
 ---
-title: "Enumerating Instances of SQL Server (ADO.NET)"
+title: "Enumerating Instances of SQL Server"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

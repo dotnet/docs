@@ -1,5 +1,5 @@
 ---
-title: "How to: Call a Stored Procedure by Using LINQ (Visual Basic)"
+title: "How to: Call a Stored Procedure by Using LINQ"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "queries [LINQ in Visual Basic], stored procedure calls"

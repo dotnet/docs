@@ -22,8 +22,8 @@ Provides methods that handle loading and unloading modules for debugging.
   
 |Method|Description|  
 |------------|-----------------|  
-|[OpenVirtualProcess Method](../../../../docs/framework/unmanaged-api/debugging/iclrdebugging-openvirtualprocess-method.md)|Gets the "ICorDebugProcess" interface that corresponds to a common language runtime (CLR) module loaded in the process.|  
-|[CanUnloadNow Method](../../../../docs/framework/unmanaged-api/debugging/iclrdebugging-canunloadnow-method.md)|Determines whether a library that was provided by an [ICLRDebuggingLibraryProvider](../../../../docs/framework/unmanaged-api/debugging/iclrdebugginglibraryprovider-interface.md) interface is still in use or can be unloaded.|  
+|[OpenVirtualProcess Method](iclrdebugging-openvirtualprocess-method.md)|Gets the "ICorDebugProcess" interface that corresponds to a common language runtime (CLR) module loaded in the process.|  
+|[CanUnloadNow Method](iclrdebugging-canunloadnow-method.md)|Determines whether a library that was provided by an [ICLRDebuggingLibraryProvider](iclrdebugginglibraryprovider-interface.md) interface is still in use or can be unloaded.|  
   
 ## Remarks  
  You can obtain an instance of the `ICLRDebugging` interface by using the [CLRCreateInstance](../../../../docs/framework/unmanaged-api/hosting/clrcreateinstance-function.md) function.  
@@ -39,5 +39,5 @@ Provides methods that handle loading and unloading modules for debugging.
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

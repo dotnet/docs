@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 94667c1c-6d58-4aa7-b74e-530b11e2a276
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataTables::GetBlob Method
 Gets a pointer to the binary large object (BLOB) at the specified column index.  

@@ -18,11 +18,13 @@ This sample demonstrates:
 
 - Overriding a default designer in a rehosted application.
 
-### To set up, build, and run the sample
+## Set up, build, and run the sample
 
-1. Open the **UsingWorkflowItemsPresenter.sln** sample solution for C# or for VB in Visual Studio 2010.
+1. Open the **UsingWorkflowItemsPresenter.sln** sample solution for C# or for Visual Basic in Visual Studio 2010.
 
-2. Build and run the solution. A rehosted workflow designer application should open, and you can drag activities onto the canvas.
+2. Build and run the solution.
+
+   A rehosted workflow designer application opens, and you can drag activities onto the canvas.
 
 ## Sample Highlights
 
@@ -149,7 +151,7 @@ The code for this sample shows the following:
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Basic\CustomActivities\CustomActivityDesigners\WorkflowItemsPresenter`
 

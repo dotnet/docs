@@ -1,5 +1,5 @@
 ---
-title: "Objects (Visual Basic)"
+title: "Objects"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "objects [Visual Basic]"
@@ -42,4 +42,3 @@ This topic provides links to other topics that document the Visual Basic run-tim
 ## See also
 
 - [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)
-- [Visual Basic](../../../visual-basic/index.md)

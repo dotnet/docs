@@ -1,5 +1,5 @@
 ---
-title: "<code> (Visual Basic)"
+title: "<code>"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "code XML tag"

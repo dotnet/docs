@@ -34,6 +34,11 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
   If the `TEMPLATE` value isn't an exact match on text in the **Templates** or **Short Name** column, a substring match is performed on those two columns.
 
+  Starting with .NET Core 3.0 SDK, the CLI searches for templates in NuGet.org in one of following conditions:
+
+  - If the CLI can’t find a template match when invoking `dotnet new`, not even partial.
+  - If there’s a newer version of the template available.
+
   The command contains a default list of templates. Use `dotnet new -l` to obtain a list of the available templates. The following table shows the templates that come pre-installed with the .NET Core SDK. The default language for the template is shown inside the brackets. Click on the short name link to see the specific template options.
 
 | Templates                                    | Short name                      | Language     | Tags                                  | Introduced |
@@ -95,7 +100,7 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
 - **`-l|--list`**
 
-  Lists templates containing the specified name. If invoked for the `dotnet new` command, it lists the possible templates available for the given directory. For example if the directory already contains a project, it doesn't list all project templates.
+  Lists templates containing the specified name. If no name is specified, lists all templates.
 
 - **`-lang|--language {C#|F#|VB}`**
 
@@ -175,7 +180,7 @@ Each project template may have additional options available. The core templates 
 
 - **`--no-restore`**
 
-  Doesn't execute an implicit restore during project creation. Available since .NET Core 2.0 SDK.
+  Doesn't execute an implicit restore during project creation.
 
 ***
 
@@ -616,7 +621,7 @@ Each project template may have additional options available. The core templates 
   |-------------|-----------------|
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
-  | 2.1         | `netcoreapp2.0` |
+  | 2.1         | `netcoreapp2.1` |
 
 - **`--no-restore`**
 
@@ -644,7 +649,7 @@ Each project template may have additional options available. The core templates 
   dotnet new console -lang F#
   ```
 
-- Create a .NET Standard class library project in the specified directory (available only with .NET Core SDK 2.0 or later versions):
+- Create a .NET Standard class library project in the specified directory:
 
   ```dotnetcli
   dotnet new classlib -lang VB -o MyLibrary
@@ -662,10 +667,10 @@ Each project template may have additional options available. The core templates 
   dotnet new xunit
   ```
 
-- List all templates available for MVC:
+- List all templates available for Single Page Application (SPA) templates:
 
   ```dotnetcli
-  dotnet new mvc -l
+  dotnet new spa -l
   ```
 
 - List all templates matching the *we* substring. No exact match is found, so substring matching runs against both the short name and name columns.
@@ -680,16 +685,16 @@ Each project template may have additional options available. The core templates 
   dotnet new ng
   ```
 
-- Install version 2.0 of the Single Page Application templates for ASP.NET Core:
+- Install version 2.0 of the SPA templates for ASP.NET Core:
 
   ```dotnetcli
   dotnet new -i Microsoft.DotNet.Web.Spa.ProjectTemplates::2.0.0
   ```
 
-- Create a *global.json* in the current directory setting the SDK version to 2.0.0 (available only with .NET Core SDK 2.0 or later versions):
+- Create a *global.json* in the current directory setting the SDK version to 3.1.101:
 
   ```dotnetcli
-  dotnet new globaljson --sdk-version 2.0.0
+  dotnet new globaljson --sdk-version 3.1.101
   ```
 
 ## See also

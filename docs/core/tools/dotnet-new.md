@@ -63,6 +63,44 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 The template to instantiate when the command is invoked. Each template might have specific options you can pass. For more information, see [Template options](#template-options).
 
 If the `TEMPLATE` value isn't an exact match on text in the **Templates** or **Short Name** column, a substring match is performed on those two columns.
+# [.NET Core 3.1](#tab/netcore22)
+
+The command contains a default list of templates. Use `dotnet new -l` to obtain a list of the available templates. The following table shows the templates that come pre-installed with the .NET Core SDK 3.1.100. The default language for the template is shown inside the brackets.
+
+| Templates                                    | Short Name             | Language     | Tags                                  |
+|----------------------------------------------|-------------------     |--------------|---------------------------------------|
+| Console Application                          | `console`              | [C#], F#, VB | Common/Console                        |
+| Class library                                | `classlib`             | [C#], F#, VB | Common/Library                        |
+| WPF Application                              | `wpf`                  | [C#]         | Common/WPF                            |
+| WPF Class Library                            | `wpflib`               | [C#]         | Common/WPF                            |
+| WPF Custom Control Library                   | `wpfcustomcontrollib`  | [C#]         | Common/WPF                            |
+| WPF User Control Library                     | `wpfusercontrollib`    | [C#]         | Common/WPF                            |
+| Windows Forms (WinForms) Application         | `winforms`             | [C#]         | Common/WinForms                       |
+| Windows Forms (WinForms) Class library       | `winformslib`          | [C#]         | Common/WinForms                       |
+| Worker Service                               | `worker`               | [C#]         | Common/Worker/Web                     |
+| Unit Test Project                            | `mstest`               | [C#], F#, VB | Test/MSTest                           |
+| NUnit 3 Test Project                         | `nunit`                | [C#], F#, VB | Test/NUnit                            |
+| NUnit 3 Test Item                            | `nunit-test`           | [C#], F#, VB | Test/NUnit                            |
+| xUnit Test Project                           | `xunit`                | [C#], F#, VB | Test/xUnit                            |
+| Razor Page                                   | `page`                 | [C#]         | Web/ASP.NET                           |
+| MVC ViewImports                              | `viewimports`          | [C#]         | Web/ASP.NET                           |
+| MVC ViewStart                                | `viewstart`            | [C#]         | Web/ASP.NET                           |
+| Blazor Server App                            | `blazorserver`         | [C#]         | Web/Blazor                            |
+| ASP.NET Core Empty                           | `web`                  | [C#], F#     | Web/Empty                             |
+| ASP.NET Core Web App (Model-View-Controller) | `mvc`                  | [C#], F#     | Web/MVC                               |
+| ASP.NET Core Web App                         | `webapp`, `razor`      | [C#]         | Web/MVC/Razor Pages                   |
+| ASP.NET Core with Angular                    | `angular`              | [C#]         | Web/MVC/SPA                           |
+| ASP.NET Core with React.js                   | `react`                | [C#]         | Web/MVC/SPA                           |
+| ASP.NET Core with React.js and Redux         | `reactredux`           | [C#]         | Web/MVC/SPA                           |
+| Razor Class Library                          | `razorclasslib`        | [C#]         | Web/Razor/Library/Razor Class Library |
+| ASP.NET Core Web API                         | `webapi`               | [C#], F#     | Web/WebAPI                            |
+| ASP.NET Core gRPC Service                    | `grpc`                 | [C#]         | Web/RgRPC                             |
+| dotnet gitignore file                        | `gitignore`            |              | Config                                |
+| global.json file                             | `globaljson`           |              | Config                                |
+| NuGet Config                                 | `nugetconfig`          |              | Config                                |
+| Web Config                                   | `webconfig`            |              | Config                                |
+| Solution File                                | `sln`                  |              | Solution                              |
+| Protocol Buffer File                         | `proto`                |              | Web/RgRPC                             |
 
 # [.NET Core 2.2](#tab/netcore22)
 

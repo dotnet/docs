@@ -21,7 +21,7 @@ The .NET Framework consists of two main components, which are versioned separate
 
 - The common language runtime (CLR), which manages and executes your app's code. A single CLR version typically supports multiple .NET Framework versions. For example, CLR version 4.0.30319.*xxxxx* where *xxxxx* is less than 42000, supports .NET Framework versions 4 through 4.5.2. CLR version greater than or equal to 4.0.30319.42000 supports .NET Framework versions starting with .NET Framework 4.6.
 
-Community-maintained tools are available to help detect which .NET Framework version is installed:
+Community-maintained tools are available to help detect which .NET Framework versions are installed:
 
 - [https://github.com/jmalarcon/DotNetVersions](https://github.com/jmalarcon/DotNetVersions)
 
@@ -33,9 +33,9 @@ Community-maintained tools are available to help detect which .NET Framework ver
 
 For information about detecting the installed updates for each version of the .NET Framework, see [How to: Determine which .NET Framework updates are installed](how-to-determine-which-net-framework-updates-are-installed.md).
 
-## Detect .NET Framework 4.5 and above
+## Detect .NET Framework 4.5 and later versions
 
-The version of .NET Framework (4.5 and above) installed on a machine is listed in the registry at `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full`. If the `Full` subkey is missing, then .NET Framework 4.5 or above isn't installed.
+The version of .NET Framework (4.5 and later) installed on a machine is listed in the registry at `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full`. If the `Full` subkey is missing, then .NET Framework 4.5 or above isn't installed.
 
 > [!NOTE]
 > The `NET Framework Setup` subkey in the registry path does *not* begin with a period.
@@ -147,7 +147,7 @@ Notice that the registry path to the .NET Framework 1.0 subkey is different from
 
 01. Open the subkey that matches the version you want to check. Use the table in the [Detect .NET Framework 1.0 through 4.0](#detect-net-framework-10-through-40) section.
 
-    The following figure shows the subkey and its `Version` value for the .NET Framework 3.5.
+    The following figure shows the subkey and its `Version` value for .NET Framework 3.5.
 
     ![The registry entry for the .NET Framework 3.5.](./media/net-4-and-earlier.png ".NET Framework 3.5 and earlier versions")
 
@@ -182,13 +182,13 @@ The .NET Framework CLR installed with .NET Framework is versioned separately. Th
 - **The `Environment` class**
 
   > [!IMPORTANT]
-  > For the .NET Framework 4.5 and later versions, don't use the <xref:System.Environment.Version%2A?displayProperty=nameWithType> property to detect the version of the CLR. Instead, query the registry as described in [Detect .NET Framework 4.5 and above](#detect-net-framework-45-and-above).
+  > For .NET Framework 4.5 and later versions, don't use the <xref:System.Environment.Version%2A?displayProperty=nameWithType> property to detect the version of the CLR. Instead, query the registry as described in [Detect .NET Framework 4.5 and above](#detect-net-framework-45-and-above).
   
   01. Query the <xref:System.Environment.Version?displayProperty=nameWithType> property to retrieve a <xref:System.Version> object.
   
       The returned `System.Version` object identifies the version of the runtime that's currently executing the code. It doesn't return assembly versions or other versions of the runtime that may have been installed on the computer.
   
-      For the .NET Framework versions 4, 4.5, 4.5.1, and 4.5.2, the string representation of the returned <xref:System.Version> object has the form 4.0.30319.*xxxxx*, where *xxxxx* is less than 42000. For the .NET Framework 4.6 and later versions, it has the form 4.0.30319.42000.
+      For .NET Framework versions 4, 4.5, 4.5.1, and 4.5.2, the string representation of the returned <xref:System.Version> object has the form 4.0.30319.*xxxxx*, where *xxxxx* is less than 42000. For .NET Framework 4.6 and later versions, it has the form 4.0.30319.42000.
   
   01. After you have the `Version` object, query it as follows:
   

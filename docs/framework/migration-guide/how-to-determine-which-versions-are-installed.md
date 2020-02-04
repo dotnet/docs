@@ -35,16 +35,16 @@ For information about detecting the installed updates for each version of the .N
 
 ## Detect .NET Framework 4.5 and later versions
 
-The version of .NET Framework (4.5 and later) installed on a machine is listed in the registry at `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full`. If the `Full` subkey is missing, then .NET Framework 4.5 or above isn't installed.
+The version of .NET Framework (4.5 and later) installed on a machine is listed in the registry at **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v4\\Full**. If the **Full** subkey is missing, then .NET Framework 4.5 or above isn't installed.
 
 > [!NOTE]
-> The `NET Framework Setup` subkey in the registry path does *not* begin with a period.
+> The **NET Framework Setup** subkey in the registry path does *not* begin with a period.
 
-The `Release` REG_DWORD value in the registry represents the version of .NET Framework installed.
+The **Release** REG_DWORD value in the registry represents the version of .NET Framework installed.
 
 <a name="version_table"></a>
 
-| .NET Framework version | Value of `Release` |
+| .NET Framework version | Value of **Release** |
 | ---------------------- | -------------------------- |
 | .NET Framework 4.5     | All Windows operating systems: 378389 |
 | .NET Framework 4.5.1   | On Windows 8.1 and Windows Server 2012 R2: 378675<br />On all other Windows operating systems: 378758 |
@@ -59,9 +59,9 @@ The `Release` REG_DWORD value in the registry represents the version of .NET Fra
 
 ### Minimum version
 
-To determine whether a *minimum* version of the .NET Framework is present, use the smallest `Release` REG_DWORD value for that version from the previous table.
+To determine whether a *minimum* version of the .NET Framework is present, use the smallest **Release** REG_DWORD value for that version from the previous table.
 
-For example, if your application runs under .NET Framework 4.8 or a later version, test for a `Release` REG_DWORD value that is *greater than or equal to* 528040.
+For example, if your application runs under .NET Framework 4.8 or a later version, test for a **Release** REG_DWORD value that is *greater than or equal to* 528040.
 
 | .NET Framework version | Minimum value |
 | ---------------------- | ------------- |
@@ -82,17 +82,17 @@ For example, if your application runs under .NET Framework 4.8 or a later versio
 
     You must have administrative credentials to run regedit.
 
-01. In the Registry Editor, open the following subkey: `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full`. If the `Full` subkey isn't present, then you don't have the .NET Framework 4.5 or later installed.
+01. In the Registry Editor, open the following subkey: **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v4\\Full**. If the **Full** subkey isn't present, then you don't have the .NET Framework 4.5 or later installed.
 
-01. Check for a REG_DWORD entry named `Release`. If it exists, then you have .NET Framework 4.5 or later installed. Its value corresponds to a particular version of the .NET Framework. In the following figure, for example, the value of the `Release` entry is 378389, which is the release key for .NET Framework 4.5.
+01. Check for a REG_DWORD entry named **Release**. If it exists, then you have .NET Framework 4.5 or later installed. Its value corresponds to a particular version of the .NET Framework. In the following figure, for example, the value of the **Release** entry is 528040, which is the release key for .NET Framework 4.8.
 
     ![Registry entry for the .NET Framework 4.5](./media/clr-installdir.png "Registry entry for the .NET Framework 4.5")
 
 ### Use PowerShell to check for a minimum version
 
-Use PowerShell commands to check the value of the `Release` entry of the `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full` subkey.
+Use PowerShell commands to check the value of the **Release** entry of the **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v4\\Full** subkey.
 
-The following examples check the value of the `Release` entry to determine whether the .NET Framework 4.6.2 or later is installed. This code returns `True` if it's installed and `False` otherwise.
+The following examples check the value of the **Release** entry to determine whether the .NET Framework 4.6.2 or later is installed. This code returns `True` if it's installed and `False` otherwise.
 
 ```PowerShell
 (Get-ItemProperty "HKLM:SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full").Release -ge 394802
@@ -100,42 +100,42 @@ The following examples check the value of the `Release` entry to determine wheth
 
 ### Query the registry using code
 
-01. Use the <xref:Microsoft.Win32.RegistryKey.OpenBaseKey%2A?displayProperty=nameWithType> and <xref:Microsoft.Win32.RegistryKey.OpenSubKey%2A?displayProperty=nameWithType> methods to access the `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full` subkey in the Windows registry.
+01. Use the <xref:Microsoft.Win32.RegistryKey.OpenBaseKey%2A?displayProperty=nameWithType> and <xref:Microsoft.Win32.RegistryKey.OpenSubKey%2A?displayProperty=nameWithType> methods to access the **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v4\\Full** subkey in the Windows registry.
 
     > [!IMPORTANT]
-    > If the app you're running is 32-bit and running in 64-bit Windows, the registry paths will be different than previously listed. The 64-bit registry is available in the `HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\` subkey. For example, the registry subkey for .NET Framework 4.5 is `HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\NET Framework Setup\NDP\v4\Full`.
+    > If the app you're running is 32-bit and running in 64-bit Windows, the registry paths will be different than previously listed. The 64-bit registry is available in the **HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\** subkey. For example, the registry subkey for .NET Framework 4.5 is **HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\NET Framework Setup\\NDP\\v4\\Full**.
 
-01. Check the `Release` REG_DWORD value to determine the installed version. To be forward-compatible, check for a value greater than or equal to the value listed in the [.NET Framework version table](#version_table).
+01. Check the **Release** REG_DWORD value to determine the installed version. To be forward-compatible, check for a value greater than or equal to the value listed in the [.NET Framework version table](#version_table).
 
-The following example checks the value of the `Release` entry in the registry to find the .NET Framework 4.5 and later versions that are installed:
+The following example checks the value of the **Release** entry in the registry to find the .NET Framework 4.5 and later versions that are installed:
 
 [!code-csharp[ListVersions#5](../../../samples/snippets/csharp/framework/migration-guide/versions-installed3.cs)]
 [!code-vb[ListVersions#5](../../../samples/snippets/visualbasic/framework/migration-guide/versions-installed3.vb)]
 
 This example follows the recommended practice for version checking:
 
-- It checks whether the value of the `Release` entry is *greater than or equal to* the value of the known release keys.
+- It checks whether the value of the **Release** entry is *greater than or equal to* the value of the known release keys.
 - It checks in order from most recent version to earliest version.
 
 ## Detect .NET Framework 1.0 through 4.0
 
-Each version of .NET Framework from 1.1 to 4.0 is listed as a subkey at `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP`. The following table lists the path to each .NET Framework version. For most versions, there's a `Install` REG_DWORD value of `1` to indicate this version is installed. In these subkeys, there's also a `Version` REG_SZ value that contains a version string.
+Each version of .NET Framework from 1.1 to 4.0 is listed as a subkey at **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\NET Framework Setup\\NDP**. The following table lists the path to each .NET Framework version. For most versions, there's a **Install** REG_DWORD value of `1` to indicate this version is installed. In these subkeys, there's also a **Version** REG_SZ value that contains a version string.
 
 > [!NOTE]
-> The `NET Framework Setup` subkey in the registry path does *not* begin with a period.
+> The **NET Framework Setup** subkey in the registry path does *not* begin with a period.
 
 | Framework Version  | Registry Subkey | Value |
 | ------------------ | --------------- | ----- |
-| 1.0                | `HKLM\Software\Microsoft\.NETFramework\Policy\v1.0\3705`     | `Install` REG_SZ equals `1` |
-| 1.1                | `HKLM\Software\Microsoft\NET Framework Setup\NDP\v1.1.4322`  | `Install` REG_DWORD equals `1` |
-| 2.0                | `HKLM\Software\Microsoft\NET Framework Setup\NDP\v2.0.50727` | `Install` REG_DWORD equals `1` |
-| 3.0                | `HKLM\Software\Microsoft\NET Framework Setup\NDP\v3.0\Setup` | `InstallSuccess` REG_DWORD equals `1` |
-| 3.5                | `HKLM\Software\Microsoft\NET Framework Setup\NDP\v3.5`       | `Install` REG_DWORD equals `1` |
-| 4.0 Client Profile | `HKLM\Software\Microsoft\NET Framework Setup\NDP\v4\Client`  | `Install` REG_DWORD equals `1` |
-| 4.0 Full Profile   | `HKLM\Software\Microsoft\NET Framework Setup\NDP\v4\Full`    | `Install` REG_DWORD equals `1` |
+| 1.0                | **HKLM\\Software\\Microsoft\\.NETFramework\\Policy\\v1.0\\3705**     | **Install** REG_SZ equals `1` |
+| 1.1                | **HKLM\\Software\\Microsoft\\NET Framework Setup\\NDP\\v1.1.4322**   | **Install** REG_DWORD equals `1` |
+| 2.0                | **HKLM\\Software\\Microsoft\\NET Framework Setup\\NDP\\v2.0.50727**  | **Install** REG_DWORD equals `1` |
+| 3.0                | **HKLM\\Software\\Microsoft\\NET Framework Setup\\NDP\\v3.0\\Setup** | **InstallSuccess** REG_DWORD equals `1` |
+| 3.5                | **HKLM\\Software\\Microsoft\\NET Framework Setup\\NDP\\v3.5**        | **Install** REG_DWORD equals `1` |
+| 4.0 Client Profile | **HKLM\\Software\\Microsoft\\NET Framework Setup\\NDP\\v4\\Client**  | **Install** REG_DWORD equals `1` |
+| 4.0 Full Profile   | **HKLM\\Software\\Microsoft\\NET Framework Setup\\NDP\\v4\\Full**    | **Install** REG_DWORD equals `1` |
 
 > [!IMPORTANT]
-> If the app you're running is 32-bit and running in 64-bit Windows, the registry paths will be different than previously listed. The 64-bit registry is available in the `HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\` subkey. For example, the registry subkey for .NET Framework 3.5 is `HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\NET Framework Setup\NDP\v3.5`.
+> If the app you're running is 32-bit and running in 64-bit Windows, the registry paths will be different than previously listed. The 64-bit registry is available in the **HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\** subkey. For example, the registry subkey for .NET Framework 3.5 is **HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\NET Framework Setup\\NDP\\v3.5**.
 
 Notice that the registry path to the .NET Framework 1.0 subkey is different from the others.
 
@@ -147,16 +147,16 @@ Notice that the registry path to the .NET Framework 1.0 subkey is different from
 
 01. Open the subkey that matches the version you want to check. Use the table in the [Detect .NET Framework 1.0 through 4.0](#detect-net-framework-10-through-40) section.
 
-    The following figure shows the subkey and its `Version` value for .NET Framework 3.5.
+    The following figure shows the subkey and its **Version** value for .NET Framework 3.5.
 
     ![The registry entry for the .NET Framework 3.5.](./media/net-4-and-earlier.png ".NET Framework 3.5 and earlier versions")
 
 ### Query the registry using code (older framework versions)
 
-Use the <xref:Microsoft.Win32.RegistryKey?displayProperty=nameWithType> class to access the `HKEY_LOCAL_MACHINE\Software\Microsoft\NET Framework Setup\NDP` subkey in the Windows registry.
+Use the <xref:Microsoft.Win32.RegistryKey?displayProperty=nameWithType> class to access the **HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\NET Framework Setup\\NDP** subkey in the Windows registry.
 
 > [!IMPORTANT]
-> If the app you're running is 32-bit and running in 64-bit Windows, the registry paths will be different than previously listed. The 64-bit registry is available in the `HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\` subkey. For example, the registry subkey for .NET Framework 3.5 is `HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\NET Framework Setup\NDP\v3.5`.
+> If the app you're running is 32-bit and running in 64-bit Windows, the registry paths will be different than previously listed. The 64-bit registry is available in the **HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\** subkey. For example, the registry subkey for .NET Framework 3.5 is **HKEY_LOCAL_MACHINE\\SOFTWARE\\Wow6432Node\\Microsoft\\NET Framework Setup\\NDP\\v3.5**.
 
 The following example finds the .NET Framework 1 through 4 versions that are installed:
 
@@ -190,7 +190,7 @@ The .NET Framework CLR installed with .NET Framework is versioned separately. Th
   
       For .NET Framework versions 4, 4.5, 4.5.1, and 4.5.2, the string representation of the returned <xref:System.Version> object has the form 4.0.30319.*xxxxx*, where *xxxxx* is less than 42000. For .NET Framework 4.6 and later versions, it has the form 4.0.30319.42000.
   
-  01. After you have the `Version` object, query it as follows:
+  01. After you have the **Version** object, query it as follows:
   
       - For the major release identifier (for example, *4* for version 4.0), use the <xref:System.Version.Major%2A?displayProperty=nameWithType> property.
   

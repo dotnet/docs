@@ -290,7 +290,9 @@ Each project template may have additional options available. The core templates 
 
 ### <a name="namespace"></a> viewimports, proto
 
-- **`-na|--namespace <NAMESPACE_NAME>`** - Namespace for the generated code. The default value is `MyApp.Namespace`.
+- **`-na|--namespace <NAMESPACE_NAME>`**
+
+  Namespace for the generated code. The default value is `MyApp.Namespace`.
 
 ***
 
@@ -631,7 +633,9 @@ Each project template may have additional options available. The core templates 
 
 ### globaljson
 
-- **`--sdk-version <VERSION_NUMBER>`** - Specifies the version of the .NET Core SDK to use in the *global.json* file.
+- **`--sdk-version <VERSION_NUMBER>`**
+
+  Specifies the version of the .NET Core SDK to use in the *global.json* file.
 
 ***
 

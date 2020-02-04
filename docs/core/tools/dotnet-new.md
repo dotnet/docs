@@ -628,6 +628,8 @@ Each project template may have additional options available. The core templates 
 
 - **`--sdk-version <VERSION_NUMBER>`** - Specifies the version of the .NET Core SDK to use in the *global.json* file.
 
+***
+
 ## Examples
 
 - Create a C# console application project by specifying the template name:

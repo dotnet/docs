@@ -149,6 +149,7 @@ Each project template may have additional options available. The core templates 
   The following table lists the default values according to the SDK version number you're using:
 
   | SDK version | Default value   |
+  |-------------|-----------------|
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
 
@@ -231,6 +232,7 @@ Each project template may have additional options available. The core templates 
   The following table lists the default values according to the SDK version number you're using:
 
   | SDK version | Default value   |
+  |-------------|-----------------|
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
 
@@ -253,6 +255,7 @@ Each project template may have additional options available. The core templates 
   The following table lists the default values according to the SDK version number you're using:
 
   | SDK version | Default value   |
+  |-------------|-----------------|
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
   | 2.2         | `netcoreapp2.2` |
@@ -370,6 +373,7 @@ Each project template may have additional options available. The core templates 
   The following table lists the default values according to the SDK version number you're using:
 
   | SDK version | Default value   |
+  |-------------|-----------------|
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
   | 2.1         | `netcoreapp2.1` |
@@ -456,6 +460,7 @@ Each project template may have additional options available. The core templates 
   The following table lists the default values according to the SDK version number you're using:
 
   | SDK version | Default value   |
+  |-------------|-----------------|
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
 
@@ -503,6 +508,7 @@ Each project template may have additional options available. The core templates 
   The following table lists the default values according to the SDK version number you're using:
 
   | SDK version | Default value   |
+  |-------------|-----------------|
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
   | 2.1         | `netcoreapp2.0` |
@@ -522,6 +528,7 @@ Each project template may have additional options available. The core templates 
   The following table lists the default values according to the SDK version number you're using:
 
   | SDK version | Default value   |
+  |-------------|-----------------|
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
   | 2.1         | `netcoreapp2.0` |
@@ -606,6 +613,7 @@ Each project template may have additional options available. The core templates 
   The following table lists the default values according to the SDK version number you're using:
 
   | SDK version | Default value   |
+  |-------------|-----------------|
   | 3.1         | `netcoreapp3.1` |
   | 3.0         | `netcoreapp3.0` |
   | 2.1         | `netcoreapp2.0` |
@@ -613,12 +621,6 @@ Each project template may have additional options available. The core templates 
 - **`--no-restore`**
 
   Doesn't execute an implicit restore during project creation.
-
-***
-
-### grpc
-
-- **`--sdk-version <VERSION_NUMBER>`** - Specifies the version of the .NET Core SDK to use in the *global.json* file.
 
 ***
 

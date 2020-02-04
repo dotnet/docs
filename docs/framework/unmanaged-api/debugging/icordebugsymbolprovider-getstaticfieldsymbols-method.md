@@ -2,8 +2,6 @@
 title: "ICorDebugSymbolProvider::GetStaticFieldSymbols Method"
 ms.date: "03/30/2017"
 ms.assetid: b178367f-a6e4-413c-b06f-daf3804b456b
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugSymbolProvider::GetStaticFieldSymbols Method
 Gets the static field symbols that correspond to a typespec signature.  
@@ -34,7 +32,7 @@ HRESULT GetStaticFieldSymbols(
  [out] A pointer to the number of symbols retrieved by the method.  
   
  `pSymbols`  
- [out] A pointer to an [ICorDebugStaticFieldSymbol](../../../../docs/framework/unmanaged-api/debugging/icordebugstaticfieldsymbol-interface.md) array that contains the requested static field symbols.  
+ [out] A pointer to an [ICorDebugStaticFieldSymbol](icordebugstaticfieldsymbol-interface.md) array that contains the requested static field symbols.  
   
 ## Remarks  
   
@@ -52,6 +50,6 @@ HRESULT GetStaticFieldSymbols(
   
 ## See also
 
-- [GetInstanceFieldSymbols Method](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-getinstancefieldsymbols-method.md)
-- [ICorDebugSymbolProvider Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [GetInstanceFieldSymbols Method](icordebugsymbolprovider-getinstancefieldsymbols-method.md)
+- [ICorDebugSymbolProvider Interface](icordebugsymbolprovider-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

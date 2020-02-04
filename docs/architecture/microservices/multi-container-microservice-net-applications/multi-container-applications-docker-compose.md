@@ -77,7 +77,7 @@ services:
     image: redis
 ```
 
-The root key in this file is services. Under that key you define the services you want to deploy and run when you execute the `docker-compose up` command or when you deploy from Visual Studio by using this docker-compose.yml file. In this case, the docker-compose.yml file has multiple services defined, as described in the following table.
+The root key in this file is services. Under that key, you define the services you want to deploy and run when you execute the `docker-compose up` command or when you deploy from Visual Studio by using this docker-compose.yml file. In this case, the docker-compose.yml file has multiple services defined, as described in the following table.
 
 | Service name | Description |
 |--------------|-------------|
@@ -124,7 +124,7 @@ Because the connection string is defined by an environment variable, you could s
 
 - It links the web service to the sql.data service (the SQL Server instance for Linux database running in a container). When you specify this dependency, the catalog.api container will not start until the sql.data container has already started; this is important because catalog.api needs to have the SQL Server database up and running first. However, this kind of container dependency is not enough in many cases, because Docker checks only at the container level. Sometimes the service (in this case SQL Server) might still not be ready, so it is advisable to implement retry logic with exponential backoff in your client microservices. That way, if a dependency container is not ready for a short time, the application will still be resilient.
 
-- It is configured to allow access to external servers: the extra\_hosts setting allows you to access external servers or machines outside of the Docker host (that is, outside the default Linux VM which is a development Docker host), such as a local SQL Server instance on your development PC.
+- It is configured to allow access to external servers: the extra\_hosts setting allows you to access external servers or machines outside of the Docker host (that is, outside the default Linux VM, which is a development Docker host), such as a local SQL Server instance on your development PC.
 
 There are also other, more advanced docker-compose.yml settings that we will discuss in the following sections.
 
@@ -136,7 +136,7 @@ Therefore, by using the docker-compose command you can target the following main
 
 #### Development environments
 
-When you develop applications, it is important to be able to run an application in an isolated development environment. You can use the docker-compose CLI command to create that environment or use Visual Studio which uses docker-compose under the covers.
+When you develop applications, it is important to be able to run an application in an isolated development environment. You can use the docker-compose CLI command to create that environment or Visual Studio, which uses docker-compose under the covers.
 
 The docker-compose.yml file allows you to configure and document all your application’s service dependencies (other services, cache, databases, queues, etc.). Using the docker-compose CLI command, you can create and start one or more containers for each dependency with a single command (docker-compose up).
 
@@ -146,7 +146,7 @@ The docker-compose.yml files are configuration files interpreted by Docker engin
 
 An important part of any continuous deployment (CD) or continuous integration (CI) process are the unit tests and integration tests. These automated tests require an isolated environment so they are not impacted by the users or any other change in the application’s data.
 
-With Docker Compose you can create and destroy that isolated environment very easily in a few commands from your command prompt or scripts, like the following commands:
+With Docker Compose, you can create and destroy that isolated environment very easily in a few commands from your command prompt or scripts, like the following commands:
 
 ```console
 docker-compose -f docker-compose.yml -f docker-compose-test.override.yml up -d
@@ -172,9 +172,15 @@ You could use a single docker-compose.yml file as in the simplified examples sho
 
 By default, Compose reads two files, a docker-compose.yml and an optional docker-compose.override.yml file. As shown in Figure 6-11, when you are using Visual Studio and enabling Docker support, Visual Studio also creates an additional docker-compose.vs.debug.g.yml file for debugging the application, you can take a look at this file in folder obj\\Docker\\ in the main solution folder.
 
-![docker-compose project file structure: .dockerignore, to ignore files; docker-compose.yml, to compose microservices; docker-compose.override.yml, to configure microservices environment.](./media/image12.png)
+![Screenshot of the files in a docker compose project.](./media/multi-container-applications-docker-compose/docker-compose-file-visual-studio.png)
 
 **Figure 6-11**. docker-compose files in Visual Studio 2017
+
+**docker-compose** project file structure:
+
+* *.dockerignore* - used to ignore files
+* *docker-compose.yml* - used to compose microservices
+* *docker-compose.override.yml* - used to configure microservices environment
 
 You can edit the docker-compose files with any editor, like Visual Studio Code or Sublime, and run the application with the docker-compose up command.
 
@@ -186,11 +192,11 @@ The docker-compose.override.yml file, as its name suggests, contains configurati
 
 A typical use case is when you define multiple compose files so you can target multiple environments, like production, staging, CI, or development. To support these differences, you can split your Compose configuration into multiple files, as shown in Figure 6-12.
 
-![You can combine multiple docker-compose*.fml files to handle different environments.](./media/image13.png)
+![Diagram of three docker-compose files set to override the base file.](./media/multi-container-applications-docker-compose/multiple-docker-compose-files-override-base.png)
 
 **Figure 6-12**. Multiple docker-compose files overriding values in the base docker-compose.yml file
 
-You start with the base docker-compose.yml file. This base file has to contain the base or static configuration settings that do not change depending on the environment. For example, the eShopOnContainers has the following docker-compose.yml file (simplified with less services) as the base file.
+You can combine multiple docker-compose*.yml files to handle different environments. You start with the base docker-compose.yml file. This base file has to contain the base or static configuration settings that do not change depending on the environment. For example, the eShopOnContainers has the following docker-compose.yml file (simplified with fewer services) as the base file.
 
 ```yml
 #docker-compose.yml (Base)
@@ -379,7 +385,7 @@ In this example, the development override configuration exposes some ports to th
 
 When you run `docker-compose up` (or launch it from Visual Studio), the command reads the overrides automatically as if it were merging both files.
 
-Suppose that you want another Compose file for the production environment, with different configuration values, ports or connection strings. You can create another override file, like file named `docker-compose.prod.yml` with different settings and environment variables. That file might be stored in a different Git repo or managed and secured by a different team.
+Suppose that you want another Compose file for the production environment, with different configuration values, ports, or connection strings. You can create another override file, like file named `docker-compose.prod.yml` with different settings and environment variables. That file might be stored in a different Git repo or managed and secured by a different team.
 
 #### How to deploy with a specific override file
 
@@ -411,7 +417,7 @@ ESHOP_PROD_EXTERNAL_DNS_NAME_OR_IP=10.121.122.92
 
 Docker-compose expects each line in an .env file to be in the format \<variable\>=\<value\>.
 
-Note that the values set in the runtime environment always override the values defined inside the .env file. In a similar way, values passed via command-line command arguments also override the default values set in the .env file.
+The values set in the run-time environment always override the values defined inside the .env file. In a similar way, values passed via command-line arguments also override the default values set in the .env file.
 
 #### Additional resources
 
@@ -459,10 +465,10 @@ For faster startup, runtime images also automatically set aspnetcore\_urls to po
 #### Additional resources
 
 - **Building Optimized Docker Images with ASP.NET Core**  
-  <https://blogs.msdn.microsoft.com/stevelasker/2016/09/29/building-optimized-docker-images-with-asp-net-core/>
+  <https://docs.microsoft.com/archive/blogs/stevelasker/building-optimized-docker-images-with-asp-net-core>
 
 - **Building Docker Images for .NET Core Applications**  
-  [https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images](../../../core/docker/building-net-docker-images.md)
+  [https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images](/aspnet/core/host-and-deploy/docker/building-net-docker-images)
 
 > [!div class="step-by-step"]
 > [Previous](data-driven-crud-microservice.md)

@@ -1,5 +1,5 @@
 ---
-title: "Implements Statement (Visual Basic)"
+title: "Implements Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Implements"
@@ -15,9 +15,9 @@ Specifies one or more interfaces, or interface members, that must be implemented
   
 ## Syntax  
   
-```  
+```vb  
 Implements interfacename [, ...]  
--or-  
+' -or-  
 Implements interfacename.interfacemember [, ...]  
 ```  
   

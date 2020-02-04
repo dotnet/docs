@@ -1,5 +1,5 @@
 ---
-title: "Connection Strings in ADO.NET"
+title: "Connection Strings"
 ms.date: "10/10/2018"
 ms.assetid: 745c5f95-2f02-4674-b378-6d51a7ec2490
 ---
@@ -12,7 +12,7 @@ A connection string contains initialization information that is passed as a para
 
 A connection string is a semicolon-delimited list of key/value parameter pairs:
 
-```
+```csharp
 keyword1=value; keyword2=value;
 ```
 
@@ -20,28 +20,28 @@ Keywords are not case-sensitive. Values, however, may be case-sensitive, dependi
 
 If a value contains the semicolon, [Unicode control characters](https://en.wikipedia.org/wiki/Unicode_control_characters), or leading or trailing white space, it must be enclosed in single or double quotation marks. For example:
 
-```
+```csharp
 Keyword=" whitespace  ";
 Keyword='special;character';
 ```
 
 The enclosing character may not occur within the value it encloses. Therefore, a value containing single quotation marks can be enclosed only in double quotation marks, and vice versa:
 
-```
+```csharp
 Keyword='double"quotation;mark';
 Keyword="single'quotation;mark";
 ```
 
 You can also escape the enclosing character by using two of them together:
 
-```
+```csharp
 Keyword="double""quotation";
 Keyword='single''quotation';
 ```
 
 The quotation marks themselves, as well as the equals sign, do not require escaping, so the following connection strings are valid:
 
-```
+```csharp
 Keyword=no "escaping" 'required';
 Keyword=a=b=c
 ```

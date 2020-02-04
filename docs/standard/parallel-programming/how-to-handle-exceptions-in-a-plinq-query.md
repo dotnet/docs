@@ -8,8 +8,6 @@ dev_langs:
 helpviewer_keywords:
   - "PLINQ queries, how to handle exceptions"
 ms.assetid: 8d56ff9b-a571-4d31-b41f-80c0b51b70a5
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Handle Exceptions in a PLINQ Query
 

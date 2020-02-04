@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 53d073c6-fa02-40d2-82e1-b9452bb6abaa
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugRemote Interface
 Provides the ability to launch or attach a managed debugger to a remote target process.  
@@ -56,8 +54,8 @@ interface ICorDebugRemote : IUnknown
   
 |Method|Description|  
 |------------|-----------------|  
-|[ICorDebugRemote::CreateProcessEx Method](../../../../docs/framework/unmanaged-api/debugging/icordebugremote-createprocessex-method.md)|Creates a process on a remote machine for managed debugging.|  
-|[ICorDebugRemote::DebugActiveProcessEx Method](../../../../docs/framework/unmanaged-api/debugging/icordebugremote-debugactiveprocessex-method.md)|Launches a process on a remote machine under the debugger.|  
+|[ICorDebugRemote::CreateProcessEx Method](icordebugremote-createprocessex-method.md)|Creates a process on a remote machine for managed debugging.|  
+|[ICorDebugRemote::DebugActiveProcessEx Method](icordebugremote-debugactiveprocessex-method.md)|Launches a process on a remote machine under the debugger.|  
   
 ## Remarks  
  Currently, this functionality is supported only for debugging a Silverlight-based application target that is running on a remote Macintosh machine.  
@@ -73,7 +71,7 @@ interface ICorDebugRemote : IUnknown
   
 ## See also
 
-- [ICorDebugRemoteTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremotetarget-interface.md)
-- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
+- [ICorDebugRemoteTarget Interface](icordebugremotetarget-interface.md)
+- [ICorDebug Interface](icordebug-interface.md)
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

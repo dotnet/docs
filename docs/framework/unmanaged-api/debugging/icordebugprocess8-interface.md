@@ -2,19 +2,17 @@
 title: "ICorDebugProcess8 Interface"
 ms.date: "03/30/2017"
 ms.assetid: 7ab1a70f-ec11-46ff-8869-cd8ca679cc51
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess8 Interface
 [Supported in the .NET Framework 4.6 and later versions]  
   
- Logically extends the ICorDebugProcess interface to enable or disable certain types of [ICorDebugManagedCallback2](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-interface.md) exception callbacks.  
+ Logically extends the ICorDebugProcess interface to enable or disable certain types of [ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md) exception callbacks.  
   
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
-|[EnableExceptionCallbacksOutsideOfMyCode Method](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess8-enableexceptioncallbacksoutsideofmycode-method.md)|Enables or disables certain types of [ICorDebugManagedCallback2](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-interface.md) exception callbacks.|  
+|[EnableExceptionCallbacksOutsideOfMyCode Method](icordebugprocess8-enableexceptioncallbacksoutsideofmycode-method.md)|Enables or disables certain types of [ICorDebugManagedCallback2](icordebugmanagedcallback2-interface.md) exception callbacks.|  
   
 ## Remarks  
   
@@ -29,5 +27,5 @@ ms.author: "ronpet"
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

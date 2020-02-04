@@ -10,9 +10,9 @@ ms.assetid: 82293d7f-471a-4549-8f19-0be890e7b074
 
 Using Windows Communication Foundation (WCF), the service can specify how a client is authenticated to the service. For example, a service can stipulate that the client be authenticated with a certificate.
 
-### To determine the client credential type
+## To determine the client credential type
 
-1. Retrieve metadata from the service's metadata endpoint. The metadata typically consists of two files: the client code in the programming language of your choice (the default is Visual C#), and an XML configuration file. One way to retrieve metadata is to use the Svcutil.exe tool to return the client code and client configuration. For more information, see [Retrieving Metadata](../../../docs/framework/wcf/feature-details/retrieving-metadata.md) and [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md).
+1. Retrieve metadata from the service's metadata endpoint. The metadata typically consists of two files: the client code in the programming language of your choice (the default is Visual C#), and an XML configuration file. One way to retrieve metadata is to use the Svcutil.exe tool to return the client code and client configuration. For more information, see [Retrieving Metadata](./feature-details/retrieving-metadata.md) and [ServiceModel Metadata Utility Tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md).
 
 2. Open the XML configuration file. If you use the Svcutil.exe tool, the default name of the file is Output.config.
 
@@ -35,11 +35,11 @@ The following XML code shows configuration for a client using message security a
 
 ## Example: TCP Transport Mode with Certificate as Client Credential
 
-This example sets the security mode to Transport mode and sets the client credential value to an X.509 certificate. The following procedures demonstrate how to set the client credential value on the client in code and configuration. This assumes that you have used the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to return the metadata (code and configuration) from the service. For more information, see [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md).
+This example sets the security mode to Transport mode and sets the client credential value to an X.509 certificate. The following procedures demonstrate how to set the client credential value on the client in code and configuration. This assumes that you have used the [ServiceModel Metadata Utility Tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md) to return the metadata (code and configuration) from the service. For more information, see [How to: Create a Client](how-to-create-a-wcf-client.md).
 
-#### To specify the client credential value on the client in code
+### To specify the client credential value on the client in code
 
-1. Use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to generate code and configuration from the service.
+1. Use the [ServiceModel Metadata Utility Tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md) to generate code and configuration from the service.
 
 2. Create an instance of the WCF client using the generated code.
 
@@ -50,15 +50,15 @@ This example sets the security mode to Transport mode and sets the client creden
 
      You can use any of the enumerations of the <xref:System.Security.Cryptography.X509Certificates.X509FindType> class. The subject name is used here in case the certificate is changed (due to an expiration date). Using the subject name enables the infrastructure to find the certificate again.
 
-#### To specify the client credential value on the client in configuration
+### To specify the client credential value on the client in configuration
 
-1. Add a [\<behavior>](../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) element to the [\<behaviors>](../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md) element.
+1. Add a [\<behavior>](../configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) element to the [\<behaviors>](../configure-apps/file-schema/wcf/behaviors.md) element.
 
-2. Add a [\<clientCredentials>](../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md) element to the [\<behaviors>](../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md) element. Be sure to set the required `name` attribute to an appropriate value.
+2. Add a [\<clientCredentials>](../configure-apps/file-schema/wcf/clientcredentials.md) element to the [\<behaviors>](../configure-apps/file-schema/wcf/behaviors.md) element. Be sure to set the required `name` attribute to an appropriate value.
 
-3. Add a [\<clientCertificate>](../../../docs/framework/configure-apps/file-schema/wcf/clientcertificate-of-servicecredentials.md) element to the [\<clientCredentials>](../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md) element.
+3. Add a [\<clientCertificate>](../configure-apps/file-schema/wcf/clientcertificate-of-servicecredentials.md) element to the [\<clientCredentials>](../configure-apps/file-schema/wcf/clientcredentials.md) element.
 
-4. Set the following attributes to appropriate values: `storeLocation`, `storeName`, `x509FindType`, and `findValue`, as shown in the following code. For more information about certificates, see [Working with Certificates](../../../docs/framework/wcf/feature-details/working-with-certificates.md).
+4. Set the following attributes to appropriate values: `storeLocation`, `storeName`, `x509FindType`, and `findValue`, as shown in the following code. For more information about certificates, see [Working with Certificates](./feature-details/working-with-certificates.md).
 
     ```xml
     <behaviors>
@@ -75,7 +75,7 @@ This example sets the security mode to Transport mode and sets the client creden
     </behaviors>
     ```
 
-5. When configuring the client, specify the behavior by setting the `behaviorConfiguration` attribute of the `<endpoint>` element, as shown in the following code. The endpoint element is a child of the [\<client>](../../../docs/framework/configure-apps/file-schema/wcf/client.md) element. Also, specify the name of the binding configuration by setting the `bindingConfiguration` attribute to the binding for the client. If you are using a generated configuration file, the binding's name is automatically generated. In this example, the name is `"tcpBindingWithCredential"`.
+5. When configuring the client, specify the behavior by setting the `behaviorConfiguration` attribute of the `<endpoint>` element, as shown in the following code. The endpoint element is a child of the [\<client>](../configure-apps/file-schema/wcf/client.md) element. Also, specify the name of the binding configuration by setting the `bindingConfiguration` attribute to the binding for the client. If you are using a generated configuration file, the binding's name is automatically generated. In this example, the name is `"tcpBindingWithCredential"`.
 
     ```xml
     <client>
@@ -94,15 +94,15 @@ This example sets the security mode to Transport mode and sets the client creden
 - <xref:System.ServiceModel.Security.X509CertificateRecipientServiceCredential>
 - <xref:System.ServiceModel.ClientBase%601>
 - <xref:System.ServiceModel.Security.X509CertificateInitiatorClientCredential>
-- [Programming WCF Security](../../../docs/framework/wcf/feature-details/programming-wcf-security.md)
-- [Selecting a Credential Type](../../../docs/framework/wcf/feature-details/selecting-a-credential-type.md)
-- [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md)
-- [Working with Certificates](../../../docs/framework/wcf/feature-details/working-with-certificates.md)
-- [How to: Create a Client](../../../docs/framework/wcf/how-to-create-a-wcf-client.md)
-- [\<netTcpBinding>](../../../docs/framework/configure-apps/file-schema/wcf/nettcpbinding.md)
-- [\<security>](../../../docs/framework/configure-apps/file-schema/wcf/security-of-nettcpbinding.md)
-- [\<message>](../../../docs/framework/configure-apps/file-schema/wcf/message-element-of-nettcpbinding.md)
-- [\<behavior>](../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)
-- [\<behaviors>](../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md)
-- [\<clientCertificate>](../../../docs/framework/configure-apps/file-schema/wcf/clientcertificate-of-servicecredentials.md)
-- [\<clientCredentials>](../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md)
+- [Programming WCF Security](./feature-details/programming-wcf-security.md)
+- [Selecting a Credential Type](./feature-details/selecting-a-credential-type.md)
+- [ServiceModel Metadata Utility Tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md)
+- [Working with Certificates](./feature-details/working-with-certificates.md)
+- [How to: Create a Client](how-to-create-a-wcf-client.md)
+- [\<netTcpBinding>](../configure-apps/file-schema/wcf/nettcpbinding.md)
+- [\<security>](../configure-apps/file-schema/wcf/security-of-nettcpbinding.md)
+- [\<message>](../configure-apps/file-schema/wcf/message-element-of-nettcpbinding.md)
+- [\<behavior>](../configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)
+- [\<behaviors>](../configure-apps/file-schema/wcf/behaviors.md)
+- [\<clientCertificate>](../configure-apps/file-schema/wcf/clientcertificate-of-servicecredentials.md)
+- [\<clientCredentials>](../configure-apps/file-schema/wcf/clientcredentials.md)

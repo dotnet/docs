@@ -1,6 +1,5 @@
 ---
 title: "General Structure of a C# Program - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "C# language, program structure"
@@ -26,7 +25,7 @@ C# programs can consist of one or more files. Each file can contain zero or more
   
 ## C# Language Specification  
 
-For more information, see [Basic concepts](~/_csharplang/spec/basic-concepts.md) in the [C# Language Specification](../../language-reference/language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Basic concepts](~/_csharplang/spec/basic-concepts.md) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
   
 ## See also
 

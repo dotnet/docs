@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 3db7a220-cfe9-4810-8ca8-a094bb8e0f5b
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedScope Interface
 Represents a lexical scope within a method.  

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: d2ca20db-df22-4528-a0dd-a09ea62c8998
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugNativeFrame2::IsMatchingParentFrame Method
 Determines whether the specified frame is the parent of the current frame.  
@@ -61,6 +59,6 @@ HRESULT IsMatchingParentFrame([in] ICorDebugNativeFrame2
   
 ## See also
 
-- [ICorDebugNativeFrame2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugnativeframe2-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [ICorDebugNativeFrame2 Interface](icordebugnativeframe2-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

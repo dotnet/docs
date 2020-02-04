@@ -1,5 +1,5 @@
 ---
-title: "How to: Inherit Windows Forms"
+title: Form inheritance
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
@@ -9,9 +9,6 @@ helpviewer_keywords:
   - "inheritance [Windows Forms], forms"
   - "Windows Forms, inheritance"
 ms.assetid: cb3e1c0f-3d2a-4cdc-b0d1-c92eae567ffb
-dev_langs:
- - CSharp
- - VB
 ---
 # How to: Inherit Windows Forms
 

@@ -28,7 +28,7 @@ The License Compiler reads text files that contain licensing information and pro
   
 ```console
       lc /target:  
-targetPE /complist:filename [/outdir:path]  
+targetPE /complist:filename [-outdir:path]  
 /i:modules [/nologo] [/v]  
 ```  
   

@@ -2,8 +2,6 @@
 title: "ICorDebugAppDomain4::GetObjectForCCW Method"
 ms.date: "03/30/2017"
 ms.assetid: 2cacdb85-e7b8-42e7-b310-c3e8c22e5d33
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugAppDomain4::GetObjectForCCW Method
 Gets a managed object from a COM callable wrapper (CCW) pointer.  
@@ -37,5 +35,5 @@ HRESULT GetObjectForCCW(
   
 ## See also
 
-- [ICorDebugAppDomain4 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomain4-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugAppDomain4 Interface](icordebugappdomain4-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

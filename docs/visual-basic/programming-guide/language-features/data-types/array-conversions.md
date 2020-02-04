@@ -1,5 +1,5 @@
 ---
-title: "Array Conversions (Visual Basic)"
+title: "Array Conversions"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "arrays [Visual Basic], converting type"
@@ -29,7 +29,7 @@ You can convert an array type to a different array type provided you meet the fo
   
  In the following example, no conversion exists between types `student` and `String`, but both derive from `Object`, so all assignments are valid.  
   
-```  
+```vb  
 ' Assume student has already been defined as a class.  
 Dim testArray() As Object  
 ' testArray is still an Object array at this point.  
@@ -45,7 +45,7 @@ testArray = names
   
  In the following example, `students` is a `student` array. Since no conversion exists between `String` and `student`, the last statement fails.  
   
-```  
+```vb  
 Dim students() As student  
 Dim names() As String = New String(3) {"Name0", "Name1", "Name2", "Name3"}  
 students = New Student(3) {}  

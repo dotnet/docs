@@ -1,7 +1,7 @@
 ---
 title: 'Tutorial: Detect anomalies in product sales'
 description: Learn how to build an anomaly detection application for product sales data. This tutorial creates a .NET Core console application using C# in Visual Studio 2019.
-ms.date: 07/17/2019
+ms.date: 11/15/2019
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0612
 #Customer intent: As a developer, I want to use ML.NET in a product sales anomaly detection scenario so that I can analyze the data for anomaly spikes and change points to take the appropriate action.
@@ -23,7 +23,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 ## Prerequisites
 
-* [Visual Studio 2017 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the ".NET Core cross-platform development" workload installed.
+* [Visual Studio 2017 version 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the ".NET Core cross-platform development" workload installed.
 
 * [The product-sales.csv dataset](https://raw.githubusercontent.com/dotnet/machinelearning-samples/master/samples/csharp/getting-started/AnomalyDetection_Sales/SpikeDetection/Data/product-sales.csv)
 
@@ -39,7 +39,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 3. Install the **Microsoft.ML NuGet Package**:
 
-    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML**, select the **v1.0.0** package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. Repeat these steps for **Microsoft.ML.TimeSeries v0.12.0**.
+    In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.ML** and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. Repeat these steps for **Microsoft.ML.TimeSeries**.
 
 4. Add the following `using` statements at the top of your *Program.cs* file:
 
@@ -122,7 +122,7 @@ Data in ML.NET is represented as an [IDataView class](xref:Microsoft.ML.IDataVie
 
 Anomaly detection flags unexpected or unusual events or behaviors. It gives clues where to look for problems and helps you answer the question "Is this weird?".
 
-![Is this weird](./media/sales-anomaly-detection/anomalydetection.png)
+![Example of the "Is this weird" anomaly detection.](./media/sales-anomaly-detection/time-series-anomaly-detection.png)
 
 Anomaly detection is the process of detecting time-series data outliers; points on a given input time-series where the behavior isn't what was expected, or "weird".
 
@@ -147,7 +147,7 @@ You'll analyze the same product sales data to detect spikes and change points. T
 
 The goal of spike detection is to identify sudden yet temporary bursts that significantly differ from the majority of the time series data values. It's important to detect these suspicious rare items, events, or observations in a timely manner to be minimized. The following approach can be used to detect a variety of anomalies such as: outages, cyber-attacks, or viral web content. The following image is an example of spikes in a time series dataset:
 
-![SpikeDetection](./media/sales-anomaly-detection/SpikeDetection.png)
+![Screenshot that shows two spike detections.](./media/sales-anomaly-detection/two-spike-detections.png)
 
 ### Add the CreateEmptyDataView() method
 
@@ -261,7 +261,7 @@ Alert   Score   P-Value
 
 `Change points` are persistent changes in a time series event stream distribution of values, like level changes and trends. These persistent changes last much longer than `spikes` and could indicate catastrophic event(s). `Change points` are not usually visible to the naked eye, but can be detected in your data using approaches such as in the following method.  The following image is an example of a change point detection:
 
-![ChangePointDetection](./media/sales-anomaly-detection/ChangePointDetection.png)
+![Screenshot that shows a change point detection.](./media/sales-anomaly-detection/change-point-detection.png)
 
 ### Create the DetectChangepoint() method
 

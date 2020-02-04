@@ -1,5 +1,5 @@
 ---
-title: "Attribute List (Visual Basic)"
+title: "Attribute List"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "attribute list"
@@ -11,7 +11,7 @@ Specifies the attributes to be applied to a declared programming element. Multip
   
 ## Syntax  
   
-```  
+```vb  
 [ attributemodifier ] attributename [ ( attributearguments | attributeinitializer ) ]  
 ```  
   

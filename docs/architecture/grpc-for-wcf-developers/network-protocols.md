@@ -1,13 +1,10 @@
 ---
 title: Network protocols - gRPC for WCF Developers
 description: An overview of the gRPC network protocols.
-author: markrendle
 ms.date: 09/02/2019
 ---
 
 # Network protocols
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 Unlike WCF, gRPC uses HTTP/2 as a base for its networking. This offers significant advantages over WCF and SOAP, which only operate on HTTP/1.1. For developers wanting to use gRPC, given that there's no alternative to HTTP/2, it would seem to be the ideal moment to explore HTTP/2 in more detail and identify additional benefits to using gRPC.
 

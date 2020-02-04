@@ -8,11 +8,11 @@ ms.assetid: fbc0c54e-930a-4c13-8e9c-27b83665010a
 ---
 # Walkthrough: Localizing a Hybrid Application
 
-This walkthrough shows you how to localize [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] elements in a [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)]-based hybrid application.
+This walkthrough shows you how to localize [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] elements in a Windows Forms-based hybrid application.
 
 Tasks illustrated in this walkthrough include:
 
-- Creating the [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] host project.
+- Creating the Windows Forms host project.
 
 - Adding localizable content.
 
@@ -34,7 +34,7 @@ You need the following components to complete this walkthrough:
 
 ## Creating the Windows Forms Host Project
 
-The first step is to create the [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] application project and add a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] element with content that you will localize.
+The first step is to create the Windows Forms application project and add a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] element with content that you will localize.
 
 ### To create the host project
 
@@ -46,11 +46,11 @@ The first step is to create the [!INCLUDE[TLA#tla_winforms](../../../../includes
 
 ## Adding Localizable Content
 
-Next, you will add a [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] label control and set the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] element's content to a localizable string.
+Next, you will add a Windows Forms label control and set the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] element's content to a localizable string.
 
 ### To add localizable content
 
-1. In **Solution Explorer**, double-click **SimpleControl.xaml** to open it in the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].
+1. In **Solution Explorer**, double-click **SimpleControl.xaml** to open it in the WPF Designer.
 
 2. Set the content of the <xref:System.Windows.Controls.Button> control using the following code.
 
@@ -172,4 +172,4 @@ Your localized content is stored in a resource-only *satellite assembly*. Use th
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
 - [Localize an Application](how-to-localize-an-application.md)
 - [Walkthrough: Localizing Windows Forms](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/y99d1cd3(v=vs.100))
-- [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)
+- [Design XAML in Visual Studio](/visualstudio/xaml-tools/designing-xaml-in-visual-studio)

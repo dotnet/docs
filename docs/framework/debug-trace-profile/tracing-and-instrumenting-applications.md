@@ -23,7 +23,7 @@ Tracing is a way for you to monitor the execution of your application while it i
   
 - **Code tracing** - Receiving informative messages about the execution of an application at run time.  
   
-- **Debugging** - Tracking down and fixing programming errors in an application under development. For more information, see [Debugging](/visualstudio/debugger/debugging-in-visual-studio).  
+- **Debugging** - Tracking down and fixing programming errors in an application under development. For more information, see [Debugging](/visualstudio/debugger/debugger-feature-tour).  
   
 - **Performance counters** - Components that allow you to track the performance of your application. For more information, see [Performance Counters](performance-counters.md).  
   

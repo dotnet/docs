@@ -177,7 +177,7 @@ The following sections describe attributes, child elements, and parent elements
 |Attribute|Description|
 |---------------|-----------------|
 |closeTimeout|A <xref:System.TimeSpan> value that specifies the interval of time provided for a close operation to complete. This value should be greater than or equal to <xref:System.TimeSpan.Zero>. The default is 00:01:00.|
-|name|A string that contains the configuration name of the binding. This value is a user-defined string that acts as the identification string for the custom binding. Starting with [!INCLUDE[netfx40_short](../../../../../includes/netfx40-short-md.md)], bindings and behaviors are not required to have a name. For more information about default configuration and nameless bindings and behaviors, see [Simplified Configuration](../../../wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../wcf/samples/simplified-configuration-for-wcf-services.md).|
+|name|A string that contains the configuration name of the binding. This value is a user-defined string that acts as the identification string for the custom binding. Starting with .NET Framework 4, bindings and behaviors are not required to have a name. For more information about default configuration and nameless bindings and behaviors, see [Simplified Configuration](../../../wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../wcf/samples/simplified-configuration-for-wcf-services.md).|
 |openTimeout|A <xref:System.TimeSpan> value that specifies the interval of time provided for an open operation to complete. This value should be greater than or equal to <xref:System.TimeSpan.Zero>. The default is 00:01:00.|
 |receiveTimeout|A <xref:System.TimeSpan> value that specifies the interval of time provided for a receive operation to complete. This value should be greater than or equal to <xref:System.TimeSpan.Zero>. The default is 00:01:00.|
 |sendTimeout|A <xref:System.TimeSpan> value that specifies the interval of time provided for a send operation to complete. This value should be greater than or equal to <xref:System.TimeSpan.Zero>. The default is 00:01:00.|
@@ -294,7 +294,7 @@ For a discussion on how to use a custom binding to modify a system-provided bind
 - <xref:System.ServiceModel.Channels.BindingElement>
 - <xref:System.ServiceModel.Configuration.BindingsSection>
 - <xref:System.ServiceModel.Channels.CustomBinding>
-- [\<binding>](../../../misc/binding.md)
+- [\<binding>](bindings.md)
 - [Bindings](../../../wcf/bindings.md)
 - [Extending Bindings](../../../wcf/extending/extending-bindings.md)
 - [Custom Bindings](../../../wcf/extending/custom-bindings.md)

@@ -1,5 +1,5 @@
 ---
-title: "How to: Inherit from Existing Windows Forms Controls"
+title: Inherit from Existing Controls
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
@@ -8,8 +8,8 @@ helpviewer_keywords:
   - "inheritance [Windows Forms], Windows Forms custom controls"
   - "custom controls [Windows Forms], inheritance"
 ms.assetid: 1e1fc8ea-c615-4cf0-a356-16d6df7444ab
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # How to: Inherit from Existing Windows Forms Controls

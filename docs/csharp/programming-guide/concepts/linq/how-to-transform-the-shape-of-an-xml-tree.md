@@ -1,9 +1,9 @@
 ---
-title: "How to: Transform the Shape of an XML Tree (C#)"
+title: "How to transform the shape of an XML tree (C#)"
 ms.date: 07/20/2015
 ms.assetid: 93c5d426-dea2-4709-a991-60204de42e8f
 ---
-# How to: Transform the Shape of an XML Tree (C#)
+# How to transform the shape of an XML tree (C#)
 The *shape* of an XML document refers to its element names, attribute names, and the characteristics of its hierarchy.  
   
  Sometimes you will have to change the shape of an XML document. For example, you might have to send an existing XML document to another system that requires different element and attribute names. You could go through the document, deleting and renaming elements as required, but using functional construction results in more readable and maintainable code. For more information about functional construction, see [Functional Construction (LINQ to XML) (C#)](./functional-construction-linq-to-xml.md).  

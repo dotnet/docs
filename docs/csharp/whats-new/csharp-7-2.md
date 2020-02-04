@@ -12,8 +12,7 @@ avoiding unnecessary copies or allocations.
 
 The remaining features are small, nice-to-have features.
 
-C# 7.2 uses the [language version selection](../language-reference/configure-language-version.md)
-configuration element to select the compiler language version.
+C# 7.2 uses the [language version selection](../language-reference/configure-language-version.md) configuration element to select the compiler language version.
 
 The new language features in this release are:
 
@@ -69,7 +68,7 @@ For example:
 int binaryValue = 0b_0101_0101;
 ```
 
-## _private protected_ access modifier
+## *private protected* access modifier
 
 A new compound access modifier: `private protected` indicates that a member may be
 accessed by containing class or derived classes that are declared in the same assembly. While `protected internal`

@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "code, verification process"
   - "verification testing code"
 ms.assetid: 113a8bbf-6875-4a72-a49d-ca2d92e19cc8
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Application domains
 
@@ -122,7 +120,7 @@ Operating systems and runtime environments typically provide some form of isolat
   
 ### Syntax  
   
-```  
+```env  
 COMPLUS_LoaderOptimization = 1  
 ```  
   
@@ -145,7 +143,7 @@ COMPLUS_LoaderOptimization = 1
 
  To force all assemblies not to be loaded as domain-neutral for the IISADMIN service can be achieved by appending `COMPLUS_LoaderOptimization=1` to the Environment’s Multi-String Value in the HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\IISADMIN key.  
   
-```  
+```env  
 Key = HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\IISADMIN  
 Name = Environment  
 Type = REG_MULTI_SZ  

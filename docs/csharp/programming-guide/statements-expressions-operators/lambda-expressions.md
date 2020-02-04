@@ -1,6 +1,5 @@
 ---
 title: "Lambda expressions - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/29/2019
 helpviewer_keywords: 
   - "lambda expressions [C#]"
@@ -36,7 +35,7 @@ Expression lambdas also can be converted to the [expression tree](../concepts/ex
 
 [!code-csharp-interactive[lambda is expression tree](~/samples/snippets/csharp/programming-guide/lambda-expressions/Introduction.cs#ExpressionTree)]
 
-You can use lambda expressions in any code that requires instances of delegate types or expression trees, for example as an argument to the <xref:System.Threading.Tasks.Task.Run(System.Action)?displayProperty=nameWithType> method to pass the code that should be executed in the background. You also can use lambda expressions when you write [LINQ query expressions](../../linq/index.md), as the following example shows:
+You can use lambda expressions in any code that requires instances of delegate types or expression trees, for example as an argument to the <xref:System.Threading.Tasks.Task.Run(System.Action)?displayProperty=nameWithType> method to pass the code that should be executed in the background. You also can use lambda expressions when you write [LINQ in C#](../../linq/index.md), as the following example shows:
 
 [!code-csharp-interactive[lambda is argument in LINQ](~/samples/snippets/csharp/programming-guide/lambda-expressions/Introduction.cs#Argument)]
 
@@ -228,4 +227,4 @@ For more information, see the [Anonymous function expressions](~/_csharplang/spe
 - [Local functions compared to lambda expressions](../../local-functions-vs-lambdas.md)
 - [Implicitly typed lambda expressions](../../implicitly-typed-lambda-expressions.md)
 - [Visual Studio 2008 C# Samples (see LINQ Sample Queries files and XQuery program)](https://code.msdn.microsoft.com/Visual-Studio-2008-C-d295cdba)
-- [Recursive lambda expressions](https://blogs.msdn.microsoft.com/madst/2007/05/11/recursive-lambda-expressions/)
+- [Recursive lambda expressions](https://docs.microsoft.com/archive/blogs/madst/recursive-lambda-expressions)

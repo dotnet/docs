@@ -1,5 +1,5 @@
 ---
-title: "TextFieldParser Object (Visual Basic)"
+title: "TextFieldParser Object"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "TextFieldParser object"
@@ -12,7 +12,7 @@ Provides methods and properties for parsing structured text files.
   
 ## Syntax  
   
-```  
+```vb  
 Public Class TextFieldParser  
 ```  
   

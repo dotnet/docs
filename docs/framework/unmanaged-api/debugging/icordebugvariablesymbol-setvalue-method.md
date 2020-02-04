@@ -2,8 +2,6 @@
 title: "ICorDebugVariableSymbol::SetValue Method"
 ms.date: "03/30/2017"
 ms.assetid: 4609418d-71fa-44bc-9618-4d529d25cabb
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugVariableSymbol::SetValue Method
 Assigns the value of a byte array to a variable.  
@@ -56,5 +54,5 @@ HRESULT SetValue(
   
 ## See also
 
-- [ICorDebugVariableSymbol Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablesymbol-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugVariableSymbol Interface](icordebugvariablesymbol-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

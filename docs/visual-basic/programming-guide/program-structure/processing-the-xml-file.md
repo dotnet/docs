@@ -1,5 +1,5 @@
 ---
-title: "Processing the XML File (Visual Basic)"
+title: "Processing the XML File"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "XML comments [Visual Basic], parsing [Visual Basic]"
@@ -37,5 +37,5 @@ The compiler generates an ID string for each construct in your code that is tagg
   
 ## See also
 
-- [/doc](../../../visual-basic/reference/command-line-compiler/doc.md)
+- [-doc](../../../visual-basic/reference/command-line-compiler/doc.md)
 - [How to: Create XML Documentation](../../../visual-basic/programming-guide/program-structure/how-to-create-xml-documentation.md)

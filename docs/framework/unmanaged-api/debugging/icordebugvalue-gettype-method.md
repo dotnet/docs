@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 41e2d503-e1f1-407b-abe0-6a29adb3e0d1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugValue::GetType Method
 Gets the primitive type of this "ICorDebugValue" object.  
@@ -36,7 +34,7 @@ HRESULT GetType (
 ## Remarks  
  If the object is a complex run-time type, that type may be examined through the appropriate subclasses of the `ICorDebugValue` interface. For example, "ICorDebugObjectValue", which inherits from `ICorDebugValue`, represents a complex type.  
   
- The `GetType` and [ICorDebugObjectValue::GetClass](../../../../docs/framework/unmanaged-api/debugging/icordebugobjectvalue-getclass-method.md) methods each return information about the type of a value. They are both superseded by the generics-aware [ICorDebugValue2::GetExactType](../../../../docs/framework/unmanaged-api/debugging/icordebugvalue2-getexacttype-method.md) method.  
+ The `GetType` and [ICorDebugObjectValue::GetClass](icordebugobjectvalue-getclass-method.md) methods each return information about the type of a value. They are both superseded by the generics-aware [ICorDebugValue2::GetExactType](icordebugvalue2-getexacttype-method.md) method.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

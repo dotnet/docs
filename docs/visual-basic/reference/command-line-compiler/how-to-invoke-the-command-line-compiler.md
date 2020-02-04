@@ -1,5 +1,5 @@
 ---
-title: "How to: Invoke the Command-Line Compiler (Visual Basic)"
+title: "How to: Invoke the Command-Line Compiler"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "command-line arguments"

@@ -1,14 +1,16 @@
 ---
-title: "How My Depends on Project Type (Visual Basic)"
+title: "How My Depends on Project Type"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "_MYTYPE"
 ms.assetid: c188b38e-bd9d-4121-9983-41ea6a94d28e
 ---
 # How My Depends on Project Type (Visual Basic)
+
 `My` exposes only those objects required by a particular project type. For example, the `My.Forms` object is available in a Windows Forms application but not available in a console application. This topic describes which `My` objects are available in different project types.  
   
 ## My in Windows Applications and Web Sites  
+
  `My` exposes only objects that are useful in the current project type; it suppresses objects that are not applicable. For example, the following image shows the `My` object model in a Windows Forms project.  
   
  ![Diagram that shows the My object model in a Windows Forms application.](./media/how-my-depends-on-project-type/my-object-model-windows-forms.png)  
@@ -18,6 +20,7 @@ ms.assetid: c188b38e-bd9d-4121-9983-41ea6a94d28e
  ![Diagram that shows the My object model in a Web application.](./media/how-my-depends-on-project-type/my-object-model-web.png)  
   
 ## Project Details  
+
  The following table shows which `My` objects are enabled by default for eight project types: Windows application, class Library, console application, Windows control library, Web control library, Windows service, empty, and Web site.  
   
  There are three versions of the `My.Application` object, two versions of the `My.Computer` object, and two versions of `My.User` object; details about these versions are given in the footnotes after the table.  
@@ -57,7 +60,7 @@ ms.assetid: c188b38e-bd9d-4121-9983-41ea6a94d28e
 - <xref:Microsoft.VisualBasic.ApplicationServices.User>
 - [Customizing Which Objects are Available in My](../../../visual-basic/developing-apps/customizing-extending-my/customizing-which-objects-are-available-in-my.md)
 - [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)
-- [/define (Visual Basic)](../../../visual-basic/reference/command-line-compiler/define.md)
+- [-define (Visual Basic)](../../../visual-basic/reference/command-line-compiler/define.md)
 - [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)
 - [My.Request Object](../../../visual-basic/language-reference/objects/my-request-object.md)
 - [My.Response Object](../../../visual-basic/language-reference/objects/my-response-object.md)

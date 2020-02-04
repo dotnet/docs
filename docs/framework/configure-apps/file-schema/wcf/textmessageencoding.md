@@ -44,7 +44,7 @@ Specifies the character encoding and message versioning used for text-based XML 
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<binding>](../../../misc/binding.md)|Defines all binding capabilities of the custom binding.|  
+|[\<binding>](bindings.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
  Encoding is the process of transforming a message into a sequence of bytes. Decoding is the reverse process. Windows Communication Foundation (WCF) includes three types of encoding for SOAP messages: Text, Binary and Message Transmission Optimization Mechanism (MTOM).  

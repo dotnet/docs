@@ -1,10 +1,7 @@
 ---
 title: .NET Core Application Deployment
 description: Learn about the ways to deploy a .NET Core application.
-author: rpetrusha
-ms.author: ronpet
 ms.date: 12/03/2018
-ms.custom: seodec18
 ---
 # .NET Core application deployment
 
@@ -60,7 +57,7 @@ It also has a number of disadvantages:
 
 - The size of your deployment package is relatively large, since you have to include .NET Core as well as your app and its third-party dependencies.
 
-  Starting with .NET Core 2.0, you can reduce the size of your deployment on Linux systems by approximately 28 MB by using .NET Core [*globalization invariant mode*](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md). Ordinarily, .NET Core on Linux relies on the [ICU libraries](http://icu-project.org) for globalization support. In invariant mode, the libraries are not included with your deployment, and all cultures behave like the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType).
+  Starting with .NET Core 2.0, you can reduce the size of your deployment on Linux systems by approximately 28 MB by using .NET Core [*globalization invariant mode*](https://github.com/dotnet/runtime/blob/master/docs/design/features/globalization-invariant-mode.md). Ordinarily, .NET Core on Linux relies on the [ICU libraries](http://icu-project.org) for globalization support. In invariant mode, the libraries are not included with your deployment, and all cultures behave like the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType).
 
 - Deploying numerous self-contained .NET Core apps to a system can consume significant amounts of disk space, since each app duplicates .NET Core files.
 
@@ -88,11 +85,11 @@ There are also a few disadvantages:
 
 ## Step-by-step examples
 
-For step-by-step examples of deploying .NET Core apps with CLI tools, see [Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md). For step-by-step examples of deploying .NET Core apps with Visual Studio, see [Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md). 
+For step-by-step examples of deploying .NET Core apps with the .NET Core CLI, see [Publish .NET Core apps with the .NET Core CLI](deploy-with-cli.md). For step-by-step examples of deploying .NET Core apps with Visual Studio, see [Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md). 
 
 ## See also
 
-- [Deploying .NET Core Apps with CLI Tools](deploy-with-cli.md)
+- [Publish .NET Core apps with the .NET Core CLI](deploy-with-cli.md)
 - [Deploying .NET Core Apps with Visual Studio](deploy-with-vs.md)
 - [Packages, Metapackages and Frameworks](../packages.md)
 - [.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)

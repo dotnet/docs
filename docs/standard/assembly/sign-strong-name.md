@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "assemblies [.NET Framework], signing"
   - "assemblies [.NET Framework], strong-named"
 ms.assetid: 2c30799a-a826-46b4-a25d-c584027a6c67
-author: "rpetrusha"
-ms.author: "ronpet"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,7 +15,7 @@ dev_langs:
 # How to: Sign an assembly with a strong name
 
 > [!NOTE]
-> Although .NET Core supports strong-named assemblies, and all assemblies in the .NET Core library are signed, the majority of third-party assemblies do not need strong names. For more information, see [Strong Name Signing](https://github.com/dotnet/corefx/blob/master/Documentation/project-docs/strong-name-signing.md) on GitHub.
+> Although .NET Core supports strong-named assemblies, and all assemblies in the .NET Core library are signed, the majority of third-party assemblies do not need strong names. For more information, see [Strong Name Signing](https://github.com/dotnet/runtime/blob/master/docs/project/strong-name-signing.md) on GitHub.
 
 There are a number of ways to sign an assembly with a strong name:  
   

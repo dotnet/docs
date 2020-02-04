@@ -1,5 +1,5 @@
 ---
-title: "How to: Set the Tab Order on Windows Forms"
+title: Set tab order of controls
 ms.date: "03/30/2017"
 f1_keywords:
   - "TabStop"
@@ -10,8 +10,8 @@ helpviewer_keywords:
   - "controls [Windows Forms], setting tab order"
   - "Windows Forms, setting tab order"
 ms.assetid: 71fa8e76-0472-414b-ad3c-0f90166e0ad7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # How to: Set the tab order on Windows Forms

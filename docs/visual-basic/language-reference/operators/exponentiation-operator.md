@@ -1,5 +1,5 @@
 ---
-title: "^ Operator (Visual Basic)"
+title: "^ Operator"
 ms.date: 07/20/2015
 f1_keywords:
   - "vb.^"
@@ -22,7 +22,7 @@ Raises a number to the power of another number.
 
 ## Syntax
 
-```
+```vb
 number ^ exponent
 ```
 

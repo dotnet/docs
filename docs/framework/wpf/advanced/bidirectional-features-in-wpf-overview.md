@@ -1,5 +1,5 @@
 ---
-title: "Bidirectional Features in WPF Overview"
+title: Bidirectional features overview
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Span elements [WPF]"
@@ -10,7 +10,7 @@ ms.assetid: fd850e25-7dba-408c-b521-8873e51dc968
 
 Unlike any other development platform, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] has many features that support rapid development of bidirectional content, for example, mixed left to right and right to left data in the same document. At the same time, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] creates an excellent experience for users who require bidirectional features such as Arabic and Hebrew speaking users.
 
-The following sections explain many bidirectional features together with examples illustrating how to achieve the best display of bidirectional content. Most of the samples use [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)], though you can easily apply the concepts to C# or Microsoft Visual Basic code.
+The following sections explain many bidirectional features together with examples illustrating how to achieve the best display of bidirectional content. Most of the samples use XAML, though you can easily apply the concepts to C# or Microsoft Visual Basic code.
 
 <a name="FlowDirection"></a>
 
@@ -48,7 +48,7 @@ The following graphic shows the output of the previous example:
 
 ## FlowDocument
 
-Many development platforms such as HTML, [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] and Java provide special support for bidirectional content development. Markup languages such as HTML give content writers the necessary markup to display text in any required direction, for example the HTML 4.0 tag, "dir" that takes "rtl" or "ltr" as values. This tag is similar to the <xref:System.Windows.FrameworkElement.FlowDirection%2A> property, but the <xref:System.Windows.FrameworkElement.FlowDirection%2A> property works in a more advanced way to layout textual content and can be used for content other than text.
+Many development platforms such as HTML, Win32 and Java provide special support for bidirectional content development. Markup languages such as HTML give content writers the necessary markup to display text in any required direction, for example the HTML 4.0 tag, "dir" that takes "rtl" or "ltr" as values. This tag is similar to the <xref:System.Windows.FrameworkElement.FlowDirection%2A> property, but the <xref:System.Windows.FrameworkElement.FlowDirection%2A> property works in a more advanced way to layout textual content and can be used for content other than text.
 
 In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], a <xref:System.Windows.Documents.FlowDocument> is a versatile [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] element that can host a combination of text, tables, images and other elements. The samples in the following sections use this element.
 
@@ -92,7 +92,7 @@ The following graphic shows another example that uses numbers and arithmetic exp
 
 Users of this application will be disappointed by the output, even though the <xref:System.Windows.FlowDirection> is correct the numbers are not shaped as Arabic numbers should be shaped.
 
-XAML elements can include an [!INCLUDE[TLA#tla_xml](../../../../includes/tlasharptla-xml-md.md)] attribute (`xml:lang`) that defines the language of each element. XAML also supports a [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] language principle whereby `xml:lang` values applied to parent elements in the tree are used by child elements. In the previous example, because a language was not defined for the <xref:System.Windows.Documents.Run> element or any of its top level elements, the default `xml:lang` was used, which is `en-US` for XAML. The internal number shaping algorithm of [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] selects numbers in the corresponding language – in this case English. To make the Arabic numbers render correctly `xml:lang` needs to be set.
+XAML elements can include an XML attribute (`xml:lang`) that defines the language of each element. XAML also supports a XML language principle whereby `xml:lang` values applied to parent elements in the tree are used by child elements. In the previous example, because a language was not defined for the <xref:System.Windows.Documents.Run> element or any of its top level elements, the default `xml:lang` was used, which is `en-US` for XAML. The internal number shaping algorithm of [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] selects numbers in the corresponding language – in this case English. To make the Arabic numbers render correctly `xml:lang` needs to be set.
 
 The following graphic shows the example with `xml:lang` added.
 
@@ -130,7 +130,7 @@ There are a few cases where <xref:System.Windows.FlowDirection> does not behave 
 
 **Image**
 
-An <xref:System.Windows.Controls.Image> represents a control that displays an image. In [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)] it can be used with a <xref:System.Windows.Controls.Image.Source%2A> property that defines the [!INCLUDE[TLA#tla_uri](../../../../includes/tlasharptla-uri-md.md)] of the <xref:System.Windows.Controls.Image> to display.
+An <xref:System.Windows.Controls.Image> represents a control that displays an image. In XAML it can be used with a <xref:System.Windows.Controls.Image.Source%2A> property that defines the uniform resource identifier (URI) of the <xref:System.Windows.Controls.Image> to display.
 
 Unlike other [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] elements, an <xref:System.Windows.Controls.Image> does not inherit the <xref:System.Windows.FlowDirection> from the container. However, if the <xref:System.Windows.FlowDirection> is set explicitly to <xref:System.Windows.FlowDirection.RightToLeft>, an <xref:System.Windows.Controls.Image> is displayed flipped horizontally. This is implemented as a convenient feature for developers of bidirectional content; because in some cases, horizontally flipping the image produces the desired effect.
 
@@ -168,11 +168,11 @@ The <xref:System.Windows.Controls.Image> and <xref:System.Windows.Shapes.Path> a
 
 Historically, Windows has supported number substitution by allowing the representation of different cultural shapes for the same digits while keeping the internal storage of these digits unified among different locales, for example numbers are stored in their well known hexadecimal values, 0x40, 0x41, but displayed according to the selected language.
 
-This has allowed applications to process numerical values without the need to convert them from one language to another, for example a user can open an [!INCLUDE[TLA#tla_xl](../../../../includes/tlasharptla-xl-md.md)] spreadsheet in a localized Arabic Windows and see the numbers shaped in Arabic, but open it in a European version of Windows and see European representation of the same numbers. This is also necessary for other symbols such as comma separators and percentage symbol because they usually accompany numbers in the same document.
+This has allowed applications to process numerical values without the need to convert them from one language to another, for example a user can open an Microsoft Excel spreadsheet in a localized Arabic Windows and see the numbers shaped in Arabic, but open it in a European version of Windows and see European representation of the same numbers. This is also necessary for other symbols such as comma separators and percentage symbol because they usually accompany numbers in the same document.
 
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] continues the same tradition, and adds further support for this feature that allows more user control over when and how substitution is used. While this feature is designed for any language, it is particularly useful in bidirectional content where shaping digits for a specific language is usually a challenge for application developers because of the various cultures an application might run on.
 
-The core property controlling how number substitution works in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] is the <xref:System.Windows.Media.NumberSubstitution.Substitution%2A> dependency property. The <xref:System.Windows.Media.NumberSubstitution> class specifies how numbers in text are to be displayed. It has three public properties that define its behavior. Following is a summary of each of the properties.
+The core property controlling how number substitution works in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] is the <xref:System.Windows.Media.NumberSubstitution.Substitution%2A> dependency property. The <xref:System.Windows.Media.NumberSubstitution> class specifies how numbers in text are to be displayed. It has three public properties that define its behavior. The following is a summary of each of the properties:
 
 **CultureSource:**
 
@@ -243,7 +243,7 @@ text1.Language = System.Windows.Markup.XmlLanguage.GetLanguage(System.Globalizat
 
 <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=nameWithType> represents the current culture used by the current thread at run time.
 
-Your final [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)] example should be similar to the following example.
+Your final XAML example should be similar to the following example.
 
 [!code-xaml[Numbers2#Numbers2](~/samples/snippets/csharp/VS_Snippets_Wpf/Numbers2/CS/Window1.xaml#numbers2)]
 

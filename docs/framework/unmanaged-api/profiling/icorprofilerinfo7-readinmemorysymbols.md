@@ -10,8 +10,6 @@ api_location:
 api_type: 
   - "COM"
 ms.assetid: 1745a0b9-8332-4777-a670-b549bff3b901
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorProfilerInfo7::ReadInMemorySymbols
 [Supported in the .NET Framework 4.6.1 and later versions]  
@@ -68,4 +66,4 @@ HRESULT ReadInMemorySymbols(
   
 ## See also
 
-- [ICorProfilerInfo7 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo7-interface.md)
+- [ICorProfilerInfo7 Interface](icorprofilerinfo7-interface.md)

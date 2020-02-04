@@ -1,5 +1,5 @@
 ---
-title: "StatusBar Control (Windows Forms)"
+title: "StatusBar Control"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "StatusBar control [Windows Forms]"

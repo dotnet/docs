@@ -1,5 +1,5 @@
 ---
-title: "How to: Receive Strings From Serial Ports in Visual Basic"
+title: "How to: Receive Strings From Serial Ports"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "serial ports, retrieving strings"
@@ -8,6 +8,7 @@ helpviewer_keywords:
 ms.assetid: 8371ce2c-e1c7-476b-a86d-9afc2614b6b7
 ---
 # How to: Receive Strings From Serial Ports in Visual Basic
+
 This topic describes how to use `My.Computer.Ports` to receive strings from the computer's serial ports in Visual Basic.  
   
 ### To receive strings from the serial port  
@@ -45,14 +46,17 @@ This topic describes how to use `My.Computer.Ports` to receive strings from the 
      [!code-vb[VbVbalrMyComputer#44](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#44)]  
   
 ## Example  
+
  [!code-vb[VbVbalrMyComputer#37](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrMyComputer/VB/Class2.vb#37)]  
   
  This code example is also available as an IntelliSense code snippet. In the code snippet picker, it is located in **Connectivity and Networking**. For more information, see [Code Snippets](/visualstudio/ide/code-snippets).  
   
 ## Compiling the Code  
+
  This example assumes the computer is using `COM1`.  
   
 ## Robust Programming  
+
  This example assumes the computer is using `COM1`. For more flexibility, the code should allow the user to select the desired serial port from a list of available ports. For more information, see [How to: Show Available Serial Ports](../../../../visual-basic/developing-apps/programming/computer-resources/how-to-show-available-serial-ports.md).  
   
  This example uses a `Try...Catch...Finally` block to make sure that the application closes the port and to catch any timeout exceptions. For more information, see [Try...Catch...Finally Statement](../../../../visual-basic/language-reference/statements/try-catch-finally-statement.md).  

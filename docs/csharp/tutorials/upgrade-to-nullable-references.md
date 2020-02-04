@@ -1,7 +1,8 @@
 ---
-title: Design with nullable reference types
-description: This advanced tutorial provides an introduction to nullable reference types. You'll learn to express your design intent on when reference values may be null, and have the compiler enforce when they cannot be null.
+title: Upgrade to nullable reference types
+description: This advanced tutorial demonstrates how to migrate existing code with nullable reference types.
 ms.date: 02/19/2019
+ms.technology: csharp-null-safety
 ms.custom: mvc
 ---
 # Tutorial: Migrate existing code with nullable reference types
@@ -19,13 +20,13 @@ In this tutorial, you'll learn how to:
 
 ## Prerequisites
 
-You'll need to set up your machine to run .NET Core, including the C# 8.0 beta compiler. The C# 8 beta compiler is available with [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), or the latest [.NET Core 3.0 preview](https://dotnet.microsoft.com/download/dotnet-core/3.0).
+You’ll need to set up your machine to run .NET Core, including the C# 8.0 compiler. The C# 8 compiler is available starting with [Visual Studio 2019 version 16.3](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) or [.NET Core 3.0 SDK](https://dotnet.microsoft.com/download).
 
 This tutorial assumes you're familiar with C# and .NET, including either Visual Studio or the .NET Core CLI.
 
 ## Explore the sample application
 
-The sample application that you'll migrate is an RSS feed reader web app. It reads from a single RSS feed and displays summaries for the most recent articles. You can click on any of the articles to visit the site. The application is relatively new but was written before nullable reference types were available. The design decisions for the application represented sound principles, but don't take advantage of this important language feature.
+The sample application that you'll migrate is an RSS feed reader web app. It reads from a single RSS feed and displays summaries for the most recent articles. You can select any of the articles to visit the site. The application is relatively new but was written before nullable reference types were available. The design decisions for the application represented sound principles, but don't take advantage of this important language feature.
 
 The sample application includes a unit test library that validates the major functionality of the app. That project will make it easier to upgrade safely, if you change any of the implementation based on the warnings generated. You can download the starter code from the [dotnet/samples](https://github.com/dotnet/samples/tree/master/csharp/tutorials/nullable-reference-migration/start) GitHub repository.
 
@@ -46,9 +47,6 @@ A good next step is to turn on the nullable annotation context and see how many 
 ```xml
 <Nullable>enable</Nullable>
 ```
-
-> [!IMPORTANT]
-> The `Nullable` element was previously named `NullableContextOptions`. The rename ships with Visual Studio 2019, 16.2-p1. The .NET Core SDK 3.0.100-preview5-011568 does not have this change. If you are using the .NET Core CLI, you'll need to use `NullableContextOptions` until the next preview is available.
 
 Do a test build, and notice the warning list. In this small application, the compiler generates five warnings, so it's likely you'd leave the nullable annotation context enabled and start fixing warnings for the entire project.
 
@@ -163,4 +161,4 @@ The `IMapper` parameter is typed as a nonnullable reference. It's called by ASP.
 
 You've fixed the warnings you identified in the initial test compile, so now you can turn on the nullable annotation context for both projects. Rebuild the projects; the compiler reports no warnings. You can get the code for the finished project in the [dotnet/samples](https://github.com/dotnet/samples/tree/master/csharp/tutorials/nullable-reference-migration/finished) GitHub repository.
 
-The new features that support nullable reference types help you find and fix potential errors in how you handle `null` values in your code. Enabling the nullable annotation context allows you to express your design intent: some variables should never be null, other variables may contain null values. These features make it easier for you to declare your design intent. Similarly, the nullable warning context instructs the compiler to issue warnings when you have violated that intent. Those warnings guide you to make updates that make your code more resilient and less likely to throw a `NullReferenceException` during execution. You can control the scope of these contexts so that you can focus on local areas of code to migrate while the remaining codebase is untouched. In practice, you can make this migration task a part of regular maintenance to your classes. This tutorial demonstrated the process to migrate an application to use nullable reference types. You can explore a larger real-world example of this process by examining the PR [Jon Skeet](https://github.com/jskeet) made to incorporate nullable reference types into [NodaTime](https://github.com/nodatime/nodatime/pull/1240/commits).
+The new features that support nullable reference types help you find and fix potential errors in how you handle `null` values in your code. Enabling the nullable annotation context allows you to express your design intent: some variables should never be null, other variables may contain null values. These features make it easier for you to declare your design intent. Similarly, the nullable warning context instructs the compiler to issue warnings when you have violated that intent. Those warnings guide you to make updates that make your code more resilient and less likely to throw a `NullReferenceException` during execution. You can control the scope of these contexts so that you can focus on local areas of code to migrate while the remaining codebase is untouched. In practice, you can make this migration task a part of regular maintenance to your classes. This tutorial demonstrated the process to migrate an application to use nullable reference types. You can explore a larger real-world example of this process by examining the PR [Jon Skeet](https://github.com/jskeet) made to incorporate nullable reference types into [NodaTime](https://github.com/nodatime/nodatime/pull/1240/commits). Or just In addition, you can learn techniques for using nullable reference types with Entity Framework Core in [Entity Framework Core - Working with nullable reference types](/ef/core/miscellaneous/nullable-reference-types).

@@ -1,5 +1,5 @@
 ---
-title: "File Access with Visual Basic"
+title: "File Access"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "file access"
@@ -16,9 +16,11 @@ helpviewer_keywords:
 ms.assetid: 231533bf-d049-4345-befa-3fb78fe6517d
 ---
 # File Access with Visual Basic
+
 The `My.Computer.FileSystem` object provides tools for working with files and folders. Its properties, methods, and events allow you to create, copy, move, investigate, and delete files and folders. `My.Computer.FileSystem` provides better performance than the legacy functions (`FileOpen`, `FileClose`, `Input`, `InputString`, `LineInput`, etc.) that are provided by Visual Basic for backward compatibility.  
   
 ## In This Section  
+
  [Reading from Files](../../../../visual-basic/developing-apps/programming/drives-directories-files/reading-from-files.md)  
  Lists topics dealing with using the `My.Computer.FileSystem` object to read from files  
   

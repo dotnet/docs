@@ -75,7 +75,7 @@ Also, when you pass dimensioned values to functions that expect dimensionless fl
 
 The following example session shows the outputs from and inputs to this code.
 
-```
+```console
 Enter a temperature in degrees Fahrenheit.
 90
 That temperature in degrees Celsius is    32.22.

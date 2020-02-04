@@ -1,12 +1,9 @@
 ---
 title: "Expression-bodied members - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 02/06/2019
 helpviewer_keywords: 
   - "expression-bodied members[C#]"
   - "C# language, expresion-bodied members"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Expression-bodied members (C# programming guide)
 
@@ -83,9 +80,9 @@ For more information, see [Finalizers (C# Programming Guide)](../classes-and-str
 
 ## Indexers
 
-Like properties, an indexer's get and set accessors consist of expression body definitions if the get accessor consists of a single statement that returns a value or the set accessor performs a simple assignment.
+Like with properties, indexer `get` and `set` accessors consist of expression body definitions if the `get` accessor consists of a single expression that returns a value or the `set` accessor performs a simple assignment.
 
-The following example defines a class named `Sports` that includes an internal <xref:System.String> array that contains the names of a number of sports. Both the indexer's get and set accessors are implemented as expression body definitions.
+The following example defines a class named `Sports` that includes an internal <xref:System.String> array that contains the names of a number of sports. Both the indexer `get` and `set` accessors are implemented as expression body definitions.
 
 [!code-csharp[expression-bodied-indexer](../../../../samples/snippets/csharp/programming-guide/classes-and-structs/expr-bodied-indexers.cs#1)]
 

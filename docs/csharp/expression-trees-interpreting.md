@@ -2,6 +2,8 @@
 title: Interpreting Expressions
 description: Learn how to write code to examine the structure of an expression tree.
 ms.date: 06/20/2016
+ms.technology: csharp-advanced-concepts
+
 ms.assetid: adf73dde-1e52-4df3-9929-2e0670e28e16
 ---
 

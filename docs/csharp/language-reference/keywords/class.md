@@ -1,7 +1,5 @@
 ---
 title: "class keyword - C# Reference"
-ms.custom: seodec18
-
 ms.date: 07/18/2017
 f1_keywords: 
   - "class_CSharpKeyword"
@@ -69,7 +67,7 @@ A class can contain declarations of the following members:
 
 - [Structs](../../programming-guide/classes-and-structs/structs.md)
 
-- [Enumerations](../../programming-guide/enumeration-types.md)
+- [Enumerations](../builtin-types/enum.md)
 
 ## Example
 

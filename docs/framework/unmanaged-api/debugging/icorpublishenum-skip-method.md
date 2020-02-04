@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 1680ec06-4ab0-447e-93ad-cdb8693fde5c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorPublishEnum::Skip Method
 Moves the cursor forward in the enumeration by the specified number of items.  
@@ -44,4 +42,4 @@ HRESULT Skip (
   
 ## See also
 
-- [ICorPublishEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishenum-interface.md)
+- [ICorPublishEnum Interface](icorpublishenum-interface.md)

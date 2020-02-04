@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "TPL dataflow library, joining blocks in"
   - "dataflow blocks, joining in TPL"
 ms.assetid: e9c1ada4-ac57-4704-87cb-2f5117f8151d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Use JoinBlock to Read Data From Multiple Sources
 This document explains how to use the <xref:System.Threading.Tasks.Dataflow.JoinBlock%602> class to perform an operation when data is available from multiple sources. It also demonstrates how to use non-greedy mode to enable multiple join blocks to share a data source more efficiently.

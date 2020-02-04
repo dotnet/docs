@@ -1,7 +1,5 @@
 ---
 title: "orderby clause - C# Reference"
-ms.custom: seodec18
-
 ms.date: 07/20/2015
 f1_keywords: 
   - "orderby"
@@ -37,4 +35,4 @@ At compile time, the `orderby` clause is translated to a call to the <xref:Syste
 - [Query Keywords (LINQ)](query-keywords.md)
 - [Language Integrated Query (LINQ)](../../linq/index.md)
 - [group clause](group-clause.md)
-- [Getting Started with LINQ in C#](../../programming-guide/concepts/linq/getting-started-with-linq.md)
+- [Getting Started with LINQ in C#](/dotnet/csharp/programming-guide/concepts/linq/)

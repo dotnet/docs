@@ -35,14 +35,14 @@ ms.assetid: d028cc65-7e97-4a4f-9859-929734eaf40d
   
 <a name="Navigation_Objects"></a>   
 ## Navigation to Object  
- The <xref:System.Windows.Navigation.NavigationWindow> object derives from <xref:System.Windows.Window> and extends it with content navigation support, primarily by aggregating <xref:System.Windows.Navigation.NavigationService> and the journal. You can update the client area of <xref:System.Windows.Navigation.NavigationWindow> by specifying either a [!INCLUDE[TLA#tla_uri](../../../../includes/tlasharptla-uri-md.md)] or an object. The following sample shows both methods:  
+ The <xref:System.Windows.Navigation.NavigationWindow> object derives from <xref:System.Windows.Window> and extends it with content navigation support, primarily by aggregating <xref:System.Windows.Navigation.NavigationService> and the journal. You can update the client area of <xref:System.Windows.Navigation.NavigationWindow> by specifying either a uniform resource identifier (URI) or an object. The following sample shows both methods:  
   
  [!code-csharp[Performance#PerformanceSnippet14](~/samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/TestNavigation.xaml.cs#performancesnippet14)]
  [!code-vb[Performance#PerformanceSnippet14](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Performance/visualbasic/testnavigation.xaml.vb#performancesnippet14)]  
   
  Each <xref:System.Windows.Navigation.NavigationWindow> object has a journal that records the user's navigation history in that window. One of the purposes of the journal is to allow users to retrace their steps.  
   
- When you navigate using a [!INCLUDE[TLA#tla_uri](../../../../includes/tlasharptla-uri-md.md)], the journal stores only the [!INCLUDE[TLA#tla_uri](../../../../includes/tlasharptla-uri-md.md)] reference. This means that each time you revisit the page, it is dynamically reconstructed, which may be time consuming depending on the complexity of the page. In this case, the journal storage cost is low, but the time to reconstitute the page is potentially high.  
+ When you navigate using a uniform resource identifier (URI), the journal stores only the uniform resource identifier (URI) reference. This means that each time you revisit the page, it is dynamically reconstructed, which may be time consuming depending on the complexity of the page. In this case, the journal storage cost is low, but the time to reconstitute the page is potentially high.  
   
  When you navigate using an object, the journal stores the entire visual tree of the object. This means that each time you revisit the page, it renders immediately without having to be reconstructed. In this case, the journal storage cost is high, but the time to reconstitute the page is low.  
   
@@ -64,7 +64,7 @@ ms.assetid: d028cc65-7e97-4a4f-9859-929734eaf40d
   
 <a name="FontCache"></a>   
 ## Configure Font Cache Service to Reduce Start-up Time  
- The [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] Font Cache service shares font data between [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications. The first [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] application you run starts this service if the service is not already running. If you are using [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)], you can set the "Windows Presentation Foundation (WPF) Font Cache 3.0.0.0" service from "Manual" (the default) to "Automatic (Delayed Start)" to reduce the initial start-up time of [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications.  
+ The WPF Font Cache service shares font data between WPF applications. The first WPF application you run starts this service if the service is not already running. If you are using Windows Vista, you can set the "Windows Presentation Foundation (WPF) Font Cache 3.0.0.0" service from "Manual" (the default) to "Automatic (Delayed Start)" to reduce the initial start-up time of WPF applications.  
   
 ## See also
 

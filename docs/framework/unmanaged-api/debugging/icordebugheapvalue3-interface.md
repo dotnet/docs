@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 9c421bb0-e647-4b2d-a986-f3d578cc7f20
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugHeapValue3 Interface
 Exposes the monitor lock properties of objects. This interface extends the ICorDebugHeapValue and ICorDebugHeapValue2 interfaces.  
@@ -24,8 +22,8 @@ Exposes the monitor lock properties of objects. This interface extends the ICorD
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetThreadOwningMonitorLock Method](../../../../docs/framework/unmanaged-api/debugging/icordebugheapvalue3-getthreadowningmonitorlock-method.md)|Returns the managed thread that owns the monitor lock on this object.|  
-|[GetMonitorEventWaitList Method](../../../../docs/framework/unmanaged-api/debugging/icordebugheapvalue3-getmonitoreventwaitlist-method.md)|Provides an ordered list of threads that are queued on the event that is associated with a monitor lock.|  
+|[GetThreadOwningMonitorLock Method](icordebugheapvalue3-getthreadowningmonitorlock-method.md)|Returns the managed thread that owns the monitor lock on this object.|  
+|[GetMonitorEventWaitList Method](icordebugheapvalue3-getmonitoreventwaitlist-method.md)|Provides an ordered list of threads that are queued on the event that is associated with a monitor lock.|  
   
 ## Remarks  
   
@@ -43,5 +41,5 @@ Exposes the monitor lock properties of objects. This interface extends the ICorD
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

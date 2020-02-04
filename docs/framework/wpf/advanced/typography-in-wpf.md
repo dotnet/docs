@@ -1,5 +1,5 @@
 ---
-title: "Typography in WPF"
+title: "Typography"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "typography [WPF], about typography"
@@ -23,7 +23,7 @@ Text with ClearType y-direction antialiasing
   
 <a name="Rich_Typography"></a>   
 ## Rich Typography  
- The OpenType font format is an extension of the [!INCLUDE[TLA#tla_truetype](../../../../includes/tlasharptla-truetype-md.md)] font format. The OpenType font format was developed jointly by Microsoft and Adobe, and provides a rich assortment of advanced typographic features. The <xref:System.Windows.Documents.Typography> object exposes many of the advanced features of OpenType fonts, such as stylistic alternates and swashes. The Windows SDK provides a set of sample OpenType fonts that are designed with rich features, such as the Pericles and Pescadero fonts. For more information, see [Sample OpenType Font Pack](sample-opentype-font-pack.md).  
+ The OpenType font format is an extension of the TrueType® font format. The OpenType font format was developed jointly by Microsoft and Adobe, and provides a rich assortment of advanced typographic features. The <xref:System.Windows.Documents.Typography> object exposes many of the advanced features of OpenType fonts, such as stylistic alternates and swashes. The Windows SDK provides a set of sample OpenType fonts that are designed with rich features, such as the Pericles and Pescadero fonts. For more information, see [Sample OpenType Font Pack](sample-opentype-font-pack.md).  
   
  The Pericles OpenType font contains additional glyphs that provide stylistic alternates to the standard set of glyphs. The following text displays stylistic alternate glyphs.  
   
@@ -53,11 +53,11 @@ Text with ClearType y-direction antialiasing
   
 - Font behavior independent of global settings, such as system locale.  
   
-- Separate <xref:System.Windows.FontWeight>, <xref:System.Windows.FontStretch>, and <xref:System.Windows.FontStyle> types for defining a <xref:System.Windows.Media.FontFamily>. This provides greater flexibility than in [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] programming, in which Boolean combinations of italic and bold are used to define a font family.  
+- Separate <xref:System.Windows.FontWeight>, <xref:System.Windows.FontStretch>, and <xref:System.Windows.FontStyle> types for defining a <xref:System.Windows.Media.FontFamily>. This provides greater flexibility than in Win32 programming, in which Boolean combinations of italic and bold are used to define a font family.  
   
 - Writing direction (horizontal versus vertical) handled independent of font name.  
   
-- Font linking and font fallback in a portable [!INCLUDE[TLA#tla_xml](../../../../includes/tlasharptla-xml-md.md)] file, using composite font technology. Composite fonts allow for the construction of full range multilingual fonts. Composite fonts also provide a mechanism that avoids displaying missing glyphs. For more information, see the remarks in the <xref:System.Windows.Media.FontFamily> class.  
+- Font linking and font fallback in a portable XML file, using composite font technology. Composite fonts allow for the construction of full range multilingual fonts. Composite fonts also provide a mechanism that avoids displaying missing glyphs. For more information, see the remarks in the <xref:System.Windows.Media.FontFamily> class.  
   
 - International fonts built from composite fonts, using a group of single-language fonts. This saves on resource costs when developing fonts for multiple languages.  
   

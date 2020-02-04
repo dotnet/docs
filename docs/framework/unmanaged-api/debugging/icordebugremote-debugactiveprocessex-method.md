@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: b0df5c5d-9a2e-47bf-894c-6f8a9fe24a1f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugRemote::DebugActiveProcessEx Method
 Launches a process on a remote machine under the debugger.  
@@ -34,7 +32,7 @@ HRESULT DebugActiveProcessEx (
   
 ## Parameters  
  `pRemoteTarget`  
- [in] Pointer to an [ICorDebugRemoteTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremotetarget-interface.md). This parameter is used to determine the machine on which the process is running.  
+ [in] Pointer to an [ICorDebugRemoteTarget Interface](icordebugremotetarget-interface.md). This parameter is used to determine the machine on which the process is running.  
   
  `id`  
  [in] The ID of the process to which the debugger is to be attached.  
@@ -66,7 +64,7 @@ HRESULT DebugActiveProcessEx (
   
 ## See also
 
-- [ICorDebugRemote Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremote-interface.md)
-- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
+- [ICorDebugRemote Interface](icordebugremote-interface.md)
+- [ICorDebug Interface](icordebug-interface.md)
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

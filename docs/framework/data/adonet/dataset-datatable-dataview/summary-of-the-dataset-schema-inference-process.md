@@ -6,7 +6,7 @@ ms.assetid: fd0891c8-d068-4e30-a76f-7c375f078bf7
 # Summary of the DataSet Schema Inference Process
 The inference process first determines, from the XML document, which elements will be inferred as tables. From the remaining XML, the inference process determines the columns for those tables. For nested tables, the inference process generates nested <xref:System.Data.DataRelation> and <xref:System.Data.ForeignKeyConstraint> objects.  
   
- Following is a brief summary of inference rules:  
+ The following is a brief summary of inference rules:  
   
 - Elements that have attributes are inferred as tables.  
   

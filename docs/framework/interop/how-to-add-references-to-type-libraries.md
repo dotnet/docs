@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "type libraries"
   - "COM interop, importing type library"
 ms.assetid: f5cfa6ba-cc25-4017-82cd-ba7391859113
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Add References to Type Libraries
 Visual Studio generates an interop assembly containing metadata when you add a reference to a type library. If a primary interop assembly is available, Visual Studio uses the existing assembly before generating a new interop assembly.  
@@ -36,12 +34,12 @@ Visual Studio generates an interop assembly containing metadata when you add a r
   
 1. Generate an interop assembly as described in [How to: Generate Interop Assemblies from Type Libraries](how-to-generate-interop-assemblies-from-type-libraries.md).  
   
-2. Use the [/link (C# Compiler Options)](../../csharp/language-reference/compiler-options/link-compiler-option.md) or [/link (Visual Basic)](../../visual-basic/reference/command-line-compiler/link.md) compiler option with the interop assembly name to embed type information for COM types in your executables.  
+2. Use the [-link (C# Compiler Options)](../../csharp/language-reference/compiler-options/link-compiler-option.md) or [-link (Visual Basic)](../../visual-basic/reference/command-line-compiler/link.md) compiler option with the interop assembly name to embed type information for COM types in your executables.  
   
 ## See also
 
 - [Importing a Type Library as an Assembly](importing-a-type-library-as-an-assembly.md)
 - [Exposing COM Components to the .NET Framework](exposing-com-components.md)
 - [Walkthrough: Embedding Types from Managed Assemblies in Visual Studio](../../standard/assembly/embed-types-visual-studio.md) 
-- [/link (C# Compiler Options)](../../csharp/language-reference/compiler-options/link-compiler-option.md)
-- [/link (Visual Basic)](../../visual-basic/reference/command-line-compiler/link.md)
+- [-link (C# Compiler Options)](../../csharp/language-reference/compiler-options/link-compiler-option.md)
+- [-link (Visual Basic)](../../visual-basic/reference/command-line-compiler/link.md)

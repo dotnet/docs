@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 91b558b3-cea9-4106-be8c-3d628d904bfe
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEditAndContinueSnapshot Interface
 
@@ -23,4 +21,4 @@ ms.author: "ronpet"
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

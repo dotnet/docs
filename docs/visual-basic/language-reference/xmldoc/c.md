@@ -1,5 +1,5 @@
 ---
-title: "<c> (Visual Basic)"
+title: "<c>"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "c XML tag"
@@ -24,7 +24,7 @@ Indicates that text within a description is code.
 ## Remarks  
  The `<c>` tag gives you a way to indicate that text within a description should be marked as code. Use [\<code>](../../../visual-basic/language-reference/xmldoc/code.md) to indicate multiple lines as code.  
   
- Compile with [/doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
+ Compile with [-doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
   
 ## Example  
  This example uses the `<c>` tag in the summary section to indicate that `Counter` is code.  

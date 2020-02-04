@@ -1,11 +1,12 @@
 ---
-title: "Modules (Visual Basic)"
+title: "Modules"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "modules, Visual Basic"
 ms.assetid: 370bfc90-e8f2-4942-bdec-9897ce605d31
 ---
 # Modules (Visual Basic)
+
 Visual Basic provides several modules that enable you to simplify common tasks in your code, including manipulating strings, performing mathematical calculations, getting system information, performing file and directory operations, and so on. The following table lists the modules provided by Visual Basic.  
   
 |||  
@@ -26,4 +27,3 @@ Visual Basic provides several modules that enable you to simplify common tasks i
 ## See also
 
 - [Visual Basic Language Reference](../../visual-basic/language-reference/index.md)
-- [Visual Basic](../../visual-basic/index.md)

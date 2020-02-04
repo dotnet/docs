@@ -1,7 +1,5 @@
 ---
 title: "in - C# Reference"
-ms.custom: seodec18
-
 ms.date: 02/06/2018
 f1_keywords: 
   - "in"

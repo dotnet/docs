@@ -1,5 +1,5 @@
 ---
-title: "Developing Windows Forms Controls at Design Time"
+title: Develop Controls at Design Time
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Windows Forms controls [Windows Forms]"
@@ -9,8 +9,8 @@ helpviewer_keywords:
   - "user controls [Windows Forms]"
   - "custom controls [Windows Forms]"
 ms.assetid: e5a8e088-7ec8-4fd9-bcb3-9078fd134829
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # Develop Windows Forms controls at design time

@@ -6,12 +6,9 @@ ms.assetid: 953d0b53-445e-41f9-b302-77c4030852ce
 # \<iriParsing> Element (Uri Settings)
 Specifies if International Resource Identifier (IRI) parsing is applied to a <xref:System.Uri> and whether IRI parsing rules should be applied.  
   
-## Schema Hierarchy  
- [\<configuration> Element](../configuration-element.md)  
-  
- [\<Uri> Element (Uri Settings)](uri-element-uri-settings.md)  
-  
- [\<iriParsing>](iriparsing-element-uri-settings.md)  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<uri>**](uri-element-uri-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;**\<iriParsing>**  
   
 ## Syntax  
   

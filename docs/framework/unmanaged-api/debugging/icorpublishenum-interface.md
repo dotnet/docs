@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 76a136b5-e444-417a-8ade-f1596d597dc7
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorPublishEnum Interface
 Serves as the abstract base interface for the enumerators that are used in the publishing of information about processes and application domains.  
@@ -24,17 +22,17 @@ Serves as the abstract base interface for the enumerators that are used in the p
   
 |Method|Description|  
 |------------|-----------------|  
-|[Clone Method](../../../../docs/framework/unmanaged-api/debugging/icorpublishenum-clone-method.md)|Creates a copy of this `ICorPublishEnum` object.|  
-|[GetCount Method](../../../../docs/framework/unmanaged-api/debugging/icorpublishenum-getcount-method.md)|Gets the number of items in the enumeration.|  
-|[Reset Method](../../../../docs/framework/unmanaged-api/debugging/icorpublishenum-reset-method.md)|Moves the cursor of to the beginning of the enumeration.|  
-|[Skip Method](../../../../docs/framework/unmanaged-api/debugging/icorpublishenum-skip-method.md)|Moves the cursor forward in the enumeration by the specified number of items.|  
+|[Clone Method](icorpublishenum-clone-method.md)|Creates a copy of this `ICorPublishEnum` object.|  
+|[GetCount Method](icorpublishenum-getcount-method.md)|Gets the number of items in the enumeration.|  
+|[Reset Method](icorpublishenum-reset-method.md)|Moves the cursor of to the beginning of the enumeration.|  
+|[Skip Method](icorpublishenum-skip-method.md)|Moves the cursor forward in the enumeration by the specified number of items.|  
   
 ## Remarks  
  The following enumerators derive from `ICorPublishEnum`:  
   
-- [ICorPublishAppDomainEnum](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomainenum-interface.md)  
+- [ICorPublishAppDomainEnum](icorpublishappdomainenum-interface.md)  
   
-- [ICorPublishProcessEnum](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocessenum-interface.md)  
+- [ICorPublishProcessEnum](icorpublishprocessenum-interface.md)  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -47,5 +45,5 @@ Serves as the abstract base interface for the enumerators that are used in the p
   
 ## See also
 
-- [CorpubPublish Coclass](../../../../docs/framework/unmanaged-api/debugging/corpubpublish-coclass.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [CorpubPublish Coclass](corpubpublish-coclass.md)
+- [Debugging Interfaces](debugging-interfaces.md)

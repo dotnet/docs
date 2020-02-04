@@ -1,24 +1,21 @@
 ---
 title: "ICorDebugController::CanCommitChanges Method"
 ms.date: "03/30/2017"
-api_name: 
+api_name:
   - "ICorDebugController.CanCommitChanges"
-api_location: 
+api_location:
   - "mscordbi.dll"
-api_type: 
+api_type:
   - "COM"
-f1_keywords: 
+f1_keywords:
   - "ICorDebugController::CanCommitChanges"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "ICorDebugController::CanCommitChanges method [.NET Framework debugging]"
   - "CanCommitChanges method [.NET Framework debugging]"
 ms.assetid: 7050e94b-f197-4ffd-88fa-ed2ecdf19663
-topic_type: 
+topic_type:
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugController::CanCommitChanges Method
-`CanCommitChanges` is obsolete. Do not call this method.  
-  
-## See also
+
+`CanCommitChanges` is obsolete. Do not call this method.

@@ -1,13 +1,10 @@
 ---
 title: Repeated fields for lists and arrays - gRPC for WCF Developers
 description: Understand how collections are handled by Protobuf and how they relate to .NET collections.
-author: markrendle
 ms.date: 09/09/2019
 ---
 
 # Repeated fields for lists and arrays
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 Lists are specified in Protobuf using the `repeated` prefix keyword. The following example shows how to create a list:
 

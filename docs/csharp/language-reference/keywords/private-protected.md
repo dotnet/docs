@@ -1,7 +1,5 @@
 ---
 title: "private protected - C# Reference"
-ms.custom: seodec18
-
 ms.date: 11/15/2017
 author: "sputier"
 ---
@@ -71,7 +69,7 @@ Struct members cannot be `private protected` because the struct cannot be inheri
 - [C# Keywords](index.md)
 - [Access Modifiers](access-modifiers.md)
 - [Accessibility Levels](accessibility-levels.md)
-- [Modifiers](modifiers.md)
+- [Modifiers](index.md)
 - [public](public.md)
 - [private](private.md)
 - [internal](internal.md)

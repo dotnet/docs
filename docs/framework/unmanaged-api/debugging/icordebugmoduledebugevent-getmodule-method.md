@@ -2,8 +2,6 @@
 title: "ICorDebugModuleDebugEvent::GetModule Method"
 ms.date: "03/30/2017"
 ms.assetid: b1141c35-4253-4e34-b3e4-ed406a9dea4f
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugModuleDebugEvent::GetModule Method
 Gets the merged module that was just loaded or unloaded.  
@@ -21,7 +19,7 @@ HRESULT GetModule(
  [out] A pointer to the address of an ICorDebugModule object that represents the merged module that was just loaded or unloaded.  
   
 ## Remarks  
- You can call the [GetEventKind](../../../../docs/framework/unmanaged-api/debugging/icordebugdebugevent-geteventkind-method.md) method to determine whether the module was loaded or unloaded.  
+ You can call the [GetEventKind](icordebugdebugevent-geteventkind-method.md) method to determine whether the module was loaded or unloaded.  
   
 > [!NOTE]
 > This method is available with .NET Native only.  
@@ -37,5 +35,5 @@ HRESULT GetModule(
   
 ## See also
 
-- [ICorDebugModuleDebugEvent Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmoduledebugevent-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugModuleDebugEvent Interface](icordebugmoduledebugevent-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

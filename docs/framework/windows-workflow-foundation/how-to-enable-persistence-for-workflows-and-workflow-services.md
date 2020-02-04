@@ -52,10 +52,10 @@ Persistence can be enabled using an application configuration file by adding the
     <behaviors>
       <serviceBehaviors>
         <behavior name="myBehavior">
-          <SqlWorkflowInstanceStore connectionString="Data Source=myDatabaseServer;Initial Catalog=myPersistenceDatabase">
+          <sqlWorkflowInstanceStore connectionString="Data Source=myDatabaseServer;Initial Catalog=myPersistenceDatabase" />
         </behavior>
       </serviceBehaviors>
-    <behaviors>
+    </behaviors>
   </system.serviceModel>
 </configuration>
 ```

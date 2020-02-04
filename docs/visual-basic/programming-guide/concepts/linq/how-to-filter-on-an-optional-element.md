@@ -1,5 +1,5 @@
 ---
-title: "How to: Filter on an Optional Element (Visual Basic)"
+title: "How to: Filter on an Optional Element"
 ms.date: 07/20/2015
 ms.assetid: a74b76ad-6889-4185-a189-d6ef2c63841e
 ---
@@ -44,7 +44,7 @@ Next
   
  This code produces the following output:  
   
-```  
+```console  
 Child One Text  
 Child Two Text  
 Child Four Text  
@@ -94,7 +94,7 @@ End Module
   
  This code produces the following output:  
   
-```  
+```console  
 Child One Text  
 Child Two Text  
 Child Four Text  

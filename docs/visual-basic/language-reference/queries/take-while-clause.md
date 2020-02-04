@@ -1,5 +1,5 @@
 ---
-title: "Take While Clause (Visual Basic)"
+title: "Take While Clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.QueryTakeWhile"
@@ -14,7 +14,7 @@ Includes elements in a collection as long as a specified condition is `true` and
   
 ## Syntax  
   
-```  
+```vb  
 Take While expression  
 ```  
   

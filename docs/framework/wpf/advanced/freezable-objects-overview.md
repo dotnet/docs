@@ -65,7 +65,7 @@ A Freezable **can't** be frozen if any of the following are true:
 
 - It has animated or data bound properties.
 
-- It has properties set by a dynamic resource. (See the [XAML Resources](xaml-resources.md) for more information about dynamic resources.)
+- It has properties set by a dynamic resource. (See the [XAML Resources](../../../desktop-wpf/fundamentals/xaml-resources-define.md) for more information about dynamic resources.)
 
 - It contains <xref:System.Windows.Freezable> sub-objects that can't be frozen.
 

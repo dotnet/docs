@@ -2,8 +2,6 @@
 title: "ICorDebugVariableSymbol::GetSize Method"
 ms.date: "03/30/2017"
 ms.assetid: add0cd9d-9a29-49b1-ae07-d9d3786b4ccd
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugVariableSymbol::GetSize Method
 Gets the size of a variable in bytes.  
@@ -36,5 +34,5 @@ HRESULT GetSize(
   
 ## See also
 
-- [ICorDebugVariableSymbol Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablesymbol-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugVariableSymbol Interface](icordebugvariablesymbol-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

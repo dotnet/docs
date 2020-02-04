@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: c02338fe-da6c-467f-9567-70ebb387e901
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugValueBreakpoint Interface
 Extends the ICorDebugBreakpoint interface to provide access to specific values.  
@@ -24,7 +22,7 @@ Extends the ICorDebugBreakpoint interface to provide access to specific values.
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetValue Method](../../../../docs/framework/unmanaged-api/debugging/icordebugvaluebreakpoint-getvalue-method.md)|Gets an interface pointer to an ICorDebugValue object that represents the value of the object upon which the breakpoint is set.|  
+|[GetValue Method](icordebugvaluebreakpoint-getvalue-method.md)|Gets an interface pointer to an ICorDebugValue object that represents the value of the object upon which the breakpoint is set.|  
   
 ## Remarks  
   
@@ -42,4 +40,4 @@ Extends the ICorDebugBreakpoint interface to provide access to specific values.
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

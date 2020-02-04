@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 49e647be-9d63-4250-9d11-704e2a400d1b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback2::CreateConnection Method
 Notifies the debugger that a new connection has been created.  
@@ -44,7 +42,7 @@ HRESULT CreateConnection (
 ## Remarks  
  A `CreateConnection` callback will be fired in either of the following cases:  
   
-- When a debugger attaches to a process that contains connections. In this case, the runtime will generate and dispatch a `CreateConnection` event and a [ICorDebugManagedCallback2::ChangeConnection](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-changeconnection-method.md) event for each connection in the process.  
+- When a debugger attaches to a process that contains connections. In this case, the runtime will generate and dispatch a `CreateConnection` event and a [ICorDebugManagedCallback2::ChangeConnection](icordebugmanagedcallback2-changeconnection-method.md) event for each connection in the process.  
   
 - When a host calls [ICLRDebugManager::BeginConnection](../../../../docs/framework/unmanaged-api/hosting/iclrdebugmanager-beginconnection-method.md) in the [Hosting API](../../../../docs/framework/unmanaged-api/hosting/index.md).  
   
@@ -59,5 +57,5 @@ HRESULT CreateConnection (
   
 ## See also
 
-- [ICorDebugManagedCallback2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-interface.md)
-- [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)
+- [ICorDebugManagedCallback2 Interface](icordebugmanagedcallback2-interface.md)
+- [ICorDebugManagedCallback Interface](icordebugmanagedcallback-interface.md)

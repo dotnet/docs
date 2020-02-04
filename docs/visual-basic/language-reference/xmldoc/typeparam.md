@@ -1,5 +1,5 @@
 ---
-title: "<typeparam> (Visual Basic)"
+title: "<typeparam>"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "typeparam XML tag"
@@ -25,7 +25,7 @@ Defines a type parameter name and description.
 ## Remarks  
  Use the `<typeparam>` tag in the comment for a generic type or generic member declaration to describe one of the type parameters.  
   
- Compile with [/doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
+ Compile with [-doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
   
 ## Example  
  This example uses the `<typeparam>` tag to describe the `id` parameter.  

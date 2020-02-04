@@ -1,5 +1,5 @@
 ---
-title: "Optimizing performance: Controls - WPF"
+title: Optimize control performance
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "controls [WPF], improving performance"
@@ -74,5 +74,5 @@ The following table lists the common controls for displaying data and their supp
 - [Layout and Design](optimizing-performance-layout-and-design.md)
 - [Data Binding](optimizing-performance-data-binding.md)
 - [Controls](../controls/index.md)
-- [Styling and Templating](../controls/styling-and-templating.md)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)
 - [Walkthrough: Caching Application Data in a WPF Application](walkthrough-caching-application-data-in-a-wpf-application.md)

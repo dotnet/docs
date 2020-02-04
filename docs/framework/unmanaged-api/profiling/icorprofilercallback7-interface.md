@@ -9,19 +9,17 @@ api_location:
 api_type: 
   - "COM"
 ms.assetid: a0be019e-aaa1-4036-990f-565f114d4b5c
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorProfilerCallback7 Interface
 [Supported in the .NET Framework 4.6.1 and later versions]  
   
- A subclass of [ICorProfilerCallback6](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback6-interface.md) that provides a callback method that the common language runtime uses to notify the profiler that the symbol stream associated with an in-memory module is updated.  
+ A subclass of [ICorProfilerCallback6](icorprofilercallback6-interface.md) that provides a callback method that the common language runtime uses to notify the profiler that the symbol stream associated with an in-memory module is updated.  
   
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
-|[ModuleInMemorySymbolsUpdated Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback7-moduleinmemorysymbolsupdated-method.md)|Notifies the profiler that the symbol stream associated with an in-memory module is updated.|  
+|[ModuleInMemorySymbolsUpdated Method](icorprofilercallback7-moduleinmemorysymbolsupdated-method.md)|Notifies the profiler that the symbol stream associated with an in-memory module is updated.|  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -32,4 +30,4 @@ ms.author: "ronpet"
   
 ## See also
 
-- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+- [Profiling Interfaces](profiling-interfaces.md)

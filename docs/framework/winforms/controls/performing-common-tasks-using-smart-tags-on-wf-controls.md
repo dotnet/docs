@@ -1,13 +1,13 @@
 ---
-title: "Walkthrough: Performing Common Tasks Using Smart Tags on Windows Forms Controls"
+title: Performi Common Tasks Using Smart Tags on Controls
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "DesignerAction object model"
   - "smart tags"
   - "designer actions"
 ms.assetid: cac337e6-00f6-4584-80f4-75728f5ea113
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # Walkthrough: Perform Common Tasks Using Smart Tags

@@ -1,5 +1,5 @@
 ---
-title: "Function Statement (Visual Basic)"
+title: "Function Statement"
 ms.date: 05/12/2018
 f1_keywords:
   - "vb.Function"
@@ -35,7 +35,7 @@ Declares the name, parameters, and code that define a `Function` procedure.
 
 ## Syntax
 
-```
+```vb
 [ <attributelist> ] [ accessmodifier ] [ proceduremodifiers ] [ Shared ] [ Shadows ] [ Async | Iterator ]
 Function name [ (Of typeparamlist) ] [ (parameterlist) ] [ As returntype ] [ Implements implementslist | Handles eventlist ]
     [ statements ]

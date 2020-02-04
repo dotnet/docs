@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: d627e8b7-a605-40ac-b9bb-da9a3f1b66d9
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDataTarget::WriteVirtual Method
 Writes data from the specified buffer to the specified virtual memory address.  
@@ -57,4 +55,4 @@ HRESULT WriteVirtual (
   
 ## See also
 
-- [ICLRDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)
+- [ICLRDataTarget Interface](iclrdatatarget-interface.md)

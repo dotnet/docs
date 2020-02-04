@@ -25,27 +25,31 @@ HRESULT RequestReJITWithInliners( [in]                       DWORD       dwRejit
                                   [in, size_is(cFunctions)]  mdMethodDef methodIds[]);
 ```
 
-#### Parameters
+## Parameters
 
-`dwRejitFlags` \
-[in] A bitmask of [COR_PRF_REJIT_FLAGS](../../../../docs/framework/unmanaged-api/profiling/cor-prf-rejit-flags-enumeration.md).
+- `dwRejitFlags`
 
-`cFunctions` \
-[in] The number of functions to recompile.
+  \[in] A bitmask of [COR_PRF_REJIT_FLAGS](cor-prf-rejit-flags-enumeration.md).
 
-`moduleIds` \
-[in] Specifies the `moduleId` portion of the (`module`, `methodDef`) pairs that identify the functions to be recompiled.
+- `cFunctions`
 
-`methodIds` \
-[in] Specifies the `methodId` portion of the (`module`, `methodDef`) pairs that identify the functions to be recompiled.
+  \[in] The number of functions to recompile.
+
+- `moduleIds`
+
+  \[in] Specifies the `moduleId` portion of the (`module`, `methodDef`) pairs that identify the functions to be recompiled.
+
+- `methodIds`
+
+  \[in] Specifies the `methodId` portion of the (`module`, `methodDef`) pairs that identify the functions to be recompiled.
 
 ## Remarks
 
-[RequestReJIT](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-requestrejit-method.md) does not do any tracking of inlined methods. The profiler was expected to either block inlining or track inlining and call `RequestReJIT` for all inliners to make sure every instance of an inlined method was ReJITted. This poses a problem with ReJIT on attach, since the profiler is not present to monitor inlining. This method can be called to guarantee that the full set of inliners will be ReJITted as well.
+[RequestReJIT](icorprofilerinfo4-requestrejit-method.md) does not do any tracking of inlined methods. The profiler was expected to either block inlining or track inlining and call `RequestReJIT` for all inliners to make sure every instance of an inlined method was ReJITted. This poses a problem with ReJIT on attach, since the profiler is not present to monitor inlining. This method can be called to guarantee that the full set of inliners will be ReJITted as well.
 
 ## Requirements
 
-**Platforms:** See [.NET Core supported operating systems](../../../core/windows-prerequisites.md#net-core-supported-operating-systems).
+**Platforms:** See [.NET Core supported operating systems](../../../core/install/dependencies.md?tabs=netcore30&pivots=os-windows).
 
 **Header:** CorProf.idl, CorProf.h
 
@@ -55,4 +59,4 @@ HRESULT RequestReJITWithInliners( [in]                       DWORD       dwRejit
 
 ## See also
 
-- [ICorProfilerInfo10 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo10-interface.md)
+- [ICorProfilerInfo10 Interface](icorprofilerinfo10-interface.md)

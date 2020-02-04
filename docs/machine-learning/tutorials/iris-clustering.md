@@ -2,9 +2,9 @@
 title: 'Tutorial: Categorize iris flowers - k-means clustering'
 description: Learn how to use ML.NET in a clustering scenario
 author: pkulikov
-ms.date: 05/16/2019
+ms.date: 11/15/2019
 ms.topic: tutorial
-ms.custom: mvc, seodec18, title-hack-0516
+ms.custom: mvc, title-hack-0516
 #Customer intent: As a developer, I want to use ML.NET so that I can build a k-means clustering model to categorize iris flowers based on its parameters.
 ---
 # Tutorial: Categorize iris flowers using k-means clustering with ML.NET
@@ -24,7 +24,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-- [Visual Studio 2017 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
+- [Visual Studio 2017 version 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
 
 ## Understand the problem
 
@@ -44,7 +44,7 @@ As you don't know to which group each flower belongs to, you choose the [unsuper
 
 1. Install the **Microsoft.ML** NuGet package:
 
-    In **Solution Explorer**, right-click the project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the **Browse** tab, search for **Microsoft.ML**, select the **v1.0.0** package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
+    In **Solution Explorer**, right-click the project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the **Browse** tab, search for **Microsoft.ML** and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
 
 ## Prepare the data
 
@@ -113,9 +113,9 @@ In the `Main` method, replace the `Console.WriteLine("Hello World!");` line with
 
 The <xref:Microsoft.ML.MLContext?displayProperty=nameWithType> class represents the machine learning environment and provides mechanisms for logging and entry points for data loading, model training, prediction, and other tasks. This is comparable conceptually to using `DbContext` in Entity Framework.
 
-## Setup data loading
+## Set up data loading
 
-Add the following code to the `Main` method to setup the way to load data:
+Add the following code to the `Main` method to set up the way to load data:
 
 [!code-csharp[Create text loader](~/samples/machine-learning/tutorials/IrisFlowerClustering/Program.cs#CreateDataView)]
 
@@ -151,6 +151,11 @@ At this point, you have a model that can be integrated into any of your existing
 To make predictions, use the <xref:Microsoft.ML.PredictionEngine%602> class that takes instances of the input type through the transformer pipeline and produces instances of the output type. Add the following line to the `Main` method to create an instance of that class:
 
 [!code-csharp[Create predictor](~/samples/machine-learning/tutorials/IrisFlowerClustering/Program.cs#Predictor)]
+
+The [PredictionEngine](xref:Microsoft.ML.PredictionEngine%602) is a convenience API, which allows you to perform a prediction on a single instance of data. [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) is not thread-safe. It's acceptable to use in single-threaded or prototype environments. For improved performance and thread safety in production environments, use the `PredictionEnginePool` service, which creates an [`ObjectPool`](xref:Microsoft.Extensions.ObjectPool.ObjectPool%601) of [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) objects for use throughout your application. See this guide on how to [use `PredictionEnginePool` in an ASP.NET Core Web API](../how-to-guides/serve-model-web-api-ml-net.md#register-predictionenginepool-for-use-in-the-application).
+
+> [!NOTE]
+> `PredictionEnginePool` service extension is currently in preview.
 
 Create the `TestIrisData` class to house test data instances:
 

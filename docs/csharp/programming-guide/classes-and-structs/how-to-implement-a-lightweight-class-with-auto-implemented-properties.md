@@ -1,13 +1,12 @@
 ---
-title: "How to: Implement a Lightweight Class with Auto-Implemented Properties - C# Programming Guide"
-ms.custom: seodec18
+title: "How to implement a lightweight class with auto-implemented properties - C# Programming Guide"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "auto-implemented properties [C#]"
   - "properties [C#], auto-implemented"
 ms.assetid: 1dc5a8ad-a4f7-4f32-8506-3fc6d8c8bfed
 ---
-# How to: Implement a Lightweight Class with Auto-Implemented Properties (C# Programming Guide)
+# How to implement a lightweight class with auto-implemented properties (C# Programming Guide)
 
 This example shows how to create an immutable lightweight class that serves only to encapsulate a set of auto-implemented properties. Use this kind of construct instead of a struct when you must use reference type semantics.
 
@@ -16,7 +15,30 @@ You can make an immutable property in two ways:
 - You can declare the [set](../../language-reference/keywords/set.md) accessor to be [private](../../language-reference/keywords/private.md).  The property is only settable within the type, but it is immutable to consumers.
 
   When you declare a private `set` accessor, you cannot use an object initializer to initialize the property. You must use a constructor or a factory method.
-- You can declare only the [get](../../language-reference/keywords/get.md) accessor, which makes the property immutable everywhere except in the type’s constructor.
+- You can declare only the [get](../../language-reference/keywords/get.md) accessor, which makes the property immutable everywhere except in the type's constructor.
+
+The following example shows how a property with only get accessor differs than one with get and private set.
+
+```csharp
+class Contact
+{
+    public string Name { get; }
+    public string Address { get; private set; }
+
+    public Contact(string contactName, string contactAddress)
+    {
+        // Both properties are accessible in the constructor.
+        Name = contactName;
+        Address = contactAddress;
+    }
+
+    // Name isn't assignable here. This will generate a compile error.
+    //public void ChangeName(string newName) => Name = newName; 
+
+    // Address is assignable here.
+    public void ChangeAddress(string newAddress) => Address = newAddress
+}
+```
 
 ## Example
 
@@ -28,8 +50,10 @@ The following example shows two ways to implement an immutable class that has au
 // constructor to initialize its properties.
 class Contact
 {
-    // Read-only properties.
+    // Read-only property.
     public string Name { get; }
+
+    // Read-write property with a private set accessor.
     public string Address { get; private set; }
 
     // Public constructor.
@@ -45,8 +69,10 @@ class Contact
 // static method and private constructor to initialize its properties.
 public class Contact2
 {
-    // Read-only properties.
+    // Read-write property with a private set accessor.
     public string Name { get; private set; }
+
+    // Read-only property.
     public string Address { get; }
 
     // Private constructor.

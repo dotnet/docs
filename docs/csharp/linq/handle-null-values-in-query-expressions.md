@@ -26,4 +26,4 @@ In a join clause, if only one of the comparison keys is a nullable value type, y
 
 - <xref:System.Nullable%601>
 - [Language Integrated Query (LINQ)](index.md)
-- [Nullable types](../programming-guide/nullable-types/index.md)
+- [Nullable value types](../language-reference/builtin-types/nullable-value-types.md)

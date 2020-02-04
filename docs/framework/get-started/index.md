@@ -6,8 +6,6 @@ helpviewer_keywords:
   - ".NET Framework, getting started"
   - "getting started [.NET Framework]"
 ms.assetid: c693fd34-88fe-4d90-b332-19eeadf3b7e7
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # Get started with the .NET Framework
@@ -62,7 +60,7 @@ To develop .NET Framework apps or components, do the following:
 
 1. If it's not preinstalled on your operating system, install the version of the .NET Framework that your app will target. The most recent production version is the .NET Framework 4.8. It is preinstalled on Windows 10 May 2019 Update, and it is available for download on earlier versions of the Windows operating system. For .NET Framework system requirements, see [System Requirements](system-requirements.md). For information on installing other versions of the .NET Framework, see [Installation Guide](../install/guide-for-developers.md). Additional .NET Framework packages are released out of band, which means that they're released on a rolling basis outside of any regular or scheduled release cycle. For information about these packages, see [The .NET Framework and Out-of-Band Releases](the-net-framework-and-out-of-band-releases.md).
 
-2. Select the language or languages supported by the .NET Framework that you intend to use to develop your apps. A number of languages are available, including [Visual Basic](../../visual-basic/index.md), [C#](../../csharp/index.md), [F#](../../fsharp/index.md), and [C++/CLI](/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp) from Microsoft. (A programming language that allows you to develop apps for the .NET Framework adheres to the [Common Language Infrastructure (CLI) specification](https://visualstudio.microsoft.com/license-terms/ecma-c-common-language-infrastructure-standards/).)
+2. Select the language or languages supported by the .NET Framework that you intend to use to develop your apps. A number of languages are available, including [Visual Basic](../../visual-basic/index.yml), [C#](../../csharp/index.yml), [F#](../../fsharp/index.yml), and [C++/CLI](/cpp/dotnet/dotnet-programming-with-cpp-cli-visual-cpp) from Microsoft. (A programming language that allows you to develop apps for the .NET Framework adheres to the [Common Language Infrastructure (CLI) specification](https://visualstudio.microsoft.com/license-terms/ecma-c-common-language-infrastructure-standards/).)
 
 3. Select and install the development environment to use to create your apps and that supports your selected programming language or languages. The Microsoft integrated development environment (IDE) for .NET Framework apps is [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link). It's available in a number of editions.
 

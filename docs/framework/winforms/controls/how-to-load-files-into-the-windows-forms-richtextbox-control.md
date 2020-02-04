@@ -1,5 +1,5 @@
 ---
-title: "How to: Load Files into the Windows Forms RichTextBox Control"
+title: Load Files into RichTextBox Control
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

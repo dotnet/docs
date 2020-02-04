@@ -5,22 +5,21 @@ ms.date: "04/18/2019"
 helpviewer_keywords: 
   - "versions, .NET Framework"
 ms.assetid: f75a72de-e2f2-4a7a-9574-3f278684ea90
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # .NET Framework versions and dependencies
+
 Each version of the .NET Framework contains the common language runtime (CLR), the base class libraries, and other managed libraries. This topic describes the key features of the .NET Framework by version, provides information about the underlying CLR versions and associated development environments, and identifies the versions that are installed by the Windows operating system.  
   
 > [!NOTE]
 > For information on downloading and installing the .NET Framework, see [Install the .NET Framework for developers](../install/guide-for-developers.md).  
   
- The following table summarizes .NET Framework version history and correlates each version with Visual Studio, Windows, and Windows Server. Note that Visual Studio provides multi-targeting, so you are not limited to the version of the .NET Framework that is listed.  
+The following table summarizes .NET Framework version history and correlates each version with Visual Studio, Windows, and Windows Server. Visual Studio provides multi-targeting, so you are not limited to the version of the .NET Framework that's listed.  
   
- Each new version of the .NET Framework retains features from the previous versions and adds new features. The CLR is identified by its own version number. The .NET Framework version number is incremented at each release, although the CLR version is not always incremented. For example, the .NET Framework 4, 4.5, and later releases include CLR 4, but the .NET Framework 2.0, 3.0, and 3.5 include CLR 2.0. (There was no version 3 of the CLR.)  
+Each new version of the .NET Framework retains features from the previous versions and adds new features. The CLR is identified by its own version number. The .NET Framework version number is incremented at each release, although the CLR version is not always incremented. For example, the .NET Framework 4, 4.5, and later releases include CLR 4, but the .NET Framework 2.0, 3.0, and 3.5 include CLR 2.0. (There was no version 3 of the CLR.)  
   
- See [System Requirements](../get-started/system-requirements.md) for a complete list of supported operating systems. For downloads, see [Install the .NET Framework for developers](../install/guide-for-developers.md). For determining which versions of the .NET Framework are installed on a computer, see [How to: Determine Which .NET Framework Versions Are Installed](how-to-determine-which-versions-are-installed.md).  
+See [System Requirements](../get-started/system-requirements.md) for a complete list of supported operating systems. For downloads, see [Install the .NET Framework for developers](../install/guide-for-developers.md). For determining which versions of the .NET Framework are installed on a computer, see [How to: Determine Which .NET Framework Versions Are Installed](how-to-determine-which-versions-are-installed.md).  
   
- In the table, versions of the .NET Framework that are installed on operating system versions marked with ✓ in the **Included in/Can be installed on Windows** and the **Included in/Can be installed on Windows Server** columns must be [enabled in Control Panel](../install/dotnet-35-windows-10.md) (for Windows) or enabled through the Server Manager (for Windows Server).  
+In the table, versions of the .NET Framework that are installed on operating system versions marked with ✓ in the **Included in/Can be installed on Windows** and the **Included in/Can be installed on Windows Server** columns must be [enabled in Control Panel](../install/dotnet-35-windows-10.md) (for Windows) or enabled through the Server Manager (for Windows Server).  
 
 [!INCLUDE[Release key values note](~/includes/version-keys-note.md)]
  
@@ -43,41 +42,42 @@ Each version of the .NET Framework contains the common language runtime (CLR), t
 |1.1<br/><br/>[New features](https://docs.microsoft.com/previous-versions/dotnet/netframework-1.1/9wtde3k4\(v%3dvs.71\))|1.1|2003|-|✓ 2003|See [instructions](how-to-determine-which-versions-are-installed.md)|  
 |1.0|1.0|Visual Studio .NET|-|-|See [instructions](how-to-determine-which-versions-are-installed.md)|  
 
-**Notes**
+> [!NOTE]
+>
+> - The .NET Framework must be enabled on this operating system through [Control Panel (for Windows) or the Server Manager (for Windows Server)](../install/dotnet-35-windows-10.md#enable-the-net-framework-35-in-control-panel).
+> - In general, you should not uninstall any versions of the .NET Framework that are installed on your computer, because an application you use may depend on a specific version and may break if that version is removed. You can load multiple versions of the .NET Framework on a single computer at the same time. This means that you can install the .NET Framework without having to uninstall previous versions. For more information, see [Getting Started](../get-started/index.md).
 
-<sup>\*</sup>&nbsp;&nbsp;The .NET Framework must be enabled on this operating system through [Control Panel (for Windows) or the Server Manager (for Windows Server)](../install/dotnet-35-windows-10.md#enable-the-net-framework-35-in-control-panel).
+## Target and run apps for version 4.5 and later
 
- In general, you should not uninstall any versions of the .NET Framework that are installed on your computer, because an application you use may depend on a specific version and may break if that version is removed. You can load multiple versions of the .NET Framework on a single computer at the same time. This means that you can install the .NET Framework without having to uninstall previous versions. For more information, see [Getting Started](../get-started/index.md).
-
-## Targeting and running .NET Framework apps for version 4.5 and later  
- .NET Framework 4.5 is an in-place update that replaces .NET Framework 4 on your computer, and similarly, .NET Framework 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, and 4.8 are in-place updates to .NET Framework 4.5, which means that they use the same runtime version, but the assembly versions are updated and include new types and members. After you install one of these updates, your .NET Framework 4, .NET Framework 4.5, .NET Framework 4.6, or .NET Framework 4.7 apps should continue to run without requiring recompilation. However, the reverse is not true. We do not recommend running apps that target a later version of the .NET Framework on an earlier version of the .NET Framework. For example, we do not recommend that you run an app the targets .NET Framework 4.6 on .NET Framework 4.5. The following guidelines apply:  
+.NET Framework 4.5 is an in-place update that replaces .NET Framework 4 on your computer, and similarly, .NET Framework 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, and 4.8 are in-place updates to .NET Framework 4.5, which means that they use the same runtime version, but the assembly versions are updated and include new types and members. After you install one of these updates, your .NET Framework 4, .NET Framework 4.5, .NET Framework 4.6, or .NET Framework 4.7 apps should continue to run without requiring recompilation. However, the reverse is not true. We do not recommend running apps that target a later version of the .NET Framework on an earlier version of the .NET Framework. For example, we do not recommend that you run an app the targets .NET Framework 4.6 on .NET Framework 4.5. The following guidelines apply:  
   
 - In Visual Studio, you can choose .NET Framework 4.5 as the target framework for a project (this sets the <xref:Microsoft.Build.Tasks.GetReferenceAssemblyPaths.TargetFrameworkMoniker%2A?displayProperty=nameWithType> property) to compile the project as a .NET Framework 4.5 assembly or executable. This assembly or executable can then be used on any computer that has the .NET Framework 4.5, 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, or 4.8 installed.  
   
-- In Visual Studio, you can choose .NET Framework 4.5.1 as the target framework for a project (this sets the <xref:Microsoft.Build.Tasks.GetReferenceAssemblyPaths.TargetFrameworkMoniker%2A?displayProperty=nameWithType> property) to compile the project as a .NET Framework 4.5.1 assembly or executable. This assembly or executable should be run only on computers that have .NET Framework 4.5.1 or a later version of the .NET Framework installed. An executable that targets .NET Framework 4.5.1 will be blocked from running on a computer that only has an earlier version of the .NET Framework, such as .NET Framework 4.5, installed, and the user will be prompted to install the .NET Framework 4.5.1. In addition, .NET Framework 4.5.1 assemblies should not be called from an app that targets an earlier version of the .NET Framework, such as .NET Framework 4.5.  
+- In Visual Studio, you can choose .NET Framework 4.5.1 as the target framework for a project to compile it as a .NET Framework 4.5.1 assembly or executable. Only run this assembly or executable on computers that have .NET Framework 4.5.1 or later installed. An executable that targets .NET Framework 4.5.1 will be blocked from running on a computer that only has an earlier version of the .NET Framework, such as .NET Framework 4.5, installed. The user will be prompted to install the .NET Framework 4.5.1. In addition, .NET Framework 4.5.1 assemblies should not be called from an app that targets an earlier version of the .NET Framework, such as .NET Framework 4.5.  
   
-     .NET Framework 4.5.1 and .NET Framework 4.5 are used here only as examples. This principle applies to any app that targets a later version of the .NET Framework than the one installed on the system on which it is running.  
+  > [!NOTE]
+  > .NET Framework 4.5.1 and .NET Framework 4.5 are used here only as examples. The principle described applies to any app that targets a later version of the .NET Framework than the one installed on the system on which it's running.  
   
- Some changes in the .NET Framework may require changes to your app code; see [Application Compatibility](application-compatibility.md) before you run your existing apps with .NET Framework 4.5 or later versions. For more information about installing the current version, see [Install the .NET Framework for developers](../install/guide-for-developers.md). For information about support for the .NET Framework, see [Microsoft .NET Framework Support Lifecycle Policy](https://go.microsoft.com/fwlink/?LinkId=196607) on the Microsoft Support website.  
+Some changes in the .NET Framework may require changes to your app code; see [Application Compatibility](application-compatibility.md) before you run your existing apps with .NET Framework 4.5 or later versions. For more information about installing the current version, see [Install the .NET Framework for developers](../install/guide-for-developers.md). For information about support for the .NET Framework, see [.NET Framework official support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework) on the .NET website.
   
-## Targeting and running apps for older versions  
+## Target and run apps for older versions  
 
-.NET Framework versions 2.0, 3.0, and 3.5 are built with the same version of the CLR (CLR 2.0). These versions represent successive layers of a single installation. Each version is built incrementally on top of the earlier versions. It is not possible to run versions 2.0, 3.0, and 3.5 side by side on a computer. When you install version 3.5, you get the 2.0 and 3.0 layers automatically, and apps that were built for versions 2.0, 3.0, and 3.5 can all run on version 3.5. However, .NET Framework 4 ends this layering approach, and it and later releases (.NET Framework 4.5, 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, and 4.8) also represent successive layers of a single installation.  Starting with .NET Framework 4, you can use in-process side-by-side hosting to run multiple versions of the CLR in a single process. For more information, see [Assemblies and Side-by-Side Execution](../../standard/assembly/side-by-side-execution.md).  
+.NET Framework versions 2.0, 3.0, and 3.5 are built with the same version of the CLR (CLR 2.0). These versions represent successive layers of a single installation. Each version is built incrementally on top of the earlier versions. It's not possible to run versions 2.0, 3.0, and 3.5 side by side on a computer. When you install version 3.5, you get the 2.0 and 3.0 layers automatically, and apps that were built for versions 2.0, 3.0, and 3.5 can all run on version 3.5. However, .NET Framework 4 ends this layering approach, and it and later releases (.NET Framework 4.5, 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, and 4.8) also represent successive layers of a single installation. Starting with .NET Framework 4, you can use in-process, side by side hosting to run multiple versions of the CLR in a single process. For more information, see [Assemblies and Side-by-Side Execution](../../standard/assembly/side-by-side-execution.md).  
   
- In addition, if your app targets version 2.0, 3.0, or 3.5, your users may be required to enable the .NET Framework 3.5 on a Windows 8, Windows 8.1, or Windows 10 computer before they can run your app. For more information, see [Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8](../install/dotnet-35-windows-10.md).  
+In addition, if your app targets version 2.0, 3.0, or 3.5, your users may be required to enable the .NET Framework 3.5 on a Windows 8, Windows 8.1, or Windows 10 computer before they can run your app. For more information, see [Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8](../install/dotnet-35-windows-10.md).  
   
 ## Next steps  
   
 - If you're new to the .NET Framework, see the [overview](../get-started/overview.md) for an introduction to key concepts and features.  
   
-- For new features and improvements in the .NET Framework 4.5 and its point releases, see [What's New in the .NET Framework](../whats-new/index.md).  
+- For new features and improvements in the .NET Framework 4.5 and its point releases, see [What's new in the .NET Framework](../whats-new/index.md).  
   
-- For information about migrating your app from the .NET Framework 4 to the .NET Framework 4.5 and its point releases, see the [migration guide](index.md).  
+- For information about migrating your app to a newer version of the .NET Framework, see the [migration guide](index.md).
   
 - For information about determining which versions or updates are installed on a computer, see [How to: Determine Which .NET Framework Versions Are Installed](how-to-determine-which-versions-are-installed.md) and [How to: Determine Which .NET Framework Updates Are Installed](how-to-determine-which-net-framework-updates-are-installed.md).  
   
 ## See also
 
-- [Version Compatibility](version-compatibility.md)
-- [Microsoft .NET Framework Support Lifecycle Policy](https://go.microsoft.com/fwlink/?LinkId=196607)
+- [Version compatibility](version-compatibility.md)
+- [.NET Framework official support policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-framework)
 - [Troubleshoot blocked .NET Framework installations and uninstallations](../install/troubleshoot-blocked-installations-and-uninstallations.md)

@@ -35,7 +35,7 @@ helpviewer_keywords:
 ---
 # Member access operators (C# reference)
 
-You might use the following operators when you access a type member:
+You can use the following operators when you access a type member:
 
 - [`.` (member access)](#member-access-operator-): to access a member of a namespace or a type
 - [`[]` (array element or indexer access)](#indexer-operator-): to access an array element or a type indexer
@@ -82,11 +82,11 @@ For more information about arrays, see [Arrays](../../programming-guide/arrays/i
 
 ### Indexer access
 
-The following example uses .NET <xref:System.Collections.Generic.Dictionary%602> type to demonstrate indexer access:
+The following example uses the .NET <xref:System.Collections.Generic.Dictionary%602> type to demonstrate indexer access:
 
 [!code-csharp-interactive[indexer access](~/samples/csharp/language-reference/operators/MemberAccessOperators.cs#Indexers)]
 
-Indexers allow you to index instances of a user-defined type in the similar way as array indexing. Unlike array indices, which must be integer, the indexer arguments can be declared to be of any type.
+Indexers allow you to index instances of a user-defined type in the similar way as array indexing. Unlike array indices, which must be integer, the indexer parameters can be declared to be of any type.
 
 For more information about indexers, see [Indexers](../../programming-guide/indexers/index.md).
 
@@ -103,7 +103,13 @@ void TraceMethod() {}
 
 ## Null-conditional operators ?. and ?[]
 
-Available in C# 6 and later, a null-conditional operator applies a member access, `?.`, or element access, `?[]`, operation to its operand only if that operand evaluates to non-null. If the operand evaluates to `null`, the result of applying the operator is `null`. The null-conditional member access operator `?.` is also known as the Elvis operator.
+Available in C# 6 and later, a null-conditional operator applies a [member access](#member-access-operator-), `?.`, or [element access](#indexer-operator-), `?[]`, operation to its operand only if that operand evaluates to non-null; otherwise, it returns `null`. That is,
+
+- If `a` evaluates to `null`, the result of `a?.x` or `a?[x]` is `null`.
+- If `a` evaluates to non-null, the result of `a?.x` or `a?[x]` is the same as the result of `a.x` or `a[x]`, respectively.
+
+  > [!NOTE]
+  > If `a.x` or `a[x]` throws an exception, `a?.x` or `a?[x]` would throw the same exception for non-null `a`. For example, if `a` is a non-null array instance and `x` is outside the bounds of `a`, `a?[x]` would throw an <xref:System.IndexOutOfRangeException>.
 
 The null-conditional operators are short-circuiting. That is, if one operation in a chain of conditional member or element access operations returns `null`, the rest of the chain doesn't execute. In the following example, `B` is not evaluated if `A` evaluates to `null` and `C` is not evaluated if `A` or `B` evaluates to `null`:
 
@@ -116,7 +122,9 @@ The following example demonstrates the usage of the `?.` and `?[]` operators:
 
 [!code-csharp-interactive[null-conditional operators](~/samples/csharp/language-reference/operators/MemberAccessOperators.cs#NullConditional)]
 
-The preceding example also shows the usage of the [null-coalescing operator](null-coalescing-operator.md). You might use the null-coalescing operator to provide an alternative expression to evaluate in case the result of the null-conditional operation is `null`.
+The preceding example also uses the [null-coalescing operator `??`](null-coalescing-operator.md) to specify an alternative expression to evaluate in case the result of a null-conditional operation is `null`.
+
+The null-conditional member access operator `?.` is also known as the Elvis operator.
 
 ### Thread-safe delegate invocation
 
@@ -192,6 +200,8 @@ For more information, see the following sections of the [C# language specificati
 - [Element access](~/_csharplang/spec/expressions.md#element-access)
 - [Null-conditional operator](~/_csharplang/spec/expressions.md#null-conditional-operator)
 - [Invocation expressions](~/_csharplang/spec/expressions.md#invocation-expressions)
+
+For more information about indices and ranges, see the [feature proposal note](~/_csharplang/proposals/csharp-8.0/ranges.md).
 
 ## See also
 

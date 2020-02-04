@@ -2,8 +2,6 @@
 title: "ICorDebugLoadedModule::GetName Method"
 ms.date: "03/30/2017"
 ms.assetid: 88c304d5-edaa-4c0e-a8e1-144e8a76877e
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugLoadedModule::GetName Method
 Gets the name of the loaded module.  
@@ -45,5 +43,5 @@ HRESULT GetName(
   
 ## See also
 
-- [ICorDebugLoadedModule Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugloadedmodule-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugLoadedModule Interface](icordebugloadedmodule-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

@@ -1,5 +1,5 @@
 ---
-title: "Return Statement (Visual Basic)"
+title: "Return Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Return"
@@ -15,9 +15,9 @@ Returns control to the code that called a `Function`, `Sub`, `Get`, `Set`, or `O
   
 ## Syntax  
   
-```  
+```vb  
 Return  
--or-  
+' -or-  
 Return expression  
 ```  
   

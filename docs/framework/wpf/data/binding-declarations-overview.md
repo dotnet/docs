@@ -23,7 +23,7 @@ This topic discusses the different ways you can declare a binding.
 
 Before reading this topic, it is important that you are familiar with the concept and usage of markup extensions. For more information about markup extensions, see [Markup Extensions and WPF XAML](../advanced/markup-extensions-and-wpf-xaml.md).
 
-This topic does not cover data binding concepts. For a discussion of data binding concepts, see [Data Binding Overview](data-binding-overview.md).
+This topic does not cover data binding concepts. For a discussion of data binding concepts, see [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md).
 
 <a name="BindinginXAML"></a>
 
@@ -104,9 +104,9 @@ Use the <xref:System.Windows.Data.Binding.Path%2A> property to specify the sourc
 
 - If you set <xref:System.Windows.Data.Binding.Path%2A> in XAML, you also need to escape (using XML entities) certain characters that are special to the XML language definition:
 
-  - Use `&` to escape the character "&".
+  - Use `&amp;` to escape the character "&".
 
-  - Use `>` to escape the end tag ">".
+  - Use `&gt;` to escape the end tag ">".
 
 - Additionally, if you describe the entire binding in an attribute using the markup extension syntax, you need to escape (using backslash \\) characters that are special to the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] markup extension parser:
 
@@ -136,7 +136,7 @@ The default behavior is as follows if not specified in the declaration.
 
 ## See also
 
-- [Data Binding Overview](data-binding-overview.md)
+- [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md)
 - [How-to Topics](data-binding-how-to-topics.md)
 - [Data Binding](../advanced/optimizing-performance-data-binding.md)
 - [PropertyPath XAML Syntax](../advanced/propertypath-xaml-syntax.md)

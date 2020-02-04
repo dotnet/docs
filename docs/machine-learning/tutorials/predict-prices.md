@@ -1,9 +1,9 @@
 ---
 title: 'Tutorial: Predict prices using regression'
 description: This tutorial illustrates how to build a regression model using ML.NET to predict prices, specifically, New York City taxi fares.
-ms.date: 05/09/2019
+ms.date: 09/30/2019
 ms.topic: tutorial
-ms.custom: mvc, seodec18, title-hack-0516
+ms.custom: mvc, title-hack-0516
 #Customer intent: As a developer, I want to use ML.NET so that I can train and build a model in a regression scenario to predict prices.
 ---
 # Tutorial: Predict prices using regression with ML.NET
@@ -22,7 +22,7 @@ In this tutorial, you learn how to:
 
 ## Prerequisites
 
-* [Visual Studio 2017 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
+* [Visual Studio 2017 version 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) with the ".NET Core cross-platform development" workload installed.
 
 ## Create a console application
 
@@ -32,11 +32,11 @@ In this tutorial, you learn how to:
 
 1. Install the **Microsoft.ML** NuGet Package:
 
-    In **Solution Explorer**, right-click the project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the **Browse** tab, search for **Microsoft.ML**, select the package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. Do the same for the **Microsoft.ML.FastTree** Nuget package.
+    In **Solution Explorer**, right-click the project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the **Browse** tab, search for **Microsoft.ML**, select the package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed. Do the same for the **Microsoft.ML.FastTree** NuGet package.
 
 ## Prepare and understand the data
 
-1. Download the [taxi-fare-train.csv](https://github.com/dotnet/machinelearning/blob/master/test/data/taxi-fare-train.csv) and the [taxi-fare-test.csv](https://github.com/dotnet/machinelearning/blob/master/test/data/taxi-fare-test.csv) data sets and save them to the *Data* folder you've created at the previous step. We use these data sets to train the machine learning model and then evaluate how accurate the model is. These data sets are originally from the [NYC TLC Taxi Trip data set](http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml).
+1. Download the [taxi-fare-train.csv](https://github.com/dotnet/machinelearning/blob/master/test/data/taxi-fare-train.csv) and the [taxi-fare-test.csv](https://github.com/dotnet/machinelearning/blob/master/test/data/taxi-fare-test.csv) data sets and save them to the *Data* folder you've created at the previous step. We use these data sets to train the machine learning model and then evaluate how accurate the model is. These data sets are originally from the [NYC TLC Taxi Trip data set](https://www1.nyc.gov/site/tlc/about/tlc-trip-record-data.page).
 
 1. In **Solution Explorer**, right-click each of the \*.csv files and select **Properties**. Under **Advanced**, change the value of **Copy to Output Directory** to **Copy if newer**.
 
@@ -49,7 +49,7 @@ The provided data set contains the following columns:
 * **vendor_id:** The ID of the taxi vendor is a feature.
 * **rate_code:** The rate type of the taxi trip is a feature.
 * **passenger_count:** The number of passengers on the trip is a feature.
-* **trip_time_in_secs:** The amount of time the trip took. You want to predict the fare of the trip before the trip is completed. At that moment you don't know how long the trip would take. Thus, the trip time is not a feature and you'll exclude this column from the model.
+* **trip_time_in_secs:** The amount of time the trip took. You want to predict the fare of the trip before the trip is completed. At that moment, you don't know how long the trip would take. Thus, the trip time is not a feature and you'll exclude this column from the model.
 * **trip_distance:** The distance of the trip is a feature.
 * **payment_type:** The payment method (cash or credit card) is a feature.
 * **fare_amount:** The total taxi fare paid is the label.
@@ -70,7 +70,7 @@ Remove the existing class definition and add the following code, which has two c
 
 `TaxiTrip` is the input data class and has definitions for each of the data set columns. Use the <xref:Microsoft.ML.Data.LoadColumnAttribute> attribute to specify the indices of the source columns in the data set.
 
-The `TaxiTripFarePrediction` class represents predicted results. It has a single float field, `FareAmount`, with a `Score` <xref:Microsoft.ML.Data.ColumnNameAttribute> attribute applied. In case of the regression task the **Score** column contains predicted label values.
+The `TaxiTripFarePrediction` class represents predicted results. It has a single float field, `FareAmount`, with a `Score` <xref:Microsoft.ML.Data.ColumnNameAttribute> attribute applied. In case of the regression task, the **Score** column contains predicted label values.
 
 > [!NOTE]
 > Use the `float` type to represent floating-point values in the input and prediction data classes.
@@ -125,7 +125,7 @@ ML.NET uses the [IDataView class](xref:Microsoft.ML.IDataView) as a flexible, ef
 
 [!code-csharp[LoadTrainData](~/samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#6 "loading training dataset")]
 
-As you want to predict the taxi trip fare, the `FareAmount` column is the `Label` that you will predict (the output of the model)Use the `CopyColumnsEstimator` transformation class to copy `FareAmount`, and add the following code: 
+As you want to predict the taxi trip fare, the `FareAmount` column is the `Label` that you will predict (the output of the model). Use the `CopyColumnsEstimator` transformation class to copy `FareAmount`, and add the following code:
 
 [!code-csharp[CopyColumnsEstimator](~/samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#7 "Use the CopyColumnsEstimator")]
 
@@ -183,13 +183,13 @@ Load the test dataset using the [LoadFromTextFile()](xref:Microsoft.ML.TextLoade
 
 [!code-csharp[LoadTestDataset](~/samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#15 "Load the test dataset")]
 
-Next, transform the `Test` data by adding the following code to `EvaluateModel()`:
+Next, transform the `Test` data by adding the following code to `Evaluate()`:
 
 [!code-csharp[PredictWithTransformer](~/samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#16 "Predict using the Transformer")]
 
 The [Transform()](xref:Microsoft.ML.ITransformer.Transform%2A) method makes predictions for the test dataset input rows.
 
-The `RegressionContext.Evaluate` method computes the quality metrics for the `PredictionModel` using the specified dataset. It returns a <xref:Microsoft.ML.Data.RegressionMetrics> object that contains the overall metrics computed by regression evaluators. 
+The `RegressionContext.Evaluate` method computes the quality metrics for the `PredictionModel` using the specified dataset. It returns a <xref:Microsoft.ML.Data.RegressionMetrics> object that contains the overall metrics computed by regression evaluators.
 
 To display these to determine the quality of the model, you need to get the metrics first. Add the following code as the next line in the `Evaluate` method:
 
@@ -210,7 +210,7 @@ Console.WriteLine($"*------------------------------------------------");
 
 [!code-csharp[DisplayRSquared](~/samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#18 "Display the RSquared metric.")]
 
-[RMS](../resources/glossary.md##root-of-mean-squared-error-rmse) is one of the evaluation metrics of the regression model. The lower it is, the better the model is. Add the following code into the `Evaluate` method to display the RMS value:
+[RMS](../resources/glossary.md#root-of-mean-squared-error-rmse) is one of the evaluation metrics of the regression model. The lower it is, the better the model is. Add the following code into the `Evaluate` method to display the RMS value:
 
 [!code-csharp[DisplayRMS](~/samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#19 "Display the RMS metric.")]
 
@@ -240,7 +240,10 @@ Use the `PredictionEngine` to predict the fare by adding the following code to `
 
 [!code-csharp[MakePredictionEngine](~/samples/machine-learning/tutorials/TaxiFarePrediction/Program.cs#22 "Create the PredictionFunction")]
 
-The [PredictionEngine class](xref:Microsoft.ML.PredictionEngine%602) is a convenience API, which allows you to pass a single instance of data and then perform a prediction on it.
+The [PredictionEngine](xref:Microsoft.ML.PredictionEngine%602) is a convenience API, which allows you to perform a prediction on a single instance of data. [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) is not thread-safe. It's acceptable to use in single-threaded or prototype environments. For improved performance and thread safety in production environments, use the `PredictionEnginePool` service, which creates an [`ObjectPool`](xref:Microsoft.Extensions.ObjectPool.ObjectPool%601) of [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) objects for use throughout your application. See this guide on how to [use `PredictionEnginePool` in an ASP.NET Core Web API](../how-to-guides/serve-model-web-api-ml-net.md#register-predictionenginepool-for-use-in-the-application).
+
+> [!NOTE]
+> `PredictionEnginePool` service extension is currently in preview.
 
 This tutorial uses one test trip within this class. Later you can add other scenarios to experiment with the model. Add a trip to test the trained model's prediction of cost in the `TestSinglePrediction()` method by creating an instance of `TaxiTrip`:
 

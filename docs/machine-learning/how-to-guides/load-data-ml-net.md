@@ -1,7 +1,7 @@
 ---
 title: Load data from files and other sources
-description: This how-to shows you how to load data for processing and training into ML.NET. The data is originally stored in files or other data sources such as databases, JSON, XML or in-memory collections.
-ms.date: 09/11/2019
+description: Learn how to load data for processing and training into ML.NET using the API. Data is stored in files, databases, JSON, XML or in-memory collections.
+ms.date: 11/07/2019
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc,how-to, title-hack-0625
@@ -10,7 +10,9 @@ ms.custom: mvc,how-to, title-hack-0625
 
 # Load data from files and other sources
 
-This how-to shows you how to load data for processing and training into ML.NET. The data is originally stored in files or other data sources such as databases, JSON, XML or in-memory collections.
+Learn how to load data for processing and training into ML.NET using the API. The data is originally stored in files or other data sources such as databases, JSON, XML or in-memory collections.
+
+If you're using Model Builder, see [Load training data into Model Builder](load-data-model-builder.md).
 
 ## Create the data model
 
@@ -103,18 +105,19 @@ IDataView data = textLoader.Load("DataFolder/SubFolder1/1.txt", "DataFolder/SubF
 
 ## Load data from a relational database
 
-> [!NOTE]
-> DatabaseLoader is currently in preview. It can be used by referencing the [Microsoft.ML.Experimental](https://www.nuget.org/packages/Microsoft.ML.Experimental/0.16.0-preview) and [System.Data.SqlClient](https://www.nuget.org/packages/System.Data.SqlClient/4.6.1) NuGet packages.
-
 ML.NET supports loading data from a variety of relational databases supported by [`System.Data`](xref:System.Data) that include SQL Server, Azure SQL Database, Oracle, SQLite, PostgreSQL, Progress, IBM DB2, and many more.
+
+> [!NOTE]
+> To use `DatabaseLoader`, reference the [System.Data.SqlClient](https://www.nuget.org/packages/System.Data.SqlClient) NuGet package.
 
 Given a database with a table named `House` and the following schema:
 
 ```SQL
 CREATE TABLE [House] (
-    [HouseId] int NOT NULL IDENTITY,
-    [Size] real NOT NULL,
-    [Price] real NOT NULL
+    [HouseId] INT NOT NULL IDENTITY,
+    [Size] INT NOT NULL,
+    [NumBed] INT NOT NULL,
+    [Price] REAL NOT NULL
     CONSTRAINT [PK_House] PRIMARY KEY ([HouseId])
 );
 ```
@@ -125,6 +128,8 @@ The data can be modeled by a class like `HouseData`.
 public class HouseData
 {
     public float Size { get; set; }
+
+    public float NumBed { get; set; }
 
     public float Price { get; set; }
 }
@@ -143,12 +148,14 @@ Define your connection string as well as the SQL command to be executed on the d
 ```csharp
 string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=<YOUR-DB-FILEPATH>;Database=<YOUR-DB-NAME>;Integrated Security=True;Connect Timeout=30";
 
-string sqlCommand = "SELECT Size,Price FROM House";
+string sqlCommand = "SELECT Size, CAST(NumBed as REAL) as NumBed, Price FROM House";
 
-DatabaseSource dbSource = new DatabaseSource(SqlClientFactory.Instance,connectionString,sqlCommand);
+DatabaseSource dbSource = new DatabaseSource(SqlClientFactory.Instance, connectionString, sqlCommand);
 ```
 
-Finally, use the `Load` method to load the data into an [`IDataView`](xref:Microsoft.ML.IDataView).
+Numerical data that is not of type [`Real`](xref:System.Data.SqlDbType) has to be converted to [`Real`](xref:System.Data.SqlDbType). The [`Real`](xref:System.Data.SqlDbType) type is represented as a single-precision floating-point value or [`Single`](xref:System.Single), the input type expected by ML.NET algorithms. In this sample, the `NumBed` column is an integer in the database. Using the `CAST` built-in function, it's converted to [`Real`](xref:System.Data.SqlDbType). Because the `Price` property is already of type [`Real`](xref:System.Data.SqlDbType) it is loaded as is.
+
+Use the `Load` method to load the data into an [`IDataView`](xref:Microsoft.ML.IDataView).
 
 ```csharp
 IDataView data = loader.Load(dbSource);
@@ -201,3 +208,8 @@ MLContext mlContext = new MLContext();
 //Load Data
 IDataView data = mlContext.Data.LoadFromEnumerable<HousingData>(inMemoryCollection);
 ```
+
+## Next steps
+
+- To clean or otherwise process data, see [Prepare data for building a model](prepare-data-ml-net.md).
+- When you're ready to build a model, see [Train and evaluate a model](train-machine-learning-model-ml-net.md).

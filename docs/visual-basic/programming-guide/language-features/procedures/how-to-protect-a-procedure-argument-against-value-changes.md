@@ -1,5 +1,5 @@
 ---
-title: "How to: Protect a Procedure Argument Against Value Changes (Visual Basic)"
+title: "How to: Protect a Procedure Argument Against Value Changes"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "procedures [Visual Basic], arguments"
@@ -33,7 +33,7 @@ If a procedure declares a parameter as [ByRef](../../../../visual-basic/language
   
  The second `MsgBox` call displays "After replace(n): 11, 21, 31, 41". Because `n` is passed `ByVal`, `replace` cannot modify the variable `n` in the calling code by assigning a new array to it. When `replace` creates the new array instance `k` and assigns it to the local variable `a`, it loses the reference to `n` passed in by the calling code. When it changes the members of `a`, only the local array `k` is affected. Therefore, `replace` does not increment the values of array `n` in the calling code.  
   
-## Compiling the Code  
+## Compile the code  
  The default in Visual Basic is to pass arguments by value. However, it is good programming practice to include either the [ByVal](../../../../visual-basic/language-reference/modifiers/byval.md) or [ByRef](../../../../visual-basic/language-reference/modifiers/byref.md) keyword with every declared parameter. This makes your code easier to read.  
   
 ## See also

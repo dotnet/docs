@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: caea7754-867c-4360-a65c-5ced4408fd9d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \_EFN\_StackTrace Function
 Provides a text representation of a managed stack trace and an array of `CONTEXT` records, one for each transition between unmanaged and managed code.  
@@ -67,7 +65,7 @@ HRESULT CALLBACK _EFN_StackTrace(
   
 - If `pTransitionContexts` is null and `puiTransitionContextCount` is not null, the function returns the necessary number of context entries in `puiTransitionContextCount`.  
   
-- If `pTransitionContexts` is not null, the function treats it as an array of structures of length `puiTransitionContextCount`. The structure size is given by `uiSizeOfContext`, and must be the size of [SimpleContext](../../../../docs/framework/unmanaged-api/debugging/stacktrace-simplecontext-structure.md) or `CONTEXT` for the architecture.  
+- If `pTransitionContexts` is not null, the function treats it as an array of structures of length `puiTransitionContextCount`. The structure size is given by `uiSizeOfContext`, and must be the size of [SimpleContext](stacktrace-simplecontext-structure.md) or `CONTEXT` for the architecture.  
   
 - `wszTextOut` is written in the following format:  
   
@@ -97,4 +95,4 @@ HRESULT CALLBACK _EFN_StackTrace(
   
 ## See also
 
-- [Debugging Global Static Functions](../../../../docs/framework/unmanaged-api/debugging/debugging-global-static-functions.md)
+- [Debugging Global Static Functions](debugging-global-static-functions.md)

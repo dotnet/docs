@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Arranging Controls on Windows Forms Using Snaplines"
+title: Arranging Controls Using Snaplines
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "controls [Windows Forms], arranging with snaplines"
@@ -7,8 +7,8 @@ helpviewer_keywords:
   - "SnapLine class [Windows Forms], walkthroughs"
   - "Windows Forms controls, arranging"
 ms.assetid: d5c9edc7-cf30-4a97-8ebe-201d569340f8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # Walkthrough: Arrange controls on Windows Forms using snaplines

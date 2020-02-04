@@ -17,8 +17,6 @@ helpviewer_keywords:
 ms.assetid: e00fd477-4f49-43d3-bd0e-3094824b1136
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICoreClrDebugTarget::EnumProcesses Method
 Enumerates the processes that are running on a remote computer.  
@@ -37,7 +35,7 @@ HRESULT EnumProcesses (
  [out] The number of processes returned in `ppProcs`. This value can be 0 (zero).  
   
  `ppProcs`  
- [out] An array of [CoreClrDebugProcInfo](../../../../docs/framework/unmanaged-api/debugging/coreclrdebugprocinfo-structure.md) structures that represent the processes running on the remote computer.  
+ [out] An array of [CoreClrDebugProcInfo](coreclrdebugprocinfo-structure.md) structures that represent the processes running on the remote computer.  
   
 ## Return Value  
  S_OK  
@@ -50,7 +48,7 @@ HRESULT EnumProcesses (
  Other failures.  
   
 ## Remarks  
- To free the memory that was allocated by this method, call the [ICoreClrDebugTarget::FreeMemory](../../../../docs/framework/unmanaged-api/debugging/icoreclrdebugtarget-freememory-method.md) method.  
+ To free the memory that was allocated by this method, call the [ICoreClrDebugTarget::FreeMemory](icoreclrdebugtarget-freememory-method.md) method.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -63,4 +61,4 @@ HRESULT EnumProcesses (
   
 ## See also
 
-- [ICoreClrDebugTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icoreclrdebugtarget-interface.md)
+- [ICoreClrDebugTarget Interface](icoreclrdebugtarget-interface.md)

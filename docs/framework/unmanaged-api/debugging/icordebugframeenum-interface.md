@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: ee3f85d3-044e-46b8-945c-93ebfa5d9e91
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugFrameEnum Interface
 
@@ -25,7 +23,7 @@ Implements ICorDebugEnum methods, and enumerates ICorDebugFrame arrays.
   
 |Method|Description|  
 |------------|-----------------|  
-|[Next Method](../../../../docs/framework/unmanaged-api/debugging/icordebugframeenum-next-method.md)|Gets the specified number of `ICorDebugFrame` instances from the enumeration, starting at the current position.|  
+|[Next Method](icordebugframeenum-next-method.md)|Gets the specified number of `ICorDebugFrame` instances from the enumeration, starting at the current position.|  
   
 ## Remarks  
   
@@ -43,4 +41,4 @@ Implements ICorDebugEnum methods, and enumerates ICorDebugFrame arrays.
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

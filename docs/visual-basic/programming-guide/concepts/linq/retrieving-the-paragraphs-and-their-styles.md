@@ -1,5 +1,5 @@
 ---
-title: "Retrieving the Paragraphs and Their Styles (Visual Basic)"
+title: "Retrieving the Paragraphs and Their Styles"
 ms.date: 07/20/2015
 ms.assetid: d9ed2238-d38e-4ad4-b88b-db7859df9bde
 ---
@@ -107,7 +107,7 @@ End Module
   
  This example produces the following output when applied to the document described in [Creating the Source Office Open XML Document (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-the-source-office-open-xml-document.md).  
   
-```  
+```console  
 StyleName:Heading1  
 StyleName:Normal  
 StyleName:Normal  

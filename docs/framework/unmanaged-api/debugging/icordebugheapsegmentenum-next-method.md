@@ -15,11 +15,9 @@ helpviewer_keywords:
 ms.assetid: 51625fd0-7399-49c7-b22b-5dfb05451fe6
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugHeapSegmentEnum::Next Method
-Gets the specified number of [COR_HEAPOBJECT](../../../../docs/framework/unmanaged-api/debugging/cor-heapobject-structure.md) instances that contain information about memory regions of the managed heap.  
+Gets the specified number of [COR_HEAPOBJECT](cor-heapobject-structure.md) instances that contain information about memory regions of the managed heap.  
   
 ## Syntax  
   
@@ -35,10 +33,10 @@ HRESULT Next(
  [in] The number of segments to be retrieved.  
   
  segments  
- [out] An array of pointers, each of which points to a [COR_HEAPOBJECT](../../../../docs/framework/unmanaged-api/debugging/cor-heapobject-structure.md) object that provides information about a region of memory in the managed heap.  
+ [out] An array of pointers, each of which points to a [COR_HEAPOBJECT](cor-heapobject-structure.md) object that provides information about a region of memory in the managed heap.  
   
  pceltFetched  
- [out] A pointer to the number of [COR_HEAPOBJECT](../../../../docs/framework/unmanaged-api/debugging/cor-heapobject-structure.md) objects actually returned in `segments`. This value may be `null` if `celt` is 1.  
+ [out] A pointer to the number of [COR_HEAPOBJECT](cor-heapobject-structure.md) objects actually returned in `segments`. This value may be `null` if `celt` is 1.  
   
 ## Remarks  
   
@@ -53,5 +51,5 @@ HRESULT Next(
   
 ## See also
 
-- [ICorDebugHeapSegmentEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugheapsegmentenum-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugHeapSegmentEnum Interface](icordebugheapsegmentenum-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

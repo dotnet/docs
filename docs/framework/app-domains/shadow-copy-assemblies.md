@@ -6,15 +6,13 @@ helpviewer_keywords:
   - "application domains, shadow copying assemblies"
   - "shadow copying assemblies"
 ms.assetid: de8b8759-fca7-4260-896b-5a4973157672
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Shadow Copying Assemblies
 
 Shadow copying enables assemblies that are used in an application domain to be updated without unloading the application domain. This is particularly useful for applications that must be available continuously, such as ASP.NET sites.
 
 > [!IMPORTANT]
-> Shadow copying is not supported in [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps.
+> Shadow copying is not supported in Windows 8.x Store apps.
 
 The common language runtime locks an assembly file when the assembly is loaded, so the file cannot be updated until the assembly is unloaded. The only way to unload an assembly from an application domain is by unloading the application domain, so under normal circumstances, an assembly cannot be updated on disk until all the application domains that are using it have been unloaded.
 

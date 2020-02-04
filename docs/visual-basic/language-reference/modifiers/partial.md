@@ -1,5 +1,5 @@
 ---
-title: "Partial (Visual Basic)"
+title: "Partial"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Partial"
@@ -25,7 +25,7 @@ Indicates that a type declaration is a partial definition of the type.
   
 ## Syntax  
   
-```  
+```vb  
 [ <attrlist> ] [ accessmodifier ] [ Shadows ] [ MustInherit | NotInheritable ] _  
 Partial { Class | Structure | Interface | Module } name [ (Of typelist) ]  
     [ Inherits classname ]  

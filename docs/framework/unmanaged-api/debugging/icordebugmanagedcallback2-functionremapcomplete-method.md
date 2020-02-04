@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 5396c4c3-4ec3-4e3a-a38d-d65b21f0a2fc
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback2::FunctionRemapComplete Method
 Notifies the debugger that code execution has switched to a new version of an edited function.  
@@ -55,5 +53,5 @@ HRESULT FunctionRemapComplete (
   
 ## See also
 
-- [ICorDebugManagedCallback2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-interface.md)
-- [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)
+- [ICorDebugManagedCallback2 Interface](icordebugmanagedcallback2-interface.md)
+- [ICorDebugManagedCallback Interface](icordebugmanagedcallback-interface.md)

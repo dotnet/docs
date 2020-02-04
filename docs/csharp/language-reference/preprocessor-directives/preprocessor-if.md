@@ -1,16 +1,15 @@
 ---
 title: "#if preprocessor directive - C# Reference"
-ms.custom: seodec18
-ms.date: 06/30/2018
+ms.date: 10/27/2019
 f1_keywords: 
   - "#if"
 helpviewer_keywords: 
   - "#if directive [C#]"
 ms.assetid: 48cabbff-ca82-491f-a56a-eeccd528c7c2
 ---
-# #if (C# Reference)
+# #if (C# reference)
 
-When the C# compiler encounters an `#if` directive, followed eventually by an [#endif](preprocessor-endif.md) directive, it compiles the code between the directives only if the specified symbol is defined. Unlike C and C++, you cannot assign a numeric value to a symbol. The #if statement in C# is Boolean and only tests whether the symbol has been defined or not. For example:
+When the C# compiler encounters an `#if` directive, followed eventually by an [#endif](preprocessor-endif.md) directive, it compiles the code between the directives only if the specified symbol is defined. Unlike C and C++, you cannot assign a numeric value to a symbol. The `#if` statement in C# is Boolean and only tests whether the symbol has been defined or not. For example:
 
 ```csharp
 #if DEBUG
@@ -18,7 +17,7 @@ When the C# compiler encounters an `#if` directive, followed eventually by an [#
 #endif
 ```
 
-You can use the operators [==](../operators/equality-operators.md#equality-operator-) (equality) and [!=](../operators/equality-operators.md#inequality-operator-) (inequality) only to test for [true](../keywords/true-literal.md) or [false](../keywords/false-literal.md). True means the symbol is defined. The statement `#if DEBUG` has the same meaning as `#if (DEBUG == true)`. You can use the operators [&&](../operators/boolean-logical-operators.md#conditional-logical-and-operator-) (and), [&#124;&#124;](../operators/boolean-logical-operators.md#conditional-logical-or-operator-) (or), and [!](../operators/boolean-logical-operators.md#logical-negation-operator-) (not) to evaluate whether multiple symbols have been defined. You can also group symbols and operators with parentheses.
+You can use the operators [==](../operators/equality-operators.md#equality-operator-) (equality) and [!=](../operators/equality-operators.md#inequality-operator-) (inequality) only to test for the [bool](../builtin-types/bool.md) values `true` or `false`. `true` means the symbol is defined. The statement `#if DEBUG` has the same meaning as `#if (DEBUG == true)`. You can use the [&& (and)](../operators/boolean-logical-operators.md#conditional-logical-and-operator-), [&#124;&#124; (or)](../operators/boolean-logical-operators.md#conditional-logical-or-operator-), and [! (not)](../operators/boolean-logical-operators.md#logical-negation-operator-) operators to evaluate whether multiple symbols have been defined. You can also group symbols and operators with parentheses.
 
 ## Remarks
 
@@ -34,9 +33,12 @@ A symbol that you define with `-define` or with `#define` doesn't conflict with 
 
 The scope of a symbol created with `#define` is the file in which it was defined.
 
-The build system is also aware of predefined preprocessor symbols representing different [target frameworks](../../../standard/frameworks.md). They're useful when creating applications that can target more than one .NET implementation or version.
+The build system is also aware of predefined preprocessor symbols representing different [target frameworks](../../../standard/frameworks.md) in SDK-style projects. They're useful when creating applications that can target more than one .NET implementation or version.
 
 [!INCLUDE [Preprocessor symbols](~/includes/preprocessor-symbols.md)]
+
+> [!NOTE]
+> For traditional .NET Framework projects, you have to manually configure the conditional compilation symbols for the different target frameworks in Visual Studio via the project's properties pages.
 
 Other predefined symbols include the DEBUG and TRACE constants. You can override the values set for the project using `#define`. The DEBUG symbol, for example, is automatically set depending on your build configuration properties ("Debug" or "Release" mode).
 

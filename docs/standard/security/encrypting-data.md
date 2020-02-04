@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "cryptography [.NET Framework], asymmetric"
   - "asymmetric encryption"
 ms.assetid: 7ecce51f-db5f-4bd4-9321-cceb6fcb2a77
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Encrypting Data
 Symmetric encryption and asymmetric encryption are performed using different processes. Symmetric encryption is performed on streams and is therefore useful to encrypt large amounts of data. Asymmetric encryption is performed on a small number of bytes and is therefore useful only for small amounts of data.  
@@ -154,13 +152,13 @@ public class main
   
  For the previous example to execute successfully, there must be a process listening on the IP address and port number specified in the <xref:System.Net.Sockets.TcpClient> class. If a listening process exists, the code will connect to the listening process, encrypt the stream using the Rijndael symmetric algorithm, and write "Hello World!" to the stream. If the code is successful, it displays the following text to the console:  
   
-```  
+```console  
 The message was sent.  
 ```  
   
  However, if no listening process is found or an exception is raised, the code displays the following text to the console:  
   
-```  
+```console  
 The connection failed.  
 ```  
   

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 78b0f14f-2fae-4e63-8412-4df119ee8468
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback2::Exception Method
 Notifies the debugger that a search for an exception handler has started.  
@@ -51,7 +49,7 @@ HRESULT Exception (
  [in] A value of the CorDebugExceptionCallbackType enumeration that specifies the type of this exception callback.  
   
  `dwFlags`  
- [in] A value of the [CorDebugExceptionFlags](../../../../docs/framework/unmanaged-api/debugging/cordebugexceptionflags-enumeration.md) enumeration that specifies additional information about the exception  
+ [in] A value of the [CorDebugExceptionFlags](cordebugexceptionflags-enumeration.md) enumeration that specifies additional information about the exception  
   
 ## Remarks  
  The `Exception` callback is called at various points during the search phase of the exception-handling process. That is, it can be called more than once while unwinding an exception.  
@@ -78,5 +76,5 @@ HRESULT Exception (
   
 ## See also
 
-- [ICorDebugManagedCallback2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback2-interface.md)
-- [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)
+- [ICorDebugManagedCallback2 Interface](icordebugmanagedcallback2-interface.md)
+- [ICorDebugManagedCallback Interface](icordebugmanagedcallback-interface.md)

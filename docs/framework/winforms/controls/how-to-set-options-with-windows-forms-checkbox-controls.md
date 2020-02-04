@@ -1,5 +1,5 @@
 ---
-title: "How to: Set Options with Windows Forms CheckBox Controls"
+title: Set Options with CheckBox Controls
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

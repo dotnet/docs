@@ -7,16 +7,15 @@ helpviewer_keywords:
   - "clear Element"
   - "<clear> Element"
 ms.assetid: 6d18c7be-27db-438b-8fb5-765d396b0b7b
-author: "rpetrusha"
+author: "mairaw"
 ms.author: "mairaw"
 ---
-
 # \<clear> element for \<appSettings>
 
 Clears custom application settings.
 
-[**\<configuration>**](../configuration-element.md)   
-&nbsp;&nbsp;[**\<appSettings>**](appsettings-element-for-configuration.md)   
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<appSettings>**](appsettings-element-for-configuration.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<clear>**
 
 ## Syntax

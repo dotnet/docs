@@ -30,12 +30,12 @@ helpviewer_keywords:
 ---
 # Arithmetic operators (C# reference)
 
-The following operators perform arithmetic operations with numeric types:
+The following operators perform arithmetic operations with operands of numeric types:
 
 - Unary [`++` (increment)](#increment-operator-), [`--` (decrement)](#decrement-operator---), [`+` (plus)](#unary-plus-and-minus-operators), and [`-` (minus)](#unary-plus-and-minus-operators) operators
 - Binary [`*` (multiplication)](#multiplication-operator-), [`/` (division)](#division-operator-), [`%` (remainder)](#remainder-operator-), [`+` (addition)](#addition-operator-), and [`-` (subtraction)](#subtraction-operator--) operators
 
-Those operators support all [integral](../builtin-types/integral-numeric-types.md) and [floating-point](../builtin-types/floating-point-numeric-types.md) numeric types.
+Those operators are supported by all [integral](../builtin-types/integral-numeric-types.md) and [floating-point](../builtin-types/floating-point-numeric-types.md) numeric types.
 
 ## Increment operator ++
 
@@ -79,7 +79,7 @@ The unary `+` operator returns the value of its operand. The unary `-` operator 
 
 [!code-csharp-interactive[unary plus and minus](~/samples/csharp/language-reference/operators/ArithmeticOperators.cs#UnaryPlusAndMinus)]
 
-The unary `-` operator doesn't support the [ulong](../builtin-types/integral-numeric-types.md) type.
+The [ulong](../builtin-types/integral-numeric-types.md) type doesn't support the unary `-` operator.
 
 ## Multiplication operator *
 
@@ -109,14 +109,14 @@ For the `float`, `double`, and `decimal` types, the result of the `/` operator i
 
 [!code-csharp-interactive[floating-point division](~/samples/csharp/language-reference/operators/ArithmeticOperators.cs#FloatingPointDivision)]
 
-If one of the operands is `decimal`, another operand can be neither `float` nor `double`, because neither `float` nor `double` is implicitly convertible to `decimal`. You must explicitly convert the `float` or `double` operand to the `decimal` type. For more information about implicit conversions between numeric types, see [Implicit numeric conversions table](../keywords/implicit-numeric-conversions-table.md).
+If one of the operands is `decimal`, another operand can be neither `float` nor `double`, because neither `float` nor `double` is implicitly convertible to `decimal`. You must explicitly convert the `float` or `double` operand to the `decimal` type. For more information about conversions between numeric types, see [Built-in numeric conversions](../builtin-types/numeric-conversions.md).
 
 ## Remainder operator %
 
 The remainder operator `%` computes the remainder after dividing its left-hand operand by its right-hand operand.
 
 ### Integer remainder
-  
+
 For the operands of integer types, the result of `a % b` is the value produced by `a - (a / b) * b`. The sign of the non-zero remainder is the same as that of the left-hand operand, as the following example shows:
 
 [!code-csharp-interactive[integer remainder](~/samples/csharp/language-reference/operators/ArithmeticOperators.cs#IntegerRemainder)]
@@ -131,7 +131,7 @@ For the `float` and `double` operands, the result of `x % y` for the finite `x` 
 - The absolute value of `z` is the value produced by `|x| - n * |y|` where `n` is the largest possible integer that is less than or equal to `|x| / |y|` and `|x|` and `|y|` are the absolute values of `x` and `y`, respectively.
 
 > [!NOTE]
-> This method of computing the remainder is analogous to that used for integer operands, but differs from the IEEE 754. If you need the remainder operation that complies with the IEEE 754, use the <xref:System.Math.IEEERemainder%2A?displayProperty=nameWithType> method.
+> This method of computing the remainder is analogous to that used for integer operands, but different from the IEEE 754 specification. If you need the remainder operation that complies with the IEEE 754 specification, use the <xref:System.Math.IEEERemainder%2A?displayProperty=nameWithType> method.
 
 For information about the behavior of the `%` operator with non-finite operands, see the [Remainder operator](~/_csharplang/spec/expressions.md#remainder-operator) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
@@ -155,7 +155,7 @@ The subtraction operator `-` subtracts its right-hand operand from its left-hand
 
 [!code-csharp-interactive[subtraction operator](~/samples/csharp/language-reference/operators/ArithmeticOperators.cs#Subtraction)]
 
-You also can use the `-` operator for delegate removal. For more information, see the [`-` operator](subtraction-operator.md) article.
+You also can use the `-` operator for delegate removal. For more information, see the [`-` and `-=` operators](subtraction-operator.md) article.
 
 ## Compound assignment
 
@@ -181,7 +181,7 @@ Because of [numeric promotions](~/_csharplang/spec/expressions.md#numeric-promot
 
 [!code-csharp-interactive[compound assignment with cast](~/samples/csharp/language-reference/operators/ArithmeticOperators.cs#CompoundAssignmentWithCast)]
 
-You also use the `+=` and `-=` operators to subscribe to and unsubscribe from [events](../keywords/event.md). For more information, see [How to: subscribe to and unsubscribe from events](../../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
+You also use the `+=` and `-=` operators to subscribe to and unsubscribe from an [event](../keywords/event.md), respectively. For more information, see [How to subscribe to and unsubscribe from events](../../programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events.md).
 
 ## Operator precedence and associativity
 
@@ -198,7 +198,7 @@ Use parentheses, `()`, to change the order of evaluation imposed by operator pre
 
 [!code-csharp-interactive[precedence and associativity](~/samples/csharp/language-reference/operators/ArithmeticOperators.cs#PrecedenceAndAssociativity)]
 
-For the complete list of C# operators ordered by precedence level, see [C# operators](index.md).
+For the complete list of C# operators ordered by precedence level, see the [Operator precedence](index.md#operator-precedence) section of the [C# operators](index.md) article.
 
 ## Arithmetic overflow and division by zero
 
@@ -229,11 +229,11 @@ For the operands of the `decimal` type, arithmetic overflow always throws an <xr
 
 ## Round-off errors
 
-Because of general limitations of the floating-point representation of real numbers and floating-point arithmetic, the round-off errors might occur in calculations with floating-point types. That is, the produced result of an expression might differ from the expected mathematical result. The following example demonstrates several such cases:
+Because of general limitations of the floating-point representation of real numbers and floating-point arithmetic, round-off errors might occur in calculations with floating-point types. That is, the produced result of an expression might differ from the expected mathematical result. The following example demonstrates several such cases:
 
 [!code-csharp-interactive[round-off errors](~/samples/csharp/language-reference/operators/ArithmeticOperators.cs#RoundOffErrors)]
 
-For more information, see remarks at [System.Double](/dotnet/api/system.double#remarks), [System.Single](/dotnet/api/system.single#remarks), or [System.Decimal](/dotnet/api/system.decimal#remarks) reference pages.
+For more information, see remarks at the [System.Double](/dotnet/api/system.double#remarks), [System.Single](/dotnet/api/system.single#remarks), or [System.Decimal](/dotnet/api/system.decimal#remarks) reference pages.
 
 ## Operator overloadability
 

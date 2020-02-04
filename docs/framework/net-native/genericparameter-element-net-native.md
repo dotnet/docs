@@ -2,8 +2,6 @@
 title: "<GenericParameter> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: cbd49732-3615-49a5-a900-f96947cdc3e6
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<GenericParameter> Element (.NET Native)
 Applies policy to the parameter type of a generic type or method.  
@@ -21,7 +19,7 @@ Applies policy to the parameter type of a generic type or method.
                   XmlSerializer="policy_type"  
                   MarshalObject="policy_type"  
                   MarshalDelegate="policy_type"  
-                  MarshalStructure="policy_type"  
+                  MarshalStructure="policy_type" />
 ```  
   
 ## Attributes and Elements  

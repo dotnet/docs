@@ -1,5 +1,5 @@
 ---
-title: "WPF community feedback"
+title: Community resources
 ms.date: "03/01/2018"
 helpviewer_keywords: 
   - "community resources [WPF]"
@@ -114,4 +114,4 @@ Ordinarily, crash and data loss scenarios are high impact and, therefore, the ea
 
 ## See also
 
-- [How to report a problem with Visual Studio 2017](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017)
+- [How to report a problem with Visual Studio](/visualstudio/ide/how-to-report-a-problem-with-visual-studio)

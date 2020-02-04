@@ -1,5 +1,5 @@
 ---
-title: "How to: Generate Text Files from XML (Visual Basic)"
+title: "How to: Generate Text Files from XML"
 ms.date: 07/20/2015
 ms.assetid: 3b33f191-4abe-4419-b81b-3cb81d9a317f
 ---
@@ -38,7 +38,7 @@ Console.WriteLine(sb.ToString())
   
  This code produces the following output:  
   
-```  
+```console  
 GREAL,Great Lakes Food Market,Howard Snyder,Marketing Manager,(503) 555-7555,2732 Baker Blvd.,Eugene,OR,97403,USA  
 HUNGC,Hungry Coyote Import Store,Yoshi Latimer,Sales Representative,(503) 555-6874,City Center Plaza 516 Main St.,Elgin,OR,97827,USA  
 LAZYK,Lazy K Kountry Store,John Steel,Marketing Manager,(509) 555-7969,12 Orchestra Terrace,Walla Walla,WA,99362,USA  

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 87277e1a-1595-4729-9e25-d1c3ac18ce5f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IcorDebugVariableHome::GetLiveRange Method
 Gets the native range over which this variable is live.  
@@ -48,4 +46,4 @@ HRESULT GetLiveRange(
   
 ## See also
 
-- [ICorDebugVariableHome Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-interface.md)
+- [ICorDebugVariableHome Interface](icordebugvariablehome-interface.md)

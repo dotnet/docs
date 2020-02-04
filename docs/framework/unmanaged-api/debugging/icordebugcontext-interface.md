@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: b9907b98-4253-4cb6-a296-37ae9977c81a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugContext Interface
 
@@ -37,4 +35,4 @@ Represents a context object. This interface has not been implemented yet.
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

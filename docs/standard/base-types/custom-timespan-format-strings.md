@@ -1,5 +1,5 @@
 ---
-title: "Custom TimeSpan format strings - .NET"
+title: "Custom TimeSpan format strings"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs:
@@ -13,13 +13,11 @@ helpviewer_keywords:
   - "formatting [.NET Framework], time"
   - "custom TimeSpan format strings"
 ms.assetid: a63ebf55-7269-416b-b4f5-286f6c03bf0e
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # Custom TimeSpan format strings
 
-A <xref:System.TimeSpan> format string defines the string representation of a <xref:System.TimeSpan> value that results from a formatting operation. A custom format string consists of one or more custom <xref:System.TimeSpan> format specifiers along with any number of literal characters. Any string that isn't a [standard TimeSpan format string](standard-timespan-format-strings.md) is interpreted as a custom <xref:System.TimeSpan> format string.
+A <xref:System.TimeSpan> format string defines the string representation of a <xref:System.TimeSpan> value that results from a formatting operation. A custom format string consists of one or more custom <xref:System.TimeSpan> format specifiers along with any number of literal characters. Any string that isn't a [Standard TimeSpan format string](standard-timespan-format-strings.md) is interpreted as a custom <xref:System.TimeSpan> format string.
 
 > [!IMPORTANT]
 > The custom <xref:System.TimeSpan> format specifiers don't include placeholder separator symbols, such as the symbols that separate days from hours, hours from minutes, or seconds from fractional seconds. Instead, these symbols must be included in the custom format string as string literals. For example, `"dd\.hh\:mm"` defines a period (.) as the separator between days and hours, and a colon (:) as the separator between hours and minutes.

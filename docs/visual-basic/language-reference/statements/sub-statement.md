@@ -1,5 +1,5 @@
 ---
-title: "Sub Statement (Visual Basic)"
+title: "Sub Statement"
 ms.date: 05/12/2018
 f1_keywords:
   - "vb.Sub"
@@ -36,7 +36,7 @@ Declares the name, parameters, and code that define a `Sub` procedure.
 
 ## Syntax
 
-```
+```vb
 [ <attributelist> ] [ Partial ] [ accessmodifier ] [ proceduremodifiers ] [ Shared ] [ Shadows ] [ Async ]
 Sub name [ (Of typeparamlist) ] [ (parameterlist) ] [ Implements implementslist | Handles eventlist ]
     [ statements ]

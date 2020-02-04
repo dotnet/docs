@@ -16,8 +16,6 @@ helpviewer_keywords:
 ms.assetid: f8d50cb3-ec4f-4529-8fe3-bd61fd28e13c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # EnumerateCLRs Function
 Provides a mechanism for enumerating the CLRs in a process.  
@@ -64,7 +62,7 @@ HRESULT EnumerateCLRs (
   
  On the Windows operating system, `debuggeePID` maps to an OS process identifier.  
   
- The memory for `ppHandleArrayOut` and `ppStringArrayOut` are allocated by this function. To free the memory allocated, you must call [CloseCLREnumeration Function](../../../../docs/framework/unmanaged-api/debugging/closeclrenumeration-function.md).  
+ The memory for `ppHandleArrayOut` and `ppStringArrayOut` are allocated by this function. To free the memory allocated, you must call [CloseCLREnumeration Function](closeclrenumeration-function.md).  
   
  This function can be called with both array parameters set to null in order to return the count of CLRs in the target process. From this count, a caller can infer the size of the buffer that will be created: `(sizeof(HANDLE) * count) + (sizeof(LPWSTR) * count) + (sizeof(WCHAR*) * count * MAX_PATH)`.  
   

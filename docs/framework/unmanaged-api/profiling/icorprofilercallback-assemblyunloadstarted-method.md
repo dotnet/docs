@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 6e47b7e5-0335-4dd3-8c42-d3c07d62b102
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::AssemblyUnloadStarted Method
 Notifies the profiler that an assembly is being unloaded.  
@@ -28,10 +26,12 @@ HRESULT AssemblyUnloadStarted(
     [in] AssemblyID assemblyId);  
 ```  
   
-## Parameters  
- `assemblyId`  
- [in] Identifies the assembly that is being unloaded.  
-  
+## Parameters
+
+- `assemblyId`
+
+  \[in] Identifies the assembly that is being unloaded.
+
 ## Remarks  
  The value of `assemblyId` is not valid for an information request after the `AssemblyUnloadStarted` method returns — this is the profiler's last chance to get information about this assembly.  
   
@@ -46,5 +46,5 @@ HRESULT AssemblyUnloadStarted(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
-- [AssemblyUnloadFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-assemblyunloadfinished-method.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [AssemblyUnloadFinished Method](icorprofilercallback-assemblyunloadfinished-method.md)

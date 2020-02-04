@@ -2,8 +2,6 @@
 title: "ICorDebugSymbolProvider::GetMergedAssemblyRecords Method"
 ms.date: "03/30/2017"
 ms.assetid: cc4c510d-550d-4941-af34-81987caf3425
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugSymbolProvider::GetMergedAssemblyRecords Method
 Gets the symbol records for all the merged assemblies.  
@@ -26,7 +24,7 @@ HRESULT GetMergedAssemblyRecords(
  [out] A pointer to the number of symbol records retrieved by the method.  
   
  `pRecords`  
- A pointer to an array of [ICorDebugMergedAssemblyRecord](../../../../docs/framework/unmanaged-api/debugging/icordebugmergedassemblyrecord-interface.md) objects.  
+ A pointer to an array of [ICorDebugMergedAssemblyRecord](icordebugmergedassemblyrecord-interface.md) objects.  
   
 ## Remarks  
   
@@ -44,5 +42,5 @@ HRESULT GetMergedAssemblyRecords(
   
 ## See also
 
-- [ICorDebugSymbolProvider Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugSymbolProvider Interface](icordebugsymbolprovider-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

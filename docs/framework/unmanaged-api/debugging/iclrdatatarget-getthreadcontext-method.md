@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: b9d8c3b5-3a2e-4225-95d4-dd052c4532c3
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDataTarget::GetThreadContext Method
 Gets the current execution context for the given thread in the target process. This method is called by the common language runtime data access services.  
@@ -62,4 +60,4 @@ HRESULT GetThreadContext (
   
 ## See also
 
-- [ICLRDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)
+- [ICLRDataTarget Interface](iclrdatatarget-interface.md)

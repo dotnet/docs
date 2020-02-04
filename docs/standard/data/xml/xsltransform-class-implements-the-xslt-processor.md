@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 88373fe2-4a6b-44f9-8a62-8a3e348e3a46
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # XslTransform Class Implements the XSLT Processor
 
@@ -174,9 +172,9 @@ Console.WriteLine("Passing " + tmpDoc.OuterXml + " to print_root.xsl");
 xslt.Transform(tmpDoc, null, Console.Out, null);
 ```
 
-The example uses the library.xml and print_root.xsl files as input and outputs the following to the console.
+The example uses the library.xml and print_root.xsl files as input and outputs the following to the console:
 
-```
+```console
 Passing <book genre="novel" ISBN="1-861001-57-5"><title>Pride And Prejudice</title></book> to print_root.xsl
 Root node is book.
 ```

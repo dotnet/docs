@@ -2,8 +2,6 @@
 title: "APIs That Rely on Reflection"
 ms.date: "03/30/2017"
 ms.assetid: f9532629-6594-4a41-909f-d083f30a42f3
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # APIs That Rely on Reflection
 In some cases, the use of reflection in code isn't obvious, and so the .NET Native tool chain doesn't preserve metadata that is needed at run time. This topic covers some common APIs or common programming patterns that aren't considered part of the reflection API but that rely on reflection to execute successfully. If you use them in your source code, you can add information about them to the runtime directives (.rd.xml) file so that calls to these APIs do not throw a [MissingMetadataException](missingmetadataexception-class-net-native.md) exception or some other exception at run time.  

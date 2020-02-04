@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 9c37185f-d1e0-4a6e-8b99-707f7df61d88
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo2::GetGenerationBounds Method
 Gets the memory regions, which are segments of the heap, that make up the various garbage collection generations.  
@@ -38,7 +36,7 @@ HRESULT GetGenerationBounds(
  [out] A pointer to an integer that specifies the total number of ranges, some or all of which will be returned in the `ranges` array.  
   
  `ranges`  
- [out] An array of [COR_PRF_GC_GENERATION_RANGE](../../../../docs/framework/unmanaged-api/profiling/cor-prf-gc-generation-range-structure.md) structures, each of which describes a range (that is, block) of memory within the generation that is undergoing garbage collection.  
+ [out] An array of [COR_PRF_GC_GENERATION_RANGE](cor-prf-gc-generation-range-structure.md) structures, each of which describes a range (that is, block) of memory within the generation that is undergoing garbage collection.  
   
 ## Remarks  
  The `GetGenerationBounds` method can be called from any profiler callback, provided that garbage collection is not in progress.
@@ -60,7 +58,7 @@ HRESULT GetGenerationBounds(
   
 ## See also
 
-- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
-- [ICorProfilerInfo2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-interface.md)
-- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
-- [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)
+- [ICorProfilerInfo Interface](icorprofilerinfo-interface.md)
+- [ICorProfilerInfo2 Interface](icorprofilerinfo2-interface.md)
+- [Profiling Interfaces](profiling-interfaces.md)
+- [Profiling](index.md)

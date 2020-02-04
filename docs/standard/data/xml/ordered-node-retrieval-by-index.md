@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 5412c90f-2703-4aa8-a9c4-1b8a35183c37
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Ordered Node Retrieval by Index
 The World Wide Web Consortium (W3C) XML Document Object Model (DOM) also describes a NodeList, which has the ability to handle an ordered list of nodes, as opposed to the unordered set handled by the **XmlNamedNodeMap**. The NodeList in the Microsoft .NET Framework is called **XmlNodeList**. Methods and properties that return an **XmlNodeList** are:  

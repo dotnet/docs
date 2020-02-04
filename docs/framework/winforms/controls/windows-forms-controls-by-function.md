@@ -1,5 +1,5 @@
 ---
-title: "Windows Forms Controls by Function"
+title: Controls by Function
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "controls [Windows Forms], by function"

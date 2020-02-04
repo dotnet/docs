@@ -1,5 +1,5 @@
 ---
-title: "AddHandler Statement (Visual Basic)"
+title: "AddHandler Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.AddHandlerMethod"
@@ -14,7 +14,7 @@ Associates an event with an event handler at run time.
   
 ## Syntax  
   
-```  
+```vb  
 AddHandler event, AddressOf eventhandler  
 ```  
   

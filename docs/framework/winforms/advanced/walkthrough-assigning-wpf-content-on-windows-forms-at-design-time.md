@@ -1,5 +1,6 @@
 ---
-title: "Walkthrough: Assigning WPF Content on Windows Forms at Design Time"
+title: Select WPF controls for Windows Forms
+titleSuffix: ""
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "WPF content [Windows Forms], assigning at design time"
@@ -8,13 +9,13 @@ helpviewer_keywords:
   - "Windows Forms, content assignments"
   - "WPF user control [Windows Forms], hosting in Windows Forms"
 ms.assetid: b3e9ef93-7e0f-4a2f-8f1e-3437609a1eb7
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # Walkthrough: Assign WPF content on Windows Forms at design time
 
-This article show you how to select the Windows Presentation Foundation (WPF) control types you want to display on your form. You can select any WPF control types which are included in your project.
+This article show you how to select the Windows Presentation Foundation (WPF) control types you want to display on your form. You can select any WPF control types that are included in your project.
 
 ## Prerequisites
 
@@ -84,4 +85,4 @@ You can assign different WPF content to an <xref:System.Windows.Forms.Integratio
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
 - [Migration and Interoperability](../../wpf/advanced/migration-and-interoperability.md)
 - [Using WPF Controls](using-wpf-controls.md)
-- [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)
+- [Design XAML in Visual Studio](/visualstudio/xaml-tools/designing-xaml-in-visual-studio)

@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "identifying DLL functions"
   - "DLL functions"
 ms.assetid: 3e3f6780-6d90-4413-bad7-ba641220364d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Identifying Functions in DLLs
 The identity of a DLL function consists of the following elements:  

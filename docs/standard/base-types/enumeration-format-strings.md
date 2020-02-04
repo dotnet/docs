@@ -1,5 +1,5 @@
 ---
-title: "Enumeration format strings - .NET"
+title: "Enumeration format strings"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "enumeration format strings"
   - "formatting [.NET Framework], enumeration"
 ms.assetid: dd1ff672-1052-42cf-8666-4924fb6cd1a1
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Enumeration format strings
 

@@ -2,8 +2,6 @@
 title: "ICorDebugSymbolProvider::GetTypeProps Method"
 ms.date: "03/30/2017"
 ms.assetid: 35ac4140-91ea-4c77-b1c4-1daf41986ca5
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugSymbolProvider::GetTypeProps Method
 Returns information about a type's properties, such as the number of signature of its generic parameters, given a relative virtual address (RVA) in a vtable.  
@@ -49,6 +47,6 @@ HRESULT GetTypeProps(
   
 ## See also
 
-- [GetMethodProps Method](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-getmethodprops-method.md)
-- [ICorDebugSymbolProvider Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [GetMethodProps Method](icordebugsymbolprovider-getmethodprops-method.md)
+- [ICorDebugSymbolProvider Interface](icordebugsymbolprovider-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

@@ -1,9 +1,9 @@
 ---
-title: "How to: Chain Axis Method Calls (LINQ to XML) (C#)"
+title: "How to chain axis method calls (LINQ to XML) (C#)"
 ms.date: 07/20/2015
 ms.assetid: 067e6da2-ee32-486d-803c-e611b328e39a
 ---
-# How to: Chain Axis Method Calls (LINQ to XML) (C#)
+# How to chain axis method calls (LINQ to XML) (C#)
 A common pattern that you will use in your code is to call an axis method, then call one of the extension method axes.  
   
  There are two axes with the name of `Elements` that return a collection of elements: the <xref:System.Xml.Linq.XContainer.Elements%2A?displayProperty=nameWithType> method and the <xref:System.Xml.Linq.Extensions.Elements%2A?displayProperty=nameWithType> method. You can combine these two axes to find all elements of a specified name at a given depth in the tree.  
@@ -112,4 +112,4 @@ foreach (XElement e in names)
   
 ## See also
 
-- [LINQ to XML Axes (C#)](./linq-to-xml-axes.md)
+- [LINQ to XML Axes (C#)](linq-to-xml-axes-overview.md)

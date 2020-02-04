@@ -15,7 +15,7 @@ JIT-attach debugging is the phrase used to describe attaching a debugger to a pr
   
 - Unhandled exceptions (in both native and managed code).  
   
-- <xref:System.Environment.FailFast%2A?displayProperty=nameWithType> method or [RaiseFailFastException](https://go.microsoft.com/fwlink/?LinkId=182107) function (Windows 7 family).  
+- <xref:System.Environment.FailFast%2A?displayProperty=nameWithType> method or [RaiseFailFastException](/windows/win32/api/errhandlingapi/nf-errhandlingapi-raisefailfastexception) function (Windows 7 family).  
   
 - Runtime fatal errors.  
   
@@ -25,9 +25,9 @@ JIT-attach debugging is the phrase used to describe attaching a debugger to a pr
   
 - <xref:System.Diagnostics.Debugger.Break%2A?displayProperty=nameWithType> method.  
   
-- [DebugBreak](https://go.microsoft.com/fwlink/?LinkId=182106) function (Win32).  
+- [DebugBreak](/windows/win32/api/debugapi/nf-debugapi-debugbreak) function (Win32).  
   
- Before the .NET Framework 4, the .NET Framework provided separate registry keys to control the behavior of native and managed debuggers. Starting with the .NET Framework 4, control is consolidated under a single registry key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\Current Version\AeDebug. The values you can set for that key determine whether a debugger is invoked, and, if so, whether it is invoked with a dialog box that requires user interaction. For information about setting this registry key, see [Configuring Automatic Debugging](https://go.microsoft.com/fwlink/?LinkId=181767).  
+ Before the .NET Framework 4, the .NET Framework provided separate registry keys to control the behavior of native and managed debuggers. Starting with the .NET Framework 4, control is consolidated under a single registry key: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\Current Version\AeDebug. The values you can set for that key determine whether a debugger is invoked, and, if so, whether it is invoked with a dialog box that requires user interaction. For information about setting this registry key, see [Configuring Automatic Debugging](/windows/win32/debug/configuring-automatic-debugging).  
   
 ## See also
 

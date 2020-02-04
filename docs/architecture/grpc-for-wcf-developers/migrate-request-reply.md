@@ -1,13 +1,10 @@
 ---
 title: Migrate a WCF request-reply service to gRPC - gRPC for WCF Developers
 description: Learn how to migrate a simple request-reply service from WCF to gRPC.
-author: markrendle
 ms.date: 09/02/2019
 ---
 
 # Migrate a WCF request-reply service to a gRPC unary RPC
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 This section covers how to migrate a basic request-reply service in WCF to a unary RPC service in ASP.NET Core gRPC. These services are the simplest service types in both Windows Communication Foundation (WCF) and gRPC, so it's an excellent place to start. After migrating the service, you'll learn how to generate a client library from the same `.proto` file to consume the service from a .NET client application.
 
@@ -112,9 +109,9 @@ The `PortfolioItem` class will be converted to a Protobuf message first, as the 
 ```protobuf
 message PortfolioItem {
     int32 id = 1;
-    int32 shareId = 2;
+    int32 share_id = 2;
     int32 holding = 3;
-    int32 costCents = 4;
+    int32 cost_cents = 4;
 }
 ```
 
@@ -123,7 +120,7 @@ The `Portfolio` class is a little more complicated. In the WCF code, the develop
 ```protobuf
 message Portfolio {
     int32 id = 1;
-    string traderId = 2;
+    string trader_id = 2;
     repeated PortfolioItem items = 3;
 }
 ```
@@ -140,8 +137,8 @@ The following example shows the declaration of the gRPC service method using the
 
 ```protobuf
 message GetRequest {
-    string traderId = 1;
-    int32 portfolioId = 2;
+    string trader_id = 1;
+    int32 portfolio_id = 2;
 }
 
 message GetResponse {
@@ -162,7 +159,7 @@ The WCF method also returned a `List<Portfolio>`, but for the same reason it doe
 
 ```protobuf
 message GetAllRequest {
-    string traderId = 1;
+    string trader_id = 1;
 }
 
 message PortfolioList {
@@ -213,7 +210,7 @@ IPortfolioRepository.cs
 PortfolioRepository.cs
 ```
 
-Modern .NET project files automatically include any `.cs` files in or under their own directory, so there's no need to explicitly add them to the project. The only step remaining is to remove the `DataContract` and `DataMember` attributes from the `Portfolio` and `PortfolioItem` classes so they're plain old C# classes.
+SDK-style .NET projects automatically include any `.cs` files in or under their own directory, so there's no need to explicitly add them to the project. The only step remaining is to remove the `DataContract` and `DataMember` attributes from the `Portfolio` and `PortfolioItem` classes so they're plain old C# classes.
 
 ```csharp
 public class Portfolio
@@ -413,6 +410,9 @@ When using the Visual Studio **Add Connected Service** feature, the `portfolios.
   <Link>Protos\portfolios.proto</Link>
 </Protobuf>
 ```
+
+> [!TIP]
+> If you are not using Visual Studio or prefer to work from the command line, you can use the **dotnet-grpc** global tool to manage Protobuf references within a .NET gRPC project. [Refer to the **dotnet-grpc** documentation for more information](https://docs.microsoft.com/aspnet/core/grpc/dotnet-grpc).
 
 ### Use the Portfolios service from a client application
 

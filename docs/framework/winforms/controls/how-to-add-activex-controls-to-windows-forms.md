@@ -1,5 +1,5 @@
 ---
-title: "How to: Add ActiveX Controls to Windows Forms"
+title: Add ActiveX Controls to forms
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Windows Forms controls, ActiveX controls"

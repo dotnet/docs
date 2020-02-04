@@ -2,8 +2,6 @@
 title: Install the .NET Framework on Windows 8
 ms.custom: "updateeachrelease"
 description: Learn how to install .NET Framework on Windows 8
-author: rlander
-ms.author: mairaw
 ms.date: 04/18/2019
 ---
 
@@ -26,7 +24,7 @@ The [.NET Framework 4.8](https://github.com/Microsoft/dotnet/tree/master/release
 
 ## .NET Framework 4.6
 
-The [.NET Framework 4.6](https://www.microsoft.com/download/details.aspx?id=48130) is the latest supported .NET Framework version on Windows 8.
+The [.NET Framework 4.6](https://dotnet.microsoft.com/download/dotnet-framework/net46) is the latest supported .NET Framework version on Windows 8.
 
 The .NET Framework 4.6 supports apps built for .NET Framework 4.0 through 4.6.
 

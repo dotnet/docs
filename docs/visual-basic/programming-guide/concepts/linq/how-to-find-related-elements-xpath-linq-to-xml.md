@@ -1,5 +1,5 @@
 ---
-title: "How to: Find Related Elements (XPath-LINQ to XML) (Visual Basic)"
+title: "How to: Find Related Elements (XPath-LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 6b0ef058-d704-48a5-98cd-33f00d088af9
 ---
@@ -49,7 +49,7 @@ Console.WriteLine(customer1)
   
  This example produces the following output:  
   
-```  
+```console
 Results are identical  
 <Customer CustomerID="HUNGC">  
   <CompanyName>Hungry Coyote Import Store</CompanyName>  

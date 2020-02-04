@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 5e7885a6-d17a-4bfc-a4c6-23cbb7337ad5
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorPublishAppDomain Interface
 Represents and provides information about an application domain.  
@@ -24,8 +22,8 @@ Represents and provides information about an application domain.
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetID Method](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomain-getid-method.md)|Gets the unique identifier for this `ICorPublishAppDomain`.|  
-|[GetName Method](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomain-getname-method.md)|Gets the name of the application domain referenced by this `ICorPublishAppDomain`.|  
+|[GetID Method](icorpublishappdomain-getid-method.md)|Gets the unique identifier for this `ICorPublishAppDomain`.|  
+|[GetName Method](icorpublishappdomain-getname-method.md)|Gets the name of the application domain referenced by this `ICorPublishAppDomain`.|  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -38,5 +36,5 @@ Represents and provides information about an application domain.
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [CorpubPublish Coclass](../../../../docs/framework/unmanaged-api/debugging/corpubpublish-coclass.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [CorpubPublish Coclass](corpubpublish-coclass.md)

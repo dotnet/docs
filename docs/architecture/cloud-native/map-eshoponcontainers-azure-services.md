@@ -20,7 +20,7 @@ The server-side components of this architecture all map easily to Azure services
 
 The application's container-hosted services, from ASP.NET Core MVC apps to individual Catalog and Ordering microservices, can be hosted and managed in Azure Kubernetes Service (AKS). The application can run locally on Docker and Kubernetes, and the same containers can then be deployed to staging and production environments hosted in AKS. This process can be automated as we'll see in the next section.
 
-AKS provides management services for individual clusters of containers. The application will deploy separate AKS clusters for each microservice shown in the architecture diagram above. This approach allows each individual service to each independently according to its resource demands. Each microservice can also be deployed independently, and ideally such deployments should incur zero system downtime.
+AKS provides management services for individual clusters of containers. The application will deploy separate AKS clusters for each microservice shown in the architecture diagram above. This approach allows each individual service to scale independently according to its resource demands. Each microservice can also be deployed independently, and ideally such deployments should incur zero system downtime.
 
 ## API Gateway
 
@@ -48,7 +48,7 @@ The eShopOnContainers application stores the user's current shopping basket betw
 
 The Locations microservice uses a MongoDB NoSQL database for its persistence. During development, the database can be deployed in its own container, while in production the service can leverage [Azure Cosmos DB's API for MongoDB](https://docs.microsoft.com/azure/cosmos-db/mongodb-introduction). One of the benefits of Azure Cosmos DB is its ability to leverage multiple different communication protocols, including a SQL API and common NoSQL APIs including MongoDB, Cassandra, Gremlin, and Azure Table Storage. Azure Cosmos DB offers a fully managed and globally distributed database as a service that can scale to meet the needs of the services that use it.
 
-Distributed data in cloud-native applications is covered in more detail in [chapter 5](distributed-data.md).
+Distributed data in cloud-native applications is covered in more detail in [chapter 5](database-per-microservice.md).
 
 ## Event Bus
 

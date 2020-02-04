@@ -2,8 +2,6 @@
 title: "ICorDebugInstanceFieldSymbol Interface"
 ms.date: "03/30/2017"
 ms.assetid: a4a8f259-b83a-4425-ae8b-72b067dbc0d9
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugInstanceFieldSymbol Interface
 Represents the debug symbol information for an instance field.  
@@ -12,9 +10,9 @@ Represents the debug symbol information for an instance field.
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetName Method](../../../../docs/framework/unmanaged-api/debugging/icordebuginstancefieldsymbol-getname-method.md)|Gets the name of the instance field.|  
-|[GetOffset Method](../../../../docs/framework/unmanaged-api/debugging/icordebuginstancefieldsymbol-getoffset-method.md)|Gets the offset in bytes of this instance field in its parent class.|  
-|[GetSize Method](../../../../docs/framework/unmanaged-api/debugging/icordebuginstancefieldsymbol-getsize-method.md)|Gets the size in bytes of the instance field.|  
+|[GetName Method](icordebuginstancefieldsymbol-getname-method.md)|Gets the name of the instance field.|  
+|[GetOffset Method](icordebuginstancefieldsymbol-getoffset-method.md)|Gets the offset in bytes of this instance field in its parent class.|  
+|[GetSize Method](icordebuginstancefieldsymbol-getsize-method.md)|Gets the size in bytes of the instance field.|  
   
 ## Remarks  
  The `ICorDebugInstanceFieldSymbol` interface is used to retrieve the debug symbol information for an instance field.  
@@ -33,6 +31,6 @@ Represents the debug symbol information for an instance field.
   
 ## See also
 
-- [ICorDebugStaticFieldSymbol Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugstaticfieldsymbol-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [ICorDebugStaticFieldSymbol Interface](icordebugstaticfieldsymbol-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

@@ -14,14 +14,12 @@ helpviewer_keywords:
 ms.assetid: bf4ffa50-4506-4dd4-aa13-a0457b47ca74
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # FunctionEnter Function
 Notifies the profiler that control is being passed to a function.  
   
 > [!NOTE]
-> The `FunctionEnter` function is deprecated in the .NET Framework version 2.0, and its use will incur a performance penalty. Use the [FunctionEnter2](../../../../docs/framework/unmanaged-api/profiling/functionenter2-function.md) function instead.  
+> The `FunctionEnter` function is deprecated in the .NET Framework version 2.0, and its use will incur a performance penalty. Use the [FunctionEnter2](functionenter2-function.md) function instead.  
   
 ## Syntax  
   
@@ -31,10 +29,12 @@ void __stdcall FunctionEnter (
 );  
 ```  
   
-## Parameters  
- `funcID`  
- [in] The identifier of the function to which control is passed.  
-  
+## Parameters
+
+- `funcID`
+
+  \[in] The identifier of the function to which control is passed.
+
 ## Remarks  
  The `FunctionEnter` function is a callback; you must implement it. The implementation must use the `__declspec`(`naked`) storage-class attribute.  
   
@@ -59,8 +59,8 @@ void __stdcall FunctionEnter (
   
 ## See also
 
-- [FunctionEnter2 Function](../../../../docs/framework/unmanaged-api/profiling/functionenter2-function.md)
-- [FunctionLeave2 Function](../../../../docs/framework/unmanaged-api/profiling/functionleave2-function.md)
-- [FunctionTailcall2 Function](../../../../docs/framework/unmanaged-api/profiling/functiontailcall2-function.md)
-- [SetEnterLeaveFunctionHooks2 Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-setenterleavefunctionhooks2-method.md)
-- [Profiling Global Static Functions](../../../../docs/framework/unmanaged-api/profiling/profiling-global-static-functions.md)
+- [FunctionEnter2 Function](functionenter2-function.md)
+- [FunctionLeave2 Function](functionleave2-function.md)
+- [FunctionTailcall2 Function](functiontailcall2-function.md)
+- [SetEnterLeaveFunctionHooks2 Method](icorprofilerinfo2-setenterleavefunctionhooks2-method.md)
+- [Profiling Global Static Functions](profiling-global-static-functions.md)

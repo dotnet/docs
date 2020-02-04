@@ -2,8 +2,6 @@
 title: "ICorDebugMergedAssemblyRecord::GetVersion Method"
 ms.date: "03/30/2017"
 ms.assetid: c6858b06-ae26-4312-b325-ea6025016675
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugMergedAssemblyRecord::GetVersion Method
 Gets the assembly's version information.  
@@ -49,5 +47,5 @@ HRESULT GetVersion(
   
 ## See also
 
-- [ICorDebugMergedAssemblyRecord Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmergedassemblyrecord-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugMergedAssemblyRecord Interface](icordebugmergedassemblyrecord-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

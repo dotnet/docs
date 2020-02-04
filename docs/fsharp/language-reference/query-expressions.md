@@ -347,7 +347,7 @@ let data = [ 1; 5; 7; 11; 18; 21]
     for student in db.Student do
     join selection in db.CourseSelection
         on (student.StudentID = selection.StudentID)
-    distinct       
+    distinct
 }
 </code></pre>
 
@@ -493,6 +493,7 @@ let data = [ 1; 5; 7; 11; 18; 21]
 </table>
 
 ## Comparison of Transact-SQL and F# Query Expressions
+
 The following table shows some common Transact-SQL queries and their equivalents in F#. The code in this table also assumes the same database as the previous table and the same initial code to set up the type provider.
 
 ### Table 2. Transact-SQL and F# Query Expressions
@@ -527,7 +528,7 @@ Count records in a table.<br/>
 
 <pre><code class="lang-fsharp">// Count of students.
 query {
-    for student in db.Student do       
+    for student in db.Student do
     count
 }
 </code></pre>
@@ -632,7 +633,7 @@ GROUP BY Student.Age
 <pre><code class="lang-fsharp">// Group students by age and sum ages.
 query {
     for student in db.Student do
-    groupBy student.Age into g       
+    groupBy student.Age into g
     let total =
         query {
             for student in g do
@@ -660,7 +661,7 @@ ORDER BY COUNT( * ) DESC
 query {
     for student in db.Student do
     groupBy student.Age into g
-    where (g.Count() > 1)       
+    where (g.Count() > 1)
     sortByDescending (g.Count())
     select (g.Key, g.Count())
 }
@@ -720,7 +721,7 @@ WHERE Student.Name LIKE '[abc]%'
 <pre><code class="lang-fsharp">query {
     for student in db.Student do
     where (SqlMethods.Like( student.Name, "[abc]%") )
-    select student 
+    select student
 }
 </code></pre>
 
@@ -755,7 +756,7 @@ WHERE Student.Name LIKE '[^abc]%'
 <pre><code class="lang-fsharp">query {
     for n in db.Student do
     where (SqlMethods.Like( n.Name, "[^abc]%") )
-    select n.StudentID   
+    select n.StudentID
 }
 </code></pre>
 
@@ -1856,7 +1857,7 @@ query {
 
 And here is the full output when this code is run in F# Interactive.
 
-```
+```console
 --> Referenced 'C:\Program Files (x86)\Reference Assemblies\Microsoft\FSharp\3.0\Runtime\v4.0\Type Providers\FSharp.Data.TypeProviders.dll'
 
 --> Referenced 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\System.Data.dll'

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 4723bd1c-eddb-4ed2-897a-010024a47e01
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDataTarget::Request Method
 Called by the common language runtime (CLR) data access services to request an operation, as defined by the implementation.  
@@ -67,4 +65,4 @@ HRESULT Request (
   
 ## See also
 
-- [ICLRDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)
+- [ICLRDataTarget Interface](iclrdatatarget-interface.md)

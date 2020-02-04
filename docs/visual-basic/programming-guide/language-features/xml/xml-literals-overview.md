@@ -1,5 +1,5 @@
 ---
-title: "XML Literals Overview (Visual Basic)"
+title: "XML Literals Overview"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "XML literals [Visual Basic], about XML literals"
@@ -11,7 +11,7 @@ ms.assetid: 37987c15-4ab8-471b-bd45-399816bfb57f
 # XML Literals Overview (Visual Basic)
 An *XML literal* allows you to incorporate XML directly into your Visual Basic code. The XML literal syntax represents [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] objects, and it is the similar to the XML 1.0 syntax. This makes it easier to create XML elements and documents programmatically because your code has the same structure as the final XML.  
   
- Visual Basic compiles XML literals into [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] objects. [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] provides a simple object model for creating and manipulating XML, and this model integrates well with [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)]. For more information, see <xref:System.Xml.Linq.XElement>.  
+ Visual Basic compiles XML literals into [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] objects. [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] provides a simple object model for creating and manipulating XML, and this model integrates well with Language-Integrated Query (LINQ). For more information, see <xref:System.Xml.Linq.XElement>.  
   
  You can embed a Visual Basic expression in an XML literal. At run time, your application creates a [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] object for each literal, incorporating the values of the embedded expressions. This lets you specify dynamic content inside an XML literal. For more information, see [Embedded Expressions in XML](../../../../visual-basic/programming-guide/language-features/xml/embedded-expressions-in-xml.md).  
   

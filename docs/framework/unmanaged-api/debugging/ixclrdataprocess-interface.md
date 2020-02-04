@@ -26,13 +26,13 @@ Provides methods for querying information about a process.
 
 | Method                                                                                                                                               | Description                                                                                     |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| [GetAppDomainByUniqueId](../../../../docs/framework/unmanaged-api/debugging/ixclrdataprocess-getappdomainbyuniqueid-method.md)                       | Gets an `AppDomain` in a process by its unique id.                                              |
-| [StartEnumModules](../../../../docs/framework/unmanaged-api/debugging/ixclrdataprocess-startenummodules-method.md)                                   | Provides a handle to enumerate the modules of a process.                                        |
-| [EnumModule](../../../../docs/framework/unmanaged-api/debugging/ixclrdataprocess-enummodule-method.md)                                               | Enumerates the modules of this process.                                                         |
-| [EndEnumModules](../../../../docs/framework/unmanaged-api/debugging/ixclrdataprocess-endenummodules-method.md)                                       | Releases the resources used by internal iterators used during module enumeration.               |
-| [StartEnumMethodInstancesByAddress](../../../../docs/framework/unmanaged-api/debugging/ixclrdataprocess-startenummethodinstancesbyaddress-method.md) | Provides a handle to enumerate the method instances of `AppDomain` starting at a given address. |
-| [EnumMethodInstanceByAddress](../../../../docs/framework/unmanaged-api/debugging/ixclrdataprocess-enummethodinstancebyaddress-method.md)             | Enumerates the method instances of this process starting at an address offset.                  |
-| [EndEnumMethodInstancesByAddress](../../../../docs/framework/unmanaged-api/debugging/ixclrdataprocess-endenummethodinstancesbyaddress-method.md)     | Releases the resources used by internal iterators used during instance enumeration.             |
+| [GetAppDomainByUniqueId](ixclrdataprocess-getappdomainbyuniqueid-method.md)                       | Gets an `AppDomain` in a process by its unique id.                                              |
+| [StartEnumModules](ixclrdataprocess-startenummodules-method.md)                                   | Provides a handle to enumerate the modules of a process.                                        |
+| [EnumModule](ixclrdataprocess-enummodule-method.md)                                               | Enumerates the modules of this process.                                                         |
+| [EndEnumModules](ixclrdataprocess-endenummodules-method.md)                                       | Releases the resources used by internal iterators used during module enumeration.               |
+| [StartEnumMethodInstancesByAddress](ixclrdataprocess-startenummethodinstancesbyaddress-method.md) | Provides a handle to enumerate the method instances of `AppDomain` starting at a given address. |
+| [EnumMethodInstanceByAddress](ixclrdataprocess-enummethodinstancebyaddress-method.md)             | Enumerates the method instances of this process starting at an address offset.                  |
+| [EndEnumMethodInstancesByAddress](ixclrdataprocess-endenummethodinstancesbyaddress-method.md)     | Releases the resources used by internal iterators used during instance enumeration.             |
 
 ## Remarks
 
@@ -47,5 +47,5 @@ This interface lives inside the runtime and is not exposed through any headers o
 
 ## See also
 
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging](index.md)
+- [Debugging Interfaces](debugging-interfaces.md)

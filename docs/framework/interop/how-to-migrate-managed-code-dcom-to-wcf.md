@@ -159,6 +159,7 @@ public class CustomerService: ICustomerManager
                 address="http://localhost:8083/CustomerManager"   
                 binding="basicHttpBinding"   
                 contract="Shared.ICustomerManager"/>  
+    </client>  
   </system.serviceModel>  
 </configuration>  
 ```  
@@ -296,7 +297,7 @@ public interface ISessionBoundObject
     }  
 ```  
   
- Following is the implementation of this service. This implementation maintains a singleton channel factory to create sessionful objects.  When `GetInstanceAddress` is called, it creates a channel and creates an <xref:System.ServiceModel.EndpointAddress10> object that points to the remote address associated with this channel.   <xref:System.ServiceModel.EndpointAddress10> is a data type that can be returned to the client by-value.  
+ The following is the implementation of this service. This implementation maintains a singleton channel factory to create sessionful objects.  When `GetInstanceAddress` is called, it creates a channel and creates an <xref:System.ServiceModel.EndpointAddress10> object that points to the remote address associated with this channel.   <xref:System.ServiceModel.EndpointAddress10> is a data type that can be returned to the client by-value.
   
 ```csharp  
 public class SessionBoundFactory : ISessionBoundFactory  
@@ -323,7 +324,7 @@ public class SessionBoundFactory : ISessionBoundFactory
   
 2. In the `<services>` section, declare service endpoints for the factory and sessionful object.  This enables the client to communicate with the service endpoints, acquire the <xref:System.ServiceModel.EndpointAddress10> and create the sessionful channel.  
   
- Following is an example configuration file with these settings:  
+ The following is an example configuration file with these settings:  
   
 ```xml  
 <configuration>  

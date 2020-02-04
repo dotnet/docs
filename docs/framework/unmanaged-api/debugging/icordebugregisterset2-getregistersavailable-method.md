@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: f3ed344b-0d3a-44e8-8000-2a97e0805a2c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugRegisterSet2::GetRegistersAvailable Method
 Gets an array of bytes that provides a bitmap of the available registers.  
@@ -59,5 +57,5 @@ HRESULT GetRegistersAvailable (
   
 ## See also
 
-- [ICorDebugRegisterSet2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset2-interface.md)
-- [ICorDebugRegisterSet Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-interface.md)
+- [ICorDebugRegisterSet2 Interface](icordebugregisterset2-interface.md)
+- [ICorDebugRegisterSet Interface](icordebugregisterset-interface.md)

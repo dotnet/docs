@@ -1,5 +1,5 @@
 ---
-title: "Short Data Type (Visual Basic)"
+title: "Short Data Type"
 ms.date: 01/31/2018
 f1_keywords: 
   - "vb.Short"
@@ -18,9 +18,11 @@ helpviewer_keywords:
 ms.assetid: 65fcbcf3-a841-400e-885e-301497729a8b
 ---
 # Short data type (Visual Basic)
+
 Holds signed 16-bit (2-byte) integers that range in value from -32,768 through 32,767.  
   
 ## Remarks  
+
  Use the `Short` data type to contain integer values that do not require the full data width of `Integer`. In some cases, the common language runtime can pack your `Short` variables closely together and save memory consumption.  
   
  The default value of `Short` is 0.  

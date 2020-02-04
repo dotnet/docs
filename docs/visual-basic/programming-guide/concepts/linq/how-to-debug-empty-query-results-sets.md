@@ -1,5 +1,5 @@
 ---
-title: "How to: Debug Empty Query Results Sets (Visual Basic)"
+title: "How to: Debug Empty Query Results Sets"
 ms.date: 07/20/2015
 ms.assetid: b242c90a-d2b8-4309-8a1e-e4e70736c727
 ---
@@ -39,7 +39,7 @@ Console.WriteLine("End of result set")
 
 This example produces the following result:
 
-```
+```console
 Result set follows:
 End of result set
 ```
@@ -78,7 +78,7 @@ End Module
 
 This example produces the following result:
 
-```
+```console
 Result set follows:
 1
 2

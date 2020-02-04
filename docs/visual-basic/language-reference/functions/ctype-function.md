@@ -1,5 +1,5 @@
 ---
-title: "CType Function (Visual Basic)"
+title: "CType Function"
 ms.date: 07/20/2015
 f1_keywords:
   - "vb.CType"
@@ -17,7 +17,7 @@ Returns the result of explicitly converting an expression to a specified data ty
 
 ## Syntax
 
-```
+```vb
 CType(expression, typename)
 ```
 

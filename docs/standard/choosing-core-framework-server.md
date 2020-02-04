@@ -32,7 +32,7 @@ The following sections give a more detailed explanation of the previously stated
 
 If your application (web/service) needs to run on multiple platforms (Windows, Linux, and macOS), use .NET Core.
 
-.NET Core supports the previously mentioned operating systems as your development workstation. Visual Studio provides an Integrated Development Environment (IDE) for Windows and macOS. You can also use Visual Studio Code, which runs on macOS, Linux, and Windows. Visual Studio Code supports .NET Core, including IntelliSense and debugging. Most third-party editors, such as Sublime, Emacs, and VI, work with .NET Core. These third-party editors get editor IntelliSense using [Omnisharp](https://www.omnisharp.net/). You can also avoid any code editor and directly use the [.NET Core CLI tools](../core/tools/index.md), available for all supported platforms.
+.NET Core supports the previously mentioned operating systems as your development workstation. Visual Studio provides an Integrated Development Environment (IDE) for Windows and macOS. You can also use Visual Studio Code, which runs on macOS, Linux, and Windows. Visual Studio Code supports .NET Core, including IntelliSense and debugging. Most third-party editors, such as Sublime, Emacs, and VI, work with .NET Core. These third-party editors get editor IntelliSense using [Omnisharp](https://www.omnisharp.net/). You can also avoid any code editor and directly use the [.NET Core CLI](../core/tools/index.md), available for all supported platforms.
 
 ### Microservices architecture
 
@@ -89,7 +89,7 @@ Some .NET Framework technologies aren't available in .NET Core. Some of them mig
 
 - Language support: Visual Basic and F# are currently supported in .NET Core, but not for all project types. For a list of supported project templates, see [Template options for dotnet new](../core/tools/dotnet-new.md#arguments).
 
-In addition to the official roadmap, there are other frameworks to be ported to .NET Core. For a full list, see the CoreFX issues marked as [port-to-core](https://github.com/dotnet/corefx/issues?q=is%3Aopen+is%3Aissue+label%3Aport-to-core). This list doesn’t represent a commitment from Microsoft to bring those components to .NET Core. They're simply capturing the desire from the community to do so. If you care about any of the components marked as `port-to-core`, participate in the discussions on GitHub. And if you think something is missing, file a new issue in the [CoreFX repository](https://github.com/dotnet/corefx/issues/new).
+In addition to the official roadmap, there are other frameworks to be ported to .NET Core. For a full list, see the CoreFX issues marked as [port-to-core](https://github.com/dotnet/corefx/issues?q=is%3Aopen+is%3Aissue+label%3Aport-to-core). This list doesn’t represent a commitment from Microsoft to bring those components to .NET Core. They're simply capturing the desire from the community to do so. If you care about any of the components marked as `port-to-core`, participate in the discussions on GitHub. And if you think something is missing, file a new issue in the [.NET repository](https://github.com/dotnet/runtime/issues/new).
 
 ### A need to use a platform that doesn’t support .NET Core
 

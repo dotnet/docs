@@ -1,12 +1,13 @@
 ---
-title: Attributes - C#
+title: "Tutorial: Use attributes - C#"
 description: Learn how attributes work in C#.
 author: mgroves
+ms.technology: csharp-fundamentals
 ms.date: 03/06/2017
 ms.assetid: b152cf36-76e4-43a5-b805-1a1952e53b79
 ---
 
-# Using Attributes in C\#
+# Use Attributes in C\#
 
 Attributes provide a way of associating information with code in a declarative way. They can also provide a reusable element that can be applied to a variety of targets.
 
@@ -17,10 +18,9 @@ In this tutorial, you'll be introduced to how to add attributes to your code, ho
 attributes that are built into .NET Core.
 
 ## Prerequisites
-You’ll need to setup your machine to run .NET core. You can find the
-installation instructions on the [.NET Core Downloads](https://dotnet.microsoft.com/download)
-page.
-You can run this application on Windows, Ubuntu Linux, macOS or in a Docker container. 
+You’ll need to set up your machine to run .NET core. You can find the
+installation instructions on the [.NET Core Downloads](https://dotnet.microsoft.com/download) page.
+You can run this application on Windows, Ubuntu Linux, macOS or in a Docker container.
 You’ll need to install your favorite code editor. The descriptions below
 use [Visual Studio Code](https://code.visualstudio.com/) which is an open
 source, cross platform editor. However, you can use whatever tools you are
@@ -32,7 +32,7 @@ Now that you've installed all the tools, create a new .NET Core application. To 
 
 `dotnet new console`
 
-This command will create barebones .NET core project files. You will need to execute `dotnet restore` to restore the dependencies needed to compile this project.
+This command will create bare-bones .NET core project files. You will need to execute `dotnet restore` to restore the dependencies needed to compile this project.
 
 [!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
 
@@ -44,7 +44,7 @@ In C#, attributes are classes that inherit from the `Attribute` base class. Any 
 For instance, there is an attribute called `ObsoleteAttribute`. This is used to signal that code is obsolete and shouldn't be used anymore. You can place this attribute on a class,
 for instance, by using square brackets.
 
-[!code-csharp[Obsolete attribute example](../../../samples/snippets/csharp/tutorials/attributes/Program.cs#ObsoleteExample1)]  
+[!code-csharp[Obsolete attribute example](../../../samples/snippets/csharp/tutorials/attributes/Program.cs#ObsoleteExample1)]
 
 Note that while the class is called `ObsoleteAttribute`, it's only necessary to use `[Obsolete]` in the code. This is a convention that C# follows.
 You can use the full name `[ObsoleteAttribute]` if you choose.
@@ -121,7 +121,7 @@ Attributes act as metadata. Without some outward force, they won't actually do a
 To find and act on attributes, [Reflection](../programming-guide/concepts/reflection.md) is generally needed. I won't cover Reflection in-depth in this tutorial, but the basic
 idea is that Reflection allows you to write code in C# that examines other code.
 
-For instance, you can use Reflection to get information about a class(add `using System.Reflection;` at the head of your code): 
+For instance, you can use Reflection to get information about a class(add `using System.Reflection;` at the head of your code):
 
 [!code-csharp[Getting type information with Reflection](../../../samples/snippets/csharp/tutorials/attributes/Program.cs#ReflectionExample1)]
 

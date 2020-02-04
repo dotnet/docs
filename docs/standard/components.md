@@ -31,7 +31,7 @@ There are four primary .NET implementations that Microsoft actively develops and
 
 ### .NET Core
 
-.NET Core is a cross-platform implementation of .NET and designed to handle server and cloud workloads at scale. It runs on Windows, macOS and Linux. It implements the .NET Standard, so code that targets the .NET Standard can run on .NET Core. [ASP.NET Core](https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core), [Windows Forms](../framework/winforms/windows-forms-overview.md), and [Windows Presentation Foundation (WPF)](../framework/wpf/index.md) all run on .NET Core.
+.NET Core is a cross-platform implementation of .NET and designed to handle server and cloud workloads at scale. It runs on Windows, macOS, and Linux. It implements the .NET Standard, so code that targets the .NET Standard can run on .NET Core. [ASP.NET Core](https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core), [Windows Forms](../framework/winforms/windows-forms-overview.md), and [Windows Presentation Foundation (WPF)](../framework/wpf/index.md) all run on .NET Core.
 
 To learn more about .NET Core, see the [.NET Core Guide](../core/index.md) and [Choosing between .NET Core and .NET Framework for server apps](choosing-core-framework-server.md).
 
@@ -43,7 +43,7 @@ To learn more about the .NET Framework, see the [.NET Framework Guide](../framew
 
 ### Mono
 
-Mono is a .NET implementation that is mainly used when a small runtime is required. It is the runtime that powers Xamarin applications on Android, Mac, iOS, tvOS and watchOS and is focused primarily on a small footprint. Mono also powers games built using the Unity engine.
+Mono is a .NET implementation that is mainly used when a small runtime is required. It is the runtime that powers Xamarin applications on Android, macOS, iOS, tvOS, and watchOS and is focused primarily on a small footprint. Mono also powers games built using the Unity engine.
 
 It supports all of the currently published .NET Standard versions.
 
@@ -55,7 +55,7 @@ To learn more about Mono, see the [Mono documentation](https://www.mono-project.
 
 ### Universal Windows Platform (UWP)
 
-UWP is an implementation of .NET that is used for building modern, touch-enabled Windows applications and software for the Internet of Things (IoT). It's designed to unify the different types of devices that you may want to target, including PCs, tablets, phablets, phones, and even the Xbox. UWP provides many services, such as a centralized app store, an execution environment (AppContainer), and a set of Windows APIs to use instead of Win32 (WinRT). Apps can be written in C++, C#, VB.NET, and JavaScript. When using C# and VB.NET, the .NET APIs are provided by .NET Core.
+UWP is an implementation of .NET that is used for building modern, touch-enabled Windows applications and software for the Internet of Things (IoT). It's designed to unify the different types of devices that you may want to target, including PCs, tablets, phablets, phones, and even the Xbox. UWP provides many services, such as a centralized app store, an execution environment (AppContainer), and a set of Windows APIs to use instead of Win32 (WinRT). Apps can be written in C++, C#, Visual Basic, and JavaScript. When using C# and Visual Basic, the .NET APIs are provided by .NET Core.
 
 To learn more about UWP, see [Intro to the Universal Windows Platform](/windows/uwp/get-started/universal-application-platform-guide).
 
@@ -78,12 +78,32 @@ You have access to an extensive set of tools and infrastructure components that 
 - [NuGet](/nuget/), Microsoft's package manager for .NET
 - Open-source build orchestration tools, such as [CAKE](https://cakebuild.net/) and [FAKE](https://fake.build/)
 
+## Applicable standards
+
+The C# Language and the Common Language Infrastructure (CLI) specifications are standardized through [Ecma International®](https://www.ecma-international.org/). The first editions of these standards were published by Ecma in December 2001.
+
+Subsequent revisions to the standards have been developed by the TC49-TG2 (C#) and TC49-TG3 (CLI) task groups within the Programming Languages Technical Committee ([TC49](https://www.ecma-international.org/memento/tc49.htm)), and adopted by the Ecma General Assembly and subsequently by ISO/IEC JTC 1 via the ISO Fast-Track process.
+
+### Latest standards
+
+The following official Ecma documents are available for [C#](http://www.ecma-international.org/publications/standards/Ecma-334.htm) and the [CLI](http://www.ecma-international.org/publications/standards/Ecma-335.htm) ([TR-84](http://www.ecma-international.org/publications/techreports/E-TR-084.htm)):
+
+- **The C# Language Standard (version 5.0)**: [ECMA-334.pdf](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-334.pdf)
+- **The Common Language Infrastructure**: This is available in [pdf](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-335.pdf) form and [zip](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-335.zip) form.
+- **Information Derived from the Partition IV XML File**: This is available in [pdf](https://www.ecma-international.org/publications/files/ECMA-TR/ECMA%20TR-084.pdf) and [zip](https://www.ecma-international.org/publications/files/ECMA-TR/TR-084.zip) formats.
+ 
+The official ISO/IEC documents are available from the ISO/IEC [Publicly Available Standards](https://standards.iso.org/ittf/PubliclyAvailableStandards/) page. These links are direct from that page:
+
+- **Information technology - Programming languages - C#**: [ISO/IEC 23270:2018](https://standards.iso.org/ittf/PubliclyAvailableStandards/c075178_ISO_IEC_23270_2018.zip)
+- **Information technology — Common Language Infrastructure (CLI) Partitions I to VI**: [ISO/IEC 23271:2012](https://standards.iso.org/ittf/PubliclyAvailableStandards/c058046_ISO_IEC_23271_2012(E).zip)
+- **Information technology — Common Language Infrastructure (CLI) — Technical Report on Information Derived from Partition IV XML File**: [ISO/IEC TR 23272:2011](https://standards.iso.org/ittf/PubliclyAvailableStandards/c057955_ISO_IEC_TR_23272_2011.zip)
+
 ## See also
 
 - [Choosing between .NET Core and .NET Framework for server apps](choosing-core-framework-server.md)
 - [.NET Standard](net-standard.md)
 - [.NET Core Guide](../core/index.md)
 - [.NET Framework Guide](../framework/index.md)
-- [C# Guide](../csharp/index.md)
-- [F# Guide](../fsharp/index.md)
-- [VB.NET Guide](../visual-basic/index.md)
+- [C# Guide](../csharp/index.yml)
+- [F# Guide](../fsharp/index.yml)
+- [Visual Basic Guide](../visual-basic/index.yml)

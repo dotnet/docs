@@ -1,5 +1,5 @@
 ---
-title: "Querying an XDocument vs. Querying an XElement (Visual Basic)"
+title: "Querying an XDocument vs. Querying an XElement"
 ms.date: 07/20/2015
 ms.assetid: 2d111f84-0ded-4cde-8d93-5440557a726d
 ---
@@ -32,7 +32,7 @@ Next
   
  As expected, this example produces the following output:  
   
-```  
+```console
 Querying tree loaded with XElement.Load  
 ----  
 <Child1>1</Child1>  
@@ -63,7 +63,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```console
 Querying tree loaded with XDocument.Load  
 ----  
 <Root>  
@@ -98,7 +98,7 @@ Next
   
  This query now performs in the same way as the query on the tree rooted in <xref:System.Xml.Linq.XElement>. The example produces the following output:  
   
-```  
+```console
 Querying tree loaded with XDocument.Load  
 ----  
 <Child1>1</Child1>  

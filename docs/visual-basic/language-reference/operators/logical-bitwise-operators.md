@@ -1,5 +1,5 @@
 ---
-title: "Logical-Bitwise Operators (Visual Basic)"
+title: "Logical-Bitwise Operators"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "operators [Visual Basic], logical"

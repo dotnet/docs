@@ -1,5 +1,5 @@
 ---
-title: "^= Operator (Visual Basic)"
+title: "^= Operator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.^="
@@ -15,7 +15,7 @@ Raises the value of a variable or property to the power of an expression and ass
   
 ## Syntax  
   
-```  
+```vb  
 variableorproperty ^= expression  
 ```  
   

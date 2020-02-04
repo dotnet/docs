@@ -8,7 +8,7 @@ ms.date: 09/20/2019
 C# 8.0 adds the following features and enhancements to the C# language:
 
 - [Readonly members](#readonly-members)
-- [Default interface members](#default-interface-members)
+- [Default interface methods](#default-interface-methods)
 - [Pattern matching enhancements](#more-patterns-in-more-places):
   - [Switch expressions](#switch-expressions)
   - [Property patterns](#property-patterns)
@@ -22,8 +22,10 @@ C# 8.0 adds the following features and enhancements to the C# language:
 - [Indices and ranges](#indices-and-ranges)
 - [Null-coalescing assignment](#null-coalescing-assignment)
 - [Unmanaged constructed types](#unmanaged-constructed-types)
-- [stackalloc in nested expressions](#stackalloc-in-nested-expressions)
+- [Stackalloc in nested expressions](#stackalloc-in-nested-expressions)
 - [Enhancement of interpolated verbatim strings](#enhancement-of-interpolated-verbatim-strings)
+
+C# 8.0 is supported on **.NET Core 3.x** and **.NET Standard 2.1**. For more information, see [C# language versioning](../language-reference/configure-language-version.md).
 
 The remainder of this article briefly describes these features. Where in-depth articles are available, links to those tutorials and overviews are provided. You can explore these features in your environment using the `dotnet try` global tool:
 
@@ -34,7 +36,7 @@ The remainder of this article briefly describes these features. Where in-depth a
 
 ## Readonly members
 
-You can apply the `readonly` modifier to any member of a struct. It indicates that the member does not modify state. It's more granular than applying the `readonly` modifier to a `struct` declaration.  Consider the following mutable struct:
+You can apply the `readonly` modifier to members of a struct. It indicates that the member doesn't modify state. It's more granular than applying the `readonly` modifier to a `struct` declaration.  Consider the following mutable struct:
 
 ```csharp
 public struct Point
@@ -48,26 +50,28 @@ public struct Point
 }
 ```
 
-Like most structs, the `ToString()` method does not modify state. You could indicate that by adding the `readonly` modifier to the declaration of `ToString()`:
+Like most structs, the `ToString()` method doesn't modify state. You could indicate that by adding the `readonly` modifier to the declaration of `ToString()`:
 
 ```csharp
 public readonly override string ToString() =>
     $"({X}, {Y}) is {Distance} from the origin";
 ```
 
-The preceding change generates a compiler warning, because `ToString` accesses the `Distance` property, which is not marked `readonly`:
+The preceding change generates a compiler warning, because `ToString` accesses the `Distance` property, which isn't marked `readonly`:
 
 ```console
 warning CS8656: Call to non-readonly member 'Point.Distance.get' from a 'readonly' member results in an implicit copy of 'this'
 ```
 
-The compiler warns you when it needs to create a defensive copy.  The `Distance` property does not change state, so you can fix this warning by adding the `readonly` modifier to the declaration:
+The compiler warns you when it needs to create a defensive copy.  The `Distance` property doesn't change state, so you can fix this warning by adding the `readonly` modifier to the declaration:
 
 ```csharp
 public readonly double Distance => Math.Sqrt(X * X + Y * Y);
 ```
 
-Notice that the `readonly` modifier is necessary on a read only property. The compiler doesn't assume `get` accessors do not modify state; you must declare `readonly` explicitly. The compiler does enforce the rule that `readonly` members do not modify state. The following method will not compile unless you remove the `readonly` modifier:
+Notice that the `readonly` modifier is necessary on a read-only property. The compiler doesn't assume `get` accessors don't modify state; you must declare `readonly` explicitly. Auto-implemented properties are an exception; the compiler will treat all auto-implemented getters as readonly, so here there's no need to add the `readonly` modifier to the `X` and `Y` properties.
+
+The compiler does enforce the rule that `readonly` members don't modify state. The following method won't compile unless you remove the `readonly` modifier:
 
 ```csharp
 public readonly void Translate(int xOffset, int yOffset)
@@ -77,13 +81,13 @@ public readonly void Translate(int xOffset, int yOffset)
 }
 ```
 
-This feature lets you specify your design intent so the compiler can enforce it, and make optimizations based on that intent.
+This feature lets you specify your design intent so the compiler can enforce it, and make optimizations based on that intent. You can learn more about readonly members in the language reference article on [`readonly`](../language-reference/keywords/readonly.md#readonly-member-examples).
 
-## Default interface members
+## Default interface methods
 
-You can now add members to interfaces and provide an implementation for those members. This language feature enables API authors to add methods to an interface in later versions without breaking source or binary compatibility with existing implementations of that interface. Existing implementations *inherit* the default implementation. This feature also enables C# to interoperate with APIs that target Android or Swift, which support similar features. Default interface members also enable scenarios similar to a "traits" language feature.
+You can now add members to interfaces and provide an implementation for those members. This language feature enables API authors to add methods to an interface in later versions without breaking source or binary compatibility with existing implementations of that interface. Existing implementations *inherit* the default implementation. This feature also enables C# to interoperate with APIs that target Android or Swift, which support similar features. Default interface methods also enable scenarios similar to a "traits" language feature.
 
-Default interface members affects many scenarios and language elements. Our first tutorial covers [updating an interface with default implementations](../tutorials/default-interface-members-versions.md). Other tutorials and reference updates are coming in time for general release.
+Default interface methods affects many scenarios and language elements. Our first tutorial covers [updating an interface with default implementations](../tutorials/default-interface-methods-versions.md). Other tutorials and reference updates are coming in time for general release.
 
 ## More patterns in more places
 
@@ -93,7 +97,7 @@ C# 8.0 expands this vocabulary so you can use more pattern expressions in more p
 
 In addition to new patterns in new places, C# 8.0 adds **recursive patterns**. The result of any pattern expression is an expression. A recursive pattern is simply a pattern expression applied to the output of another pattern expression.
 
-### switch expressions
+### Switch expressions
 
 Often, a [`switch`](../language-reference/keywords/switch.md) statement produces a value in each of its `case` blocks. **Switch expressions** enable you to use more concise expression syntax. There are fewer repetitive `case` and `break` keywords, and fewer curly braces.  As an example, consider the following enum that lists the colors of the rainbow:
 
@@ -163,7 +167,7 @@ public static RGBColor FromRainbowClassic(Rainbow colorBand)
 
 ### Property patterns
 
-The **property pattern** enables you to match on properties of the object examined. Consider an eCommerce site that must compute sales tax based on the buyer's address. That computation is not a core responsibility of an `Address` class. It will change over time, likely more often than address format changes. The amount of sales tax depends on the `State` property of the address. The following method uses the property pattern to compute the sales tax from the address and the price:
+The **property pattern** enables you to match on properties of the object examined. Consider an eCommerce site that must compute sales tax based on the buyer's address. That computation isn't a core responsibility of an `Address` class. It will change over time, likely more often than address format changes. The amount of sales tax depends on the `State` property of the address. The following method uses the property pattern to compute the sales tax from the address and the price:
 
 ```csharp
 public static decimal ComputeSalesTax(Address location, decimal salePrice) =>
@@ -246,34 +250,45 @@ static Quadrant GetQuadrant(Point point) => point switch
 };
 ```
 
-The discard pattern in the preceding switch matches when either `x` or `y` is 0, but not both. A switch expression must either produce a value or throw an exception. If none of the cases match, the switch expression throws an exception. The compiler generates a warning for you if you do not cover all possible cases in your switch expression.
+The discard pattern in the preceding switch matches when either `x` or `y` is 0, but not both. A switch expression must either produce a value or throw an exception. If none of the cases match, the switch expression throws an exception. The compiler generates a warning for you if you don't cover all possible cases in your switch expression.
 
 You can explore pattern matching techniques in this [advanced tutorial on pattern matching](../tutorials/pattern-matching.md).
 
-## using declarations
+## Using declarations
 
 A **using declaration** is a variable declaration preceded by the `using` keyword. It tells the compiler that the variable being declared should be disposed at the end of the enclosing scope. For example, consider the following code that writes a text file:
 
 ```csharp
-static void WriteLinesToFile(IEnumerable<string> lines)
+static int WriteLinesToFile(IEnumerable<string> lines)
 {
     using var file = new System.IO.StreamWriter("WriteLines2.txt");
+    // Notice how we declare skippedLines after the using statement.
+    int skippedLines = 0;
     foreach (string line in lines)
     {
         if (!line.Contains("Second"))
         {
             file.WriteLine(line);
         }
+        else
+        {
+            skippedLines++;
+        }
     }
-// file is disposed here
+    // Notice how skippedLines is in scope here.
+    return skippedLines;
+    // file is disposed here
 }
 ```
 
 In the preceding example, the file is disposed when the closing brace for the method is reached. That's the end of the scope in which `file` is declared. The preceding code is equivalent to the following code that uses the classic [using statement](../language-reference/keywords/using-statement.md):
 
 ```csharp
-static void WriteLinesToFile(IEnumerable<string> lines)
+static int WriteLinesToFile(IEnumerable<string> lines)
 {
+    // We must declare the variable outside of the using block
+    // so that it is in scope to be returned.
+    int skippedLines = 0;
     using (var file = new System.IO.StreamWriter("WriteLines2.txt"))
     {
         foreach (string line in lines)
@@ -282,14 +297,19 @@ static void WriteLinesToFile(IEnumerable<string> lines)
             {
                 file.WriteLine(line);
             }
+            else
+            {
+                skippedLines++;
+            }
         }
     } // file is disposed here
+    return skippedLines;
 }
 ```
 
 In the preceding example, the file is disposed when the closing brace associated with the `using` statement is reached.
 
-In both cases, the compiler generates the call to `Dispose()`. The compiler generates an error if the expression in the `using` statement is not disposable.
+In both cases, the compiler generates the call to `Dispose()`. The compiler generates an error if the expression in the `using` statement isn't disposable.
 
 ## Static local functions
 
@@ -323,13 +343,13 @@ int M()
 
 ## Disposable ref structs
 
-A `struct` declared with the `ref` modifier may not implement any interfaces and so cannot implement <xref:System.IDisposable>. Therefore, to enable a `ref struct` to be disposed, it must have an accessible `void Dispose()` method. This also applies to `readonly ref struct` declarations.
+A `struct` declared with the `ref` modifier may not implement any interfaces and so can't implement <xref:System.IDisposable>. Therefore, to enable a `ref struct` to be disposed, it must have an accessible `void Dispose()` method. This feature also applies to `readonly ref struct` declarations.
 
 ## Nullable reference types
 
 Inside a nullable annotation context, any variable of a reference type is considered to be a **nonnullable reference type**. If you want to indicate that a variable may be null, you must append the type name with the `?` to declare the variable as a **nullable reference type**.
 
-For nonnullable reference types, the compiler uses flow analysis to ensure that local variables are initialized to a non-null value when declared. Fields must be initialized during construction. The compiler generates a warning if the variable is not set by a call to any of the available constructors or by an initializer. Furthermore, nonnullable reference types can't be assigned a value that could be null.
+For nonnullable reference types, the compiler uses flow analysis to ensure that local variables are initialized to a non-null value when declared. Fields must be initialized during construction. The compiler generates a warning if the variable isn't set by a call to any of the available constructors or by an initializer. Furthermore, nonnullable reference types can't be assigned a value that could be null.
 
 Nullable reference types aren't checked to ensure they aren't assigned or initialized to null. However, the compiler uses flow analysis to ensure that any variable of a nullable reference type is checked against null before it's accessed or assigned to a nonnullable reference type.
 
@@ -369,18 +389,18 @@ You can try asynchronous streams yourself in our tutorial on [creating and consu
 
 ## Indices and ranges
 
-Ranges and indices provide a succinct syntax for specifying subranges in an array, [string](../language-reference/builtin-types/reference-types.md#the-string-type), <xref:System.Span%601>, or <xref:System.ReadOnlySpan%601>.
+Indices and ranges provide a succinct syntax for accessing single elements or ranges in a sequence.
 
 This language support relies on two new types, and two new operators:
 
 - <xref:System.Index?displayProperty=nameWithType> represents an index into a sequence.
-- The `^` operator, which specifies that an index is relative to the end of the sequence.
+- The index from end operator `^`, which specifies that an index is relative to the end of the sequence.
 - <xref:System.Range?displayProperty=nameWithType> represents a sub range of a sequence.
-- The Range operator (`..`), which specifies the start and end of a range as its operands.
+- The range operator `..`, which specifies the start and end of a range as its operands.
 
 Let's start with the rules for indexes. Consider an array `sequence`. The `0` index is the same as `sequence[0]`. The `^0` index is the same as `sequence[sequence.Length]`. Note that `sequence[^0]` does throw an exception, just as `sequence[sequence.Length]` does. For any number `n`, the index `^n` is the same as `sequence.Length - n`.
 
-A range specifies the *start* and *end* of a range. The start of the range is inclusive, but the end of the range is exclusive, meaning the *start* is included in the range but the *end* is not included in the range. The range `[0..^0]` represents the entire range, just as `[0..sequence.Length]` represents the entire range. 
+A range specifies the *start* and *end* of a range. The start of the range is inclusive, but the end of the range is exclusive, meaning the *start* is included in the range but the *end* isn't included in the range. The range `[0..^0]` represents the entire range, just as `[0..sequence.Length]` represents the entire range.
 
 Let's look at a few examples. Consider the following array, annotated with its index from the start and from the end:
 
@@ -407,13 +427,13 @@ Console.WriteLine($"The last word is {words[^1]}");
 // writes "dog"
 ```
 
-The following code creates a subrange with the words "quick", "brown", and "fox". It includes `words[1]` through `words[3]`. The element `words[4]` is not in the range.
+The following code creates a subrange with the words "quick", "brown", and "fox". It includes `words[1]` through `words[3]`. The element `words[4]` isn't in the range.
 
 ```csharp
 var quickBrownFox = words[1..4];
 ```
 
-The following code creates a subrange with "lazy" and "dog". It includes `words[^2]` and `words[^1]`. The end index `words[^0]` is not included:
+The following code creates a subrange with "lazy" and "dog". It includes `words[^2]` and `words[^1]`. The end index `words[^0]` isn't included:
 
 ```csharp
 var lazyDog = words[^2..^0];
@@ -439,6 +459,8 @@ The range can then be used inside the `[` and `]` characters:
 var text = words[phrase];
 ```
 
+Not only arrays support indices and ranges. You also can use indices and ranges with [string](../language-reference/builtin-types/reference-types.md#the-string-type), <xref:System.Span%601>, or <xref:System.ReadOnlySpan%601>. For more information, see [Type support for indices and ranges](../tutorials/ranges-indexes.md#type-support-for-indices-and-ranges).
+
 You can explore more about indices and ranges in the tutorial on [indices and ranges](../tutorials/ranges-indexes.md).
 
 ## Null-coalescing assignment
@@ -453,7 +475,7 @@ numbers ??= new List<int>();
 numbers.Add(i ??= 17);
 numbers.Add(i ??= 20);
 
-Console.WriteLine(string.Join(' ', numbers));  // output: 17 17
+Console.WriteLine(string.Join(" ", numbers));  // output: 17 17
 Console.WriteLine(i);  // output: 17
 ```
 
@@ -461,7 +483,7 @@ For more information, see the [?? and ??= operators](../language-reference/opera
 
 ## Unmanaged constructed types
 
-In C# 7.3 and earlier, a constructed type (a type that includes at least one type argument) cannot be an [unmanaged type](../language-reference/builtin-types/unmanaged-types.md). Starting with C# 8.0, a constructed value type is unmanaged if it contains fields of unmanaged types only.
+In C# 7.3 and earlier, a constructed type (a type that includes at least one type argument) can't be an [unmanaged type](../language-reference/builtin-types/unmanaged-types.md). Starting with C# 8.0, a constructed value type is unmanaged if it contains fields of unmanaged types only.
 
 For example, given the following definition of the generic `Coords<T>` type:
 
@@ -486,7 +508,7 @@ Span<Coords<int>> coordinates = stackalloc[]
 
 For more information, see [Unmanaged types](../language-reference/builtin-types/unmanaged-types.md).
 
-## stackalloc in nested expressions
+## Stackalloc in nested expressions
 
 Starting with C# 8.0, if the result of a [stackalloc](../language-reference/operators/stackalloc.md) expression is of the <xref:System.Span%601?displayProperty=nameWithType> or <xref:System.ReadOnlySpan%601?displayProperty=nameWithType> type, you can use the `stackalloc` expression in other expressions:
 

@@ -1,5 +1,5 @@
 ---
-title: "Customizing Which Objects are Available in My (Visual Basic)"
+title: "Customizing Which Objects are Available in My"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My namespace [Visual Basic], customizing"
@@ -14,7 +14,7 @@ This topic describes how you can control which `My` objects are enabled by setti
 
 You must use the `/define` compiler option to set the `_MYTYPE` conditional-compilation constant. When specifying your own value for the `_MYTYPE` constant, you must enclose the string value in backslash/quotation mark (\\") sequences. For example, you could use:  
   
-```  
+```console  
 /define:_MYTYPE=\"WindowsForms\"  
 ```  
   
@@ -74,7 +74,7 @@ The `_MYTYPE` conditional-compilation constant, in turn, controls the values of 
 - <xref:Microsoft.VisualBasic.ApplicationServices.User>
 - [How My Depends on Project Type](../../../visual-basic/developing-apps/development-with-my/how-my-depends-on-project-type.md)
 - [Conditional Compilation](../../../visual-basic/programming-guide/program-structure/conditional-compilation.md)
-- [/define (Visual Basic)](../../../visual-basic/reference/command-line-compiler/define.md)
+- [-define (Visual Basic)](../../../visual-basic/reference/command-line-compiler/define.md)
 - [My.Forms Object](../../../visual-basic/language-reference/objects/my-forms-object.md)
 - [My.Request Object](../../../visual-basic/language-reference/objects/my-request-object.md)
 - [My.Response Object](../../../visual-basic/language-reference/objects/my-response-object.md)

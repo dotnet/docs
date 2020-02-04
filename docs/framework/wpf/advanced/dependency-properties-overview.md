@@ -55,7 +55,7 @@ The following XAML example specifies the background color of a button as red. Th
 
 [!code-xaml[PropertiesOvwSupport#MostBasicProperty](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/Page1.xaml#mostbasicproperty)]
 
-XAML supports a variety of syntax forms for setting properties. Which syntax to use for a particular property will depend on the value type that a property uses, as well as other factors such as the presence of a type converter. For more information on XAML syntax for property setting, see [XAML Overview (WPF)](xaml-overview-wpf.md) and [XAML Syntax In Detail](xaml-syntax-in-detail.md).
+XAML supports a variety of syntax forms for setting properties. Which syntax to use for a particular property will depend on the value type that a property uses, as well as other factors such as the presence of a type converter. For more information on XAML syntax for property setting, see [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md) and [XAML Syntax In Detail](xaml-syntax-in-detail.md).
 
 As an example of non-attribute syntax, the following XAML example shows another button background. This time rather than setting a simple solid color, the background is set to an image, with an element representing that image and the source of that image specified as an attribute of the nested element. This is an example of property element syntax.
 
@@ -162,7 +162,7 @@ The following example shows a binding, and sets the <xref:System.Windows.Framewo
 For more information, see [Property Value Inheritance](property-value-inheritance.md).
 
 ### WPF designer integration
-A custom control with properties that are implemented as dependency properties will receive appropriate [!INCLUDE[wpfdesigner_current_long](../../../../includes/wpfdesigner-current-long-md.md)] support. One example is the ability to edit direct and attached dependency properties with the **Properties** window. For more information, see [Control Authoring Overview](../controls/control-authoring-overview.md).
+A custom control with properties that are implemented as dependency properties will receive appropriate WPF Designer for Visual Studio support. One example is the ability to edit direct and attached dependency properties with the **Properties** window. For more information, see [Control Authoring Overview](../controls/control-authoring-overview.md).
 
 ## Dependency property value precedence
 When you get the value of a dependency property, you are potentially obtaining a value that was set on that property through any one of the other property-based inputs that participate in the WPF property system. Dependency property value precedence exists so that a variety of scenarios for how properties obtain their values can interact in a predictable way.
@@ -194,5 +194,5 @@ Typically, you would not want styles to always apply and to obscure even a local
 
 - [Custom Dependency Properties](custom-dependency-properties.md)
 - [Read-Only Dependency Properties](read-only-dependency-properties.md)
-- [XAML Overview (WPF)](xaml-overview-wpf.md)
+- [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)
 - [WPF Architecture](wpf-architecture.md)

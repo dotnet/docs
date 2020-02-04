@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 1d03bb15-a2c8-4a04-8fc6-b126c89c3778
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # EndMerge Method
 Indicates that all custom attributes have been merged into the emit scope.  

@@ -1,5 +1,5 @@
 ---
-title: "Is Operator (Visual Basic)"
+title: "Is Operator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.is"
@@ -15,7 +15,7 @@ Compares two object reference variables.
   
 ## Syntax  
   
-```  
+```vb  
 result = object1 Is object2  
 ```  
   

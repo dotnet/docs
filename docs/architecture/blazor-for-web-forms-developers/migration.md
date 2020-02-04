@@ -15,10 +15,10 @@ For this example, the eShop app available on [GitHub](https://github.com/dotnet-
 
 Why should a working app be migrated to Blazor? Many times, there's no need. ASP.NET Web Forms will continue to be supported for many years. However, many of the features that Blazor provides are only supported on a migrated app. Such features include:
 
-* Performance improvements in the framework such as `Span<T>`
-* Ability to run as WebAssembly
-* Cross-platform support for Linux and macOS
-* App-local deployment or shared framework deployment without impacting other apps
+- Performance improvements in the framework such as `Span<T>`
+- Ability to run as WebAssembly
+- Cross-platform support for Linux and macOS
+- App-local deployment or shared framework deployment without impacting other apps
 
 If these or other new features are compelling enough, there may be value in migrating the app. The migration can take different shapes; it can be the entire app, or only certain endpoints that require the changes. The decision to migrate is ultimately based on the business problems to be solved by the developer.
 
@@ -26,9 +26,9 @@ If these or other new features are compelling enough, there may be value in migr
 
 As described in the [hosting models](hosting-models.md) chapter, a Blazor app can be hosted in two different ways: server-side and client-side. The server-side model uses ASP.NET Core SignalR connections to manage the DOM updates while running any actual code on the server. The client-side model runs as WebAssembly within a browser and requires no server connections. There are a number of differences that may affect which is best for a specific app:
 
-* Running as WebAssembly is still in development and may not support all features (such as threading) at the current time
-* Chatty communication between the client and server may cause latency issues in server-side mode
-* Access to databases and internal or protected services require a separate service with client-side hosting
+- Running as WebAssembly is still in development and may not support all features (such as threading) at the current time
+- Chatty communication between the client and server may cause latency issues in server-side mode
+- Access to databases and internal or protected services require a separate service with client-side hosting
 
 At the time of writing, the server-side model more closely resembles Web Forms. Most of this chapter focuses on the server-side hosting model, as it's production-ready.
 
@@ -78,7 +78,7 @@ The Blazor project lists the dependencies you require within an `<ItemGroup>` el
 </ItemGroup>
 ```
 
-One NuGet package that simplifies the life of Web Forms developers is the [Windows Compatibility Pack](/dotnet/core/porting/windows-compat-pack). Although .NET Core is cross-platform, some features are only available on Windows. Windows-specific features are made available by installing the compatibility pack. Examples of such features include the Registry, WMI, and Directory Services. The package adds around 20,000 APIs and activates many services with which you may already be familiar. The eShop project doesn't require the compatibility pack; but if your projects use Windows-specific features, the package eases the migration efforts.
+One NuGet package that simplifies the life of Web Forms developers is the [Windows Compatibility Pack](../../core/porting/windows-compat-pack.md). Although .NET Core is cross-platform, some features are only available on Windows. Windows-specific features are made available by installing the compatibility pack. Examples of such features include the Registry, WMI, and Directory Services. The package adds around 20,000 APIs and activates many services with which you may already be familiar. The eShop project doesn't require the compatibility pack; but if your projects use Windows-specific features, the package eases the migration efforts.
 
 ## Enable startup process
 
@@ -246,7 +246,7 @@ For more information about app startup, see [App startup](app-startup.md).
 
 ## Migrate HTTP modules and handlers to middleware
 
-HTTP modules and handlers are common patterns in Web Forms to control the HTTP request pipeline. Classes that implement `IHttpModule` or `IHttpHandler` could be registered and process incoming requests. Web Forms configures modules and handlers in the *web.config* file. Web Forms is also heavily based on app lifecycle event handling. ASP.NET Core uses middleware instead. Middlewares are registered in the `Configure` method of the `Startup` class. Middleware execution order is determined by the registration order.
+HTTP modules and handlers are common patterns in Web Forms to control the HTTP request pipeline. Classes that implement `IHttpModule` or `IHttpHandler` could be registered and process incoming requests. Web Forms configures modules and handlers in the *web.config* file. Web Forms is also heavily based on app lifecycle event handling. ASP.NET Core uses middleware instead. Middleware is registered in the `Configure` method of the `Startup` class. Middleware execution order is determined by the registration order.
 
 In the [Enable startup process](#enable-startup-process) section, a lifecycle event was raised by Web Forms as the `Application_BeginRequest` method. This event isn't available in ASP.NET Core. One way to achieve this behavior is to implement middleware as seen in the *Startup.cs* file example. This middleware does the same logic and then transfers control to the next handler in the middleware pipeline.
 
@@ -546,7 +546,7 @@ In Blazor, the equivalent markup is provided in a *Create.razor* file:
             <ValidationMessage For="(() => _item.Name)" />
         </div>
     </div>
-    
+
     ...
 </EditForm>
 ```
@@ -616,9 +616,9 @@ Data access is an important aspect of any app. The eShop project stores catalog 
 
 The following EF-related changes were necessary to eShop:
 
-* In .NET Framework, the `DbContext` object accepts a string of the form *name=ConnectionString* and uses the connection string from
+- In .NET Framework, the `DbContext` object accepts a string of the form *name=ConnectionString* and uses the connection string from
   `ConfigurationManager.AppSettings[ConnectionString]` to connect. In .NET Core, this isn't supported. The connection string must be supplied.
-* The database was accessed in a synchronous way. Though this works, scalability may suffer. This logic should be moved to an asynchronous pattern.
+- The database was accessed in a synchronous way. Though this works, scalability may suffer. This logic should be moved to an asynchronous pattern.
 
 Although there isn't the same native support for dataset binding, Blazor provides flexibility and power with its C# support in a Razor page. For example, you can perform calculations and display the result. For more information on data patterns in Blazor, see the [Data access](data.md) chapter.
 
@@ -628,18 +628,18 @@ Finally, there are some important architectural differences to consider when mig
 
 Because Blazor is built on .NET Core, there are considerations in ensuring support on .NET Core. Some of the major changes include the removal of the following features:
 
-* Multiple AppDomains
-* Remoting
-* Code Access Security (CAS)
-* Security Transparency
+- Multiple AppDomains
+- Remoting
+- Code Access Security (CAS)
+- Security Transparency
 
 For more information on techniques to identify necessary changes to support running on .NET Core, see [Port your code from .NET Framework to .NET Core](/dotnet/core/porting).
 
 ASP.NET Core is a reimagined version of ASP.NET and has some changes that may not initially seem obvious. The main changes are:
 
-* No synchronization context, which means there's no `HttpContext.Current`, `Thread.CurrentPrincipal`, or other static accessors
-* No shadow copying
-* No request queue
+- No synchronization context, which means there's no `HttpContext.Current`, `Thread.CurrentPrincipal`, or other static accessors
+- No shadow copying
+- No request queue
 
 Many operations in ASP.NET Core are asynchronous, which allows easier off-loading of I/O-bound tasks. It's important to never block by using `Task.Wait()` or `Task.GetResult()`, which can quickly exhaust thread pool resources.
 

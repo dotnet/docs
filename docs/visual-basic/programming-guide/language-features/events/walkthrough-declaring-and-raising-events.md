@@ -1,5 +1,5 @@
 ---
-title: "Declaring and Raising Events (Visual Basic)"
+title: "Declaring and Raising Events"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "declarations [Visual Basic], events"

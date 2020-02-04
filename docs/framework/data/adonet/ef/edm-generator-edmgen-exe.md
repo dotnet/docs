@@ -20,7 +20,7 @@ The EdmGen.exe tool is installed in the .NET Framework directory. In many cases,
 
 ## Syntax
 
-```
+```console
 EdmGen /mode:choice [options]
 ```
 
@@ -73,4 +73,4 @@ When using the EdmGen.exe tool, you must specify one of the following modes.
 
 - [ADO.NET Entity Data Model Tools](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100))
 - [Entity Data Model](../entity-data-model.md)
-- [CSDL, SSDL, and MSL Specifications](./language-reference/csdl-ssdl-and-msl-specifications.md)
+- [CSDL, SSDL, and MSL Specifications](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec)

@@ -2,8 +2,6 @@
 title: "ICorDebugProcess6::GetCode Method"
 ms.date: "03/30/2017"
 ms.assetid: faa538c2-60c9-4064-b996-1b4c24ebd751
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess6::GetCode Method
 Gets information about the managed code at a particular code address.  
@@ -39,5 +37,5 @@ HRESULT GetCode(
   
 ## See also
 
-- [ICorDebugProcess6 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugProcess6 Interface](icordebugprocess6-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

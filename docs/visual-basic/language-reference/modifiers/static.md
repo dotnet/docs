@@ -1,5 +1,5 @@
 ---
-title: "Static (Visual Basic)"
+title: "Static"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Static"

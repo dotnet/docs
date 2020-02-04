@@ -7,13 +7,13 @@ ms.date: 02/15/2019
 
 [Docker](https://www.docker.com/) is an [open-source project](https://github.com/docker/docker) for automating the deployment of applications as portable, self-sufficient containers that can run on the cloud or on-premises. Docker is also a [company](https://www.docker.com/) that promotes and evolves this technology, working in collaboration with cloud, Linux, and Windows vendors, including Microsoft.
 
-![Docker containers can run anywhere, on-premises in the customer datacenter, in an external service provider or in the cloud, on Azure.](./media/image2.png)
+![Diagram showing the places Docker containers can run.](./media/what-is-docker/docker-containers-run-anywhere.png)
 
 **Figure 1-2**. Docker deploys containers at all layers of the hybrid cloud
 
-Docker image containers can run natively on Linux and Windows. However, Windows images can run only on Windows hosts and Linux images can run on Linux hosts and Windows hosts (using a Hyper-V Linux VM, so far), where host means a server or a VM.
+As shown in the above diagram, Docker containers can run anywhere, on-premises in the customer datacenter, in an external service provider or in the cloud, on Azure. Docker image containers can also run natively on Linux and Windows. However, Windows images can run only on Windows hosts and Linux images can run on Linux hosts and Windows hosts (using a Hyper-V Linux VM, so far), where host means a server or a VM.
 
-Developers can use development environments on Windows, Linux, or macOS. On the development computer, the developer runs a Docker host where Docker images are deployed, including the app and its dependencies. Developers who work on Linux or on the Mac, use a Docker host that's Linux-based, and they can only create images for Linux containers. (Developers working on the Mac can edit code or run the Docker command-line interface (CLI) from macOS, but as of this writing, containers don't run directly on macOS.) Developers who work on Windows can create images for either Linux or Windows Containers.
+Developers can use development environments on Windows, Linux, or macOS. On the development computer, the developer runs a Docker host where Docker images are deployed, including the app and its dependencies. Developers who work on Linux or on the Mac, use a Docker host that's Linux-based, and they can only create images for Linux containers. (Developers working on the Mac can edit code or run the Docker CLI from macOS, but as of this writing, containers don't run directly on macOS.) Developers who work on Windows can create images for either Linux or Windows Containers.
 
 To host containers in development environments and provide additional developer tools, Docker ships [Docker Community Edition (CE)](https://www.docker.com/community-edition) for Windows or for macOS. These products install the necessary VM (the Docker host) to host the containers. Docker also makes available [Docker Enterprise Edition (EE)](https://www.docker.com/enterprise-edition), which is designed for enterprise development and is used by IT teams who build, ship, and run large business-critical applications in production.
 
@@ -29,9 +29,11 @@ The images for these containers are created and work just the same way. The diff
 
 Figure 1-3 shows a comparison between VMs and Docker containers.
 
-![For VMs, there are three base layers in the host server, from the bottom-up: infrastructure, Host Operating System and a Hypervisor and on top of all that each VM has its own OS and all necessary libraries. On the other hand, For Docker, the host server only has the infrastructure and the OS and on top of that, the container engine, that keeps container isolated but sharing the base OS services.](./media/image3.png)
+![Diagram showing a comparison of VM and container environments.](./media/what-is-docker/comparison-vms-docker-conatiners.png)
 
 **Figure 1-3**. Comparison of traditional virtual machines to Docker containers
+
+As shown in the above diagram, for VMs, there are three base layers in the host server. From the bottom-up: Infrastructure, Host Operating System, and a Hypervisor. On top of all that, each VM has its own OS and all necessary libraries. On the other hand, for Docker, the host server only has the Infrastructure and the OS. On top of that, the container engine keeps containers isolated, but lets them share the single base OS's services.
 
 Because containers require far fewer resources (for example, they don't need a full OS), they're easy to deploy and they start fast. This allows you to have higher density, meaning that it allows you to run more services on the same hardware unit, thereby reducing costs.
 

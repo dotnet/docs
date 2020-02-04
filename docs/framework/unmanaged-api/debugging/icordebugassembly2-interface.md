@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: c0766e29-e573-4f9a-a928-167d1de5aa7e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugAssembly2 Interface
 
@@ -25,7 +23,7 @@ Represents an assembly. This interface is an extension of the ICorDebugAssembly 
   
 |Method|Description|  
 |------------|-----------------|  
-|[IsFullyTrusted Method](../../../../docs/framework/unmanaged-api/debugging/icordebugassembly2-isfullytrusted-method.md)|Gets a value that indicates whether the assembly has been granted full trust by the runtime security system.|  
+|[IsFullyTrusted Method](icordebugassembly2-isfullytrusted-method.md)|Gets a value that indicates whether the assembly has been granted full trust by the runtime security system.|  
   
 ## Remarks  
   
@@ -43,4 +41,4 @@ Represents an assembly. This interface is an extension of the ICorDebugAssembly 
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

@@ -1,5 +1,6 @@
 ---
-title: "Walkthrough: Hosting an ActiveX Control in WPF"
+title: Host an ActiveX control in WPF
+titleSuffix: ""
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
@@ -10,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: 1931d292-0dd1-434f-963c-dcda7638d75a
 ---
 # Walkthrough: Hosting an ActiveX Control in WPF
-To enable improved interaction with browsers, you can use Microsoft ActiveX controls in your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]-based application. This walkthrough demonstrates how you can host the [!INCLUDE[TLA#tla_wmp](../../../../includes/tlasharptla-wmp-md.md)] as a control on a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] page.
+To enable improved interaction with browsers, you can use Microsoft ActiveX controls in your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]-based application. This walkthrough demonstrates how you can host the Microsoft Windows Media Player as a control on a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] page.
 
  Tasks illustrated in this walkthrough include:
 
@@ -25,7 +26,7 @@ To enable improved interaction with browsers, you can use Microsoft ActiveX cont
 ## Prerequisites
  You need the following components to complete this walkthrough:
 
-- [!INCLUDE[TLA#tla_wmp](../../../../includes/tlasharptla-wmp-md.md)] installed on the computer where Visual Studio is installed.
+- Microsoft Windows Media Player installed on the computer where Visual Studio is installed.
 
 - Visual Studio 2010.
 
@@ -54,7 +55,7 @@ To enable improved interaction with browsers, you can use Microsoft ActiveX cont
 9. If you are prompted to rename all references, click **Yes**.
 
 ## Creating the ActiveX Control
- [!INCLUDE[TLA#tla_visualstu](../../../../includes/tlasharptla-visualstu-md.md)] automatically generates an <xref:System.Windows.Forms.AxHost> wrapper class for a Microsoft ActiveX control when the control is added to a design surface. The following procedure creates a managed assembly named AxInterop.WMPLib.dll.
+Visual Studio automatically generates an <xref:System.Windows.Forms.AxHost> wrapper class for a Microsoft ActiveX control when the control is added to a design surface. The following procedure creates a managed assembly named AxInterop.WMPLib.dll.
 
 ### To create the ActiveX control
 
@@ -76,7 +77,7 @@ To enable improved interaction with browsers, you can use Microsoft ActiveX cont
 
 2. Add a reference to the WindowsFormsIntegration assembly, which is named WindowsFormsIntegration.dll.
 
-3. Add a reference to the [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] assembly, which is named System.Windows.Forms.dll.
+3. Add a reference to the Windows Forms assembly, which is named System.Windows.Forms.dll.
 
 4. Open MainWindow.xaml in the WPF Designer.
 
@@ -103,6 +104,6 @@ To enable improved interaction with browsers, you can use Microsoft ActiveX cont
 
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
-- [Design XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)
+- [Design XAML in Visual Studio](/visualstudio/xaml-tools/designing-xaml-in-visual-studio)
 - [Walkthrough: Hosting a Windows Forms Composite Control in WPF](walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md)
 - [Walkthrough: Hosting a WPF Composite Control in Windows Forms](walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md)

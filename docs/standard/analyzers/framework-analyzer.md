@@ -1,6 +1,6 @@
 ---
-title: The .NET Security Analyzers - .NET
-description: Learn how to use the .NET Security Analyzers in the .NET Framework Analyzers package to find and address security risks
+title: .NET Framework Analyzers - .NET
+description: Learn how to use the .NET Framework Analyzers in the .NET Framework Analyzers package to find and address security risks
 author: billwagner
 ms.author: wiwagn
 ms.date: 01/25/2018
@@ -20,7 +20,7 @@ warns about new issues as you keep developing.
 
 ## Installing and configuring the .NET Framework Analyzer
 
-The .NET Security Analyzers must be installed as a NuGet package on every
+The .NET Framework Analyzers must be installed as a NuGet package on every
 project where you want them to run. Only one developer needs to add them
 to the project. The analyzer package is a project dependency and will run
 on every developer's machine once it has the updated solution.
@@ -148,4 +148,4 @@ An attack making it computationally feasible to break this algorithm exists. Thi
 
 **Severity:** Warning
 
-Additional Information: [CA5351: Do not use broken cryptographic algorithms](/visualstudio/code-quality/ca5351-do-not-use-broken-cryptographic-algorithms)
+Additional Information: [CA5351: Do not use broken cryptographic algorithms](/visualstudio/code-quality/ca5351)

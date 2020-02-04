@@ -13,17 +13,17 @@ This topic discusses features new to Windows Communication Foundation (WCF) vers
 
 ## WCF Simplification Features
 
-Much work has been done to make WCF 4.5 applications easier to develop and maintain. For more information, see [WCF Simplification Features](../../../docs/framework/wcf/wcf-simplification-features.md).
+Much work has been done to make WCF 4.5 applications easier to develop and maintain. For more information, see [WCF Simplification Features](wcf-simplification-features.md).
 
 ### Task-based Async Support
 
-By default, Add Service Reference generates Task-returning async service operation methods. This is done for both synchronous and asynchronous methods. This allows you to call the service operations asynchronously using the new Task based async programming model. When you call the generated proxy method, WCF constructs a Task object to represent the asynchronous operation and returns that Task to you. The Task completes when the operation completes. When implementing an async operation you can implement it as a task-based async operation. For more information see, [Synchronous and Asynchronous Operations](../../../docs/framework/wcf/synchronous-and-asynchronous-operations.md).
+By default, Add Service Reference generates Task-returning async service operation methods. This is done for both synchronous and asynchronous methods. This allows you to call the service operations asynchronously using the new Task based async programming model. When you call the generated proxy method, WCF constructs a Task object to represent the asynchronous operation and returns that Task to you. The Task completes when the operation completes. When implementing an async operation you can implement it as a task-based async operation. For more information see, [Synchronous and Asynchronous Operations](synchronous-and-asynchronous-operations.md).
 
 ### Simplified Generated Configuration Files
 
 When you add a service reference in Visual Studio or use the SvcUtil.exe tool, a client configuration file is generated. In previous versions of WCF these configuration files contained the value of every binding property even if its value is the default value. In WCF 4.5 the generated configuration files contain only those binding properties that are set to a non-default value.
 
-For more information, see [WCF Simplification Features](../../../docs/framework/wcf/wcf-simplification-features.md)
+For more information, see [WCF Simplification Features](wcf-simplification-features.md).
 
 ### Contract-First Development
 
@@ -31,19 +31,19 @@ WCF now has support for contract-first development. The svcutil.exe has a /servi
 
 ### Add Service Reference from a Portable Subset Project
 
-Portable subset projects enable .NET assembly programmers to maintain a single source tree and build system while still supporting multiple .NET platforms (desktop, Silverlight, Windows Phone, and XBOX). Portable subset projects only reference .NET portable libraries which are a .NET framework assembly that can be used on any .NET platform. The developer experience is the same as adding a service reference within any other WCF client application. For more information, see [Add Service Reference in a Portable Subset Project](../../../docs/framework/wcf/add-service-reference-in-a-portable-subset-project.md).
+Portable subset projects enable .NET assembly programmers to maintain a single source tree and build system while still supporting multiple .NET platforms (desktop, Silverlight, Windows Phone, and XBOX). Portable subset projects only reference .NET portable libraries which are a .NET framework assembly that can be used on any .NET platform. The developer experience is the same as adding a service reference within any other WCF client application. For more information, see [Add Service Reference in a Portable Subset Project](add-service-reference-in-a-portable-subset-project.md).
 
 ### ASP.NET Compatibility Mode Default Changed
 
-WCF provides ASP.NET compatibility mode to grant developers full access to the features in the ASP.NET HTTP pipeline when writing WCF services. To use this mode, you must set the `aspNetCompatibilityEnabled` attribute to true in the [\<serviceHostingEnvironment>](../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md) section of web.config. Additionally, any service in this appDomain needs to have the `RequirementsMode` property on its <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute> set to <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode.Allowed> or <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode.Required>. By default <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute> is now set to <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode.Allowed>. For more information, see [What's New in Windows Communication Foundation](../../../docs/framework/wcf/whats-new.md) and [WCF Services and ASP.NET](../../../docs/framework/wcf/feature-details/wcf-services-and-aspnet.md).
+WCF provides ASP.NET compatibility mode to grant developers full access to the features in the ASP.NET HTTP pipeline when writing WCF services. To use this mode, you must set the `aspNetCompatibilityEnabled` attribute to true in the [\<serviceHostingEnvironment>](../configure-apps/file-schema/wcf/servicehostingenvironment.md) section of web.config. Additionally, any service in this appDomain needs to have the `RequirementsMode` property on its <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute> set to <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode.Allowed> or <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode.Required>. By default <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute> is now set to <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode.Allowed>. For more information, see [WCF Services and ASP.NET](./feature-details/wcf-services-and-aspnet.md).
 
 ### New Transport Default Values
 
-In order to simplify configuration a number of transport property default values have changed. For more information, see [WCF Simplification Features](../../../docs/framework/wcf/wcf-simplification-features.md).
+In order to simplify configuration a number of transport property default values have changed. For more information, see [WCF Simplification Features](wcf-simplification-features.md).
 
 ### XmlDictionaryReaderQuotas
 
-<xref:System.Xml.XmlDictionaryReaderQuotas> contains configurable quota values for XML dictionary readers which limit the amount of memory utilized by an encoder while creating a message. While these quotas are configurable, the default values have changed to lessen the possibility that a developer will have to set them explicitly. For more information, see [WCF Simplification Features](../../../docs/framework/wcf/wcf-simplification-features.md).
+<xref:System.Xml.XmlDictionaryReaderQuotas> contains configurable quota values for XML dictionary readers which limit the amount of memory utilized by an encoder while creating a message. While these quotas are configurable, the default values have changed to lessen the possibility that a developer will have to set them explicitly. For more information, see [WCF Simplification Features](wcf-simplification-features.md).
 
 ### WCF Configuration Validation
 
@@ -55,7 +55,7 @@ In order to help new and existing WCF service developers to configure their serv
 
 ## Streaming Improvements
 
-Added support for true asynchronous streaming where the send side now does not block threads if the receive side is not reading or slow in reading thereby increasing scalability. Removed the limitation of message buffering when a client sends a streamed message to an IIS hosted WCF service. For more information, see [WCF Simplification Features](../../../docs/framework/wcf/wcf-simplification-features.md).
+Added support for true asynchronous streaming where the send side now does not block threads if the receive side is not reading or slow in reading thereby increasing scalability. Removed the limitation of message buffering when a client sends a streamed message to an IIS hosted WCF service. For more information, see [WCF Simplification Features](wcf-simplification-features.md).
 
 ## Simplifying Exposing an Endpoint Over HTTPS with IIS
 
@@ -67,7 +67,7 @@ Some third-party WSDL processing stacks are not able to process WSDL documents t
 
 ## WebSocket Support
 
-WebSockets is a technology that provides true bidirectional communication over ports 80 and 443 with performance characteristics similar to TCP. Two new bindings have been added to support communication over a WebSocket transport. <xref:System.ServiceModel.NetHttpBinding> and <xref:System.ServiceModel.NetHttpsBinding>. For more information see: [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md).
+WebSockets is a technology that provides true bidirectional communication over ports 80 and 443 with performance characteristics similar to TCP. Two new bindings have been added to support communication over a WebSocket transport. <xref:System.ServiceModel.NetHttpBinding> and <xref:System.ServiceModel.NetHttpsBinding>. For more information see: [System-Provided Bindings](system-provided-bindings.md).
 
 ## New Transport Default Values
 
@@ -77,9 +77,9 @@ The following table describes the settings that have changed and where to find a
 |--------------|--------|-----------------|------------------------------|
 |channelInitializationTimeout|<xref:System.ServiceModel.NetTcpBinding>|30 seconds|<xref:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.ChannelInitializationTimeout%2A>|
 |listenBacklog|<xref:System.ServiceModel.NetTcpBinding>|12 * number of processors|<xref:System.ServiceModel.NetTcpBinding.ListenBacklog%2A>|
-|maxPendingAccepts|ConnectionOrientedTransportBindingElement<br /><br /> SMSvcHost.exe|2 * number of processors for transport<br /><br /> 4 \* number of processors for SMSvcHost.exe|<xref:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.MaxPendingAccepts%2A> [Configuring the Net.TCP Port Sharing Service](../../../docs/framework/wcf/feature-details/configuring-the-net-tcp-port-sharing-service.md)|
+|maxPendingAccepts|ConnectionOrientedTransportBindingElement<br /><br /> SMSvcHost.exe|2 * number of processors for transport<br /><br /> 4 \* number of processors for SMSvcHost.exe|<xref:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.MaxPendingAccepts%2A> [Configuring the Net.TCP Port Sharing Service](./feature-details/configuring-the-net-tcp-port-sharing-service.md)|
 |maxPendingConnections|ConnectionOrientedTransportBindingElement|12 * number of processors|<xref:System.ServiceModel.Channels.ConnectionOrientedTransportBindingElement.MaxPendingConnections%2A>|
-|receiveTimeout|SMSvcHost.exe|30 seconds|[Configuring the Net.TCP Port Sharing Service](../../../docs/framework/wcf/feature-details/configuring-the-net-tcp-port-sharing-service.md)|
+|receiveTimeout|SMSvcHost.exe|30 seconds|[Configuring the Net.TCP Port Sharing Service](./feature-details/configuring-the-net-tcp-port-sharing-service.md)|
 
 ## XML Editor Tooltips
 
@@ -87,7 +87,7 @@ In order to help new and existing WCF service developers to configure their serv
 
 ## Configuring WCF Services in Code
 
-Windows Communication Foundation (WCF) allows developers to configure services using configuration files or code. Configuration files are useful when a service needs to be configured after being deployed. When using configuration files, an IT professional only needs to update the configuration file, no recompilation is required. Configuration files, however, can be complex and difficult to maintain. There is no support for debugging configuration files and configuration elements are referenced by names which makes authoring configuration files error-prone and difficult. WCF also allows you to configure services in code. In earlier versions of WCF (4.0 and earlier) configuring services in code was easy in self-hosted scenarios, the <xref:System.ServiceModel.ServiceHost> class allowed you to configure endpoints and behaviors prior to calling ServiceHost.Open. In web hosted scenarios, however, you don’t have access to the <xref:System.ServiceModel.ServiceHost> class. To configure a web hosted service you were required to create a `System.ServiceModel.ServiceHostFactory` that created the <xref:System.ServiceModel.Activation.ServiceHostFactory> and performed any needed configuration. Starting with .NET 4.5, WCF provides an easier way to configure both self-hosted and web hosted services in code. For more information, see [Configuring WCF Services in Code](../../../docs/framework/wcf/configuring-wcf-services-in-code.md).
+Windows Communication Foundation (WCF) allows developers to configure services using configuration files or code. Configuration files are useful when a service needs to be configured after being deployed. When using configuration files, an IT professional only needs to update the configuration file, no recompilation is required. Configuration files, however, can be complex and difficult to maintain. There is no support for debugging configuration files and configuration elements are referenced by names which makes authoring configuration files error-prone and difficult. WCF also allows you to configure services in code. In earlier versions of WCF (4.0 and earlier) configuring services in code was easy in self-hosted scenarios, the <xref:System.ServiceModel.ServiceHost> class allowed you to configure endpoints and behaviors prior to calling ServiceHost.Open. In web hosted scenarios, however, you don’t have access to the <xref:System.ServiceModel.ServiceHost> class. To configure a web hosted service you were required to create a `System.ServiceModel.ServiceHostFactory` that created the <xref:System.ServiceModel.Activation.ServiceHostFactory> and performed any needed configuration. Starting with .NET 4.5, WCF provides an easier way to configure both self-hosted and web hosted services in code. For more information, see [Configuring WCF Services in Code](configuring-wcf-services-in-code.md).
 
 ## ChannelFactory Caching
 
@@ -101,11 +101,11 @@ WCF client applications use the <xref:System.ServiceModel.ChannelFactory%601> cl
 
 4. Disposing of resources
 
-To help minimize this overhead, WCF can cache channel factories when you are using a WCF client proxy. For more information, see [Channel Factory and Caching](../../../docs/framework/wcf/feature-details/channel-factory-and-caching.md).
+To help minimize this overhead, WCF can cache channel factories when you are using a WCF client proxy. For more information, see [Channel Factory and Caching](./feature-details/channel-factory-and-caching.md).
 
 ## Compression and the Binary Encoder
 
-Beginning with WCF 4.5 the WCF binary encoder adds support for compression. The type of compression is configured with the <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.CompressionFormat%2A> property. Both the client and the service must configure the <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.CompressionFormat%2A> property. Compression will work for HTTP, HTTPS, and TCP protocols. If a client specifies to use compression but the service does not support it a protocol exception is thrown indicating a protocol mismatch. For more information, see [Choosing a Message Encoder](../../../docs/framework/wcf/feature-details/choosing-a-message-encoder.md)
+Beginning with WCF 4.5 the WCF binary encoder adds support for compression. The type of compression is configured with the <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.CompressionFormat%2A> property. Both the client and the service must configure the <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.CompressionFormat%2A> property. Compression will work for HTTP, HTTPS, and TCP protocols. If a client specifies to use compression but the service does not support it a protocol exception is thrown indicating a protocol mismatch. For more information, see [Choosing a Message Encoder](./feature-details/choosing-a-message-encoder.md).
 
 ## UDP
 
@@ -117,11 +117,11 @@ Support has been added to support multiple authentication modes, as supported by
 
 ## IDN Support
 
-Support has been added to allow for WCF services with Internationalized Domain Names. For more information see [WCF and Internationalized Domain Names](../../../docs/framework/wcf/feature-details/wcf-and-internationalized-domain-names.md).
+Support has been added to allow for WCF services with Internationalized Domain Names. For more information see [WCF and Internationalized Domain Names](./feature-details/wcf-and-internationalized-domain-names.md).
 
 ## HttpClient
 
-A new class called <xref:System.Net.Http.HttpClient> has been added to make working with HTTP requests much easier. For more info, see [Making apps social and connected with HTTP services](https://go.microsoft.com/fwlink/?LinkId=231886) and the [HTTP Client Sample](https://code.msdn.microsoft.com/windowsapps/HttpClient-sample-55700664).
+A new class called <xref:System.Net.Http.HttpClient> has been added to make working with HTTP requests much easier. For more info, see [Making apps social and connected with HTTP services](https://channel9.msdn.com/Events/BUILD/BUILD2011/PLAT-581T) and the [HTTP Client Sample](https://code.msdn.microsoft.com/windowsapps/HttpClient-sample-55700664).
 
 ## Configuration Intellisense
 
@@ -133,7 +133,7 @@ WCF elements and attributes now have tooltips in the XML editor, to more easily 
 
 ## Paste Data as Classes
 
-In a WCF project, data types defined in XML (such as are exposed in a service) can be pasted directly into a code page. The XML type will be pasted as a CLR type. See [Generating Data Type Classes from XML](../../../docs/framework/wcf/generating-data-type-classes-from-xml.md) for more details.
+In a WCF project, data types defined in XML (such as are exposed in a service) can be pasted directly into a code page. The XML type will be pasted as a CLR type. See [Generating Data Type Classes from XML](generating-data-type-classes-from-xml.md) for more details.
 
 ## WebServiceHost and default endpoints
 

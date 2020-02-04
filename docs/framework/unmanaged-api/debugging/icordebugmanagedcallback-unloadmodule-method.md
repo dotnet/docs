@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: b12bfcd9-1e29-48bf-9a3d-44bfae5df5e8
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback::UnloadModule Method
 Notifies the debugger that a common language runtime module (DLL) has been unloaded.  
@@ -51,5 +49,5 @@ HRESULT UnloadModule (
   
 ## See also
 
-- [LoadModule Method](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-loadmodule-method.md)
-- [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)
+- [LoadModule Method](icordebugmanagedcallback-loadmodule-method.md)
+- [ICorDebugManagedCallback Interface](icordebugmanagedcallback-interface.md)

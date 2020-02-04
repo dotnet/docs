@@ -34,7 +34,7 @@ dataSet.ReadXmlSchema("schema.xsd");
 ```  
   
 ```vb  
-Dim xmlStream As System.IO.StreamReader = New System.IO.StreamReader ("schema.xsd");  
+Dim xmlStream As New System.IO.StreamReader("schema.xsd")
 Dim dataSet As DataSet = New DataSet  
 dataSet.ReadXmlSchema(xmlStream)  
 xmlStream.Close()  

@@ -12,7 +12,7 @@ ms.assetid: 0301e31f-22ad-49af-ac3c-d5eae7f0ac43
 ---
 # C# operators (C# reference)
 
-C# provides a number of operators supported by the built-in types. For example, [arithmetic operators](arithmetic-operators.md) perform arithmetic operations with numeric operands and [Boolean logical operators](boolean-logical-operators.md) perform logical operations with the [bool](../keywords/bool.md) operands. Certain operators can be [overloaded](operator-overloading.md). With operator overloading, you can specify the operator behavior for the operands of a user-defined type.
+C# provides a number of operators supported by the built-in types. For example, [arithmetic operators](arithmetic-operators.md) perform arithmetic operations with numeric operands and [Boolean logical operators](boolean-logical-operators.md) perform logical operations with the [bool](../builtin-types/bool.md) operands. Certain operators can be [overloaded](operator-overloading.md). With operator overloading, you can specify the operator behavior for the operands of a user-defined type.
 
 In an [expression](../../programming-guide/statements-expressions-operators/expressions.md), operator precedence and associativity determine the order in which the operations are performed. You can use parentheses to change the order of evaluation imposed by operator precedence and associativity.
 
@@ -57,8 +57,8 @@ The following table lists the C# operators starting with the highest precedence 
 
 When operators have the same precedence, associativity of the operators determines the order in which the operations are performed:
 
-- *Left-associative* operators are evaluated in order from left to right. Except for the [assignment operators](assignment-operator.md) and the [null-coalescing operator `??`](null-coalescing-operator.md), all binary operators are left-associative. For example, `a + b - c` is evaluated as `(a + b) - c`.
-- *Right-associative* operators are evaluated in order from right to left. The assignment operators, the null-coalescing operator `??`, and the [conditional operator `?:`](conditional-operator.md) are right-associative. For example, `x = y = z` is evaluated as `x = (y = z)`.
+- *Left-associative* operators are evaluated in order from left to right. Except for the [assignment operators](assignment-operator.md) and the [null-coalescing operators](null-coalescing-operator.md), all binary operators are left-associative. For example, `a + b - c` is evaluated as `(a + b) - c`.
+- *Right-associative* operators are evaluated in order from right to left. The assignment operators, the null-coalescing operators, and the [conditional operator `?:`](conditional-operator.md) are right-associative. For example, `x = y = z` is evaluated as `x = (y = z)`.
 
 Use parentheses to change the order of evaluation imposed by operator associativity:
 
@@ -79,7 +79,7 @@ Unrelated to operator precedence and associativity, operands in an expression ar
 |`a / b + c * d`|a, b, /, c, d, *, +|
 |`a / (b + c) * d`|a, b, c, +, /, d, *|
 
-Typically, all operator operands are evaluated. Some operators evaluate operands conditionally. That is, the value of the first operand of such an operator defines if (or which) other operands should be evaluated. These operators are the conditional logical [AND (`&&`)](boolean-logical-operators.md#conditional-logical-and-operator-) and [OR (`||`)](boolean-logical-operators.md#conditional-logical-or-operator-) operators, the [null-coalescing operator `??`](null-coalescing-operator.md), the [null-conditional operators `?.` and `?[]`](member-access-operators.md#null-conditional-operators--and-), and the [conditional operator `?:`](conditional-operator.md). See the description of each operator for more details.
+Typically, all operator operands are evaluated. However, some operators evaluate operands conditionally. That is, the value of the leftmost operand of such an operator defines if (or which) other operands should be evaluated. These operators are the conditional logical [AND (`&&`)](boolean-logical-operators.md#conditional-logical-and-operator-) and [OR (`||`)](boolean-logical-operators.md#conditional-logical-or-operator-) operators, the [null-coalescing operators `??` and `??=`](null-coalescing-operator.md), the [null-conditional operators `?.` and `?[]`](member-access-operators.md#null-conditional-operators--and-), and the [conditional operator `?:`](conditional-operator.md). For more information, see the description of each operator.
 
 ## C# language specification
 

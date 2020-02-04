@@ -1,5 +1,5 @@
 ---
-title: "How to: Control the Scope of a Variable (Visual Basic)"
+title: "How to: Control the Scope of a Variable"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "variables [Visual Basic], scope"
@@ -54,7 +54,7 @@ Normally, a variable is in *scope*, or visible for reference, throughout the reg
 ## Example  
  The following example declares a variable at module level and limits its visibility to code within the module.  
   
-```  
+```vb  
 Module demonstrateScope  
     Private strMsg As String  
     Sub initializePrivateVariable()  
@@ -70,7 +70,7 @@ End Module
   
  With the following alteration to the preceding example, the string variable `strMsg` can be referred to by code anywhere in the namespace of its declaration.  
   
-```  
+```vb  
 Public strMsg As String  
 ```  
   

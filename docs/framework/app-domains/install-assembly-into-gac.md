@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "Global Assembly Cache tool"
   - "windows installer, global assembly cache"
 ms.assetid: a7e6f091-d02c-49ba-b736-7295cb0eb743
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Install an assembly into the global assembly cache
 

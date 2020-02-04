@@ -1,5 +1,5 @@
 ---
-title: "White Space in XML Literals (Visual Basic)"
+title: "White Space in XML Literals"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "white space [XML in Visual Basic]"

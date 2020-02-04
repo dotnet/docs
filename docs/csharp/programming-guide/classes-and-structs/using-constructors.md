@@ -1,6 +1,5 @@
 ---
 title: "Using Constructors - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "constructors [C#], about constructors"
@@ -24,7 +23,7 @@ When a [class](../../language-reference/keywords/class.md) or [struct](../../lan
   
  For more information, see [Private Constructors](./private-constructors.md).  
   
- Constructors for [struct](../../language-reference/keywords/struct.md) types resemble class constructors, but `structs` cannot contain an explicit parameterless constructor because one is provided automatically by the compiler. This constructor initializes each field in the `struct` to the default values. For more information, see [Default Values Table](../../language-reference/keywords/default-values-table.md). However, this parameterless constructor is only invoked if the `struct` is instantiated with `new`. For example, this code uses the parameterless constructor for <xref:System.Int32>, so that you are assured that the integer is initialized:  
+ Constructors for [struct](../../language-reference/keywords/struct.md) types resemble class constructors, but `structs` cannot contain an explicit parameterless constructor because one is provided automatically by the compiler. This constructor initializes each field in the `struct` to the [default value](../../language-reference/builtin-types/default-values.md). However, this parameterless constructor is only invoked if the `struct` is instantiated with `new`. For example, this code uses the parameterless constructor for <xref:System.Int32>, so that you are assured that the integer is initialized:  
   
 ```csharp  
 int i = new int();  
@@ -85,7 +84,7 @@ Console.WriteLine("{0}, {1}", a, b);
   
 ## C# Language Specification  
 
-For more information, see [Instance constructors](~/_csharplang/spec/classes.md#instance-constructors) and [Static constructors](~/_csharplang/spec/classes.md#static-constructors) in the [C# Language Specification](../../language-reference/language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Instance constructors](~/_csharplang/spec/classes.md#instance-constructors) and [Static constructors](~/_csharplang/spec/classes.md#static-constructors) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
   
 ## See also
 

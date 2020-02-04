@@ -1,5 +1,5 @@
 ---
-title: "Resume Statement (Visual Basic)"
+title: "Resume Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Resume"
@@ -23,7 +23,7 @@ Resumes execution after an error-handling routine is finished.
   
 ## Syntax  
   
-```  
+```vb  
 Resume [ Next | line ]  
 ```  
   

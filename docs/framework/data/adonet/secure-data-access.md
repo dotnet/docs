@@ -49,7 +49,7 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Exception Handling Fundamentals](../../../standard/exceptions/exception-handling-fundamentals.md)|Describes the basic forms of try/catch/finally structured exception handling.|  
+|[Handling and throwing exceptions in .NET](../../../standard/exceptions/index.md)|Describes the basic forms of try/catch/finally structured exception handling.|  
 |[Best Practices for Exceptions](../../../standard/exceptions/best-practices-for-exceptions.md)|Describes best practices for handling exceptions.|  
   
 ## Protecting Microsoft Access and Excel Data Sources  
@@ -59,9 +59,8 @@ To write secure ADO.NET code, you have to understand the security mechanisms ava
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Security Considerations and Guidance for Access 2007](https://go.microsoft.com/fwlink/?LinkId=98354)|Describes security techniques for Access 2007 such encrypting files, administering passwords, converting databases to the new ACCDB and ACCDE formats, and using other security options.|  
-|[Understanding the Role of Workgroup Information Files in Access Security](https://support.microsoft.com/kb/305542)|Explains the role and relationship of the workgroup information file in Access 2003 security.|  
-|[Frequently Asked Questions About Microsoft Access Security for Microsoft Access versions 2.0 through 2000](https://go.microsoft.com/fwlink/?LinkId=47698)|Downloadable version of the Microsoft Access Security FAQ.|  
+|[Security Considerations and Guidance for Access 2007](https://docs.microsoft.com/previous-versions/office/developer/office-2007/bb421308(v=office.12))|Describes security techniques for Access 2007 such encrypting files, administering passwords, converting databases to the new ACCDB and ACCDE formats, and using other security options.|  
+|[Introduction to Access 2010 security](https://support.office.com/article/Introduction-to-Access-2010-security-CAE6D764-0318-4622-955F-68D9F186D6CA)|Provides an overview of the security features offered by Access 2010.|  
 ## Enterprise Services  
  COM+ contains its own security model that relies on Windows NT accounts and process/thread impersonation. The <xref:System.EnterpriseServices> namespace provides wrappers that allow .NET applications to integrate managed code with COM+ security services through the <xref:System.EnterpriseServices.ServicedComponent> class.  
   

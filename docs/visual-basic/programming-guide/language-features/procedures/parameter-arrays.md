@@ -1,5 +1,5 @@
 ---
-title: "Parameter Arrays (Visual Basic)"
+title: "Parameter Arrays"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "parameter arrays [Visual Basic], about parameter arrays"
@@ -28,7 +28,7 @@ Usually, you cannot call a procedure with more arguments than the procedure decl
 ## Calling a ParamArray  
  When you call a procedure that defines a parameter array, you can supply the argument in any one of the following ways:  
   
-- Nothing — that is, you can omit the [ParamArray](../../../../visual-basic/language-reference/modifiers/paramarray.md) argument. In this case, an empty array is passed to the procedure. You can also pass the [Nothing](../../../../visual-basic/language-reference/nothing.md) keyword, with the same effect.  
+- Nothing — that is, you can omit the [ParamArray](../../../../visual-basic/language-reference/modifiers/paramarray.md) argument. In this case, an empty array is passed to the procedure. If you explicitly pass the [Nothing](../../../../visual-basic/language-reference/nothing.md) keyword, a null array is passed to the procedure and may result in a NullReferenceException if the called procedure does not check for this condition.
   
 - A list of an arbitrary number of arguments, separated by commas. The data type of each argument must be implicitly convertible to the `ParamArray` element type.  
   

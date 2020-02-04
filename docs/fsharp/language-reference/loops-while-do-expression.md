@@ -24,7 +24,7 @@ The following example illustrates the use of the `while...do` expression.
 
 The output of the previous code is a stream of random numbers between 1 and 20, the last of which is 10.
 
-```
+```console
 13 19 8 18 16 2 10
 Found a 10!
 ```

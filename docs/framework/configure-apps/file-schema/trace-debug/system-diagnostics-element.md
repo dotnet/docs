@@ -12,8 +12,8 @@ ms.assetid: 3f348f42-fa72-4ff2-aa1c-bb9eecad4bb2
 # \<system.diagnostics> Element
 Specifies trace listeners that collect, store, and route messages and the level where a trace switch is set.  
   
- \<configuration>  
-\<system.diagnostics>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;**\<system.diagnostics>**  
   
 ## Syntax  
   

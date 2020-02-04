@@ -1,5 +1,5 @@
 ---
-title: "How to: Display a Date in a Custom Format with the Windows Forms DateTimePicker Control"
+title: Display a Date in a Custom Format with DateTimePicker Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

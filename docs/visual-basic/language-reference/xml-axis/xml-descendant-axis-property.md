@@ -1,5 +1,5 @@
 ---
-title: "XML Descendant Axis Property (Visual Basic)"
+title: "XML Descendant Axis Property"
 ms.date: 07/20/2015
 f1_keywords:
   - "vb.XmlPropertyDescendantsAxis"
@@ -18,7 +18,7 @@ Provides access to the descendants of the following: an <xref:System.Xml.Linq.XE
 
 ## Syntax
 
-```
+```vb
 object...<descendant>
 ```
 

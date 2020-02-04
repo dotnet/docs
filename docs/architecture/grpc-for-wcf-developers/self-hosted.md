@@ -1,13 +1,10 @@
 ---
 title: Self-hosted gRPC applications - gRPC for WCF Developers
 description: Deploying ASP.NET Core gRPC applications as self-hosted services.
-author: markrendle
 ms.date: 09/02/2019
 ---
 
 # Self-hosted gRPC applications
-
-[!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
 Although ASP.NET Core 3.0 applications can be hosted in IIS on Windows Server, currently it isn't possible to host a gRPC application in IIS because some of the HTTP/2 functionality isn't yet supported. This functionality is expected in a future update to Windows Server.
 
@@ -32,7 +29,7 @@ public static IHostBuilder CreateHostBuilder(string[] args) =>
 
 Now publish your application, either from Visual Studio by right-clicking the project and choosing *Publish* from the context menu, or from the .NET Core CLI.
 
-When you publish a .NET Core application, you can choose to create a *framework-dependent* deployment or a *self-contained* deployment. Framework-dependent deployments require the .NET Core Shared Runtime to be installed on the host where they are run. Self-contained deployments are published with a complete copy of the .NET Core runtime and framework and can be run on any host. For more information, including the advantages and disadvantages of each approach, refer to the [.NET Core application deployment](https://docs.microsoft.com/dotnet/core/deploying/) documentation.
+When you publish a .NET Core application, you can choose to create a *framework-dependent* deployment or a *self-contained* deployment. Framework-dependent deployments require the .NET Core Shared Runtime to be installed on the host where they are run. Self-contained deployments are published with a complete copy of the .NET Core runtime and framework and can be run on any host. For more information, including the advantages and disadvantages of each approach, refer to the [.NET Core application deployment](../../core/deploying/index.md) documentation.
 
 To publish a self-contained build of the application that does not require the .NET Core 3.0 runtime to be installed on the host, specify the runtime to be included with the application using the `-r` (or `--runtime`) flag.
 
@@ -75,7 +72,7 @@ public static IHostBuilder CreateHostBuilder(string[] args) =>
 > [!NOTE]
 > If the application isn't running as a Linux service, the `UseSystemd` method doesn't do anything.
 
-Now publish your application (either framework-dependent, or self-contained for the relevant Linux runtime, e.g. `linux-x64`), either from Visual Studio by right-clicking the project and choosing *Publish* from the context menu, or from the .NET Core CLI using the following command.
+Now publish your application (either framework-dependent, or self-contained for the relevant Linux runtime, for example, `linux-x64`), either from Visual Studio by right-clicking the project and choosing *Publish* from the context menu, or from the .NET Core CLI using the following command.
 
 ```console
 dotnet publish -c Release -r linux-x64 -o ./publish
@@ -148,7 +145,7 @@ To learn more about querying the systemd journal from the command line with `jou
 
 When running a gRPC application in production, you should use a TLS certificate from a trusted Certificate Authority (CA). This CA could be a public CA, or an internal one for your organization.
 
-On Windows hosts, the certificate may be loaded from a secure [Certificate Store](https://docs.microsoft.com/windows/win32/seccrypto/managing-certificates-with-certificate-stores) using the [X509Store class](https://docs.microsoft.com/dotnet/api/system.security.cryptography.x509certificates.x509store?view=netcore-3.0). The `X509Store` class can also be used with the OpenSSL key-store on some Linux hosts.
+On Windows hosts, the certificate may be loaded from a secure [Certificate Store](/windows/win32/seccrypto/managing-certificates-with-certificate-stores) using the <xref:System.Security.Cryptography.X509Certificates.X509Store> class. The `X509Store` class can also be used with the OpenSSL key-store on some Linux hosts.
 
 Certificates may also be created using one of the [X509Certificate2 constructors](https://docs.microsoft.com/dotnet/api/system.security.cryptography.x509certificates.x509certificate.-ctor?view=netcore-3.0), either from a file (for example a `.pfx` file protected by a strong password), or from binary data retrieved from a secure storage service such as [Azure Key Vault](https://azure.microsoft.com/services/key-vault/).
 

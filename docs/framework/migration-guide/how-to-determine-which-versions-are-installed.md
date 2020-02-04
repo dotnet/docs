@@ -21,10 +21,6 @@ The .NET Framework consists of two main components, which are versioned separate
 
 - The common language runtime (CLR), which manages and executes your app's code. A single CLR version typically supports multiple .NET Framework versions. For example, CLR version 4.0.30319.*xxxxx* where *xxxxx* is less than 42000, supports .NET Framework versions 4 through 4.5.2. CLR version greater than or equal to 4.0.30319.42000 supports .NET Framework versions starting with .NET Framework 4.6.
 
-For more information about versioning, see [Versions and dependencies](versions-and-dependencies.md).
-
- You can either use the Registry Editor to view the registry or query it with code:
-
 Community-maintained tools are available to help detect which .NET Framework version is installed:
 
 - [https://github.com/jmalarcon/DotNetVersions](https://github.com/jmalarcon/DotNetVersions)
@@ -42,7 +38,7 @@ For information about detecting the installed updates for each version of the .N
 The version of .NET Framework (4.5 and above) installed on a machine is listed in the registry at `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full`. If the `Full` subkey is missing, then .NET Framework 4.5 or above isn't installed.
 
 > [!NOTE]
-> The `NET Framework Setup` folder in the registry path does *not* begin with a period.
+> The `NET Framework Setup` subkey in the registry path does *not* begin with a period.
 
 The `Release` REG_DWORD value in the registry represents the version of .NET Framework installed.
 
@@ -124,6 +120,9 @@ This example follows the recommended practice for version checking:
 ## Detect .NET Framework 1.0 through 4.0
 
 Each version of .NET Framework from 1.1 to 4.0 is listed as a subkey at `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP`. The following table lists the path to each .NET Framework version. For most versions, there's a `Install` REG_DWORD value of `1` to indicate this version is installed. In these subkeys, there's also a `Version` REG_SZ value that contains a version string.
+
+> [!NOTE]
+> The `NET Framework Setup` subkey in the registry path does *not* begin with a period.
 
 | Framework Version  | Registry Subkey | Value |
 | ------------------ | --------------- | ----- |

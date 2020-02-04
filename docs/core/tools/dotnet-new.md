@@ -680,7 +680,7 @@ Each project template may have additional options available. The core templates 
   dotnet new ng
   ```
 
-- Install version 2.0 of the Single Page Application templates for ASP.NET Core (command option available for .NET Core SDK 1.1 and later versions only):
+- Install version 2.0 of the Single Page Application templates for ASP.NET Core:
 
   ```dotnetcli
   dotnet new -i Microsoft.DotNet.Web.Spa.ProjectTemplates::2.0.0

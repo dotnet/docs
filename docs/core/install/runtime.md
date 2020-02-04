@@ -90,14 +90,14 @@ To extract the runtime and make the .NET Core CLI commands available at the term
 
 By default, .NET Core CLI commands and apps will not use .NET Core installed in this way. You have to explicitly choose to use it. To do so, change the environment variables with which an application is started:
 
-```
+```console
 set DOTNET_ROOT=%USERPROFILE%\dotnet
 set PATH=%USERPROFILE%\dotnet;%PATH%
 ```
 
-This approach lets you install multiple different versions into separate locations and explicitly choose which application should use which install location by running the application with its own set of environment variable values.
+This approach lets you install multiple versions into separate locations, then explicitly choose which install location an application should use by running the application with environment variables pointing at that location.
 
-Even with the application started under this environment .NET Core will still consider the default global install location (typically `C:\Program Files\dotnet`) which is used by the installers when selecting the best framework for running the application. You can instruct the runtime to only use the custom install location by setting this environment variable as well:
+Even when these environment variables are set, .NET Core still considers the default global install location when selecting the best framework for running the application. The default is typically `C:\Program Files\dotnet`, which the installers use. You can instruct the runtime to only use the custom install location by setting this environment variable as well:
 
 ```console
 set DOTNET_MULTILEVEL_LOOKUP=0

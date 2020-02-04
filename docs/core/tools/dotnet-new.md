@@ -46,14 +46,14 @@ The command contains a default list of templates. Use `dotnet new -l` to obtain 
 | WPF User Control Library                     | [wpfusercontrollib](#wpf)       | [C#]         | Common/WPF                            | 3.0        |
 | Windows Forms (WinForms) Application         | [winforms](#winforms)           | [C#]         | Common/WinForms                       | 3.0        |
 | Windows Forms (WinForms) Class library       | [winformslib](#winforms)        | [C#]         | Common/WinForms                       | 3.0        |
-| Worker Service                               | [worker](#worker)               | [C#]         | Common/Worker/Web                     | 3.0        |
+| Worker Service                               | [worker](#web-others)           | [C#]         | Common/Worker/Web                     | 3.0        |
 | Unit Test Project                            | [mstest](#test)                 | [C#], F#, VB | Test/MSTest                           | 1.0        |
 | NUnit 3 Test Project                         | [nunit](#nunit)                  | [C#], F#, VB | Test/NUnit                            | 2.1.400    |
 | NUnit 3 Test Item                            | `nunit-test`                    | [C#], F#, VB | Test/NUnit                            | 2.2        |
 | xUnit Test Project                           | [xunit](#test)                  | [C#], F#, VB | Test/xUnit                            | 1.0        |
 | Razor Component                              | `razorcomponent`                | [C#]         | Web/ASP.NET                           | 3.0        |
 | Razor Page                                   | [page](#page)                   | [C#]         | Web/ASP.NET                           | 2.0        |
-| MVC ViewImports                              | [viewimports](#viewimports)     | [C#]         | Web/ASP.NET                           | 2.0        |
+| MVC ViewImports                              | [viewimports](#namespace)       | [C#]         | Web/ASP.NET                           | 2.0        |
 | MVC ViewStart                                | `viewstart`                     | [C#]         | Web/ASP.NET                           | 2.0        |
 | Blazor Server App                            | [blazorserver](#blazorserver)   | [C#]         | Web/Blazor                            | 3.0        |
 | ASP.NET Core Empty                           | [web](#web)                     | [C#], F#     | Web/Empty                             | 1.0        |
@@ -64,8 +64,8 @@ The command contains a default list of templates. Use `dotnet new -l` to obtain 
 | ASP.NET Core with React.js and Redux         | [reactredux](#reactredux)       | [C#]         | Web/MVC/SPA                           | 2.0        |
 | Razor Class Library                          | [razorclasslib](#razorclasslib) | [C#]         | Web/Razor/Library/Razor Class Library | 2.1        |
 | ASP.NET Core Web API                         | [webapi](#webapi)               | [C#], F#     | Web/WebAPI                            | 1.0        |
-| ASP.NET Core gRPC Service                    | `grpc`                          | [C#]         | Web/gRPC                              | 3.0        |
-| Protocol Buffer File                         | `proto`                         |              | Web/gRPC                              | 3.0        |
+| ASP.NET Core gRPC Service                    | [grpc](#web-others)             | [C#]         | Web/gRPC                              | 3.0        |
+| Protocol Buffer File                         | [proto](#namespace)             |              | Web/gRPC                              | 3.0        |
 | dotnet gitignore file                        | `gitignore`                     |              | Config                                | 3.0        |
 | global.json file                             | [globaljson](#globaljson)       |              | Config                                | 2.0        |
 | NuGet Config                                 | `nugetconfig`                   |              | Config                                | 1.0        |
@@ -206,7 +206,7 @@ Each project template may have additional options available. The core templates 
 
 ***
 
-### worker
+### <a name="web-others"></a> worker, grpc
 
 - **`-f|--framework <FRAMEWORK>`**
 
@@ -280,7 +280,7 @@ Each project template may have additional options available. The core templates 
 
 ***
 
-### viewimports
+### <a name="namespace"></a> viewimports, proto
 
 - **`-na|--namespace <NAMESPACE_NAME>`** - Namespace for the generated code. The default value is `MyApp.Namespace`.
 
@@ -613,6 +613,12 @@ Each project template may have additional options available. The core templates 
 - **`--no-restore`**
 
   Doesn't execute an implicit restore during project creation.
+
+***
+
+### grpc
+
+- **`--sdk-version <VERSION_NUMBER>`** - Specifies the version of the .NET Core SDK to use in the *global.json* file.
 
 ***
 

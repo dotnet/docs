@@ -11,7 +11,6 @@ ms.date: 01/30/2020
 > We made this design choice because of Envoy's built-in support for the WebSocket protocol, required by the new gRPC inter-service communications implemented in eShopOnContainers. 
 > However, we've retained this section in the guide so you can consider Ocelot as a simple, capable, and lightweight API Gateway suitable for production-grade scenarios.
 
-
 ## Architect and design your API Gateways
 
 The following architecture diagram shows how API Gateways were implemented with Ocelot in eShopOnContainers.

@@ -19,6 +19,9 @@
 # In each subsection folders are order first by depth, then alphabetically.
 # This should make it easy to add new rules without breaking existing ones.
 
+######## API landing page ###########
+/api/** @mairaw
+
 ############ WHATS NEW ###############
 /docs/whats-new/** @mairaw @billwagner
 

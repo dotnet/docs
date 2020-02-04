@@ -16,7 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorDebugInternalFrameType Enumeration
-Identifies the type of stack frame. This enumeration is used by the [ICorDebugInternalFrame::GetFrameType](../../../../docs/framework/unmanaged-api/debugging/icordebuginternalframe-getframetype-method.md) method.  
+Identifies the type of stack frame. This enumeration is used by the [ICorDebugInternalFrame::GetFrameType](icordebuginternalframe-getframetype-method.md) method.  
   
 ## Syntax  
   
@@ -64,4 +64,4 @@ typedef enum CorDebugInternalFrameType {
   
 ## See also
 
-- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)
+- [Debugging Enumerations](debugging-enumerations.md)

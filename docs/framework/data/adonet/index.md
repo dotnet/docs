@@ -1,5 +1,6 @@
 ---
 title: "ADO.NET"
+titleSuffix: ""
 ms.date: "03/30/2017"
 ms.assetid: 5b96ed06-9759-4966-a797-a1d5f6ee50ca
 ---

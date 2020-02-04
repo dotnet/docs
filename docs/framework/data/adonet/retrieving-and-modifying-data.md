@@ -1,5 +1,5 @@
 ---
-title: "Retrieving and Modifying Data in ADO.NET"
+title: "Retrieving and Modifying Data"
 ms.date: "03/30/2017"
 ms.assetid: 722e7f87-3691-46c6-87e8-7d159722d675
 ---

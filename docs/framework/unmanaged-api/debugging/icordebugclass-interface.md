@@ -23,9 +23,9 @@ Represents a type, which can be either basic or complex (that is, user-defined).
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetModule Method](../../../../docs/framework/unmanaged-api/debugging/icordebugclass-getmodule-method.md)|Gets the module that defines this class.|  
-|[GetStaticFieldValue Method](../../../../docs/framework/unmanaged-api/debugging/icordebugclass-getstaticfieldvalue-method.md)|Gets the value of the specified static field.|  
-|[GetToken Method](../../../../docs/framework/unmanaged-api/debugging/icordebugclass-gettoken-method.md)|Gets the `TypeDef` metadata token for this class.|  
+|[GetModule Method](icordebugclass-getmodule-method.md)|Gets the module that defines this class.|  
+|[GetStaticFieldValue Method](icordebugclass-getstaticfieldvalue-method.md)|Gets the value of the specified static field.|  
+|[GetToken Method](icordebugclass-gettoken-method.md)|Gets the `TypeDef` metadata token for this class.|  
   
 ## Remarks  
  The `ICorDebugClass` interface represents an uninstantiated generic type. The ICorDebugType interface represents an instantiated generic type. For example, `Hashtable<K, V>` would be represented by `ICorDebugClass`, whereas `Hashtable<Int32, String>` would be represented by `ICorDebugType`.  
@@ -46,4 +46,4 @@ Represents a type, which can be either basic or complex (that is, user-defined).
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

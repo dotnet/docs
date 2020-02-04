@@ -9,11 +9,11 @@ The WS-AtomicTransaction Configuration MMC snap-in is used to configure a portio
 
 ## Remarks
 
-If you are running [!INCLUDE[wxp](../../../includes/wxp-md.md)] or Windows Server 2003, the MMC snap-in can be found by navigating to **Control Panel/Administrative Tools/Component Services/**, right-clicking **My Computer**, and selecting **Properties**. This is the same location where you can configure the MSDTC. Options available for configuration are grouped under the **WS-AT** tab.
+If you are running Windows XP or Windows Server 2003, the MMC snap-in can be found by navigating to **Control Panel/Administrative Tools/Component Services/**, right-clicking **My Computer**, and selecting **Properties**. This is the same location where you can configure the MSDTC. Options available for configuration are grouped under the **WS-AT** tab.
 
  If you are running Windows Vista or Windows Server 2008, MMC snap-in can be found by clicking the **Start** button, and typing in `dcomcnfg.exe` in the **Search** box. When the MMC is opened, navigate to the **My Computer\Distributed Transaction Coordinator\Local DTC** node, right click and select **Properties**. Options available for configuration are grouped under the **WS-AT** tab.
 
- The previous steps are used to launch the snap-in for configuring a local machine. If you want to configure a remote machine, you should locate the remote machine's name in **Control Panel/Administrative Tools/Component Services/**, and perform similar steps if you are running [!INCLUDE[wxp](../../../includes/wxp-md.md)] or Windows Server 2003. If you are running Windows Vista or Windows Server 2008, follow the previous steps for Vista and Windows Server 2008, but use the **Distributed Transaction Coordinator\Local DTC** node under the remote computer's node.
+ The previous steps are used to launch the snap-in for configuring a local machine. If you want to configure a remote machine, you should locate the remote machine's name in **Control Panel/Administrative Tools/Component Services/**, and perform similar steps if you are running Windows XP or Windows Server 2003. If you are running Windows Vista or Windows Server 2008, follow the previous steps for Vista and Windows Server 2008, but use the **Distributed Transaction Coordinator\Local DTC** node under the remote computer's node.
 
  To use the user interface provided by the tool, you have to register the WsatUI.dll file, which is located at the following path,
 

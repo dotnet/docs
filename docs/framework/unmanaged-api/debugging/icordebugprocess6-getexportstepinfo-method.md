@@ -20,10 +20,10 @@ HRESULT GetExportStepInfo(
  [in] The name of a runtime export function as written in the PE export table.  
   
  invokeKind  
- [out] A pointer to a member of the [CorDebugCodeInvokeKind](../../../../docs/framework/unmanaged-api/debugging/cordebugcodeinvokekind-enumeration.md) enumeration that describes how the exported function will invoke managed code.  
+ [out] A pointer to a member of the [CorDebugCodeInvokeKind](cordebugcodeinvokekind-enumeration.md) enumeration that describes how the exported function will invoke managed code.  
   
  invokePurpose  
- [out] A pointer to a member of the [CorDebugCodeInvokePurpose](../../../../docs/framework/unmanaged-api/debugging/cordebugcodeinvokepurpose-enumeration.md) enumeration that describes why the exported function will call managed code.  
+ [out] A pointer to a member of the [CorDebugCodeInvokePurpose](cordebugcodeinvokepurpose-enumeration.md) enumeration that describes why the exported function will call managed code.  
   
 ## Return Value  
  The method can return the values listed in the following table.  
@@ -50,5 +50,5 @@ HRESULT GetExportStepInfo(
   
 ## See also
 
-- [ICorDebugProcess6 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugProcess6 Interface](icordebugprocess6-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

@@ -22,11 +22,11 @@ Serves as a logical extension to the ICorDebugThread interface.
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetActiveFunctions Method](../../../../docs/framework/unmanaged-api/debugging/icordebugthread2-getactivefunctions-method.md)|Gets an array of COR_ACTIVE_FUNCTION instances that contain data about the active functions in a thread's frames.|  
-|[GetConnectionID Method](../../../../docs/framework/unmanaged-api/debugging/icordebugthread2-getconnectionid-method.md)|Gets a connection identifier for this `ICorDebugThread2`.|  
-|[GetTaskID Method](../../../../docs/framework/unmanaged-api/debugging/icordebugthread2-gettaskid-method.md)|Gets a task identifier for this `ICorDebugThread2`.|  
-|[GetVolatileOSThreadID Method](../../../../docs/framework/unmanaged-api/debugging/icordebugthread2-getvolatileosthreadid-method.md)|Gets the operating system thread identifier for this `ICorDebugThread2`.|  
-|[InterceptCurrentException Method](../../../../docs/framework/unmanaged-api/debugging/icordebugthread2-interceptcurrentexception-method.md)|Allows a debugger to intercept the current exception on a thread.|  
+|[GetActiveFunctions Method](icordebugthread2-getactivefunctions-method.md)|Gets an array of COR_ACTIVE_FUNCTION instances that contain data about the active functions in a thread's frames.|  
+|[GetConnectionID Method](icordebugthread2-getconnectionid-method.md)|Gets a connection identifier for this `ICorDebugThread2`.|  
+|[GetTaskID Method](icordebugthread2-gettaskid-method.md)|Gets a task identifier for this `ICorDebugThread2`.|  
+|[GetVolatileOSThreadID Method](icordebugthread2-getvolatileosthreadid-method.md)|Gets the operating system thread identifier for this `ICorDebugThread2`.|  
+|[InterceptCurrentException Method](icordebugthread2-interceptcurrentexception-method.md)|Allows a debugger to intercept the current exception on a thread.|  
   
 ## Remarks  
   
@@ -44,4 +44,4 @@ Serves as a logical extension to the ICorDebugThread interface.
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

@@ -28,7 +28,7 @@ int a = GetOriginalValue();
 int b = GetCurrentValue();  
   
 // Test for value equality.   
-if( b == a)   
+if (b == a)
 {  
     // The two integers are equal.  
 }  

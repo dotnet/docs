@@ -27,15 +27,11 @@ Using this pattern of derived classes, it is easy to add a new algorithm or a ne
 
 As an example of the different implementations available for an algorithm, consider symmetric algorithms. The base for all symmetric algorithms is <xref:System.Security.Cryptography.SymmetricAlgorithm>, which is inherited by the following algorithms:
 
-1. <xref:System.Security.Cryptography.Aes>
-
-2. <xref:System.Security.Cryptography.DES>
-
-3. <xref:System.Security.Cryptography.RC2>
-
-4. <xref:System.Security.Cryptography.Rijndael>
-
-5. <xref:System.Security.Cryptography.TripleDES>
+* <xref:System.Security.Cryptography.Aes>
+* <xref:System.Security.Cryptography.DES>
+* <xref:System.Security.Cryptography.RC2>
+* <xref:System.Security.Cryptography.Rijndael>
+* <xref:System.Security.Cryptography.TripleDES>
 
 <xref:System.Security.Cryptography.Aes> is inherited by two classes: <xref:System.Security.Cryptography.AesCryptoServiceProvider> and <xref:System.Security.Cryptography.AesManaged>. The <xref:System.Security.Cryptography.AesCryptoServiceProvider> class is a wrapper around the Windows Cryptography API (CAPI) implementation of Aes, whereas the <xref:System.Security.Cryptography.AesManaged> class is written entirely in managed code. There is also a third type of implementation, Cryptography Next Generation (CNG), in addition to the managed and CAPI implementations. An example of a CNG algorithm is <xref:System.Security.Cryptography.ECDiffieHellmanCng>. CNG algorithms are available on Windows Vista and later.
 
@@ -56,35 +52,22 @@ You can select an algorithm for different reasons: for example, for data integri
 Here is a list of recommended algorithms by application:
 
 - Data privacy:
-
   - <xref:System.Security.Cryptography.Aes>
-
 - Data integrity:
-
   - <xref:System.Security.Cryptography.HMACSHA256>
-
   - <xref:System.Security.Cryptography.HMACSHA512>
-
 - Digital signature:
-
   - <xref:System.Security.Cryptography.ECDsa>
-
   - <xref:System.Security.Cryptography.RSA>
-
 - Key exchange:
-
   - <xref:System.Security.Cryptography.ECDiffieHellman>
-
   - <xref:System.Security.Cryptography.RSA>
-
 - Random number generation:
-
   - <xref:System.Security.Cryptography.RNGCryptoServiceProvider>
-
 - Generating a key from a password:
-
   - <xref:System.Security.Cryptography.Rfc2898DeriveBytes>
 
 ## See also
 
 - [Cryptographic Services](../../../docs/standard/security/cryptographic-services.md)
+- [Applied Cryptography Protocols, Algorithms, and Source Code in C, by Bruce Schneier](https://www.schneier.com/books/applied_cryptography/)

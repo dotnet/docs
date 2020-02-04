@@ -126,5 +126,5 @@ For more information, see the following sections of the [C# language specificati
 - [C# reference](../index.md)
 - [Built-in types table](../keywords/built-in-types-table.md)
 - [Floating-point types](floating-point-numeric-types.md)
-- [Formatting numeric results table](../keywords/formatting-numeric-results-table.md)
+- [Standard numeric format strings](../../../standard/base-types/standard-numeric-format-strings.md)
 - [Numerics in .NET](../../../standard/numerics.md)

@@ -26,9 +26,9 @@ This hosting option consists of registering the application domain (AppDomain) t
 
 ### Internet Information Services (IIS)
 
-The IIS hosting option is integrated with ASP.NET and uses the features these technologies offer, such as process recycling, idle shutdown, process health monitoring, and message-based activation. On the [!INCLUDE[wxp](../../../includes/wxp-md.md)] and Windows Server 2003 operating systems, this is the preferred solution for hosting Web service applications that must be highly available and highly scalable. IIS also offers the integrated manageability that customers expect from an enterprise-class server product. This hosting option requires that IIS be properly configured, but it does not require that any hosting code be written as part of the application. For more information about how to configure IIS hosting for a WCF service, see [How to: Host a WCF Service in IIS](./feature-details/how-to-host-a-wcf-service-in-iis.md).
+The IIS hosting option is integrated with ASP.NET and uses the features these technologies offer, such as process recycling, idle shutdown, process health monitoring, and message-based activation. On the Windows XP and Windows Server 2003 operating systems, this is the preferred solution for hosting Web service applications that must be highly available and highly scalable. IIS also offers the integrated manageability that customers expect from an enterprise-class server product. This hosting option requires that IIS be properly configured, but it does not require that any hosting code be written as part of the application. For more information about how to configure IIS hosting for a WCF service, see [How to: Host a WCF Service in IIS](./feature-details/how-to-host-a-wcf-service-in-iis.md).
 
- IIS-hosted services can only use the HTTP transport. Its implementation in IIS 5.1 has introduced some limitations in [!INCLUDE[wxp](../../../includes/wxp-md.md)]. The message-based activation provided for a WCF service by IIS 5.1 on [!INCLUDE[wxp](../../../includes/wxp-md.md)] blocks any other self-hosted WCF service on the same computer from using port 80 to communicate. WCF services can run in the same AppDomain/Application Pool/Worker Process as other applications when hosted by IIS 6.0 on Windows Server 2003. But because WCF and IIS 6.0 both use the kernel-mode HTTP stack (HTTP.sys), IIS 6.0 can share port 80 with other self-hosted WCF services running on the same machine, unlike IIS 5.1.
+ IIS-hosted services can only use the HTTP transport. Its implementation in IIS 5.1 has introduced some limitations in Windows XP. The message-based activation provided for a WCF service by IIS 5.1 on Windows XP blocks any other self-hosted WCF service on the same computer from using port 80 to communicate. WCF services can run in the same AppDomain/Application Pool/Worker Process as other applications when hosted by IIS 6.0 on Windows Server 2003. But because WCF and IIS 6.0 both use the kernel-mode HTTP stack (HTTP.sys), IIS 6.0 can share port 80 with other self-hosted WCF services running on the same machine, unlike IIS 5.1.
 
 ### Windows Process Activation Service (WAS)
 
@@ -51,9 +51,9 @@ Windows Process Activation Service (WAS) is the new process activation mechanism
 
 |Hosting Environment|Platform Availability|Transports Supported|Process and AppDomain Recycling|
 |-------------------------|---------------------------|--------------------------|-------------------------------------|
-|Managed Applications ("Self-Hosted")|[!INCLUDE[wxp](../../../includes/wxp-md.md)], Windows Server 2003, Windows Vista,<br /><br /> Windows Server 2008|HTTP,<br /><br /> net.tcp,<br /><br /> net.pipe,<br /><br /> net.msmq|No|
-|Windows Services (formerly known as NT services)|[!INCLUDE[wxp](../../../includes/wxp-md.md)], Windows Server 2003, Windows Vista,<br /><br /> Windows Server 2008|HTTP,<br /><br /> net.tcp,<br /><br /> net.pipe,<br /><br /> net.msmq|No|
-|IIS 5.1|[!INCLUDE[wxp](../../../includes/wxp-md.md)]|HTTP|Yes|
+|Managed Applications ("Self-Hosted")|Windows XP, Windows Server 2003, Windows Vista,<br /><br /> Windows Server 2008|HTTP,<br /><br /> net.tcp,<br /><br /> net.pipe,<br /><br /> net.msmq|No|
+|Windows Services (formerly known as NT services)|Windows XP, Windows Server 2003, Windows Vista,<br /><br /> Windows Server 2008|HTTP,<br /><br /> net.tcp,<br /><br /> net.pipe,<br /><br /> net.msmq|No|
+|IIS 5.1|Windows XP|HTTP|Yes|
 |IIS 6.0|Windows Server 2003|HTTP|Yes|
 |Windows Process Activation Service (WAS)|Windows Vista, Windows Server 2008|HTTP,<br /><br /> net.tcp,<br /><br /> net.pipe,<br /><br /> net.msmq|Yes|
 

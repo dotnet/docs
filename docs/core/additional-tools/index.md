@@ -1,5 +1,5 @@
 ---
-title: Additional CLI tools
+title: Additional tools
 description: An overview of the additional tools you can install that support and extend .NET Core functionality.
 author: mlacouture
 ms.date: 12/02/2019
@@ -7,7 +7,7 @@ ms.custom: "mvc"
 ---
 # .NET Core additional tools overview
 
-This section compiles a list of tools that support and extend the .NET Core functionality, in addition to the [.NET Core command-line interface (CLI)](../tools/index.md) tools.
+This section compiles a list of tools that support and extend the .NET Core functionality, in addition to the .NET Core CLI.
 
 ## [.NET Core Uninstall Tool](uninstall-tool.md)
 
@@ -19,9 +19,9 @@ The WCF (Windows Communication Foundation) Web Service Reference is a Visual Stu
 
 ## [WCF dotnet-svcutil tool](dotnet-svcutil-guide.md)
 
-The WCF (Windows Communication Foundation) dotnet-svcutil tool is a .NET Core CLI tool that retrieves metadata from a web service on a network location or from a WSDL file. It generates a source file compatible with .NET Core, defining a WCF proxy class with methods that you can use to access the web service operations.
+The WCF (Windows Communication Foundation) dotnet-svcutil tool is a .NET tool that retrieves metadata from a web service on a network location or from a WSDL file. It generates a source file compatible with .NET Core, defining a WCF proxy class with methods that you can use to access the web service operations.
 
-The **dotnet-svcutil** tool is an alternative option to the [**WCF Web Service Reference**](wcf-web-service-reference-guide.md) Visual Studio connected service provider, which first shipped with Visual Studio 2017 version 15.5. The **dotnet-svcutil** tool, as a .NET Core CLI tool, is available cross-platform on Linux, macOS, and Windows.
+The **dotnet-svcutil** tool is an alternative option to the [**WCF Web Service Reference**](wcf-web-service-reference-guide.md) Visual Studio connected service provider, which first shipped with Visual Studio 2017 version 15.5. The **dotnet-svcutil** tool, as a .NET tool, is available cross-platform on Linux, macOS, and Windows.
 
 ## [WCF dotnet-svcutil.xmlserializer tool](dotnet-svcutil.xmlserializer-guide.md)
 

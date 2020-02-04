@@ -10,9 +10,9 @@ Represents the debug symbol information for a static field.
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetAddress Method](../../../../docs/framework/unmanaged-api/debugging/icordebugstaticfieldsymbol-getaddress-method.md)|Gets the address of the static field.|  
-|[GetName Method](../../../../docs/framework/unmanaged-api/debugging/icordebugstaticfieldsymbol-getname-method.md)|Gets the name of the static field.|  
-|[GetSize Method](../../../../docs/framework/unmanaged-api/debugging/icordebugstaticfieldsymbol-getsize-method.md)|Gets the size in bytes of the static field.|  
+|[GetAddress Method](icordebugstaticfieldsymbol-getaddress-method.md)|Gets the address of the static field.|  
+|[GetName Method](icordebugstaticfieldsymbol-getname-method.md)|Gets the name of the static field.|  
+|[GetSize Method](icordebugstaticfieldsymbol-getsize-method.md)|Gets the size in bytes of the static field.|  
   
 ## Remarks  
  The `ICorDebugStaticFieldSymbol` interface is used to retrieve the debug symbol information for a static field.  
@@ -31,6 +31,6 @@ Represents the debug symbol information for a static field.
   
 ## See also
 
-- [ICorDebugInstanceFieldSymbol Interface](../../../../docs/framework/unmanaged-api/debugging/icordebuginstancefieldsymbol-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [ICorDebugInstanceFieldSymbol Interface](icordebuginstancefieldsymbol-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

@@ -48,6 +48,6 @@ HRESULT ObjectAllocated(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
-- [ClassLoadStarted Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-classloadstarted-method.md)
-- [ClassLoadFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-classloadfinished-method.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [ClassLoadStarted Method](icorprofilercallback-classloadstarted-method.md)
+- [ClassLoadFinished Method](icorprofilercallback-classloadfinished-method.md)

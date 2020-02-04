@@ -1,6 +1,6 @@
 ---
-title: Publish .NET Core apps with the CLI
-description: Learn to publish a .NET Core app with the .NET Core SDK command-line interface (CLI) tools.
+title: Publish apps with the .NET Core CLI
+description: Learn to publish a .NET Core app using the .NET Core CLI commands.
 author: thraka
 ms.author: adegeo
 ms.date: 12/12/2019
@@ -9,7 +9,7 @@ dev_langs:
   - "vb"
 ---
 
-# Publish .NET Core apps with the CLI
+# Publish .NET Core apps with the .NET Core CLI
 
 This article demonstrates how you can publish your .NET Core application from the command line. .NET Core provides three ways to publish your applications. Framework-dependent deployment produces a cross-platform .dll file that uses the locally installed .NET Core runtime. Framework-dependent executable produces a platform-specific executable that uses the locally installed .NET Core runtime. Self-contained executable produces a platform-specific executable and includes a local copy of the .NET Core runtime.
 

@@ -1,5 +1,5 @@
 ---
-title: "How to: Reflect Data Source Updates in a Windows Forms Control with the BindingSource"
+title: Reflect Data Source Updates in Control with BindingSource
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

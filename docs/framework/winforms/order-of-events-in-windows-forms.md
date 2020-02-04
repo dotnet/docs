@@ -1,5 +1,5 @@
 ---
-title: "Order of Events in Windows Forms"
+title: "Order of Events"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "events [Windows Forms], order of"

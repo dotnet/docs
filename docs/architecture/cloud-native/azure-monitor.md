@@ -29,7 +29,7 @@ No modern application would be complete without some artificial intelligence or 
 
 Application Insights provides a powerful query language called Kusto that can be used to find records, summarize them, and even plot charts. For instance, this query will locate all the records for the month of November 2007, group them by state, and plot the top 10 as a pie chart.
 
-```
+```kusto
 StormEvents
 | where StartTime >= datetime(2007-11-01) and StartTime < datetime(2007-12-01)
 | summarize count() by State

@@ -130,9 +130,9 @@ public class MyServiceHost : ServiceHost
   
 - [Debugging Windows Authentication Errors](./feature-details/debugging-windows-authentication-errors.md)  
   
-- [Registering Kerberos Service Principal Names by Using Http.sys](https://go.microsoft.com/fwlink/?LinkId=86943)  
+- [Registering Kerberos Service Principal Names by Using Http.sys](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms178119(v=sql.105))  
   
-- [Kerberos Explained](https://go.microsoft.com/fwlink/?LinkId=86946)  
+- [Kerberos Explained](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-2000-server/bb742516(v%3dtechnet.10))  
   
 <a name="BKMK_q5"></a>   
 ## When I throw a FaultException\<Exception> where the type is an exception, I always receive a general FaultException type on the client and not the generic type. What’s happening?  
@@ -152,7 +152,7 @@ public class MyServiceHost : ServiceHost
   
 <a name="BKMK_q77"></a>   
 ## I’m using an X.509 certificate with my service and I get a System.Security.Cryptography.CryptographicException. What’s happening?  
- This commonly occurs after changing the user account under which the IIS worker process runs. For example, in [!INCLUDE[wxp](../../../includes/wxp-md.md)], if you change the default user account that the Aspnet_wp.exe runs under from ASPNET to a custom user account, you may see this error. If using a private key, the process that uses it will need to have permissions to access the file storing that key.  
+ This commonly occurs after changing the user account under which the IIS worker process runs. For example, in Windows XP, if you change the default user account that the Aspnet_wp.exe runs under from ASPNET to a custom user account, you may see this error. If using a private key, the process that uses it will need to have permissions to access the file storing that key.  
   
  If this is the case, you must give read access privileges to the process's account for the file containing the private key. For example, if the IIS worker process is running under the Bob account, then you will need to give Bob read access to the file containing the private key.  
   

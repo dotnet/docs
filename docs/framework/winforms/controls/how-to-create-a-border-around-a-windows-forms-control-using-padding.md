@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Border Around a Windows Forms Control Using Padding"
+title: Create Border Around a Control Using Padding
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

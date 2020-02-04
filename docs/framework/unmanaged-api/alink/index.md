@@ -6,8 +6,6 @@ f1_keywords:
 helpviewer_keywords: 
   - "ALink API"
 ms.assetid: f4a84be2-309c-439c-b686-6facb85f4654
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ALink API (Unmanaged API Reference)
 Supports creating .NET Framework assemblies and unbound modules.  

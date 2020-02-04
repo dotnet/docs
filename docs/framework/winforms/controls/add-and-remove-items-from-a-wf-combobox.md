@@ -1,5 +1,5 @@
 ---
-title: "How to: Add and Remove Items from a Windows Forms ComboBox, ListBox, or CheckedListBox Control"
+title: Add and Remove Items from ComboBox, ListBox, or CheckedListBox Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

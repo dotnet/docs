@@ -3,7 +3,6 @@ title: .NET Core SDK telemetry
 description: Discover the .NET Core SDK telemetry features that collect usage information for analysis, which data is collected, and how to disable it.
 author: KathleenDollard
 ms.date: 08/27/2019
-ms.custom: "seodec18"
 ---
 # .NET Core SDK telemetry
 
@@ -108,7 +107,7 @@ If the .NET Core CLI/SDK crashes, it collects the name of the exception and stac
 
 The following example shows the kind of data that is collected:
 
-```
+```console
 System.IO.IOException
 at System.ConsolePal.WindowsConsoleStream.Write(Byte[] buffer, Int32 offset, Int32 count)
 at System.IO.StreamWriter.Flush(Boolean flushStream, Boolean flushEncoder)

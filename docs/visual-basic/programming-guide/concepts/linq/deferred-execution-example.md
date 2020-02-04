@@ -1,5 +1,5 @@
 ---
-title: "Deferred Execution Example (Visual Basic)"
+title: "Deferred Execution Example"
 ms.date: 07/20/2015
 ms.assetid: 9a22bea1-c755-4aac-800a-fcd9e5107ace
 ---

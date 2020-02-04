@@ -24,16 +24,19 @@ HRESULT GetFunctionFromIP3([in] LPCBYTE ip,
                            [out] ReJITID * pReJitId);
 ```
 
-#### Parameters
+## Parameters
 
-`ip` \
-[in] The instruction pointer in managed code.
+- `ip`
 
-`pFunctionId` \
-[out] The function ID.
+  \[in] The instruction pointer in managed code.
 
-`pReJitId` \
-[out] The identity of the JIT-recompiled version of the function.
+- `pFunctionId`
+
+  \[out] The function ID.
+
+- `pReJitId`
+
+  \[out] The identity of the JIT-recompiled version of the function.
 
 ## Remarks
 
@@ -51,4 +54,4 @@ This method works for both dynamic and non-dynamic methods. It is a superset of 
 
 ## See also
 
-- [ICorProfilerInfo8 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo8-interface.md)
+- [ICorProfilerInfo8 Interface](icorprofilerinfo8-interface.md)

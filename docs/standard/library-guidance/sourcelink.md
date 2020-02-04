@@ -1,8 +1,6 @@
 ---
 title: Source Link and .NET libraries
 description: Best practice recommendations for using Source Link to improve debugging for .NET libraries.
-author: jamesnk
-ms.author: mairaw
 ms.date: 01/15/2019
 ---
 # Source Link
@@ -21,7 +19,7 @@ You can use [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuG
 
 ![Source Link in NuGet Package Explorer](./media/sourcelink/nuget-package-explorer-sourcelink.png "Source Link in NuGet Package Explorer")
 
-**✔️ CONSIDER** using Source Link to add source control metadata to your assemblies and NuGet packages.
+✔️ CONSIDER using Source Link to add source control metadata to your assemblies and NuGet packages.
 
 > [!TIP]
 > You can further enhance a developer's debugging experience by adding debugger attributes to your types.
@@ -30,7 +28,7 @@ You can use [NuGet Package Explorer](https://github.com/NuGetPackageExplorer/NuG
 > * <xref:System.Diagnostics.DebuggerStepThroughAttribute> instructs the debugger to step through the code instead of stepping into the code.
 > * <xref:System.Diagnostics.DebuggerBrowsableAttribute> controls whether a member is displayed in the debugger variable windows.
 
-**✔️ CONSIDER** publishing symbol files (`*.pdb`).
+✔️ CONSIDER publishing symbol files (`*.pdb`).
 
 > For the best debugging experience your library should publish symbol files as well as use Source Link. For more information about symbol files and symbol packages, see [Symbol packages](./nuget.md#symbol-packages).
 

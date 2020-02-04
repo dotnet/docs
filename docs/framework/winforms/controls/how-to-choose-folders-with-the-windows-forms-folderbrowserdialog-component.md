@@ -1,5 +1,5 @@
 ---
-title: "How to: Choose Folders with the Windows Forms FolderBrowserDialog Component"
+title: Choose Folders with FolderBrowserDialog Component
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

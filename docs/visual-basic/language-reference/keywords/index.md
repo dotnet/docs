@@ -1,5 +1,5 @@
 ---
-title: "Keywords (Visual Basic)"
+title: "Keywords"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "reserved keywords, Visual Basic"

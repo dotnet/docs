@@ -1,5 +1,6 @@
 ---
 title: "SQL Server Features and ADO.NET"
+titleSuffix: ""
 ms.date: "03/30/2017"
 ms.assetid: 2839529b-a79b-4450-be5d-07a98dbc7a0f
 ---

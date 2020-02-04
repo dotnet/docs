@@ -1,5 +1,5 @@
 ---
-title: "DirectCast Operator (Visual Basic)"
+title: "DirectCast Operator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.directCast"

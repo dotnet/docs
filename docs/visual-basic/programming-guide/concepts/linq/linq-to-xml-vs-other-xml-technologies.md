@@ -44,7 +44,7 @@ This topic compares [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] to the
   
  The main advantage of XmlLite is that it is a lightweight, fast XML parser that is secure in most scenarios. Its threat surface area is very small. If you have to parse untrusted documents and you want to protect against attacks such as denial of service or exposure of data, XmlLite might be a good option.  
   
- XmlLite is not integrated with [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)]. It does not yield the programmer productivity improvements that are the motivating force behind [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)].  
+ XmlLite is not integrated with Language-Integrated Query (LINQ). It does not yield the programmer productivity improvements that are the motivating force behind LINQ.  
   
 ## See also
 

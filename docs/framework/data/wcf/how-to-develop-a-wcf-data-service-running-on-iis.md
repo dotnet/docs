@@ -126,7 +126,7 @@ After you create the service, you must explicitly provide access to data service
 
 5. Connect the data model to the database by doing one of the following steps, and then click **Next**:
 
-    - If you do not have a database connection already configured, click **New Connection** and create a new connection. For more information, see [How to: Create Connections to SQL Server Databases](https://go.microsoft.com/fwlink/?LinkId=123631). This SQL Server instance must have the Northwind sample database attached.
+    - If you do not have a database connection already configured, click **New Connection** and create a new connection. For more information, see [How to: Create Connections to SQL Server Databases](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/s4yys16a(v=vs.90)). This SQL Server instance must have the Northwind sample database attached.
 
          \- or -
 
@@ -145,7 +145,7 @@ After you create the service, you must explicitly provide access to data service
    ![WCF Data Service item template in Visual Studio 2015](./media/wcf-data-service-item-template.png)
 
    > [!NOTE]
-   > The **WCF Data Service** template is available in Visual Studio 2015, but not in Visual Studio 2017.
+   > The **WCF Data Service** template is available in Visual Studio 2015, but not in Visual Studio 2017 or later.
 
 3. For the name of the service, enter `Northwind`.
 

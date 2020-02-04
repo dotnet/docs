@@ -1,5 +1,5 @@
 ---
-title: "How to: Calculate Intermediate Values (Visual Basic)"
+title: "How to: Calculate Intermediate Values"
 ms.date: 07/20/2015
 ms.assetid: 933a97b2-dfe7-4f4d-94ad-e6e20df84abd
 ---

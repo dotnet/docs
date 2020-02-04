@@ -1,5 +1,5 @@
 ---
-title: "How to: Work with Dictionaries Using LINQ to XML (Visual Basic)"
+title: "How to: Work with Dictionaries Using LINQ to XML"
 ms.date: 07/20/2015
 ms.assetid: 6cb3f969-1986-414a-b850-87418712edea
 ---

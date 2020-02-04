@@ -1,5 +1,5 @@
 ---
-title: "How to: Write an Extension Method (Visual Basic)"
+title: "How to: Write an Extension Method"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "extending data types [Visual Basic]"

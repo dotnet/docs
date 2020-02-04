@@ -1,5 +1,5 @@
 ---
-title: "Windows Forms Control Development Basics"
+title: Basics for developing controls
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "custom controls [Windows Forms], derivation types"

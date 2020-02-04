@@ -1,5 +1,5 @@
 ---
-title: "Troubleshooting Arrays (Visual Basic)"
+title: "Troubleshooting Arrays"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "troubleshooting arrays"

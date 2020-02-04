@@ -1,5 +1,5 @@
 ---
-title: "How to: Invoke a Delegate Method (Visual Basic)"
+title: "How to: Invoke a Delegate Method"
 ms.date: 07/20/2015
 ms.assetid: b56866ae-abf9-4a5a-a855-486359455e9c
 ---

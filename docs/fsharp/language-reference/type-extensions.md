@@ -92,7 +92,7 @@ Optional extensions do not appear on the extended type when examined by reflecti
 
 Optional extension members are compiled to static members for which the object instance is passed implicitly as the first parameter. However, they act as if they're instance members or static members according to how they're declared.
 
-Optional extension members are also not visible to C# or VB consumers. They can only be consumed in other F# code.
+Optional extension members are also not visible to C# or Visual Basic consumers. They can only be consumed in other F# code.
 
 ## Generic limitation of intrinsic and optional type extensions
 

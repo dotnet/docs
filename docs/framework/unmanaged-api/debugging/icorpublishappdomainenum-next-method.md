@@ -35,7 +35,7 @@ HRESULT Next (
  [in] The number of elements to be retrieved.  
   
  `objects`  
- [out] A pointer to the array of retrieved [ICorPublishAppDomain](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomain-interface.md) objects, each of which represents an application domain.  
+ [out] A pointer to the array of retrieved [ICorPublishAppDomain](icorpublishappdomain-interface.md) objects, each of which represents an application domain.  
   
  `pceltFetched`  
  [out] Pointer to the number of application domains actually returned. This value may be null if `celt` is one.  
@@ -51,4 +51,4 @@ HRESULT Next (
   
 ## See also
 
-- [ICorPublishAppDomainEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomainenum-interface.md)
+- [ICorPublishAppDomainEnum Interface](icorpublishappdomainenum-interface.md)

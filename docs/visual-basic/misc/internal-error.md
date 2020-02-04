@@ -1,5 +1,5 @@
 ---
-title: "Internal error (Visual Basic)"
+title: "Internal error"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID51"

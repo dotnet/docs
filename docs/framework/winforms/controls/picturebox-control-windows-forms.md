@@ -1,5 +1,5 @@
 ---
-title: "PictureBox Control (Windows Forms)"
+title: "PictureBox Control"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "PictureBox control [Windows Forms]"

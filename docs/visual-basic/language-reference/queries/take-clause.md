@@ -1,5 +1,5 @@
 ---
-title: "Take Clause (Visual Basic)"
+title: "Take Clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.QueryTake"

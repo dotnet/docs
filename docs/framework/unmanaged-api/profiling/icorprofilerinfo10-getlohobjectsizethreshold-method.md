@@ -22,10 +22,11 @@ Gets the value of the configured large object heap (LOH) threshold.
 HRESULT GetLOHObjectSizeThreshold( [out] DWORD *pThreshold );
 ```
 
-#### Parameters
+## Parameters
 
-`pThreshold` \
-[out] The large object heap threshold in bytes.
+- `pThreshold`
+
+  \[out] The large object heap threshold in bytes.
 
 ## Remarks
 
@@ -33,7 +34,7 @@ Objects larger than the large object heap threshold will be allocated on the lar
 
 ## Requirements
 
-**Platforms:** See [.NET Core supported operating systems](../../../core/windows-prerequisites.md#net-core-supported-operating-systems).
+**Platforms:** See [.NET Core supported operating systems](../../../core/install/dependencies.md?tabs=netcore30&pivots=os-windows).
 
 **Header:** CorProf.idl, CorProf.h
 
@@ -43,4 +44,4 @@ Objects larger than the large object heap threshold will be allocated on the lar
 
 ## See also
 
-- [ICorProfilerInfo10 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo10-interface.md)
+- [ICorProfilerInfo10 Interface](icorprofilerinfo10-interface.md)

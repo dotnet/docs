@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 3b5cff02-2005-44eb-a2bc-50214c4b0e1d
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback4::ReJITCompilationFinished Method
 Notifies the profiler that the just-in-time (JIT) compiler has finished recompiling a function.  
@@ -56,7 +54,7 @@ HRESULT ReJITCompilationFinished(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
-- [ICorProfilerCallback4 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback4-interface.md)
-- [JITCompilationStarted Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-jitcompilationstarted-method.md)
-- [ReJITCompilationStarted Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback4-rejitcompilationstarted-method.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [ICorProfilerCallback4 Interface](icorprofilercallback4-interface.md)
+- [JITCompilationStarted Method](icorprofilercallback-jitcompilationstarted-method.md)
+- [ReJITCompilationStarted Method](icorprofilercallback4-rejitcompilationstarted-method.md)

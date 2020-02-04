@@ -49,7 +49,6 @@ public class ClassWithFriendMethod
 
 ```vb
 Imports System.Runtime.CompilerServices
-Imports System
 <Assembly: InternalsVisibleTo("AssemblyB")>
 
 ' Friend class.

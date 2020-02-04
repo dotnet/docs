@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: d6a5fa8b-09c6-47a5-b60e-6cf2e355df30
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::FunctionUnloadStarted Method
 Notifies the profiler that the runtime has started to unload a function.  
@@ -28,10 +26,12 @@ HRESULT FunctionUnloadStarted(
     [in] FunctionID functionId);   
 ```  
   
-## Parameters  
- `functionId`  
- [in] The ID of the function that is being unloaded.  
-  
+## Parameters
+
+- `functionId`
+
+  \[in] The ID of the function that is being unloaded.
+
 ## Remarks  
  The value of the `functionId` parameter is no longer valid after this method returns to the caller.  
   
@@ -46,4 +46,4 @@ HRESULT FunctionUnloadStarted(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)

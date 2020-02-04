@@ -5,7 +5,7 @@ ms.assetid: e0aef017-4381-4f2f-a904-6e1ed898687e
 ---
 # Windows Workflow (WF) Samples
 
-You can [download Windows Workflow samples](https://go.microsoft.com/fwlink/?LinkId=150780) that provide instruction on various aspects of Windows Workflow Foundation (WF).
+You can [download Windows Workflow samples](https://www.microsoft.com/download/details.aspx?id=21459) that provide instruction on various aspects of Windows Workflow Foundation (WF).
 
 The articles in this section describe some of the samples in the download package. For a complete documentation set that covers all of the samples, check the [.NET Framework 4 WF samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd483375(v%3dvs.100)) section.
 

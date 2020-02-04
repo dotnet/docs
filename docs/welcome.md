@@ -3,7 +3,7 @@ title: Welcome to .NET
 description: Getting started with the .NET family of technologies.
 author: mairaw
 ms.author: mairaw
-ms.date: 09/23/2019
+ms.date: 12/03/2019
 ms.custom: "updateeachrelease"
 ---
 # Welcome to .NET
@@ -23,9 +23,9 @@ For news about .NET, check the following blogs:
 
 Also follow the latest .NET events:
 
+- [Microsoft Ignite](https://www.microsoft.com/ignite)
 - [Microsoft Build](https://www.microsoft.com/build)
 - [.NET Conf](https://www.dotnetconf.net/)
-- [Microsoft Connect()](https://www.microsoft.com/connectevent)
 
 For information about the latest features added to the .NET implementations and supported languages, see the following articles:
 
@@ -41,9 +41,9 @@ This documentation covers the breadth of .NET across platforms and languages. Yo
 - [.NET Guide](standard/index.md)
 - [.NET Core Guide](core/index.md)
 - [.NET Framework Guide](framework/index.md)
-- [C# Guide](csharp/index.md)
-- [F# Guide](fsharp/index.md)
-- [Visual Basic Guide](visual-basic/index.md)
+- [C# Guide](csharp/index.yml)
+- [F# Guide](fsharp/index.yml)
+- [Visual Basic Guide](visual-basic/index.yml)
 - [ML.NET Guide](machine-learning/index.yml)
 - [.NET for Apache Spark](spark/index.yml)
 - [.NET Application Architecture](architecture/index.yml)
@@ -61,11 +61,10 @@ Explore videos on web, mobile, desktop, C#, machine learning, containers/Docker,
 This documentation is completely [open source](https://github.com/dotnet/docs). You can contribute in any way you like, from creating issues to writing documentation. Additionally, much of .NET itself is also open source. The following list shows the main .NET GitHub repositories:
 
 - [.NET Core Home](https://github.com/dotnet/core)
-- [.NET Libraries](https://github.com/dotnet/corefx)
-- [.NET Core Runtime](https://github.com/dotnet/coreclr)
-- [.NET Core CLI](https://github.com/dotnet/cli)
+- [.NET Core runtime](https://github.com/dotnet/runtime)
+- [.NET Core SDK](https://github.com/dotnet/sdk)
 - [Roslyn (C# and Visual Basic) Compiler Platform and IDE Tools](https://github.com/dotnet/roslyn)
-- [F# Compiler and IDE Tools](https://github.com/microsoft/visualfsharp)
+- [F# Compiler and IDE Tools](https://github.com/dotnet/fsharp)
 - [Windows Forms](https://github.com/dotnet/winforms)
 - [WPF](https://github.com/dotnet/wpf)
 

@@ -1,5 +1,5 @@
 ---
-title: "How to: Add Items to Windows Forms DomainUpDown Controls Programmatically"
+title: Add Items to DomainUpDown Controls Programmatically
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

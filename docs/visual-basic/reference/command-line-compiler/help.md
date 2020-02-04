@@ -1,5 +1,5 @@
 ---
-title: "-help, -? (Visual Basic)"
+title: "-help, -?"
 ms.date: 03/10/2018
 helpviewer_keywords: 
   - "/? compiler option [Visual Basic]"

@@ -1,5 +1,5 @@
 ---
-title: "Event Handlers Overview (Windows Forms)"
+title: "Event Handlers Overview"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -1,5 +1,5 @@
 ---
-title: Syntax used by DebugView property (Visual Basic)
+title: Syntax used by DebugView property
 description: Describes the special syntax used by the DebugView property to produce a string representation of expression trees
 author: zspitz
 ms.author: wiwagn

@@ -49,7 +49,7 @@ WCF Data Services exposes entity data as a data service. The reflection provider
    ![WCF Data Service item template in Visual Studio 2015](./media/wcf-data-service-item-template.png)
 
    > [!NOTE]
-   > The **WCF Data Service** template is available in Visual Studio 2015, but not in Visual Studio 2017.
+   > The **WCF Data Service** template is available in Visual Studio 2015, but not in Visual Studio 2017 or later.
 
 3. Supply a name for the service, and then click **OK**.
 

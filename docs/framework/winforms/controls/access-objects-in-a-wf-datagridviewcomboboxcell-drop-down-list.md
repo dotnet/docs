@@ -1,5 +1,5 @@
 ---
-title: "How to: Access Objects in a Windows Forms DataGridViewComboBoxCell Drop-Down List"
+title: Access Objects in DataGridViewComboBoxCell Drop-Down List
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

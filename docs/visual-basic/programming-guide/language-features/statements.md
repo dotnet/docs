@@ -1,5 +1,5 @@
 ---
-title: "Statements in Visual Basic"
+title: "Statements"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "variables [Visual Basic], declaring"

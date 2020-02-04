@@ -23,7 +23,7 @@ Implements ICorDebugEnum methods, and enumerates ICorDebugModule arrays.
   
 |Method|Description|  
 |------------|-----------------|  
-|[Next Method](../../../../docs/framework/unmanaged-api/debugging/icordebugmoduleenum-next-method.md)|Gets the specified number of `ICorDebugModule` instances from the enumeration, starting at the current position.|  
+|[Next Method](icordebugmoduleenum-next-method.md)|Gets the specified number of `ICorDebugModule` instances from the enumeration, starting at the current position.|  
   
 ## Remarks  
   
@@ -41,4 +41,4 @@ Implements ICorDebugEnum methods, and enumerates ICorDebugModule arrays.
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

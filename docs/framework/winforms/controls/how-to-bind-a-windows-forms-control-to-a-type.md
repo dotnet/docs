@@ -1,5 +1,5 @@
 ---
-title: "How to: Bind a Windows Forms Control to a Type"
+title: Bind Control to a Type
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

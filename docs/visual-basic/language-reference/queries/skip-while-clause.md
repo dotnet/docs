@@ -1,5 +1,5 @@
 ---
-title: "Skip While Clause (Visual Basic)"
+title: "Skip While Clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.QuerySkipWhile"

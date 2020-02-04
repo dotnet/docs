@@ -66,8 +66,5 @@ This section of the documentation provides information about Windows Communicati
  [General Reference](general-reference.md)\
  The section describes the elements that are used to configure Windows Communication Foundation clients and services.
 
- [Feedback and Community](feedback-and-community.md)\
- Information about how to provide feedback about Windows Communication Foundation
-
  [Privacy Information](privacy-information.md)\
  Information regarding WCF and Privacy

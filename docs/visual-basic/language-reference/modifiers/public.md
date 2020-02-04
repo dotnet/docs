@@ -1,5 +1,5 @@
 ---
-title: "Public (Visual Basic)"
+title: "Public"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Public"

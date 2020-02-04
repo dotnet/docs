@@ -345,7 +345,7 @@ Each project template may have additional options available. The core templates 
 
 - **`--no-https`**
 
-  Project doesn't require HTTPS. `app.UseHsts` and `app.UseHttpsRedirection` aren't added to `Startup.Configure`. This option only applies if `Individual`, `IndividualB2C`, `SingleOrg`, or `MultiOrg` aren't being used.
+  Turns off HTTPS. This option only applies if `Individual`, `IndividualB2C`, `SingleOrg`, or `MultiOrg` aren't being used for `--auth`.
 
 - **`-uld|--use-local-db`**
 
@@ -380,7 +380,7 @@ Each project template may have additional options available. The core templates 
 
 - **`--no-https`**
 
-  Project doesn't require HTTPS.
+  Turns off HTTPS.
 
 ***
 
@@ -443,7 +443,7 @@ Each project template may have additional options available. The core templates 
 
 - **`--no-https`**
 
-  Project doesn't require HTTPS. `app.UseHsts` and `app.UseHttpsRedirection` aren't added to `Startup.Configure`. This option only applies if `Individual`, `IndividualB2C`, `SingleOrg`, or `MultiOrg` aren't being used.
+  Turns off HTTPS. This option only applies if `Individual`, `IndividualB2C`, `SingleOrg`, or `MultiOrg` aren't being used.
 
 - **`-uld|--use-local-db`**
 
@@ -490,7 +490,7 @@ Each project template may have additional options available. The core templates 
 
 - **`--no-https`**
 
-  Project doesn't require HTTPS. This option only applies if authentication is `None`.
+  Turns off HTTPS. This option only applies if authentication is `None`.
 
 - **`-uld|--use-local-db`**
 
@@ -532,7 +532,7 @@ Each project template may have additional options available. The core templates 
 
 - **`--no-https`**
 
-  Project doesn't require HTTPS.
+  Turns off HTTPS.
 
 ***
 

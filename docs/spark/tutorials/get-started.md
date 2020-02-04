@@ -92,11 +92,11 @@ If you receive a `'spark-submit' is not recognized as an internal or external co
 
 ### 5. Install .NET for Apache Spark
 
-Download the [Microsoft.Spark.Worker](https://github.com/dotnet/spark/releases) release from the .NET for Apache Spark GitHub. For example if you're on a Windows machine and plan to use .NET Core, [download the Windows x64 netcoreapp2.1 release](https://github.com/dotnet/spark/releases/download/v0.6.0/Microsoft.Spark.Worker.netcoreapp2.1.win-x64-0.6.0.zip).
+Download the [Microsoft.Spark.Worker](https://github.com/dotnet/spark/releases) release from the .NET for Apache Spark GitHub. For example if you're on a Windows machine and plan to use .NET Core, [download the Windows x64 netcoreapp3.1 release](https://github.com/dotnet/spark/releases/download/v0.6.0/Microsoft.Spark.Worker.netcoreapp3.1.win-x64-0.8.0.zip).
 
 To extract the Microsoft.Spark.Worker:
 
-* Locate the **Microsoft.Spark.Worker.netcoreapp2.1.win-x64-0.6.0.zip** file that you downloaded.
+* Locate the **Microsoft.Spark.Worker.netcoreapp3.1.win-x64-0.6.0.zip** file that you downloaded.
 * Right click and select **7-Zip -> Extract files...**.
 * Enter **C:\bin** in the **Extract to** field.
 * Uncheck the checkbox below the **Extract to** field.
@@ -127,7 +127,7 @@ Finally, double-check that you can run `dotnet`, `java`, `mvn`, `spark-shell` fr
 
 ### 1. Create a console app
 
-In your command prompt, run the following commands to create a new console application:
+In your command prompt or terminal, run the following commands to create a new console application:
 
 ```dotnetcli
 dotnet new console -o mySparkApp
@@ -138,7 +138,7 @@ The `dotnet` command creates a `new` application of type `console` for you. The 
 
 ### 2. Install NuGet package
 
-To use .NET for Apache Spark in an app, install the Microsoft.Spark package. In your command prompt, run the following command:
+To use .NET for Apache Spark in an app, install the Microsoft.Spark package. In your command prompt or terminal, run the following command:
 
 `dotnet add package Microsoft.Spark --version 0.8.0`
 
@@ -156,7 +156,7 @@ namespace MySparkApp
         static void Main(string[] args)
         {
             // Create a Spark session.
-            var spark = SparkSession
+            SparkSession spark = SparkSession
                 .Builder()
                 .AppName("word_count_sample")
                 .GetOrCreate();
@@ -165,7 +165,7 @@ namespace MySparkApp
             DataFrame dataFrame = spark.Read().Text("input.txt");
 
             // Count words.
-            var words = dataFrame
+            DataFrame words = dataFrame
                 .Select(Functions.Split(Functions.Col("value"), " ").Alias("words"))
                 .Select(Functions.Explode(Functions.Col("words"))
                 .Alias("word"))

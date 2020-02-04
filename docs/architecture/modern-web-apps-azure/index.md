@@ -10,10 +10,7 @@ ms.date: 12/4/2019
 
 ![Book cover image of the Architect Modern Web Applications guide.](./media/index/web-application-guide-cover-image.png)
 
-![Book cover](./media/cover-small.png)
-
 **EDITION v3.1** - Updated to ASP.NET Core 3.1
-
 
 PUBLISHED BY
 

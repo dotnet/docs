@@ -1,5 +1,5 @@
 ---
-title: "How to: Chain Axis Method Calls (LINQ to XML) (Visual Basic)"
+title: "How to: Chain Axis Method Calls (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: e4e22942-39bd-460f-b3c0-9f09e53d3aa9
 ---

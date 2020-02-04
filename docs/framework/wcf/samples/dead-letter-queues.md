@@ -10,7 +10,7 @@ This sample demonstrates how to handle and process messages that have failed del
 > The setup procedure and build instructions for this sample are located at the end of this topic.
 
 > [!NOTE]
-> This sample demonstrates each application dead letter queue that is only available on [!INCLUDE[wv](../../../../includes/wv-md.md)]. The sample can be modified to use the default system-wide queues for MSMQ 3.0 on [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)] and [!INCLUDE[wxp](../../../../includes/wxp-md.md)].
+> This sample demonstrates each application dead letter queue that is only available on Windows Vista. The sample can be modified to use the default system-wide queues for MSMQ 3.0 on Windows Server 2003 and [!INCLUDE[wxp](../../../../includes/wxp-md.md)].
 
  In queued communication, the client communicates to the service using a queue. More precisely, the client sends messages to a queue. The service receives messages from the queue. The service and client therefore, do not have to be running at the same time to communicate using a queue.
 
@@ -24,9 +24,9 @@ This sample demonstrates how to handle and process messages that have failed del
 
 - `System`: The system dead-letter queue is used to store dead messages. The system dead-letter queue is shared by all applications running on the computer.
 
-- `Custom`: A custom dead-letter queue specified using the <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A> property is used to store dead messages. This feature is only available on [!INCLUDE[wv](../../../../includes/wv-md.md)]. This is used when the application must use its own dead letter queue instead of sharing it with other applications running on the same computer.
+- `Custom`: A custom dead-letter queue specified using the <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A> property is used to store dead messages. This feature is only available on Windows Vista. This is used when the application must use its own dead letter queue instead of sharing it with other applications running on the same computer.
 
-- <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A> property to express the specific queue to use as a dead-letter queue. This is available only in [!INCLUDE[wv](../../../../includes/wv-md.md)].
+- <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A> property to express the specific queue to use as a dead-letter queue. This is available only in Windows Vista.
 
  In this sample, the client sends a batch of messages to the service from within the scope of a transaction and specifies an arbitrarily low value for "time-to-live" for these messages (about 2 seconds). The client also specifies a custom dead-letter queue to use to enqueue the messages that have expired.
 
@@ -351,6 +351,6 @@ Processing Purchase Order: 97897eff-f926-4057-a32b-af8fb11b9bf9
 >   
 > `<InstallDrive>:\WF_WCF_Samples`  
 >   
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\MSMQ\DeadLetter`  

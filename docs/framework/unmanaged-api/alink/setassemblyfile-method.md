@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 3a912787-f139-43ca-a841-8bbda3107ecf
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # SetAssemblyFile Method
 Assigns the name of the assembly to be built. Not for use when producing unbound modules.  

@@ -1,5 +1,5 @@
 ---
-title: "$ (Visual Basic Reference)"
+title: "$"
 ms.date: 10/31/2017
 ---
 # $ (Visual Basic Reference)

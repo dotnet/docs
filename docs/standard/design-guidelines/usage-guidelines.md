@@ -5,7 +5,6 @@ ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "class library design guidelines [.NET Framework], usage guidelines"
 ms.assetid: 42215ffa-a099-4a26-b14e-fb2bdb6f95b7
-author: "KrzysztofCwalina"
 ---
 # Usage guidelines
 

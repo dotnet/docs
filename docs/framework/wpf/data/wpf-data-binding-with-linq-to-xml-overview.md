@@ -1,5 +1,5 @@
 ---
-title: WPF data binding with LINQ to XML
+title: Data binding with LINQ to XML
 ms.date: 10/22/2019
 ms.topic: conceptual
 ---

@@ -1,9 +1,9 @@
 ---
-title: "How to: Query for Duplicate Files in a Directory Tree (LINQ) (C#)"
+title: "How to query for duplicate files in a directory tree (LINQ) (C#)"
 ms.date: 07/20/2015
 ms.assetid: 1ff5562b-0d30-46d1-b426-a04e8f78c840
 ---
-# How to: Query for Duplicate Files in a Directory Tree (LINQ) (C#)
+# How to query for duplicate files in a directory tree (LINQ) (C#)
 Sometimes files that have the same name may be located in more than one folder. For example, under the Visual Studio installation folder, several folders have a readme.htm file. This example shows how to query for such duplicate file names under a specified root folder. The second example shows how to query for files whose size and LastWrite times also match.  
   
 ## Example  

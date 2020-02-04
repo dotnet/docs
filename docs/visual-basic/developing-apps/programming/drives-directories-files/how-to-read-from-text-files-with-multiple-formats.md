@@ -1,5 +1,5 @@
 ---
-title: "How to: Read from text files with multiple formats in Visual Basic"
+title: "How to: Read from text files with multiple formats"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "TextFieldParser object, reading from a file"

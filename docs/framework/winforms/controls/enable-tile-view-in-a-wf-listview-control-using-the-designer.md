@@ -1,5 +1,5 @@
 ---
-title: "How to: Enable Tile View in a Windows Forms ListView Control Using the Designer"
+title: Enable Tile View in ListView Control Using the Designer
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "tile view feature"
@@ -17,9 +17,6 @@ The tile view feature of the <xref:System.Windows.Forms.ListView> control enable
  Tile view properties and methods enable you to specify which column fields to display for each item, and to collectively control the size and appearance of all items within a tile view window. For clarity, the first line of text in a tile is always the item's name; it cannot be changed.
 
  The following procedure requires a **Windows Application** project with a form containing a <xref:System.Windows.Forms.ListView> control. For information about setting up such a project, see [How to: Create a Windows Forms application project](/visualstudio/ide/step-1-create-a-windows-forms-application-project) and [How to: Add Controls to Windows Forms](how-to-add-controls-to-windows-forms.md).
-
-> [!NOTE]
-> The tile view is available only on [!INCLUDE[WinXpFamily](../../../../includes/winxpfamily-md.md)] when your application calls the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType> method. On earlier operating systems, any code related to the tile view has no effect, and the <xref:System.Windows.Forms.ListView> control displays in the large icon view. For more information, see <xref:System.Windows.Forms.ListView.View%2A?displayProperty=nameWithType>.
 
 ## To set tile view in the designer
 

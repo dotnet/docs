@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 31214d3a-715e-49af-92b3-0fd11e4f218a
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataTables::GetCodedTokenInfo Method
 Gets a pointer to an array of tokens associated with the specified row index.  

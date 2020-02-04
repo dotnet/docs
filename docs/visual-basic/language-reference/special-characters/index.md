@@ -1,5 +1,5 @@
 ---
-title: "Special Characters (Visual Basic Reference)"
+title: "Special Characters"
 ms.date: 10/31/2017
 ---
 

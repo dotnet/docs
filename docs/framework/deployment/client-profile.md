@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "profile [.NET Framework Client Profile]"
   - ".NET Framework Client Profile"
 ms.assetid: f0219919-1f02-4588-8704-327a62fd91f1
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # .NET Framework Client Profile
 The .NET Client Profile is a subset of the .NET Framework, which was provided with .NET Framework 4 and earlier versions and was optimized for client applications. The .NET Framework is a development platform for Windows, Windows Phone and Microsoft Azure and provides a managed app execution environment and the .NET Framework class library. The .NET Framework 4 and earlier versions provided two deployment options: the full .NET Framework and the Client Profile. The Client Profile enabled faster deployment and smaller app installation packages than the full .NET Framework.  

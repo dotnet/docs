@@ -26,14 +26,14 @@ The equality operator `==` returns `true` if its operands are equal, `false` oth
 
 ### Value types equality
 
-Operands of the [built-in value types](../keywords/value-types-table.md) are equal if their values are equal:
+Operands of the [built-in value types](../builtin-types/value-types.md#built-in-value-types) are equal if their values are equal:
 
 [!code-csharp-interactive[value types equality](~/samples/csharp/language-reference/operators/EqualityOperators.cs#ValueTypesEquality)]
 
 > [!NOTE]
 > For the `==`, [`<`, `>`, `<=`, and `>=`](comparison-operators.md) operators, if any of the operands is not a number (<xref:System.Double.NaN?displayProperty=nameWithType> or <xref:System.Single.NaN?displayProperty=nameWithType>), the result of operation is `false`. That means that the `NaN` value is neither greater than, less than, nor equal to any other `double` (or `float`) value, including `NaN`. For more information and examples, see the <xref:System.Double.NaN?displayProperty=nameWithType> or <xref:System.Single.NaN?displayProperty=nameWithType> reference article.
 
-Two operands of the same [enum](../keywords/enum.md) type are equal if the corresponding values of the underlying integral type are equal.
+Two operands of the same [enum](../builtin-types/enum.md) type are equal if the corresponding values of the underlying integral type are equal.
 
 User-defined [struct](../keywords/struct.md) types don't support the `==` operator by default. To support the `==` operator, a user-defined struct must [overload](operator-overloading.md) it.
 

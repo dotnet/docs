@@ -1,5 +1,5 @@
 ---
-title: "How to: Make an Object Variable Not Refer to Any Instance (Visual Basic)"
+title: "How to: Make an Object Variable Not Refer to Any Instance"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Nothing keyword [Visual Basic], variable assignment"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Combine Data with LINQ by Using Joins (Visual Basic)"
+title: "How to: Combine Data with LINQ by Using Joins"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "queries [LINQ in Visual Basic], joins"

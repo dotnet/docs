@@ -1,5 +1,5 @@
 ---
-title: "Creating, Deleting, and Moving Files and Directories in Visual Basic"
+title: "Creating, Deleting, and Moving Files and Directories"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "examples [Visual Basic], moving files and directories"

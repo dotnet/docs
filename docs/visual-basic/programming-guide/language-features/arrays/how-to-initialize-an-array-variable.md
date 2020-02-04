@@ -1,5 +1,5 @@
 ---
-title: "How to: Initialize an Array Variable in Visual Basic"
+title: "How to: Initialize an Array Variable"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "variables [Visual Basic], initializing"

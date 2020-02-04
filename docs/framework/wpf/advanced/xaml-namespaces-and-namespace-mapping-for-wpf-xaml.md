@@ -1,5 +1,5 @@
 ---
-title: "XAML Namespaces and Namespace Mapping for WPF XAML"
+title: XAML Namespaces and Namespace Mapping
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

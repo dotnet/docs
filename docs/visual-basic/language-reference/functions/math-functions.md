@@ -1,5 +1,5 @@
 ---
-title: "Math Functions (Visual Basic)"
+title: "Math Functions"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "math functions, Visual Basic"

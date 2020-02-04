@@ -1,5 +1,5 @@
 ---
-title: "How to: Compute Column Values in a CSV Text File (LINQ) (Visual Basic)"
+title: "How to: Compute Column Values in a CSV Text File (LINQ)"
 ms.date: 07/20/2015
 ms.assetid: 88b2b9f3-c82e-41f3-b1b4-26ede5973a02
 ---
@@ -137,9 +137,9 @@ End Class
 
 The query works by using the <xref:System.String.Split%2A> method to convert each line of text into an array. Each array element represents a column. Finally, the text in each column is converted to its numeric representation. If your file is a tab-separated file, just update the argument in the `Split` method to `\t`.
 
-## Compiling the Code
+## Compile the code
 
-Create a VB.NET console application project, with an `Imports` statement for the System.Linq namespace.
+Create a Visual Basic console application project, with an `Imports` statement for the System.Linq namespace.
 
 ## See also
 

@@ -26,9 +26,9 @@ A Razor Page’s page model combines the responsibilities of an MVC controller a
 
 ### When to use MVC
 
-If you’re building web APIs, the MVC pattern makes more sense than trying to use Razor Pages. If your project will only expose web API endpoints, you should ideally start from the Web API project template, but otherwise it’s easy to add controllers and associated API endpoints to any ASP.NET Core app. You should also use the view-based MVC approach if you’re migrating an existing application from ASP.NET MVC 5 or earlier to ASP.NET Core MVC and you want to do so with the least amount of effort. Once you’ve made the initial migration, you can evaluate whether it makes sense to adopt Razor Pages for new features or even as a wholesale migration.
+If you’re building web APIs, the MVC pattern makes more sense than trying to use Razor Pages. If your project will only expose web API endpoints, you should ideally start from the Web API project template. Otherwise, it’s easy to add controllers and associated API endpoints to any ASP.NET Core app. Use the view-based MVC approach if you’re migrating an existing application from ASP.NET MVC 5 or earlier to ASP.NET Core MVC and you want to do so with the least amount of effort. Once you’ve made the initial migration, you can evaluate whether it makes sense to adopt Razor Pages for new features or even as a wholesale migration.
 
-Whether you choose to build your web app using Razor Pages or MVC views, your app will have similar performance and will include support for dependency injection, filters, model binding and validation, etc.
+Whether you choose to build your web app using Razor Pages or MVC views, your app will have similar performance and will include support for dependency injection, filters, model binding, validation, and so on.
 
 ## Mapping requests to responses
 
@@ -407,7 +407,7 @@ Most web APIs should implement a token-based authentication system. Token authen
 
 **Figure 7-4.** Token-based authentication for Web APIs.
 
-You can create your own authentication service, integrate with Azure AD and OAuth, or implement a service using an open source tool like [IdentityServer](https://github.com/IdentityServer).
+You can create your own authentication service, integrate with Azure AD and OAuth, or implement a service using an open-source tool like [IdentityServer](https://github.com/IdentityServer).
 
 #### Custom Security
 
@@ -485,7 +485,7 @@ Consider ways in which your applications communicate directly with client applic
 > ### References – Client Communication
 >
 > - **ASP.NET Core SignalR**  
->   <https://github.com/aspnet/SignalR>
+>   <https://github.com/dotnet/aspnetcore/tree/master/src/SignalR>
 > - **WebSocket Manager**  
 >   https://github.com/radu-matei/websocket-manager
 
@@ -525,7 +525,7 @@ DDD also recommends the use of the Clean Architecture discussed previously, allo
 
 ### When should you apply DDD
 
-DDD is well-suited to large applications with significant business (not just technical) complexity. The application should require the knowledge of domain experts. There should be significant behavior in the domain model itself, representing business rules and interactions beyond simply storing and retrieving the current state of various records from data stores.
+DDD is well suited to large applications with significant business (not just technical) complexity. The application should require the knowledge of domain experts. There should be significant behavior in the domain model itself, representing business rules and interactions beyond simply storing and retrieving the current state of various records from data stores.
 
 ### When shouldn't you apply DDD
 

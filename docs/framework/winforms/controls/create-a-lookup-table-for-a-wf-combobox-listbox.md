@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Lookup Table for a Windows Forms ComboBox, ListBox, or CheckedListBox Control"
+title: Create a Lookup Table for ComboBox, ListBox, or CheckedListBox Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

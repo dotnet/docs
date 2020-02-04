@@ -1,5 +1,5 @@
 ---
-title: "How to: Respond to Windows Forms Button Clicks"
+title: Respond to Button Clicks
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -1,9 +1,7 @@
 ---
 title: Runtime package store
 description: Learn how to use the runtime package store to target manifests used by .NET Core.
-author: bleroy
 ms.date: 08/12/2017
-ms.custom: seodec18
 ---
 # Runtime package store
 

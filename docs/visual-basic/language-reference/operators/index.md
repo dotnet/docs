@@ -1,5 +1,5 @@
 ---
-title: "Operators (Visual Basic)"
+title: "Operators"
 ms.date: 10/17/2018
 helpviewer_keywords: 
   - "operators [Visual Basic]"
@@ -28,4 +28,3 @@ ms.assetid: 3d3421df-fcc5-4888-9249-d78f16774ce6
 ## Related sections
 
 - [Visual Basic language reference](../index.md)
-- [Visual Basic](../../index.md)

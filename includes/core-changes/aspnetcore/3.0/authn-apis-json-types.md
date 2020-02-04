@@ -5,7 +5,7 @@ In ASP.NET Core 3.0, `Newtonsoft.Json` types used in Authentication APIs have be
 * Classes derived from the OAuth providers, such as those from [aspnet-contrib](https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers).
 * Advanced claim manipulation implementations.
 
-For more information, see [aspnet/AspNetCore#7105](https://github.com/aspnet/AspNetCore/pull/7105). For discussion, see [aspnet/AspNetCore#7289](https://github.com/aspnet/AspNetCore/issues/7289).
+For more information, see [dotnet/aspnetcore#7105](https://github.com/dotnet/aspnetcore/pull/7105). For discussion, see [dotnet/aspnetcore#7289](https://github.com/dotnet/aspnetcore/issues/7289).
 
 #### Version introduced
 
@@ -13,7 +13,7 @@ For more information, see [aspnet/AspNetCore#7105](https://github.com/aspnet/Asp
 
 #### Recommended action
 
-For derived OAuth implementations, the most common change is to replace `JObject.Parse` with `JsonDocument.Parse` in the `CreateTicketAsync` override as shown [here](https://github.com/aspnet/AspNetCore/pull/7105/files?utf8=%E2%9C%93&diff=unified&w=1#diff-e1c9f9740a6fe8021020a6f249c589b0L40). `JsonDocument` implements `IDisposable`.
+For derived OAuth implementations, the most common change is to replace `JObject.Parse` with `JsonDocument.Parse` in the `CreateTicketAsync` override as shown [here](https://github.com/dotnet/aspnetcore/pull/7105/files?utf8=%E2%9C%93&diff=unified&w=1#diff-e1c9f9740a6fe8021020a6f249c589b0L40). `JsonDocument` implements `IDisposable`.
 
 The following list outlines known changes:
 

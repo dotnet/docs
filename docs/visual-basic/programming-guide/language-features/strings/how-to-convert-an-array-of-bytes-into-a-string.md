@@ -1,5 +1,5 @@
 ---
-title: "How to: Convert an Array of Bytes into a String in Visual Basic"
+title: "How to: Convert an Array of Bytes into a String"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "string conversion [Visual Basic], arrays"

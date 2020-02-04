@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "exceptions, COM interop"
   - "COM interop, exceptions"
 ms.assetid: e6104aa8-8e5f-4069-b864-def85579c96c
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Handling COM Interop Exceptions
 Managed and unmanaged code can work together to handle exceptions. If a method throws an exception in managed code, the common language runtime can pass an HRESULT to a COM object. If a method fails in unmanaged code by returning a failure HRESULT, the runtime throws an exception that can be caught by managed code.  

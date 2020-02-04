@@ -86,7 +86,7 @@ The ADO.NET Entity Framework provides several benefits to an existing applicatio
   
 - Applications that use XML data.  
 
-  Object serialization enables you to create Entity Framework data services. These services provide data to applications that consume XML data, such as AJAX-based Internet applications. In these cases, consider using [!INCLUDE[ssAstoria](../../../../../includes/ssastoria-md.md)]. These data services are based on the Entity Data Model and provide dynamic access to entity data by using standard Representational State Transfer (REST) HTTP actions, such as GET, PUT, and POST. For more information, see [WCF Data Services 4.5](../../wcf/index.md).  
+  Object serialization enables you to create Entity Framework data services. These services provide data to applications that consume XML data, such as AJAX-based Internet applications. In these cases, consider using WCF Data Services. These data services are based on the Entity Data Model and provide dynamic access to entity data by using standard Representational State Transfer (REST) HTTP actions, such as GET, PUT, and POST. For more information, see [WCF Data Services 4.5](../../wcf/index.md).  
   
   The Entity Framework does not support a native-XML data type. This means that when an entity is mapped to a table with an XML column, the equivalent entity property for the XML column is a string. Objects can be disconnected and serialized as XML. For more information, see [Serializing Objects](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb738446(v=vs.100)).  
   

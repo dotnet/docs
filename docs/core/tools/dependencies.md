@@ -2,7 +2,6 @@
 title: Managing dependencies in .NET Core tooling
 description: Explains how to manage your dependencies with the .NET Core tools.
 ms.date: 03/06/2017
-ms.custom: "seodec18"
 ---
 # Managing dependencies with .NET Core SDK 1.0
 
@@ -28,7 +27,7 @@ Adding a dependency that is available only in a specific target is done using co
 <PackageReference Include="PACKAGE_ID" Version="PACKAGE_VERSION" Condition="'$(TargetFramework)' == 'netcoreapp2.1'" />
 ```
 
-The above means that the dependency will only be valid if the build is happening for that given target. The `$(TargetFramework)` in the condition is a MSBuild property that is being set in the project. For most common .NET Core applications, you will not need to do this. 
+The above means that the dependency will only be valid if the build is happening for that given target. The `$(TargetFramework)` in the condition is an MSBuild property that is being set in the project. For most common .NET Core applications, you will not need to do this. 
 
 ## Adding a dependency to your project
 Adding a dependency to your project is straightforward. Here is an example of how to add Json.NET version `9.0.1` to your project. Of course, it is applicable to any other NuGet dependency. 

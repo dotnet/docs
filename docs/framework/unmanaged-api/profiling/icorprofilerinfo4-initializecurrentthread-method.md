@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 18a3335c-8c75-476c-b6de-72c0bfedae5d
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo4::InitializeCurrentThread Method
 Initializes the current thread in advance of subsequent profiler API calls on the same thread, so that deadlock can be avoided.  

@@ -1,7 +1,5 @@
 ---
 title: "out parameter modifier - C# Reference"
-ms.custom: seodec18
-
 ms.date: 03/26/2019
 helpviewer_keywords: 
   - "parameters [C#], out"

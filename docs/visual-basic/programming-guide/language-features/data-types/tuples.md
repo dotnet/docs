@@ -1,5 +1,5 @@
 ---
-title: "Tuples in Visual Basic"
+title: "Tuples"
 ms.date: 04/23/2017
 helpviewer_keywords:
   - "tuples [Visual Basic]"

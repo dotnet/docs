@@ -1,5 +1,5 @@
 ---
-title: "How to: build LINQ to XML examples - Visual Basic"
+title: "How to: build LINQ to XML examples"
 ms.date: 07/20/2015
 ms.assetid: 565bca7a-ac8b-497f-8d8d-3323b3d7799e
 ---

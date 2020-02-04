@@ -34,7 +34,7 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
   If the `TEMPLATE` value isn't an exact match on text in the **Templates** or **Short Name** column, a substring match is performed on those two columns.
 
-  Starting with .NET Core 3.0 SDK, the CLI searches for templates in NuGet.org in one of following conditions:
+  Starting with .NET Core 3.0 SDK, the CLI searches for templates in NuGet.org in the following conditions:
 
   - If the CLI can’t find a template match when invoking `dotnet new`, not even partial.
   - If there’s a newer version of the template available.

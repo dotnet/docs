@@ -28,13 +28,13 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
 ## Arguments
 
-`TEMPLATE`
+- **`TEMPLATE`**
 
-The template to instantiate when the command is invoked. Each template might have specific options you can pass. For more information, see [Template options](#template-options).
+  The template to instantiate when the command is invoked. Each template might have specific options you can pass. For more information, see [Template options](#template-options).
 
-If the `TEMPLATE` value isn't an exact match on text in the **Templates** or **Short Name** column, a substring match is performed on those two columns.
+  If the `TEMPLATE` value isn't an exact match on text in the **Templates** or **Short Name** column, a substring match is performed on those two columns.
 
-The command contains a default list of templates. Use `dotnet new -l` to obtain a list of the available templates. The following table shows the templates that come pre-installed with the .NET Core SDK. The default language for the template is shown inside the brackets. Click on the short name link to see the specific template options.
+  The command contains a default list of templates. Use `dotnet new -l` to obtain a list of the available templates. The following table shows the templates that come pre-installed with the .NET Core SDK. The default language for the template is shown inside the brackets. Click on the short name link to see the specific template options.
 
 | Templates                                    | Short name                      | Language     | Tags                                  | Introduced |
 |----------------------------------------------|---------------------------------|--------------|---------------------------------------|------------|

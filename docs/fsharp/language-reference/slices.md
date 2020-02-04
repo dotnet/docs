@@ -133,7 +133,7 @@ let sp = [| 1; 2; 3; 4; 5 |].AsSpan()
 printSpan sp.[0..] // [|1; 2; 3; 4; 5|]
 printSpan sp.[..5] // [|1; 2; 3; 4; 5|]
 printSpan sp.[0..3] // [|1; 2; 3|]
-printSpan sp.[1..2] // |2; 3|]
+printSpan sp.[1..3] // |2; 3|]
 ```
 
 ## Built-in F# slices are end-inclusive

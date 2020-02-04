@@ -8,7 +8,7 @@ ms.date: 07/10/2019
 
 The latest C# compiler determines a default language version based on your project's target framework or frameworks. This is because the C# language may have features that rely on types or runtime components that are not available in every .NET implementation. This also ensures that for whatever target your project is built against, you get the highest compatible language version by default.
 
-The rules in this article apply to the compiler delivered with Visual Studio 2019, or the .NET Core 3.0 SDK. The C# compilers that are part of the Visual Studio 2017 installation or earlier .NET Core SDK versions target C# 7.0 by default. 
+The rules in this article apply to the compiler delivered with Visual Studio 2019 or the .NET Core 3.0 SDK. The C# compilers that are part of the Visual Studio 2017 installation or earlier .NET Core SDK versions target C# 7.0 by default. 
 
 ## Defaults
 
@@ -49,7 +49,7 @@ The value `preview` uses the latest available preview C# language version that y
 
 ### Configure multiple projects
 
-You can create a **Directory.Build.props** file that contains the `<LangVersion>` element to configure multiple directories. You typically do that in your solution directory. Add the following to a **Directory.Build.props** file in your solution directory:
+To configure multiple projects, you can create a **Directory.Build.props** file that contains the `<LangVersion>` element. You typically do that in your solution directory. Add the following to a **Directory.Build.props** file in your solution directory:
 
 ```xml
 <Project>
@@ -79,5 +79,5 @@ The following table shows all current C# language versions. Your compiler may no
 |5|The compiler accepts only syntax that is included in C# 5.0 or lower.|
 |4|The compiler accepts only syntax that is included in C# 4.0 or lower.|
 |3|The compiler accepts only syntax that is included in C# 3.0 or lower.|
-|ISO-2|The compiler accepts only syntax that is included in ISO/IEC 23270:2006 C# (2.0) |
-|ISO-1|The compiler accepts only syntax that is included in ISO/IEC 23270:2003 C# (1.0/1.2) |
+|ISO-2|The compiler accepts only syntax that is included in ISO/IEC 23270:2006 C# (2.0). |
+|ISO-1|The compiler accepts only syntax that is included in ISO/IEC 23270:2003 C# (1.0/1.2). |

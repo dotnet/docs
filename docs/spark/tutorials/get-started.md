@@ -1,7 +1,7 @@
 ---
 title: Get started with .NET for Apache Spark
 description: Discover how to run a .NET for Apache Spark app using .NET Core on Windows, MacOS, and Ubuntu.
-ms.date: 01/31/2019
+ms.date: 01/31/2020
 ms.topic: tutorial
 ms.custom: mvc
 # Customer intent: As a developer, I want to write a simple custom application using .NET for Apache Spark.

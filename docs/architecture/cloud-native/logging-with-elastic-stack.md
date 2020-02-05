@@ -11,6 +11,22 @@ There are many good centralized logging tools and they vary in cost from being f
 
 Collectively these tools are known as the Elastic Stack or ELK stack.
 
+## Elastic Stack
+
+The Elastic Stack is a powerful option for gathering information from a Kubernetes cluster. Kubernetes supports sending logs to an Elasticsearch endpoint, and for the [most part](https://kubernetes.io/docs/tasks/debug-application-cluster/logging-elasticsearch-kibana/), all you need to get started is to set the environment variables as shown in Figure 7-5:
+
+```kubernetes
+KUBE_LOGGING_DESTINATION=elasticsearch
+KUBE_ENABLE_NODE_LOGGING=true
+```
+
+**Figure 7-5** - Configuration variables for Kubernetes
+
+This will install Elasticsearch on the cluster and target sending all the cluster logs to it.
+
+![An example of a Kibana dashboard showing the results of a query against logs ingested from Kubernetes](./media/kibana-dashboard.png)
+**Figure 7-6**. An example of a Kibana dashboard showing the results of a query against logs that are ingested from Kubernetes
+
 ## What are the advantages of Elastic Stack?
 
 Elastic Stack provides centralized logging in a low-cost, scalable, cloud-friendly manner. Its user interface streamlines data analysis so you can spend your time gleaning insights from your data instead of fighting with a clunky interface. It supports a wide variety of inputs so as your distributed application spans more and different kinds of services, you can expect to continue to be able to feed log and metric data into the system. The Elastic Stack also supports fast searches even across large data sets, making it possible even for large applications to log detailed data and still be able to have visibility into it in a performant fashion.
@@ -19,7 +35,7 @@ Elastic Stack provides centralized logging in a low-cost, scalable, cloud-friend
 
 The first component is [Logstash](https://www.elastic.co/products/logstash). This tool is used to gather log information from a large variety of different sources. For instance, Logstash can read logs from disk and also receive messages from logging libraries like [Serilog](https://serilog.net/). Logstash can do some basic filtering and expansion on the logs as they arrive. For instance, if your logs contain IP addresses then Logstash may be configured to do a geographical lookup and obtain a country or even city of origin for that message.
 
-Serilog is a logging library for .NET languages, which allows for parameterized logging. Instead of generating a textual log message that embeds fields, parameters are kept separate. This allows for more intelligent filtering and searching. A sample Serilog configuration for writing to Logstash appears in Figure 7-5.
+Serilog is a logging library for .NET languages, which allows for parameterized logging. Instead of generating a textual log message that embeds fields, parameters are kept separate. This allows for more intelligent filtering and searching. A sample Serilog configuration for writing to Logstash appears in Figure 7-7.
 
 ```csharp
 var log = new LoggerConfiguration()
@@ -27,9 +43,9 @@ var log = new LoggerConfiguration()
          .CreateLogger();
 ```
 
-**Figure 7-5** Serilog config for writing log information directly to logstash over HTTP
+**Figure 7-7** Serilog config for writing log information directly to logstash over HTTP
 
-Logstash would use a configuration like the one shown in Figure 7-6.
+Logstash would use a configuration like the one shown in Figure 7-8.
 
 ```
 input {
@@ -47,7 +63,7 @@ output {
 }
 ```
 
-**Figure 7-6** - A Logstash configuration for consuming logs from Serilog
+**Figure 7-8** - A Logstash configuration for consuming logs from Serilog
 
 For scenarios where extensive log manipulation isn't needed there's an alternative to Logstash known as [Beats](https://www.elastic.co/products/beats). Beats is a family of tools that can gather a wide variety of data from logs to network data and uptime information. Many applications will use both Logstash and Beats.
 
@@ -59,7 +75,7 @@ Elastic search is a powerful search engine that can index logs as they arrive. I
 
 Log messages that have been crafted to contain parameters or that have had parameters split from them through Logstash processing, can be queried directly as Elasticsearch preserves this information.
 
-A query that searches for the top 10 pages visited by `jill@example.com`, appears in Figure 7-7.
+A query that searches for the top 10 pages visited by `jill@example.com`, appears in Figure 7-9.
 
 ```
 "query": {
@@ -77,7 +93,7 @@ A query that searches for the top 10 pages visited by `jill@example.com`, appear
   }
 ```
 
-**Figure 7-7** - An Elasticsearch query for finding top 10 pages visited by a user
+**Figure 7-9** - An Elasticsearch query for finding top 10 pages visited by a user
 
 ## Visualizing information with Kibana web dashboards
 

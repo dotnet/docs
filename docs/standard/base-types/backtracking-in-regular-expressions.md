@@ -113,7 +113,7 @@ Backtracking occurs when a regular expression pattern contains optional [quantif
  [!code-vb[System.Text.RegularExpressions.Regex.ctor#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.text.regularexpressions.regex.ctor/vb/ctor1.vb#1)]  
 
 ### Atomic groups
- The `(?>` *subexpression*`)` language element suppresses backtracking in a subexpression. This can be useful for preventing the performance problems associated with failed matches.  
+ The `(?>` *subexpression*`)` language element suppresses backtracking into a subexpression. This can be useful for preventing the performance problems associated with failed matches.  
   
  The following example illustrates how suppressing backtracking improves performance when using nested quantifiers. It measures the time required for the regular expression engine to determine that an input string does not match two regular expressions. The first regular expression uses backtracking to attempt to match a string that contains one or more occurrences of one or more hexadecimal digits, followed by a colon, followed by one or more hexadecimal digits, followed by two colons. The second regular expression is identical to the first, except that it disables backtracking. As the output from the example shows, the performance improvement from disabling backtracking is significant.  
   

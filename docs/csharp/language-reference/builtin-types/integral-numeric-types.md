@@ -124,7 +124,7 @@ For more information, see the following sections of the [C# language specificati
 ## See also
 
 - [C# reference](../index.md)
-- [Built-in types table](../keywords/built-in-types-table.md)
+- [Value types](value-types.md)
 - [Floating-point types](floating-point-numeric-types.md)
 - [Standard numeric format strings](../../../standard/base-types/standard-numeric-format-strings.md)
 - [Numerics in .NET](../../../standard/numerics.md)

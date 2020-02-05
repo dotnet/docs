@@ -391,7 +391,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
   
 <a name="atomic_groups"></a>   
 ## Atomic groups  
- The following grouping construct represents an atomic group (known in some other regular expression engines as a nonbacktracking subexpression, an atomic subexpression, or a once-only subexpression)  
+ The following grouping construct represents an atomic group (known in some other regular expression engines as a nonbacktracking subexpression, an atomic subexpression, or a once-only subexpression):
   
  `(?>` *subexpression* `)`  
   

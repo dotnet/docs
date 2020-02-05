@@ -1,5 +1,5 @@
 ---
-title: Using a database server running as a container
+title: Use a database server running as a container
 description: .NET Microservices Architecture for Containerized .NET Applications | Using a database server running as a container? only for development! Understand why.
 ms.date: 01/30/2020
 ---
@@ -91,7 +91,7 @@ public static int Main(string[] args)
 }
 ```
 
-There's an important caveat when applying migrations and seeding a database during container startup. Since the database server might not be available for whatever reason, so you have to handle retries while waiting for the server to be available. This retry logic is handle by the `MigrateDbContext()` extension method, as shown in the following code:
+There's an important caveat when applying migrations and seeding a database during container startup. Since the database server might not be available for whatever reason, you must handle retries while waiting for the server to be available. This retry logic is handled by the `MigrateDbContext()` extension method, as shown in the following code:
 
 ```cs
 public static IWebHost MigrateDbContext<TContext>(
@@ -262,9 +262,9 @@ In eShopOnContainers, the basket-api microservice uses a Redis cache running as 
       - "6379"
 ```
 
-This code in the docker-compose.yml defines a container named basketdata based on the redis image and publishing the port 6379 internally, meaning that it will be accessible only from other containers running within the Docker host.
+This code in the docker-compose.yml defines a container named `basketdata` based on the redis image and publishing the port 6379 internally. This means that it will only be accessible from other containers running within the Docker host.
 
-Finally, in the docker-compose.override.yml file, the basket-api microservice for the eShopOnContainers sample defines the connection string to use for that Redis container:
+Finally, in the *docker-compose.override.yml* file, the `basket-api` microservice for the eShopOnContainers sample defines the connection string to use for that Redis container:
 
 ```yml
   basket-api:

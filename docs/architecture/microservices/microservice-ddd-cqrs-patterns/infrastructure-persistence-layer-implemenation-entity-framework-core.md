@@ -334,7 +334,7 @@ class OrderEntityTypeConfiguration : IEntityTypeConfiguration<Order>
 }
 ```
 
-You could set all the Fluent API mappings within the same `OnModelCreating` method, but it is advisable to partition that code and have multiple configuration classes, one per entity, as shown in the example. Especially for large models, it is advisable to have separate configuration classes for configuring different entity types.
+You could set all the Fluent API mappings within the same `OnModelCreating` method, but it's advisable to partition that code and have multiple configuration classes, one per entity, as shown in the example. Especially for large models, it is advisable to have separate configuration classes for configuring different entity types.
 
 The code in the example shows a few explicit declarations and mapping. However, EF Core conventions do many of those mappings automatically, so the actual code you would need in your case might be smaller.
 

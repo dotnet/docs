@@ -1,7 +1,7 @@
 ---
 title: Type Extensions
 description: Learn how F# type extensions allow you add new members to a previously defined object type.
-ms.date: 11/04/2019
+ms.date: 02/05/2020
 ---
 # Type extensions
 
@@ -27,7 +27,8 @@ open System.Runtime.CompilerServices
 
 [<Extension>]
 type Extensions() =
-    [static] member self-identifier.extension-name (ty: typename, [args]) =
+    [<Extension>]
+    static member self-identifier.extension-name (ty: typename, [args]) =
         body
     ...
 ```
@@ -130,7 +131,7 @@ namespace Extensions
 open System.Runtime.CompilerServices
 
 [<Extension>]
-type IEnumerableExtensions() =
+type IEnumerableExtensions =
     [<Extension>]
     static member inline Sum(xs: IEnumerable<'T>) = Seq.sum xs
 ```

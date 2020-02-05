@@ -1,11 +1,11 @@
 ---
 title: Application publishing
-description: Learn about the ways to publish a .NET Core application. You can publish either a self-contained app or a runtime-dependent app.
+description: Learn about the ways to publish a .NET Core application. You can publish an app as self-contained  or as runtime-dependent. Each mode affects how a user of your app, runs your app.
 ms.date: 01/31/2020
 ---
 # .NET Core application publishing overview
 
-Applications you create with .NET Core can be published in two different ways, and depending on the way chosen, affects how a user runs your app. Publishing your app self-contained produces a *.dll* file containing your app and includes: its dependencies, the .NET Core runtime and libraries, and a platform-specific executable. Publishing your app runtime-dependent produces a cross-platform *.dll* file that contains your app and its dependencies. Starting with .NET Core SDK 3.0, publishing an app runtime-dependent also produces a platform-specific executable for your current platform.
+Applications you create with .NET Core can be published in two different modes, and depending on the mode, affects how a user runs your app. Publishing your app self-contained produces a *.dll* file containing your app and includes: its dependencies, the .NET Core runtime and libraries, and a platform-specific executable. Publishing your app runtime-dependent produces a cross-platform *.dll* file that contains your app and its dependencies. Starting with .NET Core SDK 3.0, publishing an app runtime-dependent also produces a platform-specific executable for your current platform.
 
 The following table outlines the basic commands used to publish an app as runtime-dependent or self-contained, per SDK:
 

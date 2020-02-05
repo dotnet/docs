@@ -1,7 +1,7 @@
 ---
 title: Observability patterns
 description: Observability patterns for cloud-native applications
-ms.date: 09/23/2019
+ms.date: 02/05/2020
 ---
 # Observability patterns
 

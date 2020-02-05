@@ -1,7 +1,7 @@
 ---
 title: Monitoring in Azure Kubernetes Services
 description: Monitoring in Azure Kubernetes Services
-ms.date: 09/23/2019
+ms.date: 02/05/2020
 ---
 # Monitoring in Azure Kubernetes Services
 
@@ -14,7 +14,7 @@ The built-in logging in Kubernetes is primitive. However, there are some great o
 [Azure Monitor for Containers](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview) supports consuming logs from not just Kubernetes but also from other orchestration engines such as DC/OS, Docker Swarm, and Red Hat OpenShift.
 
 ![Consuming logs from various containers](./media/containers-diagram.png)
-**Figure 7-10**.  Consuming logs from various containers
+**Figure 7-10**. Consuming logs from various containers
 
 [Prometheus](https://prometheus.io/) is a popular open source metric monitoring solution. It is part of the Cloud Native Compute Foundation. Typically, using Prometheus requires managing a Prometheus server with its own store. However, [Azure Monitor for Containers provides direct integration with Prometheus metrics endpoints](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-prometheus-integration), so a separate server is not required.
 

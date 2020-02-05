@@ -1,7 +1,7 @@
 ---
 title: Logging with Elastic Stack
 description: Logging using Elastic Stack, Logstash, and Kibana
-ms.date: 09/23/2019
+ms.date: 02/05/2020
 ---
 # Logging with Elastic Stack
 
@@ -20,7 +20,7 @@ KUBE_LOGGING_DESTINATION=elasticsearch
 KUBE_ENABLE_NODE_LOGGING=true
 ```
 
-**Figure 7-5** - Configuration variables for Kubernetes
+**Figure 7-5**. Configuration variables for Kubernetes
 
 This will install Elasticsearch on the cluster and target sending all the cluster logs to it.
 
@@ -43,7 +43,7 @@ var log = new LoggerConfiguration()
          .CreateLogger();
 ```
 
-**Figure 7-7** Serilog config for writing log information directly to logstash over HTTP
+**Figure 7-7**. Serilog config for writing log information directly to logstash over HTTP
 
 Logstash would use a configuration like the one shown in Figure 7-8.
 
@@ -63,7 +63,7 @@ output {
 }
 ```
 
-**Figure 7-8** - A Logstash configuration for consuming logs from Serilog
+**Figure 7-8**. A Logstash configuration for consuming logs from Serilog
 
 For scenarios where extensive log manipulation isn't needed there's an alternative to Logstash known as [Beats](https://www.elastic.co/products/beats). Beats is a family of tools that can gather a wide variety of data from logs to network data and uptime information. Many applications will use both Logstash and Beats.
 
@@ -93,7 +93,7 @@ A query that searches for the top 10 pages visited by `jill@example.com`, appear
   }
 ```
 
-**Figure 7-9** - An Elasticsearch query for finding top 10 pages visited by a user
+**Figure 7-9**. An Elasticsearch query for finding top 10 pages visited by a user
 
 ## Visualizing information with Kibana web dashboards
 

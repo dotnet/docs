@@ -182,7 +182,7 @@ The .NET Framework CLR installed with .NET Framework is versioned separately. Th
 - **The `Environment` class**
 
   > [!IMPORTANT]
-  > For .NET Framework 4.5 and later versions, don't use the <xref:System.Environment.Version%2A?displayProperty=nameWithType> property to detect the version of the CLR. Instead, query the registry as described in [Detect .NET Framework 4.5 and above](#detect-net-framework-45-and-above).
+  > For .NET Framework 4.5 and later versions, don't use the <xref:System.Environment.Version%2A?displayProperty=nameWithType> property to detect the version of the CLR. Instead, query the registry as described in [Detect .NET Framework 4.5 and later versions](#detect-net-framework-45-and-later-versions).
   
   01. Query the <xref:System.Environment.Version?displayProperty=nameWithType> property to retrieve a <xref:System.Version> object.
   

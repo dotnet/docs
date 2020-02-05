@@ -140,7 +140,7 @@ Participants and reviewers:
 >
 > **Charles Lowell**, Software Engineer, VS CAT team, Microsoft
 >
-> **Miguel Veloso**, Sr. Consultant at Turing Challenge
+> **Miguel Veloso**, Software Development Engineer at Plain Concepts
 
 ## Copyright
 

@@ -23,7 +23,7 @@ ms.assetid: 769e93fe-8404-443f-bf99-577aa42b6a49
 
   A reference to a member or field that is available to be called from the current compilation environment. The compiler checks that the given code element exists and translates `member` to the canonical element name in the output XML. *member* must appear within double quotation marks (" ").
 
-  For information on how to create a cref reference to a generic type, see [\<see>](./see.md).
+  For information on how to create a cref reference to a generic type, see [cref attribute](./cref-attribute.md).
 
 - `description`
 

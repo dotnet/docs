@@ -41,7 +41,7 @@ HomeData[] homeDataList = new HomeData[]
 };
 ```
 
-To filter data based on the value of a column, use the [`FilterRowsByColumn`](xref:Microsoft.ML.DataOperationsCatalog.FilterRowsByColumn*) method.
+To filter data based on the value of a column, use the [`FilterRowsByColumn`](xref:Microsoft.ML.DataOperationsCatalog.FilterRowsByColumn%2A) method.
 
 ```csharp
 // Apply filter
@@ -77,10 +77,10 @@ HomeData[] homeDataList = new HomeData[]
 };
 ```
 
-Notice that the last element in our list has a missing value for `Price`. To replace the missing values in the `Price` column, use the [`ReplaceMissingValues`](xref:Microsoft.ML.ExtensionsCatalog.ReplaceMissingValues*) method to fill in that missing value.
+Notice that the last element in our list has a missing value for `Price`. To replace the missing values in the `Price` column, use the [`ReplaceMissingValues`](xref:Microsoft.ML.ExtensionsCatalog.ReplaceMissingValues%2A) method to fill in that missing value.
 
 > [!IMPORTANT]
-> [`ReplaceMissingValue`](xref:Microsoft.ML.ExtensionsCatalog.ReplaceMissingValues*) only works with numerical data.
+> [`ReplaceMissingValue`](xref:Microsoft.ML.ExtensionsCatalog.ReplaceMissingValues%2A) only works with numerical data.
 
 ```csharp
 // Define replacement estimator
@@ -164,7 +164,7 @@ HomeData[] homeDataList = new HomeData[]
 };
 ```
 
-Normalize the data into bins using the [`NormalizeBinning`](xref:Microsoft.ML.NormalizationCatalog.NormalizeBinning*) method. The `maximumBinCount` parameter enables you to specify the number of bins needed to classify your data. In this example, data will be put into two bins.
+Normalize the data into bins using the [`NormalizeBinning`](xref:Microsoft.ML.NormalizationCatalog.NormalizeBinning%2A) method. The `maximumBinCount` parameter enables you to specify the number of bins needed to classify your data. In this example, data will be put into two bins.
 
 ```csharp
 // Define binning estimator
@@ -203,52 +203,7 @@ One hot encoding takes a finite set of values and maps them onto integers whose 
 |||
 |98109|10...00|
 
-Using the following input data and load it into an [`IDataView`](xref:Microsoft.ML.IDataView):
-
-```csharp
-CarData[] cars = new CarData[]
-{
-    new CarData
-    {
-        Color="Red",
-        VehicleType="SUV"
-    },
-    new CarData
-    {
-        Color="Blue",
-        VehicleType="Sedan"
-    },
-    new CarData
-    {
-        Color="Black",
-        VehicleType="SUV"
-    }
-};
-```
-
-The categorical `VehicleType` property can be converted into a number using the [`OneHotEncoding`](xref:Microsoft.ML.CategoricalCatalog.OneHotEncoding%2A) method.
-
-```csharp
-// Define categorical transform estimator
-var categoricalEstimator = mlContext.Transforms.Categorical.OneHotEncoding("VehicleType");
-
-// Fit data to estimator
-// Fitting generates a transformer that applies the operations of defined by estimator
-ITransformer categoricalTransformer = categoricalEstimator.Fit(data);
-
-// Transform Data
-IDataView transformedData = categoricalTransformer.Transform(data);
-```
-
-The resulting transform converts the text value of `VehicleType` to a number. The entries in the `VehicleType` column become the following when the transform is applied:
-
-```text
-[
-    1, // SUV
-    2, // Sedan
-    1 // SUV
-]
-```
+The transform to convert categorical data to one-hot encoded numbers is [`OneHotEncoding`](xref:Microsoft.ML.CategoricalCatalog.OneHotEncoding%2A).
 
 ### Hashing
 

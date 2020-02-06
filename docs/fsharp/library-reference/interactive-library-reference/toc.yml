@@ -1,0 +1,53 @@
+- name: F# Interactive Library Reference
+  href: fsharp-interactive-library-reference.md
+  items:
+    - name: Microsoft.FSharp.Compiler.Interactive Namespace
+      href: microsoft.fsharp.compiler.interactive-namespace-[fsharp].md
+      items:
+      - name: Interactive.IEventLoop Interface
+        href: interactive.ieventloop-interface-[fsharp].md
+      - name: IEventLoop.Invoke<'T> Method
+        href: ieventloop.invoke['t]-method-[fsharp].md
+      - name: IEventLoop.Run Method
+        href: ieventloop.run-method-[fsharp].md
+      - name: IEventLoop.ScheduleRestart Method
+        href: ieventloop.schedulerestart-method-[fsharp].md
+    - name: Interactive.InteractiveSession Class (F#)
+      href: interactive.interactivesession-class-[fsharp].md
+      items:
+      - name: InteractiveSession.AddPrintTransformer<'T> Method
+        href: interactivesession.addprinttransformer['t]-method-[fsharp].md
+      - name: InteractiveSession.AddPrinter<'T> Method
+        href: interactivesession.addprinter['t]-method-[fsharp].md
+      - name: InteractiveSession.CommandLineArgs Property
+        href: interactivesession.commandlineargs-property-[fsharp].md
+      - name: InteractiveSession.EventLoop Property
+        href: interactivesession.eventloop-property-[fsharp].md
+      - name: InteractiveSession.FloatingPointFormat Property
+        href: interactivesession.floatingpointformat-property-[fsharp].md
+      - name: InteractiveSession.FormatProvider Property
+        href: interactivesession.formatprovider-property-[fsharp].md
+      - name: InteractiveSession.PrintDepth Property
+        href: interactivesession.printdepth-property-[fsharp].md
+      - name: InteractiveSession.PrintLength Property
+        href: interactivesession.printlength-property-[fsharp].md
+      - name: InteractiveSession.PrintSize Property
+        href: interactivesession.printsize-property-[fsharp].md
+      - name: InteractiveSession.PrintWidth Property
+        href: interactivesession.printwidth-property-[fsharp].md
+      - name: InteractiveSession.ShowDeclarationValues Property
+        href: interactivesession.showdeclarationvalues-property-[fsharp].md
+      - name: InteractiveSession.ShowIEnumerable Property
+        href: interactivesession.showienumerable-property-[fsharp].md
+      - name: InteractiveSession.ShowProperties Property
+        href: interactivesession.showproperties-property-[fsharp].md
+    - name: Interactive.RuntimeHelpers Module
+      href: interactive.runtimehelpers-module-[fsharp].md
+      items:
+      - name: RuntimeHelpers.SaveIt<'T> Function
+        href: runtimehelpers.saveit['t]-function-[fsharp].md
+    - name: Interactive.Settings Module
+      href: interactive.settings-module-[fsharp].md
+      items:
+      - name: Settings.fsi Value
+        href: settings.fsi-value-[fsharp].md

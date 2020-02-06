@@ -1,0 +1,2 @@
+
+raise (MyError("Error message"))

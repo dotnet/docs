@@ -21,7 +21,7 @@ helpviewer_keywords:
 ---
 # Floating-point numeric types (C# reference)
 
-The **floating-point types** are a subset of the **simple types** and can be initialized with [*literals*](#real-literals). All floating-point types are also value types. All floating-point numeric types support [arithmetic](../operators/arithmetic-operators.md), [comparison](../operators/comparison-operators.md), and [equality](../operators/equality-operators.md) operators.
+The *floating-point numeric types* represent real numbers. All floating-point numeric types are [value types](value-types.md). They are also [simple types](value-types.md#built-in-value-types) and can be initialized with [literals](#real-literals). All floating-point numeric types support [arithmetic](../operators/arithmetic-operators.md), [comparison](../operators/comparison-operators.md), and [equality](../operators/equality-operators.md) operators.
 
 ## Characteristics of the floating-point types
 

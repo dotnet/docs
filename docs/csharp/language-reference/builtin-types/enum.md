@@ -14,7 +14,7 @@ ms.assetid: bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c
 ---
 # Enumeration types (C# reference)
 
-An enumeration type (or enum type) is a value type defined by a set of named constants of the underlying [integral numeric](integral-numeric-types.md) type. To define an enumeration type, use the `enum` keyword and specify the names of *enum members*:
+An *enumeration type* (or *enum type*) is a [value type](value-types.md) defined by a set of named constants of the underlying [integral numeric](integral-numeric-types.md) type. To define an enumeration type, use the `enum` keyword and specify the names of *enum members*:
 
 ```csharp
 enum Season

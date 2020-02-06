@@ -29,7 +29,7 @@ In addition to the IDEs and editors, you can use the [.NET Core CLI](../../../co
 
 Containers are commonly used in conjunction with a microservices architecture, although they can also be used to containerize web apps or services that follow any architectural pattern. You can use .NET Framework on Windows Containers, but the modularity and lightweight nature of .NET Core makes it perfect for containers and microservices architectures. When you create and deploy a container, its image is far smaller with .NET Core than with .NET Framework.
 
-## Creating and deploying microservices on containers
+## Create and deploy microservices on containers
 
 You could use the traditional .NET Framework for building microservices-based applications (without containers) by using plain processes. That way, because the .NET Framework is already installed and shared across processes, processes are light and fast to start. However, if you are using containers, the image for the traditional .NET Framework is also based on Windows Server Core and that makes it too heavy for a microservices-on-containers approach. However, teams have been looking for opportunities to improve the experience for .NET Framework users as well. Recently, size of the [Windows Server Core container images have been reduced to >40% smaller](https://devblogs.microsoft.com/dotnet/we-made-windows-server-core-container-images-40-smaller). 
 

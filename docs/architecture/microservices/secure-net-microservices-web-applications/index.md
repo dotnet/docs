@@ -2,7 +2,6 @@
 title: Securing .NET Microservices and Web Applications
 description: Security in .NET Microservices and Web Applications - Get to know the authentication options in ASP.NET Core web applications.
 author: mjrousos
-ms.author: wiwagn
 ms.date: 01/30/2020
 ---
 # Make secure .NET Microservices and Web Applications
@@ -32,7 +31,7 @@ When microservices are accessed directly, trust, that includes authentication an
 The primary mechanism in ASP.NET Core for identifying an application’s users is the [ASP.NET Core Identity](/aspnet/core/security/authentication/identity) membership system. ASP.NET Core Identity stores user information (including sign-in information, roles, and claims) in a data store configured by the developer. Typically, the ASP.NET Core Identity data store is an Entity Framework store provided in the `Microsoft.AspNetCore.Identity.EntityFrameworkCore` package. However, custom stores or other third-party packages can be used to store identity information in Azure Table Storage, CosmosDB, or other locations.
 
 > [!TIP]
-> ASP.NET Core 2.1 and later provides [ASP.NET Core Identity](xref:security/authentication/identity) as a [Razor Class Library](xref:razor-pages/ui-class), so you won't see much of the necessary code in your project, as was the case for previous versions. See the [Scaffold Identity in ASP.NET Core projects](/aspnet/core/security/authentication/scaffold-identity) section for details on how to customize the Identity code to suit your needs.
+> ASP.NET Core 2.1 and later provides [ASP.NET Core Identity](xref:security/authentication/identity) as a [Razor Class Library](xref:razor-pages/ui-class), so you won't see much of the necessary code in your project, as was the case for previous versions. for details on how to customize the Identity code to suit your needs, see [Scaffold Identity in ASP.NET Core projects](/aspnet/core/security/authentication/scaffold-identity).
 
 The following code is taken from the ASP.NET Core Web Application MVC (v3.1) project template with individual user account authentication selected. It shows how to configure ASP.NET Core Identity using EntityFramework.Core in the Startup.ConfigureServices method.
 
@@ -121,7 +120,7 @@ Popular external authentication providers and their associated NuGet packages ar
 | **Facebook**  | **Microsoft.AspNetCore.Authentication.Facebook**         |
 | **Twitter**   | **Microsoft.AspNetCore.Authentication.Twitter**          |
 
-In all cases, You have to complete an application registration procedure that's vendor dependent, and usually involves:
+In all cases, you must complete an application registration procedure that is vendor dependent and that usually involves:
 
 1. Getting a Client Application Id.
 2. Getting a Client Application Secret.

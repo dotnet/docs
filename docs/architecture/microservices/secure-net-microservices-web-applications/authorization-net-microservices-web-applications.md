@@ -2,7 +2,6 @@
 title: About authorization in .NET microservices and web applications
 description: Security in .NET Microservices and Web Applications - Get an overview of the main authorization options in ASP.NET Core applications - role-based and policy-based.
 author: mjrousos
-ms.author: wiwagn
 ms.date: 01/30/2020
 ---
 # About authorization in .NET microservices and web applications

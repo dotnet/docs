@@ -12,7 +12,7 @@ Since .NET Core 2.1, all the .NET Core images, including for ASP.NET Core are av
 
 Since May 2018, Microsoft images are being [syndicated in the Microsoft Container Registry](https://azure.microsoft.com/en-us/blog/microsoft-syndicates-container-catalog/). The official catalog is still only available in Docker Hub, and there you'll find the updated address to pull the image.
 
-Most image repos provide extensive tagging to help you select not just a specific framework version, but also to choose an OS (Linux distro or Windows version).
+Most image repositories provide extensive tagging to help you select not just a specific framework version, but also to choose an OS (Linux distribution or Windows version).
 
 ## .NET Core and Docker image optimizations for development versus production
 

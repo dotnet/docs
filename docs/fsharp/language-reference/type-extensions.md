@@ -138,6 +138,15 @@ type IEnumerableExtensions =
 
 When used, this code will make it appear as if `Sum` is defined on <xref:System.Collections.Generic.IEnumerable%601>, so long as `Extensions` has been opened or is in scope.
 
+For the extension to be available to VB.NET code, an extra `ExtensionAttribute` is required at the assembly level:
+
+```fsharp
+module AssemblyInfo
+open System.Runtime.CompilerServices
+[<assembly:Extension>]
+do ()
+```
+
 ## Other remarks
 
 Type extensions also have the following attributes:

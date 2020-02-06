@@ -1,15 +1,17 @@
 ---
 title: Use a database server running as a container
-description: .NET Microservices Architecture for Containerized .NET Applications | Using a database server running as a container? only for development! Understand why.
+description: Understand the importance of using a database server running as a container only for development. Never for production.
 ms.date: 01/30/2020
 ---
-# Using a database server running as a container
+# Use a database server running as a container
 
 You can have your databases (SQL Server, PostgreSQL, MySQL, etc.) on regular standalone servers, in on-premises clusters, or in PaaS services in the cloud like Azure SQL DB. However, for development and test environments, having your databases running as containers is convenient, because you do not have any external dependency and simply running the `docker-compose up` command starts the whole application. Having those databases as containers is also great for integration tests, because the database is started in the container and is always populated with the same sample data, so tests can be more predictable.
 
-### SQL Server running as a container with a microservice-related database
+## SQL Server running as a container with a microservice-related database
 
-In eShopOnContainers, there is a container named sqldata defined in the [docker-compose.yml](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/docker-compose.yml) file that runs SQL Server for Linux with all the SQL Server databases needed for the microservices. (You could also have one SQL Server container for each database, but that would require more memory assigned to Docker.) The important point in microservices is that each microservice owns its related data, therefore its related SQL database in this case. But the databases can be anywhere.
+In eShopOnContainers, there is a container named `sqldata`, as defined in the [docker-compose.yml](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/docker-compose.yml) file, that runs an SQL Server for Linux instance with the SQL databases for all microservices that need one.
+
+A key point in microservices is that each microservice owns its related data, hence it should have its own database. However the databases can be anywhere. In this case, they are all in the same container to keep Docker memory requirements as low as possible. Keep in mind that this is a good-enough solution for development and, perhaps, testing but not for production.
 
 The SQL Server container in the sample application is configured with the following YAML code in the docker-compose.yml file, which is executed when you run `docker-compose up`. Note that the YAML code has consolidated configuration information from the generic docker-compose.yml file and the docker-compose.override.yml file. (Usually you would separate the environment settings from the base or static information related to the SQL Server image.)
 
@@ -37,7 +39,7 @@ The eShopOnContainers application initializes each microservice database with sa
 
 Having SQL Server running as a container is not just useful for a demo where you might not have access to an instance of SQL Server. As noted, it is also great for development and testing environments so that you can easily run integration tests starting from a clean SQL Server image and known data by seeding new sample data.
 
-#### Additional resources
+### Additional resources
 
 - **Run the SQL Server Docker image on Linux, Mac, or Windows** \
     [https://docs.microsoft.com/sql/linux/sql-server-linux-setup-docker](/sql/linux/sql-server-linux-setup-docker)
@@ -45,7 +47,7 @@ Having SQL Server running as a container is not just useful for a demo where you
 - **Connect and query SQL Server on Linux with sqlcmd** \
     [https://docs.microsoft.com/sql/linux/sql-server-linux-connect-and-query-sqlcmd](/sql/linux/sql-server-linux-connect-and-query-sqlcmd)
 
-### Seeding with test data on Web application startup
+## Seeding with test data on Web application startup
 
 To add data to the database when the application starts up, you can add code like the following to the `Main` method in the `Program` class of the Web API project:
 
@@ -204,7 +206,7 @@ public class CatalogContextSeed
 
 When you run integration tests, having a way to generate data consistent with your integration tests is useful. Being able to create everything from scratch, including an instance of SQL Server running on a container, is great for test environments.
 
-### EF Core InMemory database versus SQL Server running as a container
+## EF Core InMemory database versus SQL Server running as a container
 
 Another good choice when running tests is to use the Entity Framework InMemory database provider. You can specify that configuration in the ConfigureServices method of the Startup class in your Web API project:
 
@@ -233,7 +235,7 @@ There is an important catch, though. The in-memory database does not support man
 
 Even so, an in-memory database is still useful for testing and prototyping. But if you want to create accurate integration tests that take into account the behavior of a specific database implementation, you need to use a real database like SQL Server. For that purpose, running SQL Server in a container is a great choice and more accurate than the EF Core InMemory database provider.
 
-### Using a Redis cache service running in a container
+## Using a Redis cache service running in a container
 
 You can run Redis on a container, especially for development and testing and for proof-of-concept scenarios. This scenario is convenient, because you can have all your dependencies running on containers—not just for your local development machines, but for your testing environments in your CI/CD pipelines.
 

@@ -181,7 +181,7 @@ public static IServiceCollection AddCustomHealthCheck(this IServiceCollection se
 }
 ```
 
-Finally, we add the HealthCheck middleware to listen to “/hc” endpoint:
+Finally, add the HealthCheck middleware to listen to “/hc” endpoint:
 
 ```csharp
 // HealthCheck middleware

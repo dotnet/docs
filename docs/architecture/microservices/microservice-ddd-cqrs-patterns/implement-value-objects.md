@@ -128,11 +128,11 @@ You can see how this value object implementation of Address has no identity and 
 
 Having no ID field in a class to be used by Entity Framework was not possible until EF Core 2.0, which greatly helps to implement better value objects with no ID. That is precisely the explanation of the next section.
 
-It could be argued that value objects, being immutable, should be read-only (i.e. get-only properties), and that’s indeed true. However, value objects are usually serialized and deserialized to go through message queues, and being read-only stops the deserializer from assigning values, so we just leave them as private set which is read-only enough to be practical.
+It could be argued that value objects, being immutable, should be read-only (that is, have get-only properties), and that’s indeed true. However, value objects are usually serialized and deserialized to go through message queues, and being read-only stops the deserializer from assigning values, so we just leave them as private set which is read-only enough to be practical.
 
 ## How to persist value objects in the database with EF Core 2.0
 
-You just saw how to define a value object in your domain model. But, how can you actually persist it into the database through Entity Framework (EF) Core which usually targets entities with identity?
+You just saw how to define a value object in your domain model. But how can you actually persist it into the database through Entity Framework (EF) Core which usually targets entities with identity?
 
 ### Background and older approaches using EF Core 1.1
 
@@ -278,11 +278,11 @@ public class Address
 
 - Table splitting is setup by convention, but you can opt out by mapping the owned type to a different table using ToTable.
 
-- Eager loading is performed automatically on owned types, i.e. no need to call Include() on the query.
+- Eager loading is performed automatically on owned types, that is, there's no need to call `.Include()` on the query.
 
-- Can be configured with attribute `[Owned]`, from EF Core 2.1 up.
+- Can be configured with attribute `[Owned]`, using EF Core 2.1 and later.
 
-- Can handle collections of owned types (from 2.2 up).
+- Can handle collections of owned types (using version 2.2 and later).
 
 #### Owned entities limitations
 
@@ -296,9 +296,9 @@ public class Address
 
 #### Main differences with EF6's complex types
 
-- Table splitting is optional, i.e. they can optionally be mapped to a separate table and still be owned types.
+- Table splitting is optional, that is, they can optionally be mapped to a separate table and still be owned types.
 
-- They can reference other entities (i.e. they can act as the dependent side on relationships to other non-owned types).
+- They can reference other entities (that is, they can act as the dependent side on relationships to other non-owned types).
 
 ## Additional resources
 

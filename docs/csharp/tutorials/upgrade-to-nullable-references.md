@@ -34,7 +34,7 @@ Your goal migrating a project should be to leverage the new language features so
 
 ## Upgrade the projects to C# 8
 
-A good first step is to determine the scope of the migration task. Start by upgrading the project to C# 8.0 (or newer). Add the `LangVersion` element to both csproj files for the web project and the unit test project:
+A good first step is to determine the scope of the migration task. Start by upgrading the project to C# 8.0 (or newer). Add the `LangVersion` element to the PropertyGroup in both csproj files for the web project and the unit test project:
 
 ```xml
 <LangVersion>8.0</LangVersion>

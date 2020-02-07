@@ -11,9 +11,11 @@ The following table outlines the basic commands used to publish an app as runtim
 
 | Type                                                          | SDK 3.1 | SDK 3.0 | SDK 2.1 | Command | 
 | ------------------------------------------------------------- | --------| ------- | ------- | ------- |
-| [runtime-dependent cross-platform binary](#runtime-dependent) | ✔️       | ✔️       | ✔️       | [`dotnet publish`](../tools/dotnet-publish.md) |
 | [runtime-dependent executable](#runtime-dependent)            | ✔️       | ✔️       |          | [`dotnet publish`](../tools/dotnet-publish.md) |
+| [runtime-dependent cross-platform binary](#runtime-dependent) | ✔️       | ✔️       | ✔️       | [`dotnet publish`](../tools/dotnet-publish.md) |
 | [self-contained executable](#self-contained)                  | ✔️       | ✔️       | ✔️       | [`dotnet publish -r <RID>`](../tools/dotnet-publish.md) |
+
+For more information about the `dotnet publish` command, see [.NET Core dotnet publish command](../tools/dotnet-publish.md).
 
 ## Runtime-dependent
 

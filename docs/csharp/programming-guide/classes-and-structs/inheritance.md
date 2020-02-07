@@ -1,6 +1,6 @@
 ---
 title: "Inheritance - C# Programming Guide"
-ms.date: 01/24/2020
+ms.date: 02/07/2020
 helpviewer_keywords: 
   - "abstract methods [C#]"
   - "abstract classes [C#]"
@@ -12,7 +12,7 @@ ms.assetid: 81d64ee4-50f9-4d6c-a8dc-257c348d2eea
 ---
 # Inheritance (C# Programming Guide)
 
-Inheritance, together with encapsulation and polymorphism, is one of the three primary characteristics of object-oriented programming. Inheritance enables you to create new classes that reuse, extend, and modify the behavior defined in other classes. The class whose members are inherited is called the *base class*, and the class that inherits those members is called the *derived class*. A derived class can have only one direct base class. However, inheritance is transitive. If ClassC is derived from ClassB, and ClassB is derived from ClassA, ClassC inherits the members declared in ClassB and ClassA.
+Inheritance, together with encapsulation and polymorphism, is one of the three primary characteristics of object-oriented programming. Inheritance enables you to create new classes that reuse, extend, and modify the behavior defined in other classes. The class whose members are inherited is called the *base class*, and the class that inherits those members is called the *derived class*. A derived class can have only one direct base class. However, inheritance is transitive. If `ClassC` is derived from `ClassB`, and `ClassB` is derived from `ClassA`, `ClassC` inherits the members declared in `ClassB` and `ClassA`.
 
 > [!NOTE]
 > Structs do not support inheritance, but they can implement interfaces. For more information, see [Interfaces](../interfaces/index.md).
@@ -27,15 +27,16 @@ The following illustration shows a class `WorkItem` that represents an item of w
 
 The following example shows how the class relationships demonstrated in the previous illustration are expressed in C#. The example also shows how `WorkItem` overrides the virtual method <xref:System.Object.ToString%2A?displayProperty=nameWithType>, and how the `ChangeRequest` class inherits the `WorkItem` implementation of the method.
 
-[!code-csharp[csProgGuideInheritance#49](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#49)]
+[!code-csharp[DefineClasses](~/samples/snippets/csharp/objectoriented/inheritance.cs#Classes)]
+[!code-csharp[UseClasses](~/samples/snippets/csharp/objectoriented/inheritance.cs#UseClasses)]
 
 ## Abstract and virtual methods
 
-When a base class declares a method as [virtual](../../language-reference/keywords/virtual.md), a derived class can [override](../../language-reference/keywords/override.md) the method with its own implementation. If a base class declares a member as [abstract](../../language-reference/keywords/abstract.md), that method must be overridden in any non-abstract class that directly inherits from that class. If a derived class is itself abstract, it inherits abstract members without implementing them. Abstract and virtual members are the basis for polymorphism, which is the second primary characteristic of object-oriented programming. For more information, see [Polymorphism](./polymorphism.md).
+When a base class declares a method as [`virtual`](../../language-reference/keywords/virtual.md), a derived class can [`override`](../../language-reference/keywords/override.md) the method with its own implementation. If a base class declares a member as [`abstract`](../../language-reference/keywords/abstract.md), that method must be overridden in any non-abstract class that directly inherits from that class. If a derived class is itself abstract, it inherits abstract members without implementing them. Abstract and virtual members are the basis for polymorphism, which is the second primary characteristic of object-oriented programming. For more information, see [Polymorphism](./polymorphism.md).
 
 ## Abstract base classes
 
-You can declare a class as [abstract](../../language-reference/keywords/abstract.md) if you want to prevent direct instantiation by using the [new](../../language-reference/operators/new-operator.md) operator. An abstract class can be used only if a new class is derived from it. An abstract class can contain one or more method signatures that themselves are declared as abstract. These signatures specify the parameters and return value but have no implementation (method body). An abstract class doesn't have to contain abstract members; however, if a class does contain an abstract member, the class itself must be declared as abstract. Derived classes that aren't abstract themselves must provide the implementation for any abstract methods from an abstract base class. For more information, see [Abstract and Sealed Classes and Class Members](./abstract-and-sealed-classes-and-class-members.md).
+You can declare a class as [abstract](../../language-reference/keywords/abstract.md) if you want to prevent direct instantiation by using the [new](../../language-reference/operators/new-operator.md) operator. An abstract class can be used only if a new class is derived from it. An abstract class can contain one or more method signatures that themselves are declared as abstract. These signatures specify the parameters and return value but have no implementation (method body). An abstract class doesn't have to contain abstract members; however, if a class does contain an abstract member, the class itself must be declared as abstract. Derived classes that aren't abstract themselves must provide the implementation for any abstract methods from an abstract base class. For more information, see [Abstract and Sealed Classes and Class Members](abstract-and-sealed-classes-and-class-members.md).
 
 ## Interfaces
 
@@ -45,11 +46,11 @@ Interfaces are used to define specific capabilities for classes that don't neces
 
 ## Preventing further derivation  
 
-A class can prevent other classes from inheriting from it, or from any of its members, by declaring itself or the member as [sealed](../../language-reference/keywords/sealed.md). For more information, see [Abstract and Sealed Classes and Class Members](./abstract-and-sealed-classes-and-class-members.md).
+A class can prevent other classes from inheriting from it, or from any of its members, by declaring itself or the member as [`sealed`](../../language-reference/keywords/sealed.md). For more information, see [Abstract and Sealed Classes and Class Members](./abstract-and-sealed-classes-and-class-members.md).
 
 ## Derived class hiding of base class members  
 
-A derived class can hide base class members by declaring members with the same name and signature. The [new](../../language-reference/keywords/new-modifier.md) modifier can be used to explicitly indicate that the member isn't intended to be an override of the base member. The use of [new](../../language-reference/keywords/new-modifier.md) isn't required, but a compiler warning will be generated if [new](../../language-reference/keywords/new-modifier.md) isn't used. For more information, see [Versioning with the Override and New Keywords](./versioning-with-the-override-and-new-keywords.md) and [Knowing When to Use Override and New Keywords](./knowing-when-to-use-override-and-new-keywords.md).
+A derived class can hide base class members by declaring members with the same name and signature. The [`new`](../../language-reference/keywords/new-modifier.md) modifier can be used to explicitly indicate that the member isn't intended to be an override of the base member. The use of [`new`](../../language-reference/keywords/new-modifier.md) isn't required, but a compiler warning will be generated if [`new`](../../language-reference/keywords/new-modifier.md) isn't used. For more information, see [Versioning with the Override and New Keywords](./versioning-with-the-override-and-new-keywords.md) and [Knowing When to Use Override and New Keywords](./knowing-when-to-use-override-and-new-keywords.md).
 
 ## See also
 

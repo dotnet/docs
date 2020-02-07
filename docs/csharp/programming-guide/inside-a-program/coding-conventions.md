@@ -88,15 +88,12 @@ ms.assetid: f4f60de9-d49b-4fb6-bab1-20e19ea24710
   
 - Avoid the use of `var` in place of [dynamic](../../language-reference/builtin-types/reference-types.md).  
   
-- Use implicit typing to determine the type of the loop variable in [for](../../language-reference/keywords/for.md) and [foreach](../../language-reference/keywords/foreach-in.md) loops.  
+- Use implicit typing to determine the type of the loop variable in [for](../../language-reference/keywords/for.md) loops.  
   
      The following example uses implicit typing in a `for` statement.  
   
      [!code-csharp[csProgGuideCodingConventions#7](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs#7)]  
-  
-     The following example uses implicit typing in a `foreach` statement.  
-  
-     [!code-csharp[csProgGuideCodingConventions#12](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs#12)]  
+
   
 ### Unsigned Data Type  
   

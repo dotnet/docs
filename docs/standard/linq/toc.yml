@@ -26,35 +26,35 @@
           href: xattribute-class-overview.md
         - name: XDocument class overview
           href: xdocument-class-overview.md
-        - name: "How to: Build LINQ to XML examples"
+        - name: "How to build LINQ to XML examples"
           href: build-linq-xml-examples.md
       - name: XML trees
         items:
         - name: Functional construction
           href: functional-construction.md
         - name: "Create XML trees in C#"
-          href: create-xml-trees-csharp.md
+          href: create-xml-trees.md
         - name: XML literals in Visual Basic
           href: xml-literals.md
         - name: Cloning vs. attaching
           href: cloning-vs-attaching.md
         - name: Parse XML
           items:
-          - name: "How to: Parse a string"
+          - name: "How to parse a string"
             href: parse-string.md
-          - name: "How to: Load XML from a file"
+          - name: "How to load XML from a file"
             href: load-xml-file.md
           - name: Preserve white space while loading or parsing XML
             href: preserve-white-space-loading-parsing-xml.md
-          - name: "How to: Catch parsing errors"
+          - name: "How to catch parsing errors"
             href: catch-parsing-errors.md
-          - name: "How to: Create a tree from an XmlReader"
+          - name: "How to create a tree from an XmlReader"
             href: create-tree-xmlreader.md
-          - name: "How to: Stream XML fragments from an XmlReader"
+          - name: "How to stream XML fragments from an XmlReader"
             href: stream-xml-fragments-xmlreader.md
-        - name: "How to: Populate an XML tree with an XmlWriter"
+        - name: "How to populate an XML tree with an XmlWriter"
           href: populate-xml-tree-xmlwriter.md
-        - name: "How to: Validate using XSD"
+        - name: "How to validate using XSD"
           href: validate-xsd.md
         - name: Valid content of XElement and XDocument objects
           href: valid-content-xelement-xdocument-objects.md
@@ -62,15 +62,15 @@
         items:
         - name: Namespaces overview
           href: namespaces-overview.md
-        - name: "How to: Create a document with namespaces"
+        - name: "How to create a document with namespaces"
           href: create-document-namespaces.md
-        - name: "How to: Control namespace prefixes"
+        - name: "How to control namespace prefixes"
           href: control-namespace-prefixes.md
         - name: Scope of default namespaces
           href: scope-default-namespaces.md
         - name: Work with global namespaces in Visual Basic
-          href: work-global-namespaces-visual-basic.md
-        - name: "How to: write queries on XML in namespaces"
+          href: work-global-namespaces.md
+        - name: "How to write queries on XML in namespaces"
           href: write-queries-xml-namespaces.md
       - name: Serialize XML trees
         items:
@@ -86,131 +86,131 @@
         items:
         - name: LINQ to XML axes overview
           href: linq-xml-axes-overview.md
-        - name: "How to: Retrieve a collection of elements"
+        - name: "How to retrieve a collection of elements"
           href: retrieve-collection-elements.md
-        - name: "How to: Retrieve the value of an element"
+        - name: "How to retrieve the value of an element"
           href: retrieve-value-element.md
-        - name: "How to: Filter on element names"
+        - name: "How to filter on element names"
           href: filter-element-names.md
-        - name: "How to: Chain axis method calls"
+        - name: "How to chain axis method calls"
           href: chain-axis-method-calls.md
-        - name: "How to: Retrieve a single child element"
+        - name: "How to retrieve a single child element"
           href: retrieve-single-child-element.md
-        - name: "How to: Retrieve a collection of attributes"
+        - name: "How to retrieve a collection of attributes"
           href: retrieve-collection-attributes.md
-        - name: "How to: Retrieve a single attribute"
+        - name: "How to retrieve a single attribute"
           href: retrieve-single-attribute.md
-        - name: "How to: Retrieve the value of an attribute"
+        - name: "How to retrieve the value of an attribute"
           href: retrieve-value-attribute.md
-        - name: "How to: Retrieve the shallow value of an element"
+        - name: "How to retrieve the shallow value of an element"
           href: retrieve-shallow-value-element.md
         - name: Language-integrated axes in Visual Basic
-          href: language-integrated-axes-visual-basic.md
+          href: language-integrated-axes.md
       - name: Query XML trees
         items:
         - name: Query XML trees overview
           href: query-xml-trees-overview.md
         - name: Basic queries
           items:
-          - name: "How to: Find an element with a specific attribute"
+          - name: "How to find an element with a specific attribute"
             href: find-element-specific-attribute.md
-          - name: "How to: Find an element with a specific child element"
+          - name: "How to find an element with a specific child element"
             href: find-element-specific-child-element.md
           - name: Query an XDocument vs. query an XElement
             href: query-xdocument-vs-query-xelement.md
-          - name: "How to: Find descendants with a specific element name"
+          - name: "How to find descendants with a specific element name"
             href: find-descendants-specific-element-name.md
-          - name: "How to: Find a single descendant using the descendants method"
+          - name: "How to find a single descendant using the descendants method"
             href: find-single-descendant-descendants-method.md
-          - name: "How to: Write queries with complex filtering"
+          - name: "How to write queries with complex filtering"
             href: write-queries-complex-filtering.md
-          - name: "How to: Filter on an optional element"
+          - name: "How to filter on an optional element"
             href: filter-optional-element.md
-          - name: "How to: Find all nodes in a namespace"
+          - name: "How to find all nodes in a namespace"
             href: find-all-nodes-namespace.md
-          - name: "How to: Sort elements"
+          - name: "How to sort elements"
             href: sort-elements.md
-          - name: "How to: Sort elements on multiple Keys"
+          - name: "How to sort elements on multiple Keys"
             href: sort-elements-multiple-keys.md
-          - name: "How to: Calculate intermediate values"
+          - name: "How to calculate intermediate values"
             href: calculate-intermediate-values.md
-          - name: "How to: Write a query that finds elements based on context"
+          - name: "How to write a query that finds elements based on context"
             href: write-query-finds-elements-based-context.md
-          - name: "How to: Debug empty query results sets"
+          - name: "How to debug empty query results sets"
             href: debug-empty-query-results-sets.md
         - name: Projections and transformations
           items:
-          - name: "How to: Work with dictionaries using LINQ to XML"
+          - name: "How to work with dictionaries using LINQ to XML"
             href: work-dictionaries-linq-xml.md
-          - name: "How to: Transform the shape of an XML tree"
+          - name: "How to transform the shape of an XML tree"
             href: transform-shape-xml-tree.md
-          - name: "How to: Control the type of a projection"
+          - name: "How to control the type of a projection"
             href: control-type-projection.md
-          - name: "How to: Project a new type"
+          - name: "How to project a new type"
             href: project-new-type.md
-          - name: "How to: Project an object graph"
+          - name: "How to project an object graph"
             href: project-object-graph.md
-          - name: "How to: Project an anonymous type"
+          - name: "How to project an anonymous type"
             href: project-anonymous-type.md
-          - name: "How to: Generate text files from XML"
+          - name: "How to generate text files from XML"
             href: generate-text-files-xml.md
-          - name: "How to: Generate XML from CSV files"
+          - name: "How to generate XML from CSV files"
             href: generate-xml-csv-files.md
         - name: Advanced query techniques
           items:
-          - name: "How to: Join two collections"
+          - name: "How to join two collections"
             href: join-two-collections.md
-          - name: "How to: Create hierarchy using grouping"
+          - name: "How to create hierarchy using grouping"
             href: create-hierarchy-grouping.md
-          - name: "How to: Query LINQ to XML using XPath"
+          - name: "How to query LINQ to XML using XPath"
             href: query-linq-xml-xpath.md
-          - name: "How to: Write a LINQ to XML axis method"
+          - name: "How to write a LINQ to XML axis method"
             href: write-linq-xml-axis-method.md
-          - name: "How to: Perform streaming transformations of text to XML in C#"
-            href: perform-streaming-transformations-text-xml-csharp.md
-          - name: "How to: List all nodes in a tree"
+          - name: "How to perform streaming transformations of text to XML in C#"
+            href: perform-streaming-transformations-text-xml.md
+          - name: "How to list all nodes in a tree"
             href: list-all-nodes-tree.md
-          - name: "How to: Retrieve paragraphs from an Office open XML document"
+          - name: "How to retrieve paragraphs from an Office open XML document"
             href: retrieve-paragraphs-office-open-xml-document.md
-          - name: "How to: Modify an Office open XML document"
+          - name: "How to modify an Office open XML document"
             href: modify-office-open-xml-document.md
-          - name: "How to: Populate an XML tree from the file system"
+          - name: "How to populate an XML tree from the file system"
             href: populate-xml-tree-file-system.md
         - name: LINQ to XML for XPath users
           items:
           - name: Comparison of XPath and LINQ to XML
             href: comparison-xpath-linq-xml.md
-          - name: "How to: Find a child element"
+          - name: "How to find a child element"
             href: find-child-element.md
-          - name: "How to: Find a list of child elements"
+          - name: "How to find a list of child elements"
             href: find-list-child-elements.md
-          - name: "How to: Find the root element"
+          - name: "How to find the root element"
             href: find-root-element.md
-          - name: "How to: Find descendant elements"
+          - name: "How to find descendant elements"
             href: find-descendant-elements.md
-          - name: "How to: Filter on an attribute"
+          - name: "How to filter on an attribute"
             href: filter-attribute.md
-          - name: "How to: Find related elements"
+          - name: "How to find related elements"
             href: find-related-elements.md
-          - name: "How to: Find elements in a namespace"
+          - name: "How to find elements in a namespace"
             href: find-elements-namespace.md
-          - name: "How to: Find preceding siblings"
+          - name: "How to find preceding siblings"
             href: find-preceding-siblings.md
-          - name: "How to: Find descendants of a child element"
+          - name: "How to find descendants of a child element"
             href: find-descendants-child-element.md
-          - name: "How to: Find a union of two location paths"
+          - name: "How to find a union of two location paths"
             href: find-union-two-location-paths.md
-          - name: "How to: Find sibling nodes"
+          - name: "How to find sibling nodes"
             href: find-sibling-nodes.md
-          - name: "How to: Find an attribute of the parent"
+          - name: "How to find an attribute of the parent"
             href: find-attribute-parent.md
-          - name: "How to: Find attributes of siblings with a specific name"
+          - name: "How to find attributes of siblings with a specific name"
             href: find-attributes-siblings-specific-name.md
-          - name: "How to: Find elements with a specific attribute"
+          - name: "How to find elements with a specific attribute"
             href: find-elements-specific-attribute.md
-          - name: "How to: Find child elements based on position"
+          - name: "How to find child elements based on position"
             href: find-child-elements-based-position.md
-          - name: "How to: Find the immediate preceding sibling"
+          - name: "How to find the immediate preceding sibling"
             href: find-immediate-preceding-sibling.md
         - name: Pure functional transformations of XML
           items:
@@ -227,7 +227,7 @@
           - name: Functional transformation of XML
             href: functional-transformation-xml.md
           - name: "Tutorial: Deferred execution in Visual Basic"
-            href: deferred-execution-visual-basic.md
+            href: deferred-execution.md
           - name: Deferred execution and lazy evaluation in LINQ to XML
             href: deferred-execution-lazy-evaluation-linq-xml.md
           - name: Deferred execution example
@@ -280,7 +280,7 @@
           href: remove-elements-attributes-nodes-xml-tree.md
         - name: Maintain name-value pairs
           href: maintain-name-value-pairs.md
-        - name: "How to: Change the namespace for an entire XML tree"
+        - name: "How to change the namespace for an entire XML tree"
           href: change-namespace-for-entire-xml-tree.md
       - name: Performance
         items:
@@ -302,21 +302,21 @@
           href: program-nodes.md
         - name: Mixed declarative code-imperative code bugs
           href: mixed-declarative-code-imperative-code-bugs.md
-        - name: "How to: Stream XML fragments with access to header information"
+        - name: "How to stream XML fragments with access to header information"
           href: stream-xml-fragments-access-header-information.md
-        - name: "How to: Perform streaming transform of large XML documents"
-          href: perform-streaming-transform-large-xml-documents.md
-        - name: "How to: Read and write an encoded document"
+        - name: "How to do streaming transform of large XML documents"
+          href: do-streaming-transform-large-xml-documents.md
+        - name: "How to read and write an encoded document"
           href: read-write-encoded-document.md
         - name: Use XSLT to transform an XML tree
           href: use-xslt-transform-xml-tree.md
-        - name: "How to: Use annotations to transform LINQ to XML trees in an XSLT style"
+        - name: "How to use annotations to transform LINQ to XML trees in an XSLT style"
           href: use-annotations-transform-linq-xml-trees-xslt-style.md
         - name: Serialize object graphs that contain XElement objects
           items:
-          - name: "How to: Serialize using XmlSerializer"
+          - name: "How to serialize using XmlSerializer"
             href: serialize-xmlserializer.md
-          - name: "How to: Serialize using DataContractSerializer"
+          - name: "How to serialize using DataContractSerializer"
             href: serialize-datacontractserializer.md
       - name: LINQ to XML security
         href: linq-xml-security.md

@@ -162,7 +162,7 @@ Another problem with the DOM is that it doesn't let you change the name of a nod
 
 ## Static method support for loading XML
 
-LINQ to XML lets you load XML by using static methods, instead of instance methods. This simplifies loading and parsing. For more information, see [How to: Load XML from a file](load-xml-file.md).
+LINQ to XML lets you load XML by using static methods, instead of instance methods. This simplifies loading and parsing. For more information, see [How to load XML from a file](load-xml-file.md).
 
 ## Removal of support for DTD constructs
 
@@ -170,7 +170,7 @@ LINQ to XML further simplifies XML programming by removing support for entities 
 
 ## Support for fragments
 
-LINQ to XML doesn't provide an equivalent for the `XmlDocumentFragment` class. In many cases, however, the `XmlDocumentFragment` concept can be handled by the result of a query that is typed as <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XNode>, or <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>.
+LINQ to XML doesn't provide an equivalent for the `XmlDocumentFragment` class. In many cases, however, the `XmlDocumentFragment` concept can be handled by the result of a query that's typed as <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XNode>, or <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>.
 
 ## Support for XPathNavigator
 
@@ -195,7 +195,7 @@ LINQ to XML elements support an extensible set of annotations. This is useful fo
 
 ## Support for schema information
 
-LINQ to XML provides support for XSD validation through extension methods in the <xref:System.Xml.Schema?displayProperty=nameWithType> namespace. You can validate that an XML tree complies with an XSD. You can populate the XML tree with the post-schema-validation infoset (PSVI). For more information, see [How to: Validate using XSD](validate-xsd.md) and <xref:System.Xml.Schema.Extensions>.
+LINQ to XML provides support for XSD validation through extension methods in the <xref:System.Xml.Schema?displayProperty=nameWithType> namespace. You can validate that an XML tree complies with an XSD. You can populate the XML tree with the post-schema-validation infoset (PSVI). For more information, see [How to validate using XSD](validate-xsd.md) and <xref:System.Xml.Schema.Extensions>.
 
 ## See also
 

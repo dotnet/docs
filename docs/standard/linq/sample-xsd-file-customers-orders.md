@@ -7,7 +7,7 @@ ms.assetid: ef9911a3-7ac4-44fd-b36e-a0c0ad0a157d
 
 The following XSD file is used in various examples in the LINQ to XML documentation. This file contains a schema definition for the [Sample XML file: Customers and orders](sample-xml-file-customers-orders.md). The schema uses the `xs:key` and `xs:keyref` features of XSD to establish that the `CustomerID` attribute of the `Customer` element is a key, and to establish a relationship between the `CustomerID` element in each `Order` element and the `CustomerID` attribute in each `Customer` element.
 
-For an example of writing LINQ queries that take advantage of this relationship using the `Join` clause, see [How to: Join two collections (LINQ to XML)](join-two-collections.md).
+For an example of writing LINQ queries that take advantage of this relationship using the `Join` clause, see [How to join two collections (LINQ to XML)](join-two-collections.md).
 
 ## CustomersOrders.xsd
 

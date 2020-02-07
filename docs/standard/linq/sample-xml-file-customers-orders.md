@@ -9,7 +9,7 @@ The following XML file is used in various examples in the LINQ to XML documentat
 
 The article [Sample XSD file: Customers and orders (LINQ to XML)](sample-xsd-file-customers-orders.md) contains an XSD that can be used to validate this document. It uses the `xs:key` and `xs:keyref` features of XSD to establish that the `CustomerID` attribute of the `Customer` element is a key, and to establish a relationship between the `CustomerID` element in each `Order` element and the `CustomerID` attribute in each `Customer` element.
 
-For an example of writing LINQ queries that take advantage of this relationship using the `Join` clause, see [How to: Join two collections (LINQ to XML)](join-two-collections.md).
+For an example of writing LINQ queries that take advantage of this relationship using the `Join` clause, see [How to join two collections (LINQ to XML)](join-two-collections.md).
 
 ## CustomersOrders.xml
 

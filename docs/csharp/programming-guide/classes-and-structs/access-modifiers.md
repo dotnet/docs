@@ -1,6 +1,6 @@
 ---
 title: "Access Modifiers - C# Programming Guide"
-ms.date: 01/24/2020
+ms.date: 03/08/2020
 helpviewer_keywords: 
   - "C# Language, access modifiers"
   - "access modifiers [C#], about"
@@ -19,7 +19,7 @@ All types and type members have an accessibility level. The accessibility level 
 
 The following examples demonstrate how to specify access modifiers on a type and member:
 
-[!code-csharp[csProgGuideObjects#72](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#72)]
+[!code-csharp[PublicAccess](~/samples/snippets/csharp/objectoriented/nestedtypes.cs#PublicAccess)]
 
 Not all access modifiers are valid for all types or members in all contexts. In some cases, the accessibility of a type member is constrained by the accessibility of its containing type.
 
@@ -47,11 +47,11 @@ Finalizers can't have accessibility modifiers.
 
 To set the access level for a `class` or `struct` member, add the appropriate keyword to the member declaration, as shown in the following example.
 
-[!code-csharp[csProgGuideObjects#73](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#73)]
+[!code-csharp[MethodAccess](~/samples/snippets/csharp/objectoriented/nestedtypes.cs#MethodAccess)]
 
 ## Other types
 
-Interfaces declared directly within a namespace can be `public` or `internal` and, just like classes and structs, interfaces default to `internal` access. Interface members are `public` by default because the purpose of an interface is to enable other types to access a class or struct.
+Interfaces declared directly within a namespace can be `public` or `internal` and, just like classes and structs, interfaces default to `internal` access. Interface members are `public` by default because the purpose of an interface is to enable other types to access a class or struct. Interface member declarations may ecare any access modifier. This is most useful for static methods to provide common implementations needed by all implementors of a class.
 
 Enumeration members are always `public`, and no access modifiers can be applied.
 

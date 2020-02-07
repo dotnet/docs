@@ -5,7 +5,7 @@ ms.date: 01/31/2020
 ---
 # .NET Core application publishing overview
 
-Applications you create with .NET Core can be published in two different modes, and depending on the mode, affects how a user runs your app. Publishing your app self-contained produces a *.dll* file containing your app and includes: its dependencies, the .NET Core runtime and libraries, and a platform-specific executable. Publishing your app runtime-dependent produces a cross-platform *.dll* file that contains your app and its dependencies. Starting with .NET Core SDK 3.0, publishing an app runtime-dependent also produces a platform-specific executable for your current platform.
+Applications you create with .NET Core can be published in two different modes, and depending on the mode, affects how a user runs your app. Publishing your app self-contained produces an application that contains the .NET Core runtime and libraries, in addition to your application and its dependencies. Publishing your app runtime-dependent produces an application that contains only your application and its dependencies, and users of your application will need to separately install the .NET Core runtime. Both types of applications include a platform specific executable by default. Runtime-dependent applications without an executable can be created and these applications are cross-platform. 
 
 The following table outlines the basic commands used to publish an app as runtime-dependent or self-contained, per SDK:
 
@@ -66,7 +66,7 @@ If you want your users to start your app directly and avoid the `dotnet <filenam
 
 Publishing your app as self-contained produces a platform-specific executable. The output publishing folder contains all components of the app, including the .NET Core libraries and target runtime. The app is isolated from other .NET Core apps and doesn't use a locally installed shared runtime. The user of your app isn't required to download and install .NET Core.
 
-The executable binary produced for the specified target platform. For example, if you have an app named **word_reader**, and you publish a self-contained executable for Windows, a *word_reader.exe* file is created. Publishing for Linux or macOS, a *word_reader* file is created. The target platform and architecture is specified with the `-r <RID>` parameter. For more information about RIDs, see [.NET Core RID Catalog](../rid-catalog.md).
+The executable binary is produced for the specified target platform. For example, if you have an app named **word_reader**, and you publish a self-contained executable for Windows, a *word_reader.exe* file is created. Publishing for Linux or macOS, a *word_reader* file is created. The target platform and architecture is specified with the `-r <RID>` parameter. For more information about RIDs, see [.NET Core RID Catalog](../rid-catalog.md).
 
 If the app has platform-specific dependencies, such as a NuGet package containing platform-specific dependencies, these are copied to the publish folder along with the app.
 
@@ -87,13 +87,13 @@ Because you have to publish your app for each platform, you know where your app 
 ### Disadvantages
 
 - **Larger deployments**\
-Because your app includes the .NET Core runtime and all of your app dependencies, the hard drive space required is greater than a [runtime-dependent](#runtime-dependent) version.
+Because your app includes the .NET Core runtime and all of your app dependencies, the download size and hard drive space required is greater than a [runtime-dependent](#runtime-dependent) version.
 
   > [!TIP]
   > You can reduce the size of your deployment on Linux systems by approximately 28 MB by using .NET Core [*globalization invariant mode*](https://github.com/dotnet/runtime/blob/master/docs/design/features/globalization-invariant-mode.md). This forces your app to treat all cultures like the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType).
 
 - **Control .NET Core version**\
-.NET Core (distributed with your app) can only be upgraded by releasing a new version of your app.
+.NET Core Runtime (distributed with your app) can only be upgraded by releasing a new version of your app. You are responsible for supplying an updated version of your application for security patches to the .NET Core Runtime. 
 
 ## See also
 

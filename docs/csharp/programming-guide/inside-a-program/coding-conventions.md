@@ -94,7 +94,6 @@ ms.assetid: f4f60de9-d49b-4fb6-bab1-20e19ea24710
   
      [!code-csharp[csProgGuideCodingConventions#7](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs#7)]  
 
-  
 ### Unsigned Data Type  
   
 - In general, use `int` rather than unsigned types. The use of `int` is common throughout C#, and it is easier to interact with other libraries when you use `int`.  

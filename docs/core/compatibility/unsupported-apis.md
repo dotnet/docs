@@ -240,7 +240,6 @@ This article organizes the affected API members by namespace.
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.Removable?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.UniqueKeyContainerName?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.HashAlgorithm.Create?displayProperty=nameWithType> | All |
-| <xref:System.Security.Cryptography.HashAlgorithm.Create(System.String)?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.HMAC.Create?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.HMAC.Create(System.String)?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.HMAC.HashCore%2A?displayProperty=nameWithType> | All |

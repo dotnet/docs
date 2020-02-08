@@ -33,7 +33,7 @@ This topic provides an overview of some of the key features of OpenType font tec
 > [!NOTE]
 > The Windows SDK contains a set of sample OpenType fonts that you can use with [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] applications. These fonts provide most of the features illustrated in the rest of this topic. For more information, see [Sample OpenType Font Pack](sample-opentype-font-pack.md).  
   
- See the [OpenType Specification](https://go.microsoft.com/fwlink/?LinkId=96731) for details of the OpenType font format.  
+For details of the OpenType font format, see the [OpenType specification](https://docs.microsoft.com/typography/opentype/spec/).  
   
 ### Advanced Typographic Extensions  
  The Advanced Typographic tables (OpenType Layout tables) extend the functionality of fonts with either TrueType or CFF outlines. OpenType Layout fonts contain additional information that extends the capabilities of the fonts to support high-quality international typography. Most OpenType fonts expose only a subset of the total OpenType features available. OpenType fonts provide the following features.  
@@ -332,7 +332,7 @@ This topic provides an overview of some of the key features of OpenType font tec
 ## See also
 
 - <xref:System.Windows.Documents.Typography>
-- [OpenType Specification](https://go.microsoft.com/fwlink/?LinkId=96731)
+- [OpenType specification](https://docs.microsoft.com/typography/opentype/spec/)
 - [Typography in WPF](typography-in-wpf.md)
 - [Sample OpenType Font Pack](sample-opentype-font-pack.md)
 - [Packaging Fonts with Applications](packaging-fonts-with-applications.md)

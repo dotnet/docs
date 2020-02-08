@@ -148,6 +148,7 @@ This article organizes the affected API members by namespace.
 
 | Member | Platforms that throw |
 | - | - |
+| <xref:System.Net.Sockets.Socket.%23ctor(System.Net.Sockets.SocketInformation)?displayProperty=nameWithType> | All |
 | <xref:System.Net.Sockets.Socket.DuplicateAndClose(System.Int32)?displayProperty=nameWithType> | All |
 
 ## System.Net.WebSockets

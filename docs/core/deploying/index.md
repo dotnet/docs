@@ -11,7 +11,8 @@ The following table outlines the basic commands used to publish an app as runtim
 
 | Type                                                          | SDK 3.1 | SDK 3.0 | SDK 2.1 | Command | 
 | ------------------------------------------------------------- | --------| ------- | ------- | ------- |
-| [runtime-dependent executable](#runtime-dependent)            | ✔️       | ✔️       |          | [`dotnet publish`](../tools/dotnet-publish.md) |
+| [runtime-dependent executable](#runtime-dependent)            | ✔️       | ✔️       |         | [`dotnet publish`](../tools/dotnet-publish.md) |
+| [runtime-dependent executable](#runtime-dependent)            | ✔️       | ✔️       |         | [`dotnet publish -r <RID> --self-contained false`](../tools/dotnet-publish.md) |
 | [runtime-dependent cross-platform binary](#runtime-dependent) | ✔️       | ✔️       | ✔️       | [`dotnet publish`](../tools/dotnet-publish.md) |
 | [self-contained executable](#self-contained)                  | ✔️       | ✔️       | ✔️       | [`dotnet publish -r <RID>`](../tools/dotnet-publish.md) |
 
@@ -25,7 +26,7 @@ A *dll* file is created when you publish your app. For example, if you have an a
 
 Along with the *dll* file containing your app, a platform-specific executable can be published if the `-r <RID>` parameter is used. The *dll* is still created and remains cross-platform while the executable isn't. Continuing the example above, if you publish the **word_reader** app and target Windows, a *word_reader.exe* executable is created along with *word_reader.dll*. When targeting Linux or macOS, a *word_reader* executable is created along with *word_reader.dll*. For more information about RIDs, see [.NET Core RID Catalog](../rid-catalog.md).
 
-Starting with .NET Core 3.0 SDK, an executable is always created for your current platform when you omit the `-r` parameter.
+Starting with .NET Core 3.0 SDK, an executable is also created for your current platform when you omit the `-r` parameter, and targets your current platform.
 
 If the app uses a NuGet package that has platform-specific implementations, dependencies for all platforms are copied to the publish folder along with the app.
 
@@ -50,7 +51,7 @@ Only your app and its dependencies are distributed. The .NET Core runtime and li
 Your app and any .NET-based library runs on other operating systems. You don't need to define a target platform for your app. For more information about the .NET file format, see [.NET Assembly File Format](../../standard/assembly/file-format.md).
 
 - **Uses the latest patched runtime**\
-The app uses the latest runtime (within the targeted major-minor family of .NET Core) installed on the target system. This means your app automatically uses the latest patched version of the .NET Core runtime. This default behavior can be overridden.
+The app uses the latest runtime (within the targeted major-minor family of .NET Core) installed on the target system. This means your app automatically uses the latest patched version of the .NET Core runtime. This default behavior can be overridden. For more information, see [runtime-dependent apps roll forward](../versions/selection.md#framework-dependent-apps-roll-forward).
 
 ### Disadvantages
 
@@ -58,11 +59,10 @@ The app uses the latest runtime (within the targeted major-minor family of .NET 
 Your app can run only if the version of .NET Core your app targets is already installed on the host system. You can configure roll-forward behavior for the app to either require a specific version of .NET Core or allow a newer version of .NET Core. For more information, see [runtime-dependent apps roll forward](../versions/selection.md#framework-dependent-apps-roll-forward).
 
 - **.NET Core may change**\
-It's possible for the .NET Core runtime and libraries to be updated on the machine where the app is run. In rare cases, this may change the behavior of your app if you use the .NET Core libraries, which most apps do.
+It's possible for the .NET Core runtime and libraries to be updated on the machine where the app is run. In rare cases, this may change the behavior of your app if you use the .NET Core libraries, which most apps do. You can configure how your app uses newer versions of .NET Core. For more information, see [runtime-dependent apps roll forward](../versions/selection.md#framework-dependent-apps-roll-forward).
 
-- **Per-platform executables**\
-*.NET Core 3.0 and later versions*\
-If you want your users to start your app directly and avoid the `dotnet <filename.dll>` command, you must publish your app for every platform.
+- **Use the `dotnet` command to start the app**\
+Users must run the `dotnet <filename.dll>` command to start your app.
 
 ## Self-contained
 
@@ -76,6 +76,12 @@ A self-contained executable can be created with the [`dotnet publish -r`](../too
 
 ```dotnet
 dotnet publish -r <RID>
+```
+
+A runtime-dependent app can be created for a specific platform, for example, Linux 64-bit.
+
+```dotnet
+dotnet publish -r windows-x64
 ```
 
 ### Advantages

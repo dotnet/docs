@@ -95,4 +95,4 @@ You can create a custom control that dynamically and statically renders ink. Tha
 ## See also
 
 - [Advanced Ink Handling](advanced-ink-handling.md)
-- [Accessing and Manipulating Pen Input](https://go.microsoft.com/fwlink/?LinkId=50752&clcid=0x409)
+- [Accessing and Manipulating Pen Input](https://docs.microsoft.com/previous-versions/ms818317(v=msdn.10))

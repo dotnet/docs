@@ -1,5 +1,6 @@
 ---
 title: Breaking changes - .NET Framework to .NET Core
+titleSuffix: ""
 description: Lists the breaking changes from .NET Framework to .NET Core.
 ms.date: 12/18/2019
 ---

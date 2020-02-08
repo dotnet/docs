@@ -41,7 +41,7 @@ This topic lists a number of known issues customers have run into while developi
   
  HTTP Error 404.3 – Not FoundThe page you are requesting cannot be served because of the extension configuration. If the page is a script, add a handler. If the file should be downloaded, add a MIME map. Detailed Error InformationModule StaticFileModule.  
   
- This error message occurs when "Windows Communication Foundation HTTP Activation" is not explicitly set in the Control Panel. To set this go to the Control Panel, click Programs in the lower left hand corner of the window. Click Turn Windows features on or off. Expand Microsoft .NET Framework 3.5.1 and select Windows Communication Foundation HTTP Activation.  
+ This error message occurs when "Windows Communication Foundation HTTP Activation" is not explicitly set in the Control Panel. To set this go to the Control Panel, click Programs in the lower left-hand corner of the window. Click Turn Windows features on or off. Expand Microsoft .NET Framework 3.5.1 and select Windows Communication Foundation HTTP Activation.  
   
 <a name="BKMK_q1"></a>   
 ## Sometimes I receive a MessageSecurityException on the second request if my client is idle for a while after the first request. What is happening?  
@@ -53,7 +53,7 @@ This topic lists a number of known issues customers have run into while developi
   
 <a name="BKMK_q3"></a>   
 ## Can I load my service configuration from somewhere other than the WCF application’s configuration file?  
- Yes, however, you have to create a custom <xref:System.ServiceModel.ServiceHost> class that overrides the <xref:System.ServiceModel.ServiceHostBase.ApplyConfiguration%2A> method. Inside that method, you can call the base to load configuration first (if you want to load the standard configuration information as well) but you can also entirely replace the configuration loading system. Note that if you want to load configuration from a configuration file that is different from the application configuration file, you must parse the configuration file yourself and load the configuration.  
+ Yes, however, you have to create a custom <xref:System.ServiceModel.ServiceHost> class that overrides the <xref:System.ServiceModel.ServiceHostBase.ApplyConfiguration%2A> method. Inside that method, you can call the base to load configuration first (if you want to load the standard configuration information as well) but you can also entirely replace the configuration loading system. If you want to load configuration from a configuration file that is different from the application configuration file, you must parse the configuration file yourself and load the configuration.  
   
  The following code example shows how to override the <xref:System.ServiceModel.ServiceHostBase.ApplyConfiguration%2A> method and directly configure an endpoint.  
   
@@ -124,7 +124,7 @@ public class MyServiceHost : ServiceHost
   
     3. Host the service under Internet Information Services (IIS), which, by default, uses the service principal name (SPN) account.  
   
-    4. Register a new SPN with the domain using SetSPN. Note that you will need to be a domain administrator in order to do this.  
+    4. Register a new SPN with the domain using SetSPN. You need to be a domain administrator in order to do this.  
   
  For more information about the Kerberos protocol, see [Security Concepts Used in WCF](./feature-details/security-concepts-used-in-wcf.md) and:  
   
@@ -160,7 +160,7 @@ public class MyServiceHost : ServiceHost
   
 <a name="BKMK_q88"></a>   
 ## I changed the first parameter of an operation from uppercase to lowercase; now my client throws an exception. What's happening?  
- The value of the parameter names in the operation signature are part of the contract and are case-sensitive. Use the <xref:System.ServiceModel.MessageParameterAttribute?displayProperty=nameWithType> attribute when you need to distinguish between the local parameter name and the metadata that describes the operation for client applications.  
+ The values of the parameter names in the operation signature are part of the contract and are case-sensitive. Use the <xref:System.ServiceModel.MessageParameterAttribute?displayProperty=nameWithType> attribute when you need to distinguish between the local parameter name and the metadata that describes the operation for client applications.  
   
 <a name="BKMK_q99"></a>   
 ## I’m using one of my tracing tools and I get an EndpointNotFoundException. What’s happening?  
@@ -231,7 +231,7 @@ public class MyServiceHost : ServiceHost
   
 <a name="BK_MK99"></a>   
 ## When calling a WCF Web HTTP application from a WCF SOAP application the service returns the following error: 405 Method Not Allowed  
- Calling a WCF Web HTTP application (a service that uses the <xref:System.ServiceModel.WebHttpBinding> and <xref:System.ServiceModel.Description.WebHttpBehavior>) from a WCF service may generate the following exception: `Unhandled Exception: System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: The remote server returned an unexpected response: (405) Method Not Allowed.` This exception occurs because WCF overwrites the outgoing <xref:System.ServiceModel.OperationContext> with the incoming <xref:System.ServiceModel.OperationContext>. To solve this problem create an <xref:System.ServiceModel.OperationContextScope> within the WCF Web HTTP service operation. For example:  
+ Calling a WCF Web HTTP application (a service that uses the <xref:System.ServiceModel.WebHttpBinding> and <xref:System.ServiceModel.Description.WebHttpBehavior>) from a WCF service may generate the following exception: ``Unhandled Exception: System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: The remote server returned an unexpected response: (405) Method Not Allowed.`` This exception occurs because WCF overwrites the outgoing <xref:System.ServiceModel.OperationContext> with the incoming <xref:System.ServiceModel.OperationContext>. To solve this problem, create an <xref:System.ServiceModel.OperationContextScope> within the WCF Web HTTP service operation. For example:  
   
 ```csharp
 public string Echo(string input)  

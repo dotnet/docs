@@ -9,7 +9,7 @@ ms.topic: reference
 ## Tiered compilation
 
 - Configures whether the just-in-time (JIT) compiler uses [tiered compilation](../whats-new/dotnet-core-3-0.md#tiered-compilation). Tiered compilation transitions methods through two tiers:
-  - The first tier generates code more quickly ([quick JIT](#quick-jit)) or loads pre-compiled code ([ReadyToRun](../whats-new/dotnet-core-3-0.md#readytorun-images)).
+  - The first tier generates code more quickly ([quick JIT](#quick-jit)) or loads pre-compiled code ([ReadyToRun](#readytorun)).
   - The second tier generates optimized code in the background ("optimizing JIT").
 - In .NET Core 3.0 and later, tiered compilation is enabled by default.
 - In .NET Core 2.1 and 2.2, tiered compilation is disabled by default.
@@ -51,7 +51,7 @@ Project file:
 
 - Configures whether the JIT compiler uses *quick JIT*. For methods that don't contain loops and for which pre-compiled code is not available, quick JIT compiles them more quickly but without optimizations.
 - Enabling quick JIT decreases startup time but can produce code with degraded performance characteristics. For example, the code may use more stack space, allocate more memory, and run slower.
-- If quick JIT is disabled but [tiered compilation](#tiered-compilation) is enabled, only pre-compiled code participates in tiered compilation. If a method is not pre-compiled with [ReadyToRun](../whats-new/dotnet-core-3-0.md#readytorun-images), the JIT behavior is the same as if [tiered compilation](#tiered-compilation) were disabled.
+- If quick JIT is disabled but [tiered compilation](#tiered-compilation) is enabled, only pre-compiled code participates in tiered compilation. If a method is not pre-compiled with [ReadyToRun](#readytorun), the JIT behavior is the same as if [tiered compilation](#tiered-compilation) were disabled.
 - In .NET Core 3.0 and later, quick JIT is enabled by default.
 - In .NET Core 2.1 and 2.2, quick JIT is disabled by default.
 
@@ -125,3 +125,13 @@ Project file:
 
 </Project>
 ```
+
+## ReadyToRun
+
+- Configures whether the .NET Core runtime uses pre-compiled code for images with available ReadyToRun data. Disabling this option forces the runtime to JIT-compile framework code.
+- For more information, see [ReadyToRun](../whats-new/dotnet-core-3-0.md#readytorun-images).
+- Default: Enabled (`1`).
+
+| | Setting name | Values |
+| - | - | - |
+| **Environment variable** | `COMPlus_ReadyToRun` | `1` - enabled<br/>`0` - disabled |

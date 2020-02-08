@@ -79,4 +79,4 @@ This sample may already be installed on your computer. Check for the following (
   
 ## See also
 
-- [AppFabric Hosting and Persistence Samples](https://go.microsoft.com/fwlink/?LinkId=193961)
+- [AppFabric Hosting and Persistence Samples](https://docs.microsoft.com/previous-versions/appfabric/ff383418(v=azure.10))

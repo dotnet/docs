@@ -9,7 +9,8 @@ helpviewer_keywords:
   - "WCF, Windows authentication"
 ms.assetid: 181be4bd-79b1-4a66-aee2-931887a6d7cc
 ---
-# Debugging Windows Authentication Errors
+# Debug Windows authentication errors
+
 When using Windows authentication as a security mechanism, the Security Support Provider Interface (SSPI) handles security processes. When security errors occur at the SSPI layer, they are surfaced by Windows Communication Foundation (WCF). This topic provides a framework and set of questions to help diagnose the errors.  
   
  For an overview of the Kerberos protocol, see [Kerberos Explained](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-2000-server/bb742516(v=technet.10)); for an overview of SSPI, see [SSPI](/windows/win32/secauthn/sspi).  
@@ -92,7 +93,7 @@ When using Windows authentication as a security mechanism, the Security Support 
 ### NTLM Protocol  
   
 #### Negotiate SSP Falls Back to NTLM, but NTLM Is Disabled  
- The <xref:System.ServiceModel.Security.WindowsClientCredential.AllowNtlm%2A> property is set to `false`, which causes Windows Communication Foundation (WCF) to make a best-effort to throw an exception if NTLM is used. Note that setting this property to `false` may not prevent NTLM credentials from being sent over the wire.  
+ The <xref:System.ServiceModel.Security.WindowsClientCredential.AllowNtlm%2A> property is set to `false`, which causes Windows Communication Foundation (WCF) to make a best-effort to throw an exception if NTLM is used. Setting this property to `false` may not prevent NTLM credentials from being sent over the wire.  
   
  The following shows how to disable fallback to NTLM.  
   
@@ -136,7 +137,7 @@ When using Windows authentication as a security mechanism, the Security Support 
  The following operating systems do not support Windows authentication when used as a server: Windows XP Home Edition, Windows XP Media Center Edition, and Windows Vista Home editions.  
   
 #### Developing and Deploying with Different Identities  
- If you develop your application on one machine, and deploy on another, and use different account types to authenticate on each machine, you may experience different behavior. For example, suppose you develop your application on a Windows XP Pro machine using the `SSPI Negotiated` authentication mode. If you use a local user account to authenticate with, then NTLM protocol will be used. Once the application is developed, you deploy the service to a Windows Server 2003 machine where it runs under a domain account. At this point the client will not be able to authenticate the service because it will be using Kerberos and a domain controller.  
+ If you develop your application on one machine, and deploy on another, and use different account types to authenticate on each machine, you may experience different behavior. For example, suppose you develop your application on a Windows XP Pro machine using the `SSPI Negotiated` authentication mode. If you use a local user account to authenticate with, then NTLM protocol will be used. Once the application is developed, you deploy the service to a Windows Server 2003 machine where it runs under a domain account. At this point, the client will not be able to authenticate the service because it will be using Kerberos and a domain controller.  
   
 ## See also
 

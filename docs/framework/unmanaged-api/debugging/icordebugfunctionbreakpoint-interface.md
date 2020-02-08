@@ -23,8 +23,8 @@ Extends the ICorDebugBreakpoint interface to support breakpoints within function
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetFunction Method](../../../../docs/framework/unmanaged-api/debugging/icordebugfunctionbreakpoint-getfunction-method.md)|Gets an interface pointer to an ICorDebugFunction that references the function in which the breakpoint is set.|  
-|[GetOffset Method](../../../../docs/framework/unmanaged-api/debugging/icordebugfunctionbreakpoint-getoffset-method.md)|Gets the offset of the breakpoint within the function.|  
+|[GetFunction Method](icordebugfunctionbreakpoint-getfunction-method.md)|Gets an interface pointer to an ICorDebugFunction that references the function in which the breakpoint is set.|  
+|[GetOffset Method](icordebugfunctionbreakpoint-getoffset-method.md)|Gets the offset of the breakpoint within the function.|  
   
 ## Remarks  
   
@@ -42,4 +42,4 @@ Extends the ICorDebugBreakpoint interface to support breakpoints within function
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

@@ -1,5 +1,5 @@
 ---
-title: "How to: Make thread-safe calls to Windows Forms controls"
+title: Make thread-safe calls to controls
 ms.date: "02/19/2019"
 dev_langs:
   - "csharp"

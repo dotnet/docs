@@ -23,8 +23,8 @@ A subclass of ICorDebugReferenceValue that represents a reference value to which
   
 |Method|Description|  
 |------------|-----------------|  
-|[Dispose Method](../../../../docs/framework/unmanaged-api/debugging/icordebughandlevalue-dispose-method.md)|Releases the handle referenced by this `ICorDebugHandleValue` object without explicitly releasing the interface pointer.|  
-|[GetHandleType Method](../../../../docs/framework/unmanaged-api/debugging/icordebughandlevalue-gethandletype-method.md)|Gets a CorDebugHandleType value that describes the kind of handle referenced by this `ICorDebugHandleValue`.|  
+|[Dispose Method](icordebughandlevalue-dispose-method.md)|Releases the handle referenced by this `ICorDebugHandleValue` object without explicitly releasing the interface pointer.|  
+|[GetHandleType Method](icordebughandlevalue-gethandletype-method.md)|Gets a CorDebugHandleType value that describes the kind of handle referenced by this `ICorDebugHandleValue`.|  
   
 ## Remarks  
  An `ICorDebugReferenceValue` object is invalidated by a break in the execution of debugged code. An `ICorDebugHandleValue` maintains its reference through breaks and continuations, until it is explicitly released.  
@@ -43,4 +43,4 @@ A subclass of ICorDebugReferenceValue that represents a reference value to which
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

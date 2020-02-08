@@ -1,6 +1,7 @@
 ---
 title: "How to write custom converters for JSON serialization - .NET"
 ms.date: "01/10/2020"
+no-loc: [System.Text.Json, Newtonsoft.Json]
 helpviewer_keywords: 
   - "JSON serialization"
   - "serializing objects"
@@ -275,6 +276,8 @@ The converter can deserialize JSON that was created by using the same converter 
   }
 ]
 ```
+
+The converter code in the preceding example reads and writes each property manually. An alternative is to call `Deserialize` or `Serialize` to do some of the work. For an example, see [this StackOverflow post](https://stackoverflow.com/a/59744873/12509023).
 
 ## Other custom converter samples
 

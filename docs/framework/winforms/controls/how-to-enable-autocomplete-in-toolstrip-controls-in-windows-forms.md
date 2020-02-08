@@ -1,5 +1,5 @@
 ---
-title: "How to: Enable AutoComplete in ToolStrip Controls in Windows Forms"
+title: "How to: Enable AutoComplete in ToolStrip Controls"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

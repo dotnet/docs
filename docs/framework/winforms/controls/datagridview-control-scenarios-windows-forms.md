@@ -1,5 +1,5 @@
 ---
-title: "DataGridView Control Scenarios (Windows Forms)"
+title: "DataGridView Control Scenarios"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "data [Windows Forms], displaying in tabular format"

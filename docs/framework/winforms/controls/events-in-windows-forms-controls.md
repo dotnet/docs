@@ -1,5 +1,5 @@
 ---
-title: "Events in Windows Forms Controls"
+title: Events in Controls
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "events [Windows Forms], custom controls (using code)"

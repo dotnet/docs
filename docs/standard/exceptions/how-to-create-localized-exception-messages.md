@@ -151,6 +151,11 @@ To create the localized exception messages:
     throw new StudentNotFoundException(resourceManager.GetString("StudentNotFound"), "John");
     ```
 
+    ```vb
+    Dim resourceManager As New ResourceManager("FULLY_QIALIFIED_NAME_OF_RESOURCE_FILE", Assembly.GetExecutingAssembly())
+    Throw New StudentNotFoundException(resourceManager.GetString("StudentNotFound"), "John")
+    ```
+
     > [!NOTE]
     > If the project name is `TestProject` and the resource file *ExceptionMessages.resx* resides in the *Resources* folder of the project, the fully qualified name of the resource file is `TestProject.Resources.ExceptionMessages`.
 

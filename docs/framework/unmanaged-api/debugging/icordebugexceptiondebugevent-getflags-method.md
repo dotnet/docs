@@ -16,7 +16,7 @@ HRESULT GetFlags(
   
 ## Parameters  
  `pdwFlags`  
- [out] A pointer to a [CorDebugExceptionFlags](../../../../docs/framework/unmanaged-api/debugging/cordebugexceptionflags-enumeration.md) value that indicates whether the exception can be intercepted.  
+ [out] A pointer to a [CorDebugExceptionFlags](cordebugexceptionflags-enumeration.md) value that indicates whether the exception can be intercepted.  
   
 ## Remarks  
   
@@ -34,5 +34,5 @@ HRESULT GetFlags(
   
 ## See also
 
-- [ICorDebugExceptionDebugEvent Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugexceptiondebugevent-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugExceptionDebugEvent Interface](icordebugexceptiondebugevent-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

@@ -1,5 +1,5 @@
 ---
-title: "Modifying Large-Value (max) Data in ADO.NET"
+title: "Modifying Large-Value (max) Data"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

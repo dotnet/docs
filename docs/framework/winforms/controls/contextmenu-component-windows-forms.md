@@ -1,5 +1,5 @@
 ---
-title: "ContextMenu Component (Windows Forms)"
+title: "ContextMenu Component"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "menus [Windows Forms], shortcut menus"

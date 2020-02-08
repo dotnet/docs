@@ -310,4 +310,4 @@ static void DisplayOrderStatus()
 ## See also
 
 - [Queuing in WCF](../../../../docs/framework/wcf/feature-details/queuing-in-wcf.md)
-- [Message Queuing](https://go.microsoft.com/fwlink/?LinkId=94968)
+- [Message Queuing](https://docs.microsoft.com/previous-versions/windows/desktop/legacy/ms711472(v=vs.85))

@@ -18,20 +18,74 @@ ms.topic: reference
 
 ## Minimum threads
 
-- Specifies the minimum number of threads for the worker threadpool.
+- Specifies the minimum number of threads for the worker thread pool.
 - Corresponds to the <xref:System.Threading.ThreadPool.SetMinThreads%2A?displayProperty=nameWithType> method.
 
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | `System.Threading.ThreadPool.MinThreads` | An integer that represents the minimum number of threads |
+| **MSBuild property** | `ThreadPoolMinThreads` | An integer that represents the minimum number of threads |
 | **Environment variable** | N/A | N/A |
+
+### Examples
+
+*runtimeconfig.json* file:
+
+```json
+{
+   "runtimeOptions": {
+      "configProperties": {
+         "System.Threading.ThreadPool.MinThreads": 4
+      }
+   }
+}
+```
+
+Project file:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <ThreadPoolMinThreads>4</ThreadPoolMinThreads>
+  </PropertyGroup>
+
+</Project>
+```
 
 ## Maximum threads
 
-- Specifies the maximum number of threads for the worker threadpool.
+- Specifies the maximum number of threads for the worker thread pool.
 - Corresponds to the <xref:System.Threading.ThreadPool.SetMaxThreads%2A?displayProperty=nameWithType> method.
 
 | | Setting name | Values |
 | - | - | - |
 | **runtimeconfig.json** | `System.Threading.ThreadPool.MaxThreads` | An integer that represents the maximum number of threads |
+| **MSBuild property** | `ThreadPoolMaxThreads` | An integer that represents the maximum number of threads |
 | **Environment variable** | N/A | N/A |
+
+### Examples
+
+*runtimeconfig.json* file:
+
+```json
+{
+   "runtimeOptions": {
+      "configProperties": {
+         "System.Threading.ThreadPool.MaxThreads": 20
+      }
+   }
+}
+```
+
+Project file:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <ThreadPoolMaxThreads>20</ThreadPoolMaxThreads>
+  </PropertyGroup>
+
+</Project>
+```

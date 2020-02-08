@@ -1,5 +1,5 @@
 ---
-title: "WPF community feedback"
+title: Community resources
 ms.date: "03/01/2018"
 helpviewer_keywords: 
   - "community resources [WPF]"

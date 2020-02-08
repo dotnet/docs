@@ -5,7 +5,25 @@ ms.date: "09/20/2019"
 ---
 # CoreFx breaking changes
 
-The following is a list of CoreFx breaking changes by .NET Core version. CoreFx provides the primitives and other general types used by .NET Core.
+CoreFx provides the primitives and other general types used by .NET Core.
+
+The following breaking changes are documented on this page:
+
+- [APIs that report version now report product and not file version](#apis-that-report-version-now-report-product-and-not-file-version)
+- [Custom EncoderFallbackBuffer instances cannot fall back recursively](#custom-encoderfallbackbuffer-instances-cannot-fall-back-recursively)
+- [Floating point formatting and parsing behavior changes](#floating-point-formatting-and-parsing-behavior-changed)
+- [Floating-point parsing operations no longer fail or throw an OverflowException](#floating-point-parsing-operations-no-longer-fail-or-throw-an-overflowexception)
+- [InvalidAsynchronousStateException moved to another assembly](#invalidasynchronousstateexception-moved-to-another-assembly)
+- [NET Core 3.0 follows Unicode best practices when replacing ill-formed UTF-8 byte sequences](#net-core-30-follows-unicode-best-practices-when-replacing-ill-formed-utf-8-byte-sequences)
+- [TypeDescriptionProviderAttribute moved to another assembly](#typedescriptionproviderattribute-moved-to-another-assembly)
+- [ZipArchiveEntry no longer handles archives with inconsistent entry sizes](#ziparchiveentry-no-longer-handles-archives-with-inconsistent-entry-sizes)
+- [JSON serializer exception type changed from JsonException to NotSupportedException](#json-serializer-exception-type-changed-from-jsonexception-to-notsupportedexception)
+- [Change in semantics of (string)null in Utf8JsonWriter](#change-in-semantics-of-stringnull-in-utf8jsonwriter)
+- [JsonEncodedText.Encode methods have an additional JavaScriptEncoder argument](#jsonencodedtextencode-methods-have-an-additional-javascriptencoder-argument)
+- [JsonFactoryConverter.CreateConverter signature changed](#jsonfactoryconvertercreateconverter-signature-changed)
+- [JsonElement API changes](#jsonelement-api-changes)
+- [Private fields added to built-in struct types](#private-fields-added-to-built-in-struct-types)
+- [Change in default value of UseShellExecute](#change-in-default-value-of-useshellexecute)
 
 ## .NET Core 3.0
 
@@ -39,9 +57,13 @@ The following is a list of CoreFx breaking changes by .NET Core version. CoreFx 
 
 [!INCLUDE[ZipArchiveEntry no longer handles archives with inconsistent entry sizes](~/includes/core-changes/corefx/3.0/ziparchiveentry-and-inconsistent-entry-sizes.md)]
 
+***
+
 ## .NET Core 3.0 Preview 9
 
-[!INCLUDE[Json serializer exception type changed from JsonException to NotSupportedException](~/includes/core-changes/corefx/3.0/serializer-throws-notsupportedexception.md)]
+[!INCLUDE[JSON serializer exception type changed from JsonException to NotSupportedException](~/includes/core-changes/corefx/3.0/serializer-throws-notsupportedexception.md)]
+
+***
 
 ## .NET Core 3.0 Preview 8
 
@@ -55,14 +77,20 @@ The following is a list of CoreFx breaking changes by .NET Core version. CoreFx 
 
 [!INCLUDE[JsonFactoryConverter.CreateConverter signature changed](~/includes/core-changes/corefx/3.0/jsonfactoryconverter-createconverter.md)]
 
+***
+
 ## .NET Core 3.0 Preview 7
 
 [!INCLUDE[JsonElement API changes](~/includes/core-changes/corefx/3.0/jsonelement-api-changes.md)]
 
+***
+
 ## .NET Core 2.1
 
-[!INCLUDE[Instantiate struct](~/includes/core-changes/corefx/2.1/instantiate-struct.md)]
+[!INCLUDE[Private fields added to built-in struct types](~/includes/core-changes/corefx/2.1/instantiate-struct.md)]
 
 ***
 
-[!INCLUDE[Process.Start changes](~/includes/core-changes/corefx/2.1/process-start-changes.md)]
+[!INCLUDE[Change in default value of UseShellExecute](~/includes/core-changes/corefx/2.1/process-start-changes.md)]
+
+***

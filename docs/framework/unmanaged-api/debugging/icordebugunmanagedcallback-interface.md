@@ -22,7 +22,7 @@ Provides notification of native events that are not directly related to the comm
   
 |Method|Description|  
 |------------|-----------------|  
-|[DebugEvent Method](../../../../docs/framework/unmanaged-api/debugging/icordebugunmanagedcallback-debugevent-method.md)|Notifies the debugger that a native event has been fired.|  
+|[DebugEvent Method](icordebugunmanagedcallback-debugevent-method.md)|Notifies the debugger that a native event has been fired.|  
   
 ## Remarks  
   
@@ -40,4 +40,4 @@ Provides notification of native events that are not directly related to the comm
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

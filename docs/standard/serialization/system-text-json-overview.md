@@ -1,6 +1,7 @@
 ---
 title: "Serialize and deserialize JSON using C# - .NET"
 ms.date: "01/10/2020"
+no-loc: [System.Text.Json, Newtonsoft.Json]
 helpviewer_keywords: 
   - "JSON serialization"
   - "serializing objects"

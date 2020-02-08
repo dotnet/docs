@@ -8,14 +8,14 @@ ms.assetid: 261b2b11-2dc0-462f-8c66-55b8c9c6e436
 ---
 # Overview of markup extensions for XAML
 
-Markup extensions are a XAML technique for obtaining a value that's not a primitive or a specific XAML type. For attribute usage, markup extensions use the known character sequence of an opening curly brace `{` to enter the markup extension scope, and a closing curly brace `}` to exit. When using .NET Framework XAML Services, you can use some of the predefined XAML language markup extensions from the System.Xaml assembly. You can also subclass from the <xref:System.Windows.Markup.MarkupExtension> class, defined in System.Xaml, and define your own markup extensions. Or you can use markup extensions defined by a particular framework if you are already referencing that framework.
+Markup extensions are a XAML technique for obtaining a value that's not a primitive or a specific XAML type. For attribute usage, markup extensions use the known character sequence of an opening curly brace `{` to enter the markup extension scope, and a closing curly brace `}` to exit. When using .NET XAML Services, you can use some of the predefined XAML language markup extensions from the System.Xaml assembly. You can also subclass from the <xref:System.Windows.Markup.MarkupExtension> class, defined in System.Xaml, and define your own markup extensions. Or you can use markup extensions defined by a particular framework if you are already referencing that framework.
 
 When a markup extension usage is accessed, the XAML object writer can provide services to a custom <xref:System.Windows.Markup.MarkupExtension> class through a service connection point in the <xref:System.Windows.Markup.MarkupExtension.ProvideValue%2A?displayProperty=nameWithType> override. The services can be used to obtain context about the usage, specific capabilities of the object writer, XAML schema context, and so on.
 
 <a name="XAML_Defined_Markup_Extensions"></a>
 ## XAML-defined markup extensions
 
-Several markup extensions are implemented by .NET Framework XAML Services for XAML language support. These markup extensions correspond to parts of the specification of XAML as a language. These are typically identifiable by the `x:` prefix in the syntax as seen in common usage. The .NET Framework XAML Services implementations for these XAML language elements all derive from the  <xref:System.Windows.Markup.MarkupExtension> base class.
+Several markup extensions are implemented by .NET XAML Services for XAML language support. These markup extensions correspond to parts of the specification of XAML as a language. These are typically identifiable by the `x:` prefix in the syntax as seen in common usage. .NET XAML Services implementations for these XAML language elements all derive from the  <xref:System.Windows.Markup.MarkupExtension> base class.
 
 > [!NOTE]
 > The `x:` prefix is used for the typical XAML namespace mapping of the XAML language namespace, in the root element of a XAML production. For example, the Visual Studio project and page templates for various specific frameworks initiate a XAML file using this `x:` mapping. You could choose a different prefix token in your own XAML namespace mapping, but this documentation will assume the default `x:` mapping as a means of identifying those entities that are a defined part of the XAML language XAML namespace, as opposed to a specific framework's default XAML namespace or other arbitrary CLR or XML namespaces.
@@ -57,7 +57,7 @@ Your markup extension class must use a public access level; XAML processors must
 <a name="naming_the_support_type"></a>
 ## Defining the Support Type for a Custom Markup Extension
 
-When you use .NET Framework XAML Services or frameworks that build on .NET Framework XAML Services, you have two choices for how to name the markup extension support type. The type name is relevant to how XAML object writers attempt to access and invoke a markup extension support type when they encounter a markup extension usage in XAML. Use one of the following naming strategies:
+When you use .NET XAML Services or frameworks that build on .NET XAML Services, you have two choices for how to name the markup extension support type. The type name is relevant to how XAML object writers attempt to access and invoke a markup extension support type when they encounter a markup extension usage in XAML. Use one of the following naming strategies:
 
 - Name the type name to be an exact match to the XAML markup usage token. For example, to support a `{Collate ...}` extension usage, name the support type `Collate`.
 - Name the type name to be the usage string token plus the suffix `Extension`. For example, to support a `{Collate ...}` extension usage, name the support type `CollateExtension`.
@@ -90,7 +90,7 @@ The processing works conceptually as if the markup extension is an object to be 
 - As noted previously, a markup extension support type does not need to have a parameterless constructor in order to be instantiated in XAML. Its object construction is deferred until its possible arguments in the text syntax are tokenized and evaluated as either positional or named arguments, and the appropriate constructor is called at that time.
 - Markup extensions usages can be nested. The innermost markup extension is evaluated first. Therefore, you can assume such a usage and declare one of the construction parameters to be a type that requires a value converter (such as a markup extension) to produce.
 
-A reliance on such processing was shown in the previous example. The .NET Framework XAML Services XAML object writer processes enumeration constant names into enumerated values at a native level.
+A reliance on such processing was shown in the previous example. .NET XAML Services XAML object writer processes enumeration constant names into enumerated values at a native level.
 
 Processing text syntax of a markup extension positional parameter can also rely on a type converter that is associated with the type that is in the construction argument.
 
@@ -108,7 +108,7 @@ In the XAML specified rules for markup extension syntax and processing, the comm
 
 If a XAML object writer encounters a markup extension usage with positional arguments, and there are multiple constructor arguments that take that number of arguments (a duplicate arity), that is not necessarily an error. The behavior depends on a customizable XAML schema context setting, <xref:System.Xaml.XamlSchemaContextSettings.SupportMarkupExtensionsWithDuplicateArity%2A>. If <xref:System.Xaml.XamlSchemaContextSettings.SupportMarkupExtensionsWithDuplicateArity%2A> is `true`, a XAML object writer should not throw an exception only for reasons of duplicate arity. Behavior beyond that point is not strictly defined. The basic design assumption is that the schema context has type information available for the specific parameters and can attempt explicit casts that match the duplicate candidates to see which signature might be the best match. An exception might still be thrown if no signatures can pass the tests that are imposed by that particular schema context that is running on a XAML object writer.
 
-By default, <xref:System.Xaml.XamlSchemaContextSettings.SupportMarkupExtensionsWithDuplicateArity%2A> is `false` in the CLR-based <xref:System.Xaml.XamlSchemaContext> for .NET Framework XAML Services. Thus, the default <xref:System.Xaml.XamlObjectWriter> throws exceptions if it encounters a markup extension usage where there is duplicate arity in the backing type's constructors.
+By default, <xref:System.Xaml.XamlSchemaContextSettings.SupportMarkupExtensionsWithDuplicateArity%2A> is `false` in the CLR-based <xref:System.Xaml.XamlSchemaContext> for .NET XAML Services. Thus, the default <xref:System.Xaml.XamlObjectWriter> throws exceptions if it encounters a markup extension usage where there is duplicate arity in the backing type's constructors.
 
 <a name="named_arguments_for_a_custom_markup_extension"></a>   
 ## Named arguments for a custom markup extension
@@ -161,7 +161,7 @@ If the markup extension usage uses positional arguments, it is represented as a 
 
 A markup extension usage with named arguments is represented as an object with members of the relevant names, each set with text string values.
 
-Actually invoking the `ProvideValue` implementation of a markup extension requires the XAML schema context because that requires type-mapping and creating a markup extension support type instance. This is one reason why markup extension usages are preserved this way in the default .NET Framework XAML Services node streams -  the reader part of a load path often does not have the necessary XAML schema context available.
+Actually invoking the `ProvideValue` implementation of a markup extension requires the XAML schema context because that requires type-mapping and creating a markup extension support type instance. This is one reason why markup extension usages are preserved this way in the default .NET XAML Services node streams -  the reader part of a load path often does not have the necessary XAML schema context available.
 
 If you are working with a XAML node stream on the save path, there generally is nothing present in an object graph representation that can inform you that the object to serialize was originally provided by a markup extension usage and a `ProvideValue` result. Scenarios that need to persist markup extension usages for round-tripping while also capturing other changes in the object graph must devise their own techniques for preserving the knowledge of a markup extension usage from the original XAML input. For example, to restore the markup extension usages, you may need to work with the node stream on the save path in order to restore markup extension usages, or perform some type of merge between the original XAML and the round-tripped XAML. Some XAML-implementing frameworks such as WPF use intermediate types (expressions) to help represent cases where markup extension usages provided the values.
 

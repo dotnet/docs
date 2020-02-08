@@ -1,5 +1,5 @@
 ---
-title: "How to: Print a Multi-Page Text File in Windows Forms"
+title: "How to: Print a Multi-Page Text File"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -15,7 +15,7 @@ A *poison message* is a message that has exceeded the maximum number of delivery
   
 - `ReceiveRetryCount`. An integer value that indicates the maximum number of times to retry delivery of a message from the application queue to the application. The default value is 5. This is sufficient in cases where an immediate retry fixes the problem, such as with a temporary deadlock on a database.  
   
-- `MaxRetryCycles`. An integer value that indicates the maximum number of retry cycles. A retry cycle consists of transferring a message from the application queue to the retry subqueue and, after a configurable delay, from the retry subqueue back into the application queue to reattempt delivery. The default value is 2. On Windows Vista, the message is tried a maximum of (`ReceiveRetryCount` +1) * (`MaxRetryCycles` + 1) times. `MaxRetryCycles` is ignored on Windows Server 2003 and [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  
+- `MaxRetryCycles`. An integer value that indicates the maximum number of retry cycles. A retry cycle consists of transferring a message from the application queue to the retry subqueue and, after a configurable delay, from the retry subqueue back into the application queue to reattempt delivery. The default value is 2. On Windows Vista, the message is tried a maximum of (`ReceiveRetryCount` +1) * (`MaxRetryCycles` + 1) times. `MaxRetryCycles` is ignored on Windows Server 2003 and Windows XP.  
   
 - `RetryCycleDelay`. The time delay between retry cycles. The default value is 30 minutes. `MaxRetryCycles` and `RetryCycleDelay` together provide a mechanism to address the problem where a retry after a periodic delay fixes the problem. For example, this handles a locked row set in SQL Server pending transaction commit.  
   
@@ -33,12 +33,12 @@ A *poison message* is a message that has exceeded the maximum number of delivery
   
 - ((ReceiveRetryCount+1) * (MaxRetryCycles + 1)) on Windows Vista.  
   
-- (ReceiveRetryCount + 1) on Windows Server 2003 and [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  
+- (ReceiveRetryCount + 1) on Windows Server 2003 and Windows XP.  
   
 > [!NOTE]
 > No retries are made for a message that is delivered successfully.  
   
- To keep track of the number of times a message read is attempted, Windows Vista maintains a durable message property that counts the number of aborts and a move count property that counts the number of times the message moves between the application queue and subqueues. The WCF channel uses these to compute the receive retry count and the retry cycles count. On Windows Server 2003 and [!INCLUDE[wxp](../../../../includes/wxp-md.md)], the abort count is maintained in memory by the WCF channel and is reset if the application fails. Also, the WCF channel can hold the abort counts for up to 256 messages in memory at any time. If a 257th message is read, then the oldest message's abort count is reset.  
+ To keep track of the number of times a message read is attempted, Windows Vista maintains a durable message property that counts the number of aborts and a move count property that counts the number of times the message moves between the application queue and subqueues. The WCF channel uses these to compute the receive retry count and the retry cycles count. On Windows Server 2003 and Windows XP, the abort count is maintained in memory by the WCF channel and is reset if the application fails. Also, the WCF channel can hold the abort counts for up to 256 messages in memory at any time. If a 257th message is read, then the oldest message's abort count is reset.  
   
  The abort count and move count properties are available to the service operation through the operation context. The following code example shows how to access them.  
   
@@ -60,7 +60,7 @@ A *poison message* is a message that has exceeded the maximum number of delivery
   
  The application may require some kind of automated handling of poison messages that moves the poison messages to a poison message queue so that the service can access the rest of the messages in the queue. The only scenario for using the error-handler mechanism to listen for poison-message exceptions is when the <xref:System.ServiceModel.Configuration.MsmqBindingElementBase.ReceiveErrorHandling%2A> setting is set to <xref:System.ServiceModel.ReceiveErrorHandling.Fault>. The poison-message sample for Message Queuing 3.0 demonstrates this behavior. The following outlines the steps to take to handle poison messages, including best practices:  
   
-1. Ensure your poison settings reflect the requirements of your application. When working with the settings, ensure that you understand the differences between the capabilities of Message Queuing on Windows Vista, Windows Server 2003, and [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  
+1. Ensure your poison settings reflect the requirements of your application. When working with the settings, ensure that you understand the differences between the capabilities of Message Queuing on Windows Vista, Windows Server 2003, and Windows XP.  
   
 2. If required, implement the `IErrorHandler` to handle poison-message errors. Because setting `ReceiveErrorHandling` to `Fault` requires a manual mechanism to move the poison message out of the queue or to correct an external dependent issue, the typical usage is to implement `IErrorHandler` when `ReceiveErrorHandling` is set to `Fault`, as shown in the following code.  
   
@@ -89,13 +89,13 @@ A *poison message* is a message that has exceeded the maximum number of delivery
  Poison-message handling does not end when a message is placed in the poison-message queue. Messages in the poison-message queue must still be read and handled. You can use a subset of the poison-message handling settings when reading messages from the final poison subqueue. The applicable settings are `ReceiveRetryCount` and `ReceiveErrorHandling`. You can set `ReceiveErrorHandling` to Drop, Reject, or Fault. `MaxRetryCycles` is ignored and an exception is thrown if `ReceiveErrorHandling` is set to Move.  
   
 ## Windows Vista, Windows Server 2003, and Windows XP Differences  
- As noted earlier, not all poison-message handling settings apply to Windows Server 2003 and [!INCLUDE[wxp](../../../../includes/wxp-md.md)]. The following key differences between Message Queuing on Windows Server 2003, [!INCLUDE[wxp](../../../../includes/wxp-md.md)], and Windows Vista are relevant to poison-message handling:  
+ As noted earlier, not all poison-message handling settings apply to Windows Server 2003 and Windows XP. The following key differences between Message Queuing on Windows Server 2003, Windows XP, and Windows Vista are relevant to poison-message handling:  
   
-- Message Queuing in Windows Vista supports subqueues, while Windows Server 2003 and [!INCLUDE[wxp](../../../../includes/wxp-md.md)] do not support subqueues. Subqueues are used in poison-message handling. The retry queues and the poison queue are subqueues to the application queue that is created based on the poison-message handling settings. The `MaxRetryCycles` dictates how many retry subqueues to create. Therefore, when running on Windows Server 2003 or [!INCLUDE[wxp](../../../../includes/wxp-md.md)], `MaxRetryCycles` are ignored and `ReceiveErrorHandling.Move` is not allowed.  
+- Message Queuing in Windows Vista supports subqueues, while Windows Server 2003 and Windows XP do not support subqueues. Subqueues are used in poison-message handling. The retry queues and the poison queue are subqueues to the application queue that is created based on the poison-message handling settings. The `MaxRetryCycles` dictates how many retry subqueues to create. Therefore, when running on Windows Server 2003 or Windows XP, `MaxRetryCycles` are ignored and `ReceiveErrorHandling.Move` is not allowed.  
   
-- Message Queuing in Windows Vista supports negative acknowledgment, while Windows Server 2003 and [!INCLUDE[wxp](../../../../includes/wxp-md.md)] do not. A negative acknowledgment from the receiving queue manager causes the sending queue manager to place the rejected message in the dead-letter queue. As such, `ReceiveErrorHandling.Reject` is not allowed with Windows Server 2003 and [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  
+- Message Queuing in Windows Vista supports negative acknowledgment, while Windows Server 2003 and Windows XP do not. A negative acknowledgment from the receiving queue manager causes the sending queue manager to place the rejected message in the dead-letter queue. As such, `ReceiveErrorHandling.Reject` is not allowed with Windows Server 2003 and Windows XP.  
   
-- Message Queuing in Windows Vista supports a message property that keeps count of the number of times message delivery is attempted. This abort count property is not available on Windows Server 2003 and [!INCLUDE[wxp](../../../../includes/wxp-md.md)]. WCF maintains the abort count in memory, so it is possible that this property may not contain an accurate value when the same message is read by more than one WCF service in a farm.  
+- Message Queuing in Windows Vista supports a message property that keeps count of the number of times message delivery is attempted. This abort count property is not available on Windows Server 2003 and Windows XP. WCF maintains the abort count in memory, so it is possible that this property may not contain an accurate value when the same message is read by more than one WCF service in a farm.  
   
 ## See also
 

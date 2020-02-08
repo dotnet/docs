@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "WCF, Windows authentication"
 ms.assetid: 181be4bd-79b1-4a66-aee2-931887a6d7cc
 ---
-# Debug Windows Authentication Errors
+# Debug Windows authentication errors
 
 When using Windows authentication as a security mechanism, the Security Support Provider Interface (SSPI) handles security processes. When security errors occur at the SSPI layer, they are surfaced by Windows Communication Foundation (WCF). This topic provides a framework and set of questions to help diagnose the errors.  
   

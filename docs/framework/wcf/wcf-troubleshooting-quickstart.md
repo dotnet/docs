@@ -124,7 +124,7 @@ public class MyServiceHost : ServiceHost
   
     3. Host the service under Internet Information Services (IIS), which, by default, uses the service principal name (SPN) account.  
   
-    4. Register a new SPN with the domain using SetSPN. You will need to be a domain administrator in order to do this.  
+    4. Register a new SPN with the domain using SetSPN. You need to be a domain administrator in order to do this.  
   
  For more information about the Kerberos protocol, see [Security Concepts Used in WCF](./feature-details/security-concepts-used-in-wcf.md) and:  
   
@@ -231,7 +231,7 @@ public class MyServiceHost : ServiceHost
   
 <a name="BK_MK99"></a>   
 ## When calling a WCF Web HTTP application from a WCF SOAP application the service returns the following error: 405 Method Not Allowed  
- Calling a WCF Web HTTP application (a service that uses the <xref:System.ServiceModel.WebHttpBinding> and <xref:System.ServiceModel.Description.WebHttpBehavior>) from a WCF service may generate the following exception: `Unhandled Exception: System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: The remote server returned an unexpected response: (405) Method Not Allowed.` This exception occurs because WCF overwrites the outgoing <xref:System.ServiceModel.OperationContext> with the incoming <xref:System.ServiceModel.OperationContext>. To solve this problem, create an <xref:System.ServiceModel.OperationContextScope> within the WCF Web HTTP service operation. For example:  
+ Calling a WCF Web HTTP application (a service that uses the <xref:System.ServiceModel.WebHttpBinding> and <xref:System.ServiceModel.Description.WebHttpBehavior>) from a WCF service may generate the following exception: ``Unhandled Exception: System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: The remote server returned an unexpected response: (405) Method Not Allowed.`` This exception occurs because WCF overwrites the outgoing <xref:System.ServiceModel.OperationContext> with the incoming <xref:System.ServiceModel.OperationContext>. To solve this problem, create an <xref:System.ServiceModel.OperationContextScope> within the WCF Web HTTP service operation. For example:  
   
 ```csharp
 public string Echo(string input)  

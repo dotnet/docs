@@ -1,5 +1,5 @@
 ---
-title: Base class library breaking changes - .NET Core
+title: Base class library breaking changes
 description: Lists the breaking changes in .NET CoreFx, the base class library.
 ms.date: "09/20/2019"
 ---

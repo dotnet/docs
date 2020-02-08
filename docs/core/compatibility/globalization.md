@@ -1,5 +1,5 @@
 ---
-title: Globalization breaking changes - .NET Core
+title: Globalization breaking changes
 description: Lists the breaking changes in globalization in .NET Core.
 ms.date: "09/20/2019"
 ---

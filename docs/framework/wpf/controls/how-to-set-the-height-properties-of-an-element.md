@@ -25,7 +25,7 @@ ms.assetid: 5ab9e781-dbb8-469a-a3c8-cf38ce312647
  [!code-csharp[HeightMinHeightMaxHeight#3](~/samples/snippets/csharp/VS_Snippets_Wpf/HeightMinHeightMaxHeight/CSharp/Window1.xaml.cs#3)]
  [!code-vb[HeightMinHeightMaxHeight#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HeightMinHeightMaxHeight/VisualBasic/Window1.xaml.vb#3)]  
   
- For the complete sample, see [Height Properties Sample](https://go.microsoft.com/fwlink/?LinkID=159993).  
+ For the complete sample, see [Height Properties Sample](https://github.com/microsoft/WPF-Samples/tree/master/Elements/HeightProperties).  
   
 ## See also
 
@@ -37,4 +37,4 @@ ms.assetid: 5ab9e781-dbb8-469a-a3c8-cf38ce312647
 - <xref:System.Windows.FrameworkElement.Height%2A>
 - [Set the Width Properties of an Element](how-to-set-the-width-properties-of-an-element.md)
 - [Panels Overview](panels-overview.md)
-- [Height Properties Sample](https://go.microsoft.com/fwlink/?LinkID=159993)
+- [Height Properties Sample](https://github.com/microsoft/WPF-Samples/tree/master/Elements/HeightProperties)

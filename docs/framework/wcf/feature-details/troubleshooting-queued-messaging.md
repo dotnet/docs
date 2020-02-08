@@ -47,7 +47,7 @@ This section contains answers to most common troubleshooting issues. Some issues
 
 **Q:** I am trying to use a private queue and I get the following exception: `System.InvalidOperationException`: The URL is invalid. The URL for the queue cannot contain the '$' character. Use the syntax in net.msmq://machine/private/queueName to address a private queue.
 
-**A:** Please check the queue Uniform Resource Identifier (URI) in your configuration and code. Do not use the "$" character in the URI. For example, to address a private queue named OrdersQueue, specify the URI as net.msmq://localhost/private/ordersQueue.
+**A:** Check the queue Uniform Resource Identifier (URI) in your configuration and code. Do not use the "$" character in the URI. For example, to address a private queue named OrdersQueue, specify the URI as `net.msmq://localhost/private/ordersQueue`.
 
 **Q:** Calling `ServiceHost.Open()` on my queued application throws the following exception: `System.ArgumentException`: A base address cannot contain a URI query string. Why?
 
@@ -126,7 +126,7 @@ The system dead-letter queue, as well as any custom dead-letter queue, is partic
 
 **Q:** When I use a public or private format name and open the service host on Windows Vista, I get an error. Why?
 
-**A:** The WCF integration channel on Windows Vista checks to see if a sub-queue can be opened for the main application queue for handling poison messages. The sub-queue name is derived from an msmq.formatname URI passed to the listener. The sub-queue name in MSMQ can only be a direct format name. So you see the error. Change the queue URI to a direct format name.
+**A:** The WCF integration channel on Windows Vista checks to see if a subqueue can be opened for the main application queue for handling poison messages. The subqueue name is derived from an msmq.formatname URI passed to the listener. The subqueue name in MSMQ can only be a direct format name. So you see the error. Change the queue URI to a direct format name.
 
 **Q:** When receiving a message from an MSMQ application, the message sits in the queue and is not read by the receiving WCF application. Why?
 
@@ -202,4 +202,4 @@ Yet another workaround is to install MSMQ with Active Directory integration.
 
 ## Using Custom MSMQ Bindings with ReceiveContext Enabled
 
-When using a custom MSMQ binding with <xref:System.ServiceModel.Channels.ReceiveContext> enabled processing an incoming message will use a thread pool thread because native MSMQ does not support I/O completion for asynchronous <xref:System.ServiceModel.Channels.ReceiveContext> receives. This is because processing such a message uses internal transactions for <xref:System.ServiceModel.Channels.ReceiveContext> and MSMQ does not support asynchronous processing. To work around this issue you can add a <xref:System.ServiceModel.Description.SynchronousReceiveBehavior> to the endpoint to force synchronous processing or set <xref:System.ServiceModel.Description.DispatcherSynchronizationBehavior.MaxPendingReceives%2A> to 1.
+When using a custom MSMQ binding with <xref:System.ServiceModel.Channels.ReceiveContext> enabled, processing an incoming message uses a thread pool thread because native MSMQ doesn't support I/O completion for asynchronous <xref:System.ServiceModel.Channels.ReceiveContext> receives. This is because processing such a message uses internal transactions for <xref:System.ServiceModel.Channels.ReceiveContext> and MSMQ doesn't support asynchronous processing. To work around this issue, you can add a <xref:System.ServiceModel.Description.SynchronousReceiveBehavior> to the endpoint to force synchronous processing or set <xref:System.ServiceModel.Description.DispatcherSynchronizationBehavior.MaxPendingReceives%2A> to 1.

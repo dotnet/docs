@@ -181,8 +181,8 @@ let squareAndPrint (data : byref<int>) =
     printfn "%d" squared
 ```
 
-To return a value byref, the variable which contains the value must live longer than the current scope.
-Also, to return byref, use &value (where value is a variable that lives longer than the current scope).
+To return a value byref, the variable that contains the value must live longer than the current scope.
+Also, to return byref, use `&value` (where value is a variable that lives longer than the current scope).
 
 ```fsharp
 let mutable sum = 0
@@ -246,4 +246,4 @@ let test () =
     ()
 ```
 
-This prevents you from getting different results depending on if you compile with optimizations on or off.
+This prevents you from getting different results depending on if you compile with optimizations or not.

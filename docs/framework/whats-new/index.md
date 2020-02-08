@@ -9,8 +9,7 @@ helpviewer_keywords:
   - "what's new [.NET Framework]"
 ms.assetid: 1d971dd7-10fc-4692-8dac-30ca308fc0fa
 ---
-
-# What's new in the .NET Framework
+# What's new in .NET Framework
 
 This article summarizes key new features and improvements in the following versions of the .NET Framework:
 
@@ -1163,11 +1162,11 @@ For example, the following XAML groups data by age, sort the age groups in ascen
 </SortDescriptions>
 ```
 
-**Soft keyboard support**
+**Touch keyboard support**
 
-Soft Keyboard support enables focus tracking in WPF applications by automatically invoking and dismissing the new Soft Keyboard in Windows 10 when the touch input is received by a control that can take textual input.
+Touch keyboard support enables focus tracking in WPF applications by automatically invoking and dismissing the touch Keyboard in Windows 10 when the touch input is received by a control that can take textual input.
 
-In previous versions of the .NET Framework, WPF applications can't opt into the focus tracking without disabling WPF pen/touch gesture support. As a result, WPF applications must choose between full WPF touch support or rely on Windows mouse promotion.
+In previous versions of .NET Framework, WPF applications can't opt into the focus tracking without disabling WPF pen/touch gesture support. As a result, WPF applications must choose between full WPF touch support or rely on Windows mouse promotion.
 
 **Per-monitor DPI**
 

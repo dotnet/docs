@@ -1,5 +1,5 @@
 ---
-title: Networking breaking changes - .NET Core
+title: Networking breaking changes
 description: Lists the breaking changes in networking in .NET Core.
 ms.date: "10/03/2019"
 ---

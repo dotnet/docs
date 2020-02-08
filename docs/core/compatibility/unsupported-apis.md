@@ -1,5 +1,6 @@
 ---
 title: Unsupported APIs on .NET Core
+titleSuffix: ""
 description: Learn which APIs from the .NET Framework that always throw an exception on .NET Core.
 ms.date: 12/23/2019
 ---

@@ -1,5 +1,5 @@
 ---
-title: Windows Forms breaking changes - .NET Core
+title: Windows Forms breaking changes
 description: Lists the breaking changes in Windows Forms for .NET Core.
 ms.date: 01/08/2020
 ---

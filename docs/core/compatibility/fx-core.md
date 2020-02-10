@@ -6,14 +6,21 @@ ms.date: 12/18/2019
 ---
 # Breaking changes for migration from .NET Framework to .NET Core
 
-If you're migrating an app from .NET Framework to .NET Core, the breaking changes listed in this article may affect you. Breaking changes are grouped by category, and within those categories, by the version of .NET Core they were introduced in.
+If you're migrating an app from .NET Framework to .NET Core, the breaking changes listed in this article may affect you. Breaking changes are grouped by category, and within those categories, by the version of .NET Core in which they were introduced.
 
 > [!NOTE]
 > This article is not a complete list of breaking changes between .NET Framework and .NET Core. The most important breaking changes are added here as we become aware of them.
 
 ## CoreFx
 
+- [UnauthorizedAccessException thrown by FileSystemInfo.Attributes](#unauthorizedaccessexception-thrown-by-filesysteminfoattributes)
 - [Change in default value of UseShellExecute](#change-in-default-value-of-useshellexecute)
+
+### .NET Core 1.0
+
+[!INCLUDE [UnauthorizedAccessException thrown by FileSystemInfo.Attributes](~/includes/core-changes/corefx/1.0/filesysteminfo-attributes-exceptions.md)]
+
+***
 
 ### .NET Core 2.1
 

@@ -24,6 +24,7 @@ The following breaking changes are documented on this page:
 - [JsonElement API changes](#jsonelement-api-changes)
 - [Private fields added to built-in struct types](#private-fields-added-to-built-in-struct-types)
 - [Change in default value of UseShellExecute](#change-in-default-value-of-useshellexecute)
+- [UnauthorizedAccessException thrown by FileSystemInfo.Attributes](#unauthorizedaccessexception-thrown-by-filesysteminfoattributes)
 
 ## .NET Core 3.0
 
@@ -92,5 +93,11 @@ The following breaking changes are documented on this page:
 ***
 
 [!INCLUDE[Change in default value of UseShellExecute](~/includes/core-changes/corefx/2.1/process-start-changes.md)]
+
+***
+
+### .NET Core 1.0
+
+[!INCLUDE [UnauthorizedAccessException thrown by FileSystemInfo.Attributes](~/includes/core-changes/corefx/1.0/filesysteminfo-attributes-exceptions.md)]
 
 ***

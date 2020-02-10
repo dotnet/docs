@@ -34,6 +34,6 @@ The following breaking changes are documented on this page:
 
 ## .NET Core 2.1
 
-[!INCLUDE [compute-signature-silent-parameter](~/includes/core-changes/cryptography/2.1/compute-signature-silent-parameter.md)]
+[!INCLUDE [Boolean parameter of SignedCms.ComputeSignature is respected](~/includes/core-changes/cryptography/2.1/compute-signature-silent-parameter.md)]
 
 ***

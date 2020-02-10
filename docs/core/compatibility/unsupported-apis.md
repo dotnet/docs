@@ -1,5 +1,6 @@
 ---
 title: Unsupported APIs on .NET Core
+titleSuffix: ""
 description: Learn which APIs from the .NET Framework that always throw an exception on .NET Core.
 ms.date: 12/23/2019
 ---
@@ -148,6 +149,7 @@ This article organizes the affected API members by namespace.
 
 | Member | Platforms that throw |
 | - | - |
+| <xref:System.Net.Sockets.Socket.%23ctor(System.Net.Sockets.SocketInformation)?displayProperty=nameWithType> | All |
 | <xref:System.Net.Sockets.Socket.DuplicateAndClose(System.Int32)?displayProperty=nameWithType> | All |
 
 ## System.Net.WebSockets
@@ -240,7 +242,6 @@ This article organizes the affected API members by namespace.
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.Removable?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.CspKeyContainerInfo.UniqueKeyContainerName?displayProperty=nameWithType> | Linux and macOS |
 | <xref:System.Security.Cryptography.HashAlgorithm.Create?displayProperty=nameWithType> | All |
-| <xref:System.Security.Cryptography.HashAlgorithm.Create(System.String)?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.HMAC.Create?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.HMAC.Create(System.String)?displayProperty=nameWithType> | All |
 | <xref:System.Security.Cryptography.HMAC.HashCore%2A?displayProperty=nameWithType> | All |

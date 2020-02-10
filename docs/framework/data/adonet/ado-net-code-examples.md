@@ -1,5 +1,5 @@
 ---
-title: "ADO.NET code examples"
+title: "Code examples"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

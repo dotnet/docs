@@ -35,7 +35,7 @@ helpviewer_keywords:
 ---
 # Integral numeric types  (C# reference)
 
-The **integral numeric types** are a subset of the **simple types** and can be initialized with [*literals*](#integer-literals). All integral types are also value types. All integral numeric types support [arithmetic](../operators/arithmetic-operators.md), [bitwise logical](../operators/bitwise-and-shift-operators.md), [comparison](../operators/comparison-operators.md), and [equality](../operators/equality-operators.md) operators.
+The *integral numeric types* represent integer numbers. All integral numeric types are [value types](value-types.md). They are also [simple types](value-types.md#built-in-value-types) and can be initialized with [literals](#integer-literals). All integral numeric types support [arithmetic](../operators/arithmetic-operators.md), [bitwise logical](../operators/bitwise-and-shift-operators.md), [comparison](../operators/comparison-operators.md), and [equality](../operators/equality-operators.md) operators.
 
 ## Characteristics of the integral types
 
@@ -124,7 +124,7 @@ For more information, see the following sections of the [C# language specificati
 ## See also
 
 - [C# reference](../index.md)
-- [Built-in types table](../keywords/built-in-types-table.md)
+- [Value types](value-types.md)
 - [Floating-point types](floating-point-numeric-types.md)
-- [Formatting numeric results table](../keywords/formatting-numeric-results-table.md)
+- [Standard numeric format strings](../../../standard/base-types/standard-numeric-format-strings.md)
 - [Numerics in .NET](../../../standard/numerics.md)

@@ -31,7 +31,7 @@ The WSE 3.0 TCP Interoperability Transport sample demonstrates how to implement 
   
  `return encoder.WriteMessage(message, maxBufferSize, bufferManager);`  
   
- Once the <xref:System.ServiceModel.Channels.Message> is encoded into bytes, it must be transmitted on the wire. This requires a system for defining message boundaries. WSE 3.0 uses a version of [DIME](https://go.microsoft.com/fwlink/?LinkId=94999) as its framing protocol. `WriteData` encapsulates the framing logic to wrap a byte[] into a set of DIME records.  
+ Once the <xref:System.ServiceModel.Channels.Message> is encoded into bytes, it must be transmitted on the wire. This requires a system for defining message boundaries. WSE 3.0 uses a version of [DIME](https://docs.microsoft.com/archive/msdn-magazine/2002/december/sending-files-attachments-and-soap-messages-via-dime) as its framing protocol. `WriteData` encapsulates the framing logic to wrap a byte[] into a set of DIME records.  
   
  The logic for receiving messages is very similar. The main complexity is handling the fact that a socket read can return less bytes than were requested. To receive a message, `WseTcpDuplexSessionChannel` reads bytes off the wire, decodes the DIME framing, and then uses the <xref:System.ServiceModel.Channels.MessageEncoder> for turning the byte[] into a <xref:System.ServiceModel.Channels.Message>.  
   

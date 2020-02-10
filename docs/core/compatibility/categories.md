@@ -1,5 +1,5 @@
 ---
-title: Breaking change categories - .NET Core
+title: Breaking change categories
 description: Learn about the ways in which breaking changes are categorized in .NET Core.
 ms.date: 06/10/2019
 ---

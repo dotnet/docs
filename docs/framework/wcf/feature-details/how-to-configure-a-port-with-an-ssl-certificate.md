@@ -11,29 +11,19 @@ helpviewer_keywords:
 ms.assetid: b8abcc8e-a5f5-4317-aca5-01e3c40ab24d
 ---
 # How to: Configure a Port with an SSL Certificate
+
 When creating a self-hosted Windows Communication Foundation (WCF) service with the <xref:System.ServiceModel.WSHttpBinding> class that uses transport security, you must also configure a port with an X.509 certificate. If you are not creating a self-hosted service, you can host your service on Internet Information Services (IIS). For more information, see [HTTP Transport Security](../../../../docs/framework/wcf/feature-details/http-transport-security.md).  
   
  To configure a port, the tool you use depends on the operating system that is running on your machine.  
   
- If you are running Windows Server 2003 or Windows XP, use the HttpCfg.exe tool. With Windows Server 2003 this tool is installed. With Windows XP, you can download the tool at [Windows XP Service Pack 2 Support Tools](https://go.microsoft.com/fwlink/?LinkId=88606). For more information, see [Httpcfg Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc787508(v=ws.10)). The [Windows Support Tools documentation](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc781601(v=ws.10)) explains the syntax for the Httpcfg.exe tool.  
+ If you are running Windows Server 2003, use the HttpCfg.exe tool. On Windows Server 2003, this tool is installed. For more information, see [Httpcfg Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc787508(v=ws.10)). The [Windows Support Tools documentation](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc781601(v=ws.10)) explains the syntax for the Httpcfg.exe tool.  
   
- If you are running Windows Vista, use the Netsh.exe tool that is already installed.  
+ If you are running Windows Vista, use the Netsh.exe tool that is already installed. 
   
- This topic describes how to accomplish several procedures:  
+> [!NOTE]
+> Modifying certificates stored on the computer requires administrative privileges.  
   
-- Determining a computer's current port configuration.  
-  
-- Getting a certificate's thumbprint (necessary for the following two procedures).  
-  
-- Binding an SSL certificate to a port configuration.  
-  
-- Binding an SSL certificate to a port configuration and supporting client certificates.  
-  
-- Deleting an SSL certificate from a port number.  
-  
- Note that modifying certificates stored on the computer requires administrative privileges.  
-  
-### To determine how ports are configured  
+## Determine how ports are configured  
   
 1. In Windows Server 2003 or Windows XP, use the HttpCfg.exe tool to view the current port configuration, using the **query** and **ssl** switches, as shown in the following example.  
   
@@ -47,7 +37,7 @@ When creating a self-hosted Windows Communication Foundation (WCF) service with 
     netsh http show sslcert  
     ```  
   
-### To get a certificate's thumbprint  
+## Get a certificate's thumbprint  
   
 1. Use the Certificates MMC snap-in to find an X.509 certificate that has an intended purpose of client authentication. For more information, see [How to: View Certificates with the MMC Snap-in](../../../../docs/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in.md).  
   
@@ -57,7 +47,7 @@ When creating a self-hosted Windows Communication Foundation (WCF) service with 
   
 4. Remove all spaces between the hexadecimal characters. One way to accomplish this is to use the text editor's find-and-replace feature and replace each space with a null character.  
   
-### To bind an SSL certificate to a port number  
+## Bind an SSL certificate to a port number  
   
 1. In Windows Server 2003 or Windows XP, use the HttpCfg.exe tool in "set" mode on the Secure Sockets Layer (SSL) store to bind the certificate to a port number. The tool uses the thumbprint to identify the certificate, as shown in the following example.  
   
@@ -81,7 +71,7 @@ When creating a self-hosted Windows Communication Foundation (WCF) service with 
   
     - The **appid** parameter is a GUID that can be used to identify the owning application.  
   
-### To bind an SSL certificate to a port number and support client certificates  
+## Bind an SSL certificate to a port number and support client certificates  
   
 1. In Windows Server 2003 or Windows XP, to support clients that authenticate with X.509 certificates at the transport layer, follow the preceding procedure but pass an additional command-line parameter to HttpCfg.exe, as shown in the following example.  
   
@@ -97,7 +87,7 @@ When creating a self-hosted Windows Communication Foundation (WCF) service with 
     netsh http add sslcert ipport=0.0.0.0:8000 certhash=0000000000003ed9cd0c315bbb6dc1c08da5e6 appid={00112233-4455-6677-8899-AABBCCDDEEFF} clientcertnegotiation=enable  
     ```  
   
-### To delete an SSL certificate from a port number  
+## Delete an SSL certificate from a port number  
   
 1. Use the HttpCfg.exe or Netsh.exe tool to see the ports and thumbprints of all bindings on the computer. To print the information to disk, use the redirection character ">", as shown in the following example.  
   
@@ -118,6 +108,7 @@ When creating a self-hosted Windows Communication Foundation (WCF) service with 
     ```  
   
 ## Example  
+
  The following code shows how to create a self-hosted service using the <xref:System.ServiceModel.WSHttpBinding> class set to transport security. When creating an application, specify the port number in the address.  
   
  [!code-csharp[c_WsHttpService#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_wshttpservice/cs/source.cs#3)]

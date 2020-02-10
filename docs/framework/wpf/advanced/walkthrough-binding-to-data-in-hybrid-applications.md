@@ -29,7 +29,7 @@ Tasks illustrated in this walkthrough include:
 
 - Binding to the data source.
 
-For a complete code listing of the tasks illustrated in this walkthrough, see [Data Binding in Hybrid Applications Sample](https://go.microsoft.com/fwlink/?LinkID=159983).
+For a complete code listing of the tasks illustrated in this walkthrough, see [Data Binding in Hybrid Applications Sample](https://github.com/microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/WPFWithWFAndDatabinding).
 
 When you are finished, you will have an understanding of data binding features in hybrid applications.
 
@@ -180,6 +180,6 @@ The <xref:System.Windows.Forms.BindingSource?displayProperty=nameWithType> compo
 - <xref:System.Windows.Forms.Integration.ElementHost>
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
 - [Design XAML in Visual Studio](/visualstudio/xaml-tools/designing-xaml-in-visual-studio)
-- [Data Binding in Hybrid Applications Sample](https://go.microsoft.com/fwlink/?LinkID=159983)
+- [Data Binding in Hybrid Applications Sample](https://github.com/microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/WPFWithWFAndDatabinding)
 - [Walkthrough: Hosting a Windows Forms Composite Control in WPF](walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md)
 - [Walkthrough: Hosting a WPF Composite Control in Windows Forms](walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md)

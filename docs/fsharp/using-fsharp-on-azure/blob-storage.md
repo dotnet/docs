@@ -10,11 +10,11 @@ Azure Blob storage is a service that stores unstructured data in the cloud as ob
 
 This article shows you how to perform common tasks using Blob storage. The samples are written using F# using the Azure Storage Client Library for .NET. The tasks covered include how to upload, list, download, and delete blobs.
 
-For a conceptual overview of blob storage, see [the .NET guide for blob storage](/azure/storage/storage-dotnet-how-to-use-blobs).
+For a conceptual overview of blob storage, see [the .NET guide for blob storage](/azure/storage/blobs/storage-quickstart-blobs-dotnet).
 
 ## Prerequisites
 
-To use this guide, you must first [create an Azure storage account](/azure/storage/storage-create-storage-account). You also need your storage access key for this account.
+To use this guide, you must first [create an Azure storage account](/azure/storage/common/storage-account-create). You also need your storage access key for this account.
 
 ## Create an F# Script and Start F# Interactive
 
@@ -192,8 +192,8 @@ For more information, see [Managing Concurrency in Microsoft Azure Storage](http
 
 Every blob in Azure storage must reside in a container. The container forms part of the blob name. For example, `mydata` is the name of the container in these sample blob URIs:
 
-- https://storagesample.blob.core.windows.net/mydata/blob1.txt
-- https://storagesample.blob.core.windows.net/mydata/photos/myphoto.jpg
+- `https://storagesample.blob.core.windows.net/mydata/blob1.txt`
+- `https://storagesample.blob.core.windows.net/mydata/photos/myphoto.jpg`
 
 A container name must be a valid DNS name, conforming to the following naming rules:
 
@@ -234,13 +234,12 @@ A free, standalone app from Microsoft that enables you to work visually with Azu
 ### Blob storage reference
 
 - [Azure Storage APIs for .NET](/dotnet/api/overview/azure/storage)
-- [Azure Storage Services REST API Reference](/rest/api/storageservices/Azure-Storage-Services-REST-API-Reference)
+- [Azure Storage Services REST API Reference](/rest/api/storageservices/)
 
 ### Related guides
 
-- [Getting Started with Azure Blob Storage in C#](https://azure.microsoft.com/resources/samples/storage-blob-dotnet-getting-started/)
-- [Transfer data with the AzCopy command-line utility on Windows](/azure/storage/common/storage-use-azcopy)
-- [Transfer data with the AzCopy command-line utility on Linux](/azure/storage/common/storage-use-azcopy-linux)
+- [Azure Blob Storage Samples for .NET](https://docs.microsoft.com/samples/azure-samples/storage-blob-dotnet-getting-started/storage-blob-dotnet-getting-started/)
+- [Get started with AzCopy](/azure/storage/common/storage-use-azcopy-v10)
 - [Configure Azure Storage connection strings](/azure/storage/common/storage-configure-connection-string)
 - [Azure Storage Team Blog](https://docs.microsoft.com/archive/blogs/windowsazurestorage/)
 - [Quickstart: Use .NET to create a blob in object storage](/azure/storage/blobs/storage-quickstart-blobs-dotnet)

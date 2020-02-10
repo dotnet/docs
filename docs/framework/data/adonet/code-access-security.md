@@ -1,5 +1,5 @@
 ---
-title: "Code Access Security and ADO.NET"
+title: "Code Access Security"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

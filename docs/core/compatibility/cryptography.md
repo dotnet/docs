@@ -1,5 +1,5 @@
 ---
-title: Cryptography breaking changes - .NET Core
+title: Cryptography breaking changes
 description: Lists the breaking cryptography-related changes in .NET Core.
 ms.date: "09/20/2019"
 ---

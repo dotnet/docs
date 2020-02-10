@@ -121,7 +121,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
   
  Two or more character ranges can be concatenated. For example, to specify the range of decimal digits from "0" through "9", the range of lowercase letters from "a" through "f", and the range of uppercase letters from "A" through "F", use `[0-9a-fA-F]`.  
   
- The leading carat character (`^`) in a negative character group is mandatory and indicates the character group is a negative character group instead of a positive character group.  
+ The leading caret character (`^`) in a negative character group is mandatory and indicates the character group is a negative character group instead of a positive character group.  
   
 > [!IMPORTANT]
 > A negative character group in a larger regular expression pattern is not a zero-width assertion. That is, after evaluating the negative character group, the regular expression engine advances one character in the input string.  

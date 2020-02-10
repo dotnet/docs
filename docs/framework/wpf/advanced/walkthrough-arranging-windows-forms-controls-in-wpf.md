@@ -31,7 +31,7 @@ Tasks illustrated in this walkthrough include:
 - Setting padding and margins.
 - Using dynamic layout containers.
 
-For a complete code listing of the tasks illustrated in this walkthrough, see [Arranging Windows Forms Controls in WPF Sample](https://go.microsoft.com/fwlink/?LinkID=159971).
+For a complete code listing of the tasks illustrated in this walkthrough, see [Arranging Windows Forms Controls in WPF Sample](https://github.com/microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/WpfLayoutHostingWfWithXaml).
 
 When you are finished, you will have an understanding of Windows Forms layout features in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]-based applications.
 
@@ -256,6 +256,6 @@ To use a dynamic layout container, follow these steps:
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
 - [Design XAML in Visual Studio](/visualstudio/xaml-tools/designing-xaml-in-visual-studio)
 - [Layout Considerations for the WindowsFormsHost Element](layout-considerations-for-the-windowsformshost-element.md)
-- [Arranging Windows Forms Controls in WPF Sample](https://go.microsoft.com/fwlink/?LinkID=159971)
+- [Arranging Windows Forms Controls in WPF Sample](https://github.com/microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/WpfLayoutHostingWfWithXaml)
 - [Walkthrough: Hosting a Windows Forms Composite Control in WPF](walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md)
 - [Walkthrough: Hosting a WPF Composite Control in Windows Forms](walkthrough-hosting-a-wpf-composite-control-in-windows-forms.md)

@@ -35,7 +35,7 @@ This sample demonstrates how to write a custom SQL tracking participant that wri
 
 10. In the WCF test client, double click **GetStockPrice**. This opens the `GetStockPrice` operation that takes one parameter, type in the value `Contoso` and click **Invoke**.
 
-11. The emitted tracking records are written to a SQL database. To view the tracking records, open the TrackingSample database in SQL Management Studio and navigate to the tables. For more information about SQL Server Management Studio, see [Introducing SQL Server Management Studio](https://go.microsoft.com/fwlink/?LinkId=165645). SQL Server 2008 Management Studio Express can be downloaded [here](https://go.microsoft.com/fwlink/?LinkId=180520). Running a select query on the tables displays the data within the tracking records stored in the respective tables.
+11. The emitted tracking records are written to a SQL database. To view the tracking records, open the TrackingSample database in SQL Management Studio and navigate to the tables. For more information about SQL Server Management Studio, see [Introducing SQL Server Management Studio](/sql/ssms/sql-server-management-studio-ssms). SQL Server 2008 Management Studio Express can be downloaded [here](https://www.microsoft.com/download/details.aspx?id=7593). Running a select query on the tables displays the data within the tracking records stored in the respective tables.
 
 #### To uninstall the sample
 
@@ -55,4 +55,4 @@ This sample demonstrates how to write a custom SQL tracking participant that wri
 
 ## See also
 
-- [AppFabric Monitoring Samples](https://go.microsoft.com/fwlink/?LinkId=193959)
+- [AppFabric Monitoring Samples](https://docs.microsoft.com/previous-versions/appfabric/ff383407(v=azure.10))

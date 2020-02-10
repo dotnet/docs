@@ -21,6 +21,16 @@ If you're migrating an app from .NET Framework to .NET Core, the breaking change
 
 ***
 
+## Cryptography
+
+- [`silent` parameter of SignedCms.ComputeSignature is respected](#silent-parameter-of-SignedCmsComputeSignature-is-respected)
+
+### .NET Core 2.1
+
+[!INCLUDE [compute-signature-silent-parameter](~/includes/core-changes/cryptography/2.1/compute-signature-silent-parameter.md)]
+
+***
+
 ## Windows Forms
 
 Windows Forms support was added to .NET Core in version 3.0. If you're migrating a Windows Forms app from .NET Framework to .NET Core, the breaking changes listed here may affect your app.

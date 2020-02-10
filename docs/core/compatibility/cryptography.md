@@ -1,7 +1,7 @@
 ---
 title: Cryptography breaking changes
-description: Lists the breaking cryptography-related changes in .NET Core.
-ms.date: "09/20/2019"
+description: Lists cryptography-related breaking changes in .NET Core.
+ms.date: 02/10/2020
 ---
 # Cryptography breaking changes
 
@@ -29,5 +29,11 @@ The following breaking changes are documented on this page:
 ## .NET Core 3.0 Preview 9
 
 [!INCLUDE[Better argument validation in the Pkcs8PrivateKeyInfo constructor](~/includes/core-changes/cryptography/3.0/better-argument-validation-in-pkcs8privatekeyinfo-ctor.md)]
+
+***
+
+## .NET Core 2.1
+
+[!INCLUDE [compute-signature-silent-parameter](~/includes/core-changes/cryptography/2.1/compute-signature-silent-parameter.md)]
 
 ***

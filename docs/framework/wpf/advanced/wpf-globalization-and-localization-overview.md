@@ -8,7 +8,7 @@ ms.assetid: 56e5a5c8-6c96-4d19-b8e1-a5be1dc564af
 ---
 # WPF Globalization and Localization Overview
 
-When you limit your product's availability to only one language, you limit your potential customer base to a fraction of our world's 6.5 billion population. If you want your applications to reach a global audience, cost-effective localization of your product is one of the best and most economical ways to reach more customers.
+When you limit your product's availability to only one language, you limit your potential customer base to a fraction of our world's 7.5 billion population. If you want your applications to reach a global audience, cost-effective localization of your product is one of the best and most economical ways to reach more customers.
 
 This overview introduces globalization and localization in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]. Globalization is the design and development of applications that perform in multiple locations. For example, globalization supports localized user interfaces and regional data for users in different cultures. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides globalized design features, including automatic layout, satellite assemblies, and localized attributes and commenting.
 

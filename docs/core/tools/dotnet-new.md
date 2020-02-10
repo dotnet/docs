@@ -1,7 +1,7 @@
 ---
 title: dotnet new command
 description: The dotnet new command creates new .NET Core projects based on the specified template.
-ms.date: 02/03/2020
+ms.date: 02/10/2020
 ---
 # dotnet new
 
@@ -95,6 +95,8 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 - **`-i|--install <PATH|NUGET_ID>`**
 
   Installs a source or template pack from the `PATH` or `NUGET_ID` provided. If you want to install a prerelease version of a template package, you need to specify the version in the format of `<package-name>::<package-version>`. By default, `dotnet new` passes \* for the version, which represents the last stable package version. See an example at the [Examples](#examples) section.
+  
+  If a version of the template was already installed when you run this command, the template will be updated to the specified version, or to the latest stable version if no version was specified.
 
   For information on creating custom templates, see [Custom templates for dotnet new](custom-templates.md).
 
@@ -125,9 +127,11 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
   Filters templates based on available types. Predefined values are "project", "item", or "other".
 
-- **`-u|--uninstall <PATH|NUGET_ID>`**
+- **`-u|--uninstall [PATH|NUGET_ID]`**
 
-  Uninstalls a source or template pack at the `PATH` or `NUGET_ID` provided. When excluding the `<PATH|NUGET_ID>` value, all currently installed template packs and their associated templates are displayed.
+  Uninstalls a source or template pack at the `PATH` or `NUGET_ID` provided. When excluding the `<PATH|NUGET_ID>` value, all currently installed template packs and their associated templates are displayed. When specifying `NUGET_ID`, only specify the package name without the version number.
+
+  If you don't specify a parameter to this option, the command lists the installed templates and details about them.
 
   > [!NOTE]
   > To uninstall a template using a `PATH`, you need to fully qualify the path. For example, *C:/Users/\<USER>/Documents/Templates/GarciaSoftware.ConsoleTemplate.CSharp* will work, but *./GarciaSoftware.ConsoleTemplate.CSharp* from the containing folder will not.
@@ -693,6 +697,12 @@ Each project template may have additional options available. The core templates 
 
   ```dotnetcli
   dotnet new -i Microsoft.DotNet.Web.Spa.ProjectTemplates::2.0.0
+  ```
+
+- List the installed templates and details about them, including how to uninstall them:
+
+  ```dotnetcli
+  dotnet new -u
   ```
 
 - Create a *global.json* in the current directory setting the SDK version to 3.1.101:

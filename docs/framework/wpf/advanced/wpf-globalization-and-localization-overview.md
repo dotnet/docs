@@ -8,7 +8,7 @@ ms.assetid: 56e5a5c8-6c96-4d19-b8e1-a5be1dc564af
 ---
 # WPF Globalization and Localization Overview
 
-When you limit your product's availability to only one language, you limit your potential customer base to a fraction of our world’s 6.5 billion population. If you want your applications to reach a global audience, cost-effective localization of your product is one of the best and most economical ways to reach more customers.
+When you limit your product's availability to only one language, you limit your potential customer base to a fraction of our world's 6.5 billion population. If you want your applications to reach a global audience, cost-effective localization of your product is one of the best and most economical ways to reach more customers.
 
 This overview introduces globalization and localization in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]. Globalization is the design and development of applications that perform in multiple locations. For example, globalization supports localized user interfaces and regional data for users in different cultures. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides globalized design features, including automatic layout, satellite assemblies, and localized attributes and commenting.
 
@@ -209,7 +209,7 @@ On German Windows, if this resources.dll is placed in a de-DE folder next to the
 |Code|Original English BAML|Localized BAML|
 |Culturally neutral resources|Other resources in English|Other resources localized to German|
 
-The .NET framework automatically chooses which satellite resources assembly to load based on the application’s `Thread.CurrentThread.CurrentUICulture`. This defaults to the culture of your Windows OS. So if you are using German Windows, the de-DE\MyDialog.resources.dll loads, if you are using English Windows, the en-US\MyDialog.resources.dll loads. You can set the ultimate fallback resource for your application by specifying the NeutralResourcesLanguage in your project’s AssemblyInfo.*. For example if you specify:
+The .NET framework automatically chooses which satellite resources assembly to load based on the application's `Thread.CurrentThread.CurrentUICulture`. This defaults to the culture of your Windows OS. So if you are using German Windows, the de-DE\MyDialog.resources.dll loads, if you are using English Windows, the en-US\MyDialog.resources.dll loads. You can set the ultimate fallback resource for your application by specifying the NeutralResourcesLanguage in your project's AssemblyInfo.\*. For example if you specify:
 
 `[assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]`
 
@@ -255,11 +255,11 @@ Take a look through Homepage.xaml, notice that aside from the fixed width and he
 
 **Localization Comments**
 
-There are many cases where content may be ambiguous and difficult to translate. The developer or designer has the ability to provide extra context and comments to localizers through localization comments. For example the Localization.Comments below clarifies the usage of the character ‘&#124;’.
+There are many cases where content may be ambiguous and difficult to translate. The developer or designer has the ability to provide extra context and comments to localizers through localization comments. For example the Localization.Comments below clarifies the usage of the character '&#124;'.
 
 [!code-xaml[GlobalizationHomepage#LocalizationComment](~/samples/snippets/csharp/VS_Snippets_Wpf/GlobalizationHomepage/CS/Homepage.xaml#localizationcomment)]
 
-This comment becomes associated with TextBlock_1’s content and in the case of the LocBaml Tool, ( see [Localize an Application](how-to-localize-an-application.md)), it can be seen in the 6th column of the TextBlock_1 row in the output .csv file:
+This comment becomes associated with TextBlock_1's content and in the case of the LocBaml Tool, ( see [Localize an Application](how-to-localize-an-application.md)), it can be seen in the 6th column of the TextBlock_1 row in the output .csv file:
 
 |Resource Key|Category|Readable|Modifiable|Comment|Value|
 |-|-|-|-|-|-|
@@ -271,7 +271,7 @@ Comments can be placed on the content or property of any element using the follo
 
 **Localization Attributes**
 
-Often the developer or localization manager needs control of what localizers can read and modify. For example, you might not want the localizer to translate the name of your company or legal wording. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides attributes that enable you to set the readability, modifiability, and category of an element’s content or property which your localization tool can use to lock, hide, or sort elements. For more information, see <xref:System.Windows.Localization.Attributes%2A>. For the purposes of this sample, the LocBaml Tool just outputs the values of these attributes. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls all have default values for these attributes, but you the can override them. For example, the following example overrides the default localization attributes for `TextBlock_1` and sets the content to be readable but unmodifiable for localizers.
+Often the developer or localization manager needs control of what localizers can read and modify. For example, you might not want the localizer to translate the name of your company or legal wording. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides attributes that enable you to set the readability, modifiability, and category of an element's content or property which your localization tool can use to lock, hide, or sort elements. For more information, see <xref:System.Windows.Localization.Attributes%2A>. For the purposes of this sample, the LocBaml Tool just outputs the values of these attributes. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls all have default values for these attributes, but you the can override them. For example, the following example overrides the default localization attributes for `TextBlock_1` and sets the content to be readable but unmodifiable for localizers.
 
 [!code-xaml[LocalizationComAtt#LocalizationAttributes](~/samples/snippets/csharp/VS_Snippets_Wpf/LocalizationComAtt/CSharp/Attributes.xaml#localizationattributes)]
 
@@ -293,7 +293,7 @@ The per instance attributes set in [!INCLUDE[TLA2#tla_xaml](../../../../includes
 
 **Font Fallback and Composite Fonts**
 
-If you specify a font that does not support a given codepoint range, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] will automatically fallback to one that does by using the Global User Interface.compositefont that is located in your Windows\Fonts directory. Composite fonts work just as any other font and can be used explicitly by setting an element’s `FontFamily` (for instance, `FontFamily="Global User Interface"`). You can specify your own font fallback preference by creating your own composite font and specifying what font to use for specific codepoint ranges and languages.
+If you specify a font that does not support a given codepoint range, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] will automatically fallback to one that does by using the Global User Interface.compositefont that is located in your Windows\Fonts directory. Composite fonts work just as any other font and can be used explicitly by setting an element's `FontFamily` (for instance, `FontFamily="Global User Interface"`). You can specify your own font fallback preference by creating your own composite font and specifying what font to use for specific codepoint ranges and languages.
 
 For more information on composite fonts see <xref:System.Windows.Media.FontFamily>.
 

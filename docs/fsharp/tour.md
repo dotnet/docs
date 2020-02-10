@@ -94,7 +94,7 @@ Record and Union types are two fundamental data types used in F# code, and are g
 
 [!code-fsharp[Records](~/samples/snippets/fsharp/tour.fs#L507-L559)]
 
-You can also represent Records as `struct`s.  This is done with the `[<Struct>]` attribute:
+You can also represent Records as structs. This is done with the `[<Struct>]` attribute:
 
 [!code-fsharp[Records](~/samples/snippets/fsharp/tour.fs#L561-L568)]
 

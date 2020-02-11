@@ -2,7 +2,6 @@
 title: .NET architectural components
 description: Describes .NET architectural components such as the .NET Standard, .NET implementations, .NET runtimes, and tooling.
 author: cartermp
-ms.author: mairaw
 ms.date: 08/23/2017
 ms.technology: dotnet-standard
 ---

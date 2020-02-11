@@ -3,8 +3,6 @@ title: "Developing for Multiple Platforms with the .NET Framework"
 ms.date: "07/18/2018"
 ms.technology: dotnet-standard
 ms.assetid: b153baaa-130c-4169-860b-e580591de91e
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Developing for Multiple Platforms with the .NET Framework
 

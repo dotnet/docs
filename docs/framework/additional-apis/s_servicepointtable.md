@@ -10,8 +10,6 @@ api_location:
 api_type: 
   - "Assembly"
 ms.assetid: 24459679-291c-401a-9def-e42b29466fcf
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ServicePointManager.s\_ServicePointTable Field
 

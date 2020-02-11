@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "caller security checks"
   - "link demands"
 ms.assetid: a33fd5f9-2de9-4653-a4f0-d9df25082c4d
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Link Demands
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  

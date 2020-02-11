@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "MDAs (managed debugging assistants), exceptions"
   - "ExceptionSwallowedOnCallFromCOM MDA"
 ms.assetid: 55d6ab12-f251-4aab-aa64-aacbe9d9f974
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # exceptionSwallowedOnCallFromCom MDA
 The `exceptionSwallowedOnCallFromCOM` managed debugging assistant (MDA) is activated when an exception is thrown from common language runtime (CLR) code called from COM via a method that does not have an unmanaged HRESULT return type.  

@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "secure coding, exception handling"
   - "exception handling, security"
 ms.assetid: 1f3da743-9742-47ff-96e6-d0dd1e9e1c19
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Securing Exception Handling
 In Visual C++ and Visual Basic, a filter expression further up the stack runs before any **finally** statement. The **catch** block associated with that filter runs after the **finally** statement. For more information, see [Using User-Filtered Exceptions](../../standard/exceptions/using-user-filtered-exception-handlers.md). This section examines the security implications of this order. Consider the following pseudocode example that illustrates the order in which filter statements and **finally** statements run.  

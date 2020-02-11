@@ -11,8 +11,6 @@ api_type:
 ms.assetid: 27ae39b7-3491-40f9-9b33-2de798f123ad
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 
 # DataMemberFieldEditor Class

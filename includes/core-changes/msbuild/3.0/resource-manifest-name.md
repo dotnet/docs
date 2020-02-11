@@ -1,6 +1,6 @@
 ### Resource file names
 
-
+Starting in .NET Core 3.0, the generated resource manifest file name has changed.
 
 #### Version introduced
 

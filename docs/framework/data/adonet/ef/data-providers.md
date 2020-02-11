@@ -14,12 +14,8 @@ This section provides information on data providers that support the Entity Fram
  Describes the .NET Framework data provider that supports the Entity Framework for use with a SQL Server database.  
   
 ## Related Sections  
- [Entity Framework (SQL Server Compact)](https://go.microsoft.com/fwlink/?LinkId=135638)  
+ [Entity Framework (SQL Server Compact)](https://docs.microsoft.com/previous-versions/sql/compact/sql-server-compact-4.0/cc835494(v=sql.110))  
  Describes provider limitations and how to use the Entity Framework with a SQL Server Compact database.  
-  
- [Third-Party Providers for the Entity Framework](https://go.microsoft.com/fwlink/?LinkId=143699)  
- List of the third-party data providers currently available for the Entity Framework.  
-  
 ## See also
 
 - [Working with Data Providers](working-with-data-providers.md)

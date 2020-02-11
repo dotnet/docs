@@ -28,7 +28,7 @@ For more information about setting the element value, see [Service Identity and 
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|value|The DNS of the certificate. DNS is an industry-standard protocol used to locate computers on an IP-based network. Users can remember display names, such as <https://go.microsoft.com/fwlink/?prd=10929> or [https://go.microsoft.com/fwlink/?LinkID=96165](https://go.microsoft.com/fwlink/?LinkID=96165), easier than number-based addresses, such as 207.46.131.137.|  
+|value|The DNS of the certificate. DNS is an industry-standard protocol used to locate computers on an IP-based network. Users can remember display names, such as `https://go.microsoft.com/fwlink/?prd=10929` or `https://go.microsoft.com/fwlink/?LinkID=96165`, easier than number-based addresses, such as 207.46.131.137.|  
   
 ### Child Elements  
  None.  

@@ -96,7 +96,7 @@ myPath.StrokeThickness = 1
 myPath.Data = myPathGeometry
 ```
 
-This example is part of larger sample; for the complete sample, see the [Geometries Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/Geometery).
+This example is part of larger sample; for the complete sample, see the [Geometries Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/Geometry).
 
 ## See also
 

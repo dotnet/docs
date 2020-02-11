@@ -182,7 +182,7 @@ The result of binning creates bin bounds of `[0,200000,Infinity]`. Therefore the
 
 ## Work with categorical data
 
-One of the most common types of data is categorical data. Categorical data has a finite number of categories. For example, the states of the USA, or a list of the types of animals found in a set of pictures. Whether the categorical data are features or labels, they must be mapped onto a numerical value in so that they can be used to generate a machine learning model. There are a number of ways of working with categorical data in ML.NET, depending on the problem you are solving.
+One of the most common types of data is categorical data. Categorical data has a finite number of categories. For example, the states of the USA, or a list of the types of animals found in a set of pictures. Whether the categorical data are features or labels, they must be mapped onto a numerical value so they can be used to generate a machine learning model. There are a number of ways of working with categorical data in ML.NET, depending on the problem you are solving.
 
 ### Key value mapping
 

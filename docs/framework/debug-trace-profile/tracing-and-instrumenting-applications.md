@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "performance monitoring, tracing code"
   - "Trace class, instrumentation for .NET applications"
 ms.assetid: 773b6fc4-9013-4322-b728-5dec7a72e743
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Tracing and Instrumenting Applications
 Tracing is a way for you to monitor the execution of your application while it is running. You can add tracing and debugging instrumentation to your .NET Framework application when you develop it, and you can use that instrumentation both while you are developing the application and after you have deployed it. You can use the <xref:System.Diagnostics.Trace?displayProperty=nameWithType>, <xref:System.Diagnostics.Debug?displayProperty=nameWithType>, and <xref:System.Diagnostics.TraceSource?displayProperty=nameWithType> classes to record information about errors and application execution in logs, text files, or other devices for later analysis.  

@@ -1,7 +1,5 @@
 ---
 title: XmlReader.CreateSqlReader Method (System.Xml)
-author: mairaw
-ms.author: mairaw
 ms.date: 10/17/2019
 topic_type:
   - "apiref"

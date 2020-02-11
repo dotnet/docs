@@ -1,7 +1,5 @@
 ---
 title: Message.WriteStartHeaders Method (System.ServiceModel.Channels)
-author: mairaw
-ms.author: mairaw
 ms.date: 11/01/2019
 topic_type:
   - "apiref"

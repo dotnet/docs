@@ -9,8 +9,6 @@ helpviewer_keywords:
   - ".NET Framework, and Windows Store apps"
   - ".NET Framework, and Windows Runtime"
 ms.assetid: 6fa7d044-ae12-4c54-b8ee-50915607a565
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # .NET Framework Support for Windows Store Apps and Windows Runtime
 

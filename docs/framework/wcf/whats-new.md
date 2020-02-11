@@ -31,7 +31,7 @@ WCF now has support for contract-first development. The svcutil.exe has a /servi
 
 ### Add Service Reference from a Portable Subset Project
 
-Portable subset projects enable .NET assembly programmers to maintain a single source tree and build system while still supporting multiple .NET platforms (desktop, Silverlight, Windows Phone, and XBOX). Portable subset projects only reference .NET portable libraries which are a .NET framework assembly that can be used on any .NET platform. The developer experience is the same as adding a service reference within any other WCF client application. For more information, see [Add Service Reference in a Portable Subset Project](add-service-reference-in-a-portable-subset-project.md).
+Portable subset projects enable .NET assembly programmers to maintain a single source tree and build system while still supporting multiple .NET platforms (desktop, Silverlight, Windows Phone, and Xbox). Portable subset projects only reference .NET portable libraries that are assemblies that can be used on any .NET platform. The developer experience is the same as adding a service reference within any other WCF client application. For more information, see [Add Service Reference in a Portable Subset Project](add-service-reference-in-a-portable-subset-project.md).
 
 ### ASP.NET Compatibility Mode Default Changed
 

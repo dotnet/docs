@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "context disconnections"
   - "managed debugging assistants (MDAs), disconnected context"
 ms.assetid: 1887d31d-7006-4491-93b3-68fd5b05f71d
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # disconnectedContext MDA
 The `disconnectedContext` managed debugging assistant (MDA) is activated when the CLR attempts to transition into a disconnected apartment or context while servicing a request concerning a COM object.  

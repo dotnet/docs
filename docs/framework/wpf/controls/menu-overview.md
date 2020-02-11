@@ -54,4 +54,4 @@ The <xref:System.Windows.Controls.Menu> class enables you to organize elements a
   
 ## See also
 
-- [WPF Controls Gallery Sample](https://go.microsoft.com/fwlink/?LinkID=160053)
+- [WPF Controls Gallery Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Getting%20Started/ControlsAndLayout)

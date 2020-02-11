@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "security-transparent code"
   - "security-critical code"
 ms.assetid: 4d05610a-0da6-4f08-acea-d54c9d6143c0
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Security-Transparent Code, Level 2
 

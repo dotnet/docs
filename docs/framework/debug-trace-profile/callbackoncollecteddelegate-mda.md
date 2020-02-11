@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "garbage collection, run-time errors"
   - "delegates [.NET Framework], garbage collection"
 ms.assetid: 398b0ce0-5cc9-4518-978d-b8263aa21e5b
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # callbackOnCollectedDelegate MDA
 The `callbackOnCollectedDelegate` managed debugging assistant (MDA) is activated if a delegate is marshaled from managed to unmanaged code as a function pointer and a callback is placed on that function pointer after the delegate has been garbage collected.  

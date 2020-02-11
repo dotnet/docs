@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "time formatting"
   - "UTC formatting"
 ms.assetid: c4a942bb-2651-4b65-8718-809f892a0659
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # dateTimeInvalidLocalFormat MDA
 The `dateTimeInvalidLocalFormat` MDA is activated when a <xref:System.DateTime> instance that is stored as a Universal Coordinated Time (UTC) is formatted using a format that is intended to be used only for local <xref:System.DateTime> instances. This MDA is not activated for unspecified or default <xref:System.DateTime> instances.  

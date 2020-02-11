@@ -47,7 +47,7 @@ In the previous code segment, if you do not assign a value to the `Name` propert
 
 ## The set Accessor
 
-The `set` accessor resembles a method whose return type is [void](../../language-reference/keywords/void.md). It uses an implicit parameter called `value`, whose type is the type of the property. In the following example, a `set` accessor is added to the `Name` property:
+The `set` accessor resembles a method whose return type is [void](../../language-reference/builtin-types/void.md). It uses an implicit parameter called `value`, whose type is the type of the property. In the following example, a `set` accessor is added to the `Name` property:
 
 [!code-csharp[csProgGuideProperties#12](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideProperties/CS/Properties.cs#12)]
 

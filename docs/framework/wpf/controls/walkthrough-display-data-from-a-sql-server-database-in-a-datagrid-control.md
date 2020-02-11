@@ -94,4 +94,3 @@ You need the following components to complete this walkthrough:
 ## See also
 
 - <xref:System.Windows.Controls.DataGrid>
-- [How Do I: Get Started with Entity Framework in WPF Applications?](https://visualstudio.microsoft.com/)

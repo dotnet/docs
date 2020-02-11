@@ -88,7 +88,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
   
 <a name="Panels_overview_Canvas_subsection"></a>   
 ### Canvas  
- The <xref:System.Windows.Controls.Canvas> element enables positioning of content according to absolute *x-* and *y-*coordinates. Elements can be drawn in a unique location; or, if elements occupy the same coordinates, the order in which they appear in markup determines the order in which the elements are drawn.  
+ The <xref:System.Windows.Controls.Canvas> element enables positioning of content according to absolute *x-* and *y-* coordinates. Elements can be drawn in a unique location; or, if elements occupy the same coordinates, the order in which they appear in markup determines the order in which the elements are drawn.  
   
  <xref:System.Windows.Controls.Canvas> provides the most flexible layout support of any <xref:System.Windows.Controls.Panel>. Height and Width properties are used to define the area of the canvas, and elements inside are assigned absolute coordinates relative to the area of the parent <xref:System.Windows.Controls.Canvas>. Four attached properties, <xref:System.Windows.Controls.Canvas.Left%2A?displayProperty=nameWithType>, <xref:System.Windows.Controls.Canvas.Top%2A?displayProperty=nameWithType>, <xref:System.Windows.Controls.Canvas.Right%2A?displayProperty=nameWithType> and <xref:System.Windows.Controls.Canvas.Bottom%2A?displayProperty=nameWithType>, allow fine control of object placement within a <xref:System.Windows.Controls.Canvas>, allowing the developer to position and arrange elements precisely on the screen.  
   
@@ -226,7 +226,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
   
  Similarly, custom layout behaviors based on derived classes (such as <xref:System.Windows.Controls.Canvas> or <xref:System.Windows.Controls.Grid>) can be defined by overriding their <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> and <xref:System.Windows.FrameworkElement.MeasureOverride%2A> methods.  
   
- The following markup demonstrates how to create a custom <xref:System.Windows.Controls.Panel> element. This new <xref:System.Windows.Controls.Panel>, defined as `PlotPanel`, supports the positioning of child elements through the use of hard-coded *x-* and *y-*coordinates. In this example, a <xref:System.Windows.Shapes.Rectangle> element (not shown) is positioned at plot point 50 (*x*), and 50 (*y*).  
+ The following markup demonstrates how to create a custom <xref:System.Windows.Controls.Panel> element. This new <xref:System.Windows.Controls.Panel>, defined as `PlotPanel`, supports the positioning of child elements through the use of hard-coded *x-* and *y-* coordinates. In this example, a <xref:System.Windows.Shapes.Rectangle> element (not shown) is positioned at plot point 50 (*x*), and 50 (*y*).  
   
  [!code-cpp[PlotPanel#1](~/samples/snippets/cpp/VS_Snippets_Wpf/PlotPanel/CPP/PlotPanel.cpp#1)]
  [!code-csharp[PlotPanel#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PlotPanel/CSharp/PlotPanel.cs#1)]

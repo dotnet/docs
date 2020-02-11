@@ -15,7 +15,7 @@ SQL Server and the .NET Framework are based on different type systems, which can
   
  **SQL Server Books Online**  
   
-1. [Data Types (Database Engine)](https://go.microsoft.com/fwlink/?LinkID=107468)  
+1. [Data Types (Database Engine)](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms187594(v=sql.105))  
   
 ## In This Section  
  [SqlTypes and the DataSet](sqltypes-and-the-dataset.md)  

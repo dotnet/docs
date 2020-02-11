@@ -22,7 +22,7 @@ The .NET Framework Data Provider for SQL Server (SqlClient) provides the followi
   
 |SQL Server 2000|SQL Server 2005|SQL Server 2008|  
 |---------------------|---------------------|---------------------|  
-|[System Functions Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=115918)|[System Functions Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=115917)|[System Functions (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=115919)|  
+|[System Functions Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=115918)|[System Functions Transact-SQL)](https://docs.microsoft.com/previous-versions/sql/sql-server-2005/ms187786(v=sql.90))|[System Functions (Transact-SQL)](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms187786(v=sql.100))|  
   
 ## See also
 

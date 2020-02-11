@@ -10,7 +10,7 @@ The problem of internal data access is a fairly common scenario. That is, you wi
   
  **SQL Server Books Online**  
   
-1. [The Context Connection](https://go.microsoft.com/fwlink/?LinkId=115395)  
+1. [The Context Connection](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms131053(v=sql.100))  
   
 ## See also
 

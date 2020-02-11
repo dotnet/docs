@@ -12,7 +12,7 @@ SQL Server 2005 introduced the integration of the common language runtime (CLR) 
   
  **SQL Server Books Online**  
   
-1. [Common Language Runtime (CLR) Integration Programming Concepts](https://go.microsoft.com/fwlink/?LinkId=115240)  
+1. [Common Language Runtime (CLR) Integration Programming Concepts](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms131102(v=sql.100))  
   
 ## In This Section  
  [Introduction to SQL Server CLR Integration](introduction-to-sql-server-clr-integration.md)  

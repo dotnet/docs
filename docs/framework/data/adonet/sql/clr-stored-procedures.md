@@ -17,7 +17,7 @@ For more detailed information, see the version of [SQL Server documentation](/sq
   
  **SQL Server documentation**
 
-1. [CLR Stored Procedures](https://go.microsoft.com/fwlink/?LinkId=115400)  
+1. [CLR Stored Procedures](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms131094(v=sql.100))  
   
 ## See also
 

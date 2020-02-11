@@ -18,8 +18,7 @@ You can also use `void` as a referent type to declare a pointer to an unknown ty
 
 You cannot use `void` as the type of a variable.
 
-The type keyword `void` is an alias for the .NET <xref:System.Void?displayProperty=nameWithType> type.
-
 ## See also
 
 - [C# reference](../index.md)
+- <xref:System.Void?displayProperty=nameWithType>

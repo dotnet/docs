@@ -127,7 +127,7 @@ Publish an app self-contained. A macOS 64-bit executable is created.
 ```dotnet
 dotnet publish -r osx-x64
 ```
-s
+
 Publish an app self-contained. A Windows 64-bit executable is created.
 
 ```dotnet

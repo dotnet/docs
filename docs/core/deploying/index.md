@@ -1,6 +1,6 @@
 ---
 title: Application publishing
-description: Learn about the ways to publish a .NET Core application. You can publish an app as self-contained or as runtime-dependent. Each mode affects how a user of your app, runs your app.
+description: Learn about the ways to publish a .NET Core application. .NET Core can publish platform-specific or cross-platform apps. You can publish an app as self-contained or as runtime-dependent. Each mode affects how a user runs your app.
 ms.date: 01/31/2020
 ---
 # .NET Core application publishing overview
@@ -20,7 +20,7 @@ For more information about the `dotnet publish` command, see [.NET Core dotnet p
 
 ## Produce an executable
 
-Executables are created per-operating system, per-CPU architecture, and aren't cross-platform. When publishing your app and generating an executable, you can publish the app as [self-contained](#publish-self-contained) or [runtime-dependent](#publish-runtime-dependent). Publishing your app self-contained includes the .NET Core runtime with your app, and users of your app don't have to worry about installing .NET Core before running your app. Apps published runtime-dependent don't include the .NET Core runtime and libraries; only your app and 3rd-party dependencies are included.
+Executables are created per-operating system, per-CPU architecture, and aren't cross-platform. When publishing your app and creating an executable, you can publish the app as [self-contained](#publish-self-contained) or [runtime-dependent](#publish-runtime-dependent). Publishing your app self-contained includes the .NET Core runtime with your app, and users of your app don't have to worry about installing .NET Core before running your app. Apps published runtime-dependent don't include the .NET Core runtime and libraries; only your app and 3rd-party dependencies are included.
 
 The following commands produce an executable:
 
@@ -53,7 +53,7 @@ Publishing an app as runtime-dependent produces a [cross-platform binary](#produ
 
 The cross-platform binary of your app can be run with the `dotnet <filename.dll>` command, and can be run on any platform. If the app uses a NuGet package that has platform-specific implementations, all platforms dependencies are copied to the publish folder along with the app.
 
-You can generate an executable for a specific platform by passing the `-r <RID> --self-contained false` parameters to the [`dotnet publish`](../tools/dotnet-publish.md) command. When the `-r` parameter is omitted, an executable is generated for your current platform. Any NuGet packages that have platform-specific dependencies for the targeted platform are copied to the publish folder.
+You can create an executable for a specific platform by passing the `-r <RID> --self-contained false` parameters to the [`dotnet publish`](../tools/dotnet-publish.md) command. When the `-r` parameter is omitted, an executable is created for your current platform. Any NuGet packages that have platform-specific dependencies for the targeted platform are copied to the publish folder.
 
 ### Advantages
 

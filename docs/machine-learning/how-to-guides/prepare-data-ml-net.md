@@ -18,7 +18,7 @@ Data is often unclean and sparse. ML.NET machine learning algorithms expect inpu
 
 Sometimes, not all data in a dataset is relevant for analysis. An approach to remove irrelevant data is filtering. The [`DataOperationsCatalog`](xref:Microsoft.ML.DataOperationsCatalog) contains a set of filter operations that take in an [`IDataView`](xref:Microsoft.ML.IDataView) containing all of the data and return an [IDataView](xref:Microsoft.ML.IDataView) containing only the data points of interest. It's important to note that because filter operations are not an [`IEstimator`](xref:Microsoft.ML.IEstimator%601) or [`ITransformer`](xref:Microsoft.ML.ITransformer) like those in the [`TransformsCatalog`](xref:Microsoft.ML.TransformsCatalog), they cannot be included as part of an [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) or [`TransformerChain`](xref:Microsoft.ML.Data.TransformerChain%601) data preparation pipeline.
 
-Using the following input data and load it into an [`IDataView`](xref:Microsoft.ML.IDataView):
+Take the following input data and load it into an [`IDataView`](xref:Microsoft.ML.IDataView) called `data`:
 
 ```csharp
 HomeData[] homeDataList = new HomeData[]
@@ -54,7 +54,7 @@ The sample above takes rows in the dataset with a price between 200000 and 10000
 
 Missing values are a common occurrence in datasets. One approach to dealing with missing values is to replace them with the default value for the given type if any or another meaningful value such as the mean value in the data.
 
-Using the following input data and load it into an [`IDataView`](xref:Microsoft.ML.IDataView):
+Take the following input data and load it into an [`IDataView`](xref:Microsoft.ML.IDataView) called `data`:
 
 ```csharp
 HomeData[] homeDataList = new HomeData[]
@@ -103,7 +103,7 @@ ML.NET supports various [replacement modes](xref:Microsoft.ML.Transforms.Missing
 
 ### Min-Max normalization
 
-Using the following input data and load it into an [`IDataView`](xref:Microsoft.ML.IDataView):
+Take the following input data and load it into an [`IDataView`](xref:Microsoft.ML.IDataView) called `data`:
 
 ```csharp
 HomeData[] homeDataList = new HomeData[]
@@ -141,7 +141,7 @@ The original price values `[200000,100000]` are converted to `[ 1, 0.5 ]` using 
 
 [Binning](https://en.wikipedia.org/wiki/Data_binning) converts continuous values into a discrete representation of the input. For example, suppose one of your features is age. Instead of using the actual age value,  binning creates ranges for that value. 0-18 could be one bin, another could be 19-35 and so on.
 
-Using the following input data that is loaded into an [`IDataView`](xref:Microsoft.ML.IDataView):
+Take the following input data and load it into an [`IDataView`](xref:Microsoft.ML.IDataView) called `data`:
 
 ```csharp
 HomeData[] homeDataList = new HomeData[]

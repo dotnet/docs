@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "JitCompilationStart MDA"
   - "managed debugging assistants (MDAs), JIT compilation"
 ms.assetid: 5ffd2857-d0ba-4342-9824-9ffe04ec135d
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # jitCompilationStart MDA
 The `jitCompilationStart` managed debugging assistant (MDA) is activated to report when the just-in-time (JIT) compiler starts to compile a function.  

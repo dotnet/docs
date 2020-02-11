@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "MDAs (managed debugging assistants), marshaling"
   - "invalid function pointers"
 ms.assetid: 99ae44f1-783e-49a9-9009-24f54bbd0f09
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # invalidFunctionPointerInDelegate MDA
 The `invalidFunctionPointerInDelegate` managed debugging assistant (MDA) is activated when an invalid function pointer is passed in to construct a delegate over a native function pointer.  

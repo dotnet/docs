@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "policy migration, compatibility"
   - "CLR policy migration"
 ms.assetid: 19cb4d39-e38a-4262-b507-458915303115
-author: "mairaw"
-ms.author: "mairaw"
 ---
 
 # Code Access Security Policy Compatibility and Migration

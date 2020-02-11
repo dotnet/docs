@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "SafeHandle class, run-time errors"
   - "MDAs (managed debugging assistants), handles"
 ms.assetid: 44cd98ba-95e5-40a1-874d-e8e163612c51
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # releaseHandleFailed MDA
 The `releaseHandleFailed` managed debugging assistant (MDA) is activated is to notify developers when the <xref:System.Runtime.InteropServices.SafeHandle.ReleaseHandle%2A> method of a class derived from <xref:System.Runtime.InteropServices.SafeHandle> or <xref:System.Runtime.InteropServices.CriticalHandle> returns `false`.  

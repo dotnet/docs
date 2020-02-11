@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "DllMain function"
   - "MDAs (managed debugging assistants), DllMain returns false"
 ms.assetid: e2abdd04-f571-4b97-8c16-2221b8588429
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # dllMainReturnsFalse MDA
 The `dllMainReturnsFalse` managed debugging assistant (MDA) is activated if the managed `DllMain` function of a user assembly, called with reason DLL_PROCESS_ATTACH, returns FALSE.  

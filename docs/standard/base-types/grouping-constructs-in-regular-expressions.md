@@ -38,7 +38,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 |[Zero-width negative lookahead assertions](#zerowidth_negative_lookahead_assertion)|Noncapturing|  
 |[Zero-width positive lookbehind assertions](#zerowidth_positive_lookbehind_assertion)|Noncapturing|  
 |[Zero-width negative lookbehind assertions](#zerowidth_negative_lookbehind_assertion)|Noncapturing|  
-|[Nonbacktracking subexpressions](#nonbacktracking_subexpression)|Noncapturing|  
+|[Atomic groups](#atomic_groups)|Noncapturing|  
   
  For information on groups and the regular expression object model, see [Grouping constructs and regular expression objects](#Objects).  
   
@@ -389,9 +389,9 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 |`\d{4}\b`|Match four decimal digits, and end the match at a word boundary.|  
 |<code>(?<!(Saturday&#124;Sunday) )</code>|If the match is preceded by something other than the strings "Saturday" or "Sunday" followed by a space, the match is successful.|  
   
-<a name="nonbacktracking_subexpression"></a>   
-## Nonbacktracking Subexpressions  
- The following grouping construct represents a nonbacktracking subexpression (also known as a "greedy" subexpression):  
+<a name="atomic_groups"></a>   
+## Atomic groups  
+ The following grouping construct represents an atomic group (known in some other regular expression engines as a nonbacktracking subexpression, an atomic subexpression, or a once-only subexpression):
   
  `(?>` *subexpression* `)`  
   
@@ -403,7 +403,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
   
  This option is recommended if you know that backtracking will not succeed. Preventing the regular expression engine from performing unnecessary searching improves performance.  
   
- The following example illustrates how a nonbacktracking subexpression modifies the results of a pattern match. The backtracking regular expression successfully matches a series of repeated characters followed by one more occurrence of the same character on a word boundary, but the nonbacktracking regular expression does not.  
+ The following example illustrates how an atomic group modifies the results of a pattern match. The backtracking regular expression successfully matches a series of repeated characters followed by one more occurrence of the same character on a word boundary, but the nonbacktracking regular expression does not.  
   
  [!code-csharp[RegularExpressions.Language.Grouping#11](../../../samples/snippets/csharp/VS_Snippets_CLR/regularexpressions.language.grouping/cs/nonbacktracking1.cs#11)]
  [!code-vb[RegularExpressions.Language.Grouping#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/regularexpressions.language.grouping/vb/nonbacktracking1.vb#11)]  

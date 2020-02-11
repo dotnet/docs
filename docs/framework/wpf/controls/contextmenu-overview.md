@@ -62,4 +62,4 @@ The <xref:System.Windows.Controls.ContextMenu> class represents the element that
 - <xref:System.Windows.Controls.MenuItem>
 - [ContextMenu](contextmenu.md)
 - [ContextMenu Styles and Templates](contextmenu-styles-and-templates.md)
-- [WPF Controls Gallery Sample](https://go.microsoft.com/fwlink/?LinkID=160053)
+- [WPF Controls Gallery Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Getting%20Started/ControlsAndLayout)

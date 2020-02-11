@@ -207,7 +207,7 @@ The transform to convert categorical data to one-hot encoded numbers is [`OneHot
 
 ### Hashing
 
-Hashing is another way to convert categorical data to numbers. A hash function maps data of an arbitrary size (a string of text for example) onto a number with fixed range. Hashing can be a fast and space-efficient way of vectorizing features. One notable example of hashing in machine learning is email spam filtering where, instead of maintaining a dictionary of known words, every word in the email is hashed and added to a large feature vector. Using hashing in this way avoids the problem of malicious spam filtering circumvention by the use of words that are not in the dictionary.
+Hashing is another way to convert categorical data to numbers. A hash function maps data of an arbitrary size (a string of text for example) onto a number with a fixed range. Hashing can be a fast and space-efficient way of vectorizing features. One notable example of hashing in machine learning is email spam filtering where, instead of maintaining a dictionary of known words, every word in the email is hashed and added to a large feature vector. Using hashing in this way avoids the problem of malicious spam filtering circumvention by the use of words that are not in the dictionary.
 
 ML.NET provides [Hash](xref:Microsoft.ML.ConversionsExtensionsCatalog.Hash%2A) transform to perform hashing on text, dates, and numerical data. Like value key mapping, the outputs of the hash transform are key types.
 

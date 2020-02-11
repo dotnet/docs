@@ -1,8 +1,6 @@
 ---
 title: Target frameworks in SDK-style projects - .NET
 description: Learn about target frameworks for .NET Core apps and libraries.
-author: mairaw
-ms.author: mairaw
 ms.date: 12/03/2019
 ms.custom: "updateeachrelease"
 ms.technology: dotnet-standard

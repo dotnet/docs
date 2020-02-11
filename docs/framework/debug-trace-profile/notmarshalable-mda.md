@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "MDAs (managed debugging assistants), marshaling"
   - "notMarshalable MDA"
 ms.assetid: 96e7b2c1-843f-4d64-b519-740c3a18b50a
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # notMarshalable MDA
 The `notMarshalable` managed debugging assistant (MDA) is activated when the common language runtime (CLR) encounters a COM interface pointer without a valid registered proxy/stub or an incorrect `IMarshal` interface implementation while attempting to marshal the interface across contexts.  

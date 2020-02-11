@@ -2,7 +2,6 @@
 title: Get started with .NET
 description: Lists various articles for getting started with .NET, both from a language and platform perspective.
 author: cartermp
-ms.author: mairaw
 ms.date: 01/21/2020
 ms.technology: dotnet-standard
 ms.assetid: 81c07080-acdf-4aef-a66d-0ab52fab2c04

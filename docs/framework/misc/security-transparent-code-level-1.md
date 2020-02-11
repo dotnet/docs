@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "security-transparent code"
   - "security [.NET Framework], security-transparent code"
 ms.assetid: 5fd8f46d-3961-46a7-84af-2eb1f48e75cf
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Security-Transparent Code, Level 1
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  

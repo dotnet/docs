@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "PInvokeLog MDA"
   - "managed debugging assistants (MDAs), platform invoke"
 ms.assetid: b830444a-5003-49fe-b89b-b8bee22f7b1a
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # pInvokeLog MDA
 The `pInvokeLog` managed debugging assistant (MDA) is activated for each unique platform invoke signature used during execution.  

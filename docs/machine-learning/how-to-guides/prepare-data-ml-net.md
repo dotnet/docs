@@ -233,7 +233,7 @@ ReviewData[] reviews = new ReviewData[]
 };
 ```
 
-ML.NET provides the [`FeaturizeText`](xref:Microsoft.ML.TextCatalog.FeaturizeText%2A) transform that takes a texts string and creates a set of features from the text, by applying a series of individual transforms.
+ML.NET provides the [`FeaturizeText`](xref:Microsoft.ML.TextCatalog.FeaturizeText%2A) transform that takes a text's string value and creates a set of features from the text, by applying a series of individual transforms.
 
 ```csharp
 // Define text transform estimator

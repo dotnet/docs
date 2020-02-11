@@ -28,22 +28,22 @@ Runtime directives files recognize three categories of policy types: reflection,
 
   |Element|Activate|Browse|Dynamic|
   |-------------|--------------|------------|-------------|
-  |[\<Application>](application-element-net-native.md)|✓|✓|✓|
-  |[\<Assembly>](assembly-element-net-native.md)|✓|✓|✓|
-  |[\<AttributeImplies>](attributeimplies-element-net-native.md)|✓|✓|✓|
-  |[\<Event>](event-element-net-native.md)||✓|✓|
-  |[\<Field>](field-element-net-native.md)||✓|✓|
-  |[\<GenericParameter>](genericparameter-element-net-native.md)|✓|✓|✓|
-  |[\<ImpliesType>](impliestype-element-net-native.md)|✓|✓|✓|
-  |[\<Method>](method-element-net-native.md)||✓|✓|
-  |[\<MethodInstantiation>](methodinstantiation-element-net-native.md)||✓|✓|
-  |[\<Namespace>](namespace-element-net-native.md)|✓|✓|✓|
-  |[\<Parameter>](parameter-element-net-native.md)|✓|✓|✓|
-  |[\<Property>](property-element-net-native.md)||✓|✓|
-  |[\<Subtypes>](subtypes-element-net-native.md)|✓|✓|✓|
-  |[\<Type>](type-element-net-native.md)|✓|✓|✓|
-  |[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|✓|✓|✓|
-  |[\<TypeParameter>](typeparameter-element-net-native.md)|✓|✓|✓|
+  |[\<Application>](application-element-net-native.md)|✔️|✔️|✔️|
+  |[\<Assembly>](assembly-element-net-native.md)|✔️|✔️|✔️|
+  |[\<AttributeImplies>](attributeimplies-element-net-native.md)|✔️|✔️|✔️|
+  |[\<Event>](event-element-net-native.md)||✔️|✔️|
+  |[\<Field>](field-element-net-native.md)||✔️|✔️|
+  |[\<GenericParameter>](genericparameter-element-net-native.md)|✔️|✔️|✔️|
+  |[\<ImpliesType>](impliestype-element-net-native.md)|✔️|✔️|✔️|
+  |[\<Method>](method-element-net-native.md)||✔️|✔️|
+  |[\<MethodInstantiation>](methodinstantiation-element-net-native.md)||✔️|✔️|
+  |[\<Namespace>](namespace-element-net-native.md)|✔️|✔️|✔️|
+  |[\<Parameter>](parameter-element-net-native.md)|✔️|✔️|✔️|
+  |[\<Property>](property-element-net-native.md)||✔️|✔️|
+  |[\<Subtypes>](subtypes-element-net-native.md)|✔️|✔️|✔️|
+  |[\<Type>](type-element-net-native.md)|✔️|✔️|✔️|
+  |[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|✔️|✔️|✔️|
+  |[\<TypeParameter>](typeparameter-element-net-native.md)|✔️|✔️|✔️|
 
 - Serialization policy types determine which metadata is made available at run time for serialization and deserialization:
 
@@ -59,22 +59,22 @@ Runtime directives files recognize three categories of policy types: reflection,
 
   |Element|Serialize|DataContractSerializer|DataContractJsonSerializer|XmlSerializer|
   |-------------|---------------|----------------------------|--------------------------------|-------------------|
-  |[\<Application>](application-element-net-native.md)|✓|✓|✓|✓|
-  |[\<Assembly>](assembly-element-net-native.md)|✓|✓|✓|✓|
-  |[\<AttributeImplies>](attributeimplies-element-net-native.md)|✓|✓|✓|✓|
+  |[\<Application>](application-element-net-native.md)|✔️|✔️|✔️|✔️|
+  |[\<Assembly>](assembly-element-net-native.md)|✔️|✔️|✔️|✔️|
+  |[\<AttributeImplies>](attributeimplies-element-net-native.md)|✔️|✔️|✔️|✔️|
   |[\<Event>](event-element-net-native.md)|||||
-  |[\<Field>](field-element-net-native.md)|✓||||
-  |[\<GenericParameter>](genericparameter-element-net-native.md)|✓|✓|✓|✓|
-  |[\<ImpliesType>](impliestype-element-net-native.md)|✓|✓|✓|✓|
+  |[\<Field>](field-element-net-native.md)|✔️||||
+  |[\<GenericParameter>](genericparameter-element-net-native.md)|✔️|✔️|✔️|✔️|
+  |[\<ImpliesType>](impliestype-element-net-native.md)|✔️|✔️|✔️|✔️|
   |[\<Method>](method-element-net-native.md)|||||
   |[\<MethodInstantiation>](methodinstantiation-element-net-native.md)|||||
-  |[\<Namespace>](namespace-element-net-native.md)|✓|✓|✓|✓|
-  |[\<Parameter>](parameter-element-net-native.md)|✓|✓|✓|✓|
-  |[\<Property>](property-element-net-native.md)|✓||||
-  |[\<Subtypes>](subtypes-element-net-native.md)|✓|✓|✓|✓|
-  |[\<Type>](type-element-net-native.md)|✓|✓|✓|✓|
-  |[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|✓|✓|✓|✓|
-  |[\<TypeParameter>](typeparameter-element-net-native.md)|✓|✓|✓|✓|
+  |[\<Namespace>](namespace-element-net-native.md)|✔️|✔️|✔️|✔️|
+  |[\<Parameter>](parameter-element-net-native.md)|✔️|✔️|✔️|✔️|
+  |[\<Property>](property-element-net-native.md)|✔️||||
+  |[\<Subtypes>](subtypes-element-net-native.md)|✔️|✔️|✔️|✔️|
+  |[\<Type>](type-element-net-native.md)|✔️|✔️|✔️|✔️|
+  |[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|✔️|✔️|✔️|✔️|
+  |[\<TypeParameter>](typeparameter-element-net-native.md)|✔️|✔️|✔️|✔️|
 
 - Interop policy types determine which metadata is made available at run time to pass references types, value types, and function pointers to COM and the Windows Runtime:
 
@@ -88,22 +88,22 @@ Runtime directives files recognize three categories of policy types: reflection,
 
   |Element|MarshalObject|MarshalDelegate|MarshalStructure|
   |-------------|-------------------|---------------------|----------------------|
-  |[\<Application>](application-element-net-native.md)|✓|✓|✓|
-  |[\<Assembly>](assembly-element-net-native.md)|✓|✓|✓|
-  |[\<AttributeImplies>](attributeimplies-element-net-native.md)|✓|✓|✓|
+  |[\<Application>](application-element-net-native.md)|✔️|✔️|✔️|
+  |[\<Assembly>](assembly-element-net-native.md)|✔️|✔️|✔️|
+  |[\<AttributeImplies>](attributeimplies-element-net-native.md)|✔️|✔️|✔️|
   |[\<Event>](event-element-net-native.md)||||
   |[\<Field>](field-element-net-native.md)||||
-  |[\<GenericParameter>](genericparameter-element-net-native.md)|✓|✓|✓|
-  |[\<ImpliesType>](impliestype-element-net-native.md)|✓|✓|✓|
+  |[\<GenericParameter>](genericparameter-element-net-native.md)|✔️|✔️|✔️|
+  |[\<ImpliesType>](impliestype-element-net-native.md)|✔️|✔️|✔️|
   |[\<Method>](method-element-net-native.md)||||
   |[\<MethodInstantiation>](methodinstantiation-element-net-native.md)||||
-  |[\<Namespace>](namespace-element-net-native.md)|✓|✓|✓|
-  |[\<Parameter>](parameter-element-net-native.md)|✓|✓|✓|
+  |[\<Namespace>](namespace-element-net-native.md)|✔️|✔️|✔️|
+  |[\<Parameter>](parameter-element-net-native.md)|✔️|✔️|✔️|
   |[\<Property>](property-element-net-native.md)||||
-  |[\<Subtypes>](subtypes-element-net-native.md)|✓|✓|✓|
-  |[\<Type>](type-element-net-native.md)|✓|✓|✓|
-  |[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|✓|✓|✓|
-  |[\<TypeParameter>](typeparameter-element-net-native.md)|✓|✓|✓|
+  |[\<Subtypes>](subtypes-element-net-native.md)|✔️|✔️|✔️|
+  |[\<Type>](type-element-net-native.md)|✔️|✔️|✔️|
+  |[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|✔️|✔️|✔️|
+  |[\<TypeParameter>](typeparameter-element-net-native.md)|✔️|✔️|✔️|
 
 ## Policy settings
 
@@ -111,16 +111,16 @@ Each policy type can be set to one of the values listed in the following table. 
 
 |Policy setting|Description|`Assembly`, `Namespace`, `Type`, and `TypeInstantiation` elements|`Event`, `Field`, `Method`, `MethodInstantiation`, and `Property` elements|
 |--------------------|-----------------|-----------------------------------------------------------------------|--------------------------------------------------------------------------------|
-|`All`|Enables the policy for all types and members that the .NET Native tool chain doesn't remove.|✓||
-|`Auto`|Specifies that the default policy should be used for the policy type for that program element. This is identical to omitting a policy for that policy type. `Auto` is typically used to indicate that policy is inherited from a parent element.|✓|✓|
-|`Excluded`|Specifies that the policy is disabled for a particular program element. For example, the runtime directive:<br /><br /> `<Type Name="BusinessClasses.Person" Browse="Excluded" Dynamic="Excluded" />`<br /><br /> specifies that metadata for the `BusinessClasses.Person` class isn't available either to browse or to dynamically instantiate and modify `Person` objects.|✓|✓|
-|`Included`|Enables a policy if metadata for the parent type is available.||✓|
-|`Public`|Enables the policy for public types or members, unless the tool chain determines that the type or member is unnecessary and therefore removes it. This setting differs from `Required Public`, which ensures that metadata for public types and members is always available even if the tool chain determines that it's unnecessary.|✓||
-|`PublicAndInternal`|Enables the policy for public and internal types or members, unless the tool chain determines that the type or member is unnecessary and therefore removes it. This setting differs from `Required PublicAndInternal`, which ensures that metadata for public and internal types and members is always available even if the tool chain determines that it's unnecessary.|✓||
-|`Required`|Specifies that the policy for a member is enabled and that metadata will be available even if the member appears to be used.||✓|
-|`Required Public`|Enables the policy for public types or members, and ensures that metadata for public types and members is always available. This setting differs from `Public`, which makes metadata for public types and members available only if the tool chain determines that it's necessary.|✓||
-|`Required PublicAndInternal`|Enables the policy for public and internal types or members, and ensures that metadata for public and internal types and members is always available. This setting differs from `PublicAndInternal`, which makes metadata for public and internal types and members available only if the tool chain determines that it's necessary.|✓||
-|`Required All`|Requires the tool chain to keep all types and members whether or not they're used, and enables policy for them.|✓||
+|`All`|Enables the policy for all types and members that the .NET Native tool chain doesn't remove.|✔️||
+|`Auto`|Specifies that the default policy should be used for the policy type for that program element. This is identical to omitting a policy for that policy type. `Auto` is typically used to indicate that policy is inherited from a parent element.|✔️|✔️|
+|`Excluded`|Specifies that the policy is disabled for a particular program element. For example, the runtime directive:<br /><br /> `<Type Name="BusinessClasses.Person" Browse="Excluded" Dynamic="Excluded" />`<br /><br /> specifies that metadata for the `BusinessClasses.Person` class isn't available either to browse or to dynamically instantiate and modify `Person` objects.|✔️|✔️|
+|`Included`|Enables a policy if metadata for the parent type is available.||✔️|
+|`Public`|Enables the policy for public types or members, unless the tool chain determines that the type or member is unnecessary and therefore removes it. This setting differs from `Required Public`, which ensures that metadata for public types and members is always available even if the tool chain determines that it's unnecessary.|✔️||
+|`PublicAndInternal`|Enables the policy for public and internal types or members, unless the tool chain determines that the type or member is unnecessary and therefore removes it. This setting differs from `Required PublicAndInternal`, which ensures that metadata for public and internal types and members is always available even if the tool chain determines that it's unnecessary.|✔️||
+|`Required`|Specifies that the policy for a member is enabled and that metadata will be available even if the member appears to be used.||✔️|
+|`Required Public`|Enables the policy for public types or members, and ensures that metadata for public types and members is always available. This setting differs from `Public`, which makes metadata for public types and members available only if the tool chain determines that it's necessary.|✔️||
+|`Required PublicAndInternal`|Enables the policy for public and internal types or members, and ensures that metadata for public and internal types and members is always available. This setting differs from `PublicAndInternal`, which makes metadata for public and internal types and members available only if the tool chain determines that it's necessary.|✔️||
+|`Required All`|Requires the tool chain to keep all types and members whether or not they're used, and enables policy for them.|✔️||
 
 ## See also
 

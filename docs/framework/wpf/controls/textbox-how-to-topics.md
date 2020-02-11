@@ -37,5 +37,5 @@ This section provides examples that demonstrate how to accomplish common tasks u
   
 ## See also
 
-- [WPF Controls Gallery Sample](https://go.microsoft.com/fwlink/?LinkID=160053)
+- [WPF Controls Gallery Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Getting%20Started/ControlsAndLayout)
 - [TextBox Styles and Templates](textbox-styles-and-templates.md)

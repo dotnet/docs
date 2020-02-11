@@ -1,16 +1,15 @@
 ---
-title: Publish .NET Core apps with the CLI
-description: Learn to publish a .NET Core app with the .NET Core SDK command-line interface (CLI) tools.
+title: Publish apps with the .NET Core CLI
+description: Learn to publish a .NET Core app using the .NET Core CLI commands.
 author: thraka
 ms.author: adegeo
 ms.date: 12/12/2019
 dev_langs:
   - "csharp"
   - "vb"
-ms.custom: seodec18
 ---
 
-# Publish .NET Core apps with the CLI
+# Publish .NET Core apps with the .NET Core CLI
 
 This article demonstrates how you can publish your .NET Core application from the command line. .NET Core provides three ways to publish your applications. Framework-dependent deployment produces a cross-platform .dll file that uses the locally installed .NET Core runtime. Framework-dependent executable produces a platform-specific executable that uses the locally installed .NET Core runtime. Self-contained executable produces a platform-specific executable and includes a local copy of the .NET Core runtime.
 
@@ -132,7 +131,7 @@ Whenever you use the `-r` switch, the output folder path changes to: `./bin/<BUI
 If you use the [example app](#sample-app), run `dotnet publish -f netcoreapp2.2 -r win10-x64 --self-contained false`. This command creates the following executable: `./bin/Debug/netcoreapp2.2/win10-x64/publish/apptest1.exe`
 
 > [!NOTE]
-> You can reduce the total size of your deployment by enabling **globalization invariant mode**. This mode is useful for applications that are not globally aware and that can use the formatting conventions, casing conventions, and string comparison and sort order of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture). For more information about **globalization invariant mode** and how to enable it, see [.NET Core Globalization Invariant Mode](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md).
+> You can reduce the total size of your deployment by enabling **globalization invariant mode**. This mode is useful for applications that are not globally aware and that can use the formatting conventions, casing conventions, and string comparison and sort order of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture). For more information about **globalization invariant mode** and how to enable it, see [.NET Core Globalization Invariant Mode](https://github.com/dotnet/runtime/blob/master/docs/design/features/globalization-invariant-mode.md).
 
 ## Self-contained deployment
 
@@ -149,7 +148,7 @@ You must use the following switches with the `dotnet publish` command to publish
   This switch tells the .NET Core SDK to create an executable as an SCD.
 
 > [!NOTE]
-> You can reduce the total size of your deployment by enabling **globalization invariant mode**. This mode is useful for applications that are not globally aware and that can use the formatting conventions, casing conventions, and string comparison and sort order of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture). For more information about **globalization invariant mode** and how to enable it, see [.NET Core Globalization Invariant Mode](https://github.com/dotnet/corefx/blob/master/Documentation/architecture/globalization-invariant-mode.md).
+> You can reduce the total size of your deployment by enabling **globalization invariant mode**. This mode is useful for applications that are not globally aware and that can use the formatting conventions, casing conventions, and string comparison and sort order of the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture). For more information about **globalization invariant mode** and how to enable it, see [.NET Core Globalization Invariant Mode](https://github.com/dotnet/runtime/blob/master/docs/design/features/globalization-invariant-mode.md).
 
 ## See also
 

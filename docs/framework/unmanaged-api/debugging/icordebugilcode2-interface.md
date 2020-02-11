@@ -14,14 +14,14 @@ topic_type:
 # ICorDebugILCode2 Interface
 [Supported in the .NET Framework 4.5.2 and later versions]  
   
- Logically extends the [ICorDebugILCode](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode-interface.md) interface to provide methods that return the token for a function's local variable signature, and that map a profiler's instrumented intermediate language (IL) offsets to original method IL offsets.  
+ Logically extends the [ICorDebugILCode](icordebugilcode-interface.md) interface to provide methods that return the token for a function's local variable signature, and that map a profiler's instrumented intermediate language (IL) offsets to original method IL offsets.  
   
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetInstrumentedILMap Method](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode2-getinstrumentedilmap-method.md)|Returns a map from profiler instrumented IL offsets to original method IL offsets for this instance.|  
-|[GetLocalVarSigToken Method](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode2-getlocalvarsigtoken-method.md)|Gets the metadata token for the local variable signature for the function that is represented by this instance.|  
+|[GetInstrumentedILMap Method](icordebugilcode2-getinstrumentedilmap-method.md)|Returns a map from profiler instrumented IL offsets to original method IL offsets for this instance.|  
+|[GetLocalVarSigToken Method](icordebugilcode2-getlocalvarsigtoken-method.md)|Gets the metadata token for the local variable signature for the function that is represented by this instance.|  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -34,6 +34,6 @@ topic_type:
   
 ## See also
 
-- [ICorDebugILCode Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [ICorDebugILCode Interface](icordebugilcode-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

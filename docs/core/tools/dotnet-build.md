@@ -5,7 +5,7 @@ ms.date: 10/14/2019
 ---
 # dotnet build
 
-**This article applies to: ✓** .NET Core 1.x SDK and later versions
+**This article applies to:** ✔️ .NET Core 1.x SDK and later versions
 
 <!-- todo: uncomment when all CLI commands are reviewed
 [!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
@@ -19,7 +19,7 @@ ms.date: 10/14/2019
 
 ```dotnetcli
 dotnet build [<PROJECT>|<SOLUTION>] [-c|--configuration] [-f|--framework] [--force]
-    [--interactive] [--no-dependencies] [--no-incremental] [--no-restore] [--nologo] 
+    [--interactive] [--no-dependencies] [--no-incremental] [--no-restore] [--nologo]
     [-o|--output] [-r|--runtime] [-v|--verbosity] [--version-suffix]
 
 dotnet build [-h|--help]

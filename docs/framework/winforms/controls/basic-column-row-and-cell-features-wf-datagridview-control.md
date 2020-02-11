@@ -1,5 +1,5 @@
 ---
-title: "Basic Column, Row, and Cell Features in the Windows Forms DataGridView Control"
+title: Basic Column, Row, and Cell Features in DataGridView Control
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], basic features"

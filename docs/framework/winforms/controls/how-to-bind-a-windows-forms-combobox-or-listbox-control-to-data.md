@@ -1,5 +1,5 @@
 ---
-title: "How to: Bind a Windows Forms ComboBox or ListBox Control to Data"
+title: Bind ComboBox or ListBox Control to Data
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

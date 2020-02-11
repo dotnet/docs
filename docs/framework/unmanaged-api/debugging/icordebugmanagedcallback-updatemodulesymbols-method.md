@@ -57,4 +57,4 @@ HRESULT UpdateModuleSymbols (
   
 ## See also
 
-- [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)
+- [ICorDebugManagedCallback Interface](icordebugmanagedcallback-interface.md)

@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugGCReferenceEnum::Next Method
-Gets the specified number of [COR_GC_REFERENCE](../../../../docs/framework/unmanaged-api/debugging/cor-gc-reference-structure.md) instances that contain information about objects that will be garbage-collected.  
+Gets the specified number of [COR_GC_REFERENCE](cor-gc-reference-structure.md) instances that contain information about objects that will be garbage-collected.  
   
 ## Syntax  
   
@@ -33,10 +33,10 @@ HRESULT Next(
  [in] The number of roots to be retrieved.  
   
  roots  
- [out] An array of pointers, each of which points to a [COR_GC_REFERENCE](../../../../docs/framework/unmanaged-api/debugging/cor-gc-reference-structure.md) object that represents the root of an object to be garbage-collected.  
+ [out] An array of pointers, each of which points to a [COR_GC_REFERENCE](cor-gc-reference-structure.md) object that represents the root of an object to be garbage-collected.  
   
  pceltFetched  
- [out] A pointer to the number of [COR_GC_REFERENCE](../../../../docs/framework/unmanaged-api/debugging/cor-gc-reference-structure.md) objects actually returned in `roots`. This value may be `null` if `celt` is 1.  
+ [out] A pointer to the number of [COR_GC_REFERENCE](cor-gc-reference-structure.md) objects actually returned in `roots`. This value may be `null` if `celt` is 1.  
   
 ## Remarks  
   
@@ -51,5 +51,5 @@ HRESULT Next(
   
 ## See also
 
-- [ICorDebugGCReferenceEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icordebuggcreferenceenum-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugGCReferenceEnum Interface](icordebuggcreferenceenum-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

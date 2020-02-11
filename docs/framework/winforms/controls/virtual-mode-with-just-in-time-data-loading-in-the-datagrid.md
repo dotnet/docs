@@ -1,5 +1,5 @@
 ---
-title: "How to: Implement Virtual Mode with Just-In-Time Data Loading in the Windows Forms DataGridView Control"
+title: Implement Virtual Mode with Just-In-Time Data Loading in DataGridView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

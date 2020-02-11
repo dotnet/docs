@@ -53,4 +53,4 @@ HRESULT GetInMemorySymbolsLength(
   
 ## See also
 
-- [ICorProfilerInfo7 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo7-interface.md)
+- [ICorProfilerInfo7 Interface](icorprofilerinfo7-interface.md)

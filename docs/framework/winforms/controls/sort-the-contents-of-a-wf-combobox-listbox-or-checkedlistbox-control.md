@@ -1,5 +1,5 @@
 ---
-title: "How to: Sort the Contents of a Windows Forms ComboBox, ListBox, or CheckedListBox Control"
+title: Sort the Contents of ComboBox, ListBox, or CheckedListBox Control
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "CheckedListBox control [Windows Forms], sorting"

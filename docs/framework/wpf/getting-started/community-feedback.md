@@ -1,13 +1,11 @@
 ---
-title: "WPF community feedback"
+title: Community resources
 ms.date: "03/01/2018"
 helpviewer_keywords: 
   - "community resources [WPF]"
   - "forums [WPF]"
   - "bug descriptions [WPF]"
 ms.assetid: 468b060a-d54b-4900-a74a-9faccb554045
-author: mairaw
-ms.author: mairaw
 ---
 # WPF community feedback
 

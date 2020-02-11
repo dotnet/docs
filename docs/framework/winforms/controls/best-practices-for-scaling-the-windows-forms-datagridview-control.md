@@ -1,5 +1,5 @@
 ---
-title: "Best Practices for Scaling the Windows Forms DataGridView Control"
+title: Best Practices for Scaling DataGridView Control
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "DataGridView control [Windows Forms], row sharing"

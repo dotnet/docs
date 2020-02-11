@@ -35,7 +35,7 @@ HRESULT CreateVirtualUnwinder(
  [out] A pointer to the address of an ICorDebugVirtualUnwinder interface object.  
   
 ## Return Value  
- `S_OK` if successful. Any other `HRESULT` indicates failure. Any failing `HRESULT` received by mscordbi is considered fatal and causes [ICorDebug](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md) methods to return `CORDBG_E_DATA_TARGET_ERROR`.  
+ `S_OK` if successful. Any other `HRESULT` indicates failure. Any failing `HRESULT` received by mscordbi is considered fatal and causes [ICorDebug](icordebug-interface.md) methods to return `CORDBG_E_DATA_TARGET_ERROR`.  
   
 ## Remarks  
   
@@ -53,5 +53,5 @@ HRESULT CreateVirtualUnwinder(
   
 ## See also
 
-- [ICorDebugDataTarget2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget2-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugDataTarget2 Interface](icordebugdatatarget2-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

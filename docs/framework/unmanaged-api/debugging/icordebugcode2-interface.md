@@ -23,8 +23,8 @@ Provides methods that extend the capabilities of "ICorDebugCode".
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetCodeChunks Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcode2-getcodechunks-method.md)|Gets the chunks of code that this code object is composed of.|  
-|[GetCompilerFlags Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcode2-getcompilerflags-method.md)|Gets the flags that specify the conditions under which this code object was either just-in-time (JIT) compiled or generated using the native image generator (Ngen.exe).|  
+|[GetCodeChunks Method](icordebugcode2-getcodechunks-method.md)|Gets the chunks of code that this code object is composed of.|  
+|[GetCompilerFlags Method](icordebugcode2-getcompilerflags-method.md)|Gets the flags that specify the conditions under which this code object was either just-in-time (JIT) compiled or generated using the native image generator (Ngen.exe).|  
   
 ## Remarks  
   
@@ -42,5 +42,5 @@ Provides methods that extend the capabilities of "ICorDebugCode".
   
 ## See also
 
-- [ICorDebugCode3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugcode3-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugCode3 Interface](icordebugcode3-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

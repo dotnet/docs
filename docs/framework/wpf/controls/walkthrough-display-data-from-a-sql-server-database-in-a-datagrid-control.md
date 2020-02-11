@@ -39,7 +39,7 @@ You need the following components to complete this walkthrough:
 
 5. In the Choose Model Contents screen, select **EF Designer from database** and then click **Next**.
 
-6. In the Choose Your Data Connection screen, provide the connection to your AdventureWorksLT2008 database. For more information, see [Choose Your Data Connection Dialog Box](https://go.microsoft.com/fwlink/?LinkId=160190).
+6. In the Choose Your Data Connection screen, provide the connection to your AdventureWorksLT2008 database. For more information, see [Choose Your Data Connection Dialog Box](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399244(v=vs.100)).
 
     Make sure that the name is `AdventureWorksLT2008Entities` and that the **Save entity connection settings in App.Config as** check box is selected, and then click **Next**.
 
@@ -94,4 +94,3 @@ You need the following components to complete this walkthrough:
 ## See also
 
 - <xref:System.Windows.Controls.DataGrid>
-- [How Do I: Get Started with Entity Framework in WPF Applications?](https://go.microsoft.com/fwlink/?LinkId=159868)

@@ -82,4 +82,4 @@ Both plug-in serializers and linked serializers use the same exposed public meth
 - <xref:System.Windows.Xps.Packaging.XpsDocument>
 - [Documents in WPF](documents-in-wpf.md)
 - [Printing Overview](printing-overview.md)
-- [XML Paper Specification: Overview](https://go.microsoft.com/fwlink?LinkID=106246)
+- [XML Paper Specification](https://www.ecma-international.org/activities/XML%20Paper%20Specification/XPS%20Standard%20WD%201.6.pdf)

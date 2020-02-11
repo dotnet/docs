@@ -71,7 +71,7 @@ type S(count1: int, count2: int) =
     member x.Count2 = count2
 ```
 
-This disallows you from declaring a mutable member in the struct and emits metadata that allows F# and C# to treat it as readonly when consumed from an assembly. To learn more, see [ReadOnly structs](../language-reference/structures.md#readonly-structs)
+This disallows you from declaring a mutable member in the struct and emits metadata that allows F# and C# to treat it as readonly when consumed from an assembly. To learn more, see [ReadOnly structs](../language-reference/structures.md#readonly-structs).
 
 ## Void pointers
 

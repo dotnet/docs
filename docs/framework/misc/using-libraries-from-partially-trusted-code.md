@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "code access security, partially trusted code"
   - "APTCA"
 ms.assetid: dd66cd4c-b087-415f-9c3e-94e3a1835f74
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Using Libraries from Partially Trusted Code
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  

@@ -4,8 +4,6 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "security [.NET Framework], public read-only array fields"
 ms.assetid: 3df28dee-2a9f-40ff-9852-bfdbe59c27f3
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Security and Public Read-only Array Fields
 Never use read-only public array fields from managed libraries to define the boundary behavior or security of your applications because read-only public array fields can be modified.  

@@ -213,10 +213,10 @@ If you have many source files that would need to be excluded this way, you can d
 
 ### A brief aside on multi-pass compilers
 
-After removing the offending file from the Bean Trader sample, you can re-build and will get four errors. Didn't you have one before? Why did the number of errors go up? The C# compiler is a [multi-pass compiler](https://blogs.msdn.microsoft.com/ericlippert/2010/02/04/how-many-passes/). This means that it goes through each source file twice. First, the compiler just looks at metadata and declarations in each source file and identifies any declaration-level problems. Those are the errors you've fixed. Then it goes through the code again to build the C# source into IL; those are the second set of errors that you're seeing now.
+After removing the offending file from the Bean Trader sample, you can re-build and will get four errors. Didn't you have one before? Why did the number of errors go up? The C# compiler is a [multi-pass compiler](https://docs.microsoft.com/archive/blogs/ericlippert/how-many-passes). This means that it goes through each source file twice. First, the compiler just looks at metadata and declarations in each source file and identifies any declaration-level problems. Those are the errors you've fixed. Then it goes through the code again to build the C# source into IL; those are the second set of errors that you're seeing now.
 
 > [!NOTE]
-> The C# compiler does [more than just two passes](https://blogs.msdn.microsoft.com/ericlippert/2010/02/04/how-many-passes/), but the end result is that compiler errors for large code changes like this tend to come in two waves.
+> The C# compiler does [more than just two passes](https://docs.microsoft.com/archive/blogs/ericlippert/how-many-passes), but the end result is that compiler errors for large code changes like this tend to come in two waves.
 
 ### Third-party dependency fixes (Castle.Windsor)
 
@@ -241,7 +241,7 @@ In fact, any WCF client usage that depends on the `<system.serviceModel>` app.co
 
 There are two ways to automatically generate .NET Standard-compatible WCF clients:
 
-- The `dotnet-svcutil` tool is a .NET Core CLI tool that generates WCF clients in a way that is similar to how Svcutil worked previously.
+- The `dotnet-svcutil` tool is a .NET tool that generates WCF clients in a way that is similar to how Svcutil worked previously.
 - Visual Studio can generate WCF clients using the [WCF Web Service Reference](../../core/additional-tools/wcf-web-service-reference-guide.md) option of its Connected Services feature.
 
 Either approach works well. Alternatively, of course, you could write the WCF client code yourself. For this sample, I chose to use the Visual Studio Connected Service feature. To do that, right-click on the *BeanTraderClient.Core* project in Visual Studio's solution explorer and select **Add** > **Connected Service**. Next, choose the WCF Web Service Reference Provider. This will bring up a dialog where you can specify the address of the backend Bean Trader web service (`localhost:8080` if you are running the server locally) and the namespace that generated types should use (**BeanTrader.Service**, for example).
@@ -316,4 +316,3 @@ After removing the `BeginInvoke` usage, the Bean Trader app runs successfully on
 ![Bean Trader running on .NET Core](./media/convert-project-from-net-framework/running-on-core.png)
 
 All apps are different, so the specific steps needed to migrate your own apps to .NET Core will vary. But hopefully the Bean Trader sample demonstrates the general workflow and the types of issues that can be expected. And, despite this article's length, the actual changes needed in the Bean Trader sample to make it work on .NET Core were fairly limited. Many apps migrate to .NET Core in this same way; with limited or even no code changes needed.
- 

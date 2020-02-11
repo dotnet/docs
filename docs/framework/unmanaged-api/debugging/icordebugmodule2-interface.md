@@ -23,11 +23,11 @@ Serves as a logical extension to the ICorDebugModule interface.
   
 |Method|Description|  
 |------------|-----------------|  
-|[ApplyChanges Method](../../../../docs/framework/unmanaged-api/debugging/icordebugmodule2-applychanges-method.md)|Applies the changes in the metadata and the changes in the Microsoft intermediate language (MSIL) code to the running process.|  
-|[GetJITCompilerFlags Method](../../../../docs/framework/unmanaged-api/debugging/icordebugmodule2-getjitcompilerflags-method.md)|Gets the flags that control the just-in-time (JIT) compilation for this `ICorDebugModule2`.|  
-|[ResolveAssembly Method](../../../../docs/framework/unmanaged-api/debugging/icordebugmodule2-resolveassembly-method.md)|Resolves the assembly referenced by the specified metadata token.|  
-|[SetJITCompilerFlags Method](../../../../docs/framework/unmanaged-api/debugging/icordebugmodule2-setjitcompilerflags-method.md)|Sets the flags that control the JIT compilation for this `ICorDebugModule2`.|  
-|[SetJMCStatus Method](../../../../docs/framework/unmanaged-api/debugging/icordebugmodule2-setjmcstatus-method.md)|Sets the Just My Code (JMC) status of all methods of all the classes in this `ICorDebugModule2` to the specified value, except those in the `pTokens` array, which it sets to the opposite value.|  
+|[ApplyChanges Method](icordebugmodule2-applychanges-method.md)|Applies the changes in the metadata and the changes in the Microsoft intermediate language (MSIL) code to the running process.|  
+|[GetJITCompilerFlags Method](icordebugmodule2-getjitcompilerflags-method.md)|Gets the flags that control the just-in-time (JIT) compilation for this `ICorDebugModule2`.|  
+|[ResolveAssembly Method](icordebugmodule2-resolveassembly-method.md)|Resolves the assembly referenced by the specified metadata token.|  
+|[SetJITCompilerFlags Method](icordebugmodule2-setjitcompilerflags-method.md)|Sets the flags that control the JIT compilation for this `ICorDebugModule2`.|  
+|[SetJMCStatus Method](icordebugmodule2-setjmcstatus-method.md)|Sets the Just My Code (JMC) status of all methods of all the classes in this `ICorDebugModule2` to the specified value, except those in the `pTokens` array, which it sets to the opposite value.|  
   
 ## Remarks  
   
@@ -45,4 +45,4 @@ Serves as a logical extension to the ICorDebugModule interface.
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

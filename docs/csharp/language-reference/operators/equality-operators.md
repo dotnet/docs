@@ -26,7 +26,7 @@ The equality operator `==` returns `true` if its operands are equal, `false` oth
 
 ### Value types equality
 
-Operands of the [built-in value types](../keywords/value-types-table.md) are equal if their values are equal:
+Operands of the [built-in value types](../builtin-types/value-types.md#built-in-value-types) are equal if their values are equal:
 
 [!code-csharp-interactive[value types equality](~/samples/csharp/language-reference/operators/EqualityOperators.cs#ValueTypesEquality)]
 
@@ -69,7 +69,7 @@ Delegates that are produced from evaluation of semantically identical [lambda ex
 
 ## Inequality operator !=
 
-The inequality operator `!=` returns `true` if its operands are not equal, `false` otherwise. For the operands of the [built-in types](../keywords/built-in-types-table.md), the expression `x != y` produces the same result as the expression `!(x == y)`. For more information about type equality, see the [Equality operator](#equality-operator-) section.
+The inequality operator `!=` returns `true` if its operands are not equal, `false` otherwise. For the operands of the [built-in types](../builtin-types/built-in-types.md), the expression `x != y` produces the same result as the expression `!(x == y)`. For more information about type equality, see the [Equality operator](#equality-operator-) section.
 
 The following example demonstrates the usage of the `!=` operator:
 

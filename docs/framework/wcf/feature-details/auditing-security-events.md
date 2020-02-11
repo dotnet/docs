@@ -26,7 +26,7 @@ Applications created with Windows Communication Foundation (WCF) can log securit
   
  To write to the Security log requires the `SeAuditPrivilege`. By default, only Local System and Network Service accounts have this privilege. To manage the Security log functions `read` and `delete` requires the `SeSecurityPrivilege`. By default, only administrators have this privilege.  
   
- In contrast, authenticated users can read and write to the Application log. [!INCLUDE[wxp](../../../../includes/wxp-md.md)] writes audit events to the Application log by default. The log can also contain personal information that is visible to all authenticated users.  
+ In contrast, authenticated users can read and write to the Application log. Windows XP writes audit events to the Application log by default. The log can also contain personal information that is visible to all authenticated users.  
   
 ## Suppressing Audit Failures  
  Another option during auditing is whether to suppress any audit failure. By default, an audit failure does not affect an application. If required, however, you can set the option to `false`, which causes an exception to be thrown.  
@@ -70,9 +70,9 @@ Applications created with Windows Communication Foundation (WCF) can log securit
  If auditing is enabled and an `auditLogLocation` is not specified, the default log name is "Security" log for the platform supporting writing to the Security log; otherwise, it is "Application" log. Only the Windows Server 2003 and Windows Vista operating systems support writing to the Security log. For more information, see the "Operating System" section later in this topic.  
   
 ## Security Considerations  
- If a malicious user knows that auditing is enabled, that attacker can send invalid messages that cause audit entries to be written. If the audit log is filled in this manner, the auditing system fails. To mitigate this, set the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure%2A> property to `true` and use the properties of the Event Viewer to control the auditing behavior. For more information, see the Microsoft Support article on viewing and managing event logs by using the Event Viewer in Windows XP available at [How to view and manage event logs in Event Viewer in Windows XP](https://go.microsoft.com/fwlink/?LinkId=89150).  
+ If a malicious user knows that auditing is enabled, that attacker can send invalid messages that cause audit entries to be written. If the audit log is filled in this manner, the auditing system fails. To mitigate this, set the <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.SuppressAuditFailure%2A> property to `true` and use the properties of the Event Viewer to control the auditing behavior.  
   
- Audit events that are written to the Application Log on [!INCLUDE[wxp](../../../../includes/wxp-md.md)] are visible to any authenticated user.  
+ Audit events that are written to the Application Log on Windows XP are visible to any authenticated user.  
   
 ## Choosing Between Application and Security Event Logs  
  The following tables provide information to help you choose whether to log into the Application or the Security event log.  
@@ -81,7 +81,7 @@ Applications created with Windows Communication Foundation (WCF) can log securit
   
 |System|Application log|Security log|  
 |------------|---------------------|------------------|  
-|[!INCLUDE[wxpsp2](../../../../includes/wxpsp2-md.md)] or later|Supported|Not supported|  
+|Windows XP SP2 or later|Supported|Not supported|  
 |Windows Server 2003 SP1 and Windows Vista|Supported|Thread context must possess `SeAuditPrivilege`|  
   
 #### Other Factors  
@@ -101,4 +101,4 @@ Applications created with Windows Communication Foundation (WCF) can log securit
 - [How to: Audit Security Events](../../../../docs/framework/wcf/feature-details/how-to-audit-wcf-security-events.md)
 - [\<serviceSecurityAudit>](../../../../docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md)
 - [\<behaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md)
-- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+- [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))

@@ -18,7 +18,7 @@ An app using a 2.2-based library fails compilation. An error containing a variat
 The type 'JsonResult' exists in both 'Microsoft.AspNetCore.Mvc.Core, Version=3.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60' and 'Microsoft.AspNetCore.Mvc.Formatters.Json, Version=2.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'
 ```
 
-For an example of such an issue, see [aspnet/AspNetCore#7220](https://github.com/aspnet/AspNetCore/issues/7220).
+For an example of such an issue, see [dotnet/aspnetcore#7220](https://github.com/dotnet/aspnetcore/issues/7220).
 
 #### Reason for change
 

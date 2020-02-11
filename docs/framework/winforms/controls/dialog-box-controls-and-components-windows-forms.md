@@ -1,5 +1,5 @@
 ---
-title: "Dialog-Box Controls and Components (Windows Forms)"
+title: "Dialog-Box Controls and Components"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "CommonDialog control"

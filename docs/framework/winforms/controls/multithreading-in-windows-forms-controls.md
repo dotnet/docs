@@ -1,5 +1,5 @@
 ---
-title: "Multithreading in Windows Forms Controls"
+title: Multithreading in Controls
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "BackgroundWorker component"

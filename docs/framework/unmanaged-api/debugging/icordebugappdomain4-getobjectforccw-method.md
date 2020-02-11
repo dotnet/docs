@@ -35,5 +35,5 @@ HRESULT GetObjectForCCW(
   
 ## See also
 
-- [ICorDebugAppDomain4 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomain4-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugAppDomain4 Interface](icordebugappdomain4-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

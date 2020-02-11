@@ -29,7 +29,7 @@ The service describes the operations it performs in a service contract that it e
 
 The client contains a definition of the service contract and a proxy class for accessing the service. The proxy code is generated from the service metadata using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md).
 
-On Windows Vista, the service is hosted in the Windows Activation Service (WAS). On [!INCLUDE[wxp](../../../../includes/wxp-md.md)] and Windows Server 2003, it is hosted by Internet Information Services (IIS) and ASP.NET. Hosting a service in IIS or WAS allows the service to be activated automatically when it is accessed for the first time.
+On Windows Vista, the service is hosted in the Windows Activation Service (WAS). On Windows XP and Windows Server 2003, it is hosted by Internet Information Services (IIS) and ASP.NET. Hosting a service in IIS or WAS allows the service to be activated automatically when it is accessed for the first time.
 
 > [!NOTE]
 > If you would prefer to get started with a sample that hosts the service in a console application instead of IIS, see the [Self-Host](../../../../docs/framework/wcf/samples/self-host.md) sample.

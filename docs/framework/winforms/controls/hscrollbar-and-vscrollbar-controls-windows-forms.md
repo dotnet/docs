@@ -1,5 +1,5 @@
 ---
-title: "HScrollBar and VScrollBar Controls (Windows Forms)"
+title: "HScrollBar and VScrollBar Controls"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "scroll bars"

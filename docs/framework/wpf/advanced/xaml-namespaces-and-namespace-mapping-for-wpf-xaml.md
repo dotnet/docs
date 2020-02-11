@@ -1,5 +1,5 @@
 ---
-title: "XAML Namespaces and Namespace Mapping for WPF XAML"
+title: XAML Namespaces and Namespace Mapping
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -131,5 +131,5 @@ End Namespace
   
 ## See also
 
-- [Understanding XML Namespaces](https://go.microsoft.com/fwlink/?LinkId=98069)
+- [Understanding XML Namespaces](https://docs.microsoft.com/previous-versions/aa468565(v=msdn.10))
 - [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)

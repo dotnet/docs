@@ -5,7 +5,7 @@ ms.date: 12/20/2019
 dev_langs:
   - "csharp"
   - "vb"
-ms.custom: "vs-dotnet, seodec18"
+ms.custom: "vs-dotnet"
 ---
 # Consume a .NET Standard library in Visual Studio
 
@@ -80,4 +80,4 @@ You can make your class library widely available by publishing it as a NuGet pac
    > [!TIP]
    > If the directory that contains *dotnet.exe* is not in your PATH, you can find its location by entering `where dotnet.exe` in the console window.
 
-For more information on creating NuGet packages, see [How to Create a NuGet Package with Cross Platform Tools](../deploying/creating-nuget-packages.md).
+For more information on creating NuGet packages, see [How to create a NuGet package with the .NET Core CLI](../deploying/creating-nuget-packages.md).

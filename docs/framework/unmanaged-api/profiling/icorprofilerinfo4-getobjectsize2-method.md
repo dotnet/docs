@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorProfilerInfo4::GetObjectSize2 Method
-Returns the size of a specified object. Replaces the [ICorProfilerInfo::GetObjectSize](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-getobjectsize-method.md) method by reporting sizes of objects that are larger than what can be expressed in a `ULONG`.  
+Returns the size of a specified object. Replaces the [ICorProfilerInfo::GetObjectSize](icorprofilerinfo-getobjectsize-method.md) method by reporting sizes of objects that are larger than what can be expressed in a `ULONG`.  
   
 ## Syntax  
   
@@ -48,4 +48,4 @@ HRESULT GetObjectSize2(
   
 ## See also
 
-- [ICorProfilerInfo4 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-interface.md)
+- [ICorProfilerInfo4 Interface](icorprofilerinfo4-interface.md)

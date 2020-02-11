@@ -1,12 +1,12 @@
 ---
 title: 'Tutorial: Categorize support issues - multiclass classification'
 description: Discover how to use ML.NET in a multiclass classification scenario to classify GitHub issues to assign them to a given area.
-ms.date: 11/15/2019
+ms.date: 01/30/2020
 ms.topic: tutorial
 ms.custom: mvc, title-hack-0516
 #Customer intent: As a developer, I want to use ML.NET to apply a multiclass classification learning algorithm so that I can understand how to categorize support issues to assign them to a given area.
 ---
-# Tutorial: Categorize support issues using multiclass classification with ML .NET
+# Tutorial: Categorize support issues using multiclass classification with ML.NET
 
 This sample tutorial illustrates using ML.NET to create a GitHub issue classifier to train a model that classifies and predicts the Area label for a GitHub issue via a .NET Core console application using C# in Visual Studio.
 
@@ -335,7 +335,7 @@ As you did previously, create a `PredictionEngine` instance with the following c
 
 [!code-csharp[CreatePredictionEngine](~/samples/machine-learning/tutorials/GitHubIssueClassification/Program.cs#CreatePredictionEngine)]
 
-The [PredictionEngine](xref:Microsoft.ML.PredictionEngine%602) is a convenience API, which allows you to perform a prediction on a single instance of data. [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) is not thread-safe. It's acceptable to use in single-threaded or prototype environments. For improved performance and thread safety in production environments, use the `PredictionEnginePool` service, which creates an [`ObjectPool`](xref:Microsoft.Extensions.ObjectPool.ObjectPool%601) of [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) objects for use throughout your application. See this guide on how to [use `PredictionEnginePool` in an ASP.NET Core Web API](../how-to-guides/serve-model-web-api-ml-net.md#register-predictionenginepool-for-use-in-the-application)
+The [PredictionEngine](xref:Microsoft.ML.PredictionEngine%602) is a convenience API, which allows you to perform a prediction on a single instance of data. [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) is not thread-safe. It's acceptable to use in single-threaded or prototype environments. For improved performance and thread safety in production environments, use the `PredictionEnginePool` service, which creates an [`ObjectPool`](xref:Microsoft.Extensions.ObjectPool.ObjectPool%601) of [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) objects for use throughout your application. See this guide on how to [use `PredictionEnginePool` in an ASP.NET Core Web API](../how-to-guides/serve-model-web-api-ml-net.md#register-predictionenginepool-for-use-in-the-application).
 
 > [!NOTE]
 > `PredictionEnginePool` service extension is currently in preview.

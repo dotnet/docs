@@ -1,5 +1,5 @@
 ---
-title: "How to: Set the Sizing Modes of the Windows Forms DataGridView Control"
+title: Set the Sizing Modes of DataGridView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

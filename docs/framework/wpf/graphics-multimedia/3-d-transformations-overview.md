@@ -101,4 +101,4 @@ Rotation Example
 
 - [3-D Graphics Overview](3-d-graphics-overview.md)
 - [Transforms Overview](transforms-overview.md)
-- [2-D Transforms Sample](https://go.microsoft.com/fwlink/?LinkID=158252)
+- [2-D Transforms Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/2DTransforms)

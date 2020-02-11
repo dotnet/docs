@@ -1,6 +1,6 @@
 ---
 title: Application publishing
-description: Learn about the ways to publish a .NET Core application. You can publish an app as self-contained  or as runtime-dependent. Each mode affects how a user of your app, runs your app.
+description: Learn about the ways to publish a .NET Core application. You can publish an app as self-contained or as runtime-dependent. Each mode affects how a user of your app, runs your app.
 ms.date: 01/31/2020
 ---
 # .NET Core application publishing overview

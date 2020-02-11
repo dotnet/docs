@@ -19,7 +19,7 @@ This example shows how to animate the <xref:System.Windows.Media.ArcSegment.Size
  [!code-csharp[BasicAnimations_snip#SizeAnimationWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/BasicAnimations_snip/CSharp/SizeAnimationExample.cs#sizeanimationwholepage)]
  [!code-vb[BasicAnimations_snip#SizeAnimationWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BasicAnimations_snip/VisualBasic/SizeAnimationExample.vb#sizeanimationwholepage)]  
   
- For additional geometry and animation samples, see the [Geometries Sample](https://go.microsoft.com/fwlink/?LinkID=159989).  
+ For additional geometry and animation samples, see the [Geometries Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/Geometery).  
   
 ## See also
 

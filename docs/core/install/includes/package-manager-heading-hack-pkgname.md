@@ -20,7 +20,7 @@ The version of the SDK or runtime to install. This article will always give the 
   - 3.0
   - 2.1
 
-  It is possible that the SDK/runtime that you're trying to download is not available for your Linux distribution. For a list of supported distributions, see [.NET Core dependencies and requirements](../dependencies.md?pivots=os-linux).
+  It's possible the SDK/runtime you're trying to download is not available for your Linux distribution. For a list of supported distributions, see [.NET Core dependencies and requirements](../dependencies.md?pivots=os-linux).
 
 ### Examples
 

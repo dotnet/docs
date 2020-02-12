@@ -27,6 +27,7 @@ The tables that follow summarize .NET Framework version history and correlate ea
 - The check mark icon ✔️ denotes OS versions on which .NET Framework is installed but must be enabled [in Control Panel](../install/dotnet-35-windows-10.md) (for Windows) or through the Server Manager (for Windows Server).
 - The plus sign icon ➕ denotes OS versions on which .NET Framework doesn't come installed but can be installed.
 
+| | |
 | - | - |
 | [.NET Framework 4.8](#net-framework-48) | [.NET Framework 4.7.2](#net-framework-472) | [.NET Framework 4.7.1](#net-framework-471) | [.NET Framework 4.7](#net-framework-47) |
 | [.NET Framework 4.6.2](#net-framework-462) | [.NET Framework 4.6.1](#net-framework-461) | [.NET Framework 4.6](#net-framework-46) | [.NET Framework 4.5.2](#net-framework-452) |

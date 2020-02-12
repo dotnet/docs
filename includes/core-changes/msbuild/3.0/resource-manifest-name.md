@@ -48,10 +48,7 @@ Starting in .NET Core 3.0, when a *.resx* file is colocated with a source file o
 
   **Generated resource manifest file name**: *Namespace.Classname.resources* or *Namespace.Classname.fr-FR.resources* (where `Namespace.Classname` is the name of the first class in *MyTypes.cs*).
 
-- If the previous rules don't apply, `EmbeddedResourceUseDependentUponConvention` is `true`, and there's a source file colocated with a *.resx* file that has the same base file name, the *.resx* file is made dependent upon the matching source file, and the generated name is the same as in the previous rule. This is the "default settings" rule.
-
-  > [!NOTE]
-  > By default, projects that target .NET Core have `EmbeddedResourceUseDependentUponConvention` set to `true`.
+- If the previous rules don't apply, `EmbeddedResourceUseDependentUponConvention` is `true` (the default for .NET Core), and there's a source file colocated with a *.resx* file that has the same base file name, the *.resx* file is made dependent upon the matching source file, and the generated name is the same as in the previous rule. This is the "default settings" rule for .NET Core projects.
   
   Examples:
   
@@ -74,7 +71,7 @@ If you're unsatisfied with the generated manifest names, you can:
    ```
 
    > [!NOTE]
-   > The naming rules regarding presence of the `LogicalName` or `ManifestResourceName` attributes will still be applied.
+   > If the `LogicalName` or `ManifestResourceName` attributes are present, their values will still be used for the generated file name.
 
 #### Category
 

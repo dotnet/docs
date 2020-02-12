@@ -200,7 +200,7 @@ One hot encoding takes a finite set of values and maps them onto integers whose 
 |---------|---------------------|
 |98052|00...01|
 |98100|00...10|
-|||
+|...|...|
 |98109|10...00|
 
 The transform to convert categorical data to one-hot encoded numbers is [`OneHotEncoding`](xref:Microsoft.ML.CategoricalCatalog.OneHotEncoding%2A).

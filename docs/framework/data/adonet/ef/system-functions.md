@@ -18,11 +18,7 @@ The .NET Framework Data Provider for SQL Server (SqlClient) provides the followi
 |`NEWID()`|Creates a unique value of type Guid.<br /><br /> **Return Value**<br /><br /> A `Guid`.<br /><br /> **Example**<br /><br /> `SqlServer.NEWID()`|  
 |`USER_NAME(` `id` `)`|Returns a database user name from a specified identification number.<br /><br /> **Arguments**<br /><br /> `expression`: An `Int32` identification number associated with a database user.<br /><br /> **Return Value**<br /><br /> A Unicode `String`.<br /><br /> **Example**<br /><br /> `SqlServer.USER_NAME(0)`|  
   
- For more information about the string functions that SqlClient supports, see the documentation for the SQL Server version that you specified in the SqlClient provider manifest:  
-  
-|SQL Server 2000|SQL Server 2005|SQL Server 2008|  
-|---------------------|---------------------|---------------------|  
-|[System Functions Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=115918)|[System Functions Transact-SQL)](https://docs.microsoft.com/previous-versions/sql/sql-server-2005/ms187786(v=sql.90))|[System Functions (Transact-SQL)](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms187786(v=sql.100))|  
+ For more information about the `String` functions that SqlClient supports, see [String Functions (Transact-SQL)](/sql/t-sql/functions/string-functions-transact-sql).
   
 ## See also
 

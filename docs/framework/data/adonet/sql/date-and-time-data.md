@@ -224,14 +224,14 @@ command.Parameters.AddWithValue( _
   
  Time values that are less than zero or greater than or equal to 24 hours will throw an <xref:System.ArgumentException>.  
   
-## Resources in SQL Server 2008 Books Online  
- For more information about working with date and time values in SQL Server 2008, see the following resources in SQL Server 2008 Books Online.  
+## Resources in SQL Server Books Online  
+ For more information about working with date and time values in SQL Server, see the following resources in SQL Server Books Online.  
   
 |Topic|Description|  
 |-----------|-----------------|  
 |[Date and Time Data Types and Functions (Transact-SQL)](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms186724(v=sql.100))|Provides an overview of all Transact-SQL date and time data types and functions.|  
 |[Using Date and Time Data](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms180878(v=sql.100))|Provides information about the date and time data types and functions, and examples of using them.|  
-|[Data Types (Transact-SQL)](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms187752(v=sql.100))|Describes system data types in SQL Server 2008.|  
+|[Data Types (Transact-SQL)](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms187752(v=sql.100))|Describes system data types in SQL Server.|  
   
 ## See also
 

@@ -8,7 +8,7 @@ Starting in .NET Core 3.0, the generated resource manifest file name has changed
 
 #### Change description
 
-Prior to .NET Core 3.0, when [DependentUpon](/visualstudio/msbuild/common-msbuild-project-items#compile) metadata was set for a resource file in the MSBuild project file, the generated manifest name was *Namespace.Classname.resources*. When [DependentUpon](/visualstudio/msbuild/common-msbuild-project-items#compile) was not set, the generated manifest name was Namespace.Classname.FolderPathRelativeToRoot.Culture.resources.
+Prior to .NET Core 3.0, when [DependentUpon](/visualstudio/msbuild/common-msbuild-project-items#compile) metadata was set for a resource file in the MSBuild project file, the generated manifest name was *Namespace.Classname.resources*. When [DependentUpon](/visualstudio/msbuild/common-msbuild-project-items#compile) was not set, the generated manifest name was *Namespace.Classname.FolderPathRelativeToRoot.Culture.resources*.
 
 Starting in .NET Core 3.0, when a *.resx* file is associated with a type, for example, in Windows Forms apps, it's assumed that the resource is named *Namespace.Classname\[.Culture].resources*. From this convention, the rules around how the root namespace and folders impact the chosen name mirror how Visual Studio picks a namespace and name for a new class: *RootNamespace.FoldersSeparatedByDots.FileName.(resx|resources|cs)*.
 
@@ -53,7 +53,7 @@ If you don't use the default settings, there are more considerations as to how t
 
 - If none of the previous rules apply, and `EmbeddedResourceUseDependentUponConvention` is `true` (which is the default value for projects that target .NET Core 3.0 and later), and there's a source file and a *.resx* file with the same base file name in the same folder, the *.resx* file is made dependent upon the matching source file, and the generated name is the same as in the previous rule.
 
-  Example:
+  Examples:
   
   - Files *MyTypes.cs* and *MyTypes.resx* exist in the same folder.
   

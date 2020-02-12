@@ -30,6 +30,10 @@ Currently, there isn't a Global Tool search feature in the .NET Core CLI. The fo
 * You may find tool recommendations in blog posts or in the [natemcmaster/dotnet-tools](https://github.com/natemcmaster/dotnet-tools) GitHub repository.
 * You can see the source code for the Global Tools created by the ASP.NET team at the [dotnet/aspnetcore](https://github.com/dotnet/aspnetcore/tree/master/src/Tools) GitHub repository.
 * You can learn about diagnostic tools at [.NET Core dotnet diagnostic Global Tools](../diagnostics/index.md#net-core-dotnet-diagnostic-global-tools).
+* Use [ToolGet](https://www.toolget.net/) to search for .NET tools.
+
+> [!NOTE]
+> Starting with .NET Core 5 SDK, .NET Core CLI will include a `dotnet tool search` command. For more information about the new command, see [Dotnet Tools Search Early Preview Documentation](https://github.com/dotnet/sdk/issues/10620). 
 
 ## Check the author and statistics
 

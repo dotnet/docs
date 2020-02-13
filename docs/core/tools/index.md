@@ -2,7 +2,7 @@
 title: .NET Core CLI
 titleSuffix: ""
 description: An overview of the .NET Core CLI and its features.
-ms.date: 08/14/2017
+ms.date: 02/13/2020
 ---
 # .NET Core CLI overview
 
@@ -50,6 +50,15 @@ The following commands are installed by default:
 - [msbuild](dotnet-msbuild.md)
 - [dotnet install script](dotnet-install-script.md)
 
+**Commands for managing tools**
+
+- [tool install](dotnet-tool-install.md)
+- [tool list](dotnet-tool-list.md)
+- [tool update](dotnet-tool-update.md)
+- [tool uninstall](dotnet-tool-uninstall.md)
+
+Tools are console applications that are installed from NuGet packages and are invoked from the command prompt. You can write tools yourself or install tools written by third parties. Tools are also known as global tools, tool-path tools, and local tools. For more information, see [.NET Core tools overview](global-tools.md).
+
 # [.NET Core 1.x](#tab/netcore1x)
 
 **Basic commands**
@@ -83,8 +92,6 @@ The following commands are installed by default:
 - [dotnet install script](dotnet-install-script.md)
 
 ---
-
-The CLI adopts an extensibility model that allows you to specify additional tools for your projects. For more information, see the [.NET Core CLI extensibility model](extensibility.md) topic.
 
 ## Command structure
 
@@ -135,11 +142,7 @@ The arguments you pass on the command line are the arguments to the command invo
 
 The options you pass on the command line are the options to the command invoked. For example when you execute `dotnet publish --output /build_output`, the `--output` option and its value are passed to the `publish` command.
 
-## Migration from project.json
-
-If you used Preview 2 tooling to produce *project.json*-based projects, consult the [dotnet migrate](dotnet-migrate.md) topic for information on migrating your project to MSBuild/*.csproj* for use with release tooling. For .NET Core projects created prior to the release of Preview 2 tooling, either manually update the project following the guidance in [Migrating from DNX to .NET Core CLI (project.json)](../migration/from-dnx.md) and then use `dotnet migrate` or directly upgrade your projects.
-
 ## See also
 
 - [dotnet/sdk GitHub repository](https://github.com/dotnet/sdk/)
-- [.NET Core installation guide](https://aka.ms/dotnetcoregs)
+- [.NET Core installation guide](../install/sdk.md)

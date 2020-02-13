@@ -25,7 +25,7 @@ The following instructions demonstrate the recommended way to install, run, and 
 
 # [Windows](#tab/windows)
 
-### Install the global tool
+### Install the tool
 
 If the folder `%ProgramFiles%\dotnet-tools` already exists, do the following to check whether the "Users" group has permission to write or modify that directory:
 

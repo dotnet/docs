@@ -1,6 +1,6 @@
 ---
 title: dotnet tool uninstall command
-description: The dotnet tool uninstall command uninstalls the specified .NET Core Global Tool from your machine.
+description: The dotnet tool uninstall command uninstalls the specified .NET Core tool from your machine.
 ms.date: 05/29/2018
 ---
 # dotnet tool uninstall

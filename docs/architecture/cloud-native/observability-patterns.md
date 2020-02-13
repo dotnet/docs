@@ -45,7 +45,7 @@ Every programming language has tooling that permits writing logs, and typically 
 
 These different log levels provide granularity in logging. When the application is functioning properly in production, it may be configured to only log important messages. When the application is misbehaving, then the log level can be increased so more verbose logs are gathered. This balances performance against ease of debugging.
 
-The high performance of logging tools and the tunability of verbosity should encourage developers to log frequently. Many favor a pattern of logging the entry and exit of each method. This approach may sound like overkill, but it's infrequent that developers will wish for less logging. In fact, it's not uncommon to perform deployments for the sole purpose of adding logging around a problematic method. Err on the side of too much logging and not on too little. Note that some tools can be used to automatically provide this kind of logging.
+The high performance of logging tools and the tunability of verbosity should encourage developers to log frequently. Many favor a pattern of logging the entry and exit of each method. This approach may sound like overkill, but it's infrequent that developers will wish for less logging. In fact, it's not uncommon to perform deployments for the sole purpose of adding logging around a problematic method. Err on the side of too much logging and not on too little. Some tools can be used to automatically provide this kind of logging.
 
 Because of the challenges associated with using file-based logs in cloud-native apps, centralized logs are preferred. Logs are collected by the applications and shipped to a central logging application which indexes and stores the logs. This class of system can ingest tens of gigabytes of logs every day.
 
@@ -84,7 +84,7 @@ Generally, alerts are layered on top of monitoring such that certain conditions 
 
 - One of your application's services is not responding after 1 minute of downtime.
 - Your application is returning unsuccessful HTTP responses to more than 1% of requests.
-- Your application's average response time for key endpoints exceeds 2000ms.
+- Your application's average response time for key endpoints exceeds 2000 ms.
 
 ### Alerts in cloud-native apps
 

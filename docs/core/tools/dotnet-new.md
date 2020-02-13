@@ -22,7 +22,7 @@ dotnet new [-h|--help]
 
 ## Description
 
-The `dotnet new` command provides a convenient way to initialize a valid .NET Core project.
+The `dotnet new` command creates a .NET Core project or other artifacts based on a template.
 
 The command calls the [template engine](https://github.com/dotnet/templating) to create the artifacts on disk based on the specified template and options.
 
@@ -90,11 +90,11 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
 - **`-h|--help`**
 
-  Prints out help for the command. It can be invoked for the `dotnet new` command itself or for any template, such as `dotnet new mvc --help`.
+  Prints out help for the command. It can be invoked for the `dotnet new` command itself or for any template. For example, `dotnet new mvc --help`.
 
 - **`-i|--install <PATH|NUGET_ID>`**
 
-  Installs a source or template pack from the `PATH` or `NUGET_ID` provided. If you want to install a prerelease version of a template package, you need to specify the version in the format of `<package-name>::<package-version>`. By default, `dotnet new` passes \* for the version, which represents the last stable package version. See an example at the [Examples](#examples) section.
+  Installs a source or template pack from the `PATH` or `NUGET_ID` provided. If you want to install a prerelease version of a template package, you need to specify the version in the format of `<package-name>::<package-version>`. By default, `dotnet new` passes \* for the version, which represents the latest stable package version. See an example in the [Examples](#examples) section.
   
   If a version of the template was already installed when you run this command, the template will be updated to the specified version, or to the latest stable version if no version was specified.
 
@@ -109,7 +109,7 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
   The language of the template to create. The language accepted varies by the template (see defaults in the [arguments](#arguments) section). Not valid for some templates.
 
   > [!NOTE]
-  > Some shells interpret `#` as a special character. In those cases, you need to enclose the language parameter value, such as `dotnet new console -lang "F#"`.
+  > Some shells interpret `#` as a special character. In those cases, enclose the language parameter value in quotes. For example, `dotnet new console -lang "F#"`.
 
 - **`-n|--name <OUTPUT_NAME>`**
 
@@ -129,13 +129,13 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
 - **`-u|--uninstall [PATH|NUGET_ID]`**
 
-  Uninstalls a source or template pack at the `PATH` or `NUGET_ID` provided. When excluding the `<PATH|NUGET_ID>` value, all currently installed template packs and their associated templates are displayed. When specifying `NUGET_ID`, only specify the package name without the version number.
+  Uninstalls a source or template pack at the `PATH` or `NUGET_ID` provided. When the `<PATH|NUGET_ID>` value isn't specified, all currently installed template packs and their associated templates are displayed. When specifying `NUGET_ID`, don't include the version number.
 
   If you don't specify a parameter to this option, the command lists the installed templates and details about them.
 
   > [!NOTE]
   > To uninstall a template using a `PATH`, you need to fully qualify the path. For example, *C:/Users/\<USER>/Documents/Templates/GarciaSoftware.ConsoleTemplate.CSharp* will work, but *./GarciaSoftware.ConsoleTemplate.CSharp* from the containing folder will not.
-  > Additionally, do not include a final terminating directory slash on your template path.
+  > Don't include a final terminating directory slash on your template path.
 
 - **`--update-apply`**
 

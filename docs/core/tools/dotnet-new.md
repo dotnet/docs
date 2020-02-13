@@ -1,11 +1,11 @@
 ---
 title: dotnet new command
 description: The dotnet new command creates new .NET Core projects based on the specified template.
-ms.date: 02/10/2020
+ms.date: 02/13/2020
 ---
 # dotnet new
 
-**This article applies to: ✓** .NET Core 2.0 SDK and later versions
+**This article applies to:** ✔️ .NET Core 2.0 SDK and later versions
 
 ## Name
 
@@ -32,12 +32,12 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
   The template to instantiate when the command is invoked. Each template might have specific options you can pass. For more information, see [Template options](#template-options).
 
-  If the `TEMPLATE` value isn't an exact match on text in the **Templates** or **Short Name** column, a substring match is performed on those two columns.
+  You can run `dotnet new --list` to see a list of all installed templates. If the `TEMPLATE` value isn't an exact match on text in the **Templates** or **Short Name** column from the returned table, a substring match is performed on those two columns.
 
-  Starting with .NET Core 3.0 SDK, the CLI searches for templates in NuGet.org in the following conditions:
+  Starting with .NET Core 3.0 SDK, the CLI searches for templates in NuGet.org when you invoke the `dotnet new` command in the following conditions:
 
   - If the CLI can’t find a template match when invoking `dotnet new`, not even partial.
-  - If there’s a newer version of the template available.
+  - If there’s a newer version of the template available. In this case, the project or artifact is created but the CLI warns you about an updated version of the template.
 
   The command contains a default list of templates. Use `dotnet new -l` to obtain a list of the available templates. The following table shows the templates that come pre-installed with the .NET Core SDK. The default language for the template is shown inside the brackets. Click on the short name link to see the specific template options.
 
@@ -82,11 +82,11 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
 - **`--dry-run`**
 
-  Displays a summary of what would happen if the given command were run if it would result in a template creation. Available since .NET Core 2.2 SDK.
+  Displays a summary of what would happen if the given command were run. Available since .NET Core 2.2 SDK.
 
 - **`--force`**
 
-  Forces content to be generated even if it would change existing files. This is required when the output directory already contains a project.
+  Forces content to be generated even if it would change existing files. This is required when the template chosen would override existing files in the output directory.
 
 - **`-h|--help`**
 

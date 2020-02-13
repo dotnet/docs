@@ -1,7 +1,7 @@
 ---
 title: .NET Standard
 description: Learn about .NET Standard, its versions and the .NET implementations that support it.
-ms.date: 02/13/2020f
+ms.date: 02/13/2020
 ms.technology: dotnet-standard
 ms.custom: "updateeachrelease"
 ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b

@@ -8,7 +8,7 @@ ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
 ---
 # .NET Standard
 
-[.NET Standard](https://github.com/dotnet/standard) is a formal specification of .NET APIs that are intended to be available on all .NET implementations. The motivation behind .NET Standard is establishing greater uniformity in the .NET ecosystem. [ECMA 335](https://github.com/dotnet/runtime/blob/master/docs/project/dotnet-standards.md) continues to establish uniformity for .NET implementation behavior, and while ECMA 335 specifies a small set of standard libraries, .NET Standard encompasses a broader range of .NET APIs.
+[.NET Standard](https://github.com/dotnet/standard) is a formal specification of .NET APIs that are intended to be available on all .NET implementations. The motivation behind .NET Standard is to establish greater uniformity in the .NET ecosystem. [ECMA 335](https://github.com/dotnet/runtime/blob/master/docs/project/dotnet-standards.md) continues to establish uniformity for .NET implementation behavior, and while ECMA 335 specifies a small set of standard libraries, the .NET Standard specification encompasses a broader range of .NET APIs.
 
 .NET Standard enables the following key scenarios:
 

@@ -37,7 +37,7 @@ In addition to the technologies listed in the official [.NET Core roadmap](https
 
 ## Using a platform or API that doesn't support .NET Core
 
-Some Microsoft and third-party platforms don't support .NET Core. For example, some Azure services provide an SDK that isn't yet available for consumption on .NET Core. This is temporary, because all Azure services will eventually use .NET Core/Standard. You can see the available Azure SDKs in the [Azure SDK Latest Releases](https://azure.github.io/azure-sdk/releases/latest/index.html) page.
+Some Microsoft and third-party platforms don't support .NET Core. For example, some Azure services provide an SDK that isn't yet available for consumption on .NET Core. Most Azure SDK should eventually be ported to .NET Core/Standard but some might not for various reasons. You can see the available Azure SDKs in the [Azure SDK Latest Releases](https://azure.github.io/azure-sdk/releases/latest/index.html) page.
 
 In the meantime, if any platform or service in Azure still doesn't support .NET Core with its client API, you can use the equivalent REST API from the Azure service or the client SDK on .NET Framework.
 

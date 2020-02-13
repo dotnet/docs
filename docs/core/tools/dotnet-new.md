@@ -94,7 +94,7 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
 - **`-i|--install <PATH|NUGET_ID>`**
 
-  Installs a source or template pack from the `PATH` or `NUGET_ID` provided. If you want to install a prerelease version of a template package, you need to specify the version in the format of `<package-name>::<package-version>`. By default, `dotnet new` passes \* for the version, which represents the latest stable package version. See an example in the [Examples](#examples) section.
+  Installs a template pack from the `PATH` or `NUGET_ID` provided. If you want to install a prerelease version of a template package, you need to specify the version in the format of `<package-name>::<package-version>`. By default, `dotnet new` passes \* for the version, which represents the latest stable package version. See an example in the [Examples](#examples) section.
   
   If a version of the template was already installed when you run this command, the template will be updated to the specified version, or to the latest stable version if no version was specified.
 
@@ -129,7 +129,7 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
 - **`-u|--uninstall [PATH|NUGET_ID]`**
 
-  Uninstalls a source or template pack at the `PATH` or `NUGET_ID` provided. When the `<PATH|NUGET_ID>` value isn't specified, all currently installed template packs and their associated templates are displayed. When specifying `NUGET_ID`, don't include the version number.
+  Uninstalls a template pack at the `PATH` or `NUGET_ID` provided. When the `<PATH|NUGET_ID>` value isn't specified, all currently installed template packs and their associated templates are displayed. When specifying `NUGET_ID`, don't include the version number.
 
   If you don't specify a parameter to this option, the command lists the installed templates and details about them.
 

@@ -24,6 +24,7 @@ The following breaking changes are documented on this page:
 | [JsonEncodedText.Encode methods have an additional JavaScriptEncoder argument](#jsonencodedtextencode-methods-have-an-additional-javascriptencoder-argument) | 3.0 |
 | [JsonFactoryConverter.CreateConverter signature changed](#jsonfactoryconvertercreateconverter-signature-changed) | 3.0 |
 | [JsonElement API changes](#jsonelement-api-changes) | 3.0 |
+| [FieldInfo.SetValue throws exception for static, init-only fields](#fieldinfosetvalue-throws-exception-for-static-init-only-fields) | 3.0 |
 | [Private fields added to built-in struct types](#private-fields-added-to-built-in-struct-types) | 2.1 |
 | [Change in default value of UseShellExecute](#change-in-default-value-of-useshellexecute) | 2.1 |
 | [UnauthorizedAccessException thrown by FileSystemInfo.Attributes](#unauthorizedaccessexception-thrown-by-filesysteminfoattributes) | 1.0 |
@@ -79,6 +80,10 @@ The following breaking changes are documented on this page:
 ***
 
 [!INCLUDE[JsonElement API changes](~/includes/core-changes/corefx/3.0/jsonelement-api-changes.md)]
+
+***
+
+[!INCLUDE [FieldInfo.SetValue throws exception for static, init-only fields](~/includes/core-changes/corefx/3.0/fieldinfo-setvalue-exception.md)]
 
 ***
 

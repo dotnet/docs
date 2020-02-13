@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 46ff70f4-13e9-40a0-802a-0a40abcfc6a0
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo4::GetFunctionFromIP2 Method
 Maps a managed code instruction pointer to the JIT-recompiled version of a function.  

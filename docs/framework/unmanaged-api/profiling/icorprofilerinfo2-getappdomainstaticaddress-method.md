@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 2a9e0ea7-a9e2-4817-b1c4-fcf15b215ea9
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo2::GetAppDomainStaticAddress Method
 Gets the address of the specified application domain-static field that is in the scope of the specified application domain.  

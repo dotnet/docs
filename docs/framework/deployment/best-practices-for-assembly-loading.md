@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "LoadWithPartialName method"
   - "load-from context"
 ms.assetid: 68d1c539-6a47-4614-ab59-4b071c9d4b4c
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Best Practices for Assembly Loading
 This article discusses ways to avoid problems of type identity that can lead to <xref:System.InvalidCastException>, <xref:System.MissingMethodException>, and other errors. The article discusses the following recommendations:  

@@ -1,6 +1,5 @@
 ---
 title: "Constants - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "C# language, constants"
@@ -12,7 +11,7 @@ Constants are immutable values which are known at compile time and do not change
   
  C# does not support `const` methods, properties, or events.  
   
- The enum type enables you to define named constants for integral built-in types (for example `int`, `uint`, `long`, and so on). For more information, see [enum](../../language-reference/keywords/enum.md).  
+ The enum type enables you to define named constants for integral built-in types (for example `int`, `uint`, `long`, and so on). For more information, see [enum](../../language-reference/builtin-types/enum.md).  
   
  Constants must be initialized as they are declared. For example:  
   
@@ -47,4 +46,4 @@ Constants are immutable values which are known at compile time and do not change
 - [Properties](./properties.md)
 - [Types](../types/index.md)
 - [readonly](../../language-reference/keywords/readonly.md)
-- [Immutability in C# Part One: Kinds of Immutability](https://blogs.msdn.microsoft.com/ericlippert/2007/11/13/immutability-in-c-part-one-kinds-of-immutability)
+- [Immutability in C# Part One: Kinds of Immutability](https://docs.microsoft.com/archive/blogs/ericlippert/immutability-in-c-part-one-kinds-of-immutability)

@@ -1,5 +1,5 @@
 ---
-title: "Troubleshooting: Log Listeners (Visual Basic)"
+title: "Troubleshooting: Log Listeners"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "event logs, troubleshooting"

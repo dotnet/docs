@@ -1,5 +1,5 @@
 ---
-title: "How to: Access Members of an Object (Visual Basic)"
+title: "How to: Access Members of an Object"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "members [Visual Basic], accessing"

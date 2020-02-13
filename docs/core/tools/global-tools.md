@@ -3,7 +3,6 @@ title: .NET Core Global Tools
 description: An overview of what .NET Core Global Tools are and the .NET Core CLI commands available for them. 
 author: KathleenDollard
 ms.date: 05/29/2018
-ms.custom: "seodec18"
 ---
 # .NET Core Global Tools overview
 
@@ -29,7 +28,7 @@ Currently, there isn't a Global Tool search feature in the .NET Core Command-lin
 
 * You can find .NET Core Global Tools on [NuGet](https://www.nuget.org). However, NuGet doesn't yet allow you to search specifically for .NET Core Global Tools.
 * You may find tool recommendations in blog posts or in the [natemcmaster/dotnet-tools](https://github.com/natemcmaster/dotnet-tools) GitHub repository.
-* You can see the source code for the Global Tools created by the ASP.NET team at the [aspnet/DotNetTools](https://github.com/aspnet/DotNetTools/) GitHub repository.
+* You can see the source code for the Global Tools created by the ASP.NET team at the [dotnet/aspnetcore](https://github.com/dotnet/aspnetcore/tree/master/src/Tools) GitHub repository.
 * You can learn about diagnostic tools at [.NET Core dotnet diagnostic Global Tools](../diagnostics/index.md#net-core-dotnet-diagnostic-global-tools).
 
 ## Check the author and statistics

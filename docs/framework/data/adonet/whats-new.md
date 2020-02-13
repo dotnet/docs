@@ -33,19 +33,19 @@ The following features are new in the .NET Framework Data Provider for SQL Serve
 
   - Use the fully-qualified domain name in the connection string.
 
-- SqlClient supports Extended Protection. For more information about Extended Protection, see [Connecting to the Database Engine Using Extended Protection](https://go.microsoft.com/fwlink/?LinkId=219978).
+- SqlClient supports Extended Protection. For more information about Extended Protection, see [Connecting to the Database Engine Using Extended Protection](/sql/database-engine/configure-windows/connect-to-the-database-engine-using-extended-protection).
 
 - SqlClient supports connections to LocalDB databases. For more information, see [SqlClient Support for LocalDB](./sql/sqlclient-support-for-localdb.md).
 
 - `Type System Version=SQL Server 2012;` is new value to pass to the `Type System Version` connection property. The `Type System Version=Latest;` value is now obsolete and has been made equivalent to `Type System Version=SQL Server 2008;`. For more information, see <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>.
 
-- SqlClient provides additional support for sparse columns, a feature that was added in SQL Server 2008. If your application already accesses data in a table that uses sparse columns, you should see an increase in performance. The IsColumnSet column of <xref:System.Data.SqlClient.SqlDataReader.GetSchemaTable%2A> indicates if a column is a sparse column that is a member of a column set. <xref:System.Data.SqlClient.SqlConnection.GetSchema%2A> indicates if a column is a sparse column (see [SQL Server Schema Collections](sql-server-schema-collections.md) for more information). For more information about sparse columns, see [Using Sparse Columns](https://go.microsoft.com/fwlink/?LinkId=224244).
+- SqlClient provides additional support for sparse columns, a feature that was added in SQL Server 2008. If your application already accesses data in a table that uses sparse columns, you should see an increase in performance. The IsColumnSet column of <xref:System.Data.SqlClient.SqlDataReader.GetSchemaTable%2A> indicates if a column is a sparse column that is a member of a column set. <xref:System.Data.SqlClient.SqlConnection.GetSchema%2A> indicates if a column is a sparse column (see [SQL Server Schema Collections](sql-server-schema-collections.md) for more information). For more information about sparse columns, see [Use Sparse Columns](/sql/relational-databases/tables/use-sparse-columns).
 
-- The assembly Microsoft.SqlServer.Types.dll, which contains the spatial data types, has been upgraded from version 10.0 to version 11.0. Applications that reference this assembly may fail. For more information, see [Breaking Changes to Database Engine Features](https://go.microsoft.com/fwlink/?LinkId=224367).
+- The assembly Microsoft.SqlServer.Types.dll, which contains the spatial data types, has been upgraded from version 10.0 to version 11.0. Applications that reference this assembly may fail. For more information, see [Breaking Changes to Database Engine Features](https://docs.microsoft.com/previous-versions/sql/sql-server-2012/ms143179(v=sql.110)).
 
 ## ADO.NET Entity Framework
 
-The .NET Framework 4.5 adds APIs that enable new scenarios when working with the Entity Framework 5.0. For more information about improvements and features that were added to the Entity Framework 5.0, see the following topics: [What’s New](https://go.microsoft.com/fwlink/?LinkID=251106) and [Entity Framework Releases and Versioning](https://go.microsoft.com/fwlink/?LinkId=234899).
+The .NET Framework 4.5 adds APIs that enable new scenarios when working with the Entity Framework 5.0. For more information about improvements and features that were added to the Entity Framework 5.0, see the following topics: [What’s New](https://docs.microsoft.com/previous-versions/gg696190(v=vs.103)) and [Entity Framework Releases and Versioning](/ef/ef6/what-is-new/past-releases).
 
 ## See also
 

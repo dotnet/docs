@@ -1,5 +1,5 @@
 ---
-title: "How to: Write Text to Files in the My Documents Directory in Visual Basic"
+title: "How to: Write Text to Files in the My Documents Directory"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "files [Visual Basic], writing to"

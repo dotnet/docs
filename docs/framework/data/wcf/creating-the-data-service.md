@@ -65,7 +65,7 @@ In this topic, you create a sample data service that uses WCF Data Services to e
    ![WCF Data Service item template in Visual Studio 2015](./media/wcf-data-service-item-template.png)
 
    > [!NOTE]
-   > The **WCF Data Service** template is available in Visual Studio 2015, but not in Visual Studio 2017.
+   > The **WCF Data Service** template is available in Visual Studio 2015, but not in Visual Studio 2017 or later.
 
 3. For the name of the service, type `Northwind`.
 

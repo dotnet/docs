@@ -1,9 +1,9 @@
 ---
-title: "How to: Project an Object Graph (C#)"
+title: "How to project an object graph (C#)"
 ms.date: 07/20/2015
 ms.assetid: 293d15d5-3eaf-48de-9a02-3e13cb117b5b
 ---
-# How to: Project an Object Graph (C#)
+# How to project an object graph (C#)
 This topic illustrates how to project, or populate, an object graph from XML.  
   
 ## Example  
@@ -208,7 +208,7 @@ class Program {
 }  
 ```  
   
- In this example, the result of the [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query is returned as an <xref:System.Collections.Generic.IEnumerable%601> of `PurchaseOrderItem`. The items in the `PurchaseOrder` class are of type <xref:System.Collections.Generic.IEnumerable%601> of `PurchaseOrderItem`. The code uses the <xref:System.Linq.Enumerable.ToList%2A> extension method to create a <xref:System.Collections.Generic.List%601> collection from the results of the query.  
+ In this example, the result of the LINQ query is returned as an <xref:System.Collections.Generic.IEnumerable%601> of `PurchaseOrderItem`. The items in the `PurchaseOrder` class are of type <xref:System.Collections.Generic.IEnumerable%601> of `PurchaseOrderItem`. The code uses the <xref:System.Linq.Enumerable.ToList%2A> extension method to create a <xref:System.Collections.Generic.List%601> collection from the results of the query.  
   
  The example produces the following output:  
   

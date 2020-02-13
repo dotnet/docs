@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 7a3c97c3-1e31-47b1-bf23-386785c509c4
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo::GetAssemblyInfo Method
 Accepts an assembly ID, and returns the assembly's name and the ID of its manifest module.  

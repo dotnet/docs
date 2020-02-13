@@ -1,5 +1,5 @@
 ---
-title: "Iterator (Visual Basic)"
+title: "Iterator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Iterator"

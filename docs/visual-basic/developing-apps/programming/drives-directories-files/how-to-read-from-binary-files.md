@@ -1,5 +1,5 @@
 ---
-title: "How to: Read From Binary Files in Visual Basic"
+title: "How to: Read From Binary Files"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "binary files [Visual Basic], reading from"

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 7a439d92-348a-44dd-b60f-cad7cba56379
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo::GetModuleMetaData Method
 Gets a metadata interface instance that maps to the specified module.  

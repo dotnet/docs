@@ -1,5 +1,5 @@
 ---
-title: "Debugging Expression Trees in Visual Studio (Visual Basic)"
+title: "Debugging Expression Trees in Visual Studio"
 ms.date: 07/20/2015
 ms.assetid: 492cc28f-b7a2-4c47-b582-b3c437b8a5d5
 ---

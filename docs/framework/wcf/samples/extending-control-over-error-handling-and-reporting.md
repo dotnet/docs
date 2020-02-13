@@ -114,7 +114,7 @@ catch (Exception e)
   
  When you run the sample, the operation requests and responses are displayed in the client console window. You see the division by zero and the argument-out-of-range conditions being reported as faults. Press ENTER in the client window to shut down the client.  
   
-```  
+```console  
 Add(15,3) = 18  
 Subtract(145,76) = 69  
 Multiply(9,81) = 729  
@@ -148,6 +148,6 @@ Fault: Reason = Invalid Argument: The argument must be greater than zero.
 >   
 > `<InstallDrive>:\WF_WCF_Samples`  
 >   
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\ErrorHandling`  

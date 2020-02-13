@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 09238b9b-9359-4780-89dc-2f5e4f57920e
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ExceptionOSHandlerEnter Method
 Not implemented. A profiler that needs unmanaged exception information must obtain this information through other means.  

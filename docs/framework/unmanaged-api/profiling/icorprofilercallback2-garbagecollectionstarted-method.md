@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 44eef087-f21f-4fe2-b481-f8a0ee022e7d
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback2::GarbageCollectionStarted Method
 Notifies the code profiler that garbage collection has started.  

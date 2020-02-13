@@ -1,5 +1,5 @@
 ---
-title: "Cloning vs. Attaching (Visual Basic)"
+title: "Cloning vs. Attaching"
 ms.date: 07/20/2015
 ms.assetid: 3c3bd105-c9d3-49bd-875b-27ab4e8bc7a3
 ---

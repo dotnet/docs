@@ -9,7 +9,7 @@ ms.assetid: 65847654-9994-4a9e-b36d-2dd5d998770b
 ---
 # UI Automation Overview
 > [!NOTE]
-> This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).  
+> This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).  
   
  [!INCLUDE[TLA#tla_uiautomation](../../../includes/tlasharptla-uiautomation-md.md)] is the new accessibility framework for Microsoft Windows, available on all operating systems that support [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)].  
   
@@ -18,7 +18,7 @@ ms.assetid: 65847654-9994-4a9e-b36d-2dd5d998770b
 > [!NOTE]
 > [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] does not enable communication between processes started by different users through the **Run as** command.  
   
- UI Automation client applications can be written with the assurance that they will work on multiple frameworks. The [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] core masks any differences in the frameworks that underlie various pieces of [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]. For example, the `Content` property of a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] button, the `Caption` property of a [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)] button, and the `ALT` property of an HTML image are all mapped to a single property, <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.Name%2A>, in the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] view.  
+ UI Automation client applications can be written with the assurance that they will work on multiple frameworks. The [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] core masks any differences in the frameworks that underlie various pieces of [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)]. For example, the `Content` property of a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] button, the `Caption` property of a Win32 button, and the `ALT` property of an HTML image are all mapped to a single property, <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.Name%2A>, in the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] view.  
   
 UI Automation provides full functionality on supported Windows operating systems running the .NET Framework (see [.NET Framework system requirements](../get-started/system-requirements.md) or versions of .NET Core starting with .NET Core 3.0.  
   

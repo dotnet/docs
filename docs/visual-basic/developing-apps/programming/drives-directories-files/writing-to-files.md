@@ -1,5 +1,5 @@
 ---
-title: "Writing to Files in Visual Basic"
+title: "Writing to Files"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "I/O [Visual Basic], writing to files"

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: f3535279-3c63-41a2-ab0e-a129dc5a01e8
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerThreadEnum::Next Method
 Gets the specified number of contiguous threads from a sequential collection of threads, starting at the enumerator's current position in the sequence.  

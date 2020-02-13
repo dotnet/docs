@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 8e7dbf14-98a2-4384-a950-58a7640e59df
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo2::GetThreadStaticAddress Method
 Gets the address of the specified thread-static field that is in the scope of the specified thread.  

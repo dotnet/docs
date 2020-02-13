@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 8f0dd2fe-7df7-464e-91f4-5518c586bb5f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedReader::Initialize Method
 Initializes the symbol reader with the metadata importer interface that this reader will be associated with, along with the file name of the module.  

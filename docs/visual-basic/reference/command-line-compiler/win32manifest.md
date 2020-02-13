@@ -1,5 +1,5 @@
 ---
-title: "-win32manifest (Visual Basic)"
+title: "-win32manifest"
 ms.date: 03/13/2018
 helpviewer_keywords: 
   - "/win32manifest compiler option [Visual Basic]"

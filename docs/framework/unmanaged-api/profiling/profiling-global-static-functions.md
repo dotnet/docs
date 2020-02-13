@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "profiling global static functions [.NET Framework]"
   - "unmanaged global static functions [.NET Framework], profiling"
 ms.assetid: 08a13a57-dc49-488d-b937-31e3051fda97
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Profiling Global Static Functions
 This section describes the unmanaged API functions that the profiling API uses.  

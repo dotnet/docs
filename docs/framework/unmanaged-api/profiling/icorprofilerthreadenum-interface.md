@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 1e35031b-e095-4c14-9644-8deeb3081e0b
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerThreadEnum Interface
 Provides methods to sequentially iterate through a collection of threads in the common language runtime.  

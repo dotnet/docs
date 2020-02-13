@@ -1,5 +1,5 @@
 ---
-title: "How to: Parse a String (Visual Basic)"
+title: "How to: Parse a String"
 ms.date: 07/20/2015
 ms.assetid: 896e1b4b-f9bd-4975-8bc1-55b6badce1ac
 ---

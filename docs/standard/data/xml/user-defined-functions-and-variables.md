@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 4772f20e-1e7f-496e-93c2-1484473be555
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # User Defined Functions and Variables
 The <xref:System.Xml.XPath.XPathNavigator> class provides a set of methods that are used to interact with <xref:System.Xml.XPath.XPathDocument> data. You can supplement the standard XPath functions by implementing extension functions and variables for use by XPath query expressions. The <xref:System.Xml.XPath.XPathExpression.SetContext%2A> method can accept a user defined context derived from <xref:System.Xml.Xsl.XsltContext>. User defined functions are resolved by the custom context.  

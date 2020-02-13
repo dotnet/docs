@@ -35,7 +35,7 @@ When you compile an application, you can specify that it should run on a Windows
 ## General 64-Bit Programming Information  
  For general information about 64-bit programming, see the following documents:  
   
-- In the Windows SDK documentation, see [Programming Guide for 64-bit Windows](https://docs.microsoft.com/windows/win32/winprog64/programming-guide-for-64-bit-windows).  
+- In the Windows SDK documentation, see [Programming Guide for 64-bit Windows](/windows/win32/winprog64/programming-guide-for-64-bit-windows).  
   
 - For information about Visual Studio support for creating 64-bit applications, see [Visual Studio IDE 64-Bit Support](/visualstudio/ide/visual-studio-ide-64-bit-support).  
   

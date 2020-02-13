@@ -1,5 +1,5 @@
 ---
-title: "#ExternalSource Directive (Visual Basic)"
+title: "#ExternalSource Directive"
 ms.date: 07/20/2015
 f1_keywords: 
   - "#Externalsource"

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 3ef841c2-cade-42ee-ba34-2ef91d6d0879
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorSymAddrKind Enumeration
 Indicates the type of memory address.  

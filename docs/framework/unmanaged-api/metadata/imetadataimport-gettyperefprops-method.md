@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 01837955-ce1e-4068-b338-fd473bd77d1d
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetTypeRefProps Method
 Gets the metadata associated with the <xref:System.Type> referenced by the specified TypeRef token.  

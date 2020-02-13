@@ -44,6 +44,7 @@ Run-time settings are used by the common language runtime to configure applicati
 &nbsp;&nbsp;&nbsp;&nbsp;[\<GCCpuGroup>](gccpugroup-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[\<GCHeapAffinitizeMask>](gcheapaffinitizemask-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[\<GCHeapCount>](gcheapcount-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[\<GCLOHThreshold>](gclohthreshold-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[\<GCNoAffinitize>](gcnoaffinitize-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[\<gcServer>](gcserver-element.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;[\<generatePublisherEvidence>](generatepublisherevidence-element.md)\
@@ -100,6 +101,7 @@ Run-time settings are used by the common language runtime to configure applicati
 |[\<GCCpuGroup>](gccpugroup-element.md)|Specifies whether garbage collection supports multiple CPU groups.|
 |[\<GCHeapAffinitizeMask>](gcheapaffinitizemask-element.md)|Defines the affinity between GC heaps and individual processors.|
 |[\<GCHeapCount>](gcheapcount-element.md)|Specifies the number of heaps/threads to use for server garbage collection.  |
+|[\<GCLOHThreshold>](gclohthreshold-element.md)|Specifies the threshold size that causes objects to go on the large object heap (LOH).|
 |[\<GCNoAffinitize>](gcnoaffinitize-element.md)|Specifies whether or not to affinitize server GC threads with CPUs.|
 |[\<gcServer>](gcserver-element.md)|Specifies whether the common language runtime runs server garbage collection.|
 |[\<generatePublisherEvidence>](generatepublisherevidence-element.md)|Specifies whether the runtime uses code access security (CAS) publisher policy.|

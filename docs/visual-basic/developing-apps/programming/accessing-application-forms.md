@@ -1,5 +1,5 @@
 ---
-title: "Accessing Application Forms (Visual Basic)"
+title: "Accessing Application Forms"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "forms [Visual Basic], communicating between"

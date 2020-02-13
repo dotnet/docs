@@ -1,6 +1,5 @@
 ---
 title: "default operator - C# reference"
-ms.custom: seodec18
 description: "Use the default operator to produce the default value of a type"
 ms.date: 08/01/2019
 helpviewer_keywords: 
@@ -8,7 +7,7 @@ helpviewer_keywords:
 ---
 # default operator (C# reference)
 
-The `default` operator produces the [default value](../keywords/default-values-table.md) of a type. The argument to the `default` operator must be the name of a type or a type parameter.
+The `default` operator produces the [default value](../builtin-types/default-values.md) of a type. The argument to the `default` operator must be the name of a type or a type parameter.
 
 The following example shows the usage of the `default` operator:
 
@@ -39,5 +38,5 @@ For more information about the `default` literal, see the [feature proposal note
 
 - [C# reference](../index.md)
 - [C# operators](index.md)
-- [Default values table](../keywords/default-values-table.md)
+- [Default values of C# types](../builtin-types/default-values.md)
 - [Generics in .NET](../../../standard/generics/index.md)

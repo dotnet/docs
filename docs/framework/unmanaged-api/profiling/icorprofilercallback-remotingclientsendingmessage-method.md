@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 54d9a5a5-3877-49c1-a503-ce7c7943bc2a
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::RemotingClientSendingMessage Method
 Notifies the profiler that the client is sending a request to the server.  

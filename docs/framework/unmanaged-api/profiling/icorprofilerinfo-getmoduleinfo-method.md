@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 5a90d16f-7929-4987-8f83-a631becf564d
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo::GetModuleInfo Method
 Given a module ID, returns the file name of the module and the ID of the module's parent assembly.  

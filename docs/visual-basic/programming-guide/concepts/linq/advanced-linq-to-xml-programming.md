@@ -1,5 +1,5 @@
 ---
-title: "Advanced LINQ to XML Programming (Visual Basic)"
+title: "Advanced LINQ to XML Programming"
 ms.date: 07/20/2015
 ms.assetid: 36018532-a55c-4538-8a27-98f475ea3415
 ---

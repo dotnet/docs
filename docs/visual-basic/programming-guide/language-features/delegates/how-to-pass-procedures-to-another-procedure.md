@@ -1,5 +1,5 @@
 ---
-title: "How to: Pass Procedures to Another Procedure in Visual Basic"
+title: "How to: Pass Procedures to Another Procedure"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "AddressOf operator [Visual Basic]"

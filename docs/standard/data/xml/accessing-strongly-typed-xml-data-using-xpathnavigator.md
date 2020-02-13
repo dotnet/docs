@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 898e0f52-8a7c-4d1f-afcd-6ffb28b050b4
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Accessing Strongly Typed XML Data Using XPathNavigator
 As an instance of the XPath 2.0 data model, the <xref:System.Xml.XPath.XPathNavigator> class can contain strongly-typed data that maps to common language runtime (CLR) types. According to the XPath 2.0 data model, only elements and attributes can contain strongly-typed data. The <xref:System.Xml.XPath.XPathNavigator> class provides mechanisms for accessing data within an <xref:System.Xml.XPath.XPathDocument> or <xref:System.Xml.XmlDocument> object as strongly-typed data as well as mechanisms for converting from one data type to another.  

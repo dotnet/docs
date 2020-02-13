@@ -1,5 +1,5 @@
 ---
-title: "Mod Operator (Visual Basic)"
+title: "Mod Operator"
 ms.date: 04/24/2018
 f1_keywords:
   - "vb.Mod"

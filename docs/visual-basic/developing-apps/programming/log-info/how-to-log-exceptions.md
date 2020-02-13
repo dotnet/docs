@@ -1,5 +1,5 @@
 ---
-title: "How to: Log Exceptions in Visual Basic"
+title: "How to: Log Exceptions"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "exceptions, logging"

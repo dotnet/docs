@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 64d9b80e-b883-4539-89c7-03573185a1eb
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedWriter::SetSymAttribute Method
 Defines a custom attribute based upon its name. These attributes are held in the symbol store, unlike metadata custom attributes.  

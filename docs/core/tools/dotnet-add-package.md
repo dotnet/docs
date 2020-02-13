@@ -5,7 +5,7 @@ ms.date: 06/26/2019
 ---
 # dotnet add package
 
-**This article applies to: ✓** .NET Core 1.x SDK and later versions
+**This article applies to:** ✔️ .NET Core 1.x SDK and later versions
 
 <!-- todo: uncomment when all CLI commands are reviewed
 [!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]

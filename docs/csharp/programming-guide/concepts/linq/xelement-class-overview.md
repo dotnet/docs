@@ -37,7 +37,7 @@ XElement contacts =
     );  
 ```  
   
- Another very common technique for creating an XML tree involves using the results of a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query to populate an XML tree, as shown in the following example:  
+ Another very common technique for creating an XML tree involves using the results of a LINQ query to populate an XML tree, as shown in the following example:  
   
 ```csharp  
 XElement srcTree = new XElement("Root",  
@@ -75,12 +75,12 @@ Console.WriteLine(xmlTree);
  For more information, see [Serializing XML Trees (C#)](./preserving-white-space-while-serializing.md).  
   
 ## Retrieving XML Data via Axis Methods  
- You can use axis methods to retrieve attributes, child elements, descendant elements, and ancestor elements. [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] queries operate on axis methods, and provide several flexible and powerful ways to navigate through and process an XML tree.  
+ You can use axis methods to retrieve attributes, child elements, descendant elements, and ancestor elements. LINQ queries operate on axis methods, and provide several flexible and powerful ways to navigate through and process an XML tree.  
   
  For more information, see [LINQ to XML Axes (C#)](./linq-to-xml-axes-overview.md).  
   
 ## Querying XML Trees  
- You can write [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] queries that extract data from an XML tree.  
+ You can write LINQ queries that extract data from an XML tree.  
   
  For more information, see [Querying XML Trees (C#)](./how-to-find-an-element-with-a-specific-attribute.md).  
   

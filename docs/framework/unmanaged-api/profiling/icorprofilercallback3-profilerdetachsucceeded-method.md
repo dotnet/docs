@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 05164966-16ce-4cc9-a530-43a640c00711
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback3::ProfilerDetachSucceeded Method
 Notifies the profiler that the common language runtime (CLR) is about to unload the profiler DLL.  

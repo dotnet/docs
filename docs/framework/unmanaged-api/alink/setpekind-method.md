@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 050e77ee-3014-45c0-9e29-2ebe29347b0d
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # SetPEKind Method
 Determines the portable executable type, either machine-specific or machine-agnostic.  

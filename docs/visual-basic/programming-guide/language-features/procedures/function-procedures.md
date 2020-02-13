@@ -1,5 +1,5 @@
 ---
-title: "Function Procedures (Visual Basic)"
+title: "Function Procedures"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Function procedures"

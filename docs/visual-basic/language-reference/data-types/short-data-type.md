@@ -1,5 +1,5 @@
 ---
-title: "Short Data Type (Visual Basic)"
+title: "Short Data Type"
 ms.date: 01/31/2018
 f1_keywords: 
   - "vb.Short"

@@ -182,7 +182,6 @@ When you are finished, you'll have an understanding of the role played by these 
 - <xref:System.Windows.Forms.TableLayoutPanel>
 - [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)
 - [Walkthrough: Arranging Controls on Windows Forms Using Snaplines](walkthrough-arranging-controls-on-windows-forms-using-snaplines.md)
-- [Microsoft Windows User Experience, Official Guidelines for User Interface Developers and Designers. Redmond, WA: Microsoft Press, 1999. (USBN: 0-7356-0566-1)](https://www.microsoft.com/mspress/southpacific/books/book11588.htm)
 - [AutoSize Property Overview](autosize-property-overview.md)
 - [How to: Dock Controls on Windows Forms](how-to-dock-controls-on-windows-forms.md)
 - [How to: Anchor Controls on Windows Forms](how-to-anchor-controls-on-windows-forms.md)

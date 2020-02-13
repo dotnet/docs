@@ -37,4 +37,4 @@ topic_type:
 
 - [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
 - [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-- [ReJIT: A How-To Guide](https://blogs.msdn.microsoft.com/davbr/2011/10/12/rejit-a-how-to-guide/)
+- [ReJIT: A How-To Guide](https://docs.microsoft.com/archive/blogs/davbr/rejit-a-how-to-guide)

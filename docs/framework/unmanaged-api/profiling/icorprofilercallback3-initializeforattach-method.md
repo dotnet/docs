@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: bed097b3-6d52-46c9-bee7-ac7910b6fc3f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback3::InitializeForAttach Method
 Called by the common language runtime (CLR) to give the profiler an opportunity to initialize its state after an attach operation.  

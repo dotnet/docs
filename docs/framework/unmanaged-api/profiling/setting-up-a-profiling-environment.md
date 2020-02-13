@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "COR_ENABLE_PROFILING environment variable"
   - "profiling API [.NET Framework], enabling"
 ms.assetid: fefca07f-7555-4e77-be86-3c542e928312
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Setting Up a Profiling Environment
 > [!NOTE]

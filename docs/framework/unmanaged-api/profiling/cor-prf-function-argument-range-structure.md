@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 9f469eac-ac66-419b-8668-fe705bc1a51f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # COR_PRF_FUNCTION_ARGUMENT_RANGE Structure
 Represents a block of function arguments stored contiguously in left-to-right order in memory.  

@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic Runtime Library Members"
+title: "Runtime Library Members"
 ms.date: 07/20/2015
 f1_keywords: 
   - "VisualBasic"

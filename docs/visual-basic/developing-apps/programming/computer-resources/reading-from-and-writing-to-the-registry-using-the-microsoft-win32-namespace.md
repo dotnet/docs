@@ -1,5 +1,5 @@
 ---
-title: "Reading from and Writing to the Registry Using the Microsoft.Win32 Namespace (Visual Basic)"
+title: "Reading from and Writing to the Registry Using the Microsoft.Win32 Namespace"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "registry [Visual Basic]"

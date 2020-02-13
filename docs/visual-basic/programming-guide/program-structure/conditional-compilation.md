@@ -1,5 +1,5 @@
 ---
-title: "Conditional Compilation in Visual Basic"
+title: "Conditional Compilation"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "conditional compilation [Visual Basic], about conditional compilation"

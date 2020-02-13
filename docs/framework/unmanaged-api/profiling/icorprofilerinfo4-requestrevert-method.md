@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 70261da5-5933-4e25-9de0-ddf51cba56cc
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo4::RequestRevert Method
 Reverts all instances of the specified functions to their original versions.  

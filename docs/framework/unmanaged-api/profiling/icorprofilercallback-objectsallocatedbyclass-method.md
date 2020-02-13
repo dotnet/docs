@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 91d688f3-a80e-419d-9755-ff94bc04188a
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ObjectsAllocatedByClass Method
 Notifies the profiler about the number of instances of each specified class that have been created since the most recent garbage collection.  

@@ -135,7 +135,7 @@ With the Cosmos DB [Multi-Homing APIs](https://docs.microsoft.com/azure/cosmos-d
 
 ### Multi-Model Support
 
-Cosmos DB is a *multi-model data platform* enabling you to interact with your data using a number of supported NoSQL models, including documents, key-value pairs, wide-column, and graph representations. Internally, data is stored in a simple [struct](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/using-structs) format made up of primitive data types, including strings, bools, and numbers. For each request, the database engine translates data into the model representation you have selected. You can choose from a proprietary Cosmos DB SQL-based API or any of the [compatibility APIs](https://www.wikiwand.com/en/Cosmos_DB) shown in Figure 5-14.
+Cosmos DB is a *multi-model data platform* that enables you to interact with your data using a number of supported NoSQL models, including documents, key-value pairs, wide-column, and graph representations. Internally, data is stored in a simple [struct](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/using-structs) format made up of primitive data types, including strings, booleans, and numbers. For each request, the database engine translates data into the model representation you have selected. You can choose from a proprietary Cosmos DB SQL-based API or any of the [compatibility APIs](https://www.wikiwand.com/en/Cosmos_DB) shown in Figure 5-14.
 
 ![Cosmos DB providers](./media/cosmos-db-providers.png)
 

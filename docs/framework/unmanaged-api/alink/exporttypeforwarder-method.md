@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 55989fa9-ab43-4f08-8eb6-2eb56fa7ca76
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ExportTypeForwarder Method
 Adds a type forwarder to the type table of the given assembly.  

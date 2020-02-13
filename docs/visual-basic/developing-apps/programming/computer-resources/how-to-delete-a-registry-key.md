@@ -1,5 +1,5 @@
 ---
-title: "How to: Delete a Registry Key in Visual Basic"
+title: "How to: Delete a Registry Key"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.DeleteSetting"

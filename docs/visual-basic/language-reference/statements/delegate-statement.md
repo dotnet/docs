@@ -1,5 +1,5 @@
 ---
-title: "Delegate Statement (Visual Basic)"
+title: "Delegate Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Delegate"

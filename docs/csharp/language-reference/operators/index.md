@@ -12,7 +12,7 @@ ms.assetid: 0301e31f-22ad-49af-ac3c-d5eae7f0ac43
 ---
 # C# operators (C# reference)
 
-C# provides a number of operators supported by the built-in types. For example, [arithmetic operators](arithmetic-operators.md) perform arithmetic operations with numeric operands and [Boolean logical operators](boolean-logical-operators.md) perform logical operations with the [bool](../keywords/bool.md) operands. Certain operators can be [overloaded](operator-overloading.md). With operator overloading, you can specify the operator behavior for the operands of a user-defined type.
+C# provides a number of operators supported by the built-in types. For example, [arithmetic operators](arithmetic-operators.md) perform arithmetic operations with numeric operands and [Boolean logical operators](boolean-logical-operators.md) perform logical operations with the [bool](../builtin-types/bool.md) operands. Certain operators can be [overloaded](operator-overloading.md). With operator overloading, you can specify the operator behavior for the operands of a user-defined type.
 
 In an [expression](../../programming-guide/statements-expressions-operators/expressions.md), operator precedence and associativity determine the order in which the operations are performed. You can use parentheses to change the order of evaluation imposed by operator precedence and associativity.
 

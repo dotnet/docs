@@ -1,5 +1,5 @@
 ---
-title: "Logging Information from the Application (Visual Basic)"
+title: "Logging Information from the Application"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Log object"

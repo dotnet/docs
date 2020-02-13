@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 6a5431ef-22fb-4e53-bac5-703986297eb1
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo::GetILToNativeMapping Method
 Gets a map from Microsoft intermediate language (MSIL) offsets to native offsets for the code contained in the specified function.  

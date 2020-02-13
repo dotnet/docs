@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 2bc6ddc6-674a-4f75-b264-abc35e4e5857
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # XPathNodeIterator in Transformations
 The <xref:System.Xml.XPath.XPathNodeIterator> provides methods to iterate over a set of nodes created as the result of an XML Path Language (XPath) query or a result tree fragment converted to a node set by use of the node-set method. The <xref:System.Xml.XPath.XPathNodeIterator> enables you to iterate over the nodes within that node set. Once a node set is retrieved, the <xref:System.Xml.XPath.XPathNodeIterator> class provides a read-only, forward-only cursor to the selected set of nodes. The node set is created in document order, so calling this method moves to the next node in document order. <xref:System.Xml.XPath.XPathNodeIterator> does not build a node tree of all the nodes in the set. Instead, it provides a single node window into the data, exposing the underlying node it points to as you move around in the tree. The methods and properties available from the <xref:System.Xml.XPath.XPathNodeIterator> class enable you to get information from the current node. For a list of the available methods and properties, see <xref:System.Windows.Forms.ToolBar>.  

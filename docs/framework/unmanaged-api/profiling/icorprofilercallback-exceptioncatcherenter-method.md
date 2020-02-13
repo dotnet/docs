@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 41462329-a648-46f0-ae6d-728b94c31aa9
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ExceptionCatcherEnter Method
 Notifies the profiler that control is being passed to the appropriate `catch` block.  

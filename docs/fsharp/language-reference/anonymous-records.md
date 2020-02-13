@@ -29,7 +29,6 @@ Anonymous records are best thought of as F# record types that don't need to be d
 For example, here how you can interact with a function that produces an anonymous record:
 
 ```fsharp
-
 open System
 
 let getCircleStats radius =

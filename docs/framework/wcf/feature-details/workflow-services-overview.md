@@ -1,5 +1,5 @@
 ---
-title: "Workflow services overview - WCF"
+title: "Workflow services overview"
 ms.date: "03/30/2017"
 ms.assetid: e536dda3-e286-441e-99a7-49ddc004b646
 ---

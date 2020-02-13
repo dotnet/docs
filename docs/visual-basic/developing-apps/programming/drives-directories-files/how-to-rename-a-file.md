@@ -1,5 +1,5 @@
 ---
-title: "How to: Rename a File in Visual Basic"
+title: "How to: Rename a File"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "I/O [Visual Basic], renaming files"

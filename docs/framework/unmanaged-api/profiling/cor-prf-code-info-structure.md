@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: cf30e27c-1f7e-43a2-ba1e-01e4137301db
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # COR_PRF_CODE_INFO Structure
 Represents one contiguous block of native code stored in memory.  

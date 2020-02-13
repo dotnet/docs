@@ -1,5 +1,5 @@
 ---
-title: "Decimal Data Type (Visual Basic)"
+title: "Decimal Data Type"
 ms.date: 07/20/2015
 f1_keywords:
   - "vb.Decimal"

@@ -1,5 +1,5 @@
 ---
-title: "Using XSLT to Transform an XML Tree (Visual Basic)"
+title: "Using XSLT to Transform an XML Tree"
 ms.date: 07/20/2015
 ms.assetid: 3390ca68-c270-4e1d-b64b-6a063a77017c
 ---

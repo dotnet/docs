@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 62ec65e3-3e9d-400b-ae61-d24b8963995b
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerFunctionEnum::GetCount Method
 Gets the number of functions that were loaded by the application or forcibly loaded by the profiler.  

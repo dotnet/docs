@@ -7,7 +7,7 @@ helpviewer_keywords:
 ms.assetid: 12cadca0-b32c-4064-9a56-e6a306dcc76d
 ---
 # Deploying a WPF Application (WPF)
-After Windows Presentation Foundation (WPF) applications are built, they need to be deployed. Windows and the .NET Framework include several deployment technologies. The deployment technology that is used to deploy a [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] application depends on the application type. This topic provides a brief overview of each deployment technology, and how they are used in conjunction with the deployment requirements of each [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] application type.  
+After Windows Presentation Foundation (WPF) applications are built, they need to be deployed. Windows and the .NET Framework include several deployment technologies. The deployment technology that is used to deploy a WPF application depends on the application type. This topic provides a brief overview of each deployment technology, and how they are used in conjunction with the deployment requirements of each WPF application type.  
 
 <a name="Deployment_Technologies"></a>   
 ## Deployment Technologies  
@@ -57,7 +57,7 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
   
 <a name="Deploying_WPF_Applications"></a>   
 ## Deploying WPF Applications  
- The deployment options for a [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] application depend on the type of application. From a deployment perspective, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] has three significant application types:  
+ The deployment options for a WPF application depend on the type of application. From a deployment perspective, WPF has three significant application types:  
   
 - Standalone applications.  
   
@@ -73,7 +73,7 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
 ### Deploying Markup-Only XAML Applications  
  Markup-only [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] pages are usually published to Web servers, like HTML pages, and can be viewed using Internet Explorer. Markup-only [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] pages run within a partial-trust security sandbox with restrictions that are defined by the Internet zone permission set. This provides an equivalent security sandbox to HTML-based Web applications.  
   
- For more information about security for [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications, see [Security](../security-wpf.md).  
+ For more information about security for WPF applications, see [Security](../security-wpf.md).  
   
  Markup-only [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] pages can be installed to the local file system by using either XCopy or Windows Installer. These pages can be viewed using Internet Explorer or Windows Explorer.  
   
@@ -106,7 +106,7 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
   
 <a name="Installing__NET_Framework_3_0"></a>   
 ## Installing the .NET Framework  
- To run a [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] application, the Microsoft .NET Framework must be installed on the client. Internet Explorer automatically detects whether clients are installed with .NET Framework when [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] browser-hosted applications are viewed. If the .NET Framework is not installed, Internet Explorer prompts users to install it.  
+ To run a WPF application, the Microsoft .NET Framework must be installed on the client. Internet Explorer automatically detects whether clients are installed with .NET Framework when WPF browser-hosted applications are viewed. If the .NET Framework is not installed, Internet Explorer prompts users to install it.  
   
  To detect whether the .NET Framework is installed, Internet Explorer includes a bootstrapper application that is registered as the fallback Multipurpose Internet Mail Extensions (MIME) handler for content files with the following extensions: .xaml, .xps, .xbap, and .application. If you navigate to these file types and the .NET Framework is not installed on the client, the bootstrapper application requests permission to install it. If permission is not provided, neither the .NET Framework nor the application is installed.  
   

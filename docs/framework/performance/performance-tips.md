@@ -24,17 +24,17 @@ The term *performance* generally refers to the execution speed of a program. You
   
 ## Other Resources  
   
-- [Writing Faster Managed Code: Know What Things Cost](https://go.microsoft.com/fwlink/?LinkId=99294)  
+- [Writing Faster Managed Code: Know What Things Cost](https://docs.microsoft.com/previous-versions/dotnet/articles/ms973852(v=msdn.10))  
   
-- [Writing High-Performance Managed Applications: A Primer](https://go.microsoft.com/fwlink/?LinkId=99295)  
+- [Writing High-Performance Managed Applications: A Primer](https://docs.microsoft.com/previous-versions/dotnet/articles/ms973858(v=msdn.10))  
   
-- [Garbage Collector Basics and Performance Hints](https://go.microsoft.com/fwlink/?LinkId=99296)  
+- [Garbage Collector Basics and Performance Hints](https://docs.microsoft.com/previous-versions/dotnet/articles/ms973837(v=msdn.10))  
   
-- [Performance Tips and Tricks in .NET Applications](https://go.microsoft.com/fwlink/?LinkId=99297)  
+- [Performance Tips and Tricks in .NET Applications](https://docs.microsoft.com/previous-versions/dotnet/articles/ms973839(v=msdn.10))  
 
-- [Rico Mariani's Performance Tidbits](https://go.microsoft.com/fwlink/?LinkId=115679)  
+- [Rico Mariani's Performance Tidbits](https://docs.microsoft.com/archive/blogs/ricom/)  
 
-- [Vance Morrison's Blog](https://blogs.msdn.microsoft.com/vancem/)
+- [Vance Morrison's Blog](https://docs.microsoft.com/archive/blogs/vancem/)
   
 ## See also
 

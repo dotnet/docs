@@ -1,5 +1,5 @@
 ---
-title: "Dim Statement (Visual Basic)"
+title: "Dim Statement"
 ms.date: 05/12/2018
 f1_keywords:
   - "vb.Dim"

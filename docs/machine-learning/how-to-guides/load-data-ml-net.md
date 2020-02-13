@@ -1,6 +1,6 @@
 ---
 title: Load data from files and other sources
-description: This how-to shows you how to load data for processing and training into ML.NET. The data is originally stored in files or other data sources such as databases, JSON, XML or in-memory collections.
+description: Learn how to load data for processing and training into ML.NET using the API. Data is stored in files, databases, JSON, XML or in-memory collections.
 ms.date: 11/07/2019
 author: luisquintanilla
 ms.author: luquinta
@@ -10,7 +10,9 @@ ms.custom: mvc,how-to, title-hack-0625
 
 # Load data from files and other sources
 
-This how-to shows you how to load data for processing and training into ML.NET. The data is originally stored in files or other data sources such as databases, JSON, XML or in-memory collections.
+Learn how to load data for processing and training into ML.NET using the API. The data is originally stored in files or other data sources such as databases, JSON, XML or in-memory collections.
+
+If you're using Model Builder, see [Load training data into Model Builder](load-data-model-builder.md).
 
 ## Create the data model
 
@@ -209,4 +211,5 @@ IDataView data = mlContext.Data.LoadFromEnumerable<HousingData>(inMemoryCollecti
 
 ## Next steps
 
-If you're using Model Builder to train the machine learning model, see [Load training data into Model Builder](load-data-model-builder.md).
+- To clean or otherwise process data, see [Prepare data for building a model](prepare-data-ml-net.md).
+- When you're ready to build a model, see [Train and evaluate a model](train-machine-learning-model-ml-net.md).

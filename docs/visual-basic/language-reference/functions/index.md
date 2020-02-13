@@ -1,5 +1,5 @@
 ---
-title: "Functions (Visual Basic)"
+title: "Functions"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Visual Basic, functions"
@@ -25,5 +25,3 @@ The topics in this section contain tables of the Visual Basic run-time member fu
   
 ## Related Sections  
  [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)  
-  
- [Visual Basic](../../../visual-basic/index.md)

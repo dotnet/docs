@@ -1,6 +1,5 @@
 ---
 title: "new constraint - C# Reference"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "new constraint keyword [C#]"

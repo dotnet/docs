@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: ebaad1d5-ee0a-4cb0-96bc-8ba5d371b747
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ExceptionUnwindFunctionLeave Method
 Notifies the profiler that the unwind phase of exception handling has finished unwinding a function.  

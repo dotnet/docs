@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: ade2cc01-9b81-4e09-a5f9-b3b9dda27e96
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::UnmanagedToManagedTransition Method
 Notifies the profiler that a transition from unmanaged code to managed code has occurred.  

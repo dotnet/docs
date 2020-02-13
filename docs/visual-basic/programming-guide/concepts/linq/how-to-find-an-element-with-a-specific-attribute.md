@@ -1,5 +1,5 @@
 ---
-title: "How to: Find an Element with a Specific Attribute (Visual Basic)"
+title: "How to: Find an Element with a Specific Attribute"
 ms.date: 07/20/2015
 ms.assetid: 59fb7c19-d42f-40eb-8cf8-f1d5b9658eb7
 ---

@@ -4,7 +4,7 @@ In ASP.NET Core 3.0 Preview 7, the SignalR JavaScript client package name change
 
 To react to this change, change references in your *package.json* files, `require` statements, and ECMAScript `import` statements. No API will change as part of this rename.
 
-For discussion, see [aspnet/AspNetCore#11637](https://github.com/aspnet/AspNetCore/issues/11637).
+For discussion, see [dotnet/aspnetcore#11637](https://github.com/dotnet/aspnetcore/issues/11637).
 
 #### Version introduced
 

@@ -57,13 +57,13 @@ While queries across microservices are challenging, implementing a transaction a
 
 **Figure 5-8**. Implementing a transaction across microservices
 
-Note how in the previous figure five independent microservices all participate in a distributed *Create Order* transaction. However, the transaction for each of the five individual microservices must succeed, or all must abort and roll-back the operation. While built-in transactional support is available inside each of the microservices, there's no support for a distributed transaction across all five services.
+Note how in the previous figure five independent microservices all participate in a distributed *Create Order* transaction. However, the transaction for each of the five individual microservices must succeed, or all must abort and roll back the operation. While built-in transactional support is available inside each of the microservices, there's no support for a distributed transaction across all five services.
 
 Since transactional support is essential for this operation to keep the data consistent in each of the microservices, you have to programmatically construct a distributed transaction.
 
 A popular pattern for programmatically adding transactional support is the [Saga pattern](https://blog.couchbase.com/saga-pattern-implement-business-transactions-using-microservices-part/). It's implemented by grouping local transactions together and sequentially invoking each one. If a local transaction fails, the Saga aborts the operation and invokes a set of [compensating transactions](https://docs.microsoft.com/azure/architecture/patterns/compensating-transaction) to undo the changes made by the preceding local transactions. Figure 5-9 shows a failed transaction with the Saga pattern.
 
-![Rollback in saga pattern](./media/saga-rollback-operation.png)
+![Roll back in saga pattern](./media/saga-rollback-operation.png)
 
 **Figure 5-9**. Rolling back a transaction
 
@@ -133,7 +133,7 @@ NoSQL databases can be categorized by the following four models:
 
 NoSQL databases can be optimized to deal with large-scale data, especially when the data is relatively simple. Consider a NoSQL database when:
 
-- Your workload requires large-scale and high-concurrency.
+- Your workload requires a large scale and high concurrency.
 - You have large numbers of users.
 - Your data can be expressed simply without relationships.
 - You need to geographically distribute your data.

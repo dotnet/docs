@@ -22,5 +22,5 @@ The topics in this section provide details about properties of the SQL Workflow 
   
 ## See also
 
-- [Windows Server App Fabric Instance Store](https://go.microsoft.com/fwlink/?LinkId=201201)
-- [App Fabric SQL Server Persistence Database](https://go.microsoft.com/fwlink/?LinkId=201202)
+- [Windows Server App Fabric Instance Store](https://docs.microsoft.com/previous-versions/appfabric/ff383417(v=azure.10))
+- [App Fabric SQL Server Persistence Database](https://docs.microsoft.com/previous-versions/appfabric/ee790819(v=azure.10))

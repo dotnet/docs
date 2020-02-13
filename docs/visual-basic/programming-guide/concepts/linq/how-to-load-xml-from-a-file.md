@@ -1,5 +1,5 @@
 ---
-title: "How to: Load XML from a File (Visual Basic)"
+title: "How to: Load XML from a File"
 ms.date: 07/20/2015
 ms.assetid: e2d337ad-8ac8-4671-b694-30e5ca1413b7
 ---

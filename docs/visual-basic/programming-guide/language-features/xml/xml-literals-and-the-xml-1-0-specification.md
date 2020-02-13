@@ -1,5 +1,5 @@
 ---
-title: "XML Literals and the XML 1.0 Specification (Visual Basic)"
+title: "XML Literals and the XML 1.0 Specification"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "XML literals [Visual Basic], XML 1.0 specification"

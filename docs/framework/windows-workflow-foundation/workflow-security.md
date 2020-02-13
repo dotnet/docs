@@ -24,17 +24,17 @@ Windows Workflow Foundation (WF) is integrated with several different technologi
 
 - When large numbers of child activities, locations, bookmarks, host extensions, or scopes are used, or when bookmarks with very large payloads are used, memory can be exhausted, or undue amounts of database space can be allocated during persistence. This can be mitigated by using object-level and database-level security.
 
-- When using <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>, the instance store must be secured. For more information, see [SQL Server Best Practices](https://go.microsoft.com/fwlink/?LinkId=164972).
+- When using <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore>, the instance store must be secured.
 
-- Sensitive data in the instance store should be encrypted. For more information, see [SQL Security Encryption](https://go.microsoft.com/fwlink/?LinkId=164976).
+- Sensitive data in the instance store should be encrypted. For more information, see [SQL Server Encryption](/sql/relational-databases/security/encryption/sql-server-encryption).
 
 - Since the database connection string is often included in a configuration file, windows-level security (ACL) should be used to ensure that the configuration file (Web.Config usually) is secure, and that login and password information are not included in the connection string. Windows authentication should be used between the database and the web server instead.
 
 ## Considerations for WorkflowServiceHost
 
-- Windows Communication Foundation (WCF) endpoints used in workflows should be secured. For more information, see [WCF Security Overview](https://go.microsoft.com/fwlink/?LinkID=164975).
+- Windows Communication Foundation (WCF) endpoints used in workflows should be secured. For more information, see [WCF Security Overview](../wcf/feature-details/security-overview.md).
 
-- Host-level authorization can be implemented by using <xref:System.ServiceModel.ServiceAuthorizationManager>. See [How To: Create a Custom Authorization Manager for a Service](https://go.microsoft.com/fwlink/?LinkId=192228) for details.
+- Host-level authorization can be implemented by using <xref:System.ServiceModel.ServiceAuthorizationManager>. See [How To: Create a Custom Authorization Manager for a Service](../wcf/extending/how-to-create-a-custom-authorization-manager-for-a-service.md) for details.
 
 - The ServiceSecurityContext for the incoming message is also available from within workflow by accessing OperationContext.
 

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: e33265be-c25d-4145-ad02-c3e89d6f26c1
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # INotifySink2::OnSyncCallEnter Method
 Gets invoked when entering a call.  

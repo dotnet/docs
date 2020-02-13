@@ -1,6 +1,5 @@
 ---
 title: "General Structure of a C# Program - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "C# language, program structure"

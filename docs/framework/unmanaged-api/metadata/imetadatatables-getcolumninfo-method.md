@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 68c160ea-ae7d-4750-985d-a038b2c8e7d9
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataTables::GetColumnInfo Method
 Gets data about the specified column in the specified table.  

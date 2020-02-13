@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 29da20ca-bf39-4356-8099-d9c3ac3423a9
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::COMClassicVTableDestroyed Method
 Notifies the profiler that a COM interop vtable is being destroyed.  

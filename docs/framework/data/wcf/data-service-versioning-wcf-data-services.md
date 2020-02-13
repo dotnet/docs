@@ -47,7 +47,7 @@ The Open Data Protocol (OData) enables you to create data services so that clien
 ## OData Protocol Versions
  As new versions of OData are released, client applications may not be using the same version of the OData protocol that is supported by the data service. An older client application may access a data service that supports a newer version of OData. A client application may also be using a newer version of the WCF Data Services client library, which supports a newer version of OData than does the data service that is being accessed.
 
- WCF Data Services leverages the support provided by OData to handle such versioning scenarios. There is also support for generating and using data model metadata to create client data service classes when the client uses a different version of OData than the data service uses. For more information, see [OData: Protocol Versioning](https://go.microsoft.com/fwlink/?LinkId=186071).
+ WCF Data Services leverages the support provided by OData to handle such versioning scenarios. There is also support for generating and using data model metadata to create client data service classes when the client uses a different version of OData than the data service uses. For more information, see the Protocol Versioning section in the [OData: Overview](https://www.odata.org/documentation/odata-version-2-0/overview/) article.
 
 ### Version Negotiation
  The data service can be configured to define the highest version of the OData protocol that will be used by the service, regardless of the version requested by the client. You can do this by specifying a <xref:System.Data.Services.Common.DataServiceProtocolVersion> value for the <xref:System.Data.Services.DataServiceBehavior.MaxProtocolVersion%2A> property of the <xref:System.Data.Services.DataServiceBehavior> used by the data service. For more information, see [Configuring the Data Service](configuring-the-data-service-wcf-data-services.md).
@@ -58,14 +58,14 @@ The Open Data Protocol (OData) enables you to create data services so that clien
 
 |OData Protocol Version|Support introduced in…|
 |-----------------------------------------------------------------------------------|----------------------------|
-|Version 1|-   [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] Service Pack 1 (SP1)<br />-   Silverlight version 3|
-|Version 2|-   .NET Framework 4<br />-   An update to [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] SP1. You can download and install the update from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=158125).<br />-   Silverlight version 4|
+|Version 1|-   .NET Framework 3.5 Service Pack 1 (SP1)<br />-   Silverlight version 3|
+|Version 2|-   .NET Framework 4<br />-   An update to .NET Framework 3.5 SP1. You can download and install the update from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=158125).<br />-   Silverlight version 4|
 |Version 3|-   You can download and install a pre-release version that supports OData version 3 from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkId=203885).|
 
 ### Metadata Versions
  By default, WCF Data Services uses version 1.1 of CSDL to represent a data model. This is always the case for data models that are based on either a reflection provider or a custom data service provider. However, when the data model is defined by using the Entity Framework, the version of CSDL returned is the same as the version that is used by the Entity Framework. The version of the CSDL is determined by the namespace of the [Schema element (CSDL)](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec#schema-element-csdl).
 
- The `DataServices` element of the returned metadata also contains a `DataServiceVersion` attribute, which is the same value as the `DataServiceVersion` header in the response message. Client applications, such as the **Add Service Reference** dialog box in Visual Studio, use this information to generate client data service classes that work correctly with the version of WCF Data Services that host the data service. For more information, see [OData: Protocol Versioning](https://go.microsoft.com/fwlink/?LinkId=186071).
+ The `DataServices` element of the returned metadata also contains a `DataServiceVersion` attribute, which is the same value as the `DataServiceVersion` header in the response message. Client applications, such as the **Add Service Reference** dialog box in Visual Studio, use this information to generate client data service classes that work correctly with the version of WCF Data Services that host the data service. For more information, see the Protocol Versioning section in the [OData: Overview](https://www.odata.org/documentation/odata-version-2-0/overview/) article.
 
 ## See also
 

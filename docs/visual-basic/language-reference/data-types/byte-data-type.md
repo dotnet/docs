@@ -1,5 +1,5 @@
 ---
-title: "Byte Data Type (Visual Basic)"
+title: "Byte Data Type"
 ms.date: 01/31/2018
 f1_keywords: 
   - "vb.Byte"

@@ -1,5 +1,5 @@
 ---
-title: "Working with Global Namespaces (Visual Basic) (LINQ to XML)"
+title: "Working with Global Namespaces (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 0a8064d5-e02f-4315-ad48-6deaa443a2f0
 ---

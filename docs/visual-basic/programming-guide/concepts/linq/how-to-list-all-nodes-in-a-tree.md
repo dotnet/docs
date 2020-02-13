@@ -1,5 +1,5 @@
 ---
-title: "How to: List All Nodes in a Tree (Visual Basic)"
+title: "How to: List All Nodes in a Tree"
 ms.date: 07/20/2015
 ms.assetid: e19289c4-26d1-435b-b0db-fb8bc856b753
 ---

@@ -2,7 +2,7 @@
 title: Introduction to Docker
 description: This article provides an introduction and overview to Docker in the context of a .NET Core application.
 ms.date: 03/20/2019
-ms.custom: "mvc, seodec18"
+ms.custom: "mvc"
 ---
 
 # Introduction to .NET and Docker

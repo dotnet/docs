@@ -1,5 +1,5 @@
 ---
-title: "How to: Write Event Information to a Text File (Visual Basic)"
+title: "How to: Write Event Information to a Text File"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "event logs [Visual Studio], writing event information"

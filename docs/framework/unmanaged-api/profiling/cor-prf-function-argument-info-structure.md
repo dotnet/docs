@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 07cf3bab-e193-4991-8205-3f41cf2d67b3
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # COR_PRF_FUNCTION_ARGUMENT_INFO Structure
 Represents a function's arguments, in left-to-right order.  

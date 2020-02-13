@@ -1,5 +1,5 @@
 ---
-title: "Object Variables in Visual Basic"
+title: "Object Variables"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "object variables [Visual Basic], about object variables"

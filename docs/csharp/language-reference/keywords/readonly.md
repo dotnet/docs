@@ -1,6 +1,5 @@
 ---
 title: "readonly keyword - C# Reference"
-ms.custom: seodec18
 ms.date: 06/21/2018
 f1_keywords: 
   - "readonly_CSharpKeyword"
@@ -97,7 +96,7 @@ You gain two advantages by applying the `readonly` modifier to applicable `struc
 
 The `readonly` modifier is valid on most members of a `struct`, including methods that override methods declared in <xref:System.Object?displayProperty=nameWithType>. There are some restrictions:
 
-- You can't declare `readonly` static members.
+- You can't declare `readonly` static methods or properties.
 - You can't declare `readonly` constructors.
 
 You can add the `readonly` modifier to a property or indexer declaration:

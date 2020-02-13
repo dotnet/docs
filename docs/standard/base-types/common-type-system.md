@@ -16,7 +16,6 @@ helpviewer_keywords:
   - "namespaces [.NET Framework], types"
   - "types, about types"
 ms.assetid: 53c57c96-83e1-4ee3-9543-9ac832671a89
-ms.custom: seodec18
 ---
 # Common Type System
 The common type system defines how types are declared, used, and managed in the common language runtime, and is also an important part of the runtime's support for cross-language integration. The common type system performs the following functions:  

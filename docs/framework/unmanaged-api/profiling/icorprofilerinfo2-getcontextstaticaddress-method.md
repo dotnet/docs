@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 2b374116-0972-416a-8cf5-79213129be9a
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo2::GetContextStaticAddress Method
 Gets the address for the specified context-static field that is in the scope of the specified context.  

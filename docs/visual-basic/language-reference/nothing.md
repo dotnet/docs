@@ -1,5 +1,5 @@
 ---
-title: "Nothing keyword - Visual Basic"
+title: "Nothing keyword"
 ms.date: 07/20/2015
 f1_keywords:
   - "Nothing"

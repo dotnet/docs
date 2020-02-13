@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 051465b9-e479-494a-804b-c880323b4cbe
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerFunctionEnum::Skip Method
 Advances the enumerator's cursor from its current position so that the specified number of elements are skipped.  

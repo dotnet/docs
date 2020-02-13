@@ -363,7 +363,7 @@ If the “redelivered” flag is set, the receiver must take that into account, 
     <https://docs.microsoft.com/previous-versions/msp-n-p/dn589800(v=pandp.10)>
 
 - **Rick Saling. The CAP Theorem: Why “Everything is Different” with the Cloud and Internet** \
-    <https://blogs.msdn.microsoft.com/rickatmicrosoft/2013/01/03/the-cap-theorem-why-everything-is-different-with-the-cloud-and-internet/>
+    <https://docs.microsoft.com/archive/blogs/rickatmicrosoft/the-cap-theorem-why-everything-is-different-with-the-cloud-and-internet/>
 
 - **Eric Brewer. CAP Twelve Years Later: How the "Rules" Have Changed** \
     <https://www.infoq.com/articles/cap-twelve-years-later-how-the-rules-have-changed>

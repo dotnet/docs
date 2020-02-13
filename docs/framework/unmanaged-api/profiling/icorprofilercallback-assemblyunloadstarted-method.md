@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 6e47b7e5-0335-4dd3-8c42-d3c07d62b102
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::AssemblyUnloadStarted Method
 Notifies the profiler that an assembly is being unloaded.  

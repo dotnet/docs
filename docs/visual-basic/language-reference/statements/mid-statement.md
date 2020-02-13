@@ -1,5 +1,5 @@
 ---
-title: "Mid Statement (Visual Basic)"
+title: "Mid Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.MidB"

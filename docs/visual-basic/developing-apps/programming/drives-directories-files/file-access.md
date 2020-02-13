@@ -1,5 +1,5 @@
 ---
-title: "File Access with Visual Basic"
+title: "File Access"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "file access"

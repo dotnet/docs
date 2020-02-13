@@ -1,5 +1,5 @@
 ---
-title: "How to: Write Log Messages (Visual Basic)"
+title: "How to: Write Log Messages"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "My.Application.Log object, writing log messages"

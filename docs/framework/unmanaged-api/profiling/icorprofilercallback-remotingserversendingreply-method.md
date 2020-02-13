@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: dfe84a19-2e03-4be2-8b25-f02bad38e4a9
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::RemotingServerSendingReply Method
 Notifies the profiler that the process has finished processing a remote method invocation request and is about to transmit the reply through a channel.  

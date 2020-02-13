@@ -1,5 +1,5 @@
 ---
-title: "User-Defined Data Type (Visual Basic)"
+title: "User-Defined Data Type"
 ms.date: 07/20/2015
 f1_keywords:
   - "UserDefined"

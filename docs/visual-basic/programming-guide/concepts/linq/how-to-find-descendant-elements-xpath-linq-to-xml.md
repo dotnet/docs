@@ -1,5 +1,5 @@
 ---
-title: "How to: Find Descendant Elements (XPath-LINQ to XML) (Visual Basic)"
+title: "How to: Find Descendant Elements (XPath-LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: e7e2dc9e-bda9-420d-a5b1-4fabf1cca46b
 ---

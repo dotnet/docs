@@ -1,5 +1,5 @@
 ---
-title: "Creating Custom Log Listeners (Visual Basic)"
+title: "Creating Custom Log Listeners"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "custom log listeners"

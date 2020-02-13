@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 4400fb8c-0407-4791-8557-f011fd2aee51
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo3::GetRuntimeInformation Method
 Provides version information about the common language runtime (CLR) that is being profiled.  

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 55674b68-678a-4747-ae06-4e91519c7305
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ClassUnloadFinished Method
 Notifies the profiler that a class has finished unloading.  

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: dbab7d90-d515-4dc9-8195-294d5d04bab6
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::AppDomainCreationFinished Method
 Notifies the profiler that an application domain has been created.  

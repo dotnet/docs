@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: d6a5fa8b-09c6-47a5-b60e-6cf2e355df30
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::FunctionUnloadStarted Method
 Notifies the profiler that the runtime has started to unload a function.  

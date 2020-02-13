@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 8cdac941-8b94-4497-b874-4e571785f3fe
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # FunctionLeave2 Function
 Notifies the profiler that a function is about to return to the caller and provides information about the stack frame and function return value.  

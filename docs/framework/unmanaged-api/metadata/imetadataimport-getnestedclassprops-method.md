@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 704d19f1-bdef-4745-af8c-6476eb246fb3
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetNestedClassProps Method
 Gets the TypeDef token for the parent <xref:System.Type> of the specified nested type.  

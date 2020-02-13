@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "interop events [.NET Framework]"
   - "ETW, interop events (CLR)"
 ms.assetid: eb6eac2e-45f4-4923-a32c-38f203da66df
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Interop ETW Events
 Interop events capture information about Microsoft intermediate language (MSIL) stub generation and caching.  

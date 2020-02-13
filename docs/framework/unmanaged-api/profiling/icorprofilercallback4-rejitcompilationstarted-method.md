@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 512fdd00-262a-4456-a075-365ef4133c4d
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback4::ReJITCompilationStarted Method
 Notifies the profiler that the just-in-time (JIT) compiler has started to recompile a function.  

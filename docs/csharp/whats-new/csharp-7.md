@@ -262,8 +262,7 @@ work begins:
 
 > [!NOTE]
 > Some of the designs that are supported by local functions
-> could also be accomplished using *lambda expressions*. Those
-> interested can [read more about the differences](../local-functions-vs-lambdas.md)
+> could also be accomplished using *lambda expressions*. For more information, see [Local functions vs. lambda expressions](../local-functions-vs-lambdas.md).
 
 ## More expression-bodied members
 

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 7d0d6fb7-bc9d-40f0-8163-c0d162eaba7d
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # COR_PRF_EX_CLAUSE_INFO Structure
 Stores information about a specific exception clause instance and its associated frame.  

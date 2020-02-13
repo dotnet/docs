@@ -1,5 +1,5 @@
 ---
-title: "Nullable Value Types - Visual Basic"
+title: "Nullable Value Types"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Nullable"

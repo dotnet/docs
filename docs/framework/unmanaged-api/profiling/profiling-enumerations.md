@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "enumerations [.NET Framework profiling]"
   - "unmanaged enumerations [.NET Framework], profiling"
 ms.assetid: 8d5f9570-9853-4ce8-8101-df235d5b258e
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Profiling Enumerations
 This section describes the unmanaged enumerations that the profiling API uses.  

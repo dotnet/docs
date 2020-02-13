@@ -12,7 +12,7 @@ Specifies whether garbage collection supports multiple CPU groups.
 
 [**\<configuration>**](../configuration-element.md)\
 &nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
-&nbsp;&nbsp;&nbsp;&nbsp;**\<GCCpuGroup>**  
+&nbsp;&nbsp;&nbsp;&nbsp;**\<GCCpuGroup>**
 
 ## Syntax
 

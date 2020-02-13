@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Tree from an XmlReader (Visual Basic)"
+title: "How to: Create a Tree from an XmlReader"
 ms.date: 07/20/2015
 ms.assetid: 6de683d8-177d-402b-b0de-d0539f1ce5d8
 ---

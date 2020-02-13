@@ -1,8 +1,6 @@
 ---
 title: Install the .NET Framework on Windows 10
 description: Learn how to install the .NET Framework on Windows 10 or Windows Server 2016.
-author: rlander
-ms.author: mairaw
 ms.date: 04/18/2019
 ms.custom: "updateeachrelease"
 ---

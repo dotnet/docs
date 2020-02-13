@@ -1,5 +1,5 @@
 ---
-title: "Getting Information about the Computer (Visual Basic)"
+title: "Getting Information about the Computer"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "My.Computer.Info object [Visual Basic], tasks"

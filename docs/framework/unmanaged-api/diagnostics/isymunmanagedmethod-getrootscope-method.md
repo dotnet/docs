@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 7d58caac-2e75-4dfa-9249-32d8a624b247
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedMethod::GetRootScope Method
 Gets the root lexical scope within this method. This scope encloses the entire method.  

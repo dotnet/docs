@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 249f9892-b5a9-41e1-b329-28a925904df6
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # FunctionTailcall2 Function
 Notifies the profiler that the currently executing function is about to perform a tail call to another function and provides information about the stack frame.  

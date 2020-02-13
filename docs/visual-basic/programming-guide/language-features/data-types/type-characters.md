@@ -1,5 +1,5 @@
 ---
-title: "Type Characters (Visual Basic)"
+title: "Type Characters"
 ms.date: 01/31/2018
 helpviewer_keywords: 
   - "&H prefix for hexadecimal values"

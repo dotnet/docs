@@ -39,7 +39,7 @@ For a sample application, see [User Name Password Validator](../samples/user-nam
     When using transport-level security over HTTP(S), add either the [\<wsHttpBinding>](../../configure-apps/file-schema/wcf/wshttpbinding.md) or [\<basicHttpBinding>](../../configure-apps/file-schema/wcf/basichttpbinding.md), a [\<netTcpBinding>](../../configure-apps/file-schema/wcf/nettcpbinding.md) or a [\<customBinding>](../../configure-apps/file-schema/wcf/custombinding.md) that uses HTTP(S) and the `Basic` authentication scheme.
 
     > [!NOTE]
-    > When [!INCLUDE[netfx35_long](../../../../includes/netfx35-long-md.md)] or later is used, you can use a custom username and password validator with message and transport security. With WinFX, a custom username and password validator can only be used with message security.
+    > When using .NET Framework 3.5 or later versions, you can use a custom username and password validator with message and transport security. With WinFX, a custom username and password validator can only be used with message security.
 
     > [!TIP]
     > For more information on using \<netTcpBinding> in this context, see [\<security>](../../configure-apps/file-schema/wcf/security-of-nettcpbinding.md).

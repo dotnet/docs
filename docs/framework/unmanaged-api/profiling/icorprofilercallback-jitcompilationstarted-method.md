@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 31782b36-d311-4518-8f45-25f65385af5b
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::JITCompilationStarted Method
 Notifies the profiler that the just-in-time (JIT) compiler has started to compile a function.  

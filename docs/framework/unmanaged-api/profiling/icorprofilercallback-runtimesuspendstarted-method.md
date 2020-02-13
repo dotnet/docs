@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: c8461cac-e31b-4efa-ad2c-26598173eb96
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::RuntimeSuspendStarted Method
 Notifies the profiler that the runtime is about to suspend all runtime threads.  

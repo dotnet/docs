@@ -1,5 +1,5 @@
 ---
-title: "How to: Create Property Grids for User Settings in Visual Basic"
+title: "How to: Create Property Grids for User Settings"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My.Settings object [Visual Basic], creating property grids for user settings"

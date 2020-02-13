@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: a3d7cf29-1414-49e6-8aae-9b3283c4f5f0
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # SetAssemblyProps Method
 Assigns assembly-level properties.  

@@ -1,5 +1,5 @@
 ---
-title: "Retrieving the Paragraphs and Their Styles (Visual Basic)"
+title: "Retrieving the Paragraphs and Their Styles"
 ms.date: 07/20/2015
 ms.assetid: d9ed2238-d38e-4ad4-b88b-db7859df9bde
 ---

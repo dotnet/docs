@@ -1,5 +1,5 @@
 ---
-title: "How to: Count, Sum, or Average Data by Using LINQ (Visual Basic)"
+title: "How to: Count, Sum, or Average Data by Using LINQ"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "average operator [LINQ in Visual Basic]"

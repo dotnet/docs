@@ -1,5 +1,5 @@
 ---
-title: "<para> (Visual Basic)"
+title: "<para>"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "<para> XML tag"

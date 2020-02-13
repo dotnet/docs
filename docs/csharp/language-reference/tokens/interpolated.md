@@ -1,6 +1,5 @@
 ---
 title: "$ - string interpolation - C# reference"
-ms.custom: seodec18
 description: String interpolation provides a more readable and convenient syntax to format string output than traditional string composite formatting.
 ms.date: 09/02/2019
 f1_keywords: 

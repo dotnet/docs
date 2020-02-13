@@ -1,5 +1,5 @@
 ---
-title: "Customizing Projects and Extending My with Visual Basic"
+title: "Customizing Projects and Extending My"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My namespace [Visual Basic], customizing"

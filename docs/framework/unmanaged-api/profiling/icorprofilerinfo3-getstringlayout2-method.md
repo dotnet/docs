@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 1a268496-ee51-4d84-8700-ee56fd0c499d
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo3::GetStringLayout2 Method
 Gets information about the layout of a string object. This method supersedes the [ICorProfilerInfo2::GetStringLayout](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-getstringlayout-method.md) method.  

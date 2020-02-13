@@ -1,5 +1,5 @@
 ---
-title: "How to: Split a File Into Many Files by Using Groups (LINQ) (Visual Basic)"
+title: "How to: Split a File Into Many Files by Using Groups (LINQ)"
 ms.date: 07/20/2015
 ms.assetid: 5e8b2a2b-0b1d-4933-8a2b-03e91dfaf77f
 ---
@@ -110,9 +110,9 @@ End Class
 
 The program writes a separate file for each group in the same folder as the data files.
 
-## Compiling the Code
+## Compile the code
 
-Create a VB.NET console application project, with an `Imports` statement for the System.Linq namespace.
+Create a Visual Basic console application project, with an `Imports` statement for the System.Linq namespace.
 
 ## See also
 

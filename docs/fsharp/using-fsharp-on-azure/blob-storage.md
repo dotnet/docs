@@ -242,5 +242,5 @@ A free, standalone app from Microsoft that enables you to work visually with Azu
 - [Transfer data with the AzCopy command-line utility on Windows](/azure/storage/common/storage-use-azcopy)
 - [Transfer data with the AzCopy command-line utility on Linux](/azure/storage/common/storage-use-azcopy-linux)
 - [Configure Azure Storage connection strings](/azure/storage/common/storage-configure-connection-string)
-- [Azure Storage Team Blog](https://blogs.msdn.microsoft.com/windowsazurestorage/)
+- [Azure Storage Team Blog](https://docs.microsoft.com/archive/blogs/windowsazurestorage/)
 - [Quickstart: Use .NET to create a blob in object storage](/azure/storage/blobs/storage-quickstart-blobs-dotnet)

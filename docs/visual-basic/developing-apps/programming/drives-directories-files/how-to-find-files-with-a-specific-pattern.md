@@ -1,5 +1,5 @@
 ---
-title: "How to: Find Files with a Specific Pattern in Visual Basic"
+title: "How to: Find Files with a Specific Pattern"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "files [Visual Basic], finding"

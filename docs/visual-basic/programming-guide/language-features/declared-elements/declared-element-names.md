@@ -1,5 +1,5 @@
 ---
-title: "Declared Element Names (Visual Basic)"
+title: "Declared Element Names"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "declared elements [Visual Basic], case sensitivity"

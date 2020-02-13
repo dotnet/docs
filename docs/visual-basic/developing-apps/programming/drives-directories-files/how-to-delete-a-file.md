@@ -1,5 +1,5 @@
 ---
-title: "How to: Delete a File in Visual Basic"
+title: "How to: Delete a File"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Delete method [Visual Basic]"

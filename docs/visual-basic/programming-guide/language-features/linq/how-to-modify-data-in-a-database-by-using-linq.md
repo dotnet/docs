@@ -1,5 +1,5 @@
 ---
-title: "How to: Modify Data in a Database by Using LINQ (Visual Basic)"
+title: "How to: Modify Data in a Database by Using LINQ"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "inserting rows [LINQ to SQL]"

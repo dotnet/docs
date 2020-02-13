@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: fc663e76-e23f-49a8-bdd5-52cdf1a3b2b3
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo2::GetStaticFieldInfo Method
 Gets a value that indicates the kind of static that applies to the specified field.  

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 796b63f3-c809-47f1-89cc-b23ad8eb5e79
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::RemotingClientInvocationStarted Method
 Notifies the profiler that a remoting call has started.  

@@ -30,7 +30,7 @@ CodeBehind = "CodeBehind"
  Indicates whether the Windows Communication Foundation (WCF) service should be compiled with debug symbols. `true` if the WCF service should be compiled with debug symbols; otherwise, `false`.  
   
 #### Language  
- Specifies the language used when compiling all the inline code within file (.svc). The values can represent any .NET-supported language, including C#, VB, and JS, which refer to C#, Visual Basic .NET, and JScript .NET, respectively. This attribute is optional.  
+ Specifies the language used when compiling all the inline code within file (.svc). The values can represent any .NET-supported language, including `C#`, `VB`, and `JS`, which refer to C#, Visual Basic, and JScript .NET, respectively. This attribute is optional.  
   
 #### CodeBehind  
  Specifies the source file that implements the XML Web service, when the class that implements the XML Web service does not reside in the same file and has not been compiled into an assembly and placed in the \Bin directory.  

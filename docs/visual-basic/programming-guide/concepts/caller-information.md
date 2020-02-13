@@ -1,5 +1,5 @@
 ---
-title: "Caller Information (Visual Basic)"
+title: "Caller Information"
 ms.date: 07/20/2015
 ms.assetid: 15d556eb-4d0c-4497-98a3-7f60abb7d6a1
 ---

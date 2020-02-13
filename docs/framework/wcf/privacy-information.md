@@ -48,7 +48,7 @@ Microsoft is committed to protecting end-users' privacy. When you build an appli
 ## Auditing  
  Auditing records the success and failure of authentication and authorization events. Auditing records contain the following data: service URI, action URI, and the caller's identification.  
   
- Auditing also records when the administrator modifies the configuration of message logging (turning it on or off), because message logging may log application-specific data in headers and bodies. For [!INCLUDE[wxp](../../../includes/wxp-md.md)], a record is logged in the application event log. For [!INCLUDE[wv](../../../includes/wv-md.md)] and [!INCLUDE[ws2003](../../../includes/ws2003-md.md)], a record is logged in the security event log.  
+ Auditing also records when the administrator modifies the configuration of message logging (turning it on or off), because message logging may log application-specific data in headers and bodies. For [!INCLUDE[wxp](../../../includes/wxp-md.md)], a record is logged in the application event log. For Windows Vista and Windows Server 2003, a record is logged in the security event log.  
   
 ## Transactions  
  The transactions feature provides transactional services to a WCF application.  

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: a25a8f8b-5cfa-440d-9376-a1a1c3a9fc11
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo2::GetRVAStaticAddress Method
 Gets the address of the specified relative virtual address (RVA) static field.  

@@ -4,8 +4,6 @@ ms.date: "03/30/2017"
 helpviewer_keywords:
   - "CLR ETW events, logging"
 ms.assetid: ce13088e-3095-4f0e-9f6b-fad30bbd3d41
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Controlling .NET Framework Logging
 
@@ -13,7 +11,7 @@ You can use event tracing for Windows (ETW) to record common language runtime (C
 
 - The [Logman](/windows-server/administration/windows-commands/logman) and [Tracerpt](/windows-server/administration/windows-commands/tracerpt_1) command-line tools, which are included with the Windows operating system.
 
-- The [Xperf](/windows-hardware/test/wpt/xperf-command-line-reference) tools in the [Windows Performance Toolkit](/windows-hardware/test/wpt/). For more information about Xperf, see the [Windows Performance blog](https://go.microsoft.com/fwlink/?LinkId=179509).
+- The [Xperf](/windows-hardware/test/wpt/xperf-command-line-reference) tools in the [Windows Performance Toolkit](/windows-hardware/test/wpt/). For more information about Xperf, see the [Windows Performance blog](https://blogs.msdn.microsoft.com/pigscanfly/tag/xperf/).
 
 To capture CLR event information, the CLR provider must be installed on your computer. To confirm that the provider is installed, type `logman query providers` at the command prompt. A list of providers is displayed. This list should contain an entry for the CLR provider, as follows.
 

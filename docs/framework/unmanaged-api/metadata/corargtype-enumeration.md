@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 3c1cb268-57a0-4664-91c7-f6908ff29e32
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorArgType Enumeration
 Contains values that describe the native type of a runtime handle.  

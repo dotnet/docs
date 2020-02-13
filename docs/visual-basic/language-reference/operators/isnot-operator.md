@@ -1,5 +1,5 @@
 ---
-title: "IsNot Operator (Visual Basic)"
+title: "IsNot Operator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.isnot"

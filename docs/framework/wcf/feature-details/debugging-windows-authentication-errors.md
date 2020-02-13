@@ -12,7 +12,7 @@ ms.assetid: 181be4bd-79b1-4a66-aee2-931887a6d7cc
 # Debugging Windows Authentication Errors
 When using Windows authentication as a security mechanism, the Security Support Provider Interface (SSPI) handles security processes. When security errors occur at the SSPI layer, they are surfaced by Windows Communication Foundation (WCF). This topic provides a framework and set of questions to help diagnose the errors.  
   
- For an overview of the Kerberos protocol, see [Kerberos Explained](https://go.microsoft.com/fwlink/?LinkID=86946); for an overview of SSPI, see [SSPI](https://go.microsoft.com/fwlink/?LinkId=88941).  
+ For an overview of the Kerberos protocol, see [Kerberos Explained](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-2000-server/bb742516(v=technet.10)); for an overview of SSPI, see [SSPI](/windows/win32/secauthn/sspi).  
   
  For Windows authentication, WCF typically uses the *Negotiate* Security Support Provider (SSP), which performs Kerberos mutual authentication between the client and service. If the Kerberos protocol is not available, by default WCF falls back to NT LAN Manager (NTLM). However, you can configure WCF to use only the Kerberos protocol (and to throw an exception if Kerberos is not available). You can also configure WCF to use restricted forms of the Kerberos protocol.  
   
@@ -60,7 +60,7 @@ When using Windows authentication as a security mechanism, the Security Support 
   
  In load-balancing scenarios, such as Web farms or Web gardens, a common practice is to define a unique account for each application, assign an SPN to that account, and ensure that all of the application's services run in that account.  
   
- To obtain an SPN for your service's account, you need to be an Active Directory domain administrator. For more information, see [Kerberos Technical Supplement for Windows](https://go.microsoft.com/fwlink/?LinkID=88330).  
+ To obtain an SPN for your service's account, you need to be an Active Directory domain administrator. For more information, see [Kerberos Technical Supplement for Windows](https://docs.microsoft.com/previous-versions/msp-n-p/ff649429(v=pandp.10)).  
   
 #### Kerberos Protocol Direct Requires the Service to Run Under a Domain Machine Account  
  This occurs when the `ClientCredentialType` property is set to `Windows` and the <xref:System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential%2A> property is set to `false`, as shown in the following code.  
@@ -133,7 +133,7 @@ When using Windows authentication as a security mechanism, the Security Support 
  [!code-vb[C_DebuggingWindowsAuth#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_debuggingwindowsauth/vb/source.vb#3)]  
   
 #### SSPI Is Not Available  
- The following operating systems do not support Windows authentication when used as a server: [!INCLUDE[wxp](../../../../includes/wxp-md.md)] Home Edition, [!INCLUDE[wxp](../../../../includes/wxp-md.md)] Media Center Edition, and [!INCLUDE[wv](../../../../includes/wv-md.md)]Home editions.  
+ The following operating systems do not support Windows authentication when used as a server: [!INCLUDE[wxp](../../../../includes/wxp-md.md)] Home Edition, [!INCLUDE[wxp](../../../../includes/wxp-md.md)] Media Center Edition, and Windows Vista Home editions.  
   
 #### Developing and Deploying with Different Identities  
  If you develop your application on one machine, and deploy on another, and use different account types to authenticate on each machine, you may experience different behavior. For example, suppose you develop your application on a Windows XP Pro machine using the `SSPI Negotiated` authentication mode. If you use a local user account to authenticate with, then NTLM protocol will be used. Once the application is developed, you deploy the service to a Windows Server 2003 machine where it runs under a domain account. At this point the client will not be able to authenticate the service because it will be using Kerberos and a domain controller.  

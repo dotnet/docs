@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: d0f235b2-91fe-4f82-b7d5-e5c64186eea8
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # StackSnapshotCallback Function
 Provides the profiler with information about each managed frame and each run of unmanaged frames on the stack during a stack walk, which is initiated by the [ICorProfilerInfo2::DoStackSnapshot](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-dostacksnapshot-method.md) method.  

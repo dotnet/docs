@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Directory in Visual Basic"
+title: "How to: Create a Directory"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "directories [Visual Basic], creating"

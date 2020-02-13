@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "writing reliable code"
   - "code, reliability"
 ms.assetid: 294aa306-0afe-4cbe-b397-86ba9f1860f8
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Reliability
 It is important that code executing in server environments such as SQL Server protect against asynchronous exceptions. Reliability, as discussed here, is not specific to SQL Server but to writing reliable code for any host executing in a .NET Framework version 2.0 environment. However, SQL Server is the first service making extensive use of the new reliability features of version 2.0, so it is used as an example.  

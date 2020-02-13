@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 2868dfec-c992-4606-88bb-a8e0b6b18271
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataInfo::GetFileMapping Method
 Gets the memory region of the mapped file, and the type of mapping.  

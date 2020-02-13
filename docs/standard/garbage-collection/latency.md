@@ -48,7 +48,7 @@ When you use [GCLatencyMode.LowLatency](xref:System.Runtime.GCLatencyMode.LowLat
 
 - Avoid allocating high amounts of memory during low latency periods. Low memory notifications can occur because garbage collection reclaims fewer objects.
 
-- While in the low latency mode, minimize the number of new allocations, in particular allocations onto the Large Object Heap and pinned objects.
+- While in the low latency mode, minimize the number of new allocations, in particular allocations onto the large object heap and pinned objects.
 
 - Be aware of threads that could be allocating. Because the <xref:System.Runtime.GCSettings.LatencyMode%2A> property setting is process-wide, <xref:System.OutOfMemoryException> exceptions can be generated on any thread that is allocating.
 

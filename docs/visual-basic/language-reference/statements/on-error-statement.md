@@ -1,5 +1,5 @@
 ---
-title: "On Error Statement (Visual Basic)"
+title: "On Error Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.OnError"

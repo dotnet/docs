@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 24d0fcfa-1601-4fba-868f-da8c97303467
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerModuleEnum Interface
 Provides methods to sequentially iterate through a collection of modules loaded by the application or the profiler.  

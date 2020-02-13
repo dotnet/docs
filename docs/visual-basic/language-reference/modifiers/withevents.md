@@ -1,5 +1,5 @@
 ---
-title: "WithEvents (Visual Basic)"
+title: "WithEvents"
 ms.date: 07/20/2015
 f1_keywords:
   - "vb.WithEvents"

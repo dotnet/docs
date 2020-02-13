@@ -1,5 +1,5 @@
 ---
-title: "How to: Find an Element with a Specific Child Element (Visual Basic)"
+title: "How to: Find an Element with a Specific Child Element"
 ms.date: 07/20/2015
 ms.assetid: b0d0a463-6a85-46c3-8453-ad25b0ecf93c
 ---

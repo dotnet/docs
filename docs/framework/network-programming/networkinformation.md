@@ -20,6 +20,9 @@ The <xref:System.Net.NetworkInformation> namespace enables you to gather informa
 ## See also
 
 - [Network Programming Samples](network-programming-samples.md)
-- [Network Information Technology Sample](https://go.microsoft.com/fwlink/?LinkID=179564)
-- [NetStat Tool Technology Sample](https://go.microsoft.com/fwlink/?LinkID=179562)
-- [Ping Client Technology Sample](https://go.microsoft.com/fwlink/?LinkID=179565)
+
+<!-- to-do: review sample links
+- [Network Information Technology Sample](https://archive.msdn.microsoft.com/nclsamples/Wiki/View.aspx?title=Network%20Information)
+- [NetStat Tool Technology Sample](https://archive.msdn.microsoft.com/nclsamples/Wiki/View.aspx?title=NetStat%20Tool)
+- [Ping Client Technology Sample](https://archive.msdn.microsoft.com/nclsamples/Wiki/View.aspx?title=Ping%20Client)
+-->

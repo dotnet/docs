@@ -1,6 +1,5 @@
 ---
 title: "nameof operator - C# reference"
-ms.custom: seodec18
 ms.date: 07/12/2019
 f1_keywords:
   - "nameof_CSharpKeyword"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Copy of a File in a Different Directory in Visual Basic"
+title: "How to: Create a Copy of a File in a Different Directory"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My.Computer.FileSystem.CopyFile method, copying files [Visual Basic]"

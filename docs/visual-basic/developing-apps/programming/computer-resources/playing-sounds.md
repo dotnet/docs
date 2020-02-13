@@ -1,5 +1,5 @@
 ---
-title: "Playing Sounds (Visual Basic)"
+title: "Playing Sounds"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "system sounds, playing"

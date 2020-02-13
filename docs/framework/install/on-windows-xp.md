@@ -2,8 +2,6 @@
 title: Install the .NET Framework on Windows XP
 description: Learn how to install the .NET Framework on Windows XP.
 ms.custom: "updateeachrelease"
-author: rlander
-ms.author: mairaw
 ms.date: 04/18/2019
 ---
 

@@ -97,5 +97,5 @@ There are no object (*.obj*) files created as a result of invoking the C# compil
 - [C# Compiler Options Listed by Category](./listed-by-category.md)
 - [Main() and Command-Line Arguments](../../programming-guide/main-and-command-args/index.md)
 - [Command-Line Arguments](../../programming-guide/main-and-command-args/command-line-arguments.md)
-- [How to: Display Command-Line Arguments](../../programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)
+- [How to display command-line arguments](../../programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)
 - [Main() Return Values](../../programming-guide/main-and-command-args/main-return-values.md)

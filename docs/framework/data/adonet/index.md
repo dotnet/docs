@@ -13,7 +13,7 @@ ADO.NET is a set of classes that expose data access services for .NET Framework 
  [ADO.NET Overview](ado-net-overview.md)  
  Provides an introduction to the design and components of ADO.NET.  
   
- [Entity Framework](https://go.microsoft.com/fwlink/?LinkID=213876)  
+ [Entity Framework](/ef/ef6/index)  
  Describes how to create applications using the Entity Framework.  
   
  [Securing ADO.NET Applications](securing-ado-net-applications.md)  
@@ -45,7 +45,7 @@ ADO.NET is a set of classes that expose data access services for .NET Framework 
  Provides links to LINQ topics and samples using Visual Basic.  
   
  [WCF Data Services 4.5](../wcf/index.md)  
- Describes how to use [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] to deploy data services on the Web or an intranet that implement the Open Data Protocol (OData).  
+ Describes how to use WCF Data Services to deploy data services on the Web or an intranet that implement the Open Data Protocol (OData).  
   
  [.NET Framework Development Guide](../../development-guide.md)  
  Provides links to information about standard development tasks in the .NET Framework.  

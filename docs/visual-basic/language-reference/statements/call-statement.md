@@ -1,5 +1,5 @@
 ---
-title: "Call Statement (Visual Basic)"
+title: "Call Statement"
 ms.date: 07/20/2015
 f1_keywords:
   - "vb.Call"

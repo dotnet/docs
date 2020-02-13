@@ -3,7 +3,6 @@ title: .NET Core distribution packaging
 description: Learn how to package, name, and version .NET Core for distribution.
 author: tmds
 ms.date: 10/09/2019
-ms.custom: "seodec18"
 ---
 # .NET Core distribution packaging
 
@@ -78,7 +77,7 @@ The **shared** folder contains frameworks. A shared framework provides a set of 
 
 - (8) **LICENSE.txt,ThirdPartyNotices.txt** are the .NET Core license and licenses of third-party libraries used in .NET Core, respectively.
 
-- (9,10) **dotnet.1.gz, dotnet** `dotnet.1.gz` is the dotnet manual page. `dotnet` is a symlink to the dotnet host(1). These files are installed at well known locations for system integration.
+- (9,10) **dotnet.1.gz, dotnet** `dotnet.1.gz` is the dotnet manual page. `dotnet` is a symlink to the dotnet host(1). These files are installed at well-known locations for system integration.
 
 - (11,12) **Microsoft.NETCore.App.Ref,Microsoft.AspNetCore.App.Ref** describe the API of an `x.y` version of .NET Core and ASP.NET Core respectively. These packs are used when compiling for those target versions.
 
@@ -120,7 +119,7 @@ The following lists the recommended packages:
 - `dotnet-runtime-deps-[major].[minor]` _(Optional)_ - Installs the dependencies for running self-contained applications
   - **Version:** \<runtime version>
   - **Example:** dotnet-runtime-deps-2.1
-  - **Dependencies:** _distro specific dependencies_
+  - **Dependencies:** _distribution-specific dependencies_
 
 - `dotnet-runtime-[major].[minor]` - Installs a specific runtime
   - **Version:** \<runtime version>

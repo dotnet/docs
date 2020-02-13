@@ -9,10 +9,9 @@ helpviewer_keywords:
   - "WPF [WPF], getting started"
 ms.assetid: b96bed40-8946-4285-8fe4-88045ab854ed
 ms.topic: tutorial
-ms.custom: mvc
+ms.custom: "mvc,vs-dotnet"
 author: mairaw
 ms.author: mairaw
-ms.custom: vs-dotnet
 ---
 # Tutorial: Create your first WPF application in Visual Studio 2019
 

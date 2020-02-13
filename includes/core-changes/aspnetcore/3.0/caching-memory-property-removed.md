@@ -1,10 +1,10 @@
 ### Caching: CompactOnMemoryPressure property removed
 
-The ASP.NET Core 3.0 release removed the [obsolete MemoryCacheOptions APIs](https://github.com/aspnet/Extensions/blob/dc5c593da7b72c82e6fe85abb91d03818f9b700c/src/Caching/Memory/src/MemoryCacheOptions.cs#L17-L18).
+The ASP.NET Core 3.0 release removed the [obsolete MemoryCacheOptions APIs](https://github.com/dotnet/extensions/blob/dc5c593da7b72c82e6fe85abb91d03818f9b700c/src/Caching/Memory/src/MemoryCacheOptions.cs#L17-L18).
 
 #### Change description
 
-This change is a follow-up to [aspnet/Caching#221](https://github.com/aspnet/Caching/issues/221). For discussion, see [aspnet/Extensions#1062](https://github.com/aspnet/Extensions/issues/1062).
+This change is a follow-up to [aspnet/Caching#221](https://github.com/aspnet/Caching/issues/221). For discussion, see [dotnet/extensions#1062](https://github.com/dotnet/extensions/issues/1062).
 
 #### Version introduced
 

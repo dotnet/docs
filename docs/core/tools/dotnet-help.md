@@ -5,7 +5,7 @@ ms.date: 08/08/2019
 ---
 # dotnet help reference
 
-**This article applies to: ✓** .NET Core 2.0 SDK and later versions
+**This article applies to:** ✔️ .NET Core 2.0 SDK and later versions
 
 <!-- todo: uncomment when all CLI commands are reviewed
 [!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-2plus.md)]

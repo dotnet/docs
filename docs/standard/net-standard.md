@@ -10,15 +10,15 @@ ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
 ---
 # .NET Standard
 
-The [.NET Standard](https://github.com/dotnet/standard) is a formal specification of .NET APIs that are intended to be available on all .NET implementations. The motivation behind the .NET Standard is establishing greater uniformity in the .NET ecosystem. [ECMA 335](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) continues to establish uniformity for .NET implementation behavior, but there's no similar spec for the .NET Base Class Libraries (BCL) for .NET library implementations.
+[.NET Standard](https://github.com/dotnet/standard) is a formal specification of .NET APIs that are intended to be available on all .NET implementations. The motivation behind .NET Standard is establishing greater uniformity in the .NET ecosystem. [ECMA 335](https://github.com/dotnet/runtime/blob/master/docs/project/dotnet-standards.md) continues to establish uniformity for .NET implementation behavior, but there's no similar spec for the .NET Base Class Libraries (BCL) for .NET library implementations.
 
-The .NET Standard enables the following key scenarios:
+.NET Standard enables the following key scenarios:
 
 - Defines uniform set of BCL APIs for all .NET implementations to implement, independent of workload.
 - Enables developers to produce portable libraries that are usable across .NET implementations, using this same set of APIs.
 - Reduces or even eliminates conditional compilation of shared source due to .NET APIs, only for OS APIs.
 
-The various .NET implementations target specific versions of .NET Standard. Each .NET implementation version advertises the highest .NET Standard version it supports, a statement that means it also supports previous versions. For example, the .NET Framework 4.6 implements .NET Standard 1.3, which means that it exposes all APIs defined in .NET Standard versions 1.0 through 1.3. Similarly, the .NET Framework 4.6.1 implements .NET Standard 1.4, while .NET Core 1.0 implements .NET Standard 1.6.
+The various .NET implementations target specific versions of .NET Standard. Each .NET implementation version advertises the highest .NET Standard version it supports, a statement that means it also supports previous versions. For example, .NET Framework 4.6 implements .NET Standard 1.3, which means that it exposes all APIs defined in .NET Standard versions 1.0 through 1.3. Similarly, .NET Framework 4.6.1 implements .NET Standard 1.4, while .NET Core 1.0 implements .NET Standard 1.6.
 
 ## .NET implementation support
 

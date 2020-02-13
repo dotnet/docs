@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 1bf00b42-69da-4019-91b3-bf88026e83fb
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo3::EnumModules Method
 Returns an enumerator that provides methods to sequentially iterate through a collection of managed modules that are loaded into the application.  

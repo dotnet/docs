@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 9cd2fe75-408a-400f-a6b1-9979624a2fe2
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ModuleLoadStarted Method
 Notifies the profiler that a module is being loaded.  

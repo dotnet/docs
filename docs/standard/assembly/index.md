@@ -106,7 +106,6 @@ In C#, you can use two versions of the same assembly in a single application. Fo
 ## See also
 
 - [.NET assembly file format](file-format.md)
-- [Assemblies in .NET](index.md)
 - [Friend assemblies](friend.md)
 - [Reference assemblies](reference-assemblies.md)
 - [How to: Load and unload assemblies](load-unload.md)

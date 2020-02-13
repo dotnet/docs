@@ -5,21 +5,21 @@ ms.assetid: 0a29b138-270d-4846-b78e-2b875e34e501
 ---
 # Task 2: Host the Workflow Designer
 
-This topic describes the procedure for hosting an instance of the [!INCLUDE[wfd1](../../../includes/wfd1-md.md)] in a Windows Presentation Foundation (WPF) application.
+This topic describes the procedure for hosting an instance of the Windows Workflow Designer in a Windows Presentation Foundation (WPF) application.
 
-The procedure configures the **Grid** control that contains the designer, programmatically creates an instance of the <xref:System.Activities.Presentation.WorkflowDesigner> that contains a default <xref:System.Activities.Statements.Sequence> activity, registers the designer metadata to provide designer support for all built-in activities, and hosts the [!INCLUDE[wfd2](../../../includes/wfd2-md.md)] in the WPF application.
+The procedure configures the **Grid** control that contains the designer, programmatically creates an instance of the <xref:System.Activities.Presentation.WorkflowDesigner> that contains a default <xref:System.Activities.Statements.Sequence> activity, registers the designer metadata to provide designer support for all built-in activities, and hosts the Workflow Designer in the WPF application.
 
 ## To host the workflow designer
 
 1. Open the HostingApplication project you created in [Task 1: Create a New Windows Presentation Foundation Application](task-1-create-a-new-wpf-app.md).
 
-2. Adjust the size of the window to make it easier to use the [!INCLUDE[wfd2](../../../includes/wfd2-md.md)]. To do this, select **MainWindow** in the designer, press F4 to display the **Properties** window, and, in the **Layout** section there, set the **Width** to a value of 600 and the **Height** to a value of 350.
+2. Adjust the size of the window to make it easier to use the Workflow Designer. To do this, select **MainWindow** in the designer, press F4 to display the **Properties** window, and, in the **Layout** section there, set the **Width** to a value of 600 and the **Height** to a value of 350.
 
 3. Set the grid name by selecting the **Grid** panel in the designer (click the box inside the **MainWindow**) and setting the **Name** property at the top of the **Properties** window to "grid1".
 
 4. In the **Properties** window, click the ellipsis (**…**) next to the `ColumnDefinitions` property to open the **Collection Editor** dialog box.
 
-5. In the **Collection Editor** dialog box, click the **Add** button three times to insert three columns into the layout. The first column will contain the **Toolbox**, the second column will host the [!INCLUDE[wfd2](../../../includes/wfd2-md.md)], and the third column will be used for the property inspector.
+5. In the **Collection Editor** dialog box, click the **Add** button three times to insert three columns into the layout. The first column will contain the **Toolbox**, the second column will host the Workflow Designer, and the third column will be used for the property inspector.
 
 6. Set the `Width` property of the middle column to the value "4*".
 
@@ -82,7 +82,7 @@ The procedure configures the **Grid** control that contains the designer, progra
         }
         ```
 
-    4. Register the designer metadata to add designer support for all the  built-in activities. This enables you to drop activities from the toolbox onto the original <xref:System.Activities.Statements.Sequence> activity in the [!INCLUDE[wfd2](../../../includes/wfd2-md.md)]. To do this, add the `RegisterMetadata` method to the `MainWindow` class:
+    4. Register the designer metadata to add designer support for all the  built-in activities. This enables you to drop activities from the toolbox onto the original <xref:System.Activities.Statements.Sequence> activity in the Workflow Designer. To do this, add the `RegisterMetadata` method to the `MainWindow` class:
 
         ```csharp
         private void RegisterMetadata()

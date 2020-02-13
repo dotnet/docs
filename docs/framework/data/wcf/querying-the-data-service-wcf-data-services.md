@@ -12,7 +12,7 @@ ms.assetid: 823e9444-27aa-4f1f-be8e-0486d67f54c0
 ---
 # Querying the Data Service (WCF Data Services)
 
-The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library enables you to execute queries against a data service by using familiar .NET Framework programming patterns, including using language integrated query (LINQ). The client library translates a query, which is defined on the client as an instance of the <xref:System.Data.Services.Client.DataServiceQuery%601> class, into an HTTP GET request message. The library receives the response message and translates it into instances of client data service classes. These classes are tracked by the <xref:System.Data.Services.Client.DataServiceContext> to which the <xref:System.Data.Services.Client.DataServiceQuery%601> belongs.
+The WCF Data Services client library enables you to execute queries against a data service by using familiar .NET Framework programming patterns, including using language integrated query (LINQ). The client library translates a query, which is defined on the client as an instance of the <xref:System.Data.Services.Client.DataServiceQuery%601> class, into an HTTP GET request message. The library receives the response message and translates it into instances of client data service classes. These classes are tracked by the <xref:System.Data.Services.Client.DataServiceContext> to which the <xref:System.Data.Services.Client.DataServiceQuery%601> belongs.
 
 ## Data Service Queries
 
@@ -39,11 +39,11 @@ The following query, when it is executed, returns all `Customers` entities in th
 
 For more information, see [How to: Execute Data Service Queries](how-to-execute-data-service-queries-wcf-data-services.md).
 
-The [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client supports queries for late-bound objects, such as when you use the *dynamic* type in C#. However, for performance reasons you should always compose strongly-typed queries against the data service. The <xref:System.Tuple> type and dynamic objects are not supported by the client.
+The WCF Data Services client supports queries for late-bound objects, such as when you use the *dynamic* type in C#. However, for performance reasons you should always compose strongly-typed queries against the data service. The <xref:System.Tuple> type and dynamic objects are not supported by the client.
 
 ## LINQ Queries
 
-Because the <xref:System.Data.Services.Client.DataServiceQuery%601> class implements the <xref:System.Linq.IQueryable%601> interface defined by LINQ, the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library is able to transform LINQ queries against entity set data into a URI that represents a query expression evaluated against a data service resource. The following example is a LINQ query that is equivalent to the previous <xref:System.Data.Services.Client.DataServiceQuery%601> that returns `Orders` that have a freight cost of more than $30 and orders the results by the freight cost:
+Because the <xref:System.Data.Services.Client.DataServiceQuery%601> class implements the <xref:System.Linq.IQueryable%601> interface defined by LINQ, the WCF Data Services client library is able to transform LINQ queries against entity set data into a URI that represents a query expression evaluated against a data service resource. The following example is a LINQ query that is equivalent to the previous <xref:System.Data.Services.Client.DataServiceQuery%601> that returns `Orders` that have a freight cost of more than $30 and orders the results by the freight cost:
 
 [!code-csharp[Astoria Northwind Client#AddQueryOptionsLinqSpecific](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#addqueryoptionslinqspecific)]
 [!code-vb[Astoria Northwind Client#AddQueryOptionsLinqSpecific](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#addqueryoptionslinqspecific)]
@@ -61,7 +61,7 @@ For more information, see [LINQ Considerations](linq-considerations-wcf-data-ser
 
 ## Adding Query Options
 
-Data service queries support all the query options that [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)]s provides. You call the <xref:System.Data.Services.Client.DataServiceQuery%601.AddQueryOption%2A> method to append query options to a <xref:System.Data.Services.Client.DataServiceQuery%601> instance. <xref:System.Data.Services.Client.DataServiceQuery%601.AddQueryOption%2A> returns a new <xref:System.Data.Services.Client.DataServiceQuery%601> instance that is equivalent to the original query but with the new query option set. The following query, when executed, returns `Orders` that are filtered by the `Freight` value and ordered by the `OrderID`, descending:
+Data service queries support all the query options that WCF Data Servicess provides. You call the <xref:System.Data.Services.Client.DataServiceQuery%601.AddQueryOption%2A> method to append query options to a <xref:System.Data.Services.Client.DataServiceQuery%601> instance. <xref:System.Data.Services.Client.DataServiceQuery%601.AddQueryOption%2A> returns a new <xref:System.Data.Services.Client.DataServiceQuery%601> instance that is equivalent to the original query but with the new query option set. The following query, when executed, returns `Orders` that are filtered by the `Freight` value and ordered by the `OrderID`, descending:
 
 [!code-csharp[Astoria Northwind Client#AddQueryOptionsSpecific](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#addqueryoptionsspecific)]
 [!code-vb[Astoria Northwind Client#AddQueryOptionsSpecific](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria_northwind_client/vb/source.vb#addqueryoptionsspecific)]
@@ -112,7 +112,7 @@ The <xref:System.Data.Services.Client.QueryOperationResponse%601> also has the f
 
 - <xref:System.Data.Services.Client.QueryOperationResponse.GetContinuation%2A> - returns a <xref:System.Data.Services.Client.DataServiceQueryContinuation> object that contains the URI of the next page of results.
 
-By default, [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] only returns data that is explicitly selected by the query URI. This gives you the option to explicitly load additional data from the data service when it is needed. A request is sent to the data service each time you explicitly load data from the data service. Data that can be explicitly loaded includes related entities, paged response data, and binary data streams.
+By default, WCF Data Services only returns data that is explicitly selected by the query URI. This gives you the option to explicitly load additional data from the data service when it is needed. A request is sent to the data service each time you explicitly load data from the data service. Data that can be explicitly loaded includes related entities, paged response data, and binary data streams.
 
 > [!NOTE]
 > Because a data service may return a paged response, we recommend that your application use the programming pattern to handle a paged data service response. For more information, see [Loading Deferred Content](loading-deferred-content-wcf-data-services.md).

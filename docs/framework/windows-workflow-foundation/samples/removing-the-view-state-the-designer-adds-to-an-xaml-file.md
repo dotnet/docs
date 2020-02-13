@@ -5,7 +5,7 @@ ms.assetid: a801ce22-8699-483c-a392-7bb3834aae4f
 ---
 # Removing the view state the designer adds to an XAML file
 
-This sample demonstrates how to create a class that derives from <xref:System.Xaml.XamlWriter> and removes view state from a XAML file. [!INCLUDE[wfd1](../../../../includes/wfd1-md.md)] writes information into the XAML document, which is known as view state. View state refers to the information that is required at design time, such as layout positioning, that is not required at runtime. [!INCLUDE[wfd2](../../../../includes/wfd2-md.md)] inserts this information into the XAML document as it is edited. [!INCLUDE[wfd2](../../../../includes/wfd2-md.md)] writes the view state into the XAML file with the `mc:Ignorable` attribute, so this information is not loaded when the runtime loads the XAML file. This sample demonstrates how to create a class that removes that view state information while processing XAML nodes.
+This sample demonstrates how to create a class that derives from <xref:System.Xaml.XamlWriter> and removes view state from a XAML file. Windows Workflow Designer writes information into the XAML document, which is known as view state. View state refers to the information that is required at design time, such as layout positioning, that is not required at runtime. Workflow Designer inserts this information into the XAML document as it is edited. Workflow Designer writes the view state into the XAML file with the `mc:Ignorable` attribute, so this information is not loaded when the runtime loads the XAML file. This sample demonstrates how to create a class that removes that view state information while processing XAML nodes.
 
 ## Discussion
 
@@ -115,6 +115,6 @@ XamlServices.Save(new ViewStateCleaningWriter(ActivityXamlServices.CreateBuilder
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Designer\ViewStateCleaningWriter`

@@ -35,7 +35,7 @@ helpviewer_keywords:
 ---
 # Boolean logical operators (C# reference)
 
-The following operators perform logical operations with [bool](../keywords/bool.md) operands:
+The following operators perform logical operations with [bool](../builtin-types/bool.md) operands:
 
 - Unary [`!` (logical negation)](#logical-negation-operator-) operator.
 - Binary [`&` (logical AND)](#logical-and-operator-), [`|` (logical OR)](#logical-or-operator-), and [`^` (logical exclusive OR)](#logical-exclusive-or-operator-) operators. Those operators always evaluate both operands.

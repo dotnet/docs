@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: ab4f4bbd-40c7-4667-bfde-60cd73803110
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback2::HandleDestroyed Method
 Notifies the code profiler that a garbage collection handle has been destroyed.  

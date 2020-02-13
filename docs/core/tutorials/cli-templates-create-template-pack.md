@@ -2,7 +2,7 @@
 title: Create a template pack for dotnet new
 description: Learn how to create a csproj file that will build a template pack for the dotnet new command.
 author: thraka
-ms.date: 06/25/2019
+ms.date: 12/10/2019
 ms.topic: tutorial
 ms.author: adegeo
 ---
@@ -24,9 +24,9 @@ In this part of the series you'll learn how to:
 
 * Complete [part 1](cli-templates-create-item-template.md) and [part 2](cli-templates-create-project-template.md) of this tutorial series.
 
-  This tutorial uses the two templates created in the first two parts of this tutorial. It's possible you can use a different template as long as you copy the template as a folder into the _working\templates\\_ folder.
+  This tutorial uses the two templates created in the first two parts of this tutorial. You can use a different template as long as you copy the template, as a folder, into the _working\templates\\_ folder.
 
-* Open a terminal and navigate to the _working\templates\\_ folder.
+* Open a terminal and navigate to the _working\\_ folder.
 
 ## Create a template pack project
 

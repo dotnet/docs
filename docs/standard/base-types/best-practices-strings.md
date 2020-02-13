@@ -18,7 +18,6 @@ helpviewer_keywords:
   - "comparing strings"
   - "strings [.NET Framework],comparing"
 ms.assetid: b9f0bf53-e2de-4116-8ce9-d4f91a1df4f7
-ms.custom: seodec18
 ---
 # Best Practices for Using Strings in .NET
 

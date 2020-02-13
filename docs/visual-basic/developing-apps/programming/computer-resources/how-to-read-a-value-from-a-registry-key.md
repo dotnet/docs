@@ -1,5 +1,5 @@
 ---
-title: "How to: Read a Value from a Registry Key in Visual Basic"
+title: "How to: Read a Value from a Registry Key"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "registry keys [Visual Basic], determining if a value exists in"

@@ -1,5 +1,5 @@
 ---
-title: "Imports Statement - .NET Namespace and Type (Visual Basic)"
+title: "Imports Statement - .NET Namespace and Type"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Imports"

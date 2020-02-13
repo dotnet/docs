@@ -5,7 +5,7 @@ ms.date: 04/24/2019
 ---
 # dotnet build-server
 
-**This article applies to: ✓** .NET Core 2.1 SDK and later versions
+**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
 
 <!-- todo: uncomment when all CLI commands are reviewed
 [!INCLUDE [topic-appliesto-net-core-21plus](../../../includes/topic-appliesto-net-core-21plus.md)]

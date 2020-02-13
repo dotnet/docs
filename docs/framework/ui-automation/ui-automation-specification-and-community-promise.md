@@ -8,5 +8,5 @@ UI Automation provides programmatic access to most user interface (UI) elements 
   
 ## See also
 
-- [UI Automation Specification](https://go.microsoft.com/fwlink/?LinkId=108541)
-- [UI Automation Community Promise](https://go.microsoft.com/fwlink/?LinkId=108542)
+- [UI Automation Specification](https://developer.microsoft.com/windows/accessible-apps)
+- [UI Automation Community Promise](https://developer.microsoft.com/windows/accessible-apps)

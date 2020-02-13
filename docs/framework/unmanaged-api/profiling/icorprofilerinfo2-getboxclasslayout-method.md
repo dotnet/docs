@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 624672b5-1189-488a-85d2-3e12b49617c1
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo2::GetBoxClassLayout Method
 Gets information about where the specified value type is located when it is boxed.  

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: b9fb1c03-417f-41d4-aed4-02cb4ade8def
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # COR_PRF_GC_ROOT_KIND Enumeration
 Indicates the kind of garbage collection root that is exposed by the [ICorProfilerCallback2::RootReferences2](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback2-rootreferences2-method.md) callback.  

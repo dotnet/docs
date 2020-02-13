@@ -28,7 +28,7 @@ In this part of the series, you'll learn how to:
 
   The reference article explains the basics about templates and how they're put together. Some of this information will be reiterated here.
 
-* Open a terminal and navigate to the _working\templates\\_ folder.
+* Open a terminal and navigate to the _working\templates_ folder.
 
 ## Create the required folders
 
@@ -49,7 +49,7 @@ parent_folder
 
 An item template is a specific type of template that contains one or more files. These types of templates are useful when you want to generate something like a config, code, or solution file. In this example, you'll create a class that adds an extension method to the string type.
 
-In your terminal, navigate to the _working\templates\\_ folder and create a new subfolder named _extensions_. Enter the folder.
+In your terminal, navigate to the _working\templates_ folder and create a new subfolder named _extensions_. Enter the folder.
 
 ```console
 working
@@ -80,7 +80,7 @@ Now that you have the content of the template created, you need to create the te
 
 ## Create the template config
 
-Templates are recognized in .NET Core by a special folder and config file that exist at the root of your template. In this tutorial, your template folder is located at _working\templates\extensions\\_.
+Templates are recognized in .NET Core by a special folder and config file that exist at the root of your template. In this tutorial, your template folder is located at _working\templates\extensions_.
 
 When you create a template, all files and folders in the template folder are included as part of the template except for the special config folder. This config folder is named _.template.config_.
 

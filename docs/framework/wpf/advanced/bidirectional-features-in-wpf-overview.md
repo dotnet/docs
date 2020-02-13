@@ -48,7 +48,7 @@ The following graphic shows the output of the previous example:
 
 ## FlowDocument
 
-Many development platforms such as HTML, [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] and Java provide special support for bidirectional content development. Markup languages such as HTML give content writers the necessary markup to display text in any required direction, for example the HTML 4.0 tag, "dir" that takes "rtl" or "ltr" as values. This tag is similar to the <xref:System.Windows.FrameworkElement.FlowDirection%2A> property, but the <xref:System.Windows.FrameworkElement.FlowDirection%2A> property works in a more advanced way to layout textual content and can be used for content other than text.
+Many development platforms such as HTML, Win32 and Java provide special support for bidirectional content development. Markup languages such as HTML give content writers the necessary markup to display text in any required direction, for example the HTML 4.0 tag, "dir" that takes "rtl" or "ltr" as values. This tag is similar to the <xref:System.Windows.FrameworkElement.FlowDirection%2A> property, but the <xref:System.Windows.FrameworkElement.FlowDirection%2A> property works in a more advanced way to layout textual content and can be used for content other than text.
 
 In [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], a <xref:System.Windows.Documents.FlowDocument> is a versatile [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] element that can host a combination of text, tables, images and other elements. The samples in the following sections use this element.
 

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 22a92d1d-8849-4af6-8304-ecc53dd1d289
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo::GetInprocInspectionInterface Method
 Gets an object that can be queried for an "ICorDebugProcess" interface. This method is obsolete in the .NET Framework version 2.0.  

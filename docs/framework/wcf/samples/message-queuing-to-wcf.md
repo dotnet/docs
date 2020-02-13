@@ -4,13 +4,14 @@ ms.date: "03/30/2017"
 ms.assetid: 6d718eb0-9f61-4653-8a75-d2dac8fb3520
 ---
 # Message Queuing to Windows Communication Foundation
-This sample demonstrates how a Message Queuing (MSMQ) application can send an MSMQ message to a Windows Communication Foundation (WCF) service. The service is a self-hosted console application to enable you to observe the service receiving queued messages.  
-  
+
+This sample demonstrates how a Message Queuing (MSMQ) application can send an MSMQ message to a Windows Communication Foundation (WCF) service. The service is a self-hosted console application to enable you to observe the service receiving queued messages.
+
  The service contract is `IOrderProcessor`, which defines a one-way service that is suitable for use with queues. An MSMQ message does not have an Action header, so it is not possible to map different MSMQ messages to operation contracts automatically. Therefore, there can be only one operation contract. If you want to define more than one operation contract for the service, the application must provide information as to which header in the MSMQ message (for example, the label or correlationID) can be used to decide which operation contract to dispatch.
-  
- The MSMQ message does not contain information as to which headers are mapped to the different parameters of the operation contract. The parameter is of type <xref:System.ServiceModel.MsmqIntegration.MsmqMessage%601>(`MsmqMessage<T>`), which contains the underlying MSMQ message. The type "T" in the <xref:System.ServiceModel.MsmqIntegration.MsmqMessage%601>(`MsmqMessage<T>`) class represents the data that is serialized into the MSMQ message body. In this sample, the `PurchaseOrder` type is serialized into the MSMQ message body.  
-  
- The following sample code shows the service contract of the order processing service.  
+
+ The MSMQ message does not contain information as to which headers are mapped to the different parameters of the operation contract. The parameter is of type <xref:System.ServiceModel.MsmqIntegration.MsmqMessage%601>(`MsmqMessage<T>`), which contains the underlying MSMQ message. The type "T" in the <xref:System.ServiceModel.MsmqIntegration.MsmqMessage%601>(`MsmqMessage<T>`) class represents the data that is serialized into the MSMQ message body. In this sample, the `PurchaseOrder` type is serialized into the MSMQ message body.
+
+ The following sample code shows the service contract of the order processing service.
 
 ```csharp
 // Define a service contract.
@@ -106,7 +107,7 @@ Console.ReadLine();
 
  When you run the sample, the client and service activities are displayed in both the service and client console windows. You can see the service receive messages from the client. Press ENTER in each console window to shut down the service and client. Note that because queuing is in use, the client and service do not have to be up and running at the same time. For example, you could run the client, shut it down, and then start up the service and it would still receive its messages.
 
-### To setup, build, and run the sample
+## Set up, build, and run the sample
 
 1. Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
 
@@ -126,7 +127,7 @@ Console.ReadLine();
 
 4. To run the sample in a single- computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).
 
-### To run the sample across computers
+## Run the sample across computers
 
 1. Copy the service program files from the \service\bin\ folder, under the language-specific folder, to the service computer.
 
@@ -139,14 +140,14 @@ Console.ReadLine();
 5. On the client computer, launch Client.exe from a command prompt.
 
 > [!IMPORTANT]
-> The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
->   
-> `<InstallDrive>:\WF_WCF_Samples`  
->   
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
-> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\MSMQIntegration\MsmqToWcf`  
-  
+> The samples may already be installed on your computer. Check for the following (default) directory before continuing.
+>
+> `<InstallDrive>:\WF_WCF_Samples`
+>
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
+>
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\MSMQIntegration\MsmqToWcf`
+
 ## See also
 
 - [Queues in WCF](../../../../docs/framework/wcf/feature-details/queues-in-wcf.md)

@@ -14,7 +14,7 @@ In this case, the validator is a client validator because this endpoint behavior
 >
 > - Mark your common behavior with the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attribute so that it can run when deployed as a Partial Trust application. Note that a registry entry can be set on the computer to prevent APTCA-marked assemblies from running..
 >
-> - Ensure that if the application is deployed as a fully-trusted application that users cannot modify the code-access security settings to run the application in a Partial Trust environment. If they can do so, the custom validator does not run and no exception is thrown. For one way to ensure this, see the `levelfinal` option using [Code Access Security Policy Tool (Caspol.exe)](https://go.microsoft.com/fwlink/?LinkId=248222).
+> - Ensure that if the application is deployed as a fully-trusted application that users cannot modify the code-access security settings to run the application in a Partial Trust environment. If they can do so, the custom validator does not run and no exception is thrown. For one way to ensure this, see the `levelfinal` option using [Code Access Security Policy Tool (Caspol.exe)](../../tools/caspol-exe-code-access-security-policy-tool.md).
 >
 > For more information, see [Partial Trust Best Practices](../feature-details/partial-trust-best-practices.md) and [Supported Deployment Scenarios](../feature-details/supported-deployment-scenarios.md).
 
@@ -28,7 +28,7 @@ In this case, the validator is a client validator because this endpoint behavior
 
     [!code-csharp[LockdownValidation#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/lockdownvalidation/cs/internetclientvalidatorelement.cs#3)]
 
-3. Make sure the compiled assembly is signed with a strong name. For details, see the [Strong Name Tool (SN.EXE)](https://go.microsoft.com/fwlink/?LinkId=248217) and the compiler commands for your language.
+3. Make sure the compiled assembly is signed with a strong name. For details, see the [Strong Name Tool (SN.EXE)](../../tools/sn-exe-strong-name-tool.md) and the compiler commands for your language.
 
 ### To install the validator into the target computer
 
@@ -62,5 +62,5 @@ You may also want to encrypt the configuration file elements. For more informati
 
 ## See also
 
-- [Encrypting configuration file elements using DPAPI](https://go.microsoft.com/fwlink/?LinkId=94954)
-- [Encrypting configuration file elements using RSA](https://go.microsoft.com/fwlink/?LinkId=94955)
+- [Encrypting configuration file elements using DPAPI](https://docs.microsoft.com/previous-versions/msp-n-p/ff647398(v=pandp.10))
+- [Encrypting configuration file elements using RSA](https://docs.microsoft.com/previous-versions/msp-n-p/ff650304(v=pandp.10))

@@ -1,5 +1,5 @@
 ---
-title: "-utf8output (Visual Basic)"
+title: "-utf8output"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "-utf8output compiler option [Visual Basic]"

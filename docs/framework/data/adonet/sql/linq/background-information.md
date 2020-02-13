@@ -12,7 +12,7 @@ The topics in this section pertain to concepts and procedures that extend beyond
   
 - Participate in the [LINQ Forum](https://go.microsoft.com/fwlink/?LinkId=76488), where you can discuss more complex topics in detail with experts.  
   
-- Study the whitepaper that details [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] technology, complete with Visual Basic and C# code examples. For more information, see [LINQ to SQL: .NET Language-Integrated Query for Relational Data](https://go.microsoft.com/fwlink/?LinkId=93205).  
+- Study the white paper that details [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] technology, complete with Visual Basic and C# code examples. For more information, see [LINQ to SQL: .NET Language-Integrated Query for Relational Data](https://go.microsoft.com/fwlink/?LinkId=93205).  
   
 ## In This Section  
  [ADO.NET and LINQ to SQL](ado-net-and-linq-to-sql.md)  
@@ -49,7 +49,7 @@ The topics in this section pertain to concepts and procedures that extend beyond
  Describes optimistic concurrency and defines terms.  
   
  [Query Concepts](query-concepts.md)  
- Describes aspects of queries in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] that differ from queries in [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)].  
+ Describes aspects of queries in [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] that differ from queries in LINQ.  
   
  [Retrieving Objects from the Identity Cache](retrieving-objects-from-the-identity-cache.md)  
  Describes the types of queries that retrieve objects from the identity cache.  

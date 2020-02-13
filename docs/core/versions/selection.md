@@ -4,7 +4,6 @@ description: Learn how .NET Core automatically finds and chooses runtime version
 author: thraka
 ms.author: adegeo
 ms.date: 06/26/2019
-ms.custom: "seodec18"
 ---
 
 # Select the .NET Core version to use

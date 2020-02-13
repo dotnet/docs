@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 6d23ac54-15ea-4027-a172-9ebef43e8f56
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # PreCloseAssembly Method
 Closes the assembly file. Call this method after closing all other files, but before closing the assembly file. Do not call this method for unbound modules.  

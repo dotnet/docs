@@ -1,9 +1,9 @@
 ---
-title: "How to: Write a Query that Finds Elements Based on Context (C#)"
+title: "How to write a query that finds elements based on context (C#)"
 ms.date: 07/20/2015
 ms.assetid: 3ff79ef0-fc8b-42fe-8cc0-10dc32b06b4e
 ---
-# How to: Write a Query that Finds Elements Based on Context (C#)
+# How to write a query that finds elements based on context (C#)
 Sometimes you might have to write a query that selects elements based on their context. You might want to filter based on preceding or following sibling elements. You might want to filter based on child or ancestor elements.  
   
  You can do this by writing a query and using the results of the query in the `where` clause. If you have to first test against null, and then test the value, it is more convenient to do the query in a `let` clause, and then use the results in the `where` clause.  

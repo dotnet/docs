@@ -1,5 +1,5 @@
 ---
-title: "-highentropyva (Visual Basic)"
+title: "-highentropyva"
 ms.date: 03/10/2018
 helpviewer_keywords: 
   - "highentropyva compiler option (Visual Basic)"

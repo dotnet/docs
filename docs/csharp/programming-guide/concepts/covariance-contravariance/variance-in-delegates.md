@@ -194,4 +194,4 @@ public static void Test()
 
 - [Generics](../../../../standard/generics/index.md)
 - [Using Variance for Func and Action Generic Delegates (C#)](./using-variance-for-func-and-action-generic-delegates.md)
-- [How to: Combine Delegates (Multicast Delegates)](../../delegates/how-to-combine-delegates-multicast-delegates.md)
+- [How to combine delegates (Multicast Delegates)](../../delegates/how-to-combine-delegates-multicast-delegates.md)

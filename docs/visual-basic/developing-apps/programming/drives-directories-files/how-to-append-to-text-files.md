@@ -1,5 +1,5 @@
 ---
-title: "How to: Append to Text Files in Visual Basic"
+title: "How to: Append to Text Files"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "I/O [Visual Basic], appending to files"

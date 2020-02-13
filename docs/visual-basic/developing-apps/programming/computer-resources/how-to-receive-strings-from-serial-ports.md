@@ -1,5 +1,5 @@
 ---
-title: "How to: Receive Strings From Serial Ports in Visual Basic"
+title: "How to: Receive Strings From Serial Ports"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "serial ports, retrieving strings"

@@ -1,5 +1,5 @@
 ---
-title: "Building from the Command Line (Visual Basic)"
+title: "Building from the Command Line"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "builds [Visual Basic], command-line"

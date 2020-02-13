@@ -1,13 +1,12 @@
 ---
-title: "How to: Use the XML documentation features - C# Programming Guide"
-ms.custom: seodec18
+title: "How to use the XML documentation features - C# Programming Guide"
 ms.date: 06/01/2018
 helpviewer_keywords: 
   - "XML documentation [C#]"
   - "C# language, XML documentation features"
 ms.assetid: 8f33917b-9577-4c9a-818a-640dbbb0b399
 ---
-# How to: Use the XML documentation features
+# How to use the XML documentation features
 
 The following sample provides a basic overview of a type that has been documented.
 

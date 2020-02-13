@@ -1,5 +1,5 @@
 ---
-title: "How to: read from comma-delimited text files in Visual Basic"
+title: "How to: read from comma-delimited text files"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "files [Visual Basic], parsing"

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 72822b95-a7fb-485e-9d55-1cb016d9a458
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # COR_PRF_GC_REASON Enumeration
 Indicates the reason that garbage collection is occurring.  

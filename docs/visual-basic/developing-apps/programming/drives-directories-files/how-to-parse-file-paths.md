@@ -1,5 +1,5 @@
 ---
-title: "How to: Parse File Paths in Visual Basic"
+title: "How to: Parse File Paths"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "file names [Visual Basic], parsing [Visual Basic]"

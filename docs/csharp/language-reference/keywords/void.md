@@ -1,7 +1,5 @@
 ---
 title: "void - C# Reference"
-ms.custom: seodec18
-
 ms.date: 07/20/2015
 f1_keywords: 
   - "void_CSharpKeyword"
@@ -33,10 +31,9 @@ public void SampleMethod()
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [C# Keywords](index.md)
-- [Reference Types](reference-types.md)
-- [Value Types](value-types.md)
+- [C# reference](../index.md)
+- [C# keywords](index.md)
+- [Reference types](reference-types.md)
+- [Value types](../builtin-types/value-types.md)
 - [Methods](../../programming-guide/classes-and-structs/methods.md)
-- [Unsafe Code and Pointers](../../programming-guide/unsafe-code-pointers/index.md)
+- [Unsafe code and pointers](../../programming-guide/unsafe-code-pointers/index.md)

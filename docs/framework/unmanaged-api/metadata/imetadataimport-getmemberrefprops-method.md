@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 0ea73055-ece0-4151-a094-414c88ef8941
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetMemberRefProps Method
 Gets metadata associated with the member referenced by the specified token.  

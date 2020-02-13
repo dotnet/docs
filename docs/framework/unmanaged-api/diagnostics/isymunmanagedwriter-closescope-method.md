@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 6dade525-7770-4cb4-bafd-4bb995ad0d87
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedWriter::CloseScope Method
 Closes the current lexical scope.  

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 18e89f45-e068-426a-be16-9f53a4346860
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # FunctionLeave Function
 Notifies the profiler that a function is about to return to the caller.  

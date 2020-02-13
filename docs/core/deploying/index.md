@@ -5,9 +5,15 @@ ms.date: 01/31/2020
 ---
 # .NET Core application publishing overview
 
-Applications you create with .NET Core can be published in two different modes, and depending on the mode, affects how a user runs your app. Publishing your app self-contained produces an application that contains the .NET Core runtime and libraries, and your application and its dependencies. Publishing your app runtime-dependent produces an application that contains only your application and its dependencies, and users of your application will need to separately install the .NET Core runtime. Both types of applications include a platform-specific executable by default. Runtime-dependent applications without an executable can be created and these applications are cross-platform. 
+Applications you create with .NET Core can be published in two different modes, and the mode affects how a user runs your app.
 
-The following table outlines the basic commands used to publish an app as runtime-dependent or self-contained, per SDK:
+Publishing your app as *self-contained* produces an application that includes the .NET Core runtime and libraries, and your application and its dependencies. Users of the application can run it on a machine that doesn't have the .NET Core runtime installed.
+
+Publishing your app as *runtime-dependent* produces an application that includes only your application itself and its dependencies. Users of the application have to separately install the .NET Core runtime.
+
+Both publishing modes produce a platform-specific executable by default. Runtime-dependent applications can be created without an executable, and these applications are cross-platform. 
+
+The following table outlines the commands used to publish an app as runtime-dependent or self-contained, per SDK version:
 
 | Type                                                                  | SDK 3.1 | SDK 3.0 | SDK 2.1 | Command | 
 | --------------------------------------------------------------------- | --------| ------- | ------- | ------- |
@@ -16,11 +22,11 @@ The following table outlines the basic commands used to publish an app as runtim
 | [runtime-dependent cross-platform binary](#publish-runtime-dependent) | ✔️       | ✔️       | ✔️       | [`dotnet publish`](../tools/dotnet-publish.md) |
 | [self-contained executable](#publish-self-contained)                  | ✔️       | ✔️       | ✔️       | [`dotnet publish -r <RID>`](../tools/dotnet-publish.md) |
 
-For more information about the `dotnet publish` command, see [.NET Core dotnet publish command](../tools/dotnet-publish.md).
+For more information, see [.NET Core dotnet publish command](../tools/dotnet-publish.md).
 
 ## Produce an executable
 
-Executables are created per-operating system, per-CPU architecture, and aren't cross-platform. When publishing your app and creating an executable, you can publish the app as [self-contained](#publish-self-contained) or [runtime-dependent](#publish-runtime-dependent). Publishing your app self-contained includes the .NET Core runtime with your app, and users of your app don't have to worry about installing .NET Core before running your app. Apps published runtime-dependent don't include the .NET Core runtime and libraries; only your app and 3rd-party dependencies are included.
+Executables aren't cross-platform. They're specific to an operating system and CPU architecture. When publishing your app and creating an executable, you can publish the app as [self-contained](#publish-self-contained) or [runtime-dependent](#publish-runtime-dependent). Publishing an app as self-contained includes the .NET Core runtime with the app, and users of the app don't have to worry about installing .NET Core before running the app. Apps published as runtime-dependent don't include the .NET Core runtime and libraries; only the app and 3rd-party dependencies are included.
 
 The following commands produce an executable:
 
@@ -34,7 +40,7 @@ The following commands produce an executable:
 
 Cross-platform binaries are created when you publish your app as [runtime-dependent](#publish-runtime-dependent), in the form of a *dll* file. The *dll* file is named after your project. For example, if you have an app named **word_reader**, a file named *word_reader.dll* is created. Apps published in this way are run with the `dotnet <filename.dll>` command and can be run on any platform.
 
-Cross-platform binaries can be run on any operating system as long as the targeted .NET Core runtime is already installed. When run, if the targeted .NET Core runtime isn't installed, and your app is configured to roll-forward, your app may still run using a newer runtime. For more information, see [runtime-dependent apps roll forward](../versions/selection.md#framework-dependent-apps-roll-forward).
+Cross-platform binaries can be run on any operating system as long as the targeted .NET Core runtime is already installed. If the targeted .NET Core runtime isn't installed, the app may run using a newer runtime if the app is configured to roll-forward. For more information, see [runtime-dependent apps roll forward](../versions/selection.md#framework-dependent-apps-roll-forward).
 
 The following command produces a cross-platform binary:
 
@@ -51,7 +57,7 @@ Publishing an app as runtime-dependent produces a [cross-platform binary](#produ
 > [!IMPORTANT]
 > .NET Core SDK 2.1 doesn't produce platform-specific executables when you publish an app runtime-dependent.
 
-The cross-platform binary of your app can be run with the `dotnet <filename.dll>` command, and can be run on any platform. If the app uses a NuGet package that has platform-specific implementations, all platforms dependencies are copied to the publish folder along with the app.
+The cross-platform binary of your app can be run with the `dotnet <filename.dll>` command, and can be run on any platform. If the app uses a NuGet package that has platform-specific implementations, all platforms' dependencies are copied to the publish folder along with the app.
 
 You can create an executable for a specific platform by passing the `-r <RID> --self-contained false` parameters to the [`dotnet publish`](../tools/dotnet-publish.md) command. When the `-r` parameter is omitted, an executable is created for your current platform. Any NuGet packages that have platform-specific dependencies for the targeted platform are copied to the publish folder.
 
@@ -61,7 +67,7 @@ You can create an executable for a specific platform by passing the `-r <RID> --
 Only your app and its dependencies are distributed. The .NET Core runtime and libraries are installed by the user and all apps share the runtime.
 
 - **Cross-platform**\
-Your app and any .NET-based library runs on other operating systems. You don't need to define a target platform for your app. For more information about the .NET file format, see [.NET Assembly File Format](../../standard/assembly/file-format.md).
+Your app and any .NET-based library runs on other operating systems. You don't need to define a target platform for your app. For information about the .NET file format, see [.NET Assembly File Format](../../standard/assembly/file-format.md).
 
 - **Uses the latest patched runtime**\
 The app uses the latest runtime (within the targeted major-minor family of .NET Core) installed on the target system. This means your app automatically uses the latest patched version of the .NET Core runtime. This default behavior can be overridden. For more information, see [runtime-dependent apps roll forward](../versions/selection.md#framework-dependent-apps-roll-forward).
@@ -117,7 +123,7 @@ Because your app includes the .NET Core runtime and all of your app dependencies
   > [!TIP]
   > You can reduce the size of your deployment on Linux systems by approximately 28 MB by using .NET Core [*globalization invariant mode*](https://github.com/dotnet/runtime/blob/master/docs/design/features/globalization-invariant-mode.md). This forces your app to treat all cultures like the [invariant culture](xref:System.Globalization.CultureInfo.InvariantCulture?displayProperty=nameWithType).
 
-- **Control .NET Core version**\
+- **Harder to update the .NET Core version**\
 .NET Core Runtime (distributed with your app) can only be upgraded by releasing a new version of your app. You're responsible for supplying an updated version of your application for security patches to the .NET Core Runtime. 
 
 ### Examples

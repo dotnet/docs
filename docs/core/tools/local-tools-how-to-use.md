@@ -51,7 +51,7 @@ When you use a CLI command that refers to a local tool, the SDK searches for a m
 
 ## Install botsay as a local tool
 
-Install the tool from the package that you created in the preceding tutorial:
+Install the tool from the package that you created in the first tutorial:
 
 ```dotnetcli
 dotnet tool install --add-source ./nupkg botsay
@@ -182,10 +182,10 @@ dotnet tool uninstall botsay
 dotnet tool uninstall dotnetsay
 ```
 
-## Troubleshooting
+## Troubleshoot
 
-If you get an error message while following the tutorial, see [Troubleshoot .NET Core tool usage issues](troubleshoot-usage-issues.md)
+If you get an error message while following the tutorial, see [Troubleshoot .NET Core tool usage issues](troubleshoot-usage-issues.md).
 
-## Next steps
+## See also
 
-For more information, see [.NET Core tools overview](global-tools.md)
+For more information, see [.NET Core tools](global-tools.md)

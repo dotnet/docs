@@ -241,15 +241,20 @@
   - name: Global and local tools
     expanded: true
     items:
-    - name: Overview
+    - name: How to manage tools
       href: tools/global-tools.md
-    - name: Create a tool
-      href: tools/global-tools-how-to-create.md
-    - name: Install and use a global tool
-      href: tools/global-tools-how-to-use.md
-    - name: Install and use a local tool
-      href: tools/local-tools-how-to-use.md
-    - name: Troubleshoot tool usage issues
+    - name: Tutorials
+      items:
+      - name: Create a tool
+        displayName: tools
+        href: tools/global-tools-how-to-create.md
+      - name: Install and use a global tool
+        displayName: tools
+        href: tools/global-tools-how-to-use.md
+      - name: Install and use a local tool
+        displayName: tools
+        href: tools/local-tools-how-to-use.md
+    - name: Troubleshoot tools
       href: tools/troubleshoot-usage-issues.md
   - name: Elevated access
     href: tools/elevated-access.md

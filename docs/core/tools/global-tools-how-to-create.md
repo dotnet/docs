@@ -18,14 +18,14 @@ This is the first in a series of three tutorials. In this tutorial, you create a
 
 ## Prerequisites
 
-- [.NET Core SDK 3.1](https://dotnet.microsoft.com/download) or a later versions.
+- [.NET Core SDK 3.1](https://dotnet.microsoft.com/download) or a later version.
 - A text editor or code editor of your choice.
 
 ## Create a project
 
 1. Open a command prompt and create a folder named *botsay*.
 
-1. Navigate to the folder you created and type the following:
+1. Navigate to the folder you created and enter the following command:
 
    ```dotnetcli
    dotnet new console
@@ -41,7 +41,7 @@ This is the first in a series of three tutorials. In this tutorial, you create a
    using System.Reflection;
    ```
 
-1. Replace the `Main` method with the following code to process the command-line arguments for the application. If no arguments were passed, a short help message is displayed. Otherwise, all of the arguments are concatenated into a single string and printed by calling the `ShowBot` method. You create the `ShowBot` method in the next step.
+1. Replace the `Main` method with the following code to process the command-line arguments for the application.
 
    ```csharp
    static void Main(string[] args)
@@ -63,6 +63,8 @@ This is the first in a series of three tutorials. In this tutorial, you create a
        ShowBot(string.Join(' ', args));
    }
    ```
+
+   If no arguments are passed, a short help message is displayed. Otherwise, all of the arguments are concatenated into a single string and printed by calling the `ShowBot` method that you create in the next step.
 
 1. Add a new method named `ShowBot` that takes a string parameter. The method prints out the message and an image of a robot using lines of text.
 
@@ -164,17 +166,17 @@ Before you can pack and distribute the application as a tool, you need to modify
 
 1. Create a NuGet package by running the [dotnet pack](dotnet-pack.md) command:
 
-  ```dotnetcli
-  dotnet pack
-  ```
+   ```dotnetcli
+   dotnet pack
+   ```
 
-  The `botsay.1.0.0.nupkg` file is created in the folder identified by the `<PackageOutputPath>` value from the `botsay.csproj` file, which in this example is the `./nupkg` folder.
+   The `botsay.1.0.0.nupkg` file is created in the folder identified by the `<PackageOutputPath>` value from the `botsay.csproj` file, which in this example is the `./nupkg` folder.
   
-  When you want to release a tool publicly, you can upload it to <https://www.nuget.org>. Once the tool is available on NuGet, developers can install the tool by using the [dotnet tool install](dotnet-tool-install.md) command.
+   When you want to release a tool publicly, you can upload it to <https://www.nuget.org>. Once the tool is available on NuGet, developers can install the tool by using the [dotnet tool install](dotnet-tool-install.md) command.
 
-## Troubleshooting
+## Troubleshoot
 
-If you get an error message while following the tutorial, see [Troubleshoot .NET Core tool usage issues](troubleshoot-usage-issues.md)
+If you get an error message while following the tutorial, see [Troubleshoot .NET Core tool usage issues](troubleshoot-usage-issues.md).
 
 ## Next steps
 

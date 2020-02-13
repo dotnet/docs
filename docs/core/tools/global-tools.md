@@ -1,12 +1,12 @@
 ---
 title: .NET Core tools
-description: An overview of .NET Core tools and the .NET Core CLI commands available for managing them. 
+description: How to install, use, update, and remove .NET Core tools. Covers global tools, tool-path tools, and local tools. 
 author: KathleenDollard
 ms.date: 02/12/2020
 ---
-# .NET Core tools overview
+# How to manage .NET Core tools
 
-[!INCLUDE [topic-appliesto-net-core-21plus.md](../../../includes/topic-appliesto-net-core-21plus.md)]
+**This article applies to:** ✔️ .NET Core 3.x SDK
 
 A .NET Core tool is a special NuGet package that contains a console application. A tool can be installed on your machine in the following ways:
 
@@ -24,15 +24,6 @@ A .NET Core tool is a special NuGet package that contains a console application.
   
   The .NET CLI uses manifest files to keep track of which tools are installed as local to a directory. These manifest files are saved in the source code repository, so they're available when a contributor checks out the code from the repository. The contributor can then invoke a single .NET Core CLI command that installs all of the tools that are listed in the manifest files.
 
-This article explains how to:
-
-* Find a tool.
-* Check the author and usage statistics.
-* Install and use a global tool.
-* Install and use a local tool.
-* Update a tool.
-* Uninstall a tool.
-
 > [!IMPORTANT]
 > .NET Core tools run in full trust. Do not install a .NET Core tool unless you trust the author.
 
@@ -49,7 +40,7 @@ Currently, .NET Core doesn't have a tool search feature. Here are some ways to f
 
 ## Check the author and statistics
 
-Since .NET Core tools run in full trust, and when installed as global tools are on your path, they can be very powerful. Don't download tools from people you don't trust.
+Since .NET Core tools run in full trust, and global tools are added to the PATH environment variable, they can be very powerful. Don't download tools from people you don't trust.
 
 If the tool is hosted on NuGet, you can check the author and statistics by searching for the tool.
 
@@ -95,20 +86,13 @@ On Linux or macOS:
 dotnet tool install dotnetsay --tool-path ~/bin
 ```
 
-If installation is successful, a message is displayed showing the command used to invoke the tool and the version installed, similar to the following example:
-
-```output
-You can invoke the tool using the following command: dotnetsay
-Tool 'dotnetsay' (version '3.0.0') was successfully installed.
-```
-
 The .NET Core SDK doesn't add this location automatically to the PATH environment variable. To invoke a tool-path tool, you have to make sure the command is available by using one of the following methods:
 
 * Add the installation directory to the PATH environment variable.
-* Specify the installation directory when you invoke the tool.
-* invoke the tool from within the installation directory.
+* Specify the full path to the tool when you invoke it.
+* Invoke the tool from within the installation directory.
 
-### Install a local tool
+## Install a local tool
 
 **Applies to .NET Core 3.0 and later.**
 
@@ -118,7 +102,7 @@ To install a tool for local access only (for the current directory and subdirect
 dotnet new tool-manifest
 ```
 
-This command creates a manifest file named *dotnet-tools.json* under the *.config* directory. To add a local tool to the manifest file, use the [dotnet tool install](dotnet-tool-install.md) command without either the `--global` or `--tool-path` option, as shown in the following example:
+This command creates a manifest file named *dotnet-tools.json* under the *.config* directory. To add a local tool to the manifest file, use the [dotnet tool install](dotnet-tool-install.md) command and **omit** the `--global` and `--tool-path` options, as shown in the following example:
 
 ```dotnetcli
 dotnet tool install dotnetsay
@@ -199,9 +183,7 @@ As shown in this example, the list shows local tools. To see global tools, use t
 
 ### Invoke a global tool
 
-For global tools, use the tool command by itself. For example:
-
-If the command is `dotnetsay`, that's what you use to invoke the command:
+For global tools, use the tool command by itself. For example, if the command is `dotnetsay`, that's what you use to invoke the command:
 
 ```console
 dotnetsay
@@ -218,11 +200,7 @@ However, if a global tool and a local tool have the same name prefixed by `dotne
 
 ### Invoke a tool-path global tool
 
-To invoke a global tool that is installed by using the `tool-path` option, make sure the command is available by using one of the following methods:
-
-* Add the installation directory to the PATH environment variable.
-* Specify the installation directory when you invoke the tool.
-* invoke the tool from within the installation directory.
+To invoke a global tool that is installed by using the `tool-path` option, make sure the command is available, as explained [earlier in this article](#install-a-global-tool-in-a-custom-location).
 
 ### Invoke a local tool
 
@@ -262,7 +240,7 @@ Updating a tool involves uninstalling and reinstalling it with the latest stable
 dotnet tool update <packagename>
 ```
 
-For a local tool, the SDK finds the first manifest file that contains the package ID, by looking in the current directory and parent directories. If there is no such package ID in any manifest file, the SDK adds a new entry to the closest manifest file.
+For a local tool, the SDK finds the first manifest file that contains the package ID by looking in the current directory and parent directories. If there is no such package ID in any manifest file, the SDK adds a new entry to the closest manifest file.
 
 ### Uninstall a tool
 
@@ -272,17 +250,15 @@ Remove a tool by using the [dotnet tool uninstall](dotnet-tool-uninstall.md) com
 dotnet tool uninstall <packagename>
 ```
 
-For a local tool, the SDK finds the first manifest file that contains the package ID, by looking in the current directory and parent directories.
+For a local tool, the SDK finds the first manifest file that contains the package ID by looking in the current directory and parent directories.
 
-### Get help for a tool
+## Get help and troubleshoot
 
-You can look for tool usage instructions at the tool's website or by typing one of the following commands:
+You can look for tool usage instructions at the tool's website or by entering one of the following commands:
 
 ```console
 <command> --help
 dotnet <command> --help
 ```
 
-## Troubleshooting
-
-If a tool fails to install or run, see [Troubleshoot .NET Core tool usage issues](troubleshoot-usage-issues.md)
+If a tool fails to install or run, see [Troubleshoot .NET Core tool usage issues](troubleshoot-usage-issues.md).

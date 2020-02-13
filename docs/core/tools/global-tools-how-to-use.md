@@ -35,14 +35,14 @@ This tutorial teaches you how to install and use a global tool. You use a tool t
    Tool 'botsay' (version '1.0.0') was successfully installed.
    ```
 
-   > [!NOTE]
-   > If the following step fails, you may need to open a new terminal to refresh the PATH.
-
 1. Invoke the tool:
 
    ```dotnetcli
    botsay hello from the bot
    ```
+
+   > [!NOTE]
+   > If this command fails, you may need to open a new terminal to refresh the PATH.
 
 1. Remove the tool by running the [dotnet tool uninstall](dotnet-tool-uninstall.md) command:
 
@@ -103,9 +103,9 @@ This tutorial teaches you how to install and use a global tool. You use a tool t
    dotnet tool uninstall --tool-path ~/bin botsay
    ```
 
-## Troubleshooting
+## Troubleshoot
 
-If you get an error message while following the tutorial, see [Troubleshoot .NET Core tool usage issues](troubleshoot-usage-issues.md)
+If you get an error message while following the tutorial, see [Troubleshoot .NET Core tool usage issues](troubleshoot-usage-issues.md).
 
 ## Next steps
 

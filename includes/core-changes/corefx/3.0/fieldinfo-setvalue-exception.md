@@ -17,7 +17,9 @@ In .NET Core 3.0 and later versions, when you call <xref:System.Reflection.Field
 
 #### Recommended action
 
-The best way to initialize static, initialization-only fields is in a static constructor. This applies to both dynamic and non-dynamic types. Or, remove the <xref:System.Reflection.FieldAttributes.InitOnly?displayProperty=nameWithType> attribute from the field, and then call <xref:System.Reflection.FieldInfo.SetValue%2A?displayProperty=nameWithType>.
+Initialize static, initialization-only fields in a static constructor. This applies to both dynamic and non-dynamic types.
+
+Alternatively, you can remove the <xref:System.Reflection.FieldAttributes.InitOnly?displayProperty=nameWithType> attribute from the field, and then call <xref:System.Reflection.FieldInfo.SetValue%2A?displayProperty=nameWithType>.
 
 #### Category
 

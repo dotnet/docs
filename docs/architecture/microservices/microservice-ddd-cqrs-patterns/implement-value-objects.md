@@ -126,13 +126,13 @@ public class Address : ValueObject
 
 You can see how this value object implementation of Address has no identity and therefore, no ID field, neither at the Address class not even at the ValueObject class.
 
-Having no ID field in a class to be used by Entity Framework was not possible until EF Core 2.0, which greatly helps to implement better value objects with no ID. That is precisely the explanation of the next section.
+Having no ID field in a class to be used by Entity Framework (EF) was not possible until EF Core 2.0, which greatly helps to implement better value objects with no ID. That is precisely the explanation of the next section.
 
 It could be argued that value objects, being immutable, should be read-only (that is, have get-only properties), and that’s indeed true. However, value objects are usually serialized and deserialized to go through message queues, and being read-only stops the deserializer from assigning values, so we just leave them as private set which is read-only enough to be practical.
 
-## How to persist value objects in the database with EF Core 2.0
+## How to persist value objects in the database with EF Core 2.0 and later
 
-You just saw how to define a value object in your domain model. But how can you actually persist it into the database through Entity Framework (EF) Core which usually targets entities with identity?
+You just saw how to define a value object in your domain model. But how can you actually persist it into the database using Entity Framework Core since it usually targets entities with identity?
 
 ### Background and older approaches using EF Core 1.1
 
@@ -159,7 +159,7 @@ With EF Core 2.0 and later, there are new and better ways to persist value objec
 
 ## Persist value objects as owned entity types in EF Core 2.0 and later
 
-Even with some gaps between the canonical value object pattern in DDD and the owned entity type in EF Core, it's currently the best way to persist value objects with EF Core 2.0. You can see limitations at the end of this section.
+Even with some gaps between the canonical value object pattern in DDD and the owned entity type in EF Core, it's currently the best way to persist value objects with EF Core 2.0 and later. You can see limitations at the end of this section.
 
 The owned entity type feature was added to EF Core since version 2.0.
 
@@ -173,7 +173,7 @@ The identity of instances of owned types is not completely their own. It consist
 
 - The navigation property pointing to them
 
-- In the case of collections of owned types, an independent component (supported in 2.2 and later).
+- In the case of collections of owned types, an independent component (supported in EF Core 2.2 and later).
 
 For example, in the Ordering domain model at eShopOnContainers, as part of the Order entity, the Address value object is implemented as an owned entity type within the owner entity, which is the Order entity. Address is a type with no identity property defined in the domain model. It is used as a property of the Order type to specify the shipping address for a particular order.
 
@@ -286,9 +286,9 @@ public class Address
 
 #### Owned entities limitations
 
-- You cannot create a `DbSet<T>` of an owned type (by design).
+- You can't create a `DbSet<T>` of an owned type (by design).
 
-- You cannot call `ModelBuilder.Entity<T>()` on owned types (currently by design).
+- You can't call `ModelBuilder.Entity<T>()` on owned types (currently by design).
 
 - No support for optional (that is, nullable) owned types that are mapped with the owner in the same table (that is, using table splitting). This is because mapping is done for each property, we don't have a separate sentinel for the null complex value a as whole.
 

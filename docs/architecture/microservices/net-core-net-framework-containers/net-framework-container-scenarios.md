@@ -23,9 +23,9 @@ However, even with that exceptional progression since .NET Standard 2.0 and .NET
 
 ## Using .NET technologies not available for .NET Core
 
-Some .NET Framework technologies are not available in the current version of .NET Core (version 3.1 as of this writing). Some of them might be available in later .NET 5 releases, but others don't fit the new application patterns targeted by .NET Core and might never be available.
+Some .NET Framework technologies aren't available in the current version of .NET Core (version 3.1 as of this writing). Some of them might become available in later releases, but others don't fit the new application patterns targeted by .NET Core and might never be available.
 
-The following list shows most of the technologies that are not available in .NET Core 3.1:
+The following list shows most of the technologies that aren't available in .NET Core 3.1:
 
 - ASP.NET Web Forms. This technology is only available on .NET Framework. Currently there are no plans to bring ASP.NET Web Forms to .NET Core.
 
@@ -33,7 +33,7 @@ The following list shows most of the technologies that are not available in .NET
 
 - Workflow-related services. Windows Workflow Foundation (WF), Workflow Services (WCF + WF in a single service), and WCF Data Services (formerly known as ADO.NET Data Services) are only available on .NET Framework. There are currently no plans to bring them to .NET Core.
 
-In addition to the technologies listed in the official [.NET Core roadmap](https://github.com/dotnet/core/blob/master/roadmap.md), other features might be ported to .NET Core or the new [unified .NET platform](https://devblogs.microsoft.com/dotnet/introducing-net-5/). You might consider participating in the discussions on GitHub so that your voice can be heard. And if you think something is missing, please [file a new issue in the Runtime repository](https://github.com/dotnet/runtime/issues/new).
+In addition to the technologies listed in the official [.NET Core roadmap](https://github.com/dotnet/core/blob/master/roadmap.md), other features might be ported to .NET Core or the new [unified .NET platform](https://devblogs.microsoft.com/dotnet/introducing-net-5/). You might consider participating in the discussions on GitHub so that your voice can be heard. And if you think something is missing, file a new issue in the [dotnet/runtime](https://github.com/dotnet/runtime/issues/new) GitHub repository.
 
 ## Using a platform or API that doesn't support .NET Core
 

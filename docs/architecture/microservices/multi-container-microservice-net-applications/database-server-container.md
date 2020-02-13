@@ -5,13 +5,13 @@ ms.date: 01/30/2020
 ---
 # Use a database server running as a container
 
-You can have your databases (SQL Server, PostgreSQL, MySQL, etc.) on regular standalone servers, in on-premises clusters, or in PaaS services in the cloud like Azure SQL DB. However, for development and test environments, having your databases running as containers is convenient, because you do not have any external dependency and simply running the `docker-compose up` command starts the whole application. Having those databases as containers is also great for integration tests, because the database is started in the container and is always populated with the same sample data, so tests can be more predictable.
+You can have your databases (SQL Server, PostgreSQL, MySQL, etc.) on regular standalone servers, in on-premises clusters, or in PaaS services in the cloud like Azure SQL DB. However, for development and test environments, having your databases running as containers is convenient, because you don't have any external dependency and simply running the `docker-compose up` command starts the whole application. Having those databases as containers is also great for integration tests, because the database is started in the container and is always populated with the same sample data, so tests can be more predictable.
 
 ## SQL Server running as a container with a microservice-related database
 
-In eShopOnContainers, there is a container named `sqldata`, as defined in the [docker-compose.yml](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/docker-compose.yml) file, that runs an SQL Server for Linux instance with the SQL databases for all microservices that need one.
+In eShopOnContainers, there's a container named `sqldata`, as defined in the [docker-compose.yml](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/docker-compose.yml) file, that runs a SQL Server for Linux instance with the SQL databases for all microservices that need one.
 
-A key point in microservices is that each microservice owns its related data, hence it should have its own database. However the databases can be anywhere. In this case, they are all in the same container to keep Docker memory requirements as low as possible. Keep in mind that this is a good-enough solution for development and, perhaps, testing but not for production.
+A key point in microservices is that each microservice owns its related data, so it should have its own database. However, the databases can be anywhere. In this case, they are all in the same container to keep Docker memory requirements as low as possible. Keep in mind that this is a good-enough solution for development and, perhaps, testing but not for production.
 
 The SQL Server container in the sample application is configured with the following YAML code in the docker-compose.yml file, which is executed when you run `docker-compose up`. Note that the YAML code has consolidated configuration information from the generic docker-compose.yml file and the docker-compose.override.yml file. (Usually you would separate the environment settings from the base or static information related to the SQL Server image.)
 
@@ -253,7 +253,7 @@ docker run --name some-redis -d redis
 
 The Redis image includes expose:6379 (the port used by Redis), so standard container linking will make it automatically available to the linked containers.
 
-In eShopOnContainers, the basket-api microservice uses a Redis cache running as a container. That basketdata container is defined as part of the multi-container docker-compose.yml file, as shown in the following example:
+In eShopOnContainers, the `basket-api` microservice uses a Redis cache running as a container. That `basketdata` container is defined as part of the multi-container *docker-compose.yml* file, as shown in the following example:
 
 ```yml
 #docker-compose.yml file
@@ -276,7 +276,7 @@ Finally, in the *docker-compose.override.yml* file, the `basket-api` microservic
       - EventBusConnection=rabbitmq
 ```
 
-As mentioned before, the name of the microservice "basketdata" is resolved by docker's internal network DNS.
+As mentioned before, the name of the microservice `basketdata` is resolved by Docker's internal network DNS.
 
 >[!div class="step-by-step"]
 >[Previous](multi-container-applications-docker-compose.md)

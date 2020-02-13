@@ -170,8 +170,6 @@ Tool 'dotnetsay' (version '2.1.3') was restored. Available commands: dotnetsay
 Restore was successful.
 ```
 
-For more information, see [Manifest files](#manifest-files) later in this article.
-
 ## Install a specific tool version
 
 To install a pre-release version or a specific version of a tool, specify the version number by using the `--version` option, as shown in the following example:

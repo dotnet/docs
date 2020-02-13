@@ -83,17 +83,21 @@ The `PackageTargetFallback` property lets you specify a set of compatible target
 The following example specifies fallbacks for all targets:
 
 ```xml
-<PackageTargetFallback>
-  $(PackageTargetFallback);portable-net45+win8+wpa81+wp8
-</PackageTargetFallback >
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wpa81+wp8</PackageTargetFallback>
+  </PropertyGroup>
+</Project>
 ```
 
 The following example uses the `Condition` attribute to specify fallbacks only for the `netcoreapp2.1` target:
 
 ```xml
-<PackageTargetFallback Condition="'$(TargetFramework)'=='netcoreapp2.1'">
-  $(PackageTargetFallback);portable-net45+win8+wpa81+wp8
-</PackageTargetFallback >
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageTargetFallback Condition="'$(TargetFramework)'=='netcoreapp2.1'">$(PackageTargetFallback);portable-net45+win8+wpa81+wp8</PackageTargetFallback>
+  </PropertyGroup>
+</Project>
 ```
 
 ### RuntimeIdentifier
@@ -101,7 +105,11 @@ The following example uses the `Condition` attribute to specify fallbacks only f
 The `RuntimeIdentifier` property lets you specify a single [runtime identifier (RID)](../rid-catalog.md) for the project. The RID enables publishing a self-contained deployment.
 
 ```xml
-<RuntimeIdentifier>ubuntu.16.04-x64</RuntimeIdentifier>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RuntimeIdentifier>ubuntu.16.04-x64</RuntimeIdentifier>
+  </PropertyGroup>
+</Project>
 ```
 
 Use `RuntimeIdentifiers` (plural) instead if you need to publish for multiple runtimes. However, `RuntimeIdentifier` can provide faster builds when only a single runtime is required.
@@ -111,7 +119,11 @@ Use `RuntimeIdentifiers` (plural) instead if you need to publish for multiple ru
 The `RuntimeIdentifiers` property lets you specify a semicolon-delimited list of [runtime identifiers (RIDs)](../rid-catalog.md) for the project. RIDs enable publishing self-contained deployments.
 
 ```xml
-<RuntimeIdentifiers>win10-x64;osx.10.11-x64;ubuntu.16.04-x64</RuntimeIdentifiers>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RuntimeIdentifiers>win10-x64;osx.10.11-x64;ubuntu.16.04-x64</RuntimeIdentifiers>
+  </PropertyGroup>
+</Project>
 ```
 
 ### TargetFramework
@@ -119,9 +131,11 @@ The `RuntimeIdentifiers` property lets you specify a semicolon-delimited list of
 The `TargetFramework` property specifies the target framework version for the app, which implicitly references a [metapackage](../packages.md#metapackages). For a list of valid target framework monikers, see [Target frameworks in SDK-style projects](../../standard/frameworks.md#supported-target-framework-versions).
 
 ```xml
-<PropertyGroup>
-  <TargetFramework>netcoreapp3.1</TargetFramework>
-</PropertyGroup>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+</Project>
 ```
 
 For more information, see [Target frameworks in SDK-style projects](../../standard/frameworks.md).
@@ -131,12 +145,32 @@ For more information, see [Target frameworks in SDK-style projects](../../standa
 Use the `TargetFrameworks` property when you want your app to target multiple platforms. This property is ignored if `TargetFramework` is specified. For a list of valid target framework monikers, see [Target frameworks in SDK-style projects](../../standard/frameworks.md#supported-target-framework-versions).
 
 ```xml
-<PropertyGroup>
-  <TargetFrameworks>netcoreapp3.1;net462</TargetFrameworks>
-</PropertyGroup>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp3.1;net462</TargetFrameworks>
+  </PropertyGroup>
+</Project>
 ```
 
 For more information, see [Target frameworks in SDK-style projects](../../standard/frameworks.md).
+
+## Publish properties
+
+### UseAppHost
+
+The `UseAppHost` property was introduced in the 2.1.4 version of the .NET Core SDK. It controls whether or not a native executable is created for a deployment. A native executable is required for self-contained deployments.
+
+In .NET Core 3.0 and later versions, a framework-dependent executable is created by default. Set the `UseAppHost` property to `false` to disable generation of the executable.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <UseAppHost>false</UseAppHost>
+  </PropertyGroup>
+</Project>
+```
+
+For more information about deployment, see [.NET Core application deployment](../deploying/index.md).
 
 ## Compile properties
 
@@ -145,10 +179,11 @@ For more information, see [Target frameworks in SDK-style projects](../../standa
 The `LangVersion` property lets you specify a specific programming language version. For example, if you want access to C# preview features, set `LangVersion` to `preview`.
 
 ```xml
-<PropertyGroup>
-  ...
-  <LangVersion>preview</LangVersion>
-</PropertyGroup>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <LangVersion>preview</LangVersion>
+  </PropertyGroup>
+</Project>
 ```
 
 For more information, see [C# language versioning](../../csharp/language-reference/configure-language-version.md#override-a-default).

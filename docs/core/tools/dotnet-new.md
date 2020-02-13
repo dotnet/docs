@@ -166,6 +166,8 @@ Each project template may have additional options available. The core templates 
 
   Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3. Not supported for F#. Available since .NET Core 2.2 SDK.
 
+  For a list of default C# versions, see [Defaults](../../csharp/language-reference/configure-language-version.md#defaults).
+
 - **`--no-restore`** 
 
   If specified, doesn't execute an implicit restore during project creation. Available since .NET Core 2.2 SDK.
@@ -181,6 +183,8 @@ Each project template may have additional options available. The core templates 
 - **`--langVersion <VERSION_NUMBER>`**
 
   Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3. Not supported for F#. Available since .NET Core 2.2 SDK.
+
+  For a list of default C# versions, see [Defaults](../../csharp/language-reference/configure-language-version.md#defaults).
 
 - **`--no-restore`**
 
@@ -198,6 +202,8 @@ Each project template may have additional options available. The core templates 
 
   Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3.
 
+  For a list of default C# versions, see [Defaults](../../csharp/language-reference/configure-language-version.md#defaults).
+
 - **`--no-restore`**
 
   Doesn't execute an implicit restore during project creation.
@@ -209,6 +215,8 @@ Each project template may have additional options available. The core templates 
 - **`--langVersion <VERSION_NUMBER>`**
 
   Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3.
+
+  For a list of default C# versions, see [Defaults](../../csharp/language-reference/configure-language-version.md#defaults).
 
 - **`--no-restore`**
 

@@ -1,5 +1,5 @@
 ---
-title: How to install and use .NET Core a global tool
+title: How to install and use a .NET Core global tool
 description: Learn how to install and use a .NET tool as a global tool.
 author: tdykstra
 ms.author: tdykstra

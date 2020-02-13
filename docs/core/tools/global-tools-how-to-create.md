@@ -8,7 +8,7 @@ ms.date: 02/12/2020
 
 # Create a .NET Core tool using the .NET Core CLI
 
-**This article applies to:** ✔️ .NET Core 3.x SDK
+**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
 
 This tutorial teaches you how to create and package a .NET Core tool. The .NET Core CLI lets you create a console application as a tool, which others can install and run. .NET Core tools are NuGet packages that are installed from the .NET Core CLI. For more information about tools, see [.NET Core tools overview](global-tools.md).
 

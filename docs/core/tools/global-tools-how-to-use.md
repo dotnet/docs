@@ -8,7 +8,7 @@ ms.date: 02/12/2020
 
 # Install and use a .NET Core global tool using the .NET Core CLI
 
-**This article applies to:** ✔️ .NET Core 3.x SDK
+**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
 
 This tutorial teaches you how to install and use a global tool. You use a tool that you create in the [first tutorial of this series](global-tools-how-to-create.md).
 

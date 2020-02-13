@@ -6,7 +6,7 @@ ms.date: 02/12/2020
 ---
 # How to manage .NET Core tools
 
-**This article applies to:** ✔️ .NET Core 3.x SDK
+**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
 
 A .NET Core tool is a special NuGet package that contains a console application. A tool can be installed on your machine in the following ways:
 
@@ -94,7 +94,7 @@ The .NET Core SDK doesn't add this location automatically to the PATH environmen
 
 ## Install a local tool
 
-**Applies to .NET Core 3.0 and later.**
+**Applies to .NET Core 3.0 SDK and later.**
 
 To install a tool for local access only (for the current directory and subdirectories), it has to be added to a tool manifest file. To create a tool manifest file, run the `dotnet new tool-manifest` command:
 

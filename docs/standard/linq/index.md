@@ -65,7 +65,7 @@ For Each pet in pets
 Next
 ```
 
-The intention behind the code is not to create a new `Dictionary<int, Pet>` and add to it via a loop, it is to convert an existing list into a dictionary! LINQ preserves the intention whereas the imperative code does not.
+The intention behind the code isn't to create a new `Dictionary<int, Pet>` and add to it via a loop, it's to convert an existing list into a dictionary! LINQ preserves the intention whereas the imperative code doesn't.
 
 This is the equivalent LINQ expression:
 
@@ -104,7 +104,7 @@ Public Shared Function FindAllElementsWithAttribute(documentRoot As XElement, el
 End Function
 ```
 
-Writing code to manually traverse the XML document to perform this task would be far more challenging.
+Writing code to manually traverse the XML document to do this task would be far more challenging.
 
 Interacting with XML isn’t the only thing you can do with LINQ Providers. [Linq to SQL](../../framework/data/adonet/sql/linq/index.md) is a fairly bare-bones Object-Relational Mapper (ORM) for an MSSQL Server Database. The [JSON.NET](https://www.newtonsoft.com/json/help/html/LINQtoJSON.htm) library provides efficient JSON Document traversal via LINQ. Furthermore, if there isn’t a library that does what you need, you can also [write your own LINQ Provider](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2012/bb546158(v=vs.110))!
 
@@ -136,7 +136,7 @@ Dim filteredItems = From item In myItems
 
 Isn’t the API syntax just a more concise way to do the query syntax?
 
-No. The query syntax allows for the use of the **let** clause, which allows you to introduce and bind a variable within the scope of the expression, using it in subsequent pieces of the expression. Reproducing the same code with only the API syntax can be done, but will most likely lead to code that is hard to read.
+No. The query syntax allows for the use of the **let** clause, which allows you to introduce and bind a variable within the scope of the expression, using it in subsequent pieces of the expression. Reproducing the same code with only the API syntax can be done, but will most likely lead to code that's hard to read.
 
 So this begs the question, **should you just use the query syntax?**
 

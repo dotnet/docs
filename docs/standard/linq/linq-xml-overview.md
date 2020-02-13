@@ -18,9 +18,9 @@ LINQ to XML is an up-to-date, redesigned approach to programming with XML. It pr
 
 ## LINQ to XML developers
 
-LINQ to XML targets a variety of developers. For an average developer who just wants to get something done, LINQ to XML makes XML easier by providing a query experience that is similar to SQL. With just a bit of study, programmers can learn to write succinct and powerful queries in their programming language of choice.
+LINQ to XML targets a variety of developers. For an average developer who just wants to get something done, LINQ to XML makes XML easier by providing a query experience that's similar to SQL. With just a bit of study, programmers can learn to write succinct and powerful queries in their programming language of choice.
 
-Professional developers can use LINQ to XML to greatly increase their productivity. With LINQ to XML, they can write less code that is more expressive, more compact, and more powerful. They can use query expressions from multiple data domains at the same time.
+Professional developers can use LINQ to XML to greatly increase their productivity. With LINQ to XML, they can write less code that's more expressive, more compact, and more powerful. They can use query expressions from multiple data domains at the same time.
 
 ## LINQ to XML is an XML programming interface
 
@@ -28,7 +28,7 @@ LINQ to XML is a LINQ-enabled, in-memory XML programming interface that enables 
 
 LINQ to XML is like the Document Object Model (DOM) in that it brings the XML document into memory. You can query and modify the document, and after you modify it you can save it to a file or serialize it and send it over the Internet. However, LINQ to XML differs from DOM:
 
-- It provides a new object model that is lighter weight and easier to work with.
+- It provides a new object model that's lighter weight and easier to work with.
 - It takes advantage of language features in C# and Visual Basic.
 
 The most important advantage of LINQ to XML is its integration with Language-Integrated Query (LINQ). This integration enables you to write queries on the in-memory XML document to retrieve collections of elements and attributes. The query capability of LINQ to XML is comparable in functionality (although not in syntax) to XPath and XQuery. The integration of LINQ in C# and Visual Basic provides stronger typing, compile-time checking, and improved debugger support.
@@ -120,7 +120,7 @@ In addition to these LINQ capabilities, LINQ to XML provides an improved XML pro
 
 ## Create XML trees
 
-One of the most significant advantages of programming with LINQ to XML is that it is easy to create XML trees. For example, to create a small XML tree, you can write code as follows:
+One of the most significant advantages of programming with LINQ to XML is that it's easy to create XML trees. For example, to create a small XML tree, you can write code as follows:
 
 ```csharp
 XElement contacts =

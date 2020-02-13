@@ -1,7 +1,7 @@
 ---
 title: Monitoring in Azure Kubernetes Services
 description: Monitoring in Azure Kubernetes Services
-ms.date: 09/23/2019
+ms.date: 02/05/2020
 ---
 # Monitoring in Azure Kubernetes Services
 
@@ -9,28 +9,14 @@ ms.date: 09/23/2019
 
 The built-in logging in Kubernetes is primitive. However, there are some great options for getting the logs out of Kubernetes and into a place where they can be properly analyzed. If you need to monitor your AKS clusters, configuring Elastic Stack for Kubernetes is a great solution.
 
-## Elastic Stack
+## Azure Monitor for Containers
 
-The Elastic Stack is a powerful option for gathering information from a Kubernetes cluster. Kubernetes supports sending logs to an Elasticsearch endpoint, and for the [most part](https://kubernetes.io/docs/tasks/debug-application-cluster/logging-elasticsearch-kibana/), all you need to get started is to set the environment variables as shown in Figure 7-5:
-
-```kubernetes
-KUBE_LOGGING_DESTINATION=elasticsearch
-KUBE_ENABLE_NODE_LOGGING=true
-```
-
-**Figure 7-5** - Configuration variables for Kubernetes
-
-This will install Elasticsearch on the cluster and target sending all the cluster logs to it.
-
-![An example of a Kibana dashboard showing the results of a query against logs ingested from Kubernetes](./media/kibana-dashboard.png)
-**Figure 7-6**. An example of a Kibana dashboard showing the results of a query against logs that are ingested from Kubernetes
-
-## Azure Container Monitoring
-
-Azure Container Monitoring supports consuming logs from not just Kubernetes but also from other orchestration engines such as DC/OS, Docker Swarm, and Red Hat OpenShift.
+[Azure Monitor for Containers](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-overview) supports consuming logs from not just Kubernetes but also from other orchestration engines such as DC/OS, Docker Swarm, and Red Hat OpenShift.
 
 ![Consuming logs from various containers](./media/containers-diagram.png)
-**Figure 7-7**.  Consuming logs from various containers
+**Figure 7-10**. Consuming logs from various containers
+
+[Prometheus](https://prometheus.io/) is a popular open source metric monitoring solution. It is part of the Cloud Native Compute Foundation. Typically, using Prometheus requires managing a Prometheus server with its own store. However, [Azure Monitor for Containers provides direct integration with Prometheus metrics endpoints](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-prometheus-integration), so a separate server is not required.
 
 Log and metric information is gathered not just from the containers running in the cluster but also from the cluster hosts themselves. It allows correlating log information from the two making it much easier to track down an error.
 
@@ -39,7 +25,7 @@ Installing the log collectors differs on [Windows](https://docs.microsoft.com/az
 No matter which orchestrator or operating system is running the Azure Monitor daemon, the log information is forwarded to the same Azure Monitor tools with which users are familiar. This ensures a parallel experience in environments that mix different log sources such as a hybrid Kubernetes/Azure Functions environment.
 
 ![A sample dashboard showing logging and metric information from a number of running containers.](./media/containers-dashboard.png)
-**Figure 7-8**. A sample dashboard showing logging and metric information from a number of running containers.
+**Figure 7-11**. A sample dashboard showing logging and metric information from a number of running containers.
 
 ## Log.Finalize()
 

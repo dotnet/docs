@@ -3,7 +3,7 @@ title: Architectural principles
 description: Architect Modern Web Applications with ASP.NET Core and Azure | Architectural principles
 author: ardalis
 ms.author: wiwagn
-ms.date: 02/16/2019
+ms.date: 12/04/2019
 ---
 # Architectural principles
 

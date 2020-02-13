@@ -223,10 +223,10 @@ You can serialize anonymous records just as you can with named records. Here is 
 ```fsharp
 open Newtonsoft.Json
 
-let phillip = {| name="Phillip"; age=28 |}
-JsonConvert.SerializeObject(phillip)
+let phillip' = {| name="Phillip"; age=28 |}
+let philStr = JsonConvert.SerializeObject(phillip') 
 
-let phillip = JsonConvert.DeserializeObject<{|name: string; age: int|}>(str)
+let phillip = JsonConvert.DeserializeObject<{|name: string; age: int|}>(philStr)
 printfn "Name: %s Age: %d" phillip.name phillip.age
 ```
 

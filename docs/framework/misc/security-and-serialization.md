@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "secure coding, serialization"
   - "security [.NET Framework], serialization"
 ms.assetid: b921bc94-bd3a-4c91-9ede-2c8d4f78ea9a
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Security and Serialization
 Because serialization can allow other code to see or modify object instance data that would otherwise be inaccessible, a special permission is required of code performing serialization: <xref:System.Security.Permissions.SecurityPermission> with the <xref:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter> flag specified. Under default policy, this permission is not given to Internet-downloaded or intranet code; only code on the local computer is granted this permission.  

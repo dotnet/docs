@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "restricted security environment"
   - "code security, sandboxing"
 ms.assetid: d1ad722b-5b49-4040-bff3-431b94bb8095
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Run Partially Trusted Code in a Sandbox
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  

@@ -1,9 +1,11 @@
 ---
 title: "ADO.NET"
+titleSuffix: ""
 ms.date: "03/30/2017"
 ms.assetid: 5b96ed06-9759-4966-a797-a1d5f6ee50ca
 ---
 # ADO.NET
+
 ADO.NET is a set of classes that expose data access services for .NET Framework programmers. ADO.NET provides a rich set of components for creating distributed, data-sharing applications. It is an integral part of the .NET Framework, providing access to relational, XML, and application data. ADO.NET supports a variety of development needs, including the creation of front-end database clients and middle-tier business objects used by applications, tools, languages, or Internet browsers.  
   
 ## In This Section  
@@ -29,7 +31,7 @@ ADO.NET is a set of classes that expose data access services for .NET Framework 
  Provides information about LINQ to DataSet, including programming examples.  
   
  [Retrieving and Modifying Data in ADO.NET](retrieving-and-modifying-data.md)  
- Describes how to connect to a data source and how to retrieve and modify data using `Commands`, `DataReaders` and `DataAdapters`.  
+ Describes how to connect to a data source and how to retrieve and modify data using `Commands`, `DataReaders`, and `DataAdapters`.  
   
  [SQL Server and ADO.NET](./sql/index.md)  
  Describes how to work with features and functionality that are specific to SQL Server.  

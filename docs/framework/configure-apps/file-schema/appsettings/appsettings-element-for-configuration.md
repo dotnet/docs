@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "appSettings Element"
   - "<appSettings> Element"
 ms.assetid: 39694cc4-6b84-45a6-9329-385a0d8b48fe
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # \<appSettings> element for \<configuration>
 

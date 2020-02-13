@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "loader locks"
   - "locks, threads"
 ms.assetid: 8c10fa02-1b9c-4be5-ab03-451d943ac1ee
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # loaderLock MDA
 The `loaderLock` managed debugging assistant (MDA) detects attempts to execute managed code on a thread that holds the Microsoft Windows operating system loader lock.  Any such execution is illegal because it can lead to deadlocks and to use of DLLs before they have been initialized by the operating system's loader.  

@@ -1,7 +1,6 @@
 ---
 title: Continuous Integration (CI) with .NET Core SDK and tools
 description: Learn how to use the .NET Core SDK and its tools on the build server with continuous integration.
-author: mairaw
 ms.date: 05/18/2017
 ---
 # Using .NET Core SDK and tools in Continuous Integration (CI)

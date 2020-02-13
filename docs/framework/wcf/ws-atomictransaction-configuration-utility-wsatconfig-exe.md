@@ -4,6 +4,7 @@ ms.date: "03/30/2017"
 ms.assetid: 1c56cf98-3963-46d5-a4e1-482deae58c58
 ---
 # WS-AtomicTransaction Configuration Utility (wsatConfig.exe)
+
 The WS-AtomicTransaction Configuration Utility is used to configure basic WS-AtomicTransaction support settings.  
   
 ## Syntax  
@@ -13,9 +14,9 @@ wsatConfig [Options]
 ```  
   
 ## Remarks  
- This command line tool can be used to configure basic WS-AT settings in a local machine only. If you have to configure settings on both local and remote machines, you should use the MMC snap-in as described in [Configuring WS-Atomic Transaction Support](./feature-details/configuring-ws-atomic-transaction-support.md).  
+ This command-line tool can be used to configure basic WS-AT settings in a local machine only. If you have to configure settings on both local and remote machines, you should use the MMC snap-in as described in [Configuring WS-Atomic Transaction Support](./feature-details/configuring-ws-atomic-transaction-support.md).  
   
- The command line tool can be found in the Windows SDK installation location, specifically,  
+ The command-line tool can be found in the Windows SDK installation location, specifically,  
   
  %SystemRoot%\Microsoft.Net\Framework\v3.0\Windows Communication Foundation\wsatConfig.exe  
   

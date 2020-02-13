@@ -1,7 +1,5 @@
 ---
 title: Exception.PrepForRemoting Method (System)
-author: mairaw
-ms.author: mairaw
 ms.date: 10/08/2019
 topic_type:
   - "apiref"

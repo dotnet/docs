@@ -65,14 +65,14 @@ let strOpt = ValueSome "Mirror image"
 let reverse (str: string) =
     match str with
     | null
-    | "" -> None
+    | "" -> ValueNone
     | s ->
         str.ToCharArray()
         |> Array.rev
         |> string
-        |> Some
+        |> ValueSome
 
-let reversedString = strOpt |> Option.bind reverse
+let reversedString = strOpt |> ValueOption.bind reverse
 ```
 
 This allows for ValueOption to be used just like Option in scenarios where having a value type improves performance.

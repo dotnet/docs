@@ -6,12 +6,12 @@ ms.assetid: 8d1c5e5a-7928-4a80-95ed-d8da211b8595
 # Poison Message Handling
 A *poison message* is a message that has exceeded the maximum number of delivery attempts to the application. This situation can arise when a queue-based application cannot process a message because of errors. To meet reliability demands, a queued application receives messages under a transaction. Aborting the transaction in which a queued message was received leaves the message in the queue so that the message is retried under a new transaction. If the problem that caused the transaction to abort is not corrected, the receiving application can get stuck in a loop receiving and aborting the same message until the maximum number of delivery attempts has been exceeded and a poison message results.  
   
- A message can become a poison message for many reasons. The most common reasons are application specific. For example, if an application reads a message from a queue and performs some database processing, the application may fail to get a lock on the database, causing it to abort the transaction. Because the database transaction was aborted, the message remains in the queue, which causes the application to reread the message a second time and make another attempt to acquire a lock on the database. Messages can also become poison if they contain invalid information. For example, a purchase order may contain an invalid customer number. In these cases, the application may voluntarily abort the transaction and force the message to become a poison message.  
+ A message can become a poison message for many reasons. The most common reasons are application-specific. For example, if an application reads a message from a queue and performs some database processing, the application may fail to get a lock on the database, causing it to abort the transaction. Because the database transaction was aborted, the message remains in the queue, which causes the application to reread the message a second time and make another attempt to acquire a lock on the database. Messages can also become poison if they contain invalid information. For example, a purchase order may contain an invalid customer number. In these cases, the application may voluntarily abort the transaction and force the message to become a poison message.  
   
  On rare occasions, messages can fail to get dispatched to the application. The Windows Communication Foundation (WCF) layer may find a problem with the message, such as if the message has the wrong frame, invalid message credentials attached to it, or an invalid action header. In these cases, the application never receives the message; however, the message can still become a poison message and be processed manually.  
   
 ## Handling Poison Messages  
- In WCF, poison message handling provides a mechanism for a receiving application to deal with messages that cannot be dispatched to the application, or messages that are dispatched to the application but which fail to be processed because of application-specific reasons. Poison message handling is configured by the following properties in each of the available queued bindings:  
+ In WCF, poison message handling provides a mechanism for a receiving application to deal with messages that cannot be dispatched to the application or messages that are dispatched to the application but that fail to be processed because of application-specific reasons. Configure poison message handling with the following properties in each of the available queued bindings:  
   
 - `ReceiveRetryCount`. An integer value that indicates the maximum number of times to retry delivery of a message from the application queue to the application. The default value is 5. This is sufficient in cases where an immediate retry fixes the problem, such as with a temporary deadlock on a database.  
   
@@ -25,11 +25,11 @@ A *poison message* is a message that has exceeded the maximum number of delivery
   
 - Drop. This option drops the poison message and the message is never delivered to the application. If the message's `TimeToLive` property has expired at this point, then the message may appear in the sender's dead-letter queue. If not, the message does not appear anywhere. This option indicates that the user has not specified what to do if the message is lost.  
   
-- Reject. This option is available only on Windows Vista. This instructs Message Queuing (MSMQ) to send a negative acknowledgement back to the sending queue manager that the application cannot receive the message. The message is placed in the sending queue manager's dead-letter queue.  
+- Reject. This option is available only on Windows Vista. This instructs Message Queuing (MSMQ) to send a negative acknowledgment back to the sending queue manager that the application cannot receive the message. The message is placed in the sending queue manager's dead-letter queue.  
   
 - Move. This option is available only on Windows Vista. This moves the poison message to a poison-message queue for later processing by a poison-message handling application. The poison-message queue is a subqueue of the application queue. A poison-message handling application can be a WCF service that reads messages out of the poison queue. The poison queue is a subqueue of the application queue and can be addressed as net.msmq://\<*machine-name*>/*applicationQueue*;poison, where *machine-name* is the name of the computer on which the queue resides and the *applicationQueue* is the name of the application-specific queue.  
   
- The following are the maximum number of delivery attempts made for a message:  
+The following are the maximum number of delivery attempts made for a message:  
   
 - ((ReceiveRetryCount+1) * (MaxRetryCycles + 1)) on Windows Vista.  
   
@@ -62,7 +62,7 @@ A *poison message* is a message that has exceeded the maximum number of delivery
   
 1. Ensure your poison settings reflect the requirements of your application. When working with the settings, ensure that you understand the differences between the capabilities of Message Queuing on Windows Vista, Windows Server 2003, and Windows XP.  
   
-2. If required, implement the `IErrorHandler` to handle poison-message errors. Because setting `ReceiveErrorHandling` to `Fault` requires a manual mechanism to move the poison message out of the queue or to correct an external dependent issue, the typical usage is to implement `IErrorHandler` when `ReceiveErrorHandling` is set to `Fault`, as shown in the following code.  
+2. If necessary, implement the `IErrorHandler` to handle poison-message errors. Because setting `ReceiveErrorHandling` to `Fault` requires a manual mechanism to move the poison message out of the queue or to correct an external dependent issue, the typical usage is to implement `IErrorHandler` when `ReceiveErrorHandling` is set to `Fault`, as shown in the following code.  
   
      [!code-csharp[S_UE_MSMQ_Poison#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/s_ue_msmq_poison/cs/poisonerrorhandler.cs#2)]  
   

@@ -20,7 +20,7 @@ The following SDKs are available for .NET Core:
 | `Microsoft.NET.Sdk.Worker` | The .NET Core Worker Service SDK |
 | `Microsoft.NET.Sdk.WindowsDesktop` | The .NET Core WinForms and WPF SDK |
 
-The .NET Core SDK is the base SDK for .NET Core. The other SDKs depend on the .NET Core SDK. For example, the Web SDK depends on both the .NET Core SDK and the Razor SDK.
+The .NET Core SDK is the base SDK for .NET Core. The other SDKs reference the .NET Core SDK, and projects that are associated with the other SDKs have all the .NET Core SDK properties available to them. The Web SDK, for example, depends on both the .NET Core SDK and the Razor SDK.
 
 ## Project files
 

@@ -33,31 +33,6 @@ Use the `NetStandardImplicitPackageVersion` property when you want to specify a 
 </Project>
 ```
 
-### PackageTargetFallback
-
-The `PackageTargetFallback` property lets you specify a set of compatible targets to be used when restoring packages. It's designed to allow packages that use the dotnet [TxM (Target x Moniker)](/nuget/schema/target-frameworks) to operate with packages that don't declare a dotnet TxM. If you don't add the `PackageTargetFallback` property, then all the packages your project depends on must also have a dotnet TxM.
-
-The following example specifies fallbacks for all targets:
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wpa81+wp8</PackageTargetFallback>
-  </PropertyGroup>
-</Project>
-```
-
-The following example uses the `Condition` attribute to specify fallbacks only for the `netcoreapp2.1` target:
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFrameworks>net48;netcoreapp2.1</TargetFrameworks>
-    <PackageTargetFallback Condition="'$(TargetFramework)'=='netcoreapp2.1'">$(PackageTargetFallback);portable-net45+win8+wpa81+wp8</PackageTargetFallback>
-  </PropertyGroup>
-</Project>
-```
-
 ### RuntimeIdentifier
 
 The `RuntimeIdentifier` property lets you specify a single [runtime identifier (RID)](../rid-catalog.md) for the project. The RID enables publishing a self-contained deployment.
@@ -100,7 +75,10 @@ For more information, see [Target frameworks in SDK-style projects](../../standa
 
 ### TargetFrameworks
 
-Use the `TargetFrameworks` property when you want your app to target multiple platforms. This property is ignored if `TargetFramework` is specified. For a list of valid target framework monikers, see [Target frameworks in SDK-style projects](../../standard/frameworks.md#supported-target-framework-versions).
+Use the `TargetFrameworks` property when you want your app to target multiple platforms. For a list of valid target framework monikers, see [Target frameworks in SDK-style projects](../../standard/frameworks.md#supported-target-framework-versions).
+
+> [!NOTE]
+> This property is ignored if `TargetFramework` (singular) is specified.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -167,7 +145,7 @@ For more information, see [Package references in project files](/nuget/consume-p
 
 ### Pack and restore targets
 
-MSBuild 15.1 introduced `pack` and `restore` targets for creating and restoring NuGet packages as part of a build. For information about the MSBuild properties for these targets, see [NuGet pack and restore as MSBuild targets](/nuget/reference/msbuild-targets).
+MSBuild 15.1 introduced `pack` and `restore` targets for creating and restoring NuGet packages as part of a build. For information about the MSBuild properties for these targets, including `PackageTargetFallback`, see [NuGet pack and restore as MSBuild targets](/nuget/reference/msbuild-targets).
 
 ## See also
 

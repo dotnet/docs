@@ -31,6 +31,19 @@ macOS has standalone installers that can be used to install the .NET Core 3.1 SD
 
 - [x64 (64-bit) CPUs](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 
+## Download and manually install
+
+As an alternative to the macOS installers for .NET Core, you can download and manually install the SDK. This has a side-affect of 
+
+To extract the SDK and make the .NET Core CLI commands available at the terminal, first [download](#all-net-core-downloads) a .NET Core binary release. Then, open a terminal and run the following commands. It's assumed the runtime is downloaded to the `~/Downloads/dotnet-sdk.pkg` file.
+
+```bash
+mkdir -p $HOME/dotnet
+sudo installer -pkg ~/Downloads/dotnet-sdk.pkg -target $HOME/dotnet
+export DOTNET_ROOT=$HOME/dotnet
+export PATH=$PATH:$HOME/dotnet
+```
+
 ::: zone-end
 
 ::: zone pivot="os-linux"
@@ -181,6 +194,7 @@ For more information about using .NET Core in a Docker container, see [Introduct
 
 ::: zone pivot="os-macos"
 
+- [Working with macOS Catalina notarization](macos-notarization-issues.md).
 - [Tutorial: Get started on macOS](../tutorials/using-on-mac-vs.md).
 - [Tutorial: Create a new app with Visual Studio Code](../tutorials/with-visual-studio-code.md).
 - [Tutorial: Containerize a .NET Core app](../docker/build-container.md).

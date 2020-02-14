@@ -294,6 +294,8 @@ For .NET Core apps that use the *System.Drawing.Common* assembly, you'll also ne
 | 2.2               | Sierra (10.12+)       | x64 | [More information](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md) |
 | 2.1               | Sierra (10.12+)       | x64 | [More information](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md) |
 
+[!INCLUDE [macos-notarized](./includes/macos-notarized.md)]
+
 ## libgdiplus
 
 .NET Core applications that use the *System.Drawing.Common* assembly require libgdiplus to be installed.

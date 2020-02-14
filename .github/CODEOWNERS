@@ -13,7 +13,7 @@
 # . Guides are first.
 # . .NET Core sections are next
 # . .NET Framework sections
-# . .NET Standard 
+# . .NET Standard
 # . Architecture e-books
 
 # In each subsection folders are order first by depth, then alphabetically.
@@ -72,6 +72,8 @@
 /docs/core/install/** @Thraka
 # Breaking changes
 /docs/core/compatibility/** @gewarren
+# Project SDKs
+/docs/core/project-sdk/** @gewarren
 # Config settings
 /docs/core/run-time-config/** @gewarren
 # Tools

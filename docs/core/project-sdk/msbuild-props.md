@@ -52,6 +52,7 @@ The following example uses the `Condition` attribute to specify fallbacks only f
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+    <TargetFrameworks>net48;netcoreapp2.1</TargetFrameworks>
     <PackageTargetFallback Condition="'$(TargetFramework)'=='netcoreapp2.1'">$(PackageTargetFallback);portable-net45+win8+wpa81+wp8</PackageTargetFallback>
   </PropertyGroup>
 </Project>

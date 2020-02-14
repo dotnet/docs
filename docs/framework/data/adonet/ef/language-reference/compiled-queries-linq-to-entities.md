@@ -66,4 +66,4 @@ When you have an application that executes structurally similar queries many tim
 
 - [ADO.NET Entity Framework](../index.md)
 - [LINQ to Entities](linq-to-entities.md)
-- [Entity Framework Merge Options and Compiled Queries](https://docs.microsoft.com/en-us/archive/blogs/dsimmons/ef-merge-options-and-compiled-queries)
+- [Entity Framework Merge Options and Compiled Queries](https://docs.microsoft.com/archive/blogs/dsimmons/ef-merge-options-and-compiled-queries)

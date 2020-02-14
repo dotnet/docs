@@ -46,6 +46,8 @@ Another example, by default, ASP.NET Core imports a default SSL certificate thro
 
 If certificate sharing is required, macOS provides configuration options with the `security` utility.
 
+For more information on how to troubleshoot ASP.NET Core certificate issues, see [Enforce HTTPS in ASP.NET Core](/aspnet/core/security/enforcing-ssl?view=aspnetcore-3.1&tabs=visual-studio#troubleshoot-certificate-problems).
+
 ## Default entitlements
 
 .NET Core’s default host (the `dotnet` command) has a set of default entitlements. These entitlements are required for proper operation of .NET Core. It's possible that your application may need additional entitlements, in which case you'll need to generate and use an [appHost](#apphost-disabled-by-default) and then add the necessary entitlements locally.

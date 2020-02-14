@@ -2,7 +2,7 @@
 title: Troubleshoot .NET Core tool usage issues
 description: Discover the common issues when running .NET Core tools and possible solutions.
 author: kdollard
-ms.date: 09/23/2019
+ms.date: 02/14/2020
 ---
 
 # Troubleshoot .NET Core tool usage issues
@@ -54,7 +54,7 @@ The name of the executable determines how you invoke the tool. The following tab
   * If you've installed the .NET Core 3.0 SDK and you've set the `DOTNET_ADD_GLOBAL_TOOLS_TO_PATH` environment variable to `false`.
   * If you've installed .NET Core 2.2 SDK or earlier versions, and you've set the `DOTNET_SKIP_FIRST_TIME_EXPERIENCE` environment variable to `true`.
 
-  For more information about global tools, see [.NET Core Global Tools overview](global-tools.md).
+  For more information, see [.NET Core tools](global-tools.md).
 
 * Local tools
 
@@ -94,7 +94,7 @@ If you install the .NET Core SDK to a non-default location, you need to set the 
 
 ## .NET Core tool installation fails
 
-There are a number of reasons the installation of a .NET Core global or local tool may fail. When the tool installation fails, you'll see a message similar to following one:
+There are a number of reasons the installation of a .NET Core global or local tool may fail. When the tool installation fails, you'll see a message similar to the following one:
 
 ```console
 Tool '{0}' failed to install. This failure may have been caused by:
@@ -132,9 +132,6 @@ As package IDs are updated, you'll need to change to the new package ID to get t
 dotnet tool install -g --version 1.1.0-pre <toolName>
 ```
 
-> [!NOTE]
-> The .NET Core CLI team is planning to add a `--preview` switch in a future release to make this easier.
-
 ### Package isn't a .NET Core tool
 
 * A NuGet package by this name was found, but it wasn't a .NET Core tool.
@@ -157,4 +154,4 @@ A common reason for failure is that the tool name isn't correct. This can happen
 
 ## See also
 
-* [.NET Core Global Tools overview](global-tools.md)
+* [.NET Core tools](global-tools.md)

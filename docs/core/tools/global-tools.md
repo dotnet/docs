@@ -213,18 +213,19 @@ To invoke a global tool that is installed by using the `tool-path` option, make 
 
 ### Invoke a local tool
 
-To invoke a local tool, you have to use the `dotnet` command from within the installation directory. You can use the long form (`dotnet tool run <tool>`) or the short form (`dotnet <tool>`), as shown in the following examples:
+To invoke a local tool, you have to use the `dotnet` command from within the installation directory. You can use the long form (`dotnet tool run <COMMAND_NAME>`) or the short form (`dotnet <COMMAND_NAME>`), as shown in the following examples:
 
 ```dotnetcli
 dotnet tool run dotnetsay
 dotnet dotnetsay
 ```
 
-If the command is prefixed by `dotnet-`, include that prefix when you invoke the tool. For example, if the command is `dotnet-doc`, either of the following examples invokes the local tool:
+If the command is prefixed by `dotnet-`, you can include or omit the prefix when you invoke the tool. For example, if the command is `dotnet-doc`, any of the following examples invokes the local tool:
 
 ```dotnetcli
 dotnet tool run dotnet-doc
 dotnet dotnet-doc
+dotnet doc
 ```
 
 ## Update or uninstall a tool

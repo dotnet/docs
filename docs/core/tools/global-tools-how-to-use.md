@@ -1,12 +1,12 @@
 ---
-title: How to install and use a .NET Core global tool
+title: "Tutorial: Install and use a .NET Core global tool"
 description: Learn how to install and use a .NET tool as a global tool.
 author: tdykstra
 ms.author: tdykstra
 ms.date: 02/12/2020
 ---
 
-# Install and use a .NET Core global tool using the .NET Core CLI
+# Tutorial: Install and use a .NET Core global tool using the .NET Core CLI
 
 **This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
 

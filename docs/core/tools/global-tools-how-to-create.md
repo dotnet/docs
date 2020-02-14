@@ -1,12 +1,12 @@
 ---
-title: How to create a .NET Core tool
+title: "Tutorial: Create a .NET Core tool"
 description: Learn how to create a .NET Core tool. A tool is a console application that is installed by using the .NET Core CLI.
 author: tdykstra
 ms.author: tdykstra
 ms.date: 02/12/2020
 ---
 
-# Create a .NET Core tool using the .NET Core CLI
+# Tutorial: Create a .NET Core tool using the .NET Core CLI
 
 **This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
 

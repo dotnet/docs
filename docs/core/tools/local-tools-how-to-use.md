@@ -1,12 +1,12 @@
 ---
-title: How to install and use .NET Core local tools
+title: "Tutorial: Install and use .NET Core local tools"
 description: Learn how to install and use a .NET tool as a local tool.
 author: tdykstra
 ms.author: tdykstra
 ms.date: 02/12/2020
 ---
 
-# Install and use a .NET Core local tool using the .NET Core CLI
+# Tutorial: Install and use a .NET Core local tool using the .NET Core CLI
 
 **This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
 

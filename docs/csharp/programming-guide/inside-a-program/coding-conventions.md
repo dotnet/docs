@@ -8,7 +8,8 @@ helpviewer_keywords:
 ms.assetid: f4f60de9-d49b-4fb6-bab1-20e19ea24710
 ---
 # C# Coding Conventions (C# Programming Guide)
- Coding conventions serve the following purposes:  
+
+Coding conventions serve the following purposes:  
   
 - They create a consistent look to the code, so that readers can focus on content, not layout.  
   
@@ -18,7 +19,7 @@ ms.assetid: f4f60de9-d49b-4fb6-bab1-20e19ea24710
   
 - They demonstrate C# best practices.  
 
- The guidelines in this topic are used by Microsoft to develop samples and documentation.  
+The guidelines in this article are used by Microsoft to develop samples and documentation.  
   
 ## Naming Conventions  
   
@@ -29,7 +30,8 @@ ms.assetid: f4f60de9-d49b-4fb6-bab1-20e19ea24710
 - You do not have to change the names of objects that were created by using the Visual Studio designer tools to make them fit other guidelines.  
   
 ## Layout Conventions  
- Good layout uses formatting to emphasize the structure of your code and to make the code easier to read. Microsoft examples and samples conform to the following conventions:  
+
+Good layout uses formatting to emphasize the structure of your code and to make the code easier to read. Microsoft examples and samples conform to the following conventions:  
   
 - Use the default Code Editor settings (smart indenting, four-character indents, tabs saved as spaces). For more information, see [Options, Text Editor, C#, Formatting](/visualstudio/ide/reference/options-text-editor-csharp-formatting).  
   
@@ -60,7 +62,8 @@ ms.assetid: f4f60de9-d49b-4fb6-bab1-20e19ea24710
 - Do not create formatted blocks of asterisks around comments.  
   
 ## Language Guidelines  
- The following sections describe practices that the C# team follows to prepare code examples and samples.  
+
+The following sections describe practices that the C# team follows to prepare code examples and samples.  
   
 ### String Data Type  
   
@@ -101,26 +104,25 @@ ms.assetid: f4f60de9-d49b-4fb6-bab1-20e19ea24710
      [!code-csharp[csProgGuideCodingConventions#12](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs#12)]
 
      > [!NOTE]
-     > Be careful not to accidentally change a type of an element of the iterable collection.
-     For example,  it is easy to switch from <xref:System.Linq.IQueryable?displayProperty=nameWithType> to <xref:System.Collections.Generic.IEnumerable?displayProperty=nameWithType> in `foreach` statement, which changes the execution of a query.
+     > Be careful not to accidentally change a type of an element of the iterable collection. For example, it is easy to switch from <xref:System.Linq.IQueryable?displayProperty=nameWithType> to <xref:System.Collections.IEnumerable?displayProperty=nameWithType> in a `foreach` statement, which changes the execution of a query.
 
 ### Unsigned Data Type  
   
-- In general, use `int` rather than unsigned types. The use of `int` is common throughout C#, and it is easier to interact with other libraries when you use `int`.  
+In general, use `int` rather than unsigned types. The use of `int` is common throughout C#, and it is easier to interact with other libraries when you use `int`.  
   
 ### Arrays  
   
-- Use the concise syntax when you initialize arrays on the declaration line.  
+Use the concise syntax when you initialize arrays on the declaration line.  
   
-     [!code-csharp[csProgGuideCodingConventions#13](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs#13)]  
+[!code-csharp[csProgGuideCodingConventions#13](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs#13)]  
   
 ### Delegates  
   
-- Use the concise syntax to create instances of a delegate type.  
+Use the concise syntax to create instances of a delegate type.  
   
-     [!code-csharp[csProgGuideCodingConventions#14](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs#14)]  
+[!code-csharp[csProgGuideCodingConventions#14](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs#14)]  
   
-     [!code-csharp[csProgGuideCodingConventions#15](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs#15)]  
+[!code-csharp[csProgGuideCodingConventions#15](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs#15)]  
   
 ### try-catch and using Statements in Exception Handling  
   
@@ -134,9 +136,9 @@ ms.assetid: f4f60de9-d49b-4fb6-bab1-20e19ea24710
   
 ### && and &#124;&#124; Operators  
   
-- To avoid exceptions and increase performance by skipping unnecessary comparisons, use [&&](../../language-reference/operators/boolean-logical-operators.md#conditional-logical-and-operator-) instead of [&](../../language-reference/operators/boolean-logical-operators.md#logical-and-operator-) and [&#124;&#124;](../../language-reference/operators/boolean-logical-operators.md#conditional-logical-or-operator-) instead of [&#124;](../../language-reference/operators/boolean-logical-operators.md#logical-or-operator-) when you perform comparisons, as shown in the following example.  
+To avoid exceptions and increase performance by skipping unnecessary comparisons, use [&&](../../language-reference/operators/boolean-logical-operators.md#conditional-logical-and-operator-) instead of [&](../../language-reference/operators/boolean-logical-operators.md#logical-and-operator-) and [&#124;&#124;](../../language-reference/operators/boolean-logical-operators.md#conditional-logical-or-operator-) instead of [&#124;](../../language-reference/operators/boolean-logical-operators.md#logical-or-operator-) when you perform comparisons, as shown in the following example.  
   
-     [!code-csharp[csProgGuideCodingConventions#18](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs#18)]  
+[!code-csharp[csProgGuideCodingConventions#18](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs#18)]  
   
 ### New Operator  
   
@@ -154,15 +156,15 @@ ms.assetid: f4f60de9-d49b-4fb6-bab1-20e19ea24710
   
 ### Event Handling  
   
-- If you are defining an event handler that you do not need to remove later, use a lambda expression.  
+If you are defining an event handler that you do not need to remove later, use a lambda expression.  
   
-     [!code-csharp[csProgGuideCodingConventions#22](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs#22)]  
+[!code-csharp[csProgGuideCodingConventions#22](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs#22)]  
   
-     [!code-csharp[csProgGuideCodingConventions#23](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs#23)]  
+[!code-csharp[csProgGuideCodingConventions#23](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs#23)]  
   
 ### Static Members  
   
-- Call [static](../../language-reference/keywords/static.md) members by using the class name: *ClassName.StaticMember*. This practice makes code more readable by making static access clear.  Do not qualify a static member defined in a base class with the name of a derived class.  While that code compiles, the code readability is misleading, and the code may break in the future if you add a static member with the same name to the derived class.  
+Call [static](../../language-reference/keywords/static.md) members by using the class name: *ClassName.StaticMember*. This practice makes code more readable by making static access clear.  Do not qualify a static member defined in a base class with the name of a derived class.  While that code compiles, the code readability is misleading, and the code may break in the future if you add a static member with the same name to the derived class.  
   
 ### LINQ Queries  
   
@@ -193,7 +195,8 @@ ms.assetid: f4f60de9-d49b-4fb6-bab1-20e19ea24710
      [!code-csharp[csProgGuideCodingConventions#30](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs#30)]  
   
 ## Security  
- Follow the guidelines in [Secure Coding Guidelines](../../../standard/security/secure-coding-guidelines.md).  
+
+Follow the guidelines in [Secure Coding Guidelines](../../../standard/security/secure-coding-guidelines.md).  
   
 ## See also
 

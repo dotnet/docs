@@ -2,9 +2,7 @@
 title: Perform common tasks using Designer Actions on controls
 ms.date: "02/13/2019"
 helpviewer_keywords:
-  - "DesignerAction object model"
   - "Designer Actions"
-  - "designer actions"
 ms.assetid: cac337e6-00f6-4584-80f4-75728f5ea113
 author: jillre
 ms.author: jillfra

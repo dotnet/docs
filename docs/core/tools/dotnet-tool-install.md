@@ -105,7 +105,7 @@ Installs version 2.0.0 of [dotnetsay](https://www.nuget.org/packages/dotnetsay/)
 
 Installs [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a local tool for the current directory:
 
-`dotnet tool install -g dotnetsay`
+`dotnet tool install dotnetsay`
 
 ## See also
 

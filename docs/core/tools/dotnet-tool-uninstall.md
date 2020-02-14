@@ -64,6 +64,10 @@ Uninstalls the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global too
 
 `dotnet tool uninstall dotnetsay --tool-path ~/bin`
 
+Uninstalls the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) local tool from the current folder:
+
+`dotnet tool uninstall dotnetsay`
+
 ## See also
 
 - [.NET Core tools](global-tools.md)

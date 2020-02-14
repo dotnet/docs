@@ -80,6 +80,10 @@ Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool l
 
 `dotnet tool update dotnetsay --tool-path ~/bin`
 
+Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) local tool installed for the current folder:
+
+`dotnet tool update dotnetsay`
+
 ## See also
 
 - [.NET Core tools](global-tools.md)

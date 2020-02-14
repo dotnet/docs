@@ -32,5 +32,5 @@ You can add images to an <xref:System.Windows.Forms.ImageList> component several
 ## See also
 
 - [Images, Bitmaps, and Metafiles](../advanced/images-bitmaps-and-metafiles.md)
-- [Walkthrough: Walkthrough: Perform common tasks using Designer Actions](perform-common-tasks-design-actions.md)
+- [Walkthrough: Perform common tasks using Designer Actions](perform-common-tasks-design-actions.md)
 - [ImageList Component](imagelist-component-windows-forms.md)

@@ -1,6 +1,6 @@
 ---
 title: Working with macOS Catalina notarization
-description: How to handle notarization and certificate problems with macOS when installing the .NET Core runtime, SDK, and apps built with .NET Core.
+description: How to handle notarization and certificate problems with macOS when you install the .NET Core runtime, SDK, and apps built with .NET Core.
 author: thraka
 ms.author: adegeo
 ms.date: 02/14/2020
@@ -10,11 +10,11 @@ Beginning with macOS Catalina (version 10.15), all software built after June 1, 
 
 ## Installing .NET Core
 
-The installers for .NET Core (both runtime and SDK) versions 3.1, 3.0, and 2.1, have been notarized by Apple as of February 19, 2020. Prior released versions, including the now end-of-life .NET Core 2.2, aren't notarized. If required, you can manually install these by first downloading the installer, and then using the `sudo installer` command. For more information, see [Download and manually install for macOS](sdk.md?pivots=os-macos#download-and-manually-install).
+The installers for .NET Core (both runtime and SDK) versions 3.1, 3.0, and 2.1, have been notarized by Apple since February 19, 2020. Prior released versions, including the now end-of-life .NET Core 2.2, aren't notarized. If necessary, you can manually install these by first downloading the installer, and then using the `sudo installer` command. For more information, see [Download and manually install for macOS](sdk.md?pivots=os-macos#download-and-manually-install).
 
 ## appHost is disabled by default
 
-Starting with .NET Core SDK 3.0, a native Mach-O executable (known as the appHost) was generated when your project was compiled or published. This is a convenient way to run your app. Otherwise, your app must be started by running `dotnet <filename.dll>`. The generated executable isn't notarized and macOS will display an error if you try to run it.
+Starting with .NET Core SDK 3.0, a native Mach-O executable (known as the appHost) is generated when your project is compiled or published. This is a convenient way to run your app. Otherwise, your app must be started by running `dotnet <filename.dll>`. The generated executable isn't notarized and macOS will display an error if you try to run it.
 
 The [`UseAppHost`](project-sdk/msbuild-props.md#UseAppHost) boolean setting controls the generation of an appHost. The latest versions of the SDK default to `false` for this setting. You can set `UseAppHost` in the project file or on the command line:
 
@@ -26,7 +26,7 @@ The [`UseAppHost`](project-sdk/msbuild-props.md#UseAppHost) boolean setting cont
   </PropertyGroup>
   ```
 
-- Command line parameter
+- Command-line parameter
 
   ```dotnetcli
   dotnet publish -p:UseAppHost=true
@@ -40,9 +40,9 @@ For more information about the `UseAppHost` setting, see [MSBuild properties for
 
 .NET Core provides the ability to manage certificates in the macOS Keychain with the <xref:System.Security.Cryptography.X509Certificates> class. Access to the macOS Keychain uses the applications identity as the primary key when deciding which partition to consider. For example, unsigned applications store secrets in the unsigned partition, whereas signed applications store their secrets in partitions only they can access. The source of execution that invokes your app decides which partition to use.
 
-.NET Core provides three sources of execution: [appHost](#apphost-disabled-by-default), default host (the `dotnet` command), and a custom host. Each execution model may have different identities, either signed or unsigned, and have access to different partitions within the Keychain. Certificates imported by one mode may not be accessible from another. For example, the notarized versions of .NET Core have a default host that is signed. Certificates are imported into a secure partition based on its identity. These certificates aren't accessible from a generated appHost, as the appHost is unsigned.
+.NET Core provides three sources of execution: [appHost](#apphost-disabled-by-default), default host (the `dotnet` command), and a custom host. Each execution model may have different identities, either signed or unsigned, and has access to different partitions within the Keychain. Certificates imported by one mode may not be accessible from another. For example, the notarized versions of .NET Core have a default host that is signed. Certificates are imported into a secure partition based on its identity. These certificates aren't accessible from a generated appHost, as the appHost is unsigned.
 
-Another example, by default, ASP.NET Core imports a default SSL certificate through the default host. ASP.NET Core applications that use an appHost don't have access to this certificate and will receive an error when .NET Core detects the certificate isn't accessible. The error message provides instructions on how to fix this problem.
+Another example, by default, ASP.NET Core imports a default SSL certificate through the default host. ASP.NET Core applications that use an appHost won't have access to this certificate and will receive an error when .NET Core detects the certificate isn't accessible. The error message provides instructions on how to fix this problem.
 
 If certificate sharing is required, macOS provides configuration options with the `security` utility.
 
@@ -60,3 +60,9 @@ Default set of entitlements for .NET Core:
 ## Notarize a .NET Core app
 
 If you want your application to run on macOS Catalina (version 10.15) or higher, you'll want to notarize your app. The appHost you submit with your application for notarization should be used with at least the same [default entitlements](#default-entitlements) for .NET Core.
+
+## Next steps
+
+- [.NET Core dependencies and requirements](dependencies.md).
+- [Install the .NET Core SDK](sdk.md).
+- [Install the .NET Core Runtime](runtime.md)

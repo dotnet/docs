@@ -6,7 +6,7 @@ ms.assetid: e639410b-d1d1-479c-b78e-a4701d4e4085
 # Trace Type Summary
 [Source Levels](https://docs.microsoft.com/dotnet/api/system.diagnostics.sourcelevels&view=netframework-4.8) defines various trace levels: Critical, Error, Warning, Information, and Verbose, as well as provides description of the `ActivityTracing` flag, which toggles the output of trace boundary and activity transfer events.  
   
- You can also review [TraceEventType](https://docs.microsoft.com/dotnet/api/system.diagnostics.traceeventtype&view=netframework-4.8) for the types of traces which can be emitted from <xref:System.Diagnostics>.  
+ You can also review [TraceEventType](https://docs.microsoft.com/dotnet/api/system.diagnostics.traceeventtype?view=netframework-4.8) for the types of traces which can be emitted from <xref:System.Diagnostics>.  
   
  The following table lists the most important ones.  
   

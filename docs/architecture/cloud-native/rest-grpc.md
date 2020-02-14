@@ -59,7 +59,7 @@ Figure 4-21 shows the structure of a gRPC service in Visual Studio 2019. Note ho
 
 An excellent introduction to building gRPC services is [gRPC with ASP.NET Core 3.0](https://www.dotnetcurry.com/aspnet-core/1514/grpc-asp-net-core-3) from the .NET Curry magazine series.
 
-## gRPC Usage
+## gRPC usage
 
 gRPC is well suited for the following scenarios:
 
@@ -70,13 +70,79 @@ gRPC is well suited for the following scenarios:
 
 As we disucssed, gRPC relies heavily on HTTP/2 features. At the time of this writing, most modern browsers cannot provide the level of control required to support a gRPC client. Instead, gRPC is commonly implemented for backend microservice communication.
  
- The [microservice reference architecture](https://github.com/dotnet-architecture/eShopOnContainers) for eShop on Containers provides excellent guidance for implementing gRPC on the .NET Core platform. Figure 4-22 shows the implementation.
+ The [microservice reference architecture](https://github.com/dotnet-architecture/eShopOnContainers) for eShop on Containers provides guidance for implementing gRPC on the .NET Core platform. Figure 4-22 shows the implementation.
+
+### gRPC client code
 
 ![gRPC Usage Patterns](./media/grpc-implementation.png)
 
 **Figure 4-22**. gRPC implementation
 
-In the eShop reference application, the Web-Marketing and Mobile-Shopping API Gateway services implement RESTful API calls for simple CRUD operations and gRPC calls for the more complex operations. Both of these services implement gRPC client functionality, known as stubs, which provide the plumbing to make remote calls.
+In the previous figure, note how eShop exposes four different API gateways embracing the [Backend for Frontends pattern](https://docs.microsoft.com/azure/architecture/patterns/backends-for-frontends). The Web-Marketing gateway exposes simple CRUD operations with a RESTful. It also includes a Aggregator microservice that implements gRPC calls for complex operations that require synchronous calls to multiple backend microservices.
+
+The API service leverages the built-in gRPC client plumbing from the .NET Core 3.1 framework.
+
+You start by creating a .proto file which defines each the methods, inputs, and outputs for each exposed service operation. Figure-23 presents the proto file for the Shopping Basket service.  
+
+```csharp
+syntax = "proto3";
+
+option csharp_namespace = "GrpcBasket";
+
+package BasketApi;
+
+service Basket {
+	rpc GetBasketById(BasketRequest) returns (CustomerBasketResponse) {}
+	rpc UpdateBasket(CustomerBasketRequest) returns (CustomerBasketResponse) {}
+}
+
+message BasketRequest {
+	string id = 1;
+}
+
+message CustomerBasketRequest {
+	string buyerid = 1;
+	repeated BasketItemResponse items = 2;
+}
+
+message CustomerBasketResponse {
+	string buyerid = 1;
+	repeated BasketItemResponse items = 2;
+}
+
+message BasketItemResponse {
+	string id = 1;
+	int32 productid = 2;
+	string productname = 3;
+	double unitprice = 4;
+	double oldunitprice = 5;
+	int32 quantity = 6;
+	string pictureurl = 7;
+}
+```
+**Figure 4-23** Proto file for the Shopping Basket service
+
+Once defined, you include the proto file by declaring it in the .csproj file, shown in Figure 4-24.
+
+```csharp
+ <ItemGroup>
+    <Protobuf Include="..\..\..\Services\Basket\Basket.API\Proto\basket.proto" GrpcServices="Client" />
+  </ItemGroup>
+```
+**Figure 4-24** Declaring a proto file 
+
+At this point, building the project will generate the gRPC plumbing which is added to the obj folder in the project. Figure 4-25 shows the generated code.
+
+![gRPC client plumbing code](./media/grpc-project.png )
+
+**Figure 4-25** gRPC client plumbing code in Visual Studio 2019 
+
+Now, you can add a service class that exposes local methods that leverages the grpc plumbing to make remote calls to the backend basket service.
+
+### gRPC server code
+
+
+ Both of these services implement gRPC client functionality, known as stubs, which provide the plumbing to make remote calls.
 
 The backend Basket and Catalog services expose gRPC services.
 

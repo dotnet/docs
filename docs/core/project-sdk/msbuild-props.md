@@ -95,6 +95,7 @@ The following example uses the `Condition` attribute to specify fallbacks only f
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
+    <TargetFrameworks>net48;netcoreapp2.1</TargetFrameworks>
     <PackageTargetFallback Condition="'$(TargetFramework)'=='netcoreapp2.1'">$(PackageTargetFallback);portable-net45+win8+wpa81+wp8</PackageTargetFallback>
   </PropertyGroup>
 </Project>
@@ -158,7 +159,7 @@ For more information, see [Target frameworks in SDK-style projects](../../standa
 
 ### UseAppHost
 
-The `UseAppHost` property was introduced in the 2.1.4 version of the .NET Core SDK. It controls whether or not a native executable is created for a deployment. A native executable is required for self-contained deployments.
+The `UseAppHost` property was introduced in the 2.1.400 version of the .NET Core SDK. It controls whether or not a native executable is created for a deployment. A native executable is required for self-contained deployments.
 
 In .NET Core 3.0 and later versions, a framework-dependent executable is created by default. Set the `UseAppHost` property to `false` to disable generation of the executable.
 

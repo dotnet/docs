@@ -66,7 +66,7 @@ If the project has multiple target frameworks, focus the results of the command 
 
 ### Default compilation includes
 
-The default includes and excludes for compile items and embedded resources are in the SDK properties file. Unlike .NET Framework projects, you don't need to specify these items in your project file, because the defaults cover most common use cases. This leads to smaller project files that are easier to understand as well as edit by hand, if needed.
+The default includes and excludes for compile items and embedded resources are defined in the SDK. Unlike non-SDK .NET Framework projects, you don't need to specify these items in your project file, because the defaults cover most common use cases. This leads to smaller project files that are easier to understand as well as edit by hand, if needed.
 
 The following table shows which element and which [globs](https://en.wikipedia.org/wiki/Glob_(programming)) are included and excluded in the .NET Core SDK:
 
@@ -77,13 +77,13 @@ The following table shows which element and which [globs](https://en.wikipedia.o
 | None              | \*\*/\*                                   | \*\*/\*.user; \*\*/\*.\*proj; \*\*/\*.sln; \*\*/\*.vssscc     | \*\*/\*.cs; \*\*/\*.resx |
 
 > [!NOTE]
-> **Exclude glob** always excludes the `./bin` and `./obj` folders, which are represented by the `$(BaseOutputPath)` and `$(BaseIntermediateOutputPath)` MSBuild properties, respectively. As a whole, all excludes are represented by `$(DefaultItemExcludes)`.
+> The `./bin` and `./obj` folders, which are represented by the `$(BaseOutputPath)` and `$(BaseIntermediateOutputPath)` MSBuild properties, are excluded from the globs by default. Excludes are represented by the property `$(DefaultItemExcludes)`.
 
-If you have globs in your project and you try to build it using the .NET Core SDK, you'll get the following error:
+If you explicitly define these items in your project file, you're likely to get the following error:
 
 **Duplicate Compile items were included. The .NET SDK includes Compile items from your project directory by default. You can either remove these items from your project file, or set the 'EnableDefaultCompileItems' property to 'false' if you want to explicitly include them in your project file.**
 
-To resolve the error, remove the explicit `Compile` items that match the ones listed on the previous table, or set the `EnableDefaultCompileItems` property to `false`, which disables implicit inclusion:
+To resolve the error, either remove the explicit `Compile` items that match the implicit ones listed on the previous table, or set the `EnableDefaultCompileItems` property to `false`, which disables implicit inclusion:
 
 ```xml
 <PropertyGroup>

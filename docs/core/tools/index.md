@@ -6,6 +6,8 @@ ms.date: 02/13/2020
 ---
 # .NET Core CLI overview
 
+**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
+
 The .NET Core command-line interface (CLI) is a cross-platform toolchain for developing, building, running, and publishing .NET Core applications.
 
 The .NET Core CLI is included with the [.NET Core SDK](../sdk.md). To learn how to install the .NET Core SDK, see [Install the .NET Core SDK](../install/sdk.md).
@@ -14,11 +16,7 @@ The .NET Core CLI is included with the [.NET Core SDK](../sdk.md). To learn how 
 
 The following commands are installed by default:
 
-<!-- markdownlint-disable MD025 -->
-
-# [.NET Core 2.x](#tab/netcore2x)
-
-**Basic commands**
+### Basic commands
 
 - [new](dotnet-new.md)
 - [restore](dotnet-restore.md)
@@ -34,7 +32,7 @@ The following commands are installed by default:
 - [help](dotnet-help.md)
 - [store](dotnet-store.md)
 
-**Project modification commands**
+### Project modification commands
 
 - [add package](dotnet-add-package.md)
 - [add reference](dotnet-add-reference.md)
@@ -42,7 +40,7 @@ The following commands are installed by default:
 - [remove reference](dotnet-remove-reference.md)
 - [list reference](dotnet-list-reference.md)
 
-**Advanced commands**
+### Advanced commands
 
 - [nuget delete](dotnet-nuget-delete.md)
 - [nuget locals](dotnet-nuget-locals.md)
@@ -50,48 +48,16 @@ The following commands are installed by default:
 - [msbuild](dotnet-msbuild.md)
 - [dotnet install script](dotnet-install-script.md)
 
-**Commands for managing tools**
+### Commands for managing tools
 
 - [tool install](dotnet-tool-install.md)
 - [tool list](dotnet-tool-list.md)
 - [tool update](dotnet-tool-update.md)
+- [tool restore](global-tools.md#install-a-local-tool) Available starting with .NET Core SDK 3.0
+- [tool run](global-tools.md#invoke-a-local-tool) Available starting with .NET Core SDK 3.0
 - [tool uninstall](dotnet-tool-uninstall.md)
 
 Tools are console applications that are installed from NuGet packages and are invoked from the command prompt. You can write tools yourself or install tools written by third parties. Tools are also known as global tools, tool-path tools, and local tools. For more information, see [.NET Core tools overview](global-tools.md).
-
-# [.NET Core 1.x](#tab/netcore1x)
-
-**Basic commands**
-
-- [new](dotnet-new.md)
-- [restore](dotnet-restore.md)
-- [build](dotnet-build.md)
-- [publish](dotnet-publish.md)
-- [run](dotnet-run.md)
-- [test](dotnet-test.md)
-- [vstest](dotnet-vstest.md)
-- [pack](dotnet-pack.md)
-- [migrate](dotnet-migrate.md)
-- [clean](dotnet-clean.md)
-- [sln](dotnet-sln.md)
-
-**Project modification commands**
-
-- [add package](dotnet-add-package.md)
-- [add reference](dotnet-add-reference.md)
-- [remove package](dotnet-remove-package.md)
-- [remove reference](dotnet-remove-reference.md)
-- [list reference](dotnet-list-reference.md)
-
-**Advanced commands**
-
-- [nuget delete](dotnet-nuget-delete.md)
-- [nuget locals](dotnet-nuget-locals.md)
-- [nuget push](dotnet-nuget-push.md)
-- [msbuild](dotnet-msbuild.md)
-- [dotnet install script](dotnet-install-script.md)
-
----
 
 ## Command structure
 

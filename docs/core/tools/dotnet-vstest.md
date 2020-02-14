@@ -82,7 +82,7 @@ Execute tests in parallel. By default, all available cores on the machine are av
 
 `--TestCaseFilter|/TestCaseFilter:<Expression>`
 
-Run tests that match the given expression. `<Expression>` is of the format `<property>Operator<value>[|&<Expression>]`, where Operator is one of `=`, `!=`, or `~`. Operator `~` has 'contains' semantics and is applicable for string properties like `DisplayName`. Parenthesis `()` are used to group sub-expressions.
+Run tests that match the given expression. `<Expression>` is of the format `<property>Operator<value>[|&<Expression>]`, where Operator is one of `=`, `!=`, or `~`. Operator `~` has 'contains' semantics and is applicable for string properties like `DisplayName`. Parenthesis `()` are used to group subexpressions.
 
 `-?|--Help|/?|/Help`
 
@@ -170,7 +170,7 @@ Execute tests in parallel. By default, all available cores on the machine are av
 
 `--TestCaseFilter|/TestCaseFilter:<Expression>`
 
-Run tests that match the given expression. `<Expression>` is of the format `<property>Operator<value>[|&<Expression>]`, where Operator is one of `=`, `!=`, or `~`. Operator `~` has 'contains' semantics and is applicable for string properties like `DisplayName`. Parenthesis `()` are used to group sub-expressions.
+Run tests that match the given expression. `<Expression>` is of the format `<property>Operator<value>[|&<Expression>]`, where Operator is one of `=`, `!=`, or `~`. Operator `~` has 'contains' semantics and is applicable for string properties like `DisplayName`. Parenthesis `()` are used to group subexpressions.
 
 `-?|--Help|/?|/Help`
 
@@ -246,7 +246,7 @@ Execute tests in parallel. By default, all available cores on the machine are av
 
 `--TestCaseFilter|/TestCaseFilter:<Expression>`
 
-Run tests that match the given expression. `<Expression>` is of the format `<property>Operator<value>[|&<Expression>]`, where Operator is one of `=`, `!=`, or `~`. Operator `~` has 'contains' semantics and is applicable for string properties like `DisplayName`. Parenthesis `()` are used to group sub-expressions.
+Run tests that match the given expression. `<Expression>` is of the format `<property>Operator<value>[|&<Expression>]`, where Operator is one of `=`, `!=`, or `~`. Operator `~` has 'contains' semantics and is applicable for string properties like `DisplayName`. Parenthesis `()` are used to group subexpressions.
 
 `-?|--Help|/?|/Help`
 

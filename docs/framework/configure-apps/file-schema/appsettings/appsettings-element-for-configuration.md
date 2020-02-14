@@ -27,7 +27,7 @@ Contains custom application settings. This is a predefined configuration section
 
 |           | Description |
 | --------- | ----------- |
-| **file**  | Optional attribute.<br><br>Specifies a relative path to an external file containing custom application configuration settings. The specified file contains the same kind of settings that are specified in the **\<add>**, **\<remove>**, and **\<clear>** elements and uses the same key/value pair format as those elements.<br><br>The path specified is relative to the main configuration file. For a Windows Forms application, this is the binary folder (such as */bin/debug*), not the location of the application configuration file. For Web Forms applications, the path is relative to the application root, where the *web.config* file is located.<br><br>Note that the runtime ignores the attribute if the specified file can not be found. |
+| **file**  | Optional attribute.<br><br>Specifies a relative path to an external file containing custom application configuration settings. The specified file contains the same kind of settings that are specified in the **\<add>**, **\<remove>**, and **\<clear>** elements and uses the same key/value pair format as those elements.<br><br>The path specified is relative to the main configuration file. For a Windows Forms application, this is the binary folder (such as */bin/debug*), not the location of the application configuration file. For Web Forms applications, the path is relative to the application root, where the *web.config* file is located.<br><br>The runtime ignores the attribute if the specified file can't be found. |
 
 ## Parent element
 

@@ -9,12 +9,11 @@ ms.topic: reference
 This page describes MSBuild properties for configuring .NET Core projects.
 
 > [!NOTE]
-> This page is a work in progress and does not list all of the useful MSBuild properties for the .NET Core SDK.
+> This page is a work in progress and does not list all of the useful MSBuild properties for the .NET Core SDK. For a list of common MSBuild properties, see [Common MSBuild properties](/visualstudio/msbuild/common-msbuild-project-properties).
 
 ## Framework and dependency properties
 
 - [NetStandardImplicitPackageVersion](#netstandardimplicitpackageversion)
-- [PackageReference](#packagereference)
 - [PackageTargetFallback](#packagetargetfallback)
 - [RuntimeIdentifier](#runtimeidentifier)
 - [RuntimeIdentifiers](#runtimeidentifiers)
@@ -33,48 +32,6 @@ Use the `NetStandardImplicitPackageVersion` property when you want to specify a 
   </PropertyGroup>
 </Project>
 ```
-
-### PackageReference
-
-The `PackageReference` property lets you specify a NuGet dependency. For example, you may want to reference a single package instead of a [metapackage](../packages.md#metapackages). The `Include` attribute specifies the package ID. The project file snippet in the following example references the [System.Runtime](https://www.nuget.org/packages/System.Runtime/) package.
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  ...
-  <ItemGroup>
-    <PackageReference Include="System.Runtime" Version="4.3.0" />
-  </ItemGroup>
-</Project>
-```
-
-For more information, see [Package references in project files](/nuget/consume-packages/package-references-in-project-files).
-
-#### Attributes
-
-```xml
-<PackageReference Include="<package-id>" Version="" IncludeAssets="" ExcludeAssets="" PrivateAssets="" />
-```
-
-The required `Version` attribute specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](/nuget/reference/package-versioning#version-ranges-and-wildcards) scheme. The default behavior is a minimum-version, inclusive match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3, )` and means the resolved package will have the version 1.2.3 if it's available or a later version if not.
-
-The `IncludeAssets` attribute specifies which assets belonging to the package specified by `PackageReference` should be consumed. By default, all package assets are included.
-
-The `ExcludeAssets` attribute specifies which assets belonging to the package specified by `PackageReference` should not be consumed.
-
-The `PrivateAssets` attribute specifies which assets belonging to the package specified by `PackageReference` should be consumed but not flow to the next project. The `Analyzers`, `Build`, and `ContentFiles` assets are private, by default, when this attribute is not present.
-
-The :::no-loc text="assets"::: attributes can contain one or more of the following values. Separate multiple values with a semicolon `;` character.
-
-| Value | Effect |
-| - | - |
-| `Compile` | The contents of the *lib* folder are available to compile against. |
-| `Runtime` | The contents of the *runtime* folder are distributed. |
-| `ContentFiles` | The contents of the *contentfiles* folder are used. |
-| `Build` | The props/targets in the *build* folder are used. |
-| `Native` | The contents from native assets are copied to the *output* folder for runtime. |
-| `Analyzers` | The analyzers are used. |
-| `None` | None of the assets are used. (This value cannot be combined.) |
-| `All` | All assets are used. (This value cannot be combined.) |
 
 ### PackageTargetFallback
 
@@ -158,7 +115,7 @@ For more information, see [Target frameworks in SDK-style projects](../../standa
 
 ### UseAppHost
 
-The `UseAppHost` property was introduced in the 2.1.4 version of the .NET Core SDK. It controls whether or not a native executable is created for a deployment. A native executable is required for self-contained deployments.
+The `UseAppHost` property was introduced in the 2.1.400 version of the .NET Core SDK. It controls whether or not a native executable is created for a deployment. A native executable is required for self-contained deployments.
 
 In .NET Core 3.0 and later versions, a framework-dependent executable is created by default. Set the `UseAppHost` property to `false` to disable generation of the executable.
 
@@ -188,7 +145,26 @@ The `LangVersion` property lets you specify a specific programming language vers
 
 For more information, see [C# language versioning](../../csharp/language-reference/configure-language-version.md#override-a-default).
 
-## NuGet pack and restore properties
+## NuGet packages
+
+- [PackageReference](#packagereference)
+
+### PackageReference
+
+The `PackageReference` item lets you specify a NuGet dependency. For example, you may want to reference a single package instead of a [metapackage](../packages.md#metapackages). The `Include` attribute specifies the package ID. The project file snippet in the following example references the [System.Runtime](https://www.nuget.org/packages/System.Runtime/) package.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  ...
+  <ItemGroup>
+    <PackageReference Include="System.Runtime" Version="4.3.0" />
+  </ItemGroup>
+</Project>
+```
+
+For more information, see [Package references in project files](/nuget/consume-packages/package-references-in-project-files).
+
+### Pack and restore targets
 
 MSBuild 15.1 introduced `pack` and `restore` targets for creating and restoring NuGet packages as part of a build. For information about the MSBuild properties for these targets, see [NuGet pack and restore as MSBuild targets](/nuget/reference/msbuild-targets).
 

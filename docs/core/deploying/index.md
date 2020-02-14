@@ -21,8 +21,8 @@ The following table outlines the commands used to publish an app as runtime-depe
 | -----------------------------------------------------------------------------------  | ------- | ------- | ------- |
 | [runtime-dependent executable](#publish-runtime-dependent) for the current platform. |         | ✔️      | [`dotnet publish`](../tools/dotnet-publish.md) |
 | [runtime-dependent executable](#publish-runtime-dependent) for a specific platform.  |         | ✔️      | [`dotnet publish -r <RID> --self-contained false`](../tools/dotnet-publish.md) |
-| [runtime-dependent cross-platform binary](#publish-runtime-dependent)                | ✔️      | ✔️      | [`dotnet publish`](../tools/dotnet-publish.md) |
-| [self-contained executable](#publish-self-contained)                                 | ✔️      | ✔️      | [`dotnet publish -r <RID>`](../tools/dotnet-publish.md) |
+| [runtime-dependent cross-platform binary](#publish-runtime-dependent).               | ✔️      | ✔️      | [`dotnet publish`](../tools/dotnet-publish.md) |
+| [self-contained executable](#publish-self-contained).                                | ✔️      | ✔️      | [`dotnet publish -r <RID>`](../tools/dotnet-publish.md) |
 
 For more information, see [.NET Core dotnet publish command](../tools/dotnet-publish.md).
 
@@ -36,7 +36,7 @@ The following commands produce an executable:
 | ------------------------------------------------------------------------------------ | ------- | ------- | ------- |
 | [runtime-dependent executable](#publish-runtime-dependent) for the current platform. |         | ✔️      | [`dotnet publish`](../tools/dotnet-publish.md) |
 | [runtime-dependent executable](#publish-runtime-dependent) for a specific platform.  |         | ✔️      | [`dotnet publish -r <RID> --self-contained false`](../tools/dotnet-publish.md) |
-| [self-contained executable](#publish-self-contained)                                 | ✔️      | ✔️      | [`dotnet publish -r <RID>`](../tools/dotnet-publish.md) |
+| [self-contained executable](#publish-self-contained).                                | ✔️      | ✔️      | [`dotnet publish -r <RID>`](../tools/dotnet-publish.md) |
 
 ## Produce a cross-platform binary
 
@@ -48,7 +48,7 @@ The following command produces a cross-platform binary:
 
 | Type                                                                                 | SDK 2.1 | SDK 3.x | Command |
 | -----------------------------------------------------------------------------------  | ------- | ------- | ------- |
-| [runtime-dependent cross-platform binary](#publish-runtime-dependent)                | ✔️      | ✔️      | [`dotnet publish`](../tools/dotnet-publish.md) |
+| [runtime-dependent cross-platform binary](#publish-runtime-dependent).               | ✔️      | ✔️      | [`dotnet publish`](../tools/dotnet-publish.md) |
 
 ## Publish runtime-dependent
 

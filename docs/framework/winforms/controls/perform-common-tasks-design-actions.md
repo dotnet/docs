@@ -34,7 +34,7 @@ The first step is to create the project and set up the form.
 
 Designer Actions are always available at design time on controls that offer them.
 
-1. Drag a <xref:System.Windows.Forms.TabControl> from the **Toolbox** onto your form. Note the Designer Actions glyph (![Designer Actions Glyph](./media/designer-actions-glyph.gif)) that appears on the side of the <xref:System.Windows.Forms.TabControl>.
+1. Drag a <xref:System.Windows.Forms.TabControl> from the **Toolbox** onto your form. Note the Designer Actions glyph (![Small black arrow](./media/designer-actions-glyph.gif)) that appears on the side of the <xref:System.Windows.Forms.TabControl>.
 
 2. Click the Designer Actions glyph. In the shortcut menu that appears next to the glyph, select the **Add Tab** item. Observe that a new tab page is added to the <xref:System.Windows.Forms.TabControl>.
 

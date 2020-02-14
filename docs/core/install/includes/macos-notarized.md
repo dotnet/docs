@@ -5,4 +5,4 @@ The installers for .NET Core (both runtime and SDK) versions 3.1, 3.0, and 2.1, 
 
 ![macOS Catalina notarization alert](media/macos-notarized-pkg-warning.png)
 
-For more information about how enforced-notarization affects .NET Core (and your .NET Core apps), see [Troubleshoot macOS .NET Core installations](../troubleshoot-macos.md).
+For more information about how enforced-notarization affects .NET Core (and your .NET Core apps), see [Working with macOS Catalina Notarization](../macos-notarization-issues.md).

@@ -42,7 +42,7 @@ For more information about the `UseAppHost` setting, see [MSBuild properties for
 
 .NET Core provides the ability to manage certificates in the macOS Keychain with the <xref:System.Security.Cryptography.X509Certificates> class. Access to the macOS Keychain uses the applications identity as the primary key when deciding which partition to consider. For example, unsigned applications store secrets in the unsigned partition, whereas signed applications store their secrets in partitions only they can access. The source of execution that invokes your app decides which partition to use.
 
-.NET Core provides three sources of execution: [appHost](#apphost-disabled-by-default), default host (the `dotnet` command), and a custom host. Each execution model may have different identities, either signed or unsigned, and has access to different partitions within the Keychain. Certificates imported by one mode may not be accessible from another. For example, the notarized versions of .NET Core have a default host that is signed. Certificates are imported into a secure partition based on its identity. These certificates aren't accessible from a generated appHost, as the appHost is unsigned.
+.NET Core provides three sources of execution: [appHost](#apphost-is-disabled-by-default), default host (the `dotnet` command), and a custom host. Each execution model may have different identities, either signed or unsigned, and has access to different partitions within the Keychain. Certificates imported by one mode may not be accessible from another. For example, the notarized versions of .NET Core have a default host that is signed. Certificates are imported into a secure partition based on its identity. These certificates aren't accessible from a generated appHost, as the appHost is unsigned.
 
 Another example, by default, ASP.NET Core imports a default SSL certificate through the default host. ASP.NET Core applications that use an appHost won't have access to this certificate and will receive an error when .NET Core detects the certificate isn't accessible. The error message provides instructions on how to fix this problem.
 
@@ -52,7 +52,7 @@ For more information on how to troubleshoot ASP.NET Core certificate issues, see
 
 ## Default entitlements
 
-.NET Core’s default host (the `dotnet` command) has a set of default entitlements. These entitlements are required for proper operation of .NET Core. It's possible that your application may need additional entitlements, in which case you'll need to generate and use an [appHost](#apphost-disabled-by-default) and then add the necessary entitlements locally.
+.NET Core’s default host (the `dotnet` command) has a set of default entitlements. These entitlements are required for proper operation of .NET Core. It's possible that your application may need additional entitlements, in which case you'll need to generate and use an [appHost](#apphost-is-disabled-by-default) and then add the necessary entitlements locally.
  
 Default set of entitlements for .NET Core:
 

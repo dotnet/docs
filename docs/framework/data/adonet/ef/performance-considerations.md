@@ -122,7 +122,7 @@ This topic describes performance characteristics of the ADO.NET Entity Framework
   
  When working with very large models, the following consideration applies:  
   
- The .NET metadata format limits the number of user string characters in a given binary to 16,777,215 (0xFFFFFF). If you are generating views for a very large model and the view file reaches this size limit, you will get the "No logical space left to create more user strings." compile error. This size limitation applies to all managed binaries. For more information see the [blog](https://go.microsoft.com/fwlink/?LinkId=201476) that demonstrates how to avoid the error when working with large and complex models.  
+ The .NET metadata format limits the number of user string characters in a given binary to 16,777,215 (0xFFFFFF). If you are generating views for a very large model and the view file reaches this size limit, you will get the "No logical space left to create more user strings." compile error. This size limitation applies to all managed binaries. For more information see the [blog](https://docs.microsoft.com/archive/blogs/appfabriccat/solving-the-no-logical-space-left-to-create-more-user-strings-error-and-improving-performance-of-pre-generated-views-in-visual-studio-net4-entity-framework) that demonstrates how to avoid the error when working with large and complex models.  
   
 #### Consider using the NoTracking merge option for queries  
  There is a cost required to track returned objects in the object context. Detecting changes to objects and ensuring that multiple requests for the same logical entity return the same object instance requires that objects be attached to an <xref:System.Data.Objects.ObjectContext> instance. If you do not plan to make updates or deletes to objects and do not require identity management, consider using the <xref:System.Data.Objects.MergeOption.NoTracking> merge options when you execute queries.  
@@ -139,13 +139,13 @@ This topic describes performance characteristics of the ADO.NET Entity Framework
  When your application executes a series of object queries or frequently calls <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> to persist create, update, and delete operations to the data source, the Entity Framework must continuously open and close the connection to the data source. In these situations, consider manually opening the connection at the start of these operations and either closing or disposing of the connection when the operations are complete. For more information, see [Managing Connections and Transactions](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896325(v=vs.100)).  
   
 ## Performance Data  
- Some performance data for the Entity Framework is published in the following posts on the [ADO.NET team blog](https://go.microsoft.com/fwlink/?LinkId=91905):  
+ Some performance data for the Entity Framework is published in the following posts on the [ADO.NET team blog](https://docs.microsoft.com/archive/blogs/adonet/):  
   
-- [Exploring the Performance of the ADO.NET Entity Framework - Part 1](https://go.microsoft.com/fwlink/?LinkId=123907)  
+- [Exploring the Performance of the ADO.NET Entity Framework - Part 1](https://docs.microsoft.com/archive/blogs/adonet/exploring-the-performance-of-the-ado-net-entity-framework-part-1)  
   
-- [Exploring the Performance of the ADO.NET Entity Framework – Part 2](https://go.microsoft.com/fwlink/?LinkId=123909)  
+- [Exploring the Performance of the ADO.NET Entity Framework – Part 2](https://docs.microsoft.com/archive/blogs/adonet/exploring-the-performance-of-the-ado-net-entity-framework-part-2)  
   
-- [ADO.NET Entity Framework Performance Comparison](https://go.microsoft.com/fwlink/?LinkID=123913)  
+- [ADO.NET Entity Framework Performance Comparison](https://docs.microsoft.com/archive/blogs/adonet/ado-net-entity-framework-performance-comparison)  
   
 ## See also
 

@@ -183,20 +183,20 @@ As shown in this example, the list shows local tools. To see global tools, use t
 
 ### Invoke a global tool
 
-For global tools, use the tool command by itself. For example, if the command is `dotnetsay`, that's what you use to invoke the command:
+For global tools, use the tool command by itself. For example, if the command is `dotnetsay` or `dotnet-doc`, that's what you use to invoke the command:
 
 ```console
 dotnetsay
+dotnet-doc
 ```
 
-If the tool author specified a command with the prefix `dotnet-`, you can invoke the tool with or without the `dotnet` command. For example, if the command is `dotnet-doc`, you can invoke the tool in either of the following ways:
+If the command begins with the prefix `dotnet-`, an alternative way to invoke the tool is to use the `dotnet` command and omit the tool command prefix. For example, if the command is `dotnet-doc`, the following command invokes the tool:
 
 ```dotnetcli
-dotnet-doc
 dotnet doc
 ```
 
-However, if a global tool and a local tool have the same name prefixed by `dotnet-` and you want to invoke the global tool, you have to include the prefix. If the command is `dotnet-doc` for both a global and a local tool,`dotnet doc` invokes the local tool.
+However, if a global tool and a local tool have the same command prefixed by `dotnet-` and you want to invoke the global tool, you have to include the prefix. If the command is `dotnet-doc` for both a global and a local tool, `dotnet doc` invokes the local tool.
 
 ### Invoke a tool-path global tool
 
@@ -204,7 +204,7 @@ To invoke a global tool that is installed by using the `tool-path` option, make 
 
 ### Invoke a local tool
 
-To invoke a local tool, use the `dotnet` command or the `dotnet tool run` command from within the installation directory, as shown in the following example:
+To invoke a local tool, you have to use the `dotnet` command from within the installation directory. You can use the long form (`dotnet tool run <tool>`) or the short form (`dotnet <tool>`), as shown in the following examples:
 
 ```dotnetcli
 dotnet tool run dotnetsay

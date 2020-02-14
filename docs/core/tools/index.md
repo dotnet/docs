@@ -63,24 +63,11 @@ Tools are console applications that are installed from NuGet packages and are in
 
 CLI command structure consists of [the driver ("dotnet")](#driver), [the command](#command), and possibly command [arguments](#arguments) and [options](#options). You see this pattern in most CLI operations, such as creating a new console app and running it from the command line as the following commands show when executed from a directory named *my_app*:
 
-# [.NET Core 2.x](#tab/netcore2x)
-
 ```dotnetcli
 dotnet new console
 dotnet build --output /build_output
 dotnet /build_output/my_app.dll
 ```
-
-# [.NET Core 1.x](#tab/netcore1x)
-
-```dotnetcli
-dotnet new console
-dotnet restore
-dotnet build --output /build_output
-dotnet /build_output/my_app.dll
-```
-
----
 
 ### Driver
 

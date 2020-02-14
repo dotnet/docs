@@ -7,11 +7,13 @@ ms.date: 01/31/2020
 
 Applications you create with .NET Core can be published in two different modes, and the mode affects how a user runs your app.
 
-Publishing your app as *self-contained* produces an application that includes the .NET Core runtime and libraries, and your application and its dependencies. Users of the application can run it on a machine that doesn't have the .NET Core runtime installed.
+Publishing your app as *self-contained* produces an application that includes the .NET Core runtime and libraries, and your application and its dependencies. Users of the application can run it on a machine that doesn't have the .NET Core runtime installed. 
 
 Publishing your app as *runtime-dependent* produces an application that includes only your application itself and its dependencies. Users of the application have to separately install the .NET Core runtime.
 
 Both publishing modes produce a platform-specific executable by default. Runtime-dependent applications can be created without an executable, and these applications are cross-platform.
+
+When an executable is produced, you can specify the target platform with a runtime identifier (RID). For more information about RIDs, see [.NET Core RID Catalog](../rid-catalog.md).
 
 The following table outlines the commands used to publish an app as runtime-dependent or self-contained, per SDK version:
 
@@ -23,7 +25,7 @@ The following table outlines the commands used to publish an app as runtime-depe
 | [self-contained executable](#publish-self-contained)                                 | ✔️      | ✔️      | [`dotnet publish -r <RID>`](../tools/dotnet-publish.md) |
 
 For more information, see [.NET Core dotnet publish command](../tools/dotnet-publish.md).
-)
+
 ## Produce an executable
 
 Executables aren't cross-platform. They're specific to an operating system and CPU architecture. When publishing your app and creating an executable, you can publish the app as [self-contained](#publish-self-contained) or [runtime-dependent](#publish-runtime-dependent). Publishing an app as self-contained includes the .NET Core runtime with the app, and users of the app don't have to worry about installing .NET Core before running the app. Apps published as runtime-dependent don't include the .NET Core runtime and libraries; only the app and 3rd-party dependencies are included.

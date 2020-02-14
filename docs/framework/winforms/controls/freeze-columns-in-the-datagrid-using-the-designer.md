@@ -17,7 +17,7 @@ When users view data displayed in a Windows Forms <xref:System.Windows.Forms.Dat
 
 ## To freeze a column using the designer
 
-1. Click the Designer Actions glyph (![Small black arrow](./media/designer-actions-glyph.gif)) on the upper-right corner of the <xref:System.Windows.Forms.DataGridView> control, and then select **Edit Columns**.
+1. Click the designer actions glyph (![Small black arrow](./media/designer-actions-glyph.gif)) on the upper-right corner of the <xref:System.Windows.Forms.DataGridView> control, and then select **Edit Columns**.
 
 2. Select a column from the **Selected Columns** list.
 

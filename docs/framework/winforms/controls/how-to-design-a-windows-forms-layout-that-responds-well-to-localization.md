@@ -32,7 +32,7 @@ Creating forms that are ready to be localized greatly speeds development for int
 
 4. [How to: Edit Columns and Rows in a TableLayoutPanel Control](how-to-edit-columns-and-rows-in-a-tablelayoutpanel-control.md)
 
-5. [Walkthrough: Perform common tasks using Designer Actions](perform-common-tasks-design-actions.md)
+5. [Walkthrough: Perform common tasks using designer actions](perform-common-tasks-design-actions.md)
 
 6. [Walkthrough: Arranging Controls on Windows Forms Using a TableLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-tablelayoutpanel.md)
 

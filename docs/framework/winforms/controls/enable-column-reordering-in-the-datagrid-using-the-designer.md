@@ -15,7 +15,7 @@ When viewing data displayed in a Windows Forms <xref:System.Windows.Forms.DataGr
 
 ## To enable column reordering
 
-- Click the Designer Actions glyph (![Small black arrow](./media/designer-actions-glyph.gif)) on the upper-right corner of the <xref:System.Windows.Forms.DataGridView> control, and then select **Enable Column Reordering**.
+- Click the designer actions glyph (![Small black arrow](./media/designer-actions-glyph.gif)) on the upper-right corner of the <xref:System.Windows.Forms.DataGridView> control, and then select **Enable Column Reordering**.
 
 ## See also
 

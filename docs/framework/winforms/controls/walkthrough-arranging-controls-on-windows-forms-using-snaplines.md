@@ -118,7 +118,7 @@ You can use snaplines to align grouped controls as well as controls within a <xr
 
 ## Align a label to a control's text
 
-1. Drag a <xref:System.Windows.Forms.TextBox> control from the **Toolbox** onto your form. When you drop the <xref:System.Windows.Forms.TextBox> control onto the form, click the smart-tag glyph and select the **Set text to textBox1** option. For details, see [Walkthrough: Perform common tasks using Designer Actions](perform-common-tasks-design-actions.md).
+1. Drag a <xref:System.Windows.Forms.TextBox> control from the **Toolbox** onto your form. When you drop the <xref:System.Windows.Forms.TextBox> control onto the form, click the smart-tag glyph and select the **Set text to textBox1** option. For details, see [Walkthrough: Perform common tasks using designer actions](perform-common-tasks-design-actions.md).
 
 2. Drag a <xref:System.Windows.Forms.Label> control from the **Toolbox** onto your form.
 

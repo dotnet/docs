@@ -39,7 +39,7 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
 - [Debugging Custom Windows Forms Controls at Design Time](../framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time.md)\
   Describes how to debug the design-time behavior of your custom control.
 
-- [Walkthrough: Perform common tasks using Designer Actions](../framework/winforms/controls/perform-common-tasks-design-actions.md)\
+- [Walkthrough: Perform common tasks using designer actions](../framework/winforms/controls/perform-common-tasks-design-actions.md)\
   Demonstrates some of the commonly performed tasks such as adding or removing a tab on a `TabControl`, docking a control to its parent, and changing the orientation of a `SplitContainer` control.
 
 - [Writing Queries in C# (LINQ)](./programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)\

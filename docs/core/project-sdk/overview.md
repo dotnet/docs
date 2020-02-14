@@ -22,12 +22,22 @@ The following SDKs are available for .NET Core:
 
 The .NET Core SDK is the base SDK for .NET Core. The other SDKs reference the .NET Core SDK, and projects that are associated with the other SDKs have all the .NET Core SDK properties available to them. The Web SDK, for example, depends on both the .NET Core SDK and the Razor SDK.
 
+You can also author your own SDK that can be distributed via NuGet.
+
 ## Project files
 
 .NET Core projects are based on the [MSBuild](/visualstudio/msbuild/msbuild) format. Project files, which have extensions like *.csproj* for C# projects and *.fsproj* for F# projects, are in XML format. The root element of an MSBuild project file is the [Project](/msbuild/project-element-msbuild) element. The `Project` element has an optional `Sdk` attribute that specifies which SDK (and version) to use. To use the .NET Core tools and build your code, set the `Sdk` attribute to one of the IDs in the [Available SDKs](#available-sdks) table.
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
+  ...
+</Project>
+```
+
+To specify an SDK that comes from NuGet, include the version at the end of the name, or specify the name and version in the *global.json* file.
+
+```xml
+<Project Sdk="MSBuild.Sdk.Extras/2.0.54">
   ...
 </Project>
 ```

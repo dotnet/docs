@@ -11,16 +11,16 @@ This page describes MSBuild properties for configuring .NET Core projects.
 > [!NOTE]
 > This page is a work in progress and does not list all of the useful MSBuild properties for the .NET Core SDK. For a list of common MSBuild properties, see [Common MSBuild properties](/visualstudio/msbuild/common-msbuild-project-properties).
 
-## Framework and dependency properties
+## Framework properties
 
 - [NetStandardImplicitPackageVersion](#netstandardimplicitpackageversion)
-- [PackageTargetFallback](#packagetargetfallback)
-- [RuntimeIdentifier](#runtimeidentifier)
-- [RuntimeIdentifiers](#runtimeidentifiers)
 - [TargetFramework](#targetframework)
 - [TargetFrameworks](#targetframeworks)
 
 ### NetStandardImplicitPackageVersion
+
+> [!NOTE]
+> This property only applies to projects using `netstandard1.x`. It doesn't apply to projects that use `netstandard2` and later.
 
 Use the `NetStandardImplicitPackageVersion` property when you want to specify a framework version that's lower than the [metapackage](../packages.md#metapackages) version. The project file in the following example targets `netstandard1.3` but uses the 1.6.0 version of `NETStandard.Library`.
 
@@ -29,32 +29,6 @@ Use the `NetStandardImplicitPackageVersion` property when you want to specify a 
   <PropertyGroup>
     <TargetFramework>netstandard1.3</TargetFramework>
     <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
-  </PropertyGroup>
-</Project>
-```
-
-### RuntimeIdentifier
-
-The `RuntimeIdentifier` property lets you specify a single [runtime identifier (RID)](../rid-catalog.md) for the project. The RID enables publishing a self-contained deployment.
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <RuntimeIdentifier>ubuntu.16.04-x64</RuntimeIdentifier>
-  </PropertyGroup>
-</Project>
-```
-
-Use `RuntimeIdentifiers` (plural) instead if you need to publish for multiple runtimes. However, `RuntimeIdentifier` can provide faster builds when only a single runtime is required.
-
-### RuntimeIdentifiers
-
-The `RuntimeIdentifiers` property lets you specify a semicolon-delimited list of [runtime identifiers (RIDs)](../rid-catalog.md) for the project. RIDs enable publishing self-contained deployments.
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <RuntimeIdentifiers>win10-x64;osx.10.11-x64;ubuntu.16.04-x64</RuntimeIdentifiers>
   </PropertyGroup>
 </Project>
 ```
@@ -91,6 +65,37 @@ Use the `TargetFrameworks` property when you want your app to target multiple pl
 For more information, see [Target frameworks in SDK-style projects](../../standard/frameworks.md).
 
 ## Publish properties
+
+- [RuntimeIdentifier](#runtimeidentifier)
+- [RuntimeIdentifiers](#runtimeidentifiers)
+- [UseAppHost](#useapphost)
+
+### RuntimeIdentifier
+
+The `RuntimeIdentifier` property lets you specify a single [runtime identifier (RID)](../rid-catalog.md) for the project. The RID enables publishing a self-contained deployment.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RuntimeIdentifier>ubuntu.16.04-x64</RuntimeIdentifier>
+  </PropertyGroup>
+</Project>
+```
+
+### RuntimeIdentifiers
+
+The `RuntimeIdentifiers` property lets you specify a semicolon-delimited list of [runtime identifiers (RIDs)](../rid-catalog.md) for the project. Use this property if you need to publish for multiple runtimes. `RuntimeIdentifiers` is used at restore time to ensure the right assets are in the graph.
+
+> [!TIP]
+> `RuntimeIdentifier` (singular) can provide faster builds when only a single runtime is required.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RuntimeIdentifiers>win10-x64;osx.10.11-x64;ubuntu.16.04-x64</RuntimeIdentifiers>
+  </PropertyGroup>
+</Project>
+```
 
 ### UseAppHost
 

@@ -11,30 +11,30 @@ Publishing your app as *self-contained* produces an application that includes th
 
 Publishing your app as *runtime-dependent* produces an application that includes only your application itself and its dependencies. Users of the application have to separately install the .NET Core runtime.
 
-Both publishing modes produce a platform-specific executable by default. Runtime-dependent applications can be created without an executable, and these applications are cross-platform. 
+Both publishing modes produce a platform-specific executable by default. Runtime-dependent applications can be created without an executable, and these applications are cross-platform.
 
 The following table outlines the commands used to publish an app as runtime-dependent or self-contained, per SDK version:
 
-| Type                                                                  | SDK 3.1 | SDK 3.0 | SDK 2.1 | Command | 
-| --------------------------------------------------------------------- | --------| ------- | ------- | ------- |
-| [runtime-dependent executable](#publish-runtime-dependent)            | ✔️       | ✔️       |         | [`dotnet publish`](../tools/dotnet-publish.md) |
-| [runtime-dependent executable](#publish-runtime-dependent)            | ✔️       | ✔️       |         | [`dotnet publish -r <RID> --self-contained false`](../tools/dotnet-publish.md) |
-| [runtime-dependent cross-platform binary](#publish-runtime-dependent) | ✔️       | ✔️       | ✔️       | [`dotnet publish`](../tools/dotnet-publish.md) |
-| [self-contained executable](#publish-self-contained)                  | ✔️       | ✔️       | ✔️       | [`dotnet publish -r <RID>`](../tools/dotnet-publish.md) |
+| Type                                                                                 | SDK 2.1 | SDK 3.x | Command |
+| -----------------------------------------------------------------------------------  | ------- | ------- | ------- |
+| [runtime-dependent executable](#publish-runtime-dependent) for the current platform. |         | ✔️      | [`dotnet publish`](../tools/dotnet-publish.md) |
+| [runtime-dependent executable](#publish-runtime-dependent) for a specific platform.  |         | ✔️      | [`dotnet publish -r <RID> --self-contained false`](../tools/dotnet-publish.md) |
+| [runtime-dependent cross-platform binary](#publish-runtime-dependent)                | ✔️      | ✔️      | [`dotnet publish`](../tools/dotnet-publish.md) |
+| [self-contained executable](#publish-self-contained)                                 | ✔️      | ✔️      | [`dotnet publish -r <RID>`](../tools/dotnet-publish.md) |
 
 For more information, see [.NET Core dotnet publish command](../tools/dotnet-publish.md).
-
+)
 ## Produce an executable
 
 Executables aren't cross-platform. They're specific to an operating system and CPU architecture. When publishing your app and creating an executable, you can publish the app as [self-contained](#publish-self-contained) or [runtime-dependent](#publish-runtime-dependent). Publishing an app as self-contained includes the .NET Core runtime with the app, and users of the app don't have to worry about installing .NET Core before running the app. Apps published as runtime-dependent don't include the .NET Core runtime and libraries; only the app and 3rd-party dependencies are included.
 
 The following commands produce an executable:
 
-| Type                                                                  | SDK 3.1 | SDK 3.0 | SDK 2.1 | Command | 
-| --------------------------------------------------------------------- | --------| ------- | ------- | ------- |
-| [runtime-dependent executable](#publish-runtime-dependent)            | ✔️       | ✔️       |         | [`dotnet publish`](../tools/dotnet-publish.md) |
-| [runtime-dependent executable](#publish-runtime-dependent)            | ✔️       | ✔️       |         | [`dotnet publish -r <RID> --self-contained false`](../tools/dotnet-publish.md) |
-| [self-contained executable](#publish-self-contained)                  | ✔️       | ✔️       | ✔️       | [`dotnet publish -r <RID>`](../tools/dotnet-publish.md) |
+| Type                                                                                 | SDK 2.1 | SDK 3.x | Command |
+| ------------------------------------------------------------------------------------ | ------- | ------- | ------- |
+| [runtime-dependent executable](#publish-runtime-dependent) for the current platform. |         | ✔️      | [`dotnet publish`](../tools/dotnet-publish.md) |
+| [runtime-dependent executable](#publish-runtime-dependent) for a specific platform.  |         | ✔️      | [`dotnet publish -r <RID> --self-contained false`](../tools/dotnet-publish.md) |
+| [self-contained executable](#publish-self-contained)                                 | ✔️      | ✔️      | [`dotnet publish -r <RID>`](../tools/dotnet-publish.md) |
 
 ## Produce a cross-platform binary
 
@@ -44,9 +44,9 @@ Cross-platform binaries can be run on any operating system as long as the target
 
 The following command produces a cross-platform binary:
 
-| Type                                                                  | SDK 3.1 | SDK 3.0 | SDK 2.1 | Command | 
-| --------------------------------------------------------------------- | --------| ------- | ------- | ------- |
-| [runtime-dependent cross-platform binary](#publish-runtime-dependent) | ✔️       | ✔️       | ✔️       | [`dotnet publish`](../tools/dotnet-publish.md) |
+| Type                                                                                 | SDK 2.1 | SDK 3.x | Command |
+| -----------------------------------------------------------------------------------  | ------- | ------- | ------- |
+| [runtime-dependent cross-platform binary](#publish-runtime-dependent)                | ✔️      | ✔️      | [`dotnet publish`](../tools/dotnet-publish.md) |
 
 ## Publish runtime-dependent
 

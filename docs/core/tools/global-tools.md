@@ -196,7 +196,16 @@ If the command begins with the prefix `dotnet-`, an alternative way to invoke th
 dotnet doc
 ```
 
-However, if a global tool and a local tool have the same command prefixed by `dotnet-` and you want to invoke the global tool, you have to include the prefix. If the command is `dotnet-doc` for both a global and a local tool, `dotnet doc` invokes the local tool.
+However, in the following scenario you can't use the `dotnet` command to invoke a global tool:
+
+* A global tool and a local tool have the same command prefixed by `dotnet-`.
+* You want to invoke the global tool from a directory that is in scope for the local tool.
+
+In this scenario, `dotnet doc` and `dotnet dotnet-doc` invoke the local tool. To invoke the global tool, use the command by itself:
+
+```dotnetcli
+dotnet-doc
+```
 
 ### Invoke a tool-path global tool
 

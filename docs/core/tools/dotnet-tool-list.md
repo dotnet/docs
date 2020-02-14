@@ -1,7 +1,7 @@
 ---
 title: dotnet tool list command
 description: The dotnet tool list command lists the .NET Core tools that are installed on your machine.
-ms.date: 05/29/2018
+ms.date: 02/14/2020
 ---
 # dotnet tool list
 

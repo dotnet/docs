@@ -1,7 +1,7 @@
 ---
 title: dotnet tool install command
 description: The dotnet tool install command installs the specified .NET Core tool on your machine.
-ms.date: 05/29/2018
+ms.date: 02/14/2020
 ---
 # dotnet tool install
 
@@ -36,6 +36,14 @@ Global tools are installed in the following directories by default when you spec
 |-------------|-------------------------------|
 | Linux/macOS | `$HOME/.dotnet/tools`         |
 | Windows     | `%USERPROFILE%\.dotnet\tools` |
+
+Local tools are added to a *tool-manifest.json* file in a *.config* folder under the current directory. If a manifest file doesn't exist yet, create it by executing the following command:
+
+```dotnetcli
+dotnet new tool-manifest
+```
+
+For more information, see [Install a local tool](global-tools.md#install-a-local-tool).
 
 ## Arguments
 
@@ -101,4 +109,4 @@ Installs [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a local tool 
 
 ## See also
 
-- [.NET Core Global Tools](global-tools.md)
+- [.NET Core tools](global-tools.md)

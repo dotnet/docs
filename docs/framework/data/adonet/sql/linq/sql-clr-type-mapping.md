@@ -226,11 +226,11 @@ In LINQ to SQL, the data model of a relational database maps to an object model 
 ### SQL Server FILESTREAM  
  The `FILESTREAM` attribute for `VARBINARY(MAX)` columns is available starting with Microsoft SQL Server 2008; you can map to it with LINQ to SQL starting with the .NET Framework version 3.5 SP1.  
   
- Although you can map `VARBINARY(MAX)` columns with the `FILESTREAM` attribute to <xref:System.Data.Linq.Binary> objects, the <xref:System.Data.Linq.DataContext.CreateDatabase%2A?displayProperty=nameWithType> method is unable to automatically create columns with the `FILESTREAM` attribute. For more information about `FILESTREAM`, see [FILESTREAM Overview](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/bb933993(v=sql.100)) on Microsoft SQL Server Books Online.  
+ Although you can map `VARBINARY(MAX)` columns with the `FILESTREAM` attribute to <xref:System.Data.Linq.Binary> objects, the <xref:System.Data.Linq.DataContext.CreateDatabase%2A?displayProperty=nameWithType> method is unable to automatically create columns with the `FILESTREAM` attribute. For more information about `FILESTREAM`, see [FILESTREAM Overview](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/bb933993(v=sql.105)).  
   
 <a name="BinarySerialization"></a>   
 ### Binary Serialization  
- If a class implements the <xref:System.Runtime.Serialization.ISerializable> interface, you can serialize an object to any SQL binary field (`BINARY`, `VARBINARY`, `IMAGE`). The object is serialized and deserialized according to how the <xref:System.Runtime.Serialization.ISerializable> interface is implemented. For more information, see [Binary Serialization](https://docs.microsoft.com/dotnet/standard/serialization/binary-serialization).  
+ If a class implements the <xref:System.Runtime.Serialization.ISerializable> interface, you can serialize an object to any SQL binary field (`BINARY`, `VARBINARY`, `IMAGE`). The object is serialized and deserialized according to how the <xref:System.Runtime.Serialization.ISerializable> interface is implemented. For more information, see [Binary Serialization](../../../../../standard/serialization/binary-serialization.md).
   
 <a name="MiscMapping"></a>   
 ## Miscellaneous Mapping  

@@ -9,4 +9,4 @@ Counter Name: Queued Messages Dropped.
 ## Description  
  Number of messages that are dropped by the queued transport at this service.  
   
- See [Poison-Message Handling](https://docs.microsoft.com/dotnet/framework/wcf/feature-details/poison-message-handling) for more information on when messages are dropped.
+ For more information on when messages are dropped, see [Poison-Message Handling](../../feature-details/poison-message-handling.md).

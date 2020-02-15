@@ -17,7 +17,7 @@ This topic provides links to the Visual Basic and C# solutions that contain [!IN
   
 - Search for specific issues on Microsoft Docs.  
   
-- Participate in the [LINQ Forum](https://social.msdn.microsoft.com/forums/home?forum=linqtosql), where you can discuss more complex topics in detail with experts.  
+- Participate in the [LINQ Forum](https://social.msdn.microsoft.com/forums/en-us/home?forum=linqtosql), where you can discuss more complex topics in detail with experts.  
   
 - Study the white paper that details [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] technology, complete with Visual Basic and C# code examples. For more information, see [LINQ to SQL: .NET Language-Integrated Query for Relational Data](https://docs.microsoft.com/previous-versions/dotnet/articles/bb425822(v=msdn.10)).  
   

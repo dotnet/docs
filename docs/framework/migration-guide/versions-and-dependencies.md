@@ -231,7 +231,7 @@ The tables that follow summarize .NET Framework version history and correlate ea
 |**CLR version**|2.0|
 |**Included in Visual Studio version**|2005|
 |**Windows versions**|N/A|
-|**Windows Server versions**|✔️ 2008 R2 SP1<br />✔️ 2008 SP2<br />✔️ 200|
+|**Windows Server versions**|✔️ 2008 R2 SP1<br />✔️ 2008 SP2<br />✔️ 2003|
 |**To determine installed .NET version**|See [instructions](how-to-determine-which-versions-are-installed.md)|
 
 ### .NET Framework 1.1

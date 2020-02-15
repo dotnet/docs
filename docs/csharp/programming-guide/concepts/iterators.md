@@ -318,11 +318,11 @@ public class Stack<T> : IEnumerable<T>
 
 An iterator can occur as a method or `get` accessor. An iterator cannot occur in an event, instance constructor, static constructor, or static finalizer.
 
-An implicit conversion must exist from the expression type in the `yield return` statement to the type argument for the IEnumerable\<T> returned by the iterator.
+An implicit conversion must exist from the expression type in the `yield return` statement to the type argument for the `IEnumerable<T>` returned by the iterator.
 
 In C#, an iterator method cannot have any `in`, `ref`, or `out` parameters.
 
-In C#, "yield" is not a reserved word and has special meaning only when it is used before a `return` or `break` keyword.
+In C#, `yield` is not a reserved word and has special meaning only when it is used before a `return` or `break` keyword.
 
 ## Technical Implementation
 
@@ -330,7 +330,7 @@ Although you write an iterator as a method, the compiler translates it into a ne
 
 To see what the compiler does, you can use the Ildasm.exe tool to view the Microsoft intermediate language code that's generated for an iterator method.
 
-When you create an iterator for a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/keywords/struct.md), you don't have to implement the whole <xref:System.Collections.IEnumerator> interface. When the compiler detects the iterator, it automatically generates the `Current`, `MoveNext`, and `Dispose` methods of the <xref:System.Collections.IEnumerator> or <xref:System.Collections.Generic.IEnumerator%601> interface.
+When you create an iterator for a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/builtin-types/struct.md), you don't have to implement the whole <xref:System.Collections.IEnumerator> interface. When the compiler detects the iterator, it automatically generates the `Current`, `MoveNext`, and `Dispose` methods of the <xref:System.Collections.IEnumerator> or <xref:System.Collections.Generic.IEnumerator%601> interface.
 
 On each successive iteration of the `foreach` loop (or the direct call to `IEnumerator.MoveNext`), the next iterator code body resumes after the previous `yield return` statement. It then continues to the next `yield return` statement until the end of the iterator body is reached, or until a `yield break` statement is encountered.
 

@@ -86,3 +86,4 @@ For more information, see the following sections of the [C# language specificati
 - [Design guidelines - Enum design](../../../standard/design-guidelines/enum.md)
 - [Design guidelines - Enum naming conventions](../../../standard/design-guidelines/names-of-classes-structs-and-interfaces.md#naming-enumerations)
 - [switch statement](../keywords/switch.md)
+- [Structure types](struct.md)

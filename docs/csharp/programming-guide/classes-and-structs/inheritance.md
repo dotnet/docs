@@ -51,4 +51,3 @@ Inheritance, together with encapsulation and polymorphism, is one of the three p
 - [C# Programming Guide](../index.md)
 - [Classes and Structs](./index.md)
 - [class](../../language-reference/keywords/class.md)
-- [struct](../../language-reference/keywords/struct.md)

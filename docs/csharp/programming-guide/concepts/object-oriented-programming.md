@@ -75,7 +75,7 @@ For more information, see:
 
 - [class](../../language-reference/keywords/class.md)
 
-- [struct](../../language-reference/keywords/struct.md)
+- [struct](../../language-reference/builtin-types/struct.md)
 
 ### <a name="Members"></a> Class Members
 

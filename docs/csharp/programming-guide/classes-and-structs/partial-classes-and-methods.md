@@ -9,7 +9,7 @@ ms.assetid: 804cecb7-62db-4f97-a99f-60975bd59fa1
 ---
 # Partial Classes and Methods (C# Programming Guide)
 
-It is possible to split the definition of a [class](../../language-reference/keywords/class.md), a [struct](../../language-reference/keywords/struct.md), an [interface](../../language-reference/keywords/interface.md) or a method over two or more source files. Each source file contains a section of the type or method definition, and all parts are combined when the application is compiled.
+It is possible to split the definition of a [class](../../language-reference/keywords/class.md), a [struct](../../language-reference/builtin-types/struct.md), an [interface](../../language-reference/keywords/interface.md) or a method over two or more source files. Each source file contains a section of the type or method definition, and all parts are combined when the application is compiled.
 
 ## Partial Classes
 

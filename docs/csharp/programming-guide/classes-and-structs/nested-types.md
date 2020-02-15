@@ -6,7 +6,7 @@ helpviewer_keywords:
 ms.assetid: f2e1b315-e3d1-48ce-977f-7bae0960ba99
 ---
 # Nested Types (C# Programming Guide)
-A type defined within a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/keywords/struct.md) is called a nested type. For example:  
+A type defined within a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/builtin-types/struct.md) is called a nested type. For example:  
   
  [!code-csharp[csProgGuideObjects#68](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#68)]  
   

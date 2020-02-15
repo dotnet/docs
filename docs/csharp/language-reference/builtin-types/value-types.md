@@ -28,7 +28,7 @@ If a value type contains a data member of a reference type, only the reference t
 
 A value type can be one of the two following kinds:
 
-- a [structure type](../keywords/struct.md), which encapsulates data and related functionality
+- a [structure type](struct.md), which encapsulates data and related functionality
 - an [enumeration type](enum.md), which is defined by a set of named constants and represents a choice or a combination of choices
 
 A [nullable value type](nullable-value-types.md) `T?` represents all values of its underlying value type `T` and an additional [null](../keywords/null.md) value. You cannot assign `null` to a variable of a value type, unless it's a nullable value type.

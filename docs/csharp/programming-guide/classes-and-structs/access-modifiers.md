@@ -81,5 +81,5 @@ All types and type members have an accessibility level, which controls whether t
 - [protected internal](../../language-reference/keywords/protected-internal.md)
 - [private protected](../../language-reference/keywords/private-protected.md)
 - [class](../../language-reference/keywords/class.md)
-- [struct](../../language-reference/keywords/struct.md)
+- [struct](../../language-reference/builtin-types/struct.md)
 - [interface](../../language-reference/keywords/interface.md)

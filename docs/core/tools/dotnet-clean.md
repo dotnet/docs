@@ -33,7 +33,7 @@ The MSBuild project or solution to clean. If a project or solution file is not s
 
 * **`-c|--configuration <CONFIGURATION>`**
 
-  Defines the build configuration. The default value is `Debug`. This option is only required when cleaning if you specified it during build time.
+  Defines the build configuration. The default for most projects is `Debug`, but you can override the build configuration settings in your project. This option is only required when cleaning if you specified it during build time.
 
 * **`-f|--framework <FRAMEWORK>`**
 

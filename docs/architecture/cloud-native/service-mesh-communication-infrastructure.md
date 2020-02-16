@@ -59,7 +59,7 @@ We next move to distributed data in cloud-native systems and the benefits and ch
 
 - [About Ingress in Azure Kubernetes Service (AKS)](https://vincentlauzon.com/2018/10/10/about-ingress-in-azure-kubernetes-service-aks/)
 
-- [Practical gRPC](https://www.worldcat.org/title/practical-grpc/oclc/1042342319)
+- [Practical gRPC](https://www.amazon.com/Practical-gRPC-Joshua-Humphries-ebook/dp/B07DMS44WT/ref=sr_1_1?keywords=Practical+gRPC&qid=1581887357&sr=8-1)
 
 - [gRPC Documentation](https://grpc.io/docs/guides/)
 
@@ -67,7 +67,11 @@ We next move to distributed data in cloud-native systems and the benefits and ch
 
 - [gRPC with ASP.NET Core 3.0](https://www.dotnetcurry.com/aspnet-core/1514/grpc-asp-net-core-3) 
 
+- [Implementing Microservices with gRPC and .NET Core 3.0](https://auth0.com/blog/amp/implementing-microservices-grpc-dotnet-core-3/)
+
 - [Comparing gRPC Services with HTTP APIs](https://docs.microsoft.com/aspnet/core/grpc/comparison?view=aspnetcore-3.0)
+
+- [Building gRPC Services with .NET video](https://channel9.msdn.com/Shows/The-Cloud-Native-Show/Building-Microservices-with-gRPC-and-NET)
 
 >[!div class="step-by-step"]
 >[Previous](rest-grpc.md)

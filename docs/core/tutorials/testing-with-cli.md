@@ -97,7 +97,25 @@ Optional exercise: You can add a new pet type, such as a `Bird`, by extending th
 
 The `NewTypes` project is in place, and you've organized it by keeping the pets-related types in a folder. Next, create your test project and start writing tests with the [xUnit](https://xunit.github.io/) test framework. Unit testing allows you to automatically check the behavior of your pet types to confirm that they're operating properly.
 
-Navigate back to the *src* folder and create a *test* folder with a *NewTypesTests* folder within it. At a command prompt from the *NewTypesTests* folder, execute `dotnet new xunit`. This produces two files: *NewTypesTests.csproj* and *UnitTest1.cs*.
+Navigate back to the *root* folder and create a *test* folder with a *NewTypesTests* folder within it.
+
+The following shows the updated project structure:
+
+```
+/NewTypes
+|__/src
+   |__/NewTypes
+      |__/Pets
+         |__Dog.cs
+         |__Cat.cs
+         |__IPet.cs
+      |__Program.cs
+      |__NewTypes.csproj
+|__/test
+   |__NewTypesTests
+```
+
+At a command prompt from the *NewTypesTests* folder, execute `dotnet new xunit`. This produces two files: *NewTypesTests.csproj* and *UnitTest1.cs*.
 
 The test project cannot currently test the types in `NewTypes` and requires a project reference to the `NewTypes` project. To add a project reference, use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
 

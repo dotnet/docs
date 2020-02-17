@@ -1,5 +1,6 @@
 ---
-title: "Walkthrough: Hosting an ActiveX Control in WPF"
+title: Host an ActiveX control in WPF
+titleSuffix: ""
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
@@ -76,7 +77,7 @@ Visual Studio automatically generates an <xref:System.Windows.Forms.AxHost> wrap
 
 2. Add a reference to the WindowsFormsIntegration assembly, which is named WindowsFormsIntegration.dll.
 
-3. Add a reference to the [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] assembly, which is named System.Windows.Forms.dll.
+3. Add a reference to the Windows Forms assembly, which is named System.Windows.Forms.dll.
 
 4. Open MainWindow.xaml in the WPF Designer.
 

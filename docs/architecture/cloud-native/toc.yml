@@ -44,12 +44,16 @@
     - name: Service Mesh communication infrastructure
       href: service-mesh-communication-infrastructure.md
   - name: Distributed Data
-    href: distributed-data.md
+    href: 
     items:
-    - name: Cloud-native data patterns
-      href: data-patterns.md
-    - name: Data Storage in Azure
-      href: azure-data-storage.md
+    - name: Database-per-microservice
+      href: database-per-microservice.md
+    - name: Relational vs. NoSQL data
+      href: relational-vs-nosql-data.md
+    - name: Caching in a cloud-native application
+      href: azure-caching.md
+    - name: Elasticsearch in Azure
+      href: elastic-search-in-azure.md
   - name: Cloud-native resiliency
     href: resiliency.md
     items:

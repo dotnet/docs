@@ -1,7 +1,7 @@
 ---
-title: "How to use the XML documentation features - C# Programming Guide"
+title: "How to use the XML documentation features - C# programming guide"
 ms.date: 06/01/2018
-helpviewer_keywords: 
+helpviewer_keywords:
   - "XML documentation [C#]"
   - "C# language, XML documentation features"
 ms.assetid: 8f33917b-9577-4c9a-818a-640dbbb0b399
@@ -14,7 +14,7 @@ The following sample provides a basic overview of a type that has been documente
 
 [!code-csharp[csProgGuideDocComments#15](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideDocComments/CS/DocComments.cs#15)]
 
-The example generates an .xml file with the following contents:
+The example generates an *.xml* file with the following contents.
 
 ```xml
 <?xml version="1.0"?>
@@ -114,7 +114,7 @@ XML documentation starts with ///. When you create a new project, the wizards pu
 
 - The documentation must be well-formed XML. If the XML is not well-formed, a warning is generated and the documentation file will contain a comment that says that an error was encountered.
 
-- Developers are free to create their own set of tags. There is a recommended set of tags (see [Recommended tags for documentation comments](recommended-tags-for-documentation-comments.md)). Some of the recommended tags have special meanings:
+- Developers are free to create their own set of tags. There is a [recommended set of tags](recommended-tags-for-documentation-comments.md). Some of the recommended tags have special meanings:
 
   - The \<param> tag is used to describe parameters. If used, the compiler verifies that the parameter exists and that all parameters are described in the documentation. If the verification failed, the compiler issues a warning.
 
@@ -127,8 +127,8 @@ XML documentation starts with ///. When you create a new project, the wizards pu
 
 ## See also
 
-- [C# Programming Guide](../index.md)
-- [-doc (C# Compiler Options)](../../language-reference/compiler-options/doc-compiler-option.md)
-- [XML Documentation Comments](./index.md)
+- [C# programming guide](../index.md)
+- [-doc (C# compiler options)](../../language-reference/compiler-options/doc-compiler-option.md)
+- [XML documentation comments](./index.md)
 - [DocFX documentation processor](https://dotnet.github.io/docfx/)
 - [Sandcastle documentation processor](https://github.com/EWSoftware/SHFB)

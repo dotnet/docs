@@ -1,5 +1,5 @@
 ---
-title: "How to: Set Indents, Hanging Indents, and Bulleted Paragraphs with the Windows Forms RichTextBox Control"
+title: Set Indents, Hanging Indents, and Bulleted Paragraphs with RichTextBox Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

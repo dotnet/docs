@@ -134,7 +134,7 @@ These versions of the WCF framework are hardcoded to use values SSL 3.0 and TLS 
 
 ## If your app targets .NET Framework 3.5
 
-If you must explicitly set a security protocol instead of letting the .NET framework or the OS pick the security protocol, add `SecurityProtocolTypeExtensions` and `SslProtocolsExtension` enumerations to your code. `SecurityProtocolTypeExtensions` and `SslProtocolsExtension` include values for `Tls12`, `Tls11`, and the `SystemDefault` value. See [Support for TLS System Default Versions included in .NET Framework 3.5 on Windows 8.1 and Windows Server 2012 R2](https://support.microsoft.com/help/3154520/support-for-tls-system-default-versions-included-in-the--net-framework).
+If you must explicitly set a security protocol instead of letting .NET or the OS pick the security protocol, add `SecurityProtocolTypeExtensions` and `SslProtocolsExtension` enumerations to your code. `SecurityProtocolTypeExtensions` and `SslProtocolsExtension` include values for `Tls12`, `Tls11`, and the `SystemDefault` value. For more information, see [Support for TLS System Default Versions included in .NET Framework 3.5 on Windows 8.1 and Windows Server 2012 R2](https://support.microsoft.com/help/3154520/support-for-tls-system-default-versions-included-in-the--net-framework).
 
 <a name="configuring-security-via-appcontext-switches"></a>
 
@@ -203,7 +203,7 @@ If your app targets .NET Framework 4.7 or later versions, this key defaults to a
 
 For more info, see [Cumulative Update for Windows 10 Version 1511 and Windows Server 2016 Technical Preview 4: May 10, 2016](https://support.microsoft.com/help/3156421/cumulative-update-for-windows-10-version-1511-and-windows-server-2016).
 
-For more information with .NET framework 3.5.1, see [Support for TLS System Default Versions included in .NET Framework 3.5.1 on Windows 7 SP1 and Server 2008 R2 SP1](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the--net-framework).
+For more information with .NET Framework 3.5.1, see [Support for TLS System Default Versions included in .NET Framework 3.5.1 on Windows 7 SP1 and Server 2008 R2 SP1](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the--net-framework).
 
 The following _.REG_ file sets the registry keys and their variants to their most safe values:
 

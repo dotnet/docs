@@ -1,5 +1,5 @@
 ---
-title: "How to: Print Graphics in Windows Forms"
+title: "How to: Print Graphics"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

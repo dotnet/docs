@@ -1,5 +1,5 @@
 ---
-title: "ADO.NET DataSets"
+title: "DataSets"
 ms.date: "03/30/2017"
 ms.assetid: 82b641bb-6001-4512-bf1a-2830acdd92ab
 ---

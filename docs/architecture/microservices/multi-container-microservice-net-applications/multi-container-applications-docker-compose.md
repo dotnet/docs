@@ -458,7 +458,7 @@ To achieve this, the .NET team is providing four basic variants in [dotnet/core]
 1. **sdk**: for development and build scenarios
 1. **aspnet**: for ASP.NET production scenarios
 1. **runtime**: for .NET production scenarios
-1. **runtime-deps**: for production scenarios of [self-contained applications](../../../core/deploying/index.md#self-contained-deployments-scd).
+1. **runtime-deps**: for production scenarios of [self-contained applications](../../../core/deploying/index.md#publish-self-contained).
 
 For faster startup, runtime images also automatically set aspnetcore\_urls to port 80 and use Ngen to create a native image cache of assemblies.
 

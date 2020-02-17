@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Arranging Controls on Windows Forms Using a FlowLayoutPanel"
+title: Arrange Controls Using FlowLayoutPanel
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "FlowLayoutPanel control [Windows Forms], walkthroughs"

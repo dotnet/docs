@@ -4,14 +4,13 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "security [.NET Framework], public read-only array fields"
 ms.assetid: 3df28dee-2a9f-40ff-9852-bfdbe59c27f3
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Security and Public Read-only Array Fields
 Never use read-only public array fields from managed libraries to define the boundary behavior or security of your applications because read-only public array fields can be modified.  
   
 ## Remarks  
- Some .NET framework classes include read-only public fields that contain platform-specific boundary parameters.  For example, the <xref:System.IO.Path.InvalidPathChars> field is an array that describes the characters that are not allowed in a file path string.  Many similar fields are present throughout the .NET Framework.  
+
+Some .NET classes include read-only public fields that contain platform-specific boundary parameters. For example, the <xref:System.IO.Path.InvalidPathChars> field is an array that describes the characters that are not allowed in a file path string. Many similar fields are present throughout .NET.  
   
  The values of public read-only fields like <xref:System.IO.Path.InvalidPathChars> can be modified by your code or code that shares your code’s application domain.  You should not use read-only public array fields like this to define the boundary behavior of your applications.  If you do, malicious code can alter the boundary definitions and use your code in unexpected ways.  
   

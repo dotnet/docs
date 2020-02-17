@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Read-Only Text Box (Windows Forms)"
+title: "How to: Create a Read-Only Text Box"
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "TextBox control [Windows Forms], read-only"

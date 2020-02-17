@@ -1,5 +1,5 @@
 ---
-title: "How to: Create and Set a Custom Renderer for the ToolStrip Control in Windows Forms"
+title: "How to: Create and Set a Custom Renderer for the ToolStrip Control"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

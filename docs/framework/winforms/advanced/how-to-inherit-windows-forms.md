@@ -1,5 +1,5 @@
 ---
-title: "How to: Inherit Windows Forms"
+title: Form inheritance
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

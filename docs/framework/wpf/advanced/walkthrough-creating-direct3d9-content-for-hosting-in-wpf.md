@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Creating Direct3D9 Content for Hosting in WPF"
+title: Create Direct3D9 Content for Hosting
 ms.date: "03/30/2017"
 dev_langs:
   - "cpp"

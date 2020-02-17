@@ -154,6 +154,9 @@
       - name: Versioning
         tocHref: /dotnet/core/versions/
         topicHref: /dotnet/core/versions/index
+      - name: SDK projects
+        tocHref: /dotnet/core/project-sdk/
+        topicHref: /dotnet/core/project-sdk/overview
       - name: Tools
         tocHref: /dotnet/core/tools/
         topicHref: /dotnet/core/tools/index
@@ -166,9 +169,6 @@
       - name: Dependency loading
         tocHref: /dotnet/core/dependency-loading/
         topicHref: /dotnet/core/dependency-loading/overview
-      - name: Build .NET Core
-        tocHref: /dotnet/core/build/
-        topicHref: /dotnet/core/build/index
     - name: .NET Framework
       tocHref: /dotnet/framework/
       topicHref: /dotnet/framework/index

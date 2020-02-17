@@ -23,7 +23,7 @@ Provides access to specific modules. This interface is a subclass of the ICorDeb
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetModule Method](../../../../docs/framework/unmanaged-api/debugging/icordebugmodulebreakpoint-getmodule-method.md)|Gets an interface pointer to an ICorDebugModule that references the module where this breakpoint is set.|  
+|[GetModule Method](icordebugmodulebreakpoint-getmodule-method.md)|Gets an interface pointer to an ICorDebugModule that references the module where this breakpoint is set.|  
   
 ## Remarks  
   
@@ -41,4 +41,4 @@ Provides access to specific modules. This interface is a subclass of the ICorDeb
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

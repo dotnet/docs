@@ -4,8 +4,12 @@ description: Learn about gRPC, its role in cloud-native applications, and how it
 author: robvet
 ms.date: 02/16/2020
 ---
+<<<<<<< HEAD
 
 # gRPC
+=======
+# REST and gRPC
+>>>>>>> upstream/master
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 

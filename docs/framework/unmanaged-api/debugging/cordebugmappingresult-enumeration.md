@@ -43,7 +43,7 @@ typedef enum CorDebugMappingResult {
 |`MAPPING_APPROXIMATE`|The method was successfully mapped, but the value of the IP may be approximate.|  
   
 ## Remarks  
- You can use the [ICorDebugILFrame::GetIP](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe-getip-method.md) method to obtain the value of the instruction pointer.  
+ You can use the [ICorDebugILFrame::GetIP](icordebugilframe-getip-method.md) method to obtain the value of the instruction pointer.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -56,4 +56,4 @@ typedef enum CorDebugMappingResult {
   
 ## See also
 
-- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)
+- [Debugging Enumerations](debugging-enumerations.md)

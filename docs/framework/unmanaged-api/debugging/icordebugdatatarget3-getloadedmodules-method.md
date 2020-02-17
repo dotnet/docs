@@ -24,7 +24,7 @@ HRESULT GetLoadedModules(
  [out] A pointer to the number of modules about which information was returned.  
   
  `pLoadedModules`  
- [out] A pointer to an array of [ICorDebugLoadedModule](../../../../docs/framework/unmanaged-api/debugging/icordebugloadedmodule-interface.md) objects that provide information about loaded modules.  
+ [out] A pointer to an array of [ICorDebugLoadedModule](icordebugloadedmodule-interface.md) objects that provide information about loaded modules.  
   
 ## Remarks  
   
@@ -42,5 +42,5 @@ HRESULT GetLoadedModules(
   
 ## See also
 
-- [ICorDebugDataTarget3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget3-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugDataTarget3 Interface](icordebugdatatarget3-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

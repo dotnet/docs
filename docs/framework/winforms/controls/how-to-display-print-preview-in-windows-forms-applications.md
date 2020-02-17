@@ -1,5 +1,6 @@
 ---
-title: "How to: Display Print Preview in Windows Forms Applications"
+title: Display Print Preview in Windows Forms apps
+titleSuffix: ""
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

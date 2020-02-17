@@ -22,7 +22,7 @@ Provides a method to enumerate regions of memory that are specified by callers.
   
 |Method|Description|  
 |------------|-----------------|  
-|[EnumMemoryRegions Method](../../../../docs/framework/unmanaged-api/debugging/iclrdataenummemoryregions-enummemoryregions-method.md)|Enumerates specified areas of memory.|  
+|[EnumMemoryRegions Method](iclrdataenummemoryregions-enummemoryregions-method.md)|Enumerates specified areas of memory.|  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -35,4 +35,4 @@ Provides a method to enumerate regions of memory that are specified by callers.
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

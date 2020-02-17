@@ -1,5 +1,5 @@
 ---
-title: "How to: Change the Border and Gridline Styles in the Windows Forms DataGridView Control"
+title: Change the Border and Gridline Styles in DataGridView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -30,7 +30,7 @@ HRESULT EnableLogMessages([in]BOOL fOnOff);
  [in] `true` enables the transmission of log messages; `false` disables the transmission.  
   
 ## Remarks  
- This method is valid only after the [ICorDebugManagedCallback::CreateProcess](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-createprocess-method.md) callback occurs.  
+ This method is valid only after the [ICorDebugManagedCallback::CreateProcess](icordebugmanagedcallback-createprocess-method.md) callback occurs.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

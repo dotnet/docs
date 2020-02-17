@@ -1,5 +1,5 @@
 ---
-title: "SQL Server Connection Pooling (ADO.NET)"
+title: "SQL Server Connection Pooling"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

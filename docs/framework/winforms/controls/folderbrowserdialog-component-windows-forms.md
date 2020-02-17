@@ -1,5 +1,5 @@
 ---
-title: "FolderBrowserDialog Component (Windows Forms)"
+title: "FolderBrowserDialog Component"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "folders [Windows Forms], browsing"

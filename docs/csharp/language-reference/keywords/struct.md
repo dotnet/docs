@@ -43,7 +43,6 @@ For examples, see [Using Structs](../../programming-guide/classes-and-structs/us
 
 - [C# reference](../index.md)
 - [C# keywords](index.md)
-- [Built-in types table](built-in-types-table.md)
 - [Value types](../builtin-types/value-types.md)
 - [class](class.md)
 - [interface](interface.md)

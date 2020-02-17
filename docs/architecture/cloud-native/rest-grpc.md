@@ -1,5 +1,5 @@
 ---
-title: REST and gRPC
+title: gRPC
 description: Learn about gRPC, its role in cloud-native applications, and how it differs from HTTP REST. 
 author: robvet
 ms.date: 11/25/2019
@@ -13,13 +13,13 @@ So far in this book, we’ve focused on [REST-based](https://docs.microsoft.com/
 
 ## Introduction
 
-gRPC is a modern, high-performance framework that evolves the [remote procedure call (RPC)](https://en.wikipedia.org/wiki/Remote_procedure_call) protocol, traditionally used in distributed applications. As an application level tool, it streamlines messaging between clients and back-end services across platforms. Originating from Google, gRPC is now open source and part of the  [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) ecosystem. CNCF considers gRPC an [incubating project](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc). Incubated means that end users have deployed into production and has a healthy number of contributors.
+gRPC is a modern, high-performance framework that evolves the age-old [remote procedure call (RPC)](https://en.wikipedia.org/wiki/Remote_procedure_call) protocol, traditionally used in distributed applications. As an application level tool, gRPC streamlines messaging between clients and back-end services across platforms. Originating from Google, gRPC is now open source and part of the  [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) ecosystem. CNCF considers gRPC an [incubating project](https://github.com/cncf/toc/blob/master/process/graduation_criteria.adoc). Incubated means that end users have deployed into production and has a healthy number of contributors.
 
-In cloud-native applications, developers often work across programming languages, frameworks, and technologies. This interoperability can complicate message contracts and the plumbing required for cross-service communication.  gRPC provides a "uniform horizontal layer" that abstracts these concerns. It enables developers to code in their native language and keep focus on business functionality - not communication plumbing.  
+In cloud-native applications, developers often work across programming languages, frameworks, and technologies. This interoperability can complicate message contracts and the plumbing required for cross-platform communication.  gRPC provides a "uniform horizontal layer" that abstracts these concerns. It enables developers to code in their native language and keep focus on business functionality - not communication plumbing.  
 
-A gRPC client app exposes a local, in-process function that implements an operation. Under the covers, that local function invokes another function from a service on remote machine. What appears to be a local call essentially becomes a transparent out-of-process call to a service on another computer. The RPC plumbing simplifies developer effort by abstracting the point-to-point networking communication, serialization, and execution between computers.
+A gRPC client app exposes a local, in-process function that implements an operation. Under the covers, that local function invokes another function from a service on remote machine. What appears to be a local call essentially becomes a transparent out-of-process call to a remote service. The RPC plumbing simplifies developer effort by abstracting the point-to-point networking communication, serialization, and execution between computers.
 
-gRPC offers comprehensive support across most popular development stacks, including Java, JavaScript, C#, Golang, Swift, and NodeJS.
+gRPC offers comprehensive support across most popular development stacks, including Java, JavaScript, C#, Go, Swift, and NodeJS.
 
 ## Performance
 
@@ -34,21 +34,21 @@ gRPC is lightweight and highly performant. It can be up to 8x faster than JSON s
 
 ## Protocol Buffers
 
-gRPC embraces an open-source technology called [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview). Protocol Buffers provide a highly efficient and platform-neutral serialization format for serializing structured messages that services send to each other. Using a cross-platform Interface Definition Language (IDL), developers define a service contract for each microservice. The contract, implemented as a text-based '.proto' file, describes the methods, inputs, and outputs for each service.  
+gRPC embraces an open-source technology called [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview). They provide a highly efficient and platform-neutral serialization format for serializing structured messages that services send to each other. Using a cross-platform Interface Definition Language (IDL), developers define a service contract for each microservice. The contract, implemented as a text-based '.proto' file, describes the methods, inputs, and outputs for each service. The same contract file can be used for gRPC clients and services built on different development platforms.
 
 Using the proto file," the Protobuf compiler, "Protoc," generates both client and service code for your target platform. The code includes the following components:
 
 - A strongly-typed DTO (Data Transfer Object) shared by the client and service.
-- A strongly-typed base class with the required network plumbing that the remote service can inherit and extend.
-- A client stub that contains the required plumbing to invoke the remote service.
+- A strongly-typed base class with the required network plumbing that the remote gRPC service can inherit and extend.
+- A client stub that contains the required plumbing to invoke the remote gRPC service.
 
-At runtime, each message is serialized as a standard Protobuf representation and exchanged among the client and remote services. Unlike JSON or XML, Protobuf messages are serialized as compiled binary bytes.
+At runtime, each message is serialized as a standard Protobuf representation and exchanged between the client and remote service. Unlike JSON or XML, Protobuf messages are serialized as compiled binary bytes.
 
 The book, [gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/), available from the Microsoft Architecture Site, provides in-depth coverage of gRPC and Protocol Buffers. 
 
 ## gRPC support in .NET
 
-Microsoft .NET Core 3.0 includes tooling and native support for gRPC. gRPC has been seamlessly integrated into its framework with support for endpoint routing, built-in IoC, and logging. The open-source Kestrel web server fully supports HTTP/2 connections. Figure 4-20 shows a Visual Studio 2019 template that scaffolds a skeleton project for a gRPC service. Note how .NET Core fully supports the Windows, Linux, and macOS platforms.
+Microsoft .NET Core 3.0 includes tooling and native support for gRPC. gRPC has been seamlessly integrated into the 3.0 framework with support for endpoint routing, built-in IoC, and logging. The open-source Kestrel web server supports HTTP/2 connections. Figure 4-20 shows a Visual Studio 2019 template that scaffolds a skeleton project for a gRPC service. Note how .NET Core fully supports the Windows, Linux, and macOS platforms.
 
 ![gRPC Support in Visual Studio 2019](./media/visual-studio-2019-grpc-template.png)
 
@@ -72,9 +72,9 @@ Favor gRPC for the following scenarios:
 - Polyglot environments that need to support mixed programming platforms.
 - Low latency and high throughput communication where performance is critical.
 - Point-to-point real-time communication - gRPC can push messages in real time without polling and has excellent support for bi-directional streaming.
-- Network constrained environments – gRPC messages are always smaller than an equivalent JSON message.
+- Network constrained environments – binary gRPC messages are always smaller than an equivalent text-based JSON message.
 
-At the time of this writing, gRPC is primarily found in backend services. Most modern browsers can't provide the level of HTTP/2 control required to support a front-end gRPC client.
+At the time of this writing, gRPC is primarily used in backend services. Most modern browsers can't provide the level of HTTP/2 control required to support a front-end gRPC client.
 
 ## gRPC implementation
 
@@ -84,7 +84,7 @@ The microservice reference architecture for [eShop on Containers](https://github
 
 **Figure 4-22**. gRPC in eShop on Containers
 
-In the previous figure, note how eShop exposes multiple API gateways (on the left) embracing the [Backend for Frontends pattern](https://docs.microsoft.com/azure/architecture/patterns/backends-for-frontends). The *Web-Marketing gateway* (on the bottom) implements RESTful HTTP services for simple CRUD operations. It also includes an Aggregator microservice that implements a gRPC client. The gRPC client makes synchronous gRPC-based calls (in red) to backend gRPC services for the more complex operations. Keep in mind that gRPC communication requires both client and server implementation.
+In the previous figure, note how eShop exposes multiple API gateways (on the left) embracing the [Backend for Frontends pattern](https://docs.microsoft.com/azure/architecture/patterns/backends-for-frontends). The *Web-Marketing gateway* (on the bottom) implements RESTful HTTP services for simple CRUD operations. It also includes an Aggregator microservice that implements a gRPC client. The gRPC client makes synchronous gRPC-based calls (in red) to backend gRPC services for more complex operations. Keep in mind that gRPC communication requires both client and server components.
 
 ### gRPC client implementation
 
@@ -131,7 +131,7 @@ message BasketItemResponse {
 
 **Figure 4-23** Proto file for the Shopping Basket service
 
-The previous figure shows the contents of the proto file. It contains both service and message definitions. You can see that two services are defined, *GetBasketById* and *UpdateBasket*. Beneath you can see the message definitions with input and output types for each message.
+The previous figure shows the contents of the proto file. It contains both service and message definitions. You can see that two services are defined, *GetBasketById* and *UpdateBasket*. Beneath the service definitions, you'll find message definitions with input and output types for each message.
 
 Once defined, you register the proto file with the .NET project by referencing it in the '.csproj' file, shown in Figure 4-24.
 
@@ -143,7 +143,7 @@ Once defined, you register the proto file with the .NET project by referencing i
 
 **Figure 4-24** Registering the client proto file
 
-Note in the previous figure how an *ItemGroup* tag is added to the .NET Core project file. The *Include* attribute specifies the physical location of the proto file. The  *GrpcServices are set to *client* so that client-side gRPC code is generated.
+Note in the previous figure how an *ItemGroup* tag is added to the .NET Core project file. The *Include* attribute specifies the physical location of the proto file. The  *GrpcServices* are set to *client* so that client-side gRPC code is generated.
 
 Building the project generates client code, called *stubs*. Stubs provides the plumbing to invoke remote gRPC calls. Figure 4-25 shows the stubs added to the *obj folder* in the underlying .NET Core project.
 
@@ -151,7 +151,7 @@ Building the project generates client code, called *stubs*. Stubs provides the p
 
 **Figure 4-25** gRPC client plumbing code in Visual Studio 2019
 
-Opening *BasketGrpc.cs* shows the newly generated communication plumbing code. You use this code to invoke calls to the backend gRPC service. A snippet is shown in Figure 4-26.
+Opening *BasketGrpc.cs* shows the system-generated communication plumbing code. You use this code to invoke calls to the backend Shopping Basket gRPC service. A snippet is shown in Figure 4-26.
 
 ```csharp
 // <auto-generated>
@@ -253,7 +253,7 @@ public static class GrpcCallerService
 
 **Figure 4-26** Custom gRPC client code
 
-Note in the previous figure how *GetById* method in the *BasketService* class creates an anonymous method. The method is passed into and executed in the generic *CallService* method in the *GrpcCallerService*. You can see how *CallService* consumes the *Basket.BasketClient* and *gRPChannel* gRPC plumbing code to invoke remote calls.
+Note in the previous figure how *GetById* method in the *BasketService* class creates an anonymous method. The method is passed into the generic *CallService* method in the *GrpcCallerService*. Importantly, you can see how *CallService* consumes the system-generated *Basket.BasketClient* and *gRPChannel* gRPC plumbing code to invoke remote calls.
 
 ### gRPC server implementation
 
@@ -271,7 +271,7 @@ Once again, you must register the proto file with the .NET project by referencin
 
 **Figure 4-27** Registering the server proto file
 
-You follow the same steps as in the client, except you set the *GrpcServices* attribute is set to *Server*. Doing so instructs the framework to generate server-side plumbing code.
+You follow the same steps as in the client, except the *GrpcServices* attribute is set to *Server*. Doing so instructs the framework to generate server-side plumbing code.
 
 Building the project generates the server-side gRPC plumbing code. It includes a base class that your custom service class can inherit and consume. Figure 4-28 shows the custom service class.
 
@@ -312,7 +312,7 @@ public class BasketService : Basket.BasketBase
 
 **Figure 4-28** Custom gRPC service class
 
-In the previous figure, note how the *BasketService* class inherits from *Basket.BasketBase* class. The base class is generated by the framework and contains the plumbing to expose remote gRPC calls.
+In the previous figure, note how the *BasketService* class inherits from *Basket.BasketBase* class. This base class is generated by the framework and contains the plumbing to expose remote gRPC calls.
 
 Because the Shopping Basket microservices exposes both a RESTful API and gRPC, we need to open two different endpoints to manage this traffic. Figure 4-29 shows the Program.cs file for the microservice.
 
@@ -337,7 +337,7 @@ Because the Shopping Basket microservices exposes both a RESTful API and gRPC, w
             })
 ```
 
-Note in the previous figure how the gRPC endpoint specifies the HTTP/2 protocol that is required for gRPC communication.
+Note in the previous figure how two endpoints are opened. One listens for HTTP traffic for the RESTful endpoints and the other for gRPC calls. Importantly, the gRPC endpoint specifies the HTTP/2 protocol which is required for gRPC communication.
 
 ## Looking ahead
 

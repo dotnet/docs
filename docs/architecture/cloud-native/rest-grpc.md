@@ -1,15 +1,11 @@
 ---
 title: gRPC
-description: Learn about gRPC, its role in cloud-native applications, and how it differs from HTTP REST. 
+description: Learn about gRPC, its role in cloud-native applications, and how it differs from HTTP REST.
 author: robvet
 ms.date: 02/16/2020
 ---
-<<<<<<< HEAD
 
 # gRPC
-=======
-# REST and gRPC
->>>>>>> upstream/master
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
@@ -48,7 +44,7 @@ Using the proto file," the Protobuf compiler, "Protoc," generates both client an
 
 At runtime, each message is serialized as a standard Protobuf representation and exchanged between the client and remote service. Unlike JSON or XML, Protobuf messages are serialized as compiled binary bytes.
 
-The book, [gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/), available from the Microsoft Architecture Site, provides in-depth coverage of gRPC and Protocol Buffers. 
+The book, [gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architecture/grpc-for-wcf-developers/), available from the Microsoft Architecture Site, provides in-depth coverage of gRPC and Protocol Buffers.
 
 ## gRPC support in .NET
 

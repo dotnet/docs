@@ -31,9 +31,9 @@ When microservices are accessed directly, trust, that includes authentication an
 The primary mechanism in ASP.NET Core for identifying an application’s users is the [ASP.NET Core Identity](/aspnet/core/security/authentication/identity) membership system. ASP.NET Core Identity stores user information (including sign-in information, roles, and claims) in a data store configured by the developer. Typically, the ASP.NET Core Identity data store is an Entity Framework store provided in the `Microsoft.AspNetCore.Identity.EntityFrameworkCore` package. However, custom stores or other third-party packages can be used to store identity information in Azure Table Storage, CosmosDB, or other locations.
 
 > [!TIP]
-> ASP.NET Core 2.1 and later provides [ASP.NET Core Identity](xref:security/authentication/identity) as a [Razor Class Library](xref:razor-pages/ui-class), so you won't see much of the necessary code in your project, as was the case for previous versions. for details on how to customize the Identity code to suit your needs, see [Scaffold Identity in ASP.NET Core projects](/aspnet/core/security/authentication/scaffold-identity).
+> ASP.NET Core 2.1 and later provides [ASP.NET Core Identity](/aspnet/core/security/authentication/identity) as a [Razor Class Library](/aspnet/core/razor-pages/ui-class), so you won't see much of the necessary code in your project, as was the case for previous versions. For details on how to customize the Identity code to suit your needs, see [Scaffold Identity in ASP.NET Core projects](/aspnet/core/security/authentication/scaffold-identity).
 
-The following code is taken from the ASP.NET Core Web Application MVC (v3.1) project template with individual user account authentication selected. It shows how to configure ASP.NET Core Identity using EntityFramework.Core in the Startup.ConfigureServices method.
+The following code is taken from the ASP.NET Core Web Application MVC 3.1 project template with individual user account authentication selected. It shows how to configure ASP.NET Core Identity using Entity Framework Core in the `Startup.ConfigureServices` method.
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
@@ -51,7 +51,7 @@ public void ConfigureServices(IServiceCollection services)
 }
 ```
 
-Once ASP.NET Core Identity is configured, you enable it by adding the `app.UseAuthentication()` and `endpoints.MapRazorPages()` as shown in the following code in the service’s `Startup.Configure` method:
+Once ASP.NET Core Identity is configured, you enable it by adding the `app.UseAuthentication()` and `endpoints.MapRazorPages()` as shown in the following code in the service's `Startup.Configure` method:
 
 ```csharp
 public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -71,7 +71,7 @@ public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
 ```
 
 > [!IMPORTANT]
-> The lines in the code above **MUST BE IN THE ORDER SHOWN** for Identity to work correctly.
+> The lines in the preceeding code **MUST BE IN THE ORDER SHOWN** for Identity to work correctly.
 
 Using ASP.NET Core Identity enables several scenarios:
 
@@ -89,7 +89,7 @@ For authentication scenarios that make use of a local user data store and that p
 
 ASP.NET Core also supports using [external authentication providers](/aspnet/core/security/authentication/social/) to let users sign in via [OAuth 2.0](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2) flows. This means that users can sign in using existing authentication processes from providers like Microsoft, Google, Facebook, or Twitter and associate those identities with an ASP.NET Core identity in your application.
 
-To use external authentication, besides including the authentication middleware as mentioned before, using the `app.UseAuthentication()` method, you also have to register the external provider in `Startup` as shown below.
+To use external authentication, besides including the authentication middleware as mentioned before, using the `app.UseAuthentication()` method, you also have to register the external provider in `Startup` as shown in the following example:
 
 ```csharp
 public void ConfigureServices(IServiceCollection services)
@@ -122,21 +122,21 @@ Popular external authentication providers and their associated NuGet packages ar
 
 In all cases, you must complete an application registration procedure that is vendor dependent and that usually involves:
 
-1. Getting a Client Application Id.
+1. Getting a Client Application ID.
 2. Getting a Client Application Secret.
 3. Configuring an redirection URL, that's handled by the authorization middleware and the registered provider
-4. Optionally configure a logout URL, to properly handle logout in a Single Sign On (SSO) scenario.
+4. Optionally, configuring a sign-out URL to properly handle sign out in a Single Sign On (SSO) scenario.
 
 For details on configuring your app for an external provider, see the [External provider authentication in the ASP.NET Core documentation](/aspnet/core/security/authentication/social/)).
 
 > [!TIP]
-All details are handled by the authorization middleware and services mentioned above, so you just have to choose the **Individual User Account** authentication option when you create the ASP.NET Code web application project in Visual Studio, as shown in Figure 9-3, besides registering the authentication providers mentioned above.
+All details are handled by the authorization middleware and services previously mentioned. So, you just have to choose the **Individual User Account** authentication option when you create the ASP.NET Code web application project in Visual Studio, as shown in Figure 9-3, besides registering the authentication providers previously mentioned.
 
 ![Screenshot of the New ASP.NET Core Web Application dialog.](./media/index/select-individual-user-account-authentication-option.png)
 
 **Figure 9-3**. Selecting the Individual User Accounts option, for using external authentication, when creating a web application project in Visual Studio 2019.
 
-In addition to the external authentication providers listed previously, third-party packages are available that provide middleware for using many more external authentication providers. For a list, see the [AspNet.Security.OAuth.Providers](https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers/tree/dev/src) repo on GitHub.
+In addition to the external authentication providers listed previously, third-party packages are available that provide middleware for using many more external authentication providers. For a list, see the [AspNet.Security.OAuth.Providers](https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers/tree/dev/src) repository on GitHub.
 
 You can also create your own external authentication middleware to solve some special need.
 

@@ -1,6 +1,6 @@
 ---
 title: Implementing the infrastructure persistence layer with Entity Framework Core
-description: .NET Microservices Architecture for Containerized .NET Applications | Explore the implementation details for the infrastructure persistance layer, using Entity Framework Core.
+description: .NET Microservices Architecture for Containerized .NET Applications | Explore the implementation details for the infrastructure persistence layer, using Entity Framework Core.
 ms.date: 01/30/2020
 ---
 

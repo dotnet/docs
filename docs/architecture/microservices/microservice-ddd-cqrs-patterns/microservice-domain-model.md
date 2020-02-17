@@ -68,7 +68,7 @@ Something that is an entity in a microservice might not be an entity in another 
 
 A person with a name and surname is usually an entity because a person has identity, even if the name and surname coincide with another set of values, such as if those names also refers to a different person.
 
-Value objects are hard to manage in relational databases and ORMs like EF, whereas in document oriented databases they are easier to implement and use.
+Value objects are hard to manage in relational databases and ORMs like Entity Framework (EF), whereas in document-oriented databases they are easier to implement and use.
 
 EF Core 2.0 and later versions include the [Owned Entities](https://devblogs.microsoft.com/dotnet/announcing-entity-framework-core-2-0/#owned-entities-and-table-splitting) feature that makes it easier to handle value objects, as we’ll see in detail later on.
 

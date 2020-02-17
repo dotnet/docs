@@ -26,7 +26,7 @@ The **Microsoft.Extensions.Configuration.AzureKeyVault** package allows an ASP.N
    You can also use an overload of `AddAzureKeyVault` that takes a certificate in place of the client secret by just including a reference to the [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) package.
 
 > [!IMPORTANT]
-> It's a best practice to register Azure Key Vault as the last configuration provider, so it can override configuration values from previous providers.
+> We recommend that you register Azure Key Vault as the last configuration provider, so it can override configuration values from previous providers.
 
 ## Additional resources
 

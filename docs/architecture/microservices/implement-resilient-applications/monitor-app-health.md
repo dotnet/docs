@@ -21,7 +21,7 @@ To use this feature effectively, you need to first configure services in your mi
 
 ### Use the HealthChecks feature in your back-end ASP.NET microservices
 
-In this section, you will learn how the HealthChecks feature, as implemented in [AspNetCore.Diagnostics.HealthChecks](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks), is used in a sample ASP.NET Core 3.1 Web API application. Implementation of this feature in a large scale microservices like the eShopOnContainers is explained in the later section. To begin, you need to define what constitutes a healthy status for each microservice. In the sample application, the microservices are healthy if the microservice API is accessible via HTTP and its related SQL Server database is also available.
+In this section, you'll learn how the HealthChecks feature, as implemented in [AspNetCore.Diagnostics.HealthChecks](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks), is used in a sample ASP.NET Core 3.1 Web API application. Implementation of this feature in a large scale microservices like the eShopOnContainers is explained in the later section. To begin, you need to define what constitutes a healthy status for each microservice. In the sample application, the microservices are healthy if the microservice API is accessible via HTTP and its related SQL Server database is also available.
 
 In .NET Core 3.1, with the built-in APIs, you can configure the services, add a Health Check for the microservice and its dependent SQL Server database in this way:
 

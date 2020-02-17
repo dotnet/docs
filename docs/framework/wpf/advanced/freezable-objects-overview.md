@@ -164,11 +164,11 @@ If your class contains non-dependency-property data members that are <xref:Syste
 > [!NOTE]
 > It's very important that you begin each <xref:System.Windows.Freezable> method you override with a call to the base implementation.
 
-For an example of a custom <xref:System.Windows.Freezable> class, see the [Custom Animation Sample](https://go.microsoft.com/fwlink/?LinkID=159981).
+For an example of a custom <xref:System.Windows.Freezable> class, see the [Custom Animation Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Animation/CustomAnimation).
 
 ## See also
 
 - <xref:System.Windows.Freezable>
-- [Custom Animation Sample](https://go.microsoft.com/fwlink/?LinkID=159981)
+- [Custom Animation Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Animation/CustomAnimation)
 - [Dependency Properties Overview](dependency-properties-overview.md)
 - [Custom Dependency Properties](custom-dependency-properties.md)

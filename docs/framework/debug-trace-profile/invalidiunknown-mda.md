@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "IUnknown pointers"
   - "managed debugging assistants (MDAs), invalid IUnknown pointer"
 ms.assetid: c7924771-a16b-40fe-b337-ce51dcdf6a12
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # invalidIUnknown MDA
 The `invalidIUnknown` managed debugging assistant (MDA) is activated when an invalid `IUnknown` pointer is passed to managed code from native code. The `IUnknown` fails to return success when queried for the `IUnknown` interface.  

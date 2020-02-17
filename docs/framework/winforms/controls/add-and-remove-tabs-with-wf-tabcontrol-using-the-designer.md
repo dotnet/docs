@@ -1,5 +1,5 @@
 ---
-title: "How to: Add and Remove Tabs with the Windows Forms TabControl Using the Designer"
+title: Add and Remove Tabs with TabControl Using the Designer
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "tabs [Windows Forms], removing from pages"

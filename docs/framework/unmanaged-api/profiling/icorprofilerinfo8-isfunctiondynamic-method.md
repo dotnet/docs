@@ -23,17 +23,19 @@ HRESULT IsFunctionDynamic( [in]  FunctionID  functionId,
                            [out] BOOL        *isDynamic);
 ```
 
-#### Parameters
+## Parameters
 
-`functionId` \
-[in]  The `FunctionID` that identifies the function in question.
+- `functionId`
 
-`isDynamic` \
-[out] A pointer to a `BOOL` that will contain a value indicating if the function has no metadata.
+  \[in]  The `FunctionID` that identifies the function in question.
+
+- `isDynamic`
+
+  \[out] A pointer to a `BOOL` that will contain a value indicating if the function has no metadata.
 
 ## Remarks
 
-A function is considered dynamic if it has no metadata. Certain methods like IL Stubs or LCG Methods do not have associated metadata that can be retrieved using the IMetaDataImport APIs. These methods can be encountered by profilers through instruction pointers or by listening to [ICorProfilerCallback::DynamicMethodJITCompilationStarted](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback8-dynamicmethodjitcompilationstarted-method.md).
+A function is considered dynamic if it has no metadata. Certain methods like IL Stubs or LCG Methods do not have associated metadata that can be retrieved using the IMetaDataImport APIs. These methods can be encountered by profilers through instruction pointers or by listening to [ICorProfilerCallback::DynamicMethodJITCompilationStarted](icorprofilercallback8-dynamicmethodjitcompilationstarted-method.md).
 
 ## Requirements
 
@@ -47,4 +49,4 @@ A function is considered dynamic if it has no metadata. Certain methods like IL 
 
 ## See also
 
-- [ICorProfilerInfo8 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo8-interface.md)
+- [ICorProfilerInfo8 Interface](icorprofilerinfo8-interface.md)

@@ -1,5 +1,5 @@
 ---
-title: "Developing Custom Windows Forms Controls with the .NET Framework"
+title: Develop Custom Controls
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "custom controls [Windows Forms], developing using code"

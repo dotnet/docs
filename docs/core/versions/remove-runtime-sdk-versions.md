@@ -131,7 +131,7 @@ Microsoft.NETCore.App 2.1.1 [/usr/local/share/dotnet/shared/Microsoft.NETCore.Ap
 
 ---
 
-## Uninstalling .NET Core
+## Uninstall .NET Core
 
 # [Windows](#tab/windows)
 
@@ -201,7 +201,7 @@ The parent directories for the SDK and runtime are listed in the output from the
 
 ## .NET Core Uninstall Tool
 
-The [.NET Core Uninstall Tool](../additional-tools/uninstall-tool.md) (`dotnet-core-uninstall`) lets you remove .NET Core SDKs and Runtimes from a system. A collection of options is available to specify which versions should be uninstalled.
+The [.NET Core Uninstall Tool](../additional-tools/uninstall-tool.md) (`dotnet-core-uninstall`) lets you remove .NET Core SDKs and runtimes from a system. A collection of options is available to specify which versions should be uninstalled.
 
 ## Visual Studio dependency on .NET Core SDK versions
 
@@ -215,7 +215,7 @@ Before Visual Studio 2019 version 16.3, Visual Studio installers called the stan
 | Visual Studio 2017 version 15.9 | .NET Core SDK 2.2.1xx, 2.1.5xx |
 | Visual Studio 2017 version 15.8 | .NET Core SDK 2.1.4xx |
 
-Starting with Visual Studio 2019 16.3, Visual Studio is in charge of its own copy of the .NET Core SDK. For that reason, you no longer see those SDK versions in the **Add/Remove Programs** dialog.
+Starting with Visual Studio 2019 version 16.3, Visual Studio is in charge of its own copy of the .NET Core SDK. For that reason, you no longer see those SDK versions in the **Add/Remove Programs** dialog.
 
 ## Remove the NuGet fallback folder
 

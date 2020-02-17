@@ -22,7 +22,7 @@ Controls custom debugger notifications.
   
 |Method|Description|  
 |------------|-----------------|  
-|[SetEnableCustomNotification Method](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess3-setenablecustomnotification-method.md)|Enables and disables custom debugger notifications of the specified type.|  
+|[SetEnableCustomNotification Method](icordebugprocess3-setenablecustomnotification-method.md)|Enables and disables custom debugger notifications of the specified type.|  
   
 ## Remarks  
  This interface logically extends the ICorDebugProcess and ICorDebugProcess2 interfaces.  
@@ -41,5 +41,5 @@ Controls custom debugger notifications.
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

@@ -132,7 +132,8 @@ interface ICustomer
  .NET Framework 3.5 provides support for JSON data (AJAX) as well as Syndication feeds (including ATOM and RSS). For more information about these features, see [WCF Web HTTP Formatting](../../../../docs/framework/wcf/feature-details/wcf-web-http-formatting.md)[WCF Syndication Overview](../../../../docs/framework/wcf/feature-details/wcf-syndication-overview.md) and [AJAX Integration and JSON Support](../../../../docs/framework/wcf/feature-details/ajax-integration-and-json-support.md).  
   
 ## WCF WEB HTTP Programming Model and Security  
- Because the WCF WEB HTTP programming model does not support the WS-* protocols, the only way to secure a WCF WEB HTTP service is to expose the service over HTTPS using SSL. For more information about setting up SSL with IIS 7.0, see [How to implement SSL in IIS](https://go.microsoft.com/fwlink/?LinkId=131613)  
+
+Because the WCF WEB HTTP programming model does not support the WS-* protocols, the only way to secure a WCF WEB HTTP service is to expose the service over HTTPS using SSL. For more information about setting up SSL with IIS 7.0, see [How to implement SSL in IIS](https://support.microsoft.com/help/299875/how-to-implement-ssl-in-iis).
   
 ## Troubleshooting the WCF WEB HTTP Programming Model  
  When calling WCF WEB HTTP services using a <xref:System.ServiceModel.Channels.ChannelFactoryBase%601> to create a channel, the <xref:System.ServiceModel.Description.WebHttpBehavior> uses the <xref:System.ServiceModel.EndpointAddress> set in the configuration file even if a different <xref:System.ServiceModel.EndpointAddress> is passed to the <xref:System.ServiceModel.Channels.ChannelFactoryBase%601>.  

@@ -25,7 +25,6 @@ ms.assetid: e7ec856e-41ee-47b1-9d57-b75a3dad088c
 - [UI Automation Control Patterns](ui-automation-control-patterns.md)
 - [UI Automation Text Pattern](ui-automation-text-pattern.md)
 - [UI Automation Control Types](ui-automation-control-types.md)
-- [UI Automation Specification and Community Promise](ui-automation-specification-and-community-promise.md)
 
 ## Related sections
 

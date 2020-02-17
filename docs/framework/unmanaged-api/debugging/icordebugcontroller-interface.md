@@ -25,14 +25,14 @@ Represents a scope, either a <xref:System.Diagnostics.Process> or an <xref:Syste
 |------------|-----------------|  
 |`ICorDebugController::CanCommitChanges`|This method is obsolete.|  
 |`ICorDebugController::CommitChanges`|This method is obsolete.|  
-|[Continue Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-continue-method.md)|Resumes execution of managed threads after a call to [ICorDebugController::Stop](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-stop-method.md).|  
-|[Detach Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-detach-method.md)|Detaches the debugger from the process or application domain.|  
-|[EnumerateThreads Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-enumeratethreads-method.md)|Gets an enumerator for the active managed threads in the process.|  
-|[HasQueuedCallbacks Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-hasqueuedcallbacks-method.md)|Gets a value that indicates whether any managed callbacks are currently queued for the specified thread.|  
-|[IsRunning Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-isrunning-method.md)|Gets a value that indicates whether the threads in the process are currently running freely.|  
-|[SetAllThreadsDebugState Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-setallthreadsdebugstate-method.md)|Sets the debug state of all managed threads in the process.|  
-|[Stop Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-stop-method.md)|Performs a cooperative stop on all threads that are running managed code in the process.|  
-|[Terminate Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-terminate-method.md)|Terminates the process with the specified exit code.|  
+|[Continue Method](icordebugcontroller-continue-method.md)|Resumes execution of managed threads after a call to [ICorDebugController::Stop](icordebugcontroller-stop-method.md).|  
+|[Detach Method](icordebugcontroller-detach-method.md)|Detaches the debugger from the process or application domain.|  
+|[EnumerateThreads Method](icordebugcontroller-enumeratethreads-method.md)|Gets an enumerator for the active managed threads in the process.|  
+|[HasQueuedCallbacks Method](icordebugcontroller-hasqueuedcallbacks-method.md)|Gets a value that indicates whether any managed callbacks are currently queued for the specified thread.|  
+|[IsRunning Method](icordebugcontroller-isrunning-method.md)|Gets a value that indicates whether the threads in the process are currently running freely.|  
+|[SetAllThreadsDebugState Method](icordebugcontroller-setallthreadsdebugstate-method.md)|Sets the debug state of all managed threads in the process.|  
+|[Stop Method](icordebugcontroller-stop-method.md)|Performs a cooperative stop on all threads that are running managed code in the process.|  
+|[Terminate Method](icordebugcontroller-terminate-method.md)|Terminates the process with the specified exit code.|  
   
 ## Remarks  
  If `ICorDebugController` is controlling a process, the scope includes all threads of the process. If `ICorDebugController` is controlling an application domain, the scope includes only the threads of that particular application domain.  
@@ -51,4 +51,4 @@ Represents a scope, either a <xref:System.Diagnostics.Process> or an <xref:Syste
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

@@ -62,7 +62,7 @@ In the following steps, you'll look at the files created by the publish process.
 
       * *HelloWorld.runtimeconfig.json*
 
-         This is the application's runtime configuration file. It identifies the version of .NET Core that your application was built to run on. For more information, see [Runtime configuration files](https://github.com/dotnet/cli/blob/85ca206d84633d658d7363894c4ea9d59e515c1a/Documentation/specs/runtime-configuration-file.md).
+         This is the application's run-time configuration file. It identifies the version of .NET Core that your application was built to run on. You can also add configuration options to it. For more information, see [.NET Core run-time configuration settings](../run-time-config/index.md#runtimeconfigjson).
 
 ## Additional resources
 

@@ -1,5 +1,5 @@
 ---
-title: "How to: Format the Windows Forms DataGrid Control"
+title: Format DataGrid Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

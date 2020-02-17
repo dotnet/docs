@@ -1,5 +1,6 @@
 ---
-title: "Walkthrough: Arranging WPF Content on Windows Forms at Design Time"
+title: Arrange WPF content on Windows Forms at design time
+titleSuffix: ""
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "WPF user control [Windows Forms], hosting in a layout panel"

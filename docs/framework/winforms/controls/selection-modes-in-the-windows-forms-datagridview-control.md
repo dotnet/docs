@@ -1,5 +1,5 @@
 ---
-title: "Selection Modes in the Windows Forms DataGridView Control"
+title: Selection Modes in DataGridView Control
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "selection [Windows Forms], modes in DataGridView control"

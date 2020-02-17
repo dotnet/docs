@@ -16,13 +16,13 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugBlockingObjectEnum Interface
-Provides an enumerator for a list of [CorDebugBlockingObject](../../../../docs/framework/unmanaged-api/debugging/cordebugblockingobject-structure.md) structures. This interface is a subclass of the ICorDebugEnum interface.  
+Provides an enumerator for a list of [CorDebugBlockingObject](cordebugblockingobject-structure.md) structures. This interface is a subclass of the ICorDebugEnum interface.  
   
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
-|[Next Method](../../../../docs/framework/unmanaged-api/debugging/icordebugblockingobjectenum-next-method.md)|Enumerates through a list of [CorDebugBlockingObject](../../../../docs/framework/unmanaged-api/debugging/cordebugblockingobject-structure.md) structures.|  
+|[Next Method](icordebugblockingobjectenum-next-method.md)|Enumerates through a list of [CorDebugBlockingObject](cordebugblockingobject-structure.md) structures.|  
   
 ## Remarks  
  Each `CorDebugBlockingObject` structure represents an object that is blocking a thread.  
@@ -41,5 +41,5 @@ Provides an enumerator for a list of [CorDebugBlockingObject](../../../../docs/f
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

@@ -1,7 +1,6 @@
 ---
 title: dotnet store command
 description: The 'dotnet store' command stores the specified assemblies in the runtime package store.
-author: bleroy
 ms.date: 05/29/2018
 ---
 # dotnet store

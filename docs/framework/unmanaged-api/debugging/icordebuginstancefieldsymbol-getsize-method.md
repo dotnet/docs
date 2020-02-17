@@ -34,5 +34,5 @@ HRESULT GetSize(
   
 ## See also
 
-- [ICorDebugInstanceFieldSymbol Interface](../../../../docs/framework/unmanaged-api/debugging/icordebuginstancefieldsymbol-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugInstanceFieldSymbol Interface](icordebuginstancefieldsymbol-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

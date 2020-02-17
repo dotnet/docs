@@ -1,5 +1,5 @@
 ---
-title: "WPF XAML Namescopes"
+title: XAML namescopes
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "namescopes [WPF]"

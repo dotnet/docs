@@ -1,5 +1,5 @@
 ---
-title: "Enhancing Windows Forms Applications"
+title: Enhance apps
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Forms, enhancing"

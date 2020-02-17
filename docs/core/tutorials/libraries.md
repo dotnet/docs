@@ -1,12 +1,12 @@
 ---
-title: Developing Libraries with Cross Platform Tools
-description: Learn how to create .NET Core libraries using the .NET Core CLI tools. You'll create a library that supports multiple frameworks.
+title: Develop libraries with the .NET Core CLI
+description: Learn how to create .NET Core libraries using the .NET Core CLI. You'll create a library that supports multiple frameworks.
 author: cartermp
 ms.date: 05/01/2017
 ---
-# Develop libraries with cross-platform tools
+# Develop libraries with the .NET Core CLI
 
-This article covers how to write libraries for .NET using cross-platform CLI tools. The CLI provides an efficient and low-level experience that works across any supported OS. You can still build libraries with Visual Studio, and if that is your preferred experience [refer to the Visual Studio guide](library-with-visual-studio.md).
+This article covers how to write libraries for .NET using the .NET Core CLI. The CLI provides an efficient and low-level experience that works across any supported OS. You can still build libraries with Visual Studio, and if that is your preferred experience [refer to the Visual Studio guide](library-with-visual-studio.md).
 
 ## Prerequisites
 
@@ -210,7 +210,7 @@ Each of these contain the `.dll` files for each target.
 It's important to be able to test across platforms. You can use either [xUnit](https://xunit.github.io/) or MSTest out of the box. Both are perfectly suitable for unit testing your library on .NET Core. How you set up your solution with test projects will depend on the [structure of your solution](#structuring-a-solution). The following example assumes that the test and source directories live in the same top-level directory.
 
 > [!NOTE]
-> This uses some [.NET Core CLI commands](../tools/index.md). See [dotnet new](../tools/dotnet-new.md) and [dotnet sln](../tools/dotnet-sln.md) for more information.
+> This uses some [.NET Core CLI](../tools/index.md) commands. See [dotnet new](../tools/dotnet-new.md) and [dotnet sln](../tools/dotnet-sln.md) for more information.
 
 1. Set up your solution. You can do so with the following commands:
 

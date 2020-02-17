@@ -10,7 +10,7 @@ Logically extends the ICorDebugAppDomain interface to get a managed object from 
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetObjectForCCW Method](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomain4-getobjectforccw-method.md)|Gets a managed object from a COM callable wrapper (CCW) pointer.|  
+|[GetObjectForCCW Method](icordebugappdomain4-getobjectforccw-method.md)|Gets a managed object from a COM callable wrapper (CCW) pointer.|  
   
 ## Remarks  
   
@@ -25,5 +25,5 @@ Logically extends the ICorDebugAppDomain interface to get a managed object from 
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

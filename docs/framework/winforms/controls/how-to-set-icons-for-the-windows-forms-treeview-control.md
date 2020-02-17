@@ -1,5 +1,5 @@
 ---
-title: "How to: Set Icons for the Windows Forms TreeView Control"
+title: Set Icons for TreeView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

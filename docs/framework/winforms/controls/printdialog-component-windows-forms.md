@@ -1,5 +1,5 @@
 ---
-title: "PrintDialog Component (Windows Forms)"
+title: "PrintDialog Component"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "print options [Windows Forms], PrintDialog component (using designer)"

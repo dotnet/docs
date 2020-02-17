@@ -35,5 +35,5 @@ HRESULT GetIndex(
   
 ## See also
 
-- [ICorDebugMergedAssemblyRecord Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmergedassemblyrecord-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugMergedAssemblyRecord Interface](icordebugmergedassemblyrecord-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

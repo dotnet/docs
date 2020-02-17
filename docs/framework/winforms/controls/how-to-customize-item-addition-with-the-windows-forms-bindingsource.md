@@ -1,5 +1,5 @@
 ---
-title: "How to: Customize Item Addition with the Windows Forms BindingSource"
+title: Customize Item Addition with BindingSource component
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

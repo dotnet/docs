@@ -1,5 +1,6 @@
 ---
 title: "What's New in WPF Version 4.5"
+titleSuffix: ""
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Presentation Foundation [WPF], what's new"

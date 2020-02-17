@@ -22,8 +22,8 @@ Serves as the general interface for publishing information about processes and i
   
 |Method|Description|  
 |------------|-----------------|  
-|[EnumProcesses Method](../../../../docs/framework/unmanaged-api/debugging/icorpublish-enumprocesses-method.md)|Gets an [ICorPublishProcessEnum](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocessenum-interface.md) instance that contains the managed processes running on this computer.|  
-|[GetProcess Method](../../../../docs/framework/unmanaged-api/debugging/icorpublish-getprocess-method.md)|Gets an [ICorPublishProcess](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md) instance that represents the process with the specified identifier.|  
+|[EnumProcesses Method](icorpublish-enumprocesses-method.md)|Gets an [ICorPublishProcessEnum](icorpublishprocessenum-interface.md) instance that contains the managed processes running on this computer.|  
+|[GetProcess Method](icorpublish-getprocess-method.md)|Gets an [ICorPublishProcess](icorpublishprocess-interface.md) instance that represents the process with the specified identifier.|  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -36,5 +36,5 @@ Serves as the general interface for publishing information about processes and i
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [CorpubPublish Coclass](../../../../docs/framework/unmanaged-api/debugging/corpubpublish-coclass.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [CorpubPublish Coclass](corpubpublish-coclass.md)

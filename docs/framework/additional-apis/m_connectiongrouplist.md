@@ -10,8 +10,6 @@ api_location:
 api_type: 
   - "Assembly"
 ms.assetid: df8afb59-f0f6-4ddc-b3c1-839b9fc601d8
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ServicePoint.m\_ConnectionGroupList Field
 

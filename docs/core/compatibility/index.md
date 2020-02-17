@@ -1,5 +1,5 @@
 ---
-title: Types of breaking changes - .NET Core
+title: Types of breaking changes
 description: Learn how .NET Core attempts to maintain compatibility for developers across .NET versions, and what kind of change is considered a breaking change.
 ms.date: 06/10/2019
 ---

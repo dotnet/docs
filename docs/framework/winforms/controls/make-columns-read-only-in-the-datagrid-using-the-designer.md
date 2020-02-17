@@ -1,5 +1,5 @@
 ---
-title: "How to: Make Columns Read-Only in the Windows Forms DataGridView Control Using the Designer"
+title: Make Columns Read-Only in DataGridView Control Using the Designer
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Windows Forms, columns"

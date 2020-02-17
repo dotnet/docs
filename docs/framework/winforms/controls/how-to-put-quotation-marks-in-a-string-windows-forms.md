@@ -1,5 +1,5 @@
 ---
-title: "How to: Put Quotation Marks in a String (Windows Forms)"
+title: "How to: Put Quotation Marks in a String"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

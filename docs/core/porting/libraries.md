@@ -25,7 +25,7 @@ This article describes the formal specification of .NET APIs that are intended t
 This article discusses how .NET Core defines and uses packages and how packages support code running on multiple .NET implementations.
 
 [Developing Libraries with Cross Platform Tools](../tutorials/libraries.md)\
-This article explains how to write libraries for .NET using cross-platform CLI tools.
+This article explains how to write libraries using the .NET Core CLI.
 
 [Additions to the *csproj* format for .NET Core](../tools/csproj.md)\
 This article outlines the changes that were added to the project file as part of the move to *csproj* and MSBuild.

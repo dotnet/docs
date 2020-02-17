@@ -1,5 +1,6 @@
 ---
-title: "How to: Create an HTML Document Viewer in a Windows Forms Application"
+title: Create an HTML Document Viewer in a Windows Forms app
+titleSuffix: ""
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -1,5 +1,6 @@
 ---
-title: "Performance Considerations for Direct3D9 and WPF Interoperability"
+title: Performance considerations for Direct3D9 and WPF interop
+titleSuffix: ""
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "WPF [WPF], Direct3D9 interop performance"

@@ -80,6 +80,10 @@ sudo apt-get install dotnet-runtime-3.1
 
 ## Troubleshoot the package manager
 
+This section provides information on common errors you may get while using the package manager to install .NET Core.
+
+### Unable to locate
+
 If you receive an error message similar to **Unable to locate package {the .NET Core package}**, run the following commands.
 
 ```bash
@@ -102,3 +106,7 @@ sudo apt-get install -y apt-transport-https
 sudo apt-get update
 sudo apt-get install {the .NET Core package}
 ```
+
+### Failed to fetch
+
+[!INCLUDE [package-manager-failed-to-fetch-deb](includes/package-manager-failed-to-fetch-deb.md)]

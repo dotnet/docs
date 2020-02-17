@@ -1,5 +1,5 @@
 ---
-title: "ADO.NET Architecture"
+title: "Architecture"
 ms.date: "03/30/2017"
 ms.assetid: fcd45b99-ae8f-45ab-8b97-d887beda734e
 ---

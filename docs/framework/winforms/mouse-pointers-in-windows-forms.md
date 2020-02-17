@@ -1,5 +1,5 @@
 ---
-title: "Mouse Pointers in Windows Forms"
+title: "Mouse Pointers"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "pointers [Windows Forms], setting"

@@ -1,5 +1,6 @@
 ---
 title: Design-time errors in the Windows Forms Designer
+titleSuffix: ""
 ms.date: 09/09/2019
 f1_keywords:
   - "DTELErrorList"

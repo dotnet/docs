@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 ms.date: 10/02/2018
 ---
 
-# Designing a microservice-oriented application
+# Design a microservice-oriented application
 
 This section focuses on developing a hypothetical server-side enterprise application.
 
@@ -78,7 +78,7 @@ The application is deployed as a set of microservices in the form of containers.
 
 ### Data sovereignty per microservice
 
-In the sample application, each microservice owns its own database or data source, although all SQL Server databases are deployed as a single container. This design decision was made only to make it easy for a developer to get the code from GitHub, clone it, and open it in Visual Studio or Visual Studio Code. Or alternatively, it makes it easy to compile the custom Docker images using .NET Core CLI and the Docker CLI, and then deploy and run them in a Docker development environment. Either way, using containers for data sources lets developers build and deploy in a matter of minutes without having to provision an external database or any other data source with hard dependencies on infrastructure (cloud or on-premises).
+In the sample application, each microservice owns its own database or data source, although all SQL Server databases are deployed as a single container. This design decision was made only to make it easy for a developer to get the code from GitHub, clone it, and open it in Visual Studio or Visual Studio Code. Or alternatively, it makes it easy to compile the custom Docker images using the .NET Core CLI and the Docker CLI, and then deploy and run them in a Docker development environment. Either way, using containers for data sources lets developers build and deploy in a matter of minutes without having to provision an external database or any other data source with hard dependencies on infrastructure (cloud or on-premises).
 
 In a real production environment, for high availability and for scalability, the databases should be based on database servers in the cloud or on-premises, but not in containers.
 
@@ -91,7 +91,7 @@ Therefore, the units of deployment for microservices (and even for databases in 
 
 ## Benefits of a microservice-based solution
 
-A microservice based solution like this has many benefits:
+A microservice-based solution like this has many benefits:
 
 **Each microservice is relatively small—easy to manage and evolve**. Specifically:
 
@@ -113,7 +113,7 @@ A microservice based solution like this has many benefits:
 
 ## Downsides of a microservice-based solution
 
-A microservice based solution like this also has some drawbacks:
+A microservice-based solution like this also has some drawbacks:
 
 **Distributed application**. Distributing the application adds complexity for developers when they are designing and building the services. For example, developers must implement inter-service communication using protocols like HTTP or AMPQ, which adds complexity for testing and exception handling. It also adds latency to the system.
 
@@ -175,7 +175,7 @@ Multi-architectural pattern and polyglot microservices means you can mix and mat
 
 For instance, for a simple CRUD maintenance application, it might not make sense to design and implement DDD patterns. But for your core domain or core business, you might need to apply more advanced patterns to tackle business complexity with ever-changing business rules.
 
-Especially when you deal with large applications composed by multiple sub-systems, you should not apply a single top-level architecture based on a single architecture pattern. For instance, CQRS should not be applied as a top-level architecture for a whole application, but might be useful for a specific set of services.
+Especially when you deal with large applications composed by multiple subsystems, you should not apply a single top-level architecture based on a single architecture pattern. For instance, CQRS should not be applied as a top-level architecture for a whole application, but might be useful for a specific set of services.
 
 There is no silver bullet or a right architecture pattern for every given case. You cannot have "one architecture pattern to rule them all." Depending on the priorities of each microservice, you must choose a different approach for each, as explained in the following sections.
 

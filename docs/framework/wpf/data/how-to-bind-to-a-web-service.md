@@ -14,7 +14,7 @@ ms.assetid: 77e2d373-69ba-4cbd-b6f5-2c83c38fc98b
 This example shows how to bind to objects returned by Web service method calls.  
   
 ## Example  
- This example uses the [MSDN/TechNet Publishing System (MTPS) Content Service](https://go.microsoft.com/fwlink/?LinkId=95677) to retrieve the list of languages supported by a specified document.  
+ This example uses the MSDN/TechNet Publishing System (MTPS) Content Service to retrieve the list of languages supported by a specified document.  
   
  Before you call a Web service, you need to create a reference to it. To create a Web reference to the MTPS service using Visual Studio, follow the following steps:  
   

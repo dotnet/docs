@@ -1,5 +1,5 @@
 ---
-title: "How to: Author Controls for Windows Forms"
+title: "How to: Author Controls"
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "controls [Windows Forms], creating"

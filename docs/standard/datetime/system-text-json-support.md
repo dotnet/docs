@@ -222,4 +222,20 @@ The following levels of granularity are defined for formatting:
 
         Used to format a <xref:System.DateTime> or <xref:System.DateTimeOffset> with fractional seconds and with a local offset.
 
-If present, a maximum of 7 fractional digits are written. This aligns with the <xref:System.DateTime> implementation, which is limited to this resolution.
+If the [round-trip format](../base-types/standard-date-and-time-format-strings.md#the-round-trip-o-o-format-specifier) representation of a
+<xref:System.DateTime> or <xref:System.DateTimeOffset> instance has trailing zeros in its fractional seconds, then <xref:System.Text.Json.JsonSerializer>
+and <xref:System.Text.Json.Utf8JsonWriter> will format a representation of the instance without trailing zeros.
+For example, a <xref:System.DateTime> instance whose [round-trip format](../base-types/standard-date-and-time-format-strings.md#the-round-trip-o-o-format-specifier)
+representation is `2019-04-24T14:50:17.1010000Z`, will be formatted as `2019-04-24T14:50:17.101Z` by <xref:System.Text.Json.JsonSerializer>
+and <xref:System.Text.Json.Utf8JsonWriter>.
+
+If the [round-trip format](../base-types/standard-date-and-time-format-strings.md#the-round-trip-o-o-format-specifier) representation of a
+<xref:System.DateTime> or <xref:System.DateTimeOffset> instance has all zeros in its fractional seconds, then <xref:System.Text.Json.JsonSerializer>
+and <xref:System.Text.Json.Utf8JsonWriter> will format a representation of the instance without fractional seconds.
+For example, a <xref:System.DateTime> instance whose [round-trip format](../base-types/standard-date-and-time-format-strings.md#the-round-trip-o-o-format-specifier)
+representation is `2019-04-24T14:50:17.0000000+02:00`, will be formatted as `2019-04-24T14:50:17+02:00` by <xref:System.Text.Json.JsonSerializer>
+and <xref:System.Text.Json.Utf8JsonWriter>.
+
+Truncating zeros in fractional-second digits allows the smallest output needed to preserve information on a round trip to be written.
+
+A maximum of 7 fractional-second digits are written. This aligns with the <xref:System.DateTime> implementation, which is limited to this resolution.

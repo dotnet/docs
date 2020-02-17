@@ -10,8 +10,8 @@ Provides methods to help in stack unwinding.
   
 |Method|Name|  
 |------------|----------|  
-|[GetContext Method](../../../../docs/framework/unmanaged-api/debugging/icordebugvirtualunwinder-getcontext-method.md)|Gets the current context of this unwinder.|  
-|[Next Method](../../../../docs/framework/unmanaged-api/debugging/icordebugvirtualunwinder-next-method.md)|Advances to the caller's context.|  
+|[GetContext Method](icordebugvirtualunwinder-getcontext-method.md)|Gets the current context of this unwinder.|  
+|[Next Method](icordebugvirtualunwinder-next-method.md)|Advances to the caller's context.|  
   
 ## Remarks  
  The members of the `ICorDebugVirtualUnwinder` interface are implemented by the debugger to help in stack unwinding.  
@@ -30,5 +30,5 @@ Provides methods to help in stack unwinding.
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

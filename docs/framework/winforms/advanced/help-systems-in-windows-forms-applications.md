@@ -1,5 +1,5 @@
 ---
-title: "Help Systems in Windows Forms Applications"
+title: Help Systems
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Help [Windows Forms], adding to Windows applications"

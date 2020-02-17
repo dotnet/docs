@@ -1,5 +1,5 @@
 ---
-title: "Getting Started (WPF)"
+title: "Getting Started"
 ms.date: "01/26/2018"
 helpviewer_keywords: 
   - "getting started [WPF]"

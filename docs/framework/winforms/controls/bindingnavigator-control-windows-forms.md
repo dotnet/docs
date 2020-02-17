@@ -1,5 +1,5 @@
 ---
-title: "BindingNavigator Control (Windows Forms)"
+title: "BindingNavigator Control"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "BindingNavigator control [Windows Forms]"

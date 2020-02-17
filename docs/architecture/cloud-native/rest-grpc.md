@@ -2,7 +2,7 @@
 title: gRPC
 description: Learn about gRPC, its role in cloud-native applications, and how it differs from HTTP REST. 
 author: robvet
-ms.date: 11/25/2019
+ms.date: 02/16/2020
 ---
 
 # gRPC

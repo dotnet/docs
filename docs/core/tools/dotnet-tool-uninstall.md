@@ -56,15 +56,15 @@ Uninstalls the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global too
 
 `dotnet tool uninstall -g dotnetsay`
 
-Uninstalls the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool from a specific Windows folder:
+Uninstalls the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool from a specific Windows directory:
 
 `dotnet tool uninstall dotnetsay --tool-path c:\global-tools`
 
-Uninstalls the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool from a specific Linux/macOS folder:
+Uninstalls the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool from a specific Linux/macOS directory:
 
 `dotnet tool uninstall dotnetsay --tool-path ~/bin`
 
-Uninstalls the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) local tool from the current folder:
+Uninstalls the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) local tool from the current directory:
 
 `dotnet tool uninstall dotnetsay`
 

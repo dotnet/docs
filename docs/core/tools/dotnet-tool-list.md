@@ -50,11 +50,11 @@ Lists all global tools installed user-wide on your machine (current user profile
 
 `dotnet tool list -g`
 
-Lists the global tools from a specific Windows folder:
+Lists the global tools from a specific Windows directory:
 
 `dotnet tool list --tool-path c:\global-tools`
 
-Lists the global tools from a specific Linux/macOS folder:
+Lists the global tools from a specific Linux/macOS directory:
 
 `dotnet tool list --tool-path ~/bin`
 

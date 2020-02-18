@@ -37,7 +37,7 @@ Global tools are installed in the following directories by default when you spec
 | Linux/macOS | `$HOME/.dotnet/tools`         |
 | Windows     | `%USERPROFILE%\.dotnet\tools` |
 
-Local tools are added to a *tool-manifest.json* file in a *.config* folder under the current directory. If a manifest file doesn't exist yet, create it by executing the following command:
+Local tools are added to a *tool-manifest.json* file in a *.config* directory under the current directory. If a manifest file doesn't exist yet, create it by executing the following command:
 
 ```dotnetcli
 dotnet new tool-manifest
@@ -91,11 +91,11 @@ Installs [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a global tool
 
 `dotnet tool install -g dotnetsay`
 
-Installs [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a global tool in a specific Windows folder:
+Installs [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a global tool in a specific Windows directory:
 
 `dotnet tool install dotnetsay --tool-path c:\global-tools`
 
-Installs [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a global tool in a specific Linux/macOS folder:
+Installs [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a global tool in a specific Linux/macOS directory:
 
 `dotnet tool install dotnetsay --tool-path ~/bin`
 

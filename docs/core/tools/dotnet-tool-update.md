@@ -72,15 +72,15 @@ Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool:
 
 `dotnet tool update -g dotnetsay`
 
-Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool located in a specific Windows folder:
+Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool located in a specific Windows directory:
 
 `dotnet tool update dotnetsay --tool-path c:\global-tools`
 
-Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool located in a specific Linux/macOS folder:
+Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool located in a specific Linux/macOS directory:
 
 `dotnet tool update dotnetsay --tool-path ~/bin`
 
-Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) local tool installed for the current folder:
+Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) local tool installed for the current directory:
 
 `dotnet tool update dotnetsay`
 

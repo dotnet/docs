@@ -1,11 +1,11 @@
 ---
 title: dotnet migrate command
 description: The dotnet migrate command migrates a project and all of its dependencies.
-ms.date: 01/07/2020
+ms.date: 02/14/2020
 ---
 # dotnet migrate
 
-**This article applies to:** ✔️ .NET Core 1.x SDK ✔️ .NET Core 2.x SDK
+**This article applies to:** ✔️ .NET Core 2.x SDK
 
 ## Name
 

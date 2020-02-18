@@ -23,7 +23,13 @@ This tutorial teaches you how to install and use a local tool. You use a tool th
 
 To install a tool for local access only (for the current directory and subdirectories), it has to be added to a manifest file. 
 
-Create a manifest file by running the [dotnet new](dotnet-new.md) command from the *botsay* project folder:
+From the *botsay* folder, navigate up one level to the *repository* folder:
+
+```console
+cd ..
+```
+
+Create a manifest file by running the [dotnet new](dotnet-new.md) command:
 
 ```dotnetcli
 dotnet new tool-manifest
@@ -63,7 +69,7 @@ This command adds the tool to the manifest file that you created in the precedin
  You can invoke the tool from this directory using the following command:
  'dotnet tool run botsay' or 'dotnet botsay'
  Tool 'botsay' (version '1.0.0') was successfully installed.
- Entry is added to the manifest file /home/tdykstra/botsay/.config/dotnet-tools.json
+ Entry is added to the manifest file /home/tdykstra/repository/.config/dotnet-tools.json
  ```
 
 The *.config/dotnet-tools.json* file now has one tool:
@@ -85,7 +91,7 @@ The *.config/dotnet-tools.json* file now has one tool:
 
 ## Use the tool
 
-Invoke the tool by running the `dotnet tool run` command:
+Invoke the tool by running the `dotnet tool run` command from the *repository* folder:
 
 ```dotnetcli
 dotnet tool run botsay hello from the bot
@@ -144,9 +150,9 @@ The output is a list of packages and commands, similar to the following example:
 
 ```console
 Package Id      Version      Commands       Manifest
--------------------------------------------------------------------------------------------
-botsay          1.0.0        botsay         /home/tdykstra/botsay/.config/dotnet-tools.json
-dotnetsay       2.1.3        dotnetsay      /home/tdykstra/botsay/.config/dotnet-tools.json
+-----------------------------------------------------------------------------------------------
+botsay          1.0.0        botsay         /home/tdykstra/repository/.config/dotnet-tools.json
+dotnetsay       2.1.3        dotnetsay      /home/tdykstra/repository/.config/dotnet-tools.json
 ```
 
 Test the tools:
@@ -168,7 +174,7 @@ The output indicates the new version number:
 
 ```console
 Tool 'dotnetsay' was successfully updated from version '2.1.3' to version '2.1.4'
-(manifest file C:\Users\username\Documents\botsay\.config\dotnet-tools.json).
+(manifest file /home/tdykstra/repository/.config/dotnet-tools.json).
 ```
 
 The update command finds the first manifest file that contains the package ID and updates it. If there is no such package ID in any manifest file that is in the scope of the search, the SDK adds a new entry to the closest manifest file. The search scope is up through parent directories until a manifest file with `isRoot = true` is found.

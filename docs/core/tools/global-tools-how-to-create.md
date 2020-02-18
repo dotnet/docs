@@ -23,9 +23,9 @@ This is the first in a series of three tutorials. In this tutorial, you create a
 
 ## Create a project
 
-1. Open a command prompt and create a folder named *botsay*.
+1. Open a command prompt and create a folder named *repository* and under it a folder named *botsay*.
 
-1. Navigate to the folder you created and enter the following command:
+1. Navigate to the *botsay* folder and enter the following command:
 
    ```dotnetcli
    dotnet new console

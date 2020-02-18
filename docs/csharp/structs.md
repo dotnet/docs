@@ -41,9 +41,6 @@ Structs share most of the same syntax as classes, although structs are more limi
 
 - Unlike classes, structs can be instantiated without using a `new` operator.
 
-   > [!NOTE]
-   > Beginning with .NET Core 2.1, certain .NET struct types, which can be instantiated without the `new` operator in earlier .NET Core versions, can only be instantiated with the [new operator](language-reference/operators/new-operator.md) or [default literal](language-reference/operators/default.md#default-literal). For more information, see [Breaking changes for migration from version 2.0 to 2.1](../core/compatibility/2.0-2.1.md#corefx).
-
 - Structs can declare constructors that have parameters.
 
 - A struct cannot inherit from another struct or class, and it cannot be the base of a class. All structs inherit directly from <xref:System.ValueType>, which inherits from <xref:System.Object>.

@@ -87,6 +87,9 @@ This tutorial teaches you how to install and use a global tool. You use a tool t
    ~/bin/botsay hello from the bot
    ```
 
+   > [!NOTE]
+   > If you get an error message that says the .NET Core 2.2 runtime is not found, install the 2.2 runtime. Go to the [.NET Core 2.2 download page](https://dotnet.microsoft.com/download/dotnet-core/2.2) and find the runtime installation link in the **Run apps - Runtime** column.
+
 1. Remove the tool by running the [dotnet tool uninstall](dotnet-tool-uninstall.md) command:
 
    On Windows:

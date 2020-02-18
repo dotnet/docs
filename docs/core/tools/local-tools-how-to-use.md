@@ -60,7 +60,7 @@ When you use a CLI command that refers to a local tool, the SDK searches for a m
 Install the tool from the package that you created in the first tutorial:
 
 ```dotnetcli
-dotnet tool install --add-source ./nupkg botsay
+dotnet tool install --add-source ./botsay/nupkg botsay
 ```
 
 This command adds the tool to the manifest file that you created in the preceding step. The command output shows which manifest file the newly installed tool is in:

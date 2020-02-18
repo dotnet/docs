@@ -42,7 +42,7 @@ Structs share most of the same syntax as classes, although structs are more limi
 - Unlike classes, structs can be instantiated without using a `new` operator.
 
    > [!NOTE]
-   > In .NET Core 2.1 and later, a struct type must be instantiated by using the [new operator](language-reference/operators/new-operator.md) or [default literal](language-reference/operators/default.md#default-literal), or by initializing each of its private fields. For more information, see [Breaking changes for migration from version 2.0 to 2.1](../core/compatibility/2.0-2.1.md#corefx).
+   > Beginning with .NET Core 2.1, certain .NET struct types, which can be instantiated without the `new` operator in earlier .NET Core versions, can only be instantiated with the [new operator](language-reference/operators/new-operator.md) or [default literal](language-reference/operators/default.md#default-literal). For more information, see [Breaking changes for migration from version 2.0 to 2.1](../core/compatibility/2.0-2.1.md#corefx).
 
 - Structs can declare constructors that have parameters.
 

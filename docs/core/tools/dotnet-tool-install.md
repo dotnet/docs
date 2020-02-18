@@ -22,11 +22,11 @@ dotnet tool install <-h|--help>
 
 ## Description
 
-The `dotnet tool install` command provides a way for you to install .NET Core Global Tools on your machine.  To use the command, you specify one of the following:
+The `dotnet tool install` command provides a way for you to install .NET Core tools on your machine. To use the command, you specify one of the following installation options:
 
-* A global tool installed in the default location. Use the `--global` option
-* A global tool installed in a custom location. Use the `--tool-path` option.
-* A local tool. Omit the `--global` and `--tool-path` options.
+* To install a global tool in the default location, use the `--tool-path` option.
+* To install a global tool in a custom location,  use the `--tool-path` option.
+* To install a local tool, omit the `--global` and `--tool-path` options.
 
 **Local tools are available starting with .NET Core SDK 3.0.**
 
@@ -37,7 +37,7 @@ Global tools are installed in the following directories by default when you spec
 | Linux/macOS | `$HOME/.dotnet/tools`         |
 | Windows     | `%USERPROFILE%\.dotnet\tools` |
 
-Local tools are added to a *tool-manifest.json* file in a *.config* directory under the current directory. If a manifest file doesn't exist yet, create it by executing the following command:
+Local tools are added to a *tool-manifest.json* file in a *.config* directory under the current directory. If a manifest file doesn't exist yet, create it by running the following command:
 
 ```dotnetcli
 dotnet new tool-manifest

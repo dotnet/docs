@@ -22,11 +22,11 @@ dotnet tool uninstall <-h|--help>
 
 ## Description
 
-The `dotnet tool uninstall` command provides a way for you to uninstall .NET Core tools from your machine.  To use the command, you specify one of the following:
+The `dotnet tool uninstall` command provides a way for you to uninstall .NET Core tools from your machine. To use the command, you specify one of the following options:
 
-* A global tool installed in the default location. Use the `--global` option
-* A global tool installed in a custom location. Use the `--tool-path` option.
-* A local tool. Omit the `--global` and `--tool-path` options.
+* To uninstall a global tool that was installed in the default location, use the `--global` option.
+* To uninstall a global tool that was installed in a custom location,  use the `--tool-path` option.
+* To uninstall a local tool, omit the `--global` and `--tool-path` options.
 
 **Local tools are available starting with .NET Core SDK 3.0.**
 

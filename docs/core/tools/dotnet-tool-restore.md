@@ -3,7 +3,7 @@ title: dotnet tool restore command
 description: The dotnet tool restore command installs on your machine the .NET Core local tools that are in scope for the current directory.
 ms.date: 02/14/2020
 ---
-# dotnet tool install
+# dotnet tool restore
 
 **This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
 
@@ -14,7 +14,7 @@ ms.date: 02/14/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet tool restore <PACKAGE_NAME> [--configfile] [--add-source] [tool-manifest] [--disable-parallel] [--ignore-failed-sources][--no-cache] [-interactive] [-v|--verbosity]
+dotnet tool restore <PACKAGE_NAME> [--configfile] [--add-source] [tool-manifest] [--disable-parallel] [--ignore-failed-sources] [--no-cache] [-interactive] [-v|--verbosity]
 dotnet tool restore <-h|--help>
 ```
 
@@ -74,4 +74,4 @@ Name/ID of the NuGet package that contains the .NET Core tool to install.
 
 ## See also
 
-- [.NET Core Global Tools](global-tools.md)
+- [.NET Core tools](global-tools.md)

@@ -3,7 +3,7 @@ title: dotnet tool run command
 description: The dotnet tool run command invokes a local tool.
 ms.date: 02/14/2020
 ---
-# dotnet tool install
+# dotnet tool run
 
 **This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
 

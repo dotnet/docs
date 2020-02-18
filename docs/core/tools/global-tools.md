@@ -228,35 +228,25 @@ dotnet dotnet-doc
 dotnet doc
 ```
 
-## Update or uninstall a tool
+## Update a tool
 
-The .NET Core SDK contains other commands that support .NET Core tools. To use these commands with a tool, specify the same option that you used to install the tool:
-
-* For a global tool: `--global` or `-g`.
-* For a global tool installed to a custom location: `--tool-path`.
-* For a local tool: neither of the preceding options.
-
-To find out which commands are available for tools:
+Updating a tool involves uninstalling and reinstalling it with the latest stable version. To update a tool, use the [dotnet tool update](dotnet-tool-update.md) command with the same option that you used to install the tool:
 
 ```dotnetcli
-dotnet tool --help
-```
-
-### Update a tool
-
-Updating a tool involves uninstalling and reinstalling it with the latest stable version. To update a tool, use the [dotnet tool update](dotnet-tool-update.md) command:
-
-```dotnetcli
+dotnet tool update --global <packagename>
+dotnet tool update --tool-path <packagename>
 dotnet tool update <packagename>
 ```
 
 For a local tool, the SDK finds the first manifest file that contains the package ID by looking in the current directory and parent directories. If there is no such package ID in any manifest file, the SDK adds a new entry to the closest manifest file.
 
-### Uninstall a tool
+## Uninstall a tool
 
-Remove a tool by using the [dotnet tool uninstall](dotnet-tool-uninstall.md) command:
+Remove a tool by using the [dotnet tool uninstall](dotnet-tool-uninstall.md) command with the same option that you used to install the tool:
 
 ```dotnetcli
+dotnet tool uninstall --global <packagename>
+dotnet tool uninstall --tool-path<packagename>
 dotnet tool uninstall <packagename>
 ```
 
@@ -264,9 +254,15 @@ For a local tool, the SDK finds the first manifest file that contains the packag
 
 ## Get help and troubleshoot
 
-You can look for tool usage instructions at the tool's website or by entering one of the following commands:
+To get a list of available `dotnet tool` commands, enter the following command:
 
-```console
+```dotnetcli
+dotnet tool --help
+```
+
+To get tool usage instructions, enter one of the following commands or see the tool's website:
+
+```dotnetcli
 <command> --help
 dotnet <command> --help
 ```

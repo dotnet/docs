@@ -175,8 +175,8 @@ The output shows each tool's version and command, similar to the following examp
 ```console
 Package Id      Version      Commands       Manifest
 -------------------------------------------------------------------------------------------
-botsay          1.0.0        botsay         /home/name/botsay/.config/dotnet-tools.json
-dotnetsay       2.1.3        dotnetsay      /home/name/botsay/.config/dotnet-tools.json
+botsay          1.0.0        botsay         /home/name/repository/.config/dotnet-tools.json
+dotnetsay       2.1.3        dotnetsay      /home/name/repository/.config/dotnet-tools.json
 ```
 
 As shown in this example, the list shows local tools. To see global tools, use the `--global` option, and to see tool-path global tools, use the `--tool-path` option.

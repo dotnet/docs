@@ -108,13 +108,13 @@ This command creates a manifest file named *dotnet-tools.json* under the *.confi
 dotnet tool install dotnetsay
 ```
 
-The command output shows which manifest file the newly installed tool is in, as shown in the following example:
+The command output shows which manifest file the newly installed tool is in, similar to the following example:
 
-```
+```console
 You can invoke the tool from this directory using the following command:
 dotnet tool run dotnetsay
 Tool 'dotnetsay' (version '2.1.4') was successfully installed.
-Entry is added to the manifest file /Users/name/tools/sub/dotnet-tools.json
+Entry is added to the manifest file /home/tdykstra/botsay/.config/dotnet-tools.json.
 ```
 
 The following example shows a manifest file with two local tools installed:
@@ -174,9 +174,9 @@ The output shows each tool's version and command, similar to the following examp
 
 ```console
 Package Id      Version      Commands       Manifest
-------------------------------------------------------------------------------------------------------
-botsay          1.0.0        botsay         C:\Users\username\Documents\botsay\.config\dotnet-tools.json
-dotnetsay       2.1.3        dotnetsay      C:\Users\username\Documents\botsay\.config\dotnet-tools.json
+-------------------------------------------------------------------------------------------
+botsay          1.0.0        botsay         /home/tdykstra/botsay/.config/dotnet-tools.json
+dotnetsay       2.1.3        dotnetsay      /home/tdykstra/botsay/.config/dotnet-tools.json
 ```
 
 As shown in this example, the list shows local tools. To see global tools, use the `--global` option, and to see tool-path global tools, use the `--tool-path` option.

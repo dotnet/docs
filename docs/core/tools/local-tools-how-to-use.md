@@ -63,7 +63,7 @@ This command adds the tool to the manifest file that you created in the precedin
  You can invoke the tool from this directory using the following command:
  'dotnet tool run botsay' or 'dotnet botsay'
  Tool 'botsay' (version '1.0.0') was successfully installed.
- Entry is added to the manifest file /Users/name/tools/sub/dotnet-tools.json
+ Entry is added to the manifest file /home/tdykstra/botsay/.config/dotnet-tools.json
  ```
 
 The *.config/dotnet-tools.json* file now has one tool:
@@ -144,9 +144,9 @@ The output is a list of packages and commands, similar to the following example:
 
 ```console
 Package Id      Version      Commands       Manifest
-------------------------------------------------------------------------------------------------------
-botsay          1.0.0        botsay         C:\Users\username\Documents\botsay\.config\dotnet-tools.json
-dotnetsay       2.1.3        dotnetsay      C:\Users\username\Documents\botsay\.config\dotnet-tools.json
+-------------------------------------------------------------------------------------------
+botsay          1.0.0        botsay         /home/tdykstra/botsay/.config/dotnet-tools.json
+dotnetsay       2.1.3        dotnetsay      /home/tdykstra/botsay/.config/dotnet-tools.json
 ```
 
 Test the tools:

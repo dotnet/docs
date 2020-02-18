@@ -22,11 +22,11 @@ dotnet tool update <-h|--help>
 
 ## Description
 
-The `dotnet tool update` command provides a way for you to update .NET Core tools on your machine to the latest stable version of the package. The command uninstalls and reinstalls a tool, effectively updating it. To use the command, you specify one of the following:
+The `dotnet tool update` command provides a way for you to update .NET Core tools on your machine to the latest stable version of the package. The command uninstalls and reinstalls a tool, effectively updating it. To use the command, you specify one of the following options:
 
-* A global tool installed in the default location. Use the `--global` option
-* A global tool installed in a custom location. Use the `--tool-path` option.
-* A local tool. Omit the `--global` and `--tool-path` options.
+* To update a global tool that was installed in the default location, use the `--global` option
+* To update a global tool that was installed in a custom location, use the `--tool-path` option.
+* To update a local tool, omit the `--global` and `--tool-path` options.
 
 **Local tools are available starting with .NET Core SDK 3.0.**
 

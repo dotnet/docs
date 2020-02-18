@@ -30,7 +30,7 @@ Name/ID of the NuGet package that contains the .NET Core tool to install.
 
 ## Options
 
-- *`--configfile <FILE>`**
+- **`--configfile <FILE>`**
 
   The NuGet configuration (*nuget.config*) file to use.
 

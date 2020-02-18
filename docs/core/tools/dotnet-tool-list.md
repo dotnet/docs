@@ -32,35 +32,35 @@ The `dotnet tool list` command provides a way for you to list all .NET Core glob
 
 ## Options
 
-`-g|--global`
+- **`-g|--global`**
 
-Lists user-wide global tools. Can't be combined with the `--tool-path` option. Omitting both `--global` and `--tool-path` lists local tools. 
+  Lists user-wide global tools. Can't be combined with the `--tool-path` option. Omitting both `--global` and `--tool-path` lists local tools. 
 
-`-h|--help`
+- **`-h|--help`**
 
-Prints out a short help for the command.
+  Prints out a short help for the command.
 
-`--tool-path <PATH>`
+- **`--tool-path <PATH>`**
 
-Specifies a custom location where to find global tools. PATH can be absolute or relative. Can't be combined with the `--global` option. Omitting both `--global` and `--tool-path` lists local tools. 
+  Specifies a custom location where to find global tools. PATH can be absolute or relative. Can't be combined with the `--global` option. Omitting both `--global` and `--tool-path` lists local tools. 
 
 ## Examples
 
-Lists all global tools installed user-wide on your machine (current user profile):
+- **`dotnet tool list -g`**
 
-`dotnet tool list -g`
+  Lists all global tools installed user-wide on your machine (current user profile).
 
-Lists the global tools from a specific Windows directory:
+- **`dotnet tool list --tool-path c:\global-tools`**
 
-`dotnet tool list --tool-path c:\global-tools`
+  Lists the global tools from a specific Windows directory.
 
-Lists the global tools from a specific Linux/macOS directory:
+- **`dotnet tool list --tool-path ~/bin`**
 
-`dotnet tool list --tool-path ~/bin`
+  Lists the global tools from a specific Linux/macOS directory.
 
-Lists all local tools available in the current directory:
+- **`dotnet tool list`**
 
-`dotnet tool list`
+  Lists all local tools available in the current directory.
 
 ## See also
 

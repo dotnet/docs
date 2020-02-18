@@ -24,21 +24,21 @@ The `dotnet tool run` command searches tool manifest files that are in scope for
 
 ## Arguments
 
-`COMMAND_NAME`
+- **`COMMAND_NAME`**
 
-The command name of the tool to run.
+  The command name of the tool to run.
 
 ## Options
 
-`-h|--help`
+- **`-h|--help`**
 
-Prints out a short help for the command.
+  Prints out a short help for the command.
 
 ## Example
 
-Restore local tools for the current directory:
+- **`dotnet tool run dotnetsay`**
 
-`dotnet tool run dotnetsay`
+  Runs the `dotnetsay` local tool.
 
 ## See also
 

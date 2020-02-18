@@ -24,53 +24,53 @@ The `dotnet tool restore` command finds the tool manifest file that is in scope 
 
 ## Arguments
 
-`PACKAGE_NAME`
+- **`PACKAGE_NAME`**
 
 Name/ID of the NuGet package that contains the .NET Core tool to install.
 
 ## Options
 
-`--configfile <FILE>`
+- *`--configfile <FILE>`**
 
-The NuGet configuration (*nuget.config*) file to use.
+  The NuGet configuration (*nuget.config*) file to use.
 
-`--add-source <SOURCE>`
+- **`--add-source <SOURCE>`**
 
-Adds an additional NuGet package source to use during installation.
+  Adds an additional NuGet package source to use during installation.
 
-`--tool-manifest <PATH>`
+- **`--tool-manifest <PATH>`**
 
-Path to the manifest file.
+  Path to the manifest file.
 
-`--disable-parallel`
+- **`--disable-parallel`**
 
-Prevent restoring multiple projects in parallel.
+  Prevent restoring multiple projects in parallel.
 
-`--ignore-failed-sources`
+- **`--ignore-failed-sources`**
 
-Treat package source failures as warnings.
+  Treat package source failures as warnings.
 
-`--no-cache`
+- **`--no-cache`**
 
-Do not cache packages and http requests.
+  Do not cache packages and http requests.
 
-`--interactive`
+- **`--interactive`**
 
-Allows the command to stop and wait for user input or action (for example to complete authentication).
+  Allows the command to stop and wait for user input or action (for example to complete authentication).
 
-`-h|--help`
+- **`-h|--help`**
 
-Prints out a short help for the command.
+  Prints out a short help for the command.
 
-`-v|--verbosity <LEVEL>`
+- **`-v|--verbosity <LEVEL>`**
 
-Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
 
 ## Example
 
-Restore local tools for the current directory:
+- **`dotnet tool restore`**
 
-`dotnet tool restore`
+  Restores local tools for the current directory.
 
 ## See also
 

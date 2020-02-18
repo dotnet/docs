@@ -47,65 +47,65 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 ## Arguments
 
-`PACKAGE_NAME`
+- **`PACKAGE_NAME`**
 
-Name/ID of the NuGet package that contains the .NET Core tool to install.
+  Name/ID of the NuGet package that contains the .NET Core tool to install.
 
 ## Options
 
-`--add-source <SOURCE>`
+- **`add-source <SOURCE>`**
 
-Adds an additional NuGet package source to use during installation.
+  Adds an additional NuGet package source to use during installation.
 
-`--configfile <FILE>`
+- **`configfile <FILE>`**
 
-The NuGet configuration (*nuget.config*) file to use.
+  The NuGet configuration (*nuget.config*) file to use.
 
-`--framework <FRAMEWORK>`
+- **`framework <FRAMEWORK>`**
 
-Specifies the [target framework](../../standard/frameworks.md) to install the tool for. By default, the .NET Core SDK tries to choose the most appropriate target framework.
+  Specifies the [target framework](../../standard/frameworks.md) to install the tool for. By default, the .NET Core SDK tries to choose the most appropriate target framework.
 
-`-g|--global`
+- **`-g|--global`**
 
-Specifies that the installation is user wide. Can't be combined with the `--tool-path` option. Omitting both `--global` and `--tool-path` specifies a local tool installation. 
+  Specifies that the installation is user wide. Can't be combined with the `--tool-path` option. Omitting both `--global` and `--tool-path` specifies a local tool installation. 
 
-`-h|--help`
+- ** `-h|--help`**
 
 Prints out a short help for the command.
 
-`--tool-path <PATH>`
+- **`tool-path <PATH>`**
 
-Specifies the location where to install the Global Tool. PATH can be absolute or relative. If PATH doesn't exist, the command tries to create it. Omitting both `--global` and `--tool-path` specifies a local tool installation. 
+  Specifies the location where to install the Global Tool. PATH can be absolute or relative. If PATH doesn't exist, the command tries to create it. Omitting both `--global` and `--tool-path` specifies a local tool installation. 
 
-`-v|--verbosity <LEVEL>`
+- **`-v|--verbosity <LEVEL>`**
 
-Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
 
-`--version <VERSION_NUMBER>`
+- **`--version <VERSION_NUMBER>`**
 
-The version of the tool to install. By default, the latest stable package version is installed. Use this option to install preview or older versions of the tool.
+  The version of the tool to install. By default, the latest stable package version is installed. Use this option to install preview or older versions of the tool.
 
 ## Examples
 
-Installs [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a global tool in the default location:
+- **`dotnet tool install -g dotnetsay`**
 
-`dotnet tool install -g dotnetsay`
+  Installs [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a global tool in the default location.
 
-Installs [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a global tool in a specific Windows directory:
+- **`dotnet tool install dotnetsay --tool-path c:\global-tools`**
 
-`dotnet tool install dotnetsay --tool-path c:\global-tools`
+  Installs [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a global tool in a specific Windows directory.
 
-Installs [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a global tool in a specific Linux/macOS directory:
+- **`dotnet tool install dotnetsay --tool-path ~/bin`**
 
-`dotnet tool install dotnetsay --tool-path ~/bin`
+  Installs [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a global tool in a specific Linux/macOS directory.
 
-Installs version 2.0.0 of [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a global tool :
+- **`dotnet tool install -g dotnetsay --version 2.0.0`**
 
-`dotnet tool install -g dotnetsay --version 2.0.0`
+  Installs version 2.0.0 of [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a global tool.
 
-Installs [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a local tool for the current directory:
+- **`dotnet tool install dotnetsay`**
 
-`dotnet tool install dotnetsay`
+  Installs [dotnetsay](https://www.nuget.org/packages/dotnetsay/) as a local tool for the current directory.
 
 ## See also
 

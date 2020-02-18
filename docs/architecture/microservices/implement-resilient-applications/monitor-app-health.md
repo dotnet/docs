@@ -1,7 +1,7 @@
 ---
 title: Health monitoring
 description: Explore one way of implementing health monitoring.
-ms.date: 01/07/2019
+ms.date: 01/30/2020
 ---
 # Health monitoring
 
@@ -13,7 +13,7 @@ In the typical model, services send reports about their status, and that informa
 
 ## Implement health checks in ASP.NET Core services
 
-When developing an ASP.NET Core microservice or web application, you can use the built-in health checks feature that was released in ASP .NET Core 2.2. Like many ASP.NET Core features, health checks come with a set of services and a middleware.
+When developing an ASP.NET Core microservice or web application, you can use the built-in health checks feature that was released in ASP .NET Core 3.1 ([Microsoft.Extensions.Diagnostics.HealthChecks](https://www.nuget.org/packages/Microsoft.Extensions.Diagnostics.HealthChecks)). Like many ASP.NET Core features, health checks come with a set of services and a middleware.
 
 Health check services and middleware are easy to use and provide capabilities that let you validate if any external resource needed for your application (like a SQL Server database or a remote API) is working properly. When you use this feature, you can also decide what it means that the resource is healthy, as we explain later.
 
@@ -21,20 +21,23 @@ To use this feature effectively, you need to first configure services in your mi
 
 ### Use the HealthChecks feature in your back-end ASP.NET microservices
 
-In this section, you will learn how the HealthChecks feature is used in a sample ASP.NET Core 2.2 Web API application. Implementation of this feature in a large scale microservices like the eShopOnContainers is explained in the later section. To begin, you need to define what constitutes a healthy status for each microservice. In the sample application, the microservices are healthy if the microservice API is accessible via HTTP and its related SQL Server database is also available.
+In this section, you'll learn how the HealthChecks feature, as implemented in [AspNetCore.Diagnostics.HealthChecks](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks), is used in a sample ASP.NET Core 3.1 Web API application. Implementation of this feature in a large-scale microservices like the eShopOnContainers is explained in the later section. To begin, you need to define what constitutes a healthy status for each microservice. In the sample application, the microservices are healthy if the microservice API is accessible via HTTP and its related SQL Server database is also available.
 
-In .NET Core 2.2, with the built-in APIs, you can configure the services, add a Health Check for the microservice and its dependent SQL Server database in this way:
+In .NET Core 3.1, with the built-in APIs, you can configure the services, add a Health Check for the microservice and its dependent SQL Server database in this way:
 
 ```csharp
-// Startup.cs from .NET Core 2.2 Web Api sample
+// Startup.cs from .NET Core 3.1 Web API sample
 //
 public void ConfigureServices(IServiceCollection services)
 {
     //...
     // Registers required services for health checks
     services.AddHealthChecks()
-    // Add a health check for a SQL database
-    .AddCheck("MyDatabase", new SqlConnectionHealthCheck(Configuration["ConnectionStrings:DefaultConnection"]));
+        // Add a health check for a SQL Server database
+        .AddSqlServer(
+            configuration["ConnectionString"],
+            name: "OrderingDB-check",
+            tags: new string[] { "orderingdb" });
 }
 ```
 
@@ -92,17 +95,26 @@ public class SqlConnectionHealthCheck : IHealthCheck
 }
 ```
 
-Note that in the previous code, `Select 1` is the query used to check the Health of the database. To monitor the availability of your microservices, orchestrators like Kubernetes and Service Fabric periodically perform health checks by sending requests to test the microservices. It's important to keep your database queries efficient so that these operations are quick and don’t result in a higher utilization of resources.
+Note that in the previous code, `Select 1` is the query used to check the Health of the database. To monitor the availability of your microservices, orchestrators like Kubernetes periodically perform health checks by sending requests to test the microservices. It's important to keep your database queries efficient so that these operations are quick and don’t result in a higher utilization of resources.
 
-Finally, create a middleware that responds to the url path “/hc”:
+Finally, add a middleware that responds to the url path `/hc`:
 
 ```csharp
-// Startup.cs from .NET Core 2.2 Web Api sample
+// Startup.cs from .NET Core 3.1 Web Api sample
 //
 public void Configure(IApplicationBuilder app, IHostingEnvironment env)
 {
     //…
-    app.UseHealthChecks("/hc");
+    app.UseEndpoints(endpoints =>
+    {
+        //...
+        endpoints.MapHealthChecks("/hc", new HealthCheckOptions()
+        {
+            Predicate = _ => true,
+            ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+        });
+        //...
+    });
     //…
 }
 ```
@@ -113,7 +125,7 @@ When the endpoint `<yourmicroservice>/hc` is invoked, it runs all the health che
 
 Microservices in eShopOnContainers rely on multiple services to perform its task. For example, the `Catalog.API` microservice from eShopOnContainers depends on many services, such as Azure Blob Storage, SQL Server, and RabbitMQ. Therefore, it has several health checks added using the `AddCheck()` method. For every dependent service, a custom `IHealthCheck` implementation that defines its respective health status needs to be added.
 
-The open-source project [AspNetCore.Diagnostics.HealthChecks](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks) solves this problem by providing custom health check implementations for each of these enterprise services that are built on top of .NET Core 2.2. Each health check is available as an individual NuGet package that can be easily added to the project. eShopOnContainers use them extensively in all its microservices.
+The open-source project [AspNetCore.Diagnostics.HealthChecks](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks) solves this problem by providing custom health check implementations for each of these enterprise services that are built on top of .NET Core 3.1. Each health check is available as an individual NuGet package that can be easily added to the project. eShopOnContainers uses them extensively in all its microservices.
 
 For instance, in the `Catalog.API` microservice, the following NuGet packages were added:
 
@@ -169,7 +181,7 @@ public static IServiceCollection AddCustomHealthCheck(this IServiceCollection se
 }
 ```
 
-Finally, we add the HealthCheck middleware to listen to “/hc” endpoint:
+Finally, add the HealthCheck middleware to listen to “/hc” endpoint:
 
 ```csharp
 // HealthCheck middleware
@@ -273,7 +285,7 @@ Finally, if you're storing all the event streams, you can use Microsoft Power BI
 - **Introduction to Service Fabric health monitoring** \
   [https://docs.microsoft.com/azure/service-fabric/service-fabric-health-introduction](/azure/service-fabric/service-fabric-health-introduction)
 
-- **Azure Monitor**  
+- **Azure Monitor** \
   <https://azure.microsoft.com/services/monitor/>
 
 >[!div class="step-by-step"]

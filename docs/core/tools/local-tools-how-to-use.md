@@ -58,7 +58,7 @@ When you use a CLI command that refers to a local tool, the SDK searches for a m
 Install the tool from the package that you created in the first tutorial:
 
 ```dotnetcli
-dotnet tool install --add-source ./botsay/nupkg botsay
+dotnet tool install --add-source ./botsay/nupkg botsay-<name>
 ```
 
 This command adds the tool to the manifest file that you created in the preceding step. The command output shows which manifest file the newly installed tool is in:
@@ -66,7 +66,7 @@ This command adds the tool to the manifest file that you created in the precedin
  ```console
  You can invoke the tool from this directory using the following command:
  'dotnet tool run botsay' or 'dotnet botsay'
- Tool 'botsay' (version '1.0.0') was successfully installed.
+ Tool 'botsay-<name>' (version '1.0.0') was successfully installed.
  Entry is added to the manifest file /home/name/repository/.config/dotnet-tools.json
  ```
 
@@ -133,7 +133,7 @@ dotnet tool restore
 The command produces output like the following example:
 
 ```console
-Tool 'botsay' (version '1.0.0') was restored. Available commands: botsay
+Tool 'botsay-<name>' (version '1.0.0') was restored. Available commands: botsay
 Tool 'dotnetsay' (version '2.1.3') was restored. Available commands: dotnetsay
 Restore was successful.
 ```
@@ -149,7 +149,7 @@ The output is a list of packages and commands, similar to the following example:
 ```console
 Package Id      Version      Commands       Manifest
 -------------------------------------------------------------------------------------------
-botsay          1.0.0        botsay         /home/name/repository/.config/dotnet-tools.json
+botsay-<name>   1.0.0        botsay         /home/name/repository/.config/dotnet-tools.json
 dotnetsay       2.1.3        dotnetsay      /home/name/repository/.config/dotnet-tools.json
 ```
 
@@ -182,7 +182,7 @@ The update command finds the first manifest file that contains the package ID an
 Remove the installed tools by running the [dotnet tool uninstall](dotnet-tool-uninstall.md) command:
 
 ```dotnetcli
-dotnet tool uninstall botsay
+dotnet tool uninstall botsay-<name>
 dotnet tool uninstall dotnetsay
 ```
 

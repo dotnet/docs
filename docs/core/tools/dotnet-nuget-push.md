@@ -2,15 +2,11 @@
 title: dotnet nuget push command
 description: The dotnet nuget push command pushes a package to the server and publishes it.
 author: karann-msft
-ms.date: 12/04/2019
+ms.date: 02/14/2020
 ---
 # dotnet nuget push
 
-**This article applies to:** ✔️ .NET Core 1.x SDK and later versions
-
-<!-- todo: uncomment when all CLI commands are reviewed
-[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
--->
+**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
 
 ## Name
 
@@ -30,69 +26,69 @@ The `dotnet nuget push` command pushes a package to the server and publishes it.
 
 ## Arguments
 
-* **`ROOT`**
+- **`ROOT`**
 
   Specifies the file path to the package to be pushed.
 
 ## Options
 
-* **`-d|--disable-buffering`**
+- **`-d|--disable-buffering`**
 
   Disables buffering when pushing to an HTTP(S) server to reduce memory usage.
 
-* **`--force-english-output`**
+- **`--force-english-output`**
 
   Forces the application to run using an invariant, English-based culture.
 
-* **`-h|--help`**
+- **`-h|--help`**
 
   Prints out a short help for the command.
 
-* **`--interactive`**
+- **`--interactive`**
 
   Allows the command to block and requires manual action for operations like authentication. Option available since .NET Core 2.2 SDK.
 
-* **`-k|--api-key <API_KEY>`**
+- **`-k|--api-key <API_KEY>`**
 
   The API key for the server.
 
-* **`-n|--no-symbols`**
+- **`-n|--no-symbols`**
 
   Doesn't push symbols (even if present).
 
-* **`--no-service-endpoint`**
+- **`--no-service-endpoint`**
 
   Doesn't append "api/v2/package" to the source URL. Option available since .NET Core 2.1 SDK.
 
-* **`-s|--source <SOURCE>`**
+- **`-s|--source <SOURCE>`**
 
   Specifies the server URL. This option is required unless `DefaultPushSource` config value is set in the NuGet config file.
 
-* **`--skip-duplicate`**
+- **`--skip-duplicate`**
 
   When pushing multiple packages to an HTTP(S) server, treats any 409 Conflict response as a warning so that the push can continue. Available since .NET Core 3.1 SDK.
 
-* **`-sk|--symbol-api-key <API_KEY>`**
+- **`-sk|--symbol-api-key <API_KEY>`**
 
   The API key for the symbol server.
 
-* **`-ss|--symbol-source <SOURCE>`**
+- **`-ss|--symbol-source <SOURCE>`**
 
   Specifies the symbol server URL.
 
-* **`-t|--timeout <TIMEOUT>`**
+- **`-t|--timeout <TIMEOUT>`**
 
   Specifies the timeout for pushing to a server in seconds. Defaults to 300 seconds (5 minutes). Specifying 0 (zero seconds) applies the default value.
 
 ## Examples
 
-* Pushes *foo.nupkg* to the default push source, specifying an API key:
+- Pushes *foo.nupkg* to the default push source, specifying an API key:
 
   ```dotnetcli
   dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a
   ```
 
-* Push *foo.nupkg* to the official NuGet server, specifying an API key:
+- Push *foo.nupkg* to the official NuGet server, specifying an API key:
 
   ```dotnetcli
   dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -s https://api.nuget.org/v3/index.json
@@ -104,25 +100,25 @@ The `dotnet nuget push` command pushes a package to the server and publishes it.
   dotnet nuget push foo.nupkg -k 4003d786-cc37-4004-bfdf-c4f3e8ef9b3a -s https://customsource/
   ```
 
-* Pushes *foo.nupkg* to the default push source:
+- Pushes *foo.nupkg* to the default push source:
 
   ```dotnetcli
   dotnet nuget push foo.nupkg
   ```
 
-* Pushes *foo.symbols.nupkg* to the default symbols source:
+- Pushes *foo.symbols.nupkg* to the default symbols source:
 
   ```dotnetcli
   dotnet nuget push foo.symbols.nupkg
   ```
 
-* Pushes *foo.nupkg* to the default push source, specifying a 360-second timeout:
+- Pushes *foo.nupkg* to the default push source, specifying a 360-second timeout:
 
   ```dotnetcli
   dotnet nuget push foo.nupkg --timeout 360
   ```
 
-* Pushes all *.nupkg* files in the current directory to the default push source:
+- Pushes all *.nupkg* files in the current directory to the default push source:
 
   ```dotnetcli
   dotnet nuget push *.nupkg
@@ -133,7 +129,7 @@ The `dotnet nuget push` command pushes a package to the server and publishes it.
   > To fix this, upgrade your SDK version or run the following command instead:
   > `dotnet nuget push **/*.nupkg`
 
-* Pushes all *.nupkg* files even if a 409 Conflict response is returned by an HTTP(S) server:
+- Pushes all *.nupkg* files even if a 409 Conflict response is returned by an HTTP(S) server:
 
   ```dotnetcli
   dotnet nuget push *.nupkg --skip-duplicate

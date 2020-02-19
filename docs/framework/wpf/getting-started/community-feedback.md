@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "forums [WPF]"
   - "bug descriptions [WPF]"
 ms.assetid: 468b060a-d54b-4900-a74a-9faccb554045
-author: mairaw
-ms.author: mairaw
 ---
 # WPF community feedback
 

@@ -18,7 +18,7 @@ To provide the ability to print from you application, you can simply create and 
  [!code-csharp[printdialog#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PrintDialog/CSharp/Window1.xaml.cs#1)]
  [!code-vb[printdialog#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PrintDialog/visualbasic/window1.xaml.vb#1)]  
   
- Once the dialog is open, users will be able to select from the printers installed on their computer. They will also have the option of selecting the [Microsoft XPS Document Writer](https://go.microsoft.com/fwlink/?LinkId=147319) to create an XML Paper Specification (XPS) file instead of printing.  
+ Once the dialog is open, users will be able to select from the printers installed on their computer. They will also have the option of selecting the [Microsoft XPS Document Writer](/windows/win32/printdocs/microsoft-xps-document-writer) to create an XML Paper Specification (XPS) file instead of printing.  
   
 > [!NOTE]
 > The <xref:System.Windows.Controls.PrintDialog?displayProperty=nameWithType> control of WPF, which is discussed in this topic, should not be confused with the <xref:System.Windows.Forms.PrintDialog?displayProperty=nameWithType> component of Windows Forms.  
@@ -30,4 +30,4 @@ To provide the ability to print from you application, you can simply create and 
 - <xref:System.Windows.Controls.PrintDialog>
 - [Documents in WPF](documents-in-wpf.md)
 - [Printing Overview](printing-overview.md)
-- [Microsoft XPS Document Writer](https://go.microsoft.com/fwlink/?LinkId=147319)
+- [Microsoft XPS Document Writer](/windows/win32/printdocs/microsoft-xps-document-writer)

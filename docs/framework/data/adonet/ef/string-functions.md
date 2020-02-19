@@ -34,11 +34,7 @@ The .NET Framework Data Provider for SQL Server (SqlClient) provides `String` fu
 |`UNICODE(expression)`|Returns the integer value, as defined by the Unicode standard, for the first character of the input expression.<br /><br /> **Arguments**<br /><br /> `expression`: A Unicode `String`.<br /><br /> **Return Value**<br /><br /> An `Int32`.<br /><br /> **Example**<br /><br /> `SqlServer.UNICODE('a')`|  
 |`UPPER(expression)`|Returns a `String` expression after converting lowercase character data to uppercase.<br /><br /> **Arguments**<br /><br /> `expression`: An expression of an ASCII or a Unicode String type.<br /><br /> **Return Value**<br /><br /> An ASCII or a Unicode `String` type.<br /><br /> **Example**<br /><br /> `SqlServer.UPPER('AbB')`|  
   
- For more information about the `String` functions that SqlClient supports, see the documentation for the SQL Server version that you specified in the SqlClient provider manifest:  
-  
-|SQL Server 2000|SQL Server 2005|SQL Server 2008|  
-|---------------------|---------------------|---------------------|  
-|[String Functions (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=115915)|[String Functions (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=115916)|[String Functions (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=115914)|  
+ For more information about the `String` functions that SqlClient supports, see [String Functions (Transact-SQL)](/sql/t-sql/functions/string-functions-transact-sql). 
   
 ## See also
 

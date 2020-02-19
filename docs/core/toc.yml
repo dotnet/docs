@@ -49,8 +49,9 @@
   - name: Install localized IntelliSense
     href: install/localized-intellisense.md
 - name: Get started
-  href: get-started.md
   items:
+  - name: Get started
+    href: get-started.md
   - name: Get started with C# and Visual Studio Code
     href: tutorials/with-visual-studio-code.md
   - name: Get started with .NET Core on macOS using Visual Studio Code
@@ -83,16 +84,9 @@
   displayName: app compatibility
   href: compatibility/
 - name: Tutorials
-  href: tutorials/index.md
   items:
-  - name: Templates for the CLI
-    items:
-    - name: 1 - Create an item template
-      href: tutorials/cli-templates-create-item-template.md
-    - name: 2 - Create a project template
-      href: tutorials/cli-templates-create-project-template.md
-    - name: 3 - Create a template pack
-      href: tutorials/cli-templates-create-template-pack.md
+  - name: Overview
+    href: tutorials/index.md
   - name: Get started with .NET Core using Visual Studio for Mac
     href: tutorials/using-on-mac-vs.md
   - name: Build a complete .NET Core solution on macOS
@@ -109,6 +103,26 @@
     href: tutorials/aspnet-core.md
   - name: Host .NET Core from native code
     href: tutorials/netcore-hosting.md
+  - name: Create templates for the CLI
+    items:
+    - name: 1 - Create an item template
+      href: tutorials/cli-templates-create-item-template.md
+    - name: 2 - Create a project template
+      href: tutorials/cli-templates-create-project-template.md
+    - name: 3 - Create a template pack
+      href: tutorials/cli-templates-create-template-pack.md
+- name: Project SDKs
+  items:
+  - name: Overview
+    href: project-sdk/overview.md
+  - name: Reference
+    items:
+    - name: Microsoft.NET.Sdk
+      href: project-sdk/msbuild-props.md
+    - name: Microsoft.NET.Sdk.Web
+      href: /aspnet/core/razor-pages/web-sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
+    - name: Microsoft.NET.Sdk.Razor
+      href: /aspnet/core/razor-pages/sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
 - name: Run-time configuration
   items:
   - name: Settings
@@ -131,13 +145,6 @@
     href: native-interop/expose-components-to-com.md
 - name: Packages, metapackages, and frameworks
   href: packages.md
-- name: Changes in CLI overview
-  href: tools/cli-msbuild-architecture.md
-  items:
-  - name: Dependency management
-    href: tools/dependencies.md
-  - name: Additions to the csproj format
-    href: tools/csproj.md
 - name: Migration
   items:
   - name: .NET Core 2.0 to 2.1
@@ -146,11 +153,16 @@
     href: migration/index.md
   - name: Map between project.json and csproj
     href: tools/project-json-to-csproj.md
+  - name: Changes in CLI overview
+    href: tools/cli-msbuild-architecture.md
+  - name: Additions to the csproj format
+    href: tools/csproj.md
   - name: Migrate from DNX
     href: migration/from-dnx.md
 - name: Application deployment
-  href: deploying/index.md
   items:
+  - name: Overview
+    href: deploying/index.md
   - name: Publish apps with the CLI
     href: deploying/deploy-with-cli.md
   - name: Deploy apps with Visual Studio
@@ -192,6 +204,8 @@
 - name: Unit testing
   href: testing/index.md
   items:
+  - name: Overview
+    href: testing/index.md
   - name: Unit testing best practices
     href: testing/unit-testing-best-practices.md
   - name: C# unit testing with xUnit
@@ -221,8 +235,9 @@
 - name: Continuous integration
   href: tools/using-ci-with-cli.md
 - name: Versioning
-  href: versions/index.md
   items:
+  - name: Overview
+    href: versions/index.md
   - name: .NET Core version selection
     href: versions/selection.md
   - name: Remove outdated runtimes and SDKs
@@ -330,8 +345,9 @@
       - name: dotnet remove package
         href: tools/dotnet-remove-package.md
 - name: .NET Core additional tools
-  href: additional-tools/index.md
   items:
+  - name: Overview
+    href: additional-tools/index.md
   - name: .NET Core Uninstall Tool
     href: additional-tools/uninstall-tool.md
   - name: WCF Web Service Reference Provider
@@ -364,13 +380,15 @@
     href: porting/wpf.md
   - name: Port C++/CLI projects
     href: porting/cpp-cli.md
-- name: Dependency loading
+- name: Dependency management and loading
   items:
-  - name: Overview
+  - name: Dependency management
+    href: tools/dependencies.md
+  - name: Dependency loading
     href: dependency-loading/overview.md
   - name: Understand AssemblyLoadContext
     href: dependency-loading/understanding-assemblyloadcontext.md
-  - name: Loading details
+  - name: Dependency loading details
     items:
     - name: Default dependency probing
       href: dependency-loading/default-probing.md
@@ -387,6 +405,4 @@
     - name: How to use and debug assembly unloadability in .NET Core
       href: ../standard/assembly/unloadability-howto.md
 - name: .NET Core distribution packaging
-  items:
-  - name: Overview
-    href: distribution-packaging.md
+  href: distribution-packaging.md

@@ -1332,7 +1332,7 @@
     - name: Overview
       displayName: keywords
       href: language-reference/keywords/index.md
-    - name: Built-in types
+    - name: Types
       items:
       - name: Value types
         items:
@@ -1373,17 +1373,15 @@
         - name: interface
           href: language-reference/keywords/interface.md
       - name: void
-        href: language-reference/keywords/void.md
+        href: language-reference/builtin-types/void.md
       - name: var
         href: language-reference/keywords/var.md
+      - name: Built-in types
+        href: language-reference/builtin-types/built-in-types.md
       - name: Unmanaged types
         href: language-reference/builtin-types/unmanaged-types.md
       - name: Default values
         href: language-reference/builtin-types/default-values.md
-      - name: Reference tables for types
-        items:
-        - name: Built-in types table
-          href: language-reference/keywords/built-in-types-table.md
     - name: Modifiers
       items:
       - name: Access Modifiers

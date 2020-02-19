@@ -1,5 +1,5 @@
 ---
-title: Visual Basic breaking changes - .NET Core
+title: Visual Basic breaking changes
 description: Lists the breaking changes in Visual Basic used with .NET Core.
 ms.date: "09/20/2019"
 ---

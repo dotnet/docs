@@ -1,11 +1,11 @@
 ---
 title: dotnet new command
 description: The dotnet new command creates new .NET Core projects based on the specified template.
-ms.date: 05/06/2019
+ms.date: 02/13/2020
 ---
 # dotnet new
 
-[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
+**This article applies to:** ✔️ .NET Core 2.0 SDK and later versions
 
 ## Name
 
@@ -13,759 +13,711 @@ ms.date: 05/06/2019
 
 ## Synopsis
 
-<!-- markdownlint-disable MD025 -->
-
-# [.NET Core 2.2](#tab/netcore22)
-
 ```dotnetcli
-dotnet new <TEMPLATE> [--dry-run] [--force] [-i|--install] [-lang|--language] [-n|--name] [--nuget-source] [-o|--output] [-u|--uninstall] [Template options]
+dotnet new <TEMPLATE> [--dry-run] [--force] [-i|--install] [-lang|--language] [-n|--name] 
+    [--nuget-source] [-o|--output] [-u|--uninstall] [--update-apply] [--update-check] [Template options]
 dotnet new <TEMPLATE> [-l|--list] [--type]
 dotnet new [-h|--help]
 ```
-
-# [.NET Core 2.1](#tab/netcore21)
-
-```dotnetcli
-dotnet new <TEMPLATE> [--force] [-i|--install] [-lang|--language] [-n|--name] [--nuget-source] [-o|--output] [-u|--uninstall] [Template options]
-dotnet new <TEMPLATE> [-l|--list] [--type]
-dotnet new [-h|--help]
-```
-
-# [.NET Core 2.0](#tab/netcore20)
-
-```dotnetcli
-dotnet new <TEMPLATE> [--force] [-i|--install] [-lang|--language] [-n|--name] [-o|--output] [-u|--uninstall] [Template options]
-dotnet new <TEMPLATE> [-l|--list] [--type]
-dotnet new [-h|--help]
-```
-
-# [.NET Core 1.x](#tab/netcore1x)
-
-```dotnetcli
-dotnet new <TEMPLATE> [-lang|--language] [-n|--name] [-o|--output] [-all|--show-all] [-h|--help] [Template options]
-dotnet new <TEMPLATE> [-l|--list]
-dotnet new [-all|--show-all]
-dotnet new [-h|--help]
-```
-
----
 
 ## Description
 
-The `dotnet new` command provides a convenient way to initialize a valid .NET Core project.
+The `dotnet new` command creates a .NET Core project or other artifacts based on a template.
 
 The command calls the [template engine](https://github.com/dotnet/templating) to create the artifacts on disk based on the specified template and options.
 
 ## Arguments
 
-`TEMPLATE`
+- **`TEMPLATE`**
 
-The template to instantiate when the command is invoked. Each template might have specific options you can pass. For more information, see [Template options](#template-options).
+  The template to instantiate when the command is invoked. Each template might have specific options you can pass. For more information, see [Template options](#template-options).
 
-If the `TEMPLATE` value isn't an exact match on text in the **Templates** or **Short Name** column, a substring match is performed on those two columns.
+  You can run `dotnet new --list` to see a list of all installed templates. If the `TEMPLATE` value isn't an exact match on text in the **Templates** or **Short Name** column from the returned table, a substring match is performed on those two columns.
 
-# [.NET Core 2.2](#tab/netcore22)
+  Starting with .NET Core 3.0 SDK, the CLI searches for templates in NuGet.org when you invoke the `dotnet new` command in the following conditions:
 
-The command contains a default list of templates. Use `dotnet new -l` to obtain a list of the available templates. The following table shows the templates that come pre-installed with the .NET Core SDK 2.2.100. The default language for the template is shown inside the brackets.
+  - If the CLI can’t find a template match when invoking `dotnet new`, not even partial.
+  - If there’s a newer version of the template available. In this case, the project or artifact is created but the CLI warns you about an updated version of the template.
 
-| Templates                                    | Short Name        | Language     | Tags                                  |
-|----------------------------------------------|-------------------|--------------|---------------------------------------|
-| Console Application                          | `console`         | [C#], F#, VB | Common/Console                        |
-| Class library                                | `classlib`        | [C#], F#, VB | Common/Library                        |
-| Unit Test Project                            | `mstest`          | [C#], F#, VB | Test/MSTest                           |
-| NUnit 3 Test Project                         | `nunit`           | [C#], F#, VB | Test/NUnit                            |
-| NUnit 3 Test Item                            | `nunit-test`      | [C#], F#, VB | Test/NUnit                            |
-| xUnit Test Project                           | `xunit`           | [C#], F#, VB | Test/xUnit                            |
-| Razor Page                                   | `page`            | [C#]         | Web/ASP.NET                           |
-| MVC ViewImports                              | `viewimports`     | [C#]         | Web/ASP.NET                           |
-| MVC ViewStart                                | `viewstart`       | [C#]         | Web/ASP.NET                           |
-| ASP.NET Core Empty                           | `web`             | [C#], F#     | Web/Empty                             |
-| ASP.NET Core Web App (Model-View-Controller) | `mvc`             | [C#], F#     | Web/MVC                               |
-| ASP.NET Core Web App                         | `webapp`, `razor` | [C#]         | Web/MVC/Razor Pages                   |
-| ASP.NET Core with Angular                    | `angular`         | [C#]         | Web/MVC/SPA                           |
-| ASP.NET Core with React.js                   | `react`           | [C#]         | Web/MVC/SPA                           |
-| ASP.NET Core with React.js and Redux         | `reactredux`      | [C#]         | Web/MVC/SPA                           |
-| Razor Class Library                          | `razorclasslib`   | [C#]         | Web/Razor/Library/Razor Class Library |
-| ASP.NET Core Web API                         | `webapi`          | [C#], F#     | Web/WebAPI                            |
-| global.json file                             | `globaljson`      |              | Config                                |
-| NuGet Config                                 | `nugetconfig`     |              | Config                                |
-| Web Config                                   | `webconfig`       |              | Config                                |
-| Solution File                                | `sln`             |              | Solution                              |
+  The command contains a default list of templates. Use `dotnet new -l` to obtain a list of the available templates. The following table shows the templates that come pre-installed with the .NET Core SDK. The default language for the template is shown inside the brackets. Click on the short name link to see the specific template options.
 
-# [.NET Core 2.1](#tab/netcore21)
-
-The command contains a default list of templates. Use `dotnet new -l` to obtain a list of the available templates. The following table shows the templates that come pre-installed with the .NET Core SDK 2.1.300. The default language for the template is shown inside the brackets.
-
-| Templates                                    | Short Name      | Language     | Tags                                  |
-|----------------------------------------------|-----------------|--------------|---------------------------------------|
-| Console Application                          | `console`       | [C#], F#, VB | Common/Console                        |
-| Class library                                | `classlib`      | [C#], F#, VB | Common/Library                        |
-| Unit Test Project                            | `mstest`        | [C#], F#, VB | Test/MSTest                           |
-| xUnit Test Project                           | `xunit`         | [C#], F#, VB | Test/xUnit                            |
-| Razor Page                                   | `page`          | [C#]         | Web/ASP.NET                           |
-| MVC ViewImports                              | `viewimports`   | [C#]         | Web/ASP.NET                           |
-| MVC ViewStart                                | `viewstart`     | [C#]         | Web/ASP.NET                           |
-| ASP.NET Core Empty                           | `web`           | [C#], F#     | Web/Empty                             |
-| ASP.NET Core Web App (Model-View-Controller) | `mvc`           | [C#], F#     | Web/MVC                               |
-| ASP.NET Core Web App                         | `razor`         | [C#]         | Web/MVC/Razor Pages                   |
-| ASP.NET Core with Angular                    | `angular`       | [C#]         | Web/MVC/SPA                           |
-| ASP.NET Core with React.js                   | `react`         | [C#]         | Web/MVC/SPA                           |
-| ASP.NET Core with React.js and Redux         | `reactredux`    | [C#]         | Web/MVC/SPA                           | 
-| Razor Class Library                          | `razorclasslib` | [C#]         | Web/Razor/Library/Razor Class Library |
-| ASP.NET Core Web API                         | `webapi`        | [C#], F#     | Web/WebAPI                            |
-| global.json file                             | `globaljson`    |              | Config                                |
-| NuGet Config                                 | `nugetconfig`   |              | Config                                |
-| Web Config                                   | `webconfig`     |              | Config                                |
-| Solution File                                | `sln`           |              | Solution                              |
-
-# [.NET Core 2.0](#tab/netcore20)
-
-The command contains a default list of templates. Use `dotnet new -l` to obtain a list of the available templates. The following table shows the templates that come pre-installed with the .NET Core SDK 2.0.0. The default language for the template is shown inside the brackets.
-
-| Templates                                    | Short Name    | Language     | Tags                |
-|----------------------------------------------|---------------|--------------|---------------------|
-| Console Application                          | `console`     | [C#], F#, VB | Common/Console      |
-| Class library                                | `classlib`    | [C#], F#, VB | Common/Library      |
-| Unit Test Project                            | `mstest`      | [C#], F#, VB | Test/MSTest         |
-| xUnit Test Project                           | `xunit`       | [C#], F#, VB | Test/xUnit          |
-| ASP.NET Core Empty                           | `web`         | [C#], F#     | Web/Empty           |
-| ASP.NET Core Web App (Model-View-Controller) | `mvc`         | [C#], F#     | Web/MVC             |
-| ASP.NET Core Web App                         | `razor`       | [C#]         | Web/MVC/Razor Pages |
-| ASP.NET Core with Angular                    | `angular`     | [C#]         | Web/MVC/SPA         |
-| ASP.NET Core with React.js                   | `react`       | [C#]         | Web/MVC/SPA         |
-| ASP.NET Core with React.js and Redux         | `reactredux`  | [C#]         | Web/MVC/SPA         |
-| ASP.NET Core Web API                         | `webapi`      | [C#], F#     | Web/WebAPI          |
-| global.json file                             | `globaljson`  |              | Config              |
-| Nuget Config                                 | `nugetconfig` |              | Config              |
-| Web Config                                   | `webconfig`   |              | Config              |
-| Solution File                                | `sln`         |              | Solution            |
-| Razor Page                                   | `page`        |              | Web/ASP.NET         |
-| MVC ViewImports                              | `viewimports` |              | Web/ASP.NET         |
-| MVC ViewStart                                | `viewstart`   |              | Web/ASP.NET         |
-
-# [.NET Core 1.x](#tab/netcore1x)
-
-The command contains a default list of templates. Use `dotnet new -all` to obtain a list of the available templates. The following table shows the templates that come pre-installed with the .NET Core SDK 1.0.1. The default language for the template is shown inside the brackets.
-
-| Templates            | Short Name    | Language | Tags           |
-|----------------------|---------------|----------|----------------|
-| Console Application  | `console`     | [C#], F# | Common/Console |
-| Class library        | `classlib`    | [C#], F# | Common/Library |
-| Unit Test Project    | `mstest`      | [C#], F# | Test/MSTest    |
-| xUnit Test Project   | `xunit`       | [C#], F# | Test/xUnit     |
-| ASP.NET Core Empty   | `web`         | [C#]     | Web/Empty      |
-| ASP.NET Core Web App | `mvc`         | [C#], F# | Web/MVC        |
-| ASP.NET Core Web API | `webapi`      | [C#]     | Web/WebAPI     |
-| Nuget Config         | `nugetconfig` |          | Config         |
-| Web Config           | `webconfig`   |          | Config         |
-| Solution File        | `sln`         |          | Solution       |
-
----
+| Templates                                    | Short name                      | Language     | Tags                                  | Introduced |
+|----------------------------------------------|---------------------------------|--------------|---------------------------------------|------------|
+| Console Application                          | [console](#console)             | [C#], F#, VB | Common/Console                        | 1.0        |
+| Class library                                | [classlib](#classlib)           | [C#], F#, VB | Common/Library                        | 1.0        |
+| WPF Application                              | [wpf](#wpf)                     | [C#]         | Common/WPF                            | 3.0        |
+| WPF Class library                            | [wpflib](#wpf)                  | [C#]         | Common/WPF                            | 3.0        |
+| WPF Custom Control Library                   | [wpfcustomcontrollib](#wpf)     | [C#]         | Common/WPF                            | 3.0        |
+| WPF User Control Library                     | [wpfusercontrollib](#wpf)       | [C#]         | Common/WPF                            | 3.0        |
+| Windows Forms (WinForms) Application         | [winforms](#winforms)           | [C#]         | Common/WinForms                       | 3.0        |
+| Windows Forms (WinForms) Class library       | [winformslib](#winforms)        | [C#]         | Common/WinForms                       | 3.0        |
+| Worker Service                               | [worker](#web-others)           | [C#]         | Common/Worker/Web                     | 3.0        |
+| Unit Test Project                            | [mstest](#test)                 | [C#], F#, VB | Test/MSTest                           | 1.0        |
+| NUnit 3 Test Project                         | [nunit](#nunit)                  | [C#], F#, VB | Test/NUnit                            | 2.1.400    |
+| NUnit 3 Test Item                            | `nunit-test`                    | [C#], F#, VB | Test/NUnit                            | 2.2        |
+| xUnit Test Project                           | [xunit](#test)                  | [C#], F#, VB | Test/xUnit                            | 1.0        |
+| Razor Component                              | `razorcomponent`                | [C#]         | Web/ASP.NET                           | 3.0        |
+| Razor Page                                   | [page](#page)                   | [C#]         | Web/ASP.NET                           | 2.0        |
+| MVC ViewImports                              | [viewimports](#namespace)       | [C#]         | Web/ASP.NET                           | 2.0        |
+| MVC ViewStart                                | `viewstart`                     | [C#]         | Web/ASP.NET                           | 2.0        |
+| Blazor Server App                            | [blazorserver](#blazorserver)   | [C#]         | Web/Blazor                            | 3.0        |
+| ASP.NET Core Empty                           | [web](#web)                     | [C#], F#     | Web/Empty                             | 1.0        |
+| ASP.NET Core Web App (Model-View-Controller) | [mvc](#web-options)             | [C#], F#     | Web/MVC                               | 1.0        |
+| ASP.NET Core Web App                         | [webapp, razor](#web-options)   | [C#]         | Web/MVC/Razor Pages                   | 2.2, 2.0   |
+| ASP.NET Core with Angular                    | [angular](#spa)                 | [C#]         | Web/MVC/SPA                           | 2.0        |
+| ASP.NET Core with React.js                   | [react](#spa)                   | [C#]         | Web/MVC/SPA                           | 2.0        |
+| ASP.NET Core with React.js and Redux         | [reactredux](#reactredux)       | [C#]         | Web/MVC/SPA                           | 2.0        |
+| Razor Class Library                          | [razorclasslib](#razorclasslib) | [C#]         | Web/Razor/Library/Razor Class Library | 2.1        |
+| ASP.NET Core Web API                         | [webapi](#webapi)               | [C#], F#     | Web/WebAPI                            | 1.0        |
+| ASP.NET Core gRPC Service                    | [grpc](#web-others)             | [C#]         | Web/gRPC                              | 3.0        |
+| Protocol Buffer File                         | [proto](#namespace)             |              | Web/gRPC                              | 3.0        |
+| dotnet gitignore file                        | `gitignore`                     |              | Config                                | 3.0        |
+| global.json file                             | [globaljson](#globaljson)       |              | Config                                | 2.0        |
+| NuGet Config                                 | `nugetconfig`                   |              | Config                                | 1.0        |
+| dotnet local tool manifest file              | `tool-manifest`                 |              | Config                                | 3.0        |
+| Web Config                                   | `webconfig`                     |              | Config                                | 1.0        |
+| Solution File                                | `sln`                           |              | Solution                              | 1.0        |
 
 ## Options
 
-# [.NET Core 2.2](#tab/netcore22)
+- **`--dry-run`**
 
-`--dry-run`
+  Displays a summary of what would happen if the given command were run. Available since .NET Core 2.2 SDK.
 
-Displays a summary of what would happen if the given command were run if it would result in a template creation.
+- **`--force`**
 
-`--force`
+  Forces content to be generated even if it would change existing files. This is required when the template chosen would override existing files in the output directory.
 
-Forces content to be generated even if it would change existing files. This is required when the output directory already contains a project.
+- **`-h|--help`**
 
-`-h|--help`
+  Prints out help for the command. It can be invoked for the `dotnet new` command itself or for any template. For example, `dotnet new mvc --help`.
 
-Prints out help for the command. It can be invoked for the `dotnet new` command itself or for any template, such as `dotnet new mvc --help`.
+- **`-i|--install <PATH|NUGET_ID>`**
 
-`-i|--install <PATH|NUGET_ID>`
+  Installs a template pack from the `PATH` or `NUGET_ID` provided. If you want to install a prerelease version of a template package, you need to specify the version in the format of `<package-name>::<package-version>`. By default, `dotnet new` passes \* for the version, which represents the latest stable package version. See an example in the [Examples](#examples) section.
+  
+  If a version of the template was already installed when you run this command, the template will be updated to the specified version, or to the latest stable version if no version was specified.
 
-Installs a source or template pack from the `PATH` or `NUGET_ID` provided. If you want to install a prerelease version of a template package, you need to specify the version in the format of `<package-name>::<package-version>`. By default, `dotnet new` passes \* for the version, which represents the last stable package version. See an example at the [Examples](#examples) section.
+  For information on creating custom templates, see [Custom templates for dotnet new](custom-templates.md).
 
-For information on creating custom templates, see [Custom templates for dotnet new](custom-templates.md).
+- **`-l|--list`**
 
-`-l|--list`
+  Lists templates containing the specified name. If no name is specified, lists all templates.
 
-Lists templates containing the specified name. If invoked for the `dotnet new` command, it lists the possible templates available for the given directory. For example if the directory already contains a project, it doesn't list all project templates.
+- **`-lang|--language {C#|F#|VB}`**
 
-`-lang|--language {C#|F#|VB}`
+  The language of the template to create. The language accepted varies by the template (see defaults in the [arguments](#arguments) section). Not valid for some templates.
 
-The language of the template to create. The language accepted varies by the template (see defaults in the [arguments](#arguments) section). Not valid for some templates.
+  > [!NOTE]
+  > Some shells interpret `#` as a special character. In those cases, enclose the language parameter value in quotes. For example, `dotnet new console -lang "F#"`.
 
-> [!NOTE]
-> Some shells interpret `#` as a special character. In those cases, you need to enclose the language parameter value, such as `dotnet new console -lang "F#"`.
+- **`-n|--name <OUTPUT_NAME>`**
 
-`-n|--name <OUTPUT_NAME>`
+  The name for the created output. If no name is specified, the name of the current directory is used.
 
-The name for the created output. If no name is specified, the name of the current directory is used.
+- **`--nuget-source`**
 
-`--nuget-source`
+  Specifies a NuGet source to use during install. Available since .NET Core 2.1 SDK.
 
-Specifies a NuGet source to use during install.
+- **`-o|--output <OUTPUT_DIRECTORY>`**
 
-`-o|--output <OUTPUT_DIRECTORY>`
+  Location to place the generated output. The default is the current directory.
 
-Location to place the generated output. The default is the current directory.
+- **`--type`**
 
-`--type`
+  Filters templates based on available types. Predefined values are "project", "item", or "other".
 
-Filters templates based on available types. Predefined values are "project", "item", or "other".
+- **`-u|--uninstall [PATH|NUGET_ID]`**
 
-`-u|--uninstall <PATH|NUGET_ID>`
+  Uninstalls a template pack at the `PATH` or `NUGET_ID` provided. When the `<PATH|NUGET_ID>` value isn't specified, all currently installed template packs and their associated templates are displayed. When specifying `NUGET_ID`, don't include the version number.
 
-Uninstalls a source or template pack at the `PATH` or `NUGET_ID` provided. When excluding the `<PATH|NUGET_ID>` value, all currently installed template packs and their associated templates are displayed.
+  If you don't specify a parameter to this option, the command lists the installed templates and details about them.
 
-> [!NOTE]
-> To uninstall a template using a `PATH`, you need to fully qualify the path. For example, *C:/Users/\<USER>/Documents/Templates/GarciaSoftware.ConsoleTemplate.CSharp* will work, but *./GarciaSoftware.ConsoleTemplate.CSharp* from the containing folder will not.
-> Additionally, do not include a final terminating directory slash on your template path.
+  > [!NOTE]
+  > To uninstall a template using a `PATH`, you need to fully qualify the path. For example, *C:/Users/\<USER>/Documents/Templates/GarciaSoftware.ConsoleTemplate.CSharp* will work, but *./GarciaSoftware.ConsoleTemplate.CSharp* from the containing folder will not.
+  > Don't include a final terminating directory slash on your template path.
 
-# [.NET Core 2.1](#tab/netcore21)
+- **`--update-apply`**
 
-`--force`
+  Checks if there are updates available for the template packs that are currently installed and installs them. Available since .NET Core 3.0 SDK.
 
-Forces content to be generated even if it would change existing files. This is required when the output directory already contains a project.
+- **`--update-check`**
 
-`-h|--help`
-
-Prints out help for the command. It can be invoked for the `dotnet new` command itself or for any template, such as `dotnet new mvc --help`.
-
-`-i|--install <PATH|NUGET_ID>`
-
-Installs a source or template pack from the `PATH` or `NUGET_ID` provided. If you want to install a prerelease version of a template package, you need to specify the version in the format of `<package-name>::<package-version>`. By default, `dotnet new` passes \* for the version, which represents the last stable package version. See an example at the [Examples](#examples) section.
-
-For information on creating custom templates, see [Custom templates for dotnet new](custom-templates.md).
-
-`-l|--list`
-
-Lists templates containing the specified name. If invoked for the `dotnet new` command, it lists the possible templates available for the given directory. For example if the directory already contains a project, it doesn't list all project templates.
-
-`-lang|--language {C#|F#|VB}`
-
-The language of the template to create. The language accepted varies by the template (see defaults in the [arguments](#arguments) section). Not valid for some templates.
-
-> [!NOTE]
-> Some shells interpret `#` as a special character. In those cases, you need to enclose the language parameter value, such as `dotnet new console -lang "F#"`.
-
-`-n|--name <OUTPUT_NAME>`
-
-The name for the created output. If no name is specified, the name of the current directory is used.
-
-`--nuget-source`
-
-Specifies a NuGet source to use during install.
-
-`-o|--output <OUTPUT_DIRECTORY>`
-
-Location to place the generated output. The default is the current directory.
-
-`--type`
-
-Filters templates based on available types. Predefined values are "project", "item" or "other".
-
-`-u|--uninstall <PATH|NUGET_ID>`
-
-Uninstalls a source or template pack at the `PATH` or `NUGET_ID` provided.
-
-> [!NOTE]
-> To uninstall a template using a `PATH`, you need to fully qualify the path. For example, *C:/Users/\<USER>/Documents/Templates/GarciaSoftware.ConsoleTemplate.CSharp* will work, but *./GarciaSoftware.ConsoleTemplate.CSharp* from the containing folder will not.
-> Additionally, do not include a final terminating directory slash on your template path.
-
-# [.NET Core 2.0](#tab/netcore20)
-
-`--force`
-
-Forces content to be generated even if it would change existing files. This is required when the output directory already contains a project.
-
-`-h|--help`
-
-Prints out help for the command. It can be invoked for the `dotnet new` command itself or for any template, such as `dotnet new mvc --help`.
-
-`-i|--install <PATH|NUGET_ID>`
-
-Installs a source or template pack from the `PATH` or `NUGET_ID` provided. If you want to install a prerelease version of a template package, you need to specify the version in the format of `<package-name>::<package-version>`. By default, `dotnet new` passes \* for the version, which represents the last stable package version. See an example at the [Examples](#examples) section.
-
-For information on creating custom templates, see [Custom templates for dotnet new](custom-templates.md).
-
-`-l|--list`
-
-Lists templates containing the specified name. If invoked for the `dotnet new` command, it lists the possible templates available for the given directory. For example if the directory already contains a project, it doesn't list all project templates.
-
-`-lang|--language {C#|F#|VB}`
-
-The language of the template to create. The language accepted varies by the template (see defaults in the [arguments](#arguments) section). Not valid for some templates.
-
-> [!NOTE]
-> Some shells interpret `#` as a special character. In those cases, you need to enclose the language parameter value, such as `dotnet new console -lang "F#"`.
-
-`-n|--name <OUTPUT_NAME>`
-
-The name for the created output. If no name is specified, the name of the current directory is used.
-
-`-o|--output <OUTPUT_DIRECTORY>`
-
-Location to place the generated output. The default is the current directory.
-
-`--type`
-
-Filters templates based on available types. Predefined values are "project", "item" or "other".
-
-`-u|--uninstall <PATH|NUGET_ID>`
-
-Uninstalls a source or template pack at the `PATH` or `NUGET_ID` provided.
-
-> [!NOTE]
-> To uninstall a template using a source `PATH`, you need to fully qualify the path. For example, *C:/Users/\<USER>/Documents/Templates/GarciaSoftware.ConsoleTemplate.CSharp* will work, but *./GarciaSoftware.ConsoleTemplate.CSharp* from the containing folder will not. Additionally, do not include a final terminating directory slash on your template path.
-> 
-> If you are unable to determine the `PATH` or `NUGET_ID` argument needed to uninstall a template, running `dotnet new --uninstall` without an argument will list all installed templates and the argument required to uninstall them.
-
-# [.NET Core 1.x](#tab/netcore1x)
-
-`-all|--show-all`
-
-Shows all templates for a specific type of project when running in the context of the `dotnet new` command alone. When running in the context of a specific template, such as `dotnet new web -all`, `-all` is interpreted as a force creation flag. This is required when the output directory already contains a project.
-
-`-h|--help`
-
-Prints out help for the command. It can be invoked for the `dotnet new` command itself or for any template, such as `dotnet new mvc --help`.
-
-`-l|--list`
-
-Lists templates containing the specified name. If invoked for the `dotnet new` command, it lists the possible templates available for the given directory. For example if the directory already contains a project, it doesn't list all project templates.
-
-`-lang|--language {C#|F#}`
-
-The language of the template to create. The language accepted varies by the template (see defaults in the [arguments](#arguments) section). Not valid for some templates.
-
-> [!NOTE]
-> Some shells interpret `#` as a special character. In those cases, you need to enclose the language parameter value, such as `dotnet new console -lang "F#"`.
-
-`-n|--name <OUTPUT_NAME>`
-
-The name for the created output. If no name is specified, the name of the current directory is used.
-
-`-o|--output <OUTPUT_DIRECTORY>`
-
-Location to place the generated output. The default is the current directory.
-
----
+  Checks if there are updates available for the template packs that are currently installed. Available since .NET Core 3.0 SDK.
 
 ## Template options
 
 Each project template may have additional options available. The core templates have the following additional options:
 
-# [.NET Core 2.2](#tab/netcore22)
+### console
 
-**console**
+- **`-f|--framework <FRAMEWORK>`**
 
-`--langVersion <VERSION_NUMBER>` - Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3. Not supported for F#.
+  Specifies the [framework](../../standard/frameworks.md) to target. Available since .NET Core 3.0 SDK.
 
-`--no-restore` - Doesn't execute an implicit restore during project creation.
+  The following table lists the default values according to the SDK version number you're using:
 
-**angular, react, reactredux**
+  | SDK version | Default value   |
+  |-------------|-----------------|
+  | 3.1         | `netcoreapp3.1` |
+  | 3.0         | `netcoreapp3.0` |
 
-`--exclude-launch-settings` - Exclude *launchSettings.json* from the generated template.
+- **`--langVersion <VERSION_NUMBER>`**
 
-`--no-restore` - Doesn't execute an implicit restore during project creation.
+  Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3. Not supported for F#. Available since .NET Core 2.2 SDK.
 
-`--no-https` - Project doesn't require HTTPS. This option only applies if `IndividualAuth` or `OrganizationalAuth` are not being used.
+  For a list of default C# versions, see [Defaults](../../csharp/language-reference/configure-language-version.md#defaults).
 
-**razorclasslib**
+- **`--no-restore`** 
 
-`--no-restore` - Doesn't execute an implicit restore during project creation.
+  If specified, doesn't execute an implicit restore during project creation. Available since .NET Core 2.2 SDK.
 
-**classlib**
+***
 
-`-f|--framework <FRAMEWORK>` - Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp2.2` to create a .NET Core Class Library or `netstandard2.0` to create a .NET Standard Class Library. The default value is `netstandard2.0`.
+### classlib
 
-`--langVersion <VERSION_NUMBER>` - Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3. Not supported for F#.
+- **`-f|--framework <FRAMEWORK>`**
 
-`--no-restore` - Doesn't execute an implicit restore during project creation.
+  Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp<version>` to create a .NET Core Class Library or `netstandard<version>` to create a .NET Standard Class Library. The default value is `netstandard2.0`.
 
-**mstest, xunit**
+- **`--langVersion <VERSION_NUMBER>`**
 
-`-p|--enable-pack` - Enables packaging for the project using [dotnet pack](dotnet-pack.md).
+  Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3. Not supported for F#. Available since .NET Core 2.2 SDK.
 
-`--no-restore` - Doesn't execute an implicit restore during project creation.
+  For a list of default C# versions, see [Defaults](../../csharp/language-reference/configure-language-version.md#defaults).
 
-**nunit**
+- **`--no-restore`**
 
-`-f|--framework <FRAMEWORK>` - Specifies the [framework](../../standard/frameworks.md) to target. The default value is `netcoreapp2.1`.
+  Doesn't execute an implicit restore during project creation.
 
-`-p|--enable-pack` - Enables packaging for the project using [dotnet pack](dotnet-pack.md).
+***
 
-`--no-restore` - Doesn't execute an implicit restore during project creation.
+### <a name="wpf"></a> wpf, wpflib, wpfcustomcontrollib, wpfusercontrollib
 
-**page**
+- **`-f|--framework <FRAMEWORK>`**
 
-`-na|--namespace <NAMESPACE_NAME>` - Namespace for the generated code. The default value is `MyApp.Namespace`.
+  Specifies the [framework](../../standard/frameworks.md) to target. The default value is `netcoreapp3.1`. Available since .NET Core 3.1 SDK. 
 
-`-np|--no-pagemodel` - Creates the page without a PageModel.
+- **`--langVersion <VERSION_NUMBER>`**
 
-**viewimports**
+  Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3.
 
-`-na|--namespace <NAMESPACE_NAME>` - Namespace for the generated code. The default value is `MyApp.Namespace`.
+  For a list of default C# versions, see [Defaults](../../csharp/language-reference/configure-language-version.md#defaults).
 
-**web**
+- **`--no-restore`**
 
-`--exclude-launch-settings` - Exclude *launchSettings.json* from the generated template.
+  Doesn't execute an implicit restore during project creation.
 
-`--no-restore` - Doesn't execute an implicit restore during project creation.
+***
 
-`--no-https` - Project doesn't require HTTPS. This option only applies if `IndividualAuth` or `OrganizationalAuth` are not being used.
+### <a name="winforms"></a> winforms, winformslib
 
-**mvc, webapp**
+- **`--langVersion <VERSION_NUMBER>`**
 
-`-au|--auth <AUTHENTICATION_TYPE>` - The type of authentication to use. The possible values are:
+  Sets the `LangVersion` property in the created project file. For example, use `--langVersion 7.3` to use C# 7.3.
 
-- `None` - No authentication (Default).
-- `Individual` - Individual authentication.
-- `IndividualB2C` - Individual authentication with Azure AD B2C.
-- `SingleOrg` - Organizational authentication for a single tenant.
-- `MultiOrg` - Organizational authentication for multiple tenants.
-- `Windows` - Windows authentication.
+  For a list of default C# versions, see [Defaults](../../csharp/language-reference/configure-language-version.md#defaults).
 
-`--aad-b2c-instance <INSTANCE>` - The Azure Active Directory B2C instance to connect to. Use with `IndividualB2C` authentication. The default value is `https://login.microsoftonline.com/tfp/`.
+- **`--no-restore`**
 
-`-ssp|--susi-policy-id <ID>` - The sign-in and sign-up policy ID for this project. Use with `IndividualB2C` authentication.
+  Doesn't execute an implicit restore during project creation.
 
-`-rp|--reset-password-policy-id <ID>` - The reset password policy ID for this project. Use with `IndividualB2C` authentication.
+***
 
-`-ep|--edit-profile-policy-id <ID>` - The edit profile policy ID for this project. Use with `IndividualB2C` authentication.
+### <a name="web-others"></a> worker, grpc
 
-`--aad-instance <INSTANCE>` - The Azure Active Directory instance to connect to. Use with `SingleOrg` or `MultiOrg` authentication. The default value is `https://login.microsoftonline.com/`.
+- **`-f|--framework <FRAMEWORK>`**
 
-`--client-id <ID>` - The Client ID for this project. Use with `IndividualB2C`, `SingleOrg`, or `MultiOrg` authentication. The default value is `11111111-1111-1111-11111111111111111`.
+  Specifies the [framework](../../standard/frameworks.md) to target. The default value is `netcoreapp3.1`. Available since .NET Core 3.1 SDK. 
 
-`--domain <DOMAIN>` - The domain for the directory tenant. Use with `SingleOrg` or `IndividualB2C` authentication. The default value is `qualified.domain.name`.
+- **`--exclude-launch-settings`**
 
-`--tenant-id <ID>` - The TenantId ID of the directory to connect to. Use with `SingleOrg` authentication. The default value is `22222222-2222-2222-2222-222222222222`.
+  Excludes *launchSettings.json* from the generated template.
 
-`--callback-path <PATH>` - The request path within the application's base path of the redirect URI. Use with `SingleOrg` or `IndividualB2C` authentication. The default value is `/signin-oidc`.
+- **`--no-restore`**
 
-`-r|--org-read-access` - Allows this application read-access to the directory. Only applies to `SingleOrg` or `MultiOrg` authentication.
+  Doesn't execute an implicit restore during project creation.
 
-`--exclude-launch-settings` - Exclude *launchSettings.json* from the generated template.
+***
 
-`--no-https` - Project doesn't require HTTPS. `app.UseHsts` and `app.UseHttpsRedirection` aren't added to `Startup.Configure`. This option only applies if `Individual`, `IndividualB2C`, `SingleOrg`, or `MultiOrg` aren't being used.
+### <a name="test"></a> mstest, xunit
 
-`-uld|--use-local-db` - Specifies LocalDB should be used instead of SQLite. Only applies to `Individual` or `IndividualB2C` authentication.
+- **`-f|--framework <FRAMEWORK>`**
 
-`--no-restore` - Doesn't execute an implicit restore during project creation.
+  Specifies the [framework](../../standard/frameworks.md) to target. Option available since .NET Core 3.0 SDK.
 
-**webapi**
+  The following table lists the default values according to the SDK version number you're using:
 
-`-au|--auth <AUTHENTICATION_TYPE>` - The type of authentication to use. The possible values are:
+  | SDK version | Default value   |
+  |-------------|-----------------|
+  | 3.1         | `netcoreapp3.1` |
+  | 3.0         | `netcoreapp3.0` |
 
-- `None` - No authentication (Default).
-- `IndividualB2C` - Individual authentication with Azure AD B2C.
-- `SingleOrg` - Organizational authentication for a single tenant.
-- `Windows` - Windows authentication.
+- **`-p|--enable-pack`**
 
-`--aad-b2c-instance <INSTANCE>` - The Azure Active Directory B2C instance to connect to. Use with `IndividualB2C` authentication. The default value is `https://login.microsoftonline.com/tfp/`.
+  Enables packaging for the project using [dotnet pack](dotnet-pack.md).
 
-`-ssp|--susi-policy-id <ID>` - The sign-in and sign-up policy ID for this project. Use with `IndividualB2C` authentication.
+- **`--no-restore`**
 
-`--aad-instance <INSTANCE>` - The Azure Active Directory instance to connect to. Use with `SingleOrg` authentication. The default value is `https://login.microsoftonline.com/`.
+  Doesn't execute an implicit restore during project creation.
 
-`--client-id <ID>` - The Client ID for this project. Use with `IndividualB2C` or `SingleOrg` authentication. The default value is `11111111-1111-1111-11111111111111111`.
+***
 
-`--domain <DOMAIN>` - The domain for the directory tenant. Use with `SingleOrg` or `IndividualB2C` authentication. The default value is `qualified.domain.name`.
+### nunit
 
-`--tenant-id <ID>` - The TenantId ID of the directory to connect to. Use with `SingleOrg` authentication. The default value is `22222222-2222-2222-2222-222222222222`.
+- **`-f|--framework <FRAMEWORK>`**
 
-`-r|--org-read-access` - Allows this application read-access to the directory. Only applies to `SingleOrg` or `MultiOrg` authentication.
+  Specifies the [framework](../../standard/frameworks.md) to target.
 
-`--exclude-launch-settings` - Exclude *launchSettings.json* from the generated template.
+  The following table lists the default values according to the SDK version number you're using:
 
-`--no-https` - Project doesn't require HTTPS. `app.UseHsts` and `app.UseHttpsRedirection` aren't added to `Startup.Configure`. This option only applies if `Individual`, `IndividualB2C`, `SingleOrg`, or `MultiOrg` aren't being used.
+  | SDK version | Default value   |
+  |-------------|-----------------|
+  | 3.1         | `netcoreapp3.1` |
+  | 3.0         | `netcoreapp3.0` |
+  | 2.2         | `netcoreapp2.2` |
+  | 2.1         | `netcoreapp2.1` |
 
-`-uld|--use-local-db` - Specifies LocalDB should be used instead of SQLite. Only applies to `Individual` or `IndividualB2C` authentication.
+- **`-p|--enable-pack`**
 
-`--no-restore` - Doesn't execute an implicit restore during project creation.
+  Enables packaging for the project using [dotnet pack](dotnet-pack.md).
 
-**globaljson**
+- **`--no-restore`**
 
-`--sdk-version <VERSION_NUMBER>` - Specifies the version of the .NET Core SDK to use in the *global.json* file.
+  Doesn't execute an implicit restore during project creation.
 
-# [.NET Core 2.1](#tab/netcore21)
+***
 
-**console, angular, react, reactredux, razorclasslib**
+### page
 
-`--no-restore` - Doesn't execute an implicit restore during project creation.
+- **`-na|--namespace <NAMESPACE_NAME>`**
 
-**classlib**
+  Namespace for the generated code. The default value is `MyApp.Namespace`.
 
-`-f|--framework <FRAMEWORK>` - Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp2.1` to create a .NET Core Class Library or `netstandard2.0` to create a .NET Standard Class Library. The default value is `netstandard2.0`.
+- **`-np|--no-pagemodel`**
 
-`--no-restore` - Doesn't execute an implicit restore during project creation.
+  Creates the page without a PageModel.
 
-**mstest, xunit**
+***
 
-`-p|--enable-pack` - Enables packaging for the project using [dotnet pack](dotnet-pack.md).
+### <a name="namespace"></a> viewimports, proto
 
-`--no-restore` - Doesn't execute an implicit restore during project creation.
+- **`-na|--namespace <NAMESPACE_NAME>`**
 
-**globaljson**
+  Namespace for the generated code. The default value is `MyApp.Namespace`.
 
-`--sdk-version <VERSION_NUMBER>` - Specifies the version of the .NET Core SDK to use in the *global.json* file.
+***
 
-**web**
+### blazorserver
 
-`--exclude-launch-settings` - Exclude *launchSettings.json* from the generated template.
+- **`-au|--auth <AUTHENTICATION_TYPE>`**
 
-`--no-restore` - Doesn't execute an implicit restore during project creation.
+  The type of authentication to use. The possible values are:
 
-`--no-https` - Project doesn't require HTTPS. This option only applies if `IndividualAuth` or `OrganizationalAuth` are not being used.
+  - `None` - No authentication (Default).
+  - `Individual` - Individual authentication.
+  - `IndividualB2C` - Individual authentication with Azure AD B2C.
+  - `SingleOrg` - Organizational authentication for a single tenant.
+  - `MultiOrg` - Organizational authentication for multiple tenants.
+  - `Windows` - Windows authentication.
 
-**webapi**
+- **`--aad-b2c-instance <INSTANCE>`**
 
-`-au|--auth <AUTHENTICATION_TYPE>` - The type of authentication to use. The possible values are:
+  The Azure Active Directory B2C instance to connect to. Use with `IndividualB2C` authentication. The default value is `https://login.microsoftonline.com/tfp/`.
 
-- `None` - No authentication (Default).
-- `IndividualB2C` - Individual authentication with Azure AD B2C.
-- `SingleOrg` - Organizational authentication for a single tenant.
-- `Windows` - Windows authentication.
+- **`-ssp|--susi-policy-id <ID>`**
 
-`--aad-b2c-instance <INSTANCE>` - The Azure Active Directory B2C instance to connect to. Use with `IndividualB2C` authentication. The default value is `https://login.microsoftonline.com/tfp/`.
+  The sign-in and sign-up policy ID for this project. Use with `IndividualB2C` authentication.
 
-`-ssp|--susi-policy-id <ID>` - The sign-in and sign-up policy ID for this project. Use with `IndividualB2C` authentication.
+- **`-rp|--reset-password-policy-id <ID>`**
 
-`--aad-instance <INSTANCE>` - The Azure Active Directory instance to connect to. Use with `SingleOrg` authentication. The default value is `https://login.microsoftonline.com/`.
+  The reset password policy ID for this project. Use with `IndividualB2C` authentication.
 
-`--client-id <ID>` - The Client ID for this project. Use with `IndividualB2C` or `SingleOrg` authentication. The default value is `11111111-1111-1111-11111111111111111`.
+- **`-ep|--edit-profile-policy-id <ID>`**
 
-`--domain <DOMAIN>` - The domain for the directory tenant. Use with `SingleOrg` or `IndividualB2C` authentication. The default value is `qualified.domain.name`.
+  The edit profile policy ID for this project. Use with `IndividualB2C` authentication.
 
-`--tenant-id <ID>` - The TenantId ID of the directory to connect to. Use with `SingleOrg` authentication. The default value is `22222222-2222-2222-2222-222222222222`.
+- **`--aad-instance <INSTANCE>`**
 
-`-r|--org-read-access` - Allows this application read-access to the directory. Only applies to `SingleOrg` or `MultiOrg` authentication.
+  The Azure Active Directory instance to connect to. Use with `SingleOrg` or `MultiOrg` authentication. The default value is `https://login.microsoftonline.com/`.
 
-`--exclude-launch-settings` - Exclude *launchSettings.json* from the generated template.
+- **`--client-id <ID>`**
 
-`-uld|--use-local-db` - Specifies LocalDB should be used instead of SQLite. Only applies to `Individual` or `IndividualB2C` authentication.
+  The Client ID for this project. Use with `IndividualB2C`, `SingleOrg`, or `MultiOrg` authentication. The default value is `11111111-1111-1111-11111111111111111`.
 
-`--no-restore` - Doesn't execute an implicit restore during project creation.
+- **`--domain <DOMAIN>`**
 
-`--no-https` - Project doesn't require HTTPS. `app.UseHsts` and `app.UseHttpsRedirection` aren't added to `Startup.Configure`. This option only applies if `Individual`, `IndividualB2C`, `SingleOrg`, or `MultiOrg` aren't being used.
+  The domain for the directory tenant. Use with `SingleOrg` or `IndividualB2C` authentication. The default value is `qualified.domain.name`.
 
-**mvc, razor**
+- **`--tenant-id <ID>`**
 
-`-au|--auth <AUTHENTICATION_TYPE>` - The type of authentication to use. The possible values are:
+  The TenantId ID of the directory to connect to. Use with `SingleOrg` authentication. The default value is `22222222-2222-2222-2222-222222222222`.
 
-- `None` - No authentication (Default).
-- `Individual` - Individual authentication.
-- `IndividualB2C` - Individual authentication with Azure AD B2C.
-- `SingleOrg` - Organizational authentication for a single tenant.
-- `MultiOrg` - Organizational authentication for multiple tenants.
-- `Windows` - Windows authentication.
+- **`--callback-path <PATH>`**
 
-`--aad-b2c-instance <INSTANCE>` - The Azure Active Directory B2C instance to connect to. Use with `IndividualB2C` authentication. The default value is `https://login.microsoftonline.com/tfp/`.
+  The request path within the application's base path of the redirect URI. Use with `SingleOrg` or `IndividualB2C` authentication. The default value is `/signin-oidc`.
 
-`-ssp|--susi-policy-id <ID>` - The sign-in and sign-up policy ID for this project. Use with `IndividualB2C` authentication.
+- **`-r|--org-read-access`**
 
-`-rp|--reset-password-policy-id <ID>` - The reset password policy ID for this project. Use with `IndividualB2C` authentication.
+  Allows this application read-access to the directory. Only applies to `SingleOrg` or `MultiOrg` authentication.
 
-`-ep|--edit-profile-policy-id <ID>` - The edit profile policy ID for this project. Use with `IndividualB2C` authentication.
+- **`--exclude-launch-settings`**
 
-`--aad-instance <INSTANCE>` - The Azure Active Directory instance to connect to. Use with `SingleOrg` or `MultiOrg` authentication. The default value is `https://login.microsoftonline.com/`.
+  Excludes *launchSettings.json* from the generated template.
 
-`--client-id <ID>` - The Client ID for this project. Use with `IndividualB2C`, `SingleOrg`, or `MultiOrg` authentication. The default value is `11111111-1111-1111-11111111111111111`.
+- **`--no-https`**
 
-`--domain <DOMAIN>` - The domain for the directory tenant. Use with `SingleOrg` or `IndividualB2C` authentication. The default value is `qualified.domain.name`.
+  Turns off HTTPS. This option only applies if `Individual`, `IndividualB2C`, `SingleOrg`, or `MultiOrg` aren't being used for `--auth`.
 
-`--tenant-id <ID>` - The TenantId ID of the directory to connect to. Use with `SingleOrg` authentication. The default value is `22222222-2222-2222-2222-222222222222`.
+- **`-uld|--use-local-db`**
 
-`--callback-path <PATH>` - The request path within the application's base path of the redirect URI. Use with `SingleOrg` or `IndividualB2C` authentication. The default value is `/signin-oidc`.
+  Specifies LocalDB should be used instead of SQLite. Only applies to `Individual` or `IndividualB2C` authentication.
 
-`-r|--org-read-access` - Allows this application read-access to the directory. Only applies to `SingleOrg` or `MultiOrg` authentication.
+- **`--no-restore`**
 
-`--exclude-launch-settings` - Exclude *launchSettings.json* from the generated template.
+  Doesn't execute an implicit restore during project creation.
 
-`--use-browserlink` - Includes BrowserLink in the project.
+***
 
-`-uld|--use-local-db` - Specifies LocalDB should be used instead of SQLite. Only applies to `Individual` or `IndividualB2C` authentication.
+### web
 
-`--no-restore` - Doesn't execute an implicit restore during project creation.
+- **`--exclude-launch-settings`**
 
-`--no-https` - Project doesn't require HTTPS. `app.UseHsts` and `app.UseHttpsRedirection` aren't added to `Startup.Configure`. This option only applies if `Individual`, `IndividualB2C`, `SingleOrg`, or `MultiOrg` aren't being used.
+  Excludes *launchSettings.json* from the generated template.
 
-**page**
+- **`-f|--framework <FRAMEWORK>`**
 
-`-na|--namespace <NAMESPACE_NAME>` - Namespace for the generated code. The default value is `MyApp.Namespace`.
+  Specifies the [framework](../../standard/frameworks.md) to target. Option not available in .NET Core 2.2 SDK.
 
-`-np|--no-pagemodel` - Creates the page without a PageModel.
+  The following table lists the default values according to the SDK version number you're using:
 
-**viewimports**
+  | SDK version | Default value   |
+  |-------------|-----------------|
+  | 3.1         | `netcoreapp3.1` |
+  | 3.0         | `netcoreapp3.0` |
+  | 2.1         | `netcoreapp2.1` |
 
-`-na|--namespace <NAMESPACE_NAME>` - Namespace for the generated code. The default value is `MyApp.Namespace`.
+- **`--no-restore`**
 
-# [.NET Core 2.0](#tab/netcore20)
+  Doesn't execute an implicit restore during project creation.
 
-**console, angular, react, reactredux**
+- **`--no-https`**
 
-`--no-restore` - Doesn't execute an implicit restore during project creation.
+  Turns off HTTPS.
 
-**classlib**
+***
 
-`-f|--framework <FRAMEWORK>` - Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp2.0` to create a .NET Core Class Library or `netstandard2.0` to create a .NET Standard Class Library. The default value is `netstandard2.0`.
+### <a name="web-options"></a> mvc, webapp
 
-`--no-restore` - Doesn't execute an implicit restore during project creation.
+- **`-au|--auth <AUTHENTICATION_TYPE>`**
 
-**mstest, xunit**
+  The type of authentication to use. The possible values are:
 
-`-p|--enable-pack` - Enables packaging for the project using [dotnet pack](dotnet-pack.md).
+  - `None` - No authentication (Default).
+  - `Individual` - Individual authentication.
+  - `IndividualB2C` - Individual authentication with Azure AD B2C.
+  - `SingleOrg` - Organizational authentication for a single tenant.
+  - `MultiOrg` - Organizational authentication for multiple tenants.
+  - `Windows` - Windows authentication.
 
-`--no-restore` - Doesn't execute an implicit restore during project creation.
+- **`--aad-b2c-instance <INSTANCE>`**
 
-**globaljson**
+  The Azure Active Directory B2C instance to connect to. Use with `IndividualB2C` authentication. The default value is `https://login.microsoftonline.com/tfp/`.
 
-`--sdk-version <VERSION_NUMBER>` - Specifies the version of the .NET Core SDK to use in the *global.json* file.
+- **`-ssp|--susi-policy-id <ID>`**
 
-**web**
+  The sign-in and sign-up policy ID for this project. Use with `IndividualB2C` authentication.
 
-`--use-launch-settings` - Includes *launchSettings.json* in the generated template output.
+- **`-rp|--reset-password-policy-id <ID>`**
 
-`--no-restore` - Doesn't execute an implicit restore during project creation.
+  The reset password policy ID for this project. Use with `IndividualB2C` authentication.
 
-**webapi**
+- **`-ep|--edit-profile-policy-id <ID>`**
 
-`-au|--auth <AUTHENTICATION_TYPE>` - The type of authentication to use. The possible values are:
+  The edit profile policy ID for this project. Use with `IndividualB2C` authentication.
 
-- `None` - No authentication (Default).
-- `IndividualB2C` - Individual authentication with Azure AD B2C.
-- `SingleOrg` - Organizational authentication for a single tenant.
-- `Windows` - Windows authentication.
+- **`--aad-instance <INSTANCE>`**
 
-`--aad-b2c-instance <INSTANCE>` - The Azure Active Directory B2C instance to connect to. Use with `IndividualB2C` authentication. The default value is `https://login.microsoftonline.com/tfp/`.
+  The Azure Active Directory instance to connect to. Use with `SingleOrg` or `MultiOrg` authentication. The default value is `https://login.microsoftonline.com/`.
 
-`-ssp|--susi-policy-id <ID>` - The sign-in and sign-up policy ID for this project. Use with `IndividualB2C` authentication.
+- **`--client-id <ID>`**
 
-`--aad-instance <INSTANCE>` - The Azure Active Directory instance to connect to. Use with `SingleOrg` authentication. The default value is `https://login.microsoftonline.com/`.
+  The Client ID for this project. Use with `IndividualB2C`, `SingleOrg`, or `MultiOrg` authentication. The default value is `11111111-1111-1111-11111111111111111`.
 
-`--client-id <ID>` - The Client ID for this project. Use with `IndividualB2C` or `SingleOrg` authentication. The default value is `11111111-1111-1111-11111111111111111`.
+- **`--domain <DOMAIN>`**
 
-`--domain <DOMAIN>` - The domain for the directory tenant. Use with `SingleOrg` or `IndividualB2C` authentication. The default value is `qualified.domain.name`.
+  The domain for the directory tenant. Use with `SingleOrg` or `IndividualB2C` authentication. The default value is `qualified.domain.name`.
 
-`--tenant-id <ID>` - The TenantId ID of the directory to connect to. Use with `SingleOrg` authentication. The default value is `22222222-2222-2222-2222-222222222222`.
+- **`--tenant-id <ID>`**
 
-`-r|--org-read-access` - Allows this application read-access to the directory. Only applies to `SingleOrg` or `MultiOrg` authentication.
+  The TenantId ID of the directory to connect to. Use with `SingleOrg` authentication. The default value is `22222222-2222-2222-2222-222222222222`.
 
-`--use-launch-settings` - Includes *launchSettings.json* in the generated template output.
+- **`--callback-path <PATH>`**
 
-`-uld|--use-local-db` - Specifies LocalDB should be used instead of SQLite. Only applies to `Individual` or `IndividualB2C` authentication.
+  The request path within the application's base path of the redirect URI. Use with `SingleOrg` or `IndividualB2C` authentication. The default value is `/signin-oidc`.
 
-`--no-restore` - Doesn't execute an implicit restore during project creation.
+- **`-r|--org-read-access`**
 
-**mvc, razor**
+  Allows this application read-access to the directory. Only applies to `SingleOrg` or `MultiOrg` authentication.
 
-`-au|--auth <AUTHENTICATION_TYPE>` - The type of authentication to use. The possible values are:
+- **`--exclude-launch-settings`**
 
-- `None` - No authentication (Default).
-- `Individual` - Individual authentication.
-- `IndividualB2C` - Individual authentication with Azure AD B2C.
-- `SingleOrg` - Organizational authentication for a single tenant.
-- `MultiOrg` - Organizational authentication for multiple tenants.
-- `Windows` - Windows authentication.
+  Excludes *launchSettings.json* from the generated template.
 
-`--aad-b2c-instance <INSTANCE>` - The Azure Active Directory B2C instance to connect to. Use with `IndividualB2C` authentication. The default value is `https://login.microsoftonline.com/tfp/`.
+- **`--no-https`**
 
-`-ssp|--susi-policy-id <ID>` - The sign-in and sign-up policy ID for this project. Use with `IndividualB2C` authentication.
+  Turns off HTTPS. This option only applies if `Individual`, `IndividualB2C`, `SingleOrg`, or `MultiOrg` aren't being used.
 
-`-rp|--reset-password-policy-id <ID>` - The reset password policy ID for this project. Use with `IndividualB2C` authentication.
+- **`-uld|--use-local-db`**
 
-`-ep|--edit-profile-policy-id <ID>` - The edit profile policy ID for this project. Use with `IndividualB2C` authentication.
+  Specifies LocalDB should be used instead of SQLite. Only applies to `Individual` or `IndividualB2C` authentication.
 
-`--aad-instance <INSTANCE>` - The Azure Active Directory instance to connect to. Use with `SingleOrg` or `MultiOrg` authentication. The default value is `https://login.microsoftonline.com/`.
+- **`-f|--framework <FRAMEWORK>`**
 
-`--client-id <ID>` - The Client ID for this project. Use with `IndividualB2C`, `SingleOrg`, or `MultiOrg` authentication. The default value is `11111111-1111-1111-11111111111111111`.
+  Specifies the [framework](../../standard/frameworks.md) to target. Option available since .NET Core 3.0 SDK.
 
-`--domain <DOMAIN>` - The domain for the directory tenant. Use with `SingleOrg` or `IndividualB2C` authentication. The default value is `qualified.domain.name`.
+  The following table lists the default values according to the SDK version number you're using:
 
-`--tenant-id <ID>` - The TenantId ID of the directory to connect to. Use with `SingleOrg` authentication. The default value is `22222222-2222-2222-2222-222222222222`.
+  | SDK version | Default value   |
+  |-------------|-----------------|
+  | 3.1         | `netcoreapp3.1` |
+  | 3.0         | `netcoreapp3.0` |
 
-`--callback-path <PATH>` - The request path within the application's base path of the redirect URI. Use with `SingleOrg` or `IndividualB2C` authentication. The default value is `/signin-oidc`.
+- **`--no-restore`**
 
-`-r|--org-read-access` - Allows this application read-access to the directory. Only applies to `SingleOrg` or `MultiOrg` authentication.
+  Doesn't execute an implicit restore during project creation.
 
-`--use-launch-settings` - Includes *launchSettings.json* in the generated template output.
+- **`--use-browserlink`**
 
-`--use-browserlink` - Includes BrowserLink in the project.
+  Includes BrowserLink in the project. Option not available in .NET Core 2.2 and 3.1 SDK.
 
-`-uld|--use-local-db` - Specifies LocalDB should be used instead of SQLite. Only applies to `Individual` or `IndividualB2C` authentication.
+***
 
-`--no-restore` - Doesn't execute an implicit restore during project creation.
+### <a name="spa"></a> angular, react
 
-**page**
+- **`-au|--auth <AUTHENTICATION_TYPE>`**
 
-`-na|--namespace <NAMESPACE_NAME>`- Namespace for the generated code. The default value is `MyApp.Namespace`.
+  The type of authentication to use. Available since .NET Core 3.0 SDK. 
+  
+  The possible values are:
 
-`-np|--no-pagemodel` - Creates the page without a PageModel.
+  - `None` - No authentication (Default).
+  - `Individual` - Individual authentication.
 
-**viewimports**
+- **`--exclude-launch-settings`**
 
-`-na|--namespace <NAMESPACE_NAME>`- Namespace for the generated code. The default value is `MyApp.Namespace`.
+  Excludes *launchSettings.json* from the generated template. 
 
-# [.NET Core 1.x](#tab/netcore1x)
+- **`--no-restore`**
 
-**console, xunit, mstest, web, webapi**
+  Doesn't execute an implicit restore during project creation.
 
-`-f|--framework <FRAMEWORK>` - Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp1.0` or `netcoreapp1.1`. The default value is `netcoreapp1.0`.
+- **`--no-https`**
 
-**classlib**
+  Turns off HTTPS. This option only applies if authentication is `None`.
 
-`-f|--framework <FRAMEWORK>` - Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp1.0`, `netcoreapp1.1`, or `netstandard1.0` to `netstandard1.6`. The default value is `netstandard1.4`.
+- **`-uld|--use-local-db`**
 
-**mvc**
+  Specifies LocalDB should be used instead of SQLite. Only applies to `Individual` or `IndividualB2C` authentication. Available since .NET Core 3.0 SDK.
 
-`-f|--framework <FRAMEWORK>` - Specifies the [framework](../../standard/frameworks.md) to target. Values: `netcoreapp1.0` or `netcoreapp1.1`. The default value is `netcoreapp1.0`.
+- **`-f|--framework <FRAMEWORK>`**
 
-`-au|--auth <AUTHENTICATION_TYPE>` - The type of authentication to use. Values: `None` or `Individual`. The default value is `None`.
+  Specifies the [framework](../../standard/frameworks.md) to target. Option not available in .NET Core 2.2 SDK.
 
-`-uld|--use-local-db` - Specifies whether or not to use LocalDB instead of SQLite. Values: `true` or `false`. The default value is `false`.
+  The following table lists the default values according to the SDK version number you're using:
 
----
+  | SDK version | Default value   |
+  |-------------|-----------------|
+  | 3.1         | `netcoreapp3.1` |
+  | 3.0         | `netcoreapp3.0` |
+  | 2.1         | `netcoreapp2.0` |
+
+***
+
+### reactredux
+
+- **`--exclude-launch-settings`**
+
+  Excludes *launchSettings.json* from the generated template. 
+
+- **`-f|--framework <FRAMEWORK>`**
+
+  Specifies the [framework](../../standard/frameworks.md) to target. Option not available in .NET Core 2.2 SDK.
+
+  The following table lists the default values according to the SDK version number you're using:
+
+  | SDK version | Default value   |
+  |-------------|-----------------|
+  | 3.1         | `netcoreapp3.1` |
+  | 3.0         | `netcoreapp3.0` |
+  | 2.1         | `netcoreapp2.0` |
+
+- **`--no-restore`**
+
+  Doesn't execute an implicit restore during project creation.
+
+- **`--no-https`**
+
+  Turns off HTTPS.
+
+***
+
+### razorclasslib
+
+- **`--no-restore`**
+
+  Doesn't execute an implicit restore during project creation.
+
+- **`-s|--support-pages-and-views`**
+
+  Supports adding traditional Razor pages and Views in addition to components to this library. Available since .NET Core 3.0 SDK.
+
+***
+  
+### webapi
+
+- **`-au|--auth <AUTHENTICATION_TYPE>`**
+
+  The type of authentication to use. The possible values are:
+
+  - `None` - No authentication (Default).
+  - `IndividualB2C` - Individual authentication with Azure AD B2C.
+  - `SingleOrg` - Organizational authentication for a single tenant.
+  - `Windows` - Windows authentication.
+
+- **`--aad-b2c-instance <INSTANCE>`**
+
+  The Azure Active Directory B2C instance to connect to. Use with `IndividualB2C` authentication. The default value is `https://login.microsoftonline.com/tfp/`.
+
+- **`-ssp|--susi-policy-id <ID>`**
+
+  The sign-in and sign-up policy ID for this project. Use with `IndividualB2C` authentication.
+
+- **`--aad-instance <INSTANCE>`**
+
+  The Azure Active Directory instance to connect to. Use with `SingleOrg` authentication. The default value is `https://login.microsoftonline.com/`.
+
+- **`--client-id <ID>`**
+
+  The Client ID for this project. Use with `IndividualB2C` or `SingleOrg` authentication. The default value is `11111111-1111-1111-11111111111111111`.
+
+- **`--domain <DOMAIN>`**
+
+  The domain for the directory tenant. Use with `IndividualB2C` or `SingleOrg` authentication. The default value is `qualified.domain.name`.
+
+- **`--tenant-id <ID>`**
+
+  The TenantId ID of the directory to connect to. Use with `SingleOrg` authentication. The default value is `22222222-2222-2222-2222-222222222222`.
+
+- **`-r|--org-read-access`**
+
+  Allows this application read-access to the directory. Only applies to `SingleOrg` authentication.
+
+- **`--exclude-launch-settings`**
+
+  Excludes *launchSettings.json* from the generated template.
+
+- **`--no-https`**
+
+  Turns off HTTPS. `app.UseHsts` and `app.UseHttpsRedirection` aren't added to `Startup.Configure`. This option only applies if `IndividualB2C` or `SingleOrg` aren't being used for authentication.
+
+- **`-uld|--use-local-db`**
+
+  Specifies LocalDB should be used instead of SQLite. Only applies to `IndividualB2C` authentication.
+
+- **`-f|--framework <FRAMEWORK>`**
+
+  Specifies the [framework](../../standard/frameworks.md) to target. Option not available in .NET Core 2.2 SDK.
+
+  The following table lists the default values according to the SDK version number you're using:
+
+  | SDK version | Default value   |
+  |-------------|-----------------|
+  | 3.1         | `netcoreapp3.1` |
+  | 3.0         | `netcoreapp3.0` |
+  | 2.1         | `netcoreapp2.1` |
+
+- **`--no-restore`**
+
+  Doesn't execute an implicit restore during project creation.
+
+***
+
+### globaljson
+
+- **`--sdk-version <VERSION_NUMBER>`**
+
+  Specifies the version of the .NET Core SDK to use in the *global.json* file.
+
+***
 
 ## Examples
 
-Create a C# console application project by specifying the template name:
+- Create a C# console application project by specifying the template name:
 
-`dotnet new "Console Application"`
+  ```dotnetcli
+  dotnet new "Console Application"
+  ```
 
-Create an F# console application project in the current directory:
+- Create an F# console application project in the current directory:
 
-`dotnet new console -lang F#`
+  ```dotnetcli
+  dotnet new console -lang F#
+  ```
 
-Create a .NET Standard class library project in the specified directory (available only with .NET Core SDK 2.0 or later versions):
+- Create a .NET Standard class library project in the specified directory:
 
-`dotnet new classlib -lang VB -o MyLibrary`
+  ```dotnetcli
+  dotnet new classlib -lang VB -o MyLibrary
+  ```
 
-Create a new ASP.NET Core C# MVC project in the current directory with no authentication:
+- Create a new ASP.NET Core C# MVC project in the current directory with no authentication:
 
-`dotnet new mvc -au None`
+  ```dotnetcli
+  dotnet new mvc -au None
+  ```
 
-Create a new xUnit project:
+- Create a new xUnit project:
 
-`dotnet new xunit`
+  ```dotnetcli
+  dotnet new xunit
+  ```
 
-List all templates available for MVC:
+- List all templates available for Single Page Application (SPA) templates:
 
-`dotnet new mvc -l`
+  ```dotnetcli
+  dotnet new spa -l
+  ```
 
-List all templates matching the *we* substring. No exact match is found, so substring matching runs against both the short name and name columns.
+- List all templates matching the *we* substring. No exact match is found, so substring matching runs against both the short name and name columns.
 
-`dotnet new we -l`
+  ```dotnetcli
+  dotnet new we -l
+  ```
 
-Attempt to invoke the template matching *ng*. If a single match can't be determined, list the templates that are partial matches.
+- Attempt to invoke the template matching *ng*. If a single match can't be determined, list the templates that are partial matches.
 
-`dotnet new ng`
+  ```dotnetcli
+  dotnet new ng
+  ```
 
-Install version 2.0 of the Single Page Application templates for ASP.NET Core (command option available for .NET Core SDK 1.1 and later versions only):
+- Install version 2.0 of the SPA templates for ASP.NET Core:
 
-`dotnet new -i Microsoft.DotNet.Web.Spa.ProjectTemplates::2.0.0`
+  ```dotnetcli
+  dotnet new -i Microsoft.DotNet.Web.Spa.ProjectTemplates::2.0.0
+  ```
 
-Create a *global.json* in the current directory setting the SDK version to 2.0.0 (available only with .NET Core SDK 2.0 or later versions):
+- List the installed templates and details about them, including how to uninstall them:
 
-`dotnet new globaljson --sdk-version 2.0.0`
+  ```dotnetcli
+  dotnet new -u
+  ```
+
+- Create a *global.json* in the current directory setting the SDK version to 3.1.101:
+
+  ```dotnetcli
+  dotnet new globaljson --sdk-version 3.1.101
+  ```
 
 ## See also
 

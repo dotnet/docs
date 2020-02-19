@@ -35,7 +35,7 @@ As an example of the different implementations available for an algorithm, consi
 
 <xref:System.Security.Cryptography.Aes> is inherited by two classes: <xref:System.Security.Cryptography.AesCryptoServiceProvider> and <xref:System.Security.Cryptography.AesManaged>. The <xref:System.Security.Cryptography.AesCryptoServiceProvider> class is a wrapper around the Windows Cryptography API (CAPI) implementation of Aes, whereas the <xref:System.Security.Cryptography.AesManaged> class is written entirely in managed code. There is also a third type of implementation, Cryptography Next Generation (CNG), in addition to the managed and CAPI implementations. An example of a CNG algorithm is <xref:System.Security.Cryptography.ECDiffieHellmanCng>. CNG algorithms are available on Windows Vista and later.
 
-You can choose which implementation is best for you.  The managed implementations are available on all platforms that support the .NET Framework.  The CAPI implementations are available on older operating systems, and are no longer being developed. CNG is the very latest implementation where new development will take place. However, the managed implementations are not certified by the Federal Information Processing Standards (FIPS), and may be slower than the wrapper classes.
+You can choose which implementation is best for you. The managed implementations are available on all platforms that support .NET Framework. The CAPI implementations are available on older operating systems and are no longer being developed. CNG is the latest implementation where new development will take place. However, the managed implementations are not certified by the Federal Information Processing Standards (FIPS), and may be slower than the wrapper classes.
 
 ## Stream Design
 

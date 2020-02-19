@@ -2,7 +2,6 @@
 title: Tools for porting to .NET Core
 description: Learn about some of the tools you can use to port to .NET Core
 author: cartermp
-ms.author: mairaw
 ms.date: 12/07/2018
 ---
 # Tools to help with porting to .NET Core

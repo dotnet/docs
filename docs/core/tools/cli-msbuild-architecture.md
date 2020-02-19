@@ -18,13 +18,13 @@ As part of this move, the custom build engine that was developed to build projec
 
 ## The tooling layers
 
-With the move away from the existing project system as well as with building engine switches, the question that naturally follows is do any of these changes change the overall "layering" of the whole .NET Core tooling ecosystem? Are there new bits and components?
+With the change in build engine and the move away from the existing project system, some questions naturally follow. Do any of these changes change the overall "layering" of the .NET Core tooling ecosystem? Are there new bits and components?
 
 Let's start with a quick refresher on Preview 2 layering as shown in the following picture:
 
 ![Preview 2 tools high-level architecture](media/cli-msbuild-architecture/p2-arch.png)
 
-The layering of the tools is quite simple. At the bottom, the foundation is the .NET Core CLI. All other, higher-level tools, such as Visual Studio or Visual Studio Code, depend and rely on the CLI to build projects, restore dependencies, and so on. For example, if Visual Studio wanted to perform a restore operation, it would call into `dotnet restore` ([see note](#dotnet-restore-note)) command in the CLI.
+The layering of the tools in Preview 2 is straightforward. At the bottom, the foundation is the .NET Core CLI. All other, higher-level tools, such as Visual Studio or Visual Studio Code, depend and rely on the CLI to build projects, restore dependencies, and so on. For example, if Visual Studio wanted to perform a restore operation, it would call into the `dotnet restore` ([see note](#dotnet-restore-note)) command in the CLI.
 
 With the move to the new project system, the previous diagram changes:
 
@@ -39,7 +39,7 @@ All the toolsets now consume the shared SDK component and its targets, CLI inclu
 
 ### CLI commands
 
-The shared SDK component means that the majority of existing CLI commands have been re-implemented as MSBuild tasks and targets. What does this mean for the CLI commands and your usage of the toolset?
+The shared SDK component means that the majority of existing CLI commands have been reimplemented as MSBuild tasks and targets. What does this mean for the CLI commands and your usage of the toolset?
 
 From a usage perspective, it doesn't change the way you use the CLI. The CLI still has the core commands that existed in the .NET Core 1.0 Preview 2 release:
 

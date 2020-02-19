@@ -265,4 +265,4 @@ storage concerns from the behavior concerns.
 
 ## See also
 
-- [Tutorial: Using pattern matching features to extend data types](/docs/csharp/tutorials/pattern-matching.md)
+- [Tutorial: Using pattern matching features to extend data types](tutorials/pattern-matching.md)

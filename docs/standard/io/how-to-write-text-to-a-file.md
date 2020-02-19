@@ -24,8 +24,10 @@ The following classes and methods are typically used to write text to a file:
 - <xref:System.IO.Path> is for strings that have file or directory path information. It contains the <xref:System.IO.Path.Combine%2A> method and, in .NET Core 2.1 and later, the <xref:System.IO.Path.Join%2A> and <xref:System.IO.Path.TryJoin%2A> methods, which allow concatenation of strings to build a file or directory path.
 
 > [!NOTE]
-> The following examples show only the minimum amount of code needed. A real-world app usually provides more robust error checking and exception handling.  
+> The following examples show only the minimum amount of code needed. A real-world app provides more robust error checking and exception handling.  
   
+[!INCLUDE [localized code comments](../../../includes/code-comments-loc.md)]
+
 ## Example: Synchronously write text with StreamWriter
 
 The following example shows how to use the <xref:System.IO.StreamWriter> class to synchronously write text to a new file one line at a time. Because the <xref:System.IO.StreamWriter> object is declared and instantiated in a `using` statement, the <xref:System.IO.StreamWriter.Dispose%2A> method is invoked, which automatically flushes and closes the stream.  

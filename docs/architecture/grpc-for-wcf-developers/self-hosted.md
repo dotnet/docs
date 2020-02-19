@@ -33,13 +33,13 @@ When you publish a .NET Core application, you can choose to create a *framework-
 
 To publish a self-contained build of the application that does not require the .NET Core 3.0 runtime to be installed on the host, specify the runtime to be included with the application using the `-r` (or `--runtime`) flag.
 
-```console
+```dotnetcli
 dotnet publish -c Release -r win-x64 -o ./publish
 ```
 
 To publish a framework-dependent build, omit the `-r` flag.
 
-```console
+```dotnetcli
 dotnet publish -c Release -o ./publish
 ```
 
@@ -74,7 +74,7 @@ public static IHostBuilder CreateHostBuilder(string[] args) =>
 
 Now publish your application (either framework-dependent, or self-contained for the relevant Linux runtime, for example, `linux-x64`), either from Visual Studio by right-clicking the project and choosing *Publish* from the context menu, or from the .NET Core CLI using the following command.
 
-```console
+```dotnetcli
 dotnet publish -c Release -r linux-x64 -o ./publish
 ```
 

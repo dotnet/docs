@@ -65,7 +65,7 @@ A common approach is to organize the application projects under a ‘src' folder
 
 **Figure 9-2**. Test organization in your solution
 
-You can use whichever test framework you prefer. The xUnit framework works well and is what all of the ASP.NET Core and EF Core tests are written in. You can add an xUnit test project in Visual Studio using the template shown in Figure 9-3, or from the CLI using dotnet new xunit.
+You can use whichever test framework you prefer. The xUnit framework works well and is what all of the ASP.NET Core and EF Core tests are written in. You can add an xUnit test project in Visual Studio using the template shown in Figure 9-3, or from the CLI using `dotnet new xunit`.
 
 ![Add an xUnit Test Project in Visual Studio](./media/image9-3.png)
 

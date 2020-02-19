@@ -123,16 +123,7 @@ Next, you publish the *mySparkApp* created in the [.NET for Apache Spark - Get S
 
 1. Run the following commands to publish the *mySparkApp*:
 
-   **On Windows:**
-
-   ```console
-   cd mySparkApp
-   dotnet publish -c Release -f netcoreapp3.0 -r ubuntu.16.04-x64
-   ```
-
-   **On Linux:**
-
-   ```bash
+   ```dotnetcli
    cd mySparkApp
    dotnet publish -c Release -f netcoreapp3.0 -r ubuntu.16.04-x64
    ```

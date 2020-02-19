@@ -16,7 +16,7 @@ This tutorial teaches you how to install and use a global tool. You use a tool t
 
 ## Use the tool as a global tool
 
-1. Install the tool from the package by running the [dotnet tool install](dotnet-tool-install.md) command in the *botsay* project folder:
+1. Install the tool from the package by running the [dotnet tool install](dotnet-tool-install.md) command in the *botsay-\<name>* project folder:
 
    ```dotnetcli
    dotnet tool install --global --add-source ./nupkg botsay-<name>
@@ -35,7 +35,7 @@ This tutorial teaches you how to install and use a global tool. You use a tool t
 
 1. Invoke the tool:
 
-   ```dotnetcli
+   ```console
    botsay hello from the bot
    ```
 
@@ -77,13 +77,13 @@ This tutorial teaches you how to install and use a global tool. You use a tool t
 
    On Windows:
 
-   ```dotnetcli
+   ```console
    c:\dotnet-tools\botsay hello from the bot
    ```
 
    On Linux or macOS:
 
-   ```dotnetcli
+   ```console
    ~/bin/botsay hello from the bot
    ```
 

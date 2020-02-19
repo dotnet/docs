@@ -21,7 +21,7 @@ This tutorial teaches you how to install and use a local tool. You use a tool th
 
 To install a tool for local access only (for the current directory and subdirectories), it has to be added to a manifest file. 
 
-From the *botsay* folder, navigate up one level to the *repository* folder:
+From the *botsay-\<name>* folder, navigate up one level to the *repository* folder:
 
 ```console
 cd ..
@@ -58,7 +58,7 @@ When you use a CLI command that refers to a local tool, the SDK searches for a m
 Install the tool from the package that you created in the first tutorial:
 
 ```dotnetcli
-dotnet tool install --add-source ./botsay/nupkg botsay-<name>
+dotnet tool install --add-source ./botsay-<name>/nupkg botsay-<name>
 ```
 
 This command adds the tool to the manifest file that you created in the preceding step. The command output shows which manifest file the newly installed tool is in:
@@ -77,7 +77,7 @@ The *.config/dotnet-tools.json* file now has one tool:
   "version": 1,
   "isRoot": true,
   "tools": {
-    "botsay": {
+    "botsay-<name>": {
       "version": "1.0.0",
       "commands": [
         "botsay"
@@ -99,66 +99,70 @@ dotnet tool run botsay hello from the bot
 
 You typically install a local tool in the root directory of the repository. After you check in the manifest file to the repository, other developers can get the latest manifest file. To install all of the tools listed in the manifest file, they can run a single `dotnet tool restore` command.
 
-Open the *.config/dotnet-tools.json* file, and replace the contents with the following JSON:
+1. Open the *.config/dotnet-tools.json* file, and replace the contents with the following JSON:
 
-```json
-{
-  "version": 1,
-  "isRoot": true,
-  "tools": {
-    "botsay": {
-      "version": "1.0.0",
-      "commands": [
-        "botsay"
-      ]
-    },
-    "dotnetsay": {
-      "version": "2.1.3",
-      "commands": [
-        "dotnetsay"
-      ]
-    }
-  }
-}
-```
+   ```json
+   {
+     "version": 1,
+     "isRoot": true,
+     "tools": {
+       "botsay-<name>": {
+         "version": "1.0.0",
+         "commands": [
+           "botsay"
+         ]
+       },
+       "dotnetsay": {
+         "version": "2.1.3",
+         "commands": [
+           "dotnetsay"
+         ]
+       }
+     }
+   }
+   ```
 
-Making this change is the same as getting the latest version from the repository after someone else installed the package `dotnetsay` for the project directory. 
+1. Replace `<name>` with the name you used to create the project.
 
-Run the `dotnet tool restore` command.
+1. Save your changes.
 
-```dotnetcli
-dotnet tool restore
-```
+   Making this change is the same as getting the latest version from the repository after someone else installed the package `dotnetsay` for the project directory. 
 
-The command produces output like the following example:
+1. Run the `dotnet tool restore` command.
 
-```console
-Tool 'botsay-<name>' (version '1.0.0') was restored. Available commands: botsay
-Tool 'dotnetsay' (version '2.1.3') was restored. Available commands: dotnetsay
-Restore was successful.
-```
+   ```dotnetcli
+   dotnet tool restore
+   ```
 
-Verify that the tools are available:
+   The command produces output like the following example:
 
-```dotnetcli
-dotnet tool list
-```
+   ```console
+   Tool 'botsay-<name>' (version '1.0.0') was restored. Available commands: botsay
+   Tool 'dotnetsay' (version '2.1.3') was restored. Available commands: dotnetsay
+   Restore was successful.
+   ```
 
-The output is a list of packages and commands, similar to the following example:
+1. Verify that the tools are available:
 
-```console
-Package Id      Version      Commands       Manifest
--------------------------------------------------------------------------------------------
-botsay-<name>   1.0.0        botsay         /home/name/repository/.config/dotnet-tools.json
-dotnetsay       2.1.3        dotnetsay      /home/name/repository/.config/dotnet-tools.json
-```
+   ```dotnetcli
+   dotnet tool list
+   ```
 
-Test the tools:
+   The output is a list of packages and commands, similar to the following example:
 
-```dotnetcli
-dotnet tool run dotnetsay hello from dotnetsay
-dotnet tool run botsay hello from botsay
-```
+   ```console
+   Package Id      Version      Commands       Manifest
+   -------------------------------------------------------------------------------------------
+   botsay-<name>   1.0.0        botsay         /home/name/repository/.config/dotnet-tools.json
+   dotnetsay       2.1.3        dotnetsay      /home/name/repository/.config/dotnet-tools.json
+   ```
+
+1. Test the tools:
+
+   ```dotnetcli
+   dotnet tool run dotnetsay hello from dotnetsay
+   dotnet tool run botsay hello from botsay
+   ```
 
 ## Update a local tool
 

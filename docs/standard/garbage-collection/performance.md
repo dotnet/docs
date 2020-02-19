@@ -127,7 +127,7 @@ Fragmentation always occurs in the large object heap because it is not compacted
 
 Fragmentation can become a problem in generation 1 and generation 2. If these generations have a large amount of free space after a garbage collection, an application's object usage may need modification, and you should consider re-evaluating the lifetime of long-term objects.
 
-Excessive pinning of objects can increase fragmentation. If fragmentation is high, too many objects could be pinned.
+Excessive pinning of objects can increase fragmentation. If fragmentation is high, too many objects could have been pinned.
 
 If fragmentation of virtual memory is preventing the garbage collector from adding segments, the causes could be one of the following:
 

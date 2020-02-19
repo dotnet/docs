@@ -1,5 +1,5 @@
 ---
-title: "How to: Add and Remove Tabs with the Windows Forms TabControl"
+title: Add and Remove Tabs with TabControl
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

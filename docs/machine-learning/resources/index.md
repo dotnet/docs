@@ -1,9 +1,7 @@
 ---
 title:  ML.NET resources
 description: Learn more about machine learning and ML.NET
-author: natke
 ms.topic: reference
-ms.author: nakersha
 ms.date: 11/07/2019
 ---
 # ML.NET resources

@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Windows Forms Control That Shows Progress"
+title: Create Control That Shows Progress
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

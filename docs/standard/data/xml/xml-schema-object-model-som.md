@@ -3,8 +3,6 @@ title: "XML Schema Object Model (SOM)"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: a897a599-ffd1-43f9-8807-e58c8a7194cd
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # XML Schema Object Model (SOM)
 An XML schema is a powerful and complex tool for creating and validating structure in compliant XML documents. Similar to data modeling in a relational database, a schema provides a way to define the structure of XML documents, by specifying the elements that can be used in the documents, as well as the structure and types that these elements must follow in order to be valid for that specific schema.  

@@ -18,13 +18,9 @@ The following topics provide step-by-step instructions for performing specific f
   
 - [How to: Define and Use Custom Numeric Format Providers](../../../docs/standard/base-types/how-to-define-and-use-custom-numeric-format-providers.md)  
   
-- [How to: Convert Numeric User Input in Web Controls to Numbers](../../../docs/standard/base-types/how-to-convert-numeric-user-input-in-web-controls-to-numbers.md)  
-  
 - [How to: Extract the Day of the Week from a Specific Date](../../../docs/standard/base-types/how-to-extract-the-day-of-the-week-from-a-specific-date.md).  
   
 - [How to: Round-trip Date and Time Values](../../../docs/standard/base-types/how-to-round-trip-date-and-time-values.md)  
-  
-- [How to: Display Localized Date and Time Information to Web Users](../../../docs/standard/base-types/how-to-display-localized-date-and-time-information-to-web-users.md)  
   
 - [How to: Display Milliseconds in Date and Time Values](../../../docs/standard/base-types/how-to-display-milliseconds-in-date-and-time-values.md)  
   

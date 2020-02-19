@@ -22,10 +22,10 @@ Provides methods for getting the managed methods, or frames, on a thread’s sta
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetContext Method](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-getcontext-method.md)|Returns the context for the current frame in the `ICorDebugStackWalk` object.|  
-|[SetContext Method](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-setcontext-method.md)|Sets the `ICorDebugStackWalk` object’s current context to a valid context for the thread.|  
-|[Next Method](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-next-method.md)|Moves the `ICorDebugStackWalk` object to the next frame.|  
-|[GetFrame Method](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-getframe-method.md)|Gets the current frame in the `ICorDebugStackWalk` object.|  
+|[GetContext Method](icordebugstackwalk-getcontext-method.md)|Returns the context for the current frame in the `ICorDebugStackWalk` object.|  
+|[SetContext Method](icordebugstackwalk-setcontext-method.md)|Sets the `ICorDebugStackWalk` object’s current context to a valid context for the thread.|  
+|[Next Method](icordebugstackwalk-next-method.md)|Moves the `ICorDebugStackWalk` object to the next frame.|  
+|[GetFrame Method](icordebugstackwalk-getframe-method.md)|Gets the current frame in the `ICorDebugStackWalk` object.|  
   
 ## Remarks  
   
@@ -43,5 +43,5 @@ Provides methods for getting the managed methods, or frames, on a thread’s sta
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

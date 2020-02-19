@@ -22,7 +22,7 @@ HRESULT GetContainerAssembly(
  `S_OK` if the method call succeeds; otherwise, `S_FALSE`, and `ppAssembly` is **null**.  
   
 ## Remarks  
- If this assembly has been merged with others inside a single container assembly, this method returns the container assembly. For more information and terminology, see the [ICorDebugProcess6::EnableVirtualModuleSplitting](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-enablevirtualmodulesplitting-method.md) topic.  
+ If this assembly has been merged with others inside a single container assembly, this method returns the container assembly. For more information and terminology, see the [ICorDebugProcess6::EnableVirtualModuleSplitting](icordebugprocess6-enablevirtualmodulesplitting-method.md) topic.  
   
 > [!NOTE]
 > This method is available with .NET Native only.  
@@ -38,5 +38,5 @@ HRESULT GetContainerAssembly(
   
 ## See also
 
-- [ICorDebugAssembly3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugassembly3-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugAssembly3 Interface](icordebugassembly3-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

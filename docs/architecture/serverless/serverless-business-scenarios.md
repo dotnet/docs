@@ -27,7 +27,7 @@ The full repository and instructions to build the logic app are available here: 
 
 See how to implement a simple serverless Azure Function in the Azure Web Portal or in Visual Studio. Build a client with Xamarin.Forms that runs on Android, iOS, and Windows. The application is then refined to use JavaScript Object Notation (JSON) as a communication medium between the server and the mobile clients with a serverless back end.
 
-For more information, see [Implementing a simple Azure Function with a Xamarin.Forms client](https://azure.microsoft.com/resources/samples/functions-xamarin-getting-started/).
+For more information, see [Implementing a simple Azure Function with a Xamarin.Forms client](https://docs.microsoft.com/samples/azure-samples/functions-xamarin-getting-started/implementing-a-simple-azure-function-with-a-xamarinforms-client/).
 
 ## Generate a photo mosaic with serverless image recognition
 
@@ -37,7 +37,7 @@ The sample uses Azure Functions and Microsoft Cognitive Services Custom Vision S
 
 For example, you can train your model with Orlando landmarks, such as the Orlando Eye. Custom Vision will recognize an image of the Orlando Eye, and the function will create a photo mosaic composed of Bing image search results for "Orlando Eye."
 
-For more information, see [Azure Functions photo mosaic generator](https://azure.microsoft.com/resources/samples/functions-dotnet-photo-mosaic/).
+For more information, see [Azure Functions photo mosaic generator](https://github.com/Azure-Samples/functions-dotnet-photo-mosaic).
 
 ## Migrate an existing application to the cloud
 
@@ -77,17 +77,17 @@ The full link shortener repository with instructions is available here: [Serverl
 
 The sample consists of an Azure IoT Hub and an Azure Function. A new message on the IoT Hub triggers the Azure Function. The serverless code sends the same message content back to the device that sent it. The project has all the code and deployment configuration needed for the solution.
 
-For more information, see [Azure IoT Hub ping](https://azure.microsoft.com/resources/samples/iot-hub-node-ping/).
+For more information, see [Azure IoT Hub ping](https://github.com/Azure-Samples/iot-hub-node-ping).
 
 ## Recommended resources
 
-- [Azure Functions photo mosaic generator](https://azure.microsoft.com/resources/samples/functions-dotnet-photo-mosaic/)
-- [Azure IoT Hub ping](https://azure.microsoft.com/resources/samples/iot-hub-node-ping/)
+- [Azure Functions photo mosaic generator](https://github.com/Azure-Samples/functions-dotnet-photo-mosaic)
+- [Azure IoT Hub ping](https://github.com/Azure-Samples/iot-hub-node-ping)
 - [Azure Storage for serverless .NET apps in minutes](https://devblogs.microsoft.com/aspnet/azure-storage-for-serverless-net-apps-in-minutes/)
 - [Bring your own app](https://github.com/JeremyLikness/bring-own-app-connect-17)
 - [CSV import lab](https://github.com/JeremyLikness/azure-fn-file-process-hol)
 - [Event grid glue](https://github.com/JeremyLikness/Event-Grid-Glue)
-- [Implementing a simple Azure Function with a Xamarin.Forms client](https://azure.microsoft.com/resources/samples/functions-xamarin-getting-started/)
+- [Implementing a simple Azure Function with a Xamarin.Forms client](https://docs.microsoft.com/samples/azure-samples/functions-xamarin-getting-started/implementing-a-simple-azure-function-with-a-xamarinforms-client/)
 - [Lift and shift with serverless Azure functions](https://channel9.msdn.com/Events/Connect/2017/E102)
 - [Serverless URL shortener](https://github.com/jeremylikness/serverless-url-shortener)
 

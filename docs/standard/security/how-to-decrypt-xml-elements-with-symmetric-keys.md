@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "Rijndael"
   - "decryption"
 ms.assetid: 6038aff0-f92c-4e29-a618-d793410410d8
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Decrypt XML Elements with Symmetric Keys
 You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace to encrypt an element within an XML document.  XML Encryption allows you to store or transport sensitive XML, without worrying about the data being easily read.  This code example decrypts an XML element using the Advanced Encryption Standard (AES) algorithm, also known as Rijndael.  

@@ -12,7 +12,7 @@ helpviewer_keywords:
 ms.assetid: 4fe2d501-d0b0-4fef-86af-6ffe6c162532
 ---
 # How to: Validate and Merge PrintTickets
-The Microsoft Windows [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397) includes the flexible and extensible <xref:System.Printing.PrintCapabilities> and <xref:System.Printing.PrintTicket> elements. The former itemizes the capabilities of a print device and the latter specifies how the device should use those capabilities with respect to a particular sequence of documents, individual document, or individual page.  
+The Microsoft Windows [Print Schema](/windows/win32/printdocs/printschema) includes the flexible and extensible <xref:System.Printing.PrintCapabilities> and <xref:System.Printing.PrintTicket> elements. The former itemizes the capabilities of a print device and the latter specifies how the device should use those capabilities with respect to a particular sequence of documents, individual document, or individual page.  
   
  A typical sequence of tasks for an application that supports printing would be as follows.  
   
@@ -61,4 +61,4 @@ The Microsoft Windows [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186
 - <xref:System.Printing.PrintQueue.GetPrintCapabilities%2A>
 - [Documents in WPF](documents-in-wpf.md)
 - [Printing Overview](printing-overview.md)
-- [Print Schema](https://go.microsoft.com/fwlink/?LinkId=186397)
+- [Print Schema](/windows/win32/printdocs/printschema)

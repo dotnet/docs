@@ -2,7 +2,7 @@
 title: Uninstall Tool
 description: An overview of the .NET Core Uninstall Tool, a guided tool that enables the controlled clean-up of .NET Core SDKs and runtimes.
 author: sfoslund
-ms.date: 12/17/2019
+ms.date: 01/06/2020
 ---
 # .NET Core Uninstall Tool
 
@@ -447,7 +447,7 @@ Notes:
   Sets the verbosity level. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default value is `normal`.
 
 * **`-y, --yes`**
-  Executes the command without requiring Y/n confirmation.
+  Executes the command without requiring Y/N confirmation.
   
 * **`--force`**
   Forces removal of versions that might be used by Visual Studio or SDKs.
@@ -464,7 +464,7 @@ Notes:
 > [!NOTE]
 > By default, .NET Core SDKs and runtimes that may be required by Visual Studio or other SDKs are kept. In the following examples, some of the specified SDKs and runtimes may remain, depending on the state of the machine. To remove all SDKs and runtimes, list them explicitly as arguments or use the `--force` option.
 
-* Remove all x86 .NET Core runtimes except the version `3.0.0-preview6-27804-01` without requiring Y/n confirmation:
+* Remove all .NET Core runtimes except the version `3.0.0-preview6-27804-01` without requiring Y/N confirmation:
 
   ```console
   dotnet-core-uninstall remove --all-but 3.0.0-preview6-27804-01 --runtime --yes
@@ -479,7 +479,7 @@ Notes:
 * Remove the .NET Core 1.1.11 SDK with no console output:
 
   ```console
-  dotnet-core-uninstall remove 1.1.11 --sdk --yes -verbosity q
+  dotnet-core-uninstall remove 1.1.11 --sdk --yes --verbosity q
   ```
 
 * Remove all .NET Core SDKs that can safely be removed by this tool:

@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorPublishProcess::IsManaged Method
-Gets a value that indicates whether the process referenced by this [ICorPublishProcess](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md) is known to have managed code.  
+Gets a value that indicates whether the process referenced by this [ICorPublishProcess](icorpublishprocess-interface.md) is known to have managed code.  
   
 ## Syntax  
   
@@ -45,4 +45,4 @@ HRESULT IsManaged (
   
 ## See also
 
-- [ICorPublishProcess Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md)
+- [ICorPublishProcess Interface](icorpublishprocess-interface.md)

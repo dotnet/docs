@@ -1,13 +1,12 @@
 ---
-title: "How to: Explicitly Implement Members of Two Interfaces - C# Programming Guide"
-ms.custom: seodec18
+title: "How to explicitly implement members of two interfaces - C# Programming Guide"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "inheritance [C#], explicitly implementing interface members"
   - "interfaces [C#], explicitly implementing with inheritance"
 ms.assetid: 8b402ddc-dff9-4869-89cb-d718c764e68e
 ---
-# How to: Explicitly Implement Members of Two Interfaces (C# Programming Guide)
+# How to explicitly implement members of two interfaces (C# Programming Guide)
 Explicit [interface](../../language-reference/keywords/interface.md) implementation also allows the programmer to implement two interfaces that have the same member names and give each interface member a separate implementation. This example displays the dimensions of a box in both metric and English units. The Box [class](../../language-reference/keywords/class.md) implements two interfaces IEnglishDimensions and IMetricDimensions, which represent the different measurement systems. Both interfaces have identical member names, Length and Width.  
   
 ## Example  
@@ -27,4 +26,4 @@ Explicit [interface](../../language-reference/keywords/interface.md) implementat
 - [C# Programming Guide](../index.md)
 - [Classes and Structs](../classes-and-structs/index.md)
 - [Interfaces](./index.md)
-- [How to: Explicitly Implement Interface Members](./how-to-explicitly-implement-interface-members.md)
+- [How to explicitly implement interface members](./how-to-explicitly-implement-interface-members.md)

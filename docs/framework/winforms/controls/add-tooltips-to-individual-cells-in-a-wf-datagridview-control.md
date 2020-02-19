@@ -1,5 +1,5 @@
 ---
-title: "How to: Add ToolTips to Individual Cells in a Windows Forms DataGridView Control"
+title: Add ToolTips to Individual Cells in DataGridView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

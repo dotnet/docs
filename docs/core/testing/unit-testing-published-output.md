@@ -4,7 +4,6 @@ description: Learn how to run tests on published libraries, instead of on source
 author: kendrahavens
 ms.author: kehavens
 ms.date: 10/18/2017
-ms.custom: "seodec18"
 ---
 # Test published output with dotnet vstest
 

@@ -34,89 +34,89 @@ The root element is the [Directives](directives-element-net-native.md) element. 
 
 For reference information, choose elements from the following structure or see [Runtime Directive Elements](runtime-directive-elements.md). In the following hierarchy, the ellipsis marks a recursive structure. The information in brackets indicates whether that element is optional or required, and if it is used, how many instances (one or many) are allowed.
 
-[Directives](directives-element-net-native.md) [1:1]
-[Application](application-element-net-native.md) [0:1]
-[Assembly](assembly-element-net-native.md) [0:M]
-[Namespace](namespace-element-net-native.md) [0:M]
-. . .
-[Type](type-element-net-native.md) [0:M]
-. . .
-[TypeInstantiation](typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
-. . .
-[Namespace](namespace-element-net-native.md) [0:M]
-[Namespace](namespace-element-net-native.md) [0:M]
-. . .
-[Type](type-element-net-native.md) [0:M]
-. . .
-[TypeInstantiation](typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
-. . .
-[Type](type-element-net-native.md) [0:M]
-[Subtypes](subtypes-element-net-native.md) (subclasses of the containing type) [O:1]
-[Type](type-element-net-native.md) [0:M]
-. . .
-[TypeInstantiation](typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
-. . .
-[AttributeImplies](attributeimplies-element-net-native.md) (containing type is an attribute) [O:1]
-[GenericParameter](genericparameter-element-net-native.md) [0:M]
-[Method](method-element-net-native.md) [0:M]
-[Parameter](parameter-element-net-native.md) [0:M]
-[TypeParameter](typeparameter-element-net-native.md) [0:M]
-[GenericParameter](genericparameter-element-net-native.md) [0:M]
-[MethodInstantiation](methodinstantiation-element-net-native.md) (constructed generic method) [0:M]
-[Property](property-element-net-native.md) [0:M]
-[Field](field-element-net-native.md) [0:M]
-[Event](event-element-net-native.md) [0:M]
-[TypeInstantiation](typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
-[Type](type-element-net-native.md) [0:M]
-. . .
-[TypeInstantiation](typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
-. . .
-[Method](method-element-net-native.md) [0:M]
-[Parameter](parameter-element-net-native.md) [0:M]
-[TypeParameter](typeparameter-element-net-native.md) [0:M]
-[GenericParameter](genericparameter-element-net-native.md) [0:M]
-[MethodInstantiation](methodinstantiation-element-net-native.md) (constructed generic method) [0:M]
-[Property](property-element-net-native.md) [0:M]
-[Field](field-element-net-native.md) [0:M]
-[Event](event-element-net-native.md) [0:M]
-[Library](library-element-net-native.md) [0:M]
-[Assembly](assembly-element-net-native.md) [0:M]
-[Namespace](namespace-element-net-native.md) [0:M]
-. . .
-[Type](type-element-net-native.md) [0:M]
-. . .
-[TypeInstantiation](typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
-. . .
-[Namespace](namespace-element-net-native.md) [0:M]
-[Namespace](namespace-element-net-native.md) [0:M]
-. . .
-[Type](type-element-net-native.md) [0:M]
-. . .
-[TypeInstantiation](typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
-. . .
-[Type](type-element-net-native.md) [0:M]
-[Subtypes](subtypes-element-net-native.md) (subclasses of the containing type) [O:1]
-[Type](type-element-net-native.md) [0:M]
-. . .
-[TypeInstantiation](typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
-. . .
-[AttributeImplies](attributeimplies-element-net-native.md) (containing type is an attribute) [O:1]
-[GenericParameter](genericparameter-element-net-native.md) [0:M]
-[Method](method-element-net-native.md) [0:M]
-[MethodInstantiation](methodinstantiation-element-net-native.md) (constructed generic method) [0:M]
-[Property](property-element-net-native.md) [0:M]
-[Field](field-element-net-native.md) [0:M]
-[Event](event-element-net-native.md) [0:M]
-[TypeInstantiation](typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
-[Type](type-element-net-native.md) [0:M]
-. . .
-[TypeInstantiation](typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
-. . .
-[Method](method-element-net-native.md) [0:M]
-[MethodInstantiation](methodinstantiation-element-net-native.md) (constructed generic method) [0:M]
-[Property](property-element-net-native.md) [0:M]
-[Field](field-element-net-native.md) [0:M]
-[Event](event-element-net-native.md) [0:M]
+- [Directives](directives-element-net-native.md) [1:1]
+  - [Application](application-element-net-native.md) [0:1]
+    - [Assembly](assembly-element-net-native.md) [0:M]
+      - [Namespace](namespace-element-net-native.md) [0:M]
+        . . .
+      - [Type](type-element-net-native.md) [0:M]
+        . . .
+      - [TypeInstantiation](typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
+        . . .
+    - [Namespace](namespace-element-net-native.md) [0:M]
+      - [Namespace](namespace-element-net-native.md) [0:M]
+        . . .
+      - [Type](type-element-net-native.md) [0:M]
+        . . .
+      - [TypeInstantiation](typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
+        . . .
+    - [Type](type-element-net-native.md) [0:M]
+      - [Subtypes](subtypes-element-net-native.md) (subclasses of the containing type) [O:1]
+      - [Type](type-element-net-native.md) [0:M]
+        . . .
+      - [TypeInstantiation](typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
+        . . .
+      - [AttributeImplies](attributeimplies-element-net-native.md) (containing type is an attribute) [O:1]
+      - [GenericParameter](genericparameter-element-net-native.md) [0:M]
+      - [Method](method-element-net-native.md) [0:M]
+        - [Parameter](parameter-element-net-native.md) [0:M]
+        - [TypeParameter](typeparameter-element-net-native.md) [0:M]
+        - [GenericParameter](genericparameter-element-net-native.md) [0:M]
+      - [MethodInstantiation](methodinstantiation-element-net-native.md) (constructed generic method) [0:M]
+      - [Property](property-element-net-native.md) [0:M]
+      - [Field](field-element-net-native.md) [0:M]
+      - [Event](event-element-net-native.md) [0:M]
+    - [TypeInstantiation](typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
+      - [Type](type-element-net-native.md) [0:M]
+        . . .
+      - [TypeInstantiation](typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
+        . . .
+      - [Method](method-element-net-native.md) [0:M]
+        - [Parameter](parameter-element-net-native.md) [0:M]
+        - [TypeParameter](typeparameter-element-net-native.md) [0:M]
+        - [GenericParameter](genericparameter-element-net-native.md) [0:M]
+      - [MethodInstantiation](methodinstantiation-element-net-native.md) (constructed generic method) [0:M]
+      - [Property](property-element-net-native.md) [0:M]
+      - [Field](field-element-net-native.md) [0:M]
+      - [Event](event-element-net-native.md) [0:M]
+  - [Library](library-element-net-native.md) [0:M]
+    - [Assembly](assembly-element-net-native.md) [0:M]
+      - [Namespace](namespace-element-net-native.md) [0:M]
+        . . .
+      - [Type](type-element-net-native.md) [0:M]
+        . . .
+      - [TypeInstantiation](typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
+        . . .
+    - [Namespace](namespace-element-net-native.md) [0:M]
+      - [Namespace](namespace-element-net-native.md) [0:M]
+        . . .
+      - [Type](type-element-net-native.md) [0:M]
+        . . .
+      - [TypeInstantiation](typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
+        . . .
+    - [Type](type-element-net-native.md) [0:M]
+      - [Subtypes](subtypes-element-net-native.md) (subclasses of the containing type) [O:1]
+      - [Type](type-element-net-native.md) [0:M]
+        . . .
+      - [TypeInstantiation](typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
+        . . .
+      - [AttributeImplies](attributeimplies-element-net-native.md) (containing type is an attribute) [O:1]
+      - [GenericParameter](genericparameter-element-net-native.md) [0:M]
+      - [Method](method-element-net-native.md) [0:M]
+      - [MethodInstantiation](methodinstantiation-element-net-native.md) (constructed generic method) [0:M]
+      - [Property](property-element-net-native.md) [0:M]
+      - [Field](field-element-net-native.md) [0:M]
+      - [Event](event-element-net-native.md) [0:M]
+    - [TypeInstantiation](typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
+      - [Type](type-element-net-native.md) [0:M]
+        . . .
+      - [TypeInstantiation](typeinstantiation-element-net-native.md) (constructed generic type) [0:M]
+        . . .
+      - [Method](method-element-net-native.md) [0:M]
+      - [MethodInstantiation](methodinstantiation-element-net-native.md) (constructed generic method) [0:M]
+      - [Property](property-element-net-native.md) [0:M]
+      - [Field](field-element-net-native.md) [0:M]
+      - [Event](event-element-net-native.md) [0:M]
 
 The [Application](application-element-net-native.md) element can have no attributes, or it can have the policy attributes discussed in the [Runtime directive and policy section](#Directives).
 

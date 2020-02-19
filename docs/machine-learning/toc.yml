@@ -46,7 +46,7 @@
     - name: Predict prices (Model Builder & regression)
       href: tutorials/predict-prices-with-model-builder.md
     - name: Analyze sentiment using the ML.NET CLI
-      href: tutorials/mlnet-cli.md
+      href: tutorials/sentiment-analysis-cli.md
     - name: Analyze sentiment in Razor Pages (Model Builder & binary classification)
       href: tutorials/sentiment-analysis-model-builder.md
     - name: Categorize health violations (Model Builder & multiclass classification)
@@ -57,7 +57,7 @@
       href: how-to-guides/matchup-app-infer-net.md
 - name: Concepts
   items:
-  - name: ML.NET tasks (model types)
+  - name: ML.NET tasks
     href: resources/tasks.md
   - name: Algorithms
     href: how-to-choose-an-ml-net-algorithm.md

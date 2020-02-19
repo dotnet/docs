@@ -1,5 +1,5 @@
 ---
-title: "How to: Wrap a Windows Forms Control with ToolStripControlHost"
+title: Wrap Control with ToolStripControlHost
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Perform a Custom Action Based on Changes in a Cell of a Windows Forms DataGridView Control"
+title: Perform Custom Action Based on Changes in Cell of DataGridView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

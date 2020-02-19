@@ -3,8 +3,6 @@ title: "XSLT Extension Objects"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: a4ebdbad-087c-4cfe-acc0-17c48142f81a
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # XSLT Extension Objects
 Extension objects are used to extend the functionality of style sheets. Extension objects are maintained by the <xref:System.Xml.Xsl.XsltArgumentList> class.  

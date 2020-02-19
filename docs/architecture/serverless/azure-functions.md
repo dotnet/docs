@@ -55,7 +55,7 @@ For more information, see [App service plans](https://docs.microsoft.com/azure/a
 There are three common ways you can create function apps.
 
 - Script functions in the portal.
-- Create the necessary resources using the Azure Command Line Interface (CLI).
+- Create the necessary resources using the Azure CLI.
 - Build functions locally using your favorite IDE and publish them to Azure.
 
 For more information on creating a scripted function in the portal, see [Create your first function in the Azure portal](https://docs.microsoft.com/azure/azure-functions/functions-create-first-azure-function).

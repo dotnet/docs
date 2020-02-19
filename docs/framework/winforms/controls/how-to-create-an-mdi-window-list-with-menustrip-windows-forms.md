@@ -1,5 +1,5 @@
 ---
-title: "How to: Create an MDI Window List with MenuStrip (Windows Forms)"
+title: "How to: Create an MDI Window List with MenuStrip"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

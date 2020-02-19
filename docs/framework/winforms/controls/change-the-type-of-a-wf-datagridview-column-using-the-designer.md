@@ -1,5 +1,5 @@
 ---
-title: "How to: Change the Type of a Windows Forms DataGridView Column Using the Designer"
+title: Change the Type of a DataGridView Column Using the Designer
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Windows Forms, columns"

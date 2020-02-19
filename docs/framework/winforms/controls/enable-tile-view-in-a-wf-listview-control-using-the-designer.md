@@ -1,5 +1,5 @@
 ---
-title: "How to: Enable Tile View in a Windows Forms ListView Control Using the Designer"
+title: Enable Tile View in ListView Control Using the Designer
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "tile view feature"

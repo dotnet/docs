@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "copying directories"
   - "directories [.NET Framework], copying"
 ms.assetid: 5a969765-e5f8-4b4e-977e-90e2b0a1fe3c
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Copy directories
 This topic demonstrates how to use I/O classes to synchronously copy the contents of a directory to another location. 

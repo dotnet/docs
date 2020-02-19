@@ -3,7 +3,6 @@ title: Get started with C# and Visual Studio Code
 description: Learn how to create and debug your first .NET Core application in C# using Visual Studio Code.
 author: kendrahavens
 ms.date: 12/05/2018
-ms.custom: "seodec18"
 ---
 # Get started with C# and Visual Studio Code
 
@@ -124,8 +123,13 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 
 5. Save your changes and run your program again. The new message should appear with the appended string.
 
+    ```dotnetcli
+    dotnet run
+    ```
+
+    You get the following output:
+
     ```console
-    > dotnet run
     Hello World! Happy coding!
     ```
 

@@ -10,8 +10,8 @@ Logically extends the ICorDebugAssembly interface to provide support for contain
   
 |Method|Description|  
 |------------|-----------------|  
-|[EnumerateContainedAssemblies Method](../../../../docs/framework/unmanaged-api/debugging/icordebugassembly3-enumeratecontainedassemblies-method.md)|Gets an enumerator for the assemblies contained in this assembly.|  
-|[GetContainerAssembly Method](../../../../docs/framework/unmanaged-api/debugging/icordebugassembly3-getcontainerassembly-method.md)|Returns the container assembly of this `ICorDebugAssembly3` object.|  
+|[EnumerateContainedAssemblies Method](icordebugassembly3-enumeratecontainedassemblies-method.md)|Gets an enumerator for the assemblies contained in this assembly.|  
+|[GetContainerAssembly Method](icordebugassembly3-getcontainerassembly-method.md)|Returns the container assembly of this `ICorDebugAssembly3` object.|  
   
 ## Remarks  
   
@@ -29,5 +29,5 @@ Logically extends the ICorDebugAssembly interface to provide support for contain
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

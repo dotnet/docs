@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "resx files"
   - ".resx files"
 ms.assetid: cb8bc835-9221-4888-af53-1a4f5fad6c48
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Winres.exe (Windows Resource Localization Editor)
 

@@ -1,5 +1,5 @@
 ---
-title: "Maximize WPF 3D Performance"
+title: "Maximize 3D Performance"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "3-D graphics [WPF]"

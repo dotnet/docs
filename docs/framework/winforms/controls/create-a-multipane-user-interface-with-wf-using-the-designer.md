@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Multipane User Interface with Windows Forms Using the Designer"
+title: Create a Multipane User Interface Using the Designer
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "user interface [Windows Forms], multipane"

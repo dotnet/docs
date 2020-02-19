@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Caching Application Data in a WPF Application"
+title: Cache app data
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

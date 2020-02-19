@@ -4,7 +4,6 @@ description: Follow tutorials for learning .NET Core to build apps and libraries
 author: richlander
 ms.date: 03/16/2017
 titleSuffix: ""
-ms.custom: seodec18
 ---
 # Learn .NET Core and the .NET Core SDK tools by exploring these tutorials
 
@@ -30,10 +29,10 @@ The following tutorials are available for learning about .NET Core.
 - [Get started with .NET Core on macOS using Visual Studio for Mac](using-on-mac-vs.md)
 - [Building a complete .NET Core solution on macOS using Visual Studio for Mac](using-on-mac-vs-full-solution.md)
 
-## Build applications with the .NET Core CLI tools
+## Build applications with the .NET Core CLI
 
-- [Get started with .NET Core on Windows/Linux/macOS using the .NET Core CLI tools](cli-create-console-app.md)
-- [Organizing and testing projects with the .NET Core CLI tools](testing-with-cli.md)
+- [Get started with .NET Core on Windows/Linux/macOS using the .NET Core CLI](cli-create-console-app.md)
+- [Organizing and testing projects with the .NET Core CLI](testing-with-cli.md)
 - [Get started with F#](../../fsharp/get-started/get-started-command-line.md)
 
 ## Other
@@ -42,6 +41,6 @@ The following tutorials are available for learning about .NET Core.
 - [Unit testing with MSTest and .NET Core](../testing/unit-testing-with-mstest.md)
 - [Developing Libraries with Cross Platform Tools](libraries.md)
 - [Hosting .NET Core from native code](netcore-hosting.md)
-- [Create a custom template for dotnet new](cli-templates-create-item-template.md)
+- [Create templates for the CLI](cli-templates-create-item-template.md)
 
 For tutorials about developing ASP.NET Core web applications, see the [ASP.NET Core documentation](/aspnet/core/).

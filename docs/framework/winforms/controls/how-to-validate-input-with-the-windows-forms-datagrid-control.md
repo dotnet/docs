@@ -1,5 +1,5 @@
 ---
-title: "How to: Validate Input with the Windows Forms DataGrid Control"
+title: Validate Input with DataGrid Control
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

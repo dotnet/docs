@@ -1,5 +1,5 @@
 ---
-title: "Timer Component (Windows Forms)"
+title: "Timer Component"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Timer component [Windows Forms]"

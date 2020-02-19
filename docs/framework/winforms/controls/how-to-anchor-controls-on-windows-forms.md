@@ -1,5 +1,5 @@
 ---
-title: "How to: Anchor Controls on Windows Forms"
+title: Anchor Controls
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Anchor property [Windows Forms], enabling resizable forms"

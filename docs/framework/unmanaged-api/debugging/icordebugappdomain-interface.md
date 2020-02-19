@@ -23,16 +23,16 @@ Provides methods for debugging application domains. This interface is a subclass
   
 |Method|Description|  
 |------------|-----------------|  
-|[Attach Method](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomain-attach-method.md)|Attaches the debugger to the application domain.|  
-|[EnumerateAssemblies Method](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomain-enumerateassemblies-method.md)|Gets an enumerator for the assemblies in the application domain.|  
-|[EnumerateBreakpoints Method](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomain-enumeratebreakpoints-method.md)|Gets an enumerator for all active breakpoints in the application domain.|  
-|[EnumerateSteppers Method](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomain-enumeratesteppers-method.md)|Gets an enumerator for all active steppers in the application domain.|  
-|[GetId Method](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomain-getid-method.md)|Gets the unique ID of the application domain.|  
-|[GetModuleFromMetaDataInterface Method](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomain-getmodulefrommetadatainterface-method.md)|Gets the ICorDebugModule object with the given metadata interface.|  
-|[GetName Method](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomain-getname-method.md)|Gets the name of the application domain.|  
-|[GetObject Method](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomain-getobject-method.md)|Gets an interface pointer to the common language runtime (CLR) application domain.|  
-|[GetProcess Method](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomain-getprocess-method.md)|Gets the process containing the application domain.|  
-|[IsAttached Method](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomain-isattached-method.md)|Determines whether the debugger is attached to the application domain.|  
+|[Attach Method](icordebugappdomain-attach-method.md)|Attaches the debugger to the application domain.|  
+|[EnumerateAssemblies Method](icordebugappdomain-enumerateassemblies-method.md)|Gets an enumerator for the assemblies in the application domain.|  
+|[EnumerateBreakpoints Method](icordebugappdomain-enumeratebreakpoints-method.md)|Gets an enumerator for all active breakpoints in the application domain.|  
+|[EnumerateSteppers Method](icordebugappdomain-enumeratesteppers-method.md)|Gets an enumerator for all active steppers in the application domain.|  
+|[GetId Method](icordebugappdomain-getid-method.md)|Gets the unique ID of the application domain.|  
+|[GetModuleFromMetaDataInterface Method](icordebugappdomain-getmodulefrommetadatainterface-method.md)|Gets the ICorDebugModule object with the given metadata interface.|  
+|[GetName Method](icordebugappdomain-getname-method.md)|Gets the name of the application domain.|  
+|[GetObject Method](icordebugappdomain-getobject-method.md)|Gets an interface pointer to the common language runtime (CLR) application domain.|  
+|[GetProcess Method](icordebugappdomain-getprocess-method.md)|Gets the process containing the application domain.|  
+|[IsAttached Method](icordebugappdomain-isattached-method.md)|Determines whether the debugger is attached to the application domain.|  
   
 ## Remarks  
   
@@ -50,4 +50,4 @@ Provides methods for debugging application domains. This interface is a subclass
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

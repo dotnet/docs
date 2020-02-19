@@ -50,5 +50,5 @@ HRESULT GetRegister(
   
 ## See also
 
-- [VariableLocationType Enumeration](../../../../docs/framework/unmanaged-api/debugging/variablelocationtype-enumeration.md)
-- [ICorDebugVariableHome Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-interface.md)
+- [VariableLocationType Enumeration](variablelocationtype-enumeration.md)
+- [ICorDebugVariableHome Interface](icordebugvariablehome-interface.md)

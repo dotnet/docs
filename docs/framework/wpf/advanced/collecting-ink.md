@@ -1,5 +1,5 @@
 ---
-title: Collect ink in WPF apps
+title: Collect digital ink
 ms.date: 08/15/2018
 dev_langs:
   - "csharp"

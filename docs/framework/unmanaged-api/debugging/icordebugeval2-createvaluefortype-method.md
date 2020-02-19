@@ -36,7 +36,7 @@ HRESULT CreateValueForType (
  [out] Pointer to the address of an `ICorDebugValue` object that represents the value.  
   
 ## Remarks  
- `CreateValueForType` generalizes [ICorDebugEval::CreateValue](../../../../docs/framework/unmanaged-api/debugging/icordebugeval-createvalue-method.md) by allowing you to specify an arbitrary object type, including constructed types such as `List<int>`. The only purpose of this method is to generate a value that can be passed to a function evaluation.  
+ `CreateValueForType` generalizes [ICorDebugEval::CreateValue](icordebugeval-createvalue-method.md) by allowing you to specify an arbitrary object type, including constructed types such as `List<int>`. The only purpose of this method is to generate a value that can be passed to a function evaluation.  
   
  The type must be a class or a value type. You cannot use this method to create array values or string values.  
   

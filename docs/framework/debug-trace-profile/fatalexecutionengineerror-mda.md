@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "FatalExecutionEngineError MDA"
   - "managed debugging assistants (MDAs), fatal errors"
 ms.assetid: 8b559e44-2393-4e4e-8160-7558d37a4a89
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # fatalExecutionEngineError MDA
 The `fatalExecutionEngineError` managed debugging assistant (MDA) is activated when a fatal error in the common language runtime (CLR) has been detected. The process will be terminated.  

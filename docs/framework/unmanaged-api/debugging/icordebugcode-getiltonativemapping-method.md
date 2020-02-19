@@ -56,4 +56,4 @@ HRESULT GetILToNativeMapping (
   
 ## See also
 
-- [ICorDebugCode Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugcode-interface1.md)
+- [ICorDebugCode Interface](icordebugcode-interface1.md)

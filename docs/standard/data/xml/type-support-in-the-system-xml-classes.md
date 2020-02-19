@@ -3,8 +3,6 @@ title: "Type Support in the System.Xml Classes"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: 63570538-06e3-4401-ad4d-ac50be90c7bf
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Type Support in the System.Xml Classes
 In the .NET Framework version 2.0, the core XML classes have been enhanced to include type support features. The <xref:System.Xml.XmlReader>, <xref:System.Xml.XmlWriter>, and <xref:System.Xml.XPath.XPathNavigator> classes include type support features including the ability to convert between XML Schema types and common language runtime (CLR) types.  

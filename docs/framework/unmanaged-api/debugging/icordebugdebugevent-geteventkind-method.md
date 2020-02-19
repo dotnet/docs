@@ -16,7 +16,7 @@ HRESULT GetEventKind(
   
 ## Parameters  
  pDebugEventKind  
- A pointer to a [CorDebugDebugEventKind](../../../../docs/framework/unmanaged-api/debugging/cordebugdebugeventkind-enumeration.md) enumeration member that indicates the type of event.  
+ A pointer to a [CorDebugDebugEventKind](cordebugdebugeventkind-enumeration.md) enumeration member that indicates the type of event.  
   
 ## Remarks  
  Based on the value of `pDebugEventKind`, you can call `QueryInterface` to get a more precise debug event interface that has additional data.  
@@ -35,5 +35,5 @@ HRESULT GetEventKind(
   
 ## See also
 
-- [ICorDebugDebugEvent Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugdebugevent-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugDebugEvent Interface](icordebugdebugevent-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

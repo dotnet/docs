@@ -3,7 +3,7 @@ title: Install .NET Core on openSUSE 15 - package manager - .NET Core
 description: Use a package manager to install .NET Core SDK and runtime on openSUSE 15.
 author: thraka
 ms.author: adegeo
-ms.date: 12/04/2019
+ms.date: 12/26/2019
 ---
 
 # openSUSE 15 Package Manager - Install .NET Core
@@ -16,9 +16,9 @@ This article describes how to use a package manager to install .NET Core on open
 
 Before installing .NET, you'll need to:
 
-- Register the Microsoft key
-- register the product repository
-- Install required dependencies
+- Register the Microsoft key.
+- Register the product repository.
+- Install required dependencies.
 
 This only needs to be done once per machine.
 
@@ -59,3 +59,11 @@ sudo zypper install dotnet-runtime-3.1
 ## How to install other versions
 
 [!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
+
+## Troubleshoot the package manager
+
+This section provides information on common errors you may get while using the package manager to install .NET Core.
+
+### Failed to fetch
+
+[!INCLUDE [package-manager-failed-to-fetch-rpm](includes/package-manager-failed-to-fetch-rpm.md)]

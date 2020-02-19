@@ -1,5 +1,6 @@
 ---
-title: "How to: Create a Windows Forms application from the command line"
+title: Create a Windows Forms application from the command line
+titleSuffix: ""
 ms.date: "03/14/2018"
 dev_langs: 
   - "csharp"

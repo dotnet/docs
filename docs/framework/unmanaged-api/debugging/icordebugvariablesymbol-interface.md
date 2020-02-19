@@ -10,11 +10,11 @@ Retrieves the debug symbol information for a variable.
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetName Method](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablesymbol-getname-method.md)|Gets the name of a variable.|  
-|[GetSize Method](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablesymbol-getsize-method.md)|Gets the size of a variable in bytes.|  
-|[GetSlotIndex Method](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablesymbol-getslotindex-method.md)|Gets the managed slot index of a local variable.|  
-|[GetValue Method](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablesymbol-getvalue-method.md)|Gets the value of a variable as a byte array.|  
-|[SetValue Method](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablesymbol-setvalue-method.md)|Assigns the value of a byte array to a variable.|  
+|[GetName Method](icordebugvariablesymbol-getname-method.md)|Gets the name of a variable.|  
+|[GetSize Method](icordebugvariablesymbol-getsize-method.md)|Gets the size of a variable in bytes.|  
+|[GetSlotIndex Method](icordebugvariablesymbol-getslotindex-method.md)|Gets the managed slot index of a local variable.|  
+|[GetValue Method](icordebugvariablesymbol-getvalue-method.md)|Gets the value of a variable as a byte array.|  
+|[SetValue Method](icordebugvariablesymbol-setvalue-method.md)|Assigns the value of a byte array to a variable.|  
   
 ## Remarks  
   
@@ -32,5 +32,5 @@ Retrieves the debug symbol information for a variable.
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

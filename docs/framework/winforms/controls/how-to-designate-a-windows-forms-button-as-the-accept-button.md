@@ -1,5 +1,5 @@
 ---
-title: "How to: Designate a Windows Forms Button as the Accept Button"
+title: Designate a Button as the Accept Button
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Select Text in the Windows Forms TextBox Control"
+title: Select Text in TextBox Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

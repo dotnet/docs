@@ -1,5 +1,5 @@
 ---
-title: "MenuStrip Control Overview (Windows Forms)"
+title: "MenuStrip Control Overview"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "MenuStrip"

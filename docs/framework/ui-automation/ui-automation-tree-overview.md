@@ -30,7 +30,7 @@ ms.assetid: 03b98058-bdb3-47a0-8ff7-45e6cdf67166
   
 <a name="uiautomation_raw_view"></a>   
 ### Raw View  
- The raw view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree is the full tree of <xref:System.Windows.Automation.AutomationElement> objects for which the desktop is the root. The raw view closely follows the native programmatic structure of an application and therefore is the most detailed view available. It is also the base on which the other views of the tree are built. Because this view depends on the underlying [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] framework, the raw view of a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] button will have a different raw view than a [!INCLUDE[TLA2#tla_win32](../../../includes/tla2sharptla-win32-md.md)] button.  
+ The raw view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree is the full tree of <xref:System.Windows.Automation.AutomationElement> objects for which the desktop is the root. The raw view closely follows the native programmatic structure of an application and therefore is the most detailed view available. It is also the base on which the other views of the tree are built. Because this view depends on the underlying [!INCLUDE[TLA2#tla_ui](../../../includes/tla2sharptla-ui-md.md)] framework, the raw view of a [!INCLUDE[TLA2#tla_winclient](../../../includes/tla2sharptla-winclient-md.md)] button will have a different raw view than a Win32 button.  
   
  The raw view is obtained by searching for elements without specifying properties or by using the <xref:System.Windows.Automation.TreeWalker.RawViewWalker> to navigate the tree.  
   

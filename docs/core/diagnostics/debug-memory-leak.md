@@ -1,14 +1,12 @@
 ---
 title: Debug a memory leak tutorial
 description: Learn how to debug a memory leak in .NET Core.
-author: sdmaclea
-ms.author: stmaclea
 ms.topic: tutorial
 ms.date: 12/17/2019
 ---
 # Tutorial: Debug a memory leak in .NET Core
 
-**This article applies to: ✓** .NET Core 3.0 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
 
 This tutorial demonstrates the tools to analyze a .NET Core memory leak.
 

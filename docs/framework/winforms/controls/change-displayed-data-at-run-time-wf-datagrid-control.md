@@ -1,5 +1,5 @@
 ---
-title: "How to: Change Displayed Data at Run Time in the Windows Forms DataGrid Control"
+title: Change Displayed Data at Run Time in DataGrid Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

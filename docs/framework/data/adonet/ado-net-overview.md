@@ -1,5 +1,5 @@
 ---
-title: "ADO.NET Overview"
+title: "Overview"
 ms.date: "03/30/2017"
 ms.assetid: ee3bc1d8-11db-4be4-89eb-c708cf04117d
 ---

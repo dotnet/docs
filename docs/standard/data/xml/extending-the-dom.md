@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: b5489c96-4afd-439a-a25d-fc82eb4a148d
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Extending the DOM
 

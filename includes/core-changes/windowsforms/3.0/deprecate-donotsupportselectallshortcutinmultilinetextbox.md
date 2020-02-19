@@ -1,4 +1,4 @@
-### Switch.System.Windows.Forms.DoNotSupportSelectAllShortcutInMultilineTextBox compatibility switch not supported
+### DoNotSupportSelectAllShortcutInMultilineTextBox compatibility switch not supported
 
 The `Switch.System.Windows.Forms.DoNotSupportSelectAllShortcutInMultilineTextBox` compatibility switch, which was introduced in .NET Framework 4.6.1, is not supported in Windows Forms on .NET Core 3.0.
 

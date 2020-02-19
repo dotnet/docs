@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "reading data, strings"
   - "streams, reading characters from string"
 ms.assetid: 27ea5e52-6db8-42d8-980a-50bcfc7fd270
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Read characters from a string
 The following code examples show how to read characters synchronously or asynchronously from a string.  

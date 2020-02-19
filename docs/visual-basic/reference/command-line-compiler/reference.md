@@ -46,7 +46,7 @@ or
   
  The Vbc.rsp response file, which references commonly used .NET Framework assemblies, is used by default. Use `-noconfig` if you do not want the compiler to use Vbc.rsp.  
   
- The short form of `-reference` is `/r`.  
+ The short form of `-reference` is `-r`.  
   
 ## Example  
  The following command compiles source file `Input.vb` and reference assemblies from `Metad1.dll` and `Metad2.dll` to produce `Out.exe`.  

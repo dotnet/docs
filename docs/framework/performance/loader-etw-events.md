@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "loader events [.NET Framework]"
   - "ETW, loader events (CLR)"
 ms.assetid: cb403cc6-56f8-4609-b467-cdfa09f07909
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Loader ETW Events
 These events collect information relating to loading and unloading application domains, assemblies, and modules.  

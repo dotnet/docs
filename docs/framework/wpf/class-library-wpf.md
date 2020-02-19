@@ -1,5 +1,5 @@
 ---
-title: "Class Library (WPF)"
+title: "Class Library"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "WPF class library [WPF]"

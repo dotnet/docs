@@ -1,5 +1,5 @@
 ---
-title: "DataGridView Control (Windows Forms)"
+title: "DataGridView Control"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "tables [Windows Forms]"

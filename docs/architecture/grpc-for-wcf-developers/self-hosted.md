@@ -36,13 +36,13 @@ When you publish a .NET Core application, you can choose to create a *framework-
 
 To publish a self-contained build of the application that does not require the .NET Core 3.0 runtime to be installed on the host, specify the runtime to be included with the application. Use the `-r` (or `--runtime`) flag.
 
-```console
+```dotnetcli
 dotnet publish -c Release -r win-x64 -o ./publish
 ```
 
 To publish a framework-dependent build, omit the `-r` flag.
 
-```console
+```dotnetcli
 dotnet publish -c Release -o ./publish
 ```
 
@@ -60,7 +60,7 @@ You can override the source name used in the event log by setting a `SourceName`
 
 More information on logging is at the end of this chapter.
 
-## Run your app as a Linux service by using systemd
+## Run your app as a Linux service with systemd
 
 To configure your ASP.NET Core application to run as a Linux service (or *daemon* in Linux parlance), install the [Microsoft.Extensions.Hosting.Systemd](https://www.nuget.org/packages/Microsoft.Extensions.Hosting.Systemd) package from NuGet. Then add a call to `UseSystemd` to the `CreateHostBuilder` method in `Program.cs`.
 
@@ -82,10 +82,9 @@ Now publish your application. The application can be either framework dependent 
 * From Visual Studio by right-clicking the project and selecting **Publish** on the shortcut menu. 
 * From the .NET Core CLI, by using the following command:
 
-  ```console
+  ```dotnetcli
   dotnet publish -c Release -r linux-x64 -o ./publish
   ```
-
 Copy the complete contents of the `publish` directory to an installation folder on the Linux host. Registering the service requires a special file, called a *unit file*, to be added to the `/etc/systemd/system` directory. You'll need root permission to create a file in this folder. Name the file with the identifier that you want `systemd` to use and the `.service` extension. For example, use `/etc/systemd/system/myapp.service`.
 
 The service file uses INI format, as shown in this example:

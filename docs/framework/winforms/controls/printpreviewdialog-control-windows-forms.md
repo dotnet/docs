@@ -1,5 +1,5 @@
 ---
-title: "PrintPreviewDialog Control (Windows Forms)"
+title: "PrintPreviewDialog Control"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "PrintPreviewDialog control (using designer)"
@@ -25,9 +25,6 @@ The Windows Forms `PrintPreviewDialog` control is a pre-configured dialog box us
 ## Related Sections  
  [Controls to Use on Windows Forms](controls-to-use-on-windows-forms.md)  
  Provides a complete list of Windows Forms controls, with links to information on their use.  
-  
- [Essential Code for Windows Forms Dialog Boxes](https://go.microsoft.com/fwlink/?LinkID=102575)  
- Discusses the Windows Forms dialog box controls and components and the code necessary for executing their basic functions. (MSDN Online Library technical article)  
   
  [Dialog-Box Controls and Components](dialog-box-controls-and-components-windows-forms.md)  
  Lists the different dialog-box controls for Windows Forms.  

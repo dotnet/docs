@@ -27,7 +27,7 @@ If this is your first .NET for Apache Spark application, start with the [Getting
 
 1. In your command prompt, run the following commands to create a new console application:
 
-   ```console
+   ```dotnetcli
    dotnet new console -o mySparkStreamingApp
    cd mySparkStreamingApp
    ```
@@ -36,7 +36,7 @@ If this is your first .NET for Apache Spark application, start with the [Getting
 
 1. To use .NET for Apache Spark in an app, install the Microsoft.Spark package. In your console, run the following command:
 
-   ```console
+   ```dotnetcli
    dotnet add package Microsoft.Spark
    ```
 

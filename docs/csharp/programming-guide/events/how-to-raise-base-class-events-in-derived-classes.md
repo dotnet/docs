@@ -1,6 +1,5 @@
 ---
 title: "How to raise base class events in derived classes - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "events [C#], in derived classes"

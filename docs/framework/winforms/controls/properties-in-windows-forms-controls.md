@@ -1,5 +1,5 @@
 ---
-title: "Properties in Windows Forms Controls"
+title: Properties of controls
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "custom controls [Windows Forms], properties overview (using code)"

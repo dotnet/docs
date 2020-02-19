@@ -1,15 +1,11 @@
 ---
 title: dotnet clean command
 description: The dotnet clean command cleans the current directory.
-ms.date: 06/26/2019
+ms.date: 02/14/2020
 ---
 # dotnet clean
 
-**This article applies to:** ✔️ .NET Core 1.x SDK and later versions
-
-<!-- todo: uncomment when all CLI commands are reviewed
-[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
--->
+**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
 
 ## Name
 
@@ -35,9 +31,9 @@ The MSBuild project or solution to clean. If a project or solution file is not s
 
 ## Options
 
-* **`-c|--configuration {Debug|Release}`**
+* **`-c|--configuration <CONFIGURATION>`**
 
-  Defines the build configuration. The default value is `Debug`. This option is only required when cleaning if you specified it during build time.
+  Defines the build configuration. The default for most projects is `Debug`, but you can override the build configuration settings in your project. This option is only required when cleaning if you specified it during build time.
 
 * **`-f|--framework <FRAMEWORK>`**
 
@@ -61,7 +57,7 @@ The MSBuild project or solution to clean. If a project or solution file is not s
 
 * **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
-  Cleans the output folder of the specified runtime. This is used when a [self-contained deployment](../deploying/index.md#publish-self-contained) was created. Option available since .NET Core 2.0 SDK.
+  Cleans the output folder of the specified runtime. This is used when a [self-contained deployment](../deploying/index.md#publish-self-contained) was created.
 
 * **`-v|--verbosity <LEVEL>`**
 

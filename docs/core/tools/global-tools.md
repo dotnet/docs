@@ -22,7 +22,7 @@ A .NET Core tool is a special NuGet package that contains a console application.
 
   The tool binaries are installed in a default directory. You invoke the tool from the installation directory or any of its subdirectories. Different directories can use different versions of the same tool.
   
-  The .NET CLI uses manifest files to keep track of which tools are installed as local to a directory. These manifest files are saved in the source code repository, so they're available when a contributor checks out the code from the repository. The contributor can then invoke a single .NET Core CLI command that installs all of the tools that are listed in the manifest files.
+  The .NET CLI uses manifest files to keep track of which tools are installed as local to a directory. When the manifest file is saved in the root directory of a source code repository, a contributor can clone the repository and invoke a single .NET Core CLI command that installs all of the tools listed in the manifest files.
 
 > [!IMPORTANT]
 > .NET Core tools run in full trust. Do not install a .NET Core tool unless you trust the author.
@@ -35,7 +35,6 @@ Currently, .NET Core doesn't have a tool search feature. Here are some ways to f
 * Use [ToolGet](https://www.toolget.net/) to search for .NET tools.
 * See the source code for the tools created by the ASP.NET Core team in the [Tools directory of the dotnet/aspnetcore GitHub repository](https://github.com/dotnet/aspnetcore/tree/master/src/Tools).
 * Learn about diagnostic tools at [.NET Core dotnet diagnostic tools](../diagnostics/index.md#net-core-dotnet-diagnostic-global-tools).
-* Search for blog posts about .NET tools.
 * Search the [NuGet](https://www.nuget.org) website. However, the NuGet site doesn't yet have a feature that lets you search only for tool packages.
 
 ## Check the author and statistics
@@ -86,7 +85,7 @@ On Linux or macOS:
 dotnet tool install dotnetsay --tool-path ~/bin
 ```
 
-The .NET Core SDK doesn't add this location automatically to the PATH environment variable. To invoke a tool-path tool, you have to make sure the command is available by using one of the following methods:
+The .NET Core SDK doesn't add this location automatically to the PATH environment variable. To [invoke a tool-path tool](#invoke-a-tool-path-tool), you have to make sure the command is available by using one of the following methods:
 
 * Add the installation directory to the PATH environment variable.
 * Specify the full path to the tool when you invoke it.
@@ -179,7 +178,7 @@ botsay          1.0.0        botsay         /home/name/repository/.config/dotnet
 dotnetsay       2.1.3        dotnetsay      /home/name/repository/.config/dotnet-tools.json
 ```
 
-As shown in this example, the list shows local tools. To see global tools, use the `--global` option, and to see tool-path global tools, use the `--tool-path` option.
+As shown in this example, the list shows local tools. To see global tools, use the `--global` option, and to see tool-path tools, use the `--tool-path` option.
 
 ### Invoke a global tool
 
@@ -207,7 +206,7 @@ In this scenario, `dotnet doc` and `dotnet dotnet-doc` invoke the local tool. To
 dotnet-doc
 ```
 
-### Invoke a tool-path global tool
+### Invoke a tool-path tool
 
 To invoke a global tool that is installed by using the `tool-path` option, make sure the command is available, as explained [earlier in this article](#install-a-global-tool-in-a-custom-location).
 

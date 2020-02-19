@@ -1,5 +1,5 @@
 ---
-title: "WPF Walkthroughs"
+title: "Walkthroughs"
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "walkthroughs [WPF]"
@@ -15,11 +15,11 @@ Walkthroughs give step-by-step instructions for common scenarios. This makes the
 
 |Title|Description|
 |-----------|-----------------|
-|[Walkthrough: Building a Simple WPF Application with the WPF Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb546972(v=vs.100))|Demonstrates how to build a simple WPF application with the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)].|
+|[Walkthrough: Building a Simple WPF Application with the WPF Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb546972(v=vs.100))|Demonstrates how to build a simple WPF application with the WPF Designer.|
 |[Walkthrough: Constructing a Dynamic Layout](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb514519(v=vs.100))|Demonstrates creating a dynamic layout by using a <xref:System.Windows.Controls.Grid> panel control.|
 |[Walkthrough: Creating a Resizable Application by Using the WPF Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/bb546954(v=vs.100))|Demonstrates how to create window layouts that are resizable by the user at run time.|
-|[Walkthrough: Creating a Data Binding by Using the WPF Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/dd434207(v=vs.100))|Demonstrates how to use the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)] to create data bindings that connect data to a control.|
-|[Walkthrough: Using a DesignInstance to Bind to Data in the Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/dd490796(v=vs.100))|Demonstrates how to use the [!INCLUDE[wpfdesigner_current_short](../../../../includes/wpfdesigner-current-short-md.md)] to create data bindings at design time for a data context that is assigned at run time.|
+|[Walkthrough: Creating a Data Binding by Using the WPF Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/dd434207(v=vs.100))|Demonstrates how to use the WPF Designer to create data bindings that connect data to a control.|
+|[Walkthrough: Using a DesignInstance to Bind to Data in the Designer](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/dd490796(v=vs.100))|Demonstrates how to use the WPF Designer to create data bindings at design time for a data context that is assigned at run time.|
 
 ## WPF Walkthroughs
 

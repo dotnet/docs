@@ -1,7 +1,6 @@
 ---
 title: Security in gRPC applications - gRPC for WCF developers
 description: Overview of call and channel authentication and authorization in gRPC.
-author: markrendle
 ms.date: 09/02/2019
 ---
 

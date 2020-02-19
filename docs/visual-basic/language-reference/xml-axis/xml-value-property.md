@@ -1,5 +1,5 @@
 ---
-title: "XML Value Property (Visual Basic)"
+title: "XML Value Property"
 ms.date: 07/20/2015
 f1_keywords:
   - "vb.XmlPropertyExtensionValue"

@@ -1,5 +1,5 @@
 ---
-title: "Extending the My Namespace in Visual Basic"
+title: "Extending the My Namespace"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.AddingMyExtensions"

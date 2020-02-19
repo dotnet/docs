@@ -1,7 +1,6 @@
 ---
 title: Machine learning glossary
 description: A glossary of important machine learning terms that are useful as you build your custom models in ML.NET.
-ms.custom: seodec18
 ms.topic: reference
 ms.date: 07/31/2019
 ---
@@ -23,9 +22,9 @@ A [classification](#classification) case where the [label](#label) is only one o
 
 ## Calibration
 
-Calibration is the process of mapping a raw score onto a class membership, for binary and multiclass classification. Some ML.NET trainers have a `NonCalibrated` suffix. These algorithms produce a raw score that then must be mapped to a class probability. 
+Calibration is the process of mapping a raw score onto a class membership, for binary and multiclass classification. Some ML.NET trainers have a `NonCalibrated` suffix. These algorithms produce a raw score that then must be mapped to a class probability.
 
-## Catalog 
+## Catalog
 
 In ML.NET, a catalog is a collection of extension functions, grouped by a common purpose.
 
@@ -51,7 +50,7 @@ Data is central to any machine learning application. In ML.NET data is represent
 
 A class in ML.NET that implements the <xref:Microsoft.ML.IEstimator%601> interface.
 
-An estimator is a specification of a transformation (both data preparation transformation and machine learning model training transformation). Estimators can be chained together into a pipeline of transformations. The parameters of an estimator or pipeline of estimators are learned when <xref:Microsoft.ML.IEstimator`1.Fit*> is called. The result of <xref:Microsoft.ML.IEstimator`1.Fit*> is a [Transformer](#transformer).
+An estimator is a specification of a transformation (both data preparation transformation and machine learning model training transformation). Estimators can be chained together into a pipeline of transformations. The parameters of an estimator or pipeline of estimators are learned when <xref:Microsoft.ML.IEstimator%601.Fit%2A> is called. The result of <xref:Microsoft.ML.IEstimator%601.Fit%2A> is a [Transformer](#transformer).
 
 ## Extension method
 
@@ -164,7 +163,7 @@ The process of identifying a [model](#model) for a given training data set. For 
 
 An ML.NET class that implements the <xref:Microsoft.ML.ITransformer> interface.
 
-A transformer transforms one <xref:Microsoft.ML.IDataView> into another. A transformer is created by training an [estimator](#estimator), or an estimator pipeline. 
+A transformer transforms one <xref:Microsoft.ML.IDataView> into another. A transformer is created by training an [estimator](#estimator), or an estimator pipeline.
 
 ## Unsupervised machine learning
 

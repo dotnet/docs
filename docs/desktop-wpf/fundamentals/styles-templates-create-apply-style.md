@@ -1,5 +1,5 @@
 ---
-title: Create a style for a control - WPF
+title: Create a style for a control
 description: Learn how to create and reference a control style in Windows Presentation Foundation and .NET Core.
 author: thraka
 ms.author: adegeo

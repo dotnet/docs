@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "I/O [.NET Framework], writing data"
   - "BinaryWriter class, examples"
 ms.assetid: e209d949-31e8-44ea-8e38-87f9093f3093
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Read and write to a newly created data file
 The <xref:System.IO.BinaryWriter?displayProperty=nameWithType> and <xref:System.IO.BinaryReader?displayProperty=nameWithType> classes are used for writing and reading data other than character strings. The following example shows how to create an empty file stream, write data to it, and read data from it. 

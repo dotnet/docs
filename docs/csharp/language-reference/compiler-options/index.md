@@ -24,7 +24,7 @@ In Visual Studio, you set compiler options in the *web.config* file. For more in
 - [Command-line Building With csc.exe](command-line-building-with-csc-exe.md)
 Information about building a Visual C# application from the command line.
 
-- [How to: Set Environment Variables for the Visual Studio Command Line](how-to-set-environment-variables-for-the-visual-studio-command-line.md)
+- [How to set environment variables for the Visual Studio Command Line](how-to-set-environment-variables-for-the-visual-studio-command-line.md)
 Provides steps for running *vsvars32.bat* to enable command-line builds.
 
 - [C# Compiler Options Listed by Category](listed-by-category.md)

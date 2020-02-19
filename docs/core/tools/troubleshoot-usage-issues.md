@@ -20,7 +20,7 @@ When a .NET Core tool fails to run, most likely you ran into one of the followin
 
 If the executable file isn't found, you'll see a message similar to the following:
 
-```
+```console
 Could not execute because the specified command or file was not found.
 Possible reasons for this include:
   * You misspelled a built-in dotnet command.
@@ -68,7 +68,7 @@ The name of the executable determines how you invoke the tool. The following tab
 
 ### Runtime not found
 
-.NET Core tools are [framework-dependent applications](../deploying/index.md#framework-dependent-deployments-fdd), which means they rely on a .NET Core runtime installed on your machine. If the expected runtime isn't found, they follow normal .NET Core runtime roll-forward rules such as:
+.NET Core tools are [framework-dependent applications](../deploying/index.md#publish-runtime-dependent), which means they rely on a .NET Core runtime installed on your machine. If the expected runtime isn't found, they follow normal .NET Core runtime roll-forward rules such as:
 
 * An application rolls forward to the highest patch release of the specified major and minor version.
 * If there's no matching runtime with a matching major and minor version number, the next higher minor version is used.
@@ -96,7 +96,7 @@ If you install the .NET Core SDK to a non-default location, you need to set the 
 
 There are a number of reasons the installation of a .NET Core global or local tool may fail. When the tool installation fails, you'll see a message similar to following one:
 
-```
+```console
 Tool '{0}' failed to install. This failure may have been caused by:
 
 * You are attempting to install a preview release and did not use the --version option to specify the version.

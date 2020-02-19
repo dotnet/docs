@@ -7,15 +7,13 @@ helpviewer_keywords:
   - "remove Element"
   - "<remove> Element"
 ms.assetid: 218c4464-e007-4539-803f-7c8b0a909fd8
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # \<remove> element for \<appSettings>
 
 Removes custom application settings.
 
-[**\<configuration>**](../configuration-element.md)   
-&nbsp;&nbsp;[**\<appSettings>**](appsettings-element-for-configuration.md)   
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<appSettings>**](appsettings-element-for-configuration.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**
 
 ## Syntax

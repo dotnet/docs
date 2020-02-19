@@ -1,5 +1,5 @@
 ---
-title: "Using Statement (Visual Basic)"
+title: "Using Statement"
 ms.date: 07/20/2015
 f1_keywords:
   - "vb.using"

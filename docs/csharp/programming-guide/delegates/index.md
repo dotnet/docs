@@ -1,6 +1,5 @@
 ---
 title: "Delegates - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "C# language, delegates"
@@ -46,9 +45,9 @@ A [delegate](../../language-reference/builtin-types/reference-types.md) is a typ
   
 - [Using Variance in Delegates](../concepts/covariance-contravariance/using-variance-in-delegates.md)  
   
-- [How to: Combine Delegates (Multicast Delegates)](./how-to-combine-delegates-multicast-delegates.md)  
+- [How to combine delegates (Multicast Delegates)](./how-to-combine-delegates-multicast-delegates.md)  
   
-- [How to: Declare, Instantiate, and Use a Delegate](./how-to-declare-instantiate-and-use-a-delegate.md)  
+- [How to declare, instantiate, and use a delegate](./how-to-declare-instantiate-and-use-a-delegate.md)
 
 ## C# Language Specification  
 

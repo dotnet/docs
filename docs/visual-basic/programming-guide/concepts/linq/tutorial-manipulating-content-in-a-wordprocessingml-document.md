@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Manipulating Content in a WordprocessingML Document (Visual Basic)"
+title: "Tutorial: Manipulating Content in a WordprocessingML Document"
 ms.date: 07/20/2015
 ms.assetid: f8028ba8-2dd1-4425-930c-8cc23176ebbc
 ---

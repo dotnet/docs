@@ -24,7 +24,7 @@ An *association end* identifies the [entity type](entity-type.md) on one end of 
   
  ![Example model with three entity types](./media/association-end/example-model-three-entity-types.gif)  
   
- The ADO.NET Entity Framework uses a domain-specific language (DSL) called conceptual schema definition language ([CSDL](./ef/language-reference/csdl-specification.md)) to define conceptual models. The CSDL below defines the `PublishedBy` association shown in the diagram above. Note that the type, name, and multiplicity of each association end are specified by XML attributes (the `Type`, `Role`, and `Multiplicity` attributes, respectively). Optional information about operations performed on an end is specified in an XML element (the `OnDelete` element). In this case, if a publisher is deleted, so are all associated books.  
+ The ADO.NET Entity Framework uses a domain-specific language (DSL) called conceptual schema definition language ([CSDL](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec)) to define conceptual models. The CSDL below defines the `PublishedBy` association shown in the diagram above. Note that the type, name, and multiplicity of each association end are specified by XML attributes (the `Type`, `Role`, and `Multiplicity` attributes, respectively). Optional information about operations performed on an end is specified in an XML element (the `OnDelete` element). In this case, if a publisher is deleted, so are all associated books.  
   
  [!code-xml[EDM_Example_Model#AssociationEnd](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books3.edmx#associationend)]  
   

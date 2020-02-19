@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 36997e04-f9f6-4254-a041-6767ac6c51d9
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # GetWin32ResBlob Method
 Retrieves Win32 resource blob. Call this method after setting assembly options.  

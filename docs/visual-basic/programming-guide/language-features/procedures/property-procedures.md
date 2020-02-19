@@ -1,5 +1,5 @@
 ---
-title: "Property Procedures (Visual Basic)"
+title: "Property Procedures"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Set statement [Visual Basic], Property procedures"

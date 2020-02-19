@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "security [.NET Framework], principals"
   - "principal objects, creating"
 ms.assetid: 56eb10ca-e61d-4ed2-af7a-555fc4c25a25
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Create a WindowsPrincipal Object
 There are two ways to create a <xref:System.Security.Principal.WindowsPrincipal> object, depending on whether code must repeatedly perform role-based validation or must perform it only once.  

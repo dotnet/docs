@@ -1,5 +1,5 @@
 ---
-title: "XML Attribute Axis Property (Visual Basic)"
+title: "XML Attribute Axis Property"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.XmlPropertyAttributeAxis"

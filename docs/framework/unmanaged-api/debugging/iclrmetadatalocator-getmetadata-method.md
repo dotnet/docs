@@ -78,4 +78,4 @@ HRESULT GetMetadata(
   
 ## See also
 
-- [ICLRMetadataLocator Interface](../../../../docs/framework/unmanaged-api/debugging/iclrmetadatalocator-interface.md)
+- [ICLRMetadataLocator Interface](iclrmetadatalocator-interface.md)

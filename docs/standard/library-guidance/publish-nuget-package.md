@@ -1,8 +1,6 @@
 ---
 title: Publishing a NuGet package
 description: Best practice recommendations for publishing .NET libraries to NuGet.
-author: jamesnk
-ms.author: mairaw
 ms.date: 10/02/2018
 ---
 # Publishing a NuGet package
@@ -18,11 +16,11 @@ NuGet packages are published and consumed from package repositories. While NuGet
 > [!NOTE]
 > NuGet.org [does not allow a package to be deleted](/nuget/policies/deleting-packages) once it is uploaded. A package can be unlisted so that it is not publicly visible in the UI but the `*.nupkg` can still be downloaded on restore. Also, nuget.org does not allow duplicate package versions. To correct a NuGet package with an error you have to unlist the incorrect package, increment the version number and publish a new version of the package.
 
-**✔️ DO** [publish stable packages and pre-release packages](/nuget/create-packages/publish-a-package) you want community feedback on to NuGet.org.
+✔️ DO [publish stable packages and pre-release packages](/nuget/create-packages/publish-a-package) you want community feedback on to NuGet.org.
 
-**✔️ CONSIDER** publishing pre-release packages to a MyGet feed from a continuous integration build.
+✔️ CONSIDER publishing pre-release packages to a MyGet feed from a continuous integration build.
 
-**✔️ CONSIDER** testing packages in your development environment using a local feed or MyGet. Check the package works then publish it to NuGet.org.
+✔️ CONSIDER testing packages in your development environment using a local feed or MyGet. Check the package works then publish it to NuGet.org.
 
 ## NuGet.org security
 
@@ -30,11 +28,11 @@ It's important that bad actors can't access your NuGet account and upload a mali
 
 ![alt text](./media/publish-nuget-package/nuget-2fa.png "NuGet Account Security")
 
-**✔️ DO** use a Microsoft account to sign in to NuGet.
+✔️ DO use a Microsoft account to sign in to NuGet.
 
-**✔️ DO** enable two-factor authentication for accessing NuGet.
+✔️ DO enable two-factor authentication for accessing NuGet.
 
-**✔️ DO** enable email notification when a package is published.
+✔️ DO enable email notification when a package is published.
 
 >[!div class="step-by-step"]
 >[Previous](sourcelink.md)

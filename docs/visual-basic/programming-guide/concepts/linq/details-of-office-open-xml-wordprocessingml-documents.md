@@ -1,5 +1,5 @@
 ---
-title: "Details of Office Open XML WordprocessingML Documents (Visual Basic)"
+title: "Details of Office Open XML WordprocessingML Documents"
 ms.date: 07/20/2015
 ms.assetid: 6b1e155c-7174-4244-a6de-0fddf9a0b0d7
 ---

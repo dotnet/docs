@@ -13,7 +13,11 @@ This tutorial expects you to have a machine you can use for development. The .NE
 
 ## Explore integer math
 
-Create a directory named *numbers-quickstart*. Make that the current directory and run `dotnet new console -n NumbersInCSharp -o .`.
+Create a directory named *numbers-quickstart*. Make that the current directory and run the following command:
+
+```dotnetcli
+dotnet new console -n NumbersInCSharp -o .
+```
 
 Open *Program.cs* in your favorite editor, and replace the line `Console.WriteLine("Hello World!");` with the following:
 
@@ -361,7 +365,7 @@ is the radius squared multiplied by PI. One hint: .NET contains a constant
 for PI, <xref:System.Math.PI?displayProperty=nameWithType> that you can use for that value.
 
 You should get an answer between 19 and 20.
-You can check your answer by [looking at the finished sample code on GitHub](https://github.com/dotnet/samples/tree/master/csharp/numbers-quickstart/Program.cs#L104-L106)
+You can check your answer by [looking at the finished sample code on GitHub](https://github.com/dotnet/samples/tree/master/csharp/numbers-quickstart/Program.cs#L104-L106).
 
 Try some other formulas if you'd like.
 

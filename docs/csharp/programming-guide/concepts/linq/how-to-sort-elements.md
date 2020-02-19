@@ -1,9 +1,9 @@
 ---
-title: "How to: Sort Elements (C#)"
+title: "How to sort elements (C#)"
 ms.date: 07/20/2015
 ms.assetid: aee6fbbc-81fd-4b3e-b40f-6ed7b3bd3fee
 ---
-# How to: Sort Elements (C#)
+# How to sort elements (C#)
 This example shows how to write a query that sorts its results.  
   
 ## Example  

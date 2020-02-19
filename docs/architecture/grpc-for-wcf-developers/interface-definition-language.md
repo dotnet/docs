@@ -1,7 +1,6 @@
 ---
 title: Interface Definition Language - gRPC for WCF Developers
 description: Introducing the Protocol Buffers IDL.
-author: markrendle
 ms.date: 09/02/2019
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Concepts and Terminology (Functional Transformation) (Visual Basic)"
+title: "Concepts and Terminology (Functional Transformation)"
 ms.date: 07/20/2015
 ms.assetid: 24fd244d-ebae-4721-8858-89bb544aea0b
 ---

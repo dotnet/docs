@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: fc73bcb9-6af6-44d8-bc39-2f4400325dae
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CreateALink Function
 Creates an instance of the Assembly Linker and sets a pointer to the specified interface.  

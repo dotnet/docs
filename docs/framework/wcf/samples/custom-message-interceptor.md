@@ -16,7 +16,7 @@ This sample demonstrates the use of the channel extensibility model. In particul
 >   
 > `<InstallDrive>:\WF_WCF_Samples`  
 >   
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Channels\MessageInterceptor`  
   
@@ -38,7 +38,7 @@ This sample demonstrates the use of the channel extensibility model. In particul
   
  These classes take an inner factory and listener, and delegate all but the `OnCreateChannel` and `OnAcceptChannel` calls to the inner factory and listener.  
   
-```csharp  
+```csharp
 class InterceptingChannelFactory<TChannel> : ChannelFactoryBase<TChannel>  
 { 
     //... 
@@ -54,7 +54,7 @@ class InterceptingChannelListener<TChannel> : ListenerFactoryBase<TChannel>
  The sample defines a custom binding element: `InterceptingBindingElement`. `InterceptingBindingElement` takes a `ChannelMessageInterceptor` as an input, and uses this `ChannelMessageInterceptor` to manipulate messages that pass through it. This is the only class that must be public. The factory, listener, and channels can all be internal implementations of the public run-time interfaces.  
   
 ```csharp
-public class InterceptingBindingElement : BindingElement 
+public class InterceptingBindingElement : BindingElement
 {
 }
 ```  
@@ -75,7 +75,7 @@ public abstract class InterceptingElement : BindingElementExtensionElement
 ## Example: Droppable Message Inspector  
  Included in the sample is an example implementation of `ChannelMessageInspector` which drops messages.  
   
-```csharp  
+```csharp
 class DroppingServerElement : InterceptingElement  
 {  
     protected override ChannelMessageInterceptor CreateMessageInterceptor()  

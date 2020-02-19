@@ -16,14 +16,14 @@ topic_type:
   - "apiref"
 ---
 # ICLRDataTarget2 Interface
-A subclass of [ICLRDataTarget](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md) that is used by the data access services layer to manipulate virtual memory regions in the target process.  
+A subclass of [ICLRDataTarget](iclrdatatarget-interface.md) that is used by the data access services layer to manipulate virtual memory regions in the target process.  
   
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
-|[AllocVirtual Method](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget2-allocvirtual-method.md)|Allocates memory in the address space of the target process.|  
-|[FreeVirtual Method](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget2-freevirtual-method.md)|Frees memory that was previously allocated in the address space of the target process.|  
+|[AllocVirtual Method](iclrdatatarget2-allocvirtual-method.md)|Allocates memory in the address space of the target process.|  
+|[FreeVirtual Method](iclrdatatarget2-freevirtual-method.md)|Frees memory that was previously allocated in the address space of the target process.|  
   
 ## Remarks  
  The API client (that is, the debugger) must implement this interface as appropriate for the particular target process. For example, a live process would have an implementation different from that of a memory dump. The target may not support modification of its memory regions.  
@@ -39,5 +39,5 @@ A subclass of [ICLRDataTarget](../../../../docs/framework/unmanaged-api/debuggin
   
 ## See also
 
-- [ICLRDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICLRDataTarget Interface](iclrdatatarget-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

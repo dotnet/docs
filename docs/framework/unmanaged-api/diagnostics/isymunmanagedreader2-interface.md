@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: a01a881b-82a3-4b3e-a3a9-9dc305c2e5f7
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedReader2 Interface
 Represents a symbol reader that provides access to documents, methods, and variables within a symbol store. This interface extends the [ISymUnmanagedReader](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md) interface.  

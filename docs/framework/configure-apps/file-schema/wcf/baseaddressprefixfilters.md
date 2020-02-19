@@ -49,9 +49,9 @@ Represents a collection of configuration elements that specify pass through filt
   
  IIS supports specifying multiple IIS bindings for each site, which results in multiple base addresses for each scheme. Because a WCF service hosted under a site allows binding to only one base address for each scheme, you can use the prefix filter feature to pick the required base address of the hosted service. The incoming base addresses, supplied by IIS, are filtered based on the optional prefix list filter.  
   
- For example, your site can contain the following base addresses.  
+ For example, your site can contain the following base addresses:
   
-```  
+``` 
 http://testl.fabrikam.com/Service.svc  
 http://test2.fabrikam.com/Service.svc  
 ```  

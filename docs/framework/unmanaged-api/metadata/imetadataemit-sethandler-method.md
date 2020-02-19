@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: c6c1aaaf-e2cd-407c-b73e-fbe6ffd83bb3
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::SetHandler Method
 Sets the method referenced by the specified `IUnknown` pointer as a notification callback for token remaps.  

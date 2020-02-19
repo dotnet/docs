@@ -1,5 +1,5 @@
 ---
-title: "End <keyword> Statement (Visual Basic)"
+title: "End <keyword> Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.EndDefinition"

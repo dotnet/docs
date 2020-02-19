@@ -1,5 +1,5 @@
 ---
-title: XML Documentation (F#)
+title: XML Documentation
 description: Learn about support in F# for generating documentation from comments.
 ms.date: 05/16/2016
 ---

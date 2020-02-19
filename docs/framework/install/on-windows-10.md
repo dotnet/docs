@@ -1,8 +1,6 @@
 ---
 title: Install the .NET Framework on Windows 10
 description: Learn how to install the .NET Framework on Windows 10 or Windows Server 2016.
-author: rlander
-ms.author: mairaw
 ms.date: 04/18/2019
 ms.custom: "updateeachrelease"
 ---
@@ -46,7 +44,7 @@ If you're using Windows 10 1507 or 1511 and you want to install the .NET Framewo
 
 ## .NET Framework 4.6.2
 
-The [.NET Framework 4.6.2](https://www.microsoft.com/download/details.aspx?id=53345) is the latest supported .NET Framework version on Windows 10 1507 and 1511.
+The [.NET Framework 4.6.2](https://dotnet.microsoft.com/download/dotnet-framework/net462) is the latest supported .NET Framework version on Windows 10 1507 and 1511.
 
 The .NET Framework 4.6.2 supports apps built for the .NET Framework 4.0 through 4.6.2.
 

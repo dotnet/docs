@@ -1,5 +1,5 @@
 ---
-title: "Conversion functions (Visual Basic)"
+title: "Conversion functions"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "conversions [Visual Basic], conversion functions"

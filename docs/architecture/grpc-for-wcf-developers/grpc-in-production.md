@@ -1,7 +1,6 @@
 ---
 title: gRPC in production - gRPC for WCF Developers
 description: Running ASP.NET Core gRPC applications in production environments
-author: markrendle
 ms.date: 09/02/2019
 ---
 

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 42145e8d-000f-4d0b-ae43-c08201190fa2
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::EnumFieldsWithName Method
 Enumerates FieldDef tokens of the specified type with the specified name.  

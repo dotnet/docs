@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 628f2a04-e529-407d-841e-3b3da219a9cb
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedDocument::FindClosestLine Method
 Returns the closest line that is a sequence point, given a line in this document that may or may not be a sequence point.  

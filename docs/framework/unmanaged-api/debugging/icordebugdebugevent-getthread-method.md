@@ -34,5 +34,5 @@ HRESULT GetThread(
   
 ## See also
 
-- [ICorDebugDebugEvent Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugdebugevent-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugDebugEvent Interface](icordebugdebugevent-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

@@ -15,7 +15,7 @@ helpviewer_keywords:
 topic_type: 
   - "Reference"
 ---
-# BeginEnumeration function
+# BeginMethodEnumeration function
 Begins an enumeration of the methods available for the object.  
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]

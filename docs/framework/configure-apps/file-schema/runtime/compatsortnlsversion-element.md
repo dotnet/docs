@@ -62,15 +62,15 @@ Specifies that the runtime should use legacy sort orders when performing string 
  [!code-csharp[String.BreakingChanges#1](../../../../../samples/snippets/csharp/VS_Snippets_CLR/string.breakingchanges/cs/example1.cs#1)]
  [!code-vb[String.BreakingChanges#1](../../../../../samples/snippets/visualbasic/VS_Snippets_CLR/string.breakingchanges/vb/example1.vb#1)]  
   
- When you run the example on the .NET Framework 4, it displays the following output.  
+ When you run the example on the .NET Framework 4, it displays the following output:
   
-```  
+```console
 sta follows a in the sort order.  
 ```  
   
- This is completely different from the output that is displayed when you run the example on the .NET Framework 3.5.  
+ This is completely different from the output that is displayed when you run the example on the .NET Framework 3.5:
   
-```  
+```console
 sta equals a in the sort order.  
 ```  
   

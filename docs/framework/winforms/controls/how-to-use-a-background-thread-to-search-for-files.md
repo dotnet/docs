@@ -34,7 +34,6 @@ The <xref:System.ComponentModel.BackgroundWorker> component replaces and adds fu
 Option Strict
 Option Explicit
 
-Imports System
 Imports System.IO
 Imports System.Threading
 Imports System.Windows.Forms
@@ -570,13 +569,12 @@ namespace Microsoft.Samples.DirectorySearcher
 Option Explicit
 Option Strict
 
-Imports Microsoft.Samples.DirectorySearcher
-Imports System
-Imports System.Drawing
 Imports System.Collections
 Imports System.ComponentModel
-Imports System.Windows.Forms
 Imports System.Data
+Imports System.Drawing
+Imports System.Windows.Forms
+Imports Microsoft.Samples.DirectorySearcher
 
 Namespace SampleUsage
 
@@ -658,14 +656,14 @@ End Namespace
 ```csharp
 namespace SampleUsage
 {
-   using Microsoft.Samples.DirectorySearcher;
    using System;
-   using System.Drawing;
    using System.Collections;
    using System.ComponentModel;
-   using System.Windows.Forms;
    using System.Data;
-
+   using System.Drawing;
+   using System.Windows.Forms;
+   using Microsoft.Samples.DirectorySearcher;
+   
    /// <summary>
    ///      Summary description for Form1.
    /// </summary>

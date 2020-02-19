@@ -1,5 +1,5 @@
 ---
-title: "Continue Statement (Visual Basic)"
+title: "Continue Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.continue"

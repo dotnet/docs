@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 07cf3bab-e193-4991-8205-3f41cf2d67b3
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # COR_PRF_FUNCTION_ARGUMENT_INFO Structure
 Represents a function's arguments, in left-to-right order.  
@@ -34,7 +32,7 @@ typedef struct _COR_PRF_FUNCTION_ARGUMENT_INFO {
   
 |Member|Description|  
 |------------|-----------------|  
-|`numRanges`|The number of blocks of arguments. That is, this value is the number of [COR_PRF_FUNCTION_ARGUMENT_RANGE](../../../../docs/framework/unmanaged-api/profiling/cor-prf-function-argument-range-structure.md) structures in the `ranges` array.|  
+|`numRanges`|The number of blocks of arguments. That is, this value is the number of [COR_PRF_FUNCTION_ARGUMENT_RANGE](cor-prf-function-argument-range-structure.md) structures in the `ranges` array.|  
 |`totalArgumentSize`|The total size of all arguments. In other words, this value is the sum of the argument lengths.|  
 |`ranges`|An array of `COR_PRF_FUNCTION_ARGUMENT_RANGE` structures, each of which represents one block of function arguments.|  
   
@@ -56,4 +54,4 @@ typedef struct _COR_PRF_FUNCTION_ARGUMENT_INFO {
   
 ## See also
 
-- [Profiling Structures](../../../../docs/framework/unmanaged-api/profiling/profiling-structures.md)
+- [Profiling Structures](profiling-structures.md)

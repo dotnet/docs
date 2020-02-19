@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: b95739fe-d2fa-4776-ae0d-31d9707ef799
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit2::SaveDelta Method
 Saves changes from the current edit-and-continue session to the specified file.  

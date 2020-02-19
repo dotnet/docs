@@ -1,5 +1,5 @@
 ---
-title: "-link (Visual Basic)"
+title: "-link"
 ms.date: 03/10/2018
 helpviewer_keywords: 
   - "l compiler option [Visual Basic]"
@@ -80,7 +80,7 @@ or
  The following command line compiles source file `OfficeApp.vb` and reference assemblies from `COMData1.dll` and `COMData2.dll` to produce `OfficeApp.exe`.  
   
 ```console  
-vbc -link:COMData1.dll,COMData2.dll /out:OfficeApp.exe OfficeApp.vb  
+vbc -link:COMData1.dll,COMData2.dll -out:OfficeApp.exe OfficeApp.vb  
 ```  
   
 ## See also

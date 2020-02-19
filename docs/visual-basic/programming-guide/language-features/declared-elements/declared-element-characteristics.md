@@ -1,5 +1,5 @@
 ---
-title: "Declared Element Characteristics (Visual Basic)"
+title: "Declared Element Characteristics"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "declared elements [Visual Basic], lifetime"

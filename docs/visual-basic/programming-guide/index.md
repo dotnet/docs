@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic Programming Guide"
+title: "Programming Guide"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Visual Basic code, language guide"

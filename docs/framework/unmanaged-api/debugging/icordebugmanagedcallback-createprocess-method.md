@@ -32,7 +32,7 @@ HRESULT CreateProcess (
  [in] A pointer to an ICorDebugProcess object that represents the process that has been attached or started.  
   
 ## Remarks  
- This method is not called until the common language runtime is initialized. Most of the [ICorDebug](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md) methods will return CORDBG_E_NOTREADY before the `CreateProcess` callback.  
+ This method is not called until the common language runtime is initialized. Most of the [ICorDebug](icordebug-interface.md) methods will return CORDBG_E_NOTREADY before the `CreateProcess` callback.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -45,4 +45,4 @@ HRESULT CreateProcess (
   
 ## See also
 
-- [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)
+- [ICorDebugManagedCallback Interface](icordebugmanagedcallback-interface.md)

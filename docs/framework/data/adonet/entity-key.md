@@ -21,7 +21,7 @@ An *entity key* is a [property](property.md) or a set of properties of an [entit
   
  ![Example model with three entity types](./media/entity-key/example-model-three-entity-types.gif)  
   
- The [ADO.NET Entity Framework](./ef/index.md) uses a domain-specific language (DSL) called conceptual schema definition language ([CSDL](./ef/language-reference/csdl-specification.md)) to define conceptual models. The CSDL below defines the `Book` entity type shown in the diagram above. Note that the entity key is defined by referencing the `ISBN` property of the entity type.  
+ The [ADO.NET Entity Framework](./ef/index.md) uses a domain-specific language (DSL) called conceptual schema definition language ([CSDL](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec)) to define conceptual models. The CSDL below defines the `Book` entity type shown in the diagram above. Note that the entity key is defined by referencing the `ISBN` property of the entity type.  
   
  [!code-xml[EDM_Example_Model#EntityExample](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books.edmx#entityexample)]  
   

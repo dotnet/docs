@@ -1,5 +1,5 @@
 ---
-title: "Sub Statement (Visual Basic)"
+title: "Sub Statement"
 ms.date: 05/12/2018
 f1_keywords:
   - "vb.Sub"

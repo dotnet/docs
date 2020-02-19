@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "MarshalCleanupError MDA"
   - "memory, cleanup errors"
 ms.assetid: 2f5d9e7c-ae51-4155-a435-54347aa1f091
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # marshalCleanupError MDA
 The `marshalCleanupError` managed debugging assistant (MDA) is activated when the common language runtime (CLR) encounters an error while attempting to clean up temporary structures and memory used for marshaling data types between native and managed code boundaries.  

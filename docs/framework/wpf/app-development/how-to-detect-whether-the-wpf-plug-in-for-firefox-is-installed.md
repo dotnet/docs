@@ -1,5 +1,6 @@
 ---
-title: "How to: Detect Whether the WPF Plug-In for Firefox Is Installed"
+title: Detect Whether WPF Plug-In for Firefox Is Installed
+titleSuffix: ""
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "plug-in for Firefox [WPF]"

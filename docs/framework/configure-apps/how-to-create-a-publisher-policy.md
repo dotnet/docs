@@ -99,7 +99,7 @@ gacutil /i policy.1.0.myAssembly.dll
 ```
 
 > [!IMPORTANT]
-> The publisher policy assembly cannot be added to the global assembly cache unless the original publisher policy file is located in the same directory as the assembly.
+> The publisher policy assembly cannot be added to the global assembly cache unless the original publisher policy file specified in the `/link` argument is located in the same directory as the assembly.
 
 ## See also
 

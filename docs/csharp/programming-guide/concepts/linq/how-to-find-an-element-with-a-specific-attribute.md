@@ -1,9 +1,9 @@
 ---
-title: "How to: Find an Element with a Specific Attribute (C#)"
+title: "How to find an element with a specific attribute (C#)"
 ms.date: 07/20/2015
 ms.assetid: b92591aa-3cfb-490e-99f6-da8de335e362
 ---
-# How to: Find an Element with a Specific Attribute (C#)
+# How to find an element with a specific attribute (C#)
 This topic shows how to find an element that has an attribute that has a specific value.  
   
 ## Example  

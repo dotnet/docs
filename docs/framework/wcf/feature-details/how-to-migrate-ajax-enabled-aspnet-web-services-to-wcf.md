@@ -58,7 +58,7 @@ This topic outlines procedures to migrate a basic ASP.NET AJAX service to an equ
     ```csharp
     public string HelloWorld()
     {
-         return "Hello World";
+        return "Hello World";
     }
     ```
 

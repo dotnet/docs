@@ -1,5 +1,5 @@
 ---
-title: "Keyboard Shortcuts for the Windows Forms DataGrid Control"
+title: Keyboard Shortcuts for DataGrid Control
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "keyboard shortcuts [Windows Forms], DataGrid control"

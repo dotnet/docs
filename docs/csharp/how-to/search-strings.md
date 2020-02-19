@@ -1,5 +1,5 @@
 ---
-title: "How to: search strings (C# Guide)"
+title: "How to search strings (C# Guide)"
 ms.date: 02/21/2018
 helpviewer_keywords: 
   - "searching strings [C#]"
@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: fb1d9a6d-598d-4a35-bd5f-b86012edcb2b
 ---
 
-# How to: search strings
+# How to search strings
 
 You can use two main strategies to search for text in strings. Methods of the <xref:System.String> class search for specific text. Regular expressions search for patterns in text.
 
@@ -47,7 +47,7 @@ The search pattern describes the text you search for. The following table descri
 [!code-csharp-interactive[Search using regular expressions](../../../samples/snippets/csharp/how-to/strings/SearchStrings.cs#3)]
   
 > [!TIP]
-> The `string` methods are usually better choices when you are searching for an exact string. Regular expressions are better when you are searching for some pattern is a source string.
+> The `string` methods are usually better choices when you are searching for an exact string. Regular expressions are better when you are searching for some pattern in a source string.
 
 ## Does a string follow a pattern?
 

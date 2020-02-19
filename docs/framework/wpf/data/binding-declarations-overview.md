@@ -104,9 +104,9 @@ Use the <xref:System.Windows.Data.Binding.Path%2A> property to specify the sourc
 
 - If you set <xref:System.Windows.Data.Binding.Path%2A> in XAML, you also need to escape (using XML entities) certain characters that are special to the XML language definition:
 
-  - Use `&` to escape the character "&".
+  - Use `&amp;` to escape the character "&".
 
-  - Use `>` to escape the end tag ">".
+  - Use `&gt;` to escape the end tag ">".
 
 - Additionally, if you describe the entire binding in an attribute using the markup extension syntax, you need to escape (using backslash \\) characters that are special to the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] markup extension parser:
 

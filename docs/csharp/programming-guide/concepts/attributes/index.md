@@ -19,7 +19,7 @@ Attributes can be placed on most any declaration, though a specific attribute mi
 
 In this example, the <xref:System.SerializableAttribute> attribute is used to apply a specific characteristic to a class:
 
-[!code-csharp[Using the serializable attribute](../../../../../samples/snippets/csharp/attributes/AttributesOverview.cs#1)]
+[!code-csharp[Using the serializable attribute](~/samples/snippets/csharp/attributes/AttributesOverview.cs#1)]
 
 A method with the attribute <xref:System.Runtime.InteropServices.DllImportAttribute> is declared like the following example:
 
@@ -27,12 +27,12 @@ A method with the attribute <xref:System.Runtime.InteropServices.DllImportAttrib
 
 More than one attribute can be placed on a declaration as the following example shows:
 
-[!code-csharp[Including the interop namespace](../../../../../samples/snippets/csharp/attributes/AttributesOverview.cs#3)]
-[!code-csharp[Declaring two way marshaling for arguments](../../../../../samples/snippets/csharp/attributes/AttributesOverview.cs#4)]
+[!code-csharp[Including the interop namespace](~/samples/snippets/csharp/attributes/AttributesOverview.cs#3)]
+[!code-csharp[Declaring two way marshaling for arguments](~/samples/snippets/csharp/attributes/AttributesOverview.cs#4)]
 
 Some attributes can be specified more than once for a given entity. An example of such a multiuse attribute is <xref:System.Diagnostics.ConditionalAttribute>:
 
-[!code-csharp[Using the conditional attribute](../../../../../samples/snippets/csharp/attributes/AttributesOverview.cs#5)]
+[!code-csharp[Using the conditional attribute](~/samples/snippets/csharp/attributes/AttributesOverview.cs#5)]
 
 > [!NOTE]
 > By convention, all attribute names end with the word "Attribute" to distinguish them from other items in the .NET libraries. However, you do not need to specify the attribute suffix when using attributes in code. For example, `[DllImport]` is equivalent to `[DllImportAttribute]`, but `DllImportAttribute` is the attribute's actual name in the .NET Framework Class Library.
@@ -113,7 +113,7 @@ For more information, see:
 
 - [Creating Custom Attributes (C#)](creating-custom-attributes.md)  
 - [Accessing Attributes by Using Reflection (C#)](accessing-attributes-by-using-reflection.md)  
-- [How to: Create a C/C++ Union by Using Attributes (C#)](how-to-create-a-c-cpp-union-by-using-attributes.md)  
+- [How to create a C/C++ union by using attributes (C#)](how-to-create-a-c-cpp-union-by-using-attributes.md)  
 - [Common Attributes (C#)](common-attributes.md)  
 - [Caller Information (C#)](../caller-information.md)  
 

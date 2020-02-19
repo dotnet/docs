@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "isolated storage, types"
   - "user authentication, isolated storage"
 ms.assetid: 14812988-473f-44ae-b75f-fd5c2f21fb7b
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Types of Isolation
 Access to isolated storage is always restricted to the user who created it. To implement this type of isolation, the common language runtime uses the same notion of user identity that the operating system recognizes, which is the identity associated with the process in which the code is running when the store is opened. This identity is an authenticated user identity, but impersonation can cause the identity of the current user to change dynamically.  
@@ -47,7 +45,7 @@ Access to isolated storage is always restricted to the user who created it. To i
  Note that except for roaming stores, isolated storage is always implicitly isolated by computer because it uses the storage facilities that are local to a given computer.  
   
 > [!IMPORTANT]
-> Isolated storage is not available for [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps. Instead, use the application data classes in the `Windows.Storage` namespaces included in the Windows Runtime API to store local data and files. For more information, see [Application data](https://docs.microsoft.com/previous-versions/windows/apps/hh464917(v=win.10)) in the Windows Dev Center.  
+> Isolated storage is not available for Windows 8.x Store apps. Instead, use the application data classes in the `Windows.Storage` namespaces included in the Windows Runtime API to store local data and files. For more information, see [Application data](https://docs.microsoft.com/previous-versions/windows/apps/hh464917(v=win.10)) in the Windows Dev Center.  
   
 <a name="UserAssembly"></a>   
 ## Isolation by User and Assembly  

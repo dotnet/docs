@@ -1,5 +1,5 @@
 ---
-title: "How to: Write a LINQ to XML Axis Method (Visual Basic)"
+title: "How to: Write a LINQ to XML Axis Method"
 ms.date: 07/20/2015
 ms.assetid: b676f025-a24c-4076-8713-aa809b2b8ce0
 ---

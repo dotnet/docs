@@ -1,5 +1,5 @@
 ---
-title: "Calling a Property or Method Using a String Name (Visual Basic)"
+title: "Calling a Property or Method Using a String Name"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "passing operators [Visual Basic]"

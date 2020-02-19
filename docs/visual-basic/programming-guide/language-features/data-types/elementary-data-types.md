@@ -1,5 +1,5 @@
 ---
-title: "Elementary Data Types (Visual Basic)"
+title: "Elementary Data Types"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "elementary data types [Visual Basic]"

@@ -1,7 +1,6 @@
 ---
 title: Protobuf messages - gRPC for WCF Developers
 description: Learn how Protobuf messages are defined in the IDL and generated in C#.
-author: markrendle
 ms.date: 09/09/2019
 ---
 

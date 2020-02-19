@@ -1,5 +1,5 @@
 ---
-title: "Sample Compilation Command Lines (Visual Basic)"
+title: "Sample Compilation Command Lines"
 ms.date: 03/13/2018
 helpviewer_keywords:
   - "command line [Visual Basic], compilers"

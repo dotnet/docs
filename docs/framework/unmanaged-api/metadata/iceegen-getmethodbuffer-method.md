@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: c7c5b39a-d4ac-41f1-9d1e-44163f563a49
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICeeGen::GetMethodBuffer Method
 Gets a buffer of the appropriate size for the method at the specified relative virtual address.  

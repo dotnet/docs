@@ -1,5 +1,5 @@
 ---
-title: "Filtering My.Application.Log Output (Visual Basic)"
+title: "Filtering My.Application.Log Output"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "My.Log object, filtering output"

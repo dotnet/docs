@@ -1,5 +1,5 @@
 ---
-title: "How to: Declare an Object by Using an Object Initializer (Visual Basic)"
+title: "How to: Declare an Object by Using an Object Initializer"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "declaring objects using object initializer"

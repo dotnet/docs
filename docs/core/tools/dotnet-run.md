@@ -5,7 +5,7 @@ ms.date: 02/19/2020
 ---
 # dotnet run
 
-**This article applies to: ✓** .NET Core 2.x SDK and later versions
+**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
 
 ## Name
 

@@ -1,5 +1,5 @@
 ---
-title: "How to: Add Controls to Windows Forms"
+title: Add Controls
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

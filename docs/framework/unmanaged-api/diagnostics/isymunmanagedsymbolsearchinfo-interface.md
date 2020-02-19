@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 30817373-0a21-49c1-a0c4-8e8daeecb8db
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedSymbolSearchInfo Interface
 Provides methods that get information about the search path. Obtain this interface by calling `QueryInterface` on an object that implements the [ISymUnmanagedReader](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedreader-interface.md) interface.  

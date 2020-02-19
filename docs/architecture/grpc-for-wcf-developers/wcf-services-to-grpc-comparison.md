@@ -1,7 +1,6 @@
 ---
 title: Comparing WCF to gRPC - gRPC for WCF Developers
 description: A comparison of the WCF and gRPC frameworks for building distributed applications.
-author: markrendle
 ms.date: 09/02/2019
 ---
 

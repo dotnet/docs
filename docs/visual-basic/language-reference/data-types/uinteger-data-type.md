@@ -1,5 +1,5 @@
 ---
-title: "UInteger Data Type (Visual Basic)"
+title: "UInteger Data Type"
 ms.date: 01/31/2018
 f1_keywords:
   - "vb.uinteger"

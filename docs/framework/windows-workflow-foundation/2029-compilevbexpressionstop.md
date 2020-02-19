@@ -14,10 +14,10 @@ ms.assetid: f0752c88-61f9-4579-81a1-d804fbc000a9
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
- Indicates the completion of a VB expression compilation.  
+ Indicates the completion of a Visual Basic expression compilation.  
   
 ## Message  
- Finished compiling VB expression.  
+ Finished compiling Visual Basic expression.  
   
 ## Details  
   

@@ -1,5 +1,5 @@
 ---
-title: "Developing Windows Forms Controls at Design Time"
+title: Develop Controls at Design Time
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Windows Forms controls [Windows Forms]"

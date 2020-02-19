@@ -1,5 +1,5 @@
 ---
-title: "-linkresource (Visual Basic)"
+title: "-linkresource"
 ms.date: 03/10/2018
 helpviewer_keywords: 
   - "/linkresource compiler option [Visual Basic]"

@@ -1,7 +1,6 @@
 ---
 title: Protobuf Any and Oneof fields for variant types - gRPC for WCF Developers
 description: Learn how to use the Any type and the Oneof keyword to represent variant object types in messages.
-author: markrendle
 ms.date: 09/09/2019
 ---
 

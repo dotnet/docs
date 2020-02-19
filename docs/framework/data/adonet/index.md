@@ -1,9 +1,11 @@
 ---
 title: "ADO.NET"
+titleSuffix: ""
 ms.date: "03/30/2017"
 ms.assetid: 5b96ed06-9759-4966-a797-a1d5f6ee50ca
 ---
 # ADO.NET
+
 ADO.NET is a set of classes that expose data access services for .NET Framework programmers. ADO.NET provides a rich set of components for creating distributed, data-sharing applications. It is an integral part of the .NET Framework, providing access to relational, XML, and application data. ADO.NET supports a variety of development needs, including the creation of front-end database clients and middle-tier business objects used by applications, tools, languages, or Internet browsers.  
   
 ## In This Section  
@@ -13,7 +15,7 @@ ADO.NET is a set of classes that expose data access services for .NET Framework 
  [ADO.NET Overview](ado-net-overview.md)  
  Provides an introduction to the design and components of ADO.NET.  
   
- [Entity Framework](https://go.microsoft.com/fwlink/?LinkID=213876)  
+ [Entity Framework](/ef/ef6/index)  
  Describes how to create applications using the Entity Framework.  
   
  [Securing ADO.NET Applications](securing-ado-net-applications.md)  
@@ -29,7 +31,7 @@ ADO.NET is a set of classes that expose data access services for .NET Framework 
  Provides information about LINQ to DataSet, including programming examples.  
   
  [Retrieving and Modifying Data in ADO.NET](retrieving-and-modifying-data.md)  
- Describes how to connect to a data source and how to retrieve and modify data using `Commands`, `DataReaders` and `DataAdapters`.  
+ Describes how to connect to a data source and how to retrieve and modify data using `Commands`, `DataReaders`, and `DataAdapters`.  
   
  [SQL Server and ADO.NET](./sql/index.md)  
  Describes how to work with features and functionality that are specific to SQL Server.  
@@ -45,7 +47,7 @@ ADO.NET is a set of classes that expose data access services for .NET Framework 
  Provides links to LINQ topics and samples using Visual Basic.  
   
  [WCF Data Services 4.5](../wcf/index.md)  
- Describes how to use [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] to deploy data services on the Web or an intranet that implement the Open Data Protocol (OData).  
+ Describes how to use WCF Data Services to deploy data services on the Web or an intranet that implement the Open Data Protocol (OData).  
   
  [.NET Framework Development Guide](../../development-guide.md)  
  Provides links to information about standard development tasks in the .NET Framework.  

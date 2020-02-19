@@ -1,5 +1,5 @@
 ---
-title: "How to: Read From Text Files in Visual Basic"
+title: "How to: Read From Text Files"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "extended characters [Visual Basic], reading"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Write a Query that Finds Elements Based on Context (Visual Basic)"
+title: "How to: Write a Query that Finds Elements Based on Context"
 ms.date: 07/20/2015
 ms.assetid: 0b085290-ddc1-4126-aaa0-e4c95a3d9a09
 ---

@@ -1,5 +1,5 @@
 ---
-title: "How to: Designate a Windows Forms Button as the Cancel Button"
+title: Designate a Button as the Cancel Button
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Declare a Property with Mixed Access Levels (Visual Basic)"
+title: "How to: Declare a Property with Mixed Access Levels"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "access levels [Visual Basic], properties"

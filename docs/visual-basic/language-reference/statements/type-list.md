@@ -1,5 +1,5 @@
 ---
-title: "Type List (Visual Basic)"
+title: "Type List"
 ms.date: 07/20/2015
 f1_keywords:
   - "StructureConstraint"

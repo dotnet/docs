@@ -1,7 +1,7 @@
 ---
 title: Deploy a model to Azure Functions
 description: Serve ML.NET sentiment analysis machine learning model for prediction over the internet using Azure Functions
-ms.date: 10/31/2019
+ms.date: 11/07/2019
 author: luisquintanilla
 ms.author: luquinta
 ms.custom: mvc, how-to
@@ -13,7 +13,7 @@ ms.custom: mvc, how-to
 Learn how to deploy a pre-trained ML.NET machine learning model for predictions over HTTP through an Azure Functions serverless environment.
 
 > [!NOTE]
-> `PredictionEnginePool` service extension is currently in preview.
+> This sample runs a preview version of the `PredictionEnginePool` service.
 
 ## Prerequisites
 
@@ -42,11 +42,11 @@ This sample is a **C# HTTP Trigger Azure Functions application** that uses a pre
 
     In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.Azure.Functions.Extensions**, select that package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
 
-1. Install the **Microsoft.Extensions.ML NuGet Package** version **1.3.1**:
+1. Install the **Microsoft.Extensions.ML NuGet Package** version **0.15.1**:
 
     In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Browse tab, search for **Microsoft.Extensions.ML**, select that package in the list, and select the **Install** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
 
-1. Install the **Microsoft.NET.Sdk.Functions NuGet Package** version 1.0.28+:
+1. Install the **Microsoft.NET.Sdk.Functions NuGet Package** version **1.0.28+**:
 
     In Solution Explorer, right-click on your project and select **Manage NuGet Packages**. Choose "nuget.org" as the Package source, select the Installed tab, search for **Microsoft.NET.Sdk.Functions**, select that package in the list, select **1.0.28 or later** from the Version dropdown, and select the **Update** button. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
 

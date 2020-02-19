@@ -1,7 +1,7 @@
 ---
 title: Keyword Reference
 description: Find links to information about all of the F# language keywords.
-ms.date: 05/16/2016
+ms.date: 11/04/2019
 ---
 # Keyword Reference
 
@@ -81,7 +81,7 @@ The following table shows all F# keywords in alphabetical order, together with b
 |`when`|[Constraints](./generics/constraints.md)|Used for Boolean conditions (*when guards*) on pattern matches and to introduce a constraint clause for a generic type parameter.|
 |`while`|[Loops: `while...do` Expression](loops-while-do-expression.md)|Introduces a looping construct.|
 |`with`|[Match Expressions](match-expressions.md)<br /><br />[Object Expressions](object-expressions.md)<br /><br />[Copy and Update Record Expressions](copy-and-update-record-expressions.md)<br /><br />[Type Extensions](type-extensions.md)<br /><br />[Exceptions: The `try...with` Expression](./exception-handling/the-try-with-expression.md)|Used together with the `match` keyword in pattern matching expressions. Also used in object expressions, record copying expressions, and type extensions to introduce member definitions, and to introduce exception handlers.|
-|`yield`|[Sequences](sequences.md)|Used in a sequence expression to produce a value for a sequence.|
+|`yield`|[Lists](lists.md), [Arrays](arrays.md), [Sequences](sequences.md)|Used in a list, array, or sequence expression to produce a value for a sequence. Typically can be omitted, as it is implicit in most situations.|
 |`yield!`|[Computation Expressions](computation-expressions.md)<br /><br />[Asynchronous Workflows](asynchronous-workflows.md)|Used in a computation expression to append the result of a given computation expression to a collection of results for the containing computation expression.|
 
 The following tokens are reserved in F# because they are keywords in the OCaml language:

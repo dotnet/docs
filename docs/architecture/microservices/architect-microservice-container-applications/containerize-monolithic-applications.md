@@ -1,7 +1,7 @@
 ---
 title: Containerizing monolithic applications
 description: Containerizing monolithic applications, although doesn't get all the benefits from the microservices architecture, has important deployment benefits that can be delivered right away.
-ms.date: 09/20/2018
+ms.date: 01/30/2020
 ---
 # Containerizing monolithic applications
 
@@ -9,11 +9,11 @@ You might want to build a single, monolithically deployed web application or ser
 
 To manage this model, you deploy a single container to represent the application. To increase capacity, you scale out, that is, just add more copies with a load balancer in front. The simplicity comes from managing a single deployment in a single container or VM.
 
-![A monolithic containerized application has most of its functionality within a single container, with internal layers or libraries, ans scales out by cloning the container on multiple servers/VMs](./media/image1.png)
+![Diagram showing a monolithic containerized application's components.](./media/containerize-monolithic-applications/monolithic-containerized-application.png)
 
 **Figure 4-1**. Example of the architecture of a containerized monolithic application
 
-You can include multiple components, libraries, or internal layers in each container, as illustrated in Figure 4-1. However, this monolithic pattern might conflict with the container principle "a container does one thing, and does it in one process", but might be ok for some cases.
+You can include multiple components, libraries, or internal layers in each container, as illustrated in Figure 4-1. A monolithic containerized application has most of its functionality within a single container, with internal layers or libraries, and scales out by cloning the container on multiple servers/VMs. However, this monolithic pattern might conflict with the container principle "a container does one thing, and does it in one process", but might be ok for some cases.
 
 The downside of this approach becomes evident if the application grows, requiring it to scale. If the entire application can scale, it isn't really a problem. However, in most cases, just a few parts of the application are the choke points that requiring scaling, while other components are used less.
 
@@ -25,7 +25,7 @@ However, the monolithic approach is common, because the development of the appli
 
 From an infrastructure perspective, each server can run many applications within the same host and have an acceptable ratio of efficiency in resources usage, as shown in Figure 4-2.
 
-![A host can run several monolithic apps, each one on a separate container.](./media/image2.png)
+![Diagram showing one host running many apps in containers.](./media/containerize-monolithic-applications/host-multiple-apps-containers.png)
 
 **Figure 4-2**. Monolithic approach: Host running multiple apps, each app running as a container
 
@@ -33,7 +33,7 @@ Monolithic applications in Microsoft Azure can be deployed using dedicated VMs f
 
 As a QA environment or a limited production environment, you can deploy multiple Docker host VMs and balance them using the Azure balancer, as shown in Figure 4-3. This lets you manage scaling with a coarse-grain approach, because the whole application lives within a single container.
 
-![Several hosts, each one running a container with the monolithic application.](./media/image3.png)
+![Diagram showing several hosts running the monolithic app containers.](./media/containerize-monolithic-applications/docker-infrastructure-monolithic-application.png)
 
 **Figure 4-3**. Example of multiple hosts scaling up a single container application
 
@@ -53,9 +53,9 @@ While monolithic applications can benefit from Docker, we're touching only on th
 
 Whether you want to get validation of a container deployed to Azure or when an application is simply a single-container application, Azure App Service provides a great way to provide scalable single-container-based services. Using Azure App Service is simple. It provides great integration with Git to make it easy to take your code, build it in Visual Studio, and deploy it directly to Azure.
 
-![The wizard for publishing a single container application to Azure App Service from Visual Studio](./media/image4.png)
+![Screenshot of Create App Service dialog showing a Container Registry.](./media/containerize-monolithic-applications/publish-azure-app-service-container.png)
 
-**Figure 4-4**. Publishing a single-container application to Azure App Service from Visual Studio
+**Figure 4-4**. Publishing a single-container application to Azure App Service from Visual Studio 2019
 
 Without Docker, if you needed other capabilities, frameworks, or dependencies that aren't supported in Azure App Service, you had to wait until the Azure team updated those dependencies in App Service. Or you had to switch to other services like Azure Cloud Services or VMs, where you had further control and you could install a required component or framework for your application.
 

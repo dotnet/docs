@@ -1,5 +1,5 @@
 ---
-title: "How to: Group Related Constant Values Together (Visual Basic)"
+title: "How to: Group Related Constant Values Together"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "enumerations [Visual Basic], constants"

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: cca0f799-09b8-4689-a33c-6d6537943a9b
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ThreadCreated Method
 Notifies the profiler that a thread has been created.  
@@ -46,5 +44,5 @@ HRESULT ThreadCreated(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
-- [ThreadDestroyed Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-threaddestroyed-method.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [ThreadDestroyed Method](icorprofilercallback-threaddestroyed-method.md)

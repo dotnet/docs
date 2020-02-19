@@ -1,5 +1,5 @@
 ---
-title: "Cancel an Async Task or a List of Tasks (Visual Basic)"
+title: "Cancel an Async Task or a List of Tasks"
 ms.date: 07/20/2015
 ms.assetid: a9ee1b71-5bec-4736-a1e9-448042dd7215
 ---

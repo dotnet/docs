@@ -1,6 +1,5 @@
 ---
 title: "Polymorphism - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "C# language, polymorphism"
@@ -87,7 +86,7 @@ Polymorphism is often referred to as the third pillar of object-oriented program
   
 - [Knowing When to Use Override and New Keywords](./knowing-when-to-use-override-and-new-keywords.md)  
   
-- [How to: Override the ToString Method](./how-to-override-the-tostring-method.md)  
+- [How to override the ToString method](./how-to-override-the-tostring-method.md)
   
 ## See also
 

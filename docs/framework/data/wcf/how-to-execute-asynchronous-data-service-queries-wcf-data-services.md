@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: 902a2dc1-d0e9-4b00-90a8-becc4cb1f6a7
 ---
 # How to: Execute Asynchronous Data Service Queries (WCF Data Services)
-By using the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] client library, you can asynchronously perform client-server operations, such as executing queries and saving changes. For more information, see [Asynchronous Operations](asynchronous-operations-wcf-data-services.md).  
+By using the WCF Data Services client library, you can asynchronously perform client-server operations, such as executing queries and saving changes. For more information, see [Asynchronous Operations](asynchronous-operations-wcf-data-services.md).  
   
 > [!NOTE]
 > In an application where the callback must be invoked on a specific thread, you must explicitly marshal the execution of the <xref:System.Data.Services.Client.DataServiceQuery%601.EndExecute%2A> method. For more information, see [Asynchronous Operations](asynchronous-operations-wcf-data-services.md).  

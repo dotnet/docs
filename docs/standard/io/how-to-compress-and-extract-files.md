@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "compression"
   - "compress files"
 ms.assetid: e9876165-3c60-4c84-a272-513e47acf579
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Compress and extract files
 

@@ -1,5 +1,5 @@
 ---
-title: "How to: Inherit from Existing Windows Forms Controls"
+title: Inherit from Existing Controls
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

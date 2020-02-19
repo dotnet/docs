@@ -1,5 +1,5 @@
 ---
-title: "When to Use an Enumeration (Visual Basic)"
+title: "When to Use an Enumeration"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "enumerations [Visual Basic]"

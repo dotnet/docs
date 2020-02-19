@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "security [.NET Framework]"
   - "security [.NET]"
 ms.assetid: 9a9621d7-8883-4a4f-a874-65e8e09e20a6
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Security in .NET
 

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 86051a11-ad8e-4ace-9a11-ff0f982a5e11
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::RemotingServerInvocationStarted Method
 Notifies the profiler that the process is invoking a method in response to a remote method invocation request.  
@@ -38,4 +36,4 @@ HRESULT RemotingServerInvocationStarted();
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)

@@ -14,8 +14,8 @@ ms.assetid: 1eb2fae3-de4b-45b6-852f-517c39b751bd
 
 Provides information used by the common language runtime to configure applications.
 
-[**\<configuration>**](../configuration-element.md)  
-&nbsp;&nbsp;**\<runtime>**  
+[\<configuration>](../configuration-element.md)\
+&nbsp;&nbsp;\<runtime>
 
 ## Syntax
 
@@ -55,6 +55,10 @@ None.
 |[\<gcAllowVeryLargeObjects>](gcallowverylargeobjects-element.md)|On 64-bit platforms, enables arrays that are greater than 2 gigabytes (GB) in total size.|
 |[\<gcConcurrent>](gcconcurrent-element.md)|Specifies whether the common language runtime runs garbage collection concurrently.|
 |[\<GCCpuGroup>](gccpugroup-element.md)|Specifies whether garbage collection supports multiple CPU groups.|
+|[\<GCHeapAffinitizeMask>](gcheapaffinitizemask-element.md)|Defines the affinity between garbage collection heaps and individual processors.|
+|[\<GCHeapCount>](gcheapcount-element.md)|Specifies the number of heaps/threads to use for server garbage collection.|
+|[\<GCLOHThreshold>](gclohthreshold-element.md)|Specifies the threshold size that causes the garbage collector to put objects on the large object heap.|
+|[\<GCNoAffinitize>](gcnoaffinitize-element.md)|Specifies whether or not to affinitize server garbage collection threads with CPUs.|
 |[\<gcServer>](gcserver-element.md)|Specifies whether the common language runtime runs server garbage collection.|
 |[\<generatePublisherEvidence>](generatepublisherevidence-element.md)|Specifies whether the runtime uses code access security (CAS) publisher policy.|
 |[\<legacyCorruptedStateExceptionsPolicy>](legacycorruptedstateexceptionspolicy-element.md)|Specifies whether the runtime allows managed code to catch access violations and other corrupted state exceptions.|

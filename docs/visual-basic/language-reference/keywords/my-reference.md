@@ -1,5 +1,5 @@
 ---
-title: "My Reference (Visual Basic)"
+title: "My Reference"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My feature"

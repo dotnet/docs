@@ -11,11 +11,11 @@ ms.assetid: bedccaab-12a2-4511-8f67-e961f249aec6
 ---
 # \<connectionManagement> Element (Network Settings)
 Specifies the maximum number of connections to a network host.  
-  
-[**\<configuration>**](../configuration-element.md)  
-&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
-&nbsp;&nbsp;&nbsp;&nbsp;**\<connectionManagement>**  
-  
+
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<connectionManagement>**
+
 ## Syntax  
   
 ```xml  

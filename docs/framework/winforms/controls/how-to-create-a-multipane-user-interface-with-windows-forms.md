@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Multipane User Interface with Windows Forms"
+title: Create a Multipane User Interface
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

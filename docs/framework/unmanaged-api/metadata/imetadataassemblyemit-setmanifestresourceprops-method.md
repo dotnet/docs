@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: ef77efd1-849c-4e51-ba92-7ee3d2bf0339
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataAssemblyEmit::SetManifestResourceProps Method
 Modifies the specified `ManifestResource` metadata structure.  

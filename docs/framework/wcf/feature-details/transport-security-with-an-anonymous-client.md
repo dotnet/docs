@@ -1,5 +1,5 @@
 ---
-title: "Transport security with an anonymous client - WCF"
+title: "Transport security with an anonymous client"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

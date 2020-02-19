@@ -31,7 +31,7 @@ WCF now has support for contract-first development. The svcutil.exe has a /servi
 
 ### Add Service Reference from a Portable Subset Project
 
-Portable subset projects enable .NET assembly programmers to maintain a single source tree and build system while still supporting multiple .NET platforms (desktop, Silverlight, Windows Phone, and XBOX). Portable subset projects only reference .NET portable libraries which are a .NET framework assembly that can be used on any .NET platform. The developer experience is the same as adding a service reference within any other WCF client application. For more information, see [Add Service Reference in a Portable Subset Project](add-service-reference-in-a-portable-subset-project.md).
+Portable subset projects enable .NET assembly programmers to maintain a single source tree and build system while still supporting multiple .NET platforms (desktop, Silverlight, Windows Phone, and Xbox). Portable subset projects only reference .NET portable libraries that are assemblies that can be used on any .NET platform. The developer experience is the same as adding a service reference within any other WCF client application. For more information, see [Add Service Reference in a Portable Subset Project](add-service-reference-in-a-portable-subset-project.md).
 
 ### ASP.NET Compatibility Mode Default Changed
 
@@ -121,7 +121,7 @@ Support has been added to allow for WCF services with Internationalized Domain N
 
 ## HttpClient
 
-A new class called <xref:System.Net.Http.HttpClient> has been added to make working with HTTP requests much easier. For more info, see [Making apps social and connected with HTTP services](https://go.microsoft.com/fwlink/?LinkId=231886) and the [HTTP Client Sample](https://code.msdn.microsoft.com/windowsapps/HttpClient-sample-55700664).
+A new class called <xref:System.Net.Http.HttpClient> has been added to make working with HTTP requests much easier. For more info, see [Making apps social and connected with HTTP services](https://channel9.msdn.com/Events/BUILD/BUILD2011/PLAT-581T) and the [HTTP Client Sample](https://code.msdn.microsoft.com/windowsapps/HttpClient-sample-55700664).
 
 ## Configuration Intellisense
 

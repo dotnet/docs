@@ -1,5 +1,5 @@
 ---
-title: "Modifying Large-Value (max) Data in ADO.NET"
+title: "Modifying Large-Value (max) Data"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -13,9 +13,9 @@ Large object (LOB) data types are those that exceed the maximum row size of 8 ki
   
  The following table provides links to the documentation in SQL Server Books Online.  
   
- **SQL Server Books Online**  
+ **SQL Server documentation**  
   
-1. [Using Large-Value Data Types](https://go.microsoft.com/fwlink/?LinkId=120498)  
+1. [Using Large-Value Data Types](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms178158(v=sql.100))  
   
 ## Large-Value Type Restrictions  
  The following restrictions apply to the `max` data types, which do not exist for smaller data types:  

@@ -1,5 +1,5 @@
 ---
-title: "Programming with Nodes (Visual Basic)"
+title: "Programming with Nodes"
 ms.date: 07/20/2015
 ms.assetid: d8422a9b-dd37-44a3-8aac-2237ed9561e0
 ---

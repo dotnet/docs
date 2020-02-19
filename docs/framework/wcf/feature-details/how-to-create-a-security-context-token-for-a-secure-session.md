@@ -28,7 +28,7 @@ By using a stateful security context token (SCT) in a secure session, the sessio
         <customBinding>  
         ```  
   
-    2. Add a [\<binding>](../../../../docs/framework/misc/binding.md) child element to the [\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md).  
+    2. Add a [\<binding>](../../configure-apps/file-schema/wcf/bindings.md) child element to the [\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md).  
   
          Specify a binding name by setting the `name` attribute to a unique name within the configuration file.  
   

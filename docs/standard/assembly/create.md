@@ -40,7 +40,6 @@ There are special considerations when making common language runtime assemblies 
 
 ## See also
 
-- [Program with assemblies](program.md)
 - [Assembly versioning](versioning.md)
 - [How to: Build a single-file assembly](../../framework/app-domains/build-single-file-assembly.md)
 - [How to: Build a multifile assembly](../../framework/app-domains/build-multifile-assembly.md)

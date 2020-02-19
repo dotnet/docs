@@ -1,5 +1,5 @@
 ---
-title: "How to: Call an Overloaded Procedure (Visual Basic)"
+title: "How to: Call an Overloaded Procedure"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Visual Basic code, procedures"

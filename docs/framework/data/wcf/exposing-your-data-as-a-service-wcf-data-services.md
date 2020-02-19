@@ -9,7 +9,7 @@ ms.assetid: df0bbcee-f66f-4a88-abb4-4e73c8b9c908
 ---
 # Expose Your Data as a Service (WCF Data Services)
 
-WCF Data Services integrates with Visual Studio to enable you to more easily define services to expose your data as [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feeds. Creating a data service that exposes an OData feed involves the following basic steps:
+WCF Data Services integrates with Visual Studio to enable you to more easily define services to expose your data as Open Data Protocol (OData) feeds. Creating a data service that exposes an OData feed involves the following basic steps:
 
 1. **Define the data model.** WCF Data Services natively supports data models that are based on the [ADO.NET Entity Framework](../adonet/ef/index.md). For more information, see [How to: Create a Data Service Using an ADO.NET Entity Framework Data Source](create-a-data-service-using-an-adonet-ef-data-wcf.md).
 

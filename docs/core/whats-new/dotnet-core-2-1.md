@@ -106,7 +106,7 @@ You can modify this setting in any of three ways:
    "rollForwardOnNoCandidateFx" : 0
    ```
 
-- When using [.NET Core CLI tools](../tools/index.md), add the following option with the desired value to a .NET Core command such as `run`:
+- When using the [.NET Core CLI](../tools/index.md), add the following option with the desired value to a .NET Core command such as `run`:
 
    ```dotnetcli
    dotnet run --rollForwardOnNoCandidateFx=0

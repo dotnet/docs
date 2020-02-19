@@ -20,4 +20,4 @@ This example shows how to open a message box.
   
 ## See also
 
-- [MessageBox Sample](https://go.microsoft.com/fwlink/?LinkID=160023)
+- [MessageBox Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Windows/MessageBox)

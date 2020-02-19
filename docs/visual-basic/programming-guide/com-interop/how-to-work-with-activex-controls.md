@@ -1,5 +1,5 @@
 ---
-title: "How to: Work with ActiveX Controls (Visual Basic)"
+title: "How to: Work with ActiveX Controls"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Toolbox, adding controls"

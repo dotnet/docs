@@ -1,5 +1,5 @@
 ---
-title: "Troubleshooting Inherited Event Handlers in Visual Basic"
+title: "Troubleshooting Inherited Event Handlers"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "troubleshooting events [Visual Basic]"

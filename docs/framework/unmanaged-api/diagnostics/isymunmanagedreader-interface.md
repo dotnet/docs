@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: aa3cc15d-058e-4e6f-b03e-39569646ba47
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedReader Interface
 Represents a symbol reader that provides access to documents, methods, and variables within a symbol store.  

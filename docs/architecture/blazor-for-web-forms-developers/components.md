@@ -125,7 +125,7 @@ To add members to the Razor component class, use the `@code` directive. This tec
 }
 ```
 
-Because Razor is based on C#, it must be compiled from within a C# project (*.csproj*). You can't compile *.razor* files from a VB project (*.vbproj*). You can still reference VB projects from your Blazor project. The opposite is true too.
+Because Razor is based on C#, it must be compiled from within a C# project (*.csproj*). You can't compile *.razor* files from a Visual Basic project (*.vbproj*). You can still reference Visual Basic projects from your Blazor project. The opposite is true too.
 
 For a full Razor syntax reference, see [Razor syntax reference for ASP.NET Core](/aspnet/core/mvc/views/razor).
 
@@ -263,7 +263,7 @@ Event handlers can execute synchronously or asynchronously. For example, the fol
 After an event is handled, the component is rendered to account for any component state changes. With asynchronous event handlers, the component is rendered immediately after the handler execution completes. The component is rendered *again* after the asynchronous `Task` completes. This asynchronous execution mode provides an opportunity to render some appropriate UI while the asynchronous `Task` is still in progress.
 
 ```razor
-<button @onclick="Get message">Get message</button>
+<button @onclick="ShowMessage">Get message</button>
 
 @if (showMessage)
 {

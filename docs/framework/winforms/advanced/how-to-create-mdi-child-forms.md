@@ -9,10 +9,6 @@ helpviewer_keywords:
   - "MDI [Windows Forms], creating forms"
   - "child forms"
 ms.assetid: 164b69bb-2eca-4339-ada3-0679eb2c6dda
-dev_langs:
- - CSharp
- - CPP
- - VB
 ---
 # How to: Create MDI child forms
 

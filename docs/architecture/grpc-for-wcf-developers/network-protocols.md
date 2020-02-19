@@ -1,7 +1,6 @@
 ---
 title: Network protocols - gRPC for WCF Developers
 description: An overview of the gRPC network protocols.
-author: markrendle
 ms.date: 09/02/2019
 ---
 

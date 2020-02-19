@@ -1,5 +1,5 @@
 ---
-title: "Services samples - WCF"
+title: "Services samples"
 ms.date: "03/30/2017"
 ms.assetid: 462a2218-f8c6-4fb7-95bc-64765459c429
 ---

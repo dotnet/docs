@@ -1,6 +1,5 @@
 ---
 title: "true and false operators - C# reference"
-ms.custom: seodec18
 ms.date: 12/10/2018
 helpviewer_keywords: 
   - "false operator [C#]"
@@ -9,7 +8,7 @@ ms.assetid: 81a888fd-011e-4589-b242-6c261fea505e
 ---
 # true and false operators (C# reference)
 
-The `true` operator returns the [bool](../keywords/bool.md) value `true` to indicate that its operand is definitely true. The `false` operator returns the `bool` value `true` to indicate that its operand is definitely false. The `true` and `false` operators are not guaranteed to complement each other. That is, both the `true` and `false` operator might return the `bool` value `false` for the same operand. If a type defines one of the two operators, it must also define another operator.
+The `true` operator returns the [bool](../builtin-types/bool.md) value `true` to indicate that its operand is definitely true. The `false` operator returns the `bool` value `true` to indicate that its operand is definitely false. The `true` and `false` operators are not guaranteed to complement each other. That is, both the `true` and `false` operator might return the `bool` value `false` for the same operand. If a type defines one of the two operators, it must also define another operator.
 
 > [!TIP]
 > Use the `bool?` type, if you need to support the three-valued logic (for example, when you work with databases that support a three-valued Boolean type). C# provides the `&` and `|` operators that support the three-valued logic with the `bool?` operands. For more information, see the [Nullable Boolean logical operators](boolean-logical-operators.md#nullable-boolean-logical-operators) section of the [Boolean logical operators](boolean-logical-operators.md) article.
@@ -39,5 +38,3 @@ Wait!
 
 - [C# reference](../index.md)
 - [C# operators](index.md)
-- [true literal](../keywords/true-literal.md)
-- [false literal](../keywords/false-literal.md)

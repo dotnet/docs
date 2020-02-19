@@ -50,7 +50,7 @@ One way to increase the capacity of Windows Communication Foundation (WCF) appli
 </configuration>  
 ```  
   
- Using the simplified configuration introduced in [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], the same behavior can be accomplished using the following simplified configuration.  
+ Using the simplified configuration introduced in .NET Framework 4, the same behavior can be accomplished using the following simplified configuration.  
   
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>  

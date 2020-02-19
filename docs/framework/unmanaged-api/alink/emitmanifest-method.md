@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: fdebc1f3-b62e-4d9e-b775-8ccaa8ecb250
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # EmitManifest Method
 Emits the final manifest. Call this method after importing all other files and setting all options. Do not call this method for unbound modules.  

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 00e2e194-12f5-436e-a997-2b9d3e844d4f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymENCUnmanagedMethod::GetFileNameFromOffset Method
 Gets the file name for the line associated with an offset.  

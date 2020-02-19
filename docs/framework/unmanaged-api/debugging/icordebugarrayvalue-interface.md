@@ -23,14 +23,14 @@ A subclass of ICorDebugHeapValue that represents a single-dimensional or multi-d
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetBaseIndicies Method](../../../../docs/framework/unmanaged-api/debugging/icordebugarrayvalue-getbaseindicies-method.md)|Gets the base index of each dimension in the array.|  
-|[GetCount Method](../../../../docs/framework/unmanaged-api/debugging/icordebugarrayvalue-getcount-method.md)|Gets the total number of elements in the array.|  
-|[GetDimensions Method](../../../../docs/framework/unmanaged-api/debugging/icordebugarrayvalue-getdimensions-method.md)|Gets the dimensions of the array.|  
-|[GetElement Method](../../../../docs/framework/unmanaged-api/debugging/icordebugarrayvalue-getelement-method.md)|Gets a value representing the given element in the array.|  
-|[GetElementAtPosition Method](../../../../docs/framework/unmanaged-api/debugging/icordebugarrayvalue-getelementatposition-method.md)|Gets the element at the given position, treating the array as a zero-based, single-dimensional array.|  
-|[GetElementType Method](../../../../docs/framework/unmanaged-api/debugging/icordebugarrayvalue-getelementtype-method.md)|Gets the simple type of the elements in the array.|  
-|[GetRank Method](../../../../docs/framework/unmanaged-api/debugging/icordebugarrayvalue-getrank-method.md)|Gets the number of dimensions in the array.|  
-|[HasBaseIndicies Method](../../../../docs/framework/unmanaged-api/debugging/icordebugarrayvalue-hasbaseindicies-method.md)|Determines whether the array has base indexes.|  
+|[GetBaseIndicies Method](icordebugarrayvalue-getbaseindicies-method.md)|Gets the base index of each dimension in the array.|  
+|[GetCount Method](icordebugarrayvalue-getcount-method.md)|Gets the total number of elements in the array.|  
+|[GetDimensions Method](icordebugarrayvalue-getdimensions-method.md)|Gets the dimensions of the array.|  
+|[GetElement Method](icordebugarrayvalue-getelement-method.md)|Gets a value representing the given element in the array.|  
+|[GetElementAtPosition Method](icordebugarrayvalue-getelementatposition-method.md)|Gets the element at the given position, treating the array as a zero-based, single-dimensional array.|  
+|[GetElementType Method](icordebugarrayvalue-getelementtype-method.md)|Gets the simple type of the elements in the array.|  
+|[GetRank Method](icordebugarrayvalue-getrank-method.md)|Gets the number of dimensions in the array.|  
+|[HasBaseIndicies Method](icordebugarrayvalue-hasbaseindicies-method.md)|Determines whether the array has base indexes.|  
   
 ## Remarks  
  `ICorDebugArrayValue` supports both single-dimensional and multi-dimensional arrays.  
@@ -49,4 +49,4 @@ A subclass of ICorDebugHeapValue that represents a single-dimensional or multi-d
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

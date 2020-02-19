@@ -1,5 +1,5 @@
 ---
-title: "Windows Forms and Unmanaged Applications Overview"
+title: Unmanaged apps overview
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "COM [Windows Forms]"

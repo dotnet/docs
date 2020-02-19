@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 80046b2e-55b7-40a2-9adf-cf2763ee59c8
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerFunctionEnum::Reset Method
 Moves the enumerator's cursor to the starting position of the sequence.  
@@ -38,5 +36,5 @@ HRESULT Reset();
   
 ## See also
 
-- [ICorProfilerFunctionEnum Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerfunctionenum-interface.md)
-- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+- [ICorProfilerFunctionEnum Interface](icorprofilerfunctionenum-interface.md)
+- [Profiling Interfaces](profiling-interfaces.md)

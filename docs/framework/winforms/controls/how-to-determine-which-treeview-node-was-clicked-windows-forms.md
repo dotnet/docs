@@ -1,5 +1,5 @@
 ---
-title: "How to: Determine Which TreeView Node Was Clicked (Windows Forms)"
+title: "How to: Determine Which TreeView Node Was Clicked"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

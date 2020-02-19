@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugMDA::GetXML Method
-Gets the full XML stream associated with the managed debugging assistant (MDA) represented by [ICorDebugMDA](../../../../docs/framework/unmanaged-api/debugging/icordebugmda-interface.md).  
+Gets the full XML stream associated with the managed debugging assistant (MDA) represented by [ICorDebugMDA](icordebugmda-interface.md).  
   
 ## Syntax  
   
@@ -54,5 +54,5 @@ HRESULT GetXML (
   
 ## See also
 
-- [ICorDebugMDA Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmda-interface.md)
+- [ICorDebugMDA Interface](icordebugmda-interface.md)
 - [Diagnosing Errors with Managed Debugging Assistants](../../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)

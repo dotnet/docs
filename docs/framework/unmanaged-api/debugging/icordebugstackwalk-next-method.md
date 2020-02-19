@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugStackWalk::Next Method
-Moves the [ICorDebugStackWalk](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-interface.md) object to the next frame.  
+Moves the [ICorDebugStackWalk](icordebugstackwalk-interface.md) object to the next frame.  
   
 ## Syntax  
   
@@ -51,6 +51,6 @@ HRESULT Next();
   
 ## See also
 
-- [ICorDebugStackWalk Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [ICorDebugStackWalk Interface](icordebugstackwalk-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

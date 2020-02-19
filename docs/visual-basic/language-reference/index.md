@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic Language Reference"
+title: "Language Reference"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Visual Basic language reference"
@@ -12,9 +12,11 @@ helpviewer_keywords:
 ms.assetid: 5c6bd31a-9542-4f3e-bfd5-e951af58f0f2
 ---
 # Visual Basic Language Reference
+
 This section provides reference information for various aspects of the Visual Basic language.  
   
 ## In This Section  
+
  [Typographic and Code Conventions](../../visual-basic/language-reference/typographic-and-code-conventions.md)  
  Summarizes the way that keywords, placeholders, and other elements of the language are formatted in the Visual Basic documentation.  
   
@@ -58,7 +60,7 @@ This section provides reference information for various aspects of the Visual Ba
  Documents the properties available in Visual Basic.  
   
  [Queries](../../visual-basic/language-reference/queries/index.md)  
- Provides reference information about using [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expressions in your code.  
+ Provides reference information about using Language-Integrated Query (LINQ) expressions in your code.  
   
  [Statements](../../visual-basic/language-reference/statements/index.md)  
  Documents the declaration and executable statements available in Visual Basic.  
@@ -76,8 +78,6 @@ This section provides reference information for various aspects of the Visual Ba
  Provides a listing of Visual Basic compiler and run-time error messages and help on how to handle them.  
   
 ## Related Sections  
- [Visual Basic](../../visual-basic/index.md)  
- Provides comprehensive help on all areas of the Visual Basic language.  
-  
+
  [Visual Basic Command-Line Compiler](../../visual-basic/reference/command-line-compiler/index.md)  
  Describes how to use the command-line compiler as an alternative to compiling programs from within the Visual Studio integrated development environment (IDE).

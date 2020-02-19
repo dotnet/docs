@@ -1,5 +1,5 @@
 ---
-title: "Setting the Use and Style properties - WCF samples"
+title: "Setting the Use and Style properties samples"
 ms.date: "03/30/2017"
 ms.assetid: c09a0600-116f-41cf-900a-1b7e4ea4e300
 ---
@@ -85,6 +85,6 @@ To see the difference between the different <xref:System.ServiceModel.XmlSeriali
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
 > 
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Message\UseAndStyle`

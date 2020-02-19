@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: e5912ed8-e4ce-438b-8ea3-d9e4c288d109
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataAssemblyImport::EnumExportedTypes Method
 Enumerates the exported types referenced in the assembly manifest in the current metadata scope.  

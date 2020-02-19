@@ -59,4 +59,4 @@ ms.assetid: f0bb8120-e709-40a3-ac1e-5520dc47477d
 
 - [Entity SQL Reference](entity-sql-reference.md)
 - [Entity SQL Language](entity-sql-language.md)
-- [CSDL, SSDL, and MSL Specifications](csdl-ssdl-and-msl-specifications.md)
+- [CSDL, SSDL, and MSL Specifications](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec)

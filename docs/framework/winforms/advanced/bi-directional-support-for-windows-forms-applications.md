@@ -1,5 +1,5 @@
 ---
-title: "Bi-Directional Support for Windows Forms Applications"
+title: Bi-Directional Support
 ms.date: "09/30/2017"
 helpviewer_keywords:
   - "globalization [Windows Forms], bi-directional support in Windows"

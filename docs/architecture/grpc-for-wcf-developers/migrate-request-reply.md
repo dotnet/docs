@@ -1,7 +1,6 @@
 ---
 title: Migrate a WCF request-reply service to gRPC - gRPC for WCF Developers
 description: Learn how to migrate a simple request-reply service from WCF to gRPC.
-author: markrendle
 ms.date: 09/02/2019
 ---
 

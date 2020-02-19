@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: bb8db3b6-d81d-49fc-b74c-dbc908a9eab9
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorAssemblyFlags Enumeration
 Contains values that describe the metadata applied to an assembly compilation.  

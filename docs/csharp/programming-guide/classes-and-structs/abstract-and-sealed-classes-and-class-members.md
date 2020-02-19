@@ -1,6 +1,5 @@
 ---
 title: "Abstract and Sealed Classes and Class Members - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "abstract classes [C#]"
@@ -49,4 +48,4 @@ The [abstract](../../language-reference/keywords/abstract.md) keyword enables yo
 - [Inheritance](./inheritance.md)
 - [Methods](./methods.md)
 - [Fields](./fields.md)
-- [How to: Define Abstract Properties](./how-to-define-abstract-properties.md)
+- [How to define abstract properties](./how-to-define-abstract-properties.md)

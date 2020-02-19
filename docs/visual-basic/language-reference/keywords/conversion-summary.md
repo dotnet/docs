@@ -1,5 +1,5 @@
 ---
-title: "Conversion Summary (Visual Basic)"
+title: "Conversion Summary"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "data type conversion [Visual Basic], keywords"

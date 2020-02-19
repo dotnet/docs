@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 9544b711-e669-4eaf-8630-ee862e5e4489
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport2::GetMethodSpecProps Method
 Gets the metadata signature of the method referenced by the specified MethodSpec token.  

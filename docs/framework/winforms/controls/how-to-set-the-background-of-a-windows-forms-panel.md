@@ -1,5 +1,5 @@
 ---
-title: "How to: Set the Background of a Windows Forms Panel"
+title: Set the Background of a Panel
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

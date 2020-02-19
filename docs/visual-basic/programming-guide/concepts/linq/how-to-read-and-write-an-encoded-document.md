@@ -1,5 +1,5 @@
 ---
-title: "How to: Read and Write an Encoded Document (Visual Basic)"
+title: "How to: Read and Write an Encoded Document"
 ms.date: 07/20/2015
 ms.assetid: 159d868f-5ac8-40f2-95ca-07dd925f35c6
 ---

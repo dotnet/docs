@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: d42bea4e-5848-4e43-a883-69af7a313ce9
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedNamespace Interface
 Represents a namespace.  

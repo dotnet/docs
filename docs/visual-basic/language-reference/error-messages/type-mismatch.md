@@ -1,5 +1,5 @@
 ---
-title: "Type mismatch (Visual Basic)"
+title: "Type mismatch"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID13"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Respond to Clicks in the Windows Forms DataGrid Control"
+title: Respond to Clicks in DataGrid Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

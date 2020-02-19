@@ -1,5 +1,5 @@
 ---
-title: "Efficient Use of Data Types (Visual Basic)"
+title: "Efficient Use of Data Types"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "performance, data type efficiency"

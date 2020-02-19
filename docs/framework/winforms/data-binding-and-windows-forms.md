@@ -1,5 +1,5 @@
 ---
-title: "Data Binding and Windows Forms"
+title: Data Binding
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "master-details lists"

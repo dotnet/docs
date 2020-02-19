@@ -1,5 +1,5 @@
 ---
-title: "Handling Events (Visual Basic)"
+title: "Handling Events"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "event handling [Visual Basic], walkthroughs"

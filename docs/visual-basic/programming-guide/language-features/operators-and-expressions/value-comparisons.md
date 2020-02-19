@@ -1,5 +1,5 @@
 ---
-title: "Value Comparisons (Visual Basic)"
+title: "Value Comparisons"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "variables [Visual Basic], comparing values"

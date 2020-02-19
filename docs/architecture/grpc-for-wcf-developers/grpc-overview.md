@@ -1,7 +1,6 @@
 ---
 title: Overview of gRPC - gRPC for WCF Developers
 description: Learn about the set of principles guiding the development of gRPC.
-author: markrendle
 ms.date: 09/02/2019
 ---
 

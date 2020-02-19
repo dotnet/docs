@@ -3,7 +3,6 @@ title: project.json and csproj comparison
 description: See a mapping between project.json and csproj elements.
 author: natemcmaster
 ms.date: 03/13/2017
-ms.custom: "seodec18"
 ---
 # A mapping between project.json and csproj properties
 
@@ -334,7 +333,7 @@ standalone.
 
 `dotnet publish --framework netcoreapp1.0 --runtime osx.10.11-x64`
 
-For more information, see [Self-contained deployments (SCD)](../deploying/index.md#self-contained-deployments-scd).
+For more information, see [Self-contained deployments (SCD)](../deploying/index.md#publish-self-contained).
 
 ## tools
 

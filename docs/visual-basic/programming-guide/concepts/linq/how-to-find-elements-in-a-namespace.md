@@ -1,5 +1,5 @@
 ---
-title: "How to: Find Elements in a Namespace (XPath-LINQ to XML) (Visual Basic)"
+title: "How to: Find Elements in a Namespace (XPath-LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: c7cb3b77-3424-4b54-9efa-4dc715948e41
 ---

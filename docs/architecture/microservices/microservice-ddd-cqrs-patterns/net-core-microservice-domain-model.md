@@ -12,7 +12,9 @@ In the previous section, the fundamental design principles and patterns for desi
 
 The folder organization used for the eShopOnContainers reference application demonstrates the DDD model for the application. You might find that a different folder organization more clearly communicates the design choices made for your application. As you can see in Figure 7-10, in the ordering domain model there are two aggregates, the order aggregate and the buyer aggregate. Each aggregate is a group of domain entities and value objects, although you could have an aggregate composed of a single domain entity (the aggregate root or root entity) as well.
 
-![The Solution Explorer view for the Ordering.Domain project, showing the AggregatesModel folder containing the BuyerAggregate and OrderAggregate folders, each one containing it's entity classes, value object files and so on. ](./media/image11.png)
+:::image type="complex" source="./media/net-core-microservice-domain-model/ordering-microservice-container.png" alt-text="Screenshot of the Ordering.Domain project in Solution Explorer.":::
+The Solution Explorer view for the Ordering.Domain project, showing the AggregatesModel folder containing the BuyerAggregate and OrderAggregate folders, each one containing it's entity classes, value object files and so on.
+:::image-end:::
 
 **Figure 7-10**. Domain model structure for the ordering microservice in eShopOnContainers
 
@@ -26,7 +28,9 @@ An aggregate refers to a cluster of domain objects grouped together to match tra
 
 Transactional consistency means that an aggregate is guaranteed to be consistent and up to date at the end of a business action. For example, the order aggregate from the eShopOnContainers ordering microservice domain model is composed as shown in Figure 7-11.
 
-![A detailed view of the OrderAggregate folder: Address.cs is a value object, IOrderRepository is a repo interface, Order.cs is an aggregate root, OrderItem.cs is a child entity, and OrderStatus.cs is an enumeration class.](./media/image12.png)
+:::image type="complex" source="./media/net-core-microservice-domain-model/vs-solution-explorer-order-aggregate.png" alt-text="Screenshot of the OrderAggregate folder and its classes.":::
+A detailed view of the OrderAggregate folder: Address.cs is a value object, IOrderRepository is a repo interface, Order.cs is an aggregate root, OrderItem.cs is a child entity, and OrderStatus.cs is an enumeration class.
+:::image-end:::
 
 **Figure 7-11**. The order aggregate in Visual Studio solution
 
@@ -165,7 +169,7 @@ For example, in the preceding OrderAggregate code example, there are several pri
   <https://kalele.io/blog-posts/modeling-aggregates-with-ddd-and-entity-framework/>
 
 - **Julie Lerman. Data Points - Coding for Domain-Driven Design: Tips for Data-Focused Devs** \
-  <https://msdn.microsoft.com/magazine/dn342868.aspx>
+  <https://docs.microsoft.com/archive/msdn-magazine/2013/august/data-points-coding-for-domain-driven-design-tips-for-data-focused-devs>
 
 - **Udi Dahan. How to create fully encapsulated Domain Models** \
   <http://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/>

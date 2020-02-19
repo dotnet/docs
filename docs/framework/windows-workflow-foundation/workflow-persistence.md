@@ -16,7 +16,7 @@ Workflow persistence is the durable capture of a workflow instance's state, inde
   
  To store and load your application-specific data along with the workflow instance-related information, you can create persistence participants that extend the <xref:System.Activities.Persistence.PersistenceParticipant> class. A persistence participant participates in the persistence process to save custom serializable data into the persistence store, to load the data from the instance store into memory, and to perform any additional logic under a persistence transaction. For more information, see [Persistence Participants](persistence-participants.md).  
   
- Windows Server App Fabric simplifies the process of configuring persistence. For more information, see [Persistence Concepts with Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkId=201200)  
+ Windows Server App Fabric simplifies the process of configuring persistence. For more information, see [Persistence Concepts with Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677272(v=azure.10))  
   
 ## Implicit Persistence Points  
  The following list contains examples of the conditions upon which a workflow is persisted when an instance store is associated with a workflow.  

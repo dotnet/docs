@@ -1,5 +1,5 @@
 ---
-title: "Input and Output Summary (Visual Basic)"
+title: "Input and Output Summary"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "input, Visual Basic functions"

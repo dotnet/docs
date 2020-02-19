@@ -1,5 +1,5 @@
 ---
-title: "Query Expression Syntax for Standard Query Operators (Visual Basic)"
+title: "Query Expression Syntax for Standard Query Operators"
 ms.date: 07/20/2015
 ms.assetid: eb978d86-d3b5-497b-95ce-a054bea8f510
 ---

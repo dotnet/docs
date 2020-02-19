@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Pure Functional Transformations (Visual Basic)"
+title: "Introduction to Pure Functional Transformations"
 ms.date: 07/20/2015
 ms.assetid: 82bf3348-c503-4854-a91f-71f9835779ff
 ---

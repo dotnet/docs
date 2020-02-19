@@ -49,7 +49,6 @@ This example shows how to use friend assemblies with assemblies that are unsigne
    ' Compile with:
    ' vbc -target:library friend_unsigned_A.vb
    Imports System.Runtime.CompilerServices
-   Imports System
 
    <Assembly: InternalsVisibleTo("friend_unsigned_B")>
 

@@ -1,5 +1,5 @@
 ---
-title: "Structure Variables (Visual Basic)"
+title: "Structure Variables"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "structures [Visual Basic], variables"

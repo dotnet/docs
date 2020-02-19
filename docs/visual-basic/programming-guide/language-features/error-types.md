@@ -1,5 +1,5 @@
 ---
-title: "Error Types (Visual Basic)"
+title: "Error Types"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "exceptions, types"

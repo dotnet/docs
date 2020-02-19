@@ -1,9 +1,9 @@
 ---
-title: "How to: Modify an Office Open XML Document (C#)"
+title: "How to modify an Office Open XML document (C#)"
 ms.date: 07/20/2015
 ms.assetid: 467d489c-2b1b-453b-a757-8ac180e82a96
 ---
-# How to: Modify an Office Open XML Document (C#)
+# How to modify an Office Open XML document (C#)
 This topic presents an example that opens an Office Open XML document, modifies it, and saves it.  
   
  For more information on Office Open XML, see [Open XML SDK](https://github.com/OfficeDev/Open-XML-SDK) and [www.ericwhite.com](http://ericwhite.com/).  

@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorPublish::GetProcess Method
-Gets an [ICorPublishProcess](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md) instance that represents the process with the specified identifier.  
+Gets an [ICorPublishProcess](icorpublishprocess-interface.md) instance that represents the process with the specified identifier.  
   
 ## Syntax  
   
@@ -49,4 +49,4 @@ HRESULT GetProcess(
   
 ## See also
 
-- [ICorPublish Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublish-interface.md)
+- [ICorPublish Interface](icorpublish-interface.md)

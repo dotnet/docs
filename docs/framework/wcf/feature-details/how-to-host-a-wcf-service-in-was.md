@@ -95,4 +95,4 @@ This topic outlines the basic steps required to create a Windows Process Activat
 ## See also
 
 - [TCP Activation](../../../../docs/framework/wcf/samples/tcp-activation.md)
-- [Windows Server App Fabric Hosting Features](https://go.microsoft.com/fwlink/?LinkId=201276)
+- [Windows Server App Fabric Hosting Features](https://docs.microsoft.com/previous-versions/appfabric/ee677189(v=azure.10))

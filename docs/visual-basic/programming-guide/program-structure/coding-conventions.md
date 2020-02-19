@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic Coding Conventions"
+title: "Coding Conventions"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "coding conventions [Visual Basic], Visual Basic"

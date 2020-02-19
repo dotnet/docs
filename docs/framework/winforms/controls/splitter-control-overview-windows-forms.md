@@ -1,5 +1,5 @@
 ---
-title: "Splitter Control Overview (Windows Forms)"
+title: "Splitter Control Overview"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "Splitter"

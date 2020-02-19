@@ -1,5 +1,6 @@
 ---
-title: "Walkthrough: Hosting a Win32 Control in WPF"
+title: Host a Win32 control in WPF
+titleSuffix: ""
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -9,7 +10,7 @@ helpviewer_keywords:
   - "Win32 code [WPF], WPF interoperation"
 ms.assetid: a676b1eb-fc55-4355-93ab-df840c41cea0
 ---
-# Walkthrough: Hosting a Win32 Control in WPF
+# Walkthrough: Host a Win32 Control in WPF
 Windows Presentation Foundation (WPF) provides a rich environment for creating applications. However, when you have a substantial investment in Win32 code, it may be more effective to reuse at least some of that code in your WPF application rather than rewrite it completely. WPF provides a straightforward mechanism for hosting a Win32 window, on a WPF page.  
   
  This topic walks you through an application, [Hosting a Win32 ListBox Control in WPF Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Migration%20and%20Interoperability/WPFHostingWin32Control), that hosts a Win32 list box control. This general procedure can be extended to hosting any Win32 window.  

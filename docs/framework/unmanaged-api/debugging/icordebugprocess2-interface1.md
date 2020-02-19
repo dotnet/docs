@@ -22,13 +22,13 @@ A logical extension of the ICorDebugProcess interface, which represents a proces
   
 |Method|Description|  
 |------------|-----------------|  
-|[ClearUnmanagedBreakpoint Method](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess2-clearunmanagedbreakpoint-method.md)|Removes a breakpoint at the specified offset that was set by an earlier call to `ICorDebugProcess2::SetUnmanagedBreakpoint`.|  
-|[GetDesiredNGENCompilerFlags Method](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess2-getdesiredngencompilerflags-method.md)|Gets the flags that must be set for the common language runtime (CLR) to load the image into the process referenced by this `ICorDebugProcess2`.|  
-|[GetReferenceValueFromGCHandle Method](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess2-getreferencevaluefromgchandle-method.md)|Gets a reference pointer to the specified managed object that has a garbage collection handle.|  
-|[GetThreadForTaskID Method](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess2-getthreadfortaskid-method.md)|Gets the thread upon which the task with the specified identifier is executing.|  
-|[GetVersion Method](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess2-getversion-method.md)|Gets the version of the CLR upon which the process being debugged is running.|  
-|[SetDesiredNGENCompilerFlags Method](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess2-setdesiredngencompilerflags-method.md)|Sets the flags that are required for the just-in-time (JIT) compiler to load an image into the process being debugged.|  
-|[SetUnmanagedBreakpoint Method](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess2-setunmanagedbreakpoint-method.md)|Sets an unmanaged breakpoint at the specified native image offset.|  
+|[ClearUnmanagedBreakpoint Method](icordebugprocess2-clearunmanagedbreakpoint-method.md)|Removes a breakpoint at the specified offset that was set by an earlier call to `ICorDebugProcess2::SetUnmanagedBreakpoint`.|  
+|[GetDesiredNGENCompilerFlags Method](icordebugprocess2-getdesiredngencompilerflags-method.md)|Gets the flags that must be set for the common language runtime (CLR) to load the image into the process referenced by this `ICorDebugProcess2`.|  
+|[GetReferenceValueFromGCHandle Method](icordebugprocess2-getreferencevaluefromgchandle-method.md)|Gets a reference pointer to the specified managed object that has a garbage collection handle.|  
+|[GetThreadForTaskID Method](icordebugprocess2-getthreadfortaskid-method.md)|Gets the thread upon which the task with the specified identifier is executing.|  
+|[GetVersion Method](icordebugprocess2-getversion-method.md)|Gets the version of the CLR upon which the process being debugged is running.|  
+|[SetDesiredNGENCompilerFlags Method](icordebugprocess2-setdesiredngencompilerflags-method.md)|Sets the flags that are required for the just-in-time (JIT) compiler to load an image into the process being debugged.|  
+|[SetUnmanagedBreakpoint Method](icordebugprocess2-setunmanagedbreakpoint-method.md)|Sets an unmanaged breakpoint at the specified native image offset.|  
   
 ## Remarks  
   
@@ -46,4 +46,4 @@ A logical extension of the ICorDebugProcess interface, which represents a proces
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

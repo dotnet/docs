@@ -1,5 +1,5 @@
 ---
-title: "Collection Initializers (Visual Basic)"
+title: "Collection Initializers"
 ms.date: 07/20/2015
 f1_keywords:
   - "vb.CollectionInitializer"

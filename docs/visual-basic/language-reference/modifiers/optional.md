@@ -1,5 +1,5 @@
 ---
-title: "Optional (Visual Basic)"
+title: "Optional"
 ms.date: 07/20/2015
 f1_keywords:
   - "vb.Optional"

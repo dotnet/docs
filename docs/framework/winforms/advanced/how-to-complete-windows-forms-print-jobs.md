@@ -1,5 +1,5 @@
 ---
-title: "How to: Complete Windows Forms Print Jobs"
+title: Complete Print Jobs
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

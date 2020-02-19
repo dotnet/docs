@@ -1,5 +1,5 @@
 ---
-title: "NotOverridable (Visual Basic)"
+title: "NotOverridable"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.NotOverridable"

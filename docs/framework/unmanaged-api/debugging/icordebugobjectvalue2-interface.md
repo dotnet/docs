@@ -23,7 +23,7 @@ Extends the "ICorDebugObjectValue" interface to support inheritance and override
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetVirtualMethodAndType Method](../../../../docs/framework/unmanaged-api/debugging/icordebugobjectvalue2-getvirtualmethodandtype-method.md)|`GetVirtualMethodAndType` is not yet implemented.|  
+|[GetVirtualMethodAndType Method](icordebugobjectvalue2-getvirtualmethodandtype-method.md)|`GetVirtualMethodAndType` is not yet implemented.|  
   
 ## Remarks  
   
@@ -41,4 +41,4 @@ Extends the "ICorDebugObjectValue" interface to support inheritance and override
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

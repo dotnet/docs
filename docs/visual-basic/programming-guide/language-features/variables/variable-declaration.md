@@ -1,5 +1,5 @@
 ---
-title: "Variable Declaration in Visual Basic"
+title: "Variable Declaration"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "variables [Visual Basic], declaring"

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 4e3fbe6c-b82a-4181-ab17-7faa1263f5b3
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # GetFileDef Method
 Retrieves the actual FileDef token used in metadata (as opposed to the token assigned by ALink).  

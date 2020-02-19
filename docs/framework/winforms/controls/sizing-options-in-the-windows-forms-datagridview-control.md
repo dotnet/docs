@@ -1,5 +1,5 @@
 ---
-title: "Sizing Options in the Windows Forms DataGridView Control"
+title: Sizing Options in DataGridView Control
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], row sizing"

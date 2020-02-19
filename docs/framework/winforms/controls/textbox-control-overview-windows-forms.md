@@ -1,5 +1,5 @@
 ---
-title: "TextBox Control Overview (Windows Forms)"
+title: "TextBox Control Overview"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

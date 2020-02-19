@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: d86a3d14-4796-4909-9591-dfafe3de5ce4
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::DefineParam Method
 Creates a parameter definition with the specified signature for the method referenced by the specified token, and gets a token for that parameter definition.  

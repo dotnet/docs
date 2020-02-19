@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 1b33de4c-19cb-4a36-a93f-8675b2a36d58
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # SetManifestFile Method
 Enables you to specify or reset the manifest file that the linker uses when it creates the assembly.  

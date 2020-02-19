@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "contention events [.NET Framework]"
   - "ETW, contention events (CLR)"
 ms.assetid: 6933e753-2f2a-425b-ae84-42138c957d76
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Contention ETW events
 

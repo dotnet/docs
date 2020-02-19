@@ -1,9 +1,9 @@
 ---
-title: "How to: Debug Empty Query Results Sets (C#)"
+title: "How to debug empty query results sets (C#)"
 ms.date: 07/20/2015
 ms.assetid: b569f0dc-425e-45a6-acbf-770fb761c981
 ---
-# How to: Debug Empty Query Results Sets (C#)
+# How to debug empty query results sets (C#)
 One of the most common problems when querying XML trees is that if the XML tree has a default namespace, the developer sometimes writes the query as though the XML were not in a namespace.  
   
  The first set of examples in this topic shows a typical way that XML in a default namespace is loaded, and is queried improperly.  

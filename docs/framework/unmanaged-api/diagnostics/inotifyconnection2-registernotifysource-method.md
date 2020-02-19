@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 2632da80-6e4b-4429-8dee-b382745a5f81
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # INotifyConnection2::RegisterNotifySource Method
 Installs a specified notification source.  

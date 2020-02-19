@@ -1,9 +1,9 @@
 ---
-title: "How to: Create a Document with Namespaces (C#) (LINQ to XML)"
+title: "How to create a document with namespaces (C#) (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 37e63c57-f86d-47ac-88a7-2c2d107def30
 ---
-# How to: Create a Document with Namespaces (C#) (LINQ to XML)
+# How to create a document with namespaces (C#) (LINQ to XML)
 This topic shows how to create documents with namespaces.  
   
 ## Example  

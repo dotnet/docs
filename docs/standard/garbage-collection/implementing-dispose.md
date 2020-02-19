@@ -98,7 +98,7 @@ Here's the general pattern for implementing the dispose pattern for a base class
   
 ## Implementing the dispose pattern for a derived class
 
-A class derived from a class that implements the <xref:System.IDisposable> interface shouldn't implement <xref:System.IDisposable>, because the base class implementation of <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> is inherited by its derived classes. Instead, to implement the dispose pattern for a derived class, you provide the following:  
+A class derived from a class that implements the <xref:System.IDisposable> interface shouldn't implement <xref:System.IDisposable>, because the base class implementation of <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> is inherited by its derived classes. Instead, to release resources of a derived class, you provide the following:  
   
 - A `protected Dispose(Boolean)` method that overrides the base class method and performs the actual work of releasing the resources of the derived class. This method should also call the `Dispose(Boolean)` method of the base class and pass its disposing status for the argument.  
   

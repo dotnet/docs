@@ -1,9 +1,9 @@
 ---
-title: "How to: Combine LINQ Queries with Regular Expressions (C#)"
+title: "How to combine LINQ queries with regular expressions (C#)"
 ms.date: 07/20/2015
 ms.assetid: 6b003b65-20a4-4ca2-929e-2ee3f215aecc
 ---
-# How to: Combine LINQ Queries with Regular Expressions (C#)
+# How to combine LINQ queries with regular expressions (C#)
 This example shows how to use the <xref:System.Text.RegularExpressions.Regex> class to create a regular expression for more complex matching in text strings. The LINQ query makes it easy to filter on exactly the files that you want to search with the regular expression, and to shape the results.  
   
 ## Example  

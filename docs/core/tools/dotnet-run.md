@@ -1,15 +1,11 @@
 ---
 title: dotnet run command
 description: The dotnet run command provides a convenient option to run your application from the source code.
-ms.date: 11/01/2019
+ms.date: 02/19/2020
 ---
 # dotnet run
 
-**This article applies to: ✓** .NET Core 1.x SDK and later versions
-
-<!-- todo: uncomment when all CLI commands are reviewed
-[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
--->
+**This article applies to: ✓** .NET Core 2.x SDK and later versions
 
 ## Name
 
@@ -60,7 +56,7 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 - **`--force`**
 
-  Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file. Available since .NET Core 2.0 SDK.
+  Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
 
 - **`-h|--help`**
 
@@ -72,23 +68,23 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 - **`--launch-profile <NAME>`**
 
-  The name of the launch profile (if any) to use when launching the application. Launch profiles are defined in the *launchSettings.json* file and are typically called `Development`, `Staging`, and `Production`. For more information, see [Working with multiple environments](/aspnet/core/fundamentals/environments). Available since .NET Core 2.0 SDK.
+  The name of the launch profile (if any) to use when launching the application. Launch profiles are defined in the *launchSettings.json* file and are typically called `Development`, `Staging`, and `Production`. For more information, see [Working with multiple environments](/aspnet/core/fundamentals/environments).
 
 - **`--no-build`**
 
-  Doesn't build the project before running. It also implicit sets the `--no-restore` flag. Available since .NET Core 2.0 SDK.
+  Doesn't build the project before running. It also implicit sets the `--no-restore` flag.
 
 - **`--no-dependencies`**
 
-  When restoring a project with project-to-project (P2P) references, restores the root project and not the references. Available since .NET Core 2.0 SDK.
+  When restoring a project with project-to-project (P2P) references, restores the root project and not the references.
 
 - **`--no-launch-profile`**
 
-  Doesn't try to use *launchSettings.json* to configure the application. Available since .NET Core 2.0 SDK.
+  Doesn't try to use *launchSettings.json* to configure the application.
 
 - **`--no-restore`**
 
-  Doesn't execute an implicit restore when running the command. Available since .NET Core 2.0 SDK.
+  Doesn't execute an implicit restore when running the command.
 
 - **`-p|--project <PATH>`**
 
@@ -96,7 +92,7 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 - **`--r|runtime <RUNTIME_IDENTIFIER>`**
 
-  Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). Available since .NET Core 2.0 SDK.
+  Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). `--r` option available since .NET Core 3.0 SDK.
 
 - **`-v|--verbosity <LEVEL>`**
 

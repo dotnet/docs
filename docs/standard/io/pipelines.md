@@ -68,6 +68,8 @@ The <xref:System.IO.Pipelines.Pipe> class can be used to create a `PipeWriter/Pi
 
 [!code-csharp[](~/samples/snippets/csharp/pipelines/Pipe.cs?name=snippet2)]
 
+[!INCLUDE [pipelines-do-not-use-1](../../../includes/code-comments-loc.md)]
+
 <a name="pbu"></a>
 
 ### Pipe basic usage

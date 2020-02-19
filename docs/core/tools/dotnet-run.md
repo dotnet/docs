@@ -90,9 +90,9 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
   Specifies the path of the project file to run (folder name or full path). If not specified, it defaults to the current directory.
 
-- **`--r|runtime <RUNTIME_IDENTIFIER>`**
+- **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
-  Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). `--r` option available since .NET Core 3.0 SDK.
+  Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). `-r` short option available since .NET Core 3.0 SDK.
 
 - **`-v|--verbosity <LEVEL>`**
 

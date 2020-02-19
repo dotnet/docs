@@ -313,7 +313,7 @@ costly if those allocations occur in tight loops.
 The new language feature means that async method return types aren't limited to `Task`, `Task<T>`, and `void`. The returned type
 must still satisfy the async pattern, meaning a `GetAwaiter` method
 must be accessible. As one concrete example, the `ValueTask` type
-has been added to the .NET framework to make use of this new language
+has been added to .NET to make use of this new language
 feature:
 
 [!code-csharp[UsingValueTask](~/samples/snippets/csharp/new-in-7/AsyncWork.cs#UsingValueTask "Using ValueTask")]

@@ -1,5 +1,5 @@
 ---
-title: "CheckedListBox Control (Windows Forms)"
+title: "CheckedListBox Control"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "CheckedListBox control [Windows Forms], reference"

@@ -16,14 +16,14 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugThread3 Interface
-Provides the entry point to the [ICorDebugStackWalk](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-interface.md) and corresponding interfaces.  
+Provides the entry point to the [ICorDebugStackWalk](icordebugstackwalk-interface.md) and corresponding interfaces.  
   
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
-|[CreateStackWalk Method](../../../../docs/framework/unmanaged-api/debugging/icordebugthread3-createstackwalk-method.md)|Creates an [ICorDebugStackWalk](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-interface.md) object for the thread whose stack you want to unwind.|  
-|[GetActiveInternalFrames Method](../../../../docs/framework/unmanaged-api/debugging/icordebugthread3-getactiveinternalframes-method.md)|Returns an array of internal frames ([ICorDebugInternalFrame2](../../../../docs/framework/unmanaged-api/debugging/icordebuginternalframe2-interface.md) objects) on the stack.|  
+|[CreateStackWalk Method](icordebugthread3-createstackwalk-method.md)|Creates an [ICorDebugStackWalk](icordebugstackwalk-interface.md) object for the thread whose stack you want to unwind.|  
+|[GetActiveInternalFrames Method](icordebugthread3-getactiveinternalframes-method.md)|Returns an array of internal frames ([ICorDebugInternalFrame2](icordebuginternalframe2-interface.md) objects) on the stack.|  
   
 ## Remarks  
  `ICorDebugThread3` is a logical extension to the ICorDebugThread interface.  
@@ -42,5 +42,5 @@ Provides the entry point to the [ICorDebugStackWalk](../../../../docs/framework/
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

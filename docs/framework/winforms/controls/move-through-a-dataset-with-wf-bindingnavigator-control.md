@@ -1,5 +1,5 @@
 ---
-title: "How to: Move Through a DataSet with the Windows Forms BindingNavigator Control"
+title: Move Through a DataSet with BindingNavigator Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

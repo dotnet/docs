@@ -95,7 +95,7 @@ Grouping constructs delineate subexpressions of a regular expression and typical
 |`(?!` *subexpression* `)`|Zero-width negative lookahead assertion.|`\b(?!un)\w+\b`|`"sure"`, `"used"` in `"unsure sure unity used"`|
 |`(?<=` *subexpression* `)`|Zero-width positive lookbehind assertion.|`(?<=19)\d{2}\b`|`"99"`, `"50"`, `"05"` in `"1851 1999 1950 1905 2003"`|
 |`(?<!` *subexpression* `)`|Zero-width negative lookbehind assertion.|`(?<!19)\d{2}\b`|`"51"`, `"03"` in `"1851 1999 1950 1905 2003"`|
-|`(?>` *subexpression* `)`|Nonbacktracking (or "greedy") subexpression.|`[13579](?>A+B+)`|`"1ABB"`, `"3ABB"`, and `"5AB"` in `"1ABB 3ABBC 5AB 5AC"`|
+|`(?>` *subexpression* `)`|Atomic group.|`[13579](?>A+B+)`|`"1ABB"`, `"3ABB"`, and `"5AB"` in `"1ABB 3ABBC 5AB 5AC"`|
 
 ## Quantifiers
 

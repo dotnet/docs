@@ -1,5 +1,5 @@
 ---
-title: "Margin and Padding in Windows Forms Controls"
+title: Margin and Padding in Controls
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Padding property [Windows Forms]"

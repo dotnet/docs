@@ -1,5 +1,5 @@
 ---
-title: "Changing the Appearance of Windows Forms"
+title: Customize appearance
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Forms, changing the appearance of"

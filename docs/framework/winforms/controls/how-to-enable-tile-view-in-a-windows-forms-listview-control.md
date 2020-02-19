@@ -1,5 +1,5 @@
 ---
-title: "How to: Enable Tile View in a Windows Forms ListView Control"
+title: Enable Tile View in ListView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

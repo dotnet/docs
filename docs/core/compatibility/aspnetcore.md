@@ -1,5 +1,6 @@
 ---
-title: ASP.NET Core breaking changes - .NET Core
+title: ASP.NET Core breaking changes
+titleSuffix: ""
 description: Lists the breaking changes in ASP.NET Core.
 ms.date: "01/10/2020"
 author: "scottaddie"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Apply Attributes in Windows Forms Controls"
+title: Apply Attributes in Controls
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

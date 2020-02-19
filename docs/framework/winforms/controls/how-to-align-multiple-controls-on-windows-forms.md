@@ -1,5 +1,5 @@
 ---
-title: "How to: Align Multiple Controls on Windows Forms"
+title: Align Multiple Controls
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "forms [Windows Forms], aligning controls"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Design a Windows Forms Layout that Responds Well to Localization"
+title: Design a localization-friendly layout
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -1,5 +1,5 @@
 ---
-title: "PrintDocument Component (Windows Forms)"
+title: "PrintDocument Component"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "PrintDocument component [Windows Forms]"

@@ -1,5 +1,5 @@
 ---
-title: "How to animate in a style (WPF)"
+title: "How to animate in a style"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "animation [WPF], properties [WPF], within styles"

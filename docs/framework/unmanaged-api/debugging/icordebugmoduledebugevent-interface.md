@@ -4,16 +4,16 @@ ms.date: "03/30/2017"
 ms.assetid: 41950c52-1ac8-4212-b814-c77e20879f91
 ---
 # ICorDebugModuleDebugEvent Interface
-Extends the [ICorDebugDebugEvent](../../../../docs/framework/unmanaged-api/debugging/icordebugdebugevent-interface.md) interface to support module-level events.  
+Extends the [ICorDebugDebugEvent](icordebugdebugevent-interface.md) interface to support module-level events.  
   
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetModule Method](../../../../docs/framework/unmanaged-api/debugging/icordebugmoduledebugevent-getmodule-method.md)|Gets the merged module that was just loaded or unloaded.|  
+|[GetModule Method](icordebugmoduledebugevent-getmodule-method.md)|Gets the merged module that was just loaded or unloaded.|  
   
 ## Remarks  
- The [MODULE_LOADED](../../../../docs/framework/unmanaged-api/debugging/cordebugdebugeventkind-enumeration.md) and [MODULE_UNLOADED](../../../../docs/framework/unmanaged-api/debugging/cordebugdebugeventkind-enumeration.md) event types implement this interface.  
+ The [MODULE_LOADED](cordebugdebugeventkind-enumeration.md) and [MODULE_UNLOADED](cordebugdebugeventkind-enumeration.md) event types implement this interface.  
   
 > [!NOTE]
 > The interface is available with .NET Native only. Attempting to call `QueryInterface` to retrieve an interface pointer returns `E_NOINTERFACE` for ICorDebug scenarios outside of .NET Native.  
@@ -29,5 +29,5 @@ Extends the [ICorDebugDebugEvent](../../../../docs/framework/unmanaged-api/debug
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

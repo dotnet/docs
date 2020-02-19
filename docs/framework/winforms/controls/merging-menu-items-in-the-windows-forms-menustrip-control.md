@@ -1,5 +1,5 @@
 ---
-title: "Merging Menu Items in the Windows Forms MenuStrip Control"
+title: Merging Menu Items in MenuStrip Control
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "MenuStrip [Windows Forms], merging"

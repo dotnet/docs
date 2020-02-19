@@ -1,5 +1,5 @@
 ---
-title: "International fonts in Windows Forms and controls"
+title: International fonts in forms and controls
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "fonts [Windows Forms], international"

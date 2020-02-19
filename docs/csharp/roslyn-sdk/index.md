@@ -85,7 +85,7 @@ each developer's machine to enforce the standards.
 
 ## Provide guidance with library packages
 
-There are a wealth of libraries available for .NET developers on NuGet.
+There is a wealth of libraries available for .NET developers on NuGet.
 Some of these come from Microsoft, some from third-party companies, and
 others from community members and volunteers. These libraries get more
 adoption and higher reviews when developers can succeed with those
@@ -120,7 +120,7 @@ practices.
 The .NET Compiler Platform SDK includes the latest language object models
 for code generation, analysis, and refactoring. This section provides a
 conceptual overview of the .NET Compiler Platform SDK. Further details can be
-found in the quickstarts, samples and tutorials sections.
+found in the quickstarts, samples, and tutorials sections.
 
 You can learn more about the concepts in the .NET Compiler Platform SDK in these five topics:
 

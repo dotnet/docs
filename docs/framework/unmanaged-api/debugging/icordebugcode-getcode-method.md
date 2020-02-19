@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugCode::GetCode Method
-Gets all the code for the specified function, formatted for disassembly. This method has been deprecated in the .NET Framework version 2.0. Use [ICorDebugCode2::GetCodeChunks](../../../../docs/framework/unmanaged-api/debugging/icordebugcode2-getcodechunks-method.md) instead.  
+Gets all the code for the specified function, formatted for disassembly. This method has been deprecated in the .NET Framework version 2.0. Use [ICorDebugCode2::GetCodeChunks](icordebugcode2-getcodechunks-method.md) instead.  
   
 ## Syntax  
   
@@ -62,4 +62,4 @@ HRESULT GetCode (
   
 ## See also
 
-- [GetCodeChunks Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcode2-getcodechunks-method.md)
+- [GetCodeChunks Method](icordebugcode2-getcodechunks-method.md)

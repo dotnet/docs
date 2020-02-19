@@ -30,7 +30,7 @@ Provides a unique identifier for markup elements. In many scenarios, this unique
   
  Tools that have significant knowledge of a particular XAML schema can choose to apply `x:Uid` only for true localizable strings, instead of for all cases where a text string value is encountered in markup.  
   
- Frameworks can specify a particular property in their object model to be an alias for `x:Uid` by applying the attribute <xref:System.Windows.Markup.UidPropertyAttribute> to the defining type. If a framework specifies a particular property, it is not valid to specify both `x:Uid` and the aliased member on the same object. If both `x:Uid` and the aliased member are specified, the .NET Framework XAML Services API typically throws <xref:System.Xaml.XamlDuplicateMemberException> for this case.  
+ Frameworks can specify a particular property in their object model to be an alias for `x:Uid` by applying the attribute <xref:System.Windows.Markup.UidPropertyAttribute> to the defining type. If a framework specifies a particular property, it is not valid to specify both `x:Uid` and the aliased member on the same object. If both `x:Uid` and the aliased member are specified, .NET XAML Services API typically throws <xref:System.Xaml.XamlDuplicateMemberException> for this case.  
   
 ## WPF Usage Notes  
  For more information about the role of `x:Uid` in the WPF localization process and in the BAML form of XAML, see [Globalization for WPF](../../framework/wpf/advanced/globalization-for-wpf.md) or <xref:System.Windows.Markup.Localizer.BamlLocalizableResourceKey.Uid%2A>  

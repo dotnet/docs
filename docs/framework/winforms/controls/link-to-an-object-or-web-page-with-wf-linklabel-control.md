@@ -1,5 +1,5 @@
 ---
-title: "How to: Link to an Object or Web Page with the Windows Forms LinkLabel Control"
+title: Link to an Object or Web Page with LinkLabel Control
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

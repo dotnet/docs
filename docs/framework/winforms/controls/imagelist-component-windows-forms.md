@@ -1,5 +1,5 @@
 ---
-title: "ImageList Component (Windows Forms)"
+title: "ImageList Component"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "ImageList component [Windows Forms]"

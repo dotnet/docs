@@ -9,7 +9,7 @@ ms.assetid: 7c11abec-1075-474c-9d9b-778e5dab21c3
 ---
 # XAML node stream structures and concepts
 
-XAML readers and XAML writers as implemented in .NET Framework XAML Services are based on the design concept of a XAML node stream. The XAML node stream is a conceptualization of a set of XAML nodes. In this conceptualization, a XAML processor walks through the structure of the node relationships in the XAML one at a time. At any time, only one current record or current position exists in an open XAML node stream, and many aspects of the API report only the information available from that position. The current node in a XAML node stream can be described as being an object, a member, or a value. By treating XAML as a XAML node stream, XAML readers can communicate with XAML writers and enable a program to view, interact with, or alter the contents of a XAML node stream during either a load path or a save path operation that involves XAML. XAML reader and writer API design and the XAML node stream concept are similar to previous related reader and writer designs and concepts, such as the XML Document Object Model (DOM) and the <xref:System.Xml.XmlReader> and <xref:System.Xml.XmlWriter> classes. This topic discusses XAML node stream concepts and describes how you can write routines that interact with XAML representations at the XAML node level.
+XAML readers and XAML writers as implemented in .NET XAML Services are based on the design concept of a XAML node stream. The XAML node stream is a conceptualization of a set of XAML nodes. In this conceptualization, a XAML processor walks through the structure of the node relationships in the XAML one at a time. At any time, only one current record or current position exists in an open XAML node stream, and many aspects of the API report only the information available from that position. The current node in a XAML node stream can be described as being an object, a member, or a value. By treating XAML as a XAML node stream, XAML readers can communicate with XAML writers and enable a program to view, interact with, or alter the contents of a XAML node stream during either a load path or a save path operation that involves XAML. XAML reader and writer API design and the XAML node stream concept are similar to previous related reader and writer designs and concepts, such as the XML Document Object Model (DOM) and the <xref:System.Xml.XmlReader> and <xref:System.Xml.XmlWriter> classes. This topic discusses XAML node stream concepts and describes how you can write routines that interact with XAML representations at the XAML node level.
 
 <a name="loading_into_a_xaml_reader"></a>
 
@@ -17,7 +17,7 @@ XAML readers and XAML writers as implemented in .NET Framework XAML Services are
 
 The base <xref:System.Xaml.XamlReader> class does not declare a particular technique for loading the initial XAML into a XAML reader. Instead, a derived class declares and implements the loading technique, including the general characteristics and constraints of its input source for XAML. For example, a <xref:System.Xaml.XamlObjectReader> reads an object graph, starting from the input source of a single object that represents the root or base. The <xref:System.Xaml.XamlObjectReader> then produces a XAML node stream from the object graph.
 
-The most prominent .NET Framework XAML Services–defined <xref:System.Xaml.XamlReader> subclass is <xref:System.Xaml.XamlXmlReader>. <xref:System.Xaml.XamlXmlReader> loads the initial XAML, either by loading a text file directly through a stream or file path, or indirectly through a related reader class such as <xref:System.IO.TextReader>. The <xref:System.Xaml.XamlReader> can be thought of as containing the entirety of the XAML input source after it has loaded. However, the <xref:System.Xaml.XamlReader> base API is designed so that the reader is interacting with a single node of the XAML. When first loaded, the first single node you encounter is the root of the XAML, and its start object.
+The most prominent .NET XAML Services–defined <xref:System.Xaml.XamlReader> subclass is <xref:System.Xaml.XamlXmlReader>. <xref:System.Xaml.XamlXmlReader> loads the initial XAML, either by loading a text file directly through a stream or file path, or indirectly through a related reader class such as <xref:System.IO.TextReader>. The <xref:System.Xaml.XamlReader> can be thought of as containing the entirety of the XAML input source after it has loaded. However, the <xref:System.Xaml.XamlReader> base API is designed so that the reader is interacting with a single node of the XAML. When first loaded, the first single node you encounter is the root of the XAML, and its start object.
 
 ### The XAML Node Stream Concept
 
@@ -49,7 +49,7 @@ A basic reading node loop for examining a XAML node stream consists of the follo
 
 - Call <xref:System.Xaml.XamlXmlReader.Read%2A> to advance the XAML reader to the next node in the XAML node stream, and repeat the steps again.
 
-The XAML node stream provided by .NET Framework XAML Services XAML readers always provides a full, deep traversal of all possible nodes. Typical flow-control techniques for a XAML node loop include defining a body within `while (reader.Read())`, and switching on <xref:System.Xaml.XamlXmlReader.NodeType%2A> at each node point in the node loop.
+The XAML node stream provided by .NET XAML Services XAML readers always provides a full, deep traversal of all possible nodes. Typical flow-control techniques for a XAML node loop include defining a body within `while (reader.Read())`, and switching on <xref:System.Xaml.XamlXmlReader.NodeType%2A> at each node point in the node loop.
 
 If the node stream is at end of file, the current node is null.
 
@@ -78,7 +78,7 @@ This basic example of a load path XAML node loop transparently connects the XAML
 
 ### Accessing XAML Beyond the Node Loop Concept
 
-There are potentially other ways to work with a XAML representation other than as a XAML node loop. For example, there could exist a XAML reader that can read an indexed node, or in particular accesses nodes directly by `x:Name`, by `x:Uid`, or through other identifiers. .NET Framework XAML Services does not provide a full implementation, but provides a suggested pattern through services and support types. For more information, see <xref:System.Xaml.IXamlIndexingReader> and <xref:System.Xaml.XamlNodeList>.
+There are potentially other ways to work with a XAML representation other than as a XAML node loop. For example, there could exist a XAML reader that can read an indexed node, or in particular accesses nodes directly by `x:Name`, by `x:Uid`, or through other identifiers. .NET XAML Services does not provide a full implementation, but provides a suggested pattern through services and support types. For more information, see <xref:System.Xaml.IXamlIndexingReader> and <xref:System.Xaml.XamlNodeList>.
 
 <a name="working_with_the_current_node"></a>
 
@@ -88,7 +88,7 @@ Most scenarios that use a XAML node loop do not only read the nodes. Most scenar
 
 In the typical load path scenario, a <xref:System.Xaml.XamlXmlReader> produces a XAML node stream; the XAML nodes are processed according to your logic and XAML schema context; and the nodes are passed to a <xref:System.Xaml.XamlObjectWriter>. You then integrate the resulting object graph into your application or framework.
 
-In a typical save path scenario, a <xref:System.Xaml.XamlObjectReader> reads the object graph, individual XAML nodes are processed, and a <xref:System.Xaml.XamlXmlWriter> outputs the serialized result as a XAML text file. The key is that both paths and scenarios involve working with exactly one XAML node at a time, and the XAML nodes are available for treatment in a standardized way that is defined by the XAML type system and the.NET Framework XAML Services APIs.
+In a typical save path scenario, a <xref:System.Xaml.XamlObjectReader> reads the object graph, individual XAML nodes are processed, and a <xref:System.Xaml.XamlXmlWriter> outputs the serialized result as a XAML text file. The key is that both paths and scenarios involve working with exactly one XAML node at a time, and the XAML nodes are available for treatment in a standardized way that is defined by the XAML type system and the.NET XAML Services APIs.
 
 ### Frames and Scope
 
@@ -100,7 +100,7 @@ A XAML node loop walks through a XAML node stream in a linear way. The node stre
 
 The first node in a node stream when it is opened by a XAML reader is the start-object node of the root object. By definition, this object is always a single object node and has no peers. In any real-world XAML example, the root object is defined to have one or more properties that hold more objects, and these properties have member nodes. The member nodes then have one or more object nodes, or might also terminate in a value node instead. The root object typically defines XAML namescopes, which are syntactically assigned as attributes in the XAML text markup but map to a `Namescope` node type in the XAML node stream representation.
 
-Consider the following XAML example (this is arbitrary XAML, not backed by existing types in the .NET Framework). Assume that in this object model, `FavorCollection` is `List<T>` of `Favor`, `Balloon` and `NoiseMaker` are assignable to `Favor`, the `Balloon.Color` property is backed by a `Color` object similar to how WPF defines colors as known color names, and `Color` supports a type converter for attribute syntax.
+Consider the following XAML example (this is arbitrary XAML, not backed by existing types in .NET). Assume that in this object model, `FavorCollection` is `List<T>` of `Favor`, `Balloon` and `NoiseMaker` are assignable to `Favor`, the `Balloon.Color` property is backed by a `Color` object similar to how WPF defines colors as known color names, and `Color` supports a type converter for attribute syntax.
 
 |XAML markup|Resulting XAML node stream|
 |-----------------|--------------------------------|
@@ -201,7 +201,7 @@ For a named parameter usage, each named parameter is represented as a member nod
 
 Certain members are introduced to a XAML node stream because of interpretations and conventions of a XAML reader, instead of through an explicit <xref:System.Xaml.XamlMember> lookup or construction. Often, these members are XAML directives. In some cases, it is the act of reading the XAML that introduces the directive into the XAML node stream. In other words, the original input XAML text did not explicitly specify the member directive, but the XAML reader inserts the directive in order to satisfy a structural XAML convention and report information in the XAML node stream before that information is lost.
 
-The following list notes all cases where a XAML reader is expected to introduce a directive XAML member node, and how that member node is identified in the .NET Framework XAML Services implementations.
+The following list notes all cases where a XAML reader is expected to introduce a directive XAML member node, and how that member node is identified in .NET XAML Services implementations.
 
 - **Initialization text for an object node:** The name of this member node is `_Initialization`, it represents a XAML directive, and it is defined in the XAML language XAML namespace. You can get a static entity for it from <xref:System.Xaml.XamlLanguage.Initialization%2A>.
 
@@ -209,17 +209,17 @@ The following list notes all cases where a XAML reader is expected to introduce 
 
 - **Unknown content:** The name of this member node is `_UnknownContent`. Strictly speaking, it is a <xref:System.Xaml.XamlDirective>, and it is defined in the XAML language XAML namespace. This directive is used as a sentinel for cases where a XAML object element contains content in the source XAML but no content property can be determined under the currently available XAML schema context. You can detect this case in a XAML node stream by checking for members named `_UnknownContent`. If no other action is taken in a load path XAML node stream, the default <xref:System.Xaml.XamlObjectWriter> throws on attempted `WriteEndObject` when it encounters the `_UnknownContent` member on any object. The default <xref:System.Xaml.XamlXmlWriter> does not throw, and treats the member as implicit. You can get a static entity for `_UnknownContent` from <xref:System.Xaml.XamlLanguage.UnknownContent%2A>.
 
-- **Collection property of a collection:** Although the backing CLR type of a collection class that is used for XAML usually has a dedicated named property that holds the collection items, that property is not known to a XAML type system prior to backing type resolution. Instead, the XAML node stream introduces an `Items` placeholder as a member of the collection XAML type. In the .NET Framework XAML Services implementation, the name of this directive or member in the node stream is `_Items`. A constant for this directive can be obtained from <xref:System.Xaml.XamlLanguage.Items%2A>.
+- **Collection property of a collection:** Although the backing CLR type of a collection class that is used for XAML usually has a dedicated named property that holds the collection items, that property is not known to a XAML type system prior to backing type resolution. Instead, the XAML node stream introduces an `Items` placeholder as a member of the collection XAML type. In .NET XAML Services implementation, the name of this directive or member in the node stream is `_Items`. A constant for this directive can be obtained from <xref:System.Xaml.XamlLanguage.Items%2A>.
 
     Note that a XAML node stream might contain an Items property with items that turn out to not be parsable based on the backing type resolution and XAML schema context. For example,
 
-- **XML-defined members:** The XML-defined `xml:base`, `xml:lang` and `xml:space` members are reported as XAML directives named `base`, `lang`, and `space` in the .NET Framework XAML Services implementations. The namespace for these is the XML namespace `http://www.w3.org/XML/1998/namespace`. Constants for each of these can be obtained from <xref:System.Xaml.XamlLanguage>.
+- **XML-defined members:** The XML-defined `xml:base`, `xml:lang` and `xml:space` members are reported as XAML directives named `base`, `lang`, and `space` in .NET XAML Services implementations. The namespace for these is the XML namespace `http://www.w3.org/XML/1998/namespace`. Constants for each of these can be obtained from <xref:System.Xaml.XamlLanguage>.
 
 ## Node Order
 
-In some cases, <xref:System.Xaml.XamlXmlReader> changes the order of XAML nodes in the XAML node stream, versus the order the nodes appear if viewed in the markup or if processed as XML. This is done in order to order the nodes such that a <xref:System.Xaml.XamlObjectWriter> can process the node stream in a forward-only manner.  In .NET Framework XAML Services, the XAML reader reorders nodes rather than leaving this task to the XAML writer, as a performance optimization for XAML object writer consumers of the node stream.
+In some cases, <xref:System.Xaml.XamlXmlReader> changes the order of XAML nodes in the XAML node stream, versus the order the nodes appear if viewed in the markup or if processed as XML. This is done in order to order the nodes such that a <xref:System.Xaml.XamlObjectWriter> can process the node stream in a forward-only manner.  In .NET XAML Services, the XAML reader reorders nodes rather than leaving this task to the XAML writer, as a performance optimization for XAML object writer consumers of the node stream.
 
-Certain directives are intended specifically to provide more information for the creation of an object from an object element. These directives are: `Initialization`, `PositionalParameters`, `TypeArguments`, `FactoryMethod`, `Arguments`. The .NET Framework XAML Services XAML readers attempt to place these directives as the first members in the node stream following an object's `StartObject`, for reasons that are explained in the next section.
+Certain directives are intended specifically to provide more information for the creation of an object from an object element. These directives are: `Initialization`, `PositionalParameters`, `TypeArguments`, `FactoryMethod`, `Arguments`. .NET XAML Services XAML readers attempt to place these directives as the first members in the node stream following an object's `StartObject`, for reasons that are explained in the next section.
 
 ### XamlObjectWriter Behavior and Node Order
 

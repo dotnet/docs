@@ -1,5 +1,5 @@
 ---
-title: "WebBrowser Control (Windows Forms)"
+title: "WebBrowser Control"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "WebBrowser control [Windows Forms]"

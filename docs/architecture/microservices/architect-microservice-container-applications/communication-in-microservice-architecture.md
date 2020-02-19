@@ -1,7 +1,7 @@
 ---
 title: Communication in a microservice architecture
 description: Explore different ways of communication between microservices, understanding the implications of synchronous and asynchronous ways.
-ms.date: 09/20/2018
+ms.date: 01/30/2020
 ---
 # Communication in a microservice architecture
 
@@ -55,7 +55,7 @@ If your microservice needs to raise an additional action in another microservice
 
 And finally (and this is where most of the issues arise when building microservices), if your initial microservice needs data that's originally owned by other microservices, do not rely on making synchronous requests for that data. Instead, replicate or propagate that data (only the attributes you need) into the initial service's database by using eventual consistency (typically by using integration events, as explained in upcoming sections).
 
-As noted earlier in the section [Identifying domain-model boundaries for each microservice](identify-microservice-domain-model-boundaries.md), duplicating some data across several microservices isn't an incorrect design—on the contrary, when doing that you can translate the data into the specific language or terms of that additional domain or Bounded Context. For instance, in the [eShopOnContainers application](https://github.com/dotnet-architecture/eShopOnContainers) you have a microservice named identity.api that's in charge of most of the user's data with an entity named User. However, when you need to store data about the user within the Ordering microservice, you store it as a different entity named Buyer. The Buyer entity shares the same identity with the original User entity, but it might have only the few attributes needed by the Ordering domain, and not the whole user profile.
+As noted earlier in the [Identifying domain-model boundaries for each microservice](identify-microservice-domain-model-boundaries.md) section, duplicating some data across several microservices isn't an incorrect design—on the contrary, when doing that you can translate the data into the specific language or terms of that additional domain or Bounded Context. For instance, in the [eShopOnContainers application](https://github.com/dotnet-architecture/eShopOnContainers) you have a microservice named `identity-api` that's in charge of most of the user's data with an entity named `User`. However, when you need to store data about the user within the `Ordering` microservice, you store it as a different entity named `Buyer`. The `Buyer` entity shares the same identity with the original `User` entity, but it might have only the few attributes needed by the `Ordering` domain, and not the whole user profile.
 
 You might use any protocol to communicate and propagate data asynchronously across microservices in order to have eventual consistency. As mentioned, you could use integration events using an event bus or message broker or you could even use HTTP by polling the other services instead. It doesn't matter. The important rule is to not create synchronous dependencies between your microservices.
 

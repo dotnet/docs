@@ -1,5 +1,5 @@
 ---
-title: "Dim Statement"
+title: Dim statement
 ms.date: 05/12/2018
 f1_keywords:
   - "vb.Dim"
@@ -30,7 +30,7 @@ helpviewer_keywords:
   - "variables [Visual Basic], member and local"
 ms.assetid: fae3eca1-f0b2-4400-994b-7aa58a848448
 ---
-# Dim Statement (Visual Basic)
+# Dim statement (Visual Basic)
 
 Declares and allocates storage space for one or more variables.
 
@@ -45,45 +45,45 @@ Dim [ WithEvents ] variablelist
 
 - `attributelist`
 
-  Optional. See [Attribute List](../../../visual-basic/language-reference/statements/attribute-list.md).
+  Optional. See [Attribute List](attribute-list.md).
 
 - `accessmodifier`
 
   Optional. Can be one of the following:
 
-  - [Public](../../../visual-basic/language-reference/modifiers/public.md)
+  - [Public](../modifiers/public.md)
 
-  - [Protected](../../../visual-basic/language-reference/modifiers/protected.md)
+  - [Protected](../modifiers/protected.md)
 
-  - [Friend](../../../visual-basic/language-reference/modifiers/friend.md)
+  - [Friend](../modifiers/friend.md)
 
-  - [Private](../../../visual-basic/language-reference/modifiers/private.md)
+  - [Private](../modifiers/private.md)
 
-  - [Protected Friend](../../language-reference/modifiers/protected-friend.md)
+  - [Protected Friend](../modifiers/protected-friend.md)
 
-  - [Private Protected](../../language-reference/modifiers/private-protected.md)
+  - [Private Protected](../modifiers/private-protected.md)
 
-  See [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).
+  See [Access levels in Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).
 
 - `Shared`
 
-  Optional. See [Shared](../../../visual-basic/language-reference/modifiers/shared.md).
+  Optional. See [Shared](../modifiers/shared.md).
 
 - `Shadows`
 
-  Optional. See [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md).
+  Optional. See [Shadows](../modifiers/shadows.md).
 
 - `Static`
 
-  Optional. See [Static](../../../visual-basic/language-reference/modifiers/static.md).
+  Optional. See [Static](../modifiers/static.md).
 
 - `ReadOnly`
 
-  Optional. See [ReadOnly](../../../visual-basic/language-reference/modifiers/readonly.md).
+  Optional. See [ReadOnly](../modifiers/readonly.md).
 
 - `WithEvents`
 
-Optional. Specifies that these are object variables that refer to instances of a class that can raise events. See [WithEvents](../../../visual-basic/language-reference/modifiers/withevents.md).
+  Optional. Specifies that these are object variables that refer to instances of a class that can raise events. See [WithEvents](../modifiers/withevents.md).
 
 - `variablelist`
 
@@ -97,7 +97,7 @@ Optional. Specifies that these are object variables that refer to instances of a
 
   |Part|Description|
   |---|---|
-  |`variablename`|Required. Name of the variable. See [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md).|
+  |`variablename`|Required. Name of the variable. See [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md).|
   |`boundslist`|Optional. List of bounds of each dimension of an array variable.|
   |`New`|Optional. Creates a new instance of the class when the `Dim` statement runs.|
   |`datatype`|Optional. Data type of the variable.|
@@ -127,11 +127,11 @@ For a reference type, you use the `New` keyword to create a new instance of the 
 Dim bottomLabel As New System.Windows.Forms.Label
 ```
 
-You can declare a variable in a procedure, block, class, structure, or module. You cannot declare a variable in a source file, namespace, or interface. For more information, see [Declaration Contexts and Default Access Levels](../../../visual-basic/language-reference/statements/declaration-contexts-and-default-access-levels.md).
+You can declare a variable in a procedure, block, class, structure, or module. You cannot declare a variable in a source file, namespace, or interface. For more information, see [Declaration Contexts and Default Access Levels](declaration-contexts-and-default-access-levels.md).
 
 A variable that is declared at module level, outside any procedure, is a *member variable* or *field*. Member variables are in scope throughout their class, structure, or module. A variable that is declared at procedure level is a *local variable*. Local variables are in scope only within their procedure or block.
 
-The following access modifiers are used to declare variables outside a procedure: `Public`, `Protected`, `Friend`, `Protected Friend`, and `Private`. For more information, see [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).
+The following access modifiers are used to declare variables outside a procedure: `Public`, `Protected`, `Friend`, `Protected Friend`, and `Private`. For more information, see [Access levels in Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).
 
 The `Dim` keyword is optional and usually omitted if you specify any of the following modifiers: `Public`, `Protected`, `Friend`, `Protected Friend`, `Private`, `Shared`, `Shadows`, `Static`, `ReadOnly`, or `WithEvents`.
 
@@ -142,9 +142,9 @@ Private salary As Decimal
 Static runningTotal As Integer
 ```
 
-If `Option Explicit` is on (the default), the compiler requires a declaration for every variable you use. For more information, see [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md).
+If `Option Explicit` is on (the default), the compiler requires a declaration for every variable you use. For more information, see [Option Explicit Statement](option-explicit-statement.md).
 
-## Specifying an Initial Value
+## Specifying an initial value
 
 You can assign a value to a variable when it is created. For a value type, you use an *initializer* to supply an expression to be assigned to the variable. The expression must evaluate to a constant that can be calculated at compile time.
 
@@ -163,9 +163,9 @@ Dim num1 As Integer = 3
 Dim num2 = 3
 ```
 
-Type inference applies at the procedure level. It does not apply outside a procedure in a class, structure, module, or interface. For more information about type inference, see [Option Infer Statement](../../../visual-basic/language-reference/statements/option-infer-statement.md) and [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md).
+Type inference applies at the procedure level. It does not apply outside a procedure in a class, structure, module, or interface. For more information about type inference, see [Option Infer Statement](option-infer-statement.md) and [Local Type Inference](../../programming-guide/language-features/variables/local-type-inference.md).
 
-For information about what happens when a data type or initializer is not specified, see [Default Data Types and Values](../../../visual-basic/language-reference/statements/dim-statement.md#default) later in this topic.
+For information about what happens when a data type or initializer is not specified, see [Default Data Types and Values](dim-statement.md#default) later in this topic.
 
 You can use an *object initializer* to declare instances of named and anonymous types. The following code creates an instance of a `Student` class and uses an object initializer to initialize properties.
 
@@ -174,9 +174,9 @@ Dim student1 As New Student With {.First = "Michael",
                                   .Last = "Tucker"}
 ```
 
-For more information about object initializers, see [How to: Declare an Object by Using an Object Initializer](../../../visual-basic/programming-guide/language-features/objects-and-classes/how-to-declare-an-object-by-using-an-object-initializer.md), [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md), and [Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md).
+For more information about object initializers, see [How to: Declare an Object by Using an Object Initializer](../../programming-guide/language-features/objects-and-classes/how-to-declare-an-object-by-using-an-object-initializer.md), [Object Initializers: Named and Anonymous Types](../../programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md), and [Anonymous Types](../../programming-guide/language-features/objects-and-classes/anonymous-types.md).
 
-## Declaring Multiple Variables
+## Declaring multiple variables
 
 You can declare several variables in one declaration statement, specifying the variable name for each one, and following each array name with parentheses. Multiple variables are separated by commas.
 
@@ -195,7 +195,7 @@ Dim a, b, c As Single, x, y As Double, i As Integer
 
 ## Arrays
 
-You can declare a variable to hold an *array*, which can hold multiple values. To specify that a variable holds an array, follow its `variablename` immediately with parentheses. For more information about arrays, see [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md).
+You can declare a variable to hold an *array*, which can hold multiple values. To specify that a variable holds an array, follow its `variablename` immediately with parentheses. For more information about arrays, see [Arrays](../../programming-guide/language-features/arrays/index.md).
 
 You can specify the lower and upper bound of each dimension of an array. To do this, include a `boundslist` inside the parentheses. For each dimension, the `boundslist` specifies the upper bound and optionally the lower bound. The lower bound is always zero, whether you specify it or not. Each index can vary from zero through its upper bound value.
 
@@ -229,7 +229,7 @@ If the array has more than one dimension, you must include commas between the pa
 Dim oneDimension(), twoDimensions(,), threeDimensions(,,) As Byte
 ```
 
-You can declare a *zero-length array* by declaring one of the array's dimensions to be -1. A variable that holds a zero-length array does not have the value `Nothing`. Zero-length arrays are required by certain common language runtime functions. If you try to access such an array, a runtime exception occurs. For more information, see [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md).
+You can declare a *zero-length array* by declaring one of the array's dimensions to be -1. A variable that holds a zero-length array does not have the value `Nothing`. Zero-length arrays are required by certain common language runtime functions. If you try to access such an array, a runtime exception occurs. For more information, see [Arrays](../../programming-guide/language-features/arrays/index.md).
 
 You can initialize the values of an array by using an array literal. To do this, surround the initialization values with braces (`{}`).
 
@@ -243,16 +243,16 @@ For multidimensional arrays, the initialization for each separate dimension is e
 Dim twoDimensions(,) As Integer = {{0, 1, 2}, {10, 11, 12}}
 ```
 
-For more information about array literals, see [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md).
+For more information about array literals, see [Arrays](../../programming-guide/language-features/arrays/index.md).
 
-## <a name="default"></a> Default Data Types and Values
+## <a name="default"></a> Default data types and values
 
 The following table describes the results of various combinations of specifying the data type and initializer in a `Dim` statement.
 
 |Data type specified?|Initializer specified?|Example|Result|
 |---|---|---|---|
-|No|No|`Dim qty`|If [Option Strict](../../../visual-basic/language-reference/statements/option-strict-statement.md) is off (the default), the variable is set to `Nothing`.<br /><br /> If `Option Strict` is on, a compile-time error occurs.|
-|No|Yes|`Dim qty = 5`|If [Option Infer](../../../visual-basic/language-reference/statements/option-infer-statement.md) is on (the default), the variable takes the data type of the initializer. See [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md).<br /><br /> If `Option Infer` is off and `Option Strict` is off, the variable takes the data type of `Object`.<br /><br /> If `Option Infer` is off and `Option Strict` is on, a compile-time error occurs.|
+|No|No|`Dim qty`|If [Option Strict](option-strict-statement.md) is off (the default), the variable is set to `Nothing`.<br /><br /> If `Option Strict` is on, a compile-time error occurs.|
+|No|Yes|`Dim qty = 5`|If [Option Infer](option-infer-statement.md) is on (the default), the variable takes the data type of the initializer. See [Local Type Inference](../../programming-guide/language-features/variables/local-type-inference.md).<br /><br /> If `Option Infer` is off and `Option Strict` is off, the variable takes the data type of `Object`.<br /><br /> If `Option Infer` is off and `Option Strict` is on, a compile-time error occurs.|
 |Yes|No|`Dim qty As Integer`|The variable is initialized to the default value for the data type. See the table later in this section.|
 |Yes|Yes|`Dim qty  As Integer = 5`|If the data type of the initializer is not convertible to the specified data type, a compile-time error occurs.|
 
@@ -268,7 +268,7 @@ If you specify a data type but do not specify an initializer, Visual Basic initi
 
 Each element of a structure is initialized as if it were a separate variable. If you declare the length of an array but do not initialize its elements, each element is initialized as if it were a separate variable.
 
-## Static Local Variable Lifetime
+## Static local variable lifetime
 
 A `Static` local variable has a longer lifetime than that of the procedure in which it is declared. The boundaries of the variable's lifetime depend on where the procedure is declared and whether it is `Shared`.
 
@@ -278,7 +278,7 @@ A `Static` local variable has a longer lifetime than that of the procedure in wh
 |In a class or structure, procedure is `Shared`|The first time the procedure is called either on a specific instance or on the class or structure itself|When your program stops execution|
 |In a class or structure, procedure isn't `Shared`|The first time the procedure is called on a specific instance|When the instance is released for garbage collection (GC)|
 
-## Attributes and Modifiers
+## Attributes and modifiers
 
 You can apply attributes only to member variables, not to local variables. An attribute contributes information to the assembly's metadata, which is not meaningful for temporary storage such as local variables.
 
@@ -286,18 +286,18 @@ At module level, you cannot use the `Static` modifier to declare member variable
 
 You can specify what code can access a variable by supplying an `accessmodifier`. Class and module member variables (outside any procedure) default to private access, and structure member variables default to public access. You can adjust their access levels with the access modifiers. You cannot use access modifiers on local variables (inside a procedure).
 
-You can specify `WithEvents` only on member variables, not on local variables inside a procedure. If you specify `WithEvents`, the data type of the variable must be a specific class type, not `Object`. You cannot declare an array with `WithEvents`. For more information about events, see [Events](../../../visual-basic/programming-guide/language-features/events/index.md).
+You can specify `WithEvents` only on member variables, not on local variables inside a procedure. If you specify `WithEvents`, the data type of the variable must be a specific class type, not `Object`. You cannot declare an array with `WithEvents`. For more information about events, see [Events](../../programming-guide/language-features/events/index.md).
 
 > [!NOTE]
 > Code outside a class, structure, or module must qualify a member variable's name with the name of that class, structure, or module. Code outside a procedure or block cannot refer to any local variables within that procedure or block.
 
-## Releasing Managed Resources
+## Releasing managed resources
 
 The .NET Framework garbage collector disposes of managed resources without any extra coding on your part. However, you can force the disposal of a managed resource instead of waiting for the garbage collector.
 
 If a class holds onto a particularly valuable and scarce resource (such as a database connection or file handle), you might not want to wait until the next garbage collection to clean up a class instance that's no longer in use. A class may implement the <xref:System.IDisposable> interface to provide a way to release resources before a garbage collection. A class that implements that interface exposes a `Dispose` method that can be called to force valuable resources to be released immediately.
 
-The `Using` statement automates the process of acquiring a resource, executing a set of statements, and then disposing of the resource. However, the resource must implement the <xref:System.IDisposable> interface. For more information, see [Using Statement](../../../visual-basic/language-reference/statements/using-statement.md).
+The `Using` statement automates the process of acquiring a resource, executing a set of statements, and then disposing of the resource. However, the resource must implement the <xref:System.IDisposable> interface. For more information, see [Using Statement](using-statement.md).
 
 ## Example
 
@@ -321,16 +321,16 @@ In the following example, the `speedValue` variable is declared at the class lev
 
 ## See also
 
-- [Const Statement](../../../visual-basic/language-reference/statements/const-statement.md)
-- [ReDim Statement](../../../visual-basic/language-reference/statements/redim-statement.md)
-- [Option Explicit Statement](../../../visual-basic/language-reference/statements/option-explicit-statement.md)
-- [Option Infer Statement](../../../visual-basic/language-reference/statements/option-infer-statement.md)
-- [Option Strict Statement](../../../visual-basic/language-reference/statements/option-strict-statement.md)
+- [Const Statement](const-statement.md)
+- [ReDim Statement](redim-statement.md)
+- [Option Explicit Statement](option-explicit-statement.md)
+- [Option Infer Statement](option-infer-statement.md)
+- [Option Strict Statement](option-strict-statement.md)
 - [Compile Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/compile-page-project-designer-visual-basic)
-- [Variable Declaration](../../../visual-basic/programming-guide/language-features/variables/variable-declaration.md)
-- [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md)
-- [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
-- [Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-types.md)
-- [Object Initializers: Named and Anonymous Types](../../../visual-basic/programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
-- [How to: Declare an Object by Using an Object Initializer](../../../visual-basic/programming-guide/language-features/objects-and-classes/how-to-declare-an-object-by-using-an-object-initializer.md)
-- [Local Type Inference](../../../visual-basic/programming-guide/language-features/variables/local-type-inference.md)
+- [Variable Declaration](../../programming-guide/language-features/variables/variable-declaration.md)
+- [Arrays](../../programming-guide/language-features/arrays/index.md)
+- [Object Initializers: Named and Anonymous Types](../../programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
+- [Anonymous Types](../../programming-guide/language-features/objects-and-classes/anonymous-types.md)
+- [Object Initializers: Named and Anonymous Types](../../programming-guide/language-features/objects-and-classes/object-initializers-named-and-anonymous-types.md)
+- [How to: Declare an Object by Using an Object Initializer](../../programming-guide/language-features/objects-and-classes/how-to-declare-an-object-by-using-an-object-initializer.md)
+- [Local Type Inference](../../programming-guide/language-features/variables/local-type-inference.md)

@@ -129,7 +129,7 @@ items:
   durationInMinutes: 5
   content: |
     That last sample showed you that integer division truncates the result.
-    You can get the **remainder** by using the **modulo** operator, the `%` character:
+    You can get the **remainder** by using the **remainder** operator, the `%` character:
 
     ```csharp
     int a = 7;

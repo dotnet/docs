@@ -1,5 +1,5 @@
 ---
-title: "How to: Select an Item in the Windows Forms ListView Control"
+title: Select an Item in ListView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

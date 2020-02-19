@@ -1,5 +1,5 @@
 ---
-title: "TreeView Control Overview (Windows Forms)"
+title: "TreeView Control Overview"
 ms.date: "03/30/2017"
 f1_keywords:
   - "TreeView"

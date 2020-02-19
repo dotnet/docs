@@ -1,5 +1,5 @@
 ---
-title: "How to: Add Load, Save, and Cancel Buttons to the Windows Forms BindingNavigator Control"
+title: Add Load, Save, and Cancel Buttons to BindingNavigator Control
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

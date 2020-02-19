@@ -1,5 +1,6 @@
 ---
-title: "Walkthrough: Creating New WPF Content on Windows Forms at Design Time"
+title: Create new WPF Content on Windows Forms
+titleSuffix: ""
 ms.date: 08/18/2018
 helpviewer_keywords:
   - "interoperability [Windows Forms], WPF and Windows Forms"

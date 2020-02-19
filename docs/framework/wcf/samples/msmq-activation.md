@@ -343,4 +343,4 @@ By default with the `netMsmqBinding` binding transport, security is enabled. Two
 
 ## See also
 
-- [AppFabric Hosting and Persistence Samples](https://go.microsoft.com/fwlink/?LinkId=193961)
+- [AppFabric Hosting and Persistence Samples](https://docs.microsoft.com/previous-versions/appfabric/ff383418(v=azure.10))

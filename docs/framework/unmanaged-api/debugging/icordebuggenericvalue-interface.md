@@ -23,8 +23,8 @@ A subclass of "ICorDebugValue" that applies to all values. This interface provid
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetValue Method](../../../../docs/framework/unmanaged-api/debugging/icordebuggenericvalue-getvalue-method.md)|Copies the value into the specified buffer.|  
-|[SetValue Method](../../../../docs/framework/unmanaged-api/debugging/icordebuggenericvalue-setvalue-method.md)|Copies a new value from the specified buffer.|  
+|[GetValue Method](icordebuggenericvalue-getvalue-method.md)|Copies the value into the specified buffer.|  
+|[SetValue Method](icordebuggenericvalue-setvalue-method.md)|Copies a new value from the specified buffer.|  
   
 ## Remarks  
  `ICorDebugGenericValue` is a sub-interface because it is non-remotable.  
@@ -47,4 +47,4 @@ A subclass of "ICorDebugValue" that applies to all values. This interface provid
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

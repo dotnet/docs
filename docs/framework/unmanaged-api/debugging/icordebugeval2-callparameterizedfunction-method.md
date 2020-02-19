@@ -48,7 +48,7 @@ HRESULT CallParameterizedFunction (
  [in] An array of pointers, each of which points to an ICorDebugValue object that represents a value passed in a function argument.  
   
 ## Remarks  
- `CallParameterizedFunction` is like [ICorDebugEval::CallFunction](../../../../docs/framework/unmanaged-api/debugging/icordebugeval-callfunction-method.md) except that the function may be inside a class with type parameters, may itself take type parameters, or both. The type arguments should be given first for the class, and then for the function.  
+ `CallParameterizedFunction` is like [ICorDebugEval::CallFunction](icordebugeval-callfunction-method.md) except that the function may be inside a class with type parameters, may itself take type parameters, or both. The type arguments should be given first for the class, and then for the function.  
   
  If the function is in a different application domain, a transition will occur. However, all type and value arguments must be in the target application domain.  
   

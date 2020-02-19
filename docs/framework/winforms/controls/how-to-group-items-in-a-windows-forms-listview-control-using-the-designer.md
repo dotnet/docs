@@ -1,5 +1,5 @@
 ---
-title: "How to: Group Items in a Windows Forms ListView Control Using the Designer"
+title: Group Items in ListView Control Using the Designer
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "ListView control [Windows Forms], grouping items"

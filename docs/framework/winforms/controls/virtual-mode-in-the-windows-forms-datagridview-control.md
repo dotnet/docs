@@ -1,5 +1,5 @@
 ---
-title: "Virtual Mode in the Windows Forms DataGridView Control"
+title: Virtual Mode in DataGridView Control
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], virtual mode"

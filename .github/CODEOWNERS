@@ -13,11 +13,14 @@
 # . Guides are first.
 # . .NET Core sections are next
 # . .NET Framework sections
-# . .NET Standard 
+# . .NET Standard
 # . Architecture e-books
 
 # In each subsection folders are order first by depth, then alphabetically.
 # This should make it easy to add new rules without breaking existing ones.
+
+######## API landing page ###########
+/api/** @mairaw
 
 ############ WHATS NEW ###############
 /docs/whats-new/** @mairaw @billwagner
@@ -69,12 +72,12 @@
 /docs/core/install/** @Thraka
 # Breaking changes
 /docs/core/compatibility/** @gewarren
+# Project SDKs
+/docs/core/project-sdk/** @gewarren
 # Config settings
 /docs/core/run-time-config/** @gewarren
 # Tools
 /docs/core/tools/** @tdykstra
-# Tools - CLI ref
-/docs/core/tools/dotnet-** @mairaw
 # Tutorials
 /docs/core/tutorials/** @tdykstra
 

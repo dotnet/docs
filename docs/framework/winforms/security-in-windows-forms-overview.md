@@ -1,5 +1,5 @@
 ---
-title: "Security in Windows Forms Overview"
+title: Security overview
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "code access security [Windows Forms], Windows Forms"

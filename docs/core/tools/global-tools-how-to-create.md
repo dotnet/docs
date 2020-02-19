@@ -21,9 +21,9 @@ This is the first in a series of three tutorials. In this tutorial, you create a
 
 ## Create a project
 
-1. Open a command prompt and create a folder named *repository* and under it a folder named *botsay*.
+1. Open a command prompt and create a folder named *repository*.
 
-1. Navigate to the *botsay* folder and enter the following command, replacing `<name>` with your name to make the project name unique:
+1. Navigate to the *repository* folder and enter the following command, replacing `<name>` with your name to make the project name unique:
 
    ```dotnetcli
    dotnet new console -n botsay-<name>
@@ -33,6 +33,14 @@ This is the first in a series of three tutorials. In this tutorial, you create a
 
    ```dotnetcli
    dotnet new console -n botsay-nancydavolio
+   ```
+
+   The command creates a new folder named *botsay-\<name>* under the *repository* folder.
+
+1. Navigate to the *botsay-\<name>* folder.
+
+   ```console
+   cd botsay-<name>
    ```
 
 ## Add the code

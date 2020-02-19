@@ -187,6 +187,9 @@ Remove the installed tools by running the [dotnet tool uninstall](dotnet-tool-un
 
 ```dotnetcli
 dotnet tool uninstall botsay-<name>
+```
+
+```dotnetcli
 dotnet tool uninstall dotnetsay
 ```
 

@@ -34,5 +34,5 @@ HRESULT GetSize(
   
 ## See also
 
-- [ICorDebugLoadedModule Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugloadedmodule-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugLoadedModule Interface](icordebugloadedmodule-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

@@ -1,5 +1,5 @@
 ---
-title: "How to: Bind to a Web Service Using the Windows Forms BindingSource"
+title: Bind to a Web Service Using BindingSource
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

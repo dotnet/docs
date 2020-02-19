@@ -12,9 +12,9 @@ ms.date: 12/04/2019
 
 This article describes what is new in .NET Core 3.1. This release contains minor improvements to .NET Core 3.0, focusing on small, but important, fixes. The most important feature about .NET Core 3.1 is that it's a [long-term support (LTS)](#long-term-support) release.
 
-If you're using Visual Studio 2019, you must update to [Visual Studio 2019 version 16.4](https://visualstudio.microsoft.com/downloads/) to work with .NET Core 3.1 projects. For more information on what is new in Visual Studio, see the [Visual Studio Blog](https://devblogs.microsoft.com/visualstudio/tis-the-season-visual-studio-2019/).
+If you're using Visual Studio 2019, you must update to [Visual Studio 2019 version 16.4](https://visualstudio.microsoft.com/downloads/) to work with .NET Core 3.1 projects. For more information on what's new in Visual Studio, see [What's New in Visual Studio 2019 version 16.4](/visualstudio/releases/2019/release-notes#whats-new-in-visual-studio-2019-version-164).
 
-Visual Studio for Mac also supports and includes .NET Core 3.1, in the Visual Studio for Mac 8.4 Preview channel. You'll need to opt into the Preview channel to use .NET Core 3.1.
+Visual Studio for Mac also supports and includes .NET Core 3.1 in Visual Studio for Mac 8.4.
 
 For more information about the release, see the [.NET Core 3.1 announcement](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-1/).
 
@@ -59,7 +59,7 @@ We recommend you update your applications to .NET Core 3.1 and move to the repla
 
 Support has been added for creating C++/CLI (also known as "managed C++") projects. Binaries produced from these projects are compatible with .NET Core 3.0 and later versions.
 
-To add support for C++/CLI in Visual Studio 2019 16.4, install the [Desktop development with C++ workload](https://docs.microsoft.com/cpp/build/vscpp-step-0-installation?view=vs-2019#step-4---choose-workloads). This workload adds two templates to Visual Studio:
+To add support for C++/CLI in Visual Studio 2019 version 16.4, install the [Desktop development with C++ workload](/cpp/build/vscpp-step-0-installation?view=vs-2019#step-4---choose-workloads). This workload adds two templates to Visual Studio:
 
 - CLR Class Library (.NET Core)
 - CLR Empty Project (.NET Core)
@@ -67,4 +67,4 @@ To add support for C++/CLI in Visual Studio 2019 16.4, install the [Desktop deve
 ## Next steps
 
 - [Review the breaking changes between .NET Core 3.0 and 3.1.](../compatibility/3.0-3.1.md)
-- [Review the breaking changes between .NET Framework and .NET Core 3.0 for Windows Forms apps.](../porting/winforms-breaking-changes.md)
+- [Review the breaking changes in .NET Core 3.1 for Windows Forms apps.](../compatibility/winforms.md#net-core-31)

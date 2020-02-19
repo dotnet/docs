@@ -1,6 +1,5 @@
 ---
 title: "await operator - C# reference"
-ms.custom: seodec18
 ms.date: 11/08/2019
 f1_keywords: 
   - "await_CSharpKeyword"

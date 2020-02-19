@@ -1,5 +1,5 @@
 ---
-title: "Application Settings for Windows Forms"
+title: "Application Settings"
 ms.date: "04/07/2017"
 f1_keywords: 
   - "ClientApplicationSettings"

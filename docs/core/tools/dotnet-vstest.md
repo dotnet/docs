@@ -1,7 +1,6 @@
 ---
 title: dotnet vstest command
 description: The dotnet vstest command builds a project and all of its dependencies.
-author: mairaw
 ms.date: 05/30/2018
 ---
 # dotnet vstest
@@ -83,7 +82,7 @@ Execute tests in parallel. By default, all available cores on the machine are av
 
 `--TestCaseFilter|/TestCaseFilter:<Expression>`
 
-Run tests that match the given expression. `<Expression>` is of the format `<property>Operator<value>[|&<Expression>]`, where Operator is one of `=`, `!=`, or `~`. Operator `~` has 'contains' semantics and is applicable for string properties like `DisplayName`. Parenthesis `()` are used to group sub-expressions.
+Run tests that match the given expression. `<Expression>` is of the format `<property>Operator<value>[|&<Expression>]`, where Operator is one of `=`, `!=`, or `~`. Operator `~` has 'contains' semantics and is applicable for string properties like `DisplayName`. Parenthesis `()` are used to group subexpressions.
 
 `-?|--Help|/?|/Help`
 
@@ -171,7 +170,7 @@ Execute tests in parallel. By default, all available cores on the machine are av
 
 `--TestCaseFilter|/TestCaseFilter:<Expression>`
 
-Run tests that match the given expression. `<Expression>` is of the format `<property>Operator<value>[|&<Expression>]`, where Operator is one of `=`, `!=`, or `~`. Operator `~` has 'contains' semantics and is applicable for string properties like `DisplayName`. Parenthesis `()` are used to group sub-expressions.
+Run tests that match the given expression. `<Expression>` is of the format `<property>Operator<value>[|&<Expression>]`, where Operator is one of `=`, `!=`, or `~`. Operator `~` has 'contains' semantics and is applicable for string properties like `DisplayName`. Parenthesis `()` are used to group subexpressions.
 
 `-?|--Help|/?|/Help`
 
@@ -247,7 +246,7 @@ Execute tests in parallel. By default, all available cores on the machine are av
 
 `--TestCaseFilter|/TestCaseFilter:<Expression>`
 
-Run tests that match the given expression. `<Expression>` is of the format `<property>Operator<value>[|&<Expression>]`, where Operator is one of `=`, `!=`, or `~`. Operator `~` has 'contains' semantics and is applicable for string properties like `DisplayName`. Parenthesis `()` are used to group sub-expressions.
+Run tests that match the given expression. `<Expression>` is of the format `<property>Operator<value>[|&<Expression>]`, where Operator is one of `=`, `!=`, or `~`. Operator `~` has 'contains' semantics and is applicable for string properties like `DisplayName`. Parenthesis `()` are used to group subexpressions.
 
 `-?|--Help|/?|/Help`
 

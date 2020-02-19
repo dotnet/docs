@@ -1,6 +1,5 @@
 ---
 title: "Hello World -- Your first program using Visual Studio on Windows or Mac - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 09/12/2019
 f1_keywords:
   - "cs.program"

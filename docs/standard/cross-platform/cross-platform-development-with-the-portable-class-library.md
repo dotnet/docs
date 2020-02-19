@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "targeting multiple platforms"
   - "multiple platforms, targeting"
 ms.assetid: c31e1663-c164-4e65-b66d-d3aa8750a154
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Cross-platform development with the Portable Class Library
 

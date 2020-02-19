@@ -1,6 +1,5 @@
 ---
 title: "where (generic type constraint) - C# Reference"
-ms.custom: seodec18
 
 ms.date: 04/12/2018
 f1_keywords:

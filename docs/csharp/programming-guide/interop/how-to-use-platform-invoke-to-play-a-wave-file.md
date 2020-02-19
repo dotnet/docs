@@ -1,6 +1,5 @@
 ---
-title: "How to: Use Platform Invoke to Play a Wave File - C# Programming Guide"
-ms.custom: seodec18
+title: "How to use platform invoke to play a WAV file - C# Programming Guide"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "platform invoke, sound files"
@@ -9,9 +8,9 @@ helpviewer_keywords:
   - ".wav files"
 ms.assetid: f7f62f53-e026-4c40-b221-3a26adb0c2c5
 ---
-# How to: Use Platform Invoke to Play a Wave File (C# Programming Guide)
+# How to use platform invoke to play a WAV file (C# Programming Guide)
 
-The following C# code example illustrates how to use platform invoke services to play a wave sound file on the Windows operating system.
+The following C# code example illustrates how to use platform invoke services to play a WAV sound file on the Windows operating system.
 
 ## Example
 

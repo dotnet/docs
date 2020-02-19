@@ -20,7 +20,6 @@ helpviewer_keywords:
   - "Visual Basic code, handling errors while running"
   - "structured exception handling, Try...Catch...Finally statements"
 ms.assetid: d6488026-ccb3-42b8-a810-0d97b9d6472b
-ms.custom: seodec18
 ---
 # Try...Catch...Finally Statement (Visual Basic)
 

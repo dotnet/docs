@@ -1,13 +1,11 @@
 ---
 title: dotnet-dump - .NET Core
 description: Installing and using the dotnet-dump command-line tool.
-author: sdmaclea
-ms.author: stmaclea
 ms.date: 10/14/2019
 ---
 # Dump collection and analysis utility (`dotnet-dump`)
 
-**This article applies to: ✓** .NET Core 3.0 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
 
 > [!NOTE]
 > `dotnet-dump` isn't supported on macOS.
@@ -154,7 +152,7 @@ dotnet-dump analyze <dump_path> [-h|--help] [-c|--command]
 
 ## Using `dotnet-dump`
 
-The first step is to collect a dump. This step can be skipped if a core dump has already been generated. The operating system or the .NET Core runtime's built-in [dump generation feature](https://github.com/dotnet/coreclr/blob/master/Documentation/botr/xplat-minidump-generation.md#configurationpolicy) can each create core dumps.
+The first step is to collect a dump. This step can be skipped if a core dump has already been generated. The operating system or the .NET Core runtime's built-in [dump generation feature](https://github.com/dotnet/runtime/blob/master/docs/design/coreclr/botr/xplat-minidump-generation.md) can each create core dumps.
 
 ```console
 $ dotnet-dump collect --process-id 1902

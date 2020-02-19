@@ -29,7 +29,7 @@ The `DataContractSerializer` provides the following levels of support for a give
 
 ## General Information
 
-- The schema namespace is described at [XML Schema](https://go.microsoft.com/fwlink/?LinkId=95475). The prefix "xs" is used in this document.
+- The schema namespace is described at [XML Schema](https://www.w3.org/2001/XMLSchema). The prefix "xs" is used in this document.
 
 - Any attributes with a non-schema namespace are ignored.
 

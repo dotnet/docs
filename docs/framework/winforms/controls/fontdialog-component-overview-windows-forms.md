@@ -1,5 +1,5 @@
 ---
-title: "FontDialog Component Overview (Windows Forms)"
+title: "FontDialog Component Overview"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "FontDialog"

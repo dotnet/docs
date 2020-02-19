@@ -1,6 +1,5 @@
 ---
 title: "Constraints on type parameters - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 04/12/2018
 helpviewer_keywords: 
   - "generics [C#], type constraints"

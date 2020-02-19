@@ -19,7 +19,7 @@ This section contains common questions and troubleshooting help for using queues
 
 **Q:** Do I have to upgrade MSMQ to use the <xref:System.ServiceModel.NetMsmqBinding> and `MsmqIntegration` bindings?
 
-**A:** No. Both bindings work with MSMQ 3.0 on [!INCLUDE[wxp](../../../../includes/wxp-md.md)] and Windows Server 2003. Certain features of the bindings become available when you upgrade to MSMQ 4.0 in Windows Vista.
+**A:** No. Both bindings work with MSMQ 3.0 on Windows XP and Windows Server 2003. Certain features of the bindings become available when you upgrade to MSMQ 4.0 in Windows Vista.
 
 **Q:** What features of the <xref:System.ServiceModel.NetMsmqBinding> and <xref:System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding> bindings are available in MSMQ 4.0 but not in MSMQ 3.0?
 
@@ -47,7 +47,7 @@ This section contains answers to most common troubleshooting issues. Some issues
 
 **Q:** I am trying to use a private queue and I get the following exception: `System.InvalidOperationException`: The URL is invalid. The URL for the queue cannot contain the '$' character. Use the syntax in net.msmq://machine/private/queueName to address a private queue.
 
-**A:** Please check the queue Uniform Resource Identifier (URI) in your configuration and code. Do not use the "$" character in the URI. For example, to address a private queue named OrdersQueue, specify the URI as net.msmq://localhost/private/ordersQueue.
+**A:** Check the queue Uniform Resource Identifier (URI) in your configuration and code. Do not use the "$" character in the URI. For example, to address a private queue named OrdersQueue, specify the URI as `net.msmq://localhost/private/ordersQueue`.
 
 **Q:** Calling `ServiceHost.Open()` on my queued application throws the following exception: `System.ArgumentException`: A base address cannot contain a URI query string. Why?
 
@@ -107,10 +107,6 @@ For non-security related Web host issues refer to: [Web Hosting a Queued Applica
 
 **A:** Set AutoComplete=`true` on the operation that corresponds to the last message in the session, and set AutoComplete=`false` on all remaining service operations.
 
-**Q:** Where can I find answers to common questions on MSMQ?
-
-**A:** For more information about MSMQ, see [Microsoft Message Queuing](https://go.microsoft.com/fwlink/?LinkId=87810).
-
 **Q:** Why does my service throw a `ProtocolException` when reading from a queue that contains both queued session messages and queued datagram messages?
 
 **A:** There is a fundamental difference in the way queued session messages and queued datagram messages are composed. Because of this, a service that is expecting to read a queued session message cannot receive a queued datagram message and a service expecting to read a queued datagram message cannot receive a session message. Attempting to read both types of messages from the same queue throws the following exception:
@@ -130,7 +126,7 @@ The system dead-letter queue, as well as any custom dead-letter queue, is partic
 
 **Q:** When I use a public or private format name and open the service host on Windows Vista, I get an error. Why?
 
-**A:** The WCF integration channel on Windows Vista checks to see if a sub-queue can be opened for the main application queue for handling poison messages. The sub-queue name is derived from an msmq.formatname URI passed to the listener. The sub-queue name in MSMQ can only be a direct format name. So you see the error. Change the queue URI to a direct format name.
+**A:** The WCF integration channel on Windows Vista checks to see if a subqueue can be opened for the main application queue for handling poison messages. The subqueue name is derived from an msmq.formatname URI passed to the listener. The subqueue name in MSMQ can only be a direct format name. So you see the error. Change the queue URI to a direct format name.
 
 **Q:** When receiving a message from an MSMQ application, the message sits in the queue and is not read by the receiving WCF application. Why?
 
@@ -206,4 +202,4 @@ Yet another workaround is to install MSMQ with Active Directory integration.
 
 ## Using Custom MSMQ Bindings with ReceiveContext Enabled
 
-When using a custom MSMQ binding with <xref:System.ServiceModel.Channels.ReceiveContext> enabled processing an incoming message will use a thread pool thread because native MSMQ does not support I/O completion for asynchronous <xref:System.ServiceModel.Channels.ReceiveContext> receives. This is because processing such a message uses internal transactions for <xref:System.ServiceModel.Channels.ReceiveContext> and MSMQ does not support asynchronous processing. To work around this issue you can add a <xref:System.ServiceModel.Description.SynchronousReceiveBehavior> to the endpoint to force synchronous processing or set <xref:System.ServiceModel.Description.DispatcherSynchronizationBehavior.MaxPendingReceives%2A> to 1.
+When using a custom MSMQ binding with <xref:System.ServiceModel.Channels.ReceiveContext> enabled, processing an incoming message uses a thread pool thread because native MSMQ doesn't support I/O completion for asynchronous <xref:System.ServiceModel.Channels.ReceiveContext> receives. This is because processing such a message uses internal transactions for <xref:System.ServiceModel.Channels.ReceiveContext> and MSMQ doesn't support asynchronous processing. To work around this issue, you can add a <xref:System.ServiceModel.Description.SynchronousReceiveBehavior> to the endpoint to force synchronous processing or set <xref:System.ServiceModel.Description.DispatcherSynchronizationBehavior.MaxPendingReceives%2A> to 1.

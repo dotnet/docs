@@ -16,9 +16,9 @@ This article describes how to use a package manager to install .NET Core on Debi
 
 Before installing .NET, you'll need to:
 
-- Register the Microsoft key
-- register the product repository
-- Install required dependencies
+- Register the Microsoft key.
+- Register the product repository.
+- Install required dependencies.
 
 This only needs to be done once per machine.
 
@@ -69,3 +69,11 @@ sudo apt-get install dotnet-runtime-3.1
 ## How to install other versions
 
 [!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
+
+## Troubleshoot the package manager
+
+This section provides information on common errors you may get while using the package manager to install .NET Core.
+
+### Failed to fetch
+
+[!INCLUDE [package-manager-failed-to-fetch-deb](includes/package-manager-failed-to-fetch-deb.md)]

@@ -1,6 +1,6 @@
 ---
 title: System.Delegate and the `delegate` keyword
-description: Learn about the classes in the .NET Framework that support delegates and how those map to the 'delegate' keyword.
+description: Learn about the classes in .NET that support delegates and how those map to the 'delegate' keyword.
 ms.date: 06/20/2016
 ms.technology: csharp-fundamentals
 ms.assetid: f3742fda-13c2-4283-8966-9e21c2674393
@@ -10,11 +10,9 @@ ms.assetid: f3742fda-13c2-4283-8966-9e21c2674393
 
 [Previous](delegates-overview.md)
 
-This article will cover the classes in the .NET framework
-that support delegates, and how those map to the `delegate`
-keyword.
+This article covers the classes in .NET that support delegates, and how those map to the `delegate` keyword.
 
-## Defining Delegate Types
+## Define delegate types
 
 Let's start with the 'delegate' keyword, because that's primarily what
 you will use as you work with delegates. The code that the
@@ -57,7 +55,7 @@ invocation list. The compiler will enforce that the signature
 of the method being added or removed matches the signature
 used when declaring the method. 
 
-## Declaring instances of delegates
+## Declare instances of delegates
 
 After defining the delegate, you can create an instance of that type.
 Like all variables in C#, you cannot declare delegate instances directly
@@ -76,7 +74,7 @@ The type of the variable is `Comparison<T>`, the delegate type
  That code snippet above declared a member variable inside a class. You can also
  declare delegate variables that are local variables, or arguments to methods.
 
-## Invoking Delegates
+## Invoke delegates
 
 You invoke the methods that are in the invocation list of a delegate by calling
 that delegate. Inside the `Sort()` method, the code will call the
@@ -96,7 +94,7 @@ the line above would cause a `NullReferenceException` to be thrown. The
 idioms used to address this problem are more complicated than a simple
 null-check, and are covered later in this [series](delegates-patterns.md).
 
-## Assigning, Adding and removing Invocation Targets
+## Assign, add, and remove invocation targets
 
 That's how a delegate type is defined, and how delegate instances
 are declared and invoked.
@@ -163,7 +161,7 @@ and support you'll typically need to work with delegates. These
 features are built on two classes in the .NET Core
 framework: <xref:System.Delegate> and <xref:System.MulticastDelegate>.
 
-The `System.Delegate` class, and its single direct sub-class,
+The `System.Delegate` class and its single direct subclass,
 `System.MulticastDelegate`, provide the framework support for
 creating delegates, registering methods as delegate targets,
 and invoking all methods that are registered as a delegate
@@ -211,7 +209,6 @@ variable. As you'll see [later in this series](delegates-patterns.md),
 there are patterns that work directly with these methods.
 
 Now that you've seen the language syntax and the classes that support
-delegates, let's examine how strongly typed delegates are used, created
-and invoked.
+delegates, let's examine how strongly typed delegates are used, created, and invoked.
 
 [Next](delegates-strongly-typed.md)

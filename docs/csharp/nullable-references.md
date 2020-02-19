@@ -17,7 +17,7 @@ C# 8.0 introduces **nullable reference types** and **non-nullable reference type
 
 This new feature provides significant benefits over the handling of reference variables in earlier versions of C# where the design intent couldn't be determined from the variable declaration. The compiler didn't provide safety against null reference exceptions for reference types:
 
-- **A reference can be null**. No warnings are issued when a reference type is initialized to null, or later assigned to null.
+- **A reference can be null**. No warning is issued when a reference type is initialized to null, or null is later assigned to it.
 - **A reference is assumed to be not null**. The compiler doesn't issue any warnings when reference types are dereferenced. (With nullable references,  the compiler issues warnings whenever you dereference a variable that may be null).
 
 With the addition of nullable reference types, you can declare your intent more clearly. The `null` value is the correct way to represent that a variable doesn't refer to a value. Don't use this feature to remove all `null` values from your code. Rather, you should declare your intent to the compiler and other developers that read your code. By declaring your intent, the compiler informs you when you write code that is inconsistent with that intent.
@@ -87,7 +87,7 @@ By default, nullable annotation and warning contexts are **disabled**. That mean
 The compiler uses the following rules in a disabled nullable annotation context:
 
 - You can't declare nullable references in a disabled context.
-- All reference variables may be assigned to null.
+- All reference variables may be assigned a value of null.
 - No warnings are generated when a variable of a reference type is dereferenced.
 - The null-forgiving operator may not be used in a disabled context.
 

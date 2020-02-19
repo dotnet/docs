@@ -38,5 +38,5 @@ HRESULT Reset();
   
 ## See also
 
-- [ICorProfilerModuleEnum Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilermoduleenum-interface.md)
-- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+- [ICorProfilerModuleEnum Interface](icorprofilermoduleenum-interface.md)
+- [Profiling Interfaces](profiling-interfaces.md)

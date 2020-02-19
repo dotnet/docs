@@ -22,7 +22,7 @@ ms.assetid: 87bee662-0a3e-4232-a421-20e7a5968321
   
 <a name="Support_in_Windows_Presentation_Foundation_"></a>   
 ## Support in Windows Presentation Foundation  
- Windows Presentation Foundation (WPF) is the new model for creating user interfaces. [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] elements do not contain native support for Active Accessibility; however, they do support [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], which includes bridging support for Active Accessibility clients. Only clients written specifically for [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] can take full advantage of the accessibility features of [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)], such as the rich support for text.  
+ Windows Presentation Foundation (WPF) is the new model for creating user interfaces. WPF elements do not contain native support for Active Accessibility; however, they do support [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], which includes bridging support for Active Accessibility clients. Only clients written specifically for [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] can take full advantage of the accessibility features of WPF, such as the rich support for text.  
   
 <a name="Servers_and_Clients_compare"></a>   
 ## Servers and Clients  

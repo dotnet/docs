@@ -1,5 +1,5 @@
 ---
-title: "How to: Set Pictures at Run Time (Windows Forms)"
+title: "How to: Set Pictures at Run Time"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

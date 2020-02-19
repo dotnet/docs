@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "stores, creating files and directories"
   - "storing data using isolated storage, creating files and directories"
 ms.assetid: 2ca4d2a4-809b-4f00-bc08-bf4a64d3a5c3
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Create Files and Directories in Isolated Storage
 After you have obtained an isolated store, you can create directories and files for storing data. Within a store, file and directory names are specified with respect to the root of the virtual file system.  

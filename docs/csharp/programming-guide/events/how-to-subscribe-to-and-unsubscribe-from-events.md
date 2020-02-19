@@ -1,6 +1,5 @@
 ---
 title: "How to subscribe to and unsubscribe from events - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "event handlers [C#], creating"

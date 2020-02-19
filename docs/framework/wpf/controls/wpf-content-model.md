@@ -1,5 +1,5 @@
 ---
-title: "WPF Content Model"
+title: "Content Model"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "UIElement class [WPF], displaying content"

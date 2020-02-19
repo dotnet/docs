@@ -1,5 +1,5 @@
 ---
-title: "How to: Layer Objects on Windows Forms"
+title: Layer Objects
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

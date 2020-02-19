@@ -391,7 +391,7 @@ This construct does require using the fully qualified type names on the right
 side of the `=` sign.
 
 The second technique is to strip off the time portions of any `DateTime` object
-used to index into the collections. The .NET framework does not include a Date only type.
+used to index into the collections. .NET doesn't include a date-only type.
 Developers use the `DateTime` type, but use the `Date` property to ensure that any
 `DateTime` object from that day are equal.
 

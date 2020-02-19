@@ -22,8 +22,8 @@ Provides information about internal frames, including stack address and position
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetFrameAddress Method](../../../../docs/framework/unmanaged-api/debugging/icordebuginternalframe2-getframeaddress-method.md)|Returns the stack address of the internal frame.|  
-|[IsCloserToLeaf Method](../../../../docs/framework/unmanaged-api/debugging/icordebuginternalframe2-isclosertoleaf-method.md)|Checks whether the `this` internal frame is closer to the leaf than the specified ICorDebugFrame object.|  
+|[GetFrameAddress Method](icordebuginternalframe2-getframeaddress-method.md)|Returns the stack address of the internal frame.|  
+|[IsCloserToLeaf Method](icordebuginternalframe2-isclosertoleaf-method.md)|Checks whether the `this` internal frame is closer to the leaf than the specified ICorDebugFrame object.|  
   
 ## Remarks  
  This interface extends the ICorDebugInternalFrame interface.  
@@ -42,5 +42,5 @@ Provides information about internal frames, including stack address and position
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

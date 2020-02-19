@@ -50,6 +50,6 @@ HRESULT GetExceptionThreadID(
   
 ## See also
 
-- [ICLRDataTarget3 Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget3-interface.md)
-- [GetExceptionContextRecord Method](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget3-getexceptioncontextrecord-method.md)
-- [GetExceptionRecord Method](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget3-getexceptionrecord-method.md)
+- [ICLRDataTarget3 Interface](iclrdatatarget3-interface.md)
+- [GetExceptionContextRecord Method](iclrdatatarget3-getexceptioncontextrecord-method.md)
+- [GetExceptionRecord Method](iclrdatatarget3-getexceptionrecord-method.md)

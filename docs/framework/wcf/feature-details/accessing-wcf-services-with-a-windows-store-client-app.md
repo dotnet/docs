@@ -10,7 +10,7 @@ Windows 8 introduces a new type of application called Windows Store applications
  A subset of WCF functionality is available from within a Windows Store application, see the following sections for more details.  
   
 > [!IMPORTANT]
-> Use the WinRT syndication APIs instead of those exposed by WCF. For more information see, [WinRT Syndication API](https://go.microsoft.com/fwlink/?LinkId=236265)  
+> Use the WinRT syndication APIs instead of those exposed by WCF. For more information see, [WinRT Syndication API](xref:Windows.Web.Syndication)  
   
 > [!WARNING]
 > Using Add Service Reference to add a web service reference to a Windows Runtime Component isn’t supported.  
@@ -170,9 +170,9 @@ void async SomeMethod()
   
 ## See also
 
-- [WCF in Windows Store Apps Blog](https://blogs.msdn.microsoft.com/piyushjo/2011/09/21/wcf-in-windows-8-metro-styled-apps-absolutely-supported/)
-- [WCF Windows Store Clients and Security](https://blogs.msdn.microsoft.com/piyushjo/2011/10/11/calling-a-wcf-service-from-a-metro-application-adding-security/)
-- [Windows Store Apps and Cross Machine Calls](https://blogs.msdn.microsoft.com/piyushjo/2011/10/21/calling-a-wcf-service-from-a-metro-application-cross-machine-scenario/)
-- [Calling a WCF Service Deployed in Azure from a Windows Store App](https://blogs.msdn.com/b/piyushjo/archive/2011/10/22/calling-a-wcf-service-from-a-metro-application-cross-machine-scenario.aspx)
+- [WCF in Windows Store Apps Blog](https://docs.microsoft.com/archive/blogs/piyushjo/wcf-in-windows-8-metro-styled-apps-absolutely-supported)
+- [WCF Windows Store Clients and Security](https://docs.microsoft.com/archive/blogs/piyushjo/calling-a-wcf-service-from-a-metro-application-adding-security)
+- [Windows Store Apps and Cross Machine Calls](https://docs.microsoft.com/archive/blogs/piyushjo/calling-a-wcf-service-from-a-metro-application-cross-machine-scenario)
+- [Calling a WCF Service Deployed in Azure from a Windows Store App](https://docs.microsoft.com/archive/blogs/piyushjo/calling-a-wcf-service-from-a-metro-application-cross-machine-scenario)
 - [Programming WCF Security](../../../../docs/framework/wcf/feature-details/programming-wcf-security.md)
 - [Bindings](../../../../docs/framework/wcf/bindings.md)

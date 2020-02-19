@@ -15,7 +15,6 @@ helpviewer_keywords:
   - ".NET Framework regular expressions, character escapes"
   - "constructs, character escapes"
 ms.assetid: f49cc9cc-db7d-4058-8b8a-422bc08b29b0
-ms.custom: seodec18
 ---
 # Character Escapes in Regular Expressions
 The backslash (\\) in a regular expression indicates one of the following:  

@@ -29,7 +29,7 @@ HRESULT GetLocationType(
   
 ## Parameters  
  `pLocationType`  
- [out] A pointer to the type of the variable's native location.  See the [VariableLocationType](../../../../docs/framework/unmanaged-api/debugging/variablelocationtype-enumeration.md) enumeration for more information.  
+ [out] A pointer to the type of the variable's native location.  See the [VariableLocationType](variablelocationtype-enumeration.md) enumeration for more information.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -42,5 +42,5 @@ HRESULT GetLocationType(
   
 ## See also
 
-- [ICorDebugVariableHome Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-interface.md)
-- [VariableLocationType Enumeration](../../../../docs/framework/unmanaged-api/debugging/variablelocationtype-enumeration.md)
+- [ICorDebugVariableHome Interface](icordebugvariablehome-interface.md)
+- [VariableLocationType Enumeration](variablelocationtype-enumeration.md)

@@ -11,8 +11,6 @@ api_location:
 api_type: 
   - "Assembly"
 ms.assetid: 6f0b8902-f31c-4ab9-a8c9-de43228995ec
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Connection Class
 

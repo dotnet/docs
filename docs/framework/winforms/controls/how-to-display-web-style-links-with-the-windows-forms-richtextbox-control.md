@@ -1,5 +1,5 @@
 ---
-title: "How to: Display Web-Style Links with the Windows Forms RichTextBox Control"
+title: Display Web-Style Links with RichTextBox Control
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

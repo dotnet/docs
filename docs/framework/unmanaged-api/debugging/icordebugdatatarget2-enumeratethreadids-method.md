@@ -40,5 +40,5 @@ HRESULT EnumerateThreadIDs(
   
 ## See also
 
-- [ICorDebugDataTarget2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget2-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugDataTarget2 Interface](icordebugdatatarget2-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

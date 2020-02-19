@@ -9,7 +9,7 @@ This sample illustrates the List-based Publish-Subscribe pattern implemented as 
 > [!NOTE]
 > The setup procedure and build instructions for this sample are located at the end of this topic.  
   
- The List-based Publish-Subscribe design pattern is described in the Microsoft Patterns & Practices publication, [Integration Patterns](https://go.microsoft.com/fwlink/?LinkId=95894). The Publish-Subscribe pattern passes information to a collection of recipients who have subscribed to an information topic. List-based publish-subscribe maintains a list of subscribers. When there is information to share, a copy is sent to each subscriber on the list. This sample demonstrates a dynamic list-based publish-subscribe pattern, where clients can subscribe or unsubscribe as often as required.  
+ The List-based Publish-Subscribe design pattern is described in the Microsoft Patterns & Practices publication, [Integration Patterns](https://docs.microsoft.com/previous-versions/msp-n-p/ff647309(v=pandp.10)). The Publish-Subscribe pattern passes information to a collection of recipients who have subscribed to an information topic. List-based publish-subscribe maintains a list of subscribers. When there is information to share, a copy is sent to each subscriber on the list. This sample demonstrates a dynamic list-based publish-subscribe pattern, where clients can subscribe or unsubscribe as often as required.  
   
  The List-based Publish-Subscribe sample consists of a client, a service, and a data source program. There can be more than one client and more than one data source program running. Clients subscribe to the service, receive notifications, and unsubscribe. Data source programs send information to the service to be shared with all current subscribers.  
   

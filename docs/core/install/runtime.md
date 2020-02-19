@@ -92,7 +92,7 @@ The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for aut
 The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET Core 3.1. You can choose a specific release by specifying the `current` switch. Include the `runtime` switch to install a runtime. Otherwise, the script installs the [SDK](sdk.md).
 
 ```bash
-./dotnet-install.sh --current 3.1 --runtime aspnetcore
+./dotnet-install.sh --channel 3.1 --runtime aspnetcore
 ```
 
 > [!NOTE]

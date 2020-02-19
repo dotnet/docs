@@ -1,5 +1,5 @@
 ---
-title: "Default keyboard and mouse handling in the Windows Forms DataGridView control"
+title: Default keyboard and mouse handling in DataGridView control
 ms.date: "02/13/2018"
 helpviewer_keywords: 
   - "data grids [Windows Forms], mouse handling"

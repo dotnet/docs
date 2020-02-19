@@ -1,5 +1,5 @@
 ---
-title: "Attributes in Windows Forms Controls"
+title: Attributes in Controls
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "attributes [Windows Forms]"

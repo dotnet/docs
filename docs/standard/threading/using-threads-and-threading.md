@@ -22,11 +22,13 @@ You create a new thread by creating a new instance of the <xref:System.Threading
 
 ## How to: Stop a thread
 
-To terminate the execution of a thread, use the <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method. That method raises a <xref:System.Threading.ThreadAbortException> on the thread on which it's invoked. For more information, see [Destroying threads](destroying-threads.md).
+To terminate the execution of a thread, use the <xref:System.Threading.CancellationToken?displayProperty=nameWithType>. It provides a unified way to stop threads cooperatively. For more information, see [Cancellation in managed threads](cancellation-in-managed-threads.md).
 
-Beginning with the .NET Framework 4, you can use the <xref:System.Threading.CancellationToken?displayProperty=nameWithType> to cancel a thread cooperatively. For more information, see [Cancellation in managed threads](cancellation-in-managed-threads.md).
+Sometimes it is not possible to stop a thread cooperatively, because it runs third-party code not designed for cooperative cancellation. In this case, you might want to terminate its execution forcibly. To terminate the execution of a thread forcibly, in .NET Framework you can use the <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method. That method raises a <xref:System.Threading.ThreadAbortException> on the thread on which it's invoked. For more information, see [Destroying threads](destroying-threads.md). The <xref:System.Threading.Thread.Abort%2A?displayProperty=nameWithType> method is not supported in .NET Core. If you need to terminate the execution of third-party code forcibly in .NET Core, run it in the separate process and use <xref:System.Diagnostics.Process.Kill%2A?displayProperty=nameWithType>.
 
-Use the <xref:System.Threading.Thread.Join%2A?displayProperty=nameWithType> method to make the calling thread wait for the termination of the thread on which the method is invoked.
+The <xref:System.Threading.CancellationToken?displayProperty=nameWithType> is not available before .NET Framework 4. To stop a thread in older .NET Framework versions, you should implement the cooperative cancellation manually using the thread synchronization techniques. For example, you can create the volatile boolean field `shouldStop` and use it to request the code executed by the thread to stop. For more information, see [volatile](../../csharp/language-reference/keywords/volatile.md) in C# Reference and <xref:System.Threading.Volatile?displayProperty=nameWithType>.
+
+Use the <xref:System.Threading.Thread.Join%2A?displayProperty=nameWithType> method to make the calling thread wait for the termination of the thread being stopped.
 
 ## How to: Pause or interrupt a thread
 

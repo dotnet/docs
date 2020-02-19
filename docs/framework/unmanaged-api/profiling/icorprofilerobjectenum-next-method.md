@@ -51,4 +51,4 @@ HRESULT Next (
   
 ## See also
 
-- [ICorProfilerObjectEnum Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerobjectenum-interface.md)
+- [ICorProfilerObjectEnum Interface](icorprofilerobjectenum-interface.md)

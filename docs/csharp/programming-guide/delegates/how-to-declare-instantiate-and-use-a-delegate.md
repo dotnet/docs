@@ -1,6 +1,5 @@
 ---
 title: "How to declare, instantiate, and use a delegate - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "delegates [C#], declaring and instantiating"

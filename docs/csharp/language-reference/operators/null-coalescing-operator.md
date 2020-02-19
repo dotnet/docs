@@ -1,6 +1,5 @@
 ---
 title: "?? and ??= operators - C# reference"
-ms.custom: seodec18
 ms.date: 09/10/2019
 f1_keywords: 
   - "??_CSharpKeyword"

@@ -1,7 +1,5 @@
 ---
 title: "#define - C# Reference"
-ms.custom: seodec18
-
 ms.date: 06/30/2018
 f1_keywords: 
   - "#define"

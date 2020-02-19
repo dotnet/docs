@@ -1,15 +1,15 @@
 ---
 title: Documenting your code with XML comments
 description: Learn how to document your code with XML documentation comments and generate an XML documentation file at compile time.
-ms.date: 02/14/2017
+ms.date: 01/21/2020
 ms.technology: csharp-fundamentals
 ms.assetid: 8e75e317-4a55-45f2-a866-e76124171838
 ---
-# Documenting your code with XML comments
+# Document your code with XML comments
 
 XML documentation comments are a special kind of comment, added above the definition of any user-defined type or member.
 They are special because they can be processed by the compiler to generate an XML documentation file at compile time.
-The compiler generated XML file can be distributed alongside your .NET assembly so that Visual Studio and other IDEs can use IntelliSense to show quick information about types or members. Additionally, the XML file can be run through tools like [DocFX](https://dotnet.github.io/docfx/) and [Sandcastle](https://github.com/EWSoftware/SHFB) to generate API reference websites.
+The compiler-generated XML file can be distributed alongside your .NET assembly so that Visual Studio and other IDEs can use IntelliSense to show quick information about types or members. Additionally, the XML file can be run through tools like [DocFX](https://dotnet.github.io/docfx/) and [Sandcastle](https://github.com/EWSoftware/SHFB) to generate API reference websites.
 
 XML documentation comments, like all other comments, are ignored by the compiler.
 
@@ -43,7 +43,7 @@ Here's code for the simple math library:
 
 [!code-csharp[Sample Library](../../samples/snippets/csharp/concepts/codedoc/sample-library.cs)]
 
-The sample library supports four major arithmetic operations `add`, `subtract`, `multiply` and `divide` on `int` and `double` data types.
+The sample library supports four major arithmetic operations (`add`, `subtract`, `multiply`, and `divide`) on `int` and `double` data types.
 
 Now you want to be able to create an API reference document from your code for third-party developers who use your library but don't have access to the source code.
 As mentioned earlier XML documentation tags can be used to achieve this. You will now be introduced to the standard XML tags the C# compiler supports.
@@ -55,7 +55,7 @@ I'll demonstrate its use by adding it to the `Math` class definition and the fir
 
 [!code-csharp[Summary Tag](~/samples/snippets/csharp/concepts/codedoc/summary-tag.cs)]
 
-The `<summary>` tag is very important, and we recommend that you include it because its content is the primary source of type or member information in IntelliSense or an API reference document.
+The `<summary>` tag is important, and we recommend that you include it because its content is the primary source of type or member information in IntelliSense or an API reference document.
 
 ## \<remarks>
 
@@ -146,9 +146,7 @@ Add a quick generic method to your `Math` class to check if one quantity is grea
 
 ## \<paramref>
 
-Sometimes you might be in the middle of describing what a method does in what could be a `<summary>` tag, and you might want to make a reference
-to a parameter. The `<paramref>` tag is great for just this. Let's update the summary of our double based `Add` method. Like the `<param>` tag
-the parameter name is specified in the **required** `name` attribute.
+Sometimes you might be in the middle of describing what a method does in what could be a `<summary>` tag, and you might want to make a reference to a parameter. The `<paramref>` tag is great for just this. Let's update the summary of our double based `Add` method. Like the `<param>` tag, the parameter name is specified in the **required** `name` attribute.
 
 [!code-csharp[Paramref Tag](~/samples/snippets/csharp/concepts/codedoc/paramref-tag.cs)]
 
@@ -161,14 +159,19 @@ You can use the same generic method you previously created.
 
 ## \<list>
 
-You use the `<list>` tag to format documentation information as an ordered list, unordered list or table.
-Make an unordered list of every math operation your `Math` library supports.
+You use the `<list>` tag to format documentation information as an ordered list, unordered list, or table. Make an unordered list of every math operation your `Math` library supports.
 
 [!code-csharp[List Tag](~/samples/snippets/csharp/concepts/codedoc/list-tag.cs)]
 
 You can make an ordered list or table by changing the `type` attribute to `number` or `table`, respectively.
 
-### Putting it all together
+## \<inheritdoc>
+
+You can use the `<inheritdoc>` tag to inherit XML comments from base classes, interfaces, and similar methods. This eliminates unwanted copying and pasting of duplicate XML comments and automatically keeps XML comments synchronized.
+
+[!code-csharp-interactive[InheritDoc Tag](~/samples/snippets/csharp/concepts/codedoc/inheritdoc-tag.cs)]
+
+### Put it all together
 
 If you've followed this tutorial and applied the tags to your code where necessary, your code should now look similar to the following:
 
@@ -199,12 +202,12 @@ The `path` attribute represents an [XPath](../standard/data/xml/xpath-queries-an
 
 The `name` attribute represents the name specifier in the tag that precedes the comments.
 
-The `id` attribute which can be used in place of `name` represents the ID for the tag that precedes the comments.
+The `id` attribute, which can be used in place of `name`, represents the ID for the tag that precedes the comments.
 
-### User Defined Tags
+### User-defined tags
 
 All the tags outlined above represent those that are recognized by the C# compiler. However, a user is free to define their own tags.
-Tools like Sandcastle bring support for extra tags like [`<event>`](https://ewsoftware.github.io/XMLCommentsGuide/html/81bf7ad3-45dc-452f-90d5-87ce2494a182.htm), [`<note>`](https://ewsoftware.github.io/XMLCommentsGuide/html/4302a60f-e4f4-4b8d-a451-5f453c4ebd46.htm)
+Tools like Sandcastle bring support for extra tags like [\<event>](https://ewsoftware.github.io/XMLCommentsGuide/html/81bf7ad3-45dc-452f-90d5-87ce2494a182.htm) and [\<note>](https://ewsoftware.github.io/XMLCommentsGuide/html/4302a60f-e4f4-4b8d-a451-5f453c4ebd46.htm),
 and even support [documenting namespaces](https://ewsoftware.github.io/XMLCommentsGuide/html/BD91FAD4-188D-4697-A654-7C07FD47EF31.htm).
 Custom or in-house documentation generation tools can also be used with the standard tags and multiple output formats from HTML to PDF can be supported.
 
@@ -217,7 +220,7 @@ Documenting code is recommended for many reasons. What follows are some best pra
 - At a bare minimum, types and their members should have a `<summary>` tag because its content is needed for IntelliSense.
 - Documentation text should be written using complete sentences ending with full stops.
 - Partial classes are fully supported, and documentation information will be concatenated into a single entry for that type.
-- The compiler verifies the syntax of the `<exception>`, `<include>`, `<param>`, `<see>`, `<seealso>` and `<typeparam>` tags.
+- The compiler verifies the syntax of the `<exception>`, `<include>`, `<param>`, `<see>`, `<seealso>`, and `<typeparam>` tags.
 - The compiler validates the parameters that contain file paths and references to other parts of the code.
 
 ## See also

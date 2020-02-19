@@ -42,7 +42,7 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
  Demonstrates some of the commonly performed tasks such as adding or removing a tab on a `TabControl`, docking a control to its parent, and changing the orientation of a `SplitContainer` control.  
   
  [Writing Queries in C# (LINQ)](./programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)  
- Demonstrates the C# language features that are used to write [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query expressions.  
+ Demonstrates the C# language features that are used to write LINQ query expressions.  
   
  [Manipulating Data (C#) (LINQ to SQL)](../framework/data/adonet/sql/linq/walkthrough-manipulating-data-csharp.md)  
  Describes a [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] scenario for adding, modifying, and deleting data in a database.  

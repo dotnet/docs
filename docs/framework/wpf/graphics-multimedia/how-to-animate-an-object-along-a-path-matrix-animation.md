@@ -26,10 +26,10 @@ This example shows how to use the <xref:System.Windows.Media.Animation.MatrixAni
  [!code-csharp[PathAnimationGallery_procedural_snip#MatrixAnimationUsingPathWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/PathAnimationGallery_procedural_snip/CSharp/MatrixAnimationUsingPathExample.cs#matrixanimationusingpathwholepage)]
  [!code-vb[PathAnimationGallery_procedural_snip#MatrixAnimationUsingPathWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/PathAnimationGallery_procedural_snip/VisualBasic/MatrixAnimationUsingPathExample.vb#matrixanimationusingpathwholepage)]  
   
- For the complete sample, see [Path Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160028). For more information about geometric paths, see the [Geometry Overview](geometry-overview.md).  
+ For the complete sample, see [Path Animation Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Animation/PathAnimations). For more information about geometric paths, see the [Geometry Overview](geometry-overview.md).  
   
 ## See also
 
 - [Animation Overview](animation-overview.md)
-- [Path Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160028)
+- [Path Animation Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Animation/PathAnimations)
 - [Path Animation How-to Topics](path-animation-how-to-topics.md)

@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Debugging Custom Windows Forms Controls at Design Time"
+title: Debug Custom Controls at Design Time
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

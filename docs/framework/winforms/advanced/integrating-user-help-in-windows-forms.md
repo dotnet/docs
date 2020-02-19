@@ -1,5 +1,5 @@
 ---
-title: "Integrating User Help in Windows Forms"
+title: "Integrating User Help"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Help [Windows Forms], Windows Forms (using designer)"

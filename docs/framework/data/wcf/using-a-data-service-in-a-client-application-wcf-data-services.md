@@ -27,23 +27,23 @@ You can access a service that exposes an Open Data Protocol (OData) feed by supp
   
 - **HTTP MERGE** - Because of inefficiencies in executing a delete followed by an insert in the data source just to change entity data, OData introduces a new HTTP MERGE action. The payload of the request message contains the properties that must be changed on the addressed entity resource. Because HTTP MERGE is not defined in the HTTP specification, it may require additional processing to route a HTTP MERGE request through non-OData aware servers.  
   
- For more information, see [OData: Operations](https://go.microsoft.com/fwlink/?LinkId=185792).  
+ For more information, see [OData: Operations](https://www.odata.org/documentation/odata-version-2-0/operations/).
   
 ### Payload Formats  
  For an HTTP PUT, HTTP POST, or HTTP MERGE request, the payload of a request message contains the entity data that you send to the data service. The contents of the payload depend on the data format of the message. The HTTP responses to all actions except DELETE also contain such a payload. OData supports the following payload formats for accessing and changing data with the service:  
   
-- **Atom** - An XML-based message encoding that is defined by OData as an extension to the Atom Publishing Protocol (AtomPub) to enable data exchange over HTTP for Web feeds, podcasts, wikis, and XML-based Internet functionality. For more information, see [OData: Atom Format](https://go.microsoft.com/fwlink/?LinkId=185794).  
+- **Atom** - An XML-based message encoding that is defined by OData as an extension to the Atom Publishing Protocol (AtomPub) to enable data exchange over HTTP for Web feeds, podcasts, wikis, and XML-based Internet functionality. For more information, see [OData: Atom Format](https://www.odata.org/documentation/odata-version-2-0/atom-format/).
   
-- **JSON** - JavaScript Object Notation (JSON) is a lightweight data interchange format that is based on a subset of the JavaScript Programming Language. For more information, see [OData: JSON Format](https://go.microsoft.com/fwlink/?LinkId=185795).  
+- **JSON** - JavaScript Object Notation (JSON) is a lightweight data interchange format that is based on a subset of the JavaScript Programming Language. For more information, see [OData: JSON Format](https://www.odata.org/documentation/odata-version-2-0/json-format/).
   
- The message format of the payload is requested in the header of the HTTP request message. For more information, see [OData: Operations](https://go.microsoft.com/fwlink/?LinkID=185792).  
+ The message format of the payload is requested in the header of the HTTP request message. For more information, see [OData: Operations](https://www.odata.org/documentation/odata-version-2-0/operations/).
   
 ## Accessing and Changing Data Using Client Libraries  
  WCF Data Services includes client libraries that enable you to more easily consume an OData feed from .NET Framework and Silverlight-based client applications. These libraries simplify sending and receiving HTTP messages. They also translate the message payload into CLR objects that represent entity data. The client libraries feature the two core classes <xref:System.Data.Services.Client.DataServiceContext> and <xref:System.Data.Services.Client.DataServiceQuery%601>. These classes enable you to query a data service and then work with the returned entity data as CLR objects. For more information, see [WCF Data Services Client Library](wcf-data-services-client-library.md) and [WCF Data Services (Silverlight)](https://docs.microsoft.com/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc838234(v=vs.95)).  
   
  You can use the **Add Service Reference** dialog in Visual Studio to add a reference to a data service. This tool requests the service metadata from a referenced data service and generates the <xref:System.Data.Services.Client.DataServiceContext> that represents a data service, as well as generates the client data service classes that represent entities. For more information, see [Generating the Data Service Client Library](generating-the-data-service-client-library-wcf-data-services.md).  
   
- There are programming libraries available that you can use to consume an OData feed in other kinds of client applications. For more information, see the [OData SDK](https://go.microsoft.com/fwlink/?LinkId=185796).  
+ There are programming libraries available that you can use to consume an OData feed in other kinds of client applications. For more information on OData SDK, see [OData SDK - Sample Code](https://www.odata.org/ecosystem/#sdk).
   
 ## See also
 

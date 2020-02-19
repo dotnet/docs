@@ -1,5 +1,5 @@
 ---
-title: "How to: Change the Spacing and Alignment of ToolStrip Items in Windows Forms"
+title: "How to: Change the Spacing and Alignment of ToolStrip Items"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

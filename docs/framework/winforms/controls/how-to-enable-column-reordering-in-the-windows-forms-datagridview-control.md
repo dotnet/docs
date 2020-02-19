@@ -1,5 +1,5 @@
 ---
-title: "How to: Enable Column Reordering in the Windows Forms DataGridView Control"
+title: Enable Column Reordering in DataGridView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

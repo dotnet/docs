@@ -1,6 +1,5 @@
 ---
 title: "How to write a copy constructor - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "C# Language, copy constructor"

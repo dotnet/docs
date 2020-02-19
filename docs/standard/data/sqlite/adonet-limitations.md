@@ -19,13 +19,13 @@ For more information, see [Metadata](metadata.md).
 
 Microsoft.Data.Sqlite doesn't yet support System.Transactions. Use ADO.NET transactions instead. For more information, see [Transactions](transactions.md).
 
-Provide feedback about the lack of support for System.Transactions on issue [#13825](https://github.com/aspnet/EntityFrameworkCore/issues/13825).
+Provide feedback about the lack of support for System.Transactions on issue [#13825](https://github.com/dotnet/efcore/issues/13825).
 
 ## Data adapters
 
 `DbDataAdapter` isn't yet implemented by Microsoft.Data.Sqlite. This means you can only use ADO.NET `DataSet` and `DataTable` to load data and not update it.
 
-Use issue [#13838](https://github.com/aspnet/EntityFrameworkCore/issues/13838) to provide feedback about implementing `DbDataAdapter`.
+Use issue [#13838](https://github.com/dotnet/efcore/issues/13838) to provide feedback about implementing `DbDataAdapter`.
 
 ## Output parameters
 

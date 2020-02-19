@@ -3,8 +3,6 @@ title: "XML Document Object Model (DOM)"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: b5e52844-4820-47c0-a61d-de2da33e9f54
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # XML Document Object Model (DOM)
 

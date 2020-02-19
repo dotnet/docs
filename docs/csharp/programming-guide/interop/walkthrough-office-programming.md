@@ -100,7 +100,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
 
          You cannot create indexed properties of your own. The feature only supports consumption of existing indexed properties.
 
-         For more information, see [How to: Use Indexed Properties in COM Interop Programming](./how-to-use-indexed-properties-in-com-interop-rogramming.md).
+         For more information, see [How to use indexed properties in COM interop programming](./how-to-use-indexed-properties-in-com-interop-rogramming.md).
 
 2. Add the following code at the end of `DisplayInExcel` to adjust the column widths to fit the content.
 
@@ -197,7 +197,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
 - [Using Type dynamic](../types/using-type-dynamic.md)
 - [Lambda Expressions (Visual Basic)](../../../visual-basic/programming-guide/language-features/procedures/lambda-expressions.md)
 - [Lambda Expressions (C#)](../statements-expressions-operators/lambda-expressions.md)
-- [How to: Use Indexed Properties in COM Interop Programming](./how-to-use-indexed-properties-in-com-interop-rogramming.md)
+- [How to use indexed properties in COM interop programming](./how-to-use-indexed-properties-in-com-interop-rogramming.md)
 - [Walkthrough: Embedding Type Information from Microsoft Office Assemblies in Visual Studio](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2013/ee317478(v%3dvs.120))
 - [Walkthrough: Embedding Types from Managed Assemblies](../../../standard/assembly/embed-types-visual-studio.md)
 - [Walkthrough: Creating Your First VSTO Add-in for Excel](/visualstudio/vsto/walkthrough-creating-your-first-vsto-add-in-for-excel)

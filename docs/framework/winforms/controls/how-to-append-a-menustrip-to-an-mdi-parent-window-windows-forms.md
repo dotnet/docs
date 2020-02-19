@@ -1,5 +1,5 @@
 ---
-title: "How to: Append a MenuStrip to an MDI Parent Window (Windows Forms)"
+title: "How to: Append a MenuStrip to an MDI Parent Window"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

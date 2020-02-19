@@ -1,5 +1,5 @@
 ---
-title: "WPF Graphics Rendering Overview"
+title: Graphics rendering overview
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

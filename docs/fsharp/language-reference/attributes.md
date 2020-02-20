@@ -64,7 +64,7 @@ Although you do not usually need to specify the attribute target explicitly, val
   </tr>
   <tr>
     <td>assembly</td>
-    <td><pre lang="fsharp"><code>[&lt;assembly: AssemblyVersionAttribute("1.0.0.0")&gt;]</code></pre></td>
+    <td><pre><code class="lang-fsharp"><code>[&lt;assembly: AssemblyVersion("1.0.0.0")&gt;]</code></pre></td>
   </tr>
   <tr>
     <td>return</td>
@@ -80,12 +80,12 @@ Although you do not usually need to specify the attribute target explicitly, val
   </tr>
   <tr>
     <td>param</td>
-    <td><code class="lang-fsharp">member this.MyMethod([&lt;Out&gt;] x : ref&lt;int&gt;) = x := 10</code></pre></td>
+    <td><pre><code class="lang-fsharp">member this.MyMethod([&lt;Out&gt;] x : ref&lt;int&gt;) = x := 10</code></pre></td>
   </tr>
   <tr>
     <td>type</td>
     <td>
-        <pre lang="fsharp"><code>
+        <pre><code class="lang-fsharp"><code>
 [&lt;type: StructLayout(Sequential)&gt;]
 type MyStruct =
 struct

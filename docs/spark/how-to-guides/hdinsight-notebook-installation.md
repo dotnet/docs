@@ -47,7 +47,6 @@ In the Azure Portal, select the **HDInsight Spark cluster** you created in the p
 ### Step 2. Submit HDInsight Script Action
 Return to your HDI cluster in the Azure Portal, and select **Script actions** from the options on the left. You'll submit one script action to deploy SparkDotnet REPL on HDInsight Spark cluster.
 
-Submit Script Action on both Head node and Worker node.
 Run `install-interactive-notebook.sh` on the cluster using [HDInsight Script Actions](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux):
 
 * Script type: Custom

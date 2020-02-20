@@ -64,7 +64,7 @@ Although you do not usually need to specify the attribute target explicitly, val
   </tr>
   <tr>
     <td>assembly</td>
-    <td><pre><code class="lang-fsharp"><code>[&lt;assembly: AssemblyVersion("1.0.0.0")&gt;]</code></pre></td>
+    <td><pre><code class="lang-fsharp">[&lt;assembly: AssemblyVersion("1.0.0.0")&gt;]</code></pre></td>
   </tr>
   <tr>
     <td>return</td>
@@ -85,7 +85,7 @@ Although you do not usually need to specify the attribute target explicitly, val
   <tr>
     <td>type</td>
     <td>
-        pre><code class="lang-fsharp">
+        <pre><code class="lang-fsharp">
 [&lt;type: StructLayout(LayoutKind.Sequential)&gt;]
 type MyStruct =
   struct

@@ -1,7 +1,7 @@
 ---
 title: MSBuild properties for Microsoft.NET.Sdk
 description: Reference for the MSBuild properties that are understood by the .NET Core SDK.
-ms.date: 02/02/2020
+ms.date: 02/14/2020
 ms.topic: reference
 ---
 # MSBuild properties for .NET Core SDK projects
@@ -13,25 +13,9 @@ This page describes MSBuild properties for configuring .NET Core projects.
 
 ## Framework properties
 
-- [NetStandardImplicitPackageVersion](#netstandardimplicitpackageversion)
 - [TargetFramework](#targetframework)
 - [TargetFrameworks](#targetframeworks)
-
-### NetStandardImplicitPackageVersion
-
-> [!NOTE]
-> This property only applies to projects using `netstandard1.x`. It doesn't apply to projects that use `netstandard2` and later.
-
-Use the `NetStandardImplicitPackageVersion` property when you want to specify a framework version that's lower than the [metapackage](../packages.md#metapackages) version. The project file in the following example targets `netstandard1.3` but uses the 1.6.0 version of `NETStandard.Library`.
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>netstandard1.3</TargetFramework>
-    <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
-  </PropertyGroup>
-</Project>
-```
+- [NetStandardImplicitPackageVersion](#netstandardimplicitpackageversion)
 
 ### TargetFramework
 
@@ -63,6 +47,22 @@ Use the `TargetFrameworks` property when you want your app to target multiple pl
 ```
 
 For more information, see [Target frameworks in SDK-style projects](../../standard/frameworks.md).
+
+### NetStandardImplicitPackageVersion
+
+> [!NOTE]
+> This property only applies to projects using `netstandard1.x`. It doesn't apply to projects that use `netstandard2.x`.
+
+Use the `NetStandardImplicitPackageVersion` property when you want to specify a framework version that's lower than the [metapackage](../packages.md#metapackages) version. The project file in the following example targets `netstandard1.3` but uses the 1.6.0 version of `NETStandard.Library`.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard1.3</TargetFramework>
+    <NetStandardImplicitPackageVersion>1.6.0</NetStandardImplicitPackageVersion>
+  </PropertyGroup>
+</Project>
+```
 
 ## Publish properties
 

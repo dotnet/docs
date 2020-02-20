@@ -50,7 +50,7 @@ Lists all projects in a solution file.
 ```dotnetcli
 dotnet sln list [-h|--help]
 ```
-  
+
 #### Arguments
 
 - **`SOLUTION_FILE`**

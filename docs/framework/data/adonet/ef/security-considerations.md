@@ -21,7 +21,7 @@ This topic describes security considerations that are specific to developing, de
  During the logon operation, information that is based on the user password is passed to the server through the network libraries of the underlying data source. A malicious provider can steal user credentials, generate malicious queries, or tamper with the result set.  
   
 #### Encrypt your connection to protect sensitive data.  
- The Entity Framework does not directly handle data encryption. If users access data over a public network, your application should establish an encrypted connection to the data source to increase security. For more information, see the security-related documentation for your data source. For a SQL Server data source, see [Encrypting Connections to SQL Server](https://go.microsoft.com/fwlink/?LinkId=119544).  
+ The Entity Framework does not directly handle data encryption. If users access data over a public network, your application should establish an encrypted connection to the data source to increase security. For more information, see the security-related documentation for your data source. For a SQL Server data source, see [Encrypting Connections to SQL Server](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms189067(v=sql.105)).  
   
 #### Secure the connection string.  
  Protecting access to your data source is one of the most important goals when securing an application. A connection string presents a potential vulnerability if it is not secured or if it is improperly constructed. When you store connection information in plain text or persist it in memory, you risk compromising your entire system. The following are the recommended methods for securing connection strings:  

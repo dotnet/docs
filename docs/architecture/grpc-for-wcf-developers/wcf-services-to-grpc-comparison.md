@@ -1,12 +1,12 @@
 ---
-title: Comparing WCF to gRPC - gRPC for WCF Developers
+title: Comparing WCF to gRPC - gRPC for WCF developers
 description: A comparison of the WCF and gRPC frameworks for building distributed applications.
 ms.date: 09/02/2019
 ---
 
 # Comparing WCF to gRPC
 
-The previous chapter should have given you a good look at Protobuf and how gRPC handles messages. Before working through a detailed conversion from WCF to gRPC, it's important to look at how the range of features currently available in WCF are handled in gRPC and what workarounds you can use when there doesn't appear to be a gRPC equivalent. In particular, this chapter will cover the following subjects:
+The previous chapter gave you a good look at Protobuf and how gRPC handles messages. Before you work through a detailed conversion from Windows Communication Foundation (WCF) to gRPC, it's important know how the features available in WCF are handled in gRPC and what workarounds you can use when there's no gRPC equivalent. In particular, this chapter will cover the following subjects:
 
 - Operations and methods
 - Bindings and transports
@@ -32,12 +32,12 @@ service Greeter {
   rpc SayHello (HelloRequest) returns (HelloReply);
 }
 
-// The request message containing the user's name.
+// The request message that contains the user's name.
 message HelloRequest {
   string name = 1;
 }
 
-// The response message containing the greetings.
+// The response message that contains the greetings.
 message HelloReply {
   string message = 1;
 }
@@ -69,7 +69,7 @@ namespace HelloGrpc
 }
 ```
 
-This chapter will refer to this example code when explaining various concepts and features of gRPC.
+This chapter will refer to this example code when explaining different concepts and features of gRPC.
 
 >[!div class="step-by-step"]
 >[Previous](protobuf-maps.md)

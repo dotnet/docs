@@ -27,9 +27,12 @@ The following illustration shows a class `WorkItem` that represents an item of w
 
 ![Diagram that shows class inheritance](./media/inheritance/class-inheritance-diagram.png)
 
-The following example shows how the class relationships demonstrated in the previous illustration are expressed in C#. The example also shows how `WorkItem` overrides the virtual method <xref:System.Object.ToString%2A?displayProperty=nameWithType>, and how the `ChangeRequest` class inherits the `WorkItem` implementation of the method.
+The following example shows how the class relationships demonstrated in the previous illustration are expressed in C#. The example also shows how `WorkItem` overrides the virtual method <xref:System.Object.ToString%2A?displayProperty=nameWithType>, and how the `ChangeRequest` class inherits the `WorkItem` implementation of the method. The first block defines the classes:
 
 [!code-csharp[DefineClasses](~/samples/snippets/csharp/objectoriented/inheritance.cs#Classes)]
+
+This next block shows how to use the base and derived classes:
+
 [!code-csharp[UseClasses](~/samples/snippets/csharp/objectoriented/inheritance.cs#UseClasses)]
 
 ## Abstract and virtual methods

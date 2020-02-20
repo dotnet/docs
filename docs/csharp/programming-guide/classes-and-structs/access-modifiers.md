@@ -19,7 +19,7 @@ All types and type members have an accessibility level. The accessibility level 
 
 The following examples demonstrate how to specify access modifiers on a type and member:
 
-[!code-csharp[PublicAccess](~/samples/snippets/csharp/objectoriented/nestedtypes.cs#PublicAccess)]
+[!code-csharp[PublicAccess](~/samples/snippets/csharp/objectoriented/accessmodifiers.cs#PublicAccess)]
 
 Not all access modifiers are valid for all types or members in all contexts. In some cases, the accessibility of a type member is constrained by the accessibility of its containing type.
 
@@ -47,7 +47,7 @@ Finalizers can't have accessibility modifiers.
 
 To set the access level for a `class` or `struct` member, add the appropriate keyword to the member declaration, as shown in the following example.
 
-[!code-csharp[MethodAccess](~/samples/snippets/csharp/objectoriented/nestedtypes.cs#MethodAccess)]
+[!code-csharp[MethodAccess](~/samples/snippets/csharp/objectoriented/accessmodifiers.cs#MethodAccess)]
 
 ## Other types
 

@@ -17,19 +17,22 @@ This is the first in a series of three tutorials. In this tutorial, you create a
 ## Prerequisites
 
 - [.NET Core SDK 3.1](https://dotnet.microsoft.com/download) or a later version.
+
+  This tutorial and the following [tutorial for global tools](global-tools-how-to-use.md) apply to .NET Core SDK 2.1 and later versions because global tools are available starting in that version. But this tutorial assumes you have installed 3.1 or later so that you have the option of continuing on to the [local tools tutorial](local-tools-how-to-use.md). Local tools are available starting in .NET Core SDK 3.0. The procedures for creating a tool are the same whether you use it as a global tool or as a local tool.
+  
 - A text editor or code editor of your choice.
 
 ## Create a project
 
 1. Open a command prompt and create a folder named *repository*.
 
-1. Navigate to the *repository* folder and enter the following command, replacing `<name>` with your name to make the project name unique:
+1. Navigate to the *repository* folder and enter the following command, replacing `<name>` with a unique value to make the project name unique. 
 
    ```dotnetcli
    dotnet new console -n botsay-<name>
    ```
 
-   For example, if your name is Nancy Davolio, you could run the following command:
+   For example, you could run the following command:
 
    ```dotnetcli
    dotnet new console -n botsay-nancydavolio

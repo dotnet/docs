@@ -64,8 +64,7 @@ export PATH=$PATH:$HOME/dotnet
 >
 > Also, add `export DOTNET_ROOT=$HOME/dotnet` to the end of the file.
 
-> [!TIP]
-> This approach lets you install multiple different versions into separate locations and choose explicitly which one to use by which application.
+This approach lets you install different versions into separate locations and choose explicitly which one to use by which application.
 
 ::: zone-end
 

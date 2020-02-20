@@ -1,1 +1,1 @@
-If you are reading this in a language other than English, let us know in this [GitHub discussion issue](https://github.com/MicrosoftDocs/feedback/issues/2515) if you’d like to see the code comments in your native language.
+If you would like to see code comments translated to languages other than English, let us know in [this GitHub discussion issue](https://github.com/MicrosoftDocs/feedback/issues/2515).

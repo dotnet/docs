@@ -11,7 +11,7 @@ The following decision table summarizes whether to use .NET Framework or .NET Co
 > Your development machines will run one Docker host, either Linux or Windows. Related microservices that you want to run and test together in one solution will all need to run on the same container platform.
 
 | Architecture / App Type | Linux containers | Windows Containers |
-|-------------------------|:----------------:|:------------------:|
+|-------------------------|------------------|--------------------|
 | Microservices on containers | .NET Core | .NET Core |
 | Monolithic app | .NET Core | .NET Framework <br> .NET Core |
 | Best-in-class performance and scalability | .NET Core | .NET Core |

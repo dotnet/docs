@@ -158,7 +158,7 @@ public class StockTickerService : Protos.SimpleStockTicker.SimpleStockTickerBase
 }
 ```
 
-As you can see, although the declaration in the `.proto` file says the method returns a stream of `StockTickerUpdate` messages, it actually returns a generic `Task`. The job of creating the stream is handled by the generated code and the gRPC runtime libraries, which provide the `IServerStreamWriter<StockTickerUpdate>` response stream, ready to use.
+As you can see, although the declaration in the `.proto` file says the method returns a stream of `StockTickerUpdate` messages, it actually returns a `Task`. The job of creating the stream is handled by the generated code and the gRPC runtime libraries, which provide the `IServerStreamWriter<StockTickerUpdate>` response stream, ready to use.
 
 Unlike a WCF duplex service, where the instance of the service class is kept alive while the connection is open, the gRPC service uses the returned task to keep the service alive. The task shouldn't complete until the connection is closed.
 
@@ -166,7 +166,7 @@ The service can tell when the client has closed the connection by using the `Can
 
 In the `Subscribe` method, then, get a `StockPriceSubscriber` and add an event handler that writes to the response stream. Then wait for the connection to be closed before immediately disposing the `subscriber` to prevent it from trying to write data to the closed stream.
 
-The `WriteUpdateAsync` method has a `try`/`catch` block to handle any errors that might happen when it writes a message to the stream. This consideration is important in persistent connections over networks, which could be broken at any millisecond, whether intentionally or because of a failure somewhere.
+The `WriteUpdateAsync` method has a `try`/`catch` block to handle any errors that might happen when a message is written to the stream. This consideration is important in persistent connections over networks, which could be broken at any millisecond, whether intentionally or because of a failure somewhere.
 
 ### Use StockTickerService from a client application
 
@@ -460,7 +460,7 @@ private async Task HandleResponsesAsync(CancellationToken token)
 When the window is closed and the `MainWindowViewModel` is disposed (from the `Closed` event of `MainWindow`), we recommend that you properly dispose the `AsyncDuplexStreamingCall` object. In particular, the `CompleteAsync` method on the `RequestStream` should be called to gracefully close the stream on the server. This example shows the `DisposeAsync` method from the sample view-model:
 
 ```csharp
-public ValueTask DisposeAsync()
+public async ValueTask DisposeAsync()
 {
     try
     {

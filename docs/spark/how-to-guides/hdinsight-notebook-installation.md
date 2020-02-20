@@ -24,7 +24,7 @@ To enable .NET for Apache Spark through the Jupyter Notebook Experience, you wou
 Create an [Azure HDInsight Spark](https://docs.microsoft.com/en-us/azure/hdinsight/spark/apache-spark-jupyter-spark-sql-use-portal#create-an-hdinsight-spark-cluster) cluster (by visiting the **[Azure Portal](https;//portal.azure.com)**, selecting **+ Create a Resource**, and creating a new Azure HDInsight cluster resource), select the **Overview** tab on your cluster. Ensure you have created a cluster with **Spark 2.4** and **HDI 4.0**.
 
 ## Installation Procedure
-Open the [Azure portal](https://ms.portal.azure.com/#home). Select **HDInsight Spark cluster** you created in the previous step.
+In the Azure Portal, select the **HDInsight Spark cluster** you created in the previous step.
 ### Step 1. Stop Livy Server
 1.1 From the portal, select **Overview**, and then select **Ambari home**. If prompted, enter the cluster login credentials for the cluster.
 

@@ -45,7 +45,7 @@ typedef struct _CorDebugEHClause {
 |`FilterOffset`|The offset, in bytes, from the start of the method body for a filter-based exception handler.|  
   
 ## Remarks  
- An array of `CoreDebugEHClause` values is returned by the [GetEHClauses](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode-getehclauses-method.md) method.  
+ An array of `CoreDebugEHClause` values is returned by the [GetEHClauses](icordebugilcode-getehclauses-method.md) method.  
   
  The EH clause information is defined by the CLI specification. For more information, see [Standard ECMA-355: Common Language Infrastructure (CLI), 6th Edition](https://www.ecma-international.org/publications/standards/Ecma-335.htm).  
   
@@ -69,5 +69,5 @@ typedef struct _CorDebugEHClause {
   
 ## See also
 
-- [GetEHClauses Method](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode-getehclauses-method.md)
-- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
+- [GetEHClauses Method](icordebugilcode-getehclauses-method.md)
+- [Debugging Structures](debugging-structures.md)

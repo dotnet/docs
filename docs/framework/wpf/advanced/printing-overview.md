@@ -17,7 +17,7 @@ helpviewer_keywords:
 ms.assetid: 0de8ac41-9aa6-413d-a121-7aa6f41539b1
 ---
 # Printing Overview
-With Microsoft .NET Framework, application developers using Windows Presentation Foundation (WPF) have a rich new set of printing and print system management APIs. With Windows Vista, some of these print system enhancements are also available to developers creating [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] applications and developers using unmanaged code. At the core of this new functionality is the new XML Paper Specification (XPS) file format and the XPS print path.  
+With Microsoft .NET Framework, application developers using Windows Presentation Foundation (WPF) have a rich new set of printing and print system management APIs. With Windows Vista, some of these print system enhancements are also available to developers creating Windows Forms applications and developers using unmanaged code. At the core of this new functionality is the new XML Paper Specification (XPS) file format and the XPS print path.  
   
  This topic contains the following sections.  
   

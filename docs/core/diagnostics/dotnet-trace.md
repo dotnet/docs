@@ -5,7 +5,7 @@ ms.date: 11/21/2019
 ---
 # dotnet-trace performance analysis utility
 
-**This article applies to:** ✓ .NET Core 3.0 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
 
 ## Install dotnet-trace
 
@@ -32,7 +32,7 @@ The `dotnet-trace` tool:
 
 ## Options
 
-- **`--version`**  
+- **`--version`**
 
   Displays the version of the dotnet-counters utility.
 

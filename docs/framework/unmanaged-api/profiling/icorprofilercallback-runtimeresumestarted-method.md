@@ -36,5 +36,5 @@ HRESULT RuntimeResumeStarted();
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
-- [RuntimeResumeFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-runtimeresumefinished-method.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [RuntimeResumeFinished Method](icorprofilercallback-runtimeresumefinished-method.md)

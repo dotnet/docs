@@ -1,5 +1,5 @@
 ---
-title: "How to: Change the Appearance of the Windows Forms TabControl"
+title: Change the Appearance of TabControl
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

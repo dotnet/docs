@@ -1,5 +1,5 @@
 ---
-title: "How to: Use the Row Template to Customize Rows in the Windows Forms DataGridView Control"
+title: Use the Row Template to Customize Rows in DataGridView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

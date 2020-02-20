@@ -1,5 +1,5 @@
 ---
-title: "How to: View Errors Within a DataSet with the Windows Forms ErrorProvider Component"
+title: View Errors Within a DataSet using ErrorProvider Component
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

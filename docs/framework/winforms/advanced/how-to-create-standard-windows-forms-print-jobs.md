@@ -1,5 +1,5 @@
 ---
-title: "How to: Create Standard Windows Forms Print Jobs"
+title: Create Standard Print Jobs
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

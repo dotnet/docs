@@ -155,5 +155,5 @@ The following scenario shows a Windows Communication Foundation (WCF) service an
 ## See also
 
 - [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
-- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
-- [How to: Create and Install Temporary Certificates in WCF for Transport Security During Development](https://go.microsoft.com/fwlink/?LinkId=244264)
+- [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))
+- [How to: Create and Install Temporary Certificates in WCF for Transport Security During Development](https://docs.microsoft.com/previous-versions/msp-n-p/ff648498(v=pandp.10))

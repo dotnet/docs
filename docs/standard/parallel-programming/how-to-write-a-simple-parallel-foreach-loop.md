@@ -41,7 +41,7 @@ You can compile the code as a console application for .NET Framework or as a con
 
 In Visual Studio, there are Visual Basic and C# console application templates for Windows Desktop and .NET Core.
 
-From the command line, you can use either .NET Core and its CLI tools (for example, `dotnet new console` or `dotnet new console -lang vb`), or you can create the file and use the command-line compiler for a .NET Framework application.
+From the command line, you can use either the .NET Core CLI commands (for example, `dotnet new console` or `dotnet new console -lang vb`), or you can create the file and use the command-line compiler for a .NET Framework application.
 
 For a .NET Core project, you must reference the **System.Drawing.Common** NuGet package. In Visual Studio, use the NuGet Package Manager to install the package. Alternatively, you can add a reference to the package in your \*.csproj or \*.vbproj file:
  

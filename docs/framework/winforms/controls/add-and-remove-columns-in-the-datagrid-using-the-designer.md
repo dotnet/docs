@@ -1,5 +1,5 @@
 ---
-title: "How to: Add and Remove Columns in the Windows Forms DataGridView Control Using the Designer"
+title: Add and Remove Columns in DataGridView Control Using the Designer
 ms.date: "03/30/2017"
 f1_keywords:
   - "vs.DataGridViewAddColumnDialog"

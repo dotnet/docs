@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorPublishAppDomain::GetID Method
-Gets the unique identifier for this [ICorPublishAppDomain](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomain-interface.md).  
+Gets the unique identifier for this [ICorPublishAppDomain](icorpublishappdomain-interface.md).  
   
 ## Syntax  
   
@@ -45,4 +45,4 @@ HRESULT GetID (
   
 ## See also
 
-- [ICorPublishAppDomain Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomain-interface.md)
+- [ICorPublishAppDomain Interface](icorpublishappdomain-interface.md)

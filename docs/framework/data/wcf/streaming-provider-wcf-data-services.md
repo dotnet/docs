@@ -15,7 +15,7 @@ ms.assetid: f0978fe4-5f9f-42aa-a5c2-df395d7c9495
 
 A data service can expose large object binary data. This binary data might represent video and audio streams, images, document files, or other types of binary media. When an entity in the data model includes one or more binary properties, the data service returns this binary data encoded as base-64 inside the entry in the response feed. Because loading and serializing large binary data in this manner can affect performance, the Open Data Protocol (OData) defines a mechanism for retrieving binary data independent of the entity to which it belongs. This is accomplished by separating the binary data from the entity into one or more data streams.
 
-- Media resource - binary data that belongs to an entity, such as a video, audio, image or other type of media resource stream.
+- Media resource - binary data that belongs to an entity, such as a video, audio, image, or other type of media resource stream.
 
 - Media link entry - an entity that has a reference to a related media resource stream.
 
@@ -82,14 +82,14 @@ For general information about how to create a data service, see [Configuring the
 
 ## Enabling Large Binary Streams in the Hosting Environment
 
-When you create a data service in an ASP.NET Web application, Windows Communication Foundation (WCF) is used to provide the HTTP protocol implementation. By default, WCF limits the size of HTTP messages to only 65K bytes. To be able to stream large binary data to and from the data service, you must also configure the Web application to enable large binary files and to use streams for transfer. To do this, add the following in the `<configuration />` element of the application's Web.config file:
+When you create a data service in an ASP.NET Web application, Windows Communication Foundation (WCF) is used to provide the HTTP protocol implementation. By default, WCF limits the size of HTTP messages to only 65 KB. To be able to stream large binary data to and from the data service, you must also configure the Web application to enable large binary files and to use streams for transfer. To do this, add the following in the `<configuration />` element of the application's Web.config file:
 
 > [!NOTE]
 > You must use a <xref:System.ServiceModel.TransferMode.Streamed?displayProperty=nameWithType> transfer mode to ensure that the binary data in both the request and response messages are streamed and not buffered by WCF.
 
 For more information, see [Streaming Message Transfer](../../wcf/feature-details/streaming-message-transfer.md) and [Transport Quotas](../../wcf/feature-details/transport-quotas.md).
 
-By default, Internet Information Services (IIS) also limits the size of requests to 4MB. To enable your data service to receive streams larger than 4MB when running on IIS, you must also set the `maxRequestLength` attribute of the [httpRuntime Element (ASP.NET Settings Schema)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/e1f13641(v=vs.100)) in the `<system.web />` configuration section, as shown in the following example:
+By default, Internet Information Services (IIS) also limits the size of requests to 4 MB. To enable your data service to receive streams larger than 4 MB when running on IIS, you must also set the `maxRequestLength` attribute of the [httpRuntime Element (ASP.NET Settings Schema)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/e1f13641(v=vs.100)) in the `<system.web />` configuration section, as shown in the following example:
 
 ## Using Data Streams in a Client Application
 
@@ -111,7 +111,7 @@ The following are things to consider when you implement a streaming provider and
 
   - A binary property that is a media resource should not be included in the data model. All properties exposed in a data model are returned in the entry in a response feed.
 
-  - To improve performance with a large binary stream, we recommend that you create a custom stream class to store binary data in the database. This class is returned by your <xref:System.Data.Services.Providers.IDataServiceStreamProvider.GetWriteStream%2A> implementation and sends the binary data to the database in chunks. For a SQL Server database, we recommend that you use a FILESTREAM to stream data into the database when the binary data is larger than 1MB.
+  - To improve performance with a large binary stream, we recommend that you create a custom stream class to store binary data in the database. This class is returned by your <xref:System.Data.Services.Providers.IDataServiceStreamProvider.GetWriteStream%2A> implementation and sends the binary data to the database in chunks. For a SQL Server database, we recommend that you use a FILESTREAM to stream data into the database when the binary data is larger than 1 MB.
 
   - Ensure that your database is designed to store the binary large streams that are to be received by your data service.
 

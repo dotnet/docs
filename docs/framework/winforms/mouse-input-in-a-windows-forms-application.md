@@ -1,5 +1,5 @@
 ---
-title: "Mouse Input in a Windows Forms Application"
+title: Mouse input
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Forms, mouse input"

@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorDebugStackWalk::GetContext Method
-Returns the context for the current frame in the [ICorDebugStackWalk](../../../../docs/framework/unmanaged-api/debugging/icordebugstackwalk-interface.md) object.  
+Returns the context for the current frame in the [ICorDebugStackWalk](icordebugstackwalk-interface.md) object.  
   
 ## Syntax  
   
@@ -67,5 +67,5 @@ HRESULT GetContext([in]  ULONG32 contextFlags,
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

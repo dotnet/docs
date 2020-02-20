@@ -10,7 +10,7 @@ This document outlines the changes that were added to the project files as part 
 
 ## Implicit package references
 
-Metapackages are implicitly referenced based on the target framework(s) specified in the `<TargetFramework>` or `<TargetFrameworks>` property of your project file. `<TargetFrameworks>` is ignored if `<TargetFramework>` is specified, independent of order. For more information, see [Packages, metapackages and frameworks](../packages.md). 
+Metapackages are implicitly referenced based on the target framework(s) specified in the `<TargetFramework>` or `<TargetFrameworks>` property of your project file. `<TargetFrameworks>` is ignored if `<TargetFramework>` is specified, independent of order. For more information, see [Packages, metapackages, and frameworks](../packages.md).
 
 ```xml
  <PropertyGroup>
@@ -30,7 +30,7 @@ Since `Microsoft.NETCore.App` or `NETStandard.Library` metapackages are implicit
 
 - When targeting .NET Core or .NET Standard, never have an explicit reference to the `Microsoft.NETCore.App` or `NETStandard.Library` metapackages via a `<PackageReference>` item in your project file.
 - If you need a specific version of the runtime when targeting .NET Core, you should use the `<RuntimeFrameworkVersion>` property in your project (for example, `1.0.4`) instead of referencing the metapackage.
-  - This might happen if you are using [self-contained deployments](../deploying/index.md#self-contained-deployments-scd) and you need a specific patch version of 1.0.0 LTS runtime, for example.
+  - This might happen if you are using [self-contained deployments](../deploying/index.md#publish-self-contained) and you need a specific patch version of 1.0.0 LTS runtime, for example.
 - If you need a specific version of the `NETStandard.Library` metapackage when targeting .NET Standard, you can use the `<NetStandardImplicitPackageVersion>` property and set the version you need.
 - Don't explicitly add or update references to either the `Microsoft.NETCore.App` or `NETStandard.Library` metapackage in .NET Framework projects. If any version of `NETStandard.Library` is needed when using a .NET Standard-based NuGet package, NuGet automatically installs that version.
 
@@ -50,12 +50,12 @@ When referencing the `Microsoft.AspNetCore.App` or `Microsoft.AspNetCore.All` pa
 
 > Known issue: the .NET Core 2.1 SDK only supported this syntax when the project also uses Microsoft.NET.Sdk.Web. This is resolved in the .NET Core 2.2 SDK.
 
-These references to ASP.NET Core metapackages have a slightly different behavior from most normal NuGet packages. [Framework-dependent deployments](../deploying/index.md#framework-dependent-deployments-fdd) of applications that use these metapackages automatically take advantage of the ASP.NET Core shared framework. When you use the metapackages, **no** assets from the referenced ASP.NET Core NuGet packages are deployed with the application—the ASP.NET Core shared framework contains these assets. The assets in the shared framework are optimized for the target platform to improve application startup time. For more information about shared framework, see [.NET Core distribution packaging](../build/distribution-packaging.md).
+These references to ASP.NET Core metapackages have a slightly different behavior from most normal NuGet packages. [Framework-dependent deployments](../deploying/index.md#publish-runtime-dependent) of applications that use these metapackages automatically take advantage of the ASP.NET Core shared framework. When you use the metapackages, **no** assets from the referenced ASP.NET Core NuGet packages are deployed with the application—the ASP.NET Core shared framework contains these assets. The assets in the shared framework are optimized for the target platform to improve application startup time. For more information about shared framework, see [.NET Core distribution packaging](../distribution-packaging.md).
 
 If a version *is* specified, it's treated as the *minimum* version of ASP.NET Core shared framework for framework-dependent deployments and as an *exact* version for self-contained deployments. This can have the following consequences:
 
 - If the version of ASP.NET Core installed on the server is less than the version specified on the PackageReference, the .NET Core process fails to launch. Updates to the metapackage are often available on NuGet.org before updates have been made available in hosting environments such as Azure. Updating the version on the PackageReference to ASP.NET Core could cause a deployed application to fail.
-- If the application is deployed as a [self-contained deployment](../deploying/index.md#self-contained-deployments-scd), the application may not contain the latest security updates to .NET Core. When a version isn't specified, the SDK can automatically include the newest version of ASP.NET Core in the self-contained deployment.
+- If the application is deployed as a [self-contained deployment](../deploying/index.md#publish-self-contained), the application may not contain the latest security updates to .NET Core. When a version isn't specified, the SDK can automatically include the newest version of ASP.NET Core in the self-contained deployment.
 
 ## Default compilation includes in .NET Core projects
 
@@ -140,9 +140,9 @@ A `<PackageReference>` item element specifies a [NuGet dependency in the project
 
 #### Version
 
-The required `Version` attribute specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](/nuget/reference/package-versioning#version-ranges-and-wildcards) scheme. The default behavior is an exact version match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3]` for the exact 1.2.3 version of the package.
+The required `Version` attribute specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](/nuget/reference/package-versioning#version-ranges-and-wildcards) scheme. The default behavior is a minimum version, inclusive match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3, )` and means the resolved package will have the version 1.2.3 if available or greater otherwise.
 
-#### IncludeAssets, ExcludeAssets and PrivateAssets
+#### IncludeAssets, ExcludeAssets, and PrivateAssets
 
 `IncludeAssets` attribute specifies which assets belonging to the package specified by `<PackageReference>` should be
 consumed. By default, all package assets are included.
@@ -184,7 +184,7 @@ Note that `DotNetCliToolReference` is [now deprecated](https://github.com/dotnet
 
 #### Version
 
-`Version` specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](/nuget/create-packages/dependency-versions#version-ranges) scheme. The default behavior is an exact version match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3]` for the exact 1.2.3 version of the package.
+`Version` specifies the version of the package to restore. The attribute respects the rules of the [NuGet versioning](/nuget/create-packages/dependency-versions#version-ranges) scheme. The default behavior is a minimum version, inclusive match. For example, specifying `Version="1.2.3"` is equivalent to NuGet notation `[1.2.3, )` and means the resolved package will have the version 1.2.3 if available or greater otherwise.
 
 ### RuntimeIdentifiers
 
@@ -248,7 +248,7 @@ In SDK-style projects, use an MSBuild target named `PreBuild` or `PostBuild` and
 ```
 
 > [!NOTE]
->You can use any name for the MSBuild targets, but the Visual Studio IDE recognizes `PreBuild` and `PostBuild` targets, so we recommend using those names so that you can edit the commands in the Visual Studio IDE. 
+>You can use any name for the MSBuild targets, but the Visual Studio IDE recognizes `PreBuild` and `PostBuild` targets, so we recommend using those names so that you can edit the commands in the Visual Studio IDE.
 
 ## NuGet metadata properties
 
@@ -280,7 +280,7 @@ A long description of the package for UI display.
 
 ### Description
 
-A long description for the assembly. If `PackageDescription` is not specified then this property is also used as the description of the package.
+A long description for the assembly. If `PackageDescription` is not specified, then this property is also used as the description of the package.
 
 ### Copyright
 
@@ -289,6 +289,10 @@ Copyright details for the package.
 ### PackageRequireLicenseAcceptance
 
 A Boolean value that specifies whether the client must prompt the consumer to accept the package license before installing the package. The default is `false`.
+
+### DevelopmentDependency
+
+A Boolean value that specifies whether the package is marked as a development-only dependency, which prevents the package from being included as a dependency in other packages. With PackageReference (NuGet 4.8+), this flag also means that compile-time assets are excluded from compilation. For more information, see [DevelopmentDependency support for PackageReference](https://github.com/NuGet/Home/wiki/DevelopmentDependency-support-for-PackageReference).
 
 ### PackageLicenseExpression
 
@@ -321,7 +325,7 @@ license-expression =  1*1(simple-expression / compound-expression / UNLICENSED)
 
 Path to a license file within the package if you are using a license that hasn’t been assigned an SPDX identifier, or it is a custom license (Otherwise `PackageLicenseExpression` is preferred)
 
-Replaces `PackageLicenseUrl`, can't be combined with `PackageLicenseExpression` and requires Visual Studio 15.9.4, .NET SDK 2.1.502 or 2.2.101, or newer.
+Replaces `PackageLicenseUrl`, can't be combined with `PackageLicenseExpression`, and requires Visual Studio version 15.9.4 and .NET SDK 2.1.502 or 2.2.101 or newer.
 
 You will need to ensure the license file is packed by adding it explicitly to the project, example usage:
 
@@ -336,7 +340,7 @@ You will need to ensure the license file is packed by adding it explicitly to th
 
 ### PackageLicenseUrl
 
-An URL to the license that is applicable to the package. (_deprecated since Visual Studio 15.9.4, .NET SDK 2.1.502 and 2.2.101_)
+A URL to the license that is applicable to the package. (_deprecated since Visual Studio 15.9.4, .NET SDK 2.1.502 and 2.2.101_)
 
 ### PackageIconUrl
 
@@ -366,7 +370,7 @@ This Boolean value indicates whether the pack process should create a source pac
 
 ### IsTool
 
-Specifies whether all output files are copied to the *tools* folder instead of the *lib* folder. Note that this is different from a `DotNetCliTool` which is specified by setting the `PackageType` in the *.csproj* file.
+Specifies whether all output files are copied to the *tools* folder instead of the *lib* folder. This is different from a `DotNetCliTool`, which is specified by setting the `PackageType` in the *.csproj* file.
 
 ### RepositoryUrl
 
@@ -392,7 +396,7 @@ Specifies the minimum version of the NuGet client that can install this package,
 
 ### IncludeBuildOutput
 
-This Boolean values specifies whether the build output assemblies should be packed into the *.nupkg* file or not.
+This Boolean value specifies whether the build output assemblies should be packed into the *.nupkg* file or not.
 
 ### IncludeContentInPack
 
@@ -427,7 +431,7 @@ Semicolon separated list of key=value pairs.
 
 ### Properties per attribute
 
-Each attribute has a property that control its content and another to disable its generation as shown in the following table:
+As shown in the following table, each attribute has a property that controls its content and another that disables its generation:
 
 | Attribute                                                      | Property               | Property to disable                             |
 |----------------------------------------------------------------|------------------------|-------------------------------------------------|

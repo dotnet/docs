@@ -1,5 +1,5 @@
 ---
-title: "How to: Position Controls on Windows Forms"
+title: Position Controls
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

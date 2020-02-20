@@ -63,5 +63,5 @@ HRESULT AllocVirtual(
   
 ## See also
 
-- [ICLRDataTarget2 Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget2-interface.md)
-- [FreeVirtual Method](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget2-freevirtual-method.md)
+- [ICLRDataTarget2 Interface](iclrdatatarget2-interface.md)
+- [FreeVirtual Method](iclrdatatarget2-freevirtual-method.md)

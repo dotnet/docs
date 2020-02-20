@@ -4,7 +4,8 @@ ms.date: "03/30/2017"
 ms.assetid: b8db01f4-b4a1-43fe-8e31-26d4e9304a65
 ---
 # Discovery Security Sample
-The Discovery specification does not require that endpoints that participate in the discovery process to be secure. Enhancing the discovery messages with security mitigates various types of attacks (message alteration, denial of service, replay, spoofing). This sample implements custom channels that compute and verify message signatures using the compact signature format (described in Section 8.2 of the WS-Discovery specification). The sample supports both the [2005 Discovery specification](https://go.microsoft.com/fwlink/?LinkId=177912) and the [1.1 version](https://go.microsoft.com/fwlink/?LinkId=179677).  
+
+The Discovery specification does not require that endpoints that participate in the discovery process to be secure. Enhancing the discovery messages with security mitigates various types of attacks (message alteration, denial of service, replay, spoofing). This sample implements custom channels that compute and verify message signatures using the compact signature format (described in Section 8.2 of the WS-Discovery specification). The sample supports both the [2005 Discovery specification](http://specs.xmlsoap.org/ws/2005/04/discovery/ws-discovery.pdf) and the [1.1 version](http://docs.oasis-open.org/ws-dd/discovery/1.1/cs-01/wsdd-discovery-1.1-spec-cs-01.pdf).  
   
  The custom channel is applied on top of the existing channel stack for Discovery and Announcement endpoints. This way, a signature header is applied for every message sent. The signature is verified on received messages and when it does not match or when the messages do not have a signature, the messages are dropped. To sign and verify messages, the sample uses certificates.  
   

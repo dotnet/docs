@@ -37,7 +37,11 @@ String literals are delimited by the quotation mark (") character. The backslash
 > [!NOTE]
 > Being constrained to a range of 0 - 255 (0xFF), the `\DDD` and `\x` escape sequences are effectively the [ISO-8859-1](https://en.wikipedia.org/wiki/ISO/IEC_8859-1#Code_page_layout) character set, since that matches the first 256 Unicode code points.
 
+## Verbatim Strings
+
 If preceded by the @ symbol, the literal is a verbatim string. This means that any escape sequences are ignored, except that two quotation mark characters are interpreted as one quotation mark character.
+
+## Triple Quoted Strings
 
 Additionally, a string may be enclosed by triple quotes. In this case, all escape sequences are ignored, including double quotation mark characters. To specify a string that contains an embedded quoted string, you can either use a verbatim string or a triple-quoted string. If you use a verbatim string, you  must specify two quotation mark characters to indicate a single quotation mark character. If you use a triple-quoted string, you can use the single quotation mark characters without them being parsed as the end of the string. This technique can be useful when you work with XML or other structures that include embedded quotation marks.
 
@@ -52,6 +56,8 @@ let xmlFragment2 = """<book author="Milton, John" title="Paradise Lost">"""
 In code, strings that have line breaks are accepted and the line breaks are interpreted literally as newlines, unless a backslash character is the last character before the line break. Leading white space on the next line is ignored when the backslash character is used. The following code produces a string `str1` that has value `"abc\ndef"` and a string `str2` that has value `"abcdef"`.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet1001.fs)]
+
+## String Indexing and Slicing
 
 You can access individual characters in a string by using array-like syntax, as follows.
 

@@ -3,7 +3,7 @@ title: Choose between traditional web apps and single page apps
 description: Learn how to choose between traditional web apps and single page applications (SPAs) when building web applications.
 author: ardalis
 ms.author: wiwagn
-ms.date: 01/30/2019
+ms.date: 12/04/2019
 ---
 
 # Choose Between Traditional Web Apps and Single Page Apps (SPAs)
@@ -11,9 +11,9 @@ ms.date: 01/30/2019
 > "Atwood's Law: Any application that can be written in JavaScript, will eventually be written in JavaScript."  
 > _\- Jeff Atwood_
 
-There are two general approaches to building web applications today: traditional web applications that perform most of the application logic on the server, and single page applications (SPAs) that perform most of the user interface logic in a web browser, communicating with the web server primarily using web APIs. A hybrid approach is also possible, the simplest being host one or more rich SPA-like sub-applications within a larger traditional web application.
+There are two general approaches to building web applications today: traditional web applications that perform most of the application logic on the server, and single page applications (SPAs) that perform most of the user interface logic in a web browser, communicating with the web server primarily using web APIs. A hybrid approach is also possible, the simplest being host one or more rich SPA-like subapplications within a larger traditional web application.
 
-You should use traditional web applications when:
+Use traditional web applications when:
 
 - Your application's client-side requirements are simple or even read-only.
 
@@ -21,7 +21,7 @@ You should use traditional web applications when:
 
 - Your team is unfamiliar with JavaScript or TypeScript development techniques.
 
-You should use a SPA when:
+Use a SPA when:
 
 - Your application must expose a rich user interface with many features.
 
@@ -29,13 +29,23 @@ You should use a SPA when:
 
 - Your application must already expose an API for other (internal or public) clients.
 
-Additionally, SPA frameworks require greater architectural and security expertise. They experience greater churn due to frequent updates and new frameworks than traditional web applications. Configuring automated build and deployment processes and utilizing deployment options like containers are more difficult with SPA applications than traditional web apps.
+Additionally, SPA frameworks require greater architectural and security expertise. They experience greater churn due to frequent updates and new frameworks than traditional web applications. Configuring automated build and deployment processes and utilizing deployment options like containers may be more difficult with SPA applications than traditional web apps.
 
-Improvements in user experience made possible by SPA model must be weighed against these considerations.
+Improvements in user experience made possible by the SPA approach must be weighed against these considerations.
 
 ## Blazor
 
-ASP.NET Core 3.0 introduces a new model for building rich, interactive, and composable UI called Blazor. Blazor server-side allows developers to build UI with Razor on the server and for this code to be delivered to the browser and executed client-side using [WebAssembly](https://webassembly.org/). ASP.NET Core 3.0 is still under development, but you should expect to see more on this technology in the 3.0 update to this e-book. For more information about Blazor, see [Get started with Blazor](https://blazor.net/docs/get-started.html).
+ASP.NET Core 3.0 introduces a new model for building rich, interactive, and composable UI called Blazor. Blazor server-side allows developers to build UI with Razor on the server and for this code to be delivered to the browser and executed client-side using [WebAssembly](https://webassembly.org/). Blazor server-side is available now with ASP.NET Core 3.0 or later. Blazor client-side should be available in 2020.
+
+Blazor provides a new, third option to consider when evaluating whether to build a purely server-rendered web application or a SPA. You can build rich, SPA-like client-side behaviors using Blazor, without the need for a significant JavaScript development. Blazor applications can call APIs to request data or perform server-side operations.
+
+Consider building your web application with Blazor when:
+
+- Your application must expose a rich user interface
+
+- Your team is more comfortable with .NET development than JavaScript or TypeScript development
+
+For more information about Blazor, see [Get started with Blazor](https://blazor.net/docs/get-started.html).
 
 ## When to choose traditional web apps
 
@@ -43,7 +53,7 @@ The following is a more detailed explanation of the previously stated reasons fo
 
 **Your application has simple, possibly read-only, client-side requirements**
 
-Many web applications are primarily consumed in a read-only fashion by the vast majority of their users. Read-only (or read-mostly) applications tend to be much simpler than those that maintain and manipulate a great deal of state. For example, a search engine might consist of a single entry point with a textbox and a second page for displaying search results. Anonymous users can easily make requests, and there is little need for client-side logic. Likewise, a blog or content management system's public-facing application usually consists mainly of content with little client-side behavior. Such applications are easily built as traditional server-based web applications which perform logic on the web server and render HTML to be displayed in the browser. The fact that each unique page of the site has its own URL that can be bookmarked and indexed by search engines (by default, without having to add this as a separate feature of the application) is also a clear benefit in such scenarios.
+Many web applications are primarily consumed in a read-only fashion by the vast majority of their users. Read-only (or read-mostly) applications tend to be much simpler than those that maintain and manipulate a great deal of state. For example, a search engine might consist of a single entry point with a textbox and a second page for displaying search results. Anonymous users can easily make requests, and there is little need for client-side logic. Likewise, a blog or content management system's public-facing application usually consists mainly of content with little client-side behavior. Such applications are easily built as traditional server-based web applications, which perform logic on the web server and render HTML to be displayed in the browser. The fact that each unique page of the site has its own URL that can be bookmarked and indexed by search engines (by default, without having to add this as a separate feature of the application) is also a clear benefit in such scenarios.
 
 **Your application needs to function in browsers without JavaScript support**
 
@@ -59,9 +69,9 @@ The following is a more detailed explanation of when to choose a Single Page App
 
 **Your application must expose a rich user interface with many features**
 
-SPAs can support rich client-side functionality that doesn't require reloading the page as users take actions or navigate between areas of the app. SPAs can load more quickly, fetching data in the background, and individual user actions are more responsive since full page reloads are rare. SPAs can support incremental updates, saving partially completed forms or documents without the user having to click a button to submit a form. SPAs can support rich client-side behaviors, such as drag-and-drop, much more readily than traditional applications. SPAs can be designed to run in a disconnected mode, making updates to a client-side model that are eventually synchronized back to the server once a connection is re-established. You should choose a SPA style application if your app's requirements include rich functionality that goes beyond what typical HTML forms offer.
+SPAs can support rich client-side functionality that doesn't require reloading the page as users take actions or navigate between areas of the app. SPAs can load more quickly, fetching data in the background, and individual user actions are more responsive since full page reloads are rare. SPAs can support incremental updates, saving partially completed forms or documents without the user having to click a button to submit a form. SPAs can support rich client-side behaviors, such as drag-and-drop, much more readily than traditional applications. SPAs can be designed to run in a disconnected mode, making updates to a client-side model that are eventually synchronized back to the server once a connection is re-established. Choose a SPA-style application if your app's requirements include rich functionality that goes beyond what typical HTML forms offer.
 
-Note that frequently SPAs need to implement features that are built-in to traditional web apps, such as displaying a meaningful URL in the address bar reflecting the current operation (and allowing users to bookmark or deep link to this URL to return to it). SPAs also should allow users to use the browser's back and forward buttons with results that won't surprise them.
+Frequently, SPAs need to implement features that are built in to traditional web apps, such as displaying a meaningful URL in the address bar reflecting the current operation (and allowing users to bookmark or deep link to this URL to return to it). SPAs also should allow users to use the browser's back and forward buttons with results that won't surprise them.
 
 **Your team is familiar with JavaScript and/or TypeScript development**
 
@@ -71,6 +81,8 @@ Writing SPAs requires familiarity with JavaScript and/or TypeScript and client-s
 >
 > - **Angular**  
 >   <https://angular.io>
+> - **React**
+>   <https://reactjs.org/>
 > - **Comparison of JavaScript Frameworks**  
 >   <https://jsreport.io/the-ultimate-guide-to-javascript-frameworks/>
 
@@ -78,16 +90,28 @@ Writing SPAs requires familiarity with JavaScript and/or TypeScript and client-s
 
 If you're already supporting a web API for use by other clients, it may require less effort to create a SPA implementation that leverages these APIs rather than reproducing the logic in server-side form. SPAs make extensive use of web APIs to query and update data as users interact with the application.
 
-## Decision table – Traditional Web or SPA
+## When to choose Blazor
 
-The following decision table summarizes some of the basic factors to consider when choosing between a traditional web application and a SPA.
+The following is a more detailed explanation of when to choose Blazor for your web app.
 
-| **Factor**                                           | **Traditional Web App** | **Single Page Application** |
-| ---------------------------------------------------- | ----------------------- | --------------------------- |
-| Required Team Familiarity with JavaScript/TypeScript | **Minimal**             | **Required**                |
-| Support Browsers without Scripting                   | **Supported**           | **Not Supported**           |
-| Minimal Client-Side Application Behavior             | **Well-Suited**         | **Overkill**                |
-| Rich, Complex User Interface Requirements            | **Limited**             | **Well-Suited**             |
+**Your application must expose a rich user interface**
+
+Like JavaScript-based SPAs, Blazor applications can support rich client behavior without page reloads. These applications are more responsive to users, fetching only the data (or HTML) required to respond to a given user interaction. Designed properly, server-side Blazor apps can be configured to run as client-side Blazor apps with minimal changes once this feature is supported.
+
+**Your team is more comfortable with .NET development than JavaScript or TypeScript development**
+
+Many developers are more productive with .NET and Razor than with client-side languages like JavaScript or TypeScript. Since the server side of the application is already being developed with .NET, using Blazor ensures every .NET developer on the team can understand and potentially build the behavior of the front end of the application.
+
+## Decision table
+
+The following decision table summarizes some of the basic factors to consider when choosing between a traditional web application, a SPA, or a Blazor app.
+
+| **Factor**                                           | **Traditional Web App** | **Single Page Application** | **Blazor App**  |
+| ---------------------------------------------------- | ----------------------- | --------------------------- | --------------- |
+| Required Team Familiarity with JavaScript/TypeScript | **Minimal**             | **Required**                | **Minimal**     |
+| Support Browsers without Scripting                   | **Supported**           | **Not Supported**           | **Supported**   |
+| Minimal Client-Side Application Behavior             | **Well-Suited**         | **Overkill**                | **Viable**      |
+| Rich, Complex User Interface Requirements            | **Limited**             | **Well-Suited**             | **Well-Suited** |
 
 >[!div class="step-by-step"]
 >[Previous](modern-web-applications-characteristics.md)

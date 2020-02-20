@@ -1,5 +1,5 @@
 ---
-title: "Graphics and Drawing in Windows Forms"
+title: "Graphics and Drawing"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "graphics [Windows Forms]"

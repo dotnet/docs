@@ -1,11 +1,11 @@
 ---
 title: dotnet list package command
 description: The 'dotnet list package' command provides a convenient option to list the package references for a project or solution.
-ms.date: 06/26/2019
+ms.date: 02/14/2020
 ---
 # dotnet list package
 
-[!INCLUDE [topic-appliesto-net-core-22plus](../../../includes/topic-appliesto-net-core-22plus.md)]
+**This article applies to:** ✔️ .NET Core 2.2 SDK and later versions
 
 ## Name
 
@@ -27,7 +27,7 @@ The `dotnet list package` command provides a convenient option to list all NuGet
 Project 'SentimentAnalysis' has the following package references
    [netcoreapp2.1]:
    Top-level Package               Requested   Resolved
-   > Microsoft.ML                  0.11.0      0.11.0
+   > Microsoft.ML                  1.4.0       1.4.0
    > Microsoft.NETCore.App   (A)   [2.1.0, )   2.1.0
 
 (A) : Auto-referenced package.
@@ -40,11 +40,12 @@ Use the `--outdated` option to find out if there are newer versions available of
 ```output
 The following sources were used:
    https://api.nuget.org/v3/index.json
+   C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\
 
 Project `SentimentAnalysis` has the following updates to its packages
    [netcoreapp2.1]:
    Top-level Package      Requested   Resolved   Latest
-   > Microsoft.ML         0.11.0      0.11.0     1.0.0-preview
+   > Microsoft.ML         1.4.0       1.4.0      1.5.0-preview
 ```
 
 If you need to find out whether your project has transitive dependencies, use the `--include-transitive` option. Transitive dependencies occur when you add a package to your project that in turn relies on another package. The following example shows the output from running the `dotnet list package --include-transitive` command for the [HelloPlugin](https://github.com/dotnet/samples/tree/master/core/extensions/AppWithPlugin/HelloPlugin) project, which displays top-level packages and the packages they depend on:
@@ -52,15 +53,8 @@ If you need to find out whether your project has transitive dependencies, use th
 ```output
 Project 'HelloPlugin' has the following package references
    [netcoreapp3.0]:
-   Top-level Package                      Requested                    Resolved
-   > Microsoft.NETCore.Platforms    (A)   [3.0.0-preview3.19128.7, )   3.0.0-preview3.19128.7
-   > Microsoft.WindowsDesktop.App   (A)   [3.0.0-preview3-27504-2, )   3.0.0-preview3-27504-2
-
-   Transitive Package               Resolved
-   > Microsoft.NETCore.Targets      2.0.0
-   > PluginBase                     1.0.0
-
-(A) : Auto-referenced package.
+   Transitive Package      Resolved
+   > PluginBase            1.0.0
 ```
 
 ## Arguments
@@ -71,61 +65,61 @@ The project or solution file to operate on. If not specified, the command search
 
 ## Options
 
-* **`--config <SOURCE>`**
+- **`--config <SOURCE>`**
 
   The NuGet sources to use when searching for newer packages. Requires the `--outdated` option.
 
-* **`--framework <FRAMEWORK>`**
+- **`--framework <FRAMEWORK>`**
 
   Displays only the packages applicable for the specified [target framework](../../standard/frameworks.md). To specify multiple frameworks, repeat the option multiple times. For example: `--framework netcoreapp2.2 --framework netstandard2.0`.
 
-* **`-h|--help`**
+- **`-h|--help`**
 
   Prints out a short help for the command.
 
-* **`--highest-minor`**
+- **`--highest-minor`**
 
   Considers only the packages with a matching major version number when searching for newer packages. Requires the `--outdated` option.
 
-* **`--highest-patch`**
+- **`--highest-patch`**
 
   Considers only the packages with a matching major and minor version numbers when searching for newer packages. Requires the `--outdated` option.
 
-* **`--include-prerelease`**
+- **`--include-prerelease`**
 
   Considers packages with prerelease versions when searching for newer packages. Requires the `--outdated` option.
 
-* **`--include-transitive`**
+- **`--include-transitive`**
 
   Lists transitive packages, in addition to the top-level packages. When specifying this option, you get a list of packages that the top-level packages depend on.
 
-* **`--interactive`**
+- **`--interactive`**
 
   Allows the command to stop and wait for user input or action. For example, to complete authentication. Available since .NET Core 3.0 SDK.
 
-* **`--outdated`**
+- **`--outdated`**
 
   Lists packages that have newer versions available.
 
-* **`-s|--source <SOURCE>`**
+- **`-s|--source <SOURCE>`**
 
   The NuGet sources to use when searching for newer packages. Requires the `--outdated` option.
 
 ## Examples
 
-* List package references of a specific project:
+- List package references of a specific project:
 
   ```dotnetcli
   dotnet list SentimentAnalysis.csproj package
   ```
 
-* List package references that have newer versions available, including prerelease versions:
+- List package references that have newer versions available, including prerelease versions:
 
   ```dotnetcli
   dotnet list package --outdated --include-prerelease
   ```
 
-* List package references for a specific target framework:
+- List package references for a specific target framework:
 
   ```dotnetcli
   dotnet list package --framework netcoreapp3.0

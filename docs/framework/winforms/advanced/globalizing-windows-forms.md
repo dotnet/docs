@@ -1,5 +1,5 @@
 ---
-title: "Globalizing Windows Forms applications"
+title: Globalize apps
 description: This topic presents a list of topics related to globalizing Windows Forms applications.
 ms.date: "06/08/2018"
 helpviewer_keywords: 

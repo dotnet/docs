@@ -19,11 +19,11 @@ How a library is used by the .NET community changes the effect of breaking chang
 
   High-level libraries are directly referenced in an end-user application. If breaking changes occur, the developer can choose to update to the latest version, or can modify their application to work with the breaking change.
 
-**✔️ DO** think about how your library will be used. What effect will breaking changes have on applications and libraries that use it?
+✔️ DO think about how your library will be used. What effect will breaking changes have on applications and libraries that use it?
 
-**✔️ DO** minimize breaking changes when developing a low-level .NET library.
+✔️ DO minimize breaking changes when developing a low-level .NET library.
 
-**✔️ CONSIDER** publishing a major rewrite of a library as a new NuGet package.
+✔️ CONSIDER publishing a major rewrite of a library as a new NuGet package.
 
 ## Types of breaking changes
 
@@ -50,7 +50,7 @@ Adding features and improving bad behaviors is a good thing, but without care it
 
 For example, ASP.NET Core MVC has the concept of a [compatibility version](/aspnet/core/mvc/compatibility-version) that modifies the features enabled and disabled on `MvcOptions`.
 
-**✔️ CONSIDER** leaving new features off by default, if they affect existing users, and let developers opt in to the feature with a setting.
+✔️ CONSIDER leaving new features off by default, if they affect existing users, and let developers opt in to the feature with a setting.
 
 ### Binary breaking change
 
@@ -58,15 +58,15 @@ A binary breaking change happens when you change the public API of your library,
 
 A binary breaking change can also break an **entire assembly**. Renaming an assembly with `AssemblyName` will change the assembly's identity, as will adding, removing, or changing the assembly's strong naming key. A change of an assembly's identity will break all compiled code that uses it.
 
-**❌ DO NOT** change an assembly name.
+❌ DO NOT change an assembly name.
 
-**❌ DO NOT** add, remove, or change the strong naming key.
+❌ DO NOT add, remove, or change the strong naming key.
 
-**✔️ CONSIDER** using abstract base classes instead of interfaces.
+✔️ CONSIDER using abstract base classes instead of interfaces.
 
 > Adding anything to an interface will cause existing types that implement it to fail. An abstract base class allows you to add a default virtual implementation.
 
-**✔️ CONSIDER** placing the <xref:System.ObsoleteAttribute> on types and members that you intend to remove. The attribute should have instructions for updating code to no longer use the obsolete API.
+✔️ CONSIDER placing the <xref:System.ObsoleteAttribute> on types and members that you intend to remove. The attribute should have instructions for updating code to no longer use the obsolete API.
 
 > Code that calls types and methods with the <xref:System.ObsoleteAttribute> will generate a build warning with the message supplied to the attribute. The warnings give people who use the obsolete API surface time to migrate so that when the obsolete API is removed, most are no longer using it.
 
@@ -86,7 +86,7 @@ public class Document
 }
 ```
 
-**✔️ CONSIDER** keeping types and methods with the <xref:System.ObsoleteAttribute> indefinitely in low and middle-level libraries.
+✔️ CONSIDER keeping types and methods with the <xref:System.ObsoleteAttribute> indefinitely in low and middle-level libraries.
 
 > Removing APIs is a binary breaking change. Considering keeping obsolete types and methods if maintaining them is low cost and doesn't add lot of technical debt to your library. Not removing types and methods can help avoid the worst-case scenarios mentioned above.
 

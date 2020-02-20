@@ -1,5 +1,5 @@
 ---
-title: "WPF Partial Trust Security"
+title: "Partial Trust Security"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

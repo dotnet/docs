@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic and WPF Event Handling"
+title: Handle events in Visual Basic
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Visual Basic [WPF], event handlers"

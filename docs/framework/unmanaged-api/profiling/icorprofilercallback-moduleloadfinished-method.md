@@ -50,5 +50,5 @@ HRESULT ModuleLoadFinished(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
-- [ModuleLoadStarted Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-moduleloadstarted-method.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [ModuleLoadStarted Method](icorprofilercallback-moduleloadstarted-method.md)

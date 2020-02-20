@@ -1,11 +1,16 @@
 ---
-title: Visual Basic breaking changes - .NET Core
+title: Visual Basic breaking changes
 description: Lists the breaking changes in Visual Basic used with .NET Core.
 ms.date: "09/20/2019"
 ---
 # Visual Basic breaking changes
 
-The following is a list of breaking changes in Visual Basic by .NET Core version.
+The following is a list of breaking changes in Visual Basic:
+
+- [Types in Microsoft.VisualBasic.ApplicationServices namespace not available](#types-in-microsoftvisualbasicapplicationservices-namespace-not-available)
+- [Types in Microsoft.VisualBasic.Devices namespace not available](#types-in-microsoftvisualbasicdevices-namespace-not-available)
+- [Types in Microsoft.VisualBasic.MyServices namespace not available](#types-in-microsoftvisualbasicmyservices-namespace-not-available)
+- [Microsoft.VisualBasic.Constants.vbNewLine is obsolete](#microsoftvisualbasicconstantsvbnewline-is-obsolete)
 
 ## .NET Core 3.0 Preview 9
 
@@ -18,6 +23,8 @@ The following is a list of breaking changes in Visual Basic by .NET Core version
 ***
 
 [!INCLUDE[Types in Microsoft.VisualBasic.MyServices namespace not available](~/includes/core-changes/visualbasic/3.0/microsoft.visualbasic.myservices-unavailable.md)]
+
+***
 
 ## .NET Core 3.0 Preview 8
 

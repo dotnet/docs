@@ -1,22 +1,20 @@
 ---
 title: Breaking changes - .NET Framework to .NET Core
+titleSuffix: ""
 description: Lists the breaking changes from .NET Framework to .NET Core.
 ms.date: 12/18/2019
 ---
 # Breaking changes for migration from .NET Framework to .NET Core
 
-If you're migrating an app from .NET Framework to .NET Core, the breaking changes listed in this article may affect you. Breaking changes are grouped by category, and within those categories, by the version of .NET Core they were introduced in.
+If you're migrating an app from .NET Framework to .NET Core, the breaking changes listed in this article may affect you. Breaking changes are grouped by category, and within those categories, by the version of .NET Core in which they were introduced.
 
 > [!NOTE]
 > This article is not a complete list of breaking changes between .NET Framework and .NET Core. The most important breaking changes are added here as we become aware of them.
 
 ## CoreFx
 
-Breaking changes:
-
 - [Change in default value of UseShellExecute](#change-in-default-value-of-useshellexecute)
-
-***
+- [UnauthorizedAccessException thrown by FileSystemInfo.Attributes](#unauthorizedaccessexception-thrown-by-filesysteminfoattributes)
 
 ### .NET Core 2.1
 
@@ -24,11 +22,25 @@ Breaking changes:
 
 ***
 
+### .NET Core 1.0
+
+[!INCLUDE [UnauthorizedAccessException thrown by FileSystemInfo.Attributes](~/includes/core-changes/corefx/1.0/filesysteminfo-attributes-exceptions.md)]
+
+***
+
+## Cryptography
+
+- [Boolean parameter of SignedCms.ComputeSignature is respected](#boolean-parameter-of-signedcmscomputesignature-is-respected)
+
+### .NET Core 2.1
+
+[!INCLUDE [Boolean parameter of SignedCms.ComputeSignature is respected](~/includes/core-changes/cryptography/2.1/compute-signature-silent-parameter.md)]
+
+***
+
 ## Windows Forms
 
 Windows Forms support was added to .NET Core in version 3.0. If you're migrating a Windows Forms app from .NET Framework to .NET Core, the breaking changes listed here may affect your app.
-
-Breaking changes:
 
 - [Removed controls](#removed-controls)
 - [CellFormatting event not raised if tooltip is shown](#cellformatting-event-not-raised-if-tooltip-is-shown)

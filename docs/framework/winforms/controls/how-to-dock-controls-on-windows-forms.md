@@ -1,5 +1,5 @@
 ---
-title: "How to: Dock Controls on Windows Forms"
+title: Dock Controls
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "controls [Windows Forms], docking"

@@ -5,7 +5,7 @@ ms.date: 10/14/2019
 ---
 # dotnet-counters
 
-**This article applies to: ✓** .NET Core 3.0 SDK and later versions
+**This article applies to:** ✔️ .NET Core 3.0 SDK and later versions
 
 ## Install dotnet-counters
 

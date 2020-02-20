@@ -107,7 +107,7 @@ Publishes the .NET Core runtime with your application so the runtime doesn't nee
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 
-Publishes the application for a given runtime. This is used when creating a [self-contained deployment (SCD)](../deploying/index.md#self-contained-deployments-scd). For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). Default is to publish a [framework-dependent deployment (FDD)](../deploying/index.md#framework-dependent-deployments-fdd).
+Publishes the application for a given runtime. This is used when creating a [self-contained deployment (SCD)](../deploying/index.md#publish-self-contained). For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). Default is to publish a [framework-dependent deployment (FDD)](../deploying/index.md#publish-runtime-dependent).
 
 `-v|--verbosity <LEVEL>`
 
@@ -158,7 +158,7 @@ Publishes the .NET Core runtime with your application so the runtime doesn't nee
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 
-Publishes the application for a given runtime. This is used when creating a [self-contained deployment (SCD)](../deploying/index.md#self-contained-deployments-scd). For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). Default is to publish a [framework-dependent deployment (FDD)](../deploying/index.md#framework-dependent-deployments-fdd).
+Publishes the application for a given runtime. This is used when creating a [self-contained deployment (SCD)](../deploying/index.md#publish-self-contained). For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). Default is to publish a [framework-dependent deployment (FDD)](../deploying/index.md#publish-runtime-dependent).
 
 `-v|--verbosity <LEVEL>`
 
@@ -193,7 +193,7 @@ If the path is relative, the output directory generated is relative to the proje
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 
-Publishes the application for a given runtime. This is used when creating a [self-contained deployment (SCD)](../deploying/index.md#self-contained-deployments-scd). For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). Default is to publish a [framework-dependent deployment (FDD)](../deploying/index.md#framework-dependent-deployments-fdd).
+Publishes the application for a given runtime. This is used when creating a [self-contained deployment (SCD)](../deploying/index.md#publish-self-contained). For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). Default is to publish a [framework-dependent deployment (FDD)](../deploying/index.md#publish-runtime-dependent).
 
 `-v|--verbosity <LEVEL>`
 

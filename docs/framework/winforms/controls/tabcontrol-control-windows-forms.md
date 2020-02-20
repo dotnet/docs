@@ -1,5 +1,5 @@
 ---
-title: "TabControl Control (Windows Forms)"
+title: "TabControl Control"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "TabControl control [Windows Forms]"

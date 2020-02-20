@@ -9,11 +9,11 @@ ms.assetid: 51a65860-efcb-4fe0-95a0-1c679cde66b7
 ---
 # Overview of type converters for XAML
 
-Type converters supply logic for an object writer that converts from a string in XAML markup into particular objects in an object graph. In .NET Framework XAML Services, the type converter must be a class that derives from <xref:System.ComponentModel.TypeConverter>. Some converters also support the XAML save path and can be used to serialize an object into a string form in serialization markup. This topic describes how and when type converters in XAML are invoked, and provides implementation advice for the method overrides of <xref:System.ComponentModel.TypeConverter>.  
+Type converters supply logic for an object writer that converts from a string in XAML markup into particular objects in an object graph. In .NET XAML Services, the type converter must be a class that derives from <xref:System.ComponentModel.TypeConverter>. Some converters also support the XAML save path and can be used to serialize an object into a string form in serialization markup. This topic describes how and when type converters in XAML are invoked, and provides implementation advice for the method overrides of <xref:System.ComponentModel.TypeConverter>.  
   
 <a name="type_conversion_concepts"></a>   
 ## Type Conversion Concepts  
- The following sections explain basic concepts about how XAML uses strings, and how object writers in .NET Framework XAML Services use type converters to process some of the string values that are encountered in a XAML source.  
+ The following sections explain basic concepts about how XAML uses strings, and how object writers in .NET XAML Services use type converters to process some of the string values that are encountered in a XAML source.  
   
 ### XAML and String Values  
  When you set an attribute value in a XAML file, the initial type of that value is a string in a general sense, and a string attribute value in an XML sense. Even other primitives such as <xref:System.Double> are initially strings to a XAML processor.  
@@ -34,7 +34,7 @@ Type converters supply logic for an object writer that converts from a string in
  The following sections discuss the API of the <xref:System.ComponentModel.TypeConverter> class.  
   
 ### TypeConverter  
- Under .NET Framework XAML Services, all type converters that are used for XAML purposes are classes that derive from the base class <xref:System.ComponentModel.TypeConverter>. The <xref:System.ComponentModel.TypeConverter> class existed in versions of the .NET Framework before XAML existed; one of the original <xref:System.ComponentModel.TypeConverter> scenarios was to provide string conversion for property editors in visual designers.  
+ Under .NET XAML Services, all type converters that are used for XAML purposes are classes that derive from the base class <xref:System.ComponentModel.TypeConverter>. The <xref:System.ComponentModel.TypeConverter> class existed in versions of the .NET Framework before XAML existed; one of the original <xref:System.ComponentModel.TypeConverter> scenarios was to provide string conversion for property editors in visual designers.  
   
  For XAML, the role of <xref:System.ComponentModel.TypeConverter> is expanded. For XAML purposes, <xref:System.ComponentModel.TypeConverter> is the base class for providing support for certain to-string and from-string conversions. From-string enables parsing a string attribute value from XAML. To-string might enable processing a run-time value of a particular object property back into an attribute in XAML for serialization.  
   
@@ -67,7 +67,7 @@ Type converters supply logic for an object writer that converts from a string in
 > [!NOTE]
 > Do not use the braces ({}), specifically the opening brace ({), as an element of your string format. These characters are reserved as the entry and exit for a markup extension sequence.  
   
- It is appropriate to throw an exception when your type converter must have access to a XAML service from the .NET Framework XAML Services object writer, but the <xref:System.IServiceProvider.GetService%2A> call that is made against the context does not return that service.  
+ It is appropriate to throw an exception when your type converter must have access to a XAML service from .NET XAML Services object writer, but the <xref:System.IServiceProvider.GetService%2A> call that is made against the context does not return that service.  
   
 ### Implementing ConvertTo  
  <xref:System.ComponentModel.TypeConverter.ConvertTo%2A> is potentially used for serialization support. Serialization support through <xref:System.ComponentModel.TypeConverter.ConvertTo%2A> for your custom type and its type converter is not an absolute requirement. However, if you are implementing a control, or using serialization of as part of the features or design of your class, you should implement <xref:System.ComponentModel.TypeConverter.ConvertTo%2A>.  
@@ -78,7 +78,7 @@ Type converters supply logic for an object writer that converts from a string in
   
  If the `destinationType` parameter is not of type <xref:System.String>, you can choose your own converter handling. Typically, you revert to base implementation handling, which in the base <xref:System.ComponentModel.TypeConverter.ConvertTo%2A> raises a specific exception.  
   
- It is appropriate to throw an exception when your type converter must have access to a XAML service from the .NET Framework XAML Services object writer, but the <xref:System.IServiceProvider.GetService%2A> call that is made against the context does not return that service.  
+ It is appropriate to throw an exception when your type converter must have access to a XAML service from .NET XAML Services object writer, but the <xref:System.IServiceProvider.GetService%2A> call that is made against the context does not return that service.  
   
 ### Implementing CanConvertFrom  
  Your <xref:System.ComponentModel.TypeConverter.CanConvertFrom%2A> implementation should return `true` for `sourceType` of type <xref:System.String> and otherwise, defer to the base implementation. Do not throw exceptions from <xref:System.ComponentModel.TypeConverter.CanConvertFrom%2A>.  
@@ -88,7 +88,7 @@ Type converters supply logic for an object writer that converts from a string in
   
 <a name="Applying_the_TypeConverterAttribute"></a>   
 ## Applying the TypeConverterAttribute  
- For your custom type converter to be used as the acting type converter for a custom class by .NET Framework XAML Services, you must apply the <xref:System.ComponentModel.TypeConverterAttribute> to your class definition. The <xref:System.ComponentModel.TypeConverterAttribute.ConverterTypeName%2A> that you specify through the attribute must be the type name of your custom type converter. If you apply this attribute, when a XAML processor handles values where the property type uses your custom class type, it can input strings and return object instances.  
+ For your custom type converter to be used as the acting type converter for a custom class by .NET XAML Services, you must apply the <xref:System.ComponentModel.TypeConverterAttribute> to your class definition. The <xref:System.ComponentModel.TypeConverterAttribute.ConverterTypeName%2A> that you specify through the attribute must be the type name of your custom type converter. If you apply this attribute, when a XAML processor handles values where the property type uses your custom class type, it can input strings and return object instances.  
   
  You can also provide a type converter on a per-property basis. Instead of applying a <xref:System.ComponentModel.TypeConverterAttribute> to the class definition, apply it to a property definition (the main definition, not the `get`/`set` implementations within it). The type of the property must match the type that is processed by your custom type converter. With this attribute applied, when a XAML processor handles values of that property, it can process input strings and return object instances. The per-property type converter technique is useful if you choose to use a property type from Microsoft .NET Framework or from some other library where you cannot control the class definition and cannot apply a <xref:System.ComponentModel.TypeConverterAttribute> there.  
   

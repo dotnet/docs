@@ -1,5 +1,5 @@
 ---
-title: "Windows Forms Security"
+title: Security
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "designer access security [Windows Forms]"

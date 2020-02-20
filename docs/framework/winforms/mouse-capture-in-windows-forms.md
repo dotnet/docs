@@ -1,5 +1,5 @@
 ---
-title: "Mouse Capture in Windows Forms"
+title: "Mouse Capture"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "mouse [Windows Forms], capture"

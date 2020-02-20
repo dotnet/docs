@@ -1,5 +1,6 @@
 ---
-title: 'Tutorial: Create your first WPF application in Visual Studio 2019 - .NET Framework'
+title: Create your first WPF app in Visual Studio 2019 - .NET Framework
+titleSuffix: ""
 ms.date: 09/06/2019
 dev_langs:
   - "csharp"
@@ -10,8 +11,6 @@ helpviewer_keywords:
 ms.assetid: b96bed40-8946-4285-8fe4-88045ab854ed
 ms.topic: tutorial
 ms.custom: "mvc,vs-dotnet"
-author: mairaw
-ms.author: mairaw
 ---
 # Tutorial: Create your first WPF application in Visual Studio 2019
 

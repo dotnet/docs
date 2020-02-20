@@ -1,5 +1,6 @@
 ---
 title: "SQL Server Features and ADO.NET"
+titleSuffix: ""
 ms.date: "03/30/2017"
 ms.assetid: 2839529b-a79b-4450-be5d-07a98dbc7a0f
 ---
@@ -8,9 +9,9 @@ The topics in this section discuss features in SQL Server that are targeted at d
   
  For more information, see SQL Server Books Online for the version of SQL Server you are using, as listed in the following table.  
   
- **SQL Server Books Online**  
+ **SQL Server documentation**  
   
-1. [Development (Database Engine)](https://go.microsoft.com/fwlink/?LinkId=115245)  
+1. [Development (Database Engine)](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/bb500155(v=sql.100))  
   
 ## In This Section  
  [Enumerating Instances of SQL Server (ADO.NET)](enumerating-instances-of-sql-server.md)  

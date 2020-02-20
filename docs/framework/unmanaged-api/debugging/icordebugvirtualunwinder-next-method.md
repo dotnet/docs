@@ -37,5 +37,5 @@ HRESULT Next();
   
 ## See also
 
-- [ICorDebugMemoryBuffer Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmemorybuffer-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugMemoryBuffer Interface](icordebugmemorybuffer-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

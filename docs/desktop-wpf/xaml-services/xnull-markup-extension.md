@@ -33,7 +33,7 @@ Specifies `null` as a value for a XAML member.
   
  For information about markup extensions, see [Markup Extensions and WPF XAML](../../framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).  
   
- In .NET Framework XAML Services, the handling for this markup extension is defined by the <xref:System.Windows.Markup.NullExtension> class.  
+ In .NET XAML Services, the handling for this markup extension is defined by the <xref:System.Windows.Markup.NullExtension> class.  
   
 ## WPF Usage Notes  
  Note that `null` is not necessarily the initial unset value for a reference-type dependency property. The initial default value can vary for each dependency property and can be based on property-specific metadata. Many dependency properties do not accept `null` as a value, either through markup or code because of their validation callback implementations. For more information about dependency properties, see [Dependency Properties Overview](../../framework/wpf/advanced/dependency-properties-overview.md).  

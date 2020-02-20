@@ -46,5 +46,5 @@ HRESULT LoadAssembly (
   
 ## See also
 
-- [UnloadAssembly Method](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-unloadassembly-method.md)
-- [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)
+- [UnloadAssembly Method](icordebugmanagedcallback-unloadassembly-method.md)
+- [ICorDebugManagedCallback Interface](icordebugmanagedcallback-interface.md)

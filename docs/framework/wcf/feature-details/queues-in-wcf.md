@@ -44,7 +44,7 @@ The topics in this section discuss Windows Communication Foundation (WCF) suppor
  Explains how to handle poison messages (messages that have exceeded the maximum number of delivery attempts to the receiving application).  
   
  [Differences in Queuing Features in Windows Vista, Windows Server 2003, and Windows XP](../../../../docs/framework/wcf/feature-details/diff-in-queue-in-vista-server-2003-windows-xp.md)  
- Summarizes the differences in the WCF queues feature between Windows Vista, Windows Server 2003, and [!INCLUDE[wxp](../../../../includes/wxp-md.md)].  
+ Summarizes the differences in the WCF queues feature between Windows Vista, Windows Server 2003, and Windows XP.  
   
  [Securing Messages Using Transport Security](../../../../docs/framework/wcf/feature-details/securing-messages-using-transport-security.md)  
  Describes how to use transport security to secure queued messages.  

@@ -4,7 +4,7 @@ The default value of the <xref:System.Net.Http.HttpRequestMessage.Version?displa
 
 #### Version introduced
 
-.NET Core 3.0
+3.0
 
 #### Change description
 
@@ -25,10 +25,9 @@ Networking
 - <xref:System.Net.Http.HttpRequestMessage.Version?displayProperty=fullName>
 
 <!--
-a def
-### Affected APIs
+
+#### Affected APIs
 
 - `P:System.Net.Http.HttpRequestMessage.Version`
 
--- >
-
+-->

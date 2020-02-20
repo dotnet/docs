@@ -1,11 +1,11 @@
 ---
 title: dotnet remove reference command
 description: The dotnet remove reference command provides a convenient option to remove project to project references.
-ms.date: 05/29/2018
+ms.date: 02/14/2020
 ---
 # dotnet remove reference
 
-[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
+**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
 
 ## Name
 
@@ -13,7 +13,9 @@ ms.date: 05/29/2018
 
 ## Synopsis
 
-`dotnet remove [<PROJECT>] reference [-f|--framework] <PROJECT_REFERENCES> [-h|--help]`
+```dotnetcli
+dotnet remove [<PROJECT>] reference [-f|--framework] <PROJECT_REFERENCES> [-h|--help]
+```
 
 ## Description
 
@@ -31,24 +33,30 @@ Project-to-project (P2P) references to remove. You can specify one or multiple p
 
 ## Options
 
-`-h|--help`
+- **`-h|--help`**
 
-Prints out a short help for the command.
+  Prints out a short help for the command.
 
-`-f|--framework <FRAMEWORK>`
+- **`-f|--framework <FRAMEWORK>`**
 
-Removes the reference only when targeting a specific [framework](../../standard/frameworks.md).
+  Removes the reference only when targeting a specific [framework](../../standard/frameworks.md).
 
 ## Examples
 
-Remove a project reference from the specified project:
+- Remove a project reference from the specified project:
 
-`dotnet remove app/app.csproj reference lib/lib.csproj`
+  ```dotnetcli
+  dotnet remove app/app.csproj reference lib/lib.csproj
+  ```
 
-Remove multiple project references from the project in the current directory:
+- Remove multiple project references from the project in the current directory:
 
-`dotnet remove reference lib1/lib1.csproj lib2/lib2.csproj`
+  ```dotnetcli
+  dotnet remove reference lib1/lib1.csproj lib2/lib2.csproj
+  ```
 
-Remove multiple project references using a glob pattern on Unix/Linux:
+- Remove multiple project references using a glob pattern on Unix/Linux:
 
-`dotnet remove app/app.csproj reference **/*.csproj`
+  ```dotnetcli
+  dotnet remove app/app.csproj reference **/*.csproj`
+  ```

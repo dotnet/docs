@@ -1,5 +1,6 @@
 ---
-title: "WPF and Win32 Interoperation"
+title: WPF and Win32 interop
+titleSuffix: ""
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "hosting WPF content in Win32 window [WPF]"

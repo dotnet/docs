@@ -13,7 +13,7 @@ For more information about how to install Docker, see the download page for [Doc
 
 ## Docker basics
 
-There are a few concepts you should be familiar with. The Docker client has a command line interface program you use to manage images and containers. As previously stated, you should take the time to read through the [Docker overview](https://docs.docker.com/engine/docker-overview/) documentation. 
+There are a few concepts you should be familiar with. The Docker client has a CLI that you can use to manage images and containers. As previously stated, you should take the time to read through the [Docker overview](https://docs.docker.com/engine/docker-overview/) documentation. 
 
 ### Images
 

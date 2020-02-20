@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "security [.NET Framework], method access"
   - "method access security"
 ms.assetid: f7c2d6ec-3b18-4e0e-9991-acd97189d818
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Securing Method Access
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  

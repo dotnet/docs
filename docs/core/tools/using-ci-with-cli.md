@@ -1,7 +1,6 @@
 ---
 title: Continuous Integration (CI) with .NET Core SDK and tools
 description: Learn how to use the .NET Core SDK and its tools on the build server with continuous integration.
-author: mairaw
 ms.date: 05/18/2017
 ---
 # Using .NET Core SDK and tools in Continuous Integration (CI)
@@ -27,7 +26,7 @@ The installer script is automated to run at the start of the build to fetch and 
 > [!NOTE]
 > **Azure DevOps Services**
 >
-> When using the installer script, native dependencies aren't installed automatically. You must install the native dependencies if the operating system doesn't have them. For more information, see [.NET Core dependencies and requirements](../install/dependencies.md?tabs=netcore30&pivots=os-linux).
+> When using the installer script, native dependencies aren't installed automatically. You must install the native dependencies if the operating system doesn't have them. For more information, see [.NET Core dependencies and requirements](../install/dependencies.md).
 
 ## CI setup examples
 

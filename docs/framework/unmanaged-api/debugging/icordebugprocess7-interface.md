@@ -20,7 +20,7 @@ topic_type:
   
 |Method|Description|  
 |------------|-----------------|  
-|[SetWriteableMetadataUpdateMode Method](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess7-setwriteablemetadataupdatemode-method.md)|Sets a value that determines how the debugger handles in-memory updates to metadata within the target process.|  
+|[SetWriteableMetadataUpdateMode Method](icordebugprocess7-setwriteablemetadataupdatemode-method.md)|Sets a value that determines how the debugger handles in-memory updates to metadata within the target process.|  
   
 ## Remarks  
   
@@ -35,5 +35,5 @@ topic_type:
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

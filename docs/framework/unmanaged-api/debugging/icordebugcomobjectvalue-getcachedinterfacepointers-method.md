@@ -53,5 +53,5 @@ HRESULT GetCachedInterfacePointers(
   
 ## See also
 
-- [ICorDebugComObjectValue Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugcomobjectvalue-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugComObjectValue Interface](icordebugcomobjectvalue-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

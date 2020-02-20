@@ -11,7 +11,7 @@ Normally when rules are used within a workflow application, the rules are part o
 The External RuleSet Toolkit sample contains a Windows Forms-based tool that you can use to manage and edit RuleSet versions in a database. It also includes an activity and a host service for executing those rules.
 
 > [!NOTE]
-> This sample requires [Microsoft SQL Server](https://go.microsoft.com/fwlink/?LinkId=96181).
+> This sample requires [Microsoft SQL Server](/sql).
 
 Visual Studio provides a RuleSet editor as part of the Windows Workflow Foundation (WF). You can start this editor by double-clicking the `Policy` activity in a workflow; it serializes the defined RuleSet object to the .rules file associated with the workflow (a `Policy` activity runs a RuleSet instance against the workflow). The .rules file is compiled into the assembly as a resource when you build the workflow project.
 

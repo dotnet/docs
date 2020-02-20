@@ -1,5 +1,5 @@
 ---
-title: "How to: Change the Order of Columns in the Windows Forms DataGridView Control Using the Designer"
+title: Change the Order of Columns in DataGridView Control Using the Designer
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "columns [Windows Forms], order of"

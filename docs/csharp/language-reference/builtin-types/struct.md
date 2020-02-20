@@ -1,6 +1,6 @@
 ---
 title: "Structure types - C# reference"
-ms.date: 02/20/2020
+ms.date: 02/21/2020
 f1_keywords: 
   - "struct_CSharpKeyword"
 helpviewer_keywords: 
@@ -37,8 +37,6 @@ You use the [`new`](../operators/new-operator.md) operator to instantiate a stru
 You can also instantiate a structure type without the `new` operator. However, you must initialize all instance fields before the first use of the instance. The following example shows how to do that:
 
 [!code-csharp[without new](~/samples/csharp/language-reference/builtin-types/StructType.cs#WithoutNew)]
-
-If a structure type contains private fields, you must use the `new` operator to instantiate the type.
 
 ## Conversions
 

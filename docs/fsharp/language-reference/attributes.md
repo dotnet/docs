@@ -1,7 +1,7 @@
 ---
 title: Attributes
 description: Learn how F# Attributes enable metadata to be applied to a programming construct.
-ms.date: 05/16/2016
+ms.date: 02/19/2020
 ---
 # Attributes
 
@@ -68,19 +68,19 @@ Although you do not usually need to specify the attribute target explicitly, val
   </tr>
   <tr>
     <td>return</td>
-    <td><pre lang="fsharp"><code>let function1 x : [&lt;return: Obsolete&gt;] int = x + 1</code></pre></td>
+    <td><pre lang="fsharp"><code>let function1 x : [&lt;return: MyCustomAttributeThatWorksOnReturns&gt;] int = x + 1</code></pre></td>
   </tr>
   <tr>
     <td>field</td>
-    <td><pre lang="fsharp"><code>[&lt;field: DefaultValue&gt;] val mutable x: int</code></pre></td>
+    <td><pre lang="fsharp"><code>[&lt;DefaultValue&gt;] val mutable x: int</code></pre></td>
   </tr>
   <tr>
     <td>property</td>
-    <td><pre lang="fsharp"><code>[&lt;property: Obsolete&gt;] this.MyProperty = x</code></pre></td>
+    <td><pre lang="fsharp"><code>[&lt;Obsolete&gt;] this.MyProperty = x</code></pre></td>
   </tr>
   <tr>
     <td>param</td>
-    <td><pre lang="fsharp"><code>member this.MyMethod([&lt;param: Out&gt;] x : ref&lt;int&gt;) = x := 10</code></pre></td>
+    <td><pre lang="fsharp"><code>member this.MyMethod([&lt;Out&gt;] x : ref&lt;int&gt;) = x := 10</code></pre></td>
   </tr>
   <tr>
     <td>type</td>

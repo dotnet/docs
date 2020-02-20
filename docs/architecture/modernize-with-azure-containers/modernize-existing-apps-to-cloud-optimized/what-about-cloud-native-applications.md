@@ -39,7 +39,7 @@ The [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) is a primar
 For detailed guidance on how to design and develop cloud-native applications, read the following free e-books:
 
 * [Architecting Cloud-Native .NET Applications for Azure](../../cloud-native/introduction.md)
-*  [.NET Microservices: Architecture for containerized .NET applications](https://aka.ms/microservicesebook).
+* [.NET Microservices: Architecture for containerized .NET applications](https://aka.ms/microservicesebook).
 
 The most important factor to consider if you migrate a full application to the cloud-native model is that you must rearchitect to a microservices-based architecture. This clearly requires a significant investment in development because of the large refactoring process involved. This option usually is chosen for mission-critical applications that need new levels of scalability and long-term agility. But, you could start moving toward cloud-native by adding microservices for just a few new scenarios, and eventually refactor the application fully as microservices. This is an incremental approach that is the best option for some scenarios.
 

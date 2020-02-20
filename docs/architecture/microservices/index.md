@@ -1,13 +1,13 @@
 ---
 title: .NET Microservices. Architecture for Containerized .NET Applications
 description: .NET Microservices Architecture for Containerized .NET Applications | Microservices are modular and independently deployable services. Docker containers (for Linux and Windows) simplify deployment and testing by bundling a service and its dependencies into a single unit, which is then run in an isolated environment.
-ms.date: 01/07/2019
+ms.date: 01/30/2020
 ---
 # .NET Microservices: Architecture for Containerized .NET Applications
 
 ![Book cover](./media/cover-small.png)
 
-**EDITION v2.2** - Updated to ASP.NET Core 2.2
+**EDITION v3.1** - Updated to ASP.NET Core 3.1
 
 This guide is an introduction to developing microservices-based applications and managing them using containers. It discusses architectural design and implementation approaches using .NET Core and Docker containers.
 
@@ -41,7 +41,7 @@ After you have studied this guide, your next step would be to learn about produc
 
 ## Version
 
-This guide has been revised to cover **.NET Core 2.2** version plus many additional updates related to the same “wave” of technologies (that is. Azure and additional 3rd party technologies) coinciding in time with .NET Core 2.2. That’s why the book version has also been updated to version **2.2**.
+This guide has been revised to cover **.NET Core 3.1** version along with many additional updates related to the same “wave” of technologies (that is, Azure and additional third-party technologies) coinciding in time with the .NET Core 3.1 release. That’s why the book version has also been updated to version **3.1**.
 
 ## What this guide does not cover
 
@@ -140,7 +140,7 @@ Participants and reviewers:
 >
 > **Charles Lowell**, Software Engineer, VS CAT team, Microsoft
 >
-> **Miguel Veloso**, Sr. Consultant at Turing Challenge
+> **Miguel Veloso**, Software Development Engineer at Plain Concepts
 
 ## Copyright
 
@@ -156,7 +156,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright © 2019 by Microsoft Corporation
+Copyright © 2020 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 

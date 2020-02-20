@@ -1,7 +1,7 @@
 ---
 title: Implementing value objects
 description: .NET Microservices Architecture for Containerized .NET Applications | Get into the details and options to implement value objects using new Entity Framework features.
-ms.date: 10/08/2018
+ms.date: 01/30/2020
 ---
 
 # Implement value objects
@@ -126,13 +126,13 @@ public class Address : ValueObject
 
 You can see how this value object implementation of Address has no identity and therefore, no ID field, neither at the Address class not even at the ValueObject class.
 
-Having no ID field in a class to be used by Entity Framework was not possible until EF Core 2.0, which greatly helps to implement better value objects with no ID. That is precisely the explanation of the next section.
+Having no ID field in a class to be used by Entity Framework (EF) was not possible until EF Core 2.0, which greatly helps to implement better value objects with no ID. That is precisely the explanation of the next section.
 
-It could be argued that value objects, being immutable, should be read-only (i.e. get-only properties), and that’s indeed true. However, value objects are usually serialized and deserialized to go through message queues, and being read-only stops the deserializer from assigning values, so we just leave them as private set which is read-only enough to be practical.
+It could be argued that value objects, being immutable, should be read-only (that is, have get-only properties), and that’s indeed true. However, value objects are usually serialized and deserialized to go through message queues, and being read-only stops the deserializer from assigning values, so we just leave them as private set which is read-only enough to be practical.
 
-## How to persist value objects in the database with EF Core 2.0
+## How to persist value objects in the database with EF Core 2.0 and later
 
-You just saw how to define a value object in your domain model. But, how can you actually persist it into the database through Entity Framework (EF) Core which usually targets entities with identity?
+You just saw how to define a value object in your domain model. But how can you actually persist it into the database using Entity Framework Core since it usually targets entities with identity?
 
 ### Background and older approaches using EF Core 1.1
 
@@ -155,11 +155,11 @@ void ConfigureAddress(EntityTypeBuilder<Address> addressConfiguration)
 
 However, the persistence of that value object into the database was performed like a regular entity in a different table.
 
-With EF Core 2.0, there are new and better ways to persist value objects.
+With EF Core 2.0 and later, there are new and better ways to persist value objects.
 
-## Persist value objects as owned entity types in EF Core 2.0
+## Persist value objects as owned entity types in EF Core 2.0 and later
 
-Even with some gaps between the canonical value object pattern in DDD and the owned entity type in EF Core, it's currently the best way to persist value objects with EF Core 2.0. You can see limitations at the end of this section.
+Even with some gaps between the canonical value object pattern in DDD and the owned entity type in EF Core, it's currently the best way to persist value objects with EF Core 2.0 and later. You can see limitations at the end of this section.
 
 The owned entity type feature was added to EF Core since version 2.0.
 
@@ -173,7 +173,7 @@ The identity of instances of owned types is not completely their own. It consist
 
 - The navigation property pointing to them
 
-- In the case of collections of owned types, an independent component (not yet supported in EF Core 2.0, coming up on 2.2).
+- In the case of collections of owned types, an independent component (supported in EF Core 2.2 and later).
 
 For example, in the Ordering domain model at eShopOnContainers, as part of the Order entity, the Address value object is implemented as an owned entity type within the owner entity, which is the Order entity. Address is a type with no identity property defined in the domain model. It is used as a property of the Order type to specify the shipping address for a particular order.
 
@@ -233,7 +233,7 @@ orderConfiguration.OwnsOne(p => p.Address)
                             .Property(p=>p.City).HasColumnName("ShippingCity");
 ```
 
-It is possible to chain the `OwnsOne` method in a fluent mapping. In the following hypothetical example, `OrderDetails` owns `BillingAddress` and `ShippingAddress`, which are both `Address` types. Then `OrderDetails` is owned by the `Order` type.
+It's possible to chain the `OwnsOne` method in a fluent mapping. In the following hypothetical example, `OrderDetails` owns `BillingAddress` and `ShippingAddress`, which are both `Address` types. Then `OrderDetails` is owned by the `Order` type.
 
 ```csharp
 orderConfiguration.OwnsOne(p => p.OrderDetails, cb =>
@@ -270,7 +270,7 @@ public class Address
 
 - The identity (key) of an owned type instance in our stack is a composite of the identity of the owner type and the definition of the owned type.
 
-#### Owned entities capabilities:
+#### Owned entities capabilities
 
 - Owned types can reference other entities, either owned (nested owned types) or non-owned (regular reference navigation properties to other entities).
 
@@ -278,27 +278,27 @@ public class Address
 
 - Table splitting is setup by convention, but you can opt out by mapping the owned type to a different table using ToTable.
 
-- Eager loading is performed automatically on owned types, i.e. no need to call Include() on the query.
+- Eager loading is performed automatically on owned types, that is, there's no need to call `.Include()` on the query.
 
-- Can be configured with attribute \[Owned\], as of EF Core 2.1
+- Can be configured with attribute `[Owned]`, using EF Core 2.1 and later.
 
-#### Owned entities limitations:
+- Can handle collections of owned types (using version 2.2 and later).
 
-- You cannot create a DbSet\<T\> of an owned type (by design).
+#### Owned entities limitations
 
-- You cannot call ModelBuilder.Entity\<T\>() on owned types (currently by design).
+- You can't create a `DbSet<T>` of an owned type (by design).
 
-- No collections of owned types yet (as of EF Core 2.1, but they will be supported in 2.2).
+- You can't call `ModelBuilder.Entity<T>()` on owned types (currently by design).
 
-- No support for optional (that is, nullable) owned types that are mapped with the owner in the same table (i.e. using table splitting). This is because mapping is done for each property, we don't have a separate sentinel for the null complex value a as whole.
+- No support for optional (that is, nullable) owned types that are mapped with the owner in the same table (that is, using table splitting). This is because mapping is done for each property, we don't have a separate sentinel for the null complex value a as whole.
 
 - No inheritance mapping support for owned types, but you should be able to map two leaf types of the same inheritance hierarchies as different owned types. EF Core will not reason about the fact that they are part of the same hierarchy.
 
 #### Main differences with EF6's complex types
 
-- Table splitting is optional, i.e. they can optionally be mapped to a separate table and still be owned types.
+- Table splitting is optional, that is, they can optionally be mapped to a separate table and still be owned types.
 
-- They can reference other entities (i.e. they can act as the dependent side on relationships to other non-owned types).
+- They can reference other entities (that is, they can act as the dependent side on relationships to other non-owned types).
 
 ## Additional resources
 
@@ -311,8 +311,11 @@ public class Address
 - **Vaughn Vernon. Implementing Domain-Driven Design.** (Book; includes a discussion of value objects) \
   <https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577/>
 
+- **Owned Entity Types** \
+  <https://docs.microsoft.com/ef/core/modeling/owned-entities>
+
 - **Shadow Properties** \
-  [https://docs.microsoft.com/ef/core/modeling/shadow-properties](/ef/core/modeling/shadow-properties)
+  <https://docs.microsoft.com/ef/core/modeling/shadow-properties>
 
 - **Complex types and/or value objects**. Discussion in the EF Core GitHub repo (Issues tab) \
   <https://github.com/dotnet/efcore/issues/246>

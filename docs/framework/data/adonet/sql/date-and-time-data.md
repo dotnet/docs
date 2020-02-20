@@ -13,9 +13,9 @@ SQL Server 2008 introduces new data types for handling date and time information
   
  Complete documentation for SQL Server data types is available in SQL Server Books Online. The following table lists the version-specific entry-level topics for date and time data.  
   
- **SQL Server Books Online**  
+ **SQL Server documentation**  
   
-1. [Using Date and Time Data](https://go.microsoft.com/fwlink/?LinkID=98361)  
+1. [Using Date and Time Data](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms180878(v=sql.100))  
   
 ## Date/Time Data Types Introduced in SQL Server 2008  
  The following table describes the new date and time data types.  
@@ -35,12 +35,12 @@ SQL Server 2008 introduces new data types for handling date and time information
   
  The Transact-SQL SET LANGUAGE statement implicitly sets the DATEFORMAT that determines the order of the date parts. You can use the SET DATEFORMAT Transact-SQL statement on a connection to disambiguate date values by ordering the date parts in MDY, DMY, YMD, YDM, MYD, or DYM order.  
   
- If you do not specify any DATEFORMAT for the connection, SQL Server uses the default language associated with the connection. For example, a date string of '01/02/03' would be interpreted as MDY (January 2, 2003) on a server with a language setting of United States English, and as DMY (February 1, 2003) on a server with a language setting of British English. The year is determined by using SQL Server's cutoff year rule, which defines the cutoff date for assigning the century value. For more information, see [two digit year cutoff Option](https://go.microsoft.com/fwlink/?LinkId=120473) in SQL Server Books Online.  
+ If you do not specify any DATEFORMAT for the connection, SQL Server uses the default language associated with the connection. For example, a date string of '01/02/03' would be interpreted as MDY (January 2, 2003) on a server with a language setting of United States English, and as DMY (February 1, 2003) on a server with a language setting of British English. The year is determined by using SQL Server's cutoff year rule, which defines the cutoff date for assigning the century value. For more information, see [two digit year cutoff Option](/sql/database-engine/configure-windows/configure-the-two-digit-year-cutoff-server-configuration-option).  
   
 > [!NOTE]
 > The YDM date format is not supported when converting from a string format to `date`, `time`, `datetime2`, or `datetimeoffset`.  
   
- For more information about how SQL Server interprets date and time data, see [Using Date and Time Data](https://go.microsoft.com/fwlink/?LinkID=98361) in SQL Server 2008 Books Online.  
+ For more information about how SQL Server interprets date and time data, see [Using Date and Time Data](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms180878(v=sql.100)).  
   
 ## Date/Time Data Types and Parameters  
  The following enumerations have been added to <xref:System.Data.SqlDbType> to support the new date and time data types.  
@@ -224,14 +224,14 @@ command.Parameters.AddWithValue( _
   
  Time values that are less than zero or greater than or equal to 24 hours will throw an <xref:System.ArgumentException>.  
   
-## Resources in SQL Server 2008 Books Online  
- For more information about working with date and time values in SQL Server 2008, see the following resources in SQL Server 2008 Books Online.  
+## Resources in SQL Server Books Online  
+ For more information about working with date and time values in SQL Server, see the following resources in SQL Server Books Online.  
   
 |Topic|Description|  
 |-----------|-----------------|  
-|[Date and Time Data Types and Functions (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=98360)|Provides an overview of all Transact-SQL date and time data types and functions.|  
-|[Using Date and Time Data](https://go.microsoft.com/fwlink/?LinkId=98361)|Provides information about the date and time data types and functions, and examples of using them.|  
-|[Data Types (Transact-SQL)](https://go.microsoft.com/fwlink/?LinkId=98362)|Describes system data types in SQL Server 2008.|  
+|[Date and Time Data Types and Functions (Transact-SQL)](/sql/t-sql/functions/date-and-time-data-types-and-functions-transact-sql)|Provides an overview of all Transact-SQL date and time data types and functions.|  
+|[Using Date and Time Data](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/ms180878(v=sql.100))|Provides information about the date and time data types and functions, and examples of using them.|  
+|[Data Types (Transact-SQL)](/sql/t-sql/data-types/data-types-transact-sql)|Describes system data types in SQL Server.|  
   
 ## See also
 

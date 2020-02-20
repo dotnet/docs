@@ -9,9 +9,9 @@ There are four main functional extensions to ADO.NET, found in the <xref:Microso
   
  For more detailed information, see the version of SQL Server Books Online for the version of SQL Server you are using.  
   
- **SQL Server Books Online**  
+ **SQL Server documentation**  
   
-1. [SQL Server In-Process Specific Extensions to ADO.NET](https://go.microsoft.com/fwlink/?LinkId=115403)  
+1. [SQL Server In-Process Specific Extensions to ADO.NET](/sql/relational-databases/clr-integration-data-access-in-process-ado-net/sql-server-in-process-specific-extensions-to-ado-net)  
   
 ## See also
 

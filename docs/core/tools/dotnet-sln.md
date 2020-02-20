@@ -9,7 +9,7 @@ ms.date: 02/14/2020
 
 ## Name
 
-`dotnet sln` - Options for listing or modifying the projects in a .NET Core solution file.
+`dotnet sln` - Lists or modifies the projects in a .NET Core solution file.
 
 ## Synopsis
 

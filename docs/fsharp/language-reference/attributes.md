@@ -85,13 +85,13 @@ Although you do not usually need to specify the attribute target explicitly, val
   <tr>
     <td>type</td>
     <td>
-        <pre><code class="lang-fsharp"><code>
-[&lt;type: StructLayout(Sequential)&gt;]
+        pre><code class="lang-fsharp">
+[&lt;type: StructLayout(LayoutKind.Sequential)&gt;]
 type MyStruct =
-struct
-x : byte
-y : int
-end</code></pre>
+  struct
+    val x : byte
+    val y : int
+  end</code></pre>
     </td>
   </tr>
 </table>

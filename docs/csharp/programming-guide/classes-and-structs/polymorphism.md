@@ -47,7 +47,7 @@ Virtual methods and properties enable derived classes to extend a base class wit
 
 ### Hide base class members with new members
 
-If you want your derived member to have the same name as a member in a base class, but you don't want it to participate in virtual invocation, you can use the [new](../../language-reference/keywords/new-modifier.md) keyword. The `new` keyword is put before the return type of a class member that is being replaced. The following code provides an example:
+If you want your derived class to have a member with the same name as a member in a base class, you can use the [new](../../language-reference/keywords/new-modifier.md) keyword to hide the base class member. The `new` keyword is put before the return type of a class member that is being replaced. The following code provides an example:
 
 [!code-csharp[New method overview example](~/samples/snippets/csharp/objectoriented/Inheritance.cs#NewMethods)]
 

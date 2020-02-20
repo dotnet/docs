@@ -1,7 +1,7 @@
 ---
 title: Casting and Conversions
 description: Learn how the F# programming language provides conversion operators for arithmetic conversions between various primitive types.
-ms.date: 05/16/2016
+ms.date: 02/20/2020
 ---
 # Casting and Conversions (F#)
 
@@ -76,7 +76,7 @@ You can also use the `upcast` operator to perform such a conversion. The followi
 upcast expression
 ```
 
-When you use the upcast operator, the compiler attempts to infer the type you are converting to from the context. If the compiler is unable to determine the target type, the compiler reports an error.
+When you use the upcast operator, the compiler attempts to infer the type you are converting to from the context. If the compiler is unable to determine the target type, the compiler reports an error. A type annotation may be required.
 
 ### Downcasting
 
@@ -88,7 +88,7 @@ You can also use the `downcast` operator to perform a dynamic type conversion. T
 downcast expression
 ```
 
-As for the `upcast` operator, if the compiler cannot infer a specific target type from the context, it reports an error.
+As for the `upcast` operator, if the compiler cannot infer a specific target type from the context, it reports an error. A type annotation may be required.
 
 The following code illustrates the use of the `:>` and `:?>` operators. The code illustrates that the `:?>` operator is best used when you know that conversion will succeed, because it throws `InvalidCastException` if the conversion fails. If you do not know that a conversion will succeed, a type test that uses a `match` expression is better because it avoids the overhead of generating an exception.
 
@@ -103,12 +103,10 @@ let base1 = d1 :> Base1
 with
 
 ```fsharp
-let base1 = upcast d1
+let base1: Base1 = upcast d1
 ```
 
-In the previous code, the argument type and return types are `Derived1` and `Base1`, respectively.
-
-For more information about type tests, see [Match Expressions](match-Expressions.md).
+Note that a type annotation is required, since `upcast` by itself could not determine the base class.
 
 ## See also
 

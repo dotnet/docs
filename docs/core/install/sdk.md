@@ -113,6 +113,25 @@ When installing or modifying Visual Studio, select one or more of the following 
 
 [![Windows Visual Studio 2019 with .NET Core workload](media/install-sdk/windows-install-visual-studio-2019.png)](media/install-sdk/windows-install-visual-studio-2019.png#lightbox)
 
+## Download and manually install
+
+To extract the runtime and make the .NET Core CLI commands available at the terminal, first [download](#all-net-core-downloads) a .NET Core binary release. Then, create a directory to install to, for example `%USERPROFILE%\dotnet`. Finally, extract the downloaded zip file into that directory.
+
+By default, .NET Core CLI commands and apps will not use .NET Core installed in this way. You have to explicitly choose to use it. To do so, change the environment variables with which an application is started:
+
+```console
+set DOTNET_ROOT=%USERPROFILE%\dotnet
+set PATH=%USERPROFILE%\dotnet;%PATH%
+```
+
+This approach lets you install multiple versions into separate locations, then explicitly choose which install location an application should use by running the application with environment variables pointing at that location.
+
+Even when these environment variables are set, .NET Core still considers the default global install location when selecting the best framework for running the application. The default is typically `C:\Program Files\dotnet`, which the installers use. You can instruct the runtime to only use the custom install location by setting this environment variable as well:
+
+```console
+set DOTNET_MULTILEVEL_LOOKUP=0
+```
+
 ::: zone-end
 
 ::: zone pivot="os-macos"

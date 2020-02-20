@@ -185,7 +185,7 @@ namespace CustomTypes
 ```
 
 > [!IMPORTANT]
-> Whenever you use custom tool message types like this, you *must* document them with comments in `.proto`. Other developers can then implement conversion to and from the equivalent type in their own language or framework.
+> Whenever you use custom message types like this, you *must* document them with comments in `.proto`. Other developers can then implement conversion to and from the equivalent type in their own language or framework.
 
 >[!div class="step-by-step"]
 >[Previous](protobuf-messages.md)

@@ -56,10 +56,10 @@ foreach (var group in query)
 ## See also
 
 - <xref:System.Linq>
-- [Standard Query Operators Overview (C#)](../../../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
-- [group clause](../../../../csharp/language-reference/keywords/group-clause.md)
-- [How to: Create a Nested Group](../../../../csharp/programming-guide/linq-query-expressions/how-to-create-a-nested-group.md)
-- [How to: Group Files by Extension (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-group-files-by-extension-linq.md)
-- [How to: Group Query Results](../../../../csharp/programming-guide/linq-query-expressions/how-to-group-query-results.md)
-- [How to: Perform a Subquery on a Grouping Operation](../../../../csharp/programming-guide/linq-query-expressions/how-to-perform-a-subquery-on-a-grouping-operation.md)
-- [How to: Split a File Into Many Files by Using Groups (LINQ) (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-split-a-file-into-many-files-by-using-groups-linq.md)
+- [Standard Query Operators Overview (C#)](./standard-query-operators-overview.md)
+- [group clause](../../../language-reference/keywords/group-clause.md)
+- [Create a nested group](../../../linq/create-a-nested-group.md)
+- [How to group files by extension (LINQ) (C#)](./how-to-group-files-by-extension-linq.md)
+- [Group query results](../../../linq/group-query-results.md)
+- [Perform a subquery on a grouping operation](../../../linq/perform-a-subquery-on-a-grouping-operation.md)
+- [How to split a file into many files by using groups (LINQ) (C#)](./how-to-split-a-file-into-many-files-by-using-groups-linq.md)

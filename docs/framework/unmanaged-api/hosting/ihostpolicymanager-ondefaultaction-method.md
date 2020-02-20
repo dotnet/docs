@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 071e73bd-4795-470f-9373-cfaef553b7f2
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostPolicyManager::OnDefaultAction Method
 Notifies the host that the common language runtime (CLR) is about to take the default action that was set by a call to the [ICLRPolicyManager::SetDefaultAction](../../../../docs/framework/unmanaged-api/hosting/iclrpolicymanager-setdefaultaction-method.md) method in response to a thread abort or <xref:System.AppDomain> unload.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OnDefaultAction (  
     [in] EClrOperation  operation,   
     [in] EPolicyAction  action  

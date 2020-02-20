@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 67fefd89-28d6-4588-84ea-dc7a5870e014
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # COINITICOR Enumeration
 Specifies constants used by [CoInitializeCor](../../../../docs/framework/unmanaged-api/hosting/coinitializecor-function.md) when it initializes the common language runtime.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum tagCOINITCOR  
 {  
     COINITCOR = 0x0  

@@ -1,5 +1,5 @@
 ---
-title: "Declarations and Constants Summary (Visual Basic)"
+title: "Declarations and Constants Summary"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "constants [Visual Basic]"

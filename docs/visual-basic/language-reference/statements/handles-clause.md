@@ -1,5 +1,5 @@
 ---
-title: "Handles Clause (Visual Basic)"
+title: "Handles Clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "Handles"
@@ -13,7 +13,7 @@ Declares that a procedure handles a specified event.
   
 ## Syntax  
   
-```  
+```vb  
 proceduredeclaration Handles eventlist  
 ```  
   

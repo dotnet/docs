@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: eb3187d7-74cf-44b1-aeeb-7a8d2b60e3b7
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::EnumUnresolvedMethods Method
 Enumerates MemberDef tokens representing the unresolved methods in the current metadata scope.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumUnresolvedMethods (  
    [in, out] HCORENUM    *phEnum,  
    [out]     mdToken     rMethods[],  

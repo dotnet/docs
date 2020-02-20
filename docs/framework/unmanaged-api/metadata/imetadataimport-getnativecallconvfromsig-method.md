@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 50e04026-4d4a-47d9-96c1-f4677d6d938b
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetNativeCallConvFromSig Method
 Gets the native calling convention for the method that is represented by the specified signature pointer.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNativeCallConvFromSig (  
    [in]  void const  *pvSig,  
    [in]  ULONG       cbSig,  

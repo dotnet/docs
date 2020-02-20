@@ -11,7 +11,7 @@ ms.assetid: 9787cdb3-88f1-4198-972f-eefd9524ce39
 ---
 # ContextMenuStrip Control Overview
 > [!NOTE]
->  The <xref:System.Windows.Forms.ContextMenuStrip> control replaces and adds functionality to the <xref:System.Windows.Forms.ContextMenu> control; however, the <xref:System.Windows.Forms.ContextMenu> control is retained for backward compatibility and future use if you choose.  
+> The <xref:System.Windows.Forms.ContextMenuStrip> control replaces and adds functionality to the <xref:System.Windows.Forms.ContextMenu> control; however, the <xref:System.Windows.Forms.ContextMenu> control is retained for backward compatibility and future use if you choose.  
   
  Shortcut menus, also called context menus, appear at the mouse position when the user clicks the right mouse button. Shortcut *menus* provide options for the client area or the control at the mouse pointer location.  
   

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 8eaee971-40bf-45e2-a3d8-6e57674213b6
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::SetPermissionSetProps Method
 Sets or updates features of the metadata signature of a permission set defined by a prior call to [IMetaDataEmit::DefinePermissionSet](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-definepermissionset-method.md).  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetPermissionSetProps (   
     [in]  mdToken         tk,   
     [in]  DWORD           dwAction,   

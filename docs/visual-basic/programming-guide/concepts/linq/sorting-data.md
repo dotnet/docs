@@ -1,141 +1,146 @@
 ---
-title: "Sorting Data (Visual Basic)"
+title: "Sorting Data"
 ms.date: 07/20/2015
 ms.assetid: 6f81065c-0c89-4bf3-a6d8-442273f8810e
 ---
 # Sorting Data (Visual Basic)
-A sorting operation orders the elements of a sequence based on one or more attributes. The first sort criterion performs a primary sort on the elements. By specifying a second sort criterion, you can sort the elements within each primary sort group.  
-  
- The following illustration shows the results of an alphabetical sort operation on a sequence of characters.  
-  
- ![Graphic that shows an alphabetical sort operation.](./media/sorting-data/alphabetical-sort-operation.png)  
-  
- The standard query operator methods that sort data are listed in the following section.  
-  
-## Methods  
-  
-|Method Name|Description|Visual Basic Query Expression Syntax|More Information|  
-|-----------------|-----------------|------------------------------------------|----------------------|  
-|OrderBy|Sorts values in ascending order.|`Order By`|<xref:System.Linq.Enumerable.OrderBy%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.OrderBy%2A?displayProperty=nameWithType>|  
-|OrderByDescending|Sorts values in descending order.|`Order By … Descending`|<xref:System.Linq.Enumerable.OrderByDescending%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.OrderByDescending%2A?displayProperty=nameWithType>|  
-|ThenBy|Performs a secondary sort in ascending order.|`Order By …, …`|<xref:System.Linq.Enumerable.ThenBy%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.ThenBy%2A?displayProperty=nameWithType>|  
-|ThenByDescending|Performs a secondary sort in descending order.|`Order By …, … Descending`|<xref:System.Linq.Enumerable.ThenByDescending%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.ThenByDescending%2A?displayProperty=nameWithType>|  
-|Reverse|Reverses the order of the elements in a collection.|Not applicable.|<xref:System.Linq.Enumerable.Reverse%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Reverse%2A?displayProperty=nameWithType>|  
-  
-## Query Expression Syntax Examples  
-  
-### Primary Sort Examples  
-  
-#### Primary Ascending Sort  
- The following example demonstrates how to use the `Order By` clause in a LINQ query to sort the strings in an array by string length, in ascending order.  
-  
-```vb  
-Dim words = {"the", "quick", "brown", "fox", "jumps"}  
-  
-Dim sortQuery = From word In words   
-                Order By word.Length   
-                Select word  
-  
-Dim sb As New System.Text.StringBuilder()  
-For Each str As String In sortQuery  
-    sb.AppendLine(str)  
-Next  
-  
-' Display the results.  
-MsgBox(sb.ToString())  
-  
-' This code produces the following output:  
-  
-' the  
-' fox  
-' quick  
-' brown  
-' jumps  
-```  
-  
-#### Primary Descending Sort  
- The next example demonstrates how to use the `Order By Descending` clause in a LINQ query to sort the strings by their first letter, in descending order.  
-  
-```vb  
-Dim words = {"the", "quick", "brown", "fox", "jumps"}  
-  
-Dim sortQuery = From word In words   
-                Order By word.Substring(0, 1) Descending   
-                Select word  
-  
-Dim sb As New System.Text.StringBuilder()  
-For Each str As String In sortQuery  
-    sb.AppendLine(str)  
-Next  
-  
-' Display the results.  
-MsgBox(sb.ToString())  
-  
-' This code produces the following output:  
-  
-' the  
-' quick  
-' jumps  
-' fox  
-' brown  
-```  
-  
-### Secondary Sort Examples  
-  
-#### Secondary Ascending Sort  
- The following example demonstrates how to use the `Order By` clause in a LINQ query to perform a primary and secondary sort of the strings in an array. The strings are sorted primarily by length and secondarily by the first letter of the string, both in ascending order.  
-  
-```vb  
-Dim words = {"the", "quick", "brown", "fox", "jumps"}  
-  
-Dim sortQuery = From word In words   
-                Order By word.Length, word.Substring(0, 1)   
-                Select word  
-  
-Dim sb As New System.Text.StringBuilder()  
-For Each str As String In sortQuery  
-    sb.AppendLine(str)  
-Next  
-  
-' Display the results.  
-MsgBox(sb.ToString())  
-  
-' This code produces the following output:  
-  
-' fox  
-' the  
-' brown  
-' jumps  
-' quick  
-```  
-  
-#### Secondary Descending Sort  
- The next example demonstrates how to use the `Order By Descending` clause in a LINQ query to perform a primary sort, in ascending order, and a secondary sort, in descending order. The strings are sorted primarily by length and secondarily by the first letter of the string.  
-  
-```vb  
-Dim words = {"the", "quick", "brown", "fox", "jumps"}  
-  
-Dim sortQuery = From word In words   
-                Order By word.Length, word.Substring(0, 1) Descending   
-                Select word  
-  
-Dim sb As New System.Text.StringBuilder()  
-For Each str As String In sortQuery  
-    sb.AppendLine(str)  
-Next  
-  
-' Display the results.  
-MsgBox(sb.ToString())  
-  
-' This code produces the following output:  
-  
-' fox  
-' the  
-' quick  
-' jumps  
-' brown  
-```  
-  
+
+A sorting operation orders the elements of a sequence based on one or more attributes. The first sort criterion performs a primary sort on the elements. By specifying a second sort criterion, you can sort the elements within each primary sort group.
+
+The following illustration shows the results of an alphabetical sort operation on a sequence of characters.
+
+![Graphic that shows an alphabetical sort operation.](./media/sorting-data/alphabetical-sort-operation.png)
+
+The standard query operator methods that sort data are listed in the following section.
+
+## Methods
+
+|Method Name|Description|Visual Basic Query Expression Syntax|More Information|
+|-----------------|-----------------|------------------------------------------|----------------------|
+|OrderBy|Sorts values in ascending order.|`Order By`|<xref:System.Linq.Enumerable.OrderBy%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.OrderBy%2A?displayProperty=nameWithType>|
+|OrderByDescending|Sorts values in descending order.|`Order By … Descending`|<xref:System.Linq.Enumerable.OrderByDescending%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.OrderByDescending%2A?displayProperty=nameWithType>|
+|ThenBy|Performs a secondary sort in ascending order.|`Order By …, …`|<xref:System.Linq.Enumerable.ThenBy%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.ThenBy%2A?displayProperty=nameWithType>|
+|ThenByDescending|Performs a secondary sort in descending order.|`Order By …, … Descending`|<xref:System.Linq.Enumerable.ThenByDescending%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.ThenByDescending%2A?displayProperty=nameWithType>|
+|Reverse|Reverses the order of the elements in a collection.|Not applicable.|<xref:System.Linq.Enumerable.Reverse%2A?displayProperty=nameWithType><br /><br /> <xref:System.Linq.Queryable.Reverse%2A?displayProperty=nameWithType>|
+
+## Query Expression Syntax Examples
+
+### Primary Sort Examples
+
+#### Primary Ascending Sort
+
+The following example demonstrates how to use the `Order By` clause in a LINQ query to sort the strings in an array by string length, in ascending order.
+
+```vb
+Dim words = {"the", "quick", "brown", "fox", "jumps"}
+
+Dim sortQuery = From word In words
+                Order By word.Length
+                Select word
+
+Dim sb As New System.Text.StringBuilder()
+For Each str As String In sortQuery
+    sb.AppendLine(str)
+Next
+
+' Display the results.
+MsgBox(sb.ToString())
+
+' This code produces the following output:
+
+' the
+' fox
+' quick
+' brown
+' jumps
+```
+
+#### Primary Descending Sort
+
+The next example demonstrates how to use the `Order By Descending` clause in a LINQ query to sort the strings by their first letter, in descending order.
+
+```vb
+Dim words = {"the", "quick", "brown", "fox", "jumps"}
+
+Dim sortQuery = From word In words
+                Order By word.Substring(0, 1) Descending
+                Select word
+
+Dim sb As New System.Text.StringBuilder()
+For Each str As String In sortQuery
+    sb.AppendLine(str)
+Next
+
+' Display the results.
+MsgBox(sb.ToString())
+
+' This code produces the following output:
+
+' the
+' quick
+' jumps
+' fox
+' brown
+```
+
+### Secondary Sort Examples
+
+#### Secondary Ascending Sort
+
+The following example demonstrates how to use the `Order By` clause in a LINQ query to perform a primary and secondary sort of the strings in an array. The strings are sorted primarily by length and secondarily by the first letter of the string, both in ascending order.
+
+```vb
+Dim words = {"the", "quick", "brown", "fox", "jumps"}
+
+Dim sortQuery = From word In words
+                Order By word.Length, word.Substring(0, 1)
+                Select word
+
+Dim sb As New System.Text.StringBuilder()
+For Each str As String In sortQuery
+    sb.AppendLine(str)
+Next
+
+' Display the results.
+MsgBox(sb.ToString())
+
+' This code produces the following output:
+
+' fox
+' the
+' brown
+' jumps
+' quick
+```
+
+#### Secondary Descending Sort
+
+The next example demonstrates how to use the `Order By Descending` clause in a LINQ query to perform a primary sort, in ascending order, and a secondary sort, in descending order. The strings are sorted primarily by length and secondarily by the first letter of the string.
+
+```vb
+Dim words = {"the", "quick", "brown", "fox", "jumps"}
+
+Dim sortQuery = From word In words
+                Order By word.Length, word.Substring(0, 1) Descending
+                Select word
+
+Dim sb As New System.Text.StringBuilder()
+For Each str As String In sortQuery
+    sb.AppendLine(str)
+Next
+
+' Display the results.
+MsgBox(sb.ToString())
+
+' This code produces the following output:
+
+' fox
+' the
+' quick
+' jumps
+' brown
+```
+
 ## See also
 
 - <xref:System.Linq>

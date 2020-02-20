@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: fea3ab88-ce41-4c5a-847b-bb78cd748da6
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostTaskManager::BeginThreadAffinity Method
 Notifies the host that managed code is entering a period in which the current task must not be moved to another operating system thread.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT BeginThreadAffinity ();  
 ```  
   

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: bab363d1-b859-47a4-9884-5661c611cce7
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostIoCompletionManager::GetAvailableThreads Method
 Gets the number of I/O completion threads, of the total number of threads managed by the host, that are not currently servicing requests.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAvailableThreads (  
     [out] DWORD *pdwAvailableIoCompletionThreads  
 );  

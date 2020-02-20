@@ -24,7 +24,7 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[-baseaddress](baseaddress-compiler-option.md)|Specifies the base address for the library to be built.|
 |[-bugreport](bugreport-compiler-option.md)|Creates a 'Bug Report' file. This file will be sent together with any crash information if it is used with -errorreport:prompt or -errorreport:send.|
 |[-checked](checked-compiler-option.md)|Causes the compiler to generate overflow checks.|
-|-checksumalgorithm:\<alg>|Specifies the algorithm for calculating the source file checksum stored in PDB.  Supported values are: SHA1 (default) or SHA256.<br>Due to collision problems with SHA1, Microsoft recommends SHA256. |
+|-checksumalgorithm:\<alg>|Specifies the algorithm for calculating the source file checksum stored in PDB.  Supported values are: SHA256 (default) or SHA1.<br>Due to collision problems with SHA1, Microsoft recommends SHA256. |
 |[-codepage](codepage-compiler-option.md)|Specifies the codepage to use when opening source files.|
 |[-debug](debug-compiler-option.md)|Emits debugging information.|
 |[-define](define-compiler-option.md)|Defines conditional compilation symbols.|
@@ -72,7 +72,7 @@ The following compiler options are sorted alphabetically. For a categorical list
 |-ruleset:\<file>|Specify a ruleset file that disables specific diagnostics.|
 |[-subsystemversion](subsystemversion-compiler-option.md)|Specifies the minimum version of the subsystem that the executable file can use.|
 |[-target](target-compiler-option.md)|Specifies the format of the output file by using one of four options: [-target:appcontainerexe](target-appcontainerexe-compiler-option.md), [-target:exe](target-exe-compiler-option.md), [-target:library](target-library-compiler-option.md), [-target:module](target-module-compiler-option.md), [-target:winexe](target-winexe-compiler-option.md),  [-target:winmdobj](target-winmdobj-compiler-option.md).|
-|[-unsafe](unsafe-compiler-option.md)|Allows [unsafe](../../../csharp/language-reference/keywords/unsafe.md) code.|
+|[-unsafe](unsafe-compiler-option.md)|Allows [unsafe](../keywords/unsafe.md) code.|
 |[-utf8output](utf8output-compiler-option.md)|Outputs compiler messages in UTF-8 encoding.|
 |-version|Display the compiler version number and exit.|
 |[-warn](warn-compiler-option.md)|Sets the warning level (0-4).|
@@ -85,5 +85,5 @@ The following compiler options are sorted alphabetically. For a categorical list
 
 - [C# Compiler Options](index.md)
 - [C# Compiler Options Listed by Category](listed-by-category.md)
-- [How to: Set Environment Variables for the Visual Studio Command Line](how-to-set-environment-variables-for-the-visual-studio-command-line.md)
+- [How to set environment variables for the Visual Studio Command Line](how-to-set-environment-variables-for-the-visual-studio-command-line.md)
 - [\<compiler> Element](../../../framework/configure-apps/file-schema/compiler/compiler-element.md)

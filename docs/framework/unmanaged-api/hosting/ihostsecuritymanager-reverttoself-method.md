@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 189f28f8-f9a1-4192-aedc-91084e4f8b99
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostSecurityManager::RevertToSelf Method
 Terminates impersonation of the current user identity and returns the original thread token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RevertToSelf ();  
 ```  
   

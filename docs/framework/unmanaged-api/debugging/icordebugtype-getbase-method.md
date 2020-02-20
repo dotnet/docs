@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: f24e1af9-c220-4f79-ae62-4153ec17ea81
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugType::GetBase Method
 Gets an interface pointer to an ICorDebugType that represents the base type, if one exists, of the type represented by this `ICorDebugType`.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetBase (  
     [out] ICorDebugType   **pBase  
 );  

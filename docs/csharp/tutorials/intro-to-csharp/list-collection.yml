@@ -16,7 +16,7 @@ items:
 - title: Create lists
   durationInMinutes: 2
   content: |
-    Run the following code in the interactive window. To do that, type the following code block in the interactive window (replace `<name>` with your name) and click the **Run** button:
+    Run the following code in the interactive window. Select the **Enter focus mode** button. Then, type the following code block in the interactive window (replace `<name>` with your name) and select **Run**:
 
     ```csharp
     var names = new List<string> { "<name>", "Ana", "Felipe" };
@@ -25,6 +25,8 @@ items:
       Console.WriteLine($"Hello {name.ToUpper()}!");
     }
     ```
+
+    If you are running this on your environment, you should follow the instructions for the [local version](arrays-and-collections.md) instead.
 
     You've created a list of strings, added three names to that list, and printed out the names in all CAPS. You're using concepts
     that you've learned in earlier tutorials to loop through the list.
@@ -69,7 +71,7 @@ items:
     Console.WriteLine($"The list has {names.Count} people in it");
     ```
 
-    Click **Run** again to see the results. In C#, indices start at 0, so the largest valid index is one less than the number of items in the list.
+    Select **Run** again to see the results. In C#, indices start at 0, so the largest valid index is one less than the number of items in the list.
 
     > [!NOTE]
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
@@ -162,7 +164,7 @@ items:
     > This online coding experience is in preview mode. If you encounter problems, please report them [on the dotnet/try repo](https://github.com/dotnet/try/issues).
 
 - content: |
-    You've completed the list interactive tutorial. That's the final introduction to C# interactive tutorial. You can visit the [.NET site](https://www.microsoft.com/net/learn/dotnet/hello-world-tutorial) to download the .NET Core SDK, create a project on your machine, and keep coding. The "Keep Learning" step brings you back to these tutorials to build projects on your machine.
+    You've completed the list interactive tutorial. That's the final introduction to C# interactive tutorial. You can visit the [.NET site](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) to download the .NET Core SDK, create a project on your machine, and keep coding. The "Next steps" section brings you back to these tutorials.
 
     You can learn more about [.NET collections](../../../standard/collections/index.md) in the following articles:
     - [Selecting a collection type](../../../standard/collections/selecting-a-collection-class.md)

@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: a656aad6-cc7e-4994-8251-004a6a45e18f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorLinkerOptions Enumeration
 Specifies flags to select options for the metadata linker.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorLinkerOptions {  
     MDAssembly          = 0x00000000,  
     MDNetModule         = 0x00000001,  

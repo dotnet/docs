@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: f0922545-c2cf-40c8-9ef6-ca033563e682
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugThread2::GetVolatileOSThreadID Method
 Gets the operating system thread identifier for this ICorDebugThread2.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetVolatileOSThreadID (  
     [out] DWORD    *pdwTid  
 );  

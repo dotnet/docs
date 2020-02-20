@@ -1,5 +1,5 @@
 ---
-title: "Take Clause (Visual Basic)"
+title: "Take Clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.QueryTake"
@@ -14,7 +14,7 @@ Returns a specified number of contiguous elements from the start of a collection
   
 ## Syntax  
   
-```  
+```vb  
 Take count  
 ```  
   

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 6ddb0631-4569-41b3-93e4-50fdfaa486dc
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedReader::GetMethodByVersion Method
 Gets a symbol reader method, given a method token and an edit-and-copy version number. Version numbers start at 1 and are incremented each time the method is changed as a result of an edit-and-copy operation.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethodByVersion (  
     [in]  mdMethodDef  token,  
     [in]  int  version,  

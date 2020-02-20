@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: b9b4bf2f-1098-43d6-9619-a99b4bda1940
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMapToken::Map Method
 Maps a relationship between the assemblies using metadata signatures.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Map (  
     [in]  mdToken tkImp,   
     [in]  mdToken tkEmit  

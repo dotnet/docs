@@ -10,18 +10,16 @@ helpviewer_keywords:
   - "time zones [.NET Framework], creating"
   - "adjustment rule [.NET Framework]"
 ms.assetid: a6af8647-7893-4f29-95a9-d94c65a6e8dd
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Create time zones without adjustment rules
 
 The precise time zone information that is required by an application may not be present on a particular system for several reasons:
 
-* The time zone has never been defined in the local system's registry.
+- The time zone has never been defined in the local system's registry.
 
-* Data about the time zone has been modified or removed from the registry.
+- Data about the time zone has been modified or removed from the registry.
 
-* The time zone exists but does not have accurate information about time zone adjustments for a particular historic period.
+- The time zone exists but does not have accurate information about time zone adjustments for a particular historic period.
 
 In these cases, you can call the <xref:System.TimeZoneInfo.CreateCustomTimeZone%2A> method to define the time zone required by your application. You can use the overloads of this method to create a time zone with or without adjustment rules. If the time zone supports daylight saving time, you can define adjustments with either fixed or floating adjustment rules. (For definitions of these terms, see the "Time Zone Terminology" section in [Time zone overview](../../../docs/standard/datetime/time-zone-overview.md).)
 
@@ -57,7 +55,7 @@ The string assigned to the <xref:System.TimeZoneInfo.DisplayName%2A> property fo
 
 This example requires:
 
-* That the following namespaces be imported:
+- That the following namespaces be imported:
 
   [!code-csharp[System.TimeZone2.CreateTimeZone#6](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.TimeZone2.CreateTimeZone/cs/System.TimeZone2.CreateTimeZone.cs#6)]
   [!code-vb[System.TimeZone2.CreateTimeZone#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.TimeZone2.CreateTimeZone/vb/System.TimeZone2.CreateTimeZone.vb#6)]

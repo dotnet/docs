@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 7d68666a-fb73-4455-bebd-908d49a16abc
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IValidator::Validate Method
 Validates the specified portable executable (PE) or Microsoft intermediate language (MSIL) file.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Validate (  
     [in] IVEHandler            *veh,  
     [in] IUnknown              *pAppDomain,  

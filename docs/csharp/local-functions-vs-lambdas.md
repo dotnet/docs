@@ -2,6 +2,7 @@
 title: Local functions vs. lambda expressions
 description: Learn why local functions might be a better choice than lambda expressions.
 ms.date: 06/27/2016
+ms.technology: csharp-advanced-concepts
 ms.assetid: 368d1752-3659-489a-97b4-f15d87e49ae3
 ---
 # Local functions compared to lambda expressions

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 8cc3b0c3-d97d-4f71-9e7d-ef2a92b4959a
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::EnumMethods Method
 Enumerates MethodDef tokens representing methods of the specified type.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumMethods (  
    [in, out] HCORENUM   *phEnum,   
    [in]  mdTypeDef      cl,   

@@ -1,5 +1,5 @@
 ---
-title: "Services samples - WCF"
+title: "Services samples"
 ms.date: "03/30/2017"
 ms.assetid: 462a2218-f8c6-4fb7-95bc-64765459c429
 ---
@@ -24,7 +24,7 @@ Demonstrates WCF service security.
 - [Simplified Configuration for WCF Services](simplified-configuration-for-wcf-services.md)\
 Demonstrates how to implement and configure a typical service and client using WCF.
 
-- [Usage of Standard Endoints](usage-of-standard-endpoints.md)\
+- [Usage of Standard Endpoints](usage-of-standard-endpoints.md)\
 Demonstrates how to use standard endpoints in service configuration files.
 
 - [Extended Protection Policy](extended-protection-policy.md)\

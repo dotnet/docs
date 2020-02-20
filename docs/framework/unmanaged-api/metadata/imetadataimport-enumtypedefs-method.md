@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 4e508711-da92-4381-aaf8-6803075cdaa2
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::EnumTypeDefs Method
 Enumerates TypeDef tokens representing all types within the current scope.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumTypeDefs (  
    [out] HCORENUM   *phEnum,   
    [in]  mdTypeDef  rTypeDefs[],  

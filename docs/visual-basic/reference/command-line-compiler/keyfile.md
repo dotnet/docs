@@ -1,7 +1,7 @@
 ---
 title: "-keyfile"
 ms.date: 03/10/2018
-helpviewer_keywords: 
+helpviewer_keywords:
   - "/keyfile compiler option [Visual Basic]"
   - "keyfile compiler option [Visual Basic]"
   - "-keyfile compiler option [Visual Basic]"
@@ -12,7 +12,7 @@ Specifies a file containing a key or key pair to give an assembly a strong name.
   
 ## Syntax  
   
-``` 
+```console 
 -keyfile:file  
 ```  
   
@@ -23,7 +23,7 @@ Specifies a file containing a key or key pair to give an assembly a strong name.
 ## Remarks  
  The compiler inserts the public key into the assembly manifest and then signs the final assembly with the private key. To generate a key file, type `sn -k file` at the command line. For more information, see [Sn.exe (Strong Name Tool)](../../../framework/tools/sn-exe-strong-name-tool.md)).  
   
- If you compile with `-target:module`, the name of the key file is held in the module and incorporated into the assembly that is created when you compile an assembly with [/addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md).  
+ If you compile with `-target:module`, the name of the key file is held in the module and incorporated into the assembly that is created when you compile an assembly with [-addmodule](../../../visual-basic/reference/command-line-compiler/addmodule.md).  
   
  You can also pass your encryption information to the compiler with [-keycontainer](../../../visual-basic/reference/command-line-compiler/keycontainer.md). Use [-delaysign](../../../visual-basic/reference/command-line-compiler/delaysign.md) if you want a partially signed assembly.  
   
@@ -33,18 +33,19 @@ Specifies a file containing a key or key pair to give an assembly a strong name.
   
  Note that a key file might contain only the public key.  
   
- See [Creating and Using Strong-Named Assemblies](../../../framework/app-domains/create-and-use-strong-named-assemblies.md) for more information on signing an assembly.  
+ See [Creating and Using Strong-Named Assemblies](../../../standard/assembly/create-use-strong-named.md) for more information on signing an assembly.  
   
 > [!NOTE]
->  The `-keyfile` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
-  
-## Example  
- The following code compiles source file `Input.vb` and specifies a key file.  
-  
-```console  
-vbc -keyfile:myfile.sn input.vb  
-```  
-  
+> The `-keyfile` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.
+
+## Example
+
+The following code compiles source file `Input.vb` and specifies a key file.
+
+```console
+vbc -keyfile:myfile.sn input.vb
+```
+
 ## See also
 
 - [Assemblies in .NET](../../../standard/assembly/index.md)

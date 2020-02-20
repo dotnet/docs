@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 2657d45d-26d2-4d0a-8473-32b652e3321d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostGCManager::ThreadIsBlockingForSuspension Method
 Notifies the host that the thread from which the method call was made is about to block for a garbage collection.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ThreadIsBlockingForSuspension ();  
 ```  
   
@@ -42,7 +40,7 @@ HRESULT ThreadIsBlockingForSuspension ();
  The CLR typically calls the `ThreadIsBlockForSuspension` method in preparation for a garbage collection, to give the host an opportunity to reschedule the thread for unmanaged tasks.  
   
 > [!IMPORTANT]
->  The host can reschedule tasks only after a call to `ThreadIsBlockingForSuspension`. After the runtime calls [SuspensionStarting](../../../../docs/framework/unmanaged-api/hosting/ihostgcmanager-suspensionstarting-method.md), the host must not reschedule a task.  
+> The host can reschedule tasks only after a call to `ThreadIsBlockingForSuspension`. After the runtime calls [SuspensionStarting](../../../../docs/framework/unmanaged-api/hosting/ihostgcmanager-suspensionstarting-method.md), the host must not reschedule a task.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

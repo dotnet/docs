@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: a57c7d71-c4b0-41f9-a964-0c5ee84a3124
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # USER_THREAD Structure
 Provides information to a debugger about a thread. For more information, see the [INotifySource2::SetNotifyFilter](../../../../docs/framework/unmanaged-api/diagnostics/inotifysource2-setnotifyfilter-method.md) method.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct tagUSER_THREAD  
 {  
     BYTE    *pSidBuffer;  

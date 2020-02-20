@@ -13,7 +13,7 @@ ms.assetid: d6ac3d51-844b-4d29-96d8-81a696a7b960
 This example shows how to create a standard [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] dialog box by using the <xref:System.Windows.Controls.Grid> element.  
   
 ## Example  
- The following example creates a dialog box like the **Run** dialog box in the [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] operating system.  
+ The following example creates a dialog box like the **Run** dialog box in the Windows operating system.  
   
  The example creates a <xref:System.Windows.Controls.Grid> and uses the <xref:System.Windows.Controls.ColumnDefinition> and <xref:System.Windows.Controls.RowDefinition> classes to define five columns and four rows.  
   

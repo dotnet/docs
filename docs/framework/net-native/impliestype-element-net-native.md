@@ -2,8 +2,6 @@
 title: "<ImpliesType> Element (.NET Native)"
 ms.date: "03/30/2017"
 ms.assetid: 3abd2071-0f28-40ba-b9a0-d52bd94cd2f6
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<ImpliesType> Element (.NET Native)
 Applies policy to a type, if that policy has been applied to the containing type or method.  
@@ -53,7 +51,7 @@ Applies policy to a type, if that policy has been applied to the containing type
   
 |Value|Description|  
 |-----------|-----------------|  
-|*policy_setting*|The setting to apply to this policy type. Possible values are `All`, `Auto`, `Excluded`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal`, and `Required All`. For more information, see [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md).|  
+|*policy_setting*|The setting to apply to this policy type. Possible values are `All`, `Auto`, `Excluded`, `Public`, `PublicAndInternal`, `Required Public`, `Required PublicAndInternal`, and `Required All`. For more information, see [Runtime Directive Policy Settings](runtime-directive-policy-settings.md).|  
   
 ### Child Elements  
  None.  
@@ -62,9 +60,9 @@ Applies policy to a type, if that policy has been applied to the containing type
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<Type>](../../../docs/framework/net-native/type-element-net-native.md)|Applies reflection policy to a type and all its members.|  
-|[\<TypeInstantiation>](../../../docs/framework/net-native/typeinstantiation-element-net-native.md)|Applies reflection policy to a constructed generic type and all its members.|  
-|[\<Method>](../../../docs/framework/net-native/method-element-net-native.md)|Applies reflection policy to a method.|  
+|[\<Type>](type-element-net-native.md)|Applies reflection policy to a type and all its members.|  
+|[\<TypeInstantiation>](typeinstantiation-element-net-native.md)|Applies reflection policy to a constructed generic type and all its members.|  
+|[\<Method>](method-element-net-native.md)|Applies reflection policy to a method.|  
   
 ## Remarks  
  The `<ImpliesType>` element is primarily intended for use by libraries. It addresses the following scenario:  
@@ -99,13 +97,13 @@ Applies policy to a type, if that policy has been applied to the containing type
 <Type Name="MyType">  
     <Method Name="MakeEnumerable{T}" Signature="(System.String, T)" Dynamic="Included">  
         <ImpliesType Name="T[]" Dynamic="Public" />  
-        <ImpliesType Name="System.Collections.Generic.List{T}" Dynamic="Public">  
+        <ImpliesType Name="System.Collections.Generic.List{T}" Dynamic="Public" />  
     </Method>  
 </Type>  
 ```  
   
 ## See also
 
-- [Runtime Directives (rd.xml) Configuration File Reference](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md)
-- [Runtime Directive Elements](../../../docs/framework/net-native/runtime-directive-elements.md)
-- [Runtime Directive Policy Settings](../../../docs/framework/net-native/runtime-directive-policy-settings.md)
+- [Runtime Directives (rd.xml) Configuration File Reference](runtime-directives-rd-xml-configuration-file-reference.md)
+- [Runtime Directive Elements](runtime-directive-elements.md)
+- [Runtime Directive Policy Settings](runtime-directive-policy-settings.md)

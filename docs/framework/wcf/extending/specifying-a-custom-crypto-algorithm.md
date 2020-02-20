@@ -103,7 +103,7 @@ public class MyCustomAlgorithmSuite : SecurityAlgorithmSuite
   
  To register the custom algorithm in code use the <xref:System.Security.Cryptography.CryptoConfig.AddAlgorithm(System.Type,System.String[])> method. This method creates both mappings. The following example shows how to call this method:  
   
-```  
+```csharp
 // Register the custom URI string defined for the hashAlgorithm in MyCustomAlgorithmSuite class to create the   
 // SHA256CryptoServiceProvider hash algorithm object.  
 CryptoConfig.AddAlgorithm(typeof(SHA256CryptoServiceProvider), "http://constoso.com/CustomAlgorithms/CustomHashAlgorithm");  
@@ -117,11 +117,11 @@ WSHttpBinding binding = new WSHttpBinding();
             binding.Security.Message.AlgorithmSuite = new MyCustomAlgorithmSuite();  
 ```  
   
- For a complete code example, see the [Cryptographic Agility in WCF Security](../../../../docs/framework/wcf/samples/cryptographic-agility-in-wcf-security.md) sample.  
+ For a complete code example, see the [Cryptographic Agility in WCF Security](../samples/cryptographic-agility-in-wcf-security.md) sample.  
   
 ## See also
 
-- [Securing Services and Clients](../../../../docs/framework/wcf/feature-details/securing-services-and-clients.md)
-- [Securing Services](../../../../docs/framework/wcf/securing-services.md)
-- [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
-- [Security Concepts](../../../../docs/framework/wcf/feature-details/security-concepts.md)
+- [Securing Services and Clients](../feature-details/securing-services-and-clients.md)
+- [Securing Services](../securing-services.md)
+- [Security Overview](../feature-details/security-overview.md)
+- [Security Concepts](../feature-details/security-concepts.md)

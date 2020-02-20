@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: da3769eb-1828-4aa1-b9ed-db4842136a43
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDataTarget::ReadVirtual Method
 Reads data from the specified virtual memory address into the specified buffer.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ReadVirtual (  
     [in] CLRDATA_ADDRESS    address,  
     [out, size_is(bytesRequested), length_is(*bytesRead)]   
@@ -57,4 +55,4 @@ HRESULT ReadVirtual (
   
 ## See also
 
-- [ICLRDataTarget Interface](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md)
+- [ICLRDataTarget Interface](iclrdatatarget-interface.md)

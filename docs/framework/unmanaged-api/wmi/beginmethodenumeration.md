@@ -14,17 +14,15 @@ helpviewer_keywords:
   - "BeginMethodEnumeration function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
-# BeginEnumeration function
+# BeginMethodEnumeration function
 Begins an enumeration of the methods available for the object.  
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
     
 ## Syntax  
   
-``` 
+```cpp 
 HRESULT BeginMethodEnumeration (
    [in] int               vFunc, 
    [in] IWbemClassObject* ptr, 
@@ -64,7 +62,7 @@ This function wraps a call to the [IWbemClassObject::BeginMethodEnumeration](/wi
 This method call is only supported if the current object is a class definition. Method manipulation is not available from [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) pointers that point to instances. The order in which methods are enumerated is guaranteed to be invariant for a given instance of [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject).
 
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.idl  
   

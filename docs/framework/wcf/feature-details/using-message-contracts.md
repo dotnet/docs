@@ -99,7 +99,7 @@ public class BankingTransaction
  The <xref:System.ServiceModel.MessageContractAttribute> allows you to specify the WrapperName and WrapperNamespace attributes which control the name of the wrapper element in the body of the SOAP message. By default the name of the message contract type is used for the wrapper and the namespace in which the message contract is defined `http://tempuri.org/` is used as the default namespace.  
   
 > [!NOTE]
->  <xref:System.Runtime.Serialization.KnownTypeAttribute> attributes are ignored in message contracts. If a <xref:System.Runtime.Serialization.KnownTypeAttribute> is required, place it on the operation that is using the message contract in question.  
+> <xref:System.Runtime.Serialization.KnownTypeAttribute> attributes are ignored in message contracts. If a <xref:System.Runtime.Serialization.KnownTypeAttribute> is required, place it on the operation that is using the message contract in question.  
   
 ## Controlling Header and Body Part Names and Namespaces  
  In the SOAP representation of a message contract, each header and body part maps to an XML element that has a name and a namespace.  
@@ -145,7 +145,7 @@ public class BankingTransaction
  To suppress the wrapper element, set the <xref:System.ServiceModel.MessageContractAttribute.IsWrapped%2A> property to `false`. To control the name and the namespace of the wrapper element, use the <xref:System.ServiceModel.MessageContractAttribute.WrapperName%2A> and <xref:System.ServiceModel.MessageContractAttribute.WrapperNamespace%2A> properties.  
   
 > [!NOTE]
->  Having more than one message body part in messages that are not wrapped is not compliant with WS-I Basic Profile 1.1 and is not recommended when designing new message contracts. However, it may be necessary to have more than one unwrapped message body part in certain specific interoperability scenarios. If you are going to transmit more than one piece of data in a message body, it is recommended to use the default (wrapped) mode. Having more than one message header in unwrapped messages is completely acceptable.  
+> Having more than one message body part in messages that are not wrapped is not compliant with WS-I Basic Profile 1.1 and is not recommended when designing new message contracts. However, it may be necessary to have more than one unwrapped message body part in certain specific interoperability scenarios. If you are going to transmit more than one piece of data in a message body, it is recommended to use the default (wrapped) mode. Having more than one message header in unwrapped messages is completely acceptable.  
   
 ## Using Custom Types Inside Message Contracts  
  Each individual message header and message body part is serialized (turned into XML) using the chosen serialization engine for the service contract where the message is used. The default serialization engine, the `XmlFormatter`, can handle any type that has a data contract, either explicitly (by having the <xref:System.Runtime.Serialization.DataContractAttribute?displayProperty=nameWithType>) or implicitly (by being a primitive type, having the <xref:System.SerializableAttribute?displayProperty=nameWithType>, and so on). For more information, see [Using Data Contracts](../../../../docs/framework/wcf/feature-details/using-data-contracts.md).  

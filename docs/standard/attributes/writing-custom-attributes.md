@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "Inherited property"
   - "attribute classes, declaring"
 ms.assetid: 97216f69-bde8-49fd-ac40-f18c500ef5dc
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Writing Custom Attributes
 To design your own custom attributes, you do not need to master many new concepts. If you are familiar with object-oriented programming and know how to design classes, you already have most of the knowledge needed. Custom attributes are essentially traditional classes that derive directly or indirectly from <xref:System.Attribute?displayProperty=nameWithType>. Just like traditional classes, custom attributes contain methods that store and retrieve data.  

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 85667d38-611c-45a9-938d-930ac7a7b681
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataAssemblyEmit::SetFileProps Method
 Modifies the specified `File` metadata structure.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetFileProps (  
     [in] mdFile        file,  
     [in] const void    *pbHashValue,   

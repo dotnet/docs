@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 57eefaf3-75cf-4496-bc94-88c0706861b7
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEnum::Clone Method
 Creates a copy of this ICorDebugEnum object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Clone (  
     [out] ICorDebugEnum **ppEnum  
 );  

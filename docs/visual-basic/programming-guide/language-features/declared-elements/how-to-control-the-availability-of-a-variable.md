@@ -1,5 +1,5 @@
 ---
-title: "How to: Control the Availability of a Variable (Visual Basic)"
+title: "How to: Control the Availability of a Variable"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "access levels, declared elements"
@@ -69,7 +69,7 @@ You control the availability of a variable by specifying its *access level*. The
 ## Example  
  The following example shows declarations of variables with `Public`, `Protected`, `Friend`, `Protected Friend`, and `Private` access levels. Note that when the `Dim` statement specifies an access level, you do not need to include the `Dim` keyword.  
   
-```  
+```vb  
 Public Class classForEverybody  
 Protected Class classForMyHeirs  
 Friend stringForThisProject As String  

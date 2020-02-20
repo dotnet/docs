@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 6c116592-134b-4ef2-a319-680e92d013aa
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugArrayValue::GetDimensions Method
 Gets the number of elements in each dimension of this array.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDimensions (  
     [in] ULONG32         cdim,  
     [out, size_is(cdim), length_is(cdim)]   

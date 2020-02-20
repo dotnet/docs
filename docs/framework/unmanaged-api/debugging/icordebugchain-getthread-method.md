@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: b3390319-6366-418c-ba80-b552ac4dfc1e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugChain::GetThread Method
 Gets the physical thread this call chain is part of.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThread (  
     [out] ICorDebugThread    **ppThread  
 );  

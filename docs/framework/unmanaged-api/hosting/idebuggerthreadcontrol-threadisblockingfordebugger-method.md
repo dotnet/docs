@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: d4d7cb2d-69da-48b3-879a-1a8a68c9bfa8
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IDebuggerThreadControl::ThreadIsBlockingForDebugger Method
 Notifies the host that the thread that is sending this callback is about to block within the debugging services.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ThreadIsBlockingForDebugger ( );  
 ```  
   

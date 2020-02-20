@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: e835062c-c7d6-4945-8a44-2de7ebf3928e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDebugManager Interface
 Provides methods that allow a host to associate a set of tasks with an identifier and a friendly name.  
@@ -36,7 +34,7 @@ Provides methods that allow a host to associate a set of tasks with an identifie
  In debugging scenarios, a host might want to group tasks according to its own programming logic. For example, a grouping would allow a developer to see only the tasks required by the developer's APIs, instead of seeing every task running in the process. `ICLRDebugManager` allows the host to implement this kind of grouping.  
   
 > [!IMPORTANT]
->  Three `ICLRDebugManager` methods, `BeginConnection`, `SetConnectionTasks` and `EndConnection`, are dependent upon each other. They must be called in the given order to work as expected.  
+> Three `ICLRDebugManager` methods, `BeginConnection`, `SetConnectionTasks` and `EndConnection`, are dependent upon each other. They must be called in the given order to work as expected.  
   
  The grouping, and the identifiers and friendly names that the host assigns to the grouping, have no meaning for the common language runtime (CLR). The CLR merely passes the information along to the debugger.  
   

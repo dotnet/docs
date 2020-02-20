@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: cd8b9879-962a-4811-aa46-2e2b6bae0d84
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CLSID_RESOLUTION_FLAGS Enumeration
 Contains values that indicate how the common language runtime (CLR) should resolve a `CLSID`.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     CLSID_RESOLUTION_DEFAULT      = 0x0,  
     CLSID_RESOLUTION_REGISTERED   = 0x1  

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 172ef8c4-2ead-4cfc-bd2e-dee4fb7191cd
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugThread::GetHandle Method
 Gets the current handle for the active part of this ICorDebugThread.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHandle (  
     [out] HTHREAD *phThreadHandle  
 );  

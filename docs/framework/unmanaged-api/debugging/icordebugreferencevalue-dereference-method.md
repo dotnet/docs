@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 5ec8cf76-3deb-4ce6-9a49-77a4c35d80b9
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugReferenceValue::Dereference Method
 Gets the object that is referenced.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Dereference (  
     [out] ICorDebugValue  **ppValue  
 );  

@@ -1,6 +1,5 @@
 ---
 title: "Properties - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 03/10/2017
 f1_keywords: 
   - "cs.properties"
@@ -17,12 +16,12 @@ A property is a member that provides a flexible mechanism to read, write, or com
   
 - Properties enable a class to expose a public way of getting and setting values, while hiding implementation or verification code.  
   
-- A [get](../../../csharp/language-reference/keywords/get.md) property accessor is used to return the property value, and a [set](../../../csharp/language-reference/keywords/set.md) property accessor is used to assign a new value. These accessors can have different access levels. For more information, see [Restricting Accessor Accessibility](../../../csharp/programming-guide/classes-and-structs/restricting-accessor-accessibility.md).  
+- A [get](../../language-reference/keywords/get.md) property accessor is used to return the property value, and a [set](../../language-reference/keywords/set.md) property accessor is used to assign a new value. These accessors can have different access levels. For more information, see [Restricting Accessor Accessibility](./restricting-accessor-accessibility.md).  
   
-- The [value](../../../csharp/language-reference/keywords/value.md) keyword is used to define the value being assigned by the `set` accessor.  
+- The [value](../../language-reference/keywords/value.md) keyword is used to define the value being assigned by the `set` accessor.  
 - Properties can be *read-write* (they have both a `get` and a `set` accessor), *read-only* (they have a `get` accessor but no `set` accessor), or *write-only* (they have a `set` accessor, but no `get` accessor). Write-only properties are rare and are most commonly used to restrict access to sensitive data.
 
-- Simple properties that require no custom accessor code can be implemented either as expression body definitions or as [auto-implemented properties](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md).
+- Simple properties that require no custom accessor code can be implemented either as expression body definitions or as [auto-implemented properties](./auto-implemented-properties.md).
  
 ## Properties with backing fields
 
@@ -54,24 +53,24 @@ If a property has both a `get` and a `set` accessor, both must be auto-implement
 
 ## Related sections  
   
-- [Using Properties](../../../csharp/programming-guide/classes-and-structs/using-properties.md)  
+- [Using Properties](./using-properties.md)  
   
-- [Interface Properties](../../../csharp/programming-guide/classes-and-structs/interface-properties.md)  
+- [Interface Properties](./interface-properties.md)  
   
-- [Comparison Between Properties and Indexers](../../../csharp/programming-guide/indexers/comparison-between-properties-and-indexers.md)  
+- [Comparison Between Properties and Indexers](../indexers/comparison-between-properties-and-indexers.md)  
   
-- [Restricting Accessor Accessibility](../../../csharp/programming-guide/classes-and-structs/restricting-accessor-accessibility.md)  
+- [Restricting Accessor Accessibility](./restricting-accessor-accessibility.md)  
   
-- [Auto-Implemented Properties](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md)  
+- [Auto-Implemented Properties](./auto-implemented-properties.md)  
   
 ## C# Language Specification  
 
-For more information, see [Properties](~/_csharplang/spec/classes.md#properties) in the [C# Language Specification](../../language-reference/language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
+For more information, see [Properties](~/_csharplang/spec/classes.md#properties) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Using Properties](../../../csharp/programming-guide/classes-and-structs/using-properties.md)
-- [Indexers](../../../csharp/programming-guide/indexers/index.md)
-- [get keyword](../../../csharp/language-reference/keywords/get.md)
-- [set keyword](../../../csharp/language-reference/keywords/set.md)
+- [C# Programming Guide](../index.md)
+- [Using Properties](./using-properties.md)
+- [Indexers](../indexers/index.md)
+- [get keyword](../../language-reference/keywords/get.md)
+- [set keyword](../../language-reference/keywords/set.md)

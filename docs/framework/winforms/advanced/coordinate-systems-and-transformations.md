@@ -8,7 +8,7 @@ helpviewer_keywords:
 ms.assetid: 9fef7451-bddf-4c68-9350-400d1f1f25a3
 ---
 # Coordinate Systems and Transformations
-[!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] provides a world transformation and a page transformation so that you can transform (rotate, scale, translate, and so on) the items you draw. The two transformations also allow you to work in a variety of coordinate systems.  
+GDI+ provides a world transformation and a page transformation so that you can transform (rotate, scale, translate, and so on) the items you draw. The two transformations also allow you to work in a variety of coordinate systems.  
   
 ## In This Section  
  [Types of Coordinate Systems](types-of-coordinate-systems.md)  

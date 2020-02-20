@@ -1,5 +1,5 @@
 ---
-title: "FolderBrowserDialog Component Overview (Windows Forms)"
+title: "FolderBrowserDialog Component Overview"
 ms.date: "03/30/2017"
 f1_keywords:
   - "FolderBrowserDialog"

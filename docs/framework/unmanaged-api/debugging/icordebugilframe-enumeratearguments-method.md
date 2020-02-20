@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 00ac81e2-a774-422a-bd88-54a4b3c99f73
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugILFrame::EnumerateArguments Method
 Gets an enumerator for the arguments in this frame.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumerateArguments (  
     [out] ICorDebugValueEnum    **ppValueEnum  
 );  

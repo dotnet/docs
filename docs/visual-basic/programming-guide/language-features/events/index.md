@@ -1,5 +1,5 @@
 ---
-title: "Events (Visual Basic)"
+title: "Events"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "events [Visual Basic], about events"
@@ -35,7 +35,7 @@ While you might visualize a Visual Studio project as a series of procedures that
  Visual Basic uses a standard naming convention for event handlers that combines the name of the event sender, an underscore, and the name of the event. For example, the `Click` event of a button named `button1` would be named `Sub button1_Click`.  
   
 > [!NOTE]
->  We recommend that you use this naming convention when defining event handlers for your own events, but it is not required; you can use any valid subroutine name.  
+> We recommend that you use this naming convention when defining event handlers for your own events, but it is not required; you can use any valid subroutine name.  
   
 ## Associating Events with Event Handlers  
  Before an event handler becomes usable, you must first associate it with an event by using either the `Handles` or `AddHandler` statement.  

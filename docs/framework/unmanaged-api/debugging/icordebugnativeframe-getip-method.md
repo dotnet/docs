@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 99f693f3-d3b9-4fd8-9d09-b8efd03f7b67
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugNativeFrame::GetIP Method
 Gets the native code offset location to which the instruction pointer is currently set.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetIP (  
     [out] ULONG32           *pnOffset  
 );  

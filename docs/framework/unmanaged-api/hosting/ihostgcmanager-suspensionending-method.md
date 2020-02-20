@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 8849a1db-17f0-44b7-880a-bd36d431eb91
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostGCManager::SuspensionEnding Method
 Notifies the host that the common language runtime (CLR) is resuming execution of tasks on threads that had been suspended for a garbage collection.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SuspensionEnding (  
     [in] DWORD generation  
 );  
@@ -48,7 +46,7 @@ HRESULT SuspensionEnding (
  The CLR calls `SuspensionEnding` after it performs a garbage collection, to inform the host that the thread is resuming execution.  
   
 > [!IMPORTANT]
->  Do not reschedule the thread the method call was made from.  
+> Do not reschedule the thread the method call was made from.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

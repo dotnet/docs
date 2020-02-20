@@ -2,8 +2,6 @@
 title: "ISymUnmanagedAsyncMethod::GetAsyncStepInfo Method"
 ms.date: "03/30/2017"
 ms.assetid: 3ef5b4b8-4ac7-4906-849b-f932c5e3db07
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ISymUnmanagedAsyncMethod::GetAsyncStepInfo Method
 See [DefineAsyncStepInfo Method](../../../../docs/framework/unmanaged-api/diagnostics/isymunmanagedasyncmethodpropertieswriter-defineasyncstepinfo-method.md).  

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: f794dd47-a7cd-47f6-96e9-a41a4dae8e72
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugFunction::GetILCode Method
 Gets the ICorDebugCode instance that represents the Microsoft intermediate language (MSIL) code associated with this ICorDebugFunction object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetILCode (  
     [out] ICorDebugCode **ppCode  
 );  

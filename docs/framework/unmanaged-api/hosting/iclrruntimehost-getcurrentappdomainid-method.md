@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 33800475-7815-4976-8aca-a1038761a2ef
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRRuntimeHost::GetCurrentAppDomainId Method
 Gets the numeric identifier of the <xref:System.AppDomain> that is currently executing.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCurrentAppDomainId(  
     [out] DWORD* pdwAppDomainId  
 );  

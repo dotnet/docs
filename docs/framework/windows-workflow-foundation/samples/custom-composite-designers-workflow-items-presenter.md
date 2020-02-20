@@ -18,11 +18,13 @@ This sample demonstrates:
 
 - Overriding a default designer in a rehosted application.
 
-### To set up, build, and run the sample
+## Set up, build, and run the sample
 
-1. Open the **UsingWorkflowItemsPresenter.sln** sample solution for C# or for VB in Visual Studio 2010.
+1. Open the **UsingWorkflowItemsPresenter.sln** sample solution for C# or for Visual Basic in Visual Studio 2010.
 
-2. Build and run the solution. A rehosted workflow designer application should open, and you can drag activities onto the canvas.
+2. Build and run the solution.
+
+   A rehosted workflow designer application opens, and you can drag activities onto the canvas.
 
 ## Sample Highlights
 
@@ -39,7 +41,7 @@ The code for this sample shows the following:
   - <xref:System.Activities.Presentation.WorkflowItemsPresenter.ItemsPanel?displayProperty=nameWithType> is a template that can be provided to determine the layout of the items in the collection. In this case, a horizontal stack panel is used.
 
   This following example code shows this.
-  
+
   ```xaml
   <sad:WorkflowItemsPresenter HintText="Drop Activities Here"
                                 Items="{Binding Path=ModelItem.Branches}">
@@ -58,7 +60,7 @@ The code for this sample shows the following:
 
 - Perform an association of the `DesignerAttribute` to the `Parallel` type and then output the attributes reported.
 
-    - First, register all of the default designers.
+  - First, register all of the default designers.
 
     The following is the code example.
 
@@ -76,7 +78,7 @@ The code for this sample shows the following:
     RegisterCustomMetadata()
     ```
 
-    - Then, override the parallel in `RegisterCustomMetadata` method.
+  - Then, override the parallel in `RegisterCustomMetadata` method.
 
     The following code shows this in C# and Visual Basic.
 
@@ -149,7 +151,7 @@ The code for this sample shows the following:
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WF\Basic\CustomActivities\CustomActivityDesigners\WorkflowItemsPresenter`
 

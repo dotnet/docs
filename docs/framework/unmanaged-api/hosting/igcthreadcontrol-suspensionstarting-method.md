@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 0af312af-98e9-415e-b182-42e80a1aee51
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IGCThreadControl::SuspensionStarting Method
 Notifies the host that the runtime is beginning a thread suspension for a garbage collection or other suspension.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SuspensionStarting ( );  
 ```  
   

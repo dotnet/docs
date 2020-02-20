@@ -24,35 +24,35 @@ In this article:
 
 * [CLS compliance rules](#cls-compliance-rules)
 
-    * [Types and type member signatures](#types-and-type-member-signatures)
+  * [Types and type member signatures](#types-and-type-member-signatures)
 
-    * [Naming conventions](#naming-conventions)
+  * [Naming conventions](#naming-conventions)
 
-    * [Type conversion](#type-conversion)
+  * [Type conversion](#type-conversion)
 
-    * [Arrays](#arrays)
+  * [Arrays](#arrays)
 
-    * [Interfaces](#interfaces)
+  * [Interfaces](#interfaces)
 
-    * [Enumerations](#enumerations)
+  * [Enumerations](#enumerations)
 
-    * [Type members in general](#type-members-in-general)
+  * [Type members in general](#type-members-in-general)
 
-    * [Member accessibility](#member-accessibility)
+  * [Member accessibility](#member-accessibility)
 
-    * [Generic types and members](#generic-types-and-members)
+  * [Generic types and members](#generic-types-and-members)
 
-    * [Constructors](#constructors)
+  * [Constructors](#constructors)
 
-    * [Properties](#properties)
+  * [Properties](#properties)
 
-    * [Events](#events)
+  * [Events](#events)
 
-    * [Overloads](#overloads)
+  * [Overloads](#overloads)
 
-    * [Exceptions](#exceptions)
+  * [Exceptions](#exceptions)
 
-    * [Attributes](#attributes)
+  * [Attributes](#attributes)
 
 * [CLSCompliantAttribute attribute](#the-clscompliantattribute-attribute)
 
@@ -225,7 +225,7 @@ public class Counter
 
    public override string ToString()
    {
-      return String.Format("{0}). ", ctr);
+      return $"{ctr}). ";
    }
 
    public UInt32 Value
@@ -271,7 +271,7 @@ Public Class Counter
    End Sub
 
    Public Overrides Function ToString() As String
-      Return String.Format("{0}). ", ctr)
+      Return $"{ctr}). "
    End Function
 
    Public ReadOnly Property Value As UInt32
@@ -1302,11 +1302,11 @@ CLS-compliant enumerations must follow these rules:
 
 * There are two kinds of enumerations:
 
-    * An enumeration that represents a set of mutually exclusive, named integer values. This type of enumeration is indicated by the absence of the [System.FlagsAttribute](xref:System.FlagsAttribute) custom attribute.
+  * An enumeration that represents a set of mutually exclusive, named integer values. This type of enumeration is indicated by the absence of the [System.FlagsAttribute](xref:System.FlagsAttribute) custom attribute.
 
-    * An enumeration that represents a set of bit flags that can combine to generate an unnamed value. This type of enumeration is indicated by the presence of the [System.FlagsAttribute](xref:System.FlagsAttribute) custom attribute.
+  * An enumeration that represents a set of bit flags that can combine to generate an unnamed value. This type of enumeration is indicated by the presence of the [System.FlagsAttribute](xref:System.FlagsAttribute) custom attribute.
 
- For more information, see the documentation for the [Enum](xref:System.Enum) structure.
+For more information, see the documentation for the [Enum](xref:System.Enum) structure.
 
 * The value of an enumeration is not limited to the range of its specified values. In other words, the range of values in an enumeration is the range of its underlying value. You can use the `Enum.IsDefined` method to determine whether a specified value is a member of an enumeration.
 

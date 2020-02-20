@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: dc0ff3e6-7e7d-4f6c-948d-52b28f5cb78c
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetPropertyProps Method
 Gets the metadata for the property represented by the specified token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetPropertyProps (  
    [in]  mdProperty        prop,  
    [out] mdTypeDef         *pClass,   

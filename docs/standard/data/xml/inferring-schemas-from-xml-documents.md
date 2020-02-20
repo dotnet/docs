@@ -7,8 +7,6 @@ dev_langs:
   - "vb"
   - "cpp"
 ms.assetid: f3d97d53-614d-4a04-a174-87965b7405f6
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Inferring Schemas from XML Documents
 This topic describes how to use the <xref:System.Xml.Schema.XmlSchemaInference> class to infer an XML Schema definition language (XSD) schema from the structure of an XML document.  

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 84f83921-64cb-49e3-ac8b-22a0b77b18a8
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # AssemblyOptions Enumeration
 Enumerates the assembly options.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum _AssemblyOptions {  
     optAssemTitle = 0,  
     optAssemDescription,  
@@ -80,4 +78,4 @@ typedef enum _AssemblyOptions {
   
 ## See also
 
-- [Al.exe (Assembly Linker)](../../../../docs/framework/tools/al-exe-assembly-linker.md)
+- [Al.exe (Assembly Linker)](../../tools/al-exe-assembly-linker.md)

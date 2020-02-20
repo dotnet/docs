@@ -1,5 +1,5 @@
 ---
-title: "My.Resources Object (Visual Basic)"
+title: "My.Resources Object"
 ms.date: 07/20/2015
 f1_keywords: 
   - "My.Resources"

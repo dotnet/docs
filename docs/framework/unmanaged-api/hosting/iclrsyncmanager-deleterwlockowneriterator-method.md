@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: fcfd340a-b7d6-44e4-8167-2c05b789d483
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRSyncManager::DeleteRWLockOwnerIterator Method
 Requests that the common language runtime (CLR) destroy an iterator that was created by a call to [ICLRSyncManager::CreateRWLockOwnerIterator](../../../../docs/framework/unmanaged-api/hosting/iclrsyncmanager-createrwlockowneriterator-method.md).  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DeleteRWLockOwnerIterator (  
     [in] SIZE_T  Iterator  
 );  

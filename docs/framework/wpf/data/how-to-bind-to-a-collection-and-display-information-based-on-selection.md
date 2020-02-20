@@ -43,6 +43,6 @@ In a simple master-detail scenario, you have a data-bound <xref:System.Windows.C
 
 - [Use the Master-Detail Pattern with Hierarchical Data](how-to-use-the-master-detail-pattern-with-hierarchical-data.md)
 - [Use the Master-Detail Pattern with Hierarchical XML Data](how-to-use-the-master-detail-pattern-with-hierarchical-xml-data.md)
-- [Data Binding Overview](data-binding-overview.md)
+- [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md)
 - [Data Templating Overview](data-templating-overview.md)
 - [How-to Topics](data-binding-how-to-topics.md)

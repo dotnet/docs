@@ -7,12 +7,12 @@ dev_langs:
 ms.assetid: a73530de-5a4e-4d9c-8d66-abb19c225b11
 ---
 # How to: Use Stored Procedures Mapped for Sequential Result Shapes
-This kind of stored procedure can generate more than one result shape, but you know in what order the results are returned. Contrast this scenario with the scenario where you do not know the sequence of the returns. For more information, see [How to: Use Stored Procedures Mapped for Multiple Result Shapes](../../../../../../docs/framework/data/adonet/sql/linq/how-to-use-stored-procedures-mapped-for-multiple-result-shapes.md).  
+This kind of stored procedure can generate more than one result shape, but you know in what order the results are returned. Contrast this scenario with the scenario where you do not know the sequence of the returns. For more information, see [How to: Use Stored Procedures Mapped for Multiple Result Shapes](how-to-use-stored-procedures-mapped-for-multiple-result-shapes.md).  
   
 ## Example  
  Here is the T-SQL of a stored procedure that returns multiple result shapes sequentially:  
   
-```  
+```sql
 CREATE PROCEDURE MultipleResultTypesSequentially  
 AS  
 select * from products  
@@ -30,4 +30,4 @@ select * from customers
   
 ## See also
 
-- [Stored Procedures](../../../../../../docs/framework/data/adonet/sql/linq/stored-procedures.md)
+- [Stored Procedures](stored-procedures.md)

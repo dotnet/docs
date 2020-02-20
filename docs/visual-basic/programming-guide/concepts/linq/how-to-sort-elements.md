@@ -1,5 +1,5 @@
 ---
-title: "How to: Sort Elements (Visual Basic)"
+title: "How to: Sort Elements"
 ms.date: 07/20/2015
 ms.assetid: c2c09279-6c8a-482e-8e71-b1453a815052
 ---
@@ -23,7 +23,7 @@ Next
   
  This code produces the following output:  
   
-```  
+```console  
 0.99  
 4.95  
 6.99  
@@ -34,7 +34,7 @@ Next
 ```  
   
 ## Example  
- The following example shows the same query for XML that is in a namespace. For more information, see [Working with XML Namespaces (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/working-with-xml-namespaces.md).  
+ The following example shows the same query for XML that is in a namespace. For more information, see [Namespaces Overview (LINQ to XML) (Visual Basic)](namespaces-overview-linq-to-xml.md).  
   
  This example uses the following XML document: [Sample XML File: Numerical Data in a Namespace](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-numerical-data-in-a-namespace.md).  
   
@@ -58,7 +58,7 @@ End Module
   
  This code produces the following output:  
   
-```  
+```console  
 0.99  
 4.95  
 6.99  

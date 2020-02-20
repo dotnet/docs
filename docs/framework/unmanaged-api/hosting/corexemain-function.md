@@ -17,15 +17,13 @@ helpviewer_keywords:
 ms.assetid: 898f76e2-16f4-4a63-b7d9-dad2d3824d8a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # _CorExeMain Function
 Initializes the common language runtime (CLR), locates the managed entry point in the executable assembly's CLR header, and begins execution.  
   
 ## Syntax  
   
-```  
+```cpp  
 __int32 STDMETHODCALLTYPE _CorExeMain ();  
 ```  
   

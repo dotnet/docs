@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 7280fa8c-3639-4abf-91cb-bc343da742d1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostSyncManager::CreateCrstWithSpinCount Method
 Creates a critical section object with spin count for synchronization.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateCrstWithSpinCount (  
     [in]  DWORD dwSpinCount,  
     [out] IHostCrst** ppCrst  

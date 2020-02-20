@@ -6,11 +6,12 @@ ms.assetid: 8fcd18c1-9958-42e7-b442-7903f7bdb563
 # \<tcpTransport>
 Defines a TCP transport that can be used by a channel to transfers messages for a custom binding.  
   
- \<system.serviceModel>  
-\<bindings>  
-\<customBinding>  
-\<binding>  
-\<tcpTransport>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<bindings>**](bindings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<customBinding>**](custombinding.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<binding>**\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<tcpTransport>**  
   
 ## Syntax  
   
@@ -32,7 +33,7 @@ Defines a TCP transport that can be used by a channel to transfers messages for 
   <connectionPoolSettings groupName="String"
                           idleTimeout="TimeSpan"
                           leaseTimeout="TimeSpan"
-                          maxOutboundConnectionsPerEndpopint="Integer" />
+                          maxOutboundConnectionsPerEndpoint="Integer" />
 </tcpTransport>
 ```  
   
@@ -55,7 +56,7 @@ Defines a TCP transport that can be used by a channel to transfers messages for 
 |maxPendingConnections|Gets or sets the maximum number of connections awaiting dispatch on the service.|  
 |maxReceivedMessageSize|Gets and sets the maximum allowable message size that can be received.|  
 |portSharingEnabled|A Boolean value that specifies if TCP port sharing is enabled for this connection. If this is `false`, each binding will use its own exclusive port. The default is `false`.<br /><br /> This setting is relevant only to services. Clients are not affected.<br /><br /> Using this setting requires enabling the Windows Communication Foundation (WCF) TCP Port Sharing Service by changing its Startup Type to Manual or Automatic|  
-|teredoEnabled|A Boolean value that specifies whether Teredo (a technology for addressing clients that are behind firewalls) is enabled. The default is `false`.<br /><br /> This property enables Teredo for the underlying TCP socket. For more information, see [Teredo Overview](https://go.microsoft.com/fwlink/?LinkId=95339).<br /><br /> This property is applicable only on [!INCLUDE[wxpsp2](../../../../../includes/wxpsp2-md.md)] and [!INCLUDE[ws2003](../../../../../includes/ws2003-md.md)]. [!INCLUDE[wv](../../../../../includes/wv-md.md)] has a machine-wide configuration option for Teredo, so when running Vista, this property is ignored. Teredo requires that the client and service machines both have the Microsoft IPv6 stack installed and correctly configured for Teredo usage. For more information about configuring Teredo, see [Teredo Overview](https://go.microsoft.com/fwlink/?LinkId=95339). For more information, see [Windows Server 2003 Technology Centers](https://go.microsoft.com/fwlink/?LinkId=49888).|  
+|teredoEnabled|A Boolean value that specifies whether Teredo (a technology for addressing clients that are behind firewalls) is enabled. The default is `false`.<br /><br /> This property enables Teredo for the underlying TCP socket. For more information, see [Teredo Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-xp/bb457011(v=technet.10)).<br /><br /> This property is applicable only on Windows XP SP2 and Windows Server 2003. Windows Vista has a machine-wide configuration option for Teredo, so when running Vista, this property is ignored. Teredo requires that the client and service machines both have the Microsoft IPv6 stack installed and correctly configured for Teredo usage.|  
 |transferMode|Gets or sets a value that indicates whether the messages are buffered or streamed with the connection-oriented transport.|  
 |connectionPoolSettings|Specifies additional connection pool settings for a Named Pipe binding.|  
   
@@ -66,7 +67,7 @@ Defines a TCP transport that can be used by a channel to transfers messages for 
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<binding>](../../../../../docs/framework/misc/binding.md)|Defines all binding capabilities of the custom binding.|  
+|[\<binding>](bindings.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
  This transport uses URIs of the form "net.tcp://hostname:port/path". Other URI components are optional.  
@@ -79,9 +80,9 @@ Defines a TCP transport that can be used by a channel to transfers messages for 
 - <xref:System.ServiceModel.Channels.TcpTransportBindingElement>
 - <xref:System.ServiceModel.Channels.TransportBindingElement>
 - <xref:System.ServiceModel.Channels.CustomBinding>
-- [Transports](../../../../../docs/framework/wcf/feature-details/transports.md)
-- [Choosing a Transport](../../../../../docs/framework/wcf/feature-details/choosing-a-transport.md)
-- [Bindings](../../../../../docs/framework/wcf/bindings.md)
-- [Extending Bindings](../../../../../docs/framework/wcf/extending/extending-bindings.md)
-- [Custom Bindings](../../../../../docs/framework/wcf/extending/custom-bindings.md)
-- [\<customBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md)
+- [Transports](../../../wcf/feature-details/transports.md)
+- [Choosing a Transport](../../../wcf/feature-details/choosing-a-transport.md)
+- [Bindings](../../../wcf/bindings.md)
+- [Extending Bindings](../../../wcf/extending/extending-bindings.md)
+- [Custom Bindings](../../../wcf/extending/custom-bindings.md)
+- [\<customBinding>](custombinding.md)

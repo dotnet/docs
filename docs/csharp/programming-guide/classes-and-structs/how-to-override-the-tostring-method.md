@@ -1,13 +1,13 @@
 ---
-title: "How to: Override the ToString Method - C# Programming Guide"
-ms.custom: seodec18
+title: "How to override the ToString method - C# Programming Guide"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "ToString method, overriding in C#"
   - "inheritance [C#], overriding OnPaint and ToString"
 ms.assetid: 8016db69-1f19-420c-8e17-98e8bebb7749
 ---
-# How to: Override the ToString Method (C# Programming Guide)
+# How to override the ToString method (C# Programming Guide)
+
 Every class or struct in C# implicitly inherits the <xref:System.Object> class. Therefore, every object in C# gets the <xref:System.Object.ToString%2A> method, which returns a string representation of that object. For example, all variables of type `int` have a `ToString` method, which enables them to return their contents as a string:  
   
  [!code-csharp[csProgGuideInheritance#37](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideInheritance/CS/Inheritance.cs#37)]  
@@ -17,9 +17,9 @@ Every class or struct in C# implicitly inherits the <xref:System.Object> class. 
  For information about how to use format strings and other types of custom formatting with the `ToString` method, see [Formatting Types](../../../standard/base-types/formatting-types.md).  
   
 > [!IMPORTANT]
->  When you decide what information to provide through this method, consider whether your class or struct will ever be used by untrusted code. Be careful to ensure that you do not provide any information that could be exploited by malicious code.  
+> When you decide what information to provide through this method, consider whether your class or struct will ever be used by untrusted code. Be careful to ensure that you do not provide any information that could be exploited by malicious code.  
   
-### To override the ToString method in your class or struct  
+To override the `ToString` method in your class or struct:
   
 1. Declare a `ToString` method with the following modifiers and return type:  
   
@@ -40,11 +40,10 @@ Every class or struct in C# implicitly inherits the <xref:System.Object> class. 
 ## See also
 
 - <xref:System.IFormattable>
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)
-- [Strings](../../../csharp/programming-guide/strings/index.md)
-- [string](../../../csharp/language-reference/keywords/string.md)
-- [new](../../../csharp/language-reference/keywords/new.md)
-- [override](../../../csharp/language-reference/keywords/override.md)
-- [virtual](../../../csharp/language-reference/keywords/virtual.md)
+- [C# Programming Guide](../index.md)
+- [Classes and Structs](./index.md)
+- [Strings](../strings/index.md)
+- [string](../../language-reference/builtin-types/reference-types.md)
+- [override](../../language-reference/keywords/override.md)
+- [virtual](../../language-reference/keywords/virtual.md)
 - [Formatting Types](../../../standard/base-types/formatting-types.md)

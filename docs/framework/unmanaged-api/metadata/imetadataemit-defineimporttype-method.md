@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 37fd27af-8062-4904-ace4-51bb78ec600a
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::DefineImportType Method
 Creates a reference to the specified type that is defined outside the current scope, and defines a token for that reference.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineImportType (   
     [in]  IMetaDataAssemblyImport  *pAssemImport,   
     [in]  const void               *pbHashValue,   

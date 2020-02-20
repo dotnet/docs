@@ -8,8 +8,6 @@ dev_langs:
 helpviewer_keywords: 
   - "tasks, how to create a dynamic partitioner"
 ms.assetid: c875ad12-a161-43e6-ad1c-3d6927c536a7
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # How to: Implement Dynamic Partitions

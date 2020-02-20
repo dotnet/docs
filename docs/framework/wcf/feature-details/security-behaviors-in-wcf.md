@@ -81,7 +81,7 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
  For more information about using this configuration element, see [How to: Configure Credentials on a Federation Service](../../../../docs/framework/wcf/feature-details/how-to-configure-credentials-on-a-federation-service.md).  
   
 #### Allowing Anonymous CardSpace Users  
- Setting the `AllowUntrustedRsaIssuers` attribute of the `<IssuedTokenAuthentication>` element to `true` explicitly allows any client to present a self-issued token signed with an arbitrary RSA key pair. The issuer is *untrusted* because the key has no issuer data associated with it. A [!INCLUDE[infocard](../../../../includes/infocard-md.md)] user can create a self-issued card that includes self-provided claims of identity. Use this capability with caution. To use this feature, think of the RSA public key as a more secure password that should be stored in a database along with a user name. Before allowing a client access to the service, verify the client-presented RSA public key by comparing it with the stored public key for the presented user name. This presumes that you have established a registration process whereby users can register their user names and associate them with the self-issued RSA public keys.  
+ Setting the `AllowUntrustedRsaIssuers` attribute of the `<IssuedTokenAuthentication>` element to `true` explicitly allows any client to present a self-issued token signed with an arbitrary RSA key pair. The issuer is *untrusted* because the key has no issuer data associated with it. A CardSpace user can create a self-issued card that includes self-provided claims of identity. Use this capability with caution. To use this feature, think of the RSA public key as a more secure password that should be stored in a database along with a user name. Before allowing a client access to the service, verify the client-presented RSA public key by comparing it with the stored public key for the presented user name. This presumes that you have established a registration process whereby users can register their user names and associate them with the self-issued RSA public keys.  
   
 ## Client Credentials  
  Client credentials are used to authenticate the client to services in cases where mutual authentication is required. You can use the section to specify service certificates for scenarios where the client must secure messages to a service with the service's certificate.  
@@ -108,11 +108,11 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
  </endpointBehaviors>  
 ```  
   
-#### \<clientCertifictate> Element  
+#### \<clientCertificate> Element  
  Set the certificate used to authenticate the client with this element. For more information, see [How to: Specify Client Credential Values](../../../../docs/framework/wcf/how-to-specify-client-credential-values.md).  
   
 #### \<httpDigest>  
- This feature must be enabled with Active Directory on Windows and Internet Information Services (IIS). For more information, see [Digest Authentication in IIS 6.0](https://go.microsoft.com/fwlink/?LinkId=88443).  
+ This feature must be enabled with Active Directory on Windows and Internet Information Services (IIS). For more information, see [Digest Authentication in IIS 6.0](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc782661(v=ws.10)).  
   
 #### \<issuedToken> Element  
  The [\<issuedToken>](../../../../docs/framework/configure-apps/file-schema/wcf/issuedtoken.md) contains the elements used to configure a local issuer of tokens, or behaviors used with an security token service. For instructions on configuring a client to use a local issuer, see [How to: Configure a Local Issuer](../../../../docs/framework/wcf/feature-details/how-to-configure-a-local-issuer.md).  
@@ -214,4 +214,4 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
 ## See also
 
 - [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)
-- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+- [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))

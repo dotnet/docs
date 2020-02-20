@@ -1,5 +1,5 @@
 ---
-title: "Anonymous Types (Visual Basic)"
+title: "Anonymous Types"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.AnonymousType"
@@ -29,7 +29,7 @@ Visual Basic supports anonymous types, which enable you to create objects withou
  For more information about the code created by the compiler for an anonymous type, see [Anonymous Type Definition](../../../../visual-basic/programming-guide/language-features/objects-and-classes/anonymous-type-definition.md).  
   
 > [!CAUTION]
->  The name of the anonymous type is compiler generated and may vary from compilation to compilation. Your code should not use or rely on the name of an anonymous type because the name might change when a project is recompiled.  
+> The name of the anonymous type is compiler generated and may vary from compilation to compilation. Your code should not use or rely on the name of an anonymous type because the name might change when a project is recompiled.  
   
 ## Declaring an Anonymous Type  
  The declaration of an instance of an anonymous type uses an initializer list to specify the properties of the type. You can specify only properties when you declare an anonymous type, not other class elements such as methods or events. In the following example, `product1` is an instance of an anonymous type that has two properties: `Name` and `Price`.  

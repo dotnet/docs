@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c96770b0-3e09-47bb-bd29-20353b043459
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugObjectValue::GetFieldValue Method
 Gets the value of the specified field of the specified class for this object value.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFieldValue (  
     [in]  ICorDebugClass     *pClass,  
     [in]  mdFieldDef         fieldDef,  

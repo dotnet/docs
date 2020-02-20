@@ -2,15 +2,13 @@
 title: "ICorDebugMemoryBuffer::GetStartAddress Method"
 ms.date: "03/30/2017"
 ms.assetid: f804d9ab-8c88-44f0-b278-5fcca7f87726
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugMemoryBuffer::GetStartAddress Method
 Gets the starting address of the memory buffer.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStartAddress(  
    [out] LPCVOID *address  
 );  
@@ -23,7 +21,7 @@ HRESULT GetStartAddress(
 ## Remarks  
   
 > [!WARNING]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -36,5 +34,5 @@ HRESULT GetStartAddress(
   
 ## See also
 
-- [ICorDebugMemoryBuffer Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmemorybuffer-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugMemoryBuffer Interface](icordebugmemorybuffer-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

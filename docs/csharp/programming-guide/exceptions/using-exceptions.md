@@ -1,6 +1,5 @@
 ---
 title: "Using Exceptions - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "exception handling [C#], about exception handling"
@@ -40,5 +39,5 @@ In C#, errors in the program at run time are propagated through the program by u
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/index.md)
+- [C# Programming Guide](../index.md)
+- [Exceptions and Exception Handling](./index.md)

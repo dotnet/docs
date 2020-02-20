@@ -57,7 +57,7 @@ This topic describes how to create dependency properties using alternative custo
  [!code-vb[DPCallbackOverride#CoerceCurrent](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DPCallbackOverride/visualbasic/sdksamplelibrary/class1.vb#coercecurrent)]  
   
 > [!NOTE]
->  Default values of properties are not coerced. A property value equal to the default value might occur if a property value still has its initial default, or through clearing other values with <xref:System.Windows.DependencyObject.ClearValue%2A>.  
+> Default values of properties are not coerced. A property value equal to the default value might occur if a property value still has its initial default, or through clearing other values with <xref:System.Windows.DependencyObject.ClearValue%2A>.  
   
  The coerce value and property changed callbacks are part of property metadata. Therefore, you can change the callbacks for a particular dependency property as it exists on a type that you derive from the type that owns the dependency property, by overriding the metadata for that property on your type.  
   

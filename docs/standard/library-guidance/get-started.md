@@ -1,8 +1,6 @@
 ---
 title: Get started creating high-quality .NET libraries
 description: Getting started building .NET libraries.
-author: jamesnk
-ms.author: mairaw
 ms.date: 10/02/2018
 ---
 # Get started

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 96fa3406-6a6f-41a1-88c6-d9bc5d1a16d1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugModule2::ApplyChanges Method
 Applies the changes in the metadata and the changes in the Microsoft intermediate language (MSIL) code to the running process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ApplyChanges (  
     [in] ULONG                       cbMetadata,  
     [in, size_is(cbMetadata)] BYTE   pbMetadata[],  

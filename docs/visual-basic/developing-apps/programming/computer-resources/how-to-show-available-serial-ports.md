@@ -1,5 +1,5 @@
 ---
-title: "How to: Show Available Serial Ports in Visual Basic"
+title: "How to: Show Available Serial Ports"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "serial ports, availability"
@@ -9,11 +9,13 @@ helpviewer_keywords:
 ms.assetid: eaf2ee5a-8103-4e10-a205-ed1d4db120ba
 ---
 # How to: Show Available Serial Ports in Visual Basic
+
 This topic describes how to use `My.Computer.Ports` to show the available serial ports of the computer in Visual Basic.  
   
  To allow a user to select which port to use, the names of the serial ports are placed in a <xref:System.Windows.Forms.ListBox> control.  
   
 ## Example  
+
  This example loops over all the strings that the `My.Computer.Ports.SerialPortNames` property returns. These strings are the names of the available serial ports on the computer.  
   
  Typically, a user selects which serial port the application should use from the list of available ports. In this example, the serial port names are stored in a <xref:System.Windows.Forms.ListBox> control. For more information, see [ListBox Control](../../../../framework/winforms/controls/listbox-control-windows-forms.md).  
@@ -23,6 +25,7 @@ This topic describes how to use `My.Computer.Ports` to show the available serial
  This code example is also available as an IntelliSense code snippet. In the code snippet picker, it is located in **Connectivity and Networking**. For more information, see [Code Snippets](/visualstudio/ide/code-snippets).  
   
 ## Compiling the Code  
+
  This example requires:  
   
 - A project reference to System.Windows.Forms.dll.  
@@ -32,10 +35,11 @@ This topic describes how to use `My.Computer.Ports` to show the available serial
 - That your form have a <xref:System.Windows.Forms.ListBox> control named `ListBox1`.  
   
 ## Robust Programming  
+
  You do not have to use the <xref:System.Windows.Forms.ListBox> control to display the available serial port names. Instead, you can use a <xref:System.Windows.Forms.ComboBox> or other control. If the application does not need a response from the user, you can use a <xref:System.Windows.Forms.TextBox> control to display the information.  
   
 > [!NOTE]
->  The port names returned by `My.Computer.Ports.SerialPortNames` may be incorrect when run on Windows 98. To prevent application errors, use exception handling, such as the `Try...Catch...Finally` statement or the `Using` statement, when using the port names to open ports.  
+> The port names returned by `My.Computer.Ports.SerialPortNames` may be incorrect when run on Windows 98. To prevent application errors, use exception handling, such as the `Try...Catch...Finally` statement or the `Using` statement, when using the port names to open ports.  
   
 ## See also
 

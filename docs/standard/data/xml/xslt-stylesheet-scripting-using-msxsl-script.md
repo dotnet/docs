@@ -6,14 +6,12 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 60e2541b-0cea-4b2e-a4fa-85f4c50f1bef
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # XSLT Stylesheet Scripting Using \<msxsl:script>
 The <xref:System.Xml.Xsl.XslTransform> class supports embedded scripting using the `script` element.  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework 2.0. You can perform Extensible Stylesheet Language for Transformations (XSLT) transformations using the <xref:System.Xml.Xsl.XslCompiledTransform> class. See [Using the XslCompiledTransform Class](../../../../docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](../../../../docs/standard/data/xml/migrating-from-the-xsltransform-class.md) for more information.  
+> The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework 2.0. You can perform Extensible Stylesheet Language for Transformations (XSLT) transformations using the <xref:System.Xml.Xsl.XslCompiledTransform> class. See [Using the XslCompiledTransform Class](../../../../docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](../../../../docs/standard/data/xml/migrating-from-the-xsltransform-class.md) for more information.  
   
  The <xref:System.Xml.Xsl.XslTransform> class supports embedded scripting using the `script` element. When the style sheet is loaded, any defined functions are compiled to Microsoft intermediate language (MSIL) by being wrapped in a class definition and have no performance loss as a result.  
   
@@ -25,7 +23,7 @@ The <xref:System.Xml.Xsl.XslTransform> class supports embedded scripting using t
   
  where `msxsl` is a prefix bound to the namespace `urn:schemas-microsoft-com:xslt`.  
   
- The `language` attribute is not mandatory, but if specified, its value must be one of the following: C#, VB, JScript, JavaScript, VisualBasic, or CSharp. If not specified, the language defaults to JScript. The `language-name` is not case-sensitive, so 'JavaScript' and 'javascript' are equivalent.  
+ The `language` attribute is not mandatory, but if specified, its value must be one of the following: `C#`, `VB`, `JScript`, `JavaScript`, `VisualBasic`, or `CSharp`. If not specified, the language defaults to JScript. The `language-name` is not case-sensitive, so 'JavaScript' and 'javascript' are equivalent.  
   
  The `implements-prefix` attribute is mandatory. This attribute is used to declare a namespace and associate it with the script block. The value of this attribute is the prefix that represents the namespace. This namespace can be defined somewhere in a style sheet.  
   

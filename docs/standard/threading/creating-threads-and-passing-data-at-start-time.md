@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "threading [.NET Framework], passing data to threads"
   - "threading [.NET Framework], retrieving data from threads"
 ms.assetid: 52b32222-e185-4f42-91a7-eaca65c0ab6d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Creating threads and passing data at start time
 

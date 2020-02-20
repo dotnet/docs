@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e0667ef7-1d31-4c89-a2d3-d426f023f8d2
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetMethodProps Method
 Gets the metadata associated with the method referenced by the specified MethodDef token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethodProps (  
     [in]  mdMethodDef         mb,  
     [out] mdTypeDef           *pClass,  

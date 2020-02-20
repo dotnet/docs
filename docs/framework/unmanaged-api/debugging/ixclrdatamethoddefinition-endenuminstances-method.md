@@ -24,7 +24,7 @@ Releases the resources used by internal iterators used during instance enumerati
 
 ## Syntax
 
-```
+```cpp
 HRESULT EndEnumInstances(
     [in] CLRDATA_ENUM handle
 );
@@ -48,5 +48,5 @@ The provided method is part of the `IXCLRDataMethodDefinition` interface and cor
 
 ## See also
 
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-- [IXCLRDataMethodDefinition Interface](../../../../docs/framework/unmanaged-api/debugging/ixclrdatamethoddefinition-interface.md)
+- [Debugging](index.md)
+- [IXCLRDataMethodDefinition Interface](ixclrdatamethoddefinition-interface.md)

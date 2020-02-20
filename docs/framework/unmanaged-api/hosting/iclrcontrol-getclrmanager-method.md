@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 8a11bfa4-cbb0-4082-82b5-f9fba66c93f5
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRControl::GetCLRManager Method
 Gets an interface pointer to an instance of any of the manager types the host can use to configure the common language runtime (CLR).  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCLRManager (  
     [in]  REFIID  riid,  
     [out] void  **ppObject  

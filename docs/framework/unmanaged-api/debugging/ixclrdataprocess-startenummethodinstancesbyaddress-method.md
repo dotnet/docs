@@ -24,7 +24,7 @@ Provides a handle to enumerate the method instances of `AppDomain` starting at a
 
 ## Syntax
 
-```
+```cpp
 HRESULT StartEnumMethodInstancesByAddress(
     [in] CLRDATA_ADDRESS     address,
     [in] IXCLRDataAppDomain *appDomain,

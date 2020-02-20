@@ -8,8 +8,6 @@ dev_langs:
 helpviewer_keywords: 
   - "synchronization primitives, SpinWait"
 ms.assetid: 36012f42-34e5-4f86-adf4-973f433ed6c6
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # SpinWait
 <xref:System.Threading.SpinWait?displayProperty=nameWithType> is a lightweight synchronization type that you can use in low-level scenarios to avoid the expensive context switches and kernel transitions that are required for kernel events. On multicore computers, when a resource is not expected to be held for long periods of time, it can be more efficient for a waiting thread to spin in user mode for a few dozen or a few hundred cycles, and then retry to acquire the resource. If the resource is available after spinning, then you have saved several thousand cycles. If the resource is still not available, then you have spent only a few cycles and can still enter a kernel-based wait. This spinning-then-waiting combination is sometimes referred to as a *two-phase wait operation*.  

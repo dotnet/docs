@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 5da07f99-6c70-46ec-b997-5ab6fb7106cd
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugReferenceValue::GetValue Method
 Gets the current memory address of the referenced object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetValue (  
     [out] CORDB_ADDRESS   *pValue  
 );  

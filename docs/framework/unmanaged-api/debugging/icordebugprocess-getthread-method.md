@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: a48261ed-700b-41c9-8cb4-18c526546603
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess::GetThread Method
 Gets this process's thread that has the specified operating system (OS) thread ID.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThread(  
     [in] DWORD dwThreadId,  
     [out] ICorDebugThread **ppThread);  

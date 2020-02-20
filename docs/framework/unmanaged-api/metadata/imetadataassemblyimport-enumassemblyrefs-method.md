@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 8844d0dd-730e-4592-8a7b-c1462d312c70
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataAssemblyImport::EnumAssemblyRefs Method
 Enumerates the `mdAssemblyRef` instances that are defined in the assembly manifest.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumAssemblyRefs (  
     [in, out] HCORENUM        *phEnum,   
     [out]     mdAssemblyRef   rAssemblyRefs[],   

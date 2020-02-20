@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: d0b8ab4b-d7d2-4fa0-945f-3d2b87e7e991
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugChain::GetCaller Method
 Gets the chain that called this chain.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCaller (  
     [out] ICorDebugChain      **ppChain  
 );  

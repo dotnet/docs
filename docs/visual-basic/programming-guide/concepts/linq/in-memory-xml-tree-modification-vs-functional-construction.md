@@ -1,5 +1,5 @@
 ---
-title: "In-Memory XML Tree Modification vs. Functional Construction (LINQ to XML) (Visual Basic)"
+title: "In-Memory XML Tree Modification vs. Functional Construction (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: d91c4ebf-6549-43cc-9961-26d4a82f722b
 ---

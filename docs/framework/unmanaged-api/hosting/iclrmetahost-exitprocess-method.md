@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: b4df98cc-4e4e-407b-b8f4-e0076afef3a4
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRMetaHost::ExitProcess Method
 Attempts to shut down all loaded runtimes gracefully and then terminates the process. Supersedes the [CorExitProcess](../../../../docs/framework/unmanaged-api/hosting/corexitprocess-function.md) function.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExitProcess (  
     [in] INT32 iExitCode);  
 ```  

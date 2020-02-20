@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: a854ab9f-d2ba-470e-867f-808c1e7bd07a
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedDispose::Destroy Method
 Causes the underlying object to release all internal references and return failure on any subsequent method calls.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Destroy();  
 ```  
   

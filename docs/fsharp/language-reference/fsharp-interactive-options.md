@@ -1,5 +1,5 @@
 ---
-title: F# Interactive Options
+title: Interactive Options
 description: Learn about the command-line options supported by F# Interactive, fsi.exe.
 ms.date: 05/16/2016
 ---
@@ -11,15 +11,17 @@ ms.date: 05/16/2016
 This topic describes the command-line options supported by F# Interactive, `fsi.exe`. F# Interactive accepts many of the same command line options as the F# compiler, but also accepts some additional options.
 
 ## Using F# Interactive for Scripting
+
 F# Interactive, `fsi.exe`, can be launched interactively, or it can be launched from the command line to run a script. The command line syntax is
 
-```
+```console
 > fsi.exe [options] [ script-file [arguments] ]
 ```
 
 The file extension for F# script files is `.fsx`.
 
 ## Table of F# Interactive Options
+
 The following table summarizes the options supported by F# Interactive. You can set these options on the command-line or through the Visual Studio IDE. To set these options in the Visual Studio IDE, open the **Tools** menu, select **Options...**, then expand the **F# Tools** node and select **F# Interactive**.
 
 Where lists appear in F# Interactive option arguments, list elements are separated by semicolons (`;`).

@@ -1,5 +1,5 @@
 ---
-title: "Or Operator (Visual Basic)"
+title: "Or Operator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Or"
@@ -21,7 +21,7 @@ Performs a logical disjunction on two `Boolean` expressions, or a bitwise disjun
   
 ## Syntax  
   
-```  
+```vb  
 result = expression1 Or expression2  
 ```  
   
@@ -46,7 +46,7 @@ result = expression1 Or expression2
 |`False`|`False`|`False`|  
   
 > [!NOTE]
->  In a `Boolean` comparison, the `Or` operator always evaluates both expressions, which could include making procedure calls. The [OrElse Operator](../../../visual-basic/language-reference/operators/orelse-operator.md) performs *short-circuiting*, which means that if `expression1` is `True`, then `expression2` is not evaluated.  
+> In a `Boolean` comparison, the `Or` operator always evaluates both expressions, which could include making procedure calls. The [OrElse Operator](../../../visual-basic/language-reference/operators/orelse-operator.md) performs *short-circuiting*, which means that if `expression1` is `True`, then `expression2` is not evaluated.  
   
  For bitwise operations, the `Or` operator performs a bitwise comparison of identically positioned bits in two numeric expressions and sets the corresponding bit in `result` according to the following table.  
   
@@ -58,7 +58,7 @@ result = expression1 Or expression2
 |0|0|0|  
   
 > [!NOTE]
->  Since the logical and bitwise operators have a lower precedence than other arithmetic and relational operators, any bitwise operations should be enclosed in parentheses to ensure accurate execution.  
+> Since the logical and bitwise operators have a lower precedence than other arithmetic and relational operators, any bitwise operations should be enclosed in parentheses to ensure accurate execution.  
   
 ## Data Types  
  If the operands consist of one `Boolean` expression and one numeric expression, Visual Basic converts the `Boolean` expression to a numeric value (–1 for `True` and 0 for `False`) and performs a bitwise operation.  

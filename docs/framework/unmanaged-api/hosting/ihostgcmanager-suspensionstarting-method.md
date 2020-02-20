@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c381f524-94cf-4fa2-9298-50f847a03431
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostGCManager::SuspensionStarting Method
 Notifies the host that the common language runtime (CLR) is suspending execution of tasks, to perform a garbage collection.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SuspensionStarting ();  
 ```  
   
@@ -42,7 +40,7 @@ HRESULT SuspensionStarting ();
  The CLR calls `SuspensionStarting` to inform the host that garbage collection is occurring.  
   
 > [!IMPORTANT]
->  Do not reschedule this task. The host must reschedule a task when [ThreadIsBlockingForSuspension](../../../../docs/framework/unmanaged-api/hosting/ihostgcmanager-threadisblockingforsuspension-method.md) is called.  
+> Do not reschedule this task. The host must reschedule a task when [ThreadIsBlockingForSuspension](../../../../docs/framework/unmanaged-api/hosting/ihostgcmanager-threadisblockingforsuspension-method.md) is called.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

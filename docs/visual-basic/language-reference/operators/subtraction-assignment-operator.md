@@ -1,5 +1,5 @@
 ---
-title: "-= Operator (Visual Basic)"
+title: "-= Operator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.-="
@@ -16,7 +16,7 @@ Subtracts the value of an expression from the value of a variable or property an
   
 ## Syntax  
   
-```  
+```vb  
 variableorproperty -= expression  
 ```  
   

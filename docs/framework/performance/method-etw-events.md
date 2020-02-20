@@ -5,34 +5,19 @@ helpviewer_keywords:
   - "ETW, method events (CLR)"
   - "method events [.NET Framework]"
 ms.assetid: 167a4459-bb6e-476c-9046-7920880f2bb5
-author: "mairaw"
-ms.author: "mairaw"
 ---
 
 # Method ETW Events
 
-<a name="top"></a>
 These events collect information that is specific to methods. The payload of these events is required for symbol resolution. In addition, these events provide helpful information such as the number of times a method was called.
 
 All method events have a level of "Informational (4)". All method verbose events have a level of "Verbose (5)".
 
 All method events are raised by the `JITKeyword` (0x10) keyword or the `NGenKeyword` (0x20) keyword under the runtime provider, or `JitRundownKeyword` (0x10) or `NGENRundownKeyword` (0x20) under the rundown provider.
 
-CLR method events are further subdivided into the following:
-
-- [CLR Method Events](#clr_method_events)
-
-- [CLR Method Marker Events](#clr_method_marker_events)
-
-- [CLR Method Verbose Events](#clr_method_verbose_events)
-
-- [MethodJittingStarted Event](#methodjittingstarted_event)
-
-<a name="clr_method_events"></a>
-
 ## CLR Method Events
 
-The following table shows the keyword and level. (For more information, see [CLR ETW Keywords and Levels](../../../docs/framework/performance/clr-etw-keywords-and-levels.md).)
+The following table shows the keyword and level. For more information, see [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
@@ -41,7 +26,7 @@ The following table shows the keyword and level. (For more information, see [CLR
 |`JitRundownKeyword` (0x10) rundown provider|Informational (4)|
 |`NGENRundownKeyword` (0x20) rundown provider|Informational (4)|
 
-The following table shows the event information.
+The following table shows the event information:
 
 |Event|Event ID|Description|
 |-----------|--------------|-----------------|
@@ -50,7 +35,7 @@ The following table shows the event information.
 |`MethodDCStart_V1`|137|Enumerates methods during a start rundown.|
 |`MethodDCEnd_V1`|138|Enumerates methods during an end rundown.|
 
-The following table shows the event data.
+The following table shows the event data:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
@@ -62,15 +47,11 @@ The following table shows the event data.
 |MethodFlags|win:UInt32|0x1: Dynamic method.<br /><br /> 0x2: Generic method.<br /><br /> 0x4: JIT-compiled code method (otherwise NGEN native image code).<br /><br /> 0x8: Helper method.|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
 
-[Back to top](#top)
-
-<a name="clr_method_marker_events"></a>
-
 ## CLR Method Marker Events
 
 These events are raised only under the rundown provider. They signify the end of method enumeration during a start or end rundown. (That is, they are raised when the `NGENRundownKeyword`, `JitRundownKeyword`, `LoaderRundownKeyword`, or `AppDomainResourceManagementRundownKeyword` keyword is enabled.)
 
-The following table shows the keyword and level.
+The following table shows the keyword and level:
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
@@ -78,7 +59,7 @@ The following table shows the keyword and level.
 |`JitRundownKeyword` (0x10) rundown provider|Informational (4)|
 |`NGENRundownKeyword` (0x20) rundown provider|Informational (4)|
 
-The following table shows the event information.
+The following table shows the event information:
 
 |Event|Event ID|Description|
 |-----------|--------------|----------------|
@@ -87,19 +68,15 @@ The following table shows the event information.
 |`DCEndInit_V1`|148|Sent before the start of the enumeration during an end rundown.|
 |`DCEndComplete_V1`|146|Sent at the end of the enumeration during an end rundown.|
 
-The following table shows the event data.
+The following table shows the event data:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
 
-[Back to top](#top)
-
-<a name="clr_method_verbose_events"></a>
-
 ## CLR Method Verbose Events
 
-The following table shows the keyword and level.
+The following table shows the keyword and level:
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
@@ -108,7 +85,7 @@ The following table shows the keyword and level.
 |`JitRundownKeyword` (0x10) rundown provider|Verbose (5)|
 |`NGENRundownKeyword` (0x20) rundown provider|Verbose (5)|
 
-The following table shows the event information.
+The following table shows the event information:
 
 |Event|Event ID|Description|
 |-----------|--------------|-----------------|
@@ -117,7 +94,7 @@ The following table shows the event information.
 |`MethodDCStartVerbose_V1`|141|Enumerates methods during a start rundown.|
 |`MethodDCEndVerbose_V1`|142|Enumerates methods during an end rundown.|
 
-The following table shows the event data.
+The following table shows the event data:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
@@ -132,13 +109,9 @@ The following table shows the event data.
 |MethodSignature|win:UnicodeString|Signature of the method (comma-separated list of type names).|
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|
 
-[Back to top](#top)
-
-<a name="methodjittingstarted_event"></a>
-
 ## MethodJittingStarted Event
 
-The following table shows the keyword and level.
+The following table shows the keyword and level:
 
 |Keyword for raising the event|Level|
 |-----------------------------------|-----------|
@@ -147,13 +120,13 @@ The following table shows the keyword and level.
 |`JitRundownKeyword` (0x10) rundown provider|Verbose (5)|
 |`NGENRundownKeyword` (0x20) rundown provider|Verbose (5)|
 
-The following table shows the event information.
+The following table shows the event information:
 
 |Event|Event ID|Description|
 |-----------|--------------|-----------------|
 |`MethodJittingStarted`|145|Raised when a method is being JIT-compiled.|
 
-The following table shows the event data.
+The following table shows the event data:
 
 |Field name|Data type|Description|
 |----------------|---------------|-----------------|
@@ -168,4 +141,4 @@ The following table shows the event data.
 
 ## See also
 
-- [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)
+- [CLR ETW Events](clr-etw-events.md)

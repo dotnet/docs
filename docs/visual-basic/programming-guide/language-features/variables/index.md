@@ -1,5 +1,5 @@
 ---
-title: "Variables in Visual Basic"
+title: "Variables"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "variables [Visual Basic]"
@@ -20,7 +20,7 @@ You often have to store values when you perform calculations with Visual Basic. 
  [!code-vb[VbVbalrVariables#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrVariables/VB/Class1.vb#1)]  
   
 > [!NOTE]
->  The equal sign (`=`) in this example is an assignment operator, not an equality operator. The value is being assigned to the variable `applesSold`.  
+> The equal sign (`=`) in this example is an assignment operator, not an equality operator. The value is being assigned to the variable `applesSold`.  
   
  For more information, see [How to: Move Data Into and Out of a Variable](../../../../visual-basic/programming-guide/language-features/variables/how-to-move-data-into-and-out-of-a-variable.md).  
   

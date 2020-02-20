@@ -29,7 +29,7 @@ In addition to the rules, there are a number of identifier [naming conventions](
 ## See also
 
 - [C# Programming Guide](../index.md)
-- [Inside a C# Program](../inside-a-program/index.md)
+- [Inside a C# Program](./index.md)
 - [C# Reference](../../language-reference/index.md)
 - [Classes](../classes-and-structs/classes.md)
 - [Structs](../classes-and-structs/structs.md)

@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 23a763ea-8348-4244-9f8c-a4280b870b47
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Convert between .NET Framework and Windows Runtime streams (Windows only)
 

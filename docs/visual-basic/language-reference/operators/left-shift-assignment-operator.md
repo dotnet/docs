@@ -1,5 +1,5 @@
 ---
-title: "<<= Operator (Visual Basic)"
+title: "<<= Operator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.<<="
@@ -17,7 +17,7 @@ Performs an arithmetic left shift on the value of a variable or property and ass
   
 ## Syntax  
   
-```  
+```vb  
 variableorproperty <<= amount  
 ```  
   

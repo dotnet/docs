@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 35c2173e-3b0b-4b2a-950d-e0a01c6df052
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRRuntimeInfo::GetDefaultStartupFlags Method
 Gets the startup flags and host configuration file that will be used to start the runtime.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDefaultStartupFlags(  
      [out]  DWORD *pdwStartupFlags,  
      [out, size_is(*pcchHostConfigFile)] LPWSTR pwzHostConfigFile,  

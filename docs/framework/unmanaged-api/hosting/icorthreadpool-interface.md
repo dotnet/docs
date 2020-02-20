@@ -14,14 +14,12 @@ helpviewer_keywords:
 ms.assetid: 18485a27-cae3-4c6a-baa8-f7df601122d5
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorThreadpool Interface
 Provides methods for accessing the thread pool.  
   
 > [!NOTE]
->  This interface is reserved for internal use only.  
+> This interface is reserved for internal use only.  
   
 ## Methods  
   

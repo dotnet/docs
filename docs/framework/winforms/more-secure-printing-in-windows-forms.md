@@ -1,5 +1,5 @@
 ---
-title: "More Secure Printing in Windows Forms"
+title: "More Secure Printing"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Forms, printing"

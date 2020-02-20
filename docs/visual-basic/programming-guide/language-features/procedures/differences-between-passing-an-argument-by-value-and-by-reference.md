@@ -1,5 +1,5 @@
 ---
-title: "Differences Between Passing an Argument By Value and By Reference (Visual Basic)"
+title: "Differences Between Passing an Argument By Value and By Reference"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "ByRef keyword [Visual Basic], passing arguments by reference"

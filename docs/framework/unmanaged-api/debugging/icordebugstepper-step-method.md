@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 38c1940b-ada1-40ba-8295-4c0833744e1e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugStepper::Step Method
 Causes this ICorDebugStepper to single-step through its containing thread, and optionally, to continue single-stepping through functions that are called within the thread.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Step (  
     [in] BOOL   bStepIn  
 );  

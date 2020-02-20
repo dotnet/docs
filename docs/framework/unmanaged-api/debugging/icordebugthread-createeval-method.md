@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 36605067-33d3-4579-9c72-fb0e551ab0f1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugThread::CreateEval Method
 Creates an ICorDebugEval object that collects and exposes the functionality of this ICorDebugThread.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateEval (  
     [out] ICorDebugEval   **ppEval  
 );  

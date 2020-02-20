@@ -1,5 +1,5 @@
 ---
-title: "Loop Structures (Visual Basic)"
+title: "Loop Structures"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "control flow [Visual Basic], loops"

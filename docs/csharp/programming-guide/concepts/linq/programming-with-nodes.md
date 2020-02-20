@@ -22,7 +22,7 @@ Console.WriteLine(doc.Root.Parent == null);
   
  This example produces the following output:  
   
-```  
+```output  
 True  
 True  
 ```  
@@ -48,7 +48,7 @@ Console.WriteLine(xmlTree.Nodes().OfType<XText>().Count());
   
  This example produces the following output:  
   
-```  
+```output  
 1  
 1  
 2  
@@ -70,7 +70,7 @@ Console.WriteLine(">>{0}<<", textNode2);
   
  This example produces the following output:  
   
-```  
+```output  
 >><<  
 ```  
   
@@ -110,7 +110,7 @@ foreach (XAttribute att in root.Attributes())
   
  This example produces the following output:  
   
-```  
+```output  
 xmlns="http://www.adventure-works.com"  IsNamespaceDeclaration:True  
 xmlns:fc="www.fourthcoffee.com"  IsNamespaceDeclaration:True  
 AnAttribute="abc"  IsNamespaceDeclaration:False  
@@ -138,7 +138,7 @@ Console.WriteLine(((IEnumerable)root.XPathEvaluate("text()")).OfType<XText>().Co
   
  This example produces the following output:  
   
-```  
+```output  
 3  
 0  
 ```  
@@ -160,7 +160,7 @@ Console.WriteLine(doc.Nodes().Count());
   
  This example produces the following output:  
   
-```  
+```output  
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
 <Root />  
 1  

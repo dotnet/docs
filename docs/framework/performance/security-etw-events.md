@@ -5,21 +5,13 @@ helpviewer_keywords:
   - "security events [.NET Framework]"
   - "ETW, security events (CLR)"
 ms.assetid: 0ed69f73-5c01-4514-bd63-979c6e38d41d
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Security ETW Events
-<a name="top"></a> Security events are raised during strong name verification and Authenticode verification.  
-  
- This category consists of the following events:  
-  
-- [StrongNameVerificationStart_V1 and StrongNameVerificationStop_V1 Events](#strongnameverificationstart_v1_and_strongnameverificationstop_v1_events)  
-  
-- [AuthenticodeVerificationStart_V1 and AuthenticodeVerificationStop_V1 Events](#authenticodeverificationstart_v1_and_authenticodeverificationstop_v1_events)  
-  
-<a name="strongnameverificationstart_v1_and_strongnameverificationstop_v1_events"></a>   
+
+Security events are raised during strong name verification and Authenticode verification.  
+
 ## StrongNameVerificationStart_V1 and StrongNameVerificationStop_V1 Events  
- The following table shows the keyword and level. (For more information, see [CLR ETW Keywords and Levels](../../../docs/framework/performance/clr-etw-keywords-and-levels.md).)  
+ The following table shows the keyword and level. (For more information, see [CLR ETW Keywords and Levels](clr-etw-keywords-and-levels.md).)  
   
 |Keyword for raising the event|Level|  
 |-----------------------------------|-----------|  
@@ -40,10 +32,7 @@ ms.author: "mairaw"
 |ErrorCode|win:UInt32|The HResult error code.|  
 |FullyQualifiedAssemblyName|win:UnicodeString|The fully qualified assembly name.|  
 |ClrInstanceID|win:UInt16|Unique ID for the instance of CLR or CoreCLR.|  
-  
- [Back to top](#top)  
-  
-<a name="authenticodeverificationstart_v1_and_authenticodeverificationstop_v1_events"></a>   
+
 ## AuthenticodeVerificationStart_V1 and AuthenticodeVerificationStop_V1 Events  
  The following table shows the keyword and level.  
   
@@ -69,4 +58,4 @@ ms.author: "mairaw"
   
 ## See also
 
-- [CLR ETW Events](../../../docs/framework/performance/clr-etw-events.md)
+- [CLR ETW Events](clr-etw-events.md)

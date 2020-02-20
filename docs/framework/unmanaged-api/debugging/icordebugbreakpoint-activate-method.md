@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e30c29f7-3f19-4081-b572-a731aa14cd44
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugBreakpoint::Activate Method
 Sets the active state of this `ICorDebugBreakpoint`.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Activate (  
     [in] BOOL bActive  
 );  

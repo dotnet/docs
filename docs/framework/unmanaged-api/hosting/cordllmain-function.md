@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: bc7b51cf-39d3-48ec-a5cb-2f179fbefff8
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \_CorDllMain Function
 
@@ -23,7 +21,7 @@ Initializes the common language runtime (CLR), locates the managed entry point i
   
 ## Syntax  
   
-```  
+```cpp  
 BOOL STDMETHODCALLTYPE _CorDllMain (  
    [in] HINSTANCE hInst,  
    [in] DWORD     dwReason,  

@@ -75,4 +75,4 @@ The following examples show how to combine results from multiple tables.
   
 ## See also
 
-- [Query Examples](../../../../../../docs/framework/data/adonet/sql/linq/query-examples.md)
+- [Query Examples](query-examples.md)

@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 9bede0ec-5fdf-42a2-b5b7-bee64056acb6
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorTypeAttr Enumeration
 Contains values that indicate type metadata.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorTypeAttr {  
   
     tdVisibilityMask        =   0x00000007,  

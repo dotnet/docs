@@ -13,7 +13,7 @@ helpviewer_keywords:
 ms.assetid: 440c26c2-77c1-4811-a0a3-57cce3f5fc96
 ---
 # -linkresource (C# Compiler Options)
-Creates a link to a .NET Framework resource in the output file. The resource file is not added to the output file. This differs from the [-resource](../../../csharp/language-reference/compiler-options/resource-compiler-option.md) option which does embed a resource file in the output file.  
+Creates a link to a .NET Framework resource in the output file. The resource file is not added to the output file. This differs from the [-resource](./resource-compiler-option.md) option which does embed a resource file in the output file.  
   
 ## Syntax  
   
@@ -34,7 +34,7 @@ Creates a link to a .NET Framework resource in the output file. The resource fil
 ## Remarks  
  By default, linked resources are public in the assembly when they are created with the C# compiler. To make the resources private, specify `private` as the accessibility modifier. No other modifier other than `public` or `private` is allowed.  
   
- **-linkresource** requires one of the [-target](../../../csharp/language-reference/compiler-options/target-compiler-option.md) options other than **-target:module**.  
+ **-linkresource** requires one of the [-target](./target-compiler-option.md) options other than **-target:module**.  
   
  If `filename` is a .NET Framework resource file created, for example, by [Resgen.exe](../../../framework/tools/resgen-exe-resource-file-generator.md) or in the development environment, it can be accessed with members in the <xref:System.Resources> namespace. For more information, see <xref:System.Resources.ResourceManager?displayProperty=nameWithType>. For all other resources, use the `GetManifestResource` methods in the <xref:System.Reflection.Assembly> class to access the resource at run time.  
   
@@ -70,7 +70,7 @@ gacutil -i A.dll
   
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [C# Compiler Options](./index.md)
 - [Al.exe (Assembly Linker)](../../../framework/tools/al-exe-assembly-linker.md)
 - [Working with Assemblies and the Global Assembly Cache](../../../framework/app-domains/working-with-assemblies-and-the-gac.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

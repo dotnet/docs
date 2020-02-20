@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 83605f1e-e4f3-49e6-859b-f13cad68bb54
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedReader::GetMethodsFromDocumentPosition Method
 Returns an array of methods, each of which contains the breakpoint at the given position in a document.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMethodsFromDocumentPosition (  
     [in]  ISymUnmanagedDocument* document,  
     [in]  ULONG32 line,  

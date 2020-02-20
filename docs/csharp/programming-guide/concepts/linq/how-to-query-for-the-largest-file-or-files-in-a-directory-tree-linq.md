@@ -1,9 +1,9 @@
 ---
-title: "How to: Query for the Largest File or Files in a Directory Tree (LINQ) (C#)"
+title: "How to query for the largest file or files in a directory tree (LINQ) (C#)"
 ms.date: 07/20/2015
 ms.assetid: 20c8a917-0552-4514-b489-0b8b6a4c3b4c
 ---
-# How to: Query for the Largest File or Files in a Directory Tree (LINQ) (C#)
+# How to query for the largest file or files in a directory tree (LINQ) (C#)
 This example shows five queries related to file size in bytes:  
   
 - How to retrieve the size in bytes of the largest file.  
@@ -141,5 +141,5 @@ Create a C# console application project, with `using` directives for the System.
  
 ## See also
 
-- [LINQ to Objects (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)
-- [LINQ and File Directories (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-file-directories.md)
+- [LINQ to Objects (C#)](./linq-to-objects.md)
+- [LINQ and File Directories (C#)](./linq-and-file-directories.md)

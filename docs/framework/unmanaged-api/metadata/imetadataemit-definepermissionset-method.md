@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 36cffbf7-82ca-4cf9-bf60-50ab491ac2d9
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::DefinePermissionSet Method
 Creates a definition for a permission set with the specified metadata signature, and gets a token to that permission set definition.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefinePermissionSet (  
     [in]  mdToken        tk,   
     [in]  DWORD          dwAction,   

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 06fae364-f2c6-4a50-aa7e-3da9f2684dc3
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugController::Detach Method
 Detaches the debugger from the process or application domain.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Detach ();  
 ```  
   

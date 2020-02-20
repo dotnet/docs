@@ -1,5 +1,5 @@
 ---
-title: "Special Characters in Code (Visual Basic)"
+title: "Special Characters in Code"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.)"
@@ -77,7 +77,7 @@ Sometimes you have to use special characters in your code, that is, characters t
  `"Dictionary access returns " & hD!"X")`  
   
 > [!NOTE]
->  References to default collections must be explicit. In particular, you cannot use the `!` operator on a late-bound variable.  
+> References to default collections must be explicit. In particular, you cannot use the `!` operator on a late-bound variable.  
   
  The `!` character is also used as the `Single` type character.  
   

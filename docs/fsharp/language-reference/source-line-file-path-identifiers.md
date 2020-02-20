@@ -33,11 +33,11 @@ For more information about the `#line` directive, see [Compiler Directives](comp
 
 The following code example demonstrates the use of these values.
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet7401.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet7401.fs)]
 
 Output:
 
-```
+```console
 Line: 4
 Source Directory: C:\Users\username\Documents\Visual Studio 2017\Projects\SourceInfo\SourceInfo
 Source File: Program.fs

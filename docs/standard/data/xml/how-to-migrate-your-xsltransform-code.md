@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 910beb2f-cfb3-4e8e-9936-f7e0c5f4064a
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Migrate Your XslTransform Code
 The new XSLT classes have been designed to be very similar to the existing classes. The <xref:System.Xml.Xsl.XslCompiledTransform> class replaces the <xref:System.Xml.Xsl.XslTransform> class. Style sheets are compiled using the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> method. Transforms are executed using the <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> method. The following procedures show common XSLT tasks, and compare the code using the <xref:System.Xml.Xsl.XslTransform> class versus the <xref:System.Xml.Xsl.XslCompiledTransform> class.  
@@ -70,7 +68,7 @@ The new XSLT classes have been designed to be very similar to the existing class
 - Code using the <xref:System.Xml.Xsl.XslCompiledTransform> class.  
   
     > [!NOTE]
-    >  The <xref:System.Xml.Xsl.XslCompiledTransform> class does not have a method that returns the XSLT transformation results as an <xref:System.Xml.XmlReader> object. However, you can output to an XML file and load the XML file into another object.  
+    > The <xref:System.Xml.Xsl.XslCompiledTransform> class does not have a method that returns the XSLT transformation results as an <xref:System.Xml.XmlReader> object. However, you can output to an XML file and load the XML file into another object.  
   
      [!code-csharp[XML_Migration#20](../../../../samples/snippets/csharp/VS_Snippets_Data/XML_Migration/CS/migration.cs#20)]
      [!code-vb[XML_Migration#20](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XML_Migration/VB/migration.vb#20)]  

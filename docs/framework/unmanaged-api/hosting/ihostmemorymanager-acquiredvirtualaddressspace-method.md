@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: ef2f83c2-127e-4c38-8385-306c03cd2167
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostMemoryManager::AcquiredVirtualAddressSpace Method
 Notifies the host that the common language runtime (CLR) has acquired the specified memory from the operating system.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AcquiredVirtualAddressSpace(  
     [in] LPVOID  startAddress,  
     [in] SIZE_T  size  

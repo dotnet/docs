@@ -4,11 +4,13 @@ ms.date: "03/30/2017"
 ms.assetid: c1d2ae56-e231-4a07-9c3f-9f13381dc0d8
 ---
 # \<identity>
-The identity element allows a client developer to specify at design time the expected identity of the service. In the handshake process between the client and service, the Windows Communication Foundation (WCF) infrastructure will ensure that the identity of the expected service matches the values of this element, and thus can be authenticated. For more information, see [Service Identity and Authentication](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md).  
+The identity element allows a client developer to specify at design time the expected identity of the service. In the handshake process between the client and service, the Windows Communication Foundation (WCF) infrastructure will ensure that the identity of the expected service matches the values of this element, and thus can be authenticated. For more information, see [Service Identity and Authentication](../../../wcf/feature-details/service-identity-and-authentication.md).  
   
- \<system.ServiceModel>  
-\<client>  
-\<endpoint>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<client>**](client.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[**\<endpoint>**](endpoint-of-client.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<identity>**  
   
 ## Syntax  
   
@@ -23,7 +25,7 @@ The identity element allows a client developer to specify at design time the exp
   <dns value="String" />
   <rsa value="String" />
   <servicePrincipalName value="String" />
-  <usePrincipalName value="String" />
+  <userPrincipalName value="String" />
 </identity>
 ```  
   
@@ -48,18 +50,18 @@ The identity element allows a client developer to specify at design time the exp
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<custom>](../../../../../docs/framework/configure-apps/file-schema/wcf/custom.md)|Specifies a custom peer resolver for a netPeerTcpBinding.|  
+|[\<custom>](custom.md)|Specifies a custom peer resolver for a netPeerTcpBinding.|  
 |[\<endpoint>](endpoint-element.md)|Configures service endpoints.|  
 |[\<endpoint> of \<client>](endpoint-of-client.md)|Configures channel endpoints.|  
-|[\<issuer>](../../../../../docs/framework/configure-apps/file-schema/wcf/issuer.md)|Specifies the Security Token Service (STS) for the federated service.|  
-|[\<issuerMetadata>](../../../../../docs/framework/configure-apps/file-schema/wcf/issuermetadata.md)|Specifies the metadata endpoint for the Security Token Service (STS) of a federated service.|  
-|[\<issuedTokenParameters>](../../../../../docs/framework/configure-apps/file-schema/wcf/issuedtokenparameters.md)|Defines parameters for an issued token in a custom binding.|  
-|[\<localIssuer>](../../../../../docs/framework/configure-apps/file-schema/wcf/localissuer.md)|Specifies a local Security Token Service (STS).|  
+|[\<issuer>](issuer.md)|Specifies the Security Token Service (STS) for the federated service.|  
+|[\<issuerMetadata>](issuermetadata.md)|Specifies the metadata endpoint for the Security Token Service (STS) of a federated service.|  
+|[\<issuedTokenParameters>](issuedtokenparameters.md)|Defines parameters for an issued token in a custom binding.|  
+|[\<localIssuer>](localissuer.md)|Specifies a local Security Token Service (STS).|  
   
 ## See also
 
 - <xref:System.ServiceModel.Configuration.IdentityElement>
 - <xref:System.ServiceModel.EndpointAddress>
 - <xref:System.ServiceModel.EndpointAddress.Identity%2A>
-- [Service Identity and Authentication](../../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md)
-- [Endpoints: Addresses, Bindings, and Contracts](../../../../../docs/framework/wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)
+- [Service Identity and Authentication](../../../wcf/feature-details/service-identity-and-authentication.md)
+- [Endpoints: Addresses, Bindings, and Contracts](../../../wcf/feature-details/endpoints-addresses-bindings-and-contracts.md)

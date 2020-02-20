@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 57163b0d-c8a7-44af-9078-e7a895d29f9a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEval::GetThread Method
 Gets the thread in which this evaluation is executing or will execute.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThread (  
     [out] ICorDebugThread   **ppThread  
 );  

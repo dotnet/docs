@@ -14,14 +14,12 @@ helpviewer_keywords:
   - "asymmetric keys [.NET Framework]"
   - "cryptography [.NET Framework], keys"
 ms.assetid: c197dfc9-a453-4226-898d-37a16638056e
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Generating Keys for Encryption and Decryption
 Creating and managing keys is an important part of the cryptographic process. Symmetric algorithms require the creation of a key and an initialization vector (IV). The key must be kept secret from anyone who should not decrypt your data. The IV does not have to be secret, but should be changed for each session. Asymmetric algorithms require the creation of a public key and a private key. The public key can be made public to anyone, while the private key must known only by the party who will decrypt the data encrypted with the public key. This section describes how to generate and manage keys for both symmetric and asymmetric algorithms.  
   
 ## Symmetric Keys  
- The symmetric encryption classes supplied by the .NET Framework require a key and a new initialization vector (IV) to encrypt and decrypt data. Whenever you create a new instance of one of the managed symmetric cryptographic classes using the default constructor, a new key and IV are automatically created. Anyone that you allow to decrypt your data must possess the same key and IV and use the same algorithm. Generally, a new key and IV should be created for every session, and neither the key nor IV should be stored for use in a later session.  
+ The symmetric encryption classes supplied by the .NET Framework require a key and a new initialization vector (IV) to encrypt and decrypt data. Whenever you create a new instance of one of the managed symmetric cryptographic classes using the parameterless constructor, a new key and IV are automatically created. Anyone that you allow to decrypt your data must possess the same key and IV and use the same algorithm. Generally, a new key and IV should be created for every session, and neither the key nor IV should be stored for use in a later session.  
   
  To communicate a symmetric key and IV to a remote party, you would usually encrypt the symmetric key by using asymmetric encryption. Sending the key across an insecure network without encrypting it is unsafe, because anyone who intercepts the key and IV can then decrypt your data. For more information about exchanging data by using encryption, see [Creating a Cryptographic Scheme](../../../docs/standard/security/creating-a-cryptographic-scheme.md).  
   
@@ -54,7 +52,7 @@ tdes.GenerateKey();
  When the previous code is executed, a key and IV are generated when the new instance of **TripleDESCryptoServiceProvider** is made. Another key and IV are created when the **GenerateKey** and **GenerateIV** methods are called.  
   
 ## Asymmetric Keys  
- The .NET Framework provides the <xref:System.Security.Cryptography.RSACryptoServiceProvider> and <xref:System.Security.Cryptography.DSACryptoServiceProvider> classes for asymmetric encryption. These classes create a public/private key pair when you use the default constructor to create a new instance. Asymmetric keys can be either stored for use in multiple sessions or generated for one session only. While the public key can be made generally available, the private key should be closely guarded.  
+ The .NET Framework provides the <xref:System.Security.Cryptography.RSACryptoServiceProvider> and <xref:System.Security.Cryptography.DSACryptoServiceProvider> classes for asymmetric encryption. These classes create a public/private key pair when you use the parameterless constructor to create a new instance. Asymmetric keys can be either stored for use in multiple sessions or generated for one session only. While the public key can be made generally available, the private key should be closely guarded.  
   
  A public/private key pair is generated whenever a new instance of an asymmetric algorithm class is created. After a new instance of the class is created, the key information can be extracted using one of two methods:  
   

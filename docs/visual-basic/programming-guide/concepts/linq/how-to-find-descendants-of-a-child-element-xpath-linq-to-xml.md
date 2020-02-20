@@ -1,5 +1,5 @@
 ---
-title: "How to: Find Descendants of a Child Element (XPath-LINQ to XML) (Visual Basic)"
+title: "How to: Find Descendants of a Child Element (XPath-LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: a958af40-f754-4409-85f9-7746978d4cb3
 ---
@@ -28,7 +28,7 @@ Dim root As XElement = _
             </Annotation>  
         </Paragraph>  
         <Paragraph>  
-            <Text>  This is a second sentence.</Text>  
+            <Text>This is a second sentence.</Text>  
         </Paragraph>  
     </Root>  
   
@@ -58,7 +58,7 @@ Console.WriteLine(str2)
   
  This example produces the following output:  
   
-```  
+```console  
 Results are identical  
 This is the start of a sentence.  This is a second sentence.  
 ```  

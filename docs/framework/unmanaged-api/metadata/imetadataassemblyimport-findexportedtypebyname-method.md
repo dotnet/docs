@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 46264b2c-574d-4dde-aafc-77187a104fdd
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataAssemblyImport::FindExportedTypeByName Method
 Gets a pointer to an exported type, given its name and enclosing type.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FindExportedTypeByName (  
     [in]  LPCWSTR           szName,   
     [in]  mdToken           mdtExportedType,   

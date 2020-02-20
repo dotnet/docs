@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: a46925b3-3bf8-404f-9f30-a86ae41032c1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugFrame::GetFunctionToken Method
 Gets the metadata token for the function that contains the code associated with this stack frame.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFunctionToken (  
     [out] mdMethodDef        *pToken  
 );  

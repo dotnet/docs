@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c1e744b8-a6fb-4d9c-a971-8babc875d8f0
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataError::OnError Method
 Provides notification of errors that occur during the metadata merge.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OnError (  
     [in] HRESULT   hrError,   
     [in] mdToken   token  

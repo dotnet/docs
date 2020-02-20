@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 6ba3c6ee-4ba1-4c98-bf1e-8531acd3da09
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugThread2::GetTaskID Method
 Gets the identifier of the task running on this thread.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTaskID (  
     [out] TASKID  *pTaskId  
 );  

@@ -533,10 +533,10 @@ class Program {
 
 ## See also
 
-- [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
-- [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)
-- [Row States and Row Versions](../../../../docs/framework/data/adonet/dataset-datatable-dataview/row-states-and-row-versions.md)
-- [AcceptChanges and RejectChanges](../../../../docs/framework/data/adonet/dataset-datatable-dataview/acceptchanges-and-rejectchanges.md)
-- [Merging DataSet Contents](../../../../docs/framework/data/adonet/dataset-datatable-dataview/merging-dataset-contents.md)
-- [Updating Data Sources with DataAdapters](../../../../docs/framework/data/adonet/updating-data-sources-with-dataadapters.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Retrieving and Modifying Data in ADO.NET](retrieving-and-modifying-data.md)
+- [DataAdapters and DataReaders](dataadapters-and-datareaders.md)
+- [Row States and Row Versions](./dataset-datatable-dataview/row-states-and-row-versions.md)
+- [AcceptChanges and RejectChanges](./dataset-datatable-dataview/acceptchanges-and-rejectchanges.md)
+- [Merging DataSet Contents](./dataset-datatable-dataview/merging-dataset-contents.md)
+- [Updating Data Sources with DataAdapters](updating-data-sources-with-dataadapters.md)
+- [ADO.NET Overview](ado-net-overview.md)

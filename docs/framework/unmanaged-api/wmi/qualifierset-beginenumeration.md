@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "QualifierSet_BeginEnumeration function [.NET WMI and performance counters]"
 topic_type:
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # QualifierSet_BeginEnumeration function
 
@@ -71,7 +69,7 @@ The flags that can be passed as the `lEnumFlags` argument are defined in the *Wb
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
 **Header:** WMINet_Utils.idl
 

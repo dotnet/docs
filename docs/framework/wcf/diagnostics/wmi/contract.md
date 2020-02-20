@@ -1,5 +1,5 @@
 ---
-title: "Contract1"
+title: "Contract"
 ms.date: "03/30/2017"
 ms.assetid: aa00f6b3-7e1f-4213-841a-206463fca20b
 ---

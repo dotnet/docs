@@ -10,8 +10,6 @@ api_location:
 api_type: 
   - "COM"
 ms.assetid: 1745a0b9-8332-4777-a670-b549bff3b901
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorProfilerInfo7::ReadInMemorySymbols
 [Supported in the .NET Framework 4.6.1 and later versions]  
@@ -20,7 +18,7 @@ ms.author: "ronpet"
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ReadInMemorySymbols(  
         [in] ModuleID moduleId,  
         [in] DWORD symbolsReadOffset,  
@@ -55,7 +53,7 @@ HRESULT ReadInMemorySymbols(
  The `ReadInMemorySymbols` method attempts to read `countSymbolBytes` of data starting at offset      `symbolsReadOffset` within the in-memory stream. The data is copied to `pSymbolBytes`, which is expected to have `countSymbolBytes` of space available.     `pCountSymbolsBytesRead` contains the actual number of bytes read, which may be less than `countSymbolBytes` if the end of the stream is reached.  
   
 > [!NOTE]
->  The current implementation does not support Reflection.Emit. If the module was created by using Reflection.Emit, the method returns `CORPROF_E_MODULE_IS_DYNAMIC`.  
+> The current implementation does not support Reflection.Emit. If the module was created by using Reflection.Emit, the method returns `CORPROF_E_MODULE_IS_DYNAMIC`.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -68,4 +66,4 @@ HRESULT ReadInMemorySymbols(
   
 ## See also
 
-- [ICorProfilerInfo7 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo7-interface.md)
+- [ICorProfilerInfo7 Interface](icorprofilerinfo7-interface.md)

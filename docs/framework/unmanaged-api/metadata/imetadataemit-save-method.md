@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c1de8400-adfe-4a71-b828-a1d0cc1ea505
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::Save Method
 Saves all metadata in the current scope to the file at the specified address.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Save (   
     [in]  LPCWSTR     szFile,   
     [in]  DWORD       dwSaveFlags  

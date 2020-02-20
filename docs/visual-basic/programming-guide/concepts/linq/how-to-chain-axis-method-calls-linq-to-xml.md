@@ -1,5 +1,5 @@
 ---
-title: "How to: Chain Axis Method Calls (LINQ to XML) (Visual Basic)"
+title: "How to: Chain Axis Method Calls (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: e4e22942-39bd-460f-b3c0-9f09e53d3aa9
 ---
@@ -80,7 +80,7 @@ Next
 ```  
   
 ## Example  
- The following example shows the same technique for XML that is in a namespace. For more information, see [Working with XML Namespaces (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/working-with-xml-namespaces.md).  
+ The following example shows the same technique for XML that is in a namespace. For more information, see [Namespaces Overview (LINQ to XML) (Visual Basic)](namespaces-overview-linq-to-xml.md).  
   
  This example uses the following XML document: [Sample XML File: Multiple Purchase Orders in a Namespace](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-in-a-namespace.md).  
   

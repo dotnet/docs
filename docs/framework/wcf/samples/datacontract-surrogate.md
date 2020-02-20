@@ -7,11 +7,11 @@ ms.assetid: b0188f3c-00a9-4cf0-a887-a2284c8fb014
 This sample demonstrates how processes like serialization, deserialization, schema export, and schema import can be customized using a data contract surrogate class. This sample shows how to use a surrogate in a client and server scenario where data is serialized and transmitted between a Windows Communication Foundation (WCF) client and service.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  The sample uses the following service contract:  
   
-```  
+```csharp
 [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples")]  
 [AllowNonSerializableTypes]  
 public interface IPersonnelDataService  
@@ -28,7 +28,7 @@ public interface IPersonnelDataService
   
  These operations use the following data type:  
   
-```  
+```csharp
 [DataContract(Namespace = "http://Microsoft.ServiceModel.Samples")]  
 class Employee  
 {  
@@ -45,7 +45,7 @@ class Employee
   
  In the `Employee` type, the `Person` class (shown in the following sample code) cannot be serialized by the <xref:System.Runtime.Serialization.DataContractSerializer> because it is not a valid data contract class.  
   
-```  
+```csharp
 public class Person  
 {  
     public string firstName;  
@@ -64,7 +64,7 @@ public class Person
   
  The sample logically replaces the `Person` class with a different class named `PersonSurrogated`.  
   
-```  
+```csharp
 [DataContract(Name="Person", Namespace = "http://Microsoft.ServiceModel.Samples")]  
 public class PersonSurrogated  
 {  
@@ -83,7 +83,7 @@ public class PersonSurrogated
   
  In the interface implementation, the first task is to establish a type mapping from `Person` to `PersonSurrogated`. This is used both at serialization time as well as at schema export time. This mapping is achieved by implementing the <xref:System.Runtime.Serialization.IDataContractSurrogate.GetDataContractType%28System.Type%29> method.  
   
-```  
+```csharp
 public Type GetDataContractType(Type type)  
 {  
     if (typeof(Person).IsAssignableFrom(type))  
@@ -96,7 +96,7 @@ public Type GetDataContractType(Type type)
   
  The <xref:System.Runtime.Serialization.IDataContractSurrogate.GetObjectToSerialize%28System.Object%2CSystem.Type%29> method maps a `Person` instance to a `PersonSurrogated` instance during serialization, as shown in the following sample code.  
   
-```  
+```csharp
 public object GetObjectToSerialize(object obj, Type targetType)  
 {  
     if (obj is Person)  
@@ -114,7 +114,7 @@ public object GetObjectToSerialize(object obj, Type targetType)
   
  The <xref:System.Runtime.Serialization.IDataContractSurrogate.GetDeserializedObject%28System.Object%2CSystem.Type%29> method provides the reverse mapping for deserialization, as shown in the following sample code.  
   
-```  
+```csharp
 public object GetDeserializedObject(object obj,   
 Type targetType)  
 {  
@@ -133,7 +133,7 @@ Type targetType)
   
  To map the `PersonSurrogated` data contract to the existing `Person` class during schema import, the sample implements the <xref:System.Runtime.Serialization.IDataContractSurrogate.GetReferencedTypeOnImport%28System.String%2CSystem.String%2CSystem.Object%29> method, as shown in the following sample code.  
   
-```  
+```csharp
 public Type GetReferencedTypeOnImport(string typeName,   
                string typeNamespace, object customData)  
 {  
@@ -152,7 +152,7 @@ typeNamespace.Equals("http://schemas.datacontract.org/2004/07/DCSurrogateSample"
   
  The following sample code completes the implementation of the <xref:System.Runtime.Serialization.IDataContractSurrogate> interface.  
   
-```  
+```csharp
 public System.CodeDom.CodeTypeDeclaration ProcessImportedType(  
           System.CodeDom.CodeTypeDeclaration typeDeclaration,   
           System.CodeDom.CodeCompileUnit compileUnit)  
@@ -184,7 +184,7 @@ public void GetKnownCustomDataTypes(
   
  The `IContractBehavior` implementation looks for operations that use DataContract by checking if they have a `DataContractSerializerOperationBehavior` registered. If they do, it sets the `DataContractSurrogate` property on that behavior. The following sample code shows how this is done. Setting the surrogate on this operation behavior enables it for serialization and deserialization.  
   
-```  
+```csharp
 public void ApplyClientBehavior(ContractDescription description, ServiceEndpoint endpoint, System.ServiceModel.Dispatcher.ClientRuntime proxy)  
 {  
     foreach (OperationDescription opDesc in description.Operations)  
@@ -216,7 +216,7 @@ private static void ApplyDataContractSurrogate(OperationDescription description)
   
  The `AllowNonSerializableTypesAttribute` attribute implements `IWsdlExportExtension` and `IContractBehavior`. The extension can be either an `IContractBehavior` or `IEndpointBehavior` in this case. Its `IWsdlExportExtension.ExportContract` method implementation enables the surrogate by adding it to the `XsdDataContractExporter` used during schema generation for DataContract. The following code snippet shows how to do this.  
   
-```  
+```csharp
 public void ExportContract(WsdlExporter exporter, WsdlContractConversionContext context)  
 {  
     if (exporter == null)  
@@ -244,7 +244,7 @@ public void ExportContract(WsdlExporter exporter, WsdlContractConversionContext 
  When you run the sample, the client calls AddEmployee followed by a GetEmployee call to check if the first call was successful. The result of the GetEmployee operation request is displayed in the client console window. The GetEmployee operation must succeed in finding the employee and print "found".  
   
 > [!NOTE]
->  This sample shows how to plug in a surrogate for serialize, deserialize and metadata generation. It does not show how to plug in a surrogate for code generation from metadata. To see a sample of how a surrogate can be used to plug into client code generation, see the [Custom WSDL Publication](../../../../docs/framework/wcf/samples/custom-wsdl-publication.md) sample.  
+> This sample shows how to plug in a surrogate for serialize, deserialize and metadata generation. It does not show how to plug in a surrogate for code generation from metadata. To see a sample of how a surrogate can be used to plug into client code generation, see the [Custom WSDL Publication](../../../../docs/framework/wcf/samples/custom-wsdl-publication.md) sample.  
   
 ### To set up, build, and run the sample  
   
@@ -255,10 +255,10 @@ public void ExportContract(WsdlExporter exporter, WsdlContractConversionContext 
 3. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\DataContract`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\DataContract`  

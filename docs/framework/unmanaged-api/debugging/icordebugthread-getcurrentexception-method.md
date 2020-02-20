@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 331ed465-a195-4359-8584-b82c6098b29b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugThread::GetCurrentException Method
 Gets an interface pointer to an ICorDebugValue object that represents an exception that is currently being thrown by managed code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCurrentException (  
     [out] ICorDebugValue **ppExceptionObject  
 );  

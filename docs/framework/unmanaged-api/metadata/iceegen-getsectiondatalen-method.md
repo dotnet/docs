@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: e2a06ee4-b8ee-49c7-935a-c1031a29eef2
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICeeGen::GetSectionDataLen Method
 Gets the length of the specified section.  
@@ -25,7 +23,7 @@ Gets the length of the specified section.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSectionDataLen (  
     [in]  HCEESECTION  section,  
     [out] ULONG        *dataLen  

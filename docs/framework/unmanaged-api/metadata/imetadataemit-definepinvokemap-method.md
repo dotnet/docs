@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 03abf921-5154-4070-88fa-10b7092901fb
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::DefinePinvokeMap Method
 Sets features of the PInvoke signature of the method referenced by the specified token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefinePinvokeMap (   
     [in]  mdToken            tk,   
     [in]  DWORD              dwMappingFlags,   

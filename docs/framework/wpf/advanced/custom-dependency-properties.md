@@ -20,23 +20,27 @@ ms.assetid: e6bfcfac-b10d-4f58-9f77-a864c2a2938f
 This topic describes the reasons that [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] application developers and component authors might want to create custom dependency property, and describes the implementation steps as well as some implementation options that can improve performance, usability, or versatility of the property.
 
 <a name="prerequisites"></a>
+
 ## Prerequisites
 
 This topic assumes that you understand dependency properties from the perspective of a consumer of existing dependency properties on [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] classes, and have read the [Dependency Properties Overview](dependency-properties-overview.md) topic. In order to follow the examples in this topic, you should also understand [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] and know how to write [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications.
 
 <a name="whatis"></a>
+
 ## What Is a Dependency Property?
 
-You can enable what would otherwise be a [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] property to support styling, data binding, inheritance, animations, and default values by implementing it as a dependency property. Dependency properties are properties that are registered with the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] property system by calling the <xref:System.Windows.DependencyProperty.Register%2A> method (or <xref:System.Windows.DependencyProperty.RegisterReadOnly%2A>), and that are backed by a <xref:System.Windows.DependencyProperty> identifier field. Dependency properties can be used only by <xref:System.Windows.DependencyObject> types, but <xref:System.Windows.DependencyObject> is quite high in the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] class hierarchy, so the majority of classes available in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] can support dependency properties. For more information about dependency properties and some of the terminology and conventions used for describing them in this [!INCLUDE[TLA2#tla_sdk](../../../../includes/tla2sharptla-sdk-md.md)], see [Dependency Properties Overview](dependency-properties-overview.md).
+You can enable what would otherwise be a common language runtime (CLR) property to support styling, data binding, inheritance, animations, and default values by implementing it as a dependency property. Dependency properties are properties that are registered with the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] property system by calling the <xref:System.Windows.DependencyProperty.Register%2A> method (or <xref:System.Windows.DependencyProperty.RegisterReadOnly%2A>), and that are backed by a <xref:System.Windows.DependencyProperty> identifier field. Dependency properties can be used only by <xref:System.Windows.DependencyObject> types, but <xref:System.Windows.DependencyObject> is quite high in the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] class hierarchy, so the majority of classes available in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] can support dependency properties. For more information about dependency properties and some of the terminology and conventions used for describing them in this SDK, see [Dependency Properties Overview](dependency-properties-overview.md).
 
 <a name="example_dp"></a>
+
 ## Examples of Dependency Properties
 
 Examples of dependency properties that are implemented on [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] classes include the <xref:System.Windows.Controls.Control.Background%2A> property, the <xref:System.Windows.FrameworkElement.Width%2A> property, and the <xref:System.Windows.Controls.TextBox.Text%2A> property, among many others. Each dependency property exposed by a class has a corresponding public static field of type <xref:System.Windows.DependencyProperty> exposed on that same class. This is the identifier for the dependency property. The identifier is named using a convention: the name of the dependency property with the string `Property` appended to it. For example, the corresponding <xref:System.Windows.DependencyProperty> identifier field for the <xref:System.Windows.Controls.Control.Background%2A> property is <xref:System.Windows.Controls.Control.BackgroundProperty>. The identifier stores the information about the dependency property as it was registered, and the identifier is then used later for other operations involving the dependency property, such as calling <xref:System.Windows.DependencyObject.SetValue%2A>.
 
-As mentioned in the [Dependency Properties Overview](dependency-properties-overview.md), all dependency properties in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] (except most attached properties) are also [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] properties because of the "wrapper" implementation. Therefore, from code, you can get or set dependency properties by calling [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] accessors that define the wrappers in the same manner that you would use other [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] properties. As a consumer of established dependency properties, you do not typically use the <xref:System.Windows.DependencyObject> methods <xref:System.Windows.DependencyObject.GetValue%2A> and <xref:System.Windows.DependencyObject.SetValue%2A>, which are the connection point to the underlying property system. Rather, the existing implementation of the [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] properties will have already called <xref:System.Windows.DependencyObject.GetValue%2A> and <xref:System.Windows.DependencyObject.SetValue%2A> within the `get` and `set` wrapper implementations of the property, using the identifier field appropriately. If you are implementing a custom dependency property yourself, then you will be defining the wrapper in a similar way.
+As mentioned in the [Dependency Properties Overview](dependency-properties-overview.md), all dependency properties in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] (except most attached properties) are also CLR properties because of the "wrapper" implementation. Therefore, from code, you can get or set dependency properties by calling CLR accessors that define the wrappers in the same manner that you would use other CLR properties. As a consumer of established dependency properties, you do not typically use the <xref:System.Windows.DependencyObject> methods <xref:System.Windows.DependencyObject.GetValue%2A> and <xref:System.Windows.DependencyObject.SetValue%2A>, which are the connection point to the underlying property system. Rather, the existing implementation of the CLR properties will have already called <xref:System.Windows.DependencyObject.GetValue%2A> and <xref:System.Windows.DependencyObject.SetValue%2A> within the `get` and `set` wrapper implementations of the property, using the identifier field appropriately. If you are implementing a custom dependency property yourself, then you will be defining the wrapper in a similar way.
 
 <a name="backing_with_dp"></a>
+
 ## When Should You Implement a Dependency Property?
 
 When you implement a property on a class, so long as your class derives from <xref:System.Windows.DependencyObject>, you have the option to back your property with a <xref:System.Windows.DependencyProperty> identifier and thus to make it a dependency property. Having your property be a dependency property is not always necessary or appropriate, and will depend on your scenario needs. Sometimes, the typical technique of backing your property with a private field is adequate. However, you should implement your property as a dependency property whenever you want your property to support one or more of the following [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] capabilities:
@@ -45,9 +49,9 @@ When you implement a property on a class, so long as your class derives from <xr
 
 - You want your property to support data binding. For more information about data binding dependency properties, see [Bind the Properties of Two Controls](../data/how-to-bind-the-properties-of-two-controls.md).
 
-- You want your property to be settable with a dynamic resource reference. For more information, see [XAML Resources](xaml-resources.md).
+- You want your property to be settable with a dynamic resource reference. For more information, see [XAML Resources](../../../desktop-wpf/fundamentals/xaml-resources-define.md).
 
-- You want to inherit a property value automatically from a parent element in the element tree. In this case, register with the <xref:System.Windows.DependencyProperty.RegisterAttached%2A> method, even if you also create a property wrapper for [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] access. For more information, see [Property Value Inheritance](property-value-inheritance.md).
+- You want to inherit a property value automatically from a parent element in the element tree. In this case, register with the <xref:System.Windows.DependencyProperty.RegisterAttached%2A> method, even if you also create a property wrapper for CLR access. For more information, see [Property Value Inheritance](property-value-inheritance.md).
 
 - You want your property to be animatable. For more information, see [Animation Overview](../graphics-multimedia/animation-overview.md).
 
@@ -60,6 +64,7 @@ When you implement a property on a class, so long as your class derives from <xr
 When you examine these scenarios, you should also consider whether you can achieve your scenario by overriding the metadata of an existing dependency property, rather than implementing a completely new property. Whether a metadata override is practical depends on your scenario and how closely that scenario resembles the implementation in existing [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] dependency properties and classes. For more information about overriding metadata on existing properties, see [Dependency Property Metadata](dependency-property-metadata.md).
 
 <a name="checklist"></a>
+
 ## Checklist for Defining a Dependency Property
 
 Defining a dependency property consists of four distinct concepts. These concepts are not necessarily strict procedural steps, because some of these end up being combined as single lines of code in the implementation:
@@ -70,17 +75,19 @@ Defining a dependency property consists of four distinct concepts. These concept
 
 - Define a <xref:System.Windows.DependencyProperty> identifier as a `public` `static` `readonly` field on the owner type.
 
-- Define a [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] "wrapper" property whose name matches the name of the dependency property. Implement the [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] "wrapper" property's `get` and `set` accessors to connect with the dependency property that backs it.
+- Define a CLR "wrapper" property whose name matches the name of the dependency property. Implement the CLR "wrapper" property's `get` and `set` accessors to connect with the dependency property that backs it.
 
 <a name="registering"></a>
+
 ### Registering the Property with the Property System
 
-In order for your property to be a dependency property, you must register that property into a table maintained by the property system, and give it a unique identifier that is used as the qualifier for later property system operations. These operations might be internal operations, or your own code calling property system [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)]. To register the property, you call the <xref:System.Windows.DependencyProperty.Register%2A> method within the body of your class (inside the class, but outside of any member definitions). The identifier field is also provided by the <xref:System.Windows.DependencyProperty.Register%2A> method call, as the return value. The reason that the <xref:System.Windows.DependencyProperty.Register%2A> call is done outside of other member definitions is because you use this return value to assign and create a `public` `static` `readonly` field of type <xref:System.Windows.DependencyProperty> as part of your class. This field becomes the identifier for your dependency property.
+In order for your property to be a dependency property, you must register that property into a table maintained by the property system, and give it a unique identifier that is used as the qualifier for later property system operations. These operations might be internal operations, or your own code calling property system APIs. To register the property, you call the <xref:System.Windows.DependencyProperty.Register%2A> method within the body of your class (inside the class, but outside of any member definitions). The identifier field is also provided by the <xref:System.Windows.DependencyProperty.Register%2A> method call, as the return value. The reason that the <xref:System.Windows.DependencyProperty.Register%2A> call is done outside of other member definitions is because you use this return value to assign and create a `public` `static` `readonly` field of type <xref:System.Windows.DependencyProperty> as part of your class. This field becomes the identifier for your dependency property.
 
 [!code-csharp[WPFAquariumSln#RegisterAG](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFAquariumSln/CSharp/WPFAquariumObjects/Class1.cs#registerag)]
 [!code-vb[WPFAquariumSln#RegisterAG](~/samples/snippets/visualbasic/VS_Snippets_Wpf/WPFAquariumSln/visualbasic/wpfaquariumobjects/class1.vb#registerag)]
 
 <a name="nameconventions"></a>
+
 ### Dependency Property Name Conventions
 
 There are established naming conventions regarding dependency properties that you must follow in all but exceptional circumstances.
@@ -93,6 +100,7 @@ When you create the identifier field, name this field by the name of the propert
 > Defining the dependency property in the class body is the typical implementation, but it is also possible to define a dependency property in the class static constructor. This approach might make sense if you need more than one line of code to initialize the dependency property.
 
 <a name="wrapper1"></a>
+
 ### Implementing the "Wrapper"
 
 Your wrapper implementation should call <xref:System.Windows.DependencyObject.GetValue%2A> in the `get` implementation, and <xref:System.Windows.DependencyObject.SetValue%2A> in the `set` implementation (the original registration call and field are shown here too for clarity).
@@ -113,6 +121,7 @@ Again, by convention, the name of the wrapper property must be the same as the n
 - The current implementation of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] loader bypasses the wrappers entirely, and relies on the naming convention when processing attribute values. For more information, see [XAML Loading and Dependency Properties](xaml-loading-and-dependency-properties.md).
 
 <a name="metadata"></a>
+
 ### Property Metadata for a New Dependency Property
 
 When you register a dependency property, the registration through the property system creates a metadata object that stores property characteristics. Many of these characteristics have defaults that are set if the property is registered with the simple signatures of <xref:System.Windows.DependencyProperty.Register%2A>. Other signatures of <xref:System.Windows.DependencyProperty.Register%2A> allow you to specify the metadata that you want as you register the property. The most common metadata given for dependency properties is to give them a default value that is applied on new instances that use the property.
@@ -125,13 +134,13 @@ For <xref:System.Windows.FrameworkPropertyMetadata>, you can also specify metada
 
 - If your property (or changes in its value) affects the [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)], and in particular affects how the layout system should size or render your element in a page, set one or more of the following flags: <xref:System.Windows.FrameworkPropertyMetadataOptions.AffectsMeasure>, <xref:System.Windows.FrameworkPropertyMetadataOptions.AffectsArrange>, <xref:System.Windows.FrameworkPropertyMetadataOptions.AffectsRender>.
 
-    - <xref:System.Windows.FrameworkPropertyMetadataOptions.AffectsMeasure> indicates that a change to this property requires a change to [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] rendering where the containing object might require more or less space within the parent. For example, a "Width" property should have this flag set.
+  - <xref:System.Windows.FrameworkPropertyMetadataOptions.AffectsMeasure> indicates that a change to this property requires a change to [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] rendering where the containing object might require more or less space within the parent. For example, a "Width" property should have this flag set.
 
-    - <xref:System.Windows.FrameworkPropertyMetadataOptions.AffectsArrange> indicates that a change to this property requires a change to [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] rendering that typically does not require a change in the dedicated space, but does indicate that the positioning within the space has changed. For example, an "Alignment" property should have this flag set.
+  - <xref:System.Windows.FrameworkPropertyMetadataOptions.AffectsArrange> indicates that a change to this property requires a change to [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] rendering that typically does not require a change in the dedicated space, but does indicate that the positioning within the space has changed. For example, an "Alignment" property should have this flag set.
 
-    - <xref:System.Windows.FrameworkPropertyMetadataOptions.AffectsRender> indicates that some other change has occurred that will not affect layout and measure, but does require another render. An example would be a property that changes a color of an existing element, such as "Background".
+  - <xref:System.Windows.FrameworkPropertyMetadataOptions.AffectsRender> indicates that some other change has occurred that will not affect layout and measure, but does require another render. An example would be a property that changes a color of an existing element, such as "Background".
 
-    - These flags are often used as a protocol in metadata for your own override implementations of property system or layout callbacks. For instance, you might have an <xref:System.Windows.DependencyObject.OnPropertyChanged%2A> callback that will call <xref:System.Windows.UIElement.InvalidateArrange%2A> if any property of the instance reports a value change and has <xref:System.Windows.FrameworkPropertyMetadata.AffectsArrange%2A> as `true` in its metadata.
+  - These flags are often used as a protocol in metadata for your own override implementations of property system or layout callbacks. For instance, you might have an <xref:System.Windows.DependencyObject.OnPropertyChanged%2A> callback that will call <xref:System.Windows.UIElement.InvalidateArrange%2A> if any property of the instance reports a value change and has <xref:System.Windows.FrameworkPropertyMetadata.AffectsArrange%2A> as `true` in its metadata.
 
 - Some properties may affect the rendering characteristics of the containing parent element, in ways above and beyond the changes in required size mentioned above. An example is the <xref:System.Windows.Documents.Paragraph.MinOrphanLines%2A> property used in the flow document model, where changes to that property can change the overall rendering of the flow document that contains the paragraph. Use <xref:System.Windows.FrameworkPropertyMetadataOptions.AffectsParentArrange> or <xref:System.Windows.FrameworkPropertyMetadataOptions.AffectsParentMeasure> to identify similar cases in your own properties.
 
@@ -144,21 +153,25 @@ For <xref:System.Windows.FrameworkPropertyMetadata>, you can also specify metada
 - Set the <xref:System.Windows.FrameworkPropertyMetadataOptions.Journal> flag to indicate if your dependency property should be detected or used by navigation journaling services. An example is the <xref:System.Windows.Controls.Primitives.Selector.SelectedIndex%2A> property; any item selected in a selection control should be persisted when the journaling history is navigated.
 
 <a name="RODP"></a>
+
 ## Read-Only Dependency Properties
 
 You can define a dependency property that is read-only. However, the scenarios for why you might define your property as read-only are somewhat different, as is the procedure for registering them with the property system and exposing the identifier. For more information, see [Read-Only Dependency Properties](read-only-dependency-properties.md).
 
 <a name="CTDP"></a>
+
 ## Collection-Type Dependency Properties
 
 Collection-type dependency properties have some additional implementation issues to consider. For details, see [Collection-Type Dependency Properties](collection-type-dependency-properties.md).
 
 <a name="SecurityC"></a>
+
 ## Dependency Property Security Considerations
 
-Dependency properties should be declared as public properties. Dependency property identifier fields should be declared as public static fields. Even if you attempt to declare other access levels (such as protected), a dependency property can always be accessed through the identifier in combination with the property system [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)]. Even a protected identifier field is potentially accessible because of metadata reporting or value determination [!INCLUDE[TLA2#tla_api#plural](../../../../includes/tla2sharptla-apisharpplural-md.md)] that are part of the property system, such as <xref:System.Windows.LocalValueEnumerator>. For more information, see [Dependency Property Security](dependency-property-security.md).
+Dependency properties should be declared as public properties. Dependency property identifier fields should be declared as public static fields. Even if you attempt to declare other access levels (such as protected), a dependency property can always be accessed through the identifier in combination with the property system APIs. Even a protected identifier field is potentially accessible because of metadata reporting or value determination APIs that are part of the property system, such as <xref:System.Windows.LocalValueEnumerator>. For more information, see [Dependency Property Security](dependency-property-security.md).
 
 <a name="DPCtor"></a>
+
 ## Dependency Properties and Class Constructors
 
 There is a general principle in managed code programming (often enforced by code analysis tools such as FxCop) that class constructors should not call virtual methods. This is because constructors can be called as base initialization of a derived class constructor, and entering the virtual method through the constructor might occur at an incomplete initialization state of the object instance being constructed. When you derive from any class that already derives from <xref:System.Windows.DependencyObject>, you should be aware that the property system itself calls and exposes virtual methods internally. These virtual methods are part of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] property system services. Overriding the methods enables derived classes to participate in value determination. To avoid potential issues with runtime initialization, you should not set dependency property values within constructors of classes, unless you follow a very specific constructor pattern. For details, see [Safe Constructor Patterns for DependencyObjects](safe-constructor-patterns-for-dependencyobjects.md).

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 0358b84a-4236-4c34-945b-4babff7df570
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugAppDomain::Attach Method
 Attaches the debugger to the application domain.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Attach ();  
 ```  
   

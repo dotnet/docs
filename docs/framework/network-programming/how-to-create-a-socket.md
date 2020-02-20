@@ -56,5 +56,5 @@ Dim s as New Socket(AddressFamily.InterNetwork, _
   
 ## See also
 
-- [Using Client Sockets](../../../docs/framework/network-programming/using-client-sockets.md)
-- [Listening with Sockets](../../../docs/framework/network-programming/listening-with-sockets.md)
+- [Using Client Sockets](using-client-sockets.md)
+- [Listening with Sockets](listening-with-sockets.md)

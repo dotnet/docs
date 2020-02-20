@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: bbc0881c-6a59-41a0-b5ee-2f3d1b71684c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugModule::GetGlobalVariableValue Method
 Gets the value of the specified global variable.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetGlobalVariableValue(  
     [in]  mdFieldDef      fieldDef,  
     [out] ICorDebugValue  **ppValue  

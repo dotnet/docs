@@ -3,8 +3,6 @@ title: "Inferring an XML Schema"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: b18e7ffd-3c04-482d-9934-ba2f6a59b2c9
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Inferring an XML Schema
 Describes how to use the Schema Object Model (SOM) <xref:System.Xml.Schema.XmlSchemaInference> class to infer an XML Schema definition language (XSD) schema from the structure of an XML document.  

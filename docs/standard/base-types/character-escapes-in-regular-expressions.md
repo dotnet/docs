@@ -15,9 +15,6 @@ helpviewer_keywords:
   - ".NET Framework regular expressions, character escapes"
   - "constructs, character escapes"
 ms.assetid: f49cc9cc-db7d-4058-8b8a-422bc08b29b0
-author: "rpetrusha"
-ms.author: "ronpet"
-ms.custom: seodec18
 ---
 # Character Escapes in Regular Expressions
 The backslash (\\) in a regular expression indicates one of the following:  
@@ -27,7 +24,7 @@ The backslash (\\) in a regular expression indicates one of the following:
 - A character that otherwise would be interpreted as an unescaped language construct should be interpreted literally. For example, a brace (`{`) begins the definition of a quantifier, but a backslash followed by a brace (`\{`) indicates that the regular expression engine should match the brace. Similarly, a single backslash marks the beginning of an escaped language construct, but two backslashes (`\\`) indicate that the regular expression engine should match the backslash.  
   
 > [!NOTE]
->  Character escapes are recognized in regular expression patterns but not in replacement patterns.  
+> Character escapes are recognized in regular expression patterns but not in replacement patterns.  
   
 ## Character Escapes in .NET  
  The following table lists the character escapes supported by regular expressions in .NET.  

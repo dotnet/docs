@@ -15,18 +15,16 @@ helpviewer_keywords:
 ms.assetid: 43689cc4-e48e-46e5-a22d-bafd768b8759
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostTaskManager::LeaveRuntime Method
 Notifies the host that the currently executing task is about to leave the common language runtime (CLR) and enter unmanaged code.  
   
 > [!IMPORTANT]
->  A corresponding call to [IHostTaskManager::EnterRuntime](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-enterruntime-method.md) notifies the host that the currently executing task is reentering managed code.  
+> A corresponding call to [IHostTaskManager::EnterRuntime](../../../../docs/framework/unmanaged-api/hosting/ihosttaskmanager-enterruntime-method.md) notifies the host that the currently executing task is reentering managed code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT LeaveRuntime (  
     [in] SIZE_T target  
 );  

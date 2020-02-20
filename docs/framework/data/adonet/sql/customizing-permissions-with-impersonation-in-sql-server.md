@@ -11,7 +11,7 @@ Many applications use stored procedures to access data, relying on ownership cha
 ## Context Switching with the EXECUTE AS Statement  
  The Transact-SQL EXECUTE AS statement allows you to switch the execution context of a statement by impersonating another login or database user. This is a useful technique for testing queries and procedures as another user.  
   
-```  
+```sql  
 EXECUTE AS LOGIN = 'loginName';  
 EXECUTE AS USER = 'userName';  
 ```  
@@ -22,7 +22,7 @@ EXECUTE AS USER = 'userName';
  You can use the EXECUTE AS clause in the definition header of a stored procedure, trigger, or user-defined function (except for inline table-valued functions). This causes the procedure to execute in the context of the user name or keyword specified in the EXECUTE AS clause. You can create a proxy user in the database that is not mapped to a login, granting it only the necessary permissions on the objects accessed by the procedure. Only the proxy user specified in the EXECUTE AS clause must have permissions on all objects accessed by the module.  
   
 > [!NOTE]
->  Some actions, such as TRUNCATE TABLE, do not have grantable permissions. By incorporating the statement within a procedure and specifying a proxy user who has ALTER TABLE permissions, you can extend the permissions to truncate the table to callers who have only EXECUTE permissions on the procedure.  
+> Some actions, such as TRUNCATE TABLE, do not have grantable permissions. By incorporating the statement within a procedure and specifying a proxy user who has ALTER TABLE permissions, you can extend the permissions to truncate the table to callers who have only EXECUTE permissions on the procedure.  
   
  The context specified in the EXECUTE AS clause is valid for the duration of the procedure, including nested procedures and triggers. Context reverts to the caller when execution is complete or the REVERT statement is issued.  
   
@@ -30,7 +30,7 @@ EXECUTE AS USER = 'userName';
   
 1. Create a proxy user in the database that is not mapped to a login. This is not required, but it helps when managing permissions.  
   
-```  
+```sql
 CREATE USER proxyUser WITHOUT LOGIN  
 ```  
   
@@ -38,17 +38,17 @@ CREATE USER proxyUser WITHOUT LOGIN
   
 2. Add the EXECUTE AS clause to the stored procedure or user-defined function.  
   
-```  
+```sql
 CREATE PROCEDURE [procName] WITH EXECUTE AS 'proxyUser' AS ...  
 ```  
   
 > [!NOTE]
->  Applications that require auditing can break because the original security context of the caller is not retained. Built-in functions that return the identity of the current user, such as SESSION_USER, USER, or USER_NAME, return the user associated with the EXECUTE AS clause, not the original caller.  
+> Applications that require auditing can break because the original security context of the caller is not retained. Built-in functions that return the identity of the current user, such as SESSION_USER, USER, or USER_NAME, return the user associated with the EXECUTE AS clause, not the original caller.  
   
 ### Using EXECUTE AS with REVERT  
  You can use the Transact-SQL REVERT statement to revert to the original execution context.  
   
- The optional clause, WITH NO REVERT COOKIE = @variableName, allows you switch the execution context back to the caller if the @variableName variable contains the correct value. This allows you to switch the execution context back to the caller in environments where connection pooling is used. Because the value of @variableName is known only to the caller of the EXECUTE AS statement, the caller can guarantee that the execution context cannot be changed by the end user that invokes the application. When the connection is closed, it is returned to the pool. For more information on connection pooling in ADO.NET, see [SQL Server Connection Pooling (ADO.NET)](../../../../../docs/framework/data/adonet/sql-server-connection-pooling.md).  
+ The optional clause, WITH NO REVERT COOKIE = @variableName, allows you switch the execution context back to the caller if the @variableName variable contains the correct value. This allows you to switch the execution context back to the caller in environments where connection pooling is used. Because the value of @variableName is known only to the caller of the EXECUTE AS statement, the caller can guarantee that the execution context cannot be changed by the end user that invokes the application. When the connection is closed, it is returned to the pool. For more information on connection pooling in ADO.NET, see [SQL Server Connection Pooling (ADO.NET)](../sql-server-connection-pooling.md).  
   
 ### Specifying the Execution Context  
  In addition to specifying a user, you can also use EXECUTE AS with any of the following keywords.  
@@ -61,11 +61,11 @@ CREATE PROCEDURE [procName] WITH EXECUTE AS 'proxyUser' AS ...
   
 ## See also
 
-- [Securing ADO.NET Applications](../../../../../docs/framework/data/adonet/securing-ado-net-applications.md)
-- [Overview of SQL Server Security](../../../../../docs/framework/data/adonet/sql/overview-of-sql-server-security.md)
-- [Application Security Scenarios in SQL Server](../../../../../docs/framework/data/adonet/sql/application-security-scenarios-in-sql-server.md)
-- [Managing Permissions with Stored Procedures in SQL Server](../../../../../docs/framework/data/adonet/sql/managing-permissions-with-stored-procedures-in-sql-server.md)
-- [Writing Secure Dynamic SQL in SQL Server](../../../../../docs/framework/data/adonet/sql/writing-secure-dynamic-sql-in-sql-server.md)
-- [Signing Stored Procedures in SQL Server](../../../../../docs/framework/data/adonet/sql/signing-stored-procedures-in-sql-server.md)
-- [Modifying Data with Stored Procedures](../../../../../docs/framework/data/adonet/modifying-data-with-stored-procedures.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Securing ADO.NET Applications](../securing-ado-net-applications.md)
+- [Overview of SQL Server Security](overview-of-sql-server-security.md)
+- [Application Security Scenarios in SQL Server](application-security-scenarios-in-sql-server.md)
+- [Managing Permissions with Stored Procedures in SQL Server](managing-permissions-with-stored-procedures-in-sql-server.md)
+- [Writing Secure Dynamic SQL in SQL Server](writing-secure-dynamic-sql-in-sql-server.md)
+- [Signing Stored Procedures in SQL Server](signing-stored-procedures-in-sql-server.md)
+- [Modifying Data with Stored Procedures](../modifying-data-with-stored-procedures.md)
+- [ADO.NET Overview](../ado-net-overview.md)

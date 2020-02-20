@@ -8,14 +8,12 @@ dev_langs:
 helpviewer_keywords: 
   - "PLINQ queries, how to use execution mode"
 ms.assetid: e52ff26c-c5d3-4fab-9fec-c937fb387963
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Specify the Execution Mode in PLINQ
 This example shows how to force PLINQ to bypass its default heuristics and parallelize a query regardless of the query's shape.  
   
 > [!WARNING]
->  This example is intended to demonstrate usage, and might not run faster than the equivalent sequential LINQ to Objects query. For more information about speedup, see [Understanding Speedup in PLINQ](../../../docs/standard/parallel-programming/understanding-speedup-in-plinq.md).  
+> This example is intended to demonstrate usage, and might not run faster than the equivalent sequential LINQ to Objects query. For more information about speedup, see [Understanding Speedup in PLINQ](../../../docs/standard/parallel-programming/understanding-speedup-in-plinq.md).  
   
 ## Example  
  [!code-csharp[PLINQ#22](../../../samples/snippets/csharp/VS_Snippets_Misc/plinq/cs/plinqsamples.cs#22)]

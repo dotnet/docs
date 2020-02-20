@@ -54,7 +54,7 @@ The most typical scenario where WPF defines an attached property is when a paren
 
 ## Attached Properties in Code <a name="attached_properties_code"></a>
 
-Attached properties in WPF do not have the typical [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] "wrapper" methods for easy get/set access. This is because the attached property is not necessarily part of the [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] namespace for instances where the property is set. However, a XAML processor must be able to set those values when XAML is parsed. To support an effective attached property usage, the owner type of the attached property must implement dedicated accessor methods in the form **Get_PropertyName_** and **Set_PropertyName_**. These dedicated accessor methods are also useful to get or set the attached property in code. From a code perspective, an attached property is similar to a backing field that has method accessors instead of property accessors, and that backing field can exist on any object rather than needing to be specifically defined.
+Attached properties in WPF do not have the typical CLR "wrapper" methods for easy get/set access. This is because the attached property is not necessarily part of the CLR namespace for instances where the property is set. However, a XAML processor must be able to set those values when XAML is parsed. To support an effective attached property usage, the owner type of the attached property must implement dedicated accessor methods in the form **Get_PropertyName_** and **Set_PropertyName_**. These dedicated accessor methods are also useful to get or set the attached property in code. From a code perspective, an attached property is similar to a backing field that has method accessors instead of property accessors, and that backing field can exist on any object rather than needing to be specifically defined.
 
 The following example shows how you can set an attached property in code. In this example, `myCheckBox` is an instance of the <xref:System.Windows.Controls.CheckBox> class.
 
@@ -88,7 +88,7 @@ If your class is defining the attached property strictly for use on other types,
 Define your attached property as a dependency property by declaring a `public static readonly` field of type <xref:System.Windows.DependencyProperty>. You define this field by using the return value of the <xref:System.Windows.DependencyProperty.RegisterAttached%2A> method. The field name must match the attached property name, appended with the string `Property`, to follow the established WPF pattern of naming the identifying fields versus the properties that they represent. The attached property provider must also provide static **Get_PropertyName_** and **Set_PropertyName_** methods as accessors for the attached property; failing to do this will result in the property system being unable to use your attached property.
 
 > [!NOTE]
-> If you omit the attached property's get accessor, data binding on the property will not work in design tools, such as Visual Studio and Expression Blend.
+> If you omit the attached property's get accessor, data binding on the property will not work in design tools, such as Visual Studio and Blend for Visual Studio.
 
 #### The Get Accessor
 
@@ -117,7 +117,7 @@ The following example shows the dependency property registration (using the <xre
 
 #### Attached Property Attributes
 
-WPF defines several [!INCLUDE[TLA2#tla_netframewkattr#plural](../../../../includes/tla2sharptla-netframewkattrsharpplural-md.md)] that are intended to provide information about attached properties to reflection processes, and to typical users of reflection and property information such as designers. Because attached properties have a type of unlimited scope, designers need a way to avoid overwhelming users with a global list of all the attached properties that are defined in a particular technology implementation that uses XAML. The [!INCLUDE[TLA2#tla_netframewkattr#plural](../../../../includes/tla2sharptla-netframewkattrsharpplural-md.md)] that WPF defines for attached properties can be used to scope the situations where a given attached property should be shown in a properties window. You might consider applying these attributes for your own custom attached properties also. The purpose and syntax of the [!INCLUDE[TLA2#tla_netframewkattr#plural](../../../../includes/tla2sharptla-netframewkattrsharpplural-md.md)] is described on the appropriate reference pages:
+WPF defines several .NET attributes that are intended to provide information about attached properties to reflection processes, and to typical users of reflection and property information such as designers. Because attached properties have a type of unlimited scope, designers need a way to avoid overwhelming users with a global list of all the attached properties that are defined in a particular technology implementation that uses XAML. The .NET attributes that WPF defines for attached properties can be used to scope the situations where a given attached property should be shown in a properties window. You might consider applying these attributes for your own custom attached properties also. The purpose and syntax of the .NET attributes is described on the appropriate reference pages:
 
 - <xref:System.Windows.AttachedPropertyBrowsableAttribute>
 
@@ -140,5 +140,5 @@ WPF defines several [!INCLUDE[TLA2#tla_netframewkattr#plural](../../../../includ
 - <xref:System.Windows.DependencyProperty>
 - [Dependency Properties Overview](dependency-properties-overview.md)
 - [Custom Dependency Properties](custom-dependency-properties.md)
-- [XAML Overview (WPF)](xaml-overview-wpf.md)
+- [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)
 - [Register an Attached Property](how-to-register-an-attached-property.md)

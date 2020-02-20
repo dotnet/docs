@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 01f9a59b-7679-4d42-9ced-4a8981625c3d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # COR_GC_THREAD_STATS Structure
 Contains per-thread statistics pertaining to garbage collection.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _COR_GC_THREAD_STATS {  
     ULONGLONG  PerThreadAllocation;   
     ULONG      Flags;   

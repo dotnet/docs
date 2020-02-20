@@ -24,7 +24,7 @@ A global transformation is a transformation that applies to every item drawn by 
  ![Transformations](./media/aboutgdip05-art14.gif "AboutGdip05_art14")  
   
 > [!NOTE]
->  In the preceding example, the ellipse is rotated about the origin of the coordinate system, which is at the upper-left corner of the client area. This produces a different result than rotating the ellipse about its own center.  
+> In the preceding example, the ellipse is rotated about the origin of the coordinate system, which is at the upper-left corner of the client area. This produces a different result than rotating the ellipse about its own center.  
   
 ## Local Transformations  
  A local transformation applies to a specific item to be drawn. For example, a <xref:System.Drawing.Drawing2D.GraphicsPath> object has a <xref:System.Drawing.Drawing2D.GraphicsPath.Transform%2A> method that allows you to transform the data points of that path. The following example draws a rectangle with no transformation and a path with a rotation transformation. (Assume that there is no world transformation.)  

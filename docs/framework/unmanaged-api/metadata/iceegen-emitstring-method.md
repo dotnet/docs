@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: ad2710a7-edb8-4493-8619-3fce235e3334
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICeeGen::EmitString Method
 Emits the specified string into the code base.  
@@ -25,7 +23,7 @@ Emits the specified string into the code base.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EmitString (  
     [in]  LPWSTR    lpString,  
     [out] ULONG     *RVA  

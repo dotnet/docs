@@ -2,15 +2,13 @@
 title: "ICorDebugLoadedModule::GetBaseAddress Method"
 ms.date: "03/30/2017"
 ms.assetid: 7c036772-d58a-47f1-a5fa-31779898ef0d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugLoadedModule::GetBaseAddress Method
 Gets the base address of the loaded module.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetBaseAddress(  
    [out] CORDB_ADDRESS *pAddress  
 );  
@@ -23,7 +21,7 @@ HRESULT GetBaseAddress(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -36,5 +34,5 @@ HRESULT GetBaseAddress(
   
 ## See also
 
-- [ICorDebugLoadedModule Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugloadedmodule-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugLoadedModule Interface](icordebugloadedmodule-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

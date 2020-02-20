@@ -1,5 +1,5 @@
 ---
-title: "Nullable Value Types - Visual Basic"
+title: "Nullable Value Types"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Nullable"
@@ -103,7 +103,6 @@ A database is one of the most important places to use nullable types. Not all da
 
 - <xref:System.InvalidOperationException>
 - <xref:System.Nullable%601.HasValue%2A>
-- [Using Nullable Types](../../../../csharp/programming-guide/nullable-types/using-nullable-types.md)
 - [Data Types](index.md)
 - [Value Types and Reference Types](value-types-and-reference-types.md)
 - [Troubleshooting Data Types](troubleshooting-data-types.md)
@@ -112,3 +111,4 @@ A database is one of the most important places to use nullable types. Not all da
 - [Local Type Inference](../variables/local-type-inference.md)
 - [Is Operator](../../../language-reference/operators/is-operator.md)
 - [IsNot Operator](../../../language-reference/operators/isnot-operator.md)
+- [Nullable Value Types (C#)](../../../../csharp/language-reference/builtin-types/nullable-value-types.md)

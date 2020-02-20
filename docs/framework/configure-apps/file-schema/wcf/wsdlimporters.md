@@ -12,5 +12,5 @@ This configuration element specifies all the WSDL importers that imports Web Ser
 - <xref:System.ServiceModel.Configuration.WsdlImporterElementCollection>
 - <xref:System.ServiceModel.Description.MetadataImporter>
 - <xref:System.ServiceModel.Description.WsdlImporter>
-- [WCF Client Configuration](../../../../../docs/framework/wcf/feature-details/client-configuration.md)
-- [Clients](../../../../../docs/framework/wcf/feature-details/clients.md)
+- [WCF Client Configuration](../../../wcf/feature-details/client-configuration.md)
+- [Clients](../../../wcf/feature-details/clients.md)

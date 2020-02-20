@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: ee518bda-3296-482e-a7b7-e9d51dd1a181
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetTypeSpecFromToken Method
 Gets the binary metadata signature of the type specification represented by the specified token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTypeSpecFromToken (   
    [in]  mdTypeSpec            typespec,   
    [out] PCCOR_SIGNATURE       *ppvSig,   

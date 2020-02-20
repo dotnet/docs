@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "CloneEnumWbemClassObject function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CloneEnumWbemClassObject function
 Makes a logical copy of an enumerator, retaining its current position in an enumeration.
@@ -24,7 +22,7 @@ Makes a logical copy of an enumerator, retaining its current position in an enum
 
 ## Syntax
 
-```
+```cpp
 HRESULT CloneEnumWbemClassObject (
    [out] IEnumWbemClassObject**  ppEnum, 
    [in] DWORD                    authLevel,
@@ -84,7 +82,7 @@ If the function call fails, you can obtain additional error information by calli
 For an example, see the [IEnumWbemClassObject::Clone](/windows/desktop/api/wbemcli/nf-wbemcli-ienumwbemclassobject-clone) method.
 
 ## Requirements
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
  **Header:** WMINet_Utils.idl
 

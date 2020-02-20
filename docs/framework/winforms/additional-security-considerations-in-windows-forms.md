@@ -1,5 +1,5 @@
 ---
-title: "Additional Security Considerations in Windows Forms"
+title: "Additional Security Considerations"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Forms, secure calls to Windows API"

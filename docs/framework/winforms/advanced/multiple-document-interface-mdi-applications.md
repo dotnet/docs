@@ -12,7 +12,7 @@ ms.assetid: 599faf75-13cf-49cc-ad3c-255545e5cb97
 Multiple-document interface (MDI) applications enable you to display multiple documents at the same time, with each document displayed in its own window. MDI applications often have a Window menu item with submenus for switching between windows or documents.  
   
 > [!NOTE]
->  There are some behavior differences between MDI forms and single-document interface (SDI) windows in Windows Forms. The `Opacity` property does not affect the appearance of MDI child forms. Additionally, the <xref:System.Windows.Forms.Form.CenterToParent%2A> method does not affect the behavior of MDI child forms.  
+> There are some behavior differences between MDI forms and single-document interface (SDI) windows in Windows Forms. The `Opacity` property does not affect the appearance of MDI child forms. Additionally, the <xref:System.Windows.Forms.Form.CenterToParent%2A> method does not affect the behavior of MDI child forms.  
   
 ## In This Section  
  [How to: Create MDI Parent Forms](how-to-create-mdi-parent-forms.md)  

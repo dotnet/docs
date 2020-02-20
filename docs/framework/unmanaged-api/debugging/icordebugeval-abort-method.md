@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 7070b6d0-f2e0-44ff-b124-0944cd807e69
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEval::Abort Method
 Aborts the computation this ICorDebugEval object is currently performing.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Abort ();  
 ```  
   

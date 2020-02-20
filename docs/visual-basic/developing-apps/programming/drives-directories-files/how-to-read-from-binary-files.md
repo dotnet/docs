@@ -1,5 +1,5 @@
 ---
-title: "How to: Read From Binary Files in Visual Basic"
+title: "How to: Read From Binary Files"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "binary files [Visual Basic], reading from"
@@ -9,6 +9,7 @@ helpviewer_keywords:
 ms.assetid: d2b1269e-24b6-42e0-9414-ae708db282d8
 ---
 # How to: Read From Binary Files in Visual Basic
+
 The `My.Computer.FileSystem` object provides the `ReadAllBytes` method for reading from binary files.  
   
 ### To read from a binary file  
@@ -22,6 +23,7 @@ The `My.Computer.FileSystem` object provides the `ReadAllBytes` method for readi
      [!code-vb[VbVbcnMyFileSystem#91](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/Class1.vb#91)]  
   
 ## Robust Programming  
+
  The following conditions may cause an exception to be thrown:  
   
 - The path is not valid for one of the following reasons: it is a zero-length string, it contains only white space, it contains invalid characters, or it is a device path (<xref:System.ArgumentException>).  

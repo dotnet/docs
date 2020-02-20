@@ -41,7 +41,7 @@ Tracking participants are extensibility points that allow a workflow developer t
 ```  
   
 > [!NOTE]
->  If a `trackingProfile` name is not specified, such as just `<etwTracking/>` or `<etwTracking profileName=""/>`, then the default tracking profile installed with the [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] in the Machine.config file is used.  
+> If a `trackingProfile` name is not specified, such as just `<etwTracking/>` or `<etwTracking profileName=""/>`, then the default tracking profile installed with the [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] in the Machine.config file is used.  
   
  In the Machine.config file, the default tracking profile subscribes to workflow instance records and faults.  
   
@@ -61,7 +61,7 @@ Tracking participants are extensibility points that allow a workflow developer t
   
  The size of an ETW event is limited by the ETW buffer size, or the by the maximum payload for an ETW event, whichever value is smaller. If the size of the event exceeds either of these ETW limits, the event is truncated and its content removed in an arbitrary manner. Variables, arguments, annotations and custom data are not selectively removed. In the case of truncation, all of these are truncated regardless of the value that caused the event size to exceed the ETW limit.  The removed data is replaced with `<item>..<item>`.  
   
- Complex types in variables, arguments, and custom data items are serialized to the ETW event record using the [NetDataContractSerializer Class](https://go.microsoft.com/fwlink/?LinkId=177537). This class includes CLR-type information in the serialized XML steam.  
+ Complex types in variables, arguments, and custom data items are serialized to the ETW event record using the <xref:System.Runtime.Serialization.NetDataContractSerializer> class. This class includes CLR-type information in the serialized XML steam.  
   
  Truncation of payload data due to ETW limits can result in duplicate tracking records being sent to an ETW session. This can occur if more than one session is listening for the events and the sessions have different payload limits for the events.  
   
@@ -71,7 +71,7 @@ Tracking participants are extensibility points that allow a workflow developer t
  Events that are written to an ETW session by the ETW tracking participant can be accessed through the Event Viewer (when using the default provider ID). This allows for rapidly viewing of tracking records that have been emitted by the workflow.  
   
 > [!NOTE]
->  Tracking record events emitted to an ETW session use event IDs in the range of 100 through 199.  
+> Tracking record events emitted to an ETW session use event IDs in the range of 100 through 199.  
   
 #### To enable viewing the Tracking Records in Event Viewer  
   
@@ -136,5 +136,5 @@ instance.Extensions.Add(new ConsoleTrackingParticipant());
   
 ## See also
 
-- [Windows Server App Fabric Monitoring](https://go.microsoft.com/fwlink/?LinkId=201273)
-- [Monitoring Applications with App Fabric](https://go.microsoft.com/fwlink/?LinkId=201275)
+- [Windows Server App Fabric Monitoring](https://docs.microsoft.com/previous-versions/appfabric/ee677251(v=azure.10))
+- [Monitoring Applications with App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677276(v=azure.10))

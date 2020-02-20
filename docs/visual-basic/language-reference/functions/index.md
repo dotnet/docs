@@ -1,5 +1,5 @@
 ---
-title: "Functions (Visual Basic)"
+title: "Functions"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Visual Basic, functions"
@@ -10,7 +10,7 @@ ms.assetid: d86fc51f-f46e-4941-8ae2-6262da3d2688
 The topics in this section contain tables of the Visual Basic run-time member functions.  
   
 > [!NOTE]
->  You can also create functions and call them. For more information, see [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md) and [How to: Create a Procedure that Returns a Value](../../../visual-basic/programming-guide/language-features/procedures/how-to-create-a-procedure-that-returns-a-value.md).  
+> You can also create functions and call them. For more information, see [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md) and [How to: Create a Procedure that Returns a Value](../../../visual-basic/programming-guide/language-features/procedures/how-to-create-a-procedure-that-returns-a-value.md).  
   
 ## In This Section  
  [Conversion Functions](../../../visual-basic/language-reference/functions/conversion-functions.md)  
@@ -25,5 +25,3 @@ The topics in this section contain tables of the Visual Basic run-time member fu
   
 ## Related Sections  
  [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md)  
-  
- [Visual Basic](../../../visual-basic/index.md)

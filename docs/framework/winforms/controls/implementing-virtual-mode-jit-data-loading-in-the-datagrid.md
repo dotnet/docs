@@ -1,5 +1,5 @@
 ---
-title: "Implementing Virtual Mode with Just-In-Time Data Loading in the Windows Forms DataGridView Control"
+title: Implementing Virtual Mode with Just-In-Time Data Loading in DataGridView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -28,7 +28,7 @@ One reason to implement virtual mode in the <xref:System.Windows.Forms.DataGridV
  The `IDataPageRetriever`, `DataRetriever`, and `Cache` types are described later in this topic.  
   
 > [!NOTE]
->  Storing sensitive information, such as a password, within the connection string can affect the security of your application. Using Windows Authentication (also known as integrated security) is a more secure way to control access to a database. For more information, see [Protecting Connection Information](../../data/adonet/protecting-connection-information.md).  
+> Storing sensitive information, such as a password, within the connection string can affect the security of your application. Using Windows Authentication (also known as integrated security) is a more secure way to control access to a database. For more information, see [Protecting Connection Information](../../data/adonet/protecting-connection-information.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridView.Virtual_lazyloading#100](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.Virtual_lazyloading/CS/lazyloading.cs#100)]
  [!code-vb[System.Windows.Forms.DataGridView.Virtual_lazyloading#100](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridView.Virtual_lazyloading/VB/lazyloading.vb#100)]  

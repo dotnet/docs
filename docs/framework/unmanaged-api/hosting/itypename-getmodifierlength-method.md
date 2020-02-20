@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: ac45f261-03f9-4728-b5d7-dd7cbb05f9e6
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ITypeName::GetModifierLength Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetModifierLength (  
     [out, retval] DWORD* pCount  
 );  

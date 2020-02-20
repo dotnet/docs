@@ -1,5 +1,5 @@
 ---
-title: "Defining Classes (Visual Basic)"
+title: "Defining Classes"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "execution [Visual Basic], ending"
@@ -37,7 +37,7 @@ This walkthrough demonstrates how to define classes, which you can then use to c
      [!code-vb[VbVbalrOOP#5](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOOP/VB/OOP.vb#5)]
   
     > [!NOTE]
-    >  You can use the Visual Basic **Code Editor** to add a class to your startup form by typing the `Class` keyword followed by the name of the new class. The **Code Editor** provides a corresponding `End Class` statement for you.  
+    > You can use the Visual Basic **Code Editor** to add a class to your startup form by typing the `Class` keyword followed by the name of the new class. The **Code Editor** provides a corresponding `End Class` statement for you.  
   
 6. Define a private field for the class by adding the following code between the `Class` and `End Class` statements:  
   

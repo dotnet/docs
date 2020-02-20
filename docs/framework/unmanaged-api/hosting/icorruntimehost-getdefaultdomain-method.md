@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 5e17a6fc-f335-4aae-9bb0-c3e1271a9426
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorRuntimeHost::GetDefaultDomain Method
 Gets an interface pointer of type <xref:System._AppDomain?displayProperty=nameWithType> that represents the default domain for the current process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDefaultDomain (  
     [out] IUnknown** pAppDomain  
 );  

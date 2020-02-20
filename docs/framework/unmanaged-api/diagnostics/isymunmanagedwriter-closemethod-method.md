@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: b8025e04-f0e5-40c8-849c-8cd51323420e
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedWriter::CloseMethod Method
 Closes the current method. Once a method is closed, no more symbols can be defined within it.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CloseMethod();  
 ```  
   

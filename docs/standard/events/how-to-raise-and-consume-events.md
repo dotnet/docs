@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "raising events"
   - "events [.NET Framework], samples"
 ms.assetid: 42afade7-3a02-4f2e-868b-95845f302f8f
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Raise and Consume Events
 The examples in this topic show how to work with events. They include examples of the <xref:System.EventHandler> delegate, the <xref:System.EventHandler%601> delegate, and a custom delegate, to illustrate events with and without data.  

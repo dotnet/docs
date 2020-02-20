@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "format providers [.NET Framework]"
   - "custom format strings"
 ms.assetid: a281bfbf-6596-45ed-a2d6-3782d535ada2
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Define and Use Custom Numeric Format Providers
 The .NET Framework gives you extensive control over the string representation of numeric values. It supports the following features for customizing the format of numeric values:  

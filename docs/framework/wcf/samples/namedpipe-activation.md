@@ -6,7 +6,7 @@ ms.assetid: f3c0437d-006c-442e-bfb0-6b29216e4e29
 
 # NamedPipe Activation
 
-This sample demonstrates hosting a service that uses Windows Process Activation Service (WAS) to activate a service that communicates over names pipes. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) and requires [!INCLUDE[wv](../../../../includes/wv-md.md)] to run.
+This sample demonstrates hosting a service that uses Windows Process Activation Service (WAS) to activate a service that communicates over names pipes. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) and requires Windows Vista to run.
 
 > [!NOTE]
 > The set-up procedure and build instructions for this sample are located at the end of this topic.
@@ -16,7 +16,7 @@ This sample demonstrates hosting a service that uses Windows Process Activation 
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Hosting\WASHost\NamedPipeActivation`
 
@@ -154,7 +154,7 @@ Press <ENTER> to terminate client.
 
 ### To set up, build, and run the sample
 
-1. Ensure that [!INCLUDE[iisver](../../../../includes/iisver-md.md)] is installed. [!INCLUDE[iisver](../../../../includes/iisver-md.md)] is required for WAS activation.
+1. Ensure that IIS 7.0 is installed. IIS 7.0 is required for WAS activation.
 
 2. Ensure you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).
 
@@ -174,7 +174,7 @@ Press <ENTER> to terminate client.
 
     1. To support net.pipe activation, the default Web site must first be bound to the net.pipe protocol. This can be done using appcmd.exe, which is installed with the IIS 7.0 management toolset. From an elevated (administrator) command prompt, run the following command.
 
-        ```
+        ```console
         %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site"
         -+bindings.[protocol='net.pipe',bindingInformation='*']
         ```
@@ -186,7 +186,7 @@ Press <ENTER> to terminate client.
 
     2. Although all applications within a site share a common net.pipe binding, each application can enable net.pipe support individually. To enable net.pipe for the /servicemodelsamples application, run the following command from an elevated command prompt.
 
-        ```
+        ```console
         %windir%\system32\inetsrv\appcmd.exe set app "Default Web Site/servicemodelsamples" /enabledProtocols:http,net.pipe
         ```
 
@@ -203,7 +203,7 @@ Press <ENTER> to terminate client.
 
     1. Remove net.tcp from the list of enabled protocols by running the following command from an elevated command prompt.
 
-        ```
+        ```console
         %windir%\system32\inetsrv\appcmd.exe set app "Default Web Site/servicemodelsamples" /enabledProtocols:http
         ```
 
@@ -212,7 +212,7 @@ Press <ENTER> to terminate client.
 
     2. Remove the net.tcp site binding by running the following command from an elevated command prompt.
 
-        ```
+        ```console
         %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site" --bindings.[protocol='net.pipe',bindingInformation='*']
         ```
 

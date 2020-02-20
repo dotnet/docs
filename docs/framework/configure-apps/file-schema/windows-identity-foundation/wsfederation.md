@@ -7,9 +7,10 @@ author: "BrucePerlerMS"
 # \<wsFederation>
 Provides configuration for the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM).  
   
-\<system.identityModel.services>  
-\<federationConfiguration>  
-\<wsFederation>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.identityModel.services>**](system-identitymodel-services.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<federationConfiguration>**](federationconfiguration.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<wsFederation>**  
   
 ## Syntax  
   
@@ -68,7 +69,7 @@ Provides configuration for the <xref:System.IdentityModel.Services.WSFederationA
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<federationConfiguration>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/federationconfiguration.md)|Contains the settings that configure the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) and the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM).|  
+|[\<federationConfiguration>](federationconfiguration.md)|Contains the settings that configure the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> (WSFAM) and the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM).|  
   
 ## Remarks  
  You can use the `<wsFederation>` element to configure default WS-Federation parameter settings and default behavior for the WSFAM. WS-Federation parameter settings defined under the `<wsFederation>` element set equivalent properties exposed by the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> class. These properties remain the same for every request issued by the WSFAM. You can change the WS-Federation parameters dynamically during request processing by adding event handlers for the events exposed by WSFAM; for example, the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule.RedirectingToIdentityProvider> event. For more information, see the documentation for the <xref:System.IdentityModel.Services.WSFederationAuthenticationModule> class.  
@@ -79,7 +80,7 @@ Provides configuration for the <xref:System.IdentityModel.Services.WSFederationA
  The following XML shows a `<wsFederation>` element that specifies settings for the WSFAM.  
   
 > [!WARNING]
->  In this example, the WSFAM is not required to use HTTPS. This is because the `requireHttps` attribute on the `<wsFederation>` element is set `false`. This setting is not recommended for most production environments as it may present a security risk.  
+> In this example, the WSFAM is not required to use HTTPS. This is because the `requireHttps` attribute on the `<wsFederation>` element is set `false`. This setting is not recommended for most production environments as it may present a security risk.  
   
 ```xml
 <wsFederation passiveRedirectEnabled="true"   

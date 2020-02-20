@@ -1,12 +1,11 @@
 ---
-title: "How to: Return Subsets of Element Properties in a Query - C# Programming Guide"
-ms.custom: seodec18
+title: "How to return subsets of element properties in a query - C# Programming Guide"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "anonymous types [C#], for subsets of element properties"
 ms.assetid: fabdf349-f443-4e3f-8368-6c471be1dd7b
 ---
-# How to: Return Subsets of Element Properties in a Query (C# Programming Guide)
+# How to return subsets of element properties in a query (C# Programming Guide)
 Use an anonymous type in a query expression when both of these conditions apply:  
   
 - You want to return only some of the properties of each source element.  
@@ -15,7 +14,7 @@ Use an anonymous type in a query expression when both of these conditions apply:
   
  If you only want to return one property or field from each source element, then you can just use the dot operator in the `select` clause. For example, to return only the `ID` of each `student`, write the `select` clause as follows:  
   
-```  
+```csharp  
 select student.ID;  
 ```  
   
@@ -26,7 +25,7 @@ select student.ID;
   
  Note that the anonymous type uses the source element's names for its properties if no names are specified. To give new names to the properties in the anonymous type, write the `select` statement as follows:  
   
-```  
+```csharp  
 select new { First = student.FirstName, Last = student.LastName };  
 ```  
   
@@ -42,6 +41,6 @@ To run this code, copy and paste the class into a C# console application  with a
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Anonymous Types](../../../csharp/programming-guide/classes-and-structs/anonymous-types.md)
-- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)
+- [C# Programming Guide](../index.md)
+- [Anonymous Types](./anonymous-types.md)
+- [LINQ in C#](../../linq/index.md)

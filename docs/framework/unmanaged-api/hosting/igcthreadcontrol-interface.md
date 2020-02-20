@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 3ff04d75-85ac-4df9-886d-dbaa037c0552
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IGCThreadControl Interface
 Provides methods for participating in the scheduling of threads that would otherwise be blocked for a garbage collection.  

@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "GetObjectText function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetObjectText function
 Returns a textual rendering of the object in the Managed Object Format (MOF) syntax.
@@ -24,7 +22,7 @@ Returns a textual rendering of the object in the Managed Object Format (MOF) syn
     
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetObjectText (
    [in] int                vFunc, 
    [in] IWbemClassObject*   ptr, 
@@ -72,7 +70,7 @@ The following algorithm is used to reconstruct the text of the parameters of a m
 `pstrObjectText` must be a pointer to a `null` when the function is called; it must not point to a string that is valid before the method call, because the pointer will not be deallocated.
 
 ## Requirements  
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.idl  
   

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 20bdf8ff-2d15-4c64-8950-6888f642d6c0
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedSourceServerModule::GetSourceServerData Method
 Returns the source server data for the module. The caller must free resources by using `CoTaskMemFree`.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSourceServerData(  
     [out] ULONG* pDataByteCount,   
     [out, size_is (, *pDataByteCount)] BYTE** ppData);  

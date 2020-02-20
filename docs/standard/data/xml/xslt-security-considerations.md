@@ -3,8 +3,6 @@ title: "XSLT Security Considerations"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: fea695be-617c-4977-9567-140e820436fc
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # XSLT Security Considerations
 The XSLT language has a rich set of features that give you a great deal of power and flexibility. It includes many features that, while useful, could also be exploited by outside sources. In order to use XSLT safely, you must understand the types of security issues that arise when using XSLT, and the basic strategies that you can employ to mitigate these risks.  
@@ -33,7 +31,7 @@ The XSLT language has a rich set of features that give you a great deal of power
 - When executing the transformation, the <xref:System.Xml.XmlResolver> is used to resolve the `document()` function.  
   
     > [!NOTE]
-    >  The `document()` function is disabled by default on the <xref:System.Xml.Xsl.XslCompiledTransform> class. This feature can be enabled by setting the <xref:System.Xml.Xsl.XsltSettings.EnableDocumentFunction%2A?displayProperty=nameWithType> property to `true` and passing the <xref:System.Xml.Xsl.XsltSettings> object to the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> method.  
+    > The `document()` function is disabled by default on the <xref:System.Xml.Xsl.XslCompiledTransform> class. This feature can be enabled by setting the <xref:System.Xml.Xsl.XsltSettings.EnableDocumentFunction%2A?displayProperty=nameWithType> property to `true` and passing the <xref:System.Xml.Xsl.XsltSettings> object to the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> method.  
   
  The <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> and <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A> methods each include overloads that accept an <xref:System.Xml.XmlResolver> as one of its arguments. If an <xref:System.Xml.XmlResolver> is not specified, a default <xref:System.Xml.XmlUrlResolver> with no credentials is used.  
   

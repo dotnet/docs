@@ -1,5 +1,6 @@
 ---
 title: "Windows Forms Controls and Equivalent WPF Controls"
+titleSuffix: ""
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Windows Forms [WPF], interoperability with"
@@ -8,11 +9,11 @@ helpviewer_keywords:
 ms.assetid: 8a157e6b-8054-46db-a5cf-a78966acc7a1
 ---
 # Windows Forms Controls and Equivalent WPF Controls
-Many [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls have equivalent [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls, but some [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls have no equivalents in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. This topic compares control types provided by the two technologies.  
+Many Windows Forms controls have equivalent [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] controls, but some Windows Forms controls have no equivalents in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. This topic compares control types provided by the two technologies.  
   
- You can always use interoperation to host [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls that do not have equivalents in your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]-based applications.  
+ You can always use interoperation to host Windows Forms controls that do not have equivalents in your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]-based applications.  
   
- The following table shows which [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls and components have equivalent [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control functionality.  
+ The following table shows which Windows Forms controls and components have equivalent [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] control functionality.  
   
 |Windows Forms control|WPF equivalent control|Remarks|  
 |---------------------------|----------------------------|-------------|  
@@ -45,7 +46,7 @@ Many [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md
 |<xref:System.Windows.Forms.MonthCalendar>|<xref:System.Windows.Controls.Calendar>||  
 |<xref:System.Windows.Forms.NotifyIcon>|No equivalent control.||  
 |<xref:System.Windows.Forms.NumericUpDown>|<xref:System.Windows.Controls.TextBox> and two <xref:System.Windows.Controls.Primitives.RepeatButton> controls.||  
-|<xref:System.Windows.Forms.OpenFileDialog>|<xref:Microsoft.Win32.OpenFileDialog>|The <xref:Microsoft.Win32.OpenFileDialog> class is a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] wrapper around the [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] control.|  
+|<xref:System.Windows.Forms.OpenFileDialog>|<xref:Microsoft.Win32.OpenFileDialog>|The <xref:Microsoft.Win32.OpenFileDialog> class is a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] wrapper around the Win32 control.|  
 |<xref:System.Windows.Forms.PageSetupDialog>|No equivalent control.||  
 |<xref:System.Windows.Forms.Panel>|<xref:System.Windows.Controls.Canvas>||  
 |<xref:System.Windows.Forms.PictureBox>|<xref:System.Windows.Controls.Image>||  
@@ -57,7 +58,7 @@ Many [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md
 |<xref:System.Windows.Forms.PropertyGrid>|No equivalent control.||  
 |<xref:System.Windows.Forms.RadioButton>|<xref:System.Windows.Controls.RadioButton>||  
 |<xref:System.Windows.Forms.RichTextBox>|<xref:System.Windows.Controls.RichTextBox>||  
-|<xref:System.Windows.Forms.SaveFileDialog>|<xref:Microsoft.Win32.SaveFileDialog>|The <xref:Microsoft.Win32.SaveFileDialog> class is a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] wrapper around the [!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] control.|  
+|<xref:System.Windows.Forms.SaveFileDialog>|<xref:Microsoft.Win32.SaveFileDialog>|The <xref:Microsoft.Win32.SaveFileDialog> class is a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] wrapper around the Win32 control.|  
 |<xref:System.Windows.Forms.ScrollableControl>|<xref:System.Windows.Controls.ScrollViewer>||  
 |<xref:System.Media.SoundPlayer>|<xref:System.Windows.Media.MediaPlayer>||  
 |<xref:System.Windows.Forms.SplitContainer>|<xref:System.Windows.Controls.GridSplitter>||  

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 7b9b93b0-fe92-42ba-8693-701168a29dde
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # LPTHREAD_START_ROUTINE Function Pointer
 Points to a function that notifies the host that a thread has started to execute.  
@@ -24,7 +22,7 @@ Points to a function that notifies the host that a thread has started to execute
   
 ## Syntax  
   
-```  
+```cpp  
 typedef DWORD (__stdcall *LPTHREAD_START_ROUTINE) (  
     [in] LPVOID lpThreadParameter  
 );  

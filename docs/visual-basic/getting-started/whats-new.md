@@ -15,49 +15,70 @@ This topic lists key feature names for each version of Visual Basic, with detail
 
 ## Current version
 
-Visual Basic 15.8 / Visual Studio 2017 Version 15.8
-For new features, see [Visual Basic 15.8](#visual-basic-158)
+Visual Basic 16.0 / Visual Studio 2019 version 16.0\
+For new features, see [Visual Basic 16.0](#visual-basic-160).
 
 ## Previous versions
 
-Visual Basic 15.5 / Visual Studio 2017 Version 15.5
-For new features, see [Visual Basic 15.5](#visual-basic-155)
+Visual Basic 15.8 / Visual Studio 2017 version 15.8\
+For new features, see [Visual Basic 15.8](#visual-basic-158).
 
-Visual Basic 15.3 / Visual Studio 2017 Version 15.3
-For new features, see [Visual Basic 15.3](#visual-basic-153)
+Visual Basic 15.5 / Visual Studio 2017 version 15.5\
+For new features, see [Visual Basic 15.5](#visual-basic-155).
 
-Visual Basic 2017 / Visual Studio 2017
-For new features, see [Visual Basic 2017](#visual-basic-2017)
+Visual Basic 15.3 / Visual Studio 2017 version 15.3\
+For new features, see [Visual Basic 15.3](#visual-basic-153).
 
-Visual Basic / Visual Studio 2015
-For new features, see [Visual Basic 14](#visual-basic-14)
+Visual Basic 2017 / Visual Studio 2017\
+For new features, see [Visual Basic 2017](#visual-basic-2017).
 
-Visual Basic / Visual Studio 2013
+Visual Basic / Visual Studio 2015\
+For new features, see [Visual Basic 14](#visual-basic-14).
+
+Visual Basic / Visual Studio 2013\
 Technology previews of the .NET Compiler Platform (“Roslyn”)
 
-Visual Basic / Visual Studio 2012
+Visual Basic / Visual Studio 2012\
 `Async` and `await` keywords, iterators, caller info attributes
 
-Visual Basic, Visual Studio 2010
+Visual Basic, Visual Studio 2010\
 Auto-implemented properties, collection initializers, implicit line continuation, dynamic, generic co/contra variance, global namespace access
 
-Visual Basic / Visual Studio 2008
+Visual Basic / Visual Studio 2008\
 Language Integrated Query (LINQ), XML literals, local type inference, object initializers, anonymous types, extension methods, local `var` type inference, lambda expressions, `if` operator, partial methods, nullable value types
 
-Visual Basic / Visual Studio 2005
+Visual Basic / Visual Studio 2005\
 The `My` type and helper types (access to app, computer, files system, network)
 
-Visual Basic / Visual Studio .NET 2003
+Visual Basic / Visual Studio .NET 2003\
 Bit-shift operators, loop variable declaration
 
-Visual Basic / Visual Studio .NET 2002
+Visual Basic / Visual Studio .NET 2002\
 The first release of Visual Basic .NET
+
+## Visual Basic 16.0
+
+Visual Basic 16.0 focuses on supplying more of the features of the Visual Basic Runtime (microsoft.visualbasic.dll) to .NET Core and is the first version of Visual Basic focused on .NET Core. Many portions of the Visual Basic Runtime depend on WinForms and these will be added in a later version of Visual Basic.
+
+**Comments allowed in more places within statements**
+
+In Visual Basic 15.8 and earlier versions, comments are only allowed on blank lines, at the end of a statement, or in specific places within a statement where an implicit line continuation is allowed. Starting with Visual Basic 16.0, comments are also allowed after explicit line continuations and within a statement on a line beginning with a space followed by an underscore.
+
+```vb
+Public Sub Main()
+    cmd.CommandText = ' Comment is allowed here without _
+        "SELECT * FROM Titles JOIN Publishers " _ ' This is a comment
+        & "ON Publishers.PubId = Titles.PubID " _
+ _ ' This is a comment on a line without code
+        & "WHERE Publishers.State = 'CA'"
+End Sub
+```
 
 ## Visual Basic 15.8
 
 **Optimized floating-point to integer conversion**
 
-In previous versions of Visual Basic, conversion of [Double](../language-reference/data-types/double-data-type.md) and [Single](../language-reference/data-types/single-data-type.md) values to integers offered relatively poor performance. Visual Basic 15.8 significantly enhances the performance of floating-point conversions to integers when you pass the value returned by any of the following methods to one of the [intrinsic Visual Basic integer conversion functions](../language-reference/functions/type-conversion-functions.md) (CByte, CShort, CInt, CLng, CSByte, CUShort, CUInt, CULng), or when the value returned by any of the following methods is implicitly cast to an integral type when [Option Strict](~/docs/visual-basic/language-reference/statements/option-strict-statement.md) is set to `Off`:
+In previous versions of Visual Basic, conversion of [Double](../language-reference/data-types/double-data-type.md) and [Single](../language-reference/data-types/single-data-type.md) values to integers offered relatively poor performance. Visual Basic 15.8 significantly enhances the performance of floating-point conversions to integers when you pass the value returned by any of the following methods to one of the [intrinsic Visual Basic integer conversion functions](../language-reference/functions/type-conversion-functions.md) (CByte, CShort, CInt, CLng, CSByte, CUShort, CUInt, CULng), or when the value returned by any of the following methods is implicitly cast to an integral type when [Option Strict](../language-reference/statements/option-strict-statement.md) is set to `Off`:
 
 - <xref:Microsoft.VisualBasic.Conversion.Fix(System.Double)?displayProperty=nameWithType>
 - <xref:Microsoft.VisualBasic.Conversion.Fix(System.Object)?displayProperty=nameWithType>
@@ -81,7 +102,6 @@ Dim b1 As Byte = CByte(Int(d))                 ' Result: 173
 Dim s1 AS Short = CShort(Math.Truncate(s))     ' Result: 173
 Dim i2 As Integer = CInt(Math.Ceiling(d))      ' Result: 174
 Dim i3 As Integer = CInt(Math.Round(s))        ' Result: 174
-
 ```
 
 Note that this truncates rather than rounds floating-point values.
@@ -180,13 +200,13 @@ For more information, see [Reference Return Values](../programming-guide/languag
 
 ## Visual Basic 14
 
-[Nameof](../../csharp/language-reference/keywords/nameof.md)
+[NameOf](../language-reference/operators/nameof.md)
 
 You can get the unqualified string name of a type or member for use in an error message without hard coding a string.  This allows your code to remain correct when refactoring.  This feature is also useful for hooking up model-view-controller MVC links and firing property changed events.
 
 [String interpolation](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md)
 
-You can use string interpolation expressions to construct strings.  An interpolated string expression looks like a template string that contains expressions.  An interpolated string is easier to understand with respect to arguments than [Composite Formatting](../../standard/base-types/composite-format.md).
+You can use string interpolation expressions to construct strings.  An interpolated string expression looks like a template string that contains expressions.  An interpolated string is easier to understand with respect to arguments than [Composite Formatting](../../standard/base-types/composite-formatting.md).
 
 [Null-conditional member access and indexing](../language-reference/operators/null-conditional-operators.md)
 
@@ -210,7 +230,7 @@ You can have date literals in yyyy-mm-dd format, `#2015-03-17 16:10 PM#`.
 
 **Readonly interface properties**
 
-You can implement readonly interface properties using a readwrite property.  The interface guarantees minimum functionality, and it does not stop an implementing class from allowing the property to be set.
+You can implement readonly interface properties using a readwrite property. The interface guarantees minimum functionality, and it does not stop an implementing class from allowing the property to be set.
 
 [TypeOf \<expr> IsNot \<type>](../../visual-basic/language-reference/operators/typeof-operator.md)
 
@@ -265,4 +285,5 @@ Now the compiler will use normal overload resolution rules to choose the most ap
 
 ## See also
 
-- [What's New in Visual Studio 2017](/visualstudio/ide/whats-new-in-visual-studio)
+- [What's New in Visual Studio 2017](/visualstudio/ide/whats-new-visual-studio-2017)
+- [What's New in Visual Studio 2019](/visualstudio/ide/whats-new-visual-studio-2019)

@@ -6,14 +6,12 @@ helpviewer_keywords:
   - "asynchronous design patterns, .NET"
   - ".NET Framework, asynchronous design patterns"
 ms.assetid: 4ece5c0b-f8fe-4114-9862-ac02cfe5a5d7
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Asynchronous programming patterns
 
 .NET provides three patterns for performing asynchronous operations:  
 
-- **Task-based Asynchronous Pattern (TAP)**, which uses a single method to represent the initiation and completion of an asynchronous operation. TAP was introduced in the .NET Framework 4. **It's the recommended approach to asynchronous programming in .NET.** The [async](~/docs/csharp/language-reference/keywords/async.md) and [await](~/docs/csharp/language-reference/keywords/await.md) keywords in C# and the [Async](~/docs/visual-basic/language-reference/modifiers/async.md) and [Await](~/docs/visual-basic/language-reference/operators/await-operator.md) operators in Visual Basic add language support for TAP. For more information, see [Task-based Asynchronous Pattern (TAP)](task-based-asynchronous-pattern-tap.md).  
+- **Task-based Asynchronous Pattern (TAP)**, which uses a single method to represent the initiation and completion of an asynchronous operation. TAP was introduced in the .NET Framework 4. **It's the recommended approach to asynchronous programming in .NET.** The [async](../../csharp/language-reference/keywords/async.md) and [await](../../csharp/language-reference/operators/await.md) keywords in C# and the [Async](../../visual-basic/language-reference/modifiers/async.md) and [Await](../../visual-basic/language-reference/operators/await-operator.md) operators in Visual Basic add language support for TAP. For more information, see [Task-based Asynchronous Pattern (TAP)](task-based-asynchronous-pattern-tap.md).  
 
 - **Event-based Asynchronous Pattern (EAP)**, which is the event-based legacy model for providing asynchronous behavior. It requires a method that has the `Async` suffix and one or more events, event handler delegate types, and `EventArg`-derived types. EAP was introduced in the .NET Framework 2.0. It's no longer recommended for new development. For more information, see [Event-based Asynchronous Pattern (EAP)](event-based-asynchronous-pattern-eap.md).  
 
@@ -64,6 +62,6 @@ public class MyClass
 ## See also
 
 - [Async in depth](../async-in-depth.md)
-- [Asynchronous programming in C#](~/docs/csharp/async.md)
-- [Async Programming in F#](~/docs/fsharp/tutorials/asynchronous-and-concurrent-programming/async.md)
-- [Asynchronous Programming with Async and Await (Visual Basic)](~/docs/visual-basic/programming-guide/concepts/async/index.md)
+- [Asynchronous programming in C#](../../csharp/async.md)
+- [Async Programming in F#](../../fsharp/tutorials/asynchronous-and-concurrent-programming/async.md)
+- [Asynchronous Programming with Async and Await (Visual Basic)](../../visual-basic/programming-guide/concepts/async/index.md)

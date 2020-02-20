@@ -19,7 +19,7 @@ Throughout this series, you'll explore concepts and patterns in functional progr
 
 Functional programming, like other programming paradigms, comes with a vocabulary that you will eventually need to learn. Here are some common terms you'll see all of the time:
 
-* **Function** - A function is a construct that will produce an output when given an input. More formally, it _maps_ an item from one set to another set. This formalism is lifted into the concrete in many ways, especially when using functions that operate on collections of data. It is the most basic (and important) concept in functional programming. 
+* **Function** - A function is a construct that will produce an output when given an input. More formally, it _maps_ an item from one set to another set. This formalism is lifted into the concrete in many ways, especially when using functions that operate on collections of data. It is the most basic (and important) concept in functional programming.
 * **Expression** - An expression is a construct in code that produces a value. In F#, this value must be bound or explicitly ignored. An expression can be trivially replaced by a function call.
 * **Purity** - Purity is a property of a function such that its return value is always the same for the same arguments, and that its evaluation has no side effects. A pure function depends entirely on its arguments.
 * **Referential Transparency** - Referential Transparency is a property of expressions such that they can be replaced with their output without affecting a program's behavior.
@@ -151,7 +151,7 @@ The `addOneToValue` function is clearly impure, because `value` could be changed
 Here is another example of a non-pure function, because it performs a side effect:
 
 ```fsharp
-let addOneToValue x = 
+let addOneToValue x =
     printfn "x is %d" x
     x + 1
 ```

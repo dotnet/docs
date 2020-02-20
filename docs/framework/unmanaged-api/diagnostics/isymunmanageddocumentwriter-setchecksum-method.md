@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c7e99879-421f-43ce-b193-34733cf30085
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedDocumentWriter::SetCheckSum Method
 Sets checksum information.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetCheckSum(  
     [in]  GUID     algorithmId,  
     [in]  ULONG32  checkSumSize,  

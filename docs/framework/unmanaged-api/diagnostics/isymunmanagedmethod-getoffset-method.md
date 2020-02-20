@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 8bf3cb62-89bf-4159-ad53-de606aba89e8
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedMethod::GetOffset Method
 Returns the offset within this method that corresponds to a given position within a document.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetOffset(  
     [in]  ISymUnmanagedDocument*  document,  
     [in]  ULONG32                 line,  

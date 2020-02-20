@@ -1,5 +1,5 @@
 ---
-title: "Manipulating Files and Directories in Visual Basic"
+title: "Manipulating Files and Directories"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "files [Visual Basic], reading text"
@@ -17,6 +17,7 @@ helpviewer_keywords:
 ms.assetid: cae77565-9f78-4e46-8e42-eb2f9f8e1ffd
 ---
 # Walkthrough: Manipulating Files and Directories in Visual Basic
+
 This walkthrough provides an introduction to the fundamentals of file I/O in Visual Basic. It describes how to create a small application that lists and examines text files in a directory. For each selected text file, the application provides file attributes and the first line of content. There is an option to write information to a log file.  
   
  This walkthrough uses members of the `My.Computer.FileSystem Object`, which are available in Visual Basic. See <xref:Microsoft.VisualBasic.FileIO.FileSystem> for more information. At the end of the walkthrough, an equivalent example is provided that uses classes from the <xref:System.IO> namespace.  
@@ -144,11 +145,13 @@ This walkthrough provides an introduction to the fundamentals of file I/O in Vis
 6. Run the application. The **Save Results** check box and the **Examine** button are disabled if an item is not selected in the `ListBox`.  
   
 ## Full example using My.Computer.FileSystem  
+
  Following is the complete example.  
   
  [!code-vb[VbVbcnMyFileSystem#101](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/class2.vb#101)]  
   
 ## Full example using System.IO  
+
  The following equivalent example uses classes from the <xref:System.IO> namespace instead of using `My.Computer.FileSystem` objects.  
   
  [!code-vb[VbVbcnMyFileSystem#111](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnMyFileSystem/VB/class3.vb#111)]  

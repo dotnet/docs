@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 9432487e-f276-45d6-9a13-9a68024dbd46
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # BucketParameters Structure
 Stores the type name of an event and the parameters for the current exception that is associated with the event.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _BucketParameters {  
     BOOL  fInited;                    
     WCHAR pszEventTypeName[255];      

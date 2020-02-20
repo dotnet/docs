@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: bca6bd79-e288-475a-aa46-6bf81541d966
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorConfiguration::SetGCHostControl Method
 Sets the callback interface to be used by the garbage collector to request the host to change the limits of virtual memory.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetGCHostControl (  
     [in] IGCHostControl* pGCHostControl  
 );  

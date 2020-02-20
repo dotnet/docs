@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 2ca8a7a2-7b54-4ba3-8e73-277c7df485f3
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # EMemoryCriticalLevel Enumeration
 Contains values that indicate the impact of a failure when a specific memory allocation has been requested but cannot be satisfied.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     eTaskCritical      = 0,  
     eAppDomainCritical = 1,  

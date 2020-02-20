@@ -1,5 +1,5 @@
 ---
-title: "Introduction to LINQ (Visual Basic)"
+title: "Introduction to LINQ"
 ms.date: 07/20/2015
 ms.assetid: c6339c12-9b2d-433e-961c-0d2b7f0091c2
 ---
@@ -14,7 +14,7 @@ Language-Integrated Query (LINQ) is an innovation introduced in the .NET Framewo
   
  The following illustration from Visual Studio shows a partially-completed LINQ query against a SQL Server database in both C# and Visual Basic with full type checking and IntelliSense support.  
   
- ![Diagram that shwos a LINQ query with Intellisense.](./media/introduction-to-linq/linq-query-intellisense.png)  
+ ![Diagram that shows a LINQ query with Intellisense.](./media/introduction-to-linq/linq-query-intellisense.png)  
   
 ## Next Steps  
  To learn more details about LINQ, start by becoming familiar with some basic concepts in the Getting Started section [Getting Started with LINQ in Visual Basic](../../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md), and then read the documentation for the LINQ technology in which you are interested:  

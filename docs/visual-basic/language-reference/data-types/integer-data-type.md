@@ -1,5 +1,5 @@
 ---
-title: "Integer Data Type (Visual Basic)"
+title: "Integer Data Type"
 ms.date: 01/31/2018
 f1_keywords: 
   - "vb.Integer"
@@ -23,9 +23,11 @@ helpviewer_keywords:
 ms.assetid: a8f233b4-4be3-455c-861b-05af2fbb6c60
 ---
 # Integer data type (Visual Basic)
+
 Holds signed 32-bit (4-byte) integers that range in value from -2,147,483,648 through 2,147,483,647.  
   
 ## Remarks
+
  The `Integer` data type provides optimal performance on a 32-bit processor. The other integral types are slower to load and store from and to memory.  
   
  The default value of `Integer` is 0.  

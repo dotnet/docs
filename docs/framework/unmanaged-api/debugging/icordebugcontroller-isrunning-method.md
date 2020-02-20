@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: b33ff059-40c4-4dfe-9cb2-21bfed2de0b0
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugController::IsRunning Method
 Gets a value that indicates whether the threads in the process are currently running freely.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsRunning (  
     [out] BOOL *pbRunning  
 );  

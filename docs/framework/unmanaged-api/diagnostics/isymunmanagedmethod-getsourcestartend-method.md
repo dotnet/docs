@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 2a420900-01f1-4461-8777-3a34a6dc1426
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedMethod::GetSourceStartEnd Method
 Gets the start and end document positions for the source of this method. The first array position is the start, and the second array position is the end.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSourceStartEnd(  
     [in]  ISymUnmanagedDocument  *docs[2],  
     [in]  ULONG32                lines[2],  

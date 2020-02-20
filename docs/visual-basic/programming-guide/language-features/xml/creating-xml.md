@@ -1,5 +1,5 @@
 ---
-title: "Creating XML in Visual Basic"
+title: "Creating XML"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "XML [Visual Basic], creating"

@@ -1,5 +1,5 @@
 ---
-title: "Select Clause (Visual Basic)"
+title: "Select Clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.QuerySelect"
@@ -14,7 +14,7 @@ Defines the result of a query.
   
 ## Syntax  
   
-```  
+```vb  
 Select [ var1 = ] fieldName1 [, [ var2 = ] fieldName2 [...] ]  
 ```  
   

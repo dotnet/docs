@@ -17,18 +17,18 @@ The <xref:System.Transactions.TransactionScope> class provides a simple way to m
  [!code-csharp[TransactionScope#1](../../../../samples/snippets/csharp/VS_Snippets_Remoting/TransactionScope/cs/ScopeWithSQL.cs#1)]
  [!code-vb[TransactionScope#1](../../../../samples/snippets/visualbasic/VS_Snippets_Remoting/TransactionScope/vb/ScopeWithSQL.vb#1)]  
   
- The transaction scope is started once you create a new <xref:System.Transactions.TransactionScope> object.  As illustrated in the code sample, it is recommended that you create scopes with a **using** statement. The **using** statement is available both in C# and in Visual Basic, and works like a **try...finally** block to ensure that the scope is disposed of properly.  
+ The transaction scope is started once you create a new <xref:System.Transactions.TransactionScope> object.  As illustrated in the code sample, it is recommended that you create scopes with a `using` statement. The `using` statement is available both in C# and in Visual Basic, and works like a `try`...`finally` block to ensure that the scope is disposed of properly.  
   
- When you instantiate <xref:System.Transactions.TransactionScope>, the transaction manager determines which transaction to participate in. Once determined, the scope always participates in that transaction. The decision is based on two factors: whether an ambient transaction is present and the value of the **TransactionScopeOption** parameter in the constructor. The ambient transaction is the transaction within which your code executes. You can obtain a reference to the ambient transaction by calling the static <xref:System.Transactions.Transaction.Current%2A?displayProperty=nameWithType> property of the <xref:System.Transactions.Transaction> class. For more information on how this parameter is used, see the [Managing transaction flow using TransactionScopeOption](#ManageTxFlow) section of this topic.  
+ When you instantiate <xref:System.Transactions.TransactionScope>, the transaction manager determines which transaction to participate in. Once determined, the scope always participates in that transaction. The decision is based on two factors: whether an ambient transaction is present and the value of the `TransactionScopeOption` parameter in the constructor. The ambient transaction is the transaction within which your code executes. You can obtain a reference to the ambient transaction by calling the static <xref:System.Transactions.Transaction.Current%2A?displayProperty=nameWithType> property of the <xref:System.Transactions.Transaction> class. For more information on how this parameter is used, see the [Managing transaction flow using TransactionScopeOption](#ManageTxFlow) section of this topic.  
   
 ## Completing a transaction scope  
- When your application completes all the work it wants to perform in a transaction, you should call the <xref:System.Transactions.TransactionScope.Complete%2A?displayProperty=nameWIthType> method only once to inform the transaction manager that it is acceptable to commit the transaction. It is very good practice to put the call to <xref:System.Transactions.TransactionScope.Complete%2A> as the last statement in the **using** block.  
+ When your application completes all the work it wants to perform in a transaction, you should call the <xref:System.Transactions.TransactionScope.Complete%2A?displayProperty=nameWIthType> method only once to inform the transaction manager that it is acceptable to commit the transaction. It is very good practice to put the call to <xref:System.Transactions.TransactionScope.Complete%2A> as the last statement in the `using` block.  
   
  Failing to call this method aborts the transaction, because the transaction manager interprets this as a system failure, or equivalent to an exception thrown within the scope of the transaction. However, calling this method does not guarantee that the transaction wil be committed. It is merely a way of informing the transaction manager of your status. After calling the <xref:System.Transactions.TransactionScope.Complete%2A> method, you can no longer access the ambient transaction by using the <xref:System.Transactions.Transaction.Current%2A> property, and attempting to do so will result in an exception being thrown.  
   
- If the <xref:System.Transactions.TransactionScope> object created the transaction initially, the actual work of committing the transaction by the transaction manager occurs after the last line of code in the **using** block. If it did not create the transaction, the commit occurs whenever <xref:System.Transactions.CommittableTransaction.Commit%2A> is called by the owner of the <xref:System.Transactions.CommittableTransaction> object. At that point the transaction manager calls the resource managers and informs them to either commit or rollback, based on whether the <xref:System.Transactions.TransactionScope.Complete%2A> method was called on the <xref:System.Transactions.TransactionScope> object.  
+ If the <xref:System.Transactions.TransactionScope> object created the transaction initially, the actual work of committing the transaction by the transaction manager occurs after the last line of code in the `using` block. If it did not create the transaction, the commit occurs whenever <xref:System.Transactions.CommittableTransaction.Commit%2A> is called by the owner of the <xref:System.Transactions.CommittableTransaction> object. At that point the transaction manager calls the resource managers and informs them to either commit or rollback, based on whether the <xref:System.Transactions.TransactionScope.Complete%2A> method was called on the <xref:System.Transactions.TransactionScope> object.  
   
- The **using** statement ensures that the <xref:System.Transactions.TransactionScope.Dispose%2A> method of the <xref:System.Transactions.TransactionScope> object is called even if an exception occurs. The <xref:System.Transactions.TransactionScope.Dispose%2A> method marks the end of the transaction scope. Exceptions that occur after calling this method may not affect the transaction. This method also restores the ambient transaction to it previous state.  
+ The `using` statement ensures that the <xref:System.Transactions.TransactionScope.Dispose%2A> method of the <xref:System.Transactions.TransactionScope> object is called even if an exception occurs. The <xref:System.Transactions.TransactionScope.Dispose%2A> method marks the end of the transaction scope. Exceptions that occur after calling this method may not affect the transaction. This method also restores the ambient transaction to it previous state.  
   
  A <xref:System.Transactions.TransactionAbortedException> is thrown if the scope creates the transaction, and the transaction is aborted. A <xref:System.Transactions.TransactionInDoubtException> is thrown if the transaction manager cannot reach a Commit decision. No exception is thrown if the transaction is committed.  
   
@@ -39,24 +39,24 @@ The <xref:System.Transactions.TransactionScope> class provides a simple way to m
  Transaction scope can be nested by calling a method that uses a <xref:System.Transactions.TransactionScope> from within a method that uses its own scope, as is the case with the `RootMethod` method in the following example,  
   
 ```csharp  
-void RootMethod()  
-{  
-     using(TransactionScope scope = new TransactionScope())  
-     {  
-          /* Perform transactional work here */  
-          SomeMethod();  
-          scope.Complete();  
-     }  
-}  
-  
-void SomeMethod()  
-{  
-     using(TransactionScope scope = new TransactionScope())  
-     {  
-          /* Perform transactional work here */  
-          scope.Complete();  
-     }  
-}  
+void RootMethod()
+{
+    using(TransactionScope scope = new TransactionScope())
+    {
+        /* Perform transactional work here */
+        SomeMethod();
+        scope.Complete();
+    }
+}
+
+void SomeMethod()
+{
+    using(TransactionScope scope = new TransactionScope())
+    {
+        /* Perform transactional work here */
+        scope.Complete();
+    }
+}
 ```  
   
  The top-most transaction scope is referred to as the root scope.  
@@ -75,7 +75,7 @@ void SomeMethod()
   
  If the scope is instantiated with <xref:System.Transactions.TransactionScopeOption.RequiresNew>, it is always the root scope. It starts a new transaction, and its transaction becomes the new ambient transaction inside the scope.  
   
- If the scope is instantiated with <xref:System.Transactions.TransactionScopeOption.Suppress>, it never takes part in a transaction, regardless of whether an ambient transaction is present. A scope instantiated with this value always have **null** as its ambient transaction.  
+ If the scope is instantiated with <xref:System.Transactions.TransactionScopeOption.Suppress>, it never takes part in a transaction, regardless of whether an ambient transaction is present. A scope instantiated with this value always have `null` as its ambient transaction.  
   
  The above options are summarized in the following table.  
   
@@ -93,51 +93,50 @@ void SomeMethod()
  The following example shows a <xref:System.Transactions.TransactionScope> object that creates three nested scope objects, each instantiated with a different <xref:System.Transactions.TransactionScopeOption> value.  
   
 ```csharp  
-using(TransactionScope scope1 = new TransactionScope())   
-//Default is Required   
-{   
-     using(TransactionScope scope2 = new   
-      TransactionScope(TransactionScopeOption.Required))   
-     {  
-     ...  
-     }   
+using(TransactionScope scope1 = new TransactionScope())
+//Default is Required
+{
+    using(TransactionScope scope2 = new TransactionScope(TransactionScopeOption.Required))
+    {
+        //...
+    }
+
+    using(TransactionScope scope3 = new TransactionScope(TransactionScopeOption.RequiresNew))   
+    {
+        //...  
+    }
   
-     using(TransactionScope scope3 = new TransactionScope(TransactionScopeOption.RequiresNew))   
-     {  
-     ...  
-     }   
-  
-     using(TransactionScope scope4 = new   
-        TransactionScope(TransactionScopeOption.Suppress))   
-    {  
-     ...  
-    }   
-}  
+    using(TransactionScope scope4 = new TransactionScope(TransactionScopeOption.Suppress))
+    {
+        //...  
+    }
+}
 ```  
   
  The example shows a code block without any ambient transaction creating a new scope (`scope1`) with <xref:System.Transactions.TransactionScopeOption.Required>. The scope `scope1` is a root scope as it creates a new transaction (Transaction A) and makes Transaction A the ambient transaction. `Scope1` then creates three more objects, each with a different <xref:System.Transactions.TransactionScopeOption> value. For example, `scope2` is created with <xref:System.Transactions.TransactionScopeOption.Required>, and since there is an ambient transaction, it joins the first transaction created by `scope1`. Note that `scope3` is the root scope of a new transaction, and that `scope4` has no ambient transaction.  
   
  Although the default and most commonly used value of <xref:System.Transactions.TransactionScopeOption> is <xref:System.Transactions.TransactionScopeOption.Required>, each of the other values has its unique purpose.  
-  
+
+### Non-transactional code inside a transaction scope
+
  <xref:System.Transactions.TransactionScopeOption.Suppress> is useful when you want to preserve the operations performed by the code section, and do not want to abort the ambient transaction if the operations fail. For example, when you want to perform logging or audit operations, or when you want to publish events to subscribers regardless of whether your ambient transaction commits or aborts. This value allows you to have a non-transactional code section inside a transaction scope, as shown in the following example.  
   
 ```csharp  
-using(TransactionScope scope1 = new TransactionScope())  
-{  
-     try  
-     {  
-          //Start of non-transactional section   
-          using(TransactionScope scope2 = new  
-             TransactionScope(TransactionScopeOption.Suppress))  
-          {  
-               //Do non-transactional work here  
-          }  
-          //Restores ambient transaction here  
-   }  
-     catch  
-     {}  
-   //Rest of scope1  
-}  
+using(TransactionScope scope1 = new TransactionScope())
+{
+    try
+    {
+        //Start of non-transactional section
+        using(TransactionScope scope2 = new
+            TransactionScope(TransactionScopeOption.Suppress))  
+        {  
+            //Do non-transactional work here  
+        }  
+        //Restores ambient transaction here
+   }
+   catch {}  
+   //Rest of scope1
+}
 ```  
   
 ### Voting inside a nested scope  
@@ -160,7 +159,7 @@ using(TransactionScope scope1 = new TransactionScope())
  When using nested <xref:System.Transactions.TransactionScope> objects, all nested scopes must be configured to use exactly the same isolation level if they want to join the ambient transaction. If a nested <xref:System.Transactions.TransactionScope> object tries to join the ambient transaction yet it specifies a different isolation level, an <xref:System.ArgumentException> is thrown.  
   
 ## Interop with COM+  
- When you create a new <xref:System.Transactions.TransactionScope> instance, you can use the <xref:System.Transactions.EnterpriseServicesInteropOption> enumeration in one of the constructors to specify how to interact with COM+. For more information on this, see [Interoperability with Enterprise Services and COM+ Transactions](../../../../docs/framework/data/transactions/interoperability-with-enterprise-services-and-com-transactions.md).  
+ When you create a new <xref:System.Transactions.TransactionScope> instance, you can use the <xref:System.Transactions.EnterpriseServicesInteropOption> enumeration in one of the constructors to specify how to interact with COM+. For more information on this, see [Interoperability with Enterprise Services and COM+ Transactions](interoperability-with-enterprise-services-and-com-transactions.md).  
   
 ## See also
 

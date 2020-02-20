@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: a2dd5098-3e58-4be5-b7a2-e4160b3b505a
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedReader::GetGlobalVariables Method
 Returns all global variables.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetGlobalVariables(  
     [in]  ULONG32  cVars,  
     [out] ULONG32  *pcVars,  

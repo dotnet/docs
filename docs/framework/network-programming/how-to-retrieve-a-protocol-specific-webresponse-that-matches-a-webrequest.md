@@ -28,4 +28,4 @@ Dim resp As WebResponse = req.GetResponse()
   
 ## See also
 
-- [Requesting Data](../../../docs/framework/network-programming/requesting-data.md)
+- [Requesting Data](requesting-data.md)

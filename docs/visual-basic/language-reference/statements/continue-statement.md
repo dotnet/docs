@@ -1,5 +1,5 @@
 ---
-title: "Continue Statement (Visual Basic)"
+title: "Continue Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.continue"
@@ -13,7 +13,7 @@ Transfers control immediately to the next iteration of a loop.
   
 ## Syntax  
   
-```  
+```vb  
 Continue { Do | For | While }  
 ```  
   

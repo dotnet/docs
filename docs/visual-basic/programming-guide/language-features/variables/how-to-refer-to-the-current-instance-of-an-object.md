@@ -1,5 +1,5 @@
 ---
-title: "How to: Refer to the Current Instance of an Object (Visual Basic)"
+title: "How to: Refer to the Current Instance of an Object"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "variables [Visual Basic], object"
@@ -18,7 +18,7 @@ The *current instance* of an object is the instance in which the code is current
   
 - Use the `Me` keyword where you would normally use the name of an object variable.  
   
-    ```  
+    ```vb  
     Me.ForeColor = System.Drawing.Color.Crimson  
     Me.Close()  
     ```  

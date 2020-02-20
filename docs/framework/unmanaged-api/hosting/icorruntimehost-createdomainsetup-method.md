@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c21dab60-fb65-47d9-8a94-7fd47ca53b48
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorRuntimeHost::CreateDomainSetup Method
 Gets an interface pointer of type IAppDomainSetup to an <xref:System.AppDomainSetup?displayProperty=nameWithType> instance. `IAppDomainSetup` provides methods to configure aspects of an application domain before it is created.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateDomainSetup (  
     [out] IUnknown** pAppDomainSetup  
 );  

@@ -12,26 +12,24 @@ helpviewer_keywords:
   - "inline option constructs"
   - "options parameter"
 ms.assetid: c82dc689-7e82-4767-a18d-cd24ce5f05e9
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # Regular Expression Options
 
-<a name="Top"></a> By default, the comparison of an input string with any literal characters in a regular expression pattern is case sensitive, white space in a regular expression pattern is interpreted as literal white-space characters, and capturing groups in a regular expression are named implicitly as well as explicitly. You can modify these and several other aspects of default regular expression behavior by specifying regular expression options. These options, which are listed in the following table, can be included inline as part of the regular expression pattern, or they can be supplied to a <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class constructor or static pattern matching method as a <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> enumeration value.
+By default, the comparison of an input string with any literal characters in a regular expression pattern is case sensitive, white space in a regular expression pattern is interpreted as literal white-space characters, and capturing groups in a regular expression are named implicitly as well as explicitly. You can modify these and several other aspects of default regular expression behavior by specifying regular expression options. These options, which are listed in the following table, can be included inline as part of the regular expression pattern, or they can be supplied to a <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class constructor or static pattern matching method as a <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> enumeration value.
 
 |RegexOptions member|Inline character|Effect|
 |-------------------------|----------------------|------------|
-|<xref:System.Text.RegularExpressions.RegexOptions.None>|Not available|Use default behavior. For more information, see [Default Options](#Default).|
-|<xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase>|`i`|Use case-insensitive matching. For more information, see [Case-Insensitive Matching](#Case).|
-|<xref:System.Text.RegularExpressions.RegexOptions.Multiline>|`m`|Use multiline mode, where `^` and `$` match the beginning and end of each line (instead of the beginning and end of the input string). For more information, see [Multiline Mode](#Multiline).|
-|<xref:System.Text.RegularExpressions.RegexOptions.Singleline>|`s`|Use single-line mode, where the period (.) matches every character (instead of every character except `\n`). For more information, see [Singleline Mode](#Singleline).|
-|<xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture>|`n`|Do not capture unnamed groups. The only valid captures are explicitly named or numbered groups of the form `(?<`*name*`>` *subexpression*`)`. For more information, see [Explicit Captures Only](#Explicit).|
-|<xref:System.Text.RegularExpressions.RegexOptions.Compiled>|Not available|Compile the regular expression to an assembly. For more information, see [Compiled Regular Expressions](#Compiled).|
-|<xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace>|`x`|Exclude unescaped white space from the pattern, and enable comments after a number sign (`#`). For more information, see [Ignore White Space](#Whitespace).|
-|<xref:System.Text.RegularExpressions.RegexOptions.RightToLeft>|Not available|Change the search direction. Search moves from right to left instead of from left to right. For more information, see [Right-to-Left Mode](#RightToLeft).|
-|<xref:System.Text.RegularExpressions.RegexOptions.ECMAScript>|Not available|Enable ECMAScript-compliant behavior for the expression. For more information, see [ECMAScript Matching Behavior](#ECMAScript).|
-|<xref:System.Text.RegularExpressions.RegexOptions.CultureInvariant>|Not available|Ignore cultural differences in language. For more information, see [Comparison Using the Invariant Culture](#Invariant).|
+|<xref:System.Text.RegularExpressions.RegexOptions.None>|Not available|Use default behavior. For more information, see [Default Options](#default-options).|
+|<xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase>|`i`|Use case-insensitive matching. For more information, see [Case-Insensitive Matching](#case-insensitive-matching).|
+|<xref:System.Text.RegularExpressions.RegexOptions.Multiline>|`m`|Use multiline mode, where `^` and `$` match the beginning and end of each line (instead of the beginning and end of the input string). For more information, see [Multiline Mode](#multiline-mode).|
+|<xref:System.Text.RegularExpressions.RegexOptions.Singleline>|`s`|Use single-line mode, where the period (.) matches every character (instead of every character except `\n`). For more information, see [Single-line Mode](#single-line-mode).|
+|<xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture>|`n`|Do not capture unnamed groups. The only valid captures are explicitly named or numbered groups of the form `(?<`*name*`>` *subexpression*`)`. For more information, see [Explicit Captures Only](#explicit-captures-only).|
+|<xref:System.Text.RegularExpressions.RegexOptions.Compiled>|Not available|Compile the regular expression to an assembly. For more information, see [Compiled Regular Expressions](#compiled-regular-expressions).|
+|<xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace>|`x`|Exclude unescaped white space from the pattern, and enable comments after a number sign (`#`). For more information, see [Ignore White Space](#ignore-white-space).|
+|<xref:System.Text.RegularExpressions.RegexOptions.RightToLeft>|Not available|Change the search direction. Search moves from right to left instead of from left to right. For more information, see [Right-to-Left Mode](#right-to-left-mode).|
+|<xref:System.Text.RegularExpressions.RegexOptions.ECMAScript>|Not available|Enable ECMAScript-compliant behavior for the expression. For more information, see [ECMAScript Matching Behavior](#ecmascript-matching-behavior).|
+|<xref:System.Text.RegularExpressions.RegexOptions.CultureInvariant>|Not available|Ignore cultural differences in language. For more information, see [Comparison Using the Invariant Culture](#comparison-using-the-invariant-culture).|
 
 ## Specifying the Options
 
@@ -39,26 +37,26 @@ You can specify options for regular expressions in one of three ways:
 
 - In the `options` parameter of a <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class constructor or static (`Shared` in Visual Basic) pattern-matching method, such as <xref:System.Text.RegularExpressions.Regex.%23ctor%28System.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType> or <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType>. The `options` parameter is a bitwise OR combination of <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> enumerated values.
 
-    When options are supplied to a <xref:System.Text.RegularExpressions.Regex> instance by using the `options` parameter of a class constructor, the options are assigned to the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> property. However, the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> property does not reflect inline options in the regular expression pattern itself.
+  When options are supplied to a <xref:System.Text.RegularExpressions.Regex> instance by using the `options` parameter of a class constructor, the options are assigned to the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> property. However, the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> property does not reflect inline options in the regular expression pattern itself.
 
-    The following example provides an illustration. It uses the `options` parameter of the <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType> method to enable case-insensitive matching and to ignore pattern white space when identifying words that begin with the letter "d".
+  The following example provides an illustration. It uses the `options` parameter of the <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType> method to enable case-insensitive matching and to ignore pattern white space when identifying words that begin with the letter "d".
 
-    [!code-csharp[Conceptual.Regex.Language.Options#6](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/example1.cs#6)]
-    [!code-vb[Conceptual.Regex.Language.Options#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/example1.vb#6)]
+  [!code-csharp[Conceptual.Regex.Language.Options#6](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/example1.cs#6)]
+  [!code-vb[Conceptual.Regex.Language.Options#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/example1.vb#6)]
 
 - By applying inline options in a regular expression pattern with the syntax `(?imnsx-imnsx)`. The option applies to the pattern from the point that the option is defined to either the end of the pattern or to the point at which the option is undefined by another inline option. Note that the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> property of a <xref:System.Text.RegularExpressions.Regex> instance does not reflect these inline options. For more information, see the [Miscellaneous Constructs](../../../docs/standard/base-types/miscellaneous-constructs-in-regular-expressions.md) topic.
 
-    The following example provides an illustration. It uses inline options to enable case-insensitive matching and to ignore pattern white space when identifying words that begin with the letter "d".
+  The following example provides an illustration. It uses inline options to enable case-insensitive matching and to ignore pattern white space when identifying words that begin with the letter "d".
 
-    [!code-csharp[Conceptual.Regex.Language.Options#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/example1.cs#7)]
-    [!code-vb[Conceptual.Regex.Language.Options#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/example1.vb#7)]
+  [!code-csharp[Conceptual.Regex.Language.Options#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/example1.cs#7)]
+  [!code-vb[Conceptual.Regex.Language.Options#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/example1.vb#7)]
 
 - By applying inline options in a particular grouping construct in a regular expression pattern with the syntax `(?imnsx-imnsx:`*subexpression*`)`. No sign before a set of options turns the set on; a minus sign before a set of options turns the set off. (`?` is a fixed part of the language construct's syntax that is required whether options are enabled or disabled.) The option applies only to that group. For more information, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).
 
-    The following example provides an illustration. It uses inline options in a grouping construct to enable case-insensitive matching and to ignore pattern white space when identifying words that begin with the letter "d".
+  The following example provides an illustration. It uses inline options in a grouping construct to enable case-insensitive matching and to ignore pattern white space when identifying words that begin with the letter "d".
 
-    [!code-csharp[Conceptual.Regex.Language.Options#8](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/example1.cs#8)]
-    [!code-vb[Conceptual.Regex.Language.Options#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/example1.vb#8)]
+  [!code-csharp[Conceptual.Regex.Language.Options#8](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/example1.cs#8)]
+  [!code-vb[Conceptual.Regex.Language.Options#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/example1.vb#8)]
 
 If options are specified inline, a minus sign (`-`) before an option or set of options turns off those options. For example, the inline construct `(?ix-ms)` turns on the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType> and <xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace?displayProperty=nameWithType> options and turns off the <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=nameWithType> and <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> options. All regular expression options are turned off by default.
 
@@ -105,8 +103,6 @@ To test for <xref:System.Text.RegularExpressions.RegexOptions.None?displayProper
 
 The following sections list the options supported by regular expression in .NET.
 
-<a name="Default"></a>
-
 ## Default Options
 
 The <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=nameWithType> option indicates that no options have been specified, and the regular expression engine uses its default behavior. This includes the following:
@@ -132,10 +128,6 @@ The <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=nameW
 
 Because the <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=nameWithType> option represents the default behavior of the regular expression engine, it is rarely explicitly specified in a method call. A constructor or static pattern-matching method without an `options` parameter is called instead.
 
-[Back to Top](#Top)
-
-<a name="Case"></a>
-
 ## Case-Insensitive Matching
 
 The <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase> option, or the `i` inline option, provides case-insensitive matching. By default, the casing conventions of the current culture are used.
@@ -149,10 +141,6 @@ The following example modifies the regular expression pattern from the previous 
 
 [!code-csharp[Conceptual.Regex.Language.Options#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/case2.cs#2)]
 [!code-vb[Conceptual.Regex.Language.Options#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/case2.vb#2)]
-
-[Back to Top](#Top)
-
-<a name="Multiline"></a>
 
 ## Multiline Mode
 
@@ -181,10 +169,6 @@ The following example is equivalent to the previous one, except that it uses the
 [!code-csharp[Conceptual.Regex.Language.Options#4](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/multiline2.cs#4)]
 [!code-vb[Conceptual.Regex.Language.Options#4](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/multiline2.vb#4)]
 
-[Back to Top](#Top)
-
-<a name="Singleline"></a>
-
 ## Single-line Mode
 
 The <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=nameWithType> option, or the `s` inline option, causes the regular expression engine to treat the input string as if it consists of a single line. It does this by changing the behavior of the period (`.`) language element so that it matches every character, instead of matching every character except for the newline character `\n` or \u000A.
@@ -199,19 +183,13 @@ The following example is equivalent to the previous one, except that it uses the
 [!code-csharp[Conceptual.Regex.Language.Options#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/singleline1.cs#5)]
 [!code-vb[Conceptual.Regex.Language.Options#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/singleline1.vb#5)]
 
-[Back to Top](#Top)
-
-<a name="Explicit"></a>
-
 ## Explicit Captures Only
 
 By default, capturing groups are defined by the use of parentheses in the regular expression pattern. Named groups are assigned a name or number by the `(?<`*name*`>`*subexpression*`)` language option, whereas unnamed groups are accessible by index. In the <xref:System.Text.RegularExpressions.GroupCollection> object, unnamed groups precede named groups.
 
 Grouping constructs are often used only to apply quantifiers to multiple language elements, and the captured substrings are of no interest. For example, if the following regular expression:
 
-```
-\b\(?((\w+),?\s?)+[\.!?]\)?
-```
+`\b\(?((\w+),?\s?)+[\.!?]\)?`
 
 is intended only to extract sentences that end with a period, exclamation point, or question mark from a document, only the resulting sentence (which is represented by the <xref:System.Text.RegularExpressions.Match> object) is of interest. The individual words in the collection are not.
 
@@ -243,10 +221,6 @@ Finally, you can use the inline group element `(?n:)` to suppress automatic capt
 [!code-csharp[Conceptual.Regex.Language.Options#11](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/explicit3.cs#11)]
 [!code-vb[Conceptual.Regex.Language.Options#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/explicit3.vb#11)]
 
-[Back to Top](#Top)
-
-<a name="Compiled"></a>
-
 ## Compiled Regular Expressions
 
 By default, regular expressions in .NET are interpreted. When a <xref:System.Text.RegularExpressions.Regex> object is instantiated or a static <xref:System.Text.RegularExpressions.Regex> method is called, the regular expression pattern is parsed into a set of custom opcodes, and an interpreter uses these opcodes to run the regular expression. This involves a tradeoff: The cost of initializing the regular expression engine is minimized at the expense of run-time performance.
@@ -269,10 +243,6 @@ However, this improvement in performance occurs only under the following conditi
 > [!NOTE]
 > The <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=nameWithType> option is unrelated to the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=nameWithType> method, which creates a special-purpose assembly that contains predefined compiled regular expressions.
 
-[Back to Top](#Top)
-
-<a name="Whitespace"></a>
-
 ## Ignore White Space
 
 By default, white space in a regular expression pattern is significant; it forces the regular expression engine to match a white-space character in the input string. Because of this, the regular expression "`\b\w+\s`" and "`\b\w+` " are roughly equivalent regular expressions. In addition, when the number sign (#) is encountered in a regular expression pattern, it is interpreted as a literal character to be matched.
@@ -291,9 +261,9 @@ However, in the following cases, white-space characters in a regular expression 
 
 - White space isn't allowed within a character sequence that introduces a language element. For example:
 
-    - The language element `(?:`*subexpression*`)` represents a noncapturing group, and the `(?:` portion of the element can't have embedded spaces. The pattern `(? :`*subexpression*`)` throws an <xref:System.ArgumentException> at run time because the regular expression engine can't parse the pattern, and the pattern `( ?:`*subexpression*`)` fails to match *subexpression*.
+  - The language element `(?:`*subexpression*`)` represents a noncapturing group, and the `(?:` portion of the element can't have embedded spaces. The pattern `(? :`*subexpression*`)` throws an <xref:System.ArgumentException> at run time because the regular expression engine can't parse the pattern, and the pattern `( ?:`*subexpression*`)` fails to match *subexpression*.
 
-    - The language element `\p{`*name*`}`, which represents a Unicode category or named block, can't include embedded spaces in the `\p{` portion of the element. If you do include a white space, the element throws an <xref:System.ArgumentException> at run time.
+  - The language element `\p{`*name*`}`, which represents a Unicode category or named block, can't include embedded spaces in the `\p{` portion of the element. If you do include a white space, the element throws an <xref:System.ArgumentException> at run time.
 
 Enabling this option helps simplify regular expressions that are often difficult to parse and to understand. It improves readability, and makes it possible to document a regular expression.
 
@@ -301,7 +271,7 @@ The following example defines the following regular expression pattern:
 
 `\b \(? ( (?>\w+) ,?\s? )+  [\.!?] \)? # Matches an entire sentence.`
 
-This pattern is similar to the pattern defined in the [Explicit Captures Only](#Explicit) section, except that it uses the <xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace?displayProperty=nameWithType> option to ignore pattern white space.
+This pattern is similar to the pattern defined in the [Explicit Captures Only](#explicit-captures-only) section, except that it uses the <xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace?displayProperty=nameWithType> option to ignore pattern white space.
 
 [!code-csharp[Conceptual.Regex.Language.Options#12](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/whitespace1.cs#12)]
 [!code-vb[Conceptual.Regex.Language.Options#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/whitespace1.vb#12)]
@@ -310,10 +280,6 @@ The following example uses the inline option `(?x)` to ignore pattern white spac
 
 [!code-csharp[Conceptual.Regex.Language.Options#13](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/whitespace2.cs#13)]
 [!code-vb[Conceptual.Regex.Language.Options#13](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/whitespace2.vb#13)]
-
-[Back to Top](#Top)
-
-<a name="RightToLeft"></a>
 
 ## Right-to-Left Mode
 
@@ -342,10 +308,6 @@ The regular expression pattern is defined as shown in the following table.
 |`\s`|Match a white-space character.|
 |`\d{4}`|Match four decimal digits.|
 
-[Back to Top](#Top)
-
-<a name="ECMAScript"></a>
-
 ## ECMAScript Matching Behavior
 
 By default, the regular expression engine uses canonical behavior when matching a regular expression pattern to input text. However, you can instruct the regular expression engine to use ECMAScript matching behavior by specifying the <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript?displayProperty=nameWithType> option.
@@ -359,36 +321,32 @@ The behavior of ECMAScript and canonical regular expressions differs in three ar
 
 - Character class syntax. Because canonical regular expressions support Unicode whereas ECMAScript does not, character classes in ECMAScript have a more limited syntax, and some character class language elements have a different meaning. For example, ECMAScript does not support language elements such as the Unicode category or block elements `\p` and `\P`. Similarly, the `\w` element, which matches a word character, is equivalent to the `[a-zA-Z_0-9]` character class when using ECMAScript and `[\p{Ll}\p{Lu}\p{Lt}\p{Lo}\p{Nd}\p{Pc}\p{Lm}]` when using canonical behavior. For more information, see [Character Classes](../../../docs/standard/base-types/character-classes-in-regular-expressions.md).
 
-    The following example illustrates the difference between canonical and ECMAScript pattern matching. It defines a regular expression, `\b(\w+\s*)+`, that matches words followed by white-space characters. The input consists of two strings, one that uses the Latin character set and the other that uses the Cyrillic character set. As the output shows, the call to the <xref:System.Text.RegularExpressions.Regex.IsMatch%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType> method that uses ECMAScript matching fails to match the Cyrillic words, whereas the method call that uses canonical matching does match these words.
+  The following example illustrates the difference between canonical and ECMAScript pattern matching. It defines a regular expression, `\b(\w+\s*)+`, that matches words followed by white-space characters. The input consists of two strings, one that uses the Latin character set and the other that uses the Cyrillic character set. As the output shows, the call to the <xref:System.Text.RegularExpressions.Regex.IsMatch%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=nameWithType> method that uses ECMAScript matching fails to match the Cyrillic words, whereas the method call that uses canonical matching does match these words.
 
-    [!code-csharp[Conceptual.Regex.Language.Options#16](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/ecmascript1.cs#16)]
-    [!code-vb[Conceptual.Regex.Language.Options#16](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/ecmascript1.vb#16)]
+  [!code-csharp[Conceptual.Regex.Language.Options#16](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/ecmascript1.cs#16)]
+  [!code-vb[Conceptual.Regex.Language.Options#16](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/ecmascript1.vb#16)]
 
 - Self-referencing capturing groups. A regular expression capture class with a backreference to itself must be updated with each capture iteration. As the following example shows, this feature enables the regular expression `((a+)(\1) ?)+` to match the input string " aa aaaa aaaaaa " when using ECMAScript, but not when using canonical matching.
 
-    [!code-csharp[Conceptual.Regex.Language.Options#21](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/ecmascript2.cs#21)]
-    [!code-vb[Conceptual.Regex.Language.Options#21](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/ecmascript2.vb#21)]
+  [!code-csharp[Conceptual.Regex.Language.Options#21](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/ecmascript2.cs#21)]
+  [!code-vb[Conceptual.Regex.Language.Options#21](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/ecmascript2.vb#21)]
 
-    The regular expression is defined as shown in the following table.
+  The regular expression is defined as shown in the following table.
 
-    |Pattern|Description|
-    |-------------|-----------------|
-    |(a+)|Match the letter "a" one or more times. This is the second capturing group.|
-    |(\1)|Match the substring captured by the first capturing group. This is the third capturing group.|
-    |?|Match zero or one space characters.|
-    |((a+)(\1) ?)+|Match the pattern of one or more "a" characters followed by a string that matches the first capturing group followed by zero or one space characters one or more times. This is the first capturing group.|
+  |Pattern|Description|
+  |-------------|-----------------|
+  |(a+)|Match the letter "a" one or more times. This is the second capturing group.|
+  |(\1)|Match the substring captured by the first capturing group. This is the third capturing group.|
+  |?|Match zero or one space characters.|
+  |((a+)(\1) ?)+|Match the pattern of one or more "a" characters followed by a string that matches the first capturing group followed by zero or one space characters one or more times. This is the first capturing group.|
 
 - Resolution of ambiguities between octal escapes and backreferences. The following table summarizes the differences in octal versus backreference interpretation by canonical and ECMAScript regular expressions.
 
-    |Regular expression|Canonical behavior|ECMAScript behavior|
-    |------------------------|------------------------|-------------------------|
-    |`\0` followed by 0 to 2 octal digits|Interpret as an octal. For example, `\044` is always interpreted as an octal value and means "$".|Same behavior.|
-    |`\` followed by a digit from 1 to 9, followed by no additional decimal digits,|Interpret as a backreference. For example, `\9` always means backreference 9, even if a ninth capturing group does not exist. If the capturing group does not exist, the regular expression parser throws an <xref:System.ArgumentException>.|If a single decimal digit capturing group exists, backreference to that digit. Otherwise, interpret the value as a literal.|
-    |`\` followed by a digit from 1 to 9, followed by additional decimal digits|Interpret the digits as a decimal value. If that capturing group exists, interpret the expression as a backreference.<br /><br /> Otherwise, interpret the leading octal digits up to octal 377; that is, consider only the low 8 bits of the value. Interpret the remaining digits as literals. For example, in the expression `\3000`, if capturing group 300 exists, interpret as backreference 300; if capturing group 300 does not exist, interpret as octal 300 followed by 0.|Interpret as a backreference by converting as many digits as possible to a decimal value that can refer to a capture. If no digits can be converted, interpret as an octal by using the leading octal digits up to octal 377; interpret the remaining digits as literals.|
-
-[Back to Top](#Top)
-
-<a name="Invariant"></a>
+  |Regular expression|Canonical behavior|ECMAScript behavior|
+  |------------------------|------------------------|-------------------------|
+  |`\0` followed by 0 to 2 octal digits|Interpret as an octal. For example, `\044` is always interpreted as an octal value and means "$".|Same behavior.|
+  |`\` followed by a digit from 1 to 9, followed by no additional decimal digits,|Interpret as a backreference. For example, `\9` always means backreference 9, even if a ninth capturing group does not exist. If the capturing group does not exist, the regular expression parser throws an <xref:System.ArgumentException>.|If a single decimal digit capturing group exists, backreference to that digit. Otherwise, interpret the value as a literal.|
+  |`\` followed by a digit from 1 to 9, followed by additional decimal digits|Interpret the digits as a decimal value. If that capturing group exists, interpret the expression as a backreference.<br /><br /> Otherwise, interpret the leading octal digits up to octal 377; that is, consider only the low 8 bits of the value. Interpret the remaining digits as literals. For example, in the expression `\3000`, if capturing group 300 exists, interpret as backreference 300; if capturing group 300 does not exist, interpret as octal 300 followed by 0.|Interpret as a backreference by converting as many digits as possible to a decimal value that can refer to a capture. If no digits can be converted, interpret as an octal by using the leading octal digits up to octal 377; interpret the remaining digits as literals.|
 
 ## Comparison Using the Invariant Culture
 

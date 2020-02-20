@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: d5e7b12d-835a-4e86-ae2f-d658d4f1c67c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugHandleValue::GetHandleType Method
 Gets a value that indicates the kind of handle referenced by this ICorDebugHandleValue object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHandleType (  
     [out] CorDebugHandleType  *pType  
 );  

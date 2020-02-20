@@ -15,7 +15,7 @@ ms.assetid: fe134acf-ceca-49de-84a9-05a37e3841f1
  <xref:System.ServiceModel.NetHttpBinding> supports reliable sessions in both HTTP mode and WebSocket mode. In WebSocket mode sessions are provided by the transport.  
   
 > [!WARNING]
->  When using the <xref:System.ServiceModel.NetHttpBinding> and the binding’s TransferMode is set to TransferMode.Streamed, large streams may cause a deadlock and the call will timeout. To work around this issue send smaller messages or use TransferMode.Buffered.  
+> When using the <xref:System.ServiceModel.NetHttpBinding> and the binding’s TransferMode is set to TransferMode.Streamed, large streams may cause a deadlock and the call will timeout. To work around this issue send smaller messages or use TransferMode.Buffered.  
   
 ## Configuring a Service to use NetHttpBinding  
  The <xref:System.ServiceModel.NetHttpBinding> can be configured the same as any other binding. The following configuration snippet illustrates how to configure a WCF service with <xref:System.ServiceModel.NetHttpBinding>.  

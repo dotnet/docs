@@ -9,8 +9,6 @@ dev_langs:
 helpviewer_keywords: 
   - "garbage collection, notifications"
 ms.assetid: e12d8e74-31e3-4035-a87d-f3e66f0a9b89
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Garbage Collection Notifications
 There are situations in which a full garbage collection (that is, a generation 2 collection) by the common language runtime may adversely affect performance. This can be an issue particularly with servers that process large volumes of requests; in this case, a long garbage collection can cause a request time-out. To prevent a full collection from occurring during a critical period, you can be notified that a full garbage collection is approaching and then take action to redirect the workload to another server instance. You can also induce a collection yourself, provided that the current server instance does not need to process requests.  
@@ -18,7 +16,7 @@ There are situations in which a full garbage collection (that is, a generation 2
  The <xref:System.GC.RegisterForFullGCNotification%2A> method registers for a notification to be raised when the runtime senses that a full garbage collection is approaching. There are two parts to this notification: when the full garbage collection is approaching and when the full garbage collection has completed.  
   
 > [!WARNING]
->  Only blocking garbage collections raise notifications. When the [\<gcConcurrent>](../../../docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) configuration element is enabled, background garbage collections will not raise notifications.  
+> Only blocking garbage collections raise notifications. When the [\<gcConcurrent>](../../../docs/framework/configure-apps/file-schema/runtime/gcconcurrent-element.md) configuration element is enabled, background garbage collections will not raise notifications.  
   
  To determine when a notification has been raised, use the <xref:System.GC.WaitForFullGCApproach%2A> and <xref:System.GC.WaitForFullGCComplete%2A> methods. Typically, you use these methods in a `while` loop to continually obtain a <xref:System.GCNotificationStatus> enumeration that shows the status of the notification. If that value is <xref:System.GCNotificationStatus.Succeeded>, you can do the following:  
   

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 3153643e-cf5c-4b44-8e0e-c2b22cb08208
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostSyncManager::CreateAutoEvent Method
 Creates an auto-reset event object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateAutoEvent (  
     [out] IHostAutoEvent **ppEvent  
 );  

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: aa38efd4-de7e-4482-a5d3-adc152093460
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedBinder::GetReaderFromStream Method
 Given a metadata interface and a stream that contains the symbol store, returns the correct [ISymUnmanagedReader](isymunmanagedreader-interface.md) structure that will read the debugging symbols from the given symbol store.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetReaderFromStream(  
     [in]  IUnknown  *importer,  
     [in]  IStream   *pstream,  

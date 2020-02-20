@@ -1,5 +1,5 @@
 ---
-title: "<exception> (Visual Basic)"
+title: "<exception>"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "<exception> XML tag"
@@ -25,7 +25,7 @@ Specifies which exceptions can be thrown.
 ## Remarks  
  Use the `<exception>` tag to specify which exceptions can be thrown. This tag is applied to a method definition.  
   
- Compile with [/doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
+ Compile with [-doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
   
 ## Example  
  This example uses the `<exception>` tag to describe an exception that the `IntDivide` function can throw.  

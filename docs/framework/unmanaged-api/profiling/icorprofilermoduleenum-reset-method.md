@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c9110b49-823c-4ba9-9a4c-198afeb7780e
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerModuleEnum::Reset Method
 Moves this enumerator's cursor to the starting position of the sequence.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Reset();  
 ```  
   
@@ -40,5 +38,5 @@ HRESULT Reset();
   
 ## See also
 
-- [ICorProfilerModuleEnum Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilermoduleenum-interface.md)
-- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+- [ICorProfilerModuleEnum Interface](icorprofilermoduleenum-interface.md)
+- [Profiling Interfaces](profiling-interfaces.md)

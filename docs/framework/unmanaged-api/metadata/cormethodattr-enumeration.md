@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 4e0c3521-e54d-43c1-9857-cc76b49b8ffc
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorMethodAttr Enumeration
 Contains values that describe the features of a method.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorMethodAttr {  
   
     mdMemberAccessMask          =   0x0007,  

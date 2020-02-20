@@ -1,5 +1,5 @@
 ---
-title: "How to: Create Event Handlers at Run Time for Windows Forms"
+title: "How to: Create Event Handlers at Run Time"
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
@@ -71,4 +71,4 @@ In addition to creating events using the Windows Forms Designer in Visual Studio
 
 - [Creating Event Handlers in Windows Forms](creating-event-handlers-in-windows-forms.md)
 - [Event Handlers Overview](event-handlers-overview-windows-forms.md)
-- [Troubleshooting Inherited Event Handlers in Visual Basic](~/docs/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md)
+- [Troubleshooting Inherited Event Handlers in Visual Basic](../../visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md)

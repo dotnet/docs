@@ -35,5 +35,5 @@ Use the <xref:System.Linq.Enumerable.Sum%2A> operator to compute the sum of nume
   
 ## See also
 
-- [Aggregate Queries](../../../../../../docs/framework/data/adonet/sql/linq/aggregate-queries.md)
-- [Downloading Sample Databases](../../../../../../docs/framework/data/adonet/sql/linq/downloading-sample-databases.md)
+- [Aggregate Queries](aggregate-queries.md)
+- [Downloading Sample Databases](downloading-sample-databases.md)

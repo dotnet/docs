@@ -25,6 +25,6 @@ The <xref:System.Net.Sockets> namespace contains a managed implementation of the
   
 ## See also
 
-- [How to: Create a Socket](../../../docs/framework/network-programming/how-to-create-a-socket.md)
+- [How to: Create a Socket](how-to-create-a-socket.md)
 
-- [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)
+- [Using Application Protocols](using-application-protocols.md)

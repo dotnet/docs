@@ -1,5 +1,5 @@
 ---
-title: F# Types
+title: Types
 description: Learn about the types that are used in F# and how F# types are named and described.
 ms.date: 05/16/2016
 ---
@@ -8,7 +8,8 @@ ms.date: 05/16/2016
 This topic describes the types that are used in F# and how F# types are named and described.
 
 ## Summary of F# Types
-Some types are considered *primitive types*, such as the Boolean type `bool` and integral and floating point types of various sizes, which include types for bytes and characters. These types are described in [Primitive Types](primitive-types.md).
+
+Some types are considered *primitive types*, such as the Boolean type `bool` and integral and floating point types of various sizes, which include types for bytes and characters. These types are described in [Primitive Types](basic-types.md).
 
 Other types that are built into the language include tuples, lists, arrays, sequences, records, and discriminated unions. If you have experience with other .NET languages and are learning F#, you should read the topics for each of these types. Links to more information about these types are included in the [Related Topics](https://msdn.microsoft.com/library/#rel) section of this topic. These F#-specific types support styles of programming that are common to functional programming languages. Many of these types have associated modules in the F# library that support common operations on these types.
 
@@ -21,6 +22,7 @@ Also, F# code can define aliases, which are named *type abbreviations*, that are
 F# provides useful collection types that are designed with functional programming in mind. Using these collection types helps you write code that is more functional in style. For more information, see [F# Collection Types](fsharp-collection-types.md).
 
 ## Syntax for Types
+
 In F# code, you often have to write out the names of types. Every type has a syntactic form, and you use these syntactic forms in type annotations, abstract method declarations, delegate declarations, signatures, and other constructs. Whenever you declare a new program construct in the interpreter, the interpreter prints the name of the construct and the syntax for its type. This syntax might be just an identifier for a user-defined type or a built-in identifier such as for `int` or `string`, but for more complex types, the syntax is more complex.
 
 The following table shows aspects of the type syntax for F# types.
@@ -47,7 +49,7 @@ The following table shows aspects of the type syntax for F# types.
 
 |Topic|Description|
 |-----|-----------|
-|[Primitive Types](primitive-types.md)|Describes built-in simple types such as integral types, the Boolean type, and character types.|
+|[Primitive Types](basic-types.md)|Describes built-in simple types such as integral types, the Boolean type, and character types.|
 |[Unit Type](unit-type.md)|Describes the `unit` type, a type that has one value and that is indicated by (); equivalent to `void` in C# and `Nothing` in Visual Basic.|
 |[Tuples](tuples.md)|Describes the tuple type, a type that consists of associated values of any type grouped in pairs, triples, quadruples, and so on.|
 |[Options](options.md)|Describes the option type, a type that may either have a value or be empty.|
@@ -56,11 +58,11 @@ The following table shows aspects of the type syntax for F# types.
 |[Sequences](sequences.md)|Describes the sequence type, which represents a logical series of values; individual values are computed only as necessary.|
 |[Records](records.md)|Describes the record type, a small aggregate of named values.|
 |[Discriminated Unions](discriminated-unions.md)|Describes the discriminated union type, a type whose values can be any one of a set of possible types.|
-|[Functions](functions/index.md)|Describes function values.|
+|[Functions](./functions/index.md)|Describes function values.|
 |[Classes](classes.md)|Describes the class type, an object type that corresponds to a .NET reference type. Class types can contain members, properties, implemented interfaces, and a base type.|
 |[Structures](structures.md)|Describes the `struct` type, an object type that corresponds to a .NET value type. The `struct` type usually represents a small aggregate of data.|
 |[Interfaces](interfaces.md)|Describes interface types, which are types that represent a set of members that provide certain functionality but that contain no data. An interface type must be implemented by an object type to be useful.|
 |[Delegates](delegates.md)|Describes the delegate type, which represents a function as an object.|
 |[Enumerations](enumerations.md)|Describes enumeration types, whose values belong to a set of named values.|
 |[Attributes](attributes.md)|Describes attributes, which are used to specify metadata for another type.|
-|[Exception Types](exception-handling/exception-types.md)|Describes exceptions, which specify error information.|
+|[Exception Types](./exception-handling/exception-types.md)|Describes exceptions, which specify error information.|

@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "converting times"
   - "local time conversions"
 ms.assetid: a51e1a3b-c983-4320-b31a-1f9fa3cf824a
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Converting times between time zones
 
@@ -55,9 +53,9 @@ All of these methods take <xref:System.DateTime> values as parameters and return
 
 To convert UTC to local time, see the "Converting UTC to Local Time" section that follows. To convert UTC to the time in any time zone that you designate, call the <xref:System.TimeZoneInfo.ConvertTimeFromUtc%2A> method. The method takes two parameters:
 
-* The UTC to convert. This must be a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is set to `Unspecified` or `Utc`.
+- The UTC to convert. This must be a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is set to `Unspecified` or `Utc`.
 
-* The time zone to convert the UTC to.
+- The time zone to convert the UTC to.
 
 The following code converts UTC to Central Standard Time.
 
@@ -83,11 +81,11 @@ You can also convert the time in any designated time zone to local time by using
 
 You can convert between any two time zones by using either of the following two `static` (`Shared` in Visual Basic) methods of the <xref:System.TimeZoneInfo> class:
 
-* <xref:System.TimeZoneInfo.ConvertTime%2A>
+- <xref:System.TimeZoneInfo.ConvertTime%2A>
 
   This method's parameters are the date and time value to convert, a `TimeZoneInfo` object that represents the time zone of the date and time value, and a `TimeZoneInfo` object that represents the time zone to convert the date and time value to.
 
-* <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%2A>
+- <xref:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId%2A>
 
   This method's parameters are the date and time value to convert, the identifier of the date and time value's time zone, and the identifier of the time zone to convert the date and time value to.
 

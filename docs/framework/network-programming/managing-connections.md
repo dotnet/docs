@@ -30,7 +30,7 @@ Applications that use HTTP to connect to data resources can use the .NET Framewo
  The number of connections between a client and server can have a dramatic impact on application throughput. By default, an application using the <xref:System.Net.HttpWebRequest> class uses a maximum of two persistent connections to a given server, but you can set the maximum number of connections on a per-application basis.  
   
 > [!NOTE]
->  The HTTP/1.1 specification limits the number of connections from an application to two connections per server.  
+> The HTTP/1.1 specification limits the number of connections from an application to two connections per server.  
   
  The optimum number of connections depends on the actual conditions in which the application runs. Increasing the number of connections available to the application may not affect application performance. To determine the impact of more connections, run performance tests while varying the number of connections. You can change the number of connections that an application uses by changing the static <xref:System.Net.ServicePointManager.DefaultConnectionLimit%2A> property on the **ServicePointManager** class at application initialization, as shown in the following code sample.  
   
@@ -60,5 +60,5 @@ sp.ConnectionLimit = newLimit
   
 ## See also
 
-- [Connection Grouping](../../../docs/framework/network-programming/connection-grouping.md)
-- [Using Application Protocols](../../../docs/framework/network-programming/using-application-protocols.md)
+- [Connection Grouping](connection-grouping.md)
+- [Using Application Protocols](using-application-protocols.md)

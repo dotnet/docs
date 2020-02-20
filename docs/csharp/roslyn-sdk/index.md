@@ -28,8 +28,8 @@ code-related tasks in your tools and applications.
 The .NET Compiler Platform SDK dramatically lowers the barrier
 to entry for creating code focused tools and applications. It creates many
 opportunities for innovation in areas such as meta-programming, code
-generation and transformation, interactive use of the C# and VB languages,
-and embedding of C# and VB in domain specific languages.
+generation and transformation, interactive use of the C# and Visual Basic languages,
+and embedding of C# and Visual Basic in domain-specific languages.
 
 The .NET Compiler Platform SDK enables you to build ***analyzers*** and
 ***code fixes*** that find and correct coding mistakes. ***Analyzers***
@@ -41,7 +41,7 @@ and the associated code fixes are packaged together in a single project.
 Analyzers and code fixes use static analysis to understand code. They
 do not run the code or provide other testing benefits. They can, however,
 point out practices that often lead to bugs, unmaintainable code, or
-standard guideline validation.
+standard guideline violation.
 
 The .NET Compiler Platform SDK provides a single set of APIs that enable
 you to examine and understand a C# or Visual Basic codebase. Because you
@@ -85,7 +85,7 @@ each developer's machine to enforce the standards.
 
 ## Provide guidance with library packages
 
-There are a wealth of libraries available for .NET developers on NuGet.
+There is a wealth of libraries available for .NET developers on NuGet.
 Some of these come from Microsoft, some from third-party companies, and
 others from community members and volunteers. These libraries get more
 adoption and higher reviews when developers can succeed with those
@@ -120,7 +120,7 @@ practices.
 The .NET Compiler Platform SDK includes the latest language object models
 for code generation, analysis, and refactoring. This section provides a
 conceptual overview of the .NET Compiler Platform SDK. Further details can be
-found in the quickstarts, samples and tutorials sections.
+found in the quickstarts, samples, and tutorials sections.
 
 You can learn more about the concepts in the .NET Compiler Platform SDK in these five topics:
 

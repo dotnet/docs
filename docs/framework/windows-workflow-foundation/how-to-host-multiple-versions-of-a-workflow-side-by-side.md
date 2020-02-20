@@ -21,11 +21,11 @@ In this step of the tutorial, the `WriteLine` activities in the workflow are mod
 
 - [To update the workflows](how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_UpdateWorkflows)
 
-    - [To update the StateMachine workflow](how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_UpdateStateMachine)
+  - [To update the StateMachine workflow](how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_UpdateStateMachine)
 
-    - [To update the Flowchart workflow](how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_UpdateFlowchart)
+  - [To update the Flowchart workflow](how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_UpdateFlowchart)
 
-    - [To update the Sequential workflow](how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_UpdateSequential)
+  - [To update the Sequential workflow](how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_UpdateSequential)
 
 - [To update WorkflowVersionMap to include the previous workflow versions](how-to-host-multiple-versions-of-a-workflow-side-by-side.md#BKMK_UpdateWorkflowVersionMap)
 
@@ -62,7 +62,7 @@ In this step of the tutorial, the `WriteLine` activities in the workflow are mod
 
 ### <a name="BKMK_UpdateWorkflows"></a> To update the workflows
 
- In this section, the workflow definitions are updated. The two `WriteLine` activities that give feedback on the user's guess are updated, and a new `WriteLine` activity is added that provides additional information about the game once the number is guessed.
+In this section, the workflow definitions are updated. The two `WriteLine` activities that give feedback on the user's guess are updated, and a new `WriteLine` activity is added that provides additional information about the game once the number is guessed.
 
 #### <a name="BKMK_UpdateStateMachine"></a> To update the StateMachine workflow
 
@@ -552,7 +552,7 @@ In this step of the tutorial, the `WriteLine` activities in the workflow are mod
 
 2. Start a new workflow by clicking **New Game**. The version of the workflow is displayed under the status window and reflects the updated version from the associated `WorkflowIdentity`. Make a note of the `InstanceId` so you can view the tracking file for the workflow when it completes, and then enter guesses until the game is complete. Note how the user's guess is displayed in the information displayed in the status window based on the updates to the `WriteLine` activities.
 
-    ```
+    ```console
     Please enter a number between 1 and 10
     5 is too high.
     Please enter a number between 1 and 10
@@ -568,7 +568,7 @@ In this step of the tutorial, the `WriteLine` activities in the workflow are mod
 
 3. Open Windows Explorer and navigate to the **NumberGuessWorkflowHost\bin\debug** folder (or **bin\release** depending on your project settings) and open the tracking file using Notepad that corresponds to the completed workflow. If you did not make a note of the `InstanceId`, you can identify the correct tracking file by using the **Date modified** information in Windows Explorer.
 
-    ```
+    ```console
     Please enter a number between 1 and 10
     5 is too high.
     Please enter a number between 1 and 10

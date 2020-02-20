@@ -2,8 +2,6 @@
 title: "Mitigation: Custom IMessageFilter.PreFilterMessage Implementations"
 ms.date: "03/30/2017"
 ms.assetid: 9cf47c5b-0bb2-45df-9437-61cd7e7c2f4d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Mitigation: Custom IMessageFilter.PreFilterMessage Implementations
 
@@ -25,7 +23,7 @@ For Windows Forms apps that target previous versions of the .NET Framework, such
 
 ## Mitigation
 
-If this change is undesirable, apps that target the .NET Framework 4.6.1 or a later version can opt out of it by adding the following configuration setting to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the app’s configuration file:
+If this change is undesirable, apps that target the .NET Framework 4.6.1 or a later version can opt out of it by adding the following configuration setting to the [\<runtime>](../configure-apps/file-schema/runtime/runtime-element.md) section of the app’s configuration file:
 
 ```xml
 <runtime>
@@ -33,7 +31,7 @@ If this change is undesirable, apps that target the .NET Framework 4.6.1 or a la
 </runtime>
 ```
 
-In addition, apps that target previous versions of the .NET Framework but are running under the .NET Framework 4.6.1 or a later version can opt in to this behavior by adding the following configuration setting to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the app’s configuration file:
+In addition, apps that target previous versions of the .NET Framework but are running under the .NET Framework 4.6.1 or a later version can opt in to this behavior by adding the following configuration setting to the [\<runtime>](../configure-apps/file-schema/runtime/runtime-element.md) section of the app’s configuration file:
 
 ```xml
 <runtime>
@@ -43,4 +41,4 @@ In addition, apps that target previous versions of the .NET Framework but are ru
 
 ## See also
 
-- [Retargeting Changes](../../../docs/framework/migration-guide/retargeting-changes-in-the-net-framework-4-6-1.md)
+- [Application compatibility](application-compatibility.md)

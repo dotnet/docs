@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 9c76b587-f941-4fa1-8b86-f3494fb10c8e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugThread2::GetConnectionID Method
 Gets the connection identifier for this ICorDebugThread2 object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetConnectionID (  
     [out] CONNID *pdwConnectionId  
 );  

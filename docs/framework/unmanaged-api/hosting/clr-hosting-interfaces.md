@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "hosting interfaces [.NET Framework], version 2.0"
   - ".NET Framework 2.0, hosting interfaces"
 ms.assetid: 703b8381-43db-4a4d-9faa-cca39302d922
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CLR Hosting Interfaces
 This section describes the interfaces that unmanaged hosts can use to integrate the common language runtime (CLR) into their applications. The information pertains to the .NET Framework version 2.0 and later versions. These interfaces enable the host to control many more aspects of the runtime than was possible in versions 1.0 and 1.1, and provide much tighter integration between the CLR and the host's execution model.  

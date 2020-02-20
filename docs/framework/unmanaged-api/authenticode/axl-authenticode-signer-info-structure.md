@@ -2,15 +2,13 @@
 title: "AXL_AUTHENTICODE_SIGNER_INFO Structure"
 ms.date: "03/30/2017"
 ms.assetid: 81c0f8b4-ce35-4716-8651-b642d40648a2
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # AXL_AUTHENTICODE_SIGNER_INFO Structure
 Defines the Authenticode signer information.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _AXL_AUTHENTICODE_SIGNER_INFO {  
     DWORD cbSize;  
     HRESULT dwError;  
@@ -32,8 +30,8 @@ typedef struct _AXL_AUTHENTICODE_SIGNER_INFO {
 |`pwszHash`|The hash.|  
 |`pwszDescription`|The description.|  
 |`pwszDescriptionUrl`|The URL of the description.|  
-|`pChainContext`|The chain context of the signer. See the [CERT_CONTEXT](/windows/desktop/api/wincrypt/ns-wincrypt-_cert_context) structure.|  
+|`pChainContext`|The chain context of the signer. See the [CERT_CONTEXT](/windows/win32/api/wincrypt/ns-wincrypt-cert_context) structure.|  
   
 ## See also
 
-- [Authenticode](../../../../docs/framework/unmanaged-api/authenticode/index.md)
+- [Authenticode](index.md)

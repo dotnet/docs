@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 90eab7b3-1fae-4af4-8bce-f7bc0e188a99
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataConverter::GetTypeLibFromMetaData Method
 Gets a pointer to an `ITypeLib` instance that represents the type library that has the specified library and module names.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTypeLibFromMetaData (  
     [in]  BSTR     strModule,   
     [in]  BSTR     strTlbName,   

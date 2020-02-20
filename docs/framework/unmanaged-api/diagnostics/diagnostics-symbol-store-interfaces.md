@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "debugging interfaces [.NET Framework]"
   - "interfaces [.NET Framework debugging]"
 ms.assetid: f96987d5-e6a5-478b-ac5e-302e16545cce
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Diagnostics Symbol Store Interfaces
 This topic describes the unmanaged interfaces that enable a compiler to generate symbol information for use by a debugger.  

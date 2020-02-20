@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: dea34b81-8d2b-4cc3-8696-0ad4291d8a92
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostIoCompletionManager::SetMinThreads Method
 Sets the minimum number of threads that the host should allot to I/O completion.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetMinThreads (  
     [in] DWORD dwMinIoCompletionThreads  
 );  

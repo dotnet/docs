@@ -37,9 +37,9 @@ To group, sort, and filter data in a <xref:System.Windows.Controls.DataGrid> con
     [!code-csharp[DataGrid_GroupSortFilter#101](~/samples/snippets/csharp/VS_Snippets_Wpf/DataGrid_GroupSortFilter/CS/MainWindow.xaml.cs#101)]
     [!code-vb[DataGrid_GroupSortFilter#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DataGrid_GroupSortFilter/VB/MainWindow.xaml.vb#101)]
 
-2. In XAML, create an instance of the collection class and set the [x:Key Directive](../../xaml-services/x-key-directive.md).
+2. In XAML, create an instance of the collection class and set the [x:Key Directive](../../../desktop-wpf/xaml-services/xkey-directive.md).
 
-3. In XAML, create an instance of the <xref:System.Windows.Data.CollectionViewSource> class, set the [x:Key Directive](../../xaml-services/x-key-directive.md), and set the instance of your collection class as the <xref:System.Windows.Data.CollectionViewSource.Source%2A>.
+3. In XAML, create an instance of the <xref:System.Windows.Data.CollectionViewSource> class, set the [x:Key Directive](../../../desktop-wpf/xaml-services/xkey-directive.md), and set the instance of your collection class as the <xref:System.Windows.Data.CollectionViewSource.Source%2A>.
 
     [!code-xaml[DataGrid_GroupSortFilter#201](~/samples/snippets/csharp/VS_Snippets_Wpf/DataGrid_GroupSortFilter/CS/WindowSnips1.xaml#201)]
 
@@ -141,7 +141,7 @@ To test this example, you will need to adjust the DGGroupSortFilterExample name 
 
 ## See also
 
-- [Data Binding Overview](../data/data-binding-overview.md)
+- [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md)
 - [Create and Bind to an ObservableCollection](../data/how-to-create-and-bind-to-an-observablecollection.md)
 - [Filter Data in a View](../data/how-to-filter-data-in-a-view.md)
 - [Sort Data in a View](../data/how-to-sort-data-in-a-view.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: b8685c1e-b80c-4198-8eb3-748d6f48a99e
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetPinvokeMap Method
 Gets a ModuleRef token to represent the target assembly of a PInvoke call.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetPinvokeMap (  
    [in]  mdToken       tk,  
    [out] DWORD         *pdwMappingFlags,  

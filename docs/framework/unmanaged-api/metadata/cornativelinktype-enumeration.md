@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 4f86ff37-2dab-4e64-819a-76b3bfe828ff
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorNativeLinkType Enumeration
 Provides values that indicate the type linked in native code.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum   
 {  
     nltNone       = 1,  

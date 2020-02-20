@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: d0f74593-9bb1-4a11-8096-e29734b20698
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostAssemblyManager::GetAssemblyStore Method
 Gets an interface pointer to an [IHostAssemblyStore](../../../../docs/framework/unmanaged-api/hosting/ihostassemblystore-interface.md) that represents the list of assemblies loaded by the host.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAssemblyStore (  
     [out] IHostAssemblyStore **ppAssemblyStore  
 );  
@@ -49,7 +47,7 @@ HRESULT GetAssemblyStore (
  `IHostAssemblyStore` provides methods that allow a host to bind to assemblies and modules independently of the CLR. Hosts typically provide assembly stores to allow assemblies to be loaded from formats other than the file system.  
   
 > [!NOTE]
->  If the host does not implement `IHostAssemblyStore`, `GetAssemblyStore` should return an HRESULT value of E_NOINTERFACE, and should set `ppAssemblyStore` to null.  
+> If the host does not implement `IHostAssemblyStore`, `GetAssemblyStore` should return an HRESULT value of E_NOINTERFACE, and should set `ppAssemblyStore` to null.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

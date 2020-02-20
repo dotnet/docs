@@ -21,7 +21,7 @@ This topic explains how to import metadata into a collection of service endpoint
      [!code-csharp[UE_ImportMetadata#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/ue_importmetadata/cs/client.cs#2)]  
   
     > [!NOTE]
-    >  After you have imported the metadata, you will not be able to create a client channel or export the metadata. This is because no type information is available at this point. Type information is required to actually interact with the service or export metadata. To generate the type information, you need to generate code, shown in steps 4 and 5. Alternatively, you could use the <xref:System.ServiceModel.Description.MetadataResolver> helper class. For more information, see [How to: Use MetadataResolver to Obtain Binding Metadata Dynamically](../../../../docs/framework/wcf/feature-details/how-to-use-metadataresolver-to-obtain-binding-metadata-dynamically.md).  
+    > After you have imported the metadata, you will not be able to create a client channel or export the metadata. This is because no type information is available at this point. Type information is required to actually interact with the service or export metadata. To generate the type information, you need to generate code, shown in steps 4 and 5. Alternatively, you could use the <xref:System.ServiceModel.Description.MetadataResolver> helper class. For more information, see [How to: Use MetadataResolver to Obtain Binding Metadata Dynamically](../../../../docs/framework/wcf/feature-details/how-to-use-metadataresolver-to-obtain-binding-metadata-dynamically.md).  
   
 4. Generate type information for each contract.  
   

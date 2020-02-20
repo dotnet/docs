@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 6277f914-51a8-49be-bec6-52d6d648527d
 topic_type:
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # IIdentityAuthority Interface
@@ -26,8 +24,8 @@ Manages identity keys for code objects.
 
 |Method|Description|
 |------------|-----------------|
-|`IIdentityAuthority::AreDefinitionsEqual`|Gets a value that indicates whether the two specified [IDefinitionIdentity](../../../../docs/framework/unmanaged-api/fusion/idefinitionidentity-interface.md) instances are equal.|
-|`IIdentityAuthority::AreReferencesEqual`|Gets a value that indicates whether the two specified [IReferenceIdentity](../../../../docs/framework/unmanaged-api/fusion/ireferenceidentity-interface.md) instances are equal.|
+|`IIdentityAuthority::AreDefinitionsEqual`|Gets a value that indicates whether the two specified [IDefinitionIdentity](idefinitionidentity-interface.md) instances are equal.|
+|`IIdentityAuthority::AreReferencesEqual`|Gets a value that indicates whether the two specified [IReferenceIdentity](ireferenceidentity-interface.md) instances are equal.|
 |`IIdentityAuthority::AreTextualDefinitionsEqual`|Gets a value that indicates whether the two specified string definition identity representations are equal.|
 |`IIdentityAuthority::AreTextualReferencesEqual`|Gets a value that indicates whether the two specified string reference identity representations are equal.|
 |`IIdentityAuthority::CreateDefinition`|Gets a pointer to a new `IDefinitionIdentity` instance that represents the code object in the current scope.|
@@ -47,7 +45,7 @@ Manages identity keys for code objects.
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
 **Header:** Isolation.h
 
@@ -55,4 +53,4 @@ Manages identity keys for code objects.
 
 ## See also
 
-- [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)
+- [Fusion Interfaces](fusion-interfaces.md)

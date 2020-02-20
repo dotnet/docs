@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: fbaa0794-a031-4015-8beb-2749e47ac340
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugFrame::GetCode Method
 Gets a pointer to the code associated with this stack frame.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCode (  
     [out] ICorDebugCode      **ppCode  
 );  

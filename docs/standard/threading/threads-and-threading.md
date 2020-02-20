@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "threading [.NET]"
   - "threading [.NET], multiple threads"
 ms.assetid: 5baac3aa-e603-4fa6-9f89-0f2c1084e6b1
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Threads and threading
 

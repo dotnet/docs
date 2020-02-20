@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 86a09871-33e4-412c-aeb8-4d18f924595b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICatalogServices::NotAutodone Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT NotAutodone ( );  
 ```  
   

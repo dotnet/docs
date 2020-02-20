@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 845ab77e-9639-47f5-99fb-f3b619e3e779
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICeeGen::AllocateMethodBuffer Method
 Creates a buffer of the specified size for a method, and gets the relative virtual address of the method.  
@@ -25,7 +23,7 @@ Creates a buffer of the specified size for a method, and gets the relative virtu
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AllocateMethodBuffer (   
     [in]  ULONG    cchBuffer,   
     [out] UCHAR    **lpBuffer,  

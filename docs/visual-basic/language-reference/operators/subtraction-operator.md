@@ -1,5 +1,5 @@
 ---
-title: "- Operator (Visual Basic)"
+title: "- Operator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Negate"
@@ -23,10 +23,14 @@ Returns the difference between two numeric expressions or the negative value of 
   
 ## Syntax  
   
-```  
-      expression1 – expression2  
-- or -  
-– expression1  
+```vb  
+expression1 – expression2
+```
+  
+or
+
+```vb  
+–expression1  
 ```  
   
 ## Parts  
@@ -52,7 +56,7 @@ Returns the difference between two numeric expressions or the negative value of 
  If either expression evaluates to [Nothing](../../../visual-basic/language-reference/nothing.md), the `–` operator treats it as zero.  
   
 > [!NOTE]
->  The `–` operator can be *overloaded*, which means that a class or structure can redefine its behavior when an operand has the type of that class or structure. If your code uses this operator on such a class or structure, make sure that you understand its redefined behavior. For more information, see [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md).  
+> The `–` operator can be *overloaded*, which means that a class or structure can redefine its behavior when an operand has the type of that class or structure. If your code uses this operator on such a class or structure, make sure that you understand its redefined behavior. For more information, see [Operator Procedures](../../../visual-basic/programming-guide/language-features/procedures/operator-procedures.md).  
   
 ## Example  
  The following example uses the `–` operator to calculate and return the difference between two numbers, and then to negate a number.  

@@ -15,12 +15,10 @@ helpviewer_keywords:
 ms.assetid: 2f82fb2c-a42e-48bf-af41-a15e40f636c6
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEditAndContinueErrorInfo::GetErrorCode Method
 `GetErrorCode` is obsolete. Do not call this method.  
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: dd92dcaf-403c-464d-a254-21594985dddd
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedBinder2::GetReaderForFile2 Method
 Given a metadata interface and a file name, returns the correct [ISymUnmanagedReader](isymunmanagedreader-interface.md) interface that will read the debugging symbols associated with the module.  
@@ -25,7 +23,7 @@ Given a metadata interface and a file name, returns the correct [ISymUnmanagedRe
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetReaderForFile2(  
     [in]  IUnknown     *importer,  
     [in]  const WCHAR  *fileName,  

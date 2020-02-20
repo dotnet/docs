@@ -2,11 +2,12 @@
 title: "Transport Security with Certificate Authentication"
 ms.date: "03/30/2017"
 dev_langs: 
-  - "vb"
+  - "csharp"
 ms.assetid: 3d726b71-4d8b-4581-a3bb-02b9af51d11b
 ---
 # Transport Security with Certificate Authentication
-This topic discusses using X.509 certificates for server and client authentication when using transport security. For more information about X.509 certificates see [X.509 Public Key Certificates](/windows/desktop/SecCertEnroll/about-x-509-public-key-certificates). Certificates must be issued by a certification authority, which is often a third-party issuer of certificates. On a Windows Server domain, Active Directory Certificate Services can be used to issue certificates to client computers on the domain. For more information see [Windows 2008 R2 Certificate Services](https://go.microsoft.com/fwlink/?LinkID=209949&clcid=0x409). In this scenario, the service is hosted under Internet Information Services (IIS) which is configured with Secure Sockets Layer (SSL). The service is configured with an SSL (X.509) certificate to allow clients to verify the identity of the server. The client is also configured with an X.509 certificate that allows the service to verify the identity of the client. The server’s certificate must be trusted by the client and the client’s certificate must be trusted by the server. The actual mechanics of how the service and client verifies each other’s identity is beyond the scope of this topic. For more information see [Digital Signature on Wikipedia](https://go.microsoft.com/fwlink/?LinkId=253157).  
+
+This article discusses using X.509 certificates for server and client authentication when using transport security. For more information about X.509 certificates see [X.509 Public Key Certificates](/windows/desktop/SecCertEnroll/about-x-509-public-key-certificates). Certificates must be issued by a certification authority, which is often a third-party issuer of certificates. On a Windows Server domain, Active Directory Certificate Services can be used to issue certificates to client computers on the domain. In this scenario, the service is hosted under Internet Information Services (IIS) which is configured with Secure Sockets Layer (SSL). The service is configured with an SSL (X.509) certificate to allow clients to verify the identity of the server. The client is also configured with an X.509 certificate that allows the service to verify the identity of the client. The server’s certificate must be trusted by the client and the client’s certificate must be trusted by the server. The actual mechanics of how the service and client verifies each other’s identity is beyond the scope of this article. For more information, see [Digital Signature](https://en.wikipedia.org/wiki/Digital_signature) on Wikipedia.
   
  This scenario implements a request/reply message pattern as illustrated by the following diagram.  
   
@@ -58,9 +59,9 @@ This topic discusses using X.509 certificates for server and client authenticati
 ## Configure the Client  
  The client can be configured in code or in an app.config file. The following example shows how to configure the client in code.  
   
-```vb  
+```csharp
 // Create the binding.  
-WSHttpBinding myBinding = new WSHttpBinding();  
+var myBinding = new WSHttpBinding();  
 myBinding.Security.Mode = SecurityMode.Transport;  
 myBinding.Security.Transport.ClientCredentialType =  
    HttpClientCredentialType.Certificate;  
@@ -68,13 +69,13 @@ myBinding.Security.Transport.ClientCredentialType =
 // Create the endpoint address. Note that the machine name   
 // must match the subject or DNS field of the X.509 certificate  
 // used to authenticate the service.   
-EndpointAddress ea = new  
+var ea = new  
    EndpointAddress("https://localhost/CalculatorService/service.svc");  
   
 // Create the client. The code for the calculator   
 // client is not shown here. See the sample applications  
 // for examples of the calculator code.  
-CalculatorClient cc =  
+var cc =  
    new CalculatorClient(myBinding, ea);  
   
 // The client must specify a certificate trusted by the server.  
@@ -134,4 +135,4 @@ cc.Close();
 ## See also
 
 - [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
-- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+- [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))

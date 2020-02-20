@@ -1,18 +1,16 @@
 {
     "default": true,
     "MD001": false,
-    "MD002": false,
     "MD004": false,
-    "MD007": false,
     "MD009": false,
     "MD013": false,
     "MD022": false,
     "MD024": false,
-    "MD025": false,
+    "MD025": {
+        "front_matter_title": ""
+    },
     "MD026": false,
-    "MD027": false,
     "MD028": false,
-    "MD032": false,
     "MD033": {
         "allowed_elements": [
             "a",
@@ -26,7 +24,6 @@
             "ol",
             "p",
             "pre",
-            "strong",
             "sup",
             "table",
             "tbody",
@@ -42,7 +39,6 @@
     "MD036": false,
     "MD040": false,
     "MD041": false,
-    "MD045": false,
     "MD046": {
         "style": "fenced"
     }

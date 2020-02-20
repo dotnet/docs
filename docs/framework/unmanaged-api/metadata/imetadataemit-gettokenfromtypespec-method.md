@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 7de6447a-a751-49d8-87e2-951cee77b536
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::GetTokenFromTypeSpec Method
 Gets a metadata token for the type with the specified metadata signature.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTokenFromTypeSpec (   
     [in]  PCCOR_SIGNATURE       pvSig,   
     [in]  ULONG                 cbSig,   

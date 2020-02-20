@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: a5ff40b0-d04e-40d5-a007-cc6ee7c3a9ae
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugErrorInfoEnum Interface
 
@@ -23,4 +21,4 @@ ms.author: "ronpet"
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

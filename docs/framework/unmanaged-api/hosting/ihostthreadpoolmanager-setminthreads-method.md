@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 10409db9-9fd2-4e4d-b8cd-cf6fec0afaa2
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostThreadPoolManager::SetMinThreads Method
 Sets the minimum number of idle threads that the host must maintain in anticipation of requests.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetMinThreads (  
     [in] DWORD MinThreads  
 );  

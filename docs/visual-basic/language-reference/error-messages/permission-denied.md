@@ -1,5 +1,5 @@
 ---
-title: "Permission denied (Visual Basic)"
+title: "Permission denied"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID70"

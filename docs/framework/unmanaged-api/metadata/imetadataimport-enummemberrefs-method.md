@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e97c97a6-6e4f-41f5-9af1-9b3cf3bdbd6b
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::EnumMemberRefs Method
 Enumerates MemberRef tokens representing members of the specified type.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumMemberRefs (  
    [in, out] HCORENUM    *phEnum,   
    [in]   mdToken        tkParent,   

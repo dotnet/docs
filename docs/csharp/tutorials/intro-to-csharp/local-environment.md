@@ -6,10 +6,10 @@ ms.date: 10/23/2018
 # Become familiar with the .NET development tools
 
 The first step in running a tutorial on your machine is to set up a development environment.
-The .NET topic [Get Started in 10 minutes](https://www.microsoft.com/net/core) has instructions for setting
-up your local development environment on Mac, PC or Linux.
+The .NET tutorial [Hello World in 10 minutes](https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro) has instructions for setting
+up your local development environment on Windows, Linux, or macOS.
 
-Alternatively, you can install the [.NET Core SDK](https://www.microsoft.com/net/download) and
+Alternatively, you can install the [.NET Core SDK](https://dotnet.microsoft.com/download) and
 [Visual Studio Code](https://code.visualstudio.com/).
 
 ## Basic application development flow

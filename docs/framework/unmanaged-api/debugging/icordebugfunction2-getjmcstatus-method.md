@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 840a71ed-bf5a-4f5e-8ed6-762222b34493
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugFunction2::GetJMCStatus Method
 Gets a value that indicates whether the function that is represented by this ICorDebugFunction2 object is marked as user code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetJMCStatus (  
     [out] BOOL   *pbIsJustMyCode  
 );  

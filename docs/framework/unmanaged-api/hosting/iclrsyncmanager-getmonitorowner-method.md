@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 840983a4-396d-47b4-86a0-d35f9b437cdb
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRSyncManager::GetMonitorOwner Method
 Gets the [IHostTask](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md) instance that owns the monitor identified by the specified cookie.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMonitorOwner (  
     [in]  SIZE_T     cookie,  
     [out] IHostTask *ppOwnerHostTask  
@@ -52,7 +50,7 @@ HRESULT GetMonitorOwner (
  The host typically calls `GetMonitorOwner` as part of a deadlock-detection mechanism. The cookie is associated with a monitor when it is created by using a call to [IHostSyncManager::CreateMonitorEvent](../../../../docs/framework/unmanaged-api/hosting/ihostsyncmanager-createmonitorevent-method.md).  
   
 > [!NOTE]
->  A call to release the event underlying the monitor might block—but will not deadlock—if a call to this method is currently in effect on the cookie associated with that monitor. Other tasks might also block if they attempt to acquire this monitor.  
+> A call to release the event underlying the monitor might block—but will not deadlock—if a call to this method is currently in effect on the cookie associated with that monitor. Other tasks might also block if they attempt to acquire this monitor.  
   
  `GetMonitorOwner` always returns immediately and can be called any time after a call to `CreateMonitorEvent`. The host does not need to wait until a task is waiting on the event.  
   

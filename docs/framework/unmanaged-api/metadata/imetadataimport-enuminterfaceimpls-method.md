@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: ba6e178f-128b-4e47-a13c-b4be73eb106c
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::EnumInterfaceImpls Method
 Enumerates all interfaces implemented by the specified `TypeDef`. 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumInterfaceImpls (  
    [in, out]  HCORENUM       *phEnum,   
    [in]   mdTypeDef          td,  
@@ -44,7 +42,7 @@ HRESULT EnumInterfaceImpls (
  [out] The array used to store the MethodDef tokens.  
   
  `cMax`  
- [in] The maximum size of the `rImpls` array.  
+ [in] The maximum length of the `rImpls` array.  
   
  `pcImpls`  
  [out] The actual number of tokens returned in `rImpls`.  

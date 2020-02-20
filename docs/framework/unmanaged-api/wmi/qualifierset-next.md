@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "QualifierSet_Next function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # QualifierSet_Next function
 Retrieves the next qualifier in an enumeration that started with a call to the [QualifierSet_BeginEnumeration](qualifierset-beginenumeration.md) function.   
@@ -24,7 +22,7 @@ Retrieves the next qualifier in an enumeration that started with a call to the [
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT QualifierSet_Next (
    [in] int                  vFunc, 
    [in] IWbemQualifierSet*   ptr, 
@@ -76,7 +74,7 @@ You call the `QualifierSet_Next` function repeatedly to enumerate all the qualif
 The order of the qualifiers returned during the enumeration is undefined.
 
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.idl  
   

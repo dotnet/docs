@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: d1876601-6ab9-48e1-8ebd-184af1d0cd76
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostMemoryManager::ReleasedVirtualAddressSpace Method
 Notifies the host that the common language runtime (CLR) has finished using the specified memory.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ReleasedVirtualAddressSpace(  
     [in] LPVOID startAddress  
 );  

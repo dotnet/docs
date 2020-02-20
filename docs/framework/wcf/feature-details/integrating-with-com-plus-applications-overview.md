@@ -22,7 +22,7 @@ Windows Communication Foundation (WCF) provides a rich environment for creating 
  Default addresses and transport bindings for the service are provided in a service configuration file, but these can be reconfigured as required.  
   
 > [!NOTE]
->  The contracts for the exposed Web services remain constant as long as the COM+ interfaces and configuration remain unchanged. A modification to several interfaces does not automatically update the available services and requires re-running the COM+ Service Model Configuration tool (ComSvcConfig.exe).  
+> The contracts for the exposed Web services remain constant as long as the COM+ interfaces and configuration remain unchanged. A modification to several interfaces does not automatically update the available services and requires re-running the COM+ Service Model Configuration tool (ComSvcConfig.exe).  
   
  The authentication and authorization requirements of the COM+ application and its components continue to be enforced when used as a Web service.  
   
@@ -65,7 +65,7 @@ Windows Communication Foundation (WCF) provides a rich environment for creating 
  Within a client application, the methods on the <xref:System.ServiceModel.ComIntegration.PersistStreamTypeWrapper> object can be used to pass an object in to a service and similarly to retrieve an object.  
   
 > [!NOTE]
->  Due to the custom and platform-specific nature of the serialization approach, this is best suited for use between WCF clients and WCF services.  
+> Due to the custom and platform-specific nature of the serialization approach, this is best suited for use between WCF clients and WCF services.  
   
 ## Selecting the Hosting Mode  
  COM+ exposes Web services in one of the following hosting modes:  

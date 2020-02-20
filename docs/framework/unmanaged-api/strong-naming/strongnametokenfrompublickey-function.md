@@ -18,17 +18,15 @@ helpviewer_keywords:
 ms.assetid: 997e9e57-abb2-4217-bf20-1df621a75add
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # StrongNameTokenFromPublicKey Function
 Gets a token representing a public key. A strong name token is the shortened form of a public key.  
   
- This function has been deprecated. Use the [ICLRStrongName::StrongNameTokenFromPublicKey](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnametokenfrompublickey-method.md) method instead.  
+ This function has been deprecated. Use the [ICLRStrongName::StrongNameTokenFromPublicKey](../hosting/iclrstrongname-strongnametokenfrompublickey-method.md) method instead.  
   
 ## Syntax  
   
-```  
+```cpp  
 BOOLEANStrongNameTokenFromPublicKey (   
     [in]  BYTE    *pbPublicKeyBlob,  
     [in]  ULONG   cbPublicKeyBlob,  
@@ -39,13 +37,13 @@ BOOLEANStrongNameTokenFromPublicKey (
   
 ## Parameters  
  `pbPublicKeyBlob`  
- [in] A structure of type [PublicKeyBlob](../../../../docs/framework/unmanaged-api/strong-naming/publickeyblob-structure.md) that contains the public portion of the key pair used to generate the strong name signature.  
+ [in] A structure of type [PublicKeyBlob](publickeyblob-structure.md) that contains the public portion of the key pair used to generate the strong name signature.  
   
  `cbPublicKeyBlob`  
  [in] The size, in bytes, of `pbPublicKeyBlob`.  
   
  `ppbStrongNameToken`  
- [out] The strong name token corresponding to the key passed in `pbPublicKeyBlob`. The common language runtime allocates the memory in which to return the token. The caller must free this memory by using the [StrongNameFreeBuffer](../../../../docs/framework/unmanaged-api/strong-naming/strongnamefreebuffer-function.md) function.  
+ [out] The strong name token corresponding to the key passed in `pbPublicKeyBlob`. The common language runtime allocates the memory in which to return the token. The caller must free this memory by using the [StrongNameFreeBuffer](strongnamefreebuffer-function.md) function.  
   
  `pcbStrongNameToken`  
  [out] The size, in bytes, of the returned strong name token.  
@@ -56,10 +54,10 @@ BOOLEANStrongNameTokenFromPublicKey (
 ## Remarks  
  A strong name token is the shortened form of a public key used to save space when storing key information in metadata. Specifically, strong name tokens are used in assembly references to refer to the dependent assembly.  
   
- If the `StrongNameTokenFromPublicKey` function does not complete successfully, call the [StrongNameErrorInfo](../../../../docs/framework/unmanaged-api/strong-naming/strongnameerrorinfo-function.md) function to retrieve the last generated error.  
+ If the `StrongNameTokenFromPublicKey` function does not complete successfully, call the [StrongNameErrorInfo](strongnameerrorinfo-function.md) function to retrieve the last generated error.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** StrongName.h  
   
@@ -69,6 +67,6 @@ BOOLEANStrongNameTokenFromPublicKey (
   
 ## See also
 
-- [StrongNameTokenFromPublicKey Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnametokenfrompublickey-method.md)
-- [StrongNameGetPublicKey Method](../../../../docs/framework/unmanaged-api/hosting/iclrstrongname-strongnamegetpublickey-method.md)
-- [PublicKeyBlob Structure](../../../../docs/framework/unmanaged-api/strong-naming/publickeyblob-structure.md)
+- [StrongNameTokenFromPublicKey Method](../hosting/iclrstrongname-strongnametokenfrompublickey-method.md)
+- [StrongNameGetPublicKey Method](../hosting/iclrstrongname-strongnamegetpublickey-method.md)
+- [PublicKeyBlob Structure](publickeyblob-structure.md)

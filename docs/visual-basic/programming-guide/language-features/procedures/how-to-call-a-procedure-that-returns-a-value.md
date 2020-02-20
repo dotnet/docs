@@ -1,5 +1,5 @@
 ---
-title: "How to: Call a Procedure That Returns a Value (Visual Basic)"
+title: "How to: Call a Procedure That Returns a Value"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "procedure calls [Visual Basic], returning values"

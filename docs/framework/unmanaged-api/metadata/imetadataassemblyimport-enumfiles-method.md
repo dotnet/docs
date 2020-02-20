@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: f0d721e2-b946-426d-8e20-9124bd04e4cb
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataAssemblyImport::EnumFiles Method
 Enumerates the files referenced in the current assembly manifest.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumFiles (  
     [in, out] HCORENUM    *phEnum,   
     [out] mdFile          rFiles[],   

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 8176d732-c25c-4520-811d-e3310f339947
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostTaskManager::GetStackGuarantee Method
 Gets the amount of stack space that is guaranteed to be available after a stack operation completes, but before the closing of a process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStackGuarantee(  
     [out] ULONG *pGuarantee  
 );  

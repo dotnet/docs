@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: d0d65060-6f90-42a2-95cf-6ffb04352996
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::EnumSignatures Method
 Enumerates Signature tokens representing stand-alone signatures in the current scope.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumSignatures (  
    [in, out] HCORENUM     *phEnum,  
    [out]     mdSignature  rSignatures[],  

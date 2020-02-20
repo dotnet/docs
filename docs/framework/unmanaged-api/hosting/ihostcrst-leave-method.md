@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: dfc51d9e-b36d-4dba-9ea1-4f63fa0601ae
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostCrst::Leave Method
 Leaves the critical section that is represented by the current instance of [IHostCrst](../../../../docs/framework/unmanaged-api/hosting/ihostcrst-interface.md).  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Leave ();  
 ```  
   

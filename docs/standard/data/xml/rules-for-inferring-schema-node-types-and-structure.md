@@ -3,8 +3,6 @@ title: "Rules for Inferring Schema Node Types and Structure"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: d74ce896-717d-4871-8fd9-b070e2f53cb0
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Rules for Inferring Schema Node Types and Structure
 This topic describes how the schema inference process translates the node types in an XML document to an XML Schema definition language (XSD) structure.  
@@ -29,7 +27,7 @@ This topic describes how the schema inference process translates the node types 
 8. Element with a sequence of choices of child elements and attributes  
   
 > [!NOTE]
->  All `complexType` declarations are inferred as anonymous types. The only global element inferred is the root element; all other elements are local.  
+> All `complexType` declarations are inferred as anonymous types. The only global element inferred is the root element; all other elements are local.  
   
  For more information about the schema inference process, see [Inferring Schemas from XML Documents](../../../../docs/standard/data/xml/inferring-schemas-from-xml-documents.md).  
   
@@ -73,7 +71,7 @@ This topic describes how the schema inference process translates the node types 
  The following table shows the XML input to the <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A> method, and the XML schema generated. The bolded elements show the schema inferred for an element with a sequence of child elements.  
   
 > [!NOTE]
->  Even if an element has only one child element, it is still treated as a sequence.  
+> Even if an element has only one child element, it is still treated as a sequence.  
   
  For more information about the schema inference process, see [Inferring Schemas from XML Documents](../../../../docs/standard/data/xml/inferring-schemas-from-xml-documents.md).  
   
@@ -85,7 +83,7 @@ This topic describes how the schema inference process translates the node types 
  The following table shows the XML input to the <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A> method, and the XML schema generated. The bolded elements show the schema inferred for an element with a sequence of child elements and attributes.  
   
 > [!NOTE]
->  Even if an element has only one child element, it is still treated as a sequence.  
+> Even if an element has only one child element, it is still treated as a sequence.  
   
  For more information about the schema inference process, see [Inferring Schemas from XML Documents](../../../../docs/standard/data/xml/inferring-schemas-from-xml-documents.md).  
   
@@ -97,7 +95,7 @@ This topic describes how the schema inference process translates the node types 
  The following table shows the XML input to the <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A> method, and the XML schema generated. The bolded elements show the schema inferred for an element with a sequence and choice of child elements.  
   
 > [!NOTE]
->  The `maxOccurs` attribute of the `xs:choice` element is set to `"unbounded"` in the inferred schema.  
+> The `maxOccurs` attribute of the `xs:choice` element is set to `"unbounded"` in the inferred schema.  
   
  For more information about the schema inference process, see [Inferring Schemas from XML Documents](../../../../docs/standard/data/xml/inferring-schemas-from-xml-documents.md).  
   
@@ -109,7 +107,7 @@ This topic describes how the schema inference process translates the node types 
  The following table shows the XML input to the <xref:System.Xml.Schema.XmlSchemaInference.InferSchema%2A> method, and the XML schema generated. The bolded elements show the schema inferred for an element with a sequence and choice of child elements and attributes.  
   
 > [!NOTE]
->  The `maxOccurs` attribute of the `xs:choice` element is set to `"unbounded"` in the inferred schema.  
+> The `maxOccurs` attribute of the `xs:choice` element is set to `"unbounded"` in the inferred schema.  
   
  For more information about the schema inference process, see [Inferring Schemas from XML Documents](../../../../docs/standard/data/xml/inferring-schemas-from-xml-documents.md).  
   

@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 500335af-f9b5-413b-968a-e6d9a824478c
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # XSLT Transformations with the XslTransform Class
 
@@ -42,7 +40,6 @@ The `msxsl:script` and `msxsl:node-set` functions are the only Microsoft XML Cor
 The following code example loads an XSLT style sheet, reads a file called mydata.xml into an <xref:System.Xml.XPath.XPathDocument>, and performs a transformation on the data on a fictitious file called myStyleSheet.xsl, sending the formatted output to the console.
 
 ```vb
-Imports System
 Imports System.IO
 Imports System.Xml
 Imports System.Xml.XPath

@@ -1,6 +1,5 @@
 ---
 title: "Comparison Between Properties and Indexers - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "properties [C#], vs. indexers"
@@ -15,12 +14,12 @@ Indexers are like properties. Except for the differences shown in the following 
 |Allows methods to be called as if they were public data members.|Allows elements of an internal collection of an object to be accessed by using array notation on the object itself.|  
 |Accessed through a simple name.|Accessed through an index.|  
 |Can be a static or an instance member.|Must be an instance member.|  
-|A [get](../../../csharp/language-reference/keywords/get.md) accessor of a property has no parameters.|A `get` accessor of an indexer has the same formal parameter list as the indexer.|  
-|A [set](../../../csharp/language-reference/keywords/set.md) accessor of a property contains the implicit `value` parameter.|A `set` accessor of an indexer has the same formal parameter list as the indexer, and also to the [value](../../../csharp/language-reference/keywords/value.md) parameter.|  
-|Supports shortened syntax with [Auto-Implemented Properties](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md).|Does not support shortened syntax.|  
+|A [get](../../language-reference/keywords/get.md) accessor of a property has no parameters.|A `get` accessor of an indexer has the same formal parameter list as the indexer.|  
+|A [set](../../language-reference/keywords/set.md) accessor of a property contains the implicit `value` parameter.|A `set` accessor of an indexer has the same formal parameter list as the indexer, and also to the [value](../../language-reference/keywords/value.md) parameter.|  
+|Supports shortened syntax with [Auto-Implemented Properties](../classes-and-structs/auto-implemented-properties.md).|Supports expression bodied members for get only indexers.|  
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Indexers](../../../csharp/programming-guide/indexers/index.md)
-- [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md)
+- [C# Programming Guide](../index.md)
+- [Indexers](./index.md)
+- [Properties](../classes-and-structs/properties.md)

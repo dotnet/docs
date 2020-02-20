@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: afe4e97f-bffc-47e1-adad-d6e842487f35
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess::ThreadForFiberCookie Method
 This method is not implemented.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ThreadForFiberCookie (  
     [in] DWORD fiberCookie,  
     [out] ICorDebugThread **ppThread  

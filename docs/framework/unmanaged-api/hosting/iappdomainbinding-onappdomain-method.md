@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: b419dcc9-e8aa-484b-af0d-0f40358edb99
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IAppDomainBinding::OnAppDomain Method
 Called by the common language runtime (CLR) to notify the host that an application domain has been created.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OnAppDomain (  
     [in] IUnknown* pAppdomain  
 );  

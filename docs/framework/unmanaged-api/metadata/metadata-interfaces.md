@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "metadata interfaces [.NET Framework]"
   - "interfaces (.NET Framework metadata]"
 ms.assetid: f5cdac93-a28c-48ef-8a19-5773376e9e7c
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Metadata Interfaces
 This section describes the unmanaged interfaces that provide access to the metadata exposed by the .NET Framework types, methods, fields, and so on.  

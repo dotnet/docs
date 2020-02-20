@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e930c174-f71d-4faa-bb59-f0fb3df4d77b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostManualEvent::Set Method
 Sets the current [IHostManualEvent](../../../../docs/framework/unmanaged-api/hosting/ihostmanualevent-interface.md) instance to a signaled state.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Set ();  
 ```  
   

@@ -15,27 +15,28 @@ helpviewer_keywords:
 ms.assetid: dbab7d90-d515-4dc9-8195-294d5d04bab6
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::AppDomainCreationFinished Method
 Notifies the profiler that an application domain has been created.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AppDomainCreationFinished(  
     [in] AppDomainID appDomainId,  
     [in] HRESULT     hrStatus);   
 ```  
   
-## Parameters  
- `appDomainId`  
- [in] Identifies the domain which has been created.  
-  
- `hrStatus`  
- [in] An HRESULT that indicates whether creation of the application domain completed successfully.  
-  
+## Parameters
+
+- `appDomainId`
+
+  \[in] Identifies the domain which has been created.
+
+- `hrStatus`
+
+  \[in] An HRESULT that indicates whether creation of the application domain completed successfully.
+
 ## Remarks  
  The application ID is not valid for any information request until the `AppDomainCreationFinished` method is called.  
   
@@ -52,4 +53,4 @@ HRESULT AppDomainCreationFinished(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)

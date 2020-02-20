@@ -12,9 +12,13 @@ Processes documentation comments to an XML file.
   
 ## Syntax  
   
-```  
+```console  
 -doc[+ | -]  
-' -or-  
+```
+
+or  
+
+```console
 -doc:file  
 ```  
   
@@ -36,7 +40,7 @@ Processes documentation comments to an XML file.
   
  To use the generated XML file with the Visual Studio [IntelliSense](/visualstudio/ide/using-intellisense) feature, let the file name of the XML file be the same as the assembly you want to support. Make sure the XML file is in the same directory as the assembly so that when the assembly is referenced in the Visual Studio project, the .xml file is found as well. XML documentation files are not required for IntelliSense to work for code within a project or within projects referenced by a project.  
   
- Unless you compile with `/target:module`, the XML file contains the tags `<assembly></assembly>`. These tags specify the name of the file containing the assembly manifest for the output file of the compilation.  
+ Unless you compile with `-target:module`, the XML file contains the tags `<assembly></assembly>`. These tags specify the name of the file containing the assembly manifest for the output file of the compilation.  
   
  See [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md) for ways to generate documentation from comments in your code.  
   

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c0a6dce5-0a8d-42e8-808b-6ca14df9d289
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRRuntimeHost::Start Method
 Initializes the common language runtime (CLR) into a process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Start();  
 ```  
   

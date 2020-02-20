@@ -24,7 +24,7 @@ Gets the data for the given MethodDesc pointer.
 
 ## Syntax
 
-```
+```cpp
 HRESULT GetMethodDescData(
     CLRDATA_ADDRESS            methodDesc,
     CLRDATA_ADDRESS            ip,

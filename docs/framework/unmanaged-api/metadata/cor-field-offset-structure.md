@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: cced5298-277f-4a5a-8ecf-a0050c1096ea
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # COR_FIELD_OFFSET Structure
 Stores the offset, within a class, of the specified field.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct COR_FIELD_OFFSET {  
     mdFieldDef  ridOfField;  
     ULONG       ulOffset;  

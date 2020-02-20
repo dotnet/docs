@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Key In the Registry (Visual C#)"
+title: "How to create a key in the registry - C# Programming Guide"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "registry, adding keys and values [C#]"
@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "keys, creating in registry"
 ms.assetid: 8fa475b0-e01f-483a-9327-fd03488fdf5d
 ---
-# How to: Create a Key In the Registry (Visual C#)
+# How to create a key in the registry (C# Programming Guide)
 This example adds the value pair, "Name" and "Isabella", to the current user's registry, under the key "Names".  
   
 ## Example  
@@ -52,6 +52,6 @@ key.Close();
 ## See also
 
 - <xref:System.IO?displayProperty=nameWithType>
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [File System and the Registry (C# Programming Guide)](../../../csharp/programming-guide/file-system/index.md)
+- [C# Programming Guide](../index.md)
+- [File System and the Registry (C# Programming Guide)](./index.md)
 - [Read, write and delete from the registry with C#](https://www.codeproject.com/Articles/3389/Read-write-and-delete-from-registry-with-C)

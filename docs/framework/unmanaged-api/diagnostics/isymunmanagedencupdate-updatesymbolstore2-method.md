@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 35588317-6184-485c-ab41-4b15fc1765d9
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedENCUpdate::UpdateSymbolStore2 Method
 Allows a compiler to omit functions that have not been modified from the program database (PDB) stream, provided the line information meets the requirements. The correct line information can be determined with the old PDB line information and one delta for all lines in the function.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UpdateSymbolStore2(  
     [in]  IStream      *pIStream,  
     [in]  SYMLINEDELTA* pDeltaLines,  

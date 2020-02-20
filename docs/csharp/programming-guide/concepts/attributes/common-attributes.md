@@ -219,15 +219,15 @@ class SampleClass
 |---|---|---|  
 |<xref:System.Runtime.CompilerServices.CallerFilePathAttribute>|Full path of the source file that contains the caller. This is the path at compile time.|`String`|  
 |<xref:System.Runtime.CompilerServices.CallerLineNumberAttribute>|Line number in the source file from which the method is called.|`Integer`|  
-|<xref:System.Runtime.CompilerServices.CallerMemberNameAttribute>|Method name or property name of the caller. For more information, see [Caller Information (C#)](../../../../csharp/programming-guide/concepts/caller-information.md).|`String`|  
+|<xref:System.Runtime.CompilerServices.CallerMemberNameAttribute>|Method name or property name of the caller. For more information, see [Caller Information (C#)](../caller-information.md).|`String`|  
   
- For more information about the Caller Info attributes, see [Caller Information (C#)](../../../../csharp/programming-guide/concepts/caller-information.md).  
+ For more information about the Caller Info attributes, see [Caller Information (C#)](../caller-information.md).  
   
 ## See also
 
 - <xref:System.Reflection>
 - <xref:System.Attribute>
-- [C# Programming Guide](../../../../csharp/programming-guide/index.md)
-- [Attributes](../../../../../docs/standard/attributes/index.md)
-- [Reflection (C#)](../../../../csharp/programming-guide/concepts/reflection.md)
-- [Accessing Attributes by Using Reflection (C#)](../../../../csharp/programming-guide/concepts/attributes/accessing-attributes-by-using-reflection.md)
+- [C# Programming Guide](../../index.md)
+- [Attributes](../../../../standard/attributes/index.md)
+- [Reflection (C#)](../reflection.md)
+- [Accessing Attributes by Using Reflection (C#)](./accessing-attributes-by-using-reflection.md)

@@ -1,5 +1,5 @@
 ---
-title: "My.Computer.Ports Object (Visual Basic)"
+title: "My.Computer.Ports Object"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "My.Computer.Ports object"
@@ -15,7 +15,7 @@ Provides a property and a method for accessing the computer's serial ports.
  For more information, see [Accessing the Computer's Ports](../../../visual-basic/developing-apps/programming/computer-resources/accessing-the-computer-s-ports.md).  
   
 > [!NOTE]
->  You can also use properties and methods of the <xref:System.IO.Ports.SerialPort?displayProperty=nameWithType> class to access the computer's serial ports.  
+> You can also use properties and methods of the <xref:System.IO.Ports.SerialPort?displayProperty=nameWithType> class to access the computer's serial ports.  
   
 ## Requirements  
  **Namespace:** <xref:Microsoft.VisualBasic.Devices>  

@@ -1,5 +1,5 @@
 ---
-title: "Logging Information from the Application (Visual Basic)"
+title: "Logging Information from the Application"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Log object"
@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: 8bf4f047-22d6-48d6-aec5-93b98ad5b8e8
 ---
 # Logging Information from the Application (Visual Basic)
+
 This section contains topics that cover how to log information from your application using the `My.Application.Log` or `My.Log` object, and how to extend the application's logging capabilities.  
   
  The `Log` object provides methods for writing information to the application's log listeners, and the `Log` object's advanced `TraceSource` property provides detailed configuration information. The `Log` object is configured by the application's configuration file.  

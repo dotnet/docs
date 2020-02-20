@@ -19,7 +19,7 @@ Windows Workflow Foundation (WF) enables you to track workflow-related informati
  </activityStateQueries>  
 ```  
   
- If a fault is propagated and handled within a fault handler (such as a <xref:System.Activities.Statements.TryCatch> activity) this can be detected using a <xref:System.Activities.Tracking.FaultPropagationRecord>. The <xref:System.Activities.Tracking.FaultPropagationRecord> indicates the source activity of the fault and the name of the fault handler. The <xref:System.Activities.Tracking.FaultPropagationRecord> contains fault details in form of the exception stack for the fault.The query to subscribe for a <xref:System.Activities.Tracking.FaultPropagationRecord> is shown in the following example.  
+ If a fault is propagated and handled within a fault handler (such as a <xref:System.Activities.Statements.TryCatch> activity) this can be detected using a <xref:System.Activities.Tracking.FaultPropagationRecord>. The <xref:System.Activities.Tracking.FaultPropagationRecord> indicates the source activity of the fault and the name of the fault handler. The <xref:System.Activities.Tracking.FaultPropagationRecord> contains fault details in form of the exception stack for the fault. The query to subscribe for a <xref:System.Activities.Tracking.FaultPropagationRecord> is shown in the following example.  
   
 ```xml  
 <faultPropagationQueries>  
@@ -47,5 +47,5 @@ Windows Workflow Foundation (WF) enables you to track workflow-related informati
   
 ## See also
 
-- [Windows Server App Fabric Monitoring](https://go.microsoft.com/fwlink/?LinkId=201273)
-- [Monitoring Applications with App Fabric](https://go.microsoft.com/fwlink/?LinkId=201275)
+- [Windows Server App Fabric Monitoring](https://docs.microsoft.com/previous-versions/appfabric/ee677251(v=azure.10))
+- [Monitoring Applications with App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677276(v=azure.10))

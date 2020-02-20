@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c66f3ac5-6489-484a-9bed-c31b711cee01
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorRuntimeHost::Start Method
 Starts the common language runtime (CLR).  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Start ();  
 ```  
   

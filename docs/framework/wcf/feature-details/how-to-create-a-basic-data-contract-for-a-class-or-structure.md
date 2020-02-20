@@ -22,7 +22,7 @@ This topic shows the basic steps to create a data contract using a class or stru
 2. Define the members (properties, fields, or events) that are serialized by applying the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to each member. These members are called data members. By default, all public types are serializable. For more information, see [Serializable Types](../../../../docs/framework/wcf/feature-details/serializable-types.md).  
   
     > [!NOTE]
-    >  You can apply the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to private fields, causing the data to be exposed to others. Be sure that the member does not contain sensitive data.  
+    > You can apply the <xref:System.Runtime.Serialization.DataMemberAttribute> attribute to private fields, causing the data to be exposed to others. Be sure that the member does not contain sensitive data.  
   
 ## Example  
  The following example shows how to create a data contract for the `Person` type by applying the <xref:System.Runtime.Serialization.DataContractAttribute> and <xref:System.Runtime.Serialization.DataMemberAttribute> attributes to the class and its members.  

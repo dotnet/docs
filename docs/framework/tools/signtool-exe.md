@@ -5,19 +5,17 @@ helpviewer_keywords:
   - "Sign tool"
   - "SignTool.exe"
 ms.assetid: 0c25ff6c-bff3-422e-b017-146a3ee86cb9
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # SignTool.exe (Sign Tool)
 Sign Tool is a command-line tool that digitally signs files, verifies signatures in files, and time-stamps files.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).  
   
  At the command prompt, type the following:  
   
 ## Syntax  
   
-```  
+```console  
 signtool [command] [options] [file_name | ...]  
 ```  
   
@@ -33,10 +31,10 @@ signtool [command] [options] [file_name | ...]
   
 |Command|Description|  
 |-------------|-----------------|  
-|`catdb`|Adds a catalog file to, or removes it from, a catalog database. Catalog databases are used for automatic lookup of catalog files and are identified by GUID. For a list of the options supported by the `catdb` command, see [catdb Command Options](../../../docs/framework/tools/signtool-exe.md#catdb).|  
-|`sign`|Digitally signs files. Digital signatures protect files from tampering, and enable users to verify the signer based on a signing certificate. For a list of the options supported by the `sign` command, see [sign Command Options](../../../docs/framework/tools/signtool-exe.md#sign).|  
-|`Timestamp`|Time-stamps files. For a list of the options supported by the `TimeStamp` command, see [TimeStamp Command Options](../../../docs/framework/tools/signtool-exe.md#TimeStamp).|  
-|`Verify`|Verifies the digital signature of files by determining whether the signing certificate was issued by a trusted authority, whether the signing certificate has been revoked, and, optionally, whether the signing certificate is valid for a specific policy. For a list of the options supported by the `Verify` command, see [Verify Command Options](../../../docs/framework/tools/signtool-exe.md#Verify).|  
+|`catdb`|Adds a catalog file to, or removes it from, a catalog database. Catalog databases are used for automatic lookup of catalog files and are identified by GUID. For a list of the options supported by the `catdb` command, see [catdb Command Options](signtool-exe.md#catdb).|  
+|`sign`|Digitally signs files. Digital signatures protect files from tampering, and enable users to verify the signer based on a signing certificate. For a list of the options supported by the `sign` command, see [sign Command Options](signtool-exe.md#sign).|  
+|`Timestamp`|Time-stamps files. For a list of the options supported by the `TimeStamp` command, see [TimeStamp Command Options](signtool-exe.md#TimeStamp).|  
+|`Verify`|Verifies the digital signature of files by determining whether the signing certificate was issued by a trusted authority, whether the signing certificate has been revoked, and, optionally, whether the signing certificate is valid for a specific policy. For a list of the options supported by the `Verify` command, see [Verify Command Options](signtool-exe.md#Verify).|  
   
  The following options apply to all Sign Tool commands.  
   
@@ -122,7 +120,7 @@ signtool [command] [options] [file_name | ...]
 |`/ds`  *Index*|Verifies the signature at a specified position.|  
 |`/hash` (`SHA1`&#124;`SHA256`)|Specifies an optional hash algorithm to use when searching for a file in a catalog.|  
 |`/kp`|Specifies that verification should be performed with the kernel-mode driver signing policy.|  
-|`/ms`|Uses multiple verification semantics. This is the default behavior of a [WinVerifyTrust](/windows/desktop/api/wintrust/nf-wintrust-winverifytrust) call on [!INCLUDE[win8](../../../includes/win8-md.md)] and above.|  
+|`/ms`|Uses multiple verification semantics. This is the default behavior of a [WinVerifyTrust](/windows/desktop/api/wintrust/nf-wintrust-winverifytrust) call on Windows 8 and above.|  
 |`/o` *Version*|Verifies the file by operating system version. *Version* has the following form: *PlatformID*:*VerMajor*.*VerMinor*.*BuildNumber*. *PlatformID* represents the underlying value of a <xref:System.PlatformID> enumeration member. **Important:**  The use of the `/o` switch is recommended. If `/o` is not specified, SignTool.exe may return unexpected results. For example, if you do not include the `/o` switch, system catalogs that validate correctly on an older operating system may not validate correctly on a newer operating system.|  
 |`/p7`|Verifies PKCS #7 files. No existing policies are used for PKCS #7 validation. The signature is checked and a chain is built for the signing certificate.|  
 |`/pa`|Specifies that the Default Authenticode Verification Policy should be used. If the `/pa` option is not specified, Sign Tool uses the Windows Driver Verification Policy. This option cannot be used with the `catdb` options.|  
@@ -145,65 +143,65 @@ signtool [command] [options] [file_name | ...]
 ## Examples  
  The following command adds the catalog file MyCatalogFileName.cat to the system component and driver database. The `/u` option generates a unique name if necessary to prevent replacing an existing catalog file named `MyCatalogFileName.cat`.  
   
-```  
+```console  
 signtool catdb /v /u MyCatalogFileName.cat  
 ```  
   
  The following command signs a file automatically by using the best certificate.  
   
-```  
+```console  
 signtool sign /a MyFile.exe  
 ```  
   
  The following command digitally signs a file by using a certificate stored in a password-protected PFX file.  
   
-```  
+```console  
 signtool sign /f MyCert.pfx /p MyPassword MyFile.exe  
 ```  
   
  The following command digitally signs and time-stamps a file. The certificate used to sign the file is stored in a PFX file.  
   
-```  
-signtool sign /f MyCert.pfx /t http://timestamp.verisign.com/scripts/timstamp.dll MyFile.exe  
+```console  
+signtool sign /f MyCert.pfx /t http://timestamp.digicert.com MyFile.exe  
 ```  
   
  The following command signs a file by using a certificate located in the `My` store that has a subject name of `My Company Certificate`.  
   
-```  
+```console  
 signtool sign /n "My Company Certificate" MyFile.exe  
 ```  
   
  The following command signs an ActiveX control and provides information that is displayed by Internet Explorer when the user is prompted to install the control.  
   
-```  
+```console  
 Signtool sign /f MyCert.pfx /d: "MyControl" /du http://www.example.com/MyControl/info.html MyControl.exe  
 ```  
   
  The following command time-stamps a file that has already been digitally signed.  
   
-```  
-signtool timestamp /t http://timestamp.verisign.com/scripts/timstamp.dll MyFile.exe  
+```console  
+signtool timestamp /t http://timestamp.digicert.com MyFile.exe  
 ```  
   
  The following command verifies that a file has been signed.  
   
-```  
+```console  
 signtool verify MyFile.exe  
 ```  
   
  The following command verifies a system file that may be signed in a catalog.  
   
-```  
+```console  
 signtool verify /a SystemFile.dll  
 ```  
   
  The following command verifies a system file that is signed in a catalog named `MyCatalog.cat`.  
   
-```  
+```console  
 signtool verify /c MyCatalog.cat SystemFile.dll  
 ```  
   
 ## See also
 
-- [Tools](../../../docs/framework/tools/index.md)
-- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [Tools](index.md)
+- [Command Prompts](developer-command-prompt-for-vs.md)

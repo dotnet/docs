@@ -1,1 +1,0 @@
-XML Paper Specification (XPS)

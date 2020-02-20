@@ -46,7 +46,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
  <xref:System.Windows.Controls.Panel> also defines the <xref:System.Windows.Controls.Panel.OnRender%2A> method, which can be used to override the default presentation behavior of a <xref:System.Windows.Controls.Panel>.  
   
 #### Attached Properties  
- Derived panel elements make extensive use of attached properties. An attached property is a specialized form of dependency property that does not have the conventional [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] property "wrapper". Attached properties have a specialized syntax in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)], which can be seen in several of the examples that follow.  
+ Derived panel elements make extensive use of attached properties. An attached property is a specialized form of dependency property that does not have the conventional common language runtime (CLR) property "wrapper". Attached properties have a specialized syntax in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)], which can be seen in several of the examples that follow.  
   
  One purpose of an attached property is to allow child elements to store unique values of a property that is actually defined by a parent element. An application of this functionality is having child elements inform the parent how they wish to be presented in the [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)], which is extremely useful for application layout. For more information, see [Attached Properties Overview](../advanced/attached-properties-overview.md).  
   
@@ -88,14 +88,14 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
   
 <a name="Panels_overview_Canvas_subsection"></a>   
 ### Canvas  
- The <xref:System.Windows.Controls.Canvas> element enables positioning of content according to absolute *x-* and *y-*coordinates. Elements can be drawn in a unique location; or, if elements occupy the same coordinates, the order in which they appear in markup determines the order in which the elements are drawn.  
+ The <xref:System.Windows.Controls.Canvas> element enables positioning of content according to absolute *x-* and *y-* coordinates. Elements can be drawn in a unique location; or, if elements occupy the same coordinates, the order in which they appear in markup determines the order in which the elements are drawn.  
   
  <xref:System.Windows.Controls.Canvas> provides the most flexible layout support of any <xref:System.Windows.Controls.Panel>. Height and Width properties are used to define the area of the canvas, and elements inside are assigned absolute coordinates relative to the area of the parent <xref:System.Windows.Controls.Canvas>. Four attached properties, <xref:System.Windows.Controls.Canvas.Left%2A?displayProperty=nameWithType>, <xref:System.Windows.Controls.Canvas.Top%2A?displayProperty=nameWithType>, <xref:System.Windows.Controls.Canvas.Right%2A?displayProperty=nameWithType> and <xref:System.Windows.Controls.Canvas.Bottom%2A?displayProperty=nameWithType>, allow fine control of object placement within a <xref:System.Windows.Controls.Canvas>, allowing the developer to position and arrange elements precisely on the screen.  
   
 #### ClipToBounds Within a Canvas  
  <xref:System.Windows.Controls.Canvas> can position child elements at any position on the screen, even at coordinates that are outside of its own defined <xref:System.Windows.FrameworkElement.Height%2A> and <xref:System.Windows.FrameworkElement.Width%2A>. Furthermore, <xref:System.Windows.Controls.Canvas> is not affected by the size of its children. As a result, it is possible for a child element to overdraw other elements outside the bounding rectangle of the parent <xref:System.Windows.Controls.Canvas>. The default behavior of a <xref:System.Windows.Controls.Canvas> is to allow children to be drawn outside the bounds of the parent <xref:System.Windows.Controls.Canvas>. If this behavior is undesirable, the <xref:System.Windows.UIElement.ClipToBounds%2A> property can be set to `true`. This causes <xref:System.Windows.Controls.Canvas> to clip to its own size. <xref:System.Windows.Controls.Canvas> is the only layout element that allows children to be drawn outside its bounds.  
   
- This behavior is graphically illustrated in the [Width Properties Comparison Sample](https://go.microsoft.com/fwlink/?LinkID=160050).  
+ This behavior is graphically illustrated in the [Width Properties Comparison Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Elements/WidthProperties).  
   
 #### Defining and Using a Canvas  
  A <xref:System.Windows.Controls.Canvas> can be instantiated simply by using [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] or code. The following example demonstrates how to use <xref:System.Windows.Controls.Canvas> to absolutely position content. This code produces three 100-pixel squares. The first square is red, and its top-left (*x, y*) position is specified as (0, 0). The second square is green, and its top-left position is (100, 100), just below and to the right of the first square. The third square is blue, and its top-left position is (50, 50), thus encompassing the lower-right quadrant of the first square and the upper-left quadrant of the second. Because the third square is laid out last, it appears to be on top of the other two squares—that is, the overlapping portions assume the color of the third box.  
@@ -112,7 +112,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
 ### DockPanel  
  The <xref:System.Windows.Controls.DockPanel> element uses the <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> attached property as set in child content elements to position content along the edges of a container. When <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> is set to <xref:System.Windows.Controls.Dock.Top> or <xref:System.Windows.Controls.Dock.Bottom>, it positions child elements above or below each other. When <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> is set to <xref:System.Windows.Controls.Dock.Left> or <xref:System.Windows.Controls.Dock.Right>, it positions child elements to the left or right of each other. The <xref:System.Windows.Controls.DockPanel.LastChildFill%2A> property determines the position of the final element added as a child of a <xref:System.Windows.Controls.DockPanel>.  
   
- You can use <xref:System.Windows.Controls.DockPanel> to position a group of related controls, such as a set of buttons. Alternately, you can use it to create a "paned" [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)], similar to that found in [!INCLUDE[TLA#tla_outlook](../../../../includes/tlasharptla-outlook-md.md)].  
+ You can use <xref:System.Windows.Controls.DockPanel> to position a group of related controls, such as a set of buttons. Alternately, you can use it to create a "paned" [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)], similar to that found in Microsoft Outlook.  
   
 #### Sizing to Content  
  If its <xref:System.Windows.FrameworkElement.Height%2A> and <xref:System.Windows.FrameworkElement.Width%2A> properties are not specified, <xref:System.Windows.Controls.DockPanel> sizes to its content. The size can increase or decrease to accommodate the size of its child elements. However, when these properties are specified and there is no longer room for the next specified child element, <xref:System.Windows.Controls.DockPanel> does not display that child element or subsequent child elements and does not measure subsequent child elements.  
@@ -143,7 +143,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
  Columns and rows defined within a <xref:System.Windows.Controls.Grid> can take advantage of <xref:System.Windows.GridUnitType.Star> sizing in order to distribute remaining space proportionally. When <xref:System.Windows.GridUnitType.Star> is selected as the Height or Width of a row or column, that column or row receives a weighted proportion of remaining available space. This is in contrast to <xref:System.Windows.GridUnitType.Auto>, which will distribute space evenly based on the size of the content within a column or row. This value is expressed as `*` or `2*` when using [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]. In the first case, the row or column would receive one times the available space, in the second case, two times, and so on. By combining this technique to proportionally distribute space with a <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> value of `Stretch` it is possible to partition layout space by percentage of screen space. <xref:System.Windows.Controls.Grid> is the only layout panel that can distribute space in this manner.  
   
 #### Defining and Using a Grid  
- The following example demonstrates how to build a [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] similar to that found on the Run dialog available on the [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] Start menu.  
+ The following example demonstrates how to build a [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] similar to that found on the Run dialog available on the Windows Start menu.  
   
  [!code-csharp[GridRunDialog#1](~/samples/snippets/csharp/VS_Snippets_Wpf/GridRunDialog/CSharp/window1.xaml.cs#1)]
  [!code-vb[GridRunDialog#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GridRunDialog/VisualBasic/grid_vb.vb#1)]  
@@ -226,7 +226,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
   
  Similarly, custom layout behaviors based on derived classes (such as <xref:System.Windows.Controls.Canvas> or <xref:System.Windows.Controls.Grid>) can be defined by overriding their <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> and <xref:System.Windows.FrameworkElement.MeasureOverride%2A> methods.  
   
- The following markup demonstrates how to create a custom <xref:System.Windows.Controls.Panel> element. This new <xref:System.Windows.Controls.Panel>, defined as `PlotPanel`, supports the positioning of child elements through the use of hard-coded *x-* and *y-*coordinates. In this example, a <xref:System.Windows.Shapes.Rectangle> element (not shown) is positioned at plot point 50 (*x*), and 50 (*y*).  
+ The following markup demonstrates how to create a custom <xref:System.Windows.Controls.Panel> element. This new <xref:System.Windows.Controls.Panel>, defined as `PlotPanel`, supports the positioning of child elements through the use of hard-coded *x-* and *y-* coordinates. In this example, a <xref:System.Windows.Shapes.Rectangle> element (not shown) is positioned at plot point 50 (*x*), and 50 (*y*).  
   
  [!code-cpp[PlotPanel#1](~/samples/snippets/cpp/VS_Snippets_Wpf/PlotPanel/CPP/PlotPanel.cpp#1)]
  [!code-csharp[PlotPanel#1](~/samples/snippets/csharp/VS_Snippets_Wpf/PlotPanel/CSharp/PlotPanel.cs#1)]
@@ -244,14 +244,14 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
   
  <xref:System.Windows.Controls.DockPanel>, <xref:System.Windows.Controls.Grid>, and <xref:System.Windows.Controls.StackPanel> are all good choices for localizable [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]. <xref:System.Windows.Controls.Canvas> is not a good choice, however, because it positions content absolutely, making it difficult to localize.  
   
- For additional information on creating [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications with localizable [!INCLUDE[TLA#tla_ui#plural](../../../../includes/tlasharptla-uisharpplural-md.md)]s, see the [Use Automatic Layout Overview](../advanced/use-automatic-layout-overview.md).  
+ For additional information on creating [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications with localizable user interfaces (UIs)s, see the [Use Automatic Layout Overview](../advanced/use-automatic-layout-overview.md).  
   
 ## See also
 
 - [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md)
 - [WPF Layout Gallery Sample](https://go.microsoft.com/fwlink/?LinkID=160054)
 - [Layout](../advanced/layout.md)
-- [WPF Controls Gallery Sample](https://go.microsoft.com/fwlink/?LinkID=160053)
+- [WPF Controls Gallery Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Getting%20Started/ControlsAndLayout)
 - [Alignment, Margins, and Padding Overview](../advanced/alignment-margins-and-padding-overview.md)
 - [Create a Custom Content-Wrapping Panel Sample](https://go.microsoft.com/fwlink/?LinkID=159979)
 - [Attached Properties Overview](../advanced/attached-properties-overview.md)

@@ -83,7 +83,7 @@ During execution a workflow in [!INCLUDE[netfx_current_short](../../../includes/
 |[1131 - InvokeMethodUseAsyncPattern](1131-invokemethoduseasyncpattern.md)|Information|InvokeMethod '%1' - method uses asynchronous pattern of '%2' and '%3'.|WFRuntime|  
 |[1132 - InvokeMethodDoesNotUseAsyncPattern](1132-invokemethoddoesnotuseasyncpattern.md)|Information|InvokeMethod '%1' - method does not use asynchronous pattern.|WFRuntime|  
 |[1140 - FlowchartStart](1140-flowchartstart.md)|Information|Flowchart '%1' - Start has been scheduled.|WFActivities|  
-|[1141 - FlowchartEmpty](1141-flowchartempty.md)|Warning|Flowchart '%1' - was executed with no Nodes.An exception was thrown in the method called by the activity '%1'. %2|WFActivities|  
+|[1141 - FlowchartEmpty](1141-flowchartempty.md)|Warning|Flowchart '%1' - was executed with no Nodes. An exception was thrown in the method called by the activity '%1'. %2|WFActivities|  
 |[1143 - FlowchartNextNull](1143-flowchartnextnull.md)|Information|Flowchart '%1'/FlowStep - Next node is null. Flowchart execution will end.|WFActivities|  
 |[1146 - FlowchartSwitchCase](1146-flowchartswitchcase.md)|Information|Flowchart '%1'/FlowSwitch - Case '%2' was selected.|WFActivities|  
 |[1147 - FlowchartSwitchDefault](1147-flowchartswitchdefault.md)|Information|Flowchart '%1'/FlowSwitch - Default Case was selected.|WFActivities|  

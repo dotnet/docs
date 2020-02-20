@@ -19,4 +19,4 @@ A file that is required by Visual Studio is missing or damaged.
   
 ## See also
 
-- [Talk to Us](/visualstudio/ide/talk-to-us)
+- [Talk to Us](/visualstudio/ide/feedback-options)

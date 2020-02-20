@@ -1,5 +1,5 @@
 ---
-title: "<seealso> (Visual Basic)"
+title: "<seealso>"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "<seealso> XML tag"
@@ -22,7 +22,7 @@ Specifies a link that appears in the See Also section.
 ## Remarks  
  Use the `<seealso>` tag to specify the text that you want to appear in a See Also section. Use [\<see>](../../../visual-basic/language-reference/xmldoc/see.md) to specify a link from within text.  
   
- Compile with [/doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
+ Compile with [-doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
   
 ## Example  
  This example uses the `<seealso>` tag in the `DoesRecordExist` remarks section to refer to the `UpdateRecord` method.  

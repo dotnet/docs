@@ -4,7 +4,8 @@ ms.date: "03/30/2017"
 ms.assetid: 05dab277-b8b2-48cf-b40c-826be128b175
 ---
 # Integrating Enterprise Services Transactional Components
-Windows Communication Foundation (WCF) provides an automatic mechanism for integrating with Enterprise Services (see [Integrating with COM+ Applications](../../../../docs/framework/wcf/feature-details/integrating-with-com-plus-applications.md)). However, you may want the flexibility to develop services that internally use transactional components hosted within Enterprise Services. Because the WCF Transactions feature is built on the <xref:System.Transactions> infrastructure, the process for integrating Enterprise Services with WCF is identical to that for specifying interoperability between <xref:System.Transactions> and Enterprise Services, as outlined in [Interoperability with Enterprise Services and COM+ Transactions](https://go.microsoft.com/fwlink/?LinkId=94949).  
+
+Windows Communication Foundation (WCF) provides an automatic mechanism for integrating with Enterprise Services (see [Integrating with COM+ Applications](integrating-with-com-plus-applications.md)). However, you may want the flexibility to develop services that internally use transactional components hosted within Enterprise Services. Because the WCF Transactions feature is built on the <xref:System.Transactions> infrastructure, the process for integrating Enterprise Services with WCF is identical to that for specifying interoperability between <xref:System.Transactions> and Enterprise Services, as outlined in [Interoperability with Enterprise Services and COM+ Transactions](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.0/ms229974(v=vs.85)).  
   
  To provide the desired level of interoperability between the incoming flowed transaction and the COM+ context transaction, the service implementation must create a <xref:System.Transactions.TransactionScope> instance and use the appropriate value from the <xref:System.Transactions.EnterpriseServicesInteropOption> enumeration.  
   
@@ -17,7 +18,7 @@ Windows Communication Foundation (WCF) provides an automatic mechanism for integ
   
  Any additional method calls also occur within the scope of the same operation’s transaction.  
   
-```  
+```csharp
 [ServiceContract()]  
 public interface ICustomerServiceContract  
 {  
@@ -58,7 +59,7 @@ public class CustomerService : ICustomerServiceContract
 ## Integrating Enterprise Services with a Client  
  The following code demonstrates client code using a <xref:System.Transactions.TransactionScope> instance with the <xref:System.Transactions.EnterpriseServicesInteropOption.Full> setting. In this scenario, calls to service operations that support transaction flow occur within the scope of the same transaction as the calls to Enterprise Services components.  
   
-```  
+```csharp
 static void Main()  
 {  
     // Create a client  

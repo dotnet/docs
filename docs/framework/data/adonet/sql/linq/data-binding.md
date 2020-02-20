@@ -13,7 +13,7 @@ ms.assetid: cbec8b02-a1e8-4ae8-a83b-bb5190413ac5
 
 ## Underlying Principle
 
-[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] translates [!INCLUDE[vbteclinq](../../../../../../includes/vbteclinq-md.md)] queries to SQL for execution on a database. The results are strongly typed `IEnumerable`. Because these objects are ordinary common language runtime (CLR) objects, ordinary object data binding can be used to display the results. On the other hand, change operations (inserts, updates, and deletes) require additional steps.
+[!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] translates LINQ queries to SQL for execution on a database. The results are strongly typed `IEnumerable`. Because these objects are ordinary common language runtime (CLR) objects, ordinary object data binding can be used to display the results. On the other hand, change operations (inserts, updates, and deletes) require additional steps.
 
 ## Operation
 
@@ -115,4 +115,4 @@ This section calls out several items that might help troubleshoot your [!INCLUDE
 
 ## See also
 
-- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+- [Background Information](background-information.md)

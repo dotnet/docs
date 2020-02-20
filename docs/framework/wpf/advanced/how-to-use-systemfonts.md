@@ -19,7 +19,7 @@ This example shows how to use the static resources of the <xref:System.Windows.S
  In [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], you can use the members of <xref:System.Windows.SystemFonts> as either static properties or dynamic resource references (with the static property value as the key). Use a dynamic resource reference if you want the font metric to automatically update while the application runs; otherwise, use a static value reference.  
   
 > [!NOTE]
->  The resource keys have the suffix "Key" appended to the property name.  
+> The resource keys have the suffix "Key" appended to the property name.  
   
  The following example shows how to access and use the properties of <xref:System.Windows.SystemFonts> as static values in order to style or customize a button. This markup example assigns <xref:System.Windows.SystemFonts> values to a button.  
   
@@ -37,6 +37,6 @@ This example shows how to use the static resources of the <xref:System.Windows.S
 - [Use SystemParameters](how-to-use-systemparameters.md)
 - [Use System Fonts Keys](how-to-use-system-fonts-keys.md)
 - [How-to Topics](resources-how-to-topics.md)
-- [x:Static Markup Extension](../../xaml-services/x-static-markup-extension.md)
-- [XAML Resources](xaml-resources.md)
+- [x:Static Markup Extension](../../../desktop-wpf/xaml-services/xstatic-markup-extension.md)
+- [XAML Resources](../../../desktop-wpf/fundamentals/xaml-resources-define.md)
 - [DynamicResource Markup Extension](dynamicresource-markup-extension.md)

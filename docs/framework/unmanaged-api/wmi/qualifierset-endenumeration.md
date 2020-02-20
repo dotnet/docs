@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "QualifierSet_EndEnumeration function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # QualifierSet_EndEnumeration function
 Terminates the enumeration begun with a call to the [QualifierSet_BeginEnumeration](qualifierset-beginenumeration.md) function.  
@@ -24,7 +22,7 @@ Terminates the enumeration begun with a call to the [QualifierSet_BeginEnumerati
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT QualifierSet_EndEnumeration (
    [in] int                  vFunc, 
    [in] IWbemQualifierSet*   ptr
@@ -55,7 +53,7 @@ This call is recommended, but not required. It immediately releases resources as
 
 ## Requirements  
 
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
 **Header:** WMINet_Utils.idl  
   

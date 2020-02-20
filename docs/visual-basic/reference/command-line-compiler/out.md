@@ -1,5 +1,5 @@
 ---
-title: "-out (Visual Basic)"
+title: "-out"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "/out compiler option [Visual Basic]"
@@ -12,7 +12,7 @@ Specifies the name of the output file.
   
 ## Syntax  
   
-```  
+```console  
 -out:filename  
 ```  
   

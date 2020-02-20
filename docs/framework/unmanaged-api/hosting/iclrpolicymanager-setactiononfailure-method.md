@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 4664033f-db97-4388-b988-2ec470796e58
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRPolicyManager::SetActionOnFailure Method
 Specifies the policy action the common language runtime (CLR) should take when the specified failure occurs.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetActionOnFailure (  
     [in] EClrFailure   failure,  
     [in] EPolicyAction action  

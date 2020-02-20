@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "hosting global static functions [.NET Framework]"
   - "unmanaged global static functions [.NET Framework], hosting"
 ms.assetid: 4e4ad69d-9343-4f6a-aed8-fe0335a3b979
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Hosting Global Static Functions
 This section describes the unmanaged hosting functions used by the .NET Framework hosting APIs.  

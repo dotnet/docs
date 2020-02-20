@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 0451d752-1e5c-4c9a-8bad-6cd35b7ba3df
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICeeGen::TruncateSection Method
 Truncates the specified code section by the specified length.  
@@ -25,7 +23,7 @@ Truncates the specified code section by the specified length.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT TruncateSection (  
     [in]  HCEESECTION     section,  
     [in]  ULONG           len  

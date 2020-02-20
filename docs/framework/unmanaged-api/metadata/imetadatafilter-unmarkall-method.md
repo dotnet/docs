@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: a04d91dc-690f-4de8-8c97-55c69a8503b4
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataFilter::UnmarkAll Method
 Removes the processing marks from all the tokens in the current metadata scope.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UnmarkAll ();  
 ```  
   

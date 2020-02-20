@@ -1,5 +1,5 @@
 ---
-title: "Finding the Default Paragraph Style (Visual Basic)"
+title: "Finding the Default Paragraph Style"
 ms.date: 07/20/2015
 ms.assetid: 9d094a4a-ec8c-41b0-b7ab-a3deb2a01d45
 ---
@@ -76,7 +76,7 @@ End Module
 ### Comments  
  This example produces the following output:  
   
-```  
+```console  
 The default style is: Normal  
 ```  
   

@@ -7,8 +7,6 @@ dev_langs:
   - "vb"
   - "cpp"
 ms.assetid: 2ed8c28b-b88d-4be7-9c87-92df01f0821f
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Insert XML Data using XPathNavigator
 The <xref:System.Xml.XPath.XPathNavigator> class provides a set of methods used to insert sibling, child, and attribute nodes in an XML document. In order to use these methods, the <xref:System.Xml.XPath.XPathNavigator> object must be editable, that is, its <xref:System.Xml.XPath.XPathNavigator.CanEdit%2A> property must be `true`.  
@@ -230,7 +228,7 @@ navigator.SetTypedValue(DateTime.Now);
 - If the prefix as well as the namespace URI in both the <xref:System.Xml.XmlReader> object's context and the <xref:System.Xml.XPath.XPathNavigator> object's context is the same, no new namespace declaration is added to the newly inserted node.  
   
 > [!NOTE]
->  The description above also applies to namespace declarations with the empty `string` as a prefix (for example, the default namespace declaration).  
+> The description above also applies to namespace declarations with the empty `string` as a prefix (for example, the default namespace declaration).  
   
  The following are the possible `xml:lang` conflicts.  
   

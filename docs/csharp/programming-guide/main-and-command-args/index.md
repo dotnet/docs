@@ -1,6 +1,5 @@
 ---
 title: "Main() and command-line arguments - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 08/02/2017
 f1_keywords: 
   - "CS5001"
@@ -18,17 +17,30 @@ ms.assetid: 73a17231-cf96-44ea-aa8a-54807c6fb1f4
 
 The `Main` method is the entry point of a C# application. (Libraries and services do not require a `Main` method as an entry point.) When the application is started, the `Main` method is the first method that is invoked.
 
- There can only be one entry point in a C# program. If you have more than one class that has a `Main` method, you must compile your program with the **/main** compiler option to specify which `Main` method to use as the entry point. For more information, see [/main (C# Compiler Options)](../../../csharp/language-reference/compiler-options/main-compiler-option.md).
+ There can only be one entry point in a C# program. If you have more than one class that has a `Main` method, you must compile your program with the **/main** compiler option to specify which `Main` method to use as the entry point. For more information, see [-main (C# Compiler Options)](../../language-reference/compiler-options/main-compiler-option.md).
 
- [!code-csharp[csProgGuideMain#17](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class1.cs#17)]
+[!code-csharp[csProgGuideMain#17](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideMain/CS/Class1.cs#17)]
 
 ## Overview
 
 - The `Main` method is the entry point of an executable program; it is where the program control starts and ends.
-- `Main` is declared inside a class or struct. `Main` must be [static](../../../csharp/language-reference/keywords/static.md) and it need not be [public](../../../csharp/language-reference/keywords/public.md). (In the earlier example, it receives the default access of [private](../../../csharp/language-reference/keywords/private.md).) The enclosing class or struct is not required to be static.
+- `Main` is declared inside a class or struct. `Main` must be [static](../../language-reference/keywords/static.md) and it need not be [public](../../language-reference/keywords/public.md). (In the earlier example, it receives the default access of [private](../../language-reference/keywords/private.md).) The enclosing class or struct is not required to be static.
 - `Main` can either have a `void`, `int`, or, starting with C# 7.1, `Task`, or `Task<int>` return type.
 - If and only if `Main` returns a `Task` or `Task<int>`, the declaration of `Main` may include the [`async`](../../language-reference/keywords/async.md) modifier. Note that this specifically excludes an `async void Main` method.
-- The `Main` method can be declared with or without a `string[]` parameter that contains command-line arguments. When using Visual Studio to create Windows applications, you can add the parameter manually or else use the <xref:System.Environment> class to obtain the command-line arguments. Parameters are read as zero-indexed command-line arguments. Unlike C and C++, the name of the program is not treated as the first command-line argument.
+- The `Main` method can be declared with or without a `string[]` parameter that contains command-line arguments. When using Visual Studio to create Windows applications, you can add the parameter manually or else use the <xref:System.Environment.GetCommandLineArgs> method to obtain the [command-line arguments](command-line-arguments.md). Parameters are read as zero-indexed command-line arguments. Unlike C and C++, the name of the program is not treated as the first command-line argument in the `args` array, but it is the first element of the <xref:System.Environment.GetCommandLineArgs> method.
+
+The following is a list of valid `Main` signatures:
+
+```csharp
+public static void Main() { }
+public static int Main() { }
+public static void Main(string[] args) { }
+public static int Main(string[] args) { }
+public static async Task Main() { }
+public static async Task<int> Main() { }
+public static async Task Main(string[] args) { }
+public static async Task<int> Main(string[] args) { }
+```
 
 The addition of `async` and `Task`, `Task<int>` return types simplifies program code when console applications need to start and `await` asynchronous operations in `Main`.
 
@@ -38,7 +50,7 @@ The addition of `async` and `Task`, `Task<int>` return types simplifies program 
 
 ## See also
 
-- [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Methods](../../../csharp/programming-guide/classes-and-structs/methods.md)
-- [Inside a C# Program](../../../csharp/programming-guide/inside-a-program/index.md)
+- [Command-line Building With csc.exe](../../language-reference/compiler-options/command-line-building-with-csc-exe.md)
+- [C# Programming Guide](../index.md)
+- [Methods](../classes-and-structs/methods.md)
+- [Inside a C# Program](../inside-a-program/index.md)

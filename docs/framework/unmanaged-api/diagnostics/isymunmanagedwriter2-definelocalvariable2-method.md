@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e774eefe-858c-4362-8d2d-28ebf2ba1a24
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedWriter2::DefineLocalVariable2 Method
 Defines a single variable in the current lexical scope. This method can be called multiple times for a variable of the same name that has multiple homes throughout a scope. In this case, however, the values of the `startOffset` and `endOffset` parameters must not overlap.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineLocalVariable2(  
     [in] const WCHAR  *name,  
     [in] ULONG32      attributes,  

@@ -24,7 +24,7 @@ Enumerates the modules of this process.
 
 ## Syntax
 
-```
+```cpp
 HRESULT EnumModule(
     [in, out] CLRDATA_ENUM  *handle,
     [out] IXCLRDataModule  **mod

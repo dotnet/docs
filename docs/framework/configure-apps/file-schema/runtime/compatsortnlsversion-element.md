@@ -8,15 +8,13 @@ helpviewer_keywords:
   - "<CompatSortNLSVersion> element"
   - "CompatSortNLSVersion element"
 ms.assetid: 782cc82e-83f7-404a-80b7-6d3061a8b6e3
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<CompatSortNLSVersion> Element
 Specifies that the runtime should use legacy sort orders when performing string comparisons.  
   
- \<configuration>  
-\<runtime>  
-\<CompatSortNLSVersion> Element  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<CompatSortNLSVersion>**  
   
 ## Syntax  
   
@@ -54,7 +52,7 @@ Specifies that the runtime should use legacy sort orders when performing string 
  Because string comparison, sorting, and casing operations performed by the <xref:System.Globalization.CompareInfo?displayProperty=nameWithType> class in the .NET Framework 4 conform to the Unicode 5.1 standard, the results of string comparison methods such as <xref:System.String.Compare%28System.String%2CSystem.String%29?displayProperty=nameWithType> and <xref:System.String.LastIndexOf%28System.String%29?displayProperty=nameWithType> may differ from previous versions of the .NET Framework. If your application depends on legacy behavior, you can restore the string comparison and sorting rules used in the .NET Framework 3.5 and earlier versions by including the `<CompatSortNLSVersion>` element in your application's configuration file.  
   
 > [!IMPORTANT]
->  Restoring legacy string comparison and sorting rules also requires the sort00001000.dll dynamic link library to be available on the local system.  
+> Restoring legacy string comparison and sorting rules also requires the sort00001000.dll dynamic link library to be available on the local system.  
   
  You can also use legacy string sorting and comparison rules in a specific application domain by passing the string "NetFx40_Legacy20SortingBehavior" to the <xref:System.AppDomainSetup.SetCompatibilitySwitches%2A> method when you create the application domain.  
   
@@ -64,15 +62,15 @@ Specifies that the runtime should use legacy sort orders when performing string 
  [!code-csharp[String.BreakingChanges#1](../../../../../samples/snippets/csharp/VS_Snippets_CLR/string.breakingchanges/cs/example1.cs#1)]
  [!code-vb[String.BreakingChanges#1](../../../../../samples/snippets/visualbasic/VS_Snippets_CLR/string.breakingchanges/vb/example1.vb#1)]  
   
- When you run the example on the .NET Framework 4, it displays the following output.  
+ When you run the example on the .NET Framework 4, it displays the following output:
   
-```  
+```console
 sta follows a in the sort order.  
 ```  
   
- This is completely different from the output that is displayed when you run the example on the .NET Framework 3.5.  
+ This is completely different from the output that is displayed when you run the example on the .NET Framework 3.5:
   
-```  
+```console
 sta equals a in the sort order.  
 ```  
   
@@ -89,5 +87,5 @@ sta equals a in the sort order.
   
 ## See also
 
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [Runtime Settings Schema](index.md)
+- [Configuration File Schema](../index.md)

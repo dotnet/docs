@@ -3,8 +3,6 @@ title: "Implementation of Discretionary Behaviors in the XslTransform Class"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: d2758ea1-03f6-47bd-88d2-0fb7ccdb2fab
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Implementation of Discretionary Behaviors in the XslTransform Class
 

@@ -3,8 +3,6 @@ title: "Copying Existing Nodes from One Document to Another"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: 3caa78c1-3448-4b7b-b83c-228ee857635e
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Copying Existing Nodes from One Document to Another
 The **ImportNode** method is the mechanism by which a node or entire node subtree is copied from one **XmlDocument** to another. The node returned from the call is a copy of the node from the source document, including attribute values, the node name, node type, and all namespace-related attributes such as the prefix, local name, and namespace Uniform Resource Identifier (URI). The source document is not changed. After you have imported the node, you still have to add it to the tree using one of the methods used to insert nodes.  
@@ -32,7 +30,7 @@ The **ImportNode** method is the mechanism by which a node or entire node subtre
 |All other node types|These node types cannot be imported.|These node types cannot be imported.|  
   
 > [!NOTE]
->  Although DocumentType nodes can be imported, a document can only have one DocumentType. So, once you have imported the document type, before inserting it into tree you have to make sure that there is no document type in the document. For information on removing nodes, see [Removing Nodes, Content, and Values from an XML Document](../../../../docs/standard/data/xml/removing-nodes-content-and-values-from-an-xml-document.md).  
+> Although DocumentType nodes can be imported, a document can only have one DocumentType. So, once you have imported the document type, before inserting it into tree you have to make sure that there is no document type in the document. For information on removing nodes, see [Removing Nodes, Content, and Values from an XML Document](../../../../docs/standard/data/xml/removing-nodes-content-and-values-from-an-xml-document.md).  
   
 ## See also
 

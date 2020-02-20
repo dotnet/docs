@@ -13,7 +13,7 @@ ms.assetid: 5797fcff-6081-4e8c-bebf-63d9c70cf14b
 
 Application settings allow a Windows Forms or ASP.NET application to store and retrieve application-scoped and user-scoped settings. In this context, a *setting* is any piece of information that may be specific to the application or specific to the current user — anything from a database connection string to the user's preferred default window size.
 
-By default, application settings in a Windows Forms application uses the <xref:System.Configuration.LocalFileSettingsProvider> class, which uses the .NET configuration system to store settings in an XML configuration file. For more information about the files used by application settings, see [Application Settings Architecture](~/docs/framework/winforms/advanced/application-settings-architecture.md).
+By default, application settings in a Windows Forms application uses the <xref:System.Configuration.LocalFileSettingsProvider> class, which uses the .NET configuration system to store settings in an XML configuration file. For more information about the files used by application settings, see [Application Settings Architecture](../../winforms/advanced/application-settings-architecture.md).
 
 Application settings defines the following elements as part of the configuration files it uses.
 
@@ -85,5 +85,5 @@ The following example shows an application settings file that defines two applic
 
 ## See also
 
-- [Application Settings Overview](~/docs/framework/winforms/advanced/application-settings-overview.md)
-- [Application Settings Architecture](~/docs/framework/winforms/advanced/application-settings-architecture.md)
+- [Application Settings Overview](../../winforms/advanced/application-settings-overview.md)
+- [Application Settings Architecture](../../winforms/advanced/application-settings-architecture.md)

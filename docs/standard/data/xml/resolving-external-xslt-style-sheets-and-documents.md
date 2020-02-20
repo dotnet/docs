@@ -3,14 +3,12 @@ title: "Resolving External XSLT Style Sheets and Documents"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: 920cfe3b-d525-4bb2-abf6-9431651f9cf9
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Resolving External XSLT Style Sheets and Documents
 There are several times during a transformation when you may need to resolve external resources.  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework 2.0. You can perform Extensible Stylesheet Language for Transformations (XSLT) transformations using the <xref:System.Xml.Xsl.XslCompiledTransform> class.  
+> The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework 2.0. You can perform Extensible Stylesheet Language for Transformations (XSLT) transformations using the <xref:System.Xml.Xsl.XslCompiledTransform> class.  
   
  There are several times during a transformation when you may need to resolve external resources:  
   

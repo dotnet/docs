@@ -14,20 +14,18 @@ helpviewer_keywords:
 ms.assetid: edaaed1d-0d26-40f0-83f1-48efc0ded1c6
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ITypeLibResolver Interface
-Provides the [ResolveTypeLib method](../../../../docs/framework/unmanaged-api/tlbexp/resolvetypelib-method.md), which resolves the file path of a type library.  
+Provides the [ResolveTypeLib method](resolvetypelib-method.md), which resolves the file path of a type library.  
   
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
-|[ResolveTypeLib Method](../../../../docs/framework/unmanaged-api/tlbexp/resolvetypelib-method.md)|Resolves the simple name of a type library by returning its fully qualified path.|  
+|[ResolveTypeLib Method](resolvetypelib-method.md)|Resolves the simple name of a type library by returning its fully qualified path.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** TlbRef.idl, TlbRef.h  
   
@@ -37,5 +35,5 @@ Provides the [ResolveTypeLib method](../../../../docs/framework/unmanaged-api/tl
   
 ## See also
 
-- [Tlbexp Helper Functions](../../../../docs/framework/unmanaged-api/tlbexp/index.md)
+- [Tlbexp Helper Functions](index.md)
 - [LoadTypeLibEx function](https://docs.microsoft.com/previous-versions/windows/desktop/api/oleauto/nf-oleauto-loadtypelibex)

@@ -1,5 +1,5 @@
 ---
-title: "Messaging activities - WCF"
+title: "Messaging activities"
 ms.date: "03/30/2017"
 ms.assetid: 8498f215-1823-4aba-a6e1-391407f8c273
 ---

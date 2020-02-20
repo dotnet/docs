@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: b4896b8f-8e97-469c-8089-e72a025661b5
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::EnumTypeRefs Method
 Enumerates TypeRef tokens defined in the current metadata scope.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumTypeRefs (  
    [in, out] HCORENUM    *phEnum,   
    [out] mdTypeRef       rTypeRefs[],  

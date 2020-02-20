@@ -1,5 +1,5 @@
 ---
-title: "-langversion (Visual Basic)"
+title: "-langversion"
 ms.date: 03/10/2018
 helpviewer_keywords: 
   - "/langversion compiler option [Visual Basic]"
@@ -12,7 +12,7 @@ Causes the compiler to accept only syntax that is included in the specified Visu
   
 ## Syntax  
   
-```  
+```console  
 -langversion:version  
 ```  
   
@@ -29,7 +29,7 @@ Causes the compiler to accept only syntax that is included in the specified Visu
   
  You can use this option when you develop applications that target different versions of the .NET Framework. For example, if you are targeting .NET Framework 3.5, you could use this option to ensure that you do not use syntax from language version 10.0.  
   
- You can set `-langversion` directly only by using the command line. For more information, see [Targeting a Specific .NET Framework Version](/visualstudio/ide/targeting-a-specific-dotnet-framework-version).  
+ You can set `-langversion` directly only by using the command line. For more information, see [Targeting a Specific .NET Framework Version](/visualstudio/ide/visual-studio-multi-targeting-overview).  
   
 ## Example  
  The following code compiles `sample.vb` for Visual Basic 9.0.  
@@ -42,4 +42,4 @@ vbc -langversion:9.0 sample.vb
 
 - [Visual Basic Command-Line Compiler](../../../visual-basic/reference/command-line-compiler/index.md)
 - [Sample Compilation Command Lines](../../../visual-basic/reference/command-line-compiler/sample-compilation-command-lines.md)
-- [Targeting a Specific .NET Framework Version](/visualstudio/ide/targeting-a-specific-dotnet-framework-version)
+- [Targeting a Specific .NET Framework Version](/visualstudio/ide/visual-studio-multi-targeting-overview)

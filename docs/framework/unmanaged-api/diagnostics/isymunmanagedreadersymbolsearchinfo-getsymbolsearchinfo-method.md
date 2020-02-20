@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 40fcdbc5-3bb2-41e9-b995-40984c209a7f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedReaderSymbolSearchInfo::GetSymbolSearchInfo Method
 Gets symbol search information.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSymbolSearchInfo(  
     [in]  ULONG32  cSearchInfo,  
     [out] ULONG32  *pcSearchInfo,  

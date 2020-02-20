@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 75754c2f-38c7-4707-85fe-559db4542729
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRTask2::BeginPreventAsyncAbort Method
 Delays new thread abort requests from resulting in thread aborts on the current thread.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT BeginPreventAsyncAbort();  
 ```  
   

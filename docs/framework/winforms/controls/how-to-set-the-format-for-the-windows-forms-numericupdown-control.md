@@ -1,5 +1,5 @@
 ---
-title: "How to: Set the Format for the Windows Forms NumericUpDown Control"
+title: Set the Format for NumericUpDown Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -49,7 +49,7 @@ You can configure how values are displayed in the Windows Forms <xref:System.Win
     ```  
   
     > [!NOTE]
-    >  Even if the value is displayed on the form as hexadecimal, any tests you perform on the <xref:System.Windows.Forms.NumericUpDown.Value%2A> property will be testing its decimal value.  
+    > Even if the value is displayed on the form as hexadecimal, any tests you perform on the <xref:System.Windows.Forms.NumericUpDown.Value%2A> property will be testing its decimal value.  
   
 ## See also
 

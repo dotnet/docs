@@ -22,7 +22,7 @@ You can control access in several way with Windows Communication Foundation (WCF
  A feature of ASP.NET is the membership provider. Even though the membership provider is not technically an access control mechanism, it allows controlling access to the service by limiting the set of possible identities that can access the service's endpoint. The membership feature includes a database that can be populated with user name/password combinations that enable users of a Web site to establish accounts with the site. To access a service that uses the membership provider, a user must log on with his or her user name and password.  
   
 > [!NOTE]
->  You must first populate the database using the ASP.NET feature before a WCF service can use it for authorization purposes.  
+> You must first populate the database using the ASP.NET feature before a WCF service can use it for authorization purposes.  
   
  You can also use the membership feature if you already have a membership database from an existing ASP.NET Web site and you want to enable the same users to use your service, authorized with the same user names and passwords.  
   
@@ -40,7 +40,7 @@ You can control access in several way with Windows Communication Foundation (WCF
   
  You can also use AzMan and the ASP.NET role provider if you already have access to an existing AzMan installation and want to authorize your service users using the features of the AzMan/role provider combination.  
   
- For more information about AzMan and the ASP.NET role provider, see [How To: Use Authorization Manager (AzMan) with ASP.NET 2.0](https://go.microsoft.com/fwlink/?LinkId=88951). For more information about using AzMan and the role provider for WCF services, see [How to: Use the ASP.NET Authorization Manager Role Provider with a Service](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-authorization-manager-role-provider-with-a-service.md).  
+ For more information about AzMan and the ASP.NET role provider, see [How To: Use Authorization Manager (AzMan) with ASP.NET 2.0](https://docs.microsoft.com/previous-versions/msp-n-p/ff649313(v=pandp.10)). For more information about using AzMan and the role provider for WCF services, see [How to: Use the ASP.NET Authorization Manager Role Provider with a Service](../../../../docs/framework/wcf/feature-details/how-to-use-the-aspnet-authorization-manager-role-provider-with-a-service.md).  
   
 ## Identity Model  
  The Identity Model is a set of APIs that enable you to manage claims and policies to authorize clients. With the Identity Model, you can examine every claim contained in credentials that the caller used to authenticate itself to the service, compare the claims to the set of policies for the service, and grant or deny access based on the comparison.  

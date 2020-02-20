@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "Replace method"
   - "validating user input"
 ms.assetid: b4319c8a-9032-4129-a9d5-6f6fc28e7f32
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Strip Invalid Characters from a String
 The following example uses the static <xref:System.Text.RegularExpressions.Regex.Replace%2A?displayProperty=nameWithType> method to strip invalid characters from a string.  

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 47132dda-fa92-4bd1-ae4b-24cd9a60665a
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::SetFieldProps Method
 Sets or updates the default value for the field referenced by the specified field token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetFieldProps (  
     [in]  mdFieldDef  fd,   
     [in]  DWORD       dwFieldFlags,   

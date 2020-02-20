@@ -1,5 +1,5 @@
 ---
-title: "How to: Find Child Elements Based on Position (XPath-LINQ to XML) (Visual Basic)"
+title: "How to: Find Child Elements Based on Position (XPath-LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 6831e1db-5e97-444f-a7a1-d0a87104b005
 ---
@@ -50,7 +50,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```console  
 Results are identical  
 <Test TestId="0002" TestType="CMD">  
   <Name>Find succeeding characters</Name>  

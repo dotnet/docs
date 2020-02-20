@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 794c6f8e-ed58-416b-b756-e864f2c958f7
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IObjectHandle::Unwrap Method
 Unwraps a marshal-by-value object from indirection.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Unwrap (  
     [out, retval] VARIANT *ppv  
 );  

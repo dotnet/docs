@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 40f9bd9e-16ec-447e-81b0-168c875e9866
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # AssemblyFlags Enumeration
 Contains values that describe run-time features of an assembly.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     afImplicitExportedTypes = 0x0001,  
     afImplicitResources = 0x0002,  

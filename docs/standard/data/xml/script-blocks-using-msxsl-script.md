@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: fde6f43f-c594-486f-abcb-2211197fae20
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Script Blocks Using msxsl:script
 The <xref:System.Xml.Xsl.XslCompiledTransform> class supports embedded scripts using the `msxsl:script` element. When the style sheet is loaded, any defined functions are compiled to Microsoft intermediate language (MSIL) by the Code Document Object Model (CodeDOM) and are executed during run time. The assembly generated from the embedded script block is separate than the assembly generated for the style sheet.  
@@ -16,7 +14,7 @@ The <xref:System.Xml.Xsl.XslCompiledTransform> class supports embedded scripts u
  Support for embedded scripts is an optional XSLT setting on the <xref:System.Xml.Xsl.XslCompiledTransform> class. Script support is disabled by default. To enable script support, create an <xref:System.Xml.Xsl.XsltSettings> object with the <xref:System.Xml.Xsl.XsltSettings.EnableScript%2A> property set to `true` and pass the object to the <xref:System.Xml.Xsl.XslCompiledTransform.Load%2A> method.  
   
 > [!NOTE]
->  XSLT scripting should be enabled only if you require script support and you are working in a fully trusted environment.  
+> XSLT scripting should be enabled only if you require script support and you are working in a fully trusted environment.  
   
 ## msxsl:script Element Definition  
  The `msxsl:script` element is a Microsoft extension to the XSLT 1.0 recommendation and has the following definition:  
@@ -32,7 +30,7 @@ The <xref:System.Xml.Xsl.XslCompiledTransform> class supports embedded scripts u
  The `implements-prefix` attribute is mandatory. This attribute is used to declare a namespace and associate it with the script block. The value of this attribute is the prefix that represents the namespace. This prefix can be defined somewhere in a style sheet.  
   
 > [!NOTE]
->  When using the `msxsl:script` element, we strongly recommend that the script, regardless of language, be placed inside a CDATA section. Because the script can contain operators, identifiers, or delimiters for a given language, if it is not contained within a CDATA section, it has the potential of being misinterpreted as XML. The following XML shows a template of the CDATA section where code can be placed.  
+> When using the `msxsl:script` element, we strongly recommend that the script, regardless of language, be placed inside a CDATA section. Because the script can contain operators, identifiers, or delimiters for a given language, if it is not contained within a CDATA section, it has the potential of being misinterpreted as XML. The following XML shows a template of the CDATA section where code can be placed.  
   
 ```xml  
 <msxsl:script implements-prefix='your-prefix' language='CSharp'>  

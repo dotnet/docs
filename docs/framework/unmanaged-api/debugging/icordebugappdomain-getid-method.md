@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 32c27576-71fa-42ee-8230-67b92913ea08
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugAppDomain::GetId Method
 Gets the unique identifier of the application domain.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetID (  
     [out] ULONG32   *pId  
 );  

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 895c35cf-b95d-4e3b-93b5-cfc1cf9044fc
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataTables::GetString Method
 Gets the string at the specified index from the table column in the current reference scope.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetString (   
     [in]  ULONG       ixString,  
     [out] const char  **ppString  

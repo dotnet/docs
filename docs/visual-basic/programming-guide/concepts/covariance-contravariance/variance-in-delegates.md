@@ -1,5 +1,5 @@
 ---
-title: "Variance in Delegates (Visual Basic)"
+title: "Variance in Delegates"
 ms.date: 07/20/2015
 ms.assetid: 38e9353f-74f8-4211-a8f0-7a495414df4a
 ---
@@ -208,5 +208,5 @@ Relaxed delegate conversion enables more flexibility in matching method signatur
 
 ## See also
 
-- [Generics](~/docs/standard/generics/index.md)
+- [Generics](../../../../standard/generics/index.md)
 - [Using Variance for Func and Action Generic Delegates (Visual Basic)](../../../../visual-basic/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)

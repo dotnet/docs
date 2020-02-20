@@ -2,6 +2,7 @@
 title: Expression Trees Explained
 description: Learn about expression trees and how they're useful in translating algorithms for external execution and inspecting code before executing it.
 ms.date: 06/20/2016
+ms.technology: csharp-advanced-concepts
 ms.assetid: bbcdd339-86eb-4ae5-9911-4c214a39a92d
 ---
 
@@ -42,11 +43,11 @@ Visually, the entire statement is a tree: You could start at the root node, and 
 each node in the tree to see the code that makes up the statement:
 
 - Variable declaration statement with assignment (`var sum = 1 + 2;`)
-  * Implicit variable type declaration (`var sum`)
+  - Implicit variable type declaration (`var sum`)
     - Implicit var keyword (`var`)
     - Variable name declaration (`sum`)
-  * Assignment operator (`=`)
-  * Binary addition expression (`1 + 2`)
+  - Assignment operator (`=`)
+  - Binary addition expression (`1 + 2`)
     - Left operand (`1`)
     - Addition operator (`+`)
     - Right operand (`2`)

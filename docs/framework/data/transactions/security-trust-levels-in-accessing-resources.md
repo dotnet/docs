@@ -15,7 +15,7 @@ This topic discusses how access is restricted on the types of resources that <xr
 - Full trust for durable resources, configuration management applications, and legacy interop applications.  
   
 > [!NOTE]
->  You should not call any of the enlistment interfaces with impersonated contexts.  
+> You should not call any of the enlistment interfaces with impersonated contexts.  
   
 ## Trust Levels  
   
@@ -32,7 +32,7 @@ This topic discusses how access is restricted on the types of resources that <xr
   
  To enable recovery, this type of application has the ability to permanently consume system resources. This is because the recoverable transaction manager must remember transactions that have committed until it can confirm that all durable resource managers that are participating in the transaction have received the outcome. Therefore, this type of application requires full trust and should not be run unless that level of trust has been granted.  
   
- For more information on durable enlistments and recovery, see the [Enlisting Resources as Participants in a Transaction](../../../../docs/framework/data/transactions/enlisting-resources-as-participants-in-a-transaction.md) and [Performing Recovery](../../../../docs/framework/data/transactions/performing-recovery.md) topics.  
+ For more information on durable enlistments and recovery, see the [Enlisting Resources as Participants in a Transaction](enlisting-resources-as-participants-in-a-transaction.md) and [Performing Recovery](performing-recovery.md) topics.  
   
  Applications that perform legacy interop work with COM+ are also required to have full trust.  
   

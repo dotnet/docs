@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 05c78aaf-5bbd-497e-9ae2-55f4fae0c5fb
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICeeGen::GetSectionBlock Method
 Gets a section block of the code base.  
@@ -25,7 +23,7 @@ Gets a section block of the code base.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetSectionBlock (  
     [in]  HCEESECTION    section,     
     [in]  ULONG          len,  

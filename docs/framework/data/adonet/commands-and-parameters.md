@@ -9,24 +9,24 @@ After establishing a connection to a data source, you can execute commands and r
  Each .NET Framework data provider included with the .NET Framework has a `Command` object. The .NET Framework Data Provider for OLE DB includes an <xref:System.Data.OleDb.OleDbCommand> object, the .NET Framework Data Provider for SQL Server includes a <xref:System.Data.SqlClient.SqlCommand> object, the .NET Framework Data Provider for ODBC includes an <xref:System.Data.Odbc.OdbcCommand> object, and the .NET Framework Data Provider for Oracle includes an <xref:System.Data.OracleClient.OracleCommand> object.  
   
 ## In This Section  
- [Executing a Command](../../../../docs/framework/data/adonet/executing-a-command.md)  
+ [Executing a Command](executing-a-command.md)  
  Describes the ADO.NET `Command` object and how to use it to execute queries and commands against a data source.  
   
- [Configuring Parameters and Parameter Data Types](../../../../docs/framework/data/adonet/configuring-parameters-and-parameter-data-types.md)  
+ [Configuring Parameters and Parameter Data Types](configuring-parameters-and-parameter-data-types.md)  
  Describes working with `Command` parameters, including direction, data types, and parameter syntax.  
   
- [Generating Commands with CommandBuilders](../../../../docs/framework/data/adonet/generating-commands-with-commandbuilders.md)  
+ [Generating Commands with CommandBuilders](generating-commands-with-commandbuilders.md)  
  Describes how to use command builders to automatically generate INSERT, UPDATE, and DELETE commands for a `DataAdapter` that has a single-table SELECT command.  
   
- [Obtaining a Single Value from a Database](../../../../docs/framework/data/adonet/obtaining-a-single-value-from-a-database.md)  
+ [Obtaining a Single Value from a Database](obtaining-a-single-value-from-a-database.md)  
  Describes how to use the `ExecuteScalar` method of a `Command` object to return a single value from a database query.  
   
- [Using Commands to Modify Data](../../../../docs/framework/data/adonet/using-commands-to-modify-data.md)  
+ [Using Commands to Modify Data](using-commands-to-modify-data.md)  
  Describes how to use a data provider to execute stored procedures or data definition language (DDL) statements.  
   
 ## See also
 
-- [DataAdapters and DataReaders](../../../../docs/framework/data/adonet/dataadapters-and-datareaders.md)
-- [DataSets, DataTables, and DataViews](../../../../docs/framework/data/adonet/dataset-datatable-dataview/index.md)
-- [Connecting to a Data Source](../../../../docs/framework/data/adonet/connecting-to-a-data-source.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [DataAdapters and DataReaders](dataadapters-and-datareaders.md)
+- [DataSets, DataTables, and DataViews](./dataset-datatable-dataview/index.md)
+- [Connecting to a Data Source](connecting-to-a-data-source.md)
+- [ADO.NET Overview](ado-net-overview.md)

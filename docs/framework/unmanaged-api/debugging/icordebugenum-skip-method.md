@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e925d88a-67a5-4f76-88b8-09cedeed0232
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEnum::Skip Method
 Moves the cursor forward in the enumeration by the specified number of items.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Skip (  
     [in] ULONG celt  
 );  
@@ -44,4 +42,4 @@ HRESULT Skip (
   
 ## See also
 
-- [ICorDebugEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugenum-interface1.md)
+- [ICorDebugEnum Interface](icordebugenum-interface1.md)

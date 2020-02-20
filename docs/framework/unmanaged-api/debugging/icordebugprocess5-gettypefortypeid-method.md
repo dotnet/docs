@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e0eed5a8-fa6d-4818-bd00-7babcea30325
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess5::GetTypeForTypeID Method
 Converts a type identifier to an ICorDebugType value.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTypeForTypeID(  
     [in] COR_TYPEID id, [  
     out] ICorDebugType **ppType  
@@ -51,5 +49,5 @@ HRESULT GetTypeForTypeID(
   
 ## See also
 
-- [ICorDebugProcess5 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess5-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugProcess5 Interface](icordebugprocess5-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

@@ -1,6 +1,5 @@
 ---
 title: "virtual - C# Reference"
-ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
   - "virtual_CSharpKeyword"
@@ -32,7 +31,7 @@ You cannot use the `virtual` modifier with the `static`, `abstract`, `private`, 
 
 [!code-csharp[csrefKeywordsModifiers#26](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsModifiers/CS/csrefKeywordsModifiers.cs#26)]
 
-Virtual properties behave like abstract methods, except for the differences in declaration and invocation syntax.
+Virtual properties behave like virtual methods, except for the differences in declaration and invocation syntax.
 
 - It is an error to use the `virtual` modifier on a static property.
 
@@ -58,11 +57,7 @@ The following program calculates and displays the appropriate area for each figu
 
 ## See also
 
-- [C# Reference](../index.md)
-- [C# Programming Guide](../../programming-guide/index.md)
-- [Modifiers](modifiers.md)
-- [C# Keywords](index.md)
 - [Polymorphism](../../programming-guide/classes-and-structs/polymorphism.md)
 - [abstract](abstract.md)
 - [override](override.md)
-- [new](new.md)
+- [new (modifier)](new-modifier.md)

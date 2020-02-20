@@ -9,13 +9,13 @@ ADO.NET 2.0 introduced new base classes in the <xref:System.Data.Common> namespa
  ADO.NET 2.0 also introduced abstract base classes, which enable a developer to write generic data access code that does not depend on a specific data provider.  
   
 ## The Factory Design Pattern  
- The programming model for writing provider-independent code is based on the use of the "factory" design pattern, which uses a single API to access databases across multiple providers. This pattern is aptly named, as it calls for the use of a specialized object solely to create other objects, much like a real-world factory. For a more detailed description of the factory design pattern, see [Writing Generic Data Access Code in ASP.NET 2.0 and ADO.NET 2.0](https://go.microsoft.com/fwlink/?LinkId=55915).
+ The programming model for writing provider-independent code is based on the use of the "factory" design pattern, which uses a single API to access databases across multiple providers. This pattern is aptly named, as it calls for the use of a specialized object solely to create other objects, much like a real-world factory. For a more detailed description of the factory design pattern, see [Writing Generic Data Access Code in ASP.NET 2.0 and ADO.NET 2.0](https://docs.microsoft.com/previous-versions/dotnet/articles/ms971499(v=msdn.10)).
   
  Starting with ADO.NET 2.0, the <xref:System.Data.Common.DbProviderFactories> class provides `static` (or `Shared` in Visual Basic) methods for creating a <xref:System.Data.Common.DbProviderFactory> instance. The instance then returns a correct strongly typed object based on provider information and the connection string supplied at run time.  
   
 ## See also
 
-- [Obtaining a DbProviderFactory](../../../../docs/framework/data/adonet/obtaining-a-dbproviderfactory.md)
-- [DbConnection, DbCommand and DbException](../../../../docs/framework/data/adonet/dbconnection-dbcommand-and-dbexception.md)
-- [Modifying Data with a DbDataAdapter](../../../../docs/framework/data/adonet/modifying-data-with-a-dbdataadapter.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Obtaining a DbProviderFactory](obtaining-a-dbproviderfactory.md)
+- [DbConnection, DbCommand and DbException](dbconnection-dbcommand-and-dbexception.md)
+- [Modifying Data with a DbDataAdapter](modifying-data-with-a-dbdataadapter.md)
+- [ADO.NET Overview](ado-net-overview.md)

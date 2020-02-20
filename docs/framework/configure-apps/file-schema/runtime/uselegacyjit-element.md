@@ -2,17 +2,15 @@
 title: "<useLegacyJit> Element"
 ms.date: "04/26/2017"
 ms.assetid: c2cf97f0-9262-4f1f-a754-5568b51110ad
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # \<useLegacyJit> Element
 
 Determines whether the common language runtime uses the legacy 64-bit JIT compiler for just-in-time compilation.  
   
-\<configuration>  
-\<runtime>  
-\<useLegacyJit>
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<useLegacyJit>**  
   
 ## Syntax  
   
@@ -63,7 +61,7 @@ Instead of using a configuration file setting, you can enable the legacy 64-bit 
 
   Set the `COMPLUS_useLegacyJit` environment variable to either `0` (use the new 64-bit JIT compiler) or `1` (use the older 64-bit JIT compiler):
   
-  ```  
+  ```env  
   COMPLUS_useLegacyJit=0|1  
   ```  
   
@@ -90,6 +88,6 @@ The following configuration file disables compilation with the new 64-bit JIT co
   
 ## See also
 
-- [\<runtime> Element](../../../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md)
-- [\<configuration> Element](../../../../../docs/framework/configure-apps/file-schema/configuration-element.md)
-- [Mitigation: New 64-bit JIT Compiler](../../../../../docs/framework/migration-guide/mitigation-new-64-bit-jit-compiler.md)
+- [\<runtime> Element](runtime-element.md)
+- [\<configuration> Element](../configuration-element.md)
+- [Mitigation: New 64-bit JIT Compiler](../../../migration-guide/mitigation-new-64-bit-jit-compiler.md)

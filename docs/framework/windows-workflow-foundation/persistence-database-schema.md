@@ -38,7 +38,7 @@ This topic describes the public views supported by the SQL Workflow Instance Sto
 |Revision|BigInt|The revision number of the workflow version.|  
   
 > [!CAUTION]
->  The **Instances** view also contains a Delete trigger. Users with the appropriate permissions can execute delete statements against this view that will forcefully remove workflow Instances from the Database. We recommend deleting directly from the view only as a last resort because deleting an instance from underneath the workflow runtime could result in unintended consequences. Instead, use the Workflow Instance Management Endpoint to have the workflow runtime terminate the instance. If you want to delete a large number of Instances from the view, make sure there are no active runtimes that could be operating on these instances.  
+> The **Instances** view also contains a Delete trigger. Users with the appropriate permissions can execute delete statements against this view that will forcefully remove workflow Instances from the Database. We recommend deleting directly from the view only as a last resort because deleting an instance from underneath the workflow runtime could result in unintended consequences. Instead, use the Workflow Instance Management Endpoint to have the workflow runtime terminate the instance. If you want to delete a large number of Instances from the view, make sure there are no active runtimes that could be operating on these instances.  
   
 ## ServiceDeployments view  
  The **ServiceDeployments** view contains deployment information for all Web (IIS/WAS) hosted workflow services. Each workflow instance that is Web-hosted will contain a **ServiceDeploymentId** that refers to a row in this view.  
@@ -72,4 +72,4 @@ This topic describes the public views supported by the SQL Workflow Instance Sto
  The InstancePromotedProperties view is schema bound, which means that users can add indices on one or more columns in order to optimize queries against this view.  
   
 > [!NOTE]
->  An indexed view requires more storage and adds additional processing overhead. Please refer to [Improving Performance with SQL Server 2008 Indexed Views](https://go.microsoft.com/fwlink/?LinkId=179529) for more information.
+> An indexed view requires more storage and adds additional processing overhead. Please refer to [Improving Performance with SQL Server 2008 Indexed Views](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/dd171921(v=sql.100)) for more information.

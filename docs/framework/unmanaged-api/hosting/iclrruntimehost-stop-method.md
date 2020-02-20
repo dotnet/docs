@@ -15,18 +15,16 @@ helpviewer_keywords:
 ms.assetid: b8fd7daf-8f8d-4ad7-92ae-019db244cec1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRRuntimeHost::Stop Method
 Stops the execution of code by the common language runtime (CLR).  
   
 > [!IMPORTANT]
->  This method does not release resources to the host, unload application domains, or destroy threads. You must terminate the process to release these resources.  
+> This method does not release resources to the host, unload application domains, or destroy threads. You must terminate the process to release these resources.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Stop();  
 ```  
   

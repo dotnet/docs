@@ -44,9 +44,9 @@ Every endpoint has an address associated with it, which is used to locate and id
   
 - Binding Information: IP Address, Port, Host header  
   
- IIS can specify multiple bindings for each site, which results in multiple base addresses for each scheme. Prior to [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)], WCF did not support multiple addresses for a schema and, if they were specified, threw a <xref:System.ArgumentException> during activation.  
+ IIS can specify multiple bindings for each site, which results in multiple base addresses for each scheme. Prior to .NET Framework 3.5, WCF did not support multiple addresses for a schema and, if they were specified, threw a <xref:System.ArgumentException> during activation.  
   
- The [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)] enables Internet service providers to host multiple applications with different base addresses for the same scheme on the same site.  
+ The .NET Framework 3.5 enables Internet service providers to host multiple applications with different base addresses for the same scheme on the same site.  
   
  For example, a site could contain the following base addresses:  
   
@@ -54,7 +54,7 @@ Every endpoint has an address associated with it, which is used to locate and id
   
 - `http://shipping.myorg.com/Service.svc`
   
- With [!INCLUDE[netfx35_short](../../../../includes/netfx35-short-md.md)], you specify a prefix filter at the AppDomain level in the configuration file. You do this with the [\<baseAddressPrefixFilters>](../../../../docs/framework/configure-apps/file-schema/wcf/baseaddressprefixfilters.md) element, which contains a list of prefixes. The incoming base addresses, supplied by IIS, are filtered based on the optional prefix list. By default, when a prefix is not specified, all addresses are passed through. Specifying the prefix results in only the matching base address for that scheme to be passed through.  
+ With .NET Framework 3.5, you specify a prefix filter at the AppDomain level in the configuration file. You do this with the [\<baseAddressPrefixFilters>](../../../../docs/framework/configure-apps/file-schema/wcf/baseaddressprefixfilters.md) element, which contains a list of prefixes. The incoming base addresses, supplied by IIS, are filtered based on the optional prefix list. By default, when a prefix is not specified, all addresses are passed through. Specifying the prefix results in only the matching base address for that scheme to be passed through.  
   
  The following is an example of configuration code that uses the prefix filters.  
   

@@ -1,5 +1,5 @@
 ---
-title: "-resource (Visual Basic)"
+title: "-resource"
 ms.date: 03/13/2018
 helpviewer_keywords: 
   - "/resource compiler option [Visual Basic]"
@@ -15,9 +15,13 @@ Embeds a managed resource in an assembly.
   
 ## Syntax  
   
-```  
+```console  
 -resource:filename[,identifier[,public|private]]  
-' -or-  
+```
+
+or  
+
+```console
 -res:filename[,identifier[,public|private]]  
 ```  
   

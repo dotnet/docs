@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 70814265-c734-4ddc-9502-fe8b28d2b414
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IGCThreadControl::SuspensionEnding Method
 Notifies the host that the runtime is resuming threads after a garbage collection or other suspension.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SuspensionEnding (  
     [in] DWORD Generation  
 );  

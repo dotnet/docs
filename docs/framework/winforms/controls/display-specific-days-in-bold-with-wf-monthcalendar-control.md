@@ -1,5 +1,5 @@
 ---
-title: "How to: Display Specific Days in Bold with the Windows Forms MonthCalendar Control"
+title: Display Specific Days in Bold with MonthCalendar Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

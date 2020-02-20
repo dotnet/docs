@@ -7,13 +7,13 @@ ms.assetid: 03ced70e-b540-4dd9-86c8-87f7bd61f609
 Workflow services and clients can participate in transactions.  For a service operation to become part of an ambient transaction, place a <xref:System.ServiceModel.Activities.Receive> activity within a <xref:System.ServiceModel.Activities.TransactedReceiveScope> activity. Any calls made by a <xref:System.ServiceModel.Activities.Send> or a <xref:System.ServiceModel.Activities.SendReply> activity within the <xref:System.ServiceModel.Activities.TransactedReceiveScope> will also be made within the ambient transaction. A workflow client application can create an ambient transaction by using the <xref:System.Activities.Statements.TransactionScope> activity and call service operations using the ambient transaction. This topic walks you through creating a workflow service and workflow client that participate in transactions.  
   
 > [!WARNING]
->  If a workflow service instance is loaded within a transaction and the workflow contains a <xref:System.Activities.Statements.Persist> activity, the workflow instance will block until the transaction times out.  
+> If a workflow service instance is loaded within a transaction and the workflow contains a <xref:System.Activities.Statements.Persist> activity, the workflow instance will block until the transaction times out.  
   
 > [!IMPORTANT]
->  Whenever you use a <xref:System.ServiceModel.Activities.TransactedReceiveScope> it is recommended to place all Receives in the workflow within <xref:System.ServiceModel.Activities.TransactedReceiveScope> activities.  
+> Whenever you use a <xref:System.ServiceModel.Activities.TransactedReceiveScope> it is recommended to place all Receives in the workflow within <xref:System.ServiceModel.Activities.TransactedReceiveScope> activities.  
   
 > [!IMPORTANT]
->  When using <xref:System.ServiceModel.Activities.TransactedReceiveScope> and messages arrive in the incorrect order, the workflow will be aborted when trying to deliver the first out of order message. You must make sure your workflow is always at a consistent stopping point when the workflow idles. This will allow you to restart the workflow from a previous persistence point should the workflow be aborted.  
+> When using <xref:System.ServiceModel.Activities.TransactedReceiveScope> and messages arrive in the incorrect order, the workflow will be aborted when trying to deliver the first out of order message. You must make sure your workflow is always at a consistent stopping point when the workflow idles. This will allow you to restart the workflow from a previous persistence point should the workflow be aborted.  
   
 ### Create a shared library  
   
@@ -31,7 +31,7 @@ Workflow services and clients can participate in transactions.  For a service op
   
 3. Add a new class called `PrintTransactionInfo` to the `Common` project. This class is derived from <xref:System.Activities.NativeActivity> and overloads the <xref:System.Activities.NativeActivity.Execute%2A> method.  
   
-    ```  
+    ```csharp
     using System;  
     using System;  
     using System.Activities;  
@@ -89,7 +89,7 @@ Workflow services and clients can participate in transactions.  For a service op
      ![Adding variables to the TransactedReceiveScope](./media/flowing-transactions-into-and-out-of-workflow-services/add-transactedreceivescope-variables.jpg)  
   
     > [!NOTE]
-    >  You can delete the data variable that is there by default. You can also use the existing handle variable.  
+    > You can delete the data variable that is there by default. You can also use the existing handle variable.  
   
 6. Drag and drop a <xref:System.ServiceModel.Activities.Receive> activity within the **Request** section of the <xref:System.ServiceModel.Activities.TransactedReceiveScope> activity. Set the following properties:  
   
@@ -217,8 +217,8 @@ Workflow services and clients can participate in transactions.  For a service op
   
 2. Open the generated Program.cs file and the following code:  
   
-    ```  
-    static void Main()  
+    ```csharp
+          static void Main()  
           {  
               Console.WriteLine("Building the server.");  
               using (WorkflowServiceHost host = new WorkflowServiceHost(new DeclarativeServiceWorkflow(), new Uri("net.tcp://localhost:8000/TransactedReceiveService/Declarative")))  
@@ -257,53 +257,52 @@ Workflow services and clients can participate in transactions.  For a service op
   
 2. Open the program.cs file and add the following code.  
   
-    ```  
+    ```csharp
     class Program  
+    {  
+
+        private static AutoResetEvent syncEvent = new AutoResetEvent(false);  
+  
+        static void Main(string[] args)  
         {  
+            //Build client  
+            Console.WriteLine("Building the client.");  
+            WorkflowApplication client = new WorkflowApplication(new DeclarativeClientWorkflow());  
+            client.Completed = Program.Completed;  
+            client.Aborted = Program.Aborted;  
+            client.OnUnhandledException = Program.OnUnhandledException;  
+            //Wait for service to start  
+            Console.WriteLine("Press ENTER once service is started.");  
+            Console.ReadLine();  
   
-            private static AutoResetEvent syncEvent = new AutoResetEvent(false);  
+            //Start the client              
+            Console.WriteLine("Starting the client.");  
+            client.Run();  
+            syncEvent.WaitOne();  
   
-            static void Main(string[] args)  
-            {  
-                //Build client  
-                Console.WriteLine("Building the client.");  
-                WorkflowApplication client = new WorkflowApplication(new DeclarativeClientWorkflow());  
-                client.Completed = Program.Completed;  
-                client.Aborted = Program.Aborted;  
-                client.OnUnhandledException = Program.OnUnhandledException;  
-  
-                //Wait for service to start  
-                Console.WriteLine("Press ENTER once service is started.");  
-                Console.ReadLine();  
-  
-                //Start the client              
-                Console.WriteLine("Starting the client.");  
-                client.Run();  
-                syncEvent.WaitOne();  
-  
-                //Sample complete  
-                Console.WriteLine();  
-                Console.WriteLine("Client complete. Press ENTER to exit.");  
-                Console.ReadLine();  
-            }  
-  
-            private static void Completed(WorkflowApplicationCompletedEventArgs e)  
-            {  
-                Program.syncEvent.Set();  
-            }  
-  
-            private static void Aborted(WorkflowApplicationAbortedEventArgs e)  
-            {  
-                Console.WriteLine("Client Aborted: {0}", e.Reason);  
-                Program.syncEvent.Set();  
-            }  
-  
-            private static UnhandledExceptionAction OnUnhandledException(WorkflowApplicationUnhandledExceptionEventArgs e)  
-            {  
-                Console.WriteLine("Client had an unhandled exception: {0}", e.UnhandledException);  
-                return UnhandledExceptionAction.Cancel;  
-            }  
+            //Sample complete  
+            Console.WriteLine();  
+            Console.WriteLine("Client complete. Press ENTER to exit.");  
+            Console.ReadLine();  
         }  
+  
+        private static void Completed(WorkflowApplicationCompletedEventArgs e)  
+        {  
+            Program.syncEvent.Set();  
+        }  
+  
+        private static void Aborted(WorkflowApplicationAbortedEventArgs e)  
+        {  
+            Console.WriteLine("Client Aborted: {0}", e.Reason);  
+            Program.syncEvent.Set();  
+        }  
+  
+        private static UnhandledExceptionAction OnUnhandledException(WorkflowApplicationUnhandledExceptionEventArgs e)  
+        {  
+            Console.WriteLine("Client had an unhandled exception: {0}", e.UnhandledException);  
+            return UnhandledExceptionAction.Cancel;  
+        }  
+    }  
     ```  
   
 ## See also

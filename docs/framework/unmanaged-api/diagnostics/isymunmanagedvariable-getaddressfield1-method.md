@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 25788ed1-0ce3-4b97-96fc-88f8997812a3
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedVariable::GetAddressField1 Method
 Gets the first address field for this variable. Its meaning depends on the kind of address.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetAddressField1(  
     [out, retval] ULONG32* pRetVal);  
 ```  

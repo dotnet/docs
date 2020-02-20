@@ -2,15 +2,13 @@
 title: "ICorDebugDebugEvent::GetThread Method"
 ms.date: "03/30/2017"
 ms.assetid: 4f2e9a2c-8369-4a07-a881-ad5422626353
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugDebugEvent::GetThread Method
 Gets the thread on which the event occurred.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThread(  
         [out]ICorDebugThread **ppThread  
 );  
@@ -23,7 +21,7 @@ HRESULT GetThread(
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -36,5 +34,5 @@ HRESULT GetThread(
   
 ## See also
 
-- [ICorDebugDebugEvent Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugdebugevent-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugDebugEvent Interface](icordebugdebugevent-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

@@ -1,5 +1,5 @@
 ---
-title: "Declaring and Raising Events (Visual Basic)"
+title: "Declaring and Raising Events"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "declarations [Visual Basic], events"
@@ -45,7 +45,7 @@ This walkthrough demonstrates how to declare and raise events for a class named 
  When the calling object receives a `PercentDone` event, the `Percent` argument contains the percentage of the task that is complete. The `Cancel` argument can be set to `True` to cancel the method that raised the event.  
   
 > [!NOTE]
->  You can declare event arguments just as you do arguments of procedures, with the following exceptions: Events cannot have `Optional` or `ParamArray` arguments, and events do not have return values.  
+> You can declare event arguments just as you do arguments of procedures, with the following exceptions: Events cannot have `Optional` or `ParamArray` arguments, and events do not have return values.  
   
  The `PercentDone` event is raised by the `LongTask` method of the `Widget` class. `LongTask` takes two arguments: the length of time the method pretends to be doing work, and the minimum time interval before `LongTask` pauses to raise the `PercentDone` event.  
   

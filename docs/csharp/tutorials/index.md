@@ -9,6 +9,8 @@ Welcome to the C# tutorials. These start with interactive lessons that you can r
 
 ## Introduction to C# interactive tutorials
 
+If you want to start your exploration in video format, the [C# 101 video series](https://aka.ms/dotnet3-csharp) provides an introduction to C#. You'll learn about concepts you can explore in these tutorials.
+
 The first lessons explain C# concepts using small snippets of code. You'll
 learn the basics of C# syntax and how to work with data types like strings,
 numbers, and booleans. It's all interactive, and you'll be writing and running code
@@ -53,7 +55,7 @@ This tutorial assumes that you have finished the lessons listed above.
 
 All the introductory tutorials following the Hello World lesson are available in your own local development environment. At the end of each tutorial, you decide if you want to continue
 with the next lesson online or on your own machine. There are links
-to help you setup your environment and continue with the next tutorial
+to help you set up your environment and continue with the next tutorial
 on your machine.
 
 ## Explore new features in C\#

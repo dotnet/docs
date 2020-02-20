@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 025e358c-448f-4423-a2f2-57acf437c8a5
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedWriter3::OpenMethod2 Method
 Opens a method and provides its real section offset in the image.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OpenMethod2(   
     [in] mdMethodDef method,  
     [in] ULONG32 isect,  

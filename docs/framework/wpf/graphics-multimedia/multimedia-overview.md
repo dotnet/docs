@@ -11,20 +11,20 @@ The multimedia features in [!INCLUDE[TLA#tla_winclient](../../../../includes/tla
 
 <a name="mediaapi"></a>   
 ## Media API  
- The <xref:System.Windows.Controls.MediaElement> and <xref:System.Windows.Media.MediaPlayer> classes are used to present audio or video content. These classes can be controlled interactively or by a clock. These classes can use on the [!INCLUDE[TLA#tla_wmp](../../../../includes/tlasharptla-wmp-md.md)] 10 control for media playback. Which class you use, depends on the scenario.  
+ The <xref:System.Windows.Controls.MediaElement> and <xref:System.Windows.Media.MediaPlayer> classes are used to present audio or video content. These classes can be controlled interactively or by a clock. These classes can use on the Microsoft Windows Media Player 10 control for media playback. Which class you use, depends on the scenario.  
   
  <xref:System.Windows.Controls.MediaElement> is a <xref:System.Windows.UIElement> that is supported by the [Layout](../advanced/layout.md) and can be consumed as the content of many controls. It is also usable in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] as well as code. <xref:System.Windows.Media.MediaPlayer>, on the other hand, is designed for <xref:System.Windows.Media.Drawing> objects and lacks layout support. Media loaded using a <xref:System.Windows.Media.MediaPlayer> can only be presented using a <xref:System.Windows.Media.VideoDrawing> or by directly interacting with a <xref:System.Windows.Media.DrawingContext>. <xref:System.Windows.Media.MediaPlayer> cannot be used in XAML.  
   
  For more information about drawing objects and drawing context, see [Drawing Objects Overview](drawing-objects-overview.md).  
   
 > [!NOTE]
->  When distributing media with your application, you cannot use a media file as a project resource. In your project file, you must instead set the media type to `Content` and set `CopyToOutputDirectory` to `PreserveNewest` or `Always`.  
+> When distributing media with your application, you cannot use a media file as a project resource. In your project file, you must instead set the media type to `Content` and set `CopyToOutputDirectory` to `PreserveNewest` or `Always`.  
   
 <a name="mediaplaybackmodes"></a>   
 ## Media Playback Modes  
   
 > [!NOTE]
->  Both <xref:System.Windows.Controls.MediaElement> and <xref:System.Windows.Media.MediaPlayer> have similar members. The links in this section refer to the <xref:System.Windows.Controls.MediaElement> class members. Unless specifically noted, members linked to in the <xref:System.Windows.Controls.MediaElement> class can also be found in the <xref:System.Windows.Media.MediaPlayer> class.  
+> Both <xref:System.Windows.Controls.MediaElement> and <xref:System.Windows.Media.MediaPlayer> have similar members. The links in this section refer to the <xref:System.Windows.Controls.MediaElement> class members. Unless specifically noted, members linked to in the <xref:System.Windows.Controls.MediaElement> class can also be found in the <xref:System.Windows.Media.MediaPlayer> class.  
   
  To understand media playback in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)], an understanding of the different modes in which media can be played is required. Both <xref:System.Windows.Controls.MediaElement> and <xref:System.Windows.Media.MediaPlayer> can be used in two different media modes, independent mode and clock mode. The media mode is determined by the <xref:System.Windows.Controls.MediaElement.Clock%2A> property. When <xref:System.Windows.Controls.MediaElement.Clock%2A> is `null`, the media object is in independent mode. When the <xref:System.Windows.Controls.MediaElement.Clock%2A> is non-null, the media object is in clock mode. By default, media objects are in independent mode.  
   
@@ -60,7 +60,7 @@ The multimedia features in [!INCLUDE[TLA#tla_winclient](../../../../includes/tla
   
 <a name="mediaelement"></a>   
 ## MediaElement Class  
- Adding media to an application is as simple as adding a <xref:System.Windows.Controls.MediaElement> control to the [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] of the application and providing a <xref:System.Uri> to the media you wish to include. All media types supported by [!INCLUDE[TLA#tla_wmp](../../../../includes/tlasharptla-wmp-md.md)] 10 are supported in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]. The following example shows a simple usage of the <xref:System.Windows.Controls.MediaElement> in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)].  
+ Adding media to an application is as simple as adding a <xref:System.Windows.Controls.MediaElement> control to the [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] of the application and providing a <xref:System.Uri> to the media you wish to include. All media types supported by Microsoft Windows Media Player 10 are supported in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]. The following example shows a simple usage of the <xref:System.Windows.Controls.MediaElement> in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)].  
   
  [!code-xaml[MediaElement_snip#SimpleMediaElementUsageWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/MediaElement_snip/CSharp/SimpleUsage.xaml#simplemediaelementusagewholepage)]  
   

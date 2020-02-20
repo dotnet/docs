@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 47b2a3b6-907d-43dc-858d-1ae7dca1316a
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit2::DefineGenericParam Method
 Creates a definition for a generic type parameter, and gets a token to that generic type parameter.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineGenericParam (   
     [in]  mdToken         tk,   
     [in]  ULONG           ulParamSeq,   

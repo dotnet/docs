@@ -1,5 +1,5 @@
 ---
-title: "How to: Display Subitems in Columns with the Windows Forms ListView Control"
+title: Display Subitems in Columns with ListView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

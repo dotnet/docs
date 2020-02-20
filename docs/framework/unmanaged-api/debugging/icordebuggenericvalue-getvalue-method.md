@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 4e95d7cb-144d-4ccf-8a69-d605f4744be2
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugGenericValue::GetValue Method
 Copies the value of this generic into the specified buffer.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetValue (  
     [out] void     *pTo  
 );  

@@ -13,13 +13,13 @@ This sample demonstrates how to control several security-related features of a W
 - Controlling the logging of Personally Identifiable Information (PII) in trace and message logs.  
   
 > [!IMPORTANT]
->  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\SecurityLockdown`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\SecurityLockdown`  
   
 ## Discussion  
  Each of these features can be used separately or together to control aspects of a service's security. This is not a definitive guide to securing a WCF service.  
@@ -31,7 +31,7 @@ This sample demonstrates how to control several security-related features of a W
  This sample demonstrates how to control the logging of known Personally Identifiable Information (PII) in trace and message logs, such as username and password. By default, logging of known PII is disabled however in certain situations logging of PII can be important in debugging an application. This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md). In addition, this sample uses tracing and message logging. For more information, see the [Tracing and Message Logging](../../../../docs/framework/wcf/samples/tracing-and-message-logging.md) sample.  
   
 ## Encrypting Configuration File Elements  
- For security purposes in a shared Web-hosting environment, it may be desirable to encrypt certain configuration elements, such as database connection strings that may contain sensitive information. A configuration element may be encrypted using the aspnet_regiis.exe tool found in the .NET Framework folder For example, %WINDIR%\Micrsoft.NET\Framework\v4.0.20728.  
+ For security purposes in a shared Web-hosting environment, it may be desirable to encrypt certain configuration elements, such as database connection strings that may contain sensitive information. A configuration element may be encrypted using the aspnet_regiis.exe tool found in the .NET Framework folder For example, %WINDIR%\Microsoft.NET\Framework\v4.0.20728.  
   
 #### To encrypt the values in the appSettings section in Web.config for the sample  
   
@@ -41,7 +41,7 @@ This sample demonstrates how to control several security-related features of a W
   
 3. Encrypt the appSettings configuration settings in the Web.config folder by issuing the following command: `aspnet_regiis -pe "appSettings" -app "/servicemodelsamples" -prov "DataProtectionConfigurationProvider"`.  
   
- More information about encrypting sections of configuration files can be found by reading a how-to on DPAPI in ASP.NET configuration ([Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication](https://go.microsoft.com/fwlink/?LinkId=95137)) and a how-to on RSA in ASP.NET configuration ([How To: Encrypt Configuration Sections in ASP.NET 2.0 Using RSA](https://go.microsoft.com/fwlink/?LinkId=95138)).  
+ More information about encrypting sections of configuration files can be found by reading a how-to on DPAPI in ASP.NET configuration ([Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication](https://docs.microsoft.com/previous-versions/msp-n-p/ff649248(v=pandp.10))) and a how-to on RSA in ASP.NET configuration ([How To: Encrypt Configuration Sections in ASP.NET 2.0 Using RSA](https://docs.microsoft.com/previous-versions/msp-n-p/ff650304(v=pandp.10))).  
   
 ## Locking configuration file elements  
  In Web-hosted scenarios, it is possible to have services in subdirectories of services. In these situations, configuration values for the service in the subdirectory are calculated by examining values in Machine.config and successively merging with any Web.config files in parent directories moving down the directory tree and finally merging the Web.config file in the directory that contains the service. The default behavior for most configuration elements is to allow configuration files in subdirectories to override the values set in parent directories. In certain situations it may be desirable to prevent configuration files in subdirectories from overriding values set in parent directory configuration.  
@@ -81,7 +81,7 @@ This sample demonstrates how to control several security-related features of a W
 ```  
   
 > [!NOTE]
->  The Machine.config file has a default location: %WINDIR%\Microsoft.NET\Framework\v2.0.50727\CONFIG.  
+> The Machine.config file has a default location: %WINDIR%\Microsoft.NET\Framework\v2.0.50727\CONFIG.  
   
  If the `enableLoggingKnownPii` attribute is not present in Machine.config, logging of PII is not allowed.  
   
@@ -111,16 +111,16 @@ This sample demonstrates how to control several security-related features of a W
  PII is only logged if both `enableLoggingKnownPii` is set to `true`, and `logKnownPii` is set to `true`.  
   
 > [!NOTE]
->  System.Diagnostics ignores all attributes on all sources except the first one listed in the configuration file. Adding the `logKnownPii` attribute to the second source in the configuration file has no effect.  
+> System.Diagnostics ignores all attributes on all sources except the first one listed in the configuration file. Adding the `logKnownPii` attribute to the second source in the configuration file has no effect.  
   
 > [!IMPORTANT]
->  To run this sample involves manual modification of Machine.config. Care should be taken when modifying Machine.config as incorrect values or syntax may prevent all .NET Framework applications from running.  
+> To run this sample involves manual modification of Machine.config. Care should be taken when modifying Machine.config as incorrect values or syntax may prevent all .NET Framework applications from running.  
   
  It is also possible to encrypt configuration file elements using DPAPI and RSA. For more information, see the following links:  
   
-- [Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication](https://go.microsoft.com/fwlink/?LinkId=95137)  
+- [Building Secure ASP.NET Applications: Authentication, Authorization, and Secure Communication](https://docs.microsoft.com/previous-versions/msp-n-p/ff649248(v=pandp.10))  
   
-- [How To: Encrypt Configuration Sections in ASP.NET 2.0 Using RSA](https://go.microsoft.com/fwlink/?LinkId=95138)  
+- [How To: Encrypt Configuration Sections in ASP.NET 2.0 Using RSA](https://docs.microsoft.com/previous-versions/msp-n-p/ff650304(v=pandp.10))  
   
 #### To set up, build and run the sample  
   
@@ -138,4 +138,4 @@ This sample demonstrates how to control several security-related features of a W
   
 ## See also
 
-- [AppFabric Monitoring Samples](https://go.microsoft.com/fwlink/?LinkId=193959)
+- [AppFabric Monitoring Samples](https://docs.microsoft.com/previous-versions/appfabric/ff383407(v=azure.10))

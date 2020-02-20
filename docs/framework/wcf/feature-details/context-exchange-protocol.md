@@ -22,7 +22,7 @@ This section describes the context exchange protocol introduced in Windows Commu
 - If a message is received from server with a specific context, when the channel has already been initialized with a specific context, this results in a <xref:System.ServiceModel.ProtocolException>.  
   
     > [!NOTE]
-    >  It is appropriate to receive an initial context from the server only if the channel is opened without any context set explicitly.  
+    > It is appropriate to receive an initial context from the server only if the channel is opened without any context set explicitly.  
   
 - The <xref:System.ServiceModel.Channels.ContextMessageProperty> on incoming message is always null.  
   

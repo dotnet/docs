@@ -1,9 +1,9 @@
 ---
-title: "How to: Reorder the Fields of a Delimited File (LINQ) (C#)"
+title: "How to reorder the fields of a delimited file (LINQ) (C#)"
 ms.date: 07/20/2015
 ms.assetid: 4e62d82c-61b7-4f18-b9a1-86723746d7d2
 ---
-# How to: Reorder the Fields of a Delimited File (LINQ) (C#)
+# How to reorder the fields of a delimited file (LINQ) (C#)
 A comma-separated value (CSV) file is a text file that is often used to store spreadsheet data or other tabular data that is represented by rows and columns. By using the <xref:System.String.Split%2A> method to separate the fields, it is very easy to query and manipulate CSV files by using LINQ. In fact, the same technique can be used to reorder the parts of any structured line of text; it is not limited to CSV files.  
   
  In the following example, assume that the three columns represent students' "last name," "first name", and "ID." The fields are in alphabetical order based on the students' last names. The query produces a new sequence in which the ID column appears first, followed by a second column that combines the student's first name and last name. The lines are reordered according to the ID field. The results are saved into a new file and the original data is not modified.  
@@ -12,7 +12,7 @@ A comma-separated value (CSV) file is a text file that is often used to store sp
   
 1. Copy the following lines into a plain text file that is named spreadsheet1.csv. Save the file in your project folder.  
   
-    ```  
+    ```csv  
     Adams,Terry,120  
     Fakhouri,Fadi,116  
     Feng,Hanying,117  
@@ -74,6 +74,6 @@ Create a C# console application project, with `using` directives for the System.
   
 ## See also
 
-- [LINQ and Strings (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-strings.md)
-- [LINQ and File Directories (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-file-directories.md)
-- [How to: Generate XML from CSV Files (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-generate-xml-from-csv-files.md)
+- [LINQ and Strings (C#)](./linq-and-strings.md)
+- [LINQ and File Directories (C#)](./linq-and-file-directories.md)
+- [How to generate XML from CSV files (C#)](./how-to-generate-xml-from-csv-files.md)

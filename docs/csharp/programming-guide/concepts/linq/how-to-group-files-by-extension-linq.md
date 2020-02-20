@@ -1,9 +1,9 @@
 ---
-title: "How to: Group Files by Extension (LINQ) (C#)"
+title: "How to group files by extension (LINQ) (C#)"
 ms.date: 07/20/2015
 ms.assetid: 21a98320-a5a1-4981-82d8-6a637e7d9018
 ---
-# How to: Group Files by Extension (LINQ) (C#)
+# How to group files by extension (LINQ) (C#)
 This example shows how LINQ can be used to perform advanced grouping and sorting operations on lists of files or folders. It also shows how to page output in the console window by using the <xref:System.Linq.Enumerable.Skip%2A> and <xref:System.Linq.Enumerable.Take%2A> methods.  
   
 ## Example  
@@ -103,5 +103,5 @@ class GroupByExtension
   
 ## See also
 
-- [LINQ to Objects (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)
-- [LINQ and File Directories (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-file-directories.md)
+- [LINQ to Objects (C#)](./linq-to-objects.md)
+- [LINQ and File Directories (C#)](./linq-and-file-directories.md)

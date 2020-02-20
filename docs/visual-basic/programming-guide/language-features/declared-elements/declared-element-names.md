@@ -1,5 +1,5 @@
 ---
-title: "Declared Element Names (Visual Basic)"
+title: "Declared Element Names"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "declared elements [Visual Basic], case sensitivity"
@@ -57,7 +57,7 @@ Every declared element has a name, also called an *identifier*, which is what th
  `xyz$wv`  
   
 > [!CAUTION]
->  Element names starting with an underscore (`_`) are not part of the [Language Independence and Language-Independent Components](../../../../standard/language-independence-and-language-independent-components.md) (CLS), so CLS-compliant code cannot use a component that defines such names. However, an underscore in any other position in an element name is CLS-compliant.  
+> Element names starting with an underscore (`_`) are not part of the [Language Independence and Language-Independent Components](../../../../standard/language-independence-and-language-independent-components.md) (CLS), so CLS-compliant code cannot use a component that defines such names. However, an underscore in any other position in an element name is CLS-compliant.  
   
 ### Name Length Guidelines  
  As a practical matter, your name should be as short as possible while still clearly identifying the nature of the element. This improves the readability of your code and reduces line length and source-file size.  
@@ -73,7 +73,7 @@ Every declared element has a name, also called an *identifier*, which is what th
   
 - You are working with code written in another language in which the given keyword is not reserved.  
   
- Otherwise, you should consider renaming the element if its name conflicts with a keyword. The integrated development environment (IDE) provides an easy way to do this. For more information, see [Refactoring](/visualstudio/vb-ide/refactoring-vb).  
+ Otherwise, you should consider renaming the element if its name conflicts with a keyword. The integrated development environment (IDE) provides an easy way to do this. For more information, see [Refactoring](/visualstudio/ide/refactoring-in-visual-studio).  
   
 ## Case Sensitivity in Names  
  Element names in Visual Basic are case-insensitive. This means that when the compiler compares two names that differ in alphabetic case only, it interprets them as the same name. For example, it considers `ABC` and `abc` to refer to the same declared element.  

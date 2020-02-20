@@ -22,12 +22,12 @@ In Windows Communication Foundation (WCF), creating a federated service consists
   
 1. Use the <xref:System.ServiceModel.Description.ServiceCredentials.IssuedTokenAuthentication%2A> property of the <xref:System.ServiceModel.Description.ServiceCredentials> class to return a reference to an <xref:System.ServiceModel.Security.IssuedTokenServiceCredential> instance. The property is accessed from the <xref:System.ServiceModel.ServiceHostBase.Credentials%2A> property of the <xref:System.ServiceModel.ServiceHostBase> class.  
   
-2. Set the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.AllowUntrustedRsaIssuers%2A> property to `true` if self-issued tokens such as [!INCLUDE[infocard](../../../../includes/infocard-md.md)] cards are to be authenticated. The default is `false`.  
+2. Set the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.AllowUntrustedRsaIssuers%2A> property to `true` if self-issued tokens such as CardSpace cards are to be authenticated. The default is `false`.  
   
 3. Populate the collection returned by the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.KnownCertificates%2A> property with instances of the <xref:System.Security.Cryptography.X509Certificates.X509Certificate2> class. Each instance represents an issuer from which the service will authenticate tokens.  
   
     > [!NOTE]
-    >  Unlike the client-side collection returned by the <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.ScopedCertificates%2A> property, the known certificates collection is not a keyed collection. The service accepts the tokens that the specified certificates issue regardless of the address of the client that sent the message containing the issued token (subject to the further constraints, which are described later in this topic).  
+    > Unlike the client-side collection returned by the <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential.ScopedCertificates%2A> property, the known certificates collection is not a keyed collection. The service accepts the tokens that the specified certificates issue regardless of the address of the client that sent the message containing the issued token (subject to the further constraints, which are described later in this topic).  
   
 4. Set the <xref:System.ServiceModel.Security.IssuedTokenServiceCredential.CertificateValidationMode%2A> property to one of the <xref:System.ServiceModel.Security.X509CertificateValidationMode> enumeration values. This can be done only in code. The default is <xref:System.IdentityModel.Selectors.X509CertificateValidator.ChainTrust%2A>.  
   
@@ -41,7 +41,7 @@ In Windows Communication Foundation (WCF), creating a federated service consists
   
 1. Create an `<issuedTokenAuthentication>` element as a child of a <`serviceCredentials`> element.  
   
-2. Set the `allowUntrustedRsaIssuers` attribute of the `<issuedTokenAuthentication>` element to `true` if authenticating a self-issued token, such as an [!INCLUDE[infocard](../../../../includes/infocard-md.md)] card.  
+2. Set the `allowUntrustedRsaIssuers` attribute of the `<issuedTokenAuthentication>` element to `true` if authenticating a self-issued token, such as a CardSpace card.  
   
 3. Create a `<knownCertificates>` element as a child of the `<issuedTokenAuthentication>` element.  
   

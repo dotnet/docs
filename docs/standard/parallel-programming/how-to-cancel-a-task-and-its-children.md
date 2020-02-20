@@ -8,8 +8,6 @@ dev_langs:
 helpviewer_keywords: 
   - "tasks, how to cancel"
 ms.assetid: 08574301-8331-4719-ad50-9cf7f6ff3048
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Cancel a Task and Its Children
 These examples show how to perform the following tasks:  

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 50cbe557-2322-41aa-8e0d-f967602eaa0f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataTables::GetTableInfo Method
 Gets the name, row size, number of rows, number of columns, and key column index of the specified table.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetTableInfo (  
     [in]  ULONG       ixTbl,  
     [out] ULONG       *pcbRow,  

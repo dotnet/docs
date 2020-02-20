@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: ea422217-988b-4acd-b2db-c55357938275
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetRVA Method
 Gets the relative virtual address (RVA) and the implementation flags of the method or field represented by the specified token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRVA (  
    [in]  mdToken     tk,   
    [out] ULONG       *pulCodeRVA,   

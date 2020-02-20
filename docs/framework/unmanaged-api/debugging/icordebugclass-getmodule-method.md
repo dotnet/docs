@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 87029cc4-e5e1-42d5-8b98-655bb7ece520
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugClass::GetModule Method
 Gets the module that defines this class.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetModule (  
     [out] ICorDebugModule    **pModule  
 );  

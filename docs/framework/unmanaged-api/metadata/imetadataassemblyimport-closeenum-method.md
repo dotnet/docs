@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c9df4087-12b3-46d9-b075-9067dd7805df
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataAssemblyImport::CloseEnum Method
 Releases a reference to the specified enumeration instance.  
   
 ## Syntax  
   
-```  
+```cpp  
 void CloseEnum (  
     [in] HCORENUM     hEnum  
 );  

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 9543b111-5705-40c9-935c-a3ffc7a581aa
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataAssemblyImport::EnumManifestResources Method
 Gets a pointer to an enumerator for the resources referenced in the current assembly manifest.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumManifestResources (  
     [in, out] HCORENUM         *phEnum,   
     [out] mdManifestResource   rManifestResources[],   

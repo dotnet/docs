@@ -19,10 +19,10 @@ Bindings specify the communication mechanism to use when talking to an endpoint 
  This topic presents all of the system-provided Windows Communication Foundation (WCF) bindings. If none of these meets the exact requirements for your application, you can create a binding using the <xref:System.ServiceModel.Channels.CustomBinding> class. For more information about creating custom bindings, see [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md).  
   
 > [!IMPORTANT]
->  Select a binding that has security enabled. By default, all bindings, except the <xref:System.ServiceModel.BasicHttpBinding> binding, have security enabled. If you do not select a secure binding, or if you disable security, be sure your network exchanges are protected in some other manner, such as being in a secured data center or on an isolated network.  
+> Select a binding that has security enabled. By default, all bindings, except the <xref:System.ServiceModel.BasicHttpBinding> binding, have security enabled. If you do not select a secure binding, or if you disable security, be sure your network exchanges are protected in some other manner, such as being in a secured data center or on an isolated network.  
   
 > [!IMPORTANT]
->  Do not use duplex contracts with bindings that do not support security, or that have security disabled, unless the network exchange is secured by some other means.  
+> Do not use duplex contracts with bindings that do not support security, or that have security disabled, unless the network exchange is secured by some other means.  
   
 ## System-Provided Bindings  
  The following bindings are shipped with WCF.  

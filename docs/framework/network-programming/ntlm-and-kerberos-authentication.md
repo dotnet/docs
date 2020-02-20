@@ -54,9 +54,9 @@ WReq.Credentials = CredentialCache.DefaultCredentials;
  The negotiate authentication module determines whether the remote server is using NTLM or Kerberos authentication, and sends the appropriate response.  
   
 > [!NOTE]
->  NTLM authentication does not work through a proxy server.  
+> NTLM authentication does not work through a proxy server.  
   
 ## See also
 
-- [Basic and Digest Authentication](../../../docs/framework/network-programming/basic-and-digest-authentication.md)
-- [Internet Authentication](../../../docs/framework/network-programming/internet-authentication.md)
+- [Basic and Digest Authentication](basic-and-digest-authentication.md)
+- [Internet Authentication](internet-authentication.md)

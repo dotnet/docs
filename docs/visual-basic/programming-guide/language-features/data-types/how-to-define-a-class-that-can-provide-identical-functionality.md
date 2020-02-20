@@ -1,5 +1,5 @@
 ---
-title: "How to: Define a Class That Can Provide Identical Functionality on Different Data Types (Visual Basic)"
+title: "How to: Define a Class That Can Provide Identical Functionality on Different Data Types"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "data type arguments [Visual Basic], using"
@@ -56,7 +56,7 @@ You can define a class from which you can create objects that provide identical 
   
 6. Be sure your code uses only operations and methods that are supported by any data type it can supply to `itemType`.  
   
-     The following example defines a class that manages a very simple list. It holds the list in the internal array `items`, and the using code can declare the data type of the list elements. A parameterized constructor allows the using code to set the upper bound of `items`, and the default constructor sets this to 9 (for a total of 10 items).  
+     The following example defines a class that manages a very simple list. It holds the list in the internal array `items`, and the using code can declare the data type of the list elements. A parameterized constructor allows the using code to set the upper bound of `items`, and the parameterless constructor sets this to 9 (for a total of 10 items).  
   
      [!code-vb[VbVbalrDataTypes#7](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrDataTypes/VB/Class1.vb#7)]  
   

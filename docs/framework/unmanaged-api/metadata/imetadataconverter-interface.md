@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 9caea662-0167-4267-b14a-2fa42c3be4ea
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataConverter Interface
 Provides methods to map type libraries to their metadata signatures, and to convert from one to the other.  

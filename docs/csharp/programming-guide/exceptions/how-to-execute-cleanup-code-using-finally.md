@@ -1,6 +1,5 @@
 ---
-title: "How to: Execute Cleanup Code Using finally - C# Programming Guide"
-ms.custom: seodec18
+title: "How to execute cleanup code using finally - C# Programming Guide"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "try/finally blocks [C#]"
@@ -8,7 +7,7 @@ helpviewer_keywords:
   - "exception handling [C#], try/finally block"
 ms.assetid: 1b1e5aef-3f32-4a88-9d39-b5fffb33bdaf
 ---
-# How to: Execute Cleanup Code Using finally (C# Programming Guide)
+# How to execute cleanup code using finally (C# Programming Guide)
 The purpose of a `finally` statement is to ensure that the necessary cleanup of objects, usually objects that are holding external resources, occurs immediately, even if an exception is thrown. One example of such cleanup is calling <xref:System.IO.Stream.Close%2A> on a <xref:System.IO.FileStream> immediately after use instead of waiting for the object to be garbage collected by the common language runtime, as follows:  
   
  [!code-csharp[csProgGuideExceptions#16](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideExceptions/CS/Exceptions.cs#16)]  
@@ -24,10 +23,10 @@ The purpose of a `finally` statement is to ensure that the necessary cleanup of 
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/index.md)
-- [Exception Handling](../../../csharp/programming-guide/exceptions/exception-handling.md)
-- [using Statement](../../../csharp/language-reference/keywords/using-statement.md)
-- [try-catch](../../../csharp/language-reference/keywords/try-catch.md)
-- [try-finally](../../../csharp/language-reference/keywords/try-finally.md)
-- [try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)
+- [C# Programming Guide](../index.md)
+- [Exceptions and Exception Handling](./index.md)
+- [Exception Handling](./exception-handling.md)
+- [using Statement](../../language-reference/keywords/using-statement.md)
+- [try-catch](../../language-reference/keywords/try-catch.md)
+- [try-finally](../../language-reference/keywords/try-finally.md)
+- [try-catch-finally](../../language-reference/keywords/try-catch-finally.md)

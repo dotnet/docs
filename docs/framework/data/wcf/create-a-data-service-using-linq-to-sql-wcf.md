@@ -11,7 +11,7 @@ ms.assetid: 3b01c2fd-8c6e-4bf5-b38f-9e61bdc3c328
 ---
 # How to: Create a Data Service Using a LINQ to SQL Data Source (WCF Data Services)
 
-WCF Data Services exposes entity data as a data service. The reflection provider enables you to define a data model that is based on any class that exposes members that return an <xref:System.Linq.IQueryable%601> implementation. To be able to make updates to data in the data source, these classes must also implement the <xref:System.Data.Services.IUpdatable> interface. For more information, see [Data Services Providers](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md). This topic shows you how to create LINQ to SQL classes that access the Northwind sample database by using the reflection provider, as well as how to create the data service that is based on these data classes.
+WCF Data Services exposes entity data as a data service. The reflection provider enables you to define a data model that is based on any class that exposes members that return an <xref:System.Linq.IQueryable%601> implementation. To be able to make updates to data in the data source, these classes must also implement the <xref:System.Data.Services.IUpdatable> interface. For more information, see [Data Services Providers](data-services-providers-wcf-data-services.md). This topic shows you how to create LINQ to SQL classes that access the Northwind sample database by using the reflection provider, as well as how to create the data service that is based on these data classes.
 
 ## To add LINQ to SQL classes to a project
 
@@ -46,10 +46,10 @@ WCF Data Services exposes entity data as a data service. The reflection provider
 
 2. In the **Add New Item** dialog box, select the **WCF Data Service** template from the **Web** category.
 
-   ![WCF Data Service item template in Visual Studio 2015](media/wcf-data-service-item-template.png)
+   ![WCF Data Service item template in Visual Studio 2015](./media/wcf-data-service-item-template.png)
 
    > [!NOTE]
-   > The **WCF Data Service** template is available in Visual Studio 2015, but not in Visual Studio 2017.
+   > The **WCF Data Service** template is available in Visual Studio 2015, but not in Visual Studio 2017 or later.
 
 3. Supply a name for the service, and then click **OK**.
 
@@ -64,10 +64,10 @@ WCF Data Services exposes entity data as a data service. The reflection provider
 
      This enables authorized clients to access resources for the three specified entity sets.
 
-6. To test the Northwind.svc data service by using a Web browser, follow the instructions in the topic [Accessing the Service from a Web Browser](../../../../docs/framework/data/wcf/accessing-the-service-from-a-web-browser-wcf-data-services-quickstart.md).
+6. To test the Northwind.svc data service by using a Web browser, follow the instructions in the topic [Accessing the Service from a Web Browser](accessing-the-service-from-a-web-browser-wcf-data-services-quickstart.md).
 
 ## See also
 
-- [How to: Create a Data Service Using an ADO.NET Entity Framework Data Source](../../../../docs/framework/data/wcf/create-a-data-service-using-an-adonet-ef-data-wcf.md)
-- [How to: Create a Data Service Using the Reflection Provider](../../../../docs/framework/data/wcf/create-a-data-service-using-rp-wcf-data-services.md)
-- [Data Services Providers](../../../../docs/framework/data/wcf/data-services-providers-wcf-data-services.md)
+- [How to: Create a Data Service Using an ADO.NET Entity Framework Data Source](create-a-data-service-using-an-adonet-ef-data-wcf.md)
+- [How to: Create a Data Service Using the Reflection Provider](create-a-data-service-using-rp-wcf-data-services.md)
+- [Data Services Providers](data-services-providers-wcf-data-services.md)

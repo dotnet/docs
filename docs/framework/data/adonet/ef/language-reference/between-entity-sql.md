@@ -8,7 +8,7 @@ Determines whether an expression results in a value in a specified range. The [!
   
 ## Syntax  
   
-```  
+```csharp  
 expression [ NOT ] BETWEEN begin_expression AND end_expression    
 ```  
   
@@ -37,7 +37,7 @@ expression [ NOT ] BETWEEN begin_expression AND end_expression
 ## Example  
  The following Entity SQL query uses BETWEEN operator to determine whether an expression results in a value in a specified range. The query is based on the AdventureWorks Sales Model. To compile and run this query, follow these steps:  
   
-1. Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../../../../../../docs/framework/data/adonet/ef/how-to-execute-a-query-that-returns-structuraltype-results.md).  
+1. Follow the procedure in [How to: Execute a Query that Returns StructuralType Results](../how-to-execute-a-query-that-returns-structuraltype-results.md).  
   
 2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
   
@@ -45,4 +45,4 @@ expression [ NOT ] BETWEEN begin_expression AND end_expression
   
 ## See also
 
-- [Entity SQL Reference](../../../../../../docs/framework/data/adonet/ef/language-reference/entity-sql-reference.md)
+- [Entity SQL Reference](entity-sql-reference.md)

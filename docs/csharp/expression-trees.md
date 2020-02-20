@@ -2,6 +2,7 @@
 title: Expression Trees
 description: Learn about expression trees in .NET Core and how to use them to represent code as structures that you can examine, modify, and execute.
 ms.date: 06/20/2016
+ms.technology: csharp-advanced-concepts
 ms.assetid: aceb4719-0d5a-4b19-b01f-b51063bcc54f
 ---
 

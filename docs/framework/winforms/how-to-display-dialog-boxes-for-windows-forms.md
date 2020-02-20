@@ -1,5 +1,5 @@
 ---
-title: "How to: Display Dialog Boxes for Windows Forms"
+title: "How to: Display Dialog Boxes"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

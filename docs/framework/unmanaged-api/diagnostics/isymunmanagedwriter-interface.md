@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 7d6733ec-f081-4166-bc17-de09e16dc304
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedWriter Interface
 Represents a symbol writer, and provides methods to define documents, sequence points, lexical scopes, and variables.  

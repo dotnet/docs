@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 9855f0e4-12c0-4d3d-ab5d-d6bc52d25eae
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetPermissionSetProps Method
 Gets the metadata associated with the <xref:System.Security.PermissionSet?displayProperty=nameWithType> represented by the specified Permission token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetPermissionSetProps (  
    [in]  mdPermission      pm,  
    [out] DWORD             *pdwAction,   

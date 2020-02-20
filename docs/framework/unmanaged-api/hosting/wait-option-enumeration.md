@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 962fc293-8ded-4b3b-90ce-2c21a4f1b244
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # WAIT_OPTION Enumeration
 Contains values that indicate the action a host should take if an operation requested by the common language runtime (CLR) blocks.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     WAIT_MSGPUMP       = 0x1,  
     WAIT_ALERTABLE     = 0x2,  

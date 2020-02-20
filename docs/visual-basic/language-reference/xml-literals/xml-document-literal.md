@@ -1,5 +1,5 @@
 ---
-title: "XML Document Literal (Visual Basic)"
+title: "XML Document Literal"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.XmlLiteralDocument"
@@ -40,7 +40,7 @@ rootElement
  An XML document literal cannot appear in an XML element.  
   
 > [!NOTE]
->  An XML literal can span multiple lines without using line continuation characters. This enables you to copy content from an XML document and paste it directly into a Visual Basic program.  
+> An XML literal can span multiple lines without using line continuation characters. This enables you to copy content from an XML document and paste it directly into a Visual Basic program.  
   
  The Visual Basic compiler converts the XML document literal into calls to the <xref:System.Xml.Linq.XDocument.%23ctor%2A> and <xref:System.Xml.Linq.XDeclaration.%23ctor%2A> constructors.  
   

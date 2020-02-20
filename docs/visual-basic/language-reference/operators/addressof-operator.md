@@ -1,5 +1,5 @@
 ---
-title: "AddressOf Operator (Visual Basic)"
+title: "AddressOf Operator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "AddressOf"
@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: 8105a59d-60d8-4ab5-b221-5899cdfacbf4
 ---
 # AddressOf Operator (Visual Basic)
-Creates a procedure delegate instance that references the specific procedure.  
+Creates a delegate instance that references the specific procedure.  
   
 ## Syntax  
   
-```  
+```vb  
 AddressOf procedurename  
 ```  
   
 ## Parts  
  `procedurename`  
- Required. Specifies the procedure to be referenced by the newly created procedure delegate.  
+ Required. Specifies the procedure to be referenced by the newly created delegate.  
   
 ## Remarks  
- The `AddressOf` operator creates a function delegate that points to the function specified by `procedurename`. When the specified procedure is an instance method then the function delegate refers to both the instance and the method. Then, when the function delegate is invoked the specified method of the specified instance is called.  
+ The `AddressOf` operator creates a delegate that points to the sub or function specified by `procedurename`. When the specified procedure is an instance method then the delegate refers to both the instance and the method. Then, when the  delegate is invoked the specified method of the specified instance is called.  
   
  The `AddressOf` operator can be used as the operand of a delegate constructor or it can be used in a context in which the type of the delegate can be determined by the compiler.  
   

@@ -1,5 +1,5 @@
 ---
-title: "Stop Statement (Visual Basic)"
+title: "Stop Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Stop"
@@ -18,7 +18,7 @@ Suspends execution.
   
 ## Syntax  
   
-```  
+```vb  
 Stop  
 ```  
   
@@ -28,7 +28,7 @@ Stop
  The `Stop` statement suspends execution, but unlike `End`, it does not close any files or clear any variables, unless it is encountered in a compiled executable (.exe) file.  
   
 > [!NOTE]
->  If the `Stop` statement is encountered in code that is running outside of the integrated development environment (IDE), the debugger is invoked. This is true regardless of whether the code was compiled in debug or retail mode.  
+> If the `Stop` statement is encountered in code that is running outside of the integrated development environment (IDE), the debugger is invoked. This is true regardless of whether the code was compiled in debug or retail mode.  
   
 ## Example  
  This example uses the `Stop` statement to suspend execution for each iteration through the `For...Next` loop.  

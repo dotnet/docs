@@ -41,7 +41,7 @@ After a LINQ query is created by a user, it is converted to a command tree. A co
   
  Certain operations are always executed on the client, such as binding of values, sub expressions, sub queries from closures, and materialization of objects into query results. The net effect of this is that these elements (for example, parameter values) cannot be updated during the execution. Anonymous types can be constructed inline on the data source, but should not be assumed to do so. Inline groupings can be constructed in the data source, as well, but this should not be assumed in every instance. In general, it is best not to make any assumptions about what is constructed on the server.  
   
- This section describes the scenarios in which code is executed locally on the client. For more information about which types of expressions are executed locally, see [Expressions in LINQ to Entities Queries](../../../../../../docs/framework/data/adonet/ef/language-reference/expressions-in-linq-to-entities-queries.md).  
+ This section describes the scenarios in which code is executed locally on the client. For more information about which types of expressions are executed locally, see [Expressions in LINQ to Entities Queries](expressions-in-linq-to-entities-queries.md).  
   
 ### Literals and Parameters  
  Local variables, such as the `orderID` variable in the following example, are evaluated on the client.  

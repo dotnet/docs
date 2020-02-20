@@ -46,7 +46,7 @@ Queues ensure that reliable messaging can occur between a client and a Windows C
   
 1. The following example shows how to run the hosting application and use the Svcutil.exe tool to create the WCF client.  
   
-    ```  
+    ```console
     svcutil http://localhost:8000/ServiceModelSamples/service  
     ```  
   

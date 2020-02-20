@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: f64c325a-ed3a-4aaf-b847-a88edbc4fefc
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # COR_PRF_CLAUSE_TYPE Enumeration
 Indicates the type of exception clause that the code has just entered or left.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     COR_PRF_CLAUSE_NONE = 0,  
     COR_PRF_CLAUSE_FILTER = 1,  
@@ -51,4 +49,4 @@ typedef enum {
   
 ## See also
 
-- [Profiling Enumerations](../../../../docs/framework/unmanaged-api/profiling/profiling-enumerations.md)
+- [Profiling Enumerations](profiling-enumerations.md)

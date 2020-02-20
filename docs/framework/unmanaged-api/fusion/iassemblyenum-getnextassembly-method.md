@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 5d7a4ca2-5f46-4ef1-a9a2-257884e9dc11
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IAssemblyEnum::GetNextAssembly Method
-Gets a pointer to the next [IAssemblyName](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md) contained in this [IAssemblyEnum](../../../../docs/framework/unmanaged-api/fusion/iassemblyenum-interface.md) object.  
+Gets a pointer to the next [IAssemblyName](iassemblyname-interface.md) contained in this [IAssemblyEnum](iassemblyenum-interface.md) object.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNextAssembly (  
     [in]  LPVOID          pvReserved,  
     [out] IAssemblyName   **ppName,  
@@ -42,7 +40,7 @@ HRESULT GetNextAssembly (
  [in] Reserved for future extensibility. `dwFlags` must be 0 (zero).  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -50,5 +48,5 @@ HRESULT GetNextAssembly (
   
 ## See also
 
-- [IAssemblyName Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyname-interface.md)
-- [IAssemblyEnum Interface](../../../../docs/framework/unmanaged-api/fusion/iassemblyenum-interface.md)
+- [IAssemblyName Interface](iassemblyname-interface.md)
+- [IAssemblyEnum Interface](iassemblyenum-interface.md)

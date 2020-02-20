@@ -31,9 +31,9 @@ Specifies an assembly whose non-public types a .netmodule can access.
   
 - The existing assembly has granted friend assembly access to the assembly into which the .netmodule will be built.  
   
- For more information on building a .netmodule, see [-target:module (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-module-compiler-option.md).  
+ For more information on building a .netmodule, see [-target:module (C# Compiler Options)](./target-module-compiler-option.md).  
   
- For more information on friend assemblies, see [Friend Assemblies](../../../standard/assembly/friend-assemblies.md).  
+ For more information on friend assemblies, see [Friend Assemblies](../../../standard/assembly/friend.md).  
   
  This option is not available from within the development environment; it is only available when compiling from the command line.  
   
@@ -91,5 +91,5 @@ class A {
 
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [C# Compiler Options](./index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

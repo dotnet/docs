@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: f4984a8c-4c0e-4460-9aa1-d022b3621228
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IGCHostControl::RequestVirtualMemLimit Method
 Requests the host to change the limits of virtual memory.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT RequestVirtualMemLimit (  
     [in] SIZE_T       sztMaxVirtualMemMB,  
     [in, out] SIZE_T* psztNewMaxVirtualMemMB  

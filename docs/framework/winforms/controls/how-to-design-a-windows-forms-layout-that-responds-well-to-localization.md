@@ -1,5 +1,5 @@
 ---
-title: "How to: Design a Windows Forms Layout that Responds Well to Localization"
+title: Design a localization-friendly layout
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -23,6 +23,7 @@ Creating forms that are ready to be localized greatly speeds development for int
  [!code-vb[System.Windows.Forms.TableLayoutPanel.LocalizableForm#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.TableLayoutPanel.LocalizableForm/VB/localizableform.vb#1)]  
   
 ## Additional resources
+
 1. [How to: Align and Stretch a Control in a TableLayoutPanel Control](how-to-align-and-stretch-a-control-in-a-tablelayoutpanel-control.md)  
   
 2. [Walkthrough: Arranging Controls on Windows Forms Using a FlowLayoutPanel](walkthrough-arranging-controls-on-windows-forms-using-a-flowlayoutpanel.md)  

@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 51f848be-84c5-4036-9839-c762c576bbf5
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # HOST_TYPE Enumeration
 Contains values that specify the type of host that is launching an application.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     HOST_TYPE_DEFAULT     = 0x0,  
     HOST_TYPE_APPLAUNCH   = 0x1,  

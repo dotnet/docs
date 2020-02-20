@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: d8013659-e3df-44b3-814f-a6b534ce62f8
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRTask2::EndPreventAsyncAbort Method
 Allows new or pending thread abort requests to result in thread aborts on the current thread.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EndPreventAsyncAbort();  
 ```  
   

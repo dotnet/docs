@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 53441f3a-68d2-477c-906e-37c55dfcfb4d
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::EnumModuleRefs Method
 Enumerates ModuleRef tokens that represent imported modules.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumModuleRefs (  
    [in, out] HCORENUM     *phEnum,  
    [out]     mdModuleRef  rModuleRefs[],  

@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 0fe844e3-5b6f-4fe7-ad15-22459501738b
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Event Handling in an XML Document Using the XmlNodeChangedEventArgs
 The **XmlNodeChangedEventArgs** encapsulates the arguments passed to the event handlers registered on the **XmlDocument** object for handling events. The events and a description of when they are fired is given in the following table.  
@@ -22,7 +20,7 @@ The **XmlNodeChangedEventArgs** encapsulates the arguments passed to the event h
 |<xref:System.Xml.XmlDocument.NodeChanged>|When the value of a node has been changed.|  
   
 > [!NOTE]
->  If the **XmlDataDocument** memory usage is fully optimized to use **DataSet** storage, the **XmlDataDocument** might not raise any of the events listed above when changes are made to the underlying **DataSet**. If you need these events, you must traverse the whole **XmlDocument** once to make the memory usage non-fully optimized.  
+> If the **XmlDataDocument** memory usage is fully optimized to use **DataSet** storage, the **XmlDataDocument** might not raise any of the events listed above when changes are made to the underlying **DataSet**. If you need these events, you must traverse the whole **XmlDocument** once to make the memory usage non-fully optimized.  
   
  The following code example shows how to define an event handler and how to add the event handler to an event.  
   

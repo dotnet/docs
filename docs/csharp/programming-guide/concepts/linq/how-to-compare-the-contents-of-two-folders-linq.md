@@ -1,9 +1,9 @@
 ---
-title: "How to: Compare the Contents of Two Folders (LINQ) (C#)"
+title: "How to compare the contents of two folders (LINQ) (C#)"
 ms.date: 07/20/2015
 ms.assetid: c7c4870e-c500-4de3-afa4-2c8e07f510e6
 ---
-# How to: Compare the Contents of Two Folders (LINQ) (C#)
+# How to compare the contents of two folders (LINQ) (C#)
 This example demonstrates three ways to compare two file listings:  
   
 - By querying for a Boolean value that specifies whether the two file lists are identical.  
@@ -13,7 +13,7 @@ This example demonstrates three ways to compare two file listings:
 - By querying for the set difference to retrieve the files that are in one folder but not the other.  
   
     > [!NOTE]
-    >  The techniques shown here can be adapted to compare sequences of objects of any type.  
+    > The techniques shown here can be adapted to compare sequences of objects of any type.  
   
  The `FileComparer` class shown here demonstrates how to use a custom comparer class together with the Standard Query Operators. The class is not intended for use in real-world scenarios. It just uses the name and length in bytes of each file to determine whether the contents of each folder are identical or not. In a real-world scenario, you should modify this comparer to perform a more rigorous equality check.  
   
@@ -62,7 +62,7 @@ namespace QueryCompareTwoDirs
             // execute until the foreach statement.  
             var queryCommonFiles = list1.Intersect(list2, myFileCompare);  
   
-            if (queryCommonFiles.Count() > 0)  
+            if (queryCommonFiles.Any())  
             {  
                 Console.WriteLine("The following files are in both folders:");  
                 foreach (var v in queryCommonFiles)  
@@ -124,5 +124,5 @@ namespace QueryCompareTwoDirs
   
 ## See also
 
-- [LINQ to Objects (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-objects.md)
-- [LINQ and File Directories (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-file-directories.md)
+- [LINQ to Objects (C#)](./linq-to-objects.md)
+- [LINQ and File Directories (C#)](./linq-and-file-directories.md)

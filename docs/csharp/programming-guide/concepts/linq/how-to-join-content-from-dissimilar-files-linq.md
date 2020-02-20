@@ -1,9 +1,9 @@
 ---
-title: "How to: Join Content from Dissimilar Files (LINQ) (C#)"
+title: "How to join content from dissimilar files (LINQ) (C#)"
 ms.date: 06/27/2018
 ms.assetid: aa2d12a6-70a9-492f-a6db-b2b850d46811
 ---
-# How to: Join Content from Dissimilar Files (LINQ) (C#)
+# How to join content from dissimilar files (LINQ) (C#)
 
 This example shows how to join data from two comma-delimited files that share a common value that is used as a matching key. This technique can be useful if you have to combine data from two spreadsheets, or from a spreadsheet and from a file that has another format, into a new file. You can modify the example to work with any kind of structured text.  
   
@@ -11,7 +11,7 @@ This example shows how to join data from two comma-delimited files that share a 
   
 1. Copy the following lines into a file that is named *scores.csv* and save it to your project folder. The file represents spreadsheet data. Column 1 is the student's ID, and columns 2 through 5 are test scores.  
   
-    ```  
+    ```csv  
     111, 97, 92, 81, 60  
     112, 75, 84, 91, 39  
     113, 88, 94, 65, 91  
@@ -28,7 +28,7 @@ This example shows how to join data from two comma-delimited files that share a 
   
 2. Copy the following lines into a file that is named *names.csv* and save it to your project folder. The file represents a spreadsheet that contains the student's last name, first name, and student ID.  
   
-    ```  
+    ```csv  
     Omelchenko,Svetlana,111  
     O'Donnell,Claire,112  
     Mortensen,Sven,113  
@@ -120,5 +120,5 @@ Tucker, 94, 92, 91, 91
 
 ## See also
 
-- [LINQ and Strings (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-strings.md)
-- [LINQ and File Directories (C#)](../../../../csharp/programming-guide/concepts/linq/linq-and-file-directories.md)
+- [LINQ and Strings (C#)](./linq-and-strings.md)
+- [LINQ and File Directories (C#)](./linq-and-file-directories.md)

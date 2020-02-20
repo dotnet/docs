@@ -3,8 +3,6 @@ title: "Resolving External Resources"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: ad3fa320-4b8f-4e5c-b549-01157591007a
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Resolving External Resources
 The **XmlResolver** property of the **XmlDocument** is used by the **XmlDocument** class to locate resources that are not inline in the XML data, such as external document type definitions (DTDs), entities, and schemas. These items can be located on a network or on a local drive, and are identifiable by a Uniform Resource Identifier (URI). This allows the **XmlDocument** to resolve **EntityReference** nodes that are present in the document and validate the document according to the external DTD or schema.  
@@ -42,7 +40,7 @@ The **XmlResolver** property of the **XmlDocument** is used by the **XmlDocument
  Setting the XmlResolver to contain the correct credentials allows access to external resources.  
   
 > [!NOTE]
->  There is no way to retrieve the **XmlResolver** property. This helps to prevent a user from reusing an **XmlResolver** on which credentials have been set. Also, if an **XmlTextReader** or validating <xref:System.Xml.XmlReader> is used to load the **XmlDocument** and the **XmlDocument** has a resolver that has been set, the resolvers from these readers are not cached by the **XmlDocument** after the **Load** phase, since this also presents a security risk.  
+> There is no way to retrieve the **XmlResolver** property. This helps to prevent a user from reusing an **XmlResolver** on which credentials have been set. Also, if an **XmlTextReader** or validating <xref:System.Xml.XmlReader> is used to load the **XmlDocument** and the **XmlDocument** has a resolver that has been set, the resolvers from these readers are not cached by the **XmlDocument** after the **Load** phase, since this also presents a security risk.  
   
  For more information, see the Remarks section of the <xref:System.Xml.XmlResolver> reference page.  
   

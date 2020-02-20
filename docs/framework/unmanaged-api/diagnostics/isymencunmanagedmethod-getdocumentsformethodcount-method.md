@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: cc1a823a-3ff3-4a33-b641-96edc93d2b17
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymENCUnmanagedMethod::GetDocumentsForMethodCount Method
 Gets the number of documents that this method has lines in.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetDocumentsForMethodCount(  
     [out, retval] ULONG32* pRetVal);  
 ```  

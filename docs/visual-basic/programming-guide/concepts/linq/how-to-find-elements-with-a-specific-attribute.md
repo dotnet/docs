@@ -1,5 +1,5 @@
 ---
-title: "How to: Find Elements with a Specific Attribute (XPath-LINQ to XML) (Visual Basic)"
+title: "How to: Find Elements with a Specific Attribute (XPath-LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 4bb38d2c-bc7c-4196-8909-aaf41fb86b28
 ---
@@ -47,7 +47,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```console
 Results are identical  
 <Child2 Select="true">2</Child2>  
 <Child4 Select="true">4</Child4>  

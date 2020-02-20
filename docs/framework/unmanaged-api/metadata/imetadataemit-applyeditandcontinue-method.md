@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 35991289-f389-495d-8caa-a6384fb1d557
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::ApplyEditAndContinue Method
 Updates the current assembly scope with the changes made in the specified metadata.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ApplyEditAndContinue (   
     [in]  IUnknown    *pImport  
 );  

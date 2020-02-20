@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 2b1f1418-4be8-4cdb-b418-b3abccc527a7
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::EnumUserStrings Method
 Enumerates String tokens representing hard-coded strings in the current metadata scope.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumUserStrings (  
    [in, out]  HCORENUM    *phEnum,  
    [out]  mdString        rStrings[],  

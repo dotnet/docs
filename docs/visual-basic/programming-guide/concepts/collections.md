@@ -1,5 +1,5 @@
 ---
-title: "Collections (Visual Basic)"
+title: "Collections"
 ms.date: 07/20/2015
 ms.assetid: 5f7749f3-aaf2-4319-b63c-bfa72e1e2b7a
 ---

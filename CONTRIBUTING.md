@@ -2,30 +2,49 @@
 
 Thank you for your interest in contributing to the .NET documentation!
 
-> We're in the process of moving our guidelines into a site-wide contribution guide. 
+> We're in the process of moving our guidelines into a site-wide contribution guide.
 > To see the new guidance, visit [Microsoft Docs contributor guide overview](https://docs.microsoft.com/contribute/).
 
 The document covers the process for contributing to the articles and code samples that are hosted on the [.NET documentation site](https://docs.microsoft.com/dotnet). Contributions may be as simple as typo corrections or as complex as new articles.
 
-* [Process for contributing](#process-for-contributing)
-* [The C# interactive experience](#the-c-interactive-experience)
-* [DOs and DON'Ts](#dos-and-donts)
-* [Contributor License Agreement](#contributor-license-agreement)
+- [DOs and DON'Ts](#dos-and-donts)
+- [Process for contributing](#process-for-contributing)
+- [The C# interactive experience](#the-c-interactive-experience)
+- [Contributor License Agreement](#contributor-license-agreement)
 
 This repository contains the conceptual documentation for .NET. The .NET documentation site is built from multiple repositories in addition to this one:
 
 - [Code samples and snippets](https://github.com/dotnet/samples)
-- [API reference](https://github.com/dotnet/dotnet-api-docs)
+    Issues and tasks for this repository are tracked in [dotnet/docs/issues](https://github.com/dotnet/docs/issues).
+- [.NET API reference](https://github.com/dotnet/dotnet-api-docs)
+    Issues and tasks for this repository are tracked in [dotnet/dotnet-api-docs/issues](https://github.com/dotnet/dotnet-api-docs/issues).
 - [.NET Compiler Platform SDK reference](https://github.com/dotnet/roslyn-api-docs)
+    Issues and tasks for this repo are tracked in [dotnet/docs/issues](https://github.com/dotnet/docs/issues).
 
-Issues and tasks for all these repositories are tracked here.
+## DOs and DON'Ts
+
+The following list shows some guiding rules that you should keep in mind when you're contributing to the .NET documentation:
+
+- **DON'T** surprise us with large pull requests. Instead, file an issue and start a discussion so we can agree on a direction before you invest a large amount of time. For bulk changes, break the work into smaller PRs (up to 100 files). This guideline is strongly recommended if your PR doesn't follow the following guidelines.
+- **DO** look at the current [up for grabs](https://github.com/dotnet/docs/labels/up-for-grabs) issues for suggestions on tasks.
+- **DO** create one PR for each task. PRs that include multiple unrelated changes are much harder to review. That delays reviews and merging PRs. This guideline applies to reviews as well: we try not to suggest unrelated changes in reviews; we ask that community reviews adhere to this guideline.
+- **DO** provide a clear description of the work in your PR. Tell us what changed and why. The default description of "update article.md" isn't helpful for reviewers.
+- **DON'T** submit PRs for style-only changes without prior discussion. These PRs take extra time to review for accuracy, and merging them often causes merge conflicts with other important updates. We are working toward following a consistent style, but we are balancing that work with other tasks. Articles are brought into style conformance when we make major updates for other reasons.
+- **DO** read the [style guide](./styleguide/template.md) and [voice and tone](./styleguide/voice-tone.md) guidelines. New additions should follow these guidelines.
+- **DO** create a separate branch on your fork before working on the articles.
+- **DO** follow the [GitHub Flow workflow](https://guides.github.com/introduction/flow/).
+- **DO** blog and tweet (or whatever) about your contributions, frequently!
+
+These guidelines help us respect everyone's time. Many people contribute to these repositories. Following these guidelines make it easier for us to review and merge your PR in a timely fashion. These practices minimize conflicts with PRs from other community members and our team. Because PRs that don't follow these guidelines often cause extra work for us and community members, those PRs may be rejected. If you want an exception, start by creating an issue.
+
+> Note: you might notice that some of the topics are not currently following all the guidelines specified here and on the [style guide](./styleguide/template.md) as well. We're working towards achieving consistency throughout the site.
 
 ## Process for contributing
 
 You need a basic understanding of [Git and GitHub.com](https://guides.github.com/activities/hello-world/).
 
 **Step 1:** Skip this step for small changes (for example, if you're correcting a typo or immediately opening a pull request to address an issue that you find in the docs). If you're interested in writing new content or in thoroughly revising existing content, open an [issue](https://github.com/dotnet/docs/issues) describing what you want to do.
-The content inside the **docs** folder is organized into sections that are reflected in the Table of Contents (TOC). Define where the topic will be located in the TOC. Get feedback on your proposal.
+The content inside the *docs* folder is organized into sections that are reflected in the Table of Contents (TOC). Define where the topic will be located in the TOC. Get feedback on your proposal.
 
 -or-
 
@@ -33,16 +52,15 @@ You can also choose from existing issues for which community contributions are w
 
 - **Maintenance**. This category includes fairly simple contributions, such as fixing broken or incorrect links, adding missing code examples, or addressing limited content issues. In some cases, these issues may concern large numbers of files. In that case, you should let us know what you'd like to work on before you begin.
 
-- **Content updates**. Given the enormity of the doc set, content easily becomes outdated and requires revision. In addition, for a variety of reason, some content has been duplicated or even triplicated. Updating content involves making sure that individual topics are current or revising content in a feature area to eliminate duplication and ensure that all unique content is preserved in the smaller documentation set.
+- **Content updates**. Given the enormity of the doc set, content easily becomes outdated and requires revision. In addition, for a variety of reasons, some content has been duplicated or even triplicated. Updating content involves making sure that individual topics are current or revising content in a feature area to eliminate duplication and ensure that all unique content is preserved in the smaller documentation set.
 
-- **New content authoring**. If you're interested in authoring your own topic, these issues list topics that we know we'd like to add to our doc set. Let us know before you begin working on a topic, though. If you're interested in writing a topic that isn't listed here, open an issue. 
+- **New content authoring**. If you're interested in authoring your own topic, these issues list topics that we know we'd like to add to our doc set. Let us know before you begin working on a topic, though. If you're interested in writing a topic that isn't listed here, open an issue.
 
-You can also look at our [open issues](https://github.com/dotnet/docs/issues) list and volunteer to work on the ones you're interested in. We use the [up-for-grabs](https://github.com/dotnet/docs/labels/up-for-grabs) label to tag issues open for contribution. 
+You can also look at our [open issues](https://github.com/dotnet/docs/issues) list and volunteer to work on the ones you're interested in. We use the [up-for-grabs](https://github.com/dotnet/docs/labels/up-for-grabs) label to tag issues open for contribution.
 
 **Step 2:** Fork the `dotnet/docs`, `dotnet/samples` or `dotnet/dotnet-api-docs` repos as needed and create a branch for your changes.
 
-For small changes, you can use GitHub's web interface. Simply click the **Edit the file in your fork of this project** on the file you'd like to change. 
-GitHub creates the new branch for you when you submit the changes.
+For small changes, you can use GitHub's web interface. Simply click the **Edit the file in your fork of this project** on the file you'd like to change. GitHub creates the new branch for you when you submit the changes.
 
 **Step 3:** Make the changes on this new branch.
 
@@ -51,7 +69,7 @@ If it's a new topic, you can use this [template file](./styleguide/template.md) 
 Navigate to the folder that corresponds to the TOC location determined for your article in step 1.
 That folder contains the Markdown files for all articles in that section.
 If necessary, create a new folder to place the files for your content. The main article for that section is called *index.md*.
-For images and other static resources, create a subfolder called **media** inside the folder that contains your article, if it doesn't already exist. Inside the **media** folder, create a subfolder with the article name (except for the index file).
+For images and other static resources, create a subfolder called *media* inside the folder that contains your article, if it doesn't already exist. Inside the *media* folder, create a subfolder with the article name (except for the index file).
 Include larger samples in the *samples* folder under the root of the repo.
 
 Be sure to follow the proper Markdown syntax. For more information, see the [style guide](./styleguide/template.md).
@@ -69,9 +87,9 @@ docs
             portability_report.png
 ```
 
-**Step 4:** Submit a Pull Request (PR) from your branch to `dotnet/docs/master`.
+**Step 4:** Submit a Pull Request (PR) from your branch to `dotnet/docs/master`, `dotnet/dotnet-api-docs/master`, or `dotnet/samples/master`.
 
-Your PR should *always* target the master branch. You should *never* open a PR that targets the live branch.
+Your PR should *always* target the default branch of the repository (unless you're working on a release branch). For dotnet/docs, master branch is the default branch. For the localized repositories, live branch is the default one. You should *never* open a PR that targets the live branch on dotnet/docs.
 
 Each PR should usually address one issue at a time. The PR can modify one or multiple files. If you're addressing multiple fixes on different files, separate PRs are preferred.
 
@@ -103,10 +121,7 @@ In addition, all samples under the *core* and *standard* folders should build an
 
 We may expand these directories as the docs repository adds new content. For example, we will add Xamarin directories, like `xamarin-ios` and `xamarin-android` directories.
 
-Each complete sample that you create should contain a *readme.md* file. This file should
-contain a short description of the sample (one or two paragraphs). Your *readme.md*
-should tell readers what they will learn by exploring this sample. The *readme.md* file should also contain
-a link to the live document on the [.NET documentation site](https://docs.microsoft.com/dotnet/welcome).
+Each complete sample that you create should contain a *readme.md* file. This file should contain a short description of the sample (one or two paragraphs). Your *readme.md* should tell readers what they will learn by exploring this sample. The *readme.md* file should also contain a link to the live document on the [.NET documentation site](https://docs.microsoft.com/dotnet/welcome).
 To determine where a given file in the repository maps to that site, replace `/docs` in the repository path
 with `https://docs.microsoft.com/dotnet`.
 
@@ -116,12 +131,8 @@ For more information, see the [Samples Readme](https://github.com/dotnet/samples
 
 ## The C# interactive experience
 
-Short code samples in C# can use the `csharp-interactive` language tag to
-specify a C# sample that runs in the browser. (Inline code samples use the
-`csharp-interactive` tag, for snippets included from source, use the
-`code-csharp-interactive` tag.) These code samples
-display a code window and an output window in the article. The output window displays any output from
-executing the interactive code once the user has run the sample. 
+Short code samples in C# can use the `csharp-interactive` language tag to specify a C# sample that runs in the browser. (Inline code samples use the `csharp-interactive` tag, for snippets included from source, use the `code-csharp-interactive` tag.) These code samples display a code window and an output window in the article. The output window displays any output from
+executing the interactive code once the user has run the sample.
 
 The C# interactive experience changes how we work with samples. Visitors can run the sample
 to see the results. A number of factors help determine if the sample
@@ -134,23 +145,10 @@ or corresponding text should include information about the output.
 - When both the sample and the expected output is short, consider showing the output. It saves a bit of time.
 - Articles explaining how current culture or invariant culture affect output should explain the expected output. The interactive REPL (Read Evaluate Print Loop) runs on a Linux-based host. The default culture, and the invariant culture produce different output on different operating systems and machines. The article should explain the output in Windows, Linux, and Mac systems.
 
-### When to exclude expected output from the sample 
+### When to exclude expected output from the sample
 
 - Articles where the sample generates a larger output should not include that in comments. It obscures the code once the sample has been run.
 - Articles where the sample demonstrates a topic, but the output isn't integral to understanding it. For example, code that runs a LINQ query to explain query syntax and then display every item in the output collection.
-
-## DOs and DON'Ts
-
-The following list shows some guiding rules that you should keep in mind when you're contributing to the .NET documentation:
-
-- **DON'T** surprise us with large pull requests. Instead, file an issue and start a discussion so we can agree on a direction before you invest a large amount of time.
-- **DO** read the [style guide](./styleguide/template.md) and [voice and tone](./styleguide/voice-tone.md) guidelines.
-- **DO** use the [template](./styleguide/template.md) file as the starting point of your work.
-- **DO** create a separate branch on your fork before working on the articles.
-- **DO** follow the [GitHub Flow workflow](https://guides.github.com/introduction/flow/).
-- **DO** blog and tweet (or whatever) about your contributions, frequently!
-
-> Note: you might notice that some of the topics are not currently following all the guidelines specified here and on the [style guide](./styleguide/template.md) as well. We're working towards achieving consistency throughout the site. Check the list of [open issues](https://github.com/dotnet/docs/issues?q=is%3Aissue+is%3Aopen+label%3Aguidelines-adherence) we're currently tracking for that specific goal.
 
 ## Contributor License Agreement
 

@@ -19,7 +19,7 @@ The <xref:System.Drawing.Imaging.Metafile> class, which inherits from the <xref:
   
  The following illustration shows the metafile drawn at the specified location.  
   
- ![Image Position](./media/imageposition2.png "imageposition2")  
+ ![Screenshot showing image position.](./media/how-to-load-and-display-metafiles/metafile-drawn-specified-location.png "imageposition2")  
   
  [!code-csharp[System.Drawing.WorkingWithImages#41](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Drawing.WorkingWithImages/CS/Class1.cs#41)]
  [!code-vb[System.Drawing.WorkingWithImages#41](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Drawing.WorkingWithImages/VB/Class1.vb#41)]  

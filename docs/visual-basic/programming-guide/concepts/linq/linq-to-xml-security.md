@@ -1,5 +1,5 @@
 ---
-title: "LINQ to XML Security (Visual Basic)"
+title: "LINQ to XML Security"
 ms.date: 07/20/2015
 ms.assetid: d99b4af2-d447-4a3b-991b-6da0231a8637
 ---

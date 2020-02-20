@@ -1,1 +1,0 @@
-Open Packaging Conventions (OPC)

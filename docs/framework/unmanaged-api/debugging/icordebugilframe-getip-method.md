@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 18217ba1-1776-4297-a3b9-f77e64b0fead
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugILFrame::GetIP Method
 Gets the value of the instruction pointer and a bitwise combination value that describes how the value of the instruction pointer was obtained.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetIP (  
     [out] ULONG32               *pnOffset,   
     [out] CorDebugMappingResult *pMappingResult  

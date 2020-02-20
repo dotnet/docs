@@ -24,13 +24,13 @@ Listener or server sockets open a port on the network and then wait for a client
  The following example creates an <xref:System.Net.IPEndPoint> for a server by combining the first IP address returned by **Dns** for the host computer with a port number chosen from the registered port numbers range.  
   
 ```vb  
-Dim ipHostInfo As IPHostEntry = Dns.Resolve(Dns.GetHostName())  
+Dim ipHostInfo As IPHostEntry = Dns.GetHostEntry(Dns.GetHostName())  
 Dim ipAddress As IPAddress = ipHostInfo.AddressList(0)  
 Dim localEndPoint As New IPEndPoint(ipAddress, 11000)  
 ```  
   
 ```csharp  
-IPHostEntry ipHostInfo = Dns.Resolve(Dns.GetHostName());  
+IPHostEntry ipHostInfo = Dns.GetHostEntry(Dns.GetHostName());  
 IPAddress ipAddress = ipHostInfo.AddressList[0];  
 IPEndPoint localEndPoint = new IPEndPoint(ipAddress, 11000);  
 ```  
@@ -55,8 +55,8 @@ listener.Listen(100);
   
 ## See also
 
-- [Using a Synchronous Server Socket](../../../docs/framework/network-programming/using-a-synchronous-server-socket.md)
-- [Using an Asynchronous Server Socket](../../../docs/framework/network-programming/using-an-asynchronous-server-socket.md)
-- [Using Client Sockets](../../../docs/framework/network-programming/using-client-sockets.md)
-- [How to: Create a Socket](../../../docs/framework/network-programming/how-to-create-a-socket.md)
-- [Sockets](../../../docs/framework/network-programming/sockets.md)
+- [Using a Synchronous Server Socket](using-a-synchronous-server-socket.md)
+- [Using an Asynchronous Server Socket](using-an-asynchronous-server-socket.md)
+- [Using Client Sockets](using-client-sockets.md)
+- [How to: Create a Socket](how-to-create-a-socket.md)
+- [Sockets](sockets.md)

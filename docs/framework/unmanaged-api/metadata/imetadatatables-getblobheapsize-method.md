@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 6330a9ee-8cd5-4299-86f1-b4de2c701a0d
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataTables::GetBlobHeapSize Method
 Gets the size, in bytes, of the binary large object (BLOB) heap.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetBlobHeapSize (  
     [out] ULONG     *pcbBlobs  
 );   

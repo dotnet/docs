@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "calendars [.NET Framework], displaying dates"
   - "displaying date and time data"
 ms.assetid: ed324eff-4aff-4a76-b6c0-04e6c0d8f5a9
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Display Dates in Non-Gregorian Calendars
 The <xref:System.DateTime> and <xref:System.DateTimeOffset> types use the Gregorian calendar as their default calendar. This means that calling a date and time value's `ToString` method displays the string representation of that date and time in the Gregorian calendar, even if that date and time was created using another calendar. This is illustrated in the following example, which uses two different ways to create a date and time value with the Persian calendar, but still displays those date and time values in the Gregorian calendar when it calls the <xref:System.DateTime.ToString%2A> method. This example reflects two commonly used but incorrect techniques for displaying the date in a particular calendar.  
@@ -33,7 +31,7 @@ The <xref:System.DateTime> and <xref:System.DateTimeOffset> types use the Gregor
 4. Assign the calendar object to the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A> property of the <xref:System.Globalization.DateTimeFormatInfo> object returned by the <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=nameWithType> property.  
   
     > [!NOTE]
-    >  The <xref:System.Globalization.CultureInfo> class also has a <xref:System.Globalization.CultureInfo.Calendar%2A> property. However, it is read-only and constant; it does not change to reflect the new default calendar assigned to the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A?displayProperty=nameWithType> property.  
+    > The <xref:System.Globalization.CultureInfo> class also has a <xref:System.Globalization.CultureInfo.Calendar%2A> property. However, it is read-only and constant; it does not change to reflect the new default calendar assigned to the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A?displayProperty=nameWithType> property.  
   
 5. Call either the <xref:System.DateTime.ToString%2A> or the <xref:System.DateTime.ToString%2A> method, and pass it the <xref:System.Globalization.CultureInfo> object whose default calendar was modified in the previous step.  
   

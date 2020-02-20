@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: e86fcc72-388d-4009-ab21-8f9c3323e9a3
 topic_type:
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # ICorDebugVariableHome::GetArgumentIndex Method
@@ -43,7 +41,7 @@ The method returns the following values.
 |Value|Description|
 |-----------|-----------------|
 |`S_OK`|The method call returned a valid argument index.|
-|`E_FAIL`|The current [ICorDebugVariableHome](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-interface.md) instance represents a local variable.|
+|`E_FAIL`|The current [ICorDebugVariableHome](icordebugvariablehome-interface.md) instance represents a local variable.|
 
 ## Remarks
 
@@ -61,4 +59,4 @@ The argument index can be used to retrieve metadata for this argument.
 
 ## See also
 
-- [ICorDebugVariableHome Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-interface.md)
+- [ICorDebugVariableHome Interface](icordebugvariablehome-interface.md)

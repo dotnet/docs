@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 8d746e0a-d158-4983-88da-db0a0856bc0b
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedWriter::UsingNamespace Method
 Specifies that the given fully qualified namespace name is being used within the currently open lexical scope. The namespace will be used within all scopes that inherit from the currently open scope. Closing the current scope will also stop the use of the namespace.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT UsingNamespace(  
     [in] const WCHAR *fullName);  
 ```  

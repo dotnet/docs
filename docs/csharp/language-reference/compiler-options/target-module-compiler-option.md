@@ -21,9 +21,9 @@ This option causes the compiler to not generate an assembly manifest.
 ## Remarks  
  By default, the output file created by compiling with this option will have an extension of .netmodule.  
   
- A file that does not have an assembly manifest cannot be loaded by the .NET Framework common language runtime. However, such a file can be incorporated into the assembly manifest of an assembly by means of [-addmodule](../../../csharp/language-reference/compiler-options/addmodule-compiler-option.md).  
+ A file that does not have an assembly manifest cannot be loaded by the .NET Framework common language runtime. However, such a file can be incorporated into the assembly manifest of an assembly by means of [-addmodule](./addmodule-compiler-option.md).  
   
- If more than one module is created in a single compilation, [internal](../../../csharp/language-reference/keywords/internal.md) types in one module will be available to other modules in the compilation. When code in one module references `internal` types in another module, then both modules must be incorporated into an assembly manifest, by means of **-addmodule**.  
+ If more than one module is created in a single compilation, [internal](../keywords/internal.md) types in one module will be available to other modules in the compilation. When code in one module references `internal` types in another module, then both modules must be incorporated into an assembly manifest, by means of **-addmodule**.  
   
  Creating a module is not supported in the Visual Studio development environment.  
   
@@ -38,5 +38,5 @@ csc -target:module in.cs
   
 ## See also
 
-- [-target (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-compiler-option.md)
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [-target (C# Compiler Options)](./target-compiler-option.md)
+- [C# Compiler Options](./index.md)

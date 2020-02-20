@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: ed5b5b58-7db7-46b5-9e2c-278db7159cee
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IGCThreadControl::ThreadIsBlockingForSuspension Method
 Notifies the host that the thread that is making the call is about to block, perhaps for a garbage collection or other suspension.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ThreadIsBlockingForSuspension ( );  
 ```  
   

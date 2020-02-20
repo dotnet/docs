@@ -1,6 +1,5 @@
 ---
 title: "Knowing When to Use Override and New Keywords - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "override keyword [C#]"
@@ -9,7 +8,8 @@ helpviewer_keywords:
 ms.assetid: 323db184-b136-46fc-8839-007886e7e8b0
 ---
 # Knowing When to Use Override and New Keywords (C# Programming Guide)
-In C#, a method in a derived class can have the same name as a method in the base class. You can specify how the methods interact by using the [new](../../../csharp/language-reference/keywords/new.md) and [override](../../../csharp/language-reference/keywords/override.md) keywords. The `override` modifier *extends* the base class method, and the `new` modifier *hides* it. The difference is illustrated in the examples in this topic.  
+
+In C#, a method in a derived class can have the same name as a method in the base class. You can specify how the methods interact by using the [new](../../language-reference/keywords/new-modifier.md) and [override](../../language-reference/keywords/override.md) keywords. The `override` modifier *extends* the base class `virtual` method, and the `new` modifier *hides* an accessible base class method. The difference is illustrated in the examples in this topic.  
   
  In a console application, declare the following two classes, `BaseClass` and `DerivedClass`. `DerivedClass` inherits from `BaseClass`.  
   
@@ -108,7 +108,7 @@ public new void Method2()
 }  
 ```  
   
- Run the program again to verify that the output has not changed. Also verify that the warning no longer appears. By using `new`, you are asserting that you are aware that the member that it modifies hides a member that is inherited from the base class. For more information about name hiding through inheritance, see [new Modifier](../../../csharp/language-reference/keywords/new-modifier.md).  
+ Run the program again to verify that the output has not changed. Also verify that the warning no longer appears. By using `new`, you are asserting that you are aware that the member that it modifies hides a member that is inherited from the base class. For more information about name hiding through inheritance, see [new Modifier](../../language-reference/keywords/new-modifier.md).  
   
  To contrast this behavior to the effects of using `override`, add the following method to `DerivedClass`. The `override` modifier can be added before or after `public`.  
   
@@ -538,8 +538,8 @@ namespace OverrideAndNew2
   
 ## See also
 
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)
-- [Versioning with the Override and New Keywords](../../../csharp/programming-guide/classes-and-structs/versioning-with-the-override-and-new-keywords.md)
-- [base](../../../csharp/language-reference/keywords/base.md)
-- [abstract](../../../csharp/language-reference/keywords/abstract.md)
+- [C# Programming Guide](../index.md)
+- [Classes and Structs](./index.md)
+- [Versioning with the Override and New Keywords](./versioning-with-the-override-and-new-keywords.md)
+- [base](../../language-reference/keywords/base.md)
+- [abstract](../../language-reference/keywords/abstract.md)

@@ -31,7 +31,7 @@ The easiest way to use net.tcp:// port sharing in your Windows Communication Fou
      [!code-vb[c_ConfigurePortSharing#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_configureportsharing/vb/source.vb#3)]  
   
     > [!NOTE]
-    >  This example uses the default TCP port of 808 because the endpoint address URI does not specify a different port number. Because port sharing is explicitly enabled on the transport binding, this service can share port 808 with other services in other processes. If port sharing were not allowed and another application were already using port 808, this service would throw an <xref:System.ServiceModel.AddressAlreadyInUseException> when it was opened.  
+    > This example uses the default TCP port of 808 because the endpoint address URI does not specify a different port number. Because port sharing is explicitly enabled on the transport binding, this service can share port 808 with other services in other processes. If port sharing were not allowed and another application were already using port 808, this service would throw an <xref:System.ServiceModel.AddressAlreadyInUseException> when it was opened.  
   
 ### To enable net.tcp:// port sharing on a NetTcpBinding in configuration  
   

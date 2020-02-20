@@ -11,7 +11,7 @@ Called by PresentationHost.exe whenever a message is received unless E_NOTIMPL i
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT FilterInputMessage( [in] MSG* pMsg ) ;  
 ```  
   

@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "BlessIWbemServicesObject function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # BlessIWbemServicesObject function
 Indicates whether the user credentials permit access to a specified [IWbemServices](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemservices) object. 
@@ -24,7 +22,7 @@ Indicates whether the user credentials permit access to a specified [IWbemServic
 
 ## Syntax
 
-```
+```cpp
 HRESULT BlessIWbemServicesObject (
    [in] IUnknown* pIUnknown,
    [in] BSTR strUser, 
@@ -69,7 +67,7 @@ The following values returned by this function are defined in the *WinError.h* h
 
 ## Requirements
 
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
  **Header:** WMINet_Utils.idl
 

@@ -1,5 +1,5 @@
 ---
-title: "How to: Create a Document with Namespaces (LINQ to XML) (Visual Basic)"
+title: "How to: Create a Document with Namespaces (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: cc5b0d4d-360c-4ada-94fa-2d2916e989be
 ---
@@ -110,4 +110,4 @@ End Module
   
 ## See also
 
-- [Working with XML Namespaces (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/working-with-xml-namespaces.md)
+- [Namespaces Overview (LINQ to XML) (Visual Basic)](namespaces-overview-linq-to-xml.md)

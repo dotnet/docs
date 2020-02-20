@@ -7,10 +7,10 @@ ms.assetid: 9b8f6e0d-edab-4a7e-86e3-8c66bebc64bb
 This topic outlines the basic steps required to create and dynamically update the routing configuration. In this example, the initial routing configuration is obtained from the configuration file and routes all messages to the regularCalc calculator service; however, it is subsequently updated programmatically in order to change the destination endpoint the roundingCalc service.  
   
 > [!NOTE]
->  In many implementations, configuration will be fully dynamic and will not rely on a default configuration; however, there are some scenarios, such as the one in this topic, where it is desirable to have a default configuration state when the service starts.  
+> In many implementations, configuration will be fully dynamic and will not rely on a default configuration; however, there are some scenarios, such as the one in this topic, where it is desirable to have a default configuration state when the service starts.  
   
 > [!NOTE]
->  Dynamic updates occur only in memory, and do not result in the modification of configuration files.  
+> Dynamic updates occur only in memory, and do not result in the modification of configuration files.  
   
  Both regularCalc and roundingCalc support the same operations of add, subtract, multiply and divide; however, roundingCalc rounds all calculations to the nearest integer value before returning. A configuration file is used to configure the service to route all messages to the regularCalc service. After the Routing Service has been started, <xref:System.ServiceModel.Routing.RoutingExtension.ApplyConfiguration%2A> is used to reconfigure the service to route messages to the roundingCalc service.  
   
@@ -157,9 +157,10 @@ This topic outlines the basic steps required to create and dynamically update th
     > Since the method for providing a new RoutingConfiguration is contained in the RoutingExtension service extension, new RoutingConfiguration objects can be provided anywhere in the WCF extensibility model that has or can obtain a reference to the ServiceHost or ServiceExtensions (such as in another ServiceExtension).
   
 ## Example  
- Following is a complete listing of the console application used in this example.  
+
+The following is a complete listing of the console application used in this example:
   
-```  
+```csharp
 //-----------------------------------------------------------------  
 //  Copyright (c) Microsoft Corporation.  All Rights Reserved.  
 //-----------------------------------------------------------------  
@@ -235,7 +236,8 @@ namespace Microsoft.Samples.AdvancedFilters
 ```  
   
 ## Example  
- Following is a complete listing of the configuration file used in this example.  
+ 
+The following is a complete listing of the configuration file used in this example:
   
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -292,4 +294,4 @@ namespace Microsoft.Samples.AdvancedFilters
   
 ## See also
 
-- [Routing Services](../../../../docs/framework/wcf/samples/routing-services.md)
+- [Routing Services](../samples/routing-services.md)

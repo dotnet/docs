@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 689e7f28-20c1-4d5c-9baa-17441cd63a88
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugFrame::CreateStepper Method
 Gets a stepper that allows the debugger to perform stepping operations relative to this ICorDebugFrame.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateStepper (  
     [out] ICorDebugStepper   **ppStepper  
 );  

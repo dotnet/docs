@@ -8,19 +8,17 @@ helpviewer_keywords:
   - "stores, current user"
   - "removing stores"
 ms.assetid: b81202b8-d91d-4b23-9c53-4a112f74a44a
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Storeadm.exe (Isolated Storage Tool)
 The Isolated Storage tool lists or removes all existing stores for the current user.  
   
- This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).  
+ This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).  
   
  At the command prompt, type the following:  
   
 ## Syntax  
   
-```  
+```console  
 storeadm [/list][/machine][/remove][/roaming][/quiet]  
 ```  
   
@@ -50,12 +48,12 @@ storeadm [/list][/machine][/remove][/roaming][/quiet]
 - The machine store is common to all users on a machine and is stored under a common directory on that machine.  
   
     > [!NOTE]
-    >  The machine store is new in the .NET Framework version 2.0.  
+    > The machine store is new in the .NET Framework version 2.0.  
   
  Whether roaming is actually enabled for the user does not affect the administration of Storeadm.exe. Running the tool without any options applies all actions to the local store. Running the tool with the **/roaming** option applies all actions to the store that is able to roam. Running the tool with the **/machine** option applies all actions to the machine store.  
   
 ## See also
 
-- [Tools](../../../docs/framework/tools/index.md)
-- [Isolated Storage](../../../docs/standard/io/isolated-storage.md)
-- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [Tools](index.md)
+- [Isolated Storage](../../standard/io/isolated-storage.md)
+- [Command Prompts](developer-command-prompt-for-vs.md)

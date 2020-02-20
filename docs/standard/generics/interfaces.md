@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "generics [.NET Framework], interfaces"
   - "ordering comparisons [.NET Framework]"
 ms.assetid: 88bf5b04-d371-4edb-ba38-01ec7cabaacf
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Generic Interfaces
 This topic provides an overview of generic interfaces that provide common functionality across families of generic types.  
@@ -18,7 +16,7 @@ This topic provides an overview of generic interfaces that provide common functi
  Generic interfaces provide type-safe counterparts to nongeneric interfaces for ordering and equality comparisons and for functionality that is shared by generic collection types.  
   
 > [!NOTE]
->  Starting with the .NET Framework 4, the type parameters of several generic interfaces are marked covariant or contravariant, providing greater flexibility in assigning and using types that implement these interfaces. See [Covariance and Contravariance](../../../docs/standard/generics/covariance-and-contravariance.md).  
+> Starting with the .NET Framework 4, the type parameters of several generic interfaces are marked covariant or contravariant, providing greater flexibility in assigning and using types that implement these interfaces. See [Covariance and Contravariance](../../../docs/standard/generics/covariance-and-contravariance.md).  
   
 ### Equality and Ordering Comparisons  
  In the <xref:System> namespace, the <xref:System.IComparable%601?displayProperty=nameWithType> and <xref:System.IEquatable%601?displayProperty=nameWithType> generic interfaces, like their nongeneric counterparts, define methods for ordering comparisons and equality comparisons, respectively. Types implement these interfaces to provide the ability to perform such comparisons.  

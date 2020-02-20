@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: a2267d39-69d1-4de1-bf37-f752cafacc71
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICeeGen::GetStringSection Method
 Gets a string representation of the code section referenced by the specified handle.  
@@ -25,7 +23,7 @@ Gets a string representation of the code section referenced by the specified han
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetStringSection (  
     [in, out] HCEESECTION     *section  
 );  

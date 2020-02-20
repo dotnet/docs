@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e5ceed11-0f54-4097-8302-883284dddbc1
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataValidate::ValidateMetaData Method
 Validates the metadata signatures of the objects in the current metadata scope.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ValidateMetaData ();  
 ```  
   

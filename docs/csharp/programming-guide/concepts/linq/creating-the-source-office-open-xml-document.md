@@ -19,7 +19,7 @@ To create the document that this tutorial uses, you must either have Microsoft O
 
 2. Paste the following text into the new document:
 
-    ```
+    ```text
     Parsing WordprocessingML with LINQ to XML
 
     The following example prints to the console.

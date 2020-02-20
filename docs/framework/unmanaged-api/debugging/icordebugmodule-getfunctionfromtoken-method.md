@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 6fe12194-4ef7-43c1-9570-ade35ccf127a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugModule::GetFunctionFromToken Method
 Gets the function that is specified by the metadata token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFunctionFromToken(  
     [in] mdMethodDef methodDef,  
     [out] ICorDebugFunction **ppFunction  

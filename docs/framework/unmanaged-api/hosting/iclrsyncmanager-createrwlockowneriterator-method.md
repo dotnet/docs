@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: b5535b87-9439-424e-b9b3-7d6fafb9819e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRSyncManager::CreateRWLockOwnerIterator Method
 Requests that the common language runtime (CLR) create an iterator for the host to use to determine the set of tasks waiting on a reader-writer lock.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CreateRWLockOwnerIterator (  
     [in]  SIZE_T    cookie,  
     [out] SIZE_T   *pIterator  
@@ -57,7 +55,7 @@ HRESULT CreateRWLockOwnerIterator (
 - The host can block the exit from waiting on the event object associated with the reader-writer lock, again ensuring that this block does not cause deadlock.  
   
 > [!NOTE]
->  `CreateRWLockOwnerIterator` must be called only on threads that are currently executing unmanaged code.  
+> `CreateRWLockOwnerIterator` must be called only on threads that are currently executing unmanaged code.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

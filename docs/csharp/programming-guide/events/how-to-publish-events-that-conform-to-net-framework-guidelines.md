@@ -1,12 +1,11 @@
 ---
-title: "How to: Publish Events that Conform to .NET Framework Guidelines - C# Programming Guide"
-ms.custom: seodec18
+title: "How to publish events that conform to .NET Framework Guidelines - C# Programming Guide"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "events [C#], implementation guidelines"
 ms.assetid: 9310ae16-8627-44a2-b08c-05e5976202b1
 ---
-# How to: Publish Events that Conform to .NET Framework Guidelines (C# Programming Guide)
+# How to publish events that conform to .NET Framework Guidelines (C# Programming Guide)
 The following procedure demonstrates how to add events that follow the standard .NET Framework pattern to your classes and structs. All events in the .NET Framework class library are based on the <xref:System.EventHandler> delegate, which is defined as follows:  
   
 ```csharp  
@@ -14,7 +13,7 @@ public delegate void EventHandler(object sender, EventArgs e);
 ```  
   
 > [!NOTE]
->  The [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] introduces a generic version of this delegate, <xref:System.EventHandler%601>. The following examples show how to use both versions.  
+> The .NET Framework 2.0 introduces a generic version of this delegate, <xref:System.EventHandler%601>. The following examples show how to use both versions.  
   
  Although events in classes that you define can be based on any valid delegate type, even delegates that return a value, it is generally recommended that you base your events on the .NET Framework pattern by using <xref:System.EventHandler>, as shown in the following example.  
   
@@ -71,6 +70,6 @@ public delegate void EventHandler(object sender, EventArgs e);
 ## See also
 
 - <xref:System.Delegate>
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
-- [Events](../../../csharp/programming-guide/events/index.md)
-- [Delegates](../../../csharp/programming-guide/delegates/index.md)
+- [C# Programming Guide](../index.md)
+- [Events](./index.md)
+- [Delegates](../delegates/index.md)

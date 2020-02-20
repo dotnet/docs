@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: bfdc946b-8238-4eb9-8a85-884049fb0fd4
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugFrame::GetCaller Method
 Gets a pointer to the ICorDebugFrame object in the current chain that called this frame.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCaller (  
     [out] ICorDebugFrame     **ppFrame  
 );  

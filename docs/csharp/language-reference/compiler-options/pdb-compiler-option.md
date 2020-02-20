@@ -23,7 +23,7 @@ The **-pdb** compiler option specifies the name and location of the debug symbol
  The name and location of the debug symbols file.  
   
 ## Remarks  
- When you specify [-debug (C# Compiler Options)](../../../csharp/language-reference/compiler-options/debug-compiler-option.md), the compiler will create a .pdb file in the same directory where the compiler will create the output file (.exe or .dll) with a file name that is the same as the name of the output file.  
+ When you specify [-debug (C# Compiler Options)](./debug-compiler-option.md), the compiler will create a .pdb file in the same directory where the compiler will create the output file (.exe or .dll) with a file name that is the same as the name of the output file.  
   
  **-pdb** allows you to specify a non-default file name and location for the .pdb file.  
   
@@ -38,5 +38,5 @@ csc -debug -pdb:tt t.cs
   
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [C# Compiler Options](./index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

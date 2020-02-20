@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 52c543ab-9ef5-4ee7-b836-c0ffc35cd45b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRRuntimeInfo::LoadErrorString Method
 Translates an HRESULT value into an appropriate error message for the specified culture.  
@@ -29,7 +27,7 @@ Translates an HRESULT value into an appropriate error message for the specified 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT LoadErrorString(  
      [in] UINT iResourceID,  
      [out, size_is(*pcchBuffer)] LPWSTR pwzBuffer,  

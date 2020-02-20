@@ -1,11 +1,11 @@
 ---
-title: "How to: Catch a non-CLS Exception"
+title: "How to catch a non-CLS exception"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "exceptions [C#], non-CLS"
 ms.assetid: db4630b3-5240-471a-b3a7-c7ff6ab31e8d
 ---
-# How to: Catch a non-CLS Exception
+# How to catch a non-CLS exception
 Some .NET languages, including C++/CLI, allow objects to throw exceptions that do not derive from <xref:System.Exception>. Such exceptions are called *non-CLS exceptions* or *non-Exceptions*. In C# you cannot throw non-CLS exceptions, but you can catch them in two ways:  
   
 - Within a `catch (RuntimeWrappedException e)` block.
@@ -46,4 +46,4 @@ catch (RuntimeWrappedException e)
 ## See also
 
 - <xref:System.Runtime.CompilerServices.RuntimeWrappedException>
-- [Exceptions and Exception Handling](../../../csharp/programming-guide/exceptions/index.md)
+- [Exceptions and Exception Handling](./index.md)

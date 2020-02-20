@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: d28eeea4-c4e0-40d4-91de-198d98cfa13c
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IBindingDisplay::GetCurrentDisplay Method
 Returns the current binding display information.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCurrentDisplay (  
     [out, retval] SAFEARRAY(struct BindingDisplayTabControl) *display  
 );  

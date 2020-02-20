@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: fc994fef-65c9-432a-84cb-66c8141147e7
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo::GetThreadInfo Method
 Gets the current Win32 thread identity for the specified thread.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThreadInfo(  
     [in]  ThreadID threadId,  
     [out] DWORD    *pdwWin32ThreadId);  
@@ -47,4 +45,4 @@ HRESULT GetThreadInfo(
   
 ## See also
 
-- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+- [ICorProfilerInfo Interface](icorprofilerinfo-interface.md)

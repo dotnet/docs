@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 00be4789-ac63-4397-b2ec-1629a5c5a585
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataAssemblyImport::GetManifestResourceProps Method
 Gets the set of properties of the manifest resource with the specified metadata signature.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetManifestResourceProps (  
     [in]  mdManifestResource   mdmr,   
     [out] LPWSTR               szName,   

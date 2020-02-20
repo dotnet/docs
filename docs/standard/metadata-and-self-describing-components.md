@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "PE files, metadata"
   - "components [.NET Framework], metadata"
 ms.assetid: 3dd13c5d-a508-455b-8dce-0a852882a5a7
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Metadata and Self-Describing Components
 
@@ -78,9 +76,7 @@ Each row of each metadata table is uniquely identified in the MSIL portion of th
 
 A metadata token is a four-byte number. The top byte denotes the metadata table to which a particular token refers (method, type, and so on). The remaining three bytes specify the row in the metadata table that corresponds to the programming element being described. If you define a method in C# and compile it into a PE file, the following metadata token might exist in the MSIL portion of the PE file:
 
-```
-0x06000004
-```
+`0x06000004`
 
 The top byte (`0x06`) indicates that this is a **MethodDef** token. The lower three bytes (`000004`) tells the common language runtime to look in the fourth row of the **MethodDef** table for the information that describes this method definition.
 
@@ -134,7 +130,7 @@ When the code runs, the runtime loads the module into memory and consults the me
 
 The following example shows part of the MSIL produced from the previous code's `Main` function. You can view the MSIL and metadata from any .NET Framework application using the [MSIL Disassembler (Ildasm.exe)](../../docs/framework/tools/ildasm-exe-il-disassembler.md).
 
-```
+```console
 .entrypoint
 .maxstack  3
 .locals ([0] int32 ValueOne,

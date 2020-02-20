@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "dataflow blocks, canceling in TPL"
   - "TPL dataflow library,canceling dataflow blocks"
 ms.assetid: fbddda0d-da3b-4ec8-a1d6-67ab8573fcd7
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Cancel a Dataflow Block
 This document demonstrates how to enable cancellation in your application. This example uses Windows Forms to show where work items are active in a dataflow pipeline and also the effects of cancellation.  

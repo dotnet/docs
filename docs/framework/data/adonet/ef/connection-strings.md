@@ -8,7 +8,7 @@ ms.assetid: 78d516bc-c99f-4865-8ff1-d856bc1a01c0
 
 A connection string contains initialization information that is passed as a parameter from a data provider to a data source. The syntax depends on the data provider, and the connection string is parsed during the attempt to open a connection. Connection strings used by the Entity Framework contain information used to connect to the underlying ADO.NET data provider that supports the Entity Framework. They also contain information about the required model and mapping files.
 
-The connection string is used by the EntityClient provider when accessing model and mapping metadata and connecting to the data source. The connection string can be accessed or set through the <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A> property of <xref:System.Data.EntityClient.EntityConnection>. The <xref:System.Data.EntityClient.EntityConnectionStringBuilder> class can be used to programmatically construct or access parameters in the connection string. For more information, see [How to: Build an EntityConnection Connection String](../../../../../docs/framework/data/adonet/ef/how-to-build-an-entityconnection-connection-string.md).
+The connection string is used by the EntityClient provider when accessing model and mapping metadata and connecting to the data source. The connection string can be accessed or set through the <xref:System.Data.EntityClient.EntityConnection.ConnectionString%2A> property of <xref:System.Data.EntityClient.EntityConnection>. The <xref:System.Data.EntityClient.EntityConnectionStringBuilder> class can be used to programmatically construct or access parameters in the connection string. For more information, see [How to: Build an EntityConnection Connection String](how-to-build-an-entityconnection-connection-string.md).
 
 The [Entity Data Model tools](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb399249(v=vs.100)) generate a connection string that is stored in the application's configuration file. <xref:System.Data.Objects.ObjectContext> retrieves this connection information automatically when creating object queries. The <xref:System.Data.EntityClient.EntityConnection> used by an <xref:System.Data.Objects.ObjectContext> instance can be accessed from the <xref:System.Data.Objects.ObjectContext.Connection%2A> property. For more information, see [Managing Connections and Transactions](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896325(v=vs.100)).
 
@@ -23,7 +23,7 @@ The following table lists the valid names for keyword values in the <xref:System
 |Keyword|Description|
 |-------------|-----------------|
 |`Provider`|Required if the `Name` keyword is not specified. The provider name, which is used to retrieve the <xref:System.Data.Common.DbProviderFactory> object for the underlying provider. This value is constant.<br /><br /> When the `Name` keyword is not included in an entity connection string, a non-empty value for the `Provider` keyword is required. This keyword is mutually exclusive with the `Name` keyword.|
-|`Provider Connection String`|Optional. Specifies the provider-specific connection string that is passed to the underlying data source. This connection string contains valid keyword/value pairs for the data provider. An invalid `Provider Connection String` will cause a run-time error when it is evaluated by the data source.<br /><br /> This keyword is mutually exclusive with the `Name` keyword.<br /><br /> Make sure to escape the value according to the general syntax of [ADO.NET connection strings](../../../../../docs/framework/data/adonet/connection-strings.md). Consider for example the following connection string: `Server=serverName; User ID = userID`. It must be escaped because it contains a semicolon. Since it does not contain double quotation marks, they may be used for escaping:<br /><br /> `Provider Connection String ="Server=serverName; User ID = userID";`|
+|`Provider Connection String`|Optional. Specifies the provider-specific connection string that is passed to the underlying data source. This connection string contains valid keyword/value pairs for the data provider. An invalid `Provider Connection String` will cause a run-time error when it is evaluated by the data source.<br /><br /> This keyword is mutually exclusive with the `Name` keyword.<br /><br /> Make sure to escape the value according to the general syntax of [ADO.NET connection strings](../connection-strings.md). Consider for example the following connection string: `Server=serverName; User ID = userID`. It must be escaped because it contains a semicolon. Since it does not contain double quotation marks, they may be used for escaping:<br /><br /> `Provider Connection String ="Server=serverName; User ID = userID";`|
 |`Metadata`|Required if the `Name` keyword is not specified. A pipe-delimited list of directories, files, and resource locations in which to look for metadata and mapping information. The following is an example:<br /><br /> `Metadata=`<br /><br /> `c:\model &#124; c:\model\sql\mapping.msl;`<br /><br /> Blank spaces on each side of the pipe separator are ignored.<br /><br /> This keyword is mutually exclusive with the `Name` keyword.|
 |`Name`|The application can optionally specify the connection name in an application configuration file that provides the required keyword/value connection string values. In this case, you cannot supply them directly in the connection string. The `Name` keyword is not allowed in a configuration file.<br /><br /> When the `Name` keyword is not included in the connection string, a non-empty values for Provider keyword is required.<br /><br /> This keyword is mutually exclusive with all the other connection string keywords.|
 
@@ -35,9 +35,7 @@ The `Metadata` parameter contains a list of locations for the `EntityClient` pro
 
 Embedded resources are specified as follows:
 
-```
-Metadata=res://<assemblyFullName>/<resourceName>.
-```
+`Metadata=res://<assemblyFullName>/<resourceName>`
 
 The following options are available for defining the location of an embedded resource:
 
@@ -51,19 +49,19 @@ The following options are available for defining the location of an embedded res
 
 The following example loads all the model and mapping files in the calling assembly, referenced assemblies, and other assemblies in the bin directory of an application.
 
-```
+```csharp
 Metadata=res://*/
 ```
 
 The following example loads the model.csdl file from the AdventureWorks assembly, and loads the model.ssdl and model.msl files from the default directory of the running application.
 
-```
+```csharp
 Metadata=res://AdventureWorks, 1.0.0.0, neutral, a14f3033def15840/model.csdl|model.ssdl|model.msl
 ```
 
 The following example loads the three specified resources from the specific assembly.
 
-```
+```csharp
 Metadata=res://AdventureWorks, 1.0.0.0, neutral, a14f3033def15840/model.csdl|
 res://AdventureWorks, 1.0.0.0, neutral, a14f3033def15840/model.ssdl|
 res://AdventureWorks, 1.0.0.0, neutral, a14f3033def15840/model.msl
@@ -71,19 +69,19 @@ res://AdventureWorks, 1.0.0.0, neutral, a14f3033def15840/model.msl
 
 The following example loads all the embedded resources with the extensions .csdl, .msl, and .ssdl from the assembly.
 
-```
+```csharp
 Metadata=res://AdventureWorks, 1.0.0.0, neutral, a14f3033def15840/
 ```
 
 The following example loads all the resources in the relative file path plus "datadir\metadata\\" from the loaded assembly location.
 
-```
+```csharp
 Metadata=datadir\metadata\
 ```
 
 The following example loads all the resources in the relative file path from the loaded assembly location.
 
-```
+```csharp
 Metadata=.\
 ```
 
@@ -106,7 +104,7 @@ The resolution of the `DataDirectory` substitution string and the ~ operator is 
 
 ## See also
 
-- [Working with Data Providers](../../../../../docs/framework/data/adonet/ef/working-with-data-providers.md)
-- [Deployment Considerations](../../../../../docs/framework/data/adonet/ef/deployment-considerations.md)
+- [Working with Data Providers](working-with-data-providers.md)
+- [Deployment Considerations](deployment-considerations.md)
 - [Managing Connections and Transactions](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb896325(v=vs.100))
-- [Connection Strings](../../../../../docs/framework/data/adonet/connection-strings.md)
+- [Connection Strings](../connection-strings.md)

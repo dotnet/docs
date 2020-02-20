@@ -10,10 +10,10 @@ ms.assetid: 185d7aea-68a6-4bd8-adde-45050f33170a
 Workflows can be constructed from built-in activities as well as from custom activities. This topic steps through creating a workflow that uses both built-in activities such as the <xref:System.Activities.Statements.Flowchart> activity, and the custom activities from the previous [How to: Create an Activity](how-to-create-an-activity.md) topic. The workflow models a number guessing game.  
   
 > [!NOTE]
->  Each topic in the Getting Started tutorial depends on the previous topics. To complete this topic, you must first complete [How to: Create an Activity](how-to-create-an-activity.md).  
+> Each topic in the Getting Started tutorial depends on the previous topics. To complete this topic, you must first complete [How to: Create an Activity](how-to-create-an-activity.md).  
   
 > [!NOTE]
->  To download a completed version of the tutorial, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).  
+> To download a completed version of the tutorial, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).  
   
 ### To create the workflow  
   
@@ -46,7 +46,7 @@ Workflows can be constructed from built-in activities as well as from custom act
 9. Click **Create Variable**.  
   
     > [!TIP]
-    >  If no **Create Variable** box is displayed, click the <xref:System.Activities.Statements.Flowchart> activity on the workflow designer surface to select it.  
+    > If no **Create Variable** box is displayed, click the <xref:System.Activities.Statements.Flowchart> activity on the workflow designer surface to select it.  
   
 10. Type `Guess` into the **Name** box, select **Int32** from the **Variable type** drop-down list, and then press ENTER to save the variable.  
   
@@ -61,7 +61,7 @@ Workflows can be constructed from built-in activities as well as from custom act
 1. Drag an **Assign** activity from the **Primitives** section of the **Toolbox** and hover it over the **Start** node, which is at the top of the flowchart. When the **Assign** activity is over the **Start** node, three triangles will appear around the **Start** node. Drop the **Assign** activity on the triangle that is directly below the **Start** node. This will link the two items together and designates the **Assign** activity as the first activity in the flowchart.  
   
     > [!NOTE]
-    >  Activities can also be indicated as the starting activity in the workflow by manually linking them activity to the start node. To do this, hover the mouse over the **Start** node, click one of the rectangles that appear when the mouse is over the **Start** node, and drag the connecting line down to the desired activity and drop it on one of the rectangles that appear. You can also designate an activity as the starting activity by right-clicking the it and choosing **Set as Start Node**.  
+    > Activities can also be indicated as the starting activity in the workflow by manually linking them activity to the start node. To do this, hover the mouse over the **Start** node, click one of the rectangles that appear when the mouse is over the **Start** node, and drag the connecting line down to the desired activity and drop it on one of the rectangles that appear. You can also designate an activity as the starting activity by right-clicking the it and choosing **Set as Start Node**.  
   
 2. Type `Target` into the **To** box and the following expression into the **Enter a C# Expression** or **Enter a VB expression** box.  
   
@@ -74,7 +74,7 @@ Workflows can be constructed from built-in activities as well as from custom act
     ```  
   
     > [!TIP]
-    >  If the **Toolbox** window is not displayed, select **Toolbox** from the **View** menu.  
+    > If the **Toolbox** window is not displayed, select **Toolbox** from the **View** menu.  
   
 3. Drag a **Prompt** activity from the **NumberGuessWorkflowActivities** section of the **Toolbox**, drop it below the **Assign** activity from the previous step, and connect the **Prompt** activity to the **Assign** activity. There are three ways to connect the two activities. The first way is to connect them as you drop the **Prompt** activity on the workflow. As you are dragging the **Prompt** activity to the workflow, hover it over the **Assign** activity and drop it onto one of the four triangles that appear when the **Prompt** activity is over the **Assign** activity. The second way is to drop the **Prompt** activity onto the workflow at the desired location. Then, hover the mouse over the **Assign** activity and drag one of the rectangles that appears down to the **Prompt** activity. Drag the mouse so that the connecting line from the **Assign** activity connects to one of the rectangles of the **Prompt** activity, and then release the mouse button. The third way is very similar to the first way, except that instead of dragging the **Prompt** activity from the **Toolbox**, you drag it from its location on the workflow design surface, hover it over the **Assign** activity, and drop it onto one of the triangles that appears.  
   
@@ -89,7 +89,7 @@ Workflows can be constructed from built-in activities as well as from custom act
     ```  
   
     > [!TIP]
-    >  If the **Properties Window** is not displayed, select **Properties Window** from the **View** menu.  
+    > If the **Properties Window** is not displayed, select **Properties Window** from the **View** menu.  
   
 5. Drag an **Assign** activity from the **Primitives** section of the **Toolbox** and connect it using one of the methods described in the previous step so that it is below the **Prompt** activity.  
   
@@ -108,19 +108,19 @@ Workflows can be constructed from built-in activities as well as from custom act
 8. Drag another **FlowDecision** activity from the **Toolbox** and drop it below the first one. Connect the two activities by dragging from the rectangle that is labeled **False** on the top **FlowDecision** activity to the rectangle at the top of the second **FlowDecision** activity.  
   
     > [!TIP]
-    >  If you do not see the **True** and **False** labels on the **FlowDecision**, hover the mouse over the **FlowDecision**.  
+    > If you do not see the **True** and **False** labels on the **FlowDecision**, hover the mouse over the **FlowDecision**.  
   
 9. Click the second **FlowDecision** activity to select it. In the **Properties Window**, type the following expression into the **Condition** property value box.  
   
-    ```
-    Guess < Target  
+    ```text
+    Guess < Target
     ```  
   
 10. Drag two **WriteLine** activities from the **Primitives** section of the **Toolbox** and drop them so that they are side by side below the two **FlowDecision** activities. Connect the **True** action of the bottom **FlowDecision** activity to the leftmost **WriteLine** activity, and the **False** action to the rightmost **WriteLine** activity.  
   
 11. Click the leftmost **WriteLine** activity to select it, and type the following expression into the **Text** property value box in the **Properties Window**.  
   
-    ```
+    ```text
     "Your guess is too low."  
     ```  
   
@@ -128,7 +128,7 @@ Workflows can be constructed from built-in activities as well as from custom act
   
 13. Click the rightmost **WriteLine** activity to select it, and type the following expression into the **Text** property value box in the **Properties Window**.  
   
-    ```
+    ```text
     "Your guess is too high."  
     ```  
   

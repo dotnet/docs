@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 96b74995-0cde-4876-b6df-7fc164e6a5d1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorRuntimeHost::EnumDomains Method
 Gets an enumerator for the domains in the current process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumDomains (  
     [out] HCORENUM *hEnum  
 );  

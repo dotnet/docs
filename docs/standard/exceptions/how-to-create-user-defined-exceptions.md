@@ -11,14 +11,12 @@ helpviewer_keywords:
   - "exceptions, examples"
   - "exceptions, user-defined"
 ms.assetid: 25819a5a-f915-4fc8-b924-a76915674e04
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to create user-defined exceptions
 
 .NET provides a hierarchy of exception classes ultimately derived from the base class <xref:System.Exception>. However, if none of the predefined exceptions meets your needs, you can create your own exception classes by deriving from the <xref:System.Exception> class.
 
-When creating your own exceptions, end the class name of the user-defined exception with the word "Exception," and implement the three common constructors, as shown in the following example. The example defines a new exception class named `EmployeeListNotFoundException`. The class is derived from <xref:System.Exception> and includes three constructors.
+When creating your own exceptions, end the class name of the user-defined exception with the word "Exception", and implement the three common constructors, as shown in the following example. The example defines a new exception class named `EmployeeListNotFoundException`. The class is derived from <xref:System.Exception> and includes three constructors.
 
 [!code-cpp[dg_exceptionDesign#14](../../../samples/snippets/cpp/VS_Snippets_CLR/dg_exceptionDesign/cpp/example2.cpp#14)]
 [!code-csharp[dg_exceptionDesign#14](../../../samples/snippets/csharp/VS_Snippets_CLR/dg_exceptionDesign/cs/example2.cs#14)]

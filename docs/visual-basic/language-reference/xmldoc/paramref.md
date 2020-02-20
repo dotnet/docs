@@ -1,5 +1,5 @@
 ---
-title: "<paramref> (Visual Basic)"
+title: "<paramref>"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "paramref XML tag"
@@ -22,7 +22,7 @@ Formats a word as a parameter.
 ## Remarks  
  The `<paramref>` tag gives you a way to indicate that a word is a parameter. The XML file can be processed to format this parameter in some distinct way.  
   
- Compile with [/doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
+ Compile with [-doc](../../../visual-basic/reference/command-line-compiler/doc.md) to process documentation comments to a file.  
   
 ## Example  
  This example uses the `<paramref>` tag to refer to the `id` parameter.  

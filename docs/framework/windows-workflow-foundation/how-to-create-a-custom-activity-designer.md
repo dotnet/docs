@@ -40,15 +40,15 @@ This topic outlines two procedures.
 
 8. Click **OK**.
 
-9. Right-click the MainWindows.xaml file in the **Solution Explorer**, select **Delete** and confirm **OK** in the **Microsoft Visual Studio** dialogue box.
+9. Right-click the *MainWindows.xaml* file in the **Solution Explorer**, select **Delete** and confirm **OK** in the **Microsoft Visual Studio** dialog box.
 
-10. Right-click the UsingWorkflowItemPresenter project in **Solution Explorer**, select **Add**, then **New Item…** to bring up the **Add New Item** dialogue and select the **WPF** category from the **Installed Templates** section on the left.
+10. Right-click the UsingWorkflowItemPresenter project in **Solution Explorer**, select **Add**, then **New Item…** to bring up the **Add New Item** dialog and select the **WPF** category from the **Installed Templates** section on the left.
 
 11. Select the  **Window (WPF)** template, name it `RehostingWFDesigner`, and click **Add**.
 
-12. Open the RehostingWFDesigner.xaml file and paste the following code into it to define the UI for the application.
+12. Open the *RehostingWFDesigner.xaml* file and paste the following code into it to define the UI for the application:
 
-    ```xml
+    ```xaml
     <Window x:Class=" UsingWorkflowItemPresenter.RehostingWFDesigner"
             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -99,7 +99,7 @@ This topic outlines two procedures.
     </Window>
     ```
 
-13. To associate an activity designer with an activity type, you must register that activity designer with the metadata store. To do this, add the `RegisterMetadata` method to the `RehostingWFDesigner` class. Within the scope of the  `RegisterMetadata` method, create an <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder> object and call the <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCustomAttributes%2A> method to add the attributes to it. Call the <xref:System.Activities.Presentation.Metadata.MetadataStore.AddAttributeTable%2A> method to add the <xref:System.Activities.Presentation.Metadata.AttributeTable> to the metadata store. The following code contains the rehosting logic for the designer. It registers the metadata, puts the `SimpleNativeActivity` into the toolbox, and creates the workflow. Put this code into the RehostingWFDesigner.xaml.cs file.
+13. To associate an activity designer with an activity type, you must register that activity designer with the metadata store. To do this, add the `RegisterMetadata` method to the `RehostingWFDesigner` class. Within the scope of the  `RegisterMetadata` method, create an <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder> object and call the <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCustomAttributes%2A> method to add the attributes to it. Call the <xref:System.Activities.Presentation.Metadata.MetadataStore.AddAttributeTable%2A> method to add the <xref:System.Activities.Presentation.Metadata.AttributeTable> to the metadata store. The following code contains the rehosting logic for the designer. It registers the metadata, puts the `SimpleNativeActivity` into the toolbox, and creates the workflow. Put this code into the *RehostingWFDesigner.xaml.cs* file.
 
     ```csharp
     using System;
@@ -124,15 +124,15 @@ This topic outlines two procedures.
             protected override void OnInitialized(EventArgs e)
             {
                 base.OnInitialized(e);
-                // register metadata
+                // Register metadata.
                 (new DesignerMetadata()).Register();
                 RegisterCustomMetadata();
-                // add custom activity to toolbox
+                // Add custom activity to toolbox.
                 Toolbox.Categories.Add(new ToolboxCategory("Custom activities"));
                 Toolbox.Categories[1].Add(new ToolboxItemWrapper(typeof(SimpleNativeActivity)));
 
-                // create the workflow designer
-                WorkflowDesigner wd = new WorkflowDesigner();
+                // Create the workflow designer.
+                var wd = new WorkflowDesigner();
                 wd.Load(new Sequence());
                 DesignerBorder.Child = wd.View;
                 PropertyBorder.Child = wd.PropertyInspectorView;
@@ -141,7 +141,7 @@ This topic outlines two procedures.
 
             void RegisterCustomMetadata()
             {
-                AttributeTableBuilder builder = new AttributeTableBuilder();
+                var builder = new AttributeTableBuilder();
                 builder.AddCustomAttributes(typeof(SimpleNativeActivity), new DesignerAttribute(typeof(SimpleNativeDesigner)));
                 MetadataStore.AddAttributeTable(builder.CreateTable());
             }
@@ -149,7 +149,7 @@ This topic outlines two procedures.
     }
     ```
 
-14. Right-click the References directory in Solution Explorer and select **Add Reference …** to bring up the **Add Reference** dialogue.
+14. Right-click the References directory in Solution Explorer and select **Add Reference …** to bring up the **Add Reference** dialog.
 
 15. Click the **.NET** tab, locate the assembly named **System.Activities.Core.Presentation**, select it and click **OK**.
 
@@ -161,18 +161,18 @@ This topic outlines two procedures.
 
     3. System.ServiceModel.Activities.dll
 
-17. Open the App.xaml file and change the value of the StartUpUri to "RehostingWFDesigner.xaml".
+17. Open the *App.xaml* file and change the value of the StartUpUri to "RehostingWFDesigner.xaml".
 
-18. Right-click the UsingWorkflowItemPresenter project in **Solution Explorer**, select **Add**, then **New Item…** to bring up the **Add New Item** dialogue and select the **Workflow** category form the **Installed Templates** section on the left.
+18. Right-click the UsingWorkflowItemPresenter project in **Solution Explorer**, select **Add**, then **New Item…** to bring up the **Add New Item** dialog and select the **Workflow** category form the **Installed Templates** section on the left.
 
 19. Select the **Activity Designer** template, name it `SimpleNativeDesigner`, and click **Add**.
 
-20. Open the SimpleNativeDesigner.xaml file and paste the following code into it. Note this code uses <xref:System.Activities.Presentation.ActivityDesigner> as your root element and shows how binding is used to integrate <xref:System.Activities.Presentation.WorkflowItemPresenter> into your designer so a child type can be displayed in your composite activity designer.
+20. Open the *SimpleNativeDesigner.xaml* file and paste the following code into it. Note this code uses <xref:System.Activities.Presentation.ActivityDesigner> as your root element and shows how binding is used to integrate <xref:System.Activities.Presentation.WorkflowItemPresenter> into your designer so a child type can be displayed in your composite activity designer.
 
     > [!NOTE]
     > The schema for <xref:System.Activities.Presentation.ActivityDesigner> allows the addition of only one child element to your custom activity designer definition; however, this element could be a `StackPanel`, `Grid`, or some other composite UI element.
 
-    ```xml
+    ```xaml
     <sap:ActivityDesigner x:Class=" UsingWorkflowItemPresenter.SimpleNativeDesigner"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -206,11 +206,11 @@ This topic outlines two procedures.
     </sap:ActivityDesigner>
     ```
 
-21. Right-click the UsingWorkflowItemPresenter project in **Solution Explorer**, select **Add**, then **New Item…** to bring up the **Add New Item** dialogue and select the **Workflow** category form the **Installed Templates** section on the left.
+21. Right-click the UsingWorkflowItemPresenter project in **Solution Explorer**, select **Add**, then **New Item…** to bring up the **Add New Item** dialog and select the **Workflow** category form the **Installed Templates** section on the left.
 
 22. Select the  **Code Activity** template, name it `SimpleNativeActivity`, and click **Add**.
 
-23. Implement the `SimpleNativeActivity` class by entering the following code into the SimpleNativeActivity.cs file.
+23. Implement the `SimpleNativeActivity` class by entering the following code into the *SimpleNativeActivity.cs* file:
 
     ```csharp
     using System.Activities;
@@ -247,9 +247,9 @@ This topic outlines two procedures.
 
 1. The procedure for the second custom activity designer is the parallels the first with a few modifications, the first of which is to name the second application `UsingWorkflowItemsPresenter`. Also this application does not define a new custom activity.
 
-2. Key differences are contained in the CustomParallelDesigner.xaml and RehostingWFDesigner.xaml.cs files. Here is the code from the CustomParallelDesigner.xaml file that defines the UI.
+2. Key differences are contained in the *CustomParallelDesigner.xaml* and *RehostingWFDesigner.xaml.cs* files. Here is the code from the *CustomParallelDesigner.xaml* file that defines the UI:
 
-    ```xml
+    ```xaml
     <sap:ActivityDesigner x:Class=" UsingWorkflowItemsPresenter.CustomParallelDesigner"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -293,7 +293,7 @@ This topic outlines two procedures.
     </sap:ActivityDesigner>
     ```
 
-3. Here is the code from the RehostingWFDesigner.xaml.cs file that provides the rehosting logic.
+3. Here is the code from the *RehostingWFDesigner.xaml.cs* file that provides the rehosting logic:
 
     ```csharp
     using System;
@@ -316,12 +316,12 @@ This topic outlines two procedures.
             protected override void OnInitialized(EventArgs e)
             {
                 base.OnInitialized(e);
-                // register metadata
+                // Register metadata.
                 (new DesignerMetadata()).Register();
                 RegisterCustomMetadata();
 
-                // create the workflow designer
-                WorkflowDesigner wd = new WorkflowDesigner();
+                // Create the workflow designer.
+                var wd = new WorkflowDesigner();
                 wd.Load(new Sequence());
                 DesignerBorder.Child = wd.View;
                 PropertyBorder.Child = wd.PropertyInspectorView;
@@ -330,7 +330,7 @@ This topic outlines two procedures.
 
             void RegisterCustomMetadata()
             {
-                AttributeTableBuilder builder = new AttributeTableBuilder();
+                var builder = new AttributeTableBuilder();
                 builder.AddCustomAttributes(typeof(Parallel), new DesignerAttribute(typeof(CustomParallelDesigner)));
                 MetadataStore.AddAttributeTable(builder.CreateTable());
             }

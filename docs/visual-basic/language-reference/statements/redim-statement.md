@@ -1,5 +1,5 @@
 ---
-title: "ReDim Statement (Visual Basic)"
+title: "ReDim Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.ReDim"
@@ -32,7 +32,7 @@ Reallocates storage space for an array variable.
   
 ## Syntax  
   
-```  
+```vb  
 ReDim [ Preserve ] name(boundlist) [ ,  name(boundlist) [, ... ] ]  
 ```  
   

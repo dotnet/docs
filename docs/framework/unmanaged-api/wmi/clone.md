@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "Clone function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Clone function
 Returns a new object that is a complete clone of the current object.   
@@ -24,7 +22,7 @@ Returns a new object that is a complete clone of the current object.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Clone (
    [in] int                  vFunc, 
    [in] IWbemClassObject*    ptr, 
@@ -61,7 +59,7 @@ This function wraps a call to the [IWbemClassObject::Clone](/windows/desktop/api
 The cloned object is a COM object that has a reference count of 1.
 
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** WMINet_Utils.idl  
   

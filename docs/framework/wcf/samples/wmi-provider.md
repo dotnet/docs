@@ -26,19 +26,20 @@ This sample demonstrates how to gather data from Windows Communication Foundatio
  Adding WMI objects to a service makes it possible to reveal user-defined information along with the built-in WMI provider information. This is accomplished by publishing the schema of the service to WMI by using the Installutil.exe application. Instructions to accomplish this, along with more details can be found in the setup instructions at the end of the topic.  
   
 ## Accessing WMI Information  
- WMI data can be accessed many different ways. Microsoft provides WMI APIs for scripts, Visual Basic applications, C++ applications, and the .NET Framework (https://docs.microsoft.com/windows/desktop/wmisdk/using-wmi).  
+
+WMI data can be accessed in many different ways. Microsoft provides WMI APIs for scripts, Visual Basic applications, C++ applications, and the .NET Framework. For more information, see [Using WMI](/windows/desktop/wmisdk/using-wmi).
   
  This sample uses two Java scripts: one to enumerate services running on the computer along with some of their properties and the second to view user-defined WMI data. The script opens a connection to the WMI provider, parses data, and displays the data gathered.  
   
  Start the sample to create a running instance of a WCF service. While the service is running, run each Java script by using the following command at the command prompt:  
   
-```  
+```console  
 cscript EnumerateServices.js  
 ```  
   
  The script accesses the instrumentation contained in the service and produces the following output:  
   
-```  
+```console  
 Microsoft (R) Windows Script Host Version 5.6  
 Copyright © Microsoft Corporation 1996-2001. All rights reserved.  
   
@@ -96,13 +97,13 @@ Copyright © Microsoft Corporation 1996-2001. All rights reserved.
   
  Next, run the second Java Script to display the user-defined WMI data:  
   
-```  
+```console  
 cscript EnumerateCustomObjects.js  
 ```  
   
  The script accesses the user-defined instrumentation contained in the services and produces the following output:  
   
-```  
+```console 
 1 WMIObject(s) found.  
 |-PID:           30285bfd-9d66-4c4e-9be2-310499c5cef5  
 |-InstanceId:    3839  
@@ -124,19 +125,19 @@ cscript EnumerateCustomObjects.js
 4. To run the sample in a single- or cross-computer configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
     > [!NOTE]
-    >  If you installed WCF after installing ASP.NET, you may need to run "%WINDIR%\ Microsoft.Net\Framework\v3.0\Windows Communication Foundation\servicemodelreg.exe " -r -x to give the ASPNET account permission to publish WMI objects.  
+    > If you installed WCF after installing ASP.NET, you may need to run "%WINDIR%\ Microsoft.Net\Framework\v3.0\Windows Communication Foundation\servicemodelreg.exe " -r -x to give the ASPNET account permission to publish WMI objects.  
   
 5. View data from the sample surfaced through WMI by using the commands: `cscript EnumerateServices.js` or `cscript EnumerateCustomObjects.js`.  
   
 > [!IMPORTANT]
->  The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\WMIProvider`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\WMIProvider`  
   
 ## See also
 
-- [AppFabric Monitoring Samples](https://go.microsoft.com/fwlink/?LinkId=193959)
+- [AppFabric Monitoring Samples](https://docs.microsoft.com/previous-versions/appfabric/ff383407(v=azure.10))

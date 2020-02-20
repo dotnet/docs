@@ -13,7 +13,7 @@ Specifies how the Visual Basic compiler should report internal compiler errors.
 
 ## Syntax
 
-```
+```console
 -errorreport:{ prompt | queue | send | none }
 ```
 
@@ -34,7 +34,7 @@ The following table summarizes the effect of the `-errorreport` option.
 
 The compiler sends data that includes the stack at the time of the error, which usually includes some source code. If `-errorreport` is used with the [-bugreport](../../../visual-basic/reference/command-line-compiler/bugreport.md) option, then the entire source file is sent.
 
-This option is best used with the [/bugreport](../../../visual-basic/reference/command-line-compiler/bugreport.md) option, because it allows Microsoft engineers to more easily reproduce the error.
+This option is best used with the [-bugreport](../../../visual-basic/reference/command-line-compiler/bugreport.md) option, because it allows Microsoft engineers to more easily reproduce the error.
 
 > [!NOTE]
 > The `-errorreport` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.
@@ -43,7 +43,7 @@ This option is best used with the [/bugreport](../../../visual-basic/reference/c
 
 The following code attempts to compile `T2.vb`, and if the compiler encounters an internal compiler error, it prompts you to send the error report to Microsoft.
 
-```
+```console
 vbc -errorreport:prompt t2.vb
 ```
 

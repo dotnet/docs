@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 6fd5eaa4-1997-4910-82f5-3887480db764
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugArrayValue::GetElementAtPosition Method
 Gets the element at the given position, treating the array as a zero-based, single-dimensional array.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetElementAtPosition (  
     [in]  ULONG32          nPosition,  
     [out] ICorDebugValue   **ppValue  

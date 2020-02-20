@@ -55,13 +55,13 @@ ms.assetid: 3f255a8a-35a8-4712-9065-472ff7d75599
   
  Consider the very common control, <xref:System.Windows.Controls.Button>.  The primary behavior of a <xref:System.Windows.Controls.Button> is to enable an application to take some action when the user clicks it.  By default, the <xref:System.Windows.Controls.Button> in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] appears as a raised rectangle.  While developing an application, you might want to take advantage of the behavior of a <xref:System.Windows.Controls.Button>--that is, by handling the button's click event--but you might change the button's appearance beyond what you can do by changing the button's properties.  In this case, you can create a new <xref:System.Windows.Controls.ControlTemplate>.  
   
- The following example creates a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.Button>.  The <xref:System.Windows.Controls.ControlTemplate> creates a <xref:System.Windows.Controls.Button> with rounded corners and a gradient background.  The <xref:System.Windows.Controls.ControlTemplate> contains a <xref:System.Windows.Controls.Border> whose <xref:System.Windows.Controls.Border.Background%2A> is a <xref:System.Windows.Media.LinearGradientBrush> with two <xref:System.Windows.Media.GradientStop> objects.  The first <xref:System.Windows.Media.GradientStop> uses data binding to bind the <xref:System.Windows.Media.GradientStop.Color%2A> property of the <xref:System.Windows.Media.GradientStop> to the color of the button's background.  When you set the <xref:System.Windows.Controls.Control.Background%2A> property of the <xref:System.Windows.Controls.Button>, the color of that value will be used as the first <xref:System.Windows.Media.GradientStop>. For more information about data binding, see [Data Binding Overview](../data/data-binding-overview.md). The example also creates a <xref:System.Windows.Trigger> that changes the appearance of the <xref:System.Windows.Controls.Button> when <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> is `true`.  
+ The following example creates a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.Button>.  The <xref:System.Windows.Controls.ControlTemplate> creates a <xref:System.Windows.Controls.Button> with rounded corners and a gradient background.  The <xref:System.Windows.Controls.ControlTemplate> contains a <xref:System.Windows.Controls.Border> whose <xref:System.Windows.Controls.Border.Background%2A> is a <xref:System.Windows.Media.LinearGradientBrush> with two <xref:System.Windows.Media.GradientStop> objects.  The first <xref:System.Windows.Media.GradientStop> uses data binding to bind the <xref:System.Windows.Media.GradientStop.Color%2A> property of the <xref:System.Windows.Media.GradientStop> to the color of the button's background.  When you set the <xref:System.Windows.Controls.Control.Background%2A> property of the <xref:System.Windows.Controls.Button>, the color of that value will be used as the first <xref:System.Windows.Media.GradientStop>. For more information about data binding, see [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md). The example also creates a <xref:System.Windows.Trigger> that changes the appearance of the <xref:System.Windows.Controls.Button> when <xref:System.Windows.Controls.Primitives.ButtonBase.IsPressed%2A> is `true`.  
   
  [!code-xaml[ControlsOverview#6](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlsOverview/CSharp/Window1.xaml#6)]  
 [!code-xaml[ControlsOverview#7](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlsOverview/CSharp/AppInCode.xaml#7)]  
   
 > [!NOTE]
->  The <xref:System.Windows.Controls.Control.Background%2A> property of the <xref:System.Windows.Controls.Button> must be set to a <xref:System.Windows.Media.SolidColorBrush> for the example to work properly.  
+> The <xref:System.Windows.Controls.Control.Background%2A> property of the <xref:System.Windows.Controls.Button> must be set to a <xref:System.Windows.Media.SolidColorBrush> for the example to work properly.  
   
 <a name="subscribing_to_events"></a>   
 ## Subscribing to Events  
@@ -97,7 +97,7 @@ ms.assetid: 3f255a8a-35a8-4712-9065-472ff7d75599
 - [Controls by Category](controls-by-category.md)
 - [Control Library](control-library.md)
 - [Data Templating Overview](../data/data-templating-overview.md)
-- [Data Binding Overview](../data/data-binding-overview.md)
+- [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md)
 - [Input](../advanced/input-wpf.md)
 - [Enable a Command](../advanced/how-to-enable-a-command.md)
 - [Walkthroughs: Create a Custom Animated Button](walkthroughs-create-a-custom-animated-button.md)

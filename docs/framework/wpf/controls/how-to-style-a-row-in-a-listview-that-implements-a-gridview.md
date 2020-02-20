@@ -13,7 +13,7 @@ This example shows how to style a row in a <xref:System.Windows.Controls.ListVie
 ## Example  
  You can style a row in a <xref:System.Windows.Controls.ListView> control by setting an <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> on the <xref:System.Windows.Controls.ListView> control. Set the style for its items that are represented as <xref:System.Windows.Controls.ListViewItem> objects. The <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> references the <xref:System.Windows.Controls.ControlTemplate> objects that are used to display the row content.  
   
- The complete sample, which the following examples are extracted from, displays a collection of song information that is stored in an [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] database. Each song in the database has a rating field and the value of this field specifies how to display a row of song information.  
+ The complete sample, which the following examples are extracted from, displays a collection of song information that is stored in an XML database. Each song in the database has a rating field and the value of this field specifies how to display a row of song information.  
   
  The following example shows how to define <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> for the <xref:System.Windows.Controls.ListViewItem> objects that represent the songs in the song collection. The <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> references <xref:System.Windows.Controls.ControlTemplate> objects that specify how to display a row of song information.  
   
@@ -33,4 +33,4 @@ This example shows how to style a row in a <xref:System.Windows.Controls.ListVie
 - <xref:System.Windows.Controls.GridView>
 - [How-to Topics](listview-how-to-topics.md)
 - [ListView Overview](listview-overview.md)
-- [Styling and Templating](styling-and-templating.md)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)

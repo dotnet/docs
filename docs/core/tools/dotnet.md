@@ -1,7 +1,7 @@
 ---
 title: dotnet command
-description: Learn about the dotnet command (the generic driver for the .NET Core CLI tools) and its usage.
-ms.date: 06/04/2018
+description: Learn about the dotnet command (the generic driver for the .NET Core CLI) and its usage.
+ms.date: 02/13/2020
 ---
 # dotnet command
 
@@ -13,25 +13,28 @@ ms.date: 06/04/2018
 
 ## Synopsis
 
+<!-- markdownlint-disable MD025 -->
+
 # [.NET Core 2.1](#tab/netcore21)
 
-```
-dotnet [command] [arguments] [--additional-deps] [--additionalprobingpath] [-d|--diagnostics] [--fx-version]
-    [-h|--help] [--info] [--list-runtimes] [--list-sdks] [--roll-forward-on-no-candidate-fx] [-v|--verbosity] [--version]
+```dotnetcli
+dotnet [command] [arguments] [--additional-deps] [--additionalprobingpath] [--depsfile]
+    [-d|--diagnostics] [--fx-version] [-h|--help] [--info] [--list-runtimes] [--list-sdks] [--roll-forward-on-no-candidate-fx] [--runtimeconfig] [-v|--verbosity] [--version]
 ```
 
 # [.NET Core 2.0](#tab/netcore20)
 
-```
-dotnet [command] [arguments] [--additional-deps] [--additionalprobingpath] [-d|--diagnostics]
-    [--fx-version] [-h|--help] [--info] [--roll-forward-on-no-candidate-fx] [-v|--verbosity] [--version]
+```dotnetcli
+dotnet [command] [arguments] [--additional-deps] [--additionalprobingpath] [--depsfile]
+    [-d|--diagnostics] [--fx-version] [-h|--help] [--info] [--roll-forward-on-no-candidate-fx]
+    [--runtimeconfig] [-v|--verbosity] [--version]
 ```
 
 # [.NET Core 1.x](#tab/netcore1x)
 
-```
-dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-version]
-    [-h|--help] [--info] [-v|--verbosity] [--version]
+```dotnetcli
+dotnet [command] [arguments] [--additionalprobingpath] [--depsfile] [-d|--diagnostics]
+    [--fx-version] [-h|--help] [--info] [--runtimeconfig] [-v|--verbosity] [--version]
 ```
 
 ---
@@ -48,11 +51,17 @@ dotnet [command] [arguments] [--additionalprobingpath] [-d|--diagnostics] [--fx-
 
 `--additional-deps <PATH>`
 
-Path to additional *deps.json* file.
+Path to an additional *.deps.json* file.
 
 `--additionalprobingpath <PATH>`
 
 Path containing probing policy and assemblies to probe.
+
+`--depsfile`
+
+Path to a *deps.json* file.
+
+A *deps.json* file contains a list of dependencies, compilation dependencies, and version information used to address assembly conflicts. For more information about this file, see [Runtime Configuration Files](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md) on GitHub.
 
 `-d|--diagnostics`
 
@@ -81,11 +90,18 @@ Displays the installed .NET Core SDKs.
 `--roll-forward-on-no-candidate-fx <N>`
 
 Defines behavior when the required shared framework is not available. `N` can be:
-* `0` - Disable even minor version roll forward.
-* `1` - Roll forward on minor version, but not on major version. This is the default behavior.
-* `2` - Roll forward on minor and major versions.
+
+- `0` - Disable even minor version roll forward.
+- `1` - Roll forward on minor version, but not on major version. This is the default behavior.
+- `2` - Roll forward on minor and major versions.
 
  For more information, see [Roll forward](../whats-new/dotnet-core-2-1.md#roll-forward).
+
+`--runtimeconfig`
+
+Path to a *runtimeconfig.json* file.
+
+A *runtimeconfig.json* file is a configuration file containing run-time settings. For more information, see [.NET Core run-time configuration settings](../run-time-config/index.md#runtimeconfigjson).
 
 `-v|--verbosity <LEVEL>`
 
@@ -99,11 +115,17 @@ Prints out the version of the .NET Core SDK in use.
 
 `--additional-deps <PATH>`
 
-Path to additional *deps.json* file.
+Path to an additional *.deps.json* file.
 
 `--additionalprobingpath <PATH>`
 
 Path containing probing policy and assemblies to probe.
+
+`--depsfile`
+
+Path to a *deps.json* file.
+
+A *deps.json* file contains a list of dependencies, compilation dependencies and version information used to address assembly conflicts. For more details on this file, see [Runtime Configuration Files on GitHub](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md).
 
 `-d|--diagnostics`
 
@@ -125,6 +147,12 @@ Prints out detailed information about a .NET Core installation and the machine e
 
  Disables minor version roll forward, if set to `0`. For more information, see [Roll forward](../whats-new/dotnet-core-2-1.md#roll-forward).
 
+`--runtimeconfig`
+
+Path to a *runtimeconfig.json* file.
+
+A *runtimeconfig.json* file is a configuration file containing run-time settings. For more information, see [.NET Core run-time configuration settings](../run-time-config/index.md#runtimeconfigjson).
+
 `-v|--verbosity <LEVEL>`
 
 Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Not supported in every command; see specific command page to determine if this option is available.
@@ -138,6 +166,12 @@ Prints out the version of the .NET Core SDK in use.
 `--additionalprobingpath <PATH>`
 
 Path containing probing policy and assemblies to probe.
+
+`--depsfile`
+
+Path to a *deps.json* file.
+
+A *deps.json* file contains a list of dependencies, compilation dependencies and version information used to address assembly conflicts. For more details on this file, see [Runtime Configuration Files on GitHub](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md).
 
 `-d|--diagnostics`
 
@@ -154,6 +188,12 @@ Prints out documentation for a given command, such as `dotnet build --help`. `do
 `--info`
 
 Prints out detailed information about a .NET Core installation and the machine environment, such as the current operating system, and commit SHA of the .NET Core version.
+
+`--runtimeconfig`
+
+Path to a *runtimeconfig.json* file.
+
+A *runtimeconfig.json* file is a configuration file containing run-time settings. For more information, see [.NET Core run-time configuration settings](../run-time-config/index.md#runtimeconfigjson).
 
 `-v|--verbosity <LEVEL>`
 
@@ -247,16 +287,16 @@ Command | Function
 [dotnet nuget locals](dotnet-nuget-locals.md) | Clears or lists local NuGet resources such as http-request cache, temporary cache, or machine-wide global packages folder.
 [dotnet nuget push](dotnet-nuget-push.md) | Pushes a package to the server and publishes it.
 
-### Global Tools commands
+### Global, tool-path, and local tools commands
 
-[.NET Core Global Tools](global-tools.md) are available starting with .NET Core SDK 2.1.300:
+Tools are console applications that are installed from NuGet packages and are invoked from the command prompt. You can write tools yourself or install tools written by third parties. Tools are also known as global tools, tool-path tools, and local tools. For more information, see [.NET Core tools overview](global-tools.md). Global and tool-path tools are available starting with .NET Core SDK 2.1. Local tools are available starting with .NET Core SDK 3.0.
 
 Command | Function
 --- | ---
-[dotnet tool install](dotnet-tool-install.md) | Installs a Global Tool on your machine.
-[dotnet tool list](dotnet-tool-list.md) | Lists all Global Tools currently installed in the default directory on your machine or in the specified path.
-[dotnet tool uninstall](dotnet-tool-uninstall.md) | Uninstalls a Global Tool from your machine.
-[dotnet tool update](dotnet-tool-update.md) | Updates a Global Tool on your machine.
+[dotnet tool install](dotnet-tool-install.md) | Installs a tool on your machine.
+[dotnet tool list](dotnet-tool-list.md) | Lists all global, tool-path, or local tools currently installed on your machine.
+[dotnet tool uninstall](dotnet-tool-uninstall.md) | Uninstalls a tool from your machine.
+[dotnet tool update](dotnet-tool-update.md) | Updates a tool that is installed on your machine.
 
 ### Additional tools
 
@@ -298,7 +338,7 @@ Run an application DLL, such as `myapp.dll`:
 
 `DOTNET_PACKAGES`
 
-The primary package cache. If not set, it defaults to `$HOME/.nuget/packages` on Unix or `%HOME%\NuGet\Packages` on Windows.
+The global packages folder. If not set, it defaults to `~/.nuget/packages` on Unix or `%userprofile%\.nuget\packages` on Windows.
 
 `DOTNET_SERVICING`
 
@@ -320,7 +360,7 @@ Disables minor version roll forward, if set to `0`. For more information, see [R
 
 `DOTNET_PACKAGES`
 
-The primary package cache. If not set, it defaults to `$HOME/.nuget/packages` on Unix or `%HOME%\NuGet\Packages` on Windows.
+The primary package cache. If not set, it defaults to `$HOME/.nuget/packages` on Unix or `%userprofile%\.nuget\packages` on Windows.
 
 `DOTNET_SERVICING`
 
@@ -338,7 +378,7 @@ Specifies whether .NET Core runtime, shared framework, or SDK are resolved from 
 
 `DOTNET_PACKAGES`
 
-The primary package cache. If not set, it defaults to `$HOME/.nuget/packages` on Unix or `%HOME%\NuGet\Packages` on Windows.
+The primary package cache. If not set, it defaults to `$HOME/.nuget/packages` on Unix or `%userprofile%\.nuget\packages` on Windows.
 
 `DOTNET_SERVICING`
 
@@ -349,3 +389,8 @@ Specifies the location of the servicing index to use by the shared host when loa
 Specifies whether data about the .NET Core tools usage is collected and sent to Microsoft. Set to `true` to opt-out of the telemetry feature (values `true`, `1`, or `yes` accepted). Otherwise, set to `false` to opt into the telemetry features (values `false`, `0`, or `no` accepted). If not set, the default is `false` and the telemetry feature is active.
 
 ---
+
+## See also
+
+- [Runtime Configuration Files](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md)
+- [.NET Core run-time configuration settings](../run-time-config/index.md)

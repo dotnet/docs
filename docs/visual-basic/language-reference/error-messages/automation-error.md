@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 2c4be5c5-2f0d-4a2b-96fe-d1b24f08fc4c
 ---
 # Automation error
+
 An error occurred while executing a method or getting or setting a property of an object variable. The error was reported by the application that created the object.  
   
 ## To correct this error  
@@ -17,4 +18,4 @@ An error occurred while executing a method or getting or setting a property of a
 ## See also
 
 - [Error Types](../../../visual-basic/programming-guide/language-features/error-types.md)
-- [Talk to Us](/visualstudio/ide/talk-to-us)
+- [Talk to Us](/visualstudio/ide/feedback-options)

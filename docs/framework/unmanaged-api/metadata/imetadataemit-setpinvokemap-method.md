@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c6bfd574-1da3-4ba7-82f2-46ca5efcbaba
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::SetPinvokeMap Method
 Sets or changes features of a method's PInvoke signature, as defined by a prior call to [IMetaDataEmit::DefinePinvokeMap](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-definepinvokemap-method.md).  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetPinvokeMap (   
     [in]  mdToken      tk,   
     [in]  DWORD        dwMappingFlags,  

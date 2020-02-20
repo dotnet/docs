@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e2b0e2db-3fae-4b56-844e-d30a125a660c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRRuntimeHost::ExecuteInAppDomain Method
 Specifies the <xref:System.AppDomain> in which to execute the specified managed code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ExecuteInAppDomain(  
     [in] DWORD AppDomainId,   
     [in] FExecuteInDomainCallback pCallback,   

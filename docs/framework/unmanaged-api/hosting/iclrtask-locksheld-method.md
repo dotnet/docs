@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e88a4dc3-02cc-4703-a474-292b71c40657
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRTask::LocksHeld Method
 Gets the number of locks currently held on the task.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT LocksHeld (  
     [out] SIZE_T *pLockCount  
 );  

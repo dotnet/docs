@@ -1,7 +1,5 @@
 ---
 title: "this keyword - C# Reference"
-ms.custom: seodec18
-
 description: this keyword (C# Reference)
 ms.date: 07/20/2015
 f1_keywords: 
@@ -16,7 +14,7 @@ ms.assetid: d4f827fe-4710-410b-89b8-867dad44b8a3
 The `this` keyword refers to the current instance of the class and is also used as a modifier of the first parameter of an extension method.
 
 > [!NOTE]
-> This article discusses the use of `this` with class instances. For more information about its use in extension methods, see [Extension Methods](../../../csharp/programming-guide/classes-and-structs/extension-methods.md).
+> This article discusses the use of `this` with class instances. For more information about its use in extension methods, see [Extension Methods](../../programming-guide/classes-and-structs/extension-methods.md).
 
 The following are common uses of `this`:
 

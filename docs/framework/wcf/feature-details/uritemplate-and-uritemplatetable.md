@@ -24,7 +24,7 @@ Web developers require the ability to describe the shape and layout of the URIs 
  <xref:System.UriTemplate.Match%28System.Uri%2CSystem.Uri%29> takes a base address and a candidate URI and attempts to match the URI to the template. If the match is successful, a <xref:System.UriTemplateMatch> instance is returned. The <xref:System.UriTemplateMatch> object contains a base URI, the candidate URI, a name/value collection of the query parameters, an array of the relative path segments, a name/value collection of variables that were matched, the <xref:System.UriTemplate> instance used to perform the match, a string that contains any unmatched portion of the candidate URI (used when the template has a wildcard), and an object that is associated with the template.  
   
 > [!NOTE]
->  The <xref:System.UriTemplate> class ignores the scheme and port number when matching a candidate URI to a template.  
+> The <xref:System.UriTemplate> class ignores the scheme and port number when matching a candidate URI to a template.  
   
  There are two methods that allow you to generate a URI from a template, <xref:System.UriTemplate.BindByName%28System.Uri%2CSystem.Collections.Specialized.NameValueCollection%29> and <xref:System.UriTemplate.BindByPosition%28System.Uri%2CSystem.String%5B%5D%29>. <xref:System.UriTemplate.BindByName%28System.Uri%2CSystem.Collections.Specialized.NameValueCollection%29> takes a base address and a name/value collection of parameters. These parameters are substituted for variables when the template is bound. <xref:System.UriTemplate.BindByPosition%28System.Uri%2CSystem.String%5B%5D%29> takes the name/value pairs and substitutes them left to right.  
   
@@ -51,9 +51,7 @@ Web developers require the ability to describe the shape and layout of the URIs 
 ### Template String Syntax  
  A template has three parts: a path, an optional query, and an optional fragment. For an example, see the following template:  
   
-```  
-"/weather/{state}/{city}?forecast={length)#frag1  
-```  
+`"/weather/{state}/{city}?forecast={length)#frag1`  
   
  The path consists of "/weather/{state}/{city}", the query consists of "?forecast={length}, and the fragment consists of "#frag1".  
   
@@ -128,9 +126,7 @@ Web developers require the ability to describe the shape and layout of the URIs 
 ### Named Wildcard Segments  
  A named wildcard segment is any path variable segment whose variable name begins with the wildcard character ‘\*’. The following template string contains a named wildcard segment named "shoe".  
   
-```  
-"literal/{*shoe}"  
-```  
+`"literal/{*shoe}"`  
   
  Wildcard segments must follow the following rules:  
   
@@ -156,7 +152,7 @@ UriTemplate t = new UriTemplate("/test/{a=1}/{b=5}");
  This template declares a variable named `a` with a default value of `1` and a variable named `b` with a default value of `5`.  
   
 > [!NOTE]
->  Only path segment variables are allowed to have default values. Query string variables, compound segment variables, and named wildcard variables are not permitted to have default values.  
+> Only path segment variables are allowed to have default values. Query string variables, compound segment variables, and named wildcard variables are not permitted to have default values.  
   
  The following code shows how default variable values are handled when matching a candidate URI.  
   
@@ -260,7 +256,7 @@ When a variable is given a default value of `null` there are some additional con
  If a set of <xref:System.UriTemplate> objects added to a <xref:System.UriTemplateTable> contain query strings they must not be ambiguous. Identical query strings are allowed.  
   
 > [!NOTE]
->  While the <xref:System.UriTemplateTable> allows base addresses that use schemes other than HTTP, the scheme and port number are ignored when matching candidate URIs to templates.  
+> While the <xref:System.UriTemplateTable> allows base addresses that use schemes other than HTTP, the scheme and port number are ignored when matching candidate URIs to templates.  
   
 ### Query String Ambiguity  
  Templates that share an equivalent path contain ambiguous query strings if there is a URI that matches more than one template.  

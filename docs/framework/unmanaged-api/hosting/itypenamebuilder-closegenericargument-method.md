@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c9a8178d-be1f-4ad4-abdb-d38470659b82
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ITypeNameBuilder::CloseGenericArgument Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CloseGenericArgument ( );  
 ```  
   

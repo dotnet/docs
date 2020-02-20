@@ -7,7 +7,6 @@ ms.date: 06/20/2016
 ms.technology: dotnet-standard
 ms.assetid: 1e38f9d9-8f84-46ee-a15f-199aec4f2e34
 ---
-
 # Async in depth
 
 Writing I/O- and CPU-bound asynchronous code is straightforward using the .NET Task-based async model. The model is exposed by the `Task` and `Task<T>` types and the `async` and `await` keywords in C# and Visual Basic. (Language-specific resources are found in the [See also](#see-also) section.) This article explains how to use .NET async and provides insight into the async framework used under the covers.
@@ -16,8 +15,8 @@ Writing I/O- and CPU-bound asynchronous code is straightforward using the .NET T
 
 Tasks are constructs used to implement what is known as the [Promise Model of Concurrency](https://en.wikipedia.org/wiki/Futures_and_promises).  In short, they offer you a "promise" that work will be completed at a later point, letting you coordinate with the promise with a clean API.
 
-* `Task` represents a single operation which does not return a value.
-* `Task<T>` represents a single operation which returns a value of type `T`.
+- `Task` represents a single operation which does not return a value.
+- `Task<T>` represents a single operation which returns a value of type `T`.
 
 It’s important to reason about tasks as abstractions of work happening asynchronously, and *not* an abstraction over threading. By default, tasks execute on the current thread and delegate work to the Operating System, as appropriate. Optionally, tasks can be explicitly requested to run on a separate thread via the `Task.Run` API.
 
@@ -25,7 +24,7 @@ Tasks expose an API protocol for monitoring, waiting upon and accessing the resu
 
 Using `await` allows your application or service to perform useful work while a task is running by yielding control to its caller until the task is done. Your code does not need to rely on callbacks or events to continue execution after the task has been completed. The language and task API integration does that for you. If you’re using `Task<T>`, the `await` keyword will additionally "unwrap" the value returned when the Task is complete.  The details of how this works are explained further below.
 
-You can learn more about tasks and the different ways to interact with them in the [Task-based Asynchronous Pattern (TAP)](~/docs/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) topic.
+You can learn more about tasks and the different ways to interact with them in the [Task-based Asynchronous Pattern (TAP)](./asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) topic.
 
 ## Deeper Dive into Tasks for an I/O-Bound Operation
 
@@ -85,9 +84,9 @@ Although the above may seem like a lot of work to be done, when measured in term
 
 0-1————————————————————————————————————————————————–2-3
 
-* Time spent from points `0` to `1` is everything up until an async method yields control to its caller.
-* Time spent from points `1` to `2` is the time spent on I/O, with no CPU cost.
-* Finally, time spent from points `2` to `3` is passing control back (and potentially a value) to the async method, at which point it is executing again.
+- Time spent from points `0` to `1` is everything up until an async method yields control to its caller.
+- Time spent from points `1` to `2` is the time spent on I/O, with no CPU cost.
+- Finally, time spent from points `2` to `3` is passing control back (and potentially a value) to the async method, at which point it is executing again.
 
 ### What does this mean for a server scenario?
 
@@ -141,7 +140,7 @@ Once `await` is encountered, the execution of `CalculateResult()` is yielded to 
 
 ## See also
 
-- [Asynchronous programming in C#](~/docs/csharp/async.md)
+- [Asynchronous programming in C#](../csharp/async.md)
 - [Asynchronous programming with async and await (C#)](../csharp/programming-guide/concepts/async/index.md)
-- [Async Programming in F#](~/docs/fsharp/tutorials/asynchronous-and-concurrent-programming/async.md)
-- [Asynchronous Programming with Async and Await (Visual Basic)](~/docs/visual-basic/programming-guide/concepts/async/index.md)
+- [Async Programming in F#](../fsharp/tutorials/asynchronous-and-concurrent-programming/async.md)
+- [Asynchronous Programming with Async and Await (Visual Basic)](../visual-basic/programming-guide/concepts/async/index.md)

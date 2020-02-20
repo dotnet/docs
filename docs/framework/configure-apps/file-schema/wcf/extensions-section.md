@@ -6,7 +6,9 @@ ms.assetid: 53a59fb6-dede-47ec-9384-b3c2e8f0c1fa
 # \<extensions> section
 This configuration section contains a collection of extensions, which enable the user to create user-defined bindings, behaviors, and other aspects of extensions.  
   
-\<system.ServiceModel>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.serviceModel>**](system-servicemodel.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<extensions>**  
   
 ## Syntax  
   
@@ -35,10 +37,10 @@ This configuration section contains a collection of extensions, which enable the
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<behaviorExtensions>](../../../../../docs/framework/configure-apps/file-schema/wcf/behaviorextensions.md)|This section contains child elements that specify behavior extensions, which enable the user to customize service or endpoint behaviors.|  
-|[\<bindingElementExtensions>](../../../../../docs/framework/configure-apps/file-schema/wcf/bindingelementextensions.md)|This section enables the use of a custom binding element from a machine or application configuration file.|  
-|[\<bindingExtensions>](../../../../../docs/framework/configure-apps/file-schema/wcf/bindingextensions.md)|This section contains child elements that specify binding extensions, which enable the user to customize bindings.|  
-|[\<endpointExtensions>](../../../../../docs/framework/configure-apps/file-schema/wcf/endpointextensions.md)|This section contains child elements that registers standard endpoints.|  
+|[\<behaviorExtensions>](behaviorextensions.md)|This section contains child elements that specify behavior extensions, which enable the user to customize service or endpoint behaviors.|  
+|[\<bindingElementExtensions>](bindingelementextensions.md)|This section enables the use of a custom binding element from a machine or application configuration file.|  
+|[\<bindingExtensions>](bindingextensions.md)|This section contains child elements that specify binding extensions, which enable the user to customize bindings.|  
+|[\<endpointExtensions>](endpointextensions.md)|This section contains child elements that registers standard endpoints.|  
   
 ### Parent Elements  
   

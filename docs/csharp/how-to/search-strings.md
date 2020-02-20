@@ -1,5 +1,5 @@
 ---
-title: "How to: search strings (C# Guide)"
+title: "How to search strings (C# Guide)"
 ms.date: 02/21/2018
 helpviewer_keywords: 
   - "searching strings [C#]"
@@ -8,13 +8,13 @@ helpviewer_keywords:
 ms.assetid: fb1d9a6d-598d-4a35-bd5f-b86012edcb2b
 ---
 
-# How to: search strings
+# How to search strings
 
 You can use two main strategies to search for text in strings. Methods of the <xref:System.String> class search for specific text. Regular expressions search for patterns in text.
 
 [!INCLUDE[interactive-note](~/includes/csharp-interactive-note.md)]
 
-The [string](../language-reference/keywords/string.md) type, which is an alias for the <xref:System.String?displayProperty=nameWithType> class, provides a number of useful methods for searching the contents of a string. Among them are <xref:System.String.Contains%2A>, <xref:System.String.StartsWith%2A>, <xref:System.String.EndsWith%2A>, <xref:System.String.IndexOf%2A>, <xref:System.String.LastIndexOf%2A>. The <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class provides a rich vocabulary to search for patterns in text. In this article, you learn these techniques and how to choose the best method for your needs.
+The [string](../language-reference/builtin-types/reference-types.md#the-string-type) type, which is an alias for the <xref:System.String?displayProperty=nameWithType> class, provides a number of useful methods for searching the contents of a string. Among them are <xref:System.String.Contains%2A>, <xref:System.String.StartsWith%2A>, <xref:System.String.EndsWith%2A>, <xref:System.String.IndexOf%2A>, <xref:System.String.LastIndexOf%2A>. The <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class provides a rich vocabulary to search for patterns in text. In this article, you learn these techniques and how to choose the best method for your needs.
 
 ## Does a string contain text?
 
@@ -47,7 +47,7 @@ The search pattern describes the text you search for. The following table descri
 [!code-csharp-interactive[Search using regular expressions](../../../samples/snippets/csharp/how-to/strings/SearchStrings.cs#3)]
   
 > [!TIP]
-> The `string` methods are usually better choices when you are searching for an exact string. Regular expressions are better when you are searching for some pattern is a source string.
+> The `string` methods are usually better choices when you are searching for an exact string. Regular expressions are better when you are searching for some pattern in a source string.
 
 ## Does a string follow a pattern?
 

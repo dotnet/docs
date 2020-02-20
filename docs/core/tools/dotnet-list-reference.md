@@ -1,11 +1,11 @@
 ---
 title: dotnet list reference command
 description: The dotnet list reference command provides a convenient option to list project to project references.
-ms.date: 12/03/2018
+ms.date: 02/14/2020
 ---
 # dotnet list reference
 
-[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
+**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
 
 ## Name
 
@@ -13,7 +13,7 @@ ms.date: 12/03/2018
 
 ## Synopsis
 
-`dotnet list [<PROJECT>] reference [-h|--help]`
+`dotnet list [<PROJECT>|<SOLUTION>] reference [-h|--help]`
 
 ## Description
 
@@ -21,9 +21,9 @@ The `dotnet list reference` command provides a convenient option to list project
 
 ## Arguments
 
-* **`PROJECT`**
+* **`PROJECT | SOLUTION`**
 
-  Specifies the project file to use for listing references. If not specified, the command searches the current directory for a project file.
+  Specifies the project or solution file to use for listing references. If not specified, the command searches the current directory for a project file.
 
 ## Options
 
@@ -35,12 +35,12 @@ The `dotnet list reference` command provides a convenient option to list project
 
 * List the project references for the specified project:
 
-  ```console
+  ```dotnetcli
   dotnet list app/app.csproj reference
   ```
 
 * List the project references for the project in the current directory:
 
-  ```console
+  ```dotnetcli
   dotnet list reference
   ```

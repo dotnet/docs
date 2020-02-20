@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 4dc6c80d-b694-480b-a378-d5b18420ce17
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ESymbolReadingPolicy Enumeration
 Contains values that set the policy for reading program database (PDB) files.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum {  
     eSymbolReadingNever,  
     eSymbolReadingAlways,  

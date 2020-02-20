@@ -16,15 +16,13 @@ helpviewer_keywords:
 ms.assetid: a30102ff-c52e-48c9-b3a9-aa14286a42b2
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # InitDbgTransportManager Function
 Initializes the transport manager to connect to a remote target for process and runtime enumeration.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT InitDbgTransportManager ();  
 ```  
   

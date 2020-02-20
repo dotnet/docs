@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c7f941cd-e25b-4b85-b1ce-5f77c9208fa9
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedDocument::GetCheckSumAlgorithmId Method
 Gets the checksum algorithm identifier, or returns a GUID of all zeros if there is no checksum.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCheckSumAlgorithmId(  
     [out, retval] GUID*  pRetVal);  
 ```  

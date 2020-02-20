@@ -24,7 +24,7 @@ Defines an address range.
 
 ## Syntax
 
-```
+```cpp
 typedef struct
 {
     CLRDATA_ADDRESS startAddress;
@@ -45,12 +45,12 @@ This structure lives inside the runtime and is not exposed through any headers o
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
 **Header:** None  
 **Library:** None  
 **.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
 
 ## See also
 
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
+- [Debugging](index.md)
+- [Debugging Structures](debugging-structures.md)

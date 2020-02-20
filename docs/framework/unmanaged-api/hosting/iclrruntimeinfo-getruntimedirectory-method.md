@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 4401546e-4d48-453f-a1fb-b2ebda54df5c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRRuntimeInfo::GetRuntimeDirectory Method
 Gets the installation directory of the common language runtime (CLR) associated with this interface.  
@@ -25,7 +23,7 @@ Gets the installation directory of the common language runtime (CLR) associated 
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetRuntimeDirectory(  
 [out, size_is(*pcchBuffer)] LPWSTR pwzBuffer,  
 [in, out]  DWORD *pcchBuffer);  

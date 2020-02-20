@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 58eed4c8-d80c-4c6a-a875-967a90dd926c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugChain::GetPrevious Method
 Gets the previous chain of frames for the thread.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetPrevious (  
     [out] ICorDebugChain     **ppChain  
 );  

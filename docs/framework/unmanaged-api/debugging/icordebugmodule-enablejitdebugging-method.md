@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 0a65e2a4-5bb6-496c-ae6f-40474426b5a6
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugModule::EnableJITDebugging Method
 Controls whether the just-in-time (JIT) compiler preserves debugging information for methods within this module.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnableJITDebugging(  
     [in] BOOL bTrackJITInfo,  
     [in] BOOL bAllowJitOpts  

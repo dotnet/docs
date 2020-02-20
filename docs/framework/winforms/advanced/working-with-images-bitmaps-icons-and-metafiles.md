@@ -11,7 +11,7 @@ helpviewer_keywords:
 ms.assetid: a626d701-bd99-4fd8-b92f-7b8f794e042b
 ---
 # Working with Images, Bitmaps, Icons, and Metafiles
-[!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] provides the `Bitmap` class for working with raster images and the `Metafile` class for working with vector images. The `Bitmap` and the `Metafile` classes both inherit from the `Image` class.  
+GDI+ provides the `Bitmap` class for working with raster images and the `Metafile` class for working with vector images. The `Bitmap` and the `Metafile` classes both inherit from the `Image` class.  
   
 ## In This Section  
  [How to: Draw an Existing Bitmap to the Screen](how-to-draw-an-existing-bitmap-to-the-screen.md)  

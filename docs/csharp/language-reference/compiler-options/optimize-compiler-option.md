@@ -31,7 +31,7 @@ The **-optimize** option enables or disables optimizations performed by the comp
   
  **-o** is the short form of **-optimize**.  
   
- It is possible to combine the **-optimize** and [-debug](../../../csharp/language-reference/compiler-options/debug-compiler-option.md) options.  
+ It is possible to combine the **-optimize** and [-debug](./debug-compiler-option.md) options.  
   
 ### To set this compiler option in the Visual Studio development environment  
   
@@ -52,5 +52,5 @@ csc t2.cs -optimize
   
 ## See also
 
-- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)
+- [C# Compiler Options](./index.md)
 - [Managing Project and Solution Properties](/visualstudio/ide/managing-project-and-solution-properties)

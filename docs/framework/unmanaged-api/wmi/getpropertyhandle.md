@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "GetPropertyHandle function [.NET WMI and performance counters]"
 topic_type:
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # GetPropertyHandle function
@@ -48,7 +46,7 @@ HRESULT GetPropertyHandle (
 [in] A null-terminated string of UTF16-encoded characters that contains the property name.
 
 `pType`\
-[out] A pointer to a [`CIMTYPE`](/windows/desktop/api/wbemcli/ne-wbemcli-tag_cimtype_enumeration) enumeration member that represents the CIM type of the property.
+[out] A pointer to a [`CIMTYPE`](/windows/win32/api/wbemcli/ne-wbemcli-cimtype_enumeration) enumeration member that represents the CIM type of the property.
 
 `pHandle`\
 [out] A pointer to an integer that contains the property handle.
@@ -74,7 +72,7 @@ Handles can be retrieved for properties of all data types other than `CIM_OBJECT
 
 ## Requirements
 
-**Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).
+**Platforms:** See [System Requirements](../../get-started/system-requirements.md).
 
 **Header:** WMINet_Utils.idl
 

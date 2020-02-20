@@ -1,5 +1,5 @@
 ---
-title: "Partitioning Data (Visual Basic)"
+title: "Partitioning Data"
 ms.date: 07/20/2015
 ms.assetid: 69c59379-b66e-422c-b324-5b5c07760ef7
 ---

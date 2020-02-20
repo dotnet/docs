@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: d5237628-2675-45ed-a39e-65c0731b6a56
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::SaveToMemory Method
 Saves all metadata in the current scope to the specified area of memory.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SaveToMemory (   
     [out]  void        *pbData,   
     [in]   ULONG       cbData   

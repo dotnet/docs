@@ -1,5 +1,5 @@
 ---
-title: "Object required (Visual Basic)"
+title: "Object required"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID424"

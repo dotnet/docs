@@ -1,8 +1,6 @@
 ---
 title: What's new in .NET Core 2.0
 description: Learn about the new features found in .NET Core.
-author: rpetrusha
-ms.author: ronpet
 ms.date: 08/13/2017
 ---
 # What's new in .NET Core 2.0
@@ -132,7 +130,7 @@ To retarget your project in Visual Studio, you open the **Application** tab of t
 
 Whenever you modify your code, Live Unit Testing automatically runs any affected unit tests in the background and displays the results and code coverage live in the Visual Studio environment. .NET Core 2.0 now supports Live Unit Testing. Previously, Live Unit Testing was available only for .NET Framework applications.
 
-For more information, see [Live Unit Testing with Visual Studio 2017](/visualstudio/test/live-unit-testing) and the [Live Unit Testing FAQ](/visualstudio/test/live-unit-testing-faq).
+For more information, see [Live Unit Testing with Visual Studio](/visualstudio/test/live-unit-testing) and the [Live Unit Testing FAQ](/visualstudio/test/live-unit-testing-faq).
 
 ### Better support for multiple target frameworks
 
@@ -148,10 +146,10 @@ You can now install the .NET Core SDK independently of Visual Studio. This makes
 
 ### .NET Application Architecture
 
-[.NET Application Architecture](https://www.microsoft.com/net/learn/architecture) gives you access to a set of e-books that provide guidance, best practices, and sample applications when using .NET to build:
+[.NET Application Architecture](https://dotnet.microsoft.com/learn/dotnet/architecture-guides) gives you access to a set of e-books that provide guidance, best practices, and sample applications when using .NET to build:
 
-- [Microservices and Docker containers](../../standard/microservices-architecture/index.md)
-- [Web applications with ASP.NET](../../standard/modern-web-apps-azure-architecture/index.md)
+- [Microservices and Docker containers](../../architecture/microservices/index.md)
+- [Web applications with ASP.NET](../../architecture/modern-web-apps-azure/index.md)
 - [Mobile applications with Xamarin](/xamarin/xamarin-forms/enterprise-application-patterns/index)
 - [Applications that are deployed to the Cloud with Azure](/azure/architecture/reference-architectures/index)
 

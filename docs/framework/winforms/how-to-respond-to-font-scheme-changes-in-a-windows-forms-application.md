@@ -1,5 +1,6 @@
 ---
-title: "How to: Respond to Font Scheme Changes in a Windows Forms Application"
+title: Respond to Font Scheme Changes in a Windows Forms app
+titleSuffix: ""
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -56,7 +57,7 @@ In the Windows operating systems, a user can change the system-wide font setting
  [!code-csharp[WinFormsAutoScaling#1](~/samples/snippets/csharp/VS_Snippets_Winforms/WinFormsAutoScaling/CS/Form1.cs#1)]
  [!code-vb[WinFormsAutoScaling#1](~/samples/snippets/visualbasic/VS_Snippets_Winforms/WinFormsAutoScaling/VB/Form1.vb#1)]  
   
- The constructer in this code example contains a call to `InitializeComponent`, which is defined when you create a new Windows Forms project in Visual Studio. Remove this line of code if you are building your application on the command line.  
+ The constructor in this code example contains a call to `InitializeComponent`, which is defined when you create a new Windows Forms project in Visual Studio. Remove this line of code if you are building your application on the command line.  
   
 ## See also
 

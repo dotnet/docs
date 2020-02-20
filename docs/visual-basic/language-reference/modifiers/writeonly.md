@@ -1,5 +1,5 @@
 ---
-title: "WriteOnly (Visual Basic)"
+title: "WriteOnly"
 ms.date: 07/20/2015
 f1_keywords: 
   - "WriteOnly"
@@ -26,7 +26,7 @@ Specifies that a property can be written but not read.
  Sometimes you want the consuming code to be able to set a value but not discover what it is. For example, sensitive data, such as a social registration number or a password, needs to be protected from access by any component that did not set it. In these cases, you can use a `WriteOnly` property to set the value.  
   
 > [!IMPORTANT]
->  When you define and use a `WriteOnly` property, consider the following additional protective measures:  
+> When you define and use a `WriteOnly` property, consider the following additional protective measures:  
   
 - **Overriding.** If the property is a member of a class, allow it to default to [NotOverridable](../../../visual-basic/language-reference/modifiers/notoverridable.md), and do not declare it `Overridable` or `MustOverride`. This prevents a derived class from making undesired access through an override.  
   

@@ -1,6 +1,5 @@
 ---
-title: "How to: Subscribe to and Unsubscribe from Events - C# Programming Guide"
-ms.custom: seodec18
+title: "How to subscribe to and unsubscribe from events - C# Programming Guide"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "event handlers [C#], creating"
@@ -8,7 +7,7 @@ helpviewer_keywords:
   - "events [C#], creating using the IDE"
 ms.assetid: 6319f39f-282c-4173-8a62-6c4657cf51cd
 ---
-# How to: Subscribe to and Unsubscribe from Events (C# Programming Guide)
+# How to subscribe to and unsubscribe from events (C# Programming Guide)
 You subscribe to an event that is published by another class when you want to write custom code that is called when that event is raised. For example, you might subscribe to a button's `click` event in order to make your application do something useful when the user clicks the button.  
   
 ### To subscribe to events by using the Visual Studio IDE  
@@ -40,7 +39,7 @@ You subscribe to an event that is published by another class when you want to wr
     }  
     ```  
   
-2. Use the addition assignment operator (`+=`) to attach your event handler to the event. In the following example, assume that an object named `publisher` has an event named `RaiseCustomEvent`. Note that the subscriber class needs a reference to the publisher class in order to subscribe to its events.  
+2. Use the addition assignment operator (`+=`) to attach an event handler to the event. In the following example, assume that an object named `publisher` has an event named `RaiseCustomEvent`. Note that the subscriber class needs a reference to the publisher class in order to subscribe to its events.  
   
     ```csharp
     publisher.RaiseCustomEvent += HandleCustomEvent;  
@@ -52,19 +51,18 @@ You subscribe to an event that is published by another class when you want to wr
     publisher.RaiseCustomEvent += new CustomEventHandler(HandleCustomEvent);  
     ```  
   
-     An event handler can also be added by using a lambda expression:  
+     You also can use a [lambda expression](../statements-expressions-operators/lambda-expressions.md) to specify an event handler:
   
     ```csharp
     public Form1()  
     {  
         InitializeComponent();  
-        // Use a lambda expression to define an event handler.  
-        this.Click += (s,e) => { MessageBox.Show(  
-           ((MouseEventArgs)e).Location.ToString());};  
+        this.Click += (s,e) =>
+            {
+                MessageBox.Show(((MouseEventArgs)e).Location.ToString());
+            };
     }  
     ```  
-  
-     For more information, see [How to: Use Lambda Expressions Outside LINQ](../../../csharp/programming-guide/statements-expressions-operators/how-to-use-lambda-expressions-outside-linq.md).  
   
 ### To subscribe to events by using an anonymous method  
   
@@ -78,7 +76,7 @@ You subscribe to an event that is published by another class when you want to wr
     };  
     ```  
   
-     It is important to notice that you cannot easily unsubscribe from an event if you used an anonymous function to subscribe to it. To unsubscribe in this scenario, it is necessary to go back to the code where you subscribe to the event, store the anonymous method in a delegate variable, and then add the delegate to the event. In general, we recommend that you do not use anonymous functions to subscribe to events if you will have to unsubscribe from the event at some later point in your code. For more information about anonymous functions, see [Anonymous Functions](../../../csharp/programming-guide/statements-expressions-operators/anonymous-functions.md).  
+     It is important to notice that you cannot easily unsubscribe from an event if you used an anonymous function to subscribe to it. To unsubscribe in this scenario, it is necessary to go back to the code where you subscribe to the event, store the anonymous method in a delegate variable, and then add the delegate to the event. In general, we recommend that you do not use anonymous functions to subscribe to events if you will have to unsubscribe from the event at some later point in your code. For more information about anonymous functions, see [Anonymous Functions](../statements-expressions-operators/anonymous-functions.md).  
   
 ## Unsubscribing  
  To prevent your event handler from being invoked when the event is raised, unsubscribe from the event. In order to prevent resource leaks, you should unsubscribe from events before you dispose of a subscriber object. Until you unsubscribe from an event, the multicast delegate that underlies the event in the publishing object has a reference to the delegate that encapsulates the subscriber's event handler. As long as the publishing object holds that reference, garbage collection will not delete your subscriber object.  
@@ -95,8 +93,8 @@ You subscribe to an event that is published by another class when you want to wr
   
 ## See also
 
-- [Events](../../../csharp/programming-guide/events/index.md)
-- [event](../../../csharp/language-reference/keywords/event.md)
-- [How to: Publish Events that Conform to .NET Framework Guidelines](../../../csharp/programming-guide/events/how-to-publish-events-that-conform-to-net-framework-guidelines.md)
+- [Events](./index.md)
+- [event](../../language-reference/keywords/event.md)
+- [How to publish events that conform to .NET Framework Guidelines](./how-to-publish-events-that-conform-to-net-framework-guidelines.md)
 - [- and -= operators](../../language-reference/operators/subtraction-operator.md)
 - [+ and += operators](../../language-reference/operators/addition-operator.md)

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 0bfbc527-bea2-43ce-b041-69186f4440dd
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostMAlloc::DebugAlloc Method
 Requests that the host allocate the specified amount of memory from the heap, and additionally track where the memory was allocated.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DebugAlloc (  
     [in]  SIZE_T  cbSize,   
     [in]  EMemoryCriticalLevel dwCriticalLevel,   

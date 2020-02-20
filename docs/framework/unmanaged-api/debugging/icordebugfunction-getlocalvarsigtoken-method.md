@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 31e53494-bcc9-4981-91a4-f7e0f02cad48
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugFunction::GetLocalVarSigToken Method
 Gets the metadata token for the local variable signature of the function that is represented by this ICorDebugFunction instance.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetLocalVarSigToken (  
     [out] mdSignature *pmdSig  
 );  

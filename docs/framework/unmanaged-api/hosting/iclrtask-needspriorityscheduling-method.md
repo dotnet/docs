@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 9c9db3f3-26bf-4317-88de-5eb926a22a1d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRTask::NeedsPriorityScheduling Method
 Gets a value that indicates whether the current task, which is being switched out, needs to be marked as a high priority for rescheduling.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT NeedsPriorityScheduling (  
     [out] BOOL *pbNeedsPriorityScheduling  
 );  

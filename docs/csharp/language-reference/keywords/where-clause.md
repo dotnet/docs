@@ -1,7 +1,5 @@
 ---
 title: "where clause - C# Reference"
-ms.custom: seodec18
-
 ms.date: 07/20/2015
 f1_keywords: 
   - "whereclause_CSharpKeyword"
@@ -36,7 +34,7 @@ A `where` clause may contain one or more methods that return Boolean values. In 
 
 The `where` clause is a filtering mechanism. It can be positioned almost anywhere in a query expression, except it cannot be the first or last clause. A `where` clause may appear either before or after a [group](group-clause.md) clause depending on whether you have to filter the source elements before or after they are grouped.
 
-If a specified predicate is not valid for the elements in the data source, a compile-time error will result. This is one benefit of the strong type-checking provided by [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)].
+If a specified predicate is not valid for the elements in the data source, a compile-time error will result. This is one benefit of the strong type-checking provided by LINQ.
 
 At compile time the `where` keyword is converted into a call to the <xref:System.Linq.Enumerable.Where%2A> Standard Query Operator method.
 
@@ -46,5 +44,5 @@ At compile time the `where` keyword is converted into a call to the <xref:System
 - [from clause](from-clause.md)
 - [select clause](select-clause.md)
 - [Filtering Data](../../programming-guide/concepts/linq/filtering-data.md)
-- [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)
-- [Getting Started with LINQ in C#](../../programming-guide/concepts/linq/getting-started-with-linq.md)
+- [LINQ in C#](../../linq/index.md)
+- [Getting Started with LINQ in C#](/dotnet/csharp/programming-guide/concepts/linq/)

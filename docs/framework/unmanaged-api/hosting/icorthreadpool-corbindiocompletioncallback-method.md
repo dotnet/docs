@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 2b159225-f09c-42f1-aa7c-44087e121249
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorThreadpool::CorBindIoCompletionCallback Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CorBindIoCompletionCallback (  
     [in] HANDLE                          fileHandle,  
     [in] LPOVERLAPPED_COMPLETION_ROUTINE callback  

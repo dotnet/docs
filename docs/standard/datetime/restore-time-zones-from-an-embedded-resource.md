@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "time zones [.NET Framework], deserializing"
   - "time zones [.NET Framework], restoring"
 ms.assetid: 6b7b4de9-da07-47e3-8f4c-823f81798ee7
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Restore time zones from an embedded resource
 
@@ -45,9 +43,9 @@ Because data for custom time zones (time zones instantiated by using the <xref:S
 
 This example requires:
 
-* That a reference to System.Windows.Forms.dll and System.Core.dll be added to the project.
+- That a reference to System.Windows.Forms.dll and System.Core.dll be added to the project.
 
-* That the following namespaces be imported:
+- That the following namespaces be imported:
 
   [!code-csharp[TimeZone2.Serialization#2](../../../samples/snippets/csharp/VS_Snippets_CLR/TimeZone2.Serialization/cs/SerializeTimeZoneData.cs#2)]
   [!code-vb[TimeZone2.Serialization#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/TimeZone2.Serialization/vb/SerializeTimeZoneData.vb#2)]

@@ -15,7 +15,7 @@ The <xref:System.Data.DataView> provides several ways of sorting and filtering d
   
 - You can use the <xref:System.Data.DataView.RowFilter%2A> property to specify subsets of rows based on their column values. For details about valid expressions for the **RowFilter** property, see the reference information for the <xref:System.Data.DataColumn.Expression%2A> property of the <xref:System.Data.DataColumn> class.  
   
-     If you want to return the results of a particular query on the data, as opposed to providing a dynamic view of a subset of the data, use the <xref:System.Data.DataView.Find%2A> or <xref:System.Data.DataView.FindRows%2A> methods of the **DataView** to achieve best performance rather than setting the **RowFilter** property. Setting the **RowFilter** property rebuilds the index for the data, adding overhead to your application and decreasing performance. The **RowFilter** property is best used in a data-bound application where a bound control displays filtered results. The **Find** and **FindRows** methods leverage the current index without requiring the index to be rebuilt. For more information about the **Find** and **FindRows** methods, see [Finding Rows](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/finding-rows.md).  
+     If you want to return the results of a particular query on the data, as opposed to providing a dynamic view of a subset of the data, use the <xref:System.Data.DataView.Find%2A> or <xref:System.Data.DataView.FindRows%2A> methods of the **DataView** to achieve best performance rather than setting the **RowFilter** property. Setting the **RowFilter** property rebuilds the index for the data, adding overhead to your application and decreasing performance. The **RowFilter** property is best used in a data-bound application where a bound control displays filtered results. The **Find** and **FindRows** methods leverage the current index without requiring the index to be rebuilt. For more information about the **Find** and **FindRows** methods, see [Finding Rows](finding-rows.md).  
   
 - You can use the <xref:System.Data.DataView.RowStateFilter%2A> property to specify which row versions to view. The **DataView** implicitly manages which row version to expose depending upon the **RowState** of the underlying row. For example, if the **RowStateFilter** is set to **DataViewRowState.Deleted**, the **DataView** exposes the **Original** row version of all **Deleted** rows because there is no **Current** row version. You can determine which row version of a row is being exposed by using the **RowVersion** property of the **DataRowView**.  
   
@@ -32,7 +32,7 @@ The <xref:System.Data.DataView> provides several ways of sorting and filtering d
     |**OriginalRows**|The **Original** row version of all **Unchanged**, **Modified**, and **Deleted** rows.|  
     |**Unchanged**|The **Current** row version of all **Unchanged** rows.|  
   
- For more information about row states and row versions, see [Row States and Row Versions](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/row-states-and-row-versions.md).  
+ For more information about row states and row versions, see [Row States and Row Versions](row-states-and-row-versions.md).  
   
  The following code example creates a view that shows all the products where the number of units in stock is less than or equal to the reorder level, sorted first by supplier ID and then by product name.  
   
@@ -56,5 +56,5 @@ DataView prodView = new DataView(prodDS.Tables["Products"],
 - <xref:System.Data.DataColumn.Expression%2A?displayProperty=nameWithType>
 - <xref:System.Data.DataTable>
 - <xref:System.Data.DataView>
-- [DataViews](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/dataviews.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [DataViews](dataviews.md)
+- [ADO.NET Overview](../ado-net-overview.md)

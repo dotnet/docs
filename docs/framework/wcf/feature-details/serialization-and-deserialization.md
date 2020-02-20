@@ -16,7 +16,7 @@ Windows Communication Foundation (WCF) includes a new serialization engine, the 
  WCF also includes a companion serializer, the <xref:System.Runtime.Serialization.NetDataContractSerializer>. The <xref:System.Runtime.Serialization.NetDataContractSerializer> is similar to the <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> and <xref:System.Runtime.Serialization.Formatters.Soap.SoapFormatter> serializers because it also emits .NET Framework type names as part of the serialized data. It is used when the same types are shared on the serializing and the deserializing ends. Both the <xref:System.Runtime.Serialization.DataContractSerializer> and the <xref:System.Runtime.Serialization.NetDataContractSerializer> derive from a common base class, the <xref:System.Runtime.Serialization.XmlObjectSerializer>.  
   
 > [!WARNING]
->  The <xref:System.Runtime.Serialization.DataContractSerializer> serializes strings containing control characters with a hexadecimal value below 20 as XML entities. This may cause a problem with a non-WCF client when sending such data to a WCF service.  
+> The <xref:System.Runtime.Serialization.DataContractSerializer> serializes strings containing control characters with a hexadecimal value below 20 as XML entities. This may cause a problem with a non-WCF client when sending such data to a WCF service.  
   
 ## Creating a DataContractSerializer Instance  
  Constructing an instance of the <xref:System.Runtime.Serialization.DataContractSerializer> is an important step. After construction, you cannot change any of the settings.  
@@ -121,7 +121,7 @@ Windows Communication Foundation (WCF) includes a new serialization engine, the 
  The "ser" namespace refers to the standard serialization namespace, `http://schemas.microsoft.com/2003/10/Serialization/`. Each piece of data is serialized only once and given an ID number, and subsequent uses result in a reference to the already serialized data.  
   
 > [!IMPORTANT]
->  If both "id" and "ref" attributes are present in the data contract `XMLElement`, then the "ref" attribute is honored and the "id" attribute is ignored.  
+> If both "id" and "ref" attributes are present in the data contract `XMLElement`, then the "ref" attribute is honored and the "id" attribute is ignored.  
   
  It is important to understand the limitations of this mode:  
   
@@ -132,7 +132,7 @@ Windows Communication Foundation (WCF) includes a new serialization engine, the 
 - This feature may cause the serialization and deserialization process to run slower. Although data does not have to be replicated, extra object comparisons must be performed in this mode.  
   
 > [!CAUTION]
->  When the `preserveObjectReferences` mode is enabled, it is especially important to set the `maxItemsInObjectGraph` value to the correct quota. Due to the way arrays are handled in this mode, it is easy for an attacker to construct a small malicious message that results in large memory consumption limited only by the `maxItemsInObjectGraph` quota.  
+> When the `preserveObjectReferences` mode is enabled, it is especially important to set the `maxItemsInObjectGraph` value to the correct quota. Due to the way arrays are handled in this mode, it is easy for an attacker to construct a small malicious message that results in large memory consumption limited only by the `maxItemsInObjectGraph` quota.  
   
 ### Specifying a Data Contract Surrogate  
  Some `DataContractSerializer` constructor overloads have a `dataContractSurrogate` parameter, which may be set to `null`. Otherwise, you can use it to specify a *data contract surrogate*, which is a type that implements the <xref:System.Runtime.Serialization.IDataContractSurrogate> interface. You can then use the interface to customize the serialization and deserialization process. For more information, see [Data Contract Surrogates](../../../../docs/framework/wcf/extending/data-contract-surrogates.md).  
@@ -163,7 +163,7 @@ Windows Communication Foundation (WCF) includes a new serialization engine, the 
  Use the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteStartObject%2A>, <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObjectContent%2A>, and <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteEndObject%2A> methods to write the end element, write the object contents, and close the wrapper element, respectively.  
   
 > [!NOTE]
->  There are no <xref:System.IO.Stream> overloads of these methods.  
+> There are no <xref:System.IO.Stream> overloads of these methods.  
   
  This step-by-step serialization has two common uses. One is to insert contents such as attributes or comments between `WriteStartObject` and `WriteObjectContent`,  as shown in the following example.  
   
@@ -194,7 +194,7 @@ Windows Communication Foundation (WCF) includes a new serialization engine, the 
 ```  
   
 > [!NOTE]
->  Using step-by-step serialization may result in schema-invalid XML.  
+> Using step-by-step serialization may result in schema-invalid XML.  
   
 ## Deserialization  
  The following information applies to any class that inherits from the <xref:System.Runtime.Serialization.XmlObjectSerializer>, including the <xref:System.Runtime.Serialization.DataContractSerializer> and <xref:System.Runtime.Serialization.NetDataContractSerializer> classes.  
@@ -248,7 +248,7 @@ Windows Communication Foundation (WCF) includes a new serialization engine, the 
   
 - The <xref:System.Runtime.Serialization.NetDataContractSerializer.Serialize%2A> and <xref:System.Runtime.Serialization.NetDataContractSerializer.Deserialize%2A> methods are aliases for the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObject%2A> and <xref:System.Runtime.Serialization.XmlObjectSerializer.ReadObject%2A> methods. These exist to provide a more consistent programming model with binary or SOAP serialization.  
   
- For more information about these features, see [Binary Serialization](../../../../docs/standard/serialization/binary-serialization.md).  
+ For more information about these features, see [Binary Serialization](../../../standard/serialization/binary-serialization.md).  
   
  The XML formats that the `NetDataContractSerializer` and the `DataContractSerializer` use are normally not compatible. That is, attempting to serialize with one of these serializers and deserialize with the other is not a supported scenario.  
   
@@ -259,5 +259,5 @@ Windows Communication Foundation (WCF) includes a new serialization engine, the 
 - <xref:System.Runtime.Serialization.DataContractSerializer>
 - <xref:System.Runtime.Serialization.NetDataContractSerializer>
 - <xref:System.Runtime.Serialization.XmlObjectSerializer>
-- [Binary Serialization](../../../../docs/standard/serialization/binary-serialization.md)
+- [Binary Serialization](../../../standard/serialization/binary-serialization.md)
 - [Types Supported by the Data Contract Serializer](../../../../docs/framework/wcf/feature-details/types-supported-by-the-data-contract-serializer.md)

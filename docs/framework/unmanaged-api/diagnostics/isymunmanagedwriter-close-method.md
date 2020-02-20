@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 4cce59e1-80b9-4fc4-b3aa-126f1c5876bc
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedWriter::Close Method
 Closes the symbol writer after committing the symbols to the symbol store.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Close();  
 ```  
   

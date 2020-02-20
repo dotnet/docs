@@ -1,5 +1,5 @@
 ---
-title: "How to: Find the Minimum or Maximum Value in a Query Result by Using LINQ (Visual Basic)"
+title: "How to: Find the Minimum or Maximum Value in a Query Result by Using LINQ"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "max operator [LINQ in Visual Basic]"

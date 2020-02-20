@@ -15,7 +15,7 @@ ms.assetid: 78a58a8d-1041-4e38-9219-4096fa6a5c5c
 ---
 # How to: Add Buttons to a ToolBar Control
 > [!NOTE]
->  The <xref:System.Windows.Forms.ToolStrip> control replaces and adds functionality to the <xref:System.Windows.Forms.ToolBar> control; however, the <xref:System.Windows.Forms.ToolBar> control is retained for both backward compatibility and future use, if you choose.  
+> The <xref:System.Windows.Forms.ToolStrip> control replaces and adds functionality to the <xref:System.Windows.Forms.ToolBar> control; however, the <xref:System.Windows.Forms.ToolBar> control is retained for both backward compatibility and future use, if you choose.  
   
  An integral part of the <xref:System.Windows.Forms.ToolBar> control is the buttons you add to it. These can be used to provide easy access to menu commands or, alternately, they can be placed in another area of the user interface of your application to expose commands to your users that are not available in the menu structure.  
   
@@ -30,7 +30,7 @@ ms.assetid: 78a58a8d-1041-4e38-9219-4096fa6a5c5c
      The example below assumes a form with a <xref:System.Windows.Forms.ToolBar> control already added.  
   
     > [!NOTE]
-    >  The <xref:System.Windows.Forms.ToolBar.Buttons%2A?displayProperty=nameWithType> collection is a zero-based collection, so code should proceed accordingly.  
+    > The <xref:System.Windows.Forms.ToolBar.Buttons%2A?displayProperty=nameWithType> collection is a zero-based collection, so code should proceed accordingly.  
   
     ```vb  
     Public Sub CreateToolBarButtons()  

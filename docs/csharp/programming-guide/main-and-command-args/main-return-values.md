@@ -1,6 +1,5 @@
 ---
 title: "Main() Return Values - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 08/02/2017
 helpviewer_keywords: 
   - "Main method [C#], return values"
@@ -21,7 +20,7 @@ If the return value from `Main` is not used, returning `void` allows for slightl
 
 ## Example
 
-This example uses [.NET Core](../../../core/index.md) command line tools. If you are unfamiliar with .NET Core command line tools, you can learn about them in this [Get started topic](../../../core/tutorials/using-with-xplat-cli.md).
+This example uses [.NET Core](../../../core/index.md) command line tools. If you are unfamiliar with .NET Core command line tools, you can learn about them in this [Get started topic](../../../core/tutorials/cli-create-console-app.md).
 
 Modify the `Main` method in *program.cs* as follows:
 
@@ -35,8 +34,11 @@ Next, create a Powershell script to run the application and display the result. 
 
 Because the code returns zero, the batch file will report success. However, if you change MainReturnValTest.cs to return a non-zero value and then re-compile the program, subsequent execution of the powershell script will report failure.
 
-```powershell
+```dotnetcli
 dotnet run
+```
+
+```powershell
 if ($LastExitCode -eq 0) {
     Write-Host "Execution succeeded"
 } else
@@ -90,7 +92,7 @@ When the application entry point returns a `Task` or `Task<int>`, the compiler g
 
 ## See also
 
-- [C# Programming Guide](../../programming-guide/index.md)
+- [C# Programming Guide](../index.md)
 - [C# Reference](../index.md)
 - [Main() and Command-Line Arguments](index.md)
-- [How to: Display Command Line Arguments](../../programming-guide/main-and-command-args/how-to-display-command-line-arguments.md)
+- [How to display command line arguments](./how-to-display-command-line-arguments.md)

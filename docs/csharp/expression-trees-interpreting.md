@@ -2,6 +2,8 @@
 title: Interpreting Expressions
 description: Learn how to write code to examine the structure of an expression tree.
 ms.date: 06/20/2016
+ms.technology: csharp-advanced-concepts
+
 ms.assetid: adf73dde-1e52-4df3-9929-2e0670e28e16
 ---
 
@@ -36,7 +38,7 @@ Console.WriteLine($"The value of the constant value is {constant.Value}");
 
 This will print the following:
 
-```
+```output
 This is an Constant expression type
 The type of the constant value is System.Int32
 The value of the constant value is 24
@@ -91,7 +93,7 @@ Console.WriteLine($"\tParameter Type: {right.Type.ToString()}, Name: {right.Name
 
 This sample prints the following output:
 
-```
+```output
 This expression is a/an Lambda expression type
 The name of the lambda is <null>
 The return type is System.Int32
@@ -241,7 +243,7 @@ is encountered. That way, you know to add a new expression type.)
 When you run this visitor on the addition expression shown above, you get the
 following output:
 
-```
+```output
 This expression is a/an Lambda expression type
 The name of the lambda is <null>
 The return type is System.Int32
@@ -311,7 +313,7 @@ Expression<Func<int, int>> sum = (a) => 1 + a + 3 + 4;
 
 Create a visitor for this sum and run the visitor you'll see this output:
 
-```
+```output
 This expression is a/an Lambda expression type
 The name of the lambda is <null>
 The return type is System.Int32
@@ -352,7 +354,7 @@ Expression<Func<int, int, int>> sum3 = (a, b) => (1 + a) + (3 + b);
 
 Here's the output from the visitor:
 
-```
+```output
 This expression is a/an Lambda expression type
 The name of the lambda is <null>
 The return type is System.Int32
@@ -413,6 +415,7 @@ form. In the section on [building expression trees](expression-trees-building.md
 you'll learn techniques to overcome these limitations.
 
 In this expression, you'll encounter nodes of all these types:
+
 1. Equal (binary expression)
 2. Multiply (binary expression)
 3. Conditional (the ? : expression)
@@ -510,7 +513,7 @@ public class MethodCallVisitor : Visitor
 
 And the output for the expression tree would be:
 
-```
+```output
 This expression is a/an Lambda expression type
 The name of the lambda is <null>
 The return type is System.Int32

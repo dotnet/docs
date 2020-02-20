@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: fc7d9448-3186-494d-9f0d-ea39717e9a82
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IGCHost::Collect Method
 Forces a collection to occur for the given generation, regardless of the state of the current garbage collection.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Collect (  
     [in] LONG Generation  
 );  

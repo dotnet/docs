@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 4dff3646-a050-4bd9-ac31-fe307e8637ec
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostMemoryManager::VirtualAlloc Method
 Serves as a logical wrapper for the corresponding Win32 function. The Win32 implementation of `VirtualAlloc` reserves or commits a region of pages in the virtual address space of the calling process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT VirtualAlloc (  
     [in]  void*   pAddress,  
     [in]  SIZE_T  dwSize,  

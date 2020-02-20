@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 826baa9b-9218-4736-a509-7ab193b125a0
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IGCHost::GetThreadStats Method
 Gets the per-thread statistics for garbage collection.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetThreadStats (  
     [in] DWORD *pFiberCookie,  
     [in, out] COR_GC_THREAD_STATS *pStats  

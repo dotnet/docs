@@ -1,9 +1,9 @@
 ---
-title: "How to: Read Object Data from an XML File (C#)"
+title: "How to read object data from an XML file (C#)"
 ms.date: 07/20/2015
 ms.assetid: 6ad60d96-a4d9-48e6-a8b0-d7f6f803cafa
 ---
-# How to: Read Object Data from an XML File (C#)
+# How to read object data from an XML file (C#)
 This example reads object data that was previously written to an XML file using the <xref:System.Xml.Serialization.XmlSerializer> class.  
   
 ## Example  
@@ -37,7 +37,7 @@ public void ReadXML()
 ```  
   
 ## Compiling the Code  
- Replace the file name "c:\temp\SerializationOverview.xml" with the name of the file containing the serialized data. For more information about serializing data, see [How to: Write Object Data to an XML File (C#)](../../../../csharp/programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md).  
+Replace the file name "c:\temp\SerializationOverview.xml" with the name of the file containing the serialized data. For more information about serializing data, see [How to write object data to an XML file (C#)](./how-to-write-object-data-to-an-xml-file.md).
   
  The class must have a public constructor without parameters.  
   
@@ -58,6 +58,6 @@ public void ReadXML()
 ## See also
 
 - <xref:System.IO.StreamWriter>
-- [How to: Write Object Data to an XML File (C#)](../../../../csharp/programming-guide/concepts/serialization/how-to-write-object-data-to-an-xml-file.md)
-- [Serialization (C#)](../../../../csharp/programming-guide/concepts/serialization/index.md)
-- [C# Programming Guide](../../../../csharp/programming-guide/index.md)
+- [How to write object data to an XML file (C#)](./how-to-write-object-data-to-an-xml-file.md)
+- [Serialization (C#)](./index.md)
+- [C# Programming Guide](../../index.md)

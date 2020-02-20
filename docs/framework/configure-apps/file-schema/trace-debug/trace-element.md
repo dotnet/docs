@@ -14,9 +14,9 @@ ms.assetid: 7931c942-63c1-47c3-a045-9d9de3cacdbf
 # \<trace> Element
 Contains listeners that collect, store, and route tracing messages.  
   
- \<configuration>  
-\<system.diagnostics>  
-\<trace>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;**\<trace>**  
   
 ## Syntax  
   
@@ -55,7 +55,7 @@ Contains listeners that collect, store, and route tracing messages.
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<listeners>](../../../../../docs/framework/configure-apps/file-schema/trace-debug/listeners-element-for-trace.md)|Specifies a listener that collects, stores, and routes messages.|  
+|[\<listeners>](listeners-element-for-trace.md)|Specifies a listener that collects, stores, and routes messages.|  
   
 ### Parent Elements  
   
@@ -85,4 +85,4 @@ Contains listeners that collect, store, and route tracing messages.
 - <xref:System.Diagnostics.DefaultTraceListener>
 - <xref:System.Diagnostics.TextWriterTraceListener>
 - <xref:System.Diagnostics.EventLogTraceListener>
-- [Trace and Debug Settings Schema](../../../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+- [Trace and Debug Settings Schema](index.md)

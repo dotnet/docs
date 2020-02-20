@@ -21,7 +21,7 @@ The SQL Workflow Instance Store records a set of well-known properties in the st
 - **Last Machine**. The computer on which the workflow service instance ran the last time.  
   
 > [!NOTE]
->  For self-hosted scenarios using Workflow Service Host, only the last four properties are populated. For Workflow Application scenarios, only the last property is populated.  
+> For self-hosted scenarios using Workflow Service Host, only the last four properties are populated. For Workflow Application scenarios, only the last property is populated.  
   
  The workflow runtime supplies values for the first three properties. The workflow service host supplies the value for the **Suspend Reason** property. The SQL Workflow Instance Store itself supplies values for the **Last Updated Machine** property.  
   

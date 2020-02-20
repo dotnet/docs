@@ -5,15 +5,13 @@ helpviewer_keywords:
   - "gcAllowVeryLargeObjects element"
   - "<gcAllowVeryLargeObjects> element"
 ms.assetid: 5c7ea24a-39ac-4e5f-83b7-b9f9a1b556ab
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<gcAllowVeryLargeObjects> Element
 On 64-bit platforms, enables arrays that are greater than 2 gigabytes (GB) in total size.  
   
- \<configuration> Element  
-\<runtime> Element  
-\<gcAllowVeryLargeObjects> Element  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<gcAllowVeryLargeObjects>**  
   
 ## Syntax  
   
@@ -58,7 +56,7 @@ On 64-bit platforms, enables arrays that are greater than 2 gigabytes (GB) in to
 - The maximum size for strings and other non-array objects is unchanged.  
   
 > [!CAUTION]
->  Before enabling this feature, ensure that your application does not include unsafe code that assumes that all arrays are smaller than 2 GB in size. For example, unsafe code that uses arrays as buffers might be susceptible to buffer overruns if it is written on the assumption that arrays will not exceed 2 GB.  
+> Before enabling this feature, ensure that your application does not include unsafe code that assumes that all arrays are smaller than 2 GB in size. For example, unsafe code that uses arrays as buffers might be susceptible to buffer overruns if it is written on the assumption that arrays will not exceed 2 GB.  
   
 ## Example  
  The following example shows how to enable this feature for an application.  
@@ -71,7 +69,11 @@ On 64-bit platforms, enables arrays that are greater than 2 gigabytes (GB) in to
 </configuration>  
 ```  
   
+## Supported in
+
+.NET Framework 4.5 and later versions
+
 ## See also
 
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
+- [Runtime Settings Schema](index.md)
+- [Configuration File Schema](../index.md)

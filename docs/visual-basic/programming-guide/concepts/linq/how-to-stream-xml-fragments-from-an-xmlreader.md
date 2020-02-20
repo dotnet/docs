@@ -1,5 +1,5 @@
 ---
-title: "How to: Stream XML Fragments from an XmlReader (Visual Basic)"
+title: "How to: Stream XML Fragments from an XmlReader"
 ms.date: 07/20/2015
 ms.assetid: f67ce598-4a12-4dcb-9a07-24deca02a111
 ---
@@ -17,7 +17,7 @@ When you have to process large XML files, it might not be feasible to load the w
  The topic [How to: Perform Streaming Transform of Large XML Documents (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/how-to-perform-streaming-transform-of-large-xml-documents.md) contains an example of using LINQ to XML to transform extremely large XML documents while maintaining a small memory footprint.  
   
 ## Example  
- This example creates a custom axis method. You can query it by using a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query. The custom axis method, `StreamRootChildDoc`, is a method that is designed specifically to read a document that has a repeating `Child` element.  
+ This example creates a custom axis method. You can query it by using a LINQ query. The custom axis method, `StreamRootChildDoc`, is a method that is designed specifically to read a document that has a repeating `Child` element.  
   
 ```vb  
 Module Module1  
@@ -132,7 +132,7 @@ End Class
   
  This example produces the following output:  
   
-```  
+```console  
 bbb  
 ccc  
 ```  

@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "memory management [.NET Framework]"
   - "garbage collection [.NET Framework profiling]"
 ms.assetid: fd0462f7-57ad-4858-bf62-958378873602
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Memory Management and Garbage Collection in .NET
 This section of the documentation provides information about managing memory in .NET.  

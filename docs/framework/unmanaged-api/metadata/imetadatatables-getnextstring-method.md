@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: d9720428-c353-4f07-a7e8-899e106a1b37
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataTables::GetNextString Method
 Gets the index of the next string in the current table column.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNextString (   
     [in]  ULONG   ixString,  
     [out] ULONG   *pNext  

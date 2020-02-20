@@ -7,7 +7,7 @@ ms.assetid: 45f996a7-fa00-45cb-9d6f-b368f5778aaa
 This sample demonstrates how to extend control over error handling and error reporting in a Windows Communication Foundation (WCF) service using the <xref:System.ServiceModel.Dispatcher.IErrorHandler> interface. The sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) with some additional code added to the service to handle errors. The client forces several error conditions. The service intercepts the errors and logs them in a file.  
   
 > [!NOTE]
->  The setup procedure and build instructions for this sample are located at the end of this topic.  
+> The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  Services can intercept errors, perform processing, and affect how errors are reported using the <xref:System.ServiceModel.Dispatcher.IErrorHandler> interface. The interface has two methods that can be implemented: <xref:System.ServiceModel.Dispatcher.IErrorHandler.ProvideFault%28System.Exception%2CSystem.ServiceModel.Channels.MessageVersion%2CSystem.ServiceModel.Channels.Message%40%29> and <xref:System.ServiceModel.Dispatcher.IErrorHandler.HandleError%2A>. The <xref:System.ServiceModel.Dispatcher.IErrorHandler.ProvideFault%28System.Exception%2CSystem.ServiceModel.Channels.MessageVersion%2CSystem.ServiceModel.Channels.Message%40%29> method allows you to add, modify, or suppress a fault message that is generated in response to an exception. The <xref:System.ServiceModel.Dispatcher.IErrorHandler.HandleError%2A> method allows error processing to take place in the event of an error and controls whether additional error handling can run.  
   
@@ -15,37 +15,37 @@ This sample demonstrates how to extend control over error handling and error rep
   
  <xref:System.ServiceModel.Dispatcher.IErrorHandler.HandleError%2A> method, the `CalculatorErrorHandler` writes a log of the error to an Error.txt text file in c:\logs. Note that the sample logs the fault and does not suppress it, allowing it to be reported back to the client.  
   
-```  
-public class CalculatorErrorHandler : IErrorHandler  
-{  
-        // Provide a fault. The Message fault parameter can be replaced, or set to  
-        // null to suppress reporting a fault.  
-  
-        public void ProvideFault(Exception error, MessageVersion version, ref Message fault)  
-        {  
-        }  
-  
-        // HandleError. Log an error, then allow the error to be handled as usual.  
-        // Return true if the error is considered as already handled  
-  
-        public bool HandleError(Exception error)  
-        {  
-            using (TextWriter tw = File.AppendText(@"c:\logs\error.txt"))  
-            {  
-                if (error != null)  
-                {  
-                    tw.WriteLine("Exception: " + error.GetType().Name + " - " + error.Message);  
-                }  
-                tw.Close();  
-            }  
-            return true;  
-        }  
-    }  
+```csharp
+public class CalculatorErrorHandler : IErrorHandler
+{
+    // Provide a fault. The Message fault parameter can be replaced, or set to
+    // null to suppress reporting a fault.
+
+    public void ProvideFault(Exception error, MessageVersion version, ref Message fault)
+    {
+    }
+
+    // HandleError. Log an error, then allow the error to be handled as usual.
+    // Return true if the error is considered as already handled
+
+    public bool HandleError(Exception error)
+    {
+        using (TextWriter tw = File.AppendText(@"c:\logs\error.txt"))
+        {
+            if (error != null)
+            {
+                tw.WriteLine("Exception: " + error.GetType().Name + " - " + error.Message);
+            }
+            tw.Close();
+        }
+        return true;
+    }
+}  
 ```  
   
  The `ErrorBehaviorAttribute` exists as a mechanism to register an error handler with a service. This attribute takes a single type parameter. That type should implement the <xref:System.ServiceModel.Dispatcher.IErrorHandler> interface and should have a public, empty constructor. The attribute then instantiates an instance of that error handler type and installs it into the service. It does this by implementing the <xref:System.ServiceModel.Description.IServiceBehavior> interface and then using the <xref:System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior%2A> method to add instances of the error handler to the service.  
   
-```  
+```csharp
 // This attribute can be used to install a custom error handler for a service.  
 public class ErrorBehaviorAttribute : Attribute, IServiceBehavior  
 {  
@@ -92,8 +92,8 @@ public class ErrorBehaviorAttribute : Attribute, IServiceBehavior
   
  The sample implements a calculator service. The client deliberately causes two errors to occur on the service by providing parameters with illegal values. The `CalculatorErrorHandler` uses the <xref:System.ServiceModel.Dispatcher.IErrorHandler> interface to log the errors to a local file and then allows them to be reported back to the client. The client forces a divide by zero and an argument-out-of-range condition.  
   
-```  
-try  
+```csharp
+try
 {  
     Console.WriteLine("Forcing an error in Divide");  
     // Call the Divide service operation - trigger a divide by 0 error.  
@@ -114,7 +114,7 @@ catch (Exception e)
   
  When you run the sample, the operation requests and responses are displayed in the client console window. You see the division by zero and the argument-out-of-range conditions being reported as faults. Press ENTER in the client window to shut down the client.  
   
-```  
+```console  
 Add(15,3) = 18  
 Subtract(145,76) = 69  
 Multiply(9,81) = 729  
@@ -126,9 +126,9 @@ FaultException: FaultException - Invalid Argument: The argument must be greater 
 Press <ENTER> to terminate client.  
 ```  
   
- The file c:\logs\errors.txt contains the information logged about the errors by the service. Note that for the service to write to the directory you must make sure that the process under which the service is running, (typically ASP.NET or Network Service), has the permission to write to the directory.  
+ The file c:\logs\errors.txt contains the information logged about the errors by the service. Note that for the service to write to the directory you must make sure that the process under which the service is running (typically ASP.NET or Network Service) has permission to write to the directory.  
   
-```  
+```txt
 Fault: Reason = Invalid Argument: The second argument must not be zero.  
 Fault: Reason = Invalid Argument: The argument must be greater than zero.  
 ```  
@@ -144,10 +144,10 @@ Fault: Reason = Invalid Argument: The argument must be greater than zero.
 4. To run the sample in a single- or cross-machine configuration, follow the instructions in [Running the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/running-the-samples.md).  
   
 > [!IMPORTANT]
->  The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
+> The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples`  
+> `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
->  `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\ErrorHandling`  
+> `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\ErrorHandling`  

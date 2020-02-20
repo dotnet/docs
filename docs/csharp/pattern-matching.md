@@ -2,6 +2,7 @@
 title: Pattern Matching - C# Guide
 description: Learn about pattern matching expressions in C#
 ms.date: 04/10/2019
+ms.technology: csharp-fundamentals
 ms.assetid: 1e575c32-2e2b-4425-9dca-7d118f3ed15b
 ---
 
@@ -261,3 +262,7 @@ shapes each with their own implementation of a virtual method to calculate
 the area. You'll often find that pattern matching expressions can be a very
 useful tool when you're working with data and want to separate the data
 storage concerns from the behavior concerns.
+
+## See also
+
+- [Tutorial: Using pattern matching features to extend data types](tutorials/pattern-matching.md)

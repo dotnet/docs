@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 32114ecf-8916-4ab2-a201-179c017344f1
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetNameFromToken Method
 Gets the UTF-8 name of the object referenced by the specified metadata token. This method is obsolete.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNameFromToken (  
    [in] mdToken      tk,  
    [out] MDUTF8CSTR  *pszUtf8NamePtr  

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 1f1e3239-438e-4be9-a3bb-7d0722d3a76d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorConfiguration::AddDebuggerSpecialThread Method
 Indicates to the debugging services that a particular thread should be allowed to continue executing while the debugger has an application stopped during managed or unmanaged debugging scenarios.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AddDebuggerSpecialThread (  
     [in] DWORD dwSpecialThreadId  
 );  

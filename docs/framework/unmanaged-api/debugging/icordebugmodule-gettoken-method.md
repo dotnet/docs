@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: f759f87a-18ae-4c1a-8300-29b803432d0a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugModule::GetToken Method
 Gets the token for the table entry for this module.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetToken(  
     [out] mdModule *pToken  
 );  

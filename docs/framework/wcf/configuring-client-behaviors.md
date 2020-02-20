@@ -47,4 +47,4 @@ Windows Communication Foundation (WCF) configures behaviors in two ways: either 
   
 ## See also
 
-- [\<behaviors>](../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md)
+- [\<behaviors>](../configure-apps/file-schema/wcf/behaviors.md)

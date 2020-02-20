@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: be232314-7f69-4855-bfab-63361bd22307
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::SetFieldMarshal Method
 Sets the PInvoke marshaling information for the field, method return, or method parameter referenced by the specified token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetFieldMarshal (  
     [in]  mdToken          tk,   
     [in]  PCCOR_SIGNATURE  pvNativeType,   

@@ -1,213 +1,384 @@
 ---
 title: Async Programming
-description: Learn how F# async programming is accomplished via a language-level programming model that is easy to use and natural to the language.
-ms.date: 06/20/2016
+description: Learn how F# provides clean support for asynchrony based on a language-level programming model derived from core functional programming concepts.
+ms.date: 12/17/2018
 ---
-# Async Programming in F\#
+# Async programming in F\#
 
-> [!NOTE]
-> Some inaccuracies have been discovered in this article.  It is being rewritten.  See [Issue #666](https://github.com/dotnet/docs/issues/666) to learn about the changes.
+Asynchronous programming is a mechanism that is essential to modern applications for diverse reasons. There are two primary use cases that most developers will encounter:
 
-Async programming in F# can be accomplished through a language-level programming model designed to be easy to use and natural to the language.
+- Presenting a server process that can service a significant number of concurrent incoming requests, while minimizing the system resources occupied while request processing awaits inputs from systems or services external to that process
+- Maintaining a responsive UI or main thread while concurrently progressing background work
 
-The core of async programming in F# is `Async<'T>`, a representation of work that can be triggered to run in the background, where `'T` is either the type returned via the special `return` keyword or `unit` if the async workflow has no result to return.
+Although background work often does involve the utilization of multiple threads, it's important to consider the concepts of asynchrony and multi-threading separately. In fact, they are separate concerns, and one does not imply the other. What follows in this article describes this in more detail.
 
-The key concept to understand is that an async expression’s type is `Async<'T>`, which is merely a _specification_ of work to be done in an asynchronous context. It is not executed until you explicitly start it with one of the starting functions (such as `Async.RunSynchronously`). Although this is a different way of thinking about doing work, it ends up being quite simple in practice.
+## Asynchrony defined
 
-For example, say you wanted to download the HTML from dotnetfoundation.org without blocking the main thread. You can accomplish it like this:
+The previous point - that asynchrony is independent of the utilization of multiple threads - is worth explaining a bit further. There are three concepts that are sometimes related, but strictly independent of one another:
 
-```fsharp
-open System
-open System.Net
+- Concurrency; when multiple computations execute in overlapping time periods.
+- Parallelism; when multiple computations or several parts of a single computation run at exactly the same time.
+- Asynchrony; when one or more computations can execute separately from the main program flow.
 
-let fetchHtmlAsync url =
-    async {
-        let uri = Uri(url)
-        use webClient = new WebClient()
+All three are orthogonal concepts, but can be easily conflated, especially when they are used together. For example, you may need to execute multiple asynchronous computations in parallel. This does not mean that parallelism or asynchrony imply one another.
 
-        // Execution of fetchHtmlAsync won't continue until the result
-        // of AsyncDownloadString is bound.
-        let! html = webClient.AsyncDownloadString(uri)
-        return html
-    }
+If you consider the etymology of the word "asynchronous", there are two pieces involved:
 
-let html = "https://dotnetfoundation.org" |> fetchHtmlAsync |> Async.RunSynchronously
-printfn "%s" html
-```
+- "a", meaning "not".
+- "synchronous", meaning "at the same time".
 
-And that’s it! Aside from the use of `async`, `let!`, and `return`, this is just normal F# code.
+When you put these two terms together, you'll see that "asynchronous" means "not at the same time". That's it! There is no implication of concurrency or parallelism in this definition. This is also true in practice.
 
-There are a few syntactical constructs which are worth noting:
+In practical terms, asynchronous computations in F# are scheduled to execute independently of the main program flow. This doesn't imply concurrency or parallelism, nor does it imply that a computation always happens in the background. In fact, asynchronous computations can even execute synchronously, depending on the nature of the computation and the environment the computation is executing in.
 
-* `let!` binds the result of an async expression (which runs on another context).
-* `use!` works just like `let!`, but disposes its bound resources when it goes out of scope.
-* `do!` will await an async workflow which doesn’t return anything.
-* `return` simply returns a result from an async expression.
-* `return!` executes another async workflow and returns its return value as a result.
+The main takeaway you should have is that asynchronous computations are independent of the main program flow. Although there are few guarantees about when or how an asynchronous computation executes, there are some approaches to orchestrating and scheduling them. The rest of this article explores core concepts for F# asynchrony and how to use the types, functions, and expressions built into F#.
 
-Additionally, normal `let`, `use`, and `do` keywords can be used alongside the async versions just as they would in a normal function.
+## Core concepts
 
-## How to start Async Code in F\#
+In F#, asynchronous programming is centered around three core concepts:
 
-As mentioned earlier, async code is a specification of work to be done in another context which needs to be explicitly started. Here are two primary ways to accomplish this:
+- The `Async<'T>` type, which represents a composable asynchronous computation.
+- The `Async` module functions, which let you schedule asynchronous work, compose asynchronous computations, and transform asynchronous results.
+- The `async { }` [computation expression](../../language-reference/computation-expressions.md), which provides a convenient syntax for building and controlling asynchronous computations.
 
-1. `Async.RunSynchronously` will start an async workflow on another thread and await its result.
-
-    ```fsharp
-    open System
-    open System.Net
-
-    let fetchHtmlAsync url =
-        async {
-            let uri = Uri(url)
-            use webClient = new WebClient()
-            let! html = webClient.AsyncDownloadString(uri)
-            return html
-        }
-
-    // Execution will pause until fetchHtmlAsync finishes
-    let html = "https://dotnetfoundation.org" |> fetchHtmlAsync |> Async.RunSynchronously
-
-    // you actually have the result from fetchHtmlAsync now!
-    printfn "%s" html
-    ```
-
-2. `Async.Start` will start an async workflow on another thread, and will **not** await its result.
-
-    ```fsharp
-    open System
-    open System.Net
-
-    let uploadDataAsync url data =
-        async {
-            let uri = Uri(url)
-            use webClient = new WebClient()
-            webClient.UploadStringAsync(uri, data)
-        }
-
-    let workflow = uploadDataAsync "https://url-to-upload-to.com" "hello, world!"
-
-    // Execution will continue after calling this!
-    Async.Start(workflow)
-
-    printfn "%s" "uploadDataAsync is running in the background..."
-    ```
-
-There are other ways to start an async workflow available for more specific scenarios. They are detailed [in the Async reference](https://msdn.microsoft.com/library/ee370232.aspx).
-
-### A Note on Threads
-
-The phrase "on another thread" is mentioned above, but it is important to know that **this does not mean that async workflows are a facade for multithreading**. The workflow actually "jumps" between threads, borrowing them for a small amount of time to do useful work. When an async workflow is effectively "waiting" (for example, waiting for a network call to return something), any thread it was borrowing at the time is freed up to go do useful work on something else. This allows async workflows to utilize the system they run on as effectively as possible, and makes them especially strong for high-volume I/O scenarios.
-
-## How to Add Parallelism to Async Code
-
-Sometimes you may need to perform multiple asynchronous jobs in parallel, collect their results, and interpret them in some way. `Async.Parallel` allows you to do this without needing to use the Task Parallel Library, which would involve needing to coerce `Task<'T>` and `Async<'T>` types.
-
-The following example will use `Async.Parallel` to download the HTML from four popular sites in parallel, wait for those tasks to complete, and then print the HTML which was downloaded.
+You can see these three concepts in the following example:
 
 ```fsharp
 open System
-open System.Net
+open System.IO
 
-let urlList =
-    [ "https://www.microsoft.com"
-      "https://www.google.com"
-      "https://www.amazon.com"
-      "https://www.facebook.com" ]
-
-let fetchHtmlAsync url =
+let printTotalFileBytes path =
     async {
-        let uri = Uri(url)
-        use webClient = new WebClient()
-        let! html = webClient.AsyncDownloadString(uri)
-        return html
+        let! bytes = File.ReadAllBytesAsync(path) |> Async.AwaitTask
+        let fileName = Path.GetFileName(path)
+        printfn "File %s has %d bytes" fileName bytes.Length
     }
 
-let getHtmlList urls =
-    urls
-    |> Seq.map fetchHtmlAsync   // Build an Async<'T> for each site
-    |> Async.Parallel           // Returns an Async<'T []>
-    |> Async.RunSynchronously   // Wait for the result of the parallel work
+[<EntryPoint>]
+let main argv =
+    printTotalFileBytes "path-to-file.txt"
+    |> Async.RunSynchronously
 
-let htmlList = getHtmlList urlList
-
-// We now have the downloaded HTML for each site!
-for html in htmlList do
-    printfn "%s" html
+    Console.Read() |> ignore
+    0
 ```
 
-## Important Info and Advice
+In the example, the `printTotalFileBytes` function is of type `string -> Async<unit>`. Calling the function does not actually execute the asynchronous computation. Instead, it returns an `Async<unit>` that acts as a *specification* of the work that is to execute asynchronously. It calls `Async.AwaitTask` in its body, which converts the result of <xref:System.IO.File.WriteAllBytesAsync%2A> to an appropriate type.
 
-* Append "Async" to the end of any functions you’ll consume
+Another important line is the call to `Async.RunSynchronously`. This is one of the Async module starting functions that you'll need to call if you want to actually execute an F# asynchronous computation.
 
- Although this is just a naming convention, it does make things like API discoverability easier. Particularly if there are synchronous and asynchronous versions of the same routine, it’s a good idea to explicitly state which is asynchronous via the name.
+This is a fundamental difference with the C#/Visual Basic style of `async` programming. In F#, asynchronous computations can be thought of as **Cold tasks**. They must be explicitly started to actually execute. This has some advantages, as it allows you to combine and sequence asynchronous work much more easily than in C# or Visual Basic.
 
-* Listen to the compiler!
+## Combine asynchronous computations
 
-F#’s compiler is very strict, making it nearly impossible to do something troubling like run "async" code synchronously. If you come across a warning, that’s a sign that the code won’t execute how you think it will. If you can make the compiler happy, your code will most likely execute as expected.
-
-## For the C#/VB Programmer Looking Into F\#
-
-This section assumes you’re familiar with the async model in C#/VB. If you are not, [Async Programming in C#](../../../csharp/async.md) is a starting point.
-
-There is a fundamental difference between the C#/VB async model and the F# async model.
-
-When you call a function which returns a `Task` or `Task<'T>`, that job has already begun execution. The handle returned represents an already-running asynchronous job. In contrast, when you call an async function in F#, the `Async<'a>` returned represents a job which will be **generated** at some point. Understanding this model is powerful, because it allows for asynchronous jobs in F# to be chained together easier, performed conditionally, and be started with a finer grain of control.
-
-There are a few other similarities and differences worth noting.
-
-### Similarities
-
-* `let!`, `use!`, and `do!` are analogous to `await` when calling an async job from within an `async{ }` block.
-
-  The three keywords can only be used within an `async { }` block, similar to how `await` can only be invoked inside an `async` method. In short, `let!` is for when you want to capture and use a result, `use!` is the same but for something whose resources should get cleaned after it’s used, and `do!` is for when you want to wait for an async workflow with no return value to finish before moving on.
-
-* F# supports data-parallelism in a similar way.
-
-  Although it operates very differently, `Async.Parallel` corresponds to `Task.WhenAll` for the scenario of wanting the results of a set of async jobs when they all complete.
-
-### Differences
-
-* Nested `let!` is not allowed, unlike nested `await`
-
-  Unlike `await`, which can be nested indefinitely, `let!` cannot and must have its result bound before using it inside of another `let!`, `do!`, or `use!`.
-
-* Cancellation support is simpler in F# than in C#/VB.
-
-  Supporting cancellation of a task midway through its execution in C#/VB requires checking the `IsCancellationRequested` property or calling `ThrowIfCancellationRequested()` on a `CancellationToken` object that’s passed into the async method.
-
-In contrast, F# async workflows are more naturally cancellable. Cancellation is a simple three-step process.
-
-1. Create a new `CancellationTokenSource`.
-2. Pass it into a starting function.
-3. Call `Cancel` on the token.
-
-Example:
+Here is an example that builds upon the previous one by combining computations:
 
 ```fsharp
-open System.Threading
+open System
+open System.IO
 
-// Create a workflow which will loop forever.
-let workflow =
+let printTotalFileBytes path =
     async {
-        while true do
-            printfn "Working..."
-            do! Async.Sleep 1000
+        let! bytes = File.ReadAllBytesAsync(path) |> Async.AwaitTask
+        let fileName = Path.GetFileName(path)
+        printfn "File %s has %d bytes" fileName bytes.Length
     }
 
-let tokenSource = new CancellationTokenSource()
+[<EntryPoint>]
+let main argv =
+    argv
+    |> Array.map printTotalFileBytes
+    |> Async.Parallel
+    |> Async.Ignore
+    |> Async.RunSynchronously
 
-// Start the workflow in the background
-Async.Start (workflow, tokenSource.Token)
-
-// Executing the next line will stop the workflow
-tokenSource.Cancel()
+    0
 ```
 
-And that’s it!
+As you can see, the `main` function has quite a few more calls made. Conceptually, it does the following:
 
-## Further resources:
+1. Transform the command-line arguments into `Async<unit>` computations with `Array.map`.
+2. Create an `Async<'T[]>` that schedules and runs the `printTotalFileBytes` computations in parallel when it runs.
+3. Create an `Async<unit>` that will run the parallel computation and ignore its result.
+4. Explicitly run the last computation with `Async.RunSynchronously` and block until it is completes.
 
-* [Async Workflows on MSDN](https://msdn.microsoft.com/library/dd233250.aspx)
-* [Asynchronous Sequences for F#](https://fsprojects.github.io/FSharp.Control.AsyncSeq/library/AsyncSeq.html)
-* [F# Data HTTP Utilities](https://fsharp.github.io/FSharp.Data/library/Http.html)
+When this program runs, `printTotalFileBytes` runs in parallel for each command-line argument. Because asynchronous computations execute independently of program flow, there is no order in which they print their information and finish executing. The computations will be scheduled in parallel, but their order of execution is not guaranteed.
+
+## Sequence asynchronous computations
+
+Because `Async<'T>` is a specification of work rather than an already-running task, you can perform more intricate transformations easily. Here is an example that sequences a set of Async computations so they execute one after another.
+
+```fsharp
+let printTotalFileBytes path =
+    async {
+        let! bytes = File.ReadAllBytesAsync(path) |> Async.AwaitTask
+        let fileName = Path.GetFileName(path)
+        printfn "File %s has %d bytes" fileName bytes.Length
+    }
+
+[<EntryPoint>]
+let main argv =
+    argv
+    |> Array.map printTotalFileBytes
+    |> Async.Sequential
+    |> Async.Ignore
+    |> Async.RunSynchronously
+    |> ignore
+```
+
+This will schedule `printTotalFileBytes` to execute in the order of the elements of `argv` rather than scheduling them in parallel. Because the next item will not be scheduled until after the last computation has finished executing, the computations are sequenced such that there is no overlap in their execution.
+
+## Important Async module functions
+
+When you write async code in F# you'll usually interact with a framework that handles scheduling of computations for you. However, this is not always the case, so it is good to learn the various starting functions to schedule asynchronous work.
+
+Because F# asynchronous computations are a _specification_ of work rather than a representation of work that is already executing, they must be explicitly started with a starting function. There are many [Async starting functions](https://msdn.microsoft.com/library/ee370232.aspx) that are helpful in different contexts. The following section describes some of the more common starting functions.
+
+### Async.StartChild
+
+Starts a child computation within an asynchronous computation. This allows multiple asynchronous computations to be executed concurrently. The child computation shares a cancellation token with the parent computation. If the parent computation is canceled, the child computation is also canceled.
+
+Signature:
+
+```fsharp
+computation: Async<'T> - timeout: ?int -> Async<Async<'T>>
+```
+
+When to use:
+
+- When you want to execute multiple asynchronous computations concurrently rather than one at a time, but not have them scheduled in parallel.
+- When you wish to tie the lifetime of a child computation to that of a parent computation.
+
+What to watch out for:
+
+- Starting multiple computations with `Async.StartChild` isn't the same as scheduling them in parallel. If you wish to schedule computations in parallel, use `Async.Parallel`.
+- Canceling a parent computation will trigger cancellation of all child computations it started.
+
+### Async.StartImmediate
+
+Runs an asynchronous computation, starting immediately on the current operating system thread. This is helpful if you need to update something on the calling thread during the computation. For example, if an asynchronous computation must update a UI (such as updating a progress bar), then `Async.StartImmediate` should be used.
+
+Signature:
+
+```fsharp
+computation: Async<unit> - cancellationToken: ?CancellationToken -> unit
+```
+
+When to use:
+
+- When you need to update something on the calling thread in the middle of an asynchronous computation.
+
+What to watch out for:
+
+- Code in the asynchronous computation will run on whatever thread one happens to be scheduled on. This can be problematic if that thread is in some way sensitive, such as a UI thread. In such cases, `Async.StartImmediate` is likely inappropriate to use.
+
+### Async.StartAsTask
+
+Executes a computation in the thread pool. Returns a <xref:System.Threading.Tasks.Task%601> that will be completed on the corresponding state once the computation terminates (produces the result, throws exception, or gets canceled). If no cancellation token is provided, then the default cancellation token is used.
+
+Signature:
+
+```fsharp
+computation: Async<'T> - taskCreationOptions: ?TaskCreationOptions - cancellationToken: ?CancellationToken -> Task<'T>
+```
+
+When to use:
+
+- When you need to call into a .NET API that expects a <xref:System.Threading.Tasks.Task%601> to represent the result of an asynchronous computation.
+
+What to watch out for:
+
+- This call will allocate an additional `Task` object, which can increase overhead if it is used often.
+
+### Async.Parallel
+
+Schedules a sequence of asynchronous computations to be executed in parallel. The degree of parallelism can be optionally tuned/throttled by specifying the `maxDegreesOfParallelism` parameter.
+
+Signature:
+
+```fsharp
+computations: seq<Async<'T>> - ?maxDegreesOfParallelism: int -> Async<'T[]>
+```
+
+When to use it:
+
+- If you need to run a set of computations at the same time and have no reliance on their order of execution.
+- If you don't require results from computations scheduled in parallel until they have all completed.
+
+What to watch out for:
+
+- You can only access the resulting array of values once all computations have finished.
+- Computations will be run however they end up getting scheduled. This means you cannot rely on their order of their execution.
+
+### Async.Sequential
+
+Schedules a sequence of asynchronous computations to be executed in the order that they are passed. The first computation will be executed, then the next, and so on. No computations will be executed in parallel.
+
+Signature:
+
+```fsharp
+computations: seq<Async<'T>> -> Async<'T[]>
+```
+
+When to use it:
+
+- If you need to execute multiple computations in order.
+
+What to watch out for:
+
+- You can only access the resulting array of values once all computations have finished.
+- Computations will be run in the order that they are passed to this function, which can mean that more time will elapse before the results are returned.
+
+### Async.AwaitTask
+
+Returns an asynchronous computation that waits for the given <xref:System.Threading.Tasks.Task%601> to complete and returns its result as an `Async<'T>`
+
+Signature:
+
+```fsharp
+task: Task<'T>  -> Async<'T>
+```
+
+When to use:
+
+- When you are consuming a .NET API that returns a <xref:System.Threading.Tasks.Task%601> within an F# asynchronous computation.
+
+What to watch out for:
+
+- Exceptions are wrapped in <xref:System.AggregateException> following the convention of the Task Parallel Library, and this is different from how F# async generally surfaces exceptions.
+
+### Async.Catch
+
+Creates an asynchronous computation that executes a given `Async<'T>`, returning an `Async<Choice<'T, exn>>`. If the given `Async<'T>` completes successfully, then a `Choice1Of2` is returned with the resultant value. If an exception is thrown before it completes, then a `Choice2of2` is returned with the raised exception. If it is used on an asynchronous computation that is itself composed of many computations, and one of those computations throws an exception, the encompassing computation will be stopped entirely.
+
+Signature:
+
+```fsharp
+computation: Async<'T> -> Async<Choice<'T, exn>>
+```
+
+When to use:
+
+- When you are performing asynchronous work that may fail with an exception and you want to handle that exception in the caller.
+
+What to watch out for:
+
+- When using combined or sequenced asynchronous computations, the encompassing computation will fully stop if one of its "internal" computations throws an exception.
+
+### Async.Ignore
+
+Creates an asynchronous computation that runs the given computation and ignores its result.
+
+Signature:
+
+```fsharp
+computation: Async<'T> -> Async<unit>
+```
+
+When to use:
+
+- When you have an asynchronous computation whose result is not needed. This is analogous to the `ignore` code for non-asynchronous code.
+
+What to watch out for:
+
+- If you must use this because you wish to use `Async.Start` or another function that requires `Async<unit>`, consider if discarding the result is okay to do. Discarding results just to fit a type signature should not generally be done.
+
+### Async.RunSynchronously
+
+Runs an asynchronous computation and awaits its result on the calling thread. This call is blocking.
+
+Signature:
+
+```fsharp
+computation: Async<'T> - timeout: ?int - cancellationToken: ?CancellationToken -> 'T
+```
+
+When to use it:
+
+- If you need it, use it only once in an application - at the entry point for an executable.
+- When you don't care about performance and want to execute a set of other asynchronous operations at once.
+
+What to watch out for:
+
+- Calling `Async.RunSynchronously` blocks the calling thread until the execution completes.
+
+### Async.Start
+
+Starts an asynchronous computation in the thread pool that returns `unit`. Doesn't wait for its result. Nested computations started with `Async.Start` are started completely independently of the parent computation that called them. Their lifetime is not tied to any parent computation. If the parent computation is canceled, no child computations are cancelled.
+
+Signature:
+
+```fsharp
+computation: Async<unit> - cancellationToken: ?CancellationToken -> unit
+```
+
+Use only when:
+
+- You have an asynchronous computation that doesn't yield a result and/or require processing of one.
+- You don't need to know when an asynchronous computation completes.
+- You don't care which thread an asynchronous computation runs on.
+- You don't have any need to be aware of or report exceptions resulting from the task.
+
+What to watch out for:
+
+- Exceptions raised by computations started with `Async.Start` aren't propagated to the caller. The call stack will be completely unwound.
+- Any effectful work (such as calling `printfn`) started with `Async.Start` won't cause the effect to happen on the main thread of a program's execution.
+
+## Interoperate with .NET
+
+You may be working with a .NET library or C# codebase that uses [async/await](../../../standard/async.md)-style asynchronous programming. Because C# and the majority of .NET libraries use the <xref:System.Threading.Tasks.Task%601> and <xref:System.Threading.Tasks.Task> types as their core abstractions rather than `Async<'T>`, you must cross a boundary between these two approaches to asynchrony.
+
+### How to work with .NET async and `Task<T>`
+
+Working with .NET async libraries and codebases that use <xref:System.Threading.Tasks.Task%601> (that is, async computations that have return values) is straightforward and has built-in support with F#.
+
+You can use the `Async.AwaitTask` function to await a .NET asynchronous computation:
+
+```fsharp
+let getValueFromLibrary param =
+    async {
+        let! value = DotNetLibrary.GetValueAsync param |> Async.AwaitTask
+        return value
+    }
+```
+
+You can use the `Async.StartAsTask` function to pass an asynchronous computation to a .NET caller:
+
+```fsharp
+let computationForCaller param =
+    async {
+        let! result = getAsyncResult param
+        return result
+    } |> Async.StartAsTask
+```
+
+### How to work with .NET async and `Task`
+
+To work with APIs that use <xref:System.Threading.Tasks.Task> (that is, .NET async computations that do not return a value), you may need to add an additional function that will convert an `Async<'T>` to a <xref:System.Threading.Tasks.Task>:
+
+```fsharp
+module Async =
+    // Async<unit> -> Task
+    let startTaskFromAsyncUnit (comp: Async<unit>) =
+        Async.StartAsTask comp :> Task
+```
+
+There is already an `Async.AwaitTask` that accepts a <xref:System.Threading.Tasks.Task> as input. With this and the previously defined `startTaskFromAsyncUnit` function, you can start and await <xref:System.Threading.Tasks.Task> types from an F# async computation.
+
+## Relationship to multi-threading
+
+Although threading is mentioned throughout this article, there are two important things to remember:
+
+1. There is no affinity between an asynchronous computation and a thread, unless explicitly started on the current thread.
+1. Asynchronous programming in F# is not an abstraction for multi-threading.
+
+For example, a computation may actually run on its caller's thread, depending on the nature of the work. A computation could also "jump" between threads, borrowing them for a small amount of time to do useful work in between periods of "waiting" (such as when a network call is in transit).
+
+Although F# provides some abilities to start an asynchronous computation on the current thread (or explicitly not on the current thread), asynchrony generally is not associated with a particular threading strategy.
+
+## See also
+
+- [The F# Asynchronous Programming Model](https://www.microsoft.com/research/publication/the-f-asynchronous-programming-model)
+- [Jet.com's F# Async Guide](https://medium.com/jettech/f-async-guide-eb3c8a2d180a)
+- [F# for fun and profit's Asynchronous Programming guide](https://fsharpforfunandprofit.com/posts/concurrency-async-and-parallel/)
+- [Async in C# and F#: Asynchronous gotchas in C#](http://tomasp.net/blog/csharp-async-gotchas.aspx/)

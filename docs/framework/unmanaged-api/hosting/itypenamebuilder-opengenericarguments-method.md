@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 4da94508-30da-41f4-8bf9-ce88bdf96fd2
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ITypeNameBuilder::OpenGenericArguments Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OpenGenericArguments ( );  
 ```  
   

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 35d0c27e-4b14-49ce-810d-7ab2120177e8
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostTaskManager::SwitchToTask Method
 Notifies the host that it should switch out the current task.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SwitchToTask (  
     [in] DWORD option  
 );  
@@ -48,7 +46,7 @@ HRESULT SwitchToTask (
  The host can switch in another task as desired or needed.  
   
 > [!NOTE]
->  `SwitchToTask` does not specify which task the host should switch to; it specifies only the task that it should switch from.  
+> `SwitchToTask` does not specify which task the host should switch to; it specifies only the task that it should switch from.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

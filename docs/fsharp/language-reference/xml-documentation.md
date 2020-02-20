@@ -1,5 +1,5 @@
 ---
-title: XML Documentation (F#)
+title: XML Documentation
 description: Learn about support in F# for generating documentation from comments.
 ms.date: 05/16/2016
 ---
@@ -38,7 +38,7 @@ The following is a typical XML documentation comment in a signature file.
 
 ### Code
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet7101.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet7101.fs)]
 
 ## Example
 
@@ -48,7 +48,7 @@ The following example shows the alternative method, without XML tags. In this ex
 
 ### Code
 
-[!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-2/snippet7102.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-2/snippet7102.fs)]
 
 ## See also
 

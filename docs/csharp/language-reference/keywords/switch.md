@@ -37,11 +37,11 @@ The match expression provides the value to match against the patterns in `case` 
 
 In C# 6 and earlier, the match expression must be an expression that returns a value of the following types:
 
-- a [char](char.md).
-- a [string](string.md).
-- a [bool](bool.md).
-- an integral value, such as an [int](int.md) or a [long](long.md).
-- an [enum](enum.md) value.
+- a [char](../builtin-types/char.md).
+- a [string](../builtin-types/reference-types.md).
+- a [bool](../builtin-types/bool.md).
+- an [integral](../builtin-types/integral-numeric-types.md) value, such as an `int` or a `long`.
+- an [enum](../builtin-types/enum.md) value.
 
 Starting with C# 7.0, the match expression can be any non-null expression.
 
@@ -114,12 +114,12 @@ The constant pattern tests whether the match expression equals a specified const
 
 where *constant* is the value to test for. *constant* can be any of the following constant expressions:
 
-- A [bool](bool.md) literal, either `true` or `false`.
-- Any integral constant, such as an [int](int.md), a [long](long.md), or a [byte](byte.md).
+- A [bool](../builtin-types/bool.md) literal: either `true` or `false`.
+- Any [integral](../builtin-types/integral-numeric-types.md) constant, such as an `int`, a `long`, or a `byte`.
 - The name of a declared `const` variable.
 - An enumeration constant.
-- A [char](char.md) literal.
-- A [string](string.md) literal.
+- A [char](../builtin-types/char.md) literal.
+- A [string](../builtin-types/reference-types.md) literal.
 
 The constant expression is evaluated as follows:
 
@@ -189,7 +189,7 @@ Note that the `when` clause in the example that attempts to test whether a `Shap
 
 ## C# language specification
 
-For more information, see [The switch statement](~/_csharplang/spec/statements.md#the-switch-statement) in the [C# Language Specification](../language-specification/index.md). The language specification is the definitive source for C# syntax and usage.
+For more information, see [The switch statement](~/_csharplang/spec/statements.md#the-switch-statement) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.
 
 ## See also
 

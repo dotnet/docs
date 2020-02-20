@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c6a1f797-dbf4-40f5-ab99-d9b4bfb26148
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedWriter::DefineField Method
 Defines a single variable that is not within a method. This method is used for certain fields in classes, bit fields, and so on.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineField(  
     [in] mdTypeDef    parent,  
     [in] const WCHAR  *name,  

@@ -2,15 +2,13 @@
 title: "ICorDebugDataTarget2::GetImageLocation Method"
 ms.date: "03/30/2017"
 ms.assetid: 696afe71-5852-478d-a33f-b2d2dbc4b91f
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugDataTarget2::GetImageLocation Method
 Returns the path of a module from the module's base address.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetImageLocation(    [in] CORDB_ADDRESS baseAddress,  
     [in] ULONG32 cchName,  
     [out] ULONG32 *pcchName,  
@@ -34,7 +32,7 @@ HRESULT GetImageLocation(    [in] CORDB_ADDRESS baseAddress,
 ## Remarks  
   
 > [!NOTE]
->  This method is available with .NET Native only.  
+> This method is available with .NET Native only.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -47,5 +45,5 @@ HRESULT GetImageLocation(    [in] CORDB_ADDRESS baseAddress,
   
 ## See also
 
-- [ICorDebugDataTarget2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget2-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugDataTarget2 Interface](icordebugdatatarget2-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

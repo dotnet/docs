@@ -3,14 +3,12 @@ title: "Node Sets in Transformations"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: ad034f0e-ff8b-4a71-9a4c-528c754263c4
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Node Sets in Transformations
 Node sets are one of four basic data types that are returned from XML Path Language (XPath) expressions. A node set, which is an unordered collection of nodes without duplicates, created in document order, can be assigned to a variable in a style sheet.  
   
 > [!NOTE]
->  The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework 2.0. You can perform Extensible Stylesheet Language for Transformations (XSLT) transformations using the <xref:System.Xml.Xsl.XslCompiledTransform> class. See [Using the XslCompiledTransform Class](../../../../docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](../../../../docs/standard/data/xml/migrating-from-the-xsltransform-class.md) for more information.  
+> The <xref:System.Xml.Xsl.XslTransform> class is obsolete in the .NET Framework 2.0. You can perform Extensible Stylesheet Language for Transformations (XSLT) transformations using the <xref:System.Xml.Xsl.XslCompiledTransform> class. See [Using the XslCompiledTransform Class](../../../../docs/standard/data/xml/using-the-xslcompiledtransform-class.md) and [Migrating From the XslTransform Class](../../../../docs/standard/data/xml/migrating-from-the-xsltransform-class.md) for more information.  
   
  Node sets are one of four basic data types that are returned from XPath expressions. A node set, which is an unordered collection of nodes without duplicates, created in document order, can be assigned to a variable in a style sheet. This node set, which is a result of an XPath expression used in a `select` attribute in a transformation, has the same behavior as a node set from the XML Document Object Model (DOM). You can navigate a node set using a set of methods shown in [Node Set Navigation Using XPathNavigator](../../../../docs/standard/data/xml/node-set-navigation-using-xpathnavigator.md), unlike a result tree fragment or result tree fragment, which uses the <xref:System.Xml.XPath.XPathNodeIterator> for navigation.  
   
@@ -54,7 +52,7 @@ Node sets are one of four basic data types that are returned from XML Path Langu
   
 ## Output  
   
-```  
+```output  
 ******  
 Seven Years in Trenton  
 ******  

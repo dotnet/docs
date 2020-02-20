@@ -50,13 +50,13 @@ In a schema, you can specify a key constraint on an element or attribute using t
   
  The **key** element specifies that the values of the **CustomerID** child element of the **Customers** element must have unique values and cannot have null values. In translating the XML Schema definition language (XSD) schema, the mapping process creates the following table:  
   
-```  
+```text  
 Customers(CustomerID, CompanyName, Phone)  
 ```  
   
  The XML Schema mapping also creates a **UniqueConstraint** on the **CustomerID** column, as shown in the following <xref:System.Data.DataSet>. (For simplicity, only relevant properties are shown.)  
   
-```  
+```text  
       DataSetName: MyDataSet  
 TableName: customers  
   ColumnName: CustomerID  
@@ -74,6 +74,6 @@ TableName: customers
   
 ## See also
 
-- [Mapping XML Schema (XSD) Constraints to DataSet Constraints](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)
-- [Generating DataSet Relations from XML Schema (XSD)](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/generating-dataset-relations-from-xml-schema-xsd.md)
-- [ADO.NET Managed Providers and DataSet Developer Center](https://go.microsoft.com/fwlink/?LinkId=217917)
+- [Mapping XML Schema (XSD) Constraints to DataSet Constraints](mapping-xml-schema-xsd-constraints-to-dataset-constraints.md)
+- [Generating DataSet Relations from XML Schema (XSD)](generating-dataset-relations-from-xml-schema-xsd.md)
+- [ADO.NET Overview](../ado-net-overview.md)

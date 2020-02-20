@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 0d9f2a30-ff72-4355-8060-744f22339359
 ---
 # An unexpected error has occurred because an operating system resource required for single instance startup cannot be acquired
+
 The application could not acquire a necessary operating system resource. Some of the possible causes for this problem are:  
   
 - The application does not have permissions to create named operating-system objects.  
@@ -28,4 +29,4 @@ The application could not acquire a necessary operating system resource. Some of
 
 - [Application Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/application-page-project-designer-visual-basic)
 - [Debugger Basics](/visualstudio/debugger/debugger-basics)
-- [Talk to Us](/visualstudio/ide/talk-to-us)
+- [Talk to Us](/visualstudio/ide/feedback-options)

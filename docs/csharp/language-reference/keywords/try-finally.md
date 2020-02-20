@@ -1,7 +1,5 @@
 ---
 title: "try-finally - C# Reference"
-ms.custom: seodec18
-
 ms.date: 07/20/2015
 f1_keywords: 
   - "finally"
@@ -35,7 +33,7 @@ C# also contains the [using statement](using-statement.md), which provides simil
 
 ## C# language specification
 
-[!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]
+For more information, see [The try statement](~/_csharplang/spec/statements.md#the-try-statement) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
 ## See also
 

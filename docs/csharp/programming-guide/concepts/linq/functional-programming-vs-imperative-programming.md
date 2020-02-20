@@ -46,6 +46,6 @@ This topic compares and contrasts functional programming with more traditional i
   
 ## See also
 
-- [Introduction to Pure Functional Transformations (C#)](../../../../csharp/programming-guide/concepts/linq/introduction-to-pure-functional-transformations.md)
+- [Introduction to Pure Functional Transformations (C#)](./introduction-to-pure-functional-transformations.md)
 - [XSLT Transformations](../../../../standard/data/xml/xslt-transformations.md)
-- [Refactoring Into Pure Functions (C#)](../../../../csharp/programming-guide/concepts/linq/refactoring-into-pure-functions.md)
+- [Refactoring Into Pure Functions (C#)](./refactoring-into-pure-functions.md)

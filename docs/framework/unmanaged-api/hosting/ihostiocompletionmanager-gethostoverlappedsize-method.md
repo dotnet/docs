@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 2902578b-d5e2-4f8d-a103-0c7b6dceda9e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostIoCompletionManager::GetHostOverlappedSize Method
 Gets the size of any custom data the host intends to append to I/O requests.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetHostOverlappedSize (  
     [out] DWORD *pcbSize  
 );  
@@ -50,10 +48,10 @@ HRESULT GetHostOverlappedSize (
  The CLR calls the `GetHostOverlappedSize` method to determine the size of the custom data that the host intends to append to the `OVERLAPPED` object.  
   
 > [!NOTE]
->  `GetHostOverlappedSize` is called only once. The host's custom data must be the same size for every I/O request.  
+> `GetHostOverlappedSize` is called only once. The host's custom data must be the same size for every I/O request.  
   
 > [!IMPORTANT]
->  The size of the `OVERLAPPED` object itself is not included in the value of `pcbSize`.  
+> The size of the `OVERLAPPED` object itself is not included in the value of `pcbSize`.  
   
  For more information about the `OVERLAPPED` structure, see the Windows Platform documentation.  
   

@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: d8ec8d3c-70f7-4cc6-9957-68068fd8f49c
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorCheckDuplicatesFor Enumeration
 Specifies the metadata tokens that will be checked for duplicates.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef enum CorCheckDuplicatesFor {  
   
     MDDupAll                    = 0xffffffff,  

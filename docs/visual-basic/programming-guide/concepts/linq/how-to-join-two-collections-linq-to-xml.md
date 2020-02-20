@@ -1,5 +1,5 @@
 ---
-title: "How to: Join Two Collections (LINQ to XML) (Visual Basic)"
+title: "How to: Join Two Collections (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 5a5758d4-906b-4285-908d-5b930db192e6
 ---
@@ -81,7 +81,7 @@ End Class
   
  This code produces the following output:  
   
-```  
+```console
 Attempting to validate, custOrdDoc validated  
 <Root>  
   <Order>  

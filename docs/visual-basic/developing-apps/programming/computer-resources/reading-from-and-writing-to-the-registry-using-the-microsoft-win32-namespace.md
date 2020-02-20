@@ -1,14 +1,16 @@
 ---
-title: "Reading from and Writing to the Registry Using the Microsoft.Win32 Namespace (Visual Basic)"
+title: "Reading from and Writing to the Registry Using the Microsoft.Win32 Namespace"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "registry [Visual Basic]"
 ms.assetid: 4a0dcce0-c27b-4199-baa8-ee4528da6a56
 ---
 # Reading from and Writing to the Registry Using the Microsoft.Win32 Namespace (Visual Basic)
+
 Although `My.Computer.Registry` should cover your basic needs when programming against the registry, you can also use the <xref:Microsoft.Win32.Registry> and <xref:Microsoft.Win32.RegistryKey> classes in the <xref:Microsoft.Win32> namespace of the .NET Framework.  
   
 ## Keys in the Registry Class  
+
  The <xref:Microsoft.Win32.Registry> class supplies the base registry keys that can be used to access subkeys and their values. The base keys themselves are read-only. The following table lists and describes the seven keys exposed by the <xref:Microsoft.Win32.Registry> class.  
   
 |**Key**|**Description**|  
@@ -22,9 +24,10 @@ Although `My.Computer.Registry` should cover your basic needs when programming a
 |<xref:Microsoft.Win32.Registry.Users>|Contains information about the default user preferences.|  
   
 > [!IMPORTANT]
->  It is more secure to write data to the current user (<xref:Microsoft.Win32.Registry.CurrentUser>) than to the local computer (<xref:Microsoft.Win32.Registry.LocalMachine>). A condition that's typically referred to as "squatting" occurs when the key you are creating was previously created by another, possibly malicious, process. To prevent this from occurring, use a method, such as <xref:Microsoft.Win32.RegistryKey.GetValue%2A>, that returns `Nothing` if the key does not already exist.  
+> It is more secure to write data to the current user (<xref:Microsoft.Win32.Registry.CurrentUser>) than to the local computer (<xref:Microsoft.Win32.Registry.LocalMachine>). A condition that's typically referred to as "squatting" occurs when the key you are creating was previously created by another, possibly malicious, process. To prevent this from occurring, use a method, such as <xref:Microsoft.Win32.RegistryKey.GetValue%2A>, that returns `Nothing` if the key does not already exist.  
   
 ## Reading a Value from the Registry  
+
  The following code shows how to read a string from HKEY_CURRENT_USER.  
   
  [!code-vb[VbResourceTasks#20](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbResourceTasks/VB/Class1.vb#20)]  

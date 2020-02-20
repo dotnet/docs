@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: d7061343-d0a3-4fd5-b312-61974f98bd62
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IHostFilter::MarkToken Method
 Indicates that the specified metadata token will be processed.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT MarkToken (  
     [in]  mdToken         tk  
 );  

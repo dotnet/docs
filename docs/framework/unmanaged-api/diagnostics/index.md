@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "unmanaged API reference [.NET Framework], diagnostics symbol store"
   - "native API reference [.NET Framework], diagnostics symbol store"
 ms.assetid: ee1fbb7a-b0f9-482f-8cd0-6df37e6586a2
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Diagnostics Symbol Store (Unmanaged API Reference)
 The diagnostics symbol store API enables a compiler to generate symbol information for use by a debugger.  

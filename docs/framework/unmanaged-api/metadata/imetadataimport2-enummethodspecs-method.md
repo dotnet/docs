@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: b3fc1e6c-bcb6-4915-baf8-7dc0a31b8724
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport2::EnumMethodSpecs Method
 Gets an enumerator for an array of MethodSpec tokens associated with the specified MethodDef or MemberRef token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EnumMethodSpecs (  
     [in, out] HCORENUM      *phEnum,   
     [in]      mdToken       tk,  

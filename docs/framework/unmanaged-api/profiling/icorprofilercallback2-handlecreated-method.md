@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 6bbb7786-7c38-490f-9834-91aa2795c355
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback2::HandleCreated Method
 Notifies the code profiler that a garbage collection handle has been created.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT HandleCreated(  
     [in] GCHandleID handleId,  
     [in] ObjectID initialObjectId);  
@@ -47,5 +45,5 @@ HRESULT HandleCreated(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
-- [ICorProfilerCallback2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback2-interface.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [ICorProfilerCallback2 Interface](icorprofilercallback2-interface.md)

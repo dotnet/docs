@@ -1,7 +1,5 @@
 ---
 title: "unchecked keyword - C# Reference"
-ms.custom: seodec18
-
 ms.date: 07/20/2015
 f1_keywords:
   - "unchecked_CSharpKeyword"
@@ -36,8 +34,8 @@ This sample shows how to use the `unchecked` keyword.
 
 ## See also
 
-- [C# Reference](../../../csharp/language-reference/index.md)
-- [C# Programming Guide](../../../csharp/programming-guide/index.md)
+- [C# Reference](../index.md)
+- [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](index.md)
 - [Checked and Unchecked](checked-and-unchecked.md)
 - [checked](checked.md)

@@ -3,8 +3,6 @@ title: "XML Type Support Implementation Notes"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: 26b071f3-1261-47ef-8690-0717f5cd93c1
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # XML Type Support Implementation Notes
 This topic describes some implementation details that you want to be aware of.  
@@ -36,7 +34,7 @@ This topic describes some implementation details that you want to be aware of.
  Similarly, instances of `xs:gMonth`, `xs:gDay`, `xs:gYear`, `xs:gYearMonth` and `xs:gMonthDay` are also mapped to a <xref:System.DateTime> object. Unused properties on the <xref:System.DateTime> object are initialized to those from <xref:System.DateTime.MinValue>.  
   
 > [!NOTE]
->  You cannot rely on the <xref:System.DateTime.Year%2A?displayProperty=nameWithType> value when the content is typed as `xs:gMonthDay`. The <xref:System.DateTime.Year%2A?displayProperty=nameWithType> value is always set to 1904 in this case.  
+> You cannot rely on the <xref:System.DateTime.Year%2A?displayProperty=nameWithType> value when the content is typed as `xs:gMonthDay`. The <xref:System.DateTime.Year%2A?displayProperty=nameWithType> value is always set to 1904 in this case.  
   
 ### xs:anyURI and System.Uri  
  When an instance of `xs:anyURI` that represents a relative URI is mapped to a <xref:System.Uri>, the <xref:System.Uri> object does not have a base URI.  

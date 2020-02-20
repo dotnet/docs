@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: f9411e7a-27df-451f-9f6c-d643d6a7a7ce
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRPolicyManager::SetDefaultAction Method
 Specifies the policy action the common language runtime (CLR) should take when the specified operation occurs.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetDefaultAction (  
     [in] EClrOperation operation,  
     [in] EPolicyAction action  

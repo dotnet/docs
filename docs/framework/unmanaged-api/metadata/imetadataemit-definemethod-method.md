@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 3e2102c5-48b7-4c0e-b805-7e2b5e156e3d
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::DefineMethod Method
 Creates a definition for a method or global function with the specified signature, and returns a token to that method definition.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineMethod (      
     [in]  mdTypeDef         td,   
     [in]  LPCWSTR           szName,   

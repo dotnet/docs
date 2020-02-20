@@ -6,34 +6,30 @@ helpviewer_keywords:
 ms.assetid: c832fa5b-cf86-4690-be5a-a226c0e49530
 ---
 # Getting Started with WCF Data Services
-The topics in this section help you quickly understand [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] and how to use [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] to expose and consume [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feeds by explaining the underlying technologies. This section includes both conceptual content and a [quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md) tutorial.  
+The topics in this section help you quickly understand Open Data Protocol (OData) and how to use WCF Data Services to expose and consume OData feeds by explaining the underlying technologies. This section includes both conceptual content and a [quickstart](quickstart-wcf-data-services.md) tutorial.  
   
 ## In This Section  
- The following topics describe how to create data services by using [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)].  
+ The following topics describe how to create data services by using WCF Data Services.  
   
- [Exposing Your Data as a Service](../../../../docs/framework/data/wcf/exposing-your-data-as-a-service-wcf-data-services.md)  
- Describes the steps that are required to create a data service by using [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)].  
+ [Exposing Your Data as a Service](exposing-your-data-as-a-service-wcf-data-services.md)  
+ Describes the steps that are required to create a data service by using WCF Data Services.  
   
- [Accessing Data Service Resources](../../../../docs/framework/data/wcf/accessing-data-service-resources-wcf-data-services.md)  
- Describes how to work with [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feeds.  
+ [Accessing Data Service Resources](accessing-data-service-resources-wcf-data-services.md)  
+ Describes how to work with OData feeds.  
   
- [Using a Data Service in a Client Application](../../../../docs/framework/data/wcf/using-a-data-service-in-a-client-application-wcf-data-services.md)  
- Describes how to work with an [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] feed in a .NET Framework client application.  
+ [Using a Data Service in a Client Application](using-a-data-service-in-a-client-application-wcf-data-services.md)  
+ Describes how to work with an OData feed in a .NET Framework client application.  
   
- [Quickstart](../../../../docs/framework/data/wcf/quickstart-wcf-data-services.md)  
- Shows how to create and access a simple [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)]-based service that exposes a feed based on the Northwind sample database.  
+ [Quickstart](quickstart-wcf-data-services.md)  
+ Shows how to create and access a simple OData-based service that exposes a feed based on the Northwind sample database.  
   
- [Application Scenarios](../../../../docs/framework/data/wcf/application-scenarios-wcf-data-services.md)  
- Highlights a core set of [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] scenarios that are supported by [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)].  
+ [Application Scenarios](application-scenarios-wcf-data-services.md)  
+ Highlights a core set of OData scenarios that are supported by WCF Data Services.  
   
- [Resources](../../../../docs/framework/data/wcf/wcf-data-services-resources.md)  
- Provides links to [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] and [!INCLUDE[ssODataShort](../../../../includes/ssodatashort-md.md)] resources.  
+ [Resources](wcf-data-services-resources.md)  
+ Provides links to WCF Data Services and OData resources.  
   
 ## Related Sections  
- [WCF Data Services (Silverlight)](https://go.microsoft.com/fwlink/?LinkID=143149)  
+ [WCF Data Services (Silverlight)](https://docs.microsoft.com/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc838234(v=vs.95))  
   
- [Getting Started](../../../../docs/framework/data/adonet/ef/getting-started.md)  
-  
-## See also
-
-- [OData SDK](https://go.microsoft.com/fwlink/?LinkID=185248)
+ [Getting Started](../adonet/ef/getting-started.md)  

@@ -15,18 +15,16 @@ helpviewer_keywords:
 ms.assetid: 8f0dd2fe-7df7-464e-91f4-5518c586bb5f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedReader::Initialize Method
 Initializes the symbol reader with the metadata importer interface that this reader will be associated with, along with the file name of the module.  
   
 > [!NOTE]
->  This method can be called only once, and must be called before any other reader methods.  
+> This method can be called only once, and must be called before any other reader methods.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Initialize (  
     [in]  IUnknown     *importer,  
     [in]  const WCHAR  *filename,  

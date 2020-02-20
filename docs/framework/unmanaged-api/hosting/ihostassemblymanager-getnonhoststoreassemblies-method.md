@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: d2250b38-c76a-40ce-80c8-ba45149886e8
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostAssemblyManager::GetNonHostStoreAssemblies Method
 Gets an interface pointer to an [ICLRAssemblyReferenceList](../../../../docs/framework/unmanaged-api/hosting/iclrassemblyreferencelist-interface.md) that represents the list of assemblies that the host expects the common language runtime (CLR) to load.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetNonHostStoreAssemblies (  
     [out] ICLRAssemblyReferenceList **ppReferenceList  
 );  
@@ -59,7 +57,7 @@ HRESULT GetNonHostStoreAssemblies (
  If the host sets `ppReferenceList` to null, the CLR first probes the global assembly cache, calls `ProvideAssembly`, and then probes the application base to resolve an assembly reference.  
   
 > [!NOTE]
->  Upon initialization, the CLR calls `GetNonHostStoreAssemblies` only once. The method is not called again.  
+> Upon initialization, the CLR calls `GetNonHostStoreAssemblies` only once. The method is not called again.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

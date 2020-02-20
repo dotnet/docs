@@ -7,8 +7,6 @@ dev_langs:
   - "vb"
   - "cpp"
 ms.assetid: 03a7c5a1-b296-4af4-b209-043c958dc0a5
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Modify XML Data using XPathNavigator
 The <xref:System.Xml.XPath.XPathNavigator> class provides a set of methods used to modify nodes and values in an XML document. In order to use these methods, the <xref:System.Xml.XPath.XPathNavigator> object must be editable, that is, its <xref:System.Xml.XPath.XPathNavigator.CanEdit%2A> property must be `true`.  
@@ -33,7 +31,7 @@ The <xref:System.Xml.XPath.XPathNavigator> class provides a set of methods used 
 |<xref:System.Xml.XPath.XPathNodeType.Namespace>|Not Supported.|  
   
 > [!NOTE]
->  Editing <xref:System.Xml.XPath.XPathNodeType.Namespace> nodes or the <xref:System.Xml.XPath.XPathNodeType.Root> node is not supported.  
+> Editing <xref:System.Xml.XPath.XPathNodeType.Namespace> nodes or the <xref:System.Xml.XPath.XPathNodeType.Root> node is not supported.  
   
  The <xref:System.Xml.XPath.XPathNavigator> class also provides a set of methods used to insert and remove nodes. For more information about inserting and removing nodes from an XML document, see the [Insert XML Data using XPathNavigator](../../../../docs/standard/data/xml/insert-xml-data-using-xpathnavigator.md) and [Remove XML Data using XPathNavigator](../../../../docs/standard/data/xml/remove-xml-data-using-xpathnavigator.md) topics.  
   
@@ -103,7 +101,7 @@ navigator.SetTypedValue(DateTime.Now);
  The <xref:System.Xml.XPath.XPathNavigator> class uses the W3C XML Schema as a basis for describing strongly-typed XML. Elements and attributes can be annotated with type information based on validation against a W3C XML Schema document. Elements that can contain other elements or attributes are called complex types, while those that can only contain textual content are called simple types.  
   
 > [!NOTE]
->  Attributes can only have simple types.  
+> Attributes can only have simple types.  
   
  An element or attribute can be considered to be schema-valid if it conforms to all the rules specific to its type definition. An element that has the simple type `xs:int` has to contain a numeric value between -2147483648 and 2147483647 to be schema-valid. For complex types, the schema-validity of the element is dependent on the schema-validity of its child elements and attributes. Thus if an element is valid against its complex type definition, all its child elements and attributes are valid against their type definitions. Similarly, if even one of the child elements or attributes of an element is invalid against its type definition, or has an unknown validity, the element is also either invalid or of unknown validity.  
   
@@ -237,7 +235,7 @@ Console.WriteLine(navigator.OuterXml);
  If an <xref:System.Xml.XPath.XPathNavigator> object is used to add content to a valid element with an `xsi:nil` attribute with a value of `true`, the value of its `xsi:nil` attribute is set to `false`.  
   
 > [!NOTE]
->  If the content of an element with an `xsi:nil` attribute set to `false` is deleted, the value of the attribute is not changed to `true`.  
+> If the content of an element with an `xsi:nil` attribute set to `false` is deleted, the value of the attribute is not changed to `true`.  
   
 ## Saving an XML Document  
  Saving changes made to an <xref:System.Xml.XmlDocument> object as the result of the editing methods described in this topic is performed using the methods of the <xref:System.Xml.XmlDocument> class. For more information about saving changes made to an <xref:System.Xml.XmlDocument> object, see [Saving and Writing a Document](../../../../docs/standard/data/xml/saving-and-writing-a-document.md).  

@@ -1,5 +1,5 @@
 ---
-title: "How to: Change the Borders of Windows Forms"
+title: Change form borders
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

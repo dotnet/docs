@@ -1,5 +1,5 @@
 ---
-title: "Processing Drives, Directories, and Files (Visual Basic)"
+title: "Processing Drives, Directories, and Files"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "drives"
@@ -11,9 +11,11 @@ helpviewer_keywords:
 ms.assetid: f1db14c8-a4fd-4d0b-8323-c7cb29d688c2
 ---
 # Processing Drives, Directories, and Files (Visual Basic)
+
 You can use Visual Basic to process drives, folders, and files with the `My.Computer.FileSystem` object, which provides better performance and is easier to use than traditional methods such as the `FileOpen` and `Write` functions (although they are still available). The following sections discuss these methods in detail.  
   
 ## In This Section  
+
  [File Access with Visual Basic](../../../../visual-basic/developing-apps/programming/drives-directories-files/file-access.md)  
  Discusses how to use the `My.Computer.FileSystem` object to work with files, drives, and folders.  
   
@@ -27,6 +29,7 @@ You can use Visual Basic to process drives, folders, and files with the `My.Comp
  Demonstrates how to use the `My.Computer.FileSystem` object to manipulate files and folders.  
   
 ## Related Sections  
+
  [Program Structure and Code Conventions](../../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)  
  Provides guidelines for the physical structure and appearance of programs.  
   

@@ -1,5 +1,5 @@
 ---
-title: "How to: Use the Row Template to Customize Rows in the Windows Forms DataGridView Control"
+title: Use the Row Template to Customize Rows in DataGridView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -18,7 +18,7 @@ The <xref:System.Windows.Forms.DataGridView> control uses the row template as a 
  There are some situations where you must use the row template to achieve a particular effect. For example, row height information cannot be stored in a <xref:System.Windows.Forms.DataGridViewCellStyle>, so you must use a row template to change the default height used by all rows. The row template is also useful when you create your own classes derived from <xref:System.Windows.Forms.DataGridViewRow> and you want your custom type used when new rows are added to the control.  
   
 > [!NOTE]
->  The row template is used only when rows are added. You cannot change existing rows by changing the row template.  
+> The row template is used only when rows are added. You cannot change existing rows by changing the row template.  
   
 ### To use the row template  
   

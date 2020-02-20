@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 3480bbdb-c442-44a0-b7c6-333354503c52
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataDispenserEx::OpenScopeOnITypeInfo Method
 This method is not implemented. If called, it returns E_NOTIMPL.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT OpenScopeOnITypeInfo (  
     [in]  ITypeInfo   *pITI,  
     [in]  DWORD       dwOpenFlags,  

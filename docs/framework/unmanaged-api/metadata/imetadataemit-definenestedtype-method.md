@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 1e994de6-4628-459c-b967-b34be1e9fe4f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::DefineNestedType Method
 Creates the metadata signature of a type definition, returns an `mdTypeDef` token for that type, and specifies that the defined type is a member of the type referenced by the `tdEncloser` parameter.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DefineNestedType (   
     [in]  LPCWSTR     szTypeDef,  
     [in]  DWORD       dwTypeDefFlags,   

@@ -33,11 +33,12 @@ helpviewer_keywords:
 ms.assetid: 657141cd-5cf5-4fdb-a4b2-4c040eba84b5
 ---
 # Handling Errors
+
 The <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> classes throw both system exceptions (such as <xref:System.ArgumentException>) and Web-specific exceptions (which are <xref:System.Net.WebException> thrown by the <xref:System.Net.WebRequest.GetResponse%2A> method).  
   
- Each **WebException** includes a <xref:System.Net.WebException.Status%2A> property that contains a value from the <xref:System.Net.WebExceptionStatus> enumeration. You can examine the **Status** property to determine the error that occurred and take the proper steps to resolve the error.  
+Each **WebException** includes a <xref:System.Net.WebException.Status%2A> property that contains a value from the <xref:System.Net.WebExceptionStatus> enumeration. You can examine the **Status** property to determine the error that occurred and take the proper steps to resolve the error.  
   
- The following table describes the possible values for the **Status** property.  
+The following table describes the possible values for the **Status** property.  
   
 |Status|Description|  
 |------------|-----------------|  
@@ -60,9 +61,9 @@ The <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> classes throw
 |ProxyNameResolutionFailure|The name resolver service could not resolve the proxy host name.|  
 |UnknownError|An exception of unknown type has occurred.|  
   
- When the **Status** property is **WebExceptionStatus.ProtocolError**, a **WebResponse** that contains the response from the server is available. You can examine this response to determine the actual source of the protocol error.  
+When the **Status** property is **WebExceptionStatus.ProtocolError**, a **WebResponse** that contains the response from the server is available. You can examine this response to determine the actual source of the protocol error.  
   
- The following example shows how to catch a **WebException**.  
+The following example shows how to catch a **WebException**.  
   
 ```csharp  
 try   
@@ -157,11 +158,11 @@ Catch e As Exception
 End Try  
 ```  
   
- Applications that use the <xref:System.Net.Sockets.Socket> class throw <xref:System.Net.Sockets.SocketException> when errors occur on the Windows socket. The <xref:System.Net.Sockets.TcpClient>, <xref:System.Net.Sockets.TcpListener>, and <xref:System.Net.Sockets.UdpClient> classes are built on top of the **Socket** class and throw **SocketExceptions** as well.  
+Applications that use the <xref:System.Net.Sockets.Socket> class throw <xref:System.Net.Sockets.SocketException> when errors occur on the Windows socket. The <xref:System.Net.Sockets.TcpClient>, <xref:System.Net.Sockets.TcpListener>, and <xref:System.Net.Sockets.UdpClient> classes are built on top of the **Socket** class and throw **SocketExceptions** as well.  
   
- When a **SocketException** is thrown, the **SocketException** class sets the <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property to the last operating system socket error that occurred. For more information about socket error codes, see the Winsock 2.0 API error code documentation in MSDN.  
+When a **SocketException** is thrown, the **SocketException** class sets the <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property to the last operating system socket error that occurred. For more information about socket error codes, see the Winsock 2.0 API error code documentation in MSDN.  
   
 ## See also
 
-- [Exception Handling Fundamentals](../../../docs/standard/exceptions/exception-handling-fundamentals.md)
-- [Requesting Data](../../../docs/framework/network-programming/requesting-data.md)
+- [Handling and throwing exceptions in .NET](../../standard/exceptions/index.md)
+- [Requesting Data](requesting-data.md)

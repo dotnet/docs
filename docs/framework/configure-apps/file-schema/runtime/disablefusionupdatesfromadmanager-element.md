@@ -5,15 +5,13 @@ helpviewer_keywords:
   - "disableFusionUpdatesFromADManager element"
   - "<disableFusionUpdatesFromADManager> element"
 ms.assetid: 58d2866c-37bd-4ffa-abaf-ff35926a2939
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<disableFusionUpdatesFromADManager> Element
 Specifies whether the default behavior, which is to allow the runtime host to override configuration settings for an application domain, is disabled.  
   
- \<configuration> Element  
-\<runtime> Element  
-\<disableFusionUpdatesFromADManager>  
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<runtime>**](runtime-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;**\<disableFusionUpdatesFromADManager>**  
   
 ## Syntax  
   
@@ -71,6 +69,6 @@ Specifies whether the default behavior, which is to allow the runtime host to ov
   
 ## See also
 
-- [Runtime Settings Schema](../../../../../docs/framework/configure-apps/file-schema/runtime/index.md)
-- [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)
-- [How the Runtime Locates Assemblies](../../../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)
+- [Runtime Settings Schema](index.md)
+- [Configuration File Schema](../index.md)
+- [How the Runtime Locates Assemblies](../../../deployment/how-the-runtime-locates-assemblies.md)

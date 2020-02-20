@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 0b09b750-0b86-4ba4-9621-041857cfe8ba
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorThreadpool::CorGetAvailableThreads Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CorGetAvailableThreads (  
     [out] DWORD *AvailableWorkerThreads,  
     [out] DWORD *AvailableIOCompletionThreads  

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 6dcc4a4b-3a78-4369-bcc7-c0be6dde57d4
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostTaskManager::SetStackGuarantee Method
 Reserved for internal use only.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetStackGuarantee(  
     [in] ULONG guarantee  
 );  

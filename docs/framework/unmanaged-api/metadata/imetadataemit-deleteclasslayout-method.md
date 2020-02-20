@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 65a4ad49-fa49-4b36-8ed1-76dd6a185ab4
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::DeleteClassLayout Method
 Destroys the class layout metadata signature for the type represented by the specified token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT DeleteClassLayout (  
     [in]  mdTypeDef   td  
 );  

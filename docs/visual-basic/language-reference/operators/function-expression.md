@@ -1,5 +1,5 @@
 ---
-title: "Function Expression (Visual Basic)"
+title: "Function Expression"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Function expression [Visual Basic]"
@@ -12,7 +12,7 @@ Declares the parameters and code that define a function lambda expression.
   
 ## Syntax  
   
-```  
+```vb  
 Function ( [ parameterlist ] ) expression  
 - or -  
 Function ( [ parameterlist ] )  
@@ -66,7 +66,7 @@ End Function
  [!code-vb[VbVbalrLambdas#14](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrLambdas/VB/Class1.vb#14)]  
   
 ## Example  
- Lambda expressions underlie many of the query operators in [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)], and can be used explicitly in method-based queries. The following example shows a typical [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query, followed by the translation of the query into method format.  
+ Lambda expressions underlie many of the query operators in Language-Integrated Query (LINQ), and can be used explicitly in method-based queries. The following example shows a typical LINQ query, followed by the translation of the query into method format.  
   
 ```vb  
 Dim londonCusts = From cust In db.Customers  

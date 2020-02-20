@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 4e2d88c6-8a3a-4fbe-900b-b4f4c06bf6bf
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::GetFieldMarshal Method
 Gets a pointer to the native, unmanaged type of the field represented by the specified field metadata token.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetFieldMarshal (  
    [in]  mdToken             tk,   
    [out] PCCOR_SIGNATURE     *ppvNativeType,  

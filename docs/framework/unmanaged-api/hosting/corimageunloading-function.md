@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: b4367214-6dac-4280-aa11-fd487ff30bc4
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # _CorImageUnloading Function
 Notifies the loader when the managed module images are unloaded.  
@@ -24,7 +22,7 @@ Notifies the loader when the managed module images are unloaded.
   
 ## Syntax  
   
-```  
+```cpp  
 STDAPI (VOID) _CorImageUnloading(   
    [in] PVOID* ImageBase  
 );  

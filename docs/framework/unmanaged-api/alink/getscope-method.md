@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: e1555328-2c71-4ece-b357-9eb6d3a8efc4
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # GetScope Method
 Gets an import scope.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetScope(  
     mdAssembly AssemblyID,  
     mdToken FileToken,  
@@ -42,7 +40,7 @@ HRESULT GetScope(
  Zero-based scope to import.  
   
  `ppImportScope`  
- Receives [IMetaDataImport Interface](../../../../docs/framework/unmanaged-api/metadata/imetadataimport-interface.md) interface for the scope.  
+ Receives [IMetaDataImport Interface](../metadata/imetadataimport-interface.md) interface for the scope.  
   
 ## Return Value  
  Returns S_OK if the method succeeds.  
@@ -52,6 +50,6 @@ HRESULT GetScope(
   
 ## See also
 
-- [IALink Interface](../../../../docs/framework/unmanaged-api/alink/ialink-interface.md)
-- [IALink2 Interface](../../../../docs/framework/unmanaged-api/alink/ialink2-interface.md)
-- [ALink API](../../../../docs/framework/unmanaged-api/alink/index.md)
+- [IALink Interface](ialink-interface.md)
+- [IALink2 Interface](ialink2-interface.md)
+- [ALink API](index.md)

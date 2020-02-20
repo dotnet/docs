@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: fb8c14f7-d461-43d1-8b47-adb6723b9b93
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # MDAInfo Structure
 Provides details about the `Event_MDAFired` event, which triggers the creation of a managed debugging assistant (MDA).  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct _MDAInfo {  
     LPCWSTR  lpMDACaption;  
     LPCWSTR  lpMDAMessage  

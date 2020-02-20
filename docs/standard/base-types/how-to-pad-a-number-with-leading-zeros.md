@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "number formatting [.NET Framework]"
   - "numbers [.NET Framework], format strings"
 ms.assetid: 0b2c2cb5-c580-4891-8d81-cb632f5ec384
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # How to: Pad a Number with Leading Zeros

@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: b6f1dbd4-1a9f-44dd-b54b-c530ab44eb48
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ITypeNameBuilder::AddPointer Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT AddPointer ( );  
 ```  
   

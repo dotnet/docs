@@ -180,8 +180,8 @@ The complete documentation for FILESTREAM is located in the following sections i
 
 ## See also
 
-- [SQL Server Data Types and ADO.NET](../../../../../docs/framework/data/adonet/sql/sql-server-data-types.md)
-- [Retrieving and Modifying Data in ADO.NET](../../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
-- [Code Access Security and ADO.NET](../../../../../docs/framework/data/adonet/code-access-security.md)
-- [SQL Server Binary and Large-Value Data](../../../../../docs/framework/data/adonet/sql/sql-server-binary-and-large-value-data.md)
-- [ADO.NET Overview](../../../../../docs/framework/data/adonet/ado-net-overview.md)
+- [SQL Server Data Types and ADO.NET](sql-server-data-types.md)
+- [Retrieving and Modifying Data in ADO.NET](../retrieving-and-modifying-data.md)
+- [Code Access Security and ADO.NET](../code-access-security.md)
+- [SQL Server Binary and Large-Value Data](sql-server-binary-and-large-value-data.md)
+- [ADO.NET Overview](../ado-net-overview.md)

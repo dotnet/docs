@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, samples"
   - "COM interop, samples"
 ms.assetid: a219cb2c-9fa2-4c90-9b26-939e0788f178
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # COM Interop Sample: COM Client and .NET Server
 This sample demonstrates the interoperation of a [COM Client](#cpconcominteropsamplecomclientnetserveranchor1) and a [.NET Server](#cpconcominteropsamplecomclientnetserveranchor2) that performs mortgage calculations. In this example, the client creates and calls an instance of the managed `Loan` class, passes four arguments (one of those four being equal to zero) to the instance, and displays the computations. Code examples from this sample appear throughout this section.  
@@ -385,4 +383,4 @@ namespace LoanLib {
   
 ## See also
 
-- [Exposing .NET Framework Components to COM](../../../docs/framework/interop/exposing-dotnet-components-to-com.md)
+- [Exposing .NET Framework Components to COM](exposing-dotnet-components-to-com.md)

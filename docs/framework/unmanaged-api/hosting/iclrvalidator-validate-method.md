@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 0b1b432a-d234-4002-839b-81366c3a8bdc
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRValidator::Validate Method
 Validates the portable executable (PE) or Microsoft intermediate language (MSIL) in the specified file.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Validate (  
     [in] IVEHandler        *veh,  
     [in] unsigned long      ulAppDomainId,  

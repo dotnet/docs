@@ -29,7 +29,7 @@ Some controls, such as <xref:System.Windows.Controls.Calendar> and <xref:System.
  You can also use formats and format strings that are not specifically shown in this topic. Technically, the XAML for any <xref:System.DateTime> value that is specified and then parsed by the WPF XAML parser uses an internal  call to <xref:System.DateTime.Parse%2A?displayProperty=nameWithType>, therefore you could use any string accepted by <xref:System.DateTime.Parse%2A?displayProperty=nameWithType> for your XAML input. For more information, see <xref:System.DateTime.Parse%2A?displayProperty=nameWithType>.  
   
 > [!IMPORTANT]
->  The DateTime XAML syntax always uses `en-us` as the <xref:System.Globalization.CultureInfo> for its native conversion. This is not influenced by <xref:System.Windows.FrameworkElement.Language%2A> value or `xml:lang` value in the XAML, because XAML attribute-level type conversion acts without that context. Do not attempt to interpolate the format strings shown here due to cultural variations, such as the order in which day and month appear. The format strings shown here are the exact format strings used when parsing the XAML regardless of other culture settings.  
+> The DateTime XAML syntax always uses `en-us` as the <xref:System.Globalization.CultureInfo> for its native conversion. This is not influenced by <xref:System.Windows.FrameworkElement.Language%2A> value or `xml:lang` value in the XAML, because XAML attribute-level type conversion acts without that context. Do not attempt to interpolate the format strings shown here due to cultural variations, such as the order in which day and month appear. The format strings shown here are the exact format strings used when parsing the XAML regardless of other culture settings.  
   
  The following sections describe some of the common <xref:System.DateTime> format strings.  
   
@@ -69,4 +69,4 @@ Some controls, such as <xref:System.Windows.Controls.Calendar> and <xref:System.
   
 ## See also
 
-- [XAML Overview (WPF)](xaml-overview-wpf.md)
+- [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)

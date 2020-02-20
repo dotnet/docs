@@ -11,14 +11,12 @@ helpviewer_keywords:
   - "stopping asynchronous operations"
   - "asynchronous programming, beginning operations"
 ms.assetid: c9b3501e-6bc6-40f9-8efd-4b6d9e39ccf0
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Asynchronous Programming Model (APM)
 An asynchronous operation that uses the <xref:System.IAsyncResult> design pattern is implemented as two methods named `BeginOperationName` and `EndOperationName` that begin and end the asynchronous operation *OperationName* respectively. For example, the <xref:System.IO.FileStream> class provides the <xref:System.IO.FileStream.BeginRead%2A> and <xref:System.IO.FileStream.EndRead%2A> methods to asynchronously read bytes from a file. These methods implement the asynchronous version of the <xref:System.IO.FileStream.Read%2A> method.  
   
 > [!NOTE]
->  Starting with the .NET Framework 4, the Task Parallel Library provides a new model for asynchronous and parallel programming. For more information, see [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md) and [Task-based Asynchronous Pattern (TAP)](../../../docs/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md)).  
+> Starting with the .NET Framework 4, the Task Parallel Library provides a new model for asynchronous and parallel programming. For more information, see [Task Parallel Library (TPL)](../../../docs/standard/parallel-programming/task-parallel-library-tpl.md) and [Task-based Asynchronous Pattern (TAP)](../../../docs/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md)).  
   
  After calling `BeginOperationName`, an application can continue executing instructions on the calling thread while the asynchronous operation takes place on a different thread. For each call to `BeginOperationName`, the application should also call `EndOperationName` to get the results of the operation.  
   
@@ -42,10 +40,10 @@ An asynchronous operation that uses the <xref:System.IAsyncResult> design patter
  If the asynchronous operation represented by the <xref:System.IAsyncResult> object has not completed when `EndOperationName` is called, `EndOperationName` blocks the calling thread until the asynchronous operation is complete. Exceptions thrown by the asynchronous operation are thrown from the `EndOperationName` method. The effect of calling the `EndOperationName` method multiple times with the same <xref:System.IAsyncResult> is not defined. Likewise, calling the `EndOperationName` method with an <xref:System.IAsyncResult> that was not returned by the related Begin method is also not defined.  
   
 > [!NOTE]
->  For either of the undefined scenarios, implementers should consider throwing <xref:System.InvalidOperationException>.  
+> For either of the undefined scenarios, implementers should consider throwing <xref:System.InvalidOperationException>.  
   
 > [!NOTE]
->  Implementers of this design pattern should notify the caller that the asynchronous operation completed by setting <xref:System.IAsyncResult.IsCompleted%2A> to true, calling the asynchronous callback method (if one was specified) and signaling the <xref:System.IAsyncResult.AsyncWaitHandle%2A>.  
+> Implementers of this design pattern should notify the caller that the asynchronous operation completed by setting <xref:System.IAsyncResult.IsCompleted%2A> to true, calling the asynchronous callback method (if one was specified) and signaling the <xref:System.IAsyncResult.AsyncWaitHandle%2A>.  
   
  Application developers have several design choices for accessing the results of the asynchronous operation. The correct choice depends on whether the application has instructions that can execute while the operation completes. If an application cannot perform any additional work until it receives the results of the asynchronous operation, the application must block until the results are available. To block until an asynchronous operation completes, you can use one of the following approaches:  
   

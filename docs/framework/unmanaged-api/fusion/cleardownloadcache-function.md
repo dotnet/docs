@@ -16,20 +16,18 @@ helpviewer_keywords:
 ms.assetid: df7595d1-430f-44b4-8160-4c2ba9df70b1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ClearDownloadCache Function
 Clears the global assembly cache of downloaded assemblies.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ClearDownloadCache ();  
 ```  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -39,5 +37,5 @@ HRESULT ClearDownloadCache ();
   
 ## See also
 
-- [Fusion Global Static Functions](../../../../docs/framework/unmanaged-api/fusion/fusion-global-static-functions.md)
-- [Global Assembly Cache](../../../../docs/framework/app-domains/gac.md)
+- [Fusion Global Static Functions](fusion-global-static-functions.md)
+- [Global Assembly Cache](../../app-domains/gac.md)

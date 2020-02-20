@@ -24,5 +24,5 @@ Delegates can also be created using anonymous functions, which are "inline metho
 An interesting and useful property of a delegate is that it does not know or care about the class of the method it references; all that matters is that the referenced method has the same parameters and return type as the delegate.
 
 >[!div class="step-by-step"]
->[Previous](enums.md)
+>[Previous](interfaces.md)
 >[Next](attributes.md)

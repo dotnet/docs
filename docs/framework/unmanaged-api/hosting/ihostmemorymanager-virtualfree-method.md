@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 1a436e89-eb28-4d15-bcf1-a072f86dbd99
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostMemoryManager::VirtualFree Method
 Serves as a logical wrapper for the corresponding Win32 function. The Win32 implementation of `VirtualFree` releases, decommits, or releases and decommits a region of pages within the virtual address space of the calling process.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT VirtualFree (  
     [in] LPVOID  lpAddress,  
     [in] SIZE_T  dwSize,  

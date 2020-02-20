@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 796de687-7dd4-4b7b-a10b-8bf22dc7779f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugThreadEnum Interface
 Implements ICorDebugEnum methods and enumerates ICorDebugThread arrays.  
@@ -24,12 +22,12 @@ Implements ICorDebugEnum methods and enumerates ICorDebugThread arrays.
   
 |Method|Description|  
 |------------|-----------------|  
-|[Next Method](../../../../docs/framework/unmanaged-api/debugging/icordebugthreadenum-next-method.md)|Gets the specified number of `ICorDebugThread` instances from the enumeration, starting at the current position.|  
+|[Next Method](icordebugthreadenum-next-method.md)|Gets the specified number of `ICorDebugThread` instances from the enumeration, starting at the current position.|  
   
 ## Remarks  
   
 > [!NOTE]
->  This interface does not support being called remotely, either cross-machine or cross-process.  
+> This interface does not support being called remotely, either cross-machine or cross-process.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -42,4 +40,4 @@ Implements ICorDebugEnum methods and enumerates ICorDebugThread arrays.
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

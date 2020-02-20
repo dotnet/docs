@@ -8,8 +8,6 @@ dev_langs:
 helpviewer_keywords: 
   - "SpinWait, how to synchronize two-phase wait"
 ms.assetid: b2ac4e4a-051a-4f65-b4b9-f8e103aff195
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Use SpinWait to Implement a Two-Phase Wait Operation
 The following example shows how to use a <xref:System.Threading.SpinWait?displayProperty=nameWithType> object to implement a two-phase wait operation. In the first phase, the synchronization object, a `Latch`, spins for a few cycles while it checks whether the lock has become available. In the second phase, if the lock becomes available, then the `Wait` method returns without using the <xref:System.Threading.ManualResetEvent?displayProperty=nameWithType> to perform its wait; otherwise, `Wait` performs the wait.  

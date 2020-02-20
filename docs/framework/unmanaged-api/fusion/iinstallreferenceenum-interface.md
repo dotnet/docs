@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: 2863b33b-a541-462c-bbe8-702a2832898e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IInstallReferenceEnum Interface
 Represents an enumerator for the referenced assemblies installed in the global assembly cache.  
   
 ## Syntax  
   
-```  
+```cpp  
 interface IInstallReferenceEnum : IUnknown {  
     HRESULT GetNextInstallReferenceItem (  
         [out] IInstallReferenceItem **ppRefItem,  
@@ -36,10 +34,10 @@ interface IInstallReferenceEnum : IUnknown {
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetNextInstallReferenceItem Method](../../../../docs/framework/unmanaged-api/fusion/iinstallreferenceenum-getnextinstallreferenceitem-method.md)|Gets a pointer to the next `IInstallReferenceItem` contained in this `IInstallReferenceEnum`.|  
+|[GetNextInstallReferenceItem Method](iinstallreferenceenum-getnextinstallreferenceitem-method.md)|Gets a pointer to the next `IInstallReferenceItem` contained in this `IInstallReferenceEnum`.|  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** Fusion.h  
   
@@ -47,5 +45,5 @@ interface IInstallReferenceEnum : IUnknown {
   
 ## See also
 
-- [Fusion Interfaces](../../../../docs/framework/unmanaged-api/fusion/fusion-interfaces.md)
-- [IInstallReferenceItem Interface](../../../../docs/framework/unmanaged-api/fusion/iinstallreferenceitem-interface.md)
+- [Fusion Interfaces](fusion-interfaces.md)
+- [IInstallReferenceItem Interface](iinstallreferenceitem-interface.md)

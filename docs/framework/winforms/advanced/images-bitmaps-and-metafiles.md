@@ -16,7 +16,7 @@ The `Image` class is an abstract base class that provides methods for working wi
  Discusses the various image formats.  
   
  [Metafiles in GDI+](metafiles-in-gdi.md)  
- Discusses [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] support for metafiles.  
+ Discusses GDI+ support for metafiles.  
   
  [Drawing, Positioning, and Cloning Images in GDI+](drawing-positioning-and-cloning-images-in-gdi.md)  
  Discusses methods for drawing vector and raster images with managed code.  

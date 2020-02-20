@@ -1,5 +1,5 @@
 ---
-title: "Constants Overview (Visual Basic)"
+title: "Constants Overview"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "constants [Visual Basic]"
@@ -14,7 +14,7 @@ A constant is a meaningful name that takes the place of a number or string that 
  A constant's scope, which is the set of all code that can refer to it without qualifying its name, is the same as that of a variable declared in the same location. To create a constant that exists within the scope of a particular procedure, declare it inside that procedure. To create a constant that is available throughout an application, declare it using the `Public` keyword in the declarations section of the class.  
   
 > [!NOTE]
->  Although constants somewhat resemble variables, you cannot modify them or assign new values to them as you can to variables.  
+> Although constants somewhat resemble variables, you cannot modify them or assign new values to them as you can to variables.  
   
  The constants you use in your code can be defined by the object model for controls or components you work with, or they can be user-defined (that is, those you create yourself).  
   

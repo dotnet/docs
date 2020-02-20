@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 667a6d1e-753d-4ea2-8fd8-a8337d1bb9cd
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataTables2::GetMetaDataStorage Method
 Gets the size and contents of the metadata stored in the specified section.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetMetaDataStorage (  
    [in, out] const void   **ppvMd,  
    [out] ULONG   *pcbMd  

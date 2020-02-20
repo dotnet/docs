@@ -10,7 +10,7 @@ ms.assetid: 77571283-d16c-45bb-9f69-cafbbf72b21e
 System resources expose a number of system metrics as resources to help developers create visuals that are consistent with system settings. <xref:System.Windows.SystemParameters> is a class that contains both system parameter values and resource keys that bind to the values—for example, <xref:System.Windows.SystemParameters.FullPrimaryScreenHeight%2A> and <xref:System.Windows.SystemParameters.FullPrimaryScreenHeightKey%2A>. System parameter metrics can be used as either static or dynamic resources. Use a dynamic resource if you want the parameter metric to update automatically while the application runs; otherwise use a static resource.  
   
 > [!NOTE]
->  Dynamic resources have the keyword *Key* appended to the property name.  
+> Dynamic resources have the keyword *Key* appended to the property name.  
   
  The following example shows how to access and use system parameter dynamic resources to style or customize a button. This [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] example sizes a button by assigning <xref:System.Windows.SystemParameters> values to the button's width and height.  
   

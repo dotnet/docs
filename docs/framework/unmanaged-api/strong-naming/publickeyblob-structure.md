@@ -14,15 +14,13 @@ helpviewer_keywords:
 ms.assetid: b9240712-829c-4c8d-9a09-a6e7aa63f63a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # PublicKeyBlob Structure
 Represents, in binary format, the public key of a public/private key pair.  
   
 ## Syntax  
   
-```  
+```cpp  
 typedef struct {  
     unsigned int SigAlgId;  
     unsigned int HashAlgId;  
@@ -41,10 +39,10 @@ typedef struct {
 |`PublicKey`|A variable-length byte array that contains the key value in the format returned by the CryptoAPI.|  
   
 ## Remarks  
- The `PublicKeyBlob` structure is used by [StrongNameGetPublicKey](../../../../docs/framework/unmanaged-api/strong-naming/strongnamegetpublickey-function.md), [StrongNameSignatureGeneration](../../../../docs/framework/unmanaged-api/strong-naming/strongnamesignaturegeneration-function.md), and other strong name functions to represent the public key of a public/private key pair.  
+ The `PublicKeyBlob` structure is used by [StrongNameGetPublicKey](strongnamegetpublickey-function.md), [StrongNameSignatureGeneration](strongnamesignaturegeneration-function.md), and other strong name functions to represent the public key of a public/private key pair.  
   
 ## Requirements  
- **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
+ **Platforms:** See [System Requirements](../../get-started/system-requirements.md).  
   
  **Header:** StrongName.h  
   
@@ -54,5 +52,5 @@ typedef struct {
   
 ## See also
 
-- [StrongNameGetPublicKey Function](../../../../docs/framework/unmanaged-api/strong-naming/strongnamegetpublickey-function.md)
-- [StrongNameSignatureGeneration Function](../../../../docs/framework/unmanaged-api/strong-naming/strongnamesignaturegeneration-function.md)
+- [StrongNameGetPublicKey Function](strongnamegetpublickey-function.md)
+- [StrongNameSignatureGeneration Function](strongnamesignaturegeneration-function.md)

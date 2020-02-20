@@ -8,13 +8,13 @@ The *entity type* is the fundamental building block for describing the structure
   
 - A unique name. (Required.)  
   
-- An [entity key](../../../../docs/framework/data/adonet/entity-key.md) defined by one or more properties. (Required.)  
+- An [entity key](entity-key.md) defined by one or more properties. (Required.)  
   
-- Data in the form of [properties](../../../../docs/framework/data/adonet/property.md). (Optional.)  
+- Data in the form of [properties](property.md). (Optional.)  
   
-- [Navigation properties](../../../../docs/framework/data/adonet/navigation-property.md) that allow for navigation from one [end](../../../../docs/framework/data/adonet/association-end.md) of an [association](../../../../docs/framework/data/adonet/association-type.md) to the other end. (Optional)  
+- [Navigation properties](navigation-property.md) that allow for navigation from one [end](association-end.md) of an [association](association-type.md) to the other end. (Optional)  
   
- In an application, an instance of an entity type represents a specific object (such as a specific customer or order). Each instance of an entity type must have a unique [entity key](../../../../docs/framework/data/adonet/entity-key.md) within an [entity set](../../../../docs/framework/data/adonet/entity-set.md).  
+ In an application, an instance of an entity type represents a specific object (such as a specific customer or order). Each instance of an entity type must have a unique [entity key](entity-key.md) within an [entity set](entity-set.md).  
   
  Two entity type instances are considered equal only if they are of the same type and the values of their entity keys are the same.  
   
@@ -25,12 +25,12 @@ The *entity type* is the fundamental building block for describing the structure
   
  Note that the properties of each entity type that make up its entity key are denoted with "(Key)".  
   
- The [ADO.NET Entity Framework](../../../../docs/framework/data/adonet/ef/index.md) uses a domain-specific language (DSL) called conceptual schema definition language ([CSDL](../../../../docs/framework/data/adonet/ef/language-reference/csdl-specification.md)) to define conceptual models. The following CSDL defines the `Book` entity type shown in the diagram above:  
+ The [ADO.NET Entity Framework](./ef/index.md) uses a domain-specific language (DSL) called conceptual schema definition language ([CSDL](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec)) to define conceptual models. The following CSDL defines the `Book` entity type shown in the diagram above:  
   
  [!code-xml[EDM_Example_Model#EntityExample](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books.edmx#entityexample)]  
   
 ## See also
 
-- [Entity Data Model Key Concepts](../../../../docs/framework/data/adonet/entity-data-model-key-concepts.md)
-- [Entity Data Model](../../../../docs/framework/data/adonet/entity-data-model.md)
-- [facet](../../../../docs/framework/data/adonet/facet.md)
+- [Entity Data Model Key Concepts](entity-data-model-key-concepts.md)
+- [Entity Data Model](entity-data-model.md)
+- [facet](facet.md)

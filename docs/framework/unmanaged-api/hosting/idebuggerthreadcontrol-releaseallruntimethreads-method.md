@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 1a2995ff-5f02-4b49-84dc-3a5f9cfd7d55
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IDebuggerThreadControl::ReleaseAllRuntimeThreads Method
 Notifies the host that the debugging services are about to release all threads that are blocked.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT ReleaseAllRuntimeThreads ( );  
 ```  
   

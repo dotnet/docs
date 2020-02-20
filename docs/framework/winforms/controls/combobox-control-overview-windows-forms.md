@@ -1,5 +1,5 @@
 ---
-title: "ComboBox Control Overview (Windows Forms)"
+title: "ComboBox Control Overview"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "ComboBox"

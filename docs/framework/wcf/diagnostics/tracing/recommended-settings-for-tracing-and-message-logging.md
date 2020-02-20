@@ -96,13 +96,13 @@ This topic describes recommended tracing and message logging settings for differ
 ## Enable Correlated Events in ASP.NET Tracing  
  ASP.NET events do not set the correlation ID (ActivityID) unless ASP.NET event tracing is turned on. To see correlated events properly, you have to turn on ASP.NET events tracing using the following command in the command console, which can be invoked by going to **Start**, **Run** and type **cmd**,  
   
-```  
+```console  
 logman start mytrace -pf logman.providers -o test.etl –ets  
 ```  
   
  To turn off tracing of ASP.NET events, use the following command,  
   
-```  
+```console
 logman stop mytrace -ets  
 ```  
   

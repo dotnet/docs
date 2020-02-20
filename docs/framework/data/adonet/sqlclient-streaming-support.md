@@ -519,4 +519,4 @@ namespace StreamingFromServerToAnother {
 
 ## See also
 
-- [Retrieving and Modifying Data in ADO.NET](../../../../docs/framework/data/adonet/retrieving-and-modifying-data.md)
+- [Retrieving and Modifying Data in ADO.NET](retrieving-and-modifying-data.md)

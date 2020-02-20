@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "events [.NET Core]"
   - "events [.NET Framework]"
 ms.assetid: b6f65241-e0ad-4590-a99f-200ce741bb1f
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Handling and raising events
 
@@ -46,7 +44,7 @@ Delegates have many uses in .NET. In the context of events, a delegate is an int
   
 Delegates are [multicast](xref:System.MulticastDelegate), which means that they can hold references to more than one event-handling method. For details, see the <xref:System.Delegate> reference page. Delegates provide flexibility and fine-grained control in event handling. A delegate acts as an event dispatcher for the class that raises the event by maintaining a list of registered event handlers for the event.  
   
-For scenarios where the <xref:System.EventHandler> and <xref:System.EventHandler%601> delegates do not work, you can define a delegate. Scenarios that require you to define a delegate are very rare, such as when you must work with code that does not recognize generics. You mark a delegate with the C# [`delegate`](../../csharp/language-reference/keywords/delegate.md) and Visual Basic [`Delegate`](../../visual-basic/language-reference/statements/delegate-statement.md) keyword in the declaration. The following example shows how to declare a delegate named `ThresholdReachedEventHandler`.  
+For scenarios where the <xref:System.EventHandler> and <xref:System.EventHandler%601> delegates do not work, you can define a delegate. Scenarios that require you to define a delegate are very rare, such as when you must work with code that does not recognize generics. You mark a delegate with the C# [`delegate`](../../csharp/language-reference/builtin-types/reference-types.md#the-delegate-type) and Visual Basic [`Delegate`](../../visual-basic/language-reference/statements/delegate-statement.md) keyword in the declaration. The following example shows how to declare a delegate named `ThresholdReachedEventHandler`.  
   
 [!code-csharp[EventsOverview#4](~/samples/snippets/csharp/VS_Snippets_CLR/eventsoverview/cs/programtruncated.cs#4)]
 [!code-vb[EventsOverview#4](~/samples/snippets/visualbasic/VS_Snippets_CLR/eventsoverview/vb/module1truncated.vb#4)]  

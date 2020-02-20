@@ -10,7 +10,7 @@ This section contains samples that deal with custom extensibility and other feat
  [Channels Extensibility](../../../../docs/framework/wcf/samples/channels-extensibility.md)  
  Demonstrates custom channels.  
   
- [Discovery Extensibility](../../../../docs/framework/wcf/samples/discovery-extensibility.md)  
+ [Discovery Extensibility](/previous-versions/dotnet/netframework-4.0/dd807503(v%3dvs.100))  
  Demonstrates custom discovery.  
   
  [Instancing Extensibility](../../../../docs/framework/wcf/samples/instancing-extensibility.md)  

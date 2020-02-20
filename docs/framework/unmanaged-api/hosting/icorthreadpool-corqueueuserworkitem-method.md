@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 29ac7898-a7c7-433e-8f79-cd5237e0bab8
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorThreadpool::CorQueueUserWorkItem Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT CorQueueUserWorkItem (  
     [in] LPTHREAD_START_ROUTINE Function,  
     [in] PVOID                  Context,  

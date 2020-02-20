@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 0d101168-b5e3-49ce-90c7-85cf2db83c4c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostManualEvent::Reset Method
 Resets the current [IHostManualEvent](../../../../docs/framework/unmanaged-api/hosting/ihostmanualevent-interface.md) instance to a non-signaled state.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Reset ();  
 ```  
   

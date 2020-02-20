@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: ae0cfd73-8ead-4d36-9310-dccaac9db0bd
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugThread::GetUserState Method
 Gets the current user state of this ICorDebugThread.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetUserState (  
     [out] CorDebugUserState   *pState  
 );  

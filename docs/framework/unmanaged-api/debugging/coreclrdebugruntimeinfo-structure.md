@@ -16,15 +16,13 @@ helpviewer_keywords:
 ms.assetid: bd01c30f-b7a8-4179-9497-622b6599b1a6
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CoreClrDebugRuntimeInfo Structure
 Represents a common language runtime (CLR) instance that is loaded in a process on a remote machine.  
   
 ## Syntax  
   
-```  
+```cpp  
 struct  CoreClrDebugRuntimeInfo {  
     DWORD m_dwInternalID;  
 };  

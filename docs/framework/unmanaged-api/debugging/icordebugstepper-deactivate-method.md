@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 855f4199-b62d-40ce-998e-1eb4a1772142
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugStepper::Deactivate Method
 Causes this ICorDebugStepper to cancel the last step command that it received.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Deactivate ();  
 ```  
   

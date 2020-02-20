@@ -1,5 +1,5 @@
 ---
-title: "Structures and Other Programming Elements (Visual Basic)"
+title: "Structures and Other Programming Elements"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "structures [Visual Basic], arrays"
@@ -13,7 +13,7 @@ ms.assetid: 0f849313-ccd2-4c9a-acb9-69de6751c088
 You can use structures in conjunction with arrays, objects, and procedures, as well as with each other. The interactions use the same syntax as these elements use individually.  
   
 > [!NOTE]
->  You cannot initialize any of the structure elements in the structure declaration. You can assign values only to elements of a variable that has been declared to be of a structure type.  
+> You cannot initialize any of the structure elements in the structure declaration. You can assign values only to elements of a variable that has been declared to be of a structure type.  
   
 ## Structures and Arrays  
  A structure can contain an array as one or more of its elements. The following example illustrates this.  

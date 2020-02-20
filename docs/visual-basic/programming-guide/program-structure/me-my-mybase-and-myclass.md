@@ -1,5 +1,5 @@
 ---
-title: "Me, My, MyBase, and MyClass in Visual Basic"
+title: "Me, My, MyBase, and MyClass"
 ms.date: 07/20/2015
 f1_keywords: 
   - "MyClass"
@@ -30,7 +30,7 @@ ms.assetid: f8e241ae-b1ed-4886-9aa0-08c632154029
   
  For example, suppose you have the following procedure in a module.  
   
-```  
+```vb  
 Sub ChangeFormColor(FormName As Form)  
    Randomize()  
    FormName.BackColor = Color.FromArgb(Rnd() * 256, Rnd() * 256, Rnd() * 256)  
@@ -39,7 +39,7 @@ End Sub
   
  You can call this procedure and pass the current instance of the <xref:System.Windows.Forms.Form> class as an argument by using the following statement.  
   
-```  
+```vb  
 ChangeFormColor(Me)  
 ```  
   

@@ -1,5 +1,5 @@
 ---
-title: "PrintPreviewControl Control (Windows Forms)"
+title: "PrintPreviewControl Control"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "printing [Windows Forms], print preview"

@@ -1,28 +1,29 @@
 - name: Windows Presentation Foundation
   href: index.md
+- name: Introduction to WPF
+  href: introduction-to-wpf.md
+- name: Get started
+  href: getting-started/
+- name: Application development
+  href: app-development/
+- name: Advanced
+  href: advanced/
+- name: Controls
+  href: controls/
+- name: Data
+  href: data/
+- name: Graphics and multimedia
+  href: graphics-multimedia/
+- name: Security
+  href: security-wpf.md
   items:
-  - name: Getting Started
-    href: getting-started/
-  - name: Application Development
-    href: app-development/
-  - name: Advanced
-    href: advanced/
-  - name: Controls
-    href: controls/
-  - name: Data
-    href: data/
-  - name: Graphics and Multimedia
-    href: graphics-multimedia/
-  - name: Security
-    href: security-wpf.md
-    items:
-    - name: WPF Partial Trust Security
-      href: wpf-partial-trust-security.md
-    - name: WPF Security Strategy - Platform Security
-      href: wpf-security-strategy-platform-security.md
-    - name: WPF Security Strategy - Security Engineering
-      href: wpf-security-strategy-security-engineering.md
-  - name: WPF Samples
-    href: wpf-samples.md
-  - name: Class Library
-    href: class-library-wpf.md
+  - name: WPF partial trust security
+    href: wpf-partial-trust-security.md
+  - name: Platform security
+    href: wpf-security-strategy-platform-security.md
+  - name: Security engineering
+    href: wpf-security-strategy-security-engineering.md
+- name: WPF samples
+  href: wpf-samples.md
+- name: Class library
+  href: class-library-wpf.md

@@ -24,7 +24,7 @@ Retrieves the pointer of the MethodDesc corresponding the method containing the 
 
 ## Syntax
 
-```
+```cpp
 HRESULT GetMethodDescPtrFromIP(
     CLRDATA_ADDRESS ip,
     CLRDATA_ADDRESS * ppMD

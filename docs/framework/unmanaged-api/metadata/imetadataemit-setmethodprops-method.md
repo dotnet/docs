@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: e0c6ac12-22ea-43f5-b799-8cda0faf3336
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::SetMethodProps Method
 Sets or updates the feature, stored at the specified relative virtual address, of a method defined by a prior call to [IMetaDataEmit::DefineMethod](../../../../docs/framework/unmanaged-api/metadata/imetadataemit-definemethod-method.md).  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT SetMethodProps (   
     [in]  mdMethodDef md,   
     [in]  DWORD       dwMethodFlags,  

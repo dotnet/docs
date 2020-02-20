@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: c0b82a9f-edc6-4878-9c81-48de53c02142
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRTaskManager::GetCurrentTask Method
 Gets the [ICLRTask](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md) instance that is currently running on the operating system thread from which the method call originated.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT GetCurrentTask (  
     [out] ICLRTask **ppTask  
 );  

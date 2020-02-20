@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 89940711-98e7-4aa6-bffc-5e39e91e1b7d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugModule::IsInMemory Method
 Gets a value that indicates whether this module exists only in memory.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsInMemory(  
     [out] BOOL *pInMemory  
 );  

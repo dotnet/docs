@@ -25,7 +25,7 @@ ASP.NET provides .NET Framework class libraries and tools for building Web servi
 - Adopt WCF and migrate existing ASP.NET Web service applications to WCF. You may choose this option to enhance the existing applications with features provided by WCF, or to reproduce the functionality of existing ASP.NET Web services within new, more powerful WCF applications.  
   
 > [!NOTE]
->  Care must be taken if a WCF service is hosted by IIS 5.x and ASP.NET is uninstalled. When a WCF service is hosted by IIS 5.x, the code for the service can be requested if ASP.NET is uninstalled. When ASP.NET is uninstalled on an operating system that is running IIS 5.x and WCF is uninstalled, a file with the .svc extension is considered a text file and the contents, including any source code, is returned to the requester.  
+> Care must be taken if a WCF service is hosted by IIS 5.x and ASP.NET is uninstalled. When a WCF service is hosted by IIS 5.x, the code for the service can be requested if ASP.NET is uninstalled. When ASP.NET is uninstalled on an operating system that is running IIS 5.x and WCF is uninstalled, a file with the .svc extension is considered a text file and the contents, including any source code, is returned to the requester.  
   
  This section describes these options in detail, compares ASP.NET Web Services to WCF and provides instructions on how to migrate your ASP.NET Web Services code to WCF.  
   

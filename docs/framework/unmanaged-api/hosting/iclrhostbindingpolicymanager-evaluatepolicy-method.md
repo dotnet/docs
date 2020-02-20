@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 3a3a9446-7a4e-4836-9b27-5c536c15993d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRHostBindingPolicyManager::EvaluatePolicy Method
 Evaluates binding policy on behalf of the host.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT EvaluatePolicy (  
     [in] LPCWSTR     pwzReferenceIdentity,  
     [in] BYTE       *pbApplicationPolicy,  

@@ -1,5 +1,5 @@
 ---
-title: "Property Statement (Visual Basic)"
+title: "Property Statement"
 ms.date: 05/12/2018
 f1_keywords:
   - "vb.PropertySet"
@@ -39,7 +39,7 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslis
 
 - `attributelist`
 
-  Optional. List of attributes that apply to this property or `Get` or `Set` procedure. See [Attribute List](../../../visual-basic/language-reference/statements/attribute-list.md).
+  Optional. List of attributes that apply to this property or `Get` or `Set` procedure. See [Attribute List](attribute-list.md).
 
 - `Default`
 
@@ -49,33 +49,33 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslis
 
   Optional on the `Property` statement and on at most one of the `Get` and `Set` statements. Can be one of the following:
 
-  - [Public](../../../visual-basic/language-reference/modifiers/public.md)
+  - [Public](../modifiers/public.md)
 
-  - [Protected](../../../visual-basic/language-reference/modifiers/protected.md)
+  - [Protected](../modifiers/protected.md)
 
-  - [Friend](../../../visual-basic/language-reference/modifiers/friend.md)
+  - [Friend](../modifiers/friend.md)
 
-  - [Private](../../../visual-basic/language-reference/modifiers/private.md)
+  - [Private](../modifiers/private.md)
 
-  - [Protected Friend](../../language-reference/modifiers/protected-friend.md)
+  - [Protected Friend](../modifiers/protected-friend.md)
 
-  - [Private Protected](../../language-reference/modifiers/private-protected.md)
+  - [Private Protected](../modifiers/private-protected.md)
 
-  See [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).
+  See [Access levels in Visual Basic](../../programming-guide/language-features/declared-elements/access-levels.md).
 
 - `propertymodifiers`
 
   Optional. Can be one of the following:
 
-  - [Overloads](../../../visual-basic/language-reference/modifiers/overloads.md)
+  - [Overloads](../modifiers/overloads.md)
 
-  - [Overrides](../../../visual-basic/language-reference/modifiers/overrides.md)
+  - [Overrides](../modifiers/overrides.md)
 
-  - [Overridable](../../../visual-basic/language-reference/modifiers/overridable.md)
+  - [Overridable](../modifiers/overridable.md)
 
-  - [NotOverridable](../../../visual-basic/language-reference/modifiers/notoverridable.md)
+  - [NotOverridable](../modifiers/notoverridable.md)
 
-  - [MustOverride](../../../visual-basic/language-reference/modifiers/mustoverride.md)
+  - [MustOverride](../modifiers/mustoverride.md)
 
   - `MustOverride Overrides`
 
@@ -83,31 +83,31 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslis
 
 - `Shared`
 
-  Optional. See [Shared](../../../visual-basic/language-reference/modifiers/shared.md).
+  Optional. See [Shared](../modifiers/shared.md).
 
 - `Shadows`
 
-  Optional. See [Shadows](../../../visual-basic/language-reference/modifiers/shadows.md).
+  Optional. See [Shadows](../modifiers/shadows.md).
 
 - `ReadOnly`
 
-  Optional. See [ReadOnly](../../../visual-basic/language-reference/modifiers/readonly.md).
+  Optional. See [ReadOnly](../modifiers/readonly.md).
 
 - `WriteOnly`
 
-  Optional. See [WriteOnly](../../../visual-basic/language-reference/modifiers/writeonly.md).
+  Optional. See [WriteOnly](../modifiers/writeonly.md).
 
 - `Iterator`
 
-  Optional. See [Iterator](../../../visual-basic/language-reference/modifiers/iterator.md).
+  Optional. See [Iterator](../modifiers/iterator.md).
 
 - `name`
 
-  Required. Name of the property. See [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md).
+  Required. Name of the property. See [Declared Element Names](../../programming-guide/language-features/declared-elements/declared-element-names.md).
 
 - `parameterlist`
 
-  Optional. List of local variable names representing the parameters of this property, and possible additional parameters of the `Set` procedure. See [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md).
+  Optional. List of local variable names representing the parameters of this property, and possible additional parameters of the `Set` procedure. See [Parameter List](parameter-list.md).
 
 - `returntype`
 
@@ -115,7 +115,7 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslis
 
 - `Implements`
 
-  Optional. Indicates that this property implements one or more properties, each one defined in an interface implemented by this property's containing class or structure. See [Implements Statement](../../../visual-basic/language-reference/statements/implements-statement.md).
+  Optional. Indicates that this property implements one or more properties, each one defined in an interface implemented by this property's containing class or structure. See [Implements Statement](implements-statement.md).
 
 - `implementslist`
 
@@ -134,7 +134,7 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslis
 
 - `Get`
 
-  Optional. Required if the property is marked `WriteOnly`. Starts a `Get` property procedure that is used to return the value of the property.
+  Optional. Required if the property is marked `ReadOnly`. Starts a `Get` property procedure that is used to return the value of the property.  The `Get` statement is not used with [auto-implemented properties](../../programming-guide/language-features/procedures/auto-implemented-properties.md).
 
 - `statements`
 
@@ -146,7 +146,7 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslis
 
 - `Set`
 
-  Optional. Required if the property is marked `ReadOnly`. Starts a `Set` property procedure that is used to store the value of the property.
+  Optional. Required if the property is marked `WriteOnly`. Starts a `Set` property procedure that is used to store the value of the property.  The `Set` statement is not used with [auto-implemented properties](../../programming-guide/language-features/procedures/auto-implemented-properties.md).
 
 - `End Set`
 
@@ -158,9 +158,9 @@ Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslis
 
 ## Remarks
 
-The `Property` statement introduces the declaration of a property. A property can have a `Get` procedure (read only), a `Set` procedure (write only), or both (read-write). You can omit the `Get` and `Set` procedure when using an auto-implemented property. For more information, see [Auto-Implemented Properties](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md).
+The `Property` statement introduces the declaration of a property. A property can have a `Get` procedure (read only), a `Set` procedure (write only), or both (read-write). You can omit the `Get` and `Set` procedure when using an auto-implemented property. For more information, see [Auto-Implemented Properties](../../programming-guide/language-features/procedures/auto-implemented-properties.md).
 
-You can use `Property` only at class level. This means the *declaration context* for a property must be a class, structure, module, or interface, and cannot be a source file, namespace, procedure, or block. For more information, see [Declaration Contexts and Default Access Levels](../../../visual-basic/language-reference/statements/declaration-contexts-and-default-access-levels.md).
+You can use `Property` only at class level. This means the *declaration context* for a property must be a class, structure, module, or interface, and cannot be a source file, namespace, procedure, or block. For more information, see [Declaration Contexts and Default Access Levels](declaration-contexts-and-default-access-levels.md).
 
 By default, properties use public access. You can adjust a property's access level with an access modifier on the `Property` statement, and you can optionally adjust one of its property procedures to a more restrictive access level.
 
@@ -206,9 +206,9 @@ The following example declares a property in a class.
 
 ## See also
 
-- [Auto-Implemented Properties](../../../visual-basic/programming-guide/language-features/procedures/auto-implemented-properties.md)
-- [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)
-- [Get Statement](../../../visual-basic/language-reference/statements/get-statement.md)
-- [Set Statement](../../../visual-basic/language-reference/statements/set-statement.md)
-- [Parameter List](../../../visual-basic/language-reference/statements/parameter-list.md)
-- [Default](../../../visual-basic/language-reference/modifiers/default.md)
+- [Auto-Implemented Properties](../../programming-guide/language-features/procedures/auto-implemented-properties.md)
+- [Objects and Classes](../../programming-guide/language-features/objects-and-classes/index.md)
+- [Get Statement](get-statement.md)
+- [Set Statement](set-statement.md)
+- [Parameter List](parameter-list.md)
+- [Default](../modifiers/default.md)

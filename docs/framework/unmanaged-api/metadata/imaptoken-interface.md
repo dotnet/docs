@@ -14,14 +14,12 @@ helpviewer_keywords:
 ms.assetid: 4c5c4df0-43f3-4830-a01b-8d029806f2c4
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMapToken Interface
 Provides mapping capabilities between assemblies.  
   
 > [!NOTE]
->  The `IMapToken` interface must be implemented by the client.  
+> The `IMapToken` interface must be implemented by the client.  
   
 ## Methods  
   

@@ -1,5 +1,5 @@
 ---
-title: "How to: Project a New Type (LINQ to XML) (Visual Basic)"
+title: "How to: Project a New Type (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 8cfb24f5-89b2-4cfb-b85d-e7963f8f1845
 ---
@@ -41,7 +41,7 @@ End Class
   
  This example produces the following output:  
   
-```  
+```console  
 Lawnmower:1  
 Baby Monitor:2  
 ```  

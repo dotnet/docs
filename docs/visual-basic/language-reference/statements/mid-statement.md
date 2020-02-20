@@ -1,5 +1,5 @@
 ---
-title: "Mid Statement (Visual Basic)"
+title: "Mid Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.MidB"
@@ -16,7 +16,7 @@ Replaces a specified number of characters in a `String` variable with characters
   
 ## Syntax  
   
-```  
+```vb  
 Mid( _  
    ByRef Target As String, _  
    ByVal Start As Integer, _  
@@ -49,7 +49,7 @@ Mid( _
  Visual Basic has a <xref:Microsoft.VisualBasic.Strings.Mid%2A> function and a `Mid` statement. These elements both operate on a specified number of characters in a string, but the `Mid` function returns the characters while the `Mid` statement replaces the characters. For more information, see <xref:Microsoft.VisualBasic.Strings.Mid%2A>.  
   
 > [!NOTE]
->  The `MidB` statement of earlier versions of Visual Basic replaces a substring in bytes, rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All Visual Basic strings are in Unicode, and `MidB` is no longer supported.  
+> The `MidB` statement of earlier versions of Visual Basic replaces a substring in bytes, rather than characters. It is used primarily for converting strings in double-byte character set (DBCS) applications. All Visual Basic strings are in Unicode, and `MidB` is no longer supported.  
   
 ## Example  
  This example uses the `Mid` statement to replace a specified number of characters in a string variable with characters from another string.  

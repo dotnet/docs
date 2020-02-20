@@ -15,15 +15,13 @@ helpviewer_keywords:
 ms.assetid: 7f230961-23a6-4d56-ad2d-7a876d65705f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo::IsArrayClass Method
 Determines whether the specified class is an array class.  
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT IsArrayClass(  
     [in]  ClassID        classId,  
     [out] CorElementType *pBaseElemType,  
@@ -58,4 +56,4 @@ HRESULT IsArrayClass(
   
 ## See also
 
-- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
+- [ICorProfilerInfo Interface](icorprofilerinfo-interface.md)

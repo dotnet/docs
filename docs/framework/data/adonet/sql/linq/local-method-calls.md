@@ -22,4 +22,4 @@ A local method call is one that is executed within the object model. A remote me
   
 ## See also
 
-- [Background Information](../../../../../../docs/framework/data/adonet/sql/linq/background-information.md)
+- [Background Information](background-information.md)

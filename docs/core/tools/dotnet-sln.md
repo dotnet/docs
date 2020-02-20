@@ -31,13 +31,13 @@ dotnet new sln
 
 - **`SOLUTION_FILE`**
 
-  The solution file to use. The command searches the current directory for one if it's left unspecified, failing if there are multiple solution files.
+  The solution file to use. If this argument is omitted, the command searches the current directory for one. If it finds no solution file or multiple solution files, the command fails.
 
 ## Options
 
 - **`-h|--help`**
 
-  Prints options for the command.
+  Prints out a description of how to use the command.
 
 ## Commands
 
@@ -55,13 +55,13 @@ dotnet sln list [-h|--help]
 
 - **`SOLUTION_FILE`**
 
-  The solution file to use. The command searches the current directory for one if it's left unspecified, failing if there are multiple solution files.
+  The solution file to use. If this argument is omitted, the command searches the current directory for one. If it finds no solution file or multiple solution files, the command fails.
 
 #### Options
 
 - **`-h|--help`**
 
-  Prints out options for the command.
+  Prints out a description of how to use the command.
   
 ### `add`
 
@@ -88,7 +88,7 @@ dotnet sln add [-h|--help]
 
 - **`-h|--help`**
 
-  Prints out a short list of options for the command.
+  Prints out a description of how to use the command.
 
 - **`--in-root`**
 
@@ -123,7 +123,7 @@ dotnet sln [<SOLUTION_FILE>] remove [-h|--help]
 
 - **`-h|--help`**
 
-  Prints out configurable options for the command.
+  Prints out a description of how to use the command.
 
 ## Examples
 

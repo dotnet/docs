@@ -65,7 +65,7 @@ so your application can process JSON responses.
 
 You'll need the `System.Runtime.Serialization.Json` package for this application. Add it to your project by running the following [.NET CLI](../../core/tools/dotnet-add-package.md) command:
 
-```console
+```dotnetcli
 dotnet add package System.Text.Json
 ```
 

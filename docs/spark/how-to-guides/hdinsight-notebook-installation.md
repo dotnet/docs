@@ -53,13 +53,11 @@ Run `install-interactive-notebook.sh` on the cluster using [HDInsight Script Act
 * Name: Install Sparkdotnet Interactive Notebook Experience (or anything that is descriptive)
 * Bash script URI: The URI to which you uploaded `install-interactive-notebook.sh`. Create a new file named **install-interactive-notebook.sh** in your local computer, and paste the [install-interactive-notebook.sh contents](https://raw.githubusercontent.com/dotnet/spark/master/deployment/HDI-Spark/Notebooks/install-interactive-notebook.sh). Then, upload the script to a [URI](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux#understand-script-actions) that's accessible from the HDInsight cluster. (e.g. `https://<my storage account>.blob.core.windows.net/<my container>/<some dir>/install-interactive-notebook.sh`)
 * Node type(s): Head and Worker
-* Parameters: Sparkdotnet version. For example, if you want to install Sparkdotnet version 0.6.0 then it would be `0.6.0`.
+* Parameters: Sparkdotnet version. For example, if you want to install Sparkdotnet version 0.9.0 then it would be `0.9.0`.
 
-The following captures the setting for a HDInsight Script Action on Head node and Worker node:
+<img src="../media/hdi-spark-notebooks/install-notebook-scriptaction.png" alt="the settings for the HDInsight Script Action"/>
 
-<img src="../media/hdi-spark-notebooks/install-notebook-scriptaction.png" alt="ScriptActionImage" width="500"/>
-
-After you see green checkmarks next to the status of both script actions, you can move to the next step.
+Move to the next step when green checkmarks appear next to the status of both script actions
 
 ### Step 3. Start Livy Server
 Please follow the above [Step 1](#step-1-stop-livy-server) to **Start** Livy for Spark2 Server.

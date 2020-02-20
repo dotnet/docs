@@ -42,7 +42,7 @@ This integration is provided, in part, by the contributors of the [OmniSharp](ht
 
 Multiple frameworks have been built on top of .NET Core:
 
-- [ASP.NET Core](/aspnet/core/)
+- [ASP.NET Core](/aspnet/core/), which provides a framework for building modern cloud-based internet connected applications, such as web apps, IoT apps, and mobile backends.
 - [Windows 10 Universal Windows Platform (UWP)](https://developer.microsoft.com/windows)
 - [Tizen](https://developer.tizen.org/development/training/.net-application)
 

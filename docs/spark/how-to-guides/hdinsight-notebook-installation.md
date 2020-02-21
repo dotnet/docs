@@ -100,6 +100,7 @@ For example, the following captures the setting for adding property 1:
 After adding those 3 properties, select **SAVE**. If you see a warning screen of config recommendations, select **PROCEED ANYWAY**.
 
 4.4 Restart affected components.
+
 After adding the new properties, you need to restart components that were affected by the changes. At the top, select **RESTART**, and then **Restart All Affected** from the drop-down.
 
 <img src="../media/hdi-spark-notebooks/restart-affected.png" alt="SetConfigsImage" width="800"/>

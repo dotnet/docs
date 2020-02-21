@@ -102,7 +102,7 @@ After finishing previous steps, now you can submit your jobs through Jupyter Not
 
 <img src="../media/hdi-spark-notebooks/create-sparkdotnet-notebook.png" alt="JupyterNotebookImage" width="800"/>
 
-2. Submit Jobs using .NET for Apache Spark
+### Step 2. Submit Jobs using .NET for Apache Spark
 
 > **Note:** After the kernel is ready, then you can start submitting jobs. The following shows a sample to submit jobs through notebook.
 - Start a spark session

@@ -1,57 +1,19 @@
 ---
 title: "Object-Oriented Programming (C#)"
-ms.date: 07/20/2015
+ms.date: 02/08/2020
 ms.assetid: 89574786-65ef-4335-88bc-fbacd094f183
 ---
-# Object-Oriented Programming (C#)
+# Object-Oriented programming (C#)
 
 C# provides full support for object-oriented programming including encapsulation, inheritance, and polymorphism.
 
-*Encapsulation* means that a group of related properties, methods, and other members are treated as a single unit or object.
+- *Encapsulation* means that a group of related properties, methods, and other members are treated as a single unit or object.
+- *Inheritance* describes the ability to create new classes based on an existing class.
+- *Polymorphism* means that you can have multiple classes that can be used interchangeably, even though each class implements the same properties or methods in different ways.
 
-*Inheritance* describes the ability to create new classes based on an existing class.
+## Classes and objects
 
-*Polymorphism* means that you can have multiple classes that can be used interchangeably, even though each class implements the same properties or methods in different ways.
-
-This section describes the following concepts:
-
-- [Classes and Objects](#Classes)
-
-  - [Class Members](#Members)
-
-    - [Properties and Fields](#Properties)
-
-    - [Methods](#Methods)
-
-    - [Constructors](#Constructors)
-
-    - [Finalizers](#Finalizers)
-
-    - [Events](#Events)
-
-    - [Nested Classes](#NestedClasses)
-
-  - [Access Modifiers and Access Levels](#AccessModifiers)
-
-  - [Instantiating Classes](#InstantiatingClasses)
-
-  - [Static Classes and Members](#Static)
-
-  - [Anonymous Types](#AnonymousTypes)
-
-- [Inheritance](#Inheritance)
-
-  - [Overriding Members](#Overriding)
-
-- [Interfaces](#Interfaces)
-
-- [Generics](#Generics)
-
-- [Delegates](#Delegates)
-
-## <a name="Classes"></a> Classes and Objects
-
-The terms *class* and *object* are sometimes used interchangeably, but in fact, classes describe the *type* of objects, while objects are usable *instances* of classes. So, the act of creating an object is called *instantiation*. Using the blueprint analogy, a class is a blueprint, and an object is a building made from that blueprint.
+The terms *class* and *object* describe the *type* of objects, and the *instances* of classes, respectively. So, the act of creating an object is called *instantiation*. Using the blueprint analogy, a class is a blueprint, and an object is a building made from that blueprint.
 
 To define a class:
 
@@ -61,7 +23,7 @@ class SampleClass
 }
 ```
 
-C# also provides a light version of classes called *structures* that are useful when you need to create large array of objects and do not want to consume too much memory for that.
+C# also provides types called *structures* that are useful when you don't need support for inheritance or polymorphism.
 
 To define a structure:
 
@@ -71,32 +33,28 @@ struct SampleStruct
 }
 ```
 
-For more information, see:
+For more information, see the articles on the [class](../../language-reference/keywords/class.md) and [struct](../../language-reference/keywords/struct.md) keywords.
 
-- [class](../../language-reference/keywords/class.md)
-
-- [struct](../../language-reference/keywords/struct.md)
-
-### <a name="Members"></a> Class Members
+### Class members
 
 Each class can have different *class members* that include properties that describe class data, methods that define class behavior, and events that provide communication between different classes and objects.
 
-#### <a name="Properties"></a> Properties and Fields
+#### Properties and fields
 
-Fields and properties represent information that an object contains. Fields are like variables because they can be read or set directly.
+Fields and properties represent information that an object contains. Fields are like variables because they can be read or set directly, subject to applicable access modifiers.
 
-To define a field:
+To define a field that can be accessed from within instances of the class:
 
 ```csharp
-class SampleClass
+public class SampleClass
 {
-    public string sampleField;
+    string sampleField;
 }
 ```
 
-Properties have get and set procedures, which provide more control on how values are set or returned.
+Properties have `get` and `set` accessors, which provide more control on how values are set or returned.
 
-C# allows you either to create a private field for storing the property value or use so-called auto-implemented properties that create this field automatically behind the scenes and provide the basic logic for the property procedures.
+C# allows you either to create a private field for storing the property value or use auto-implemented properties that create this field automatically behind the scenes and provide the basic logic for the property procedures.
 
 To define an auto-implemented property:
 
@@ -116,14 +74,14 @@ class SampleClass
     public int Sample
     {
         // Return the value stored in a field.
-        get { return _sample; }
+        get => _sample;
         // Store the value in the field.
-        set { _sample = value; }
+        set =>  _sample = value;
     }
 }
 ```
 
-Most properties have methods or procedures to both set and get the property value. However, you can create read-only or write-only properties to restrict them from being modified or read. In C#, you can omit the `get` or `set` property method. However, auto-implemented properties cannot be read-only or write-only.
+Most properties have methods or procedures to both set and get the property value. However, you can create read-only or write-only properties to restrict them from being modified or read. In C#, you can omit the `get` or `set` property method. However, auto-implemented properties cannot be write-only. Read-only auto-implemented properties can be set in constructors of the containing class.
 
 For more information, see:
 
@@ -131,7 +89,7 @@ For more information, see:
 
 - [set](../../language-reference/keywords/set.md)
 
-#### <a name="Methods"></a> Methods
+#### Methods
 
 A *method* is an action that an object can perform.
 
@@ -161,10 +119,9 @@ In most cases you declare a method within a class definition. However, C# also s
 For more information, see:
 
 - [Methods](../classes-and-structs/methods.md)
-
 - [Extension Methods](../classes-and-structs/extension-methods.md)
 
-#### <a name="Constructors"></a> Constructors
+#### Constructors
 
 Constructors are class methods that are executed automatically when an object of a given type is created. Constructors usually initialize the data members of the new object. A constructor can run only once when a class is created. Furthermore, the code in the constructor always runs before any other code in a class. However, you can create multiple constructor overloads in the same way as for any other method.
 
@@ -182,13 +139,13 @@ public class SampleClass
 
 For more information, see [Constructors](../classes-and-structs/constructors.md).
 
-#### <a name="Finalizers"></a> Finalizers
+#### Finalizers
 
 Finalizers are used to destruct instances of classes. In the .NET Framework, the garbage collector automatically manages the allocation and release of memory for the managed objects in your application. However, you may still need finalizers to clean up any unmanaged resources that your application creates. There can be only one finalizers for a class.
 
 For more information about finalizers and garbage collection in the .NET Framework, see [Garbage Collection](../../../standard/garbage-collection/index.md).
 
-#### <a name="Events"></a> Events
+#### Events
 
 Events enable a class or object to notify other classes or objects when something of interest occurs. The class that sends (or raises) the event is called the *publisher* and the classes that receive (or handle) the event are called *subscribers*. For more information about events, how they are raised and handled, see [Events](../../../standard/events/index.md).
 
@@ -198,7 +155,7 @@ Events enable a class or object to notify other classes or objects when somethin
 
 - To subscribe to an event, use the `+=` operator; to unsubscribe from an event, use the `-=` operator.
 
-#### <a name="NestedClasses"></a> Nested Classes
+#### Nested classes
 
 A class defined within another class is called *nested*. By default, the nested class is private.
 
@@ -218,7 +175,7 @@ To create an instance of the nested class, use the name of the container class f
 Container.Nested nestedInstance = new Container.Nested()
 ```
 
-### <a name="AccessModifiers"></a> Access Modifiers and Access Levels
+### Access modifiers and access levels
 
 All classes and class members can specify what access level they provide to other classes by using *access modifiers*.
 
@@ -235,7 +192,7 @@ The following access modifiers are available:
 
 For more information, see [Access Modifiers](../classes-and-structs/access-modifiers.md).
 
-### <a name="InstantiatingClasses"></a> Instantiating Classes
+### Instantiating classes
 
 To create an object, you need to instantiate a class, or create a class instance.
 
@@ -263,10 +220,9 @@ SampleClass sampleObject = new SampleClass
 For more information, see:
 
 - [new Operator](../../language-reference/operators/new-operator.md)
-
 - [Object and Collection Initializers](../classes-and-structs/object-and-collection-initializers.md)
 
-### <a name="Static"></a> Static Classes and Members
+### Static Classes and Members
 
 A static member of the class is a property, procedure, or field that is shared by all instances of a class.
 
@@ -289,7 +245,7 @@ Static  classes in C# have static members only and cannot be instantiated. Stati
 
 For more information, see: [static](../../language-reference/keywords/static.md).
 
-### <a name="AnonymousTypes"></a> Anonymous Types
+### Anonymous types
 
 Anonymous types enable you to create objects without writing a class definition for the data type. Instead, the compiler generates a class for you. The class has no usable name and contains the properties you specify in declaring the object.
 
@@ -303,7 +259,7 @@ var sampleObject =
 
 For more information, see: [Anonymous Types](../classes-and-structs/anonymous-types.md).
 
-## <a name="Inheritance"></a> Inheritance
+## Inheritance
 
 Inheritance enables you to create a new class that reuses, extends, and modifies the behavior that is defined in another class. The class whose members are inherited is called the *base class*, and the class that inherits those members is called the *derived class*. However, all classes in C# implicitly inherit from the <xref:System.Object> class that supports .NET class hierarchy and provides low-level services to all classes.
 
@@ -336,7 +292,7 @@ For more information, see:
 
 - [abstract](../../language-reference/keywords/abstract.md)
 
-### <a name="Overriding"></a> Overriding Members
+### Overriding Members
 
 By default, a derived class inherits all members from its base class. If you want to change the behavior of the inherited member, you need to override it. That is, you can define a new implementation of the method, property or event in the derived class.
 
@@ -349,7 +305,7 @@ The following modifiers are used to control how properties and methods are overr
 |[abstract](../../language-reference/keywords/abstract.md)|Requires that a class member to be overridden in the derived class.|
 |[new Modifier](../../language-reference/keywords/new-modifier.md)|Hides a member inherited from a base class|
 
-## <a name="Interfaces"></a> Interfaces
+## Interfaces
 
 Interfaces, like classes, define a set of properties, methods, and events. But unlike classes, interfaces do not provide implementation. They are implemented by classes, and defined as separate entities from classes. An interface represents a contract, in that a class that implements an interface must implement every aspect of that interface exactly as it is defined.
 
@@ -374,13 +330,9 @@ class SampleClass : ISampleInterface
 }
 ```
 
-For more information, see:
+For more information, see the programming guide article on [Interfaces](../interfaces/index.md) and the language reference article on the [interface](../../language-reference/keywords/interface.md) keyword.
 
-[Interfaces](../interfaces/index.md)
-
-[interface](../../language-reference/keywords/interface.md)
-
-## <a name="Generics"></a> Generics
+## Generics
 
 Classes, structures, interfaces and methods in the .NET Framework can include *type parameters* that define types of objects that they can store or use. The most common example of generics is a collection, where you can specify the type of objects to be stored in a collection.
 
@@ -406,7 +358,7 @@ For more information, see:
 
 - [Generics](../generics/index.md)
 
-## <a name="Delegates"></a> Delegates
+## Delegates
 
 A *delegate* is a type that defines a method signature, and can provide a reference to any method with a compatible signature. You can invoke (or call) the method through the delegate. Delegates are used to pass methods as arguments to other methods.
 
@@ -438,11 +390,7 @@ class SampleClass
 }
 ```
 
-For more information, see:
-
-- [Delegates](../delegates/index.md)
-
-- [delegate](../../language-reference/builtin-types/reference-types.md)
+For more information, see the programming guide article on [Delegates](../delegates/index.md) and the language reference article on the [delegate](../../language-reference/builtin-types/reference-types.md) keyword.
 
 ## See also
 

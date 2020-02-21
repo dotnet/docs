@@ -51,7 +51,7 @@ To set the access level for a `class` or `struct` member, add the appropriate ke
 
 ## Other types
 
-Interfaces declared directly within a namespace can be `public` or `internal` and, just like classes and structs, interfaces default to `internal` access. Interface members are `public` by default because the purpose of an interface is to enable other types to access a class or struct. Interface member declarations may ecare any access modifier. This is most useful for static methods to provide common implementations needed by all implementors of a class.
+Interfaces declared directly within a namespace can be `public` or `internal` and, just like classes and structs, interfaces default to `internal` access. Interface members are `public` by default because the purpose of an interface is to enable other types to access a class or struct. Interface member declarations may include any access modifier. This is most useful for static methods to provide common implementations needed by all implementors of a class.
 
 Enumeration members are always `public`, and no access modifiers can be applied.
 

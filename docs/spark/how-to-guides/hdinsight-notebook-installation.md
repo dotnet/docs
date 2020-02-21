@@ -70,7 +70,7 @@ Return to your HDI cluster in the Azure Portal, and select **Script actions** fr
 Move to the next step when green checkmarks appear next to the status of the script action.
 
 ### Step 3. Start Livy Server
-Please follow the above [Step 1](#step-1-stop-livy-server) to **Start** Livy for Spark2 Server.
+Please follow the above [Step 1](#step-1-stop-livy-server) to now **Start** (rather than **Stop**) the Livy for Spark2 Server for hosts hn0 and hn1.
 
 ### Step 4. Set up Spark Default Configs
 4.1 From the portal, select **Overview**, and then select **Ambari home**. If prompted, enter the cluster login credentials for the cluster.

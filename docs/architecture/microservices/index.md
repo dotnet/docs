@@ -72,7 +72,7 @@ The purpose of the application is to showcase architectural patterns. **IT IS NO
 
 ## Send us your feedback!
 
-We wrote this guide to help you understand the architecture of containerized applications and microservices in .NET. The guide and related reference application will be evolving, so we welcome your feedback! If you have comments about how this guide can be improved, please submit it at https://aka.ms/ebookfeedback
+We wrote this guide to help you understand the architecture of containerized applications and microservices in .NET. The guide and related reference application will be evolving, so we welcome your feedback! If you have comments about how this guide can be improved, submit feedback at <https://aka.ms/ebookfeedback>.
 
 ## Credits
 

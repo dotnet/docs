@@ -109,7 +109,7 @@ When prompted, select **CONFIRM RESTART ALL** to continue, then click **OK** to 
 
 ## Submit Jobs through Jupyter Notebook
 After finishing the previous steps, you can now submit your .NET for Apache Spark jobs through Jupyter Notebooks!
-1. Create a new .NET for Apache Spark notebook
+### Step 1. Create a new .NET for Apache Spark notebook
 
 [Launch a Jupyter notebook](https://docs.microsoft.com/en-us/azure/hdinsight/spark/apache-spark-jupyter-spark-sql-use-portal#create-a-jupyter-notebook) from your HDI cluster in the Azure Portal. Then select **New** > **.NET Spark (C#)** to create a notebook.
 

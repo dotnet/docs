@@ -15,7 +15,7 @@ To make it easier to get started, the guide focuses on a reference containerized
 
 ## Action links
 
-- This e-Book is also available in a PDF format (English version only) [Download](https://aka.ms/microservicesebook)
+- This e-book is also available in a PDF format (English version only) [Download](https://aka.ms/microservicesebook)
 
 - Clone/Fork the reference application [eShopOnContainers on GitHub](https://github.com/dotnet-architecture/eShopOnContainers)
 

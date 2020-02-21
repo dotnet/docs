@@ -34,10 +34,10 @@ The API Analyzer uses API-specific error codes that begin with DE (which stands 
 
 1. Open Visual Studio.
 2. Open the project you want to run the analyzer on.
-3. In **Solution Explorer**, right click on your project and choose **Manage NuGet Packages**. (This option is also available from the **Project** menu.)
+3. In **Solution Explorer**, right-click on your project and choose **Manage NuGet Packages**. (This option is also available from the **Project** menu.)
 4. On the NuGet Package Manager tab:
    1. Select "nuget.org" as the Package source.
-   2. Go to the Browse tab.
+   2. Go to the **Browse** tab.
    3. Select **Include prerelease**.
    4. Search for **Microsoft.DotNet.Analyzers.Compatibility**.
    5. Select that package in the list.

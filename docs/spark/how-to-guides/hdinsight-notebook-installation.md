@@ -87,6 +87,8 @@ You will add a total of 3 individual properties. Add them 1 one at a time, all u
 - Property 2:
     - Key:&ensp;&ensp;`spark.dotnet.packages`
     - Value: `["nuget: Microsoft.Spark, 0.6.0", "nuget: Microsoft.Spark.Extensions.Delta, 0.6.0"]`
+    
+    Please use the version of .NET for Apache Spark which you had included in the previous script action.
 - Property 3:
     - Key:&ensp;&ensp;`spark.dotnet.interpreter`
     - Value: `try`

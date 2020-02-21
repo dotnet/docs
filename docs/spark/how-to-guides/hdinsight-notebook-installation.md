@@ -75,7 +75,7 @@ Please follow the above [Step 1](#step-1-stop-livy-server) to now **Start** (rat
 ### Step 4. Set up Spark Default Configs
 4.1 From the portal, select **Overview**, and then select **Ambari home**. If prompted, enter the cluster login credentials for the cluster.
 
-4.2 Select **Spark2**, and then Select **CONFIGS**, then click on **Custom spark2-defaults**.
+4.2 Select **Spark2**, and then **CONFIGS**. Then select **Custom spark2-defaults**.
 
 <img src="../media/hdi-spark-notebooks/spark-configs.png" alt="SetConfigsImage" width="800"/>
 

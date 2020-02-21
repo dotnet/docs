@@ -12,7 +12,7 @@ With the `dotnet test` command in .NET Core, you can use a filter expression to 
 
 > [!NOTE]
 > Using filters that include exclamation mark (!) on `*nix` requires escaping since `!` is reserved. For example, this filter
-> skips all tests if name space contains IntegrationTests `dotnet test --filter FullyQualifiedName\!~IntegrationTests`.
+> skips all tests if the namespace contains IntegrationTests: `dotnet test --filter FullyQualifiedName\!~IntegrationTests`.
 > Note the backslash that precedes the exclamation mark.
 
 ## MSTest

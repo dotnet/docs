@@ -15,7 +15,7 @@ To make it easier to get started, the guide focuses on a reference containerized
 
 ## Action links
 
-- Download this e-book in your format of choice (English version only): | [PDF](https://aka.ms/microservicesebook) | [MOBI](https://dotnet.microsoft.com/download/thank-you/microservices-architecture-ebook-mobi) | [EPUB](https://dotnet.microsoft.com/download/thank-you/microservices-architecture-ebook-epub) |
+- This e-book is also available in a PDF format (English version only) [Download](https://aka.ms/microservicesebook)
 
 - Clone/Fork the reference application [eShopOnContainers on GitHub](https://github.com/dotnet-architecture/eShopOnContainers)
 
@@ -72,9 +72,7 @@ The purpose of the application is to showcase architectural patterns. **IT IS NO
 
 ## Send us your feedback!
 
-We wrote this guide to help you understand the architecture of containerized applications and microservices in .NET. The guide and related reference application will be evolving, so we welcome your feedback! If you have comments about how this guide can be improved, please send them to:
-
-[dotnet-architecture-ebooks-feedback@service.microsoft.com](mailto:dotnet-architecture-ebooks-feedback@service.microsoft.com)
+We wrote this guide to help you understand the architecture of containerized applications and microservices in .NET. The guide and related reference application will be evolving, so we welcome your feedback! If you have comments about how this guide can be improved, submit feedback at <https://aka.ms/ebookfeedback>.
 
 ## Credits
 
@@ -143,8 +141,6 @@ Participants and reviewers:
 > **Miguel Veloso**, Software Development Engineer at Plain Concepts
 
 ## Copyright
-
-DOWNLOAD available at: <https://aka.ms/microservicesebook>
 
 PUBLISHED BY
 

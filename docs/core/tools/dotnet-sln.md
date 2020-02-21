@@ -9,7 +9,7 @@ ms.date: 02/14/2020
 
 ## Name
 
-`dotnet sln` - Modifies a .NET Core solution file.
+`dotnet sln` - Lists or modifies the projects in a .NET Core solution file.
 
 ## Synopsis
 
@@ -19,9 +19,9 @@ dotnet sln [<SOLUTION_FILE>] [command] [-h|--help]
 
 ## Description
 
-The `dotnet sln` command provides a convenient way to add, remove, and list projects in a solution file.
+The `dotnet sln` command provides a convenient way to list and modify projects in a solution file.
 
-To use the `dotnet sln` command, the solution file must already exist. If you need to create one, use the [dotnet new](dotnet-new.md) command, like in the following example:
+To use the `dotnet sln` command, the solution file must already exist. If you need to create one, use the [dotnet new](dotnet-new.md) command, as in the following example:
 
 ```dotnetcli
 dotnet new sln
@@ -31,24 +31,46 @@ dotnet new sln
 
 - **`SOLUTION_FILE`**
 
-  The solution file to use. If not specified, the command searches the current directory for one. If there are multiple solution files in the directory, one must be specified.
+  The solution file to use. If this argument is omitted, the command searches the current directory for one. If it finds no solution file or multiple solution files, the command fails.
 
 ## Options
 
 - **`-h|--help`**
 
-  Prints out a short help for the command.
+  Prints out a description of how to use the command.
 
 ## Commands
 
-### `add`
+### `list`
 
-Adds a project or multiple projects to the solution file.
+Lists all projects in a solution file.
 
 #### Synopsis
 
 ```dotnetcli
-dotnet sln [<SOLUTION_FILE>] add [--in-root] [-s|--solution-folder] <PROJECT_PATH>
+dotnet sln list [-h|--help]
+```
+
+#### Arguments
+
+- **`SOLUTION_FILE`**
+
+  The solution file to use. If this argument is omitted, the command searches the current directory for one. If it finds no solution file or multiple solution files, the command fails.
+
+#### Options
+
+- **`-h|--help`**
+
+  Prints out a description of how to use the command.
+  
+### `add`
+
+Adds one or more projects to the solution file.
+
+#### Synopsis
+
+```dotnetcli
+dotnet sln [<SOLUTION_FILE>] add [--in-root] [-s|--solution-folder] <PROJECT_PATH> [<PROJECT_PATH>...]
 dotnet sln add [-h|--help]
 ```
 
@@ -56,17 +78,17 @@ dotnet sln add [-h|--help]
 
 - **`SOLUTION_FILE`**
 
-  The solution file to use. If not specified, the command searches the current directory for one. If there are multiple solution files in the directory, one must be specified.
+  The solution file to use. If it is unspecified, the command searches the current directory for one and fails if there are multiple solution files.
 
 - **`PROJECT_PATH`**
 
-  The path to the project to add to the solution. Add multiple projects by adding one after the other separated by spaces. Unix/Linux shell [globbing pattern](https://en.wikipedia.org/wiki/Glob_(programming)) expansions are processed correctly by the `dotnet sln` command.
+  The path to the project or projects to add to the solution. Unix/Linux shell [globbing pattern](https://en.wikipedia.org/wiki/Glob_(programming)) expansions are processed correctly by the `dotnet sln` command.
 
 #### Options
 
 - **`-h|--help`**
 
-  Prints out a short help for the command.
+  Prints out a description of how to use the command.
 
 - **`--in-root`**
 
@@ -83,7 +105,7 @@ Removes a project or multiple projects from the solution file.
 #### Synopsis
 
 ```dotnetcli
-dotnet sln [<SOLUTION_FILE>] remove <PROJECT_PATH>
+dotnet sln [<SOLUTION_FILE>] remove <PROJECT_PATH> [<PROJECT_PATH>...]
 dotnet sln [<SOLUTION_FILE>] remove [-h|--help]
 ```
 
@@ -91,52 +113,42 @@ dotnet sln [<SOLUTION_FILE>] remove [-h|--help]
 
 - **`SOLUTION_FILE`**
 
-  The solution file to use. If not specified, the command searches the current directory for one. If there are multiple solution files in the directory, one must be specified.
+  The solution file to use. If is left unspecified, the command searches the current directory for one and fails if there are multiple solution files.
 
 - **`PROJECT_PATH`**
 
-  The path to the project to remove from the solution. Remove multiple projects by adding one after the other separated by spaces. Unix/Linux shell [globbing pattern](https://en.wikipedia.org/wiki/Glob_(programming)) expansions are processed correctly by the `dotnet sln` command.
+  The path to the project or projects to add to the solution. Unix/Linux shell [globbing pattern](https://en.wikipedia.org/wiki/Glob_(programming)) expansions are processed correctly by the `dotnet sln` command.
 
 #### Options
 
 - **`-h|--help`**
 
-  Prints out a short help for the command.
-
-### `list`
-
-Lists all projects in a solution file.
-
-#### Synopsis
-
-```dotnetcli
-dotnet sln list [-h|--help]
-```
-
-#### Arguments
-
-- **`SOLUTION_FILE`**
-
-  The solution file to use. If not specified, the command searches the current directory for one. If there are multiple solution files in the directory, one must be specified.
-
-#### Options
-
-- **`-h|--help`**
-
-  Prints out a short help for the command.
+  Prints out a description of how to use the command.
 
 ## Examples
+
+- List the projects in a solution:
+
+  ```dotnetcli
+  dotnet sln todo.sln list
+  ```
 
 - Add a C# project to a solution:
 
   ```dotnetcli
-  dotnet sln todo.sln add todo-app/todo-app.csproj
+  dotnet sln add todo-app/todo-app.csproj
   ```
 
 - Remove a C# project from a solution:
 
   ```dotnetcli
-  dotnet sln todo.sln remove todo-app/todo-app.csproj
+  dotnet sln remove todo-app/todo-app.csproj
+  ```
+
+- Add multiple C# projects to the root of a solution:
+
+  ```dotnetcli
+  dotnet sln todo.sln add todo-app/todo-app.csproj back-end/back-end.csproj --in-root
   ```
 
 - Add multiple C# projects to a solution:

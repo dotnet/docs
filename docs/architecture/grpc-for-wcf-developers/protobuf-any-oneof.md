@@ -1,14 +1,14 @@
 ---
-title: Protobuf Any and Oneof fields for variant types - gRPC for WCF Developers
+title: Protobuf Any and Oneof fields for variant types - gRPC for WCF developers
 description: Learn how to use the Any type and the Oneof keyword to represent variant object types in messages.
 ms.date: 09/09/2019
 ---
 
 # Protobuf Any and Oneof fields for variant types
 
-Handling dynamic property types (that is, properties of type `object`) in WCF is complicated. Serializers must be specified, [KnownType](xref:System.Runtime.Serialization.KnownTypeAttribute) attributes must be provided, and so on.
+Handling dynamic property types (that is, properties of type `object`) in Windows Communication Foundation (WCF) is complicated. For example, you must specify serializers and provide [KnownType](xref:System.Runtime.Serialization.KnownTypeAttribute) attributes.
 
-Protobuf provides two simpler options for dealing with values that may be of more than one type. The `Any` type can represent any known Protobuf message type, while the `oneof` keyword allows you to specify that only one of a range of fields can be set in any given message.
+Protocol Buffer (Protobuf) provides two simpler options for dealing with values that might be of more than one type. The `Any` type can represent any known Protobuf message type. And you can use the `oneof` keyword to specify that only one of a range of fields can be set in any message.
 
 ## Any
 
@@ -53,11 +53,11 @@ public void FormatChangeNotification(ChangeNotification change)
 }
 ```
 
-The `Descriptor` static field on each generated type is used by Protobuf's internal reflection code to resolve `Any` field types. There's also a `TryUnpack<T>` method, but that creates an uninitialized instance of `T` even when it fails, so it's better to use the `Is` method as shown above.
+Protobuf's internal reflection code uses the `Descriptor` static field on each generated type to resolve `Any` field types. There's also a `TryUnpack<T>` method, but that creates an uninitialized instance of `T` even when it fails. It's better to use the `Is` method as shown earlier.
 
 ## Oneof
 
-Oneof fields are a language feature: the `oneof` keyword is handled by the compiler when it generates the message class. Using `oneof` to specify the `ChangeNotification` message might look like this:
+Oneof fields are a language feature: the compiler handles the `oneof` keyword when it generates the message class. Using `oneof` to specify the `ChangeNotification` message might look like this:
 
 ```protobuf
 message Stock {
@@ -77,7 +77,7 @@ message ChangeNotification {
 }
 ```
 
-Fields within the `oneof` set must have unique field numbers within the overall message declaration.
+Fields within the `oneof` set must have unique field numbers in the overall message declaration.
 
 When you use `oneof`, the generated C# code includes an enum that specifies which of the fields has been set. You can test the enum to find which field is set. Fields that aren't set return `null` or the default value, rather than throwing an exception.
 
@@ -100,7 +100,7 @@ public void FormatChangeNotification(ChangeNotification change)
 }
 ```
 
-Setting any field that is part of a `oneof` set will automatically clear any other fields in the set. You can't use `repeated` with `oneof`. Instead, you can create a nested message with either the repeated field or the `oneof` set to work around this limitation.
+Setting any field that's part of a `oneof` set will automatically clear any other fields in the set. You can't use `repeated` with `oneof`. Instead, you can create a nested message with either the repeated field or the `oneof` set to work around this limitation.
 
 >[!div class="step-by-step"]
 >[Previous](protobuf-reserved.md)

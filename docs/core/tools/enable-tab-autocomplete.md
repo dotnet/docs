@@ -8,11 +8,11 @@ ms.date: 11/03/2019
 
 # How to enable TAB completion for the .NET Core CLI
 
-Starting with .NET Core 2.0 SDK, the .NET Core CLI supports tab completion. This article describes how to configure tab completion for three shells, PowerShell, Bash, and zsh. Other shells may have support for auto completion. Refer to their documentation on how to configure auto completion, the steps should be similar to the steps described in this article.
+**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
 
-[!INCLUDE [topic-appliesto-net-core-2plus](~/includes/topic-appliesto-net-core-2plus.md)]
+This article describes how to configure tab completion for three shells, PowerShell, Bash, and zsh. For other shells, refer to their documentation on how to configure tab completion.
 
-Once setup, tab completion for the .NET Core CLI is triggered by typing a `dotnet` command in the shell, and then pressing the TAB key. The current command line is sent to the `dotnet complete` command, and the results are processed by your shell. You can test the results without enabling tab completion by sending something directly to the `dotnet complete` command. For example:
+Once set up, tab completion for the .NET Core CLI is triggered by typing a `dotnet` command in the shell, and then pressing the TAB key. The current command line is sent to the `dotnet complete` command, and the results are processed by your shell. You can test the results without enabling tab completion by sending something directly to the `dotnet complete` command. For example:
 
 ```console
 > dotnet complete "dotnet a"

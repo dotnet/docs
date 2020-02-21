@@ -1,18 +1,20 @@
 ---
-title: Install .NET for Apache Spark interactive notebooks on Azure HDInsight
-description: Learn how to install .NET for Apache Spark Interactive Notebooks on Azure HDInsight
-ms.date: 02/18/2020
+title: Installing .NET for Apache Spark on Azure HDInsight's Jupyter Notebooks
+description: Learn how to install .NET for Apache Spark on Azure HDInsight's Jupyter Notebooks
+ms.date: 02/20/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
 ---
 
-# Install .NET for Apache Spark Interactive Notebooks on Azure HDInsight
+# Installing .NET for Apache Spark on Azure HDInsight's Jupyter Notebooks
 
-This how-to provides the steps to install .NET for Apache Spark interactive notebooks on Azure HDInsight Spark Clusters.
+This how-to provides the steps to install .NET for Apache Spark on Azure HDInsight's Jupyter Notebooks.
 
 ## Background
 
-In order to use .NET for Apache Spark within your Jupyter Notebooks, a C# REPL is needed to execute your C# code line-by-line and to preserve execution state when necessary. We have integrated [dotnet-try](https://github.com/dotnet/try) as our official dotnet REPL.
+While we can deploy .NET for Apache Spark on HDI clusters through the command line/Azure portal (you can check out [how to deploy a .NET for Apache Spark application to Azure HDInsight](../tutorials/hdinsight-deployment.md) and [how to submit a .NET for Apache Spark job to Azure HDInsight](hdinsight-deploy-methods.md)), notebooks provide a more interactive and iterative experience.
+
+Azure HDI clusters come with Jupyter notebook, so let's look how to configure those Jupyter notebooks to run .NET for Apache Spark. In order to use .NET for Apache Spark within your Jupyter Notebooks, a C# REPL is needed to execute your C# code line-by-line and to preserve execution state when necessary. We have integrated [Try .NET](https://github.com/dotnet/try) as our official dotnet REPL.
 
 To provide the end-to-end integration, we had to add a Jupyter kernel along with necessary modifications to [Apache Livy](https://github.com/apache/incubator-livy) and [sparkmagic](https://github.com/jupyter-incubator/sparkmagic). Since these code changes have not yet been merged into the respective open source projects, to be able to get the out-of-box .NET for Apache Spark experience, you will have to patch components in your HDInsight Spark Cluster with the binaries we provide.
 

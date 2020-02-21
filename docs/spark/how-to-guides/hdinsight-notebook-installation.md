@@ -60,10 +60,10 @@ The `install-interactive-notebook.sh` is a script that installs .NET for Apache 
 Return to your HDI cluster in the Azure Portal, and select **Script actions** from the options on the left. You'll submit one script action to deploy the .NET for Apache Spark REPL on your HDInsight Spark cluster. Please see the following settings.
 
 * Script type: Custom
-* Name: Install Sparkdotnet Interactive Notebook Experience (or anything that is descriptive)
+* Name: Install .NET for Apache Spark Interactive Notebook Experience (or anything that is descriptive)
 * Bash script URI: The URI to which you uploaded `install-interactive-notebook.sh`. 
 * Node type(s): Head and Worker
-* Parameters: Sparkdotnet version. For example, if you want to install Sparkdotnet version 0.6.0 then it would be `0.6.0`.
+* Parameters: .NET for Apache Spark version. You can check [.NET for Apache Spark release](https://github.com/dotnet/spark/releases). For example, if you want to install Sparkdotnet version 0.6.0 then it would be `0.6.0`.
 
 <img src="../media/hdi-spark-notebooks/install-notebook-scriptaction.png" alt="the settings for the HDInsight Script Action"/>
 

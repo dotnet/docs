@@ -47,19 +47,27 @@ In the Azure Portal, select the **HDInsight Spark cluster** you created in the p
 1.4 Please follow the same step for hn1... host.
 
 ### Step 2. Submit HDInsight Script Action
-Return to your HDI cluster in the Azure Portal, and select **Script actions** from the options on the left. You'll submit one script action to deploy the SparkDotnet REPL on your HDInsight Spark cluster.
 
-Run `install-interactive-notebook.sh` on the cluster using [HDInsight Script Actions](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux):
+2.1 Create and upload `install-interactive-notebook.sh`.
+
+The `install-interactive-notebook.sh` is a script that installs .NET for Apache Spark and makes changes to Apache Livy and sparkmagic. Before submitting Script Action to HDI, you'll need to create and upload `install-interactive-notebook.sh`.
+
+* You can create a new file named **install-interactive-notebook.sh** in your local computer, and paste the contents of [install-interactive-notebook.sh contents](https://raw.githubusercontent.com/dotnet/spark/master/deployment/HDI-Spark/Notebooks/install-interactive-notebook.sh). 
+* Then, upload the script to a [URI](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux#understand-script-actions) that's accessible from the HDInsight cluster. (e.g. `https://<my storage account>.blob.core.windows.net/<my container>/<some dir>/install-interactive-notebook.sh`)
+
+2.2 Run `install-interactive-notebook.sh` on the cluster using [HDInsight Script Actions](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux).
+
+Return to your HDI cluster in the Azure Portal, and select **Script actions** from the options on the left. You'll submit one script action to deploy the .NET for Apache Spark REPL on your HDInsight Spark cluster. Please see the following settings.
 
 * Script type: Custom
 * Name: Install Sparkdotnet Interactive Notebook Experience (or anything that is descriptive)
-* Bash script URI: The URI to which you uploaded `install-interactive-notebook.sh`. Create a new file named **install-interactive-notebook.sh** in your local computer, and paste the [install-interactive-notebook.sh contents](https://raw.githubusercontent.com/dotnet/spark/master/deployment/HDI-Spark/Notebooks/install-interactive-notebook.sh). Then, upload the script to a [URI](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux#understand-script-actions) that's accessible from the HDInsight cluster. (e.g. `https://<my storage account>.blob.core.windows.net/<my container>/<some dir>/install-interactive-notebook.sh`)
+* Bash script URI: The URI to which you uploaded `install-interactive-notebook.sh`. 
 * Node type(s): Head and Worker
-* Parameters: Sparkdotnet version. For example, if you want to install Sparkdotnet version 0.9.0 then it would be `0.9.0`.
+* Parameters: Sparkdotnet version. For example, if you want to install Sparkdotnet version 0.6.0 then it would be `0.6.0`.
 
 <img src="../media/hdi-spark-notebooks/install-notebook-scriptaction.png" alt="the settings for the HDInsight Script Action"/>
 
-Move to the next step when green checkmarks appear next to the status of both script actions
+Move to the next step when green checkmarks appear next to the status of the script action.
 
 ### Step 3. Start Livy Server
 Please follow the above [Step 1](#step-1-stop-livy-server) to **Start** Livy for Spark2 Server.

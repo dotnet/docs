@@ -1,5 +1,5 @@
 ---
-title: Install .NET for Apache Spark Interactive Notebooks on Azure HDInsight
+title: Install .NET for Apache Spark interactive notebooks on Azure HDInsight
 description: Learn how to install .NET for Apache Spark Interactive Notebooks on Azure HDInsight
 ms.date: 02/18/2020
 ms.topic: conceptual

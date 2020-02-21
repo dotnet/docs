@@ -12,7 +12,7 @@ This how-to provides the steps to install .NET for Apache Spark interactive note
 
 ## Background
 
-To provide the ability to use .NET for Apache Spark within your Jupyter Notebooks, an important pre-requisite is a C# REPL that is capable of executing your C# code line-by-line (and preserving execution state, where needed). We have integrated [dotnet-try](https://github.com/dotnet/try) as our official dotnet REPL to provide you with the best experience.
+In order to use .NET for Apache Spark within your Jupyter Notebooks, a C# REPL is needed to execute your C# code line-by-line and to preserve execution state when necessary. We have integrated [dotnet-try](https://github.com/dotnet/try) as our official dotnet REPL.
 
 To provide the end-to-end integration, we had to add a Jupyter kernel along with necessary modifications to [Apache Livy](https://github.com/apache/incubator-livy) and [sparkmagic](https://github.com/jupyter-incubator/sparkmagic). Since these code changes have not yet been merged into the respective open source projects, to be able to get the out-of-box .NET for Apache Spark experience, you will have to patch components in your HDInsight Spark Cluster with the binaries we provide.
 

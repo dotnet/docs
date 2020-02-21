@@ -58,8 +58,8 @@ By clicking on the ID, you go to a webpage with detailed information about why t
 
 Any warnings can be suppressed by right-clicking on the highlighted member and selecting **Suppress \<diagnostic ID>**. There are two ways to suppress warnings: 
 
-- [locally (in source)](#suppressing-warnings-locally)
-- [globally (in a suppression file)](#suppressing-warnings-globally) - recommended
+- [locally (in source)](#suppress-warnings-locally)
+- [globally (in a suppression file)](#suppress-warnings-globally) - recommended
 
 ### Suppress warnings locally
 

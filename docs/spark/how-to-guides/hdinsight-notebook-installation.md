@@ -18,7 +18,7 @@ To provide the end-to-end integration, we had to add a Jupyter kernel along with
 
 To enable .NET for Apache Spark through the Jupyter Notebooks experience, you'll need to follow a few manual steps through [Ambari](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-manage-ambari) and submitting [script actions](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux) on the HDInsight Spark cluster.
 
->**Disclaimer:** Please note that this is *experimental* and not supported by the HDInsight Spark team. *Use it at your own risk*. Please do remember that we are working hard to get these changes into the respective projects so you do not need these manual steps.
+>**Disclaimer:** Please note that this is *experimental* and not supported by the HDInsight Spark team. We are working hard to get these changes into the respective projects so that in the future you will not have to perform these manual steps.
 
 ## Pre-requisites:
 Create an [Azure HDInsight Spark](https://docs.microsoft.com/en-us/azure/hdinsight/spark/apache-spark-jupyter-spark-sql-use-portal#create-an-hdinsight-spark-cluster) cluster by visiting the **[Azure Portal](https;//portal.azure.com)**, selecting **+ Create a Resource**, and creating a new Azure HDInsight cluster resource. Ensure you select **Spark 2.4** and **HDI 4.0** during cluster creation.

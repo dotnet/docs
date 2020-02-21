@@ -24,7 +24,7 @@ The definition of `IEquatable<T>` doesn’t provide an implementation for `Equal
 
 For more information about abstract classes, see [Abstract and Sealed Classes and Class Members](../classes-and-structs/abstract-and-sealed-classes-and-class-members.md).
 
-Interfaces can contain instance e methods, properties, events, indexers, or any combination of those four member types. Interfaces may contain static constructors, fields, constants, or operators. For links to examples, see [Related Sections](./index.md#BKMK_RelatedSections). An interface can't contain instance fields, instance constructors, or finalizers. Interface members are public by default.
+Interfaces can contain instance methods, properties, events, indexers, or any combination of those four member types. Interfaces may contain static constructors, fields, constants, or operators. For links to examples, see [Related Sections](./index.md#BKMK_RelatedSections). An interface can't contain instance fields, instance constructors, or finalizers. Interface members are public by default.
 
 To implement an interface member, the corresponding member of the implementing class must be public, non-static, and have the same name and signature as the interface member.
 

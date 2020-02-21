@@ -124,7 +124,7 @@ After finishing previous steps, now you can submit your jobs through Jupyter Not
 - Create a Dataframe
 <img src="../media/hdi-spark-notebooks/create-df.png" alt="SubmitSparkJobImage" width="800"/>
 
-- Register Udf and use Udf via data frames
+- Register a user-defined function (UDF) and use it via the DataFrame
 <img src="../media/hdi-spark-notebooks/run-udf.png" alt="SubmitSparkJobImage" width="800"/>
 
 ## Next steps

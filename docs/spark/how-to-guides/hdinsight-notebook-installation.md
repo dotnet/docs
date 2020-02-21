@@ -108,7 +108,7 @@ After adding the new properties, you need to restart components that were affect
 When prompted, select **CONFIRM RESTART ALL** to continue, then click **OK** to finish.
 
 ## Submit Jobs through Jupyter Notebook
-After finishing previous steps, now you can submit your jobs through Jupyter Notebook!
+After finishing the previous steps, you can now submit your .NET for Apache Spark jobs through Jupyter Notebooks!
 1. Create a new .NET for Apache Spark notebook
 
 [Launch Jupyter notebook](https://docs.microsoft.com/en-us/azure/hdinsight/spark/apache-spark-jupyter-spark-sql-use-portal#create-a-jupyter-notebook) from your HDI cluster in the Azure Portal, then select **New** > **.NET Spark (C#)** to create a notebook.

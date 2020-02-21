@@ -34,10 +34,11 @@ public void ConfigureServices(IServiceCollection services)
     // Registers required services for health checks
     services.AddHealthChecks()
         // Add a health check for a SQL Server database
-        .AddSqlServer(
-            configuration["ConnectionString"],
-            name: "OrderingDB-check",
-            tags: new string[] { "orderingdb" });
+        .AddCheck(
+            "OrderingDB-check", 
+            new SqlConnectionHealthCheck(Configuration["ConnectionString"]), 
+            HealthStatus.Unhealthy, 
+            new string[] { "orderingdb" });
 }
 ```
 
@@ -108,11 +109,7 @@ public void Configure(IApplicationBuilder app, IHostingEnvironment env)
     app.UseEndpoints(endpoints =>
     {
         //...
-        endpoints.MapHealthChecks("/hc", new HealthCheckOptions()
-        {
-            Predicate = _ => true,
-            ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
-        });
+        endpoints.MapHealthChecks("/hc");
         //...
     });
     //…

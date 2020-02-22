@@ -24,7 +24,7 @@ dotnet tool install <-h|--help>
 
 The `dotnet tool install` command provides a way for you to install .NET Core tools on your machine. To use the command, you specify one of the following installation options:
 
-* To install a global tool in the default location, use the `--tool-path` option.
+* To install a global tool in the default location, use the `--global` option.
 * To install a global tool in a custom location,  use the `--tool-path` option.
 * To install a local tool, omit the `--global` and `--tool-path` options.
 

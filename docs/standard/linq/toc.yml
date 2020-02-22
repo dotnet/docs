@@ -62,8 +62,10 @@
         items:
         - name: Namespaces overview
           href: namespaces-overview.md
-        - name: "How to create a document with namespaces"
-          href: create-document-namespaces.md
+        - name: "How to create a document with namespaces in C#"
+          href: create-document-namespaces-csharp.md
+        - name: "How to create a document with namespaces in Visual Basic"
+          href: create-document-namespaces-visual-basic.md
         - name: "How to control namespace prefixes"
           href: control-namespace-prefixes.md
         - name: Scope of default namespaces
@@ -304,8 +306,8 @@
           href: mixed-declarative-code-imperative-code-bugs.md
         - name: "How to stream XML fragments with access to header information"
           href: stream-xml-fragments-access-header-information.md
-        - name: "How to do streaming transform of large XML documents"
-          href: do-streaming-transform-large-xml-documents.md
+        - name: "How to perform streaming transform of large XML documents"
+          href: perform-streaming-transform-large-xml-documents.md
         - name: "How to read and write an encoded document"
           href: read-write-encoded-document.md
         - name: Use XSLT to transform an XML tree

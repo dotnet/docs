@@ -9,7 +9,7 @@ ms.date: 02/13/2020
 
 ## Name
 
-`dotnet` - A tool for managing .NET source code and binaries.
+`dotnet` - The generic driver for the .NET Core CLI.
 
 ## Synopsis
 
@@ -263,7 +263,7 @@ dotnet myapp.dll
 
 - `DOTNET_CLI_UI_LANGUAGE`
 
-  Sets the language of the CLI UI using a locale value such as `en-us`. The supported values are the same as for [Visual Studio](https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2019#change-the-installer-language-from-the-command-line). The .NET resource manager rules apply, so you don't have to pick an exact match&mdash;you can also pick descendants in the `CultureInfo` tree. For example, if you set it to `fr-CA`, it will find and use the `fr` translations. If you set it to a language that is not supported, the CLI falls back to English.
+  Sets the language of the CLI UI using a locale value such as `en-us`. The supported values are the same as for Visual Studio. For more information, see the section on changing the installer language in the [Visual Studio installation documentation](https://docs.microsoft.com/visualstudio/install/install-visual-studio?view=vs-2019). The .NET resource manager rules apply, so you don't have to pick an exact match&mdash;you can also pick descendants in the `CultureInfo` tree. For example, if you set it to `fr-CA`, the CLI will find and use the `fr` translations. If you set it to a language that is not supported, the CLI falls back to English.
 
 ## See also
 

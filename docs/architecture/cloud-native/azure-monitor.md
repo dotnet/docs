@@ -73,7 +73,7 @@ Azure Monitor automatically leverages machine learning to understand the normal 
 ## References
 
 - [Azure Monitor](https://docs.microsoft.com/azure/azure-monitor/overview)
-- [Smart Alert Management - MS Ignite - Video](https://oxfordcomputergroup.com/resourceso365-security-native-cloud-authentication/)
+- [Smart Alert Management - MS Ignite - Video](https://oxfordcomputergroup.com/resources/o365-security-native-cloud-authentication/)
 
 >[!div class="step-by-step"]
 >[Previous](monitoring-azure-kubernetes.md)

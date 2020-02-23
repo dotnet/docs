@@ -49,25 +49,7 @@
   - name: Install localized IntelliSense
     href: install/localized-intellisense.md
 - name: Get started
-  items:
-  - name: Get started
-    href: get-started.md
-  - name: Get started with C# and Visual Studio Code
-    href: tutorials/with-visual-studio-code.md
-  - name: Get started with .NET Core on macOS using Visual Studio Code
-    href: tutorials/using-on-macos.md
-  - name: Create your first console app in Visual Studio
-    href: tutorials/with-visual-studio.md
-  - name: Debug an application using Visual Studio
-    href: tutorials/debugging-with-visual-studio.md
-  - name: Publish an application with Visual Studio
-    href: tutorials/publishing-with-visual-studio.md
-  - name: Create a .NET Standard library in Visual Studio
-    href: tutorials/library-with-visual-studio.md
-  - name: Test a .NET Standard library in Visual Studio
-    href: tutorials/testing-library-with-visual-studio.md
-  - name: Consume a .NET Standard library in Visual Studio
-    href: tutorials/consuming-library-with-visual-studio.md
+  href: get-started.md
 - name: What's new in .NET Core
   items:
   - name: What's new in .NET Core 3.1
@@ -87,12 +69,28 @@
   items:
   - name: Overview
     href: tutorials/index.md
-  - name: Get started with .NET Core using Visual Studio for Mac
-    href: tutorials/using-on-mac-vs.md
-  - name: Build a complete .NET Core solution on macOS
-    href: tutorials/using-on-mac-vs-full-solution.md
+  - name: Get started with .NET Core using Visual Studio
+    href: tutorials/with-visual-studio.md
+  - name: Get started with .NET Core using Visual Studio Code
+    href: tutorials/with-visual-studio-code.md
   - name: Get started with .NET Core using the CLI
     href: tutorials/cli-create-console-app.md
+  - name: Get started with .NET Core using Visual Studio Code on macOS
+    href: tutorials/using-on-macos.md
+  - name: Get started with .NET Core using Visual Studio for Mac
+    href: tutorials/using-on-mac-vs.md
+  - name: Debug an application using Visual Studio
+    href: tutorials/debugging-with-visual-studio.md
+  - name: Publish an application with Visual Studio
+    href: tutorials/publishing-with-visual-studio.md
+  - name: Create a .NET Standard library in Visual Studio
+    href: tutorials/library-with-visual-studio.md
+  - name: Test a .NET Standard library in Visual Studio
+    href: tutorials/testing-library-with-visual-studio.md
+  - name: Consume a .NET Standard library in Visual Studio
+    href: tutorials/consuming-library-with-visual-studio.md
+  - name: Build a complete .NET Core solution on macOS
+    href: tutorials/using-on-mac-vs-full-solution.md
   - name: Organize and test projects with the .NET Core CLI
     href: tutorials/testing-with-cli.md
   - name: Develop libraries with cross-platform tools

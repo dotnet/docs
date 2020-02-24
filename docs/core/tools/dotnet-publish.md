@@ -14,7 +14,12 @@ ms.date: 02/24/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet publish [<PROJECT>|<SOLUTION>] [-c|--configuration] [-f|--framework] [--force] [--interactive] [--manifest] [--no-build] [--no-dependencies] [--no-restore] [--nologo] [-o|--output] [-r|--runtime] [--self-contained] [--no-self-contained] [-v|--verbosity] [--version-suffix]
+dotnet publish [<PROJECT>|<SOLUTION>] [-c|--configuration] 
+    [-f|--framework] [--force] [--interactive] [--manifest]
+    [--no-build] [--no-dependencies] [--no-restore] [--nologo]
+    [-o|--output] [-r|--runtime] [--self-contained]
+    [--no-self-contained] [-v|--verbosity] [--version-suffix]
+
 dotnet publish [-h|--help]
 ```
 
@@ -37,7 +42,7 @@ The `dotnet publish` command's output is ready for deployment to a hosting syste
   
   * `PROJECT` is the path and filename of a [C#](csproj.md), F#, or Visual Basic project file, or the path to a directory that contains a C#, F#, or Visual Basic project file. If the directory is not specified, it defaults to the current directory.
 
-  * `SOLUTION` is available starting in .NET Core 3.0 SDK. It's either the path and filename of a solution file (*.sln* extension), or the path to a directory that contains a solution file. If the directory is not specified, it defaults to the current directory.
+  * `SOLUTION` is the path and filename of a solution file (*.sln* extension), or the path to a directory that contains a solution file. If the directory is not specified, it defaults to the current directory. **Available starting in .NET Core 3.0 SDK.** 
 
 ## Options
 
@@ -57,9 +62,9 @@ The `dotnet publish` command's output is ready for deployment to a hosting syste
 
   Prints out a short help for the command.
 
-- **`--interactive`**
+- **`--interactive`** **Available starting with .NET Core 3.0 SDK.**
 
-  Allows the command to stop and wait for user input or action. For example, to complete authentication. Available starting with .NET Core SDK 3.0.
+  Allows the command to stop and wait for user input or action. For example, to complete authentication. 
 
 - **`--manifest <PATH_TO_MANIFEST_FILE>`**
 
@@ -73,9 +78,9 @@ The `dotnet publish` command's output is ready for deployment to a hosting syste
 
   Ignores project-to-project references and only restores the root project.
 
-- **`--nologo`**
+- **`--nologo`** **Available starting with .NET Core 3.0 SDK.**
 
-  Doesn't display the startup banner or the copyright message. Available starting with .NET Core SDK 3.0.
+  Doesn't display the startup banner or the copyright message. 
 
 - **`--no-restore`**
 
@@ -91,9 +96,9 @@ The `dotnet publish` command's output is ready for deployment to a hosting syste
 
   Publishes the .NET Core runtime with your application so the runtime doesn't need to be installed on the target machine. Default is `true` if a runtime identifier is specified. For more information about the different deployment types, see [.NET Core application publishing](../deploying/index.md).
 
-- **`--no-self-contained`**
+- **`--no-self-contained`**  **Available starting with .NET Core 3.0 SDK.**
 
-  Publish the application as a runtime-dependent application without the .NET Core runtime. A supported .NET Core runtime must be installed to run the application. Available starting with .NET Core SDK 3.0.
+  Publish the application as a runtime-dependent application without the .NET Core runtime. A supported .NET Core runtime must be installed to run the application.
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
@@ -101,8 +106,8 @@ The `dotnet publish` command's output is ready for deployment to a hosting syste
 
   - To create a [self-contained executable](../deploying/index.md#publish-self-contained), specify this option and omit `--no-self-contained`.
   - To create a [runtime-dependent cross-platform binary](../deploying/index.md#produce-a-cross-platform-binary), omit this option.
-  - To create a [runtime-dependent executable](../deploying/index.md#publish-runtime-dependent) for a specific platform, specify this option with `--no-self-contained`.  Available starting with .NET Core SDK 3.0.
-  - To create a [runtime-dependent executable](../deploying/index.md#publish-runtime-dependent) for the current platform and a [runtime-dependent cross-platform binary](../deploying/index.md#produce-a-cross-platform-binary), omit this option. Available starting with .NET Core SDK 3.0.
+  - To create a [runtime-dependent executable](../deploying/index.md#publish-runtime-dependent) for a specific platform, specify this option with `--no-self-contained`.  **Available starting with .NET Core 3.0 SDK.**
+  - To create a [runtime-dependent executable](../deploying/index.md#publish-runtime-dependent) for the current platform and a [runtime-dependent cross-platform binary](../deploying/index.md#produce-a-cross-platform-binary), omit this option.   **Available starting with .NET Core 3.0 SDK.**
 
   For more information, see [.NET Core application publishing](../deploying/index.md).
 

@@ -97,7 +97,14 @@ The `dotnet publish` command's output is ready for deployment to a hosting syste
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
-  Publishes the application for a given runtime. This is used when creating a [self-contained executable](../deploying/index.md#publish-self-contained). For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). Default is to publish a [runtime-dependent application](../deploying/index.md#publish-runtime-dependent).
+  Publishes the application for a given runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md).
+
+  - To create a [self-contained executable](../deploying/index.md#publish-self-contained), specify this option and omit `--no-self-contained`.
+  - To create a [runtime-dependent cross-platform binary](../deploying/index.md#produce-a-cross-platform-binary), omit this option.
+  - To create a [runtime-dependent executable](../deploying/index.md#publish-runtime-dependent) for a specific platform, specify this option with `--no-self-contained`.  Available starting with .NET Core SDK 3.0.
+  - To create a [runtime-dependent executable](../deploying/index.md#publish-runtime-dependent) for the current platform and a [runtime-dependent cross-platform binary](../deploying/index.md#produce-a-cross-platform-binary), omit this option. Available starting with .NET Core SDK 3.0.
+
+  For more information, see [.NET Core application publishing](../deploying/index.md).
 
 - **`-v|--verbosity <LEVEL>`**
 

@@ -16,25 +16,31 @@ ms.date: 02/13/2020
 To get information about the available commands and the environment:
 
 ```dotnetcli
-dotnet [-h|--help] [--version] [--info] [--list-runtimes] [--list-sdks] 
+dotnet [-h|--help] [--version] [--info]
+    [--list-runtimes] [--list-sdks]
 ```
 
 To run a command:
 
 ```dotnetcli
-[dotnet] [command] [-d|--diagnostics] [-h|--help] [--verbosity] [command-options] [arguments]
+[dotnet] [command] [-d|--diagnostics] [-h|--help] [--verbosity]
+    [command-options] [arguments]
 ```
 
 To run an application (.NET Core SDK 2.x):
 
 ```dotnetcli
-dotnet [--additionalprobingpath] [--deps-file] [--additional-deps] [--fx-version]  [--roll-forward-on-no-candidate-fx] [path-to-application] [arguments]
+dotnet [--additionalprobingpath] [--deps-file] [--additional-deps]
+    [--fx-version]  [--roll-forward-on-no-candidate-fx]
+    [path-to-application] [arguments]
 ```
 
 To run an application (.NET Core SDK 3.x):
 
 ```dotnetcli
-dotnet [--additionalprobingpath] [--deps-file] [--additional-deps] [--fx-version]  [--roll-forward] [path-to-application] [arguments]
+dotnet [--additionalprobingpath] [--deps-file] [--additional-deps]
+    [--fx-version]  [--roll-forward]
+    [path-to-application] [arguments]
 ```
 
 ## Description
@@ -51,17 +57,11 @@ The `dotnet` command has two functions:
 
 ## Options
 
-The available options are listed here in three groups:
-
-* SDK options for use with the `dotnet` command by itself. For example,`dotnet --info`. These options print information about the environment.
-* SDK options for use when `dotnet` runs a command. For example, `dotnet build --help`.
-* Runtime options for use when `dotnet` runs an application. For example, `dotnet myapp.dll --fx-version 3.1.1` 
+Different options are available for `dotnet` by itself, for running a command, and for running an application.
 
 ### SDK options for dotnet by itself
 
-- **`-h|--help`**
-
-  Prints out a list of available commands.
+The following options are for `dotnet` by itself. For example,`dotnet --info`. They print out information about the environment.
 
 - **`--info`**
 
@@ -79,21 +79,33 @@ The available options are listed here in three groups:
 
   Prints out a list of the installed .NET Core SDKs.
 
+- **`-h|--help`**
+
+  Prints out a list of available commands.
+
 ### SDK options for running a command
+
+The following options are for `dotnet` with a command. For example, `dotnet build --help`.
 
 - **`-d|--diagnostics`**
 
   Enables diagnostic output.
 
+- **`-v|--verbosity <LEVEL>`**
+
+  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Not supported in every command. See specific command page to determine if this option is available.
+
 - **`-h|--help`**
 
   Prints out documentation for a given command, such as `dotnet build --help`.
 
-  **`-v|--verbosity <LEVEL>`**
+- **`command options`**
 
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Not supported in every command; see specific command page to determine if this option is available.
+  Each command defines options specific to that command. See specific command page for a list of available options.
 
 ### Runtime options
+
+The following options are available when `dotnet` runs an application. For example, `dotnet myapp.dll --fx-version 3.1.1`.
 
 - **`--additionalprobingpath <PATH>`**
 
@@ -115,7 +127,7 @@ The available options are listed here in three groups:
 
   Path to a *runtimeconfig.json* file. A *runtimeconfig.json* file is a configuration file that contains run-time settings. For more information, see [.NET Core run-time configuration settings](../run-time-config/index.md#runtimeconfigjson).
 
-- **`--roll-forward-on-no-candidate-fx <N>`** **(.NET Core SDK 2.x)**
+- **`--roll-forward-on-no-candidate-fx <N>`** **Available in .NET Core 2.x SDK.**
 
   Defines behavior when the required shared framework is not available. `N` can be:
 
@@ -125,9 +137,9 @@ The available options are listed here in three groups:
 
    For more information, see [Roll forward](../whats-new/dotnet-core-2-1.md#roll-forward).
 
-- **`--roll-forward <SETTING>`** **(.NET Core SDK 3.x)**
+- **`--roll-forward <SETTING>`** **Available starting with .NET Core SDK 3.0.**
 
-  Controls how roll forward is applied to the app. The roll forward `setting` can be one of the following values. If the setting is omitted, `Minor` is the default.
+  Controls how roll forward is applied to the app. The `SETTING` can be one of the following values. If not specified, `Minor` is the default.
 
   - `LatestPatch` - Roll forward to the highest patch version. This disables minor version roll forward.
   - `Minor` - Roll forward to the lowest higher minor version, if requested minor version is missing. If the requested minor version is present, then the LatestPatch policy is used.
@@ -137,6 +149,8 @@ The available options are listed here in three groups:
   - `Disable` - Don't roll forward. Only bind to specified version. This policy isn't recommended for general use because it disables the ability to roll forward to the latest patches. This value is only recommended for testing.
 
 With the exception of `Disable`, all settings will use the highest available patch version.
+
+Roll forward behavior can also be configured in a project file property, a run-time configuration file property, and an environment variable.
 
 ## dotnet commands
 
@@ -215,14 +229,6 @@ Create a new .NET Core console application:
 dotnet new console
 ```
 
-Restore dependencies for a given application:
-
-```dotnetcli
-dotnet restore
-```
-
-[!INCLUDE[DotNet Restore Note](~/includes/dotnet-restore-note.md)]
-
 Build a project and its dependencies in a given directory:
 
 ```dotnetcli
@@ -257,7 +263,11 @@ dotnet myapp.dll
 
   Specifies whether .NET Core runtime, shared framework, or SDK are resolved from the global location. If not set, it defaults to `true`. Set to `false` to not resolve from the global location and have isolated .NET Core installations (values `0` or `false` are accepted). For more information about multi-level lookup, see [Multi-level SharedFX Lookup](https://github.com/dotnet/core-setup/blob/master/Documentation/design-docs/multilevel-sharedfx-lookup.md).
 
-- `DOTNET_ROLL_FORWARD_ON_NO_CANDIDATE_FX`
+- `DOTNET_ROLL_FORWARD` **Available in .NET Core 3.x SDK.**
+
+  Determines roll forward behavior. For more information, see the `--roll-forward` option earlier in this article.
+
+- `DOTNET_ROLL_FORWARD_ON_NO_CANDIDATE_FX` **Available in .NET Core 2.x SDK.**
 
   Disables minor version roll forward, if set to `0`. For more information, see [Roll forward](../whats-new/dotnet-core-2-1.md#roll-forward).
 

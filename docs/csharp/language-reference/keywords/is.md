@@ -101,15 +101,21 @@ The following example shows a comparison of `null` checks:
 
 ### var pattern
 
-The `var` pattern is a catch-all for any type or value. The value of *expr* is always assigned to a local variable the same type as the compile time type of *expr*. The result of the `is` expression is always `true`. Its syntax is:
+A pattern match with the `var` pattern always succeeds. Its syntax is:
 
 ```csharp
    expr is var varname
 ```
 
-The following example uses the var pattern to assign an expression to a variable named `obj`. It then displays the value and the type of `obj`.
+where the value of *expr* is always assigned to a local variable named *varname*. *varname* is a variable of the same type as the compile time type of *expr*. 
+
+If *expr* is `null`, the `is` expression is still true and assigns `null` to *varname*. 
+
+One reason to use the `var` pattern is to create a temporary variable within a Boolean expression. For example:
 
 [!code-csharp[is#8](../../../../samples/snippets/csharp/language-reference/keywords/is/is-var-pattern8.cs#8)]
+
+Here the temporary variable is used to store the result of an expensive operation. The variable can then be used multiple times.
 
 ## C# language specification
   

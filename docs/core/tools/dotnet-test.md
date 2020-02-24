@@ -63,7 +63,7 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
   Looks for test binaries for a specific [framework](../../standard/frameworks.md).
 
-- **`-filter <EXPRESSION>`**
+- **`--filter <EXPRESSION>`**
 
   Filters out tests in the current project using the given expression. For more information, see the [Filter option details](#filter-option-details) section. For more information and examples on how to use selective unit test filtering, see [Running selective unit tests](../testing/selective-unit-tests.md).
 
@@ -75,7 +75,7 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
   Specifies a logger for test results.
 
-- **`-no-build`**
+- **`--no-build`**
 
   Doesn't build the test project before running it. It also implicit sets the - **`-no-restore` flag.
 

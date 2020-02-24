@@ -5,7 +5,9 @@ ms.date: 12/10/2018
 ---
 # Compiler Options
 
-This topic describes compiler command-line options for the F# compiler, fsc.exe. The compilation environment can also be controlled by setting the project properties.
+This topic describes compiler command-line options for the F# compiler, fsc.exe.
+
+The compilation environment can also be controlled by setting the project properties. For projects targeting .NET core the "Other flags" property, `<OtherFlags>...</OtherFlags>` in `.fsproj`, is used for specifying extra command-line options.
 
 ## Compiler Options Listed Alphabetically
 

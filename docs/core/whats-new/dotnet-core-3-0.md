@@ -51,7 +51,7 @@ If you're using Visual Studio, you need [Visual Studio 2019](https://visualstudi
 
 .NET Core now builds [runtime-dependent executables](../deploying/index.md#publish-runtime-dependent) by default. This behavior is new for applications that use a globally installed version of .NET Core. Previously, only [self-contained deployments](../deploying/index.md#publish-self-contained) would produce an executable.
 
-During `dotnet build` or `dotnet publish`, an executable (known as the appHost) is created that matches the environment and platform of the SDK you're using. You can expect the same things with these executables as you would other native executables, such as:
+During `dotnet build` or `dotnet publish`, an executable (known as the **appHost**) is created that matches the environment and platform of the SDK you're using. You can expect the same things with these executables as you would other native executables, such as:
 
 - You can double-click on the executable.
 - You can launch the application from a command prompt directly, such as `myapp.exe` on Windows, and `./myapp` on Linux and macOS.

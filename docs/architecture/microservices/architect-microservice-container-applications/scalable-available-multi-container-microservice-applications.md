@@ -30,7 +30,7 @@ The concepts of a cluster and a scheduler are closely related, so the products p
 ## Software platforms for container clustering, orchestration, and scheduling
 
 |     |   |
-|-----|---|
+|:---:|---|
 | **Kubernetes** <br> ![An image of the Kubernetes logo.](./media/scalable-available-multi-container-microservice-applications/kubernetes-container-orchestration-system-logo.png) | [*Kubernetes*](https://kubernetes.io/) is an open-source product that provides functionality that ranges from cluster infrastructure and container scheduling to orchestrating capabilities. It lets you automate deployment, scaling, and operations of application containers across clusters of hosts. <br><br> *Kubernetes* provides a container-centric infrastructure that groups application containers into logical units for easy management and discovery. <br><br> *Kubernetes* is mature in Linux, less mature in Windows. |
 | **Azure Kubernetes Service (AKS)** <br> ![An image of the Azure Kubernetes Service logo.](./media/scalable-available-multi-container-microservice-applications/azure-kubernetes-service-logo.png) | [AKS](https://azure.microsoft.com/services/kubernetes-service/) is a managed Kubernetes container orchestration service in Azure that simplifies Kubernetes cluster’s management, deployment, and operations. |
 

@@ -129,8 +129,8 @@ In all cases, you must complete an application registration procedure that is ve
 
 For details on configuring your app for an external provider, see the [External provider authentication in the ASP.NET Core documentation](/aspnet/core/security/authentication/social/)).
 
-> [!TIP]
-All details are handled by the authorization middleware and services previously mentioned. So, you just have to choose the **Individual User Account** authentication option when you create the ASP.NET Code web application project in Visual Studio, as shown in Figure 9-3, besides registering the authentication providers previously mentioned.
+>[!TIP]
+>All details are handled by the authorization middleware and services previously mentioned. So, you just have to choose the **Individual User Account** authentication option when you create the ASP.NET Code web application project in Visual Studio, as shown in Figure 9-3, besides registering the authentication providers previously mentioned.
 
 ![Screenshot of the New ASP.NET Core Web Application dialog.](./media/index/select-individual-user-account-authentication-option.png)
 

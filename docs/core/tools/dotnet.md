@@ -61,7 +61,7 @@ Different options are available for `dotnet` by itself, for running a command, a
 
 ### SDK options for dotnet by itself
 
-The following options are for `dotnet` by itself. For example,`dotnet --info`. They print out information about the environment.
+The following options are for `dotnet` by itself. For example, `dotnet --info`. They print out information about the environment.
 
 - **`--info`**
 
@@ -263,7 +263,7 @@ dotnet myapp.dll
 
   Specifies whether .NET Core runtime, shared framework, or SDK are resolved from the global location. If not set, it defaults to `true`. Set to `false` to not resolve from the global location and have isolated .NET Core installations (values `0` or `false` are accepted). For more information about multi-level lookup, see [Multi-level SharedFX Lookup](https://github.com/dotnet/core-setup/blob/master/Documentation/design-docs/multilevel-sharedfx-lookup.md).
 
-- `DOTNET_ROLL_FORWARD` **Available in .NET Core 3.x SDK.**
+- `DOTNET_ROLL_FORWARD` **Available starting with .NET Core 3.x SDK.**
 
   Determines roll forward behavior. For more information, see the `--roll-forward` option earlier in this article.
 

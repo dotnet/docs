@@ -14,9 +14,13 @@ ms.date: 05/30/2018
 ## Synopsis
 
 ```dotnetcli
-dotnet vstest [<TEST_FILE_NAMES>] [--Settings|/Settings] [--Tests|/Tests] [--TestAdapterPath|/TestAdapterPath]
-    [--Platform|/Platform] [--Framework|/Framework] [--Parallel|/Parallel] [--TestCaseFilter|/TestCaseFilter] [--logger|/logger]
-    [-lt|--ListTests|/lt|/ListTests] [--ParentProcessId|/ParentProcessId] [--Port|/Port] [--Diag|/Diag] [--Blame|/Blame] [--InIsolation|/InIsolation]
+dotnet vstest [<TEST_FILE_NAMES>] [--Settings|/Settings]
+    [--Tests|/Tests] [--TestAdapterPath|/TestAdapterPath]
+    [--Platform|/Platform] [--Framework|/Framework]
+    [--Parallel|/Parallel] [--TestCaseFilter|/TestCaseFilter]
+    [--logger|/logger] [-lt|--ListTests|/lt|/ListTests]
+    [--ParentProcessId|/ParentProcessId] [--Port|/Port]
+    [--Diag|/Diag] [--Blame|/Blame] [--InIsolation|/InIsolation]
     [[--] <args>...]] [-?|--Help|/?|/Help]
 ```
 
@@ -84,7 +88,7 @@ The `dotnet-vstest` command runs the `VSTest.Console` command-line application t
 
     ```console
     /logger:trx [;LogFileName=<Defaults to unique file name>]
-    ```**
+    ```
 
 - **`lt|--ListTests|/lt|/ListTests:<File Name>`**
 
@@ -122,20 +126,30 @@ The `dotnet-vstest` command runs the `VSTest.Console` command-line application t
 
 Run tests in `mytestproject.dll`:
 
-`dotnet vstest mytestproject.dll`
+```dotnetcli
+dotnet vstest mytestproject.dll
+```
 
 Run tests in `mytestproject.dll`, exporting to custom folder with custom name:
 
-`dotnet vstest mytestproject.dll --logger:"trx;LogFileName=custom_file_name.trx" --ResultsDirectory:custom/file/path`
+```dotnetcli
+dotnet vstest mytestproject.dll --logger:"trx;LogFileName=custom_file_name.trx" --ResultsDirectory:custom/file/path
+```
 
 Run tests in `mytestproject.dll` and `myothertestproject.exe`:
 
-`dotnet vstest mytestproject.dll myothertestproject.exe`
+```dotnetcli
+dotnet vstest mytestproject.dll myothertestproject.exe
+```
 
 Run `TestMethod1` tests:
 
-`dotnet vstest /Tests:TestMethod1`
+```dotnetcli
+dotnet vstest /Tests:TestMethod1
+```
 
 Run `TestMethod1` and `TestMethod2` tests:
 
-`dotnet vstest /Tests:TestMethod1,TestMethod2`
+```dotnetcli
+dotnet vstest /Tests:TestMethod1,TestMethod2
+```

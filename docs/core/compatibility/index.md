@@ -43,7 +43,7 @@ Changes in this category modify the public surface area of a type. Most of the c
 
   The *old* assembly must be marked with the <xref:System.Runtime.CompilerServices.TypeForwardedToAttribute> that points to the new assembly.
 
-- ✔️ **ALLOWED: Changing a [struct](../../csharp/language-reference/keywords/struct.md) type to a `readonly struct` type**
+- ✔️ **ALLOWED: Changing a [struct](../../csharp/language-reference/builtin-types/struct.md) type to a `readonly struct` type**
 
   Changing a `readonly struct` type to a `struct` type is not allowed.
 
@@ -71,11 +71,11 @@ Changes in this category modify the public surface area of a type. Most of the c
 
   There is one exception to the rule for interface removal: you can add the implementation of an interface that derives from the removed interface. For example, you can remove <xref:System.IDisposable> if the type or interface now implements <xref:System.ComponentModel.IComponent>, which implements <xref:System.IDisposable>.
 
-- ❌ **DISALLOWED: Changing a `readonly struct` type to a [struct](../../csharp/language-reference/keywords/struct.md) type**
+- ❌ **DISALLOWED: Changing a `readonly struct` type to a [struct](../../csharp/language-reference/builtin-types/struct.md) type**
 
   The change of a `struct` type to a `readonly struct` type is allowed, however.
 
-- ❌ **DISALLOWED: Changing a [struct](../../csharp/language-reference/keywords/struct.md) type to a `ref struct` type, and vice versa**
+- ❌ **DISALLOWED: Changing a [struct](../../csharp/language-reference/builtin-types/struct.md) type to a `ref struct` type, and vice versa**
 
 - ❌ **DISALLOWED: Reducing the visibility of a type**
 
@@ -294,7 +294,7 @@ Changes in this category modify the public surface area of a type. Most of the c
 
 - ✔️ **ALLOWED: Adding [params](../../csharp/language-reference/keywords/params.md) to a parameter**
 
-- ❌ **DISALLOWED: Changing a [struct](../../csharp/language-reference/keywords/struct.md) to a [class](../../csharp/language-reference/keywords/class.md) and vice versa**
+- ❌ **DISALLOWED: Changing a [struct](../../csharp/language-reference/builtin-types/struct.md) to a [class](../../csharp/language-reference/keywords/class.md) and vice versa**
 
 - ❌ **DISALLOWED: Adding the [checked](../../csharp/language-reference/keywords/virtual.md) keyword to a code block**
 

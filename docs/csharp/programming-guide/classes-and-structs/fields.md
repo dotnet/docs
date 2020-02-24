@@ -7,7 +7,7 @@ ms.assetid: 3cbb2f61-75f8-4cce-b4ef-f5d1b3de0db7
 ---
 # Fields (C# Programming Guide)
 
-A *field* is a variable of any type that is declared directly in a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/keywords/struct.md). Fields are *members* of their containing type.
+A *field* is a variable of any type that is declared directly in a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/builtin-types/struct.md). Fields are *members* of their containing type.
 
 A class or struct may have instance fields, static fields, or both. Instance fields are specific to an instance of a type. If you have a class T, with an instance field F, you can create two objects of type T, and modify the value of F in each object without affecting the value in the other object. By contrast, a static field belongs to the class itself, and is shared among all instances of that class. You can access the static field only by using the class name. If you access the static field by an instance name, you get [CS0176](../../misc/cs0176.md) compile-time error.
 

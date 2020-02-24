@@ -33,7 +33,7 @@ struct SampleStruct
 }
 ```
 
-For more information, see the articles on the [class](../../language-reference/keywords/class.md) and [struct](../../language-reference/keywords/struct.md) keywords.
+For more information, see the articles on the [class](../../language-reference/keywords/class.md) and [struct](../../language-reference/builtin-types/struct.md) keywords.
 
 ### Class members
 

@@ -62,4 +62,3 @@ A derived class can hide base class members by declaring members with the same n
 - [C# Programming Guide](../index.md)
 - [Classes and Structs](./index.md)
 - [class](../../language-reference/keywords/class.md)
-- [struct](../../language-reference/keywords/struct.md)

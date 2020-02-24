@@ -73,5 +73,5 @@ Delegates behave like classes and structs. By default, they have `internal` acce
 - [protected internal](../../language-reference/keywords/protected-internal.md)
 - [private protected](../../language-reference/keywords/private-protected.md)
 - [class](../../language-reference/keywords/class.md)
-- [struct](../../language-reference/keywords/struct.md)
+- [struct](../../language-reference/builtin-types/struct.md)
 - [interface](../../language-reference/keywords/interface.md)

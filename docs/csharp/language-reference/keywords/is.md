@@ -107,15 +107,15 @@ A pattern match with the `var` pattern always succeeds. Its syntax is:
    expr is var varname
 ```
 
-where the value of *expr* is always assigned to a local variable named *varname*. *varname* is a variable of the same type as the compile time type of *expr*. 
+where the value of *expr* is always assigned to a local variable named *varname*. *varname* is a variable of the same type as the compile-time type of *expr*. 
 
-If *expr* is `null`, the `is` expression is still true and assigns `null` to *varname*. 
+If *expr* evaluates to `null`, the `is` expression produces `true` and assigns `null` to *varname*. 
 
-One reason to use the `var` pattern is to create a temporary variable within a Boolean expression. For example:
+You can use the `var` pattern to create a temporary variable within a Boolean expression, as the following example shows:
 
 [!code-csharp[is#8](../../../../samples/snippets/csharp/language-reference/keywords/is/is-var-pattern8.cs#8)]
 
-Here the temporary variable is used to store the result of an expensive operation. The variable can then be used multiple times.
+In the preceding example, the temporary variable is used to store the result of an expensive operation. The variable can then be used multiple times.
 
 ## C# language specification
   

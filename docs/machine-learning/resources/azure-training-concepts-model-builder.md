@@ -39,7 +39,7 @@ To create an Azure Machine Learning workspace, the following are required:
 
 ## What is an experiment?
 
-An experiment is the collection of runs for a specific training job. Experiments belong to a specific workspace. The first time an experiment is created, its name is registered in the workspace. Any subsequent runs, if the same name is used, those runs are logged as part of the same experiment. Otherwise, a new experiment is created.
+An experiment is the collection of runs for a specific training job. Experiments belong to a specific workspace. The first time an experiment is created, its name is registered in the workspace. Any subsequent runs, if the same name is used, are logged as part of the same experiment. Otherwise, a new experiment is created.
 
 ## Training
 

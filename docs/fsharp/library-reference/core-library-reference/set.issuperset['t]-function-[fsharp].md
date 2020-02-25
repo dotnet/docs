@@ -54,7 +54,7 @@ This function is named `IsSuperset` in compiled assemblies. If you are accessing
 
 ## Example
 
-[!code-fsharp[Main](~/samples/snippets/fsharp/sets/snippet13.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/fssets/snippet13.fs)]
 
 **Output**
 

@@ -52,7 +52,7 @@ This function is named `Iterate` in compiled assemblies. If you are accessing th
 
 The following code demonstrates the use of `Array.iter`.
 
-[!code-fsharp[Main](~/samples/snippets/fsharp/samples101/snippet1002.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/fssamples101/snippet1002.fs)]
 
 ```
 Array.iter: (1, 1) (2, 4) (3, 9) (4, 16) (5, 25)

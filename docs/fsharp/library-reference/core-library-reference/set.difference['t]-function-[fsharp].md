@@ -53,7 +53,7 @@ This function is named `Difference` in compiled assemblies. If you are accessing
 
 ## Example
 
-[!code-fsharp[Main](~/samples/snippets/fsharp/sets/snippet2.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/fssets/snippet2.fs)]
 
 **Output**
 

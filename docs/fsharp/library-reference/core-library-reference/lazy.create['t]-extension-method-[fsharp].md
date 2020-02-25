@@ -44,7 +44,7 @@ The created [`Lazy`](https://msdn.microsoft.com/library/b29d0af5-6efb-4a55-a278-
 
 ## Example
 
-[!code-fsharp[Main](~/samples/snippets/fsharp/corelib2/snippet11.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/core-lib-2/snippet11.fs)]
 
 The output is the factorial of 10.
 

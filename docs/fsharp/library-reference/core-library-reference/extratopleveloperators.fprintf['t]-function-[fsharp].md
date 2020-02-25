@@ -43,7 +43,7 @@ This function is named `PrintFormatToTextWriter` in compiled assemblies. If you 
 
 ## Example
 
-[!code-fsharp[Main](~/samples/snippets/fsharp/corelib2/snippet7.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/core-lib-2/snippet7.fs)]
 
 **Output**
 

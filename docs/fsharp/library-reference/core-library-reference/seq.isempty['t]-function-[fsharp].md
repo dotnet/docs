@@ -53,7 +53,7 @@ This function is named `IsEmpty` in compiled assemblies. If you are accessing th
 
 ## Example
 
-[!code-fsharp[Main](~/samples/snippets/fsharp/sequences/snippet42.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/fssequences/snippet42.fs)]
 
 **Output**
 

@@ -14,21 +14,21 @@ The following is a guide to help you learn more about resources used to train mo
 A workspace is an Azure Machine Learning resource that provides a central place for all Azure Machine Learning resources and artifacts created as part of training job. 
 
 To create an Azure Machine Learning workspace, the following are required:
-    
+
 - Name: A name for your workspace between 3-33 characters. Names may only contain alphanumeric characters and hyphens. 
-- Region: The geographic location of the datacenter where your workspace and resources are deployed to. It is recommended that you choose a location close to where you or your customers are. 
+- Region: The geographic location of the data center where your workspace and resources are deployed to. It is recommended that you choose a location close to where you or your customers are.
 - Resource group: A container that contains all related resources for an Azure solution.
 
 ## What is an Azure Machine Learning compute?
 
-An Azure Machine Learning compute is a cloud-based GPU optimized Linux VM used for training. 
+An Azure Machine Learning compute is a cloud-based Linux VM used for training.
 
 To create an Azure Machine Learning workspace, the following are required:
 
 - Name: A name for your workspace between 2-16 characters. Names may only contain alphanumeric characters and hyphens.
 - Compute size
 
-    Model Builder provides the following compute types:
+    Model Builder can use one of the following GPU-optimized compute types:
 
     | Size | vCPU | Memory: GiB | Temp storage (SSD) GiB | GPU | GPU memory: GiB | Max data disks | Max NICs |
     |---|---|---|---|---|---|---|---|
@@ -43,17 +43,16 @@ An experiment is the collection of runs for a specific training job. Experiments
 
 ## Training
 
-Currently in Model Builder, training on Azure is only available for image classification scenarios. The algorithm used to train these models is ResNet50. During training, the resources required to train the model are provisioned and the model is trained. This process takes several minutes and the amount of time may vary depending on the size of compute selected as well as amount of data. You can track the progress of your runs by using the "Monitor current run in Azure portal" link in Visual Studio.
+Currently in Model Builder, training on Azure is only available for image classification scenarios. The algorithm used to train these models is a Deep Neural Network based on the ResNet50 architecture. During training, the resources required to train the model are provisioned and the model is trained. This process takes several minutes and the amount of time may vary depending on the size of compute selected as well as amount of data. You can track the progress of your runs by selecting the "Monitor current run in Azure portal" link in Visual Studio.
 
-Throughout the training process, the following steps take place:
+The following is a more detailed description of the steps that take place during training:
 
-|Step  | Description  |
-|---------|---------|
-|Step 1     |  Desc 1       |
-|Step 2     |  Desc 2       |
-|Step 3    |   Desc 3      |
+    |Step  | Description  |
+    |---------|---------|
+    |Step 1     |  Desc 1       |
+    |Step 2     |  Desc 2       |
+    |Step 3    |   Desc 3      |
 
 ## Model
 
 Once training is complete, a version of the model is downloaded locally.
-

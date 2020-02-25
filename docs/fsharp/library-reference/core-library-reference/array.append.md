@@ -4,11 +4,11 @@ description: Array.append<'T> Function (F#)
 ms.date: 02/24/2020
 ---
 
-# Array.append<'T> Function (F#)
+# Array.append<'T>
 
 Creates an array that contains the elements of one array followed by the elements of another array.
 
-**Namespace/Module Path:** Microsoft.FSharp.Collections.Array
+**Module:** [Microsoft.FSharp.Collections.Array](collections.array-module-[fsharp].md)
 
 ## Syntax
 
@@ -21,15 +21,11 @@ Array.append array1 array2
 ```
 
 #### Parameters
-*array1*
-Type: **'T**[[]](https://msdn.microsoft.com/library/def20292-9aae-4596-9275-b94e594f8493)
 
-The first input array.
-
-*array2*
-Type: **'T**[[]](https://msdn.microsoft.com/library/def20292-9aae-4596-9275-b94e594f8493)
-
-The second input array.
+|Paramter name|Type|Description|
+|-------------|----|-----------|
+| `array1`|[`'T[]`](core.['t]-type-[fsharp].md)|The first input array.|
+| `array2`|[`'T[]`](core.['t]-type-[fsharp].md)|The first input array.|
 
 ## Return Value
 
@@ -49,6 +45,6 @@ The following example demonstrates the use of `Array.append`.
 ```
 
 ## See Also
-[Collections.Array Module](Collections.Array-Module-%5BFSharp%5D.md)
+[Collections.Array Module](collections.array-module-[fsharp].md)
 
-[Microsoft.FSharp.Collections](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections](microsoft.fsharp.collections-namespace-[fsharp].md)

@@ -29,7 +29,7 @@ To create an Azure Machine Learning workspace, the following are required:
 - Compute size
 
     Model Builder provides the following compute types:
-    
+
     | Size | vCPU | Memory: GiB | Temp storage (SSD) GiB | GPU | GPU memory: GiB | Max data disks | Max NICs |
     |---|---|---|---|---|---|---|---|
     | Standard_NC12   | 12 | 112 | 680  | 2 | 24 | 48 | 2 |
@@ -42,3 +42,18 @@ To create an Azure Machine Learning workspace, the following are required:
 An experiment is the collection of runs for a specific training job. Experiments belong to a specific workspace. The first time an experiment is created, it's name is registered in the workspace. Any subsequent runs, if the same name is used, those runs are logged as part of the same experiment. Otherwise, a new experiment is created.
 
 ## Training
+
+Currently in Model Builder, training on Azure is only available for image classification scenarios. The algorithm used to train these models is ResNet50. During training, the resources required to train the model are provisioned and the model is trained. This process takes several minutes and the amount of time may vary depending on the size of compute selected as well as amount of data. You can track the progress of your runs by using the "Monitor current run in Azure portal" link in Visual Studio.
+
+Throughout the training process, the following steps take place:
+
+|Step  | Description  |
+|---------|---------|
+|Step 1     |  Desc 1       |
+|Step 2     |  Desc 2       |
+|Step 3    |   Desc 3      |
+
+## Model
+
+Once training is complete, a version of the model is downloaded locally.
+

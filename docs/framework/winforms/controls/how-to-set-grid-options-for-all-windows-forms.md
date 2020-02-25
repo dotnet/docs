@@ -1,5 +1,5 @@
 ---
-title: "How to: Set Grid Options for All Windows Forms"
+title: Set Grid Options
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "snap to grid [Windows Forms], Windows Forms Designer"
@@ -8,8 +8,8 @@ helpviewer_keywords:
   - "Windows Forms, grid options in designer"
   - "Windows Forms Designer"
 ms.assetid: 36967466-1dfd-4fae-a7f1-7bf2cbc94048
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # How to: Set grid options for all Windows Forms

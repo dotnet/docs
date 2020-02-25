@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "threading [.NET Framework], about threading"
   - "managed threading"
 ms.assetid: b2944911-0e8f-427d-a8bb-077550618935
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Managed threading basics
 

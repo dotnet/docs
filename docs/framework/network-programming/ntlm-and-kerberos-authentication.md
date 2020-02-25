@@ -58,5 +58,5 @@ WReq.Credentials = CredentialCache.DefaultCredentials;
   
 ## See also
 
-- [Basic and Digest Authentication](../../../docs/framework/network-programming/basic-and-digest-authentication.md)
-- [Internet Authentication](../../../docs/framework/network-programming/internet-authentication.md)
+- [Basic and Digest Authentication](basic-and-digest-authentication.md)
+- [Internet Authentication](internet-authentication.md)

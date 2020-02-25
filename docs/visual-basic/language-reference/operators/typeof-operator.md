@@ -1,5 +1,5 @@
 ---
-title: "TypeOf Operator (Visual Basic)"
+title: "TypeOf Operator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "TypeOf"
@@ -18,11 +18,11 @@ Checks whether the runtime type of an expression's result is type-compatible wit
   
 ## Syntax  
   
-```  
+```vb  
 result = TypeOf objectexpression Is typename  
 ```  
   
-```  
+```vb  
 result = TypeOf objectexpression IsNot typename  
 ```  
   

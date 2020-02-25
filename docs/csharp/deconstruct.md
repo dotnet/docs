@@ -1,8 +1,7 @@
 ---
 title: Deconstructing tuples and other types
 description: Learn how to deconstruct tuples and other types.
-author: rpetrusha
-ms.author: ronpet
+ms.technology: csharp-fundamentals
 ms.date: 07/18/2016
 ms.assetid: 0b0c4b0f-4a47-4f66-9b8e-f5c63b195960
 ---

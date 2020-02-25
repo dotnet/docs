@@ -1,7 +1,5 @@
 ---
 title: "Special Characters - C# Reference"
-ms.custom: seodec18
-
 ms.date: 02/14/2017
 f1_keywords: 
   - "cs.special characters"
@@ -12,8 +10,6 @@ helpviewer_keywords:
   - "@ character (C#)"
   - "$ character (C#)"
 ms.assetid: 4c5c0539-2e37-40b7-91ce-75af5aabd3f9
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # C# Special Characters

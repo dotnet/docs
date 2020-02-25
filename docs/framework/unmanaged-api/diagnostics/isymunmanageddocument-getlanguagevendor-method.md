@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 1d4b702e-4922-441d-8b44-03804284f70b
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedDocument::GetLanguageVendor Method
 Gets the language vendor of this document.  

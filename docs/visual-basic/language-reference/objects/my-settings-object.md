@@ -1,5 +1,5 @@
 ---
-title: "My.Settings Object (Visual Basic)"
+title: "My.Settings Object"
 ms.date: 07/20/2015
 f1_keywords: 
   - "My.MySettingsProperty.Settings"

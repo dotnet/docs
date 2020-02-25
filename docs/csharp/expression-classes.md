@@ -2,6 +2,7 @@
 title: Framework Types Supporting Expression Trees
 description: Learn about framework types supporting expression trees, creating expression trees, and techniques for working with expression tree APIs.
 ms.date: 06/20/2016
+ms.technology: csharp-advanced-concepts
 ms.assetid: e9c85021-0d36-48af-91b7-aaaa66f22654
 ---
 
@@ -75,6 +76,7 @@ There are Expression node types that map to almost all of the syntax elements of
 C# language. Each type has specific methods for that type of language element. It's a lot
 to keep in your head at one time. Rather than try to memorize everything, here are the techniques
 I use to work with Expression trees:
+
 1. Look at the members of the `ExpressionType` enum to determine possible nodes you should be
 examining. This really helps when you want to traverse and understand an expression tree.
 2. Look at the static members of the `Expression` class to build an expression. Those methods

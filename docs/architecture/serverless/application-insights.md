@@ -13,12 +13,12 @@ ms.date: 06/26/2018
 
 Adding Application Insights to existing apps is as easy as adding an instrumentation key to your application's settings. With Application Insights you can:
 
-* Create custom charts and alerts based on metrics such as number of function invocations, the time it takes to run a function, and exceptions
-* Analyze failures and server exceptions
-* Drill into performance by operation and measure the time it takes to call third-party dependencies
-* Monitor CPU usage, memory, and rates across all servers that host your function apps
-* View a live stream of metrics including request count and latency for your function apps
-* Use [Analytics](https://docs.microsoft.com/azure/application-insights/app-insights-analytics) to search, query, and create custom charts over your function data
+- Create custom charts and alerts based on metrics such as number of function invocations, the time it takes to run a function, and exceptions
+- Analyze failures and server exceptions
+- Drill into performance by operation and measure the time it takes to call third-party dependencies
+- Monitor CPU usage, memory, and rates across all servers that host your function apps
+- View a live stream of metrics including request count and latency for your function apps
+- Use [Analytics](https://docs.microsoft.com/azure/application-insights/app-insights-analytics) to search, query, and create custom charts over your function data
 
 ![Metrics explorer](./media/metrics-explorer.png)
 

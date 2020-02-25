@@ -4,8 +4,6 @@ ms.date: "10/01/2018"
 helpviewer_keywords: 
   - "Memory&lt;T&gt; and Span&lt;T&gt; best practices"
   - "using Memory&lt;T&gt; and Span&lt;T&gt;"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Memory\<T> and Span\<T> usage guidelines
 

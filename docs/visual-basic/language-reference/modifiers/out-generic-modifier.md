@@ -1,5 +1,5 @@
 ---
-title: "Out (Generic Modifier) (Visual Basic)"
+title: "Out (Generic Modifier)"
 ms.date: 07/20/2015
 f1_keywords:
   - "vb.VarianceOut"

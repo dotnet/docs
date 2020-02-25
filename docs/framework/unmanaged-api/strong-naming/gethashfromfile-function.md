@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: b3c526a4-8fb4-4ad6-b6af-42ce9c06492e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetHashFromFile Function
 Generates a hash over the contents of the specified file.  

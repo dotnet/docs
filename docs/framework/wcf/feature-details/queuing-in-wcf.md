@@ -56,7 +56,7 @@ This section describes how to use queued communication in Windows Communication 
   
  Many queuing systems provide for a system-wide dead-letter queue. MSMQ provides a system-wide non-transactional dead-letter queue for messages that fail delivery to non-transactional queues and a system-wide transactional dead-letter queue for messages that fail delivery to transactional queues.  
   
- If multiple clients sending messages to different target queues share the MSMQ service, all messages sent by the clients go to the same dead-letter queue. This is not always preferable. For better isolation, WCF and MSMQ in [!INCLUDE[wv](../../../../includes/wv-md.md)] provide a custom dead-letter queue (or application-specific dead-letter queue) that the user can specify to store messages that fail delivery. Therefore, different clients do not share the same dead-letter queue.  
+ If multiple clients sending messages to different target queues share the MSMQ service, all messages sent by the clients go to the same dead-letter queue. This is not always preferable. For better isolation, WCF and MSMQ in Windows Vista provide a custom dead-letter queue (or application-specific dead-letter queue) that the user can specify to store messages that fail delivery. Therefore, different clients do not share the same dead-letter queue.  
   
  The binding has two properties of interest:  
   

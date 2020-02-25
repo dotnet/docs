@@ -14,6 +14,7 @@ This tutorial teaches how to deploy a .NET for Apache Spark application to Amazo
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
+>
 > * Prepare Microsoft.Spark.Worker
 > * Publish your Spark .NET app
 > * Deploy your app to Amazon EMR Spark
@@ -44,7 +45,7 @@ Before you start, do the following:
 
    Run the following command on Linux.
 
-   ```bash
+   ```dotnetcli
    dotnet publish -c Release -f netcoreapp2.1 -r ubuntu.16.04-x64
    ```
 
@@ -66,7 +67,7 @@ Before you start, do the following:
 
 [Amazon EMR](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-what-is-emr.html) is a managed cluster platform that simplifies running big data frameworks on AWS.
 
-> [!NOTE] 
+> [!NOTE]
 > Amazon EMR Spark is Linux-based. Therefore, if you are interested in deploying your app to Amazon EMR Spark, make sure your app is .NET Standard compatible and that you use the [.NET Core compiler](https://dotnet.microsoft.com/download) to compile your app.
 
 ### Deploy Microsoft.Spark.Worker

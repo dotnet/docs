@@ -2,8 +2,6 @@
 title: "ICorDebugSymbolProvider2::GetGenericDictionaryInfo Method"
 ms.date: "03/30/2017"
 ms.assetid: ba28fe4e-5491-4670-bff7-7fde572d7593
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugSymbolProvider2::GetGenericDictionaryInfo Method
 
@@ -20,7 +18,7 @@ HRESULT GetGenericDictionaryInfo(
 ## Parameters
 
 `ppMemoryBuffer`\
-[out] A pointer to the address of an [ICorDebugMemoryBuffer](../../../../docs/framework/unmanaged-api/debugging/icordebugmemorybuffer-interface.md) object containing the generic dictionary map. See the Remarks section for more information.
+[out] A pointer to the address of an [ICorDebugMemoryBuffer](icordebugmemorybuffer-interface.md) object containing the generic dictionary map. See the Remarks section for more information.
 
 ## Remarks
 
@@ -83,5 +81,5 @@ The inclusion of the length for each heap element enables simple sorting of the 
 
 ## See also
 
-- [ICorDebugSymbolProvider2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider2-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugSymbolProvider2 Interface](icordebugsymbolprovider2-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

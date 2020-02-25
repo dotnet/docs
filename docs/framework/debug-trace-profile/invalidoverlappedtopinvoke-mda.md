@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "MDAs (managed debugging assistants), overlapped pointers"
   - "pointers, overlapped"
 ms.assetid: 28876047-58bd-4fed-9452-c7da346d67c0
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # invalidOverlappedToPinvoke MDA
 The `invalidOverlappedToPinvoke` managed debugging assistant (MDA) is activated when an overlapped pointer that was not created on the garbage collection heap is passed to specific Win32 functions.  
@@ -69,5 +67,5 @@ The `invalidOverlappedToPinvoke` managed debugging assistant (MDA) is activated 
 ## See also
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
-- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
-- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)
+- [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Interop Marshaling](../interop/interop-marshaling.md)

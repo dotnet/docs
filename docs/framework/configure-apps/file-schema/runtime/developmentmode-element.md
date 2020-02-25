@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "container tags, <developmentMode> element"
   - "<developmentMode> element"
 ms.assetid: 60e79a8c-415a-497d-be29-b9d0fd9bdee3
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<developmentMode> Element
 Specifies whether the runtime searches for assemblies in directories specified by the DEVPATH environment variable.  

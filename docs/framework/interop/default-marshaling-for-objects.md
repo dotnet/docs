@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "objects, interop marshaling"
   - "interop marshaling, objects"
 ms.assetid: c2ef0284-b061-4e12-b6d3-6a502b9cc558
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Default Marshaling for Objects
 

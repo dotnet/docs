@@ -1,5 +1,5 @@
 ---
-title: "How to: Display an Insertion Mark in a Windows Forms ListView Control"
+title: Display an Insertion Mark in ListView Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -14,9 +14,6 @@ ms.assetid: 88d0a15b-25fd-4dc3-a685-297351311940
 ---
 # How to: Display an Insertion Mark in a Windows Forms ListView Control
 The insertion mark in the <xref:System.Windows.Forms.ListView> control shows users the point where dragged items will be inserted. When a user drags an item to a point between two other items, the insertion mark shows the item's expected new location.  
-  
-> [!NOTE]
-> The insertion mark feature is available only on [!INCLUDE[WinXpFamily](../../../../includes/winxpfamily-md.md)] when your application calls the <xref:System.Windows.Forms.Application.EnableVisualStyles%2A?displayProperty=nameWithType> method. On earlier operating systems, any code relating to the insertion mark has no effect and the insertion mark will not appear. For more information, see <xref:System.Windows.Forms.ListViewInsertionMark>.  
   
  The following image shows an insertion mark:  
   

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 38439fa1-2b99-4fa8-a6ec-08afc0f83b9c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRPolicyManager::SetActionOnTimeout Method
 Specifies the policy action the common language runtime (CLR) should take when the specified operation times out.  

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 1c090153-fd5f-46c7-9cff-39a78d992c8f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataAssemblyEmit::SetExportedTypeProps Method
 Modifies the specified `ExportedType` metadata structure.  

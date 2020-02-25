@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "threads and fibers [.NET]"
   - "managed threading"
 ms.assetid: 4fb6452f-c071-420d-9e71-da16dee7a1eb
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Managed and unmanaged threading in Windows
 

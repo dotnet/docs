@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: e2146726-0084-4c9e-a2d2-e8d461b13b21
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit2::SaveDeltaToMemory Method
 Saves changes from the current edit-and-continue session to memory.  

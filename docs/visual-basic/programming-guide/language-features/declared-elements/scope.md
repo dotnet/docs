@@ -1,5 +1,5 @@
 ---
-title: "Scope in Visual Basic"
+title: "Scope"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "module scope [Visual Basic]"

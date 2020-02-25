@@ -8,8 +8,6 @@ api_location:
 api_type: 
   - "DLLExport"
 ms.assetid: fb626b41-b888-4625-84c3-2c02b5e3866f
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \_AxlGetIssuerPublicKeyHash Function
 Retrieves the SHA-1 hash of the public key associated with the private key that is used to sign the specified certificate.  

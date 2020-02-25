@@ -1,6 +1,5 @@
 ---
 title: "extern alias - C# Reference"
-ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
   - "alias_CSharpKeyword"
@@ -41,4 +40,4 @@ You might have to reference two versions of assemblies that have the same fully-
 - [C# Programming Guide](../../programming-guide/index.md)
 - [C# Keywords](./index.md)
 - [:: Operator](../operators/namespace-alias-qualifier.md)
-- [/reference (C# Compiler Options)](../compiler-options/reference-compiler-option.md)
+- [-reference (C# Compiler Options)](../compiler-options/reference-compiler-option.md)

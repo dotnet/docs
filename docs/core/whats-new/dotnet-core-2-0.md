@@ -1,8 +1,6 @@
 ---
 title: What's new in .NET Core 2.0
 description: Learn about the new features found in .NET Core.
-author: rpetrusha
-ms.author: ronpet
 ms.date: 08/13/2017
 ---
 # What's new in .NET Core 2.0
@@ -132,7 +130,7 @@ To retarget your project in Visual Studio, you open the **Application** tab of t
 
 Whenever you modify your code, Live Unit Testing automatically runs any affected unit tests in the background and displays the results and code coverage live in the Visual Studio environment. .NET Core 2.0 now supports Live Unit Testing. Previously, Live Unit Testing was available only for .NET Framework applications.
 
-For more information, see [Live Unit Testing with Visual Studio 2017](/visualstudio/test/live-unit-testing) and the [Live Unit Testing FAQ](/visualstudio/test/live-unit-testing-faq).
+For more information, see [Live Unit Testing with Visual Studio](/visualstudio/test/live-unit-testing) and the [Live Unit Testing FAQ](/visualstudio/test/live-unit-testing-faq).
 
 ### Better support for multiple target frameworks
 

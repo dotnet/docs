@@ -17,7 +17,7 @@ Use <xref:System.Data.Linq.DataContext.GetCommand%2A> to display SQL commands an
   
  Output appears as follows:  
   
-```  
+```console  
 Customers from London:  
     Thomas Hardy  
     Victoria Ashworth  
@@ -29,7 +29,7 @@ Customers from London:
     Dominique Perrier  
 ```  
   
-```  
+```console  
 Command Text:  
 SELECT [t0].[CustomerID], [t0].[CompanyName], [t0].[ContactName], [t0].[ContactT  
 itle], [t0].[Address], [t0].[City], [t0].[Region], [t0].[PostalCode], [t0].[Coun  

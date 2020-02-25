@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 2fc6c715-646f-41fd-9c12-c59b40575269
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # INotifyConnection2::UnregisterNotifySource Method
 Removes a specified notification source object from the connection.  

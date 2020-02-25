@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 752e49b4-987c-4c28-a118-1a0c1ed510c5
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # LoadStringRC Function
 Translates an HRESULT value into an error message by using the default culture of the current thread.  

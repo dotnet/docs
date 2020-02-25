@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "GetErrorInfo function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetErrorInfo function
 Retrieves error information from the previous function call.  

@@ -1,5 +1,5 @@
 ---
-title: Using dotnet-svcutil.xmlserializer on .NET Core
+title: Using dotnet-svcutil.xmlserializer
 description: Learn how you can use the `dotnet-svcutil.xmlserializer` NuGet package to pre-generate a serialization assembly for .NET Core projects.
 author: huanwu
 ms.date: 11/27/2018
@@ -33,7 +33,7 @@ To use `dotnet-svcutil.xmlserializer` in a .NET Core console application:
 
 2. Create a .NET Core console application as WCF client application that targets at .NET Core 2.1 or later versions. For example, create an app named 'MyWCFClient' with the following command:
 
-    ```console
+    ```dotnetcli
     dotnet new console --name MyWCFClient
     ```
 
@@ -45,7 +45,7 @@ To use `dotnet-svcutil.xmlserializer` in a .NET Core console application:
 
 3. Add a package reference to `System.ServiceModel.Http` by running the following command:
 
-    ```console
+    ```dotnetcli
     dotnet add package System.ServiceModel.Http
     ```
 
@@ -78,7 +78,7 @@ To use `dotnet-svcutil.xmlserializer` in a .NET Core console application:
 
 5. Add a reference to the `dotnet-svcutil.xmlserializer` package by running the following command:
   
-    ```console
+    ```dotnetcli
     dotnet add package dotnet-svcutil.xmlserializer
     ```
 

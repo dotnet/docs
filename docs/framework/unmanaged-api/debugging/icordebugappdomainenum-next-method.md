@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: b8d1def7-0ebc-4314-a3a2-fd36a75973e7
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugAppDomainEnum::Next Method
 Gets the specified number of application domains from the collection, starting at the current cursor position.  

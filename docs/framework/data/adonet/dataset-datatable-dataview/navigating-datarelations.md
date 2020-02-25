@@ -22,7 +22,7 @@ One of the primary functions of a <xref:System.Data.DataRelation> is to allow na
   
  When the child column might contain values that the parent column does not contain, set the **createConstraints** flag to **false** when adding the **DataRelation**. In the example, the **createConstraints** flag is set to **false** for the **DataRelation** between the **Orders** table and the **OrderDetails** table. This enables the application to return all the records from the **OrderDetails** table and only a subset of records from the **Orders** table without generating a run-time exception. The expanded sample generates output in the following format.  
   
-```  
+```output  
 Customer ID: NORTS  
   Order ID: 10517  
         Order Date: 4/24/1997 12:00:00 AM  

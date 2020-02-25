@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: b3847495-0ae6-4a72-b496-65ce2424afc6
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICeeGen::GenerateCeeMemoryImage Method
 Generates an image in memory for the code base.  

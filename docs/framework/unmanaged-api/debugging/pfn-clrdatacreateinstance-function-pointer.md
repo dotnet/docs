@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 5c66ac57-d751-4de5-af9f-26ceb949af8b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # PFN_CLRDataCreateInstance Function Pointer
 Points to a function that creates an interface object for the specified target item.  
@@ -35,7 +33,7 @@ typedef HRESULT (STDAPICALLTYPE* PFN_CLRDataCreateInstance) (
  [in] The identifier of the interface to be instantiated.  
   
  `target`  
- [in] A pointer to a user-implemented [ICLRDataTarget](../../../../docs/framework/unmanaged-api/debugging/iclrdatatarget-interface.md) object that represents the target item for which to create the interface object.  
+ [in] A pointer to a user-implemented [ICLRDataTarget](iclrdatatarget-interface.md) object that represents the target item for which to create the interface object.  
   
  `iface`  
  [out] A pointer to the address of the returned interface object.  
@@ -54,4 +52,4 @@ typedef HRESULT (STDAPICALLTYPE* PFN_CLRDataCreateInstance) (
   
 ## See also
 
-- [Debugging Global Static Functions](../../../../docs/framework/unmanaged-api/debugging/debugging-global-static-functions.md)
+- [Debugging Global Static Functions](debugging-global-static-functions.md)

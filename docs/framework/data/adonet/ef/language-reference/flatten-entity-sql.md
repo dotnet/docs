@@ -8,7 +8,7 @@ Converts a collection of collections into a flattened collection. The new collec
   
 ## Syntax  
   
-```  
+```sql  
 FLATTEN ( collection )  
 ```  
   
@@ -26,7 +26,7 @@ FLATTEN ( collection )
   
 2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
   
- [!code-csharp[DP EntityServices Concepts 2#FLATTEN](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#flatten)]  
+ [!code-sql[DP EntityServices Concepts#FLATTEN](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#flatten)]  
   
 ## See also
 

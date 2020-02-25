@@ -24,7 +24,7 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[-baseaddress](baseaddress-compiler-option.md)|Specifies the base address for the library to be built.|
 |[-bugreport](bugreport-compiler-option.md)|Creates a 'Bug Report' file. This file will be sent together with any crash information if it is used with -errorreport:prompt or -errorreport:send.|
 |[-checked](checked-compiler-option.md)|Causes the compiler to generate overflow checks.|
-|-checksumalgorithm:\<alg>|Specifies the algorithm for calculating the source file checksum stored in PDB.  Supported values are: SHA1 (default) or SHA256.<br>Due to collision problems with SHA1, Microsoft recommends SHA256. |
+|-checksumalgorithm:\<alg>|Specifies the algorithm for calculating the source file checksum stored in PDB.  Supported values are: SHA256 (default) or SHA1.<br>Due to collision problems with SHA1, Microsoft recommends SHA256. |
 |[-codepage](codepage-compiler-option.md)|Specifies the codepage to use when opening source files.|
 |[-debug](debug-compiler-option.md)|Emits debugging information.|
 |[-define](define-compiler-option.md)|Defines conditional compilation symbols.|
@@ -85,5 +85,5 @@ The following compiler options are sorted alphabetically. For a categorical list
 
 - [C# Compiler Options](index.md)
 - [C# Compiler Options Listed by Category](listed-by-category.md)
-- [How to: Set Environment Variables for the Visual Studio Command Line](how-to-set-environment-variables-for-the-visual-studio-command-line.md)
+- [How to set environment variables for the Visual Studio Command Line](how-to-set-environment-variables-for-the-visual-studio-command-line.md)
 - [\<compiler> Element](../../../framework/configure-apps/file-schema/compiler/compiler-element.md)

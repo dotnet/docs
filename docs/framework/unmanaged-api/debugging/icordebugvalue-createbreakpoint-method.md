@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 87af9661-b59d-4077-aabf-d59fb8673602
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugValue::CreateBreakpoint Method
 The `CreateBreakpoint` method is currently not implemented.  

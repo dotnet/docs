@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 86c397c3-81d8-463e-a248-3cbe06c44d9d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess5::EnumerateGCReferences Method
 Gets an enumerator for all objects that are to be garbage-collected in a process.  
@@ -35,7 +33,7 @@ HRESULT EnumerateGCReferences(
  [in] A Boolean value that indicates whether weak references are also to be enumerated. If `enumerateWeakReferences` is `true`, the `ppEnum` enumerator includes both strong references and weak references. If `enumerateWeakReferences` is `false`, the enumerator includes only strong references.  
   
  `ppEnum`  
- [out] A pointer to the address of an [ICorDebugGCReferenceEnum](../../../../docs/framework/unmanaged-api/debugging/icordebuggcreferenceenum-interface.md) that is an enumerator for the objects to be garbage-collected.  
+ [out] A pointer to the address of an [ICorDebugGCReferenceEnum](icordebuggcreferenceenum-interface.md) that is an enumerator for the objects to be garbage-collected.  
   
 ## Remarks  
  This method provides a way to determine the full rooting chain for any managed object in a process and can be used to determine why an object is still alive.  
@@ -51,5 +49,5 @@ HRESULT EnumerateGCReferences(
   
 ## See also
 
-- [ICorDebugProcess5 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess5-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugProcess5 Interface](icordebugprocess5-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

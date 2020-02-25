@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 6c1d15c1-a80a-4ee9-b1e4-6e859db6575a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostAutoEvent Interface
 Provides a representation of the host's implementation of an auto-reset event.  

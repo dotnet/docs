@@ -3,8 +3,6 @@ title: "XML Processing Options"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: 33ced8ee-1745-4e71-8dee-ebe70ec067c7
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # XML Processing Options
 See the following tables for a list of Microsoft technologies you can use to process XML data.  
@@ -13,7 +11,7 @@ See the following tables for a list of Microsoft technologies you can use to pro
   
 |**Option**|**Processing type**|**Description**|  
 |----------------|-------------------------|---------------------|  
-|[LINQ to XML (C#)](../../../csharp/programming-guide/concepts/linq/linq-to-xml.md) <br/> [LINQ to XML (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/linq-to-xml.md) <br />(<xref:System.Xml.Linq> namespace)|In-memory|-   Based on the .NET Framework Language-Integrated Query (LINQ) technology.<br />-   Provides query experience that is similar to SQL for objects, relational data, and XML data.<br />-   Provides intuitive document creation and transformation capabilities.<br />-   Use this option if you're writing new code.|  
+|[LINQ to XML (C#)](../../../csharp/programming-guide/concepts/linq/linq-to-xml-overview.md) <br/> [LINQ to XML (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/linq-to-xml.md) <br />(<xref:System.Xml.Linq> namespace)|In-memory|-   Based on the .NET Framework Language-Integrated Query (LINQ) technology.<br />-   Provides query experience that is similar to SQL for objects, relational data, and XML data.<br />-   Provides intuitive document creation and transformation capabilities.<br />-   Use this option if you're writing new code.|  
 |<xref:System.Xml.XmlReader?displayProperty=nameWithType>|Stream-based|-   Provides a fast, non-cached, forward-only way to access XML data.<br />-   You can create objects by using the <xref:System.Xml.XmlReader.Create%2A?displayProperty=nameWithType> method, and specify the set of features to enable on the object by using the <xref:System.Xml.XmlReaderSettings> class.|  
 |<xref:System.Xml.XmlWriter?displayProperty=nameWithType>|Stream-based|-   Provides a fast, non-cached, forward-only way to generate XML data.<br />-   You can create objects by using the <xref:System.Xml.XmlWriter.Create%2A?displayProperty=nameWithType> method, and specify the set of features to enable on the object by using the <xref:System.Xml.XmlWriterSettings> class.|  
 |<xref:System.Xml.XmlDocument?displayProperty=nameWithType>|In-memory|-   Implements the [W3C Document Object Model (DOM) Level 1 Core](https://www.w3.org/TR/REC-DOM-Level-1/level-one-core.html) and [DOM Level 2 Core](https://www.w3.org/TR/DOM-Level-2-Core/) recommendations.<br />-   You can create, insert, remove, and modify nodes by using methods and properties based on the familiar DOM model.<br />-   Use this option if you're modifying existing code that utilizes the W3C DOM.|  

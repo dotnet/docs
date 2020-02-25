@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 25ca7623-5a55-4f09-b44a-36b03d142278
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataAssemblyImport::GetExportedTypeProps Method
 Gets the set of properties of the exported type with the specified metadata signature.  

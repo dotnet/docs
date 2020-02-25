@@ -20,7 +20,7 @@ Before administrators can deploy Windows Presentation Foundation (WPF) applicati
 > [!NOTE]
 > This script is designed for Internet Explorer. Other browsers may not include .NET CLR information in the UserAgent string.  
   
-```  
+```html  
 <HTML>  
   <HEAD>  
     <TITLE>Test for the .NET Framework 3.5</TITLE>  

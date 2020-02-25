@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 4ee8d058-ffc8-4967-9133-a5adfef4e518
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugInternalFrame2::GetFrameAddress Method
 Returns the stack address of the internal frame.  
@@ -54,6 +52,6 @@ HRESULT GetFrameAddress([out] CORDB_ADDRESS *pAddress);
   
 ## See also
 
-- [ICorDebugInternalFrame2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebuginternalframe2-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [ICorDebugInternalFrame2 Interface](icordebuginternalframe2-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

@@ -37,7 +37,7 @@ The following code example demonstrates the use of these values.
 
 Output:
 
-```
+```console
 Line: 4
 Source Directory: C:\Users\username\Documents\Visual Studio 2017\Projects\SourceInfo\SourceInfo
 Source File: Program.fs

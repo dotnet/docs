@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "parsing text with regular expressions, threads"
   - "pattern-matching with regular expressions, threads"
 ms.assetid: 7c4a167b-5236-4cde-a2ca-58646230730f
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Thread Safety in Regular Expressions
 The <xref:System.Text.RegularExpressions.Regex> class itself is thread safe and immutable (read-only). That is, **Regex** objects can be created on any thread and shared between threads; matching methods can be called from any thread and never alter any global state.  

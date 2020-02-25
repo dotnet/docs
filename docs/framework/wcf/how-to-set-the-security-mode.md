@@ -16,11 +16,11 @@ Windows Communication Foundation (WCF) security has three common security modes 
 
 Note that not every predefined binding supports all of these modes. This topic sets the mode with the <xref:System.ServiceModel.WSHttpBinding> and <xref:System.ServiceModel.NetTcpBinding> classes and demonstrates how to set the mode both programmatically and through configuration.
 
-For more information, see WCF security, see [Security Overview](../../../docs/framework/wcf/feature-details/security-overview.md), [Securing Services](../../../docs/framework/wcf/securing-services.md), and [Securing Services and Clients](../../../docs/framework/wcf/feature-details/securing-services-and-clients.md). For more information about transport mode and message, see [Transport Security](../../../docs/framework/wcf/feature-details/transport-security.md) and [Message Security](../../../docs/framework/wcf/feature-details/message-security-in-wcf.md).
+For more information, see WCF security, see [Security Overview](./feature-details/security-overview.md), [Securing Services](securing-services.md), and [Securing Services and Clients](./feature-details/securing-services-and-clients.md). For more information about transport mode and message, see [Transport Security](./feature-details/transport-security.md) and [Message Security](./feature-details/message-security-in-wcf.md).
 
 ## To set the security mode in code
 
-1. Create an instance of the binding class that you are using. For a list of predefined bindings, see [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md). This example creates an instance of the <xref:System.ServiceModel.WSHttpBinding> class.
+1. Create an instance of the binding class that you are using. For a list of predefined bindings, see [System-Provided Bindings](system-provided-bindings.md). This example creates an instance of the <xref:System.ServiceModel.WSHttpBinding> class.
 
 2. Set the `Mode` property of the object returned by the `Security` property.
 
@@ -70,7 +70,7 @@ Setting the mode to one of the three values determines how you set the `ClientCr
 
 ### To set the Mode and ClientCredentialType property in configuration
 
-1. Add an appropriate binding element to the [\<bindings>](../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) element of the configuration file. The following example adds a [\<wsHttpBinding>](../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) element.
+1. Add an appropriate binding element to the [\<bindings>](../configure-apps/file-schema/wcf/bindings.md) element of the configuration file. The following example adds a [\<wsHttpBinding>](../configure-apps/file-schema/wcf/wshttpbinding.md) element.
 
 2. Add a `<binding>` element and set its `name` attribute to an appropriate value.
 
@@ -108,16 +108,16 @@ Setting the mode to one of the three values determines how you set the `ClientCr
 
 When setting the security mode to `TransportWithMessageCredential`, the transport determines the actual mechanism that provides the transport-level security. For example, the HTTP protocol uses Secure Sockets Layer (SSL) over HTTP (HTTPS). Therefore, setting the `ClientCredentialType` property of any transport security object (such as <xref:System.ServiceModel.HttpTransportSecurity>) is ignored.  In other words, you can only set the `ClientCredentialType` of the message security object (for the `WSHttpBinding` binding, the <xref:System.ServiceModel.NonDualMessageSecurityOverHttp> object).
 
-For more information, see [How to: Use Transport Security and Message Credentials](../../../docs/framework/wcf/feature-details/how-to-use-transport-security-and-message-credentials.md).
+For more information, see [How to: Use Transport Security and Message Credentials](./feature-details/how-to-use-transport-security-and-message-credentials.md).
 
 ## See also
 
-- [How to: Configure a Port with an SSL Certificate](../../../docs/framework/wcf/feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)
-- [How to: Use Transport Security and Message Credentials](../../../docs/framework/wcf/feature-details/how-to-use-transport-security-and-message-credentials.md)
-- [Transport Security](../../../docs/framework/wcf/feature-details/transport-security.md)
-- [Message Security](../../../docs/framework/wcf/feature-details/message-security-in-wcf.md)
-- [Security Overview](../../../docs/framework/wcf/feature-details/security-overview.md)
-- [System-Provided Bindings](../../../docs/framework/wcf/system-provided-bindings.md)
-- [\<security>](../../../docs/framework/configure-apps/file-schema/wcf/security-of-wshttpbinding.md)
-- [\<security>](../../../docs/framework/configure-apps/file-schema/wcf/security-of-basichttpbinding.md)
-- [\<security>](../../../docs/framework/configure-apps/file-schema/wcf/security-of-nettcpbinding.md)
+- [How to: Configure a Port with an SSL Certificate](./feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)
+- [How to: Use Transport Security and Message Credentials](./feature-details/how-to-use-transport-security-and-message-credentials.md)
+- [Transport Security](./feature-details/transport-security.md)
+- [Message Security](./feature-details/message-security-in-wcf.md)
+- [Security Overview](./feature-details/security-overview.md)
+- [System-Provided Bindings](system-provided-bindings.md)
+- [\<security>](../configure-apps/file-schema/wcf/security-of-wshttpbinding.md)
+- [\<security>](../configure-apps/file-schema/wcf/security-of-basichttpbinding.md)
+- [\<security>](../configure-apps/file-schema/wcf/security-of-nettcpbinding.md)

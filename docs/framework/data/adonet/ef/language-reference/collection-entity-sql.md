@@ -8,8 +8,8 @@ The COLLECTION keyword is only used in the definition of an inline function. Col
   
 ## Syntax  
   
-```  
-COLLECTION(type_definition)   
+```csharp  
+COLLECTION(type_definition)
 ```  
   
 ## Arguments  

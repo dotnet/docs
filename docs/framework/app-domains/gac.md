@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "global assembly cache, about"
   - "access control lists [.NET Framework]"
 ms.assetid: cf5eacd0-d3ec-4879-b6da-5fd5e4372202
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Global Assembly Cache
 Each computer where the Common Language Runtime is installed has a machine-wide code cache called the Global Assembly Cache. The Global Assembly Cache stores assemblies specifically designated to be shared by several applications on the computer.  
@@ -25,7 +23,7 @@ Each computer where the Common Language Runtime is installed has a machine-wide 
   
 - Use an installer designed to work with the Global Assembly Cache. This is the preferred option for installing assemblies into the Global Assembly Cache.  
   
-- Use a developer tool called the [Global Assembly Cache tool (Gacutil.exe)](../../../docs/framework/tools/gacutil-exe-gac-tool.md), provided by the Windows SDK.  
+- Use a developer tool called the [Global Assembly Cache tool (Gacutil.exe)](../tools/gacutil-exe-gac-tool.md), provided by the Windows SDK.  
   
     > [!NOTE]
     > In deployment scenarios, use Windows Installer to install assemblies into the Global Assembly Cache. Use the Global Assembly Cache tool only in development scenarios, because it does not provide assembly reference counting and other features provided when using the Windows Installer.  
@@ -38,6 +36,6 @@ Each computer where the Common Language Runtime is installed has a machine-wide 
   
 ## See also
 
-- [Assemblies in the Common Language Runtime](../../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)
-- [Working with Assemblies and the Global Assembly Cache](../../../docs/framework/app-domains/working-with-assemblies-and-the-gac.md)
-- [Strong-Named Assemblies](../../../docs/framework/app-domains/strong-named-assemblies.md)
+- [Assemblies in .NET](../../standard/assembly/index.md)
+- [Working with Assemblies and the Global Assembly Cache](working-with-assemblies-and-the-gac.md)
+- [Strong-Named Assemblies](../../standard/assembly/strong-named.md)

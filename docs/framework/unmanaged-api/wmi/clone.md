@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "Clone function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Clone function
 Returns a new object that is a complete clone of the current object.   

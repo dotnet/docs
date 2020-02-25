@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 5f890fdf-d22a-429e-a35f-135273d1a636
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRAssemblyReferenceList Interface
 Manages a list of assemblies that are loaded by the common language runtime (CLR) and not by the host.  

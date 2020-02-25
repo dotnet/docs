@@ -1,5 +1,5 @@
 ---
-title: "How to: Delete a Registry Key in Visual Basic"
+title: "How to: Delete a Registry Key"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.DeleteSetting"
@@ -13,6 +13,7 @@ helpviewer_keywords:
 ms.assetid: ab9aca0e-42b0-4ff7-8ff9-845a4bfdf9f2
 ---
 # How to: Delete a Registry Key in Visual Basic
+
 The <xref:Microsoft.Win32.RegistryKey.DeleteSubKey%28System.String%29> and <xref:Microsoft.Win32.RegistryKey.DeleteSubKey%28System.String%2CSystem.Boolean%29> methods can be used to delete registry keys.  
   
 ## Procedure  
@@ -24,6 +25,7 @@ The <xref:Microsoft.Win32.RegistryKey.DeleteSubKey%28System.String%29> and <xref
      [!code-vb[VbResourceTasks#19](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbResourceTasks/VB/Class1.vb#19)]  
   
 ## Robust Programming  
+
  The `DeleteSubKey` method returns an empty string if the key/value pair does not exist.  
   
  The following conditions may cause an exception:  
@@ -37,6 +39,7 @@ The <xref:Microsoft.Win32.RegistryKey.DeleteSubKey%28System.String%29> and <xref
 - The registry key is read-only (<xref:System.UnauthorizedAccessException>).  
   
 ## .NET Framework Security  
+
  Registry calls fail if either sufficient run-time permissions are not granted (<xref:System.Security.Permissions.RegistryPermission>) or if the user does not have the correct access (as determined by the ACLs) for creating or writing to settings. For example, a local application that has the code access security permission might not have operating system permission.  
   
 ## See also

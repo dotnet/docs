@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 23f38dc1-85e4-4263-9235-2d05bbb6a833
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugILFrame::SetIP Method
 Sets the instruction pointer to the specified offset location in the Microsoft intermediate language (MSIL) code.  
@@ -36,7 +34,7 @@ HRESULT SetIP (
 ## Remarks  
  Calls to `SetIP` immediately invalidate all frames and chains for the current thread. If the debugger needs frame information after a call to `SetIP`, it must perform a new stack trace.  
   
- [ICorDebug](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md) will attempt to keep the stack frame in a valid state. However, even if the frame is in a valid state, there still may be problems such as uninitialized local variables. The caller is responsible for ensuring the coherency of the running program.  
+ [ICorDebug](icordebug-interface.md) will attempt to keep the stack frame in a valid state. However, even if the frame is in a valid state, there still may be problems such as uninitialized local variables. The caller is responsible for ensuring the coherency of the running program.  
   
  On 64-bit platforms, the instruction pointer cannot be moved out of a `catch` or `finally` block. If `SetIP` is called to make such a move on a 64-bit platform, it will return an HRESULT indicating failure.  
   

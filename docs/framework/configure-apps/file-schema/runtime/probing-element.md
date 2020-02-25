@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "container tags, <probing> element"
   - "probing element"
 ms.assetid: 09c80fc9-1ba5-4192-89f7-3a79b2e4b024
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<probing> Element
 Specifies application base subdirectories for the common language runtime to search when loading assemblies.  
@@ -62,7 +60,7 @@ None.
   
 ## See also
 
-- [Runtime Settings Schema](index.md)
-- [Configuration File Schema](../index.md)
-- [Specifying an Assembly's Location](../../specify-assembly-location.md)
-- [How the Runtime Locates Assemblies](../../../deployment/how-the-runtime-locates-assemblies.md)
+- [Runtime settings schema](index.md)
+- [Configuration file schema](../index.md)
+- [Specify an assembly's location](../../../../standard/assembly/location.md)
+- [How the runtime locates assemblies](../../../deployment/how-the-runtime-locates-assemblies.md)

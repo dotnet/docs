@@ -15,7 +15,7 @@ Specifies that the compiler should compile without a reference to the Visual Bas
   
 ## Syntax  
   
-```  
+```console  
 -vbruntime:{ - | + | * | path }  
 ```  
   

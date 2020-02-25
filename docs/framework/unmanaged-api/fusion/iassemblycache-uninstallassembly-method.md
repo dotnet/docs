@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 973b2c44-8dfc-40c1-9035-10f4846627e9
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IAssemblyCache::UninstallAssembly Method
 Uninstalls the specified assembly from the global assembly cache.  

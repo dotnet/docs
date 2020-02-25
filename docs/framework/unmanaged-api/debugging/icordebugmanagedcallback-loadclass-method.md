@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: e58dac7b-85c3-41ca-b9aa-3a7fc9ae6680
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugManagedCallback::LoadClass Method
 Notifies the debugger that a class has been loaded.  
@@ -53,5 +51,5 @@ HRESULT LoadClass (
   
 ## See also
 
-- [UnloadClass Method](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-unloadclass-method.md)
-- [ICorDebugManagedCallback Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-interface.md)
+- [UnloadClass Method](icordebugmanagedcallback-unloadclass-method.md)
+- [ICorDebugManagedCallback Interface](icordebugmanagedcallback-interface.md)

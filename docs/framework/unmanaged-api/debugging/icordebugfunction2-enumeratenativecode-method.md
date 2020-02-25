@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: d383f5cc-1144-4b6d-b57a-db34d9134ab2
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugFunction2::EnumerateNativeCode Method
 Gets an interface pointer to an ICorDebugCodeEnum object that contains the native code statements in the function referenced by this ICorDebugFunction2 object.  

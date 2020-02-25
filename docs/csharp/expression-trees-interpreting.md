@@ -2,6 +2,8 @@
 title: Interpreting Expressions
 description: Learn how to write code to examine the structure of an expression tree.
 ms.date: 06/20/2016
+ms.technology: csharp-advanced-concepts
+
 ms.assetid: adf73dde-1e52-4df3-9929-2e0670e28e16
 ---
 
@@ -413,6 +415,7 @@ form. In the section on [building expression trees](expression-trees-building.md
 you'll learn techniques to overcome these limitations.
 
 In this expression, you'll encounter nodes of all these types:
+
 1. Equal (binary expression)
 2. Multiply (binary expression)
 3. Conditional (the ? : expression)

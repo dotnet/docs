@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 9a75469e-aa49-4e32-ad48-3bafd5202f09
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # StrongNameSignatureGenerationEx Function
 Generates a strong name signature for the specified assembly, according to the specified flags.  

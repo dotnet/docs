@@ -15,14 +15,14 @@ The example declares a class named `Stack` in a namespace called `Acme.Collectio
 
 The fully qualified name of this class is `Acme.Collections.Stack`. The class contains several members: a field named `top`, two methods named `Push` and `Pop`, and a nested class named `Entry`. The `Entry` class further contains three members: a field named `next`, a field named `data`, and a constructor. Assuming that the source code of the example is stored in the file `acme.cs`, the command line
 
-```
+```console
 csc /t:library acme.cs
 ```
 
 compiles the example as a library (code without a `Main` entry point) and produces an assembly named `acme.dll`.
 
 > [!IMPORTANT]
-> The examples above use `csc` as the command line C# compiler. This compiler is a Windows executable. To use C# across other platforms, you should use the tools for .NET Core. The .NET Core ecosystem uses the `dotnet` CLI to manage command line builds. This includes managing dependencies, and invoking the C# compiler. See [this tutorial](../../core/tutorials/using-with-xplat-cli.md) for a full description of those tools on the platforms supported by .NET Core.
+> The examples above use `csc` as the command line C# compiler. This compiler is a Windows executable. To use C# across other platforms, you should use the tools for .NET Core. The .NET Core ecosystem uses the `dotnet` CLI to manage command line builds. This includes managing dependencies, and invoking the C# compiler. See [this tutorial](../../core/tutorials/cli-create-console-app.md) for a full description of those tools on the platforms supported by .NET Core.
 
 Assemblies contain executable code in the form of Intermediate Language (IL) instructions, and symbolic information in the form of metadata. Before it is executed, the IL code in an assembly is automatically converted to processor-specific code by the Just-In-Time (JIT) compiler of .NET Common Language Runtime.
 
@@ -32,13 +32,13 @@ Because an assembly is a self-describing unit of functionality containing both c
 
 If the program is stored in the file `example.cs`, when `example.cs` is compiled, the acme.dll assembly can be referenced using the compiler’s /r option:
 
-```
+```console
 csc /r:acme.dll example.cs
 ```
 
 This creates an executable assembly named `example.exe`, which, when run, produces the output:
 
-```
+```console
 100
 10
 1

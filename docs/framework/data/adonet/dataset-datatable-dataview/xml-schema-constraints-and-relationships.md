@@ -55,7 +55,7 @@ In an XML Schema definition language (XSD) schema, you can specify constraints (
   
  The **DataSet** that is generated during the XML Schema mapping process includes the **Order** and **OrderDetail** tables. In addition, the **DataSet** includes relationships and constraints. The following example shows these relationships and constraints. Note that the schema does not specify the **msdata:Relationship** annotation; instead, the key and keyref constraints are used to generate the relation.  
   
-```  
+```text
 ....ConstraintName: OrderNumberKey  
 ....Type: UniqueConstraint  
 ....Table: Order  
@@ -125,14 +125,14 @@ In an XML Schema definition language (XSD) schema, you can specify constraints (
   
  The **DataSet** resulting from the XML Schema mapping process includes two tables:  
   
-```  
+```text  
 Order(OrderNumber, EmpNumber, Order_Id)  
 OrderDetail(OrderNumber, ItemNumber, Order_Id)  
 ```  
   
  The **DataSet** also includes the two relationships (one based on the **msdata:relationship** annotation and the other based on the key and keyref constraints) and various constraints. The following example shows the relations and constraints.  
   
-```  
+```text
 ..RelationName: Order_OrderDetail  
 ..ParentTable: Order  
 ..ParentColumns: Order_Id  

@@ -6,6 +6,7 @@ f1_keywords:
 ms.assetid: 8e04af49-4bef-49de-a7ec-e407e9873da7
 ---
 # A startup form has not been specified
+
 The application uses the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase> class but does not specify the startup form.  
   
  This can occur if the **Enable application framework** check box is selected in the project designer but the **Startup form** is not specified. For more information, see [Application Page, Project Designer (Visual Basic)](/visualstudio/ide/reference/application-page-project-designer-visual-basic).  

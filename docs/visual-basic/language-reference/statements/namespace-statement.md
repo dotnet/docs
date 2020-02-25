@@ -1,5 +1,5 @@
 ---
-title: "Namespace Statement (Visual Basic)"
+title: "Namespace Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Namespace"

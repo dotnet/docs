@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 3f1b6bc4-6efb-4b90-8be0-b1ba8d856ca0
 topic_type:
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # ITypeNameBuilder::AddByRef Method

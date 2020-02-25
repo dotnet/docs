@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "object activation"
   - "registration-free COM interop, about registration-free COM interop"
 ms.assetid: 90f308b9-82dc-414a-bce1-77e0155e56bd
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Registration-Free COM Interop
 Registration-free COM interop activates a component without using the Windows registry to store assembly information. Instead of registering a component on a computer during deployment, you create Win32-style manifest files at design time that contain information about binding and activation. These manifest files, rather than registry keys, direct the activation of an object.  
@@ -50,4 +48,4 @@ Registration-free COM interop activates a component without using the Windows re
   
 ## See also
 
-- [How to: Configure .NET Framework-Based COM Components for Registration-Free Activation](../../../docs/framework/interop/configure-net-framework-based-com-components-for-reg.md)
+- [How to: Configure .NET Framework-Based COM Components for Registration-Free Activation](configure-net-framework-based-com-components-for-reg.md)

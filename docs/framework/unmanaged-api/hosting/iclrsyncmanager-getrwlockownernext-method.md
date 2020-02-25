@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 0e025b6a-280e-40a2-a2d0-b15f58777b81
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRSyncManager::GetRWLockOwnerNext Method
 Gets the next [IHostTask](../../../../docs/framework/unmanaged-api/hosting/ihosttask-interface.md) instance that is blocked on the current reader-writer lock.  

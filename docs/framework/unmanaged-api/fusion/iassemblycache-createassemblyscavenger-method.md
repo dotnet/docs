@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: e8bb98f1-e477-45d2-8956-ba404137cd2d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IAssemblyCache::CreateAssemblyScavenger Method
 Reserved for internal use by the fusion technology.  

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 97c2d7a6-5376-45a1-ba65-146a249147cc
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetHashFromFileW Function
 Generates a hash over the contents of the file specified by a Unicode string.  

@@ -95,7 +95,7 @@ module BananaHelpers =
     let peel (b: Banana) =
         let flip (banana: Banana) =
             match banana.Orientation with
-            | Up -> 
+            | Up ->
                 banana.Orientation <- Down
                 banana
             | Down -> banana

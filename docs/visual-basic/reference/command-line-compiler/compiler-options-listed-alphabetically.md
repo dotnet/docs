@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic Compiler Options Listed Alphabetically"
+title: "Compiler Options Listed Alphabetically"
 ms.date: 04/12/2018
 helpviewer_keywords: 
   - "Visual Basic compiler, options"
@@ -51,7 +51,7 @@ The Visual Basic command-line compiler is provided as an alternative to compilin
 |[-optioninfer](../../../visual-basic/reference/command-line-compiler/optioninfer.md)|Enables the use of local type inference in variable declarations.|  
 |[-optionstrict](../../../visual-basic/reference/command-line-compiler/optionstrict.md)|Enforces strict language semantics.|  
 |[-out](../../../visual-basic/reference/command-line-compiler/out.md)|Specifies an output file.|  
-|`-parallel[+&#124;-]`|Specifies whether to use concurrent build (+).|  
+|<code>-parallel[+&#124;-]</code>|Specifies whether to use concurrent build (+).|  
 |[-platform](../../../visual-basic/reference/command-line-compiler/platform.md)|Specifies the processor platform the compiler targets for the output file.|  
 |`-preferreduilang`|Specify the preferred output language name.|  
 |[-quiet](../../../visual-basic/reference/command-line-compiler/quiet.md)|Prevents the compiler from displaying code for syntax-related errors and warnings.|  
@@ -77,4 +77,4 @@ The Visual Basic command-line compiler is provided as an alternative to compilin
 ## See also
 
 - [Visual Basic Compiler Options Listed by Category](../../../visual-basic/reference/command-line-compiler/compiler-options-listed-by-category.md)
-- [Manage project and solution properties](/visualstudio/ide/managing-project-and-solution-properties?view=vs-2017)
+- [Manage project and solution properties](/visualstudio/ide/managing-project-and-solution-properties)

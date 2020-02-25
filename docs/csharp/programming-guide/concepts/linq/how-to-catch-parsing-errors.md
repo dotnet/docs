@@ -1,9 +1,9 @@
 ---
-title: "How to: Catch Parsing Errors (C#)"
+title: "How to catch parsing errors (C#)"
 ms.date: 07/20/2015
 ms.assetid: bfb612d4-5605-48ef-8c93-915cf9d5dcfb
 ---
-# How to: Catch Parsing Errors (C#)
+# How to catch parsing errors (C#)
 This topic shows how to detect badly formed or invalid XML.  
   
  [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] is implemented using <xref:System.Xml.XmlReader>. If badly formed or invalid XML is passed to [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)], the underlying <xref:System.Xml.XmlReader> class will throw an exception. The various methods that parse XML, such as <xref:System.Xml.Linq.XElement.Parse%2A?displayProperty=nameWithType>, do not catch the exception; the exception can then be caught by your application.  

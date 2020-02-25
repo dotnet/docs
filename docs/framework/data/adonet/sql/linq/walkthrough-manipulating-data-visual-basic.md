@@ -162,7 +162,7 @@ This walkthrough provides a fundamental end-to-end [!INCLUDE[vbtecdlinq](../../.
   
      The console window appears as follows:  
   
-    ```  
+    ```console
     Customers matching CA before update:  
     Customer ID: CACTU  
     Customer ID: RICAR  

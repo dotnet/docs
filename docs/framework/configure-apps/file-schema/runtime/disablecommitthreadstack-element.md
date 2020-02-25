@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "<disableCommitThreadStack> element"
   - "disableCommitThreadStack element"
 ms.assetid: 3559d46a-7640-4c72-9a11-7e980768929e
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<disableCommitThreadStack> Element
 Specifies whether the full thread stack is committed when a thread is started.  

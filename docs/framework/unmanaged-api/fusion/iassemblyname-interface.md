@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: f7f8e605-6b67-4151-936f-f04ecd671d90
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IAssemblyName Interface
 Provides methods for describing and working with an assembly's unique identity.  

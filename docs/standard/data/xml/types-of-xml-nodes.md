@@ -3,8 +3,6 @@ title: "Types of XML Nodes"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: 71d03b78-6898-4ce7-b0fc-1282573f31f7
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Types of XML Nodes
 When an XML document is read into memory as a tree of nodes, the node types for the nodes are decided when the nodes are created. The XML Document Object Model (DOM) has several kinds of node types, determined by the World Wide Web Consortium (W3C) and listed in section 1.1.1 The DOM Structure Model. The following table lists the node types, the object assigned to that node type, and a short description of each.  

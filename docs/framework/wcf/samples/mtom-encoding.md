@@ -11,7 +11,7 @@ This sample demonstrates the use of the Message Transmission Optimization Mechan
 >   
 > `<InstallDrive>:\WF_WCF_Samples`  
 >   
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\WS\MTOM`  
   
@@ -36,7 +36,7 @@ This sample demonstrates the use of the Message Transmission Optimization Mechan
   
  The contract chosen for this sample transmits binary data to the service and receives the number of bytes uploaded as the return value. When the service is installed and the client is run, it prints out the number 1000, which indicates that all 1000 bytes were received. The remainder of the output lists optimized and non-optimized message sizes for various payloads.  
   
-```  
+```console
 Output:  
 1000  
   
@@ -64,7 +64,7 @@ Press <ENTER> to terminate client.
   
 1. Install ASP.NET 4.0 using the following command.  
   
-    ```  
+    ```console
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
     ```  
   

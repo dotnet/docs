@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 966da50d-5665-4fff-bf7b-1c72bbadd9a4
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugVariableHome::GetSlotIndex Method
 Gets the managed slot-index of a local variable.  
@@ -39,7 +37,7 @@ HRESULT GetSlotIndex(
 |Value|Description|  
 |-----------|-----------------|  
 |`S_OK`|The method call returned a slot-index value in `pSlotIndex`.|  
-|`E_FAIL`|The current [ICorDebugVariableHome](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-interface.md) instance represents a function argument.|  
+|`E_FAIL`|The current [ICorDebugVariableHome](icordebugvariablehome-interface.md) instance represents a function argument.|  
   
 ## Remarks  
  The slot-index can be used to retrieve the metadata for this local variable.  
@@ -55,4 +53,4 @@ HRESULT GetSlotIndex(
   
 ## See also
 
-- [ICorDebugVariableHome Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-interface.md)
+- [ICorDebugVariableHome Interface](icordebugvariablehome-interface.md)

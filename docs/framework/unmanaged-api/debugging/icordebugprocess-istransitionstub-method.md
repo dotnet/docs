@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: f7653317-7e48-4163-be03-f50f1a4b0f70
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess::IsTransitionStub Method
 Gets a value that indicates whether an address is inside a stub that will cause a transition to managed code.  

@@ -28,5 +28,5 @@ Some C# compiler errors have corresponding topics that explain why the error is 
 - [C# Compiler Options](../compiler-options/index.md)
 - [Sorry, we don't have specifics on this C# error](../../misc/sorry-we-don-t-have-specifics-on-this-csharp-error.md)
 - [Build Page, Project Designer (C#)](/visualstudio/ide/reference/build-page-project-designer-csharp)
-- [/warn (C# Compiler Options)](../compiler-options/warn-compiler-option.md)
-- [/nowarn (C# Compiler Options)](../compiler-options/nowarn-compiler-option.md)
+- [-warn (C# Compiler Options)](../compiler-options/warn-compiler-option.md)
+- [-nowarn (C# Compiler Options)](../compiler-options/nowarn-compiler-option.md)

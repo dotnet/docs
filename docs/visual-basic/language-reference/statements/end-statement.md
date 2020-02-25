@@ -1,5 +1,5 @@
 ---
-title: "End Statement (Visual Basic)"
+title: "End Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.End"
@@ -20,7 +20,7 @@ Terminates execution immediately.
   
 ## Syntax  
   
-```  
+```vb  
 End  
 ```  
   

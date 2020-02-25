@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 02468edf-d32b-4cb3-aaa8-3dd2abfc8b25
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEval2::RudeAbort Method
 Aborts the computation that this `ICorDebugEval2` is currently performing.  

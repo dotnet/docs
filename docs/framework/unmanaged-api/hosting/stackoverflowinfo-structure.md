@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 519389f2-0217-436c-99d4-93a76ebce5b5
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # StackOverflowInfo Structure
 Stores the type of overflow that occurred and information on the exception that was thrown due to the overflow.  

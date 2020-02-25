@@ -1,5 +1,5 @@
 ---
-title: "LINQ to XML vs. DOM (Visual Basic)"
+title: "LINQ to XML vs. DOM"
 ms.date: 07/20/2015
 ms.assetid: 18c36130-d598-40b7-9007-828232252978
 ---

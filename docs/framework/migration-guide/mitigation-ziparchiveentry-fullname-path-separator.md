@@ -8,8 +8,6 @@ helpviewer_keywords:
   - ".NET Framework 4.6.1 retargeting changes"
   - "retargeting changes"
 ms.assetid: 8d575722-4fb6-49a2-8a06-f72d62dc3766
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Mitigation: ZipArchiveEntry.FullName Path Separator
 Starting with apps that target the .NET Framework 4.6.1, the path separator used in the <xref:System.IO.Compression.ZipArchiveEntry.FullName%2A?displayProperty=nameWithType> property has changed from the backslash ("\\") used in previous versions of the .NET Framework to a forward slash ("/").   <xref:System.IO.Compression.ZipArchiveEntry?displayProperty=nameWithType> objects are created by calling one of the overloads of the <xref:System.IO.Compression.ZipFile.CreateFromDirectory%2A?displayProperty=nameWithType> method.  
@@ -41,4 +39,4 @@ Starting with apps that target the .NET Framework 4.6.1, the path separator used
 ## See also
 
 - [Retargeting Changes](retargeting-changes-in-the-net-framework-4-6-1.md)
-- [Application Compatibility in 4.6.1](application-compatibility-in-the-net-framework-4-6-1.md)
+- [Application compatibility](application-compatibility.md)

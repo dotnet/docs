@@ -12,7 +12,7 @@ helpviewer_keywords:
 ms.assetid: 674eae9e-bc72-4a88-aed3-802b45b25811
 ---
 # Data Transformations with LINQ (C#)
-[!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] is not only about retrieving data. It is also a powerful tool for transforming data. By using a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query, you can use a source sequence as input and modify it in many ways to create a new output sequence. You can modify the sequence itself without modifying the elements themselves by sorting and grouping. But perhaps the most powerful feature of [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] queries is the ability to create new types. This is accomplished in the [select](../../../language-reference/keywords/select-clause.md) clause. For example, you can perform the following tasks:  
+Language-Integrated Query (LINQ) is not only about retrieving data. It is also a powerful tool for transforming data. By using a LINQ query, you can use a source sequence as input and modify it in many ways to create a new output sequence. You can modify the sequence itself without modifying the elements themselves by sorting and grouping. But perhaps the most powerful feature of LINQ queries is the ability to create new types. This is accomplished in the [select](../../../language-reference/keywords/select-clause.md) clause. For example, you can perform the following tasks:  
   
 - Merge multiple input sequences into a single output sequence that has a new type.  
   
@@ -25,7 +25,7 @@ ms.assetid: 674eae9e-bc72-4a88-aed3-802b45b25811
  These are just several examples. Of course, these transformations can be combined in various ways in the same query. Furthermore, the output sequence of one query can be used as the input sequence for a new query.  
   
 ## Joining Multiple Inputs into One Output Sequence  
- You can use a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query to create an output sequence that contains elements from more than one input sequence. The following example shows how to combine two in-memory data structures, but the same principles can be applied to combine data from XML or SQL or DataSet sources. Assume the following two class types:  
+ You can use a LINQ query to create an output sequence that contains elements from more than one input sequence. The following example shows how to combine two in-memory data structures, but the same principles can be applied to combine data from XML or SQL or DataSet sources. Assume the following two class types:  
   
  [!code-csharp[CsLINQGettingStarted#7](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#7)]  
   
@@ -55,7 +55,7 @@ ms.assetid: 674eae9e-bc72-4a88-aed3-802b45b25811
  For more information, see [Object and Collection Initializers](../../classes-and-structs/object-and-collection-initializers.md) and [Anonymous Types](../../classes-and-structs/anonymous-types.md).  
   
 ## Transforming in-Memory Objects into XML  
- [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] queries make it easy to transform data between in-memory data structures, SQL databases, ADO.NET Datasets and XML streams or documents. The following example transforms objects in an in-memory data structure into XML elements.  
+ LINQ queries make it easy to transform data between in-memory data structures, SQL databases, ADO.NET Datasets and XML streams or documents. The following example transforms objects in an in-memory data structure into XML elements.  
   
  [!code-csharp[CsLINQGettingStarted#9](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsLINQGettingStarted/CS/Class1.cs#9)]  
   
@@ -97,5 +97,5 @@ ms.assetid: 674eae9e-bc72-4a88-aed3-802b45b25811
 - [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)
 - [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md)
 - [LINQ to XML (C#)](./linq-to-xml-overview.md)
-- [LINQ Query Expressions](../../linq-query-expressions/index.md)
+- [LINQ Query Expressions](../../../linq/index.md)
 - [select clause](../../../language-reference/keywords/select-clause.md)

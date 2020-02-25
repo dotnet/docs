@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 41af93c7-e448-4251-8d4d-413d38c635f2
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugRemote::CreateProcessEx Method
 Launches a process on a remote machine under the debugger.  
@@ -43,7 +41,7 @@ HRESULT CreateProcessEx (
   
 ## Parameters  
  `pRemoteTarget`  
- [in] Pointer to an [ICorDebugRemoteTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremotetarget-interface.md). Used to determine the remote machine on which the process will be launched.  
+ [in] Pointer to an [ICorDebugRemoteTarget Interface](icordebugremotetarget-interface.md). Used to determine the remote machine on which the process will be launched.  
   
  `lpApplicationName`  
  [in] Pointer to a null-terminated string that specifies the module to be executed by the launched process. The module is executed in the security context of the calling process.  
@@ -102,7 +100,7 @@ HRESULT CreateProcessEx (
   
 ## See also
 
-- [ICorDebugRemote Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremote-interface.md)
-- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
+- [ICorDebugRemote Interface](icordebugremote-interface.md)
+- [ICorDebug Interface](icordebug-interface.md)
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

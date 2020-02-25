@@ -1,5 +1,5 @@
 ---
-title: "GetType Operator (Visual Basic)"
+title: "GetType Operator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.GetType"
@@ -13,7 +13,7 @@ Returns a <xref:System.Type> object for the specified type. The <xref:System.Typ
   
 ## Syntax  
   
-```  
+```vb  
 GetType(typename)  
 ```  
   

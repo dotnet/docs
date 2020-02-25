@@ -29,7 +29,7 @@ Generally, class constructors should not call callbacks such as virtual methods 
   
  The following example code (and subsequent examples) is a pseudo-C# example that violates this rule and explains the problem:  
   
-```  
+```csharp  
 public class MyClass : DependencyObject  
 {  
     public MyClass() {}  
@@ -65,7 +65,7 @@ public class MyClass : DependencyObject
 #### Parameterless constructors calling base initialization  
  Implement these constructors calling the base default:  
   
-```  
+```csharp  
 public MyClass : SomeBaseClass {  
     public MyClass() : base() {  
         // ALL class initialization, including initial defaults for   
@@ -77,7 +77,7 @@ public MyClass : SomeBaseClass {
 #### Non-default (convenience) constructors, not matching any base signatures  
  If these constructors use the parameters to set dependency properties in the initialization, first call your own class parameterless constructor for initialization, and then use the parameters to set dependency properties. These could either be dependency properties defined by your class, or dependency properties inherited from base classes, but in either case use the following pattern:  
   
-```  
+```csharp  
 public MyClass : SomeBaseClass {  
     public MyClass(object toSetProperty1) : this() {  
         // Class initialization NOT done by default.  
@@ -90,7 +90,7 @@ public MyClass : SomeBaseClass {
 #### Non-default (convenience) constructors, which do match base signatures  
  Instead of calling the base constructor with the same parameterization, again call your own class' parameterless constructor. Do not call the base initializer; instead you should call `this()`. Then reproduce the original constructor behavior by using the passed parameters as values for setting the relevant properties. Use the original base constructor documentation for guidance in determining the properties that the particular parameters are intended to set:  
   
-```  
+```csharp  
 public MyClass : SomeBaseClass {  
     public MyClass(object toSetProperty1) : this() {  
         // Class initialization NOT done by default.  

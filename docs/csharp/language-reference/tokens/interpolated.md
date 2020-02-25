@@ -1,6 +1,5 @@
 ---
 title: "$ - string interpolation - C# reference"
-ms.custom: seodec18
 description: String interpolation provides a more readable and convenient syntax to format string output than traditional string composite formatting.
 ms.date: 09/02/2019
 f1_keywords: 
@@ -11,7 +10,6 @@ helpviewer_keywords:
   - "string interpolation [C#]"
   - "interpolated string [C#]"
 author: pkulikov
-ms.author: ronpet
 ---
 # $ - string interpolation (C# reference)
 
@@ -53,7 +51,7 @@ The following example shows how to include a brace in a result string and how to
 
 [!code-csharp-interactive[example with ternary conditional operator](~/samples/snippets/csharp/language-reference/tokens/string-interpolation.cs#3)]
 
-An interpolated verbatim string starts with the `$` character followed by the `@` character. For more information about verbatim strings, see the [string](../keywords/string.md) and [verbatim identifier](verbatim.md) topics.
+An interpolated verbatim string starts with the `$` character followed by the `@` character. For more information about verbatim strings, see the [string](../builtin-types/reference-types.md) and [verbatim identifier](verbatim.md) topics.
 
 > [!NOTE]
 > Starting with C# 8.0, you can use the `$` and `@` tokens in any order: both `$@"..."` and `@$"..."` are valid interpolated verbatim strings. In earlier C# versions, the `$` token must appear before the `@` token.
@@ -97,6 +95,6 @@ For more information, see the [Interpolated strings](~/_csharplang/spec/expressi
 - [C# reference](../index.md)
 - [C# special characters](index.md)
 - [Strings](../../programming-guide/strings/index.md)
-- [Formatting numeric results table](../keywords/formatting-numeric-results-table.md)
+- [Standard numeric format strings](../../../standard/base-types/standard-numeric-format-strings.md)
 - [Composite formatting](../../../standard/base-types/composite-formatting.md)
 - <xref:System.String.Format%2A?displayProperty=nameWithType>

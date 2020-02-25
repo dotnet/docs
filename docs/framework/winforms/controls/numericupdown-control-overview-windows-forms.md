@@ -1,5 +1,5 @@
 ---
-title: "NumericUpDown Control Overview (Windows Forms)"
+title: "NumericUpDown Control Overview"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "NumericUpDown"

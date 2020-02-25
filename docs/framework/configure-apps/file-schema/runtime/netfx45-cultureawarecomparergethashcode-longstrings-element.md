@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "GetHashCode method"
   - "hash codes, calculating"
 ms.assetid: 3a5f38d1-ebc8-44de-aaeb-2929f6e6b48f
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<NetFx45_CultureAwareComparerGetHashCode_LongStrings> Element
 
@@ -57,7 +55,7 @@ None.
 By default, the common language runtime allocates a variable amount of memory for the <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType> method, and an <xref:System.ArgumentException> can be thrown when the method attempts to compute the hash code of very large strings (over several million characters long). By adding this element to an application configuration file and setting its `enabled` attribute to "1", you can specify that the <xref:System.StringComparer.GetHashCode%2A?displayProperty=nameWithType> method use an alternate algorithm that allocates a fixed amount of memory for the computation of hash codes.
 
 > [!IMPORTANT]
-> The `<NetFx45_CultureAwareComparerGetHashCode_LongStrings>` element is not used in [!INCLUDE[win8](../../../../../includes/win8-md.md)] and later versions.
+> The `<NetFx45_CultureAwareComparerGetHashCode_LongStrings>` element is not used in Windows 8 and later versions.
 
 ## See also
 

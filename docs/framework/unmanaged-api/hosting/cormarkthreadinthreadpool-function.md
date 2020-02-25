@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 3f958d41-e82e-4ec3-ae6f-16c7b3b31e3e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorMarkThreadInThreadPool Function
 Marks the currently executing thread-pool thread for the execution of managed code. Starting with the .NET Framework version 2.0, this function has no effect. It is not required, and can be removed from your code. This function is deprecated in the .NET Framework 4.  

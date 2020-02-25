@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "time [.NET Framework], round-trip values"
   - "formatting strings [.NET Framework], round-trip values"
 ms.assetid: b609b277-edc6-4c74-b03e-ea73324ecbdb
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Round-trip Date and Time Values
 

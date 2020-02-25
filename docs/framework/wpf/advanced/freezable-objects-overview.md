@@ -65,7 +65,7 @@ A Freezable **can't** be frozen if any of the following are true:
 
 - It has animated or data bound properties.
 
-- It has properties set by a dynamic resource. (See the [XAML Resources](xaml-resources.md) for more information about dynamic resources.)
+- It has properties set by a dynamic resource. (See the [XAML Resources](../../../desktop-wpf/fundamentals/xaml-resources-define.md) for more information about dynamic resources.)
 
 - It contains <xref:System.Windows.Freezable> sub-objects that can't be frozen.
 
@@ -94,13 +94,13 @@ To freeze a <xref:System.Windows.Freezable> object declared in markup, you use t
 
 To use the `Freeze` attribute, you must map to the presentation options namespace: `http://schemas.microsoft.com/winfx/2006/xaml/presentation/options`. `PresentationOptions` is the recommended prefix for mapping this namespace:
 
-```
+```xaml
 xmlns:PresentationOptions="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
 ```
 
 Because not all XAML readers recognize this attribute, it's recommended that you use the [mc:Ignorable Attribute](mc-ignorable-attribute.md) to mark the `Presentation:Freeze` attribute as ignorable:
 
-```
+```xaml
 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 mc:Ignorable="PresentationOptions"
 ```
@@ -164,11 +164,11 @@ If your class contains non-dependency-property data members that are <xref:Syste
 > [!NOTE]
 > It's very important that you begin each <xref:System.Windows.Freezable> method you override with a call to the base implementation.
 
-For an example of a custom <xref:System.Windows.Freezable> class, see the [Custom Animation Sample](https://go.microsoft.com/fwlink/?LinkID=159981).
+For an example of a custom <xref:System.Windows.Freezable> class, see the [Custom Animation Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Animation/CustomAnimation).
 
 ## See also
 
 - <xref:System.Windows.Freezable>
-- [Custom Animation Sample](https://go.microsoft.com/fwlink/?LinkID=159981)
+- [Custom Animation Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Animation/CustomAnimation)
 - [Dependency Properties Overview](dependency-properties-overview.md)
 - [Custom Dependency Properties](custom-dependency-properties.md)

@@ -28,5 +28,5 @@ This example shows how to set up to be notified when the binding target (target)
   
 ## See also
 
-- [Data Binding Overview](data-binding-overview.md)
+- [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md)
 - [How-to Topics](data-binding-how-to-topics.md)

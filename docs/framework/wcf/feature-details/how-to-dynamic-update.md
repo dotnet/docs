@@ -157,9 +157,10 @@ This topic outlines the basic steps required to create and dynamically update th
     > Since the method for providing a new RoutingConfiguration is contained in the RoutingExtension service extension, new RoutingConfiguration objects can be provided anywhere in the WCF extensibility model that has or can obtain a reference to the ServiceHost or ServiceExtensions (such as in another ServiceExtension).
   
 ## Example  
- Following is a complete listing of the console application used in this example.  
+
+The following is a complete listing of the console application used in this example:
   
-```  
+```csharp
 //-----------------------------------------------------------------  
 //  Copyright (c) Microsoft Corporation.  All Rights Reserved.  
 //-----------------------------------------------------------------  
@@ -235,7 +236,8 @@ namespace Microsoft.Samples.AdvancedFilters
 ```  
   
 ## Example  
- Following is a complete listing of the configuration file used in this example.  
+ 
+The following is a complete listing of the configuration file used in this example:
   
 ```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
@@ -292,4 +294,4 @@ namespace Microsoft.Samples.AdvancedFilters
   
 ## See also
 
-- [Routing Services](../../../../docs/framework/wcf/samples/routing-services.md)
+- [Routing Services](../samples/routing-services.md)

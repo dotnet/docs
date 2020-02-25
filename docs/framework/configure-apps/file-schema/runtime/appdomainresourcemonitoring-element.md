@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "appDomainResourceMonitoring element"
   - "<appDomainResourceMonitoring> element"
 ms.assetid: 02119ab6-1e91-448e-97ad-e7b2e5c4bbbd
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<appDomainResourceMonitoring> Element
 Instructs the runtime to collect statistics on all application domains in the process for the life of the process.  

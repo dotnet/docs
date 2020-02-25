@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 94b591c4-9302-4af2-a510-089496afb036
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugClass2::GetParameterizedType Method
 Gets the type declaration for this class.  

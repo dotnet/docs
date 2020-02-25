@@ -1,5 +1,5 @@
 ---
-title: "REM Statement (Visual Basic)"
+title: "REM Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.'"
@@ -19,7 +19,7 @@ Used to include explanatory remarks in the source code of a program.
   
 ## Syntax  
   
-```  
+```vb  
 REM comment  
 ' comment  
 ```  

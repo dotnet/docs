@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 9c5566ab-4ec7-4b61-9753-839bb90ae78c
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymENCUnmanagedMethod::GetSourceExtentInDocument Method
 Gets the smallest start line and largest end line for the method in a specific document.  

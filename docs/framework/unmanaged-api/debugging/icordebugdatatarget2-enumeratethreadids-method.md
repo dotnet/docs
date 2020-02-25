@@ -2,8 +2,6 @@
 title: "ICorDebugDataTarget2::EnumerateThreadIDs Method"
 ms.date: "03/30/2017"
 ms.assetid: af02460f-2a45-496e-bc4e-a1ac4f80fe11
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugDataTarget2::EnumerateThreadIDs Method
 Returns a list of active thread IDs.  
@@ -42,5 +40,5 @@ HRESULT EnumerateThreadIDs(
   
 ## See also
 
-- [ICorDebugDataTarget2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget2-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugDataTarget2 Interface](icordebugdatatarget2-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

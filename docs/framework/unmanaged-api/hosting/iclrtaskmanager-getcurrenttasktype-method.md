@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 6b0d9259-dbe2-45bb-b34d-990f60c73424
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRTaskManager::GetCurrentTaskType Method
 Gets the type of the task that is currently executing.  

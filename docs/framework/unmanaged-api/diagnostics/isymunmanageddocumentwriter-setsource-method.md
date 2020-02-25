@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: ea5b9d9f-ff06-4bd3-8de5-6435343aba59
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedDocumentWriter::SetSource Method
 Sets embedded source for a document that is being written.  

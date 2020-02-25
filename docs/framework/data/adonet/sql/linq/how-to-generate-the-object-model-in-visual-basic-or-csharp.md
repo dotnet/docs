@@ -18,14 +18,14 @@ In [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], an objec
 ## Example  
  The SQLMetal command line shown in the following example produces Visual Basic code as the attribute-based object model of the Northwind sample database. Stored procedures and functions are also rendered.  
   
-```  
+```console  
 sqlmetal /code:northwind.vb /language:vb "c:\northwnd.mdf" /sprocs /functions  
 ```  
   
 ## Example  
  The SQLMetal command line shown in the following example produces C# code as the attribute-based object model of the Northwind sample database. Stored procedures and functions are also rendered, and table names are automatically pluralized.  
   
-```  
+```console  
 sqlmetal /code:northwind.cs /language:csharp "c:\northwnd.mdf" /sprocs /functions /pluralize  
 ```  
   

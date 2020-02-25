@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 70e488c2-cf53-4dc0-ba52-74372d215c41
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostSyncManager::CreateRWLockWriterEvent Method
 Creates an auto-reset event object for the implementation of a writer lock.  

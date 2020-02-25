@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "regular expressions [.NET Framework], examples"
   - "pattern-matching with regular expressions, examples"
 ms.assetid: ab7f62b3-6d2c-4efb-8ac6-28600df5fd5c
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Extract a Protocol and Port Number from a URL
 The following example extracts a protocol and port number from a URL.  

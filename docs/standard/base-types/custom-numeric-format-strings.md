@@ -1,5 +1,5 @@
 ---
-title: "Custom Numeric Format Strings"
+title: "Custom numeric format strings"
 ms.date: "06/25/2018"
 ms.technology: dotnet-standard
 dev_langs:
@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "formatting numbers [.NET Framework]"
   - "format specifiers, custom numeric format strings"
 ms.assetid: 6f74fd32-6c6b-48ed-8241-3c2b86dea5f4
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Custom numeric format strings
 

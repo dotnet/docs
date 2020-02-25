@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 2902578b-d5e2-4f8d-a103-0c7b6dceda9e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostIoCompletionManager::GetHostOverlappedSize Method
 Gets the size of any custom data the host intends to append to I/O requests.  

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 621b4543-a8f7-4117-98e4-930992cd688a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugObjectValue2::GetVirtualMethodAndType Method
 This method is not yet implemented.  

@@ -93,7 +93,7 @@ You can enable automatic binding redirection if your app targets older versions 
           publisher policy, or machine configuration files. -->
         <bindingRedirect oldVersion="1.0.0.0-2.0.0.0" newVersion="3.0.0.0" />
       </dependentAssembly>
-  <dependentAssembly>
+      <dependentAssembly>
         <assemblyIdentity name="mySecondAssembly"
           publicKeyToken="32ab4ba45e0a69a1"
           culture="en-us" />
@@ -151,8 +151,8 @@ You can enable automatic binding redirection if your app targets older versions 
 - [How to: Enable and Disable Automatic Binding Redirection](how-to-enable-and-disable-automatic-binding-redirection.md)
 - [\<bindingRedirect> Element](./file-schema/runtime/bindingredirect-element.md)
 - [Assembly Binding Redirection Security Permission](assembly-binding-redirection-security-permission.md)
-- [Assemblies in the Common Language Runtime](../app-domains/assemblies-in-the-common-language-runtime.md)
-- [Programming with Assemblies](../app-domains/programming-with-assemblies.md)
+- [Assemblies in .NET](../../standard/assembly/index.md)
+- [Programming with Assemblies](../../standard/assembly/program.md)
 - [How the Runtime Locates Assemblies](../deployment/how-the-runtime-locates-assemblies.md)
 - [Configuring Apps](index.md)
 - [Runtime Settings Schema](./file-schema/runtime/index.md)

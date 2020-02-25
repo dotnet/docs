@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "appDomainManagerType element"
   - "<appDomainManagerType> element"
 ms.assetid: ae8d5a7e-e7f7-47f7-98d9-455cc243a322
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<appDomainManagerType> Element
 Specifies the type that serves as the application domain manager for the default application domain.  

@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "constructs, grouping"
   - "grouping constructs"
 ms.assetid: 0fc18634-f590-4062-8d5c-f0b71abe405b
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Grouping Constructs in Regular Expressions
 Grouping constructs delineate the subexpressions of a regular expression and capture the substrings of an input string. You can use grouping constructs to do the following:  
@@ -40,7 +38,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 |[Zero-width negative lookahead assertions](#zerowidth_negative_lookahead_assertion)|Noncapturing|  
 |[Zero-width positive lookbehind assertions](#zerowidth_positive_lookbehind_assertion)|Noncapturing|  
 |[Zero-width negative lookbehind assertions](#zerowidth_negative_lookbehind_assertion)|Noncapturing|  
-|[Nonbacktracking subexpressions](#nonbacktracking_subexpression)|Noncapturing|  
+|[Atomic groups](#atomic_groups)|Noncapturing|  
   
  For information on groups and the regular expression object model, see [Grouping constructs and regular expression objects](#Objects).  
   
@@ -72,9 +70,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
   
  The regular expression pattern is the following:  
   
-```  
-(\w+)\s(\1)\W  
-```  
+`(\w+)\s(\1)\W`  
   
  The following table shows how the regular expression pattern is interpreted.  
   
@@ -89,15 +85,11 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 ## Named Matched Subexpressions  
  The following grouping construct captures a matched subexpression and lets you access it by name or by number:  
   
-```  
-(?<name>subexpression)  
-```  
+`(?<name>subexpression)`  
   
  or:  
   
-```  
-(?'name'subexpression)  
-```  
+`(?'name'subexpression)`  
   
  where *name* is a valid group name, and *subexpression* is any valid regular expression pattern. *name* must not contain any punctuation characters and cannot begin with a number.  
   
@@ -135,9 +127,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
   
  The regular expression pattern is as follows:  
   
-```  
-(?<duplicateWord>\w+)\s\k<duplicateWord>\W(?<nextWord>\w+)  
-```  
+`(?<duplicateWord>\w+)\s\k<duplicateWord>\W(?<nextWord>\w+)`  
   
  The following table shows how the regular expression is interpreted.  
   
@@ -169,15 +159,11 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 ## Balancing Group Definitions  
  A balancing group definition deletes the definition of a previously defined group and stores, in the current group, the interval between the previously defined group and the current group. This grouping construct has the following format:  
   
-```  
-(?<name1-name2>subexpression)  
-```  
+`(?<name1-name2>subexpression)`  
   
  or:  
   
-```  
-(?'name1-name2' subexpression)  
-```  
+`(?'name1-name2' subexpression)`
   
  where *name1* is the current group (optional), *name2* is a previously defined group, and *subexpression* is any valid regular expression pattern. The balancing group definition deletes the definition of *name2* and stores the interval between *name2* and *name1* in *name1*. If no *name2* group is defined, the match backtracks. Because deleting the last definition of *name2* reveals the previous definition of *name2*, this construct lets you use the stack of captures for group *name2* as a counter for keeping track of nested constructs such as parentheses or opening and closing brackets.  
   
@@ -193,9 +179,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
   
  The regular expression pattern is:  
   
-```  
-^[^<>]*(((?'Open'<)[^<>]*)+((?'Close-Open'>)[^<>]*)+)*(?(Open)(?!))$  
-```  
+`^[^<>]*(((?'Open'<)[^<>]*)+((?'Close-Open'>)[^<>]*)+)*(?(Open)(?!))$`  
   
  The regular expression is interpreted as follows:  
   
@@ -248,9 +232,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 ## Noncapturing Groups  
  The following grouping construct does not capture the substring that is matched by a subexpression:  
   
-```  
-(?:subexpression)  
-```  
+`(?:subexpression)`
   
  where *subexpression* is any valid regular expression pattern. The noncapturing group construct is typically used when a quantifier is applied to a group, but the substrings captured by the group are of no interest.  
   
@@ -407,9 +389,9 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 |`\d{4}\b`|Match four decimal digits, and end the match at a word boundary.|  
 |<code>(?<!(Saturday&#124;Sunday) )</code>|If the match is preceded by something other than the strings "Saturday" or "Sunday" followed by a space, the match is successful.|  
   
-<a name="nonbacktracking_subexpression"></a>   
-## Nonbacktracking Subexpressions  
- The following grouping construct represents a nonbacktracking subexpression (also known as a "greedy" subexpression):  
+<a name="atomic_groups"></a>   
+## Atomic groups  
+ The following grouping construct represents an atomic group (known in some other regular expression engines as a nonbacktracking subexpression, an atomic subexpression, or a once-only subexpression):
   
  `(?>` *subexpression* `)`  
   
@@ -421,7 +403,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
   
  This option is recommended if you know that backtracking will not succeed. Preventing the regular expression engine from performing unnecessary searching improves performance.  
   
- The following example illustrates how a nonbacktracking subexpression modifies the results of a pattern match. The backtracking regular expression successfully matches a series of repeated characters followed by one more occurrence of the same character on a word boundary, but the nonbacktracking regular expression does not.  
+ The following example illustrates how an atomic group modifies the results of a pattern match. The backtracking regular expression successfully matches a series of repeated characters followed by one more occurrence of the same character on a word boundary, but the nonbacktracking regular expression does not.  
   
  [!code-csharp[RegularExpressions.Language.Grouping#11](../../../samples/snippets/csharp/VS_Snippets_CLR/regularexpressions.language.grouping/cs/nonbacktracking1.cs#11)]
  [!code-vb[RegularExpressions.Language.Grouping#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/regularexpressions.language.grouping/vb/nonbacktracking1.vb#11)]  

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 12ed0fff-7f0e-4d7a-bb70-b3376371f36c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess2::ClearUnmanagedBreakpoint Method
 Removes a previously set breakpoint at the given address.  
@@ -34,7 +32,7 @@ HRESULT ClearUnmanagedBreakpoint (
  [in] A `CORDB_ADDRESS` value that specifies the address at which the breakpoint was set.  
   
 ## Remarks  
- The specified breakpoint would have been previously set by an earlier call to [ICorDebugProcess2::SetUnmanagedBreakpoint](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess2-setunmanagedbreakpoint-method.md).  
+ The specified breakpoint would have been previously set by an earlier call to [ICorDebugProcess2::SetUnmanagedBreakpoint](icordebugprocess2-setunmanagedbreakpoint-method.md).  
   
  The `ClearUnmanagedBreakpoint` method can be called while the process being debugged is running.  
   

@@ -12,16 +12,13 @@ helpviewer_keywords:
   - "implicit late binding"
   - "reflection, dynamically using types"
 ms.assetid: db985bec-5942-40ec-b13a-771ae98623dc
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Dynamically Loading and Using Types
 Reflection provides infrastructure used by language compilers to implement implicit late binding. Binding is the process of locating the declaration (that is, the implementation) that corresponds to a uniquely specified type. When this process occurs at run time rather than at compile time, it is called late binding. Visual Basic allows you to use implicit late binding in your code; the Visual Basic compiler calls a helper method that uses reflection to obtain the object type. The arguments passed to the helper method cause the appropriate method to be invoked at run time. These arguments are the instance (an object) on which to invoke the method, the name of the invoked method (a string), and the arguments passed to the invoked method (an array of objects).  
   
  In the following example, the Visual Basic compiler uses reflection implicitly to call a method on an object whose type is not known at compile time. A **HelloWorld** class has a **PrintHello** method that prints out "Hello World" concatenated with some text that is passed to the **PrintHello** method. The **PrintHello** method called in this example is actually a <xref:System.Type.InvokeMember%2A?displayProperty=nameWithType>; the Visual Basic code allows the **PrintHello** method to be invoked as if the type of the object (helloObj) were known at compile time (early binding) rather than at run time (late binding).  
   
-```  
-Imports System  
+```vb
 Module Hello  
     Sub Main()  
         ' Sets up the variable.  
@@ -97,5 +94,5 @@ End Module
 
 - <xref:System.Type.InvokeMember%2A?displayProperty=nameWithType>
 - <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType>
-- [Viewing Type Information](../../../docs/framework/reflection-and-codedom/viewing-type-information.md)
+- [Viewing Type Information](viewing-type-information.md)
 - [Type Conversion in the .NET Framework](../../standard/base-types/type-conversion.md)

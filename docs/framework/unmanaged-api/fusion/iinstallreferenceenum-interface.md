@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 2863b33b-a541-462c-bbe8-702a2832898e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IInstallReferenceEnum Interface
 Represents an enumerator for the referenced assemblies installed in the global assembly cache.  

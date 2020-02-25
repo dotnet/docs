@@ -7,7 +7,7 @@ ms.date: 02/15/2019
 
 By the very nature of the containers and Docker technology, developers can share their software and dependencies easily with IT operations and production environments while eliminating the typical "it works on my machine" excuse. Containers solve application conflicts between different environments. Indirectly, containers and Docker bring developers and IT operations closer together, making it easier for them to collaborate effectively. Adopting the container workflow provides many customers with the DevOps continuity they've sought but previously had to implement via more complex configuration for release and build pipelines. Containers simplify the build/test/deploy pipelines in DevOps.
 
-![Docker helps building bridges between Developer and architects on the develop/design workload and IT operations in the run/monitor/manage workload](./media/image1.png)
+![Diagram showing the ownership of the life cycle of a Docker app.](./media/containers-foundation-for-devops-collaboration/persona-workloads-docker-container-lifecycle.png)
 
 **Figure 2-1.** Main workloads per "personas" in the life cycle for containerized Docker applications
 
@@ -45,13 +45,13 @@ These challenges create new demands when using DevOps tools, so you'll have to d
 
 - How can we use Open Source tools/platforms for containers in Microsoft Azure?
 
-If you can answer all those questions, you'll be better prepared to move your applications (existing or new apps) to Docker containers. 
+If you can answer all those questions, you'll be better prepared to move your applications (existing or new apps) to Docker containers.
 
 ## Introduction to a generic end-to-end Docker application life cycle workflow
 
 Figure 2-2 presents a more detailed workflow for a Docker application life cycle, focusing in this instance on specific DevOps activities and assets.
 
-![This diagram shows the "outer loop" of DevOps. When code is pushed to the repo, a CI pipeline is started, then begins the CD pipeline, where the application gets deployed. Metrics collected from deployed applications are fed back into the development workload, where the "inner loop" occurs, so development teams have actual data to respond to user and business needs.](./media/image2.png)
+![Diagram showing the generic end-to-end life cycle of a Docker app.](./media/containers-foundation-for-devops-collaboration/generic-end-to-enddpcker-app-life-cycle.png)
 
 **Figure 2-2.** High-level workflow for the Docker containerized application life cycle
 

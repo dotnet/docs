@@ -8,7 +8,7 @@ Determines whether a value matches any value in a collection.
   
 ## Syntax  
   
-```  
+```sql  
 value [ NOT ] IN expression  
 ```  
   
@@ -32,7 +32,7 @@ value [ NOT ] IN expression
   
 2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
   
- [!code-csharp[DP EntityServices Concepts 2#IN](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#in)]  
+ [!code-sql[DP EntityServices Concepts#IN](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#in)]  
   
 ## See also
 

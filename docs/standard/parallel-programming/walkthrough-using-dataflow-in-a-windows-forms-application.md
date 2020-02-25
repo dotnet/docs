@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "Task Parallel Library, dataflows"
   - "Windows Forms, and TPL"
 ms.assetid: 9c65cdf7-660c-409f-89ea-59d7ec8e127c
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Walkthrough: Using Dataflow in a Windows Forms Application
 This document demonstrates how to create a network of dataflow blocks that perform image processing in a Windows Forms application.  

@@ -18,8 +18,6 @@ helpviewer_keywords:
 ms.assetid: e91bf8c3-7c26-4732-938e-2e5b04abfc99
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # StrongNameErrorInfo Function
 Gets the last error code that was raised by one of the strong name functions.  

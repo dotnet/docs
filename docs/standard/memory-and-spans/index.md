@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "Span<T>"
   - buffers"
   - "pipeline processing"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Memory- and span-related types
 

@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: b5489c96-4afd-439a-a25d-fc82eb4a148d
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Extending the DOM
 
@@ -121,7 +119,6 @@ class LineInfoElement : XmlElement, IXmlLineInfo {
 The following example counts the number of elements in an XML document:
 
 ```vb
-Imports System
 Imports System.Xml
 Imports System.IO
 

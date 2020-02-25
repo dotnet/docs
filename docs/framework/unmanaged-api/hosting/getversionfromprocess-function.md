@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: a9f7f824-64a1-408d-8607-91c7f19d21fe
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetVersionFromProcess Function
 Gets the version number of the common language runtime (CLR) that is associated with the specified process handle.  

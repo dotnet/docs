@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 4068b6ec-525f-4446-8818-0296178cbd19
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedReaderSymbolSearchInfo::GetSymbolSearchInfoCount Method
 Gets a count of symbol search information.  

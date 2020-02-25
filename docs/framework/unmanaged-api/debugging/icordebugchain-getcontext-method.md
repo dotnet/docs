@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 26abe7ee-e578-4228-affa-01bed0dfce1b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugChain::GetContext Method
 This method is not implemented in the current version of the .NET Framework.  

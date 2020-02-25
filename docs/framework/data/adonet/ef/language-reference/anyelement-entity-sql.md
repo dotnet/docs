@@ -8,7 +8,7 @@ Extracts an element from a multivalued collection.
   
 ## Syntax  
   
-```  
+```csharp
 ANYELEMENT ( expression )  
 ```  
   
@@ -22,7 +22,7 @@ ANYELEMENT ( expression )
 ## Remarks  
  ANYELEMENT extracts an arbitrary element from a multivalued collection. For example, the following example attempts to extract a singleton element from the set `Customers`.  
   
-```  
+```csharp
 ANYELEMENT(Customers)  
 ```  
   

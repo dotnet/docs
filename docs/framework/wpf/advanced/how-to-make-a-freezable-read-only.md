@@ -15,7 +15,7 @@ This example shows how to make a <xref:System.Windows.Freezable> read-only by ca
   
 - It has animated or data bound properties.  
   
-- It has properties that are set by a dynamic resource. For more information about dynamic resources, see the [XAML Resources](xaml-resources.md).  
+- It has properties that are set by a dynamic resource. For more information about dynamic resources, see the [XAML Resources](../../../desktop-wpf/fundamentals/xaml-resources-define.md).  
   
 - It contains <xref:System.Windows.Freezable> sub-objects that cannot be frozen.  
   

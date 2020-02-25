@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 8263e75d-251b-4abc-8a1a-c62884142232
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IEnumDefinitionIdentity Interface
 Serves as the enumerator for a collection of `IDefinitionIdentity` objects.  

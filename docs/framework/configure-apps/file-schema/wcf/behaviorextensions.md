@@ -43,7 +43,7 @@ Behavior extensions enable the user to create user-defined behavior elements. Th
   
  An attacker can exploit the CLR search order and execute unauthorized code. Using fully qualified (strong) names uniquely identifies a type and further increases security of your system.  
   
- For more information, see [How the Runtime Locates Assemblies](https://go.microsoft.com/fwlink/?LinkId=95336) and <xref:System.AppDomain.TypeResolve>.  
+ For more information, see [How the Runtime Locates Assemblies](../../../deployment/how-the-runtime-locates-assemblies.md) and <xref:System.AppDomain.TypeResolve>.  
   
 ## See also
 

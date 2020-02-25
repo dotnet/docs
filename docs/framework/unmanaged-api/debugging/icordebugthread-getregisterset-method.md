@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 3b9b6260-98ac-4cfd-88e5-5d7614f94a0c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugThread::GetRegisterSet Method
 Gets an interface pointer to the register set that is associated with the active part of this ICorDebugThread object.  
@@ -31,7 +29,7 @@ HRESULT GetRegisterSet (
   
 ## Parameters  
  `ppRegisters`  
- [out] A pointer to the address of an [ICorDebugRegisterSet](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-interface.md) interface object that represents the register set for the active part of this thread.  
+ [out] A pointer to the address of an [ICorDebugRegisterSet](icordebugregisterset-interface.md) interface object that represents the register set for the active part of this thread.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

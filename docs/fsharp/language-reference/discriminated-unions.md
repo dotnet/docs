@@ -67,11 +67,11 @@ The case identifiers are also used in pattern matching expressions. In a pattern
 In pattern matching expressions, you can use named fields to specify discriminated union matches. For the Shape type that was declared previously, you can use the named fields as the following code shows to extract the values of the fields.
 
 ```fsharp
-let getShapeHeight shape =
+let getShapeWidth shape =
     match shape with
-    | Rectangle(height = h) -> h
+    | Rectangle(width = w) -> w
     | Circle(radius = r) -> 2. * r
-    | Prism(height = h) -> h
+    | Prism(width = w) -> w
 ```
 
 Normally, the case identifiers can be used without qualifying them with the name of the union. If you want the name to always be qualified with the name of the union, you can apply the [RequireQualifiedAccess](https://msdn.microsoft.com/visualfsharpdocs/conceptual/core.requirequalifiedaccessattribute-class-[fsharp]) attribute to the union type definition.
@@ -136,7 +136,7 @@ Instead of a virtual method to compute an area or perimeter, as you would use in
 
 The output is as follows:
 
-```
+```console
 Area of circle that has radius 15.000000: 706.858347
 Area of square that has side 10.000000: 100.000000
 Area of rectangle that has height 5.000000 and width 10.000000 is 50.000000

@@ -35,7 +35,7 @@ This topic provides an overview of the Microsoft ClearType registry settings tha
  If the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]ClearType registry settings are not set (which is the default state), the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application queries the Windows system parameters information for font smoothing settings.  
   
 > [!NOTE]
-> For information on enumerating display device names, see the `SystemParametersInfo`[!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] function.  
+> For information on enumerating display device names, see the `SystemParametersInfo`Win32 function.  
   
 <a name="ClearType_level"></a>   
 ## ClearType Level  
@@ -57,7 +57,7 @@ This topic provides an overview of the Microsoft ClearType registry settings tha
   
 <a name="gamma_level"></a>   
 ## Gamma Level  
- The gamma level refers to the nonlinear relationship between a pixel value and luminance. The gamma level setting should correspond to the physical characteristics of the display device; otherwise, distortions in rendered output may occur. For example, test may appear too wide or too narrow, or color fringes may appear on the edges of vertical stems of glyphs.  
+ The gamma level refers to the nonlinear relationship between a pixel value and luminance. The gamma level setting should correspond to the physical characteristics of the display device; otherwise, distortions in rendered output may occur. For example, text may appear too wide or too narrow, or color fringes may appear on the edges of vertical stems of glyphs.  
   
  The gamma level is an integer value that ranges from 1000 to 2200. The default level is 1900.  
   
@@ -83,7 +83,7 @@ This topic provides an overview of the Microsoft ClearType registry settings tha
  The pixel structure corresponds to an integer value that ranges from 0 to 2. The default level is 0, which represents a flat pixel structure.  
   
 > [!NOTE]
-> For information on enumerating display device names, see the `EnumDisplayDevices`[!INCLUDE[TLA2#tla_win32](../../../../includes/tla2sharptla-win32-md.md)] function.  
+> For information on enumerating display device names, see the `EnumDisplayDevices`Win32 function.  
   
 ### Registry Setting  
  The registry setting location for the pixel structure is a local machine setting that corresponds to a specific display device name:  

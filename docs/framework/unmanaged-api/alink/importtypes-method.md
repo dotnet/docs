@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 351d4b4c-c939-486d-9471-51914a55f471
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ImportTypes Method
 Initiates the importing of types from each scope imported via [ImportFile Method](importfile-method.md).  

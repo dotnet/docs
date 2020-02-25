@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 426f4e4f-e60d-4ad1-b546-a10e3c55c283
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedWriter::OpenNamespace Method
 Opens a new namespace. Call this method before defining methods or variables that occupy a namespace. Namespaces can be nested.  

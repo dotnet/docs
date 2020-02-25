@@ -1,12 +1,11 @@
 ---
 title: "where (generic type constraint) - C# Reference"
-ms.custom: seodec18
 
 ms.date: 04/12/2018
-f1_keywords: 
+f1_keywords:
   - "whereconstraint"
   - "whereconstraint_CSharpKeyword"
-helpviewer_keywords: 
+helpviewer_keywords:
   - "where (generic type constraint) [C#]"
 ---
 # where (generic type constraint) (C# Reference)
@@ -28,7 +27,7 @@ The `where` clause can specify that the type is a `class` or a `struct`. The `st
 
 [!code-csharp[using the class and struct constraints](~/samples/snippets/csharp/keywords/GenericWhereConstraints.cs#3)]
 
-The `where` clause may include the `notnull` constraint. The `notnull` constraint limits the type parameter to non-nullable types. That type may be a [value type](struct.md) or a non-nullable reference type. The `notnull` constraint is available starting in C# 8.0 for code compiled in a [`nullable enable` context](../../nullable-references.md#nullable-contexts). Unlike other constraints, if a type argument violates the `notnull` constraint, the compiler generates a warning instead of an error. Warnings are only generated in a `nullable enable` context. 
+The `where` clause may include the `notnull` constraint. The `notnull` constraint limits the type parameter to non-nullable types. That type may be a [value type](../builtin-types/value-types.md) or a non-nullable reference type. The `notnull` constraint is available starting in C# 8.0 for code compiled in a [`nullable enable` context](../../nullable-references.md#nullable-contexts). Unlike other constraints, if a type argument violates the `notnull` constraint, the compiler generates a warning instead of an error. Warnings are only generated in a `nullable enable` context.
 
 > [!IMPORTANT]
 > Generic declarations that include the `notnull` constraint can be used in a nullable oblivious context, but compiler does not enforce the constraint.
@@ -39,7 +38,7 @@ The `where` clause may also include an `unmanaged` constraint. The `unmanaged` c
 
 [!code-csharp[using the unmanaged constraint](~/samples/snippets/csharp/keywords/GenericWhereConstraints.cs#4)]
 
-The `where` clause may also include a constructor constraint, `new()`. That constraint makes it possible to create an instance of a type parameter using the `new` operator. The [new() Constraint](new-constraint.md) lets the compiler know that any type argument supplied must have an accessible parameterless--or default-- constructor. For example:
+The `where` clause may also include a constructor constraint, `new()`. That constraint makes it possible to create an instance of a type parameter using the `new` operator. The [new() Constraint](new-constraint.md) lets the compiler know that any type argument supplied must have an accessible parameterless constructor. For example:
 
 [!code-csharp[using the new constraint](~/samples/snippets/csharp/keywords/GenericWhereConstraints.cs#5)]
 

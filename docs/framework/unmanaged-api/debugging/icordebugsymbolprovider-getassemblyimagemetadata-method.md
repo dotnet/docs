@@ -2,8 +2,6 @@
 title: "ICorDebugSymbolProvider::GetAssemblyImageMetadata Method"
 ms.date: "03/30/2017"
 ms.assetid: c3c9de67-b865-4ecf-b887-1f1d0719a0c0
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugSymbolProvider::GetAssemblyImageMetadata Method
 Returns the metadata from a merged assembly.  
@@ -18,7 +16,7 @@ HRESULT GetAssemblyImageMetadata(
   
 ## Parameters  
  `ppMemoryBuffer`  
- [out] A pointer to the address of an [ICorDebugMemoryBuffer](../../../../docs/framework/unmanaged-api/debugging/icordebugmemorybuffer-interface.md) object that contains information about the size and address of the merged assembly's metadata.  
+ [out] A pointer to the address of an [ICorDebugMemoryBuffer](icordebugmemorybuffer-interface.md) object that contains information about the size and address of the merged assembly's metadata.  
   
 ## Remarks  
   
@@ -36,5 +34,5 @@ HRESULT GetAssemblyImageMetadata(
   
 ## See also
 
-- [ICorDebugSymbolProvider Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugSymbolProvider Interface](icordebugsymbolprovider-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

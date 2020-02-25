@@ -12,7 +12,7 @@ As an alternative to attribute-based mapping, you can generate your object model
 ## Example  
  The following command generates an external mapping file from the Northwind sample database.  
   
-```  
+```console  
 sqlmetal /server:myserver /database:northwind /map:externalfile.xml  
 ```  
   

@@ -1,5 +1,5 @@
 ---
-title: "How to: Make Columns Read-Only in the Windows Forms DataGridView Control Using the Designer"
+title: Make Columns Read-Only in DataGridView Control Using the Designer
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Windows Forms, columns"
@@ -15,7 +15,7 @@ By default, users can modify text and numerical data displayed in the Windows Fo
 
 ## To make a column read-only by using the designer
 
-1. Click the smart tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) on the upper-right corner of the <xref:System.Windows.Forms.DataGridView> control, and then select **Edit Columns**.
+1. Click the designer actions glyph (![Small black arrow](./media/designer-actions-glyph.gif)) on the upper-right corner of the <xref:System.Windows.Forms.DataGridView> control, and then select **Edit Columns**.
 
 2. Select a column from the **Selected Columns** list.
 

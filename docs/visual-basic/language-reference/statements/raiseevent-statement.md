@@ -1,5 +1,5 @@
 ---
-title: "RaiseEvent Statement (Visual Basic)"
+title: "RaiseEvent Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.RaiseEventMethod"
@@ -16,7 +16,7 @@ Triggers an event declared at module level within a class, form, or document.
   
 ## Syntax  
   
-```  
+```vb  
 RaiseEvent eventname[( argumentlist )]  
 ```  
   

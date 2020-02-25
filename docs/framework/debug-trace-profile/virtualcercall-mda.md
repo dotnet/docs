@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "CER calls"
   - "managed debugging assistants (MDAs), CER calls"
 ms.assetid: 1eb18c7a-f5e0-443f-80fb-67bfbb047da2
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # virtualCERCall MDA
 The `virtualCERCall` managed debugging assistant (MDA) is activated as a warning indicating that a call site within a constrained execution region (CER) call graph refers to a virtual target, that is, a virtual call to a non-final virtual method or a call using an interface. The common language runtime (CLR) cannot predict the destination method of these calls from the intermediate language and metadata analysis alone. As a result, the call tree cannot be prepared as part of the CER graph and thread aborts in that subtree cannot be automatically blocked. This MDA warns of cases where a CER might need to be extended by using explicit calls to the <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareMethod%2A> method once the additional information required to compute the call target is known at run time.  
@@ -45,7 +43,7 @@ declaringType name="VirtualCERCall+MyClass"
 ```xml  
 <mdaConfig>  
   <assistants>  
-    < VirtualCERCall />  
+    <VirtualCERCall />  
   </assistants>  
 </mdaConfig>  
 ```  
@@ -93,5 +91,5 @@ void MethodWithCer(MyClass object)
 ## See also
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
-- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
-- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)
+- [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Interop Marshaling](../interop/interop-marshaling.md)

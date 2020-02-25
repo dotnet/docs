@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "unmanaged resource cleanup"
   - "Finalize method"
 ms.assetid: a17b0066-71c2-4ba4-9822-8e19332fc213
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Cleaning Up Unmanaged Resources
 
@@ -21,7 +19,7 @@ For the majority of the objects that your app creates, you can rely on .NET's ga
 
 If your types use unmanaged resources, you should do the following:
 
-- Implement the [dispose pattern](../../../docs/standard/design-guidelines/dispose-pattern.md). This requires that you provide an <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation to enable the deterministic release of  unmanaged resources. A consumer of your type calls <xref:System.IDisposable.Dispose%2A> when the object (and the resources it uses) is no longer needed. The <xref:System.IDisposable.Dispose%2A> method immediately releases the unmanaged resources.
+- Implement the [dispose pattern](implementing-dispose.md). This requires that you provide an <xref:System.IDisposable.Dispose%2A?displayProperty=nameWithType> implementation to enable the deterministic release of  unmanaged resources. A consumer of your type calls <xref:System.IDisposable.Dispose%2A> when the object (and the resources it uses) is no longer needed. The <xref:System.IDisposable.Dispose%2A> method immediately releases the unmanaged resources.
 
 - Provide for your unmanaged resources to be released in the event that a consumer of your type forgets to call <xref:System.IDisposable.Dispose%2A>. There are two ways to do this:
 
@@ -36,7 +34,7 @@ Consumers of your type can then call your <xref:System.IDisposable.Dispose%2A?di
 ## In This Section
 
 [Implementing a Dispose Method](../../../docs/standard/garbage-collection/implementing-dispose.md)
-Describes how to implement the [dispose pattern](../../../docs/standard/design-guidelines/dispose-pattern.md) for releasing unmanaged resources.
+Describes how to implement the [dispose pattern](implementing-dispose.md) for releasing unmanaged resources.
 
 [Using Objects That Implement IDisposable](../../../docs/standard/garbage-collection/using-objects.md)
 Describes how consumers of a type ensure that its <xref:System.IDisposable.Dispose%2A> implementation is called. We recommend using the C# `using` statement or the Visual Basic `Using` statement to do this.

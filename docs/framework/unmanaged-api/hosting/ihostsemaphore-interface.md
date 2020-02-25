@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: c0765321-656c-441e-bab5-58176292be1e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostSemaphore Interface
 Represents the host's implementation of a semaphore for threading.  

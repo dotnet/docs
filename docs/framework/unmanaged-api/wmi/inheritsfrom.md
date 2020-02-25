@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "InheritsFrom function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # InheritsFrom function
 Determines whether the current class or instance derives from a specified parent class.

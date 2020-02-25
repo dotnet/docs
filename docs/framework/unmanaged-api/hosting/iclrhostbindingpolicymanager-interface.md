@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: f9da168b-366b-4b2b-bdb9-330b6bad5a6b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRHostBindingPolicyManager Interface
 Provides methods for the host to evaluate current binding policy and communicate policy changes for a specified assembly.  

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 88e2eac0-8ccb-404f-abbc-287d55159842
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostSecurityContext Interface
 Allows the common language runtime (CLR) to maintain security context information implemented by the host.  

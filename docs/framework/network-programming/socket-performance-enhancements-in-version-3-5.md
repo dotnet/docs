@@ -33,5 +33,5 @@ The <xref:System.Net.Sockets.Socket?displayProperty=nameWithType> class has been
 - <xref:System.Net.Sockets.SendPacketsElement?displayProperty=nameWithType>
 - <xref:System.Net.Sockets.SocketAsyncEventArgs?displayProperty=nameWithType>
 - <xref:System.Net.Sockets.SocketAsyncOperation?displayProperty=nameWithType>
-- [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)
+- [Network Programming Samples](network-programming-samples.md)
 - [Socket Code Examples](socket-code-examples.md)

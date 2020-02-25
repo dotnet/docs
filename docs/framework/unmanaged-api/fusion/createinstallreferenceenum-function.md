@@ -16,8 +16,6 @@ helpviewer_keywords:
 ms.assetid: 80dbbbf8-54fc-4894-b74a-0179d3201083
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CreateInstallReferenceEnum Function
 Gets a pointer to an [IInstallReferenceEnum](iinstallreferenceenum-interface.md) instance that represents a list of an application's references to the specified assembly.  

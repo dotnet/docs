@@ -15,11 +15,9 @@ helpviewer_keywords:
 ms.assetid: 6ef8ac9b-9803-4b65-8b13-25f3e0b1bc6b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorPublishAppDomain::GetName Method
-Gets the name of the application domain that is represented by this [ICorPublishAppDomain](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomain-interface.md).  
+Gets the name of the application domain that is represented by this [ICorPublishAppDomain](icorpublishappdomain-interface.md).  
   
 ## Syntax  
   
@@ -58,4 +56,4 @@ HRESULT GetName (
   
 ## See also
 
-- [ICorPublishAppDomain Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishappdomain-interface.md)
+- [ICorPublishAppDomain Interface](icorpublishappdomain-interface.md)

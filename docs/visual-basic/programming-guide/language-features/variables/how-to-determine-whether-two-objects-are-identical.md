@@ -1,5 +1,5 @@
 ---
-title: "How to: Determine Whether Two Objects Are Identical (Visual Basic)"
+title: "How to: Determine Whether Two Objects Are Identical"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "testing [Visual Basic], objects"

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: c35199bf-bc47-4901-b467-4e8a37644bbb
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostIoCompletionManager::InitializeHostOverlapped Method
 Provides the host with an opportunity to initialize any custom data to append to a Win32 `OVERLAPPED` structure that is used for asynchronous I/O requests.  

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 1de658e6-da32-4d01-9097-6f43c92222e1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # StrongNameGetBlobFromImage Function
 Gets a binary representation of the assembly image at the specified memory address.  

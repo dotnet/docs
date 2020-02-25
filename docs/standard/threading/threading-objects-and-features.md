@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "threading [.NET Framework], features"
   - "managed threading"
 ms.assetid: 239b2e8d-581b-4ca3-992b-0e8525b9321c
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Threading objects and features
 

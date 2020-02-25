@@ -13,7 +13,7 @@ ms.assetid: 54f23f30-4bcb-4f09-8ce4-376a13a255a1
 
 # ToggleButton Styles and Templates
 
-This topic describes the styles and templates for the <xref:System.Windows.Controls.Primitives.ToggleButton> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md).
+This topic describes the styles and templates for the <xref:System.Windows.Controls.Primitives.ToggleButton> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](../../../desktop-wpf/themes/how-to-create-apply-template.md).
 
 ## ToggleButton Parts
 
@@ -59,5 +59,5 @@ For the complete sample, see [Styling with ControlTemplates Sample](https://gith
 - <xref:System.Windows.Controls.ControlTemplate>
 - [Control Styles and Templates](control-styles-and-templates.md)
 - [Control Customization](control-customization.md)
-- [Styling and Templating](styling-and-templating.md)
-- [Customizing the Appearance of an Existing Control by Creating a ControlTemplate](customizing-the-appearance-of-an-existing-control.md)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)
+- [Create a template for a control](../../../desktop-wpf/themes/how-to-create-apply-template.md)

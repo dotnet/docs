@@ -1,5 +1,5 @@
 ---
-title: "How to: Align Multiple Controls on Windows Forms"
+title: Align Multiple Controls
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "forms [Windows Forms], aligning controls"
@@ -7,8 +7,8 @@ helpviewer_keywords:
   - "controls [Windows Forms], positioning"
   - "controls [Windows Forms], aligning"
 ms.assetid: b7175656-f532-49e9-b0b1-177d1b40af3e
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # How to: Align Multiple Controls on Windows Forms

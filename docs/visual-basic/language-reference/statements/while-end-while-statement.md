@@ -1,5 +1,5 @@
 ---
-title: "While...End While Statement (Visual Basic)"
+title: "While...End While Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.While"
@@ -15,7 +15,7 @@ Runs a series of statements as long as a given condition is `True`.
   
 ## Syntax  
   
-```  
+```vb  
 While condition  
     [ statements ]  
     [ Continue While ]  

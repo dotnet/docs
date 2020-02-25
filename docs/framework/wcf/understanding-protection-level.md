@@ -13,7 +13,7 @@ ms.assetid: 0c034608-a1ac-4007-8287-b1382eaa8bf2
 
 The `ProtectionLevel` property is found on many different classes, such as the <xref:System.ServiceModel.ServiceContractAttribute> and the <xref:System.ServiceModel.OperationContractAttribute> classes. The property controls how a part (or whole) of a message is protected. This topic explains the Windows Communication Foundation (WCF) feature and how it works.
 
-For instructions on setting the protection level, see [How to: Set the ProtectionLevel Property](../../../docs/framework/wcf/how-to-set-the-protectionlevel-property.md).
+For instructions on setting the protection level, see [How to: Set the ProtectionLevel Property](how-to-set-the-protectionlevel-property.md).
 
 > [!NOTE]
 > Protection levels can be set only in code, not in configuration.
@@ -68,18 +68,18 @@ Setting the `ProtectionLevel` on the topmost API sets the level for all levels b
 
 ## Programming ProtectionLevel
 
-To program the `ProtectionLevel` at any point in the hierarchy, simply set the property to an appropriate value when applying the attribute. For examples, see [How to: Set the ProtectionLevel Property](../../../docs/framework/wcf/how-to-set-the-protectionlevel-property.md).
+To program the `ProtectionLevel` at any point in the hierarchy, simply set the property to an appropriate value when applying the attribute. For examples, see [How to: Set the ProtectionLevel Property](how-to-set-the-protectionlevel-property.md).
 
 > [!NOTE]
-> Setting the property on faults and message contracts requires understanding how those features work. For more information, see [How to: Set the ProtectionLevel Property](../../../docs/framework/wcf/how-to-set-the-protectionlevel-property.md) and [Using Message Contracts](../../../docs/framework/wcf/feature-details/using-message-contracts.md).
+> Setting the property on faults and message contracts requires understanding how those features work. For more information, see [How to: Set the ProtectionLevel Property](how-to-set-the-protectionlevel-property.md) and [Using Message Contracts](./feature-details/using-message-contracts.md).
 
 ## WS-Addressing Dependency
 
-In most cases, using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to generate a client ensures that the client and service contracts are identical. However, seemingly identical contracts can cause the client to throw an exception. This occurs whenever a binding does not support the WS-Addressing specification and multiple levels of protection are specified on the contract. For example, the <xref:System.ServiceModel.BasicHttpBinding> class does not support the specification, or if you create a custom binding that does not support WS-Addressing. The `ProtectionLevel` feature relies on the WS-Addressing specification to enable different protection levels on a single contract. If the binding does not support the WS-Addressing specification, all levels will be set to the same protection level. The effective protection level for all scopes on the contract will be set to the strongest protection level used on the contract.
+In most cases, using the [ServiceModel Metadata Utility Tool (Svcutil.exe)](servicemodel-metadata-utility-tool-svcutil-exe.md) to generate a client ensures that the client and service contracts are identical. However, seemingly identical contracts can cause the client to throw an exception. This occurs whenever a binding does not support the WS-Addressing specification and multiple levels of protection are specified on the contract. For example, the <xref:System.ServiceModel.BasicHttpBinding> class does not support the specification, or if you create a custom binding that does not support WS-Addressing. The `ProtectionLevel` feature relies on the WS-Addressing specification to enable different protection levels on a single contract. If the binding does not support the WS-Addressing specification, all levels will be set to the same protection level. The effective protection level for all scopes on the contract will be set to the strongest protection level used on the contract.
 
 This may cause a problem that is hard to debug at first glance. It is possible to create a client contract (an interface) that includes methods for more than one service. That is, the same interface is used to create a client that communicates with many services, and the single interface contains methods for all services. The developer must take care in this rare scenario to invoke only those methods that are applicable for each particular service. If the binding is the <xref:System.ServiceModel.BasicHttpBinding> class, multiple protection levels cannot be supported. However, a service replying to the client might respond to a client with a lower protection level than required. In this case, the client will throw an exception because it expects a higher protection level.
 
-An example of the code illustrates this problem. The following example shows a service and a client contract. Assume that the binding is the [\<basicHttpBinding>](../../../docs/framework/configure-apps/file-schema/wcf/basichttpbinding.md) element. Therefore, all operations on a contract have the same protection level. This uniform protection level is determined as the maximum protection level across all operations.
+An example of the code illustrates this problem. The following example shows a service and a client contract. Assume that the binding is the [\<basicHttpBinding>](../configure-apps/file-schema/wcf/basichttpbinding.md) element. Therefore, all operations on a contract have the same protection level. This uniform protection level is determined as the maximum protection level across all operations.
 
 The service contract is:
 
@@ -102,7 +102,7 @@ When the client calls the `Price` method, it throws an exception when it receive
 - <xref:System.ServiceModel.MessageHeaderAttribute>
 - <xref:System.ServiceModel.MessageBodyMemberAttribute>
 - <xref:System.Net.Security.ProtectionLevel>
-- [Securing Services](../../../docs/framework/wcf/securing-services.md)
-- [How to: Set the ProtectionLevel Property](../../../docs/framework/wcf/how-to-set-the-protectionlevel-property.md)
-- [Specifying and Handling Faults in Contracts and Services](../../../docs/framework/wcf/specifying-and-handling-faults-in-contracts-and-services.md)
-- [Using Message Contracts](../../../docs/framework/wcf/feature-details/using-message-contracts.md)
+- [Securing Services](securing-services.md)
+- [How to: Set the ProtectionLevel Property](how-to-set-the-protectionlevel-property.md)
+- [Specifying and Handling Faults in Contracts and Services](specifying-and-handling-faults-in-contracts-and-services.md)
+- [Using Message Contracts](./feature-details/using-message-contracts.md)

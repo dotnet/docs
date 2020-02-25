@@ -1,5 +1,5 @@
 ---
-title: "Arrays Summary (Visual Basic)"
+title: "Arrays Summary"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "arrays [Visual Basic]"

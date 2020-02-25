@@ -1,5 +1,5 @@
 ---
-title: "How to: Add Controls Without a User Interface to Windows Forms"
+title: Add Controls Without a User Interface
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

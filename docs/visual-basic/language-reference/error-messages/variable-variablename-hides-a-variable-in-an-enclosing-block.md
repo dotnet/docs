@@ -17,7 +17,7 @@ A variable enclosed in a block has the same name as another local variable.
   
 - Rename the variable in the enclosed block so that it is not the same as any other local variables. For example:  
   
-    ```  
+    ```vb  
     Dim a, b, x As Integer  
     If a = b Then  
        Dim y As Integer = 20 ' Uniquely named block variable.  

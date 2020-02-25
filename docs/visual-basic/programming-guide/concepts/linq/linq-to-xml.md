@@ -1,5 +1,5 @@
 ---
-title: "LINQ to XML (Visual Basic)"
+title: "LINQ to XML"
 ms.date: 07/20/2015
 ms.assetid: f7386556-a6b9-40d5-92b6-e8701dc2c63e
 ---

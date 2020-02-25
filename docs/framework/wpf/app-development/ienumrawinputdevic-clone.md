@@ -10,7 +10,7 @@ Creates another raw input device enumerator with the same state as the current e
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Clone( [out] IEnumRAWINPUTDEVICE **ppenum);  
 ```  
   

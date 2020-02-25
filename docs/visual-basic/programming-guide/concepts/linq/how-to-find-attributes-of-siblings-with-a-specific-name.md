@@ -1,5 +1,5 @@
 ---
-title: "How to: Find Attributes of Siblings with a Specific Name (XPath-LINQ to XML) (Visual Basic)"
+title: "How to: Find Attributes of Siblings with a Specific Name (XPath-LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 83b3ddca-830a-4b71-9756-9e4bdf907302
 ---
@@ -42,7 +42,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```console  
 Results are identical  
 id="bk101"  
 id="bk102"  

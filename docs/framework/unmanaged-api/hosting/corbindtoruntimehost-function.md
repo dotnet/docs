@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 5c826ba3-8258-49bc-a417-78807915fcaf
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorBindToRuntimeHost Function
 Enables hosts to load a specified version of the common language runtime (CLR) into a process.  

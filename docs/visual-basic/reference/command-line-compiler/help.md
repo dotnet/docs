@@ -1,5 +1,5 @@
 ---
-title: "-help, -? (Visual Basic)"
+title: "-help, -?"
 ms.date: 03/10/2018
 helpviewer_keywords: 
   - "/? compiler option [Visual Basic]"
@@ -15,9 +15,13 @@ Displays the compiler options.
   
 ## Syntax  
   
-```  
+```console  
 -help  
-' -or-  
+```
+
+or  
+
+```console
 -?  
 ```  
   
@@ -30,7 +34,7 @@ Displays the compiler options.
 ## Example  
  The following code displays help from the command line.  
   
-```  
+```console  
 vbc -help  
 ```  
   

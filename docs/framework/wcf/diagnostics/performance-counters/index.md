@@ -70,13 +70,13 @@ config.Save();
   
  You can use WMI to retrieve the name of a performance counter instance. For example,  
   
-- Service counter instance name can be obtained through WMI [Service](../../../../../docs/framework/wcf/diagnostics/wmi/service.md) instance's "CounterInstanceName" property.  
+- Service counter instance name can be obtained through WMI [Service](../wmi/service.md) instance's "CounterInstanceName" property.  
   
-- Endpoint counter instance name can be obtained through WMI [Endpoint](../../../../../docs/framework/wcf/diagnostics/wmi/endpoint.md) instance's "CounterInstanceName" property.  
+- Endpoint counter instance name can be obtained through WMI [Endpoint](../wmi/endpoint.md) instance's "CounterInstanceName" property.  
   
-- Operation counter instance name can be obtained through WMI [Endpoint](../../../../../docs/framework/wcf/diagnostics/wmi/endpoint.md) instance's "GetOperationCounterInstanceName" method.  
+- Operation counter instance name can be obtained through WMI [Endpoint](../wmi/endpoint.md) instance's "GetOperationCounterInstanceName" method.  
   
- For more information on WMI, see [Using Windows Management Instrumentation for Diagnostics](../../../../../docs/framework/wcf/diagnostics/wmi/index.md).  
+ For more information on WMI, see [Using Windows Management Instrumentation for Diagnostics](../wmi/index.md).  
   
 ### Service performance counters  
  Service performance counters measure the service behavior as a whole and can be used to diagnose the performance of the whole service. They can be found under the `ServiceModelService 4.0.0.0` performance object when viewing with Performance Monitor. The instances are named using the following pattern:  
@@ -112,20 +112,17 @@ config.Save();
 > If you have duplicate operation names on a contract, you only get one counter instances for both operations.  
   
 ## Programming the WCF Performance Counters  
- Several files are installed in the SDK install folder so that you can access the WCF performance counters programmatically. These files are listed as follows.  
+
+Several files are installed in the SDK install folder so that you can access the WCF performance counters programmatically. These files are listed as follows:
   
-- _ServiceModelEndpointPerfCounters.vrg  
+- *\_ServiceModelEndpointPerfCounters.vrg*
+- *\_ServiceModelOperationPerfCounters.vrg*
+- *\_ServiceModelServicePerfCounters.vrg*  
+- *\_SMSvcHostPerfCounters.vrg*
+- *\_TransactionBridgePerfCounters.vrg*
   
-- _ServiceModelOperationPerfCounters.vrg  
-  
-- _ServiceModelServicePerfCounters.vrg  
-  
-- _SMSvcHostPerfCounters.vrg  
-  
-- _TransactionBridgePerfCounters.vrg  
-  
- For more information on how to access the counters programmatically, see [Performance Counter Programming Architecture](https://go.microsoft.com/fwlink/?LinkId=95179).  
+For more information on how to access the counters programmatically, see [Performance Counter Programming Architecture](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2008/5f9bkxzf(v=vs.90)).
   
 ## See also
 
-- [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)
+- [Administration and Diagnostics](../index.md)

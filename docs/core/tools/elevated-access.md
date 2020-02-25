@@ -21,9 +21,11 @@ You can run commands as root as long as you don’t transition back and forth be
 
 The following instructions demonstrate the recommended way to install, run, and uninstall .NET Core tools that require elevated permissions to execute.
 
+<!-- markdownlint-disable MD025 -->
+
 # [Windows](#tab/windows)
 
-### Install the global tool
+### Install the tool
 
 If the folder `%ProgramFiles%\dotnet-tools` already exists, do the following to check whether the "Users" group has permission to write or modify that directory:
 
@@ -33,7 +35,7 @@ If the folder `%ProgramFiles%\dotnet-tools` already exists, do the following to 
 
 To install tools, run the following command in elevated prompt. It will create the *dotnet-tools* folder during the installation.
 
-```cmd
+```dotnetcli
 dotnet tool install PACKAGEID --tool-path "%ProgramFiles%\dotnet-tools".
 ```
 
@@ -61,7 +63,7 @@ TOOLCOMMAND
 
 In an elevated prompt, type the following command:
 
-```cmd
+```dotnetcli
 dotnet tool uninstall PACKAGEID --tool-path "%ProgramFiles%\dotnet-tools"
 ```
 
@@ -85,14 +87,14 @@ During development, you may need elevated access to test your application. This 
 
 - Using generated executable (it provides the best startup performance):
 
-   ```bash
+   ```dotnetcli
    dotnet build
    sudo ./bin/Debug/netcoreapp3.0/APPLICATIONNAME
    ```
     
 - Using the [dotnet run](dotnet-run.md) command with the `—no-build` flag to avoid generating new binaries:
 
-   ```bash
+   ```dotnetcli
    dotnet build
    sudo dotnet run --no-build
    ```

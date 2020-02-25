@@ -2,8 +2,6 @@
 title: "ICorDebugMergedAssemblyRecord::GetIndex Method"
 ms.date: "03/30/2017"
 ms.assetid: 98701444-b9bc-4978-9548-89ac3394147d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugMergedAssemblyRecord::GetIndex Method
 Gets the assembly's prefix index.  
@@ -37,5 +35,5 @@ HRESULT GetIndex(
   
 ## See also
 
-- [ICorDebugMergedAssemblyRecord Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmergedassemblyrecord-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugMergedAssemblyRecord Interface](icordebugmergedassemblyrecord-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

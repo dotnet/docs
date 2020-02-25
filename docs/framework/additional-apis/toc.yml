@@ -1,78 +1,118 @@
-- name: Additional class libraries and APIs
+- name: Additional APIs
   href: index.md
   items:
   - name: Microsoft.SqlServer.Server
     items:
-    - name: SmiOrderProperty Class
+    - name: SmiOrderProperty class
       items:
       - name: SmiOrderProperty.Item
         href: microsoft.sqlserver.server.smiorderproperty.item.md
+  - name: System
+    items:
+    - name: Exception class
+      items:
+      - name: Exception.PrepForRemoting method
+        href: system.exception.prepforremoting.md
   - name: System.Data.SqlTypes
     items:
-    - name: SqlChars Class
+    - name: SqlChars class
       items:
-      - name: SqlChars.Stream Property
+      - name: SqlChars.Stream property
         href: system.data.sqltypes.sqlchars.stream.md
-    - name: SqlStreamChars Class
+    - name: SqlStreamChars class
       items:
-      - name: SqlStreamChars Constructor
+      - name: SqlStreamChars constructor
         href: system.data.sqltypes.sqlstreamchars.-ctor.md
-      - name: CanSeek Property
+      - name: CanSeek property
         href: system.data.sqltypes.sqlstreamchars.canseek.md
-      - name: IsNull Property
+      - name: IsNull property
         href: system.data.sqltypes.sqlstreamchars.isnull.md
-      - name: Length Property
+      - name: Length property
         href: system.data.sqltypes.sqlstreamchars.length.md
-      - name: Close Method
+      - name: Close method
         href: system.data.sqltypes.sqlstreamchars.close.md
-      - name: Dispose Method
+      - name: Dispose method
         href: system.data.sqltypes.sqlstreamchars.dispose.md
-      - name: Flush Method
+      - name: Flush method
         href: system.data.sqltypes.sqlstreamchars.flush.md
-      - name: Read Method
+      - name: Read method
         href: system.data.sqltypes.sqlstreamchars.read.md
-      - name: Seek Method
+      - name: Seek method
         href: system.data.sqltypes.sqlstreamchars.seek.md
-      - name: SetLength Method
+      - name: SetLength method
         href: system.data.sqltypes.sqlstreamchars.setlength.md
-      - name: Write Method
+      - name: Write method
         href: system.data.sqltypes.sqlstreamchars.write.md
+  - name: System.IO
+    items:
+    - name: MemoryStream class
+      items:
+      - name: InternalGetOriginAndLength method
+        href: system.io.memorystream.internalgetoriginandlength.md
   - name: System.Net
     items:
-    - name: Connection Class
+    - name: Connection class
       href: connection.md
       items:
-      - name: m_WriteList Field
+      - name: m_WriteList field
         href: m_writelist.md
-    - name: ConnectionGroup Class
+    - name: ConnectionGroup class
       href: connectiongroup.md
       items:
-      - name: m_ConnectionList Field
+      - name: m_ConnectionList field
         href: m_connectionlist.md
-    - name: CoreResponseData Class
+    - name: ConnectStream class
+      items:
+      - name: Connection property
+        href: system.net.connectstream.connection.md
+    - name: CoreResponseData class
       href: coreresponsedata.md
       items:
-      - name: m_ResponseHeaders Field
+      - name: m_ResponseHeaders field
         href: coreresponsedata_m_responseheaders.md
-      - name: m_StatusCode Field
+      - name: m_StatusCode field
         href: coreresponsedata_m_statuscode.md
-    - name: HttpWebRequest Class
+    - name: HttpWebRequest class
       items:
-      - name: _AutoRedirects Field
+      - name: _AutoRedirects field
         href: _autoredirects.md
-      - name: _CoreResponse Field
+      - name: _CoreResponse field
         href: httpwebrequest__coreresponse.md
-      - name: _HttpResponse Field
+      - name: _HttpResponse field
         href: _httpresponse.md
-    - name: ServicePoint Class
+    - name: PooledStream class
       items:
-      - name: m_ConnectionGroupList Field
+      - name: NetworkStream property
+        href: system.net.pooledstream.networkstream.md
+    - name: RtcState class
+      href: system.net.rtcstate.md
+    - name: ServicePoint class
+      items:
+      - name: m_ConnectionGroupList field
         href: m_connectiongrouplist.md
-      - name: s_ServicePointTable Field
+      - name: s_ServicePointTable field
         href: s_servicepointtable.md
+    - name: TlsStream class
+      items:
+      - name: m_Worker field
+        href: system.net.tlsstream.m_worker.md
+  - name: System.Net.Security
+    items:
+    - name: SslState class
+      items:
+      - name: SslProtocol property
+        href: system.net.security.sslstate.sslprotocol.md
+  - name: System.ServiceModel.Channels
+    items:
+    - name: Message Class
+      items:
+      - name: BodyToString method
+        href: system.servicemodel.channels.message.bodytostring.md
+      - name: WriteStartHeaders method
+        href: system.servicemodel.channels.message.writestartheaders.md
   - name: System.Windows.Diagnostics
     items:
-    - name: VisualDiagnostics Class
+    - name: VisualDiagnostics class
       items:
       - name: s_isDebuggerCheckDisabledForTestPurposes field
         href: s-isdebuggercheckdisabledfortestpurposes-field.md
@@ -82,9 +122,33 @@
       href: datamemberfieldeditor-class.md
     - name: DataMemberListEditor class
       href: datamemberlisteditor-class.md
+  - name: System.Windows.Xps
+    items:
+    - name: XpsDocumentWriter
+      items:
+      - name: raise__WritingCancelled method
+        href: xpsdocumentwriter-raise-writingcancelled-method-system-windows-xps.md
+      - name: raise__WritingCompleted method 
+        href: xpsdocumentwriter-raise-writingcompleted-method-system-windows-xps.md
+      - name: raise__WritingPrintTicketRequired method
+        href: xpsdocumentwriter-raise-writingprintticketrequired-method-system-windows-xps.md
+      - name: raise__WritingProgressChanged
+        href: xpsdocumentwriter-raise-writingprogresschanged-method-system-windows-xps.md
+      - name: _WritingCancelled
+        href: xpsdocumentwriter-writingcancelled-event-system-windows-xps.md
+      - name: _WritingCompleted
+        href: xpsdocumentwriter-writingcompleted-event-system-windows-xps.md
+      - name: _WritingProgressChanged
+        href: xpsdocumentwriter-writingprogresschanged-event-system-windows-xps.md
+  - name: System.Xml
+    items:
+    - name: XmlReader class
+      items:
+      - name: XmlReader.CreateSqlReader method
+        href: system.xml.xmlreader.createsqlreader.md
   - name: adodb Namespace
     items:
-    - name: Connection Interface
+    - name: Connection interface
       href: adodb.connection.md
     - name: EventReason Enum
       href: adodb.eventreasonenum.md
@@ -92,23 +156,21 @@
       href: adodb.eventstatusenum.md
   - name: stdole Namespace
     items:
-    - name: DISPPARAMS Structure
+    - name: DISPPARAMS structure
       href: stdole.dispparams.md
-    - name: EXCEPINFO Structure
+    - name: EXCEPINFO structure
       href: stdole.excepinfo.md
-    - name: IFont.Name Property
+    - name: IFont.Name property
       href: stdole.ifont.name.md
-    - name: IFontDisp Interface
+    - name: IFontDisp interface
       href: stdole.ifontdisp.md
-    - name: IPicture.Handle Property
+    - name: IPicture.Handle property
       href: stdole.ipicture.handle.md
-    - name: IPictureDisp Interface
+    - name: IPictureDisp interface
       href: stdole.ipicturedisp.md
-    - name: IPictureDisp.Handle Property
+    - name: IPictureDisp.Handle property
       href: stdole.ipicturedisp.handle.md
-    - name: StdFont Interface
+    - name: StdFont interface
       href: stdole.stdfont.md
-    - name: StdPicture Interface
+    - name: StdPicture interface
       href: stdole.stdpicture.md
-
-

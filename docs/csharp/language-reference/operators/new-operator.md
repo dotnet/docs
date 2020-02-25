@@ -1,6 +1,5 @@
 ---
 title: "new operator - C# reference"
-ms.custom: seodec18
 ms.date: 06/25/2019
 helpviewer_keywords: 
   - "new operator keyword [C#]"
@@ -44,7 +43,7 @@ To create an instance of an [anonymous type](../../programming-guide/classes-and
 
 You don't have to destroy earlier created type instances. Instances of both reference and value types are destroyed automatically. Instances of value types are destroyed as soon as the context that contains them is destroyed. Instances of reference types are destroyed by the [garbage collector](../../../standard/garbage-collection/index.md) at unspecified time after the last reference to them is removed.
 
-For types that contain unmanaged resources, for example, a file handle, it's recommended to employ deterministic clean-up to ensure that the resources they contain are released as soon as possible. For more information, see the <xref:System.IDisposable?displayProperty=nameWithType> API reference and the [using statement](../keywords/using-statement.md) article.
+For type instances that contain unmanaged resources, for example, a file handle, it's recommended to employ deterministic clean-up to ensure that the resources they contain are released as soon as possible. For more information, see the <xref:System.IDisposable?displayProperty=nameWithType> API reference and the [using statement](../keywords/using-statement.md) article.
 
 ## Operator overloadability
 

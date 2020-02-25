@@ -13,11 +13,11 @@ You can make entities serializable when you generate your code. Entity classes a
 ## Example  
  The following SQLMetal command lines produce files that have serializable entities.  
   
-```  
+```console  
 sqlmetal /code:nwserializable.vb /language:vb "c:\northwnd.mdf" /sprocs /functions /pluralize /serialization:unidirectional  
 ```  
   
-```  
+```console  
 sqlmetal /code:nwserializable.cs /language:csharp "c:\northwnd.mdf" /sprocs /functions /pluralize /serialization:unidirectional  
 ```  
   

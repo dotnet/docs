@@ -85,7 +85,7 @@ Currently, Microsoft Azure supports up to [331 different database servers](https
 
 There might be a few cases where you still need to migrate to SQL Server as a regular VM. An example scenario is if you need to use SQL Server Reporting Services. In most cases, though, Azure SQL Database Managed Instance can provide everything you need to migrate from on-premises SQL servers, so migration to a SQL Server VM should be your last resort to try.
 
-## Use Azure Database Migration Service to migrate your relational databases to Azure 
+## Use Azure Database Migration Service to migrate your relational databases to Azure
 
 You can use Azure Database Migration Service to migrate relational databases like SQL Server, Oracle, and MySQL to Azure, whether your target database is Azure SQL Database, Azure SQL Database Managed Instance, or SQL Server on an Azure VM.
 

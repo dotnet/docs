@@ -180,7 +180,7 @@ Activity wf = new Sequence
   
  When the `StartOrder` method is invoked on the first workflow, the following output is displayed, which shows the flow of execution through the two workflows.  
   
-```Output  
+```output  
 Service1 waiting at: http://localhost:8080/Service1  
 Service2 waiting at: http://localhost:8081/Service2  
 Press enter to exit.   

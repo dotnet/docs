@@ -1,5 +1,5 @@
 ---
-title: "How to: Make an Object Variable Not Refer to Any Instance (Visual Basic)"
+title: "How to: Make an Object Variable Not Refer to Any Instance"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Nothing keyword [Visual Basic], variable assignment"
@@ -13,7 +13,7 @@ You can disassociate an object variable from any object instance by setting it t
   
 - Set the variable to `Nothing` in an assignment statement.  
   
-    ```  
+    ```vb  
     ' Assume account is a defined class  
     Dim currentAccount As account  
     currentAccount = Nothing  

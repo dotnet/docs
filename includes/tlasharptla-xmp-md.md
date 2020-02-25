@@ -1,1 +1,0 @@
-Extensible Metadata Platform (XMP)

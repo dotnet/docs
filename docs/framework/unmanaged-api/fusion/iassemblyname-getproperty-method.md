@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: e59fda62-77d5-4e37-89cb-ce7ae4627975
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IAssemblyName::GetProperty Method
 Gets a pointer to the property referenced by the specified property identifier.  

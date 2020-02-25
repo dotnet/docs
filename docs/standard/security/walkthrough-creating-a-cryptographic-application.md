@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "cryptography [NET Framework], cryptographic application example"
   - "cryptography [NET Framework], application example"
 ms.assetid: abf48c11-1e72-431d-9562-39cf23e1a8ff
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Walkthrough: Creating a Cryptographic Application
 This walkthrough demonstrates how to encrypt and decrypt content. The code examples are designed for a Windows Forms application. This application does not demonstrate real world scenarios, such as using smart cards. Instead, it demonstrates the fundamentals of encryption and decryption.  
@@ -55,7 +53,7 @@ This walkthrough demonstrates how to encrypt and decrypt content. The code examp
 |<xref:System.Windows.Forms.Button>|`buttonExportPublicKey`|Export Public Key|  
 |<xref:System.Windows.Forms.Button>|`buttonImportPublicKey`|Import Public Key|  
 |<xref:System.Windows.Forms.Button>|`buttonGetPrivateKey`|Get Private Key|  
-|<xref:System.Windows.Forms.Label>|`label1`||  
+|<xref:System.Windows.Forms.Label>|`label1`|Key not set|  
 |<xref:System.Windows.Forms.OpenFileDialog>|`openFileDialog1`||  
 |<xref:System.Windows.Forms.OpenFileDialog>|`openFileDialog2`||  
   

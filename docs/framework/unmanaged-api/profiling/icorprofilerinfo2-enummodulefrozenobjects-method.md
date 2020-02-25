@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 920b6483-7064-4d64-8613-fcc38ccf9b1e
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo2::EnumModuleFrozenObjects Method
 Gets an enumerator that allows iteration over the frozen objects in the specified module.This method is obsolete.  
@@ -34,7 +32,7 @@ HRESULT EnumModuleFrozenObjects(
  [in] The ID of the module that contains the frozen objects to be enumerated.  
   
  `ppEnum`  
- [out] A pointer to the address of an [ICorProfilerObjectEnum](../../../../docs/framework/unmanaged-api/profiling/icorprofilerobjectenum-interface.md) interface, which enumerates the frozen objects.  
+ [out] A pointer to the address of an [ICorProfilerObjectEnum](icorprofilerobjectenum-interface.md) interface, which enumerates the frozen objects.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -47,5 +45,5 @@ HRESULT EnumModuleFrozenObjects(
   
 ## See also
 
-- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
-- [ICorProfilerInfo2 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-interface.md)
+- [ICorProfilerInfo Interface](icorprofilerinfo-interface.md)
+- [ICorProfilerInfo2 Interface](icorprofilerinfo2-interface.md)

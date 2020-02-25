@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 2657d45d-26d2-4d0a-8473-32b652e3321d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostGCManager::ThreadIsBlockingForSuspension Method
 Notifies the host that the thread from which the method call was made is about to block for a garbage collection.  

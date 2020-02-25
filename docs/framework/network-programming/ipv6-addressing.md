@@ -71,5 +71,5 @@ In general, a node always has a link-local address. It might have a site-local a
 
 ## See also
 
-- [Internet Protocol Version 6](../../../docs/framework/network-programming/internet-protocol-version-6.md)
-- [Sockets](../../../docs/framework/network-programming/sockets.md)
+- [Internet Protocol Version 6](internet-protocol-version-6.md)
+- [Sockets](sockets.md)

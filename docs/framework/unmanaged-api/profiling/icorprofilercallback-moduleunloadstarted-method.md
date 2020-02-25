@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 2debcaab-6005-4245-afdb-4268bb7e74bd
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ModuleUnloadStarted Method
 Notifies the profiler that a module is being unloaded.  
@@ -46,5 +44,5 @@ HRESULT ModuleUnloadStarted(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
-- [ModuleUnloadFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-moduleunloadfinished-method.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [ModuleUnloadFinished Method](icorprofilercallback-moduleunloadfinished-method.md)

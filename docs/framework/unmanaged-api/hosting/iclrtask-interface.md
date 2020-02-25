@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: b3a44df3-578a-4451-b55e-70c8e7695f5e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRTask Interface
 Provides methods that allow the host to make requests of the common language runtime (CLR), or to provide notification to the CLR about the associated task.  

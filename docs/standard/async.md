@@ -14,7 +14,7 @@ Not so long ago, apps got faster simply by buying a newer PC or server and then 
 - Client applications are expected to be always-on, always-connected and constantly responsive to user interaction (for example, touch) with high app store ratings!
 - Services are expected to handle spikes in traffic by gracefully scaling up and down. 
 
-Async programming is a key technique that makes it straightforward to handle blocking I/O and concurrent operations on multiple cores. .NET provides the capability for apps and services to be responsive and elastic with easy-to-use, language-level asynchronous programming models in C#, VB, and F#.
+Async programming is a key technique that makes it straightforward to handle blocking I/O and concurrent operations on multiple cores. .NET provides the capability for apps and services to be responsive and elastic with easy-to-use, language-level asynchronous programming models in C#, Visual Basic, and F#.
 
 ## Why Write Async Code?
 

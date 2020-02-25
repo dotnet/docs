@@ -1,6 +1,5 @@
 ---
 title: "Pointer types - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 04/20/2018
 helpviewer_keywords: 
   - "unsafe code [C#], pointers"
@@ -17,7 +16,7 @@ void* identifier; //allowed but not recommended
 
 The type specified before the `*` in a pointer type is called the **referent type**. Only an [unmanaged type](../../language-reference/builtin-types/unmanaged-types.md) can be a referent type.
 
-Pointer types do not inherit from [object](../../language-reference/keywords/object.md) and no conversions exist between pointer types and `object`. Also, boxing and unboxing do not support pointers. However, you can convert between different pointer types and between pointer types and integral types.
+Pointer types do not inherit from [object](../../language-reference/builtin-types/reference-types.md) and no conversions exist between pointer types and `object`. Also, boxing and unboxing do not support pointers. However, you can convert between different pointer types and between pointer types and integral types.
 
 When you declare multiple pointers in the same declaration, the asterisk (*) is written together with the underlying type only; it is not used as a prefix to each pointer name. For example:
 
@@ -26,7 +25,7 @@ int* p1, p2, p3;   // Ok
 int *p1, *p2, *p3;   // Invalid in C#
 ```
 
-A pointer cannot point to a reference or to a [struct](../../language-reference/keywords/struct.md) that contains references, because an object reference can be garbage collected even if a pointer is pointing to it. The garbage collector does not keep track of whether an object is being pointed to by any pointer types.
+A pointer cannot point to a reference or to a [struct](../../language-reference/builtin-types/struct.md) that contains references, because an object reference can be garbage collected even if a pointer is pointing to it. The garbage collector does not keep track of whether an object is being pointed to by any pointer types.
 
 The value of the pointer variable of type `myType*` is the address of a variable of type `myType`. The following are examples of pointer type declarations:
 
@@ -81,5 +80,6 @@ For more information, see the [Pointer types](~/_csharplang/spec/unsafe-code.md#
 - [C# Programming Guide](../index.md)
 - [Unsafe Code and Pointers](index.md)
 - [Pointer Conversions](pointer-conversions.md)
-- [Types](../../language-reference/keywords/types.md)
+- [Reference types](../../language-reference/keywords/reference-types.md)
+- [Value types](../../language-reference/builtin-types/value-types.md)
 - [unsafe](../../language-reference/keywords/unsafe.md)

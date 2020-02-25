@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: a3ccdf18-4ec6-494d-9024-48e5c8c724f5
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugThreadState Enumeration
 Specifies the state of a thread for debugging.  
@@ -37,7 +35,7 @@ typedef enum CorDebugThreadState {
 |`THREAD_SUSPEND`|The thread cannot run.|  
   
 ## Remarks  
- The debugger uses the `CorDebugThreadState` enumeration to control a thread's execution. The state of a thread can be set by using the [ICorDebugThread::SetDebugState](../../../../docs/framework/unmanaged-api/debugging/icordebugthread-setdebugstate-method.md) or [ICorDebugController::SetAllThreadsDebugState](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-setallthreadsdebugstate-method.md) method.  
+ The debugger uses the `CorDebugThreadState` enumeration to control a thread's execution. The state of a thread can be set by using the [ICorDebugThread::SetDebugState](icordebugthread-setdebugstate-method.md) or [ICorDebugController::SetAllThreadsDebugState](icordebugcontroller-setallthreadsdebugstate-method.md) method.  
   
  A callback provided to the [hosting API](../../../../docs/framework/unmanaged-api/hosting/index.md) enables message pumping, so an interrupted state is not needed.  
   
@@ -52,4 +50,4 @@ typedef enum CorDebugThreadState {
   
 ## See also
 
-- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)
+- [Debugging Enumerations](debugging-enumerations.md)

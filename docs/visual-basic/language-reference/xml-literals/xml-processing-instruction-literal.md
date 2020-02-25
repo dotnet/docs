@@ -1,5 +1,5 @@
 ---
-title: "XML Processing Instruction Literal (Visual Basic)"
+title: "XML Processing Instruction Literal"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.XmlLiteralProcessingInstruction"

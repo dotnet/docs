@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "assemblies [.NET Framework], reflection-only loader context"
   - "reflection-only loader context"
 ms.assetid: 9818b660-52f5-423d-a9af-e75163aa7068
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Load Assemblies into the Reflection-Only Context
 

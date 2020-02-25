@@ -226,21 +226,22 @@ public class Order {
   
  The results of applying the `XmlTypeAttribute` and `SoapTypeAttribute` can be seen when you examine the service description, as shown in the following code example.  
   
-```xml  
-    <s:element name="BookOrderForm" type="s0:BigBookService" />   
-- <s:complexType name="BigBookService">  
-- <s:sequence>  
-    <s:element minOccurs="0" maxOccurs="1" name="LiteralOrderID" type="s:string" />   
-    </s:sequence>  
-  
-- <s:schema targetNamespace="http://tempuri.org/encodedTypes">  
-- <s:complexType name="SoapBookService">  
-- <s:sequence>  
-    <s:element minOccurs="1" maxOccurs="1" name="EncodedOrderID" type="s:string" />   
-    </s:sequence>  
-    </s:complexType>  
-    </s:schema>  
-```  
+```xml
+<s:element name="BookOrderForm" type="s0:BigBookService" />
+<s:complexType name="BigBookService">
+  <s:sequence>
+    <s:element minOccurs="0" maxOccurs="1" name="LiteralOrderID" type="s:string" />
+  </s:sequence>
+
+  <s:schema targetNamespace="http://tempuri.org/encodedTypes">
+    <s:complexType name="SoapBookService">
+      <s:sequence>
+        <s:element minOccurs="1" maxOccurs="1" name="EncodedOrderID" type="s:string" />
+      </s:sequence>
+    </s:complexType>
+  </s:schema>
+</s:complexType>
+```
   
  The effect of the `XmlRootAttribute` can also be seen in the HTTP GET and HTTP POST results, as follows.  
   
@@ -253,10 +254,10 @@ public class Order {
   
 ## See also
 
-- [XML and SOAP Serialization](../../../docs/standard/serialization/xml-and-soap-serialization.md)
-- [Attributes That Control Encoded SOAP Serialization](../../../docs/standard/serialization/attributes-that-control-encoded-soap-serialization.md)
-- [How to: Serialize an Object as a SOAP-Encoded XML Stream](../../../docs/standard/serialization/how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md)
-- [How to: Override Encoded SOAP XML Serialization](../../../docs/standard/serialization/how-to-override-encoded-soap-xml-serialization.md)
-- [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)
-- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)
-- [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)
+- [XML and SOAP Serialization](xml-and-soap-serialization.md)
+- [Attributes That Control Encoded SOAP Serialization](attributes-that-control-encoded-soap-serialization.md)
+- [How to: Serialize an Object as a SOAP-Encoded XML Stream](how-to-serialize-an-object-as-a-soap-encoded-xml-stream.md)
+- [How to: Override Encoded SOAP XML Serialization](how-to-override-encoded-soap-xml-serialization.md)
+- [Introducing XML Serialization](introducing-xml-serialization.md)
+- [How to: Serialize an Object](how-to-serialize-an-object.md)
+- [How to: Deserialize an Object](how-to-deserialize-an-object.md)

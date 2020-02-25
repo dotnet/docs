@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 37b95cce-9bfb-4ecf-a00b-33dcba782c67
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # EClrFailure Enumeration
 Describes the set of failures for which a host can set policy actions.  

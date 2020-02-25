@@ -187,11 +187,11 @@ The serialized class instance might resemble the following, if two items are ord
         <Item>
             <ItemID>aaa111</ItemID>
             <ItemPrice>34.22</ItemPrice>
-        <Item>
+        </Item>
         <Item>
             <ItemID>bbb222</ItemID>
             <ItemPrice>2.89</ItemPrice>
-        <Item>
+        </Item>
     </ItemsOrders>
 </PurchaseOrder>
 ```
@@ -201,9 +201,8 @@ The serialized class instance might resemble the following, if two items are ord
 You can create your own collection classes by implementing the <xref:System.Collections.ICollection> interface, and use the <xref:System.Xml.Serialization.XmlSerializer> to serialize instances of these classes. Note that when a class implements the <xref:System.Collections.ICollection> interface, only the collection contained by the class is serialized. Any public properties or fields added to the class will not be serialized. The class must include an **Add** method and an **Item** property (C# indexer) to be serialized.
 
 ```vb
-Imports System
-Imports System.IO
 Imports System.Collections
+Imports System.IO
 Imports System.Xml.Serialization
 
 Public Class Test
@@ -293,8 +292,8 @@ End Class
 
 ```csharp
 using System;
-using System.IO;
 using System.Collections;
+using System.IO;
 using System.Xml.Serialization;
 
 public class Test {
@@ -368,10 +367,9 @@ The `CreatePO` method creates the `PurchaseOrder`, `Address`, and `OrderedItem` 
 The `ReadPo` method is a little simpler. It just creates objects to deserialize and reads out their values. As with the `CreatePo` method, you must first construct an <xref:System.Xml.Serialization.XmlSerializer>, passing the type of the class to be deserialized to the constructor. Also, a <xref:System.IO.FileStream> is required to read the XML document. To deserialize the objects, call the <xref:System.Xml.Serialization.XmlSerializer.Deserialize%2A> method with the <xref:System.IO.FileStream> as an argument. The deserialized object must be cast to an object variable of type `PurchaseOrder`. The code then reads the values of the deserialized `PurchaseOrder`. Note that you can also read the PO.xml file that is created to see the actual XML output.
 
 ```vb
-Imports System
+Imports System.IO
 Imports System.Xml
 Imports System.Xml.Serialization
-Imports System.IO
 Imports Microsoft.VisualBasic
 
 ' The XmlRoot attribute allows you to set an alternate name
@@ -548,9 +546,9 @@ End Class 'Test
 
 ```csharp
 using System;
+using System.IO;
 using System.Xml;
 using System.Xml.Serialization;
-using System.IO;
 
 // The XmlRoot attribute allows you to set an alternate name
 // (PurchaseOrder) for the XML element and its namespace. By
@@ -766,9 +764,9 @@ The XML output might resemble the following.
 
 ## See also
 
-- [Introducing XML Serialization](../../../docs/standard/serialization/introducing-xml-serialization.md)
-- [Controlling XML Serialization Using Attributes](../../../docs/standard/serialization/controlling-xml-serialization-using-attributes.md)
-- [Attributes That Control XML Serialization](../../../docs/standard/serialization/attributes-that-control-xml-serialization.md)
+- [Introducing XML Serialization](introducing-xml-serialization.md)
+- [Controlling XML Serialization Using Attributes](controlling-xml-serialization-using-attributes.md)
+- [Attributes That Control XML Serialization](attributes-that-control-xml-serialization.md)
 - [XmlSerializer Class](xref:System.Xml.Serialization.XmlSerializer)
-- [How to: Serialize an Object](../../../docs/standard/serialization/how-to-serialize-an-object.md)
-- [How to: Deserialize an Object](../../../docs/standard/serialization/how-to-deserialize-an-object.md)
+- [How to: Serialize an Object](how-to-serialize-an-object.md)
+- [How to: Deserialize an Object](how-to-deserialize-an-object.md)

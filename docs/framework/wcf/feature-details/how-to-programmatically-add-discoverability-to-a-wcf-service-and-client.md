@@ -190,7 +190,7 @@ This topic explains how to make a Windows Communication Foundation (WCF) service
   
 3. The output from service.exe should look like the following output.  
   
-    ```Output  
+    ```output  
     Received Add(100,15.99)  
     Return: 115.99  
     Received Subtract(100,15.99)  
@@ -203,7 +203,7 @@ This topic explains how to make a Windows Communication Foundation (WCF) service
   
 4. The output from Discoveryclientapp.exe should look like the following output.  
   
-    ```Output  
+    ```output  
     Invoking CalculatorService at http://localhost:8000/ServiceModelSamples/service  
     Add(100,15.99) = 115.99  
     Subtract(100,15.99) = 84.01  

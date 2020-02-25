@@ -29,13 +29,13 @@ The **-doc** option allows you to place documentation comments in an XML file.
 ## Remarks  
  In source code files, documentation comments that precede the following can be processed and added to the XML file:  
   
-- Such user-defined types as a [class](../keywords/class.md), [delegate](../keywords/delegate.md), or [interface](../keywords/interface.md)  
+- Such user-defined types as a [class](../keywords/class.md), [delegate](../builtin-types/reference-types.md#the-delegate-type), or [interface](../keywords/interface.md)  
   
 - Such members as a field, [event](../keywords/event.md), [property](../../programming-guide/classes-and-structs/using-properties.md), or method  
   
  The source code file that contains Main is output first into the XML.  
   
- To use the generated .xml file for use with the [IntelliSense](/visualstudio/ide/using-intellisense) feature, let the file name of the .xml file be the same as the assembly you want to support and then make sure the .xml file is in the same directory as the assembly. Thus, when the assembly is referenced in the Visual Studio project, the .xml file is found as well. See [Supplying Code Comments](/visualstudio/ide/supplying-xml-code-comments) and for more information.  
+ To use the generated .xml file for use with the [IntelliSense](/visualstudio/ide/using-intellisense) feature, let the file name of the .xml file be the same as the assembly you want to support and then make sure the .xml file is in the same directory as the assembly. Thus, when the assembly is referenced in the Visual Studio project, the .xml file is found as well. See [Supplying Code Comments](/visualstudio/ide/reference/generate-xml-documentation-comments) and for more information.  
   
  Unless you compile with [-target:module](./target-module-compiler-option.md), `file` will contain \<assembly>\</assembly> tags specifying the name of the file containing the assembly manifest for the output file of the compilation.  
   

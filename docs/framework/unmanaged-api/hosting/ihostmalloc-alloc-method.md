@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: a3007f5e-d75d-4b37-842b-704e9edced5e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostMAlloc::Alloc Method
 Requests that the host allocate the specified amount of memory from the heap.  

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 93829d15-d942-4e2d-b7a4-dfc9d7fb96be
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcess2::SetUnmanagedBreakpoint Method
 Sets an unmanaged breakpoint at the specified native image offset.  

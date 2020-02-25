@@ -1,5 +1,5 @@
 ---
-title: "WriteOnly (Visual Basic)"
+title: "WriteOnly"
 ms.date: 07/20/2015
 f1_keywords: 
   - "WriteOnly"

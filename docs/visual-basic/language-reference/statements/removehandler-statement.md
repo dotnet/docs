@@ -1,5 +1,5 @@
 ---
-title: "RemoveHandler Statement (Visual Basic)"
+title: "RemoveHandler Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.RemoveHandlerMethod"
@@ -15,7 +15,7 @@ Removes the association between an event and an event handler.
   
 ## Syntax  
   
-```  
+```vb  
 RemoveHandler event, AddressOf eventhandler  
 ```  
   

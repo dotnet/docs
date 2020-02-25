@@ -9,20 +9,18 @@ helpviewer_keywords:
   - "text files produced by MSIL Disassembler"
   - "disassembling file for MSIL Assembler input"
 ms.assetid: db27f6b2-f1ec-499e-be3a-7eecf95ca42b
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Ildasm.exe (IL Disassembler)
 
 The IL Disassembler is a companion tool to the IL Assembler (*Ilasm.exe*). *Ildasm.exe* takes a portable executable (PE) file that contains intermediate language (IL) code and creates a text file suitable as input to *Ilasm.exe*.
 
-This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).
+This tool is automatically installed with Visual Studio. To run the tool, use the Developer Command Prompt for Visual Studio (or the Visual Studio Command Prompt in Windows 7). For more information, see [Command Prompts](developer-command-prompt-for-vs.md).
 
 At the command prompt, type the following:
 
 ## Syntax
 
-```
+```console
 ildasm [options] [PEfilename] [options]
 ```
 
@@ -111,14 +109,14 @@ Starting with the .NET Framework 4.5, *Ildasm.exe* handles an unrecognized marsh
 public void Test([MarshalAs((short)70)] int test) { }
 ```
 
-```
+```il
 // IL from Ildasm.exe output
 .method public hidebysig instance void Test(int32  marshal({ 46 }) test) cil managed
 ```
 
 Starting with the .NET Framework 4.5, *Ildasm.exe* displays attributes that are applied to interface implementations, as shown in the following excerpt from *Ildasm.exe* output:
 
-```
+```il
 .class public auto ansi beforefieldinit MyClass
   extends [mscorlib]System.Object
   implements IMyInterface
@@ -180,7 +178,7 @@ A nested type must be preceded by its containing class, delimited by a forward s
 
 ## See also
 
-- [Tools](../../../docs/framework/tools/index.md)
-- [Ilasm.exe (IL Assembler)](../../../docs/framework/tools/ilasm-exe-il-assembler.md)
+- [Tools](index.md)
+- [Ilasm.exe (IL Assembler)](ilasm-exe-il-assembler.md)
 - [Managed Execution Process](../../standard/managed-execution-process.md)
-- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [Command Prompts](developer-command-prompt-for-vs.md)

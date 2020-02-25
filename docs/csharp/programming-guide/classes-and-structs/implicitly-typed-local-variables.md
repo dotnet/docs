@@ -1,6 +1,5 @@
 ---
 title: "Implicitly typed local variables - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "implicitly-typed local variables [C#]"
@@ -24,13 +23,13 @@ The `var` keyword may be used in the following contexts:
 - In a [for](../../language-reference/keywords/for.md) initialization statement.
 
     ```csharp
-    for(var x = 1; x < 10; x++)
+    for (var x = 1; x < 10; x++)
     ```
 
 - In a [foreach](../../language-reference/keywords/foreach-in.md) initialization statement.
 
     ```csharp
-    foreach(var item in list){...}
+    foreach (var item in list) {...}
     ```
 
 - In a [using](../../language-reference/keywords/using-statement.md) statement.
@@ -39,11 +38,11 @@ The `var` keyword may be used in the following contexts:
     using (var file = new StreamReader("C:\\myfile.txt")) {...}
     ```
 
-For more information, see [How to: Use Implicitly Typed Local Variables and Arrays in a Query Expression](how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md).
+For more information, see [How to use implicitly typed local variables and arrays in a query expression](how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md).
 
 ## var and anonymous types
 
-In many cases the use of `var` is optional and is just a syntactic convenience. However, when a variable is initialized with an anonymous type you must declare the variable as `var` if you need to access the properties of the object at a later point. This is a common scenario in [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query expressions. For more information, see [Anonymous Types](anonymous-types.md).
+In many cases the use of `var` is optional and is just a syntactic convenience. However, when a variable is initialized with an anonymous type you must declare the variable as `var` if you need to access the properties of the object at a later point. This is a common scenario in LINQ query expressions. For more information, see [Anonymous Types](anonymous-types.md).
 
 From the perspective of your source code, an anonymous type has no name. Therefore, if a query variable has been initialized with `var`, then the only way to access the properties in the returned sequence of objects is to use `var` as the type of the iteration variable in the `foreach` statement.
 
@@ -57,7 +56,7 @@ The following restrictions apply to implicitly-typed variable declarations:
 
 - `var` cannot be used on fields at class scope.
 
-- Variables declared by using `var` cannot be used in the initialization expression. In other words, this expression is legal`: int i = (i = 20);` but this expression produces a compile-time error: `var i = (i = 20);`
+- Variables declared by using `var` cannot be used in the initialization expression. In other words, this expression is legal: `int i = (i = 20);` but this expression produces a compile-time error: `var i = (i = 20);`
 
 - Multiple implicitly-typed variables cannot be initialized in the same statement.
 
@@ -89,11 +88,11 @@ However, the use of `var` does have at least the potential to make your code mor
 
 - [C# Reference](../../language-reference/index.md)
 - [Implicitly Typed Arrays](../arrays/implicitly-typed-arrays.md)
-- [How to: Use Implicitly Typed Local Variables and Arrays in a Query Expression](how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md)
+- [How to use implicitly typed local variables and arrays in a query expression](how-to-use-implicitly-typed-local-variables-and-arrays-in-a-query-expression.md)
 - [Anonymous Types](anonymous-types.md)
 - [Object and Collection Initializers](object-and-collection-initializers.md)
 - [var](../../language-reference/keywords/var.md)
-- [LINQ Query Expressions](../linq-query-expressions/index.md)
+- [LINQ in C#](../../linq/index.md)
 - [LINQ (Language-Integrated Query)](../../linq/index.md)
 - [for](../../language-reference/keywords/for.md)
 - [foreach, in](../../language-reference/keywords/foreach-in.md)

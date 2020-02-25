@@ -4,7 +4,6 @@ description: Learn how .NET Core automatically finds and chooses runtime version
 author: thraka
 ms.author: adegeo
 ms.date: 06/26/2019
-ms.custom: "seodec18"
 ---
 
 # Select the .NET Core version to use
@@ -34,7 +33,7 @@ You can take advantage of the latest SDK features and improvements while targeti
 
 On rare occasions, you may need to use an earlier version of the SDK. You specify that version in a [*global.json* file](../tools/global-json.md). The "use latest" policy means you only use *global.json* to specify a .NET Core SDK version earlier than the latest installed version.
 
-*global.json* can be placed anywhere in the file hierarchy. The CLI searches upward from the project directory for the first *global.json* it finds. You control which projects a given *global.json* applies to by its place in the file system. The .NET CLI searches for a *global.json* file iteratively navigating the path upward from the current working directory. The first *global.json* file found specifies the version used. If that version is installed, that version is used. If the SDK specified in the *global.json* is not found, the .NET CLI rolls forward to the latest SDK installed. Roll-forward is the same as the default behavior, when no *global.json* file is found.
+*global.json* can be placed anywhere in the file hierarchy. The CLI searches upward from the project directory for the first *global.json* it finds. You control which projects a given *global.json* applies to by its place in the file system. The .NET CLI searches for a *global.json* file iteratively navigating the path upward from the current working directory. The first *global.json* file found specifies the version used. If that SDK version is installed, that version is used. If the SDK specified in the *global.json* is not found, the .NET CLI uses [matching rules](../tools/global-json.md#matching-rules) to select a compatible SDK, or fails if none is found.
 
 The following example shows the *global.json* syntax:
 
@@ -74,7 +73,7 @@ A given SDK supports a fixed set of frameworks, capped to the target framework o
 
 ## Framework-dependent apps roll forward
 
-When you run an application from source with [`dotnet run`](../tools/dotnet-run.md), from a [**framework-dependent deployment**](../deploying/index.md#framework-dependent-deployments-fdd) with [`dotnet myapp.dll`](../tools/dotnet.md#description), or from a [**framework-dependent executable**](../deploying/index.md#framework-dependent-executables-fde) with `myapp.exe`, the `dotnet` executable is the **host** for the application.
+When you run an application from source with [`dotnet run`](../tools/dotnet-run.md), from a [**framework-dependent deployment**](../deploying/index.md#publish-runtime-dependent) with [`dotnet myapp.dll`](../tools/dotnet.md#description), or from a [**framework-dependent executable**](../deploying/index.md#publish-runtime-dependent) with `myapp.exe`, the `dotnet` executable is the **host** for the application.
 
 The host chooses the latest patch version installed on the machine. For example, if you specified `netcoreapp2.0` in your project file, and `2.0.4` is the latest .NET runtime installed, the `2.0.4` runtime is used.
 
@@ -97,7 +96,7 @@ It's possible that 2.0.5 and 2.2.2 behave differently, particularly for scenario
 
 ## Self-contained deployments include the selected runtime
 
-You can publish an application as a [**self-contained distribution**](../deploying/index.md#self-contained-deployments-scd). This approach bundles the .NET Core runtime and libraries with your application. Self-contained deployments don't have a dependency on runtime environments. Runtime version selection occurs at publishing time, not run time.
+You can publish an application as a [**self-contained distribution**](../deploying/index.md#publish-self-contained). This approach bundles the .NET Core runtime and libraries with your application. Self-contained deployments don't have a dependency on runtime environments. Runtime version selection occurs at publishing time, not run time.
 
 The publishing process selects the latest patch version of the given runtime family. For example, `dotnet publish` will select .NET Core 2.0.4 if it is the latest patch version in the .NET Core 2.0 runtime family. The target framework (including the latest installed security patches) is packaged with the application.
 

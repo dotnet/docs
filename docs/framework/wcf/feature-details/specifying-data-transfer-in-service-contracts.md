@@ -135,13 +135,13 @@ public float GetAirfare(
 ```  
   
 ## Describing Empty Messages  
- An empty request message can be described by having no input or reference parameters. For example in C#:  
+ An empty request message can be described by having no input or reference parameters. For example, in C#:  
   
  `[OperationContract]`  
   
  `public int GetCurrentTemperature();`  
   
- For example in VB:  
+ For example, in Visual Basic:  
   
  `<OperationContract()>`  
   
@@ -490,7 +490,7 @@ For Each op As OperationDescription In factory.Endpoint.Contract.Operations
     Dim client As IDataService = factory.CreateChannel  
 ```  
   
- Following is the equivalent code on the service, in the self-hosted case.  
+The following is the equivalent code on the service, in the self-hosted case:
   
 ```csharp  
 ServiceHost serviceHost = new ServiceHost(typeof(IDataService))  

@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "<appDomainManagerAssembly> element"
   - "appDomainManagerAssembly element"
 ms.assetid: c7c56e39-a700-44f5-b94e-411bfce339d9
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<appDomainManagerAssembly> Element
 Specifies the assembly that provides the application domain manager for the default application domain in the process.  

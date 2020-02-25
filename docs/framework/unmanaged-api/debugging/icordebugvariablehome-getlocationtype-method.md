@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 88027c55-8ec6-4f1e-a55b-7eefdbbc3515
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugVariableHome::GetLocationType Method
 Gets the type of the variable's native location.  
@@ -31,7 +29,7 @@ HRESULT GetLocationType(
   
 ## Parameters  
  `pLocationType`  
- [out] A pointer to the type of the variable's native location.  See the [VariableLocationType](../../../../docs/framework/unmanaged-api/debugging/variablelocationtype-enumeration.md) enumeration for more information.  
+ [out] A pointer to the type of the variable's native location.  See the [VariableLocationType](variablelocationtype-enumeration.md) enumeration for more information.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  
@@ -44,5 +42,5 @@ HRESULT GetLocationType(
   
 ## See also
 
-- [ICorDebugVariableHome Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-interface.md)
-- [VariableLocationType Enumeration](../../../../docs/framework/unmanaged-api/debugging/variablelocationtype-enumeration.md)
+- [ICorDebugVariableHome Interface](icordebugvariablehome-interface.md)
+- [VariableLocationType Enumeration](variablelocationtype-enumeration.md)

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 33c1d269-c85e-4cb1-b0e6-1c510c8fb5fa
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IAssemblyCache::InstallAssembly Method
 Installs the specified assembly in the global assembly cache.  

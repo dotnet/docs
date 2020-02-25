@@ -15,7 +15,7 @@ Specifies where to align the sections of the output file.
   
 ## Syntax  
   
-```  
+```console  
 -filealign:number  
 ```  
   

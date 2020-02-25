@@ -41,7 +41,7 @@ The following example uses a `ref` iteration variable to set the value of each i
 
 ## C# language specification
 
-For more information, see [The foreach statement](~/_csharplang/spec/statements.md#the-foreach-statement) section of the [C# language specification](../language-specification/index.md).
+For more information, see [The foreach statement](~/_csharplang/spec/statements.md#the-foreach-statement) section of the [C# language specification](/dotnet/csharp/language-reference/language-specification/introduction).
 
 ## See also
 

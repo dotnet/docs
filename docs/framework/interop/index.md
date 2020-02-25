@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, about interoperation"
   - "components [.NET Framework], interoperation with unmanaged code"
 ms.assetid: ccb68ce7-b0e9-4ffb-839d-03b1cd2c1258
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Interoperating with unmanaged code
 
@@ -36,9 +34,6 @@ Describes marshaling for COM interop and platform invoke.
 [How to: Map HRESULTs and Exceptions](how-to-map-hresults-and-exceptions.md)  
 Describes the mapping between exceptions and HRESULTs.
 
-[COM Wrappers](com-wrappers.md)  
-Describes the wrappers provided by COM interop.
-
 [Type Equivalence and Embedded Interop Types](type-equivalence-and-embedded-interop-types.md)  
 Describes how type information for COM types is embedded in assemblies, and how the common language runtime determines the equivalence of embedded COM types.
 
@@ -53,3 +48,8 @@ Describes how COM interop can activate components without using the Windows regi
 
 [How to: Configure .NET Framework-Based COM Components for Registration-Free Activation](configure-net-framework-based-com-components-for-reg.md)  
 Describes how to create an application manifest and how to create and embed a component manifest.
+
+## Related sections
+
+[COM Wrappers](../../standard/native-interop/com-wrappers.md)  
+Describes the wrappers provided by COM interop.

@@ -1,5 +1,5 @@
 ---
-title: "How to: Resize Controls on Windows Forms"
+title: Resize Controls
 ms.date: "03/30/2017"
 f1_keywords:
   - "Size.Height"
@@ -9,8 +9,8 @@ helpviewer_keywords:
   - "size [Windows Forms], controls"
   - "Windows Forms controls, size"
 ms.assetid: d2dba441-a8c0-4705-b8e8-2e5d86d6e7ec
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # How to: Resize controls on Windows Forms

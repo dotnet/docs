@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: bd285233-a4a2-4b52-bbca-0025a60e4864
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # PreBindAssemblyEx Function
 Gets the post-policy display name for an assembly.  

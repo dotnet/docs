@@ -11,7 +11,7 @@ The topics in this section demonstrate how to use the printing and print system 
   
 ## In This Section  
  [Invoke a Print Dialog](how-to-invoke-a-print-dialog.md)  
- Instructions for XAML markup to declare a [!INCLUDE[TLA#tla_win](../../../../includes/tlasharptla-win-md.md)] print dialog object and using code to invoke the dialog from within a Windows Presentation Foundation (WPF) application.  
+ Instructions for XAML markup to declare a Microsoft Windows print dialog object and using code to invoke the dialog from within a Windows Presentation Foundation (WPF) application.  
   
  [Clone a Printer](how-to-clone-a-printer.md)  
  Instructions for how to install a second print queue with exactly the same properties as an existing print queue.  

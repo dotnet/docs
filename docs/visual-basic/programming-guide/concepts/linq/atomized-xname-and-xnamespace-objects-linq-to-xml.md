@@ -1,5 +1,5 @@
 ---
-title: "Atomized XName and XNamespace Objects (LINQ to XML) (Visual Basic)"
+title: "Atomized XName and XNamespace Objects (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 21ee7585-7df9-40b4-8c76-a12bb5f29bb3
 ---
@@ -41,7 +41,7 @@ End If
 
 This example produces the following output:
 
-```
+```console
 r1 and r2 have names that refer to the same instance.
 The name of r1 and the name in 'n' refer to the same instance.
 ```

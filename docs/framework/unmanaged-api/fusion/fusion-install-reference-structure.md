@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: ae181ec8-36bf-4ed1-9a02-ca27d417c80b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # FUSION_INSTALL_REFERENCE Structure
 Represents a reference that an application makes to an assembly that the application has installed in the global assembly cache.  

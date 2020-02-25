@@ -1,5 +1,5 @@
 ---
-title: "Object Lifetime: How Objects Are Created and Destroyed (Visual Basic)"
+title: "Object Lifetime: How Objects Are Created and Destroyed"
 ms.date: 07/20/2015
 f1_keywords:
   - "vb.Constructor"

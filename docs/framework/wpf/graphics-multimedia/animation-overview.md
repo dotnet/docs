@@ -32,7 +32,7 @@ Animation on a computer is similar. For example, a program that makes a drawing 
 
 - The program then updates the rectangle with the new value and redraws it.
 
-Prior to [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], [!INCLUDE[TLA#tla_win](../../../../includes/tlasharptla-win-md.md)] developers had to create and manage their own timing systems or use special custom libraries. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] includes an efficient timing system that is exposed through managed code and [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] and that is deeply integrated into the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] framework. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] animation makes it easy to animate controls and other graphical objects.
+Prior to [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)], Microsoft Windows developers had to create and manage their own timing systems or use special custom libraries. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] includes an efficient timing system that is exposed through managed code and [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] and that is deeply integrated into the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] framework. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] animation makes it easy to animate controls and other graphical objects.
 
 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] handles all the behind-the-scenes work of managing a timing system and redrawing the screen efficiently. It provides timing classes that enable you to focus on the effects you want to create, instead of the mechanics of achieving those effects. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] also makes it easy to create your own animations by exposing animation base classes from which your classes can inherit, to produce customized animations. These custom animations gain many of the performance benefits of the standard animation classes.
 
@@ -286,7 +286,7 @@ Assigning a name to a <xref:System.Windows.FrameworkElement> differs from assign
 
 - To make a <xref:System.Windows.FrameworkElement> an animation target, you give it a name by setting its <xref:System.Windows.FrameworkElement.Name%2A> property. In code, you must also use the <xref:System.Windows.FrameworkElement.RegisterName%2A> method to register the element name with the page to which it belongs.
 
-- To make a <xref:System.Windows.Freezable> object an animation target in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], you use the [x:Name Directive](../../xaml-services/x-name-directive.md) to assign it a name. In code, you just use the <xref:System.Windows.FrameworkElement.RegisterName%2A> method to register the object with the page to which it belongs.
+- To make a <xref:System.Windows.Freezable> object an animation target in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], you use the [x:Name Directive](../../../desktop-wpf/xaml-services/xname-directive.md) to assign it a name. In code, you just use the <xref:System.Windows.FrameworkElement.RegisterName%2A> method to register the object with the page to which it belongs.
 
 The sections that follow provide an example of naming an element in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] and code. For more detailed information about naming and targeting, see the [Storyboards Overview](storyboards-overview.md).
 
@@ -335,7 +335,7 @@ Although a clock is also created for the <xref:System.Windows.Media.Animation.St
 
 For an animation to reflect data binding or animation changes, its clock must be regenerated. Clocks are not regenerated for you automatically. To make an animation reflect changes, reapply its storyboard by using a <xref:System.Windows.Media.Animation.BeginStoryboard> or the <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method. When you use either of these methods, the animation restarts. In code, you can use the <xref:System.Windows.Media.Animation.Storyboard.Seek%2A> method to shift the storyboard back to its previous position.
 
-For an example of a data bound animation, see [Key Spline Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160011). For more information about how the animation and timing system works, see [Animation and Timing System Overview](animation-and-timing-system-overview.md).
+For an example of a data bound animation, see [Key Spline Animation Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Animation/KeySplineAnimations). For more information about how the animation and timing system works, see [Animation and Timing System Overview](animation-and-timing-system-overview.md).
 
 <a name="otherWaysToAnimateSection"></a>
 
@@ -349,11 +349,11 @@ The examples in this overview show how to animate by using storyboards. When you
 
 The following samples can help you start adding animation to your applications.
 
-- [From, To, and By Animation Target Values Sample](https://go.microsoft.com/fwlink/?LinkID=159988)
+- [From, To, and By Animation Target Values Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Animation/TargetValues)
 
   Demonstrates different From/To/By settings.
 
-- [Animation Timing Behavior Sample](https://go.microsoft.com/fwlink/?LinkID=159970)
+- [Animation Timing Behavior Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Animation/AnimationTiming)
 
   Demonstrates the different ways you can control the timing behavior of an animation. This sample also shows how to data bind the destination value of an animation.
 

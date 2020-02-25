@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 4ac7077c-8d88-49c4-b360-b3af0c541c63
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcessEnum::Next Method
 Gets the specified number of ICorDebugProcess instances from the enumeration, starting at the current position.  

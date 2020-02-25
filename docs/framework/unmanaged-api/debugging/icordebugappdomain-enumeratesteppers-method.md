@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 3f3c4503-570e-44c1-ae6a-a3c6b840c732
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugAppDomain::EnumerateSteppers Method
 Gets an enumerator for all active steppers in the application domain.  

@@ -5,8 +5,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: b73dd4f4-f2dc-47a2-9425-3896e92321fb
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Mitigation: XML Schema Validation
 In the .NET Framework 4.6, XSD schema validation detects a violation of the unique constraint if a compound key is used and one key is empty.  
@@ -33,4 +31,4 @@ In the .NET Framework 4.6, XSD schema validation detects a violation of the uniq
   
 ## See also
 
-- [Retargeting Changes](retargeting-changes-in-the-net-framework-4-6.md)
+- [Application compatibility](application-compatibility.md)

@@ -5,8 +5,6 @@ f1_keywords:
   - "Crst_DisableSpinWait"
 helpviewer_keywords: 
   - "Crst_DisableSpinWait element"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<Crst_DisableSpinWait> element
 

@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "GetDemultiplexedStub function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetDemultiplexedStub function
 Creates an object forwarder sink to assist a client in receiving asynchronous calls from Windows Management.

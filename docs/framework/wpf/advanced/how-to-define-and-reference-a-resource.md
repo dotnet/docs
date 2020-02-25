@@ -24,4 +24,4 @@ Note that one of the properties within the setters of the `Label` style also ref
 ## See also
 
 - [XAML Resources](xaml-resources.md)
-- [Styling and Templating](../controls/styling-and-templating.md)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)

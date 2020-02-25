@@ -49,7 +49,7 @@ Defines the security capabilities of the [\<wsDualHttpBinding>](wsdualhttpbindin
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<binding>](../../../misc/binding.md)|Defines all binding capabilities of the [\<wsDualHttpBinding>](wsdualhttpbinding.md).|  
+|[\<binding>](bindings.md)|Defines all binding capabilities of the [\<wsDualHttpBinding>](wsdualhttpbinding.md).|  
   
 ## Remarks  
  A dual binding exposes the IP address of the client to the service. The client should use security to ensure that it only connects to services it trusts.  
@@ -62,4 +62,4 @@ Defines the security capabilities of the [\<wsDualHttpBinding>](wsdualhttpbindin
 - [Bindings](../../../wcf/bindings.md)
 - [Configuring System-Provided Bindings](../../../wcf/feature-details/configuring-system-provided-bindings.md)
 - [Using Bindings to Configure Services and Clients](../../../wcf/using-bindings-to-configure-services-and-clients.md)
-- [\<binding>](../../../misc/binding.md)
+- [\<binding>](bindings.md)

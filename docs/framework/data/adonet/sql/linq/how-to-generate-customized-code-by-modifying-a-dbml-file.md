@@ -19,7 +19,7 @@ You can generate Visual Basic or C# source code from a database markup language 
 ## Example  
  The following code generates a .dbml file from the Northwind sample database. As source for the database metadata, you can use either the name of the database or the name of the .mdf file.  
   
-```  
+```console  
 sqlmetal /server:myserver /database:northwind /dbml:mymeta.dbml  
 sqlmetal /dbml:mymeta.dbml mydbfile.mdf  
 ```  
@@ -27,7 +27,7 @@ sqlmetal /dbml:mymeta.dbml mydbfile.mdf
 ## Example  
  The following code generates Visual Basic or C# source code file from a .dbml file.  
   
-```  
+```console
 sqlmetal /namespace:nwind /code:nwind.vb /language:vb DBMLFile.dbml  
 sqlmetal /namespace:nwind /code:nwind.cs /language:csharp DBMLFile.dbml  
 ```  

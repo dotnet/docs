@@ -5,8 +5,6 @@ ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "tasks, further reading"
 ms.assetid: 98aee307-dde6-4cad-bb58-078497b8064f
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # For Further Reading (Parallel Programming)
 
@@ -16,7 +14,7 @@ The following resources contain additional information about parallel programmin
 
 - The [Design Patterns for Decomposition and Coordination on Multicore Architectures](https://docs.microsoft.com/previous-versions/msp-n-p/ff963553(v=pandp.10)) book describes patterns for parallel programming that use the parallel programming support introduced in the .NET Framework 4.
 
-- The [Parallel Programming with .NET](https://blogs.msdn.microsoft.com/pfxteam/) blog contains many in-depth articles about parallel programming in .NET.
+- The [Parallel Programming with .NET](https://devblogs.microsoft.com/pfxteam/) blog contains many in-depth articles about parallel programming in .NET.
 
 - The [Samples for Parallel Programming with the .NET Framework](https://code.msdn.microsoft.com/ParExtSamples) page contains many samples that demonstrate intermediate and advanced parallel programming techniques.
 

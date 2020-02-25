@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: bc789636-ca14-4f07-8f77-9305874d7495
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # LoadStringRCEx Function
 Translates an HRESULT value to an appropriate error message for the specified culture.  

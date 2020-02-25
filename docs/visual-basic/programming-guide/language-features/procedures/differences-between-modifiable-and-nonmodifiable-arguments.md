@@ -1,5 +1,5 @@
 ---
-title: "Differences Between Modifiable and Nonmodifiable Arguments (Visual Basic)"
+title: "Differences Between Modifiable and Nonmodifiable Arguments"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "procedures [Visual Basic], arguments"

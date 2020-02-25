@@ -88,7 +88,7 @@ This content model overview describes the supported content for a <xref:System.W
   
  <xref:System.Windows.Documents.Bold>, <xref:System.Windows.Documents.Figure>, <xref:System.Windows.Documents.Floater>, <xref:System.Windows.Documents.Hyperlink>, <xref:System.Windows.Documents.InlineUIContainer>, <xref:System.Windows.Documents.Italic>, <xref:System.Windows.Documents.LineBreak>, <xref:System.Windows.Documents.List>, <xref:System.Windows.Documents.ListItem>, <xref:System.Windows.Documents.Paragraph>, <xref:System.Windows.Documents.Run>, <xref:System.Windows.Documents.Section>, <xref:System.Windows.Documents.Span>, <xref:System.Windows.Documents.Table>, <xref:System.Windows.Documents.Underline>.  
   
- Note that this list only includes nonabstract types distributed with the [!INCLUDE[TLA2#tla_winfxsdk](../../../../includes/tla2sharptla-winfxsdk-md.md)]. You may use other types that inherit from <xref:System.Windows.Documents.TextElement>.  
+ Note that this list only includes nonabstract types distributed with the Windows SDK. You may use other types that inherit from <xref:System.Windows.Documents.TextElement>.  
   
 <a name="Types_that_Can_Contain_ContentControl_Objects"></a>   
 ## Types That Can Contain TextElement Objects  

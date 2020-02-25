@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 9f9f62b9-113a-4a98-8f9b-b593cef27b03
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugChain::GetReason Method
 Gets the reason for the genesis of this calling chain.  

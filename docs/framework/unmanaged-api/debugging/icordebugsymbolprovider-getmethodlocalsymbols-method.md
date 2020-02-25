@@ -2,8 +2,6 @@
 title: "ICorDebugSymbolProvider::GetMethodLocalSymbols Method"
 ms.date: "03/30/2017"
 ms.assetid: 8b989e38-e779-49d1-9e90-f1f920484b08
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugSymbolProvider::GetMethodLocalSymbols Method
 Gets a method's local symbols given the relative virtual address (RVA) of that method.  
@@ -30,7 +28,7 @@ HRESULT GetMethodLocalSymbols(
  [out] A pointer to the number of symbols retrieved by the method.  
   
  `pcFetchedSymbols`  
- [out] A pointer to an [ICorDebugVariableSymbol](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablesymbol-interface.md) array that contains the method's local symbols.  
+ [out] A pointer to an [ICorDebugVariableSymbol](icordebugvariablesymbol-interface.md) array that contains the method's local symbols.  
   
 ## Remarks  
   
@@ -48,6 +46,6 @@ HRESULT GetMethodLocalSymbols(
   
 ## See also
 
-- [GetMethodParameterSymbols Method](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-getmethodparametersymbols-method.md)
-- [ICorDebugSymbolProvider Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [GetMethodParameterSymbols Method](icordebugsymbolprovider-getmethodparametersymbols-method.md)
+- [ICorDebugSymbolProvider Interface](icordebugsymbolprovider-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

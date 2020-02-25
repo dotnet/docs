@@ -4,7 +4,6 @@ description: Learn unit test concepts in .NET Core through an interactive experi
 author: billwagner
 ms.author: wiwagn
 ms.date: 09/01/2017
-ms.custom: "seodec18"
 ---
 # Unit testing Visual Basic .NET Core libraries using dotnet test and xUnit
 
@@ -19,7 +18,7 @@ Inside this new directory, run [`dotnet new sln`](../tools/dotnet-new.md) to cre
 makes it easier to manage both the class library and the unit test project.
 Inside the solution directory, create a *PrimeService* directory. You have the following directory and file structure thus far:
 
-```console
+```
 /unit-testing-using-dotnet-test
     unit-testing-using-dotnet-test.sln
     /PrimeService
@@ -37,14 +36,13 @@ Namespace Prime.Services
 End Namespace
 ```
 
-Change the directory back to the *unit-testing-vb-using-dotnet-test* directory. Run [`dotnet sln add .\PrimeService\PrimeService.vbproj`](../tools/dotnet-sln.md)
-to add the class library project to the solution.
+Change the directory back to the *unit-testing-vb-using-dotnet-test* directory. Run [`dotnet sln add .\PrimeService\PrimeService.vbproj`](../tools/dotnet-sln.md) to add the class library project to the solution.
 
 ## Creating the test project
 
 Next, create the *PrimeService.Tests* directory. The following outline shows the directory structure:
 
-```console
+```
 /unit-testing-vb-using-dotnet-test
     unit-testing-vb-using-dotnet-test.sln
     /PrimeService
@@ -65,7 +63,7 @@ Make the *PrimeService.Tests* directory the current directory and create a new p
 
 The test project requires other packages to create and run unit tests. `dotnet new` in the previous step added xUnit and the xUnit runner. Now, add the `PrimeService` class library as another dependency to the project. Use the [`dotnet add reference`](../tools/dotnet-add-reference.md) command:
 
-```console
+```dotnetcli
 dotnet add reference ../PrimeService/PrimeService.vbproj
 ```
 
@@ -73,7 +71,7 @@ You can see the entire file in the [samples repository](https://github.com/dotne
 
 You have the following final folder layout:
 
-```console
+```
 /unit-testing-using-dotnet-test
     unit-testing-using-dotnet-test.sln
     /PrimeService

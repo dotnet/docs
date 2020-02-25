@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "PutMethod function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # PutMethod function
 Creates a method.

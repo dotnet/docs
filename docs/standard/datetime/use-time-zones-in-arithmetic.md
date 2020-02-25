@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "arithmetic operations [.NET Framework], dates and times"
   - "dates [.NET Framework], adding and subtracting"
 ms.assetid: 83dd898d-1338-415d-8cd6-445377ab7871
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Use time zones in date and time arithmetic
 

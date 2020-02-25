@@ -18,8 +18,6 @@ helpviewer_keywords:
 ms.assetid: 997e9e57-abb2-4217-bf20-1df621a75add
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # StrongNameTokenFromPublicKey Function
 Gets a token representing a public key. A strong name token is the shortened form of a public key.  

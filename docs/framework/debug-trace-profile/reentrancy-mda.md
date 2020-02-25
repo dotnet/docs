@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "managed code, debugging"
   - "native debugging, MDAs"
 ms.assetid: 7240c3f3-7df8-4b03-bbf1-17cdce142d45
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # reentrancy MDA
 The `reentrancy` managed debugging assistant (MDA) is activated when an attempt is made to transition from native to managed code in cases where a prior switch from managed to native code was not performed through an orderly transition.  
@@ -100,4 +98,4 @@ public class Reenter
   
 ## See also
 
-- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+- [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)

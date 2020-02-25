@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: ba25d166-1d28-4f1d-aca2-de298bbca669
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebug::EnumerateProcesses Method
 Gets an enumerator for the processes that are being debugged.  
@@ -44,4 +42,4 @@ HRESULT EnumerateProcesses (
   
 ## See also
 
-- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
+- [ICorDebug Interface](icordebug-interface.md)

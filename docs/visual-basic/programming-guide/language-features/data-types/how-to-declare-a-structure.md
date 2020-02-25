@@ -1,5 +1,5 @@
 ---
-title: "How to: Declare a Structure (Visual Basic)"
+title: "How to: Declare a Structure"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "declarations [Visual Basic], structures"
@@ -23,7 +23,7 @@ You begin a structure declaration with the [Structure Statement](../../../../vis
   
      You can specify the access level of a structure using the [Public](../../../../visual-basic/language-reference/modifiers/public.md), [Protected](../../../../visual-basic/language-reference/modifiers/protected.md), [Friend](../../../../visual-basic/language-reference/modifiers/friend.md), or [Private](../../../../visual-basic/language-reference/modifiers/private.md) keyword, or you can let it default to `Public`.  
   
-    ```  
+    ```vb  
     Private Structure employee  
     End Structure  
     ```  
@@ -32,7 +32,7 @@ You begin a structure declaration with the [Structure Statement](../../../../vis
   
      A structure must have at least one element. You must declare every element and specify an access level for it. If you use the [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md) without any keywords, the accessibility defaults to `Public`.  
   
-    ```  
+    ```vb  
     Private Structure employee  
         Public givenName As String  
         Public familyName As String  

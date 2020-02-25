@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 1bca66db-0359-4ae8-846e-e35f7e547e8b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugHeapValue Interface
 
@@ -25,8 +23,8 @@ A subclass of "ICorDebugValue" that represents an object that has been collected
   
 |Method|Description|  
 |------------|-----------------|  
-|[CreateRelocBreakpoint Method](../../../../docs/framework/unmanaged-api/debugging/icordebugheapvalue-createrelocbreakpoint-method.md)|Not implemented.|  
-|[IsValid Method](../../../../docs/framework/unmanaged-api/debugging/icordebugheapvalue-isvalid-method.md)|Gets a value that indicates whether the object represented by this `ICorDebugHeapValue` is valid, or has been reclaimed by the garbage collector. This method has been deprecated in the .NET Framework version 2.0.|  
+|[CreateRelocBreakpoint Method](icordebugheapvalue-createrelocbreakpoint-method.md)|Not implemented.|  
+|[IsValid Method](icordebugheapvalue-isvalid-method.md)|Gets a value that indicates whether the object represented by this `ICorDebugHeapValue` is valid, or has been reclaimed by the garbage collector. This method has been deprecated in the .NET Framework version 2.0.|  
   
 ## Remarks  
   
@@ -44,4 +42,4 @@ A subclass of "ICorDebugValue" that represents an object that has been collected
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

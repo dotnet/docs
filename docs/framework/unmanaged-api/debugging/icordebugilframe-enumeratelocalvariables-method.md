@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 1a67fa1b-2419-4cd0-aad4-6f46a0719b4b
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugILFrame::EnumerateLocalVariables Method
 Gets an enumerator for the local variables in this frame.  

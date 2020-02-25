@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 61d26dfd-7f24-4e7d-a63e-b30a463f08e1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostThreadPoolManager::GetAvailableThreads Method
 Gets the number of threads in the thread pool that are not currently processing work items.  

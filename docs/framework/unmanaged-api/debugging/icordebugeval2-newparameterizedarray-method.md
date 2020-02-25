@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 45efb8ba-c4de-4109-945f-e734d376b43c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEval2::NewParameterizedArray Method
 Allocates a new array of the specified element type and dimensions.  

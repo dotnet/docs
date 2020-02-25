@@ -1,5 +1,5 @@
 ---
-title: "LINQ to XML Events (Visual Basic)"
+title: "LINQ to XML Events"
 ms.date: 07/20/2015
 ms.assetid: 34923928-b99c-4004-956e-38f6db25e910
 ---
@@ -89,7 +89,7 @@ End Module
 ### Comments  
  This code produces the following output:  
   
-```  
+```console  
 Changed System.Xml.Linq.XElement Add  
 Changed System.Xml.Linq.XElement Add  
 Changed System.Xml.Linq.XText Remove  

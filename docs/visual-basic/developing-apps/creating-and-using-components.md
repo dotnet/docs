@@ -1,11 +1,12 @@
 ---
-title: "Creating and Using Components in Visual Basic"
+title: "Creating and Using Components"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "components [Visual Basic]"
 ms.assetid: ee6a4156-73f7-4e9b-8e01-c74c4798b65c
 ---
 # Creating and Using Components in Visual Basic
+
 A *component* is a class that implements the <xref:System.ComponentModel.IComponent?displayProperty=nameWithType> interface or that derives directly or indirectly from a class that implements <xref:System.ComponentModel.IComponent>. A .NET Framework component is an object that is reusable, can interact with other objects, and provides control over external resources and design-time support.  
   
  An important feature of components is that they are designable, which means that a class that is a component can be used in the Visual Studio Integrated Development Environment. A component can be added to the Toolbox, dragged and dropped onto a form, and manipulated on a design surface. Notice that base design-time support for components is built into the .NET Framework; a component developer does not have to do any additional work to take advantage of the base design-time functionality.  
@@ -13,6 +14,7 @@ A *component* is a class that implements the <xref:System.ComponentModel.ICompon
  A *control* is similar to a component, as both are designable. However, a control provides a user interface, while a component does not. A control must derive from one of the base control classes: <xref:System.Windows.Forms.Control> or <xref:System.Web.UI.Control>.  
   
 ## When to Create a Component  
+
  If your class will be used on a design surface (such as the Windows Forms or Web Forms Designer) but has no user interface, it should be a component and implement <xref:System.ComponentModel.IComponent>, or derive from a class that directly or indirectly implements <xref:System.ComponentModel.IComponent>.  
   
  The <xref:System.ComponentModel.Component> and <xref:System.ComponentModel.MarshalByValueComponent> classes are base implementations of the <xref:System.ComponentModel.IComponent> interface. The main difference between these classes is that the <xref:System.ComponentModel.Component> class is marshaled by reference, while <xref:System.ComponentModel.IComponent> is marshaled by value. The following list provides broad guidelines for implementers.  
@@ -24,6 +26,7 @@ A *component* is a class that implements the <xref:System.ComponentModel.ICompon
 - If your component cannot derive from one of the base implementations due to single inheritance, implement <xref:System.ComponentModel.IComponent>.  
   
 ## Component Classes  
+
  The <xref:System.ComponentModel> namespace provides classes that are used to implement the run-time and design-time behavior of components and controls. This namespace includes the base classes and interfaces for implementing attributes and type converters, binding to data sources, and licensing components.  
   
  The core component classes are:  
@@ -53,6 +56,7 @@ A *component* is a class that implements the <xref:System.ComponentModel.ICompon
 - <xref:System.ComponentModel.PropertyDescriptor>. Provides information about a property.  
   
 ## Related Sections  
+
  [Troubleshooting Control and Component Authoring](../../framework/winforms/controls/troubleshooting-control-and-component-authoring.md)  
  Explains how to fix common problems.  
   

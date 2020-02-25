@@ -7,13 +7,13 @@ dev_langs:
 ms.assetid: c1a78fa8-9f0c-40bc-a372-5575a48708fe
 ---
 # Queries in LINQ to DataSet
-A query is an expression that retrieves data from a data source. Queries are usually expressed in a specialized query language, such as SQL for relational databases and XQuery for XML. Therefore, developers have had to learn a new query language for each type of data source or data format that they query. [!INCLUDE[vbteclinqext](../../../../includes/vbteclinqext-md.md)] offers a simpler, consistent model for working with data across various kinds of data sources and formats. In a [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] query, you always work with programming objects.  
+A query is an expression that retrieves data from a data source. Queries are usually expressed in a specialized query language, such as SQL for relational databases and XQuery for XML. Therefore, developers have had to learn a new query language for each type of data source or data format that they query. Language-Integrated Query (LINQ) offers a simpler, consistent model for working with data across various kinds of data sources and formats. In a LINQ query, you always work with programming objects.  
   
- A [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] query operation consists of three actions: obtain the data source or sources, create the query, and execute the query.  
+ A LINQ query operation consists of three actions: obtain the data source or sources, create the query, and execute the query.  
   
- Data sources that implement the <xref:System.Collections.Generic.IEnumerable%601> generic interface can be queried through [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)]. Calling <xref:System.Data.DataTableExtensions.AsEnumerable%2A> on a <xref:System.Data.DataTable> returns an object which implements the generic <xref:System.Collections.Generic.IEnumerable%601> interface, which serves as the data source for LINQ to DataSet queries.  
+ Data sources that implement the <xref:System.Collections.Generic.IEnumerable%601> generic interface can be queried through LINQ. Calling <xref:System.Data.DataTableExtensions.AsEnumerable%2A> on a <xref:System.Data.DataTable> returns an object which implements the generic <xref:System.Collections.Generic.IEnumerable%601> interface, which serves as the data source for LINQ to DataSet queries.  
   
- In the query, you specify exactly the information that you want to retrieve from the data source. A query can also specify how that information should be sorted, grouped, and shaped before it is returned. In [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)], a query is stored in a variable. If the query is designed to return a sequence of values, the query variable itself must be a enumerable type. This query variable takes no action and returns no data; it only stores the query information. After you create a query you must execute that query to retrieve any data.  
+ In the query, you specify exactly the information that you want to retrieve from the data source. A query can also specify how that information should be sorted, grouped, and shaped before it is returned. In LINQ, a query is stored in a variable. If the query is designed to return a sequence of values, the query variable itself must be a enumerable type. This query variable takes no action and returns no data; it only stores the query information. After you create a query you must execute that query to retrieve any data.  
   
  In a query that returns a sequence of values, the query variable itself never holds the query results and only stores the query commands. Execution of the query is deferred until the query variable is iterated over in a `foreach` or `For Each` loop. This is called *deferred execution*; that is, query execution occurs some time after the query is constructed. This means that you can execute a query as often as you want to. This is useful when, for example, you have a database that is being updated by other applications. In your application, you can create a query to retrieve the latest information and repeatedly execute the query, returning the updated information every time.  
   
@@ -33,7 +33,7 @@ A query is an expression that retrieves data from a data source. Queries are usu
  [!code-vb[DP LINQ to DataSet Examples#SelectSimple1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB/Module1.vb#selectsimple1)]  
   
 ### Method-Based Query Syntax  
- The other way to formulate LINQ to DataSet queries is by using method-based queries. The method-based query syntax is a sequence of direct method calls to [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] operator methods, passing lambda expressions as the parameters. For more information, see [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md).  
+ The other way to formulate LINQ to DataSet queries is by using method-based queries. The method-based query syntax is a sequence of direct method calls to LINQ operator methods, passing lambda expressions as the parameters. For more information, see [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md).  
   
  This example uses <xref:System.Linq.Enumerable.Select%2A> to return all the rows from `Product` and display the product names.  
   
@@ -46,7 +46,7 @@ A query is an expression that retrieves data from a data source. Queries are usu
  [!code-csharp[DP LINQ to DataSet Examples#Composing](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/CS/Program.cs#composing)]
  [!code-vb[DP LINQ to DataSet Examples#Composing](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DP LINQ to DataSet Examples/VB/Module1.vb#composing)]  
   
- After a query has been executed, no additional queries can be composed, and all subsequent queries will use the in-memory [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] operators. Query execution will occur when you iterate over the query variable in a `foreach` or `For Each` statement, or by a call to one of the [!INCLUDE[vbteclinq](../../../../includes/vbteclinq-md.md)] conversion operators that cause immediate execution. These operators include the following: <xref:System.Linq.Enumerable.ToList%2A>, <xref:System.Linq.Enumerable.ToArray%2A>, <xref:System.Linq.Enumerable.ToLookup%2A>, and <xref:System.Linq.Enumerable.ToDictionary%2A>.  
+ After a query has been executed, no additional queries can be composed, and all subsequent queries will use the in-memory LINQ operators. Query execution will occur when you iterate over the query variable in a `foreach` or `For Each` statement, or by a call to one of the LINQ conversion operators that cause immediate execution. These operators include the following: <xref:System.Linq.Enumerable.ToList%2A>, <xref:System.Linq.Enumerable.ToArray%2A>, <xref:System.Linq.Enumerable.ToLookup%2A>, and <xref:System.Linq.Enumerable.ToDictionary%2A>.  
   
  In the following example, the first query returns all the products ordered by list price. The <xref:System.Linq.Enumerable.ToArray%2A> method is used to force immediate query execution:  
   
@@ -57,5 +57,5 @@ A query is an expression that retrieves data from a data source. Queries are usu
 
 - [Programming Guide](programming-guide-linq-to-dataset.md)
 - [Querying DataSets](querying-datasets-linq-to-dataset.md)
-- [Getting Started with LINQ in C#](../../../csharp/programming-guide/concepts/linq/getting-started-with-linq.md)
+- [Getting Started with LINQ in C#](../../../csharp/programming-guide/concepts/linq/index.md)
 - [Getting Started with LINQ in Visual Basic](../../../visual-basic/programming-guide/concepts/linq/getting-started-with-linq.md)

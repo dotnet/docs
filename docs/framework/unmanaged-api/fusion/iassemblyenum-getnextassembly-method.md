@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 5d7a4ca2-5f46-4ef1-a9a2-257884e9dc11
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IAssemblyEnum::GetNextAssembly Method
 Gets a pointer to the next [IAssemblyName](iassemblyname-interface.md) contained in this [IAssemblyEnum](iassemblyenum-interface.md) object.  

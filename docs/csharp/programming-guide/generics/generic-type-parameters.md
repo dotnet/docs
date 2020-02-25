@@ -1,6 +1,5 @@
 ---
 title: "Generic Type Parameters - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "generics [C#], type parameters"
@@ -31,7 +30,7 @@ In each of these instances of `GenericList<T>`, every occurrence of `T` in the c
   
 - **Consider** indicating constraints placed on a type parameter in the name of parameter. For example, a parameter constrained to `ISession` may be called `TSession`.
 
-The code analysis rule [CA1715](/visualstudio/code-quality/ca1715-identifiers-should-have-correct-prefix) can be used to ensure that type parameters are named appropriately.
+The code analysis rule [CA1715](/visualstudio/code-quality/ca1715) can be used to ensure that type parameters are named appropriately.
   
 ## See also
 

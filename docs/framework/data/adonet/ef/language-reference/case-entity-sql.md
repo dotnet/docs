@@ -8,7 +8,7 @@ Evaluates a set of `Boolean` expressions to determine the result.
   
 ## Syntax  
   
-```  
+```csharp  
 CASE  
      WHEN Boolean_expression THEN result_expression   
     [ ...n ]   

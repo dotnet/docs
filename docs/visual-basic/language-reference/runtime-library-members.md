@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic Runtime Library Members"
+title: "Runtime Library Members"
 ms.date: 07/20/2015
 f1_keywords: 
   - "VisualBasic"
@@ -11,6 +11,7 @@ helpviewer_keywords:
 ms.assetid: f5e82c6e-3500-452b-bdb8-78f0d5477604
 ---
 # Visual Basic Runtime Library Members
+
 The `Microsoft.VisualBasic` namespace contains the classes, modules, constants, and enumerations that constitute the Visual Basic runtime library. These library members provide procedures, properties, and constant values you can use in your code. Each module and class represents a particular category of functionality.  
   
 ## Microsoft.VisualBasic.Collection Class  
@@ -185,6 +186,7 @@ The `Microsoft.VisualBasic` namespace contains the classes, modules, constants, 
 |<xref:Microsoft.VisualBasic.VBMath.Randomize%2A>|<xref:Microsoft.VisualBasic.VBMath.Rnd%2A>|||  
   
 ## Microsoft.VisualBasic Constants and Enumerations  
+
  The `Microsoft.VisualBasic` namespace provides constants and enumerations as part of the Visual Basic run-time library. You can use these constant values in your code. Each enumeration represents a particular category of functionality. For more information, see [Constants and Enumerations](../../visual-basic/language-reference/constants-and-enumerations.md).  
   
 ## See also

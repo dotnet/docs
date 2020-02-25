@@ -8,7 +8,7 @@ Compares two expressions to determine whether the left expression has a value le
   
 ## Syntax  
   
-```  
+```sql  
 expression <= expression  
 ```  
   
@@ -26,7 +26,7 @@ expression <= expression
   
 2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
   
- [!code-csharp[DP EntityServices Concepts 2#LESS_OR_EQUALS](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#less_or_equals)]  
+ [!code-sql[DP EntityServices Concepts#LESS_OR_EQUALS](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#less_or_equals)]  
   
 ## See also
 

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: d6158360-22b1-4ace-ad85-d830b9964783
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRHostProtectionManager::SetEagerSerializeGrantSets Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  

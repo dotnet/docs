@@ -16,8 +16,6 @@ helpviewer_keywords:
 ms.assetid: d977ad29-6619-42e1-b0be-bc25ea950e80
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetCachePath Function
 Gets the path to the cached assembly, using the specified flags.  

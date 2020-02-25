@@ -8,7 +8,7 @@ The WHERE clause is applied directly after the [FROM](from-entity-sql.md) clause
   
 ## Syntax  
   
-```  
+```sql  
 [ WHERE expression ]  
 ```  
   
@@ -19,7 +19,7 @@ The WHERE clause is applied directly after the [FROM](from-entity-sql.md) clause
 ## Remarks  
  The WHERE clause has the same semantics as described for Transact-SQL. It restricts the objects produced by the query expression by limiting the elements of the source collections to those that pass the condition.  
   
-```  
+```sql  
 select c from cs as c where e  
 ```  
   

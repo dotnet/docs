@@ -1,12 +1,12 @@
 ---
-title: "How to: Create and Run a Long Running Workflow"
+title: How to create and run a long-running workflow
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: c0043c89-2192-43c9-986d-3ecec4dd8c9c
 ---
-# How to: Create and Run a Long Running Workflow
+# How to create and run a long-running workflow
 
 One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€™s ability to persist and unload idle workflows to a database. The steps in [How to: Run a Workflow](how-to-run-a-workflow.md) demonstrated the basics of workflow hosting using a console application. Examples were shown of starting workflows, workflow lifecycle handlers, and resuming bookmarks. In order to demonstrate workflow persistence effectively, a more complex workflow host is required that supports starting and resuming multiple workflow instances. This step in the tutorial demonstrates how to create a Windows form host application that supports starting and resuming multiple workflow instances, workflow persistence, and provides a basis for the advanced features such as tracking and versioning that are demonstrated in subsequent tutorial steps.
 
@@ -16,42 +16,20 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
 > [!NOTE]
 > To download a completed version or view a video walkthrough of the tutorial, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976).
 
-## In this topic
-
-- [To create the persistence database](how-to-create-and-run-a-long-running-workflow.md#BKMK_CreatePersistenceDatabase)
-
-- [To add the reference to the DurableInstancing assemblies](how-to-create-and-run-a-long-running-workflow.md#BKMK_AddReference)
-
-- [To create the workflow host form](how-to-create-and-run-a-long-running-workflow.md#BKMK_CreateForm)
-
-- [To add the properties and helper methods of the form](how-to-create-and-run-a-long-running-workflow.md#BKMK_AddHelperMethods)
-
-- [To configure the instance store, workflow lifecycle handlers, and extensions](how-to-create-and-run-a-long-running-workflow.md#BKMK_ConfigureWorkflowApplication)
-
-- [To enable starting and resuming multiple workflow types](how-to-create-and-run-a-long-running-workflow.md#BKMK_WorkflowVersionMap)
-
-- [To start a new workflow](how-to-create-and-run-a-long-running-workflow.md#BKMK_StartWorkflow)
-
-- [To resume a workflow](how-to-create-and-run-a-long-running-workflow.md#BKMK_ResumeWorkflow)
-
-- [To terminate a workflow](how-to-create-and-run-a-long-running-workflow.md#BKMK_TerminateWorkflow)
-
-- [To build and run the application](how-to-create-and-run-a-long-running-workflow.md#BKMK_BuildAndRun)
-
-### <a name="BKMK_CreatePersistenceDatabase"></a> To create the persistence database
+## To create the persistence database
 
 1. Open SQL Server Management Studio and connect to the local server, for example **.\SQLEXPRESS**. Right-click the **Databases** node on the local server, and select **New Database**. Name the new database **WF45GettingStartedTutorial**, accept all other values, and select **OK**.
 
     > [!NOTE]
     > Ensure that you have **Create Database** permission on the local server before creating the database.
 
-2. Choose **Open**, **File** from the **File** menu. Browse to the following folder: `C:\Windows\Microsoft.NET\Framework\v4.0.30319\sql\en`
+2. Choose **Open**, **File** from the **File** menu. Browse to the following folder: *C:\Windows\Microsoft.NET\Framework\v4.0.30319\sql\en*
 
     Select the following two files and click **Open**.
 
-    - SqlWorkflowInstanceStoreLogic.sql
+    - *SqlWorkflowInstanceStoreLogic.sql*
 
-    - SqlWorkflowInstanceStoreSchema.sql
+    - *SqlWorkflowInstanceStoreSchema.sql*
 
 3. Choose **SqlWorkflowInstanceStoreSchema.sql** from the **Window** menu. Ensure that **WF45GettingStartedTutorial** is selected in the **Available Databases** drop-down and choose **Execute** from the **Query** menu.
 
@@ -60,7 +38,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
     > [!WARNING]
     > It is important to perform the previous two steps in the correct order. If the queries are executed out of order, errors occur and the persistence database is not configured correctly.
 
-### <a name="BKMK_AddReference"></a> To add the reference to the DurableInstancing assemblies
+## To add the reference to the DurableInstancing assemblies
 
 1. Right-click **NumberGuessWorkflowHost** in **Solution Explorer** and select **Add Reference**.
 
@@ -68,10 +46,10 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
 
 3. Check the checkbox beside **System.Activities.DurableInstancing** and **System.Runtime.DurableInstancing** from the **Search Results** list, and click **OK**.
 
-### <a name="BKMK_CreateForm"></a> To create the workflow host form
+## To create the workflow host form
 
 > [!NOTE]
-> The steps in this procedure describe how to add and configure the form manually. If desired, you can download the solution files for the tutorial and add the completed form to the project. To download the tutorial files, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976). Once the files are downloaded, right-click **NumberGuessWorkflowHost** and choose **Add Reference**. Add a reference to **System.Windows.Forms** and **System.Drawing**. These references are added automatically if you add a new form from the **Add**, **New Item** menu, but must be added manually when importing a form. Once the references are added, right-click **NumberGuessWorkflowHost** in **Solution Explorer** and choose **Add**, **Existing Item**. Browse to the `Form` folder in the project files, select **WorkflowHostForm.cs** (or **WorkflowHostForm.vb**), and click **Add**. If you choose to import the form, then you can skip down to the next section, [To add the properties and helper methods of the form](how-to-create-and-run-a-long-running-workflow.md#BKMK_AddHelperMethods).
+> The steps in this procedure describe how to add and configure the form manually. If desired, you can download the solution files for the tutorial and add the completed form to the project. To download the tutorial files, see [Windows Workflow Foundation (WF45) - Getting Started Tutorial](https://go.microsoft.com/fwlink/?LinkID=248976). Once the files are downloaded, right-click **NumberGuessWorkflowHost** and choose **Add Reference**. Add a reference to **System.Windows.Forms** and **System.Drawing**. These references are added automatically if you add a new form from the **Add**, **New Item** menu, but must be added manually when importing a form. Once the references are added, right-click **NumberGuessWorkflowHost** in **Solution Explorer** and choose **Add**, **Existing Item**. Browse to the `Form` folder in the project files, select **WorkflowHostForm.cs** (or **WorkflowHostForm.vb**), and click **Add**. If you choose to import the form, then you can skip down to the next section, [To add the properties and helper methods of the form](#to-add-the-properties-and-helper-methods-of-the-form).
 
 1. Right-click **NumberGuessWorkflowHost** in **Solution Explorer** and choose **Add**, **New Item**.
 
@@ -116,7 +94,7 @@ One of the central features of Windows Workflow Foundation (WF) is the runtimeâ€
 
  ![Screenshot of a Windows Workflow Foundation Workflow Host Form.](./media/how-to-create-and-run-a-long-running-workflow/windows-workflow-foundation-workflowhostform.png)
 
-### <a name="BKMK_AddHelperMethods"></a> To add the properties and helper methods of the form
+## To add the properties and helper methods of the form
 
 The steps in this section add properties and helper methods to the form class that configure the UI of the form to support running and resuming number guess workflows.
 
@@ -125,19 +103,19 @@ The steps in this section add properties and helper methods to the form class th
 2. Add the following `using` (or `Imports`) statements at the top of the file with the other `using` (or `Imports`) statements.
 
     ```vb
-    Imports System.Windows.Forms
-    Imports System.Activities.DurableInstancing
     Imports System.Activities
+    Imports System.Activities.DurableInstancing
     Imports System.Data.SqlClient
     Imports System.IO
+    Imports System.Windows.Forms
     ```
 
     ```csharp
-    using System.Windows.Forms;
-    using System.Activities.DurableInstancing;
     using System.Activities;
+    using System.Activities.DurableInstancing;
     using System.Data.SqlClient;
     using System.IO;
+    using System.Windows.Forms;
     ```
 
 3. Add the following member declarations to the **WorkflowHostForm** class.
@@ -145,13 +123,13 @@ The steps in this section add properties and helper methods to the form class th
     ```vb
     Const connectionString = "Server=.\SQLEXPRESS;Initial Catalog=WF45GettingStartedTutorial;Integrated Security=SSPI"
     Dim store As SqlWorkflowInstanceStore
-    Dim WorkflowStarting As Boolean
+    Dim workflowStarting As Boolean
     ```
 
     ```csharp
     const string connectionString = "Server=.\\SQLEXPRESS;Initial Catalog=WF45GettingStartedTutorial;Integrated Security=SSPI";
     SqlWorkflowInstanceStore store;
-    bool WorkflowStarting;
+    bool workflowStarting;
     ```
 
     > [!NOTE]
@@ -201,12 +179,12 @@ The steps in this section add properties and helper methods to the form class th
 6. Add the following code to `WorkflowHostForm_Load`.
 
     ```vb
-    'Initialize the store and configure it so that it can be used for
-    'multiple WorkflowApplication instances.
+    ' Initialize the store and configure it so that it can be used for
+    ' multiple WorkflowApplication instances.
     store = New SqlWorkflowInstanceStore(connectionString)
     WorkflowApplication.CreateDefaultInstanceOwner(store, Nothing, WorkflowIdentityFilter.Any)
 
-    'Set default ComboBox selections.
+    ' Set default ComboBox selections.
     NumberRange.SelectedIndex = 0
     WorkflowType.SelectedIndex = 0
 
@@ -250,20 +228,20 @@ The steps in this section add properties and helper methods to the form class th
         Return
     End If
 
-    'Clear the status window.
+    ' Clear the status window.
     WorkflowStatus.Clear()
 
-    'Get the workflow version and display it.
-    'If the workflow is just starting then this info will not
-    'be available in the persistence store so do not try and retrieve it.
-    If Not WorkflowStarting Then
+    ' Get the workflow version and display it.
+    ' If the workflow is just starting then this info will not
+    ' be available in the persistence store so do not try and retrieve it.
+    If Not workflowStarting Then
         Dim instance As WorkflowApplicationInstance = _
             WorkflowApplication.GetInstance(WorkflowInstanceId, store)
 
         WorkflowVersion.Text = _
             WorkflowVersionMap.GetIdentityDescription(instance.DefinitionIdentity)
 
-        'Unload the instance.
+        ' Unload the instance.
         instance.Abandon()
     End If
     ```
@@ -280,7 +258,7 @@ The steps in this section add properties and helper methods to the form class th
     // Get the workflow version and display it.
     // If the workflow is just starting then this info will not
     // be available in the persistence store so do not try and retrieve it.
-    if (!WorkflowStarting)
+    if (!workflowStarting)
     {
         WorkflowApplicationInstance instance =
             WorkflowApplication.GetInstance(this.WorkflowInstanceId, store);
@@ -299,7 +277,7 @@ The steps in this section add properties and helper methods to the form class th
     Private Sub ListPersistedWorkflows()
         Using localCon As New SqlConnection(connectionString)
             Dim localCmd As String = _
-                "Select [InstanceId] from [System.Activities.DurableInstancing].[Instances] Order By [CreationTime]"
+                "SELECT [InstanceId] FROM [System.Activities.DurableInstancing].[Instances] ORDER BY [CreationTime]"
 
             Dim cmd As SqlCommand = localCon.CreateCommand()
             cmd.CommandText = localCmd
@@ -307,7 +285,7 @@ The steps in this section add properties and helper methods to the form class th
             Using reader As SqlDataReader = cmd.ExecuteReader(CommandBehavior.CloseConnection)
 
                 While (reader.Read())
-                    'Get the InstanceId of the persisted Workflow.
+                    ' Get the InstanceId of the persisted Workflow.
                     Dim id As Guid = Guid.Parse(reader(0).ToString())
                     InstanceId.Items.Add(id)
                 End While
@@ -317,10 +295,10 @@ The steps in this section add properties and helper methods to the form class th
     ```
 
     ```csharp
-    using (SqlConnection localCon = new SqlConnection(connectionString))
+    using (var localCon = new SqlConnection(connectionString))
     {
         string localCmd =
-            "Select [InstanceId] from [System.Activities.DurableInstancing].[Instances] Order By [CreationTime]";
+            "SELECT [InstanceId] FROM [System.Activities.DurableInstancing].[Instances] ORDER BY [CreationTime]";
 
         SqlCommand cmd = localCon.CreateCommand();
         cmd.CommandText = localCmd;
@@ -329,7 +307,7 @@ The steps in this section add properties and helper methods to the form class th
         {
             while (reader.Read())
             {
-                // Get the InstanceId of the persisted Workflow
+                // Get the InstanceId of the persisted Workflow.
                 Guid id = Guid.Parse(reader[0].ToString());
                 InstanceId.Items.Add(id);
             }
@@ -344,8 +322,8 @@ The steps in this section add properties and helper methods to the form class th
     ```vb
     Private Delegate Sub UpdateStatusDelegate(msg As String)
     Public Sub UpdateStatus(msg As String)
-        'We may be on a different thread so we need to
-        'make this call using BeginInvoke.
+        ' We may be on a different thread so we need to
+        ' make this call using BeginInvoke.
         If InvokeRequired Then
             BeginInvoke(New UpdateStatusDelegate(AddressOf UpdateStatus), msg)
         Else
@@ -355,7 +333,7 @@ The steps in this section add properties and helper methods to the form class th
 
             WorkflowStatus.AppendText(msg)
 
-            'Ensure that the newly added status is visible.
+            ' Ensure that the newly added status is visible.
             WorkflowStatus.SelectionStart = WorkflowStatus.Text.Length
             WorkflowStatus.ScrollToCaret()
         End If
@@ -394,7 +372,7 @@ The steps in this section add properties and helper methods to the form class th
         If InvokeRequired Then
             BeginInvoke(New GameOverDelegate(AddressOf GameOver))
         Else
-            'Remove this instance from the InstanceId combo box.
+            ' Remove this instance from the InstanceId combo box.
             InstanceId.Items.Remove(InstanceId.SelectedItem)
             InstanceId.SelectedIndex = -1
         End If
@@ -411,14 +389,14 @@ The steps in this section add properties and helper methods to the form class th
         }
         else
         {
-            // Remove this instance from the combo box
+            // Remove this instance from the combo box.
             InstanceId.Items.Remove(InstanceId.SelectedItem);
             InstanceId.SelectedIndex = -1;
         }
     }
     ```
 
-### <a name="BKMK_ConfigureWorkflowApplication"></a> To configure the instance store, workflow lifecycle handlers, and extensions
+## To configure the instance store, workflow lifecycle handlers, and extensions
 
 1. Add a `ConfigureWorkflowApplication` method to the form class.
 
@@ -439,7 +417,7 @@ The steps in this section add properties and helper methods to the form class th
 2. In `ConfigureWorkflowApplication`, specify the `SqlWorkflowInstanceStore` for the `WorkflowApplication`.
 
     ```vb
-    'Configure the persistence store.
+    ' Configure the persistence store.
     wfApp.InstanceStore = store
     ```
 
@@ -451,8 +429,8 @@ The steps in this section add properties and helper methods to the form class th
 3. Next, create a `StringWriter` instance and add it to the `Extensions` collection of the `WorkflowApplication`. When a `StringWriter` is added to the extensions it captures all `WriteLine` activity output. When the workflow becomes idle, the `WriteLine` output can be extracted from the `StringWriter` and displayed on the form.
 
     ```vb
-    'Add a StringWriter to the extensions. This captures the output
-    'from the WriteLine activities so we can display it in the form.
+    ' Add a StringWriter to the extensions. This captures the output
+    ' from the WriteLine activities so we can display it in the form.
     Dim sw As New StringWriter()
     wfApp.Extensions.Add(sw)
     ```
@@ -460,7 +438,7 @@ The steps in this section add properties and helper methods to the form class th
     ```csharp
     // Add a StringWriter to the extensions. This captures the output
     // from the WriteLine activities so we can display it in the form.
-    StringWriter sw = new StringWriter();
+    var sw = new StringWriter();
     wfApp.Extensions.Add(sw);
     ```
 
@@ -470,14 +448,12 @@ The steps in this section add properties and helper methods to the form class th
     wfApp.Completed = _
         Sub(e As WorkflowApplicationCompletedEventArgs)
             If e.CompletionState = ActivityInstanceState.Faulted Then
-                UpdateStatus(String.Format("Workflow Terminated. Exception: {0}" & vbCrLf & "{1}", _
-                    e.TerminationException.GetType().FullName, _
-                    e.TerminationException.Message))
+                UpdateStatus($"Workflow Terminated. Exception: {e.TerminationException.GetType().FullName}{vbCrLf}{e.TerminationException.Message}")
             ElseIf e.CompletionState = ActivityInstanceState.Canceled Then
                 UpdateStatus("Workflow Canceled.")
             Else
-                Dim Turns As Integer = Convert.ToInt32(e.Outputs("Turns"))
-                UpdateStatus(String.Format("Congratulations, you guessed the number in {0} turns.", Turns))
+                Dim turns As Integer = Convert.ToInt32(e.Outputs("Turns"))
+                UpdateStatus($"Congratulations, you guessed the number in {turns} turns.")
             End If
             GameOver()
         End Sub
@@ -488,9 +464,7 @@ The steps in this section add properties and helper methods to the form class th
     {
         if (e.CompletionState == ActivityInstanceState.Faulted)
         {
-            UpdateStatus(string.Format("Workflow Terminated. Exception: {0}\r\n{1}",
-                e.TerminationException.GetType().FullName,
-                e.TerminationException.Message));
+            UpdateStatus($"Workflow Terminated. Exception: {e.TerminationException.GetType().FullName}\r\n{e.TerminationException.Message}");
         }
         else if (e.CompletionState == ActivityInstanceState.Canceled)
         {
@@ -498,8 +472,8 @@ The steps in this section add properties and helper methods to the form class th
         }
         else
         {
-            int Turns = Convert.ToInt32(e.Outputs["Turns"]);
-            UpdateStatus(string.Format("Congratulations, you guessed the number in {0} turns.", Turns));
+            int turns = Convert.ToInt32(e.Outputs["Turns"]);
+            UpdateStatus($"Congratulations, you guessed the number in {turns} turns.");
         }
         GameOver();
     };
@@ -510,16 +484,12 @@ The steps in this section add properties and helper methods to the form class th
     ```vb
     wfApp.Aborted = _
         Sub(e As WorkflowApplicationAbortedEventArgs)
-            UpdateStatus(String.Format("Workflow Aborted. Exception: {0}" & vbCrLf & "{1}", _
-                e.Reason.GetType().FullName, _
-                e.Reason.Message))
+            UpdateStatus($"Workflow Aborted. Exception: {e.Reason.GetType().FullName}{vbCrLf}{e.Reason.Message}")
         End Sub
 
     wfApp.OnUnhandledException = _
         Function(e As WorkflowApplicationUnhandledExceptionEventArgs)
-            UpdateStatus(String.Format("Unhandled Exception: {0}" & vbCrLf & "{1}", _
-                e.UnhandledException.GetType().FullName, _
-                e.UnhandledException.Message))
+            UpdateStatus($"Unhandled Exception: {e.UnhandledException.GetType().FullName}{vbCrLf}{e.UnhandledException.Message}")
             GameOver()
             Return UnhandledExceptionAction.Terminate
         End Function
@@ -528,16 +498,12 @@ The steps in this section add properties and helper methods to the form class th
     ```csharp
     wfApp.Aborted = delegate(WorkflowApplicationAbortedEventArgs e)
     {
-        UpdateStatus(string.Format("Workflow Aborted. Exception: {0}\r\n{1}",
-                e.Reason.GetType().FullName,
-                e.Reason.Message));
+        UpdateStatus($"Workflow Aborted. Exception: {e.Reason.GetType().FullName}\r\n{e.Reason.Message}");
     };
 
     wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
     {
-        UpdateStatus(string.Format("Unhandled Exception: {0}\r\n{1}",
-                e.UnhandledException.GetType().FullName,
-                e.UnhandledException.Message));
+        UpdateStatus($"Unhandled Exception: {e.UnhandledException.GetType().FullName}\r\n{e.UnhandledException.Message}");
         GameOver();
         return UnhandledExceptionAction.Terminate;
     };
@@ -548,7 +514,7 @@ The steps in this section add properties and helper methods to the form class th
     ```vb
     wfApp.PersistableIdle = _
         Function(e As WorkflowApplicationIdleEventArgs)
-            'Send the current WriteLine outputs to the status window.
+            ' Send the current WriteLine outputs to the status window.
             Dim writers = e.GetInstanceExtensions(Of StringWriter)()
             For Each writer In writers
                 UpdateStatus(writer.ToString())
@@ -576,48 +542,42 @@ The steps in this section add properties and helper methods to the form class th
 
     ```vb
     Private Sub ConfigureWorkflowApplication(wfApp As WorkflowApplication)
-        'Configure the persistence store.
+        ' Configure the persistence store.
         wfApp.InstanceStore = store
 
-        'Add a StringWriter to the extensions. This captures the output
-        'from the WriteLine activities so we can display it in the form.
+        ' Add a StringWriter to the extensions. This captures the output
+        ' from the WriteLine activities so we can display it in the form.
         Dim sw As New StringWriter()
         wfApp.Extensions.Add(sw)
 
         wfApp.Completed = _
             Sub(e As WorkflowApplicationCompletedEventArgs)
                 If e.CompletionState = ActivityInstanceState.Faulted Then
-                    UpdateStatus(String.Format("Workflow Terminated. Exception: {0}" & vbCrLf & "{1}", _
-                        e.TerminationException.GetType().FullName, _
-                        e.TerminationException.Message))
+                    UpdateStatus($"Workflow Terminated. Exception: {e.TerminationException.GetType().FullName}{vbCrLf}{e.TerminationException.Message}")
                 ElseIf e.CompletionState = ActivityInstanceState.Canceled Then
                     UpdateStatus("Workflow Canceled.")
                 Else
-                    Dim Turns As Integer = Convert.ToInt32(e.Outputs("Turns"))
-                    UpdateStatus(String.Format("Congratulations, you guessed the number in {0} turns.", Turns))
+                    Dim turns As Integer = Convert.ToInt32(e.Outputs("Turns"))
+                    UpdateStatus($"Congratulations, you guessed the number in {turns} turns.")
                 End If
                 GameOver()
             End Sub
 
         wfApp.Aborted = _
             Sub(e As WorkflowApplicationAbortedEventArgs)
-                UpdateStatus(String.Format("Workflow Aborted. Exception: {0}" & vbCrLf & "{1}", _
-                    e.Reason.GetType().FullName, _
-                    e.Reason.Message))
+                UpdateStatus($"Workflow Aborted. Exception: {e.Reason.GetType().FullName}{vbCrLf}{e.Reason.Message}")
             End Sub
 
         wfApp.OnUnhandledException = _
             Function(e As WorkflowApplicationUnhandledExceptionEventArgs)
-                UpdateStatus(String.Format("Unhandled Exception: {0}" & vbCrLf & "{1}", _
-                    e.UnhandledException.GetType().FullName, _
-                    e.UnhandledException.Message))
+                UpdateStatus($"Unhandled Exception: {e.UnhandledException.GetType().FullName}{vbCrLf}{e.UnhandledException.Message}")
                 GameOver()
                 Return UnhandledExceptionAction.Terminate
             End Function
 
         wfApp.PersistableIdle = _
             Function(e As WorkflowApplicationIdleEventArgs)
-                'Send the current WriteLine outputs to the status window.
+                ' Send the current WriteLine outputs to the status window.
                 Dim writers = e.GetInstanceExtensions(Of StringWriter)()
                 For Each writer In writers
                     UpdateStatus(writer.ToString())
@@ -635,16 +595,14 @@ The steps in this section add properties and helper methods to the form class th
 
         // Add a StringWriter to the extensions. This captures the output
         // from the WriteLine activities so we can display it in the form.
-        StringWriter sw = new StringWriter();
+        var sw = new StringWriter();
         wfApp.Extensions.Add(sw);
 
         wfApp.Completed = delegate(WorkflowApplicationCompletedEventArgs e)
         {
             if (e.CompletionState == ActivityInstanceState.Faulted)
             {
-                UpdateStatus(string.Format("Workflow Terminated. Exception: {0}\r\n{1}",
-                    e.TerminationException.GetType().FullName,
-                    e.TerminationException.Message));
+                UpdateStatus($"Workflow Terminated. Exception: {e.TerminationException.GetType().FullName}\r\n{e.TerminationException.Message}");
             }
             else if (e.CompletionState == ActivityInstanceState.Canceled)
             {
@@ -652,24 +610,20 @@ The steps in this section add properties and helper methods to the form class th
             }
             else
             {
-                int Turns = Convert.ToInt32(e.Outputs["Turns"]);
-                UpdateStatus(string.Format("Congratulations, you guessed the number in {0} turns.", Turns));
+                int turns = Convert.ToInt32(e.Outputs["Turns"]);
+                UpdateStatus($"Congratulations, you guessed the number in {turns} turns.");
             }
             GameOver();
         };
 
         wfApp.Aborted = delegate(WorkflowApplicationAbortedEventArgs e)
         {
-            UpdateStatus(string.Format("Workflow Aborted. Exception: {0}\r\n{1}",
-                    e.Reason.GetType().FullName,
-                    e.Reason.Message));
+            UpdateStatus($"Workflow Aborted. Exception: {e.Reason.GetType().FullName}\r\n{e.Reason.Message}");
         };
 
         wfApp.OnUnhandledException = delegate(WorkflowApplicationUnhandledExceptionEventArgs e)
         {
-            UpdateStatus(string.Format("Unhandled Exception: {0}\r\n{1}",
-                    e.UnhandledException.GetType().FullName,
-                    e.UnhandledException.Message));
+            UpdateStatus($"Unhandled Exception: {e.UnhandledException.GetType().FullName}\r\n{e.UnhandledException.Message}");
             GameOver();
             return UnhandledExceptionAction.Terminate;
         };
@@ -687,7 +641,7 @@ The steps in this section add properties and helper methods to the form class th
     }
     ```
 
-### <a name="BKMK_WorkflowVersionMap"></a> To enable starting and resuming multiple workflow types
+## To enable starting and resuming multiple workflow types
 
 In order to resume a workflow instance, the host has to provide the workflow definition. In this tutorial there are three workflow types, and subsequent tutorial steps introduce multiple versions of these types. `WorkflowIdentity` provides a way for a host application to associate identifying information with a persisted workflow instance. The steps in this section demonstrate how to create a utility class to assist with mapping the workflow identity from a persisted workflow instance to the corresponding workflow definition. For more information about `WorkflowIdentity` and versioning, see [Using WorkflowIdentity and Versioning](using-workflowidentity-and-versioning.md).
 
@@ -696,13 +650,13 @@ In order to resume a workflow instance, the host has to provide the workflow def
 2. Add the following `using` or `Imports` statements at the top of the file with the other `using` or `Imports` statements.
 
     ```vb
-    Imports NumberGuessWorkflowActivities
     Imports System.Activities
+    Imports NumberGuessWorkflowActivities
     ```
 
     ```csharp
-    using NumberGuessWorkflowActivities;
     using System.Activities;
+    using NumberGuessWorkflowActivities;
     ```
 
 3. Replace the `WorkflowVersionMap` class declaration with the following declaration.
@@ -711,7 +665,7 @@ In order to resume a workflow instance, the host has to provide the workflow def
     Public Module WorkflowVersionMap
         Dim map As Dictionary(Of WorkflowIdentity, Activity)
 
-        'Current version identities.
+        ' Current version identities.
         Public StateMachineNumberGuessIdentity As WorkflowIdentity
         Public FlowchartNumberGuessIdentity As WorkflowIdentity
         Public SequentialNumberGuessIdentity As WorkflowIdentity
@@ -719,7 +673,7 @@ In order to resume a workflow instance, the host has to provide the workflow def
         Sub New()
             map = New Dictionary(Of WorkflowIdentity, Activity)
 
-            'Add the current workflow version identities.
+            ' Add the current workflow version identities.
             StateMachineNumberGuessIdentity = New WorkflowIdentity With
             {
                 .Name = "StateMachineNumberGuessWorkflow",
@@ -805,7 +759,7 @@ In order to resume a workflow instance, the host has to provide the workflow def
 
     `WorkflowVersionMap` contains three workflow identities that map to the three workflow definitions from this tutorial and is used in the following sections when workflows are started and resumed.
 
-### <a name="BKMK_StartWorkflow"></a> To start a new workflow
+## To start a new workflow
 
 1. Add a `Click` handler for `NewGame`. To add the handler, switch to **Design View** for the form, and double-click `NewGame`. A `NewGame_Click` handler is added and the view switches to code view for the form. Whenever the user clicks this button a new workflow is started.
 
@@ -879,26 +833,26 @@ In order to resume a workflow instance, the host has to provide the workflow def
 4. Next, add the following code which adds the workflow to the workflow list and displays the workflow's version information on the form.
 
     ```vb
-    'Add the workflow to the list and display the version information.
-    WorkflowStarting = True
+    ' Add the workflow to the list and display the version information.
+    workflowStarting = True
     InstanceId.SelectedIndex = InstanceId.Items.Add(wfApp.Id)
     WorkflowVersion.Text = identity.ToString()
-    WorkflowStarting = False
+    workflowStarting = False
     ```
 
     ```csharp
     // Add the workflow to the list and display the version information.
-    WorkflowStarting = true;
+    workflowStarting = true;
     InstanceId.SelectedIndex = InstanceId.Items.Add(wfApp.Id);
     WorkflowVersion.Text = identity.ToString();
-    WorkflowStarting = false;
+    workflowStarting = false;
     ```
 
 5. Call `ConfigureWorkflowApplication` to configure the instance store, extensions, and workflow lifecycle handlers for this `WorkflowApplication` instance.
 
     ```vb
-    'Configure the instance store, extensions, and
-    'workflow lifecycle handlers.
+    ' Configure the instance store, extensions, and
+    ' workflow lifecycle handlers.
     ConfigureWorkflowApplication(wfApp)
     ```
 
@@ -911,7 +865,7 @@ In order to resume a workflow instance, the host has to provide the workflow def
 6. Finally, call `Run`.
 
     ```vb
-    'Start the workflow.
+    ' Start the workflow.
     wfApp.Run()
     ```
 
@@ -924,7 +878,7 @@ In order to resume a workflow instance, the host has to provide the workflow def
 
     ```vb
     Private Sub NewGame_Click(sender As Object, e As EventArgs) Handles NewGame.Click
-        'Start a new workflow.
+        ' Start a new workflow.
         Dim inputs As New Dictionary(Of String, Object)()
         inputs.Add("MaxNumber", Convert.ToInt32(NumberRange.SelectedItem))
 
@@ -944,17 +898,17 @@ In order to resume a workflow instance, the host has to provide the workflow def
 
         Dim wfApp = New WorkflowApplication(wf, inputs, identity)
 
-        'Add the workflow to the list and display the version information.
-        WorkflowStarting = True
+        ' Add the workflow to the list and display the version information.
+        workflowStarting = True
         InstanceId.SelectedIndex = InstanceId.Items.Add(wfApp.Id)
         WorkflowVersion.Text = identity.ToString()
-        WorkflowStarting = False
+        workflowStarting = False
 
-        'Configure the instance store, extensions, and
-        'workflow lifecycle handlers.
+        ' Configure the instance store, extensions, and
+        ' workflow lifecycle handlers.
         ConfigureWorkflowApplication(wfApp)
 
-        'Start the workflow.
+        ' Start the workflow.
         wfApp.Run()
     End Sub
     ```
@@ -983,13 +937,13 @@ In order to resume a workflow instance, the host has to provide the workflow def
 
         Activity wf = WorkflowVersionMap.GetWorkflowDefinition(identity);
 
-        WorkflowApplication wfApp = new WorkflowApplication(wf, inputs, identity);
+        var wfApp = new WorkflowApplication(wf, inputs, identity);
 
         // Add the workflow to the list and display the version information.
-        WorkflowStarting = true;
+        workflowStarting = true;
         InstanceId.SelectedIndex = InstanceId.Items.Add(wfApp.Id);
         WorkflowVersion.Text = identity.ToString();
-        WorkflowStarting = false;
+        workflowStarting = false;
 
         // Configure the instance store, extensions, and
         // workflow lifecycle handlers.
@@ -1000,7 +954,7 @@ In order to resume a workflow instance, the host has to provide the workflow def
     }
     ```
 
-### <a name="BKMK_ResumeWorkflow"></a> To resume a workflow
+## To resume a workflow
 
 1. Add a `Click` handler for `EnterGuess`. To add the handler, switch to **Design View** for the form, and double-click `EnterGuess`. Whenever the user clicks this button a workflow is resumed.
 
@@ -1057,14 +1011,13 @@ In order to resume a workflow instance, the host has to provide the workflow def
     Dim instance As WorkflowApplicationInstance = _
         WorkflowApplication.GetInstance(WorkflowInstanceId, store)
 
-    'Use the persisted WorkflowIdentity to retrieve the correct workflow
-    'definition from the dictionary.
+    ' Use the persisted WorkflowIdentity to retrieve the correct workflow
+    ' definition from the dictionary.
     Dim wf As Activity = _
         WorkflowVersionMap.GetWorkflowDefinition(instance.DefinitionIdentity)
 
-    'Associate the WorkflowApplication with the correct definition
-    Dim wfApp As WorkflowApplication = _
-        New WorkflowApplication(wf, instance.DefinitionIdentity)
+    ' Associate the WorkflowApplication with the correct definition
+    Dim wfApp As New WorkflowApplication(wf, instance.DefinitionIdentity)
     ```
 
     ```csharp
@@ -1077,22 +1030,21 @@ In order to resume a workflow instance, the host has to provide the workflow def
         WorkflowVersionMap.GetWorkflowDefinition(instance.DefinitionIdentity);
 
     // Associate the WorkflowApplication with the correct definition
-    WorkflowApplication wfApp =
-        new WorkflowApplication(wf, instance.DefinitionIdentity);
+    var wfApp = new WorkflowApplication(wf, instance.DefinitionIdentity);
     ```
 
 4. Once the `WorkflowApplication` is created, configure the instance store, workflow lifecycle handlers, and extensions by calling `ConfigureWorkflowApplication`. These steps must be done every time a new `WorkflowApplication` is created, and they must be done before the workflow instance is loaded into the `WorkflowApplication`. After the workflow is loaded, it is resumed with the user's guess.
 
     ```vb
-    'Configure the extensions and lifecycle handlers.
-    'Do this before the instance is loaded. Once the instance is
-    'loaded it is too late to add extensions.
+    ' Configure the extensions and lifecycle handlers.
+    ' Do this before the instance is loaded. Once the instance is
+    ' loaded it is too late to add extensions.
     ConfigureWorkflowApplication(wfApp)
 
-    'Load the workflow.
+    ' Load the workflow.
     wfApp.Load(instance)
 
-    'Resume the workflow.
+    ' Resume the workflow.
     wfApp.ResumeBookmark("EnterGuess", userGuess)
     ```
 
@@ -1112,7 +1064,7 @@ In order to resume a workflow instance, the host has to provide the workflow def
 5. Finally, clear the guess textbox and prepare the form to accept another guess.
 
     ```vb
-    'Clear the Guess textbox.
+    ' Clear the Guess textbox.
     Guess.Clear()
     Guess.Focus()
     ```
@@ -1143,27 +1095,26 @@ In order to resume a workflow instance, the host has to provide the workflow def
         Dim instance As WorkflowApplicationInstance = _
             WorkflowApplication.GetInstance(WorkflowInstanceId, store)
 
-        'Use the persisted WorkflowIdentity to retrieve the correct workflow
-        'definition from the dictionary.
+        ' Use the persisted WorkflowIdentity to retrieve the correct workflow
+        ' definition from the dictionary.
         Dim wf As Activity = _
             WorkflowVersionMap.GetWorkflowDefinition(instance.DefinitionIdentity)
 
-        'Associate the WorkflowApplication with the correct definition
-        Dim wfApp As WorkflowApplication = _
-            New WorkflowApplication(wf, instance.DefinitionIdentity)
+        ' Associate the WorkflowApplication with the correct definition
+        Dim wfApp As New WorkflowApplication(wf, instance.DefinitionIdentity)
 
-        'Configure the extensions and lifecycle handlers.
-        'Do this before the instance is loaded. Once the instance is
-        'loaded it is too late to add extensions.
+        ' Configure the extensions and lifecycle handlers.
+        ' Do this before the instance is loaded. Once the instance is
+        ' loaded it is too late to add extensions.
         ConfigureWorkflowApplication(wfApp)
 
-        'Load the workflow.
+        ' Load the workflow.
         wfApp.Load(instance)
 
-        'Resume the workflow.
+        ' Resume the workflow.
         wfApp.ResumeBookmark("EnterGuess", userGuess)
 
-        'Clear the Guess textbox.
+        ' Clear the Guess textbox.
         Guess.Clear()
         Guess.Focus()
     End Sub
@@ -1196,8 +1147,7 @@ In order to resume a workflow instance, the host has to provide the workflow def
             WorkflowVersionMap.GetWorkflowDefinition(instance.DefinitionIdentity);
 
         // Associate the WorkflowApplication with the correct definition
-        WorkflowApplication wfApp =
-            new WorkflowApplication(wf, instance.DefinitionIdentity);
+        var wfApp = new WorkflowApplication(wf, instance.DefinitionIdentity);
 
         // Configure the extensions and lifecycle handlers.
         // Do this before the instance is loaded. Once the instance is
@@ -1216,7 +1166,7 @@ In order to resume a workflow instance, the host has to provide the workflow def
     }
     ```
 
-### <a name="BKMK_TerminateWorkflow"></a> To terminate a workflow
+## To terminate a workflow
 
 1. Add a `Click` handler for `QuitGame`. To add the handler, switch to **Design View** for the form, and double-click `QuitGame`. Whenever the user clicks this button the currently selected workflow is terminated.
 
@@ -1244,21 +1194,20 @@ In order to resume a workflow instance, the host has to provide the workflow def
     Dim instance As WorkflowApplicationInstance = _
         WorkflowApplication.GetInstance(WorkflowInstanceId, store)
 
-    'Use the persisted WorkflowIdentity to retrieve the correct workflow
-    'definition from the dictionary.
+    ' Use the persisted WorkflowIdentity to retrieve the correct workflow
+    ' definition from the dictionary.
     Dim wf As Activity = WorkflowVersionMap.GetWorkflowDefinition(instance.DefinitionIdentity)
 
-    'Associate the WorkflowApplication with the correct definition.
-    Dim wfApp As WorkflowApplication = _
-        New WorkflowApplication(wf, instance.DefinitionIdentity)
+    ' Associate the WorkflowApplication with the correct definition.
+    Dim wfApp As New WorkflowApplication(wf, instance.DefinitionIdentity)
 
-    'Configure the extensions and lifecycle handlers.
+    ' Configure the extensions and lifecycle handlers.
     ConfigureWorkflowApplication(wfApp)
 
-    'Load the workflow.
+    ' Load the workflow.
     wfApp.Load(instance)
 
-    'Terminate the workflow.
+    ' Terminate the workflow.
     wfApp.Terminate("User resigns.")
     ```
 
@@ -1277,8 +1226,7 @@ In order to resume a workflow instance, the host has to provide the workflow def
     Activity wf = WorkflowVersionMap.GetWorkflowDefinition(instance.DefinitionIdentity);
 
     // Associate the WorkflowApplication with the correct definition
-    WorkflowApplication wfApp =
-        new WorkflowApplication(wf, instance.DefinitionIdentity);
+    var wfApp = new WorkflowApplication(wf, instance.DefinitionIdentity);
 
     // Configure the extensions and lifecycle handlers
     ConfigureWorkflowApplication(wfApp);
@@ -1290,7 +1238,7 @@ In order to resume a workflow instance, the host has to provide the workflow def
     wfApp.Terminate("User resigns.");
     ```
 
-### <a name="BKMK_BuildAndRun"></a> To build and run the application
+## To build and run the application
 
 1. Double-click **Program.cs** (or **Module1.vb**) in **Solution Explorer** to display the code.
 

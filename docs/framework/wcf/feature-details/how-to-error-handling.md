@@ -102,7 +102,7 @@ This topic outlines the basic steps required to create a routing configuration t
 
 ## Example
 
-Following is a complete listing of the configuration file.
+The following is a complete listing of the configuration file:
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

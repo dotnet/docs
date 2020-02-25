@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 5833740b-7d67-44b4-865c-b5bf45e291e3
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorRuntimeHost Coclass
 Provides interfaces for managing applications that are being executed by the common language runtime.  

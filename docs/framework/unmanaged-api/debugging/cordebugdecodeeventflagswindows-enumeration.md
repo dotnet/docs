@@ -10,8 +10,6 @@ api_type:
 ms.assetid: aa6cf962-30ae-4cfd-8895-826deeb46a54
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CorDebugDecodeEventFlagsWindows Enumeration
 Provides additional information about debug events on the Windows platform.  

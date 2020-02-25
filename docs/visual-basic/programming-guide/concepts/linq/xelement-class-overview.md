@@ -1,5 +1,5 @@
 ---
-title: "XElement Class Overview (Visual Basic)"
+title: "XElement Class Overview"
 ms.date: 07/20/2015
 ms.assetid: 52331fcd-6023-4d19-b423-7b24f2d86ded
 ---
@@ -38,7 +38,7 @@ Dim contacts As XElement = _
     </Contacts>  
 ```  
   
- Another very common technique for creating an XML tree involves using the results of a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query to populate an XML tree, as shown in the following example:  
+ Another very common technique for creating an XML tree involves using the results of a LINQ query to populate an XML tree, as shown in the following example:  
   
 ```vb  
 Dim srcTree As XElement = _  
@@ -78,12 +78,12 @@ Console.WriteLine(xmlTree)
  For more information, see [Serializing XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/serializing-xml-trees.md).  
   
 ### Retrieving XML Data via Axis Methods  
- You can use axis methods to retrieve attributes, child elements, descendant elements, and ancestor elements. [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] queries operate on axis methods, and provide several flexible and powerful ways to navigate through and process an XML tree.  
+ You can use axis methods to retrieve attributes, child elements, descendant elements, and ancestor elements. LINQ queries operate on axis methods, and provide several flexible and powerful ways to navigate through and process an XML tree.  
   
  For more information, see [LINQ to XML Axes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/linq-to-xml-axes.md).  
   
 ### Querying XML Trees  
- You can write [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] queries that extract data from an XML tree.  
+ You can write LINQ queries that extract data from an XML tree.  
   
  For more information, see [Querying XML Trees (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/querying-xml-trees.md).  
   

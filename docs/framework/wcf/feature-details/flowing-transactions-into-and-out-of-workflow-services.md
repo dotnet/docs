@@ -31,7 +31,7 @@ Workflow services and clients can participate in transactions.  For a service op
   
 3. Add a new class called `PrintTransactionInfo` to the `Common` project. This class is derived from <xref:System.Activities.NativeActivity> and overloads the <xref:System.Activities.NativeActivity.Execute%2A> method.  
   
-    ```  
+    ```csharp
     using System;  
     using System;  
     using System.Activities;  
@@ -217,8 +217,8 @@ Workflow services and clients can participate in transactions.  For a service op
   
 2. Open the generated Program.cs file and the following code:  
   
-    ```  
-    static void Main()  
+    ```csharp
+          static void Main()  
           {  
               Console.WriteLine("Building the server.");  
               using (WorkflowServiceHost host = new WorkflowServiceHost(new DeclarativeServiceWorkflow(), new Uri("net.tcp://localhost:8000/TransactedReceiveService/Declarative")))  
@@ -257,53 +257,52 @@ Workflow services and clients can participate in transactions.  For a service op
   
 2. Open the program.cs file and add the following code.  
   
-    ```  
+    ```csharp
     class Program  
+    {  
+
+        private static AutoResetEvent syncEvent = new AutoResetEvent(false);  
+  
+        static void Main(string[] args)  
         {  
+            //Build client  
+            Console.WriteLine("Building the client.");  
+            WorkflowApplication client = new WorkflowApplication(new DeclarativeClientWorkflow());  
+            client.Completed = Program.Completed;  
+            client.Aborted = Program.Aborted;  
+            client.OnUnhandledException = Program.OnUnhandledException;  
+            //Wait for service to start  
+            Console.WriteLine("Press ENTER once service is started.");  
+            Console.ReadLine();  
   
-            private static AutoResetEvent syncEvent = new AutoResetEvent(false);  
+            //Start the client              
+            Console.WriteLine("Starting the client.");  
+            client.Run();  
+            syncEvent.WaitOne();  
   
-            static void Main(string[] args)  
-            {  
-                //Build client  
-                Console.WriteLine("Building the client.");  
-                WorkflowApplication client = new WorkflowApplication(new DeclarativeClientWorkflow());  
-                client.Completed = Program.Completed;  
-                client.Aborted = Program.Aborted;  
-                client.OnUnhandledException = Program.OnUnhandledException;  
-  
-                //Wait for service to start  
-                Console.WriteLine("Press ENTER once service is started.");  
-                Console.ReadLine();  
-  
-                //Start the client              
-                Console.WriteLine("Starting the client.");  
-                client.Run();  
-                syncEvent.WaitOne();  
-  
-                //Sample complete  
-                Console.WriteLine();  
-                Console.WriteLine("Client complete. Press ENTER to exit.");  
-                Console.ReadLine();  
-            }  
-  
-            private static void Completed(WorkflowApplicationCompletedEventArgs e)  
-            {  
-                Program.syncEvent.Set();  
-            }  
-  
-            private static void Aborted(WorkflowApplicationAbortedEventArgs e)  
-            {  
-                Console.WriteLine("Client Aborted: {0}", e.Reason);  
-                Program.syncEvent.Set();  
-            }  
-  
-            private static UnhandledExceptionAction OnUnhandledException(WorkflowApplicationUnhandledExceptionEventArgs e)  
-            {  
-                Console.WriteLine("Client had an unhandled exception: {0}", e.UnhandledException);  
-                return UnhandledExceptionAction.Cancel;  
-            }  
+            //Sample complete  
+            Console.WriteLine();  
+            Console.WriteLine("Client complete. Press ENTER to exit.");  
+            Console.ReadLine();  
         }  
+  
+        private static void Completed(WorkflowApplicationCompletedEventArgs e)  
+        {  
+            Program.syncEvent.Set();  
+        }  
+  
+        private static void Aborted(WorkflowApplicationAbortedEventArgs e)  
+        {  
+            Console.WriteLine("Client Aborted: {0}", e.Reason);  
+            Program.syncEvent.Set();  
+        }  
+  
+        private static UnhandledExceptionAction OnUnhandledException(WorkflowApplicationUnhandledExceptionEventArgs e)  
+        {  
+            Console.WriteLine("Client had an unhandled exception: {0}", e.UnhandledException);  
+            return UnhandledExceptionAction.Cancel;  
+        }  
+    }  
     ```  
   
 ## See also

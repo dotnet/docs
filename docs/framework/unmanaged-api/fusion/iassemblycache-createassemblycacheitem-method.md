@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 017a7ba5-aaaf-44e2-9cbe-ceebef259df0
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IAssemblyCache::CreateAssemblyCacheItem Method
 Gets a reference to a new [IAssemblyCacheItem](iassemblycacheitem-interface.md) object.  

@@ -57,9 +57,7 @@ The Returning value specifies a projection of results to be returned based on th
 
 SetClauses specifies the list of insert or update set clauses that define the insert or update operation.
 
-```
 The elements of the list are specified as type DbModificationClause, which specifies a single clause in an insert or update modification operation. DbSetClause inherits from DbModificationClause and specifies the clause in a modification operation that sets the value of a property. Beginning in version 3.5 of the .NET Framework, all elements in SetClauses are of type SetClause.
-```
 
 Property specifies the property that should be updated. It is always a DbPropertyExpression over a DbVariableReferenceExpression, which represents a reference to the Target of the corresponding DbModificationCommandTree.
 
@@ -155,7 +153,7 @@ using (NorthwindEntities northwindContext = new NorthwindEntities()) {
 
 This code produces the following command tree, which is passed to the provider:
 
-```
+```output
 DbInsertCommandTree
 |_Parameters
 |_Target : 'target'
@@ -225,7 +223,7 @@ using (NorthwindEntities northwindContext = new NorthwindEntities()) {
 
 This user code produces the following command tree, which is passed to the provider:
 
-```
+```output
 DbUpdateCommandTree
 |_Parameters
 |_Target : 'target'
@@ -276,7 +274,7 @@ using (NorthwindEntities northwindContext = new NorthwindEntities()) {
 
 This user code produces the following command tree, which is passed to the provider.
 
-```
+```output
 DbDeleteCommandTree
 |_Parameters
 |_Target : 'target'

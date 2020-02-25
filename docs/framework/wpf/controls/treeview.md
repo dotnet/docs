@@ -25,5 +25,5 @@ The <xref:System.Windows.Controls.TreeView> control displays information in a hi
   <xref:System.Windows.Controls.TreeViewItem>  
   
 ## Related Sections  
- [Data Binding Overview](../data/data-binding-overview.md)  
+ [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md)  
   [Data Templating Overview](../data/data-templating-overview.md)

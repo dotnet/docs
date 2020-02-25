@@ -15,13 +15,11 @@ helpviewer_keywords:
 ms.assetid: ce3025e8-defa-4c5e-8298-f49d71fa5736
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugEval::NewObject Method
 Allocates a new object instance and calls the specified constructor method.  
   
- This method is obsolete in the .NET Framework version 2.0. Use [ICorDebugEval2::NewParameterizedObject](../../../../docs/framework/unmanaged-api/debugging/icordebugeval2-newparameterizedobject-method.md) instead.  
+ This method is obsolete in the .NET Framework version 2.0. Use [ICorDebugEval2::NewParameterizedObject](icordebugeval2-newparameterizedobject-method.md) instead.  
   
 ## Syntax  
   
@@ -54,4 +52,4 @@ HRESULT NewObject (
   
 ## See also
 
-- [NewParameterizedObject Method](../../../../docs/framework/unmanaged-api/debugging/icordebugeval2-newparameterizedobject-method.md)
+- [NewParameterizedObject Method](icordebugeval2-newparameterizedobject-method.md)

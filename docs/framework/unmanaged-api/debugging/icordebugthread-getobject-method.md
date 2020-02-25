@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 1590febe-96c2-4046-97db-d81d81d67e01
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugThread::GetObject Method
 Gets an interface pointer to the common language runtime (CLR) thread.  

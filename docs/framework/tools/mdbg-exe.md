@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "command-line debugger [.NET Framework]"
   - "MDbg.exe"
 ms.assetid: 28a3f509-07e2-4dbe-81df-874c5e969cc4
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # MDbg.exe (.NET Framework Command-Line Debugger)
 The NET Framework Command-Line Debugger helps tools vendors and application developers find and fix bugs in programs that target the .NET Framework common language runtime. This tool uses the runtime debugging API to provide debugging services. You can use MDbg.exe to debug only managed code; there is no support for debugging unmanaged code.  
@@ -17,7 +15,7 @@ At the Package Manager prompt, type the following:
   
 ## Syntax  
   
-```  
+```console  
 MDbg [ProgramName[arguments]] [options]  
 ```  
   
@@ -84,7 +82,7 @@ MDbg [ProgramName[arguments]] [options]
   
  After you compile your application, type **mdbg** at the command prompt to start a debugging session, as shown in the following example.  
   
-```  
+```console  
 C:\Program Files\Microsoft Visual Studio 8\VC>mdbg  
 MDbg (Managed debugger) v2.0.50727.42 (RTM.050727-4200) started.  
 Copyright (C) Microsoft Corporation. All rights reserved.  
@@ -100,5 +98,5 @@ mdbg>
   
 ## See also
 
-- [Tools](../../../docs/framework/tools/index.md)
-- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [Tools](index.md)
+- [Command Prompts](developer-command-prompt-for-vs.md)

@@ -1,5 +1,5 @@
 ---
-title: "Order By Clause (Visual Basic)"
+title: "Order By Clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.QueryOrderBy"
@@ -16,7 +16,7 @@ Specifies the sort order for a query result.
   
 ## Syntax  
   
-```  
+```vb  
 Order By orderExp1 [ Ascending | Descending ] [, orderExp2 [...] ]  
 ```  
   

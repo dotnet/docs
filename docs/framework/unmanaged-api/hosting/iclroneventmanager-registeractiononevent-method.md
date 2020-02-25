@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: b944cf49-918d-4c4e-993b-77d097a52550
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLROnEventManager::RegisterActionOnEvent Method
 Registers a callback pointer for the specified event.  

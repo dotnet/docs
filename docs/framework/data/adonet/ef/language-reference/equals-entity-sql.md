@@ -8,9 +8,9 @@ Compares the equality of two expressions.
   
 ## Syntax  
   
-```  
+```sql  
 expression = expression  
-or   
+-- or   
 expression == expression  
 ```  
   
@@ -31,7 +31,7 @@ expression == expression
   
 2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
   
- [!code-csharp[DP EntityServices Concepts 2#EQUALS](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#equals)]  
+ [!code-sql[DP EntityServices Concepts#EQUALS](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#equals)]  
   
 ## See also
 

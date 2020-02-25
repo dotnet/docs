@@ -24,7 +24,7 @@ In general, the specifier is put in front of the name of the entity, except when
 
 If no access specifier is used, the default is `public`, except for `let` bindings in a type, which are always `private` to the type.
 
-Signatures in F# provide another mechanism for controlling access to F# program elements. Signatures are not required for access control. For more information, see [Signatures](signatures.md).
+Signatures in F# provide another mechanism for controlling access to F# program elements. Signatures are not required for access control. For more information, see [Signatures](signature-files.md).
 
 ## Rules for Access Control
 
@@ -49,4 +49,4 @@ The following code tests the accessibility of the types created in `Module1.fs`.
 ## See also
 
 - [F# Language Reference](index.md)
-- [Signatures](signatures.md)
+- [Signatures](signature-files.md)

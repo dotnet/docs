@@ -1,5 +1,5 @@
 ---
-title: "How to: Write Queries on XML in Namespaces (Visual Basic)"
+title: "How to: Write Queries on XML in Namespaces"
 ms.date: 07/20/2015
 ms.assetid: 7d4131b5-3288-414f-b77c-b2edc2a1f465
 ---
@@ -39,7 +39,7 @@ End Module
   
  This example produces the following output:  
   
-```  
+```console  
 1  
 2  
 3  
@@ -76,7 +76,7 @@ End Module
   
  This example produces the following output:  
   
-```  
+```console  
 1  
 2  
 3  

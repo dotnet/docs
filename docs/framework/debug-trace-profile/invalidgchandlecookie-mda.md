@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "InvalidGCHandleCookie MDA"
   - "invalid cookies"
 ms.assetid: 613ad742-3c11-401d-a6b3-893ceb8de4f8
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # invalidGCHandleCookie MDA
 The `invalidGCHandleCookie` managed debugging assistant (MDA) is activated when a conversion from an invalid <xref:System.IntPtr> cookie to a <xref:System.Runtime.InteropServices.GCHandle> is attempted.  
@@ -43,4 +41,4 @@ The `invalidGCHandleCookie` managed debugging assistant (MDA) is activated when 
 
 - <xref:System.Runtime.InteropServices.GCHandle.FromIntPtr%2A>
 - <xref:System.Runtime.InteropServices.GCHandle>
-- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
+- [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: b63a507a-ca97-4be0-8e4f-401cce2125f6
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugProcessEnum Interface
 Implements ICorDebugEnum methods and enumerates ICorDebugProcess arrays.  
@@ -24,7 +22,7 @@ Implements ICorDebugEnum methods and enumerates ICorDebugProcess arrays.
   
 |Method|Description|  
 |------------|-----------------|  
-|[Next Method](../../../../docs/framework/unmanaged-api/debugging/icordebugprocessenum-next-method.md)|Gets the specified number of `ICorDebugProcess` instances from the enumeration, starting at the current position.|  
+|[Next Method](icordebugprocessenum-next-method.md)|Gets the specified number of `ICorDebugProcess` instances from the enumeration, starting at the current position.|  
   
 ## Remarks  
   
@@ -42,4 +40,4 @@ Implements ICorDebugEnum methods and enumerates ICorDebugProcess arrays.
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

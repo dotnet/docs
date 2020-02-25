@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 27fae01a-ecec-423a-973e-24f8de55826c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugThread2::GetActiveFunctions Method
 Gets information about the active function in each of this thread's frames.  

@@ -24,7 +24,7 @@ This document summarizes a set of best practices to consider when designing a co
 
 - Data templates.
 
-For an introduction to styling and templating, see [Styling and Templating](styling-and-templating.md).
+For an introduction to styling and templating, see [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md).
 
 <a name="Before_You_Start__Understanding_Your_Control"></a>
 
@@ -121,5 +121,5 @@ To understand your control's common usage, it's good to think about the value pr
 
 ## See also
 
-- [Styling and Templating](styling-and-templating.md)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)
 - [Control Authoring Overview](control-authoring-overview.md)

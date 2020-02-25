@@ -1,5 +1,5 @@
 ---
-title: "Error Messages (Visual Basic)"
+title: "Error Messages"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "errors [Visual Basic]"

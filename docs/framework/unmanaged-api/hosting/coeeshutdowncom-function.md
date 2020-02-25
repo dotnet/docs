@@ -18,8 +18,6 @@ helpviewer_keywords:
 ms.assetid: b634cae2-632f-4737-9be4-92d0652844d7
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # CoEEShutDownCOM Function
 Forces the common language runtime (CLR) to release all interface pointers it holds inside runtime callable wrappers (RCW). This has the effect of releasing all RCW caches. This global function is deprecated in the .NET Framework 4. Instead, use the entry point for a specific runtime.  

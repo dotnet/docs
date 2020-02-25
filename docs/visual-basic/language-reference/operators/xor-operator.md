@@ -1,5 +1,5 @@
 ---
-title: "Xor Operator (Visual Basic)"
+title: "Xor Operator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Xor"
@@ -20,7 +20,7 @@ Performs a logical exclusion on two `Boolean` expressions, or a bitwise exclusio
   
 ## Syntax  
   
-```  
+```vb  
 result = expression1 Xor expression2  
 ```  
   

@@ -8,6 +8,7 @@ ms.assetid: fd41596d-d0c2-4816-b94d-c4d00a5d0243
 # What's new in C# 7.0
 
 C# 7.0 adds a number of new features to the C# language:
+
 - [`out` variables](#out-variables)
   - You can declare `out` values inline as arguments to the method where they're used.
 - [Tuples](#tuples)
@@ -261,8 +262,7 @@ work begins:
 
 > [!NOTE]
 > Some of the designs that are supported by local functions
-> could also be accomplished using *lambda expressions*. Those
-> interested can [read more about the differences](../local-functions-vs-lambdas.md)
+> could also be accomplished using *lambda expressions*. For more information, see [Local functions vs. lambda expressions](../local-functions-vs-lambdas.md).
 
 ## More expression-bodied members
 
@@ -313,7 +313,7 @@ costly if those allocations occur in tight loops.
 The new language feature means that async method return types aren't limited to `Task`, `Task<T>`, and `void`. The returned type
 must still satisfy the async pattern, meaning a `GetAwaiter` method
 must be accessible. As one concrete example, the `ValueTask` type
-has been added to the .NET framework to make use of this new language
+has been added to .NET to make use of this new language
 feature:
 
 [!code-csharp[UsingValueTask](~/samples/snippets/csharp/new-in-7/AsyncWork.cs#UsingValueTask "Using ValueTask")]

@@ -1,5 +1,5 @@
 ---
-title: "-warnaserror (Visual Basic)"
+title: "-warnaserror"
 ms.date: 03/13/2018
 helpviewer_keywords: 
   - "warnaserror compiler option [Visual Basic]"
@@ -12,7 +12,7 @@ Causes the compiler to treat the first occurrence of a warning as an error.
   
 ## Syntax  
   
-```  
+```console  
 -warnaserror[+ | -][:numberList]  
 ```  
   

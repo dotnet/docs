@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 091a18bd-e901-46f6-b999-74d71c8a7c41
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # GetAssemblyRefHash Method
 Retrieves a hash blob for a given assembly.  

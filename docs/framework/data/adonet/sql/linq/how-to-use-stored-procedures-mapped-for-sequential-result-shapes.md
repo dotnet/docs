@@ -12,7 +12,7 @@ This kind of stored procedure can generate more than one result shape, but you k
 ## Example  
  Here is the T-SQL of a stored procedure that returns multiple result shapes sequentially:  
   
-```  
+```sql
 CREATE PROCEDURE MultipleResultTypesSequentially  
 AS  
 select * from products  

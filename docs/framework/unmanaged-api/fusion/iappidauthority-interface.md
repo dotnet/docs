@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: ec354fa1-1efd-41b0-bc43-b90597b6e253
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IAppIdAuthority Interface
 Provides methods that generate and compare keys for application identities and references.  

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 9fb144d2-07e0-4a0e-8e05-907bbb6c9e03
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # StrongNameSignatureVerificationFromImage Function
 Verifies that an assembly that has already been mapped to memory is valid for the associated public key.  

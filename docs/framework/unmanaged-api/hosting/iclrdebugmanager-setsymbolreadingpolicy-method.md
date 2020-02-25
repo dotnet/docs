@@ -16,8 +16,6 @@ helpviewer_keywords:
 ms.assetid: bd921fa2-d377-4d79-acfc-64c38d4dcae9
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDebugManager::SetSymbolReadingPolicy Method
 Sets the policy for reading program database (PDB) files. The policy determines whether information about line numbers and files is included in call stacks.  

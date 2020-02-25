@@ -1,5 +1,5 @@
 ---
-title: "Composite Data Types (Visual Basic)"
+title: "Composite Data Types"
 ms.date: 04/25/2017
 helpviewer_keywords: 
   - "classes [Visual Basic], composite data types"
@@ -38,7 +38,7 @@ A tuple is a lightweight structure that contains two or more fields whose types 
   
  In particular, the length of a given dimension is not part of the instance's data type. The following example illustrates this.  
   
-```  
+```vb  
 Dim arrayA( ) As Byte = New Byte(12) {}  
 Dim arrayB( ) As Byte = New Byte(100) {}  
 Dim arrayC( ) As Short = New Short(100) {}  

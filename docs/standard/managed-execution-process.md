@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "managed execution process"
   - "common language runtime, managed execution process"
 ms.assetid: 476b03dc-2b12-49a7-b067-41caeaa2f533
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Managed Execution Process
 <a name="introduction"></a> The managed execution process includes the following steps, which are discussed in detail later in this topic:  
@@ -91,7 +89,7 @@ ms.author: "ronpet"
   
  During execution, managed code receives services such as garbage collection, security, interoperability with unmanaged code, cross-language debugging support, and enhanced deployment and versioning support.  
   
- In Microsoft [!INCLUDE[winxp](../../includes/winxp-md.md)] and [!INCLUDE[windowsver](../../includes/windowsver-md.md)], the operating system loader checks for managed modules by examining a bit in the COFF header. The bit being set denotes a managed module. If the loader detects managed modules, it loads mscoree.dll, and `_CorValidateImage` and `_CorImageUnloading` notify the loader when the managed module images are loaded and unloaded. `_CorValidateImage` performs the following actions:  
+ In Microsoft Windows Vista, the operating system loader checks for managed modules by examining a bit in the COFF header. The bit being set denotes a managed module. If the loader detects managed modules, it loads mscoree.dll, and `_CorValidateImage` and `_CorImageUnloading` notify the loader when the managed module images are loaded and unloaded. `_CorValidateImage` performs the following actions:  
   
 1. Ensures that the code is valid managed code.  
   
@@ -110,5 +108,5 @@ ms.author: "ronpet"
 - [Security](../../docs/standard/security/index.md)
 - [Interoperating with Unmanaged Code](../../docs/framework/interop/index.md)
 - [Deployment](../../docs/framework/deployment/net-framework-applications.md)
-- [Assemblies in the Common Language Runtime](../../docs/framework/app-domains/assemblies-in-the-common-language-runtime.md)
+- [Assemblies in .NET](assembly/index.md)
 - [Application Domains](../../docs/framework/app-domains/application-domains.md)

@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 51f848be-84c5-4036-9839-c762c576bbf5
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # HOST_TYPE Enumeration
 Contains values that specify the type of host that is launching an application.  

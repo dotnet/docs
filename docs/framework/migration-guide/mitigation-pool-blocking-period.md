@@ -2,8 +2,6 @@
 title: "Mitigation: Pool Blocking Period"
 ms.date: "03/30/2017"
 ms.assetid: 92d2de20-79be-4df1-b182-144143a8866a
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Mitigation: Pool Blocking Period
 The connection pool blocking period has been removed for connections to Azure SQL databases.  
@@ -29,4 +27,4 @@ The connection pool blocking period has been removed for connections to Azure SQ
   
 ## See also
 
-- [Runtime Changes](runtime-changes-in-the-net-framework-4-6-2.md)
+- [Application compatibility](application-compatibility.md)

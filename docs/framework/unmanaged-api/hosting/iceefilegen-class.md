@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 90368606-506e-40df-be1f-8d595159203f
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICeeFileGen Class
 Provides functionality for creating a native portable executable (PE) file. The interface will typically be used by compilers to generate their compiled output executable.  

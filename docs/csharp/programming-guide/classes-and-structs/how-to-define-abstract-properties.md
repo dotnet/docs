@@ -1,13 +1,12 @@
 ---
-title: "How to: Define Abstract Properties - C# Programming Guide"
-ms.custom: seodec18
+title: "How to define abstract properties - C# Programming Guide"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "properties [C#], abstract"
   - "abstract properties [C#]"
 ms.assetid: 672a90eb-47b9-4ae0-9914-af53852fddcb
 ---
-# How to: Define Abstract Properties (C# Programming Guide)
+# How to define abstract properties (C# Programming Guide)
 The following example shows how to define [abstract](../../language-reference/keywords/abstract.md) properties. An abstract property declaration does not provide an implementation of the property accessors -- it declares that the class supports properties, but leaves the accessor implementation to derived classes. The following example demonstrates how to implement the abstract properties inherited from a base class.  
   
  This sample consists of three files, each of which is compiled individually and its resulting assembly is referenced by the next compilation:  
@@ -53,4 +52,3 @@ The following example shows how to define [abstract](../../language-reference/ke
 - [Classes and Structs](./index.md)
 - [Abstract and Sealed Classes and Class Members](./abstract-and-sealed-classes-and-class-members.md)
 - [Properties](./properties.md)
-- [How to: Create and Use Assemblies Using the Command Line](../concepts/assemblies-gac/how-to-create-and-use-assemblies-using-the-command-line.md)

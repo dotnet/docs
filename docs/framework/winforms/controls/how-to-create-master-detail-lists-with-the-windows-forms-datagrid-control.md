@@ -1,5 +1,5 @@
 ---
-title: "How to: Create Master-Detail Lists with the Windows Forms DataGrid Control"
+title: Create Master-Detail Lists with DataGrid Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

@@ -8,7 +8,7 @@ ms.assetid: 41ade767-eeab-437d-9121-9797e8fb8045
 ---
 # Creating the .NET Framework Client Application (WCF Data Services Quickstart)
 
-This is the final task of the WCF Data Services quickstart. In this task, you will add a console application to the solution, add a reference to the [!INCLUDE[ssODataFull](../../../../includes/ssodatafull-md.md)] feed into this new client application, and access the OData feed from the client application by using the generated client data service classes and client libraries.
+This is the final task of the WCF Data Services quickstart. In this task, you will add a console application to the solution, add a reference to the Open Data Protocol (OData) feed into this new client application, and access the OData feed from the client application by using the generated client data service classes and client libraries.
 
 > [!NOTE]
 > A .NET Framework-based client application is not required to access a data feed. The data service can be accessed by any application component that consumes an OData feed. For more information, see [Using a Data Service in a Client Application](using-a-data-service-in-a-client-application-wcf-data-services.md).

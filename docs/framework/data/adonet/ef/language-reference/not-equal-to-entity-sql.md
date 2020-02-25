@@ -8,9 +8,9 @@ Compares two expressions to determine whether the left expression is not equal t
   
 ## Syntax  
   
-```  
+```sql  
 expression != expression  
-or  
+-- or  
 expression <> expression  
 ```  
   
@@ -28,7 +28,7 @@ expression <> expression
   
 2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
   
- [!code-csharp[DP EntityServices Concepts 2#NOT_EQUALS](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#not_equals)]  
+ [!code-sql[DP EntityServices Concepts#NOT_EQUALS](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#not_equals)]  
   
 ## See also
 

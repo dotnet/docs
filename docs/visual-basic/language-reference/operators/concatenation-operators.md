@@ -1,5 +1,5 @@
 ---
-title: "Concatenation Operators (Visual Basic)"
+title: "Concatenation Operators"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "operators [Visual Basic], concatenation"

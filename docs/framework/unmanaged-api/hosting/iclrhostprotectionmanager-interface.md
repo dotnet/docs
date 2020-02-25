@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: ce2770ae-23d0-45d9-8bcf-46504ac5020e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRHostProtectionManager Interface
 Enables the host to block specific managed classes, methods, properties, and fields from running in partially trusted code.  

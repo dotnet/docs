@@ -22,7 +22,7 @@ There are situations when you may want to have a completely self-contained COM I
   
 6. Open Visual Basic 6.0 and create a new Standard .exe file. Add a button to the form and double-click the button to add the following code to the Click handler:  
   
-    ```  
+    ```vb
     ' Open the WSDL contract file and read it all into the wsdlContract string.  
     Const ForReading = 1  
     Set objFSO = CreateObject("Scripting.FileSystemObject")  

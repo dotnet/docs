@@ -8,8 +8,6 @@ dev_langs:
 helpviewer_keywords: 
   - "PLINQ queries, how to control ordering"
 ms.assetid: c67eccc7-004d-4b2f-987e-919cbbd62ef7
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Control Ordering in a PLINQ Query
 These examples show how to control the ordering in a PLINQ query by using the <xref:System.Linq.ParallelEnumerable.AsOrdered%2A> extension method.  

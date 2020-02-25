@@ -1,5 +1,5 @@
 ---
-title: "Decision Structures (Visual Basic)"
+title: "Decision Structures"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "statements [Visual Basic], control flow"

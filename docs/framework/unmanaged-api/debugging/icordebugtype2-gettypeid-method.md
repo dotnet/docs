@@ -15,11 +15,9 @@ helpviewer_keywords:
 ms.assetid: 0b933686-226e-4373-92b7-fac579ee7b1a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugType2::GetTypeID Method
-Gets a [COR_TYPEID](../../../../docs/framework/unmanaged-api/debugging/cor-typeid-structure.md) for this type.  
+Gets a [COR_TYPEID](cor-typeid-structure.md) for this type.  
   
 ## Syntax  
   
@@ -31,19 +29,19 @@ HRESULT GetTypeID(
   
 ## Parameters  
  `id`  
- [out] A pointer to the [COR_TYPEID](../../../../docs/framework/unmanaged-api/debugging/cor-typeid-structure.md) for this ICorDebugType.  
+ [out] A pointer to the [COR_TYPEID](cor-typeid-structure.md) for this ICorDebugType.  
   
 ## Return Value  
  The return value is `S_OK` on success, or a failure `HRESULT` code on failure. The `HRESULT` codes include the following:  
   
 |Return code|Description|  
 |-----------------|-----------------|  
-|`S_OK`|Method succeeded. The method has retrieved a valid [COR_TYPEID](../../../../docs/framework/unmanaged-api/debugging/cor-typeid-structure.md).|  
+|`S_OK`|Method succeeded. The method has retrieved a valid [COR_TYPEID](cor-typeid-structure.md).|  
 |`CORDBG_E_CLASS_NOT_LOADED`|The type has not been loaded.|  
 |`CORDBG_E_UNSUPPORTED`|The type is not supported.|  
   
 ## Remarks  
- This method provides a mapping from the ICorDebugType, which represents a type that may or may not have been loaded into the runtime, to a [COR_TYPEID](../../../../docs/framework/unmanaged-api/debugging/cor-typeid-structure.md), which serves as an opaque handle that identifies a type loaded into the runtime.  
+ This method provides a mapping from the ICorDebugType, which represents a type that may or may not have been loaded into the runtime, to a [COR_TYPEID](cor-typeid-structure.md), which serves as an opaque handle that identifies a type loaded into the runtime.  
   
  When the type that the ICorDebugType represents has not yet been loaded, this method returns `CORDBG_E_CLASS_NOT_LOADED`.  If the type is not supported, it returns `CORDBG_E_UNSUPPORTED`.  
   
@@ -58,4 +56,4 @@ HRESULT GetTypeID(
   
 ## See also
 
-- [ICorDebugType2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugtype2-interface.md)
+- [ICorDebugType2 Interface](icordebugtype2-interface.md)

@@ -16,8 +16,6 @@ helpviewer_keywords:
 ms.assetid: 7cfaee76-e284-4a66-a431-8e33f0f60038
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICoreClrDebugTarget Interface
 Provides methods that control reference counts, enumerate processes, and free the memory associated with a debugger that is attached to a remote Macintosh Silverlight target.  
@@ -47,9 +45,9 @@ class ICoreClrDebugTarget {
   
 |Method|Description|  
 |------------|-----------------|  
-|[ICoreClrDebugTarget::EnumProcesses Method](../../../../docs/framework/unmanaged-api/debugging/icoreclrdebugtarget-enumprocesses-method.md)|Enumerates the processes that are running on a remote computer.|  
-|[ICoreClrDebugTarget::EnumRuntimes Method](../../../../docs/framework/unmanaged-api/debugging/icoreclrdebugtarget-enumruntimes-method.md)|Enumerates the common language runtimes (CLRs) in the specified process on a remote computer.|  
-|[ICoreClrDebugTarget::FreeMemory Method](../../../../docs/framework/unmanaged-api/debugging/icoreclrdebugtarget-freememory-method.md)|Frees the memory that is allocated by the enumeration methods in this class.|  
+|[ICoreClrDebugTarget::EnumProcesses Method](icoreclrdebugtarget-enumprocesses-method.md)|Enumerates the processes that are running on a remote computer.|  
+|[ICoreClrDebugTarget::EnumRuntimes Method](icoreclrdebugtarget-enumruntimes-method.md)|Enumerates the common language runtimes (CLRs) in the specified process on a remote computer.|  
+|[ICoreClrDebugTarget::FreeMemory Method](icoreclrdebugtarget-freememory-method.md)|Frees the memory that is allocated by the enumeration methods in this class.|  
   
 ## Remarks  
  Currently, this functionality is supported only for debugging a Silverlight-based application target that is running on a remote Macintosh computer.  
@@ -65,7 +63,7 @@ class ICoreClrDebugTarget {
   
 ## See also
 
-- [ICorDebugRemoteTarget Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremotetarget-interface.md)
-- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
+- [ICorDebugRemoteTarget Interface](icordebugremotetarget-interface.md)
+- [ICorDebug Interface](icordebug-interface.md)
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

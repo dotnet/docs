@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "time zones [.NET Framework], ambiguous time"
   - "ambiguous time [.NET Framework]"
 ms.assetid: bca874ee-5b68-4654-8bbd-3711220ef332
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Let users resolve ambiguous times
 

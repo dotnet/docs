@@ -1,13 +1,11 @@
 ---
-title: "PrintPreviewDialog Control Overview (Windows Forms)"
+title: "PrintPreviewDialog Control Overview"
 ms.date: "01/08/2018"
 f1_keywords:
   - "PrintPreviewDialog"
 helpviewer_keywords:
   - "PrintPreviewDialog control (using designer), about PrintPreviewDialog"
 ms.assetid: efd4ee8d-6edd-47ec-88e4-4a4759bd2384
-author: rpetrusha
-ms.author: ronpet
 ---
 # PrintPreviewDialog control overview (Windows Forms)
 

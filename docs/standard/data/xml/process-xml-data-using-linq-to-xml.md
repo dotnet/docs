@@ -3,8 +3,6 @@ title: "Process XML Data Using LINQ to XML"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: 059d6b9d-63f7-4011-9ba8-8406f0bbae7d
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Process XML Data Using LINQ to XML
 LINQ to XML is the new model in the .NET Framework version 3.5 for processing XML data. LINQ to XML allows developers to do everything they would expect with XML data: querying, modifying, creating, saving, and serializing XML documents. The real advantages lie in the query and creation capabilities.  
@@ -13,7 +11,7 @@ LINQ to XML is the new model in the .NET Framework version 3.5 for processing XM
   
  LINQ to XML leverages the language-integrated query (LINQ) technology in the .NET Framework version 3.5. LINQ extends the language syntax of C# and Visual Basic to provide powerful query capabilities that can be extended to potentially any data store.  
   
- For a detailed discussion of its use, see [LINQ to XML (C#)](../../../csharp/programming-guide/concepts/linq/linq-to-xml.md) and [LINQ to XML (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/linq-to-xml.md). For an overview of the LINQ framework, see [Language-Integrated Query (LINQ) - C#](../../../csharp/programming-guide/concepts/linq/index.md) or [Language-Integrated Query (LINQ) - Visual Basic](../../../visual-basic/programming-guide/concepts/linq/index.md).  
+ For a detailed discussion of its use, see [LINQ to XML (C#)](../../../csharp/programming-guide/concepts/linq/linq-to-xml-overview.md) and [LINQ to XML (Visual Basic)](../../../visual-basic/programming-guide/concepts/linq/linq-to-xml.md). For an overview of the LINQ framework, see [Language-Integrated Query (LINQ) - C#](../../../csharp/programming-guide/concepts/linq/index.md) or [Language-Integrated Query (LINQ) - Visual Basic](../../../visual-basic/programming-guide/concepts/linq/index.md).  
   
 ## See also
 

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 43689cc4-e48e-46e5-a22d-bafd768b8759
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostTaskManager::LeaveRuntime Method
 Notifies the host that the currently executing task is about to leave the common language runtime (CLR) and enter unmanaged code.  

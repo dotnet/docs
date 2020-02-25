@@ -1,5 +1,5 @@
 ---
-title: "GoTo Statement (Visual Basic)"
+title: "GoTo Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.GoTo"
@@ -19,7 +19,7 @@ Branches unconditionally to a specified line in a procedure.
   
 ## Syntax  
   
-```  
+```vb  
 GoTo line  
 ```  
   

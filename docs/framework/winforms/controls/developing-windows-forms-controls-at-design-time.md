@@ -1,5 +1,5 @@
 ---
-title: "Developing Windows Forms Controls at Design Time"
+title: Develop Controls at Design Time
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Windows Forms controls [Windows Forms]"
@@ -9,8 +9,8 @@ helpviewer_keywords:
   - "user controls [Windows Forms]"
   - "custom controls [Windows Forms]"
 ms.assetid: e5a8e088-7ec8-4fd9-bcb3-9078fd134829
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # Develop Windows Forms controls at design time
@@ -30,7 +30,7 @@ Shows how to create a simple composite control in C#.
 [Walkthrough: Inheriting from a Windows Forms Control](walkthrough-inheriting-from-a-windows-forms-control-with-visual-csharp.md)\
 Shows how to create a simple Windows Forms control using inheritance in C#.
 
-[Walkthrough: Performing Common Tasks Using Smart Tags on Windows Forms Controls](performing-common-tasks-using-smart-tags-on-wf-controls.md)\
+[Walkthrough: Perform common tasks using designer actions](perform-common-tasks-design-actions.md)\
 Shows how to use the smart tag feature on Windows Forms controls.
 
 [Walkthrough: Serializing Collections of Standard Types with the DesignerSerializationVisibilityAttribute](serializing-collections-designerserializationvisibilityattribute.md)\

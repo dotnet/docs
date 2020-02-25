@@ -25,7 +25,7 @@ The managed HTML Document Object Model (DOM) contains a class called <xref:Syste
   
  When you use these methods, it is assumed that you have an element of the correct underlying type. Suppose that you want to listen to the `Submit` event of a `FORM` element on an HTML page, so that you can perform some pre-processing on the `FORM`'s values before the user submits them to the server. Ideally, if you have control over the HTML, you would define the `FORM` to have a unique `ID` attribute.  
   
-```  
+```html  
 <HTML>  
   
     <HEAD>  

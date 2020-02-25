@@ -2,8 +2,6 @@
 title: "ICorDebugDataTarget2::GetImageFromPointer Method"
 ms.date: "03/30/2017"
 ms.assetid: 939cabe1-b647-4090-b662-eeec23c6c58d
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugDataTarget2::GetImageFromPointer Method
 Returns the module base address and size from an address in that module.  
@@ -44,5 +42,5 @@ HRESULT GetImageFromPointer(
   
 ## See also
 
-- [ICorDebugDataTarget2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget2-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugDataTarget2 Interface](icordebugdatatarget2-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

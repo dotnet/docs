@@ -1,7 +1,5 @@
 ---
 title: "let clause - C# Reference"
-ms.custom: seodec18
-
 ms.date: 07/20/2015
 f1_keywords: 
   - "let_CSharpKeyword"
@@ -30,5 +28,5 @@ In the following example `let` is used in two ways:
 - [C# Reference](../../language-reference/index.md)
 - [Query Keywords (LINQ)](query-keywords.md)
 - [Language Integrated Query (LINQ)](../../linq/index.md)
-- [Getting Started with LINQ in C#](../../programming-guide/concepts/linq/getting-started-with-linq.md)
+- [Getting Started with LINQ in C#](/dotnet/csharp/programming-guide/concepts/linq/)
 - [Handle exceptions in query expressions](../../linq/handle-exceptions-in-query-expressions.md)

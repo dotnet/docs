@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: b500a260-1d57-4953-95e1-c27063f7c8da
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICeeGen::AddSectionReloc Method
 Adds a .reloc instruction to the code base.  

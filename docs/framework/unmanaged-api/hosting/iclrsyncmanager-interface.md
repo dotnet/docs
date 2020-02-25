@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: a49f9d80-1c76-4ddd-8c49-34f913a5c596
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRSyncManager Interface
 Defines methods that allow the host to get information about requested tasks and to detect deadlocks in its synchronization implementation.  

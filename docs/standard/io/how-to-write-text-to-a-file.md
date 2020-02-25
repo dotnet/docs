@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "streams, writing text to files"
   - "data streams, writing text to files"
 ms.assetid: 060cbe06-2adf-4337-9e7b-961a5c840208
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Write text to a file
 This topic shows different ways to write text to a file for a .NET app. 
@@ -34,6 +32,8 @@ The following example shows how to use the <xref:System.IO.StreamWriter> class t
 
 [!code-csharp[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.basicio.textfiles/cs/write.cs)] 
 [!code-vb[Conceptual.BasicIO.TextFiles#WriteLine](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.basicio.textfiles/vb/write.vb)]  
+
+[!INCLUDE [localized code comments](../../../includes/code-comments-loc.md)]
 
 ## Example: Synchronously append text with StreamWriter
 

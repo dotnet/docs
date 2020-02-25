@@ -1,5 +1,5 @@
 ---
-title: "How to: Write Queries with Complex Filtering (Visual Basic)"
+title: "How to: Write Queries with Complex Filtering"
 ms.date: 07/20/2015
 ms.assetid: bf286ffc-7990-4b00-a4eb-ee3d70129950
 ---
@@ -32,7 +32,7 @@ Next
   
  This code produces the following output:  
   
-```  
+```console  
 99505  
 ```  
   
@@ -66,7 +66,7 @@ End Module
   
  This code produces the following output:  
   
-```  
+```console  
 99505  
 ```  
   

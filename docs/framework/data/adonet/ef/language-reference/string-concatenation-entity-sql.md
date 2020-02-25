@@ -8,7 +8,7 @@ Concatenates two strings.
   
 ## Syntax  
   
-```  
+```sql  
 expression + expression  
 ```  
   
@@ -26,7 +26,7 @@ expression + expression
   
 2. Pass the following query as an argument to the `ExecutePrimitiveTypeQuery` method:  
   
- [!code-csharp[DP EntityServices Concepts 2#CONCAT](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#concat)]  
+ [!code-sql[DP EntityServices Concepts#CONCAT](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#concat)]  
   
 ## See also
 

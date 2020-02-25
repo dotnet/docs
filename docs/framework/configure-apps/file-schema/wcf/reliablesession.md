@@ -49,7 +49,7 @@ Defines setting for WS-Reliable Messaging. When this element is added to a custo
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<binding>](../../../misc/binding.md)|Defines all binding capabilities of the custom binding.|  
+|[\<binding>](bindings.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
  Reliable sessions provide features for reliable messaging and sessions. Reliable messaging retries communication on failure and allows delivery assurances such as in-order arrival of messages to be specified. Sessions maintain state for clients between calls. This element also optionally provides ordered message delivery. This implemented session can cross SOAP and transport intermediaries.  

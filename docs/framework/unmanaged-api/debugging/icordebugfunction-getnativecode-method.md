@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: c8a34916-0eef-4987-8d29-c8bcb4be9cf6
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugFunction::GetNativeCode Method
 Gets the native code for the function that is represented by this ICorDebugFunction instance.  

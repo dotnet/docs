@@ -1,14 +1,15 @@
 ---
 title: Blazor for ASP.NET Web Forms Developers
-description: An introductory guide to Blazor for ASP.NET Web Forms developers. Learn how to build full-stack web apps with .NET using Blazor and .NET Core in a simple and familiar way.
+description: Learn how to build full-stack web apps with .NET using Blazor and .NET Core in a simple and familiar way.
 author: danroth27
 ms.author: daroth
 ms.date: 09/11/2019
 ---
-
 # Blazor for ASP.NET Web Forms Developers
 
-![Screenshot that shows the Serverless Apps ebook cover.](./media/index/blazor-for-web-forms-developers-cover.png)
+[!INCLUDE [book-preview](../../../includes/book-preview.md)]
+
+![Screenshot that shows the Serverless Apps e-book cover.](./media/index/blazor-for-web-forms-developers-cover.png)
 
 > DOWNLOAD available at: <https://aka.ms/blazor-ebook>
 
@@ -43,6 +44,8 @@ Authors:
 > **[Jeff Fritz](https://github.com/csharpfritz)**, Senior Program Manager, Microsoft Corp.
 
 > **[Taylor Southwick](https://github.com/twsouthwick)**, Senior Software Engineer, Microsoft Corp.
+
+> **[Scott Addie](https://github.com/scottaddie)**, Senior Content Developer, Microsoft Corp.
 
 ## Introduction
 

@@ -1,5 +1,5 @@
 ---
-title: "How to: Find a Single Descendant Using the Descendants Method (Visual Basic)"
+title: "How to: Find a Single Descendant Using the Descendants Method"
 ms.date: 07/20/2015
 ms.assetid: 0c03468c-efc8-4140-98f3-fb67acd9e8e1
 ---
@@ -33,7 +33,7 @@ Console.WriteLine(grandChild3)
   
  This code produces the following output:  
   
-```  
+```console  
 GC3 Value  
 ```  
   
@@ -70,7 +70,7 @@ End Module
   
  This code produces the following output:  
   
-```  
+```console  
 GC3 Value  
 ```  
   

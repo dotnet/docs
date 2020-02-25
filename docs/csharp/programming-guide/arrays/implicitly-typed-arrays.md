@@ -1,6 +1,5 @@
 ---
 title: "Implicitly Typed Arrays - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "arrays [C#], implicitly-typed"
@@ -35,4 +34,4 @@ When you create an anonymous type that contains an array, the array must be impl
 - [Anonymous Types](../classes-and-structs/anonymous-types.md)
 - [Object and Collection Initializers](../classes-and-structs/object-and-collection-initializers.md)
 - [var](../../language-reference/keywords/var.md)
-- [LINQ Query Expressions](../linq-query-expressions/index.md)
+- [LINQ in C#](../../linq/index.md)

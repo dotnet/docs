@@ -16,8 +16,6 @@ helpviewer_keywords:
 ms.assetid: df7595d1-430f-44b4-8160-4c2ba9df70b1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ClearDownloadCache Function
 Clears the global assembly cache of downloaded assemblies.  

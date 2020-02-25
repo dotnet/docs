@@ -1,5 +1,5 @@
 ---
-title: "User-Defined Constants (Visual Basic)"
+title: "User-Defined Constants"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "constants [Visual Basic], circular references"

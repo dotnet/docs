@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 3d37ce20-aa65-4043-8f13-7c728b5d8a52
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRTask::SwitchIn Method
 Notifies the common language runtime (CLR) that the task that the current [ICLRTask](../../../../docs/framework/unmanaged-api/hosting/iclrtask-interface.md) instance represents is now in an operable state.  

@@ -12,9 +12,9 @@ ms.assetid: 9962a2fe-cbda-41a6-9377-571811eaea84
 # \<requestCaching> Element (Network Settings)
 Controls the caching mechanism for network requests.  
   
- \<configuration>  
-\<system.net>  
-\<requestCaching>  
+[**\<configuration>**](../configuration-element.md)  
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
+&nbsp;&nbsp;&nbsp;&nbsp;**\<requestCaching>**  
   
 ## Syntax  
   
@@ -23,7 +23,7 @@ Controls the caching mechanism for network requests.
   isPrivateCache ="true|false"  
   disableAllCaching="true|false"  
   defaultPolicyLevel="BypassCache|Default|CacheOnly|CacheIfAvailable|Revalidate|Reload|NoCacheNoStore|Revalidate"  
-  unspecifiedMaximumAge= "d.hh.mm.ss">  
+  unspecifiedMaximumAge= "d.hh:mm:ss">  
     <defaultHttpCachePolicy>...</defaultHttpCachePolicy>  
     <defaultFtpCachePolicy>...</defaultFtpCachePolicy>  
 </requestCaching>

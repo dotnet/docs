@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: c2ec2748-e9ae-4e1b-80db-6fcec5cb81a1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IEnumIDENTITY_ATTRIBUTE Interface
 Serves as an enumerator for the attributes of the code object in the current scope.  

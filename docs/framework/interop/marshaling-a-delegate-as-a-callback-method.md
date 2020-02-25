@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "data marshaling, Callback sample"
   - "marshaling, Callback sample"
 ms.assetid: 6ddd7866-9804-4571-84de-83f5cc017a5a
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Marshaling a Delegate as a Callback Method
 This sample demonstrates how to pass delegates to an unmanaged function expecting function pointers. A delegate is a class that can hold a reference to a method and is equivalent to a type-safe function pointer or a callback function.
@@ -34,7 +32,7 @@ The Callback sample uses the following unmanaged functions, shown with their ori
 
 [PinvokeLib.dll](marshaling-data-with-platform-invoke.md#pinvokelibdll) is a custom unmanaged library that contains an implementation for the previously listed functions.
 
-In this sample, the `LibWrap` class contains managed prototypes for the `TestCallBack` and `TestCallBack2` methods. Both methods pass a delegate to a callback function as a parameter. The signature of the delegate must match the signature of the method it references. For example, the `FPtr` and `FPtr2` delegates have signatures that are identical to the `DoSomething` and `DoSomething2` methods.
+In this sample, the `NativeMethods` class contains managed prototypes for the `TestCallBack` and `TestCallBack2` methods. Both methods pass a delegate to a callback function as a parameter. The signature of the delegate must match the signature of the method it references. For example, the `FPtr` and `FPtr2` delegates have signatures that are identical to the `DoSomething` and `DoSomething2` methods.
 
 ## Declaring Prototypes
 [!code-cpp[Conceptual.Interop.Marshaling#37](../../../samples/snippets/cpp/VS_Snippets_CLR/conceptual.interop.marshaling/cpp/callback.cpp#37)]

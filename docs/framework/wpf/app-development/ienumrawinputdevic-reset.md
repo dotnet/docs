@@ -10,7 +10,7 @@ Resets the enumeration sequence to the beginning.
   
 ## Syntax  
   
-```  
+```cpp  
 HRESULT Reset();  
 ```  
   

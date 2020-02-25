@@ -1,5 +1,5 @@
 ---
-title: "From Clause (Visual Basic)"
+title: "From Clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.QueryFrom"
@@ -16,7 +16,7 @@ Specifies one or more range variables and a collection to query.
   
 ## Syntax  
   
-```  
+```vb  
 From element [ As type ] In collection [ _ ]  
   [, element2 [ As type2 ] In collection2 [, ... ] ]  
 ```  

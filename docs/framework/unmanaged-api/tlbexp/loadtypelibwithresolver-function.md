@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 7123a89b-eb9b-463a-a552-a081e33b0a3a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # LoadTypeLibWithResolver Function
 Loads a type library and uses the supplied [ITypeLibResolver interface](itypelibresolver-interface.md) to resolve any internally referenced type libraries.  
@@ -35,7 +33,7 @@ HRESULT LoadTypeLibWithResolver(
  [in] The file path of the type library.  
   
  `regkind`  
- [in] A [REGKIND enumeration](https://docs.microsoft.com/windows/win32/api/oleauto/ne-oleauto-regkind) flag that controls how the type library is registered. Its possible values are:  
+ [in] A [REGKIND enumeration](/windows/win32/api/oleauto/ne-oleauto-regkind) flag that controls how the type library is registered. Its possible values are:  
   
 - `REGKIND_DEFAULT`: Use default registration behavior.  
   

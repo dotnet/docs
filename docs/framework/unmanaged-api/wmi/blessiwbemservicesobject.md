@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "BlessIWbemServicesObject function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # BlessIWbemServicesObject function
 Indicates whether the user credentials permit access to a specified [IWbemServices](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemservices) object. 

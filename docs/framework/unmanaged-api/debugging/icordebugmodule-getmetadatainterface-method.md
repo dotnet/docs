@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 30d906f2-cf35-4fa9-9d4c-0c31b58c9f3a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugModule::GetMetaDataInterface Method
 Gets a metadata interface object that can be used to examine the metadata for the module.  

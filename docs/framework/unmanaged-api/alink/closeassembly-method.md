@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: f66a43bc-a5c5-4190-acbe-63fd27640634
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CloseAssembly Method
 Finalizes assembly operations. Call this method before beginning a new assembly or unbound module.  

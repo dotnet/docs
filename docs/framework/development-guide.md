@@ -4,8 +4,6 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - ".NET Framework, development guide"
 ms.assetid: 26e3d285-24c3-435c-a797-9fe5affb8525
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # .NET Framework Development Guide
 This section explains how to create, configure, debug, secure, and deploy your .NET Framework apps. The section also provides information about technology areas such as dynamic programming, interoperability, extensibility, memory management, and threading.  

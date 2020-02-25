@@ -8,8 +8,6 @@ dev_langs:
 helpviewer_keywords: 
   - "tasks, exceptions"
 ms.assetid: beb51e50-9061-4d3d-908c-56a4f7c2e8c1
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Exception handling (Task Parallel Library)
 

@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "QualifierSet_EndEnumeration function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # QualifierSet_EndEnumeration function
 Terminates the enumeration begun with a call to the [QualifierSet_BeginEnumeration](qualifierset-beginenumeration.md) function.  

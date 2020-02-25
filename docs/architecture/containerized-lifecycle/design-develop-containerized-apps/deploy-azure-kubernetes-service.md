@@ -13,12 +13,12 @@ Prerequisites to have before using AKS are:
 - Windows development machine
   - Developer Mode enabled on Windows
   - Windows Subsystem for Linux
-- Azure-CLI installed on [Windows, Mac or Linux](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest)
+- Azure-CLI installed on [Windows, Mac or Linux](https://docs.microsoft.com/cli/azure/install-azure-cli)
 
 > [!NOTE]
 > To find complete information about:
 >
-> Azure-CLI: <https://docs.microsoft.com/cli/azure/index?view=azure-cli-latest>
+> Azure-CLI: <https://docs.microsoft.com/cli/azure/index>
 >
 > Windows Subsystem for Linux: <https://docs.microsoft.com/windows/wsl/about>
 

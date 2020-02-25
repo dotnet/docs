@@ -1,5 +1,5 @@
 ---
-title: "How to: Add Load, Save, and Cancel Buttons to the Windows Forms BindingNavigator Control"
+title: Add Load, Save, and Cancel Buttons to BindingNavigator Control
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"
@@ -29,7 +29,7 @@ In the following procedure, a <xref:System.Windows.Forms.TextBox> control is bou
 
 5. Select the <xref:System.Windows.Forms.BindingNavigator> control.
 
-6. Click the smart tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) so the **BindingNavigator Tasks** dialog appears and select **Edit Items**.
+6. Click the designer actions glyph (![Small black arrow](./media/designer-actions-glyph.gif)) so the **BindingNavigator Tasks** dialog appears and select **Edit Items**.
 
      The **Items Collection Editor** appears.
 
@@ -43,7 +43,7 @@ In the following procedure, a <xref:System.Windows.Forms.TextBox> control is bou
 
     4. Set the <xref:System.Windows.Forms.ToolStripItem.DisplayStyle%2A> property for each of the buttons to **Text**. Alternatively, you can set this property to **Image** or **ImageAndText**, and set the image to be displayed in the <xref:System.Windows.Forms.ToolStripItem.Image%2A> property.
 
-    5. Click **OK** to close the dialog box.The buttons are added to the <xref:System.Windows.Forms.ToolStrip>.
+    5. Click **OK** to close the dialog box. The buttons are added to the <xref:System.Windows.Forms.ToolStrip>.
 
 8. Right-click the form and choose **View Code**.
 

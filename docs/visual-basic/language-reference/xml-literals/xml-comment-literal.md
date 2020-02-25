@@ -1,5 +1,5 @@
 ---
-title: "XML Comment Literal (Visual Basic)"
+title: "XML Comment Literal"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.XmlLiteralComment"

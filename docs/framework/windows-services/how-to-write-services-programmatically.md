@@ -53,21 +53,21 @@ If you choose not to use the Windows Service project template, you can write you
   
 6. Override any other methods you want to define custom processing for, and write code to determine the actions the service should take in each case.  
   
-7. Add the necessary installers for your service application. For more information, see [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md).  
+7. Add the necessary installers for your service application. For more information, see [How to: Add Installers to Your Service Application](how-to-add-installers-to-your-service-application.md).  
   
 8. Build your project by selecting **Build Solution** from the **Build** menu.  
   
     > [!NOTE]
     > Do not press F5 to run your project — you cannot run a service project in this way.  
   
-9. Create a setup project and the custom actions to install your service. For an example, see [Walkthrough: Creating a Windows Service Application in the Component Designer](../../../docs/framework/windows-services/walkthrough-creating-a-windows-service-application-in-the-component-designer.md).  
+9. Create a setup project and the custom actions to install your service. For an example, see [Walkthrough: Creating a Windows Service Application in the Component Designer](walkthrough-creating-a-windows-service-application-in-the-component-designer.md).  
   
-10. Install the service. For more information, see [How to: Install and Uninstall Services](../../../docs/framework/windows-services/how-to-install-and-uninstall-services.md).  
+10. Install the service. For more information, see [How to: Install and Uninstall Services](how-to-install-and-uninstall-services.md).  
   
 ## See also
 
-- [Introduction to Windows Service Applications](../../../docs/framework/windows-services/introduction-to-windows-service-applications.md)
-- [How to: Create Windows Services](../../../docs/framework/windows-services/how-to-create-windows-services.md)
-- [How to: Add Installers to Your Service Application](../../../docs/framework/windows-services/how-to-add-installers-to-your-service-application.md)
-- [How to: Log Information About Services](../../../docs/framework/windows-services/how-to-log-information-about-services.md)
-- [Walkthrough: Creating a Windows Service Application in the Component Designer](../../../docs/framework/windows-services/walkthrough-creating-a-windows-service-application-in-the-component-designer.md)
+- [Introduction to Windows Service Applications](introduction-to-windows-service-applications.md)
+- [How to: Create Windows Services](how-to-create-windows-services.md)
+- [How to: Add Installers to Your Service Application](how-to-add-installers-to-your-service-application.md)
+- [How to: Log Information About Services](how-to-log-information-about-services.md)
+- [Walkthrough: Creating a Windows Service Application in the Component Designer](walkthrough-creating-a-windows-service-application-in-the-component-designer.md)

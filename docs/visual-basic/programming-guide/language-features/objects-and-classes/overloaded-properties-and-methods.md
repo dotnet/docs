@@ -1,5 +1,5 @@
 ---
-title: "Overloaded properties and methods (Visual Basic)"
+title: "Overloaded properties and methods"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "properties [Visual Basic], overloading"

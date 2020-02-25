@@ -1,5 +1,5 @@
 ---
-title: "How to: Convert a String to an Array of Characters in Visual Basic"
+title: "How to: Convert a String to an Array of Characters"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "character arrays [Visual Basic], converting strings"

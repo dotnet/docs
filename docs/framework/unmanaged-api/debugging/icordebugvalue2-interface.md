@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 3ff2ad2a-da5a-461b-8627-1a8eba49df9c
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugValue2 Interface
 Extends the "ICorDebugValue" interface to provide support for "ICorDebugType" objects.  
@@ -24,7 +22,7 @@ Extends the "ICorDebugValue" interface to provide support for "ICorDebugType" ob
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetExactType Method](../../../../docs/framework/unmanaged-api/debugging/icordebugvalue2-getexacttype-method.md)|Gets an interface pointer to an `ICorDebugType` object that represents the <xref:System.Type> of this value.|  
+|[GetExactType Method](icordebugvalue2-getexacttype-method.md)|Gets an interface pointer to an `ICorDebugType` object that represents the <xref:System.Type> of this value.|  
   
 ## Remarks  
   
@@ -42,6 +40,6 @@ Extends the "ICorDebugValue" interface to provide support for "ICorDebugType" ob
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)
 
-- [ICorDebugValue3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvalue3-interface.md)
+- [ICorDebugValue3 Interface](icordebugvalue3-interface.md)

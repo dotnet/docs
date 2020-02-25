@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "Windows Forms Add configuration element"
   - "configuring Windows Forms applications"
 ms.assetid: 3e3e04de-99d1-4658-b716-44cb669d9589
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # Windows Forms Add Configuration Element

@@ -1,5 +1,5 @@
 ---
-title: "Functional Programming vs. Imperative Programming (Visual Basic)"
+title: "Functional Programming vs. Imperative Programming"
 ms.date: 07/20/2015
 ms.assetid: 6a1f3b57-00e6-447d-9906-74c7c4d5d85c
 ---

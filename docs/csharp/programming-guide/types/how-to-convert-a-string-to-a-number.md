@@ -1,6 +1,5 @@
 ---
-title: "How to: Convert a String to a Number - C# Programming Guide"
-ms.custom: seodec18
+title: "How to convert a string to a number - C# Programming Guide"
 ms.date: 02/11/2019
 helpviewer_keywords: 
   - "conversions [C#]"
@@ -9,13 +8,13 @@ helpviewer_keywords:
   - "strings [C#], converting to int"
 ms.assetid: 467b9979-86ee-4afd-b734-30299cda91e3
 ---
-# How to: Convert a String to a Number (C# Programming Guide)
+# How to convert a string to a number (C# Programming Guide)
 
-You can convert a [string](../../language-reference/keywords/string.md) to a number by calling the `Parse` or `TryParse` method found on the various numeric types (`int`, `long`, `double`, etc.), or by using methods in the <xref:System.Convert?displayProperty=nameWithType> class.  
+You can convert a [string](../../language-reference/builtin-types/reference-types.md) to a number by calling the `Parse` or `TryParse` method found on the various numeric types (`int`, `long`, `double`, etc.), or by using methods in the <xref:System.Convert?displayProperty=nameWithType> class.  
   
  If you have a string, it is slightly more efficient and straightforward to call a `TryParse` method (for example, [`int.TryParse("11", out number)`](xref:System.Int32.TryParse%2A)) or `Parse` method (for example, [`var number = int.Parse("11")`](xref:System.Int32.Parse%2A)).  Using a <xref:System.Convert> method is more useful for general objects that implement <xref:System.IConvertible>.  
   
- You can use `Parse` or `TryParse` methods on the numeric type you expect the string contains, such as the <xref:System.Int32?displayProperty=nameWithType> type.  The <xref:System.Convert.ToInt32%2A?displayProperty=nameWithType> method uses <xref:System.Int32.Parse%2A> internally.  The `Parse` method returns the converted number; the `TryParse` method returns a <xref:System.Boolean> value that indicates whether the conversion succeeded, and returns the converted number in an [`out` parameter](../../language-reference/keywords/out.md). If the string is not in a valid format, `Parse` throws an exception, whereas `TryParse` returns [false](../../language-reference/keywords/false-literal.md). When calling a `Parse` method, you should always use exception handling to catch a <xref:System.FormatException> in the event that the parse operation fails.  
+ You can use `Parse` or `TryParse` methods on the numeric type you expect the string contains, such as the <xref:System.Int32?displayProperty=nameWithType> type.  The <xref:System.Convert.ToInt32%2A?displayProperty=nameWithType> method uses <xref:System.Int32.Parse%2A> internally.  The `Parse` method returns the converted number; the `TryParse` method returns a <xref:System.Boolean> value that indicates whether the conversion succeeded, and returns the converted number in an [`out` parameter](../../language-reference/keywords/out.md). If the string is not in a valid format, `Parse` throws an exception, whereas `TryParse` returns `false`. When calling a `Parse` method, you should always use exception handling to catch a <xref:System.FormatException> in the event that the parse operation fails.  
   
 ## Calling the Parse and TryParse methods
 
@@ -52,5 +51,5 @@ The following table lists some of the methods from the <xref:System.Convert> cla
 ## See also
 
 - [Types](./index.md)
-- [How to: Determine Whether a String Represents a Numeric Value](../strings/how-to-determine-whether-a-string-represents-a-numeric-value.md)
+- [How to determine whether a string represents a numeric value](../strings/how-to-determine-whether-a-string-represents-a-numeric-value.md)
 - [Sample: .NET Core WinForms Formatting Utility (C#)](https://docs.microsoft.com/samples/dotnet/samples/winforms-formatting-utility-cs)

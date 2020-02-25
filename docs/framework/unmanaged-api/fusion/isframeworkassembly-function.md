@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: b0c6f19b-d4fd-4971-88f0-12ffb5793da3
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IsFrameworkAssembly Function
 Gets a value that indicates whether the specified assembly is managed.  

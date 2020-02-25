@@ -20,7 +20,7 @@ Cross-database ownership chaining occurs when a procedure in one database depend
   
  The following sample turns on cross-database ownership chaining for all databases:  
   
-```  
+```sql
 EXECUTE sp_configure 'show advanced', 1;  
 RECONFIGURE;  
 EXECUTE sp_configure 'cross db ownership chaining', 1;  
@@ -29,7 +29,7 @@ RECONFIGURE;
   
  The following sample turns on cross-database ownership chaining for specific databases:  
   
-```  
+```sql
 ALTER DATABASE Database1 SET DB_CHAINING ON;  
 ALTER DATABASE Database2 SET DB_CHAINING ON;  
 ```  

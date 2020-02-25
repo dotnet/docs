@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 1588fe7b-c378-4f4b-9c4b-48647f1119cc
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetCORRequiredVersion Function
 Gets the required common language runtime (CLR) version number.  

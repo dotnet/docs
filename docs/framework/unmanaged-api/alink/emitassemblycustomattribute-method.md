@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: b72f5409-79af-4fa7-90a7-7630eec170f1
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # EmitAssemblyCustomAttribute Method
 Call to set assembly-level custom attributes.  

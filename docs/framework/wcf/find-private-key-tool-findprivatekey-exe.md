@@ -12,7 +12,7 @@ This command-line tool can be used to retrieve a private key from a certificate 
 
 ## Syntax
 
-```
+```console
 FindPrivateKey<storeName> <storeLocation> [{ {-n <subjectName>} | {-t <thumbprint>} } [-f | -d | -a]]
 ```
 
@@ -37,12 +37,12 @@ The following tables describe the arguments and the options that can be used wit
 
 The following command retrieves the private key for John Doe:
 
-```
+```console
 FindPrivateKey My CurrentUser -n "CN=John Doe"
 ```
 
 The following command retrieves the private key for the local machine:
 
-```
+```console
 FindPrivateKey My LocalMachine -t "03 33 98 63 d0 47 e7 48 71 33 62 64 76 5c 4c 9d 42 1d 6b 52" –a
 ```

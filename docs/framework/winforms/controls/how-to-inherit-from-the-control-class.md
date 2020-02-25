@@ -8,8 +8,8 @@ helpviewer_keywords:
   - "OnPaint method [Windows Forms]"
   - "custom controls [Windows Forms], creating"
 ms.assetid: 46ba0df3-5cf7-443c-a3b4-a72660172476
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # How to: Inherit from the Control Class

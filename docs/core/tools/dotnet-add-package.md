@@ -1,15 +1,11 @@
 ---
 title: dotnet add package command
 description: The 'dotnet add package' command provides a convenient option to add a NuGet package reference to a project.
-ms.date: 06/26/2019
+ms.date: 02/14/2020
 ---
 # dotnet add package
 
-**This article applies to: ✓** .NET Core 1.x SDK and later versions
-
-<!-- todo: uncomment when all CLI commands are reviewed
-[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
--->
+**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
 
 ## Name
 
@@ -90,19 +86,19 @@ The *ToDo.csproj* file now contains a [`<PackageReference>`](/nuget/consume-pack
 
 - Add `Newtonsoft.Json` NuGet package to a project:
 
-  ```console
+  ```dotnetcli
   dotnet add package Newtonsoft.Json
   ```
 
 - Add a specific version of a package to a project:
 
-  ```console
+  ```dotnetcli
   dotnet add ToDo.csproj package Microsoft.Azure.DocumentDB.Core -v 1.0.0
   ```
 
 - Add a package using a specific NuGet source:
 
-  ```console
+  ```dotnetcli
   dotnet add package Microsoft.AspNetCore.StaticFiles -s https://dotnet.myget.org/F/dotnet-core/api/v3/index.json
   ```
 

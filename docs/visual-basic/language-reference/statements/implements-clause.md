@@ -1,5 +1,5 @@
 ---
-title: "Implements Clause (Visual Basic)"
+title: "Implements Clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.ImplementsClause"
@@ -33,6 +33,7 @@ In a derived class, you can reimplement an interface member that the base class 
 - You can reimplement the member with a different name.
 
 The `Implements` keyword can be used in the following contexts:
+
 - [Event Statement](../../../visual-basic/language-reference/statements/event-statement.md)
 - [Function Statement](../../../visual-basic/language-reference/statements/function-statement.md)
 - [Property Statement](../../../visual-basic/language-reference/statements/property-statement.md)

@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "SetAppDomainManagerType method, ICLRDomainManager interface [.NET Framework hosting]"
   - "ICLRDomainManager::SetAppDomainManagerType method [.NET Framework hosting]"
 ms.assetid: ee91abb0-cb74-41dd-927b-e117fb8ffdf4
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRDomainManager::SetAppDomainManagerType Method
 Specifies the type, derived from the <xref:System.AppDomainManager?displayProperty=nameWithType> class, of the application domain manager that will be used to initialize the default application domain.  

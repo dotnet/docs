@@ -2,6 +2,7 @@
 title: Strongly Typed Delegates
 description: Learn how to use generic delegate types to declare custom types when creating a feature requiring delegates.
 ms.date: 06/20/2016
+ms.technology: csharp-fundamentals
 ms.assetid: 564a683d-352b-4e57-8bac-b466529daf6b
 ---
 

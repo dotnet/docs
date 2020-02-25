@@ -29,7 +29,7 @@ References to other objects or collections of other objects in your class defini
   
  Consider the following SQL query to project a list of `CustomerID`-`OrderID` pairs:  
   
-```  
+```sql
 SELECT t0.CustomerID, t1.OrderID  
 FROM   Customers AS t0 INNER JOIN  
           Orders AS t1 ON t0.CustomerID = t1.CustomerID  

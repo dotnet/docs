@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 71f0eab5-0170-46f8-9f88-1df5abdeb34a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IHostMemoryManager::NeedsVirtualAddressSpace Method
 Notifies the host that the common language runtime (CLR) is going to attempt to use the specified memory.  

@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 5711b225-6aa2-4e4f-9898-19f2d518ad1a
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Reading XML Data using XPathDocument and XmlDocument
 There are two ways to read an XML document in the <xref:System.Xml.XPath?displayProperty=nameWithType> namespace. One is to read an XML document using the read-only <xref:System.Xml.XPath.XPathDocument> class and the other is to read an XML document using the editable <xref:System.Xml.XmlDocument> class in the <xref:System.Xml?displayProperty=nameWithType> namespace.  

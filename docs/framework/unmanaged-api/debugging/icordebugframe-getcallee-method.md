@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 92d8136d-0436-4c7e-a6b2-80765f892a0d
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugFrame::GetCallee Method
 Gets a pointer to the ICorDebugFrame object in the current chain that this frame called.  

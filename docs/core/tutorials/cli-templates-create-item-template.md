@@ -14,6 +14,7 @@ With .NET Core, you can create and deploy templates that generate projects, file
 In this part of the series, you'll learn how to:
 
 > [!div class="checklist"]
+>
 > * Create a class for an item template
 > * Create the template config folder and file
 > * Install a template from a file path
@@ -27,7 +28,7 @@ In this part of the series, you'll learn how to:
 
   The reference article explains the basics about templates and how they're put together. Some of this information will be reiterated here.
 
-* Open a terminal and navigate to the _working\templates\\_ folder.
+* Open a terminal and navigate to the _working\templates_ folder.
 
 ## Create the required folders
 
@@ -35,7 +36,7 @@ This series uses a "working folder" where your template source is contained and 
 
 First, create the parent folder, the name does not matter. Then, create a subfolder named _working_. Inside of the _working_ folder, create a subfolder named _templates_.
 
-Next, create a folder under the parent folder named _test_. The folder structure should look like the following:
+Next, create a folder under the parent folder named _test_. The folder structure should look like the following.
 
 ```console
 parent_folder
@@ -48,7 +49,7 @@ parent_folder
 
 An item template is a specific type of template that contains one or more files. These types of templates are useful when you want to generate something like a config, code, or solution file. In this example, you'll create a class that adds an extension method to the string type.
 
-In your terminal, navigate to the _working\templates\\_ folder and create a new subfolder named _extensions_. Enter the folder.
+In your terminal, navigate to the _working\templates_ folder and create a new subfolder named _extensions_. Enter the folder.
 
 ```console
 working
@@ -79,7 +80,7 @@ Now that you have the content of the template created, you need to create the te
 
 ## Create the template config
 
-Templates are recognized in .NET Core by a special folder and config file that exist at the root of your template. In this tutorial, your template folder is located at _working\templates\extensions\\_.
+Templates are recognized in .NET Core by a special folder and config file that exist at the root of your template. In this tutorial, your template folder is located at _working\templates\extensions_.
 
 When you create a template, all files and folders in the template folder are included as part of the template except for the special config folder. This config folder is named _.template.config_.
 
@@ -93,7 +94,7 @@ working
                 template.json
 ```
 
-Open the _template.json_ with your favorite text editor and paste in the following JSON code and save it:
+Open the _template.json_ with your favorite text editor and paste in the following JSON code and save it.
 
 ```json
 {
@@ -145,8 +146,13 @@ Worker Service                                    worker                [C#]    
 
 Now that you have an item template installed, test it. Navigate to the _test/_ folder and create a new console application with `dotnet new console`. This generates a working project you can easily test with the `dotnet run` command.
 
+```dotnetcli
+dotnet new console
+```
+
+You get output similar to the following.
+
 ```console
-C:\test> dotnet new console
 The template "Console Application" was created successfully.
 
 Processing post-creation actions...
@@ -156,15 +162,27 @@ Running 'dotnet restore' on C:\test\test.csproj...
 Restore succeeded.
 ```
 
+Run the project with.
+
+```dotnetcli
+dotnet run
+```
+
+You get the following output.
+
 ```console
-C:\test> dotnet run
 Hello World!
 ```
 
 Next, run `dotnet new stringext` to generate the _CommonExtensions.cs_ from the template.
 
+```dotnetcli
+dotnet new stringext
+```
+
+You get the following output.
+
 ```console
-C:\test> dotnet new stringext
 The template "Example templates: string extensions" was created successfully.
 ```
 
@@ -176,8 +194,13 @@ Console.WriteLine("Hello World!".Reverse());
 
 Run the program again and you'll see that the result is reversed.
 
+```dotnetcli
+dotnet run
+```
+
+You get the following output.
+
 ```console
-C:\test> dotnet run
 !dlroW olleH
 ```
 
@@ -187,8 +210,13 @@ Congratulations! You created and deployed an item template with .NET Core. In pr
 
 Because you installed the template by file path, you must uninstall it with the **absolute** file path. You can see a list of templates installed by running the `dotnet new -u` command. Your template should be listed last. Use the path listed to uninstall your template with the `dotnet new -u <ABSOLUTE PATH TO TEMPLATE DIRECTORY>` command.
 
+```dotnetcli
+dotnet new -u
+```
+
+You get output similar to the following.
+
 ```console
-C:\working> dotnet new -u
 Template Instantiation Commands for .NET Core CLI
 
 Currently installed items:
@@ -216,8 +244,10 @@ Currently installed items:
       Example templates: string extensions (stringext) C#
 ```
 
-```console
-C:\working> dotnet new -u C:\working\templates\extensions
+To uninstall a template, run the following command.
+
+```dotnetcli
+dotnet new -u C:\working\templates\extensions
 ```
 
 ## Next steps

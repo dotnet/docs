@@ -20,13 +20,13 @@ This guide shows you how to create an ASP.NET Core web app and associated unit t
 
 ### Tutorials
 
-**[Writing .NET Core console apps using the CLI tools: A step-by-step guide](../core/tutorials/using-with-xplat-cli.md)**
+**[Writing .NET Core console apps using the .NET Core CLI: A step-by-step guide](../core/tutorials/cli-create-console-app.md)**
 
 This guide shows you how to use the .NET Core CLI tooling to build cross-platform console apps. It starts with a basic console app and eventually spans multiple projects, including testing. You add features step-by-step, building your knowledge as you go. The [completed sample](https://github.com/dotnet/samples/tree/master/core/console-apps) is available in the dotnet/samples repository on GitHub.
 
 **[Writing Libraries with Cross Platform Tools](../core/tutorials/libraries.md)**
 
-This sample covers how to write libraries for .NET using cross-platform CLI tools. These tools provide an efficient and low-level experience that works across any supported operating system. The [completed sample](https://github.com/dotnet/samples/tree/master/framework/libraries/frameworks-library) is available in the dotnet/samples repository on GitHub.
+This sample covers how to write libraries for .NET using the .NET Core CLI. These tools provide an efficient and low-level experience that works across any supported operating system. The [completed sample](https://github.com/dotnet/samples/tree/master/framework/libraries/frameworks-library) is available in the dotnet/samples repository on GitHub.
 
 ## ASP.NET Core
 
@@ -44,7 +44,7 @@ This sample demonstrates the syntax and features for creating and consuming C# i
 
 This sample demonstrates the syntax and features for C# indexers. The [completed sample](https://github.com/dotnet/samples/tree/master/csharp/indexers) is available in the dotnet/samples repository on GitHub.
 
-**[Delegates and Events](../csharp/delegates-events.md)**
+**[Delegates and Events](../csharp/delegates-overview.md)**
 
 This sample demonstrates the syntax and features for C# delegates and events. The [completed sample](https://github.com/dotnet/samples/tree/master/csharp/delegates-and-events) is available in the dotnet/samples repository on GitHub. A [second sample](https://github.com/dotnet/samples/tree/master/csharp/events) focused on events is also in the same repository.
 
@@ -90,15 +90,11 @@ This tutorial shows you how to build a complete .NET Core solution that includes
 
 This tutorial shows you how to build a simple application on .NET Core that supports a plugin architecture. The [completed sample](https://github.com/dotnet/samples/tree/master/core/extensions/AppWithPlugin) is available in the dotnet/samples repository on GitHub.
 
-## Deploying to containers
+## Deploy to containers
 
-**[Running ASP.NET MVC Applications in Windows Docker Containers](../framework/docker/aspnetmvc.md)**
+**[Running ASP.NET MVC Applications in Windows Docker Containers](/aspnet/mvc/overview/deployment/docker-aspnetmvc)**
 
 This tutorial demonstrates how to deploy an existing ASP.NET MVC app in a Windows Docker Container. The [completed sample](https://github.com/dotnet/samples/tree/master/framework/docker/MVCRandomAnswerGenerator) is available in the dotnet/samples repository on GitHub.
-
-**[Running .NET Framework Console Applications in Windows Containers](../framework/docker/console.md)**
-
-This tutorial demonstrates how to deploy an existing console app in a Windows container. The [completed sample](https://github.com/dotnet/samples/tree/master/framework/docker/ConsoleRandomAnswerGenerator) is available in the dotnet/samples repository on GitHub.
 
 ## Viewing and downloading samples
 
@@ -106,11 +102,11 @@ Many topics show source code and samples that are available for viewing or downl
 
 1. Download the repository that contains the sample code by performing one of the following procedures:
    * Download a ZIP of the repository to your local system. Un-ZIP the compressed archive.
-   * [Fork](https://help.github.com/articles/fork-a-repo/) the repository and [clone](https://help.github.com/articles/cloning-a-repository/) the fork to your local system. Forking and cloning permits you to make contributions to the documentation by committing changes to your fork and then creating a pull request for the official docs repository. For more information, see the [.NET Documentation Contributing Guide](https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md) and the [ASP.NET Docs Contributing Guide](https://github.com/aspnet/Docs/blob/master/CONTRIBUTING.md).
+   * [Fork](https://help.github.com/articles/fork-a-repo/) the repository and [clone](https://help.github.com/articles/cloning-a-repository/) the fork to your local system. Forking and cloning permits you to make contributions to the documentation by committing changes to your fork and then creating a pull request for the official docs repository. For more information, see the [.NET Documentation Contributing Guide](https://github.com/dotnet/docs/blob/master/CONTRIBUTING.md) and the [ASP.NET Core Docs Contributing Guide](https://github.com/aspnet/AspNetCore.Docs/blob/master/CONTRIBUTING.md).
    * Clone the repository locally. If you clone a docs repository directly to your local system, you won't be able to make commits directly against the official repository, so you won't be able to make documentation contributions later. Use the fork and clone procedure previously described if you want to preserve the opportunity to contribute to the documentation later.
 1. Navigate within the repository's folders to the sample's location. The relative path to the sample's location appears in your browser's address bar when you follow the link to the sample.
 1. To run a sample, you have several options:
-   * Use the [dotnet CLI tools](../core/tools/index.md): In a console window, navigate to the sample's folder and use dotnet CLI commands.
+   * Use the [.NET Core CLI](../core/tools/index.md): In a console window, navigate to the sample's folder and use dotnet CLI commands.
    * Use [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) or [Visual Studio for Mac](https://visualstudio.microsoft.com/vs/mac/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link): Open the sample by selecting **File > Open > Project/Solution** from the menu bar, navigate to the sample project folder, and select the project file (*.csproj* or *.fsproj*).
    * Use [Visual Studio Code](https://code.visualstudio.com/): Open the sample by selecting **File > Open Folder** from the menu bar and selecting the sample's project folder.
    * Use a different IDE that supports .NET Core projects.

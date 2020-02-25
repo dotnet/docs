@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: da6a1123-871d-4492-9d35-3bdb49f94c93
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugILFrame::GetStackDepth Method
 This method has not been implemented.  

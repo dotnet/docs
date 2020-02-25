@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "isolated storage, out of space conditions"
   - "data storage using isolated storage, out of space conditions"
 ms.assetid: e35d4535-3732-421e-b1a3-37412e036145
-author: "mairaw"
-ms.author: "mairaw"
 ---
 
 # How to: Anticipate Out-of-Space Conditions with Isolated Storage

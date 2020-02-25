@@ -15,11 +15,11 @@ This sample demonstrates how to host applications in Windows Process Activation 
 >
 > \<InstallDrive>:\WF_WCF_Samples
 >
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all WCF and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all WCF and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
 >
 > \<InstallDrive>:\Samples\WCFWFCardSpace\WCF\Basic\Services\Hosting\WASHost\MsmqActivation.
 
-Windows Process Activation Service (WAS), the new process activation mechanism for [!INCLUDE[lserver](../../../../includes/lserver-md.md)], provides IIS-like features that were previously only available to HTTP-based applications to applications that use non-HTTP protocols. Windows Communication Foundation (WCF) uses the Listener Adapter interface to communicate activation requests that are received over the non-HTTP protocols supported by WCF, such as TCP, Named Pipes, and MSMQ. The functionality for receiving requests over non-HTTP protocols is hosted by managed Windows services running in SMSvcHost.exe.
+Windows Process Activation Service (WAS), the new process activation mechanism for Windows Server 2008, provides IIS-like features that were previously only available to HTTP-based applications to applications that use non-HTTP protocols. Windows Communication Foundation (WCF) uses the Listener Adapter interface to communicate activation requests that are received over the non-HTTP protocols supported by WCF, such as TCP, Named Pipes, and MSMQ. The functionality for receiving requests over non-HTTP protocols is hosted by managed Windows services running in SMSvcHost.exe.
 
 The Net.Msmq Listener Adapter service (NetMsmqActivator) activates queued applications based on messages in the queue.
 
@@ -86,15 +86,11 @@ A .svc file with the name of the class is used to host the service code in WAS.
 
 The Service.svc file itself contains a directive to create the `OrderProcessorService`.
 
-```svc
-<%@ServiceHost language="c#" Debug="true" Service="Microsoft.ServiceModel.Samples.OrderProcessorService"%>
-```
+`<%@ServiceHost language="c#" Debug="true" Service="Microsoft.ServiceModel.Samples.OrderProcessorService"%>`
 
 The Service.svc file also contains an assembly directive to ensure that System.Transactions.dll is loaded.
 
-```svc
-<%@Assembly name="System.Transactions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"%>
-```
+`<%@Assembly name="System.Transactions, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"%>`
 
 The client creates a transaction scope. Communication with the service takes place within the scope of the transaction, causing it to be treated as an atomic unit where all messages succeed or fail. The transaction is committed by calling `Complete` on the transaction scope.
 
@@ -347,4 +343,4 @@ By default with the `netMsmqBinding` binding transport, security is enabled. Two
 
 ## See also
 
-- [AppFabric Hosting and Persistence Samples](https://go.microsoft.com/fwlink/?LinkId=193961)
+- [AppFabric Hosting and Persistence Samples](https://docs.microsoft.com/previous-versions/appfabric/ff383418(v=azure.10))

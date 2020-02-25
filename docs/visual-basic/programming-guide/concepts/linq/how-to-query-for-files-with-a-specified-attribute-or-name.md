@@ -1,5 +1,5 @@
 ---
-title: "How to: Query for Files with a Specified Attribute or Name (Visual Basic)"
+title: "How to: Query for Files with a Specified Attribute or Name"
 ms.date: 07/20/2015
 ms.assetid: b26026a3-3f43-448f-a582-259997af6be0
 ---
@@ -54,8 +54,8 @@ Module FindFileByExtension
 End Module  
 ```  
   
-## Compiling the Code  
-Create a VB.NET console application project, with an `Imports` statement for the System.Linq namespace.
+## Compile the code  
+Create a Visual Basic console application project, with an `Imports` statement for the System.Linq namespace.
   
 ## See also
 

@@ -1,5 +1,5 @@
 ---
-title: "Retrieving the Text of the Paragraphs (Visual Basic)"
+title: "Retrieving the Text of the Paragraphs"
 ms.date: 07/20/2015
 ms.assetid: 095fa0d9-7b1b-4cbb-9c13-e2c9d8923d31
 ---
@@ -25,7 +25,7 @@ This example builds on the previous example, [Retrieving the Paragraphs and Thei
 Imports <xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">  
   
 Module Module1  
-    ' Following function is required because VB does not support short circuit evaluation  
+    ' Following function is required because Visual Basic does not support short circuit evaluation  
     Private Function GetStyleOfParagraph(ByVal styleNode As XElement, _  
                                          ByVal defaultStyle As String) As String  
         If (styleNode Is Nothing) Then  
@@ -112,7 +112,7 @@ End Module
   
  This example produces the following output when applied to the document described in [Creating the Source Office Open XML Document (Visual Basic)](../../../../visual-basic/programming-guide/concepts/linq/creating-the-source-office-open-xml-document.md).  
   
-```  
+```console  
 StyleName:Heading1 >Parsing WordprocessingML with LINQ to XML<  
 StyleName:Normal ><  
 StyleName:Normal >The following example prints to the console.<  

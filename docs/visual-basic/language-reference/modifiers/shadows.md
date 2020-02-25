@@ -1,5 +1,5 @@
 ---
-title: "Shadows (Visual Basic)"
+title: "Shadows"
 ms.date: 07/20/2015
 f1_keywords:
   - "vb.Shadows"

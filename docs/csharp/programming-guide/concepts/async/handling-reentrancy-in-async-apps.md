@@ -22,7 +22,10 @@ When you include asynchronous code in your app, you should consider and possibly
 - [Reviewing and Running the Example App](#BKMD_SettingUpTheExample)
 
 > [!NOTE]
-> To run the example, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.
+> To run the example, you must have Visual Studio 2012 or newer and .NET Framework 4.5 or newer installed on your computer.
+
+> [!NOTE]
+> Transport Layer Security (TLS) version 1.2 is now the minimum version to use in your app development. If your app targets a .NET Framework version earlier than 4.7, refer to the following article for [Transport Layer Security (TLS) best practices with the .NET Framework](../../../../framework/network-programming/tls.md).
 
 ## <a name="BKMK_RecognizingReentrancy"></a> Recognizing Reentrancy
 
@@ -575,7 +578,7 @@ The following section provides the code to build the example as a WPF app.
 
 4. In the list of project types, choose **WPF Application**.
 
-5. Name the project `WebsiteDownloadWPF`, and then choose the **OK** button.
+5. Name the project `WebsiteDownloadWPF`, choose .NET Framework version of 4.6 or higher and then click the **OK** button.
 
      The new project appears in **Solution Explorer**.
 
@@ -603,7 +606,9 @@ The following section provides the code to build the example as a WPF app.
 
      A simple window that contains a text box and a button appears in the **Design** view of MainWindow.xaml.
 
-8. Add a reference for <xref:System.Net.Http>.
+8. In **Solution Explorer**, right-click on **References** and select **Add Reference**.
+
+     Add a reference for <xref:System.Net.Http>, if it is not selected already.
 
 9. In **Solution Explorer**, open the shortcut menu for MainWindow.xaml.cs, and then choose **View Code**.
 
@@ -635,6 +640,7 @@ The following section provides the code to build the example as a WPF app.
         {
             public MainWindow()
             {
+                System.Net.ServicePointManager.SecurityProtocol |= System.Net.SecurityProtocolType.Tls12;
                 InitializeComponent();
             }
 

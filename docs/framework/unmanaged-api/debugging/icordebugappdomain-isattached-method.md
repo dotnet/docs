@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: af0c67c7-f53e-47c9-b84b-be50bd04903e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugAppDomain::IsAttached Method
 Gets a value that indicates whether the debugger is attached to the application domain.  

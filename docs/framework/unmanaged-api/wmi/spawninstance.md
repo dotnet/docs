@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "SpawnInstance function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # SpawnInstance function
 Creates a new instance of a class.    

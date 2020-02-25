@@ -13,7 +13,7 @@ ms.assetid: 62b88488-c08e-4804-b7de-a1c34fbe929c
 # Optimizing Performance: Application Resources
 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] allows you to share application resources so that you can support a consistent look or behavior across similar-typed elements. This topic provides a few recommendations in this area that can help you improve the performance of your applications.  
   
- For more information on resources, see [XAML Resources](xaml-resources.md).  
+ For more information on resources, see [XAML Resources](../../../desktop-wpf/fundamentals/xaml-resources-define.md).  
   
 ## Sharing resources  
  If your application uses custom controls and defines resources in a <xref:System.Windows.ResourceDictionary> (or XAML Resources node), it is recommended that you either define the resources at the <xref:System.Windows.Application> or <xref:System.Windows.Window> object level, or define them in the default theme for the custom controls. Defining resources in a custom control's <xref:System.Windows.ResourceDictionary> imposes a performance impact for every instance of that control. For example, if you have performance-intensive brush operations defined as part of the resource definition of a custom control and many instances of the custom control, the application's working set will increase significantly.  
@@ -21,7 +21,7 @@ ms.assetid: 62b88488-c08e-4804-b7de-a1c34fbe929c
  To illustrate this point, consider the following. Let's say you are developing a card game using [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. For most card games, you need 52 cards with 52 different faces. You decide to implement a card custom control and you define 52 brushes (each representing a card face) in the resources of your card custom control. In your main application, you initially create 52 instances of this card custom control. Each instance of the card custom control generates 52 instances of <xref:System.Windows.Media.Brush> objects, which gives you a total of 52 * 52 <xref:System.Windows.Media.Brush> objects in your application. By moving the brushes out of the card custom control resources to the <xref:System.Windows.Application> or <xref:System.Windows.Window> object level, or defining them in the default theme for the custom control, you reduce the working set of the application, since you are now sharing the 52 brushes among 52 instances of the card control.  
   
 ## Sharing a Brush without Copying  
- If you have multiple elements using the same <xref:System.Windows.Media.Brush> object, define the brush as a resource and reference it, rather than defining the brush inline in [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)]. This method will create one instance and reuse it, whereas defining brushes inline in [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)] creates a new instance for each element.  
+ If you have multiple elements using the same <xref:System.Windows.Media.Brush> object, define the brush as a resource and reference it, rather than defining the brush inline in XAML. This method will create one instance and reuse it, whereas defining brushes inline in XAML creates a new instance for each element.  
   
  The following markup sample illustrates this point:  
   

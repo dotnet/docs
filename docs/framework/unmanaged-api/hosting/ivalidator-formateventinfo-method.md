@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 4c0c7477-05ba-461b-b21b-cbfba95f1db1
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IValidator::FormatEventInfo Method
 Gets the error message corresponding to the specified validation error.  

@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "threading [.NET Framework], managed debugging assistants"
   - "COM apartment states"
 ms.assetid: e56fb9df-5286-4be7-b313-540c4d876cd7
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # invalidApartmentStateChange MDA
 The `invalidApartmentStateChange` managed debugging assistant (MDS) is activated by either of two problems:  
@@ -74,5 +72,5 @@ namespace ApartmentStateMDA
 ## See also
 
 - <xref:System.Runtime.InteropServices.MarshalAsAttribute>
-- [Diagnosing Errors with Managed Debugging Assistants](../../../docs/framework/debug-trace-profile/diagnosing-errors-with-managed-debugging-assistants.md)
-- [Interop Marshaling](../../../docs/framework/interop/interop-marshaling.md)
+- [Diagnosing Errors with Managed Debugging Assistants](diagnosing-errors-with-managed-debugging-assistants.md)
+- [Interop Marshaling](../interop/interop-marshaling.md)

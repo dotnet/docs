@@ -42,7 +42,7 @@ The sample application accepts command line parameters indicating which test you
 
 For Example:
 
-```
+```console
 Serialize.exe -sx Test.xml 10
 ```
 
@@ -50,7 +50,7 @@ To deserialize the **Test.xml** file from the previous example, use the paramete
 
 For Example:
 
-```
+```console
 Serialize.exe -dx Test.xml
 ```
 
@@ -58,7 +58,7 @@ In the two examples above, the "x" in the command line switch indicates that you
 
 For Example:
 
-```
+```console
 Serialize.exe -sb Test.bin 10000 >somefile.txt
 ```
 

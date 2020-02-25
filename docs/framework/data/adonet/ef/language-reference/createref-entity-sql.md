@@ -8,7 +8,7 @@ Fabricates references to an entity in an entityset.
   
 ## Syntax  
   
-```  
+```sql  
 CreateRef(entityset_identifier, row_typed_expression)  
 ```  
   
@@ -24,9 +24,9 @@ CreateRef(entityset_identifier, row_typed_expression)
   
  In the example below, Orders and BadOrders are both entitysets of type Order, and Id is assumed to be the single key property of Order. The example illustrates how we may produce a reference to an entity in BadOrders. Note that the reference may be dangling.  That is, the reference may not actually identify a specific entity. In those cases, a `DEREF` operation on that reference returns a null.  
   
-```  
-select CreateRef(LOB.BadOrders, row(o.Id))   
-from LOB.Orders as o   
+```sql  
+SELECT CreateRef(LOB.BadOrders, row(o.Id))
+FROM LOB.Orders AS o
 ```  
   
 ## Example  
@@ -36,7 +36,7 @@ from LOB.Orders as o
   
 2. Pass the following query as an argument to the `ExecuteStructuralTypeQuery` method:  
   
- [!code-csharp[DP EntityServices Concepts 2#CREATEREF](../../../../../../samples/snippets/csharp/VS_Snippets_Data/dp entityservices concepts 2/cs/entitysql.cs#createref)]  
+ [!code-sql[DP EntityServices Concepts#CREATEREF](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#createref)]  
   
 ## See also
 

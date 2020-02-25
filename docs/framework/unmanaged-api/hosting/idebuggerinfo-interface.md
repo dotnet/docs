@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 9395a8a0-ffb9-475f-8da6-890999ae4bb6
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IDebuggerInfo Interface
 Provides methods for obtaining information about the state of the debugging services.  

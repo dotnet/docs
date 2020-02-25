@@ -1,8 +1,6 @@
 ---
 title: Type marshaling - .NET
 description: Learn how .NET marshals your types to a native representation.
-author: jkoritzinsky
-ms.author: jekoritz
 ms.date: 01/18/2019
 ---
 
@@ -128,7 +126,7 @@ typedef struct _SYSTEMTIME {
   WORD wMinute;
   WORD wSecond;
   WORD wMilliseconds;
-} SYSTEMTIME, *PSYSTEMTIME*;
+} SYSTEMTIME, *PSYSTEMTIME;
 ```
 
 Sometimes the default marshaling for your structure doesn't do what you need. The [Customizing structure marshaling](./customize-struct-marshaling.md) article teaches you how to customize how your structure is marshaled.

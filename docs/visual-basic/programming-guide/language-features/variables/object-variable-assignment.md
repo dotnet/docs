@@ -1,5 +1,5 @@
 ---
-title: "Object Variable Assignment (Visual Basic)"
+title: "Object Variable Assignment"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "Nothing keyword [Visual Basic], object variable assignment"

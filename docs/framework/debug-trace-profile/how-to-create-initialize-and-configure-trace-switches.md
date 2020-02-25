@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "tracing [.NET Framework], enabling or disabling"
   - "Web.config configuration file, trace switches"
 ms.assetid: 5a0e41bf-f99c-4692-8799-f89617f5bcf9
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Create, Initialize and Configure Trace Switches
 Trace switches enable you to enable, disable, and filter tracing output.  
@@ -121,7 +119,7 @@ Trace switches enable you to enable, disable, and filter tracing output.
   
 ## See also
 
-- [Tracing and Instrumenting Applications](../../../docs/framework/debug-trace-profile/tracing-and-instrumenting-applications.md)
-- [How to: Add Trace Statements to Application Code](../../../docs/framework/debug-trace-profile/how-to-add-trace-statements-to-application-code.md)
-- [Trace Switches](../../../docs/framework/debug-trace-profile/trace-switches.md)
-- [Trace and Debug Settings Schema](../../../docs/framework/configure-apps/file-schema/trace-debug/index.md)
+- [Tracing and Instrumenting Applications](tracing-and-instrumenting-applications.md)
+- [How to: Add Trace Statements to Application Code](how-to-add-trace-statements-to-application-code.md)
+- [Trace Switches](trace-switches.md)
+- [Trace and Debug Settings Schema](../configure-apps/file-schema/trace-debug/index.md)

@@ -32,4 +32,4 @@ ms.assetid: 69a1a3f9-acb5-4e2c-9c43-2e376c055ac4
   
 ## See also
 
-- [Styling and Templating](../controls/styling-and-templating.md)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)

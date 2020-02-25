@@ -1,5 +1,5 @@
 ---
-title: "ImageList Component Overview (Windows Forms)"
+title: "ImageList Component Overview"
 ms.date: "03/30/2017"
 f1_keywords:
   - "ImageList"

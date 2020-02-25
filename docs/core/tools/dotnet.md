@@ -1,7 +1,7 @@
 ---
 title: dotnet command
-description: Learn about the dotnet command (the generic driver for the .NET Core CLI tools) and its usage.
-ms.date: 06/04/2018
+description: Learn about the dotnet command (the generic driver for the .NET Core CLI) and its usage.
+ms.date: 02/13/2020
 ---
 # dotnet command
 
@@ -13,16 +13,18 @@ ms.date: 06/04/2018
 
 ## Synopsis
 
+<!-- markdownlint-disable MD025 -->
+
 # [.NET Core 2.1](#tab/netcore21)
 
-```console
+```dotnetcli
 dotnet [command] [arguments] [--additional-deps] [--additionalprobingpath] [--depsfile]
     [-d|--diagnostics] [--fx-version] [-h|--help] [--info] [--list-runtimes] [--list-sdks] [--roll-forward-on-no-candidate-fx] [--runtimeconfig] [-v|--verbosity] [--version]
 ```
 
 # [.NET Core 2.0](#tab/netcore20)
 
-```console
+```dotnetcli
 dotnet [command] [arguments] [--additional-deps] [--additionalprobingpath] [--depsfile]
     [-d|--diagnostics] [--fx-version] [-h|--help] [--info] [--roll-forward-on-no-candidate-fx]
     [--runtimeconfig] [-v|--verbosity] [--version]
@@ -30,7 +32,7 @@ dotnet [command] [arguments] [--additional-deps] [--additionalprobingpath] [--de
 
 # [.NET Core 1.x](#tab/netcore1x)
 
-```console
+```dotnetcli
 dotnet [command] [arguments] [--additionalprobingpath] [--depsfile] [-d|--diagnostics]
     [--fx-version] [-h|--help] [--info] [--runtimeconfig] [-v|--verbosity] [--version]
 ```
@@ -59,7 +61,7 @@ Path containing probing policy and assemblies to probe.
 
 Path to a *deps.json* file.
 
-A *deps.json* file contains a list of dependencies, compilation dependencies and version information used to address assembly conflicts. For more information about this file, see [Runtime Configuration Files](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md) on GitHub.
+A *deps.json* file contains a list of dependencies, compilation dependencies, and version information used to address assembly conflicts. For more information about this file, see [Runtime Configuration Files](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md) on GitHub.
 
 `-d|--diagnostics`
 
@@ -88,6 +90,7 @@ Displays the installed .NET Core SDKs.
 `--roll-forward-on-no-candidate-fx <N>`
 
 Defines behavior when the required shared framework is not available. `N` can be:
+
 - `0` - Disable even minor version roll forward.
 - `1` - Roll forward on minor version, but not on major version. This is the default behavior.
 - `2` - Roll forward on minor and major versions.
@@ -98,7 +101,7 @@ Defines behavior when the required shared framework is not available. `N` can be
 
 Path to a *runtimeconfig.json* file.
 
-A *runtimeconfig.json* file is a configuration file containing runtime configuration settings. For more information, see [Runtime Configuration Files](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md) on GitHub.
+A *runtimeconfig.json* file is a configuration file containing run-time settings. For more information, see [.NET Core run-time configuration settings](../run-time-config/index.md#runtimeconfigjson).
 
 `-v|--verbosity <LEVEL>`
 
@@ -148,7 +151,7 @@ Prints out detailed information about a .NET Core installation and the machine e
 
 Path to a *runtimeconfig.json* file.
 
-A *runtimeconfig.json* file is a configuration file containing runtime configuration settings. For more details, see [Runtime Configuration Files on GitHub](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md).
+A *runtimeconfig.json* file is a configuration file containing run-time settings. For more information, see [.NET Core run-time configuration settings](../run-time-config/index.md#runtimeconfigjson).
 
 `-v|--verbosity <LEVEL>`
 
@@ -190,7 +193,7 @@ Prints out detailed information about a .NET Core installation and the machine e
 
 Path to a *runtimeconfig.json* file.
 
-A *runtimeconfig.json* file is a configuration file containing runtime configuration settings. For more details, see [Runtime Configuration Files on GitHub](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md).
+A *runtimeconfig.json* file is a configuration file containing run-time settings. For more information, see [.NET Core run-time configuration settings](../run-time-config/index.md#runtimeconfigjson).
 
 `-v|--verbosity <LEVEL>`
 
@@ -284,16 +287,16 @@ Command | Function
 [dotnet nuget locals](dotnet-nuget-locals.md) | Clears or lists local NuGet resources such as http-request cache, temporary cache, or machine-wide global packages folder.
 [dotnet nuget push](dotnet-nuget-push.md) | Pushes a package to the server and publishes it.
 
-### Global Tools commands
+### Global, tool-path, and local tools commands
 
-[.NET Core Global Tools](global-tools.md) are available starting with .NET Core SDK 2.1.300:
+Tools are console applications that are installed from NuGet packages and are invoked from the command prompt. You can write tools yourself or install tools written by third parties. Tools are also known as global tools, tool-path tools, and local tools. For more information, see [.NET Core tools overview](global-tools.md). Global and tool-path tools are available starting with .NET Core SDK 2.1. Local tools are available starting with .NET Core SDK 3.0.
 
 Command | Function
 --- | ---
-[dotnet tool install](dotnet-tool-install.md) | Installs a Global Tool on your machine.
-[dotnet tool list](dotnet-tool-list.md) | Lists all Global Tools currently installed in the default directory on your machine or in the specified path.
-[dotnet tool uninstall](dotnet-tool-uninstall.md) | Uninstalls a Global Tool from your machine.
-[dotnet tool update](dotnet-tool-update.md) | Updates a Global Tool on your machine.
+[dotnet tool install](dotnet-tool-install.md) | Installs a tool on your machine.
+[dotnet tool list](dotnet-tool-list.md) | Lists all global, tool-path, or local tools currently installed on your machine.
+[dotnet tool uninstall](dotnet-tool-uninstall.md) | Uninstalls a tool from your machine.
+[dotnet tool update](dotnet-tool-update.md) | Updates a tool that is installed on your machine.
 
 ### Additional tools
 
@@ -390,3 +393,4 @@ Specifies whether data about the .NET Core tools usage is collected and sent to 
 ## See also
 
 - [Runtime Configuration Files](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md)
+- [.NET Core run-time configuration settings](../run-time-config/index.md)

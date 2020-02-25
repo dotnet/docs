@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 704c69ba-77bc-40d7-8c0c-400061686321
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedVariable Interface
 Represents a variable, such as a parameter, a local variable, or a field.  

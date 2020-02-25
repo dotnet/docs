@@ -1,5 +1,5 @@
 ---
-title: "Custom date and time format strings - .NET"
+title: "Custom date and time format strings"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 dev_langs: 
@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "formatting [.NET Framework], time"
   - "date and time strings"
 ms.assetid: 98b374e3-0cc2-4c78-ab44-efb671d71984
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Custom date and time format strings
 

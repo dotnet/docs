@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 42230928-2c33-41fd-9519-d96efef6c7af
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IAssemblyName::GetVersion Method
 Gets the version information for the assembly referenced by this [IAssemblyName](iassemblyname-interface.md) object.  

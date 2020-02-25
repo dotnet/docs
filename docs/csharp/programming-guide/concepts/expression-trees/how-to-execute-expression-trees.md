@@ -1,9 +1,9 @@
 ---
-title: "How to: Execute Expression Trees (C#)"
+title: "How to execute expression trees (C#)"
 ms.date: 07/20/2015
 ms.assetid: b8c40db5-2464-4bb9-9001-8c2bc7f006c5
 ---
-# How to: Execute Expression Trees (C#)
+# How to execute expression trees (C#)
 This topic shows you how to execute an expression tree. Executing an expression tree may return a value, or it may just perform an action such as calling a method.  
   
  Only expression trees that represent lambda expressions can be executed. Expression trees that represent lambda expressions are of type <xref:System.Linq.Expressions.LambdaExpression> or <xref:System.Linq.Expressions.Expression%601>. To execute these expression trees, call the <xref:System.Linq.Expressions.LambdaExpression.Compile%2A> method to create an executable delegate, and then invoke the delegate.  
@@ -43,4 +43,4 @@ Console.WriteLine(result);
 ## See also
 
 - [Expression Trees (C#)](./index.md)
-- [How to: Modify Expression Trees (C#)](./how-to-modify-expression-trees.md)
+- [How to modify expression trees (C#)](./how-to-modify-expression-trees.md)

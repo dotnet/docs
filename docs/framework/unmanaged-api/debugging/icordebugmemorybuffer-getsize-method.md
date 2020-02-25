@@ -2,8 +2,6 @@
 title: "ICorDebugMemoryBuffer::GetSize Method"
 ms.date: "03/30/2017"
 ms.assetid: 9ffd5482-268e-4680-9fd1-bfb0b7d66450
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugMemoryBuffer::GetSize Method
 Gets the size of the memory buffer in bytes.  
@@ -36,5 +34,5 @@ HRESULT GetSize(
   
 ## See also
 
-- [ICorDebugMemoryBuffer Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmemorybuffer-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugMemoryBuffer Interface](icordebugmemorybuffer-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

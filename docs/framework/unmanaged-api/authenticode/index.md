@@ -2,8 +2,6 @@
 title: "Authenticode (Unmanaged API Reference)"
 ms.date: "03/30/2017"
 ms.assetid: 7e8cc303-6e77-4116-aa8b-7ea297a3a467
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Authenticode (Unmanaged API Reference)
 Supports the Authenticode XrML license creation and verification module.  

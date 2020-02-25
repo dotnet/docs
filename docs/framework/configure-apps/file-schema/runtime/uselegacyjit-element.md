@@ -2,8 +2,6 @@
 title: "<useLegacyJit> Element"
 ms.date: "04/26/2017"
 ms.assetid: c2cf97f0-9262-4f1f-a754-5568b51110ad
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 
 # \<useLegacyJit> Element
@@ -63,7 +61,7 @@ Instead of using a configuration file setting, you can enable the legacy 64-bit 
 
   Set the `COMPLUS_useLegacyJit` environment variable to either `0` (use the new 64-bit JIT compiler) or `1` (use the older 64-bit JIT compiler):
   
-  ```  
+  ```env  
   COMPLUS_useLegacyJit=0|1  
   ```  
   

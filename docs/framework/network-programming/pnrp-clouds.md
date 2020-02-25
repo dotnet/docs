@@ -28,4 +28,4 @@ A PNRP "cloud" represents a set of nodes that can communicate with each other th
 ## See also
 
 - <xref:System.Net.PeerToPeer.Cloud>
-- [Peer Name Resolution Protocol](../../../docs/framework/network-programming/peer-name-resolution-protocol.md)
+- [Peer Name Resolution Protocol](peer-name-resolution-protocol.md)

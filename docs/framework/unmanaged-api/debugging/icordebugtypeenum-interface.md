@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 159ccfcf-b37c-4ad9-8e0d-a9a443262472
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorDebugTypeEnum Interface
 Implements "ICorDebugEnum" methods and enumerates "ICorDebugType" arrays.  
@@ -24,7 +22,7 @@ Implements "ICorDebugEnum" methods and enumerates "ICorDebugType" arrays.
   
 |Method|Description|  
 |------------|-----------------|  
-|[Next Method](../../../../docs/framework/unmanaged-api/debugging/icordebugtypeenum-next-method.md)|Gets the specified number of `ICorDebugType` instances from the enumeration, starting at the current position.|  
+|[Next Method](icordebugtypeenum-next-method.md)|Gets the specified number of `ICorDebugType` instances from the enumeration, starting at the current position.|  
   
 ## Remarks  
   
@@ -42,4 +40,4 @@ Implements "ICorDebugEnum" methods and enumerates "ICorDebugType" arrays.
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 5612a44d-56cc-4f34-af31-8c9809ba9431
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRMemoryNotificationCallback::OnMemoryNotification Method
 Notifies the common language runtime (CLR) of the memory load on the computer.  

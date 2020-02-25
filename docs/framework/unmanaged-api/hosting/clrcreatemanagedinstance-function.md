@@ -18,8 +18,6 @@ helpviewer_keywords:
 ms.assetid: 58ba42c0-4857-43bf-a039-73a4dc6544c2
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ClrCreateManagedInstance Function
 Creates an instance of the specified managed type.  

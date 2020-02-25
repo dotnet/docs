@@ -21,7 +21,7 @@ ms.assetid: 340926ee-aefb-4bef-92cc-453e5251fd03
   
  ![Example model with three entity types](./media/association-end-multiplicity/example-model-three-entity-types.gif)  
   
- The ADO.NET Entity Framework uses a domain-specific language (DSL) called conceptual schema definition language ([CSDL](./ef/language-reference/csdl-specification.md)) to define conceptual models. The following CSDL defines the `PublishedBy` association shown in the diagram above:  
+ The ADO.NET Entity Framework uses a domain-specific language (DSL) called conceptual schema definition language ([CSDL](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec)) to define conceptual models. The following CSDL defines the `PublishedBy` association shown in the diagram above:  
   
  [!code-xml[EDM_Example_Model#AssociationExample](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books.edmx#associationexample)]  
   

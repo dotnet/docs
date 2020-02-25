@@ -7,7 +7,7 @@ ms.assetid: a5415be2-0ef3-464c-9f76-c255cb8165a4
 ---
 # How to: Authenticate with a User Name and Password
 
-This topic demonstrates how to enable a Windows Communication Foundation (WCF) service to authenticate a client with a Windows domain username and password. It assumes you have a working, self-hosted WCF service. For an example of creating a basic self-hosted WCF service see, [Getting Started Tutorial](../../../../docs/framework/wcf/getting-started-tutorial.md). This topic assumes the service is configured in code. If you would like to see an example of configuring a similar service using a configuration file see [Message Security User Name](../../../../docs/framework/wcf/samples/message-security-user-name.md)
+This topic demonstrates how to enable a Windows Communication Foundation (WCF) service to authenticate a client with a Windows domain username and password. It assumes you have a working, self-hosted WCF service. For an example of creating a basic self-hosted WCF service see, [Getting Started Tutorial](../../../../docs/framework/wcf/getting-started-tutorial.md). This topic assumes the service is configured in code. If you would like to see an example of configuring a similar service using a configuration file, see [Message Security User Name](../samples/message-security-user-name.md).
 
 To configure a service to authenticate its clients using Windows Domain username and passwords use the <xref:System.ServiceModel.WSHttpBinding> and set its `Security.Mode` property to `Message`. In addition you must specify an X509 certificate that will be used to encrypt the username and password as they are sent from the client to the service.
 
@@ -19,14 +19,14 @@ On the client, you must prompt the user for the username and password and specif
 
     ```csharp
     // ...
-    WSHttpBinding userNameBinding = new WSHttpBinding();
+    var userNameBinding = new WSHttpBinding();
     userNameBinding.Security.Mode = SecurityMode.Message;
     userNameBinding.Security.Message.ClientCredentialType = MessageCredentialType.UserName;
     svcHost.AddServiceEndpoint(typeof(IService1), userNameBinding, "");
     // ...
     ```
 
-2. Specify the server certificate used to encrypt the username and password information sent over the wire. This code should immediately follow the code above. The following example uses the certificate that is created by the setup.bat file from the [Message Security User Name](../../../../docs/framework/wcf/samples/message-security-user-name.md) sample:
+2. Specify the server certificate used to encrypt the username and password information sent over the wire. This code should immediately follow the code above. The following example uses the certificate that is created by the setup.bat file from the [Message Security User Name](../samples/message-security-user-name.md) sample:
 
     ```csharp
     // ...
@@ -38,7 +38,7 @@ On the client, you must prompt the user for the username and password and specif
 
 ## To call the service passing username and password
 
-1. The client application must prompt the user for their username and password. The following code asks the user for username and password.
+1. The client application must prompt the user for their username and password. The following code asks the user for username and password:
 
     > [!WARNING]
     > This code should not be used in production as the password is displayed while being entered.
@@ -51,27 +51,26 @@ On the client, you must prompt the user for the username and password and specif
         username = Console.ReadLine();
         Console.WriteLine("   Enter password:");
         password = Console.ReadLine();
-        return;
     }
     ```
 
-2. Create an instance of the client proxy specifying the client’s credentials as shown in the following code:
+2. Create an instance of the client proxy specifying the client's credentials as shown in the following code:
 
     ```csharp
     string username;
     string password;
 
-    // Instantiate the proxy
-    Service1Client proxy = new Service1Client();
+    // Instantiate the proxy.
+    var proxy = new Service1Client();
 
-    // Prompt the user for username & password
+    // Prompt the user for username & password.
     GetPassword(out username, out password);
 
-    // Set the user’s credentials on the proxy
+    // Set the user's credentials on the proxy.
     proxy.ClientCredentials.UserName.UserName = username;
     proxy.ClientCredentials.UserName.Password = password;
 
-    // Treat the test certificate as trusted
+    // Treat the test certificate as trusted.
     proxy.ClientCredentials.ServiceCertificate.Authentication.CertificateValidationMode = System.ServiceModel.Security.X509CertificateValidationMode.PeerOrChainTrust;
     // Call the service operation using the proxy
     ```
@@ -86,6 +85,6 @@ On the client, you must prompt the user for the username and password and specif
 - <xref:System.ServiceModel.Security.UserNamePasswordClientCredential>
 - <xref:System.ServiceModel.WSHttpSecurity.Mode%2A>
 - <xref:System.ServiceModel.HttpTransportSecurity.ClientCredentialType%2A>
-- [Transport Security with Basic Authentication](../../../../docs/framework/wcf/feature-details/transport-security-with-basic-authentication.md)
-- [Distributed Application Security](../../../../docs/framework/wcf/feature-details/distributed-application-security.md)
-- [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md)
+- [Transport Security with Basic Authentication](transport-security-with-basic-authentication.md)
+- [Distributed Application Security](distributed-application-security.md)
+- [\<wsHttpBinding>](../../configure-apps/file-schema/wcf/wshttpbinding.md)

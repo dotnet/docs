@@ -1,5 +1,5 @@
 ---
-title: "How to: Filter on an Attribute (XPath-LINQ to XML) (Visual Basic)"
+title: "How to: Filter on an Attribute (XPath-LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: ffefb9d6-45ec-4677-a396-dd9c2b36298f
 ---
@@ -41,7 +41,7 @@ Next
   
  This example produces the following output:  
   
-```  
+```console
 Results are identical  
 <Address Type="Shipping">  
   <Name>Ellen Adams</Name>  

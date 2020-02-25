@@ -26,7 +26,7 @@ When writing a WCF client application you need to know the endpoint address of t
   
  Once you have added the <xref:System.ServiceModel.Discovery.DiscoveryClientBindingElement> to your binding and configured it, you can create an instance of the WCF client class, open it, and call its methods. The following example uses the Discovery Client Channel to discover a WCF service that implements the `ICalculator` class (used in the Getting Started WCF tutorial) and calls its `Add` method.  
   
-```  
+```csharp
 // Create the DiscoveryClientBindingElement  
 DiscoveryClientBindingElement bindingElement = new DiscoveryClientBindingElement();  
 // Search for a service that implements the ICalculator interface, attempting to open  

@@ -28,4 +28,4 @@ This single-instance application could not connect to the original instance. Som
   
 ## See also
 
-- [Debugger Basics](/visualstudio/debugger/debugger-basics)
+- [Debugger Basics](/visualstudio/debugger/debugger-feature-tour)

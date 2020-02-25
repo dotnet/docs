@@ -1,5 +1,5 @@
 ---
-title: "How to: Pass Arguments to a Procedure (Visual Basic)"
+title: "How to: Pass Arguments to a Procedure"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "arguments [Visual Basic], passing to procedures"

@@ -10,9 +10,9 @@ ms.assetid: 77dfe576-2962-407e-af13-82255df725a1
 
 The Manifest Generation and Editing Tool (*Mage.exe*) is a command-line tool that supports the creation and editing of application and deployment manifests. As a command-line tool, *Mage.exe* can be run from both batch scripts and other Windows-based applications, including ASP.NET applications.
 
-You can also use *MageUI.exe*, a graphical application, instead of *Mage.exe*. For more information, see [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](../../../docs/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client.md).
+You can also use *MageUI.exe*, a graphical application, instead of *Mage.exe*. For more information, see [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](mageui-exe-manifest-generation-and-editing-tool-graphical-client.md).
 
-This tool is automatically installed with Visual Studio. To run the tool, use Developer Command Prompt for Visual Studio. For more information, see [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md).
+This tool is automatically installed with Visual Studio. To run the tool, use Developer Command Prompt for Visual Studio. For more information, see [Command Prompts](developer-command-prompt-for-vs.md).
 
 Two versions of *Mage.exe* and *MageUI.exe* are included with Visual Studio. To see version information, run *MageUI.exe*, select **Help**, and select **About**. This documentation describes version 4.0.x.x of *Mage.exe* and *MageUI.exe*.
 
@@ -59,7 +59,7 @@ The following table shows the options supported by the `-New` and `-Update` comm
 |**-pu,** **-ProviderURL** `url`||Deployment manifests.|Specifies the URL which ClickOnce will examine for application updates.|
 |**-pub, -Publisher** `publisherName`||Application manifests.<br /><br /> Deployment manifests.|Adds the publisher name to the description element of either the deployment or application manifest. When used on an application manifest, **-UseManifestForTrust** must also be specified with a value of "true" or "t"; otherwise, this parameter will raise an error.|
 |**-s, -SupportURL**  `url`||Application manifests.<br /><br /> Deployment manifests.|Specifies the link that appears in Add or Remove Programs for the ClickOnce application.|
-|**-ti, -TimestampUri** `uri`||Application manifests.<br /><br /> Deployment manifests.|The URL of a digital timestamping service. Timestamping the manifests prevents you from having to re-sign the manifests should your digital certificate expire before you deploy the next version of your application. For more information, see [Windows root certificate program members](https://go.microsoft.com/fwlink/?LinkId=159000).|
+|**-ti, -TimestampUri** `uri`||Application manifests.<br /><br /> Deployment manifests.|The URL of a digital timestamping service. Timestamping the manifests prevents you from having to re-sign the manifests should your digital certificate expire before you deploy the next version of your application. For more information, see [Windows root certificate program members](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265983(v=ws.11)).|
 |**-t, -ToFile** `filePath`|-   New:<br />-   Deployment: deploy.application<br />-   Application: application.exe.manifest<br />-   Update:<br />-   The input file.|All file types.|Specifies the output path of the file that has been created or modified.<br /><br /> If **-ToFile** is not supplied when you use **-New**, the output is written to the current working directory. If **-ToFile** is not supplied when you use **-Update**, *Mage.exe* will write the file back to the input file.|
 |**-tr, -TrustLevel** `level`|Based on the zone in which the application URL resides.|Application manifests.|The level of trust to grant the application on client computers. Values include "Internet", "Intranet", and "FullTrust".|
 |**-um, -UseManifestForTrust** `willUseForTrust`|False|Application manifests.|Specifies whether the digital signature of the application manifest will be used for making trust decisions when the application runs on the client. Specifying "true" or "t" indicates that the application manifest will be used for trust decisions. Specifying "false" or "f" indicates that the signature of the deployment manifest will be used.|
@@ -101,7 +101,7 @@ mage -Update c:\HelloWorldDeployment\HelloWorld.deploy -CertFile cert.pfx
 
  The **-TrustLevel** option for application manifests describes the permission set an application requires to run on the client computer. By default, applications are assigned a trust level based on the *zone* in which their URL resides. Applications deployed over a corporate network are generally placed in the Intranet zone, while those deployed over the Internet are placed in the Internet zone. Both security zones place restrictions on the application's access to local resources, with the Intranet zone slightly more permissive than the Internet zone. The FullTrust zone gives applications complete access to a computer's local resources. If you use the **-TrustLevel** option to place an application in this zone, the Trust Manager component of the CLR will prompt the user to decide whether he or she wants to grant this higher level of trust. If you are deploying your application over a corporate network, you can use Trusted Application Deployment to raise the trust level of the application without prompting the user.
 
- Application manifests also support custom trust sections. This helps your application obey the security principle of requesting least permission, as you can configure the manifest to demand only those specific permissions that the application requires in order to execute. *Mage.exe* does not directly support adding a custom trust section. You can add one using a text editor, an XML parser, or the graphical tool *MageUI.exe*. For more information about how to use *MageUI.exe* to add custom trust sections, see [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](../../../docs/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client.md).
+ Application manifests also support custom trust sections. This helps your application obey the security principle of requesting least permission, as you can configure the manifest to demand only those specific permissions that the application requires in order to execute. *Mage.exe* does not directly support adding a custom trust section. You can add one using a text editor, an XML parser, or the graphical tool *MageUI.exe*. For more information about how to use *MageUI.exe* to add custom trust sections, see [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](mageui-exe-manifest-generation-and-editing-tool-graphical-client.md).
 
 Visual Studio 2017 includes version 4.6.1 of *Mage.exe*. Manifests created with this version of *Mage.exe* target .NET Framework 4. To target older versions of the .NET Framework, use an earlier version of *Mage.exe*.
 
@@ -133,9 +133,9 @@ The following tables show these features and restrictions:
 ||Add an assembly|Not supported|OK|
 ||Remove an assembly|Not supported|OK|
 
- Mage.exe creates new manifests that target the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)]. ClickOnce applications that target the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)] can run on both the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)] and the full version of the .NET Framework 4. If your application targets the full version of the .NET Framework 4 and cannot run on the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)], remove the client `<framework>` element by using a text editor and re-sign the manifest.
+ Mage.exe creates new manifests that target the .NET Framework 4 Client Profile. ClickOnce applications that target the .NET Framework 4 Client Profile can run on both the .NET Framework 4 Client Profile and the full version of the .NET Framework 4. If your application targets the full version of the .NET Framework 4 and cannot run on the .NET Framework 4 Client Profile, remove the client `<framework>` element by using a text editor and re-sign the manifest.
 
-The following is a sample `<framework>` element that targets the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)]:
+The following is a sample `<framework>` element that targets the .NET Framework 4 Client Profile:
 
 ```xml
 <framework targetVersion="4.0" profile="client" supportedRuntime="4.0.20506" />
@@ -216,5 +216,5 @@ mage -Sign deploy.application -CertFile cert.pfx -KeyContainer keyfile.snk -Cryp
 - [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment)
 - [Walkthrough: Manually Deploying a ClickOnce Application](/visualstudio/deployment/walkthrough-manually-deploying-a-clickonce-application)
 - [Trusted Application Deployment Overview](/visualstudio/deployment/trusted-application-deployment-overview)
-- [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](../../../docs/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client.md)
-- [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)
+- [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](mageui-exe-manifest-generation-and-editing-tool-graphical-client.md)
+- [Command Prompts](developer-command-prompt-for-vs.md)

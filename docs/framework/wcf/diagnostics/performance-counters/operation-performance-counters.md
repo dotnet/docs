@@ -15,4 +15,4 @@ Operation performance counters are found under the `ServiceModelOperation 4.0.0.
   
 ## See also
 
-- [Performance Counters](../../../../../docs/framework/wcf/diagnostics/performance-counters/index.md)
+- [Performance Counters](index.md)

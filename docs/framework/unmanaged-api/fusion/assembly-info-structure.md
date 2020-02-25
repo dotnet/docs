@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: b3cbb47c-457f-4083-8895-49562ca99ab8
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ASSEMBLY_INFO Structure
 Contains information about an assembly that is registered in the global assembly cache.  

@@ -24,16 +24,16 @@ The term "LINQ to Objects" refers to the use of LINQ queries with any <xref:Syst
  [LINQ and Strings (C#)](./linq-and-strings.md)  
  Explains how LINQ can be used to query and transform strings and collections of strings. Also includes links to topics that demonstrate these principles.  
   
- [LINQ and Reflection (C#)](./linq-and-reflection.md)  
+ [LINQ and Reflection (C#)](how-to-query-an-assembly-s-metadata-with-reflection-linq.md)  
  Links to a sample that demonstrates how LINQ uses reflection.  
   
  [LINQ and File Directories (C#)](./linq-and-file-directories.md)  
  Explains how LINQ can be used to interact with file systems. Also includes links to topics that demonstrate these concepts.  
   
- [How to: Query an ArrayList with LINQ (C#)](./how-to-query-an-arraylist-with-linq.md)  
+ [How to query an ArrayList with LINQ (C#)](./how-to-query-an-arraylist-with-linq.md)  
  Demonstrates how to query an ArrayList in C#.  
   
- [How to: Add Custom Methods for LINQ Queries (C#)](./how-to-add-custom-methods-for-linq-queries.md)  
+ [How to add custom methods for LINQ queries (C#)](./how-to-add-custom-methods-for-linq-queries.md)  
  Explains how to extend the set of methods that you can use for LINQ queries by adding extension methods to the <xref:System.Collections.Generic.IEnumerable%601> interface.  
   
  [Language-Integrated Query (LINQ) (C#)](./index.md)  

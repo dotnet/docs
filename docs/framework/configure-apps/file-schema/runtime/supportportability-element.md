@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "supportPortability element"
   - "<supportPortability> element"
 ms.assetid: 6453ef66-19b4-41f3-b712-52d0c2abc9ca
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<supportPortability> Element
 Specifies that an application can reference the same assembly in two different implementations of the .NET Framework, by disabling the default behavior that treats the assemblies as equivalent for application portability purposes.  
@@ -78,5 +76,5 @@ The following example enables an application to have references to both the .NET
   
 ## See also
 
-- [/appconfig (C# Compiler Options)](../../../../csharp/language-reference/compiler-options/appconfig-compiler-option.md)
+- [-appconfig (C# Compiler Options)](../../../../csharp/language-reference/compiler-options/appconfig-compiler-option.md)
 - [.NET Framework Assembly Unification Overview](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/db7849ey(v=vs.100))

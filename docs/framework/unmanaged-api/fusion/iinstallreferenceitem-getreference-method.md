@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 8960332f-c98a-405a-ba92-7003de0c1187
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IInstallReferenceItem::GetReference Method
 Gets a pointer to the [FUSION_INSTALL_REFERENCE](fusion-install-reference-structure.md) structure represented by this [IInstallReferenceItem](iinstallreferenceitem-interface.md) object.  

@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "Insert method"
   - "strings [.NET Framework], StringBuilder object"
 ms.assetid: 5c14867c-9a99-45bc-ae7f-2686700d377a
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Using the StringBuilder Class in .NET
 The <xref:System.String> object is immutable. Every time you use one of the methods in the <xref:System.String?displayProperty=nameWithType> class, you create a new string object in memory, which requires a new allocation of space for that new object. In situations where you need to perform repeated modifications to a string, the overhead associated with creating a new <xref:System.String> object can be costly. The <xref:System.Text.StringBuilder?displayProperty=nameWithType> class can be used when you want to modify a string without creating a new object. For example, using the <xref:System.Text.StringBuilder> class can boost performance when concatenating many strings together in a loop.  

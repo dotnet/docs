@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "source code execution"
   - "code, runtime functionality"
 ms.assetid: 059a624e-f7db-4134-ba9f-08b676050482
-author: "rpetrusha"
-ms.author: "ronpet"
 ms.custom: "updateeachrelease"
 ---
 # Common Language Runtime (CLR) overview
@@ -58,20 +56,7 @@ Language compilers and tools expose the runtime's functionality in ways that are
 
 ## CLR versions
 
-The version number of the .NET Framework doesn't necessarily correspond to the version number of the CLR it includes. The following table shows how the two version numbers correlate:
-
-|.NET Framework version|Includes CLR version|
-|----------------------------|--------------------------|
-|1.0|1.0|
-|1.1|1.1|
-|2.0|2.0|
-|3.0|2.0|
-|3.5|2.0|
-|4|4|
-|4.5 (including 4.5.1 and 4.5.2)|4|
-|4.6 (including 4.6.1 and 4.6.2)|4|
-|4.7 (including 4.7.1 and 4.7.2)|4|
-|4.8|4|
+The .NET Framework version number doesn't necessarily correspond to the version number of the CLR it includes. For a list of .NET Framework versions and their corresponding CLR versions, see [.NET Framework versions and dependencies](../framework/migration-guide/versions-and-dependencies.md). .NET Core releases have a single product version, that is, there is no separate CLR version. For a list of .NET Core versions, see [Download .NET Core](https://dotnet.microsoft.com/download/dotnet-core).
 
 ## Related topics
 
@@ -81,7 +66,3 @@ The version number of the .NET Framework doesn't necessarily correspond to the v
 |[Automatic Memory Management](automatic-memory-management.md)|Describes how the garbage collector allocates and releases memory.|
 |[Overview of the .NET Framework](../framework/get-started/overview.md)|Describes key .NET Framework concepts such as the common type system, cross-language interoperability, managed execution, application domains, and assemblies.|
 |[Common Type System](./base-types/common-type-system.md)|Describes how types are declared, used, and managed in the runtime in support of cross-language integration.|
-
-## See also
-
-- [Versions and Dependencies](../framework/migration-guide/versions-and-dependencies.md)

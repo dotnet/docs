@@ -13,13 +13,15 @@ ms.assetid: 31774d36-923b-4e2d-812e-aa190127266f
 
 This tutorial describes the third of five tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of the tutorials, see [Tutorial: Get started with Windows Communication Foundation applications](getting-started-tutorial.md).
 
-The next task for creating a WCF application is to host a WCF service in a console application. A WCF service exposes one or more *endpoints*, each of which exposes one or more service operations. A service endpoint specifies the following information: 
+The next task for creating a WCF application is to host a WCF service in a console application. A WCF service exposes one or more *endpoints*, each of which exposes one or more service operations. A service endpoint specifies the following information:
+
 - An address where you can find the service.
 - A binding that contains the information that describes how a client must communicate with the service. 
 - A contract that defines the functionality that the service provides to its clients.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
+>
 > - Create and configure a console app project for hosting a WCF service.
 > - Add code to host the WCF service.
 > - Update the configuration file.
@@ -62,11 +64,12 @@ In this tutorial, you learn how to:
 ## Add code to host the service
 
 To host the service, you add code to do the following steps: 
-   1. Create a URI for the base address.
-   2. Create a class instance for hosting the service.
-   3. Create a service endpoint.
-   4. Enable metadata exchange.
-   5. Open the service host to listen for incoming messages.
+
+1. Create a URI for the base address.
+2. Create a class instance for hosting the service.
+3. Create a service endpoint.
+4. Enable metadata exchange.
+5. Open the service host to listen for incoming messages.
   
 Make the following changes to the code:
 
@@ -211,6 +214,7 @@ The steps in the code you added to host the service are described as follows:
 
 > [!IMPORTANT]
 > When you add a WCF service library, Visual Studio hosts it for you if you debug it by starting a service host. To avoid conflicts, you can prevent Visual Studio from hosting the WCF service library. 
+>
 > 1. Select the **GettingStartedLib** project in **Solution Explorer** and choose **Properties** from the shortcut menu.
 > 2. Select **WCF Options** and uncheck **Start WCF Service Host when debugging another project in the same solution**.
 
@@ -218,6 +222,7 @@ The steps in the code you added to host the service are described as follows:
 
 In this tutorial, you learned how to:
 > [!div class="checklist"]
+>
 > - Create and configure a console app project for hosting a WCF service.
 > - Add code to host the WCF service.
 > - Update the configuration file.

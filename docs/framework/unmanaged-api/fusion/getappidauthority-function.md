@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 9f968dad-0d09-47fb-bebc-94c39a0d16ad
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetAppIdAuthority Function
 Gets a pointer to an [IAppIdAuthority](iappidauthority-interface.md) instance that manages keys for application identities and references.  

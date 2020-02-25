@@ -17,7 +17,7 @@ Determines the serialization mode of <xref:System.DateTime> objects.
   
 ```xml  
 <dateTimeSerialization  
-    mode = "Roundtrip" | "Local"  
+    mode = "Roundtrip|Local"  
 />  
 ```  
   

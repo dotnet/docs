@@ -1,5 +1,5 @@
 ---
-title: "XML Attribute Axis Property (Visual Basic)"
+title: "XML Attribute Axis Property"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.XmlPropertyAttributeAxis"
@@ -16,9 +16,9 @@ Provides access to the value of an attribute for an <xref:System.Xml.Linq.XEleme
   
 ## Syntax  
   
-```  
-      object.@attribute  
--or-  
+```vb  
+object.@attribute  
+' -or-  
 object.@<attribute>  
 ```  
   

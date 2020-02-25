@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "copying directories"
   - "directories [.NET Framework], copying"
 ms.assetid: 5a969765-e5f8-4b4e-977e-90e2b0a1fe3c
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Copy directories
 This topic demonstrates how to use I/O classes to synchronously copy the contents of a directory to another location. 
@@ -26,6 +24,8 @@ This example copies subdirectories by setting the `copySubDirs` of the `Director
  [!code-csharp[System.IO.Directory_Copy#1](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Directory_Copy/cs/program.cs#1)]
  [!code-vb[System.IO.Directory_Copy#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Directory_Copy/vb/Program.vb#1)]  
   
+[!INCLUDE [localized code comments](../../../includes/code-comments-loc.md)]
+
 ## See also
 
 - <xref:System.IO.FileInfo>

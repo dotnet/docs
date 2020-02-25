@@ -37,7 +37,7 @@ WCF Data Services integrates with Visual Studio to enable you to automatically g
 
 - At the command prompt, execute the following command without line breaks:
 
-    ```
+    ```console
     "%windir%\Microsoft.NET\Framework\v3.5\DataSvcUtil.exe" /language:CSharp /out:northwind.cs /uri:http://localhost:12345/Northwind.svc
     ```
 
@@ -48,7 +48,7 @@ WCF Data Services integrates with Visual Studio to enable you to automatically g
 
 - At the command prompt, execute the following command without line breaks:
 
-    ```
+    ```console
     "%windir%\Microsoft.NET\Framework\v3.5\datasvcutil.exe" /language:VB /out:Northwind.vb /uri:http://localhost:12345/Northwind.svc
     ```
 
@@ -59,7 +59,7 @@ WCF Data Services integrates with Visual Studio to enable you to automatically g
 
 - At the command prompt, execute the following command without line breaks:
 
-    ```
+    ```console
     "%windir%\Microsoft.NET\Framework\v3.5\datasvcutil.exe" /language:CSharp /in:Northwind.csdl /out:Northwind.cs
     ```
 
@@ -67,7 +67,7 @@ WCF Data Services integrates with Visual Studio to enable you to automatically g
 
 - At the command prompt, execute the following command without line breaks:
 
-    ```
+    ```console
     "%windir%\Microsoft.NET\Framework\v3.5\datasvcutil.exe" /language:VB /in:Northwind.csdl /out:Northwind.vb
     ```
 
@@ -75,7 +75,7 @@ WCF Data Services integrates with Visual Studio to enable you to automatically g
 
 - At the command prompt, execute the following command without line breaks:
 
-    ```
+    ```console
     "%windir%\Microsoft.NET\Framework\v3.5\datasvcutil.exe" /language:CSharp /in:Northwind.edmx /out:c:\northwind.cs
     ```
 
@@ -83,7 +83,7 @@ WCF Data Services integrates with Visual Studio to enable you to automatically g
 
 - At the command prompt, execute the following command without line breaks:
 
-    ```
+    ```console
     "%windir%\Microsoft.NET\Framework\v3.5\datasvcutil.exe" /language:VB /in:Northwind.edmx /out:c:\northwind.vb
     ```
 

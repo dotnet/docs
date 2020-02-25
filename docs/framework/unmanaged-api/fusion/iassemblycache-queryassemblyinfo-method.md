@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 09313cb5-06f6-43bd-94f4-1055c6b0c99a
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IAssemblyCache::QueryAssemblyInfo Method
 Gets the requested data about the specified assembly.  

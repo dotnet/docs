@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 1b0306b7-622b-4b57-8edc-3c713bb147ae
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CorManifestResourceFlags Enumeration
 Indicates the visibility of resources encoded in an assembly manifest.  

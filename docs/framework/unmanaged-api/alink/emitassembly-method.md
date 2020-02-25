@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 605ff39e-e5cc-4bff-8196-e8d68a9715b9
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # EmitAssembly Method
 Creates the assembly. Call this method after all other files are closed except for the assembly file. Do not call this method when producing unbound modules.  

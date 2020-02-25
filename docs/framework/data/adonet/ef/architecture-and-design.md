@@ -369,9 +369,9 @@ When DbNewInstanceExpression has a collection return type, and defines a new col
 
 - If DbNewInstanceExpression has DbElementExpression as the only argument, it is translated as follows:
 
-    ```
-    NewInstance(Element(X)) =>  SELECT TOP 1 …FROM X
-    ```
+```sql
+NewInstance(Element(X)) =>  SELECT TOP 1 …FROM X
+```
 
 If DbNewInstanceExpression has no arguments (represents an empty table), DbNewInstanceExpression is translated into:
 
@@ -403,9 +403,9 @@ The method that visits DbElementExpression is only invoked for visiting a DbElem
 
 ### DbQuantifierExpression
 
-Depending on the expression type (Any or All), DbQuantifierExpression is translated it as:
+Depending on the expression type (Any or All), DbQuantifierExpression is translated as:
 
-```
+```sql
 Any(input, x) => Exists(Filter(input,x))
 All(input, x) => Not Exists(Filter(input, not(x))
 ```
@@ -414,7 +414,7 @@ All(input, x) => Not Exists(Filter(input, not(x))
 
 In some cases it is possible to collapse the translation of DbNotExpression with its input expression. For example:
 
-```
+```sql
 Not(IsNull(a)) =>  "a IS NOT NULL"
 Not(All(input, x) => Not (Not Exists(Filter(input, not(x))) => Exists(Filter(input, not(x))
 ```
@@ -425,7 +425,7 @@ The reason the second collapse is performed is because inefficiencies were intro
 
 DbIsEmptyExpression is translated as:
 
-```
+```sql
 IsEmpty(input) = Not Exists(input)
 ```
 

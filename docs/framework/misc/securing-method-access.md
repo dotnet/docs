@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "security [.NET Framework], method access"
   - "method access security"
 ms.assetid: f7c2d6ec-3b18-4e0e-9991-acd97189d818
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Securing Method Access
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  
@@ -34,7 +32,7 @@ ms.author: "mairaw"
   
 - Require derived classes that override specific methods to have a specified identity or permission.  
   
- The following example shows how to help protect a public class for limited access by requiring that callers be signed with a particular strong name. This example uses the <xref:System.Security.Permissions.StrongNameIdentityPermissionAttribute> with a **Demand** for the strong name. For task-based information on how to sign an assembly with a strong name, see [Creating and Using Strong-Named Assemblies](../app-domains/create-and-use-strong-named-assemblies.md).  
+ The following example shows how to help protect a public class for limited access by requiring that callers be signed with a particular strong name. This example uses the <xref:System.Security.Permissions.StrongNameIdentityPermissionAttribute> with a **Demand** for the strong name. For task-based information on how to sign an assembly with a strong name, see [Creating and Using Strong-Named Assemblies](../../standard/assembly/create-use-strong-named.md).  
   
 ```vb  
 <StrongNameIdentityPermissionAttribute(SecurityAction.Demand, PublicKey := "…hex…", Name := "App1", Version := "0.0.0.0")>  _  

@@ -1,7 +1,5 @@
 ---
 title: "@ - C# Reference"
-ms.custom: seodec18
-
 ms.date: 02/09/2017
 f1_keywords: 
   - "@_CSharpKeyword"
@@ -10,8 +8,6 @@ helpviewer_keywords:
   - "@ special character [C#]"
   - "@ language element [C#]"
 ms.assetid: 89bc7e53-85f5-478a-866d-1cca003c4e8c
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # @ (C# Reference)
 

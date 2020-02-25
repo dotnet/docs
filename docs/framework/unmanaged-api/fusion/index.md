@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "native API reference [.NET Framework], fusion"
   - "fusion [.NET Framework], using the unmanaged API"
 ms.assetid: f8f20967-ea17-4900-bf05-87a078095fe6
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Fusion (Unmanaged API Reference)
 The fusion API enables a runtime host to access the properties of an application's resources in order to locate the correct versions of those resources for the application.  

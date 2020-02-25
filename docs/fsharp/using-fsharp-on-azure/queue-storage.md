@@ -140,7 +140,7 @@ time to fully process each message. The following code example uses
 `GetMessages` to get 20 messages in one call and then processes
 each message. It also sets the invisibility timeout to five minutes for
 each message. Note that the 5 minutes starts for all messages at the same
-time, so after 5 minutes have passed since the call to `GetMessages`, any 
+time, so after 5 minutes have passed since the call to `GetMessages`, any
 messages which have not been deleted will become visible again.
 
 [!code-fsharp[QueueStorage](~/samples/snippets/fsharp/azure/queue-storage.fsx#L97-L99)]
@@ -165,6 +165,6 @@ to learn about more complex storage tasks.
 
 - [Azure Storage APIs for .NET](/dotnet/api/overview/azure/storage)
 - [Azure Storage Type Provider](https://github.com/fsprojects/AzureStorageTypeProvider)
-- [Azure Storage Team Blog](https://blogs.msdn.microsoft.com/windowsazurestorage/)
+- [Azure Storage Team Blog](https://docs.microsoft.com/archive/blogs/windowsazurestorage/)
 - [Configure Azure Storage connection strings](/azure/storage/common/storage-configure-connection-string)
 - [Azure Storage Services REST API Reference](/rest/api/storageservices/Azure-Storage-Services-REST-API-Reference)

@@ -8,8 +8,6 @@ dev_langs:
 helpviewer_keywords: 
   - "parallel queries, combine parallel and sequential"
 ms.assetid: 1167cfe6-c8aa-4096-94ba-c66c3a4edf4c
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Combine Parallel and Sequential LINQ Queries
 This example shows how to use the <xref:System.Linq.ParallelEnumerable.AsSequential%2A> method to instruct PLINQ to process all subsequent operators in the query sequentially. Although sequential processing is generally slower than parallel, sometimes it is necessary to produce correct results.  

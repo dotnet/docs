@@ -1,5 +1,5 @@
 ---
-title: "Lifetime in Visual Basic"
+title: "Lifetime"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "static variables [Visual Basic], lifetime"
@@ -59,7 +59,7 @@ The *lifetime* of a declared element is the period of time during which it is av
   
  If `applesSold` had been declared without using `Static`, the previous accumulated values would not be preserved across calls to `runningTotal`. The next time `runningTotal` was called, `applesSold` would have been recreated and initialized to 0, and `runningTotal` would have simply returned the same value with which it was called.  
   
-### Compiling the Code  
+### Compile the code  
  You can initialize the value of a static local variable as part of its declaration. If you declare an array to be `Static`, you can initialize its rank (number of dimensions), the length of each dimension, and the values of the individual elements.  
   
 ### Security  

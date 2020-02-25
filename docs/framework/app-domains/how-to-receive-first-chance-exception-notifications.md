@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "first-chance exception notifications"
   - "exceptions, first chance notifications"
 ms.assetid: 66f002b8-a97d-4a6e-a503-2cec01689113
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: Receive First-Chance Exception Notifications
 The <xref:System.AppDomain.FirstChanceException> event of the <xref:System.AppDomain> class lets you receive a notification that an exception has been thrown, before the common language runtime has begun searching for exception handlers.

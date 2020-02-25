@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "UseRandomizedStringHashAlgorithm element"
   - "<UseRandomizedStringHashAlgorithm> element"
 ms.assetid: c08125d6-56cc-4b23-b482-813ff85dc630
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<UseRandomizedStringHashAlgorithm> Element
 Determines whether the common language runtime calculates hash codes for strings on a per application domain basis.  
@@ -66,7 +64,7 @@ Determines whether the common language runtime calculates hash codes for strings
   
  When you run the example without supplying a configuration file, it displays output similar to the following. Note that the hash codes for the string are identical in the two application domains.  
   
-```  
+```console
 String 'This is a string.' in domain 'PerDomain.exe': 941BCEAC  
 String 'This is a string.' in domain 'NewDomain': 941BCEAC  
 ```  
@@ -84,7 +82,7 @@ String 'This is a string.' in domain 'NewDomain': 941BCEAC
   
  When the configuration file is present, the example displays the following output:  
   
-```  
+```console
 String 'This is a string.' in domain 'PerDomain.exe': 5435776D  
 String 'This is a string.' in domain 'NewDomain': 75CC8236  
 ```  

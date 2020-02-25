@@ -42,7 +42,7 @@ A type definition is used in the declaration statement of an [!INCLUDE[esql](../
 ## Examples  
  The following is an example of a simple type definition.  
   
-```  
+```sql  
 USING Microsoft.Samples.Entity  
 Function MyRound(p1 EDM.Decimal) AS (  
    Round(p1)  
@@ -52,7 +52,7 @@ MyRound(CAST(1.7 as EDM.Decimal))
   
  The following is an example of a COLLECTION type definition.  
   
-```  
+```sql  
 USING Microsoft.Samples.Entity  
 Function MyRound(p1 Collection(EDM.Decimal)) AS (  
    Select Round(p1) from p1  
@@ -62,7 +62,7 @@ MyRound({CAST(1.7 as EDM.Decimal), CAST(2.7 as EDM.Decimal)})
   
  The following is an example of a ROW type definition.  
   
-```  
+```sql  
 USING Microsoft.Samples.Entity  
 Function MyRound(p1 Row(x EDM.Decimal)) AS (  
    Round(p1.x)  
@@ -72,7 +72,7 @@ select MyRound(row(a as x)) from {CAST(1.7 as EDM.Decimal), CAST(2.7 as EDM.Deci
   
  The following is an example of a REF type definition.  
   
-```  
+```sql  
 USING Microsoft.Samples.Entity  
 Function UnReference(p1 Ref(AdventureWorks.Order)) AS (  
    Deref(p1)  

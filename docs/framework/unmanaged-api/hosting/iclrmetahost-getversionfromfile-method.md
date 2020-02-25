@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 55bb3eb4-f665-42fc-973c-465567570e82
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRMetaHost::GetVersionFromFile Method
 Gets an assembly's original .NET Framework compilation version (stored in the metadata), given its file path. This method supersedes the [GetFileVersion](../../../../docs/framework/unmanaged-api/hosting/getfileversion-function.md) function.  

@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 556bccfb-61bc-4761-b1d5-de4b1c18a38f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataImport::ResolveTypeRef Method
 Resolves a <xref:System.Type> reference represented by the specified TypeRef token.  

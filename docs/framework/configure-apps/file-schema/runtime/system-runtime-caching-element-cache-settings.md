@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "caching [.NET Framework], configuration"
   - "system.runtime.caching element"
 ms.assetid: 9b44daee-874a-4bd1-954e-83bf53565590
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # \<system.runtime.caching> Element (Cache Settings)
 

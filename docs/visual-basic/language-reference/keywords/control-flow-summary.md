@@ -1,5 +1,5 @@
 ---
-title: "Control Flow Summary (Visual Basic)"
+title: "Control Flow Summary"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "decision structures [Visual Basic]"

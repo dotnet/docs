@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: aa4a091e-13fe-4264-91de-e12f1c767c87
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # CloseEnum Method
 Closes the indicated enumeration and frees associated resources.  

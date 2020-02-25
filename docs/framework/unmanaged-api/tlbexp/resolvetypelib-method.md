@@ -13,8 +13,6 @@ helpviewer_keywords:
 ms.assetid: 95d2aa0d-8eeb-4a9f-a216-5249f7e2c167
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ResolveTypeLib Method
 Resolves the simple name of a type library by returning its fully qualified path.  
@@ -49,7 +47,7 @@ HRESULT ResolveTypeLib(
  [in] The minor version number of the type library. For example, for version *x.y*, the minor version number is *y*.  
   
  `syskind`  
- [in] A [SYSKIND](https://docs.microsoft.com/windows/win32/api/oaidl/ne-oaidl-syskind) flag that identifies the operating environment. Common values are SYS_WIN32 and SYS_WIN64.  
+ [in] A [SYSKIND](/windows/win32/api/oaidl/ne-oaidl-syskind) flag that identifies the operating environment. Common values are SYS_WIN32 and SYS_WIN64.  
   
  `pbstrResolvedTlbName`  
  [out] A pointer to a [BSTR](https://docs.microsoft.com/previous-versions/windows/desktop/automat/bstr) that contains the full path of the type library named in the `bstrSimpleName` parameter.  

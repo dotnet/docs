@@ -1,5 +1,5 @@
 ---
-title: "-linkresource (Visual Basic)"
+title: "-linkresource"
 ms.date: 03/10/2018
 helpviewer_keywords: 
   - "/linkresource compiler option [Visual Basic]"
@@ -15,9 +15,13 @@ Creates a link to a managed resource.
   
 ## Syntax  
   
-```  
+```console  
 -linkresource:filename[,identifier[,public|private]]  
-' -or-  
+```
+
+or  
+
+```console
 -linkres:filename[,identifier[,public|private]]  
 ```  
   

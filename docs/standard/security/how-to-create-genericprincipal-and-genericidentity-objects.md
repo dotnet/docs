@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "Creating GenericPrincipal Objects"
   - "GenericIdentity Objects"
 ms.assetid: 465694cf-258b-4747-9dae-35b01a5bcdbb
-author: "mairaw"
-ms.author: "mairaw"
 ---
 
 # How to: Create GenericPrincipal and GenericIdentity Objects
@@ -58,7 +56,6 @@ You can use the <xref:System.Security.Principal.GenericIdentity> class in conjun
 The following code example demonstrates how to create an instance of a **GenericPrincipal** and a **GenericIdentity**. This code displays the values of these objects to the console.
 
 ```vb
-Imports System
 Imports System.Security.Principal
 Imports System.Threading
 
@@ -131,7 +128,7 @@ public class Class1
 
 When executed, the application displays output similar to the following.
 
-```
+```console
 The Name is: MyIdentity
 The IsAuthenticated is: True
 Is this a Manager? True

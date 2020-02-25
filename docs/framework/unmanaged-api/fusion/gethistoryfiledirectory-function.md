@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 93232222-926e-42ac-b85d-8a6d33977672
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetHistoryFileDirectory Function
 Retrieves the path of the application history directory.  

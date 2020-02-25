@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "threading [.NET], synchronizing threads"
   - "managed threading"
 ms.assetid: b980eb4c-71d5-4860-864a-6dfe3692430a
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Synchronizing data for multithreading
 

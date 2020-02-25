@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: bba941c2-1c57-46d3-bbf5-5fb92700c490
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IGCHost2::SetGCStartupLimitsEx Method
 Sets the segment size and the maximum size for generation 0.  

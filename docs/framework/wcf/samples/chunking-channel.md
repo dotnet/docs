@@ -17,7 +17,7 @@ Chunking should always be employed only after the entire message to be sent has 
 >
 > `<InstallDrive>:\WF_WCF_Samples`
 >
-> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
+> If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.
 >
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Channels\ChunkingChannel`
 
@@ -322,7 +322,7 @@ This `BindingParameterCollection` is passed inside the `BindingContext` to each 
 
 1. Install ASP.NET 4.0 using the following command.
 
-    ```
+    ```console
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable
     ```
 
@@ -338,7 +338,7 @@ When running the sample, the following output is expected.
 
 Client:
 
-```
+```console
 Press enter when service is available
 
  > Sent chunk 1 of message 867c1fd1-d39e-4be1-bc7b-32066d7ced10
@@ -365,7 +365,7 @@ Press enter when service is available
 
 Server:
 
-```
+```console
 Service started, press enter to exit
  < Received chunk 1 of message 867c1fd1-d39e-4be1-bc7b-32066d7ced10
  < Received chunk 2 of message 867c1fd1-d39e-4be1-bc7b-32066d7ced10

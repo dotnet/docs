@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: a4fb291f-5630-49ba-a49a-5b66c3b71e49
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Reading an XML Document into the DOM
 XML information is read into memory from different formats. It can be read from a string, stream, URL, text reader, or a class derived from the <xref:System.Xml.XmlReader>.  

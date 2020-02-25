@@ -31,7 +31,7 @@ protected virtual void Dispose (bool disposing);
 > [!WARNING]
 > The `SqlStreamChars.Dispose` method is private and is not meant to be used directly in your code.
 >
-> Microsoft does not support the use of this field in a production application under any circumstance.
+> Microsoft does not support the use of this method in a production application under any circumstance.
 
 ## Requirements
 

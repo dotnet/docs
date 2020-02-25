@@ -58,5 +58,5 @@ Defines the security settings for a MSMQ binding. It specifies whether transport
 - [Bindings](../../../wcf/bindings.md)
 - [Configuring System-Provided Bindings](../../../wcf/feature-details/configuring-system-provided-bindings.md)
 - [Using Bindings to Configure Services and Clients](../../../wcf/using-bindings-to-configure-services-and-clients.md)
-- [\<binding>](../../../misc/binding.md)
+- [\<binding>](bindings.md)
 - [Queues in WCF](../../../wcf/feature-details/queues-in-wcf.md)

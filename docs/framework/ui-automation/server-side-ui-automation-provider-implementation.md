@@ -10,11 +10,11 @@ ms.assetid: 6acc6d08-bd67-4e2e-915c-9c1d34eb86fe
 # Server-Side UI Automation Provider Implementation
 
 > [!NOTE]
-> This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](https://go.microsoft.com/fwlink/?LinkID=156746).
+> This documentation is intended for .NET Framework developers who want to use the managed [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] classes defined in the <xref:System.Windows.Automation> namespace. For the latest information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)], see [Windows Automation API: UI Automation](/windows/win32/winauto/entry-uiauto-win32).
 
 This section describes how to implement a server-side UI Automation provider for a custom control.
 
-The implementation for Windows Presentation Foundation (WPF) elements and non-[!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] elements (such as those designed for [!INCLUDE[TLA#tla_winforms](../../../includes/tlasharptla-winforms-md.md)]) is fundamentally different. [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] elements provide support for [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] through a class derived from <xref:System.Windows.Automation.Peers.AutomationPeer>. Non-[!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] elements provide support through implementations of provider interfaces.
+The implementation for Windows Presentation Foundation (WPF) elements and non-WPF elements (such as those designed for Windows Forms) is fundamentally different. WPF elements provide support for [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] through a class derived from <xref:System.Windows.Automation.Peers.AutomationPeer>. Non-WPF elements provide support through implementations of provider interfaces.
 
 <a name="Security_Considerations"></a>
 
@@ -28,13 +28,13 @@ In particular, do not use fields from classes in UIAutomationClient.dll such as 
 
 ## Provider Implementation by Windows Presentation Foundation Elements
 
-For more information on this topic, please see [UI Automation of a WPF Custom Control](../../../docs/framework/wpf/controls/ui-automation-of-a-wpf-custom-control.md).
+For more information on this topic, please see [UI Automation of a WPF Custom Control](../wpf/controls/ui-automation-of-a-wpf-custom-control.md).
 
 <a name="Provider_Implementation_by_non_WPF_Elements"></a>
 
 ## Provider Implementation by non-WPF Elements
 
-Custom controls that are not part of the [!INCLUDE[TLA2#tla_wpf](../../../includes/tla2sharptla-wpf-md.md)] framework, but that are written in managed code (most often these are [!INCLUDE[TLA#tla_winforms](../../../includes/tlasharptla-winforms-md.md)] controls), provide support for [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] by implementing interfaces. Every element must implement at least one of the interfaces listed in the first table in the next section. In addition, if the element supports one or more control patterns, it must implement the appropriate interface for each control pattern.
+Custom controls that are not part of the WPF framework, but that are written in managed code (most often these are Windows Forms controls), provide support for [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] by implementing interfaces. Every element must implement at least one of the interfaces listed in the first table in the next section. In addition, if the element supports one or more control patterns, it must implement the appropriate interface for each control pattern.
 
 Your [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] provider project must reference the following assemblies:
 
@@ -111,11 +111,11 @@ Providers for HWND based controls do not usually need to provide the following p
 > [!NOTE]
 > The <xref:System.Windows.Automation.AutomationElementIdentifiers.RuntimeIdProperty> of a simple element or fragment root hosted in a window is obtained from the window; however, fragment elements below the root (such as list items in a list box) must provide their own identifiers. For more information, see <xref:System.Windows.Automation.Provider.IRawElementProviderFragment.GetRuntimeId%2A>.
 >
-> The <xref:System.Windows.Automation.AutomationElementIdentifiers.IsKeyboardFocusableProperty> should be returned for providers hosted in a [!INCLUDE[TLA#tla_winforms](../../../includes/tlasharptla-winforms-md.md)] control. In this case, the default window provider may be unable to retrieve the correct value.
+> The <xref:System.Windows.Automation.AutomationElementIdentifiers.IsKeyboardFocusableProperty> should be returned for providers hosted in a Windows Forms control. In this case, the default window provider may be unable to retrieve the correct value.
 >
 > The <xref:System.Windows.Automation.AutomationElementIdentifiers.NameProperty> is usually supplied by the host provider. For example, if a custom control is derived from <xref:System.Windows.Forms.Control>, the name is derived from the `Text` property of the control.
 
-For example code, see [Return Properties from a UI Automation Provider](../../../docs/framework/ui-automation/return-properties-from-a-ui-automation-provider.md).
+For example code, see [Return Properties from a UI Automation Provider](return-properties-from-a-ui-automation-provider.md).
 
 <a name="Events_in_Non_WPF_Providers"></a>
 
@@ -185,9 +185,9 @@ To accomplish this, the fragment root provider for the rebar exposes a set of ch
 
 ## See also
 
-- [UI Automation Providers Overview](../../../docs/framework/ui-automation/ui-automation-providers-overview.md)
-- [Expose a Server-side UI Automation Provider](../../../docs/framework/ui-automation/expose-a-server-side-ui-automation-provider.md)
-- [Return Properties from a UI Automation Provider](../../../docs/framework/ui-automation/return-properties-from-a-ui-automation-provider.md)
-- [Raise Events from a UI Automation Provider](../../../docs/framework/ui-automation/raise-events-from-a-ui-automation-provider.md)
-- [Enable Navigation in a UI Automation Fragment Provider](../../../docs/framework/ui-automation/enable-navigation-in-a-ui-automation-fragment-provider.md)
-- [Support Control Patterns in a UI Automation Provider](../../../docs/framework/ui-automation/support-control-patterns-in-a-ui-automation-provider.md)
+- [UI Automation Providers Overview](ui-automation-providers-overview.md)
+- [Expose a Server-side UI Automation Provider](expose-a-server-side-ui-automation-provider.md)
+- [Return Properties from a UI Automation Provider](return-properties-from-a-ui-automation-provider.md)
+- [Raise Events from a UI Automation Provider](raise-events-from-a-ui-automation-provider.md)
+- [Enable Navigation in a UI Automation Fragment Provider](enable-navigation-in-a-ui-automation-fragment-provider.md)
+- [Support Control Patterns in a UI Automation Provider](support-control-patterns-in-a-ui-automation-provider.md)

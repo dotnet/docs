@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 9e00337f-b307-4602-9bc3-965a8dbf02cd
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetHashFromHandle Function
 Generates a hash over the contents of the file with the specified file handle, using the specified hash algorithm.  

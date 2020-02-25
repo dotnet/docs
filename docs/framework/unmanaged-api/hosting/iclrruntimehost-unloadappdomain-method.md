@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 571912bc-3429-4ff8-8eb2-ea993ffbd901
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICLRRuntimeHost::UnloadAppDomain Method
 Unloads the managed <xref:System.AppDomain> that corresponds to the specified numeric identifier.  

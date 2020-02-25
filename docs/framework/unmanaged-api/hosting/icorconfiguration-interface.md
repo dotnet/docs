@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: aaf96116-372b-4538-afb1-9e0fcdac1f98
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ICorConfiguration Interface
 Provides methods for configuring the common language runtime (CLR).  

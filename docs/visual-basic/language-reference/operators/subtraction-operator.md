@@ -1,5 +1,5 @@
 ---
-title: "- Operator (Visual Basic)"
+title: "- Operator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Negate"
@@ -23,10 +23,14 @@ Returns the difference between two numeric expressions or the negative value of 
   
 ## Syntax  
   
-```  
-      expression1 – expression2  
-- or -  
-– expression1  
+```vb  
+expression1 – expression2
+```
+  
+or
+
+```vb  
+–expression1  
 ```  
   
 ## Parts  

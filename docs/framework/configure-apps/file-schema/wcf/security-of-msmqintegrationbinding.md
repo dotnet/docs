@@ -50,7 +50,7 @@ Defines the transport security settings for the Message Queuing (MSMQ) integrati
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<binding>](../../../misc/binding.md)|The binding element of the [\<msmqIntegrationBinding>](msmqintegrationbinding.md).|  
+|[\<binding>](bindings.md)|The binding element of the [\<msmqIntegrationBinding>](msmqintegrationbinding.md).|  
   
 ## See also
 
@@ -63,5 +63,5 @@ Defines the transport security settings for the Message Queuing (MSMQ) integrati
 - [Bindings](../../../wcf/bindings.md)
 - [Configuring System-Provided Bindings](../../../wcf/feature-details/configuring-system-provided-bindings.md)
 - [Using Bindings to Configure Services and Clients](../../../wcf/using-bindings-to-configure-services-and-clients.md)
-- [\<binding>](../../../misc/binding.md)
+- [\<binding>](bindings.md)
 - [\<msmqIntegrationBinding>](msmqintegrationbinding.md)

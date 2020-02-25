@@ -1,7 +1,5 @@
 ---
 title: "abstract - C# Reference"
-ms.custom: seodec18
-
 ms.date: 07/20/2015
 f1_keywords: 
   - "abstract"
@@ -80,7 +78,7 @@ You will get an error saying that the compiler cannot create an instance of the 
 
 - [C# Reference](../index.md)
 - [C# Programming Guide](../../programming-guide/index.md)
-- [Modifiers](./modifiers.md)
+- [Modifiers](index.md)
 - [virtual](./virtual.md)
 - [override](./override.md)
 - [C# Keywords](./index.md)

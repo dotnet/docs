@@ -1,5 +1,5 @@
 ---
-title: "How to: Control the Type of a Projection (Visual Basic)"
+title: "How to: Control the Type of a Projection"
 ms.date: 07/20/2015
 ms.assetid: a0171276-0b46-4817-aee5-a8d5191b12fe
 ---
@@ -73,7 +73,7 @@ End Sub
   
  This code produces the following output:  
   
-```  
+```console  
 GREAL:Great Lakes Food Market:Howard Snyder  
 HUNGC:Hungry Coyote Import Store:Yoshi Latimer  
 LAZYK:Lazy K Kountry Store:John Steel  

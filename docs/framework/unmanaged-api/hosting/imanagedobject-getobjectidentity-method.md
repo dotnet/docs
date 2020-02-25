@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: b862ff3e-e480-4cdf-84e2-e1013334a467
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IManagedObject::GetObjectIdentity Method
 Gets the identity of this managed object.  

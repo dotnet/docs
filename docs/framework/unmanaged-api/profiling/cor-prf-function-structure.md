@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 8bb5acf5-cf4b-4ccb-93f1-46db1f3f8bf3
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # COR_PRF_FUNCTION Structure
 Provides a unique representation of a function by combining its ID with the ID of its recompiled version.  
@@ -46,4 +44,4 @@ typedef struct _COR_PRF_FUNCTION {    FunctionID functionId;    ReJITID    reJit
   
 ## See also
 
-- [Profiling Structures](../../../../docs/framework/unmanaged-api/profiling/profiling-structures.md)
+- [Profiling Structures](profiling-structures.md)

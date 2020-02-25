@@ -5,8 +5,6 @@ ms.technology: dotnet-standard
 helpviewer_keywords: 
   - "garbage collection, forced"
 ms.assetid: 019008fe-4708-4e65-bebf-04fd9941e149
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # Induced Collections
 In most cases, the garbage collector can determine the best time to perform a collection, and you should let it run independently. There are rare situations when a forced collection might improve your application's performance. In these cases, you can induce garbage collection by using the <xref:System.GC.Collect%2A?displayProperty=nameWithType> method to force a garbage collection.  

@@ -8,7 +8,7 @@ Converts an expression of one data type to another.
   
 ## Syntax  
   
-```  
+```csharp
 CAST ( expression AS data_type )  
 ```  
   
@@ -17,7 +17,7 @@ CAST ( expression AS data_type )
  Any valid expression that is convertible to `data_type`.  
   
  `data_type`  
- The target system-supplied data type. It must be a primitive (scalar) type. The `data_type` used depends on the query space. If a query is executed with the <xref:System.Data.EntityClient.EntityCommand>, the data type is a type defined in the conceptual model. For more information, see [CSDL Specification](csdl-specification.md). If a query is executed with <xref:System.Data.Objects.ObjectQuery%601>, the data type is a common language runtime (CLR) type.  
+ The target system-supplied data type. It must be a primitive (scalar) type. The `data_type` used depends on the query space. If a query is executed with the <xref:System.Data.EntityClient.EntityCommand>, the data type is a type defined in the conceptual model. For more information, see [CSDL Specification](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec). If a query is executed with <xref:System.Data.Objects.ObjectQuery%601>, the data type is a common language runtime (CLR) type.  
   
 ## Return Value  
  Returns the same value as `data_type`.  
@@ -25,7 +25,7 @@ CAST ( expression AS data_type )
 ## Remarks  
  The cast expression has similar semantics to the Transact-SQL CONVERT expression. The cast expression is used to convert a value of one type into a value of another type.  
   
-```  
+```csharp
 CAST( e as T )  
 ```  
   

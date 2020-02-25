@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 738c98d7-a60c-45fe-a296-220af05e6991
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # StrongNameHashSize Function
 Gets the buffer size required for a hash, using the specified hash algorithm.  

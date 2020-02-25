@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 66eeca30-adb4-45f4-aff5-347564c95724
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetCLRIdentityManager Function
 Gets a pointer to an interface that allows the common language runtime (CLR) to manage identities.  

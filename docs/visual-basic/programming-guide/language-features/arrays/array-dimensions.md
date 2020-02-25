@@ -1,5 +1,5 @@
 ---
-title: "Array Dimensions in Visual Basic"
+title: "Array Dimensions"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "dimensions, arrays"

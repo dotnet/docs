@@ -1,6 +1,5 @@
 ---
 title: "nameof operator - C# reference"
-ms.custom: seodec18
 ms.date: 07/12/2019
 f1_keywords:
   - "nameof_CSharpKeyword"
@@ -17,7 +16,7 @@ The `nameof` operator obtains the name of a variable, type, or member as the str
 
 As the preceding example shows, in the case of a type and a namespace, the produced name is usually not [fully qualified](~/_csharplang/spec/basic-concepts.md#fully-qualified-names).
 
-The `nameof` operator is evaluated at compile time, and has no effect at run time.
+The `nameof` operator is evaluated at compile time and has no effect at run time.
 
 You can use the `nameof` operator to make the argument-checking code more maintainable:
 

@@ -12,7 +12,7 @@ Specifies the class or module that contains the `Sub Main` procedure.
   
 ## Syntax  
   
-```  
+```console  
 -main:location  
 ```  
   

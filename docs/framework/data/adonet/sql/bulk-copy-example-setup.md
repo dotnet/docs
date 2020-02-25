@@ -16,7 +16,7 @@ The <xref:System.Data.SqlClient.SqlBulkCopy> class can be used to write data onl
 ## Table Setup  
  To create the tables necessary for the code samples to run correctly, you must run the following Transact-SQL statements in a SQL Server database.  
   
-```  
+```sql
 USE AdventureWorks  
   
 IF EXISTS (SELECT * FROM dbo.sysobjects   

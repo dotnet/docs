@@ -2,8 +2,6 @@
 title: "ISymUnmanagedAsyncMethod::IsAsyncMethod Method"
 ms.date: "03/30/2017"
 ms.assetid: 670a7653-dac6-4171-98ee-d669e3adf4b2
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ISymUnmanagedAsyncMethod::IsAsyncMethod Method
 Checks if the method has async information or not.  

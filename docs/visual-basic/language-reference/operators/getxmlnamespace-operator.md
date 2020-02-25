@@ -1,5 +1,5 @@
 ---
-title: "GetXmlNamespace Operator (Visual Basic)"
+title: "GetXmlNamespace Operator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.GetXmlNamespace"
@@ -14,7 +14,7 @@ Gets the <xref:System.Xml.Linq.XNamespace> object that corresponds to the specif
   
 ## Syntax  
   
-```  
+```vb  
 GetXmlNamespace(xmlNamespacePrefix)  
 ```  
   

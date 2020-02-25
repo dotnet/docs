@@ -1,5 +1,5 @@
 ---
-title: "How to: Sort Query Results by Using LINQ (Visual Basic)"
+title: "How to: Sort Query Results by Using LINQ"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "sorting query results, multiple columns"

@@ -1,9 +1,9 @@
 ---
-title: "How to: Add Custom Methods for LINQ Queries (C#)"
+title: "How to add custom methods for LINQ queries (C#)"
 ms.date: 07/20/2015
 ms.assetid: 1a500f60-2e10-49fb-8b2a-d8d08e4817cb
 ---
-# How to: Add Custom Methods for LINQ Queries (C#)
+# How to add custom methods for LINQ queries (C#)
 
 You can extend the set of methods that you can use for LINQ queries by adding extension methods to the <xref:System.Collections.Generic.IEnumerable%601> interface. For example, in addition to the standard average or maximum operations, you can create a custom aggregate method to compute a single value from a sequence of values. You can also create a method that works as a custom filter or a specific data transform for a sequence of values and returns a new sequence. Examples of such methods are <xref:System.Linq.Enumerable.Distinct%2A>, <xref:System.Linq.Enumerable.Skip%2A>, and <xref:System.Linq.Enumerable.Reverse%2A>.
 

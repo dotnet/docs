@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 7105a6c8-6e4e-48de-ac3d-74ac75e5de2e
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # ECustomDumpItemKind Enumeration
 Reserved for future extension of the [CustomDumpItem](../../../../docs/framework/unmanaged-api/hosting/customdumpitem-structure.md) structure.  

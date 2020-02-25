@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: d23a3408-b525-4aec-a186-2ac7ca65d7a4
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::AppDomainShutdownStarted Method
 Notifies the profiler that an application domain is being unloaded from a process.  
@@ -28,10 +26,12 @@ HRESULT AppDomainShutdownStarted(
     [in] AppDomainID appDomainId);  
 ```  
   
-## Parameters  
- `appDomainId`  
- [in] Identifies the domain in which the application's assemblies are stored.  
-  
+## Parameters
+
+- `appDomainId`
+
+  \[in] Identifies the domain in which the application's assemblies are stored.
+
 ## Remarks  
  The value of `appDomainId` is not valid for any information request after the `AppDomainShutdownStarted` method returns — this is the profiler's last chance to get information about this application domain.  
   
@@ -46,4 +46,4 @@ HRESULT AppDomainShutdownStarted(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)

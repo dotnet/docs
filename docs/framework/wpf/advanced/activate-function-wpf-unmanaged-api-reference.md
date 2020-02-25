@@ -1,5 +1,6 @@
 ---
-title: "Activate Function (WPF Unmanaged API Reference)"
+title: "Activate Function - WPF unmanaged API reference"
+titleSuffix: ""
 ms.date: "03/30/2017"
 dev_langs:
   - "cpp"

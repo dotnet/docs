@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "GetCurrentApartmentType function [.NET WMI and performance counters]"
 topic_type: 
   - "Reference"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # GetCurrentApartmentType function
 Retrieves the type of apartment in which the caller is executing.   

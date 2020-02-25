@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 667bd954-6dc6-4020-a3cb-0e8224179993
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # EmbedResource Method
 Declares an embedded resource. This method does not actually embed the resource.  

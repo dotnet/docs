@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "list of assemblies in global assembly cache"
   - "Global Assembly Cache tool"
 ms.assetid: c5f786a0-969b-4f14-9f02-e77c3384d9af
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # How to: View the contents of the global assembly cache
 

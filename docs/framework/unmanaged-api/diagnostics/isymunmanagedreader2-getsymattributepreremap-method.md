@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 7580d546-a709-40c5-ad02-aa70d774fd0b
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedReader2::GetSymAttributePreRemap Method
 Gets a custom attribute based upon its name. Unlike metadata custom attributes, these attributes are held in the symbol store.  

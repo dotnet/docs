@@ -1,5 +1,5 @@
 ---
-title: F# Collection Types
+title: Collection Types
 description: Learn about F# collection types and how they differ from collection types in the .NET Framework.
 ms.date: 05/16/2016
 ---
@@ -27,7 +27,7 @@ This section compares the functions that are available on F# collection types. T
 
 |Function|Array|List|Sequence|Map|Set|Description|
 |--------|-----|----|--------|---|---|-----------|
-|append|O(M)|O(N)|O(N)|-|-|Returns a new collection that contains the elements of the first collection followed by elements of the second collection.|
+|append|O(N)|O(N)|O(N)|-|-|Returns a new collection that contains the elements of the first collection followed by elements of the second collection.|
 |add|-|-|-|O(log N)|O(log N)|Returns a new collection with the element added.|
 |average|O(N)|O(N)|O(N)|-|-|Returns the average of the elements in the collection.|
 |averageBy|O(N)|O(N)|O(N)|-|-|Returns the average of the results of the provided function applied to each element.|

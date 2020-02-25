@@ -1,9 +1,9 @@
 ---
-title: "How to: Filter on an Optional Element (C#)"
+title: "How to filter on an optional element (C#)"
 ms.date: 07/20/2015
 ms.assetid: f99e2f93-fca5-403f-8a0c-770761d4905a
 ---
-# How to: Filter on an Optional Element (C#)
+# How to filter on an optional element (C#)
 Sometimes you want to filter for an element even though you are not sure it exists in your XML document. The search should be executed so that if the particular element does not have the child element, you do not trigger a null reference exception by filtering for it. In the following example, the `Child5` element does not have a `Type` child element, but the query still executes correctly.  
   
 ## Example  

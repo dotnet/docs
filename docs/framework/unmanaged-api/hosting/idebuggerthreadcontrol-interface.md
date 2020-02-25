@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: 0a270c42-a7d1-45f1-a64d-fa3e84d14532
 topic_type: 
   - "apiref"
-author: "rpetrusha"
-ms.author: "ronpet"
 ---
 # IDebuggerThreadControl Interface
 Provides methods for notifying the host about the blocking and unblocking of threads by the debugging services.  

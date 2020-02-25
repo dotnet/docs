@@ -29,7 +29,7 @@ The `dotnet-vstest` command runs the `VSTest.Console` command-line application t
 
 - **`TEST_FILE_NAMES`**
 
-  Run tests from the specified assemblies. Separate multiple test assembly names with spaces.
+  Run tests from the specified assemblies. Separate multiple test assembly names with spaces. Wildcards are supported.
 
 ## Options
 
@@ -55,7 +55,7 @@ The `dotnet-vstest` command runs the `VSTest.Console` command-line application t
 
 - **`--Parallel`**
 
-  Execute tests in parallel. By default, all available cores on the machine are available for use. Specify an explicit number of cores by setting the MaxCpuCount property under the RunConfiguration node in the runsettings file.
+  Run tests in parallel. By default, all available cores on the machine are available for use. Specify an explicit number of cores by setting the `MaxCpuCount` property under the `RunConfiguration` node in the *runsettings* file.
 
 - **`--TestCaseFilter <Expression>`**
 

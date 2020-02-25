@@ -77,9 +77,9 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
 - **`--no-build`**
 
-  Doesn't build the test project before running it. It also implicit sets the - **`-no-restore` flag.
+  Doesn't build the test project before running it. It also implicitly sets the - `--no-restore` flag.
 
-- **`-no-restore`**
+- **`--no-restore`**
 
   Doesn't execute an implicit restore when running the command.
 

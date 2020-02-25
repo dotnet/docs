@@ -32,7 +32,7 @@ dotnet publish [-h|--help]
 - A *.runtimeconfig.json* file that specifies the shared runtime that the application expects, as well as other configuration options for the runtime (for example, garbage collection type).
 - The application's dependencies, which are copied from the NuGet cache into the output folder.
 
-The `dotnet publish` command's output is ready for deployment to a hosting system (for example, a server, PC, Mac, laptop) for execution. It's the only officially supported way to prepare the application for deployment. Depending on the type of deployment that the project specifies, the hosting system may or may not have the .NET Core shared runtime installed on it. For more information, see [.NET Core application publishing](../deploying/index.md). For the directory structure of a published application, see [Directory structure](/aspnet/core/hosting/directory-structure).
+The `dotnet publish` command's output is ready for deployment to a hosting system (for example, a server, PC, Mac, laptop) for execution. It's the only officially supported way to prepare the application for deployment. Depending on the type of deployment that the project specifies, the hosting system may or may not have the .NET Core shared runtime installed on it.
 
 ## Arguments
 
@@ -42,7 +42,7 @@ The `dotnet publish` command's output is ready for deployment to a hosting syste
   
   * `PROJECT` is the path and filename of a [C#](csproj.md), F#, or Visual Basic project file, or the path to a directory that contains a C#, F#, or Visual Basic project file. If the directory is not specified, it defaults to the current directory.
 
-  * `SOLUTION` is the path and filename of a solution file (*.sln* extension), or the path to a directory that contains a solution file. If the directory is not specified, it defaults to the current directory. **Available starting in .NET Core 3.0 SDK.** 
+  * `SOLUTION` is the path and filename of a solution file (*.sln* extension), or the path to a directory that contains a solution file. If the directory is not specified, it defaults to the current directory. **Available starting with .NET Core 3.0 SDK.** 
 
 ## Options
 
@@ -158,8 +158,10 @@ The `dotnet publish` command's output is ready for deployment to a hosting syste
 
 ## See also
 
-- [.NET Core application publishing](../deploying/index.md)
-- [Publish .NET Core apps with the .NET Core CLI](../deploying/deploy-with-cli.md).
+- [.NET Core application publishing overview](../deploying/index.md)
+- [Publish .NET Core apps with the .NET Core CLI](../deploying/deploy-with-cli.md)
 - [Target frameworks](../../standard/frameworks.md)
 - [Runtime IDentifier (RID) catalog](../rid-catalog.md)
 - [Working with macOS Catalina Notarization](../install/macos-notarization-issues.md)
+ For more information, see he following resources:
+- [Directory structure of a published application](/aspnet/core/hosting/directory-structure)

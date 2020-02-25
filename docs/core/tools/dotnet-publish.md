@@ -92,24 +92,17 @@ The `dotnet publish` command's output is ready for deployment to a hosting syste
 
   If the path is relative, the output directory generated is relative to the project file location, not to the current working directory.
 
-- **`--self-contained`**
+- **`--self-contained [true|false]`**
 
-  Publishes the .NET Core runtime with your application so the runtime doesn't need to be installed on the target machine. Default is `true` if a runtime identifier is specified. For more information about the different deployment types, see [.NET Core application publishing](../deploying/index.md).
+  Publishes the .NET Core runtime with your application so the runtime doesn't need to be installed on the target machine. Default is `true` if a runtime identifier is specified. For more information, see [.NET Core application publishing](../deploying/index.md) and [Publish .NET Core apps with the .NET Core CLI](../deploying/deploy-with-cli.md).
 
 - **`--no-self-contained`**  **Available starting with .NET Core 3.0 SDK.**
 
-  Publish the application as a runtime-dependent application without the .NET Core runtime. A supported .NET Core runtime must be installed to run the application.
+  Equivalent to `--self-contained false`.
 
 - **`-r|--runtime <RUNTIME_IDENTIFIER>`**
 
-  Publishes the application for a given runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md).
-
-  - To create a [self-contained executable](../deploying/index.md#publish-self-contained), specify this option and omit `--no-self-contained`.
-  - To create a [runtime-dependent cross-platform binary](../deploying/index.md#produce-a-cross-platform-binary), omit this option.
-  - To create a [runtime-dependent executable](../deploying/index.md#publish-runtime-dependent) for a specific platform, specify this option with `--no-self-contained`.  **Available starting with .NET Core 3.0 SDK.**
-  - To create a [runtime-dependent executable](../deploying/index.md#publish-runtime-dependent) for the current platform and a [runtime-dependent cross-platform binary](../deploying/index.md#produce-a-cross-platform-binary), omit this option.   **Available starting with .NET Core 3.0 SDK.**
-
-  For more information, see [.NET Core application publishing](../deploying/index.md).
+  Publishes the application for a given runtime. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). For more information, see [.NET Core application publishing](../deploying/index.md) and [Publish .NET Core apps with the .NET Core CLI](../deploying/deploy-with-cli.md).
 
 - **`-v|--verbosity <LEVEL>`**
 
@@ -121,39 +114,52 @@ The `dotnet publish` command's output is ready for deployment to a hosting syste
 
 ## Examples
 
-Publish the project in the current directory:
+- Create a [runtime-dependent cross-platform binary](../deploying/index.md#produce-a-cross-platform-binary) for the project in the current directory:
 
-```dotnetcli
-dotnet publish
-```
+  ```dotnetcli
+  dotnet publish
+  ```
 
-Publish the application using the specified project file:
+  Starting with .NET Core 3.0 SDK, this example also creates a [runtime-dependent executable](../deploying/index.md#publish-runtime-dependent) for the current platform.
 
-```dotnetcli
-dotnet publish ~/projects/app1/app1.csproj
-```
+- Create a [self-contained executable](../deploying/index.md#publish-self-contained) for the project in the current directory, for a specific runtime:
 
-Publish the project in the current directory using the `netcoreapp1.1` framework:
+  ```dotnetcli
+  dotnet publish --runtime osx.10.11-x64
+  ```
 
-```dotnetcli
-dotnet publish --framework netcoreapp1.1
-```
+  The RID must be in the project file.
 
-Publish the current application using the `netcoreapp1.1` framework and the runtime for `OS X 10.10` (you must list this RID in the project file).
+- Create a [runtime-dependent executable](../deploying/index.md#publish-runtime-dependent) for the project in the current directory, for a specific platform:
 
-```dotnetcli
-dotnet publish --framework netcoreapp1.1 --runtime osx.10.11-x64
-```
+  ```dotnetcli
+  dotnet publish --runtime osx.10.11-x64 --self-contained false
+  ```
 
-Publish the current application but don't restore project-to-project (P2P) references, just the root project during the restore operation:
+  The RID must be in the project file. This example applies to .NET Core 3.0 SDK and later versions.
 
-```dotnetcli
-dotnet publish --no-dependencies
-```
+- Publish the project in the current directory, for a specific runtime and target framework:
+
+  ```dotnetcli
+  dotnet publish --framework netcoreapp3.1 --runtime osx.10.11-x64
+  ```
+
+- Publish the specified project file:
+
+  ```dotnetcli
+  dotnet publish ~/projects/app1/app1.csproj
+  ```
+
+- Publish the current application but don't restore project-to-project (P2P) references, just the root project during the restore operation:
+
+  ```dotnetcli
+  dotnet publish --no-dependencies
+  ```
 
 ## See also
 
 - [.NET Core application publishing](../deploying/index.md)
+- [Publish .NET Core apps with the .NET Core CLI](../deploying/deploy-with-cli.md).
 - [Target frameworks](../../standard/frameworks.md)
 - [Runtime IDentifier (RID) catalog](../rid-catalog.md)
 - [Working with macOS Catalina Notarization](../install/macos-notarization-issues.md)

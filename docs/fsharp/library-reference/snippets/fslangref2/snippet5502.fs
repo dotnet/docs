@@ -1,2 +1,0 @@
-
-raise (MyError("Error message"))

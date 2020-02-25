@@ -60,6 +60,7 @@ Once training is complete, two projects are added to your solution with the foll
 - *ConsoleApp*: A C# .NET Core console application that provides starter code to build the prediction pipeline and make predictions.
 - *Model*: A C# .NET Standard application that contains the data models that define the schema of input and output model data as well as the following assets:
 
-    - bestModel.onnx: A serialized version of the model in Open Neural Network Exchange (ONNX) format. ONNX is an open source format for AI models that supports interoperability between frameworks like ML.NET, PyTorch and TensorFlow.
-    - bestModelMap.json: A list of categories used when making predictions to map the model output to a text category.
-    - MLModel.zip: A serialized version of the ML.NET prediction pipeline that uses the serialized version of the model *bestModel.onnx* to make predictions and maps outputs using the `bestModelMap.json` file.
+  - bestModel.onnx: A serialized version of the model in Open Neural Network Exchange (ONNX) format. ONNX is an open source format for AI models that supports interoperability between frameworks like ML.NET, PyTorch and TensorFlow.
+  - bestModelMap.json: A list of categories used when making predictions to map the model output to a text category.
+  - MLModel.zip: A serialized version of the ML.NET prediction pipeline that uses the serialized version of the model *bestModel.onnx* to make predictions and maps outputs using the `bestModelMap.json` file.
+  

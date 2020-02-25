@@ -24,8 +24,8 @@ Array.append array1 array2
 
 |Paramter name|Type|Description|
 |-------------|----|-----------|
-| `array1`|[`'T[]`](core.['t]-type-[fsharp].md)|The first input array.|
-| `array2`|[`'T[]`](core.['t]-type-[fsharp].md)|The first input array.|
+| `array1`|[`'T[]`](core.['t]-type-1d-[fsharp].md)|The first input array.|
+| `array2`|[`'T[]`](core.['t]-type-1d-[fsharp].md)|The first input array.|
 
 ## Return Value
 

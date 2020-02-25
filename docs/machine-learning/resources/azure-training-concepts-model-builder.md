@@ -55,4 +55,15 @@ The following is a more detailed description of the steps that take place during
 
 ## Model
 
-Once training is complete, a version of the model is downloaded locally.
+Once training is complete, two projects are added to your solution with the following suffixes:
+
+- ConsoleApp
+- Model
+
+The ConsoleApp project is a C# .NET Core console application that provides starter code to make predictions using the model as well as sample code on how to build the scoring pipeline.
+
+The Model project is a C# .NET Standard application that contains the following assets:
+
+- bestModel.onnx: A serialized version of the model in ONNX format.
+- bestModelMap.json: A list of categories used when making predictions to map the model output to a text category.
+- MLModel.zip: A serialized version of the ML.NET prediction pipeline that uses the serialized version of the model *bestModel.onnx* to make predictions and map outputs using the `bestModelMap.json` file. 

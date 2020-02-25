@@ -14,14 +14,11 @@ ms.date: 05/30/2018
 ## Synopsis
 
 ```dotnetcli
-dotnet vstest [<TEST_FILE_NAMES>] [--Settings|/Settings]
-    [--Tests|/Tests] [--TestAdapterPath|/TestAdapterPath]
-    [--Platform|/Platform] [--Framework|/Framework]
-    [--Parallel|/Parallel] [--TestCaseFilter|/TestCaseFilter]
-    [--logger|/logger] [-lt|--ListTests|/lt|/ListTests]
-    [--ParentProcessId|/ParentProcessId] [--Port|/Port]
-    [--Diag|/Diag] [--Blame|/Blame] [--InIsolation|/InIsolation]
-    [[--] <args>...]] [-?|--Help|/?|/Help]
+dotnet vstest [<TEST_FILE_NAMES>] [--Settings] [--Tests]
+    [--TestAdapterPath] [--Platform] [--Framework] [--Parallel]
+    [--TestCaseFilter] [--logger] [-lt|--ListTests]
+    [--ParentProcessId] [--Port] [--Diag] [--Blame]
+    [--InIsolation] [[--] <args>...]] [-?|--Help]
 ```
 
 ## Description
@@ -36,39 +33,39 @@ The `dotnet-vstest` command runs the `VSTest.Console` command-line application t
 
 ## Options
 
-- **`-Settings|/Settings:<Settings File>`**
+- **`--Settings <Settings File>`**
 
   Settings to use when running tests.
 
-- **`-Tests|/Tests:<Test Names>`**
+- **`--Tests <Test Names>`**
 
   Run tests with names that match the provided values. Separate multiple values with commas.
 
-- **`-TestAdapterPath|/TestAdapterPath`**
+- **`--TestAdapterPath`**
 
   Use custom test adapters from a given path (if any) in the test run.
 
-- **`-Platform|/Platform:<Platform type>`**
+- **`--Platform <Platform type>`**
 
   Target platform architecture used for test execution. Valid values are `x86`, `x64`, and `ARM`.
 
-- **`-Framework|/Framework:<Framework Version>`**
+- **`--Framework <Framework Version>`**
 
   Target .NET Framework version used for test execution. Examples of valid values are `.NETFramework,Version=v4.6` or `.NETCoreApp,Version=v1.0`. Other supported values are `Framework40`, `Framework45`, `FrameworkCore10`, and `FrameworkUap10`.
 
-- **`-Parallel|/Parallel`**
+- **`--Parallel`**
 
   Execute tests in parallel. By default, all available cores on the machine are available for use. Specify an explicit number of cores by setting the MaxCpuCount property under the RunConfiguration node in the runsettings file.
 
-- **`-TestCaseFilter|/TestCaseFilter:<Expression>`**
+- **`--TestCaseFilter <Expression>`**
 
   Run tests that match the given expression. `<Expression>` is of the format `<property>Operator<value>[|&<Expression>]`, where Operator is one of `=`, `!=`, or `~`. Operator `~` has 'contains' semantics and is applicable for string properties like `DisplayName`. Parenthesis `()` are used to group subexpressions.
 
-- **`?|--Help|/?|/Help`**
+- **`-?|--Help`**
 
   Prints out a short help for the command.
 
-- **`-logger|/logger:<Logger Uri/FriendlyName>`**
+- **`--logger <Logger Uri/FriendlyName>`**
 
   Specify a logger for test results.
 
@@ -90,27 +87,27 @@ The `dotnet-vstest` command runs the `VSTest.Console` command-line application t
     /logger:trx [;LogFileName=<Defaults to unique file name>]
     ```
 
-- **`lt|--ListTests|/lt|/ListTests:<File Name>`**
+- **`-lt|--ListTests <File Name>`**
 
   Lists all discovered tests from the given test container.
 
-- **`-ParentProcessId|/ParentProcessId:<ParentProcessId>`**
+- **`--ParentProcessId <ParentProcessId>`**
 
   Process ID of the parent process responsible for launching the current process.
 
-- **`-Port|/Port:<Port>`**
+- **`--Port <Port>`**
 
   Specifies the port for the socket connection and receiving the event messages.
 
-- **`-Diag|/Diag:<Path to log file>`**
+- **`--Diag <Path to log file>`**
 
   Enables verbose logs for the test platform. Logs are written to the provided file.
 
-- **`-Blame|/Blame`**
+- **`--Blame`**
 
   Runs the tests in blame mode. This option is helpful in isolating the problematic tests causing test host to crash. It creates an output file in the current directory as *Sequence.xml* that captures the order of tests execution before the crash.
 
-- **`-InIsolation|/InIsolation`**
+- **`--InIsolation`**
 
   Runs the tests in an isolated process. This makes *vstest.console.exe* process less likely to be stopped on an error in the tests, but tests may run slower.
 
@@ -124,19 +121,19 @@ The `dotnet-vstest` command runs the `VSTest.Console` command-line application t
 
 ## Examples
 
-Run tests in `mytestproject.dll`:
+Run tests in *mytestproject.dll*:
 
 ```dotnetcli
 dotnet vstest mytestproject.dll
 ```
 
-Run tests in `mytestproject.dll`, exporting to custom folder with custom name:
+Run tests in *mytestproject.dll*, exporting to custom folder with custom name:
 
 ```dotnetcli
 dotnet vstest mytestproject.dll --logger:"trx;LogFileName=custom_file_name.trx" --ResultsDirectory:custom/file/path
 ```
 
-Run tests in `mytestproject.dll` and `myothertestproject.exe`:
+Run tests in *mytestproject.dll* and *myothertestproject.exe*:
 
 ```dotnetcli
 dotnet vstest mytestproject.dll myothertestproject.exe

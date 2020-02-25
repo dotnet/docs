@@ -23,7 +23,7 @@ dotnet [-h|--help] [--version] [--info]
 To run a command:
 
 ```dotnetcli
-[dotnet] [command] [-d|--diagnostics] [-h|--help] [--verbosity]
+dotnet [command] [-d|--diagnostics] [-h|--help] [--verbosity]
     [command-options] [arguments]
 ```
 
@@ -47,11 +47,11 @@ dotnet [--additionalprobingpath] [--deps-file] [--additional-deps]
 
 The `dotnet` command has two functions:
 
-* It manages .NET Core source code and binaries.
+- It manages .NET Core source code and binaries.
 
   You specify commands that perform specific tasks. For example, [`dotnet build`](dotnet-build.md) builds a project. Each command defines its own options and arguments. All commands support the `--help` option for printing out brief documentation about how to use the command.
 
-* It runs .NET Core applications.
+- It runs .NET Core applications.
 
   You specify the path to an application `.dll` file to run the application. For example, `dotnet myapp.dll` runs the `myapp` application. See [.NET Core application deployment](../deploying/index.md) to learn about deployment options.
 
@@ -150,7 +150,7 @@ The following options are available when `dotnet` runs an application. For examp
 
 With the exception of `Disable`, all settings will use the highest available patch version.
 
-Roll forward behavior can also be configured in a project file property, a run-time configuration file property, and an environment variable.
+Roll forward behavior can also be configured in a project file property, a run-time configuration file property, and an environment variable. For more information, see [Major-version runtime roll forward](../whats-new/dotnet-core-3-0.md#major-version-runtime-roll-forward).
 
 ## dotnet commands
 

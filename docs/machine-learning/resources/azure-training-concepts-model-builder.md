@@ -39,7 +39,7 @@ To create an Azure Machine Learning workspace, the following are required:
 
 ## What is an experiment?
 
-An experiment is the collection of runs for a specific training job. Experiments belong to a specific workspace. The first time an experiment is created, it's name is registered in the workspace. Any subsequent runs, if the same name is used, those runs are logged as part of the same experiment. Otherwise, a new experiment is created.
+An experiment is the collection of runs for a specific training job. Experiments belong to a specific workspace. The first time an experiment is created, its name is registered in the workspace. Any subsequent runs, if the same name is used, those runs are logged as part of the same experiment. Otherwise, a new experiment is created.
 
 ## Training
 
@@ -64,6 +64,6 @@ The ConsoleApp project is a C# .NET Core console application that provides start
 
 The Model project is a C# .NET Standard application that contains the following assets:
 
-- bestModel.onnx: A serialized version of the model in ONNX format.
+- bestModel.onnx: A serialized version of the model in Open Neural Network Exchange (ONNX) format. ONNX is an open source format for AI models that supports interoperability between frameworks like ML.NET, PyTorch and TensorFlow.
 - bestModelMap.json: A list of categories used when making predictions to map the model output to a text category.
 - MLModel.zip: A serialized version of the ML.NET prediction pipeline that uses the serialized version of the model *bestModel.onnx* to make predictions and map outputs using the `bestModelMap.json` file.

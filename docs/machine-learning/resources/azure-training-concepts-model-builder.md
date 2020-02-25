@@ -47,11 +47,11 @@ Currently in Model Builder, training on Azure is only available for image classi
 
 The following is a more detailed description of the steps that take place during training:
 
-    |Step  | Description  |
-    |---------|---------|
-    |Step 1     |  Desc 1       |
-    |Step 2     |  Desc 2       |
-    |Step 3    |   Desc 3      |
+|Step  | Description  |
+|---------|---------|
+|Step 1     |  Desc 1       |
+|Step 2     |  Desc 2       |
+|Step 3    |   Desc 3      |
 
 ## Model
 
@@ -66,4 +66,4 @@ The Model project is a C# .NET Standard application that contains the following 
 
 - bestModel.onnx: A serialized version of the model in ONNX format.
 - bestModelMap.json: A list of categories used when making predictions to map the model output to a text category.
-- MLModel.zip: A serialized version of the ML.NET prediction pipeline that uses the serialized version of the model *bestModel.onnx* to make predictions and map outputs using the `bestModelMap.json` file. 
+- MLModel.zip: A serialized version of the ML.NET prediction pipeline that uses the serialized version of the model *bestModel.onnx* to make predictions and map outputs using the `bestModelMap.json` file.

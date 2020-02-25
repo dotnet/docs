@@ -83,23 +83,23 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
   Doesn't execute an implicit restore when running the command.
 
-- **`o|--output <OUTPUT_DIRECTORY>`**
+- **`-o|--output <OUTPUT_DIRECTORY>`**
 
   Directory in which to find the binaries to run.
 
-- **`r|--results-directory <PATH>`**
+- **`-r|--results-directory <PATH>`**
 
   The directory where the test results are going to be placed. If the specified directory doesn't exist, it's created.
 
-- **`s|--settings <SETTINGS_FILE>`**
+- **`-s|--settings <SETTINGS_FILE>`**
 
   The `.runsettings` file to use for running the tests. [Configure unit tests by using a `.runsettings` file.](/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file)
 
-- **`t|--list-tests`**
+- **`-t|--list-tests`**
 
   List all of the discovered tests in the current project.
 
-- **`v|--verbosity <LEVEL>`**
+- **`-v|--verbosity <LEVEL>`**
 
   Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
 

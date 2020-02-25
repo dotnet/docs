@@ -15,8 +15,6 @@ A workspace is an Azure Machine Learning resource that provides a central place 
 
 To create an Azure Machine Learning workspace, the following are required:
 
-    
-
 ## What is an Azure Machine Learning compute?
 
 An Azure Machine Learning compute is a cloud-based GPU optimized Linux VM used for training. Model Builder provides the following compute types:
@@ -28,7 +26,7 @@ An Azure Machine Learning compute is a cloud-based GPU optimized Linux VM used f
 
 When creating a compute, the following restrictions apply:
 
-    - No special characters, including hyphens.
+- No special characters, including hyphens.
 
 ## What is an experiment?
 
@@ -37,4 +35,3 @@ An experiment is the collection of runs for a specific training job. An experime
 ## Training
 
 ## Model
-

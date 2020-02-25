@@ -53,7 +53,7 @@ This function is named **GetValue** in compiled assemblies. If you are accessing
 
 The following code illustrates the use of Option.get.
 
-[!code-fsharp[Main](~samples/snippets/fsharp/options/snippet7.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/options/snippet7.fs)]
 
 **Output**
 

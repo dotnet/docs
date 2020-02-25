@@ -48,7 +48,7 @@ This function is named `Reverse` in compiled assemblies. If you are accessing th
 
 The following example shows how to reverse the elements in an array by using `Array.rev`.
 
-[!code-fsharp[Main](~samples/snippets/fsharp/arrays/snippet18.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet18.fs)]
 
 ```
 "Hello world!"

@@ -53,7 +53,7 @@ This function is named `TryPick` in compiled assemblies. If you are accessing th
 
 ## Example
 
-[!code-fsharp[Main](~samples/snippets/fsharp/maps/snippet18.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/maps/snippet18.fs)]
 
 **Output**
 

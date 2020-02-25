@@ -46,7 +46,7 @@ This function is named `Unzip` in compiled assemblies. If you are accessing the 
 
 ## Example
 
-[!code-fsharp[Main](~samples/snippets/fsharp/lists/snippet38.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lists/snippet38.fs)]
 
 **Output**
 

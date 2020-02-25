@@ -59,7 +59,7 @@ This function is named `DistinctBy` in compiled assemblies. If you are accessing
 
 The following example demonstrates the use of `Array.distinctBy` to keep only the elements in an array that have a distinct absolute value. The first element with a given result is retained in the new array, so the positive numbers from 1 to 5 are dropped in the array from -5 to +10.
 
-[!code-fsharp[Main](~samples/snippets/fsharp/arrays/snippet76.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet76.fs)]
 
 ```
 Original array:

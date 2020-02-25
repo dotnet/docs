@@ -59,7 +59,7 @@ This function is named `Reduce` in compiled assemblies. If you are accessing the
 
 ## Example
 
-[!code-fsharp[Main](~samples/snippets/fsharp/lists/snippet33.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lists/snippet33.fs)]
 
 **Output**
 

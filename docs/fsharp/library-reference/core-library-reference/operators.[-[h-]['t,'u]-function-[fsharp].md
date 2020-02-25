@@ -56,7 +56,7 @@ The function is referred to as the *backward* or *reverse pipe operator*.
 
 The following example demonstrates the use of the `<|` operator.
 
-[!code-fsharp[Main](~samples/snippets/fsharp/operators/snippet4.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/operators/snippet4.fs)]
 
 **Output:**
 

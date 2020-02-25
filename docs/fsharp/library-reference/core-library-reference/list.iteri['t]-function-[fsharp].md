@@ -50,7 +50,7 @@ This function is named `IterateIndexed` in compiled assemblies. If you are acces
 
 ## Example
 
-[!code-fsharp[Main](~samples/snippets/fsharp/samples101/snippet3005.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/samples101/snippet3005.fs)]
 
 ### Output
 

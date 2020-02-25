@@ -54,7 +54,7 @@ This function is named `TryFind` in compiled assemblies. If you are accessing th
 
 ## Example
 
-[!code-fsharp[Main](~samples/snippets/fsharp/lists/snippet10.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lists/snippet10.fs)]
 
 **Output**
 

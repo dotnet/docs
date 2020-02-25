@@ -59,7 +59,7 @@ This function is named **SumBy** in compiled assemblies. If you are accessing th
 
 ## Example
 
-[!code-fsharp[Main](~samples/snippets/fsharp/arrays/snippet67.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet67.fs)]
 
 **Output**
 

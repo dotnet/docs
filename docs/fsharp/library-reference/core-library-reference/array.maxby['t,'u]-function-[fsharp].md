@@ -54,7 +54,7 @@ Ties are resolved by returning the element with the lowest ordinal.
 
 The following code example demonstrates the use of `Array.maxBy`.
 
-[!code-fsharp[Main](~samples/snippets/fsharp/arrays/snippet56.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet56.fs)]
 
 **Output**
 

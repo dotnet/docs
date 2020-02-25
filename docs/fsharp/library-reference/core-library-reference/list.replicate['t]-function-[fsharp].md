@@ -53,7 +53,7 @@ This function is named `Replicate` in compiled assemblies. If you are accessing 
 
 ## Example
 
-[!code-fsharp[Main](~samples/snippets/fsharp/lists/snippet52.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lists/snippet52.fs)]
 
 **Output**
 

@@ -48,7 +48,7 @@ This function is named `OfList` in compiled assemblies. If you are accessing the
 
 The following code example demonstrates the use of `Array.ofList`.
 
-[!code-fsharp[Main](~samples/snippets/fsharp/arrays/snippet59.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet59.fs)]
 
 **FSI Output**
 

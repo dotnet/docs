@@ -1,14 +1,7 @@
 ---
 title: Collections.Array Module (F#)
 description: Collections.Array Module (F#)
-keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
-ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: visual-studio-dev14
-ms.technology: devlang-fsharp
-ms.assetid: 2108875e-8079-4463-a5cc-5a4c30f5a809 
+ms.date: 02/25/2020
 ---
 
 # Collections.Array Module (F#)
@@ -16,8 +9,6 @@ ms.assetid: 2108875e-8079-4463-a5cc-5a4c30f5a809
 Provides basic operations on arrays.
 
 **Namespace/Module Path:** Microsoft.FSharp.Collections
-
-**Assembly:** FSharp.Core (in FSharp.Core.dll)
 
 ## Syntax
 
@@ -27,7 +18,7 @@ module Array
 
 ## Remarks
 
-For an overview of arrays in F#, see [Arrays &#40;F&#35;&#41;](Arrays-%5BFSharp%5D.md).
+For an overview of arrays in F#, see [Arrays](../../language-reference/arrays.md).
 
 ## Values
 
@@ -110,25 +101,14 @@ For an overview of arrays in F#, see [Arrays &#40;F&#35;&#41;](Arrays-%5BFSharp%
 |[`zip`](https://msdn.microsoft.com/library/23e086b8-b266-4db2-8b68-e88e6a8e2187)<br />**: 'T1 [] -&gt; 'T2 [] -&gt; ('T1 &#42; 'T2) []**|Combines two arrays into an array of tuples that have two elements. The two arrays must have equal lengths; otherwise, **System.ArgumentException** is raised.|
 |[`zip3`](https://msdn.microsoft.com/library/1745744a-d2ca-4c3e-b825-3f15d9f4000d)<br />**: 'T1 [] -&gt; 'T2 [] -&gt; 'T3 [] -&gt; ('T1 &#42; 'T2 &#42; 'T3) []**|Combines three arrays into an array of tuples that have three elements. The three arrays must have equal lengths; otherwise, **System.ArgumentException** is raised.|
 
-## Platforms
-
-Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
-
-## Version Information
-
-**F# Core Library Versions**
-
-Supported in: 2.0, 4.0, Portable
-
 ## See Also
 
 [Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
 
-[Arrays &#40;F&#35;&#41;](Arrays-%5BFSharp%5D.md)
+[Arrays](../../language-reference/arrays.md)
 
 [Collections.Array2D Module &#40;F&#35;&#41;](Collections.Array2D-Module-%5BFSharp%5D.md)
 
 [Collections.Array3D Module &#40;F&#35;&#41;](Collections.Array3D-Module-%5BFSharp%5D.md)
 
 [Collections.Array4D Module &#40;F&#35;&#41;](Collections.Array4D-Module-%5BFSharp%5D.md)
-

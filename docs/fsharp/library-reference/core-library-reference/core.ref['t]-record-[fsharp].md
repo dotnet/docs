@@ -37,7 +37,7 @@ end
 ```
 
 ## Remarks
-For an overview of reference cells, see [Reference Cells &#40;F&#35;&#41;](Reference-Cells-%5BFSharp%5D.md).
+For an overview of reference cells, see [Reference Cells &#40;F&#35;&#41;](../../language-reference/reference-cells.md).
 
 This type is named `FSharpRef` in compiled assemblies. If you are accessing the type from a language other than F#, or through reflection, use this name.
 

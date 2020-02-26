@@ -28,7 +28,7 @@ module Operators
 ```
 
 ## Remarks
-For an overview of operators in F#, see [Symbol and Operator Reference &#40;F&#35;&#41;](Symbol-and-Operator-Reference-%5BFSharp%5D.md).
+For an overview of operators in F#, see [Symbol and Operator Reference &#40;F&#35;&#41;](../../language-reference/symbol-and-operator-reference/index.md).
 
 
 ## Modules

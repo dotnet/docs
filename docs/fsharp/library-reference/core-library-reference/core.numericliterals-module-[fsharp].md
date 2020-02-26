@@ -13,7 +13,7 @@ ms.assetid: 064ae839-2240-4090-8265-31124d0f4706
 
 # Core.NumericLiterals Module (F#)
 
-Provides a default implementations of F# numeric literal syntax for literals of the form *ddd*I. For more information, see [Literals &#40;F&#35;&#41;](Literals-%5BFSharp%5D.md).
+Provides a default implementations of F# numeric literal syntax for literals of the form *ddd*I. For more information, see [Literals &#40;F&#35;&#41;](../../language-reference/literals.md).
 
 **Namespace/Module Path:** Microsoft.FSharp.Core
 

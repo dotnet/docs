@@ -1,15 +1,7 @@
 ---
 title: Arithmetic Operators (F#)
 description: Arithmetic Operators (F#)
-keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
-ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: visual-studio-dev14
-ms.technology: devlang-fsharp
-ms.assetid: 75ddcfa3-564e-4382-80a3-f9da73d0f0ea
-redirect_url: https://docs.microsoft.com/dotnet/articles/fsharp/language-reference/symbol-and-operator-reference/arithmetic-operators 
+ms.date: 02/25/2020
 ---
 
 # Arithmetic Operators (F#)
@@ -17,6 +9,7 @@ redirect_url: https://docs.microsoft.com/dotnet/articles/fsharp/language-referen
 This topic describes arithmetic operators that are available in the F# language.
 
 ## Summary of Binary Arithmetic Operators
+
 The following table summarizes the binary arithmetic operators that are available for unboxed integral and floating-point types.
 
 |Binary operator|Notes|
@@ -29,8 +22,8 @@ The following table summarizes the binary arithmetic operators that are availabl
 |**&#42;&#42;** (exponentiation, to the power of)|Possible overflow condition when the result exceeds the maximum absolute value for the type.<br /><br />The exponentiation operator works only with floating-point types.|
 
 ## Summary of Unary Arithmetic Operators
-The following table summarizes the unary arithmetic operators that are available for integral and floating-point types.
 
+The following table summarizes the unary arithmetic operators that are available for integral and floating-point types.
 
 |Unary operator|Notes|
 |--------------|-----|
@@ -38,13 +31,11 @@ The following table summarizes the unary arithmetic operators that are available
 |**-** (negation, negative)|Can be applied to any arithmetic expression. Changes the sign of the value.|
 The behavior at overflow or underflow for integral types is to wrap around. This causes an incorrect result. Integer overflow is a potentially serious problem that can contribute to security issues when software is not written to account for it. If this is a concern for your application, consider using the checked operators in `Microsoft.FSharp.Core.Operators.Checked`.
 
-
 ## Summary of Binary Comparison Operators
+
 The following table shows the binary comparison operators that are available for integral and floating-point types. These operators return values of type `bool`.
 
 Floating-point numbers should never be directly compared for equality, because the IEEE floating-point representation does not support an exact equality operation. Two numbers that you can easily verify to be equal by inspecting the code might actually have different bit representations.
-
-
 
 |Operator|Notes|
 |--------|-----|
@@ -60,17 +51,17 @@ All of the operators discussed in this topic are defined in the **Microsoft.FSha
 
 The generic operators are customizable. To customize the comparison functions, override [Equals](https://msdn.microsoft.com/library/bsc2ak47.aspx) to provide your own custom equality comparison, and then implement [IComparable](https://msdn.microsoft.com/library/system.icomparable.aspx). The [System.IComparable](https://msdn.microsoft.com/library/system.icomparable.aspx) interface has a single method, the [CompareTo](https://msdn.microsoft.com/library/system.icomparable.compareto.aspx) method.
 
-
 ## Operators and Type Inference
+
 The use of an operator in an expression constrains type inference on that operator. Also, the use of operators prevents automatic generalization, because the use of operators implies an arithmetic type. In the absence of any other information, the F# compiler infers `int` as the type of arithmetic expressions. You can override this behavior by specifying another type. Thus the argument types and return type of `function1` in the following code are inferred to be `int`, but the types for `function2` are inferred to be `float`.
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/lang-ref-1/snippet3501.fs)]
     
 ## See Also
-[Symbol and Operator Reference &#40;F&#35;&#41;](Symbol-and-Operator-Reference-%5BFSharp%5D.md)
+[Symbol and Operator Reference](../../language-reference/symbol-and-operator-reference/index.md)
 
-[Operator Overloading &#40;F&#35;&#41;](Operator-Overloading-%5BFSharp%5D.md)
+[Operator Overloading](../../operator-overloading.md)
 
-[Bitwise Operators &#40;F&#35;&#41;](Bitwise-Operators-%5BFSharp%5D.md)
+[Bitwise Operators](../../language-reference/symbol-and-operator-reference/bitwise-operators.md)
 
-[Boolean Operators &#40;F&#35;&#41;](Boolean-Operators-%5BFSharp%5D.md)
+[Boolean Operators](../../language-reference/symbol-and-operator-reference/boolean-operators.md)

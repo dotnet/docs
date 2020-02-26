@@ -1,24 +1,14 @@
 ---
 title: CompilerServices.ITypeProvider Interface (F#)
 description: CompilerServices.ITypeProvider Interface (F#)
-keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
-ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: visual-studio-dev14
-ms.technology: devlang-fsharp
-ms.assetid: 05aa034d-9c9c-46c5-9fc2-71a24fe7deb8 
+ms.date: 02/25/2020
 ---
 
 # CompilerServices.ITypeProvider Interface (F#)
 
-Type providers implement this interface in order to be recognized by the compiler as an F# type provider. The implementation of this interface determines the public interface and behavior of the type provider. For more information, see [Type Providers](Type-Providers.md).
+Type providers implement this interface in order to be recognized by the compiler as an F# type provider. The implementation of this interface determines the public interface and behavior of the type provider. For more information, see [Type Providers](../../tutorials/type-providers/index.md).
 
 **Namespace/Module Path**: Microsoft.FSharp.Core.CompilerServices
-
-**Assembly**: FSharp.Core (in FSharp.Core.dll)
-
 
 ## Syntax
 
@@ -49,15 +39,6 @@ end
 |[GetStaticParameters](https://msdn.microsoft.com/library/2cd79503-64e5-4cc6-9272-fc27bcb2ef18) : **System.Type** -&gt; **System.Reflection.ParameterInfo** []|Get the static parameters for a provided type.|
 |[Invalidate](https://msdn.microsoft.com/library/5a8d95dc-e462-4f07-90e4-9b8dfb82d100) : [IEvent](https://msdn.microsoft.com/library/8dbca0df-f8a1-40bd-8d50-aa26f6a8b862)&lt;**System.EventHandler**, **System.EventArgs**&gt;|Triggered when an assumption changes that invalidates the resolutions so far reported by the provider.|
 |[remove_Invalidate](https://msdn.microsoft.com/library/222c81e5-4b1b-49bd-9d38-a89d5fbc93f2) : **System.EventHandler** -&gt; unit|Remove an event handler for the [Invalidate](https://msdn.microsoft.com/library/5a8d95dc-e462-4f07-90e4-9b8dfb82d100) event.|
-
-## Platforms
-Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
-
-
-## Version Information
-**F# Core Library Versions**
-
-Supported in: 4.0Supported in: 4.0, Portable
 
 ## See Also
 [Microsoft.FSharp.Core.CompilerServices Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Core.CompilerServices-Namespace-%5BFSharp%5D.md)

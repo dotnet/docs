@@ -53,6 +53,6 @@ Supported in: 2.0, 4.0, Portable
 
 [Control.Event&#60;'T&#62; Class &#40;F&#35;&#41;](Control.Event%5B%27T%5D-Class-%5BFSharp%5D.md)
 
-[Events &#40;F&#35;&#41;](Events-%5BFSharp%5D.md)
+[Events &#40;F&#35;&#41;](../../language-reference/members/events.md)
 
 [Control.IEvent&#60;'Delegate,'Args&#62; Interface &#40;F&#35;&#41;](Control.IEvent%5B%27Delegate%2C%27Args%5D-Interface-%5BFSharp%5D.md)

@@ -1,14 +1,7 @@
 ---
 title: Collections.List Module (F#)
 description: Collections.List Module (F#)
-keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
-ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: visual-studio-dev14
-ms.technology: devlang-fsharp
-ms.assetid: ae7eed75-7fd2-4ff5-b418-892aa3d08b60 
+ms.date: 02/25/2020
 ---
 
 # Collections.List Module (F#)
@@ -17,9 +10,6 @@ Basic operations on lists.
 
 **Namespace/Module Path:** Microsoft.FSharp.Collections
 
-**Assembly:** FSharp.Core (in FSharp.Core.dll)
-
-
 ## Syntax
 
 ```fsharp
@@ -27,7 +17,7 @@ module List
 ```
 
 ## Remarks
-For an overview of lists in F#, see [Lists &#40;F&#35;&#41;](Lists-%5BFSharp%5D.md).
+For an overview of lists in F#, see [Lists](../../language-reference/lists.md).
 
 
 ## Values
@@ -107,16 +97,7 @@ For an overview of lists in F#, see [Lists &#40;F&#35;&#41;](Lists-%5BFSharp%5D.
 |[zip](https://msdn.microsoft.com/library/3028d790-8f48-4c94-bf08-b058bec3689c)<br />**: 'T1 list -&gt; 'T2 list -&gt; ('T1 &#42; 'T2) list**|Combines the two lists into a list of pairs. The two lists must have equal lengths.|
 |[zip3](https://msdn.microsoft.com/library/003cc28e-0de3-4d99-89ed-cb19028e3c5b)<br />**: 'T1 list -&gt; 'T2 list -&gt; 'T3 list -&gt; ('T1 &#42; 'T2 &#42; 'T3) list**|Combines the three lists into a list of triples. The lists must have equal lengths.|
 
-## Platforms
-Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
-
-
-## Version Information
-**F# Core Library Versions**
-
-Supported in: 2.0, 4.0, Portable
-
 ## See Also
 [Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
 
-[Lists &#40;F&#35;&#41;](Lists-%5BFSharp%5D.md)
+[Lists](../../language-reference/lists.md)

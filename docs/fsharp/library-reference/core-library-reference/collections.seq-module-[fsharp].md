@@ -1,14 +1,7 @@
 ---
 title: Collections.Seq Module (F#)
 description: Collections.Seq Module (F#)
-keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
-ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: visual-studio-dev14
-ms.technology: devlang-fsharp
-ms.assetid: 7531b78c-f436-4cd5-b5b8-76f036f40d14 
+ms.date: 02/25/2020
 ---
 
 # Collections.Seq Module (F#)
@@ -17,9 +10,6 @@ Basic operations on enumerable sequences.
 
 **Namespace/Module Path:** Microsoft.FSharp.Collections
 
-**Assembly:** FSharp.Core (in FSharp.Core.dll)
-
-
 ## Syntax
 
 ```fsharp
@@ -27,11 +17,10 @@ module Seq
 ```
 
 ## Remarks
-For an overview of sequences in F#, see [Sequences &#40;F&#35;&#41;](Sequences-%5BFSharp%5D.md).
 
+For an overview of sequences in F#, see [Sequences](../../language-reference/sequences.md).
 
 ## Values
-
 
 |Value|Description|
 |-----|-----------|
@@ -107,18 +96,9 @@ For an overview of sequences in F#, see [Sequences &#40;F&#35;&#41;](Sequences-%
 |[zip](https://msdn.microsoft.com/library/0a5df8bf-0d48-44ce-bff4-e8ef1df5bca4)<br />**: seq&lt;'T1&gt; -&gt; seq&lt;'T2&gt; -&gt; seq&lt;'T1 &#42; 'T2&gt;**|Combines the two sequences into a list of pairs. The two sequences need not have equal lengths: when one sequence is exhausted any remaining elements in the other sequence are ignored.|
 |[zip3](https://msdn.microsoft.com/library/ef13bebb-22ae-4eb9-873b-87dd29154d16)<br />**: seq&lt;'T1&gt; -&gt; seq&lt;'T2&gt; -&gt; seq&lt;'T3&gt; -&gt; seq&lt;'T1 &#42; 'T2 &#42; 'T3&gt;**|Combines the three sequences into a list of triples. The sequences need not have equal lengths: when one sequence is exhausted any remaining elements in the other sequences are ignored.|
 
-## Platforms
-Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
-
-
-## Version Information
-**F# Core Library Versions**
-
-Supported in: 2.0, 4.0, Portable
-
 ## See Also
 [Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
 
-[Sequences &#40;F&#35;&#41;](Sequences-%5BFSharp%5D.md)
+[Sequences](../../language-reference/sequences.md)
 
 [Collections.seq&#60;'T&#62; Type Abbreviation &#40;F&#35;&#41;](Collections.seq%5B%27T%5D-Type-Abbreviation-%5BFSharp%5D.md)

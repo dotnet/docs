@@ -34,7 +34,7 @@ end
 ```
 
 ## Remarks
-This attribute is intended to be used on explicit fields in classes and structures. It shouldn't be used on records. For more information, see [Records &#40;F&#35;&#41;](Records-%5BFSharp%5D.md) and [Explicit Fields: The val Keyword &#40;F&#35;&#41;](Explicit-Fields-The-val-Keyword-%5BFSharp%5D.md).
+This attribute is intended to be used on explicit fields in classes and structures. It shouldn't be used on records. For more information, see [Records &#40;F&#35;&#41;](../../language-reference/records.md) and [Explicit Fields: The val Keyword &#40;F&#35;&#41;](../../language-reference/members/explicit-fields-the-val-keyword.md).
 
 The .NET Framework namespace `System.ComponentModel` defines an attribute that has the same name:  `System.ComponentModel.DefaultValueAttribute`. Therefore, you must fully qualify the F# attribute if you open the `System.ComponentModel` namespace.
 

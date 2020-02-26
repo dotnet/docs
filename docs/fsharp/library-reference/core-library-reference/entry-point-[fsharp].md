@@ -1,21 +1,12 @@
 ---
 title: Entry Point (F#)
 description: Entry Point (F#)
-keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
-ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: visual-studio-dev14
-ms.technology: devlang-fsharp
-ms.assetid: 91455443-ff9d-4510-a7e9-1560bdcd0bb0
-redirect_url: https://docs.microsoft.com/dotnet/articles/fsharp/language-reference/functions/entry-point 
+ms.date: 02/25/20202
 ---
 
 # Entry Point (F#)
 
 This topic describes the method that you use to set the entry point to an F# program.
-
 
 ## Syntax
 
@@ -44,8 +35,7 @@ Arguments passed to function : [|"1"; "2"; "3"|]
 ## Implicit Entry Point
 When a program has no **EntryPoint** attribute that explicitly indicates the entry point, the top level bindings in the last file to be compiled are used as the entry point.
 
-
 ## See Also
-[Functions &#40;F&#35;&#41;](Functions-%5BFSharp%5D.md)
+[Functions &#40;F&#35;&#41;](../../language-reference/functions/index.md)
 
-[let Bindings &#40;F&#35;&#41;](let-Bindings-%5BFSharp%5D.md)
+[let Bindings &#40;F&#35;&#41;](../../language-reference/functions/let-bindings.md)

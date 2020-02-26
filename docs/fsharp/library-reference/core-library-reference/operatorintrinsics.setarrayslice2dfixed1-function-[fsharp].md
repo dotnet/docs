@@ -75,7 +75,7 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Arrays &#40;F&#35;&#41;](Arrays-%5BFSharp%5D.md)
+[Arrays &#40;F&#35;&#41;](../../language-reference/arrays.md)
 
 [Operators.OperatorIntrinsics Module &#40;F&#35;&#41;](Operators.OperatorIntrinsics-Module-%5BFSharp%5D.md)
 

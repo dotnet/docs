@@ -13,7 +13,7 @@ ms.assetid: e25aab78-4048-458e-ab55-7780cec67e9f
 
 # Microsoft.FSharp.Linq Namespace (F#)
 
-This namespace includes types that support F# query expressions. This includes functions and operators for working with nullable values frequently encountered when working with databases, and the types that are used to implement the query expressions language feature. For more information, see [Query Expressions &#40;F&#35;&#41;](Query-Expressions-%5BFSharp%5D.md).
+This namespace includes types that support F# query expressions. This includes functions and operators for working with nullable values frequently encountered when working with databases, and the types that are used to implement the query expressions language feature. For more information, see [Query Expressions &#40;F&#35;&#41;](../../language-reference/query-expressions.md).
 
 **Namespace/Module Path**: Microsoft.FSharp.Linq
 
@@ -50,4 +50,4 @@ namespace Microsoft.FSharp.Linq
 ## See Also
 [F&#35; Core Library Reference](FSharp-Core-Library-Reference.md)
 
-[Nullable Operators &#40;F&#35;&#41;](Nullable-Operators-%5BFSharp%5D.md)
+[Nullable Operators &#40;F&#35;&#41;](../../language-reference/symbol-and-operator-reference/nullable-operators.md)

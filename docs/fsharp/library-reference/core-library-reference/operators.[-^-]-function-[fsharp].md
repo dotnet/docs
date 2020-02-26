@@ -40,7 +40,7 @@ Type: [string](https://msdn.microsoft.com/library/12b97856-ec80-4f70-a018-afb075
 
 
 ## Remarks
-This operator is provided for compatibility with other versions of ML, and generates a warning when used unless you use the `--mlcompatibility` compiler option. For more information, see [Compiler Options &#40;F&#35;&#41;](Compiler-Options-%5BFSharp%5D.md).
+This operator is provided for compatibility with other versions of ML, and generates a warning when used unless you use the `--mlcompatibility` compiler option. For more information, see [Compiler Options &#40;F&#35;&#41;](Compiler-../../language-reference/options.md).
 
 ## Platforms
 Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2

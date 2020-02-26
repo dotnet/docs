@@ -27,7 +27,7 @@ module Option
 ```
 
 ## Remarks
-For an overview of options in F#, see [Options &#40;F&#35;&#41;](Options-%5BFSharp%5D.md).
+For an overview of options in F#, see [Options &#40;F&#35;&#41;](../../language-reference/options.md).
 
 
 ## Values

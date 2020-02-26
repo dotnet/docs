@@ -30,6 +30,7 @@ Array.average : ^T [] -> ^T (requires ^T with static member (+) and ^T with stat
 Array.average array
 ```
 
+
 #### Parameters
 *array*
 Type: **^T**[[]](https://msdn.microsoft.com/library/def20292-9aae-4596-9275-b94e594f8493)
@@ -53,7 +54,7 @@ This function is named `Average` in compiled assemblies. If you are accessing th
 
 The following code shows how to use Array.average.
 
-[!code-fsharp[Main](snippets/fsarrays/snippet43.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet43.fs)]
 
 **Output**
 

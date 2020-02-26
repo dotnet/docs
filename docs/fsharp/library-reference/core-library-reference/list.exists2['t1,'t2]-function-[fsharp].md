@@ -70,7 +70,7 @@ This function is named `Exists2` in compiled assemblies. If you are accessing th
 
 The following code example illustrates the use of `List.exists2`.
 
-[!code-fsharp[Main](snippets/fslists/snippet2.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lists/snippet2.fs)]
 
 **Output**
 

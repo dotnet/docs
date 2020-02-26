@@ -46,7 +46,7 @@ This function is named `Reverse` in compiled assemblies. If you are accessing th
 
 ## Example
 
-[!code-fsharp[Main](snippets/fslists/snippet53.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lists/snippet53.fs)]
 
 **Output**
 

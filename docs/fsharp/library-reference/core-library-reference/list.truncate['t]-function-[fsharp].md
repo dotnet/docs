@@ -61,7 +61,7 @@ This function is named `Truncate` in compiled assemblies. If you are accessing t
 
 The following example demonstrates the use of `List.truncate` and contrasts the behavior with `List.take`.
 
-[!code-fsharp[Main](snippets/fslists/snippet72.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/lists/snippet72.fs)]
 
 ```
 [1; 4; 9; 16; 25]

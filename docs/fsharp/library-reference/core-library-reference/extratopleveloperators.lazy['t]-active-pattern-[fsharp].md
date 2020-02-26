@@ -36,7 +36,7 @@ This function is named `LazyPattern` in compiled assemblies. If you are accessin
 
 ## Example
 
-[!code-fsharp[Main](snippets/fscorelib2/snippet8.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/core-lib-2/snippet8.fs)]
 
 **Output**
 

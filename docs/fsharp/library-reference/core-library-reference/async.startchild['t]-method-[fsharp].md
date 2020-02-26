@@ -71,7 +71,7 @@ If child computation doesn't complete in the specified timeout period, the `chil
 
 The following code example illustrates the use of `Async.StartChild`.
 
-[!code-fsharp[Main](snippets/fsasyncapis/snippet4.fs)]
+[!code-fsharp[Main](~/samples/snippets/fsharp/async-apis/snippet4.fs)]
 
 **Sample Output**
 

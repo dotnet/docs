@@ -145,7 +145,7 @@ Caching occurs on a per-column basis and only takes place the first time a colum
 
 ### Caching as part of an EstimatorChain
 
-When you want to make caching part of an [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601), use the [`AppendCacheCheckpoint`](xref:Microsoft.ML.Data.EstimatorChain%601.AppendCacheCheckpoint%2A). An additional benefit of caching as part of an [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) is it can be serialized and saved for later use.
+When you want to cache of an [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601), use the [`AppendCacheCheckpoint`](xref:Microsoft.ML.Data.EstimatorChain%601.AppendCacheCheckpoint%2A). An additional benefit of caching as part of an [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) is it can be serialized and saved for later use.
 
 Using the following data preparation [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601), adding [`AppendCacheCheckpoint`](xref:Microsoft.ML.Data.EstimatorChain%601.AppendCacheCheckpoint%2A) at the end caches the results of the previous estimators for later use by subsequent estimators.
 

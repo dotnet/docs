@@ -1,5 +1,6 @@
 ---
 title: "Namespaces overview - LINQ to XML"
+description: An introduction to namespaces in LINQ to XML.
 ms.date: 07/20/2015
 ms.assetid: 16283322-8238-4918-ab11-802ac6748eb7
 ---
@@ -12,7 +13,7 @@ XML names are often a source of complexity in XML programming. An XML name consi
 
 Another aspect of XML names is XML namespace prefixes, which cause most of the complexity of XML names. These prefixes enable you to create a shortcut for an XML namespace, which makes the XML document more concise and understandable. However, the meaning of an XML prefix depends on context, which adds complexity. For example, the XML prefix `aw` could be associated with one XML namespace in part of an XML tree, and with a different namespace in another part.
 
-One of the advantages of using LINQ to XML with C# is that you do not have to use XML prefixes. When LINQ to XML loads or parses an XML document, each XML prefix is resolved to its corresponding XML namespace. After that, when you work with a document that uses namespaces, you almost always access the namespaces through the namespace URI, and not through the namespace prefix. When developers work with XML names in LINQ to XML they always work with a fully-qualified XML name (that is, an XML namespace and a local name). However, LINQ to XML does allow you to work with and control namespace prefixes as needed.
+One of the advantages of using LINQ to XML with C# is that you don't have to use XML prefixes. When LINQ to XML loads or parses an XML document, each XML prefix is resolved to its corresponding XML namespace. After that, when you work with a document that uses namespaces, you almost always access the namespaces through the namespace URI, and not through the namespace prefix. When developers work with XML names in LINQ to XML they always work with a fully-qualified XML name (that is, an XML namespace and a local name). However, LINQ to XML does allow you to work with and control namespace prefixes as needed.
 
 When using LINQ to XML with Visual Basic and XML literals, you must use namespace prefixes when working with documents in namespaces.
 

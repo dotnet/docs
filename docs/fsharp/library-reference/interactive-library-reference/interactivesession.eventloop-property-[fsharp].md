@@ -58,5 +58,5 @@ Supported in: 2.0, 4.0
 ## See Also
 [Interactive.InteractiveSession Class &#40;F&#35;&#41;](Interactive.InteractiveSession-Class-%5BFSharp%5D.md)
 
-[Microsoft.FSharp.Compiler.Interactive Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Compiler.Interactive-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Compiler.Interactive Namespace &#40;F&#35;&#41;](index.md)
 

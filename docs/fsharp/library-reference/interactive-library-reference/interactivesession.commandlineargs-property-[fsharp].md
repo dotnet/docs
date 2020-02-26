@@ -1,14 +1,7 @@
 ---
 title: InteractiveSession.CommandLineArgs Property (F#)
 description: InteractiveSession.CommandLineArgs Property (F#)
-keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
-ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: visual-studio-dev14
-ms.technology: devlang-fsharp
-ms.assetid: 7190c4fd-cfbc-4c49-b807-93d81c7a54f7 
+ms.date: 02/26/2020
 ---
 
 # InteractiveSession.CommandLineArgs Property (F#)
@@ -18,7 +11,6 @@ The command line arguments after ignoring the arguments relevant to the interact
 **Namespace/Module Path:** Microsoft.FSharp.Compiler.Interactive
 
 **Assembly:** FSharp.Compiler.Interactive.Settings (in FSharp.Compiler.Interactive.Settings.dll)
-
 
 ## Syntax
 
@@ -34,7 +26,7 @@ interactiveSession.CommandLineArgs <- commandLineArgs
 
 #### Parameters
 commandLineArgs
-Type: [string](https://msdn.microsoft.com/library/12b97856-ec80-4f70-a018-afb0753f755a)[Core.string Type Abbreviation &#40;F&#35;&#41;](Core.string-Type-Abbreviation-%5BFSharp%5D.md)[[]](https://msdn.microsoft.com/library/def20292-9aae-4596-9275-b94e594f8493)
+Type: [string](https://msdn.microsoft.com/library/12b97856-ec80-4f70-a018-afb0753f755a)[Core.string Type Abbreviation &#40;F&#35;&#41;](../core-library-reference/core.string-type-abbreviation-[fsharp].md)[[]](https://msdn.microsoft.com/library/def20292-9aae-4596-9275-b94e594f8493)
 
 
 The array of command line arguments.
@@ -55,4 +47,4 @@ Supported in: 2.0, 4.0
 ## See Also
 [Interactive.InteractiveSession Class &#40;F&#35;&#41;](Interactive.InteractiveSession-Class-%5BFSharp%5D.md)
 
-[Microsoft.FSharp.Compiler.Interactive Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Compiler.Interactive-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Compiler.Interactive Namespace &#40;F&#35;&#41;](index.md)

@@ -1,14 +1,7 @@
 ---
 title: Microsoft.FSharp.Compiler.Interactive Namespace (F#)
 description: Microsoft.FSharp.Compiler.Interactive Namespace (F#)
-keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
-ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: visual-studio-dev14
-ms.technology: devlang-fsharp
-ms.assetid: ef944524-5a82-44d4-8b4f-5c79487ccaba
+ms.date: 02/26/2020
 ---
 
 # Microsoft.FSharp.Compiler.Interactive Namespace (F#)
@@ -18,7 +11,6 @@ This namespace contains functionality that supports F# Interactive.
 **Namespace/Module Path:** Microsoft.FSharp.Compiler.Interactive
 
 **Assembly:** FSharp.Compiler.Interactive.Settings (in FSharp.Compiler.Interactive.Settings.dll)
-
 
 ## Syntax
 
@@ -41,4 +33,4 @@ namespace Microsoft.FSharp.Compiler.Interactive
 |type [InteractiveSession](https://msdn.microsoft.com/library/2f6aa29c-7fb9-43ae-a7e3-6720fcb282bf)|Operations supported by the currently executing F# Interactive session|
 
 ## See Also
-[F&#35; Core Library Reference](FSharp-Core-Library-Reference.md)
+[F# Core Library Reference](../core-library-reference/fsharp-core-library-reference.md)

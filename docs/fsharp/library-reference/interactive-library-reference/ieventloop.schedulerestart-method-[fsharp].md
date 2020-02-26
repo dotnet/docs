@@ -42,4 +42,4 @@ Supported in: 2.0, 4.0
 ## See Also
 [Interactive.IEventLoop Interface &#40;F&#35;&#41;](Interactive.IEventLoop-Interface-%5BFSharp%5D.md)
 
-[Microsoft.FSharp.Compiler.Interactive Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Compiler.Interactive-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Compiler.Interactive Namespace &#40;F&#35;&#41;](index.md)

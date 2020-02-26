@@ -85,4 +85,4 @@ test
 |Title|Description|
 |-----|-----------|
 |[F# Interactive Options](../../language-reference/fsharp-interactive-options.md)|Describes command line syntax and options for the F# Interactive, fsi.exe.|
-|[F# Interactive Library Reference](../interactive-library-reference/fsharp-interactive-library-reference.md)|Describes library functionality available when executing code in F# interactive.|
+|[F# Interactive Library Reference](../interactive-library-reference/index.md)|Describes library functionality available when executing code in F# interactive.|

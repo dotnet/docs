@@ -162,7 +162,7 @@ Another problem with the DOM is that it doesn't let you change the name of a nod
 
 ## Static method support for loading XML
 
-LINQ to XML lets you load XML by using static methods, instead of instance methods. This simplifies loading and parsing. For more information, see [How to load XML from a file](load-xml-file.md).
+LINQ to XML lets you load XML by using static methods, instead of instance methods. This simplifies loading and parsing. For more information, see [How to load XML from a file (LINQ to XML)](load-xml-file.md).
 
 ## Removal of support for DTD constructs
 

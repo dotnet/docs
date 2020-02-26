@@ -2,8 +2,7 @@
 title: Using Azure Key Vault to protect secrets at production time
 description: Security in .NET Microservices and Web Applications - Azure Key Vault is an excellent way to handle application secrets that are completely controlled by administrators. Administrators can even assign and revoke development values without developers having to handle them.
 author: mjrousos
-ms.author: wiwagn
-ms.date: 10/19/2018
+ms.date: 01/30/2020
 ---
 # Use Azure Key Vault to protect secrets at production time
 
@@ -27,7 +26,7 @@ The **Microsoft.Extensions.Configuration.AzureKeyVault** package allows an ASP.N
    You can also use an overload of `AddAzureKeyVault` that takes a certificate in place of the client secret by just including a reference to the [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) package.
 
 > [!IMPORTANT]
-> We recommend you to register Azure Key Vault as the last configuration provider, so it can override configuration values from previous providers.
+> We recommend that you register Azure Key Vault as the last configuration provider, so it can override configuration values from previous providers.
 
 ## Additional resources
 

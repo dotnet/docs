@@ -6,8 +6,6 @@ f1_keywords:
 helpviewer_keywords:
   - "custom element"
 ms.assetid: 2303031f-4c1d-4df4-bca1-e9bd96ca40dc
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Custom element for NameValueSectionHandler and DictionarySectionHandler
 

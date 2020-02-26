@@ -48,7 +48,7 @@ One method of creating multiple lines of defense around your database is to impl
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Stored Procedures](/sql/relational-databases/stored-procedures/stored-procedures-database-engine) and [SQL Injection](https://go.microsoft.com/fwlink/?LinkId=98234) in SQL Server Books Online|Topics describe how to create stored procedures and how SQL Injection works.|  
+|[Stored Procedures](/sql/relational-databases/stored-procedures/stored-procedures-database-engine) and [SQL Injection](/sql/relational-databases/security/sql-injection)|Articles describe how to create stored procedures and how SQL Injection works.|  
   
 ## See also
 

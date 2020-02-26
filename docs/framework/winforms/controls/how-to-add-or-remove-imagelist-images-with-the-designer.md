@@ -23,7 +23,7 @@ You can add images to an <xref:System.Windows.Forms.ImageList> component several
 
 1. Select the <xref:System.Windows.Forms.ImageList> component, or add one to the form.
 
-2. Click the smart tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph"))
+2. Click the designer actions glyph (![Small black arrow](./media/designer-actions-glyph.gif))
 
 3. In the **ImageList Tasks** dialog box, select **Choose Images**.
 
@@ -32,5 +32,5 @@ You can add images to an <xref:System.Windows.Forms.ImageList> component several
 ## See also
 
 - [Images, Bitmaps, and Metafiles](../advanced/images-bitmaps-and-metafiles.md)
-- [Walkthrough: Performing Common Tasks Using Smart Tags on Windows Forms Controls](performing-common-tasks-using-smart-tags-on-wf-controls.md)
+- [Walkthrough: Perform common tasks using designer actions](perform-common-tasks-design-actions.md)
 - [ImageList Component](imagelist-component-windows-forms.md)

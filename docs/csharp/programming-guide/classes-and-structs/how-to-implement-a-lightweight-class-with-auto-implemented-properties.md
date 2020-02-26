@@ -142,5 +142,5 @@ The compiler creates backing fields for each auto-implemented property. The fiel
 ## See also
 
 - [Properties](./properties.md)
-- [struct](../../language-reference/keywords/struct.md)
+- [struct](../../language-reference/builtin-types/struct.md)
 - [Object and Collection Initializers](./object-and-collection-initializers.md)

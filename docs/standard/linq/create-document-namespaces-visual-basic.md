@@ -1,5 +1,6 @@
 ---
 title: "How to create a document with namespaces in Visual Basic - LINQ to XML"
+description: Learn how to create a document with namespaces in Visual Basic.
 ms.date: 07/20/2015
 ms.assetid: cc5b0d4d-360c-4ada-94fa-2d2916e989be
 ---

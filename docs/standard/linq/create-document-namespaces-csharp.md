@@ -1,5 +1,6 @@
 ---
 title: "How to create a document with namespaces in C# - LINQ to XML"
+description: Learn how to create documents in C# that have namespaces.
 ms.date: 07/20/2015
 ms.assetid: 37e63c57-f86d-47ac-88a7-2c2d107def30
 ---
@@ -124,7 +125,7 @@ Another way to accomplish the same result is to use expanded names instead of de
 
 This approach has performance implications. Each time you pass a string that contains an expanded name to LINQ to XML, LINQ to XML must parse the name, find the atomized namespace, and find the atomized name. This process takes CPU time. If performance is important, you might want to declare and use an <xref:System.Xml.Linq.XNamespace> object explicitly.
 
-If performance is an important issue, see [Pre-Atomization of XName Objects (LINQ to XML) (C#)](./pre-atomization-of-xname-objects-linq-to-xml.md) for more information.
+If performance is an important issue, see [Pre-Atomization of XName Objects (LINQ to XML)](pre-atomization-xname-objects.md) for more information.
 
 ```csharp
 // Create an XML tree in a namespace, with a specified prefix

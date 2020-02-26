@@ -29,7 +29,7 @@ end
 ```
 
 ## Remarks
-Use the functions in the [Array module](https://msdn.microsoft.com/library/0cda8040-9396-40dd-8dcd-cf48542165a1) to create or manipulate values of this type, or the notation `arr.[x]` to get or set array values. For more information on arrays, see [Arrays &#40;F&#35;&#41;](Arrays-%5BFSharp%5D.md).
+Use the functions in the [Array module](https://msdn.microsoft.com/library/0cda8040-9396-40dd-8dcd-cf48542165a1) to create or manipulate values of this type, or the notation `arr.[x]` to get or set array values. For more information on arrays, see [Arrays &#40;F&#35;&#41;](../../language-reference/arrays.md).
 
 
 ## Platforms
@@ -44,4 +44,4 @@ Supported in: 2.0, 4.0, Portable
 ## See Also
 [Microsoft.FSharp.Core Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Core-Namespace-%5BFSharp%5D.md)
 
-[Arrays &#40;F&#35;&#41;](Arrays-%5BFSharp%5D.md)
+[Arrays &#40;F&#35;&#41;](../../language-reference/arrays.md)

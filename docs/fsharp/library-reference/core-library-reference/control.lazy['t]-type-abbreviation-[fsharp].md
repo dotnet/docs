@@ -42,4 +42,4 @@ Supported in: 2.0, 4.0, Portable
 
 [System.Lazy&#60;'T&#62; Class &#40;F&#35;&#41;](System.Lazy%5B%27T%5D-Class-%5BFSharp%5D.md)
 
-[Lazy Computations &#40;F&#35;&#41;](Lazy-Computations-%5BFSharp%5D.md)
+[Lazy Computations &#40;F&#35;&#41;](../../language-reference/lazy-expressions.md)

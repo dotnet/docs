@@ -1,14 +1,7 @@
 ---
 title: Async.StartChild<'T> Method (F#)
 description: Async.StartChild<'T> Method (F#)
-keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
-ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: visual-studio-dev14
-ms.technology: devlang-fsharp
-ms.assetid: bf0a42ca-4aca-4ab9-8519-335f52d7c4de 
+ms.date: 02/25/2020
 ---
 
 # Async.StartChild<'T> Method (F#)
@@ -65,7 +58,7 @@ let! result2 = completor2
 
 When used in this way, each use of `StartChild` starts an instance of `childComputation` and returns a `completor` object representing a computation to wait for the completion of the operation. When executed, the `completor` awaits the completion of `childComputation`.
 
-If child computation doesn't complete in the specified timeout period, the `childComputation` is cancelled and the `completor` raises [`System.TimeoutException`](https://msdn.microsoft.com/en-us/library/system.timeoutexception).
+If child computation doesn't complete in the specified timeout period, the `childComputation` is cancelled and the `completor` raises [`System.TimeoutException`](https://msdn.microsoft.com/library/system.timeoutexception).
 
 ## Example
 

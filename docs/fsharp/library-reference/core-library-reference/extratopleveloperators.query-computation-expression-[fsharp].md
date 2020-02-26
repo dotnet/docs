@@ -13,7 +13,7 @@ ms.assetid: e038ddda-8334-4763-9359-83f31366d81c
 
 # ExtraTopLevelOperators.query Computation Expression (F#)
 
-Provides the F# language support for query expressions. For more information, see [Query Expressions &#40;F&#35;&#41;](Query-Expressions-%5BFSharp%5D.md).
+Provides the F# language support for query expressions. For more information, see [Query Expressions &#40;F&#35;&#41;](../../language-reference/query-expressions.md).
 
 **Namespace/Module Path**: Microsoft.FSharp.Core.ExtraTopLevelOperators
 

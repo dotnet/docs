@@ -1,14 +1,7 @@
 ---
-title: Microsoft.FSharp.Quotations Namespace (F#)
-description: Microsoft.FSharp.Quotations Namespace (F#)
-keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
-ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: visual-studio-dev14
-ms.technology: devlang-fsharp
-ms.assetid: 7f4f263a-0f39-4bcd-a724-d322cf0552ba
+title: Microsoft.FSharp.Quotations Namespace
+description: Microsoft.FSharp.Quotations Namespace
+ms.date: 02/26/2020
 ---
 
 # Microsoft.FSharp.Quotations Namespace (F#)
@@ -17,9 +10,6 @@ This namespace contains functionality for working with code programmatically.
 
 **Namespace/Module Path:** Microsoft.FSharp.Quotations
 
-**Assembly:** FSharp.Core (in FSharp.Core.dll)
-
-
 ## Syntax
 
 ```fsharp
@@ -27,8 +17,7 @@ namespace Microsoft.FSharp.Quotations
 ```
 
 ## Remarks
-For more information and examples, see [Code Quotations &#40;F&#35;&#41;](Code-Quotations-%5BFSharp%5D.md).
-
+For more information and examples, see [Code Quotations](../../language-reference/code-quotations.md).
 
 ## Modules
 

@@ -13,7 +13,7 @@ ms.assetid: 5f066329-4d3f-4ab8-838b-4e5edfc5172f
 
 # Microsoft.FSharp.Linq.QueryRunExtensions Namespace (F#)
 
-This namespace includes types that support F# query expressions. For more information, see [Query Expressions &#40;F&#35;&#41;](Query-Expressions-%5BFSharp%5D.md).
+This namespace includes types that support F# query expressions. For more information, see [Query Expressions &#40;F&#35;&#41;](../../language-reference/query-expressions.md).
 
 **Namespace/Module Path**: Microsoft.FSharp.Linq
 

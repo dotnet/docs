@@ -1,33 +1,12 @@
 ---
 title: F# Core Library Reference
 description: F# Core Library Reference
-keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
-ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: visual-studio-dev14
-ms.technology: devlang-fsharp
-ms.assetid: 09903f79-a3dd-4a02-a213-a018ad1fed9b 
+ms.date: 02/26/2020
 ---
 
 # F# Core Library Reference
 
 The F# Core Library (`FSharp.Core.dll`) contains functions that support the core language, and includes frequently used utilities such as collection classes, control constructs for asynchronous programming and event-driven programming, message passing, formatted I/O, native pointers, and language quotations.
-
-
-## FSharp.Core Versions
-There are different versions of the F# Core library for each release of the F# language (2.0, 3.0, 3.1 and 4.0) and for targeting different platforms. The following table summarizes the versions.
-
-### Current versions
-
-|FSharp.Core version|F# and Visual Studio versions|Target platforms|
-|-------------------|-----------------------------|----------------|
-|3.7.4.0|F# 4.0<br /><br />Visual Studio 2015|Windows Store apps, Xamarin.iOS, Xamarin.Android, .NET Framework 4.5+|
-|3.47.4.0|F# 4.0<br /><br />Visual Studio 2015|Windows Store apps, Xamarin.iOS, Xamarin.Android, .NET Framework 4+, Silverlight 5|
-|3.78.4.0|F# 4.0<br /><br />Visual Studio 2015|Windows Store apps, Xamarin.iOS, Xamarin.Android, .NET Framework 4.5+, Windows Phone 8, Silverlight 5|
-|3.259.4.0|F# 4.0<br /><br />Visual Studio 2015|Windows Store apps, Xamarin.iOS, Xamarin.Android, .NET Framework 4.5+, Windows Phone 8.1, Silverlight 5|
-|4.4.0.0|F# 4.0<br /><br />Visual Studio 2015|.NET Framework 4.5+|
 
 ### Older versions
 
@@ -40,9 +19,7 @@ There are different versions of the F# Core library for each release of the F# l
 |4.3.0.0|F# 3.0<br /><br />Visual Studio 2012<br /><br />Visual Studio 2013|.NET Framework 4.0+|
 |4.3.1.0|F# 3.1<br /><br />Visual Studio 2013<br /><br />Visual Studio 2013|.NET Framework 4.0+|
 
-
 ## Related Topics
-
 
 |Title|Description|
 |-----|-----------|
@@ -60,11 +37,6 @@ There are different versions of the F# Core library for each release of the F# l
 |[System.Numerics Namespace &#40;F&#35;&#41;](System.Numerics-Namespace-%5BFSharp%5D.md)|Describes extensions to the .NET **System.Numerics** namespace that support F# when targeting the .NET Framework 2.0 runtime.|
 |[System.Threading Namespace &#40;F&#35;&#41;](System.Threading-Namespace-%5BFSharp%5D.md)|Describes extensions to the .NET Framework **System.Threading** namespace that support F# when targeting the .NET Framework 2.0 runtime.|
 
->[!TIP] 
-When you read the platform compatibility notes for each API, note that any APIs that are supported on Windows 8 are also supported on Windows 8.1.
-
-
 ## See Also
-[F&#35; Language Reference](FSharp-Language-Reference.md)
 
-[Visual F&#35;](Visual-FSharp.md)
+[F# Language Reference](../../language-reference/index.md)

@@ -71,4 +71,4 @@ Supported in: 2.0, 4.0, Portable
 
 [Microsoft.FSharp.Data.UnitSystems.SI.UnitNames Namespace](https://msdn.microsoft.com/library/3cb43485-11f5-4aa7-a779-558f19d4013b)
 
-[Units of Measure &#40;F&#35;&#41;](Units-of-Measure-%5BFSharp%5D.md)
+[Units of Measure &#40;F&#35;&#41;](../../language-reference/units-of-measure.md)

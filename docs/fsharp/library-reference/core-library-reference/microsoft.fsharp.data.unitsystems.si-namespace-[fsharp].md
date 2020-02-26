@@ -1,14 +1,7 @@
 ---
 title: Microsoft.FSharp.Data.UnitSystems.SI Namespace (F#)
 description: Microsoft.FSharp.Data.UnitSystems.SI Namespace (F#)
-keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
-ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: visual-studio-dev14
-ms.technology: devlang-fsharp
-ms.assetid: 1f4f93b1-33c9-48e1-bc7b-012a36ae075a
+ms.date: 02/26/2020
 ---
 
 # Microsoft.FSharp.Data.UnitSystems.SI Namespace (F#)
@@ -17,9 +10,6 @@ The `Microsoft.FSharp.Data.UnitSystems.SI` namespace contains units of measure t
 
 **Namespace/Module Path**: Microsoft.FSharp.Data.UnitSystems.SI
 
-**Assembly**: FSharp.Core (in FSharp.Core.dll)
-
-
 ## Syntax
 
 ```fsharp
@@ -27,8 +17,7 @@ namespace Microsoft.FSharp.Data.UnitSystems.SI
 ```
 
 ## Remarks
-For more information about the SI unit system, see [International System of Units](http://go.microsoft.com/fwlink/?LinkId=225215).
-
+For more information about the SI unit system, see [International System of Units](https://www.bipm.org/en/publications/si-brochure/).
 
 ## Namespaces
 

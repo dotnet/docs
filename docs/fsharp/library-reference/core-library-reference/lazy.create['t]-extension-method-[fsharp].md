@@ -64,4 +64,4 @@ Supported in: 2.0
 ## See Also
 [Control.LazyExtensions Module &#40;F&#35;&#41;](Control.LazyExtensions-Module-%5BFSharp%5D.md)
 
-[Lazy Computations &#40;F&#35;&#41;](Lazy-Computations-%5BFSharp%5D.md)
+[Lazy Computations &#40;F&#35;&#41;](../../language-reference/lazy-expressions.md)

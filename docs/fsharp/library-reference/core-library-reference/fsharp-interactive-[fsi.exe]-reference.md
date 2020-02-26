@@ -1,26 +1,18 @@
 ---
 title: F# Interactive (fsi.exe) Reference
 description: F# Interactive (fsi.exe) Reference
-keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
-ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: visual-studio-dev14
-ms.technology: devlang-fsharp
-ms.assetid: 36af8d1b-dc08-4a37-9497-d23c0a0ac11c
-redirect_url: https://docs.microsoft.com/dotnet/articles/fsharp/tutorials/fsharp-interactive/index 
+ms.date: 02/25/2020
 ---
 
 # F# Interactive (fsi.exe) Reference
 
 F# Interactive (fsi.exe) is used to run F# code interactively at the console, or to execute F# scripts. In other words, F# interactive executes a REPL (Read, Evaluate, Print Loop) for the F# language.
 
-
 ## Interactive Programming with F# #
+
 F# Interactive can be used to write code at the console or in a window in Visual Studio.
 
-To run F# Interactive from the console, run fsi.exe.  You will find fsi.exe in “c:\Program Files (x86)\Microsoft SDKs\F#\<version>\Framework\<version>\”. For information about command line options available, see [F# Interactive Options](FSharp-Interactive-Options.md).
+To run F# Interactive from the console, run fsi.exe.  You will find fsi.exe in “c:\Program Files (x86)\Microsoft SDKs\F#\<version>\Framework\<version>\”. For information about command line options available, see [F# Interactive Options](../../language-reference/fsharp-interactive-options.md).
 
 To run F# Interactive through Visual Studio, you can click the appropriate toolbar button labeled **F# Interactive**, or use the keys **Ctrl+Alt+F**. Doing this will open the interactive window, a tool window running an F# Interactive session. You can also select some code that you want to run in the interactive window and hit the key combination **ALT+ENTER**. F# Interactive starts in a tool window labeled **F# Interactive**. When you use this key combination, make sure that the editor window has the focus.
 
@@ -36,12 +28,12 @@ If you have a project open that references some libraries, you can reference the
 
 You can control the F# Interactive command line arguments (options) by adjusting the settings. On the **Tools** menu, select **Options...**, and then expand **F# Tools**. The two settings that you can change are the F# Interactive options and the **64-bit F# Interactive** setting, which is relevant only if you are running F# Interactive on a 64-bit machine. This setting determines whether you want to run the dedicated 64-bit version of fsi.exe or fsianycpu.exe, which uses the machine architecture to determine whether to run as a 32-bit or 64-bit process.
 
-
 ## Scripting with F# #
+
 Scripts use the file extension **.fsx** or **.fsscript**. Instead of compiling source code and then later running the compiled assembly, you can just run **fsi.exe** and specify the filename of the script of F# source code, and F# interactive reads the code and executes it in real time.
 
-
 ## Differences Between the Interactive, Scripting and Compiled Environments
+
 When you are compiling code in F# Interactive, whether you are running interactively or running a script, the symbol **INTERACTIVE** is defined. When you are compiling code in the compiler, the symbol **COMPILED** is defined. Thus, if code needs to be different in compiled and interactive modes, you can use preprocessor directives for conditional compilation to determine which to use.
 
 Some directives are available when you are executing scripts in F# Interactive that are not available when you are executing the compiler. The following table summarizes directives that are available when you are using F# Interactive.
@@ -92,5 +84,5 @@ test
 
 |Title|Description|
 |-----|-----------|
-|[F&#35; Interactive Options](FSharp-Interactive-Options.md)|Describes command line syntax and options for the F# Interactive, fsi.exe.|
-|[F&#35; Interactive Library Reference](FSharp-Interactive-Library-Reference.md)|Describes library functionality available when executing code in F# interactive.|
+|[F# Interactive Options](../../language-reference/fsharp-interactive-options.md)|Describes command line syntax and options for the F# Interactive, fsi.exe.|
+|[F# Interactive Library Reference](../interactive-library-reference/index.md)|Describes library functionality available when executing code in F# interactive.|

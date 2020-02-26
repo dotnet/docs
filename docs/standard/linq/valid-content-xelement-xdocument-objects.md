@@ -73,5 +73,4 @@ The following methods allow you to add child content to an <xref:System.Xml.Linq
 
 ## See also
 
-- [Create XML trees in C# (LINQ to XML)](create-xml-trees.md)
-- [XML literals in Visual Basic (LINQ to XML)](xml-literals.md)
+- [XML trees](functional-construction.md)

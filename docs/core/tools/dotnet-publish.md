@@ -64,9 +64,9 @@ The project to publish. It's either the path and filename of a [C#](csproj.md), 
 
 # [.NET Core 2.1](#tab/netcore21)
 
-`-c|--configuration {Debug|Release}`
+`-c|--configuration <CONFIGURATION>`
 
-Defines the build configuration. The default value is `Debug`.
+Defines the build configuration. The default for most projects is `Debug`, but you can override the build configuration settings in your project.
 
 `-f|--framework <FRAMEWORK>`
 
@@ -119,9 +119,9 @@ Defines the version suffix to replace the asterisk (`*`) in the version field of
 
 # [.NET Core 2.0](#tab/netcore20)
 
-`-c|--configuration {Debug|Release}`
+`-c|--configuration <CONFIGURATION>`
 
-Defines the build configuration. The default value is `Debug`.
+Defines the build configuration. The default for most projects is `Debug`, but you can override the build configuration settings in your project.
 
 `-f|--framework <FRAMEWORK>`
 
@@ -170,9 +170,9 @@ Defines the version suffix to replace the asterisk (`*`) in the version field of
 
 # [.NET Core 1.x](#tab/netcore1x)
 
-`-c|--configuration {Debug|Release}`
+`-c|--configuration <CONFIGURATION>`
 
-Defines the build configuration. The default value is `Debug`.
+Defines the build configuration. The default for most projects is `Debug`, but you can override the build configuration settings in your project.
 
 `-f|--framework <FRAMEWORK>`
 

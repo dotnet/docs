@@ -2,7 +2,7 @@
 title: .NET API analyzer
 description: Learn how the .NET API Analyzer can help detect deprecated APIs and platform compatibility issues.
 author: oliag
-ms.date: 04/26/2019
+ms.date: 02/20/2020
 ms.technology: dotnet-standard
 ---
 # .NET API analyzer
@@ -18,7 +18,7 @@ API Analyzer comes as a NuGet package [Microsoft.DotNet.Analyzers.Compatibility]
 
 - Visual Studio 2017 and later versions, or Visual Studio for Mac (all versions).
 
-## Discovering deprecated APIs
+## Discover deprecated APIs
 
 ### What are deprecated APIs?
 
@@ -30,7 +30,21 @@ The .NET family is a set of large products that are constantly upgraded to bette
 
 The API Analyzer uses API-specific error codes that begin with DE (which stands for Deprecation Error), which allows control over the display of individual warnings. The deprecated APIs identified by the analyzer are defined in the [dotnet/platform-compat](https://github.com/dotnet/platform-compat) repo.
 
-### Using the API Analyzer
+### Add the API Analyzer to your project
+
+1. Open Visual Studio.
+2. Open the project you want to run the analyzer on.
+3. In **Solution Explorer**, right-click on your project and choose **Manage NuGet Packages**. (This option is also available from the **Project** menu.)
+4. On the NuGet Package Manager tab:
+   1. Select "nuget.org" as the Package source.
+   2. Go to the **Browse** tab.
+   3. Select **Include prerelease**.
+   4. Search for **Microsoft.DotNet.Analyzers.Compatibility**.
+   5. Select that package in the list.
+   6. Select the **Install** button. 
+   7. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
+
+### Use the API Analyzer
 
 When a deprecated API, such as <xref:System.Net.WebClient>, is used in a code, API Analyzer highlights it with a green squiggly line. When you hover over the API call, a light bulb is displayed with information about the API deprecation, as in the following example:
 
@@ -44,15 +58,15 @@ By clicking on the ID, you go to a webpage with detailed information about why t
 
 Any warnings can be suppressed by right-clicking on the highlighted member and selecting **Suppress \<diagnostic ID>**. There are two ways to suppress warnings: 
 
-- [locally (in source)](#suppressing-warnings-locally)
-- [globally (in a suppression file)](#suppressing-warnings-globally) - recommended
+- [locally (in source)](#suppress-warnings-locally)
+- [globally (in a suppression file)](#suppress-warnings-globally) - recommended
 
-### Suppressing warnings locally
+### Suppress warnings locally
 
 To suppress warnings locally, right-click on the member you want to suppress warnings for and then select **Quick Actions and Refactorings** > **Suppress *diagnostic ID*\<diagnostic ID>** > **in Source**. The [#pragma](../../csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning.md) warning preprocessor directive is added to your source code in the scope defined:
 !["Screenshot of code framed with #pragma warning disable"](media/api-analyzer/suppress-in-source.jpg)
 
-### Suppressing warnings globally
+### Suppress warnings globally
 
 To suppress warnings globally, right-click on the member you want to suppress warnings for and then select **Quick Actions and Refactorings** > **Suppress *diagnostic ID*\<diagnostic ID>** > **in Suppression File**.
 
@@ -64,7 +78,7 @@ A *GlobalSuppressions.cs* file is added to your project after the first suppress
 
 Global suppression is the recommended way to ensure consistency of API usage across projects.
 
-## Discovering cross-platform issues
+## Discover cross-platform issues
 
 Similar to deprecated APIs, the analyzer identifies all APIs that are not cross-platform. For example, <xref:System.Console.WindowWidth?displayProperty=nameWithType> works on Windows but not on Linux and macOS. The diagnostic ID is shown in the **Error List** window. You can suppress that warning by right-clicking and selecting **Quick Actions and Refactorings**. Unlike deprecation cases where you have two options (either keep using the deprecated member and suppress warnings or not use it at all), here if you're developing your code only for certain platforms, you can suppress all warnings for all other platforms you don't plan to run your code on. To do so, you just need to edit your project file and add the `PlatformCompatIgnore` property that lists all platforms to be ignored. The accepted values are: `Linux`, `macOS`, and `Windows`.
 

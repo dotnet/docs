@@ -18,13 +18,17 @@ If any command in this article fails, you don't have the runtime or SDK installe
 
 ## Check SDK versions
 
-You can see which versions of the .NET Core SDK are currently installed with a terminal. Open a terminal and run the `dotnet --list-sdks` command.
+You can see which versions of the .NET Core SDK are currently installed with a terminal. Open a terminal and run the following command.
+
+```dotnetcli
+dotnet --list-sdks
+```
+
+You get output similar to the following.
 
 ::: zone pivot="os-windows"
 
 ```console
-dotnet --list-sdks
-
 2.1.500 [C:\program files\dotnet\sdk]
 2.1.502 [C:\program files\dotnet\sdk]
 2.1.504 [C:\program files\dotnet\sdk]
@@ -40,8 +44,6 @@ dotnet --list-sdks
 ::: zone pivot="os-linux"
 
 ```bash
-dotnet --list-sdks
-
 2.1.500 [/home/user/dotnet/sdk]
 2.1.502 [/home/user/dotnet/sdk]
 2.1.504 [/home/user/dotnet/sdk]
@@ -57,8 +59,6 @@ dotnet --list-sdks
 ::: zone pivot="os-macos"
 
 ```bash
-dotnet --list-sdks
-
 2.1.500 [/usr/local/share/dotnet/sdk]
 2.1.502 [/usr/local/share/dotnet/sdk]
 2.1.504 [/usr/local/share/dotnet/sdk]
@@ -73,13 +73,17 @@ dotnet --list-sdks
 
 ## Check runtime versions
 
-You can see which versions of the .NET Core runtime are currently installed with the `dotnet --list-runtimes` command.
+You can see which versions of the .NET Core runtime are currently installed with the following command.
+
+```dotnetcli
+dotnet --list-runtimes
+```
+
+You get output similar to the following.
 
 ::: zone pivot="os-windows"
 
 ```console
-dotnet --list-runtimes
-
 Microsoft.AspNetCore.All 2.1.7 [c:\program files\dotnet\shared\Microsoft.AspNetCore.All]
 Microsoft.AspNetCore.All 2.1.13 [c:\program files\dotnet\shared\Microsoft.AspNetCore.All]
 Microsoft.AspNetCore.All 2.2.0 [c:\program files\dotnet\shared\Microsoft.AspNetCore.All]
@@ -108,8 +112,6 @@ Microsoft.WindowsDesktop.App 3.1.0 [c:\program files\dotnet\shared\Microsoft.Win
 ::: zone pivot="os-linux"
 
 ```bash
-dotnet --list-runtimes
-
 Microsoft.AspNetCore.All 2.1.7 [/home/user/dotnet/shared/Microsoft.AspNetCore.All]
 Microsoft.AspNetCore.All 2.1.13 [/home/user/dotnet/shared/Microsoft.AspNetCore.All]
 Microsoft.AspNetCore.All 2.2.0 [/home/user/dotnet/shared/Microsoft.AspNetCore.All]
@@ -136,8 +138,6 @@ Microsoft.NETCore.App 3.1.0 [/home/user/dotnet/shared/Microsoft.NETCore.App]
 ::: zone pivot="os-macos"
 
 ```bash
-dotnet --list-runtimes
-
 Microsoft.AspNetCore.All 2.1.7 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.All]
 Microsoft.AspNetCore.All 2.1.13 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.All]
 Microsoft.AspNetCore.All 2.2.0 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.All]

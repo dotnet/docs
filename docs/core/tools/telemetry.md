@@ -122,7 +122,7 @@ at Microsoft.DotNet.Cli.Program.ProcessArgs(String[] args, ITelemetry telemetryC
 at Microsoft.DotNet.Cli.Program.Main(String[] args)
 ```
 
-### Avoid inadvertent disclosure information
+### Avoid inadvertent disclosure of information
 
 .NET Core contributors and anyone else running a version of the .NET Core SDK that they built themselves should consider the path to their SDK source code. If a crash occurs while using a .NET Core SDK that is a custom debug build or configured with custom build symbol files, the SDK source file path from the build machine is collected as part of the stack trace and isn't hashed.
 

@@ -59,8 +59,6 @@ There's a lot more to learn about C#. The following topics provide an overview o
   - You use ***statements*** to express the actions of a program.
 - [Classes and objects](classes-and-objects.md)
   - ***Classes*** are the most fundamental of C#'s types. ***Objects*** are instances of a class. Classes are built using ***members***, which are also covered in this topic.
-- [Structs](structs.md)
-  - ***Structs*** are data structures that, unlike classes, are value types.
 - [Arrays](arrays.md)
   - An ***array*** is a data structure that contains a number of variables that are accessed through computed indices.
 - [Interfaces](interfaces.md)

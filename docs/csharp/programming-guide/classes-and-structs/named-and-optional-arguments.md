@@ -63,7 +63,7 @@ C# 4 introduces named and optional arguments. *Named arguments* enable you to sp
   
 - a constant expression;  
   
-- an expression of the form `new ValType()`, where `ValType` is a value type, such as an [enum](../../language-reference/builtin-types/enum.md) or a [struct](structs.md);  
+- an expression of the form `new ValType()`, where `ValType` is a value type, such as an [enum](../../language-reference/builtin-types/enum.md) or a [struct](../../language-reference/builtin-types/struct.md);  
   
 - an expression of the form [default(ValType)](../../language-reference/operators/default.md),  where `ValType` is a value type.  
   

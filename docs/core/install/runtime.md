@@ -31,6 +31,19 @@ macOS has standalone installers that can be used to install the .NET Core 3.1 ru
 
 - [x64 (64-bit) CPUs](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 
+## Download and manually install
+
+As an alternative to the macOS installers for .NET Core, you can download and manually install the runtime.
+
+To install the runtime and enable the .NET Core CLI commands available at the terminal, first [download](#all-net-core-downloads) a .NET Core binary release. Then, open a terminal and run the following commands. It's assumed the runtime is downloaded to the `~/Downloads/dotnet-runtime.pkg` file.
+
+```bash
+mkdir -p $HOME/dotnet
+sudo installer -pkg ~/Downloads/dotnet-runtime.pkg -target $HOME/dotnet
+export DOTNET_ROOT=$HOME/dotnet
+export PATH=$PATH:$HOME/dotnet
+```
+
 ::: zone-end
 
 ::: zone pivot="os-linux"

@@ -31,7 +31,7 @@ When using the type pattern to perform pattern matching, `is` tests whether an e
    expr is type varname
 ```
 
-where *expr* is an expression that evaluates to an instance of some type, *type* is the name of the type to which the result of *expr* is to be converted, and *varname* is the object to which the result of *expr* is converted if the `is` test is `true`. 
+Where *expr* is an expression that evaluates to an instance of some type, *type* is the name of the type to which the result of *expr* is to be converted, and *varname* is the object to which the result of *expr* is converted if the `is` test is `true`. 
 
 The `is` expression is `true` if *expr* isn't `null`, and any of the following is true:
 

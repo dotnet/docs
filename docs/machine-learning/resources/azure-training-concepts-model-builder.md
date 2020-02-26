@@ -2,7 +2,7 @@
 title: Model Builder Azure Training Resources
 description: A guide of resources for Azure Machine Learning
 ms.topic: reference
-ms.date: 02/25/2020
+ms.date: 02/26/2020
 ms.author: luquinta
 author: luisquintanilla
 ---

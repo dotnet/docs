@@ -1,17 +1,17 @@
 ---
-title: Get started with .NET Core using the CLI - .NET Core CLI
-description: A step-by-step tutorial showing how to get started with .NET Core on Windows, Linux, or macOS using the .NET Core command-line interface (CLI).
+title: Get started with .NET Core using the CLI
+description: A step-by-step tutorial showing how to get started with .NET Core on Windows, Linux, or macOS using the .NET Core CLI.
 author: thraka
 ms.author: adegeo
 ms.date: 12/05/2019
 ms.technology: dotnet-cli
 ms.custom: "updateeachrelease"
 ---
-# Get started with .NET Core on Windows/Linux/macOS using the command line
+# Get started with .NET Core using the .NET Core CLI
 
-This article will show you how to start developing cross-platforms apps in your machine using the .NET Core CLI tools.
+This article will show you how to start developing .NET Core apps that work on Windows, Linux, and macOS using the .NET Core CLI.
 
-If you're unfamiliar with the .NET Core CLI toolset, read the [.NET Core SDK overview](../tools/index.md).
+If you're unfamiliar with the .NET Core CLI, see the [.NET Core CLI overview](../tools/index.md).
 
 ## Prerequisites
 
@@ -22,7 +22,7 @@ If you're unfamiliar with the .NET Core CLI toolset, read the [.NET Core SDK ove
 
 You can [view or download the sample code](https://github.com/dotnet/samples/tree/master/core/console-apps/HelloMsBuild) from the dotnet/samples GitHub repository. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
-Open a command prompt and create a folder named *Hello*. Navigate to the folder you created and type the following:
+Open a command prompt and create a folder named *Hello*. Navigate to the folder you created and type the following.
 
 ```dotnetcli
 dotnet new console
@@ -58,17 +58,25 @@ Let's do a quick walkthrough:
 
     [dotnet run](../tools/dotnet-run.md) calls [dotnet build](../tools/dotnet-build.md) to ensure that the build targets have been built, and then calls `dotnet <assembly.dll>` to run the target application.
     
-    ```console
+    ```dotnetcli
     dotnet run
+    ```
 
+    You get the following output.
+
+    ```console
     Hello World!
     ```
     
     Alternatively, you can also run `dotnet build` to compile the code without running the build console applications. This results in a compiled application, as a DLL file, based on the name of the project. In this case, the file created is named *Hello.dll*. This app can be run with `dotnet bin\Debug\netcoreapp3.1\Hello.dll` on Windows (use `/` for non-Windows systems).
     
-    ```console
+    ```dotnetcli
     dotnet bin\Debug\netcoreapp3.1\Hello.dll
+    ```
 
+    You get the following output.
+
+    ```console
     Hello World!
     ```
     
@@ -92,8 +100,13 @@ Let's change the program a bit. Fibonacci numbers are fun, so let's add that and
 
 03. Run the program passing a parameter to the app. When you use the `dotnet` command to run an app, add `--` to the end. Anything to the right of `--` will be passed as a parameter to the app. In the following example, the value `John` is passed to the app.
 
+    ```dotnetcli
+    dotnet run -- John
+    ```
+
+    You get the following output.
+
     ```console
-    $ dotnet run -- John
     Hello John!
     Fibonacci Numbers 1-15:
     1: 0
@@ -129,10 +142,15 @@ Single files are fine for simple one-off programs, but if you're building a more
 
 03. Run [dotnet build](../tools/dotnet-build.md) to compile the changes.
 
-04. Run your app by executing [dotnet run](../tools/dotnet-run.md). The following shows the program output:
+04. Run your app by executing [dotnet run](../tools/dotnet-run.md).
+
+    ```dotnetcli
+    dotnet run
+    ```
+
+    You get the following output.
 
     ```console
-    $ dotnet run
     0
     1
     1
@@ -154,8 +172,13 @@ Single files are fine for simple one-off programs, but if you're building a more
 
 Once you're ready to distribute your app, use the [dotnet publish](../tools/dotnet-publish.md) command to generate the _publish_ folder at _bin\\debug\\netcoreapp3.1\\publish\\_ (use `/` for non-Windows systems). You can distribute the contents of the _publish_ folder to other platforms as long as they've already installed the dotnet runtime.
 
-```console
+```dotnetcli
 dotnet publish
+```
+
+You get output similar to the following.
+
+```console
 Microsoft (R) Build Engine version 16.4.0+e901037fe for .NET Core
 Copyright (C) Microsoft Corporation. All rights reserved.
 
@@ -168,9 +191,13 @@ The output above may differ based on your current folder and operating system, b
 
 You can run your published app with the [dotnet](../tools/dotnet.md) command:
 
-```console
+```dotnetcli
 dotnet bin\Debug\netcoreapp3.1\publish\Hello.dll
+```
 
+You get the following output.
+
+```console
 Hello World!
 ```
 
@@ -188,6 +215,6 @@ And that's it! Now, you can start using the basic concepts learned here to creat
 
 ## See also
 
-- [Organizing and testing projects with the .NET Core CLI tools](testing-with-cli.md)
-- [Publish .NET Core apps with the CLI](../deploying/deploy-with-cli.md)
-- [Learn more about app deployment](../deploying/index.md)
+- [Organizing and testing projects with the .NET Core CLI](testing-with-cli.md)
+- [Publish .NET Core apps with the .NET Core CLI](../deploying/deploy-with-cli.md)
+- [.NET Core application deployment](../deploying/index.md)

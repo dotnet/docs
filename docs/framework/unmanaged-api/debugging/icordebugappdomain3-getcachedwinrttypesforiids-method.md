@@ -53,4 +53,4 @@ HRESULT GetCachedWinRTTypesForIIDs (
   
 ## See also
 
-- [ICorDebugAppDomain3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugappdomain3-interface.md)
+- [ICorDebugAppDomain3 Interface](icordebugappdomain3-interface.md)

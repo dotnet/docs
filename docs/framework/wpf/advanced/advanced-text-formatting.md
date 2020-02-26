@@ -16,7 +16,7 @@ Windows Presentation Foundation (WPF) provides a robust set of APIs for includin
  This topic provides an introduction to WPF text formatting. It focuses on client implementation and use of the WPF text formatting engine.  
   
 > [!NOTE]
-> All code examples within this document can be found in the [Advanced Text Formatting Sample](https://go.microsoft.com/fwlink/?LinkID=159965).  
+> All code examples within this document can be found in the [Advanced Text Formatting Sample](https://github.com/Microsoft/WPF-Samples/tree/master/PerMonitorDPI/TextFormatting).  
 
 <a name="prereq"></a>   
 ## Prerequisites  

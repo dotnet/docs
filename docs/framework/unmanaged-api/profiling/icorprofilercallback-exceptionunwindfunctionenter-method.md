@@ -26,10 +26,12 @@ HRESULT ExceptionUnwindFunctionEnter(
     [in] FunctionID functionId);  
 ```  
   
-## Parameters  
- `functionId`  
- [in] The ID of the function that is being unwound.  
-  
+## Parameters
+
+- `functionId`
+
+  \[in] The ID of the function that is being unwound.
+
 ## Remarks  
  The profiler should not block in its implementation of this method because the stack may not be in a state that allows garbage collection, and therefore preemptive garbage collection cannot be enabled. If the profiler blocks here and garbage collection is attempted, the runtime will block until this callback returns.  
   
@@ -46,5 +48,5 @@ HRESULT ExceptionUnwindFunctionEnter(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
-- [ExceptionUnwindFunctionLeave Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-exceptionunwindfunctionleave-method.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [ExceptionUnwindFunctionLeave Method](icorprofilercallback-exceptionunwindfunctionleave-method.md)

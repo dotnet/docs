@@ -9,7 +9,7 @@ ms.assetid: 7da38e81-4f99-4bc5-b07d-c986b687eeba
 ---
 # :::no-loc text="interface"::: (C# Reference)
 
-An interface defines a contract. Any [`class`](class.md) or [`struct`](struct.md) that implements that contract must provide an implementation of the members defined in the interface. Beginning with C# 8.0, an interface may define a default implementation for members. It may also define [`static`](static.md) members in order to provide a single implementation for common functionality.
+An interface defines a contract. Any [`class`](class.md) or [`struct`](../builtin-types/struct.md) that implements that contract must provide an implementation of the members defined in the interface. Beginning with C# 8.0, an interface may define a default implementation for members. It may also define [`static`](static.md) members in order to provide a single implementation for common functionality.
 
 In the following example, class `ImplementationClass` must implement a method named `SampleMethod` that has no parameters and returns `void`.
 
@@ -49,7 +49,7 @@ An interface can inherit from one or more base interfaces. When an interface [ov
 
 When a base type list contains a base class and interfaces, the base class must come first in the list.
 
-A class that implements an interface can explicitly implement members of that interface. An explicitly implemented member cannot be accessed through a class instance, but only through an instance of the interface. In addtion, default interface members can only be accessed through an instance of the interface.
+A class that implements an interface can explicitly implement members of that interface. An explicitly implemented member cannot be accessed through a class instance, but only through an instance of the interface. In addition, default interface members can only be accessed through an instance of the interface.
 
 For more information about explicit interface implementation, see [Explicit Interface Implementation](../../programming-guide/interfaces/explicit-interface-implementation.md).
 
@@ -72,6 +72,4 @@ For more information, see the [Interfaces](~/_csharplang/spec/interfaces.md) sec
 - [Interfaces](../../programming-guide/interfaces/index.md)
 - [Using Properties](../../programming-guide/classes-and-structs/using-properties.md)
 - [Using Indexers](../../programming-guide/indexers/using-indexers.md)
-- [class](class.md)
-- [struct](struct.md)
 - [Interfaces](../../programming-guide/interfaces/index.md)

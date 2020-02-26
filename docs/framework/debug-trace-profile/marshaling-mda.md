@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "managed debugging assistants (MDAs), marshaling"
   - "MDAs (managed debugging assistants), marshaling"
 ms.assetid: 5433b1f8-b0e5-40c9-a49a-0e5bd213363d
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # marshaling MDA
 The `marshaling` managed debugging assistant (MDA) is activated when the CLR sets up marshaling information for a method parameter or a field of a structure. This MDA does not work for JIT-compiled assemblies.  

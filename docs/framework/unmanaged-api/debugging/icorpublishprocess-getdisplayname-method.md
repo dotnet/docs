@@ -17,7 +17,7 @@ topic_type:
   - "apiref"
 ---
 # ICorPublishProcess::GetDisplayName Method
-Gets the full path of the executable for the process referenced by this [ICorPublishProcess](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md).  
+Gets the full path of the executable for the process referenced by this [ICorPublishProcess](icorpublishprocess-interface.md).  
   
 ## Syntax  
   
@@ -51,4 +51,4 @@ HRESULT GetDisplayName (
   
 ## See also
 
-- [ICorPublishProcess Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md)
+- [ICorPublishProcess Interface](icorpublishprocess-interface.md)

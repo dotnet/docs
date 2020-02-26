@@ -29,9 +29,11 @@ HRESULT ExceptionThrown(
     [in] ObjectID thrownObjectId);  
 ```  
   
-## Parameters  
- `thrownObjectId`  
- [in] The ID of the object that caused the exception to be thrown.  
+## Parameters
+
+- `thrownObjectId`
+
+  \[in] The ID of the object that caused the exception to be thrown.
   
 ## Remarks  
  The profiler should not block in its implementation of this method because the stack may not be in a state that allows garbage collection, and therefore preemptive garbage collection cannot be enabled. If the profiler blocks here and garbage collection is attempted, the runtime will block until this callback returns.  
@@ -49,4 +51,4 @@ HRESULT ExceptionThrown(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)

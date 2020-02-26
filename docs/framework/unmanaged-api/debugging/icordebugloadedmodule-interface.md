@@ -10,9 +10,9 @@ Provides information about a loaded module.
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetBaseAddress Method](../../../../docs/framework/unmanaged-api/debugging/icordebugloadedmodule-getbaseaddress-method.md)|Gets the base address of the loaded module.|  
-|[GetName Method](../../../../docs/framework/unmanaged-api/debugging/icordebugloadedmodule-getname-method.md)|Gets the name of the loaded module.|  
-|[GetSize Method](../../../../docs/framework/unmanaged-api/debugging/icordebugloadedmodule-getsize-method.md)|Gets the size in bytes of the loaded module.|  
+|[GetBaseAddress Method](icordebugloadedmodule-getbaseaddress-method.md)|Gets the base address of the loaded module.|  
+|[GetName Method](icordebugloadedmodule-getname-method.md)|Gets the name of the loaded module.|  
+|[GetSize Method](icordebugloadedmodule-getsize-method.md)|Gets the size in bytes of the loaded module.|  
   
 ## Remarks  
  The `ICorDebugLoadedModule` interface is implemented by a debugger and is used by the CLR debugging interfaces to get information about the loaded module from the debugger.  
@@ -31,5 +31,5 @@ Provides information about a loaded module.
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

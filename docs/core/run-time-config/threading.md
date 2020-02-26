@@ -18,7 +18,7 @@ ms.topic: reference
 
 ## Minimum threads
 
-- Specifies the minimum number of threads for the worker threadpool.
+- Specifies the minimum number of threads for the worker thread pool.
 - Corresponds to the <xref:System.Threading.ThreadPool.SetMinThreads%2A?displayProperty=nameWithType> method.
 
 | | Setting name | Values |
@@ -55,7 +55,7 @@ Project file:
 
 ## Maximum threads
 
-- Specifies the maximum number of threads for the worker threadpool.
+- Specifies the maximum number of threads for the worker thread pool.
 - Corresponds to the <xref:System.Threading.ThreadPool.SetMaxThreads%2A?displayProperty=nameWithType> method.
 
 | | Setting name | Values |

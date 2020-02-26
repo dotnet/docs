@@ -46,4 +46,4 @@ HRESULT GetLiveRange(
   
 ## See also
 
-- [ICorDebugVariableHome Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehome-interface.md)
+- [ICorDebugVariableHome Interface](icordebugvariablehome-interface.md)

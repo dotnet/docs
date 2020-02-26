@@ -22,7 +22,7 @@ Provides a method that enables a debugger to enumerate the local variables and a
   
 |Method|Description|  
 |------------|-----------------|  
-|[EnumerateVariableHomes Method](../../../../docs/framework/unmanaged-api/debugging/icordebugcode4-enumeratevariablehomes-method.md)|Gets an enumerator to the local variables and arguments in a function.|  
+|[EnumerateVariableHomes Method](icordebugcode4-enumeratevariablehomes-method.md)|Gets an enumerator to the local variables and arguments in a function.|  
   
 ## Remarks  
   
@@ -40,5 +40,5 @@ Provides a method that enables a debugger to enumerate the local variables and a
   
 ## See also
 
-- [ICorDebugCode3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugcode3-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugCode3 Interface](icordebugcode3-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

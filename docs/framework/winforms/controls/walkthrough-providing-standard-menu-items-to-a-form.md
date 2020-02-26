@@ -45,7 +45,7 @@ The Windows Forms Designer can automatically populate a <xref:System.Windows.For
 
 1. From the **Toolbox**, drag a <xref:System.Windows.Forms.MenuStrip> control onto your form.
 
-2. Click the <xref:System.Windows.Forms.MenuStrip> control's smart tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) and select **Insert Standard Items**.
+2. Click the <xref:System.Windows.Forms.MenuStrip> control's designer actions glyph (![Small black arrow](./media/designer-actions-glyph.gif)) and select **Insert Standard Items**.
 
      The <xref:System.Windows.Forms.MenuStrip> control is populated with the standard menu items.
 

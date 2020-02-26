@@ -9,6 +9,18 @@
       "redirect_url": "/dotnet/standard/components"
     },
     {
+      "source_path": "docs/architecture/cloud-native/azure-data-storage.md",
+      "redirect_url": "/dotnet/architecture/cloud-native/relational-vs-nosql-data"
+    },
+    {
+      "source_path": "docs/architecture/cloud-native/data-patterns.md",
+      "redirect_url": "/dotnet/architecture/cloud-native/database-per-microservice"
+    },
+    {
+      "source_path": "docs/architecture/cloud-native/distributed-data.md",
+      "redirect_url": "/dotnet/architecture/cloud-native/database-per-microservice"
+    },
+    {
       "source_path": "docs/architecture/microservices/architect-microservice-container-applications/communication-between-microservices.md",
       "redirect_url": "/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture",
       "redirect_document_id": true
@@ -570,6 +582,10 @@
       "redirect_url": "/dotnet/csharp/language-reference/operators/await"
     },
     {
+      "source_path": "docs/csharp/language-reference/keywords/built-in-types-table.md",
+      "redirect_url": "/dotnet/csharp/language-reference/builtin-types/built-in-types"
+    },
+    {
       "source_path": "docs/csharp/language-reference/keywords/bool.md",
       "redirect_url": "/dotnet/csharp/language-reference/builtin-types/bool"
     },
@@ -640,6 +656,10 @@
     {
       "source_path": "docs/csharp/language-reference/keywords/floating-point-types-table.md",
       "redirect_url": "/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types"
+    },
+    {
+      "source_path": "docs/csharp/language-reference/keywords/formatting-numeric-results-table.md",
+      "redirect_url": "/dotnet/standard/base-types/standard-numeric-format-strings"
     },
     {
       "source_path": "docs/csharp/language-reference/keywords/global.md",
@@ -742,6 +762,10 @@
       "redirect_url": "/dotnet/csharp/language-reference/builtin-types/reference-types"
     },
     {
+      "source_path": "docs/csharp/language-reference/keywords/struct.md",
+      "redirect_url": "/dotnet/csharp/language-reference/builtin-types/struct"
+    },
+    {
       "source_path": "docs/csharp/language-reference/keywords/true.md",
       "redirect_url": "/dotnet/csharp/language-reference/builtin-types/bool"
     },
@@ -784,6 +808,10 @@
     {
       "source_path": "docs/csharp/language-reference/keywords/value-types-table.md",
       "redirect_url": "/dotnet/csharp/language-reference/builtin-types/value-types"
+    },
+    {
+      "source_path": "docs/csharp/language-reference/keywords/void.md",
+      "redirect_url": "/dotnet/csharp/language-reference/builtin-types/void"
     },
     {
       "source_path": "docs/csharp/language-reference/language-specification/index.md",
@@ -2147,6 +2175,10 @@
       "redirect_url": "/dotnet/framework/unmanaged-api/profiling/cor-prf-monitor-enumeration"
     },
     {
+      "source_path": "docs/framework/ui-automation/ui-automation-specification-and-community-promise.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb986605(v=vs.100)"
+    },
+    {
       "source_path": "docs/framework/wcf/wcf-system-requirements.md",
       "redirect_url": "/dotnet/framework/get-started/system-requirements"
     },
@@ -2748,6 +2780,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "docs/framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls.md",
+      "redirect_url": "/dotnet/framework/winforms/controls/perform-common-tasks-design-actions",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "docs/framework/wpf/advanced/xaml-resources.md",
       "redirect_url": "/dotnet/desktop-wpf/fundamentals/xaml-resources-define",
       "redirect_document_id": true
@@ -2756,6 +2793,10 @@
       "source_path": "docs/framework/wpf/advanced/xaml-overview-wpf.md",
       "redirect_url": "/dotnet/desktop-wpf/fundamentals/xaml",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/framework/wpf/app-development/how-to-determine-the-installed-version-of-wpf.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/aa349641(v=vs.90)"
     },
     {
       "source_path": "docs/framework/wpf/controls/customizing-the-appearance-of-an-existing-control.md",

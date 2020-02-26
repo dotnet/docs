@@ -25,7 +25,7 @@ Provides a method to allocate memory for a new Microsoft intermediate language (
   
 |Method|Description|  
 |------------|-----------------|  
-|[Alloc Method](../../../../docs/framework/unmanaged-api/profiling/imethodmalloc-alloc-method.md)|Attempts to allocate a specified amount of memory for a new MSIL function body.|  
+|[Alloc Method](imethodmalloc-alloc-method.md)|Attempts to allocate a specified amount of memory for a new MSIL function body.|  
   
 ## Remarks  
  Each allocator is module-specific and ensures that the function body will be at a positive offset from the base of the module. Memory above the base of a module can be precious, so the allocator should be used to allocate memory only for a function body.  
@@ -41,4 +41,4 @@ Provides a method to allocate memory for a new Microsoft intermediate language (
   
 ## See also
 
-- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+- [Profiling Interfaces](profiling-interfaces.md)

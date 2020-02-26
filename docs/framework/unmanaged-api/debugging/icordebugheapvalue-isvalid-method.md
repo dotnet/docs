@@ -36,7 +36,7 @@ HRESULT IsValid (
 ## Remarks  
  The value is invalid if it has been reclaimed by the garbage collector.  
   
- This method has been deprecated. In the .NET Framework 2.0, all values are valid until [ICorDebugController::Continue](../../../../docs/framework/unmanaged-api/debugging/icordebugcontroller-continue-method.md) is called, at which time the values are invalidated.  
+ This method has been deprecated. In the .NET Framework 2.0, all values are valid until [ICorDebugController::Continue](icordebugcontroller-continue-method.md) is called, at which time the values are invalidated.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

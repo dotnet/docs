@@ -21,7 +21,7 @@ The following decision table summarizes whether to use .NET Framework or .NET Co
 | ASP.NET 4 (MVC 5, Web API 2, and Web Forms) | -- | .NET Framework |
 | SignalR services | .NET Core 2.1 or higher version | .NET Framework <br/> .NET Core 2.1 or higher version |
 | WCF, WF, and other legacy frameworks | WCF in .NET Core (client library only) | .NET Framework <br/> WCF in .NET Core (client library only) |
-| Consumption of Azure services | .NET Core <br/> (eventually all Azure services will provide client SDKs for .NET Core) | .NET Framework <br/> .NET Core <br/> (eventually all Azure services will provide client SDKs for .NET Core) |
+| Consumption of Azure services | .NET Core <br/> (eventually most Azure services will provide client SDKs for .NET Core) | .NET Framework <br/> .NET Core <br/> (eventually most Azure services will provide client SDKs for .NET Core) |
 
 >[!div class="step-by-step"]
 >[Previous](net-framework-container-scenarios.md)

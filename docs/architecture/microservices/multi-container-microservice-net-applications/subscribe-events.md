@@ -1,14 +1,14 @@
 ---
 title: Subscribing to events
 description: .NET Microservices Architecture for Containerized .NET Applications | Understand the details of publishing and subscription to integration events.
-ms.date: 10/02/2018
+ms.date: 01/30/2020
 ---
 
 # Subscribing to events
 
 The first step for using the event bus is to subscribe the microservices to the events they want to receive. That should be done in the receiver microservices.
 
-The following simple code shows what each receiver microservice needs to implement when starting the service (that is, in the `Startup` class) so it subscribes to the events it needs. In this case, the `basket.api` microservice needs to subscribe to `ProductPriceChangedIntegrationEvent` and the `OrderStartedIntegrationEvent` messages.
+The following simple code shows what each receiver microservice needs to implement when starting the service (that is, in the `Startup` class) so it subscribes to the events it needs. In this case, the `basket-api` microservice needs to subscribe to `ProductPriceChangedIntegrationEvent` and the `OrderStartedIntegrationEvent` messages.
 
 For instance, when subscribing to the `ProductPriceChangedIntegrationEvent` event, that makes the basket microservice aware of any changes to the product price and lets it warn the user about the change if that product is in the user’s basket.
 
@@ -296,7 +296,7 @@ Some message processing is inherently idempotent. For example, if a system gener
 
 ### Additional resources
 
-- **Honoring message idempotency**  
+- **Honoring message idempotency** \
   <https://docs.microsoft.com/previous-versions/msp-n-p/jj591565(v=pandp.10)#honoring-message-idempotency>
 
 ## Deduplicating integration event messages
@@ -333,7 +333,7 @@ If the “redelivered” flag is set, the receiver must take that into account, 
     <https://docs.microsoft.com/previous-versions/msp-n-p/jj591572(v=pandp.10)>
 
 - **Eventual Consistency** \
-    [https://en.wikipedia.org/wiki/Eventual\_consistency](https://en.wikipedia.org/wiki/Eventual_consistency)
+    <https://en.wikipedia.org/wiki/Eventual_consistency>
 
 - **Philip Brown. Strategies for Integrating Bounded Contexts** \
     <https://www.culttt.com/2014/11/26/strategies-integrating-bounded-contexts/>
@@ -354,7 +354,7 @@ If the “redelivered” flag is set, the receiver must take that into account, 
     <https://dzone.com/articles/event-driven-data-management-for-microservices-1>
 
 - **The CAP Theorem** \
-    [https://en.wikipedia.org/wiki/CAP\_theorem](https://en.wikipedia.org/wiki/CAP_theorem)
+    <https://en.wikipedia.org/wiki/CAP_theorem>
 
 - **What is CAP Theorem?** \
     <https://www.quora.com/What-Is-CAP-Theorem-1>
@@ -372,7 +372,7 @@ If the “redelivered” flag is set, the receiver must take that into account, 
     <https://code.msdn.microsoft.com/Brokered-Messaging-c0acea25>
 
 - **Reliability Guide** (RabbitMQ documentation) \
-    [https://www.rabbitmq.com/reliability.html\#consumer](https://www.rabbitmq.com/reliability.html#consumer)
+    <https://www.rabbitmq.com/reliability.html#consumer>
 
 > [!div class="step-by-step"]
 > [Previous](rabbitmq-event-bus-development-test-environment.md)

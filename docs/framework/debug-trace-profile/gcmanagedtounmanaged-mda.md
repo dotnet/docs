@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "threading [.NET Framework], managed debugging assistants"
   - "garbage collection, run-time errors"
 ms.assetid: 7417f837-805e-4fed-a430-ca919c8421dc
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # gcManagedToUnmanaged MDA
 The `gcManagedToUnmanaged` managed debugging assistant (MDA) causes a garbage collection whenever a thread transitions from managed to unmanaged code.  

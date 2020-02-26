@@ -60,6 +60,6 @@ A class or struct definition is like a blueprint that specifies what the type ca
 - [object](../../language-reference/builtin-types/reference-types.md)
 - [Inheritance](./inheritance.md)
 - [class](../../language-reference/keywords/class.md)
-- [struct](../../language-reference/keywords/struct.md)
+- [struct](../../language-reference/builtin-types/struct.md)
 - [new Operator](../../language-reference/operators/new-operator.md)
 - [Common Type System](../../../standard/base-types/common-type-system.md)

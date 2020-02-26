@@ -41,5 +41,5 @@ HRESULT RuntimeThreadResumed(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
-- [RuntimeThreadSuspended Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-runtimethreadsuspended-method.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [RuntimeThreadSuspended Method](icorprofilercallback-runtimethreadsuspended-method.md)

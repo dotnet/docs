@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "user authentication, code access security"
   - "code access security"
 ms.assetid: 859af632-c80d-4736-8d6f-1e01b09ce127
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Code Access Security
 [!INCLUDE[net_security_note](../../../includes/net-security-note-md.md)]  

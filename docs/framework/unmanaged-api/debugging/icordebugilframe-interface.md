@@ -23,15 +23,15 @@ Represents a stack frame of Microsoft intermediate language (MSIL) code. This in
   
 |Method|Description|  
 |------------|-----------------|  
-|[CanSetIP Method](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe-cansetip-method.md)|Gets a value that indicates whether it is safe to set the instruction pointer to the specified offset location.|  
-|[EnumerateArguments Method](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe-enumeratearguments-method.md)|Gets an enumerator for the arguments in this frame.|  
-|[EnumerateLocalVariables Method](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe-enumeratelocalvariables-method.md)|Gets an enumerator for the local variables in this frame.|  
-|[GetArgument Method](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe-getargument-method.md)|Gets the value of the specified argument in this MSIL stack frame.|  
-|[GetIP Method](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe-getip-method.md)|Gets the value of the instruction pointer and a bitwise combination value that describes how the value of the instruction pointer was obtained.|  
-|[GetLocalVariable Method](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe-getlocalvariable-method.md)|Gets the value of the specified local variable in this MSIL stack frame.|  
-|[GetStackDepth Method](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe-getstackdepth-method.md)|Not implemented.|  
-|[GetStackValue Method](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe-getstackvalue-method.md)|Not implemented.|  
-|[SetIP Method](../../../../docs/framework/unmanaged-api/debugging/icordebugilframe-setip-method.md)|Sets the instruction pointer to the specified offset location in the MSIL code.|  
+|[CanSetIP Method](icordebugilframe-cansetip-method.md)|Gets a value that indicates whether it is safe to set the instruction pointer to the specified offset location.|  
+|[EnumerateArguments Method](icordebugilframe-enumeratearguments-method.md)|Gets an enumerator for the arguments in this frame.|  
+|[EnumerateLocalVariables Method](icordebugilframe-enumeratelocalvariables-method.md)|Gets an enumerator for the local variables in this frame.|  
+|[GetArgument Method](icordebugilframe-getargument-method.md)|Gets the value of the specified argument in this MSIL stack frame.|  
+|[GetIP Method](icordebugilframe-getip-method.md)|Gets the value of the instruction pointer and a bitwise combination value that describes how the value of the instruction pointer was obtained.|  
+|[GetLocalVariable Method](icordebugilframe-getlocalvariable-method.md)|Gets the value of the specified local variable in this MSIL stack frame.|  
+|[GetStackDepth Method](icordebugilframe-getstackdepth-method.md)|Not implemented.|  
+|[GetStackValue Method](icordebugilframe-getstackvalue-method.md)|Not implemented.|  
+|[SetIP Method](icordebugilframe-setip-method.md)|Sets the instruction pointer to the specified offset location in the MSIL code.|  
   
 ## Remarks  
  The `ICorDebugILFrame` interface is a specialized ICorDebugFrame interface. It is used either for MSIL code frames or for just-in-time (JIT) compiled frames. The JIT-compiled frames implement both the `ICorDebugILFrame` interface and the ICorDebugNativeFrame interface.  
@@ -50,4 +50,4 @@ Represents a stack frame of Microsoft intermediate language (MSIL) code. This in
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

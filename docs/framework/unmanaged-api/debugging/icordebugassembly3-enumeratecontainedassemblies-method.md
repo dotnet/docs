@@ -38,5 +38,5 @@ HRESULT EnumerateContainedAssemblies(
   
 ## See also
 
-- [ICorDebugAssembly3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugassembly3-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugAssembly3 Interface](icordebugassembly3-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

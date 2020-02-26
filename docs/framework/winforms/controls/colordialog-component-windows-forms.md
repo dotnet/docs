@@ -26,9 +26,6 @@ The Windows Forms <xref:System.Windows.Forms.ColorDialog> component is a pre-con
   
  <xref:System.Windows.Forms.ColorDialog>  
  Provides reference information on the <xref:System.Windows.Forms.ColorDialog> class and its members.  
-  
- [Essential Code for Windows Forms Dialog Boxes](assetId:///VS|dv_vstechart|~\html\vbtchessentialcodeforwindowsformsdialogboxes.htm)  
- Discusses the Windows Forms dialog box controls and components and the code necessary for executing their basic functions.  
-  
+ 
  [Dialog-Box Controls and Components](dialog-box-controls-and-components-windows-forms.md)  
  Lists a set of controls that allow users to perform standard interactions with the application or system.

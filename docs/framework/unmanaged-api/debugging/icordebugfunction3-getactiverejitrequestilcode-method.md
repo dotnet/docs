@@ -16,7 +16,7 @@ topic_type:
 # ICorDebugFunction3::GetActiveReJitRequestILCode Method
 [Supported in the .NET Framework 4.5.2 and later versions]  
   
- Gets an interface pointer to an [ICorDebugILCode](../../../../docs/framework/unmanaged-api/debugging/icordebugilcode-interface.md) that contains the IL from an active ReJIT request.  
+ Gets an interface pointer to an [ICorDebugILCode](icordebugilcode-interface.md) that contains the IL from an active ReJIT request.  
   
 ## Syntax  
   
@@ -46,6 +46,6 @@ HRESULT GetActiveReJitRequestILCode(
   
 ## See also
 
-- [ICorDebugFunction3 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugfunction3-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugFunction3 Interface](icordebugfunction3-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)
 - [ReJIT: A How-To Guide](https://docs.microsoft.com/archive/blogs/davbr/rejit-a-how-to-guide)

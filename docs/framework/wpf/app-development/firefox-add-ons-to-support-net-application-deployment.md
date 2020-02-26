@@ -25,7 +25,7 @@ The Windows Presentation Foundation (WPF) plug-in for Firefox and the .NET Frame
   
 - Report all installed versions of the .NET Framework or just the latest version.  
   
- The .NET Framework Assistant for Firefox is included with the .NET Framework 3.5 SP1. For information about removing the .NET Framework Assistant for Firefox, see [How to remove the .NET Framework Assistant for Firefox](https://go.microsoft.com/fwlink/?LinkId=177944).  
+ The .NET Framework Assistant for Firefox is included with the .NET Framework 3.5 SP1. For information about removing the .NET Framework Assistant for Firefox, see [How to remove the .NET Framework Assistant for Firefox](https://support.microsoft.com/help/963707/how-to-remove-the-net-framework-assistant-for-firefox).  
   
 ## See also
 

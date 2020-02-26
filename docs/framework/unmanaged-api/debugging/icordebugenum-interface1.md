@@ -23,10 +23,10 @@ Serves as the abstract base interface for the enumerators that are used by a deb
   
 |Method|Description|  
 |------------|-----------------|  
-|[Clone Method](../../../../docs/framework/unmanaged-api/debugging/icordebugenum-clone-method.md)|Creates a copy of this `ICorDebugEnum` object.|  
-|[GetCount Method](../../../../docs/framework/unmanaged-api/debugging/icordebugenum-getcount-method.md)|Gets the number of items in the enumeration.|  
-|[Reset Method](../../../../docs/framework/unmanaged-api/debugging/icordebugenum-reset-method.md)|Moves the cursor to the beginning of the enumeration.|  
-|[Skip Method](../../../../docs/framework/unmanaged-api/debugging/icordebugenum-skip-method.md)|Moves the cursor forward in the enumeration by the specified number of items.|  
+|[Clone Method](icordebugenum-clone-method.md)|Creates a copy of this `ICorDebugEnum` object.|  
+|[GetCount Method](icordebugenum-getcount-method.md)|Gets the number of items in the enumeration.|  
+|[Reset Method](icordebugenum-reset-method.md)|Moves the cursor to the beginning of the enumeration.|  
+|[Skip Method](icordebugenum-skip-method.md)|Moves the cursor forward in the enumeration by the specified number of items.|  
   
 ## Remarks  
  The following enumerators derive from `ICorDebugEnum`:  
@@ -35,7 +35,7 @@ Serves as the abstract base interface for the enumerators that are used by a deb
   
 - "ICorDebugAssemblyEnum"  
   
-- [ICorDebugBlockingObjectEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugblockingobjectenum-interface.md)  
+- [ICorDebugBlockingObjectEnum](icordebugblockingobjectenum-interface.md)  
   
 - "ICorDebugBreakpointEnum"  
   
@@ -45,17 +45,17 @@ Serves as the abstract base interface for the enumerators that are used by a deb
   
 - "ICorDebugErrorInfoEnum"  
   
-- [ICorDebugExceptionObjectCallStackEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugexceptionobjectcallstackenum-interface.md)  
+- [ICorDebugExceptionObjectCallStackEnum](icordebugexceptionobjectcallstackenum-interface.md)  
   
 - "ICorDebugFrameEnum"  
   
-- [ICorDebugGCReferenceEnum](../../../../docs/framework/unmanaged-api/debugging/icordebuggcreferenceenum-interface.md)  
+- [ICorDebugGCReferenceEnum](icordebuggcreferenceenum-interface.md)  
   
-- [ICorDebugGuidToTypeEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugguidtotypeenum-interface.md)  
+- [ICorDebugGuidToTypeEnum](icordebugguidtotypeenum-interface.md)  
   
-- [ICorDebugHeapEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugheapenum-interface.md)  
+- [ICorDebugHeapEnum](icordebugheapenum-interface.md)  
   
-- [ICorDebugHeapSegmentEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugheapsegmentenum-interface.md)  
+- [ICorDebugHeapSegmentEnum](icordebugheapsegmentenum-interface.md)  
   
 - "ICorDebugModuleEnum"  
   
@@ -71,7 +71,7 @@ Serves as the abstract base interface for the enumerators that are used by a deb
   
 - "ICorDebugValueEnum"  
   
-- [ICorDebugVariableHomeEnum](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablehomeenum-interface.md)  
+- [ICorDebugVariableHomeEnum](icordebugvariablehomeenum-interface.md)  
   
 > [!NOTE]
 > This interface does not support being called remotely, either cross-machine or cross-process.  
@@ -87,4 +87,4 @@ Serves as the abstract base interface for the enumerators that are used by a deb
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

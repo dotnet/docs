@@ -24,7 +24,7 @@ A XAML namespace is a concept that expands on the definition of an XML namespace
   
  The most basic form of an identifier that uses the CLR namespace and assembly convention is as follows:  
   
- `clr-namespace:` *clrnsName* `; assembly=` *assemblyShortName*  
+ `clr-namespace:clrnsName; assembly=assemblyShortName`
   
  `clr-namespace:` and `; assembly=` are literal components of the syntax.  
   
@@ -34,7 +34,7 @@ A XAML namespace is a concept that expands on the definition of an XML namespace
   
  A more complete definition of the CLR namespace and assembly convention is as follows:  
   
- `clr-namespace:` *clrnsName* `; assembly=` *assemblyName*  
+ `clr-namespace:clrnsName; assembly=assemblyName`
   
  *assemblyName* represents any string that is legal as an <xref:System.Reflection.Assembly.Load%28System.String%29?displayProperty=nameWithType> input. This string can include culture, public key, or version information (definitions of these concepts are defined in the reference topic for <xref:System.Reflection.Assembly>). COFF format and evidence (as used by other overloads of <xref:System.Reflection.Assembly.Load%2A>) are not relevant for XAML assembly loading purposes; all load information must be presented as a string.  
   

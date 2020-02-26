@@ -15,7 +15,7 @@ C# programs can consist of one or more files. Each file can contain zero or more
   
 - [Classes](../classes-and-structs/classes.md)  
   
-- [Structs](../classes-and-structs/structs.md)  
+- [Structs](../../language-reference/builtin-types/struct.md)  
   
 - [Namespaces](../namespaces/index.md)  
   

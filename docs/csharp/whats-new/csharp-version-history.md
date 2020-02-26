@@ -32,7 +32,7 @@ C# version 1.0 looked stripped of features, compared to today. You'd find yourse
 The major features of C# 1.0 included:
 
 - [Classes](../programming-guide/classes-and-structs/classes.md)
-- [Structs](../programming-guide/classes-and-structs/structs.md)
+- [Structs](../language-reference/builtin-types/struct.md)
 - [Interfaces](../programming-guide/interfaces/index.md)
 - [Events](../events-overview.md)
 - [Properties](../properties.md)

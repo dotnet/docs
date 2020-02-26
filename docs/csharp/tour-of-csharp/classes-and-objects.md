@@ -293,4 +293,4 @@ The `using` statement provides a better approach to object destruction.
 
 > [!div class="step-by-step"]
 > [Previous](statements.md)
-> [Next](structs.md)
+> [Next](arrays.md)

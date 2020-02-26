@@ -129,7 +129,7 @@ var UserDefinedColumnSdcaEstimator = mlContext.Regression.Trainers.Sdca(labelCol
 
 ## Caching data
 
-By default, when data is processed, it is lazily loaded or streamed which means that estimators may iterate over data multiple times. Therefore, caching is recommended for datasets that fit into memory. The data can be cached as part of an [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) as well as outside it. In one-time scenarios when there is no data preparation required or the data won't immediately be used by trainers, cache outside of an [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601). Otherwise, include the cache as part of the [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601).
+By default, when data is processed, it is lazily loaded or streamed which means that estimators may iterate over data multiple times. Therefore, caching is recommended for datasets that fit into memory. Caching can be done as part of an [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) as well as outside it. In one-time scenarios when there is no data preparation required or the data won't immediately be used by trainers, cache outside the [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601). Otherwise, cache as part of the [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601).
 
 ### Caching outside an EstimatorChain
 

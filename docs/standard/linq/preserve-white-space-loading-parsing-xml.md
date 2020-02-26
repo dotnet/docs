@@ -1,5 +1,6 @@
 ---
 title: "Preserve white space while loading or parsing XML - LINQ to XML"
+description: Learn how to control the white-space behavior of methods that populate XML trees.
 ms.date: 07/20/2015
 ms.assetid: f3ff58c4-55aa-4fcd-b933-e3a2ee6e706c
 ---

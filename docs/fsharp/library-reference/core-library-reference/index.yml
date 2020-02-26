@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 
-title: "F# core library and interactive library reference"
+title: "F# core library reference"
 summary: "Check out some cool stuff (TODO)"
 
 metadata:
@@ -16,12 +16,5 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
-          - text: "F# core library reference"
-            url: core-library-reference/index.yml
-
-  - title: "F# interactive library reference"
-    linkLists:
-      - linkListType: reference
-        links:
-          - text: "F# interactive library reference"
-            url: interactive-library-reference/index.md
+          - text: "Array.append"
+            url: core-library-reference/array.append.md

@@ -4,7 +4,7 @@
 
 ### A story of one company
 
-Back in early 2000&#39;s one multinational company started developing a distributed desktop solution to exchange information between different branches of the company and execute optimized operations on centralized units. They have chosen a brand-new framework called Windows Forms for their application development. Over years the project evolved into a mature well tested and time proven application with hundreds of thousands of lines of code. Time passed and .NET Framework 2.0 is no longer the hot new technology. The developers who are working on this application are facing a dilemma. They would like to use the latest stack of technologies in their development and have their application look and &quot;feel&quot; modern. At the same time, they don&#39;t want to throw away the great product they have built over 15 years and rewrite the entire application from scratch.
+Back in early 2000s, one multinational company started developing a distributed desktop solution to exchange information between different branches of the company and execute optimized operations on centralized units. They have chosen a brand-new framework called Windows Forms for their application development. Over the years, the project evolved into a mature well tested and time-proven application with hundreds of thousands of lines of code. Time passed and .NET Framework 2.0 is no longer the hot new technology. The developers who are working on this application are facing a dilemma. They would like to use the latest stack of technologies in their development and have their application look and "feel" modern. At the same time, they don't want to throw away the great product they have built over 15 years and rewrite the entire application from scratch.
 
 ### Your story
 
@@ -58,7 +58,6 @@ First released in 2002, Windows Forms is a managed framework and is the oldest, 
 - Very powerful and productive designer. Not so convenient to design UI &quot;from code&quot;.
 - Easy and intuitive to learn, thanks to the designer&#39;s drag and drop experience.
 - Supported on any Windows version.
-
 - Supported on .NET Core 3.0.
 
 ### WPF
@@ -106,11 +105,11 @@ As a part of the commitment to provide developers with the best tools to build a
 
 1. Move Desktop Application scenarios into Modern Application platform. The traditional desktop development is still very popular because it addresses certain scenarios really well. It makes sense to take these common desktop scenarios and bring them into the modern desktop platform to make the platform fully capable.
 
-![](./media/1-5.png)
+    ![](./media/1-5.png)
 
 1. Move Modern Application features into Desktop Applications. For existing desktop apps that need a way to leverage modern capabilities without rewriting from scratch, features from the Modern Application platform are pushed into the Desktop Application.
 
-![](./media/1-6.png)
+    ![](./media/1-6.png)
 
 In this book we will focus on the second part and show how you can modernize your existing desktop applications.
 
@@ -150,16 +149,16 @@ You also might find this guide useful if you are a technical decision maker, suc
 
 ## How to use this guide
 
-This guide addresses the &quot;why&quot;—why you might want to modernize your existing applications, and the specific benefits you get from using NET Core 3.0 and MSIX to modernize your desktop apps. The content of the guide is designed for architects and technical decision makers who want an overview, but who don&#39;t need to focus on implementation and technical, step-by-step details.
+This guide addresses the "why"—why you might want to modernize your existing applications, and the specific benefits you get from using NET Core 3.0 and MSIX to modernize your desktop apps. The content of the guide is designed for architects and technical decision makers who want an overview, but who don&#39;t need to focus on implementation and technical, step-by-step details.
 
 Along the different chapters, sample implementation code snippets and screenshot are provided, with chapter 5 devoted to a showcase a complete migration process for sample applications.
 
 ## Sample apps
 
-To highlight the necessary steps to perform a modernization we will be using a sample application called eShopModernizing. This application has two flavors, Windows Forms and WPF and we will show a step by step process on how to perform the modernization on both of them to .NET Core.
+To highlight the necessary steps to perform a modernization, we will be using a sample application called eShopModernizing. This application has two flavors, Windows Forms and WPF and we will show a step by step process on how to perform the modernization on both of them to .NET Core.
 
-Also, on the GitHub repo for this book, you will find the results of the process, which you can consult with if you decide to follow the step-by-step tutorial.
+Also, on the GitHub repository for this book, you'll find the results of the process, which you can consult with if you decide to follow the step-by-step tutorial.
 
 ## Send us your feedback
 
-We wrote this guide to help you understand your options for improving and modernizing existing .NET desktop applications. The guide and related sample applications are evolving. We welcome your feedback! If you have comments about how this guide might be more helpful, please send them to dotnet-architecture-ebooks-feedback@service.microsoft.com.
+We wrote this guide to help you understand your options for improving and modernizing existing .NET desktop applications. The guide and related sample applications are evolving. We welcome your feedback! If you have comments about how this guide might be more helpful, send them to [dotnet-architecture-ebooks-feedback@service.microsoft.com](mailto:dotnet-architecture-ebooks-feedback@service.microsoft.com).

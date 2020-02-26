@@ -47,7 +47,7 @@ To create an Azure Machine Learning workspace, the following are required:
 
 ## Training
 
-Training on Azure is only available for the Model Builder image classification scenario. The algorithm used to train these models is a Deep Neural Network based on the ResNet50 architecture. During training, the resources required to train the model are provisioned and the model is trained. This process takes several minutes and the amount of time may vary depending on the size of compute selected as well as amount of data. You can track the progress of your runs by selecting the "Monitor current run in Azure portal" link in Visual Studio.
+Training on Azure is only available for the Model Builder image classification scenario. The algorithm used to train these models is a Deep Neural Network based on the ResNet50 architecture. During training, the resources required to train the model are provisioned and the model is trained. This process takes some time and the amount of time may vary depending on the size of compute selected as well as amount of data. You can track the progress of your runs by selecting the "Monitor current run in Azure portal" link in Visual Studio.
 
 ## Results
 
@@ -59,7 +59,23 @@ Once training is complete, two projects are added to your solution with the foll
   - bestModel.onnx: A serialized version of the model in Open Neural Network Exchange (ONNX) format. ONNX is an open source format for AI models that supports interoperability between frameworks like ML.NET, PyTorch and TensorFlow.
   - bestModelMap.json: A list of categories used when making predictions to map the model output to a text category.
   - MLModel.zip: A serialized version of the ML.NET prediction pipeline that uses the serialized version of the model *bestModel.onnx* to make predictions and maps outputs using the `bestModelMap.json` file.
-  
+
+## Consuming the model
+
+The `ModelInput` and `ModelOutput` classes in the *Model* project define the schema of the model's expected input and output respectively. 
+
+In an image classification scenario, the `ModelInput` contains two columns:
+
+- `ImageSource`: The string path of the image location.
+- `Label`: The actual category the image belongs to.
+
+  When making predictions, only the `ImageSource` has to be provided since the label is the column to predict.  
+
+The `ModelOutput` contains two columns:
+
+- `PredictedLabel`: The image's predicted category.
+- `Score`: The list of probabilities for all classes (the highest belongs to the `PredictedLabel`).
+
 ## Troubleshooting
 
 ### Cannot create compute

@@ -1,5 +1,6 @@
 ---
 title: "How to validate using XSD - LINQ to XML"
+description: Learn how to use the extension methods in the System.Xml.Schema namespace to validate an XML tree against an XSD file.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"
@@ -197,6 +198,5 @@ custOrdDoc did not validate
 
 ## See also
 
-- <xref:System.Xml.Schema.Extensions.Validate%2A>
-- [Create XML trees in C# (LINQ to XML)](create-xml-trees.md)
-- [XML literals in Visual Basic (LINQ to XML)](xml-literals.md)
+- <xref:System.Xml.Schema.Extensions.Validate%2A?displayProperty=nameWithType>
+- [XML trees](functional-construction.md)

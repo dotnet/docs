@@ -14,8 +14,8 @@ ms.date: 02/19/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet run [-c|--configuration] [-f|--framework] [--force] [--interactive] [--launch-profile] 
-    [--no-build] [--no-dependencies] [--no-launch-profile] [--no-restore] [-p|--project] 
+dotnet run [-c|--configuration] [-f|--framework] [--force] [--interactive] [--launch-profile]
+    [--no-build] [--no-dependencies] [--no-launch-profile] [--no-restore] [-p|--project]
     [-r|--runtime] [-v|--verbosity] [[--] [application arguments]]
 dotnet run [-h|--help]
 ```
@@ -96,7 +96,7 @@ To run the application, the `dotnet run` command resolves the dependencies of th
 
 - **`-v|--verbosity <LEVEL>`**
 
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default value is `m`. Available since .NET Core 2.1 SDK. 
+  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default value is `m`. Available since .NET Core 2.1 SDK.
 
 ## Examples
 

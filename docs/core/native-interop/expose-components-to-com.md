@@ -27,7 +27,7 @@ In .NET Core, the process for exposing your .NET objects to COM has been signifi
 The first step is to create the library.
 
 1. Create a new folder, and in that folder run the following command:
-    
+
     ```dotnetcli
     dotnet new classlib
     ```

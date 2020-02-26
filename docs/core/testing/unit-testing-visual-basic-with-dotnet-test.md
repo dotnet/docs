@@ -82,7 +82,7 @@ You have the following final folder layout:
         PrimeServiceTests.vbproj
 ```
 
-Execute [`dotnet sln add .\PrimeService.Tests\PrimeService.Tests.vbproj`](../tools/dotnet-sln.md) in the *unit-testing-vb-using-dotnet-test* directory. 
+Execute [`dotnet sln add .\PrimeService.Tests\PrimeService.Tests.vbproj`](../tools/dotnet-sln.md) in the *unit-testing-vb-using-dotnet-test* directory.
 
 ## Creating the first test
 

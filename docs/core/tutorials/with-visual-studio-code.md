@@ -107,7 +107,7 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 
     ```csharp
     using System;
-    
+
     namespace HelloWorld
     {
         class Program

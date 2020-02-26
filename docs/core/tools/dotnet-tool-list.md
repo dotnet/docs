@@ -34,7 +34,7 @@ The `dotnet tool list` command provides a way for you to list all .NET Core glob
 
 - **`-g|--global`**
 
-  Lists user-wide global tools. Can't be combined with the `--tool-path` option. Omitting both `--global` and `--tool-path` lists local tools. 
+  Lists user-wide global tools. Can't be combined with the `--tool-path` option. Omitting both `--global` and `--tool-path` lists local tools.
 
 - **`-h|--help`**
 
@@ -42,7 +42,7 @@ The `dotnet tool list` command provides a way for you to list all .NET Core glob
 
 - **`--tool-path <PATH>`**
 
-  Specifies a custom location where to find global tools. PATH can be absolute or relative. Can't be combined with the `--global` option. Omitting both `--global` and `--tool-path` lists local tools. 
+  Specifies a custom location where to find global tools. PATH can be absolute or relative. Can't be combined with the `--global` option. Omitting both `--global` and `--tool-path` lists local tools.
 
 ## Examples
 

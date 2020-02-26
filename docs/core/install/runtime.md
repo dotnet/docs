@@ -59,7 +59,7 @@ export PATH=$PATH:$HOME/dotnet
 > - **Bash Shell**: *~/.bash_profile*, *~/.bashrc*
 > - **Korn Shell**: *~/.kshrc* or *.profile*
 > - **Z Shell**: *~/.zshrc* or *.zprofile*
-> 
+>
 > Edit the appropriate source file for your shell and add `:$HOME/dotnet` to the end of the existing `PATH` statement. If no `PATH` statement is included, add a new line with `export PATH=$PATH:$HOME/dotnet`.
 >
 > Also, add `export DOTNET_ROOT=$HOME/dotnet` to the end of the file.

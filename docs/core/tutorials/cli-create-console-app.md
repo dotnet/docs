@@ -34,30 +34,30 @@ Let's do a quick walkthrough:
 01. `dotnet new console`
 
     [dotnet new](../tools/dotnet-new.md) creates an up-to-date *Hello.csproj* project file with the dependencies necessary to build a console app. It also creates a *Program.cs*, a basic file containing the entry point for the application.
-    
+
     *Hello.csproj*:
-    
+
     [!code-xml[Hello.csproj](~/samples/core/console-apps/HelloMsBuild/Hello.csproj)]
-    
+
     The project file specifies everything that's needed to restore dependencies and build the program.
-    
+
     - The `<OutputType>` element specifies that we're building an executable, in other words a console application.
     - The `<TargetFramework>` element specifies what .NET implementation we're targeting. In an advanced scenario, you can specify multiple target frameworks and build to all those in a single operation. In this tutorial, we'll stick to building only for .NET Core 3.1.
-    
+
     *Program.cs*:
-    
+
     [!code-csharp[Program.cs](~/samples/core/console-apps/HelloMsBuild/Program.cs)]
-    
+
     The program starts by `using System`, which means "bring everything in the `System` namespace into scope for this file". The `System` namespace includes the `Console` class.
-    
+
     We then define a namespace called `Hello`. You can change this to anything you want. A class named `Program` is defined within that namespace, with a `Main` method that takes an array of strings named `args`. This array contains the list of arguments passed in when the program is run. As it is, this array is not used and the program simply writes the text "Hello World!" to the console. Later, we'll make changes to the code that will make use of this argument.
-    
+
     `dotnet new` calls [dotnet restore](../tools/dotnet-restore.md) implicitly. `dotnet restore` calls into [NuGet](https://www.nuget.org/) (.NET package manager) to restore the tree of dependencies. NuGet analyzes the *Hello.csproj* file, downloads the dependencies defined in the file (or grabs them from a cache on your machine), and writes the *obj/project.assets.json* file, which is necessary to compile and run the sample.
 
 02. `dotnet run`
 
     [dotnet run](../tools/dotnet-run.md) calls [dotnet build](../tools/dotnet-build.md) to ensure that the build targets have been built, and then calls `dotnet <assembly.dll>` to run the target application.
-    
+
     ```dotnetcli
     dotnet run
     ```
@@ -67,9 +67,9 @@ Let's do a quick walkthrough:
     ```console
     Hello World!
     ```
-    
+
     Alternatively, you can also run `dotnet build` to compile the code without running the build console applications. This results in a compiled application, as a DLL file, based on the name of the project. In this case, the file created is named *Hello.dll*. This app can be run with `dotnet bin\Debug\netcoreapp3.1\Hello.dll` on Windows (use `/` for non-Windows systems).
-    
+
     ```dotnetcli
     dotnet bin\Debug\netcoreapp3.1\Hello.dll
     ```
@@ -79,7 +79,7 @@ Let's do a quick walkthrough:
     ```console
     Hello World!
     ```
-    
+
     When the app is compiled, an operating system-specific executable was created along with the `Hello.dll`. On Windows, this would be `Hello.exe`; on Linux or macOS, this would be `hello`. With the example above, the file is named with `Hello.exe` or `Hello`. You can run that executable directly.
 
     ```console

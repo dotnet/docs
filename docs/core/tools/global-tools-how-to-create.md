@@ -26,7 +26,7 @@ This is the first in a series of three tutorials. In this tutorial, you create a
 
 1. Open a command prompt and create a folder named *repository*.
 
-1. Navigate to the *repository* folder and enter the following command, replacing `<name>` with a unique value to make the project name unique. 
+1. Navigate to the *repository* folder and enter the following command, replacing `<name>` with a unique value to make the project name unique.
 
    ```dotnetcli
    dotnet new console -n botsay-<name>
@@ -146,7 +146,7 @@ All arguments after the `--` delimiter are passed to your application.
 
 ## Package the tool
 
-Before you can pack and distribute the application as a tool, you need to modify the project file. 
+Before you can pack and distribute the application as a tool, you need to modify the project file.
 
 1. Open the *botsay-\<name>.csproj* file and add three new XML nodes to the end of the `<PropertyGroup>` node:
 

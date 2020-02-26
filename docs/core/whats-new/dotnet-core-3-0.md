@@ -82,7 +82,7 @@ You can either configure the appHost at the project level, or toggle the appHost
   dotnet run -p:UseAppHost=true
   ```
 
-For more information about the `UseAppHost` setting, see [MSBuild properties for Microsoft.NET.Sdk](../project-sdk/msbuild-props.md#UseAppHost).
+For more information about the `UseAppHost` setting, see [MSBuild properties for Microsoft.NET.Sdk](../project-sdk/msbuild-props.md#useapphost).
 
 ### Single-file executables
 

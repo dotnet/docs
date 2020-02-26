@@ -1,5 +1,6 @@
 ---
 title: "How to create a tree from an XmlReader - LINQ to XML"
+description: Learn how to create an XML tree directly from an XmlReader.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"
@@ -9,7 +10,7 @@ ms.assetid: 60951c9c-7087-406c-b5bb-c60e58609b21
 
 # How to create a tree from an XmlReader (LINQ to XML)
 
-This article shows how to create an XML tree directly from an <xref:System.Xml.XmlReader>. To create an <xref:System.Xml.Linq.XElement> from an <xref:System.Xml.XmlReader>, you position the <xref:System.Xml.XmlReader> on an element node. The <xref:System.Xml.XmlReader> will skip comments and processing instructions, but if the <xref:System.Xml.XmlReader> is positioned on a text node, an error will be thrown. To avoid such errors, position the <xref:System.Xml.XmlReader> on an element before you create an XML tree from the <xref:System.Xml.XmlReader>.
+This article shows how to create an XML tree directly from an <xref:System.Xml.XmlReader> in C# or Visual Basic. To create an <xref:System.Xml.Linq.XElement> from an <xref:System.Xml.XmlReader>, you position the <xref:System.Xml.XmlReader> on an element node. The <xref:System.Xml.XmlReader> will skip comments and processing instructions, but if the <xref:System.Xml.XmlReader> is positioned on a text node, an error will be thrown. To avoid such errors, position the <xref:System.Xml.XmlReader> on an element before you create an XML tree from the <xref:System.Xml.XmlReader>.
 
 ## Example: Load XElement object from an XmlReader object
 

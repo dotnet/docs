@@ -60,16 +60,16 @@ Once training is complete, two projects are added to your solution with the foll
   - bestModelMap.json: A list of categories used when making predictions to map the model output to a text category.
   - MLModel.zip: A serialized version of the ML.NET prediction pipeline that uses the serialized version of the model *bestModel.onnx* to make predictions and maps outputs using the `bestModelMap.json` file.
 
-## Consuming the model
+## Consume the model
 
-The `ModelInput` and `ModelOutput` classes in the *Model* project define the schema of the model's expected input and output respectively. 
+The `ModelInput` and `ModelOutput` classes in the *Model* project define the schema of the model's expected input and output respectively.
 
 In an image classification scenario, the `ModelInput` contains two columns:
 
 - `ImageSource`: The string path of the image location.
 - `Label`: The actual category the image belongs to.
 
-  When making predictions, only the `ImageSource` has to be provided since the label is the column to predict.  
+  When making predictions, only the `ImageSource` has to be provided since the `Label` is the column to predict.  
 
 The `ModelOutput` contains two columns:
 

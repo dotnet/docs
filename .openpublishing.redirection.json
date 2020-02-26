@@ -762,6 +762,10 @@
       "redirect_url": "/dotnet/csharp/language-reference/builtin-types/reference-types"
     },
     {
+      "source_path": "docs/csharp/language-reference/keywords/struct.md",
+      "redirect_url": "/dotnet/csharp/language-reference/builtin-types/struct"
+    },
+    {
       "source_path": "docs/csharp/language-reference/keywords/true.md",
       "redirect_url": "/dotnet/csharp/language-reference/builtin-types/bool"
     },
@@ -804,6 +808,10 @@
     {
       "source_path": "docs/csharp/language-reference/keywords/value-types-table.md",
       "redirect_url": "/dotnet/csharp/language-reference/builtin-types/value-types"
+    },
+    {
+      "source_path": "docs/csharp/language-reference/keywords/void.md",
+      "redirect_url": "/dotnet/csharp/language-reference/builtin-types/void"
     },
     {
       "source_path": "docs/csharp/language-reference/language-specification/index.md",
@@ -1270,6 +1278,61 @@
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/namespaces-overview-linq-to-xml.md",
       "redirect_url": "/dotnet/standard/linq/namespaces-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/how-to-populate-an-xml-tree-with-an-xmlwriter-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/populate-xml-tree-xmlwriter",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq//how-to-stream-xml-fragments-from-an-xmlreader.md",
+      "redirect_url": "/dotnet/standard/linq/stream-xml-fragments-xmlreader",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/how-to-validate-using-xsd-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/validate-xsd",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/valid-content-of-xelement-and-xdocument-objects3.md",
+      "redirect_url": "/dotnet/standard/linq/valid-content-xelement-xdocument-objects",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/how-to-catch-parsing-errors.md",
+      "redirect_url": "/dotnet/standard/linq/catch-parsing-errors",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/how-to-create-a-tree-from-an-xmlreader.md",
+      "redirect_url": "/dotnet/standard/linq/create-tree-xmlreader",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/how-to-load-xml-from-a-file.md",
+      "redirect_url": "/dotnet/standard/linq/load-xml-file",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/preserving-white-space-while-loading-or-parsing-xml1.md",
+      "redirect_url": "/dotnet/standard/linq/preserve-white-space-loading-parsing-xml",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/creating-xml-trees-linq-to-xml-2.md",
+      "redirect_url": "/dotnet/standard/linq/create-xml-trees",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/functional-construction-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/functional-construction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/how-to-parse-a-string.md",
+      "redirect_url": "/dotnet/standard/linq/parse-string",
       "redirect_document_id": true
     },
     {
@@ -2897,6 +2960,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "docs/framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls.md",
+      "redirect_url": "/dotnet/framework/winforms/controls/perform-common-tasks-design-actions",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "docs/framework/wpf/advanced/xaml-resources.md",
       "redirect_url": "/dotnet/desktop-wpf/fundamentals/xaml-resources-define",
       "redirect_document_id": true
@@ -4281,6 +4349,62 @@
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/namespaces-overview-linq-to-xml.md",
       "redirect_url": "/dotnet/standard/linq/namespaces-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-populate-an-xml-tree-with-an-xmlwriter-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/populate-xml-tree-xmlwriter",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq//how-to-stream-xml-fragments-from-an-xmlreader.md",
+      "redirect_url": "/dotnet/standard/linq/stream-xml-fragments-xmlreader",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-validate-using-xsd-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/validate-xsd",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/valid-content-of-xelement-and-xdocument-objects.md",
+      "redirect_url": "/dotnet/standard/linq/valid-content-xelement-xdocument-objects",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-catch-parsing-errors.md",
+      "redirect_url": "/dotnet/standard/linq/catch-parsing-errors",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-create-a-tree-from-an-xmlreader.md",
+      "redirect_url": "/dotnet/standard/linq/create-tree-xmlreader",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-load-xml-from-a-file.md",
+      "redirect_url": "/dotnet/standard/linq/load-xml-file",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/preserving-white-space-while-loading-or-parsing-xml.md",
+      "redirect_url": "/dotnet/standard/linq/preserve-white-space-loading-parsing-xml",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/functional-construction-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/functional-construction"
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/creating-xml-trees.md",
+      "redirect_url": "/dotnet/standard/linq/functional-construction"
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-parse-a-string.md",
+      "redirect_url": "/dotnet/standard/linq/parse-string"
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/introduction-to-xml-literals.md",
+      "redirect_url": "/dotnet/standard/linq/xml-literals"
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/threading/how-to-use-a-thread-pool.md",

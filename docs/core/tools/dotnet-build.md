@@ -1,15 +1,11 @@
 ---
 title: dotnet build command
 description: The dotnet build command builds a project and all of its dependencies.
-ms.date: 10/14/2019
+ms.date: 02/14/2020
 ---
 # dotnet build
 
-**This article applies to:** ✔️ .NET Core 1.x SDK and later versions
-
-<!-- todo: uncomment when all CLI commands are reviewed
-[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
--->
+**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
 
 ## Name
 
@@ -69,7 +65,7 @@ The project or solution file to build. If a project or solution file isn't speci
 
 ## Options
 
-- **`-c|--configuration {Debug|Release}`**
+- **`-c|--configuration <CONFIGURATION>`**
 
   Defines the build configuration. The default for most projects is `Debug`, but you can override the build configuration settings in your project.
 
@@ -79,7 +75,7 @@ The project or solution file to build. If a project or solution file isn't speci
 
 - **`--force`**
 
-  Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file. Available since .NET Core 2.0 SDK.
+  Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
 
 - **`-h|--help`**
 
@@ -99,7 +95,7 @@ The project or solution file to build. If a project or solution file isn't speci
 
 - **`--no-restore`**
 
-  Doesn't execute an implicit restore during build. Available since .NET Core 2.0 SDK.
+  Doesn't execute an implicit restore during build.
 
 - **`--nologo`**
 

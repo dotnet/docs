@@ -1,7 +1,7 @@
 ---
 title: dotnet command
 description: Learn about the dotnet command (the generic driver for the .NET Core CLI) and its usage.
-ms.date: 06/04/2018
+ms.date: 02/13/2020
 ---
 # dotnet command
 
@@ -287,16 +287,16 @@ Command | Function
 [dotnet nuget locals](dotnet-nuget-locals.md) | Clears or lists local NuGet resources such as http-request cache, temporary cache, or machine-wide global packages folder.
 [dotnet nuget push](dotnet-nuget-push.md) | Pushes a package to the server and publishes it.
 
-### Global Tools commands
+### Global, tool-path, and local tools commands
 
-[.NET Core Global Tools](global-tools.md) are available starting with .NET Core SDK 2.1.300:
+Tools are console applications that are installed from NuGet packages and are invoked from the command prompt. You can write tools yourself or install tools written by third parties. Tools are also known as global tools, tool-path tools, and local tools. For more information, see [.NET Core tools overview](global-tools.md). Global and tool-path tools are available starting with .NET Core SDK 2.1. Local tools are available starting with .NET Core SDK 3.0.
 
 Command | Function
 --- | ---
-[dotnet tool install](dotnet-tool-install.md) | Installs a Global Tool on your machine.
-[dotnet tool list](dotnet-tool-list.md) | Lists all Global Tools currently installed in the default directory on your machine or in the specified path.
-[dotnet tool uninstall](dotnet-tool-uninstall.md) | Uninstalls a Global Tool from your machine.
-[dotnet tool update](dotnet-tool-update.md) | Updates a Global Tool on your machine.
+[dotnet tool install](dotnet-tool-install.md) | Installs a tool on your machine.
+[dotnet tool list](dotnet-tool-list.md) | Lists all global, tool-path, or local tools currently installed on your machine.
+[dotnet tool uninstall](dotnet-tool-uninstall.md) | Uninstalls a tool from your machine.
+[dotnet tool update](dotnet-tool-update.md) | Updates a tool that is installed on your machine.
 
 ### Additional tools
 

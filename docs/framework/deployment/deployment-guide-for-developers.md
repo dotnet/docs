@@ -128,21 +128,7 @@ InstallAware builds Windows app (APPX), Windows Installer (MSI), Native Code (EX
 
 ### InstallShield deployment
 
-In Visual Studio, to choose InstallShield deployment and add a dependency on the .NET Framework:
-
-1. On the Visual Studio menu bar, choose **File**, **New**, **Project**.
-
-2. In the left pane of the **New Project** dialog box, choose **Other Project Types**, **Setup and Deployment**, **InstallShield LE**.
-
-3. In the **Name** box, type a name for your project, and then choose **OK**.
-
-4. If you are creating a setup and deployment project for the first time, choose **Go to InstallShield** or **Enable InstallShield Limited Edition** to download InstallShield Limited Edition for your version of Microsoft Visual Studio. Restart Visual Studio.
-
-5. Go to **Project Assistant** wizard and choose **Application Files** to add the Project Output. You can configure other project attributes by using this wizard.
-
-6. Go to **Installation Requirements** and select the operating systems and the version of the .NET Framework you want to install.
-
-7. Open the shortcut menu for your setup project and choose **Build**.
+InstallShield builds Windows app packages (MSIX, APPX), Windows Installer packages (MSI), and Native Code (EXE) installers. InstallShield also provides Visual Studio integration. For more information, see the [InstallShield](https://www.flexerasoftware.com/install/products/installshield.html) website.
 
 <a name="wix"></a>
 

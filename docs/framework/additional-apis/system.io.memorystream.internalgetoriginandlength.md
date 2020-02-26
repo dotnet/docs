@@ -1,7 +1,5 @@
 ---
 title: MemoryStream.InternalGetOriginAndLength Method (System.IO)
-author: mairaw
-ms.author: mairaw
 ms.date: 11/19/2019
 topic_type:
   - "apiref"

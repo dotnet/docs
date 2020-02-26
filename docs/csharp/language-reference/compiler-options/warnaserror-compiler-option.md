@@ -23,7 +23,7 @@ The **-warnaserror+** option treats all warnings as errors
   
  By default, **-warnaserror-** is in effect, which causes warnings to not prevent the generation of an output file. **-warnaserror**, which is the same as **-warnaserror+**, causes warnings to be treated as errors.  
   
- Optionally, if you want only a few specific warnings to be treated as errors, you may specify a comma-separated list of warning numbers to treat as errors.  
+ Optionally, if you want only a few specific warnings to be treated as errors, you may specify a comma-separated list of warning numbers to treat as errors. The set of all nullability warnings can be specified with the **nullable** shorthand.
   
  Use [-warn](./warn-compiler-option.md) to specify the level of warnings that you want the compiler to display. Use [-nowarn](./nowarn-compiler-option.md) to disable certain warnings.  
   
@@ -42,7 +42,7 @@ The **-warnaserror+** option treats all warnings as errors
   
 ```console  
 csc -warnaserror in.cs  
-csc -warnaserror:642,649,652 in.cs  
+csc -warnaserror:642,649,652,nullable in.cs  
 ```  
   
 ## See also

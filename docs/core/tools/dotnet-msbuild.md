@@ -1,11 +1,11 @@
 ---
 title: dotnet msbuild command
 description: The dotnet msbuild command provides access to the MSBuild command line.
-ms.date: 12/03/2018
+ms.date: 02/14/2020
 ---
 # dotnet msbuild
 
-[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
+**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
 
 ## Name
 
@@ -25,25 +25,25 @@ The [dotnet build](dotnet-build.md) command is equivalent to `dotnet msbuild -re
 
 ## Examples
 
-* Build a project and its dependencies:
+- Build a project and its dependencies:
 
   ```dotnetcli
   dotnet msbuild
   ```
 
-* Build a project and its dependencies using Release configuration:
+- Build a project and its dependencies using Release configuration:
 
   ```dotnetcli
   dotnet msbuild -property:Configuration=Release
   ```
 
-* Run the publish target and publish for the `osx.10.11-x64` RID:
+- Run the publish target and publish for the `osx.10.11-x64` RID:
 
   ```dotnetcli
   dotnet msbuild -target:Publish -property:RuntimeIdentifiers=osx.10.11-x64
   ```
 
-* See the whole project with all targets included by the SDK:
+- See the whole project with all targets included by the SDK:
 
   ```dotnetcli
   dotnet msbuild -preprocess

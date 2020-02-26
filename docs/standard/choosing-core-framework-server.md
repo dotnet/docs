@@ -2,7 +2,6 @@
 title: Choose between .NET Core and .NET Framework for server apps
 description: A guide on which implementation of .NET you should consider when building a server app in .NET.
 author: cartermp
-ms.author: mairaw
 ms.date: 06/19/2018
 ---
 # Choosing between .NET Core and .NET Framework for server apps

@@ -49,25 +49,7 @@
   - name: Install localized IntelliSense
     href: install/localized-intellisense.md
 - name: Get started
-  items:
-  - name: Get started
-    href: get-started.md
-  - name: Get started with C# and Visual Studio Code
-    href: tutorials/with-visual-studio-code.md
-  - name: Get started with .NET Core on macOS using Visual Studio Code
-    href: tutorials/using-on-macos.md
-  - name: Create your first console app in Visual Studio
-    href: tutorials/with-visual-studio.md
-  - name: Debug an application using Visual Studio
-    href: tutorials/debugging-with-visual-studio.md
-  - name: Publish an application with Visual Studio
-    href: tutorials/publishing-with-visual-studio.md
-  - name: Create a .NET Standard library in Visual Studio
-    href: tutorials/library-with-visual-studio.md
-  - name: Test a .NET Standard library in Visual Studio
-    href: tutorials/testing-library-with-visual-studio.md
-  - name: Consume a .NET Standard library in Visual Studio
-    href: tutorials/consuming-library-with-visual-studio.md
+  href: get-started.md
 - name: What's new in .NET Core
   items:
   - name: What's new in .NET Core 3.1
@@ -87,12 +69,28 @@
   items:
   - name: Overview
     href: tutorials/index.md
-  - name: Get started with .NET Core using Visual Studio for Mac
-    href: tutorials/using-on-mac-vs.md
-  - name: Build a complete .NET Core solution on macOS
-    href: tutorials/using-on-mac-vs-full-solution.md
+  - name: Get started with .NET Core using Visual Studio
+    href: tutorials/with-visual-studio.md
+  - name: Get started with .NET Core using Visual Studio Code
+    href: tutorials/with-visual-studio-code.md
   - name: Get started with .NET Core using the CLI
     href: tutorials/cli-create-console-app.md
+  - name: Get started with .NET Core using Visual Studio Code on macOS
+    href: tutorials/using-on-macos.md
+  - name: Get started with .NET Core using Visual Studio for Mac
+    href: tutorials/using-on-mac-vs.md
+  - name: Debug an application using Visual Studio
+    href: tutorials/debugging-with-visual-studio.md
+  - name: Publish an application with Visual Studio
+    href: tutorials/publishing-with-visual-studio.md
+  - name: Create a .NET Standard library in Visual Studio
+    href: tutorials/library-with-visual-studio.md
+  - name: Test a .NET Standard library in Visual Studio
+    href: tutorials/testing-library-with-visual-studio.md
+  - name: Consume a .NET Standard library in Visual Studio
+    href: tutorials/consuming-library-with-visual-studio.md
+  - name: Build a complete .NET Core solution on macOS
+    href: tutorials/using-on-mac-vs-full-solution.md
   - name: Organize and test projects with the .NET Core CLI
     href: tutorials/testing-with-cli.md
   - name: Develop libraries with cross-platform tools
@@ -111,6 +109,18 @@
       href: tutorials/cli-templates-create-project-template.md
     - name: 3 - Create a template pack
       href: tutorials/cli-templates-create-template-pack.md
+- name: Project SDKs
+  items:
+  - name: Overview
+    href: project-sdk/overview.md
+  - name: Reference
+    items:
+    - name: Microsoft.NET.Sdk
+      href: project-sdk/msbuild-props.md
+    - name: Microsoft.NET.Sdk.Web
+      href: /aspnet/core/razor-pages/web-sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
+    - name: Microsoft.NET.Sdk.Razor
+      href: /aspnet/core/razor-pages/sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
 - name: Run-time configuration
   items:
   - name: Settings
@@ -238,17 +248,23 @@
   items:
   - name: Overview
     href: tools/index.md
-  - name: Tools
+  - name: Global and local tools
     expanded: true
     items:
-    - name: Global tools
-      expanded: true
+    - name: How to manage tools
+      href: tools/global-tools.md
+    - name: Tutorials
       items:
-      - name: Overview
-        href: tools/global-tools.md
-      - name: Create a global tool
+      - name: Create a tool
+        displayName: tools
         href: tools/global-tools-how-to-create.md
-    - name: Troubleshoot tool usage issues
+      - name: Install and use a global tool
+        displayName: tools
+        href: tools/global-tools-how-to-use.md
+      - name: Install and use a local tool
+        displayName: tools
+        href: tools/local-tools-how-to-use.md
+    - name: Troubleshoot tools
       href: tools/troubleshoot-usage-issues.md
   - name: Elevated access
     href: tools/elevated-access.md
@@ -308,6 +324,10 @@
         href: tools/dotnet-tool-install.md
       - name: dotnet tool list
         href: tools/dotnet-tool-list.md
+      - name: dotnet tool restore
+        href: tools/dotnet-tool-restore.md
+      - name: dotnet tool run
+        href: tools/dotnet-tool-run.md
       - name: dotnet tool uninstall
         href: tools/dotnet-tool-uninstall.md
       - name: dotnet tool update

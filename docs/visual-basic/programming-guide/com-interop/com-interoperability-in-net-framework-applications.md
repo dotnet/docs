@@ -2,7 +2,7 @@
 title: "COM Interoperability in .NET Framework Applications"
 ms.date: 07/20/2015
 helpviewer_keywords: 
-  - "interoperability, COM and .NET framework objects"
+  - "interoperability, COM and .NET Framework objects"
   - "COM interop [Visual Basic]"
   - "shared components"
 ms.assetid: f5a72143-c268-4dff-a019-974ad940e17d

@@ -10,8 +10,6 @@ helpviewer_keywords:
   - "Suspend method"
   - "threading [.NET Framework], managed debugging assistants"
 ms.assetid: 3e5efbc5-92e4-4229-b31f-ce368a1adb96
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # dangerousThreadingAPI MDA
 The `dangerousThreadingAPI` managed debugging assistant (MDA) is activated when the <xref:System.Threading.Thread.Suspend%2A?displayProperty=nameWithType> method is called on a thread other than the current thread.  

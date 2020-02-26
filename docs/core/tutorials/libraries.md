@@ -214,7 +214,7 @@ It's important to be able to test across platforms. You can use either [xUnit](h
 
 1. Set up your solution. You can do so with the following commands:
 
-   ```bash
+   ```dotnetcli
    mkdir SolutionWithSrcAndTest
    cd SolutionWithSrcAndTest
    dotnet new sln
@@ -235,7 +235,7 @@ It's important to be able to test across platforms. You can use either [xUnit](h
 
 1. Navigate to the test project's directory and add a reference to `MyProject.Test` from `MyProject`.
 
-   ```bash
+   ```dotnetcli
    cd MyProject.Test
    dotnet add reference ../MyProject/MyProject.csproj
    ```
@@ -294,7 +294,7 @@ Consumption scenarios like this mean that the APIs being accessed have to have a
 
 You can run the following commands in your terminal to produce the same structure as this guide:
 
-```console
+```dotnetcli
 mkdir AwesomeLibrary && cd AwesomeLibrary
 dotnet new sln
 mkdir AwesomeLibrary.Core && cd AwesomeLibrary.Core && dotnet new classlib

@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "secure coding, dangerous permissions"
   - "permissions [.NET Framework], dangerous"
 ms.assetid: 1929e854-23a0-4bb1-94be-e8aa3b609e32
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Dangerous Permissions and Policy Administration
 Several of the protected operations for which the .NET Framework provides permissions can potentially allow the security system to be circumvented. These dangerous permissions should be given only to trustworthy code, and then only as necessary. There is usually no defense against malicious code if it is granted these permissions.  

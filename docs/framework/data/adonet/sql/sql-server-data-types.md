@@ -13,9 +13,9 @@ SQL Server and the .NET Framework are based on different type systems, which can
   
  The SQL Server data types that are available for use in your application depends on the version of SQL Server that you are using. For more information, see the relevant version of SQL Server Books Online in the following table.  
   
- **SQL Server Books Online**  
+ **SQL Server documentation**  
   
-1. [Data Types (Database Engine)](https://go.microsoft.com/fwlink/?LinkID=107468)  
+1. [Data Types (Transact-SQL)](/sql/t-sql/data-types/data-types-transact-sql)  
   
 ## In This Section  
  [SqlTypes and the DataSet](sqltypes-and-the-dataset.md)  

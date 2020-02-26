@@ -18,8 +18,8 @@ Table-valued parameters provide an easy way to marshal multiple rows of data fro
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[Table-Valued Parameters (Database Engine)](https://go.microsoft.com/fwlink/?LinkId=98363) in SQL Server Books Online|Describes how to create and use table-valued parameters.|  
-|[User-Defined Table Types](https://go.microsoft.com/fwlink/?LinkId=98364) in SQL Server Books Online|Describes user-defined table types that are used to declare table-valued parameters.|  
+|[Use Table-Valued Parameters (Database Engine)](/sql/relational-databases/tables/use-table-valued-parameters-database-engine)|Describes how to create and use table-valued parameters.|  
+|[User-Defined Table Types](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/bb522526(v=sql.100))|Describes user-defined table types that are used to declare table-valued parameters.|  
   
 ## Passing Multiple Rows in Previous Versions of SQL Server  
  Before table-valued parameters were introduced to SQL Server 2008, the options for passing multiple rows of data to a stored procedure or a parameterized SQL command were limited. A developer could choose from the following options for passing multiple rows to the server:  
@@ -33,7 +33,7 @@ Table-valued parameters provide an easy way to marshal multiple rows of data fro
 - Use the `bcp` utility program or the <xref:System.Data.SqlClient.SqlBulkCopy> object to load many rows of data into a table. Although this technique is very efficient, it does not support server-side processing unless the data is loaded into a temporary table or table variable.  
   
 ## Creating Table-Valued Parameter Types  
- Table-valued parameters are based on strongly-typed table structures that are defined by using Transact-SQL CREATE TYPE statements. You have to create a table type and define the structure in SQL Server before you can use table-valued parameters in your client applications. For more information about creating table types, see [User-Defined Table Types](https://go.microsoft.com/fwlink/?LinkID=98364) in SQL Server Books Online.  
+ Table-valued parameters are based on strongly-typed table structures that are defined by using Transact-SQL CREATE TYPE statements. You have to create a table type and define the structure in SQL Server before you can use table-valued parameters in your client applications. For more information about creating table types, see [User-Defined Table Types](https://docs.microsoft.com/previous-versions/sql/sql-server-2008/bb522526(v=sql.100)).  
   
  The following statement creates a table type named CategoryTableType that consists of CategoryID and CategoryName columns:  
   

@@ -64,9 +64,9 @@ The project to publish. It's either the path and filename of a [C#](csproj.md), 
 
 # [.NET Core 2.1](#tab/netcore21)
 
-`-c|--configuration {Debug|Release}`
+`-c|--configuration <CONFIGURATION>`
 
-Defines the build configuration. The default value is `Debug`.
+Defines the build configuration. The default for most projects is `Debug`, but you can override the build configuration settings in your project.
 
 `-f|--framework <FRAMEWORK>`
 
@@ -107,7 +107,7 @@ Publishes the .NET Core runtime with your application so the runtime doesn't nee
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 
-Publishes the application for a given runtime. This is used when creating a [self-contained deployment (SCD)](../deploying/index.md#self-contained-deployments-scd). For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). Default is to publish a [framework-dependent deployment (FDD)](../deploying/index.md#framework-dependent-deployments-fdd).
+Publishes the application for a given runtime. This is used when creating a [self-contained deployment (SCD)](../deploying/index.md#publish-self-contained). For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). Default is to publish a [framework-dependent deployment (FDD)](../deploying/index.md#publish-runtime-dependent).
 
 `-v|--verbosity <LEVEL>`
 
@@ -119,9 +119,9 @@ Defines the version suffix to replace the asterisk (`*`) in the version field of
 
 # [.NET Core 2.0](#tab/netcore20)
 
-`-c|--configuration {Debug|Release}`
+`-c|--configuration <CONFIGURATION>`
 
-Defines the build configuration. The default value is `Debug`.
+Defines the build configuration. The default for most projects is `Debug`, but you can override the build configuration settings in your project.
 
 `-f|--framework <FRAMEWORK>`
 
@@ -158,7 +158,7 @@ Publishes the .NET Core runtime with your application so the runtime doesn't nee
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 
-Publishes the application for a given runtime. This is used when creating a [self-contained deployment (SCD)](../deploying/index.md#self-contained-deployments-scd). For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). Default is to publish a [framework-dependent deployment (FDD)](../deploying/index.md#framework-dependent-deployments-fdd).
+Publishes the application for a given runtime. This is used when creating a [self-contained deployment (SCD)](../deploying/index.md#publish-self-contained). For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). Default is to publish a [framework-dependent deployment (FDD)](../deploying/index.md#publish-runtime-dependent).
 
 `-v|--verbosity <LEVEL>`
 
@@ -170,9 +170,9 @@ Defines the version suffix to replace the asterisk (`*`) in the version field of
 
 # [.NET Core 1.x](#tab/netcore1x)
 
-`-c|--configuration {Debug|Release}`
+`-c|--configuration <CONFIGURATION>`
 
-Defines the build configuration. The default value is `Debug`.
+Defines the build configuration. The default for most projects is `Debug`, but you can override the build configuration settings in your project.
 
 `-f|--framework <FRAMEWORK>`
 
@@ -193,7 +193,7 @@ If the path is relative, the output directory generated is relative to the proje
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 
-Publishes the application for a given runtime. This is used when creating a [self-contained deployment (SCD)](../deploying/index.md#self-contained-deployments-scd). For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). Default is to publish a [framework-dependent deployment (FDD)](../deploying/index.md#framework-dependent-deployments-fdd).
+Publishes the application for a given runtime. This is used when creating a [self-contained deployment (SCD)](../deploying/index.md#publish-self-contained). For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). Default is to publish a [framework-dependent deployment (FDD)](../deploying/index.md#publish-runtime-dependent).
 
 `-v|--verbosity <LEVEL>`
 

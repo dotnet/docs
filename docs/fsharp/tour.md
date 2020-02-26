@@ -135,7 +135,7 @@ Something you may have noticed is the use of the `_` pattern.  This is known as 
 
 In the following example, the `_` case is used when a parse operation fails.
 
-[!code-fsharp[PatternMatching](~/samples/snippets/fsharp/tour.fs#L744-L762)
+[!code-fsharp[PatternMatching](~/samples/snippets/fsharp/tour.fs#L744-L762)]
 
 [Active Patterns](./language-reference/active-patterns.md) are another powerful construct to use with pattern matching.  They allow you to partition input data into custom forms, decomposing them at the pattern match call site.  They can also be parameterized, thus allowing to define the partition as a function.  Expanding the previous example to support Active Patterns looks something like this:
 

@@ -1,15 +1,11 @@
 ---
 title: dotnet pack command
 description: The dotnet pack command creates NuGet packages for your .NET Core project.
-ms.date: 08/08/2019
+ms.date: 02/14/2020
 ---
 # dotnet pack
 
-**This article applies to:** ✔️ .NET Core 1.x SDK and later versions
-
-<!-- todo: uncomment when all CLI commands are reviewed
-[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
--->
+**This article applies to:** ✔️ .NET Core 2.x SDK and later versions
 
 ## Name
 
@@ -57,13 +53,13 @@ Web projects aren't packable by default. To override the default behavior, add t
 
 ## Options
 
-- **`-c|--configuration {Debug|Release}`**
+- **`-c|--configuration <CONFIGURATION>`**
 
-  Defines the build configuration. The default value is `Debug`.
+  Defines the build configuration. The default for most projects is `Debug`, but you can override the build configuration settings in your project.
 
 - **`--force`**
 
-  Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file. Option available since .NET Core 2.0 SDK.
+  Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
 
 - **`-h|--help`**
 
@@ -87,11 +83,11 @@ Web projects aren't packable by default. To override the default behavior, add t
 
 - **`--no-dependencies`**
 
-  Ignores project-to-project references and only restores the root project. Option available since .NET Core 2.0 SDK.
+  Ignores project-to-project references and only restores the root project.
 
 - **`--no-restore`**
 
-  Doesn't execute an implicit restore when running the command. Option available since .NET Core 2.0 SDK.
+  Doesn't execute an implicit restore when running the command.
 
 - **`--nologo`**
 
@@ -103,7 +99,7 @@ Web projects aren't packable by default. To override the default behavior, add t
 
 - **`--runtime <RUNTIME_IDENTIFIER>`**
 
-  Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md). Option available since .NET Core 2.0 SDK.
+  Specifies the target runtime to restore packages for. For a list of Runtime Identifiers (RIDs), see the [RID catalog](../rid-catalog.md).
 
 - **`-s|--serviceable`**
 
@@ -161,7 +157,7 @@ Web projects aren't packable by default. To override the default behavior, add t
   dotnet pack -p:TargetFrameworks=net45
   ```
 
-- Pack the project and use a specific runtime (Windows 10) for the restore operation (.NET Core SDK 2.0 and later versions):
+- Pack the project and use a specific runtime (Windows 10) for the restore operation:
 
   ```dotnetcli
   dotnet pack --runtime win10-x64

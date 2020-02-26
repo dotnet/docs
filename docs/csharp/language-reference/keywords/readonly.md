@@ -48,7 +48,7 @@ You can assign a value to a `readonly` field only in the following contexts:
 These constructor contexts are also the only contexts in which it's valid to pass a `readonly` field as an [out](out-parameter-modifier.md) or [ref](ref.md) parameter.
 
 > [!NOTE]
-> The `readonly` keyword is different from the [const](const.md) keyword. A `const` field can only be initialized at the declaration of the field. A `readonly` field can be assigned multiple times in the field declaration and in any constructor. Therefore, `readonly` fields can have different values depending on the constructor used. Also, while a `const` field is a compile-time constant, the `readonly` field can be used for runtime constants as in the following example:
+> The `readonly` keyword is different from the [const](const.md) keyword. A `const` field can only be initialized at the declaration of the field. A `readonly` field can be assigned multiple times in the field declaration and in any constructor. Therefore, `readonly` fields can have different values depending on the constructor used. Also, while a `const` field is a compile-time constant, the `readonly` field can be used for run-time constants as in the following example:
 >
 > ```csharp
 > public static readonly uint timeStamp = (uint)DateTime.Now.Ticks;
@@ -64,7 +64,7 @@ p2.y = 66;        // Error
 
 you'll get the compiler error message:
 
-`A readonly field cannot be assigned to (except in a constructor or a variable initializer)`
+**A readonly field cannot be assigned to (except in a constructor or a variable initializer)**
 
 ## Readonly struct example
 

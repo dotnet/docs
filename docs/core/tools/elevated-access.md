@@ -25,7 +25,7 @@ The following instructions demonstrate the recommended way to install, run, and 
 
 # [Windows](#tab/windows)
 
-### Install the global tool
+### Install the tool
 
 If the folder `%ProgramFiles%\dotnet-tools` already exists, do the following to check whether the "Users" group has permission to write or modify that directory:
 
@@ -87,14 +87,14 @@ During development, you may need elevated access to test your application. This 
 
 - Using generated executable (it provides the best startup performance):
 
-   ```bash
+   ```dotnetcli
    dotnet build
    sudo ./bin/Debug/netcoreapp3.0/APPLICATIONNAME
    ```
     
 - Using the [dotnet run](dotnet-run.md) command with the `—no-build` flag to avoid generating new binaries:
 
-   ```bash
+   ```dotnetcli
    dotnet build
    sudo dotnet run --no-build
    ```

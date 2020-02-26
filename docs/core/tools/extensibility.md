@@ -28,7 +28,7 @@ The three extensibility mechanisms outlined above are not exclusive. You can use
 depends largely on the goal you are trying to achieve with your extension.
 
 ## Per-project based extensibility
-Per-project tools are [framework-dependent deployments](../deploying/index.md#framework-dependent-deployments-fdd) that are distributed as NuGet packages. Tools are only available in the context of the project that references them and for which they are restored. Invocation outside of the context of the project (for example, outside of the directory that contains the project) will fail because the command cannot be found.
+Per-project tools are [framework-dependent deployments](../deploying/index.md#publish-runtime-dependent) that are distributed as NuGet packages. Tools are only available in the context of the project that references them and for which they are restored. Invocation outside of the context of the project (for example, outside of the directory that contains the project) will fail because the command cannot be found.
 
 These tools are perfect for build servers, since nothing outside of the project file is needed. The build process
 runs restore for the project it builds and tools will be available. Language projects, such as F#, are also in this

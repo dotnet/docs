@@ -42,5 +42,6 @@ The following tutorials are available for learning about .NET Core.
 - [Developing Libraries with Cross Platform Tools](libraries.md)
 - [Hosting .NET Core from native code](netcore-hosting.md)
 - [Create templates for the CLI](cli-templates-create-item-template.md)
+- [Create and use tools for the CLI](../tools/global-tools-how-to-create.md)
 
 For tutorials about developing ASP.NET Core web applications, see the [ASP.NET Core documentation](/aspnet/core/).

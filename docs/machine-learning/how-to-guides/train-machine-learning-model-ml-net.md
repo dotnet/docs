@@ -135,7 +135,7 @@ By default, when data is processed, it is lazily loaded or streamed which means 
 
 To cache data outside of an [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601), use [`Cache`](xref:Microsoft.ML.DataOperationsCatalog.Cache%2A).
 
-The following snippet takes an [`IDataView`](xref:xref:Microsoft.ML.IDataView) called `data` with the `HousingData` schema and caches it all of the columns.
+The following snippet takes an [`IDataView`](xref:Microsoft.ML.IDataView) called `data` with the `HousingData` schema and caches it all of the columns.
 
 ```csharp
 IDataView cachedData = mlContext.Data.Cache(data);

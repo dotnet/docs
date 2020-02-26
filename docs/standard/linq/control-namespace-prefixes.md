@@ -1,5 +1,6 @@
 ---
 title: "How to control namespace prefixes - LINQ to XML"
+description: Learn how to control namespace prefixes when serializing an XML tree.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"
@@ -9,7 +10,7 @@ ms.assetid: 64de5186-b81a-4ddd-8327-8693df59a01b
 
 # How to control namespace prefixes (LINQ to XML)
 
-This article describes how to control namespace prefixes when serializing an XML tree.
+This article describes how to control namespace prefixes when serializing an XML tree in C# and Visual Basic.
 
 In many situations, it is not necessary to control namespace prefixes. However, certain XML programming tools require it. For example, you might be manipulating an XSLT style sheet or a XAML document that contains embedded XPath expressions that refer to specific namespace prefixes. In such a case, it is important that the document be serialized with those prefixes. This is a common reason for controlling namespace prefixes.
 

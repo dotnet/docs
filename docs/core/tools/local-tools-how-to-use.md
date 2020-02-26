@@ -19,7 +19,7 @@ This tutorial teaches you how to install and use a local tool. You use a tool th
 
 ## Create a manifest file
 
-To install a tool for local access only (for the current directory and subdirectories), it has to be added to a manifest file. 
+To install a tool for local access only (for the current directory and subdirectories), it has to be added to a manifest file.
 
 From the *botsay-\<name>* folder, navigate up one level to the *repository* folder:
 
@@ -126,7 +126,7 @@ You typically install a local tool in the root directory of the repository. Afte
 
 1. Save your changes.
 
-   Making this change is the same as getting the latest version from the repository after someone else installed the package `dotnetsay` for the project directory. 
+   Making this change is the same as getting the latest version from the repository after someone else installed the package `dotnetsay` for the project directory.
 
 1. Run the `dotnet tool restore` command.
 

@@ -149,7 +149,7 @@ Note that you assert the value 42 is not equal to 19+23 (or 42) when you first c
 From the *golden* folder, execute the following commands:
 
 ```dotnetcli
-dotnet restore 
+dotnet restore
 dotnet test test-library/test-library.csproj
 ```
 

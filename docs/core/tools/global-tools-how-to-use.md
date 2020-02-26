@@ -24,7 +24,7 @@ This tutorial teaches you how to install and use a global tool. You use a tool t
 
    The `--global` parameter tells the .NET Core CLI to install the tool binaries in a default location that is automatically added to the PATH environment variable.
 
-   The `--add-source` parameter tells the .NET Core CLI to temporarily use the *./nupkg* directory as an additional source feed for NuGet packages. You gave your package a unique name to make sure that it will only be found in the *./nupkg* directory, not on the Nuget.org site. 
+   The `--add-source` parameter tells the .NET Core CLI to temporarily use the *./nupkg* directory as an additional source feed for NuGet packages. You gave your package a unique name to make sure that it will only be found in the *./nupkg* directory, not on the Nuget.org site.
 
    The output shows the command used to call the tool and the version installed:
 

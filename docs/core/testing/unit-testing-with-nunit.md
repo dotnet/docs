@@ -22,7 +22,7 @@ Open a shell window. Create a directory called *unit-testing-using-nunit* to hol
 ```dotnetcli
 dotnet new sln
 ```
- 
+
 Next, create a *PrimeService* directory. The following outline shows the directory and file structure so far:
 
 ```console
@@ -131,11 +131,11 @@ namespace Prime.UnitTests.Services
 
             Assert.IsFalse(result, "1 should not be prime");
         }
-        
+
         /*
         More tests
         */
-        
+
         private PrimeService CreatePrimeService()
         {
              return new PrimeService();

@@ -27,7 +27,7 @@ Type: **'T -&gt; 'U**
 A function to transform items from the input sequence into comparable keys.
 
 *source*
-Type: [seq](https://msdn.microsoft.com/library/2f0c87c6-8a0d-4d33-92a6-10d1d037ce75)**&lt;'T&gt;**
+Type: [seq](collections.seq['t]-type-abbreviation-[fsharp].md)**&lt;'T&gt;**
 
 The input sequence.
 
@@ -35,8 +35,8 @@ The input sequence.
 
 |Exception|Condition|
 |----|----|
-|[ArgumentException](https://msdn.microsoft.com/en-us/library/system.argumentexception.aspx)|Thrown when the input sequence is empty.|
-|[ArgumentNullException](https://msdn.microsoft.com/library/system.argumentnullexception.aspx)|Thrown when the input sequence is null.|
+|[ArgumentException](https://docs.microsoft.com/dotnet/api/system.argumentexception)|Thrown when the input sequence is empty.|
+|[ArgumentNullException](https://docs.microsoft.com/dotnet/api/system.argumentnullexception)|Thrown when the input sequence is null.|
 
 ## Return Value
 

@@ -129,11 +129,11 @@ var UserDefinedColumnSdcaEstimator = mlContext.Regression.Trainers.Sdca(labelCol
 
 ## Caching data
 
-By default, when data is processed, it is lazily loaded or streamed which means that estimators may iterate over data multiple times. Therefore, caching is recommended for datasets that fit into memory.
+By default, when data is processed, it is lazily loaded or streamed which means that estimators may iterate over data multiple times. Therefore, caching is recommended for datasets that fit into memory. The data can be cached as part of an [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) as well as outside it. In one-time scenarios when there is no data preparation required or the data won't immediately be used by trainers, cache outside of an [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601). Otherwise, include the cache as part of the [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601).
 
 ### Caching outside an EstimatorChain
 
-In cases where you want to cache data outside of an [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601), such as when it's loaded into an [`IDataView`](xref:xref:Microsoft.ML.IDataView) or there is no data preparation needed, use [`Cache`](xref:Microsoft.ML.DataOperationsCatalog.Cache%2A).
+To cache data outside of an [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601), use [`Cache`](xref:Microsoft.ML.DataOperationsCatalog.Cache%2A).
 
 The following snippet takes an [`IDataView`](xref:xref:Microsoft.ML.IDataView) called `data` with the `HousingData` schema and caches it all of the columns.
 
@@ -145,7 +145,9 @@ Caching occurs on a per-column basis and only takes place the first time a colum
 
 ### Caching as part of an EstimatorChain
 
-When you want to make caching part of an [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601), use the [`AppendCacheCheckpoint`](xref:Microsoft.ML.Data.EstimatorChain%601.AppendCacheCheckpoint%2A). Using the following data preparation [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601), adding [`AppendCacheCheckpoint`](xref:Microsoft.ML.Data.EstimatorChain%601.AppendCacheCheckpoint%2A) at the end caches the results of the previous estimators for later use by subsequent estimators.
+When you want to make caching part of an [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601), use the [`AppendCacheCheckpoint`](xref:Microsoft.ML.Data.EstimatorChain%601.AppendCacheCheckpoint%2A). An additional benefit of caching as part of an [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601) is it can be serialized and saved for later use.
+
+Using the following data preparation [`EstimatorChain`](xref:Microsoft.ML.Data.EstimatorChain%601), adding [`AppendCacheCheckpoint`](xref:Microsoft.ML.Data.EstimatorChain%601.AppendCacheCheckpoint%2A) at the end caches the results of the previous estimators for later use by subsequent estimators.
 
 ```csharp
 // 1. Concatenate Size and Historical into a single feature vector output to a new column called Features
@@ -173,7 +175,7 @@ var trainedModel = sdcaEstimator.Fit(transformedTrainingData);
 
 ## Extract model parameters
 
-After the model has been trained, extract the learned [`ModelParameters`](xref:Microsoft.ML.Trainers.ModelParametersBase%601) for inspection or re-training. The [`LinearRegressionModelParameters`](xref:Microsoft.ML.Trainers.LinearRegressionModelParameters) provide the bias and learned coefficients or weights of the trained model.
+After the model has been trained, extract the learned [`ModelParameters`](xref:Microsoft.ML.Trainers.ModelParametersBase%601) for inspection or retraining. The [`LinearRegressionModelParameters`](xref:Microsoft.ML.Trainers.LinearRegressionModelParameters) provide the bias and learned coefficients or weights of the trained model.
 
 ```csharp
 var trainedModelParameters = trainedModel.Model as LinearRegressionModelParameters;

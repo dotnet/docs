@@ -38,4 +38,4 @@ ms.assetid: a8edb32c-118d-4f31-b6e6-8899082b504b
 - <xref:System.Windows.Controls.Primitives.ToolBarPanel>
 - <xref:System.Windows.Controls.Primitives.ToolBarOverflowPanel>
 - [Style Controls on a ToolBar](how-to-style-controls-on-a-toolbar.md)
-- [WPF Controls Gallery Sample](https://go.microsoft.com/fwlink/?LinkID=160053)
+- [WPF Controls Gallery Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Getting%20Started/ControlsAndLayout)

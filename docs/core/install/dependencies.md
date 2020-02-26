@@ -184,7 +184,7 @@ For more information about how to install .NET Core 3.0 on ARM64, see [Installin
 | Oracle Linux                   |  7                      | x64 |
 | Fedora                         |  29, 30                 | x64 |
 | Debian                         |  9                      | x64, ARM32 |
-| Ubuntu                         |  16.04, 18.04, 18.10, 19.04    | x64, ARM32 |
+| Ubuntu                         |  16.04, 18.04, 18.10    | x64, ARM32 |
 | Linux Mint                     |  17, 18                 | x64 |
 | openSUSE                       |  15+                    | x64 |
 | SUSE Enterprise Linux (SLES)   |  12 SP2+                | x64 |

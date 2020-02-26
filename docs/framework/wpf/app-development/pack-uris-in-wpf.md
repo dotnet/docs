@@ -38,7 +38,7 @@ To provide a consistent mechanism for identifying and loading these types of fil
 
 ## The Pack URI Scheme
 
-The pack URI scheme is used by the [Open Packaging Conventions](https://go.microsoft.com/fwlink/?LinkID=71255) (OPC) specification, which describes a model for organizing and identifying content. The key elements of this model are packages and parts, where a *package* is a logical container for one or more logical *parts*. The following figure illustrates this concept.
+The pack URI scheme is used by the [Open Packaging Conventions](https://www.ecma-international.org/publications/standards/Ecma-376.htm) (OPC) specification, which describes a model for organizing and identifying content. The key elements of this model are packages and parts, where a *package* is a logical container for one or more logical *parts*. The following figure illustrates this concept.
 
 ![Package and Parts diagram](./media/pack-uris-in-wpf/wpf-package-parts-diagram.png)
 

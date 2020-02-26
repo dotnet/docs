@@ -8,7 +8,7 @@ ms.assetid: b7cf4ff2-0eb7-4e5c-93d5-b2196b4f5d89
 ---
 # Structs (C# Programming Guide)
 
-Structs are defined by using the [struct](../../language-reference/keywords/struct.md) keyword, for example:  
+Structs are defined by using the [struct](../../language-reference/builtin-types/struct.md) keyword, for example:  
   
  [!code-csharp[csProgGuideObjects#39](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#39)]  
   

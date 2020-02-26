@@ -2,8 +2,7 @@
 title: Storing application secrets safely during development
 description: Security in .NET Microservices and Web Applications - Don't store your application secrets like passwords, connection strings or API keys in source control, understand the options you can use in ASP.NET Core, in particular you have to understand how to handle "user secrets".
 author: mjrousos
-ms.author: wiwagn
-ms.date: 10/19/2018
+ms.date: 01/30/2020
 ---
 # Store application secrets safely during development
 
@@ -33,7 +32,7 @@ Note that environment variables are commonly stored as plain text, so if the mac
 
 ## Store secrets with the ASP.NET Core Secret Manager
 
-The ASP.NET Core [Secret Manager](/aspnet/core/security/app-secrets#secret-manager) tool provides another method of keeping secrets out of source code. To use the Secret Manager tool, install the package **Microsoft.Extensions.Configuration.SecretManager** in your project file. Once that dependency is present and has been restored, the `dotnet user-secrets` command can be used to set the value of secrets from the command line. These secrets will be stored in a JSON file in the user’s profile directory (details vary by OS), away from source code.
+The ASP.NET Core [Secret Manager](/aspnet/core/security/app-secrets#secret-manager) tool provides another method of keeping secrets out of source code **during development**. To use the Secret Manager tool, install the package **Microsoft.Extensions.Configuration.SecretManager** in your project file. Once that dependency is present and has been restored, the `dotnet user-secrets` command can be used to set the value of secrets from the command line. These secrets will be stored in a JSON file in the user’s profile directory (details vary by OS), away from source code.
 
 Secrets set by the Secret Manager tool are organized by the `UserSecretsId` property of the project that's using the secrets. Therefore, you must be sure to set the UserSecretsId property in your project file, as shown in the snippet below. The default value is a GUID assigned by Visual Studio, but the actual string is not important as long as it's unique in your computer.
 

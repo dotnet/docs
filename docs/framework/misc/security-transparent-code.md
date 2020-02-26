@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "transparent code"
   - "security-transparent code"
 ms.assetid: 4f3dd841-82f7-4659-aab0-6d2db2166c65
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Security-Transparent Code
 

@@ -95,5 +95,5 @@ The example produces this output:
 
 ## See also
 
-- [Create XML Trees in C#](create-xml-trees.md)
-- [XML literals in Visual Basic](xml-literals.md)
+- [Create XML Trees in C# (LINQ to XML)](create-xml-trees.md)
+- [XML literals in Visual Basic (LINQ to XML)](xml-literals.md)

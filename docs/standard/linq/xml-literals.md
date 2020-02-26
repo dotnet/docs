@@ -201,4 +201,4 @@ Child2 was attached
 
 ## See also
 
-- [Functional construction](functional-construction.md)
+- [Functional construction (LINQ to XML)](functional-construction.md)

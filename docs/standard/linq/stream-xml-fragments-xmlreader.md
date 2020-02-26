@@ -10,7 +10,7 @@ ms.assetid: 4a8f0e45-768a-42e2-bc5f-68bdf0e0a726
 
 # How to stream XML fragments from an XmlReader (LINQ to XML)
 
-When you have to process large XML files, it might not be feasible to load the whole XML tree into memory. This article shows how to stream fragments using an <xref:System.Xml.XmlReader>.
+When you have to process large XML files, it might not be feasible to load the whole XML tree into memory. This article shows how to stream fragments using an <xref:System.Xml.XmlReader> in C# and Visual Basic.
 
 One of the most effective ways to use an <xref:System.Xml.XmlReader> to read <xref:System.Xml.Linq.XElement> objects is to write your own custom axis method. An axis method typically returns a collection such as <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, as shown in the example in this article. In the custom axis method, after you create the XML fragment by calling the <xref:System.Xml.Linq.XNode.ReadFrom%2A> method, return the collection using `yield return`. This provides deferred execution semantics to your custom axis method.
 

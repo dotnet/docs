@@ -1,5 +1,6 @@
 ---
 title: "How to stream XML fragments from an XmlReader - LINQ to XML"
+description: Learn how to stream XML fragments using an XmlReader when loading the whole XML tree into memory is not feasible.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"
@@ -193,3 +194,7 @@ ccc
 ```
 
 The technique used in this example maintains a small memory footprint even for millions of `Child` elements.
+
+## See also
+
+- [Parse XML](parse-string)

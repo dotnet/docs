@@ -39,5 +39,5 @@ Both of the previous examples are equivalent to the following:
 [!code-csharp[ArrayAssignment](../../../samples/snippets/csharp/tour/arrays/Program.cs#L49-L53)]
 
 >[!div class="step-by-step"]
->[Previous](structs.md)
+>[Previous](classes-and-objects.md)
 >[Next](interfaces.md)

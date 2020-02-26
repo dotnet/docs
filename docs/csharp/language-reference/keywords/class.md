@@ -65,9 +65,9 @@ A class can contain declarations of the following members:
 
 - [Interfaces](../../programming-guide/interfaces/index.md)
 
-- [Structs](../../programming-guide/classes-and-structs/structs.md)
+- [Structure types](../builtin-types/struct.md)
 
-- [Enumerations](../builtin-types/enum.md)
+- [Enumeration types](../builtin-types/enum.md)
 
 ## Example
 

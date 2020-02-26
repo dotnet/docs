@@ -1356,8 +1356,9 @@
         - name: Enumeration types
           href: language-reference/builtin-types/enum.md
           displayName: "enum, bit flags, bit field"
-        - name: struct
-          href: language-reference/keywords/struct.md
+        - name: Structure types
+          href: language-reference/builtin-types/struct.md
+          displayName: "struct type"
         - name: Nullable value types
           href: language-reference/builtin-types/nullable-value-types.md
           displayName: "? token, ? symbol"

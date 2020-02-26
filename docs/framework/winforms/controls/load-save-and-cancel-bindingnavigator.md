@@ -29,7 +29,7 @@ In the following procedure, a <xref:System.Windows.Forms.TextBox> control is bou
 
 5. Select the <xref:System.Windows.Forms.BindingNavigator> control.
 
-6. Click the smart tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) so the **BindingNavigator Tasks** dialog appears and select **Edit Items**.
+6. Click the designer actions glyph (![Small black arrow](./media/designer-actions-glyph.gif)) so the **BindingNavigator Tasks** dialog appears and select **Edit Items**.
 
      The **Items Collection Editor** appears.
 

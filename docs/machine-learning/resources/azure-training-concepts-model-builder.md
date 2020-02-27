@@ -2,7 +2,7 @@
 title: Model Builder Azure Training Resources
 description: A guide of resources for Azure Machine Learning
 ms.topic: reference
-ms.date: 02/26/2020
+ms.date: 02/27/2020
 ms.author: luquinta
 author: luisquintanilla
 ---
@@ -60,21 +60,21 @@ Once training is complete, two projects are added to your solution with the foll
   - bestModelMap.json: A list of categories used when making predictions to map the model output to a text category.
   - MLModel.zip: A serialized version of the ML.NET prediction pipeline that uses the serialized version of the model *bestModel.onnx* to make predictions and maps outputs using the `bestModelMap.json` file.
 
-## Consume the model
+## Use the machine learning model
 
 The `ModelInput` and `ModelOutput` classes in the *Model* project define the schema of the model's expected input and output respectively.
 
 In an image classification scenario, the `ModelInput` contains two columns:
 
 - `ImageSource`: The string path of the image location.
-- `Label`: The actual category the image belongs to.
+- `Label`: The actual category the image belongs to. `Label` is only used as an input when training.
 
-  When making predictions, only the `ImageSource` has to be provided since the `Label` is the column to predict.  
+When making predictions, only provide the `ImageSource` since the `Label` is the column to predict.
 
 The `ModelOutput` contains two columns:
 
 - `Prediction`: The image's predicted category.
-- `Score`: The list of probabilities for all classes (the highest belongs to the `Prediction`).
+- `Score`: The list of probabilities for all categories (the highest belongs to the `Prediction`).
 
 ## Troubleshooting
 
@@ -82,5 +82,5 @@ The `ModelOutput` contains two columns:
 
 If an error occurs during Azure Machine Learning compute creation, the compute resource may still exist, in an errored state. If you try to re-create the compute resource with the same name, the operation fails. To fix this error, either:
 
-* Create the new compute with a different name
-* Go to the Azure portal, and remove the original compute resource
+- Create the new compute with a different name
+- Go to the Azure portal, and remove the original compute resource

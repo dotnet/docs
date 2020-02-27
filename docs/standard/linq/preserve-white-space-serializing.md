@@ -12,7 +12,7 @@ A common scenario is to read indented XML, create an in-memory XML tree without 
 
 Another common scenario is to read and modify XML that has already been intentionally indented. You might not want to change this indentation in any way. To do this in LINQ to XML, you preserve white space when you load or parse the XML and disable formatting when you serialize the XML.
 
-## White space behavior of methods that serialize XML trees
+## White-space behavior of methods that serialize XML trees
 
 The following methods in the <xref:System.Xml.Linq.XElement> and <xref:System.Xml.Linq.XDocument> classes serialize an XML tree. You can serialize an XML tree to a file, a <xref:System.IO.TextReader>, or an <xref:System.Xml.XmlReader>. The `ToString` method serializes to a string.
 

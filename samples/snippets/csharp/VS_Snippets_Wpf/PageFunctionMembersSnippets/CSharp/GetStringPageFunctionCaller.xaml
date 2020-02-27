@@ -1,0 +1,9 @@
+﻿<Page x:Class="CSharp.GetStringPageFunctionCaller"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="GetStringPageFunctionCaller"
+    >
+    <Grid>
+      <Button Name="callPageFunctionButton" Click="callPageFunctionButton_Click">Call Page Function</Button>
+    </Grid>
+</Page>

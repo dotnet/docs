@@ -1,0 +1,40 @@
+﻿<Window x:Class="StrokeCollectionEraseMethods.Window2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Name="StrokeCollectionEraseMethodsWindow2"
+    >
+    <DockPanel Name="root">
+
+        <StackPanel  Background="DarkSlateBlue">
+            <Button Name="switchMode" MinHeight="20" MaxHeight="50" MinWidth="40"
+              Click="SwitchMode_Click">Select</Button>
+            <Button Name="copyStrokes" MinHeight="20" MaxHeight="50" MinWidth="40"
+              Click="CopyStrokes_Click">Copy Strokes</Button>
+            <Button Name="deleteStrokes" MinHeight="20" MaxHeight="50" MinWidth="40"
+              Click="DeleteStrokes_Click">Delete Selected Strokes</Button>
+            <Button Name="replaceStrokes" MinHeight="20" MaxHeight="50" MinWidth="40"
+              Click="ReplaceStrokes_Click">Replace Strokes</Button>
+            <Button Name="insertStrokes" MinHeight="20" MaxHeight="50" MinWidth="40"
+              Click="InsertStrokes_Click">Insert Strokes</Button>
+            <Button Name="moveStrokes" MinHeight="20" MaxHeight="50" MinWidth="40"
+              Click="MoveStrokes_Click">Move Strokes</Button>
+            <Button Name="saveStrokes" MinHeight="20" MaxHeight="50" MinWidth="40"
+              Click="SaveStrokes_Click">Save Strokes</Button>
+            <Button Name="loadStrokes" MinHeight="20" MaxHeight="50" MinWidth="40"
+              Click="LoadStrokes_Click">Load Strokes</Button>
+            <Button Name="addTimestamp" MinHeight="20" MaxHeight="50" MinWidth="40"
+              Click="AddTimestamp_Click">Add Timestamp</Button>
+            <Button Name="getTimestamp" MinHeight="20" MaxHeight="50" MinWidth="40"
+              Click="GetTimestamp_Click">Get Timestamp</Button>
+            <Button Name="addStrokesBtn" MinHeight="20" MaxHeight="50" MinWidth="40"
+              Click="AddStrokes_Click">Add Strokes</Button>
+            <Button Name="moveFirstStroke" MinHeight="20" MaxHeight="50" MinWidth="40"
+              Click="ChangeColorOfFirstStroke_Click">Change color of first Stroke</Button>
+            <Button Name="changeColors" MinHeight="20" MaxHeight="50" MinWidth="40"
+              Click="ChangeColors_Click">Change color of all strokes</Button>
+          <Button Name="getBoundsButton" MinHeight="20" MaxHeight="50" MinWidth="40">	get bounds</Button>
+        </StackPanel>
+        <InkCanvas DockPanel.Dock="Top" Name="inkCanvas1" MinHeight="200"></InkCanvas>
+        <InkCanvas Name="inkCanvas2" Background="Green"></InkCanvas>
+    </DockPanel>
+</Window>

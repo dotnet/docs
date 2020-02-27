@@ -1,0 +1,28 @@
+<!-- <SnippetLineStackingStrategyExampleWholePage> -->
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <StackPanel>
+    
+    <!-- This TextBlock has a LineStackingStrategy set to "MaxHeight". -->
+    <TextBlock LineStackingStrategy="MaxHeight" LineHeight="10" Width="500" TextWrapping="Wrap" 
+     Background="Yellow">
+      Use the <Span FontSize="30">LineStackingStrategy</Span> property to determine how a line box is
+      created for each line. A value of <Span FontSize="20">MaxHeight</Span> specifies that the stack
+      height is the smallest value that contains all the inline elements on that line when those
+      elements are properly aligned. A value of <Span FontSize="20">BlockLineHeight</Span> specifies
+      that the stack height is determined by the block element LineHeight property value.
+    </TextBlock>
+
+    <!-- Here is the same TextBlock but the LineStackingStrategy is set to "BlockLineHeight". -->
+    <TextBlock LineStackingStrategy="BlockLineHeight" LineHeight="10" Width="500" TextWrapping="Wrap" 
+     Background="Blue" Margin="0,40,0,0">
+      Use the <Span FontSize="30">LineStackingStrategy</Span> property to determine how a line box is
+      created for each line. A value of <Span FontSize="20">MaxHeight</Span> specifies that the stack
+      height is the smallest value that contains all the inline elements on that line when those
+      elements are properly aligned. A value of <Span FontSize="20">BlockLineHeight</Span> specifies
+      that the stack height is determined by the block element LineHeight property value.
+    </TextBlock>
+
+  </StackPanel>
+</Page>
+<!-- </SnippetLineStackingStrategyExampleWholePage> -->

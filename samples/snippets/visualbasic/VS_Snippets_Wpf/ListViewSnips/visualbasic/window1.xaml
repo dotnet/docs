@@ -1,0 +1,145 @@
+<Window 
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  x:Class="ListViewSnips.Window1"
+  xmlns:namespc="clr-namespace:ListViewSnips"
+ >
+  <Window.Resources>
+    <namespc:BackgroundConverter x:Key="myConverter"/>
+    <namespc:ListViewItemStyleSelector x:Key="myStyleSelector"/>
+    <namespc:SelectFavoriteCityTemplate x:Key="FavoriteCityTemplateSelector"/>
+    <XmlDataProvider x:Key="EmployeeData" XPath="/EmployeeData">
+     <x:XData>
+      <EmployeeData xmlns="">
+        <Employee>
+          <FirstName>Jesper</FirstName>
+          <LastName>Aaberg</LastName>
+          <FavoriteCity>Tokyo</FavoriteCity>
+        </Employee>
+        <Employee>
+          <FirstName>Dominik</FirstName>
+          <LastName>Paiha</LastName>
+          <FavoriteCity>Cairo</FavoriteCity>
+        </Employee>
+        <Employee>
+          <FirstName>Yale</FirstName>
+          <LastName>Li</LastName>
+          <FavoriteCity>Paris</FavoriteCity>
+        </Employee>
+        <Employee>
+          <FirstName>Muru</FirstName>
+          <LastName>Subramani</LastName>
+          <FavoriteCity>Beijing</FavoriteCity>
+        </Employee>
+      </EmployeeData>
+     </x:XData>
+    </XmlDataProvider>
+
+    <DataTemplate x:Key="LastNameCellTemplate">
+      <TextBlock Text="{Binding XPath=LastName}"/>
+    </DataTemplate>
+
+    <DataTemplate x:Key="FavoriteCityCellTemplate">
+      <TextBlock Text="{Binding XPath=FavoriteCity}"/>
+    </DataTemplate>
+
+    <Style x:Key="myItemStyle" TargetType="{x:Type ListViewItem}">
+      <Setter Property="Background">
+        <Setter.Value>
+          <Binding RelativeSource="{RelativeSource Self}" 
+                   Converter="{StaticResource myConverter}"/>
+        </Setter.Value>
+      </Setter>
+    </Style>
+
+
+
+  </Window.Resources>
+  <StackPanel>
+    <ListView Name="myListView"/>
+      <ListView ItemsSource="{Binding Source={StaticResource EmployeeData}, 
+                             XPath=Employee}">
+      <ListView.View>
+        <GridView>
+          <GridViewColumn Header="First Name" 
+                          DisplayMemberBinding="{Binding XPath=FirstName}" />
+          <GridViewColumn Header="Last Name" 
+                          DisplayMemberBinding="{Binding XPath=LastName}" />
+          <GridViewColumn Header="Favorite City"
+                          DisplayMemberBinding="{Binding XPath=FavoriteCity}"/>
+        </GridView>
+      </ListView.View>
+    </ListView>
+    
+    <ListView>
+      <ListViewItem>My first item</ListViewItem>
+      <Button>My Special Button</Button>
+    </ListView>
+
+
+  <ListView ItemsSource="{Binding Source={StaticResource EmployeeData}, 
+                                          XPath=Employee}">
+    <ListView.View>       
+      <GridView>
+        <GridViewColumn Header="First Name"
+                 DisplayMemberBinding="{Binding XPath=FirstName}" />
+        <GridViewColumn Header="Last Name"  
+                 CellTemplate="{StaticResource LastNameCellTemplate}"/>
+        <GridViewColumn Header="Favorite City" 
+                 CellTemplateSelector="{DynamicResource 
+                                        FavoriteCityTemplateSelector}"/>
+      </GridView>
+    </ListView.View>    
+  </ListView>
+
+    <ListView Name="theListView" 
+              ItemsSource="{Binding Source={StaticResource EmployeeData}, 
+                                            XPath=Employee}"
+              ItemContainerStyle="{StaticResource myItemStyle}" >
+      <ListView.View>
+        <GridView>
+          <GridViewColumn DisplayMemberBinding="{Binding XPath=FirstName}" 
+                          Header="First Name" Width="120"/>
+          <GridViewColumn DisplayMemberBinding="{Binding XPath=LastName}" 
+                          Header="Last Name" Width="120"/>
+          <GridViewColumn DisplayMemberBinding="{Binding XPath=FavoriteCity}" 
+                          Header="Favorite City" Width="120"/>
+        </GridView>
+      </ListView.View>
+    </ListView>
+
+    <Button Click="Refresh"></Button>
+    <namespc:SubListView
+          ItemsSource="{Binding Source={StaticResource EmployeeData}, 
+                                            XPath=Employee}">
+      <namespc:SubListView.View>
+        <GridView>
+          <GridViewColumn DisplayMemberBinding="{Binding XPath=FirstName}" 
+                          Header="First Name" Width="120"/>
+          <GridViewColumn DisplayMemberBinding="{Binding XPath=LastName}" 
+                          Header="Last Name" Width="120"/>
+          <GridViewColumn DisplayMemberBinding="{Binding XPath=FavoriteCity}" 
+                          Header="Favorite City" Width="120"/>
+        </GridView>
+      </namespc:SubListView.View>
+    </namespc:SubListView>
+
+    <ListView 
+          ItemsSource="{Binding Source={StaticResource EmployeeData}, 
+                                            XPath=Employee}"
+          ItemContainerStyleSelector="{DynamicResource myStyleSelector}" >      
+      <ListView.View>
+        <GridView>
+          <GridViewColumn DisplayMemberBinding="{Binding XPath=FirstName}" 
+                          Header="First Name" Width="120"/>
+          <GridViewColumn DisplayMemberBinding="{Binding XPath=LastName}" 
+                          Header="Last Name" Width="120"/>
+          <GridViewColumn DisplayMemberBinding="{Binding XPath=FavoriteCity}" 
+                          Header="Favorite City" Width="120"/>
+        </GridView>
+      </ListView.View>
+    </ListView>
+
+
+  </StackPanel>
+</Window>

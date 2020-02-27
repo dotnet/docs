@@ -1,0 +1,24 @@
+<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  x:Class="Microsoft.Samples.CustomControls.SampleViewer"
+  xmlns:customControls="clr-namespace:Microsoft.Samples.CustomControls"
+  WindowTitle="ColorPicker"
+  Background="White"
+  Loaded="pageLoaded">
+  <ScrollViewer>
+    <StackPanel Name="mainPanel" Margin="20">
+
+
+      <Button Click="buttonClicked"   />
+
+      <Border BorderBrush="Orange" BorderThickness="2">
+        <customControls:ColorPicker x:Name="myColorPicker" 
+          Margin="20" />
+      </Border>
+
+
+
+    </StackPanel>
+  </ScrollViewer>
+</Page>

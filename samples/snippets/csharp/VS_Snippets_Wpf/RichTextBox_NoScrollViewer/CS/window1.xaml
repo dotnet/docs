@@ -1,0 +1,76 @@
+﻿<Window 
+  x:Class="SDKSample.Window1"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"    
+  Title="RichTextBox_NoScrollViewer" 
+  Width="320" Height="240"
+>
+  <!-- <Snippet_ControlTemplate> -->
+  <Window.Resources>
+    <Style x:Key="TextBoxNoScrollViewer" TargetType="{x:Type TextBoxBase}">
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="{x:Type TextBoxBase}">
+            <Border 
+              CornerRadius="2" 
+              Background="{TemplateBinding Background}" 
+              BorderThickness="{TemplateBinding BorderThickness}" 
+              BorderBrush="{TemplateBinding BorderBrush}"  
+            >
+              <!-- 
+              The control template for a TextBox or RichTextBox must
+              include an element tagged as the content host.  An element is 
+              tagged as the content host element when it has the special name
+              PART_ContentHost.  The content host element must be a ScrollViewer,
+              or an element that derives from Decorator.  
+              -->
+              <AdornerDecorator 
+                x:Name="PART_ContentHost"
+                Focusable="False" 
+              />
+            </Border>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+  </Window.Resources>
+  <!-- </Snippet_ControlTemplate> -->
+  
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition/>
+      <ColumnDefinition/>
+    </Grid.ColumnDefinitions>
+
+
+    <RichTextBox
+      Grid.Column="1"
+
+      VerticalScrollBarVisibility="Auto"
+      HorizontalScrollBarVisibility="Auto"
+    >
+      <FlowDocument>
+        <Paragraph>
+          Stock RichTextBox with a ScrollViewer content host.
+        </Paragraph>
+      </FlowDocument>
+    </RichTextBox>
+
+    <!-- <Snippet_RichTextBox> -->
+    <RichTextBox
+      Grid.Column="0"
+     
+      VerticalScrollBarVisibility="Auto"
+      HorizontalScrollBarVisibility="Auto"
+      
+      Style="{StaticResource TextBoxNoScrollViewer}"      
+    >
+      <FlowDocument>
+        <Paragraph>
+          RichTextBox styled not to use a ScrollViewer as the content host.
+        </Paragraph>
+      </FlowDocument>
+    </RichTextBox>
+    <!-- </Snippet_RichTextBox> -->
+  </Grid>
+</Window>

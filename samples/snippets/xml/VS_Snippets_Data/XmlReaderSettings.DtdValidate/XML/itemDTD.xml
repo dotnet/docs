@@ -1,0 +1,15 @@
+<!--<snippet2>-->
+<!--XML file using a DTD-->
+<!DOCTYPE store [
+  <!ELEMENT store (item)*> 
+  <!ELEMENT item (name,dept,price)>
+  <!ATTLIST item type CDATA #REQUIRED>
+  <!ELEMENT name (#PCDATA)>
+  <!ELEMENT price (#PCDATA)>]>
+<store>
+  <item type="supplies"  ISBN="2-3631-4">
+    <name>paint</name>
+    <price>16.95</price>
+  </item>
+</store>
+<!--</snippet2>-->

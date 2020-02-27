@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MenuClassCS", "MenuClassCS\", "{649E312A-C612-45B9-9619-1710E47908C0}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/MenuClassCS"
+		Debug.AspNetCompiler.PhysicalPath = "MenuClassCS\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\MenuClassCS\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/MenuClassCS"
+		Release.AspNetCompiler.PhysicalPath = "MenuClassCS\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\MenuClassCS\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51449"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "MenuClassVB", "MenuClassVB\", "{62D90316-D551-4C1D-9CF7-2AA151DE3C68}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/MenuClassVB"
+		Debug.AspNetCompiler.PhysicalPath = "MenuClassVB\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\MenuClassVB\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/MenuClassVB"
+		Release.AspNetCompiler.PhysicalPath = "MenuClassVB\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\MenuClassVB\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51450"
+		DefaultWebSiteLanguage = "Visual Basic"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{649E312A-C612-45B9-9619-1710E47908C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{649E312A-C612-45B9-9619-1710E47908C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62D90316-D551-4C1D-9CF7-2AA151DE3C68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62D90316-D551-4C1D-9CF7-2AA151DE3C68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

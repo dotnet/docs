@@ -1,0 +1,22 @@
+﻿<!--
+    You can find existing browser definitions at
+    <windir>\Microsoft.NET\Framework\<ver>\CONFIG\Browsers
+
+-->
+	<browsers>
+	<browser refID="IE">
+		<controlAdapters>
+			<adapter controlType="AspNet.Samples.SimpleLabel"
+                     adapterType="AspNet.Samples.ChtmlSimpleLabelAdapter" />
+		</controlAdapters>
+	</browser>
+	<browser refID="Default">
+		<controlAdapters>
+			<adapter controlType="AspNet.Samples.SimpleLabel"
+                     adapterType="AspNet.Samples.ChtmlSimpleLabelAdapter" />
+		</controlAdapters>
+	</browser>
+
+</browsers>
+
+	

@@ -1,0 +1,50 @@
+<StackPanel
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="TabControlEx.Pane1"
+>
+<TextBlock Margin="10, 0, 0, 10" FontSize = "20.0">Tab Control with Context Menus
+</TextBlock>
+
+<TextBlock Margin="10, 0, 0, 10" FontSize = "12.0">Each Tab Item has a Context Menu. 
+     Right click the Tab Items to see the Context Menus.
+</TextBlock>
+   
+<TabControl TabStripPlacement="Top" Margin="0, 0, 0, 10" Name="tabctrl">
+    <TabItem Name="backgroundcolor" Header="Choose a Background Color"> 
+    <TabItem.ContextMenu>
+    <ContextMenu MenuItem.Click="MyMenuHandler">
+         <MenuItem Header="Red" Name="red"/>
+         <MenuItem Header="Blue" Name="blue"/>
+         <MenuItem Header="Yellow" Name="yellow"/>
+    </ContextMenu>
+    </TabItem.ContextMenu>
+    <TabItem.Content>Some content about background colors.</TabItem.Content>
+    </TabItem>
+
+    <TabItem Name="foregroundcolor" Header="Choose a Foreground Color">                   
+    <TabItem.ContextMenu>
+    <ContextMenu MenuItem.Click="MyMenuHandler2">
+         <MenuItem Header="Green" Name="green"/>
+         <MenuItem Header="Purple" Name="purple"/>
+         <MenuItem Header="Crimson" Name="crimson"/>
+    </ContextMenu>
+    </TabItem.ContextMenu>
+    <TabItem.Content>Some content about foreground colors.</TabItem.Content>
+    </TabItem>
+
+    <TabItem Name="fontsize" Header="Choose a Font Size">
+    <TabItem.ContextMenu>
+    <ContextMenu MenuItem.Click="MyMenuHandler3">
+         <MenuItem Header="16" Name="sixteen"/>
+         <MenuItem Header="20" Name="twenty"/>
+         <MenuItem Header="24" Name="twentyfour"/>
+    </ContextMenu>
+    </TabItem.ContextMenu>
+    <TabItem.Content>Some content about font sizes.</TabItem.Content>
+    </TabItem>    
+
+    
+</TabControl> 
+</StackPanel>
+

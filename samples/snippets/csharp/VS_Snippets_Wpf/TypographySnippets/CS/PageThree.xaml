@@ -1,0 +1,16 @@
+﻿<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  >
+
+  <!-- <SnippetTypographySnippet3> -->
+  <FlowDocument FontFamily="Palatino Linotype" FontSize="24">
+      <Paragraph Typography.Capitals="SmallCaps" Typography.NumeralStyle="OldStyle">
+        Welcome to C#! . . . 14<LineBreak/>
+        Working with Variables, Operators, and Expressions . . . 29<LineBreak/>
+        Writing Methods and Applying Scope . . . 45
+      </Paragraph>
+  </FlowDocument>
+  <!-- </SnippetTypographySnippet3> -->
+
+</Page>

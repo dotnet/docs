@@ -1,0 +1,88 @@
+<Window x:Class="SdkSample.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="RightsManagedContentPublish SDK Sample" >
+
+  <Window.CommandBindings>
+    <CommandBinding Command="ApplicationCommands.Open"  Executed="OnOpen"  />
+    <CommandBinding Command="ApplicationCommands.Close" Executed="OnClose" />
+  </Window.CommandBindings>
+
+  <DockPanel>
+
+    <!-- MAIN MENU - File -->
+    <Menu DockPanel.Dock="Top">
+      <MenuItem Header="File">
+        <MenuItem Command="ApplicationCommands.Open" Header="Open..." />
+        <MenuItem Command="ApplicationCommands.Close"
+                  Name="menuFileClose" IsEnabled="False" />
+        <Separator />
+        <MenuItem Header="Rights..."  Name="menuFileRights"  IsEnabled="False"
+                  Click="OnRights" />
+        <MenuItem Header="Publish..." Name="menuFilePublish" IsEnabled="False"
+                  Click="OnPublish" />
+        <Separator />
+        <MenuItem Header="E_xit" Click="OnExit" />
+      </MenuItem><!--end:MenuItem Header="File"-->
+    </Menu><!--end:Menu Name="MainMenu"-->
+
+    <StackPanel DockPanel.Dock="Top" Background="LightGray">
+      <TextBlock Name="promptBlock" Margin="1" Padding="5" FontFamily="Verdana"
+                 Background="LemonChiffon">
+      </TextBlock>
+    </StackPanel>
+
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+      </Grid.RowDefinitions>
+
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="30*" />
+        <ColumnDefinition Width="Auto" />
+        <ColumnDefinition Width="70*" />
+      </Grid.ColumnDefinitions>
+
+      <Grid Grid.Column="0" Grid.Row="0" Background="SeaShell">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="50*" />
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="50*" />
+        </Grid.RowDefinitions>
+
+        <ScrollViewer Grid.Row="0" VerticalScrollBarVisibility="Auto">
+          <StackPanel Background="White">
+            <TextBlock Padding="3" FontWeight="Bold">
+              Status
+            </TextBlock>
+            <TextBlock Name="statusBlock" HorizontalAlignment="Stretch"
+                       Padding="3" TextWrapping="Wrap">
+            </TextBlock>
+          </StackPanel>
+        </ScrollViewer>
+
+        <GridSplitter Grid.Row="1" Background="LightGray"
+                      HorizontalAlignment="Stretch" VerticalAlignment="Center"
+                      ShowsPreview="True" />
+
+        <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Auto">
+          <StackPanel Background="SeaShell">
+            <TextBlock Name="rightsBlockTitle" Padding="3" FontWeight="Bold">
+              Rights
+            </TextBlock>
+            <TextBlock Name="rightsBlock" Padding="3" >
+            </TextBlock>
+          </StackPanel>
+        </ScrollViewer>
+      </Grid>
+
+      <GridSplitter Grid.Column="1" Background="LightGray" HorizontalAlignment="Center"
+                    VerticalAlignment="Stretch" ShowsPreview="True" />
+
+      <Image Grid.Column="2" Name="imageViewer">
+      </Image>
+      
+    </Grid>
+
+  </DockPanel>
+</Window>

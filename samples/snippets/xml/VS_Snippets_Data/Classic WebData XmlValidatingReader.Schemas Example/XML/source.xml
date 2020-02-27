@@ -1,0 +1,139 @@
+<!--<Snippet2>-->
+
+<?xml version='1.0'?>
+ <bookstore xmlns="urn:bookstore-schema">
+   <book genre="autobiography">
+     <title>The Autobiography of Benjamin Franklin</title>
+     <author>
+       <first-name>Benjamin</first-name>
+       <last-name>Franklin</last-name>
+     </author>
+     <price>8.99</price>
+   </book>
+   <book genre="novel">
+     <title>The Confidence Man</title>
+     <author>
+       <first-name>Herman</first-name>
+       <last-name>Melville</last-name>
+     </author>
+     <price>11.99</price>
+   </book>
+ </bookstore>
+<!--</Snippet2>-->
+<!--<Snippet3>-->
+
+<?xml version='1.0'?>
+ <bookstore xmlns="urn:bookstore-schema">
+   <book>
+     <author>
+       <first-name>Benjamin</first-name>
+       <last-name>Franklin</last-name>
+     </author>
+   </book>
+   <book genre="novel">
+     <title>The Confidence Man</title>
+     <author>
+       <first-name>Herman</first-name>
+       <last-name>Melville</last-name>
+     </author>
+     <price>11.99</price>
+   </book>
+   <book genre="philosophy">
+     <title>The Gorgias</title>
+     <author>
+       <name>Plato</name>
+     </author>
+     <price>9.99</price>
+   </book>
+ </bookstore>
+<!--</Snippet3>-->
+<!--<Snippet4>-->
+
+<?xml version='1.0'?>
+<bookstore xmlns="urn:newbooks-schema">
+  <book genre="novel" style="hardcover">
+    <title>The Handmaid's Tale</title>
+    <author>
+      <first-name>Margaret</first-name>
+      <last-name>Atwood</last-name>
+    </author>
+    <price>19.95</price>
+  </book>
+  <book genre="novel" style="other">
+    <title>The Poisonwood Bible</title>
+    <author>
+      <first-name>Barbara</first-name>
+      <last-name>Kingsolver</last-name>
+    </author>
+    <price>11.99</price>
+  </book>
+</bookstore>
+<!--</Snippet4>-->
+<!--<Snippet5>-->
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+     xmlns="urn:bookstore-schema"
+     elementFormDefault="qualified"
+     targetNamespace="urn:bookstore-schema">
+ 
+  <xsd:element name="bookstore" type="bookstoreType"/>
+ 
+  <xsd:complexType name="bookstoreType">
+   <xsd:sequence maxOccurs="unbounded">
+    <xsd:element name="book"  type="bookType"/>
+   </xsd:sequence>
+  </xsd:complexType>
+ 
+  <xsd:complexType name="bookType">
+   <xsd:sequence>
+    <xsd:element name="title" type="xsd:string"/>
+    <xsd:element name="author" type="authorName"/>
+    <xsd:element name="price"  type="xsd:decimal"/>
+   </xsd:sequence>
+   <xsd:attribute name="genre" type="xsd:string"/>
+  </xsd:complexType>
+ 
+  <xsd:complexType name="authorName">
+   <xsd:sequence>
+    <xsd:element name="first-name"  type="xsd:string"/>
+    <xsd:element name="last-name" type="xsd:string"/>
+   </xsd:sequence>
+  </xsd:complexType>
+ 
+ </xsd:schema>
+<!--</Snippet5>-->
+<!--<Snippet6>-->
+
+<?xml version="1.0"?>
+<Schema xmlns="urn:schemas-microsoft-com:xml-data"
+        xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <ElementType name="first-name" content="textOnly"/>
+  <ElementType name="last-name" content="textOnly"/>
+  <ElementType name="name" content="textOnly"/>
+  <ElementType name="price" content="textOnly" dt:type="fixed.14.4"/>
+  <ElementType name="author" content="eltOnly" order="one">
+    <group order="seq">
+      <element type="name"/>
+    </group>
+    <group order="seq">
+      <element type="first-name"/>
+      <element type="last-name"/>
+    </group>
+  </ElementType>
+  <ElementType name="title" content="textOnly"/>
+  <AttributeType name="genre" dt:type="string"/>
+  <AttributeType name="style" dt:type="enumeration"
+        dt:values="paperback hardcover"/>
+  <ElementType name="book" content="eltOnly">
+    <attribute type="genre" required="yes"/>
+    <attribute type="style" required="yes"/>
+    <element type="title"/>
+    <element type="author"/>
+    <element type="price"/>
+  </ElementType>
+  <ElementType name="bookstore" content="eltOnly">
+    <element type="book"/>
+  </ElementType>
+</Schema>
+<!--</Snippet6>-->
+

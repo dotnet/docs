@@ -1,0 +1,152 @@
+﻿<Window x:Class="MatrixTransform3DView.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MatrixTransform3DView"
+    Width="1024"
+    Height="768">
+  <Grid Name="Grid1" Background ="Black" Canvas.Top="0" Canvas.Left="0">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="260"/>
+      <ColumnDefinition Width="*"/>
+    </Grid.ColumnDefinitions>
+
+    <StackPanel Background="OldLace">
+      <StackPanel Background="OldLace" Margin="5, 5, 5, 5">
+        <Label Height="25" FontSize="12" FontWeight="Bold" Foreground="DarkSlateBlue">MatrixTransform3D Options</Label>
+        
+        <!--MatrixTransform3D section-->
+        <!--<Label Height="25" >Current Transform3D</Label>-->
+        <Grid Name="EndMatrix3D">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="55"/>
+            <ColumnDefinition Width="55"/>
+            <ColumnDefinition Width="55"/>
+            <ColumnDefinition Width="55"/>
+          </Grid.ColumnDefinitions>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+          </Grid.RowDefinitions>
+          
+          <TextBox Name="M11Text" Width="50" Grid.Column="0" Grid.Row="0">M11</TextBox>
+          <TextBox Name="M21Text" Width="50" Grid.Column="0" Grid.Row="1">M21</TextBox>
+          <TextBox Name="M31Text" Width="50" Grid.Column="0" Grid.Row="2">M31</TextBox>
+          <TextBox Name="OffsetXText" Width="50" Grid.Column="0" Grid.Row="3">OffsetX</TextBox>
+
+          <TextBox Name="M12Text" Width="50" Grid.Column="1" Grid.Row="0">M12</TextBox>
+          <TextBox Name="M22Text" Width="50" Grid.Column="1" Grid.Row="1">M22</TextBox>
+          <TextBox Name="M32Text" Width="50" Grid.Column="1" Grid.Row="2">M32</TextBox>
+          <TextBox Name="OffsetYText" Width="50" Grid.Column="1" Grid.Row="3">OffsetY</TextBox>
+
+          <TextBox Name="M13Text" Width="50" Grid.Column="2" Grid.Row="0">M13</TextBox>
+          <TextBox Name="M23Text" Width="50" Grid.Column="2" Grid.Row="1">M23</TextBox>
+          <TextBox Name="M33Text" Width="50" Grid.Column="2" Grid.Row="2">M33</TextBox>
+          <TextBox Name="OffsetZText" Width="50" Grid.Column="2" Grid.Row="3">OffsetZ</TextBox>
+
+          <TextBox Name="M14Text" Width="50" Grid.Column="3" Grid.Row="0">M14</TextBox>
+          <TextBox Name="M24Text" Width="50" Grid.Column="3" Grid.Row="1">M24</TextBox>
+          <TextBox Name="M34Text" Width="50" Grid.Column="3" Grid.Row="2">M34</TextBox>
+          <TextBox Name="M44Text" Width="50" Grid.Column="3" Grid.Row="3">M44</TextBox>
+        </Grid>
+        
+        <Button Name="ApplyMatrixTransform" Width="200" Height="25" Click="UpdateMatrix" >Apply MatrixTransform3D</Button>
+        
+        <!--RotateTransform3D section-->
+        <Label Height="25" >RotateTransform3D</Label>
+        <Grid>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120" />
+            <ColumnDefinition Width="120" />
+          </Grid.ColumnDefinitions>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+          </Grid.RowDefinitions>
+            <Label Grid.Column="0" Grid.Row="0" Height="25" >Vector3D.X</Label>
+            <Label Grid.Column="0" Grid.Row="1" Height="25" >Vector3D.Y</Label>
+            <Label Grid.Column="0" Grid.Row="2" Height="25" >Vector3D.Z</Label>
+            <TextBox Name="RotationAxisXText" Width="110" Grid.Column="1" Grid.Row="0">0</TextBox>
+            <TextBox Name="RotationAxisYText" Width="110" Grid.Column="1" Grid.Row="1">1</TextBox>
+            <TextBox Name="RotationAxisZText" Width="110" Grid.Column="1" Grid.Row="2">0</TextBox>
+          </Grid>
+        <Grid>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120" />
+            <ColumnDefinition Width="120" />
+          </Grid.ColumnDefinitions>
+        <Label Grid.Column="0" Height="25" >Angle</Label>
+        <TextBox Name="RotationAngleText" Width="110" Grid.Column="1">0</TextBox>
+        </Grid>
+        <Button Name="ApplyRotationTransform" Width="200" Height="25" Click="UpdateRotation" >Apply AxisAngleRotation3D</Button>
+
+        <!--QuaternionRotation3D section-->
+        <Label Height="25" >QuaternionRotation3D</Label>
+        <Grid>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80" />
+            <ColumnDefinition Width="80" />
+          </Grid.ColumnDefinitions>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+          </Grid.RowDefinitions>
+          <Label Grid.Column="0" Grid.Row="0" Height="25" >Quaternion.W</Label>
+          <Label Grid.Column="0" Grid.Row="1" Height="25" >Quaternion.X</Label>
+          <Label Grid.Column="0" Grid.Row="2" Height="25" >Quaternion.Y</Label>
+          <Label Grid.Column="0" Grid.Row="3" Height="25" >Quaternion.Z</Label>
+          <TextBox Name="QuaternionWText" Width="80" Grid.Column="1" Grid.Row="0">0</TextBox>
+          <TextBox Name="QuaternionXText" Width="80" Grid.Column="1" Grid.Row="1">0</TextBox>
+          <TextBox Name="QuaternionYText" Width="80" Grid.Column="1" Grid.Row="2">0</TextBox>
+          <TextBox Name="QuaternionZText" Width="80" Grid.Column="1" Grid.Row="3">0</TextBox>
+        </Grid>
+        <Button Name="ApplyQuaternionRotation3D" Width="200" Height="25" Click="UpdateQuaternionRotation3D" >Apply QuaternionRotation3D</Button>
+
+        <!--TranslateTransform3D section-->
+        <Label Height="25" >TranslateTransform3D</Label>
+        <Grid>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="80" />
+            <ColumnDefinition Width="80" />
+            <ColumnDefinition Width="80" />
+          </Grid.ColumnDefinitions>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30" />
+          </Grid.RowDefinitions>
+          <Label Grid.Column="0" Grid.Row="0" Height="25" >OffsetX</Label>
+          <Label Grid.Column="1" Grid.Row="0" Height="25" >OffsetY</Label>
+          <Label Grid.Column="2" Grid.Row="0" Height="25" >OffsetZ</Label>
+          <TextBox Name="TranslateOffsetXText" Width="80" Grid.Column="0" Grid.Row="1">0</TextBox>
+          <TextBox Name="TranslateOffsetYText" Width="80" Grid.Column="1" Grid.Row="1">0</TextBox>
+          <TextBox Name="TranslateOffsetZText" Width="80" Grid.Column="2" Grid.Row="1">0</TextBox>
+        </Grid>
+        <CheckBox Name="addTranslationCheck">Append Translation</CheckBox>
+        <Button Name="ApplyTranslateTransform" Width="200" Height="25" Click="UpdateTranslation" >Add TranslateTransform3D</Button>
+
+        <Button Name="ApplyMatrixCamera" Width="200" Height="25" Click="SetMatrixCamera" >Use MatrixCamera</Button>
+
+
+      </StackPanel>
+    </StackPanel>
+    <DockPanel Grid.Column="1" Grid.Row="0" Focusable="True">
+
+      <Viewport3D ClipToBounds="True" Name="myViewport" Focusable="True" >
+        <Viewport3D.Camera>
+          <PerspectiveCamera x:Name="myPerspectiveCamera"
+            LookDirection="0,0,1" UpDirection="0,1,0" Position="0,0,-10" />
+        </Viewport3D.Camera>
+        <ModelVisual3D x:Name="topModelVisual3D" >
+          <ModelVisual3D.Children>
+            <StaticResource ResourceKey="PictureCubeModelVisual3DResource" />
+          </ModelVisual3D.Children>
+        </ModelVisual3D>
+      </Viewport3D>
+
+    </DockPanel>
+  </Grid>
+</Window>

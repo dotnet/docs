@@ -1,0 +1,25 @@
+﻿<!--<Snippet_ClearTypeHintXAML>-->
+    <Window x:Class="ClearTypeHintDemo.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window1" Height="300" Width="300"
+        AllowsTransparency="True" 
+        WindowStyle="None" 
+        RenderOptions.ClearTypeHint="Enabled" Background="White">
+    <Window.Resources>
+        <LinearGradientBrush x:Key="opacityBrush" >
+            <GradientStop Color="#FF000000" Offset="0.0" />
+            <GradientStop Color="#00000000" Offset="1.0" />
+        </LinearGradientBrush>
+    </Window.Resources>
+
+    <StackPanel>
+        <TextBlock Text="This text is rendered with ClearType." />
+        <StackPanel OpacityMask="{StaticResource opacityBrush}" >
+            <TextBlock Text="This text is not rendered with ClearType." />
+            <TextBlock RenderOptions.ClearTypeHint="Enabled" 
+                       Text="This text is rendered with ClearType but may alpha-blend incorrectly." />
+        </StackPanel>
+    </StackPanel>
+</Window>
+<!--</Snippet_ClearTypeHintXAML>-->

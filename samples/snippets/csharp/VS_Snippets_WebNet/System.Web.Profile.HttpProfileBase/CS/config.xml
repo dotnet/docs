@@ -1,0 +1,24 @@
+<configuration>
+   <system.web>
+      <profile inherits="Samples.AspNet.Profile.EmployeeProfile"  
+      defaultProvider="SqlProvider">  
+      <providers>  
+         <clear />  
+         <add  
+            name="SqlProvider"  
+            type="System.Web.Profile.SqlProfileProvider"   
+            connectionStringName="SqlServices"   
+            description="SQL Profile Provider for Sample"/>   
+         <add  
+            name="EmployeeInfoProvider"  
+            type="System.Web.Profile.SqlProfileProvider"   
+            connectionStringName="SqlServices"   
+            description="SQL Profile Provider for Employee Info"/>   
+      </providers>  
+      
+      <properties>  
+         <add name="GarmentSize" />  
+      </properties>  
+      </profile>  
+   </system.web>
+</configuration>

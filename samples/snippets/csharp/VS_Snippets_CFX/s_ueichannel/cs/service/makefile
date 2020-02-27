@@ -1,0 +1,1 @@
+!INCLUDE $(NTMAKEENV)\devdiv.def

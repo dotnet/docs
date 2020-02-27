@@ -1,0 +1,50 @@
+<!--<snippet3>-->
+<%@ Master Language="VB" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<script runat="server">
+
+    Sub DropDownList1_DataBound(ByVal sender As Object, ByVal e As System.EventArgs)
+        If Not Page.IsPostBack Then
+            Dim currentNode As DropDownList = sender
+            currentNode.SelectedValue = System.Web.SiteMap.CurrentNode.Url
+        End If
+    End Sub
+
+    Sub DropDownList1_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs)
+        Dim currentNode As DropDownList = sender
+        Response.Redirect(currentNode.SelectedValue)
+    End Sub
+    
+</script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="SiteMap" Runat="server">
+                <b>Current Location:</b>
+                <asp:SiteMapPath ID="SiteMapPath1" Runat="Server">
+                    <CurrentNodeTemplate>
+                        <asp:DropDownList ID="DropDownList1" DataTextField="Title" DataValueField="Url" AutoPostBack="true"
+                            OnDataBound="DropDownList1_DataBound" DataSourceID="SiteMapDataSource2" Runat="server"
+                            OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" />
+                    </CurrentNodeTemplate>
+                </asp:SiteMapPath>
+                <br />
+                <br />
+                <a href='<%= System.Web.SiteMap.RootNode.Url %>'>Back to Top</a>
+                <br />
+                <br />
+                <asp:TreeView ID="TreeView1" ShowExpandCollapse="false" Runat="server" DataSourceID="SiteMapDataSource1" />
+                <asp:SiteMapDataSource ID="SiteMapDataSource2" Runat="server" StartingNodeOffset="-1"
+                    ShowStartingNode="false" StartFromCurrentNode="true" />
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" Runat="server" StartingNodeOffset="1" />
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="MainBody" Runat="server" />
+        </div>
+    </form>
+</body>
+</html>
+<!--</snippet3>-->

@@ -1,0 +1,78 @@
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      WindowTitle="LayoutTransform Sample">
+  <ScrollViewer>
+    <Grid ShowGridLines="True">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="Auto"/>
+        <ColumnDefinition Width="Auto"/>
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+      </Grid.RowDefinitions>
+
+      <!-- RotateTransform Sample-->
+      <Button Grid.Row="0" Grid.Column="0" Background="LightCoral" Content="No Transform Applied"/>
+      
+      <!--<Snippet1> -->
+      
+      <Button Grid.Row="0" Grid.Column="1" Background="LightCoral" Content="RotateTransform Applied">
+        <Button.LayoutTransform>
+          <RotateTransform CenterX="25" CenterY="25" Angle="45" />
+        </Button.LayoutTransform>
+      </Button>
+      
+      <!--</Snippet1> -->
+
+      <!-- SkewTransform Sample-->
+      <Button Grid.Row="1" Grid.Column="0" Background="LightCyan" Content="No Transform Applied"/>
+      
+      <Button Grid.Row="1" Grid.Column="1" Background="LightCyan" Content="SkewTransform">
+        <Button.LayoutTransform>
+          <SkewTransform CenterX="0" CenterY="0" AngleX="45" AngleY="0"/>
+        </Button.LayoutTransform>
+      </Button>
+
+      <!-- ScaleTransform Sample-->
+      <Button Grid.Row="2" Grid.Column="0" Background="LightSlateGray" Content="No Transform Applied"/>
+      
+      <Button Grid.Row="2" Grid.Column="1" Background="LightSlateGray" Content="ScaleTransform">
+        <Button.LayoutTransform>
+          <ScaleTransform CenterX="25" CenterY="25" ScaleX="2" ScaleY="2"/>
+        </Button.LayoutTransform>
+      </Button>
+
+      <!-- TranslateTransform : RenderTransform Sample-->
+      <Button Grid.Row="3" Grid.Column="0" Background="LightSeaGreen" Content="No Transform Applied"/>
+      
+      <Button Grid.Row="3" Grid.Column="1" Background="LightSeaGreen" Content="TranslateTransform: RenderTransform">
+        <Button.RenderTransform>
+          <TranslateTransform X="100" Y="200" />
+        </Button.RenderTransform>
+      </Button>
+
+      <!-- TranslateTransform : LayoutTransform Sample-->
+      <Button Grid.Row="4" Grid.Column="0" Background="LightBlue" Content="No Transform Applied"/>
+
+      <Button Grid.Row="4" Grid.Column="1" Background="LightBlue" Content="TranslateTransform: LayoutTransform">
+        <Button.LayoutTransform>
+          <TranslateTransform X="100" Y="200" />
+        </Button.LayoutTransform>
+      </Button>
+
+      <!-- MatrixTransform Sample-->
+      <Button Grid.Row="5" Grid.Column="0" Background="LightGoldenrodYellow" Content="No Transform Applied"/>
+      
+      <Button Grid.Row="5" Grid.Column="1" Background="LightGoldenrodYellow" Content="MatrixTransform">
+        <Button.LayoutTransform>
+          <MatrixTransform Matrix="1,3,3,3,3,3"/>
+        </Button.LayoutTransform>
+      </Button>
+
+    </Grid>
+  </ScrollViewer>
+</Page>

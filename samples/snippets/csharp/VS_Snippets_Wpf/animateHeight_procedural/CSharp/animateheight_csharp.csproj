@@ -1,0 +1,41 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <!-- MSBUILD Project File -->
+  <PropertyGroup>
+    <DefaultClrNameSpace>Microsoft.Samples.Animation.AnimatedTransformations</DefaultClrNameSpace>
+    <AssemblyName>AnimatedHeightExample_csharp</AssemblyName>
+    <TargetType>winexe</TargetType>
+    <Configuration>Release</Configuration>
+    <BuildSystem>MSBuild</BuildSystem>
+    <HostInBrowser>False</HostInBrowser>
+    <ProductVersion>10.0.20821</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9FAD8619-EF29-4F60-A4CD-A4F1281DE8A5}</ProjectGuid>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ApplicationDefinition Include="app.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnimatedHeightExample.cs" />
+    <Compile Include="app.xaml.cs">
+      <DependentUpon>app.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Data" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+  </ItemGroup>
+</Project>

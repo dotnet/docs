@@ -1,0 +1,153 @@
+﻿<Page x:Class="SDKSample.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Loaded="WindowLoaded">
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="Auto" />
+      <ColumnDefinition Width="200" />
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+
+
+    <TextBlock FontSize="16" Foreground="Purple" TextAlignment="Center"
+        Grid.Row="0" Grid.Column="0">
+          BulletDecorator Examples
+    </TextBlock>
+
+    <TextBlock Grid.Row="1" Grid.Column="1" 
+      TextWrapping="Wrap" Margin="20,5,0,0" Foreground="Purple">
+      When the child of a BulletDecorator is a text element,
+      the bullet aligns with the first
+      line of text. This BulletDecorator also has the Background property
+      set to Yellow.
+    </TextBlock>
+    <!--<Snippet1>-->
+      <BulletDecorator  Grid.Row="1" Grid.Column="0" Margin="0,5,0,0"
+                        VerticalAlignment="Center" Background="Yellow">
+        <BulletDecorator.Bullet>
+          <Image Source="images\apple.jpg"/>
+        </BulletDecorator.Bullet>
+        <TextBlock
+          Width="100" 
+          TextWrapping="Wrap" 
+          HorizontalAlignment="Left"
+          Foreground ="Purple">
+          A Simple BulletDecorator
+        </TextBlock>
+      </BulletDecorator>
+    <!--</Snippet1>-->     
+    <!--<Snippet2>-->
+      <BulletDecorator Margin="0,5,0,10" Grid.Column="0" Grid.Row="2"
+        VerticalAlignment="Center">
+        <BulletDecorator.Bullet>
+          <Image Source="images\apple.jpg"/>
+        </BulletDecorator.Bullet>
+        <TextBlock Name="FontSizeExample"
+          FontSize="12" Foreground="Green">FontSize = 12 </TextBlock>
+      </BulletDecorator>
+    <!--</Snippet2>-->
+    <!--<Snippet3>-->
+    <BulletDecorator Grid.Row="3" Grid.Column="0" Margin="0,5,0,0">
+      <BulletDecorator.Bullet>
+        <Image Source="images\apple.jpg"/>
+      </BulletDecorator.Bullet>
+      <Ellipse Height="75" Width="50" Fill="Purple" 
+               HorizontalAlignment="Left" ></Ellipse>
+    </BulletDecorator>
+    <!--</Snippet3>-->
+    <StackPanel Grid.Row="2" Grid.Column="1" Margin="20,5,0,0">
+     <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap"
+                Foreground="Green" Margin="0,5,0,0"
+                VerticalAlignment="Center">
+        Click the fontsize and
+        notice how the bullet in the BulletDecorator remains
+        centered as the fontsize is changed.
+      </TextBlock>
+      <RadioButton Name="FontSize12" 
+             Checked="ChangeFontSize" 
+             IsChecked="True" 
+             GroupName="BulletDecoratorFontSize">
+           12
+         </RadioButton>
+         <RadioButton Name="FontSize24" 
+             Checked="ChangeFontSize" 
+             GroupName="BulletDecoratorFontSize">
+           24
+         </RadioButton>
+         <RadioButton Name="FontSize48" 
+             Checked="ChangeFontSize" 
+             GroupName="BulletDecoratorFontSize">
+           48
+         </RadioButton>
+       </StackPanel>
+    <TextBlock Grid.Row="3" Grid.Column="1"  
+               TextWrapping="Wrap" Margin="20,5,0,0" Foreground="Purple">
+      The bullet is aligned to the center of the child element
+      when the child element is not a text element.
+    </TextBlock>
+    <StackPanel Grid.Row="4" Grid.Column="0">
+    <!--<SnippetBulletTypes>-->
+    <BulletDecorator Margin="0,5,0,0">
+      <BulletDecorator.Bullet>
+        <CheckBox/>
+      </BulletDecorator.Bullet>
+      <TextBlock
+        Width="100" 
+        TextWrapping="Wrap" 
+        HorizontalAlignment="Left"
+        Foreground = "Blue" 
+        Margin="5,0,0,0">
+        A BulletDecorator with a CheckBox Bullet.
+      </TextBlock>
+    </BulletDecorator>
+      <BulletDecorator Margin="0,5,0,0">
+        <BulletDecorator.Bullet>
+          <TextBox Width="30"/>
+        </BulletDecorator.Bullet>
+        <TextBlock
+          Width="100" 
+          TextWrapping="Wrap" 
+          HorizontalAlignment="Left"
+          Foreground ="Blue" 
+          Margin="5,0,0,0">
+          A BulletDecorator with a TextBox Bullet.
+        </TextBlock>
+      </BulletDecorator>
+      <BulletDecorator Margin="0,5,0,0">
+      <BulletDecorator.Bullet>
+        <RadioButton/>
+      </BulletDecorator.Bullet>
+        <TextBlock
+          Width="100" 
+          TextWrapping="Wrap" 
+          HorizontalAlignment="Left"
+          Foreground ="Blue"
+          Margin="5,0,0,0">
+          A BulletDecorator with a RadioButton Bullet
+        </TextBlock>
+      </BulletDecorator>
+
+    <!--</SnippetBulletTypes>-->
+    </StackPanel>
+    <TextBlock Grid.Row="4" Grid.Column="1"  
+               TextWrapping="Wrap" Margin="20,5,0,0" Foreground="Blue">
+        A Bullet can be any UIElement, such as a CheckBox, TextBox or 
+        RadioButton control.
+     </TextBlock>
+    <StackPanel Name="aStackPanel4You"  Grid.Row="5" Grid.Column="0">
+      <!--Code-behind adds a BulletDecorator to this StackPanel-->
+    </StackPanel>
+    <TextBlock Grid.Row="5" Grid.Column="1"  
+           TextWrapping="Wrap" Margin="20,5,0,0" Foreground="Purple">
+      This BulletDecorator is created by using code
+    </TextBlock>
+  </Grid>
+</Page>

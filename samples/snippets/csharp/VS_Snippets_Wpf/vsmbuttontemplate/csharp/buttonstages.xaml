@@ -1,0 +1,297 @@
+﻿<UserControl x:Class="VSMButtonTemplate.ButtonStages"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" >
+  <StackPanel Orientation="Horizontal" x:Name="LayoutRoot" Background="White" >
+
+    <TextBlock Text="Stage 1 - just UIElements" HorizontalAlignment="Center"/>
+
+    <!--</STAGE1>-->
+    <StackPanel>
+      <StackPanel.Resources>
+        <Style TargetType="Button" x:Key="newTemplate">
+
+          <!--Set the Background, Foreground, FontSize, Width, 
+              Height, and Margin properties for the Button.-->
+          <Setter Property="FontSize" Value="14"/>
+          <Setter Property="Width" Value="100"/>
+          <Setter Property="Height" Value="40"/>
+          <Setter Property="Margin" Value="10"/>
+          <Setter Property="HorizontalContentAlignment" Value="Center"/>
+          <Setter Property="VerticalContentAlignment" Value="Center"/>
+
+          <!--Create the ControlTemplate for the Button as part
+              of the Button's style.-->
+          <Setter Property="Template">
+            <Setter.Value>
+              <!--<SnippetBasicTemplate>-->
+              <ControlTemplate TargetType="Button">
+                <Border Name="RootElement">
+
+                  <!--Create the SolidColorBrush for the Background 
+                      as an object elemment and give it a name so 
+                      it can be referred to elsewhere in the
+                      control template.-->
+                  <Border.Background>
+                    <SolidColorBrush x:Name="BorderBrush" Color="Black"/>
+                  </Border.Background>
+
+                  <!--Create a border that has a different color
+                      by adding smaller grid. The background of 
+                      this grid is specificied by the button's 
+                      Background property.-->
+                  <!--<SnippetTemplateBinding>-->
+                  <Grid Margin="4" Background="{TemplateBinding Background}">
+
+                    <!--Use a ContentPresenter to display the Content of
+                        the Button.-->
+                    <ContentPresenter
+                      HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                      Margin="4,5,4,4" />
+                  </Grid>
+                  <!--</SnippetTemplateBinding>-->
+
+                </Border>
+              </ControlTemplate>
+              <!--</SnippetBasicTemplate>-->
+            </Setter.Value>
+          </Setter>
+        </Style>
+
+      </StackPanel.Resources>
+      <!--<SnippetButtonDeclaration>-->
+      <StackPanel>
+        <Button Style="{StaticResource newTemplate}" 
+                Background="Navy" Foreground="White" FontSize="14"
+                Content="Button1"/>
+
+        <Button Style="{StaticResource newTemplate}" 
+                Background="Purple" Foreground="White" FontSize="14"
+                Content="Button2" HorizontalContentAlignment="Left"/>
+      </StackPanel>
+      <!--</SnippetButtonDeclaration>-->
+    </StackPanel>
+    <!--</STAGE1>-->
+
+    <TextBlock Text="Stage 2 - common states" HorizontalAlignment="Center"/>
+    <!--<STAGE2>-->
+    <Grid>
+      <Grid.Resources>
+        <Style TargetType="Button" x:Key="newTemplate">
+          <!--Set the Background, Foreground, FontSize, Width, 
+              Height, Margin, and Template properties for
+              the Button.-->
+          <Setter Property="Background" Value="Navy"/>
+          <Setter Property="Foreground" Value="White"/>
+          <Setter Property="FontSize" Value="14"/>
+          <Setter Property="Width" Value="100"/>
+          <Setter Property="Height" Value="40"/>
+          <Setter Property="Margin" Value="10"/>
+          <Setter Property="HorizontalContentAlignment" Value="Center"/>
+          <Setter Property="VerticalContentAlignment" Value="Center"/>
+          <Setter Property="Template">
+            <Setter.Value>
+              <!--<SnippetVisualStates>-->
+              <ControlTemplate TargetType="Button">
+                <Border Name="RootElement">
+
+                  <VisualStateManager.VisualStateGroups>
+
+                    <!--<Snippet10>-->
+                    <!--Define the states and transitions for the common states.
+                        The states in the VisualStateGroup are mutually exclusive to
+                        each other.-->
+                    <VisualStateGroup x:Name="CommonStates">
+
+                      <!--The Normal state is the state the button is in
+                          when it is not in another state from this VisualStateGroup.-->
+                      <VisualState x:Name="Normal" />
+
+                      <!--Change the SolidColorBrush, BorderBrush, to red when the
+                          mouse is over the button.-->
+                      <VisualState x:Name="MouseOver">
+                        <Storyboard>
+                          <ColorAnimation Storyboard.TargetName="BorderBrush" 
+                                          Storyboard.TargetProperty="Color" 
+                                          To="Red" />
+                        </Storyboard>
+                      </VisualState>
+
+                      <!--Change the SolidColorBrush, BorderBrush, to Transparent when the
+                          button is pressed.-->
+                      <VisualState x:Name="Pressed">
+                        <Storyboard>
+                          <ColorAnimation Storyboard.TargetName="BorderBrush" 
+                                          Storyboard.TargetProperty="Color"
+                                          To="Transparent"/>
+                        </Storyboard>
+                      </VisualState>
+
+                      <!--The Disabled state is omitted for brevity.-->
+                    </VisualStateGroup>
+                  </VisualStateManager.VisualStateGroups>
+                  <!--</Snippet10>-->
+
+                  <Border.Background>
+                    <SolidColorBrush x:Name="BorderBrush" Color="Black"/>
+                  </Border.Background>
+
+                  <Grid Background="{TemplateBinding Background}" Margin="4">
+                    <ContentPresenter
+                      HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                      Margin="4,5,4,4" />
+                  </Grid>
+                </Border>
+              </ControlTemplate>
+              <!--</SnippetVisualStates>-->
+            </Setter.Value>
+          </Setter>
+        </Style>
+
+      </Grid.Resources>
+      <StackPanel>
+        <Button Style="{StaticResource newTemplate}" 
+                Content="Button1"/>
+
+        <Button Style="{StaticResource newTemplate}" Background="Purple" 
+                Content="Button2"/>
+      </StackPanel>
+    </Grid>
+    <!--</STAGE2>-->
+
+    <TextBlock Text="Stage 3 - transitions" HorizontalAlignment="Center"/>
+    <!--<STAGE3>-->
+    <Grid>
+      <Grid.Resources>
+        <Style TargetType="Button" x:Key="newTemplate">
+          <!--Set the Background, Foreground, FontSize, Width, 
+              Height, Margin, and Template properties for
+              the Button.-->
+          <Setter Property="Background" Value="Navy"/>
+          <Setter Property="Foreground" Value="White"/>
+          <Setter Property="FontSize" Value="14"/>
+          <Setter Property="Width" Value="100"/>
+          <Setter Property="Height" Value="40"/>
+          <Setter Property="Margin" Value="10"/>
+          <Setter Property="HorizontalContentAlignment" Value="Center"/>
+          <Setter Property="VerticalContentAlignment" Value="Center"/>
+          <Setter Property="Template">
+            <Setter.Value>
+              <ControlTemplate TargetType="Button">
+                <Border x:Name="RootElement">
+                  <VisualStateManager.VisualStateGroups>
+                    <!--<SnippetVisualTransitions>-->
+                    <VisualStateGroup x:Name="CommonStates">
+
+                      <!--Define the VisualTransitions that
+                          can be used when the control transitions 
+                          between VisualStates that are defined in the
+                          VisualStatGroup.-->
+                      <VisualStateGroup.Transitions>
+
+                        <!--Take one hundredth of a second to 
+                            transition to the Pressed state.-->
+                        <VisualTransition To="Pressed" 
+                                          GeneratedDuration="0:0:0.01" />
+
+                        <!--Take one half second to trasition 
+                            to the MouseOver state.-->
+                        <VisualTransition To="MouseOver" 
+                                          GeneratedDuration="0:0:0.5" />
+
+                        <!--Take one hundredth of a second to transition from the
+                            Pressed state to the MouseOver state.-->
+                        <VisualTransition From="Pressed" To="MouseOver" 
+                                          GeneratedDuration="0:0:0.01" />
+
+                        <!--Take one and a half seconds to transition from the
+                            MouseOver state to the Normal state. 
+                            Have the SolidColorBrush, BorderBrush, fade to blue, 
+                            then to yellow, and then to black in that time.-->
+                        <VisualTransition From="MouseOver" To="Normal" 
+                                          GeneratedDuration="0:0:1.5">
+                          <Storyboard>
+                            <ColorAnimationUsingKeyFrames
+                              Storyboard.TargetProperty="Color"
+                              Storyboard.TargetName="BorderBrush"
+                              FillBehavior="HoldEnd" >
+
+                              <ColorAnimationUsingKeyFrames.KeyFrames>
+                                <LinearColorKeyFrame Value="Blue" 
+                                  KeyTime="0:0:0.5" />
+                                <LinearColorKeyFrame Value="Yellow" 
+                                  KeyTime="0:0:1" />
+                                <LinearColorKeyFrame Value="Black" 
+                                  KeyTime="0:0:1.5" />
+
+                              </ColorAnimationUsingKeyFrames.KeyFrames>
+                            </ColorAnimationUsingKeyFrames>
+                          </Storyboard>
+                        </VisualTransition>
+                      </VisualStateGroup.Transitions>
+
+                      <!--The remainder of the VisualStateGroup is the
+                          same as the previous example.-->
+
+                      <VisualState x:Name="Normal" />
+
+                      <VisualState x:Name="MouseOver">
+                        <Storyboard>
+                          <ColorAnimation 
+                            Storyboard.TargetName="BorderBrush" 
+                            Storyboard.TargetProperty="Color" 
+                            To="Red" />
+
+                        </Storyboard>
+                      </VisualState>
+
+                      <VisualState x:Name="Pressed">
+                        <Storyboard>
+                          <ColorAnimation 
+                            Storyboard.TargetName="BorderBrush" 
+                            Storyboard.TargetProperty="Color" 
+                            To="Transparent"/>
+                        </Storyboard>
+                      </VisualState>
+
+                      <!--The Disabled state is omitted for brevity.-->
+
+                    </VisualStateGroup>
+                    <!--</SnippetVisualTransitions>-->
+
+                  </VisualStateManager.VisualStateGroups>
+
+                  <Border.Background>
+                    <SolidColorBrush x:Name="BorderBrush" Color="Black"/>
+                  </Border.Background>
+
+                  <Grid Background="{TemplateBinding Background}" Margin="4">
+                    <ContentPresenter
+                      HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                      Margin="4,5,4,4" />
+                  </Grid>
+
+                </Border>
+              </ControlTemplate>
+            </Setter.Value>
+          </Setter>
+        </Style>
+
+      </Grid.Resources>
+      <StackPanel>
+        <Button Style="{StaticResource newTemplate}" 
+                Content="Button1"/>
+
+        <Button Style="{StaticResource newTemplate}" Background="Purple" 
+                Content="Button2"/>
+      </StackPanel>
+    </Grid>
+    <!--</STAGE3>-->
+
+  </StackPanel>
+</UserControl>

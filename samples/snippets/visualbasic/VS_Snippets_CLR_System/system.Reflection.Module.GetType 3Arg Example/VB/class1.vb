@@ -1,0 +1,22 @@
+﻿'<snippet1>
+Imports System.Reflection
+
+'This code assumes that the root namespace is set to empty("").
+Namespace ReflectionModule_Examples
+    Class MyMainClass
+        Shared Sub Main()
+            Dim moduleArray() As [Module]
+
+            moduleArray = GetType(MyMainClass).Assembly.GetModules(False)
+
+            'In a simple project with only one module, the module at index
+            ' 0 will be the module containing this class.
+            Dim myModule As [Module] = moduleArray(0)
+
+            Dim myType As Type
+            myType = myModule.GetType("ReflectionModule_Examples.MyMainClass", False, False)
+            Console.WriteLine("Got type: {0}", myType.ToString())
+        End Sub
+    End Class
+End Namespace 'ReflectionModule_Examples
+'</snippet1>

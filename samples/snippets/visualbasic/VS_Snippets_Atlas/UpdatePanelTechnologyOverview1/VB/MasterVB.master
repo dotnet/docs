@@ -1,0 +1,51 @@
+<%-- <Snippet5> --%>
+<%@ Master Language="VB" %>
+<!DOCTYPE html PUBLIC "-'W3C'DTD XHTML 1.0 Transitional'EN"
+ "http:'www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script runat="server">
+
+    Public Property LastUpdate() As DateTime
+        Get
+            If ViewState("LastUpdate") Is Nothing Then
+                Return DateTime.Now
+            Else : Return ViewState("LastUpdate")
+            End If
+        End Get
+        Set(ByVal value As DateTime)
+            ViewState("LastUpdate") = value
+        End Set
+    End Property
+
+    Protected Sub MasterButton2_Click(ByVal Sender As Object, ByVal E As EventArgs)
+        LastUpdate = DateTime.Now
+        Dim up1 As UpdatePanel
+        up1 = ContentPlaceHolder1.FindControl("UpdatePanel1")
+        up1.Update()
+
+    End Sub
+	
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs)
+        ScriptManager1.RegisterAsyncPostBackControl(Button2)
+    End Sub
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>ScriptManager in Master Page Example</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ScriptManager ID="ScriptManager1" runat="server" />
+            <asp:Panel ID="MasterPanel1" runat="server" GroupingText="Master Page">
+               <asp:Button ID="Button1" runat="server" Text="Full Page Refresh" />
+               <asp:Button ID="Button2" runat="server" Text="Refresh Panel" OnClick="MasterButton2_Click" />
+            </asp:Panel>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
+<%-- </Snippet5> --%>

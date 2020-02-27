@@ -1,0 +1,20 @@
+<!--<Snippet2>-->
+
+<!DOCTYPE root [
+  <!ELEMENT root ANY> 
+  <!ELEMENT Person ANY> 
+  <!ELEMENT Customer EMPTY>
+  <!ELEMENT Team EMPTY>
+  <!ATTLIST Person SSN ID #REQUIRED>
+  <!ATTLIST Customer id IDREF #REQUIRED >
+  <!ATTLIST Team members IDREFS #REQUIRED>]>
+<root>
+  <Person SSN='A111' Name='Fred'/>
+  <Person SSN='A111'/>
+  <Person SSN='A222' Name='Tom'/>
+  <Customer id='A111'/>
+  <Customer id='A222334444'/>
+  <Team members='A222334444 A333445555'/>
+</root>
+   <!--</Snippet2>-->
+

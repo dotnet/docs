@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="MediaCapture.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MediaCapture"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <!-- <snippet7> -->
+        <StackPanel>
+            <TextBlock x:Name="StatusBlock" Margin="10,10,0,0"/>
+            <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="0,10,0,0">
+                <Button x:Name="StartDevice" Click="StartDevice_Click" IsEnabled="true" Margin="10,0,10,0">StartDevice</Button>
+                <Button x:Name="TakePhoto" Click="TakePhoto_Click" IsEnabled="false" Margin="0,0,10,0">TakePhoto</Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Row="2" Margin="0,10,0,0">
+                <CheckBox x:Name="AddRemoveEffect" Margin="10,0,10,0" Content="Grayscale effect" IsEnabled="False" Checked="AddRemoveEffect_Checked" Unchecked="AddRemoveEffect_Unchecked"/>
+            </StackPanel>
+            <Image x:Name="CapturedImage" Width="320" Height="240" Margin="10,10,0,0" HorizontalAlignment="Left"/>
+        </StackPanel>
+        <!-- </snippet7> -->
+    </Grid>
+</Page>

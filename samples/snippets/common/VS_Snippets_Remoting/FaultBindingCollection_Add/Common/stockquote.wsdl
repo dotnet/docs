@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="IBM437"?>
+<definitions xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:s0="http://www.contoso.com/stockquote.wsdl" targetNamespace="http://www.contoso.com/stockquote.wsdl" name="StockQuote" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://www.contoso.com/stockquote.wsdl">
+      <s:complexType name="GetTradePriceInputType">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="tickerSymbol" nillable="true" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="time" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="GetTradePriceOutputType">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="result" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="GetTradePriceStringFaultType">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="error" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="GetTradePriceStringIntType">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="error" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetTradePriceSoapIn" type="s0:GetTradePriceInputType" />
+      <s:element name="GetTradePriceSoapOut" type="s0:GetTradePriceOutputType" />
+      <s:element name="GetTradePriceSoapStringFault" type="s0:GetTradePriceStringFaultType" />
+      <s:element name="GetTradePriceSoapIntFault" type="s0:GetTradePriceIntFaultType" />
+    </s:schema>
+  </types>
+  <message name="GetTradePriceInput">
+    <part name="parameters" element="s0:GetTradePriceSoapIn" />
+  </message>
+  <message name="GetTradePriceOutput">
+    <part name="parameters" element="s0:GetTradePriceSoapOut" />
+  </message>
+  <message name="GetTradePriceStringFault">
+    <part name="parameters" element="s0:GetTradePriceStringSoapFault" />
+  </message>
+  <message name="GetTradePriceIntFault">
+    <part name="parameters" element="s0:GetTradePriceIntSoapFault" />
+  </message>
+  <portType name="StockQuotePortType">
+    <operation name="GetTradePrice">
+      <input message="s0:GetTradePriceInput" />
+      <output message="s0:GetTradePriceOutput" />
+      <fault name="ErrorString" message="s0:GetTradePriceStringFault" />
+      <fault name="ErrorInt" message="s0:GetTradePriceIntFault" />
+    </operation>
+  </portType>
+  <binding name="StockQuoteSoapBinding" type="s0:StockQuotePortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="GetTradePrice">
+      <soap:operation soapAction="http://www.contoso.com/GetTradePrice" />
+      <input>
+        <soap:body use="literal" namespace="http://www.contoso.com/stockquote" />
+      </input>
+      <output>
+        <soap:body use="literal" namespace="http://www.contoso.com/stockquote" />
+      </output>
+      <fault name="ErrorString">
+        <soap:fault use="literal" namespace="http://www.contoso.com/stockquote" encodingStyle="" />
+      </fault>
+      <fault name="ErrorInt">
+        <soap:fault use="literal" namespace="http://www.contoso.com/stockquote" encodingStyle="" />
+      </fault>
+    </operation>
+  </binding>
+  <service name="StockQuoteService">
+    <port name="StockQuotePort" binding="s0:StockQuoteSoapBinding">
+      <soap:address location="http://www.contoso.com/stockquote" />
+    </port>
+  </service>
+</definitions>

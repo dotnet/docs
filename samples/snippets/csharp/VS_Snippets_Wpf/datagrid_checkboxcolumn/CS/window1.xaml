@@ -1,0 +1,14 @@
+﻿<Window x:Class="ColumnsArtSample.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Customers" Height="300" Width="300">
+    <Grid>
+        <!--<Snippet1>-->
+        <DataGrid Name="DG1" AutoGenerateColumns="False" ItemsSource="{Binding}">
+            <DataGrid.Columns>
+                <DataGridCheckBoxColumn Header="Online Order?" IsThreeState="True" Binding="{Binding OnlineOrderFlag}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <!--</Snippet1>-->
+    </Grid>
+</Window>

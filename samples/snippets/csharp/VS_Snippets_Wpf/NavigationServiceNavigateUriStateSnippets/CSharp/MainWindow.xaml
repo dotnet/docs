@@ -1,0 +1,19 @@
+﻿<Window x:Class="CSharp.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="MainWindow" Height="664" Width="494" Loaded="MainWindow_Loaded"
+    >
+  <DockPanel>
+
+    <!--Address bar-->
+    <DockPanel DockPanel.Dock="Top">
+      <Label DockPanel.Dock="Left">Address:</Label>
+      <Button DockPanel.Dock="Right" Name="goButton" Click="goButton_Click">Go</Button>
+      <TextBox Name="addressTextBox" Text="pack://application:,,,/FragmentedPage.xaml"></TextBox>
+    </DockPanel>
+    
+    <!--Navigator-->
+    <Frame Name="browserFrame" NavigationUIVisibility="Hidden"></Frame>
+    
+  </DockPanel>
+</Window>

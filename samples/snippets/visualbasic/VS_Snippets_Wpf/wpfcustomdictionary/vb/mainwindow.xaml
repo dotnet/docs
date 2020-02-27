@@ -1,0 +1,17 @@
+﻿<Window x:Class="MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:sys="clr-namespace:System;assembly=System"
+    Title="MainWindow" Height="350" Width="525">
+    <Grid>
+       
+        <RichTextBox Margin="38,18,40,0" Name="richTextBox1" Height="45" VerticalAlignment="Top" SpellCheck.IsEnabled="True" >
+            <SpellCheck.CustomDictionaries>
+                <!-- customwords.lex is included as a content file-->
+                <sys:Uri>pack://application:,,,/customwords.lex</sys:Uri>
+            </SpellCheck.CustomDictionaries>
+        </RichTextBox>
+        
+        <Button Height="23" Margin="97,85,106,0" Name="button1" VerticalAlignment="Top" Click="button1_Click">Enter</Button>
+    </Grid>
+</Window>

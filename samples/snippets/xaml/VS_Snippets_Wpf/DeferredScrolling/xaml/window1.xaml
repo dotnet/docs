@@ -1,0 +1,40 @@
+﻿<Window x:Class="DeferredScrolling.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window1" Height="300" Width="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200" />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+       
+            <!--<SnippetDeferredScrolling>-->
+            <ScrollViewer Grid.Column="0" Grid.Row="0"  Height="200" Name="sv1"  IsDeferredScrollingEnabled="true">
+                <StackPanel>
+                <TextBlock Text="1" Height="50"/>
+                <TextBlock Text="2" Height="50"/>
+                <TextBlock Text="3" Height="50"/>
+                <TextBlock Text="4" Height="50"/>
+                <TextBlock Text="5" Height="50"/>
+                <TextBlock Text="6" Height="50"/>
+                <TextBlock Text="7" Height="50"/>
+                <TextBlock Text="8" Height="50"/>
+                <TextBlock Text="9" Height="50"/>
+                <TextBlock Text="10" Height="50"/>
+                </StackPanel>
+            </ScrollViewer>
+        <!--</SnippetDeferredScrolling>-->
+        <TextBlock Text="VerticalOffset" Grid.Column="0" Grid.Row="1" />
+            <TextBlock Text="ContentVerticalOffset" Grid.Column="0" Grid.Row="2" />
+            <TextBlock x:Name="txt"  Text="{Binding ElementName=sv1, Path=VerticalOffset}" Grid.Column="1" Grid.Row="1"/>
+            <TextBlock x:Name="txt2" Text="{Binding ElementName=sv1, Path=ContentVerticalOffset}" Grid.Column="1" Grid.Row="2"/>
+            
+            
+    </Grid>
+</Window>

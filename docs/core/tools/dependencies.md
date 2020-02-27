@@ -15,7 +15,7 @@ The `<PackageReference>` project file element has the following structure:
 <PackageReference Include="PACKAGE_ID" Version="PACKAGE_VERSION" />
 ```
 
-The `Include` attribute specifies the ID of the package to add to the project. The `Version` attribute specifies the version to get.Versions are specified as per [NuGet version rules](/nuget/create-packages/dependency-versions#version-ranges).
+The `Include` attribute specifies the ID of the package to add to the project. The `Version` attribute specifies the version to get. Versions are specified as per [NuGet version rules](/nuget/create-packages/dependency-versions#version-ranges).
 
 > [!NOTE]
 > If you're not familiar with project-file syntax, see the [MSBuild project reference](/visualstudio/msbuild/msbuild-project-file-schema-reference) documentation for more information.

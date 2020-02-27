@@ -8,7 +8,7 @@ ms.date: 02/24/2020
 
 Creates an array that contains the elements of one array followed by the elements of another array.
 
-**Module:** [Microsoft.FSharp.Collections.Array](array-module.md)
+**Module:** [Microsoft.FSharp.Collections.Array](index.md)
 
 ## Syntax
 
@@ -45,6 +45,6 @@ The following example demonstrates the use of `Array.append`.
 ```
 
 ## See Also
-[Collections.Array Module](array-module.md)
+[Collections.Array Module](index.md)
 
 [Microsoft.FSharp.Collections](../microsoft.fsharp.collections-namespace-[fsharp].md)

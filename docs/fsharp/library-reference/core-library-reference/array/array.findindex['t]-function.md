@@ -71,4 +71,4 @@ Supported in: 2.0, 4.0, Portable
 
 [Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
 
-[Array.find&#60;'T&#62; Function](Array.find%5B%27T%5D-Function-%5BFSharp%5D.md)
+[Array.find&#60;'T&#62; Function](array.find['t]-function.md)

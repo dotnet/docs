@@ -27,7 +27,7 @@ type IEventLoop =
 |Member|Description|
 |------|-----------|
 |[`Invoke`](ieventloop.invoke['t]-method.md)|Requests that the given operation be run synchronously on the event loop.|
-|[`Run`](ieventloop.run-method)|Runs the event loop. A return of **true** indicates that the event loop was restarted.|
+|[`Run`](ieventloop.run-method.md)|Runs the event loop. A return of **true** indicates that the event loop was restarted.|
 |[`ScheduleRestart`](ieventloop.schedulerestart-method.md)|Schedule a restart for the event loop.|
 
 ## See Also

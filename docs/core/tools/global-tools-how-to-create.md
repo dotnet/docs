@@ -29,15 +29,15 @@ This is the first in a series of three tutorials. In this tutorial, you create a
 1. Navigate to the *repository* folder and enter the following command:
 
    ```dotnetcli
-   dotnet new console -n microsoft-botsay
+   dotnet new console -n microsoft.botsay
    ```
 
-   The command creates a new folder named *microsoft-botsay* under the *repository* folder.
+   The command creates a new folder named *microsoft.botsay* under the *repository* folder.
 
-1. Navigate to the *microsoft-botsay* folder.
+1. Navigate to the *microsoft.botsay* folder.
 
    ```console
-   cd microsoft-botsay
+   cd microsoft.botsay
    ```
 
 ## Add the code
@@ -142,7 +142,7 @@ All arguments after the `--` delimiter are passed to your application.
 
 Before you can pack and distribute the application as a tool, you need to modify the project file.
 
-1. Open the *microsoft-botsay.csproj* file and add three new XML nodes to the end of the `<PropertyGroup>` node:
+1. Open the *microsoft.botsay.csproj* file and add three new XML nodes to the end of the `<PropertyGroup>` node:
 
    ```xml
    <PackAsTool>true</PackAsTool>
@@ -179,7 +179,7 @@ Before you can pack and distribute the application as a tool, you need to modify
    dotnet pack
    ```
 
-   The *microsoft-botsay.1.0.0.nupkg* file is created in the folder identified by the `<PackageOutputPath>` value from the *microsoft-botsay.csproj* file, which in this example is the *./nupkg* folder.
+   The *microsoft.botsay.1.0.0.nupkg* file is created in the folder identified by the `<PackageOutputPath>` value from the *microsoft.botsay.csproj* file, which in this example is the *./nupkg* folder.
   
    When you want to release a tool publicly, you can upload it to `https://www.nuget.org`. Once the tool is available on NuGet, developers can install the tool by using the [dotnet tool install](dotnet-tool-install.md) command. For this tutorial you install the package directly from the local *nupkg* folder, so there's no need to upload the package to NuGet.
 

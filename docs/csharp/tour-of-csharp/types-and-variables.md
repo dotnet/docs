@@ -1,7 +1,7 @@
 ---
 title: C# Types and Variables - A tour of the C# language
 description: Learn about defining types and declaring variables in C#
-ms.date: 02/25/202
+ms.date: 02/25/2020
 ms.assetid: f8a8051e-0049-43f1-b594-9c84cc7b1224
 ---
 

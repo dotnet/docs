@@ -26,4 +26,3 @@ fsi
 ## See Also
 [Interactive.Settings Module](interactive.settings-module.md)
 
-[Microsoft.FSharp.Compiler.Interactive Namespace](microsoft.fsharp.compiler.interactive-namespace.md)

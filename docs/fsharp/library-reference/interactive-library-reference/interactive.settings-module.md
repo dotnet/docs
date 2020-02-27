@@ -23,6 +23,3 @@ module Settings
 |Value|Description|
 |-----|-----------|
 |[fsi](settings.fsi-value.md)|The settings associated with the interactive session.|
-
-## See Also
-[Microsoft.FSharp.Compiler.Interactive Namespace](microsoft.fsharp.compiler.interactive-namespace.md)

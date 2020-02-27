@@ -1,14 +1,7 @@
 ---
 title: InteractiveSession.AddPrinter<'T> Method
 description: InteractiveSession.AddPrinter<'T> Method
-keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
 ms.date: 02/26/2020
-ms.topic: language-reference
-ms.prod: visual-studio-dev14
-ms.technology: devlang-fsharp
-ms.assetid: 28afc4f0-3379-48f5-8ef8-91f2a987da55 
 ---
 
 # InteractiveSession.AddPrinter<'T> Method
@@ -18,7 +11,6 @@ Registers a printer that controls the output of the interactive session.
 **Namespace/Module Path:** Microsoft.FSharp.Compiler.Interactive
 
 **Assembly:** FSharp.Compiler.Interactive.Settings (in FSharp.Compiler.Interactive.Settings.dll)
-
 
 ## Syntax
 
@@ -31,17 +23,7 @@ interactiveSession.AddPrinter ()
 ```
 
 #### Parameters
-Type: **'T -&gt;**[string](https://msdn.microsoft.com/library/12b97856-ec80-4f70-a018-afb0753f755a)
-
-
-## Platforms
-Windows 7, Windows Vista SP2, Windows XP SP3, Windows XP x64 SP2, Windows Server 2008 R2, Windows Server 2008 SP2, Windows Server 2003 SP2
-
-
-## Version Information
-**F# Runtime**
-
-Supported in: 2.0, 4.0
+Type: `'T -> [string](../core-library-reference/core.string-type-abbreviation-[fsharp].md)`
 
 ## See Also
 [Interactive.InteractiveSession Class](Interactive.InteractiveSession-Class.md)

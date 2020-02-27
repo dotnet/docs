@@ -1,14 +1,7 @@
 ---
 title: InteractiveSession.AddPrintTransformer<'T> Method
 description: InteractiveSession.AddPrintTransformer<'T> Method
-keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
 ms.date: 02/26/2020
-ms.topic: language-reference
-ms.prod: visual-studio-dev14
-ms.technology: devlang-fsharp
-ms.assetid: aff3b713-cdbd-44be-b83f-83fcf51c4ec0 
 ---
 
 # InteractiveSession.AddPrintTransformer<'T> Method
@@ -18,7 +11,6 @@ Registers a print transformer that controls the output of the interactive sessio
 **Namespace/Module Path:** Microsoft.FSharp.Compiler.Interactive
 
 **Assembly:** FSharp.Compiler.Interactive.Settings (in FSharp.Compiler.Interactive.Settings.dll)
-
 
 ## Syntax
 
@@ -31,16 +23,7 @@ interactiveSession.AddPrintTransformer ()
 ```
 
 #### Parameters
-Type: **'T -&gt;**obj
-
-## Platforms
-Windows 7, Windows Vista SP2, Windows XP SP3, Windows XP x64 SP2, Windows Server 2008 R2, Windows Server 2008 SP2, Windows Server 2003 SP2
-
-
-## Version Information
-**F# Runtime**
-
-Supported in: 2.0, 4.0
+Type: `'T -> obj`
 
 ## See Also
 [Interactive.InteractiveSession Class](Interactive.InteractiveSession-Class.md)

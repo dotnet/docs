@@ -1,14 +1,7 @@
 ---
 title: Interactive.IEventLoop Interface
 description: Interactive.IEventLoop Interface
-keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
 ms.date: 02/26/2020
-ms.topic: language-reference
-ms.prod: visual-studio-dev14
-ms.technology: devlang-fsharp
-ms.assetid: ad7e29ac-ea2a-4749-9576-41af006115cb 
 ---
 
 # Interactive.IEventLoop Interface
@@ -19,16 +12,13 @@ An event loop used by the currently executing F# Interactive session to execute 
 
 **Assembly:** FSharp.Compiler.Interactive.Settings (in FSharp.Compiler.Interactive.Settings.dll)
 
-
 ## Syntax
 
 ```fsharp
 type IEventLoop =
-interface
-abstract this.Invoke : (unit -> 'T) -> 'T
-abstract this.Run : unit -> bool
-abstract this.ScheduleRestart : unit -> unit
-end
+    abstract this.Invoke : (unit -> 'T) -> 'T
+    abstract this.Run : unit -> bool
+    abstract this.ScheduleRestart : unit -> unit
 ```
 
 ## Instance Members
@@ -36,18 +26,9 @@ end
 
 |Member|Description|
 |------|-----------|
-|[Invoke](https://msdn.microsoft.com/library/f9002b6e-d525-4abc-ad4b-0ff0888c16d6)|Requests that the given operation be run synchronously on the event loop.|
-|[Run](https://msdn.microsoft.com/library/24209128-a677-41e5-97e2-b8e95a0369d8)|Runs the event loop. A return of **true** indicates that the event loop was restarted.|
-|[ScheduleRestart](https://msdn.microsoft.com/library/d9d408fe-47d5-45bf-807a-b5d856231e4b)|Schedule a restart for the event loop.|
-
-## Platforms
-Windows 7, Windows Vista SP2, Windows XP SP3, Windows XP x64 SP2, Windows Server 2008 R2, Windows Server 2008 SP2, Windows Server 2003 SP2
-
-
-## Version Information
-**F# Runtime**
-
-Supported in: 2.0, 4.0
+|[`Invoke`](ieventloop.invoke['t]-method.md)|Requests that the given operation be run synchronously on the event loop.|
+|[`Run`](ieventloop.run-method)|Runs the event loop. A return of **true** indicates that the event loop was restarted.|
+|[`ScheduleRestart`](ieventloop.schedulerestart-method.md)|Schedule a restart for the event loop.|
 
 ## See Also
 [Microsoft.FSharp.Compiler.Interactive Namespace](index.md)

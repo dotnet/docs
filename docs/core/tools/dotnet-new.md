@@ -14,7 +14,7 @@ ms.date: 02/13/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet new <TEMPLATE> [--dry-run] [--force] [-i|--install] [-lang|--language] [-n|--name] 
+dotnet new <TEMPLATE> [--dry-run] [--force] [-i|--install] [-lang|--language] [-n|--name]
     [--nuget-source] [-o|--output] [-u|--uninstall] [--update-apply] [--update-check] [Template options]
 dotnet new <TEMPLATE> [-l|--list] [--type]
 dotnet new [-h|--help]
@@ -168,7 +168,7 @@ Each project template may have additional options available. The core templates 
 
   For a list of default C# versions, see [Defaults](../../csharp/language-reference/configure-language-version.md#defaults).
 
-- **`--no-restore`** 
+- **`--no-restore`**
 
   If specified, doesn't execute an implicit restore during project creation. Available since .NET Core 2.2 SDK.
 
@@ -196,7 +196,7 @@ Each project template may have additional options available. The core templates 
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Specifies the [framework](../../standard/frameworks.md) to target. The default value is `netcoreapp3.1`. Available since .NET Core 3.1 SDK. 
+  Specifies the [framework](../../standard/frameworks.md) to target. The default value is `netcoreapp3.1`. Available since .NET Core 3.1 SDK.
 
 - **`--langVersion <VERSION_NUMBER>`**
 
@@ -228,7 +228,7 @@ Each project template may have additional options available. The core templates 
 
 - **`-f|--framework <FRAMEWORK>`**
 
-  Specifies the [framework](../../standard/frameworks.md) to target. The default value is `netcoreapp3.1`. Available since .NET Core 3.1 SDK. 
+  Specifies the [framework](../../standard/frameworks.md) to target. The default value is `netcoreapp3.1`. Available since .NET Core 3.1 SDK.
 
 - **`--exclude-launch-settings`**
 
@@ -497,7 +497,7 @@ Each project template may have additional options available. The core templates 
 
 - **`-au|--auth <AUTHENTICATION_TYPE>`**
 
-  The type of authentication to use. Available since .NET Core 3.0 SDK. 
+  The type of authentication to use. Available since .NET Core 3.0 SDK.
   
   The possible values are:
 
@@ -506,7 +506,7 @@ Each project template may have additional options available. The core templates 
 
 - **`--exclude-launch-settings`**
 
-  Excludes *launchSettings.json* from the generated template. 
+  Excludes *launchSettings.json* from the generated template.
 
 - **`--no-restore`**
 
@@ -538,7 +538,7 @@ Each project template may have additional options available. The core templates 
 
 - **`--exclude-launch-settings`**
 
-  Excludes *launchSettings.json* from the generated template. 
+  Excludes *launchSettings.json* from the generated template.
 
 - **`-f|--framework <FRAMEWORK>`**
 

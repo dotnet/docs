@@ -164,7 +164,7 @@ Naming variables in unit tests is as important, if not more important, than nami
 
 Magic strings can cause confusion to the reader of your tests. If a string looks out of the ordinary, they may wonder why a certain value was chosen for a parameter or return value. This may lead them to take a closer look at the implementation details, rather than focus on the test.
 
-> [!TIP] 
+> [!TIP]
 > When writing tests, you should aim to express as much intent as possible. In the case of magic strings, a good approach is to assign these values to constants.
 
 #### Bad:
@@ -203,7 +203,7 @@ If you require a similar object or state for your tests, prefer a helper method 
 
 In unit testing frameworks, `Setup` is called before each and every unit test within your test suite. While some may see this as a useful tool, it generally ends up leading to bloated and hard to read tests. Each test will generally have different requirements in order to get the test up and running. Unfortunately, `Setup` forces you to use the exact same requirements for each test.
 
-> [!NOTE] 
+> [!NOTE]
 > xUnit has removed both SetUp and TearDown as of version 2.x
 
 #### Bad:
@@ -234,7 +234,7 @@ When writing your tests, try to only include one Assert per test. Common approac
 
 - If one Assert fails, the subsequent Asserts will not be evaluated.
 - Ensures you are not asserting multiple cases in your tests.
-- Gives you the entire picture as to why your tests are failing. 
+- Gives you the entire picture as to why your tests are failing.
 
 When introducing multiple asserts into a test case, it is not guaranteed that all of the asserts will be executed. In most unit testing frameworks, once an assertion fails in a unit test, the proceeding tests are automatically considered to be failing. This can be confusing as functionality that is actually working, will be shown as failing.
 
@@ -248,7 +248,7 @@ When introducing multiple asserts into a test case, it is not guaranteed that al
 [!code-csharp[AfterMultipleAsserts](../../../samples/csharp/unit-testing-best-practices/after/StringCalculatorTests.cs#AfterMultipleAsserts)]
 
 ### Validate private methods by unit testing public methods
-In most cases, there should not be a need to test a private method. Private methods are an implementation detail. You can think of it this way: private methods never exist in isolation. At some point, there is going to be a public facing method that calls the private method as part of its implementation. What you should care about is the end result of the public method that calls into the private one. 
+In most cases, there should not be a need to test a private method. Private methods are an implementation detail. You can think of it this way: private methods never exist in isolation. At some point, there is going to be a public facing method that calls the private method as part of its implementation. What you should care about is the end result of the public method that calls into the private one.
 
 Consider the following case
 
@@ -265,9 +265,9 @@ private string TrimInput(string input)
 }
 ```
 
-Your first reaction may be to start writing a test for `TrimInput` because you want to make sure that the method is working as expected. However, it is entirely possible that `ParseLogLine` manipulates `sanitizedInput` in such a way that you do not expect, rendering a test against `TrimInput` useless. 
+Your first reaction may be to start writing a test for `TrimInput` because you want to make sure that the method is working as expected. However, it is entirely possible that `ParseLogLine` manipulates `sanitizedInput` in such a way that you do not expect, rendering a test against `TrimInput` useless.
 
-The real test should be done against the public facing method `ParseLogLine` because that is what you should ultimately care about. 
+The real test should be done against the public facing method `ParseLogLine` because that is what you should ultimately care about.
 
 ```csharp
 public void ParseLogLine_ByDefault_ReturnsTrimmedResult()
@@ -288,11 +288,11 @@ One of the principles of a unit test is that it must have full control of the sy
 ```csharp
 public int GetDiscountedPrice(int price)
 {
-    if(DateTime.Now.DayOfWeek == DayOfWeek.Tuesday) 
+    if(DateTime.Now.DayOfWeek == DayOfWeek.Tuesday)
     {
         return price / 2;
     }
-    else 
+    else
     {
         return price;
     }
@@ -321,7 +321,7 @@ public void GetDiscountedPrice_OnTuesday_ReturnsHalfPrice()
 }
 ```
 
-Unfortunately, you will quickly realize that there are a couple problems with your tests. 
+Unfortunately, you will quickly realize that there are a couple problems with your tests.
 
 - If the test suite is run on a Tuesday, the second test will pass, but the first test will fail.
 - If the test suite is run on any other day, the first test will pass, but the second test will fail.
@@ -336,11 +336,11 @@ public interface IDateTimeProvider
 
 public int GetDiscountedPrice(int price, IDateTimeProvider dateTimeProvider)
 {
-    if(dateTimeProvider.DayOfWeek() == DayOfWeek.Tuesday) 
+    if(dateTimeProvider.DayOfWeek() == DayOfWeek.Tuesday)
     {
         return price / 2;
     }
-    else 
+    else
     {
         return price;
     }

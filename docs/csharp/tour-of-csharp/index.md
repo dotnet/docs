@@ -26,14 +26,14 @@ The "Hello, World" program is traditionally used to introduce a programming lang
 
 [!code-csharp[Hello World](~/samples/snippets/csharp/tour/hello/Program.cs)]
 
-C# source files typically have the file extension `.cs`. To create this program, first download and install the [.NET Core SDK](https://dotnet.microsoft.com/download). Then, execute the command `dotnet new console -o hello` to create a new program, and a build script. The program and build script are in the files `Program.cs` and `hello.csproj`, respectively. You build and run the application with the `run` commands:
+C# source files typically have the file extension `.cs`. To create this program, first download and install the [.NET Core SDK](https://dotnet.microsoft.com/download). Then, execute the command `dotnet new console -o hello` to create a new program and a build script. The program and build script are in the files `Program.cs` and `hello.csproj`, respectively. You build and run the application with the `run` commands:
 
 ```console
 cd hello
 dotnet run
 ```
 
-That produces the following output: 
+The program produces the following output: 
 
 ```console
 Hello, World!

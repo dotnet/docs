@@ -50,7 +50,7 @@ The following list provides an overview of the kinds of members a class can cont
 
 ## Accessibility
 
-Each member of a class has an associated accessibility, which controls the regions of program text that can access the member. There are six possible forms of accessibility. These accessors are summarized below.
+Each member of a class has an associated accessibility, which controls the regions of program text that can access the member. There are six possible forms of accessibility. The access modifiers are summarized below.
 
 - `public`
   - Access isn't limited

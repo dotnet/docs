@@ -1,10 +1,10 @@
 ---
-title: Interactive.Settings Module (F#)
-description: Interactive.Settings Module (F#)
+title: Interactive.Settings Module
+description: Interactive.Settings Module
 ms.date: 02/26/2020
 ---
 
-# Interactive.Settings Module (F#)
+# Interactive.Settings Module
 
 Contains the interactive session object that you can use to customize the behavior of an F# interactive session.
 
@@ -23,6 +23,3 @@ module Settings
 |Value|Description|
 |-----|-----------|
 |[fsi](settings.fsi-value.md)|The settings associated with the interactive session.|
-
-## See Also
-[Microsoft.FSharp.Compiler.Interactive Namespace](microsoft.fsharp.compiler.interactive-namespace.md)

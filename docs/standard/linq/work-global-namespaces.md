@@ -1,5 +1,6 @@
 ---
 title: "Work with global namespaces in Visual Basic - LINQ to XML"
+description: Learn how to use the Imports statement to declare XML namespaces using XML literals in Visual Basic.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"
@@ -11,11 +12,14 @@ ms.assetid: 0a8064d5-e02f-4315-ad48-6deaa443a2f0
 
 One of the key features of XML literals in Visual Basic is the capability to declare XML namespaces by using the `Imports` statement. Using this feature, you can declare an XML namespace that uses a prefix, or you can declare a default XML namespace.
 
-This capability is useful in two situations. First, namespaces declared in XML literals do not carry over into embedded expressions. Declaring global namespaces reduces the amount of work needed to use embedded expressions with namespaces. Second, you must declare global namespaces in order to use namespaces with XML properties.
+This capability is useful in two situations:
+
+- Namespaces declared in XML literals don't carry over into embedded expressions. Declaring global namespaces reduces the amount of work needed to use embedded expressions with namespaces.
+- You must declare global namespaces in order to use namespaces with XML properties.
 
 You can declare global namespaces at the project level. You can also declare global namespaces at the module level, which overrides the project-level global namespaces. Finally, you can override global namespaces in an XML literal.
 
-When using XML literals or XML properties that are in globally-declared namespaces, you can see the expanded name of XML literals or properties by hovering over them in Visual Studio. You will see the expanded name in a tooltip.
+When using XML literals or XML properties that are in globally declared namespaces, you can see the expanded name of XML literals or properties by hovering over them in Visual Studio. You will see the expanded name in a tooltip.
 
 You can get an <xref:System.Xml.Linq.XNamespace> object that corresponds to a global namespace using the `GetXmlNamespace` method.
 

@@ -24,7 +24,7 @@ Public Structure systemInfo
     Public memory As Long  
     Public diskDrives() As String  
     Public purchaseDate As Date  
-End Structure   
+End Structure
 ```  
   
  You access the values of an array within a structure the same way you access a property on an object. The following example illustrates this.  

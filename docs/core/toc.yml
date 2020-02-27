@@ -266,6 +266,28 @@
     href: additional-tools/dotnet-svcutil.xmlserializer-guide.md
   - name: XML Serializer Generator
     href: additional-tools/xml-serializer-generator.md
+- name: Application deployment
+  items:
+  - name: Overview
+    href: deploying/index.md
+  - name: Publish apps with the CLI
+    href: deploying/deploy-with-cli.md
+  - name: Deploy apps with Visual Studio
+    href: deploying/deploy-with-vs.md
+  - name: Create a NuGet package with the CLI
+    href: deploying/creating-nuget-packages.md
+  - name: Self-contained deployment runtime roll forward
+    href: deploying/runtime-patch-selection.md
+  - name: Runtime package store
+    href: deploying/runtime-store.md
+- name: Docker
+  items:
+  - name: Introduction to .NET and Docker
+    href: docker/introduction.md
+  - name: Containerize a .NET Core app
+    href: docker/build-container.md
+  - name: Container tools in Visual Studio
+    href: /visualstudio/containers/overview
 - name: Run-time configuration
   items:
   - name: Settings
@@ -318,28 +340,6 @@
     href: porting/wpf.md
   - name: Port C++/CLI projects
     href: porting/cpp-cli.md
-- name: Application deployment
-  items:
-  - name: Overview
-    href: deploying/index.md
-  - name: Publish apps with the CLI
-    href: deploying/deploy-with-cli.md
-  - name: Deploy apps with Visual Studio
-    href: deploying/deploy-with-vs.md
-  - name: Create a NuGet package with the CLI
-    href: deploying/creating-nuget-packages.md
-  - name: Self-contained deployment runtime roll forward
-    href: deploying/runtime-patch-selection.md
-  - name: Runtime package store
-    href: deploying/runtime-store.md
-- name: Docker
-  items:
-  - name: Introduction to .NET and Docker
-    href: docker/introduction.md
-  - name: Containerize a .NET Core app
-    href: docker/build-container.md
-  - name: Container tools in Visual Studio
-    href: /visualstudio/containers/overview
 - name: Unit testing
   href: testing/index.md
   items:

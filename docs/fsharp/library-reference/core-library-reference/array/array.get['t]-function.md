@@ -1,6 +1,6 @@
 ---
-title: Array.get<'T> Function (F#)
-description: Array.get<'T> Function (F#)
+title: Array.get<'T> Function
+description: Array.get<'T> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: 44d9945e-fd86-4535-9d29-54ba0c129eb8 
 ---
 
-# Array.get<'T> Function (F#)
+# Array.get<'T> Function
 
 Gets an element from an array.
 
@@ -70,6 +70,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

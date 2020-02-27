@@ -1,6 +1,6 @@
 ---
-title: Array.choose<'T,'U> Function (F#)
-description: Array.choose<'T,'U> Function (F#)
+title: Array.choose<'T,'U> Function
+description: Array.choose<'T,'U> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: ce0e14f1-4eba-47eb-a9c7-1ca14202b57b 
 ---
 
-# Array.choose<'T,'U> Function (F#)
+# Array.choose<'T,'U> Function
 
 Applies the given function to each element of the array. Returns the array comprised of the results `x` for each element where the function returns `Some(x)`.
 
@@ -70,6 +70,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

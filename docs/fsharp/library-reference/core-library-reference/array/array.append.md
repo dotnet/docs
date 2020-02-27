@@ -1,6 +1,6 @@
 ---
-title: Array.append<'T> Function (F#)
-description: Array.append<'T> Function (F#)
+title: Array.append<'T> Function
+description: Array.append<'T> Function
 ms.date: 02/24/2020
 ---
 

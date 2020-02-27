@@ -1,6 +1,6 @@
 ---
-title: Array.partition<'T> Function (F#)
-description: Array.partition<'T> Function (F#)
+title: Array.partition<'T> Function
+description: Array.partition<'T> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: a864c5fc-513c-467b-9d60-72ed7124941f 
 ---
 
-# Array.partition<'T> Function (F#)
+# Array.partition<'T> Function
 
 Splits the collection into two collections, containing the elements for which the given predicate returns **true** and **false** respectively.
 
@@ -73,6 +73,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

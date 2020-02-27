@@ -1,6 +1,6 @@
 ---
-title: Array.length<'T> Function (F#)
-description: Array.length<'T> Function (F#)
+title: Array.length<'T> Function
+description: Array.length<'T> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: 760ca92f-46d4-44f9-aa5b-caab442d3f51 
 ---
 
-# Array.length<'T> Function (F#)
+# Array.length<'T> Function
 
 Returns the length of an array.
 
@@ -72,6 +72,6 @@ Supported in: 2.0, 4.0, Portable
 
 ## See Also
 
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

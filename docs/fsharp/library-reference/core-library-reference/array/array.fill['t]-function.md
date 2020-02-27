@@ -1,6 +1,6 @@
 ---
-title: Array.fill<'T> Function (F#)
-description: Array.fill<'T> Function (F#)
+title: Array.fill<'T> Function
+description: Array.fill<'T> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: 28945224-b757-4a9c-8bd0-661ef6599f95 
 ---
 
-# Array.fill<'T> Function (F#)
+# Array.fill<'T> Function
 
 Fills a range of elements of the array with the given value.
 
@@ -80,6 +80,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

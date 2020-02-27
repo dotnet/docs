@@ -1,6 +1,6 @@
 ---
-title: Array.mapi<'T,'U> Function (F#)
-description: Array.mapi<'T,'U> Function (F#)
+title: Array.mapi<'T,'U> Function
+description: Array.mapi<'T,'U> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: 84de1baa-d7b3-42c0-a2e1-a89abf4cdb0f 
 ---
 
-# Array.mapi<'T,'U> Function (F#)
+# Array.mapi<'T,'U> Function
 
 Builds a new array whose elements are the results of applying the given function to each of the elements of the array. The integer index passed to the function indicates the index of element being transformed.
 
@@ -72,6 +72,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

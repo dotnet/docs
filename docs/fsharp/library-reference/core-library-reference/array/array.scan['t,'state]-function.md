@@ -1,6 +1,6 @@
 ---
-title: Array.scan<'T,'State> Function (F#)
-description: Array.scan<'T,'State> Function (F#)
+title: Array.scan<'T,'State> Function
+description: Array.scan<'T,'State> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: d00f3357-bf08-4596-a609-0e72f7c176d4 
 ---
 
-# Array.scan<'T,'State> Function (F#)
+# Array.scan<'T,'State> Function
 
 Like [`Array.fold`](https://msdn.microsoft.com/library/5ed9dd3b-3694-4567-94d0-fd9a24474e09), but returns the intermediate and final results.
 
@@ -90,6 +90,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

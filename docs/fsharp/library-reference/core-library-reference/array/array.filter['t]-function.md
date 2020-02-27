@@ -1,6 +1,6 @@
 ---
-title: Array.filter<'T> Function (F#)
-description: Array.filter<'T> Function (F#)
+title: Array.filter<'T> Function
+description: Array.filter<'T> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: f01e95ba-4398-4b22-8373-b6de6c51a851 
 ---
 
-# Array.filter<'T> Function (F#)
+# Array.filter<'T> Function
 
 Returns a new collection containing only the elements of the collection for which the given predicate returns `true`.
 
@@ -76,7 +76,7 @@ Supported in: 2.0, 4.0, Portable
 
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
 

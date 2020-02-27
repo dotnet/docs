@@ -1,6 +1,6 @@
 ---
-title: Array.foldBack<'T,'State> Function (F#)
-description: Array.foldBack<'T,'State> Function (F#)
+title: Array.foldBack<'T,'State> Function
+description: Array.foldBack<'T,'State> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: 67f07981-c84a-4ca1-b2aa-04367472e5c9 
 ---
 
-# Array.foldBack<'T,'State> Function (F#)
+# Array.foldBack<'T,'State> Function
 
 Applies a function to each element of the array, threading an accumulator argument through the computation. If the input function is **f** and the elements are **i0...iN** then computes **f i0 (...(f iN s))**.
 
@@ -92,7 +92,7 @@ Supported in: 2.0, 4.0, Portable
 
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
 

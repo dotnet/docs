@@ -1,6 +1,6 @@
 ---
-title: Array.contains<'T> Function (F#)
-description: Array.contains<'T> Function (F#)
+title: Array.contains<'T> Function
+description: Array.contains<'T> Function
 keywords: visual f#, f#, functional programming
 author: liboz
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: 3fe49df1-e2c5-4a11-8210-100b2294e94f
 ---
 
-# Array.contains<'T> Function (F#)
+# Array.contains<'T> Function
 
 Evaluates to `true` if the given element is in the input array.
 
@@ -76,6 +76,6 @@ Supported in: 4.0, Portable
 
 ## See Also
 
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

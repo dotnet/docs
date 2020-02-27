@@ -1,6 +1,6 @@
 ---
-title: Array.zeroCreate<'T> Function (F#)
-description: Array.zeroCreate<'T> Function (F#)
+title: Array.zeroCreate<'T> Function
+description: Array.zeroCreate<'T> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: b05738b4-2cdb-467b-aa7b-1d9ec86e0587 
 ---
 
-# Array.zeroCreate<'T> Function (F#)
+# Array.zeroCreate<'T> Function
 
 Creates an array where the entries are initially the default value [Unchecked.defaultof&lt;'T&gt;](https://msdn.microsoft.com/library/9ff97f2a-1bd4-4f4c-afbe-5886a74ab977).
 
@@ -60,6 +60,6 @@ Supported in: 2.0, 4.0, Portable
 
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

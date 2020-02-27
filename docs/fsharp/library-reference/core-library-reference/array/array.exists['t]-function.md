@@ -1,6 +1,6 @@
 ---
-title: Array.exists<'T> Function (F#)
-description: Array.exists<'T> Function (F#)
+title: Array.exists<'T> Function
+description: Array.exists<'T> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: c555dd2b-55af-457e-bd0d-8066fc7dac6c 
 ---
 
-# Array.exists<'T> Function (F#)
+# Array.exists<'T> Function
 
 Tests if any element of the array satisfies the given predicate.
 
@@ -74,6 +74,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

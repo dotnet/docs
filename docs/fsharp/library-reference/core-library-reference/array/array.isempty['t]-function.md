@@ -1,6 +1,6 @@
 ---
-title: Array.isEmpty<'T> Function (F#)
-description: Array.isEmpty<'T> Function (F#)
+title: Array.isEmpty<'T> Function
+description: Array.isEmpty<'T> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: 154db224-1b0a-471e-bc06-6d160fbd0b4b 
 ---
 
-# Array.isEmpty<'T> Function (F#)
+# Array.isEmpty<'T> Function
 
 Tests whether an array is empty.
 
@@ -67,6 +67,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

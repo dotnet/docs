@@ -1,6 +1,6 @@
 ---
-title: Array.map2<'T1,'T2,'U> Function (F#)
-description: Array.map2<'T1,'T2,'U> Function (F#)
+title: Array.map2<'T1,'T2,'U> Function
+description: Array.map2<'T1,'T2,'U> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: fb4d9619-58bb-4073-b5b4-9bc315ca035d 
 ---
 
-# Array.map2<'T1,'T2,'U> Function (F#)
+# Array.map2<'T1,'T2,'U> Function
 
 Builds a new collection whose elements are the results of applying the given function to the corresponding elements of the two collections pairwise. The two input arrays must have the same lengths, otherwise [ArgumentException](https://msdn.microsoft.com/library/system.argumentexception.aspx) is raised.
 
@@ -73,6 +73,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

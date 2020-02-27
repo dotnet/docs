@@ -1,6 +1,6 @@
 ---
-title: Array.Parallel Module (F#)
-description: Array.Parallel Module (F#)
+title: Array.Parallel Module
+description: Array.Parallel Module
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: f79592a6-b5f9-4972-a700-51ed689495fb 
 ---
 
-# Array.Parallel Module (F#)
+# Array.Parallel Module
 
 Provides parallel operations on arrays
 
@@ -51,4 +51,4 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 4.0
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)

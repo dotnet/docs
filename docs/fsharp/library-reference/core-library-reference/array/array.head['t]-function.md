@@ -1,6 +1,6 @@
 ---
-title: Array.head<'T> Function (F#)
-description: Array.head<'T> Function (F#)
+title: Array.head<'T> Function
+description: Array.head<'T> Function
 keywords: visual f#, f#, functional programming
 author: erikschierboom
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: 3c376852-11f0-4286-9210-6d8a719ae626
 ---
 
-# Array.head<'T> Function (F#)
+# Array.head<'T> Function
 
 Returns the first element of the array.
 
@@ -63,6 +63,6 @@ Supported in: 4.0, Portable
 
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

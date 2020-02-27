@@ -1,6 +1,6 @@
 ---
-title: Array.max<'T> Function (F#)
-description: Array.max<'T> Function (F#)
+title: Array.max<'T> Function
+description: Array.max<'T> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: b2bece1e-efc4-4921-bf3c-f001e6bea48a 
 ---
 
-# Array.max<'T> Function (F#)
+# Array.max<'T> Function
 
 Returns the greatest of all elements of the array, compared by using [Operators.max](https://msdn.microsoft.com/library/9a988328-00e9-467b-8dfa-e7a6990f6cce) on the function result.
 
@@ -68,6 +68,6 @@ Supported in: 2.0, 4.0, Portable
 
 ## See Also
 
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

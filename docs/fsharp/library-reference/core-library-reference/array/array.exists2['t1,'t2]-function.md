@@ -1,6 +1,6 @@
 ---
-title: Array.exists2<'T1,'T2> Function (F#)
-description: Array.exists2<'T1,'T2> Function (F#)
+title: Array.exists2<'T1,'T2> Function
+description: Array.exists2<'T1,'T2> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: 56887966-8677-49f2-a327-5ec17d978708 
 ---
 
-# Array.exists2<'T1,'T2> Function (F#)
+# Array.exists2<'T1,'T2> Function
 
 Tests if any pair of corresponding elements of the arrays satisfies the given predicate.
 
@@ -74,6 +74,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

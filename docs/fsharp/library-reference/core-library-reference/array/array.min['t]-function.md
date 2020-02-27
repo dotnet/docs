@@ -1,6 +1,6 @@
 ---
-title: Array.min<'T> Function (F#)
-description: Array.min<'T> Function (F#)
+title: Array.min<'T> Function
+description: Array.min<'T> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: 3bce9862-a6a3-4a4d-9193-3a5f14fdfe37 
 ---
 
-# Array.min<'T> Function (F#)
+# Array.min<'T> Function
 
 Returns the lowest of all elements of the array, compared by using [Operators.min](https://msdn.microsoft.com/library/adea4fd7-bfad-4834-989c-7878aca81fed).
 
@@ -68,6 +68,6 @@ Supported in: 2.0, 4.0, Portable
 
 ## See Also
 
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

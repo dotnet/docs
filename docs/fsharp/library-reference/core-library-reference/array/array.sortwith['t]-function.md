@@ -1,6 +1,6 @@
 ---
-title: Array.sortWith<'T> Function (F#)
-description: Array.sortWith<'T> Function (F#)
+title: Array.sortWith<'T> Function
+description: Array.sortWith<'T> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: 4e91b985-3163-4a46-b46b-ee2e759c3403 
 ---
 
-# Array.sortWith<'T> Function (F#)
+# Array.sortWith<'T> Function
 
 Sorts the elements of an array, using the given comparison function as the order, returning a new array.
 
@@ -79,6 +79,6 @@ Supported in: 2.0, 4.0, Portable
 
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

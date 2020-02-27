@@ -1,6 +1,6 @@
 ---
-title: Array.blit<'T> Function (F#)
-description: Array.blit<'T> Function (F#)
+title: Array.blit<'T> Function
+description: Array.blit<'T> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: 1b234cc2-dbd1-4330-b6f1-3ffc0ad5ed75 
 ---
 
-# Array.blit<'T> Function (F#)
+# Array.blit<'T> Function
 
 Reads a range of elements from the first array and writes them into the second.
 
@@ -89,6 +89,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

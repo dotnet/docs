@@ -1,6 +1,6 @@
 ---
-title: Array.iteri2<'T1,'T2> Function (F#)
-description: Array.iteri2<'T1,'T2> Function (F#)
+title: Array.iteri2<'T1,'T2> Function
+description: Array.iteri2<'T1,'T2> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: d0dea2a2-670c-4dd3-a562-91eb02792be3 
 ---
 
-# Array.iteri2<'T1,'T2> Function (F#)
+# Array.iteri2<'T1,'T2> Function
 
 Applies the given function to a pair of elements drawn from matching indices in two arrays, also passing the index of the elements. The two arrays must have the same lengths, otherwise **System.ArgumentException** is raised.
 
@@ -81,6 +81,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

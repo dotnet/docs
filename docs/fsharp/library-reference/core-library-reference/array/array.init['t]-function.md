@@ -1,6 +1,6 @@
 ---
-title: Array.init<'T> Function (F#)
-description: Array.init<'T> Function (F#)
+title: Array.init<'T> Function
+description: Array.init<'T> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: 5eb2f51c-a411-4e40-9b67-e8b3834b64ae 
 ---
 
-# Array.init<'T> Function (F#)
+# Array.init<'T> Function
 
 Creates an array given the dimension and a generator function to compute the elements.
 
@@ -72,6 +72,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

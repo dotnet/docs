@@ -1,6 +1,6 @@
 ---
-title: Array.sub<'T> Function (F#)
-description: Array.sub<'T> Function (F#)
+title: Array.sub<'T> Function
+description: Array.sub<'T> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: 825d39fa-6e6e-42d4-bb6c-75ead30ff30b 
 ---
 
-# Array.sub<'T> Function (F#)
+# Array.sub<'T> Function
 
 Builds a new array that contains the given subrange specified by starting index and length.
 
@@ -79,6 +79,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

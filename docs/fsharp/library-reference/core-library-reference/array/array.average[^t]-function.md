@@ -1,6 +1,6 @@
 ---
-title: Array.average<^T> Function (F#)
-description: Array.average<^T> Function (F#)
+title: Array.average<^T> Function
+description: Array.average<^T> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: bf220f95-eb46-4985-bf94-d9ef15269aef 
 ---
 
-# Array.average<^T> Function (F#)
+# Array.average<^T> Function
 
 Returns the average of the elements in the array.
 
@@ -66,6 +66,6 @@ Average: 5.500000
 
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

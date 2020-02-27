@@ -1,6 +1,6 @@
 ---
-title: Array.forall2<'T1,'T2> Function (F#)
-description: Array.forall2<'T1,'T2> Function (F#)
+title: Array.forall2<'T1,'T2> Function
+description: Array.forall2<'T1,'T2> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: 1a0e85d9-c390-46f3-a3e3-c53de121f639 
 ---
 
-# Array.forall2<'T1,'T2> Function (F#)
+# Array.forall2<'T1,'T2> Function
 
 Tests if all corresponding elements of the array satisfy the given predicate pairwise.
 
@@ -74,6 +74,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

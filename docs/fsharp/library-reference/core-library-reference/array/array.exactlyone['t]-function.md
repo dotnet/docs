@@ -1,6 +1,6 @@
 ---
-title: Array.exactlyOne<'T> Function (F#)
-description: Array.exactlyOne<'T> Function (F#)
+title: Array.exactlyOne<'T> Function
+description: Array.exactlyOne<'T> Function
 keywords: visual f#, f#, functional programming
 author: erikschierboom
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: e8315847-d65e-49c9-8cf2-450b8b395ffc
 ---
 
-# Array.exactlyOne<'T> Function (F#)
+# Array.exactlyOne<'T> Function
 
 Returns the only element of the array.
 
@@ -63,6 +63,6 @@ Supported in: 4.0, Portable
 
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

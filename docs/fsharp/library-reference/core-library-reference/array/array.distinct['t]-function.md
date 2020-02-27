@@ -1,6 +1,6 @@
 ---
-title: Array.distinct<'T> Function (F#)
-description: Array.distinct<'T> Function (F#)
+title: Array.distinct<'T> Function
+description: Array.distinct<'T> Function
 keywords: visual f#, f#, functional programming
 author: liboz
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: 46f7d775-a72b-4de7-902c-9eb4b8b44b1b
 ---
 
-# Array.distinct<'T> Function (F#)
+# Array.distinct<'T> Function
 
 Returns an array that contains no duplicate entries according to generic hash and equality comparisons on the entries. If an element occurs multiple times in the array then the later occurrences are discarded.
 
@@ -66,6 +66,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 4.0, Portable
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

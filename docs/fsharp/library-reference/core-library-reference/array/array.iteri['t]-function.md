@@ -1,6 +1,6 @@
 ---
-title: Array.iteri<'T> Function (F#)
-description: Array.iteri<'T> Function (F#)
+title: Array.iteri<'T> Function
+description: Array.iteri<'T> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: cc1636c6-296e-492c-a497-8d4439c32107 
 ---
 
-# Array.iteri<'T> Function (F#)
+# Array.iteri<'T> Function
 
 Applies the given function to each element of the array. The integer passed to the function indicates the index of element.
 
@@ -75,6 +75,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

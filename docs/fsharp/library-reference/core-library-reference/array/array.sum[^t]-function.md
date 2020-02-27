@@ -1,6 +1,6 @@
 ---
-title: Array.sum<^T> Function (F#)
-description: Array.sum<^T> Function (F#)
+title: Array.sum<^T> Function
+description: Array.sum<^T> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: 532a4929-def0-4095-8c62-3bc7312038f2 
 ---
 
-# Array.sum<^T> Function (F#)
+# Array.sum<^T> Function
 
 Returns the sum of the elements in the array.
 
@@ -71,6 +71,6 @@ Supported in: 2.0, 4.0, Portable
 
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

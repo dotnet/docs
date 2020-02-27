@@ -1,6 +1,6 @@
 ---
-title: Array.collect<'T,'U> Function (F#)
-description: Array.collect<'T,'U> Function (F#)
+title: Array.collect<'T,'U> Function
+description: Array.collect<'T,'U> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: f41eacb5-76ba-46d9-9a12-0c1ae631fedc 
 ---
 
-# Array.collect<'T,'U> Function (F#)
+# Array.collect<'T,'U> Function
 
 For each element of the array, applies the given function. Concatenates all the results and return the combined array.
 
@@ -69,6 +69,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

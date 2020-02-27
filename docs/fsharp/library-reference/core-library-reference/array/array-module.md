@@ -1,10 +1,10 @@
 ---
-title: Collections.Array Module (F#)
-description: Collections.Array Module (F#)
+title: Collections.Array Module
+description: Collections.Array Module
 ms.date: 02/25/2020
 ---
 
-# Collections.Array Module (F#)
+# Collections.Array Module
 
 Provides basic operations on arrays.
 
@@ -101,12 +101,12 @@ For an overview of arrays in F#, see [Arrays](../../../language-reference/arrays
 
 ## See Also
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
 
 [Arrays](../../language-reference/arrays.md)
 
-[Collections.Array2D Module &#40;F&#35;&#41;](Collections.Array2D-Module-%5BFSharp%5D.md)
+[Collections.Array2D Module](Collections.Array2D-Module-%5BFSharp%5D.md)
 
-[Collections.Array3D Module &#40;F&#35;&#41;](Collections.Array3D-Module-%5BFSharp%5D.md)
+[Collections.Array3D Module](Collections.Array3D-Module-%5BFSharp%5D.md)
 
-[Collections.Array4D Module &#40;F&#35;&#41;](Collections.Array4D-Module-%5BFSharp%5D.md)
+[Collections.Array4D Module](Collections.Array4D-Module-%5BFSharp%5D.md)

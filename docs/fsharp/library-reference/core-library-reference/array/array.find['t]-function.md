@@ -1,6 +1,6 @@
 ---
-title: Array.find<'T> Function (F#)
-description: Array.find<'T> Function (F#)
+title: Array.find<'T> Function
+description: Array.find<'T> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: 7c9c2263-06e6-4a3f-b080-20bf3cf4ebd9 
 ---
 
-# Array.find<'T> Function (F#)
+# Array.find<'T> Function
 
 Returns the first element for which the given function returns `true`. Raise [KeyNotFoundException](https://msdn.microsoft.com/library/system.collections.generic.keynotfoundexception.aspx) if no such element exists.
 
@@ -71,8 +71,8 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
 
-[Array.findIndex&#60;'T&#62; Function &#40;F&#35;&#41;](Array.findIndex%5B%27T%5D-Function-%5BFSharp%5D.md)
+[Array.findIndex&#60;'T&#62; Function](Array.findIndex%5B%27T%5D-Function-%5BFSharp%5D.md)

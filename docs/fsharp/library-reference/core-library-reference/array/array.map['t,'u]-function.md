@@ -1,6 +1,6 @@
 ---
-title: Array.map<'T,'U> Function (F#)
-description: Array.map<'T,'U> Function (F#)
+title: Array.map<'T,'U> Function
+description: Array.map<'T,'U> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: 85203d0c-aae3-4559-8db2-9ceb7f68da4b 
 ---
 
-# Array.map<'T,'U> Function (F#)
+# Array.map<'T,'U> Function
 
 Builds a new array whose elements are the results of applying the given function to each of the elements of the array.
 
@@ -74,6 +74,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

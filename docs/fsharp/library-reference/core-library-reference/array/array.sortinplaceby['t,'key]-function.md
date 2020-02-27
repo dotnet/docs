@@ -1,6 +1,6 @@
 ---
-title: Array.sortInPlaceBy<'T,'Key> Function (F#)
-description: Array.sortInPlaceBy<'T,'Key> Function (F#)
+title: Array.sortInPlaceBy<'T,'Key> Function
+description: Array.sortInPlaceBy<'T,'Key> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: 3dbefefc-a82f-4ef1-a3a8-15933bd72b24 
 ---
 
-# Array.sortInPlaceBy<'T,'Key> Function (F#)
+# Array.sortInPlaceBy<'T,'Key> Function
 
 Sorts the elements of an array by mutating the array in place, using the given projection for the keys. Elements are compared using [Operators.compare](https://msdn.microsoft.com/library/295e1320-0955-4c3d-ac31-288fa80a658c).
 
@@ -71,6 +71,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

@@ -1,6 +1,6 @@
 ---
-title: Array.distinctBy<'T,'Key> Function (F#)
-description: Array.distinctBy<'T,'Key> Function (F#)
+title: Array.distinctBy<'T,'Key> Function
+description: Array.distinctBy<'T,'Key> Function
 keywords: visual f#, f#, functional programming
 author: erikschierboom
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: dee6a6eb-e4f9-4b89-bb57-2ce9b7098736
 ---
 
-# Array.distinctBy<'T,'Key> Function (F#)
+# Array.distinctBy<'T,'Key> Function
 
 Returns an array that contains no duplicate entries according to the generic hash and equality comparisons on the keys returned by the given key-generating function. If an element occurs multiple times in the array then the later occurrences are discarded.
 
@@ -79,6 +79,6 @@ Supported in: 4.0, Portable
 
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

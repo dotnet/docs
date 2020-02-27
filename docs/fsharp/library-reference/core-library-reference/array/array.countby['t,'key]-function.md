@@ -1,6 +1,6 @@
 ---
-title: Array.countBy<'T,'Key> Function (F#)
-description: Array.countBy<'T,'Key> Function (F#)
+title: Array.countBy<'T,'Key> Function
+description: Array.countBy<'T,'Key> Function
 keywords: visual f#, f#, functional programming
 author: liboz
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: 4c453049-7502-49c8-8cbb-f1f739d43a2a
 ---
 
-# Array.countBy<'T,'Key> Function (F#)
+# Array.countBy<'T,'Key> Function
 
 Applies a key-generating function to each element of an array and returns an array yielding unique keys and their number of occurrences in the original array.
 
@@ -74,6 +74,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 4.0, Portable
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

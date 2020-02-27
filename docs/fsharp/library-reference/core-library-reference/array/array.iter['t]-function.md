@@ -1,6 +1,6 @@
 ---
-title: Array.iter<'T> Function (F#)
-description: Array.iter<'T> Function (F#)
+title: Array.iter<'T> Function
+description: Array.iter<'T> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: 2a70992d-ad44-4048-a803-e94859c3121c 
 ---
 
-# Array.iter<'T> Function (F#)
+# Array.iter<'T> Function
 
 Applies the given function to each element of the array.
 
@@ -67,6 +67,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

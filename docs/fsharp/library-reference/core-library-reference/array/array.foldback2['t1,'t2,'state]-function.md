@@ -1,6 +1,6 @@
 ---
-title: Array.foldBack2<'T1,'T2,'State> Function (F#)
-description: Array.foldBack2<'T1,'T2,'State> Function (F#)
+title: Array.foldBack2<'T1,'T2,'State> Function
+description: Array.foldBack2<'T1,'T2,'State> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: 2c75b6cb-89fa-4184-85cc-18236a885e6f 
 ---
 
-# Array.foldBack2<'T1,'T2,'State> Function (F#)
+# Array.foldBack2<'T1,'T2,'State> Function
 
 Apply a function to pairs of elements drawn from the two collections, right-to-left, threading an accumulator argument through the computation. The two input arrays must have the same lengths, otherwise an [ArgumentException](https://msdn.microsoft.com/library/system.argumentexception.aspx) is raised.
 
@@ -78,6 +78,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

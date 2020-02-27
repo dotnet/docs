@@ -1,6 +1,6 @@
 ---
-title: Array.scanBack<'T,'State> Function (F#)
-description: Array.scanBack<'T,'State> Function (F#)
+title: Array.scanBack<'T,'State> Function
+description: Array.scanBack<'T,'State> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: 0389fa0f-083b-4745-90b6-3b904742e9d5 
 ---
 
-# Array.scanBack<'T,'State> Function (F#)
+# Array.scanBack<'T,'State> Function
 
 Like [`Array.foldBack`](https://msdn.microsoft.com/library/1121a453-dead-4711-a0ca-cc147752989c), but returns both the intermediate and final results.
 
@@ -87,6 +87,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

@@ -1,6 +1,6 @@
 ---
-title: Array.reduceBack<'T> Function (F#)
-description: Array.reduceBack<'T> Function (F#)
+title: Array.reduceBack<'T> Function
+description: Array.reduceBack<'T> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: 928a0256-d038-45a3-a4aa-bf3c5bc337df 
 ---
 
-# Array.reduceBack<'T> Function (F#)
+# Array.reduceBack<'T> Function
 
 Applies a function to each element of the array, threading an accumulator argument through the computation. If the input function is `f` and the elements are `i0...iN` then computes `f i0 (...(f iN-1 iN))`. Raises [ArgumentException](https://msdn.microsoft.com/library/system.argumentexception.aspx) if the array has size zero.
 
@@ -69,6 +69,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

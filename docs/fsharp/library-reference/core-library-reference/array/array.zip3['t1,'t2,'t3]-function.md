@@ -1,6 +1,6 @@
 ---
-title: Array.zip3<'T1,'T2,'T3> Function (F#)
-description: Array.zip3<'T1,'T2,'T3> Function (F#)
+title: Array.zip3<'T1,'T2,'T3> Function
+description: Array.zip3<'T1,'T2,'T3> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: a8d77585-9382-4fa8-9839-0cb53d478704 
 ---
 
-# Array.zip3<'T1,'T2,'T3> Function (F#)
+# Array.zip3<'T1,'T2,'T3> Function
 
 Combines three arrays into an array of tuples with three elements. The three arrays must have equal lengths, otherwise an **System.ArgumentException** is raised.
 
@@ -67,6 +67,6 @@ The following code shows how to use `Array.zip3`.
 
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

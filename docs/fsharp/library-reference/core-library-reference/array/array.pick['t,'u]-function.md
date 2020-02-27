@@ -1,6 +1,6 @@
 ---
-title: Array.pick<'T,'U> Function (F#)
-description: Array.pick<'T,'U> Function (F#)
+title: Array.pick<'T,'U> Function
+description: Array.pick<'T,'U> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
@@ -11,7 +11,7 @@ ms.technology: devlang-fsharp
 ms.assetid: 5366de7d-33b4-4bc4-9c9f-870cf85c4700 
 ---
 
-# Array.pick<'T,'U> Function (F#)
+# Array.pick<'T,'U> Function
 
 Applies the given function to successive elements, returning the first result where function returns **Some**. If the function never returns **Some** then **System.Collections.Generic.KeyNotFoundException** is raised.
 
@@ -69,6 +69,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)
+[Array Module](array-module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)

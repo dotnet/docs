@@ -92,7 +92,7 @@ This tutorial teaches you how to install and use a global tool. You use a tool t
    On Windows:
 
    ```dotnetcli
-   dotnet tool uninstall --tool-path c:\dotnet-tools botsay --add-source ./nupkg microsoft-botsay
+   dotnet tool uninstall --tool-path c:\dotnet-tools microsoft-botsay
    ```
 
    On Linux or macOS:

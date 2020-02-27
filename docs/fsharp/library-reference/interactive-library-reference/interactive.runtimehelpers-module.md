@@ -1,17 +1,17 @@
 ---
-title: Interactive.RuntimeHelpers Module (F#)
-description: Interactive.RuntimeHelpers Module (F#)
+title: Interactive.RuntimeHelpers Module
+description: Interactive.RuntimeHelpers Module
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
-ms.date: 05/16/2016
+ms.date: 02/26/2020
 ms.topic: language-reference
 ms.prod: visual-studio-dev14
 ms.technology: devlang-fsharp
 ms.assetid: cc374040-37a5-4781-8ac6-cd459df2c118 
 ---
 
-# Interactive.RuntimeHelpers Module (F#)
+# Interactive.RuntimeHelpers Module
 
 Hooks for internal use only. The functions in this module should not be used in user code, since they may change without notice.
 
@@ -43,4 +43,4 @@ Windows 7, Windows Vista SP2, Windows XP SP3, Windows XP x64 SP2, Windows Server
 Supported in: 2.0, 4.0
 
 ## See Also
-[Microsoft.FSharp.Compiler.Interactive Namespace &#40;F&#35;&#41;](index.md)
+[Microsoft.FSharp.Compiler.Interactive Namespace](index.md)

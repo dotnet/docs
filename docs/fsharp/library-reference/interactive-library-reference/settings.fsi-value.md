@@ -1,11 +1,11 @@
 ---
-title: Settings.fsi Value (F#)
-description: Settings.fsi Value (F#)
+title: Settings.fsi Value
+description: Settings.fsi Value
 manager: danielfe
 ms.date: 02/26/2020
 ---
 
-# Settings.fsi Value (F#)
+# Settings.fsi Value
 
 The settings associated with the interactive session.
 

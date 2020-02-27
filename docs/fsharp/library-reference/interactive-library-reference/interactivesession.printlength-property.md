@@ -1,17 +1,17 @@
 ---
-title: InteractiveSession.PrintLength Property (F#)
-description: InteractiveSession.PrintLength Property (F#)
+title: InteractiveSession.PrintLength Property
+description: InteractiveSession.PrintLength Property
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
-ms.date: 05/16/2016
+ms.date: 02/26/2020
 ms.topic: language-reference
 ms.prod: visual-studio-dev14
 ms.technology: devlang-fsharp
 ms.assetid: c9b632e8-9336-445a-afba-714fc7928a1d 
 ---
 
-# InteractiveSession.PrintLength Property (F#)
+# InteractiveSession.PrintLength Property
 
 Gets or sets the total print length, the number of elements to display when printing collection values, in the interactive session.
 
@@ -53,6 +53,6 @@ Windows 7, Windows Vista SP2, Windows XP SP3, Windows XP x64 SP2, Windows Server
 Supported in: 2.0, 4.0
 
 ## See Also
-[Interactive.InteractiveSession Class &#40;F&#35;&#41;](Interactive.InteractiveSession-Class-%5BFSharp%5D.md)
+[Interactive.InteractiveSession Class](Interactive.InteractiveSession-Class.md)
 
-[Microsoft.FSharp.Compiler.Interactive Namespace &#40;F&#35;&#41;](index.md)
+[Microsoft.FSharp.Compiler.Interactive Namespace](index.md)

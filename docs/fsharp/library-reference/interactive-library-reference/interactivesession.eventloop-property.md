@@ -1,17 +1,17 @@
 ---
-title: InteractiveSession.EventLoop Property (F#)
-description: InteractiveSession.EventLoop Property (F#)
+title: InteractiveSession.EventLoop Property
+description: InteractiveSession.EventLoop Property
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
-ms.date: 05/16/2016
+ms.date: 02/26/2020
 ms.topic: language-reference
 ms.prod: visual-studio-dev14
 ms.technology: devlang-fsharp
 ms.assetid: 563e5bc6-0538-4001-a7a2-fe1454bb62f0 
 ---
 
-# InteractiveSession.EventLoop Property (F#)
+# InteractiveSession.EventLoop Property
 
 Gets or sets the current event loop being used to process interactions.
 
@@ -56,7 +56,7 @@ Supported in: 2.0, 4.0
 
 
 ## See Also
-[Interactive.InteractiveSession Class &#40;F&#35;&#41;](Interactive.InteractiveSession-Class-%5BFSharp%5D.md)
+[Interactive.InteractiveSession Class](Interactive.InteractiveSession-Class.md)
 
-[Microsoft.FSharp.Compiler.Interactive Namespace &#40;F&#35;&#41;](index.md)
+[Microsoft.FSharp.Compiler.Interactive Namespace](index.md)
 

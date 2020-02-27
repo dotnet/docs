@@ -1,17 +1,17 @@
 ---
-title: RuntimeHelpers.SaveIt<'T> Function (F#)
-description: RuntimeHelpers.SaveIt<'T> Function (F#)
+title: RuntimeHelpers.SaveIt<'T> Function
+description: RuntimeHelpers.SaveIt<'T> Function
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
-ms.date: 05/16/2016
+ms.date: 02/26/2020
 ms.topic: language-reference
 ms.prod: visual-studio-dev14
 ms.technology: devlang-fsharp
 ms.assetid: 2a64284c-e90c-4fcd-a353-91a69f377be3
 ---
 
-# RuntimeHelpers.SaveIt<'T> Function (F#)
+# RuntimeHelpers.SaveIt<'T> Function
 
 This function is used by the F# interactive session and is not intended for user code.
 
@@ -47,6 +47,6 @@ Windows 7, Windows Vista SP2, Windows XP SP3, Windows XP x64 SP2, Windows Server
 Supported in: 2.0, 4.0
 
 ## See Also
-[Interactive.RuntimeHelpers Module &#40;F&#35;&#41;](Interactive.RuntimeHelpers-Module-%5BFSharp%5D.md)
+[Interactive.RuntimeHelpers Module](Interactive.RuntimeHelpers-Module.md)
 
-[Microsoft.FSharp.Compiler.Interactive Namespace &#40;F&#35;&#41;](index.md)
+[Microsoft.FSharp.Compiler.Interactive Namespace](index.md)

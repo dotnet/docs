@@ -1,17 +1,17 @@
 ---
-title: Interactive.InteractiveSession Class (F#)
-description: Interactive.InteractiveSession Class (F#)
+title: Interactive.InteractiveSession Class
+description: Interactive.InteractiveSession Class
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
-ms.date: 05/16/2016
+ms.date: 02/26/2020
 ms.topic: language-reference
 ms.prod: visual-studio-dev14
 ms.technology: devlang-fsharp
 ms.assetid: 2e92b40f-7186-4b97-b68d-2346fe7a7828 
 ---
 
-# Interactive.InteractiveSession Class (F#)
+# Interactive.InteractiveSession Class
 
 Operations supported by the currently executing F# Interactive session.
 
@@ -82,4 +82,4 @@ Windows 7, Windows Vista SP2, Windows XP SP3, Windows XP x64 SP2, Windows Server
 Supported in: 2.0, 4.0
 
 ## See Also
-[Microsoft.FSharp.Compiler.Interactive Namespace &#40;F&#35;&#41;](index.md)
+[Microsoft.FSharp.Compiler.Interactive Namespace](index.md)

@@ -1,17 +1,17 @@
 ---
-title: IEventLoop.Invoke<'T> Method (F#)
-description: IEventLoop.Invoke<'T> Method (F#)
+title: IEventLoop.Invoke<'T> Method
+description: IEventLoop.Invoke<'T> Method
 keywords: visual f#, f#, functional programming
 author: dend
 manager: danielfe
-ms.date: 05/16/2016
+ms.date: 02/26/2020
 ms.topic: language-reference
 ms.prod: visual-studio-dev14
 ms.technology: devlang-fsharp
 ms.assetid: 00b071d2-ba92-4b87-b291-5ca5f837b357 
 ---
 
-# IEventLoop.Invoke<'T> Method (F#)
+# IEventLoop.Invoke<'T> Method
 
 Request that the given operation be run synchronously on the event loop.
 
@@ -37,6 +37,6 @@ Type: [unit](https://msdn.microsoft.com/library/00b837c2-6c8a-483a-87d3-0479c640
 A function to run on the event loop.
 
 ## See Also
-[Interactive.IEventLoop Interface &#40;F&#35;&#41;](Interactive.IEventLoop-Interface-%5BFSharp%5D.md)
+[Interactive.IEventLoop Interface](Interactive.IEventLoop-Interface.md)
 
 [Microsoft.FSharp.Compiler.Interactive Namespace](index.md)

@@ -1,10 +1,10 @@
 ---
-title: InteractiveSession.FloatingPointFormat Property (F#)
-description: InteractiveSession.FloatingPointFormat Property (F#)
+title: InteractiveSession.FloatingPointFormat Property
+description: InteractiveSession.FloatingPointFormat Property
 ms.date: 02/26/2020
 ---
 
-# InteractiveSession.FloatingPointFormat Property (F#)
+# InteractiveSession.FloatingPointFormat Property
 
 Gets or sets the floating point format used in the output of the interactive session.
 
@@ -34,6 +34,6 @@ A format code to use for floating point output in the F# Interactive Session.
 The possible format codes are described in [Core.Printf Module](../core-library-reference/core.printf-module-[fsharp].md). The default value is `g10`.
 
 ## See Also
-[Interactive.InteractiveSession Class &#40;F&#35;&#41;](Interactive.InteractiveSession-Class-%5BFSharp%5D.md)
+[Interactive.InteractiveSession Class](Interactive.InteractiveSession-Class.md)
 
-[Microsoft.FSharp.Compiler.Interactive Namespace &#40;F&#35;&#41;](index.md)
+[Microsoft.FSharp.Compiler.Interactive Namespace](index.md)

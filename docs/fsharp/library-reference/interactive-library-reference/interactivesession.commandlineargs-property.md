@@ -1,10 +1,10 @@
 ---
-title: InteractiveSession.CommandLineArgs Property (F#)
-description: InteractiveSession.CommandLineArgs Property (F#)
+title: InteractiveSession.CommandLineArgs Property
+description: InteractiveSession.CommandLineArgs Property
 ms.date: 02/26/2020
 ---
 
-# InteractiveSession.CommandLineArgs Property (F#)
+# InteractiveSession.CommandLineArgs Property
 
 The command line arguments after ignoring the arguments relevant to the interactive environment and replacing the first argument with the name of the last script file, if any.
 
@@ -26,7 +26,7 @@ interactiveSession.CommandLineArgs <- commandLineArgs
 
 #### Parameters
 commandLineArgs
-Type: [string](https://msdn.microsoft.com/library/12b97856-ec80-4f70-a018-afb0753f755a)[Core.string Type Abbreviation &#40;F&#35;&#41;](../core-library-reference/core.string-type-abbreviation-[fsharp].md)[[]](https://msdn.microsoft.com/library/def20292-9aae-4596-9275-b94e594f8493)
+Type: [string](https://msdn.microsoft.com/library/12b97856-ec80-4f70-a018-afb0753f755a)[Core.string Type Abbreviation](../core-library-reference/core.string-type-abbreviation-[fsharp].md)[[]](https://msdn.microsoft.com/library/def20292-9aae-4596-9275-b94e594f8493)
 
 
 The array of command line arguments.
@@ -45,6 +45,6 @@ Windows 7, Windows Vista SP2, Windows XP SP3, Windows XP x64 SP2, Windows Server
 Supported in: 2.0, 4.0
 
 ## See Also
-[Interactive.InteractiveSession Class &#40;F&#35;&#41;](Interactive.InteractiveSession-Class-%5BFSharp%5D.md)
+[Interactive.InteractiveSession Class](Interactive.InteractiveSession-Class.md)
 
-[Microsoft.FSharp.Compiler.Interactive Namespace &#40;F&#35;&#41;](index.md)
+[Microsoft.FSharp.Compiler.Interactive Namespace](index.md)

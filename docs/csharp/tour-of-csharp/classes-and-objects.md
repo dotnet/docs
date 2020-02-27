@@ -53,17 +53,17 @@ The following list provides an overview of the kinds of members a class can cont
 Each member of a class has an associated accessibility, which controls the regions of program text that can access the member. There are six possible forms of accessibility. The access modifiers are summarized below.
 
 - `public`
-  - Access isn't limited
+  - Access isn't limited.
 - `protected`
-  - Access is limited to this class or classes derived from this class
+  - Access is limited to this class or classes derived from this class.
 - `internal`
-  - Access is limited to the current assembly (.exe, .dll, and so on.)
+  - Access is limited to the current assembly (.exe, .dll, and so on.).
 - `protected internal`
-  - Access is limited to the containing class, classes derived from the containing class, or classes within the same assembly
+  - Access is limited to the containing class, classes derived from the containing class, or classes within the same assembly.
 - `private`
-  - Access is limited to this class
+  - Access is limited to this class.
 - `private protected`
-  - Access is limited to the containing class or classes derived from the containing type within the same assembly
+  - Access is limited to the containing class or classes derived from the containing type within the same assembly.
 
 ## Type parameters
 

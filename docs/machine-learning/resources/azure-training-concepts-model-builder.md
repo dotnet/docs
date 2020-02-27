@@ -67,9 +67,7 @@ The `ModelInput` and `ModelOutput` classes in the *Model* project define the sch
 In an image classification scenario, the `ModelInput` contains two columns:
 
 - `ImageSource`: The string path of the image location.
-- `Label`: The actual category the image belongs to. `Label` is only used as an input when training.
-
-When making predictions, only provide the `ImageSource` since the `Label` is the column to predict.
+- `Label`: The actual category the image belongs to. `Label` is only used as an input when training and does not need to be provided when making predictions.
 
 The `ModelOutput` contains two columns:
 

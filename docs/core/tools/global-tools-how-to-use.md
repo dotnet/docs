@@ -16,10 +16,10 @@ This tutorial teaches you how to install and use a global tool. You use a tool t
 
 ## Use the tool as a global tool
 
-1. Install the tool from the package by running the [dotnet tool install](dotnet-tool-install.md) command in the *botsay-\<name>* project folder:
+1. Install the tool from the package by running the [dotnet tool install](dotnet-tool-install.md) command in the *microsoft.botsay* project folder:
 
    ```dotnetcli
-   dotnet tool install --global --add-source ./nupkg botsay-<name>
+   dotnet tool install --global --add-source ./nupkg microsoft.botsay
    ```
 
    The `--global` parameter tells the .NET Core CLI to install the tool binaries in a default location that is automatically added to the PATH environment variable.
@@ -30,7 +30,7 @@ This tutorial teaches you how to install and use a global tool. You use a tool t
 
    ```console
    You can invoke the tool using the following command: botsay
-   Tool 'botsay-<name>' (version '1.0.0') was successfully installed.
+   Tool 'microsoft.botsay' (version '1.0.0') was successfully installed.
    ```
 
 1. Invoke the tool:
@@ -45,7 +45,7 @@ This tutorial teaches you how to install and use a global tool. You use a tool t
 1. Remove the tool by running the [dotnet tool uninstall](dotnet-tool-uninstall.md) command:
 
    ```dotnetcli
-   dotnet tool uninstall -g botsay-<name>
+   dotnet tool uninstall -g microsoft.botsay
    ```
 
 ## Use the tool as a global tool installed in a custom location
@@ -55,13 +55,13 @@ This tutorial teaches you how to install and use a global tool. You use a tool t
    On Windows:
 
    ```dotnetcli
-   dotnet tool install --tool-path c:\dotnet-tools --add-source ./nupkg botsay-<name>
+   dotnet tool install --tool-path c:\dotnet-tools --add-source ./nupkg microsoft.botsay
    ```
 
    On Linux or macOS:
 
    ```dotnetcli
-   dotnet tool install --tool-path ~/bin --add-source ./nupkg botsay-<name>
+   dotnet tool install --tool-path ~/bin --add-source ./nupkg microsoft.botsay
    ```
 
    The `--tool-path` parameter tells the .NET Core CLI to install the tool binaries in the specified location. If the directory doesn't exist, it is created. This directory is not automatically added to the PATH environment variable.
@@ -70,7 +70,7 @@ This tutorial teaches you how to install and use a global tool. You use a tool t
 
    ```console
    You can invoke the tool using the following command: botsay
-   Tool 'botsay-<name>' (version '1.0.0') was successfully installed.
+   Tool 'microsoft.botsay' (version '1.0.0') was successfully installed.
    ```
 
 1. Invoke the tool:
@@ -92,13 +92,13 @@ This tutorial teaches you how to install and use a global tool. You use a tool t
    On Windows:
 
    ```dotnetcli
-   dotnet tool uninstall --tool-path c:\dotnet-tools botsay --add-source ./nupkg botsay-<name>
+   dotnet tool uninstall --tool-path c:\dotnet-tools microsoft.botsay
    ```
 
    On Linux or macOS:
 
    ```dotnetcli
-   dotnet tool uninstall --tool-path ~/bin botsay-<name>
+   dotnet tool uninstall --tool-path ~/bin microsoft.botsay
    ```
 
 ## Troubleshoot

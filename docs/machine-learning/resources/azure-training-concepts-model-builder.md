@@ -74,7 +74,7 @@ In an image classification scenario, the `ModelInput` contains two columns:
 The `ModelOutput` contains two columns:
 
 - `Prediction`: The image's predicted category.
-- `Score`: The list of probabilities for all classes (the highest belongs to the `PredictedLabel`).
+- `Score`: The list of probabilities for all classes (the highest belongs to the `Prediction`).
 
 ## Troubleshooting
 

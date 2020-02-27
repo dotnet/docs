@@ -1,0 +1,47 @@
+- name: Array module functions
+  href: array-module.md
+  items:
+    - name: Microsoft.FSharp.Compiler.Interactive Namespace
+      items:
+      - name: Interactive.IEventLoop Interface
+        href: interactive.ieventloop-interface.md
+      - name: IEventLoop.Invoke<'T> Method
+        href: ieventloop.invoke['t]-method.md
+      - name: IEventLoop.Run Method
+        href: ieventloop.run-method.md
+      - name: IEventLoop.ScheduleRestart Method
+        href: ieventloop.schedulerestart-method.md
+    - name: Interactive.InteractiveSession Class
+      href: interactive.interactivesession-class.md
+      items:
+      - name: InteractiveSession.AddPrintTransformer<'T> Method
+        href: interactivesession.addprinttransformer['t]-method.md
+      - name: InteractiveSession.AddPrinter<'T> Method
+        href: interactivesession.addprinter['t]-method.md
+      - name: InteractiveSession.CommandLineArgs Property
+        href: interactivesession.commandlineargs-property.md
+      - name: InteractiveSession.EventLoop Property
+        href: interactivesession.eventloop-property.md
+      - name: InteractiveSession.FloatingPointFormat Property
+        href: interactivesession.floatingpointformat-property.md
+      - name: InteractiveSession.FormatProvider Property
+        href: interactivesession.formatprovider-property.md
+      - name: InteractiveSession.PrintDepth Property
+        href: interactivesession.printdepth-property.md
+      - name: InteractiveSession.PrintLength Property
+        href: interactivesession.printlength-property.md
+      - name: InteractiveSession.PrintSize Property
+        href: interactivesession.printsize-property.md
+      - name: InteractiveSession.PrintWidth Property
+        href: interactivesession.printwidth-property.md
+      - name: InteractiveSession.ShowDeclarationValues Property
+        href: interactivesession.showdeclarationvalues-property.md
+      - name: InteractiveSession.ShowIEnumerable Property
+        href: interactivesession.showienumerable-property.md
+      - name: InteractiveSession.ShowProperties Property
+        href: interactivesession.showproperties-property.md
+    - name: Interactive.Settings Module
+      href: interactive.settings-module.md
+      items:
+      - name: Settings.fsi Value
+        href: settings.fsi-value.md

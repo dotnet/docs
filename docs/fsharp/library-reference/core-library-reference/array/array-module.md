@@ -8,8 +8,6 @@ ms.date: 02/25/2020
 
 Provides basic operations on arrays.
 
-**Namespace/Module Path:** Microsoft.FSharp.Collections
-
 ## Syntax
 
 ```fsharp
@@ -18,7 +16,7 @@ module Array
 
 ## Remarks
 
-For an overview of arrays in F#, see [Arrays](../../language-reference/arrays.md).
+For an overview of arrays in F#, see [Arrays](../../../language-reference/arrays.md).
 
 ## Values
 

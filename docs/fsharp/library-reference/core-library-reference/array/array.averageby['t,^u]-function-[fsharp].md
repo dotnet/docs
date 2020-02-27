@@ -65,13 +65,7 @@ The following example illustrates the use of `Array.averageBy`.
 5.500000
 ```
 
-## Platforms
-Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 
-## Version Information
-**F# Core Library Versions**
-
-Supported in: 2.0, 4.0, Portable
 
 ## See Also
 [Collections.Array Module &#40;F&#35;&#41;](Collections.Array-Module-%5BFSharp%5D.md)

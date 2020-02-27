@@ -8,7 +8,7 @@ ms.date: 02/24/2020
 
 Creates an array that contains the elements of one array followed by the elements of another array.
 
-**Module:** [Microsoft.FSharp.Collections.Array](collections.array-module-[fsharp].md)
+**Module:** [Microsoft.FSharp.Collections.Array](collections.array-module.md)
 
 ## Syntax
 
@@ -24,8 +24,8 @@ Array.append array1 array2
 
 |Paramter name|Type|Description|
 |-------------|----|-----------|
-| `array1`|[`'T[]`](core.['t]-type-1d-[fsharp].md)|The first input array.|
-| `array2`|[`'T[]`](core.['t]-type-1d-[fsharp].md)|The second input array.|
+| `array1`|[`'T[]`](../core.['t]-type-1d-[fsharp].md)|The first input array.|
+| `array2`|[`'T[]`](../core.['t]-type-1d-[fsharp].md)|The second input array.|
 
 ## Return Value
 
@@ -45,6 +45,6 @@ The following example demonstrates the use of `Array.append`.
 ```
 
 ## See Also
-[Collections.Array Module](collections.array-module-[fsharp].md)
+[Collections.Array Module](collections.array-module.md)
 
-[Microsoft.FSharp.Collections](microsoft.fsharp.collections-namespace-[fsharp].md)
+[Microsoft.FSharp.Collections](../microsoft.fsharp.collections-namespace-[fsharp].md)

@@ -109,7 +109,7 @@ A pattern match with the `var` pattern always succeeds. Its syntax is:
 
 where the value of *expr* is always assigned to a local variable named *varname*. *varname* is a variable of the same type as the compile-time type of *expr*. 
 
-If *expr* evaluates to `null`, the `is` expression produces `true` and assigns `null` to *varname*. 
+If *expr* evaluates to `null`, the `is` expression produces `true` and assigns `null` to *varname*.  The var pattern is one of the few uses of `is` that produces `true` for a `null` value.
 
 You can use the `var` pattern to create a temporary variable within a Boolean expression, as the following example shows:
 

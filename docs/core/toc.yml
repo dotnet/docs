@@ -119,7 +119,7 @@
     - name: 2 - Use a global tool
       displayName: tools, tutorials
       href: tools/global-tools-how-to-use.md
-    - name: 3 - Use a local tools
+    - name: 3 - Use a local tool
       href: tools/local-tools-how-to-use.md
       displayName: tools, tutorials
 - name: Project SDKs
@@ -296,6 +296,28 @@
     href: tools/csproj.md
   - name: Migrate from DNX
     href: migration/from-dnx.md
+- name: Port from .NET Framework
+  items:
+  - name: Overview
+    href: porting/index.md
+  - name: Analyze third-party dependencies
+    href: porting/third-party-deps.md
+  - name: Port libraries
+    href: porting/libraries.md
+  - name: Organize projects for .NET Core
+    href: porting/project-structure.md
+  - name: Unavailable technologies
+    href: porting/net-framework-tech-unavailable.md
+  - name: Tools
+    href: porting/tools.md
+  - name: Use the Windows Compatibility Pack
+    href: porting/windows-compat-pack.md
+  - name: Port Windows Forms projects
+    href: porting/winforms.md
+  - name: Port WPF projects
+    href: porting/wpf.md
+  - name: Port C++/CLI projects
+    href: porting/cpp-cli.md
 - name: Application deployment
   items:
   - name: Overview
@@ -359,28 +381,6 @@
     href: versions/remove-runtime-sdk-versions.md
 - name: Runtime Identifier (RID) catalog
   href: rid-catalog.md
-- name: Port from .NET Framework
-  items:
-  - name: Overview
-    href: porting/index.md
-  - name: Analyze third-party dependencies
-    href: porting/third-party-deps.md
-  - name: Port libraries
-    href: porting/libraries.md
-  - name: Organize projects for .NET Core
-    href: porting/project-structure.md
-  - name: Unavailable technologies
-    href: porting/net-framework-tech-unavailable.md
-  - name: Tools
-    href: porting/tools.md
-  - name: Use the Windows Compatibility Pack
-    href: porting/windows-compat-pack.md
-  - name: Port Windows Forms projects
-    href: porting/winforms.md
-  - name: Port WPF projects
-    href: porting/wpf.md
-  - name: Port C++/CLI projects
-    href: porting/cpp-cli.md
 - name: Dependency management and loading
   items:
   - name: Dependency management

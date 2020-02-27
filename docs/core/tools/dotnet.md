@@ -27,7 +27,7 @@ dotnet [command] [-d|--diagnostics] [-h|--help] [--verbosity]
     [command-options] [arguments]
 ```
 
-To run an application (.NET Core SDK 2.x):
+To run an application (.NET Core 2.x SDK):
 
 ```dotnetcli
 dotnet [--additionalprobingpath] [--deps-file] [--additional-deps]

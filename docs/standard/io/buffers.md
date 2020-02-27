@@ -73,7 +73,7 @@ The `ReadOnlySequence<T>` exposes data as an enumerable of `ReadOnlyMemory<T>`. 
 
 [!code-csharp[](~/samples/snippets/csharp/buffers/MyClass.cs?name=snippet3)]
 
-The preceding method searches each segment for a specific byte. If you need to keep track of each segment's `SequencePosition`, 
+The preceding method searches each segment for a specific byte. If you need to keep track of each segment's `SequencePosition`,
 <xref:System.Buffers.ReadOnlySequence%601.TryGet%2A?displayProperty=nameWithType> is more appropriate. The next sample changes the preceding code to return a `SequencePosition` instead of an integer. Returning a `SequencePosition` has the benefit of allowing the caller to avoid a second scan to get the data at a specific index.
 
 [!code-csharp[](~/samples/snippets/csharp/buffers/MyClass.cs?name=snippet4)]

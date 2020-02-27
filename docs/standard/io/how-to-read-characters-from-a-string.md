@@ -17,7 +17,7 @@ ms.assetid: 27ea5e52-6db8-42d8-980a-50bcfc7fd270
 # How to: Read characters from a string
 The following code examples show how to read characters synchronously or asynchronously from a string.  
   
-## Example: Read characters synchronously 
+## Example: Read characters synchronously
  This example reads 13 characters synchronously from a string, stores them in an array, and displays them. The example then reads the rest of the characters in the string, stores them in the array starting at the sixth element, and displays the contents of the array.  
   
  [!code-csharp[Conceptual.StringReader#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.stringreader/cs/source.cs#1)]

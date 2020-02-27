@@ -1,5 +1,6 @@
 ---
 title: "Scope of default namespaces - LINQ to XML"
+description: Find out the proper and the improper way of querying an XML tree that has a default namespace.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"
@@ -11,7 +12,7 @@ ms.assetid: fe826236-830f-457a-9027-7ad62c909fae
 
 Default namespaces as represented in the XML tree aren't in scope for queries. If you have XML that's in a default namespace, you must combine a namespace with the local name to make a qualified name to be used in the query.
 
-A common mistake in querying an XML tree that has a default namespace is to write the query as if the XML were not in a namespace. The first example below shows a typical improper query of a default namespace. The second shows a proper query.
+A common mistake in querying an XML tree that has a default namespace is to write the query as if the XML weren't in a namespace. The first example shows a typical improper query of a default namespace. The second shows a proper query.
 
 ## Example: Improper query of XML in a namespace
 
@@ -71,7 +72,7 @@ End of result set
 
 This example shows the creation of XML in a namespace, and a proper query.
 
-In C# the correct approach is to declare and initialize an <xref:System.Xml.Linq.XNamespace> object, and to use it when specifying <xref:System.Xml.Linq.XName> objects. In this case, the argument to the <xref:System.Xml.Linq.XContainer.Elements%2A> method is an <xref:System.Xml.Linq.XName> object.
+In C#, the correct approach is to declare and initialize an <xref:System.Xml.Linq.XNamespace> object, and to use it when specifying <xref:System.Xml.Linq.XName> objects. In this case, the argument to the <xref:System.Xml.Linq.XContainer.Elements%2A> method is an <xref:System.Xml.Linq.XName> object.
 
 The correct approach when using Visual Basic is to declare and initialize a global default namespace. This places all XML properties in the default namespace.
 

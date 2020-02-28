@@ -82,7 +82,7 @@ For your brand-new desktop applications, we recommend starting directly on .NET 
 
 ![.NET Framework and .NET Core](./media/2/dotnet-framework-and-dotnet-core.png)
 
-##  .NET Standard vs. PCL
+## .NET Standard vs. PCL
 
 The [.NET Standard](https://github.com/dotnet/standard) is a formal specification of .NET APIs that are intended to be available on all .NET implementations. The motivation behind the .NET Standard is establishing greater uniformity in the .NET ecosystem. .NET Standard is a specification of .NET APIs that make up a uniform set of contracts to compile your code against. These contracts are implemented in each .NET flavor, thus enabling portability across different .NET implementations.
 

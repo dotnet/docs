@@ -5,21 +5,21 @@
       href: parallel/parallel-module.md
       items:
         - name: Array.Parallel.choose<'T,'U> Function
-          href: parallel.choose['t,'u]-function.md
+          href: parallel/parallel.choose['t,'u]-function.md
         - name: Array.Parallel.collect<'T,'U> Function
-          href: parallel.collect['t,'u]-function.md
+          href: parallel/parallel.collect['t,'u]-function.md
         - name: Array.Parallel.init<'T> Function
-          href: parallel.init['t]-function.md
+          href: parallel/parallel.init['t]-function.md
         - name: Array.Parallel.iter<'T> Function
-          href: parallel.iter['t-function.md
+          href: parallel/parallel.iter['t-function.md
         - name: Array.Parallel.iteri<'T> Function
-          href: parallel.iteri['t]-function.md
+          href: parallel/parallel.iteri['t]-function.md
         - name: Array.Parallel.map<'T,'U> Function
-          href: parallel.map['t,'u]-function.md
+          href: parallel/parallel.map['t,'u]-function.md
         - name: Array.Parallel.mapi<'T,'U> Function
-          href: parallel.mapi['t,'u]-function.md
+          href: parallel/parallel.mapi['t,'u]-function.md
         - name: Array.Parallel.parition<'T> Function
-          href: parallel.partition['t]-function.md
+          href: parallel/parallel.partition['t]-function.md
     - name: Array.append<'T> Function
       href: array.append['t]-function.md
     - name: Array.averageBy<'T,^U> Function

@@ -239,6 +239,10 @@ On Windows, you can also choose to use <xref:System.Net.Http.WinHttpHandler?disp
 
 On Linux and macOS, you can only configure <xref:System.Net.Http.HttpClient> on a per-process basis. On Linux, you need to deploy [libcurl](https://curl.haxx.se/libcurl/) if you want to use the old <xref:System.Net.Http.HttpClient> implementation. (It is installed with .NET Core 2.0.)
 
+### Breaking changes
+
+For information about breaking changes, see [Breaking changes for migration from version 2.0 to 2.1](../compatibility/2.0-2.1.md).
+
 ## See also
 
 - [What's new in .NET Core](index.md)

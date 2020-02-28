@@ -199,7 +199,7 @@ Let's take an existing WPF sample app that reads files and shows its contents on
 the screen. The goal will be to display a Toast Notification when the
 application starts.
 
-![Sample application](media\4\sample-application.png)
+![Sample application](media\windows-migration\sample-application.png)
 
 First, you should check in the below link whether the Windows 10 API that you
 will use requires a Package Identity:
@@ -209,7 +209,7 @@ will use requires a Package Identity:
 Our sample will use the Windows.UI.Notifications API that requires a packaged
 identity:
 
-![Notification class in Microsoft documentation](media\4\notification-class-documentation.png)
+![Notification class in Microsoft documentation](media\windows-migration\notification-class-documentation.png)
 
 To enable access to the Windows Runtime API you just need to add a reference to
 the Microsoft.Windows.SDK.Contracts NuGet package and this will do the magic
@@ -236,44 +236,44 @@ Although the project builds, there are errors because the Notifications API
 requires a Package Identity, and we didn't provide it. Adding a Windows
 Packaging Project in the Solution will fix it:
 
-![Adding a Windows Packaging Project](media\4\adding-packaging-project.png)
+![Adding a Windows Packaging Project](media\windows-migration\adding-packaging-project.png)
 
 You should select the minimum Windows version you want to support and the
 version you are targeting. Not all the WinRT APIs are supported in all Windows
 10 versions. Each Windows 10 update adds new APIs that are only available from
 this version; down-level support is not available.
 
-![Selecting versions](media\4\selecting-versions.png)
+![Selecting versions](media\windows-migration\selecting-versions.png)
 
 Next step is to add the WPF application to the Windows Packaging Project by
 adding a project reference:
 
-![Adding WPF application to the Windows Packaging Project](media\4\adding-application.png)
+![Adding WPF application to the Windows Packaging Project](media\windows-migration\adding-application.png)
 
-![Reference Manager](media\4\reference-manager.png)
+![Reference Manager](media\windows-migration\reference-manager.png)
 
 A Windows Packaging Project can package several apps so you should set which one
 is the Entry Point:
 
-![Setting entry point](media\4\setting-entry-point.png)
+![Setting entry point](media\windows-migration\setting-entry-point.png)
 
 Next step is to set the WPF Project as the startup Project in the solution
 configuration. You can press F5 to compile and build and see the results.
 
-![Result](media\4\result.png)
+![Result](media\windows-migration\result.png)
 
 Let's generate the package so you can install your app. Right click on *Store \>
 Create App Packages*
 
-![Create App Packages](media\4\create-app-packages.png)
+![Create App Packages](media\windows-migration\create-app-packages.png)
 
 Select the sideloading option to deploy the app from your machine:
 
-![Selecting sideloading option](media\4\selecting-sideloading-option.png)
+![Selecting sideloading option](media\windows-migration\selecting-sideloading-option.png)
 
 Select the application architecture of your app:
 
-![Selecting the application architecture](media\4\selecting-app-architecture.png)
+![Selecting the application architecture](media\windows-migration\selecting-app-architecture.png)
 
 Finally, create the package clicking on **Create.**
 
@@ -283,7 +283,7 @@ XAML Islands are a set of components that enable Windows desktop developers to
 use UWP XAML controls on their existing Win32 applications, including Windows
 Forms and WPF.
 
-![XAML Islands](media\4\xaml-islands.png)
+![XAML Islands](media\windows-migration\xaml-islands.png)
 
 You can image your Win32 app with your standard controls and among them an
 "island" of UWP UI containing controls from the modern world. The concept is
@@ -480,13 +480,13 @@ Starting with WinUI 2 in 2018, Microsoft start shipping some new XAML UI
 controls and features as separate NuGet packages that build on top of the UWP
 SDK.
 
-![WinUI 2.0](media\4\winui2.png)
+![WinUI 2.0](media\windows-migration\winui2.png)
 
 WinUI 3 is under active development and will greatly expand the scope of WinUI
 to include the full UI platform, which will now be fully decoupled from the UWP
 SDK:
 
-![WinUI 3.0](media\4\image36.png)
+![WinUI 3.0](media\windows-migration\image36.png)
 
 This means that the XAML framework will now be developed on GitHub and ship out
 of band as [NuGet](https://docs.microsoft.com/nuget/what-is-nuget) packages.

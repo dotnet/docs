@@ -2,7 +2,7 @@
   href: index.md
   items:
     - name: Array.Parallel module
-      href: parallel/parallel-module.md
+      href: parallel/array.parallel-module.md
       items:
         - name: Array.Parallel.choose<'T,'U> Function
           href: parallel/parallel.choose['t,'u]-function.md
@@ -11,7 +11,7 @@
         - name: Array.Parallel.init<'T> Function
           href: parallel/parallel.init['t]-function.md
         - name: Array.Parallel.iter<'T> Function
-          href: parallel/parallel.iter['t-function.md
+          href: parallel/parallel.iter['t]-function.md
         - name: Array.Parallel.iteri<'T> Function
           href: parallel/parallel.iteri['t]-function.md
         - name: Array.Parallel.map<'T,'U> Function
@@ -117,7 +117,6 @@
     - name: Array.ofSeq<'T> Function
       href: array.ofseq['t]-function.md
     - name: Array.Parallel Module
-      href: array.parallel-module.md
     - name: Array.partition<'T> Function
       href: array.partition['t]-function.md
     - name: Array.permute<'T> Function

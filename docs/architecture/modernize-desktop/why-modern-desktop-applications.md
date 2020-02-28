@@ -1,6 +1,6 @@
 ---
 title: Why Modern Desktop Applications?
-description: Desktop technologies such as Windows Forms, WPF and UWP in the modern world.
+description: Learn about desktop technologies such as Windows Forms, WPF and UWP in the modern world.
 ms.date: 09/16/2019
 ---
 # Why Modern Desktop Applications?

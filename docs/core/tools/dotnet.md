@@ -20,36 +20,34 @@ dotnet [-h|--help] [--version] [--info]
     [--list-runtimes] [--list-sdks]
 ```
 
-To run a command:
+To run a command (requires SDK installation):
 
 ```dotnetcli
-dotnet [command] [-d|--diagnostics] [-h|--help] [--verbosity]
+dotnet <COMMAND> [-d|--diagnostics] [-h|--help] [--verbosity]
     [command-options] [arguments]
 ```
 
-To run an application (.NET Core SDK 2.x):
+To run an application:
 
 ```dotnetcli
-dotnet [--additionalprobingpath] [--deps-file] [--additional-deps]
-    [--fx-version]  [--roll-forward-on-no-candidate-fx]
-    [path-to-application] [arguments]
-```
-
-To run an application (.NET Core SDK 3.x):
-
-```dotnetcli
-dotnet [--additionalprobingpath] [--deps-file] [--additional-deps]
+dotnet [--additionalprobingpath] [--additional-deps]
     [--fx-version]  [--roll-forward]
-    [path-to-application] [arguments]
+    <PATH_TO_APPLICATION> [arguments]
+
+dotnet exec [--additionalprobingpath] [--additional-deps]
+    [--fx-version]  [--roll-forward]
+    <PATH_TO_APPLICATION> [arguments]
 ```
+
+`--roll-forward` is available since .NET Core 3.x. Use `--roll-forward-on-no-candidate-fx` for .NET Core 2.x.
 
 ## Description
 
 The `dotnet` command has two functions:
 
-- It manages .NET Core source code and binaries.
+- It provides commands for working with .NET Core projects.
 
-  You specify commands that perform specific tasks. For example, [`dotnet build`](dotnet-build.md) builds a project. Each command defines its own options and arguments. All commands support the `--help` option for printing out brief documentation about how to use the command.
+  For example, [`dotnet build`](dotnet-build.md) builds a project. Each command defines its own options and arguments. All commands support the `--help` option for printing out brief documentation about how to use the command.
 
 - It runs .NET Core applications.
 
@@ -59,7 +57,7 @@ The `dotnet` command has two functions:
 
 Different options are available for `dotnet` by itself, for running a command, and for running an application.
 
-### SDK options for dotnet by itself
+### Options for dotnet by itself
 
 The following options are for `dotnet` by itself. For example, `dotnet --info`. They print out information about the environment.
 
@@ -73,7 +71,7 @@ The following options are for `dotnet` by itself. For example, `dotnet --info`. 
 
 - **`--list-runtimes`**
 
-  Print out a list of the installed .NET Core runtimes.
+  Prints out a list of the installed .NET Core runtimes.
 
 - **`--list-sdks`**
 
@@ -111,13 +109,9 @@ The following options are available when `dotnet` runs an application. For examp
 
   Path containing probing policy and assemblies to probe.
 
-- **`--depsfile`**
-
-  Path to a *deps.json* file. A *deps.json* file contains a list of dependencies, compilation dependencies, and version information used to address assembly conflicts. For more information, see [Runtime Configuration Files](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md) on GitHub.
-
 - **`--additional-deps <PATH>`**
 
-  Path to an additional *.deps.json* file.
+  Path to an additional *.deps.json* file. A *deps.json* file contains a list of dependencies, compilation dependencies, and version information used to address assembly conflicts. For more information, see [Runtime Configuration Files](https://github.com/dotnet/cli/blob/master/Documentation/specs/runtime-configuration-file.md) on GitHub.
 
 - **`--fx-version <VERSION>`**
 
@@ -243,9 +237,9 @@ dotnet myapp.dll
 
 ## Environment variables
 
-- `DOTNET_ROOT`
+- `DOTNET_ROOT`, `DOTNET_ROOT(x86)`
 
-  Specifies the location of the .NET Core SDK and runtimes if they are not installed in the default location. The default location on Windows is `C:\Program Files\dotnet`. The default location on Linux and macOS is `/usr/share/dotnet`.
+  Specifies the location of the .NET Core runtimes, if they are not installed in the default location. The default location on Windows is `C:\Program Files\dotnet`. The default location on Linux and macOS is `/usr/share/dotnet`. This environment variable is used only when running apps via generated executables (apphosts). `DOTNET_ROOT(x86)` is used instead when running a 32-bit executable on a 64-bit OS.
 
 - `DOTNET_PACKAGES`
 
@@ -261,7 +255,7 @@ dotnet myapp.dll
 
 - `DOTNET_MULTILEVEL_LOOKUP`
 
-  Specifies whether .NET Core runtime, shared framework, or SDK are resolved from the global location. If not set, it defaults to `true`. Set to `false` to not resolve from the global location and have isolated .NET Core installations (values `0` or `false` are accepted). For more information about multi-level lookup, see [Multi-level SharedFX Lookup](https://github.com/dotnet/core-setup/blob/master/Documentation/design-docs/multilevel-sharedfx-lookup.md).
+  Specifies whether .NET Core runtime, shared framework, or SDK are resolved from the global location. If not set, it defaults to 1 (logical `true`). Set to 0 (logical `false`) to not resolve from the global location and have isolated .NET Core installations. For more information about multi-level lookup, see [Multi-level SharedFX Lookup](https://github.com/dotnet/core-setup/blob/master/Documentation/design-docs/multilevel-sharedfx-lookup.md).
 
 - `DOTNET_ROLL_FORWARD` **Available starting with .NET Core 3.x SDK.**
 
@@ -274,6 +268,30 @@ dotnet myapp.dll
 - `DOTNET_CLI_UI_LANGUAGE`
 
   Sets the language of the CLI UI using a locale value such as `en-us`. The supported values are the same as for Visual Studio. For more information, see the section on changing the installer language in the [Visual Studio installation documentation](https://docs.microsoft.com/visualstudio/install/install-visual-studio?view=vs-2019). The .NET resource manager rules apply, so you don't have to pick an exact match&mdash;you can also pick descendants in the `CultureInfo` tree. For example, if you set it to `fr-CA`, the CLI will find and use the `fr` translations. If you set it to a language that is not supported, the CLI falls back to English.
+
+- `DOTNET_DISABLE_GUI_ERRORS`
+
+  For GUI-enabled generated executables - disables dialog popup which normally shows for certain classes of errors. It only writes to `stderr` and exits in those cases.
+  
+- `DOTNET_ADDITIONAL_DEPS`
+
+  Equivalent to CLI option `--additional-deps`.
+
+- `DOTNET_RUNTIME_ID`
+
+  Overrides the detected RID.
+
+- `DOTNET_SHARED_STORE`
+
+  Location of the "shared store" which assembly resolution falls back to in some cases.
+
+- `DOTNET_STARTUP_HOOKS`
+
+  List of assemblies to load and execute startup hooks from.
+
+- `COREHOST_TRACE`, `COREHOST_TRACEFILE`, `COREHOST_TRACE_VERBOSITY`
+
+  Controls diagnostics tracing from the hosting components, such as `dotnet.exe`, `hostfxr`, and `hostpolicy`.
 
 ## See also
 

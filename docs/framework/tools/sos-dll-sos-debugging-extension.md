@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "SOS debugging extensions"
   - "SOS.dll"
 ms.assetid: 9ac1b522-77ab-4cdc-852a-20fcdc9ae498
-author: "mairaw"
-ms.author: "mairaw"
 ---
 
 # SOS.dll (SOS debugging extension)

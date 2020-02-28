@@ -1,5 +1,5 @@
 ---
-title: "-warnaserror (Visual Basic)"
+title: "-warnaserror"
 ms.date: 03/13/2018
 helpviewer_keywords: 
   - "warnaserror compiler option [Visual Basic]"

@@ -28,6 +28,6 @@ An aggregation operation computes a single value from a collection of values. An
 
 - <xref:System.Linq>
 - [Standard Query Operators Overview (C#)](./standard-query-operators-overview.md)
-- [How to: Compute Column Values in a CSV Text File (LINQ) (C#)](./how-to-compute-column-values-in-a-csv-text-file-linq.md)
-- [How to: Query for the Largest File or Files in a Directory Tree (LINQ) (C#)](./how-to-query-for-the-largest-file-or-files-in-a-directory-tree-linq.md)
-- [How to: Query for the Total Number of Bytes in a Set of Folders (LINQ) (C#)](./how-to-query-for-the-total-number-of-bytes-in-a-set-of-folders-linq.md)
+- [How to compute column values in a CSV text file (LINQ) (C#)](./how-to-compute-column-values-in-a-csv-text-file-linq.md)
+- [How to query for the largest file or files in a directory tree (LINQ) (C#)](./how-to-query-for-the-largest-file-or-files-in-a-directory-tree-linq.md)
+- [How to query for the total number of bytes in a set of folders (LINQ) (C#)](./how-to-query-for-the-total-number-of-bytes-in-a-set-of-folders-linq.md)

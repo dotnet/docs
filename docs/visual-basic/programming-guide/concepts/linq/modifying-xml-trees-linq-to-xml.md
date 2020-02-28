@@ -1,5 +1,5 @@
 ---
-title: "Modifying XML Trees (LINQ to XML) (Visual Basic)"
+title: "Modifying XML Trees (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 4ae511a5-4fc9-4178-9c8e-761357deae3f
 ---

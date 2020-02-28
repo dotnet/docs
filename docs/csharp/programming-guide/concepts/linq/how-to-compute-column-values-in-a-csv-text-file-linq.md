@@ -1,9 +1,9 @@
 ---
-title: "How to: Compute Column Values in a CSV Text File (LINQ) (C#)"
+title: "How to compute column values in a CSV text file (LINQ) (C#)"
 ms.date: 07/20/2015
 ms.assetid: 4747f37a-a198-4df2-8efe-5b0731e0ea27
 ---
-# How to: Compute Column Values in a CSV Text File (LINQ) (C#)
+# How to compute column values in a CSV text file (LINQ) (C#)
 This example shows how to perform aggregate computations such as Sum, Average, Min, and Max on the columns of a .csv file. The example principles that are shown here can be applied to other types of structured text.  
   
 ## To create the source file  

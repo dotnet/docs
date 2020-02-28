@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: bd492834-6529-4d39-b93d-f8cdbd3e297f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataFilter::MarkToken Method
 Sets a value indicating that the specified metadata token has been processed.  

@@ -3,8 +3,6 @@ title: "XSLT Compiler (xsltc.exe)"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: 672a5ac8-8305-4d28-ba10-11089c2c0924
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # XSLT Compiler (xsltc.exe)
 The XSLT compiler (xsltc.exe) compiles XSLT style sheets and generates an assembly. The compiled style sheet can then be passed directly into the <xref:System.Xml.Xsl.XslCompiledTransform.Load%28System.Type%29?displayProperty=nameWithType> method. You cannot generate signed assemblies with xsltc.exe.  

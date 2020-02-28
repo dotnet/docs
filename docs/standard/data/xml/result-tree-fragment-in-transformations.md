@@ -3,8 +3,6 @@ title: "Result Tree Fragment in Transformations"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: df363480-ba02-4233-9ddf-8434e421c4f1
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Result Tree Fragment in Transformations
 
@@ -136,7 +134,7 @@ In the following example, `$var` is a variable that is a node tree in the style 
     </xsl:variable>
 
     <xsl:template match="/">
-            <xsl:for-each select="msxsl:node-set($states)"/> 
+            <xsl:for-each select="msxsl:node-set($states)"/>
     </xsl:template>
 </xsl:stylesheet>
 ```
@@ -163,8 +161,8 @@ Here is another example of a variable that is in RTF, and hence of type result t
 <![CDATA[
     string func(XPathNodeIterator it)
     {
-        it.MoveNext(); 
-        return it.Current.Value; 
+        it.MoveNext();
+        return it.Current.Value;
         //it.Current returns XPathNavigator positioned on the current node
     }
 

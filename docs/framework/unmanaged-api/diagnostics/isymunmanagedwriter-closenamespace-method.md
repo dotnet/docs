@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 7f74d9c5-1377-4958-b842-6306d611cbd5
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ISymUnmanagedWriter::CloseNamespace Method
 Closes the most recently opened namespace.  

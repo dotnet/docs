@@ -18,7 +18,7 @@ Windows Communication Foundation (WCF) provides several modes by which clients a
   
 1. To the [\<bindings>](../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) element, add a [\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md).  
   
-2. As a child element, add a [\<binding>](../../../../docs/framework/misc/binding.md) element to the `<customBinding>` element.  
+2. As a child element, add a [\<binding>](../../configure-apps/file-schema/wcf/bindings.md) element to the `<customBinding>` element.  
   
 3. Add a `<security>` element to the `<binding>` element.  
   

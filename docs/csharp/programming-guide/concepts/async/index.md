@@ -59,8 +59,8 @@ Let's make these changes to the breakfast code. The first step is to store the t
 ```csharp
 Coffee cup = PourCoffee();
 Console.WriteLine("coffee is ready");
-Task<Egg> eggTask = FryEggs(2);
-Egg eggs = await eggTask;
+Task<Egg> eggsTask = FryEggs(2);
+Egg eggs = await eggsTask;
 Console.WriteLine("eggs are ready");
 Task<Bacon> baconTask = FryBacon(3);
 Bacon bacon = await baconTask;
@@ -81,7 +81,7 @@ Next, you can move the `await` statements for the bacon and eggs to the end of t
 ```csharp
 Coffee cup = PourCoffee();
 Console.WriteLine("coffee is ready");
-Task<Egg> eggTask = FryEggs(2);
+Task<Egg> eggsTask = FryEggs(2);
 Task<Bacon> baconTask = FryBacon(3);
 Task<Toast> toastTask = ToastBread(2);
 Toast toast = await toastTask;
@@ -91,7 +91,7 @@ Console.WriteLine("toast is ready");
 Juice oj = PourOJ();
 Console.WriteLine("oj is ready");
 
-Egg eggs = await eggTask;
+Egg eggs = await eggsTask;
 Console.WriteLine("eggs are ready");
 Bacon bacon = await baconTask;
 Console.WriteLine("bacon is ready");
@@ -123,7 +123,7 @@ The previous change illustrated an important technique for working with asynchro
 The series of `await` statements at the end of the preceding code can be improved by using methods of the `Task` class. One of those APIs is <xref:System.Threading.Tasks.Task.WhenAll%2A>, which returns a <xref:System.Threading.Tasks.Task> that completes when all the tasks in its argument list have completed, as shown in the following code:
 
 ```csharp
-await Task.WhenAll(eggTask, baconTask, toastTask);
+await Task.WhenAll(eggsTask, baconTask, toastTask);
 Console.WriteLine("eggs are ready");
 Console.WriteLine("bacon is ready");
 Console.WriteLine("toast is ready");

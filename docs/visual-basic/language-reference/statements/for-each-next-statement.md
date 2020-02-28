@@ -1,5 +1,5 @@
 ---
-title: "For Each...Next Statement (Visual Basic)"
+title: "For Each...Next Statement"
 ms.date: 07/20/2015
 f1_keywords:
   - "vb.ForEach"

@@ -8,9 +8,9 @@ The problem of internal data access is a fairly common scenario. That is, you wi
   
  The context connection lets you execute Transact-SQL statements in the same context that your code was invoked in the first place. For more detailed information, see the version of SQL Server Books Online for the version of SQL Server you are using.  
   
- **SQL Server Books Online**  
+ **SQL Server documentation**  
   
-1. [The Context Connection](https://go.microsoft.com/fwlink/?LinkId=115395)  
+1. [The Context Connection](/sql/relational-databases/clr-integration/data-access/context-connection)  
   
 ## See also
 

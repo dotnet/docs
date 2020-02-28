@@ -1,9 +1,9 @@
 ---
-title: "How to: Calculate Intermediate Values (C#)"
+title: "How to calculate intermediate values (C#)"
 ms.date: 07/20/2015
 ms.assetid: 7fd3001f-f8f9-4bce-879f-d4c7af8a04fe
 ---
-# How to: Calculate Intermediate Values (C#)
+# How to calculate intermediate values (C#)
 This example shows how to calculate intermediate values that can be used in sorting, filtering, and selecting.  
   
 ## Example  

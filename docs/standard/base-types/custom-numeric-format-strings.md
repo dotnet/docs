@@ -1,5 +1,5 @@
 ---
-title: "Custom Numeric Format Strings"
+title: "Custom numeric format strings"
 ms.date: "06/25/2018"
 ms.technology: dotnet-standard
 dev_langs:

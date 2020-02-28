@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "performance monitoring, tracing code"
   - "Trace class, instrumentation for .NET applications"
 ms.assetid: 773b6fc4-9013-4322-b728-5dec7a72e743
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Tracing and Instrumenting Applications
 Tracing is a way for you to monitor the execution of your application while it is running. You can add tracing and debugging instrumentation to your .NET Framework application when you develop it, and you can use that instrumentation both while you are developing the application and after you have deployed it. You can use the <xref:System.Diagnostics.Trace?displayProperty=nameWithType>, <xref:System.Diagnostics.Debug?displayProperty=nameWithType>, and <xref:System.Diagnostics.TraceSource?displayProperty=nameWithType> classes to record information about errors and application execution in logs, text files, or other devices for later analysis.  
@@ -93,7 +91,7 @@ System.Diagnostics.Debug.WriteLine("Hello World!");
   
 7. If a problem occurs during run time, turn on the appropriate trace switch. For more information, see [Configuring Trace Switches](how-to-create-initialize-and-configure-trace-switches.md).  
   
-     The tracing code writes tracing messages to a specified target, for example, a screen, a text file, or an event log. The type of listener you included in the **Trace.Listeners** collection determines the target.  
+     The tracing code writes tracing messages to a specified target, for example, a screen, a text file, or an event log. The type of listener you included in the <xref:System.Diagnostics.Trace.Listeners%2A?displayProperty=nameWithType> collection determines the target.  
   
 8. Analyze the tracing messages to identify and understand the problem in the application.  
   
@@ -116,18 +114,18 @@ System.Diagnostics.Debug.WriteLine("Hello World!");
   
 |Method|Output|  
 |------------|------------|  
-|**Assert**|The specified text; or, if none is specified, the Call Stack. The output is written only if the condition specified as an argument in the **Assert** statement is **false**.|  
-|**Fail**|The specified text; or, if none is specified, the Call Stack.|  
-|**Write**|The specified text.|  
-|**WriteIf**|The specified text, if the condition specified as an argument in the **WriteIf** statement is satisfied.|  
-|**WriteLine**|The specified text and a carriage return.|  
-|**WriteLineIf**|The specified text and a carriage return, if the condition specified as an argument in the **WriteLineIf** statement is satisfied.|  
+|`Assert`|The specified text; or, if none is specified, the Call Stack. The output is written only if the condition specified as an argument in the `Assert` statement is **false**.|  
+|`Fail`|The specified text; or, if none is specified, the Call Stack.|  
+|`Write`|The specified text.|  
+|`WriteIf`|The specified text, if the condition specified as an argument in the `WriteIf` statement is satisfied.|  
+|`WriteLine`|The specified text and a carriage return.|  
+|`WriteLineIf`|The specified text and a carriage return, if the condition specified as an argument in the `WriteLineIf` statement is satisfied.|  
   
- All listeners in the <xref:System.Diagnostics.Trace.Listeners%2A> collection receive the messages described in the above table, but the actions taken may vary depending on what kind of listener receives the message. For example, the <xref:System.Diagnostics.DefaultTraceListener> displays an assertion dialog box when it receives a **Fail** or failed **Assert** notification, but a <xref:System.Diagnostics.TextWriterTraceListener> simply writes the output to its stream.  
+ All listeners in the <xref:System.Diagnostics.Trace.Listeners%2A> collection receive the messages described in the above table, but the actions taken may vary depending on what kind of listener receives the message. For example, the <xref:System.Diagnostics.DefaultTraceListener> displays an assertion dialog box when it receives a `Fail` or failed `Assert` notification, but a <xref:System.Diagnostics.TextWriterTraceListener> simply writes the output to its stream.  
   
  You can produce custom results by implementing your own listener. A custom trace listener might, for example, display the messages to a message box, or connect to a database to add messages to a table. All custom listeners should support the six methods mentioned above. For more information on creating developer-defined listeners, see <xref:System.Diagnostics.TraceListener> in the .NET Framework reference.  
   
- The **Write** and **WriteLine** methods always write the text that you specify. **Assert**, **WriteIf**, and **WriteLineIf** require a Boolean argument that controls whether or not they write the specified text; they write the specified text only if the expression is **true** (for **WriteIf** and **WriteLineIf**), or **false** (for **Assert**). The **Fail** method always writes the specified text. For more information, see [How to: Add Trace Statements to Application Code](how-to-add-trace-statements-to-application-code.md) and the .NET Framework reference.  
+ The `Write` and `WriteLine` methods always write the text that you specify. `Assert`, `WriteIf`, and `WriteLineIf` require a Boolean argument that controls whether or not they write the specified text; they write the specified text only if the expression is **true** (for `WriteIf` and `WriteLineIf`), or **false** (for `Assert`). The `Fail` method always writes the specified text. For more information, see [How to: Add Trace Statements to Application Code](how-to-add-trace-statements-to-application-code.md) and the .NET Framework reference.  
   
 ## Security Concerns  
  If you do not disable tracing and debugging before deploying an ASP.NET application, your application may reveal information about itself that could be exploited by a malicious program. For more information, see [How to: Compile Conditionally with Trace and Debug](how-to-compile-conditionally-with-trace-and-debug.md), [Compiling and Building](/visualstudio/ide/compiling-and-building-in-visual-studio), and [How to: Create, Initialize and Configure Trace Switches](how-to-create-initialize-and-configure-trace-switches.md). Debugging is also configurable through Internet Information Services (IIS).  

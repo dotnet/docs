@@ -1,5 +1,5 @@
 ---
-title: "Procedures in Visual Basic"
+title: "Procedures"
 ms.date: 04/28/2017
 helpviewer_keywords: 
   - "procedures [Visual Basic], structured code"

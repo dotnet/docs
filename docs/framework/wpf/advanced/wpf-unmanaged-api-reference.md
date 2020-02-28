@@ -1,5 +1,5 @@
 ---
-title: "WPF Unmanaged API Reference"
+title: "Unmanaged API Reference"
 ms.date: "03/30/2017"
 ms.assetid: 2a2e8274-6556-46a2-80d3-a1812903cbcf
 ---

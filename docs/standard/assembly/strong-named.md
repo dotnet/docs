@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "strong-named assemblies, about strong-named assemblies"
   - "assemblies [.NET Framework], strong-named"
 ms.assetid: d4a80263-f3e0-4d81-9b61-f0cbeae3797b
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Strong-named assemblies
 

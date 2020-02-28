@@ -1,5 +1,5 @@
 ---
-title: "How to: Validate Using XSD (LINQ to XML) (Visual Basic)"
+title: "How to: Validate Using XSD (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: a0fe88d4-4e77-49e7-90de-8953feeccc21
 ---

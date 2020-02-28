@@ -1,5 +1,5 @@
 ---
-title: "Reflection (Visual Basic)"
+title: "Reflection"
 ms.date: 07/20/2015
 ms.assetid: d991bc0f-d16a-4ac5-9351-70e5c5b9891b
 ---

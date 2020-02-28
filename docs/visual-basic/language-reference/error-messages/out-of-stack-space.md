@@ -1,5 +1,5 @@
 ---
-title: "Out of stack space (Visual Basic)"
+title: "Out of stack space"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID28"

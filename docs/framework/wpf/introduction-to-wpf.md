@@ -1,5 +1,6 @@
 ---
 title: Introduction to WPF
+titleSuffix: ""
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b8d7cf43-d1f2-4f3d-adb0-4f3a6428edc0
@@ -606,7 +607,7 @@ The following example references the resource dictionary defined in the previous
 
 Resources and resource dictionaries are the foundation of WPF support for themes and skins.
 
-For more information, see [Resources](advanced/xaml-resources.md).
+For more information, see [Resources](../../desktop-wpf/fundamentals/xaml-resources-define.md).
 
 ### Custom controls
 

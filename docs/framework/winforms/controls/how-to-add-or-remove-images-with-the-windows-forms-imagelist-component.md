@@ -1,5 +1,5 @@
 ---
-title: "How to: Add or Remove Images with the Windows Forms ImageList Component"
+title: Add or Remove Images with ImageList Component
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

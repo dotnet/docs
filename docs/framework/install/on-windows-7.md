@@ -2,8 +2,6 @@
 title: Install the .NET Framework on Windows 7 SP1
 ms.custom: "updateeachrelease"
 description: Learn how to install the .NET Framework on Windows 7 SP1.
-author: rlander
-ms.author: mairaw
 ms.date: 04/18/2019
 ---
 
@@ -24,7 +22,7 @@ The [.NET Framework 4.8](https://github.com/Microsoft/dotnet/tree/master/release
 
 ## .NET Framework 3.5
 
-The [.NET Framework 3.5](https://www.microsoft.com/download/details.aspx?id=21) is included with Windows 7.
+The [.NET Framework 3.5](https://dotnet.microsoft.com/download/dotnet-framework/net35-sp1) is included with Windows 7.
 
 The .NET Framework 3.5 supports apps built for .NET Framework 1.0 through 3.5.
 

@@ -23,5 +23,5 @@ This example shows you how to create a focus visual style in resources and apply
 ## See also
 
 - <xref:System.Windows.FrameworkElement.FocusVisualStyle%2A>
-- [Styling and Templating](../controls/styling-and-templating.md)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)
 - [Styling for Focus in Controls, and FocusVisualStyle](styling-for-focus-in-controls-and-focusvisualstyle.md)

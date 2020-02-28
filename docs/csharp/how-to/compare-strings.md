@@ -1,5 +1,5 @@
 ---
-title: "How to: Compare strings - C# Guide"
+title: "How to compare strings - C# Guide"
 description: Learn how to compare and order string values, with or without case, with or without culture specific ordering
 ms.date: 10/03/2018
 helpviewer_keywords: 

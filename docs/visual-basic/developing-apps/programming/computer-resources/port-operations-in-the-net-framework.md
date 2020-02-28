@@ -1,5 +1,5 @@
 ---
-title: "Port Operations in the .NET Framework with Visual Basic"
+title: "Port Operations in the .NET Framework"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "ports, Visual Basic"

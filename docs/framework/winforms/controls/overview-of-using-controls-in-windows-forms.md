@@ -1,5 +1,5 @@
 ---
-title: "Overview of Using Controls in Windows Forms"
+title: "Overview of Using Controls"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

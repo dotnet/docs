@@ -1,105 +1,83 @@
 ---
-title: Consume a .NET Standard library in Visual Studio 2017
-description: Build a .NET Core application that calls members of another class library with Visual Studio 2017.
-author: BillWagner
-ms.author: wiwagn
-ms.date: 06/05/2018
-ms.custom: "vs-dotnet, seodec18"
+title: Consume a .NET Standard library in Visual Studio
+description: Build a .NET Core application that calls members of another class library with Visual Studio 2019.
+ms.date: 12/20/2019
+dev_langs:
+  - "csharp"
+  - "vb"
+ms.custom: "vs-dotnet"
 ---
+# Consume a .NET Standard library in Visual Studio
 
-# Consume a .NET Standard library in Visual Studio 2017
+Once you've created a .NET Standard class library, tested it, and built a release version of the library, the next step is to make it available to callers. You can do this in two ways:
 
-Once you've created a .NET Standard class library by following the steps in [Building a C# class library with .NET Core in Visual Studio 2017](./library-with-visual-studio.md) or [Building a Visual Basic class library with .NET Core in Visual Studio 2017](vb-library-with-visual-studio.md), tested it in [Testing a class library with .NET Core in Visual Studio 2017](testing-library-with-visual-studio.md), and built a Release version of the library, the next step is to make it available to callers. You can do this in two ways:
+- If the library will be used by a single solution (for example, if it's a component in a single large application), you can include it as a project in your solution.
+- If the library will be publicly available, you can distribute it as a NuGet package.
 
-* If the library will be used by a single solution (for example, if it's a component in a single large application), you can include it as a project in your solution.
+In this tutorial, you learn how to:
+> [!div class="checklist"]
+>
+> - Add a console app to your solution that references a .NET Standard library project.
+> - Create a NuGet package that contains a .NET Standard library project.
 
-* If the library will be generally accessible, you can distribute it as a NuGet package.
+## Add a console app to your solution
 
-## Including a library as a project in a solution
+Just as you included unit tests in the same solution as your class library in [Test a .NET Standard library in Visual Studio](testing-library-with-visual-studio.md), you can include your application as part of that solution. For example, you can use your class library in a console application that prompts the user to enter a string and reports whether its first character is uppercase:
 
-Just as you included unit tests in the same solution as your class library, you can include your application as part of that solution. For example, you can use your class library in a console application that prompts the user to enter a string and reports whether its first character is uppercase:
+1. Open the `ClassLibraryProjects` solution you created in the [Build a .NET Standard library in Visual Studio](library-with-visual-studio.md) article.
 
-<!-- markdownlint-disable MD025 -->
+1. Add a new .NET Core console application named "ShowCase" to the solution.
 
-# [C#](#tab/csharp)
+   1. Right-click on the solution in **Solution Explorer** and select **Add** > **New project**.
 
-1. Open the `ClassLibraryProjects` solution you created in the [Building a C# Class Library with .NET Core in Visual Studio 2017](./library-with-visual-studio.md) topic. In **Solution Explorer**, right-click the **ClassLibraryProjects** solution and select **Add** > **New Project** from the context menu.
+   1. On the **Add a new project** page, enter **console** in the search box. Choose **C#** or **Visual Basic** from the Language list, and then choose **All platforms** from the Platform list. Choose the **Console App (.NET Core)** template, and then choose **Next**.
 
-1. In the **Add New Project** dialog, expand the **Visual C#** node and select the **.NET Core** node followed by the **Console App (.NET Core)** project template. In the **Name** text box, type "ShowCase", and select the **OK** button.
-
-   ![Visual Studio Add New Project dialog - C#](./media/consuming-library-with-visual-studio/add-new-project-dialog.png)
+   1. On the **Configure your new project** page, enter **ShowCase** in the **Project name** box. Then, choose **Create**.
 
 1. In **Solution Explorer**, right-click the **ShowCase** project and select **Set as StartUp Project** in the context menu.
 
-   ![Visual Studio project context menu to set startup project- C#](./media/consuming-library-with-visual-studio/set-startup-project-context-menu.png)
+   ![Visual Studio project context menu to set startup project](./media/consuming-library-with-visual-studio/set-startup-project-context-menu.png)
 
 1. Initially, your project doesn't have access to your class library. To allow it to call methods in your class library, you create a reference to the class library. In **Solution Explorer**, right-click the `ShowCase` project's **Dependencies** node and select **Add Reference**.
 
-   ![Visual Studio project add reference context menu - C#](./media/consuming-library-with-visual-studio/add-reference-context-menu.png)
+   ![Add reference context menu in Visual Studio](./media/consuming-library-with-visual-studio/add-reference-context-menu.png)
 
 1. In the **Reference Manager** dialog, select **StringLibrary**, your class library project, and select the **OK** button.
 
-   ![Visual Studio Manage references dialog - C#](./media/consuming-library-with-visual-studio/manage-project-references.png)
+   ![Reference Manager dialog with StringLibrary selected](./media/consuming-library-with-visual-studio/manage-project-references.png)
 
-1. In the code window for the *Program.cs* file, replace all of the code with the following code:
+1. In the code window for the *Program.cs* or *Program.vb* file, replace all of the code with the following code:
 
-   [!CODE-csharp[UsingClassLib#1](../../../samples/snippets/csharp/getting_started/with_visual_studio_2017/showcase.cs)]
+   [!code-csharp[UsingClassLib#1](~/samples/snippets/csharp/getting_started/with_visual_studio_2017/showcase.cs)]
+   [!code-vb[UsingClassLib#1](~/samples/snippets/core/tutorials/vb-library-with-visual-studio/showcase.vb)]
 
-   The code uses the `row` variable to maintain a count of the number of rows of data written to the console window. Whenever it is greater than or equal to 25, the code clears the console window and displays a message to the user.
+   The code uses the `row` variable to maintain a count of the number of rows of data written to the console window. Whenever it's greater than or equal to 25, the code clears the console window and displays a message to the user.
 
-   The program prompts the user to enter a string. It indicates whether the string starts with an uppercase character. If the user presses the Enter key without entering a string, the application terminates, and the console window closes.
-
-1. If necessary, change the toolbar to compile the **Debug** release of the `ShowCase` project. Compile and run the program by selecting the green arrow on the **ShowCase** button.
-
-   ![Visual Studio project toolbar showing Debug button - C#](./media/consuming-library-with-visual-studio/visual-studio-project-toolbar.png)
-
-# [Visual Basic](#tab/vb)
-
-1. Open the `ClassLibraryProjects` solution you created in the [Building a class Library with Visual Basic and .NET Core in Visual Studio 2017](vb-library-with-visual-studio.md) topic. In **Solution Explorer**, right-click the **ClassLibraryProjects** solution and select **Add** > **New Project** from the context menu.
-
-1. In the **Add New Project** dialog, expand the **Visual Basic** node and select the **.NET Core** node followed by the **Console App (.NET Core)** project template. In the **Name** text box, type "ShowCase", and select the **OK** button.
-
-   ![Visual Studio Add New Project dialog - Visual Basic](./media/consuming-library-with-visual-studio/add-new-vb-project-dialog.png)
-
-1. In **Solution Explorer**, right-click the **ShowCase** project and select **Set as StartUp Project** in the context menu. 
-
-   ![Visual Studio project context menu to set startup project - Visual Basic](./media/consuming-library-with-visual-studio/set-startup-project-context-menu.png)
-
-1. Initially, your project doesn't have access to your class library. To allow it to call methods in your class library, you create a reference to the class library. In **Solution Explorer**, right-click the `ShowCase` project's **Dependencies** node and select **Add Reference**.
-
-   ![Visual Studio project add reference context menu - Visual Basic](./media/consuming-library-with-visual-studio/add-reference-context-menu.png)
-
-1. In the **Reference Manager** dialog, select **StringLibrary**, your class library project, and select the **OK** button.
-
-   ![Visual Studio Manage references dialog - Visual Basic](./media/consuming-library-with-visual-studio/manage-project-references.png)
-
-1. In the code window for the *Program.vb* file, replace all of the code with the following code:
-
-    [!CODE-vb[UsingClassLib#1](../../../samples/snippets/core/tutorials/vb-library-with-visual-studio/showcase.vb)]
-
-   The code uses the `row` variable to maintain a count of the number of rows of data written to the console window. Whenever it is greater than or equal to 25, the code clears the console window and displays a message to the user.
-
-   The program prompts the user to enter a string. It indicates whether the string starts with an uppercase character. If the user presses the Enter key without entering a string, the application terminates, and the console window closes.
+   The program prompts the user to enter a string. It indicates whether the string starts with an uppercase character. If the user presses the Enter key without entering a string, the application ends, and the console window closes.
 
 1. If necessary, change the toolbar to compile the **Debug** release of the `ShowCase` project. Compile and run the program by selecting the green arrow on the **ShowCase** button.
 
-   ![Debug on toolbar - Visual Basic](./media/consuming-library-with-visual-studio/visual-studio-project-toolbar.png)
+   ![Visual Studio project toolbar showing Debug button](./media/consuming-library-with-visual-studio/visual-studio-project-toolbar.png)
 
----
+You can debug and publish the application that uses this library by following the steps in [Debug your C# or Visual Basic .NET Core Hello World application using Visual Studio](debugging-with-visual-studio.md) and [Publish your .NET Core Hello World application with Visual Studio](publishing-with-visual-studio.md).
 
-You can debug and publish the application that uses this library by following the steps in [Debugging your Hello World application with Visual Studio 2017](debugging-with-visual-studio.md) and [Publishing your Hello World Application with Visual Studio 2017](publishing-with-visual-studio.md).
+## Create a NuGet package
 
-## Distributing the library in a NuGet package
+You can make your class library widely available by publishing it as a NuGet package. Visual Studio doesn't support the creation of NuGet packages. To create one, you need to use the .NET Core CLI commands:
 
-You can make your class library widely available by publishing it as a NuGet package. Visual Studio does not support the creation of NuGet packages. To create one, you use the [`dotnet` command line utility](../tools/dotnet.md):
+1. Open a console window.
 
-1. Open a console window. For example in the **Ask me anything** text box in the Windows taskbar, enter `Command Prompt` (or `cmd` for short), and open a console window by either selecting the **Command Prompt** desktop app or pressing Enter if it's selected in the search results.
+   For example, enter **Command Prompt** in the search box on the Windows task bar. Select the **Command Prompt** desktop app or press **Enter** if it's already selected in the search results.
 
-1. Navigate to your library's project directory. Unless you've reconfigured the typical file location, it's in the *Documents\Visual Studio 2017\Projects\ClassLibraryProjects\StringLibrary* directory. The directory contains your source code and a project file, *StringLibrary.csproj*.
+1. Navigate to your library's project directory. The directory contains your source code and a project file, *StringLibrary.csproj* or *StringLibrary.vbproj*.
 
-1. Issue the command `dotnet pack --no-build`. The `dotnet` utility generates a package with a *.nupkg* extension.
+1. Run the [dotnet pack](../tools/dotnet-pack.md) command to generate a package with a *.nupkg* extension:
+
+   ```dotnetcli
+   dotnet pack --no-build
+   ```
 
    > [!TIP]
    > If the directory that contains *dotnet.exe* is not in your PATH, you can find its location by entering `where dotnet.exe` in the console window.
 
-For more information on creating NuGet packages, see [How to Create a NuGet Package with Cross Platform Tools](../deploying/creating-nuget-packages.md).
+For more information on creating NuGet packages, see [How to create a NuGet package with the .NET Core CLI](../deploying/creating-nuget-packages.md).

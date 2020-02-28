@@ -1,13 +1,13 @@
 ---
-title: "How to: Author Controls for Windows Forms"
+title: "How to: Author Controls"
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "controls [Windows Forms], creating"
   - "UserControl class [Windows Forms], Windows Forms"
   - "custom controls [Windows Forms], creating"
 ms.assetid: 7570e982-545b-4c3a-a7c7-55581d313400
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # How to: Author controls for Windows Forms

@@ -8,7 +8,7 @@ ms.assetid: c9c8cd32-2c9d-4541-ad0d-16dff6bd2a00
 # Configuring Services Using Configuration Files
 Configuring a Windows Communication Foundation (WCF) service with a configuration file gives you the flexibility of providing endpoint and service behavior data at the point of deployment instead of at design time. This topic outlines the primary techniques available.  
   
- A WCF service is configurable using the .NET Framework configuration technology. Most commonly, XML elements are added to the Web.config file for an Internet Information Services (IIS) site that hosts a WCF service. The elements allow you to change details such as the endpoint addresses (the actual addresses used to communicate with the service) on a machine-by-machine basis. In addition, WCF includes several system-provided elements that allow you to quickly select the most basic features for a service. Starting with [!INCLUDE[netfx40_long](../../../includes/netfx40-long-md.md)], WCF comes with a new default configuration model that simplifies WCF configuration requirements. If you do not provide any WCF configuration for a particular service, the runtime automatically configures your service with some standard endpoints and default binding/behavior. In practice, writing configuration is a major part of programming WCF applications.  
+ A WCF service is configurable using the .NET Framework configuration technology. Most commonly, XML elements are added to the Web.config file for an Internet Information Services (IIS) site that hosts a WCF service. The elements allow you to change details such as the endpoint addresses (the actual addresses used to communicate with the service) on a machine-by-machine basis. In addition, WCF includes several system-provided elements that allow you to quickly select the most basic features for a service. Starting with .NET Framework 4, WCF comes with a new default configuration model that simplifies WCF configuration requirements. If you do not provide any WCF configuration for a particular service, the runtime automatically configures your service with some standard endpoints and default binding/behavior. In practice, writing configuration is a major part of programming WCF applications.  
   
  For more information, see [Configuring Bindings for Services](configuring-bindings-for-wcf-services.md). For a list of the most commonly used elements, see [System-Provided Bindings](system-provided-bindings.md). For more information about default endpoints, bindings, and behaviors, see [Simplified Configuration](simplified-configuration.md) and [Simplified Configuration for WCF Services](./samples/simplified-configuration-for-wcf-services.md).  
   
@@ -61,7 +61,7 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
 > The bindings and behaviors sections are optional and are only included if required.  
   
 ### The \<services> Element  
- The `services` element contains the specifications for all services the application hosts. Starting with the simplified configuration model in [!INCLUDE[netfx40_short](../../../includes/netfx40-short-md.md)], this section is optional.  
+ The `services` element contains the specifications for all services the application hosts. Starting with the simplified configuration model in .NET Framework 4, this section is optional.  
   
  [\<services>](../configure-apps/file-schema/wcf/services.md)  
   
@@ -97,7 +97,7 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
   
 For more information about configuring services and clients, see [Configuring WCF services](configuring-services.md).
   
- [\<binding>](../misc/binding.md)  
+ [\<binding>](../configure-apps/file-schema/wcf/bindings.md)  
   
 ### The \<behaviors> Element  
  This is a container element for the `behavior` elements that define the behaviors for a service.  
@@ -261,4 +261,4 @@ For more information about configuring services and clients, see [Configuring WC
 - [Simplified Configuration](simplified-configuration.md)
 - [Configuring WCF services](configuring-services.md)
 - [\<service>](../configure-apps/file-schema/wcf/service.md)
-- [\<binding>](../misc/binding.md)
+- [\<binding>](../configure-apps/file-schema/wcf/bindings.md)

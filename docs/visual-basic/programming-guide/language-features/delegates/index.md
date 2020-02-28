@@ -1,5 +1,5 @@
 ---
-title: "Delegates (Visual Basic)"
+title: "Delegates"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "delegates [Visual Basic]"

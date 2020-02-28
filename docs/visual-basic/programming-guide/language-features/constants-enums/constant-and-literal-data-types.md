@@ -1,5 +1,5 @@
 ---
-title: "Constant and Literal Data Types (Visual Basic)"
+title: "Constant and Literal Data Types"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "declaring constants [Visual Basic], literal data types"

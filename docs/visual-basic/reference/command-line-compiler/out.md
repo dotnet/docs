@@ -1,5 +1,5 @@
 ---
-title: "-out (Visual Basic)"
+title: "-out"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "/out compiler option [Visual Basic]"

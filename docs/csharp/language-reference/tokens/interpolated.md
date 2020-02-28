@@ -1,6 +1,5 @@
 ---
 title: "$ - string interpolation - C# reference"
-ms.custom: seodec18
 description: String interpolation provides a more readable and convenient syntax to format string output than traditional string composite formatting.
 ms.date: 09/02/2019
 f1_keywords: 
@@ -96,6 +95,6 @@ For more information, see the [Interpolated strings](~/_csharplang/spec/expressi
 - [C# reference](../index.md)
 - [C# special characters](index.md)
 - [Strings](../../programming-guide/strings/index.md)
-- [Formatting numeric results table](../keywords/formatting-numeric-results-table.md)
+- [Standard numeric format strings](../../../standard/base-types/standard-numeric-format-strings.md)
 - [Composite formatting](../../../standard/base-types/composite-formatting.md)
 - <xref:System.String.Format%2A?displayProperty=nameWithType>

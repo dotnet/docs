@@ -1,7 +1,7 @@
 ---
 title: Deploy a .NET for Apache Spark application to Databricks
 description: Discover how to deploy a .NET for Apache Spark application to Databricks.
-ms.date: 05/17/2019
+ms.date: 01/23/2020
 ms.topic: tutorial
 ms.custom: mvc
 #Customer intent: As a developer, I want to deployment .NET for Apache Spark application to Databricks.
@@ -14,10 +14,11 @@ This tutorial teaches you how to deploy your app to the cloud through Azure Data
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
-> Create an Azure Databricks workspace.
-> Publish your .NET for Apache Spark app.
-> Create a Spark job and Spark cluster.
-> Run your app on the Spark cluster.
+>
+> - Create an Azure Databricks workspace.
+> - Publish your .NET for Apache Spark app.
+> - Create a Spark job and Spark cluster.
+> - Run your app on the Spark cluster.
 
 ## Prerequisites
 
@@ -40,12 +41,12 @@ In this section, you create an Azure Databricks workspace using the Azure portal
    ![Create an Azure Databricks resource in Azure portal](./media/databricks-deployment/create-databricks-resource.png)
 
 2. Under **Azure Databricks Service**, provide the values to create a Databricks workspace.
-    
+
     |Property  |Description  |
     |---------|---------|
     |**Workspace name**     | Provide a name for your Databricks workspace.        |
     |**Subscription**     | From the drop-down, select your Azure subscription.        |
-    |**Resource group**     | Specify whether you want to create a new resource group or use an existing one. A resource group is a container that holds related resources for an Azure solution. For more information, see [Azure Resource Group overview](/azure/azure-databricks/azure-resource-manager/resource-group-overview). |
+    |**Resource group**     | Specify whether you want to create a new resource group or use an existing one. A resource group is a container that holds related resources for an Azure solution. For more information, see [Azure Resource Group overview](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-overview). |
     |**Location**     | Select your preferred region. For information about available regions, see [Azure services available by region](https://azure.microsoft.com/regions/services/).        |
     |**Pricing Tier**     |  Choose between **Standard**, **Premium**, or **Trial**. For more information on these tiers, see [Databricks pricing page](https://azure.microsoft.com/pricing/details/databricks/).       |
     |**Virtual Network**     |   No       |
@@ -54,15 +55,15 @@ In this section, you create an Azure Databricks workspace using the Azure portal
 
 ## Install Azure Databricks tools
 
-You can use the **Databricks CLI** to connect to Azure Databricks clusters and upload files to them from your local machine. Databricks clusters access files through DBFS (Databricks File System). 
+You can use the **Databricks CLI** to connect to Azure Databricks clusters and upload files to them from your local machine. Databricks clusters access files through DBFS (Databricks File System).
 
 1. The Databricks CLI requires Python 3.6 or above. If you already have Python installed, you can skip this step.
- 
+
    **For Windows:**
 
    [Download Python for Windows](https://www.python.org/ftp/python/3.7.4/python-3.7.4.exe)
 
-   **For Linux:** 
+   **For Linux:**
    Python comes preinstalled on most Linux distributions. Run the following command to see which version you have installed:
 
    ```bash
@@ -103,14 +104,14 @@ You should now be able to access any Azure Databricks clusters you create and up
 
 1. Microsoft.Spark.Worker helps Apache Spark execute your app, such as any user-defined functions (UDFs) you may have written. Download [Microsoft.Spark.Worker](https://github.com/dotnet/spark/releases/download/v0.6.0/Microsoft.Spark.Worker.netcoreapp2.1.linux-x64-0.6.0.tar.gz).
 
-2. The *install-worker.sh* is a script that lets you copy .NET for Apache Spark dependent files into the nodes of your cluster. 
+2. The *install-worker.sh* is a script that lets you copy .NET for Apache Spark dependent files into the nodes of your cluster.
 
-   Create a new file named **install-worker.sh** on your local computer, and paste the [install-worker.sh contents](https://raw.githubusercontent.com/dotnet/spark/master/deployment/install-worker.sh) located on GitHub. 
+   Create a new file named **install-worker.sh** on your local computer, and paste the [install-worker.sh contents](https://raw.githubusercontent.com/dotnet/spark/master/deployment/install-worker.sh) located on GitHub.
 
 3. The *db-init.sh* is a script that installs dependencies onto your Databricks Spark cluster.
 
-   Create a new file named **db-init.sh** on your local computer, and paste the [db-init.sh contents](https://github.com/dotnet/spark/blob/master/deployment/db-init.sh) located on GitHub. 
-   
+   Create a new file named **db-init.sh** on your local computer, and paste the [db-init.sh contents](https://github.com/dotnet/spark/blob/master/deployment/db-init.sh) located on GitHub.
+
    In the file you just created, set the `DOTNET_SPARK_RELEASE` variable to `https://github.com/dotnet/spark/releases/download/v0.6.0/Microsoft.Spark.Worker.netcoreapp2.1.linux-x64-0.6.0.tar.gz`. Leave the rest of the *db-init.sh* file as-is.
 
 > [!Note]
@@ -118,20 +119,11 @@ You should now be able to access any Azure Databricks clusters you create and up
 
 ## Publish your app
 
-Next, you publish the *mySparkApp* created in the [.NET for Apache Spark - Get Started in 10-Minutes](https://dotnet.microsoft.com/learn/data/spark-tutorial/intro) tutorial to ensure your Spark cluster has access to all the files it needs to run your app. 
+Next, you publish the *mySparkApp* created in the [.NET for Apache Spark - Get Started in 10-Minutes](https://dotnet.microsoft.com/learn/data/spark-tutorial/intro) tutorial to ensure your Spark cluster has access to all the files it needs to run your app.
 
 1. Run the following commands to publish the *mySparkApp*:
 
-   **On Windows:**
-
-   ```console
-   cd mySparkApp
-   dotnet publish -c Release -f netcoreapp3.0 -r ubuntu.16.04-x6
-   ```
-
-   **On Linux:**
-
-   ```bash
+   ```dotnetcli
    cd mySparkApp
    dotnet publish -c Release -f netcoreapp3.0 -r ubuntu.16.04-x64
    ```
@@ -160,13 +152,13 @@ In this section, you upload several files to DBFS so that your cluster has every
    databricks fs cp Microsoft.Spark.Worker.netcoreapp2.1.linux-x64-0.6.0.tar.gz dbfs:/spark-dotnet/   Microsoft.Spark.Worker.netcoreapp2.1.linux-x64-0.6.0.tar.gz
    ```
 
-2. Run the following commands to upload the remaining files your cluster will need to run your app: the zipped publish folder, *input.txt*, and *microsoft-spark-2.4.x-0.3.0.jar*. 
+2. Run the following commands to upload the remaining files your cluster will need to run your app: the zipped publish folder, *input.txt*, and *microsoft-spark-2.4.x-0.3.0.jar*.
 
    ```console
-   cd mySparkApp 
+   cd mySparkApp
    databricks fs cp input.txt dbfs:/input.txt
-   
-   cd mySparkApp\bin\Release\netcoreapp3.0\ubuntu.16.04-x64 directory 
+
+   cd mySparkApp\bin\Release\netcoreapp3.0\ubuntu.16.04-x64 directory
    databricks fs cp mySparkApp.zip dbfs:/spark-dotnet/publish.zip
    databricks fs cp microsoft-spark-2.4.x-0.6.0.jar dbfs:/spark-dotnet/microsoft-spark-2.4.x-0.6.0.jar
    ```
@@ -175,7 +167,7 @@ In this section, you upload several files to DBFS so that your cluster has every
 
 Your app runs on Azure Databricks through a job that runs **spark-submit**, which is the command you use to run .NET for Apache Spark jobs.
 
-1. In your Azure Databricks Workspace, select the **Jobs** icon and then **+ Create Job**. 
+1. In your Azure Databricks Workspace, select the **Jobs** icon and then **+ Create Job**.
 
    ![Create an Azure Databricks job](./media/databricks-deployment/create-job.png)
 
@@ -186,14 +178,14 @@ Your app runs on Azure Databricks through a job that runs **spark-submit**, whic
 3. Paste the following parameters in the job configuration. Then, select **Confirm**.
 
    ```
-   ["--class","org.apache.spark.deploy.DotnetRunner","/dbfs/spark-dotnet/microsoft-spark-2.4.x-0.6.0.jar","/dbfs/spark-dotnet/publish.zip","mySparkApp"]
+   ["--class","org.apache.spark.deploy.dotnet.DotnetRunner","/dbfs/spark-dotnet/microsoft-spark-2.4.x-0.6.0.jar","/dbfs/spark-dotnet/publish.zip","mySparkApp"]
    ```
 
 ## Create a cluster
 
 1. Navigate to your job and select **Edit** to configure your job's cluster.
 
-2. Set your cluster to **Spark 2.4.1**. Then, select **Advanced Options** > **Init Scripts**. Set Init Script Path as `dbfs:/spark-dotnet/db-init.sh`. 
+2. Set your cluster to **Spark 2.4.1**. Then, select **Advanced Options** > **Init Scripts**. Set Init Script Path as `dbfs:/spark-dotnet/db-init.sh`.
 
    ![Configure spark cluster in Azure Databricks](./media/databricks-deployment/cluster-config.png)
 
@@ -205,7 +197,7 @@ Your app runs on Azure Databricks through a job that runs **spark-submit**, whic
 
 2. It takes a few minutes for the job's cluster to create. Once it is created, your job will be submitted, and you can view the output.
 
-3. Select **Clusters** from the left menu, and then the name and run of your job. 
+3. Select **Clusters** from the left menu, and then the name and run of your job.
 
 4. Select **Driver Logs** to view the output of your job. When your app finishes executing, you see the same word count table from the getting started local run written to the standard output console.
 

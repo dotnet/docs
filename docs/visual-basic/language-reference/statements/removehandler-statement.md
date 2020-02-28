@@ -1,5 +1,5 @@
 ---
-title: "RemoveHandler Statement (Visual Basic)"
+title: "RemoveHandler Statement"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.RemoveHandlerMethod"

@@ -9,11 +9,11 @@ ms.custom: mvc
 
 # What is Apache Spark?
 
-[Apache Spark](https://spark.apache.org/) is an open-source parallel processing framework that supports in-memory processing to boost the performance of applications that analyze big data. Big data solutions are designed to handle data that is too large or complex for traditional databases. Spark processes large amounts of data in memory, which is much faster than disk-based alternatives. 
+[Apache Spark](https://spark.apache.org/) is an open-source parallel processing framework that supports in-memory processing to boost the performance of applications that analyze big data. Big data solutions are designed to handle data that is too large or complex for traditional databases. Spark processes large amounts of data in memory, which is much faster than disk-based alternatives.
 
 ## Common big data scenarios
 
-You might consider a big data architecture if you need to store and process large volumes of data, transform unstructured data, or processes streaming data. Spark is a general-purpose distributed processing engine that can be used for several big data scenarios. 
+You might consider a big data architecture if you need to store and process large volumes of data, transform unstructured data, or processes streaming data. Spark is a general-purpose distributed processing engine that can be used for several big data scenarios.
 
 ### Extract, transform, and load (ETL)
 
@@ -29,7 +29,7 @@ You might consider a big data architecture if you need to store and process larg
 
 ### Real-time data stream processing
 
-Streaming, or real-time, data is data in motion. Telemetry from IoT devices, weblogs, and clickstreams are all examples of streaming data. Real-time data can be processed to provide useful information, such as geospatial analysis, remote monitoring, and anomaly detection. Just like relational data, you can filter, aggregate, and prepare streaming data before moving the data to an output sink. Apache Spark supports [real-time data stream processing](/azure/architecture/data-guide/big-data/real-time-processing) through [Spark Streaming](https://spark.apache.org/streaming/). 
+Streaming, or real-time, data is data in motion. Telemetry from IoT devices, weblogs, and clickstreams are all examples of streaming data. Real-time data can be processed to provide useful information, such as geospatial analysis, remote monitoring, and anomaly detection. Just like relational data, you can filter, aggregate, and prepare streaming data before moving the data to an output sink. Apache Spark supports [real-time data stream processing](/azure/architecture/data-guide/big-data/real-time-processing) through [Spark Streaming](https://spark.apache.org/streaming/).
 
 ### Batch processing
 

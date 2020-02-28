@@ -14,8 +14,6 @@ helpviewer_keywords:
 ms.assetid: e48b5c64-049f-4f93-ad87-d07ae9cd5845
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Init Method
 Prepares objects implementing the [IALink Interface](ialink-interface.md) for use.  

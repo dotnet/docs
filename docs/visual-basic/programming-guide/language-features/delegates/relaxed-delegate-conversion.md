@@ -1,5 +1,5 @@
 ---
-title: "Relaxed Delegate Conversion (Visual Basic)"
+title: "Relaxed Delegate Conversion"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "relaxed delegate conversion [Visual Basic]"

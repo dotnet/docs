@@ -1,5 +1,5 @@
 ---
-title: "Interface Statement (Visual Basic)"
+title: "Interface Statement"
 ms.date: 05/12/2018
 f1_keywords: 
   - "vb.Interface"

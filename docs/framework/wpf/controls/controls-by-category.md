@@ -134,7 +134,7 @@ Windows Presentation Foundation (WPF) controls can be logically grouped into sev
 - <xref:System.Windows.Controls.ToolTip>  
   
 ## Documents  
- [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] includes several specialized controls for viewing documents. These controls optimize the reading experience, based on the targeted user scenario.  
+ WPF includes several specialized controls for viewing documents. These controls optimize the reading experience, based on the targeted user scenario.  
   
 - <xref:System.Windows.Controls.DocumentViewer>  
   
@@ -156,7 +156,7 @@ Windows Presentation Foundation (WPF) controls can be logically grouped into sev
 - <xref:System.Windows.Controls.PasswordBox>  
   
 ## Media  
- [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] includes integrated support for hosting both audio and video content, as well as [codecs] for most popular image formats.  
+ WPF includes integrated support for hosting both audio and video content, as well as [codecs] for most popular image formats.  
   
 - <xref:System.Windows.Controls.Image>  
   

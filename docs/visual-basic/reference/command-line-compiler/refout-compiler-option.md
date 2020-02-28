@@ -1,5 +1,5 @@
 ---
-title: "-refout (Visual Basic)"
+title: "-refout"
 ms.date: 03/16/2018
 f1_keywords:
   - "/refout"

@@ -1,5 +1,5 @@
 ---
-title: "Single Data Type (Visual Basic)"
+title: "Single Data Type"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.Single"
@@ -22,9 +22,11 @@ helpviewer_keywords:
 ms.assetid: 224a2795-4cd5-496c-8f7a-a4f05a06d45d
 ---
 # Single Data Type (Visual Basic)
+
 Holds signed IEEE 32-bit (4-byte) single-precision floating-point numbers ranging in value from -3.4028235E+38 through -1.401298E-45 for negative values and from 1.401298E-45 through 3.4028235E+38 for positive values. Single-precision numbers store an approximation of a real number.  
   
 ## Remarks  
+
  Use the `Single` data type to contain floating-point values that do not require the full data width of `Double`. In some cases the common language runtime might be able to pack your `Single` variables closely together and save memory consumption.  
   
  The default value of `Single` is 0.  

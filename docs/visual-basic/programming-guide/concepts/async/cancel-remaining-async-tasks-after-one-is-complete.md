@@ -1,5 +1,5 @@
 ---
-title: "Cancel Remaining Async Tasks after One Is Complete (Visual Basic)"
+title: "Cancel Remaining Async Tasks after One Is Complete"
 ms.date: 07/20/2015
 ms.assetid: c928b5a1-622f-4441-8baf-adca1dde197f
 ---

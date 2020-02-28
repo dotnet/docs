@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: bca7a5b4-c207-4894-918c-0733926296dd
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerInfo4::EnumThreads Method
 Returns an enumerator that provides methods to sequentially iterate through the collection of all managed threads in the profiled process.  
@@ -30,7 +28,7 @@ HRESULT EnumThreads([out]
   
 ## Parameters  
  `ppEnum`  
- [out] A pointer to an [ICorProfilerThreadEnum](../../../../docs/framework/unmanaged-api/profiling/icorprofilerthreadenum-interface.md) interface.  
+ [out] A pointer to an [ICorProfilerThreadEnum](icorprofilerthreadenum-interface.md) interface.  
   
 ## Remarks  
   
@@ -45,7 +43,7 @@ HRESULT EnumThreads([out]
   
 ## See also
 
-- [ICorProfilerThreadEnum Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerthreadenum-interface.md)
-- [ICorProfilerInfo4 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-interface.md)
-- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
-- [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)
+- [ICorProfilerThreadEnum Interface](icorprofilerthreadenum-interface.md)
+- [ICorProfilerInfo4 Interface](icorprofilerinfo4-interface.md)
+- [Profiling Interfaces](profiling-interfaces.md)
+- [Profiling](index.md)

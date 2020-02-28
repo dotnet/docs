@@ -75,7 +75,7 @@ This tutorial explains how to create a localized application by using the LocBam
 <a name="build_locbaml"></a>   
 ## Build the LocBaml Tool  
   
-1. All the files necessary to build LocBaml are located in the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] samples. Download the C# files from the [LocBaml Tool Sample](https://go.microsoft.com/fwlink/?LinkID=160016).  
+1. All the files necessary to build LocBaml are located in the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] samples. Download the C# files from the [LocBaml Tool Sample](https://github.com/microsoft/WPF-Samples/tree/master/Tools/LocBaml).  
   
 2. From the command line, run the project file (locbaml.csproj) to build the tool:  
   
@@ -155,7 +155,7 @@ This tutorial explains how to create a localized application by using the LocBam
   
 <a name="translate_loc_content"></a>   
 ## Translate the Localizable Content  
- Use any tool that you have available to translate the extracted content. A good way to do this is to write the resources to a .csv file and view them in [!INCLUDE[TLA#tla_xl](../../../../includes/tlasharptla-xl-md.md)], making translation changes to the last column (value).  
+ Use any tool that you have available to translate the extracted content. A good way to do this is to write the resources to a .csv file and view them in Microsoft Excel, making translation changes to the last column (value).  
   
 <a name="merge_translations"></a>   
 ## Use LocBaml to Generate a New .resources.dll File  

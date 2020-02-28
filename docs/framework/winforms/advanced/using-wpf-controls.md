@@ -5,8 +5,8 @@ helpviewer_keywords:
   - "Windows Forms Designer [Windows Forms], interoperability with WPF"
   - "interoperability [WPF]"
 ms.assetid: 03c85dce-26ad-44cd-bc1d-8e0cb56de096
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # Use WPF controls in Windows Forms apps

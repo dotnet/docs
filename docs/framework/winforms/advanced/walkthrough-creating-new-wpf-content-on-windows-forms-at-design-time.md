@@ -1,5 +1,6 @@
 ---
-title: "Walkthrough: Creating New WPF Content on Windows Forms at Design Time"
+title: Create new WPF Content on Windows Forms
+titleSuffix: ""
 ms.date: 08/18/2018
 helpviewer_keywords:
   - "interoperability [Windows Forms], WPF and Windows Forms"
@@ -8,8 +9,8 @@ helpviewer_keywords:
   - "ElementHost control"
   - "WPF user control [Windows Forms], hosting in Windows Forms"
 ms.assetid: 2e92d8e8-f0e4-4df7-9f07-2acf35cd798c
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # Walkthrough: Create new WPF content on Windows Forms at design time

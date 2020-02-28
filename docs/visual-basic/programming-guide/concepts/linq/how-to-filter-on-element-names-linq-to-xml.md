@@ -1,5 +1,5 @@
 ---
-title: "How to: Filter on Element Names (LINQ to XML) (Visual Basic)"
+title: "How to: Filter on Element Names (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: b1437b4a-48aa-4546-834a-d6d3ab015fe1
 ---

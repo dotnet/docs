@@ -23,7 +23,7 @@ By default, the content of each column in a <xref:System.Windows.Controls.ListVi
   
 ## See also
 
-- [Data Binding Overview](../data/data-binding-overview.md)
+- [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md)
 - [Data Templating Overview](../data/data-templating-overview.md)
 - [Bind to XML Data Using an XMLDataProvider and XPath Queries](../data/how-to-bind-to-xml-data-using-an-xmldataprovider-and-xpath-queries.md)
 - [ListView Overview](listview-overview.md)

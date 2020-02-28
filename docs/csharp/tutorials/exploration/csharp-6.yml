@@ -21,7 +21,7 @@ items:
     [!code-csharp[Starter](../../../../samples/csharp/tutorials/exploration/csharp6-starter/Program.cs)]  
 
         
-     Enter Focus mode, copy the preceding code into the C# interactive window. Then, click *Run* to see what the code does. `AllCaps` has the undesirable side effect of modifying the property values along with returning the uppercase string. The author of the `Person` class intended the strings for `FirstName` and `LastName` to be read-only. With C# 6, you can make that intent clear. Remove the `private set` from both properties to create a read-only auto property. Click *Run* to see that the compiler spots the two locations where the `FirstName` and `LastName` properties are changed when they should not have been. You can change the `AllCaps` method to the following code to fix the compiler error:
+     Enter Focus mode, copy the preceding code into the C# interactive window. Then, select *Run* to see what the code does. `AllCaps` has the undesirable side effect of modifying the property values along with returning the uppercase string. The author of the `Person` class intended the strings for `FirstName` and `LastName` to be read-only. With C# 6, you can make that intent clear. Remove the `private set` from both properties to create a read-only auto property. Select *Run* to see that the compiler spots the two locations where the `FirstName` and `LastName` properties are changed when they should not have been. You can change the `AllCaps` method to the following code to fix the compiler error:
 
     ```csharp
     public string AllCaps()

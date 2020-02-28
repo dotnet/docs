@@ -37,4 +37,4 @@ Workflow components in the host process
   
 ## See also
 
-- [BizTalk Server 2006 or WF? Choosing the Right Workflow Tool for Your Project](https://go.microsoft.com/fwlink/?LinkId=154901)
+- [BizTalk Server 2006 or WF? Choosing the Right Workflow Tool for Your Project](https://docs.microsoft.com/previous-versions/dotnet/articles/cc303238(v=msdn.10))

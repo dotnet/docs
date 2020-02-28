@@ -17,8 +17,8 @@ ms.assetid: 8eb34f3b-427e-4288-a7ff-c73f489deb45
 
 Specifies a configuration file to include.
 
-[**\<configuration>**](configuration-element.md)   
-&nbsp;&nbsp;[**\<assemblyBinding>**](assemblybinding-element-for-configuration.md)   
+[**\<configuration>**](configuration-element.md)\
+&nbsp;&nbsp;[**\<assemblyBinding>**](assemblybinding-element-for-configuration.md)\
 &nbsp;&nbsp;&nbsp;&nbsp;**\<linkedConfiguration>**
 
 ## Syntax

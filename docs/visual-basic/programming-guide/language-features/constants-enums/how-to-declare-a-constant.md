@@ -1,5 +1,5 @@
 ---
-title: "How to: Declare A Constant (Visual Basic)"
+title: "How to: Declare A Constant"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.constant"

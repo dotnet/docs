@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "stores, current user"
   - "removing stores"
 ms.assetid: b81202b8-d91d-4b23-9c53-4a112f74a44a
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Storeadm.exe (Isolated Storage Tool)
 The Isolated Storage tool lists or removes all existing stores for the current user.  

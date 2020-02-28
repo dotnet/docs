@@ -1,5 +1,5 @@
 ---
-title: "Converting Data Types (Visual Basic)"
+title: "Converting Data Types"
 ms.date: 07/20/2015
 ms.assetid: 9b0cf1ab-de48-4c6e-9f00-05b40fade46e
 ---

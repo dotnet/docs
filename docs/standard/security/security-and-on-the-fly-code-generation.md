@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "security [.NET Framework], on-the-fly code generation"
   - "secure coding, on-the-fly code generation"
 ms.assetid: 6d221724-bb21-4d76-90c3-0ee2a2e69be2
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Security and On-the-Fly Code Generation
 Some libraries operate by generating code and running it to perform some operation for the caller. The basic problem is generating code on behalf of lesser-trust code and running it at a higher trust. The problem worsens when the caller can influence code generation, so you must ensure that only code you consider safe is generated.  

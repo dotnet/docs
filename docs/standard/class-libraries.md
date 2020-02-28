@@ -2,7 +2,6 @@
 title: .NET class libraries
 description: Learn how .NET class libraries enable you to group useful functionality into modules that can be used by multiple applications.
 author: richlander
-ms.author: mairaw
 ms.date: 06/20/2016
 ms.technology: dotnet-standard
 ms.assetid: a67484c3-fe92-44d8-8fa3-36fa2071d880

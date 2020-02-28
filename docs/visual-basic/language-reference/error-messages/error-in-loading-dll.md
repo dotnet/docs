@@ -1,5 +1,5 @@
 ---
-title: "Error in loading DLL (Visual Basic)"
+title: "Error in loading DLL"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vbrID48"

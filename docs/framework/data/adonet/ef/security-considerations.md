@@ -21,7 +21,7 @@ This topic describes security considerations that are specific to developing, de
  During the logon operation, information that is based on the user password is passed to the server through the network libraries of the underlying data source. A malicious provider can steal user credentials, generate malicious queries, or tamper with the result set.  
   
 #### Encrypt your connection to protect sensitive data.  
- The Entity Framework does not directly handle data encryption. If users access data over a public network, your application should establish an encrypted connection to the data source to increase security. For more information, see the security-related documentation for your data source. For a SQL Server data source, see [Encrypting Connections to SQL Server](https://go.microsoft.com/fwlink/?LinkId=119544).  
+ The Entity Framework does not directly handle data encryption. If users access data over a public network, your application should establish an encrypted connection to the data source to increase security. For more information, see the security-related documentation for your data source. For a SQL Server data source, see [Encrypting Connections to SQL Server](https://docs.microsoft.com/previous-versions/sql/sql-server-2008-r2/ms189067(v=sql.105)).  
   
 #### Secure the connection string.  
  Protecting access to your data source is one of the most important goals when securing an application. A connection string presents a potential vulnerability if it is not secured or if it is improperly constructed. When you store connection information in plain text or persist it in memory, you risk compromising your entire system. The following are the recommended methods for securing connection strings:  
@@ -113,11 +113,11 @@ This topic describes security considerations that are specific to developing, de
  Avoid returning <xref:System.Linq.IQueryable%601> types from methods that are exposed to potentially untrusted callers for the following reasons:  
   
 - A consumer of a query that exposes an <xref:System.Linq.IQueryable%601> type could call methods on the result that expose secure data or increase the size of the result set. For example, consider the following method signature:  
-  
-    ```csharp  
-    public IQueryable<Customer> GetCustomer(int customerId)  
-    ```  
-  
+
+    ```csharp
+    public IQueryable<Customer> GetCustomer(int customerId)
+    ```
+
     A consumer of this query could call `.Include("Orders")` on the returned `IQueryable<Customer>` to retrieve data that the query did not intend to expose. This can be avoided by changing the return type of the method to <xref:System.Collections.Generic.IEnumerable%601> and calling a method (such as `.ToList()`) that materializes the results.  
   
 - Because <xref:System.Linq.IQueryable%601> queries are executed when the results are iterated over, a consumer of a query that exposes an <xref:System.Linq.IQueryable%601> type could catch exceptions that are thrown. Exceptions could contain information not intended for the consumer.  

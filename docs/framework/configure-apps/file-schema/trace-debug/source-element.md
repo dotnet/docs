@@ -10,12 +10,12 @@ helpviewer_keywords:
 ---
 # \<source> Element
 Specifies a trace source that initiates tracing messages.  
-  
-[**\<configuration>**](../configuration-element.md)  
-&nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)  
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<sources>**](sources-element.md)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<source>**  
-  
+
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.diagnostics>**](system-diagnostics-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<sources>**](sources-element.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<source>**
+
 ## Syntax  
   
 ```xml  

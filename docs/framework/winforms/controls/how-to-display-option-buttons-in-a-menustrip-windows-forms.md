@@ -1,5 +1,5 @@
 ---
-title: "How to: Display Option Buttons in a MenuStrip (Windows Forms)"
+title: "How to: Display Option Buttons in a MenuStrip"
 ms.date: "03/30/2017"
 dev_langs:
   - "csharp"

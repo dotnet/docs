@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 8653bd4c-2290-43d2-a3e1-cbbd50033f4f
 topic_type:
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 
 # IMethodMalloc::Alloc Method

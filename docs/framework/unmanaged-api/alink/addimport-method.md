@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 4fedf8a0-08c8-43d0-aa00-20f2a521c991
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # AddImport Method
 Adds imports to the assembly.  

@@ -1,9 +1,9 @@
 ---
-title: "How to: Query An Assembly's Metadata with Reflection (LINQ) (C#)"
+title: "How to query an assembly's metadata with Reflection (LINQ) (C#)"
 ms.date: 07/20/2015
 ms.assetid: c4cdce49-b1c8-4420-b12a-9ff7e6671368
 ---
-# How to: Query An Assembly's Metadata with Reflection (LINQ) (C#)
+# How to query an assembly's metadata with Reflection (LINQ) (C#)
 
 The .NET Framework class library reflection APIs can be used to examine the metadata in a .NET assembly and create collections of types, type members, parameters, and so on that are in that assembly. Because these collections support the generic <xref:System.Collections.Generic.IEnumerable%601> interface, they can be queried by using LINQ.  
   

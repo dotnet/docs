@@ -1,5 +1,5 @@
 ---
-title: "How to: Validate File Names and Paths in Visual Basic"
+title: "How to: Validate File Names and Paths"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "file names [Visual Basic], validating"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Enable Reordering of ToolStrip Items at Run Time in Windows Forms"
+title: "How to: Enable Reordering of ToolStrip Items at Run Time"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

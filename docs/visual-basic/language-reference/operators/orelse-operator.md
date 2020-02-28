@@ -1,5 +1,5 @@
 ---
-title: "OrElse Operator (Visual Basic)"
+title: "OrElse Operator"
 ms.date: 07/20/2015
 f1_keywords: 
   - "OrElse"

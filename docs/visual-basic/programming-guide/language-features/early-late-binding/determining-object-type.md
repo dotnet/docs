@@ -1,5 +1,5 @@
 ---
-title: "Determining Object Type (Visual Basic)"
+title: "Determining Object Type"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "classes [Visual Basic], discovering which an object belongs to"

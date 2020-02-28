@@ -13,12 +13,12 @@ ms.assetid: 94b81775-5a22-4975-8c47-8620c40c3f35
 ---
 # \<remove> Element for connectionManagement (Network Settings)
 Removes an IP address or DNS name from the connection management list.  
-  
-[**\<configuration>**](../configuration-element.md)  
-&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)  
-&nbsp;&nbsp;&nbsp;&nbsp;[**\<connectionManagement>**](connectionmanagement-element-network-settings.md)  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**  
-  
+
+[**\<configuration>**](../configuration-element.md)\
+&nbsp;&nbsp;[**\<system.net>**](system-net-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;[**\<connectionManagement>**](connectionmanagement-element-network-settings.md)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**\<remove>**
+
 ## Syntax  
   
 ```xml  

@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "diagnostics symbol store enumerations [.NET Framework]"
   - "enumerations [.NET Framework debugging]"
 ms.assetid: 57d68c70-aba1-4bad-a13f-6d0c55f43746
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Diagnostics Symbol Store Enumerations
 This topic describes the unmanaged enumerations that the diagnostics symbol store API uses.  

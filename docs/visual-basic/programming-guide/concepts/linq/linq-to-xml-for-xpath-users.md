@@ -1,5 +1,5 @@
 ---
-title: "LINQ to XML for XPath Users (Visual Basic)"
+title: "LINQ to XML for XPath Users"
 ms.date: 07/20/2015
 ms.assetid: 0e64911c-a7cc-4c20-b927-ca99078b5656
 ---

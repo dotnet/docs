@@ -1,5 +1,5 @@
 ---
-title: "How to: Format the Windows Forms DataGrid Control Using the Designer"
+title: Format DataGrid Control Using the Designer
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "columns [Windows Forms], DataGrid controls"

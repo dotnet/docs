@@ -1,5 +1,5 @@
 ---
-title: "How to: Handle User Input Events in Windows Forms Controls"
+title: Handle User Input Events in Controls
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

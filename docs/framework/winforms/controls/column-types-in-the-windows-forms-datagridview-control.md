@@ -1,5 +1,5 @@
 ---
-title: "Column Types in the Windows Forms DataGridView Control"
+title: Column Types in DataGridView Control
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "columns [Windows Forms], types"

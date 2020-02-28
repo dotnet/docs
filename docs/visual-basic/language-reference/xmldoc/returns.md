@@ -1,5 +1,5 @@
 ---
-title: "<returns> (Visual Basic)"
+title: "<returns>"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "returns XML tag"

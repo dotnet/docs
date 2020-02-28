@@ -26,8 +26,8 @@ The BCL provides the most foundational types and utility functionality and are t
 * <xref:System.Single?displayProperty=nameWithType> ([float](../csharp/language-reference/builtin-types/floating-point-numeric-types.md)) - A 32-bit floating-point type.
 * <xref:System.Decimal?displayProperty=nameWithType> ([decimal](../csharp/language-reference/builtin-types/floating-point-numeric-types.md)) - A 128-bit decimal type.
 * <xref:System.Byte?displayProperty=nameWithType> ([byte](../csharp/language-reference/builtin-types/integral-numeric-types.md)) - An unsigned 8-bit integer that represents a byte of memory.
-* <xref:System.Boolean?displayProperty=nameWithType> ([bool](../csharp/language-reference/keywords/bool.md)) - A boolean type that represents `true` or `false`.
-* <xref:System.Char?displayProperty=nameWithType> ([char](../csharp/language-reference/keywords/char.md)) - A 16-bit numeric type that represents a Unicode character.
+* <xref:System.Boolean?displayProperty=nameWithType> ([bool](../csharp/language-reference/builtin-types/bool.md)) - A Boolean type that represents `true` or `false`.
+* <xref:System.Char?displayProperty=nameWithType> ([char](../csharp/language-reference/builtin-types/char.md)) - A 16-bit numeric type that represents a Unicode character.
 * <xref:System.String?displayProperty=nameWithType> ([string](../csharp/language-reference/builtin-types/reference-types.md#the-string-type)) - Represents a series of characters. Different than a `char[]`, but enables indexing into each individual `char` in the `string`.
 
 ## Data Structures
@@ -46,7 +46,7 @@ The BCL provides the most foundational types and utility functionality and are t
 
 * <xref:System.Net.Http.HttpClient> - An API for sending HTTP requests and receiving HTTP responses from a resource identified by a URI.
 * <xref:System.Xml.Linq.XDocument> - An API for loading, and querying XML documents with LINQ.
-* <xref:System.IO.StreamReader> - An API for reading files. 
+* <xref:System.IO.StreamReader> - An API for reading files.
 * <xref:System.IO.StreamWriter> - An API for writing files.
 
 ## App-Model APIs

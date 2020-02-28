@@ -1,5 +1,5 @@
 ---
-title: "How to: Copy a Directory to Another Directory in Visual Basic"
+title: "How to: Copy a Directory to Another Directory"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "I/O [Visual Basic], copying directories"

@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Deferred Execution (Visual Basic)"
+title: "Tutorial: Deferred Execution"
 ms.date: 07/20/2015
 ms.assetid: c80d53a8-1a30-4115-b232-52f0d089fec5
 ---

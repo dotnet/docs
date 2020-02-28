@@ -1,5 +1,5 @@
 ---
-title: "Structures and Other Programming Elements (Visual Basic)"
+title: "Structures and Other Programming Elements"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "structures [Visual Basic], arrays"

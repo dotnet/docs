@@ -5,12 +5,12 @@ ms.assetid: e0aef017-4381-4f2f-a904-6e1ed898687e
 ---
 # Windows Workflow (WF) Samples
 
-You can [download Windows Workflow samples](https://go.microsoft.com/fwlink/?LinkId=150780) that provide instruction on various aspects of Windows Workflow Foundation (WF).
+You can [download Windows Workflow samples](https://www.microsoft.com/download/details.aspx?id=21459) that provide instruction on various aspects of Windows Workflow Foundation (WF).
 
 The articles in this section describe some of the samples in the download package. For a complete documentation set that covers all of the samples, check the [.NET Framework 4 WF samples](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd483375(v%3dvs.100)) section.
 
 > [!NOTE]
-> The downloadable samples were created with Visual Studio 2010 and [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)], but are compatible with later versions of Visual Studio and the .NET Framework. Additional samples for Windows Workflow Foundation in [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] can be found on [MSDN code samples](https://aka.ms/WF45Samples).
+> The downloadable samples were created with Visual Studio 2010 and .NET Framework 4, but are compatible with later versions of Visual Studio and the .NET Framework. Additional samples for Windows Workflow Foundation in [!INCLUDE[netfx_current_short](../../../../includes/netfx-current-short-md.md)] can be found on [MSDN code samples](https://aka.ms/WF45Samples).
 
 ## In this section
 

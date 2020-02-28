@@ -1,5 +1,5 @@
 ---
-title: "Introduction to COM Interop (Visual Basic)"
+title: "Introduction to COM Interop"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "interop assemblies"

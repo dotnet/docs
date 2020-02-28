@@ -69,4 +69,4 @@ Some controls, such as <xref:System.Windows.Controls.Calendar> and <xref:System.
   
 ## See also
 
-- [XAML Overview (WPF)](xaml-overview-wpf.md)
+- [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)

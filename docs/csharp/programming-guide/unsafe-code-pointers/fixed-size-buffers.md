@@ -1,6 +1,5 @@
 ---
 title: "Fixed Size Buffers - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 04/20/2018
 helpviewer_keywords: 
   - "fixed size buffers [C#]"
@@ -17,7 +16,7 @@ private fixed char name[30];
 
 ## Remarks
 
-In safe code, a C# struct that contains an array does not contain the array elements. Instead, the struct contains a reference to the elements. You can embed an array of fixed size in a [struct](../../language-reference/keywords/struct.md) when it is used in an [unsafe](../../language-reference/keywords/unsafe.md) code block.
+In safe code, a C# struct that contains an array does not contain the array elements. Instead, the struct contains a reference to the elements. You can embed an array of fixed size in a [struct](../../language-reference/builtin-types/struct.md) when it is used in an [unsafe](../../language-reference/keywords/unsafe.md) code block.
 
 The following `struct` is 8 bytes in size. The `pathName` array is a reference:
 
@@ -27,11 +26,11 @@ A `struct` can contain an embedded array in unsafe code. In the following exampl
 
 [!code-csharp[Struct with embedded inline array](../../../../samples/snippets/csharp/keywords/FixedKeywordExamples.cs#7)]
 
-The size of the 128 element `char` array is 256 bytes. Fixed size [char](../../language-reference/keywords/char.md) buffers always take two bytes per character, regardless of the encoding. This is true even when char buffers are marshaled to API methods or structs with `CharSet = CharSet.Auto` or `CharSet = CharSet.Ansi`. For more information, see <xref:System.Runtime.InteropServices.CharSet>.
+The size of the 128 element `char` array is 256 bytes. Fixed size [char](../../language-reference/builtin-types/char.md) buffers always take two bytes per character, regardless of the encoding. This is true even when char buffers are marshaled to API methods or structs with `CharSet = CharSet.Auto` or `CharSet = CharSet.Ansi`. For more information, see <xref:System.Runtime.InteropServices.CharSet>.
 
 The  preceding example demonstrates accessing `fixed` fields without pinning, which is available starting with C# 7.3.
 
-Another common fixed-size array is the [bool](../../language-reference/keywords/bool.md) array. The elements in a `bool` array are always one byte in size. `bool` arrays are not appropriate for creating bit arrays or buffers.
+Another common fixed-size array is the [bool](../../language-reference/builtin-types/bool.md) array. The elements in a `bool` array are always one byte in size. `bool` arrays are not appropriate for creating bit arrays or buffers.
 
 > [!NOTE]
 > Except for memory created by using [stackalloc](../../language-reference/operators/stackalloc.md), the C# compiler and the common language runtime (CLR) do not perform any security buffer overrun checks. As with all unsafe code, use caution.

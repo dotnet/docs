@@ -42,5 +42,5 @@ HRESULT GetName(
   
 ## See also
 
-- [ICorDebugVariableSymbol Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugvariablesymbol-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugVariableSymbol Interface](icordebugvariablesymbol-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

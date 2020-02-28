@@ -12,7 +12,7 @@ ms.assetid: 7fd571fd-d54a-40fc-b332-4c4015a5b6ff
 Windows Presentation Foundation (WPF) styling and templating refer to a suite of features (styles, templates, triggers, and storyboards) that allow an application, document, or user interface (UI) designer to create visually compelling applications and to standardize on a particular look for their product.  
   
 ## In This Section  
- [Styling and Templating](styling-and-templating.md)  
+ [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)  
   [How to: Find ControlTemplate-Generated Elements](how-to-find-controltemplate-generated-elements.md)  
   
 ## Reference  

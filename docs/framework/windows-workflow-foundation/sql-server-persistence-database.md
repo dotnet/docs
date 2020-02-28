@@ -16,4 +16,4 @@ This section provides details about public database views supported by the SQL W
   
 ## See also
 
-- [App Fabric SQL Server Persistence Database](https://go.microsoft.com/fwlink/?LinkID=201202&clcid=0x409)
+- [App Fabric SQL Server Persistence Database](https://docs.microsoft.com/previous-versions/appfabric/ee790819(v=azure.10))

@@ -2,7 +2,7 @@
 title: "Walkthrough: Embed types from managed assemblies in Visual Studio"
 ms.date: 08/19/2019
 ms.assetid: 55ed13c9-c5bb-4bc2-bcd8-0587eb568864
-dev_langs: 
+dev_langs:
   - "csharp"
   - "vb"
 ---
@@ -28,7 +28,7 @@ In this walkthrough, you:
 
 ## Conditions and limitations
 
-You can embed type information from an assembly under the following conditions: 
+You can embed type information from an assembly under the following conditions:
 
 - The assembly exposes at least one public interface.
 - The embedded interfaces are annotated with `ComImport` attributes and `Guid` attributes with unique GUIDs.
@@ -47,7 +47,7 @@ The first step is to create the type equivalence interface assembly.
 
 1. In Visual Studio, select **File** > **New** > **Project**.
 
-1. In the **Create a new project** dialog box, type *class library* in the **Search for templates** box. Select either the C# or VB **Class Library (.NET Framework)** template from the list, and then select **Next**.
+1. In the **Create a new project** dialog box, type *class library* in the **Search for templates** box. Select either the C# or Visual Basic **Class Library (.NET Framework)** template from the list, and then select **Next**.
 
 1. In the **Configure your new project** dialog box, under **Project name**, type *TypeEquivalenceInterface*, and then select **Create**. The new project is created.
 
@@ -114,7 +114,7 @@ Next, create the type equivalence runtime class.
 
 1. In Visual Studio, select **File** > **New** > **Project**.
 
-1. In the **Create a new project** dialog box, type *class library* in the **Search for templates** box. Select either the C# or VB **Class Library (.NET Framework)** template from the list, and then select **Next**.
+1. In the **Create a new project** dialog box, type *class library* in the **Search for templates** box. Select either the C# or Visual Basic **Class Library (.NET Framework)** template from the list, and then select **Next**.
 
 1. In the **Configure your new project** dialog box, under **Project name**, type *TypeEquivalenceRuntime*, and then select **Create**. The new project is created.
 
@@ -186,7 +186,7 @@ Finally, create a type equivalence client program that references the interface 
 
 1. In Visual Studio, select **File** > **New** > **Project**.
 
-1. In the **Create a new project** dialog box, type *console* in the **Search for templates** box. Select either the C# or VB **Console App (.NET Framework)** template from the list, and then select **Next**.
+1. In the **Create a new project** dialog box, type *console* in the **Search for templates** box. Select either the C# or Visual Basic **Console App (.NET Framework)** template from the list, and then select **Next**.
 
 1. In the **Configure your new project** dialog box, under **Project name**, type *TypeEquivalenceClient*, and then select **Create**. The new project is created.
 
@@ -315,5 +315,4 @@ Go to the build output folder location and run *TypeEquivalenceClient.exe*. Note
 - [-link (Visual Basic)](../../visual-basic/reference/command-line-compiler/link.md)
 - [C# programming guide](../../csharp/programming-guide/index.md)
 - [Programming concepts (Visual Basic)](../../visual-basic/programming-guide/concepts/index.md)
-- [Program with assemblies](program.md)
 - [Assemblies in .NET](index.md)

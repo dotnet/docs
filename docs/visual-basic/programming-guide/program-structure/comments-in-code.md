@@ -1,5 +1,5 @@
 ---
-title: "Comments in Code (Visual Basic)"
+title: "Comments in Code"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Uncomment button"
@@ -55,7 +55,7 @@ As you read the code examples, you often encounter the comment symbol (`'`). Thi
   
 ## See also
 
-- [Basic Instincts - Documenting Your Code With XML Comments](https://msdn.microsoft.com/magazine/dd722812.aspx)
+- [Basic Instincts - Documenting Your Code With XML Comments](https://docs.microsoft.com/archive/msdn-magazine/2009/may/documenting-your-code-with-xml-comments)
 - [How to: Create XML Documentation](../../../visual-basic/programming-guide/program-structure/how-to-create-xml-documentation.md)
 - [XML Comment Tags](../../../visual-basic/language-reference/xmldoc/index.md)
 - [Program Structure and Code Conventions](../../../visual-basic/programming-guide/program-structure/program-structure-and-code-conventions.md)

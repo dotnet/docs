@@ -23,7 +23,7 @@ Controls the caching mechanism for network requests.
   isPrivateCache ="true|false"  
   disableAllCaching="true|false"  
   defaultPolicyLevel="BypassCache|Default|CacheOnly|CacheIfAvailable|Revalidate|Reload|NoCacheNoStore|Revalidate"  
-  unspecifiedMaximumAge= "d.hh.mm.ss">  
+  unspecifiedMaximumAge= "d.hh:mm:ss">  
     <defaultHttpCachePolicy>...</defaultHttpCachePolicy>  
     <defaultFtpCachePolicy>...</defaultFtpCachePolicy>  
 </requestCaching>

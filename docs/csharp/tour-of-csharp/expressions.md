@@ -1,7 +1,7 @@
 ---
 title: C# Expressions - A tour of the C# language
 description: Expressions, operands, and operators are building blocks of the C# language
-ms.date: 04/25/2019
+ms.date: 02/27/2020
 ms.assetid: 20d5eb10-7381-47b9-ad90-f1cc895aa27e
 ---
 # Expressions

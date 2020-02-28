@@ -1,5 +1,5 @@
 ---
-title: "How to: Retrieve the Value of an Element (LINQ to XML) (Visual Basic)"
+title: "How to: Retrieve the Value of an Element (LINQ to XML)"
 ms.date: 07/20/2015
 ms.assetid: 76b9b2a5-b3ba-49da-ba74-82100e1bd21c
 ---

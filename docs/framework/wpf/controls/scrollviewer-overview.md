@@ -46,7 +46,7 @@ Content within a user interface is often larger than a computer screen's display
   
 <a name="scrollviewer_styling_scrollviewer"></a>   
 ## Styling a ScrollViewer  
- Like all controls in Windows Presentation Foundation, the <xref:System.Windows.Controls.ScrollViewer> can be styled in order to change the default rendering behavior of the control. For additional information on control styling, see [Styling and Templating](styling-and-templating.md).  
+ Like all controls in Windows Presentation Foundation, the <xref:System.Windows.Controls.ScrollViewer> can be styled in order to change the default rendering behavior of the control. For additional information on control styling, see [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md).  
   
 <a name="scrollviewer_scroll_vs_paginate"></a>   
 ## Paginating Documents  

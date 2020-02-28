@@ -1,6 +1,5 @@
 ---
 title: "General Structure of a C# Program - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "C# language, program structure"
@@ -16,7 +15,7 @@ C# programs can consist of one or more files. Each file can contain zero or more
   
 - [Classes](../classes-and-structs/classes.md)  
   
-- [Structs](../classes-and-structs/structs.md)  
+- [Structs](../../language-reference/builtin-types/struct.md)  
   
 - [Namespaces](../namespaces/index.md)  
   

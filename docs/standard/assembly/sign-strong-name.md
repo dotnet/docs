@@ -15,7 +15,7 @@ dev_langs:
 # How to: Sign an assembly with a strong name
 
 > [!NOTE]
-> Although .NET Core supports strong-named assemblies, and all assemblies in the .NET Core library are signed, the majority of third-party assemblies do not need strong names. For more information, see [Strong Name Signing](https://github.com/dotnet/corefx/blob/master/Documentation/project-docs/strong-name-signing.md) on GitHub.
+> Although .NET Core supports strong-named assemblies, and all assemblies in the .NET Core library are signed, the majority of third-party assemblies do not need strong names. For more information, see [Strong Name Signing](https://github.com/dotnet/runtime/blob/master/docs/project/strong-name-signing.md) on GitHub.
 
 There are a number of ways to sign an assembly with a strong name:  
   
@@ -67,9 +67,9 @@ For more information about this tool, see [Assembly Linker](../../framework/tool
 ## Sign an assembly with a strong name by using attributes  
   
 1. Add the <xref:System.Reflection.AssemblyKeyFileAttribute?displayProperty=nameWithType> or <xref:System.Reflection.AssemblyKeyNameAttribute> attribute to your source code file, and specify the name of the file or container that contains the key pair to use when signing the assembly with a strong name.  
-   
+
 2. Compile the source code file normally.  
-   
+
    > [!NOTE]
    > The C# and Visual Basic compilers issue compiler warnings (CS1699 and BC41008, respectively) when they encounter the <xref:System.Reflection.AssemblyKeyFileAttribute> or <xref:System.Reflection.AssemblyKeyNameAttribute> attribute in source code. You can ignore the warnings.  
 

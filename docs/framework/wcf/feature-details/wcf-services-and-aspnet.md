@@ -71,7 +71,7 @@ WCF’s ASP.NET compatibility mode is enabled at the application level through t
 </system.serviceModel>
 ```
 
-This value defaults to "`true`" if not specified. Setting this value to "`false`" indicates that all WCF services running in the application will not run in ASP.NET Compatibility Mode.
+This value defaults to `false` if not specified. The value of `false` indicates that all WCF services running in the application will not run in ASP.NET Compatibility Mode.
 
 Because ASP.NET Compatibility Mode implies request processing semantics that are fundamentally different from the WCF default, individual service implementations have the ability to control whether they run inside of an application for which ASP.NET Compatibility Mode has been enabled. Services can use the <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute> to indicate whether they support ASP.NET Compatibility Mode. The default value for this attribute is <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode.Allowed>.
 

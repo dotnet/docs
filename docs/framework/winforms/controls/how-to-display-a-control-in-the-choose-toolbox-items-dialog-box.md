@@ -8,8 +8,8 @@ helpviewer_keywords:
   - "assembly folder registration [Windows Forms], Choose Toolbox Items dialog box"
   - "Choose Toolbox Items dialog box [Windows Forms], display control"
 ms.assetid: 01ef6eba-d044-40f0-951d-78eff7ebd9a9
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # How to: Display a Control in the Choose Toolbox Items Dialog Box

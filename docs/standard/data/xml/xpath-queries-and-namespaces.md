@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: ef6402be-2f8e-4be2-8d3e-a80891cdef8b
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # XPath Queries and Namespaces
 XPath queries are aware of namespaces in an XML document and can use namespace prefixes to qualify element and attribute names. Qualifying element and attribute names with a namespace prefix limits the nodes returned by an XPath query to only those nodes that belong to a specific namespace.  

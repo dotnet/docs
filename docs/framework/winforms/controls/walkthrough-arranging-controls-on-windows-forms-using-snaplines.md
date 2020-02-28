@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Arranging Controls on Windows Forms Using Snaplines"
+title: Arranging Controls Using Snaplines
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "controls [Windows Forms], arranging with snaplines"
@@ -7,8 +7,8 @@ helpviewer_keywords:
   - "SnapLine class [Windows Forms], walkthroughs"
   - "Windows Forms controls, arranging"
 ms.assetid: d5c9edc7-cf30-4a97-8ebe-201d569340f8
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # Walkthrough: Arrange controls on Windows Forms using snaplines
@@ -118,7 +118,7 @@ You can use snaplines to align grouped controls as well as controls within a <xr
 
 ## Align a label to a control's text
 
-1. Drag a <xref:System.Windows.Forms.TextBox> control from the **Toolbox** onto your form. When you drop the <xref:System.Windows.Forms.TextBox> control onto the form, click the smart-tag glyph and select the **Set text to textBox1** option. For details, see [Walkthrough: Performing Common Tasks Using Smart Tags on Windows Forms Controls](performing-common-tasks-using-smart-tags-on-wf-controls.md).
+1. Drag a <xref:System.Windows.Forms.TextBox> control from the **Toolbox** onto your form. When you drop the <xref:System.Windows.Forms.TextBox> control onto the form, click the smart-tag glyph and select the **Set text to textBox1** option. For details, see [Walkthrough: Perform common tasks using designer actions](perform-common-tasks-design-actions.md).
 
 2. Drag a <xref:System.Windows.Forms.Label> control from the **Toolbox** onto your form.
 

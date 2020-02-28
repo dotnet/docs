@@ -1,5 +1,5 @@
 ---
-title: "Miscellaneous operators (Visual Basic)"
+title: "Miscellaneous operators"
 ms.date: 10/18/2018
 helpviewer_keywords: 
   - "operators [Visual Basic]"

@@ -31,7 +31,7 @@ After setting a security mode (either transport or message), you have the option
   
 3. Add an appropriate binding. This example uses the [\<wsHttpBinding>](../configure-apps/file-schema/wcf/wshttpbinding.md) element.  
   
-4. Add a [\<binding>](../misc/binding.md) element and set the `name` attribute to an appropriate value. This example uses the name "SecureBinding".  
+4. Add a [\<binding>](../configure-apps/file-schema/wcf/bindings.md) element and set the `name` attribute to an appropriate value. This example uses the name "SecureBinding".  
   
 5. Add a `<security>` binding. Set the `mode` attribute to an appropriate value. This example sets it to `"Message"`.  
   

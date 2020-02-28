@@ -1,5 +1,5 @@
 ---
-title: "On (Visual Basic)"
+title: "On"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.on"

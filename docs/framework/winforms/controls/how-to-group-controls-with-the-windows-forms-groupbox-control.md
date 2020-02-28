@@ -1,5 +1,5 @@
 ---
-title: "How to: Group Controls with the Windows Forms GroupBox Control"
+title: Group Controls with GroupBox Control
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "controls [Windows Forms], grouping"

@@ -1,13 +1,12 @@
 ---
-title: "Timing vulnerabilities with CBC-mode symmetric decryption using padding"
-description: "Learn how to detect and mitigate timing vulnerabilities with Cipher-Block-Chaining (CBC) mode symmetric decryption using padding."
-ms.date: "06/12/2018"
-author: "blowdart"
-ms.author: "mairaw"
+title: CBC decryption vulnerability
+description: Learn how to detect and mitigate timing vulnerabilities with Cipher-Block-Chaining (CBC) mode symmetric decryption using padding.
+ms.date: 06/12/2018
+author: blowdart
 ---
 # Timing vulnerabilities with CBC-mode symmetric decryption using padding
 
-Microsoft believes that it's no longer safe to decrypt data encrypted with the Cipher-Block-Chaining (CBC) mode of symmetric encryption when verifiable padding has been applied without first ensuring the integrity of the ciphertext, except for very specific circumstances. This judgement is based on currently known cryptographic research. 
+Microsoft believes that it's no longer safe to decrypt data encrypted with the Cipher-Block-Chaining (CBC) mode of symmetric encryption when verifiable padding has been applied without first ensuring the integrity of the ciphertext, except for very specific circumstances. This judgement is based on currently known cryptographic research.
 
 ## Introduction
 

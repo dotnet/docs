@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "permissions [.NET Framework]"
   - "security [.NET Framework], about security"
 ms.assetid: 3cfced4f-ea02-4e66-ae98-d69286363e98
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Key Security Concepts
 The Microsoft .NET Framework offers role-based security to help address security concerns about mobile code and to provide support that enables components to determine what users are authorized to do.  

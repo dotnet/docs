@@ -1,5 +1,5 @@
 ---
-title: "Early and Late Binding (Visual Basic)"
+title: "Early and Late Binding"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "early binding [Visual Basic]"

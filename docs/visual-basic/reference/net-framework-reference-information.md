@@ -1,5 +1,5 @@
 ---
-title: ".NET Framework Reference Information (Visual Basic)"
+title: ".NET Framework Reference Information"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "language reference [Visual Basic], .NET Framework"

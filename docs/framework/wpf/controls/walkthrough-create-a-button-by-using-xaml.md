@@ -86,7 +86,7 @@ Next, let's set some properties on these buttons to control the button appearanc
 
      ![Buttons with a width of 90 and a margin of 10](./media/custom-button-animatedbutton-2.gif "custom_button_AnimatedButton_2")
 
-     There is much more you can do with styles, including a variety of ways to fine-tune what objects are targeted, specifying complex property values, and even using styles as input for other styles. For more information, see [Styling and Templating](styling-and-templating.md).
+     There is much more you can do with styles, including a variety of ways to fine-tune what objects are targeted, specifying complex property values, and even using styles as input for other styles. For more information, see [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md).
 
 3. **Set a style property value to a resource:** Resources enable a simple way to reuse commonly defined objects and values. It is especially useful to define complex values using resources to make your code more modular. Add the following highlighted markup to app.xaml.
 
@@ -433,7 +433,7 @@ An easy way to add interactivity (mouse-over, mouse-leave, click, and so on) is 
 ## See also
 
 - [Create a Button by Using Microsoft Expression Blend](walkthrough-create-a-button-by-using-microsoft-expression-blend.md)
-- [Styling and Templating](styling-and-templating.md)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)
 - [Animation Overview](../graphics-multimedia/animation-overview.md)
 - [Painting with Solid Colors and Gradients Overview](../graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)
 - [Bitmap Effects Overview](../graphics-multimedia/bitmap-effects-overview.md)

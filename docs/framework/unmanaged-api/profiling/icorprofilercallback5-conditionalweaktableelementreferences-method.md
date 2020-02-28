@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 532c7a02-a9de-4cea-bb2b-7f470da594de
 topic_type:
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 
 # ICorProfilerCallback5::ConditionalWeakTableElementReferences Method

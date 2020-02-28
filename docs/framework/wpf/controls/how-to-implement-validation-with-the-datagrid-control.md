@@ -88,6 +88,6 @@ The <xref:System.Windows.Controls.DataGrid> control enables you to perform valid
 
 - <xref:System.Windows.Controls.DataGrid>
 - [DataGrid](datagrid.md)
-- [Data Binding](../data/data-binding-wpf.md)
+- [Data Binding](../../../desktop-wpf/data/data-binding-overview.md)
 - [Implement Binding Validation](../data/how-to-implement-binding-validation.md)
 - [Implement Validation Logic on Custom Objects](../data/how-to-implement-validation-logic-on-custom-objects.md)

@@ -44,7 +44,7 @@ The meat of the example is in the `static`**BatchXPSPrinter.PrintXPS** method. A
 
 If you are using an XPSDrv printer, then you can set the final parameter to `true`. In that case, since XPS is the printer's page description language, the method will send the file to the printer without validating it or converting it to another page description language. If you are uncertain at design time whether the application will be using an XPSDrv printer, you can modify the application to have it read the <xref:System.Printing.PrintQueue.IsXpsDevice%2A> property and branch according to what it finds.
 
-Since there will initially be few XPSDrv printers available immediately after the release of [!INCLUDE[TLA#tla_winvista](../../../../includes/tlasharptla-winvista-md.md)] and Microsoft .NET Framework, you may need to disguise a non-XPSDrv printer as an XPSDrv printer. To do so, add Pipelineconfig.xml to the list of files in the following registry key of the computer running your application:
+Since there will initially be few XPSDrv printers available immediately after the release of Windows Vista and Microsoft .NET Framework, you may need to disguise a non-XPSDrv printer as an XPSDrv printer. To do so, add Pipelineconfig.xml to the list of files in the following registry key of the computer running your application:
 
 HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Environments\Windows NT x86\Drivers\Version-3\\*\<PseudoXPSPrinter>*\DependentFiles
 

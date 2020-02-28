@@ -1,5 +1,5 @@
 ---
-title: "Typography in WPF"
+title: "Typography"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "typography [WPF], about typography"
@@ -53,11 +53,11 @@ Text with ClearType y-direction antialiasing
   
 - Font behavior independent of global settings, such as system locale.  
   
-- Separate <xref:System.Windows.FontWeight>, <xref:System.Windows.FontStretch>, and <xref:System.Windows.FontStyle> types for defining a <xref:System.Windows.Media.FontFamily>. This provides greater flexibility than in [!INCLUDE[TLA#tla_win32](../../../../includes/tlasharptla-win32-md.md)] programming, in which Boolean combinations of italic and bold are used to define a font family.  
+- Separate <xref:System.Windows.FontWeight>, <xref:System.Windows.FontStretch>, and <xref:System.Windows.FontStyle> types for defining a <xref:System.Windows.Media.FontFamily>. This provides greater flexibility than in Win32 programming, in which Boolean combinations of italic and bold are used to define a font family.  
   
 - Writing direction (horizontal versus vertical) handled independent of font name.  
   
-- Font linking and font fallback in a portable [!INCLUDE[TLA#tla_xml](../../../../includes/tlasharptla-xml-md.md)] file, using composite font technology. Composite fonts allow for the construction of full range multilingual fonts. Composite fonts also provide a mechanism that avoids displaying missing glyphs. For more information, see the remarks in the <xref:System.Windows.Media.FontFamily> class.  
+- Font linking and font fallback in a portable XML file, using composite font technology. Composite fonts allow for the construction of full range multilingual fonts. Composite fonts also provide a mechanism that avoids displaying missing glyphs. For more information, see the remarks in the <xref:System.Windows.Media.FontFamily> class.  
   
 - International fonts built from composite fonts, using a group of single-language fonts. This saves on resource costs when developing fonts for multiple languages.  
   

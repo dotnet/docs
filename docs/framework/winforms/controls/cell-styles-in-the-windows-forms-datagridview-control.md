@@ -1,5 +1,5 @@
 ---
-title: "Cell Styles in the Windows Forms DataGridView Control"
+title: Cell Styles in DataGridView Control
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], cell styles"

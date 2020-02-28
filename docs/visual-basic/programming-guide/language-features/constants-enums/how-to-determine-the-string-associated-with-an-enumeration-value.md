@@ -1,5 +1,5 @@
 ---
-title: "How to: Determine the String Associated with an Enumeration Value (Visual Basic)"
+title: "How to: Determine the String Associated with an Enumeration Value"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "enumerations [Visual Basic]"

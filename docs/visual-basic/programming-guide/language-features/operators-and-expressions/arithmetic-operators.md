@@ -1,5 +1,5 @@
 ---
-title: "Arithmetic Operators in Visual Basic"
+title: "Arithmetic Operators"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "type safety"

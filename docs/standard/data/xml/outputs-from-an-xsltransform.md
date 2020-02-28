@@ -3,8 +3,6 @@ title: "Outputs from an XslTransform"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: 8e149d32-4b2f-493f-9e4b-d0d93475acde
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Outputs from an XslTransform
 Since style sheets can determine the output format using an `<xsl:output>` statement with the `method` attribute, the following table describes what the output format is when the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method is used to write the output, and the output format is declared as a <xref:System.IO.Stream> or <xref:System.IO.TextWriter>.  
@@ -40,7 +38,7 @@ Since style sheets can determine the output format using an `<xsl:output>` state
 - indent  
   
     > [!NOTE]
-    > \*The encoding attribute is ignored when the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method is sending its output to a <xref:System.IO.TextWriter>. The encoding property on the <xref:System.IO.TextWriter> is used instead. 
+    > \*The encoding attribute is ignored when the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method is sending its output to a <xref:System.IO.TextWriter>. The encoding property on the <xref:System.IO.TextWriter> is used instead.
   
  The following attribute is ignored when the <xref:System.Xml.Xsl.XslTransform.Transform%2A> method output is a <xref:System.IO.Stream>:  
   

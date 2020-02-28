@@ -1,5 +1,5 @@
 ---
-title: "-subsystemversion (Visual Basic)"
+title: "-subsystemversion"
 ms.date: 03/13/2018
 helpviewer_keywords:
   - "/subsystemversion compiler option [Visual Basic]"
@@ -40,7 +40,7 @@ The following table lists common subsystem versions of Windows.
 |Windows Vista|6.00|
 |Windows 7|6.01|
 |Windows Server 2008|6.01|
-|[!INCLUDE[win8](~/includes/win8-md.md)]|6.02|
+|Windows 8|6.02|
 
 ## Default values
 

@@ -1,5 +1,5 @@
 ---
-title: "Implements Clause (Visual Basic)"
+title: "Implements Clause"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.ImplementsClause"

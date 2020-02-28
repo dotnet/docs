@@ -1,5 +1,5 @@
 ---
-title: "How to: Combine and Compare String Collections (LINQ) (Visual Basic)"
+title: "How to: Combine and Compare String Collections (LINQ)"
 ms.date: 07/20/2015
 ms.assetid: 243cfafc-9eaa-4354-a9df-d329f1d39913
 ---
@@ -7,7 +7,7 @@ ms.assetid: 243cfafc-9eaa-4354-a9df-d329f1d39913
 
 This example shows how to merge files that contain lines of text and then sort the results. Specifically, it shows how to perform a simple concatenation, a union, and an intersection on the two sets of text lines.
 
-### To set up the project and the text files
+## Set up the project and the text files
 
 1. Copy these names into a text file that is named names1.txt and save it in your project folder:
 
@@ -157,9 +157,9 @@ End Class
 ' 2 total names in list
 ```
 
-## Compiling the Code
+## Compile the code
 
-Create a VB.NET console application project, with an `Imports` statement for the System.Linq namespace.
+Create a Visual Basic console application project. Add an `Imports` statement for the System.Linq namespace.
 
 ## See also
 

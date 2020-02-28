@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: 9dcc8b3d-33ee-4c7c-8d6f-322c57b94a0f
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # IMetaDataEmit::DefineMethodImpl Method
 Creates a definition for implementation of a method inherited from an interface, and returns a token to that method-implementation definition.  

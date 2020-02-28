@@ -1,9 +1,9 @@
 ---
-title: "How to: Retrieve a Single Attribute (LINQ to XML) (C#)"
+title: "How to retrieve a single attribute (LINQ to XML) (C#)"
 ms.date: 07/20/2015
 ms.assetid: 1b6b07b9-933f-47e9-874e-e790cab49dc5
 ---
-# How to: Retrieve a Single Attribute (LINQ to XML) (C#)
+# How to retrieve a single attribute (LINQ to XML) (C#)
 This topic explains how to retrieve a single attribute of an element, given the attribute name. This is useful for writing query expressions where you want to find an element that has a particular attribute.  
   
  The <xref:System.Xml.Linq.XElement.Attribute%2A> method of the <xref:System.Xml.Linq.XElement> class returns the <xref:System.Xml.Linq.XAttribute> with the specified name.  

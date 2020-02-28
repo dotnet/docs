@@ -1,78 +1,89 @@
 ---
 title: dotnet tool update command
-description: The dotnet tool update command updates the specified .NET Core Global Tool on your machine.
-ms.date: 05/29/2018
+description: The dotnet tool update command updates the specified .NET Core tool on your machine.
+ms.date: 02/14/2020
 ---
 # dotnet tool update
 
-[!INCLUDE [topic-appliesto-net-core-21plus.md](../../../includes/topic-appliesto-net-core-21plus.md)]
+**This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
 
 ## Name
 
-`dotnet tool update` - Updates the specified [.NET Core Global Tool](global-tools.md) on your machine.
+`dotnet tool update` - Updates the specified [.NET Core tool](global-tools.md) on your machine.
 
 ## Synopsis
 
 ```dotnetcli
-dotnet tool update <PACKAGE_NAME> <-g|--global> [--configfile] [--framework] [-v|--verbosity]
-dotnet tool update <PACKAGE_NAME> <--tool-path> [--configfile] [--framework] [-v|--verbosity]
+dotnet tool update <PACKAGE_NAME> <-g|--global> [--configfile] [--framework] [-v|--verbosity] [--add-source]
+dotnet tool update <PACKAGE_NAME> <--tool-path> [--configfile] [--framework] [-v|--verbosity] [--add-source]
+dotnet tool update <PACKAGE_NAME> [--configfile] [--framework] [-v|--verbosity] [--add-source]
 dotnet tool update <-h|--help>
 ```
 
 ## Description
 
-The `dotnet tool update` command provides a way for you to update .NET Core Global Tools on your machine to the latest stable version of the package. The command uninstalls and reinstalls a tool, effectively updating it. To use the command, you either have to specify that you want to update a tool from a user-wide installation using the `--global` option or specify a path to where the tool is installed using the `--tool-path` option.
+The `dotnet tool update` command provides a way for you to update .NET Core tools on your machine to the latest stable version of the package. The command uninstalls and reinstalls a tool, effectively updating it. To use the command, you specify one of the following options:
+
+* To update a global tool that was installed in the default location, use the `--global` option
+* To update a global tool that was installed in a custom location, use the `--tool-path` option.
+* To update a local tool, omit the `--global` and `--tool-path` options.
+
+**Local tools are available starting with .NET Core SDK 3.0.**
 
 ## Arguments
 
-`PACKAGE_NAME`
+- **`PACKAGE_NAME`**
 
-Name/ID of the NuGet package that contains the .NET Core Global Tool to update. You can find the package name using the [dotnet tool list](dotnet-tool-list.md) command.
+  Name/ID of the NuGet package that contains the .NET Core global tool to update. You can find the package name using the [dotnet tool list](dotnet-tool-list.md) command.
 
 ## Options
 
-`--add-source <SOURCE>`
+- **`--add-source <SOURCE>`**
 
-Adds an additional NuGet package source to use during installation.
+  Adds an additional NuGet package source to use during installation.
 
-`--configfile <FILE>`
+- **`--configfile <FILE>`**
 
-The NuGet configuration (*nuget.config*) file to use.
+  The NuGet configuration (*nuget.config*) file to use.
 
-`--framework <FRAMEWORK>`
+- **`--framework <FRAMEWORK>`**
 
-Specifies the [target framework](../../standard/frameworks.md) to update the tool for.
+  Specifies the [target framework](../../standard/frameworks.md) to update the tool for.
 
-`-g|--global`
+- **`-g|--global`**
 
-Specifies that the update is for a user-wide tool. Can't be combined with the `--tool-path` option. If you don't specify this option, you must specify the `--tool-path` option.
+  Specifies that the update is for a user-wide tool. Can't be combined with the `--tool-path` option. Omitting both `--global` and `--tool-path` specifies that the tool to be updated is a local tool.
 
-`-h|--help`
+- **`-h|--help`**
 
-Prints out a short help for the command.
+  Prints out a short help for the command.
 
-`--tool-path <PATH>`
+- **`--tool-path <PATH>`**
 
-Specifies the location where the Global Tool is installed. PATH can be absolute or relative. Can't be combined with the `--global` option. If you don't specify this option, you must specify the `--global` option.
+  Specifies the location where the global tool is installed. PATH can be absolute or relative. Can't be combined with the `--global` option. Omitting both `--global` and `--tool-path` specifies that the tool to be updated is a local tool.
 
-`-v|--verbosity <LEVEL>`
+- **`-v|--verbosity <LEVEL>`**
 
-Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
 
 ## Examples
 
-Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) Global Tool:
+- **`dotnet tool update -g dotnetsay`**
 
-`dotnet tool update -g dotnetsay`
+  Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool.
 
-Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) Global Tool located on a specific Windows folder:
+- **`dotnet tool update dotnetsay --tool-path c:\global-tools`**
 
-`dotnet tool update dotnetsay --tool-path c:\global-tools`
+  Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool located in a specific Windows directory.
 
-Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) Global Tool located on a specific Linux/macOS folder:
+- **`dotnet tool update dotnetsay --tool-path ~/bin`**
 
-`dotnet tool update dotnetsay --tool-path ~/bin`
+  Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) global tool located in a specific Linux/macOS directory.
+
+- **`dotnet tool update dotnetsay`**
+
+  Updates the [dotnetsay](https://www.nuget.org/packages/dotnetsay/) local tool installed for the current directory.
 
 ## See also
 
-- [.NET Core Global Tools](global-tools.md)
+- [.NET Core tools](global-tools.md)

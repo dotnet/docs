@@ -1,5 +1,5 @@
 ---
-title: "How to: Change the Delay of the Windows Forms ToolTip Component"
+title: Change the Delay of ToolTip Component
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

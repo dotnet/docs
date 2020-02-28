@@ -1,5 +1,5 @@
 ---
-title: "Visual Basic Language Features"
+title: "Language Features"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "Visual Basic code, elements of"
@@ -48,7 +48,7 @@ The following topics introduce and discuss the essential components of Visual Ba
  Describes what interfaces are and how you can use them in your applications.  
   
  [LINQ](../../../visual-basic/programming-guide/language-features/linq/index.md)  
- Provides links to topics that introduce [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] features and programming.  
+ Provides links to topics that introduce Language-Integrated Query (LINQ) features and programming.  
   
  [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)  
  Provides an overview of objects and classes, how they are used, their relationships to each other, and the properties, methods, and events they expose.  

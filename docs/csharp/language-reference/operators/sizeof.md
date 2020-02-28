@@ -1,6 +1,5 @@
 ---
 title: "sizeof operator - C# reference"
-ms.custom: seodec18
 ms.date: 07/25/2019
 f1_keywords: 
   - "sizeof_CSharpKeyword"
@@ -31,13 +30,13 @@ The `sizeof` operator requires an [unsafe](../keywords/unsafe.md) context. Howev
 |`sizeof(decimal)`|16|
 |`sizeof(bool)`|1|
 
-You also don't need to use an unsafe context when the operand of the `sizeof` operator is the name of an [enum](../keywords/enum.md) type.
+You also don't need to use an unsafe context when the operand of the `sizeof` operator is the name of an [enum](../builtin-types/enum.md) type.
 
 The following example demonstrates the usage of the `sizeof` operator:
 
 [!code-csharp[sizeof examples](~/samples/csharp/language-reference/operators/SizeOfOperator.cs)]
 
-The `sizeof` operator returns a number of bytes that would be allocated by the common language runtime in managed memory. For [struct](../keywords/struct.md) types, that value includes any padding, as the preceding example demonstrates. The result of the `sizeof` operator might differ from the result of the <xref:System.Runtime.InteropServices.Marshal.SizeOf%2A?displayProperty=nameWithType> method, which returns the size of a type in *unmanaged* memory.
+The `sizeof` operator returns a number of bytes that would be allocated by the common language runtime in managed memory. For [struct](../builtin-types/struct.md) types, that value includes any padding, as the preceding example demonstrates. The result of the `sizeof` operator might differ from the result of the <xref:System.Runtime.InteropServices.Marshal.SizeOf%2A?displayProperty=nameWithType> method, which returns the size of a type in *unmanaged* memory.
 
 ## C# language specification
 

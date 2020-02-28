@@ -1,5 +1,5 @@
 ---
-title: "Common Attributes (Visual Basic)"
+title: "Common Attributes"
 ms.date: 07/20/2015
 ms.assetid: 11fe4894-1bf9-4525-a36b-cddcd3a5d22b
 ---
@@ -124,8 +124,8 @@ In this example, `Conditional` is applied to a method to enable or disable the d
 
 ```vb
 #Const TRACE_ON = True
-Imports System
 Imports System.Diagnostics
+
 Module TestConditionalAttribute
     Public Class Trace
         <Conditional("TRACE_ON")>

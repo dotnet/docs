@@ -14,10 +14,10 @@ ms.assetid: daad57eb-8198-49b5-9920-aa0e7428ccf1
 |Channel|Microsoft-Windows-Application Server-Applications/Debug|  
   
 ## Description  
- Indicates the start of a VB expression compilation.  
+ Indicates the start of a Visual Basic expression compilation.  
   
 ## Message  
- Compiling VB expression '%1'  
+ Compiling Visual Basic expression '%1'  
   
 ## Details  
   

@@ -1,5 +1,5 @@
 ---
-title: "How to: Populate an XML Tree from the File System (Visual Basic)"
+title: "How to: Populate an XML Tree from the File System"
 ms.date: 07/20/2015
 ms.assetid: 34eec79e-7945-4ba8-9f74-d05bb8ec67f6
 ---

@@ -71,7 +71,7 @@ If you are parsing a sentence into individual words, you might end up with words
   
  This code displays `World!` to the console.  
   
-## Remove 
+## Remove
 
  The <xref:System.String.Remove%2A?displayProperty=nameWithType> method removes a specified number of characters that begin at a specified position in an existing string. This method assumes a zero-based index.  
   

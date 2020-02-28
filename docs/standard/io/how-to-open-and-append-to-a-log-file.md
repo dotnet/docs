@@ -11,11 +11,9 @@ helpviewer_keywords:
   - "log files, appending to"
   - "I/O [.NET Framework], log files"
 ms.assetid: 74423362-1721-49cb-aa0a-e04005f72a06
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Open and append to a log file
-<xref:System.IO.StreamWriter> and <xref:System.IO.StreamReader> write characters to and read characters from streams. The following code example opens the *log.txt* file for input, or creates it if it doesn't exist, and appends log information to the end of the file. The example then writes the contents of the file to standard output for display. 
+<xref:System.IO.StreamWriter> and <xref:System.IO.StreamReader> write characters to and read characters from streams. The following code example opens the *log.txt* file for input, or creates it if it doesn't exist, and appends log information to the end of the file. The example then writes the contents of the file to standard output for display.
 
 As an alternative to this example, you could store the information as a single string or string array, and use the <xref:System.IO.File.WriteAllText%2A?displayProperty=nameWithType> or <xref:System.IO.File.WriteAllLines%2A?displayProperty=nameWithType> method to achieve the same functionality.  
   

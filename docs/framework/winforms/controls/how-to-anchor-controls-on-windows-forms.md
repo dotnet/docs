@@ -1,5 +1,5 @@
 ---
-title: "How to: Anchor Controls on Windows Forms"
+title: Anchor Controls
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Anchor property [Windows Forms], enabling resizable forms"
@@ -12,8 +12,8 @@ helpviewer_keywords:
   - "Windows Forms, resizing"
   - "controls [Windows Forms], positioning"
 ms.assetid: 59ea914f-fbd3-427a-80fe-decd02f7ae6d
-author: gewarren
-ms.author: gewarren
+author: jillre
+ms.author: jillfra
 manager: jillfra
 ---
 # How to: Anchor controls on Windows Forms

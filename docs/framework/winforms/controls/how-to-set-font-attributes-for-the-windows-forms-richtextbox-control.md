@@ -1,5 +1,5 @@
 ---
-title: "How to: Set Font Attributes for the Windows Forms RichTextBox Control"
+title: Set Font Attributes for RichTextBox Control
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

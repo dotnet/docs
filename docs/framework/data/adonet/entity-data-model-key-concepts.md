@@ -28,7 +28,7 @@ The Entity Data Model (EDM) uses three key concepts to describe the structure of
   
  ![Diagram showing a conceptual model with three entity types.](./media/entity-data-model-key-concepts/conceptual-model-entity-types-associations.gif)  
   
- This representation, however, has some shortcomings when it comes to conveying some details about the model. For example, property type and entity set information are not conveyed in the diagram. The richness of a conceptual model can be conveyed more clearly with a domain-specific language (DSL). The [ADO.NET Entity Framework](./ef/index.md) uses an XML-based DSL called *conceptual schema definition language* ([CSDL](./ef/language-reference/csdl-specification.md)) to define conceptual models. The following is the CSDL definition of the conceptual model in the diagram above:  
+ This representation, however, has some shortcomings when it comes to conveying some details about the model. For example, property type and entity set information are not conveyed in the diagram. The richness of a conceptual model can be conveyed more clearly with a domain-specific language (DSL). The [ADO.NET Entity Framework](./ef/index.md) uses an XML-based DSL called *conceptual schema definition language* ([CSDL](/ef/ef6/modeling/designer/advanced/edmx/csdl-spec)) to define conceptual models. The following is the CSDL definition of the conceptual model in the diagram above:  
   
  [!code-xml[EDM_Example_Model#EDMExampleCSDL](../../../../samples/snippets/xml/VS_Snippets_Data/edm_example_model/xml/books.edmx#edmexamplecsdl)]  
   

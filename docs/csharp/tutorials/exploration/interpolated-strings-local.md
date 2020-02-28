@@ -52,7 +52,7 @@ Then we create an instance of the `Vegetable` class named `item` by using the [`
 var item = new Vegetable("eggplant");
 ```
 
-Finally, we include the `item` variable into an interpolated string that also contains a <xref:System.DateTime> value, a <xref:System.Decimal> value, and a `Unit` [enumeration](../../programming-guide/enumeration-types.md) value. Replace all of the C# code in your editor with the following code, and then use the `dotnet run` command to run it:
+Finally, we include the `item` variable into an interpolated string that also contains a <xref:System.DateTime> value, a <xref:System.Decimal> value, and a `Unit` [enumeration](../../language-reference/builtin-types/enum.md) value. Replace all of the C# code in your editor with the following code, and then use the `dotnet run` command to run it:
 
 ```csharp
 using System;

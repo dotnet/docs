@@ -15,8 +15,6 @@ helpviewer_keywords:
 ms.assetid: eb412622-77cc-4abd-a2cd-c910fe8edd54
 topic_type: 
   - "apiref"
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ICorProfilerCallback::ObjectAllocated Method
 Notifies the profiler that memory within the heap has been allocated for an object.  
@@ -50,6 +48,6 @@ HRESULT ObjectAllocated(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
-- [ClassLoadStarted Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-classloadstarted-method.md)
-- [ClassLoadFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-classloadfinished-method.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [ClassLoadStarted Method](icorprofilercallback-classloadstarted-method.md)
+- [ClassLoadFinished Method](icorprofilercallback-classloadfinished-method.md)

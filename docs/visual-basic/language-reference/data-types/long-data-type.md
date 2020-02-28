@@ -1,5 +1,5 @@
 ---
-title: "Long Data Type (Visual Basic)"
+title: "Long Data Type"
 ms.date: 01/31/2018
 f1_keywords:
   - "vb.Long"

@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "authentication [.NET Framework], principals"
   - "role-based security, principals"
 ms.assetid: 578cc32b-5654-4d8b-9d8c-ebcbc5c75390
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Role-Based Security
 Roles are often used in financial or business applications to enforce policy. For example, an application might impose limits on the size of the transaction being processed depending on whether the user making the request is a member of a specified role. Clerks might have authorization to process transactions that are less than a specified threshold, supervisors might have a higher limit, and vice-presidents might have a still higher limit (or no limit at all). Role-based security can also be used when an application requires multiple approvals to complete an action. Such a case might be a purchasing system in which any employee can generate a purchase request, but only a purchasing agent can convert that request into a purchase order that can be sent to a supplier.  

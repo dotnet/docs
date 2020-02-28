@@ -1,6 +1,6 @@
 ---
-title: The .NET Security Analyzers - .NET
-description: Learn how to use the .NET Security Analyzers in the .NET Framework Analyzers package to find and address security risks
+title: .NET Framework Analyzers - .NET
+description: Learn how to use the .NET Framework Analyzers in the .NET Framework Analyzers package to find and address security risks
 author: billwagner
 ms.author: wiwagn
 ms.date: 01/25/2018
@@ -20,7 +20,7 @@ warns about new issues as you keep developing.
 
 ## Installing and configuring the .NET Framework Analyzer
 
-The .NET Security Analyzers must be installed as a NuGet package on every
+The .NET Framework Analyzers must be installed as a NuGet package on every
 project where you want them to run. Only one developer needs to add them
 to the project. The analyzer package is a project dependency and will run
 on every developer's machine once it has the updated solution.
@@ -28,7 +28,7 @@ on every developer's machine once it has the updated solution.
 The .NET Framework Analyzer is delivered in the [Microsoft.NetFramework.Analyzers](https://www.nuget.org/packages/Microsoft.NetFramework.Analyzers/)
 NuGet package. This package provides only the analyzers specific to the .NET Framework, which
 includes security analyzers. In most cases, you'll want
-the [Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet package. 
+the [Microsoft.CodeAnalysis.FxCopAnalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers) NuGet package.
 The FxCopAnalyzers aggregate package contains all the framework analyzers included in the
 Framework.Analyzers package as well as the following analyzers:
 
@@ -61,7 +61,7 @@ warnings for any of these issues:
 
 ### CA1058: Types should not extend certain base types
 
-There are a small number of types in the .NET Framework that you should not derived from directly. 
+There are a small number of types in the .NET Framework that you should not derived from directly.
 
 **Category:** Design
 

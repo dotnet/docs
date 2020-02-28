@@ -1,5 +1,5 @@
 ---
-title: "LINQ to XML Axes (Visual Basic)"
+title: "LINQ to XML Axes"
 ms.date: 07/20/2015
 ms.assetid: ecd3bd00-28e5-4517-a59f-53bff39fd478
 ---

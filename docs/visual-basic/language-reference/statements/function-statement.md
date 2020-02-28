@@ -1,5 +1,5 @@
 ---
-title: "Function Statement (Visual Basic)"
+title: "Function Statement"
 ms.date: 05/12/2018
 f1_keywords:
   - "vb.Function"

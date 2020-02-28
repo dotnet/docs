@@ -50,4 +50,4 @@ You can work around this issue so that a WCF client can connect to a WCF server 
 
 ## See also
 
-- [Runtime Changes](runtime-changes-in-the-net-framework-4-6.md)
+- [Application compatibility](application-compatibility.md)

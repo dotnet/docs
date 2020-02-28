@@ -1,5 +1,5 @@
 ---
-title: "Shapes and Basic Drawing in WPF Overview"
+title: Shapes and basic drawing overview
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

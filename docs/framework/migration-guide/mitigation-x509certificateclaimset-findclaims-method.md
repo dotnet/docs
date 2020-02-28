@@ -30,4 +30,4 @@ Starting with apps that target the .NET Framework 4.6.1,  the <xref:System.Ident
   
 ## See also
 
-- [Retargeting Changes](retargeting-changes-in-the-net-framework-4-6-1.md)
+- [Application compatibility](application-compatibility.md)

@@ -1,5 +1,5 @@
 ---
-title: "Protected Friend (Visual Basic)"
+title: "Protected Friend"
 ms.date: 05/10/2018
 helpviewer_keywords:
   - "Protected Friend keyword [Visual Basic]"

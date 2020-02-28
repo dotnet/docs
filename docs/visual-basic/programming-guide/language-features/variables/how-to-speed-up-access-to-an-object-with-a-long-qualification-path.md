@@ -1,5 +1,5 @@
 ---
-title: "How to: Speed Up Access to an Object with a Long Qualification Path (Visual Basic)"
+title: "How to: Speed Up Access to an Object with a Long Qualification Path"
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "variables [Visual Basic], accessing"

@@ -1,5 +1,5 @@
 ---
-title: "Windows Forms Data Binding"
+title: Data Binding
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "data [Windows Forms]"

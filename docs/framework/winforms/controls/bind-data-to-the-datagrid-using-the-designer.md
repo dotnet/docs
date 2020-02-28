@@ -1,5 +1,5 @@
 ---
-title: "How to: Bind Data to the Windows Forms DataGridView Control Using the Designer"
+title: Bind Data to DataGridView Control Using the Designer
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "Windows Forms controls, binding to a data source"
@@ -18,7 +18,7 @@ You can use the designer to connect a <xref:System.Windows.Forms.DataGridView> c
 
 ## To bind the control to a data source
 
-1. Click the smart tag glyph (![Smart Tag Glyph](./media/vs-winformsmttagglyph.gif "VS_WinFormSmtTagGlyph")) on the upper-right corner of the <xref:System.Windows.Forms.DataGridView> control.
+1. Click the designer actions glyph (![Small black arrow](./media/designer-actions-glyph.gif)) on the upper-right corner of the <xref:System.Windows.Forms.DataGridView> control.
 
 2. Click the drop-down arrow for the **Choose Data Source** option.
 

@@ -32,7 +32,7 @@ A binding element used to communicate with a CardSpace Security Token Service th
   
 |Element|Description|  
 |-------------|-----------------|  
-|[\<binding>](../../../misc/binding.md)|Defines all binding capabilities of the custom binding.|  
+|[\<binding>](bindings.md)|Defines all binding capabilities of the custom binding.|  
   
 ## Remarks  
  This element is used by an identity provider to express in its policy the fact that it supports the CardSpace profile of WS-Trust. Identity providers that publish such a policy assertion should be able to issue tokens based on that CardSpace profile.  

@@ -10,7 +10,7 @@ helpviewer_keywords:
 ms.assetid: fd1db082-a7bb-4c4b-9331-6ad74a0682d0
 ---
 # How to: Configure Visual Studio to Debug a XAML Browser Application to Call a Web Service
-XAML browser applications (XBAPs) run within a partial-trust security sandbox that is restricted to the Internet zone set of permissions. This permission set restricts Web service calls to only Web services that are located at the XBAP application's site of origin. When an XBAP is debugged from Visual Studio 2005, though, it is not considered to have the same site of origin as the Web service it references. This causes security exceptions to be raised when the XBAP attempts to call the Web service. However, a Visual Studio 2005 [!INCLUDE[TLA#tla_wpfbrowserappproj](../../../../includes/tlasharptla-wpfbrowserappproj-md.md)] project can be configured to simulate having the same site of origin as the Web service it calls while debugging. This allows the XBAP to safely call the Web service without causing security exceptions.
+XAML browser applications (XBAPs) run within a partial-trust security sandbox that is restricted to the Internet zone set of permissions. This permission set restricts Web service calls to only Web services that are located at the XBAP application's site of origin. When an XBAP is debugged from Visual Studio 2005, though, it is not considered to have the same site of origin as the Web service it references. This causes security exceptions to be raised when the XBAP attempts to call the Web service. However, a Visual Studio 2005 XAML Browser Application (WPF) project can be configured to simulate having the same site of origin as the Web service it calls while debugging. This allows the XBAP to safely call the Web service without causing security exceptions.
 
 ## Configuring Visual Studio
  To configure Visual Studio 2005 to debug an XBAP that calls a Web service:
@@ -32,7 +32,7 @@ XAML browser applications (XBAPs) run within a partial-trust security sandbox th
      `-debug c:\example.xbap`
 
 > [!NOTE]
-> This is the default configuration for solutions that are created with the Visual Studio 2005 [!INCLUDE[TLA#tla_wpfbrowserappproj](../../../../includes/tlasharptla-wpfbrowserappproj-md.md)] project template.
+> This is the default configuration for solutions that are created with the Visual Studio 2005 XAML Browser Application (WPF) project template.
 
 1. With a project selected in **Solution Explorer**, on the **Project** menu, click **Properties**.
 

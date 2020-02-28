@@ -1,5 +1,5 @@
 ---
-title: "ParamArray (Visual Basic)"
+title: "ParamArray"
 ms.date: 07/20/2015
 f1_keywords: 
   - "vb.ParamArray"

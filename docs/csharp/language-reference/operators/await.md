@@ -1,7 +1,6 @@
 ---
 title: "await operator - C# reference"
-ms.custom: seodec18
-ms.date: 08/30/2019
+ms.date: 11/08/2019
 f1_keywords: 
   - "await_CSharpKeyword"
 helpviewer_keywords: 
@@ -26,6 +25,8 @@ You can use the `await` operator only in a method, [lambda expression](../../pro
 
 The operand of the `await` operator is usually of one of the following .NET types: <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.ValueTask>, or <xref:System.Threading.Tasks.ValueTask%601>. However, any awaitable expression can be the operand of the `await` operator. For more information, see the [Awaitable expressions](~/_csharplang/spec/expressions.md#awaitable-expressions) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
+Beginning with C# 8.0, you can use the `await foreach` statement to consume an asynchronous stream of data. For more information, see the [Asynchronous streams](../../whats-new/csharp-8.md#asynchronous-streams) section of the [What's new in C# 8.0](../../whats-new/csharp-8.md) article.
+
 The type of expression `await t` is `TResult` if the type of expression `t` is <xref:System.Threading.Tasks.Task%601> or <xref:System.Threading.Tasks.ValueTask%601>. If the type of `t` is <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.ValueTask>, the type of `await t` is `void`. In both cases, if `t` throws an exception, `await t` rethrows the exception. For more information about exception handling, see the [Exceptions in async methods](../keywords/try-catch.md#exceptions-in-async-methods) section of the [try-catch statement](../keywords/try-catch.md) article.
 
 The `async` and `await` keywords are available in C# 5 and later.
@@ -47,3 +48,4 @@ For more information, see the [Await expressions](~/_csharplang/spec/expressions
 - [Asynchronous programming](../../async.md)
 - [Async in depth](../../../standard/async-in-depth.md)
 - [Walkthrough: accessing the Web by using async and await](../../programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)
+- [Tutorial: Generate and consume async streams using C# 8.0 and .NET Core 3.0](../../tutorials/generate-consume-asynchronous-stream.md)

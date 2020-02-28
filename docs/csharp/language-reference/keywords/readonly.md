@@ -1,6 +1,5 @@
 ---
 title: "readonly keyword - C# Reference"
-ms.custom: seodec18
 ms.date: 06/21/2018
 f1_keywords: 
   - "readonly_CSharpKeyword"
@@ -27,7 +26,7 @@ The `readonly` keyword is a modifier that can be used in four contexts:
 - In a [`readonly` member definition](#readonly-member-examples), `readonly` indicates that a member of a `struct` doesn't mutate the struct's internal state.
 - In a [`ref readonly` method return](#ref-readonly-return-example), the `readonly` modifier indicates that method returns a reference and writes aren't allowed to that reference.
 
-The `readonly sturct` and `ref readonly` contexts were added in C# 7.2. `readonly` struct members were added in C# 8.0
+The `readonly struct` and `ref readonly` contexts were added in C# 7.2. `readonly` struct members were added in C# 8.0
 
 ## Readonly field example
 
@@ -49,7 +48,7 @@ You can assign a value to a `readonly` field only in the following contexts:
 These constructor contexts are also the only contexts in which it's valid to pass a `readonly` field as an [out](out-parameter-modifier.md) or [ref](ref.md) parameter.
 
 > [!NOTE]
-> The `readonly` keyword is different from the [const](const.md) keyword. A `const` field can only be initialized at the declaration of the field. A `readonly` field can be assigned multiple times in the field declaration and in any constructor. Therefore, `readonly` fields can have different values depending on the constructor used. Also, while a `const` field is a compile-time constant, the `readonly` field can be used for runtime constants as in the following example:
+> The `readonly` keyword is different from the [const](const.md) keyword. A `const` field can only be initialized at the declaration of the field. A `readonly` field can be assigned multiple times in the field declaration and in any constructor. Therefore, `readonly` fields can have different values depending on the constructor used. Also, while a `const` field is a compile-time constant, the `readonly` field can be used for run-time constants as in the following example:
 >
 > ```csharp
 > public static readonly uint timeStamp = (uint)DateTime.Now.Ticks;
@@ -65,7 +64,7 @@ p2.y = 66;        // Error
 
 you'll get the compiler error message:
 
-`A readonly field cannot be assigned to (except in a constructor or a variable initializer)`
+**A readonly field cannot be assigned to (except in a constructor or a variable initializer)**
 
 ## Readonly struct example
 
@@ -97,7 +96,7 @@ You gain two advantages by applying the `readonly` modifier to applicable `struc
 
 The `readonly` modifier is valid on most members of a `struct`, including methods that override methods declared in <xref:System.Object?displayProperty=nameWithType>. There are some restrictions:
 
-- You can't declare `readonly` static members.
+- You can't declare `readonly` static methods or properties.
 - You can't declare `readonly` constructors.
 
 You can add the `readonly` modifier to a property or indexer declaration:

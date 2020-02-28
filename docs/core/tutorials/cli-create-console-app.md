@@ -37,7 +37,7 @@ Let's do a quick walkthrough:
 
     *Hello.csproj*:
 
-    [!code-xml[Hello.csproj](~/samples/core/console-apps/HelloMsBuild/Hello.csproj)]
+    [!code-xml[Hello.csproj](~/samples/snippets/core/tutorials/cli-create-console-app/HelloMsBuild/csharp/Hello.csproj)]
 
     The project file specifies everything that's needed to restore dependencies and build the program.
 
@@ -46,7 +46,7 @@ Let's do a quick walkthrough:
 
     *Program.cs*:
 
-    [!code-csharp[Program.cs](~/samples/core/console-apps/HelloMsBuild/Program.cs)]
+    [!code-csharp[Program.cs](~/samples/snippets/core/tutorials/cli-create-console-app/HelloMsBuild/csharp/Program.cs)]
 
     The program starts by `using System`, which means "bring everything in the `System` namespace into scope for this file". The `System` namespace includes the `Console` class.
 
@@ -94,7 +94,7 @@ Let's change the program a bit. Fibonacci numbers are fun, so let's add that and
 
 01. Replace the contents of your *Program.cs*  file with the following code:
 
-    [!code-csharp[Fibonacci](~/samples/core/console-apps/fibonacci-msbuild/Program.cs)]
+    [!code-csharp[Fibonacci](~/samples/snippets/core/tutorials/cli-create-console-app/fibonacci-msbuild/csharp/Program.cs)]
 
 02. Run [dotnet build](../tools/dotnet-build.md) to compile the changes.
 
@@ -134,11 +134,11 @@ Single files are fine for simple one-off programs, but if you're building a more
 
 01. Add a new file inside the *Hello* directory named *FibonacciGenerator.cs* with the following code:
 
-    [!code-csharp[Fibonacci Generator](~/samples/core/console-apps/FibonacciBetterMsBuild/FibonacciGenerator.cs)]
+    [!code-csharp[Fibonacci Generator](~/samples/snippets/core/tutorials/cli-create-console-app/FibonacciBetterMsBuild/csharp/FibonacciGenerator.cs)]
 
 02. Change the `Main` method in your *Program.cs* file to instantiate the new class and call its method as in the following example:
 
-    [!code-csharp[New Program.cs](~/samples/core/console-apps/FibonacciBetterMsBuild/Program.cs)]
+    [!code-csharp[New Program.cs](~/samples/snippets/core/tutorials/cli-create-console-app/FibonacciBetterMsBuild/csharp/Program.cs)]
 
 03. Run [dotnet build](../tools/dotnet-build.md) to compile the changes.
 

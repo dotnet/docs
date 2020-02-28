@@ -1,7 +1,7 @@
 ---
 title: dotnet-counters - .NET Core
 description: Learn how to install and use the dotnet-counter command-line tool.
-ms.date: 10/14/2019
+ms.date: 02/26/2020
 ---
 # dotnet-counters
 
@@ -39,8 +39,53 @@ dotnet-counters [-h|--help] [--version] <command>
 
 | Command                                             |
 | --------------------------------------------------- |
+| [dotnet-counters collect](#dotnet-counters-collect) |
 | [dotnet-counters list](#dotnet-counters-list)       |
 | [dotnet-counters monitor](#dotnet-counters-monitor) |
+| [dotnet-counters ps](#dotnet-counters-ps) |
+
+## dotnet-counters collect
+
+Periodically collect selected counter values and export them into a specified file format for post-processing.
+
+### Synopsis
+
+```console
+dotnet-counters collect [-h|--help] [-p|--process-id] [--refreshInterval] [counter_list] [--format] [-o|--output]
+```
+
+### Options
+
+- **`-p|--process-id <PID>`**
+
+  The ID of the process to be monitored.
+
+- **`--refresh-interval <SECONDS>`**
+
+  The number of seconds to delay between updating the displayed counters
+
+- **`counter_list <COUNTERS>`**
+
+  A space separated list of counters. Counters can be specified `provider_name[:counter_name]`. If the `provider_name` is used without a qualifying `counter_name`, then all counters are shown. To discover provider and counter names, use the [dotnet-counters list](#dotnet-counters-list) command.
+
+- **`--format <csv|json>`**
+
+  TThe format to be exported. Currently available: csv, json.
+
+- **`-o|--output <output>`**
+
+  The name of the output file.
+
+### Examples
+
+- Collect all counters at a refresh interval of 3 seconds and generate a csv as output:
+
+  ```console
+  > dotnet-counters collect --process-id 1902 --refresh-interval 3 --format csv
+
+  counter_list is unspecified. Monitoring all counters by default.
+  Starting a counter session. Press Q to quit.
+  ```
 
 ## dotnet-counters list
 
@@ -129,3 +174,22 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [--refreshInterval] [count
   Press p to pause, r to resume, q to quit.
       request                                      100
   ```
+  
+## dotnet-counters ps 
+
+Display a list of dotnet processes that can be monitored.
+
+### Synopsis
+
+```console
+dotnet-counters ps [-h|--help]
+```
+
+### Example
+
+```console
+> dotnet-counters ps
+  
+  15683 WebApi     /home/suwhang/repos/WebApi/WebApi
+  16324 dotnet     /usr/local/share/dotnet/dotnet
+```

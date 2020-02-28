@@ -67,7 +67,7 @@ public class SerializeOverride()
     myAttributes.XmlElements.Add(myElementAttribute);  
     XmlAttributeOverrides myOverrides = new XmlAttributeOverrides();  
     myOverrides.Add(typeof(Book), "ISBN", myAttributes);  
-    XmlSerializer mySerializer =   
+    XmlSerializer mySerializer =
     new XmlSerializer(typeof(Book), myOverrides)  
     Book b = new Book();  
     b.ISBN = "123456789"  

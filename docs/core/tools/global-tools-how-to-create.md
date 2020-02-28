@@ -26,24 +26,18 @@ This is the first in a series of three tutorials. In this tutorial, you create a
 
 1. Open a command prompt and create a folder named *repository*.
 
-1. Navigate to the *repository* folder and enter the following command, replacing `<name>` with a unique value to make the project name unique.
+1. Navigate to the *repository* folder and enter the following command:
 
    ```dotnetcli
-   dotnet new console -n botsay-<name>
+   dotnet new console -n microsoft.botsay
    ```
 
-   For example, you could run the following command:
+   The command creates a new folder named *microsoft.botsay* under the *repository* folder.
 
-   ```dotnetcli
-   dotnet new console -n botsay-nancydavolio
-   ```
-
-   The command creates a new folder named *botsay-\<name>* under the *repository* folder.
-
-1. Navigate to the *botsay-\<name>* folder.
+1. Navigate to the *microsoft.botsay* folder.
 
    ```console
-   cd botsay-<name>
+   cd microsoft.botsay
    ```
 
 ## Add the code
@@ -148,7 +142,7 @@ All arguments after the `--` delimiter are passed to your application.
 
 Before you can pack and distribute the application as a tool, you need to modify the project file.
 
-1. Open the *botsay-\<name>.csproj* file and add three new XML nodes to the end of the `<PropertyGroup>` node:
+1. Open the *microsoft.botsay.csproj* file and add three new XML nodes to the end of the `<PropertyGroup>` node:
 
    ```xml
    <PackAsTool>true</PackAsTool>
@@ -185,7 +179,7 @@ Before you can pack and distribute the application as a tool, you need to modify
    dotnet pack
    ```
 
-   The *botsay-\<name>.1.0.0.nupkg* file is created in the folder identified by the `<PackageOutputPath>` value from the *botsay-\<name>.csproj* file, which in this example is the *./nupkg* folder.
+   The *microsoft.botsay.1.0.0.nupkg* file is created in the folder identified by the `<PackageOutputPath>` value from the *microsoft.botsay.csproj* file, which in this example is the *./nupkg* folder.
   
    When you want to release a tool publicly, you can upload it to `https://www.nuget.org`. Once the tool is available on NuGet, developers can install the tool by using the [dotnet tool install](dotnet-tool-install.md) command. For this tutorial you install the package directly from the local *nupkg* folder, so there's no need to upload the package to NuGet.
 

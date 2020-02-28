@@ -19,7 +19,7 @@ Each of these formats passes a null-terminated string to native code. They diffe
 | `System.Runtime.InteropServices.UnmanagedType` value | Encoding |
 |------------------------------------------------------|----------|
 | LPStr | ANSI |
-| LPUTF8Str | UTF-8 | 
+| LPUTF8Str | UTF-8 |
 | LPWStr | UTF-16 |
 | LPTStr | UTF-16 |
 

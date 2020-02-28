@@ -45,12 +45,12 @@ End Class
   
 Public Class MyService  
     <WebMethod, SoapDocumentMethod> _  
-    public Function MyLiteralMethod() As Order   
+    public Function MyLiteralMethod() As Order
         Dim myOrder As Order = New Order()  
         return myOrder  
     End Function  
     <WebMethod, SoapRpcMethod> _  
-    public Function MyEncodedMethod() As Order   
+    public Function MyEncodedMethod() As Order
         Dim myOrder As Order = New Order()  
         return myOrder  
     End Function  
@@ -123,7 +123,7 @@ public class MyService {
 public Function MyLiteralMethod() As _  
 <XmlElement(Namespace:="http://www.cohowinery.com", _  
 ElementName:= "BookOrder")> _  
-Order   
+Order
     Dim myOrder As Order = New Order()  
     return myOrder  
 End Function  
@@ -163,7 +163,7 @@ public Function MyLiteralMethod(<XmlElement _
 ("MyOrderID", Namespace:="http://www.microsoft.com")>ID As String) As _  
 <XmlElement(Namespace:="http://www.cohowinery.com", _  
 ElementName:= "BookOrder")> _  
-Order   
+Order
     Dim myOrder As Order = New Order()  
     myOrder.OrderID = ID  
     return myOrder  
@@ -174,12 +174,12 @@ End Function
 [return: XmlElement(Namespace = "http://www.cohowinery.com",  
 ElementName = "BookOrder")]  
 [WebMethod][SoapDocumentMethod]  
-public Order MyLiteralMethod([XmlElement("MyOrderID",   
+public Order MyLiteralMethod([XmlElement("MyOrderID",
 Namespace="http://www.microsoft.com")] string ID){  
     Order myOrder = new Order();  
     myOrder.OrderID = ID;  
     return myOrder;  
-}   
+}
 ```  
   
  The SOAP request would resemble the following.  

@@ -21,7 +21,7 @@ This tutorial teaches you how to install and use a local tool. You use a tool th
 
 To install a tool for local access only (for the current directory and subdirectories), it has to be added to a manifest file.
 
-From the *botsay-\<name>* folder, navigate up one level to the *repository* folder:
+From the *microsoft.botsay* folder, navigate up one level to the *repository* folder:
 
 ```console
 cd ..
@@ -58,7 +58,7 @@ When you use a CLI command that refers to a local tool, the SDK searches for a m
 Install the tool from the package that you created in the first tutorial:
 
 ```dotnetcli
-dotnet tool install --add-source ./botsay-<name>/nupkg botsay-<name>
+dotnet tool install --add-source ./microsoft.botsay/nupkg microsoft.botsay
 ```
 
 This command adds the tool to the manifest file that you created in the preceding step. The command output shows which manifest file the newly installed tool is in:
@@ -66,7 +66,7 @@ This command adds the tool to the manifest file that you created in the precedin
  ```console
  You can invoke the tool from this directory using the following command:
  'dotnet tool run botsay' or 'dotnet botsay'
- Tool 'botsay-<name>' (version '1.0.0') was successfully installed.
+ Tool 'microsoft.botsay' (version '1.0.0') was successfully installed.
  Entry is added to the manifest file /home/name/repository/.config/dotnet-tools.json
  ```
 
@@ -77,7 +77,7 @@ The *.config/dotnet-tools.json* file now has one tool:
   "version": 1,
   "isRoot": true,
   "tools": {
-    "botsay-<name>": {
+    "microsoft.botsay": {
       "version": "1.0.0",
       "commands": [
         "botsay"
@@ -106,7 +106,7 @@ You typically install a local tool in the root directory of the repository. Afte
      "version": 1,
      "isRoot": true,
      "tools": {
-       "botsay-<name>": {
+       "microsoft.botsay": {
          "version": "1.0.0",
          "commands": [
            "botsay"
@@ -137,7 +137,7 @@ You typically install a local tool in the root directory of the repository. Afte
    The command produces output like the following example:
 
    ```console
-   Tool 'botsay-<name>' (version '1.0.0') was restored. Available commands: botsay
+   Tool 'microsoft.botsay' (version '1.0.0') was restored. Available commands: botsay
    Tool 'dotnetsay' (version '2.1.3') was restored. Available commands: dotnetsay
    Restore was successful.
    ```
@@ -152,9 +152,9 @@ You typically install a local tool in the root directory of the repository. Afte
 
    ```console
    Package Id      Version      Commands       Manifest
-   -------------------------------------------------------------------------------------------
-   botsay-<name>   1.0.0        botsay         /home/name/repository/.config/dotnet-tools.json
-   dotnetsay       2.1.3        dotnetsay      /home/name/repository/.config/dotnet-tools.json
+   --------------------------------------------------------------------------------------------
+   microsoft.botsay 1.0.0        botsay         /home/name/repository/.config/dotnet-tools.json
+   dotnetsay        2.1.3        dotnetsay      /home/name/repository/.config/dotnet-tools.json
    ```
 
 1. Test the tools:
@@ -186,7 +186,7 @@ The update command finds the first manifest file that contains the package ID an
 Remove the installed tools by running the [dotnet tool uninstall](dotnet-tool-uninstall.md) command:
 
 ```dotnetcli
-dotnet tool uninstall botsay-<name>
+dotnet tool uninstall microsoft.botsay
 ```
 
 ```dotnetcli

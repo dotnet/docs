@@ -70,7 +70,7 @@ Public Class StoreKey
     End Sub  
   
     Public Shared Sub GenKey_SaveInContainer(ByVal ContainerName As String)  
-        ' Create the CspParameters object and set the key container   
+        ' Create the CspParameters object and set the key container
         ' name used to store the RSA key pair.  
         Dim cp As New CspParameters()  
         cp.KeyContainerName = ContainerName  
@@ -84,7 +84,7 @@ Public Class StoreKey
     End Sub  
   
     Public Shared Sub GetKeyFromContainer(ByVal ContainerName As String)  
-        ' Create the CspParameters object and set the key container   
+        ' Create the CspParameters object and set the key container
         '  name used to store the RSA key pair.  
         Dim cp As New CspParameters()  
         cp.KeyContainerName = ContainerName  
@@ -98,7 +98,7 @@ Public Class StoreKey
     End Sub  
   
     Public Shared Sub DeleteKeyFromContainer(ByVal ContainerName As String)  
-        ' Create the CspParameters object and set the key container   
+        ' Create the CspParameters object and set the key container
         '  name used to store the RSA key pair.  
         Dim cp As New CspParameters()  
         cp.KeyContainerName = ContainerName  
@@ -154,7 +154,7 @@ public class StoreKey
   
     public static void GenKey_SaveInContainer(string ContainerName)  
     {  
-        // Create the CspParameters object and set the key container   
+        // Create the CspParameters object and set the key container
         // name used to store the RSA key pair.  
         CspParameters cp = new CspParameters();  
         cp.KeyContainerName = ContainerName;  
@@ -169,7 +169,7 @@ public class StoreKey
   
     public static void GetKeyFromContainer(string ContainerName)  
     {  
-        // Create the CspParameters object and set the key container   
+        // Create the CspParameters object and set the key container
         // name used to store the RSA key pair.  
         CspParameters cp = new CspParameters();  
         cp.KeyContainerName = ContainerName;  
@@ -184,7 +184,7 @@ public class StoreKey
   
     public static void DeleteKeyFromContainer(string ContainerName)  
     {  
-        // Create the CspParameters object and set the key container   
+        // Create the CspParameters object and set the key container
         // name used to store the RSA key pair.  
         CspParameters cp = new CspParameters();  
         cp.KeyContainerName = ContainerName;  

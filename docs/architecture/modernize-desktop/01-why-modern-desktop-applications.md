@@ -1,3 +1,8 @@
+---
+title: Why Modern Desktop Applications?
+description: Desktop technologies such as Windows Forms, WPF and UWP in the modern world.
+ms.date: 09/16/2019
+---
 # Why Modern Desktop Applications?
 
 ## Introduction
@@ -8,13 +13,13 @@ Back in early 2000s, one multinational company started developing a distributed 
 
 ### Your story
 
-You might find yourself in the same boat, where you have mature Windows Forms (also known as WinForms) or WPF (Windows Presentation Foundation) applications that have proved their reliability over the years. You probably want to keep using these applications for many more years. At the same time, since those applications were written some time ago, they might be missing capabilities like modern look, performance, integration with new devices and platform features and so on, which gives them a feel of &quot;old tech&quot;. There is another problem that might concern you as a developer. While working on the older .NET Framework versions and maintaining applications that were written a while ago, you might feel like you aren&#39;t learning new technologies and missing on building modern technical skills. If that is your story – this book is for you!
+You might find yourself in the same boat, where you have mature Windows Forms (also known as WinForms) or WPF (Windows Presentation Foundation) applications that have proved their reliability over the years. You probably want to keep using these applications for many more years. At the same time, since those applications were written some time ago, they might be missing capabilities like modern look, performance, integration with new devices and platform features and so on, which gives them a feel of "old tech". There is another problem that might concern you as a developer. While working on the older .NET Framework versions and maintaining applications that were written a while ago, you might feel like you aren't learning new technologies and missing on building modern technical skills. If that is your story – this book is for you!
 
 ### About this guide
 
 This guide is about strategies you can adopt to move your existing desktop applications through the path of modernization and incorporate the latest runtime, language and platform features. You will discover that there is no unique recipe as each application is different, and so are your requirements and preferences. The good news is that there are common approaches you can apply to add new features and capabilities to your applications. Some of them will not even require major modifications of your code.  In this book, we will reveal how all those features work behind the scenes and explain the mechanics of their implementations. Moreover, you will find some common scenarios for modernizing existing desktop applications depicted in detail so you can find inspiration for evolving your projects.
 
-Microsoft approach to modernizing existing applications is to give you the flexibility to create your own customized path. All the modernization strategies described in this book are mostly independent. You can choose ones that are relevant for your application and skip others that aren&#39;t important for you. In other words, you will be able to mix and match the strategies to best address your application needs.
+Microsoft approach to modernizing existing applications is to give you the flexibility to create your own customized path. All the modernization strategies described in this book are mostly independent. You can choose ones that are relevant for your application and skip others that aren't important for you. In other words, you will be able to mix and match the strategies to best address your application needs.
 
 ## Desktop applications nowadays
 
@@ -28,7 +33,7 @@ Even though Web and Mobile applications have grown at an incredible pace, for ce
 
 Here are some reasons for choosing desktop applications in your development:
 
-- Desktop apps have better interaction with user&#39;s PC.
+- Desktop apps have better interaction with user's PC.
 - The performance of desktop applications for complex calculations is much higher than performance of web applications.
 - Running custom logic on the client side is possible but much harder with a web application.
 - Using multithreading is easier and more efficient in a desktop application.
@@ -42,21 +47,21 @@ So, as you can see, developing for desktop is great for many reasons. The techno
 
 Microsoft offered a variety of UI desktop technologies through the years from Win32 introduced in 1995 and to UWP released in 2016.
 
-![](./media/1-1.png)
+![Microsoft desktop technologies](./media/1/microsoft-desktop-technologies.png)
 
 The most popular technologies for building Windows Desktop according to a survey published by Telerik on April 2016 are Windows Forms, WPF and UWP.
 
-![](./media/1-2.png)
+![Telerik survey showing Windows Forms, WPF and UWP as the most popular desktop technologies](./media/1/telerik-survey.png)
 
-You can develop in any of them using C# and VB.NET, but let&#39;s take a closer look.
+You can develop in any of them using C# and VB.NET, but let's take a closer look.
 
 ### Windows Forms
 
 First released in 2002, Windows Forms is a managed framework and is the oldest, most used, desktop technology built on the Windows GDI engine. It offers a very smooth drag-and-drop experience for developing user interfaces in Visual Studio.  At the same time, Windows Forms relies on the Visual Studio Designer as the main way you develop your UI, so creating visual components from code is not trivial.
 
 - Mature technology with lots of code samples and documentation.
-- Very powerful and productive designer. Not so convenient to design UI &quot;from code&quot;.
-- Easy and intuitive to learn, thanks to the designer&#39;s drag and drop experience.
+- Very powerful and productive designer. Not so convenient to design UI "from code".
+- Easy and intuitive to learn, thanks to the designer's drag and drop experience.
 - Supported on any Windows version.
 - Supported on .NET Core 3.0.
 
@@ -74,7 +79,7 @@ Based on the XAML language specification, WPF favors a clear separation between 
 
 The Universal Windows Platforms is not only a presentation framework like WPF and Windows Forms, but it is also a platform itself. This platform has its own API set (the Windows Runtime API), a new deployment system (MSIX), a modern application lifecycle model (for low battery consumption), a new Resource Management System (based on PRI files), among other things. The platform was created to support all kind of input systems (like ink, touch, gamepad, mouse, keyboard, gaze, etc.) in all form-factors with performance and low battery consumption in mind. For these reasons the Shell of the Windows 10 OS uses parts of the UWP platform.
 
-![](./media/1-3.png)
+![UWP structure](./media/1/uwp-structure.png)
 
 UWP contains a presentation framework that is XAML based, like WPF, but is has some important differences such as:
 
@@ -101,15 +106,15 @@ We can describe the differences between the two concepts in the following table:
 
 As a part of the commitment to provide developers with the best tools to build applications, Microsoft has performed a great effort to bring these concepts, or we can even say platforms, closer together to empower developers with the best of both worlds.To do that, Microsoft has performed a bidirectional effort between the two platforms.
 
-![](./media/1-4.png)
+![Bidirectional effort between Modern Application and Desktop Applications](./media/1/bidirectional-effort.png)
 
 1. Move Desktop Application scenarios into Modern Application platform. The traditional desktop development is still very popular because it addresses certain scenarios really well. It makes sense to take these common desktop scenarios and bring them into the modern desktop platform to make the platform fully capable.
 
-    ![](./media/1-5.png)
+    ![Move Desktop Application scenarios into Modern Application platform](./media/1/desktop-to-modern.png)
 
 1. Move Modern Application features into Desktop Applications. For existing desktop apps that need a way to leverage modern capabilities without rewriting from scratch, features from the Modern Application platform are pushed into the Desktop Application.
 
-    ![](./media/1-6.png)
+    ![Move Modern Application features into Desktop Applications](./media/1/modern-to-desktop.png)
 
 In this book we will focus on the second part and show how you can modernize your existing desktop applications.
 
@@ -127,7 +132,7 @@ This path will show you how you can leverage modern desktop features into your e
 
 Modern development cycles have stressed out to provide agility on how new versions of applications are deployed to every single user. Since Windows Forms and WPF applications are based on a particular version of the .NET Framework that must be present on the machine, they cannot take advantage of new .NET Framework version features without the intervention of the IT people with the risk of having side effects for other apps running on the same machine. This has limited the innovation pace for developers forcing them to stay on outdated versions of the .NET Framework.
 
-Now, with the launch of .NET Core 3.0, you can leverage a radically new approach of deploying multiple versions of .NET Core side by side and specifying which version of .NET Core each application should target. This way, you can use newest features in one application while being confident you aren&#39;t going to break any other applications.
+Now, with the launch of .NET Core 3.0, you can leverage a radically new approach of deploying multiple versions of .NET Core side by side and specifying which version of .NET Core each application should target. This way, you can use newest features in one application while being confident you aren't going to break any other applications.
 
 ### Installation
 
@@ -149,7 +154,7 @@ You also might find this guide useful if you are a technical decision maker, suc
 
 ## How to use this guide
 
-This guide addresses the "why"—why you might want to modernize your existing applications, and the specific benefits you get from using NET Core 3.0 and MSIX to modernize your desktop apps. The content of the guide is designed for architects and technical decision makers who want an overview, but who don&#39;t need to focus on implementation and technical, step-by-step details.
+This guide addresses the "why"—why you might want to modernize your existing applications, and the specific benefits you get from using NET Core 3.0 and MSIX to modernize your desktop apps. The content of the guide is designed for architects and technical decision makers who want an overview, but who don't need to focus on implementation and technical, step-by-step details.
 
 Along the different chapters, sample implementation code snippets and screenshot are provided, with chapter 5 devoted to a showcase a complete migration process for sample applications.
 

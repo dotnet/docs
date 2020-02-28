@@ -4,7 +4,7 @@ title: "F# core library reference"
 summary: "Check out some cool stuff (TODO)"
 
 metadata:
-  title: "F# core library and F# interactive library reference"
+  title: "F# core library reference"
   description: "Check out some cool stuff (TODO)"
   ms.topic: landing-page # Required
   author: cartermp
@@ -12,9 +12,9 @@ metadata:
   ms.date: 02/26/2020
 
 landingContent:
-  - title: "F# core library reference"
+  - title: "Arrays"
     linkLists:
       - linkListType: reference
         links:
-          - text: "Arrays"
+          - text: "Array module"
             url: array/toc.yml

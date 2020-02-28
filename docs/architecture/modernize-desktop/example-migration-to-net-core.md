@@ -62,7 +62,7 @@ then it’s going to work on .NET Core because it depends on .NET Standard. Here
 you can see a screenshot showing the dependencies for the Castle.Windsor
 Package:
 
-![NuGet dependencies](media/5/nuget-dependencies.png)
+![NuGet dependencies](media/example-migration-to-net-core/nuget-dependencies.png)
 
 To check out package compatibility, we can use the tool <http://fuget.org> that
 offers a more detailed information about versions and dependencies.
@@ -224,11 +224,11 @@ external WCF service that serves as a façade to a back-end database.
 
 You can see the main application window in the following picture:
 
-![Main application window ](media/5/main-application-window.png)
+![Main application window ](media/example-migration-to-net-core/main-application-window.png)
 
 If we open the .csproj file we can something like this:
 
-![.csproj file ](media/5/csproj-file.png)
+![.csproj file ](media/example-migration-to-net-core/csproj-file.png)
 
 As mentioned before, .NET Core project has a more compact style and we need to
 migrate the project structure to the new .NET Core SDK style.
@@ -236,7 +236,7 @@ migrate the project structure to the new .NET Core SDK style.
 Select the Windows Forms project in the solution explorer and do *right click
 -> Unload Project -> Edit*
 
-![Unload Project](media/5/unload-project.png)
+![Unload Project](media/example-migration-to-net-core/unload-project.png)
 
 Now we can update the .csproj file. We will delete all the content and replace
 it with:
@@ -259,29 +259,29 @@ If we compile the project at this point, we find some errors related to the WCF
 client reference. Since this is auto-generated code we must regenerate it to
 target .NET Core.
 
-![Errors](media/5/errors.png)
+![Errors](media/example-migration-to-net-core/errors.png)
 
 We can delete the `Reference.cs` file and generate a new Service Client.
 
 Right-click over *Connected Services* and select the “*Add Connected Service*”
 option.
 
-![Add Connected Service](media/5/add-connected-service.png)
+![Add Connected Service](media/example-migration-to-net-core/add-connected-service.png)
 
 This will open the Connected Services window where we select the Microsoft WCF
 Web Service option.
 
-![Connected Services window](media/5/connected-services-window.png)
+![Connected Services window](media/example-migration-to-net-core/connected-services-window.png)
 
 If we have the WCF Service in the same solution as we have, we can choose to
 select the Discover option instead of specifying a service URL.
 
-![Configure WCF Web Service Reference window](media/5/configure-wcf-reference.png)
+![Configure WCF Web Service Reference window](media/example-migration-to-net-core/configure-wcf-reference.png)
 
 Once the service is located the tools reflects the API contract implemented by
 the service. We change the name of the Namespace to be eShopServiceReference:
 
-![API contract](media/5/api-contract.png)
+![API contract](media/example-migration-to-net-core/api-contract.png)
 
 We click on *Finish* and after a while, we will see the generated code.
 
@@ -291,7 +291,7 @@ We can see three generated documents:
 2. `ConnectedService.json`: configuration parameters to connect to the service.
 3. `Reference.cs`: this is the actual WCF client code.
 
-![Generated documents](media/5/generated-documents.png)
+![Generated documents](media/example-migration-to-net-core/generated-documents.png)
 
 If we compile again, we see many errors coming from `.cs` files inside the Helper
 folder. This folder was present in the .NET Framework version but not included
@@ -322,7 +322,7 @@ expected on .NET Core.
 We will use the Shop.ClassicWPF sample application to perform the migration.
 Here is a screenshot of the app before migration.
 
-![Sample app before migration](media/5/before-migration.png)
+![Sample app before migration](media/example-migration-to-net-core/before-migration.png)
 
 This application uses a local SQLExpress database to hold the product catalog
 information. This database is accessed directly from the WPF application.
@@ -347,7 +347,7 @@ In this case, we delete all the content of the .csproj file and replace it with:
 
 If we reload the project and compile, we get the following error:
 
-![Compile error](media/5/compile-error.png)
+![Compile error](media/example-migration-to-net-core/compile-error.png)
 
 Since we have deleted all the .csproj contents we have lost a project reference
 specification present in the old project. We just need to add this line to
@@ -362,6 +362,6 @@ specification present in the old project. We just need to add this line to
 Alternatively, we can let Visual Studio help us by clicking on Add Reference
 option and select the project from the solution:
 
-![Reference Manager](media/5/reference-manager.png)
+![Reference Manager](media/example-migration-to-net-core/reference-manager.png)
 
 Once we do this the application compiles and executes as expected on .NET Core.

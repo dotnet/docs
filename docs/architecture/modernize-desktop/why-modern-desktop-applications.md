@@ -47,11 +47,11 @@ So, as you can see, developing for desktop is great for many reasons. The techno
 
 Microsoft offered a variety of UI desktop technologies through the years from Win32 introduced in 1995 and to UWP released in 2016.
 
-![Microsoft desktop technologies](./media/1/microsoft-desktop-technologies.png)
+![Microsoft desktop technologies](./media/why-modern-desktop-applications/microsoft-desktop-technologies.png)
 
 The most popular technologies for building Windows Desktop according to a survey published by Telerik on April 2016 are Windows Forms, WPF and UWP.
 
-![Telerik survey showing Windows Forms, WPF and UWP as the most popular desktop technologies](./media/1/telerik-survey.png)
+![Telerik survey showing Windows Forms, WPF and UWP as the most popular desktop technologies](./media/why-modern-desktop-applications/telerik-survey.png)
 
 You can develop in any of them using C# and VB.NET, but let's take a closer look.
 
@@ -79,7 +79,7 @@ Based on the XAML language specification, WPF favors a clear separation between 
 
 The Universal Windows Platforms is not only a presentation framework like WPF and Windows Forms, but it is also a platform itself. This platform has its own API set (the Windows Runtime API), a new deployment system (MSIX), a modern application lifecycle model (for low battery consumption), a new Resource Management System (based on PRI files), among other things. The platform was created to support all kind of input systems (like ink, touch, gamepad, mouse, keyboard, gaze, etc.) in all form-factors with performance and low battery consumption in mind. For these reasons the Shell of the Windows 10 OS uses parts of the UWP platform.
 
-![UWP structure](./media/1/uwp-structure.png)
+![UWP structure](./media/why-modern-desktop-applications/uwp-structure.png)
 
 UWP contains a presentation framework that is XAML based, like WPF, but is has some important differences such as:
 
@@ -106,15 +106,15 @@ We can describe the differences between the two concepts in the following table:
 
 As a part of the commitment to provide developers with the best tools to build applications, Microsoft has performed a great effort to bring these concepts, or we can even say platforms, closer together to empower developers with the best of both worlds.To do that, Microsoft has performed a bidirectional effort between the two platforms.
 
-![Bidirectional effort between Modern Application and Desktop Applications](./media/1/bidirectional-effort.png)
+![Bidirectional effort between Modern Application and Desktop Applications](./media/why-modern-desktop-applications/bidirectional-effort.png)
 
 1. Move Desktop Application scenarios into Modern Application platform. The traditional desktop development is still very popular because it addresses certain scenarios really well. It makes sense to take these common desktop scenarios and bring them into the modern desktop platform to make the platform fully capable.
 
-    ![Move Desktop Application scenarios into Modern Application platform](./media/1/desktop-to-modern.png)
+    ![Move Desktop Application scenarios into Modern Application platform](./media/why-modern-desktop-applications/desktop-to-modern.png)
 
 1. Move Modern Application features into Desktop Applications. For existing desktop apps that need a way to leverage modern capabilities without rewriting from scratch, features from the Modern Application platform are pushed into the Desktop Application.
 
-    ![Move Modern Application features into Desktop Applications](./media/1/modern-to-desktop.png)
+    ![Move Modern Application features into Desktop Applications](./media/why-modern-desktop-applications/modern-to-desktop.png)
 
 In this book we will focus on the second part and show how you can modernize your existing desktop applications.
 

@@ -10,7 +10,7 @@ ms.date: 09/16/2019
 
 Since its inception in 2002, .NET Framework has evolved through the years to support many technologies like Windows Forms, ASP.NET, Entity Framework, Windows Store and many others. All of them are very different in nature. Therefore, Microsoft was approaching this evolution by taking parts of the .NET Framework and creating a different application stack for each technology. That way, development capabilities could be customized for the needs of the specific stack, which maximized the potential of every platform. Of course, that lead to fragmentation on the versions of the .NET Framework maintained by different independent teams. All these stacks have a common structure, containing an App Model, a Framework and a Runtime, but they differ in the implementation of each of these parts.
 
-![Different Microsoft technologies](./media/2/different-technologies.png)
+![Different Microsoft technologies](./media/whats-new-dotnet-core-desktop/different-technologies.png)
 
 If you are targeting only one of these platforms, you can use this model. However, in many cases you might need more than one target platform in the same solution. For example, your application may have a desktop admin part, a customer-facing web site that shares the backend logic running on a server, and even a mobile client. In this case, you need a unified coding experience that can span all this .NET verticals.
 
@@ -18,7 +18,7 @@ By the time Windows 8 was released, the concept of the Portable Class Libraries 
 
 This leads to a reasoning about the API differences between verticals at the assembly level, as opposed to the individual API level that we had before. This aspect enabled a class library experience that can target multiple verticals, also known as portable class libraries.
 
-![Release history of .NET Framework](./media/release-history-of-dotnet.png)
+![Release history of .NET Framework](./media/whats-new-dotnet-core-desktop/release-history-of-dotnet.png)
 
 With PCL, the experience of development is unified across verticals base on the API shape and the most pressing need to create libraries running on different verticals is addressed. But there is still a great challenge: APIs are only portable when the implementation is moved forward across all the verticals, and still verticals have independent implementations.
 
@@ -50,7 +50,7 @@ The benefits of .NET Core come from these three characteristics:
 
 In .NET Core 3, besides existing web and cloud, there is also support for desktop, IoT and AI domains. The goal for this framework is quite impressive: to target every type of .NET development present and future. Microsoft plans to complete this vision with .NET 5 at the end of 2020. Note that the "Core" name was removed to reinforce its uniqueness in the .NET World.
 
-![All domains of .NET 5](./media/2/all-domains-of-dotnet5.png)
+![All domains of .NET 5](./media/whats-new-dotnet-core-desktop/all-domains-of-dotnet5.png)
 
 ## .NET Framework vs. .NET Core
 
@@ -80,7 +80,7 @@ So, if you have existing .NET Framework applications, you should not feel pressu
 
 For your brand-new desktop applications, we recommend starting directly on .NET Core. It is lightweight, runs side-by-side, high performance and cross-platform and fits perfectly on containers and microservices architectures.
 
-![.NET Framework and .NET Core](./media/2/dotnet-framework-and-dotnet-core.png)
+![.NET Framework and .NET Core](./media/whats-new-dotnet-core-desktop/dotnet-framework-and-dotnet-core.png)
 
 ## .NET Standard vs. PCL
 

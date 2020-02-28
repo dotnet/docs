@@ -54,7 +54,7 @@ Here's an example class that contains collections and a nested class:
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/WeatherForecast.cs?name=SnippetWFWithPOCOs)]
 
-The JSON output from serializing an instance of the preceding type looks like the following example. The JSON output is minified by default: 
+The JSON output from serializing an instance of the preceding type looks like the following example. The JSON output is minified by default:
 
 ```json
 {"Date":"2019-08-01T00:00:00-07:00","TemperatureCelsius":25,"Summary":"Hot","DatesAvailable":["2019-08-01T00:00:00-07:00","2019-08-02T00:00:00-07:00"],"TemperatureRanges":{"Cold":{"High":20,"Low":-10},"Hot":{"High":60,"Low":20}},"SummaryWords":["Cool","Windy","Humid"]}
@@ -184,7 +184,7 @@ By default, property names and dictionary keys are unchanged in the JSON output,
 * [Convert all property names to camel case](#use-camel-case-for-all-json-property-names)
 * [Implement a custom property naming policy](#use-a-custom-json-property-naming-policy)
 * [Convert dictionary keys to camel case](#camel-case-dictionary-keys)
-* [Convert enums to strings and camel case](#enums-as-strings) 
+* [Convert enums to strings and camel case](#enums-as-strings)
 
 For other scenarios that require special handling of JSON property names and values, you can [implement custom converters](system-text-json-converters-how-to.md).
 
@@ -500,7 +500,7 @@ In the preceding example scenario, both approaches cause the `WindSpeed` propert
 ```
 
 > [!IMPORTANT]
-> These approaches provide polymorphic serialization only for the root object to be serialized, not for properties of that root object. 
+> These approaches provide polymorphic serialization only for the root object to be serialized, not for properties of that root object.
 
 You can get polymorphic serialization for lower-level objects if you define them as type `object`. For example, suppose your `WeatherForecast` class has a property named `PreviousForecast` that can be defined as type `WeatherForecast` or `object`:
 
@@ -705,7 +705,7 @@ The following example shows how to use the <xref:System.Text.Json.JsonDocument> 
 The preceding code:
 
 * Assumes the JSON to analyze is in a string named `jsonString`.
-* Calculates an average grade for objects in a `Students` array that have a `Grade` property. 
+* Calculates an average grade for objects in a `Students` array that have a `Grade` property.
 * Assigns a default grade of 70 for students who don't have a grade.
 * Counts students by incrementing a `count` variable with each iteration. An alternative is to call <xref:System.Text.Json.JsonElement.GetArrayLength%2A>, as shown in the following example:
 
@@ -725,7 +725,7 @@ The preceding code:
 
 * Reads a JSON file, loads the data into a `JsonDocument`, and writes formatted (pretty-printed) JSON to a file.
 * Uses <xref:System.Text.Json.JsonDocumentOptions> to specify that comments in the input JSON are allowed but ignored.
-* When finished, calls <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> on the writer. An alternative is to let the writer autoflush when it's disposed. 
+* When finished, calls <xref:System.Text.Json.Utf8JsonWriter.Flush%2A> on the writer. An alternative is to let the writer autoflush when it's disposed.
 
 Here's an example of JSON input to be processed by the example code:
 
@@ -762,7 +762,7 @@ The preceding code:
 * Assumes the file is encoded as UTF-16 and transcodes it into UTF-8. A file encoded as UTF-8 can be read directly into a `ReadOnlySpan<byte>`, by using the following code:
 
   ```csharp
-  ReadOnlySpan<byte> jsonReadOnlySpan = File.ReadAllBytes(fileName); 
+  ReadOnlySpan<byte> jsonReadOnlySpan = File.ReadAllBytes(fileName);
   ```
 
   If the file contains a UTF-8 byte order mark (BOM), remove it before passing the bytes to the `Utf8JsonReader`, since the reader expects text. Otherwise, the BOM is considered invalid JSON, and the reader throws an exception.

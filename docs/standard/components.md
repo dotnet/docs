@@ -64,7 +64,7 @@ A runtime is the execution environment for a managed program. The OS is part of 
 
 - Common Language Runtime (CLR) for the .NET Framework
 - Core Common Language Runtime (CoreCLR) for .NET Core
-- .NET Native for Universal Windows Platform 
+- .NET Native for Universal Windows Platform
 - The Mono runtime for Xamarin.iOS, Xamarin.Android, Xamarin.Mac, and the Mono desktop framework
 
 ## .NET tooling and common infrastructure
@@ -90,7 +90,7 @@ The following official Ecma documents are available for [C#](http://www.ecma-int
 - **The C# Language Standard (version 5.0)**: [ECMA-334.pdf](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-334.pdf)
 - **The Common Language Infrastructure**: This is available in [pdf](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-335.pdf) form and [zip](https://www.ecma-international.org/publications/files/ECMA-ST/ECMA-335.zip) form.
 - **Information Derived from the Partition IV XML File**: This is available in [pdf](https://www.ecma-international.org/publications/files/ECMA-TR/ECMA%20TR-084.pdf) and [zip](https://www.ecma-international.org/publications/files/ECMA-TR/TR-084.zip) formats.
- 
+
 The official ISO/IEC documents are available from the ISO/IEC [Publicly Available Standards](https://standards.iso.org/ittf/PubliclyAvailableStandards/) page. These links are direct from that page:
 
 - **Information technology - Programming languages - C#**: [ISO/IEC 23270:2018](https://standards.iso.org/ittf/PubliclyAvailableStandards/c075178_ISO_IEC_23270_2018.zip)

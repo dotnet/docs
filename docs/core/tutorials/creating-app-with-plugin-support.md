@@ -213,7 +213,7 @@ By using a different `PluginLoadContext` instance for each plugin, the plugins c
 Back in the root folder, do the following:
 
 1. Run the following command to create a new class library project named `HelloPlugin`:
-    
+
     ```dotnetcli
     dotnet new classlib -o HelloPlugin
     ```

@@ -40,7 +40,7 @@ The `dotnet tool uninstall` command provides a way for you to uninstall .NET Cor
 
 - **`-g|--global`**
 
-  Specifies that the tool to be removed is from a user-wide installation. Can't be combined with the `--tool-path` option. Omitting both `--global` and `--tool-path` specifies that the tool to be removed is a local tool. 
+  Specifies that the tool to be removed is from a user-wide installation. Can't be combined with the `--tool-path` option. Omitting both `--global` and `--tool-path` specifies that the tool to be removed is a local tool.
 
 - **`-h|--help`**
 
@@ -48,7 +48,7 @@ The `dotnet tool uninstall` command provides a way for you to uninstall .NET Cor
 
 - **`--tool-path <PATH>`**
 
-  Specifies the location where to uninstall the tool. PATH can be absolute or relative. Can't be combined with the `--global` option. Omitting both `--global` and `--tool-path` specifies that the tool to be removed is a local tool. 
+  Specifies the location where to uninstall the tool. PATH can be absolute or relative. Can't be combined with the `--global` option. Omitting both `--global` and `--tool-path` specifies that the tool to be removed is a local tool.
 
 ## Examples
 

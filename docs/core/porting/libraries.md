@@ -91,7 +91,7 @@ This approach might be best for larger and more complex projects, where restruct
 1. Is it reasonable to write your own implementation of an unavailable .NET Framework API?
    You could consider copying, modifying, and using code from the [.NET Framework reference source](https://github.com/Microsoft/referencesource). The reference source code is licensed under the [MIT License](https://github.com/Microsoft/referencesource/blob/master/LICENSE.txt), so you have significant freedom to use the source as a basis for your own code. Just be sure to properly attribute Microsoft in your code.
 1. Repeat this process as needed for different projects.
- 
+
 The analysis phase could take some time depending on the size of your codebase. Spending time in this phase to thoroughly understand the scope of changes needed and to develop a plan usually saves you time in the long run, particularly if you have a complex codebase.
 
 Your plan could involve making significant changes to your codebase while still targeting .NET Framework 4.7.2, making this a more structured version of the previous approach. How you go about executing your plan is dependent on your codebase.

@@ -107,7 +107,7 @@ You use the [struct](../../language-reference/builtin-types/struct.md) keyword t
 
 [!code-csharp[csProgGuideObjects#1](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideObjects/CS/Objects.cs#1)]
 
-For more information about structs, see [Structs](../classes-and-structs/structs.md). For more information about value types, see [Value types](../../language-reference/builtin-types/value-types.md).
+For more information about structs, see [Structure types](../../language-reference/builtin-types/struct.md). For more information about value types, see [Value types](../../language-reference/builtin-types/value-types.md).
 
 The other category of value types is [enum](../../language-reference/builtin-types/enum.md). An enum defines a set of named integral constants. For example, the <xref:System.IO.FileMode?displayProperty=nameWithType> enumeration in the .NET class library contains a set of named constant integers that specify how a file should be opened. It is defined as shown in the following example:
 
@@ -199,3 +199,4 @@ For more information, see the following topics:
 - [C# Programming Guide](../index.md)
 - [Conversion of XML Data Types](../../../standard/data/xml/conversion-of-xml-data-types.md)
 - [Integral types](../../language-reference/builtin-types/integral-numeric-types.md)
+ 

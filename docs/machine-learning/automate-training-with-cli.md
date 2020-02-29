@@ -18,7 +18,7 @@ The ML.NET CLI simplifies this process using automated machine learning (AutoML)
 
 ## What is the ML.NET command-line interface (CLI)?
 
-The ML.NET CLI is a .NET Core tool. Once installed, you give it a machine learning task and a training dataset, and it generates an ML.NET model, as well as the C# code to run to use the model in your application.
+The ML.NET CLI is a [.NET Core tool](../core/tools/global-tools.md). Once installed, you give it a machine learning task and a training dataset, and it generates an ML.NET model, as well as the C# code to run to use the model in your application.
 
 As shown in the following figure, it is simple to generate a high quality ML.NET model (serialized model .zip file) plus the sample C# code to run/score that model. In addition, the C# code to create/train that model is also generated, so that you can research and iterate on the algorithm and settings used for that generated "best model".
 
@@ -69,7 +69,7 @@ The following displays the binary classification ML task metrics list for the to
 
 ![image](media/automate-training-with-cli/cli-binary-classification-metrics.png)
 
-Accuracy is a popular metric for classification problems, however accuracy isn't always the best metric to select the best model from as explained in the references below. There are cases where you need to evaluate the quality of your model with additional metrics.
+Accuracy is a popular metric for classification problems, however accuracy isn't always the best metric to select the best model from as explained in the following references. There are cases where you need to evaluate the quality of your model with additional metrics.
 
 To explore and understand the metrics that are output by the CLI, see [Evaluation metrics for binary classification](resources/metrics.md#evaluation-metrics-for-binary-classification).
 

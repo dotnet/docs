@@ -44,7 +44,7 @@ In Visual Studio, there are Visual Basic and C# console application templates fo
 From the command line, you can use either the .NET Core CLI commands (for example, `dotnet new console` or `dotnet new console -lang vb`), or you can create the file and use the command-line compiler for a .NET Framework application.
 
 For a .NET Core project, you must reference the **System.Drawing.Common** NuGet package. In Visual Studio, use the NuGet Package Manager to install the package. Alternatively, you can add a reference to the package in your \*.csproj or \*.vbproj file:
- 
+
 ```xml
 <ItemGroup>
      <PackageReference Include="System.Drawing.Common" Version="4.5.1" />

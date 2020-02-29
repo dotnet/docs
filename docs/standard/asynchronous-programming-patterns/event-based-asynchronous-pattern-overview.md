@@ -54,19 +54,19 @@ Applications that perform many tasks simultaneously, yet remain responsive to us
 ```vb  
 Public Class AsyncExample  
     ' Synchronous methods.  
-    Public Function Method1(ByVal param As String) As Integer   
-    Public Sub Method2(ByVal param As Double)   
+    Public Function Method1(ByVal param As String) As Integer
+    Public Sub Method2(ByVal param As Double)
   
     ' Asynchronous methods.  
-    Overloads Public Sub Method1Async(ByVal param As String)   
-    Overloads Public Sub Method1Async(ByVal param As String, ByVal userState As Object)   
+    Overloads Public Sub Method1Async(ByVal param As String)
+    Overloads Public Sub Method1Async(ByVal param As String, ByVal userState As Object)
     Public Event Method1Completed As Method1CompletedEventHandler  
   
-    Overloads Public Sub Method2Async(ByVal param As Double)   
-    Overloads Public Sub Method2Async(ByVal param As Double, ByVal userState As Object)   
+    Overloads Public Sub Method2Async(ByVal param As Double)
+    Overloads Public Sub Method2Async(ByVal param As Double, ByVal userState As Object)
     Public Event Method2Completed As Method2CompletedEventHandler  
   
-    Public Sub CancelAsync(ByVal userState As Object)   
+    Public Sub CancelAsync(ByVal userState As Object)
   
     Public ReadOnly Property IsBusy () As Boolean  
   

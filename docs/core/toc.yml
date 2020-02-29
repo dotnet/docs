@@ -111,6 +111,17 @@
       href: tutorials/cli-templates-create-project-template.md
     - name: 3 - Create a template pack
       href: tutorials/cli-templates-create-template-pack.md
+  - name: Create tools for the CLI
+    items:
+    - name: 1 - Create a tool
+      displayName: tools, tutorials
+      href: tools/global-tools-how-to-create.md
+    - name: 2 - Use a global tool
+      displayName: tools, tutorials
+      href: tools/global-tools-how-to-use.md
+    - name: 3 - Use a local tool
+      href: tools/local-tools-how-to-use.md
+      displayName: tools, tutorials
 - name: Project SDKs
   items:
   - name: Overview
@@ -123,163 +134,12 @@
       href: /aspnet/core/razor-pages/web-sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
     - name: Microsoft.NET.Sdk.Razor
       href: /aspnet/core/razor-pages/sdk?toc=/dotnet/core/toc.json&bc=/dotnet/breadcrumb/toc.json
-- name: Run-time configuration
-  items:
-  - name: Settings
-    href: run-time-config/index.md
-  - name: Compilation settings
-    href: run-time-config/compilation.md
-  - name: Debugging and profiling settings
-    href: run-time-config/debugging-profiling.md
-  - name: Garbage collector settings
-    href: run-time-config/garbage-collector.md
-  - name: Globalization settings
-    href: run-time-config/globalization.md
-  - name: Networking settings
-    href: run-time-config/networking.md
-  - name: Threading settings
-    href: run-time-config/threading.md
-- name: Native interoperability
-  items:
-  - name: Expose .NET Core components to COM
-    href: native-interop/expose-components-to-com.md
-- name: Packages, metapackages, and frameworks
-  href: packages.md
-- name: Migration
-  items:
-  - name: .NET Core 2.0 to 2.1
-    href: migration/20-21.md
-  - name: Migrate from project.json
-    href: migration/index.md
-  - name: Map between project.json and csproj
-    href: tools/project-json-to-csproj.md
-  - name: Changes in CLI overview
-    href: tools/cli-msbuild-architecture.md
-  - name: Additions to the csproj format
-    href: tools/csproj.md
-  - name: Migrate from DNX
-    href: migration/from-dnx.md
-- name: Application deployment
-  items:
-  - name: Overview
-    href: deploying/index.md
-  - name: Publish apps with the CLI
-    href: deploying/deploy-with-cli.md
-  - name: Deploy apps with Visual Studio
-    href: deploying/deploy-with-vs.md
-  - name: Create a NuGet package with the CLI
-    href: deploying/creating-nuget-packages.md
-  - name: Self-contained deployment runtime roll forward
-    href: deploying/runtime-patch-selection.md
-  - name: Runtime package store
-    href: deploying/runtime-store.md
-- name: Docker
-  items:
-  - name: Introduction to .NET and Docker
-    href: docker/introduction.md
-  - name: Containerize a .NET Core app
-    href: docker/build-container.md
-  - name: Container tools in Visual Studio
-    href: /visualstudio/containers/overview
-- name: Diagnostic tools
-  items:
-  - name: Overview
-    href: diagnostics/index.md
-  - name: Managed debuggers
-    href: diagnostics/managed-debuggers.md
-  - name: Logging and tracing
-    href: diagnostics/logging-tracing.md
-  - name: .NET Core CLI global tools
-    items:
-    - name: dotnet-counters
-      href: diagnostics/dotnet-counters.md
-    - name: dotnet-dump
-      href: diagnostics/dotnet-dump.md
-    - name: dotnet-trace
-      href: diagnostics/dotnet-trace.md
-  - name: .NET Core diagnostics tutorials
-    items:
-    - name: Debug a memory leak
-      href: diagnostics/debug-memory-leak.md
-- name: Unit testing
-  href: testing/index.md
-  items:
-  - name: Overview
-    href: testing/index.md
-  - name: Unit testing best practices
-    href: testing/unit-testing-best-practices.md
-  - name: C# unit testing with xUnit
-    href: testing/unit-testing-with-dotnet-test.md
-  - name: C# unit testing with NUnit
-    href: testing/unit-testing-with-nunit.md
-  - name: C# unit testing with MSTest
-    href: testing/unit-testing-with-mstest.md
-  - name: F# unit testing with xUnit
-    href: testing/unit-testing-fsharp-with-dotnet-test.md
-  - name: F# unit testing with NUnit
-    href: testing/unit-testing-fsharp-with-nunit.md
-  - name: F# unit testing with MSTest
-    href: testing/unit-testing-fsharp-with-mstest.md
-  - name: VB unit testing with xUnit
-    href: testing/unit-testing-visual-basic-with-dotnet-test.md
-  - name: VB unit testing with NUnit
-    href: testing/unit-testing-visual-basic-with-nunit.md
-  - name: VB unit testing with MSTest
-    href: testing/unit-testing-visual-basic-with-mstest.md
-  - name: Run selective unit tests
-    href: testing/selective-unit-tests.md
-  - name: Unit test published output
-    href: testing/unit-testing-published-output.md
-  - name: Live unit test .NET Core projects with Visual Studio
-    href: /visualstudio/test/live-unit-testing-start
-- name: Continuous integration
-  href: tools/using-ci-with-cli.md
-- name: Versioning
-  items:
-  - name: Overview
-    href: versions/index.md
-  - name: .NET Core version selection
-    href: versions/selection.md
-  - name: Remove outdated runtimes and SDKs
-    href: versions/remove-runtime-sdk-versions.md
-- name: Runtime Identifier (RID) catalog
-  href: rid-catalog.md
 - name: .NET Core SDK overview
   href: sdk.md
 - name: .NET Core CLI
   items:
   - name: Overview
     href: tools/index.md
-  - name: Global and local tools
-    expanded: true
-    items:
-    - name: How to manage tools
-      href: tools/global-tools.md
-    - name: Tutorials
-      items:
-      - name: Create a tool
-        displayName: tools
-        href: tools/global-tools-how-to-create.md
-      - name: Install and use a global tool
-        displayName: tools
-        href: tools/global-tools-how-to-use.md
-      - name: Install and use a local tool
-        displayName: tools
-        href: tools/local-tools-how-to-use.md
-    - name: Troubleshoot tools
-      href: tools/troubleshoot-usage-issues.md
-  - name: Elevated access
-    href: tools/elevated-access.md
-  - name: Extensibility model
-    href: tools/extensibility.md
-  - name: Custom templates
-    href: tools/custom-templates.md
-  - name: Enable Tab completion
-    href: tools/enable-tab-autocomplete.md
-  - name: Telemetry
-    href: tools/telemetry.md
-  - name: global.json overview
-    href: tools/global-json.md
   - name: Reference
     items:
     - name: dotnet
@@ -354,6 +214,44 @@
         href: tools/dotnet-list-package.md
       - name: dotnet remove package
         href: tools/dotnet-remove-package.md
+  - name: Global and local tools
+    items:
+    - name: Manage tools
+      href: tools/global-tools.md
+    - name: Troubleshoot tools
+      href: tools/troubleshoot-usage-issues.md
+  - name: global.json overview
+    href: tools/global-json.md
+  - name: Custom templates
+    href: tools/custom-templates.md
+  - name: Telemetry
+    href: tools/telemetry.md
+  - name: Elevated access
+    href: tools/elevated-access.md
+  - name: Enable Tab completion
+    href: tools/enable-tab-autocomplete.md
+  - name: Extensibility model
+    href: tools/extensibility.md
+- name: Diagnostic tools
+  items:
+  - name: Overview
+    href: diagnostics/index.md
+  - name: Managed debuggers
+    href: diagnostics/managed-debuggers.md
+  - name: Logging and tracing
+    href: diagnostics/logging-tracing.md
+  - name: .NET Core CLI global tools
+    items:
+    - name: dotnet-counters
+      href: diagnostics/dotnet-counters.md
+    - name: dotnet-dump
+      href: diagnostics/dotnet-dump.md
+    - name: dotnet-trace
+      href: diagnostics/dotnet-trace.md
+  - name: .NET Core diagnostics tutorials
+    items:
+    - name: Debug a memory leak
+      href: diagnostics/debug-memory-leak.md
 - name: .NET Core additional tools
   items:
   - name: Overview
@@ -368,6 +266,58 @@
     href: additional-tools/dotnet-svcutil.xmlserializer-guide.md
   - name: XML Serializer Generator
     href: additional-tools/xml-serializer-generator.md
+- name: Application deployment
+  items:
+  - name: Overview
+    href: deploying/index.md
+  - name: Publish apps with the CLI
+    href: deploying/deploy-with-cli.md
+  - name: Deploy apps with Visual Studio
+    href: deploying/deploy-with-vs.md
+  - name: Create a NuGet package with the CLI
+    href: deploying/creating-nuget-packages.md
+  - name: Self-contained deployment runtime roll forward
+    href: deploying/runtime-patch-selection.md
+  - name: Runtime package store
+    href: deploying/runtime-store.md
+- name: Docker
+  items:
+  - name: Introduction to .NET and Docker
+    href: docker/introduction.md
+  - name: Containerize a .NET Core app
+    href: docker/build-container.md
+  - name: Container tools in Visual Studio
+    href: /visualstudio/containers/overview
+- name: Run-time configuration
+  items:
+  - name: Settings
+    href: run-time-config/index.md
+  - name: Compilation settings
+    href: run-time-config/compilation.md
+  - name: Debugging and profiling settings
+    href: run-time-config/debugging-profiling.md
+  - name: Garbage collector settings
+    href: run-time-config/garbage-collector.md
+  - name: Globalization settings
+    href: run-time-config/globalization.md
+  - name: Networking settings
+    href: run-time-config/networking.md
+  - name: Threading settings
+    href: run-time-config/threading.md
+- name: Migration
+  items:
+  - name: .NET Core 2.0 to 2.1
+    href: migration/20-21.md
+  - name: Migrate from project.json
+    href: migration/index.md
+  - name: Map between project.json and csproj
+    href: tools/project-json-to-csproj.md
+  - name: Changes in CLI overview
+    href: tools/cli-msbuild-architecture.md
+  - name: Additions to the csproj format
+    href: tools/csproj.md
+  - name: Migrate from DNX
+    href: migration/from-dnx.md
 - name: Port from .NET Framework
   items:
   - name: Overview
@@ -390,6 +340,47 @@
     href: porting/wpf.md
   - name: Port C++/CLI projects
     href: porting/cpp-cli.md
+- name: Unit testing
+  href: testing/index.md
+  items:
+  - name: Overview
+    href: testing/index.md
+  - name: Unit testing best practices
+    href: testing/unit-testing-best-practices.md
+  - name: C# unit testing with xUnit
+    href: testing/unit-testing-with-dotnet-test.md
+  - name: C# unit testing with NUnit
+    href: testing/unit-testing-with-nunit.md
+  - name: C# unit testing with MSTest
+    href: testing/unit-testing-with-mstest.md
+  - name: F# unit testing with xUnit
+    href: testing/unit-testing-fsharp-with-dotnet-test.md
+  - name: F# unit testing with NUnit
+    href: testing/unit-testing-fsharp-with-nunit.md
+  - name: F# unit testing with MSTest
+    href: testing/unit-testing-fsharp-with-mstest.md
+  - name: VB unit testing with xUnit
+    href: testing/unit-testing-visual-basic-with-dotnet-test.md
+  - name: VB unit testing with NUnit
+    href: testing/unit-testing-visual-basic-with-nunit.md
+  - name: VB unit testing with MSTest
+    href: testing/unit-testing-visual-basic-with-mstest.md
+  - name: Run selective unit tests
+    href: testing/selective-unit-tests.md
+  - name: Unit test published output
+    href: testing/unit-testing-published-output.md
+  - name: Live unit test .NET Core projects with Visual Studio
+    href: /visualstudio/test/live-unit-testing-start
+- name: Versioning
+  items:
+  - name: Overview
+    href: versions/index.md
+  - name: .NET Core version selection
+    href: versions/selection.md
+  - name: Remove outdated runtimes and SDKs
+    href: versions/remove-runtime-sdk-versions.md
+- name: Runtime Identifier (RID) catalog
+  href: rid-catalog.md
 - name: Dependency management and loading
   items:
   - name: Dependency management
@@ -416,3 +407,9 @@
       href: ../standard/assembly/unloadability-howto.md
 - name: .NET Core distribution packaging
   href: distribution-packaging.md
+- name: Expose .NET Core components to COM
+  href: native-interop/expose-components-to-com.md
+- name: Packages, metapackages, and frameworks
+  href: packages.md
+- name: Continuous integration
+  href: tools/using-ci-with-cli.md

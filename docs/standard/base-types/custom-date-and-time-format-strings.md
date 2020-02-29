@@ -24,7 +24,7 @@ A date and time format string defines the text representation of a <xref:System.
 
 Custom date and time format strings can be used with both <xref:System.DateTime> and <xref:System.DateTimeOffset> values.
 
-[!INCLUDE[C# interactive-note](~/includes/csharp-interactive-with-utc-partial-note.md)] 
+[!INCLUDE[C# interactive-note](~/includes/csharp-interactive-with-utc-partial-note.md)]
 
 <a name="table"></a> In formatting operations, custom date and time format strings can be used either with the `ToString` method of a date and time instance or with a method that supports composite formatting. The following example illustrates both uses.
 
@@ -392,7 +392,7 @@ The following example includes the "M" custom format specifier in a custom forma
 [!code-csharp[Formatting.DateAndTime.Custom#11](~/samples/snippets/csharp/VS_Snippets_CLR/Formatting.DateAndTime.Custom/cs/Custom1.cs#11)]
 [!code-vb[Formatting.DateAndTime.Custom#11](~/samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.DateAndTime.Custom/vb/Custom1.vb#11)]
 
-[Back to table](#table) 
+[Back to table](#table)
 
 ## <a name="MM_Specifier"></a> The "MM" custom format specifier
 

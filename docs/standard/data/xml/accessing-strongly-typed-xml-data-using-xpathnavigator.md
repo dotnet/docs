@@ -105,9 +105,9 @@ Console.WriteLine(navigator.SchemaInfo.SchemaElement.MinOccurs);
  The example also takes the `books.xsd` schema as input.  
   
 ```xml  
-<xs:schema xmlns="http://www.contoso.com/books"   
-attributeFormDefault="unqualified" elementFormDefault="qualified"   
-targetNamespace="http://www.contoso.com/books"   
+<xs:schema xmlns="http://www.contoso.com/books"
+attributeFormDefault="unqualified" elementFormDefault="qualified"
+targetNamespace="http://www.contoso.com/books"
 xmlns:xs="http://www.w3.org/2001/XMLSchema">  
     <xs:simpleType name="publishedType">  
         <xs:restriction base="xs:date">  

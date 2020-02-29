@@ -28,9 +28,9 @@ End Sub
 ```  
   
 ```csharp  
-void Dispose()   
+void Dispose()
 {  
-    if (myObj != null)   
+    if (myObj != null)
     {  
         Cleanup(myObj);  
         myObj = null;  
@@ -66,22 +66,22 @@ End Sub
 ```  
   
 ```csharp  
-void SomeSecureFunction()   
+void SomeSecureFunction()
 {  
-    if (SomeDemandPasses())   
+    if (SomeDemandPasses())
     {  
         fCallersOk = true;  
         DoOtherWork();  
         fCallersOk = false;  
     }  
 }  
-void DoOtherWork()   
+void DoOtherWork()
 {  
-    if (fCallersOK)   
+    if (fCallersOK)
     {  
         DoSomethingTrusted();  
     }  
-    else   
+    else
     {  
         DemandSomething();  
         DoSomethingTrusted();  

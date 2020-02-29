@@ -62,8 +62,8 @@ Public Class Sample
         Dim reader As XmlTextReader = Nothing  
   
         Try  
-            ' Load the reader with the data file and   
-            'ignore all white space nodes.   
+            ' Load the reader with the data file and
+            'ignore all white space nodes.
             reader = New XmlTextReader(filename)  
             reader.WhitespaceHandling = WhitespaceHandling.None  
   
@@ -116,7 +116,7 @@ public class Sample
   
         try  
         {  
-            // Load the reader with the data file and ignore   
+            // Load the reader with the data file and ignore
             // all white space nodes.  
             reader = new XmlTextReader(filename);  
             reader.WhitespaceHandling = WhitespaceHandling.None;  

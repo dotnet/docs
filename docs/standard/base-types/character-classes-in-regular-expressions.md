@@ -44,7 +44,7 @@ A character class defines a set of characters, any one of which can occur in an 
 > [!NOTE]
 > Character classes that match characters by category, such as [\w](#WordCharacter) to match word characters or [\p{}](#CategoryOrBlock) to match a Unicode category, rely on the <xref:System.Globalization.CharUnicodeInfo> class to provide information about character categories.  Starting with the .NET Framework 4.6.2, character categories are based on [The Unicode Standard, Version 8.0.0](https://www.unicode.org/versions/Unicode8.0.0/). In the .NET Framework 4 through the .NET Framework 4.6.1, they are based on [The Unicode Standard, Version 6.3.0](https://www.unicode.org/versions/Unicode6.3.0/).  
   
-<a name="PositiveGroup"></a>   
+<a name="PositiveGroup"></a>
 ## Positive character group: [ ]  
  A positive character group specifies a list of characters, any one of which may appear in an input string for a match to occur. This list of characters may be specified individually, as a range, or both.  
   
@@ -100,7 +100,7 @@ Some common regular expression patterns that contain positive character classes 
 |`\w*`|Match zero or more word characters.|  
 |`\b`|Match a word boundary.|  
   
-<a name="NegativeGroup"></a>   
+<a name="NegativeGroup"></a>
 ## Negative character group: [^]  
  A negative character group specifies a list of characters that must not appear in an input string for a match to occur. The list of characters may be specified individually, as a range, or both.  
   
@@ -148,7 +148,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 |`\w+`|Match one or more word characters.|  
 |`\b`|End at a word boundary.|  
   
-<a name="AnyCharacter"></a>   
+<a name="AnyCharacter"></a>
 ## Any character: .  
  The period character (.) matches any character except `\n` (the newline character, \u000A), with the following two qualifications:  
   
@@ -170,7 +170,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 > [!NOTE]
 > Because it matches any character, the `.` language element is often used with a lazy quantifier if a regular expression pattern attempts to match any character multiple times. For more information, see [Quantifiers](../../../docs/standard/base-types/quantifiers-in-regular-expressions.md).  
   
-<a name="CategoryOrBlock"></a>   
+<a name="CategoryOrBlock"></a>
 ## Unicode category or Unicode block: \p{}  
  The Unicode standard assigns each character a general category. For example, a particular character can be an uppercase letter (represented by the `Lu` category), a decimal digit (the `Nd` category), a math symbol (the `Sm` category), or a paragraph separator (the `Zl` category). Specific character sets in the Unicode standard also occupy a specific range or block of consecutive code points. For example, the basic Latin character set is found from \u0000 through \u007F, while the Arabic character set is found from \u0600 through \u06FF.  
   
@@ -199,7 +199,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 |`(\s)?`|Match zero or one white-space character.|  
 |`(\p{IsBasicLatin}+(\s)?)+`|Match the pattern of one or more basic Latin characters followed by zero or one white-space characters one or more times.|  
   
-<a name="NegativeCategoryOrBlock"></a>   
+<a name="NegativeCategoryOrBlock"></a>
 ## Negative Unicode category or Unicode block: \P{}  
  The Unicode standard assigns each character a general category. For example, a particular character can be an uppercase letter (represented by the `Lu` category), a decimal digit (the `Nd` category), a math symbol (the `Sm` category), or a paragraph separator (the `Zl` category). Specific character sets in the Unicode standard also occupy a specific range or block of consecutive code points. For example, the basic Latin character set is found from \u0000 through \u007F, while the Arabic character set is found from \u0600 through \u06FF.  
   
@@ -216,7 +216,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
   
  The regular expression pattern `(\P{Sc})+` matches one or more characters that are not currency symbols; it effectively strips any currency symbol from the result string.  
   
-<a name="WordCharacter"></a>   
+<a name="WordCharacter"></a>
 ## Word character: \w  
  `\w` matches any word character. A word character is a member of any of the Unicode categories listed in the following table.  
   
@@ -246,7 +246,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
  [!code-csharp[Conceptual.RegEx.Language.CharacterClasses#8](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.characterclasses/cs/wordchar1.cs#8)]
  [!code-vb[Conceptual.RegEx.Language.CharacterClasses#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/wordchar1.vb#8)]  
   
-<a name="NonWordCharacter"></a>   
+<a name="NonWordCharacter"></a>
 ## Non-word character: \W  
  `\W` matches any non-word character. The \W language element is equivalent to the following character class:  
   
@@ -283,7 +283,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
   
  Because the <xref:System.Text.RegularExpressions.Group> object for the second capturing group contains only a single captured non-word character, the example retrieves all captured non-word characters from the <xref:System.Text.RegularExpressions.CaptureCollection> object that is returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> property.  
   
-<a name="WhitespaceCharacter"></a>   
+<a name="WhitespaceCharacter"></a>
 ## Whitespace character: \s  
  `\s` matches any whitespace character. It is equivalent to the escape sequences and Unicode categories listed in the following table.  
   
@@ -312,7 +312,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
  [!code-csharp[Conceptual.RegEx.Language.CharacterClasses#10](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.characterclasses/cs/whitespace1.cs#10)]
  [!code-vb[Conceptual.RegEx.Language.CharacterClasses#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/whitespace1.vb#10)]  
   
-<a name="NonWhitespaceCharacter"></a>   
+<a name="NonWhitespaceCharacter"></a>
 ## Non-whitespace character: \S  
  `\S` matches any non-white-space character. It is equivalent to the `[^\f\n\r\t\v\x85\p{Z}]` regular expression pattern, or the opposite of the regular expression pattern that is equivalent to `\s`, which matches white-space characters. For more information, see [White-Space Character: \s](#WhitespaceCharacter).  
   
@@ -329,7 +329,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
  [!code-csharp[Conceptual.RegEx.Language.CharacterClasses#11](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.characterclasses/cs/nonwhitespace1.cs#11)]
  [!code-vb[Conceptual.RegEx.Language.CharacterClasses#11](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/nonwhitespace1.vb#11)]  
   
-<a name="DigitCharacter"></a>   
+<a name="DigitCharacter"></a>
 ## Decimal digit character: \d  
  `\d` matches any decimal digit. It is equivalent to the `\p{Nd}` regular expression pattern, which includes the standard decimal digits 0-9 as well as the decimal digits of a number of other character sets.  
   
@@ -351,7 +351,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
  [!code-csharp[Conceptual.RegEx.Language.CharacterClasses#12](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.characterclasses/cs/digit1.cs#12)]
  [!code-vb[Conceptual.RegEx.Language.CharacterClasses#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/digit1.vb#12)]  
   
-<a name="NonDigitCharacter"></a>   
+<a name="NonDigitCharacter"></a>
 ## Non-digit character: \D  
  `\D` matches any non-digit character. It is equivalent to the `\P{Nd}` regular expression pattern.  
   
@@ -370,7 +370,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
  [!code-csharp[Conceptual.RegEx.Language.CharacterClasses#13](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.characterclasses/cs/nondigit1.cs#13)]
  [!code-vb[Conceptual.RegEx.Language.CharacterClasses#13](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/nondigit1.vb#13)]  
   
-<a name="SupportedUnicodeGeneralCategories"></a>   
+<a name="SupportedUnicodeGeneralCategories"></a>
 ## Supported Unicode general categories  
  Unicode defines the general categories listed in the following table. For more information, see the "UCD File Format" and "General Category Values" subtopics at the [Unicode Character Database](https://www.unicode.org/reports/tr44/).  
   
@@ -419,7 +419,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
  [!code-csharp[Conceptual.RegEx.Language.CharacterClasses#14](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.characterclasses/cs/getunicodecategory1.cs#14)]
  [!code-vb[Conceptual.RegEx.Language.CharacterClasses#14](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/getunicodecategory1.vb#14)]  
   
-<a name="SupportedNamedBlocks"></a>   
+<a name="SupportedNamedBlocks"></a>
 ## Supported named blocks
 
 .NET provides the named blocks listed in the following table. The set of supported named blocks is based on Unicode 4.0 and Perl 5.6. For a regular expression that uses named blocks, see the [Unicode category or Unicode block: \\p{}](#unicode-category-or-unicode-block-p) section.  
@@ -532,7 +532,7 @@ where *firstCharacter* is the character that begins the range and *lastCharacter
 |FF00 - FFEF|`IsHalfwidthandFullwidthForms`|  
 |FFF0 - FFFF|`IsSpecials`|  
   
-<a name="CharacterClassSubtraction"></a>   
+<a name="CharacterClassSubtraction"></a>
 ## Character class subtraction: [base_group - [excluded_group]]  
  A character class defines a set of characters. Character class subtraction yields a set of characters that is the result of excluding the characters in one character class from another character class.  
   

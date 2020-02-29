@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "WordCounterApp/1.0.0": {
+        "dependencies": {
+          "TextUtils": "1.0.0"
+        },
+        "runtime": {
+          "WordCounterApp.dll": {}
+        }
+      },
+      "TextUtils/1.0.0": {
+        "runtime": {
+          "TextUtils.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WordCounterApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TextUtils/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

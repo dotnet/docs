@@ -1,0 +1,72 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Code\\Work\\dotnet\\samples\\csharp\\unit-testing-best-practices\\unit-testing-best-practices\\unit-testing-best-practices.csproj": {}
+  },
+  "projects": {
+    "C:\\Code\\Work\\dotnet\\samples\\csharp\\unit-testing-best-practices\\unit-testing-best-practices\\unit-testing-best-practices.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Code\\Work\\dotnet\\samples\\csharp\\unit-testing-best-practices\\unit-testing-best-practices\\unit-testing-best-practices.csproj",
+        "projectName": "unit-testing-best-practices",
+        "projectPath": "C:\\Code\\Work\\dotnet\\samples\\csharp\\unit-testing-best-practices\\unit-testing-best-practices\\unit-testing-best-practices.csproj",
+        "packagesPath": "C:\\Users\\Andy\\.nuget\\packages\\",
+        "outputPath": "C:\\Code\\Work\\dotnet\\samples\\csharp\\unit-testing-best-practices\\unit-testing-best-practices\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Andy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Andy\\.nuget\\packages": {},
+          "c:\\code\\fun\\sadconsole9\\nuget": {},
+          "c:\\code\\fun\\sadconsole\\nuget": {},
+          "c:\\code\\nugetpkgs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://ci.appveyor.com/nuget/octokit-net": {},
+          "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\3.1.200-preview-014883\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

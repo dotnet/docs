@@ -3,7 +3,7 @@ title: Sentiment analysis with .NET for Apache Spark and ML.NET tutorial
 description: In this tutorial, you learn how to use ML.NET with .NET for Apache Spark for sentiment analysis.
 author: mamccrea
 ms.author: mamccrea
-ms.date: 01/31/2019
+ms.date: 03/05/2019
 ms.topic: tutorial
 ---
 
@@ -65,7 +65,10 @@ This tutorial uses the ML.NET Model Builder (preview), a visual interface availa
 
 ## heading
 
-1. Add the following `using` statements to the top of the *Program.cs* file in *myMLSparkApp*:
+
+### Create a SparkSession
+
+1. Add the following additional `using` statements to the top of the *Program.cs* file in *myMLSparkApp*:
 
    ```csharp
    using System;
@@ -75,94 +78,54 @@ This tutorial uses the ML.NET Model Builder (preview), a visual interface availa
    using Microsoft.Spark.Sql;
    ```
 
-
-
-## Establish and connect to a data stream
-
-One popular way to test stream processing is through **netcat**. netcat (also known as *nc*) allows you to read from and write to network connections. You establish a network connection with netcat through a terminal window. 
-
-### Create a data stream with netcat
-
-1. [Download netcat](https://sourceforge.net/projects/nc110/files/). Then, extract the file from the zip download and append the directory you extracted to your "PATH" environment variable.
-
-2. To start a new connection, open a new console and run the following command which connects to localhost on port 9999.
-
-   On Windows:
-
-   ```console
-   nc -vvv -l -p 9999
-   ```
-
-   On Linux:
-
-   ```console
-   nc -lk 9999
-   ```
-
-   Your Spark program listens for the input you type into this command prompt.
-
-### Create a SparkSession
-
-1. Add the following additional `using` statements to the top of the *Program.cs* file in *mySparkStreamingApp*:
-
-   ```csharp
-   using System;
-   using Microsoft.Spark.Sql;
-   using Microsoft.Spark.Sql.Streaming;
-   using static Microsoft.Spark.Sql.Functions;
-   ```
-
 1. Add the following code to your `Main` method to create a new `SparkSession`. The Spark Session is the entry point to programming Spark with the Dataset and DataFrame API.
 
    ```csharp
    SparkSession spark = SparkSession
         .Builder()
-        .AppName("Streaming example with a UDF")
         .GetOrCreate();
    ```
 
    Calling the *spark* object created above allows you to access Spark and DataFrame functionality throughout your program.
 
-### Connect to a stream with ReadStream()
+### Create a DataFrame and print to console
 
-The `ReadStream()` method returns a `DataStreamReader` that can be used to read streaming data in as a `DataFrame`. Include the host and port information to tell your Spark app where to expect its streaming data.
+Read in the Yelp review data from the *yelp.csv* file as a `DataFrame`. Include `header` and `inferSchema` options.
 
 ```csharp
-DataFrame lines = spark
+DataFrame df = spark
     .ReadStream()
-    .Format("socket")
-    .Option("host", hostname)
-    .Option("port", port)
-    .Load();
+    .Option("header", true)
+    .Option("inferSchema", true)
+    .Csv("yelp.csv");
+
+df.Show();
 ```
 
 ## Register a user-defined function
 
-You can use UDFs, *user-defined functions*, in Spark applications to perform calculations and analysis on your data.
+You can use UDFs, *user-defined functions*, in Spark applications to perform calculations and analysis on your data. In this how-to, you use ML.NET with a UDF to evaluate each review.
 
-Add the following code to your `Main` method to register a UDF called `udfArray`. 
+Add the following code to your `Main` method to register a UDF called `MLudf`. 
 
 ```csharp
-Func<Column, Column> udfArray =
-    Udf<string, string[]>((str) => new string[] { str, $"{str} {str.Length}" });
+spark.Udf()
+    .Register<string, bool>("MLudf", (text) => Sentiment(text));
 ```
 
-This UDF processes each string it receives from the netcat terminal to produce an array that includes the original string (contained in *str*), followed by the original string concatenated with the length of the original string. 
+This UDF takes a Yelp review string as input, and outputs true or false for positive and negative sentiments, respectively.
 
-For example, entering *Hello world* in the netcat terminal produces an array where:
-
-* array\[0] = Hello world
-* array\[1] = Hello world 11
-
-## Use SparkSQL
+## Create Sentiment()
 
 Use SparkSQL to perform various functions on the data stored in your DataFrame. It's common to combine UDFs and SparkSQL to apply a UDF to each row of a DataFrame.
 
 ```csharp
-DataFrame arrayDF = lines.Select(Explode(udfArray(lines["value"])));
+public static bool Sentiment(string review){
+   
+}
 ```
 
-This code snippet applies *udfArray* to each value in your DataFrame, which represents each string read from your netcat terminal. Apply the SparkSQL method <xref:Microsoft.Spark.Sql.Functions.Explode%2A> to put each entry of your array in its own row. Finally, use <xref:Microsoft.Spark.Sql.DataFrame.Select%2A> to place the columns you've produced in the new DataFrame *arrayDF.*
+
 
 ## Display your stream
 

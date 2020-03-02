@@ -1,19 +1,16 @@
 ---
-title: Install .NET Core on Linux RHEL 8.1 package manager - .NET Core
-description: Use a package manager to install .NET Core SDK and runtime on RHEL 8.1.
+title: Install .NET Core on Linux RHEL 8 package manager - .NET Core
+description: Use a package manager to install .NET Core SDK and runtime on RHEL 8.
 author: thraka
 ms.author: adegeo
 ms.date: 12/03/2019
 ---
 
-# RHEL 8.1 Package Manager - Install .NET Core
+# RHEL 8 Package Manager - Install .NET Core
 
 [!INCLUDE [package-manager-switcher](includes/package-manager-switcher.md)]
 
-This article describes how to use a package manager to install .NET Core on RHEL 8.1. .NET Core 3.1 is not yet available for RHEL 8.1.
-
-> [!NOTE]
-> RHEL 8.0 does not include .NET Core 3.0. Use the command `yum upgrade` to update to RHEL 8.1.
+This article describes how to use a package manager to install .NET Core on RHEL 8.
 
 ## Register your Red Hat subscription
 
@@ -24,8 +21,8 @@ To install .NET Core from Red Hat on RHEL, you first need to register using the 
 After registering with the Subscription Manager, you're ready to install and enable the .NET Core SDK. In your terminal, run the following commands.
 
 ```bash
-dnf install dotnet-sdk-3.0
-scl enable dotnet-sdk-3.0 bash
+sudo dnf update
+sudo dnf install dotnet-sdk-3.1
 ```
 
 ## Install the ASP.NET Core Runtime
@@ -33,8 +30,8 @@ scl enable dotnet-sdk-3.0 bash
 After registering with the Subscription Manager, you're ready to install and enable the ASP.NET Core Runtime. In your terminal, run the following commands.
 
 ```bash
-dnf install aspnetcore-runtime-3.0
-scl enable aspnetcore-runtime-3.0 bash
+sudo dnf update
+sudo dnf install aspnetcore-runtime-3.1
 ```
 
 ## Install the .NET Core Runtime
@@ -42,10 +39,10 @@ scl enable aspnetcore-runtime-3.0 bash
 After registering with the Subscription Manager, you're ready to install and enable the .NET Core Runtime. In your terminal, run the following commands.
 
 ```bash
-sudo dnf install dotnet-runtime-3.0
-scl enable dotnet-runtime-3.0 bash
+sudo dnf update
+sudo dnf install dotnet-runtime-3.1
 ```
 
 ## See also
 
-- [Using .NET Core 3.0 on Red Hat Enterprise Linux 8](https://access.redhat.com/documentation/en-us/net_core/3.0/html/getting_started_guide_for_rhel_8/gs_install_dotnet)
+- [Using .NET Core 3.1 on Red Hat Enterprise Linux 8](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/developing_.net_applications_in_rhel_8/index)

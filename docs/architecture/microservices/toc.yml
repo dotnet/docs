@@ -138,7 +138,7 @@
       href: implement-resilient-applications/implement-resilient-entity-framework-core-sql-connections.md
     - name: Exploring custom HTTP call retries with exponential backoff
       href: implement-resilient-applications/explore-custom-http-call-retries-exponential-backoff.md
-    - name: Use HttpClientFactory to implement resilient HTTP requests
+    - name: Use IHttpClientFactory to implement resilient HTTP requests
       href: implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests.md
     - name: Implement HTTP call retries with exponential backoff with Polly
       href: implement-resilient-applications/implement-http-call-retries-exponential-backoff-polly.md

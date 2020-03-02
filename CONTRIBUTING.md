@@ -21,6 +21,8 @@ This repository contains the conceptual documentation for .NET. The .NET documen
 - [.NET Compiler Platform SDK reference](https://github.com/dotnet/roslyn-api-docs)
     Issues and tasks for this repo are tracked in [dotnet/docs/issues](https://github.com/dotnet/docs/issues).
 
+[!INCLUDE [](includes/loc-only-mt-engine-updates.md)]
+
 ## DOs and DON'Ts
 
 The following list shows some guiding rules that you should keep in mind when you're contributing to the .NET documentation:

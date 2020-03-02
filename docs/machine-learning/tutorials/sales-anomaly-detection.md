@@ -25,7 +25,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 * [Visual Studio 2017 version 15.6 or later](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) with the ".NET Core cross-platform development" workload installed.
 
-* [The product-sales.csv dataset](https://raw.githubusercontent.com/dotnet/machinelearning-samples/master/samples/snippets/csharp/getting-started/AnomalyDetection_Sales/SpikeDetection/Data/product-sales.csv)
+* [The product-sales.csv dataset](https://raw.githubusercontent.com/dotnet/machinelearning-samples/master/samples/csharp/getting-started/AnomalyDetection_Sales/SpikeDetection/Data/product-sales.csv)
 
 >[!NOTE]
 > The data format in `product-sales.csv` is based on the dataset “Shampoo Sales Over a Three Year Period” originally sourced from DataMarket and provided by Time Series Data Library (TSDL), created by Rob Hyndman.
@@ -49,7 +49,7 @@ You can find the source code for this tutorial at the [dotnet/samples](https://g
 
 1. Download the dataset and save it to the *Data* folder you previously created:
 
-   * Right click on [*product-sales.csv*](https://raw.githubusercontent.com/dotnet/machinelearning-samples/master/samples/snippets/csharp/getting-started/AnomalyDetection_Sales/SpikeDetection/Data/product-sales.csv) and select "Save Link (or Target) As..."
+   * Right click on [*product-sales.csv*](https://raw.githubusercontent.com/dotnet/machinelearning-samples/master/samples/csharp/getting-started/AnomalyDetection_Sales/SpikeDetection/Data/product-sales.csv) and select "Save Link (or Target) As..."
 
      Make sure you either save the \*.csv file to the *Data* folder, or after you save it elsewhere, move the \*.csv file to the *Data* folder.
 
@@ -379,4 +379,4 @@ In this tutorial, you learned how to:
 
 Check out the Machine Learning samples GitHub repository to explore a Power Consumption Anomaly Detection sample.
 > [!div class="nextstepaction"]
-> [dotnet/machinelearning-samples GitHub repository](https://github.com/dotnet/machinelearning-samples/tree/master/samples/snippets/csharp/getting-started/AnomalyDetection_PowerMeterReadings)
+> [dotnet/machinelearning-samples GitHub repository](https://github.com/dotnet/machinelearning-samples/tree/master/samples/csharp/getting-started/AnomalyDetection_PowerMeterReadings)

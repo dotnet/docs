@@ -192,5 +192,5 @@ Up to this point, the code shown is just performing regular Http requests, but t
   <https://github.com/dotnet/extensions/issues/1345>
 
 >[!div class="step-by-step"]
->[Previous](explore-custom-http-call-retries-exponential-backoff.md)
+>[Previous](implement-resilient-entity-framework-core-sql-connections.md)
 >[Next](implement-http-call-retries-exponential-backoff-polly.md)

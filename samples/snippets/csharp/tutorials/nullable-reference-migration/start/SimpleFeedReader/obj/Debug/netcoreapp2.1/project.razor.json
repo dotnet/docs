@@ -1,0 +1,2906 @@
+{
+  "FilePath": "c:\\Code\\Work\\dotnet\\dotnet-docs\\samples\\csharp\\tutorials\\nullable-reference-migration\\start\\SimpleFeedReader\\SimpleFeedReader.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-2.1",
+    "LanguageVersion": "2.1",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-2.1"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [
+      {
+        "Kind": "ITagHelper",
+        "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper",
+        "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
+        "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting &lt;a&gt; elements.\n            </summary>\n        ",
+        "TagOutputHint": null,
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "a",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-action",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "a",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-controller",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "a",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-area",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "a",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-page",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "a",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-page-handler",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "a",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-fragment",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "a",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-host",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "a",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-protocol",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "a",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-route",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "a",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-all-route-data",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "a",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-route-",
+                "NameComparison": 1,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-action",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Action"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-controller",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Controller"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-area",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Area"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-page",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Page"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-page-handler",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "PageHandler"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-protocol",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Protocol"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-host",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Host"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-fragment",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Fragment"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-route",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Route"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-all-route-data",
+            "TypeName": "System.Collections.Generic.IDictionary<System.String, System.String>",
+            "IsEnum": false,
+            "IndexerNamePrefix": "asp-route-",
+            "IndexerTypeName": "System.String",
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "RouteValues"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper"
+        }
+      },
+      {
+        "Kind": "ITagHelper",
+        "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.CacheTagHelper",
+        "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
+        "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper\" /> implementation targeting &lt;cache&gt; elements.\n            </summary>\n        ",
+        "TagOutputHint": null,
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "cache",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "ITagHelper",
+            "Name": "priority",
+            "TypeName": "Microsoft.Extensions.Caching.Memory.CacheItemPriority?",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Gets or sets the <see cref=\"T:Microsoft.Extensions.Caching.Memory.CacheItemPriority\" /> policy for the cache entry.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Priority"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "vary-by",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Gets or sets a <see cref=\"T:System.String\" /> to vary the cached result by.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "VaryBy"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "vary-by-header",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Gets or sets a comma-delimited set of HTTP request headers to vary the cached result by.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "VaryByHeader"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "vary-by-query",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Gets or sets a comma-delimited set of query parameters to vary the cached result by.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "VaryByQuery"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "vary-by-route",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Gets or sets a comma-delimited set of route data parameters to vary the cached result by.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "VaryByRoute"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "vary-by-cookie",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Gets or sets a comma-delimited set of cookie names to vary the cached result by.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "VaryByCookie"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "vary-by-user",
+            "TypeName": "System.Boolean",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Gets or sets a value that determines if the cached result is to be varied by the Identity for the logged in\n            <see cref=\"P:Microsoft.AspNetCore.Http.HttpContext.User\" />.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "VaryByUser"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "expires-on",
+            "TypeName": "System.DateTimeOffset?",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Gets or sets the exact <see cref=\"T:System.DateTimeOffset\" /> the cache entry should be evicted.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "ExpiresOn"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "expires-after",
+            "TypeName": "System.TimeSpan?",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Gets or sets the duration, from the time the cache entry was added, when it should be evicted.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "ExpiresAfter"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "expires-sliding",
+            "TypeName": "System.TimeSpan?",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Gets or sets the duration from last access that the cache entry should be evicted.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "ExpiresSliding"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "enabled",
+            "TypeName": "System.Boolean",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Gets or sets the value which determines if the tag helper is enabled or not.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Enabled"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "Microsoft.AspNetCore.Mvc.TagHelpers.CacheTagHelper"
+        }
+      },
+      {
+        "Kind": "ITagHelper",
+        "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.DistributedCacheTagHelper",
+        "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
+        "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper\" /> implementation targeting &lt;distributed-cache&gt; elements.\n            </summary>\n        ",
+        "TagOutputHint": null,
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "distributed-cache",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "name",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "ITagHelper",
+            "Name": "name",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Gets or sets a unique name to discriminate cached entries.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Name"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "vary-by",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Gets or sets a <see cref=\"T:System.String\" /> to vary the cached result by.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "VaryBy"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "vary-by-header",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Gets or sets a comma-delimited set of HTTP request headers to vary the cached result by.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "VaryByHeader"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "vary-by-query",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Gets or sets a comma-delimited set of query parameters to vary the cached result by.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "VaryByQuery"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "vary-by-route",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Gets or sets a comma-delimited set of route data parameters to vary the cached result by.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "VaryByRoute"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "vary-by-cookie",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Gets or sets a comma-delimited set of cookie names to vary the cached result by.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "VaryByCookie"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "vary-by-user",
+            "TypeName": "System.Boolean",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Gets or sets a value that determines if the cached result is to be varied by the Identity for the logged in\n            <see cref=\"P:Microsoft.AspNetCore.Http.HttpContext.User\" />.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "VaryByUser"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "expires-on",
+            "TypeName": "System.DateTimeOffset?",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Gets or sets the exact <see cref=\"T:System.DateTimeOffset\" /> the cache entry should be evicted.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "ExpiresOn"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "expires-after",
+            "TypeName": "System.TimeSpan?",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Gets or sets the duration, from the time the cache entry was added, when it should be evicted.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "ExpiresAfter"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "expires-sliding",
+            "TypeName": "System.TimeSpan?",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Gets or sets the duration from last access that the cache entry should be evicted.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "ExpiresSliding"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "enabled",
+            "TypeName": "System.Boolean",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Gets or sets the value which determines if the tag helper is enabled or not.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Enabled"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "Microsoft.AspNetCore.Mvc.TagHelpers.DistributedCacheTagHelper"
+        }
+      },
+      {
+        "Kind": "ITagHelper",
+        "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.EnvironmentTagHelper",
+        "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
+        "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting &lt;environment&gt; elements that conditionally renders\n            content based on the current value of <see cref=\"P:Microsoft.AspNetCore.Hosting.IHostingEnvironment.EnvironmentName\" />.\n            If the environment is not listed in the specified <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.EnvironmentTagHelper.Names\" /> or <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.EnvironmentTagHelper.Include\" />, \n            or if it is in <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.EnvironmentTagHelper.Exclude\" />, the content will not be rendered.\n            </summary>\n        ",
+        "TagOutputHint": null,
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "environment",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "ITagHelper",
+            "Name": "names",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            A comma separated list of environment names in which the content should be rendered.\n            If the current environment is also in the <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.EnvironmentTagHelper.Exclude\" /> list, the content will not be rendered.\n            </summary>\n            <remarks>\n            The specified environment names are compared case insensitively to the current value of\n            <see cref=\"P:Microsoft.AspNetCore.Hosting.IHostingEnvironment.EnvironmentName\" />.\n            </remarks>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Names"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "include",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            A comma separated list of environment names in which the content should be rendered.\n            If the current environment is also in the <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.EnvironmentTagHelper.Exclude\" /> list, the content will not be rendered.\n            </summary>\n            <remarks>\n            The specified environment names are compared case insensitively to the current value of\n            <see cref=\"P:Microsoft.AspNetCore.Hosting.IHostingEnvironment.EnvironmentName\" />.\n            </remarks>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Include"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "exclude",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            A comma separated list of environment names in which the content will not be rendered.\n            </summary>\n            <remarks>\n            The specified environment names are compared case insensitively to the current value of\n            <see cref=\"P:Microsoft.AspNetCore.Hosting.IHostingEnvironment.EnvironmentName\" />.\n            </remarks>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Exclude"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "Microsoft.AspNetCore.Mvc.TagHelpers.EnvironmentTagHelper"
+        }
+      },
+      {
+        "Kind": "ITagHelper",
+        "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.FormActionTagHelper",
+        "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
+        "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting &lt;button&gt; elements and &lt;input&gt; elements with\n            their <c>type</c> attribute set to <c>image</c> or <c>submit</c>.\n            </summary>\n        ",
+        "TagOutputHint": null,
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "button",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-action",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "button",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-controller",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "button",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-area",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "button",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-page",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "button",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-page-handler",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "button",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-fragment",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "button",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-route",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "button",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-all-route-data",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "button",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-route-",
+                "NameComparison": 1,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "input",
+            "ParentTag": null,
+            "TagStructure": 2,
+            "Attributes": [
+              {
+                "Name": "type",
+                "NameComparison": 0,
+                "Value": "image",
+                "ValueComparison": 1,
+                "Diagnostics": [],
+                "Metadata": {}
+              },
+              {
+                "Name": "asp-action",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "input",
+            "ParentTag": null,
+            "TagStructure": 2,
+            "Attributes": [
+              {
+                "Name": "type",
+                "NameComparison": 0,
+                "Value": "image",
+                "ValueComparison": 1,
+                "Diagnostics": [],
+                "Metadata": {}
+              },
+              {
+                "Name": "asp-controller",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "input",
+            "ParentTag": null,
+            "TagStructure": 2,
+            "Attributes": [
+              {
+                "Name": "type",
+                "NameComparison": 0,
+                "Value": "image",
+                "ValueComparison": 1,
+                "Diagnostics": [],
+                "Metadata": {}
+              },
+              {
+                "Name": "asp-area",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "input",
+            "ParentTag": null,
+            "TagStructure": 2,
+            "Attributes": [
+              {
+                "Name": "type",
+                "NameComparison": 0,
+                "Value": "image",
+                "ValueComparison": 1,
+                "Diagnostics": [],
+                "Metadata": {}
+              },
+              {
+                "Name": "asp-page",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "input",
+            "ParentTag": null,
+            "TagStructure": 2,
+            "Attributes": [
+              {
+                "Name": "type",
+                "NameComparison": 0,
+                "Value": "image",
+                "ValueComparison": 1,
+                "Diagnostics": [],
+                "Metadata": {}
+              },
+              {
+                "Name": "asp-page-handler",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "input",
+            "ParentTag": null,
+            "TagStructure": 2,
+            "Attributes": [
+              {
+                "Name": "type",
+                "NameComparison": 0,
+                "Value": "image",
+                "ValueComparison": 1,
+                "Diagnostics": [],
+                "Metadata": {}
+              },
+              {
+                "Name": "asp-fragment",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "input",
+            "ParentTag": null,
+            "TagStructure": 2,
+            "Attributes": [
+              {
+                "Name": "type",
+                "NameComparison": 0,
+                "Value": "image",
+                "ValueComparison": 1,
+                "Diagnostics": [],
+                "Metadata": {}
+              },
+              {
+                "Name": "asp-route",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "input",
+            "ParentTag": null,
+            "TagStructure": 2,
+            "Attributes": [
+              {
+                "Name": "type",
+                "NameComparison": 0,
+                "Value": "image",
+                "ValueComparison": 1,
+                "Diagnostics": [],
+                "Metadata": {}
+              },
+              {
+                "Name": "asp-all-route-data",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "input",
+            "ParentTag": null,
+            "TagStructure": 2,
+            "Attributes": [
+              {
+                "Name": "type",
+                "NameComparison": 0,
+                "Value": "image",
+                "ValueComparison": 1,
+                "Diagnostics": [],
+                "Metadata": {}
+              },
+              {
+                "Name": "asp-route-",
+                "NameComparison": 1,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "input",
+            "ParentTag": null,
+            "TagStructure": 2,
+            "Attributes": [
+              {
+                "Name": "type",
+                "NameComparison": 0,
+                "Value": "submit",
+                "ValueComparison": 1,
+                "Diagnostics": [],
+                "Metadata": {}
+              },
+              {
+                "Name": "asp-action",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "input",
+            "ParentTag": null,
+            "TagStructure": 2,
+            "Attributes": [
+              {
+                "Name": "type",
+                "NameComparison": 0,
+                "Value": "submit",
+                "ValueComparison": 1,
+                "Diagnostics": [],
+                "Metadata": {}
+              },
+              {
+                "Name": "asp-controller",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "input",
+            "ParentTag": null,
+            "TagStructure": 2,
+            "Attributes": [
+              {
+                "Name": "type",
+                "NameComparison": 0,
+                "Value": "submit",
+                "ValueComparison": 1,
+                "Diagnostics": [],
+                "Metadata": {}
+              },
+              {
+                "Name": "asp-area",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "input",
+            "ParentTag": null,
+            "TagStructure": 2,
+            "Attributes": [
+              {
+                "Name": "type",
+                "NameComparison": 0,
+                "Value": "submit",
+                "ValueComparison": 1,
+                "Diagnostics": [],
+                "Metadata": {}
+              },
+              {
+                "Name": "asp-page",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "input",
+            "ParentTag": null,
+            "TagStructure": 2,
+            "Attributes": [
+              {
+                "Name": "type",
+                "NameComparison": 0,
+                "Value": "submit",
+                "ValueComparison": 1,
+                "Diagnostics": [],
+                "Metadata": {}
+              },
+              {
+                "Name": "asp-page-handler",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "input",
+            "ParentTag": null,
+            "TagStructure": 2,
+            "Attributes": [
+              {
+                "Name": "type",
+                "NameComparison": 0,
+                "Value": "submit",
+                "ValueComparison": 1,
+                "Diagnostics": [],
+                "Metadata": {}
+              },
+              {
+                "Name": "asp-fragment",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "input",
+            "ParentTag": null,
+            "TagStructure": 2,
+            "Attributes": [
+              {
+                "Name": "type",
+                "NameComparison": 0,
+                "Value": "submit",
+                "ValueComparison": 1,
+                "Diagnostics": [],
+                "Metadata": {}
+              },
+              {
+                "Name": "asp-route",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "input",
+            "ParentTag": null,
+            "TagStructure": 2,
+            "Attributes": [
+              {
+                "Name": "type",
+                "NameComparison": 0,
+                "Value": "submit",
+                "ValueComparison": 1,
+                "Diagnostics": [],
+                "Metadata": {}
+              },
+              {
+                "Name": "asp-all-route-data",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "input",
+            "ParentTag": null,
+            "TagStructure": 2,
+            "Attributes": [
+              {
+                "Name": "type",
+                "NameComparison": 0,
+                "Value": "submit",
+                "ValueComparison": 1,
+                "Diagnostics": [],
+                "Metadata": {}
+              },
+              {
+                "Name": "asp-route-",
+                "NameComparison": 1,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-action",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            The name of the action method.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Action"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-controller",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            The name of the controller.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Controller"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-area",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            The name of the area.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Area"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-page",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            The name of the page.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Page"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-page-handler",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            The name of the page handler.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "PageHandler"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-fragment",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Gets or sets the URL fragment.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Fragment"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-route",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Name of the route.\n            </summary>\n            <remarks>\n            Must be <c>null</c> if <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.FormActionTagHelper.Action\" /> or <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.FormActionTagHelper.Controller\" /> is non-<c>null</c>.\n            </remarks>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Route"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-all-route-data",
+            "TypeName": "System.Collections.Generic.IDictionary<System.String, System.String>",
+            "IsEnum": false,
+            "IndexerNamePrefix": "asp-route-",
+            "IndexerTypeName": "System.String",
+            "Documentation": "\n            <summary>\n            Additional parameters for the route.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "RouteValues"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "Microsoft.AspNetCore.Mvc.TagHelpers.FormActionTagHelper"
+        }
+      },
+      {
+        "Kind": "ITagHelper",
+        "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper",
+        "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
+        "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting &lt;form&gt; elements.\n            </summary>\n        ",
+        "TagOutputHint": null,
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "form",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-action",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            The name of the action method.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Action"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-controller",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            The name of the controller.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Controller"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-area",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            The name of the area.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Area"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-page",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            The name of the page.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Page"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-page-handler",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            The name of the page handler.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "PageHandler"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-antiforgery",
+            "TypeName": "System.Boolean?",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Whether the antiforgery token should be generated.\n            </summary>\n            <value>Defaults to <c>false</c> if user provides an <c>action</c> attribute\n            or if the <c>method</c> is <see cref=\"F:Microsoft.AspNetCore.Mvc.Rendering.FormMethod.Get\" />; <c>true</c> otherwise.</value>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Antiforgery"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-fragment",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Gets or sets the URL fragment.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Fragment"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-route",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Name of the route.\n            </summary>\n            <remarks>\n            Must be <c>null</c> if <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper.Action\" /> or <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper.Controller\" /> is non-<c>null</c>.\n            </remarks>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Route"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-all-route-data",
+            "TypeName": "System.Collections.Generic.IDictionary<System.String, System.String>",
+            "IsEnum": false,
+            "IndexerNamePrefix": "asp-route-",
+            "IndexerTypeName": "System.String",
+            "Documentation": "\n            <summary>\n            Additional parameters for the route.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "RouteValues"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "Microsoft.AspNetCore.Mvc.TagHelpers.FormTagHelper"
+        }
+      },
+      {
+        "Kind": "ITagHelper",
+        "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ImageTagHelper",
+        "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
+        "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting &lt;img&gt; elements that supports file versioning.\n            </summary>\n            <remarks>\n            The tag helper won't process for cases with just the 'src' attribute.\n            </remarks>\n        ",
+        "TagOutputHint": null,
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "img",
+            "ParentTag": null,
+            "TagStructure": 2,
+            "Attributes": [
+              {
+                "Name": "asp-append-version",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              },
+              {
+                "Name": "src",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "ITagHelper",
+            "Name": "src",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Source of the image.\n            </summary>\n            <remarks>\n            Passed through to the generated HTML in all cases.\n            </remarks>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Src"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-append-version",
+            "TypeName": "System.Boolean",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Value indicating if file version should be appended to the src urls.\n            </summary>\n            <remarks>\n            If <c>true</c> then a query string \"v\" with the encoded content of the file is added.\n            </remarks>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "AppendVersion"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "Microsoft.AspNetCore.Mvc.TagHelpers.ImageTagHelper"
+        }
+      },
+      {
+        "Kind": "ITagHelper",
+        "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper",
+        "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
+        "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting &lt;input&gt; elements with an <c>asp-for</c> attribute.\n            </summary>\n        ",
+        "TagOutputHint": null,
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "input",
+            "ParentTag": null,
+            "TagStructure": 2,
+            "Attributes": [
+              {
+                "Name": "asp-for",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-for",
+            "TypeName": "Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            An expression to be evaluated against the current model.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "For"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-format",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            The format string (see https://msdn.microsoft.com/en-us/library/txafckwd.aspx) used to format the\n            <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.For\" /> result. Sets the generated \"value\" attribute to that formatted string.\n            </summary>\n            <remarks>\n            Not used if the provided (see <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.InputTypeName\" />) or calculated \"type\" attribute value is\n            <c>checkbox</c>, <c>password</c>, or <c>radio</c>. That is, <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Format\" /> is used when calling\n            <see cref=\"M:Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator.GenerateTextBox(Microsoft.AspNetCore.Mvc.Rendering.ViewContext,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExplorer,System.String,System.Object,System.String,System.Object)\" />.\n            </remarks>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Format"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "type",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            The type of the &lt;input&gt; element.\n            </summary>\n            <remarks>\n            Passed through to the generated HTML in all cases. Also used to determine the <see cref=\"T:Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator\" />\n            helper to call and the default <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Format\" /> value. A default <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Format\" /> is not calculated\n            if the provided (see <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.InputTypeName\" />) or calculated \"type\" attribute value is <c>checkbox</c>,\n            <c>hidden</c>, <c>password</c>, or <c>radio</c>.\n            </remarks>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "InputTypeName"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "name",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            The name of the &lt;input&gt; element.\n            </summary>\n            <remarks>\n            Passed through to the generated HTML in all cases. Also used to determine whether <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.For\" /> is\n            valid with an empty <see cref=\"P:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression.Name\" />.\n            </remarks>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Name"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "value",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            The value of the &lt;input&gt; element.\n            </summary>\n            <remarks>\n            Passed through to the generated HTML in all cases. Also used to determine the generated \"checked\" attribute\n            if <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.InputTypeName\" /> is \"radio\". Must not be <c>null</c> in that case.\n            </remarks>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Value"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper"
+        }
+      },
+      {
+        "Kind": "ITagHelper",
+        "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper",
+        "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
+        "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting &lt;label&gt; elements with an <c>asp-for</c> attribute.\n            </summary>\n        ",
+        "TagOutputHint": null,
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "label",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-for",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-for",
+            "TypeName": "Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            An expression to be evaluated against the current model.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "For"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper"
+        }
+      },
+      {
+        "Kind": "ITagHelper",
+        "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper",
+        "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
+        "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting &lt;link&gt; elements that supports fallback href paths.\n            </summary>\n            <remarks>\n            The tag helper won't process for cases with just the 'href' attribute.\n            </remarks>\n        ",
+        "TagOutputHint": null,
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "link",
+            "ParentTag": null,
+            "TagStructure": 2,
+            "Attributes": [
+              {
+                "Name": "asp-href-include",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "link",
+            "ParentTag": null,
+            "TagStructure": 2,
+            "Attributes": [
+              {
+                "Name": "asp-href-exclude",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "link",
+            "ParentTag": null,
+            "TagStructure": 2,
+            "Attributes": [
+              {
+                "Name": "asp-fallback-href",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "link",
+            "ParentTag": null,
+            "TagStructure": 2,
+            "Attributes": [
+              {
+                "Name": "asp-fallback-href-include",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "link",
+            "ParentTag": null,
+            "TagStructure": 2,
+            "Attributes": [
+              {
+                "Name": "asp-fallback-href-exclude",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "link",
+            "ParentTag": null,
+            "TagStructure": 2,
+            "Attributes": [
+              {
+                "Name": "asp-fallback-test-class",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "link",
+            "ParentTag": null,
+            "TagStructure": 2,
+            "Attributes": [
+              {
+                "Name": "asp-fallback-test-property",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "link",
+            "ParentTag": null,
+            "TagStructure": 2,
+            "Attributes": [
+              {
+                "Name": "asp-fallback-test-value",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "link",
+            "ParentTag": null,
+            "TagStructure": 2,
+            "Attributes": [
+              {
+                "Name": "asp-append-version",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "ITagHelper",
+            "Name": "href",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Address of the linked resource.\n            </summary>\n            <remarks>\n            Passed through to the generated HTML in all cases.\n            </remarks>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Href"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-href-include",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            A comma separated list of globbed file patterns of CSS stylesheets to load.\n            The glob patterns are assessed relative to the application's 'webroot' setting.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "HrefInclude"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-href-exclude",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            A comma separated list of globbed file patterns of CSS stylesheets to exclude from loading.\n            The glob patterns are assessed relative to the application's 'webroot' setting.\n            Must be used in conjunction with <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper.HrefInclude\" />.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "HrefExclude"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-fallback-href",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            The URL of a CSS stylesheet to fallback to in the case the primary one fails.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "FallbackHref"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-append-version",
+            "TypeName": "System.Boolean?",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Value indicating if file version should be appended to the href urls.\n            </summary>\n            <remarks>\n            If <c>true</c> then a query string \"v\" with the encoded content of the file is added.\n            </remarks>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "AppendVersion"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-fallback-href-include",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            A comma separated list of globbed file patterns of CSS stylesheets to fallback to in the case the primary\n            one fails.\n            The glob patterns are assessed relative to the application's 'webroot' setting.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "FallbackHrefInclude"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-fallback-href-exclude",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            A comma separated list of globbed file patterns of CSS stylesheets to exclude from the fallback list, in\n            the case the primary one fails.\n            The glob patterns are assessed relative to the application's 'webroot' setting.\n            Must be used in conjunction with <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper.FallbackHrefInclude\" />.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "FallbackHrefExclude"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-fallback-test-class",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            The class name defined in the stylesheet to use for the fallback test.\n            Must be used in conjunction with <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper.FallbackTestProperty\" /> and <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper.FallbackTestValue\" />,\n            and either <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper.FallbackHref\" /> or <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper.FallbackHrefInclude\" />.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "FallbackTestClass"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-fallback-test-property",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            The CSS property name to use for the fallback test.\n            Must be used in conjunction with <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper.FallbackTestClass\" /> and <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper.FallbackTestValue\" />,\n            and either <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper.FallbackHref\" /> or <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper.FallbackHrefInclude\" />.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "FallbackTestProperty"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-fallback-test-value",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            The CSS property value to use for the fallback test.\n            Must be used in conjunction with <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper.FallbackTestClass\" /> and <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper.FallbackTestProperty\" />,\n            and either <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper.FallbackHref\" /> or <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper.FallbackHrefInclude\" />.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "FallbackTestValue"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper"
+        }
+      },
+      {
+        "Kind": "ITagHelper",
+        "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper",
+        "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
+        "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting &lt;option&gt; elements.\n            </summary>\n            <remarks>\n            This <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> works in conjunction with <see cref=\"T:Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper\" />. It reads elements\n            content but does not modify that content. The only modification it makes is to add a <c>selected</c> attribute\n            in some cases.\n            </remarks>\n        ",
+        "TagOutputHint": null,
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "option",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "ITagHelper",
+            "Name": "value",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Specifies a value for the &lt;option&gt; element.\n            </summary>\n            <remarks>\n            Passed through to the generated HTML in all cases.\n            </remarks>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Value"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "Microsoft.AspNetCore.Mvc.TagHelpers.OptionTagHelper"
+        }
+      },
+      {
+        "Kind": "ITagHelper",
+        "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper",
+        "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
+        "Documentation": "\n            <summary>\n            Renders a partial view.\n            </summary>\n        ",
+        "TagOutputHint": null,
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "partial",
+            "ParentTag": null,
+            "TagStructure": 2,
+            "Attributes": [
+              {
+                "Name": "name",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "ITagHelper",
+            "Name": "name",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            The name or path of the partial view that is rendered to the response.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Name"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "for",
+            "TypeName": "Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            An expression to be evaluated against the current model. Cannot be used together with <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.Model\" />.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "For"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "model",
+            "TypeName": "System.Object",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            The model to pass into the partial view. Cannot be used together with <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper.For\" />.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Model"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "view-data",
+            "TypeName": "Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary",
+            "IsEnum": false,
+            "IndexerNamePrefix": "view-data-",
+            "IndexerTypeName": "System.Object",
+            "Documentation": "\n            <summary>\n            A <see cref=\"T:Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary\" /> to pass into the partial view.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "ViewData"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper"
+        }
+      },
+      {
+        "Kind": "ITagHelper",
+        "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ScriptTagHelper",
+        "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
+        "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting &lt;script&gt; elements that supports fallback src paths.\n            </summary>\n            <remarks>\n            The tag helper won't process for cases with just the 'src' attribute.\n            </remarks>\n        ",
+        "TagOutputHint": null,
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "script",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-src-include",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "script",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-src-exclude",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "script",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-fallback-src",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "script",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-fallback-src-include",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "script",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-fallback-src-exclude",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "script",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-fallback-test",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "script",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-append-version",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "ITagHelper",
+            "Name": "src",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Address of the external script to use.\n            </summary>\n            <remarks>\n            Passed through to the generated HTML in all cases.\n            </remarks>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Src"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-src-include",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            A comma separated list of globbed file patterns of JavaScript scripts to load.\n            The glob patterns are assessed relative to the application's 'webroot' setting.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "SrcInclude"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-src-exclude",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            A comma separated list of globbed file patterns of JavaScript scripts to exclude from loading.\n            The glob patterns are assessed relative to the application's 'webroot' setting.\n            Must be used in conjunction with <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.ScriptTagHelper.SrcInclude\" />.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "SrcExclude"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-fallback-src",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            The URL of a Script tag to fallback to in the case the primary one fails.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "FallbackSrc"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-append-version",
+            "TypeName": "System.Boolean?",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            Value indicating if file version should be appended to src urls.\n            </summary>\n            <remarks>\n            A query string \"v\" with the encoded content of the file is added.\n            </remarks>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "AppendVersion"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-fallback-src-include",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            A comma separated list of globbed file patterns of JavaScript scripts to fallback to in the case the\n            primary one fails.\n            The glob patterns are assessed relative to the application's 'webroot' setting.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "FallbackSrcInclude"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-fallback-src-exclude",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            A comma separated list of globbed file patterns of JavaScript scripts to exclude from the fallback list, in\n            the case the primary one fails.\n            The glob patterns are assessed relative to the application's 'webroot' setting.\n            Must be used in conjunction with <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.ScriptTagHelper.FallbackSrcInclude\" />.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "FallbackSrcExclude"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-fallback-test",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            The script method defined in the primary script to use for the fallback test.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "FallbackTestExpression"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "Microsoft.AspNetCore.Mvc.TagHelpers.ScriptTagHelper"
+        }
+      },
+      {
+        "Kind": "ITagHelper",
+        "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper",
+        "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
+        "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting &lt;select&gt; elements with <c>asp-for</c> and/or\n            <c>asp-items</c> attribute(s).\n            </summary>\n        ",
+        "TagOutputHint": null,
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "select",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-for",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          },
+          {
+            "TagName": "select",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-items",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-for",
+            "TypeName": "Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            An expression to be evaluated against the current model.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "For"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-items",
+            "TypeName": "System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Mvc.Rendering.SelectListItem>",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            A collection of <see cref=\"T:Microsoft.AspNetCore.Mvc.Rendering.SelectListItem\" /> objects used to populate the &lt;select&gt; element with\n            &lt;optgroup&gt; and &lt;option&gt; elements.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Items"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "name",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            The name of the &lt;input&gt; element.\n            </summary>\n            <remarks>\n            Passed through to the generated HTML in all cases. Also used to determine whether <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.For\" /> is\n            valid with an empty <see cref=\"P:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression.Name\" />.\n            </remarks>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Name"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper"
+        }
+      },
+      {
+        "Kind": "ITagHelper",
+        "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.TextAreaTagHelper",
+        "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
+        "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting &lt;textarea&gt; elements with an <c>asp-for</c> attribute.\n            </summary>\n        ",
+        "TagOutputHint": null,
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "textarea",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-for",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-for",
+            "TypeName": "Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            An expression to be evaluated against the current model.\n            </summary>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "For"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "name",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            The name of the &lt;input&gt; element.\n            </summary>\n            <remarks>\n            Passed through to the generated HTML in all cases. Also used to determine whether <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.TextAreaTagHelper.For\" /> is\n            valid with an empty <see cref=\"P:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression.Name\" />.\n            </remarks>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "Name"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "Microsoft.AspNetCore.Mvc.TagHelpers.TextAreaTagHelper"
+        }
+      },
+      {
+        "Kind": "ITagHelper",
+        "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ValidationMessageTagHelper",
+        "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
+        "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting any HTML element with an <c>asp-validation-for</c>\n            attribute.\n            </summary>\n        ",
+        "TagOutputHint": null,
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "span",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-validation-for",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-validation-for",
+            "TypeName": "Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "For"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "Microsoft.AspNetCore.Mvc.TagHelpers.ValidationMessageTagHelper"
+        }
+      },
+      {
+        "Kind": "ITagHelper",
+        "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.ValidationSummaryTagHelper",
+        "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
+        "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting any HTML element with an <c>asp-validation-summary</c>\n            attribute.\n            </summary>\n        ",
+        "TagOutputHint": null,
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "div",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-validation-summary",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-validation-summary",
+            "TypeName": "Microsoft.AspNetCore.Mvc.Rendering.ValidationSummary",
+            "IsEnum": true,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": "\n            <summary>\n            If <see cref=\"F:Microsoft.AspNetCore.Mvc.Rendering.ValidationSummary.All\" /> or <see cref=\"F:Microsoft.AspNetCore.Mvc.Rendering.ValidationSummary.ModelOnly\" />, appends a validation\n            summary. Otherwise (<see cref=\"F:Microsoft.AspNetCore.Mvc.Rendering.ValidationSummary.None\" />, the default), this tag helper does nothing.\n            </summary>\n            <exception cref=\"T:System.ArgumentException\">\n            Thrown if setter is called with an undefined <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.ValidationSummaryTagHelper.ValidationSummary\" /> value e.g.\n            <c>(ValidationSummary)23</c>.\n            </exception>\n        ",
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "ValidationSummary"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "Microsoft.AspNetCore.Mvc.TagHelpers.ValidationSummaryTagHelper"
+        }
+      },
+      {
+        "Kind": "ITagHelper",
+        "Name": "Microsoft.AspNetCore.SpaServices.Prerendering.PrerenderTagHelper",
+        "AssemblyName": "Microsoft.AspNetCore.SpaServices",
+        "Documentation": null,
+        "TagOutputHint": null,
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "*",
+            "ParentTag": null,
+            "TagStructure": 0,
+            "Attributes": [
+              {
+                "Name": "asp-prerender-module",
+                "NameComparison": 0,
+                "Value": null,
+                "ValueComparison": 0,
+                "Diagnostics": [],
+                "Metadata": {}
+              }
+            ],
+            "Diagnostics": []
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-prerender-module",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "ModuleName"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-prerender-export",
+            "TypeName": "System.String",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "ExportName"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-prerender-data",
+            "TypeName": "System.Object",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "CustomDataParameter"
+            },
+            "BoundAttributeParameters": []
+          },
+          {
+            "Kind": "ITagHelper",
+            "Name": "asp-prerender-timeout",
+            "TypeName": "System.Int32",
+            "IsEnum": false,
+            "IndexerNamePrefix": null,
+            "IndexerTypeName": null,
+            "Documentation": null,
+            "Diagnostics": [],
+            "Metadata": {
+              "Common.PropertyName": "TimeoutMillisecondsParameter"
+            },
+            "BoundAttributeParameters": []
+          }
+        ],
+        "AllowedChildTags": [],
+        "Diagnostics": [],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "Microsoft.AspNetCore.SpaServices.Prerendering.PrerenderTagHelper"
+        }
+      }
+    ],
+    "CSharpLanguageVersion": 703
+  },
+  "RootNamespace": "SimpleFeedReader",
+  "Documents": [
+    {
+      "FilePath": "c:\\Code\\Work\\dotnet\\dotnet-docs\\samples\\csharp\\tutorials\\nullable-reference-migration\\start\\SimpleFeedReader\\Pages\\Index.cshtml",
+      "TargetPath": "Pages\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Code\\Work\\dotnet\\dotnet-docs\\samples\\csharp\\tutorials\\nullable-reference-migration\\start\\SimpleFeedReader\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Code\\Work\\dotnet\\dotnet-docs\\samples\\csharp\\tutorials\\nullable-reference-migration\\start\\SimpleFeedReader\\Pages\\Error.cshtml",
+      "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Code\\Work\\dotnet\\dotnet-docs\\samples\\csharp\\tutorials\\nullable-reference-migration\\start\\SimpleFeedReader\\Pages\\_Layout.cshtml",
+      "TargetPath": "Pages\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Code\\Work\\dotnet\\dotnet-docs\\samples\\csharp\\tutorials\\nullable-reference-migration\\start\\SimpleFeedReader\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
+  "SerializationFormat": "0.2"
+}

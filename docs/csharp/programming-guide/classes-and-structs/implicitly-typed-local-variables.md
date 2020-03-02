@@ -82,7 +82,7 @@ The `var` keyword can also be useful when the specific type of the variable is t
 
 [!code-csharp[cscsrefQueryKeywords#13](~/samples/snippets/csharp/VS_Snippets_VBCSharp/CsCsrefQueryKeywords/CS/Group.cs#13)]
 
-The use of `var` helps simplify your code, but its use should be restricted to cases where it is required, or when it makes your code easier to read. See the C# Coding Guidelines' section on [Implicitly typed local variables](../inside-a-program/coding-conventions.md#user-content-implicitly-typed-local-variables) for more details on when to use `var` properly.
+The use of `var` helps simplify your code, but its use should be restricted to cases where it is required, or when it makes your code easier to read. For more information about when to use `var` properly, see the [Implicitly typed local variables](../inside-a-program/coding-conventions.md#implicitly-typed-local-variables) section on the C# Coding Guidelines article.
 
 ## See also
 

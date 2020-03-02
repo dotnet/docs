@@ -16,11 +16,11 @@ The ML.NET CLI simplifies this process using automated machine learning (AutoML)
 > [!NOTE]
 > This topic refers to ML.NET **CLI** and ML.NET **AutoML**, which are currently in Preview, and material may be subject to change.
 
-## What is the ML.NET Command-line Interface (CLI)?
+## What is the ML.NET command-line interface (CLI)?
 
-The ML.NET CLI is a dotnet global tool. Once installed you give it a machine learning task and a training dataset, and it generates an ML.NET model, as well as the C# code to run to use the model in your application.
+The ML.NET CLI is a [.NET Core tool](../core/tools/global-tools.md). Once installed, you give it a machine learning task and a training dataset, and it generates an ML.NET model, as well as the C# code to run to use the model in your application.
 
-As shown in the figure below, it is simple to generate a high quality ML.NET model (serialized model .zip file) plus the sample C# code to run/score that model. In addition, the C# code to create/train that model is also generated, so that you can research and iterate on the algorithm and settings used for that generated "best model".
+As shown in the following figure, it is simple to generate a high quality ML.NET model (serialized model .zip file) plus the sample C# code to run/score that model. In addition, the C# code to create/train that model is also generated, so that you can research and iterate on the algorithm and settings used for that generated "best model".
 
 ![image](media/automate-training-with-cli/cli-high-level-process.png "AutoML engine working inside the ML.NET CLI")
 
@@ -59,9 +59,9 @@ The third asset, the training code, shows you what ML.NET API code was used by t
 
 ## Understanding the quality of the model
 
-When you generate a 'best model' with the CLI tool, you see quality metrics (such as accuracy, and R-Squared) as appropriate for the ML task you are targeting.
+When you generate a 'best model' with the CLI tool, you see quality metrics (such as accuracy and R-Squared) as appropriate for the ML task you're targeting.
 
-Here we summarize those metrics grouped by ML task so you can understand the quality of your auto-generated 'best model'.
+Here those metrics are summarized grouped by ML task so you can understand the quality of your auto-generated 'best model'.
 
 ### Metrics for Binary Classification models
 
@@ -69,7 +69,7 @@ The following displays the binary classification ML task metrics list for the to
 
 ![image](media/automate-training-with-cli/cli-binary-classification-metrics.png)
 
-Accuracy is a popular metric for classification problems, however accuracy is not always the best metric to select the best model from as explained in the references below. There are cases where you need to evaluate the quality of your model with additional metrics.
+Accuracy is a popular metric for classification problems, however accuracy isn't always the best metric to select the best model from as explained in the following references. There are cases where you need to evaluate the quality of your model with additional metrics.
 
 To explore and understand the metrics that are output by the CLI, see [Evaluation metrics for binary classification](resources/metrics.md#evaluation-metrics-for-binary-classification).
 
@@ -85,7 +85,7 @@ To explore and understand the metrics that are output by the CLI, see [Evaluatio
 
 A regression model fits the data well if the differences between the observed values and the model's predicted values are small and unbiased. Regression can be evaluated with certain metrics.
 
-You will see a similar list of metrics for the best top five quality models found by the CLI. In this particular case related to a regression ML task:
+You'll see a similar list of metrics for the best top five quality models found by the CLI. In this particular case related to a regression ML task:
 
 ![image](media/automate-training-with-cli/cli-regression-metrics.png)
 

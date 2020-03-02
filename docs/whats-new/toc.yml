@@ -2,8 +2,12 @@
   href: index.yml
   expanded: true
   items:
-    - name: 2020 - January
-      href: dotnet-2020-01.md
+    - name: 2020
+      items:
+      - name: February
+        href: dotnet-2020-02.md
+      - name: January
+        href: dotnet-2020-01.md
     - name: 2019
       items:
       - name: December

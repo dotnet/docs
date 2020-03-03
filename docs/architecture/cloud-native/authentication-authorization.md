@@ -1,7 +1,7 @@
 ---
 title: Authentication and Authorization in cloud-native apps
 description: Architecting Cloud Native .NET Apps for Azure | Authentication and Authorization in Cloud Native Apps
-ms.date: 06/30/2019
+ms.date: 03/02/2020
 ---
 # Authentication and authorization in cloud-native apps
 
@@ -19,7 +19,7 @@ Many organizations still rely on local authentication services like Active Direc
 
 - [Authentication basics](https://docs.microsoft.com/azure/active-directory/develop/authentication-scenarios)
 - [Access tokens and claims](https://docs.microsoft.com/azure/active-directory/develop/access-tokens)
-- [It may be time to ditch your on premises authentication services](https://oxfordcomputergroup.com/resources/o365-security-native-cloud-authentication/)
+- [It may be time to ditch your on premises authentication services](https://oxfordcomputergroup.com/resources/o365-security-native-cloud-authentication)
 
 >[!div class="step-by-step"]
 >[Previous](identity.md)

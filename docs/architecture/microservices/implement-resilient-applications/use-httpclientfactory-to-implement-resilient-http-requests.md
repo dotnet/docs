@@ -1,7 +1,7 @@
 ---
 title: Use IHttpClientFactory to implement resilient HTTP requests
 description: Learn how to use IHttpClientFactory, available since .NET Core 2.1, for creating `HttpClient` instances, making it easy for you to use it in your applications. 
-ms.date: 08/08/2019
+ms.date: 03/03/2020
 ---
 # Use IHttpClientFactory to implement resilient HTTP requests
 
@@ -11,11 +11,11 @@ ms.date: 08/08/2019
 
 The original and well-known <xref:System.Net.Http.HttpClient> class can be easily used, but in some cases, it isn't being properly used by many developers.
 
-As a first issue, while this class implements `IDisposable`, using it with the `using` statement is not the best choice because when you dispose an `HttpClient` object, the underlying socket is not immediately released and this can cause a serious issue named ‘sockets exhaustion’. For more information about this issue, see the [You're using HttpClient wrong and it's destabilizing your software](https://aspnetmonsters.com/2016/08/2016-08-27-httpclientwrong/) blog post.
+As a first issue, while this class implements `IDisposable`, using it with the `using` statement is not the best choice because when you dispose an `HttpClient` object, the underlying socket is not immediately released and this can cause a serious issue named 'sockets exhaustion'. For more information about this issue, see the [You're using HttpClient wrong and it's destabilizing your software](https://aspnetmonsters.com/2016/08/2016-08-27-httpclientwrong/) blog post.
 
 Therefore, `HttpClient` is intended to be instantiated once and reused throughout the life of an application. Instantiating an `HttpClient` class for every request will exhaust the number of sockets available under heavy loads. That issue will result in `SocketException` errors. Possible approaches to solve that problem are based on the creation of the `HttpClient` object as singleton or static, as explained in this [Microsoft article on HttpClient usage](../../../csharp/tutorials/console-webapiclient.md). This can be a good solution for short-lived console apps or similar that are run a few times a day.
 
-But there’s a second issue with `HttpClient` that you can have when you use it as singleton or static object in long-running processes, as could be some sort of server. In this case, a singleton or static `HttpClient` doesn't handle DNS changes, as explained in this [issue](https://github.com/dotnet/corefx/issues/11224) at the dotnet/corefx GitHub repository.
+But there's a second issue with `HttpClient` that you can have when you use it as singleton or static object in long-running processes, as could be some sort of server. In this case, a singleton or static `HttpClient` doesn't handle DNS changes, as explained in this [issue](https://github.com/dotnet/corefx/issues/11224) at the dotnet/corefx GitHub repository.
 
 To address those mentioned issues and make the management of `HttpClient` instances easier, .NET Core 2.1 introduced the <xref:System.Net.Http.IHttpClientFactory> interface that's implemented by the `DefaultHttpClientFactory`, that can't be instantiated directly, that can also be used to implement resilient HTTP calls by integrating Polly with it.
 
@@ -28,7 +28,7 @@ To address those mentioned issues and make the management of `HttpClient` instan
 The current implementation is `DefaultHttpClientFactory`, that also implements <xref:ystem.Net.Http.IHttpMessageHandlerFactory>, with the following features:
 
 - Provides a central location for naming and configuring logical `HttpClient` objects. For example, you may configure a client (Service Agent) that's pre-configured to access a specific microservice.
-- Codify the concept of outgoing middleware via delegating handlers in `HttpClient` and implementing Polly-based middleware to take advantage of Polly’s policies for resiliency.
+- Codify the concept of outgoing middleware via delegating handlers in `HttpClient` and implementing Polly-based middleware to take advantage of Polly's policies for resiliency.
 - `HttpClient` already has the concept of delegating handlers that could be linked together for outgoing HTTP requests. You can register HTTP clients into the factory and you can use a Polly handler to use Polly policies for Retry, CircuitBreakers, and so on.
 - Manage the lifetime of <xref:System.Net.Http.HttpMessageHandler> to avoid the mentioned problems/issues that can occur when managing `HttpClient` lifetimes yourself.
 
@@ -115,7 +115,7 @@ Each Typed Client can have its own configured handler lifetime value. Set the li
 
 ### Implement your Typed Client classes that use the injected and configured HttpClient
 
-As a previous step, you need to have your Typed Client classes defined, such as the classes in the sample code, like ‘BasketService’, ‘CatalogService’, ‘OrderingService’, etc. – A Typed Client is a class that accepts an `HttpClient` object (injected through its constructor) and uses it to call some remote HTTP service. For example:
+As a previous step, you need to have your Typed Client classes defined, such as the classes in the sample code, like 'BasketService', 'CatalogService', 'OrderingService', etc. – A Typed Client is a class that accepts an `HttpClient` object (injected through its constructor) and uses it to call some remote HTTP service. For example:
 
 ```csharp
 public class CatalogService : ICatalogService
@@ -177,7 +177,7 @@ namespace Microsoft.eShopOnContainers.WebMVC.Controllers
 }
 ```
 
-Up to this point, the code shown is just performing regular Http requests, but the ‘magic’ comes in the following sections where, just by adding policies and delegating handlers to your registered Typed Clients, all the HTTP requests to be done by `HttpClient` will behave taking into account resilient policies such as retries with exponential backoff, circuit breakers, or any other custom delegating handler to implement additional security features, like using auth tokens, or any other custom feature.
+Up to this point, the code shown is just performing regular Http requests, but the 'magic' comes in the following sections where, just by adding policies and delegating handlers to your registered Typed Clients, all the HTTP requests to be done by `HttpClient` will behave taking into account resilient policies such as retries with exponential backoff, circuit breakers, or any other custom delegating handler to implement additional security features, like using auth tokens, or any other custom feature.
 
 ## Additional resources
 

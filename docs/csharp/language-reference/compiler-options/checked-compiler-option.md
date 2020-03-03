@@ -35,7 +35,7 @@ The **-checked** option specifies whether an integer arithmetic statement that r
   
 3. Click the **Advanced** button.  
   
-4. Modify the **Check for arithmetic overflow/underflow** property.  
+4. Modify the **Check for arithmetic overflow** property.  
   
  To access this compiler option programmatically, see <xref:VSLangProj80.CSharpProjectConfigurationProperties3.CheckForOverflowUnderflow%2A>.  
   

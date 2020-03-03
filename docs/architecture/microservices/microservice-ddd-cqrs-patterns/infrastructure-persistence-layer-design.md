@@ -104,9 +104,6 @@ Repositories might be useful, but they are not critical for your DDD design, in 
 
 ### Repository pattern
 
-- **The Repository pattern** \
-  <https://deviq.com/repository-pattern/>
-
 - **Edward Hieatt and Rob Mee. Repository pattern.** \
   <https://martinfowler.com/eaaCatalog/repository.html>
 

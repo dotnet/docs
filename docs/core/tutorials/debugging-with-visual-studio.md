@@ -63,7 +63,7 @@ Run your program and try a few debugging features:
 1. Set a *breakpoint* on the line that reads `Console.WriteLine($"{vbCrLf}Hello, {name}, on {currentDate:d} at {currentDate:t}!")` by clicking in the left margin of the code window on that line. You can also set a breakpoint by placing the caret on the desired line and then choosing **Debug** > **Toggle Breakpoint** from the menu bar.
 
    A breakpoint temporarily interrupts the execution of the application *before* the line with the breakpoint is executed.
-   
+
    As the following figure shows, Visual Studio indicates the line on which the breakpoint is set by highlighting it and displaying a red circle in its left margin.
 
    ![Visual Studio Program window with breakpoint set](./media/debugging-with-visual-studio/vb/set-breakpoint-in-editor.png)

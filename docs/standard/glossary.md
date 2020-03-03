@@ -16,11 +16,11 @@ Similar to [JIT](#jit), this compiler also translates [IL](#il) to machine code.
 
 See [CoreRT](#corert) and [.NET Native](#net-native).
 
-## ASP.NET 
+## ASP.NET
 
 The original ASP.NET implementation that ships with the .NET Framework.
 
-Sometimes ASP.NET is an umbrella term that refers to both ASP.NET implementations including ASP.NET Core. The meaning that the term carries in any given instance is determined by context. Refer to ASP.NET 4.x when you want to make it clear that you’re not using ASP.NET to mean both implementations. 
+Sometimes ASP.NET is an umbrella term that refers to both ASP.NET implementations including ASP.NET Core. The meaning that the term carries in any given instance is determined by context. Refer to ASP.NET 4.x when you want to make it clear that you’re not using ASP.NET to mean both implementations.
 
 See [ASP.NET documentation](/aspnet/#pivot=aspnet).
 
@@ -72,7 +72,7 @@ All of the runtime software, development tools, and community resources that are
 
 The term ".NET ecosystem" differs from similar terms such as ".NET stack" in its inclusion of third-party apps and libraries. Here's an example in a sentence:
 
-- "The motivation behind the [.NET Standard](#net-standard) is to establish greater uniformity in the .NET ecosystem." 
+- "The motivation behind the [.NET Standard](#net-standard) is to establish greater uniformity in the .NET ecosystem."
 
 ## framework
 
@@ -90,7 +90,7 @@ In the existing documentation, "framework" sometimes refers to an [implementatio
 
 Garbage collector.
 
-The garbage collector is an implementation of automatic memory management.  The GC frees memory occupied by objects that are no longer in use. 
+The garbage collector is an implementation of automatic memory management.  The GC frees memory occupied by objects that are no longer in use.
 
 See [Garbage Collection](garbage-collection/index.md).
 
@@ -151,7 +151,7 @@ The umbrella term for [.NET Standard](#net-standard) and all [.NET implementatio
 
 See the [.NET Guide](index.md)
 
-## .NET Core 
+## .NET Core
 
 A cross-platform, high-performance, open source implementation of .NET. Includes the Core Common Language Runtime (CoreCLR), the Core AOT Runtime (CoreRT, in development), the Core Base Class Library, and the Core SDK.
 
@@ -211,7 +211,7 @@ An operating system and the hardware it runs on, such as Windows, macOS, Linux, 
 
 Here are examples of usage in sentences:
 
-- ".NET Core is a cross-platform implementation of .NET." 
+- ".NET Core is a cross-platform implementation of .NET."
 - "PCL profiles represent Microsoft platforms, while the .NET Standard is agnostic to platform."
 
 The .NET documentation frequently uses ".NET platform" to mean either an implementation of .NET or the .NET stack including all implementations. Both of these usages tend to get confused with the primary (OS/hardware) meaning, so we plan to eliminate these usages from the documentation.
@@ -233,13 +233,13 @@ The .NET documentation sometimes uses "runtime" to mean an implementation of .NE
 - "Libraries that are intended to run on multiple runtimes should target this framework." (referring to .NET Standard)
 - "The various .NET runtimes implement specific versions of .NET Standard. … Each .NET runtime version advertises the highest .NET Standard version it supports …"
 
-We plan to eliminate this inconsistent usage. 
+We plan to eliminate this inconsistent usage.
 
 ## stack
 
 A set of programming technologies that are used together to build and run applications.
 
-"The .NET stack" refers to the .NET Standard and all .NET implementations. The phrase "a .NET stack" may refer to one implementation of .NET. 
+"The .NET stack" refers to the .NET Standard and all .NET implementations. The phrase "a .NET stack" may refer to one implementation of .NET.
 
 ## target framework
 

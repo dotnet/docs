@@ -19,15 +19,15 @@ In [Create a Hello World application with .NET Core in Visual Studio](with-visua
 1. Right-click on the **HelloWorld** project (not the HelloWorld solution) and select **Publish** from the menu. (You can also select **Publish HelloWorld** from the main **Build** menu.)
 
    ![Visual Studio Publish context menu](media/publishing-with-visual-studio/publish-context-menu.png)
-   
+
 1. On the **Pick a publish target** page, select **Folder**, and then select **Create Profile**.
 
    ![Pick a publish target in Visual Studio](media/publishing-with-visual-studio/pick-publish-target.png)
-   
+
 1. On the **Publish** page, select **Publish**.
 
    ![Visual Studio Publish window](media/publishing-with-visual-studio/publish-page.png)
-   
+
 ## Inspect the files
 
 The publishing process creates a framework-dependent deployment, which is a type of deployment where the published application runs on any platform supported by .NET Core with .NET Core installed on the system. Users can run the published app by double-clicking the executable or issuing the `dotnet HelloWorld.dll` command from a command prompt.
@@ -53,7 +53,7 @@ In the following steps, you'll look at the files created by the publish process.
          This is the [framework-dependent deployment](../deploying/deploy-with-cli.md#framework-dependent-deployment) version of the application. To execute this dynamic link library, enter `dotnet HelloWorld.dll` at a command prompt.
 
       * *HelloWorld.exe*
-      
+
          This is the [framework-dependent executable](../deploying/deploy-with-cli.md#framework-dependent-executable) version of the application. To run it, enter `HelloWorld.exe` at a command prompt.
 
       * *HelloWorld.pdb* (optional for deployment)

@@ -11,8 +11,6 @@ ms.assetid: 7c11abec-1075-474c-9d9b-778e5dab21c3
 
 XAML readers and XAML writers as implemented in .NET XAML Services are based on the design concept of a XAML node stream. The XAML node stream is a conceptualization of a set of XAML nodes. In this conceptualization, a XAML processor walks through the structure of the node relationships in the XAML one at a time. At any time, only one current record or current position exists in an open XAML node stream, and many aspects of the API report only the information available from that position. The current node in a XAML node stream can be described as being an object, a member, or a value. By treating XAML as a XAML node stream, XAML readers can communicate with XAML writers and enable a program to view, interact with, or alter the contents of a XAML node stream during either a load path or a save path operation that involves XAML. XAML reader and writer API design and the XAML node stream concept are similar to previous related reader and writer designs and concepts, such as the XML Document Object Model (DOM) and the <xref:System.Xml.XmlReader> and <xref:System.Xml.XmlWriter> classes. This topic discusses XAML node stream concepts and describes how you can write routines that interact with XAML representations at the XAML node level.
 
-<a name="loading_into_a_xaml_reader"></a>
-
 ## Loading XAML into a XAML Reader
 
 The base <xref:System.Xaml.XamlReader> class does not declare a particular technique for loading the initial XAML into a XAML reader. Instead, a derived class declares and implements the loading technique, including the general characteristics and constraints of its input source for XAML. For example, a <xref:System.Xaml.XamlObjectReader> reads an object graph, starting from the input source of a single object that represents the root or base. The <xref:System.Xaml.XamlObjectReader> then produces a XAML node stream from the object graph.
@@ -24,8 +22,6 @@ The most prominent .NET XAML Services–defined <xref:System.Xaml.XamlReader> su
 If you are more familiar with a DOM, tree metaphor, or query-based approach towards accessing XML-based technologies, a helpful way to conceptualize a XAML node stream is as follows. Imagine that the loaded XAML is a DOM or a tree where every possible node is expanded all the way, and then presented linearly. As you advance through the nodes, you might be traversing "in" or "out" of levels that would be relevant to a DOM, but the XAML node stream does not explicitly keep track because these level concepts are not relevant to a node stream. The node stream has a "current" position, but unless you have stored other parts of the stream yourself as references, every aspect of the node stream other than the current node position is out of view.
 
 The XAML node stream concept has the notable advantage that if you go through the entire node stream, you are assured that you have processed the entire XAML representation; you do not need to worry that a query, a DOM operation, or some other nonlinear approach to processing information has missed some part of the complete XAML representation. For this reason, the XAML node stream representation is ideal both for connecting XAML readers and XAML writers, and for providing a system where you can insert your own process that acts between the read and write phases of a XAML processing operation. In many cases, the ordering of nodes in the XAML node stream is deliberately optimized or reordered by XAML readers versus how the order might appear in the source text, binary, or object graph. This behavior is intended to enforce a XAML processing architecture whereby XAML writers are never in a position where they have to go "back" in the node stream. Ideally, all XAML write operations should be able to act based on schema context plus the current position of the node stream.
-
-<a name="a_basic_reading_node_loop"></a>
 
 ## A Basic Reading Node Loop
 
@@ -80,8 +76,6 @@ This basic example of a load path XAML node loop transparently connects the XAML
 
 There are potentially other ways to work with a XAML representation other than as a XAML node loop. For example, there could exist a XAML reader that can read an indexed node, or in particular accesses nodes directly by `x:Name`, by `x:Uid`, or through other identifiers. .NET XAML Services does not provide a full implementation, but provides a suggested pattern through services and support types. For more information, see <xref:System.Xaml.IXamlIndexingReader> and <xref:System.Xaml.XamlNodeList>.
 
-<a name="working_with_the_current_node"></a>
-
 ## Working with the Current Node
 
 Most scenarios that use a XAML node loop do not only read the nodes. Most scenarios process current nodes and pass each node one at a time to an implementation of <xref:System.Xaml.XamlWriter>.
@@ -93,8 +87,6 @@ In a typical save path scenario, a <xref:System.Xaml.XamlObjectReader> reads the
 ### Frames and Scope
 
 A XAML node loop walks through a XAML node stream in a linear way. The node stream traverses into objects, into members that contain other objects, and so on. It is often useful to keep track of scope within the XAML node stream by implementing a frame and stack concept. This is particularly true if you are actively adjusting the node stream while you are in it. The frame and stack support that you implement as part of your node loop logic could count `StartObject` (or `GetObject`) and `EndObject` scopes as you descend into a XAML node structure if the structure is thought of from a DOM perspective.
-
-<a name="traversing_and_entering_object_nodes"></a>
 
 ## Traversing and Entering Object Nodes
 
@@ -140,8 +132,6 @@ In the XAML node stream, you can rely on the following behavior:
 - An `EndObject` node can be followed by an `EndMember` node. It can also be followed by a `StartObject` node for cases where the objects are peers in a collection's items. Or it can be followed by a `Namespace` node, which applies to an upcoming `StartObject`.
 
   - For the unique case of closing the entire node stream, the `EndObject` of the root is not followed by anything; the reader is now end-of-file, and <xref:System.Xaml.XamlReader.Read%2A> returns `false`.
-
-<a name="value_converters_and_the_xaml_node_stream"></a>
 
 ## Value Converters and the XAML Node Stream
 
@@ -194,8 +184,6 @@ For a positional parameter usage, the XAML node stream contains a XAML language-
 For a named parameter usage, each named parameter is represented as a member node of that name in the node stream. The member values are not necessarily strings, because there could be a nested markup extension usage.
 
 `ProvideValue` from the markup extension is not yet invoked. However, it is invoked if you connect a XAML reader and XAML writer so that `WriteEndObject` is invoked on the markup extension node when you examine it in the node stream. For this reason, you generally need the same XAML schema context available as would be used in order to form the object graph on the load path. Otherwise, `ProvideValue` from any markup extension can throw exceptions here, because it does not have expected services available.
-
-<a name="xaml_and_xml_languagedefined_members_in_the_xaml_node_stream"></a>
 
 ## XAML and XML Language-Defined Members in the XAML Node Stream
 

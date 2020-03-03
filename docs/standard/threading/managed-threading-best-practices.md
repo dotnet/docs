@@ -101,7 +101,7 @@ Use the <xref:System.Environment.ProcessorCount?displayProperty=nameWithType> pr
     ```  
   
     ```csharp  
-    lock(lockObject)   
+    lock(lockObject)
     {  
         myField++;  
     }  

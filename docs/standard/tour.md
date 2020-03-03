@@ -15,13 +15,13 @@ This article offers a guided tour through some of the key features of the .NET. 
 
 ## How to run the code samples
 
-To learn how to set up a development environment to run the code samples, see the [Getting Started](get-started.md) topic. Copy and paste code samples from this page into your environment to execute them. 
+To learn how to set up a development environment to run the code samples, see the [Getting Started](get-started.md) topic. Copy and paste code samples from this page into your environment to execute them.
 
 ## Programming languages
 
 .NET supports multiple programming languages. The .NET implementations implement the [Common Language Infrastructure (CLI)](https://visualstudio.microsoft.com/license-terms/ecma-c-common-language-infrastructure-standards/), which among other things specifies a language-independent runtime and language interoperability. This means that you choose any .NET language to build apps and services on .NET.
 
-Microsoft actively develops and supports three .NET languages: C#, F#, and Visual Basic. 
+Microsoft actively develops and supports three .NET languages: C#, F#, and Visual Basic.
 
 * C# is simple, powerful, type-safe, and object-oriented, while retaining the expressiveness and elegance of C-style languages. Anyone familiar with C and similar languages finds few problems in adapting to C#. Check out the [C# Guide](../csharp/index.yml) to learn more about C#.
 
@@ -35,7 +35,7 @@ Microsoft actively develops and supports three .NET languages: C#, F#, and Visua
 
 The following two lines both allocate memory:
 
-[!code-csharp[MemoryManagement](../../samples/csharp/snippets/tour/MemoryManagement.csx#L1-L2)]
+[!code-csharp[MemoryManagement](../../samples/snippets/csharp/snippets/tour/MemoryManagement.csx#L1-L2)]
 
 There's no analogous keyword to de-allocate memory, as de-allocation happens automatically when the garbage collector reclaims the memory through its scheduled run.
 
@@ -43,7 +43,7 @@ The garbage collector is one of the services that help ensure *memory safety*. A
 
 In the following example, the runtime throws an <xref:System.IndexOutOfRangeException> exception to enforce memory safety:
 
-[!code-csharp[MemoryManagement](../../samples/csharp/snippets/tour/MemoryManagement.csx#L4-L5)]
+[!code-csharp[MemoryManagement](../../samples/snippets/csharp/snippets/tour/MemoryManagement.csx#L4-L5)]
 
 ## Working with unmanaged resources
 
@@ -51,7 +51,7 @@ Some objects reference *unmanaged resources*. Unmanaged resources are resources 
 
 In .NET, objects that reference unmanaged resources implement the <xref:System.IDisposable> interface. When you're done using the object, you call the object's <xref:System.IDisposable.Dispose> method, which is responsible for releasing any unmanaged resources. .NET languages provide a convenient [`using` statement](../csharp/language-reference/keywords/using.md) for such objects, as shown in the following example:
 
-[!code-csharp[UnmanagedResources](../../samples/csharp/snippets/tour/UnmanagedResources.csx#L1-L6)]
+[!code-csharp[UnmanagedResources](../../samples/snippets/csharp/snippets/tour/UnmanagedResources.csx#L1-L6)]
 
 Once the `using` block completes, the .NET runtime automatically calls the `stream` object's <xref:System.IDisposable.Dispose> method, which releases the file handle. The runtime also does this if an exception causes control to leave the block.
 
@@ -67,15 +67,15 @@ An object is an instance of a specific type. The only operations allowed for a g
 
 .NET languages are object-oriented with hierarchies of base and derived classes. The .NET runtime only allows object casts and calls that align with the object hierarchy. Remember that every type defined in any .NET language derives from the base <xref:System.Object> type.
 
-[!code-csharp[TypeSafety](../../samples/csharp/snippets/tour/TypeSafety.csx#L19-L23)]
+[!code-csharp[TypeSafety](../../samples/snippets/csharp/snippets/tour/TypeSafety.csx#L19-L23)]
 
 Type safety is also used to help enforce encapsulation by guaranteeing the fidelity of the accessor keywords. Accessor keywords are artifacts which control access to members of a given type by other code. These are usually used for various kinds of data within a type that are used to manage its behavior.
 
-[!code-csharp[TypeSafety](../../samples/csharp/snippets/tour/TypeSafety.csx#L3-L3)]
+[!code-csharp[TypeSafety](../../samples/snippets/csharp/snippets/tour/TypeSafety.csx#L3-L3)]
 
 C#, Visual Basic, and F# support local *type inference*. Type inference means that the compiler deduces the type of the expression on the left-hand side from the expression on the right-hand side. This doesn't mean that the type safety is broken or avoided. The resulting type does have a strong type with everything that implies. From the previous example, `dog` is rewritten to introduce type inference, and the remainder of the example is unchanged:
 
-[!code-csharp[TypeSafety](../../samples/csharp/snippets/tour/TypeSafety.csx#L28-L34)]
+[!code-csharp[TypeSafety](../../samples/snippets/csharp/snippets/tour/TypeSafety.csx#L28-L34)]
 
 F# has even further type inference capabilities than the method-local type inference found in C# and Visual Basic. To learn more, see [Type Inference](../fsharp/language-reference/type-inference.md).
 
@@ -95,7 +95,7 @@ Generics were added to help programmers implement generic data structures. Befor
 
 The following sample shows a basic program running using an instance of <xref:System.Collections.Generic.List%601> types:
 
-[!code-csharp[GenericsShort](../../samples/csharp/snippets/tour/GenericsShort.csx)]
+[!code-csharp[GenericsShort](../../samples/snippets/csharp/snippets/tour/GenericsShort.csx)]
 
 For more information, see the [Generic types (Generics) overview](generics.md) topic.
 
@@ -127,7 +127,7 @@ Depending on language support, the CLR lets you access native memory and do poin
 
 The following example is a modified version of the `ToString()` method from the `StringBuilder` class. It illustrates how using `unsafe` code can efficiently implement an algorithm by moving around chunks of memory directly:
 
-[!code-csharp[Unsafe](../../samples/csharp/snippets/tour/Unsafe.csx)]
+[!code-csharp[Unsafe](../../samples/snippets/csharp/snippets/tour/Unsafe.csx)]
 
 ## Next steps
 

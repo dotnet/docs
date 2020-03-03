@@ -67,7 +67,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 - **`-g|--global`**
 
-  Specifies that the installation is user wide. Can't be combined with the `--tool-path` option. Omitting both `--global` and `--tool-path` specifies a local tool installation. 
+  Specifies that the installation is user wide. Can't be combined with the `--tool-path` option. Omitting both `--global` and `--tool-path` specifies a local tool installation.
 
 - **`-h|--help`**
 
@@ -75,7 +75,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 - **`tool-path <PATH>`**
 
-  Specifies the location where to install the Global Tool. PATH can be absolute or relative. If PATH doesn't exist, the command tries to create it. Omitting both `--global` and `--tool-path` specifies a local tool installation. 
+  Specifies the location where to install the Global Tool. PATH can be absolute or relative. If PATH doesn't exist, the command tries to create it. Omitting both `--global` and `--tool-path` specifies a local tool installation.
 
 - **`-v|--verbosity <LEVEL>`**
 

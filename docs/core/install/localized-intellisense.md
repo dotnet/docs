@@ -36,7 +36,7 @@ ms.date: 01/23/2020
       | .NET Core       | *Microsoft.NETCore.App.Ref*        |
       | Windows Desktop | *Microsoft.WindowsDesktop.App.Ref* |
       | .NET Standard   | *NETStandard.Library.Ref*          |
-   
+
    1. Navigate to the version you want to install the localized IntelliSense for. For example, *3.1.0*.
    1. Open the *ref* folder.
    1. Open the moniker folder. For example, *netcoreapp3.1*.
@@ -110,7 +110,7 @@ Once you've installed the desired language packs, modify your Visual Studio sett
 
 1. Under the **Environment** node, choose **International Settings**.
 
-1. On the **Language** drop-down, select the desired language. Choose **OK**. 
+1. On the **Language** drop-down, select the desired language. Choose **OK**.
 
 1. A dialog informs you that you have to restart Visual Studio for the changes to take effect. Choose **OK**.
 

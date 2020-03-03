@@ -28,7 +28,7 @@ You can specify a `char` value with:
 - a Unicode escape sequence, which is `\u` followed by the four-symbol hexadecimal representation of a character code.
 - a hexadecimal escape sequence, which is `\x` followed by the hexadecimal representation of a character code.
 
-[!code-csharp-interactive[char literals](~/samples/csharp/language-reference/builtin-types/CharType.cs#Literals)]
+[!code-csharp-interactive[char literals](~/samples/snippets/csharp/language-reference/builtin-types/CharType.cs#Literals)]
 
 As the preceding example shows, you also can cast the value of a character code into the corresponding `char` value.
 

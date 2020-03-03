@@ -74,7 +74,7 @@
             "labels-add": ":book: guide - ASP.NET Core web apps"
           },
           "(?i).*master\/docs\/architecture\/modernize-desktop.*": {
-            "labels-add": ":book: guide - Modernizing Desktop app"
+            "labels-add": ":book: guide - Modernizing Desktop apps"
           },
           "(?i).*master\/docs\/architecture\/modernize-with-azure-containers.*": {
             "labels-add": ":book: guide - Modernizing w/ Windows containers"
@@ -180,6 +180,9 @@
               },
               "(?i).*docs\/architecture\/modern-web-apps-azure.*": {
                 "labels-add": ":book: guide - ASP.NET Core web apps"
+              },
+              "(?i).*master\/docs\/architecture\/modernize-desktop.*": {
+                "labels-add": ":book: guide - Modernizing Desktop apps"
               },
               "(?i).*docs\/architecture\/modernize-with-azure-containers.*": {
                 "labels-add": ":book: guide - Modernizing w/ Windows containers"

@@ -23,8 +23,7 @@ To address the issues mentioned above and to make `HttpClient` instances managea
 
 ## Benefits of using IHttpClientFactory
 
-
-The current implementation is `DefaultHttpClientFactory`, that also implements <xref:ystem.Net.Http.IHttpMessageHandlerFactory>, with the following features:
+The current implementation of <xref:System.Net.Http.IHttpClientFactory>, that also implements <xref:ystem.Net.Http.IHttpMessageHandlerFactory>, offers the following benefits:
 
 - Provides a central location for naming and configuring logical `HttpClient` objects. For example, you may configure a client (Service Agent) that's pre-configured to access a specific microservice.
 - Codify the concept of outgoing middleware via delegating handlers in `HttpClient` and implementing Polly-based middleware to take advantage of Polly's policies for resiliency.
@@ -57,7 +56,7 @@ The following diagram shows how Typed Clients are used with `IHttpClientFactory`
 
 In the above image, a `ClientService` (used by a controller or client code) uses an `HttpClient` created by the registered `IHttpClientFactory`. This factory assigns an `HttpMessageHandler` from a pool to the `HttpClient`. The `HttpClient` can be configured with Polly's policies when registering the `IHttpClientFactory` in the DI container with the extension method <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient*>.
 
-To configure the above structure, install the [`Microsoft.Extensions.Http`](https://www.nuget.org/packages/Microsoft.Extensions.Http/) NuGet package that includes the `AddHttpClient()` extension method for `IServiceCollection`. This extension method registers the `DefaultHttpClientFactory` as a singleton, as the implementation of `IHttpClientFactory`. It defines a transient configuration for the <xref:Microsoft.Extensions.Http.HttpMessageHandlerBuilder>. This message handler (<xref:System.Net.Http.HttpMessageHandler> object), taken from a pool, is used by the `HttpClient` returned from the factory.
+To configure the above structure, add <xref:System.Net.Http.IHttpClientFactory> in your application by installing the `Microsoft.Extensions.Http` NuGet package that includes the <xref:Microsoft.Extensions.DependencyInjection.HttpClientFactoryServiceCollectionExtensions.AddHttpClient*> extension method for <xref:Microsoft.Extensions.DependencyInjection.IServiceCollection>. This extension method registers the internal `DefaultHttpClientFactory` class to be used as a singleton for the interface `IHttpClientFactory`. It defines a transient configuration for the <xref:Microsoft.Extensions.Http.HttpMessageHandlerBuilder>. This message handler (<xref:System.Net.Http.HttpMessageHandler> object), taken from a pool, is used by the `HttpClient` returned from the factory.
 
 In the next code, you can see how `AddHttpClient()` can be used to register Typed Clients (Service Agents) that need to use `HttpClient`.
 

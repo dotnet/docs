@@ -267,3 +267,9 @@ dotnet <command> --help
 ```
 
 If a tool fails to install or run, see [Troubleshoot .NET Core tool usage issues](troubleshoot-usage-issues.md).
+
+## See also
+
+- [Tutorial: Create a .NET Core tool using the .NET Core CLI](global-tools-how-to-create.md)
+- [Tutorial: Install and use a .NET Core global tool using the .NET Core CLI](global-tools-how-to-use.md)
+- [Tutorial: Install and use a .NET Core local tool using the .NET Core CLI](local-tools-how-to-use.md)

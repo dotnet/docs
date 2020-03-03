@@ -15,6 +15,7 @@ ms.date: 02/14/2020
 
 ```dotnetcli
 dotnet tool run <COMMAND NAME>
+
 dotnet tool run <-h|--help>
 ```
 
@@ -43,3 +44,4 @@ The `dotnet tool run` command searches tool manifest files that are in scope for
 ## See also
 
 - [.NET Core tools](global-tools.md)
+- [Tutorial: Install and use a .NET Core local tool using the .NET Core CLI](local-tools-how-to-use.md)

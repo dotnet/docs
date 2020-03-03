@@ -21,7 +21,7 @@ The default value of the `bool` type is `false`.
 
 You can use the `true` and `false` literals to initialize a `bool` variable or to pass a `bool` value:
 
-[!code-csharp-interactive[bool literals](~/samples/csharp/language-reference/builtin-types/BoolType.cs#Literals)]
+[!code-csharp-interactive[bool literals](~/samples/snippets/csharp/language-reference/builtin-types/BoolType.cs#Literals)]
 
 ## Three-valued Boolean logic
 

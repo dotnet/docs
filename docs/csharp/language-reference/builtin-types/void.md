@@ -12,7 +12,7 @@ ms.assetid: 0d2d8a95-fe20-4fbd-bf5d-c1e54bce71d4
 
 You use `void` as the return type of a [method](../../programming-guide/classes-and-structs/methods.md) (or a [local function](../../programming-guide/classes-and-structs/local-functions.md)) to specify that the method doesn't return a value.
 
-[!code-csharp[void method](~/samples/csharp/language-reference/builtin-types/VoidType.cs#VoidExample)]
+[!code-csharp[void method](~/samples/snippets/csharp/language-reference/builtin-types/VoidType.cs#VoidExample)]
 
 You can also use `void` as a referent type to declare a pointer to an unknown type. For more information, see [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md).
 

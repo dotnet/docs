@@ -1,0 +1,17 @@
+﻿<Window x:Class="PixelSnapping.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="PixelSnapping_snips" Height="380" Width="446.5"
+    >
+      <TabControl>
+        <TabItem Header="Seeping Example">
+          <Frame Background="White" Source="seeping.xaml" />
+        </TabItem>
+        <TabItem Header="Line Example">
+          <Frame Background="White" Source="lines.xaml" />
+        </TabItem>
+        <TabItem Header="Image Example">
+          <Frame Background="White" Source="images.xaml" />
+        </TabItem>
+      </TabControl>
+</Window>

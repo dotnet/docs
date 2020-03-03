@@ -1,0 +1,25 @@
+<!--<Snippet2>-->
+
+<?xml version="1.0" encoding="IBM437"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:attributeGroup name="myAttributeGroup">
+        <xs:attribute name="someattribute1" type="xs:integer"/>
+        <xs:attribute name="someattribute2" type="xs:string"/>
+    </xs:attributeGroup>
+
+    <xs:complexType name="myElementType">
+        <xs:attributeGroup ref="myAttributeGroup"/>
+    </xs:complexType>
+
+    <xs:attributeGroup name="myAttributeGroupA">
+        <xs:attribute name="someattribute10" type="xs:integer"/>
+        <xs:attribute name="someattribute11" type="xs:string"/>
+    </xs:attributeGroup>
+
+    <xs:attributeGroup name="myAttributeGroupB">
+        <xs:attribute name="someattribute20" type="xs:date"/>
+        <xs:attributeGroup ref="myAttributeGroupA"/>
+    </xs:attributeGroup>
+</xs:schema>
+<!--</Snippet2>-->
+

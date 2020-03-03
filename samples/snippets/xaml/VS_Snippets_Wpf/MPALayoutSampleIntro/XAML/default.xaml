@@ -1,0 +1,12 @@
+<!-- <Snippet1> -->
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" WindowTitle="Margins, Padding and Alignment Sample">
+  <Border Background="LightBlue" BorderBrush="Black" BorderThickness="2" Padding="15">
+    <StackPanel Background="White" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <TextBlock Margin="5,0,5,0" FontSize="18" HorizontalAlignment="Center">Alignment, Margin and Padding Sample</TextBlock>
+        <Button HorizontalAlignment="Left" Margin="20">Button 1</Button>
+        <Button HorizontalAlignment="Right" Margin="10">Button 2</Button>
+        <Button HorizontalAlignment="Stretch" Margin="0">Button 3</Button>
+    </StackPanel> 
+  </Border>    
+</Page>
+<!-- </Snippet1> -->

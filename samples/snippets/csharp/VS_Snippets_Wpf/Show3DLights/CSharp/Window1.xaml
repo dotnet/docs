@@ -1,0 +1,86 @@
+﻿<Window x:Class="SDKSample.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Show 3D Lights"
+	Name="mainWindow"
+	Height="685" 
+	Loaded="OnWindowLoaded"
+    >
+
+	<Grid Name="Grid1" Background ="Black" Canvas.Top="0" Canvas.Left="0">
+    <Grid.ColumnDefinitions>
+		<ColumnDefinition Width="160"/>
+		<ColumnDefinition Width="*"/>
+    </Grid.ColumnDefinitions>
+
+		<StackPanel Background="OldLace">
+			<StackPanel Background="OldLace" Margin="5, 5, 5, 5">
+				<!-- 3D Models Options-->
+				<Label Height="25" FontSize="14" FontWeight="Bold" Foreground="DarkSlateBlue">3D Models</Label>
+				<Label Height="25" >Select a 3D model</Label>
+				<ComboBox Name="CBObjects" SelectionChanged="OnListBoxChanged" Width="100">
+					<ComboBoxItem>chair</ComboBoxItem>
+					<ComboBoxItem>lamp</ComboBoxItem>
+					<ComboBoxItem>sphere</ComboBoxItem>
+					<ComboBoxItem>nessie</ComboBoxItem>
+					<ComboBoxItem>octopus</ComboBoxItem>
+					<ComboBoxItem>table</ComboBoxItem>
+					<ComboBoxItem>teapot</ComboBoxItem>
+				</ComboBox>
+				<Label Height="20"></Label>
+
+				<!-- Ambient Light Option-->
+				<Label Height="30" FontSize="14" FontWeight="Bold" Foreground="DarkSlateBlue">Ambient Light</Label>
+				<CheckBox Click="OnAmbientLightChange" Name="checkBoxAmbientLight">Show ambient light</CheckBox>
+				<Label Height="20"></Label>
+
+				<!-- Directional Lights Options-->
+				<Label Height="30" FontSize="14" FontWeight="Bold" Foreground="DarkSlateBlue">Directional Lights</Label>
+				<CheckBox IsChecked="true" Click="OnDirectionalLightOneChange" Name="checkBoxDirLightOne">Show directional light 1</CheckBox>
+				<CheckBox IsChecked="true" Click="OnDirectionalLightTwoChange" Name="checkBoxDirLightTwo">Show directional light 2</CheckBox>
+				<Label Height="20"></Label>
+
+				<!-- Point Light Options-->
+				<Label Height="30" FontSize="14" FontWeight="Bold" Foreground="DarkSlateBlue">Point Light</Label>
+				<CheckBox Click="OnPointLight" Name="checkBoxPointLight">Show point light</CheckBox>
+				<Label Name="xyzPointLight" Height="25" Foreground="LightGray">x: -3  y: -7  z: 10</Label>
+				<Label Height="25">Attenuation type:</Label>
+				<RadioButton Name="rbAttenuation1" GroupName="AttenuationOptions" IsChecked="true" Checked="OnAttenuationChecked">Constant</RadioButton>
+				<RadioButton Name="rbAttenuation2" GroupName="AttenuationOptions" Checked="OnAttenuationChecked">Linear</RadioButton>
+				<RadioButton Name="rbAttenuation3" GroupName="AttenuationOptions" Checked="OnAttenuationChecked">Quadratic</RadioButton>
+				<Label Height="25">Attenuation range:</Label>
+				<TextBox Name="textboxRange" SelectionChanged="OnRange" Width="40" HorizontalAlignment="Left">15</TextBox>
+				<Label Height="20"></Label>
+
+				<!-- Change Position Options-->
+				<Label Height="30" FontSize="14" FontWeight="Bold" Foreground="DarkSlateBlue">Change Position</Label>
+				<RadioButton Name="rbPosition1" GroupName="PositionOptions" IsChecked="true" Checked="OnPositionChecked">Camera</RadioButton>
+				<RadioButton Name="rbPosition2" GroupName="PositionOptions" Checked="OnPositionChecked">Point Light</RadioButton>
+				<Label Height="20"></Label>
+				<TextBox
+					Height="140" 
+					TextWrapping="Wrap"
+					AcceptsReturn="True"
+					VerticalScrollBarVisibility="Visible">
+					To move the position along the x, y, or z-axis, use the following keystrokes.
+					LEFT/RIGHT ARROW moves along the x-axis. 
+					UP/DOWN ARROW moves along the y-axis.
+					ADD/SUBTRACT moves along the z-axis.
+          COMMA/PERIOD rotate the camera around the z-axis.
+					</TextBox>
+			</StackPanel>
+		</StackPanel>
+
+		<DockPanel Grid.Column="1" Grid.Row="0" KeyDown="ViewportKeyHandler" MouseLeftButtonDown="ViewportMouseHandler" Focusable="True">
+			<Viewport3D KeyDown="ViewportKeyHandler" MouseLeftButtonDown="ViewportMouseHandler" Focusable="true" Name="myViewport3D" ClipToBounds="true">
+				<Viewport3D.Camera>
+					<PerspectiveCamera
+						Position="0,0,3"
+						LookDirection="0,0,-3"
+						UpDirection="0,1,0"
+						FieldOfView="75" />
+				</Viewport3D.Camera>
+			</Viewport3D>
+		</DockPanel>
+	</Grid>
+</Window>

@@ -1,0 +1,24 @@
+<!--<snippet2>-->
+<%@ Master Language="VB" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<script runat="server">
+
+</script>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="SiteMap" Runat="server">
+                Pick a node:<br /><br />
+                <asp:TreeView ID="TreeView1" Runat="server" ShowExpandCollapse="false" DataSourceID="SiteMapDataSource1" MaxDataBindDepth="1" />
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" Runat="server" StartingNodeUrl="~/Default.aspx" ShowStartingNode="false" />
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="MainBody" Runat="server"/>
+        </div>
+    </form>
+</body>
+</html>
+<!--</snippet2>-->

@@ -1,0 +1,494 @@
+﻿<!--
+<copyright file="RibbonWindow1.xaml">
+     
+     This WPF-based sample source code demonstrates using a WPF-based Microsoft Office 
+     Fluent User Interface (the "Fluent UI") and is provided only as referential material.  
+     License terms to copy, use or distribute the Fluent UI are available separately.  
+    
+     To learn more about our Fluent UI licensing program, 
+     please visit http://msdn.microsoft.com/officeui.
+    
+</copyright>
+-->
+
+<ribbon:RibbonWindow x:Class="WpfRibbonApplication1.RibbonWindow1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ribbon="clr-namespace:Microsoft.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary"
+        xmlns:local="clr-namespace:WpfRibbonApplication1"
+        Title="WPF Text Editor" 
+        x:Name="Window"
+        Width="640" Height="480">
+    <ribbon:RibbonWindow.Resources>
+        <local:MostRecentFiles x:Key="MostRecentFiles" />
+    </ribbon:RibbonWindow.Resources>
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+         <ribbon:Ribbon x:Name="Ribbon">
+            <ribbon:Ribbon.Resources>
+                <ribbon:RibbonGroupSizeDefinitionBaseCollection x:Key="4ControlLSC">
+                    <ribbon:RibbonGroupSizeDefinition>
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Large" IsLabelVisible="True" />
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Large" IsLabelVisible="True" />
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Large" IsLabelVisible="True" />
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Large" IsLabelVisible="True" />
+                    </ribbon:RibbonGroupSizeDefinition>
+                    <ribbon:RibbonGroupSizeDefinition>
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="False" />
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="False" />
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="False" />
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="False" />
+                    </ribbon:RibbonGroupSizeDefinition>
+                    <ribbon:RibbonGroupSizeDefinition IsCollapsed="True" />
+                </ribbon:RibbonGroupSizeDefinitionBaseCollection>
+                <ribbon:RibbonGroupSizeDefinitionBaseCollection x:Key="3ControlSC">
+                    <ribbon:RibbonGroupSizeDefinition>
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="True" />
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="True" />
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="True" />
+                    </ribbon:RibbonGroupSizeDefinition>
+                    <ribbon:RibbonGroupSizeDefinition IsCollapsed="True" />
+                </ribbon:RibbonGroupSizeDefinitionBaseCollection>
+                <ribbon:RibbonGroupSizeDefinitionBaseCollection x:Key="5ControlSC">
+                    <ribbon:RibbonGroupSizeDefinition>
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="False" />
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="False" />
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="False" />
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="False" />
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="False" />
+                    </ribbon:RibbonGroupSizeDefinition>
+                    <ribbon:RibbonGroupSizeDefinition IsCollapsed="True" />
+                </ribbon:RibbonGroupSizeDefinitionBaseCollection>
+            </ribbon:Ribbon.Resources>
+
+                <!-- APPLICATION MENU -->
+            <!-- <snippetAppMenuFull> -->
+            <!-- <snippetAppMenuItems> -->
+            <ribbon:Ribbon.ApplicationMenu>
+                <ribbon:RibbonApplicationMenu SmallImageSource="Images/ApplicationMenuIcon.png" 
+                                              KeyTip="F">
+                    <ribbon:RibbonApplicationMenuItem Header="Open"
+                                                      Command="Open"
+                                                      ImageSource="Images/Open32.png"
+                                                      KeyTip="O" />
+                    <ribbon:RibbonApplicationMenuItem Header="Save"
+                                                      Command="Save"
+                                                      ImageSource="Images/Save32.png"
+                                                      KeyTip="S" />
+                    <ribbon:RibbonApplicationSplitMenuItem Header="Save As"
+                                                           Command="SaveAs"
+                                                           ImageSource="Images/SaveAs32.png" 
+                                                           KeyTip="V" >
+                        <ribbon:RibbonApplicationMenuItem Header="Rich Text document"
+                                                          Command="SaveAs" CommandParameter="rtf"
+                                                          ImageSource="Images/SaveAsRtf32.png" 
+                                                          KeyTip="R" />
+                        <ribbon:RibbonApplicationMenuItem Header="Plain Text document"
+                                                          Command="SaveAs" CommandParameter="txt"
+                                                          ImageSource="Images/SaveAsTxt32.png"
+                                                          KeyTip="P" />
+                        <ribbon:RibbonApplicationMenuItem Header="Other format"
+                                                          Command="SaveAs"
+                                                          ImageSource="Images/SaveAs32.png" 
+                                                          KeyTip="O" />
+                    </ribbon:RibbonApplicationSplitMenuItem>               
+                    <ribbon:RibbonSeparator />
+                    <ribbon:RibbonApplicationSplitMenuItem Header="Print" 
+                                                           ImageSource="Images/Print32.png"
+                                                           KeyTip="R">
+                        <ribbon:RibbonApplicationMenuItem Header="Print"
+                                                          ImageSource="Images/Print32.png"
+                                                          KeyTip="P" />
+                        <ribbon:RibbonApplicationMenuItem Header="Quick Print"
+                                                          ImageSource="Images/QuickPrint32.png"
+                                                          KeyTip="Q" />
+                        <ribbon:RibbonApplicationMenuItem Header="Print Preview"
+                                                          ImageSource="Images/PrintPreview32.png"
+                                                          KeyTip="V" />
+                    </ribbon:RibbonApplicationSplitMenuItem>
+                    <ribbon:RibbonApplicationMenuItem Header="Page Setup"
+                                                      ImageSource="Images/PrintSetup32.png"
+                                                      KeyTip="G" />
+                    <!-- </snippetAppMenuItems> -->
+                    <!-- <snippetAppMenuFooter> -->
+                    <ribbon:RibbonApplicationMenu.FooterPaneContent>
+                        <DockPanel LastChildFill="False">
+                            <ribbon:RibbonButton Command="ApplicationCommands.Close"
+                                                 Label="Exit"
+                                                 ToolTipTitle="Exit" 
+                                                 SmallImageSource="Images\Exit16.png"
+                                                 KeyTip="X"
+                                                 DockPanel.Dock="Right"
+                                                 Margin="2"
+                                                 BorderBrush="#B8114EAF" />
+                        </DockPanel>
+                    </ribbon:RibbonApplicationMenu.FooterPaneContent>
+                    <!-- </snippetAppMenuFooter> -->
+                    <!-- <snippetAppMenuAuxPane> -->
+                    <ribbon:RibbonApplicationMenu.AuxiliaryPaneContent>
+                        <ribbon:RibbonGallery CanUserFilter="False"
+                                              ScrollViewer.VerticalScrollBarVisibility="Auto">
+                            <ribbon:RibbonGalleryCategory Header="Recent Documents" 
+                                                          Background="Transparent" 
+                                                          ItemsSource="{DynamicResource MostRecentFiles}">
+                                <ribbon:RibbonGalleryCategory.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <StackPanel Orientation="Vertical" IsItemsHost="True"/>
+                                    </ItemsPanelTemplate>
+                                </ribbon:RibbonGalleryCategory.ItemsPanel>
+                            </ribbon:RibbonGalleryCategory>
+                        </ribbon:RibbonGallery>
+                    </ribbon:RibbonApplicationMenu.AuxiliaryPaneContent>
+                    <!-- </snippetAppMenuAuxPane> -->
+                </ribbon:RibbonApplicationMenu>
+            </ribbon:Ribbon.ApplicationMenu>
+            <!-- </snippetAppMenuFull> -->
+
+
+            <!-- QUICK ACCESS TOOLBAR -->
+            <!-- <snippetRibbonQATFull> -->
+            <ribbon:Ribbon.QuickAccessToolBar>
+                <ribbon:RibbonQuickAccessToolBar >
+                    <ribbon:RibbonButton Command="Save"   
+                                         SmallImageSource="Images/Save16.png"
+                                         KeyTip="1"/>
+                    <ribbon:RibbonButton Command="Undo"   
+                                         SmallImageSource="Images/ArrowUndo16.png"
+                                         KeyTip="2" />
+                    <ribbon:RibbonButton Command="Redo"  
+                                         SmallImageSource="Images/ArrowRedo16.png"
+                                         KeyTip="3"/>
+                </ribbon:RibbonQuickAccessToolBar>
+            </ribbon:Ribbon.QuickAccessToolBar>
+            <!-- </snippetRibbonQATFull> -->
+
+            <!-- TABS -->
+            <!-- <snippetRibbonTabHome> --> 
+            <ribbon:RibbonTab Header="Home" 
+                              KeyTip="H" 
+                              GroupSizeReductionOrder="Clipboard, Insert, Insert, Paragraph, Clipboard, Editing, Font, Clipboard" >
+                <!-- <snippetRibbonGroupClipboard> -->
+                <ribbon:RibbonGroup Header="Clipboard" Name="Clipboard" SmallImageSource="Images/Paste16.png">
+                    <ribbon:RibbonGroup.GroupSizeDefinitions>
+                        <ribbon:RibbonGroupSizeDefinition>
+                            <ribbon:RibbonControlSizeDefinition ImageSize="Large" IsLabelVisible="True" />
+                            <ribbon:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="True" />
+                            <ribbon:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="True" />
+                        </ribbon:RibbonGroupSizeDefinition>
+                        <ribbon:RibbonGroupSizeDefinition>
+                            <ribbon:RibbonControlSizeDefinition ImageSize="Large" IsLabelVisible="True" />
+                            <ribbon:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="False" />
+                            <ribbon:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="False" />
+                        </ribbon:RibbonGroupSizeDefinition>
+                        <ribbon:RibbonGroupSizeDefinition IsCollapsed="True" />
+                    </ribbon:RibbonGroup.GroupSizeDefinitions>
+                    <ribbon:RibbonButton Label="Paste"
+                                         Command="ApplicationCommands.Paste" 
+                                         SmallImageSource="Images/Paste16.png" 
+                                         LargeImageSource="Images/Paste32.png" 
+                                         ToolTipTitle="Paste (Ctrl+V)" 
+                                         ToolTipDescription="Paste the contents of the Clipboard." />
+                    <ribbon:RibbonButton Label="Cut" 
+                                         Command="ApplicationCommands.Cut" 
+                                         SmallImageSource="Images/Cut16.png" 
+                                         LargeImageSource="Images/Cut32.png" 
+                                         ToolTipTitle="Cut (Ctrl+X)" 
+                                         ToolTipDescription="Cut the selection from the document and put it on the clipboard." />
+                    <ribbon:RibbonButton Label="Copy" 
+                                         Command="ApplicationCommands.Copy" 
+                                         SmallImageSource="Images/Copy16.png" 
+                                         LargeImageSource="Images/Copy32.png"
+                                         ToolTipTitle="Copy (Ctrl+C)" 
+                                         ToolTipDescription="Copy the selection from the document and put it on the clipboard." />
+                </ribbon:RibbonGroup>
+                <!-- </snippetRibbonGroupClipboard> -->
+
+                <!-- <snippetRibbonGroupFont> -->
+                <ribbon:RibbonGroup Header="Font" Name="Font"
+                                    SmallImageSource="Images\FontColor16.png"
+                                    KeyTip="F"
+                                    GroupSizeDefinitions="{StaticResource 5ControlSC}">
+                    <ribbon:RibbonGroup.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel Orientation="Horizontal" MaxWidth="300" />
+                        </ItemsPanelTemplate>
+                    </ribbon:RibbonGroup.ItemsPanel>
+                    <ribbon:RibbonComboBox Margin="-20,8,0,0" SelectionBoxWidth="116"
+                                           IsEditable="True"
+                                           ToolTipDescription="Change the font face."
+                                           ToolTipTitle="Font (Ctrl+Shift+F)"
+                                           QuickAccessToolBarId="FontFamilyComboBox"
+                                           KeyTip="F1" >
+                        <ribbon:RibbonGallery SelectedValue="Arial"
+                                              SelectedValuePath="Content"
+                                              MaxColumnCount="1">
+                            <ribbon:RibbonGalleryCategory HeaderVisibility="Collapsed">
+                                <ribbon:RibbonGalleryItem Content="Arial" FontFamily="Arial" />
+                                <ribbon:RibbonGalleryItem Content="Calibri" FontFamily="Calibri" />
+                                <ribbon:RibbonGalleryItem Content="Comic Sans MS" FontFamily="Comic Sans MS" />
+                                <ribbon:RibbonGalleryItem Content="Times New Roman" FontFamily="Times New Roman" />
+                                <ribbon:RibbonGalleryItem Content="Wide Latin" FontFamily="Wide Latin" />
+                            </ribbon:RibbonGalleryCategory>
+                        </ribbon:RibbonGallery>
+                    </ribbon:RibbonComboBox>
+                    <ribbon:RibbonComboBox SelectionBoxWidth="20"
+                                           ToolTipDescription="Change the font size."
+                                           ToolTipTitle="Font Size (Ctrl+Shift+P)"
+                                           KeyTip="S1" 
+                                           Margin="-20,8,0,0" >
+                        <ribbon:RibbonGallery Command="{Binding FontSizeCommand}" 
+                                              SelectedValue="8"
+                                              SelectedValuePath="Content"
+                                              MaxColumnCount="1">
+                            <ribbon:RibbonGalleryCategory HeaderVisibility="Collapsed">
+                                <ribbon:RibbonGalleryItem>8</ribbon:RibbonGalleryItem>
+                                <ribbon:RibbonGalleryItem>10</ribbon:RibbonGalleryItem>
+                                <ribbon:RibbonGalleryItem>16</ribbon:RibbonGalleryItem>
+                                <ribbon:RibbonGalleryItem>24</ribbon:RibbonGalleryItem>
+                                <ribbon:RibbonGalleryItem>36</ribbon:RibbonGalleryItem>
+                                <ribbon:RibbonGalleryItem>48</ribbon:RibbonGalleryItem>
+                            </ribbon:RibbonGalleryCategory>
+                        </ribbon:RibbonGallery>
+                    </ribbon:RibbonComboBox>
+                    <ribbon:RibbonControlGroup Margin="3,8,0,0">
+                        <ribbon:RibbonButton Label="Increase" 
+                                             Command="EditingCommands.IncreaseFontSize" 
+                                             SmallImageSource="Images/FontGrow16.png" 
+                                             LargeImageSource="Images/FontGrow16.png"
+                                             ToolTipTitle="Grow font (Ctrl+])" 
+                                             ToolTipDescription="Increase font size."
+                                             KeyTip="G" />
+                        <ribbon:RibbonButton Label="Decrease" 
+                                             Command="EditingCommands.DecreaseFontSize" 
+                                             SmallImageSource="Images/FontShrink16.png" 
+                                             LargeImageSource="Images/FontShrink16.png"
+                                             ToolTipTitle="Shrink font (Ctrl+[)" 
+                                             ToolTipDescription="Decrease font size."
+                                             KeyTip="K" />
+                    </ribbon:RibbonControlGroup>
+
+                    <ribbon:RibbonControlGroup Margin="0,6,0,0">
+                        <ribbon:RibbonToggleButton Label="Bold" 
+                                                   Command="EditingCommands.ToggleBold" 
+                                                   SmallImageSource="Images/Bold16.png" 
+                                                   ToolTipTitle="Bold (Ctrl+B)" 
+                                                   ToolTipDescription="Change to a heavier font."
+                                                   KeyTip="B" />
+                        <ribbon:RibbonToggleButton Label="Italic" 
+                                                   Command="EditingCommands.ToggleItalic" 
+                                                   SmallImageSource="Images/Italic16.png" 
+                                                   ToolTipTitle="Italic (Ctrl+I)" 
+                                                   ToolTipDescription="Change to an italic font."
+                                                   KeyTip="I" />
+                        <ribbon:RibbonToggleButton Label="Underline" 
+                                                   Command="EditingCommands.ToggleUnderline" 
+                                                   SmallImageSource="Images/Underline16.png" 
+                                                   ToolTipTitle="Underline (Ctrl+U)" 
+                                                   ToolTipDescription="Draw a line below the text."
+                                                   KeyTip="U" />
+                        <ribbon:RibbonToggleButton Label="Strikethrough" 
+                                                   Command="{Binding ToggleStrikethrough}"                                   
+                                                   SmallImageSource="Images\Strikethrough16.png"
+                                                   ToolTipTitle="Strikethrough" 
+                                                   ToolTipDescription="Draw a line through the text."
+                                                   KeyTip="X" />
+                        <ribbon:RibbonToggleButton Label="Subscript" 
+                                                   Command="EditingCommands.ToggleSubscript"
+                                                   SmallImageSource="Images\Subscript16.png"
+                                                   ToolTipTitle="Subscript" 
+                                                   ToolTipDescription="Draw a line smaller and lower than regular text."
+                                                   KeyTip="A1" />
+                        <ribbon:RibbonToggleButton Label="Superscript" 
+                                                   Command="EditingCommands.ToggleSuperscript"
+                                                   SmallImageSource="Images\Superscript16.png"
+                                                   ToolTipTitle="Superscript" 
+                                                   ToolTipDescription="Draw a line smaller and higher than regular text."
+                                                   KeyTip="Y" />
+                    </ribbon:RibbonControlGroup>
+                    <ribbon:RibbonControlGroup Margin="3,6,0,0">
+                        <!-- <snippetRibbonSplitButton> -->
+                        <ribbon:RibbonSplitButton SmallImageSource="Images\Highlight16.png"
+                                                  KeyTip="H" >
+                            <ribbon:RibbonMenuItem Header="Yellow" />
+                            <ribbon:RibbonMenuItem Header="Green" />
+                            <ribbon:RibbonMenuItem Header="Blue" />
+                            <ribbon:RibbonMenuItem Header="Red" />
+                        </ribbon:RibbonSplitButton>
+                        <ribbon:RibbonSplitButton SmallImageSource="Images\FontColor16.png"
+                                                  KeyTip="C2" >
+                            <ribbon:RibbonGallery>
+                                <ribbon:RibbonGalleryCategory>
+                                    <ribbon:RibbonGalleryItem >
+                                        <Rectangle Fill="Yellow" Height="15" Width="15" />
+                                    </ribbon:RibbonGalleryItem>
+                                    <ribbon:RibbonGalleryItem >
+                                        <Rectangle Fill="Green" Height="15" Width="15" />
+                                    </ribbon:RibbonGalleryItem>
+                                    <ribbon:RibbonGalleryItem >
+                                        <Rectangle Fill="Blue" Height="15" Width="15" />
+                                    </ribbon:RibbonGalleryItem>
+                                    <ribbon:RibbonGalleryItem >
+                                        <Rectangle Fill="Red" Height="15" Width="15" />
+                                    </ribbon:RibbonGalleryItem>
+                                </ribbon:RibbonGalleryCategory>
+                            </ribbon:RibbonGallery>
+                        </ribbon:RibbonSplitButton>
+                        <!-- <snippetRibbonSplitButton> -->
+                    </ribbon:RibbonControlGroup>
+                </ribbon:RibbonGroup>
+                <!-- </snippetRibbonGroupFont> -->
+                
+                <!-- <snippetRibbonGroupParagraph> -->
+                <ribbon:RibbonGroup Header="Paragraph" 
+                                    Name="Paragraph" 
+                                    SmallImageSource="Images/AlignLeft16.png"
+                                    GroupSizeDefinitions="{DynamicResource 5ControlSC}">
+                    <ribbon:RibbonGroup.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel MaxWidth="150"  />
+                        </ItemsPanelTemplate>
+                    </ribbon:RibbonGroup.ItemsPanel>
+                    <ribbon:RibbonControlGroup Margin="0,8,0,0">
+                        <ribbon:RibbonButton Label="Outdent"
+                                             Command="EditingCommands.DecreaseIndentation" 
+                                             SmallImageSource="Images/Outdent16.png" 
+                                             ToolTipTitle="Decrease indent (Ctrl+Shift+T)" 
+                                             ToolTipDescription="Decrease the indent level of the paragraph."
+                                             KeyTip="AO" />
+                        <ribbon:RibbonButton Label="Indent"
+                                             Command="EditingCommands.IncreaseIndentation" 
+                                             SmallImageSource="Images/Indent16.png" 
+                                             ToolTipTitle="Increase indent (Ctrl+T)" 
+                                             ToolTipDescription="Increase the indent level of the paragraph."
+                                             KeyTip="AI" />
+                    </ribbon:RibbonControlGroup>
+                    <ribbon:RibbonControlGroup Margin="3,8,0,0">
+                        <ribbon:RibbonSplitButton Label="Lists"
+                                                  Command="EditingCommands.ToggleBullets" 
+                                                  SmallImageSource="Images\ListBullets16.png" 
+                                                  LargeImageSource="Images\ListBullets32.png" 
+                                                  KeyTip="L" 
+                                                  IsCheckable="True">
+                            <ribbon:RibbonMenuItem Header="Bulleted List" 
+                                                   Command="EditingCommands.ToggleBullets" 
+                                                   IsCheckable="True">
+                            </ribbon:RibbonMenuItem>
+                            <ribbon:RibbonMenuItem Header="Numbered List" 
+                                                   Command="EditingCommands.ToggleNumbering" 
+                                                   IsCheckable="True">
+                            </ribbon:RibbonMenuItem>
+                        </ribbon:RibbonSplitButton>
+                    </ribbon:RibbonControlGroup>
+
+                    <ribbon:RibbonControlGroup Margin="3,8,0,0">
+                        <ribbon:RibbonMenuButton Label="Lists"
+                                                 SmallImageSource="Images\LineSpacing16.png"
+                                                 KeyTip="L" >
+                            <ribbon:RibbonMenuItem Header="1.0" 
+                                                   Command="{Binding LineSpacingCommand}"
+                                                   CommandParameter="1.0"/>
+                            <ribbon:RibbonMenuItem Header="1.15" 
+                                                   Command="{Binding LineSpacingCommand}"
+                                                   CommandParameter="1.15" />
+                            <ribbon:RibbonMenuItem Header="1.5" 
+                                                   Command="{Binding LineSpacingCommand}"
+                                                   CommandParameter="1.5" />
+                            <ribbon:RibbonMenuItem Header="2.0" 
+                                                   Command="{Binding LineSpacingCommand}"
+                                                   CommandParameter="2.0" />
+                        </ribbon:RibbonMenuButton>
+                    </ribbon:RibbonControlGroup>
+
+                    <ribbon:RibbonControlGroup Margin="0,6,0,0">
+                        <ribbon:RibbonButton Label="Left"
+                                             Command="EditingCommands.AlignLeft" 
+                                             SmallImageSource="Images/AlignLeft16.png" 
+                                             ToolTipTitle="Align text left (Ctrl+L)" 
+                                             ToolTipDescription="Align text to the left."
+                                             KeyTip="AL" />
+                        <ribbon:RibbonButton Label="Center"
+                                             Command="EditingCommands.AlignCenter" 
+                                             SmallImageSource="Images/AlignCenter16.png" 
+                                             ToolTipTitle="Align text center (Ctrl+E)" 
+                                             ToolTipDescription="Center text."
+                                             KeyTip="AC" />
+                        <ribbon:RibbonButton Label="Right"
+                                             Command="EditingCommands.AlignRight" 
+                                             SmallImageSource="Images/AlignRight16.png" 
+                                             ToolTipTitle="Align text right (Ctrl+R)" 
+                                             ToolTipDescription="Align text to the right."
+                                             KeyTip="AR" />
+                        <ribbon:RibbonButton Label="Right"
+                                             Command="EditingCommands.AlignJustify" 
+                                             SmallImageSource="Images/AlignJustify16.png" 
+                                             ToolTipTitle="Justify (Ctrl+J)" 
+                                             ToolTipDescription="Align text to both left and right margins, adding space between words as necessary."
+                                             KeyTip="AJ" />
+                    </ribbon:RibbonControlGroup>
+                </ribbon:RibbonGroup>
+                <!-- </snippetRibbonGroupParagraph> -->
+
+                <ribbon:RibbonGroup Header="Insert" 
+                                    Name="Insert" 
+                                    SmallImageSource="Images/InsertPicture16.png"
+                                    GroupSizeDefinitions="{DynamicResource 4ControlLSC}">
+                    <ribbon:RibbonMenuButton Label="Picture"
+                                             SmallImageSource="Images/InsertPicture16.png" 
+                                             LargeImageSource="Images/InsertPicture32.png"
+                                             ToolTipTitle="Insert Picture" 
+                                             ToolTipDescription="Insert a picture into the document."
+                                             KeyTip="PI" >
+                        <ribbon:RibbonMenuItem Header="Picture"
+                                               ImageSource="Images/InsertPicture16.png"/>
+                        <ribbon:RibbonMenuItem Header="Change picture" />
+                        <ribbon:RibbonMenuItem Header="Resize picture" />
+                    </ribbon:RibbonMenuButton>
+                    <ribbon:RibbonMenuButton Label="Shape" 
+                                             SmallImageSource="Images/InsertShape16.png" 
+                                             LargeImageSource="Images/InsertShape32.png"
+                                             ToolTipTitle="Insert Shape" 
+                                             ToolTipDescription="Insert a shape into the document."
+                                             KeyTip="S" />
+                    <ribbon:RibbonMenuButton Label="Date" 
+                                             SmallImageSource="Images/Calendar16.png"
+                                             LargeImageSource="Images/Calendar32.png"
+                                             ToolTipTitle="Insert Date/Time" 
+                                             ToolTipDescription="Insert a date and time into the document."
+                                             KeyTip="D" />
+                    <ribbon:RibbonMenuButton Label="Link" 
+                                             SmallImageSource="Images/Hyperlink16.png" 
+                                             LargeImageSource="Images/Hyperlink32.png"
+                                             ToolTipTitle="Insert Hyperlink" 
+                                             ToolTipDescription="Insert a hyperlink into the document."
+                                             KeyTip="L" />
+                </ribbon:RibbonGroup>
+
+                <ribbon:RibbonGroup Header="Editing" 
+                                    Name="Editing" 
+                                    SmallImageSource="Images/Find16.png"
+                                    GroupSizeDefinitions="{DynamicResource 3ControlSC}">
+                    <ribbon:RibbonButton Label="Find"
+                                         SmallImageSource="Images/Find16.png"
+                                         ToolTip="Find (Ctrl+F)" 
+                                         ToolTipDescription="Find text in the document."
+                                         KeyTip="FD" />
+                    <ribbon:RibbonButton Label="Replace"
+                                         SmallImageSource="Images/Replace16.png"
+                                         ToolTip="Replace (Ctrl+H)" 
+                                         ToolTipDescription="Replace text in the document."
+                                         KeyTip="R" />
+                    <ribbon:RibbonButton Label="Select all"
+                                         SmallImageSource="Images/SelectAll16.png"
+                                         ToolTip="Select all (Ctrl+A)" 
+                                         ToolTipDescription="Select all text in the document."
+                                         KeyTip="SA" />
+                </ribbon:RibbonGroup>
+            </ribbon:RibbonTab>
+            <!-- <snippetRibbonTabHome> -->
+        </ribbon:Ribbon> 
+    </Grid>
+</ribbon:RibbonWindow>

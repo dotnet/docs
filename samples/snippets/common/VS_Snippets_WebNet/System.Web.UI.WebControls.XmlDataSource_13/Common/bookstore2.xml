@@ -1,0 +1,32 @@
+<bookstore>
+  <genre name="fiction">
+    <book ISBN="10-861003-324">
+      <author>
+      	<firstname>test</firstname>
+      	<lastname>test2</lastname>
+      </author>
+      <title>The Handmaid's Tale</title>
+      <price>12.95</price>
+      <chapters>
+        <chapter num="1" name="Introduction" />           
+        <chapter num="2" name="Body" />          
+        <chapter num="3" name="Conclusion" />
+      </chapters>
+    </book>
+  </genre>
+  <genre name="nonfiction">
+    <book genre="nonfiction" ISBN="1-861001-57-5">
+      <author>
+      	<firstname>test3</firstname>
+      	<lastname>test4</lastname>
+      </author>    
+      <title>Pride And Prejudice</title>
+      <price>24.95</price>
+      <chapters>
+        <chapter num="1" name="Introduction" /> 
+        <chapter num="2" name="Body" />
+        <chapter num="3" name="Conclusion" />
+      </chapters>
+    </book>
+  </genre>
+</bookstore>

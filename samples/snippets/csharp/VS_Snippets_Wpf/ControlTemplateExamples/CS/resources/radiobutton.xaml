@@ -1,0 +1,146 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+  <ResourceDictionary.MergedDictionaries>
+    <ResourceDictionary Source="Shared.xaml" />
+  </ResourceDictionary.MergedDictionaries>
+
+  <!-- Focus Visual -->
+
+<!--<SnippetRadioButtonFocusVisual>-->
+  <Style x:Key="RadioButtonFocusVisual">
+    <Setter Property="Control.Template">
+      <Setter.Value>
+        <ControlTemplate>
+          <Border>
+            <Rectangle Margin="15,0,0,0"
+                       StrokeThickness="1"
+                       Stroke="#60000000"
+                       StrokeDashArray="1 2" />
+          </Border>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+<!--</SnippetRadioButtonFocusVisual>-->
+
+  <!--<SnippetRadioButton>-->
+  <Style x:Key="{x:Type RadioButton}"
+         TargetType="{x:Type RadioButton}">
+    <Setter Property="SnapsToDevicePixels"
+            Value="true" />
+    <Setter Property="OverridesDefaultStyle"
+            Value="true" />
+    <Setter Property="FocusVisualStyle"
+            Value="{DynamicResource RadioButtonFocusVisual}" />
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type RadioButton}">
+          <BulletDecorator Background="Transparent">
+            <BulletDecorator.Bullet>
+              <Grid Width="13"
+                    Height="13">
+                <Ellipse x:Name="Border"
+                         StrokeThickness="1">
+                  <Ellipse.Stroke>
+                    <LinearGradientBrush EndPoint="0.5,1"
+                                         StartPoint="0.5,0">
+                      <GradientStop Color="{DynamicResource BorderLightColor}"
+                                    Offset="0" />
+                      <GradientStop Color="{DynamicResource BorderDarkColor}"
+                                    Offset="1" />
+                    </LinearGradientBrush>
+                  </Ellipse.Stroke>
+                  <Ellipse.Fill>
+                    <LinearGradientBrush StartPoint="0,0"
+                                         EndPoint="0,1">
+                      <LinearGradientBrush.GradientStops>
+                        <GradientStopCollection>
+                          <GradientStop Color="{DynamicResource ControlLightColor}" />
+                          <GradientStop Color="{DynamicResource ControlMediumColor}"
+                                        Offset="1.0" />
+                        </GradientStopCollection>
+                      </LinearGradientBrush.GradientStops>
+                    </LinearGradientBrush>
+                  </Ellipse.Fill>
+                </Ellipse>
+                <Ellipse x:Name="CheckMark"
+                         Margin="4"
+                         Visibility="Collapsed">
+                  <Ellipse.Fill>
+                    <SolidColorBrush Color="{DynamicResource GlyphColor}" />
+                  </Ellipse.Fill>
+                </Ellipse>
+              </Grid>
+            </BulletDecorator.Bullet>
+            <VisualStateManager.VisualStateGroups>
+              <VisualStateGroup x:Name="CommonStates">
+                <VisualState x:Name="Normal" />
+                <VisualState x:Name="MouseOver">
+                  <Storyboard>
+                    <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
+                                                  Storyboard.TargetProperty="(Shape.Fill).
+                      (GradientBrush.GradientStops)[1].(GradientStop.Color)">
+                      <EasingColorKeyFrame KeyTime="0"
+                                           Value="{StaticResource ControlMouseOverColor}" />
+                    </ColorAnimationUsingKeyFrames>
+                  </Storyboard>
+                </VisualState>
+                <VisualState x:Name="Pressed">
+                  <Storyboard>
+                    <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
+                                                  Storyboard.TargetProperty="(Shape.Fill).
+                      (GradientBrush.GradientStops)[1].(GradientStop.Color)">
+                      <EasingColorKeyFrame KeyTime="0"
+                                           Value="{StaticResource ControlPressedColor}" />
+                    </ColorAnimationUsingKeyFrames>
+                  </Storyboard>
+                </VisualState>
+                <VisualState x:Name="Disabled">
+                  <Storyboard>
+                    <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
+                                                  Storyboard.TargetProperty="(Shape.Fill).
+                      (GradientBrush.GradientStops)[1].(GradientStop.Color)">
+                      <EasingColorKeyFrame KeyTime="0"
+                                           Value="{StaticResource ControlLightColor}" />
+                    </ColorAnimationUsingKeyFrames>
+                    <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
+                                                  Storyboard.TargetProperty="(Shape.Stroke).
+                      (GradientBrush.GradientStops)[1].(GradientStop.Color)">
+                      <EasingColorKeyFrame KeyTime="0"
+                                           Value="#40000000" />
+                    </ColorAnimationUsingKeyFrames>
+                    <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border"
+                                                  Storyboard.TargetProperty="(Shape.Stroke).
+                      (GradientBrush.GradientStops)[0].(GradientStop.Color)">
+                      <EasingColorKeyFrame KeyTime="0"
+                                           Value="#40000000" />
+                    </ColorAnimationUsingKeyFrames>
+                  </Storyboard>
+                </VisualState>
+              </VisualStateGroup>
+              <VisualStateGroup x:Name="CheckStates">
+                <VisualState x:Name="Checked">
+                  <Storyboard>
+                    <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)"
+                                                   Storyboard.TargetName="CheckMark">
+                      <DiscreteObjectKeyFrame KeyTime="0"
+                                              Value="{x:Static Visibility.Visible}" />
+                    </ObjectAnimationUsingKeyFrames>
+                  </Storyboard>
+                </VisualState>
+                <VisualState x:Name="Unchecked" />
+                <VisualState x:Name="Indeterminate" />
+              </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+            <ContentPresenter Margin="4,0,0,0"
+                              VerticalAlignment="Center"
+                              HorizontalAlignment="Left"
+                              RecognizesAccessKey="True" />
+          </BulletDecorator>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+  <!--</SnippetRadioButton>-->
+</ResourceDictionary>

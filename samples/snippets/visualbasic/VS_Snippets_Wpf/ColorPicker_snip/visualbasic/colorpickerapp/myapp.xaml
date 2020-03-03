@@ -1,0 +1,180 @@
+<Application x:Class="ColorPickerApp.MyApp"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Startup="AppStartup"
+    xmlns:local="clr-namespace:ColorPickerLib;assembly=ColorPickerLib"
+    xmlns:app="clr-namespace:ColorPickerApp">
+
+	<Application.Resources>
+
+		<local:ColorBrushConverter x:Key="ColorBrushConverter"/>
+		<local:ByteDoubleConverter x:Key="ByteDoubleConverter"/>
+
+		<!--
+		This Converter is defined in MyApp.xaml.vb 
+		Notice the ?Mapping? at the top used to import the ColorPickerApp ClrNamespace and the associated xmlns:app.
+		-->
+		<app:ColorGradientConverter x:Key="ColorGradientConverter"/>
+
+
+		<Style x:Key="Slider_RepeatButton" TargetType="{x:Type RepeatButton}">
+			<Setter Property="OverridesDefaultStyle" Value="true" />
+			<Setter Property="IsTabStop" Value="false" />
+			<Setter Property="Focusable" Value="false" />
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type RepeatButton}">
+						<Border Background="Transparent" />
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+
+
+		<Style x:Key="Slider_Thumb" TargetType="{x:Type Thumb}">
+			<Setter Property="OverridesDefaultStyle" Value="true" />
+			<Setter Property="Width" Value="14" />
+			<Setter Property="Height" Value="14" />
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type Thumb}">
+						<Grid Width="14" Height="14">
+							<Ellipse Fill="{TemplateBinding Foreground}" />
+							<Ellipse Stroke="{TemplateBinding BorderBrush}" StrokeThickness="1" x:Name="ThumbCover" >
+								<Ellipse.Fill>
+									<LinearGradientBrush  EndPoint="0,1" StartPoint="0,0">
+										<LinearGradientBrush.GradientStops>
+											<GradientStop Color="#CCFFFFFF" Offset="0" />
+											<GradientStop Color="#00000000" Offset=".5" />
+											<GradientStop Color="#66000000" Offset="1" />
+										</LinearGradientBrush.GradientStops>
+									</LinearGradientBrush>
+								</Ellipse.Fill>
+							</Ellipse>
+						</Grid>
+						<ControlTemplate.Triggers>
+							<Trigger Property="IsDragging" Value="true">
+								<Setter TargetName="ThumbCover" Property="Fill">
+									<Setter.Value>
+										<LinearGradientBrush  EndPoint="0,1" StartPoint="0,0">
+											<LinearGradientBrush.GradientStops>
+												<GradientStop Color="#CCFFFFFF" Offset="1" />
+												<GradientStop Color="#00000000" Offset=".5" />
+												<GradientStop Color="#66000000" Offset="0" />
+											</LinearGradientBrush.GradientStops>
+										</LinearGradientBrush>
+									</Setter.Value>
+								</Setter>
+							</Trigger>
+						</ControlTemplate.Triggers>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+		</Style>
+
+    <Style x:Key="Slider_CustomStyle" TargetType="{x:Type Slider}">
+      <Setter Property="OverridesDefaultStyle" Value="true" />
+      <Setter Property="Height" Value="14" />
+      <Setter Property="Width" Value="80"/>
+      <Setter Property="Margin" Value="1"/>
+      <Setter Property="Orientation" Value="Horizontal"/>
+      <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+      <Setter Property="Minimum" Value="0"/>
+      <Setter Property="Maximum" Value="255"/>
+      <Setter Property="SmallChange" Value="1"/>
+      <Setter Property="LargeChange" Value="51"/>
+      <Setter Property="IsMoveToPointEnabled" Value="true"/>
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="{x:Type Slider}">
+            <Grid ClipToBounds="false">
+              <Border Height="6" CornerRadius="3" Background="{TemplateBinding Background}"
+								BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1"
+								Width="{TemplateBinding Width}"/>
+              <Track Name="PART_Track">
+                <Track.DecreaseRepeatButton>
+                  <RepeatButton Style="{StaticResource Slider_RepeatButton}"
+                                Command="Slider.DecreaseLarge"/>
+                </Track.DecreaseRepeatButton>
+                <Track.IncreaseRepeatButton>
+                  <RepeatButton Style="{StaticResource Slider_RepeatButton}"
+                                Command="Slider.IncreaseLarge"/>
+                </Track.IncreaseRepeatButton>
+                <Track.Thumb>
+                  <Thumb x:Name="Thumb"
+                         Style="{StaticResource Slider_Thumb}"/>
+                </Track.Thumb>
+              </Track>
+            </Grid>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+
+    <LinearGradientBrush x:Key="BorderBackground" EndPoint="0,1" StartPoint="0,0">
+      <LinearGradientBrush.GradientStops>
+        <GradientStop Color="#77FFFFFF" Offset="0" />
+        <GradientStop Color="#00FFFFFF" Offset=".15" />
+        <GradientStop Color="#00000000" Offset=".85" />
+        <GradientStop Color="#33000000" Offset="1" />
+      </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+
+    <LinearGradientBrush x:Key="BorderBrush" EndPoint="0,1" StartPoint="0,0">
+      <LinearGradientBrush.GradientStops>
+        <GradientStop Color="#99cccccc" Offset="0" />
+        <GradientStop Color="#99666666" Offset="1" />
+      </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+
+		<Style x:Key="ColorPicker_CoolStyle" TargetType="{x:Type local:ColorPicker}">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type local:ColorPicker}">
+
+						<Border CornerRadius="5" Background="{TemplateBinding Background}" HorizontalAlignment="Center" VerticalAlignment="Center">
+							<Border BorderThickness="1"  CornerRadius="5" Background="{StaticResource BorderBackground}" Padding="3">
+
+								<Grid>
+                  <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                  </Grid.ColumnDefinitions>
+                  
+                  <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                  </Grid.RowDefinitions>
+
+									<Slider Grid.Column="0" Grid.Row="0" Foreground="red" Style="{StaticResource Slider_CustomStyle}"
+											Value="{Binding Path=Red, Converter={StaticResource ByteDoubleConverter}, RelativeSource={RelativeSource TemplatedParent}}"
+											Background="{Binding Path=Color, Converter={StaticResource ColorGradientConverter},ConverterParameter=Red, RelativeSource={RelativeSource TemplatedParent}}"
+										/>
+									<Slider Grid.Column="0" Grid.Row="1" Foreground="green" Style="{StaticResource Slider_CustomStyle}"
+											Value="{Binding Path=Green, Converter={StaticResource ByteDoubleConverter}, RelativeSource={RelativeSource TemplatedParent}}"
+											Background="{Binding Path=Color, Converter={StaticResource ColorGradientConverter},ConverterParameter=Green, RelativeSource={RelativeSource TemplatedParent}}"
+										/>
+									<Slider Grid.Column="0" Grid.Row="2" Foreground="blue" Style="{StaticResource Slider_CustomStyle}"
+											Value="{Binding Path=Blue, Converter={StaticResource ByteDoubleConverter}, RelativeSource={RelativeSource TemplatedParent}}"
+											Background="{Binding Path=Color, Converter={StaticResource ColorGradientConverter},ConverterParameter=Blue, RelativeSource={RelativeSource TemplatedParent}}"
+										/>
+
+									<Border Grid.Row="0" Grid.RowSpan="3" Grid.Column="2"  Width="40" Height="Auto" Margin="5" BorderThickness="1"  CornerRadius="5"
+									Background="{Binding Path=Color, Converter={StaticResource ColorBrushConverter}, RelativeSource={RelativeSource TemplatedParent}}"/>
+									<Border Grid.Row="0" Grid.RowSpan="3" Grid.Column="2"  Width="40" Height="Auto" Margin="5" 
+										BorderThickness="1"  CornerRadius="5" Background="{StaticResource BorderBackground}" BorderBrush="{StaticResource BorderBrush}">
+
+
+									</Border>
+								</Grid>
+							</Border>
+						</Border>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+			
+		</Style>
+
+	</Application.Resources>
+</Application>

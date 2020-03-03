@@ -1,0 +1,150 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\getting-started\\unit-testing-using-dotnet-test\\PrimeService.Tests\\PrimeService.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\getting-started\\unit-testing-using-dotnet-test\\PrimeService.Tests\\PrimeService.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\getting-started\\unit-testing-using-dotnet-test\\PrimeService.Tests\\PrimeService.Tests.csproj",
+        "projectName": "PrimeService.Tests",
+        "projectPath": "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\getting-started\\unit-testing-using-dotnet-test\\PrimeService.Tests\\PrimeService.Tests.csproj",
+        "packagesPath": "C:\\Users\\Andy\\.nuget\\packages\\",
+        "outputPath": "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\getting-started\\unit-testing-using-dotnet-test\\PrimeService.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Andy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Andy\\.nuget\\packages": {},
+          "c:\\code\\fun\\sadconsole\\nuget": {},
+          "c:\\code\\nugetpkgs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://ci.appveyor.com/nuget/octokit-net": {},
+          "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\getting-started\\unit-testing-using-dotnet-test\\PrimeService\\PrimeService.csproj": {
+                "projectPath": "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\getting-started\\unit-testing-using-dotnet-test\\PrimeService\\PrimeService.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.3.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\3.1.100-preview1-014459\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\getting-started\\unit-testing-using-dotnet-test\\PrimeService\\PrimeService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\getting-started\\unit-testing-using-dotnet-test\\PrimeService\\PrimeService.csproj",
+        "projectName": "PrimeService",
+        "projectPath": "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\getting-started\\unit-testing-using-dotnet-test\\PrimeService\\PrimeService.csproj",
+        "packagesPath": "C:\\Users\\Andy\\.nuget\\packages\\",
+        "outputPath": "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\getting-started\\unit-testing-using-dotnet-test\\PrimeService\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Andy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Andy\\.nuget\\packages": {},
+          "c:\\code\\fun\\sadconsole\\nuget": {},
+          "c:\\code\\nugetpkgs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://ci.appveyor.com/nuget/octokit-net": {},
+          "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\3.1.100-preview1-014459\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

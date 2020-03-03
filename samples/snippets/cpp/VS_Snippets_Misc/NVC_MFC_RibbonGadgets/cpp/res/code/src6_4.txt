@@ -1,0 +1,14 @@
+CMFCRibbonPanel* pPanel4 = pCategory->AddPanel(_T("Sliders"));
+pPanel4->SetCenterColumnVert();
+
+pPanel4->Add(new CMFCRibbonLabel(_T("Simple Slider:")));
+pPanel4->Add(new CMFCRibbonSlider(ID_RIBBON_OBTN_5, 70 /* Slider width */));
+
+pPanel4->Add(new CMFCRibbonSeparator());
+
+pPanel4->Add(new CMFCRibbonLabel(_T("Slider with Buttons:")));
+CMFCRibbonSlider* pBtn6 = new CMFCRibbonSlider(ID_RIBBON_OBTN_6, 70 /* Slider width */);
+pBtn6->SetZoomButtons();
+pBtn6->SetRange(0, 100);
+pBtn6->SetPos(50);
+pPanel4->Add(pBtn6);

@@ -1,0 +1,14 @@
+﻿<Window x:Class="Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="HwCaps_VB"
+    >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" Click="Button1Click" Name="button1">Get Capabilites</Button>
+        <TextBox Grid.Row="1" Name="textbox1" VerticalScrollBarVisibility="Auto" />
+    </Grid>
+</Window>

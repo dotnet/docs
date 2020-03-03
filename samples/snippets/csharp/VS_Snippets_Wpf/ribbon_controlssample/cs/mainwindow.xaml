@@ -1,0 +1,354 @@
+﻿<ribbon:RibbonWindow x:Class="RibbonControlsSample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ribbon="clr-namespace:Microsoft.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary"
+        Title="Ribbon Controls Sample" Height="350" Width="800">
+    <DockPanel>
+        <ribbon:Ribbon DockPanel.Dock="Top">
+            <ribbon:Ribbon.Resources>
+                <ribbon:RibbonGroupSizeDefinitionBaseCollection x:Key="Large3">
+                    <ribbon:RibbonGroupSizeDefinition>
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Large" IsLabelVisible="True" />
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Large" IsLabelVisible="True" />
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Large" IsLabelVisible="True" />
+                    </ribbon:RibbonGroupSizeDefinition>
+                </ribbon:RibbonGroupSizeDefinitionBaseCollection>
+                <!--<snippetGroupSizeDefMedium>-->
+                <ribbon:RibbonGroupSizeDefinitionBaseCollection x:Key="Medium3">
+                    <ribbon:RibbonGroupSizeDefinition>
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="True" />
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="True" />
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="True" />
+                    </ribbon:RibbonGroupSizeDefinition>
+                </ribbon:RibbonGroupSizeDefinitionBaseCollection>
+                <!--</snippetGroupSizeDefMedium>-->
+                <ribbon:RibbonGroupSizeDefinitionBaseCollection x:Key="Small3">
+                    <ribbon:RibbonGroupSizeDefinition>
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="False" />
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="False" />
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="False" />
+                    </ribbon:RibbonGroupSizeDefinition>
+                </ribbon:RibbonGroupSizeDefinitionBaseCollection>
+                <ribbon:RibbonGroupSizeDefinitionBaseCollection x:Key="Small3NoImage">
+                    <ribbon:RibbonGroupSizeDefinition>
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Collapsed" IsLabelVisible="True" />
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Collapsed" IsLabelVisible="True" />
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Collapsed" IsLabelVisible="True" />
+                    </ribbon:RibbonGroupSizeDefinition>
+                </ribbon:RibbonGroupSizeDefinitionBaseCollection>
+
+                <ribbon:RibbonGroupSizeDefinitionBaseCollection x:Key="LMS">
+                    <ribbon:RibbonGroupSizeDefinition>
+                        <!-- <snippetRbnControlSizeDefLMS> -->
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Large" IsLabelVisible="True" />
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="True" />
+                        <ribbon:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="False" />
+                        <!-- </snippetRbnControlSizeDefLMS> -->
+                    </ribbon:RibbonGroupSizeDefinition>
+                </ribbon:RibbonGroupSizeDefinitionBaseCollection>
+                
+            </ribbon:Ribbon.Resources>
+
+            <!-- Quick Access Toolbar -->
+            <ribbon:Ribbon.QuickAccessToolBar>
+                <ribbon:RibbonQuickAccessToolBar>
+                    <ribbon:RibbonButton Command="Save" CommandTarget="{Binding ElementName=editor}"   
+                                    SmallImageSource="Images/Save16.png" />
+
+                    <ribbon:RibbonButton Command="Undo"   
+                                    SmallImageSource="Images/ArrowUndo16.png" />
+
+                    <ribbon:RibbonButton Command="Redo"  
+                                    SmallImageSource="Images/ArrowRedo16.png" />
+                    <ribbon:RibbonQuickAccessToolBar.CustomizeMenuButton>
+                        <ribbon:RibbonMenuButton>
+                            <ribbon:RibbonSeparator Label="Customize Quick Access Toolbar" />
+                            <ribbon:RibbonMenuItem Header="New" />
+                            <ribbon:RibbonMenuItem Header="Open" />
+                            <ribbon:RibbonMenuItem Header="Save" />
+                            <ribbon:RibbonMenuItem Header="Undo" />
+                            <ribbon:RibbonMenuItem Header="Redo" />
+                        </ribbon:RibbonMenuButton>
+                    </ribbon:RibbonQuickAccessToolBar.CustomizeMenuButton>
+                </ribbon:RibbonQuickAccessToolBar>
+            </ribbon:Ribbon.QuickAccessToolBar>
+
+            <!-- Application Menu -->
+            <ribbon:Ribbon.ApplicationMenu>
+                <ribbon:RibbonApplicationMenu SmallImageSource="Images/ApplicationMenuIcon.png">
+                    <ribbon:RibbonApplicationMenuItem Header="Open"
+                                                 Command="Open" CommandTarget="{Binding ElementName=editor}"
+                                                 ImageSource="Images/Open32.png" />
+
+                    <ribbon:RibbonApplicationMenuItem Header="Save"
+                                                 Command="Save" CommandTarget="{Binding ElementName=editor}"
+                                                 ImageSource="Images/Save32.png" />
+
+                    <ribbon:RibbonApplicationSplitMenuItem Header="Save As"
+                                                 Command="SaveAs" CommandTarget="{Binding ElementName=editor}"
+                                                 ImageSource="Images/SaveAs32.png" >
+
+                        <ribbon:RibbonApplicationMenuItem Header="Rich Text document"
+                                                 Command="SaveAs" CommandTarget="{Binding ElementName=editor}" CommandParameter="rtf"
+                                                 ImageSource="Images/SaveAsRtf32.png" />
+
+                        <ribbon:RibbonApplicationMenuItem Header="Plain Text document"
+                                                 Command="SaveAs" CommandTarget="{Binding ElementName=editor}" CommandParameter="txt"
+                                                 ImageSource="Images/SaveAsTxt32.png" />
+
+                        <ribbon:RibbonApplicationMenuItem Header="Other format"
+                                                 Command="SaveAs" CommandTarget="{Binding ElementName=editor}"
+                                                 ImageSource="Images/SaveAs32.png" />
+                    </ribbon:RibbonApplicationSplitMenuItem>
+                    <ribbon:RibbonSeparator />
+                    <ribbon:RibbonApplicationMenu.FooterPaneContent>
+                        <DockPanel LastChildFill="False">
+                            <ribbon:RibbonButton DockPanel.Dock="Right"
+                                                 Margin="2"
+                                                 Command="ApplicationCommands.Close" CommandTarget="{Binding ElementName=editor}"
+                                                 Label="Exit"
+                                                 ToolTipTitle="Exit"
+                                                 BorderBrush="#B8114EAF"
+                                                 SmallImageSource="Images\Exit16.png" />
+                        </DockPanel>
+                    </ribbon:RibbonApplicationMenu.FooterPaneContent>
+                </ribbon:RibbonApplicationMenu>
+            </ribbon:Ribbon.ApplicationMenu>
+
+            <ribbon:RibbonTab Header="Ribbon Controls"  >
+                <ribbon:RibbonGroup Header="Button" GroupSizeDefinitions="{StaticResource Medium3}">
+                    <!-- <snippetRibbonButton> -->
+                    <ribbon:RibbonButton Label="Paste"
+                                    Command="Paste"
+                                    SmallImageSource="Images/Paste16.png" 
+                                    LargeImageSource="Images/Paste32.png"
+                                    KeyTip="V"
+                                    ToolTip="Paste (Ctrl+V)"
+                                    ToolTipDescription="Paste the contents of the Clipboard into the document." />
+                    <!-- </snippetRibbonButton> -->
+
+                    <!-- Use this snippet on the TooTip properties-->
+                    <!-- <snippetRibbonButtonTT> -->
+                    <ribbon:RibbonButton Label="Ribbon Control"
+                                    SmallImageSource="Images/Lightbulb16.png" 
+                                    LargeImageSource="Images/Lightbulb32.png"
+                                    KeyTip="N"
+                                    ToolTipTitle="Command Name (Ctrl+N)" 
+                                    ToolTipDescription="All ribbon commands should have enhanced tooltips to give the command name, shortcut key, description, and optional supplemental information."
+                                    ToolTipImageSource="Images/Suggestion32.png"
+                                    ToolTipFooterTitle="Press F1 for Help" 
+                                    ToolTipFooterDescription="When practical, completely describe the command using a concise description. Link to Help only if further explanation is really necessary."
+                                    ToolTipFooterImageSource="Images/Help16.png" />
+                    <!-- </snippetRibbonButtonTT> -->
+                    
+                </ribbon:RibbonGroup>           
+
+                <ribbon:RibbonGroup Header="ToggleButton" GroupSizeDefinitions="{StaticResource Medium3}">
+                    <!-- <snippetRibbonToggleButton> -->
+                    <ribbon:RibbonToggleButton Label="Reminder"
+                                          Command="{Binding ReminderCommand}"
+                                          SmallImageSource="Images/Reminder16.png" 
+                                          LargeImageSource="Images/Reminder32.png"
+                                          KeyTip="R"/>
+                    <!-- </snippetRibbonToggleButton> -->
+
+                    <!-- Use this snippet on the TooTip properties-->
+                    <!-- <snippetRibbonToggleButtonTT> -->
+                    <ribbon:RibbonToggleButton Label="Ribbon Control"
+                                    SmallImageSource="Images/Lightbulb16.png" 
+                                    LargeImageSource="Images/Lightbulb32.png"
+                                    KeyTip="N"
+                                    ToolTipTitle="Command Name (Ctrl+N)" 
+                                    ToolTipDescription="All ribbon commands should have enhanced tooltips to give the command name, shortcut key, description, and optional supplemental information."
+                                    ToolTipImageSource="Images/Suggestion32.png"
+                                    ToolTipFooterTitle="Press F1 for Help" 
+                                    ToolTipFooterDescription="When practical, completely describe the command using a concise description. Link to Help only if further explanation is really necessary."
+                                    ToolTipFooterImageSource="Images/Help16.png" />
+                    <!-- </snippetRibbonToggleButtonTT> -->
+
+                </ribbon:RibbonGroup>
+               
+
+                <ribbon:RibbonGroup Header="CheckBox" GroupSizeDefinitions="{StaticResource Medium3}">
+                    <!--<snippetRibbonCheckBox>-->
+                    <ribbon:RibbonCheckBox Label="Reminder"                                    
+                                           SmallImageSource="Images/Reminder16.png" 
+                                           LargeImageSource="Images/Reminder32.png" 
+                                           KeyTip="R"/>
+                    <!--</snippetRibbonCheckBox>-->
+
+                    <!-- Use this snippet on the TooTip properties-->
+                    <!-- <snippetRibbonCheckBoxTT> -->
+                    <ribbon:RibbonCheckBox Label="Ribbon Control"
+                                    SmallImageSource="Images/Lightbulb16.png" 
+                                    LargeImageSource="Images/Lightbulb32.png"
+                                    KeyTip="N"
+                                    ToolTipTitle="Command Name (Ctrl+N)" 
+                                    ToolTipDescription="All ribbon commands should have enhanced tooltips to give the command name, shortcut key, description, and optional supplemental information."
+                                    ToolTipImageSource="Images/Suggestion32.png"
+                                    ToolTipFooterTitle="Press F1 for Help" 
+                                    ToolTipFooterDescription="When practical, completely describe the command using a concise description. Link to Help only if further explanation is really necessary."
+                                    ToolTipFooterImageSource="Images/Help16.png" />
+                    <!-- </snippetRibbonCheckBoxTT> -->
+                </ribbon:RibbonGroup>
+
+                <ribbon:RibbonGroup Header="TextBox" GroupSizeDefinitions="{StaticResource Medium3}">
+                    <!--<snippetRibbonTextBox>-->
+                    <ribbon:RibbonTextBox Label="1" Text="Green"
+                                     Command="{Binding ColorCommand}"
+                                     SmallImageSource="Images/RightArrowShort_Green16.png" 
+                                     LargeImageSource="Images/RightArrowShort_Green32.png" 
+                                     KeyTip="C" />
+                    <!--</snippetRibbonTextBox>-->
+
+                    <!-- Use this snippet on the TooTip properties-->
+                    <!-- <snippetRibbonTextBoxTT> -->
+                    <ribbon:RibbonTextBox Label="Ribbon Control"
+                                    SmallImageSource="Images/Lightbulb16.png" 
+                                    LargeImageSource="Images/Lightbulb32.png"
+                                    KeyTip="N"
+                                    ToolTipTitle="Command Name (Ctrl+N)" 
+                                    ToolTipDescription="All ribbon commands should have enhanced tooltips to give the command name, shortcut key, description, and optional supplemental information."
+                                    ToolTipImageSource="Images/Suggestion32.png"
+                                    ToolTipFooterTitle="Press F1 for Help" 
+                                    ToolTipFooterDescription="When practical, completely describe the command using a concise description. Link to Help only if further explanation is really necessary."
+                                    ToolTipFooterImageSource="Images/Help16.png" />
+                    <!-- </snippetRibbonTextBoxTT> -->
+                </ribbon:RibbonGroup>
+
+                
+                <ribbon:RibbonGroup Header="ComboBox" >
+                    <!--<snippetRibbonComboBox>-->
+                    <ribbon:RibbonComboBox Label="1" 
+                                      SmallImageSource="Images/RightArrowShort_Green16.png"
+                                      SelectionBoxWidth="62"
+                                      VerticalAlignment="Center" 
+                                      IsEditable="True" >
+                        <ribbon:RibbonGallery SelectedValue="Green"
+                                              SelectedValuePath="Content"
+                                              MaxColumnCount="1">
+                            <ribbon:RibbonGalleryCategory>
+                                <ribbon:RibbonGalleryItem Content="Green" Foreground="Green" />
+                                <ribbon:RibbonGalleryItem Content="Blue" Foreground="Blue" />
+                                <ribbon:RibbonGalleryItem Content="Orange" Foreground="Orange" />
+                            </ribbon:RibbonGalleryCategory>
+                        </ribbon:RibbonGallery>
+                    </ribbon:RibbonComboBox>
+                    <!--</snippetRibbonComboBox>-->
+
+                    <!-- Use this snippet on the TooTip properties-->
+                    <!-- ADD KeyTip="N" AFTER WAVE 7-->
+                    <!-- <snippetRibbonComboBoxTT> -->  
+                    <ribbon:RibbonComboBox Label="Ribbon Control"
+                                    SmallImageSource="Images/Lightbulb16.png" 
+
+                                    ToolTipTitle="Command Name (Ctrl+N)" 
+                                    ToolTipDescription="All ribbon commands should have enhanced tooltips to give the command name, shortcut key, description, and optional supplemental information."
+                                    ToolTipImageSource="Images/Suggestion32.png"
+                                    ToolTipFooterTitle="Press F1 for Help" 
+                                    ToolTipFooterDescription="When practical, completely describe the command using a concise description. Link to Help only if further explanation is really necessary."
+                                    ToolTipFooterImageSource="Images/Help16.png" />
+                    <!-- </snippetRibbonComboBoxTT> -->
+
+                </ribbon:RibbonGroup>
+                
+                
+                <ribbon:RibbonGroup Header="RadioButton">
+                <!--<snippetRibbonRadioButton>-->    
+                    <ribbon:RibbonRadioButton Label="Color 1" 
+                                              SmallImageSource="Images/RightArrowShort_Green16.png" 
+                                              LargeImageSource="Images/RightArrowShort_Green32.png"
+                                              KeyTip="C1" />
+                    <ribbon:RibbonRadioButton Label="Color 2" 
+                                              SmallImageSource="Images/RightArrowShort_Blue16.png" 
+                                              LargeImageSource="Images/RightArrowShort_Blue32.png"
+                                              KeyTip="C2" />
+                    <ribbon:RibbonRadioButton Label="Color 3" 
+                                              SmallImageSource="Images/RightArrowShort_Orange16.png" 
+                                              LargeImageSource="Images/RightArrowShort_Orange32.png"
+                                              KeyTip="C3" />
+                <!--</snippetRibbonRadioButton>-->
+
+                <!-- <snippetRibbonRadioButtonTT> -->
+                <ribbon:RibbonRadioButton Label="Ribbon Control"
+                                    SmallImageSource="Images/Lightbulb16.png" 
+                                    LargeImageSource="Images/Lightbulb32.png"
+                                    KeyTip="N"
+                                    ToolTipTitle="Command Name (Ctrl+N)" 
+                                    ToolTipDescription="All ribbon commands should have enhanced tooltips to give the command name, shortcut key, description, and optional supplemental information."
+                                    ToolTipImageSource="Images/Suggestion32.png"
+                                    ToolTipFooterTitle="Press F1 for Help" 
+                                    ToolTipFooterDescription="When practical, completely describe the command using a concise description. Link to Help only if further explanation is really necessary."
+                                    ToolTipFooterImageSource="Images/Help16.png" />
+                    <!-- </snippetRibbonRadioButtonTT> -->
+                </ribbon:RibbonGroup>
+                
+
+                <ribbon:RibbonGroup Header="MenuButton" GroupSizeDefinitions="{StaticResource Medium3}" >
+                    <!--<snippetRibbonMenuButton>-->
+                    <ribbon:RibbonMenuButton Label="Color 1" 
+                                             SmallImageSource="Images/RightArrowShort_Green16.png" 
+                                             LargeImageSource="Images/RightArrowShort_Green32.png" >
+                        <ribbon:RibbonGallery SelectedValue="Green"
+                                              SelectedValuePath="Content"
+                                              MaxColumnCount="1">
+                            <ribbon:RibbonGalleryCategory>
+                                <ribbon:RibbonGalleryItem Content="Green" Foreground="Green" />
+                                <ribbon:RibbonGalleryItem Content="Blue" Foreground="Blue" />
+                                <ribbon:RibbonGalleryItem Content="Orange" Foreground="Orange" />
+                            </ribbon:RibbonGalleryCategory>
+                        </ribbon:RibbonGallery>
+                    </ribbon:RibbonMenuButton>
+                    <!--</snippetRibbonMenuButton>-->
+
+                    <!-- Use this snippet on the TooTip properties-->
+                    <!-- <snippetRibbonMenuButtonTT> -->
+                    <ribbon:RibbonMenuButton Label="Ribbon Control"
+                                    SmallImageSource="Images/Lightbulb16.png" 
+                                    LargeImageSource="Images/Lightbulb32.png"
+                                    KeyTip="N"
+                                    ToolTipTitle="Command Name (Ctrl+N)" 
+                                    ToolTipDescription="All ribbon commands should have enhanced tooltips to give the command name, shortcut key, description, and optional supplemental information."
+                                    ToolTipImageSource="Images/Suggestion32.png"
+                                    ToolTipFooterTitle="Press F1 for Help" 
+                                    ToolTipFooterDescription="When practical, completely describe the command using a concise description. Link to Help only if further explanation is really necessary."
+                                    ToolTipFooterImageSource="Images/Help16.png" />
+                    <!-- </snippetRibbonMenuButtonTT> -->
+                </ribbon:RibbonGroup>
+
+                <ribbon:RibbonGroup Header="SplitButton" GroupSizeDefinitions="{StaticResource Medium3}" >
+                    <!--<snippetRibbonSplitButton>-->
+                    <ribbon:RibbonSplitButton Label="Color 1" 
+                                      SmallImageSource="Images/RightArrowShort_Green16.png" LargeImageSource="Images/RightArrowShort_Green32.png" >
+                        <ribbon:RibbonGallery SelectedValue="Green"
+                                              SelectedValuePath="Content"
+                                              MaxColumnCount="1">
+                            <ribbon:RibbonGalleryCategory>
+                                <ribbon:RibbonGalleryItem Content="Green" Foreground="Green" />
+                                <ribbon:RibbonGalleryItem Content="Blue" Foreground="Blue" />
+                                <ribbon:RibbonGalleryItem Content="Orange" Foreground="Orange" />
+                            </ribbon:RibbonGalleryCategory>
+                        </ribbon:RibbonGallery>
+                    </ribbon:RibbonSplitButton>
+                    <!--</snippetRibbonSplitButton>-->
+
+                    <!-- Use this snippet on the TooTip properties-->
+                    <!-- <snippetRibbonSplitButtonTT> -->
+                    <ribbon:RibbonSplitButton Label="Ribbon Control"
+                                    SmallImageSource="Images/Lightbulb16.png" 
+                                    LargeImageSource="Images/Lightbulb32.png"
+                                    KeyTip="N"
+                                    ToolTipTitle="Command Name (Ctrl+N)" 
+                                    ToolTipDescription="All ribbon commands should have enhanced tooltips to give the command name, shortcut key, description, and optional supplemental information."
+                                    ToolTipImageSource="Images/Suggestion32.png"
+                                    ToolTipFooterTitle="Press F1 for Help" 
+                                    ToolTipFooterDescription="When practical, completely describe the command using a concise description. Link to Help only if further explanation is really necessary."
+                                    ToolTipFooterImageSource="Images/Help16.png" />
+                    <!-- </snippetSplitRibbonButtonTT> -->
+                </ribbon:RibbonGroup>
+            </ribbon:RibbonTab>
+           
+        </ribbon:Ribbon>
+        <TextBlock DockPanel.Dock="Bottom"></TextBlock><!-- This text block is needed to make the Enhanced ToolTips show up in the right place. -->
+    </DockPanel>
+</ribbon:RibbonWindow>

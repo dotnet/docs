@@ -1,0 +1,58 @@
+<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="StatusBarSimple.Window1"
+    Title ="StatusBar"
+    >
+  <Window.Resources>
+    <Style x:Key="StatusBarSeparatorStyle" TargetType="Separator">
+      <Setter Property="Background" Value="LightBlue" />
+      <Setter Property="Control.Width" Value="1"/>
+      <Setter Property="Control.Height" Value="20"/>
+    </Style>
+    
+  </Window.Resources>
+
+<Grid>
+  <Grid.ColumnDefinitions>
+    <ColumnDefinition/>
+    <ColumnDefinition/>
+  </Grid.ColumnDefinitions>
+  <Grid.RowDefinitions>
+    <RowDefinition/>
+    <RowDefinition/>
+    <RowDefinition/>
+  </Grid.RowDefinitions>
+  <StackPanel Grid.Column="0" Grid.Row="0">
+    <TextBlock FontSize="12" TextWrapping="WrapWithOverflow">
+      This sample provides examples of items that can be placed in a
+      StatusBar. To see an example, select the application type and
+      look for the content in the StatusBar at the bottom of this
+      window.
+    </TextBlock>    
+    <ListBox HorizontalAlignment="Left" VerticalAlignment="Top" 
+          Width="150" Margin="0,10,0,0" Foreground="Blue">
+        <ListBoxItem Content="Download Application" Selected="MakeProgressBar"/>
+        <Separator/>
+        <ListBoxItem Content="Compilation Application" Selected="MakeTextBlock"/>
+        <Separator/>
+        <ListBoxItem Content="Printing Application" Selected="MakeImage"/>
+        <Separator/>
+        <ListBoxItem Content="Help Application" Selected="MakeHelp"/>
+        <Separator/>
+        <ListBoxItem Content="Icon Group" Selected="MakeGroup"/>
+    </ListBox>
+  </StackPanel>
+
+        <StatusBar Name="sbar" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" 
+                   VerticalAlignment="Bottom" Background="Beige" > 
+             <StatusBarItem>
+               <TextBlock>Ready</TextBlock>
+             </StatusBarItem>
+             <StatusBarItem>
+               <Separator Style="{StaticResource StatusBarSeparatorStyle}"/>
+             </StatusBarItem>
+        </StatusBar>
+
+</Grid>
+</Window>

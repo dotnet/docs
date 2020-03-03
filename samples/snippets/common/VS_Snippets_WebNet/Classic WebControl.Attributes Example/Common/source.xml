@@ -1,0 +1,25 @@
+
+
+ <html>
+ <head>
+    <script language="C#" runat="server">
+ 
+        void Page_Load(Object sender, EventArgs e) {
+           TextBox1.Attributes["onblur"]="javascript:alert('Hello! Focus lost from text box!!');";    
+        }
+    </script>
+ 
+ </head>
+ <body>
+    <h3><font face="Verdana">Attributes Property of a Web Control</font></h3>
+ <form runat="server">
+ 
+    <asp:TextBox id="TextBox1" columns=54 
+     Text="Click here and then tap out of this text box" 
+     runat="server"/>  
+ 
+ </form>
+ </body>
+ </html>
+ 
+

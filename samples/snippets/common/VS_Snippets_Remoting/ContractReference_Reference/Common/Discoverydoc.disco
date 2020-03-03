@@ -1,0 +1,4 @@
+<disco:discovery xmlns:disco="http://schemas.xmlsoap.org/disco" xmlns:scl="http://schemas.xmlsoap.org/disco/scl"> 
+<scl:contractRef ref="http://MyWebServer/MyService.asmx?WSDL" docref="http://MyWebServer/MyService.asmx" />  
+<disco:discoveryRef ref="SomeFolder/default.disco" />
+</disco:discovery>

@@ -1,0 +1,24 @@
+<!--<snippet2>-->
+<xsd:schema xmlns:xsd='http://www.w3.org/2001/XMLSchema' >
+ <xsd:complexType name="personName">
+        <xsd:sequence>
+            <xsd:element name="title" minOccurs="0" maxOccurs="1"/>
+            <xsd:element name="forename" minOccurs="0" maxOccurs="unbounded"/>
+            <xsd:element name="surname"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+   <xsd:complexType name="simpleName">
+        <xsd:complexContent>
+            <xsd:restriction base="personName">
+                <xsd:sequence>
+                    <xsd:element name="title" minOccurs="0" maxOccurs="0"/>
+                    <xsd:element name="firstname" minOccurs="1" maxOccurs="1"/>
+                    <xsd:element name="surname"/>
+                </xsd:sequence>
+            </xsd:restriction>
+        </xsd:complexContent>
+    </xsd:complexType>
+
+</xsd:schema>
+<!--</snippet2>-->

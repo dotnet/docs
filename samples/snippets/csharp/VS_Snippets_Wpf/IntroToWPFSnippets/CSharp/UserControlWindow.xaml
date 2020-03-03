@@ -1,0 +1,17 @@
+﻿<!--<SnippetUserControlWindowMARKUP1>-->
+<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="SDKSample.UserControlWindow"
+    xmlns:local="clr-namespace:SDKSample" 
+    Title="User Control Window">
+  <!--</SnippetUserControlWindowMARKUP1>-->
+  
+  <!--<SnippetUserControlWindowMARKUP2>-->
+  <!-- Numeric Up/Down user control -->
+  <local:NumericUpDown />
+  <!--</SnippetUserControlWindowMARKUP2>-->
+  
+  <!--<SnippetUserControlWindowMARKUP3>-->
+</Window>
+<!--</SnippetUserControlWindowMARKUP3>-->

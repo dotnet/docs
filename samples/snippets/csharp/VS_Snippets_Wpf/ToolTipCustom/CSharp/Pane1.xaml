@@ -1,0 +1,16 @@
+<Window  
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="SDKSample.Pane1"
+    Loaded="OnLoad">
+
+
+  <StackPanel Name="myStackPanel" Grid.Row="1" Grid.Column="1">
+    <TextBlock TextWrapping="Wrap">
+      The placement of the tooltip for this shape uses a
+      CustomPopupPlacement method
+    </TextBlock>
+  </StackPanel>
+
+  
+</Window>

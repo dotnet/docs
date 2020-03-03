@@ -1,0 +1,12 @@
+﻿<Window x:Class="StylusXAML.Window2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="StylusXAML" Height="300" Width="300"
+    >
+  <DockPanel>
+    <!--<Snippet2>-->
+    <Canvas Name="canvas1" Stylus.IsTapFeedbackEnabled="False"></Canvas>
+    <!--</Snippet2>-->
+
+  </DockPanel>
+</Window>

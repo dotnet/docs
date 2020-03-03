@@ -1,0 +1,3 @@
+all: mydll.dll
+mydll.dll : IVsDataProvider.cs IVsDataProvider2.cs IVsDataProvider3.cs IVsDataProvider4.cs IVsDataProvider5.cs IVsDataProvider6.cs IVsDataProvider7.cs IVsDataProvider8.cs IVsDataProvider9.cs IVsDataProvider10.cs 
+ 	csc /t:library /out:mydll.dll /r:"C:\Program Files\Microsoft Visual Studio 2008 SDK\VisualStudioIntegration\Common\Assemblies\Microsoft.VisualStudio.Data.Core.dll","C:\Program Files\Microsoft Visual Studio 2008 SDK\VisualStudioIntegration\Common\Assemblies\Microsoft.VisualStudio.Data.Services.dll" IVsDataProvider.cs IVsDataProvider2.cs IVsDataProvider3.cs IVsDataProvider4.cs IVsDataProvider5.cs IVsDataProvider6.cs IVsDataProvider7.cs IVsDataProvider8.cs IVsDataProvider9.cs IVsDataProvider10.cs

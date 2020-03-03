@@ -1,0 +1,94 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BBEAC4F2-A0F4-4166-8E20-19C789C4896F}</ProjectGuid>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <RootNamespace>ExpenseIt</RootNamespace>
+    <AssemblyName>ExpenseIt</AssemblyName>
+    <WarningLevel>4</WarningLevel>
+    <OutputType>winexe</OutputType>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+    <Install>False</Install>
+    <TargetZone>Internet</TargetZone>
+    <StartAction>Program</StartAction>
+    <StartProgram>$(WINDIR)\System32\PresentationHost.exe</StartProgram>
+    <ApplicationExtension>.xbap</ApplicationExtension>
+    <StartArguments>-debug "$(MSBuildProjectDirectory)\bin\$(Configuration)\$(AssemblyName)$(ApplicationExtension)"</StartArguments>
+    <SignManifests>True</SignManifests>
+    <MinFrameworkVersionRequired>3.0</MinFrameworkVersionRequired>
+    <HostInBrowser>true</HostInBrowser>
+    <InstallFrom>Web</InstallFrom>
+    <MapFileExtensions>false</MapFileExtensions>
+    <ApplicationVersion>1.0.0.*</ApplicationVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <PublishUrl>Publish\</PublishUrl>
+    <ManifestKeyFile>ExpenseIt_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestCertificateThumbprint>9DE430FF9DD2AF2EE6AA2D3A7F03AC75D989D88A</ManifestCertificateThumbprint>
+    <ExcludedPermissions>System.Security.Permissions.FileDialogPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089; System.Security.Permissions.IsolatedStorageFilePermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089; System.Security.Permissions.UIPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089; System.Drawing.Printing.PrintingPermission, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</ExcludedPermissions>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <ProductVersion>10.0.20821</ProductVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="UIAutomationTypes" />
+    <Reference Include="System.Printing" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddExpensesPage.xaml.cs">
+      <DependentUpon>AddExpensesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EditBox.cs" />
+    <Compile Include="EditBoxAdorner.cs" />
+    <Compile Include="ExpenseReport.cs" />
+    <Compile Include="HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validation\EmailValidationRule.cs" />
+    <Compile Include="Validation\NumberValidationRule.cs" />
+    <None Include="ExpenseIt_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="AddExpensesPage.xaml" />
+    <ApplicationDefinition Include="App.xaml" />
+    <Page Include="HomePage.xaml" />
+    <Page Include="ViewChartPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Watermark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SecurityRequirements.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

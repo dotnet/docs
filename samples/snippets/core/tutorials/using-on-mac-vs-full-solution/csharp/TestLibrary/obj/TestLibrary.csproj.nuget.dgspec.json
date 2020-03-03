@@ -1,0 +1,139 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\tutorials\\using-on-mac-vs-full-solution\\WordCounter\\TestLibrary\\TestLibrary.csproj": {}
+  },
+  "projects": {
+    "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\tutorials\\using-on-mac-vs-full-solution\\WordCounter\\TestLibrary\\TestLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\tutorials\\using-on-mac-vs-full-solution\\WordCounter\\TestLibrary\\TestLibrary.csproj",
+        "projectName": "TestLibrary",
+        "projectPath": "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\tutorials\\using-on-mac-vs-full-solution\\WordCounter\\TestLibrary\\TestLibrary.csproj",
+        "packagesPath": "C:\\Users\\Andy\\.nuget\\packages\\",
+        "outputPath": "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\tutorials\\using-on-mac-vs-full-solution\\WordCounter\\TestLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Andy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Andy\\.nuget\\packages": {},
+          "c:\\code\\fun\\sadconsole\\nuget": {},
+          "c:\\code\\nugetpkgs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://ci.appveyor.com/nuget/octokit-net": {},
+          "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\tutorials\\using-on-mac-vs-full-solution\\WordCounter\\TextUtils\\TextUtils.csproj": {
+                "projectPath": "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\tutorials\\using-on-mac-vs-full-solution\\WordCounter\\TextUtils\\TextUtils.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.3.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\3.1.100-preview1-014459\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\tutorials\\using-on-mac-vs-full-solution\\WordCounter\\TextUtils\\TextUtils.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\tutorials\\using-on-mac-vs-full-solution\\WordCounter\\TextUtils\\TextUtils.csproj",
+        "projectName": "TextUtils",
+        "projectPath": "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\tutorials\\using-on-mac-vs-full-solution\\WordCounter\\TextUtils\\TextUtils.csproj",
+        "packagesPath": "C:\\Users\\Andy\\.nuget\\packages\\",
+        "outputPath": "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\tutorials\\using-on-mac-vs-full-solution\\WordCounter\\TextUtils\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Andy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard1.4"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Andy\\.nuget\\packages": {},
+          "c:\\code\\fun\\sadconsole\\nuget": {},
+          "c:\\code\\nugetpkgs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://ci.appveyor.com/nuget/octokit-net": {},
+          "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard1.4": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard1.4": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "target": "Package",
+              "version": "[1.6.1, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\3.1.100-preview1-014459\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

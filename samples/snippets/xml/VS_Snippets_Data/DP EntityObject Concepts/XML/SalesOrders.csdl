@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- <snippetEntityObjectCsdl> -->
+<Schema Namespace="Microsoft.Samples.Entity" Alias="Self" 
+        xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+  <EntityContainer Name="SalesOrdersEntities">
+    <EntitySet Name="LineItemSet" EntityType="Microsoft.Samples.Entity.LineItem" />
+    <EntitySet Name="OrderSet" EntityType="Microsoft.Samples.Entity.Order" />
+    <AssociationSet Name="LineItem_Order_OrderIdSet" 
+                    Association="Microsoft.Samples.Entity.LineItem_Order_OrderId">
+      <End Role="Order" EntitySet="OrderSet" />
+      <End Role="LineItems" EntitySet="LineItemSet" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="LineItem">
+    <Key>
+      <PropertyRef Name="OrderId" />
+      <PropertyRef Name="LineItemId" />
+    </Key>
+    <Property Name="OrderId" Type="Int32" Nullable="false" />
+    <Property Name="LineItemId" Type="Int32" Nullable="false" />
+    <Property Name="TrackingNumber" Type="String" MaxLength="25" 
+              Unicode="true" FixedLength="false" />
+    <Property Name="Quantity" Type="Int16" Nullable="false" />
+    <Property Name="Product" Type="Int32" Nullable="false" />
+    <Property Name="Special" Type="Int32" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Discount" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="RowGuid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Order" 
+                        Relationship="Microsoft.Samples.Entity.LineItem_Order_OrderId"
+                        FromRole="LineItems" ToRole="Order" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OrderId" />
+    </Key>
+    <Property Name="OrderId" Type="Int32" Nullable="false" />
+    <Property Name="Revision" Type="Byte" Nullable="false" />
+    <Property Name="OrderDate" Type="DateTime" Nullable="false" />
+    <Property Name="DueDate" Type="DateTime" Nullable="false" />
+    <Property Name="ShipDate" Type="DateTime" />
+    <Property Name="Status" Type="Byte" Nullable="false" />
+    <Property Name="OnlineOrder" Type="Boolean" Nullable="false" />
+    <Property Name="Customer" Type="Int32" Nullable="false" />
+    <Property Name="Contact" Type="Int32" Nullable="false" />
+    <Property Name="BillToAddress" Type="Int32" Nullable="false" />
+    <Property Name="ShipToAddress" Type="Int32" Nullable="false" />
+    <Property Name="ShipMethod" Type="Int32" Nullable="false" />
+    <Property Name="SubTotal" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Tax" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="Freight" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="RowGuid" Type="Guid" Nullable="false" />
+    <Property Name="ModifiedDate" Type="DateTime" Nullable="false" />
+    <Property Name="ExtendedInfo" Type="Self.OrderInfo" Nullable="false" />
+    <NavigationProperty Name="LineItems" 
+                        Relationship="Microsoft.Samples.Entity.LineItem_Order_OrderId"
+                        FromRole="Order" ToRole="LineItems" />
+  </EntityType>
+  <ComplexType Name="OrderInfo">
+    <Property Name="OrderNumber" Type="String" Nullable="false" MaxLength="25" />
+    <Property Name="PurchaseOrder" Type="String" MaxLength="25" />
+    <Property Name="AccountNumber" Type="String" MaxLength="15" />
+    <Property Name="Comment" Type="String" MaxLength="128" />
+  </ComplexType>
+  <Association Name="LineItem_Order_OrderId">
+    <End Role="Order" Type="Microsoft.Samples.Entity.Order" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="LineItems" Type="Microsoft.Samples.Entity.LineItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Order">
+        <PropertyRef Name="OrderId" />
+      </Principal>
+      <Dependent Role="LineItems">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
+<!-- </snippetEntityObjectCsdl> -->

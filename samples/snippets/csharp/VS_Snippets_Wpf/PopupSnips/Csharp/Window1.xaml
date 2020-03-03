@@ -1,0 +1,100 @@
+﻿<Window x:Class="PopupSnips.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="PopupSnips"
+    Loaded="PopupAdjust"
+    >
+    <StackPanel>
+      <Button>
+        <Popup Name="myPopup">
+          <TextBlock Text="Simple"/>
+        </Popup>
+      </Button>
+
+      <Ellipse Name="myEllipse" 
+          Grid.Row="0" Grid.Column="1"  
+          Height="50" Width="25" 
+          Fill="Blue" 
+          HorizontalAlignment="Left"/>
+
+
+       <Button HorizontalAlignment="Left" 
+        Width="150" Margin="20,10,0,0">
+        <StackPanel>
+          <TextBlock>Button Text</TextBlock>
+          <!--<SnippetIsOpen>-->
+           <Popup Name="myPopupIsOpen" IsOpen="True" 
+                  HorizontalOffset=".5cm" VerticalOffset="1cm">
+             <TextBlock Background="Yellow">Popup Text</TextBlock>
+           </Popup>
+          <!--</SnippetIsOpen>-->
+        </StackPanel>
+      </Button>
+      <DockPanel Background="LightBlue" Width="100" Height="100" Name="myStackPanel"/>
+      <!--<SnippetChild>-->
+      <DockPanel>
+        <Popup IsOpen="True">
+          <TextBlock Background="Yellow">Popup Text</TextBlock>
+        </Popup>
+      </DockPanel>
+      <!--</SnippetChild>-->
+
+      <!--<SnippetClosed>-->
+      <DockPanel>
+        <Popup Closed="PopupClosing">
+          <TextBlock Background="Yellow">Popup Text</TextBlock>
+        </Popup>
+      </DockPanel>
+      <!--</SnippetClosed>-->
+
+      <!--<SnippetOpened>-->
+      <DockPanel>
+        <Popup Opened="PopupOpening">
+          <TextBlock Background="Yellow">Popup Text</TextBlock>
+        </Popup>
+      </DockPanel>
+      <!--</SnippetOpened>-->
+
+      <!--<SnippetHorizontalVerticalOffset>-->
+      <DockPanel HorizontalAlignment="Stretch" Width="500" Background="Green">
+        <Popup HorizontalOffset=".1cm" VerticalOffset=".5cm" IsOpen ="True" >
+          <TextBlock Background="Orange">Popup Text</TextBlock>
+        </Popup>
+      </DockPanel>
+      <!--</SnippetHorizontalVerticalOffset>-->
+
+      <TextBlock Name = "popupTarget"/>
+
+      <!--<SnippetPlacement>-->
+      <DockPanel  Width="500" Background="Green">
+        <Popup Placement="Center" 
+               PlacementRectangle="0,0,30,50"
+               PlacementTarget="{Binding ElementName = popupTarget}" 
+               IsOpen ="True" >
+          <TextBlock Background="MintCream">Popup Text</TextBlock>
+        </Popup>
+      </DockPanel>
+      <!--</SnippetPlacement>-->
+
+      <!--<SnippetAllowsTransparency>-->
+      <DockPanel  Width="500" Background="Aqua">
+        <Popup Placement="Center" PlacementRectangle="0,0,30,50"  
+                IsOpen ="True" AllowsTransparency="True"
+                PopupAnimation="Fade">
+          <TextBlock Background="Purple">Popup Text</TextBlock>
+        </Popup>
+      </DockPanel>
+      <!--</SnippetAllowsTransparency>-->
+
+     <!--<SnippetStaysOpen>-->
+      <DockPanel  Width="500" Background="Aqua">
+        <Popup Placement="Center" PlacementRectangle="0,0,30,50"  
+                IsOpen ="True" StaysOpen="True"
+                PopupAnimation="Fade">
+          <TextBlock Background="Purple">Popup Text</TextBlock>
+        </Popup>
+      </DockPanel>
+      <!--</SnippetStaysOpen>-->
+
+    </StackPanel>
+</Window>

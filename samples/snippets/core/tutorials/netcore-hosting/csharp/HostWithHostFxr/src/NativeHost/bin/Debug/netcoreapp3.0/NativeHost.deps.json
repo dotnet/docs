@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "NativeHost/1.0.0": {
+        "dependencies": {
+          "DotNetLib": "1.0.0"
+        },
+        "runtime": {
+          "NativeHost.dll": {}
+        }
+      },
+      "DotNetLib/1.0.0": {
+        "runtime": {
+          "DotNetLib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NativeHost/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DotNetLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

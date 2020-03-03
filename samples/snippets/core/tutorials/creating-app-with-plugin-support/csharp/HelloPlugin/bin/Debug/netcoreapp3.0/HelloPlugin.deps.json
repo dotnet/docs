@@ -1,0 +1,26 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "HelloPlugin/1.0.0": {
+        "dependencies": {
+          "PluginBase": "1.0.0"
+        },
+        "runtime": {
+          "HelloPlugin.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "HelloPlugin/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

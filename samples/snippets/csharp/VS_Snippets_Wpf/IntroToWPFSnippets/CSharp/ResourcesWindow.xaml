@@ -1,0 +1,24 @@
+﻿<!--<SnippetResourceWindowMARKUP1>-->
+<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="SDKSample.ResourcesWindow"
+    Title="Resources Window">
+  
+  <!-- Define window-scoped background color resource -->
+  <Window.Resources>
+    <SolidColorBrush x:Key="defaultBackground" Color="Red" />
+  </Window.Resources>
+  <!--</SnippetResourceWindowMARKUP1>-->
+  <StackPanel>
+    <!--<SnippetResourceWindowMARKUP2>-->
+    <!-- Button background is defined by window-scoped resource -->
+    <Button Background="{StaticResource defaultBackground}">One Button</Button>
+    
+    <!-- Label background is defined by window-scoped resource -->
+    <Label Background="{StaticResource defaultBackground}">One Label</Label>
+    <!--</SnippetResourceWindowMARKUP2>-->
+  </StackPanel>
+  <!--<SnippetResourceWindowMARKUP3>-->
+</Window>
+<!--</SnippetResourceWindowMARKUP3>-->

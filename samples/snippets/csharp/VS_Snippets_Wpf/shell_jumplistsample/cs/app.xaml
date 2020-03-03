@@ -1,0 +1,32 @@
+﻿<!-- <snippet000> -->
+<Application x:Class="JumpListSample.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <JumpList.JumpList>
+        <!-- <snippet001> -->
+        <JumpList ShowRecentCategory="True"
+                  ShowFrequentCategory="True"
+                  JumpItemsRejected="JumpList_JumpItemsRejected"
+                  JumpItemsRemovedByUser="JumpList_JumpItemsRemovedByUser">
+        <!-- </snippet001> -->
+            <JumpTask Title="Notepad" 
+                      Description="Open Notepad." 
+                      ApplicationPath="C:\Windows\notepad.exe"
+                      IconResourcePath="C:\Windows\notepad.exe"/>
+            <!-- <snippet002> -->
+            <JumpTask Title="Read Me" 
+                      Description="Open readme.txt in Notepad." 
+                      ApplicationPath="C:\Windows\notepad.exe"
+                      IconResourcePath="C:\Windows\System32\imageres.dll"
+                      IconResourceIndex="14"
+                      WorkingDirectory="C:\Users\Public\Documents"
+                      Arguments="readme.txt"/>
+            <!-- </snippet002> -->
+            <!-- <snippet003> -->
+            <JumpPath Path="C:\Users\Public\Documents\readme.txt" />
+            <!-- </snippet003> -->
+        </JumpList>
+    </JumpList.JumpList>
+</Application>
+<!-- </snippet000> -->

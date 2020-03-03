@@ -1,0 +1,39 @@
+<!-- <SnippetStackPanelOrientationExampleWholePage> -->
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+
+  <!-- This StackPanel stacks two other StackPanels on top of each other. The
+       first StackPanel stacks its items horizontally while the second stacks them
+       vertically. -->
+  <StackPanel>
+
+    <!-- The items under this StackPanel are stacked horizontally. -->
+    <StackPanel Orientation="Horizontal">
+      <Border Background="SkyBlue">
+        <TextBlock>Stacked Item #1</TextBlock>
+      </Border>
+      <Border Background="CadetBlue">
+        <TextBlock>Stacked Item #2</TextBlock>
+      </Border>
+      <Border Background="LightGoldenRodYellow">
+        <TextBlock>Stacked Item #3</TextBlock>
+      </Border>
+    </StackPanel>
+
+    <!-- The items under this StackPanel are stacked Vertically. Note that Orientation 
+         has a default value of "Vertical" but in this example the property is explicitely
+         set for clarity. -->
+    <StackPanel Orientation="Vertical">
+      <Border Background="SkyBlue">
+        <TextBlock>Stacked Item #1</TextBlock>
+      </Border>
+      <Border Background="CadetBlue">
+        <TextBlock>Stacked Item #2</TextBlock>
+      </Border>
+      <Border Background="LightGoldenRodYellow">
+        <TextBlock >Stacked Item #3</TextBlock>
+      </Border>
+    </StackPanel>
+  </StackPanel>
+  
+</Page>
+<!-- </SnippetStackPanelOrientationExampleWholePage> -->

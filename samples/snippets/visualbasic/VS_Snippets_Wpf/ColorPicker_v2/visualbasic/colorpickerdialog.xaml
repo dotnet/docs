@@ -1,0 +1,27 @@
+<Window
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  x:Class="Microsoft.Samples.CustomControls.ColorPickerDialog"
+  xmlns:customControls="clr-namespace:Microsoft.Samples.CustomControls"
+  Title="Select a Color"
+  Width="600"
+  Height="400">
+  <DockPanel>
+    <StackPanel DockPanel.Dock="Bottom"
+      Orientation="Horizontal"
+      HorizontalAlignment="Right" 
+      Margin="10">
+      <Button Name="OKButton"
+        Click="okButtonClicked"
+        IsEnabled="False">OK</Button>
+      <Button Click="cancelButtonClicked">Cancel</Button>
+    </StackPanel>
+
+    <customControls:ColorPicker 
+      x:Name="cPicker"
+       SelectedColorChanged="onSelectedColorChanged" 
+       Margin="10,10,10,0"/>
+  </DockPanel>
+
+
+</Window>

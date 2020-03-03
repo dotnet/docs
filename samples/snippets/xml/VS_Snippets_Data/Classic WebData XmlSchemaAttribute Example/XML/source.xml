@@ -1,0 +1,17 @@
+<!--<Snippet2>-->
+
+<?xml version="1.0" encoding="IBM437"?>
+<xs:schema  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:attribute name="mybaseattribute">
+        <xs:simpleType>
+            <xs:restriction base="xs:integer">
+                <xs:maxInclusive value="1000" />
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:attribute>
+    <xs:complexType name="myComplexType">
+        <xs:attribute ref="mybaseattribute" />
+    </xs:complexType>
+</xs:schema>
+<!--</Snippet2>-->
+

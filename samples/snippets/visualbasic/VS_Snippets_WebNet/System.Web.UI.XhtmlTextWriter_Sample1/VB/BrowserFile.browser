@@ -1,0 +1,13 @@
+﻿<!--
+    You can find existing browser definitions at
+    <windir>\Microsoft.NET\Framework\<ver>\CONFIG\Browsers
+-->
+<browsers>
+	<browser refID="IE">
+		<controlAdapters>
+			<adapter controlType="AspNet.Samples.TestLabel"
+                     adapterType="AspNet.Samples.XhtmlTestLabelAdapter" />
+		</controlAdapters>
+	</browser>
+</browsers>
+

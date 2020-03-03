@@ -1,0 +1,65 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Code\\Work\\dotnet\\samples\\snippets\\csharp\\VS_Snippets_Misc\\tpl_partitioners\\cs\\partitioner02.csproj": {}
+  },
+  "projects": {
+    "C:\\Code\\Work\\dotnet\\samples\\snippets\\csharp\\VS_Snippets_Misc\\tpl_partitioners\\cs\\partitioner02.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Code\\Work\\dotnet\\samples\\snippets\\csharp\\VS_Snippets_Misc\\tpl_partitioners\\cs\\partitioner02.csproj",
+        "projectName": "partitioner02",
+        "projectPath": "C:\\Code\\Work\\dotnet\\samples\\snippets\\csharp\\VS_Snippets_Misc\\tpl_partitioners\\cs\\partitioner02.csproj",
+        "packagesPath": "C:\\Users\\Andy\\.nuget\\packages\\",
+        "outputPath": "C:\\Code\\Work\\dotnet\\samples\\snippets\\csharp\\VS_Snippets_Misc\\tpl_partitioners\\cs\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Andy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Andy\\.nuget\\packages": {},
+          "c:\\code\\fun\\sadconsole\\nuget": {},
+          "c:\\code\\nugetpkgs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-entityframeworkcore/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-extensions/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": [
+            "Microsoft.NETCore.App"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+﻿<Window x:Class="DataGrid_AutoGenColumns.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window1" Height="300" Width="300">
+    <Grid>
+        <!--<Snippet1>-->
+        <!-- The DataGrid.DataContext is a DataTable that contains a list of customers.  The DataTable columns are  
+             Title, FirstName, MiddleName, LastName, Suffix, CompanyName, EmailAddress, and Phone.-->
+        <DataGrid Name="DG1" ItemsSource="{Binding}" AutoGenerateColumns="True" AutoGeneratingColumn="DG1_AutoGeneratingColumn" />
+         <!--</Snippet1>-->
+    </Grid>
+</Window>

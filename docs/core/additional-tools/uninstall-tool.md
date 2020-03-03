@@ -24,7 +24,7 @@ Because of these limitations, the tool may not be able to uninstall all of the .
 You can download the .NET Core Uninstall Tool from [here](https://aka.ms/dotnet-core-uninstall-tool) and find the source code at the [dotnet/cli-lab](https://github.com/dotnet/cli-lab) GitHub repository.
 
 > [!NOTE]
-> The tool requires elevation to uninstall .NET Core SDKs and runtimes. Therefore, it should be installed in a write-protected directory such as *C:\Program Files* on Windows or */usr/local/bin* on macOS. See also [Elevated access for dotnet commands](../tools/elevated-access.md). Detailed installation instructions are available on the [GitHub Releases page](https://aka.ms/dotnet-core-uninstall-tool).
+> The tool requires elevation to uninstall .NET Core SDKs and runtimes. Therefore, it should be installed in a write-protected directory such as *C:\Program Files* on Windows or */usr/local/bin* on macOS. See also [Elevated access for dotnet commands](../tools/elevated-access.md). For more information, see the [detailed installation instructions](https://aka.ms/dotnet-core-uninstall-tool).
 
 ## Run the tool
 

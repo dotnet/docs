@@ -253,7 +253,7 @@ You can ignore the convention where an event, base class, or interface contract 
 
 The following code is the *MainWindow.xaml.cs* file from the WPF application that this article discusses. You can download the sample from [Async Sample: Example from "Asynchronous Programming with Async and Await"](https://docs.microsoft.com/samples/dotnet/samples/async-and-await-cs/).
 
-[!code-csharp[async](~/samples/async/async-and-await/cs/MainWindow.xaml.cs)]
+[!code-csharp[async](~/samples/snippets/standard/async/async-and-await/cs/MainWindow.xaml.cs)]
 
 ## See also
 

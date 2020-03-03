@@ -1,0 +1,42 @@
+﻿<Window x:Class="StatuxBar_Snips.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="StatuxBar_Snips" Height="300" Width="300"
+    >
+  <Grid>
+    <!--<Snippet1>-->
+    <StatusBar Name="sbar" 
+               VerticalAlignment="Bottom" Background="Beige" >
+
+      <StatusBarItem>
+        <TextBlock>Downloading File</TextBlock>
+      </StatusBarItem>
+      <StatusBarItem>
+        <ProgressBar Width="100" Height="20"
+                     Name="progressBar1">
+          <ProgressBar.Triggers>
+            <EventTrigger RoutedEvent="ProgressBar.Loaded">
+              <BeginStoryboard>
+                <Storyboard>
+                  <DoubleAnimation
+                    Storyboard.TargetName="progressBar1" 
+                    Storyboard.TargetProperty="Value"
+                    From="0" To="100" Duration="0:0:5"  />
+                </Storyboard>
+              </BeginStoryboard>
+            </EventTrigger>
+          </ProgressBar.Triggers>
+        </ProgressBar>
+      </StatusBarItem>
+      <Separator/>
+      <StatusBarItem>
+        <TextBlock>Online</TextBlock>
+      </StatusBarItem>
+      <StatusBarItem HorizontalAlignment="Right">
+        <Image Source="images\help.bmp" Width="16" Height="16"/>
+      </StatusBarItem>
+    </StatusBar>
+    <!--</Snippet1>-->
+
+  </Grid>
+</Window>

@@ -1,0 +1,22 @@
+<!--<snippet2>-->
+<?xml version='1.0'?>
+<bookstore xmlns="urn:newbooks-schema">
+  <book genre="novel" style="hardcover">
+    <title>The Handmaid's Tale</title>
+    <author>
+      <first-name>Margaret</first-name>
+      <last-name>Atwood</last-name>
+    </author>
+    <price>19.95</price>
+  </book>
+  <book genre="novel" style="other">
+    <title>The Poisonwood Bible</title>
+    <author>
+      <first-name>Barbara</first-name>
+      <last-name>Kingsolver</last-name>
+    </author>
+    <price>11.99</price>
+  </book>
+</bookstore>
+<!--</snippet2>-->
+

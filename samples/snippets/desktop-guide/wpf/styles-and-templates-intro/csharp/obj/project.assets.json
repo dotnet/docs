@@ -1,0 +1,95 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.0": []
+  },
+  "packageFolders": {
+    "C:\\Users\\Andy\\.nuget\\packages\\": {},
+    "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Code\\Work\\dotnet\\dotnet-docs\\samples\\snippets\\desktop-guide\\wpf\\styles-and-templates-intro\\csharp\\CSharpExample.csproj",
+      "projectName": "IntroToStylingAndTemplating",
+      "projectPath": "C:\\Code\\Work\\dotnet\\dotnet-docs\\samples\\snippets\\desktop-guide\\wpf\\styles-and-templates-intro\\csharp\\CSharpExample.csproj",
+      "packagesPath": "C:\\Users\\Andy\\.nuget\\packages\\",
+      "outputPath": "C:\\Code\\Work\\dotnet\\dotnet-docs\\samples\\snippets\\desktop-guide\\wpf\\styles-and-templates-intro\\csharp\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Andy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\Andy\\.nuget\\packages": {},
+        "c:\\code\\fun\\sadconsole\\nuget": {},
+        "c:\\code\\nugetpkgs": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://ci.appveyor.com/nuget/octokit-net": {},
+        "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.0": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[3.0.0, 3.0.0]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\3.1.100-preview2-014569\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

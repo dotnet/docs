@@ -1,0 +1,27 @@
+<!--<Snippet2>-->
+<?xml version="1.0" encoding="IBM437"?>
+<xs:schema  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:complexType name="phoneNumber">
+        <xs:sequence>
+            <xs:element name="areaCode" minOccurs="0" maxOccurs="1"/>
+            <xs:element name="prefix" minOccurs="1" maxOccurs="1"/>
+            <xs:element name="number" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="localPhoneNumber">
+        <xs:complexContent mixed="false">
+            <xs:restriction base="phoneNumber">
+                <xs:sequence>
+                    <xs:element name="areaCode" minOccurs="0" maxOccurs="1"/>
+                    <xs:element name="prefix" minOccurs="1" maxOccurs="1"/>
+                    <xs:element name="number" minOccurs="1" maxOccurs="1"/>
+                </xs:sequence>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    
+</xs:schema>
+<!--</Snippet2>-->
+

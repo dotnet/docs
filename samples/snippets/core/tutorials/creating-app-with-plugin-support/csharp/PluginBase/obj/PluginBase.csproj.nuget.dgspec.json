@@ -1,0 +1,71 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\extensions\\AppWithPlugin\\PluginBase\\PluginBase.csproj": {}
+  },
+  "projects": {
+    "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\extensions\\AppWithPlugin\\PluginBase\\PluginBase.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\extensions\\AppWithPlugin\\PluginBase\\PluginBase.csproj",
+        "projectName": "PluginBase",
+        "projectPath": "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\extensions\\AppWithPlugin\\PluginBase\\PluginBase.csproj",
+        "packagesPath": "C:\\Users\\Andy\\.nuget\\packages\\",
+        "outputPath": "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\extensions\\AppWithPlugin\\PluginBase\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Andy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Andy\\.nuget\\packages": {},
+          "c:\\code\\fun\\sadconsole\\nuget": {},
+          "c:\\code\\nugetpkgs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://ci.appveyor.com/nuget/octokit-net": {},
+          "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\3.1.100-preview1-014459\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

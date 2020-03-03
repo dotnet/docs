@@ -1,0 +1,11 @@
+﻿<Window x:Class="XAML.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="XAML" Height="300" Width="300"
+    >
+  <Grid>
+    <!--<SnippetSetNavigationUIVisibility>-->
+    <Frame Name="hostFrame" NavigationUIVisibility="Visible"/>
+    <!--</SnippetSetNavigationUIVisibility>-->
+  </Grid>
+</Window>

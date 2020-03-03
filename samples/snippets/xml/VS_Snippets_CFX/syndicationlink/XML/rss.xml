@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0">
+  <channel CustomAttribute="Value">
+    <title>Feed Title</title>
+    <link>http://feed/Alternate/Link</link>
+    <description>This is a sample feed</description>
+    <language>en-us</language>
+    <copyright>Copyright 2007</copyright>
+    <managingEditor>lene@company.com</managingEditor>
+    <lastBuildDate>Fri, 13 Apr 2007 17:29:38 Z</lastBuildDate>
+    <category domain="CategoryScheme">FeedCategory</category>
+    <a10:link rel="alternate" type="text/html" title="Link Title" length="1000" href="http://server/link" />
+    <generator>Sample Code</generator>
+    <a10:contributor>
+      <a10:name>Jesper Aaberg</a10:name>
+      <a10:uri>http://Jesper/Aaberg</a10:uri>
+      <a10:email>jesper@company.com</a10:email>
+    </a10:contributor>
+    <a10:author>
+      <a10:name>Lene Aalling</a10:name>
+      <a10:uri>http://Lene/Aalling</a10:uri>
+      <a10:email>lene@company.com</a10:email>
+    </a10:author>
+    <image>
+      <url>http://server/image.jpg</url>
+      <title>Feed Title</title>
+      <link>http://feed/Alternate/Link</link>
+    </image>
+    <a10:id>FeedID</a10:id>
+    <!-- <Snippet3> -->
+    <a10:link customAttribute="value" rel="alternate" type="text/html" title="Link Title" length="1000" href="http://server/link" />
+    <!-- </Snippet3> -->
+    <CustomElement>Some text</CustomElement>
+    <item>
+      <guid isPermaLink="false">ItemID</guid>
+      <link>http://server/items</link>
+      <title>Item Title</title>
+      <description>Some text content</description>
+      <a10:updated>2007-04-13T17:29:38Z</a10:updated>
+    </item>
+  </channel>
+</rss>
+

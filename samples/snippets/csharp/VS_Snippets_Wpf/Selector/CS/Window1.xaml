@@ -1,0 +1,73 @@
+﻿<Window x:Class="SelectorIsSelected.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="SelectorIsSelected" 
+    >
+  <Window.Resources>
+
+    <!--<Snippet2>-->
+    <XmlDataProvider x:Key="Employees" XPath="/Employees/*">
+      <x:XData>
+        <Employees xmlns="">
+          <Employee Name="Terry Adams" Type="FTE" EmployeeNumber="1" />
+          <Employee Name="Claire O&apos;Donnell" Type="FTE" EmployeeNumber="12345" />
+          <Employee Name="Palle Peterson" Type="FTE" EmployeeNumber="5678" />
+          <Employee Name="Amy E. Alberts" Type="CSG" EmployeeNumber="99222" />
+          <Employee Name="Stefan Hesse" Type="Vendor" EmployeeNumber="-" />
+        </Employees>
+      </x:XData>
+    </XmlDataProvider>
+
+    <DataTemplate x:Key="EmployeeItemTemplate">
+      <TextBlock Text="{Binding XPath=@Name}" />
+    </DataTemplate>
+    <!--</Snippet2>-->
+
+    </Window.Resources>
+  <StackPanel>
+    <!--<Snippet1>-->
+    <ListBox Name="listBox1" SelectionMode="Multiple">
+      <CheckBox Selector.IsSelected="True" 
+                IsChecked="{Binding RelativeSource={RelativeSource Self}, 
+                             Path=(Selector.IsSelected), Mode=TwoWay}">
+        CheckBox.IsChecked is bound to Selector.IsChecked, which is set only
+        once.
+      </CheckBox>
+
+      <CheckBox ListBox.IsSelected="True" 
+                IsChecked="{Binding RelativeSource={RelativeSource 
+                                      AncestorType={x:Type ListBoxItem}}, 
+                             Path=IsSelected, Mode=TwoWay}">
+        CheckBox.IsChecked is bound to ListBoxItem.IsChecked, which is
+        updated throughout the duration of the application.
+      </CheckBox>
+    </ListBox>
+    <!--</Snippet1>-->
+
+    <!--<Snippet3>-->
+    <ListBox Name="employeeListBox"
+             ItemsSource="{Binding Source={StaticResource Employees}}"
+             ItemTemplate="{StaticResource EmployeeItemTemplate}"
+             SelectedValue="12345"
+             SelectedValuePath="@EmployeeNumber"/>
+
+    <TextBlock Text="{Binding ElementName=employeeListBox, 
+                      Path=SelectedValue}"/>
+
+    <!--</Snippet3>-->
+
+    <WrapPanel>
+      <!--<Snippet4>-->
+      <ListBox Name="employeeListBox1"
+               ItemsSource="{Binding Source={StaticResource Employees}}"
+               ItemTemplate="{StaticResource EmployeeItemTemplate}"
+               IsSynchronizedWithCurrentItem="True"/>
+
+      <ListBox Name="employeeListBox2"
+               ItemsSource="{Binding Source={StaticResource Employees}}"
+               ItemTemplate="{StaticResource EmployeeItemTemplate}"
+               IsSynchronizedWithCurrentItem="True"/>
+      <!--</Snippet4>-->
+    </WrapPanel>
+  </StackPanel>
+</Window>

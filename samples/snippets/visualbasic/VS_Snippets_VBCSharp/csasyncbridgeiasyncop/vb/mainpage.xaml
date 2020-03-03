@@ -1,0 +1,13 @@
+﻿<Page
+    x:Class="SequentialBlogReader.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="StartButton" Content="Start" HorizontalAlignment="Stretch" Margin="325,128,330,0" VerticalAlignment="Top" Click="StartButton_Click" Height="71" Background="#FFA89B9B" FontWeight="Bold" FontSize="36"/>
+        <TextBox x:Name="ResultsTextBox" Margin="325,222,330,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="546" FontSize="10" ScrollViewer.VerticalScrollBarVisibility="Visible" />
+    </Grid>
+</Page>

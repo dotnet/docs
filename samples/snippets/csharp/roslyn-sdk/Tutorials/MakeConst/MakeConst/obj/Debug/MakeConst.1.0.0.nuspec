@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MakeConst</id>
+    <version>1.0.0</version>
+    <authors>wiwagn</authors>
+    <owners>wiwagn</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://license_url_here_or_delete_this_line/</licenseUrl>
+    <projectUrl>http://project_url_here_or_delete_this_line/</projectUrl>
+    <iconUrl>http://icon_url_here_or_delete_this_line/</iconUrl>
+    <description>MakeConst</description>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <copyright>Copyright</copyright>
+    <tags>MakeConst, analyzers</tags>
+    <repository url="http://REPOSITORY_URL_HERE_OR_DELETE_THIS_LINE" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\code\work\dotnet\dotnet-docs\samples\csharp\roslyn-sdk\Tutorials\MakeConst\MakeConst\tools\install.ps1" target="tools\install.ps1" />
+    <file src="C:\code\work\dotnet\dotnet-docs\samples\csharp\roslyn-sdk\Tutorials\MakeConst\MakeConst\tools\uninstall.ps1" target="tools\uninstall.ps1" />
+    <file src="C:\code\work\dotnet\dotnet-docs\samples\csharp\roslyn-sdk\Tutorials\MakeConst\MakeConst\bin\Debug\netstandard2.0\MakeConst.dll" target="analyzers\dotnet\cs\MakeConst.dll" />
+  </files>
+</package>

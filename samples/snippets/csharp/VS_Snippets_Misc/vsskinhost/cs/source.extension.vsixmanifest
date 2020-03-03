@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSIX xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010" xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance" >
+
+  <Identifier ID="58e844c8-4e18-42d7-8505-e8178e626d79">
+    <Name>VS Skin Host - 58e844c8-4e18-42d7-8505-e8178e626d79</Name>
+    <Author>Contoso</Author>
+    <Version>1.0</Version>
+    <Description>Hosts custom skins in Visual Studio.</Description>
+    <Locale>1033</Locale>
+    <InstalledByMSI>false</InstalledByMSI>
+    <SupportedVSEdition version="10.0">
+      <Edition>Pro</Edition>
+      <Edition>VST_All</Edition>
+    </SupportedVSEdition>
+    <SupportedFrameworkRuntimeEdition minversion="4.0" maxversion="4.0" />
+  </Identifier>
+
+  <References/>
+  
+  <Content>
+    <VSPackage>|VSSkinHost;PkgdefProjectOutputGroup|</VSPackage>
+  </Content>
+
+</VSIX>

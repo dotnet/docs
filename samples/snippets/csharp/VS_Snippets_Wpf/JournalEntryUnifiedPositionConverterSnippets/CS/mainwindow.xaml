@@ -1,0 +1,52 @@
+﻿<!--<SnippetJournalEntryUnifiedPositionConverterWithMenuXAML>-->
+<Window 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:presentationFramework="clr-namespace:System.Windows.Navigation;assembly=presentationframework"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="JournalEntryUnifiedPositionConverterSnippets"
+    >
+
+    <Window.Resources>
+
+        <presentationFramework:JournalEntryUnifiedViewConverter x:Key="JournalEntryUnifiedViewConverter" />
+
+        <!--MenuItem data template-->
+        <DataTemplate x:Key="JournalEntryMenuItemTemplate">
+            <MenuItem VerticalContentAlignment="Center" Command="NavigationCommands.NavigateJournal" CommandTarget="{Binding ElementName=frame}" CommandParameter="{Binding RelativeSource={RelativeSource Self}}">
+                <MenuItem.Template>
+                    <ControlTemplate>
+                        <TextBlock>
+                            <TextBlock Text="{Binding (JournalEntryUnifiedViewConverter.JournalEntryPosition)}" FontWeight="Bold"></TextBlock>
+                            <LineBreak />
+                            <TextBlock Text="{Binding Path=Name}" />
+                        </TextBlock>
+                    </ControlTemplate>
+                </MenuItem.Template>
+            </MenuItem>
+        </DataTemplate>
+
+    </Window.Resources>
+
+    <DockPanel>
+
+        <!--Unified navigation history menu-->
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Unified Navigation History" ItemTemplate="{DynamicResource JournalEntryMenuItemTemplate}">
+                <MenuItem.ItemsSource>
+                    <MultiBinding Converter="{StaticResource JournalEntryUnifiedViewConverter}">
+                        <MultiBinding.Bindings>
+                            <Binding ElementName="frame" Path="BackStack"/>
+                            <Binding ElementName="frame" Path="ForwardStack" />
+                        </MultiBinding.Bindings>
+                    </MultiBinding>
+                </MenuItem.ItemsSource>
+            </MenuItem>
+        </Menu>
+
+        <!--Navigator (Frame with its navigation chrome hidden-->
+        <Frame Name="frame" NavigationUIVisibility="Hidden" Source="HomePage.xaml" />
+
+    </DockPanel>
+    
+</Window>
+<!--</SnippetJournalEntryUnifiedPositionConverterWithMenuXAML>-->

@@ -1,0 +1,111 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "DotNetLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "compile": {
+          "bin/placeholder/DotNetLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DotNetLib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DotNetLib/1.0.0": {
+      "type": "project",
+      "path": "../DotNetLib/DotNetLib.csproj",
+      "msbuildProject": "../DotNetLib/DotNetLib.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.0": [
+      "DotNetLib >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Andy\\.nuget\\packages\\": {},
+    "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\hosting\\HostWithHostFxr\\src\\NativeHost\\NativeHost.csproj",
+      "projectName": "NativeHost",
+      "projectPath": "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\hosting\\HostWithHostFxr\\src\\NativeHost\\NativeHost.csproj",
+      "packagesPath": "C:\\Users\\Andy\\.nuget\\packages\\",
+      "outputPath": "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\hosting\\HostWithHostFxr\\src\\NativeHost\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Andy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Users\\Andy\\.nuget\\packages": {},
+        "c:\\code\\fun\\sadconsole\\nuget": {},
+        "c:\\code\\nugetpkgs": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://ci.appveyor.com/nuget/octokit-net": {},
+        "https://dotnet.myget.org/F/roslyn/api/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "projectReferences": {
+            "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\hosting\\HostWithHostFxr\\src\\DotNetLib\\DotNetLib.csproj": {
+              "projectPath": "C:\\code\\work\\dotnet\\dotnet-docs\\samples\\core\\hosting\\HostWithHostFxr\\src\\DotNetLib\\DotNetLib.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.0": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.0.0, 3.0.0]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\3.1.100-preview1-014459\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

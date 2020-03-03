@@ -1,0 +1,49 @@
+ <StackPanel Name="root"  
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+>
+
+<Grid ShowGridLines ="false" Background ="White">
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="300"/>
+<ColumnDefinition Width="250"/>
+</Grid.ColumnDefinitions>
+<Grid.RowDefinitions>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+</Grid.RowDefinitions>
+<TextBlock Margin="10, 10, 5, 5" Grid.Column="0" Grid.Row="0" FontSize="24">Button Styles</TextBlock>
+<TextBlock Margin="10, 10, 5, 5" Grid.Column="0" Grid.Row="1" FontSize="14" Grid.ColumnSpan="2">The following buttons 
+        are created using styles.</TextBlock>  
+<Button Margin="10, 10, 5, 5" Grid.Column="0" Grid.Row="2" Style="{StaticResource SystemResStyle}">SystemResources Style</Button>
+<TextBlock Margin="10, 10, 5, 5" Grid.Column="1" Grid.Row="2" FontSize="12" VerticalAlignment="Center" 
+        TextWrapping="WrapWithOverflow">Specifies the background and foreground colors using system resource brushes.
+</TextBlock>  
+<Button Margin="10, 10, 5, 5" Grid.Column="0" Grid.Row="4" Style="{StaticResource Triggers}">Triggers Style</Button>
+<TextBlock Margin="10, 10, 5, 5" Grid.Column="1" Grid.Row="4" FontSize="12" VerticalAlignment="Center" 
+        TextWrapping="WrapWithOverflow">Changes the button's appearance in response to a mouse event.</TextBlock>
+<Button Margin="10, 10, 5, 0" Grid.Column="0" Grid.Row="6" Style="{StaticResource Properties}" FontSize="14" 
+        Grid.RowSpan="2">Properties Style
+    <Button.Background>
+     <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+      <LinearGradientBrush.GradientStops>
+       <GradientStop Offset="0.0" Color="LightBlue"/>
+       <GradientStop Offset="1.0" Color="SlateBlue"/>
+      </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+   </Button.Background>
+   </Button>
+<TextBlock Margin="10, 10, 5, 5" Grid.Column="1" Grid.Row="6" FontSize="12" VerticalAlignment="Center" 
+        TextWrapping="WrapWithOverflow">Uses properties in a style.</TextBlock>
+</Grid>
+
+</StackPanel>  

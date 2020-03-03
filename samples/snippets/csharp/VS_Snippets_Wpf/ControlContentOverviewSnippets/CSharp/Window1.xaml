@@ -1,0 +1,170 @@
+﻿<Window x:Class="ControlContentOverviewSnippets.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="ControlContentOverviewSnippets" 
+    xmlns:src="clr-namespace:ControlContentOverviewSnippets"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    >
+  <Window.Resources>
+
+    <!--<Snippet5>-->
+    <!--Create a Style as a Resource.-->
+    <Style TargetType="ListBoxItem">
+      <Setter Property="HorizontalContentAlignment" Value="Center"/>
+    </Style>
+    <!--</Snippet5>-->
+
+    <!--<Snippet7>-->
+    <!--Create an instance of MyData as a resource.-->
+    <src:MyData x:Key="dataList"/>
+    <!--</Snippet7>-->
+  </Window.Resources>
+
+  <StackPanel>
+    <WrapPanel>
+      <!--<Snippet1>-->
+      <!--Create a Button with a string as its content.-->
+      <Button>This is string content of a Button</Button>
+
+      <!--Create a Button with a DateTime object as its content.-->
+      <Button xmlns:sys="clr-namespace:System;assembly=mscorlib">
+        <sys:DateTime>2004/3/4 13:6:55</sys:DateTime>
+      </Button>
+
+      <!--Create a Button with a single UIElement as its content.-->
+      <Button>
+        <Rectangle Height="40" Width="40" Fill="Blue"/>
+      </Button>
+
+      <!--Create a Button with a panel that contains multiple objects 
+      as its content.-->
+      <Button>
+        <StackPanel>
+          <Ellipse Height="40" Width="40" Fill="Blue"/>
+          <TextBlock TextAlignment="Center">Button</TextBlock>
+        </StackPanel>
+      </Button>
+      <!--</Snippet1>-->
+
+      <!--<Snippet3>-->
+      <!--Create a ListBox that contains a string, a Rectangle,
+           a Panel, and a DateTime object. These items can be accessed
+           via the Items property.-->
+      <ListBox xmlns:sys="clr-namespace:System;assembly=mscorlib"
+               Name="simpleListBox">
+
+        <!-- The <ListBox.Items> element is implicitly used.-->
+        This is a string in a ListBox
+
+        <sys:DateTime>2004/3/4 13:6:55</sys:DateTime>
+
+        <Rectangle Height="40" Width="40"  Fill="Blue"/>
+
+        <StackPanel Name="itemToSelect">
+          <Ellipse Height="40" Fill="Blue"/>
+          <TextBlock>Text below an Ellipse</TextBlock>
+        </StackPanel>
+
+        <TextBlock>String in a TextBlock</TextBlock>
+        <!--</ListBox.Items>-->
+      </ListBox>
+      <!--</Snippet3>-->
+
+      <Grid>
+        <Grid.Resources>
+          <!--<Snippet13>-->
+          <!--Create a Style as a Resource.-->
+          <Style TargetType="ListBoxItem">
+            <Setter Property="Foreground" Value="Green"/>
+          </Style>
+          <!--</Snippet13>-->
+        </Grid.Resources>
+        <!--<Snippet14>-->
+        <ListBox Foreground="Blue">
+          <ListBoxItem>
+            <TextBlock Name="textBlock1">TextBlock in a ListBoxItem.</TextBlock>
+          </ListBoxItem>
+          <TextBlock Name="textBlock2">TextBlock not in a ListBoxItem.</TextBlock>
+        </ListBox>
+        <!--</Snippet14>-->
+      </Grid>
+
+      <!--<Snippet6>-->
+      <ListBox ItemsSource="{Binding Source={StaticResource dataList}}"/>
+      <!--</Snippet6>-->
+
+      <!--<Snippet10>-->
+      <!--Explicitly create a ListBoxItem for each item in the ListBox-->
+      <ListBox xmlns:sys="clr-namespace:System;assembly=mscorlib"
+               Name="listBoxItemListBox">
+        <!-- The <ListBox.Items> element is implicitly used.-->
+        <ListBoxItem>
+          This is a string in a ListBox
+        </ListBoxItem>
+        <ListBoxItem>
+          <sys:DateTime>2004/3/4 13:6:55</sys:DateTime>
+        </ListBoxItem>
+        <ListBoxItem>
+          <Rectangle Height="40" Width="40" Fill="Blue"/>
+        </ListBoxItem>
+        <ListBoxItem>
+          <StackPanel>
+            <Ellipse Height="40" Width="40" Fill="Blue"/>
+            <TextBlock>Text below an Ellipse</TextBlock>
+          </StackPanel>
+        </ListBoxItem>
+        <!--</ListBox.Items>-->
+      </ListBox>
+      <!--</Snippet10>-->
+
+      <!--<Snippet16>-->
+      <TabControl>
+        <TabItem>
+          <TabItem.Header>
+            <StackPanel Orientation="Horizontal">
+              <Ellipse Width="10" Height="10" Fill="DarkGray"/>
+              <TextBlock>Tab 1</TextBlock>
+            </StackPanel>
+          </TabItem.Header>
+          <StackPanel>
+            <TextBlock>Enter some text</TextBlock>
+            <TextBox Name="textBox1" Width="50"/>
+          </StackPanel>
+        </TabItem>
+        <TabItem Header="Tab 2">
+          <!--Bind TextBlock.Text to the TextBox on the first
+          TabItem.-->
+          <TextBlock Text="{Binding ElementName=textBox1, Path=Text}"/>
+        </TabItem>
+      </TabControl>
+      <!--</Snippet16>-->
+
+      <!--<Snippet17>-->
+      <TreeView xmlns:sys="clr-namespace:System;assembly=mscorlib"
+                Margin="10">
+        <TreeViewItem Header="TreeViewItem 1" IsExpanded="True">
+          TreeViewItem 1a
+          <sys:DateTime>2004/3/4 13:6:55</sys:DateTime>
+          <TreeViewItem>
+            <TreeViewItem.Header>
+              <Rectangle Height="10" Width="10" Fill="Blue"/>
+            </TreeViewItem.Header>
+          </TreeViewItem>
+          <TreeViewItem>
+            <TreeViewItem.Header>
+              <StackPanel Orientation="Horizontal">
+                <Ellipse Width="10" Height="10" Fill="DarkGray"/>
+                <TextBlock >TreeViewItem 1d</TextBlock>
+              </StackPanel>
+            </TreeViewItem.Header>
+          </TreeViewItem>
+        </TreeViewItem>
+      </TreeView>
+      <!--</Snippet17>-->
+
+    </WrapPanel>
+
+    <TextBlock Background="LightGray">XAML above, code below </TextBlock>
+    <WrapPanel Name="root"/>
+  </StackPanel>
+</Window>

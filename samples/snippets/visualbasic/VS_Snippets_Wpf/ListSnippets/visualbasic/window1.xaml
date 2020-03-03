@@ -1,0 +1,122 @@
+<!--
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    
+    xmlns="http://schemas.microsoft.com/winfx/avalon/2005"
+    xmlns:x="http://schemas.microsoft.com/winfx/xaml/2005"
+-->
+
+    <Window x:Class="ListSnippets.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="ListSnippets" Loaded="WindowLoaded"
+    >
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition/>
+      </Grid.RowDefinitions>
+
+      <Border Grid.Row="0">
+        <FlowDocumentReader>
+          <FlowDocument Background="GhostWhite">
+            <List MarkerOffset="25" MarkerStyle="UpperRoman" StartIndex="5">
+              <ListItem>
+                <Paragraph>Boron</Paragraph>
+              </ListItem>
+              <ListItem>
+                <Paragraph>Carbon</Paragraph>
+              </ListItem>
+              <ListItem>
+                <Paragraph>Nitrogen</Paragraph>
+              </ListItem>
+              <ListItem>
+                <Paragraph>Oxygen</Paragraph>
+              </ListItem>
+              <ListItem>
+                <Paragraph>Fluorine</Paragraph>
+              </ListItem>
+              <ListItem>
+                <Paragraph>Neon</Paragraph>
+              </ListItem>
+            </List>
+          </FlowDocument>
+        </FlowDocumentReader>
+      </Border>
+
+      <Border Grid.Row="0">
+        <FlowDocumentReader>
+        <FlowDocument Background="GhostWhite">
+          <List MarkerOffset="25" MarkerStyle="UpperRoman" StartIndex="5">
+            <ListItem>
+              <Paragraph>Boron</Paragraph>
+              <List Margin="0" Padding="0"  >
+                <ListItem Margin="40,0,0,0">
+                  <Paragraph>Symbol: B</Paragraph>
+                </ListItem>
+                <ListItem Margin="40,0,0,0">
+                  <Paragraph>Atomic Mass: 10.811</Paragraph>
+                </ListItem>
+              </List>
+            </ListItem>
+            <ListItem>
+              <Paragraph>Carbon</Paragraph>
+              <List Margin="0" Padding="0"  >
+                <ListItem Margin="40,0,0,0">
+                  <Paragraph>Symbol: C</Paragraph>
+                </ListItem>
+                <ListItem Margin="40,0,0,0">
+                  <Paragraph>Atomic Mass: 12.0107</Paragraph>
+                </ListItem>
+              </List>
+            </ListItem>
+            <ListItem>
+              <Paragraph>Nitrogen</Paragraph>
+              <List Margin="0" Padding="0"  >
+                <ListItem Margin="40,0,0,0">
+                  <Paragraph>Symbol: N</Paragraph>
+                </ListItem>
+                <ListItem Margin="40,0,0,0">
+                  <Paragraph>Atomic Mass: 14.00674</Paragraph>
+                </ListItem>
+              </List>
+            </ListItem>
+            <ListItem>
+              <Paragraph>Oxygen</Paragraph>
+                <List Margin="0" Padding="0"  >
+                  <ListItem Margin="40,0,0,0">
+                    <Paragraph>Symbol: O</Paragraph>
+                  </ListItem>
+                  <ListItem Margin="40,0,0,0">
+                    <Paragraph>Atomic Mass: 15.9994</Paragraph>
+                  </ListItem>
+                </List>
+            </ListItem>
+            <ListItem>
+              <Paragraph>Fluorine</Paragraph>
+              <List Margin="0" Padding="0"  >
+                <ListItem Margin="40,0,0,0">
+                  <Paragraph>Symbol: F</Paragraph>
+                </ListItem>
+                <ListItem Margin="40,0,0,0">
+                  <Paragraph>Atomic Mass: 18.9984032</Paragraph>
+                </ListItem>
+              </List>
+            </ListItem>
+            <ListItem>
+              <Paragraph>Neon</Paragraph>
+              <List Margin="0" Padding="0"  >
+                <ListItem Margin="40,0,0,0">
+                  <Paragraph>Symbol: Ne</Paragraph>
+                </ListItem>
+                <ListItem Margin="40,0,0,0">
+                  <Paragraph>Atomic Mass: 20.1797</Paragraph>
+                </ListItem>
+              </List>
+            </ListItem>
+          </List>
+        </FlowDocument>
+        </FlowDocumentReader>
+      </Border>
+      
+    </Grid>
+</Window>

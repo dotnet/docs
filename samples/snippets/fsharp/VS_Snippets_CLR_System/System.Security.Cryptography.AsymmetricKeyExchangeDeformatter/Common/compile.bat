@@ -1,0 +1,1 @@
+nmake /S /nologo /I /f makefile contosoformatter.exe

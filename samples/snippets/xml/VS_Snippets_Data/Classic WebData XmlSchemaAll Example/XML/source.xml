@@ -1,0 +1,21 @@
+<!--<Snippet2>-->
+
+<?xml version="1.0" encoding="IBM437"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="thing1" type="xs:string"/>
+  <xs:element name="thing2" type="xs:string"/>
+  <xs:element name="thing3" type="xs:string"/>
+  <xs:element name="thing4" type="xs:string"/>
+  <xs:attribute name="myAttribute" type="xs:decimal"/>
+  <xs:complexType name="myComplexType">
+    <xs:all>
+      <xs:element ref="thing1" />
+      <xs:element ref="thing2" />
+      <xs:element ref="thing3" />
+      <xs:element ref="thing4" />
+    </xs:all>
+      <xs:attribute ref="myAttribute"/>
+  </xs:complexType>
+</xs:schema>
+<!--</Snippet2>-->
+

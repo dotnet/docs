@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:i0="http://localhost/stockquote/schemas" xmlns:tns="http://localhost/stockquote/definitions" targetNamespace="http://localhost/stockquote/definitions" name="StockQuote" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <import namespace="http://localhost/stockquote/schemas" location="http://localhost/stockquote/stockquote_cs.xsd" />
+  <types />
+  <message name="GetLastTradePriceInput">
+    <part name="body" element="i0:TradePriceRequest" />
+  </message>
+  <message name="GetLastTradePriceOutput">
+    <part name="body" element="i0:TradePrice" />
+  </message>
+  <portType name="StockQuotePortType">
+    <operation name="GetLastTradePrice">
+      <input message="tns:GetLastTradePriceInput" />
+      <output message="tns:GetLastTradePriceOutput" />
+    </operation>
+  </portType>
+</definitions>

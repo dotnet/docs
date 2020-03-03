@@ -1,0 +1,16 @@
+﻿<Window x:Class="InkCanvasSamples.Window2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="InkCanvasSamples" Height="300" Width="300"
+    >
+  <!--<Snippet38>-->
+  <InkCanvas>
+    <InkCanvas.PreferredPasteFormats>
+      <x:Array Type="{x:Type InkCanvasClipboardFormat}">
+        <x:Static Member="InkCanvasClipboardFormat.Xaml" />
+        <x:Static Member="InkCanvasClipboardFormat.InkSerializedFormat" />
+      </x:Array>
+    </InkCanvas.PreferredPasteFormats>
+  </InkCanvas>
+  <!--</Snippet38>-->
+</Window>

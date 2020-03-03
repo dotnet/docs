@@ -1,0 +1,191 @@
+﻿<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      x:Class="ExpenseIt.AddExpensesPage"
+      WindowTitle="ExpenseIt - Add Expenses"
+      JournalEntry.KeepAlive="True"
+      DataContext="{StaticResource ExpenseData}">
+    <!--
+  <Page.Resources>
+    <ObjectDataProvider x:Key="EmployeeInfoDataSource"
+         ObjectType="{x:Type l:myEmployees}"/>
+    <Style x:Key="{x:Type l:EditBox}" TargetType="{x:Type l:EditBox}" >
+      <Setter Property="HorizontalAlignment" Value="Left"  />
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="{x:Type l:EditBox}">
+            <TextBlock x:Name="PART_TextBlockPart"  
+                 Text="{Binding Path=Value,RelativeSource = 
+                           {RelativeSource TemplatedParent}}">
+            </TextBlock>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+  </Page.Resources> 
+  -->
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="50" />
+            <RowDefinition />
+            <RowDefinition Height="100" />
+        </Grid.RowDefinitions>
+        <Image Style="{StaticResource WatermarkImage}" />
+        <Grid Grid.Row="0" Margin="15,15,15,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Label Style="{StaticResource Label}"
+                       Grid.Column="2" Grid.Row="0"
+                       Target="{Binding ElementName=Alias}">Email _Alias:</Label>
+            <TextBox IsReadOnly="True" 
+                       Grid.Column="3"
+                       Grid.Row="0" Name="Alias"  VerticalAlignment="Center"
+                       Text="{Binding Path=Alias}" >
+                <TextBox.ToolTip>
+                    <TextBlock>email alias</TextBlock>
+                </TextBox.ToolTip>
+            </TextBox>
+
+            <Label Style="{StaticResource Label}"
+                       Grid.Column="2" Grid.Row="1"
+                       Target="{Binding ElementName=Number}">Employee _Number:</Label>
+            <TextBox IsReadOnly="True" 
+                       Grid.Column="3"
+                       Grid.Row="1" Name="Number"  VerticalAlignment="Center"
+                       Text="{Binding Path=EmployeeNumber}" >
+                <TextBox.ToolTip>
+                    <TextBlock>employee number</TextBlock>
+                </TextBox.ToolTip>
+            </TextBox>
+
+            <Label Style="{StaticResource Label}"
+                       Grid.Column="2" Grid.Row="2"
+                       Target="{Binding ElementName=costCenter}">_Cost Center:</Label>
+            <TextBox IsReadOnly="True" 
+                       Grid.Column="3"
+                       Grid.Row="2" Name="costCenter"  VerticalAlignment="Center"
+                       Text="{Binding Path=CostCenter}">
+                <TextBox.ToolTip>
+                    <TextBlock>cost center</TextBlock>
+                </TextBox.ToolTip>
+            </TextBox>
+
+            <Button Style="{StaticResource Button}"
+                    Grid.Column="0" Grid.Row="0" Grid.RowSpan="3" VerticalAlignment="Bottom"
+                    Click="AddExpense">
+                Add _Expense
+                <Button.ToolTip>
+                    <TextBlock>add expense</TextBlock>
+                </Button.ToolTip>
+            </Button>
+            
+        </Grid>
+        <Rectangle Style="{StaticResource TotalRectangle}"
+                   Margin="15"
+                   Grid.Row="1"
+                   Grid.RowSpan="2" />
+        <Grid Grid.Row="1"
+              Margin="20,20,20,0">
+            <Grid.ToolTip>
+                <TextBlock>Expense Report</TextBlock>
+            </Grid.ToolTip>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="33*" />
+                <ColumnDefinition Width="33*" />
+                <ColumnDefinition Width="33*" />
+            </Grid.ColumnDefinitions>
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0"
+                                     EndPoint="0,1">
+                    <LinearGradientBrush.GradientStops>
+                        <GradientStop Color="#73B2F5"
+                                      Offset="0" />
+                        <GradientStop Color="#4E87D4"
+                                      Offset="1" />
+                    </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <TextBlock Style="{StaticResource TableLabel}"
+                       Grid.Column="0">
+                Expense Type
+                <TextBlock.ToolTip>
+                    <TextBlock>Expense type</TextBlock>
+                </TextBlock.ToolTip>
+            </TextBlock>
+            <TextBlock Style="{StaticResource TableLabel}"
+                       Grid.Column="1">
+                Description
+                <TextBlock.ToolTip>
+                    <TextBlock>Desription</TextBlock>
+                </TextBlock.ToolTip>
+            </TextBlock>
+            <TextBlock Style="{StaticResource TableLabel}"
+                       Grid.Column="2">
+                Amount
+                <TextBlock.ToolTip>
+                    <TextBlock>Amount</TextBlock>
+                </TextBlock.ToolTip>
+            </TextBlock>
+        </Grid>
+
+        <ItemsControl Style="{StaticResource ExpenseScroller}"
+                      Grid.Row="2"
+                      Margin="20,0,20,20"
+                      Name="ic"
+                      ItemTemplate="{StaticResource ExpenseTemplate}"
+                      ItemsSource="{Binding Path=LineItems}" />
+
+        <Rectangle Style="{StaticResource TotalRectangle}"
+                   Margin="15"
+                   Grid.Row="3"
+                   Grid.RowSpan="1" />
+        <StackPanel Style="{StaticResource TotalExpensesFlow}"
+                    Margin="15"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center"
+                    Height="50"
+                    Grid.Row="3">
+            <TextBlock Style="{StaticResource TotalExpensesLabel}"
+                       VerticalAlignment="Center"
+                       Margin="10">
+                Total Expenses:
+                <TextBlock.ToolTip>
+                    <TextBlock>Total expenses</TextBlock>
+                </TextBlock.ToolTip>
+            </TextBlock>
+            <TextBlock Style="{StaticResource TotalExpenses}"
+                       Text="$" />
+            <TextBlock Style="{StaticResource TotalExpenses}"
+                       HorizontalAlignment="Left"
+                       Text="{Binding Path=TotalExpenses, UpdateSourceTrigger=PropertyChanged}" />
+        </StackPanel>
+        <Button Style="{StaticResource ButtonInFlow}"
+                Grid.Column="0"
+                Grid.Row="3"
+                Width="100"
+                Margin="20"
+                HorizontalAlignment="Left"
+                Click="ViewChart">
+            <Button.ToolTip>
+                <TextBlock>View chart</TextBlock>
+            </Button.ToolTip>
+            <DockPanel>
+                <TextBlock DockPanel.Dock="Top"
+                           TextAlignment="Center">View Chart</TextBlock>
+                <ItemsControl Style="{StaticResource ExpenseChart}"
+                              Margin="5" />
+            </DockPanel>
+        </Button>
+    </Grid>
+</Page>

@@ -17,13 +17,12 @@ Therefore, `HttpClient` is intended to be instantiated once and reused throughou
 
 But there's a second issue with `HttpClient` that you can have when you use it as singleton or static object in long-running processes, as could be some sort of server. In this case, a singleton or static `HttpClient` doesn't handle DNS changes, as explained in this [issue](https://github.com/dotnet/corefx/issues/11224) at the dotnet/corefx GitHub repository.
 
-To address those mentioned issues and make the management of `HttpClient` instances easier, .NET Core 2.1 introduced the <xref:System.Net.Http.IHttpClientFactory> interface that's implemented by the `DefaultHttpClientFactory`, that can't be instantiated directly, that can also be used to implement resilient HTTP calls by integrating Polly with it.
+To address the issues mentioned above and to make `HttpClient` instances manageable, .NET Core 2.1 introduced the <xref:System.Net.Http.IHttpClientFactory> interface which can be used to configure and create HttpClient instances in an app. It also provides extensions for Polly-based middleware to take advantage of delegating handlers in HttpClient.
 
 [Polly](http://www.thepollyproject.org/) is a transient-fault-handling library that helps developers add resiliency to their applications, by using some pre-defined policies in a fluent and thread-safe manner.
 
-## What is the IHttpClientFactory
+## Benefits of using IHttpClientFactory
 
-<xref:System.Net.Http.IHttpClientFactory> is an interface with the single method `CreateClient()` that should return an <xref:System.Net.Http.HttpClient>.
 
 The current implementation is `DefaultHttpClientFactory`, that also implements <xref:ystem.Net.Http.IHttpMessageHandlerFactory>, with the following features:
 
@@ -39,7 +38,7 @@ The current implementation is `DefaultHttpClientFactory`, that also implements <
 
 There are several ways that you can use `IHttpClientFactory` in your application:
 
-- Use `IHttpClientFactory` Directly
+- Basic usage
 - Use Named Clients
 - Use Typed Clients
 - Use Generated Clients

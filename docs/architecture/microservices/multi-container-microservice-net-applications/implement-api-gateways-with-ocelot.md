@@ -135,7 +135,7 @@ However, direct-access communication to the microservice, in this case through t
 
 Ocelot is basically a set of middlewares that you can apply in a specific order.
 
-Ocelot is designed to work with ASP.NET Core only. It targets .NET Core App 3.1 in version 14.0 and later, so it can only be used in ASP.NET Core applications. It's not suitable for .NET Framework applications.
+Ocelot is designed to work with ASP.NET Core only. The latest version of the package targets `.NETCoreApp 3.1` and hence it is not suitable for .NET Framework applications.
 
 You install Ocelot and its dependencies in your ASP.NET Core project with [Ocelot's NuGet package](https://www.nuget.org/packages/Ocelot/), from Visual Studio.
 

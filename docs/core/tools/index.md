@@ -53,8 +53,8 @@ The following commands are installed by default:
 - [tool install](dotnet-tool-install.md)
 - [tool list](dotnet-tool-list.md)
 - [tool update](dotnet-tool-update.md)
-- [tool restore](global-tools.md#install-a-local-tool) **Available starting with .NET Core SDK 3.0**
-- [tool run](global-tools.md#invoke-a-local-tool) **Available starting with .NET Core SDK 3.0**
+- [tool restore](global-tools.md#install-a-local-tool) Available since .NET Core SDK 3.0.
+- [tool run](global-tools.md#invoke-a-local-tool) Available since .NET Core SDK 3.0.
 - [tool uninstall](dotnet-tool-uninstall.md)
 
 Tools are console applications that are installed from NuGet packages and are invoked from the command prompt. You can write tools yourself or install tools written by third parties. Tools are also known as global tools, tool-path tools, and local tools. For more information, see [.NET Core tools overview](global-tools.md).

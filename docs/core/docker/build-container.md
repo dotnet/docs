@@ -246,7 +246,7 @@ Removing intermediate container d8deb7b3aa9e
 Successfully built 0d602ca35c1d
 Successfully tagged myimage:latest
 
-> docker images
+> docker images ls
 REPOSITORY                              TAG                 IMAGE ID            CREATED             SIZE
 myimage                                 latest              0d602ca35c1d        4 seconds ago       346MB
 mcr.microsoft.com/dotnet/core/aspnet    3.1                 38db0eb8f648        4 weeks ago         346MB

@@ -81,5 +81,5 @@ Polly provides production-ready jitter algorithms via the project website.
   <https://brooker.co.za/blog/2015/03/21/backoff.html>
 
 >[!div class="step-by-step"]
->[Previous](explore-custom-http-call-retries-exponential-backoff.md)
+>[Previous](use-httpclientfactory-to-implement-resilient-http-requests.md)
 >[Next](implement-circuit-breaker-pattern.md)

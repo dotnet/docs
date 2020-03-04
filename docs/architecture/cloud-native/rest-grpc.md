@@ -36,7 +36,7 @@ gRPC is lightweight and highly performant. It can be up to 8x faster than JSON s
 
 gRPC embraces an open-source technology called [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview). They provide a highly efficient and platform-neutral serialization format for serializing structured messages that services send to each other. Using a cross-platform Interface Definition Language (IDL), developers define a service contract for each microservice. The contract, implemented as a text-based `.proto` file describes the methods, inputs, and outputs for each service. The same contract file can be used for gRPC clients and services built on different development platforms.
 
-Using the proto file," the Protobuf compiler, "Protoc," generates both client and service code for your target platform. The code includes the following components:
+Using the proto file, the Protobuf compiler, `protoc`, generates both client and service code for your target platform. The code includes the following components:
 
 - A strongly-typed DTO (Data Transfer Object) shared by the client and service.
 - A strongly-typed base class with the required network plumbing that the remote gRPC service can inherit and extend.

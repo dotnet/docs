@@ -71,7 +71,7 @@ namespace builtin_types
                 var b = (Season)1;
                 Console.WriteLine(b);  // output: Summer
 
-                var c = (Season)4;
+                var c = (int)Season.Winter;
                 Console.WriteLine(c);  // output: 4
             }
         }

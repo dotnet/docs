@@ -1,0 +1,81 @@
+﻿<!--
+ *File name: web.config
+ *Purpose: It contains administrative and global definitions for 
+ the Aspnethm (ASP.NET Health Monitoring) Web application.
+ -->
+<configuration>
+
+
+  <system.web>
+
+    <identity impersonate="false" />
+
+    <customErrors mode="Off"/>
+
+    <authentication mode="Windows"/>
+    
+    <!--<httpModules>
+      <add type="SamplesAspNet.CustomWebEvents" 
+          name="CustomWebEvents"/>
+    </httpModules>-->
+    
+    <healthMonitoring  heartBeatInterval="0" enabled="true">
+
+      <bufferModes>
+        <add name ="Custom Notification"
+            maxBufferSize="10"
+            maxFlushSize="5"
+            urgentFlushThreshold="10"
+            regularFlushInterval="Infinite"
+            urgentFlushInterval="00:00:30"
+            maxBufferThreads="1"
+            />
+
+      </bufferModes>
+
+      <providers>
+
+        <clear/>
+
+        <add name="SampleBufferedWebEventProvider" type="Samples.AspNet.Management.SampleBufferedWebEventProvider, bufferedwebeventprovider, Version=1.0.1794.19461, Culture=neutral, PublicKeyToken=d31491bf33b55954, processorArchitecture=MSIL" 
+               
+                buffer="true"
+                bufferMode="Custom Notification"
+               
+         />
+
+
+      </providers>
+
+      <profiles>
+
+        <add name="Custom" 
+          minInstances="1" 
+          maxLimit="Infinite" 
+          minInterval="00:00:00" />
+      </profiles>
+
+      <eventMappings>
+
+
+
+      </eventMappings>
+
+      <rules>
+
+        <clear />
+
+        <add name="Custom Buffered Web Event Provider" 
+          eventName="All Events"
+          provider="SampleBufferedWebEventProvider" 
+          profile="Custom" />
+
+
+      </rules>
+
+
+    </healthMonitoring>
+
+  </system.web>
+
+</configuration>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<feed xml:lang="en-us" CustomAttribute="Value" xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">Feed Title</title>
+  <subtitle type="text">This is a sample feed</subtitle>
+  <id>FeedID</id>
+  <rights type="text">Copyright 2007</rights>
+  <updated>2007-04-13T17:29:38Z</updated>
+  <category term="FeedCategory" label="CategoryLabel" scheme="CategoryScheme" />
+  <logo>http://server/image.jpg</logo>
+  <!-- <Snippet0> -->
+  <author>
+    <name>Jesper Aaberg</name>
+    <uri>http://Jesper/Aaberg</uri>
+    <email>Jesper.Aaberg@contoso.com</email>
+  </author>
+  <contributor>
+    <name>Lene Aalling</name>
+    <uri>http://Lene/Aaling</uri>
+    <email>Lene.Aaling@contoso.com</email>
+  </contributor>
+  <!-- </Snippet0> -->
+
+  <!-- <Snippet4> -->
+  <author customAttribute="value">
+    <name>Syed Abas</name>
+    <uri>http://Syed/Abas</uri>
+    <email>Syed.Abas@contoso.com</email>
+  </author>
+  <!-- </Snippet4> -->
+
+  <!-- <Snippet6> -->
+  <author>
+    <name>Kim Abercrombie</name>
+    <uri>http://Kim/Abercrombie</uri>
+    <email>Kim.Abercrombie@contoso.com</email>
+    <customPersonElement xmlns="">person element text</customPersonElement>
+  </author>
+  <!-- </Snippet6> -->
+
+
+
+  <generator>Sample Code</generator>
+  <link rel="alternate" type="text/html" title="Link Title" length="1000" href="http://server/link" />
+  <link customAttribute="value" rel="alternate" type="text/html" title="Link Title" length="1000" href="http://server/link" />
+  <CustomElement xmlns="">Some text</CustomElement>
+  <entry>
+    <id>ItemID</id>
+    <title type="text">Item Title</title>
+    <updated>2007-04-13T17:29:38Z</updated>
+    <link rel="alternate" href="http://server/items" />
+    <content type="text">Some text content</content>
+  </entry>
+</feed>
+

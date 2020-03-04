@@ -1,0 +1,93 @@
+<Canvas
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="ComboBoxSimple.Pane1"
+>
+  <Grid ShowGridLines ="false" Background ="White" >
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="250"/>
+      <ColumnDefinition Width="250"/>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+    </Grid.RowDefinitions>
+    <TextBlock Margin="10, 10, 3, 3" Grid.Column="0" Grid.Row="0" FontSize="24">
+        Combo Boxes</TextBlock>
+    <TextBlock Margin="10, 10, 3, 3" Grid.Column="0" Grid.Row="1" FontSize="14" 
+        Grid.ColumnSpan="2">The following combo box examples demonstrate:</TextBlock>
+
+    <DockPanel Margin="10, 10, 3, 3" Grid.Column="0" Grid.Row="2">
+      <ComboBox IsEditable="true">
+        <Image Source="data\cat.png"/>
+        <Image Source="data\dog.png"/>
+        <Image Source="data\fish.png"/>
+      </ComboBox>
+    </DockPanel>
+
+    <DockPanel Margin="10, 10, 3, 3" Grid.Column="0" Grid.Row="3">
+      <!--<Snippet1>-->
+      <ComboBox IsEditable="true" TextSearch.TextPath="Name">
+        <Image Name="Cat" Source="data\cat.png"/>
+        <Image Name="Dog" Source="data\dog.png"/>
+        <Image Name="Fish" Source="data\fish.png"/>
+      </ComboBox>
+      <!--</Snippet1>-->
+    </DockPanel>
+
+    <DockPanel Margin="10, 10, 3, 3" Grid.Column="0" Grid.Row="4">
+      <!--<Snippet2>-->
+      <ComboBox IsEditable="true">
+        <Image TextSearch.Text="Cat" Source="data\cat.png"/>
+        <Image TextSearch.Text="Dog" Source="data\dog.png"/>
+        <Image TextSearch.Text="Fish" Source="data\fish.png"/>
+      </ComboBox>
+      <!--</Snippet2>-->
+    </DockPanel>
+
+    <DockPanel Margin="10, 10, 3, 3" Grid.Column="0" Grid.Row="5">
+      <!--<Snippet3>-->
+      
+      <ComboBox IsEditable="true" DisplayMemberPath="Name">
+        <Image Name="CAT" Source="data\cat.png"/>
+        <Image Name="DOG" Source="data\dog.png"/>
+        <Image Name="FISH" Source="data\fish.png"/>
+      </ComboBox>
+      <!--</Snippet3>-->
+    </DockPanel>
+
+    <DockPanel Margin="10, 10, 3, 3" Grid.Row="6">
+
+      <!--<Snippet4>-->
+      <StackPanel>
+        
+        <CheckBox Content="_Case sensitive Search" IsChecked="True"
+                  Name="caseSensitiveSearch"/>
+
+        <ComboBox IsEditable="True"
+                  IsTextSearchCaseSensitive="{Binding 
+                    ElementName=caseSensitiveSearch, 
+                    Path=IsChecked}">
+          <ComboBoxItem>DOG</ComboBoxItem>
+          <ComboBoxItem>CAT</ComboBoxItem>
+          <ComboBoxItem>dog</ComboBoxItem>
+          <ComboBoxItem>cat</ComboBoxItem>
+        </ComboBox>
+      </StackPanel>
+      <!--</Snippet4>-->
+
+    </DockPanel>
+  </Grid>
+
+</Canvas>

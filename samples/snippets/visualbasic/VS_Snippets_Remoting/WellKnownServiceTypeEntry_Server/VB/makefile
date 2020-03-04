@@ -1,0 +1,10 @@
+all: WellKnownServiceTypeEntry_Server.exe WellKnownServiceTypeEntry_Client.exe
+
+WellKnownServiceTypeEntry_Server.exe: WellKnownServiceTypeEntry_Server.vb WellKnownServiceTypeEntry_Share.dll
+	vbc WellKnownServiceTypeEntry_Server.vb /r:WellKnownServiceTypeEntry_Share.dll
+
+WellKnownServiceTypeEntry_Client.exe: WellKnownServiceTypeEntry_Client.vb WellKnownServiceTypeEntry_Share.dll
+	vbc WellKnownServiceTypeEntry_Client.vb /r:WellKnownServiceTypeEntry_Share.dll
+
+WellKnownServiceTypeEntry_Share.dll: WellKnownServiceTypeEntry_Share.vb
+	vbc /t:library WellKnownServiceTypeEntry_Share.vb

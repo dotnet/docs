@@ -1,0 +1,15 @@
+﻿<!--<snippet2>-->
+<?xml version='1.0'?>
+<bookstore xmlns="urn:bookstore-schema" xmlns:cd="urn:cd-schema">
+  <book genre="novel">
+    <title>The Confidence Man</title>
+    <price>11.99</price>
+  </book>
+  <cd:cd>
+    <title>Americana</title>
+    <cd:artist>Offspring</cd:artist>
+    <price>16.95</price>
+  </cd:cd>
+</bookstore>
+<!--</snippet2>-->
+

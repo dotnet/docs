@@ -1,0 +1,81 @@
+﻿<Window Background="cornsilk"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="ListBox_Index.Window1"
+>
+
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition/>
+      <ColumnDefinition/>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+    </Grid.RowDefinitions>
+    <TextBlock Margin="10,10,0,5" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" 
+          TextWrapping="WrapWithOverflow" FontSize="20">
+      List Box Properties and Methods
+    </TextBlock>
+    <TextBlock Margin="10,0,3,5" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" 
+          TextWrapping="WrapWithOverflow" FontSize="12">
+      This example enables you to choose some
+      List Box methods and properties to see how they function. Before choosing the SelectedItems
+      option, first select some items in the List Box. The number of items selected will be
+      printed below. Also when the Selected and Unselected events are called a notification is given.
+    </TextBlock>
+    <Menu Margin="10,0,0,5" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" 
+          Grid.Row="2">
+      <!--<Snippet4>-->
+      <MenuItem Header="Choose a Method or Property">
+        <MenuItem Header="SelectAll" Click="SelectAll"/>
+        <MenuItem Header="UnselectAll" Click="UnselectAll"/>
+        <MenuItem Header="SelectedItems" Click="SelectedItems"/>
+      </MenuItem>
+      <!--</Snippet4>-->
+    </Menu>
+
+    <!--<Snippet1>-->
+    <ListBox Margin="10,0,0,5" Name="lb" SelectionMode="Multiple" VerticalAlignment="Top" Grid.Column="0" 
+        Grid.Row="2">
+      <!--<SnippetListBoxItemsEvents>-->
+      <ListBoxItem Name="lbi0" Selected="OnSelected" Unselected="OnUnselected">Item 0</ListBoxItem>
+      <!--</SnippetListBoxItemsEvents>-->
+      <ListBoxItem Name="lbi1" Selected="OnSelected" Unselected="OnUnselected">Item 1</ListBoxItem>
+      <ListBoxItem Name="lbi2" Selected="OnSelected" Unselected="OnUnselected">Item 2</ListBoxItem>
+      <ListBoxItem Name="lbi3" Selected="OnSelected" Unselected="OnUnselected">Item 3</ListBoxItem>
+    </ListBox>
+    <!--</Snippet1>-->
+
+    <StackPanel Margin="10,0,0,5" Grid.Column="0" Grid.Row="3">
+      <Label Name="label1"/>
+    </StackPanel>
+
+
+    <ListBox Margin="10,0,0,5" Name="lb2" Grid.Column="0" Grid.Row="4">
+      <!--<SnippetListBoxItemsIsSelected1>-->
+      <ListBoxItem Name="item0" IsSelected="true">Item 0</ListBoxItem>
+      <!--</SnippetListBoxItemsIsSelected1>-->
+      <ListBoxItem Name="item1" Selected="SelectedItem">Item 1</ListBoxItem>
+      <ListBoxItem Name="item2" Selected="SelectedItem">Item 2</ListBoxItem>
+      <ListBoxItem Name="item3" Selected="SelectedItem">Item 3</ListBoxItem>
+    </ListBox>
+
+
+    <StackPanel Margin="10,0,0,5" Grid.Column="1" Grid.Row="4">
+      <Label Name="label2"/>
+    </StackPanel>
+
+    <ListBox Name="lbScrollIntoView" Margin="10,0,0,5" Grid.Column="0" Grid.Row="5" Height="75" VerticalAlignment="Top" 
+             ItemsSource="{Binding ScrollIntoViewItems}"/>
+
+    <StackPanel Margin="10,0,0,0" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="5">
+      <ComboBox Name="cbScrollIntoView" ItemsSource="{Binding ScrollIntoViewItems}" SelectedIndex="0" Margin="5"/>
+      <Button Content="Scroll Into View" Height="30"  Click="ScrollIntoView" Margin="5"/>
+    </StackPanel>
+  </Grid>
+</Window>

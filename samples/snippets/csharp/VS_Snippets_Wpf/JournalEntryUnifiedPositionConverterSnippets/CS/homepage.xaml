@@ -1,0 +1,14 @@
+﻿<Page 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="JournalEntryUnifiedPositionConverterSnippets.HomePage"
+    Title="HomePage"
+    >
+    <Grid>
+        <TextBlock FontSize="40">
+            Home Page
+            <LineBreak />
+            <Hyperlink NavigateUri="Page1.xaml">Page 1</Hyperlink>
+        </TextBlock>
+    </Grid>
+</Page>

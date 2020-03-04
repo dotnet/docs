@@ -1,0 +1,39 @@
+<!-- <SnippetBaselineAlignmentExampleWholePage> -->
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <FlowDocumentReader>
+    <FlowDocument ColumnWidth="800">
+      <Paragraph Background="Blue">
+
+        <!-- The large text forces a large containing box size for the paragraph.
+             The smaller text fragments align themselves vertically within this  
+             box according to their BaselineAlignment values. -->
+        <Span FontSize="40">Baseline:</Span>
+        <Span BaselineAlignment="Baseline">Baseline</Span>
+        <Span BaselineAlignment="Top">Top</Span>
+        <Span BaselineAlignment="Bottom">Bottom</Span>
+        <Span BaselineAlignment="Center">Center</Span>
+      </Paragraph>
+      <Paragraph Background="Green">
+
+        <!-- The BaselineAlignment values of Subscript and Superscript below
+             force the containing box to be larger then it normally would be. -->
+        <Span FontSize="40">Baseline:</Span>
+        <Span BaselineAlignment="Subscript">Subscript</Span>
+        <Span BaselineAlignment="Baseline">Baseline</Span>
+        <Span BaselineAlignment="Superscript">Superscript</Span>
+      </Paragraph>
+      <Paragraph Background="Yellow" LineHeight="60" LineStackingStrategy="BlockLineHeight">
+
+        <!-- A deliberate BlockLineHeight stacking strategy change, to show the difference between Top/TextTop 
+        and Bottom/TextBottom-->
+        <Span FontSize="40" BaselineAlignment="Baseline">Baseline:</Span>
+        <Span BaselineAlignment="Top">Top</Span>
+        <Span BaselineAlignment="TextTop">TextTop</Span>
+        <Span BaselineAlignment="Bottom">Bottom</Span>
+        <Span BaselineAlignment="TextBottom">TextBottom</Span>
+      </Paragraph>
+    </FlowDocument>
+  </FlowDocumentReader>
+</Page>
+<!-- </SnippetBaselineAlignmentExampleWholePage> -->

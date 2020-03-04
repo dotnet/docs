@@ -1,0 +1,110 @@
+<StackPanel
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="AccessTextSimple.Pane1"
+>
+
+  <Grid ShowGridLines ="false" Background ="White" >
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="300"/>
+      <ColumnDefinition Width="250"/>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+    </Grid.RowDefinitions>
+
+    <TextBlock Margin="10,10,3,3" FontSize="24"
+               Grid.Column="0" Grid.Row="0" >
+      AccessText
+    </TextBlock>
+
+    <TextBlock Margin="10,10,3,3" FontSize="14" 
+               Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2">
+      The following access text examples demonstrate:
+    </TextBlock>
+
+    <DockPanel Margin="30,10,3,3" Grid.Column="0" Grid.Row="2">
+      <!--<Snippet2>-->
+      <Button Click="edit_Click">
+        <AccessText>_Edit</AccessText>
+      </Button>
+      <Button Click="cut_Click">_Cut</Button>
+      <!--</Snippet2>-->
+    </DockPanel>
+
+    <TextBlock Margin="10,10,3,3" Grid.Column="1" Grid.Row="2" FontSize="12" 
+               VerticalAlignment="Center" TextWrapping="WrapWithOverflow">
+      Using two methods to create an access key. The access key in the l
+      eft button was created with an access text tag; the one on
+      the right with just the underline character.
+    </TextBlock>
+
+    <DockPanel Margin="30,10,3,3" Grid.Column="0" Grid.Row="3">
+      <Button Click="hello_Click">
+        <!--<Snippet3>-->
+        <AccessText>__He_llo__</AccessText>
+        <!--</Snippet3>-->
+      </Button>
+    </DockPanel>
+
+    <TextBlock Margin="10,10,3,3" Grid.Column="1" Grid.Row="3" FontSize="12" 
+         VerticalAlignment="Center" TextWrapping="WrapWithOverflow">
+      Using the access text escape. Use two underline characters
+      if you want an underline to appear in your text.
+    </TextBlock>
+
+    <DockPanel Margin="30,10,3,3" Grid.Column="0" Grid.Row="4">
+      <!--<Snippet4>-->
+      <TextBox Name="textBox1" Width="50" Height="30"/>
+      <Label Width="200" HorizontalAlignment="Left"
+             Target="{Binding ElementName=textBox1}">
+        <AccessText TextWrapping="WrapWithOverflow">
+          _A long piece of text that requires text wrapping
+          goes here.
+        </AccessText>
+      </Label>
+      <!--</Snippet4>-->
+    </DockPanel>
+
+    <TextBlock Margin="10,10,3,3" Grid.Column="1" Grid.Row="4" FontSize="12" 
+         VerticalAlignment="Center" TextWrapping="WrapWithOverflow">
+      Using the AccessText element to create a label
+      that has an access key and supports text wrapping.
+    </TextBlock>
+
+    <DockPanel Margin="30,10,3,3" Grid.Column="0" Grid.Row="5">
+      <!--<SnippetAccessTextProps>-->
+      <TextBox Name="textBox2" Width="50" Height="30"/>
+      <Label Target="{Binding ElementName=textBox2}">
+        <AccessText Background="Red" Foreground="DarkSlateBlue"    
+                    FontFamily="Arial Narrow" FontSize="16" FontStyle="Italic" 
+                    FontWeight="Bold">
+          E_dit
+        </AccessText>
+      </Label>
+      <!--</SnippetAccessTextProps>-->
+    </DockPanel>
+
+    <TextBlock Margin="10,10,3,3" Grid.Column="1" Grid.Row="5" FontSize="12" 
+               VerticalAlignment="Center" TextWrapping="WrapWithOverflow">
+      Setting AccessText properties.
+    </TextBlock>
+
+    <TextBlock Margin="10,10,3,3" FontSize="14" 
+               Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="2">
+      NOTE: Press the ALT key to see the access keys in the examples.
+    </TextBlock>
+  </Grid>
+</StackPanel>

@@ -1,0 +1,433 @@
+﻿<Window x:Class="PhotoStore.Window1"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="PhotoStore"
+  Loaded="WindowLoaded"	
+  xmlns:ps="clr-namespace:PhotoStore"
+  Width="640"
+  Height="670">
+  <Window.Background>
+    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+      <LinearGradientBrush.GradientStops>
+        <GradientStop Color="#DDDDDD" Offset="0" />
+        <GradientStop Color="#EEEEEE" Offset="1" />
+      </LinearGradientBrush.GradientStops>
+    </LinearGradientBrush>
+  </Window.Background>
+  
+  <Window.Resources>
+    <ObjectDataProvider
+      x:Name="PhotosODP"
+      x:Key="Photos"
+      ObjectType="{x:Type ps:PhotoList}"/>
+    <ObjectDataProvider
+      x:Name="PhotoTrayODP"
+      x:Key="PhotoTray"
+      ObjectType="{x:Type ps:PrintList}"/>
+    <ObjectDataProvider
+      x:Name="PrintTypes"
+      x:Key="PrintTypes"
+      ObjectType="{x:Type ps:PrintTypeList}"/>
+
+<!--<Snippet1>-->
+    <Style TargetType="{x:Type TextBlock}">
+      <Setter Property="FontFamily" Value="Segoe Black" />
+      <Setter Property="HorizontalAlignment" Value="Center" />
+      <Setter Property="FontSize" Value="12pt" />
+      <Setter Property="Foreground" Value="#777777" />
+    </Style>
+<!--</Snippet1>-->
+
+<!--<Snippet2>-->
+    <Style
+  x:Key="TitleText"
+  BasedOn="{StaticResource {x:Type TextBlock}}"
+  TargetType="{x:Type TextBlock}">
+      <Setter Property="FontSize" Value="32pt" />
+      <Setter Property="Foreground">
+        <Setter.Value>
+          <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+            <LinearGradientBrush.GradientStops>
+              <GradientStop Offset="0.0" Color="#90C117" />
+              <GradientStop Offset="1.0" Color="#5C9417" />
+            </LinearGradientBrush.GradientStops>
+          </LinearGradientBrush>
+        </Setter.Value>
+      </Setter>
+      <Setter Property="RenderTransform">
+        <Setter.Value>
+          <TranslateTransform X="0" Y="10"/>
+        </Setter.Value>
+      </Setter>
+    </Style>
+<!--</Snippet2>-->
+
+<!--<Snippet5>-->
+    <Style TargetType="{x:Type ListBox}">
+      <Setter Property="Foreground" Value="White" />
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="{x:Type ListBox}" >
+            <Border
+              Height="100"
+              Padding="5"
+              BorderThickness="0.5"
+              CornerRadius="6"
+              VerticalAlignment="Center"
+              HorizontalAlignment="Center">
+              <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                  <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0.0" Color="#88000000" />
+                    <GradientStop Offset="1.0" Color="#DDFFFFFF" />
+                  </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+              </Border.BorderBrush>
+              <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                  <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0.0" Color="#CCFFFFFF" />
+                    <GradientStop Offset="1.0" Color="#55FFFFFF" />
+                  </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+              </Border.Background>
+              <StackPanel
+                IsItemsHost="true"
+                Orientation="Horizontal"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"  />
+            </Border>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+<!--</Snippet5>-->
+
+<!--<Snippet6>-->
+    <Style x:Key="TrayItemsControl" TargetType="{x:Type ItemsControl}">
+      <Setter Property="Foreground" Value="White" />
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="{x:Type ItemsControl}" >
+            <Border
+              Height="250"
+              Width="200" 
+              Padding="10"
+              BorderThickness="0.5"
+              CornerRadius="6"
+              VerticalAlignment="Center"
+              HorizontalAlignment="Center">
+              <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                  <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0.0" Color="#88000000" />
+                    <GradientStop Offset="1.0" Color="#DDFFFFFF" />
+                  </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+              </Border.BorderBrush>
+              <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                  <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0.0" Color="#CCFFFFFF" />
+                    <GradientStop Offset="1.0" Color="#55FFFFFF" />
+                  </LinearGradientBrush.GradientStops>
+                </LinearGradientBrush>
+              </Border.Background>
+              <WrapPanel
+                ItemHeight="75"
+                ItemWidth="75"
+                IsItemsHost="true"
+                Orientation="Horizontal"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Center"  />
+            </Border>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+<!--</Snippet6>-->
+
+<!--<Snippet8>-->
+    <DataTemplate DataType="{x:Type ps:Photo}">
+      <Border
+        VerticalAlignment="Center"
+        HorizontalAlignment="Center"
+        Padding="4"
+        Margin="2"
+        Background="White">
+        <Image Source="{Binding Source}" />
+      </Border>
+    </DataTemplate>
+<!--</Snippet8>-->
+
+<!--<Snippet9>-->
+    <DataTemplate DataType="{x:Type ps:Print}">
+      <Grid>
+        <Border
+          VerticalAlignment="Center"
+          HorizontalAlignment="Center"
+          Padding="3"
+          Margin="1,4,1,12" 
+          Background="White"
+          BorderBrush="#AAAAAA"
+          BorderThickness="1" >
+          <Image Source="{Binding Photo.Source}" />
+        </Border>
+        <TextBlock
+          Text="{Binding PrintType.Description}"
+          Foreground="#999999"
+          FontSize="8pt"
+          HorizontalAlignment="Center"
+          VerticalAlignment="Bottom" />
+      </Grid>
+    </DataTemplate>
+
+    <DataTemplate x:Key="ReflectedPhoto" >
+      <Grid HorizontalAlignment="Center">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="250" />
+          <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <!-- reflection-->
+        <Border
+          Grid.Row="1"
+          VerticalAlignment="Top"
+          Width="{Binding ElementName=MainBorder, Path=ActualWidth}"
+          Background="White"
+          BorderBrush="#EEEEEE"
+          BorderThickness="1">
+          <Border.LayoutTransform>
+            <ScaleTransform ScaleX="1" ScaleY="-0.5"/>
+          </Border.LayoutTransform>
+          <Border.OpacityMask>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+              <LinearGradientBrush.GradientStops>
+                <GradientStop Offset="0.0" Color="Transparent" />
+                <GradientStop Offset="1.0" Color="#50000000" />
+              </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+          </Border.OpacityMask>
+          <Image
+            Margin="7"
+            Width="{Binding ElementName=MainImage, Path=ActualWidth}"
+            Source="{Binding Source}"/>
+        </Border>
+
+        <!-- shadow -->
+        <Rectangle
+          Grid.Row="0"
+          VerticalAlignment="Bottom"
+          HorizontalAlignment="Center" 
+          Width="{Binding ElementName=MainBorder, Path=ActualWidth}" 
+          Height="30">
+          <Rectangle.RenderTransform>
+            <TranslateTransform X="0" Y="15" />
+          </Rectangle.RenderTransform>
+          <Rectangle.Fill>
+            <RadialGradientBrush>
+              <RadialGradientBrush.GradientStops>
+                <GradientStop Offset="0.0" Color="#B0000000" />
+                <GradientStop Offset="1.0" Color="Transparent" />
+              </RadialGradientBrush.GradientStops>
+            </RadialGradientBrush>
+          </Rectangle.Fill>
+        </Rectangle>
+        <!-- main image -->
+        <Border
+          Grid.Row="0"
+          x:Name="MainBorder"
+          Background="White"
+          BorderBrush="#DDDDDD"
+          BorderThickness="1"
+          HorizontalAlignment="Center" 
+          VerticalAlignment="Bottom"  >
+          <Image
+            Margin="7"
+            x:Name="MainImage"
+            Source="{Binding Source}" />
+        </Border>
+
+      </Grid>
+
+    </DataTemplate>
+<!--</Snippet9>-->
+
+<!--<Snippet11>-->
+    <Style x:Key="{x:Type ListBoxItem}" TargetType="{x:Type ListBoxItem}">
+
+      <Setter Property="FocusVisualStyle" Value="{x:Null}" />
+      <Setter Property="Opacity" Value="0.5" />
+      <Setter Property="MaxHeight" Value="75" />
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="{x:Type ListBoxItem}">
+            <Border
+              x:Name="ContentBorder"
+              BorderThickness="1"
+              BorderBrush="Transparent">
+              <ContentPresenter />
+            </Border>
+	<!--<SnippetTriggerSettersRef>-->
+            <ControlTemplate.Triggers>
+              <Trigger Property="IsSelected" Value="True">
+		<Trigger.Setters>
+                   <Setter Property="Opacity" Value="1.0" />
+		</Trigger.Setters>
+              </Trigger>
+            </ControlTemplate.Triggers>
+	<!--</SnippetTriggerSettersRef>-->
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+<!--</Snippet11>-->
+
+<!--<Snippet14>-->
+      <Style.Triggers>
+
+        <EventTrigger RoutedEvent="Mouse.MouseEnter">
+          <EventTrigger.Actions>
+            <BeginStoryboard>
+              <Storyboard>
+<!--<Snippet15>-->
+                <DoubleAnimation
+                  Duration="0:0:0.2"
+                  Storyboard.TargetProperty="MaxHeight"
+                  To="90"  />
+<!--</Snippet15>-->
+              </Storyboard>
+            </BeginStoryboard>
+          </EventTrigger.Actions>
+        </EventTrigger>
+
+        <EventTrigger RoutedEvent="Mouse.MouseLeave">
+          <EventTrigger.Actions>
+            <BeginStoryboard>
+              <Storyboard>
+<!--<Snippet16>-->
+                <DoubleAnimation
+                  Duration="0:0:1"
+                  Storyboard.TargetProperty="MaxHeight"  />
+<!--</Snippet16>-->
+              </Storyboard>
+            </BeginStoryboard>
+          </EventTrigger.Actions>
+        </EventTrigger>
+
+      </Style.Triggers>
+<!--</Snippet14>-->
+
+<!--<Snippet12>-->
+    </Style>
+<!--</Snippet12>-->
+
+  </Window.Resources>
+
+  <Grid Margin="20" MaxWidth="600" ShowGridLines="False" >
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="250" />
+      <RowDefinition Height="15" />
+      <RowDefinition Height="Auto" />
+      <RowDefinition Height="2000" />
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition />
+      <ColumnDefinition Width="Auto" />
+    </Grid.ColumnDefinitions>
+<!--<Snippet3>-->
+    <TextBlock
+      Grid.Row="0"
+      Grid.ColumnSpan="2"
+      Style="{StaticResource TitleText}">
+      PhotoStore
+    </TextBlock>
+<!--</Snippet3>-->
+
+    <TextBlock Grid.Row="1" Grid.ColumnSpan="2">Making memories.</TextBlock>
+
+    <ListBox
+      Grid.Row="2" Grid.ColumnSpan="2"
+      Margin="0,8,0,8"
+      Name="PhotosListBox" 
+      DataContext="{Binding Source={StaticResource Photos}}" 
+      ItemsSource="{Binding }" 
+      SelectedIndex="0" />
+
+<!--<Snippet10>-->
+    <ContentControl
+      Grid.Row="4"
+      Grid.RowSpan="4"
+      Grid.Column="0"
+      Margin="0"
+      Content="{Binding ElementName=PhotosListBox, Path=SelectedItem}"
+      ContentTemplate="{StaticResource ReflectedPhoto}"/>
+<!--</Snippet10>-->
+
+    <StackPanel
+      Grid.Row="6"
+      Grid.Column="0"
+      Orientation="Horizontal" 
+      HorizontalAlignment="Center"
+      Margin="0">
+
+      <ComboBox
+        Margin="2"
+        VerticalAlignment="Center"
+        Name="PrintTypeComboBox"
+        DataContext="{Binding Source={StaticResource PrintTypes}}"
+        ItemsSource="{Binding}"
+        Width="100"
+        SelectedIndex="0" />
+
+      <Button
+        Click="AddToPhotoTray"
+        Margin="2"
+        VerticalAlignment="Center"
+        IsDefault="true">
+        Add To Tray
+      </Button>
+
+    </StackPanel>
+
+<!--<Snippet4>-->
+    <TextBlock
+      Grid.Row="3"
+      Grid.Column="1"
+      HorizontalAlignment="Left">
+      Photo Tray
+    </TextBlock>
+<!--</Snippet4>-->
+
+<!--<Snippet7>-->
+    <ItemsControl
+      Grid.Row="4"
+      Grid.Column="1"
+      Style="{StaticResource TrayItemsControl}"
+      Name="PhotoTrayItemsControl"
+      DataContext="{Binding Source={StaticResource PhotoTray}}"
+      ItemsSource="{Binding}" />
+<!--</Snippet7>-->
+
+    <StackPanel
+      Grid.Row="6"
+      Grid.Column="1" 
+      Orientation="Horizontal"
+      HorizontalAlignment="Center"
+      Margin="0">
+
+      <ProgressBar
+        Name="UploadProgressBar"
+        Width="126"
+        Value="0"
+        Margin="2"
+        VerticalAlignment="Center"  />
+      <Button Click="Upload" Margin="2" VerticalAlignment="Center" >Upload</Button>
+
+    </StackPanel>
+
+  </Grid>
+</Window>

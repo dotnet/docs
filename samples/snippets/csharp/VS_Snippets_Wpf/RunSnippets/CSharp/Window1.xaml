@@ -1,0 +1,44 @@
+﻿<Window x:Class="RunSnippets.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="RunSnippets"
+>
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="0"/>
+        <RowDefinition/>
+      </Grid.RowDefinitions>
+
+      <Border Grid.Row="0">
+        <FlowDocumentReader>
+          <FlowDocument Name="flowDoc"/>
+        </FlowDocumentReader>
+      </Border>
+
+      <Border Grid.Row="1">
+        <FlowDocumentReader>
+          <!-- <Snippet_Run_Text1XAML> -->
+          <FlowDocument>
+            <Paragraph>
+              <Run Text="The text contents of this text run."/>
+            </Paragraph>
+          </FlowDocument>
+          <!-- </Snippet_Run_Text1XAML> -->
+        </FlowDocumentReader>
+      </Border>
+      <Border Grid.Row="1">
+        
+        <FlowDocumentReader>
+          <!-- <Snippet_Run_Text2XAML> -->
+          <FlowDocument>
+            <Paragraph>
+              <Run>
+                The text contents of this text run.
+              </Run>
+            </Paragraph>
+          </FlowDocument>
+          <!-- </Snippet_Run_Text2XAML> -->
+        </FlowDocumentReader>
+      </Border>
+    </Grid>
+</Window>

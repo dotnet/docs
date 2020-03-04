@@ -1,0 +1,85 @@
+﻿<Window x:Class="QuaternionView.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="QuaternionView"
+    Width="1024"
+    Height="768" >
+  <Grid Name="Grid1" Background ="Black" Canvas.Top="0" Canvas.Left="0">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="160"/>
+      <ColumnDefinition Width="*"/>
+    </Grid.ColumnDefinitions>
+
+    <StackPanel Background="OldLace">
+      <StackPanel Background="OldLace" Margin="5, 5, 5, 5">
+        <Label Height="25" FontSize="12" FontWeight="Bold" Foreground="DarkSlateBlue">Quaternion Options</Label>
+        <!--<Label Height="25" >Interpolation type</Label>
+        <ComboBox Name="CBObjects" SelectionChanged="method4" Width="100">
+          <ComboBoxItem>option1</ComboBoxItem>
+          <ComboBoxItem>option2</ComboBoxItem>
+          <ComboBoxItem>option3</ComboBoxItem>
+          <ComboBoxItem>option4</ComboBoxItem>
+        </ComboBox>-->
+
+        <!--<Label Height="30" FontSize="14" FontWeight="Bold" Foreground="DarkSlateBlue">some other options</Label>
+        <CheckBox IsChecked="true" Click="method4" Name="checkBoxDirLightOne">dosomething1</CheckBox>
+        <CheckBox IsChecked="true" Click="method4" Name="checkBoxDirLightTwo">dosomething2</CheckBox>-->
+
+        <Label Height="25">W:</Label>
+        <TextBox Name="WValue" Width="150" HorizontalAlignment="Left">1</TextBox>
+
+        <Label Height="25">X:</Label>
+        <TextBox Name="XValue" Width="150" HorizontalAlignment="Left">0</TextBox>
+
+        <Label Height="25">Y:</Label>
+        <TextBox Name="YValue" Width="150" HorizontalAlignment="Left">0</TextBox>
+
+        <Label Height="25">Z:</Label>
+        <TextBox Name="ZValue" Width="150" HorizontalAlignment="Left">0</TextBox>
+
+        <Button Name="GoWXYZButton" Width="50" Height="25" Click="UpdateWXYZSettings" >Go!</Button>
+
+        <!--<Label Height="25">Start Quaternion (0,0,1,0)</Label>-->
+
+        <Label Height="25">End Quaternion</Label>
+        <Label Height="25">Axis (Vector3D.X)</Label>
+        <TextBox Name="XAxisValue" Width="150" HorizontalAlignment="Left">0</TextBox>
+        <Label Height="25">Axis (Vector3D.Y)</Label>
+        <TextBox Name="YAxisValue" Width="150" HorizontalAlignment="Left">0</TextBox>
+        <Label Height="25">Axis (Vector3D.Z)</Label>
+        <TextBox Name="ZAxisValue" Width="150" HorizontalAlignment="Left">0</TextBox>
+        <Label Height="25">Angle</Label>
+        <TextBox Name="AngleValue" Width="150" HorizontalAlignment="Left">0</TextBox>
+        <Button Name="GoAxisAngleButton" Width="50" Height="25" Click="UpdateAxisAngleSettings" >Go!</Button>
+
+        <!--<Label Height="25">Transform as Matrix3D</Label>
+        <TextBlock Name="TransformMatrix" HorizontalAlignment="Left">0</TextBlock>-->
+
+        <Label Height="25">End Quaternion as Axis/Angle string</Label>
+        <TextBlock Name="AxisAngleString" HorizontalAlignment="Left" TextWrapping="Wrap">0</TextBlock>
+
+        <Label Height="25">Input string as (X, Y, Z, W)</Label>
+        <TextBox Name="ParseValue" Width="150" HorizontalAlignment="Left">0, 0, 0, 1</TextBox>
+        <Button Name="GoParseXYZWButton" Width="50" Height="25" Click="UpdateParseXYZWSettings" >Parse!</Button>
+
+
+
+      </StackPanel>
+    </StackPanel>
+    <DockPanel Grid.Column="1" Grid.Row="0" Focusable="True">
+
+      <Viewport3D ClipToBounds="True" Name="myViewport" Focusable="True" >
+        <Viewport3D.Camera>
+          <PerspectiveCamera x:Name="myPerspectiveCamera"
+            LookDirection="0,0,1" UpDirection="0,1,0" Position="0,0,-10" />
+        </Viewport3D.Camera>
+        <ModelVisual3D x:Name="topModelVisual3D" >
+          <ModelVisual3D.Children>
+            <StaticResource ResourceKey="PictureCubeModelVisual3DResource" />
+          </ModelVisual3D.Children>
+        </ModelVisual3D>
+      </Viewport3D>
+
+    </DockPanel>
+  </Grid>
+</Window>

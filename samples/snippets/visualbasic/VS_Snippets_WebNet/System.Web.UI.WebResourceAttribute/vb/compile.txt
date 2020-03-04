@@ -1,0 +1,1 @@
+vbc /target:library /nologo /out:bin\Samples.AspNet.VB.Controls.dll /r:System.dll,System.Web.dll System.Web.UI.WebResourceAttribute\VB\WebResourceAttribute.vb /res:image1.jpg /res:help.htm

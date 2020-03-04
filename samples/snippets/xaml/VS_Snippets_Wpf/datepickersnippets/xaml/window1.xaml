@@ -1,0 +1,74 @@
+﻿<Window x:Class="DatePickerSnippets.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window1" Height="300" Width="300">
+  <StackPanel>
+    <StackPanel>
+      <!--<Snippet1>-->
+      <!-- A DatePicker that has March 23, 2009 selected and 
+                 displays the Long date format. -->
+      <DatePicker SelectedDateFormat="Long" SelectedDate="3/23/09"
+                        DisplayDateStart="1/01/09" DisplayDateEnd="12/31/09" 
+                        FirstDayOfWeek="Monday"/>
+      <!--</Snippet1>-->
+
+      <!--<Snippet2>-->
+      <DatePicker Name="datePickerWithBlackoutDates"
+                  DisplayDateStart="8/1/09"
+                  DisplayDateEnd="8/31/09"
+                  SelectedDate="8/10/09"
+                  DateValidationError="DatePicker_DateValidationError">
+        <DatePicker.BlackoutDates>
+          <CalendarDateRange Start="8/1/09" End="8/2/09"/>
+          <CalendarDateRange Start="8/8/09" End="8/9/09"/>
+          <CalendarDateRange Start="8/15/09" End="8/16/09"/>
+          <CalendarDateRange Start="8/22/09" End="8/23/09"/>
+          <CalendarDateRange Start="8/29/09" End="8/30/09"/>
+        </DatePicker.BlackoutDates>
+      </DatePicker>
+      <!--</Snippet2>-->
+
+      <!--<Snippet4>-->
+      <DatePicker IsDropDownOpen="True"
+                  IsTodayHighlighted="False" 
+                  DisplayDate="7/7/09"/>
+      <!--</Snippet4>-->
+
+      <!--<Snippet5>-->
+      <StackPanel>
+        <DatePicker Name="datePicker"
+                    SelectedDate="8/10/09"
+                    SelectedDateFormat="Long"/>
+
+        <TextBlock Text="{Binding ElementName=datePicker, Path=Text}"/>
+      </StackPanel>
+      <!--</Snippet5>-->
+
+      <!--<Snippet6>-->
+      <StackPanel>
+        <StackPanel.Resources>
+          <Style TargetType="Calendar"
+                 x:Key="DateTimeCalendar">
+            <Setter Property="Background" Value="LightBlue"/>
+            <Setter Property="BorderBrush" Value="DarkBlue"/>
+            <Setter Property="BorderThickness" Value="5"/>
+          </Style>
+
+        </StackPanel.Resources>
+        <DatePicker Background="DarkBlue"
+                    CalendarStyle="{StaticResource DateTimeCalendar}"/>
+      </StackPanel>
+      <!--</Snippet6>-->
+
+      <!--<Snippet7>-->
+      <StackPanel>
+        <TextBlock Name="textBlock1" 
+                   Text="Enter a date or click the calendar."/>
+        <DatePicker CalendarOpened="DatePicker_CalendarOpened"
+                    CalendarClosed="DatePicker_CalendarClosed"/>
+      </StackPanel>
+      <!--</Snippet7>-->
+
+    </StackPanel>
+  </StackPanel>
+</Window>

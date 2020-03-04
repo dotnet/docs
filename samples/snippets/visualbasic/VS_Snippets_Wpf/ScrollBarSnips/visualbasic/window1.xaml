@@ -1,0 +1,19 @@
+<Window x:Class="ScrollBarSnips.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="ScrollBarSnips"
+    Loaded="InitializeScrollBar"
+    >
+  <StackPanel Name="sp1">
+      <ScrollBar Orientation="Horizontal" Width ="4in"
+                 Scroll="OnScroll" Minimum="1" Maximum="100" />
+
+    <ScrollBar Name="myScrollBar" Orientation="Horizontal"/>
+
+    <ScrollBar Orientation="Horizontal"/>
+
+    <ScrollBar Name="myScrollBarViewport" Orientation="Horizontal" ViewportSize="10"/>
+
+    <ScrollBar Height="200" Orientation="Vertical"/>
+  </StackPanel>
+</Window>

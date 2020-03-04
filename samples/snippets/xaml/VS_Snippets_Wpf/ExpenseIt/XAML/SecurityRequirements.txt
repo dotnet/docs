@@ -1,0 +1,17 @@
+Permissions Required
+
+This is a XBAP application and runs with partial trust, specifically with the following permissions:
+
+* System.Security.Permissions.SecurityPermission
+  For permission for the application to execute.
+  Associated enumeration: System.Security.Permissions.SecurityPermissionFlag.Execution
+
+* System.Security.Permissions.MediaPermission
+  For permission to load and use media. (Included when built)
+  Associated enumerations: System.Security.Permissions.MediaPermissionAudio.SafeAudio
+                           System.Security.Permissions.MediaPermissionVideo.SafeVideo
+                           System.Security.Permissions.MediaPermissionImage.SafeImage
+
+* System.Security.Permissions.WebBrowserPermission
+  For permission to enable navigation to HTML. (Included when built)
+  Associated enumeration: System.Security.Permissions.WebBrowserPermissionLevel.Safe

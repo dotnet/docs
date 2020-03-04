@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 11
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{0AEFADCC-A863-42FA-B936-0A74CACBB830}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyClaimsAuthorizationManager", "MyClaimsAuthorizationManager\MyClaimsAuthorizationManager.csproj", "{7A7C83B2-FD88-4E06-8310-FE62F5640925}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyClaimsAuthenticationManager", "MyClaimsAuthenticationManager\MyClaimsAuthenticationManager.csproj", "{6DF1250E-B27E-448F-B4B0-090C07C44342}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = preSolution
+		{0AEFADCC-A863-42FA-B936-0A74CACBB830}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AEFADCC-A863-42FA-B936-0A74CACBB830}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AEFADCC-A863-42FA-B936-0A74CACBB830}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AEFADCC-A863-42FA-B936-0A74CACBB830}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DF1250E-B27E-448F-B4B0-090C07C44342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DF1250E-B27E-448F-B4B0-090C07C44342}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DF1250E-B27E-448F-B4B0-090C07C44342}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DF1250E-B27E-448F-B4B0-090C07C44342}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A7C83B2-FD88-4E06-8310-FE62F5640925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A7C83B2-FD88-4E06-8310-FE62F5640925}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A7C83B2-FD88-4E06-8310-FE62F5640925}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A7C83B2-FD88-4E06-8310-FE62F5640925}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,50 @@
+<!-- <Snippet1> -->
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" WindowTitle="Nested Panels">
+  <Border Background="AliceBlue" 
+          Width="400" 
+          Height="300" 
+          BorderBrush="DarkSlateBlue" 
+          BorderThickness="2"
+          HorizontalAlignment="Left" 
+          VerticalAlignment="Top">
+    <DockPanel>
+      <Border BorderBrush="Black" BorderThickness="1" DockPanel.Dock="Left">
+        <StackPanel>
+          <Button Margin="5">Left Docked</Button>
+          <Button Margin="5">StackPanel</Button>
+        </StackPanel>
+      </Border>
+      <Border BorderBrush="Black" BorderThickness="1" DockPanel.Dock="Top">
+        <Grid ShowGridLines="True">
+          <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+          </Grid.ColumnDefinitions>
+          <TextBlock FontSize="20" Margin="10" Grid.ColumnSpan="3" Grid.Row="0">Grid Element Docked to the Top.</TextBlock>
+          <Button Grid.Row="1" Grid.Column="0" Margin="5">A Row</Button>
+          <Button Grid.Row="1" Grid.Column="1" Margin="5">of Button</Button>
+          <Button Grid.Row="1" Grid.Column="2" Margin="5">Elements</Button>
+        </Grid>
+      </Border>
+      <Border BorderBrush="Black" BorderThickness="1" DockPanel.Dock="Bottom">
+        <StackPanel Orientation="Horizontal">
+          <TextBlock Margin="5">This StackPanel is Docked to the Bottom.</TextBlock>
+        </StackPanel>
+      </Border>
+      <Border BorderBrush="Black" BorderThickness="1">
+        <Canvas ClipToBounds="True">
+          <TextBlock Canvas.Top="50" Canvas.Left="50">
+            Content in the Canvas will Fill the remaining Space.
+          </TextBlock>
+          <Ellipse Height="100" Width="125" Fill="CornflowerBlue" Stroke="Aqua" Canvas.Top="100" Canvas.Left="150"/>
+        </Canvas>
+      </Border>
+    </DockPanel>
+  </Border>
+</Page>
+<!-- </Snippet1> -->

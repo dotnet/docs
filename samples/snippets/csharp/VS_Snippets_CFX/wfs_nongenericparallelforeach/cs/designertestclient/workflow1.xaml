@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) Microsoft Corporation. All rights reserved. -->
+<Activity mc:Ignorable="sap" x:Class="Microsoft.Samples.Activities.Statements.Workflow1" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:local="clr-namespace:Microsoft.Samples.Activities.Statements" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:msas="clr-namespace:Microsoft.Samples.Activities.Statements;assembly=NonGenericForEach" xmlns:mv="clr-namespace:Microsoft.VisualBasic;assembly=System" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:s1="clr-namespace:System;assembly=System" xmlns:s2="clr-namespace:System;assembly=System.Xml" xmlns:s3="clr-namespace:System;assembly=System.Core" xmlns:sad="clr-namespace:System.Activities.Debugger;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sc="clr-namespace:System.Collections;assembly=mscorlib" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System" xmlns:scg1="clr-namespace:System.Collections.Generic;assembly=System.ServiceModel" xmlns:scg2="clr-namespace:System.Collections.Generic;assembly=System.Core" xmlns:scg3="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:sl="clr-namespace:System.Linq;assembly=System.Core" xmlns:st="clr-namespace:System.Text;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Sequence sap:VirtualizedContainerService.HintSize="304,1077">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sc:ArrayList" Name="names" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg3:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg3:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Initialize ArrayList" sap:VirtualizedContainerService.HintSize="282,683">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg3:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg3:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign sap:VirtualizedContainerService.HintSize="242,58">
+        <Assign.To>
+          <OutArgument x:TypeArguments="sc:ArrayList">[names]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="sc:ArrayList">[New ArrayList]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <InvokeMethod DisplayName="Add item" sap:VirtualizedContainerService.HintSize="242,127" MethodName="Add">
+        <InvokeMethod.TargetObject>
+          <InArgument x:TypeArguments="sc:ArrayList">[names]</InArgument>
+        </InvokeMethod.TargetObject>
+        <InArgument x:TypeArguments="x:String">Bill</InArgument>
+      </InvokeMethod>
+      <InvokeMethod DisplayName="Add item" sap:VirtualizedContainerService.HintSize="242,127" MethodName="Add">
+        <InvokeMethod.TargetObject>
+          <InArgument x:TypeArguments="sc:ArrayList">[names]</InArgument>
+        </InvokeMethod.TargetObject>
+        <InArgument x:TypeArguments="x:String">Steve</InArgument>
+      </InvokeMethod>
+      <InvokeMethod DisplayName="Add item" sap:VirtualizedContainerService.HintSize="242,127" MethodName="Add">
+        <InvokeMethod.TargetObject>
+          <InArgument x:TypeArguments="sc:ArrayList">[names]</InArgument>
+        </InvokeMethod.TargetObject>
+        <InArgument x:TypeArguments="x:String">Ray</InArgument>
+      </InvokeMethod>
+    </Sequence>
+    <msas:ParallelForEach sap:VirtualizedContainerService.HintSize="282,230" Values="[names]">
+      <ActivityAction x:TypeArguments="x:Object">
+        <ActivityAction.Argument>
+          <DelegateInArgument x:TypeArguments="x:Object" Name="item" />
+        </ActivityAction.Argument>
+        <InvokeMethod sap:VirtualizedContainerService.HintSize="252,127" MethodName="ShowThreadId" RunAsynchronously="True" TargetType="local:Helper">
+          <InArgument x:TypeArguments="x:String">[item.ToString]</InArgument>
+        </InvokeMethod>
+      </ActivityAction>
+    </msas:ParallelForEach>
+  </Sequence>
+</Activity>

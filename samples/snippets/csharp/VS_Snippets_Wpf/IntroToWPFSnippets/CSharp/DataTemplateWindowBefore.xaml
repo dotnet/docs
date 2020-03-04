@@ -1,0 +1,43 @@
+﻿<Window x:Class="SDKSample.DataTemplateWindowBefore"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:SDKSample"
+  SizeToContent="WidthAndHeight" 
+  Title="Without a Data Template">
+  <Window.Resources>
+    
+    <!-- Data -->
+    <local:Tasks x:Key="myTodoList"/>
+
+    <!-- Data Template -->
+    <DataTemplate x:Key="myTaskTemplate">
+      <Border Name="border" BorderBrush="Aqua" BorderThickness="1" Padding="5" Margin="5">
+        <Grid>
+          <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+          </Grid.ColumnDefinitions>
+          <TextBlock Grid.Row="0" Grid.Column="0" Text="Task Name:"/>
+          <TextBlock Grid.Row="0" Grid.Column="1" Text="{Binding Path=TaskName}" />
+          <TextBlock Grid.Row="1" Grid.Column="0" Text="Description:"/>
+          <TextBlock Grid.Row="1" Grid.Column="1" Text="{Binding Path=Description}"/>
+          <TextBlock Grid.Row="2" Grid.Column="0" Text="Priority:"/>
+          <TextBlock Grid.Row="2" Grid.Column="1" Text="{Binding Path=Priority}"/>
+        </Grid>
+      </Border>  
+    </DataTemplate>
+    
+  </Window.Resources>
+
+  <!-- UI -->
+  <StackPanel>
+    <TextBlock FontSize="18" Margin="5" Text="My Task List:"/>
+    <ListBox Width="400" Margin="5,0,5,5" ItemsSource="{Binding Source={StaticResource myTodoList}}" HorizontalContentAlignment="Stretch" IsSynchronizedWithCurrentItem="True"/>
+  </StackPanel>
+  
+</Window>

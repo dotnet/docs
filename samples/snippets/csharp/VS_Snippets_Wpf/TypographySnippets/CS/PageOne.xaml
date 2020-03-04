@@ -1,0 +1,17 @@
+﻿<Page
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  >
+
+  <!-- <SnippetTypographySnippet1> -->
+  <FlowDocument FontFamily="Palatino Linotype" FontSize="24">
+    <Paragraph>
+      This is an <Run Typography.Variants="Ordinal">ordinal</Run><LineBreak/>
+      This is a <Run Typography.Variants="Superscript">superscript</Run><LineBreak/>
+      This is a <Run Typography.Variants="Subscript">subscript</Run><LineBreak/>
+      This is an <Run Typography.Variants="Inferior">inferior</Run><LineBreak/>
+    </Paragraph>
+  </FlowDocument>
+  <!-- </SnippetTypographySnippet1> -->
+
+</Page>

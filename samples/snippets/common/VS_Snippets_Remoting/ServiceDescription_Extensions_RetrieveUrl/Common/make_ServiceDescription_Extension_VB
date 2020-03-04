@@ -1,0 +1,17 @@
+cc = csc
+vb = vbc
+IISRoot = C:\InetPub\wwwroot
+
+makefile: ServiceDescription_Extensions_Output_VB.wsdl
+ServiceDescription_Extensions_Output_VB.wsdl:ServiceDescription_Extensions_2.exe
+ServiceDescription_Extensions_2.exe: ServiceDescription_Extensions_2.vb
+   $(vb)  /r:system.dll /r:system.web.dll /r:system.web.services.dll ServiceDescription_Extensions_2.vb
+   ServiceDescription_Extensions_2.exe
+   wsdl /language:"VB" ServiceDescription_Extensions_Output_VB.wsdl
+   $(vb) /t:library  /r:system.dll /r:system.web.dll /r:system.web.services.dll /r:system.xml.dll ServiceDescriptionService.vb
+   if not exist $(IISRoot)\ServiceDescription_Extensions md $(IISRoot)\ServiceDescription_Extensions
+   if not exist $(IISRoot)\bin mkdir $(IISRoot)\bin
+   copy ServiceDescription_Extensions_VB.asmx $(IISRoot)\ServiceDescription_Extensions
+   copy ServiceDescription_Extensions_Client.vb.aspx $(IISRoot)\ServiceDescription_Extensions
+   move ServiceDescriptionService.dll $(IISRoot)\bin
+   echo Invoke aspx file at http://localhost/ServiceDescription_Extensions/ServiceDescription_Extensions_Client.vb.aspx

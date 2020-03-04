@@ -25,7 +25,7 @@ To address the issues mentioned above and to make `HttpClient` instances managea
 
 ## Benefits of using IHttpClientFactory
 
-The current implementation of <xref:System.Net.Http.IHttpClientFactory>, that also implements <xref:ystem.Net.Http.IHttpMessageHandlerFactory>, offers the following benefits:
+The current implementation of <xref:System.Net.Http.IHttpClientFactory>, that also implements <xref:System.Net.Http.IHttpMessageHandlerFactory>, offers the following benefits:
 
 - Provides a central location for naming and configuring logical `HttpClient` objects. For example, you may configure a client (Service Agent) that's pre-configured to access a specific microservice.
 - Codify the concept of outgoing middleware via delegating handlers in `HttpClient` and implementing Polly-based middleware to take advantage of Polly's policies for resiliency.

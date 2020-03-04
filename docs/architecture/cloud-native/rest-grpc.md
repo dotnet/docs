@@ -2,14 +2,14 @@
 title: gRPC
 description: Learn about gRPC, its role in cloud-native applications, and how it differs from HTTP REST.
 author: robvet
-ms.date: 02/16/2020
+ms.date: 03/03/2020
 ---
 
 # gRPC
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-So far in this book, we’ve focused on [REST-based](https://docs.microsoft.com/azure/architecture/best-practices/api-design) communication. We've seen that REST is a flexible architectural style that defines CRUD-based operations against data resources. Clients interact with these resources across HTTP using a request/response communication model. While REST is widely implemented, a newer communication technology, gRPC, has gained tremendous momentum across the cloud-native community.
+So far in this book, we've focused on [REST-based](https://docs.microsoft.com/azure/architecture/best-practices/api-design) communication. We've seen that REST is a flexible architectural style that defines CRUD-based operations against data resources. Clients interact with these resources across HTTP using a request/response communication model. While REST is widely implemented, a newer communication technology, gRPC, has gained tremendous momentum across the cloud-native community.
 
 ## Introduction
 
@@ -34,9 +34,9 @@ gRPC is lightweight and highly performant. It can be up to 8x faster than JSON s
 
 ## Protocol Buffers
 
-gRPC embraces an open-source technology called [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview). They provide a highly efficient and platform-neutral serialization format for serializing structured messages that services send to each other. Using a cross-platform Interface Definition Language (IDL), developers define a service contract for each microservice. The contract, implemented as a text-based `.proto` file describes the methods, inputs, and outputs for each service. The same contract file can be used for gRPC clients and services built on different development platforms.
+gRPC embraces an open-source technology called [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview). They provide a highly efficient and platform-neutral serialization format for serializing structured messages that services send to each other. Using a cross-platform Interface Definition Language (IDL), developers define a service contract for each microservice. The contract, implemented as a text-based '.proto' file, describes the methods, inputs, and outputs for each service. The same contract file can be used for gRPC clients and services built on different development platforms.
 
-Using the proto file, the Protobuf compiler, `protoc`, generates both client and service code for your target platform. The code includes the following components:
+Using the proto file, the Protobuf compiler, "Protoc," generates both client and service code for your target platform. The code includes the following components:
 
 - A strongly-typed DTO (Data Transfer Object) shared by the client and service.
 - A strongly-typed base class with the required network plumbing that the remote gRPC service can inherit and extend.
@@ -48,7 +48,13 @@ The book, [gRPC for WCF Developers](https://docs.microsoft.com/dotnet/architectu
 
 ## gRPC support in .NET
 
-Microsoft .NET Core 3.0 includes tooling and native support for gRPC. gRPC has been seamlessly integrated into the 3.0 framework with support for endpoint routing, built-in IoC, and logging. The open-source Kestrel web server supports HTTP/2 connections. Figure 4-20 shows a Visual Studio 2019 template that scaffolds a skeleton project for a gRPC service. Note how .NET Core fully supports the Windows, Linux, and macOS platforms.
+gRPC is integrated into .NET Core 3.0 SDK or later. The following tools support it:
+
+- Visual Studio 2019, version 16.3 or later, and the web development workload installed.
+- Visual Studio Code
+- the dotnet CLI
+
+It includes tooling for endpoint routing, built-in IoC, and logging. The open-source Kestrel web server supports HTTP/2 connections. Figure 4-20 shows a Visual Studio 2019 template that scaffolds a skeleton project for a gRPC service. Note how .NET Core fully supports Windows, Linux, and macOS.
 
 ![gRPC Support in Visual Studio 2019](./media/visual-studio-2019-grpc-template.png)
 
@@ -341,7 +347,7 @@ Note in the previous figure how two endpoints are opened. One listens for HTTP t
 
 ## Looking ahead
 
-Looking ahead, gRPC could well play a major role in dethroning the dominance of REST for cloud-native systems. The performance benefits and ease of development are compelling. However, REST will still most likely be around for a long time. It excels for publicly exposed APIs and for backward compatibility reasons.
+Looking ahead, gRPC could will continue to gain traction for cloud-native systems. The performance benefits and ease of development are compelling. However, REST will still most likely be around for a long time. It excels for publicly exposed APIs and for backward compatibility reasons.
 
 >[!div class="step-by-step"]
 >[Previous](service-to-service-communication.md)

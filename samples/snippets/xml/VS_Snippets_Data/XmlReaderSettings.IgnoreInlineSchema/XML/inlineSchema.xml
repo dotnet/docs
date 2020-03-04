@@ -1,0 +1,23 @@
+<!--<snippet3>-->
+<root>
+<!--Start of schema-->
+<xs:schema xmlns:xs='http://www.w3.org/2001/XMLSchema'
+            xmlns='xsdHeadCount'
+            targetNamespace='xsdHeadCount'>
+    <xs:element name='HeadCount'>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name='ID' type='xs:unsignedShort' maxOccurs='unbounded' />
+            </xs:sequence>
+            <xs:attribute name='division' type='xs:string' use='optional' default='QA'/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
+<!--End of schema-->
+<hc:HeadCount xmlns:hc='xsdHeadCount'>
+    <ID>12365</ID>
+    <ID>43295</ID>
+    <division>Accounting</division>
+</hc:HeadCount>
+</root>
+<!--</snippet3>-->

@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Sample xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="Sample http://snipper/sample.xsd" xmlns="Sample">
+  <Name>System.Web.UI.Design_Samples1</Name>
+  <Approval>
+    <ApprovalStatus>approved</ApprovalStatus>
+    <Approver>REDMOND\v-benjc</Approver>
+    <ApprovalDate>2003-01-08T14:38:02.7039688-08:00</ApprovalDate>
+  </Approval>
+  <BuildInfo>
+    <BuildStatus>approved</BuildStatus>
+  </BuildInfo>
+  <Creator>REDMOND\v-benjc</Creator>
+  <CreationDate>2003-01-07T15:31:53.5002886-08:00</CreationDate>
+  <LastValidated>2003-01-07T15:31:53.5002886-08:00</LastValidated>
+  <LastGoodBuildVersion>1.0.2914.16</LastGoodBuildVersion>
+  <LastGoodBuildDate>2003-01-07T15:31:53.5002886-08:00</LastGoodBuildDate>
+  <Description>The following code example creates a designer class that inherits from the TemplatedControlDesigner class, implements the IDataSourceProvider interfaces, and overrides a number of methods from the ControlDesigner class.</Description>
+  <Snippets>
+    <!-- <Snippet8> -->
+      <FileName>databounddesigner.vb</FileName>
+      <RelevantItems>
+        <Reference>System.Web.UI.Design.TemplatedControlDesigner.GetCachedTemplateEditingVerbs</Reference>
+        <Reference>System.Web.UI.Design.TemplateEditingVerb</Reference>
+      </RelevantItems>
+    <!-- </Snippet8> -->
+    <!-- <Snippet9> -->
+      <FileName>databounddesigner.vb</FileName>
+      <RelevantItems>
+        <Reference>System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml</Reference>
+      </RelevantItems>
+    <!-- </Snippet9> -->
+    <!-- <Snippet2> -->
+      <FileName>databounddesigner.vb</FileName>
+      <RelevantItems>
+        <Reference>System.Web.UI.Design.ControlDesigner.AllowResize</Reference>
+        <Reference>System.Web.UI.Design.TemplateControlDesigner.InTemplateMode</Reference>
+      </RelevantItems>
+    <!-- </Snippet2> -->
+    <!-- <Snippet3> -->
+      <FileName>databounddesigner.vb</FileName>
+      <RelevantItems>
+        <Reference>System.Web.UI.DataBindingCollection</Reference>
+        <Reference>System.Web.UI.DataBinding</Reference>
+        <Reference>System.Web.UI.DataBinding.Expression</Reference>
+        <Reference>System.Web.UI.DataBinding.DataBinding</Reference>
+      </RelevantItems>
+    <!-- </Snippet3> -->
+    <!-- <Snippet1> -->
+      <FileName>databounddesigner.vb</FileName>
+      <RelevantItems>
+        <Reference>System.Web.UI.Design.ControlDesigner</Reference>
+        <Reference>System.Web.UI.Design.TemplatedControlDesigner</Reference>
+        <Reference>System.Web.UI.Design.IDataSourceProvider</Reference>
+      </RelevantItems>
+    <!-- </Snippet1> -->
+    <!-- <Snippet6> -->
+      <FileName>databounddesigner.vb</FileName>
+      <RelevantItems>
+        <Reference>System.Web.UI.Design.TemplatedControlDesigner.GetTemplateEditingFrame</Reference>
+      </RelevantItems>
+    <!-- </Snippet6> -->
+    <!-- <Snippet7> -->
+      <FileName>databounddesigner.vb</FileName>
+      <RelevantItems>
+        <Reference>System.Web.UI.Design.ControlDesigner.Dispose</Reference>
+      </RelevantItems>
+    <!-- </Snippet7> -->
+    <!-- <Snippet4> -->
+      <FileName>databounddesigner.vb</FileName>
+      <RelevantItems>
+        <Reference>System.Web.UI.Design.ControlDesigner.DesignTimeHtmlRequiresLoadComplete</Reference>
+      </RelevantItems>
+    <!-- </Snippet4> -->
+    <!-- <Snippet5> -->
+      <FileName>databounddesigner.vb</FileName>
+      <RelevantItems>
+        <Reference>System.Web.UI.Design.DataListDesigner.TemplatesExist</Reference>
+        <Reference>System.Web.UI.Design.RepeaterDesigner.TemplatesExist</Reference>
+      </RelevantItems>
+    <!-- </Snippet5> -->
+    <!-- <Snippet13> -->
+      <FileName>databounddesigner.vb</FileName>
+      <RelevantItems>
+        <Reference>System.Web.UI.Design.TemplatedControlDesigner.GetTemplateContent</Reference>
+        <Reference>System.Web.UI.Design.TemplatedControlDesigner.GetTextFromTemplate</Reference>
+      </RelevantItems>
+    <!-- </Snippet13> -->
+    <!-- <Snippet12> -->
+      <FileName>databounddesigner.vb</FileName>
+      <RelevantItems>
+        <Reference>System.Web.UI.Design.TemplatedControlDesigner.GetTemplateContainerDataSource</Reference>
+        <Reference>System.Web.UI.Design.TemplatedControlDesigner.GetTemplateContainerDataItemProperty</Reference>
+      </RelevantItems>
+    <!-- </Snippet12> -->
+    <!-- <Snippet11> -->
+      <FileName>databounddesigner.vb</FileName>
+      <RelevantItems>
+        <Reference>System.Web.UI.Design.ControlDesigner.GetErrorDesignTimeHtml</Reference>
+        <Reference>System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml</Reference>
+      </RelevantItems>
+    <!-- </Snippet11> -->
+    <!-- <Snippet10> -->
+      <FileName>databounddesigner.vb</FileName>
+      <RelevantItems>
+        <Reference>System.Web.UI.Design.ControlDesigner.System.Web.UI.Design.ControlDesigner.GetEmptyDesignTimeHtml</Reference>
+        <Reference>System.Web.UI.Design.TemplatedControlDesigner.CanEnterTemplateMode</Reference>
+        <Reference>System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml</Reference>
+      </RelevantItems>
+    <!-- </Snippet10> -->
+    <!-- <Snippet17> -->
+      <FileName>databounddesigner.vb</FileName>
+      <RelevantItems>
+        <Reference>System.Web.UI.Design.IDataSourceProvider.GetResolvedSelectedDataSource</Reference>
+        <Reference>System.Web.UI.Design.IDataSourceProvider.GetSelectedDataSource</Reference>
+      </RelevantItems>
+    <!-- </Snippet17> -->
+    <!-- <Snippet18> -->
+      <FileName>databoundcontrol.vb</FileName>
+      <RelevantItems>
+        <Reference>System.Web.UI.Design.TemplatedControlDesigner</Reference>
+        <Reference>System.ComponentModel.DesignerAttribute</Reference>
+      </RelevantItems>
+    <!-- </Snippet18> -->
+    <!-- <Snippet16> -->
+      <FileName>databounddesigner.vb</FileName>
+      <RelevantItems>
+        <Reference>System.Web.UI.Design.TemplatedControlDesigner.SetTemplateContent</Reference>
+        <Reference>System.Web.UI.Design.TemplatedControlDesigner.GetTemplateFromText</Reference>
+      </RelevantItems>
+    <!-- </Snippet16> -->
+    <!-- <Snippet15> -->
+      <FileName>databounddesigner.vb</FileName>
+      <RelevantItems>
+        <Reference>System.Web.UI.Design.TemplatedControlDesigner.PreFilterProperties</Reference>
+      </RelevantItems>
+    <!-- </Snippet15> -->
+    <!-- <Snippet14> -->
+      <FileName>databounddesigner.vb</FileName>
+      <RelevantItems>
+        <Reference>System.Web.UI.Design.TemplatedControlDesigner.OnComponentChange</Reference>
+        <Reference>System.Web.UI.Design.ControlDesigner.OnComponentChanged</Reference>
+        <Reference>System.Web.UI.Design</Reference>
+      </RelevantItems>
+    <!-- </Snippet14> -->
+  </Snippets>
+  <TestInfo>
+    <Platform>2</Platform>
+    <SpecialDeliverable>0</SpecialDeliverable>
+  </TestInfo>
+</Sample>

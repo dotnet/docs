@@ -1,0 +1,26 @@
+<healthMonitoring 
+  enabled="true" heartBeatInterval="0">
+
+  <eventMappings>
+     
+    <add  name="SampleWebErrorEvent" type="Samples.AspNet.Management.SampleWebErrorEvent,weberrorevent,Version=1.0.1573.21549, Culture=neutral, PublicKeyToken=2a0b23915ac7352b, processorArchitecture=MSIL"/>
+   
+  </eventMappings>
+  
+  <profiles>
+    <add name="Custom" 
+      minInstances="1" 
+      maxLimit="Infinite" 
+      minInterval="00:00:00" />
+  </profiles>
+
+  <rules>
+    <clear />
+    
+    <add name="Custom Web Error Event" 
+      eventName="SampleWebErrorEvent"
+      provider="EventLogProvider" 
+      profile="Custom" />
+  </rules>
+
+</healthMonitoring>

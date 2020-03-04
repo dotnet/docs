@@ -1,0 +1,30 @@
+<Window x:Class="SDKSample.Window1"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:src="clr-namespace:SDKSample"
+    Title="ObservableCollection"
+    >
+  <DockPanel>
+
+    <DockPanel.Resources>
+      <ObjectDataProvider x:Key="NumberListDSO" ObjectType="{x:Type src:NumberList}" />
+
+      <DataTemplate x:Key="NumberDataTemplate">
+        <TextBlock Text="{Binding Path=NLValue}"/>
+      </DataTemplate>
+    </DockPanel.Resources>
+
+    <DockPanel Name="DPMain" Dock="Top" HorizontalAlignment="Left" VerticalAlignment="Top"
+       DataContext="{Binding Source={StaticResource NumberListDSO}}">
+      <TextBlock Foreground="Red" Height="20" Width="200" DockPanel.Dock="Top">Click Odd or Even to Change List</TextBlock>
+      <Button Click="btnOdd" Width="60" Height="25" DockPanel.Dock="Top">Odd</Button>
+      <Button Click="btnEven" Width="60" Height="25" DockPanel.Dock="Top">Even</Button>
+      <ListBox
+        Width="40" Height="50" DockPanel.Dock="Top"
+        ItemsSource="{Binding}"
+        ItemTemplate="{StaticResource NumberDataTemplate}"/>
+    </DockPanel>
+
+  </DockPanel>
+
+</Window>

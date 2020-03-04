@@ -1,0 +1,12 @@
+<!-- <Snippet1> -->
+<Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" WindowTitle="Canvas Attached Properties Sample">
+  <Border HorizontalAlignment="Left" VerticalAlignment="Top" BorderBrush="Black" BorderThickness="2">
+    <Canvas Background="LightBlue" Width="400" Height="400">
+      <Button Canvas.Top="50">Canvas.Top="50"</Button>
+      <Button Canvas.Bottom="50">Canvas.Bottom="50"</Button>
+      <Button Canvas.Left="50">Canvas.Left="50"</Button>
+      <Button Canvas.Right="50">Canvas.Right="50"</Button>
+    </Canvas>
+  </Border>    
+</Page>
+<!-- </Snippet1> -->

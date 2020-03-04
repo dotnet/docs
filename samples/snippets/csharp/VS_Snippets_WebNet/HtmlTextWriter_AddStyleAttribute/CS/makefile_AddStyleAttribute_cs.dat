@@ -1,0 +1,10 @@
+cc = csc
+vb = vbc
+IISRoot = C:\InetPub\wwwroot
+
+HtmlTextWriter_AddStyleAttribute:HtmlTextWriter_AddStyleAttribute.cs
+	$(cc) /t:library /out:CustomControls.dll HtmlTextWriter_AddStyleAttribute.cs
+	if not exist $(IISRoot)\bin mkdir $(IISRoot)\bin
+	move CustomControls.dll $(IISRoot)\bin
+	copy FirstControl.cs.aspx $(IISRoot)
+	echo Invoke aspx file at http://localhost/FirstControl.cs.aspx

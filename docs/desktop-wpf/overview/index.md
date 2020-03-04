@@ -48,7 +48,7 @@ For example, the previous XAML code defined a button with the visible content se
 
 WPF provides different markup extensions for XAML such as `{Binding}` for data binding.
 
-<!--For more information, see [Markup Extensions and WPF XAML](../../../framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).-->
+For more information, see [Markup Extensions and WPF XAML](../../framework/wpf/advanced/markup-extensions-and-wpf-xaml.md).
 
 ## Property system
 

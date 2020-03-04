@@ -1,0 +1,31 @@
+﻿<Page
+  x:Class="SDKSample.Attributes"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Loaded="PageLoaded"
+  >
+
+  <StackPanel Background="FloralWhite">
+    
+  <!-- <SnippetAttributesSnippet1> -->
+  <!-- Define localization attributes for the button.
+        - The content is visible to the localizer and can be changed.
+        - The font family property is visible to the localizer but cannot be changed. -->
+    <Button
+      FontFamily="Microsoft San Serif"
+      Localization.Attributes=
+        "$Content(Button Readable Modifiable) FontFamily(Font Readable Unmodifiable)" >
+      your company name here
+    </Button>
+    <!-- </SnippetAttributesSnippet1> -->
+
+    <Button
+      Name="buttonLocalized" 
+      FontFamily="Microsoft San Serif"
+      Localization.Attributes=
+        "$Content(Button Readable Modifiable) FontFamily(Font Readable Unmodifiable)" >
+      your company name here
+    </Button>
+
+  </StackPanel>
+</Page>

@@ -1,0 +1,23 @@
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        ExternalConfiguration extConfig = null;
+        
+        if (!IsPostBack)
+        {
+            // Instantiate ManageConfiguration.
+            extConfig =
+                new ExternalConfiguration();
+            // HttpContext.Current.Application["MyKey"] = "Start";
+        }
+
+        int postBackCount =
+           (int) HttpContext.Current.Application["postBackKey"];
+        ResultId.Text = postBackCount.ToString();
+
+        HttpContext.Current.Application["postBackKey"] =
+            (int)HttpContext.Current.Application["postBackKey"] + 1;
+ 
+        extConfig.UpdateAppSettngs();
+ 
+    }

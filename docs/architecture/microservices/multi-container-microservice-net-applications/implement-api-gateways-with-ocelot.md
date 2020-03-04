@@ -1,7 +1,7 @@
 ---
 title: Implementing API Gateways with Ocelot
 description: Learn how to implement API Gateways with Ocelot and how to use Ocelot in a container-based environment.
-ms.date: 01/30/2020
+ms.date: 03/02/2020
 ---
 
 # Implement API Gateways with Ocelot
@@ -135,7 +135,7 @@ However, direct-access communication to the microservice, in this case through t
 
 Ocelot is basically a set of middlewares that you can apply in a specific order.
 
-Ocelot is designed to work with ASP.NET Core only. It targets `netstandard2.0` so it can be used anywhere .NET Standard 2.0 is supported, including .NET Core 2.0 runtime and .NET Framework 4.6.1 runtime and up.
+Ocelot is designed to work with ASP.NET Core only. The latest version of the package targets `.NETCoreApp 3.1` and hence it is not suitable for .NET Framework applications.
 
 You install Ocelot and its dependencies in your ASP.NET Core project with [Ocelot's NuGet package](https://www.nuget.org/packages/Ocelot/), from Visual Studio.
 

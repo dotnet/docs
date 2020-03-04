@@ -1,0 +1,104 @@
+<Canvas  
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:src="clr-namespace:ListBox_vb"  
+    x:Class="ListBox_vb.Pane1"
+>
+  <Canvas.Resources>
+    <src:myColors x:Key="Colors"/>
+  </Canvas.Resources>
+
+  <Grid ShowGridLines ="false" Background ="White" >
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="300"/>
+      <ColumnDefinition Width="250"/>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+      <RowDefinition/>
+    </Grid.RowDefinitions>
+    <TextBlock Margin="10, 10, 3, 3" Grid.Column="0" Grid.Row="0" FontSize="24">List Boxes</TextBlock>
+    <TextBlock Margin="10, 10, 3, 3" Grid.Column="0" Grid.Row="1" FontSize="14" Grid.ColumnSpan="2">The following list box examples demonstrate:</TextBlock>
+    <DockPanel Margin="10, 10, 3, 3" Grid.Column="0" Grid.Row="2">
+
+      <TextBox Name="tb" Width="140" Height="30"></TextBox>
+
+      <ListBox Width="100" Height="55" SelectionChanged="PrintText" SelectionMode="Single">
+
+        <ListBoxItem>Item 1</ListBoxItem>
+        <ListBoxItem>Item 2</ListBoxItem>
+        <ListBoxItem>Item 3</ListBoxItem>
+        <ListBoxItem>Item 4</ListBoxItem>
+        <ListBoxItem>Item 5</ListBoxItem>
+        <ListBoxItem>Item 6</ListBoxItem>
+        <ListBoxItem>Item 7</ListBoxItem>
+        <ListBoxItem>Item 8</ListBoxItem>
+        <ListBoxItem>Item 9</ListBoxItem>
+        <ListBoxItem>Item 10</ListBoxItem>
+
+
+      </ListBox>
+    </DockPanel>
+
+    <TextBlock Margin="10, 10, 3, 3" Grid.Column="1" Grid.Row="2" FontSize="12" VerticalAlignment="Center" TextWrapping="WrapWithOverflow">List box with event handler. Click an item. This list box allows only one user selection.</TextBlock>
+
+
+    <DockPanel Margin="10, 10, 3, 3" Grid.Column="0" Grid.Row="3">
+
+      <ListBox Width="265" Height="55" HorizontalAlignment="Left" SelectionMode="Multiple">
+        <DockPanel>
+          <Image Source="data\cat.png"/>
+          <TextBlock>CAT</TextBlock>
+        </DockPanel>
+        <DockPanel>
+          <Image Source="data\dog.png"/>
+          <TextBlock>DOG</TextBlock>
+        </DockPanel>
+        <DockPanel>
+          <Image Source="data\fish.png"/>
+          <TextBlock>FISH</TextBlock>
+        </DockPanel>
+      </ListBox>
+    </DockPanel>
+    <TextBlock Margin="10, 10, 3, 3" Grid.Column="1" Grid.Row="3" FontSize="12" VerticalAlignment="Center" TextWrapping="WrapWithOverflow">List box with text and non-text content in the list box items. This list box allows multiple user selections.</TextBlock>
+
+
+    <StackPanel Margin="10, 10, 3, 3" Grid.Column="0" Grid.Row="4">
+
+      <WrapPanel Width="500" Orientation="Horizontal" Name="rectanglesPanel">
+        <WrapPanel.Resources>
+          <Style TargetType="Rectangle">
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="Width" Value="20"/>
+            <Setter Property="Margin" Value="5"/>
+          </Style>
+        </WrapPanel.Resources>
+      </WrapPanel>
+
+      <ListBox Name="myListBox" HorizontalAlignment="Left" SelectionMode="Extended" 
+            Width="265" Height="55" Background="HoneyDew" SelectionChanged="myListBox_SelectionChanged"
+            ItemsSource="{Binding Source={StaticResource Colors}}" IsSynchronizedWithCurrentItem="true">
+      </ListBox>
+
+      <StackPanel Orientation="Horizontal" Margin="10">
+        <Button Content="_Select all" Click="selectAll_Click"/>
+        <Button Content="_Unselect all" Click="unselectAll_Click"/>
+      </StackPanel>
+    </StackPanel>
+
+    <TextBlock Margin="10, 10, 3, 3" Grid.Column="1" Grid.Row="4" FontSize="12" VerticalAlignment="Center" TextWrapping="WrapWithOverflow">List box that allows items to be selected in groups by using the CTRL key and mouse or the CTRL key and space key.</TextBlock>
+  </Grid>
+
+</Canvas>
+

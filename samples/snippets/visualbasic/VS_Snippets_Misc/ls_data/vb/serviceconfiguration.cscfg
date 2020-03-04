@@ -1,0 +1,23 @@
+<ServiceConfiguration serviceName="LS_Data_VB" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration">
+    <Role name="LightSwitchWebRole">
+        <Instances count="1" />
+        <ConfigurationSettings>
+            <!-- A value of true will enable diagnostic logging on the server -->
+            <Setting name="Microsoft.LightSwitch.Trace.Enabled" value="false" />
+
+            <!-- A value of true only lets local access to Trace.axd -->
+            <Setting name="Microsoft.LightSwitch.Trace.LocalOnly" value="true" />
+
+            <!-- The valid values for the trace level are: None, Error, Warning, Information, Verbose -->
+            <Setting name="Microsoft.LightSwitch.Trace.Level" value="Information" />
+
+            <!-- A value of true will indicate that logging sensitive information is okay -->
+            <Setting name="Microsoft.LightSwitch.Trace.Sensitive" value="false" />
+
+            <!-- The semi-colon separated list of categories that will be enabled at the specifed trace level -->
+            <Setting name="Microsoft.LightSwitch.Trace.Categories" value="Microsoft.LightSwitch" />
+        </ConfigurationSettings>
+        <Certificates>
+        </Certificates>
+    </Role>
+</ServiceConfiguration>

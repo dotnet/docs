@@ -1,0 +1,24 @@
+﻿<!--<SnippetBrowseForwardMARKUP1>-->
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+  <!--</SnippetBrowseForwardMARKUP1>-->
+  <DockPanel>
+    <Menu DockPanel.Dock="Top">
+      <MenuItem Header="_Navigation">
+        <!--<SnippetBrowseForwardMARKUP2>-->
+        <!-- NavigationCommands.BrowseForward -->
+        <MenuItem
+          Command="NavigationCommands.BrowseForward"
+          CommandTarget="{Binding ElementName=frame}" />
+        <!--</SnippetBrowseForwardMARKUP2>-->
+      </MenuItem>
+    </Menu>
+    <Border Margin="5" Padding="5" BorderBrush="SteelBlue" BorderThickness="2" CornerRadius="5">
+      <!--<SnippetBrowseForwardMARKUP3>-->
+      <!-- The following Frame is used to process NavigationCommands.BrowseForward commands -->
+      <Frame Name="frame" NavigationUIVisibility="Hidden" Source="Page1.xaml" />
+      <!--</SnippetBrowseForwardMARKUP3>-->
+    </Border>
+  </DockPanel>
+  <!--<SnippetBrowseForwardMARKUP4>-->
+</Window>
+<!--</SnippetBrowseForwardMARKUP4>-->

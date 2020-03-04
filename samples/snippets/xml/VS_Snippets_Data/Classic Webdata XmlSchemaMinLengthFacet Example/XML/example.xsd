@@ -1,0 +1,17 @@
+﻿<!--<Snippet2>-->
+<?xml version="1.0" encoding="IBM437"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:simpleType name="ZipCodeType">
+		<xs:restriction base="xs:string">
+			<xs:minLength value="5"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:element name="Address">
+		<xs:complexType>
+			<xs:attribute name="ZipCode" type="ZipCodeType"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+<!--</Snippet2>-->

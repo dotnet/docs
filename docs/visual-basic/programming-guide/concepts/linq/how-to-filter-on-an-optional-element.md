@@ -10,7 +10,7 @@ Sometimes you want to filter for an element even though you are not sure it exis
  This example uses the <xref:System.Xml.Linq.Extensions.Elements%2A> extension method.  
   
 ```vb  
-Dim root As XElement = _   
+Dim root As XElement = _
     <Root>  
         <Child1>  
             <Text>Child One Text</Text>  

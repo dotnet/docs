@@ -1,0 +1,83 @@
+<StackPanel
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="TabControl.Pane1"
+>
+
+<Grid ShowGridLines ="false" Background ="White" >
+<Grid.ColumnDefinitions>
+<ColumnDefinition Width="300"/>
+<ColumnDefinition Width="250"/>
+</Grid.ColumnDefinitions>
+<Grid.RowDefinitions>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+<RowDefinition/>
+</Grid.RowDefinitions>
+
+<TextBlock Margin="10, 10, 3, 3" Grid.Column="0" Grid.Row="0" FontSize="24">
+      Tab Controls</TextBlock>
+<TextBlock Margin="10, 10, 3, 3" Grid.Column="0" Grid.Row="1" FontSize="14" 
+      Grid.ColumnSpan="2">The following tab control examples demonstrate:</TextBlock>
+
+<DockPanel Margin="30, 10, 3, 3" Grid.Column="0" Grid.Row="2">
+
+<TabControl TabStripPlacement="Top" Margin="0, 0, 0, 10">
+  <TabItem Name="backgroundcolor" Header="Background">
+        <TabItem.Content>Background property information goes here.</TabItem.Content> 
+  </TabItem>
+
+  <TabItem Name="foregroundcolor" Header="Foreground">
+        <TabItem.Content>Foreground property information goes here.</TabItem.Content>
+  </TabItem>
+
+  <TabItem Name="bordercolor" Header="BorderColor">
+        <TabItem.Content>Border color property information goes here.</TabItem.Content>
+  </TabItem>
+</TabControl>
+
+</DockPanel>
+<TextBlock Margin="10, 10, 3, 3" Grid.Column="1" Grid.Row="2" FontSize="12" 
+      VerticalAlignment="Center">Tab control with tabs placed on the top.
+</TextBlock>
+
+<DockPanel Margin="30, 10, 3, 3" Grid.Column="0" Grid.Row="3">
+
+<TabControl TabStripPlacement="Left" Margin="0, 0, 0, 10" SelectionChanged="OnSelectionChanged">
+  <TabItem Name="tabItem1" Header="FontWeight">
+        <TabItem.Content><TextBlock TextWrapping="WrapWithOverflow"> 
+          FontWeight property information goes here.</TextBlock></TabItem.Content> 
+  </TabItem>
+
+  <TabItem Name="tabItem2" Header="FontSize">
+        <TabItem.Content><TextBlock TextWrapping="WrapWithOverflow">
+           FontSize property information goes here.</TextBlock></TabItem.Content>
+  </TabItem>
+</TabControl>
+
+</DockPanel>
+<Button Name="btnPlacement" Margin="10, 10, 3, 3" Grid.Column="1" Grid.Row="3">
+</Button>
+
+<Button Margin="30, 10, 3, 3" Grid.Column="0" Grid.Row="4" Click="OnClick">
+        Click me to create a tab control with C# code.</Button>
+<TextBlock Margin="10, 10, 3, 3" Grid.Column="1" Grid.Row="4" FontSize="12" 
+        VerticalAlignment="Center" TextWrapping="WrapWithOverflow">
+        Creating a tab control with C#.
+</TextBlock>
+</Grid>
+<Canvas Name="cv2" Width="550" Height="50" Canvas.Top="290" Canvas.Left="10"></Canvas> 
+
+
+
+</StackPanel>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <Snippet2> -->
+<rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0">
+  <!-- <Snippet15>-->
+  <channel CustomAttribute="Value">
+    <!-- </Snippet15>-->
+    <!-- <Snippet38> -->
+    <title>Feed Title</title>
+    <!-- </Snippet38> -->
+    <link>http://feed/Alternate/Link</link>
+    <!-- <Snippet25> -->
+    <description>This is a sample feed</description>
+    <!-- </Snippet25> -->
+    <!-- <Snippet33> -->
+    <language>en-us</language>
+    <!-- </Snippet33> -->
+
+    <!-- <Snippet23> -->
+    <copyright>Copyright 2007</copyright>
+    <!-- </Snippet23> -->
+
+    <managingEditor>Jesper.Aaberg@contoso.com</managingEditor>
+    <lastBuildDate>Fri, 13 Apr 2007 17:29:38 Z</lastBuildDate>
+    <!--<Snippet19>-->
+    <category domain="CategoryScheme">FeedCategory</category>
+    <!--</Snippet19>-->
+    <!-- <Snippet37> -->
+    <a10:link rel="alternate" type="text/html" title="Link Title" length="1000" href="http://contoso/link" />
+    <!-- </Snippet37> -->
+    <generator>Sample Code</generator>
+    
+    <!-- <Snippet21> -->
+    <a10:contributor>
+      <a10:name>Lene Aalling</a10:name>
+      <a10:uri>http://contoso/Aalling</a10:uri>
+      <a10:email>Lene.Aalling@contoso.com</a10:email>
+    </a10:contributor>
+    <!-- </Snippet21> -->
+    
+    <!-- <Snippet17>-->
+    <a10:author>
+      <a10:name>Lene Aalling</a10:name>
+      <a10:uri>http://contoso/Aalling</a10:uri>
+      <a10:email>Lene.Aalling@contoso.com</a10:email>
+    </a10:author>
+    <!-- </Snippet17>-->
+    <!-- <Snippet30> -->
+    <image>
+      <url>http://contoso/image.jpg</url>
+      <title>Feed Title</title>
+      <link>http://feed/Alternate/Link</link>
+    </image>
+    <!-- </Snippet30> -->
+    <!-- <Snippet28>-->
+    <a10:id>FeedID</a10:id>
+    <!-- </Snippet28>-->
+    <a10:link customAttribute="value" rel="alternate" type="text/html" title="Link Title" length="1000" href="http://contoso/link" />
+    
+    <CustomElement>Some text</CustomElement>
+    <!-- <Snippet32> -->
+    <!-- <Snippet35> -->
+    <item>
+      <guid isPermaLink="false">ItemID</guid>
+      <link>http://contoso/items</link>
+      <title>Item Title</title>
+      <description>Some text content</description>
+      <a10:updated>2007-04-13T17:29:38Z</a10:updated>
+    </item>
+    <!-- </Snippet35> -->
+    <!-- </Snippet32> -->
+  </channel>
+</rss>
+<!-- </Snippet2> -->
+

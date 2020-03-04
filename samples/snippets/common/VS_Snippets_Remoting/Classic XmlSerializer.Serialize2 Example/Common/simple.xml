@@ -1,0 +1,11 @@
+<!--<Snippet1>-->
+<?xml version="1.0"?>
+ <OrderedItem xmlns:inventory="http://www.cpandl.com" xmlns:money="http://www.cohowinery.com">
+   <inventory:ItemName>Widget</inventory:ItemName>
+   <inventory:Description>Regular Widget</inventory:Description>
+   <money:UnitPrice>2.3</money:UnitPrice>
+   <inventory:Quantity>10</inventory:Quantity>
+   <money:LineTotal>23</money:LineTotal>
+ </OrderedItem>
+
+<!--</Snippet1>-->

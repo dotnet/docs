@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- <snippet16>-->
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy"
+
+  namespaces removed here for clarity...
+
+>
+  <wsp:Policy wsu:Id="CustomBinding_IStatefulService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <acme 
+          b:MyCustomAttribute="ExampleValue"
+          xmlns="http://Microsoft/WCF/Documentation/CustomPolicyAssertions"           xmlns:b="http://Microsoft/WCF/Documentation/CustomPolicyAssertions">
+           My custom text.
+          <MyCustomSubElement>Custom Subelement Text.</MyCustomSubElement>
+        </acme>
+        <wsrm:RMAssertion xmlns:wsrm="http://schemas.xmlsoap.org/ws/2005/02/rm/policy">
+          <wsrm:InactivityTimeout Milliseconds="600000" />
+          <wsrm:AcknowledgementInterval Milliseconds="200" />
+        </wsrm:RMAssertion>
+        <wsaw:UsingAddressing />
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://microsoft.wcf.documentation" location="" />
+  <!-- </snippet16>-->
+  <wsdl:types />
+  <wsdl:binding name="CustomBinding_IStatefulService" type="i0:IStatefulService">
+    <wsp:PolicyReference URI="#CustomBinding_IStatefulService_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSessionID">
+      <soap12:operation soapAction="http://microsoft.wcf.documentation/IStatefulService/GetSessionID" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="StatefulService">
+    <wsdl:port name="CustomBinding_IStatefulService" binding="tns:CustomBinding_IStatefulService">
+      <soap12:address location="http://localhost:8080/StatefulService" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>http://localhost:8080/StatefulService</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

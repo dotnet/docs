@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright (c) Microsoft Corporation. All rights reserved. -->
+<sad:ActivityDesigner x:Uid="sad:WorkflowElementDesigner_1" x:Class="Microsoft.Samples.Activities.Statements.Presentation.ParallelForEachDesigner"    
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:sc="clr-namespace:System.Collections;assembly=mscorlib"
+    xmlns:local="clr-namespace:Microsoft.Samples.Activities.Statements.Presentation"    
+    xmlns:sa="clr-namespace:System.Activities;assembly=System.Activities"
+    xmlns:sad="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"
+    xmlns:sadv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation"                      
+    xmlns:sadc="clr-namespace:System.Activities.Presentation.Converters;assembly=System.Activities.Presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+  <sad:ActivityDesigner.Resources>
+    <ResourceDictionary x:Uid="ResourceDictionary_1">
+      <sadc:ArgumentToExpressionConverter x:Uid="sadv:ArgumentToExpressionConverter_1" x:Key="argumentToExpressionConverter" />
+
+      <DataTemplate x:Uid="DataTemplate_1" x:Key="ExpandedForEachTemplate">
+        <Grid x:Uid="Grid_1" Width="Auto">
+          <Grid.RowDefinitions>
+            <RowDefinition x:Uid="RowDefinition_1" />
+            <RowDefinition x:Uid="RowDefinition_2" />
+            <RowDefinition x:Uid="RowDefinition_3" />
+          </Grid.RowDefinitions>
+          <StackPanel x:Uid="StackPanel_1" Grid.Row="0" Orientation="Horizontal">
+            <TextBlock x:Uid="TextBlock_1" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0">Foreach</TextBlock>
+            <TextBox x:Uid="argumentNameBox" Name="argumentNameBox" AutomationProperties.AutomationId="ArgumentName"
+                AutomationProperties.Name="Foreach"
+                Width="50"  Margin="7,0,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Center"
+                Text="{Binding Path=ModelItem.Body.Argument.Name, Mode=TwoWay, ValidatesOnExceptions=True}"/>
+            <TextBlock x:Uid="TextBlock_2" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="7,0,0,0">in</TextBlock>
+            <sadv:ExpressionTextBox x:Uid="valuesBox" x:Name="valuesBox"
+                MaxLines="1" Width="150"  Margin="7,0,0,0" HorizontalAlignment="Stretch" VerticalAlignment="Center"
+                Expression="{Binding Path=ModelItem.Values, Mode=TwoWay, Converter={StaticResource argumentToExpressionConverter}, ConverterParameter=In}"                                                    
+                ExpressionType="{x:Type sc:IEnumerable}"
+                OwnerActivity="{Binding Path=ModelItem, Mode=OneWay}"/>                            
+          </StackPanel>
+          <TextBlock Margin="0,10,0,7" Text="Body" x:Uid="Label_11"  Grid.Row="1" />
+          <Border x:Uid="GroupBox_1" Grid.Row="2" CornerRadius="2" BorderThickness ="1" BorderBrush="#cecece">
+            <sad:WorkflowItemPresenter
+                x:Uid="sad:WorkflowItemPresenter_1" AutomationProperties.AutomationId="Activity"
+                IsDefaultContainer="True"
+                HintText="Drop activity here"
+                Item="{Binding Path=ModelItem.Body.Handler, Mode=TwoWay}"
+                AllowedItemType="{x:Type sa:Activity}"
+                MinWidth="100" MinHeight="100" Margin="7" />
+          </Border>
+        </Grid>
+      </DataTemplate>
+
+      <DataTemplate x:Uid="DataTemplate_6" x:Key="CollapsedActivityViewTemplate">
+        <Label x:Uid="TextBlock_6" Padding="0,0,0,0" FontStyle="Italic" Foreground="{x:Static SystemColors.GrayTextBrush}" HorizontalAlignment="Center" VerticalAlignment="Center">Double-click to view</Label>
+      </DataTemplate>
+    
+        <Style x:Uid="Style_1" x:Key="ForEachStyle" TargetType="{x:Type ContentPresenter}">
+            <Setter x:Uid="Setter_1" Property="ContentTemplate" Value="{DynamicResource CollapsedActivityViewTemplate}" />
+            <Style.Triggers>
+              <DataTrigger x:Uid="DataTrigger_1" Binding="{Binding Path=ShowExpanded}" Value="true">
+                <Setter x:Uid="Setter_2" Property="ContentTemplate" Value="{DynamicResource ExpandedForEachTemplate}" />
+              </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </ResourceDictionary>      
+  </sad:ActivityDesigner.Resources>    
+    
+  <ContentPresenter x:Uid="ContentPresenter_1" Style="{DynamicResource ForEachStyle}" Content="{Binding}" />    
+</sad:ActivityDesigner>

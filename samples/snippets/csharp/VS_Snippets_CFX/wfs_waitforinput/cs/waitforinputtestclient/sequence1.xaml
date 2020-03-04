@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (c) Microsoft Corporation. All rights reserved. -->
+<Activity mc:Ignorable="sad1" x:Class="Microsoft.Samples.Activities.Statements.Sequence1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:msas="clr-namespace:Microsoft.Samples.Activities.Statements;assembly=Microsoft.Samples.Activities.Statements.WaitForInput" xmlns:mv="clr-namespace:Microsoft.VisualBasic;assembly=System" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:s1="clr-namespace:System;assembly=System" xmlns:s2="clr-namespace:System;assembly=System.Xml" xmlns:s3="clr-namespace:System;assembly=System.Core" xmlns:sad="clr-namespace:System.Activities.Debugger;assembly=System.Activities" xmlns:sad1="http://schemas.microsoft.com/netfx/2009/xaml/activities/design" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System" xmlns:scg1="clr-namespace:System.Collections.Generic;assembly=System.ServiceModel" xmlns:scg2="clr-namespace:System.Collections.Generic;assembly=System.Core" xmlns:scg3="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data.DataSetExtensions" xmlns:sl="clr-namespace:System.Linq;assembly=System.Core" xmlns:st="clr-namespace:System.Text;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Sequence>
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="text" />
+      <Variable x:TypeArguments="x:Int32" Name="number" />
+    </Sequence.Variables>
+    <sad1:WorkflowViewStateService.ViewState>
+      <scg3:Dictionary x:TypeArguments="x:String, s:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg3:Dictionary>
+    </sad1:WorkflowViewStateService.ViewState>
+    <WriteLine>["Enter some text"]</WriteLine>
+    <msas:WaitForInput x:TypeArguments="x:String" BookmarkName="[&quot;readText&quot;]" DisplayName="Read Text" Result="[text]" />
+    <WriteLine>["You entered: " + text]</WriteLine>
+    <WriteLine>["Enter a number"]</WriteLine>
+    <msas:WaitForInput x:TypeArguments="x:Int32" BookmarkName="[&quot;readNumber&quot;]" DisplayName="Read a number" Result="[number]" />
+    <WriteLine>["You entered: " + number.ToString]</WriteLine>
+  </Sequence>
+</Activity>

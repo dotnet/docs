@@ -1,0 +1,20 @@
+﻿<Window x:Class="DataGrid_CellStyle.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Window1" Height="300" Width="300">
+    <Grid>
+        <!--<Snippet1>-->
+        <DataGrid Name="DG1" ItemsSource="{Binding}" SelectionUnit="Cell" >
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell" >
+                    <Style.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" Value="SeaGreen"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.CellStyle>
+        </DataGrid>
+        <!--</Snippet1>-->
+    </Grid>
+</Window>

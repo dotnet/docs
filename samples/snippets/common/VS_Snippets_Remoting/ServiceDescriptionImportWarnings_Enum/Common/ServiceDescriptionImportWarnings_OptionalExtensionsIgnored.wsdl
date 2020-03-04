@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:s0="http://tempuri.org/" targetNamespace="http://tempuri.org/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <s:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Multiply">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="x" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="y" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MultiplyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="MultiplyResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="int" type="s:int" />
+    </s:schema>
+  </types>
+  <message name="MultiplySoapIn">
+    <part name="parameters" element="s0:Multiply" />
+  </message>
+  <message name="MultiplySoapOut">
+    <part name="parameters" element="s0:MultiplyResponse" />
+  </message>
+  <message name="MultiplyHttpGetIn">
+    <part name="x" type="s:string" />
+    <part name="y" type="s:string" />
+  </message>
+  <message name="MultiplyHttpGetOut">
+    <part name="Body" element="s0:int" />
+  </message>
+  <message name="MultiplyHttpPostIn">
+    <part name="x" type="s:string" />
+    <part name="y" type="s:string" />
+  </message>
+  <message name="MultiplyHttpPostOut">
+    <part name="Body" element="s0:int" />
+  </message>
+  <portType name="MultiplyServiceSoap">
+    <operation name="Multiply">
+      <input message="s0:MultiplySoapIn" />
+      <output message="s0:MultiplySoapOut" />
+    </operation>
+  </portType>
+  <portType name="MultiplyServiceHttpGet">
+    <operation name="Multiply">
+      <input message="s0:MultiplyHttpGetIn" />
+      <output message="s0:MultiplyHttpGetOut" />
+    </operation>
+  </portType>
+  <portType name="MultiplyServiceHttpPost">
+    <operation name="Multiply">
+      <input message="s0:MultiplyHttpPostIn" />
+      <output message="s0:MultiplyHttpPostOut" />
+    </operation>
+  </portType>
+  <binding name="MultiplyServiceSoap" type="s0:MultiplyServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
+    <operation name="Multiply">
+      <soap:operation soapAction="http://tempuri.org/Multiply" style="document" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="MultiplyServiceHttpGet" type="s0:MultiplyServiceHttpGet">
+    <http:binding verb="GET" />
+    <operation name="Multiply">
+      <http:operation location="/Multiply" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" /><!--**  Warning Raised From Here ** -->
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <binding name="MultiplyServiceHttpPost" type="s0:MultiplyServiceHttpPost">
+    <http:binding verb="POST" />
+    <operation name="Multiply">
+      <http:operation location="/Multiply" />
+      <input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </input>
+      <output>
+        <mime:mimeXml part="Body" />
+      </output>
+    </operation>
+  </binding>
+  <service name="MultiplyService">
+    <port name="MultiplyServiceSoap" binding="s0:MultiplyServiceSoap">
+      <soap:address location="http://localhost/ReUsableComponent/MultiplyService.asmx" />
+    </port>
+    <port name="MultiplyServiceHttpGet" binding="s0:MultiplyServiceHttpGet">
+      <http:address location="http://localhost/ReUsableComponent/MultiplyService.asmx" />
+    </port>
+    <port name="MultiplyServiceHttpPost" binding="s0:MultiplyServiceHttpPost">
+      <http:address location="http://localhost/ReUsableComponent/MultiplyService.asmx" />
+    </port>
+  </service>
+</definitions>

@@ -1,0 +1,13 @@
+<!--<Snippet1>-->
+
+ [Visual Basic]
+ <%
+ 'This example performs some action only if the AcceptTypes
+ property
+ 'is True.
+ If Response.Cache.VaryByHeaders.AcceptTypes = True Then
+    ...
+ End If
+ %>
+    
+<!--</Snippet1>-->

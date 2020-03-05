@@ -1,19 +1,42 @@
 ﻿using System;
+using System.Threading.Tasks;
 using System.Collections.Generic;
 
 namespace keywords
 {
     public static class IterationKeywordsExamples
     {
-        public static void Examples()
+        public static async Task Examples()
         {
             ForeachWithIEnumerable();
             IterateSpanExample.Main();
             ForeachRefExample.Main();
+            await AwaitForeachExample();
             WhileLoopExample();
             DoLoopExample();
             TypicalForLoopExample();
             ForLoopWithSeveralStatementsInSectionsExample();
+        }
+
+        private static async Task AwaitForeachExample()
+        {
+            // <SnippetAwaitForeach>
+            await foreach (var item in GenerateSequenceAsync())
+            {
+                Console.WriteLine(item);
+            }
+            // </SnippetAwaitForeach>
+
+        }
+
+        private static async IAsyncEnumerable<int> GenerateSequenceAsync()
+        {
+            for(int i = 0; i < 40; i++)
+            {
+                if (i % 10 == 0)
+                    await Task.Delay(2000);
+                yield return i;
+            }
         }
 
         private static void ForeachWithIEnumerable()

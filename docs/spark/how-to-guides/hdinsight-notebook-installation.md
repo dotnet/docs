@@ -115,11 +115,8 @@ After finishing the previous steps, you can now submit your .NET for Apache Spar
 
 <img src="../media/hdi-spark-notebooks/create-sparkdotnet-notebook.png" alt="JupyterNotebookImage" width="800"/>
 
+> **Note:** After the kernel is ready, then you can start submitting jobs. The following shows a sample to submit jobs through notebook.
 2. Submit Jobs using .NET for Apache Spark
-
-   > **Note:** After the kernel is ready, then you can start submitting jobs. The following shows a sample to submit jobs through notebook.
-- Start a spark session
-<img src="../media/hdi-spark-notebooks/start-sparksession.png" alt="SubmitSparkJobImage" width="800"/>
 
 - Create a Dataframe
 <img src="../media/hdi-spark-notebooks/create-df.png" alt="SubmitSparkJobImage" width="800"/>

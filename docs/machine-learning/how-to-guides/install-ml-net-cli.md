@@ -2,6 +2,7 @@
 title: How to install the ML.NET Command-Line Interface (CLI) tool
 description: Learn how to install, upgrade, downgrade, and uninstall the ML.NET Command-Line Interface (CLI) tool.
 ms.date: 12/18/2019
+ms.custom: mlnet-tooling
 ---
 
 # How to install the ML.NET Command-Line Interface (CLI) tool

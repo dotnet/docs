@@ -4,7 +4,7 @@ description: Learn how to install the ML.NET Model Builder tool
 author: luisquintanilla
 ms.author: luquinta
 ms.date: 11/21/2019
-ms.custom: mvc, how-to
+ms.custom: mvc, how-to, mlnet-tooling
 #Customer intent: As a non-developer I want know how to install Model Builder to add machine learning to my .NET application.
 ---
 

@@ -2,7 +2,7 @@
 title: What is Model Builder and how does it work?
 description: How to use the ML.NET Model Builder to automatically train a machine learning model
 ms.date: 01/07/2020
-ms.custom: overview
+ms.custom: overview, mlnet-tooling
 #Customer intent: As a developer, I want to use Model Builder to automatically train a model using a visual interface.
 ---
 # What is Model Builder and how does it work?

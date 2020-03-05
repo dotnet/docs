@@ -22,7 +22,7 @@ Array.append array1 array2
 
 #### Parameters
 
-|Paramter name|Type|Description|
+|Parameter name|Type|Description|
 |-------------|----|-----------|
 | `array1`|[`'T[]`](../core.['t]-type-1d-[fsharp].md)|The first input array.|
 | `array2`|[`'T[]`](../core.['t]-type-1d-[fsharp].md)|The second input array.|

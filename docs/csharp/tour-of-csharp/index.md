@@ -28,7 +28,7 @@ The "Hello, World" program is traditionally used to introduce a programming lang
 
 C# source files typically have the file extension `.cs`. To create this program, first download and install the [.NET Core SDK](https://dotnet.microsoft.com/download). Then, execute the command `dotnet new console -o hello` to create a new program and a build script. The program and build script are in the files `Program.cs` and `hello.csproj`, respectively. You build and run the application with the `run` commands:
 
-```console
+```dotnetcli
 cd hello
 dotnet run
 ```

@@ -23,11 +23,15 @@ To enable .NET for Apache Spark through the Jupyter Notebooks experience, you'll
 >**Disclaimer:** Please note that this is *experimental* and not supported by the HDInsight Spark team. We are working hard to get these changes into the respective projects so that in the future you will not have to perform these manual steps.
 
 ## Prerequisites
+
 Create an [Azure HDInsight Spark](https://docs.microsoft.com/azure/hdinsight/spark/apache-spark-jupyter-spark-sql-use-portal#create-an-hdinsight-spark-cluster) cluster by visiting the **[Azure Portal](https;//portal.azure.com)**, selecting **+ Create a Resource**, and creating a new Azure HDInsight cluster resource. Ensure you select **Spark 2.4** and **HDI 4.0** during cluster creation.
 
 ## Installation Procedure
+
 In the Azure Portal, select the **HDInsight Spark cluster** you created in the previous step.
+
 ### Step 1. Stop Livy Server
+
 1.1 From the portal, select **Overview**, and then select **Ambari home**. If prompted, enter the cluster login credentials for the cluster.
 
 <img src="../media/hdi-spark-notebooks/select-ambari.png" alt="StopLivyServerImage" width="800"/>
@@ -70,9 +74,11 @@ Return to your HDI cluster in the Azure Portal, and select **Script actions** fr
 Move to the next step when green checkmarks appear next to the status of the script action.
 
 ### Step 3. Start Livy Server
+
 Please follow the above [Step 1](#step-1-stop-livy-server) to now **Start** (rather than **Stop**) the Livy for Spark2 Server for hosts hn0 and hn1.
 
 ### Step 4. Set up Spark Default Configs
+
 4.1 From the portal, select **Overview**, and then select **Ambari home**. If prompted, enter the cluster login credentials for the cluster.
 
 4.2 Select **Spark2**, and then **CONFIGS**. Then select **Custom spark2-defaults**.
@@ -111,6 +117,7 @@ After adding the new properties, you need to restart components that were affect
 When prompted, select **CONFIRM RESTART ALL** to continue, then click **OK** to finish.
 
 ## Submit Jobs through Jupyter Notebook
+
 After finishing the previous steps, you can now submit your .NET for Apache Spark jobs through Jupyter Notebooks!
 1. Create a new .NET for Apache Spark notebook
 

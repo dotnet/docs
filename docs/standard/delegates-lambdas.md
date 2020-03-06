@@ -42,7 +42,7 @@ In order to streamline the development process, .NET includes a set of delegate 
 
 * `Action<>` is used when there is a need to perform an action using the arguments of the delegate. The method it encapsulates does not return a value.
 * `Func<>` is used usually when you have a transformation on hand, that is, you need to transform the arguments of the delegate into a different result. Projections are a prime example of this. The method it encapsulates returns a specified value.
-* `Predicate<>` is used when you need to determine if the argument satisfies the condition of the delegate. It can also be written as a `Func<T, bool>` which means the method it encapsulates returns a bool value.
+* `Predicate<>` is used when you need to determine if the argument satisfies the condition of the delegate. It can also be written as a `Func<T, bool>`, which means the method returns a boolean value.
 
 We can now take our example above and rewrite it using the `Func<>` delegate instead of a custom type. The program will continue running exactly the same.
 

@@ -109,6 +109,8 @@ Note that in both examples the `ref` keyword must be used in both places, or the
 
 Beginning with C# 7.3, the iteration variable of the `foreach` statement can be ref local or ref readonly local variable. For more information, see the [foreach statement](foreach-in.md) article.
 
+Also beginning with C# 7.3, you can reassign a ref local or ref readonly local variable with the [ref assignment operator](../operators/assignment-operator.md#ref-assignment-operator).
+
 ## Ref readonly locals
 
 A ref readonly local is used to refer to values returned by the method or property that has `ref readonly` in its signature and uses `return ref`. A `ref readonly` variable combines the properties of a `ref` local variable with a `readonly` variable: it is an alias to the storage it's assigned to, and it cannot be modified. 
@@ -150,7 +152,6 @@ You can combine modifiers to declare a struct as `readonly ref`. A `readonly ref
 - [Write safe efficient code](../../write-safe-efficient-code.md)
 - [Ref returns and ref locals](../../programming-guide/classes-and-structs/ref-returns.md)
 - [Conditional ref expression](../operators/conditional-operator.md#conditional-ref-expression)
-- [ref assignment operator](../operators/assignment-operator.md#ref-assignment-operator)
 - [Passing Parameters](../../programming-guide/classes-and-structs/passing-parameters.md)
 - [Method Parameters](method-parameters.md)
 - [C# Reference](../index.md)

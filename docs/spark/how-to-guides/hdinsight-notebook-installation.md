@@ -80,6 +80,9 @@ Please follow the above [Step 1](#step-1-stop-livy-server) to now **Start** (rat
 <img src="../media/hdi-spark-notebooks/spark-configs.png" alt="SetConfigsImage" width="800"/>
 
 4.3 Click on **Add Property...** to add Spark default settings.
+
+<img src="../media/hdi-spark-notebooks/add-property.png" alt="AddPropertyImage" width="800"/>
+
 You will add a total of 3 individual properties. Add them 1 one at a time, all using **TEXT** Property Type in Single property add mode. Make sure you don’t have any extra spaces before or after any of the keys/values.
 - Property 1:
     - Key:&ensp;&ensp;`spark.dotnet.shell.command`

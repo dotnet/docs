@@ -19,157 +19,183 @@
 # This should make it easy to add new rules without breaking existing ones.
 
 ######## API landing page ###########
-/api/** @dotnet/docs
+/api/ @dotnet/docs
 
 ############ WHATS NEW ###############
-/docs/whats-new/** @billwagner
+/docs/whats-new/ @billwagner
 
 ############  GUIDES  ################
 # .NET Core
-/docs/core/** @dotnet/docs
+/docs/core/ @dotnet/docs
 
 # .NET Framework
-/docs/framework/** @dotnet/docs
+/docs/framework/ @dotnet/docs
 
 # .NET Standard
-/docs/standard/** @gewarren
+/docs/standard/ @gewarren
 
 # The C# Guide:
-/docs/csharp/** @BillWagner
+/docs/csharp/ @BillWagner
 
 # The F# Guide:
-/docs/fsharp/** @cartermp
+/docs/fsharp/ @cartermp
 
 # The Visual Basic Guide:
-/docs/visual-basic/** @KathleenDollard
+/docs/visual-basic/ @KathleenDollard
 
 # The ML.NET Guide:
-/docs/machine-learning/** @natke
+/docs/machine-learning/ @natke
 
 # The .NET for Apache Spark Guide:
-/docs/spark/** @mamccrea
+/docs/spark/ @mamccrea
 
 # The .NET Architecture Guide:
-/docs/architecture/** @nishanil
+/docs/architecture/ @nishanil
 
 # The Desktop WPF Guide:
-/docs/desktop-wpf/** @Thraka
+/docs/desktop-wpf/ @Thraka
 
 # Includes files
-/includes/** @tdykstra
+/includes/ @tdykstra
 
 ############### .NET Core ########################
 # What's New
-/docs/core/whats-new/** @Thraka
+/docs/core/whats-new/ @Thraka
 # Deployment
-/docs/core/deploying/** @Thraka
+/docs/core/deploying/ @Thraka
 # Diagnostics
-/docs/core/diagnostics/** @sdmaclea @dotnet/docs
+/docs/core/diagnostics/ @sdmaclea @dotnet/docs
 # Docker
-/docs/core/docker/** @Thraka
+/docs/core/docker/ @Thraka
 # Install
-/docs/core/install/** @Thraka
+/docs/core/install/ @Thraka
 # Breaking changes
-/docs/core/compatibility/** @gewarren
+/docs/core/compatibility/ @gewarren
 # Project SDKs
-/docs/core/project-sdk/** @gewarren
+/docs/core/project-sdk/ @gewarren
 # Config settings
-/docs/core/run-time-config/** @gewarren
+/docs/core/run-time-config/ @gewarren
 # Tools
-/docs/core/tools/** @tdykstra
+/docs/core/tools/ @tdykstra
 # Tutorials
-/docs/core/tutorials/** @tdykstra
+/docs/core/tutorials/ @tdykstra
 
 ################### .NET FRAMEWORK ##################
 # App domains
-/docs/framework/app-domains/** @gewarren
+/docs/framework/app-domains/ @gewarren
 # Config - WinForms
-/docs/framework/configure-apps/file-schema/winforms/** @Thraka
+/docs/framework/configure-apps/file-schema/winforms/ @Thraka
 # Deployment
-/docs/framework/deployment/** @Thraka
+/docs/framework/deployment/ @Thraka
 # Installation
-/docs/framework/install/** @Thraka
+/docs/framework/install/ @Thraka
 # Migration guide
-/docs/framework/migration-guide/** @gewarren
+/docs/framework/migration-guide/ @gewarren
 # Reflection
-/docs/framework/reflection-and-codedom/** @Thraka
+/docs/framework/reflection-and-codedom/ @Thraka
 # Resources
-/docs/framework/resources/** @Thraka
+/docs/framework/resources/ @Thraka
 # Tools
-/docs/framework/tools/** @tdykstra
+/docs/framework/tools/ @tdykstra
 # UI Automation
-/docs/framework/ui-automation/** @Thraka
+/docs/framework/ui-automation/ @Thraka
 # What's New
-/docs/framework/whats-new/** @gewarren
+/docs/framework/whats-new/ @gewarren
 # Winforms
-/docs/framework/winforms/** @Thraka
+/docs/framework/winforms/ @Thraka
 # WPF
-/docs/framework/wpf/** @Thraka
+/docs/framework/wpf/ @Thraka
 # XAML Services
-/docs/framework/xaml-services/** @Thraka
+/docs/framework/xaml-services/ @Thraka
 # ADO.NET
-/docs/framework/data/** @stevestein
+/docs/framework/data/ @stevestein
 # NCL
-/docs/framework/configure-apps/file-schema/network/** @karelz
-/docs/framework/network-programming/** @karelz
+/docs/framework/configure-apps/file-schema/network/ @karelz
+/docs/framework/network-programming/ @karelz
 # WCF
-/docs/framework/configure-apps/file-schema/wcf/** @HongGit
-/docs/framework/wcf/** @HongGit
+/docs/framework/configure-apps/file-schema/wcf/ @HongGit
+/docs/framework/wcf/ @HongGit
 
 ################## .NET STANDARD ##################
 # Analyzers
-/docs/standard/analyzers/** @gewarren
+/docs/standard/analyzers/ @gewarren
 # Assembly
-/docs/standard/assembly/** @gewarren
+/docs/standard/assembly/ @gewarren
 # Asynchronous Programming Patterns
-/docs/standard/asynchronous-programming-patterns/** @BillWagner
+/docs/standard/asynchronous-programming-patterns/ @BillWagner
 # Attributes
-/docs/standard/attributes/** @tdykstra
+/docs/standard/attributes/ @tdykstra
 # Base types
-/docs/standard/base-types/** @Thraka
+/docs/standard/base-types/ @Thraka
 # Collections
-/docs/standard/collections/** @BillWagner
+/docs/standard/collections/ @BillWagner
 # Data
-/docs/standard/data/** @gewarren
+/docs/standard/data/ @gewarren
 # Data - SQLite
-/docs/standard/data/sqlite/** @bricelam
+/docs/standard/data/sqlite/ @bricelam
 # Datetime
-/docs/standard/datetime/** @Thraka
+/docs/standard/datetime/ @Thraka
 # Design guidelines
-/docs/standard/design-guidelines/** @BillWagner
+/docs/standard/design-guidelines/ @BillWagner
 # Events
-/docs/standard/events/** @gewarren
+/docs/standard/events/ @gewarren
 # Exceptions
-/docs/standard/exceptions/** @tdykstra
+/docs/standard/exceptions/ @tdykstra
 # GC
-/docs/standard/garbage-collection/** @BillWagner
+/docs/standard/garbage-collection/ @BillWagner
 # Generics
-/docs/standard/generics/** @Thraka
+/docs/standard/generics/ @Thraka
 # Globalization
-/docs/standard/globalization-localization/** @dotnet/docs
+/docs/standard/globalization-localization/ @dotnet/docs
 # I/O
-/docs/standard/io/** @Thraka
+/docs/standard/io/ @Thraka
 # Library guidance
-/docs/standard/library-guidance/** @jamesnk
+/docs/standard/library-guidance/ @jamesnk
 # LINQ
-/docs/standard/linq/** @dotnet/docs
+/docs/standard/linq/ @dotnet/docs
 # Memory and spans
-/docs/standard/memory-and-spans/** @tdykstra
+/docs/standard/memory-and-spans/ @tdykstra
 # Native Interop
-/docs/standard/native-interop/** @jkoritzinsky
+/docs/standard/native-interop/ @jkoritzinsky
 # Parallel programming
-/docs/standard/parallel-programming/** @BillWagner
+/docs/standard/parallel-programming/ @BillWagner
 # Security
-/docs/standard/security/** @gewarren
+/docs/standard/security/ @gewarren
 # Serialization
-/docs/standard/serialization/** @tdykstra
+/docs/standard/serialization/ @tdykstra
 # Threading
-/docs/standard/threading/** @BillWagner
+/docs/standard/threading/ @BillWagner
 # What's New
-/docs/standard/whats-new/** @dotnet/docs
+/docs/standard/whats-new/ @dotnet/docs
 
 ################## E-BOOKS ##################
 # Blazor:
-/docs/architecture/blazor-for-web-forms-developers/** @danroth27
+/docs/architecture/blazor-for-web-forms-developers/ @danroth27
 # gRPC:
-/docs/architecture/grpc-for-wcf-developers/** @shirhatti
+/docs/architecture/grpc-for-wcf-developers/ @shirhatti
+
+################# Samples folder ##############
+
+## These have been pulled directly from the samples repo:
+
+/samples/snippets/csharp/ @BillWagner
+# Visual Basic snippets:
+/samples/snippets/visualbasic/ @BillWagner
+# F# Snippets:
+/samples/snippets/fsharp/ @cartermp
+
+# System.Json samples:
+/samples/snippets/core/system-text-json/ @tdykstra
+
+# Text runes:
+/samples/snippets/core/rune/  @tdykstra
+
+# WPF folders:
+/samples/snippets/xaml/wpf/   @thraka
+/samples/snippets/csharp/wpf/   @thraka
+/samples/snippets/visualbasic/wpf/   @thraka
+/samples/snippets/desktop-guide/wpf/   @thraka
+
+/samples/snippets/winforms/  @thraka
+
+

@@ -30,17 +30,17 @@ Create an [Azure HDInsight Spark](https://docs.microsoft.com/azure/hdinsight/spa
 
 In the Azure Portal, select the **HDInsight Spark cluster** you created in the previous step.
 
-### Step 1. Stop Livy Server
+### Stop Livy Server
 
-1.1 From the portal, select **Overview**, and then select **Ambari home**. If prompted, enter the cluster login credentials for the cluster.
+1 From the portal, select **Overview**, and then select **Ambari home**. If prompted, enter the cluster login credentials for the cluster.
 
 <img src="../media/hdi-spark-notebooks/select-ambari.png" alt="StopLivyServerImage" width="800"/>
 
-1.2 Select **Spark2**, and then select **LIVY FOR SPARK2 SERVER**.
+2 Select **Spark2**, and then select **LIVY FOR SPARK2 SERVER**.
 
 <img src="../media/hdi-spark-notebooks/select-livyserver.png" alt="StopLivyServerImage" width="800"/>
 
-1.3 Select **hn0... host**, stop **Livy for Spark2 Server** if started. When prompted, click **OK** to proceed.
+3 Select **hn0... host**, stop **Livy for Spark2 Server** if started. When prompted, click **OK** to proceed.
 
 - Select hn0 as shown below.
 <img src="../media/hdi-spark-notebooks/select-host.png" alt="StopLivyServerImage" width="800"/>
@@ -48,18 +48,18 @@ In the Azure Portal, select the **HDInsight Spark cluster** you created in the p
 - Stop Livy for Spark2 Server.
 <img src="../media/hdi-spark-notebooks/stop-server.png" alt="StopLivyServerImage" width="800"/>
 
-1.4 Please follow the same step for hn1... host.
+4 Please follow the same step for hn1... host.
 
-### Step 2. Submit HDInsight Script Action
+### Submit HDInsight Script Action
 
-2.1 Create and upload `install-interactive-notebook.sh`.
+1 Create and upload `install-interactive-notebook.sh`.
 
 The `install-interactive-notebook.sh` is a script that installs .NET for Apache Spark and makes changes to Apache Livy and sparkmagic. Before submitting Script Action to HDI, you'll need to create and upload `install-interactive-notebook.sh`.
 
 * You can create a new file named **install-interactive-notebook.sh** in your local computer, and paste the contents of [install-interactive-notebook.sh contents](https://raw.githubusercontent.com/dotnet/spark/master/deployment/HDI-Spark/Notebooks/install-interactive-notebook.sh). 
 * Then, upload the script to a [URI](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux#understand-script-actions) that's accessible from the HDInsight cluster. (e.g. `https://<my storage account>.blob.core.windows.net/<my container>/<some dir>/install-interactive-notebook.sh`)
 
-2.2 Run `install-interactive-notebook.sh` on the cluster using [HDInsight Script Actions](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux).
+2 Run `install-interactive-notebook.sh` on the cluster using [HDInsight Script Actions](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux).
 
 Return to your HDI cluster in the Azure Portal, and select **Script actions** from the options on the left. You'll submit one script action to deploy the .NET for Apache Spark REPL on your HDInsight Spark cluster. Please see the following settings.
 
@@ -73,19 +73,19 @@ Return to your HDI cluster in the Azure Portal, and select **Script actions** fr
 
 Move to the next step when green checkmarks appear next to the status of the script action.
 
-### Step 3. Start Livy Server
+### Start Livy Server
 
 Please follow the above [Step 1](#step-1-stop-livy-server) to now **Start** (rather than **Stop**) the Livy for Spark2 Server for hosts hn0 and hn1.
 
-### Step 4. Set up Spark Default Configs
+### Set up Spark Default Configs
 
-4.1 From the portal, select **Overview**, and then select **Ambari home**. If prompted, enter the cluster login credentials for the cluster.
+1 From the portal, select **Overview**, and then select **Ambari home**. If prompted, enter the cluster login credentials for the cluster.
 
-4.2 Select **Spark2**, and then **CONFIGS**. Then select **Custom spark2-defaults**.
+2 Select **Spark2**, and then **CONFIGS**. Then select **Custom spark2-defaults**.
 
 <img src="../media/hdi-spark-notebooks/spark-configs.png" alt="SetConfigsImage" width="800"/>
 
-4.3 Click on **Add Property...** to add Spark default settings.
+3 Click on **Add Property...** to add Spark default settings.
 
 <img src="../media/hdi-spark-notebooks/add-property.png" alt="AddPropertyImage" width="800"/>
 
@@ -108,7 +108,7 @@ For example, the following captures the setting for adding property 1:
 
 After adding those 3 properties, select **SAVE**. If you see a warning screen of config recommendations, select **PROCEED ANYWAY**.
 
-4.4 Restart affected components.
+4 Restart affected components.
 
 After adding the new properties, you need to restart components that were affected by the changes. At the top, select **RESTART**, and then **Restart All Affected** from the drop-down.
 

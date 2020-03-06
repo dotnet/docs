@@ -27,6 +27,6 @@ In the following example `let` is used in two ways:
 
 - [C# Reference](../../language-reference/index.md)
 - [Query Keywords (LINQ)](query-keywords.md)
-- [Language Integrated Query (LINQ)](../../linq/index.md)
+- [LINQ in C#](../../linq/index.md)
 - [Language Integrated Query (LINQ)](../../programming-guide/concepts/linq/index.md)
 - [Handle exceptions in query expressions](../../linq/handle-exceptions-in-query-expressions.md)

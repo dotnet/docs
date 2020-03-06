@@ -136,7 +136,7 @@ int main()
    // Get the list of the addresses associated with the requested server.
    IPAddresses( server );
 
-   // Get additonal address information.
+   // Get additional address information.
    IPAddressAdditionalInfo();
 }
 // </Snippet1>

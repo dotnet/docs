@@ -73,7 +73,7 @@ namespace CS_lazy
                 CustomerID = id;
                 _orders = new Lazy<Orders>(() =>
                 {
-                    // You can specify any additonal 
+                    // You can specify any additional 
                     // initialization steps here.
                     return new Orders(this.CustomerID);
                 });

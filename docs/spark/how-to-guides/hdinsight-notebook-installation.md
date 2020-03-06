@@ -119,6 +119,7 @@ Please follow the above [Step 1](#step-1-stop-livy-server) to now **Start** (rat
 ## Submit Jobs through Jupyter Notebook
 
 After finishing the previous steps, you can now submit your .NET for Apache Spark jobs through Jupyter Notebooks!
+
 1. Create a new .NET for Apache Spark notebook
 
    Launch a Jupyter notebook from your HDI cluster in the Azure Portal.

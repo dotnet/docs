@@ -12,7 +12,7 @@ This how-to provides the steps to install .NET for Apache Spark on Azure HDInsig
 
 ## Background
 
-While we can deploy .NET for Apache Spark on HDI clusters through the command line/Azure portal (you can check out [how to deploy a .NET for Apache Spark application to Azure HDInsight](../tutorials/hdinsight-deployment.md) and [how to submit a .NET for Apache Spark job to Azure HDInsight](hdinsight-deploy-methods.md)), notebooks provide a more interactive and iterative experience.
+While we can deploy .NET for Apache Spark on Azure HDInsight (HDI) clusters through a combination of the command line and Azure Portal (you can check out [how to deploy a .NET for Apache Spark application to Azure HDInsight](../tutorials/hdinsight-deployment.md)), notebooks provide a more interactive and iterative experience.
 
 Azure HDI clusters already come with Jupyter notebooks, so let's explore how to configure these Jupyter notebooks to run .NET for Apache Spark. In order to use .NET for Apache Spark within your Jupyter Notebooks, a C# REPL is needed to execute your C# code line-by-line and to preserve execution state when necessary. We have integrated [Try .NET](https://github.com/dotnet/try) as our official .NET REPL.
 

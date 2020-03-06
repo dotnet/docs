@@ -1,7 +1,7 @@
 ---
 title: Installing .NET for Apache Spark on Azure HDInsight's Jupyter Notebooks
 description: Learn how to install .NET for Apache Spark on Azure HDInsight's Jupyter Notebooks
-ms.date: 02/20/2020
+ms.date: 03/05/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
 ---
@@ -121,10 +121,25 @@ After finishing the previous steps, you can now submit your .NET for Apache Spar
 > **Note:** After the kernel is ready, then you can start submitting jobs. The following shows a sample to submit jobs through notebook.
 2. Submit Jobs using .NET for Apache Spark
 
-- Create a Dataframe
+- Create a DataFrame
+
+You can use the following code snippet to create a DataFrame:
+
+```csharp
+var df = spark.Range(0,5);
+df.Show();
+```
 <img src="../media/hdi-spark-notebooks/create-df.png" alt="SubmitSparkJobImage" width="800"/>
 
 - Register a user-defined function (UDF) and use it via the DataFrame
+
+You can use the following code snippet to register a UDF and use this UDF with DataFrames:
+
+```csharp
+var myawesomeudf = Udf<int, string>((id) => $"hello {id}");
+df.Select(myawesomeudf(df["id"])).Show();
+```
+
 <img src="../media/hdi-spark-notebooks/run-udf.png" alt="SubmitSparkJobImage" width="800"/>
 
 ## Next steps

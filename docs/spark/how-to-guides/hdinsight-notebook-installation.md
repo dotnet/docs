@@ -34,19 +34,19 @@ In the Azure Portal, select the **HDInsight Spark cluster** you created in the p
 
 1 From the portal, select **Overview**, and then select **Ambari home**. If prompted, enter the cluster login credentials for the cluster.
 
-<img src="../media/hdi-spark-notebooks/select-ambari.png" alt="StopLivyServerImage" width="800"/>
+![Stop Livy Server](../media/hdi-spark-notebooks/select-ambari.png)
 
 2 Select **Spark2**, and then select **LIVY FOR SPARK2 SERVER**.
 
-<img src="../media/hdi-spark-notebooks/select-livyserver.png" alt="StopLivyServerImage" width="800"/>
+![Stop Livy Server](../media/hdi-spark-notebooks/select-livyserver.png)
 
 3 Select **hn0... host**, stop **Livy for Spark2 Server** if started. When prompted, click **OK** to proceed.
 
 - Select hn0 as shown below.
-<img src="../media/hdi-spark-notebooks/select-host.png" alt="StopLivyServerImage" width="800"/>
+![Stop Livy Server](../media/hdi-spark-notebooks/select-host.png)
 
 - Stop Livy for Spark2 Server.
-<img src="../media/hdi-spark-notebooks/stop-server.png" alt="StopLivyServerImage" width="800"/>
+![Stop Livy Server](../media/hdi-spark-notebooks/stop-server.png)
 
 4 Please follow the same step for hn1... host.
 
@@ -69,7 +69,7 @@ Return to your HDI cluster in the Azure Portal, and select **Script actions** fr
 * Node type(s): Head and Worker
 * Parameters: .NET for Apache Spark version. You can check [.NET for Apache Spark release](https://github.com/dotnet/spark/releases). For example, if you want to install Sparkdotnet version 0.6.0 then it would be `0.6.0`.
 
-<img src="../media/hdi-spark-notebooks/install-notebook-scriptaction.png" alt="the settings for the HDInsight Script Action"/>
+![Settings for the HDInsight Script Action](../media/hdi-spark-notebooks/install-notebook-scriptaction.png)
 
 Move to the next step when green checkmarks appear next to the status of the script action.
 
@@ -83,11 +83,11 @@ Please follow the above [Step 1](#step-1-stop-livy-server) to now **Start** (rat
 
 2 Select **Spark2**, and then **CONFIGS**. Then select **Custom spark2-defaults**.
 
-<img src="../media/hdi-spark-notebooks/spark-configs.png" alt="SetConfigsImage" width="800"/>
+![Set Configs](../media/hdi-spark-notebooks/spark-configs.png)
 
 3 Click on **Add Property...** to add Spark default settings.
 
-<img src="../media/hdi-spark-notebooks/add-property.png" alt="AddPropertyImage" width="800"/>
+![Add Property](../media/hdi-spark-notebooks/add-property.png)
 
 You will add a total of 3 individual properties. Add them 1 one at a time, all using **TEXT** Property Type in Single property add mode. Make sure you don’t have any extra spaces before or after any of the keys/values.
 - Property 1:
@@ -104,7 +104,7 @@ You will add a total of 3 individual properties. Add them 1 one at a time, all u
 
 For example, the following captures the setting for adding property 1:
 
-<img src="../media/hdi-spark-notebooks/add-sparkconfig.png" alt="SetConfigsImage" width="800"/>
+![Set Configs](../media/hdi-spark-notebooks/add-sparkconfig.png)
 
 After adding those 3 properties, select **SAVE**. If you see a warning screen of config recommendations, select **PROCEED ANYWAY**.
 
@@ -112,7 +112,7 @@ After adding those 3 properties, select **SAVE**. If you see a warning screen of
 
 After adding the new properties, you need to restart components that were affected by the changes. At the top, select **RESTART**, and then **Restart All Affected** from the drop-down.
 
-<img src="../media/hdi-spark-notebooks/restart-affected.png" alt="SetConfigsImage" width="800"/>
+![Set Configs](../media/hdi-spark-notebooks/restart-affected.png)
 
 When prompted, select **CONFIRM RESTART ALL** to continue, then click **OK** to finish.
 
@@ -123,7 +123,7 @@ After finishing the previous steps, you can now submit your .NET for Apache Spar
 
    [Launch a Jupyter notebook](https://docs.microsoft.com/en-us/azure/hdinsight/spark/apache-spark-jupyter-spark-sql-use-portal#create-a-jupyter-notebook) from your HDI cluster in the Azure Portal. Then select **New** > **.NET Spark (C#)** to create a notebook.
 
-<img src="../media/hdi-spark-notebooks/create-sparkdotnet-notebook.png" alt="JupyterNotebookImage" width="800"/>
+![Jupyter Notebook](../media/hdi-spark-notebooks/create-sparkdotnet-notebook.png)
 
 > **Note:** After the kernel is ready, then you can start submitting jobs. The following shows a sample to submit jobs through notebook.
 2. Submit Jobs using .NET for Apache Spark
@@ -136,7 +136,8 @@ You can use the following code snippet to create a DataFrame:
 var df = spark.Range(0,5);
 df.Show();
 ```
-<img src="../media/hdi-spark-notebooks/create-df.png" alt="SubmitSparkJobImage" width="800"/>
+
+![Submit Spark Job](../media/hdi-spark-notebooks/create-df.png)
 
 - Register a user-defined function (UDF) and use it via the DataFrame
 
@@ -147,7 +148,7 @@ var myawesomeudf = Udf<int, string>((id) => $"hello {id}");
 df.Select(myawesomeudf(df["id"])).Show();
 ```
 
-<img src="../media/hdi-spark-notebooks/run-udf.png" alt="SubmitSparkJobImage" width="800"/>
+![Submit Spark Job](../media/hdi-spark-notebooks/run-udf.png)
 
 ## Next steps
 

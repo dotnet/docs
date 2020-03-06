@@ -53,5 +53,5 @@ var anonArray = new[] { new { name = "apple", diam = 4 }, new { name = "grape", 
 
 - [C# Programming Guide](../index.md)
 - [Object and Collection Initializers](./object-and-collection-initializers.md)
-- [Introduction to LINQ queries (C#)](../concepts/linq/introduction-to-linq-queries.md)
+- [Getting Started with LINQ in C#](../concepts/linq/index.md)
 - [LINQ in C#](../../linq/index.md)

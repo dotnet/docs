@@ -39,4 +39,4 @@ At compile time, the `select` clause is translated to a method call to the <xref
 - [partial (Method) (C# Reference)](partial-method.md)
 - [Anonymous Types](../../programming-guide/classes-and-structs/anonymous-types.md)
 - [LINQ in C#](../../linq/index.md)
-- [Introduction to LINQ queries (C#)](../../programming-guide/concepts/linq/introduction-to-linq-queries.md)
+- [Language Integrated Query (LINQ)](../../programming-guide/concepts/linq/index.md)

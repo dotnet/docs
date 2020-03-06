@@ -33,4 +33,4 @@ This section contains the contextual keywords used in query expressions.
 
 - [C# Keywords](index.md)
 - [LINQ (Language-Integrated Query)](../../programming-guide/concepts/linq/index.md)
-- [Introduction to LINQ queries (C#)](../../programming-guide/concepts/linq/introduction-to-linq-queries.md)
+- [LINQ in C#](../../linq/index.md)

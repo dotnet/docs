@@ -18,12 +18,12 @@ Azure HDI clusters come with Jupyter notebook, so let's look how to configure th
 
 To provide the end-to-end notebook integration, we added a .NET for Apache Spark kernel to Jupyter kernel along with necessary modifications to [Apache Livy](https://github.com/apache/incubator-livy) and [sparkmagic](https://github.com/jupyter-incubator/sparkmagic) to HDI notebooks. Since these code changes have not yet been merged into the respective open source projects, you'll need to modify some components in your HDInsight Spark cluster to utilize .NET for Apache Spark in Jupyter notebooks.
 
-To enable .NET for Apache Spark through the Jupyter Notebooks experience, you'll need to follow a few manual steps through [Ambari](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-manage-ambari) and submitting [script actions](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux) on the HDInsight Spark cluster.
+To enable .NET for Apache Spark through the Jupyter Notebooks experience, you'll need to follow a few manual steps through [Ambari](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-manage-ambari) and submitting [script actions](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux) on the HDInsight Spark cluster.
 
 >**Disclaimer:** Please note that this is *experimental* and not supported by the HDInsight Spark team. We are working hard to get these changes into the respective projects so that in the future you will not have to perform these manual steps.
 
 ## Pre-requisites:
-Create an [Azure HDInsight Spark](https://docs.microsoft.com/en-us/azure/hdinsight/spark/apache-spark-jupyter-spark-sql-use-portal#create-an-hdinsight-spark-cluster) cluster by visiting the **[Azure Portal](https;//portal.azure.com)**, selecting **+ Create a Resource**, and creating a new Azure HDInsight cluster resource. Ensure you select **Spark 2.4** and **HDI 4.0** during cluster creation.
+Create an [Azure HDInsight Spark](https://docs.microsoft.com/azure/hdinsight/spark/apache-spark-jupyter-spark-sql-use-portal#create-an-hdinsight-spark-cluster) cluster by visiting the **[Azure Portal](https;//portal.azure.com)**, selecting **+ Create a Resource**, and creating a new Azure HDInsight cluster resource. Ensure you select **Spark 2.4** and **HDI 4.0** during cluster creation.
 
 ## Installation Procedure
 In the Azure Portal, select the **HDInsight Spark cluster** you created in the previous step.

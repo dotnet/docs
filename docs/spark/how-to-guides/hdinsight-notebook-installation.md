@@ -40,7 +40,7 @@ In the Azure Portal, select the **HDInsight Spark cluster** you created in the p
 
 ![Stop Livy Server](../media/hdi-spark-notebooks/select-livyserver.png)
 
-3 Select **hn0... host**, stop **Livy for Spark2 Server** if started. When prompted, click **OK** to proceed.
+3 Select **hn0... host**, and stop **Livy for Spark2 Server** if it is running. When prompted, select **OK** to proceed.
 
 - Select hn0 as shown below.
 ![Stop Livy Server](../media/hdi-spark-notebooks/select-host.png)
@@ -48,7 +48,7 @@ In the Azure Portal, select the **HDInsight Spark cluster** you created in the p
 - Stop Livy for Spark2 Server.
 ![Stop Livy Server](../media/hdi-spark-notebooks/stop-server.png)
 
-4 Please follow the same step for hn1... host.
+4. Repeat the previous steps for **hn1... host**.
 
 ### Submit HDInsight Script Action
 

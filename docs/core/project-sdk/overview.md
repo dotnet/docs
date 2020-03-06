@@ -131,7 +131,7 @@ There are various ways to [customize a build](/visualstudio/msbuild/customize-yo
 - Access artifacts of the build process, such as generated files.
 - Inspect the configuration under which the build is invoked.
 
-You add custom build targets or properties by placing files in the form <package_id>.targets or <package_id>.props (for example, *Contoso.Utility.UsefulStuff.targets*) within the *build* folder of the project.
+You add custom build targets or properties by placing files in the form `<package_id>.targets` or `<package_id>.props` (for example, `Contoso.Utility.UsefulStuff.targets`) in the *build* folder of the project.
 
 The following XML is a snippet from a *.csproj* file that instructs the [`dotnet pack`](../tools/dotnet-pack.md) command what to package. The `<ItemGroup Label="dotnet pack instructions">` element places the targets files into the *build* folder inside the package. The `<Target Name="CollectRuntimeOutputs" BeforeTargets="_GetPackageFiles">` element places the assemblies and *.json* files into the *build* folder.
 

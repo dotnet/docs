@@ -47,7 +47,7 @@ In general, WinRT APIs can be called from a classic desktop app. However, two
 main areas present an exception to this rule:
 
 * The APIs that require a package identity
-* APIs that requires visualization like XAML or Composition.
+* APIs that require visualization like XAML or Composition.
 
 ### UWP Packages
 
@@ -59,7 +59,7 @@ meaning that no user code is executed during install, instead everything the app
 wants to integrate with the system (protocols, file types, extensions, etc.) is
 declared in the application manifest. At deployment time, the deployment
 pipeline configures those integration points. The only way for the OS to manage
-all this functionality and keep track of it is for each ‘package' to have an
+all this functionality and keep track of it is for each 'package' to have an
 identity, a unique identifier for the application.
 
 Some WinRT APIs require this package identity to work as expected. However,
@@ -69,8 +69,7 @@ APIs in your desktop application, you need to provide them a package identity.
 
 One way to proceed is to build an additional packaging project. Inside the
 packaging project, you point to the original source code project and specify the
-Identity information you want to provide. If you install the package and run the
-installed app it will automatically get an identify enabling your code to call
+Identity information you want to provide. If you install the package and run the installed app, it will automatically get an identify enabling your code to call
 all WinRT APIs requiring Identity.
 
 ```xml
@@ -180,7 +179,7 @@ redirected writes to AppData or the registry that were captured during the
 process.
 
 For details about how a packaged application handles installation, file access,
-registry and uninstallation please read
+registry, and uninstallation read
 <https://docs.microsoft.com/en-us/windows/msix/desktop/desktop-to-uwp-behind-the-scenes>
 
 You can get a complete list of things to check on
@@ -193,7 +192,7 @@ Notifications on an existing WPF application. Although it is simple from the
 code perspective, it helps illustrate the whole process. Notifications are one
 of the many available WinRT APIs available that you can use in .NET app. In this
 case, the API requires a Package Identity. This process is more straightforward
-if the APIs doesn't require Package Identity.
+if the APIs don't require Package Identity.
 
 Let's take an existing WPF sample app that reads files and shows its contents on
 the screen. The goal will be to display a Toast Notification when the
@@ -211,14 +210,14 @@ identity:
 
 ![Notification class in Microsoft documentation](media\windows-migration\notification-class-documentation.png)
 
-To enable access to the Windows Runtime API you just need to add a reference to
+To enable access to the Windows Runtime API, you just need to add a reference to
 the Microsoft.Windows.SDK.Contracts NuGet package and this will do the magic
 behind the scenes (see details in this link:
 <https://blogs.windows.com/windowsdeveloper/2019/04/30/calling-windows-10-apis-from-a-desktop-application-just-got-easier/\#OQKKZIOZu4p7lC0q.97>)
 
 You are now prepared to start adding some code.
 
-You need to create a ShowToastNotification method that will be called on
+Create a ShowToastNotification method that will be called on
 application startup. It just builds a toast notification from an XML pattern:
 
 ```csharp
@@ -238,7 +237,7 @@ Packaging Project in the Solution will fix it:
 
 ![Adding a Windows Packaging Project](media\windows-migration\adding-packaging-project.png)
 
-You should select the minimum Windows version you want to support and the
+Select the minimum Windows version you want to support and the
 version you are targeting. Not all the WinRT APIs are supported in all Windows
 10 versions. Each Windows 10 update adds new APIs that are only available from
 this version; down-level support is not available.
@@ -327,7 +326,7 @@ InitializeForCurrentThread loads the UWP XAML Framework inside the current
 thread of the Win32 app.
 
 The `DesktopWindowXamlSource` is the instance of your XAML Island content. It has
-the Content property which you are responsible for instantiating and setting.
+the Content property, which you are responsible for instantiating and setting.
 The
 
 `DesktopWindowXamlSource` renders and gets its input from an HWND. It needs to
@@ -377,7 +376,7 @@ reference to the namespace and start using them.
 
 ##### Hosting Controls
 
-The power of XAML Islands extends to the majority of inbox controls, 3rd party
+The power of XAML Islands extends to the majority of inbox controls, third party
 controls, and custom control develop for UWP that can be integrated into Windows
 Forms and WPF as an "Island" of fully functional UI. The `WindowsXamlHost` control
 for WPF and Windows Forms allows doing this.
@@ -389,7 +388,7 @@ Toolkit.
 Once you have placed your `WindowsXamlHost` into your UI code, you just need to
 specify which UWP type you want to load and you can choose to use a wrapped
 control like a Button or a more complex one composed by several different
-controls, that is a custom UWP control.
+controls, that are a custom UWP control.
 
 Here is a sample code snippet that shows how to add a UWP Button:
 
@@ -418,7 +417,7 @@ This link contains a walkthrough about how to use XAML Islands:
 
 #### Adding UWP XAML custom controls
 
-A XAML custom control is a control (or user control) created by you or by 3rd
+A XAML custom control is a control (or user control) created by you or by third
 parties (including WinUI 2.x controls). To host a custom UWP control in a
 Windows Forms or WPF app, you'll need to use the `WindowsXamlHost` in your .NET
 Core 3 app. Besides that, is required, at least, to create a UWP app project
@@ -432,11 +431,11 @@ directory of your application. The recommended way to do this is to add a Blank
 App (Universal Windows) project to the same solution as your WPF (or Windows
 Forms) project and revise the default App class in this project.
 
-The custom UWP XAML control can be included on this UWP app or in a independent
+The custom UWP XAML control can be included on this UWP app or in an independent
 UWP Class Library project that you reference in the same solution as your WPF
 (or Windows Forms) project.
 
-You can check a details step by step process description here:
+You can check a details step-by-step process description here:
 
 <https://docs.microsoft.com/en-us/windows/apps/desktop/modernize/host-custom-control-with-xaml-islands>
 
@@ -488,10 +487,8 @@ SDK:
 
 ![WinUI 3.0](media\windows-migration\image36.png)
 
-This means that the XAML framework will now be developed on GitHub and ship out
+XAML framework will now be developed on GitHub and shipped out
 of band as [NuGet](https://docs.microsoft.com/nuget/what-is-nuget) packages.
-This include the XAML Islands APIs that will support load these WinUI 3 platform
-on Win32 apps.
 
 The existing UWP XAML APIs that ship as part of the OS will no longer receive
 new feature updates. They will still receive security updates and critical fixes

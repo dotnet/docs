@@ -14,28 +14,27 @@ of your existing application from .NET Framework to .NET Core.
 We present a well-structured process you can follow and the most important
 things to consider on each step.
 
-We then document a step by step migration process for a sample desktop
+We then document a step-by-step migration process for a sample desktop
 application, both from WinForms and WPF versions.
 
 ## Migration Process Overview
 
-The migration process can be articulated in four sequential steps:
+The migration process consists of four sequential steps:
 
-1. **Preparation**: You must understand the dependencies the project has to have
+1. **Preparation**: Understand the dependencies the project has to have
    an idea of what is ahead. In this step, you take the current project into a
    state that simplifies the startup point for the migration.
 
 2. **Migrate Project File:** .NET Core projects use the new SDK style projects.
-   You need to create a new project file with this format or update the one you
+  Create a new project file with this format or update the one you
    have to use the SDK style.
 
-3. **Fix Code and Build:** Get the code building in .NET Core, addressing API
-   level differences between .NET Framework and .NET Core or in third party
-   packages you use on your app. This is time to regenerate generated code like
-   WCF clients.
+3. **Fix Code and Build:** Get the code building in .NET Core addressing API
+   -level differences between .NET Framework and .NET Core. Update third-party
+   packages to the ones that support .NET  Core if needed. WCF clients.
 
 4. **Run and Test:** Forget about once it builds you are finished. There are
-   differences that don’t show up until run time, so you need to be sure
+   differences that don't show up until run time, so you need to be sure
    everything works as expected.
 
 ### Preparation
@@ -43,40 +42,40 @@ The migration process can be articulated in four sequential steps:
 #### Migrate packages.config file
 
 In a .NET Framework application, all references to external packages are
-declared in the packages.config file. In .NET Core there is no longer the need
+declared in the packages.config file. In .NET Core, there is no longer the need
 to use the packages.config file. Instead, the new PackageReference format inside
 the project file is used to pull in NuGet dependencies.
 
 So, you need to transition from one format to another. You can manually update,
 taking the dependencies contained in the packages.config file and migrate them
 to the project file with the PackageReference format. Besides, you can leave
-Visual Studio do the work for you by right clicking on the packages.config file
-and select the “Migrate packages.config to PackageReference” option.
+Visual Studio do the work for you by right-clicking on the packages.config file
+and select the "Migrate packages.config to PackageReference" option.
 
 #### Check out every dependency compatibility in .NET Core
 
-Once you have migrated the package references you must check each reference for
-compatibility. If you go to nugget.org you can explore the dependencies of each
+Once you have migrated the package references, you must check each reference for
+compatibility. If you go to nugget.org, you can explore the dependencies of each
 NuGet package your application is using. If it has .NET Standard dependencies,
-then it’s going to work on .NET Core because it depends on .NET Standard. Here
+then it's going to work on .NET Core because it depends on .NET Standard. Here
 you can see a screenshot showing the dependencies for the Castle.Windsor
 Package:
 
 ![NuGet dependencies](media/example-migration-to-net-core/nuget-dependencies.png)
 
-To check out package compatibility, we can use the tool <http://fuget.org> that
+To check out package compatibility we can use the tool <http://fuget.org> that
 offers a more detailed information about versions and dependencies.
 
 Maybe the versions of the packages referenced by the project are older versions
-that don’t support .NET Core but you can find newer versions that do support it.
+that don't support .NET Core but you can find newer versions that do support it.
 Therefore, updating packages to newer versions is in general a good
-recommendation although you must consider that this can introduce some breaking
+recommendation although you should consider that this can introduce some breaking
 changes forcing you to update your code to keep it compiling well.
 
-What happens if you don’t find a compatible version? What if you just don’t want
-to update the version of a package because of these breaking changes? Don’t
+What happens if you don't find a compatible version? What if you just don't want
+to update the version of a package because of these breaking changes? Don't
 worry because it is possible to depend on .NET Framework packages from a .NET
-Core application. You must test this extensively because it can cause runtime
+Core application. Don't forget to test it extensively because it can cause runtime
 errors if the external package calls an API that is not available on .NET Core.
 This is great news when you are using an old package that is not going to be
 updated and you just can retarget to work on the .NET Core.
@@ -85,9 +84,9 @@ updated and you just can retarget to work on the .NET Core.
 
 Since APIs surfaces in .NET Framework and .NET are similar but not identical,
 you must check which of those APIs are available on .NET Core and which are not.
-You can use the .NET Portability Analyzer tools to surface APIs used that aren’t
+You can use the .NET Portability Analyzer tools to surface APIs used that aren't
 present on .NET Core. It looks at the binary level of your app and extracts all
-the APIs that are called showing the ones that aren’t available on your target
+the APIs that are called showing the ones that aren't available on your target
 framework, .NET Core 3.0 in our case.
 
 You can find this tool at:
@@ -102,8 +101,8 @@ have updated most of these packages to make them work with .NET Core.
 
 #### Create the new .NET Core project
 
-In most of the cases you will want to update your existing project to the new
-.NET Core format, but be aware that you can also create a new project while
+In most of the cases, you will want to update your existing project to the new
+.NET Core format, but you can also create a new project while
 maintaining the old one. The main drawback from updating the old project is that
 you lose designer support, which may be important to you. If you want to keep
 using the designer, you must create a new .NET Core project in parallel with the
@@ -111,17 +110,17 @@ old one and share assets. When it is time to modify UI elements in the designer
 you can switch to the old project to do that, and since assets are linked there
 will be updated in the .NET Core project.
 
-.NET Core SDK style project are a lot simpler that .NET Framework and apart from
+.NET Core SDK style project is a lot simpler that .NET Framework and apart from
 the mentioned PackageReference stuff, you will not need to do much more. SDK
 style adds all necessary files underneath project file location like `.cs` and
 `.xaml` files without the need to explicitly include them in the `.csproj`.
 
 #### Assembly.info considerations
 
-Attributes are auto generated on .NET Core projects you we don’t need them
-anymore. This causes a compilation conflict because they are duplicate
-definitions. You can choose to delete the older `AssemblyInfo.cs` file or keep it
-and add this entry to the .NET Core project file:
+Attributes are auto generated on .NET Core projects. If the project contains
+`AssemblyInfo.cs` file, the definitions will be duplicated, which will cause a
+compilation conflicts. You can delete the older `AssemblyInfo.cs` file or
+disable auto-generation by adding this entry to the .NET Core project file:
 
 ```xml
 <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
@@ -134,7 +133,7 @@ to migrate those to the new .csproj.
 
 #### Packages References
 
-With the “Migrate packages.config to PackageReference” option, you can easily
+With the "Migrate packages.config to PackageReference" option, you can easily
 move your external packages references to the new format as mentioned above.
 
 #### Update package references
@@ -146,10 +145,10 @@ depicted in previous section.
 
 #### Microsoft.Windows.Compatibility
 
-In case you applications depends on APIs that aren’t available on .NET Core like
+In case your applications depends on APIs that aren't available on .NET Core like
 Registry, ACLs, WCF you have to include a reference to the
 Microsoft.Windows.Compatibility package to add these Windows-specific APIs. They
-work on .NET Core but aren’t included as they aren’t cross-platform.
+work on .NET Core but aren't included as they aren't cross-platform.
 
 There is a tool called API Analyzer
 (<https://docs.microsoft.com/en-us/dotnet/standard/analyzers/api-analyzer>) that
@@ -163,7 +162,7 @@ the same code base for both targets.
 
 #### Technologies not available on .NET Core
 
-Some technologies aren’t available on .NET Core like:
+Some technologies aren't available on .NET Core like:
 
 * AppDomains
 * Remoting
@@ -173,9 +172,9 @@ Some technologies aren’t available on .NET Core like:
 
 Therefore, it is time to look for a replacement for those.
 
-#### Regenerate auto-generated clients
+#### Regenerate autogenerated clients
 
-If your application uses some auto-generated code like, for example, a WCF
+If your application uses some autogenerated code like, for example, a WCF
 client, you may need to regenerate this code to target .NET Core. Sometimes you
 can find some missing references since it may not be included as default as part
 of the basic .Net Core assemblies. Using a tool like <https://apisof.net/> you
@@ -203,8 +202,8 @@ For example, in the case you have some usage of configuration files (app.config)
 you may find some errors at run time like Configuration Sections not present.
 Using Microsoft.Extensions.Configuration should do the fix.
 
-Another reason for errors is the use of BeginInvoke and EndInvoke since these
-aren’t supported on .NET Core. The reason they aren’t supported on .NET Core is
+Another reason for errors is the use of BeginInvoke and EndInvoke because they
+are supported on .NET Core. The reason they aren't supported on .NET Core is
 they have a dependency on Remoting, which does not exist on .NET Core. To solve
 this issue, try to use `await` when available or `Task.Run`.
 
@@ -215,11 +214,10 @@ analyzers.
 
 ## Migrating a Windows Forms application
 
-To showcase a complete migration process of a Windows Forms application, we’ve
+To showcase a complete migration process of a Windows Forms application, we've
 chosen to migrate the eShop sample application.
 
-This application shows a product catalog and allows the user to navigate, filter
-and search for products. From an architecture point of view the App relies on an
+This application shows a product catalog and allows the user to navigate, filter, and search for products. From an architecture point of view, the App relies on an
 external WCF service that serves as a façade to a back-end database.
 
 You can see the main application window in the following picture:
@@ -256,14 +254,14 @@ If we save and reload the project, we are done updating the project file. Now
 the project is targeting the .NET Core.
 
 If we compile the project at this point, we find some errors related to the WCF
-client reference. Since this is auto-generated code we must regenerate it to
+client reference. Since this is autogenerated code, we must regenerate it to
 target .NET Core.
 
 ![Errors](media/example-migration-to-net-core/errors.png)
 
 We can delete the `Reference.cs` file and generate a new Service Client.
 
-Right-click over *Connected Services* and select the “*Add Connected Service*”
+Right-click over *Connected Services* and select the "*Add Connected Service*"
 option.
 
 ![Add Connected Service](media/example-migration-to-net-core/add-connected-service.png)
@@ -278,7 +276,7 @@ select the Discover option instead of specifying a service URL.
 
 ![Configure WCF Web Service Reference window](media/example-migration-to-net-core/configure-wcf-reference.png)
 
-Once the service is located the tools reflects the API contract implemented by
+Once the service is located, the tool reflects the API contract implemented by
 the service. We change the name of the Namespace to be eShopServiceReference:
 
 ![API contract](media/example-migration-to-net-core/api-contract.png)
@@ -328,8 +326,8 @@ This application uses a local SQLExpress database to hold the product catalog
 information. This database is accessed directly from the WPF application.
 
 We must first update the .csproj file to the new SDK style used by the .NET Core
-applications. To do this we follow the same steps described in the Windows Forms
-migration, we unload the project, open de .csproj file and update its contents
+applications. We'll follow the same steps described in the Windows Forms
+migration, we unload the project, open the .csproj file and update its contents
 and finally reload the project.
 
 In this case, we delete all the content of the .csproj file and replace it with:
@@ -355,7 +353,7 @@ specification present in the old project. We just need to add this line to
 
 ```xml
 <ItemGroup>
-    <ProjectReference Include=”..\\eShop.SqlProvider\\eShop.SqlProvider.csproj” />
+    <ProjectReference Include="..\\eShop.SqlProvider\\eShop.SqlProvider.csproj" />
 <ItemGroup>
 ```
 
@@ -364,4 +362,4 @@ option and select the project from the solution:
 
 ![Reference Manager](media/example-migration-to-net-core/reference-manager.png)
 
-Once we do this the application compiles and executes as expected on .NET Core.
+Once we do it, the application compiles and executes as expected on .NET Core.

@@ -16,7 +16,7 @@ Elasticsearch is a distributed search and analytics system that enables complex 
 
 Elasticsearch is built on top of the [Apache Lucene](https://lucene.apache.org/core/) full-text search engine. Lucene provides high-performance document indexing and querying. It indexes data with an inverted indexing scheme – instead of mapping pages to keywords, it maps keywords to pages just like a glossary at the end of a book. Lucene has powerful query syntax capabilities and can query data by:
 
-- Term (a full word) 
+- Term (a full word)
 - Prefix (starts-with word)
 - Wildcard (using "\*" or "?" filters)
 - Phrase (a sequence of text in a document)

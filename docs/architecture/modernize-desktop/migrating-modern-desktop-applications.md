@@ -13,11 +13,11 @@ A complex desktop application does not work in isolation and needs some kind of
 interaction with subsystems that may reside on the local machine or on a remote
 server. It will probably need some kind of database to connect as a persistence
 storage either local or remotely. With the raise of Internet and
-service-oriented architectures, it’s extremely common to have your application
+service-oriented architectures, it's common to have your application
 connected to some sort of service residing on a remote server or in the cloud.
 You may need to access the machine file system to implement some functionality.
 Alternatively, maybe you are using a piece of functionality that resides inside
-a COM object outside your application which is a common scenario if, for
+a COM object outside your application that is a common scenario if, for
 example, you are integrating Office assemblies in your app.
 
 Besides, there are differences in the surface of the APIs exposed by .NET
@@ -31,7 +31,7 @@ Configuration files offer the possibility to store sets of properties that are
 read at runtime affecting the behavior of our apps like where to locate a
 database or how many times to execute a loop. The beauty of this technique is
 that you can modify some aspects of the application without the need to recode
-and recompile. This comes in handy when for example the same app code runs on a
+and recompile. This comes in handy when, for example,  the same app code runs on a
 development environment with a certain set of configuration values and in
 production with a different one.
 
@@ -41,17 +41,16 @@ If you have a working .NET Framework desktop application chances are you have an
 app.config file accessed through the AppSettings class from System.Configuration
 namespace.
 
-Within the .NET Framework infrastructure there is a hierarchy of configuration
+Within the .NET Framework infrastructure, there is a hierarchy of configuration
 files that inherit properties from its parents. You can find a machine.config
 that defines a bunch of properties and configuration sections that can be used
 or overridden in any descendant configuration file.
 
 ### Configuration on .NET Core
 
-In the .NET Core world there is no machine.config and although you can continue
+In the .NET Core world, there is no machine.config and although you can continue
 to use the old fashioned System.Configuration you may consider to switch to the
-modern Microsoft.Extensions.Configuration which offers a good amount of
-enhancements.
+modern Microsoft.Extensions.Configuration, which offers a good number of enhancements.
 
 The configuration API supports the concept of configuration provider that
 defines the source of data to be used to load the configuration. There are a
@@ -77,17 +76,17 @@ You can remain using the old app.config XML files for configuration or proceed a
 migration to benefit from the wonderful enhancements waiting for you on .NET
 Core.
 
-To perform a migration from an old-style app.config to a new configuration file
-you should choose between an XML format and a JSON format. In the case of XML,
-the conversion is straight forward since the content is the same just a rename
-to a file with XML extension. Then you need to migrate from AppSettings lines of
-code to Configuration builder, but that should be very easy.
+To perform a migration from an old-style app.config to a new configuration file,
+you should choose between an XML format and a JSON format. For XML, the
+conversion is straight forward since the content is the same just a rename to a
+file with XML extension. Then you need to migrate from AppSettings lines of code
+to Configuration builder, but that should be easy.
 
-In the case, you want to use a JSON format and you don’t want to migrate by hand
+In the case, you want to use a JSON format and you don't want to migrate by hand
 there is a tool called **dotnet-config2json** available on .NET Core that will
 output a JSON configuration file from an old App.Config XML file.
 
-You may also encounter some issues when using configuration sections that where
+You may also encounter some issues when using configuration sections that were
 defined in the machine.config. For example, consider this configuration:
 
 ```xml
@@ -109,14 +108,14 @@ defined in the machine.config. For example, consider this configuration:
 </configuration>
 ```
 
-If you take this configuration to a .NET Core you will get an exception:
+If you take this configuration to a .NET Core, you will get an exception:
 
 Unrecognized configuration section system.diagnostics
 
 This is because that section and the assembly responsible for handling it was
-defined in the machine.config which now does not exist.
+defined in the machine.config, which now does not exist.
 
-To easily fix the issue you can copy the section definition from your old
+To easily fix the issue, you can copy the section definition from your old
 machine.config to your new configuration file:
 
 ```xml
@@ -132,10 +131,10 @@ machine.config to your new configuration file:
 Almost every desktop application needs some kind of database. For desktop is
 common to find client-server architectures with a direct connection between the
 desktop app and the database engine. These databases can be local or remote
-depending of the need to share information between different users.
+depending on the need to share information between different users.
 
-From the code perspective there has been a lot of technologies and frameworks to
-give the developer the possibility to connect, query and update a database.
+From the code perspective, there have been many technologies and frameworks to
+give the developer the possibility to connect, query, and update a database.
 
 The most common examples of database you can find when talking about Windows
 Desktop application are Microsoft Access and Microsoft SQL Server. If you have
@@ -212,7 +211,7 @@ for the namespaces and everything should work as expected.
 
 #### Microsoft Access
 
-Microsoft Access and its Jet Database Engine has been used for years when the
+have been used for years when the
 sophisticated and more scalable SQL Server was not needed. You can still connect
 to Microsoft Access using the `System.Data.Odbc` library.
 
@@ -220,11 +219,11 @@ to Microsoft Access using the `System.Data.Odbc` library.
 
 With the raise of service-oriented architectures, desktop applications begin to
 evolve from a client-server model to the three-layer approach. In the
-client-server approach a direct database connection is established from the
+client-server approach, a direct database connection is established from the
 client holding the business logic usually inside a single EXE file. On the other
-hand, the three-layer approach stablish an intermediate service layer
+hand, the three-layer approach establishes an intermediate service layer
 implementing business logic and database access allowing for better security,
-scalability and reusability. Instead of working directly with datasets of data,
+scalability, and reusability. Instead of working directly with datasets of data,
 the layer approach relies in a set of services implementing contracts and types
 objects as a way to implement data transfer.
 
@@ -240,18 +239,18 @@ present on Visual Studio 2019. In this step, you must consider activating the
 generation of the synchronous operations to make the client compatible with your
 existing code.
 
-If you find that after migration there are libraries you need that aren’t
+If you find that after migration, there are libraries you need that aren't
 present on .NET Core you can add a reference to Microsoft.Windows.Compatibility
 and see if the missing functions are there.
 
-If you are using the WebRequest class to perform Web Service calls you may
+If you are using the WebRequest class to perform Web Service calls, you may
 encounter some differences on .NET Core. The recommendation is to use the
 System.Net.Http.HttpClient instead.
 
 ## Consuming a COM Object
 
 Currently there is no way to add a reference to a COM object from Visual Studio
-2019 for using with .NET Core so you have to follow some manual steps modifying
+2019 for using with .NET Core so you have to follow some manual steps and modify
 the .csproj file for the project.
 
 You need to insert a COMReference structure inside the Project file like:
@@ -271,7 +270,7 @@ You need to insert a COMReference structure inside the Project file like:
 
 ## **More things to consider**
 
-Several technologies available to .NET Framework libraries aren’t available for
+Several technologies available to .NET Framework libraries aren't available for
 use with .NET Core. If your code relies on some of these technologies, consider
 the alternative approaches outlined below.
 
@@ -286,7 +285,7 @@ behavioral changes/compat breaks and deprecated/legacy APIs at GitHub.
 ### AppDomains
 
 Application domains (AppDomains) isolate apps from one another. AppDomains
-require runtime support and are generally quite expensive. Creating additional
+require runtime support and are expensive. Creating additional
 app domains is not supported. For code isolation, we recommend separate
 processes or using containers as an alternative. For the dynamic loading of
 assemblies, we recommend the new AssemblyLoadContext class.
@@ -303,7 +302,7 @@ PlatformNotSupportedException (for example, CreateDomain).
 supported. Also, Remoting requires runtime support, which is expensive to
 maintain. For these reasons, .NET Remoting is not supported on .NET Core.
 
-For communication across processes you should consider inter-process
+For communication across processes, you should consider inter-process
 communication (IPC) mechanisms as an alternative to Remoting, such as
 the System.IO.Pipes or the MemoryMappedFile class.
 

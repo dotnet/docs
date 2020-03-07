@@ -1,5 +1,17 @@
 - name: F# core library reference
   href: index.yml
   items:
+    - name: Array
+      items:
+        - name: Array module
+          href: arrays/index.md
+        - name: Array.append function
+          href: arrays/array.append-function.md
+        - name: Array.Parallel
+          items:
+            - name: Array.Parallel module
+              href: array.parallel-module.md
+            - name: Parallel.choose<'T, 'U> function
+              href: parallel.choose['t,'u]-function.md
     - name: Arithmetic Operators
       href: arithmetic-operators-[fsharp].md

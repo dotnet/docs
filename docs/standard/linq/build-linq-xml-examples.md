@@ -1,12 +1,13 @@
 ---
 title: "How to build LINQ to XML examples"
+description: The C# and Visual Basic code in this documentation uses classes and types from various namespaces. To compile and run the code you must provide appropriate directives and statements to access the namespaces. 
 ms.date: 07/20/2015
 ms.assetid: e5d18fa1-2704-48fe-a44b-1564f97c9e9c
 ---
 
 # How to build LINQ to XML examples
 
-The various snippets and examples in this documentation use classes and types from different kinds of namespaces. When compiling C# code you need to supply appropriate `using` directives, and when compiling Visual Basic code you need to supply appropriate `Imports` statements.
+The snippets and examples in this documentation use classes and types from various namespaces. When compiling C# code you need to supply appropriate `using` directives, and when compiling Visual Basic code you need to supply appropriate `Imports` statements.
 
 ## Example
 

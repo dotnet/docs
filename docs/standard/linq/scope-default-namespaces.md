@@ -1,6 +1,6 @@
 ---
 title: "Scope of default namespaces - LINQ to XML"
-description: Find out the proper and the improper way of querying an XML tree that has a default namespace.
+description: Default namespaces as represented in the XML tree aren't in scope for queries. Here are proper and improper ways of querying them.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"
@@ -136,4 +136,4 @@ End of result set
 
 ## See also
 
-- [Namespaces overview (LINQ to XML)](namespaces-overview.md)
+- [Namespaces overview](namespaces-overview.md)

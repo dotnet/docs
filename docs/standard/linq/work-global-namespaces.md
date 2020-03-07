@@ -1,6 +1,6 @@
 ---
 title: "Work with global namespaces in Visual Basic - LINQ to XML"
-description: Learn how to use the Imports statement to declare XML namespaces using XML literals in Visual Basic.
+description: You declare a namespace in Visual Basic with the Imports statement, whether the namespace is a default namespace or has a prefix. This article discusses Import statements and other aspects of working with namespaces.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"
@@ -208,4 +208,4 @@ http://www.adventure-works.com
 
 ## See also
 
-- [Namespaces overview (LINQ to XML)](namespaces-overview.md)
+- [Namespaces overview](namespaces-overview.md)

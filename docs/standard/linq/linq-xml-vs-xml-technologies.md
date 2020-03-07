@@ -1,12 +1,13 @@
 ---
 title: "LINQ to XML vs. other XML technologies"
+description: Learn how LINQ to XML compares to XSLT, MSXML, and XmlLite, to make better technology choices.
 ms.date: 07/20/2015
 ms.assetid: 01b8e746-12d3-471d-b811-7539e4547784
 ---
 
 # LINQ to XML vs. other XML technologies
 
-This article compares LINQ to XML to the following XML technologies: <xref:System.Xml.XmlReader>, XSLT, MSXML, and XmlLite. This information can help you decide which technology to use.
+This article compares LINQ to XML to the following XML technologies: <xref:System.Xml.XmlReader>, XSLT, MSXML, and XmlLite. This information can help you decide which technologies to use.
 
 For a comparison of LINQ to XML to the Document Object Model (DOM), see [LINQ to XML vs. DOM](linq-xml-vs-dom.md).
 

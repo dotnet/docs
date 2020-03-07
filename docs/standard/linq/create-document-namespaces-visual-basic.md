@@ -1,6 +1,6 @@
 ---
 title: "How to create a document with namespaces in Visual Basic - LINQ to XML"
-description: Learn how to create a document with namespaces in Visual Basic.
+description: Use XML literals in Visual Basic to create documents that have default namespaces or namespaces with a prefix.
 ms.date: 07/20/2015
 ms.assetid: cc5b0d4d-360c-4ada-94fa-2d2916e989be
 ---
@@ -13,7 +13,7 @@ When using XML literals in Visual Basic, users can define one global default XML
 
 You can also define other namespaces, and specify the namespace prefixes for those namespaces. You use the `Imports` keyword to define both types of namespace.
 
-For more information, see [XML literals in Visual Basic (LINQ to XML)](xml-literals.md).
+For more information, see [XML literals in Visual Basic](xml-literals.md).
 
 Note that the default XML namespace only applies to elements and not to attributes. Attributes are by default in the default namespace. However, you can use a namespace prefix to put an attribute in a namespace.
 
@@ -114,4 +114,4 @@ The example produces this output:
 
 ## See also
 
-- [Namespaces overview (LINQ to XML)](namespaces-overview.md)
+- [Namespaces overview](namespaces-overview.md)

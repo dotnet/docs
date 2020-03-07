@@ -1,6 +1,6 @@
 ---
 title: LINQ overview - .NET
-description: LINQ provides language-level querying capabilities and an API to C# and Visual Basic as a way to write expressive, declarative code.
+description: Language-Integrated Query (LINQ) provides language-level querying capabilities, and a higher-order function API to C# and Visual Basic, that enable you to write expressive declarative code. 
 author: cartermp
 ms.author: wiwagn
 ms.date: 06/20/2016
@@ -12,7 +12,7 @@ dev_langs:
 
 # LINQ overview
 
-Language-Integrated Query (LINQ) provides language-level querying capabilities and a [higher-order function](https://en.wikipedia.org/wiki/Higher-order_function) API to C# and Visual Basic as a way to write expressive, declarative code.
+Language-Integrated Query (LINQ) provides language-level querying capabilities, and a [higher-order function](https://en.wikipedia.org/wiki/Higher-order_function) API to C# and Visual Basic, that enable you to write expressive declarative code.
 
 ## Example: Language-level query syntax
 
@@ -106,7 +106,7 @@ End Function
 
 Writing code to manually traverse the XML document to do this task would be far more challenging.
 
-Interacting with XML isn’t the only thing you can do with LINQ Providers. [Linq to SQL](../../framework/data/adonet/sql/linq/index.md) is a fairly bare-bones Object-Relational Mapper (ORM) for an MSSQL Server Database. The [JSON.NET](https://www.newtonsoft.com/json/help/html/LINQtoJSON.htm) library provides efficient JSON Document traversal via LINQ. Furthermore, if there isn’t a library that does what you need, you can also [write your own LINQ Provider](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2012/bb546158(v=vs.110))!
+Interacting with XML isn't the only thing you can do with LINQ Providers. [Linq to SQL](../../framework/data/adonet/sql/linq/index.md) is a fairly bare-bones Object-Relational Mapper (ORM) for an MSSQL Server Database. The [JSON.NET](https://www.newtonsoft.com/json/help/html/LINQtoJSON.htm) library provides efficient JSON Document traversal via LINQ. Furthermore, if there isn't a library that does what you need, you can also [write your own LINQ Provider](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2012/bb546158(v=vs.110))!
 
 ## Reasons to use the query syntax
 
@@ -134,7 +134,7 @@ Dim filteredItems = From item In myItems
                     Select item
 ```
 
-Isn’t the API syntax just a more concise way to do the query syntax?
+Isn't the API syntax just a more concise way to do the query syntax?
 
 No. The query syntax allows for the use of the **let** clause, which allows you to introduce and bind a variable within the scope of the expression, using it in subsequent pieces of the expression. Reproducing the same code with only the API syntax can be done, but will most likely lead to code that's hard to read.
 
@@ -144,13 +144,13 @@ The answer to this question is **yes** if:
 
 - Your existing codebase already uses the query syntax.
 - You need to scope variables within your queries because of complexity.
-- You prefer the query syntax and it won’t distract from your codebase.
+- You prefer the query syntax and it won't distract from your codebase.
 
 The answer to this question is **no** if...
 
 - Your existing codebase already uses the API syntax
 - You have no need to scope variables within your queries
-- You prefer the API syntax and it won’t distract from your codebase
+- You prefer the API syntax and it won't distract from your codebase
 
 ## Examples: Essential LINQ
 

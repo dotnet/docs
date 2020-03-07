@@ -124,7 +124,7 @@ The structure of this guide reflects three different axes to accomplish moderniz
 
 ### Modern Features
 
-Say you have a working Windows Forms application that a sales representative of your company uses to fill in a customer order. A new requirement comes in to enable the customer to sign-in the order using a tablet pen. Inking is native in today´s operating systems and technologies but was not available when the app was developed.
+Say you have a working Windows Forms application that a sales representative of your company uses to fill in a customer order. A new requirement comes in to enable the customer to sign the order using a tablet pen. Inking is native in today´s operating systems and technologies, but it wasn't available when the app was developed.
 
 This path will show you how you can leverage modern desktop features into your existing desktop development.
 

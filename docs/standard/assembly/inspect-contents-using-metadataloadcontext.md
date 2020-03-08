@@ -1,13 +1,13 @@
 ---
 title: "How to: Inspect assembly contents using MetadataLoadContext"
-description: ""
+description: "Learn how to use MetadataLoadContext, the API which enables you to load .NET assemblies for inspection purposes"
 author: MSDN-WhiteKnight
 ms.date: 
 ms.technology: dotnet-standard
 ---
 # How to: Inspect assembly contents using MetadataLoadContext
 
-The reflection API in .NET by default enable developers to inspect the contents of assemblies loaded into the main execution context. However, sometimes it isn't possible to load an assembly into the execution context, for example, because it was compiled for another platform or processor architecture, or it's a [reference assembly](reference-assemblies.md). The <xref:System.Reflection.MetadataLoadContext> API allows you to load and inspect such assemblies. Assemblies loaded into the <xref:System.Reflection.MetadataLoadContext> are treated only as metadata, that is, you can examine types in the assembly, but you can't execute any code contained in it. Unlike the main execution context, the <xref:System.Reflection.MetadataLoadContext> doesn't automatically load dependencies from the current directory; instead it uses the custom binding logic provided by the <xref:System.Reflection.MetadataAssemblyResolver> passed to it.
+The reflection API in .NET by default enables developers to inspect the contents of assemblies loaded into the main execution context. However, sometimes it isn't possible to load an assembly into the execution context, for example, because it was compiled for another platform or processor architecture, or it's a [reference assembly](reference-assemblies.md). The <xref:System.Reflection.MetadataLoadContext> API allows you to load and inspect such assemblies. Assemblies loaded into the <xref:System.Reflection.MetadataLoadContext> are treated only as metadata, that is, you can examine types in the assembly, but you can't execute any code contained in it. Unlike the main execution context, the <xref:System.Reflection.MetadataLoadContext> doesn't automatically load dependencies from the current directory; instead it uses the custom binding logic provided by the <xref:System.Reflection.MetadataAssemblyResolver> passed to it.
 
 ## Prerequisites
 

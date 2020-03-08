@@ -1,17 +1,183 @@
 - name: F# core library reference
   href: index.yml
   items:
+    - name: Arithmetic Operators
+      href: arithmetic-operators-[fsharp].md
     - name: Array
       items:
         - name: Array module
-          href: arrays/index.md
-        - name: Array.append function
-          href: arrays/array.append-function.md
+          href: array/index.md
         - name: Array.Parallel
           items:
             - name: Array.Parallel module
-              href: array.parallel-module.md
-            - name: Parallel.choose<'T, 'U> function
-              href: parallel.choose['t,'u]-function.md
-    - name: Arithmetic Operators
-      href: arithmetic-operators-[fsharp].md
+              href: array/parallel/array.parallel-module.md
+            - name: Array.Parallel.choose<'T,'U> Function
+              href: array/parallel/parallel.choose['t,'u]-function.md
+            - name: Array.Parallel.collect<'T,'U> Function
+              href: array/parallel/parallel.collect['t,'u]-function.md
+            - name: Array.Parallel.init<'T> Function
+              href: array/parallel/parallel.init['t]-function.md
+            - name: Array.Parallel.iter<'T> Function
+              href: array/parallel/parallel.iter['t]-function.md
+            - name: Array.Parallel.iteri<'T> Function
+              href: array/parallel/parallel.iteri['t]-function.md
+            - name: Array.Parallel.map<'T,'U> Function
+              href: array/parallel/parallel.map['t,'u]-function.md
+            - name: Array.Parallel.mapi<'T,'U> Function
+              href: array/parallel/parallel.mapi['t,'u]-function.md
+            - name: Array.Parallel.parition<'T> Function
+              href: array/parallel/parallel.partition['t]-function.md
+        - name: Array.append function
+          href: array/array.append-function.md
+        - name: Array.averageBy<'T,^U> Function
+          href: array/array.averageby['t,^u]-function.md
+        - name: Array.average<^T> Function
+          href: array/array.average[^t]-function.md
+        - name: Array.blit<'T> Function
+          href: array/array.blit['t]-function.md
+        - name: Array.choose<'T,'U> Function
+          href: array/array.choose['t,'u]-function.md
+        - name: Array.chunkBySize<'T> Function
+          href: array/array.chunkbysize['t]-function.md
+        - name: Array.collect<'T,'U> Function
+          href: array/array.collect['t,'u]-function.md
+        - name: Array.compareWith<'T> Function
+          href: array/array.comparewith['t]-function.md
+        - name: Array.concat<'T> Function
+          href: array/array.concat['t]-function.md
+        - name: Array.contains<'T> Function
+          href: array/array.contains['t]-function.md
+        - name: Array.copy<'T> Function
+          href: array/array.copy['t]-function.md
+        - name: Array.countBy<'T,'Key> Function
+          href: array/array.countby['t,'key]-function.md
+        - name: Array.create<'T> Function
+          href: array/array.create['t]-function.md
+        - name: Array.distinctBy<'T,'Key> Function
+          href: array/array.distinctby['t,'key]-function.md
+        - name: Array.distinct<'T> Function
+          href: array/array.distinct['t]-function.md
+        - name: Array.empty<'T> Type Function
+          href: array/array.empty['t]-type-function.md
+        - name: Array.exactlyOne<'T> Function
+          href: array/array.exactlyone['t]-function.md
+        - name: Array.exists2<'T1,'T2> Function
+          href: array/array.exists2['t1,'t2]-function.md
+        - name: Array.exists<'T> Function
+          href: array/array.exists['t]-function.md
+        - name: Array.fill<'T> Function
+          href: array/array.fill['t]-function.md
+        - name: Array.filter<'T> Function
+          href: array/array.filter['t]-function.md
+        - name: Array.findIndex<'T> Function
+          href: array/array.findindex['t]-function.md
+        - name: Array.find<'T> Function
+          href: array/array.find['t]-function.md
+        - name: Array.fold2<'T1,'T2,'State> Function
+          href: array/array.fold2['t1,'t2,'state]-function.md
+        - name: Array.foldBack2<'T1,'T2,'State> Function
+          href: array/array.foldback2['t1,'t2,'state]-function.md
+        - name: Array.foldBack<'T,'State> Function
+          href: array/array.foldback['t,'state]-function.md
+        - name: Array.fold<'T,'State> Function
+          href: array/array.fold['t,'state]-function.md
+        - name: Array.forall2<'T1,'T2> Function
+          href: array/array.forall2['t1,'t2]-function.md
+        - name: Array.forall<'T> Function
+          href: array/array.forall['t]-function.md
+        - name: Array.get<'T> Function
+          href: array/array.get['t]-function.md
+        - name: Array.head<'T> Function
+          href: array/array.head['t]-function.md
+        - name: Array.init<'T> Function
+          href: array/array.init['t]-function.md
+        - name: Array.isEmpty<'T> Function
+          href: array/array.isempty['t]-function.md
+        - name: Array.iter2<'T1,'T2> Function
+          href: array/array.iter2['t1,'t2]-function.md
+        - name: Array.iteri2<'T1,'T2> Function
+          href: array/array.iteri2['t1,'t2]-function.md
+        - name: Array.iteri<'T> Function
+          href: array/array.iteri['t]-function.md
+        - name: Array.iter<'T> Function
+          href: array/array.iter['t]-function.md
+        - name: Array.length<'T> Function
+          href: array/array.length['t]-function.md
+        - name: Array.map2<'T1,'T2,'U> Function
+          href: array/array.map2['t1,'t2,'u]-function.md
+        - name: Array.mapi2<'T1,'T2,'U> Function
+          href: array/array.mapi2['t1,'t2,'u]-function.md
+        - name: Array.mapi<'T,'U> Function
+          href: array/array.mapi['t,'u]-function.md
+        - name: Array.map<'T,'U> Function
+          href: array/array.map['t,'u]-function.md
+        - name: Array.maxBy<'T,'U> Function
+          href: array/array.maxby['t,'u]-function.md
+        - name: Array.max<'T> Function
+          href: array/array.max['t]-function.md
+        - name: Array.minBy<'T,'U> Function
+          href: array/array.minby['t,'u]-function.md
+        - name: Array.min<'T> Function
+          href: array/array.min['t]-function.md
+        - name: Array.ofList<'T> Function
+          href: array/array.oflist['t]-function.md
+        - name: Array.ofSeq<'T> Function
+          href: array/array.ofseq['t]-function.md
+        - name: Array.partition<'T> Function
+          href: array/array.partition['t]-function.md
+        - name: Array.permute<'T> Function
+          href: array/array.permute['t]-function.md
+        - name: Array.pick<'T,'U> Function
+          href: array/array.pick['t,'u]-function.md
+        - name: Array.reduceBack<'T> Function
+          href: array/array.reduceback['t]-function.md
+        - name: Array.reduce<'T> Function
+          href: array/array.reduce['t]-function.md
+        - name: Array.rev<'T> Function
+          href: array/array.rev['t]-function.md
+        - name: Array.scanBack<'T,'State> Function
+          href: array/array.scanback['t,'state]-function.md
+        - name: Array.scan<'T,'State> Function
+          href: array/array.scan['t,'state]-function.md
+        - name: Array.set<'T> Function
+          href: array/array.set['t]-function.md
+        - name: Array.sortBy<'T,'Key> Function
+          href: array/array.sortby['t,'key]-function.md
+        - name: Array.sortInPlaceBy<'T,'Key> Function
+          href: array/array.sortinplaceby['t,'key]-function.md
+        - name: Array.sortInPlaceWith<'T> Function
+          href: array/array.sortinplacewith['t]-function.md
+        - name: Array.sortInPlace<'T> Function
+          href: array/array.sortinplace['t]-function.md
+        - name: Array.sortWith<'T> Function
+          href: array/array.sortwith['t]-function.md
+        - name: Array.sort<'T> Function
+          href: array/array.sort['t]-function.md
+        - name: Array.sub<'T> Function
+          href: array/array.sub['t]-function.md
+        - name: Array.sumBy<'T,^U> Function
+          href: array/array.sumby['t,^u]-function.md
+        - name: Array.sum<^T> Function
+          href: array/array.sum[^t]-function.md
+        - name: Array.toList<'T> Function
+          href: array/array.tolist['t]-function.md
+        - name: Array.toSeq<'T> Function
+          href: array/array.toseq['t]-function.md
+        - name: Array.tryFindIndex<'T> Function
+          href: array/array.tryfindindex['t]-function.md
+        - name: Array.tryFind<'T> Function
+          href: array/array.tryfind['t]-function.md
+        - name: Array.tryPick<'T,'U> Function
+          href: array/array.trypick['t,'u]-function.md
+        - name: Array.unzip3<'T1,'T2,'T3> Function
+          href: array/array.unzip3['t1,'t2,'t3]-function.md
+        - name: Array.unzip<'T1,'T2> Function
+          href: array/array.unzip['t1,'t2]-function.md
+        - name: Array.zeroCreate<'T> Function
+          href: array/array.zerocreate['t]-function.md
+        - name: Array.zip3<'T1,'T2,'T3> Function
+          href: array/array.zip3['t1,'t2,'t3]-function.md
+        - name: Array.zip<'T1,'T2> Function
+          href: array/array.zip['t1,'t2]-function.md
+    - name: AggregateException.InnerExceptions Property
+      href: aggregateexception.innerexceptions-property-[fsharp].md

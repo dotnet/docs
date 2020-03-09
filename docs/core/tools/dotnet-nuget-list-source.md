@@ -1,10 +1,10 @@
-﻿# dotnet nuget list source
----
+﻿---
 title: dotnet nuget list source command
 description: The `dotnet nuget list source` command lists all existing sources from your NuGet configuration files. 
 author: nugetClient
 ms.date: 03/09/2020
 ---
+# dotnet nuget list source
 
 **This article applies to:** ✔️ .NET Core 3.1.200 SDK and later versions
 

@@ -1,10 +1,10 @@
-﻿# dotnet nuget disable source
----
+﻿---
 title: dotnet nuget disable source command
 description: The `dotnet nuget disable source` command disables an existing source in your NuGet configuration files. 
 author: nugetClient
 ms.date: 03/09/2020
 ---
+# dotnet nuget disable source
 
 **This article applies to:** ✔️ .NET Core 3.1.200 SDK and later versions
 

@@ -1,10 +1,10 @@
-﻿# dotnet nuget add source
----
+﻿---
 title: dotnet nuget add source command
 description: The `dotnet nuget add source` command adds a new package source to your NuGet configuration files. 
 author: nugetClient
 ms.date: 03/09/2020
 ---
+# dotnet nuget add source
 
 **This article applies to:** ✔️ .NET Core 3.1.200 SDK and later versions
 

@@ -1,6 +1,6 @@
 ---
 title: dotnet nuget update source command
-description: The `dotnet nuget update source` command updates an existing source in your NuGet configuration files. 
+description: The dotnet nuget update source command updates an existing source in your NuGet configuration files. 
 author: nugetClient
 ms.date: 03/09/2020
 ---
@@ -15,8 +15,10 @@ ms.date: 03/09/2020
 ## Synopsis
 
 ```dotnetcli
-`dotnet nuget update source NAME [--source] [--username] [--password] [--store-password-in-clear-text] [--valid-authentication-types] [--configfile]`
-`dotnet nuget update source [-h|--help]`
+dotnet nuget update source <NAME> [--source] [--username]
+    [--password] [--store-password-in-clear-text] [--valid-authentication-types]
+    [--configfile]
+dotnet nuget update source [-h|--help]
 ```
 
 ## Description
@@ -33,7 +35,7 @@ The `dotnet nuget update source` command updates an existing source in your NuGe
 
 - **`-s|--source`**
 
-  Path to the package(s) source.
+  Path to the package source.
 
 - **`-u|--username`**
 
@@ -53,7 +55,7 @@ The `dotnet nuget update source` command updates an existing source in your NuGe
 
 - **`--configfile`**
 
-  The NuGet configuration file. If specified, only the settings from this file will be used. If not specified, the hierarchy of configuration files from the current directory will be used. To learn more about NuGet configuration go to https://docs.microsoft.com/en-us/nuget/consume-packages/configuring-nuget-behavior.
+  The NuGet configuration file. If specified, only the settings from this file will be used. If not specified, the hierarchy of configuration files from the current directory will be used. For more information, see [Common NuGet Configurations](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior).
 
 ## Examples
 

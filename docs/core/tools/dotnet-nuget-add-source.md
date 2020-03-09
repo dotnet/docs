@@ -1,6 +1,6 @@
 ---
 title: dotnet nuget add source command
-description: The `dotnet nuget add source` command adds a new package source to your NuGet configuration files. 
+description: The dotnet nuget add source command adds a new package source to your NuGet configuration files. 
 author: nugetClient
 ms.date: 03/09/2020
 ---
@@ -15,8 +15,10 @@ ms.date: 03/09/2020
 ## Synopsis
 
 ```dotnetcli
-`dotnet nuget add source PACKAGESOURCEPATH [--name] [--username] [--password] [--store-password-in-clear-text] [--valid-authentication-types] [--configfile]`
-`dotnet nuget add source [-h|--help]`
+dotnet nuget add source <PACKAGE_SOURCE_PATH> [--name] [--username]
+    [--password] [--store-password-in-clear-text] [--valid-authentication-types]
+    [--configfile]
+dotnet nuget add source [-h|--help]
 ```
 
 ## Description
@@ -25,9 +27,9 @@ The `dotnet nuget add source` command adds a new package source to your NuGet co
 
 ## Arguments
 
-- **`PACKAGESOURCEPATH`**
+- **`PACKAGE_SOURCE_PATH`**
 
-  Path to the package(s) source.
+  Path to the package source.
 
 ## Options
 
@@ -53,7 +55,7 @@ The `dotnet nuget add source` command adds a new package source to your NuGet co
 
 - **`--configfile`**
 
-  The NuGet configuration file. If specified, only the settings from this file will be used. If not specified, the hierarchy of configuration files from the current directory will be used. To learn more about NuGet configuration go to https://docs.microsoft.com/en-us/nuget/consume-packages/configuring-nuget-behavior.
+  The NuGet configuration file. If specified, only the settings from this file will be used. If not specified, the hierarchy of configuration files from the current directory will be used. For more information, see [Common NuGet Configurations](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior).
 
 ## Examples
 

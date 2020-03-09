@@ -23,7 +23,7 @@ The declared type of the `params` parameter must be a single-dimensional array, 
 
 The following example demonstrates various ways in which arguments can be sent to a `params` parameter.
 
-[!code-csharp[csrefKeywordsMethodParams#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsMethodParams/CS/csrefKeywordsMethodParams.cs#5)] 
+[!code-csharp[csrefKeywordsMethodParams#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsMethodParams/CS/csrefKeywordsMethodParams.cs#5)]
 
 ## C# language specification
 

@@ -12,9 +12,9 @@ ms.assetid: 16099660-91b2-49e5-9646-77f9ef069526
   
 ```csharp
 #region MyClass definition  
-class MyClass   
+class MyClass
 {  
-    static void Main()   
+    static void Main()
     {  
     }  
 }  

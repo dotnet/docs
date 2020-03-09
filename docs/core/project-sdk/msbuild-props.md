@@ -132,6 +132,7 @@ For more information, see [C# language versioning](../../csharp/language-referen
 ## NuGet packages
 
 - [PackageReference](#packagereference)
+- [AssetTargetFallback](#assettargetfallback)
 
 ### PackageReference
 
@@ -150,15 +151,15 @@ For more information, see [Package references in project files](/nuget/consume-p
 
 ### AssetTargetFallback
 
-The `AssetTargetFallback` property lets you specify additional compatible target frameworks for projects that your project references and NuGet packages that your project consumes. For example, if you specify a package dependency using `PackageReference` but that package doesn't contain assets that are compatible with your projects's `TargetFramework`, the `AssetTargetFallback` property comes into play. The compatibility of the referenced package is rechecked using each target framework that's specified in `AssetTargetFallback`.
+The `AssetTargetFallback` property lets you specify additional compatible framework versions for projects that your project references and NuGet packages that your project consumes. For example, if you specify a package dependency using `PackageReference` but that package doesn't contain assets that are compatible with your projects's `TargetFramework` version, the `AssetTargetFallback` property comes into play. The compatibility of the referenced package is rechecked using each framework version that's specified in `AssetTargetFallback`.
 
-You can set the `AssetTargetFallback` property to one or more target frameworks that are compatible with your project.
+You can set the `AssetTargetFallback` property to one or more [target framework versions](../../standard/frameworks.md#supported-target-framework-versions).
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
   ...
   <PropertyGroup>
-    <AssetTargetFallback>netcoreapp2.0</AssetTargetFallback>
+    <AssetTargetFallback>netstandard1.6</AssetTargetFallback>
   </PropertyGroup>
 </Project>
 ```

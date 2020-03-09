@@ -25,7 +25,7 @@ dotnet tool install <PACKAGE_NAME> <--tool-path>
 dotnet tool install <PACKAGE_NAME>
     [--add-source] [--configfile] [--framework]
     [-v|--verbosity] [--version]
-    
+
 dotnet tool install <-h|--help>
 ```
 

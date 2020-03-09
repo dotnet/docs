@@ -132,8 +132,8 @@ namespace list_tutorial
         {
             WorkingWithStrings();
         }
-
-        public static void WorkingWithStrings()
+        
+        static void WorkingWithStrings()
         {
             var names = new List<string> { "<name>", "Ana", "Felipe" };
             foreach (var name in names)
@@ -156,10 +156,25 @@ namespace list_tutorial
             Console.WriteLine($"The list has {names.Count} people in it");
 
             var index = names.IndexOf("Felipe");
-            Console.WriteLine($"The name {names[index]} is at index {index}");
+            if (index == -1)
+            {
+                Console.WriteLine($"When an item is not found, IndexOf returns {index}");
+            }
+            else
+            {
+                Console.WriteLine($"The name {names[index]} is at index {index}");
+            }
 
-            var notFound = names.IndexOf("Not Found");
-            Console.WriteLine($"When an item is not found, IndexOf returns {notFound}");
+            index = names.IndexOf("Not Found");
+            if (index == -1)
+            {
+                Console.WriteLine($"When an item is not found, IndexOf returns {index}");
+            }
+            else
+            {
+                Console.WriteLine($"The name {names[index]} is at index {index}");
+
+            }
 
             names.Sort();
             foreach (var name in names)

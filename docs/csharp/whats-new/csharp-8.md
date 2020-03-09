@@ -385,7 +385,7 @@ await foreach (var number in GenerateSequence())
 }
 ```
 
-You can try asynchronous streams yourself in our tutorial on [creating and consuming async streams](../tutorials/generate-consume-asynchronous-stream.md). The extension method <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait%601%2A?displayProperty=nameWithType> enables you to control if consuming the stream executes on the captured context.
+You can try asynchronous streams yourself in our tutorial on [creating and consuming async streams](../tutorials/generate-consume-asynchronous-stream.md). The extension method <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait%2A?displayProperty=nameWithType> enables you to control if consuming the stream executes on the captured context.
 
 ## Indices and ranges
 

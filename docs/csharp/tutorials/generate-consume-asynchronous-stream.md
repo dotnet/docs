@@ -126,7 +126,7 @@ Replace that code with the following `await foreach` loop:
 
 [!code-csharp[FinishedEnumerateAsyncStream](~/samples/snippets/csharp/tutorials/AsyncStreams/finished/IssuePRreport/IssuePRreport/Program.cs#EnumerateAsyncStream)]
 
-The extension method <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait%601%2A?displayProperty=nameWithType> enables you to control if consuming the stream executes on the captured context.
+The extension method <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait%2A?displayProperty=nameWithType> enables you to control if consuming the stream executes on the captured context.
 
 You can get the code for the finished tutorial from the [dotnet/samples](https://github.com/dotnet/samples) repository in the [csharp/tutorials/AsyncStreams](https://github.com/dotnet/samples/tree/master/csharp/tutorials/AsyncStreams/finished) folder.
 

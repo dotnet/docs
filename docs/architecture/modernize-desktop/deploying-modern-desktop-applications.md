@@ -8,36 +8,26 @@ ms.date: 09/16/2019
 
 ## Introduction
 
-When you are a web developer, you must care about a lot of things related to
-your code. You must develop the necessary features to cover all planned business
-scenarios, you have to create a clean and easy to use user interface, you must
-pay attention to how your application performs, optimize it to lower resource
-consumption, and large etcetera of items. Besides checking for browser
-compatibility, once you complete these tasks, you can consider you are done.
-
-When you develop for the desktop you also have to think about how your
-application is going to be packaged and deployed to the final users' machines.
-The problem with packaging, deployment and installation is that is usually falls
-under the umbrella of the IT professionals who care about very different things
-than developers.
+When you develop desktop applications, besides other development aspects, you
+also have to think about how your application is going to be packaged and
+deployed to the final users' machines. The problem with packaging, deployment,
+and installation is that it usually falls under the umbrella of the IT
+professionals who care about different things than developers.
 
 These days we are all familiar with the DevOps concept where developers and IT
 pros work closely to move applications to their production environments. But if
-you have been in the desktop battle for more than 10 years you should have heard
-the following story. A team of developers work together very hard to meet the
+you have been in the desktop battle for more than 10 years you might have witnessed a following tory. A team of developers works together hard to meet the
 project deadlines. Business people are nervous since they need the system working
-on a lot of user's machines to run the company. At 4:00 AM on the D-Day, the
-project manager checks with every developer their code is working well,
-everything is fine, we can ship. Then the package team comes in generating the
-setup for the app, distribute it to every user machine and at 5:00 AM a set of
+on numerous user's machines to run the company. On the "D-Day", the
+project manager checks with every developer that their code is working well,
+everything is fine, they can ship. Then the package team comes in generating the
+setup for the app, distribute it to every user machine and a set of
 test users run the application. Well, they try, because before showing any UI
-the application throws an Exception that says "Method ~ of object ~ failed".
+the application throws an exception that says "Method ~ of object ~ failed".
 Panic starts flowing through the air and a brief investigation points to a young
-and tired developer that has introduced a third-party control anybody knew it
-had to be deployed. And all he manages to say are these famous words: "Well, it
-works on my machine".
+and tired developer that has introduced a third-party control, that certainly "worked on the dev machine".
 
-Installing desktop applications have traditionally be kind of a nightmare for
+Installing desktop applications have traditionally been of  a nightmare for
 two main reasons: a lack of culture of close collaboration between dev and IT
 teams and a lack of a solid packaging a deploying technology we can build upon.
 In fact, we have been leaving with the fact that sometimes you regret to install
@@ -61,7 +51,7 @@ client.
 
 Today, developers write and build the code for an app and then pass the
 generated assets to the IT pros who reconfigure the app and repackage it
-typically in an MSI or more recent App-V packaging format, which is deploy
+typically in an MSI or more recent App-V packaging format, which is deployed
 through different channels and tools. One of the main problems with this
 approach is commonly known as "packaging paralysis". The problem is that this
 cycle repeats every time there is an App update or an OS Update.
@@ -70,7 +60,7 @@ We can see the process reflected on this picture:
 
 ![Modern IT](media\deploying-modern-desktop-applications\modern-it.png)
 
-Companies need a way to break this packaging cycle in three independent cycles:
+Companies need a way to break in this packaging cycle three independent cycles:
 
 * OS Updates
 * Application Updates
@@ -95,7 +85,7 @@ without repackaging.
 ## MSIX: The next generation of deployment
 
 Before MSIX, we had several packaging technologies available like setup wizards,
-MSI, ClickOnce, App-V and scripting. Each of those have their strengths and
+MSI, ClickOnce, App-V, and scripting. Each of  technologies has their strengths and
 Microsoft has decided to pick the best of all to build MSIX. Therefore, MSIX is
 built on the foundations of these existing technologies picking the best of
 each:
@@ -112,8 +102,8 @@ With MSIX, we get one installer technology with all these features.
 
 #### Never regret installing an App
 
-MSIX provides a predictable, reliable and safe deployment. The declarative
-method contained in the package manifest lets the OS keep track of every assets
+MSIX provides a predictable, reliable, and safe deployment. The declarative
+method contained in the package manifest lets the OS keep track of every asset
 your application needs. It also provides a true clean uninstall with no side
 effects.
 
@@ -138,11 +128,11 @@ byte blocks are downloaded on application updates.
 ![MSIX managing updates](media\deploying-modern-desktop-applications\msix-managing-updates.png)
 
 With Streaming installation, the user can start working on your application
-really quickly while other parts of the app are downloaded on the background.
-This feature contributes to a very engaging experience for your users.
+quickly while other parts of the app are downloaded on the background.
+This feature contributes to an engaging experience for your users.
 
 Through optional packages feature you achieve componentization on your app
-deployment so you can download them when needed.
+deployment, so you can download them when needed.
 
 #### Simple packaging and deployment
 
@@ -164,11 +154,11 @@ application from untrusted sources. MSIX also prevents tampering because it
 keeps a record of file hashes and detects on file has been modified after
 installation.
 
-#### Works for the entire App catalog
+#### Works for the entire App Catalog
 
 One of the coolest things about MSIX is that it works for the entire application
 catalog, Windows Forms, WPF, MFC/ATL, Delphi, even if you want to do xCopy
-deployment, ClickOnce or going to the Store, you can use the same MSIX package.
+deployment, ClickOnce, or going to the Store, you can use the same MSIX package.
 
 ### Tools
 
@@ -189,7 +179,7 @@ having the source code.
 
 #### Package Support Framework
 
-The Package Support Framework is an open source kit that helps you apply fixes
+The Package Support Framework is an open-source kit that helps you apply fixes
 to your existing win32 application when you don't have access to the source
 code, so that it can run in an MSIX container. The Package Support Framework
 helps your application follow the best practices of the modern runtime
@@ -197,14 +187,14 @@ environment.
 
 #### App Installer
 
-App Installer allows for Windows 10 apps to be installed by double clicking the
+App Installer allows for Windows 10 apps to be installed by double-clicking the
 app package. This means that users don't need to use PowerShell or other
 developer tools to deploy Windows 10 apps. The App Installer can also install an
 app from the web, optional packages, and related sets.
 
-## How to create a MSIX package from an existing Win32 desktop application
+## How to create an MSIX package from an existing Win32 desktop application
 
-Let's see the steps you have to take to create a MSIX package from an existing
+Let's see the steps you have to take to create an MSIX package from an existing
 Win32 application, a Windows Forms app in this case.
 
 To start, add a new project to your solution, select the Windows Application
@@ -231,7 +221,7 @@ from a given image present on your project just by clicking *Create*.
 
 ![Manifest Designer](media\deploying-modern-desktop-applications\manifest-designer.png)
 
-If you open the code for the `Package.appxmanifest` you can see a couple of
+If you open the code for the, Package.appxmanifest` you can see a couple of
 interesting things.
 
 Right under `<Package>` there is an `<Identity>` node. This is where your packaged application is going to get its identity to let the OS manage it.
@@ -257,7 +247,7 @@ provides fully integrated into Windows 10.
 
 The final stage is about how you deploy the MSIX package to another machine.
 
-Right-click on the packaging project, select the Store menu and then click on
+Right-click on the packaging project, select the Store menu, and then click on
 Create App Packages option.
 
 Then you can choose between creating a package to upload to the store, but in
@@ -279,7 +269,7 @@ servers. Pay attention to the settings you can specify to set up how you want to
 update your application. We will be discussing about application updates in the
 next section.
 
-For a detail step by step guide please refer to: [Package a desktop app from source code using Visual Studio](https://docs.microsoft.com/windows/msix/desktop/desktop-to-uwp-packaging-dot-net)
+For a detail step-by-step guide refer to: [Package a desktop app from source code using Visual Studio](https://docs.microsoft.com/windows/msix/desktop/desktop-to-uwp-packaging-dot-net)
 
 ## Auto Updates in MSIX
 
@@ -295,7 +285,7 @@ experience.
 
 You can configure your updates to interact with the user in two different ways:
 
-* User prompted updates: The OS shows some auto generated nice UI to notify the
+* User prompted updates: The OS shows some autogenerated nice UI to notify the
   user about the application is about to install. It builds this UI based on the
   properties you specify on your installation files.
 
@@ -313,7 +303,7 @@ When you use this type of deployment, a special file is created called
 * The application's main MSIX package properties
 * The update behavior
 
-![.appinstaller file](media\deploying-modern-desktop-applications\appinstaller-file.png)
+![.app installer file](media\deploying-modern-desktop-applications\appinstaller-file.png)
 
 In combination with this file, Microsoft has designed a special URL protocol to
 launch the installation process from a link:
@@ -336,7 +326,7 @@ a common installation experience for every app.
 When you have a new version of your app, you want to deploy it to your users.
 Once you have generated the new MSIX package and moved it to the deployment
 server, you just have to edit the `.appinstaller` file to reflect this changes,
-mainly the version and the path to the new MSIX file. The next time the user
+mainly the version, and the path to the new MSIX file. The next time the user
 launches the application the system is going to detect the change and download
 the files for the new version in the background. When this is done, installation
 will execute on new application launch transparently for your user.

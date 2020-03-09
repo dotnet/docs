@@ -63,7 +63,7 @@ In many scenarios, the object tree that you save is related to an original opera
 
 The challenge with saving and serializing a complex object that is set in a markup form is in achieving a balance between full representation without information loss, versus verbosity that makes the XAML less human-readable. Moreover, different customers for XAML might have different definitions or expectations for how that balance should be set. The <xref:System.Xaml.XamlServices.Save%2A> APIs represent one definition of that balance. The <xref:System.Xaml.XamlServices.Save%2A> APIs use available XAML schema context and the default CLR-based characteristics of <xref:System.Xaml.XamlType>, <xref:System.Xaml.XamlMember>, and other XAML intrinsic and XAML type system concepts to determine where certain XAML node stream constructs can be optimized when they are saved back into markup. For example, <xref:System.Xaml.XamlServices> save paths can use CLR-based default XAML schema context to resolve <xref:System.Xaml.XamlType> for objects, can determine a <xref:System.Xaml.XamlType.ContentProperty%2A?displayProperty=nameWithType>, and then can omit property element tags when they write the property to the XAML content of the object.
 
-<a name="transform"></a> 
+<a name="transform"></a>
 ## Transform
 
 <xref:System.Xaml.XamlServices.Transform%2A> converts or transforms XAML by linking a load path and a save path as a single operation. A different schema context or different backing type system can be used for <xref:System.Xaml.XamlReader> and <xref:System.Xaml.XamlWriter>, which is what influences how the resulting XAML is transformed. This works well for broad transform operations.

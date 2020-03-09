@@ -1,4 +1,4 @@
----
+﻿---
 title: dotnet nuget remove source command
 description: The `dotnet nuget remove source` command removes an existing source from your NuGet configuration files. 
 author: nugetClient
@@ -28,7 +28,6 @@ The `dotnet nuget remove source` command removes an existing source from your Nu
 - **`NAME`**
 
   Name of the source.
-
 
 ## Options
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: dotnet nuget update source command
 description: The `dotnet nuget update source` command updates an existing source in your NuGet configuration files. 
 author: nugetClient
@@ -28,7 +28,6 @@ The `dotnet nuget update source` command updates an existing source in your NuGe
 - **`NAME`**
 
   Name of the source.
-
 
 ## Options
 

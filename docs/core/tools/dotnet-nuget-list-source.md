@@ -1,4 +1,4 @@
----
+﻿---
 title: dotnet nuget list source command
 description: The `dotnet nuget list source` command lists all existing sources from your NuGet configuration files. 
 author: nugetClient

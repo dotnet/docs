@@ -1,7 +1,7 @@
 ---
 title: Implementing the Circuit Breaker pattern
 description: Learn how to implement the Circuit Breaker pattern as a complementary system to Http retries.
-ms.date: 10/16/2018
+ms.date: 03/03/2020
 ---
 
 # Implement the Circuit Breaker pattern
@@ -20,11 +20,11 @@ Therefore, you need some kind of defense barrier so that excessive requests stop
 
 The Circuit Breaker pattern has a different purpose than the "Retry pattern". The "Retry pattern" enables an application to retry an operation in the expectation that the operation will eventually succeed. The Circuit Breaker pattern prevents an application from performing an operation that's likely to fail. An application can combine these two patterns. However, the retry logic should be sensitive to any exception returned by the circuit breaker, and it should abandon retry attempts if the circuit breaker indicates that a fault is not transient.
 
-## Implement Circuit Breaker pattern with HttpClientFactory and Polly
+## Implement Circuit Breaker pattern with `IHttpClientFactory` and Polly
 
-As when implementing retries, the recommended approach for circuit breakers is to take advantage of proven .NET libraries like Polly and its native integration with HttpClientFactory.
+As when implementing retries, the recommended approach for circuit breakers is to take advantage of proven .NET libraries like Polly and its native integration with `IHttpClientFactory`.
 
-Adding a circuit breaker policy into your HttpClientFactory outgoing middleware pipeline is as simple as adding a single incremental piece of code to what you already have when using HttpClientFactory.
+Adding a circuit breaker policy into your `IHttpClientFactory` outgoing middleware pipeline is as simple as adding a single incremental piece of code to what you already have when using `IHttpClientFactory`.
 
 The only addition here to the code used for HTTP call retries is the code where you add the Circuit Breaker policy to the list of policies to use, as shown in the following incremental code, part of the ConfigureServices() method.
 
@@ -56,7 +56,7 @@ Circuit breakers should also be used to redirect requests to a fallback infrastr
 
 All those features are for cases where you're managing the failover from within the .NET code, as opposed to having it managed automatically for you by Azure, with location transparency.
 
-From a usage point of view, when using HttpClient, there’s no need to add anything new here because the code is the same than when using HttpClient with HttpClientFactory, as shown in previous sections.
+From a usage point of view, when using HttpClient, there’s no need to add anything new here because the code is the same than when using `HttpClient` with `IHttpClientFactory`, as shown in previous sections.
 
 ## Test Http retries and circuit breakers in eShopOnContainers
 

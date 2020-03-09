@@ -51,7 +51,7 @@ A class can provide methods or properties that enable you to avoid making a call
 
 Another way to avoid exceptions is to return null (or default) for extremely common error cases instead of throwing an exception. An extremely common error case can be considered normal flow of control. By returning null (or default) in these cases, you minimize the performance impact to an app.
 
-For value types, whether to use `Nullable<T>` or default as your error indicator is something to consider for your particular app. By using `Nullable<Guid>`, `default` becomes `null` instead of `Guid.Empty`. Some times, adding `Nullable<T>` can make it clearer when a value is present or absent. Other times, adding `Nullable<T>` can create extra cases to check that aren't necessary, and only serve to create potential sources of errors. 
+For value types, whether to use `Nullable<T>` or default as your error indicator is something to consider for your particular app. By using `Nullable<Guid>`, `default` becomes `null` instead of `Guid.Empty`. Some times, adding `Nullable<T>` can make it clearer when a value is present or absent. Other times, adding `Nullable<T>` can create extra cases to check that aren't necessary, and only serve to create potential sources of errors.
 
 ## Throw exceptions instead of returning an error code
 
@@ -108,7 +108,7 @@ The error message that the user sees is derived from the <xref:System.Exception.
 For localized applications, you should provide a localized message string for every exception that your application can throw. You use resource files to provide localized error messages. For information on localizing applications and retrieving localized strings, see the following articles:
 
 - [How to: create user-defined exceptions with localized exception messages](how-to-create-localized-exception-messages.md)
-- [Resources in Desktop Apps](../../framework/resources/index.md) 
+- [Resources in Desktop Apps](../../framework/resources/index.md)
 - <xref:System.Resources.ResourceManager?displayProperty=nameWithType>
 
 ## In custom exceptions, provide additional properties as needed

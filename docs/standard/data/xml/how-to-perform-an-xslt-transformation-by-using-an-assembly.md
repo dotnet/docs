@@ -167,9 +167,9 @@ xslt.Load(typeof(Transform));
   
 with  
   
-```csharp 
+```csharp
 xslt.Load(System.Reflection.Assembly.Load("Transform").GetType("Transform"));  
-``` 
+```
   
 in the example above. For more information on the Assembly.Load method, see <xref:System.Reflection.Assembly.Load%2A>.  
   

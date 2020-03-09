@@ -28,7 +28,7 @@ If you want to extend the functionality of an existing control, you can create a
 
     A new custom control is added to your project.
 
-1. If you using:
+1. If you're using:
 
     - Visual Basic, at the top of **Solution Explorer**, click **Show All Files**. Expand CustomControl1.vb and then open CustomControl1.Designer.vb in the Code Editor.
     - C#, open CustomControl1.cs in the Code Editor.

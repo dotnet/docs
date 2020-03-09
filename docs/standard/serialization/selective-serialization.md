@@ -13,7 +13,7 @@ A class often contains fields that shouldn't be serialized. For example, assume 
   
 ```csharp  
 [Serializable]  
-public class MyObject   
+public class MyObject
 {  
   public int n1;  
   [NonSerialized] public int n2;  

@@ -24,7 +24,7 @@ To create a custom exception, follow these steps:
     [Serializable]
     public class StudentNotFoundException : Exception { }
     ```
-    
+
     ```vb
     <Serializable>
     Public Class StudentNotFoundException
@@ -47,7 +47,7 @@ To create a custom exception, follow these steps:
             : base(message, inner) { }
     }
     ```
-    
+
     ```vb
     <Serializable>
     Public Class StudentNotFoundException

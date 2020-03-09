@@ -67,7 +67,7 @@ GDI+ uses three coordinate spaces: world, page, and device. World coordinates ar
 |-|-|  
 |World|(0, 0) to (2, 1)|  
 |Page|(0, 0) to (2, 1)|  
-|Device|(0, 0, to (192, 96)|  
+|Device|(0, 0) to (192, 96)|  
   
  Note that because the origin of the world coordinate space is at the upper-left corner of the client area, the page coordinates are the same as the world coordinates.  
   

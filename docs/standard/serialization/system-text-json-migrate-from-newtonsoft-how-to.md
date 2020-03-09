@@ -74,7 +74,7 @@ This is not an exhaustive list of `Newtonsoft.Json` features. The list includes 
 
 <xref:System.Text.Json> is strict by default and avoids any guessing or interpretation on the caller's behalf, emphasizing deterministic behavior. The library is intentionally designed this way for performance and security. `Newtonsoft.Json` is flexible by default. This fundamental difference in design is behind many of the following specific differences in default behavior.
 
-### Case-insensitive deserialization 
+### Case-insensitive deserialization
 
 During deserialization, `Newtonsoft.Json` does case-insensitive property name matching by default. The <xref:System.Text.Json> default is case-sensitive, which gives better performance since it's doing an exact match. For information about how to do case-insensitive matching, see [Case-insensitive property matching](system-text-json-how-to.md#case-insensitive-property-matching).
 
@@ -187,7 +187,7 @@ Custom converters can be implemented for types that don't have built-in support.
 
 `Newtonsoft.Json` can serialize or deserialize numbers represented by JSON strings (surrounded by quotes). For example, it can accept: `{"DegreesCelsius":"23"}` instead of `{"DegreesCelsius":23}`. To enable that behavior in <xref:System.Text.Json>, implement a custom converter like the following example. The converter handles properties defined as `long`:
 
-* It serializes them as JSON strings. 
+* It serializes them as JSON strings.
 * It accepts JSON numbers and numbers within quotes while deserializing.
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/LongToStringConverter.cs)]
@@ -231,7 +231,7 @@ However, `System.Text.Json` treats `null` the same as `Newtonsoft.Json` and retu
 
 To implement type inference for `object` properties, create a converter like the example in [How to write custom converters](system-text-json-converters-how-to.md#deserialize-inferred-types-to-object-properties).
 
-### Deserialize null to non-nullable type 
+### Deserialize null to non-nullable type
 
 `Newtonsoft.Json` doesn't throw an exception in the following scenario:
 
@@ -319,7 +319,7 @@ The preceding converter code is a simplified example. Additional logic would be 
 
 `Newtonsoft.Json` has several ways to conditionally ignore a property on serialization or deserialization:
 
-* `DefaultContractResolver` lets you select properties to include or exclude, based on arbitrary criteria. 
+* `DefaultContractResolver` lets you select properties to include or exclude, based on arbitrary criteria.
 * The `NullValueHandling` and `DefaultValueHandling` settings on `JsonSerializerSettings` let you specify that all null-value or default-value properties should be ignored.
 * The `NullValueHandling` and `DefaultValueHandling` settings on the `[JsonProperty]` attribute let you specify individual properties that should be ignored when set to null or the default value.
 
@@ -334,7 +334,7 @@ These options **don't** let you:
 * Ignore all properties that have the default value for the type.
 * Ignore selected properties that have the default value for the type.
 * Ignore selected properties if their value is null.
-* Ignore selected properties based on arbitrary criteria evaluated at run time. 
+* Ignore selected properties based on arbitrary criteria evaluated at run time.
 
 For that functionality, you can write a custom converter. Here's a sample POCO and a custom converter for it that illustrates this approach:
 
@@ -342,7 +342,7 @@ For that functionality, you can write a custom converter. Here's a sample POCO a
 
 [!code-csharp[](~/samples/snippets/core/system-text-json/csharp/WeatherForecastRuntimeIgnoreConverter.cs)]
 
-The converter causes the `Summary` property to be omitted from serialization if its value is null, an empty string, or "N/A". 
+The converter causes the `Summary` property to be omitted from serialization if its value is null, an empty string, or "N/A".
 
 Register this custom converter by [using an attribute on the class](system-text-json-converters-how-to.md#registration-sample---jsonconverter-on-a-type) or by [adding the converter](system-text-json-converters-how-to.md#registration-sample---converters-collection) to the <xref:System.Text.Json.JsonSerializerOptions.Converters> collection.
 
@@ -439,7 +439,7 @@ By default, `Newtonsoft.Json` serializes by value. For example, if an object con
 
 ### JsonDocument is IDisposable
 
-`JsonDocument` builds an in-memory view of the data into a pooled buffer. Therefore, unlike `JObject` or `JArray` from `Newtonsoft.Json`, the `JsonDocument` type implements `IDisposable` and needs to be used inside a using block. 
+`JsonDocument` builds an in-memory view of the data into a pooled buffer. Therefore, unlike `JObject` or `JArray` from `Newtonsoft.Json`, the `JsonDocument` type implements `IDisposable` and needs to be used inside a using block.
 
 Only return a `JsonDocument` from your API if you want to transfer lifetime ownership and dispose responsibility to the caller. In most scenarios, that isn't necessary. If the caller needs to work with the entire JSON document, return the <xref:System.Text.Json.JsonElement.Clone%2A> of the <xref:System.Text.Json.JsonDocument.RootElement%2A>, which is a <xref:System.Text.Json.JsonElement>. If the caller needs to work with a particular element within the JSON document, return the <xref:System.Text.Json.JsonElement.Clone%2A> of that <xref:System.Text.Json.JsonElement>. If you return the `RootElement` or a sub-element directly without making a `Clone`, the caller won't be able to access the returned `JsonElement` after the `JsonDocument` that owns it is disposed.
 
@@ -449,7 +449,7 @@ Here's an example that requires you to make a `Clone`:
 public JsonElement LookAndLoad(JsonElement source)
 {
     string json = File.ReadAllText(source.GetProperty("fileName").GetString());
-   
+
     using (JsonDocument doc = JsonDocument.Parse(json))
     {
         return doc.RootElement.Clone();
@@ -457,7 +457,7 @@ public JsonElement LookAndLoad(JsonElement source)
 }
 ```
 
-The preceding code expects a `JsonElement` that contains a `fileName` property. It opens the JSON file and creates a `JsonDocument`. The method assumes that the caller wants to work with the entire document, so it returns the `Clone` of the `RootElement`. 
+The preceding code expects a `JsonElement` that contains a `fileName` property. It opens the JSON file and creates a `JsonDocument`. The method assumes that the caller wants to work with the entire document, so it returns the `Clone` of the `RootElement`.
 
 If you receive a `JsonElement` and are returning a sub-element, it's not necessary to return a `Clone` of the sub-element. The caller is responsible for keeping alive the `JsonDocument` that the passed-in `JsonElement` belongs to. For example:
 
@@ -507,7 +507,7 @@ To achieve the best possible performance while using the `Utf8JsonReader`, read 
 
 The `Utf8JsonReader` supports reading from a UTF-8 encoded [ReadOnlySpan\<byte>](xref:System.ReadOnlySpan%601) or [ReadOnlySequence\<byte>](xref:System.Buffers.ReadOnlySequence%601) (which is the result of reading from a <xref:System.IO.Pipelines.PipeReader>).
 
-For synchronous reading, you could read the JSON payload until the end of the stream into a byte array and pass that into the reader. For reading from a string (which is encoded as UTF-16), call <xref:System.Text.Encoding.UTF8>.<xref:System.Text.Encoding.GetBytes%2A> to first transcode the string to a UTF-8 encoded byte array. Then pass that to the `Utf8JsonReader`. 
+For synchronous reading, you could read the JSON payload until the end of the stream into a byte array and pass that into the reader. For reading from a string (which is encoded as UTF-16), call <xref:System.Text.Encoding.UTF8>.<xref:System.Text.Encoding.GetBytes%2A> to first transcode the string to a UTF-8 encoded byte array. Then pass that to the `Utf8JsonReader`.
 
 Since the `Utf8JsonReader` considers the input to be JSON text, a UTF-8 byte order mark (BOM) is considered invalid JSON. The caller needs to filter that out before passing the data to the reader.
 

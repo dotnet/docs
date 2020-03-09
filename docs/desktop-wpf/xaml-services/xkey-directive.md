@@ -99,7 +99,7 @@ keyObject
   
 - WPF does not implement dictionaries that require this usage. Object keys is more a general feature of the XAML language, possibly useful for certain custom dictionary scenarios where creating the dictionary in XAML is desirable. For WPF features such as implicit styles that use non-string keys for resources, other techniques for establishing or specifying the keys exist, so using an object key is not necessary.  
   
-- *keyObject* could also be a markup extension usage in object element form, rather than a direct object instance.  
+- `keyObject` could also be a markup extension usage in object element form, rather than a direct object instance.  
   
 ## Silverlight Usage Notes  
  `x:Key` for Silverlight is documented separately. For more information, see [XAML Namespace (x:) Language Features (Silverlight)](https://docs.microsoft.com/previous-versions/windows/silverlight/dotnet-windows-silverlight/cc188995(v=vs.95)).  

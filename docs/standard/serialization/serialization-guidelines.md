@@ -63,7 +63,7 @@ This document lists the guidelines to consider when designing an API to be seria
      [!code-csharp[SerializationGuidelines#3](../../../samples/snippets/csharp/VS_Snippets_CFX/serializationguidelines/cs/source.cs#3)]
      [!code-vb[SerializationGuidelines#3](../../../samples/snippets/visualbasic/VS_Snippets_CFX/serializationguidelines/vb/source.vb#3)]  
   
-     The <xref:System.Runtime.Serialization.OnDeserializedAttribute> attribute is the most commonly used callback attribute. The other attributes in the family are <xref:System.Runtime.Serialization.OnDeserializingAttribute>,    
+     The <xref:System.Runtime.Serialization.OnDeserializedAttribute> attribute is the most commonly used callback attribute. The other attributes in the family are <xref:System.Runtime.Serialization.OnDeserializingAttribute>,
     <xref:System.Runtime.Serialization.OnSerializingAttribute>, and <xref:System.Runtime.Serialization.OnSerializedAttribute>. They can be used to mark callbacks that get executed before deserialization, before serialization, and finally, after serialization, respectively.  
   
 4. CONSIDER using the <xref:System.Runtime.Serialization.KnownTypeAttribute> to indicate concrete types that should be used when deserializing a complex object graph.  

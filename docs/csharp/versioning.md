@@ -79,7 +79,7 @@ You use the `new` modifier to hide inherited members of a base class. This is on
 
 Take the following example:
 
-[!code-csharp[Sample usage of the 'new' modifier](~/samples/csharp/versioning/new/Program.cs#sample)]
+[!code-csharp[Sample usage of the 'new' modifier](~/samples/snippets/csharp/versioning/new/Program.cs#sample)]
 
 **Output**
 
@@ -98,7 +98,7 @@ When no `new` modifier is specified, a derived class will by default hide confli
 The `override` modifier means a derived implementation extends the implementation of a base class member rather than
 hides it. The base class member needs to have the `virtual` modifier applied to it.
 
-[!code-csharp[Sample usage of the 'override' modifier](../../samples/csharp/versioning/override/Program.cs#sample)]
+[!code-csharp[Sample usage of the 'override' modifier](../../samples/snippets/csharp/versioning/override/Program.cs#sample)]
 
 **Output**
 

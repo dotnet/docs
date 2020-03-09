@@ -22,7 +22,7 @@ To convert from a Windows Runtime stream to a .NET Framework stream, use one of 
   
 - <xref:System.IO.WindowsRuntimeStreamExtensions.AsStreamForRead%2A?displayProperty=nameWithType> converts an input stream in the Windows Runtime to a managed stream in .NET for UWP apps.
 
-The Windows Runtime offers stream types that support reading only, writing only, or reading and writing. These capabilities are maintained when you convert a Windows Runtime stream to a .NET Framework stream. Furthermore, if you convert a Windows Runtime stream to a .NET Framework stream and back, you get the original Windows Runtime instance back. 
+The Windows Runtime offers stream types that support reading only, writing only, or reading and writing. These capabilities are maintained when you convert a Windows Runtime stream to a .NET Framework stream. Furthermore, if you convert a Windows Runtime stream to a .NET Framework stream and back, you get the original Windows Runtime instance back.
 
 It’s best practice to use the conversion method that matches the capabilities of the Windows Runtime stream you want to convert. However, since <xref:Windows.Storage.Streams.IRandomAccessStream> is readable and writeable (it implements both <xref:Windows.Storage.Streams.IOutputStream> and <xref:Windows.Storage.Streams.IInputStream>), the conversion methods maintain the capabilities of the original stream. For example, using <xref:System.IO.WindowsRuntimeStreamExtensions.AsStreamForRead%2A?displayProperty=nameWithType> to convert an <xref:Windows.Storage.Streams.IRandomAccessStream> doesn't limit the converted .NET Framework stream to being readable. It's also writable.
 

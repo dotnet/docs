@@ -8,7 +8,7 @@ ms.date: 08/27/2019
 
 The [.NET Core SDK](index.md) includes a telemetry feature that collects usage data and exception information when the .NET Core CLI crashes. The .NET Core CLI comes with the .NET Core SDK and is the set of verbs that enable you to build, test, and publish your .NET Core apps. It's important that the .NET team understands how the tools are used so they can be improved. Information on failures helps the team resolve problems and fix bugs.
 
-The collected data is anonymous and published in aggregate under the [Creative Commons Attribution License](https://creativecommons.org/licenses/by/4.0/). 
+The collected data is anonymous and published in aggregate under the [Creative Commons Attribution License](https://creativecommons.org/licenses/by/4.0/).
 
 ## Scope
 
@@ -24,7 +24,7 @@ Telemetry *is collected* when using any of the [.NET Core CLI commands](index.md
 
 ## How to opt out
 
-The .NET Core SDK telemetry feature is enabled by default. To opt out of the telemetry feature, set the `DOTNET_CLI_TELEMETRY_OPTOUT` environment variable to `1` or `true`. 
+The .NET Core SDK telemetry feature is enabled by default. To opt out of the telemetry feature, set the `DOTNET_CLI_TELEMETRY_OPTOUT` environment variable to `1` or `true`.
 
 A single telemetry entry is also sent by the .NET Core SDK installer when a successful installation happens. To opt out, set the `DOTNET_CLI_TELEMETRY_OPTOUT` environment variable before you install the .NET Core SDK.
 
@@ -126,7 +126,7 @@ at Microsoft.DotNet.Cli.Program.Main(String[] args)
 
 .NET Core contributors and anyone else running a version of the .NET Core SDK that they built themselves should consider the path to their SDK source code. If a crash occurs while using a .NET Core SDK that is a custom debug build or configured with custom build symbol files, the SDK source file path from the build machine is collected as part of the stack trace and isn't hashed.
 
-Because of this, custom builds of the .NET Core SDK shouldn't be located in directories whose path names expose personal or sensitive information. 
+Because of this, custom builds of the .NET Core SDK shouldn't be located in directories whose path names expose personal or sensitive information.
 
 ## See also
 

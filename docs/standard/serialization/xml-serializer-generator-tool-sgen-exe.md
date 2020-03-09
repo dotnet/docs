@@ -44,7 +44,7 @@ sgen [options]
  The following command creates an assembly named Data.XmlSerializers.dll for serializing all the types contained in the assembly named Data.dll.  
   
 ```console  
-sgen Data.dll   
+sgen Data.dll
 ```  
   
  The Data.XmlSerializers.dll assembly can be referenced from code that needs to serialize and deserialize the types in Data.dll.  

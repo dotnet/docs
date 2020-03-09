@@ -1,6 +1,6 @@
 ---
 title: "?: operator - C# reference"
-ms.date: "11/20/2018"
+ms.date: "03/06/2020"
 f1_keywords:
   - "?:_CSharpKeyword"
   - "?_CSharpKeyword"
@@ -12,7 +12,7 @@ ms.assetid: e83a17f1-7500-48ba-8bee-2fbc4c847af4
 ---
 # ?: operator (C# reference)
 
-The conditional operator `?:`, also known as the ternary conditional operator, evaluates a Boolean expression and returns the result of one of the two expressions, depending on whether the Boolean expression evaluates to `true` or `false`. Beginning with C# 7.2, the [conditional ref expression](#conditional-ref-expression) returns the reference to the result of one of the two expressions.
+The conditional operator `?:`, also known as the ternary conditional operator, evaluates a Boolean expression and returns the result of one of the two expressions, depending on whether the Boolean expression evaluates to `true` or `false`.
 
 The syntax for the conditional operator is as follows:
 
@@ -45,11 +45,11 @@ a ? b : (c ? d : e)
 
 The following example demonstrates the usage of the conditional operator:
 
-[!code-csharp-interactive[non ref conditional](~/samples/csharp/language-reference/operators/ConditionalOperator.cs#ConditionalValue)]
+[!code-csharp-interactive[non ref conditional](snippets/ConditionalOperator.cs#ConditionalValue)]
 
 ## Conditional ref expression
 
-Beginning with C# 7.2, you can use the conditional ref expression to return the reference to the result of one of the two expressions. You can assign that reference to a [ref local](../keywords/ref.md#ref-locals) or [ref readonly local](../keywords/ref.md#ref-readonly-locals) variable, or use it as a [reference return value](../keywords/ref.md#reference-return-values) or as a [`ref` method parameter](../keywords/ref.md#passing-an-argument-by-reference).
+Beginning with C# 7.2, a [ref local](../keywords/ref.md#ref-locals) or [ref readonly local](../keywords/ref.md#ref-readonly-locals) variable can be assigned conditionally with the conditional ref expression. You can also use the conditional ref expression as a [reference return value](../keywords/ref.md#reference-return-values) or as a [`ref` method argument](../keywords/ref.md#passing-an-argument-by-reference).
 
 The syntax for the conditional ref expression is as follows:
 
@@ -63,13 +63,13 @@ In the case of the conditional ref expression, the type of `consequent` and `alt
 
 The following example demonstrates the usage of the conditional ref expression:
 
-[!code-csharp-interactive[conditional ref](~/samples/csharp/language-reference/operators/ConditionalOperator.cs#ConditionalRef)]
+[!code-csharp-interactive[conditional ref](snippets/ConditionalOperator.cs#ConditionalRef)]
 
 ## Conditional operator and an `if..else` statement
 
 Use of the conditional operator instead of an [if-else](../keywords/if-else.md) statement might result in more concise code in cases when you need conditionally to compute a value. The following example demonstrates two ways to classify an integer as negative or nonnegative:
 
-[!code-csharp[conditional and if-else](~/samples/csharp/language-reference/operators/ConditionalOperator.cs#CompareWithIf)]
+[!code-csharp[conditional and if-else](snippets/ConditionalOperator.cs#CompareWithIf)]
 
 ## Operator overloadability
 

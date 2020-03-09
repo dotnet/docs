@@ -80,7 +80,7 @@ To establish a binding, you use the <xref:System.Windows.Data.Binding> object. T
 
 As indicated by the arrow in the previous figure, the data flow of a binding can go from the binding target to the binding source (for example, the source value changes when a user edits the value of a `TextBox`) and/or from the binding source to the binding target (for example, your `TextBox` content is updated with changes in the binding source) if the binding source provides the proper notifications.
 
-You may want your app to enable users to change the data and propagate it back to the source object. Or you may not want to enable users to update the source data. You can control the flow of data by setting the <xref:System.Windows.Data.Binding.Mode?displayProperty=nameWithType>. 
+You may want your app to enable users to change the data and propagate it back to the source object. Or you may not want to enable users to update the source data. You can control the flow of data by setting the <xref:System.Windows.Data.Binding.Mode?displayProperty=nameWithType>.
 
 This figure illustrates the different types of data flow:
 

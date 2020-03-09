@@ -20,11 +20,11 @@ The [MS-XAML] specification defines the grammar XamlName to identify the set of 
 String values that are of type XamlName must conform to the following grammar:
 
 ```xaml
-XamlName ::= NameStartChar ( NameChar )* 
-NameStartChar ::= LetterCharacter | '_' 
-NameChar ::= NameStartChar | DecimalDigit | CombiningCharacter 
-LetterCharacter ::= UnicodeLu | UnicodeLl | UnicodeLo | UnicodeLt | UnicodeNl 
-DecimalDigit ::= UnicodeNd 
+XamlName ::= NameStartChar ( NameChar )*
+NameStartChar ::= LetterCharacter | '_'
+NameChar ::= NameStartChar | DecimalDigit | CombiningCharacter
+LetterCharacter ::= UnicodeLu | UnicodeLl | UnicodeLo | UnicodeLt | UnicodeNl
+DecimalDigit ::= UnicodeNd
 CombiningCharacter ::= UnicodeMn | UnicodeMc
 ```
 

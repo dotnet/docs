@@ -14,19 +14,19 @@ This example shows how to instantiate objects in the `select` clause. The code f
 This example uses the following XML document: [Sample XML File: Typical Purchase Order (LINQ to XML)](./sample-xml-file-typical-purchase-order-linq-to-xml-1.md).
 
 ```csharp
-class NameQty 
+class NameQty
 {
     public string name;
     public int qty;
     public NameQty(string n, int q)
     {
         name = n;
-        qty = q; 
+        qty = q;
     }
 };
 
 class Program {
-    public static void Main() 
+    public static void Main()
     {
         XElement po = XElement.Load("PurchaseOrder.xml");
   

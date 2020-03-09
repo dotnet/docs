@@ -27,7 +27,7 @@ The concept of reference equality applies only to reference types. Value type ob
 int a = GetOriginalValue();  
 int b = GetCurrentValue();  
   
-// Test for value equality.   
+// Test for value equality.
 if (b == a)
 {  
     // The two integers are equal.  

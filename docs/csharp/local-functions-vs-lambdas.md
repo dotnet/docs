@@ -23,7 +23,7 @@ Contrast that implementation with a version that uses lambda expressions:
 
 The local functions have names. The lambda expressions are anonymous methods
 that are assigned to variables that are `Func` or `Action` types. When you
-declare a local function, the argument types and return type are part of the 
+declare a local function, the argument types and return type are part of the
 function declaration. Instead of being part of the body of the lambda expression, the argument types and return type are part of the lambda
 expression's variable type declaration. Those two differences may
 result in clearer code.
@@ -75,7 +75,7 @@ assigned at the `return` statement.
 The analysis that enables the example analysis enables the fourth difference.
 Depending on their use, local functions can avoid heap allocations that
 are always necessary for lambda expressions. If a local function is never
-converted to a delegate, and none of the variables captured by the local function is captured by other lambdas or local functions that are converted to delegates, the compiler can avoid heap allocations. 
+converted to a delegate, and none of the variables captured by the local function is captured by other lambdas or local functions that are converted to delegates, the compiler can avoid heap allocations.
 
 Consider this async example:
 

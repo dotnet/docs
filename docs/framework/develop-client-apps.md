@@ -18,7 +18,7 @@ ms.assetid: 2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68
 
 There are several ways to develop Windows-based applications with .NET Framework. You can use any of these tools and frameworks:
 
-- [Universal Windows Platform (UWP)](https://developer.microsoft.com/windows/apps)
+- [Universal Windows Platform (UWP)](/windows/uwp/)
 - [Windows Presentation Foundation (WPF)](./wpf/index.md)
 - [Windows Forms](./winforms/index.md)
 
@@ -26,20 +26,20 @@ This section contains articles that describe how to create Windows-based applica
 
 ## Related sections
 
-[Universal Windows Platform](https://developer.microsoft.com/windows/apps)\
-Describes how to create applications for Windows 10 that you can make available to users through Microsoft Store.
+[Universal Windows Platform](/windows/uwp/)\
+Describes how to create UWP applications that you can make available to users through Microsoft Store.
 
-[.NET for UWP apps](https://msdn.microsoft.com/library/windows/apps/mt185501.aspx)\
-Describes .NET Framework support for UWP apps, which can be deployed to Windows computers and devices.
+[.NET API for UWP apps](/dotnet/api/index?view=dotnet-uwp-10.0)\
+Reference for .NET types that support UWP apps.
+  
+[Develop for Multiple Platforms](../standard/cross-platform/index.md)\
+Describes the different methods you can use .NET Framework to target multiple client app types.
+
+[Get Started with ASP.NET Web Sites](https://dotnet.microsoft.com/apps/aspnet/web-apps)\
+Describes the ways you can develop web apps using ASP.NET.
 
 [.NET API for Windows Phone Silverlight](https://docs.microsoft.com/previous-versions/windows/apps/jj207211\(v=vs.105\))\
 Lists .NET Framework APIs you can use for building apps with Windows Phone Silverlight.
-  
-[Developing for Multiple Platforms](../standard/cross-platform/index.md)\
-Describes the different methods you can use .NET Framework to target multiple client app types.
-
-[Get Started with ASP.NET Web Sites](https://www.asp.net/get-started/websites)\
-Describes the ways you can develop web apps using ASP.NET.
 
 ## See also
 

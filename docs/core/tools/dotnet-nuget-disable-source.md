@@ -6,6 +6,7 @@ ms.date: 03/09/2020
 ---
 # dotnet nuget disable source
 
+**This article applies to:** ✔️ .NET Core 3.1.200 SDK and later versions
 
 ## Name
 

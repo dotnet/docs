@@ -148,6 +148,21 @@ The `PackageReference` item lets you specify a NuGet dependency. For example, yo
 
 For more information, see [Package references in project files](/nuget/consume-packages/package-references-in-project-files).
 
+### AssetTargetFallback
+
+The `AssetTargetFallback` property lets you specify additional compatible target frameworks for projects that your project references and NuGet packages that your project consumes. For example, if you specify a package dependency using `PackageReference` but that package doesn't contain assets that are compatible with your projects's `TargetFramework`, the `AssetTargetFallback` property comes into play. The compatibility of the referenced package is rechecked using each target framework that's specified in `AssetTargetFallback`.
+
+You can set the `AssetTargetFallback` property to one or more target frameworks that are compatible with your project.
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+  ...
+  <PropertyGroup>
+    <AssetTargetFallback>netcoreapp2.0</AssetTargetFallback>
+  </PropertyGroup>
+</Project>
+```
+
 ### Pack and restore targets
 
 MSBuild 15.1 introduced `pack` and `restore` targets for creating and restoring NuGet packages as part of a build. For information about the MSBuild properties for these targets, including `PackageTargetFallback`, see [NuGet pack and restore as MSBuild targets](/nuget/reference/msbuild-targets).

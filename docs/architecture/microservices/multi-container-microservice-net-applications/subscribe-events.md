@@ -206,7 +206,7 @@ public async Task<IActionResult> UpdateProduct([FromBody]CatalogItem productToUp
       // Publish the integration event through the event bus
       _eventBus.Publish(priceChangedEvent);
 
-      integrationEventLogService.MarkEventAsPublishedAsync(
+      _integrationEventLogService.MarkEventAsPublishedAsync(
                                                 priceChangedEvent);
   }
 

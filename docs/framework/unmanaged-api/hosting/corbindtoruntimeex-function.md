@@ -40,11 +40,11 @@ Enables unmanaged hosts to load the common language runtime (CLR) into a process
   
 ```cpp  
 HRESULT CorBindToRuntimeEx (  
-    [in]  LPCWSTR      pwszVersion,   
-    [in]  LPCWSTR      pwszBuildFlavor,   
-    [in]  DWORD        startupFlags,   
-    [in]  REFCLSID     rclsid,   
-    [in]  REFIID       riid,   
+    [in]  LPCWSTR      pwszVersion,
+    [in]  LPCWSTR      pwszBuildFlavor,
+    [in]  DWORD        startupFlags,
+    [in]  REFCLSID     rclsid,
+    [in]  REFIID       riid,
     [out] LPVOID FAR  *ppv  
 );  
 ```  

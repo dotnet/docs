@@ -22,7 +22,7 @@ Instructs the common language runtime (CLR) to abort the task represented by the
 ## Syntax  
   
 ```cpp  
-HRESULT RudeAbort ();   
+HRESULT RudeAbort ();
 ```  
   
 ## Return Value  

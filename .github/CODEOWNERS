@@ -9,13 +9,13 @@
 
 # Order is important. The last matching pattern has the most precedence.
 # The folders are ordered as follows:
-# . Guides are first.
-# . .NET Core sections are next
+# . Guides
+# . .NET Core sections
 # . .NET Framework sections
 # . .NET Standard
 # . Architecture e-books
 
-# In each subsection folders are order first by depth, then alphabetically.
+# In each subsection, folders are order first by depth, then alphabetically.
 # This should make it easy to add new rules without breaking existing ones.
 
 ######## API landing page ###########
@@ -142,7 +142,7 @@
 # Exceptions
 /docs/standard/exceptions/ @tdykstra
 # GC
-/docs/standard/garbage-collection/ @BillWagner
+/docs/standard/garbage-collection/ @gewarren
 # Generics
 /docs/standard/generics/ @Thraka
 # Globalization

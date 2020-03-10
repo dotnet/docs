@@ -1,5 +1,6 @@
 ---
 title: "LINQ to XML vs. DOM"
+description: There are key differences between LINQ to XML and DOM. LINQ to XML supports functional construction and XML literals, which better show the structure of the XML trees that they build. 
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"
@@ -156,13 +157,13 @@ When using LINQ to XML, you use the <xref:System.Xml.Linq.XDocument> class only 
 
 ## Simplified handling of names and namespaces
 
-Handling names, namespaces, and namespace prefixes is generally a complex part of XML programming. LINQ to XML simplifies names and namespaces by eliminating the requirement to deal with namespace prefixes. If you want to control namespace prefixes, you can. But if you decide to not explicitly control namespace prefixes, LINQ to XML will assign namespace prefixes during serialization if they're required, or will serialize using default namespaces if they aren't. If default namespaces are used, there will be no namespace prefixes in the resulting document. For more information, see [Namespaces overview (LINQ to XML)](namespaces-overview.md).
+Handling names, namespaces, and namespace prefixes is generally a complex part of XML programming. LINQ to XML simplifies names and namespaces by eliminating the requirement to deal with namespace prefixes. If you want to control namespace prefixes, you can. But if you decide to not explicitly control namespace prefixes, LINQ to XML will assign namespace prefixes during serialization if they're required, or will serialize using default namespaces if they aren't. If default namespaces are used, there will be no namespace prefixes in the resulting document. For more information, see [Namespaces overview](namespaces-overview.md).
 
 Another problem with the DOM is that it doesn't let you change the name of a node. Instead, you have to create a new node and copy all the child nodes to it, losing the original node identity. LINQ to XML avoids this problem by enabling you to set the <xref:System.Xml.Linq.XName> property on a node.
 
 ## Static method support for loading XML
 
-LINQ to XML lets you load XML by using static methods, instead of instance methods. This simplifies loading and parsing. For more information, see [How to load XML from a file (LINQ to XML)](load-xml-file.md).
+LINQ to XML lets you load XML by using static methods, instead of instance methods. This simplifies loading and parsing. For more information, see [How to load XML from a file](load-xml-file.md).
 
 ## Removal of support for DTD constructs
 

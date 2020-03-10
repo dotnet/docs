@@ -1,6 +1,6 @@
 ---
 title: "How to validate using XSD - LINQ to XML"
-description: Learn how to use the extension methods in the System.Xml.Schema namespace to validate an XML tree against an XSD file.
+description: You can use extension methods from the System.Xml.Schema namespace to validate an XML tree against an XML Schema Definition Language (XSD) file.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"
@@ -128,7 +128,7 @@ doc2 did not validate
 
 ## Example: Validate an XML document from a file against a schema from a file
 
-The following example validates that the XML document from [Sample XML file: Customers and orders (LINQ to XML)](sample-xml-file-customers-orders.md) is valid per the schema from [Sample XSD file: Customers and orders (LINQ to XML)](sample-xsd-file-customers-orders.md). It then modifies the source XML document. It changes the `CustomerID` attribute on the first customer. After the change, orders will then refer to a customer that doesn't exist, so the XML document will no longer validate.
+The following example validates that the XML document from [Sample XML file: Customers and orders](sample-xml-file-customers-orders.md) is valid per the schema from [Sample XSD file: Customers and orders](sample-xsd-file-customers-orders.md). It then modifies the source XML document. It changes the `CustomerID` attribute on the first customer. After the change, orders will then refer to a customer that doesn't exist, so the XML document will no longer validate.
 
 ```csharp
 XmlSchemaSet schemas = new XmlSchemaSet();

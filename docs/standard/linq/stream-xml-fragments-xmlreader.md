@@ -1,6 +1,6 @@
 ---
 title: "How to stream XML fragments from an XmlReader - LINQ to XML"
-description: Learn how to stream XML fragments using an XmlReader when loading the whole XML tree into memory is not feasible.
+description: You can stream XML fragments from an XmlReader using a custom axis method in C# and Visual Basic. This is an approach that can work when loading the whole XML tree into memory is infeasible.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"
@@ -18,9 +18,9 @@ When you create an XML tree from an <xref:System.Xml.XmlReader> object, the <xre
 
 If you want to create a partial tree, you can instantiate an <xref:System.Xml.XmlReader>, position the reader on the node that you want to convert to an <xref:System.Xml.Linq.XElement> tree, and then create the <xref:System.Xml.Linq.XElement> object.
 
-The article [How to stream XML fragments with access to header information (LINQ to XML)](stream-xml-fragments-access-header-information.md) contains information on streaming a more complex document.
+The article [How to stream XML fragments with access to header information](stream-xml-fragments-access-header-information.md) contains information on streaming a more complex document.
 
-The article [How to perform streaming transform of large XML documents (LINQ to XML)](perform-streaming-transform-large-xml-documents.md) contains an example of using LINQ to XML to transform extremely large XML documents while maintaining a small memory footprint.
+The article [How to perform streaming transform of large XML documents](perform-streaming-transform-large-xml-documents.md) contains an example of using LINQ to XML to transform extremely large XML documents while maintaining a small memory footprint.
 
 ## Example: Create a custom axis method
 

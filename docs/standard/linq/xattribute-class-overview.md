@@ -1,5 +1,6 @@
 ---
 title: "XAttribute class overview"
+description: The XAttribute class represents XML attributes. Working with attributes in LINQ to XML is similar to working with elements.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"

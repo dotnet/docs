@@ -6,7 +6,7 @@ ms.assetid: e6bd4655-ce37-4003-8462-468a6fe2c40f
 # .NET Core and open source
 
 This article provides a brief overview of what .NET Core is and shows how you can find more information. To find the complete list of documentation for .NET Core, visit the [.NET Core guide](../../core/index.md).
-    
+
 ## What is .NET Core?  
 
 .NET Core is a general purpose, modular, cross-platform and open source implementation of the .NET Standard. It contains many of the same APIs as the .NET Framework (but .NET Core is a smaller set) and includes runtime, framework, compiler and tools components that support a variety of operating systems and chip targets. The .NET Core implementation was primarily driven by the ASP.NET Core workloads but also by the need and desire to have a more modern implementation. It can be used in device, cloud and embedded/IoT scenarios.  

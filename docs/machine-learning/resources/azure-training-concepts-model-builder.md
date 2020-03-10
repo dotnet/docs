@@ -23,7 +23,7 @@ A workspace is an Azure Machine Learning resource that provides a central place 
 
 To create an Azure Machine Learning workspace, the following are required:
 
-- Name: A name for your workspace between 3-33 characters. Names may only contain alphanumeric characters and hyphens. 
+- Name: A name for your workspace between 3-33 characters. Names may only contain alphanumeric characters and hyphens.
 - Region: The geographic location of the data center where your workspace and resources are deployed to. It is recommended that you choose a location close to where you or your customers are.
 - Resource group: A container that contains all related resources for an Azure solution.
 

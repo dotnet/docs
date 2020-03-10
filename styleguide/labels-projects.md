@@ -1,6 +1,6 @@
 # Labels and projects roadmap
 
-The .NET docs team makes extensive use of [GitHub labels](https://github.com/dotnet/docs/labels) to organize our work. By filtering on combinations of labels, we can quickly focus on sections of interest on the [.NET docs website](https://docs.microsoft.com/dotnet). 
+The .NET docs team makes extensive use of [GitHub labels](https://github.com/dotnet/docs/labels) to organize our work. By filtering on combinations of labels, we can quickly focus on sections of interest on the [.NET docs website](https://docs.microsoft.com/dotnet).
 
 We also use [GitHub projects](https://github.com/dotnet/docs/projects) to organize sprints and other goal-oriented epics.
 
@@ -20,7 +20,7 @@ You can combine a label from each set (guide, release, priority) to create a nar
 
 ### Find a single .NET guide
 
-We use labels for each of the architecture e-books and for each .NET Guide. 
+We use labels for each of the architecture e-books and for each .NET Guide.
 
 ![:book: guide on light green background](./images/guide.png "Prefix for architecture guide labels")
 
@@ -89,7 +89,7 @@ The .NET guides are large, so these labels further limit the scope by a section 
 
 ![:checkered_flag: Release: on dark yellow](./images/release.png "Prefix for release labels")
 
-Issues tagged for a specific release are noted with the `:checkered_flag: Release:` prefix and have a dark yellow background. 
+Issues tagged for a specific release are noted with the `:checkered_flag: Release:` prefix and have a dark yellow background.
 
 - .NET Core 2.2
 - .NET Core 3.0
@@ -108,7 +108,7 @@ There are many other labels used by the content teams to manage different classi
 
 ## Projects
 
-Contributors should check the [Projects for .NET community collaborators](https://github.com/dotnet/docs/projects/35). We've created different columns for maintenance, document updates, and new content tasks. This can be a way to find tasks of interest. (Note that the project view can be filtered using the labels described above.) 
+Contributors should check the [Projects for .NET community collaborators](https://github.com/dotnet/docs/projects/35). We've created different columns for maintenance, document updates, and new content tasks. This can be a way to find tasks of interest. (Note that the project view can be filtered using the labels described above.)
 
 We also use projects in two other ways:
 

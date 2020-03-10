@@ -139,8 +139,6 @@ The script defaults to installing the latest [long term support (LTS)](https://d
 You can download and install .NET Core directly with one of the following links:
 
 - [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.1)
-- [.NET Core 3.0 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.0)
-- [.NET Core 2.2 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.2)
 - [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.1)
 
 ## Docker

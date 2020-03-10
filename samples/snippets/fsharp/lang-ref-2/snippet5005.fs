@@ -13,8 +13,6 @@ let (|Cube|_|) (x : int) =
 let examineNumber x =
    match x with
       | Cube x -> printfn "%d is a cube" x
-      | _ -> ()
-   match x with
       | Square x -> printfn "%d is a square" x
       | _ -> ()
 

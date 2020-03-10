@@ -14,7 +14,7 @@ ms.date: 02/24/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet publish [<PROJECT>|<SOLUTION>] [-c|--configuration] 
+dotnet publish [<PROJECT>|<SOLUTION>] [-c|--configuration]
     [-f|--framework] [--force] [--interactive] [--manifest]
     [--no-build] [--no-dependencies] [--no-restore] [--nologo]
     [-o|--output] [-r|--runtime] [--self-contained]
@@ -106,7 +106,7 @@ The `dotnet publish` command's output is ready for deployment to a hosting syste
 
 - **`-v|--verbosity <LEVEL>`**
 
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Default value is `minimal`.
 
 - **`--version-suffix <VERSION_SUFFIX>`**
 

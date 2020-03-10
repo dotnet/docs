@@ -55,7 +55,7 @@ Starting in .NET Core 3.0, when a *.resx* file is colocated with a source file o
   Files *MyTypes.cs* and *MyTypes.resx* or *MyTypes.fr-FR.resx* exist in the same folder.
   
   **Generated resource manifest file name**: *Namespace.Classname.resources* or *Namespace.Classname.fr-FR.resources* (where `Namespace.Classname` is the name of the first class in *MyTypes.cs*).
-    
+
 - If none of the previous rules apply, the generated resource manifest file name is *RootNamespace.RelativePathWithDotsForSlashes.\[Culture.]resources*. The relative path is the value of the `Link` attribute of the `EmbeddedResource` element if it's set. Otherwise, the relative path is the value of the `Identity` attribute of the `EmbeddedResource` element. In Visual Studio, this is the path from the project root to the file in Solution Explorer.
 
 #### Recommended action

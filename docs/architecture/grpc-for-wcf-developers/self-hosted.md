@@ -54,7 +54,7 @@ sc create MyService binPath=C:\MyService\MyService.exe
 
 ### Log to the Windows event log
 
-The `UseWindowsService` method automatically adds a [logging](/aspnet/core/fundamentals/logging/) provider that writes log messages to the Windows event log. You can configure logging for this provider by adding an `EventLog` entry to the `Logging` section of `appsettings.json` or another configuration source. 
+The `UseWindowsService` method automatically adds a [logging](/aspnet/core/fundamentals/logging/) provider that writes log messages to the Windows event log. You can configure logging for this provider by adding an `EventLog` entry to the `Logging` section of `appsettings.json` or another configuration source.
 
 You can override the source name used in the event log by setting a `SourceName` property in these settings. If you don't specify a name, the default application name (normally the executable assembly name) will be used.
 
@@ -79,7 +79,7 @@ public static IHostBuilder CreateHostBuilder(string[] args) =>
 
 Now publish your application. The application can be either framework dependent or self-contained for the relevant Linux runtime (for example, `linux-x64`). You can publish by using one of these methods:
 
-* From Visual Studio by right-clicking the project and selecting **Publish** on the shortcut menu. 
+* From Visual Studio by right-clicking the project and selecting **Publish** on the shortcut menu.
 * From the .NET Core CLI, by using the following command:
 
   ```dotnetcli

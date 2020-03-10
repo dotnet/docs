@@ -12,7 +12,7 @@ ms.date: 12/05/2018
 
 1. Install [Visual Studio Code](https://code.visualstudio.com/).
 2. Install the [.NET Core SDK](https://dotnet.microsoft.com/download).
-3. Install the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) for Visual Studio Code. For more information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
+3. Install the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code. For more information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
 
 ## Hello World
 

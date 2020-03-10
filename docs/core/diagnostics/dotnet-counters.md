@@ -175,7 +175,7 @@ dotnet-counters monitor [-h|--help] [-p|--process-id] [--refreshInterval] [count
       request                                      100
   ```
   
-## dotnet-counters ps 
+## dotnet-counters ps
 
 Display a list of dotnet processes that can be monitored.
 

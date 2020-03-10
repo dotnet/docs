@@ -3,7 +3,7 @@ title: "Transforms Overview"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "transformations [WPF], about transformations"
-  - "classes [WPF], 2-D transform"
+  - "classes [WPF], 2D transform"
   - "transform classes [WPF], 2-D"
   - "2-D transform classes"
   - "FrameworkElement objects [WPF], rotating"
@@ -14,7 +14,7 @@ helpviewer_keywords:
 ms.assetid: 8f153d5e-ed61-4aa5-a7cd-286f0c427a13
 ---
 # Transforms Overview
-This topic describes how to use the 2-D <xref:System.Windows.Media.Transform> classes to rotate, scale, move (translate), and skew <xref:System.Windows.FrameworkElement> objects.  
+This topic describes how to use the 2D <xref:System.Windows.Media.Transform> classes to rotate, scale, move (translate), and skew <xref:System.Windows.FrameworkElement> objects.  
 
 <a name="whatIsATransformSection"></a>   
 ## What Is a Transform?  
@@ -25,7 +25,7 @@ This topic describes how to use the 2-D <xref:System.Windows.Media.Transform> cl
   
  The following table shows the structure of a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] matrix.  
   
-### A 2-D transformation matrix  
+### A 2D transformation matrix  
   
 ||||  
 |-|-|-|  
@@ -39,7 +39,7 @@ This topic describes how to use the 2-D <xref:System.Windows.Media.Transform> cl
   
 <a name="transformClassesSection"></a>   
 ## Transform Classes  
- Windows Presentation Foundation (WPF) provides the following 2-D <xref:System.Windows.Media.Transform> classes for common transformation operations:  
+ Windows Presentation Foundation (WPF) provides the following 2D <xref:System.Windows.Media.Transform> classes for common transformation operations:  
   
 |Class|Description|Example|Illustration|  
 |-----------|-----------------|-------------|------------------|  

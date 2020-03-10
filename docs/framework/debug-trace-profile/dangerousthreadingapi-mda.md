@@ -53,7 +53,7 @@ void FireMda()
 Thread t = new Thread(delegate() { Thread.Sleep(1000); });  
     t.Start();  
     // The following line activates the MDA.  
-    t.Suspend();   
+    t.Suspend();
     t.Resume();  
     t.Join();  
 }  

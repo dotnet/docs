@@ -22,10 +22,10 @@ Sets or updates the value of a custom attribute defined by a prior call to [IMet
 ## Syntax  
   
 ```cpp  
-HRESULT SetCustomAttributeValue (   
-    [in]  mdCustomAttribute       pcv,   
-    [in]  void const              *pCustomAttribute,    
-    [in]  ULONG                   cbCustomAttribute   
+HRESULT SetCustomAttributeValue (
+    [in]  mdCustomAttribute       pcv,
+    [in]  void const              *pCustomAttribute,
+    [in]  ULONG                   cbCustomAttribute
 );  
 ```  
   

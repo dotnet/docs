@@ -25,9 +25,9 @@ Gets the metadata signature of the method referenced by the specified MethodSpec
 HRESULT GetMethodSpecProps (  
    [in]  mdMethodSpec     mi,  
    [out] mdToken          *tkParent,  
-   [out] PCCOR_SIGNATURE  *ppvSigBlob,   
+   [out] PCCOR_SIGNATURE  *ppvSigBlob,
    [out] ULONG            *pcbSigBlob  
-);   
+);
 ```  
   
 ## Parameters  

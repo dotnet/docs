@@ -23,10 +23,10 @@ Completes the layout of fields for a class that has been defined by a prior call
   
 ```cpp  
 HRESULT SetClassLayout (  
-    [in]  mdTypeDef           td,   
-    [in]  DWORD               dwPackSize,   
-    [in]  COR_FIELD_OFFSET    rFieldOffsets[],   
-    [in]  ULONG               ulClassSize   
+    [in]  mdTypeDef           td,
+    [in]  DWORD               dwPackSize,
+    [in]  COR_FIELD_OFFSET    rFieldOffsets[],
+    [in]  ULONG               ulClassSize
 );  
 ```  
   

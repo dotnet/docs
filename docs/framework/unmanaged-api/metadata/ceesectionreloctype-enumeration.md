@@ -24,7 +24,7 @@ Provides values to influence the type of `reloc` instruction emitted in a call t
 typedef enum  {  
     srRelocAbsolute,  
     srRelocHighLow          = 3,  
-    srRelocHighAdj,       
+    srRelocHighAdj,
     srRelocMapToken,  
     srRelocRelative,  
     srRelocFilePos,  

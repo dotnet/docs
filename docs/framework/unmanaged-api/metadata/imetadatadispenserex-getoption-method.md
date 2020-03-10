@@ -23,7 +23,7 @@ Gets the value of the specified option for the current metadata scope. The optio
   
 ```cpp  
 HRESULT GetOption (  
-    [in]  REFGUID         optionId,   
+    [in]  REFGUID         optionId,
     [out] const VARIANT   *pValue  
 );  
 ```  

@@ -22,7 +22,7 @@ Gets a pointer to an array of tokens associated with the specified row index.
 ## Syntax  
   
 ```cpp  
-HRESULT GetCodedTokenInfo (   
+HRESULT GetCodedTokenInfo (
     [in]  ULONG       ixCdTkn,  
     [out] ULONG       *pcTokens,  
     [out] ULONG       **ppTokens,  

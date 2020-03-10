@@ -111,11 +111,11 @@ For more information, see [WPF Brushes Overview](wpf-brushes-overview.md). For a
 
 <a name="rendering"></a>
 
-## 3-D Rendering
+## 3D Rendering
 
-WPF provides a set of 3-D rendering capabilities that integrate with 2-D graphics support in WPF in order for you to create more exciting layout, [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)], and data visualization. At one end of the spectrum, WPF enables you to render 2-D images onto the surfaces of 3-D shapes, which the following illustration demonstrates.
+WPF provides a set of 3D rendering capabilities that integrate with 2-D graphics support in WPF in order for you to create more exciting layout, [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)], and data visualization. At one end of the spectrum, WPF enables you to render 2-D images onto the surfaces of 3D shapes, which the following illustration demonstrates.
 
-![Screenshot of a sample showing 3-D shapes with different textures.](./media/index/visual-three-dimensional-shape.png)
+![Screenshot of a sample showing 3D shapes with different textures.](./media/index/visual-three-dimensional-shape.png)
 
 For more information, see [3-D Graphics Overview](3-d-graphics-overview.md). For an introductory sample, see [3-D Solids Sample](https://go.microsoft.com/fwlink/?LinkID=159964).
 

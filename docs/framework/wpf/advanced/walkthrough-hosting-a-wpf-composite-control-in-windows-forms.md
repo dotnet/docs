@@ -323,4 +323,4 @@ The following image shows a WPF composite control hosted in a Windows Forms appl
 - <xref:System.Windows.Forms.Integration.WindowsFormsHost>
 - [Design XAML in Visual Studio](/visualstudio/xaml-tools/designing-xaml-in-visual-studio)
 - [Walkthrough: Hosting a Windows Forms Composite Control in WPF](walkthrough-hosting-a-windows-forms-composite-control-in-wpf.md)
-- [Walkthrough: Hosting a 3-D WPF Composite Control in Windows Forms](walkthrough-hosting-a-3-d-wpf-composite-control-in-windows-forms.md)
+- [Walkthrough: Hosting a 3D WPF Composite Control in Windows Forms](walkthrough-hosting-a-3-d-wpf-composite-control-in-windows-forms.md)

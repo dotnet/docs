@@ -44,7 +44,7 @@ The provided method is part of the `ICorDebugProcess4` interface and corresponds
  **Header:** None
 
  **Library:** None
- 
+
  **.NET Framework Versions:** [!INCLUDE[net_current_v45plus](../../../../includes/net-current-v20plus-md.md)]
 
 ## See also

@@ -23,7 +23,7 @@ Reads a specified area of memory for this process.
   
 ```cpp  
 HRESULT ReadMemory(  
-    [in]  CORDB_ADDRESS address,   
+    [in]  CORDB_ADDRESS address,
     [in]  DWORD size,  
     [out, size_is(size), length_is(size)] BYTE buffer[],  
     [out] SIZE_T *read);  

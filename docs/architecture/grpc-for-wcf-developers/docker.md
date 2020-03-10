@@ -128,7 +128,7 @@ To run the image in your local Docker instance, use the `docker run` command.
 docker run -ti -p 5000:80 stockdata
 ```
 
-The `-ti` flag connects your current terminal to the container's terminal, and runs in interactive mode. The `-p 5000:80` publishes (links) port 80 on the container to port 80 on the localhost network interface.
+The `-ti` flag connects your current terminal to the container's terminal, and runs in interactive mode. The `-p 5000:80` publishes (links) port 80 on the container to port 5000 on the localhost network interface.
 
 ## Push the image to a registry
 

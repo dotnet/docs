@@ -25,7 +25,7 @@ Before you can use a socket to communicate with remote devices, the socket must 
  The following example creates a Socket that can be used to communicate on a TCP/IP-based network, such as the Internet.  
   
 ```csharp  
-Socket s = new Socket(AddressFamily.InterNetwork,   
+Socket s = new Socket(AddressFamily.InterNetwork,
    SocketType.Stream, ProtocolType.Tcp);  
 ```  
   
@@ -37,7 +37,7 @@ Dim s as New Socket(AddressFamily.InterNetwork, _
  To use UDP instead of TCP, change the protocol type, as in the following example:  
   
 ```csharp  
-Socket s = new Socket(AddressFamily.InterNetwork,   
+Socket s = new Socket(AddressFamily.InterNetwork,
    SocketType.Dgram, ProtocolType.Udp);  
 ```  
   

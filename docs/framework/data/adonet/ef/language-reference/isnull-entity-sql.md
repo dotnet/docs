@@ -26,9 +26,9 @@ expression IS [ NOT ] NULL
  Use `IS NULL` to determine if the element of an outer join is null:  
   
 ```sql  
-select c   
-      from LOB.Customers as c left outer join LOB.Orders as o   
-                              on c.ID = o.CustomerID    
+select c
+      from LOB.Customers as c left outer join LOB.Orders as o
+                              on c.ID = o.CustomerID
       where o is not null and o.OrderQuantity = @x  
 ```  
   

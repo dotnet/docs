@@ -25,21 +25,21 @@ The type of `expression`.
 [!code-sql[DP EntityServices Concepts#SQLSERVER_AVG](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_avg)]
 
 ## CHECKSUM_AGG(collection)
- 
+
  Returns the checksum of the values in a collection. Null values are ignored.
- 
+
  **Arguments**
- 
+
  A Collection(`Int32`).
- 
+
  **Return Value**
- 
+
  An `Int32`.
- 
+
  **Example**
- 
+
 [!code-sql[DP EntityServices Concepts#SQLSERVER_CHECKSUM](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_checksum)]
-   
+
 ## COUNT(expression)
 
 Returns the number of items in a collection as an `Int32`.
@@ -60,15 +60,15 @@ An `Int32`.
 **Example**
 
 [!code-sql[DP EntityServices Concepts#SQLSERVER_COUNT](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_count)]
- 
+
 ## COUNT_BIG(expression)
- 
+
 Returns the number of items in a collection as a `bigint`.
- 
+
  **Arguments**
- 
+
  A Collection(T), where T is one of the following types:
- 
+
  |   |   |   |   |
 |---|---|---|---|
 |`Boolean`|`Double`|`DateTime`|`DateTimeOffset`|
@@ -88,7 +88,7 @@ Returns the maximum value the collection.
 
 **Arguments**
 
-A Collection(T), where T is one of the following types: 
+A Collection(T), where T is one of the following types:
 
 |   |   |   |   |
 |---|---|---|---|
@@ -109,7 +109,7 @@ Returns the minimum value in a collection.
 
 **Arguments**
 
-A Collection(T), where T is one of the following types: 
+A Collection(T), where T is one of the following types:
 
 |   |   |   |   |
 |---|---|---|---|
@@ -202,7 +202,7 @@ A `Double`.
 
 **Example**
 
-[!code-sql[DP EntityServices Concepts#SQLSERVER_VARP](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_varp)] 
+[!code-sql[DP EntityServices Concepts#SQLSERVER_VARP](~/samples/snippets/tsql/VS_Snippets_Data/dp entityservices concepts/tsql/entitysql.sql#sqlserver_varp)]
   
 ## See also
 

@@ -36,7 +36,7 @@ Module Module1
    End Sub  
   
    Private Function GetConnectionString() As String  
-      ' To avoid storing the connection string in your code,    
+      ' To avoid storing the connection string in your code,
       ' you can retrieve it from a configuration file.  
       Return "Data Source=(local);Database=AdventureWorks;" _  
          & "Integrated Security=true;"  

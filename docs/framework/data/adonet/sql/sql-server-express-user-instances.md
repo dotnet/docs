@@ -97,11 +97,11 @@ private static void OpenSqlConnection()
     // Retrieve the connection string.  
     string connectionString = GetConnectionString();  
   
-    using (SqlConnection connection =   
+    using (SqlConnection connection =
         new SqlConnection(connectionString))  
     {  
         connection.Open();  
-        Console.WriteLine("ConnectionString: {0}",   
+        Console.WriteLine("ConnectionString: {0}",
              connection.ConnectionString);  
     }  
 }  

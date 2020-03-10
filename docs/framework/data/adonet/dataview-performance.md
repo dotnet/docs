@@ -59,7 +59,7 @@ GridView1.DataBind()
 ```csharp  
 if (Cache["ordersView"] == null)  
 {  
-   // Fill the DataSet.                  
+   // Fill the DataSet.
    DataSet dataSet = FillDataSet();  
   
    DataTable orders = dataSet.Tables["SalesOrderHeader"];  

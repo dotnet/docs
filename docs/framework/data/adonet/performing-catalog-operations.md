@@ -27,11 +27,11 @@ command.ExecuteNonQuery()
   
 ```csharp  
 // Assumes connection is a valid SqlConnection.  
-string queryString = "CREATE PROCEDURE InsertCategory  " +   
+string queryString = "CREATE PROCEDURE InsertCategory  " +
     "@CategoryName nchar(15), " +  
     "@Identity int OUT " +  
-    "AS " +   
-    "INSERT INTO Categories (CategoryName) VALUES(@CategoryName) " +   
+    "AS " +
+    "INSERT INTO Categories (CategoryName) VALUES(@CategoryName) " +
     "SET @Identity = @@Identity " +  
     "RETURN @@ROWCOUNT";  
   

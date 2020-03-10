@@ -26,7 +26,7 @@ Dim connectionString As String = "Data Source=MSSQL1;" & _
 ```  
   
 ```csharp  
-string connectionString = "Data Source=MSSQL1;" +   
+string connectionString = "Data Source=MSSQL1;" +
     "Initial Catalog=AdventureWorks;Integrated Security=SSPI;" +  
     "MultipleActiveResultSets=True";  
 ```  
@@ -40,7 +40,7 @@ Dim connectionString As String = "Data Source=MSSQL1;" & _
 ```  
   
 ```csharp  
-string connectionString = "Data Source=MSSQL1;" +   
+string connectionString = "Data Source=MSSQL1;" +
     "Initial Catalog=AdventureWorks;Integrated Security=SSPI;" +  
     "MultipleActiveResultSets=False";  
 ```  

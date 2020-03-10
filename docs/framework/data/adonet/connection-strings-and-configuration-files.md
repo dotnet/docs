@@ -22,8 +22,8 @@ Embedding connection strings in your application's code can lead to security vul
   <configuration>  
     <connectionStrings>  
       <clear />  
-      <add name="Name"   
-       providerName="System.Data.ProviderName"   
+      <add name="Name"
+       providerName="System.Data.ProviderName"
        connectionString="Valid Connection String;" />  
     </connectionStrings>  
   </configuration>  
@@ -39,8 +39,8 @@ Embedding connection strings in your application's code can lead to security vul
   
 ```xml  
 <connectionStrings>  
-  <add name="Name"   
-   providerName="System.Data.ProviderName"   
+  <add name="Name"
+   providerName="System.Data.ProviderName"
    connectionString="Valid Connection String;" />  
 </connectionStrings>  
 ```  
@@ -118,9 +118,9 @@ Embedding connection strings in your application's code can lead to security vul
 ```xml  
 <configProtectedData defaultProvider="RsaProtectedConfigurationProvider">  
   <providers>  
-    <add name="RsaProtectedConfigurationProvider"   
+    <add name="RsaProtectedConfigurationProvider"
       type="System.Configuration.RsaProtectedConfigurationProvider, ... />  
-    <add name="DataProtectionConfigurationProvider"   
+    <add name="DataProtectionConfigurationProvider"
       type="System.Configuration.DpapiProtectedConfigurationProvider, ... />  
   </providers>  
 </configProtectedData>  

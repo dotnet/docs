@@ -56,14 +56,14 @@ public void DoTransactionalWork()
      }  
      finally  
      {  
-          //Restore the ambient transaction   
+          //Restore the ambient transaction
           Transaction.Current = oldAmbient;  
      }  
 }  
 void OnCommitted(IAsyncResult asyncResult)  
 {  
      CommittableTransaction committableTransaction;  
-     committableTransaction = asyncResult as CommittableTransaction;     
+     committableTransaction = asyncResult as CommittableTransaction;
      Debug.Assert(committableTransaction != null);  
      try  
      {  

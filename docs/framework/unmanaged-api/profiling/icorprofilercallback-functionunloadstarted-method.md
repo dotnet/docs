@@ -23,7 +23,7 @@ Notifies the profiler that the runtime has started to unload a function.
   
 ```cpp  
 HRESULT FunctionUnloadStarted(  
-    [in] FunctionID functionId);   
+    [in] FunctionID functionId);
 ```  
   
 ## Parameters

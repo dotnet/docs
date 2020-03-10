@@ -2,7 +2,7 @@
 title: "How to: Inspect assembly contents using MetadataLoadContext"
 description: "Learn how to use MetadataLoadContext, the API which enables you to load .NET assemblies for inspection purposes"
 author: MSDN-WhiteKnight
-ms.date: 
+ms.date: 03/10/2020
 ms.technology: dotnet-standard
 ---
 # How to: Inspect assembly contents using MetadataLoadContext
@@ -23,8 +23,12 @@ var resolver = new PathAssemblyResolver(new string[]{"ExampleAssembly.dll", type
 
 ## Create MetadataLoadContext
 
-To create the <xref:System.Reflection.MetadataLoadContext>, invoke its constructor <xref:System.Reflection.MetadataLoadContext.%23ctor%28System.Reflection.MetadataAssemblyResolver%2CSystem.String%29>, passing the previously created <xref:System.Reflection.MetadataAssemblyResolver> as the first parameter and the core assembly name as the second parameter. You can omit the core assembly name, in which case the constructor will attempt to use default names: "mscorlib", "System.Runtime", or "netstandard". 
+To create the <xref:System.Reflection.MetadataLoadContext>, invoke its constructor <xref:System.Reflection.MetadataLoadContext.%23ctor%28System.Reflection.MetadataAssemblyResolver%2CSystem.String%29>, passing the previously created <xref:System.Reflection.MetadataAssemblyResolver> as the first parameter and the core assembly name as the second parameter. You can omit the core assembly name, in which case the constructor will attempt to use default names: "mscorlib", "System.Runtime", or "netstandard".
 
 After you've created the context, you can load assemblies into it using methods such as <xref:System.Reflection.MetadataLoadContext.LoadFromAssemblyPath%2A>. You can use all reflection APIs on loaded assemblies, except ones that involve code execution. Note that the <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> method does involve the execution of constructors, so you should use the <xref:System.Reflection.MemberInfo.GetCustomAttributesData%2A> method instead when you need to examine custom attributes in the <xref:System.Reflection.MetadataLoadContext>.
 
 ## Example
+
+The following code sample loads the specified assembly into the <xref:System.Reflection.MetadataLoadContext> and outputs its attributes and defined types into the console:
+
+[!code-csharp[](~/samples/core/assembly/MetadataLoadContext/Program.cs)]

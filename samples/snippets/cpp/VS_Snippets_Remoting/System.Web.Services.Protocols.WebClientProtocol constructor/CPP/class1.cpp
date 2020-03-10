@@ -11,7 +11,7 @@ using namespace System::Web::Services;
 int main(){}
 
 // This class derives from System::Web::Services::Protocols.WebClientProtocol
-// as if the user is implemented his own protocol.
+// as if the user implemented their own protocol.
 // It demonstrates the use of WebClientProtocol's constructor.
 
 // <Snippet1>

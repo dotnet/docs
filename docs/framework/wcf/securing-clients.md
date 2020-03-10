@@ -20,7 +20,7 @@ In Windows Communication Foundation (WCF), the service dictates the security req
 ## Validating Security  
  Metadata sources can be divided into two broad categories: trust sources and untrusted sources. If you trust a source and have downloaded the client code and other metadata from that source's secure MEX endpoint, then you can build the client, supply it with the right credentials, and run it with no other concerns.  
   
- However, if you elect to download a client and metadata from a source that you know little about, be sure to validate the security measures the code uses. For example, you must not simply create a client that sends your personal or financial information to a service unless the service demands confidentiality and integrity (at the very least). You should trust the owner of the service to the extent that you are willing to disclose such information because such information will be visible to him or her.  
+ However, if you elect to download a client and metadata from a source that you know little about, be sure to validate the security measures the code uses. For example, you must not simply create a client that sends your personal or financial information to a service unless the service demands confidentiality and integrity (at the very least). You should trust the owner of the service to the extent that you are willing to disclose such information, because such information will be visible to them.  
   
  As a rule, therefore, when using code and metadata from an untrusted source, check the code and metadata to ensure that it meets the security level that you require.  
   

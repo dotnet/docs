@@ -87,7 +87,7 @@ Private Sub OpenSqlConnection()
   
     Using connection As New SqlConnection(connectionString)  
         connection.Open()  
-        Console.WriteLine("ConnectionString: {0}", _  '
+        Console.WriteLine("ConnectionString: {0}", _  
            connection.ConnectionString)  
     End Using  
 End Sub  
@@ -150,4 +150,3 @@ private static void OpenSqlConnection()
 - [Connection Strings](../connection-strings.md)
 - [Connecting to a Data Source](../connecting-to-a-data-source.md)
 - [ADO.NET Overview](../ado-net-overview.md)
-'

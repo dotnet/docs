@@ -23,11 +23,11 @@ ms.assetid: 3584c0a1-9cd0-4968-8b63-b06390890ef6
   
  Applications can also register other client-side providers.  
   
-<a name="Distributing_Client-Side_Providers"></a>   
+<a name="Distributing_Client-Side_Providers"></a>
 ## Distributing Client-Side Providers  
  [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] expects to find client-side providers in a managed-code assembly. The namespace in this assembly should have the same name as the assembly. For example, an assembly called ContosoProxies.dll would contain the ContosoProxies namespace. Within the namespace, create a <xref:UIAutomationClientsideProviders.UIAutomationClientSideProviders> class. In the implementation of the static <xref:UIAutomationClientsideProviders.UIAutomationClientSideProviders.ClientSideProviderDescriptionTable> field, create an array of <xref:System.Windows.Automation.ClientSideProviderDescription> structures describing the providers.  
   
-<a name="Registering_and_Configuring_Client-Side_Providers"></a>   
+<a name="Registering_and_Configuring_Client-Side_Providers"></a>
 ## Registering and Configuring Client-Side Providers  
  Client-side providers in a dynamic-link library (DLL) are loaded by calling <xref:System.Windows.Automation.ClientSettings.RegisterClientSideProviderAssembly%2A>. No further action is required by a client application to make use of the providers.  
   

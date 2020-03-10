@@ -16,7 +16,7 @@ Starting with apps that target the .NET Framework 4.6.1,  the <xref:System.Ident
   
 ```xml  
 <runtime>  
-   <AppContextSwitchOverrides value="Switch.System.IdentityModel.DisableMultipleDNSEntriesInSANCertificate=true" />   
+   <AppContextSwitchOverrides value="Switch.System.IdentityModel.DisableMultipleDNSEntriesInSANCertificate=true" />
 </runtime>  
 ```  
   
@@ -24,7 +24,7 @@ Starting with apps that target the .NET Framework 4.6.1,  the <xref:System.Ident
   
 ```xml  
 <runtime>  
-    <AppContextSwitchOverrides value="Switch.System.IdentityModel.DisableMultipleDNSEntriesInSANCertificate=false" />   
+    <AppContextSwitchOverrides value="Switch.System.IdentityModel.DisableMultipleDNSEntriesInSANCertificate=false" />
 </runtime>  
 ```  
   

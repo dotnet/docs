@@ -10,7 +10,7 @@ The `out` keyword causes arguments to be passed by reference. It makes the forma
   
 [!code-csharp-interactive[cs-out-keyword](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/OutParameterModifier.cs#1)]  
 
-> [!NOTE] 
+> [!NOTE]
 > The `out` keyword can also be used with a generic type parameter to specify that the type parameter is covariant. For more information on the use of the `out` keyword in this context, see [out (Generic Modifier)](out-generic-modifier.md).
   
 Variables passed as `out` arguments do not have to be initialized before being passed in a method call. However, the called method is required to assign a value before the method returns.  
@@ -20,7 +20,7 @@ The `in`, `ref`, and `out` keywords are not considered part of the method signat
 ```csharp
 class CS0663_Example
 {
-    // Compiler error CS0663: "Cannot define overloaded 
+    // Compiler error CS0663: "Cannot define overloaded
     // methods that differ only on ref and out".
     public void SampleMethod(out int i) { }
     public void SampleMethod(ref int i) { }
@@ -32,7 +32,7 @@ Overloading is legal, however, if one method takes a `ref`, `in`, or `out` argum
 [!code-csharp[cs-out-keyword](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/OutParameterModifier.cs#2)]  
 
 The compiler chooses the best overload by matching the parameter modifiers at the call site to the parameter modifiers used in the method call.
- 
+
 Properties are not variables and therefore cannot be passed as `out` parameters.
   
 You can't use the `in`, `ref`, and `out` keywords for the following kinds of methods:  
@@ -41,7 +41,7 @@ You can't use the `in`, `ref`, and `out` keywords for the following kinds of met
   
 - Iterator methods, which include a [yield return](./yield.md) or `yield break` statement.  
 
-## Declaring `out` parameters   
+## Declaring `out` parameters
 
 Declaring a method with `out` arguments is a classic workaround to return multiple values. Beginning with C# 7.0, consider [tuples](../../tuples.md) for similar scenarios. The following example uses `out` to return three variables with a single method call. Note that the third argument is assigned to null. This enables methods to return values optionally.  
   
@@ -56,11 +56,11 @@ In C# 6 and earlier, you must declare a variable in a separate statement before 
 Starting with C# 7.0, you can declare the `out` variable in the argument list of the method call, rather than in a separate variable declaration. This produces more compact, readable code, and also prevents you from inadvertently assigning a value to the variable before the method call. The following example is like the previous example, except that it defines the `number` variable in the call to the [Int32.TryParse](xref:System.Int32.TryParse(System.String,System.Int32@)) method.
 
 [!code-csharp-interactive[cs-out-keyword](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/OutParameterModifier.cs#5)]  
-   
+
 In the previous example, the `number` variable is strongly typed as an `int`. You can also declare an implicitly typed local variable, as the following example does.
 
 [!code-csharp-interactive[cs-out-keyword](../../../../samples/snippets/csharp/language-reference/keywords/in-ref-out-modifier/OutParameterModifier.cs#6)]  
-   
+
 ## C# Language Specification  
 [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   

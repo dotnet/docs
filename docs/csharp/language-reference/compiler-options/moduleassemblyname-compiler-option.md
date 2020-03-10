@@ -50,11 +50,11 @@ using System.Runtime.CompilerServices;
   
 [assembly:InternalsVisibleTo ("csman_an_assembly")]  
   
-class An_Internal_Class   
+class An_Internal_Class
 {  
-    public void Test()   
-    {   
-        Console.WriteLine("An_Internal_Class.Test called");   
+    public void Test()
+    {
+        Console.WriteLine("An_Internal_Class.Test called");
     }  
 }  
 ```  

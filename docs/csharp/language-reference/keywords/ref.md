@@ -35,7 +35,7 @@ Members of a class can't have signatures that differ only by `ref`, `in`, or `ou
 ```csharp
 class CS0663_Example
 {
-    // Compiler error CS0663: "Cannot define overloaded 
+    // Compiler error CS0663: "Cannot define overloaded
     // methods that differ only on ref and out".
     public void SampleMethod(out int i) { }
     public void SampleMethod(ref int i) { }
@@ -113,7 +113,7 @@ Also beginning with C# 7.3, you can reassign a ref local or ref readonly local v
 
 ## Ref readonly locals
 
-A ref readonly local is used to refer to values returned by the method or property that has `ref readonly` in its signature and uses `return ref`. A `ref readonly` variable combines the properties of a `ref` local variable with a `readonly` variable: it is an alias to the storage it's assigned to, and it cannot be modified. 
+A ref readonly local is used to refer to values returned by the method or property that has `ref readonly` in its signature and uses `return ref`. A `ref readonly` variable combines the properties of a `ref` local variable with a `readonly` variable: it is an alias to the storage it's assigned to, and it cannot be modified.
 
 ## A ref returns and ref locals example
 
@@ -134,7 +134,7 @@ The goal of keeping a `ref struct` type as a stack-allocated variable introduces
 
 - You can't box a `ref struct`. You cannot assign a `ref struct` type to a variable of type `object`, `dynamic`, or any interface type.
 - `ref struct` types cannot implement interfaces.
-- You can't declare a `ref struct` as a field member of a class or a normal struct. This includes declaring an auto-implemented property, which creates a compiler generated backing field. 
+- You can't declare a `ref struct` as a field member of a class or a normal struct. This includes declaring an auto-implemented property, which creates a compiler generated backing field.
 - You cannot declare local variables that are `ref struct` types in async methods. You can declare them in synchronous methods that return <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601> or `Task`-like types.
 - You cannot declare `ref struct` local variables in iterators.
 - You cannot capture `ref struct` variables in lambda expressions or local functions.

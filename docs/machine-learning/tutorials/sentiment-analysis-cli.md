@@ -5,7 +5,7 @@ author: cesardl
 ms.author: cesardl
 ms.date: 12/23/2019
 ms.custom: mvc
-ms.topic: tutorial
+ms.topic: tutorial,mlnet-tooling
 #Customer intent: As a developer, I want to automatically generate an ML model and related C# code from my own data.
 ---
 

@@ -16,7 +16,7 @@ Specifies the assembly that provides the application domain manager for the defa
 ## Syntax  
   
 ```xml  
-<appDomainManagerAssembly   
+<appDomainManagerAssembly
    value="assembly display name" />  
 ```  
   
@@ -59,7 +59,7 @@ Specifies the assembly that provides the application domain manager for the defa
 <configuration>  
    <runtime>  
       <appDomainManagerType value="MyMgr" />  
-      <appDomainManagerAssembly   
+      <appDomainManagerAssembly
          value="AdMgrExample, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6856bccf150f00b3" />  
    </runtime>  
 </configuration>  

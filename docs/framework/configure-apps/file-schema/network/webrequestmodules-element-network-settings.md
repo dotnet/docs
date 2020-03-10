@@ -19,7 +19,7 @@ Specifies modules to use to request information from network hosts.
 ## Syntax  
   
 ```xml  
-<webRequestModules>   
+<webRequestModules>
 </webRequestModules>  
 ```  
   

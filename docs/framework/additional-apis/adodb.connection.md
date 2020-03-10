@@ -14,7 +14,7 @@ api_type:
 
 ```csharp
 [GuidAttribute("00000550-0000-0010-8000-00AA006D2EA4")]
-public interface Connection : _Connection, 
+public interface Connection : _Connection,
   ConnectionEvents_Event
 ```
 

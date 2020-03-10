@@ -89,11 +89,11 @@ The command performs an action. For example, `dotnet build` builds code. `dotnet
 
 ### Arguments
 
-The arguments you pass on the command line are the arguments to the command invoked. For example when you execute `dotnet publish my_app.csproj`, the `my_app.csproj` argument indicates the project to publish and is passed to the `publish` command.
+The arguments you pass on the command line are the arguments to the command invoked. For example, when you execute `dotnet publish my_app.csproj`, the `my_app.csproj` argument indicates the project to publish and is passed to the `publish` command.
 
 ### Options
 
-The options you pass on the command line are the options to the command invoked. For example when you execute `dotnet publish --output /build_output`, the `--output` option and its value are passed to the `publish` command.
+The options you pass on the command line are the options to the command invoked. For example, when you execute `dotnet publish --output /build_output`, the `--output` option and its value are passed to the `publish` command.
 
 ## See also
 

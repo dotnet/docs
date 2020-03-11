@@ -33,7 +33,7 @@ Microsoft Windows applications often depend on files that contain non-executable
   
  This topic describes how to configure and use application data files.  
 
-<a name="Resource_Files"></a>   
+<a name="Resource_Files"></a>
 ## Resource Files  
  If an application data file must always be available to an application, the only way to guarantee availability is to compile it into an application's main executable assembly or one of its referenced assemblies. This type of application data file is known as a *resource file*.  
   
@@ -110,7 +110,7 @@ Microsoft Windows applications often depend on files that contain non-executable
 > [!NOTE]
 > If a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file is configured as a `Resource` item, and does not have a code-behind file, the raw [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] is compiled into an assembly rather than a binary version of the raw [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)].  
   
-<a name="Content_Files"></a>   
+<a name="Content_Files"></a>
 ## Content Files  
  A *content file* is distributed as a loose file alongside an executable assembly. Although they are not compiled into an assembly, assemblies are compiled with metadata that establishes an association with each content file.  
   
@@ -165,7 +165,7 @@ Microsoft Windows applications often depend on files that contain non-executable
   
  [!code-xaml[WPFAssemblyResourcesSnippets#LoadPageContentFileFromXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFAssemblyResourcesSnippets/CSharp/ResourcesSample/ApplicationGetContentStreamSnippetWindow.xaml#loadpagecontentfilefromxaml)]  
   
-<a name="Site_of_Origin_Files"></a>   
+<a name="Site_of_Origin_Files"></a>
 ## Site of Origin Files  
  Resource files have an explicit relationship with the assemblies that they are distributed alongside, as defined by the <xref:System.Windows.Resources.AssemblyAssociatedContentFileAttribute>. But, there are times when you may want to establish either an implicit or non-existent relationship between an assembly and an application data file, including when:  
   
@@ -227,7 +227,7 @@ Microsoft Windows applications often depend on files that contain non-executable
   
  [!code-xaml[WPFAssemblyResourcesSnippets#LoadPageSOOFileFromXAML](~/samples/snippets/csharp/VS_Snippets_Wpf/WPFAssemblyResourcesSnippets/CSharp/ResourcesSample/SOOPage.xaml#loadpagesoofilefromxaml)]  
   
-<a name="Rebuilding_after_Changing_Build_Type"></a>   
+<a name="Rebuilding_after_Changing_Build_Type"></a>
 ## Rebuilding After Changing Build Type  
  After you change the build type of an application data file, you need to rebuild the entire application to ensure those changes are applied. If you only build the application, the changes are not applied.  
   

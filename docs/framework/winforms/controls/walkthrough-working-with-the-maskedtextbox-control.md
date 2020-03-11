@@ -46,7 +46,7 @@ Tasks illustrated in this walkthrough include:
 2. Create an event handler for the <xref:System.Windows.Forms.MaskedTextBox.MaskInputRejected> event that raises the <xref:System.Windows.Forms.ToolTip> when an input error occurs. The balloon tip remains visible for five seconds, or until the user clicks it.  
   
     ```csharp  
-    public void Form1_Load(Object sender, EventArgs e)   
+    public void Form1_Load(Object sender, EventArgs e)
     {  
         ... // Other initialization code  
         maskedTextBox1.Mask = "00/00/0000";  

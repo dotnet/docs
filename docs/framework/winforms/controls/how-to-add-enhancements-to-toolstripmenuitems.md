@@ -81,8 +81,8 @@ You can enhance the usability of <xref:System.Windows.Forms.MenuStrip> and <xref
     Me.menuStrip1.Items.Add(New ToolStripMenuItem() _  
     {Me.fileToolStripMenuItem})  
   
-    ' This code adds the New and Open menu commands, a separator bar,   
-    ' and the Save and Exit menu commands to the top-level File menu,   
+    ' This code adds the New and Open menu commands, a separator bar,
+    ' and the Save and Exit menu commands to the top-level File menu,
     ' in that order.  
     Me.fileToolStripMenuItem.DropDownItems.AddRange(New _  
     ToolStripMenuItem() {Me.newToolStripMenuItem, _  
@@ -95,8 +95,8 @@ You can enhance the usability of <xref:System.Windows.Forms.MenuStrip> and <xref
     this.menuStrip1.Items.Add(new ToolStripItem[]_  
     {this.fileToolStripMenuItem});  
   
-    // This code adds the New and Open menu commands, a separator bar,   
-    // and the Save and Exit menu commands to the top-level File menu,   
+    // This code adds the New and Open menu commands, a separator bar,
+    // and the Save and Exit menu commands to the top-level File menu,
     // in that order.  
     this.fileToolStripMenuItem.DropDownItems.AddRange(new _  
     ToolStripItem[] {  

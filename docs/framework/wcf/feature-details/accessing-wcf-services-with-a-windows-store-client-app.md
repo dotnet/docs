@@ -62,23 +62,23 @@ static partial void Configure(System.ServiceModel.Description.ServiceEndpoint se
   
 ```csharp  
 public partial class Service1Client : System.ServiceModel.ClientBase<MetroWcfClient.ServiceRefMultiEndpt.IService1>, MetroWcfClient.ServiceRefMultiEndpt.IService1  
-    {   
-        static partial void Configure(System.ServiceModel.Description.ServiceEndpoint serviceEndpoint,   
+    {
+        static partial void Configure(System.ServiceModel.Description.ServiceEndpoint serviceEndpoint,
             System.ServiceModel.Description.ClientCredentials clientCredentials)  
         {  
-            if (serviceEndpoint.Name ==   
+            if (serviceEndpoint.Name ==
                     ServiceRefMultiEndpt.Service1Client.EndpointConfiguration.BasicHttpBinding_IService1.ToString())  
             {  
                 serviceEndpoint.Binding.SendTimeout = new System.TimeSpan(0, 1, 0);  
             }  
-            else if (serviceEndpoint.Name ==   
+            else if (serviceEndpoint.Name ==
                     ServiceRefMultiEndpt.Service1Client.EndpointConfiguration.BasicHttpBinding_IService11.ToString())  
             {  
                 serviceEndpoint.Binding.SendTimeout = new System.TimeSpan(0, 1, 0);  
                 clientCredentials.UserName.UserName = "username1";  
                 clientCredentials.UserName.Password = "password";  
             }  
-            else if (serviceEndpoint.Name ==   
+            else if (serviceEndpoint.Name ==
                     ServiceRefMultiEndpt.Service1Client.EndpointConfiguration.NetTcpBinding_IService1.ToString())  
             {  
                 serviceEndpoint.Binding.Name = "MyTcpBinding";  

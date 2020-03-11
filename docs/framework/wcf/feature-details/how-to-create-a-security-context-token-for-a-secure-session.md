@@ -94,7 +94,7 @@ By using a stateful security context token (SCT) in a secure session, the sessio
 <customBinding>  
   <binding name="Cancellation">  
        <textMessageEncoding />  
-        <security   
+        <security
             requireSecurityContextCancellation="false">  
               <secureConversationBootstrap />  
       </security>  

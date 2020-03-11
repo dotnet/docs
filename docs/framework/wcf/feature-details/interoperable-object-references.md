@@ -20,7 +20,7 @@ public class X
     public SomeClass B = someInstance;  
 }  
   
-public class SomeClass   
+public class SomeClass
 {  
 }  
 ```  
@@ -50,17 +50,17 @@ public class SomeClass
   
 ```csharp
 [DataContract(IsReference=true)]
-public class X   
+public class X
 {  
-     SomeClass someInstance = new SomeClass(); 
+     SomeClass someInstance = new SomeClass();
      [DataMember]
      public SomeClass A = someInstance;
-     [DataMember] 
+     [DataMember]
      public SomeClass B = someInstance;
 }
   
-public class SomeClass 
-{   
+public class SomeClass
+{
 }  
 ````
 
@@ -70,7 +70,7 @@ public class SomeClass
 <X>  
     <A id="1">
         <Value>contents of A</Value>  
-    </A> 
+    </A>
     <B ref="1"></B>  
 </X>
 ```  

@@ -66,8 +66,8 @@ You can bind data to a <xref:System.Windows.Forms.MaskedTextBox> control just as
         dataConnect.Fill(employeesTable, "Employees");  
   
         // Now bind MaskedTextBox to appropriate field. Note that we must create the Binding objects  
-        // before adding them to the control - otherwise, we won't get a Format event on the   
-        // initial load.   
+        // before adding them to the control - otherwise, we won't get a Format event on the
+        // initial load.
         try  
         {  
             currentBinding = new Binding("Text", employeesTable, "Employees.FirstName");  
@@ -114,7 +114,7 @@ You can bind data to a <xref:System.Windows.Forms.MaskedTextBox> control just as
         DataConnect.Fill(EmployeesTable, "Employees")  
   
         ' Now bind MaskedTextBox to appropriate field. Note that we must create the Binding objects  
-        ' before adding them to the control - otherwise, we won't get a Format event on the   
+        ' before adding them to the control - otherwise, we won't get a Format event on the
         ' initial load.  
         Try  
             CurrentBinding = New Binding("Text", EmployeesTable, "Employees.FirstName")  
@@ -138,10 +138,10 @@ You can bind data to a <xref:System.Windows.Forms.MaskedTextBox> control just as
         String ext;  
   
         DataRowView currentRow = (DataRowView)BindingContext[employeesTable, "Employees"].Current;  
-        if (currentRow["Extension"] == null)   
+        if (currentRow["Extension"] == null)
         {  
             ext = "";  
-        } else   
+        } else
         {  
             ext = currentRow["Extension"].ToString();  
         }  
@@ -157,7 +157,7 @@ You can bind data to a <xref:System.Windows.Forms.MaskedTextBox> control just as
         String ext = phoneNumberAndExt.Substring(extIndex).Trim();  
         String phoneNumber = phoneNumberAndExt.Substring(0, extIndex).Trim();  
   
-        //Get the current binding object, and set the new extension manually.   
+        //Get the current binding object, and set the new extension manually.
         DataRowView currentRow = (DataRowView)BindingContext[employeesTable, "Employees"].Current;  
         // Remove the "x" from the extension.  
         currentRow["Extension"] = ext.Substring(1);  
@@ -188,7 +188,7 @@ You can bind data to a <xref:System.Windows.Forms.MaskedTextBox> control just as
         Dim Ext As String = PhoneNumberAndExt.Substring(ExtIndex).Trim()  
         Dim PhoneNumber As String = PhoneNumberAndExt.Substring(0, ExtIndex).Trim()  
   
-        ' Get the current binding object, and set the new extension manually.   
+        ' Get the current binding object, and set the new extension manually.
         Dim CurrentRow As DataRowView = CType(Me.BindingContext(EmployeesTable, "Employees").Current, DataRowView)  
         ' Remove the "x" from the extension.  
         CurrentRow("Extension") = CObj(Ext.Substring(1))  

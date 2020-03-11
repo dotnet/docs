@@ -15,7 +15,7 @@ This topic explains how to configure tracking for a [!INCLUDE[netfx_current_long
        <serviceBehaviors>  
          <behavior>  
            <etwTracking profileName="Sample Tracking Profile" />  
-         </behavior>              
+         </behavior>
        </serviceBehaviors>  
     <behaviors>  
     ```  
@@ -27,7 +27,7 @@ This topic explains how to configure tracking for a [!INCLUDE[netfx_current_long
   
     ```xml  
     <system.serviceModel>  
-        <tracking>   
+        <tracking>
          <trackingProfile name="Sample Tracking Profile">  
             <workflow activityDefinitionId="*">  
                <workflowInstanceQueries>  
@@ -39,7 +39,7 @@ This topic explains how to configure tracking for a [!INCLUDE[netfx_current_long
                 </workflowInstanceQuery>  
              </workflowInstanceQueries>  
            </workflow>  
-         </trackingProfile>   
+         </trackingProfile>
        </tracking>  
     </system.serviceModel>  
     ```  

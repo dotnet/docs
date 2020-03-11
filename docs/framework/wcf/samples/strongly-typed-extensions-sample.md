@@ -21,10 +21,10 @@ The sample uses the <xref:System.ServiceModel.Syndication.SyndicationFeed> class
          This is a response to the original entry</summary>  
     <updated>2006-03-01T12:12:13Z</updated>  
     <link href="http://www.example.org/entries/1/2" />  
-    <in-reply-to p3:ref="tag:example.org,2005:1"   
-                 p3:href="http://www.example.org/entries/1"   
-                 p3:type="application/xhtml+xml"   
-                 xmlns:p3="http://contoso.org/syndication/thread/1.0"   
+    <in-reply-to p3:ref="tag:example.org,2005:1"
+                 p3:href="http://www.example.org/entries/1"
+                 p3:type="application/xhtml+xml"
+                 xmlns:p3="http://contoso.org/syndication/thread/1.0"
                  xmlns="http://contoso.org/syndication/thread/1.0">  
       <anotherElement xmlns="http://www.w3.org/2005/Atom">  
                      Some more data</anotherElement>  
@@ -44,7 +44,7 @@ The sample uses the <xref:System.ServiceModel.Syndication.SyndicationFeed> class
 public class InReplyToElement : IXmlSerializable  
 {  
     internal const string ElementName = "in-reply-to";  
-    internal const string NsUri =   
+    internal const string NsUri =
                   "http://contoso.org/syndication/thread/1.0";  
     private Dictionary<XmlQualifiedName, string> extensionAttributes;  
     private Collection<XElement> extensionElements;  
@@ -52,7 +52,7 @@ public class InReplyToElement : IXmlSerializable
     public InReplyToElement()  
     {  
         this.extensionElements = new Collection<XElement>();  
-        this.extensionAttributes = new Dictionary<XmlQualifiedName,   
+        this.extensionAttributes = new Dictionary<XmlQualifiedName,
                                                           string>();  
     }  
   
@@ -115,9 +115,9 @@ public void ReadXml(System.Xml.XmlReader reader)
                 }  
                 else  
                 {  
-                    this.AttributeExtensions.Add(new   
-                                 XmlQualifiedName(reader.LocalName,   
-                                 reader.NamespaceURI),   
+                    this.AttributeExtensions.Add(new
+                                 XmlQualifiedName(reader.LocalName,
+                                 reader.NamespaceURI),
                                  reader.Value);  
                 }  
             }  
@@ -145,29 +145,29 @@ public void WriteXml(System.Xml.XmlWriter writer)
 {  
     if (this.Ref != null)  
     {  
-        writer.WriteAttributeString("ref", InReplyToElement.NsUri,   
+        writer.WriteAttributeString("ref", InReplyToElement.NsUri,
                                             this.Ref);  
     }  
     if (this.Href != null)  
     {  
-        writer.WriteAttributeString("href", InReplyToElement.NsUri,   
+        writer.WriteAttributeString("href", InReplyToElement.NsUri,
                                                 this.Href.ToString());  
     }  
     if (this.Source != null)  
     {  
-        writer.WriteAttributeString("source", InReplyToElement.NsUri,   
+        writer.WriteAttributeString("source", InReplyToElement.NsUri,
                                               this.Source.ToString());  
     }  
     if (this.MediaType != null)  
     {  
-        writer.WriteAttributeString("type", InReplyToElement.NsUri,   
+        writer.WriteAttributeString("type", InReplyToElement.NsUri,
                                                     this.MediaType);  
     }  
   
-    foreach (KeyValuePair<XmlQualifiedName, string> kvp in   
+    foreach (KeyValuePair<XmlQualifiedName, string> kvp in
                                              this.AttributeExtensions)  
     {  
-        writer.WriteAttributeString(kvp.Key.Name, kvp.Key.Namespace,   
+        writer.WriteAttributeString(kvp.Key.Name, kvp.Key.Namespace,
                                                    kvp.Value);  
     }  
   
@@ -228,7 +228,7 @@ public class ThreadedItem : SyndicationItem
     }  
   
     protected override bool TryParseElement(  
-                        System.Xml.XmlReader reader,   
+                        System.Xml.XmlReader reader,
                         string version)  
     {  
         if (version == SyndicationVersions.Atom10 &&  
@@ -247,13 +247,13 @@ public class ThreadedItem : SyndicationItem
         }  
     }  
   
-    protected override void WriteElementExtensions(XmlWriter writer,   
+    protected override void WriteElementExtensions(XmlWriter writer,
                                                  string version)  
     {  
-        if (this.InReplyTo != null &&   
+        if (this.InReplyTo != null &&
                      version == SyndicationVersions.Atom10)  
         {  
-            writer.WriteStartElement(InReplyToElement.ElementName,   
+            writer.WriteStartElement(InReplyToElement.ElementName,
                                            InReplyToElement.NsUri);  
             this.InReplyTo.WriteXml(writer);  
             writer.WriteEndElement();  
@@ -274,9 +274,9 @@ public class ThreadedItem : SyndicationItem
   
 > [!IMPORTANT]
 > The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Syndication\StronglyTypedExtensions`  

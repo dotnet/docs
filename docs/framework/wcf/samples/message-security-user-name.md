@@ -65,9 +65,9 @@ This sample demonstrates how to implement an application that uses WS-Security w
 ```xml  
 <system.serviceModel>  
   <client>  
-    <endpoint address="http://localhost/servicemodelsamples/service.svc"   
-              binding="wsHttpBinding"   
-              bindingConfiguration="Binding1"   
+    <endpoint address="http://localhost/servicemodelsamples/service.svc"
+              binding="wsHttpBinding"
+              bindingConfiguration="Binding1"
               behaviorConfiguration="ClientCredentialsBehavior"  
               contract="Microsoft.ServiceModel.Samples.ICalculator" />  
   </client>  

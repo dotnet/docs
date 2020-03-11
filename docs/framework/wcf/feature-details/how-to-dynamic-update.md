@@ -96,7 +96,7 @@ This topic outlines the basic steps required to create and dynamically update th
         using (ServiceHost serviceHost =  
             new ServiceHost(typeof(RoutingService)))  
         {  
-            // Open the ServiceHost to create listeners           
+            // Open the ServiceHost to create listeners
             // and start listening for messages.  
             Console.WriteLine("The Routing Service configured, opening....");  
             serviceHost.Open();  
@@ -179,12 +179,12 @@ namespace Microsoft.Samples.AdvancedFilters
     {  
         // Host the service within this EXE console application.  
         public static void Main()  
-        {             
+        {
             // Create a ServiceHost for the CalculatorService type.  
             using (ServiceHost serviceHost =  
                 new ServiceHost(typeof(RoutingService)))  
             {  
-                // Open the ServiceHost to create listeners           
+                // Open the ServiceHost to create listeners
                 // and start listening for messages.  
                 Console.WriteLine("The Routing Service configured, opening....");  
                 serviceHost.Open();  
@@ -236,7 +236,7 @@ namespace Microsoft.Samples.AdvancedFilters
 ```  
   
 ## Example  
- 
+
 The following is a complete listing of the configuration file used in this example:
   
 ```xml  

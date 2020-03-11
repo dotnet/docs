@@ -11,7 +11,7 @@ This sample demonstrates how to implement a client that dynamically retrieves me
   
  The client application uses the imported <xref:System.ServiceModel.Description.ServiceEndpointCollection> to create clients to communicate with the service. The client application iterates through each retrieved endpoint and communicates with each endpoint that implements the `ICalculator` contract. The appropriate address and binding are provided with the retrieved endpoint, so that the client is configured to communicate with each endpoint, as shown in the following sample code.  
   
-```csharp   
+```csharp
 // Create a MetadataExchangeClient for retrieving metadata.  
 EndpointAddress mexAddress = new EndpointAddress(ConfigurationManager.AppSettings["mexAddress"]);  
 MetadataExchangeClient mexClient = new MetadataExchangeClient(mexAddress);  
@@ -56,9 +56,9 @@ foreach (ServiceEndpoint ep in endpoints)
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Client\RetrieveMetadata`  

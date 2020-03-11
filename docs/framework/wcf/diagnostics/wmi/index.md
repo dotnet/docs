@@ -93,7 +93,7 @@ Windows Communication Foundation (WCF) exposes inspection data of a service at r
     write-host "Previous ACL: "$outsddl.SDDL  
   
     # Change the Access Control List (ACL) using SDDL  
-    $result = $security.PsBase.InvokeMethod("SetSD",$convertedPermissions)   
+    $result = $security.PsBase.InvokeMethod("SetSD",$convertedPermissions)
   
     # Get and output the current settings  
     $binarySD = @($null)  

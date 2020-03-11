@@ -108,15 +108,15 @@ Namespace Microsoft.ServiceModel.Samples
     Imports System.ServiceModel  
   
     <ServiceContract(Namespace:= _  
-    "http://Microsoft.ServiceModel.Samples")> _   
+    "http://Microsoft.ServiceModel.Samples")> _
    Public Interface ICalculator  
-        <OperationContract> _   
+        <OperationContract> _
         Function Add(n1 As Double, n2 As Double) As Double  
-        <OperationContract> _   
+        <OperationContract> _
         Function Subtract(n1 As Double, n2 As Double) As Double  
-        <OperationContract> _   
+        <OperationContract> _
         Function Multiply(n1 As Double, n2 As Double) As Double  
-        <OperationContract> _   
+        <OperationContract> _
      Function Divide(n1 As Double, n2 As Double) As Double  
 End Interface  
 ```  

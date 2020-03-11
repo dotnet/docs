@@ -40,11 +40,11 @@ In Windows Communication Foundation (WCF), the service dictates the security req
 <wsHttpBinding>  
     <binding name="WSHttpBinding_ICalculator">  
        <security mode="Message">  
-           <transport clientCredentialType="Windows"   
+           <transport clientCredentialType="Windows"
                       realm="" />  
-           <message clientCredentialType="Certificate"   
+           <message clientCredentialType="Certificate"
                     negotiateServiceCredential="true"  
-                    algorithmSuite="Default"   
+                    algorithmSuite="Default"
                     establishSecurityContext="true" />  
        </security>  
     </binding>  
@@ -55,7 +55,7 @@ In Windows Communication Foundation (WCF), the service dictates the security req
   
 ```xml  
 <security mode="Message">  
-    <transport clientCredentialType="Windows "   
+    <transport clientCredentialType="Windows "
         realm="" />  
 </security>  
 ```  
@@ -92,7 +92,7 @@ In Windows Communication Foundation (WCF), the service dictates the security req
       <endpointBehaviors>
         <behavior name="myEndpointBehavior">  
           <clientCredentials>  
-            <clientCertificate findvalue="myMachineName"   
+            <clientCertificate findvalue="myMachineName"
             storeLocation="Current" X509FindType="FindBySubjectName" />  
           </clientCredentials>  
         </behavior>
@@ -130,8 +130,8 @@ In Windows Communication Foundation (WCF), the service dictates the security req
 <wsHttpBinding>  
     <binding name="PingBinding">  
         <security mode="TransportWithMessageCredential"  >  
-           <message  clientCredentialType="UserName"   
-               establishSecurityContext="false"    
+           <message  clientCredentialType="UserName"
+               establishSecurityContext="false"
                negotiateServiceCredential="false" />  
            <transport clientCredentialType="Certificate"  />  
          </security>  

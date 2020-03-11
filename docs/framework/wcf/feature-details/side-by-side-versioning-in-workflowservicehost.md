@@ -102,7 +102,7 @@ WorkflowService serviceV2 = new WorkflowService
 // of the workflow service. This code requires Administrator  
 // privileges to function correctly. If running from Visual  
 // Studio, Visual Studio must be run with Administrator privileges.  
-WorkflowServiceHost host = new WorkflowServiceHost(serviceV2,   
+WorkflowServiceHost host = new WorkflowServiceHost(serviceV2,
     new Uri("http://localhost:8080/MortgageWorkflowService"));  
   
 // Create the previous version of the workflow service.  

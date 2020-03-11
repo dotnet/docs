@@ -99,11 +99,11 @@ This scenario shows a Windows Communication Foundation (WCF) client and server s
       </netTcpBinding>  
     </bindings>  
     <client>  
-      <endpoint address="net.tcp://machineName:8008/Calculator"   
+      <endpoint address="net.tcp://machineName:8008/Calculator"
                 binding="netTcpBinding"  
                 bindingConfiguration="NetTcpBinding_ICalculator"  
                 contract="ICalculator"  
-                name="NetTcpBinding_ICalculator">          
+                name="NetTcpBinding_ICalculator">
       </endpoint>  
     </client>  
   </system.serviceModel>  

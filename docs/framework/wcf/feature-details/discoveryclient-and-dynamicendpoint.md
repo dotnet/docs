@@ -40,18 +40,18 @@ else
 ```csharp
 static void FindServiceAsync()  
 {  
-   DiscoveryClient dc = new DiscoveryClient(new UdpDiscoveryEndpoint());   
+   DiscoveryClient dc = new DiscoveryClient(new UdpDiscoveryEndpoint());
    dc.FindCompleted += new EventHandler<FindCompletedEventArgs>( discoveryClient_FindCompleted);  
    dc.FindProgressChanged += new EventHandler<FindProgressChangedEventArgs>(discoveryClient_FindProgressChanged);  
-   dc.FindAsync(new FindCriteria(typeof(ICalculatorService)));   
-}   
+   dc.FindAsync(new FindCriteria(typeof(ICalculatorService)));
+}
 static void discoveryClient_FindProgressChanged(object sender, FindProgressChangedEventArgs e)  
 {  
    Console.WriteLine("Found service at: " + e.EndpointDiscoveryMetadata.Address  
-}   
+}
   
 static void discoveryClient_FindCompleted(object sender, FindCompletedEventArgs e)  
-{    
+{
       if (e.Result.Endpoints.Count > 0)  
             {  
                 EndpointAddress ep = e.Result.Endpoints[0].Address;  

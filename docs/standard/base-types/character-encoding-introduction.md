@@ -17,7 +17,7 @@ An instance of the [string](xref:System.String) class represents some text. A `s
 
 The following sample function prints out the values in hexadecimal notation of all the `char` instances in a `string`:
 
-:::code language="csharp" source="character-encoding/csharp/PrintStringChars.cs" id=SnippetPrintChars":::
+:::code language="csharp" source="character-encoding/csharp/PrintStringChars.cs" id="SnippetPrintChars":::
 
 Pass the string "Hello" to this function, and you get the following output:
 
@@ -71,7 +71,7 @@ s[1] = '�' ('\udc02')
 
 You can try passing other strings to this method in the following interactive C# panel:
 
-:::code language="csharp" interactive="try-dotnet-method" source="character-encoding/csharp/PrintStringChars.cs" id=SnippetPrintStringChars":::
+:::code language="csharp" interactive="try-dotnet-method" source="character-encoding/csharp/PrintStringChars.cs" id="SnippetPrintStringChars":::
 
 These examples show that the value of `string.Length` doesn't necessarily indicate the number of displayed characters. A single `char` instance by itself doesn't necessarily represent a character. Sometimes multiple `char` instances together represent a single character.
 

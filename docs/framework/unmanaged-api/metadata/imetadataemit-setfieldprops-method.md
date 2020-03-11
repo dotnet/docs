@@ -23,11 +23,11 @@ Sets or updates the default value for the field referenced by the specified fiel
   
 ```cpp  
 HRESULT SetFieldProps (  
-    [in]  mdFieldDef  fd,   
-    [in]  DWORD       dwFieldFlags,   
-    [in]  DWORD       dwCPlusTypeFlag,   
-    [in]  void const  *pValue,   
-    [in]  ULONG       cchValue   
+    [in]  mdFieldDef  fd,
+    [in]  DWORD       dwFieldFlags,
+    [in]  DWORD       dwCPlusTypeFlag,
+    [in]  void const  *pValue,
+    [in]  ULONG       cchValue
 );  
 ```  
   

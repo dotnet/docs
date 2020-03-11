@@ -27,7 +27,7 @@ Adds a .reloc instruction to the code base.
 HRESULT AddSectionReloc (  
    [in] HCEESECTION            section,  
    [in] ULONG                  offset,  
-   [in] HCEESECTION            relativeTo,   
+   [in] HCEESECTION            relativeTo,
    [in] CeeSectionRelocType    relocType  
 );  
 ```  

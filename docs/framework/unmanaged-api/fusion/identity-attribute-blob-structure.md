@@ -91,7 +91,7 @@ bool Init()
                                 (VOID **)&g_pfnGetIdentityAuthority);  
     }  
   
-    if (!g_pfnGetAssemblyIdentityFromFile ||   
+    if (!g_pfnGetAssemblyIdentityFromFile ||
         !g_pfnGetIdentityAuthority)  
     {  
         printf("Error: Cannot get required APIs from fusion.dll!\n");  
@@ -114,7 +114,7 @@ void Shutdown()
   
 void Usage()  
 {  
-    printf("EnumAssemblyAttributes: A tool to enumerate the identity   
+    printf("EnumAssemblyAttributes: A tool to enumerate the identity
             attributes of a given assembly.\n\n");  
     printf("Usage: EnumAssemblyAttributes AssemblyFilePath\n");  
     printf("\n");  
@@ -125,7 +125,7 @@ int _cdecl wmain(int argc, LPCWSTR argv[])
     int     iResult = 1;  
     IUnknown                    *pUnk  = NULL;  
     IReferenceIdentity          *pRef  = NULL;  
-    HRESULT                     hr     = S_OK;     
+    HRESULT                     hr     = S_OK;
     IEnumIDENTITY_ATTRIBUTE     *pEnum = NULL;  
     BYTE                        abData[1024];  
     DWORD                       cbAvailable;  
@@ -142,16 +142,16 @@ int _cdecl wmain(int argc, LPCWSTR argv[])
         goto Exit;  
     }  
   
-    hr = g_pfnGetAssemblyIdentityFromFile(argv[1],   
+    hr = g_pfnGetAssemblyIdentityFromFile(argv[1],
                             __uuidof(IReferenceIdentity), &pUnk);  
   
     if (FAILED(hr)) {  
-        printf("GetAssemblyIdentityFromFile failed with hr = 0x%x",   
+        printf("GetAssemblyIdentityFromFile failed with hr = 0x%x",
                 hr);  
         goto Exit;  
     }  
   
-    hr = pUnk->QueryInterface(__uuidof(IReferenceIdentity),   
+    hr = pUnk->QueryInterface(__uuidof(IReferenceIdentity),
                               (void**)&pRef);  
     if (FAILED(hr)) {  
         goto Exit;  
@@ -159,7 +159,7 @@ int _cdecl wmain(int argc, LPCWSTR argv[])
   
     hr = pRef->EnumAttributes(&pEnum);  
     if (FAILED(hr)) {  
-        printf("IReferenceIdentity::EnumAttributes failed with hr =   
+        printf("IReferenceIdentity::EnumAttributes failed with hr =
                 0x%x", hr);  
         goto Exit;  
     }  
@@ -169,7 +169,7 @@ int _cdecl wmain(int argc, LPCWSTR argv[])
         cbAvailable = sizeof(abData);  
         hr = pEnum->CurrentIntoBuffer(cbAvailable, abData, &cbUsed);  
         if (FAILED(hr)) {  
-            printf("IEnumIDENTITY_ATTRIBUTE::CurrentIntoBuffer failed   
+            printf("IEnumIDENTITY_ATTRIBUTE::CurrentIntoBuffer failed
                     with hr = 0x%x", hr);  
             goto Exit;  
         }  
@@ -185,7 +185,7 @@ int _cdecl wmain(int argc, LPCWSTR argv[])
   
         hr = pEnum->Skip(1);  
         if (FAILED(hr)) {  
-            printf("IEnumIDENTITY_ATTRIBUTE::Skip failed with hr =   
+            printf("IEnumIDENTITY_ATTRIBUTE::Skip failed with hr =
                     0x%x", hr);  
             goto Exit;  
         }  

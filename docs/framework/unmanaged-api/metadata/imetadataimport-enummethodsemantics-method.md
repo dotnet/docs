@@ -24,7 +24,7 @@ Enumerates the properties and the property-change events to which the specified 
 ```cpp  
 HRESULT EnumMethodSemantics (  
    [in, out] HCORENUM    *phEnum,  
-   [in]  mdMethodDef     mb,   
+   [in]  mdMethodDef     mb,
    [out] mdToken         rEventProp[],  
    [in]  ULONG           cMax,  
    [out] ULONG           *pcEventProp  

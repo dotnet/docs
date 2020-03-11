@@ -17,7 +17,7 @@ topic_type:
 ---
 # SetSecurity function
 
-Retrieves the impersonation token associated with the current thread. 
+Retrieves the impersonation token associated with the current thread.
 
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
 
@@ -25,9 +25,9 @@ Retrieves the impersonation token associated with the current thread.
 
 ```cpp
 HRESULT SetSecurity (
-   [out] boolean* pNeedToReset, 
+   [out] boolean* pNeedToReset,
    [out] HANDLE* pCurrentThreadToken
-); 
+);
 ```
 
 ## Parameters
@@ -36,7 +36,7 @@ HRESULT SetSecurity (
 [out] When the function returns, contains a pointer to a `boolean` that indicates whether the token should be reset by calling the [ResetSecurity](resetsecurity.md) function.
 
 `token`\
-[out] When the function returns, contains a pointer to the handle of the impersonation token associated with the current thread. Its value can be `null` if there is no token associated with the current thread. 
+[out] When the function returns, contains a pointer to the handle of the impersonation token associated with the current thread. Its value can be `null` if there is no token associated with the current thread.
 
 ## Return value
 

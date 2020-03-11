@@ -16,7 +16,7 @@ topic_type:
   - "Reference"
 ---
 # GetCurrentApartmentType function
-Retrieves the type of apartment in which the caller is executing.   
+Retrieves the type of apartment in which the caller is executing.
   
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   
@@ -24,10 +24,10 @@ Retrieves the type of apartment in which the caller is executing.
   
 ```cpp  
 HRESULT GetCurrentApartmentType (
-   [in] int                   vFunc, 
-   [in] IComThreadingInfo*    ptr, 
+   [in] int                   vFunc,
+   [in] IComThreadingInfo*    ptr,
    [out] APTTYPE*             aptType
-); 
+);
 ```  
 
 ## Parameters

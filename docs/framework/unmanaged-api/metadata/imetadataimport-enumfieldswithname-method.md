@@ -23,12 +23,12 @@ Enumerates FieldDef tokens of the specified type with the specified name.
   
 ```cpp  
 HRESULT EnumFieldsWithName (  
-   [in, out] HCORENUM    *phEnum,   
-   [in]  mdTypeDef       cl,   
-   [in]  LPCWSTR         szName,   
-   [out] mdFieldDef      rFields[],   
-   [in]  ULONG           cMax,   
-   [out] ULONG           *pcTokens   
+   [in, out] HCORENUM    *phEnum,
+   [in]  mdTypeDef       cl,
+   [in]  LPCWSTR         szName,
+   [out] mdFieldDef      rFields[],
+   [in]  ULONG           cMax,
+   [out] ULONG           *pcTokens
 );  
 ```  
   

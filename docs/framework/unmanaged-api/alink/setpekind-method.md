@@ -26,7 +26,7 @@ HRESULT SetPEKind(
     mdToken FileToken,  
     DWORD dwPEKind,  
     DWORD dwMachine  
-) PURE;   
+) PURE;
 ```  
   
 ## Parameters  

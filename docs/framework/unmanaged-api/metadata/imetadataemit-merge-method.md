@@ -22,10 +22,10 @@ Adds the specified imported scope to the list of scopes to be merged.
 ## Syntax  
   
 ```cpp  
-HRESULT Merge (   
-    [in]  IMetaDataImport  *pImport,   
-    [in]  IMapToken        *pHostMapToken,   
-    [in]  IUnknown         *pHandler   
+HRESULT Merge (
+    [in]  IMetaDataImport  *pImport,
+    [in]  IMapToken        *pHostMapToken,
+    [in]  IUnknown         *pHandler
 );  
 ```  
   

@@ -22,10 +22,10 @@ Enumerates event definition tokens for the specified TypeDef token.
 ## Syntax  
   
 ```cpp  
-HRESULT EnumEvents (   
-   [in, out] HCORENUM    *phEnum,   
-   [in]      mdTypeDef   td,   
-   [out]     mdEvent     rEvents[],   
+HRESULT EnumEvents (
+   [in, out] HCORENUM    *phEnum,
+   [in]      mdTypeDef   td,
+   [out]     mdEvent     rEvents[],
    [in]      ULONG       cMax,  
    [out]    ULONG        *pcEvents  
 );  

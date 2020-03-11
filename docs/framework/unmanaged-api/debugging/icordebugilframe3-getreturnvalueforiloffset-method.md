@@ -21,7 +21,7 @@ Gets an "ICorDebugValue" object that encapsulates the return value of a function
   
 ```cpp
 HRESULT GetReturnValueForILOffset(  
-    ULONG32 ILoffset,   
+    ULONG32 ILoffset,
     [out] ICorDebugValue **ppReturnValue  
 );  
 ```  

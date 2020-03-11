@@ -22,7 +22,7 @@ topic_type:
   
 ```cpp
 HRESULT GetCodeEx(  
-   [in] ILCodeKind flags,   
+   [in] ILCodeKind flags,
    [out] ICorDebugCode **ppCode  
 );  
 ```  

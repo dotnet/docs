@@ -22,13 +22,13 @@ Creates a definition for a generic type parameter, and gets a token to that gene
 ## Syntax  
   
 ```cpp  
-HRESULT DefineGenericParam (   
-    [in]  mdToken         tk,   
-    [in]  ULONG           ulParamSeq,   
-    [in]  DWORD           dwParamFlags,   
-    [in]  LPCWSTR         szname,   
-    [in]  DWORD           reserved,   
-    [in]  mdToken         rtkConstraints[],   
+HRESULT DefineGenericParam (
+    [in]  mdToken         tk,
+    [in]  ULONG           ulParamSeq,
+    [in]  DWORD           dwParamFlags,
+    [in]  LPCWSTR         szname,
+    [in]  DWORD           reserved,
+    [in]  mdToken         rtkConstraints[],
     [out] mdGenericParam  *pgp  
 );  
 ```  

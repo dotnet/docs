@@ -23,8 +23,8 @@ Specifies the <xref:System.AppDomain> in which to execute the specified managed 
   
 ```cpp  
 HRESULT ExecuteInAppDomain(  
-    [in] DWORD AppDomainId,   
-    [in] FExecuteInDomainCallback pCallback,   
+    [in] DWORD AppDomainId,
+    [in] FExecuteInDomainCallback pCallback,
     [in] void* cookie  
 );  
 ```  

@@ -23,9 +23,9 @@ Sets the PInvoke marshaling information for the field, method return, or method 
   
 ```cpp  
 HRESULT SetFieldMarshal (  
-    [in]  mdToken          tk,   
-    [in]  PCCOR_SIGNATURE  pvNativeType,   
-    [in]  ULONG            cbNativeType   
+    [in]  mdToken          tk,
+    [in]  PCCOR_SIGNATURE  pvNativeType,
+    [in]  ULONG            cbNativeType
 );  
 ```  
   

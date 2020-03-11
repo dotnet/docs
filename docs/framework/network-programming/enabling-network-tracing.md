@@ -34,7 +34,7 @@ Network tracing provides access to information about method invocations and netw
   <trace autoflush="true" indentsize="4">  
     <listeners>  
       <add name="file" type="System.Diagnostics.TextWriterTraceListener" initializeData="trace.log"/>  
-    </listeners>   
+    </listeners>
   </trace>  
 </system.diagnostics>  
 ```  

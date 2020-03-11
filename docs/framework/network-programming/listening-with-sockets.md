@@ -39,7 +39,7 @@ IPEndPoint localEndPoint = new IPEndPoint(ipAddress, 11000);
   
 ```vb  
 Dim listener As New Socket(ipAddress.AddressFamily, _  
-    SocketType.Stream, ProtocolType.Tcp) 
+    SocketType.Stream, ProtocolType.Tcp)
 listener.Bind(localEndPoint)  
 listener.Listen(100)  
 ```  

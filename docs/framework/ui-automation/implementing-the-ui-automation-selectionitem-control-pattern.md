@@ -15,13 +15,13 @@ ms.assetid: 76b0949a-5b23-4cfc-84cc-154f713e2e12
   
  The <xref:System.Windows.Automation.SelectionItemPattern> control pattern is used to support controls that act as individual, selectable child items of container controls that implement <xref:System.Windows.Automation.Provider.ISelectionProvider>. For examples of controls that implement the SelectionItem control pattern, see [Control Pattern Mapping for UI Automation Clients](control-pattern-mapping-for-ui-automation-clients.md)  
   
-<a name="Implementation_Guidelines_and_Conventions"></a>   
+<a name="Implementation_Guidelines_and_Conventions"></a>
 ## Implementation Guidelines and Conventions  
  When implementing the Selection Item control pattern, note the following guidelines and conventions:  
   
 - Single-selection controls that manage child controls that implement <xref:System.Windows.Automation.Provider.IRawElementProviderFragmentRoot>, such as the **Screen Resolution** slider in the **Display Properties** dialog box, should implement <xref:System.Windows.Automation.Provider.ISelectionProvider> and their children should implement both <xref:System.Windows.Automation.Provider.IRawElementProviderFragment> and <xref:System.Windows.Automation.Provider.ISelectionItemProvider>.  
   
-<a name="Required_Members_for_the_IValueProvider_Interface"></a>   
+<a name="Required_Members_for_the_IValueProvider_Interface"></a>
 ## Required Members for ISelectionItemProvider  
  The following properties, methods, and events are required for implementing <xref:System.Windows.Automation.Provider.ISelectionItemProvider>.  
   
@@ -34,7 +34,7 @@ ms.assetid: 76b0949a-5b23-4cfc-84cc-154f713e2e12
   
 - If the result of a <xref:System.Windows.Automation.SelectionItemPattern.Select%2A>, an <xref:System.Windows.Automation.SelectionItemPattern.AddToSelection%2A>, or a <xref:System.Windows.Automation.SelectionItemPattern.RemoveFromSelection%2A> is a single selected item, an <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementSelectedEvent> should be raised; otherwise send <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementAddedToSelectionEvent>/ <xref:System.Windows.Automation.SelectionItemPatternIdentifiers.ElementRemovedFromSelectionEvent> as appropriate.  
   
-<a name="Exceptions"></a>   
+<a name="Exceptions"></a>
 ## Exceptions  
  Providers must throw the following exceptions.  
   

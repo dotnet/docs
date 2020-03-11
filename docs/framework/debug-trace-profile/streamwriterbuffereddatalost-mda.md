@@ -24,7 +24,7 @@ The `streamWriterBufferedDataLost` managed debugging assistant (MDA) is activate
   
 ```csharp  
 // Poorly written code.  
-void Write()   
+void Write()
 {  
     StreamWriter sw = new StreamWriter("file.txt");  
     sw.WriteLine("Data");  
@@ -43,7 +43,7 @@ GC.WaitForPendingFinalizers();
  Make sure you call <xref:System.IO.StreamWriter.Close%2A> or <xref:System.IO.StreamWriter.Flush%2A> on the <xref:System.IO.StreamWriter> before closing an application or any code block that has an instance of a <xref:System.IO.StreamWriter>. One of the best mechanisms for achieving this is creating the instance with a C# `using` block (`Using` in Visual Basic), which will ensure the <xref:System.IO.StreamWriter.Dispose%2A> method for the writer is invoked, resulting in the instance being correctly closed.  
   
 ```csharp
-using(StreamWriter sw = new StreamWriter("file.txt"))   
+using(StreamWriter sw = new StreamWriter("file.txt"))
 {  
     sw.WriteLine("Data");  
 }  
@@ -53,12 +53,12 @@ using(StreamWriter sw = new StreamWriter("file.txt"))
   
 ```csharp
 StreamWriter sw;  
-try   
+try
 {  
     sw = new StreamWriter("file.txt"));  
     sw.WriteLine("Data");  
 }  
-finally   
+finally
 {  
     if (sw != null)  
         sw.Close();  
@@ -70,7 +70,7 @@ finally
 ```csharp
 private static StreamWriter log;  
 // static class constructor.  
-static WriteToFile()   
+static WriteToFile()
 {  
     StreamWriter sw = new StreamWriter("log.txt");  
     sw.AutoFlush = true;  

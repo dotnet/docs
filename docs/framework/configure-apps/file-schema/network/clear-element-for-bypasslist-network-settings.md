@@ -61,7 +61,7 @@ Clears the proxy bypass list.
       </bypasslist>  
     </defaultProxy>  
   </system.net>  
-</configuration>   
+</configuration>
 ```  
   
 ## See also

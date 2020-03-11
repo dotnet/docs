@@ -48,10 +48,10 @@ The `releaseHandleFailed` managed debugging assistant (MDA) is activated is to n
  A message indicating that a <xref:System.Runtime.InteropServices.SafeHandle> or a <xref:System.Runtime.InteropServices.CriticalHandle> failed to properly release the handle. For example:  
   
 ```output
-"A SafeHandle or CriticalHandle of type 'MyBrokenSafeHandle'   
-failed to properly release the handle with value 0x0000BEEF. This   
-usually indicates that the handle was released incorrectly via   
-another means (such as extracting the handle using DangerousGetHandle   
+"A SafeHandle or CriticalHandle of type 'MyBrokenSafeHandle'
+failed to properly release the handle with value 0x0000BEEF. This
+usually indicates that the handle was released incorrectly via
+another means (such as extracting the handle using DangerousGetHandle
 and closing it directly or building another SafeHandle around it."  
 ```  
   
@@ -71,12 +71,12 @@ and closing it directly or building another SafeHandle around it."
 ```csharp
 bool ReleaseHandle()  
 {  
-    // Calling the Win32 CloseHandle function to release the   
-    // native handle wrapped by this SafeHandle. This method returns   
-    // false on failure, but should only fail if the input is invalid   
-    // (which should not happen here). The method specifically must not   
-    // fail simply because of lack of resources or other transient   
-    // failures beyond the user’s control. That would make it unacceptable   
+    // Calling the Win32 CloseHandle function to release the
+    // native handle wrapped by this SafeHandle. This method returns
+    // false on failure, but should only fail if the input is invalid
+    // (which should not happen here). The method specifically must not
+    // fail simply because of lack of resources or other transient
+    // failures beyond the user’s control. That would make it unacceptable
     // to call CloseHandle as part of the implementation of this method.  
     return CloseHandle(handle);  
 }  

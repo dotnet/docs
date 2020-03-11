@@ -434,7 +434,7 @@ public class Workflow1 : Activity
  ![Environment setup for workflow performance test](./media/performance/performance-test-environment.gif)
 
 ### Test Results
- 
+
 The following table shows the results of running a workflow containing five activities in a sequence in various configurations.
 
 |Test|Throughput (workflows/sec)|

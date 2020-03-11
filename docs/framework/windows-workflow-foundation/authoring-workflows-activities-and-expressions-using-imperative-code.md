@@ -115,7 +115,7 @@ new InvokeMethod<int>
 {  
     TargetObject = new InArgument<Random>(new VisualBasicValue<Random>("New Random()")),  
     MethodName = "Next",  
-    Parameters =   
+    Parameters =
     {  
         new InArgument<int>(1),  
         new InArgument<int>(101)  

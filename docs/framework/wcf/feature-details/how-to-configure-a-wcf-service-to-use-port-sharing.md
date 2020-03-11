@@ -40,7 +40,7 @@ The easiest way to use net.tcp:// port sharing in your Windows Communication Fou
 ```xml  
 <system.serviceModel>  
   <bindings>  
-    <netTcpBinding name="portSharingBinding"   
+    <netTcpBinding name="portSharingBinding"
                    portSharingEnabled="true" />  
   </bindings>  
   <services>  

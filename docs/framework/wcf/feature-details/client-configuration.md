@@ -45,11 +45,11 @@ You can use the Windows Communication Foundation (WCF) client configuration to s
 //The bindings section references by the bindingConfiguration endpoint attribute.  
     <bindings>  
       <wsHttpBinding>  
-        <binding name="WSHttpBinding_IHello"   
-                 bypassProxyOnLocal="false"   
+        <binding name="WSHttpBinding_IHello"
+                 bypassProxyOnLocal="false"
                  hostNameComparisonMode="StrongWildcard">  
           <readerQuotas maxDepth="32"/>  
-          <reliableSession ordered="true"   
+          <reliableSession ordered="true"
                            enabled="false" />  
           <security mode="Message">  
            //Security settings go here.  

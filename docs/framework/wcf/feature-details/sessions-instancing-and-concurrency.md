@@ -45,9 +45,9 @@ A *session* is a correlation of all messages sent between two endpoints. *Instan
  The following code example shows the default <xref:System.ServiceModel.InstanceContextMode> value, <xref:System.ServiceModel.InstanceContextMode.PerSession> being explicitly set on a service class.  
   
 ```csharp  
-[ServiceBehavior(InstanceContextMode=InstanceContextMode.PerSession)]   
-public class CalculatorService : ICalculatorInstance   
-{   
+[ServiceBehavior(InstanceContextMode=InstanceContextMode.PerSession)]
+public class CalculatorService : ICalculatorInstance
+{
     ...  
 }  
 ```  
@@ -83,9 +83,9 @@ public class CalculatorService : ICalculatorInstance
  The following code example demonstrates setting the <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> property to <xref:System.ServiceModel.ConcurrencyMode.Multiple>.  
   
 ```csharp
-[ServiceBehavior(ConcurrencyMode=ConcurrencyMode.Multiple, InstanceContextMode = InstanceContextMode.Single)]   
-public class CalculatorService : ICalculatorConcurrency   
-{   
+[ServiceBehavior(ConcurrencyMode=ConcurrencyMode.Multiple, InstanceContextMode = InstanceContextMode.Single)]
+public class CalculatorService : ICalculatorConcurrency
+{
     ...  
 }  
 ```  

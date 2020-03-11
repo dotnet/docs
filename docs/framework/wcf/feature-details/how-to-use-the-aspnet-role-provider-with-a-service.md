@@ -23,12 +23,12 @@ The role provider feature uses a SQL Server database to store user information. 
   
     ```xml  
     <!-- Configure the Sql Role Provider. -->  
-    <roleManager enabled ="true"   
+    <roleManager enabled ="true"
      defaultProvider ="SqlRoleProvider" >  
        <providers>  
-         <add name ="SqlRoleProvider"   
-           type="System.Web.Security.SqlRoleProvider"   
-           connectionStringName="SqlConn"   
+         <add name ="SqlRoleProvider"
+           type="System.Web.Security.SqlRoleProvider"
+           connectionStringName="SqlConn"
            applicationName="MembershipAndRoleProviderSample"/>  
        </providers>  
     </roleManager>  

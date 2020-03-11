@@ -60,7 +60,7 @@ Applications created with Windows Communication Foundation (WCF) can log securit
                   auditLogLocation="Application"  
                   suppressAuditFailure="true"  
                   serviceAuthorizationAuditLevel="Failure"  
-                  messageAuthenticationAuditLevel="SuccessOrFailure" />   
+                  messageAuthenticationAuditLevel="SuccessOrFailure" />
       </behavior>  
     </behaviors>  
   </system.serviceModel>  

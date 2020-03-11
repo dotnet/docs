@@ -96,7 +96,7 @@ This topic provides a brief overview of the concept of federated security. It al
 ```xml  
 <system.serviceModel>  
   <services>  
-    <service type="FederationSample.MyService"      
+    <service type="FederationSample.MyService"
         behaviorConfiguration='MyServiceBehavior'>  
         <endpoint address=""  
             binding=" wsFederationHttpBinding"  
@@ -114,7 +114,7 @@ This topic provides a brief overview of the concept of federated security. It al
            <message issuedTokenType=  
 "http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV1.1">  
            <issuer address="http://localhost/FederationSample/STS-B/STS.svc" />  
-            <issuerMetadata   
+            <issuerMetadata
            address=  
 "http://localhost/FederationSample/STS-B/STS.svc/mex" />  
          <requiredClaimTypes>  
@@ -128,7 +128,7 @@ This topic provides a brief overview of the concept of federated security. It al
   
   <behaviors>  
     <behavior name='MyServiceBehavior'>  
-      <serviceAuthorization   
+      <serviceAuthorization
 operationRequirementType="FederationSample.MyServiceOperationRequirement, MyService" />  
        <serviceCredentials>  
          <serviceCertificate findValue="CN=FederationSample.com"  
@@ -229,9 +229,9 @@ operationRequirementType="FederationSample.MyServiceOperationRequirement, MyServ
                 bindingConfiguration="STS-A_Binding"  
                 contract="FederationSample.ISts">  
        <identity>  
-       <certificateReference findValue="CN=FederationSample.com"    
+       <certificateReference findValue="CN=FederationSample.com"
                        x509FindType="FindBySubjectDistinguishedName"  
-                       storeLocation="LocalMachine"   
+                       storeLocation="LocalMachine"
                        storeName="My" />  
        </identity>  
     <endpoint>  

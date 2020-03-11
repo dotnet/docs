@@ -22,14 +22,14 @@ Windows Communication Foundation (WCF) provides three attributes for configuring
 <netNamedPipeBinding>  
    <binding name="test"  
       closeTimeout="00:00:10"  
-      openTimeout="00:00:20"   
+      openTimeout="00:00:20"
       receiveTimeout="00:00:30"  
       sendTimeout="00:00:40"  
       transactionFlow="true"  
       transactionProtocol="WSAtomicTransactionOctober2004"  
       hostNameComparisonMode="WeakWildcard"  
       maxBufferSize="1001"  
-      maxConnections="123"   
+      maxConnections="123"
       maxReceivedMessageSize="1000">  
    </binding>  
 </netNamedPipeBinding>  

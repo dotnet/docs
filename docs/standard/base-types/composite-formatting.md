@@ -25,7 +25,7 @@ The composite formatting feature is supported by methods such as the following:
   
 - <xref:System.String.Format%2A?displayProperty=nameWithType>, which returns a formatted result string.  
   
-- <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType>, which appends a formatted result string to a <xref:System.Text.StringBuilder> object.   
+- <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType>, which appends a formatted result string to a <xref:System.Text.StringBuilder> object.
 - Some overloads of the <xref:System.Console.WriteLine%2A?displayProperty=nameWithType> method, which display a formatted result string to the console.  
   
 - Some overloads of the <xref:System.IO.TextWriter.WriteLine%2A?displayProperty=nameWithType> method, which write the formatted result string to a stream or file. The classes derived from <xref:System.IO.TextWriter>, such as <xref:System.IO.StreamWriter> and <xref:System.Web.UI.HtmlTextWriter>, also share this functionality.  

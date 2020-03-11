@@ -23,7 +23,6 @@ This document targets developers who are:
 
 - Directly using the <xref:System.Net> APIs (for example, <xref:System.Net.Http.HttpClient?displayProperty=nameWithType> and <xref:System.Net.Security.SslStream?displayProperty=nameWithType>).
 - Directly using WCF clients and services using the <xref:System.ServiceModel?displayProperty=nameWithType> namespace.
-- Using [Azure Cloud Services](https://azure.microsoft.com/services/cloud-services/) Web and Worker roles to host and run your application. See the [Azure Cloud Services](#azure-cloud-services) section.
 
 We recommend that you:
 
@@ -287,19 +286,3 @@ This table shows the OS update you'll need to support TLS 1.2 with .NET Framewor
 | Windows 7 SP1<br>Windows Server 2008 R2 SP1 | [Support for TLS System Default Versions included in the .NET Framework 3.5.1 on Windows 7 SP1 and Server 2008 R2 SP1](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the--net-framework) |
 | Windows Server 2008 | [Support for TLS System Default Versions included in the .NET Framework 2.0 SP2 on Windows Vista SP2 and Server 2008 SP2](https://support.microsoft.com/help/3154517/support-for-tls-system-default-versions-included-in-the--net-framework) |
 | Windows Vista | Not supported |
-
-## Azure Cloud Services
-
-If you are using [Azure Cloud Services](https://azure.microsoft.com/services/cloud-services/) Web and Worker roles to host and run your application, there are some considerations that you need to take into account to support TLS 1.2.
-
-### .NET Framework 4.7 is not installed on Azure Guest OS by default
-
-The latest version installed in the latest Azure Guest OS Family 5 release (Windows Server 2016) is 4.6.2. To see which versions of .NET Framework are installed on each Azure Guest OS, see the [Azure Guest OS releases and SDK compatibility matrix](https://docs.microsoft.com/azure/cloud-services/cloud-services-guestos-update-matrix).
-
-If your app targets a .NET Framework version that is not available on the Azure Guest OS version, then you need to install it yourself. See [Install .NET on Azure Cloud Service Roles](https://docs.microsoft.com/azure/cloud-services/cloud-services-dotnet-install-dotnet). If the framework installation requires a restart, the service roles might also restart before entering the Ready state.
-
-### Azure Guest OS registry settings
-
-The Azure Guest OS Family 5 image for [Azure Cloud Services](https://azure.microsoft.com/services/cloud-services/) already has the `SchUseStrongCrypto` registry key set to a value of 1. For more information, see [SchUseStrongCrypto](#schusestrongcrypto).
-
-Set the [SystemDefaultTlsVersions](#systemdefaulttlsversions) registry key to 1. See [Configuring security via the Windows Registry](#configuring-security-via-the-windows-registry).

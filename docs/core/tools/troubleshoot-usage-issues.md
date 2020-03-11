@@ -37,16 +37,16 @@ The name of the executable determines how you invoke the tool. The following tab
 
 * Global tools
 
-    Global tools can be installed in the default directory or in a specific location. The default directories are:
+  Global tools can be installed in the default directory or in a specific location. The default directories are:
 
-    | OS          | Path                          |
-    |-------------|-------------------------------|
-    | Linux/macOS | `$HOME/.dotnet/tools`         |
-    | Windows     | `%USERPROFILE%\.dotnet\tools` |
+  | OS          | Path                          |
+  |-------------|-------------------------------|
+  | Linux/macOS | `$HOME/.dotnet/tools`         |
+  | Windows     | `%USERPROFILE%\.dotnet\tools` |
 
-    If you're trying to run a global tool, check that the `PATH` environment variable on your machine contains the path where you installed the global tool and that the executable is in that path.
+  If you're trying to run a global tool, check that the `PATH` environment variable on your machine contains the path where you installed the global tool and that the executable is in that path.
 
-    The .NET Core CLI tries to add the default locations to the PATH environment variable on its first usage. However, there are a couple of scenarios where the location might not be added to PATH automatically, so you'll have to edit PATH to configure it for the following cases:
+  The .NET Core CLI tries to add the default location to the PATH environment variable on its first usage. However, there are some scenarios where the location might not be added to PATH automatically:
 
   * If you're using Linux and you've installed the .NET Core SDK using *.tar.gz* files and not apt-get or rpm.
   * If you're using macOS 10.15 "Catalina" or later versions.
@@ -54,7 +54,7 @@ The name of the executable determines how you invoke the tool. The following tab
   * If you've installed the .NET Core 3.0 SDK and you've set the `DOTNET_ADD_GLOBAL_TOOLS_TO_PATH` environment variable to `false`.
   * If you've installed .NET Core 2.2 SDK or earlier versions, and you've set the `DOTNET_SKIP_FIRST_TIME_EXPERIENCE` environment variable to `true`.
 
-  For more information, see [.NET Core tools](global-tools.md).
+  In these scenarios or if you specified the `--tool-path` option, the `PATH` environment variable on your machine doesn't automatically contain the path where you installed the global tool. In that case, append the tool location (for example, `$HOME/.dotnet/tools`) to the `PATH` environment variable by using whatever method your shell provides for updating environment variables. For more information, see [.NET Core tools](global-tools.md).
 
 * Local tools
 

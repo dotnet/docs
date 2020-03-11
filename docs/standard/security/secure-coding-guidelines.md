@@ -1,5 +1,6 @@
 ---
 title: "Secure coding guidelines for .NET"
+description: Design code to work with .NET-enforced permissions and other enforcement to help prevent malicious code from accessing data or performing other actions.
 ms.date: "06/28/2018"
 helpviewer_keywords: 
   - "managed wrapper to native code implementation"

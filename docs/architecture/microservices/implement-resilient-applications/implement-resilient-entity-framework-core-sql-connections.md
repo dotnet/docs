@@ -148,4 +148,4 @@ public class ResilientTransaction
 
 >[!div class="step-by-step"]
 >[Previous](implement-retries-exponential-backoff.md)
->[Next](explore-custom-http-call-retries-exponential-backoff.md)
+>[Next](use-httpclientfactory-to-implement-resilient-http-requests.md)

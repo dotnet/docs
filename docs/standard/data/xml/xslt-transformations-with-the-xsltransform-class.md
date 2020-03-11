@@ -16,7 +16,7 @@ The goal of the XSLT is to transform the content of a source XML document into a
 
 ## Overview
 
-![Diagram that shows the XSLT transformation architecture.](./media/xslt-transformations-with-the-xsltransform-class/xslt-transformation-architecture.gif) 
+![Diagram that shows the XSLT transformation architecture.](./media/xslt-transformations-with-the-xsltransform-class/xslt-transformation-architecture.gif)
 
 The XSLT recommendation uses XML Path Language (XPath) to select parts of an XML document, where XPath is a query language used to navigate nodes of a document tree. As shown in the diagram, the .NET Framework implementation of XPath is used to select parts of XML stored in several classes, such as an <xref:System.Xml.XmlDocument>, an <xref:System.Xml.XmlDataDocument>, and an <xref:System.Xml.XPath.XPathDocument>. An <xref:System.Xml.XPath.XPathDocument> is an optimized XSLT data store, and when used with <xref:System.Xml.Xsl.XslTransform>, it provides XSLT transformations with good performance.
 
@@ -68,7 +68,7 @@ using System.Xml;
 using System.Xml.XPath;
 using System.Xml.Xsl;
 
-public class Sample 
+public class Sample
 {
     private const String filename = "mydata.xml";
     private const String stylesheet = "myStyleSheet.xsl";

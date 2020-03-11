@@ -14,7 +14,7 @@ Developers that are new to the .NET Core platform often struggle
 when deciding between a design based on `delegates` and a design
 based on `events`. This is a difficult concept, because the two
 language features are very similar. Events are even built using
-the language support for delegates. 
+the language support for delegates.
 
 They both offer a late binding scenario: they enable scenarios
 where a component communicates by calling a method that is only
@@ -34,7 +34,7 @@ to use is whether or not there must be an attached subscriber. If your
 code must call the code supplied by the subscriber, you should
 use a design based on delegates. If your code can complete all its
 work without calling any subscribers, you should use a
-design based on events. 
+design based on events.
 
 Consider the examples built during this section. The code you built
 using `List.Sort()` must be given a comparer function in order to
@@ -63,7 +63,7 @@ Notice that these two heuristics may often both be present: If your
 delegate method returns a value, it will likely impact the algorithm
 in some way.
 
-## Event Listeners Often Have Longer Lifetimes 
+## Event Listeners Often Have Longer Lifetimes
 
 This is a slightly weaker justification. However, you may find that
 event-based designs are more natural when the event source will be

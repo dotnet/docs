@@ -34,7 +34,7 @@ C# 4 introduces named and optional arguments. *Named arguments* enable you to sp
   
  Named arguments also improve the readability of your code by identifying what each argument represents. In the example method below, the `sellerName` cannot be null or white space. As both `sellerName` and `productName` are string types, instead of sending arguments by position, it makes sense to use named arguments to disambiguate the two and reduce confusion for anyone reading the code.
   
- Named arguments, when used with positional arguments, are valid as long as 
+ Named arguments, when used with positional arguments, are valid as long as
 
 - they're not followed by any positional arguments, or
 
@@ -63,7 +63,7 @@ C# 4 introduces named and optional arguments. *Named arguments* enable you to sp
   
 - a constant expression;  
   
-- an expression of the form `new ValType()`, where `ValType` is a value type, such as an [enum](../../language-reference/builtin-types/enum.md) or a [struct](structs.md);  
+- an expression of the form `new ValType()`, where `ValType` is a value type, such as an [enum](../../language-reference/builtin-types/enum.md) or a [struct](../../language-reference/builtin-types/struct.md);  
   
 - an expression of the form [default(ValType)](../../language-reference/operators/default.md),  where `ValType` is a value type.  
   

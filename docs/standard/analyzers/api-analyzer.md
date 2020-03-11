@@ -41,7 +41,7 @@ The API Analyzer uses API-specific error codes that begin with DE (which stands 
    3. Select **Include prerelease**.
    4. Search for **Microsoft.DotNet.Analyzers.Compatibility**.
    5. Select that package in the list.
-   6. Select the **Install** button. 
+   6. Select the **Install** button.
    7. Select the **OK** button on the **Preview Changes** dialog and then select the **I Accept** button on the **License Acceptance** dialog if you agree with the license terms for the packages listed.
 
 ### Use the API Analyzer
@@ -50,13 +50,13 @@ When a deprecated API, such as <xref:System.Net.WebClient>, is used in a code, A
 
 !["Screenshot of WebClient API with green squiggly line and light bulb on the left"](media/api-analyzer/green-squiggle.jpg)
 
-The **Error List** window contains warnings with a unique ID per deprecated API, as shown in the following example (`DE004`): 
+The **Error List** window contains warnings with a unique ID per deprecated API, as shown in the following example (`DE004`):
 
 !["Screenshot of the Error List window showing warning's ID and description"](media/api-analyzer/warnings-id-and-descriptions.jpg "Error List window that includes warnings.")
 
 By clicking on the ID, you go to a webpage with detailed information about why the API was deprecated and suggestions regarding alternative APIs that can be used.
 
-Any warnings can be suppressed by right-clicking on the highlighted member and selecting **Suppress \<diagnostic ID>**. There are two ways to suppress warnings: 
+Any warnings can be suppressed by right-clicking on the highlighted member and selecting **Suppress \<diagnostic ID>**. There are two ways to suppress warnings:
 
 - [locally (in source)](#suppress-warnings-locally)
 - [globally (in a suppression file)](#suppress-warnings-globally) - recommended

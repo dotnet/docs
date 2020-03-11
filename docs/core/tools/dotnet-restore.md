@@ -1,7 +1,7 @@
 ---
 title: dotnet restore command
 description: Learn how to restore dependencies and project-specific tools with the dotnet restore command.
-ms.date: 05/29/2018
+ms.date: 02/27/2020
 ---
 # dotnet restore
 

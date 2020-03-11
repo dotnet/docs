@@ -25,9 +25,9 @@ The following image shows the process for accessing COM objects through the runt
  The standard wrapper enforces built-in marshaling rules. For example, when a .NET client passes a String type as part of an argument to an unmanaged object, the wrapper converts the string to a BSTR type. Should the COM object return a BSTR to its managed caller, the caller receives a String. Both the client and the server send and receive data that is familiar to them. Other types require no conversion. For instance, a standard wrapper will always pass a 4-byte integer between managed and unmanaged code without converting the type.  
   
 ## Marshaling selected interfaces  
- The primary goal of the [runtime callable wrapper](runtime-callable-wrapper.md) (RCW) is to hide the differences between the managed and unmanaged programming models. To create a seamless transition, the RCW consumes selected COM interfaces without exposing them to the .NET client, as shown in the following illustration. 
+ The primary goal of the [runtime callable wrapper](runtime-callable-wrapper.md) (RCW) is to hide the differences between the managed and unmanaged programming models. To create a seamless transition, the RCW consumes selected COM interfaces without exposing them to the .NET client, as shown in the following illustration.
 
- The following image shows COM interfaces and the runtime callable wrapper: 
+ The following image shows COM interfaces and the runtime callable wrapper:
   
  ![Screenshot of the runtime callable wrapper with interfaces.](./media/runtime-callable-wrapper/runtime-callable-wrapper-interfaces.gif)  
   

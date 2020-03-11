@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertTextClient", "InsertTextClient.csproj", "{2BF1206C-65B4-4E9A-9291-C5C4D75450A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertTextTarget", "InsertTextTarget.csproj", "{0702BD55-C404-4D8F-B5FE-B363761B6169}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BF1206C-65B4-4E9A-9291-C5C4D75450A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BF1206C-65B4-4E9A-9291-C5C4D75450A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BF1206C-65B4-4E9A-9291-C5C4D75450A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BF1206C-65B4-4E9A-9291-C5C4D75450A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0702BD55-C404-4D8F-B5FE-B363761B6169}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0702BD55-C404-4D8F-B5FE-B363761B6169}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0702BD55-C404-4D8F-B5FE-B363761B6169}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0702BD55-C404-4D8F-B5FE-B363761B6169}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

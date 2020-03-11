@@ -21,7 +21,7 @@ Automatic memory management is one of the services that the Common Language Runt
   
  Allocating memory from the managed heap is faster than unmanaged memory allocation. Because the runtime allocates memory for an object by adding a value to a pointer, it is almost as fast as allocating memory from the stack. In addition, because new objects that are allocated consecutively are stored contiguously in the managed heap, an application can access the objects very quickly.  
   
-<a name="cpconautomaticmemorymanagementreleasingmemoryanchor1"></a>   
+<a name="cpconautomaticmemorymanagementreleasingmemoryanchor1"></a>
 ## Releasing Memory  
  The garbage collector's optimizing engine determines the best time to perform a collection based on the allocations being made. When the garbage collector performs a collection, it releases the memory for objects that are no longer being used by the application. It determines which objects are no longer being used by examining the application's roots. Every application has a set of roots. Each root either refers to an object on the managed heap or is set to null. An application's roots include static fields, local variables and parameters on a thread's stack, and CPU registers. The garbage collector has access to the list of active roots that the [just-in-time (JIT) compiler](../../docs/standard/managed-execution-process.md) and the runtime maintain. Using this list, it examines an application's roots, and in the process creates a graph that contains all the objects that are reachable from the roots.  
   

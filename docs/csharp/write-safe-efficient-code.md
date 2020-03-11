@@ -149,7 +149,7 @@ Returning `ref readonly` enables you to save copying larger structures and prese
 
 At the call site, callers make the choice to use the `Origin` property as a `ref readonly` or as a value:
 
-[!code-csharp[AssignRefReadonly](../../samples/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#AssignRefReadonly "Assigning a ref readonly")]
+[!code-csharp[AssignRefReadonly](../../samples/snippets/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#AssignRefReadonly "Assigning a ref readonly")]
 
 The first assignment in the preceding code makes a copy of the `Origin` constant and assigns
 that copy. The second assigns a reference. Notice that the `readonly` modifier
@@ -193,7 +193,7 @@ This practice often improves performance for readonly value types that are large
 The following code shows an example of a method
 that calculates the distance between two points in 3D space.
 
-[!code-csharp[InArgument](../../samples/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#InArgument "Specifying an in argument")]
+[!code-csharp[InArgument](../../samples/snippets/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#InArgument "Specifying an in argument")]
 
 The arguments are two structures that each contain three doubles. A double is 8 bytes,
 so each argument is 24 bytes. By specifying the `in` modifier, you pass a 4 byte
@@ -217,7 +217,7 @@ code shows you two examples of calling the `CalculateDistance` method. The
 first uses two local variables passed by reference. The second includes a
 temporary variable created as part of the method call.
 
-[!code-csharp[UseInArgument](../../samples/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#UseInArgument "Specifying an In argument")]
+[!code-csharp[UseInArgument](../../samples/snippets/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#UseInArgument "Specifying an In argument")]
 
 There are several ways in which the compiler enforces the read-only
 nature of an `in` argument.  First of all, the called method
@@ -248,12 +248,12 @@ may create a temporary variable for any `in` parameter, you can also specify def
 values for any `in` parameter. The following code specifies the origin
 (point 0,0) as the default value for the second point:
 
-[!code-csharp[InArgumentDefault](../../samples/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#InArgumentDefault "Specifying defaults for an in parameter")]
+[!code-csharp[InArgumentDefault](../../samples/snippets/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#InArgumentDefault "Specifying defaults for an in parameter")]
 
 To force the compiler to pass read-only arguments by reference, specify the `in` modifier
 on the arguments at the call site, as shown in the following code:
 
-[!code-csharp[UseInArgument](../../samples/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#ExplicitInArgument "Specifying an In argument")]
+[!code-csharp[UseInArgument](../../samples/snippets/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#ExplicitInArgument "Specifying an In argument")]
 
 This behavior makes it easier to adopt `in` parameters over time in large
 codebases where performance gains are possible. You add the `in` modifier
@@ -267,13 +267,13 @@ The `in` parameter designation can also be used with reference types or numeric 
 
 The techniques described above explain how to avoid copies by returning references and passing values by reference. These techniques work best when the argument types are declared as `readonly struct` types. Otherwise, the compiler must create **defensive copies** in many situations to enforce the readonly-ness of any arguments. Consider the following example that calculates the distance of a 3D point from the origin:
 
-[!code-csharp[InArgument](../../samples/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#InArgument "Specifying an in argument")]
+[!code-csharp[InArgument](../../samples/snippets/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#InArgument "Specifying an in argument")]
 
 The `Point3D` structure is *not* a readonly struct. There are six different property access calls in the body of this method. On first examination, you may have thought these accesses were safe. After all, a `get` accessor shouldn't modify the state of the object. But there's no language rule that enforces that. It's only a common convention. Any type could implement a `get` accessor that modified the internal state. Without some language guarantee, the compiler must create a temporary copy of the argument before calling any member. The temporary storage is created on the stack, the values of the argument are copied to the temporary storage, and the value is copied to the stack for each member access as the `this` argument. In many situations, these copies harm performance enough that pass-by-value is faster than pass-by-readonly-reference when the argument type isn't a `readonly struct`.
 
 Instead, if the distance calculation uses the immutable struct, `ReadonlyPoint3D`, temporary objects aren't needed:
 
-[!code-csharp[readonlyInArgument](../../samples/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#ReadOnlyInArgument "Specifying a readonly in argument")]
+[!code-csharp[readonlyInArgument](../../samples/snippets/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#ReadOnlyInArgument "Specifying a readonly in argument")]
 
 The compiler generates more efficient code when you call members of a
 `readonly struct`: The `this` reference, instead of a copy of the receiver,

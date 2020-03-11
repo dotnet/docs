@@ -123,5 +123,5 @@ Components of a TileBrush with a TileMode of Tile
 - [Painting with Images, Drawings, and Visuals](painting-with-images-drawings-and-visuals.md)
 - [How-to Topics](brushes-how-to-topics.md)
 - [Freezable Objects Overview](../advanced/freezable-objects-overview.md)
-- [ImageBrush Sample](https://go.microsoft.com/fwlink/?LinkID=160005)
-- [VisualBrush Sample](https://go.microsoft.com/fwlink/?LinkID=160049)
+- [ImageBrush Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/ImageBrush)
+- [VisualBrush Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/VisualBrush)

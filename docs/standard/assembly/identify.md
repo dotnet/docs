@@ -82,7 +82,7 @@ End Module
 ' Output (with .NET Framework 3.5 installed):  
 '        Yes, the file is an Assembly.  
 ```
- 
+
 The <xref:System.Reflection.AssemblyName.GetAssemblyName%2A> method loads the test file, and then releases it once the information is read.  
   
 ## See also

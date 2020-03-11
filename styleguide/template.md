@@ -34,7 +34,7 @@ The full metadata block is above (in the [raw Markdown](https://raw.githubuserco
 - Colons in a value (for example, a title) break the metadata parser. In this case, surround the title with double quotes (for example, `title: "Writing .NET Core console apps: An advanced step-by-step guide"`).
 - **title**: Appears in search engine results. The title shouldn't be identical to the title in your H1 heading, and it should contain 60 characters or less.
 - **description**: Summarizes the content of the article. It's usually shown in the search results page, but it isn't used for search ranking. Its length should be 115-145 characters including spaces.
-- **author** and **ms.author**: The author field should contain the **GitHub username** of the author, not his/her alias.  The **ms.author** field, on the other hand, should contain a Microsoft alias and indicates the person responsible for maintaining the article.
+- **author** and **ms.author**: The author field should contain the **GitHub username** of the author, not their alias. The **ms.author** field, on the other hand, should contain a Microsoft alias and indicates the person responsible for maintaining the article.
 - **ms.topic**: The topic type. The most common value is `conceptual` and is set at a global level. Other common values used are `tutorial`, `overview`, and `reference`.
 - **dev_langs** defines the language filter displayed for the topic. You can see a list of the supported values in the [Supported languages](#supported-languages) section. Only needs to be set when there's more than one programming language covered in the topic. Typically, we only use `csharp`, `vb`, `fsharp`, and `cpp` for this value in our content.
 - **ms.prod**: Product identification used for BI purposes. They're usually set at a global level, so they don't usually appear in the metadata block of each article.
@@ -249,7 +249,7 @@ You can include the code using the following syntax:
   - Language of the code snippet being referenced. For a list of supported values, see [Supported languages](#supported-languages).
 
 - `<name>` (*optional*)
-  - Name for the code snippet. It doesn’t have any impact on the output HTML, but you can use it to improve the readability of your Markdown source.
+  - Name for the code snippet. It doesn't have any impact on the output HTML, but you can use it to improve the readability of your Markdown source.
 
 - `<pathToFile>` (*mandatory*)
   - Relative path in the file system that indicates the code snippet file to reference.

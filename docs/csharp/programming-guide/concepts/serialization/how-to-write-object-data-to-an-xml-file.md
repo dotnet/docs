@@ -19,14 +19,14 @@ public class XMLWrite
   
     public class Book  
     {  
-        public String title;   
+        public String title;
     }  
   
     public static void WriteXML()  
     {  
         Book overview = new Book();  
         overview.title = "Serialization Overview";  
-        System.Xml.Serialization.XmlSerializer writer =   
+        System.Xml.Serialization.XmlSerializer writer =
             new System.Xml.Serialization.XmlSerializer(typeof(Book));  
   
         var path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "//SerializationOverview.xml";  

@@ -137,7 +137,7 @@ dotnet publish -c Release
 
 This command compiles your app to the *publish* folder. The path to the *publish* folder from the working folder should be `.\app\bin\Release\netcoreapp3.1\publish\`
 
-From the *app* folder, get a directory listing of the publish folder to verify that the *myapp.dll* file was created. 
+From the *app* folder, get a directory listing of the publish folder to verify that the *myapp.dll* file was created.
 
 ```console
 > dir bin\Release\netcoreapp3.1\publish

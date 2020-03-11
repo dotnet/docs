@@ -30,7 +30,7 @@ Examples of the type of predictions that you can make with ML.NET:
 
 ## Hello ML.NET World
 
-The code in the following snippet demonstrates the simplest ML.NET application. This example constructs a linear regression model to predict house prices using house size and price data. 
+The code in the following snippet demonstrates the simplest ML.NET application. This example constructs a linear regression model to predict house prices using house size and price data.
 
  ```csharp
     using System;

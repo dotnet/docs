@@ -81,7 +81,7 @@ class test {
         // Print out the number of attributes and their names.  
         Console.WriteLine( "Number of Attributes: "+ac.Count );  
         for( int i = 0; i < ac.Count; i++ )  
-            Console.WriteLine( (i+1) + ".  Attribute Name: '" +ac[i].Name+ "'  Attribute Value:  '"+ ac[i].Value +"'" );   
+            Console.WriteLine( (i+1) + ".  Attribute Name: '" +ac[i].Name+ "'  Attribute Value:  '"+ ac[i].Value +"'" );
   
         // Get the 'attr1' from child1.  
         XmlAttribute attr = doc.DocumentElement.ChildNodes[0].Attributes[0];  
@@ -91,9 +91,9 @@ class test {
   
         // 'attr1' will be removed from 'child1' and added to 'child2'.  
         // Print out the number of attributes and their names.  
-        Console.WriteLine( "Number of Attributes: "+ac.Count );          
+        Console.WriteLine( "Number of Attributes: "+ac.Count );
         for( int i = 0; i < ac.Count; i++ )  
-            Console.WriteLine( (i+1) + ".  Attribute Name: '" +ac[i].Name+ "'  Attribute Value:  '"+ ac[i].Value +"'" );   
+            Console.WriteLine( (i+1) + ".  Attribute Name: '" +ac[i].Name+ "'  Attribute Value:  '"+ ac[i].Value +"'" );
   
         // Create a new attribute and add to the collection.  
         XmlAttribute attr2 = doc.CreateAttribute( "attr4" );  
@@ -101,9 +101,9 @@ class test {
         ac.SetNamedItem( attr2 );  
   
         // Print out the number of attributes and their names.  
-        Console.WriteLine( "Number of Attributes: "+ac.Count );          
+        Console.WriteLine( "Number of Attributes: "+ac.Count );
         for( int i = 0; i < ac.Count; i++ )  
-            Console.WriteLine( (i+1) + ".  Attribute Name: '" +ac[i].Name+ "'  Attribute Value:  '"+ ac[i].Value +"'" );           
+            Console.WriteLine( (i+1) + ".  Attribute Name: '" +ac[i].Name+ "'  Attribute Value:  '"+ ac[i].Value +"'" );
   
     }  
 }  

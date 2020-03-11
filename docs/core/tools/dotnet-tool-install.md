@@ -14,9 +14,18 @@ ms.date: 02/14/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet tool install <PACKAGE_NAME> <-g|--global> [--add-source] [--configfile] [--framework] [-v|--verbosity] [--version]
-dotnet tool install <PACKAGE_NAME> <--tool-path> [--add-source] [--configfile] [--framework] [-v|--verbosity] [--version]
-dotnet tool install <PACKAGE_NAME> [--add-source] [--configfile] [--framework] [-v|--verbosity] [--version]
+dotnet tool install <PACKAGE_NAME> <-g|--global>
+    [--add-source] [--configfile] [--framework]
+    [-v|--verbosity] [--version]
+
+dotnet tool install <PACKAGE_NAME> <--tool-path>
+    [--add-source] [--configfile] [--framework]
+    [-v|--verbosity] [--version]
+
+dotnet tool install <PACKAGE_NAME>
+    [--add-source] [--configfile] [--framework]
+    [-v|--verbosity] [--version]
+
 dotnet tool install <-h|--help>
 ```
 
@@ -67,7 +76,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 - **`-g|--global`**
 
-  Specifies that the installation is user wide. Can't be combined with the `--tool-path` option. Omitting both `--global` and `--tool-path` specifies a local tool installation. 
+  Specifies that the installation is user wide. Can't be combined with the `--tool-path` option. Omitting both `--global` and `--tool-path` specifies a local tool installation.
 
 - **`-h|--help`**
 
@@ -75,7 +84,7 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 
 - **`tool-path <PATH>`**
 
-  Specifies the location where to install the Global Tool. PATH can be absolute or relative. If PATH doesn't exist, the command tries to create it. Omitting both `--global` and `--tool-path` specifies a local tool installation. 
+  Specifies the location where to install the Global Tool. PATH can be absolute or relative. If PATH doesn't exist, the command tries to create it. Omitting both `--global` and `--tool-path` specifies a local tool installation.
 
 - **`-v|--verbosity <LEVEL>`**
 
@@ -110,3 +119,5 @@ For more information, see [Install a local tool](global-tools.md#install-a-local
 ## See also
 
 - [.NET Core tools](global-tools.md)
+- [Tutorial: Install and use a .NET Core global tool using the .NET Core CLI](global-tools-how-to-use.md)
+- [Tutorial: Install and use a .NET Core local tool using the .NET Core CLI](local-tools-how-to-use.md)

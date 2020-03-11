@@ -1,0 +1,35 @@
+﻿<Window x:Class="IntroToStylingAndTemplating.Window5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IntroToStylingAndTemplating"
+        mc:Ignorable="d"
+        Title="Window5" SizeToContent="WidthAndHeight" MinWidth="250">
+    <Window.Resources>
+        <ControlTemplate x:Key="roundbuttonUnneeded" TargetType="Button">
+            <Grid>
+                <Ellipse x:Name="backgroundElement" Fill="{TemplateBinding Background}" Stroke="{TemplateBinding Foreground}" />
+                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Grid>
+            <ControlTemplate.Triggers>
+                <!--<SnippetMouseOver>-->
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Setter Property="Fill" TargetName="backgroundElement" Value="AliceBlue"/>
+                </Trigger>
+                <!--</SnippetMouseOver>-->
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+        <!--<SnippetCleanTemplate>-->
+        <ControlTemplate x:Key="roundbutton" TargetType="Button">
+            <Grid>
+                <Ellipse x:Name="backgroundElement" Fill="{TemplateBinding Background}" Stroke="{TemplateBinding Foreground}" />
+                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+            </Grid>
+        </ControlTemplate>
+        <!--</SnippetCleanTemplate>-->
+    </Window.Resources>
+    <Grid>
+
+    </Grid>
+</Window>

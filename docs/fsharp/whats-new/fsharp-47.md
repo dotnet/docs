@@ -33,16 +33,16 @@ You no longer need to apply the `yield` keyword in arrays, lists, sequences, or 
 let s = seq { 1; 2; 3; 4; 5 }
 
 let daysOfWeek includeWeekend =
-    [ 
+    [
         "Monday"
         "Tuesday"
         "Wednesday"
         "Thursday"
         "Friday"
-        if includeWeekend then 
+        if includeWeekend then
             "Saturday"
             "Sunday"
-    ] 
+    ]
 ```
 
 If you introduce a single `yield` keyword, every other item must also have `yield` applied to it.

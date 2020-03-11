@@ -2,7 +2,7 @@
 title: What is Model Builder and how does it work?
 description: How to use the ML.NET Model Builder to automatically train a machine learning model
 ms.date: 01/07/2020
-ms.custom: overview
+ms.custom: overview, mlnet-tooling
 #Customer intent: As a developer, I want to use Model Builder to automatically train a model using a visual interface.
 ---
 # What is Model Builder and how does it work?
@@ -154,7 +154,7 @@ These numbers are a guide only. The exact length of training is dependent on:
 
 Evaluation is the process of measuring how good your model is. Model Builder uses the trained model to make predictions with new test data, and then measures how good the predictions are.
 
-Model Builder splits the training data into a training set and a test set. The training data (80%) is used to train your model and the test data (20%) is held back to evaluate your model. 
+Model Builder splits the training data into a training set and a test set. The training data (80%) is used to train your model and the test data (20%) is held back to evaluate your model.
 
 ### How do I understand my model performance?
 

@@ -167,6 +167,10 @@
       "ms.custom": "updateeachrelease"
     },
     {
+      "source_path": "docs/core/install/linux-package-manager-rhel81.md",
+      "redirect_url": "/dotnet/core/install/linux-package-manager-rhel8"
+    },
+    {
       "source_path": "docs/core/migrating-from-dnx.md",
       "redirect_url": "/dotnet/core/migration/from-dnx",
       "redirect_document_id": true
@@ -369,6 +373,10 @@
       "source_path": "docs/core/testing/using-mstest-on-windows.md",
       "redirect_url": "/dotnet/core/testing/unit-testing-with-mstest",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/core/tools/extensibility.md",
+      "redirect_url": "/dotnet/core/project-sdk/overview"
     },
     {
       "source_path": "docs/core/tools/project-json.md",
@@ -1020,6 +1028,14 @@
     {
       "source_path": "docs/csharp/programming-guide/classes-and-structs/how-to-access-a-collection-class-with-foreach.md",
       "redirect_url": "/dotnet/csharp/language-reference/keywords/foreach-in"
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/classes-and-structs/structs.md",
+      "redirect_url": "/dotnet/csharp/language-reference/builtin-types/struct"
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/classes-and-structs/using-structs.md",
+      "redirect_url": "/dotnet/csharp/language-reference/builtin-types/struct"
     },
     {
       "source_path": "docs/csharp/programming-guide/concepts/assemblies-gac/index.md",
@@ -1713,8 +1729,16 @@
       "redirect_url": "/dotnet/csharp/roslyn-sdk/"
     },
     {
+      "source_path": "docs/csharp/structs.md",
+      "redirect_url": "/dotnet/csharp/language-reference/builtin-types/struct"
+    },
+    {
       "source_path": "docs/csharp/tour-of-csharp/enums.md",
       "redirect_url": "/dotnet/csharp/language-reference/builtin-types/enum"
+    },
+    {
+      "source_path": "docs/csharp/tour-of-csharp/structs.md",
+      "redirect_url": "/dotnet/csharp/language-reference/builtin-types/struct"
     },
     {
       "source_path": "docs/csharp/tutorials/default-interface-members-versions.md",

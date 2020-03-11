@@ -26,7 +26,7 @@ Retrieving a custom attribute is a simple process. First, declare an instance of
   
 - [Retrieving multiple instances of an attribute applied to different scopes](#cpconretrievingmultipleinstancesofattributeappliedtodifferentscopes)  
   
-<a name="cpconretrievingsingleinstanceofattribute"></a>   
+<a name="cpconretrievingsingleinstanceofattribute"></a>
 ## Retrieving a Single Instance of an Attribute  
  In the following example, the `DeveloperAttribute` (described in the previous section) is applied to the `MainApp` class on the class level. The `GetAttribute` method uses **GetCustomAttribute** to retrieve the values stored in `DeveloperAttribute` on the class level before displaying them to the console.  
   
@@ -45,12 +45,12 @@ The Reviewed Attribute is: True.
  If the attribute is not found, the **GetCustomAttribute** method initializes `MyAttribute` to a null value. This example checks `MyAttribute` for such an instance and notifies the user if no attribute is found. If the `DeveloperAttribute` is not found in the class scope, the following message displays to the console.  
   
 ```console  
-The attribute was not found.   
+The attribute was not found.
 ```  
   
  This example assumes that the attribute definition is in the current namespace. Remember to import the namespace in which the attribute definition resides if it is not in the current namespace.  
   
-<a name="cpconretrievingmultipleinstancesofattributeappliedtosamescope"></a>   
+<a name="cpconretrievingmultipleinstancesofattributeappliedtosamescope"></a>
 ## Retrieving Multiple Instances of an Attribute Applied to the Same Scope  
  In the previous example, the class to inspect and the specific attribute to find are passed to <xref:System.Attribute.GetCustomAttribute%2A>. That code works well if only one instance of an attribute is applied on the class level. However, if multiple instances of an attribute are applied on the same class level, the **GetCustomAttribute** method does not retrieve all the information. In cases where multiple instances of the same attribute are applied to the same scope, you can use <xref:System.Attribute.GetCustomAttributes%2A?displayProperty=nameWithType> to place all instances of an attribute into an array. For example, if two instances of `DeveloperAttribute` are applied on the class level of the same class, the `GetAttribute` method can be modified to display the information found in both attributes. Remember, to apply multiple attributes on the same level, the attribute must be defined with the **AllowMultiple** property set to **true** in the <xref:System.AttributeUsageAttribute>.  
   
@@ -62,7 +62,7 @@ The attribute was not found.
   
  If no attributes are found, this code alerts the user. Otherwise, the information contained in both instances of `DeveloperAttribute` is displayed.  
   
-<a name="cpconretrievingmultipleinstancesofattributeappliedtodifferentscopes"></a>   
+<a name="cpconretrievingmultipleinstancesofattributeappliedtodifferentscopes"></a>
 ## Retrieving Multiple Instances of an Attribute Applied to Different Scopes  
  The <xref:System.Attribute.GetCustomAttributes%2A> and <xref:System.Attribute.GetCustomAttribute%2A> methods do not search an entire class and return all instances of an attribute in that class. Rather, they search only one specified method or member at a time. If you have a class with the same attribute applied to every member and you want to retrieve the values in all the attributes applied to those members, you must supply every method or member individually to **GetCustomAttributes** and **GetCustomAttribute**.  
   

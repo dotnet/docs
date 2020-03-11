@@ -12,11 +12,11 @@ ms.assetid: 2f8081f6-0de2-4903-898d-99696c48d2f4
 
 The `readonly` keyword is a modifier that can be used in four contexts:
 
-- In a [field declaration](#readonly-field-example), `readonly` indicates that assignment to the field can only occur as part of the declaration or in a constructor in the same class. A readonly field can be assigned and reassigned multiple times within the field declaration and constructor. 
+- In a [field declaration](#readonly-field-example), `readonly` indicates that assignment to the field can only occur as part of the declaration or in a constructor in the same class. A readonly field can be assigned and reassigned multiple times within the field declaration and constructor.
   
   A `readonly` field can't be assigned after the constructor exits. This rule has different implications for value types and reference types:
   
-  - Because value types directly contain their data, a field that is a  `readonly` value type is immutable. 
+  - Because value types directly contain their data, a field that is a  `readonly` value type is immutable.
   - Because reference types contain a reference to their data, a field that is a `readonly` reference type must always refer to the same object. That object isn't immutable. The `readonly` modifier prevents the field from being replaced by a different instance of the reference type. However, the modifier doesn't prevent the instance data of the field from being modified through the read-only field.
 
   > [!WARNING]
@@ -129,7 +129,7 @@ public readonly int Index { get; }
 // Or:
 public int Number { readonly get; }
 public string Message { readonly get; set; }
-``` 
+```
 
 You may add the `readonly` modifier in those locations, but it will have no meaningful effect. You may not add the `readonly` modifier to an auto-implemented property setter, or to a read/write auto-implemented property.
 

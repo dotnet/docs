@@ -89,5 +89,3 @@ For example, the following .NET types support both indices and ranges: <xref:Sys
 You'll often use ranges and indices when you want to analyze a subrange of a larger sequence. The new syntax is clearer in reading exactly what subrange is involved. The local function `MovingAverage` takes a <xref:System.Range> as its argument. The method then enumerates just that range when calculating the min, max, and average. Try the following code in your project:
 
 [!code-csharp[MovingAverages](~/samples/snippets/csharp/tutorials/RangesIndexes/IndicesAndRanges.cs#IndicesAndRanges_MovingAverage)]
-
-You can download the completed code from the [dotnet/samples](https://github.com/dotnet/samples/tree/master/csharp/tutorials/RangesIndexes) repository.

@@ -15,7 +15,7 @@ namespace RuneSamples
             PrintChars("🐂");
 
             // <SnippetPrintChars>
-            static void PrintChars(string s)
+            void PrintChars(string s)
             {
                 Console.WriteLine($"\"{s}\".Length = {s.Length}");
                 for (int i = 0; i < s.Length; i++)

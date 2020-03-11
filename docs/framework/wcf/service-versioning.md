@@ -153,7 +153,7 @@ public interface IPurchaseOrderV2
     DateTime OrderDate { get; set; }  
 }
 
-[DataContract(   
+[DataContract(
 Name = "PurchaseOrder",  
 Namespace = "http://examples.microsoft.com/WCF/2006/02/PurchaseOrder")]  
 public class PurchaseOrderV2 : IPurchaseOrderV1, IPurchaseOrderV2  

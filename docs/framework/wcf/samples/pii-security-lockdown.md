@@ -14,11 +14,11 @@ This sample demonstrates how to control several security-related features of a W
   
 > [!IMPORTANT]
 > The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\SecurityLockdown`  
   
 ## Discussion  
@@ -53,14 +53,14 @@ This sample demonstrates how to control several security-related features of a W
 ```xml  
 <configuration>  
    <system.serviceModel>  
-      <behaviors>   
-          <serviceBehaviors>   
-             <behavior name="CalculatorServiceBehavior" lockItem="true">   
-               <serviceMetadata httpGetEnabled="True"/>   
-               <serviceDebug includeExceptionDetailInFaults="False" />   
-             </behavior>   
-          </serviceBehaviors>   
-       </behaviors>   
+      <behaviors>
+          <serviceBehaviors>
+             <behavior name="CalculatorServiceBehavior" lockItem="true">
+               <serviceMetadata httpGetEnabled="True"/>
+               <serviceDebug includeExceptionDetailInFaults="False" />
+             </behavior>
+          </serviceBehaviors>
+       </behaviors>
     </system.serviceModel>  
 </configuration>  
 ```  
@@ -92,13 +92,13 @@ This sample demonstrates how to control several security-related features of a W
     <system.diagnostics>  
         <sources>  
             <source name="System.ServiceModel.MessageLogging" logKnownPii="true">  
-                <listeners>   
-                ...   
+                <listeners>
+                ...
                 </listeners>  
             </source>  
             <source name="System.ServiceModel" switchValue="Verbose, ActivityTracing">  
             <listeners>  
-        ...   
+        ...
             </listeners>  
             </source>  
         </sources>  

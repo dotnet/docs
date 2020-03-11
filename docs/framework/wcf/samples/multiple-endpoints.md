@@ -14,7 +14,7 @@ The Multiple Endpoints sample demonstrates how to configure multiple endpoints o
  The service Web.config file has been modified to define two endpoints, each supporting the same `ICalculator` contract, but at different addresses using different bindings. The first endpoint is defined at the base address using a `basicHttpBinding` binding, which does not have security enabled. The second endpoint is defined at {baseaddress}/secure using a `wsHttpBinding` binding, which is secure by default, using WS-Security with Windows authentication.  
   
 ```xml  
-<service   
+<service
     name="Microsoft.ServiceModel.Samples.CalculatorService"  
     behaviorConfiguration="CalculatorServiceBehavior">  
   <!-- This endpoint is exposed at the base address provided by host:  
@@ -38,14 +38,14 @@ The Multiple Endpoints sample demonstrates how to configure multiple endpoints o
   <!-- Passing "basic" into the constructor of the CalculatorClient  
        class selects this endpoint.-->  
   <endpoint name="basic"  
-            address="http://localhost/servicemodelsamples/service.svc"   
-            binding="basicHttpBinding"   
+            address="http://localhost/servicemodelsamples/service.svc"
+            binding="basicHttpBinding"
             contract="Microsoft.ServiceModel.Samples.ICalculator" />  
   <!-- Passing "secure" into the constructor of the CalculatorClient  
        class selects this endpoint.-->  
   <endpoint name="secure"  
-            address="http://localhost/servicemodelsamples/service.svc/secure"   
-            binding="wsHttpBinding"   
+            address="http://localhost/servicemodelsamples/service.svc/secure"
+            binding="wsHttpBinding"
             contract="Microsoft.ServiceModel.Samples.ICalculator" />  
 </client>  
 ```  
@@ -106,9 +106,9 @@ Press <ENTER> to terminate client.
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\MultipleEndpoints`  

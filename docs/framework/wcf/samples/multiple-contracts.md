@@ -14,7 +14,7 @@ The Multiple Contracts sample demonstrates how to implement more than one contra
  The service configuration has been modified to define two endpoints to expose each contract. The `ICalculator` endpoint is exposed at the base address using a `basicHttpBinding`. The `ICalculatorSession` endpoint is exposed at the baseaddress/session using a `wsHttpBinding` with the `bindingConfiguration` attribute set to `BindingWithSession`, as shown in the following sample configuration.  
   
 ```xml  
-<service   
+<service
     name="Microsoft.ServiceModel.Samples.CalculatorService"  
     behaviorConfiguration="CalculatorServiceBehavior">  
   <!-- ICalculator endpoint is exposed using BasicBinding at the base  
@@ -28,7 +28,7 @@ The Multiple Contracts sample demonstrates how to implement more than one contra
        http://localhost/servicemodelsamples/service.svc/session -->  
   <endpoint address="session"  
             binding="wsHttpBinding"  
-            bindingConfiguration="BindingWithSession"   
+            bindingConfiguration="BindingWithSession"
            contract="Microsoft.ServiceModel.Samples.ICalculatorSession" />  
   ...  
 </service>  
@@ -50,9 +50,9 @@ The Multiple Contracts sample demonstrates how to implement more than one contra
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\MultipleContracts`  

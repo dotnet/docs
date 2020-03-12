@@ -62,7 +62,7 @@ using System.Linq;
   
 ## Common Usage Patterns
  ### Collection Functionality
-  In the past it was common to create "Collection Classes" that implemented the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface for a given Type and contained functionality that acted on collections of that type. While there is nothing wrong with creating this type of collection object, the same functionality can be achieved by using an extension on the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>. Extensions have the advantage of allowing the functionality to be called from any collection such as an <xref:System.Array?displayProperty=nameWithType> or <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> that implements <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> on that type. An example of this using an Array of Int32 can be found [earlier in this article](#orderby-example).
+  In the past it was common to create "Collection Classes" that implemented the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface for a given type and contained functionality that acted on collections of that type. While there is nothing wrong with creating this type of collection object, the same functionality can be achieved by using an extension on the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>. Extensions have the advantage of allowing the functionality to be called from any collection such as an <xref:System.Array?displayProperty=nameWithType> or <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> that implements <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> on that type. An example of this using an Array of Int32 can be found [earlier in this article](#orderby-example).
 
  ### Layer-Specific Functionality
   When using an Onion Architecture or other layered application design it is common to have a set of Domain Entities or Data Transfer Objects that can be used to communicate across application boundaries. These objects generally contain no functionality, or only minimal functionality that applies to all layers of the application. Extension methods can be used to add functionality that is specific to each application layer without loading the object down with methods not needed or wanted in other layers.
@@ -81,11 +81,15 @@ static class DomainEntityExtensions
         => $"{value.FirstName} {value.LastName}";
 }
 ```
+ ### Extending Predefined Types
+  Rather than creating new objects when reusable functionality needs to be created, we can often extend an existing type such as a .NET Framework or CLR type. As an example, we could create an `Engine` or `Query` class to do the work of making a query call to a SQL Server that may be made from multiple places in our code, or we could extend the <xref:System.Data.SqlClient.SqlConnection?displayProperty=nameWithType> class to perform that query from anywhere we have a connection to a SQL Server. We can also add common functionality to the <xref:System.String?displayProperty=nameWithType> class, extend the data processing capabilities of the <xref:System.IO.File?displayProperty=nameWithType> and <xref:System.IO.Stream?displayProperty=nameWithType> objects, and <xref:System.Exception?displayProperty=nameWithType> objects for specific error handling functionality. These types of use-cases are limited only by your imagination and good sense.
 
 ## General Guidelines  
- In general, we recommend that you implement extension methods sparingly and only when you have to. Whenever possible, client code that must extend an existing type should do so by creating a new type derived from the existing type. For more information, see [Inheritance](./inheritance.md).  
+ While it is still considered preferable to add functionality by modify an object's code or deriving a new type whenever it is reasonable and possible to do so, extension methods have become a crucial option for creating reusable functionality throughout the .NET ecosystem. For those occasions when the original source is not under your control, when a derived object is inappropriate or impossible, or when the functionality should not be exposed beyond its applicable scope, Extension methods are an excellent choice.
+
+ For more information on derived types, see [Inheritance](./inheritance.md).  
   
- When using an extension method to extend a type whose source code you cannot change, you run the risk that a change in the implementation of the type will cause your extension method to break.  
+ When using an extension method to extend a type whose source code you are not in control of, you run the risk that a change in the implementation of the type will cause your extension method to break.  
   
  If you do implement extension methods for a given type, remember the following points:  
   

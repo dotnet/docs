@@ -1,6 +1,6 @@
 ---
 title: "stackalloc operator - C# reference"
-ms.date: 09/20/2019
+ms.date: 03/12/2020
 f1_keywords: 
   - "stackalloc_CSharpKeyword"
 helpviewer_keywords: 
@@ -37,11 +37,23 @@ You can assign the result of the `stackalloc` operator to a variable of one of t
 
   In the case of pointer types, you can use a `stackalloc` expression only in a local variable declaration to initialize the variable.
 
-The content of the newly allocated memory is undefined. Beginning with C# 7.3, you can use array initializer syntax to define the content of the newly allocated memory. The following example demonstrates various ways to do that:
+The amount of memory available on the stack is limited. If you allocate too much memory on the stack, a <xref:System.StackOverflowException> is thrown. To avoid that, follow the rules below:
+
+- Limit the amount of memory you allocate with the `stackalloc` operator:
+
+  [!code-csharp[limit stackalloc](snippets/StackallocOperator.cs#LimitStackalloc)]
+
+  Because the amount of memory available on the stack depends on the environment in which the code is executed, be conservative when you define the actual limit value.
+
+- Avoid using the `stackalloc` operator inside loops. Allocate the memory block outside a loop and reuse it inside the loop.
+
+The content of the newly allocated memory is undefined. You should initialize it before the use. For example, you can use the <xref:System.Span%601.Clear%2A?displayProperty=nameWithType> method that sets all the items to the default value of type `T`.
+
+Beginning with C# 7.3, you can use array initializer syntax to define the content of the newly allocated memory. The following example demonstrates various ways to do that:
 
 [!code-csharp[stackalloc initialization](snippets/StackallocOperator.cs#StackallocInit)]
 
-In expression `stackalloc T[E]`, `T` must be an [unmanaged type](../builtin-types/unmanaged-types.md) and `E` must be an expression of type [int](../builtin-types/integral-numeric-types.md).
+In expression `stackalloc T[E]`, `T` must be an [unmanaged type](../builtin-types/unmanaged-types.md) and `E` must evaluate to a non-negative [int](../builtin-types/integral-numeric-types.md) value.
 
 ## Security
 
@@ -58,3 +70,4 @@ For more information, see the [Stack allocation](~/_csharplang/spec/unsafe-code.
 - [Pointer related operators](pointer-related-operators.md)
 - [Pointer types](../../programming-guide/unsafe-code-pointers/pointer-types.md)
 - [Memory and span-related types](../../../standard/memory-and-spans/index.md)
+- [Dos and Don'ts of stackalloc](https://vcsjones.dev/2020/02/24/stackalloc/)

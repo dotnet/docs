@@ -25,7 +25,7 @@ If you don't already have one, create an [Azure HDInsight Spark](https://docs.mi
 
 1. Create a new Azure HDInsight cluster resource. Select **Spark 2.4** and **HDI 4.0** during cluster creation.
 
-## Installation Procedure
+## Install .NET for Apache Spark
 
 In the Azure portal, select the **HDInsight Spark cluster** you created in the previous step.
 
@@ -116,7 +116,7 @@ Follow the instructions in the [Stop Livy server](#stop-livy-server) section to 
 
    When prompted, select **CONFIRM RESTART ALL** to continue, then click **OK** to finish.
 
-## Submit Jobs through a Jupyter notebook
+## Submit jobs through a Jupyter notebook
 
 After finishing the previous steps, you can now submit your .NET for Apache Spark jobs through Jupyter notebooks.
 

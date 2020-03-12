@@ -74,7 +74,7 @@ String serialized = XMLConvert.ToString(myDateTime);
   
 ```csharp
 DateTime myDateTime = DateTime.UtcNow;  
-String serialized = XmlConvert.ToString(myDateTime,   
+String serialized = XmlConvert.ToString(myDateTime,
     XmlDateTimeSerializationMode.RoundtripKind);  
 ```  
   

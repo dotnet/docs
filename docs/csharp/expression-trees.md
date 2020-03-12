@@ -17,7 +17,7 @@ are functions.
 
 You write function arguments, typically using Lambda Expressions, when
 you create LINQ queries. In a typical LINQ query, those function arguments are
-transformed into a delegate the compiler creates. 
+transformed into a delegate the compiler creates.
 
 When you want to have a richer interaction, you need to use *Expression Trees*.
 Expression Trees represent code as a structure that you can examine,
@@ -43,11 +43,11 @@ structures to create rich adaptive algorithms.
 1. [Expression Trees Explained](expression-trees-explained.md)
 
     Understand the structure and concepts behind *Expression Trees*.
-    
+
 2. [Framework Types Supporting Expression Trees](expression-classes.md)
-    
+
     Learn about the structures and classes that define and manipulate expression trees.
-    
+
 3. [Executing Expressions](expression-trees-execution.md)
 
     Learn how to convert an expression tree represented as a Lambda Expression into a delegate and execute the resulting delegate.

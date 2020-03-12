@@ -29,10 +29,10 @@ public interface ICalculator
     // It would be equivalent to write explicitly:
     // [OperationContract(IsOneWay=false)]
     int Add(int a, int b);
-    
+
     [OperationContract]
     int Subtract(int a, int b);
-    
+
     int Multiply(int a, int b)
 }
 ```

@@ -22,7 +22,7 @@ Gets data about the specified column in the specified table.
 ## Syntax  
   
 ```cpp  
-HRESULT GetColumnInfo (   
+HRESULT GetColumnInfo (
     [in]  ULONG        ixTbl,  
     [in]  ULONG        ixCol,  
     [out] ULONG        *poCol,  
@@ -52,7 +52,7 @@ HRESULT GetColumnInfo (
   
  `ppName`  
  [out] A pointer to a pointer to the column name.  
- 
+
 ## Remarks
 
 The returned column type falls within a range of values:

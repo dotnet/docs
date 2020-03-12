@@ -18,7 +18,7 @@ Raises the <xref:System.Windows.Xps.XpsDocumentWriter.WritingCancelled> event.
 ## Syntax
 
 ```csharp
-public void raise__WritingCancelled (object value0, 
+public void raise__WritingCancelled (object value0,
   System.Windows.Documents.Serialization.WritingCancelledEventArgs value1);
 ```
 

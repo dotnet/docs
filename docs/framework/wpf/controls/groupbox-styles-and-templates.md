@@ -13,11 +13,11 @@ ms.assetid: 33df7037-0a1b-476f-b9d0-41566a777699
 # GroupBox Styles and Templates
 <a name="introduction"></a> This topic describes the styles and templates for the <xref:System.Windows.Controls.GroupBox> control. You can modify the default <xref:System.Windows.Controls.ControlTemplate> to give the control a unique appearance. For more information, see [Create a template for a control](../../../desktop-wpf/themes/how-to-create-apply-template.md).  
   
-<a name="groupbox_parts"></a>   
+<a name="groupbox_parts"></a>
 ## GroupBox Parts  
  The <xref:System.Windows.Controls.GroupBox> control does not have any named parts.  
   
-<a name="groupbox_states"></a>   
+<a name="groupbox_states"></a>
 ## GroupBox States  
  The following table lists the visual states for the <xref:System.Windows.Controls.GroupBox> control.  
   
@@ -27,7 +27,7 @@ ms.assetid: 33df7037-0a1b-476f-b9d0-41566a777699
 |InvalidFocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control has focus.|  
 |InvalidUnfocused|ValidationStates|The <xref:System.Windows.Controls.Validation.HasError%2A?displayProperty=nameWithType> attached property is `true` has the control does not have focus.|  
   
-<a name="groupbox_controltemplate_example"></a>   
+<a name="groupbox_controltemplate_example"></a>
 ## GroupBox ControlTemplate Example  
  The following example shows how to define a <xref:System.Windows.Controls.ControlTemplate> for the <xref:System.Windows.Controls.GroupBox> control.  
   

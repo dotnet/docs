@@ -1,46 +1,47 @@
-- name: .NET Framework Guide
+- name: .NET Framework guide
   href: index.md
-- name: What's New
+- name: What's new
   href: whats-new/
-- name: Get Started
+- name: Get started
   href: get-started/
 - name: Installation guide
   href: install/
-- name: Migration Guide
+- name: Migration guide
   href: migration-guide/
-- name: Development Guide
+- name: Development guide
   href: development-guide.md
   items:
-  - name: Application Domains and Assemblies
+  - name: Application domains and assemblies
     href: app-domains/
-  - name: Resources in Desktop Apps
+  - name: Resources in desktop apps
     href: resources/
   - name: Accessibility
     href: ui-automation/
-  - name: Data and Modeling
+  - name: Data and modeling
     href: data/
-  - name: Client Applications
-    href: develop-client-apps.md
+  - name: Client apps
     items:
+    - name: Overview
+      href: develop-client-apps.md
     - name: Windows Presentation Foundation
       href: wpf/
     - name: Windows Forms
       href: winforms/
-  - name: Service-Oriented Applications with WCF
+  - name: Service-oriented apps with WCF
     href: wcf/
   - name: Windows Workflow Foundation
     href: windows-workflow-foundation/
-  - name: Windows Service Applications
+  - name: Windows Service apps
     href: windows-services/
-  - name: 64-bit Applications
+  - name: 64-bit apps
     href: 64-bit-apps.md
-  - name: Web Applications with ASP.NET
+  - name: Web apps with ASP.NET
     href: develop-web-apps-with-aspnet.md
-  - name: Network Programming in the .NET Framework
+  - name: Network programming
     href: network-programming/
-  - name: Configuring Apps
+  - name: Configure apps
     href: configure-apps/
-  - name: Compiling Apps with .NET Native
+  - name: Compile apps with .NET Native
     href: net-native/
   - name: Debugging, Tracing, and Profiling
     href: debug-trace-profile/
@@ -48,17 +49,17 @@
     href: deployment/
   - name: Performance
     href: performance/
-  - name: Dynamic Programming
+  - name: Dynamic programming
     href: reflection-and-codedom/
   - name: Managed Extensibility Framework (MEF)
     href: mef/
-  - name: Interoperating with Unmanaged Code
+  - name: Interoperate with unmanaged code
     href: interop/
-  - name: Unmanaged API Reference
+  - name: Unmanaged API reference
     href: unmanaged-api/
   - name: XAML Services
     href: ../desktop-wpf/xaml-services/
 - name: Tools
   href: tools/
-- name: Additional Class Libraries and APIs
+- name: Additional class libraries and APIs
   href: additional-apis/

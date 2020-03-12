@@ -16,7 +16,7 @@ Specifies whether the runtime creates <xref:System.Security.Policy.Publisher> ev
 ## Syntax  
   
 ```xml  
-<generatePublisherEvidence    
+<generatePublisherEvidence
    enabled="true|false"/>  
 ```  
   

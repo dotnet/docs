@@ -23,9 +23,9 @@ Opens an existing, on-disk file and maps its metadata into memory.
   
 ```cpp  
 HRESULT OpenScope (  
-    [in]  LPCWSTR     szScope,   
-    [in]  DWORD       dwOpenFlags,   
-    [in]  REFIID      riid,   
+    [in]  LPCWSTR     szScope,
+    [in]  DWORD       dwOpenFlags,
+    [in]  REFIID      riid,
     [out] IUnknown    **ppIUnk  
 );  
 ```  

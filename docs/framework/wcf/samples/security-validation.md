@@ -13,21 +13,21 @@ This sample demonstrates how to use a custom behavior to validate services on a 
  By adding user code to the `Validate` method contained in the <xref:System.ServiceModel.Description.IServiceBehavior> interface, custom behavior can be given to a service or endpoint to perform user-defined actions. The following code is used to loop through each endpoint contained in a service, which searches through their binding collections for secure bindings.  
   
 ```csharp
-public void Validate(ServiceDescription serviceDescription,   
+public void Validate(ServiceDescription serviceDescription,
                                        ServiceHostBase serviceHostBase)  
 {  
-    // Loop through each endpoint individually, gathering their    
+    // Loop through each endpoint individually, gathering their
     // binding elements.  
     foreach (ServiceEndpoint endpoint in serviceDescription.Endpoints)  
     {  
         secureElementFound = false;  
   
         // Retrieve the endpoint's binding element collection.  
-        BindingElementCollection bindingElements =   
+        BindingElementCollection bindingElements =
             endpoint.Binding.CreateBindingElements();  
   
-        // Look to see if the binding elements collection contains any   
-        // secure binding elements. Transport, Asymmetric, and Symmetric      
+        // Look to see if the binding elements collection contains any
+        // secure binding elements. Transport, Asymmetric, and Symmetric
         // binding elements are all derived from SecurityBindingElement.  
         if ((bindingElements.Find<SecurityBindingElement>() != null) || (bindingElements.Find<HttpsTransportBindingElement>() != null) || (bindingElements.Find<WindowsStreamSecurityBindingElement>() != null) || (bindingElements.Find<SslStreamSecurityBindingElement>() != null))  
         {  
@@ -93,11 +93,11 @@ public void Validate(ServiceDescription serviceDescription,
   
 > [!IMPORTANT]
 > The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\ServiceValidation`  
   
 ## See also

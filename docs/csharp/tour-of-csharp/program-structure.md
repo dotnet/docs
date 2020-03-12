@@ -22,7 +22,7 @@ In that project, declare a class named `Stack` in a namespace called `Acme.Colle
 The fully qualified name of this class is `Acme.Collections.Stack`. The class contains several members: a field named `top`, two methods named `Push` and `Pop`, and a nested class named `Entry`. The `Entry` class further contains three members: a field named `next`, a field named `data`, and a constructor. The command:
 
 ```console
-dotnet build 
+dotnet build
 ```
 
 compiles the example as a library (code without a `Main` entry point) and produces an assembly named `acme.dll`.

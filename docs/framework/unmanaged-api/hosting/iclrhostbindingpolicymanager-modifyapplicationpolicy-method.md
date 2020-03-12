@@ -23,12 +23,12 @@ Modifies the binding policy for the specified assembly, and creates a new versio
   
 ```cpp  
 HRESULT  ModifyApplicationPolicy (  
-    [in] LPCWSTR     pwzSourceAssemblyIdentity,   
+    [in] LPCWSTR     pwzSourceAssemblyIdentity,
     [in] LPCWSTR     pwzTargetAssemblyIdentity,  
     [in] BYTE       *pbApplicationPolicy,  
     [in] DWORD       cbAppPolicySize,  
     [in] DWORD       dwPolicyModifyFlags,  
-    [out, size_is(*pcbNewAppPolicySize)] BYTE *pbNewApplicationPolicy,   
+    [out, size_is(*pcbNewAppPolicySize)] BYTE *pbNewApplicationPolicy,
     [in, out] DWORD *pcbNewAppPolicySize  
 );  
 ```  

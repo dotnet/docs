@@ -15,7 +15,7 @@ by the C# compiler. All you had to do was create a lambda expression
 that was assigned to a variable typed as an `Expression<Func<T>>` or
 some similar type. That's not the only way to create an expression
 tree. For many scenarios you may find that you need to build an
-expression in memory at runtime. 
+expression in memory at runtime.
 
 Building Expression Trees is complicated by the fact that those
 expression trees are immutable. Being immutable means that you must
@@ -85,7 +85,7 @@ Let's build an expression tree to create this expression:
 Expression<Func<double, double, double>> distanceCalc =
     (x, y) => Math.Sqrt(x * x + y * y);
 ```
- 
+
 You'll start by creating parameter expressions for `x` and `y`:
 
 ```csharp
@@ -136,7 +136,7 @@ these techniques will extend to other expression trees.
 
 You aren't limited in what you can build using these APIs. However, the more
 complicated expression tree that you want to build, the more difficult
-the code is to manage and to read. 
+the code is to manage and to read.
 
 Let's build an expression tree that is the equivalent of this code:
 
@@ -157,7 +157,7 @@ Notice above that I did not build the expression tree, but simply the delegate. 
 the `Expression` class, you can't build statement lambdas. Here's the code that is required
 to build the same functionality. It's complicated by the fact that there isn't an API to build
 a `while` loop, instead you need to build a loop that contains a conditional test, and a label
-target to break out of the loop. 
+target to break out of the loop.
 
 ```csharp
 var nArgument = Expression.Parameter(typeof(int), "n");
@@ -193,7 +193,7 @@ BlockExpression body = Expression.Block(
 
 The code to build the expression tree for the factorial function is quite a bit longer,
 more complicated, and it's riddled with labels and break statements and other elements
-we'd like to avoid in our everyday coding tasks. 
+we'd like to avoid in our everyday coding tasks.
 
 For this section, I've also updated the visitor code to visit every node in this expression tree and write out information about the nodes that are created in this sample. You can [view or download the sample code](https://github.com/dotnet/samples/tree/master/csharp/expression-trees) at the dotnet/docs GitHub repository. Experiment for yourself by building and running the samples. For download instructions, see [Samples and Tutorials](../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
@@ -205,7 +205,7 @@ code at runtime. They are necessarily complicated to provide a balance between s
 all the control structures available in the C# language and keeping the surface area
 of the APIs as small as reasonable. This balance means that many control structures are
 represented not by their C# constructs, but by constructs that represent the underlying
-logic that the compiler generates from these higher level constructs. 
+logic that the compiler generates from these higher level constructs.
 
 Also, at this time, there are C# expressions that cannot be built directly
 using `Expression` class methods. In general, these will be the newest operators

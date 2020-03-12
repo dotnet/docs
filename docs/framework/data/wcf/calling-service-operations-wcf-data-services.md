@@ -47,7 +47,7 @@ The Open Data Protocol (OData) defines service operations for a data service. WC
   
 - [Calling a Service Operation Asynchronously](calling-service-operations-wcf-data-services.md#ExecuteAsync)  
   
-<a name="ExecuteIQueryable"></a>   
+<a name="ExecuteIQueryable"></a>
 ### Calling Execute\<T> to Return a Collection of Entities  
  The following example calls a service operation named GetOrdersByCity, which takes a string parameter of `city` and returns an <xref:System.Linq.IQueryable%601>:  
   
@@ -56,7 +56,7 @@ The Open Data Protocol (OData) defines service operations for a data service. WC
   
  In this example, the service operation returns a collection of `Order` objects with related `Order_Detail` objects.  
   
-<a name="CreateQueryIQueryable"></a>   
+<a name="CreateQueryIQueryable"></a>
 ### Using CreateQuery\<T> to Return a Collection of Entities  
  The following example uses the <xref:System.Data.Services.Client.DataServiceContext.CreateQuery%2A> to return a <xref:System.Data.Services.Client.DataServiceQuery%601> that is used to call the same GetOrdersByCity service operation:  
   
@@ -65,7 +65,7 @@ The Open Data Protocol (OData) defines service operations for a data service. WC
   
  In this example, the <xref:System.Data.Services.Client.DataServiceQuery%601.AddQueryOption%2A> method is used to add the parameter to the query, and the <xref:System.Data.Services.Client.DataServiceQuery%601.Expand%2A> method is used to include related Order_Details objects in the results.  
   
-<a name="ExecuteSingleEntity"></a>   
+<a name="ExecuteSingleEntity"></a>
 ### Calling Execute\<T> to Return a Single Entity  
  The following example calls a service operation named GetNewestOrder that returns only a single Order entity:  
   
@@ -74,13 +74,13 @@ The Open Data Protocol (OData) defines service operations for a data service. WC
   
  In this example, the <xref:System.Linq.Enumerable.FirstOrDefault%2A> method is used to request only a single Order entity on execution.  
   
-<a name="ExecutePrimitiveCollection"></a>   
+<a name="ExecutePrimitiveCollection"></a>
 ### Calling Execute\<T> to Return a Collection of Primitive Values  
  The following example calls a service operation that returns a collection of string values:  
   
  [!code-csharp[Astoria Northwind Client#CallServiceOperationEnumString](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria_northwind_client/cs/source.cs#callserviceoperationenumstring)]  
   
-<a name="ExecutePrimitiveValue"></a>   
+<a name="ExecutePrimitiveValue"></a>
 ### Calling Execute\<T> to Return a Single Primitive Value  
  The following example calls a service operation that returns a single string value:  
   
@@ -89,7 +89,7 @@ The Open Data Protocol (OData) defines service operations for a data service. WC
   
  Again in this example, the <xref:System.Linq.Enumerable.FirstOrDefault%2A> method is used to request only a single integer value on execution.  
   
-<a name="ExecuteVoid"></a>   
+<a name="ExecuteVoid"></a>
 ### Calling a Service Operation that Returns No Data  
  The following example calls a service operation that returns no data:  
   
@@ -98,7 +98,7 @@ The Open Data Protocol (OData) defines service operations for a data service. WC
   
  Because not data is returned, the value of the execution is not assigned. The only indication that the request has succeeded is that no <xref:System.Data.Services.Client.DataServiceQueryException> is raised.  
   
-<a name="ExecuteAsync"></a>   
+<a name="ExecuteAsync"></a>
 ### Calling a Service Operation Asynchronously  
  The following example calls a service operation asynchronously by calling <xref:System.Data.Services.Client.DataServiceContext.BeginExecute%2A> and <xref:System.Data.Services.Client.DataServiceContext.EndExecute%2A>:  
   

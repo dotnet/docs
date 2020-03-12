@@ -16,7 +16,7 @@ When ASP.NET hosts a Web service, you can integrate Authorization Manager into t
       <providers>  
         <add name="AzManRoleProvider"  
              type="System.Web.Security.AuthorizationStoreRoleProvider, System.Web, Version=2.0.0.0, Culture=neutral, publicKeyToken=b03f5f7f11d50a3a"  
-             connectionStringName="AzManPolicyStoreConnectionString"   
+             connectionStringName="AzManPolicyStoreConnectionString"
              applicationName="SecureService"/>  
       </providers>  
     </roleManager>  

@@ -39,7 +39,7 @@ This article discusses using X.509 certificates for server and client authentica
         <!-- configure wsHttp binding with Transport security mode and clientCredentialType as Certificate -->  
         <binding>  
           <security mode="Transport">  
-            <transport clientCredentialType="Certificate"/>              
+            <transport clientCredentialType="Certificate"/>
           </security>  
         </binding>  
       </wsHttpBinding>  
@@ -47,7 +47,7 @@ This article discusses using X.509 certificates for server and client authentica
     <!--For debugging purposes set the includeExceptionDetailInFaults attribute to true-->  
     <behaviors>  
       <serviceBehaviors>  
-        <behavior>            
+        <behavior>
            <serviceDebug includeExceptionDetailInFaults="True" />  
         </behavior>  
       </serviceBehaviors>  
@@ -66,13 +66,13 @@ myBinding.Security.Mode = SecurityMode.Transport;
 myBinding.Security.Transport.ClientCredentialType =  
    HttpClientCredentialType.Certificate;  
   
-// Create the endpoint address. Note that the machine name   
+// Create the endpoint address. Note that the machine name
 // must match the subject or DNS field of the X.509 certificate  
-// used to authenticate the service.   
+// used to authenticate the service.
 var ea = new  
    EndpointAddress("https://localhost/CalculatorService/service.svc");  
   
-// Create the client. The code for the calculator   
+// Create the client. The code for the calculator
 // client is not shown here. See the sample applications  
 // for examples of the calculator code.  
 var cc =  
@@ -98,10 +98,10 @@ cc.Close();
   <system.serviceModel>  
     <client>  
       <!-- this endpoint has an https: address -->  
-      <endpoint address=" https://localhost/CalculatorService/service.svc "   
+      <endpoint address=" https://localhost/CalculatorService/service.svc "
                 behaviorConfiguration="endpointCredentialBehavior"  
-                binding="wsHttpBinding"   
-                bindingConfiguration="Binding1"   
+                binding="wsHttpBinding"
+                bindingConfiguration="Binding1"
                 contract="Microsoft.Samples.TransportSecurity.ICalculator"/>  
     </client>  
     <behaviors>  

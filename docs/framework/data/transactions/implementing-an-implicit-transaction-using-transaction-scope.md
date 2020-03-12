@@ -101,7 +101,7 @@ using(TransactionScope scope1 = new TransactionScope())
         //...
     }
 
-    using(TransactionScope scope3 = new TransactionScope(TransactionScopeOption.RequiresNew))   
+    using(TransactionScope scope3 = new TransactionScope(TransactionScopeOption.RequiresNew))
     {
         //...  
     }

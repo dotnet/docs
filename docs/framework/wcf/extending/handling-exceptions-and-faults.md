@@ -97,9 +97,9 @@ public class FaultReason
     public FaultReason(IEnumerable<FaultReasonText> translations);  
     public FaultReason(string text);  
   
-    public SynchronizedReadOnlyCollection<FaultReasonText> Translations   
-    {   
-       get;   
+    public SynchronizedReadOnlyCollection<FaultReasonText> Translations
+    {
+       get;
     }  
   
  }  
@@ -118,10 +118,10 @@ public class FaultConverter
     public static FaultConverter GetDefaultFaultConverter(  
                                    MessageVersion version);  
     protected abstract bool OnTryCreateFaultMessage(  
-                                   Exception exception,   
+                                   Exception exception,
                                    out Message message);  
     public bool TryCreateFaultMessage(  
-                                   Exception exception,   
+                                   Exception exception,
                                    out Message message);  
 }  
 ```  
@@ -129,7 +129,7 @@ public class FaultConverter
  Each channel that generates custom faults must implement `FaultConverter` and return it from a call to `GetProperty<FaultConverter>`. The custom `OnTryCreateFaultMessage` implementation must either convert the exception to a fault or delegate to the inner channel’s `FaultConverter`. If the channel is a transport it must either convert the exception or delegate to the encoder’s `FaultConverter` or the default `FaultConverter` provided in WCF . The default `FaultConverter` converts errors corresponding to fault messages specified by WS-Addressing and SOAP. Here is an example `OnTryCreateFaultMessage` implementation.  
   
 ```csharp
-public override bool OnTryCreateFaultMessage(Exception exception,   
+public override bool OnTryCreateFaultMessage(Exception exception,
                                              out Message message)  
 {  
     if (exception is ...)  
@@ -139,23 +139,23 @@ public override bool OnTryCreateFaultMessage(Exception exception,
     }  
   
 #if IMPLEMENTING_TRANSPORT_CHANNEL  
-    FaultConverter encoderConverter =   
+    FaultConverter encoderConverter =
                     this.encoder.GetProperty<FaultConverter>();  
-    if ((encoderConverter != null) &&               
+    if ((encoderConverter != null) &&
         (encoderConverter.TryCreateFaultMessage(  
          exception, out message)))  
     {  
         return true;  
     }  
   
-    FaultConverter defaultConverter =   
+    FaultConverter defaultConverter =
                    FaultConverter.GetDefaultFaultConverter(  
                    this.channel.messageVersion);  
     return defaultConverter.TryCreateFaultMessage(  
-                   exception,   
+                   exception,
                    out message);  
 #else  
-    FaultConverter inner =   
+    FaultConverter inner =
                    this.innerChannel.GetProperty<FaultConverter>();  
     if (inner != null)  
     {  
@@ -204,12 +204,12 @@ public class FaultConverter
     public static FaultConverter GetDefaultFaultConverter(  
                                   MessageVersion version);  
     protected abstract bool OnTryCreateException(  
-                                 Message message,   
-                                 MessageFault fault,   
+                                 Message message,
+                                 MessageFault fault,
                                  out Exception exception);  
     public bool TryCreateException(  
-                                 Message message,   
-                                 MessageFault fault,   
+                                 Message message,
+                                 MessageFault fault,
                                  out Exception exception);  
 }  
 ```  
@@ -220,8 +220,8 @@ public class FaultConverter
   
 ```csharp
 public override bool OnTryCreateException(  
-                            Message message,   
-                            MessageFault fault,   
+                            Message message,
+                            MessageFault fault,
                             out Exception exception)  
 {  
     if (message.Action == "...")  
@@ -247,9 +247,9 @@ public override bool OnTryCreateException(
     }  
   
 #if IMPLEMENTING_TRANSPORT_CHANNEL  
-    FaultConverter encoderConverter =   
+    FaultConverter encoderConverter =
               this.encoder.GetProperty<FaultConverter>();  
-    if ((encoderConverter != null) &&   
+    if ((encoderConverter != null) &&
         (encoderConverter.TryCreateException(  
                               message, fault, out exception)))  
     {  
@@ -262,7 +262,7 @@ public override bool OnTryCreateException(
     return defaultConverter.TryCreateException(  
                              message, fault, out exception);  
 #else  
-    FaultConverter inner =   
+    FaultConverter inner =
                     this.innerChannel.GetProperty<FaultConverter>();  
     if (inner != null)  
     {  
@@ -289,7 +289,7 @@ public class MessageFault
 {  
     ...  
     public bool IsMustUnderstandFault { get; }  
-    public static bool WasHeaderNotUnderstood(MessageHeaders headers,   
+    public static bool WasHeaderNotUnderstood(MessageHeaders headers,
         string name, string ns) { }  
     ...  
   
@@ -335,7 +335,7 @@ udpsource.TraceInformation("UdpInputChannel received a message");
   <system.diagnostics>  
     <sources>  
       <!-- configure System.ServiceModel trace source -->  
-      <source name="System.ServiceModel" switchValue="Verbose"   
+      <source name="System.ServiceModel" switchValue="Verbose"
               propagateActivity="true">  
         <listeners>  
           <add name="e2e" />  
@@ -374,7 +374,7 @@ udpsource.TraceInformation("UdpInputChannel received a message");
     <TimeCreated SystemTime="2006-01-13T22:58:03.0654832Z" />  
     <Source Name="Microsoft.ServiceModel.Samples.Udp" />  
     <Correlation ActivityID="{00000000-0000-0000-0000-000000000000}" />  
-    <Execution  ProcessName="UdpTestConsole"   
+    <Execution  ProcessName="UdpTestConsole"
                 ProcessID="3348" ThreadID="4" />  
     <Channel />  
     <Computer>COMPUTER-LT01</Computer>  
@@ -383,7 +383,7 @@ udpsource.TraceInformation("UdpInputChannel received a message");
   <ApplicationData>  
   <TraceData>  
    <DataItem>  
-   <TraceRecord   
+   <TraceRecord
      Severity="Information"  
      xmlns="…">  
         <TraceIdentifier>some trace id</TraceIdentifier>  

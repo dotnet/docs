@@ -24,7 +24,7 @@ Creates a debugger interface ([ICorDebug](icordebug-interface.md)) that provides
   
 ```cpp  
 HRESULT CordbCreateObject (  
-       [in]  int         iDebuggerVersion,   
+       [in]  int         iDebuggerVersion,
        [out] IUnknown**  ppCordb  
 );  
 ```  

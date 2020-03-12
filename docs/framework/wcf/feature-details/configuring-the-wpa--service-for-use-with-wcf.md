@@ -63,14 +63,14 @@ appcmd.exe set app "Default Web Site/appOne" /enabledProtocols:net.tcp
        </bindings>  
     </site>  
     <siteDefaults>  
-        <logFile   
+        <logFile
         customLogPluginClsid="{FF160663-DE82-11CF-BC0A-00AA006111E0}"  
           directory="D:\inetpub\logs\LogFiles" />  
-        <traceFailedRequestsLogging   
+        <traceFailedRequestsLogging
           directory="D:\inetpub\logs\FailedReqLogFiles" />  
     </siteDefaults>  
-    <applicationDefaults   
-      applicationPool="DefaultAppPool"   
+    <applicationDefaults
+      applicationPool="DefaultAppPool"
       //The following line is inserted by the command.  
       enabledProtocols="http, net.tcp" />  
     <virtualDirectoryDefaults allowSubDirConfig="true" />  

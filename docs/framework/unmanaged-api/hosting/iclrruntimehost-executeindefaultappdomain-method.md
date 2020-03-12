@@ -24,7 +24,7 @@ Calls the specified method of the specified type in the specified managed assemb
 ```cpp  
 HRESULT ExecuteInDefaultAppDomain (  
     [in] LPCWSTR pwzAssemblyPath,  
-    [in] LPCWSTR pwzTypeName,   
+    [in] LPCWSTR pwzTypeName,
     [in] LPCWSTR pwzMethodName,  
     [in] LPCWSTR pwzArgument,  
     [out] DWORD *pReturnValue  

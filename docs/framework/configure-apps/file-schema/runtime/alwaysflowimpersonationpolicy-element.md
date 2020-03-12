@@ -19,7 +19,7 @@ Specifies that the Windows identity always flows across asynchronous points, reg
 ## Syntax  
   
 ```xml  
-<alwaysFlowImpersonationPolicy    
+<alwaysFlowImpersonationPolicy
   enabled="true|false"/>  
 ```  
   

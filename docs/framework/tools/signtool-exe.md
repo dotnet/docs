@@ -44,7 +44,7 @@ signtool [command] [options] [file_name | ...]
 |**/v**|Displays verbose output regardless of whether the command runs successfully or fails, and displays warning messages.|  
 |**/debug**|Displays debugging information.|  
   
-<a name="catdb"></a>   
+<a name="catdb"></a>
 ## catdb Command Options  
  The following table lists the options that can be used with the `catdb` command.  
   
@@ -55,7 +55,7 @@ signtool [command] [options] [file_name | ...]
 |`/r`|Removes the specified catalogs from the catalog database. If this option is not specified, Sign Tool adds the specified catalogs to the catalog database.|  
 |`/u`|Specifies that a unique name is automatically generated for the added catalog files. If necessary, the catalog files are renamed to prevent name conflicts with existing catalog files. If this option is not specified, Sign Tool overwrites any existing catalog that has the same name as the catalog being added.|  
   
-<a name="sign"></a>   
+<a name="sign"></a>
 ## sign Command Options  
  The following table lists the options that can be used with the `sign` command.  
   
@@ -91,7 +91,7 @@ signtool [command] [options] [file_name | ...]
   
  For usage examples, see [Using SignTool to Sign a File](/windows/desktop/SecCrypto/using-signtool-to-sign-a-file).  
   
-<a name="TimeStamp"></a>   
+<a name="TimeStamp"></a>
 ## TimeStamp Command Options  
  The following table lists the options that can be used with the `TimeStamp` command.  
   
@@ -105,7 +105,7 @@ signtool [command] [options] [file_name | ...]
   
  For a usage example, see [Adding Time Stamps to Previously Signed Files](/windows/desktop/SecCrypto/adding-time-stamps-to-previously-signed-files).  
   
-<a name="Verify"></a>   
+<a name="Verify"></a>
 ## Verify Command Options  
   
 |Verify option|Description|  

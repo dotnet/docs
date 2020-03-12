@@ -22,7 +22,7 @@ Contains listeners that any source or trace element can reference.  These listen
 ## Syntax  
   
 ```xml  
-<sharedListeners>   
+<sharedListeners>
   <add>...</add>  
 </sharedListeners>  
 ```  

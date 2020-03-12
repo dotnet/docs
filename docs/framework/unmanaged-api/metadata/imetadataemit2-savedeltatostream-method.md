@@ -23,7 +23,7 @@ Saves changes from the current edit-and-continue session to the specified stream
   
 ```cpp  
 HRESULT SaveDeltaToStream (  
-    [in] IStream     *pIStream,   
+    [in] IStream     *pIStream,
     [in] DWORD       dwSaveFlags  
 );  
 ```  

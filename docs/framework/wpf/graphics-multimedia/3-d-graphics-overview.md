@@ -12,13 +12,13 @@ ms.assetid: 67f31ed4-e36b-4b02-9889-dcce245d7afc
 # 3-D Graphics Overview
 <a name="introduction"></a> The 3-D functionality in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] enables developers to draw, transform, and animate 3-D graphics in both markup and procedural code. Developers can combine 2-D and 3-D graphics to create rich controls, provide complex illustrations of data, or enhance the user experience of an application's interface. 3-D support in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] is not designed to provide a full-featured game-development platform. This topic provides an overview of 3-D functionality in the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] graphics system.  
 
-<a name="threed_in_2d"></a>   
+<a name="threed_in_2d"></a>
 ## 3-D in a 2-D Container  
  3-D graphics content in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] is encapsulated in an element, <xref:System.Windows.Controls.Viewport3D>, that can participate in the two-dimensional element structure. The graphics system treats <xref:System.Windows.Controls.Viewport3D> as a two-dimensional visual element like many others in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. <xref:System.Windows.Controls.Viewport3D> functions as a window—a viewport—into a three-dimensional scene. More accurately, it is a surface on which a 3-D scene is projected.  
   
  In a conventional 2-D application, use <xref:System.Windows.Controls.Viewport3D> as you would another container element like Grid or Canvas.  Although you can use <xref:System.Windows.Controls.Viewport3D> with other 2-D drawing objects in the same scene graph, you cannot interpenetrate 2-D and 3-D objects within a <xref:System.Windows.Controls.Viewport3D>.  This topic will focus on how to draw 3-D graphics inside the <xref:System.Windows.Controls.Viewport3D>.  
   
-<a name="coord_space"></a>   
+<a name="coord_space"></a>
 ## 3-D Coordinate Space  
  The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] coordinate system for 2-D graphics locates the origin in the upper left of the rendering area (typically the screen). In the 2-D system, positive x-axis values proceed to the right and positive y-axis values proceed downward.  In the 3-D coordinate system, however, the origin is located in the center of the rendering area, with positive x-axis values proceeding to the right but positive y-axis values proceeding upward instead, and positive z-axis values proceeding outward from the origin, toward the viewer.  
   
@@ -27,7 +27,7 @@ Conventional 2-D and 3-D coordinate system representations
   
  The space defined by these axes is the stationary frame of reference for 3-D objects in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. As you build models in this space and create lights and cameras to view them, it's helpful to distinguish this stationary frame of reference, or "world space," from the local frame of reference you create for each model when you apply transformations to it. Remember also that objects in world space might look entirely different, or not be visible at all, depending on light and camera settings, but the position of the camera does not change the location of objects in world space.  
   
-<a name="cameras"></a>   
+<a name="cameras"></a>
 ## Cameras and Projections  
  Developers who work in 2-D are accustomed to positioning drawing primitives on a two-dimensional screen. When you create a 3-D scene, it's important to remember that you are really creating a 2-D representation of 3-D objects. Because a 3-D scene looks different depending on the onlooker's point of view, you must specify that point of view. The <xref:System.Windows.Media.Media3D.Camera> class allows you to specify this point of view for a 3-D scene.  
   
@@ -48,7 +48,7 @@ Perspective and Orthographic Projections
  [!code-csharp[3dgallery_procedural_snip#Basic3DShapeCodeExampleInline1](~/samples/snippets/csharp/VS_Snippets_Wpf/3DGallery_procedural_snip/CSharp/Basic3DShapeExample.cs#basic3dshapecodeexampleinline1)]
  [!code-vb[3dgallery_procedural_snip#Basic3DShapeCodeExampleInline1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/3DGallery_procedural_snip/visualbasic/basic3dshapeexample.vb#basic3dshapecodeexampleinline1)]  
   
-<a name="models_meshes"></a>   
+<a name="models_meshes"></a>
 ## Model and Mesh Primitives  
   
  <xref:System.Windows.Media.Media3D.Model3D> is the abstract base class that represents a generic 3-D object. To build a 3-D scene, you need some objects to view, and the objects that make up the scene graph derive from <xref:System.Windows.Media.Media3D.Model3D>. Currently, the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] supports modeling geometries with <xref:System.Windows.Media.Media3D.GeometryModel3D>. The <xref:System.Windows.Media.Media3D.GeometryModel3D.Geometry%2A> property of this model takes a mesh primitive.  
@@ -73,7 +73,7 @@ Perspective and Orthographic Projections
  [!code-csharp[3doverview#3DOverview3DN7](~/samples/snippets/csharp/VS_Snippets_Wpf/3DOverview/CSharp/Window1.xaml.cs#3doverview3dn7)]
  [!code-vb[3doverview#3DOverview3DN7](~/samples/snippets/visualbasic/VS_Snippets_Wpf/3DOverview/visualbasic/window1.xaml.vb#3doverview3dn7)]  
   
-<a name="materials"></a>   
+<a name="materials"></a>
 ## Applying Materials to the Model  
   
  For a mesh to look like a three-dimensional object, it must have an applied texture to cover the surface defined by its vertices and triangles so it can be lit and projected by the camera. In 2-D, you use the <xref:System.Windows.Media.Brush> class to apply colors, patterns, gradients, or other visual content to areas of the screen.  The appearance of 3-D objects, however, is a function of the lighting model, not just of the color or pattern applied to them. Real-world objects reflect light differently depending on the quality of their surfaces: glossy and shiny surfaces don't look the same as rough or matte surfaces, and some objects seem to absorb light while others glow. You can apply all the same brushes to 3-D objects that you can apply to 2-D objects, but you can't apply them directly.  
@@ -99,7 +99,7 @@ Perspective and Orthographic Projections
  [!code-csharp[3doverview#3DOverview3DN8](~/samples/snippets/csharp/VS_Snippets_Wpf/3DOverview/CSharp/Window1.xaml.cs#3doverview3dn8)]
  [!code-vb[3doverview#3DOverview3DN8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/3DOverview/visualbasic/window1.xaml.vb#3doverview3dn8)]  
   
-<a name="lights"></a>   
+<a name="lights"></a>
 ## Illuminating the Scene  
  Lights in 3-D graphics do what lights do in the real world: they make surfaces visible. More to the point, lights determine what part of a scene will be included in the projection. Light objects in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] create a variety of light and shadow effects and are modeled after the behavior of various real-world lights. You must include at least one light in your scene, or no models will be visible.  
   
@@ -126,7 +126,7 @@ Perspective and Orthographic Projections
  [!code-csharp[basic3d#Basic3D3DN13](~/samples/snippets/csharp/VS_Snippets_Wpf/Basic3D/CSharp/Window1.xaml.cs#basic3d3dn13)]
  [!code-vb[basic3d#Basic3D3DN13](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Basic3D/visualbasic/window1.xaml.vb#basic3d3dn13)]  
   
-<a name="transforms"></a>   
+<a name="transforms"></a>
 ## Transforming Models  
  When you create models, they have a particular location in the scene. To move those models around in the scene, to rotate them, or to change their size, it's not practical to change the vertices that define the models themselves.  Instead, just as in 2-D, you apply transformations to models.  
   
@@ -134,7 +134,7 @@ Perspective and Orthographic Projections
   
  For more information about transforming models, see [3-D Transformations Overview](3-d-transformations-overview.md).  
   
-<a name="animations"></a>   
+<a name="animations"></a>
 ## Animating Models  
  The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] 3-D implementation participates in the same timing and animation system as 2-D graphics. In other words, to animate a 3-D scene, animate the properties of its models. It's possible to animate properties of primitives directly, but it's typically easier to animate transformations that change the position or appearance of models. Because transformations can be applied to <xref:System.Windows.Media.Media3D.Model3DGroup> objects as well as individual models, it's possible to apply one set of animations to a child of a Model3DGroup and another set of animations to a group of child objects. You can also achieve a variety of visual effects by animating the properties of your scene's lighting. Finally, you might choose to animate the projection itself by animating the camera position or field of view. For background information on the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] timing and animation system, see the [Animation Overview](animation-overview.md), [Storyboards Overview](storyboards-overview.md), and [Freezable Objects Overview](../advanced/freezable-objects-overview.md) topics.  
   
@@ -154,7 +154,7 @@ Perspective and Orthographic Projections
  [!code-csharp[3doverview#3DOverview3DN5](~/samples/snippets/csharp/VS_Snippets_Wpf/3DOverview/CSharp/Window1.xaml.cs#3doverview3dn5)]
  [!code-vb[3doverview#3DOverview3DN5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/3DOverview/visualbasic/window1.xaml.vb#3doverview3dn5)]  
   
-<a name="animations1"></a>   
+<a name="animations1"></a>
 ## Add 3-D Content to the Window  
  To render the scene, add models and lights to a <xref:System.Windows.Media.Media3D.Model3DGroup>, then set the <xref:System.Windows.Media.Media3D.Model3DGroup> as the <xref:System.Windows.Media.Media3D.ModelVisual3D.Content%2A> of a <xref:System.Windows.Media.Media3D.ModelVisual3D>. Add the <xref:System.Windows.Media.Media3D.ModelVisual3D> to the <xref:System.Windows.Controls.Viewport3D.Children%2A> collection of the <xref:System.Windows.Controls.Viewport3D>. Add cameras to the <xref:System.Windows.Controls.Viewport3D> by setting its <xref:System.Windows.Controls.Viewport3D.Camera%2A> property.  
   

@@ -31,7 +31,7 @@ You can programmatically create a folder on your computer, create a subfolder, c
 - Replace the `if`-`else` statement with the `using` statement in the following code.  
   
     ```csharp  
-    using (System.IO.FileStream fs = new System.IO.FileStream(pathString, FileMode.Append))   
+    using (System.IO.FileStream fs = new System.IO.FileStream(pathString, FileMode.Append))
     {  
         for (byte i = 0; i < 100; i++)  
         {  

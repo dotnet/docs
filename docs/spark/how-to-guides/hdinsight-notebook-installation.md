@@ -18,7 +18,7 @@ Azure HDInsight clusters already come with Jupyter notebooks, all you have to do
 
 To enable .NET for Apache Spark through the Jupyter Notebooks experience, you need to follow a few manual steps through [Ambari](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-manage-ambari) and submit [script actions](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux) on the HDInsight Spark cluster.
 
-> [!NOTE] 
+> [!NOTE]
 > This feature is *experimental* and is not supported by the HDInsight Spark team.
 
 ## Prerequisites
@@ -48,11 +48,9 @@ In the Azure portal, select the **HDInsight Spark cluster** you created in the p
 3. Select **hn0... host**, and stop **Livy for Spark2 Server** if it is running. When prompted, select **OK** to proceed.
 
    Select hn0 as shown below.
-   
    ![Stop Livy Server](../media/hdi-spark-notebooks/select-host.png)
 
    Stop Livy for Spark2 Server.
-   
    ![Stop Livy Server](../media/hdi-spark-notebooks/stop-server.png)
 
 4. Repeat the previous steps for **hn1... host**.
@@ -63,7 +61,7 @@ In the Azure portal, select the **HDInsight Spark cluster** you created in the p
 
    The `install-interactive-notebook.sh` is a script that installs .NET for Apache Spark and makes changes to Apache Livy and sparkmagic. Before you submit a script action to HDInsight, you need to create and upload `install-interactive-notebook.sh`.
 
-   Create a new file named **install-interactive-notebook.sh** in your local computer and paste the contents of [install-interactive-notebook.sh contents](https://raw.githubusercontent.com/dotnet/spark/master/deployment/HDI-Spark/Notebooks/install-interactive-notebook.sh). 
+   Create a new file named **install-interactive-notebook.sh** in your local computer and paste the contents of [install-interactive-notebook.sh contents](https://raw.githubusercontent.com/dotnet/spark/master/deployment/HDI-Spark/Notebooks/install-interactive-notebook.sh).
    
    Upload the script to a [URI](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux#understand-script-actions) that's accessible from the HDInsight cluster. For example, `https://<my storage account>.blob.core.windows.net/<my container>/<some dir>/install-interactive-notebook.sh`.
 
@@ -102,12 +100,12 @@ Follow the instructions in the [Stop Livy server](#stop-livy-server) section to 
    * Property 1:
        * Key:&ensp;&ensp;`spark.dotnet.shell.command`
        * Value: `/usr/share/dotnet-tools/dotnet-try,kernel-server,--default-kernel,csharp`
-       
+   
    * Property 2:
        * Key:&ensp;&ensp;`spark.dotnet.packages`
        * Value: `["nuget: Microsoft.Spark, 0.6.0", "nuget: Microsoft.Spark.Extensions.Delta, 0.6.0"]`
     
-       Use the version of .NET for Apache Spark which you had included in the previous script action.
+    Use the version of .NET for Apache Spark which you had included in the previous script action.
        
    * Property 3:
        * Key:&ensp;&ensp;`spark.dotnet.interpreter`

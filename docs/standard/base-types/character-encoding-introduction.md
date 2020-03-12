@@ -70,7 +70,7 @@ s[1] = '�' ('\udc02')
 ```
 
 You can try passing other strings to this method in the following interactive C# panel:
-[!code-csharp-interactive2[](character-encoding/csharp/PrintStringChars.cs?name=SnippetPrintStringChars)]
+[!code-csharp-interactive[](character-encoding/csharp/PrintStringChars.cs?name=SnippetPrintStringChars)]
 
 <!--:::code language="csharp" interactive="try-dotnet-class" source="character-encoding/csharp/PrintStringChars.cs" id="SnippetPrintStringChars":::-->
 

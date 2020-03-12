@@ -62,13 +62,13 @@ In the Azure portal, select the **HDInsight Spark cluster** you created in the p
    The `install-interactive-notebook.sh` is a script that installs .NET for Apache Spark and makes changes to Apache Livy and sparkmagic. Before you submit a script action to HDInsight, you need to create and upload `install-interactive-notebook.sh`.
 
    Create a new file named **install-interactive-notebook.sh** in your local computer and paste the contents of [install-interactive-notebook.sh contents](https://raw.githubusercontent.com/dotnet/spark/master/deployment/HDI-Spark/Notebooks/install-interactive-notebook.sh).
-   
+
    Upload the script to a [URI](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux#understand-script-actions) that's accessible from the HDInsight cluster. For example, `https://<my storage account>.blob.core.windows.net/<my container>/<some dir>/install-interactive-notebook.sh`.
 
 2. Run `install-interactive-notebook.sh` on the cluster using [HDInsight Script Actions](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux).
 
    Return to your HDI cluster in the Azure portal, and select **Script actions** from the options on the left. You submit one script action to deploy the .NET for Apache Spark REPL on your HDInsight Spark cluster. Use the following settings:
-   
+
    |Property  |Description  |
    |---------|---------|
    | Script type | Custom |
@@ -96,17 +96,17 @@ Follow the instructions in the [Stop Livy server](#stop-livy-server) section to 
    ![Add Property](../media/hdi-spark-notebooks/add-property.png)
 
    There are three individual properties. Add them one at a time using the **TEXT** property type in Single property add mode. Check that you don't have any extra spaces before or after any of the keys/values.
-   
+
    * Property 1:
        * Key:&ensp;&ensp;`spark.dotnet.shell.command`
        * Value: `/usr/share/dotnet-tools/dotnet-try,kernel-server,--default-kernel,csharp`
-   
+
    * Property 2:
        * Key:&ensp;&ensp;`spark.dotnet.packages`
        * Value: `["nuget: Microsoft.Spark, 0.6.0", "nuget: Microsoft.Spark.Extensions.Delta, 0.6.0"]`
-    
+ 
     Use the version of .NET for Apache Spark which you had included in the previous script action.
-       
+
    * Property 3:
        * Key:&ensp;&ensp;`spark.dotnet.interpreter`
        * Value: `try`
@@ -130,13 +130,13 @@ Follow the instructions in the [Stop Livy server](#stop-livy-server) section to 
 After finishing the previous steps, you can now submit your .NET for Apache Spark jobs through Jupyter notebooks.
 
 1. Create a new .NET for Apache Spark notebook. Launch a Jupyter notebook from your HDI cluster in the Azure portal.
-   
+
    ![Launch Jupyter Notebook](../media/hdi-spark-notebooks/launch-notebook.png)
-   
+
    Then, select **New** > **.NET Spark (C#)** to create a notebook.
 
    ![Jupyter Notebook](../media/hdi-spark-notebooks/create-sparkdotnet-notebook.png)
-   
+
 2. Submit jobs using .NET for Apache Spark.
 
    Use the following code snippet to create a DataFrame:

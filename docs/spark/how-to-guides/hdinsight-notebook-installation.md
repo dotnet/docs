@@ -39,19 +39,19 @@ In the Azure portal, select the **HDInsight Spark cluster** you created in the p
 
 1. From the portal, select **Overview**, and then select **Ambari home**. If prompted, enter the cluster login credentials for the cluster.
 
-   ![Stop Livy Server](../media/hdi-spark-notebooks/select-ambari.png)
+   ![Stop Livy Server](./media/hdinsight-notebook-installation/select-ambari.png)
 
 2. Select **Spark2**, and then select **LIVY FOR SPARK2 SERVER**.
 
-   ![Stop Livy Server](../media/hdi-spark-notebooks/select-livyserver.png)
+   ![Stop Livy Server](./media/hdinsight-notebook-installation/select-livyserver.png)
 
 3. Select **hn0... host**, and stop **Livy for Spark2 Server** if it is running. When prompted, select **OK** to proceed.
 
    Select hn0 as shown below.
-   ![Stop Livy Server](../media/hdi-spark-notebooks/select-host.png)
+   ![Stop Livy Server](./media/hdinsight-notebook-installation/select-host.png)
 
    Stop Livy for Spark2 Server.
-   ![Stop Livy Server](../media/hdi-spark-notebooks/stop-server.png)
+   ![Stop Livy Server](./media/hdinsight-notebook-installation/stop-server.png)
 
 4. Repeat the previous steps for **hn1... host**.
 
@@ -89,11 +89,11 @@ Follow the instructions in the [Stop Livy server](#stop-livy-server) section to 
 
 2. Select **Spark2** and **CONFIGS**. Then, select **Custom spark2-defaults**.
 
-   ![Set Configs](../media/hdi-spark-notebooks/spark-configs.png)
+   ![Set Configs](./media/hdinsight-notebook-installation/spark-configs.png)
 
 3. Select **Add Property...** to add Spark default settings.
 
-   ![Add Property](../media/hdi-spark-notebooks/add-property.png)
+   ![Add Property](./media/hdinsight-notebook-installation/add-property.png)
 
    There are three individual properties. Add them one at a time using the **TEXT** property type in Single property add mode. Check that you don't have any extra spaces before or after any of the keys/values.
 
@@ -113,7 +113,7 @@ Follow the instructions in the [Stop Livy server](#stop-livy-server) section to 
 
    For example, the following captures the setting for adding property 1:
 
-   ![Set Configs](../media/hdi-spark-notebooks/add-sparkconfig.png)
+   ![Set Configs](./media/hdinsight-notebook-installation/add-sparkconfig.png)
 
    After adding the three properties, select **SAVE**. If you see a warning screen of config recommendations, select **PROCEED ANYWAY**.
 
@@ -121,7 +121,7 @@ Follow the instructions in the [Stop Livy server](#stop-livy-server) section to 
 
    After adding the new properties, you need to restart components that were affected by the changes. At the top, select **RESTART**, and then **Restart All Affected** from the drop-down.
 
-   ![Set Configs](../media/hdi-spark-notebooks/restart-affected.png)
+   ![Set Configs](./media/hdinsight-notebook-installation/restart-affected.png)
 
    When prompted, select **CONFIRM RESTART ALL** to continue, then click **OK** to finish.
 
@@ -131,11 +131,11 @@ After finishing the previous steps, you can now submit your .NET for Apache Spar
 
 1. Create a new .NET for Apache Spark notebook. Launch a Jupyter notebook from your HDI cluster in the Azure portal.
 
-   ![Launch Jupyter Notebook](../media/hdi-spark-notebooks/launch-notebook.png)
+   ![Launch Jupyter Notebook](./media/hdinsight-notebook-installation/launch-notebook.png)
 
    Then, select **New** > **.NET Spark (C#)** to create a notebook.
 
-   ![Jupyter Notebook](../media/hdi-spark-notebooks/create-sparkdotnet-notebook.png)
+   ![Jupyter Notebook](./media/hdinsight-notebook-installation/create-sparkdotnet-notebook.png)
 
 2. Submit jobs using .NET for Apache Spark.
 
@@ -146,7 +146,7 @@ After finishing the previous steps, you can now submit your .NET for Apache Spar
    df.Show();
    ```
 
-   ![Submit Spark Job](../media/hdi-spark-notebooks/create-df.png)
+   ![Submit Spark Job](./media/hdinsight-notebook-installation/create-df.png)
 
    Use the following code snippet to register a user-defined function (UDF) and use the UDF with DataFrames:
 
@@ -155,7 +155,7 @@ After finishing the previous steps, you can now submit your .NET for Apache Spar
    df.Select(myawesomeudf(df["id"])).Show();
    ```
 
-   ![Submit Spark Job](../media/hdi-spark-notebooks/run-udf.png)
+   ![Submit Spark Job](./media/hdinsight-notebook-installation/run-udf.png)
 
 ## Next steps
 

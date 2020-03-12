@@ -1,20 +1,16 @@
 ---
 title: Install .NET for Apache Spark on Jupyter notebooks on Azure HDInsight Spark clusters
 description: Learn how to install .NET for Apache Spark on Azure HDInsight's Jupyter Notebooks.
-ms.date: 03/05/2020
+ms.date: 03/13/2020
 ms.topic: conceptual
 ms.custom: mvc,how-to
 ---
 
 # Install .NET for Apache Spark on Jupyter notebooks on Azure HDInsight Spark clusters
 
-This article teaches you how to install .NET for Apache Spark on Jupyter notebooks on Azure HDInsight Spark clusters.
+This article teaches you how to install .NET for Apache Spark on Jupyter notebooks on Azure HDInsight Spark clusters. You can deploy .NET for Apache Spark on Azure HDInsight clusters through a combination of the command line and the Azure portal (for more information, see [how to deploy a .NET for Apache Spark application to Azure HDInsight](../tutorials/hdinsight-deployment.md)), but notebooks provide a more interactive and iterative experience.
 
-## Background
-
-You can deploy .NET for Apache Spark on Azure HDInsight clusters through a combination of the command line and the Azure portal (see [how to deploy a .NET for Apache Spark application to Azure HDInsight](../tutorials/hdinsight-deployment.md)), notebooks provide a more interactive and iterative experience.
-
-Azure HDInsight clusters already come with Jupyter notebooks, all you have to do is configure the Jupyter notebooks to run .NET for Apache Spark. To use .NET for Apache Spark in your Jupyter notebooks, a C# REPL is needed to execute your C# code line-by-line and to preserve execution state when necessary. [Try .NET](https://github.com/dotnet/try) has been integrated as the official .NET REPL.
+Azure HDInsight clusters already come with Jupyter notebooks, so all you have to do is configure the Jupyter notebooks to run .NET for Apache Spark. To use .NET for Apache Spark in your Jupyter notebooks, a C# REPL is needed to execute your C# code line-by-line and to preserve execution state when necessary. [Try .NET](https://github.com/dotnet/try) has been integrated as the official .NET REPL.
 
 To enable .NET for Apache Spark through the Jupyter Notebooks experience, you need to follow a few manual steps through [Ambari](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-manage-ambari) and submit [script actions](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux) on the HDInsight Spark cluster.
 
@@ -23,43 +19,40 @@ To enable .NET for Apache Spark through the Jupyter Notebooks experience, you ne
 
 ## Prerequisites
 
-Create an [Azure HDInsight Spark](https://docs.microsoft.com/azure/hdinsight/spark/apache-spark-jupyter-spark-sql-use-portal#create-an-hdinsight-spark-cluster) cluster.
+If you don't already have one, create an [Azure HDInsight Spark](https://docs.microsoft.com/azure/hdinsight/spark/apache-spark-jupyter-spark-sql-use-portal#create-an-hdinsight-spark-cluster) cluster.
 
-1. Visit the **[Azure Portal](https;//portal.azure.com)**.
+1. Visit the [Azure portal](https;//portal.azure.com) and select **+ Create a Resource**.
 
-1. Select **+ Create a Resource**.
-
-1. Create a new Azure HDInsight cluster resource. Ensure you select **Spark 2.4** and **HDI 4.0** during cluster creation.
+1. Create a new Azure HDInsight cluster resource. Select **Spark 2.4** and **HDI 4.0** during cluster creation.
 
 ## Installation Procedure
 
 In the Azure portal, select the **HDInsight Spark cluster** you created in the previous step.
 
-### Stop Livy Server
+### Stop the Livy server
 
-1. From the portal, select **Overview**, and then select **Ambari home**. If prompted, enter the cluster login credentials for the cluster.
+1. From the portal, select **Overview**, and then select **Ambari home**. If prompted, enter the login credentials for the cluster.
 
    ![Stop Livy Server](./media/hdinsight-notebook-installation/select-ambari.png)
 
-2. Select **Spark2**, and then select **LIVY FOR SPARK2 SERVER**.
+2. Select **Spark2** from the left navigation menu, and select **LIVY FOR SPARK2 SERVER**.
 
    ![Stop Livy Server](./media/hdinsight-notebook-installation/select-livyserver.png)
 
-3. Select **hn0... host**, and stop **Livy for Spark2 Server** if it is running. When prompted, select **OK** to proceed.
+3. Select **hn0... host**.
 
-   Select hn0 as shown below.
    ![Stop Livy Server](./media/hdinsight-notebook-installation/select-host.png)
+
+4. Select the ellipsis next to **Livy for Spark2 Server** and select **Stop**. When prompted, select **OK** to proceed.
 
    Stop Livy for Spark2 Server.
    ![Stop Livy Server](./media/hdinsight-notebook-installation/stop-server.png)
 
-4. Repeat the previous steps for **hn1... host**.
+5. Repeat the previous steps for **hn1... host**.
 
-### Submit HDInsight Script Action
+### Submit an HDInsight script action
 
-1. Create and upload `install-interactive-notebook.sh`.
-
-   The `install-interactive-notebook.sh` is a script that installs .NET for Apache Spark and makes changes to Apache Livy and sparkmagic. Before you submit a script action to HDInsight, you need to create and upload `install-interactive-notebook.sh`.
+1. The `install-interactive-notebook.sh` is a script that installs .NET for Apache Spark and makes changes to Apache Livy and sparkmagic. Before you submit a script action to HDInsight, you need to create and upload `install-interactive-notebook.sh`.
 
    Create a new file named **install-interactive-notebook.sh** in your local computer and paste the contents of [install-interactive-notebook.sh contents](https://raw.githubusercontent.com/dotnet/spark/master/deployment/HDI-Spark/Notebooks/install-interactive-notebook.sh).
 
@@ -79,7 +72,7 @@ In the Azure portal, select the **HDInsight Spark cluster** you created in the p
 
    Move to the next step when green checkmarks appear next to the status of the script action.
 
-### Start Livy server
+### Start the Livy server
 
 Follow the instructions in the [Stop Livy server](#stop-livy-server) section to **Start** (rather than **Stop**) the Livy for Spark2 Server for hosts **hn0** and **hn1**.
 
@@ -97,21 +90,19 @@ Follow the instructions in the [Stop Livy server](#stop-livy-server) section to 
 
    There are three individual properties. Add them one at a time using the **TEXT** property type in Single property add mode. Check that you don't have any extra spaces before or after any of the keys/values.
 
-   * Property 1:
+   * **Property 1**
        * Key:&ensp;&ensp;`spark.dotnet.shell.command`
        * Value: `/usr/share/dotnet-tools/dotnet-try,kernel-server,--default-kernel,csharp`
 
-   * Property 2:
+   * **Property 2** Use the version of .NET for Apache Spark which you had included in the previous script action.
        * Key:&ensp;&ensp;`spark.dotnet.packages`
        * Value: `["nuget: Microsoft.Spark, 0.6.0", "nuget: Microsoft.Spark.Extensions.Delta, 0.6.0"]`
 
-    Use the version of .NET for Apache Spark which you had included in the previous script action.
-
-   * Property 3:
+   * **Property 3**
        * Key:&ensp;&ensp;`spark.dotnet.interpreter`
        * Value: `try`
 
-   For example, the following captures the setting for adding property 1:
+   For example, the following image captures the setting for adding property 1:
 
    ![Set Configs](./media/hdinsight-notebook-installation/add-sparkconfig.png)
 

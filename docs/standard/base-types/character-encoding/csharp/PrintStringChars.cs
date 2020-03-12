@@ -12,7 +12,7 @@ namespace RuneSamples
             PrintChars("Hello");
             //PrintChars("你好");
             //PrintChars("𐓏𐓘𐓻𐓘𐓻𐓟 𐒻𐓟");
-            //PrintChars("🐂");
+            PrintChars("🐂");
 
             // <SnippetPrintChars>
             void PrintChars(string s)

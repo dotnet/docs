@@ -104,7 +104,7 @@ Follow the instructions in the [Stop Livy server](#stop-livy-server) section to 
    * Property 2:
        * Key:&ensp;&ensp;`spark.dotnet.packages`
        * Value: `["nuget: Microsoft.Spark, 0.6.0", "nuget: Microsoft.Spark.Extensions.Delta, 0.6.0"]`
- 
+
     Use the version of .NET for Apache Spark which you had included in the previous script action.
 
    * Property 3:

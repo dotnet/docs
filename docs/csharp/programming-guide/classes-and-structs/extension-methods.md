@@ -11,7 +11,8 @@ ms.assetid: 175ce3ff-9bbf-4e64-8421-faeb81a0bb51
 Extension methods enable you to "add" methods to existing types without creating a new derived type, recompiling, or otherwise modifying the original type. Extension methods are a special kind of static method, but they are called as if they were instance methods on the extended type. For client code written in C#, F# and Visual Basic, there is no apparent difference between calling an extension method and the methods that are actually defined in a type.  
   
  The most common extension methods are the LINQ standard query operators that add query functionality to the existing <xref:System.Collections.IEnumerable?displayProperty=nameWithType> and <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> types. To use the standard query operators, first bring them into scope with a `using System.Linq` directive. Then any type that implements <xref:System.Collections.Generic.IEnumerable%601> appears to have instance methods such as <xref:System.Linq.Enumerable.GroupBy%2A>, <xref:System.Linq.Enumerable.OrderBy%2A>, <xref:System.Linq.Enumerable.Average%2A>, and so on. You can see these additional methods in IntelliSense statement completion when you type "dot" after an instance of an <xref:System.Collections.Generic.IEnumerable%601> type such as <xref:System.Collections.Generic.List%601> or <xref:System.Array>.  
-  
+
+ ### OrderBy Example 
  The following example shows how to call the standard query operator `OrderBy` method on an array of integers. The expression in parentheses is a lambda expression. Many standard query operators take lambda expressions as parameters, but this is not a requirement for extension methods. For more information, see [Lambda Expressions](../statements-expressions-operators/lambda-expressions.md).  
   
  [!code-csharp[csProgGuideExtensionMethods#3](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideExtensionMethods/cs/extensionmethods.cs#3)]  
@@ -59,6 +60,28 @@ using System.Linq;
   
  [!code-csharp[csProgGuideExtensionMethods#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideExtensionMethods/cs/extensionmethods.cs#5)]  
   
+## Common Usage Patterns
+ ### Collection Functionality
+  In the past it was common to create "Collection Classes" that implemented the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> interface for a given Type and contained functionality that acted on collections of that type. While there is nothing wrong with creating this type of collection object, the same functionality can be achieved by using an extension on the <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType>. Extensions have the advantage of allowing the functionality to be called from any collection such as an <xref:System.Array?displayProperty=nameWithType> or <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> that implements <xref:System.Collections.Generic.IEnumerable%601?displayProperty=nameWithType> on that type. An example of this using an Array of Int32 can be found [earlier in this article](#orderby-example).
+
+ ### Layer-Specific Functionality
+  When using an Onion Architecture or other layered application design it is common to have a set of Domain Entities or Data Transfer Objects that can be used to communicate across application boundaries. These objects generally contain no functionality, or only minimal functionality that applies to all layers of the application. Extension methods can be used to add functionality that is specific to each application layer without loading the object down with methods not needed or wanted in other layers.
+
+```aspx-csharp
+public class DomainEntity
+{
+    public Int32 Id { get; set; }
+    public String FirstName { get; set; }
+    public String LastName { get; set; }
+}
+
+static class DomainEntityExtensions
+{
+    static String FullName(this DomainEntity value) 
+        => $"{value.FirstName} {value.LastName}";
+}
+```
+
 ## General Guidelines  
  In general, we recommend that you implement extension methods sparingly and only when you have to. Whenever possible, client code that must extend an existing type should do so by creating a new type derived from the existing type. For more information, see [Inheritance](./inheritance.md).  
   

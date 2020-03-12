@@ -71,7 +71,7 @@ s[1] = '�' ('\udc02')
 
 You can try passing other strings to this method in the following interactive C# panel:
 
-:::code language="csharp" interactive="try-dotnet-method" source="character-encoding/csharp/PrintStringChars.cs" id="SnippetPrintStringChars":::
+:::code language="csharp" interactive="try-dotnet" source="character-encoding/csharp/PrintStringChars.cs" id="SnippetPrintStringChars":::
 
 These examples show that the value of `string.Length` doesn't necessarily indicate the number of displayed characters. A single `char` instance by itself doesn't necessarily represent a character. Sometimes multiple `char` instances together represent a single character.
 

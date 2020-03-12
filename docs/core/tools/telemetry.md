@@ -40,7 +40,7 @@ The .NET Core tools collect usage data in order to help us improve your experien
 Read more about .NET Core CLI Tools telemetry: https://aka.ms/dotnet-cli-telemetry
 ```
 
-To disable this message and the .NET Core welcome message, set the `DOTNET_NOLOGO` environment variable to true. Note that this variable has no effect on telemetry opt out.
+To disable this message and the .NET Core welcome message, set the `DOTNET_NOLOGO` environment variable to `true`. Note that this variable has no effect on telemetry opt out.
 
 ## Data points
 

@@ -10,7 +10,7 @@ helpviewer_keywords:
 ---
 # default value expressions (C# reference)
 
-A default value expression produces the [default value](../builtin-types/default-values.md) of a type. There are two kinds of default value expressions: a call of the [default operator](#default-operator) and a [default literal](#default-literal).
+A default value expression produces the [default value](../builtin-types/default-values.md) of a type. There are two kinds of default value expressions: the [default operator](#default-operator) call and a [default literal](#default-literal).
 
 You also use the `default` keyword as the default case label within a [`switch` statement](../keywords/switch.md).
 

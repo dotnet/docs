@@ -1,5 +1,5 @@
 ---
-title: "Member access operators - C# reference"
+title: "Member access operators and expressions - C# reference"
 description: "Learn about C# operators that you can use to access type members."
 ms.date: 09/18/2019
 author: pkulikov
@@ -33,18 +33,18 @@ helpviewer_keywords:
   - ".. operator [C#]"
   - "range operator [C#]"
 ---
-# Member access operators (C# reference)
+# Member access operators and expressions (C# reference)
 
-You can use the following operators when you access a type member:
+You can use the following operators and expressions when you access a type member:
 
-- [`.` (member access)](#member-access-operator-): to access a member of a namespace or a type
+- [`.` (member access)](#member-access-expression-): to access a member of a namespace or a type
 - [`[]` (array element or indexer access)](#indexer-operator-): to access an array element or a type indexer
 - [`?.` and `?[]` (null-conditional operators)](#null-conditional-operators--and-): to perform a member or element access operation only if an operand is non-null
-- [`()` (invocation)](#invocation-operator-): to call an accessed method or invoke a delegate
+- [`()` (invocation)](#invocation-expression-): to call an accessed method or invoke a delegate
 - [`^` (index from end)](#index-from-end-operator-): to indicate that the element position is from the end of a sequence
 - [`..` (range)](#range-operator-): to specify a range of indices that you can use to obtain a range of sequence elements
 
-## Member access operator .
+## Member access expression .
 
 You use the `.` token to access a member of a namespace or a type, as the following examples demonstrate:
 
@@ -144,7 +144,7 @@ if (handler != null)
 }
 ```
 
-## Invocation operator ()
+## Invocation expression ()
 
 Use parentheses, `()`, to call a [method](../../programming-guide/classes-and-structs/methods.md) or invoke a [delegate](../../programming-guide/delegates/index.md).
 

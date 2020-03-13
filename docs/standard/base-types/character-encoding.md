@@ -18,12 +18,12 @@ This article explains how to use the classes that .NET provides for encoding and
 
 ## Encoders and decoders
 
-.NET provides encoding classes that encode and decode text by using various encoding systems. For example, the <xref:System.Text.UTF8Encoding> class describes the rules for encoding to, and decoding from, UTF-8. Encoding and decoding can also include validation. For example, the <xref:System.Text.UnicodeEncoding> class checks all `char` instances in the surrogate range to make sure they're in valid surrogate pairs. A fallback strategy determines how an encoder handles invalid characters or how a decoder handles invalid bytes.
+.NET provides encoding classes that encode and decode text by using various encoding systems. For example, the <xref:System.Text.UTF8Encoding> class describes the rules for encoding to, and decoding from, UTF-8. .NET uses UTF-16 encoding (represented by the <xref:System.Text.UnicodeEncoding> class) for `string` instances. Encoders and decoders are available for other encoding schemes.
+
+Encoding and decoding can also include validation. For example, the <xref:System.Text.UnicodeEncoding> class checks all `char` instances in the surrogate range to make sure they're in valid surrogate pairs. A fallback strategy determines how an encoder handles invalid characters or how a decoder handles invalid bytes.
 
 > [!WARNING]
 > .NET encoding classes provide a way to store and convert character data. They should not be used to store binary data in string form. Depending on the encoding used, converting binary data to string format with the encoding classes can introduce unexpected behavior and produce inaccurate or corrupted data. To convert binary data to a string form, use the <xref:System.Convert.ToBase64String%2A?displayProperty=nameWithType> method.
-
-.NET uses the UTF-16 encoding (represented by the <xref:System.Text.UnicodeEncoding> class) for `string` instances. Encoders and decoders are available for other encoding schemes.
 
 All character encoding classes in .NET inherit from the <xref:System.Text.Encoding?displayProperty=nameWithType> class, which is an abstract class that defines the functionality common to all character encodings. To access the individual encoding objects implemented in .NET, do the following:
 
@@ -256,7 +256,7 @@ The following code then instantiates the `CustomMapper` object and passes an ins
 
 ## See also
 
-- [Character encoding in .NET](character-encoding-introduction.md)
+- [Introduction to character encoding in .NET](character-encoding-introduction.md)
 - <xref:System.Text.Encoder>
 - <xref:System.Text.Decoder>
 - <xref:System.Text.DecoderFallback>

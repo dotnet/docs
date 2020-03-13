@@ -200,7 +200,7 @@ Since any Unicode scalar value is representable by a single `char` or by a surro
 
 This article uses the term *character* in the sense of *what a reader perceives as a single display element*. What looks like one character might result from a combination of multiple code points, so a more descriptive term that is often used in place of "character" is [grapheme cluster](https://www.unicode.org/glossary/#grapheme_cluster). The equivalent term in .NET is [text element](xref:System.Globalization.StringInfo.GetTextElementEnumerator%2A).
 
-Consider the strings "a", "á". "á", and "👩🏽‍🚒". If your operating system handles them as specified by the Unicode standard, each of these strings appears as a single text element or grapheme cluster. But the last two are represented by more than one scalar value code point.
+Consider the strings "a", "á". "á", and "`👩🏽‍🚒`". If your operating system handles them as specified by the Unicode standard, each of these strings appears as a single text element or grapheme cluster. But the last two are represented by more than one scalar value code point.
 
 * The string "a" is represented by one scalar value and contains one `char` instance.
 
@@ -215,7 +215,7 @@ Consider the strings "a", "á". "á", and "👩🏽‍🚒". If your operating 
   * `U+0065 LATIN SMALL LETTER A`
   * `U+0301 COMBINING ACUTE ACCENT`
 
-* Finally, the string "👩🏽‍🚒" is represented by four scalar values and contains seven `char` instances.
+* Finally, the string "`👩🏽‍🚒`" is represented by four scalar values and contains seven `char` instances.
 
   * `U+1F469 WOMAN` (supplementary range, requires a surrogate pair)
   * `U+1F3FD EMOJI MODIFIER FITZPATRICK TYPE-4` (supplementary range, requires a surrogate pair)

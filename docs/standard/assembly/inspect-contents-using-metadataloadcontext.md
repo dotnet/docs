@@ -29,7 +29,7 @@ To create the <xref:System.Reflection.MetadataLoadContext>, invoke its construct
 
 After you've created the context, you can load assemblies into it using methods such as <xref:System.Reflection.MetadataLoadContext.LoadFromAssemblyPath%2A>. You can use all reflection APIs on loaded assemblies, except ones that involve code execution. Note that the <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> method does involve the execution of constructors, so you should use the <xref:System.Reflection.MemberInfo.GetCustomAttributesData%2A> method instead when you need to examine custom attributes in the <xref:System.Reflection.MetadataLoadContext>.
 
-The following code sample creates <xref:System.Reflection.MetadataLoadContext>, loads the assembly into it and outputs assembly attributes into the console: 
+The following code sample creates <xref:System.Reflection.MetadataLoadContext>, loads the assembly into it and outputs assembly attributes into the console:
 
 [!code-csharp[](snippets/MetadataLoadContextSnippets.cs#CreateContext)]
 

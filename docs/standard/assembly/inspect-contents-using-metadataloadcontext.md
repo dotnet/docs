@@ -17,9 +17,11 @@ To use <xref:System.Reflection.MetadataLoadContext>, install the [System.Reflect
 
 Creating the <xref:System.Reflection.MetadataLoadContext> requires providing the instance of the <xref:System.Reflection.MetadataAssemblyResolver>. The simplest way to provide one is to use the <xref:System.Reflection.PathAssemblyResolver>, which resolves assemblies from the given collection of assembly path strings. This collection, besides assemblies you want to inspect directly, should also include all needed dependencies. For example, to read the custom attribute located in an external assembly, you should include that assembly, or an exception will be thrown. In most cases, you should include at least the *core assembly*, that is, the assembly containing built-in system types, such as <xref:System.Object?displayProperty=nameWithType>. The following code shows how to create the <xref:System.Reflection.PathAssemblyResolver> using the collection consisting of the inspected assembly and the current runtime's core assembly:
 
-```csharp
-var resolver = new PathAssemblyResolver(new string[]{"ExampleAssembly.dll", typeof(object).Assembly.Location});
-```
+[!code-csharp[](snippets/MetadataLoadContextSnippets.cs#CoreAssembly)]
+
+If you need access to all BCL types, you can include all runtime assemblies into the collection. The following code shows how to create the <xref:System.Reflection.PathAssemblyResolver> using the collection consisting of the inspected assembly and all assemblies of the current runtime:
+
+[!code-csharp[](snippets/MetadataLoadContextSnippets.cs#RuntimeAssemblies)]
 
 ## Create MetadataLoadContext
 
@@ -27,8 +29,10 @@ To create the <xref:System.Reflection.MetadataLoadContext>, invoke its construct
 
 After you've created the context, you can load assemblies into it using methods such as <xref:System.Reflection.MetadataLoadContext.LoadFromAssemblyPath%2A>. You can use all reflection APIs on loaded assemblies, except ones that involve code execution. Note that the <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> method does involve the execution of constructors, so you should use the <xref:System.Reflection.MemberInfo.GetCustomAttributesData%2A> method instead when you need to examine custom attributes in the <xref:System.Reflection.MetadataLoadContext>.
 
+The following code sample creates <xref:System.Reflection.MetadataLoadContext>, loads the assembly into it and outputs assembly attributes into the console: 
+
+[!code-csharp[](snippets/MetadataLoadContextSnippets.cs#CreateContext)]
+
 ## Example
 
-The following code sample loads the specified assembly into the <xref:System.Reflection.MetadataLoadContext> and outputs its attributes and defined types into the console:
-
-[!code-csharp[](~/samples/core/assembly/MetadataLoadContext/Program.cs)]
+For a complete code example, see [Inspect assembly contents using MetadataLoadContext](https://docs.microsoft.com/samples/dotnet/samples/inspect-assembly-contents-using-metadataloadcontext/).

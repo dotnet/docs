@@ -39,6 +39,9 @@ The following steps show the recommended approach for running the uninstall tool
 
 The `dotnet-core-uninstall list` command lists the installed .NET Core SDKs and runtimes that can be removed with this tool. Some SDKs and runtimes may be required by Visual Studio and they're displayed with a note of why it isn't recommended to uninstall them.
 
+> [!NOTE]
+> The output of the `dotnet-core-uninstall list` command will not match the list of installed versions in the output of `dotnet --info` in most cases. Specifically, this tool will not display versions installed by zip files or managed by Visual Studio (any version installed with Visual Studio 2019 16.3 or later). One way to check if a version is managed by Visual Studio is to view it in `Add or Remove Programs`, where Visual Studio managed versions are marked as such in their display names.
+
 **dotnet-core-uninstall list**
 
 #### Synopsis

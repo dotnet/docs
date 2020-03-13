@@ -14,14 +14,17 @@ namespace RuneSamples
             Console.WriteLine("\n----- Print string chars");
             PrintStringChars.Run();
 
-            //Console.WriteLine("\n----- Convert string to uppercase");
-            //ConvertToUpper.Run();
+            Console.WriteLine("\n----- Instantiate Runes");
+            InstantiateRunes.Run();
 
-            //Console.WriteLine("\n----- Split string on character count");
-            //InsertNewlines.Run();
+            Console.WriteLine("\n----- Convert string to uppercase");
+            ConvertToUpper.Run();
 
-            //Console.WriteLine("\n----- Instantiate Runes");
-            //InstantiateRunes.Run();
+            Console.WriteLine("\n----- Count text elements");
+            CountTextElements.Run();
+
+            Console.WriteLine("\n----- Split string on character count");
+            InsertNewlines.Run();
 
             //Console.WriteLine("\n----- Get value of a Rune");
             //GetValueOfRune.Run();

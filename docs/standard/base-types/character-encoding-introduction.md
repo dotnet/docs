@@ -69,12 +69,7 @@ s[0] = '�' ('\ud83d')
 s[1] = '�' ('\udc02')
 ```
 
-You can try passing other strings to this method in the following interactive C# panel:
-[!code-csharp-interactive[](character-encoding/csharp/PrintStringChars.cs?name=SnippetPrintStringChars)]
-
-<!--:::code language="csharp" interactive="try-dotnet-class" source="character-encoding/csharp/PrintStringChars.cs" id="SnippetPrintStringChars":::-->
-
-These examples show that the value of `string.Length` doesn't necessarily indicate the number of displayed characters. A single `char` instance by itself doesn't necessarily represent a character. Sometimes multiple `char` instances together represent a single character.
+These examples show that the value of `string.Length` doesn't necessarily indicate the number of displayed characters. A single `char` instance by itself doesn't necessarily represent a character.
 
 The `char` pairs that map to a single character are called *surrogate pairs*. To understand how they work, you need to understand Unicode and UTF-16 encoding.
 
@@ -82,7 +77,7 @@ The `char` pairs that map to a single character are called *surrogate pairs*. To
 
 Unicode is an international encoding standard for use on various platforms and with various languages and scripts.
 
-The Unicode Standard defines over 1.1 million [code points](https://www.unicode.org/glossary/#code_point). A code point is an integer value that can range from 0 to 1,114,111 (hex `U+10FFFF`). Some code points are assigned to characters, symbols, or emoji. Others are assigned to actions that control how text or characters are displayed, such as advance to a new line. Many code points are not yet assigned.
+The Unicode Standard defines over 1.1 million [code points](https://www.unicode.org/glossary/#code_point). A code point is an integer value that can range from 0 to `U+10FFFF` (decimal 1,114,111). Some code points are assigned to characters, symbols, or emoji. Others are assigned to actions that control how text or characters are displayed, such as advance to a new line. Many code points are not yet assigned.
 
 Here are some examples of code point assignments, with links to Unicode charts in which they appear:
 
@@ -103,7 +98,7 @@ Within the full range of code points there are two sub-ranges:
 
 ## UTF-16 code units
 
-.NET uses 16-bit Unicode Transformation Format ([UTF-16](https://www.unicode.org/faq/utf_bom.html#UTF16)) to encode the text in a `string`. UTF-16 is a character encoding system that uses 16-bit *code units* to represent Unicode code points. A `char` instance represents a 16-bit code unit.
+16-bit Unicode Transformation Format ([UTF-16](https://www.unicode.org/faq/utf_bom.html#UTF16)) is a character encoding system that uses 16-bit *code units* to represent Unicode code points. .NET uses UTF-16 to encode the text in a `string`. A `char` instance represents a 16-bit code unit.
 
 A single 16-bit code unit can represent any code point in the 16-bit range of the Basic Multilingual Plane. But for a code point in the supplementary range, two `char` instances are needed.
 
@@ -111,20 +106,20 @@ A single 16-bit code unit can represent any code point in the 16-bit range of th
 
 The translation of two 16-bit values to a single 21-bit value is facilitated by a special range called the *surrogate code points*, from `U+D800` to `U+DFFF` (decimal 55,296 to 57,343), inclusive.
 
-When a *high surrogate* code point (`U+D800..U+DBFF`) is immediately followed by a *low surrogate* code point (`U+DC00..U+DFFF`), the pair is interpreted as a supplementary code point by using the following formula.
+When a *high surrogate* code point (`U+D800..U+DBFF`) is immediately followed by a *low surrogate* code point (`U+DC00..U+DFFF`), the pair is interpreted as a supplementary code point by using the following formula:
 
 ```
 code point = 0x10000 +
-  ((high surrogate code unit - 0xD800) * 0x0400) +
-  (low surrogate code unit - 0xDC00)
+  ((high surrogate code point - 0xD800) * 0x0400) +
+  (low surrogate code point - 0xDC00)
 ```
 
-The same formula using decimal notation looks like this:
+Here's the same formula using decimal notation:
 
 ```
 code point = 65,536 +
-  ((high surrogate code unit - 55,296) * 1,024) +
-  (low surrogate code unit - 56,320)
+  ((high surrogate code point - 55,296) * 1,024) +
+  (low surrogate code point - 56,320)
 ```
 
 For example, the actual code point that corresponds to the surrogate pair `0xD83C` and `0xDF39`  is computed as follows:
@@ -136,7 +131,7 @@ actual = 0x10000 + ((0xD83C - 0xD800) * 0x0400) + (0xDF39 - 0xDC00)
        = 0x1F339
 ```
 
-The same calculation using decimal notation looks like this:
+Here's the same calculation using decimal notation:
 
 ```
 actual =  65,536 + ((55,356 - 55,296) * 1,024) + (57,145 - 56320)
@@ -155,48 +150,27 @@ To refer to all code points other than the surrogate code points, the Unicode St
 
 ### The Rune type as a scalar value
 
-The `Rune` type, introduced in .NET Core 3.0, represents a Unicode scalar value. The `Rune` constructors validate that the resulting instance is a valid Unicode scalar value, otherwise an exception will be thrown.
+The `Rune` type, introduced in .NET Core 3.0, represents a Unicode scalar value. The `Rune` constructors validate that the resulting instance is a valid Unicode scalar value, otherwise they throw an exception.
 
-The term "rune" is not defined in the Unicode Standard. Its use in .NET Core is not related to the [the Runic range](https://unicode.org/charts/PDF/U16A0.pdf) defined by the Unicode Standard. The term dates back to [the creation of UTF-8](https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt) in 1992 by Rob Pike and Ken Thompson. The pair were looking for a term to describe what would eventually become known as a code point. [They settled on the term "rune"](https://twitter.com/rob_pike/status/732353233474064384). Rob Pike's later influence over the Go programming language helped popularize the term.
+The term "rune" is not defined in the Unicode Standard. The term dates back to [the creation of UTF-8](https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt) in 1992 by Rob Pike and Ken Thompson. They were looking for a term to describe what would eventually become known as a code point. [They settled on the term "rune"](https://twitter.com/rob_pike/status/732353233474064384), and Rob Pike's later influence over the Go programming language helped popularize the term.
 
 The following example shows code that successfully instantiates `Rune` instances because the input represents valid scalar values:
 
-```csharp
-Rune a = new Rune('a');
-Rune b = new Rune(0x0061);
-Rune c = new Rune(0x10421);
-Rune d = new Rune('\ud801', '\udc21');
-```
+:::code language="csharp" source="character-encoding/csharp/InstantiateRunes.cs" id="SnippetValid":::
 
 The following example throws an exception because the code point is in the surrogate range and isn't provided as part of a surrogate pair:
 
-```csharp
-Rune e = new Rune('\ud801');
-```
+:::code language="csharp" source="character-encoding/csharp/InstantiateRunes.cs" id="SnippetInvalidSurrogate":::
 
 The following example throws an exception because the code point is beyond the supplementary range:
 
-```csharp
-Rune f = new Rune(0x12345678);
-```
+:::code language="csharp" source="character-encoding/csharp/InstantiateRunes.cs" id="SnippetInvalidHigh":::
 
 ### Rune usage example: changing letter case
 
 An API that takes a `char` and assumes it is working with a character doesn't work correctly if the `char` is from a surrogate pair. For example, consider the following method that calls <xref:System.Char.ToUpperInvariant%2A?displayProperty=nameWithType> on each char in a string:
 
-```csharp
-// THIS SAMPLE SHOWS INCORRECT CODE.
-// DO NOT DO THIS IN A PRODUCTION APPLICATION.
-public static string ConvertToUpperBadExample(string input)
-{
-    StringBuilder builder = new StringBuilder(input.Length);
-    for (int i = 0; i < input.Length; i++) /* or 'foreach' */
-    {
-        builder.Append(char.ToUpperInvariant(input[i]));
-    }
-    return builder.ToString();
-}
-```
+:::code language="csharp" source="character-encoding/csharp/ConvertToUpper.cs" id="SnippetBadExample":::
 
 If the `input` string contains the lowercase Deseret letter `er` (`𐑉`), this code won't convert it to uppercase (`𐐡`). The code calls `char.ToUpperInvariant` separately on each surrogate code point, `U+D801` and `U+DC49`. But `U+D801` doesn't have enough information by itself to identify it as a lowercase letter, so `char.ToUpperInvariant` leaves it alone. And it handles `U+DC49` the same way. The result is that lowercase '𐑉' in the `input` string doesn't get converted to uppercase '𐐡'.
 
@@ -205,17 +179,7 @@ Here are two options for correctly converting strings to uppercase:
 * Call <xref:System.String.ToUpperInvariant%2A?displayProperty=nameWithType> on the input string rather than iterating `char`-by-`char`. The `string.ToUpperInvariant` method has access to both parts of each surrogate pair, so it can handle all Unicode code points correctly.
 * Iterate through the Unicode scalar values as `Rune` instances instead of `char` instances, as shown in the following example. Since a `Rune` instance is a valid Unicode scalar value, it can be passed to APIs that expect to operate on a character. For example, calling <xref:System.Text.Rune.ToUpperInvariant%2A?displayProperty=nameWithType> as shown in the following example gives correct results:
 
-```csharp
-public static string ConvertToUpper(string input)
-{
-    StringBuilder builder = new StringBuilder(input.Length);
-    foreach (Rune rune in input.EnumerateRunes())
-    {
-        builder.Append(Rune.ToUpperInvariant(rune));
-    }
-    return builder.ToString();
-}
-```
+  :::code language="csharp" source="character-encoding/csharp/ConvertToUpper.cs" id="SnippetGoodExample":::
 
 ### Other Rune APIs
 
@@ -260,7 +224,7 @@ Consider the strings "a", "á". "á", and "👩🏽‍🚒". If your operating 
 
 In some of the preceding examples - such as the combining accent modifier or the skin tone modifier - the code point does not display as a standalone element on the screen. Rather, it serves to modify the appearance of a text element that came before it.
 
-A scalar value code point represents a basic building block of a piece of text. But these examples show that it might take multiple scalar values to make up what we think of as a single "character," or grapheme cluster.
+A scalar value code point represents a basic building block of a piece of text. But these examples show that it might take multiple scalar values to make up what we think of as a single "character," or "grapheme cluster."
 
 To enumerate the grapheme clusters of a `string`, use the <xref:System.Globalization.StringInfo> class as shown in the following example. For developers familiar with Swift, the .NET `StringInfo` type is conceptually similar to [Swift's `character` type](https://developer.apple.com/documentation/swift/character).
 
@@ -268,113 +232,31 @@ To enumerate the grapheme clusters of a `string`, use the <xref:System.Globaliza
 
 In .NET APIs, grapheme clusters are called *text elements*. The following method demonstrates the differences between `char` instances, `Rune` instances (scalar value code points), and text elements:
 
-```csharp
-static void PrintTextElementCount(string s)
-{
-    Console.WriteLine(s);
-    Console.WriteLine($"Number of chars: {s.Length}");
-    Console.WriteLine($"Number of runes: {s.EnumerateRunes().Count()}");
+:::code language="csharp" source="character-encoding/csharp/CountTextElements.cs" id="SnippetCountMethod":::
 
-    TextElementEnumerator enumerator = StringInfo.GetTextElementEnumerator(s);
+:::code language="csharp" source="character-encoding/csharp/CountTextElements.cs" id="SnippetCallCountMethod":::
 
-    int textElementCount = 0;
-    while (enumerator.MoveNext())
-    {
-        textElementCount++;
-    }
-
-    Console.WriteLine($"Number of text elements: {textElementCount}");
-}
-```
-
-```csharp
-PrintTextElementCount("á");
-// Number of chars: 1
-// Number of runes: 1
-// Number of text elements: 1
-```
-
-```csharp
-PrintTextElementCount("á");
-// Number of chars: 2
-// Number of runes: 2
-// Number of text elements: 1
-```
-
-```csharp
-PrintTextElementCount("👩🏽‍🚒");
-// Number of chars: 7
-// Number of runes: 4
-// Number of text elements: 1
-```
-
-If you run this code and the text element count for the emoji shows `4`, that is due to a bug in .NET Core. The bug has been fixed but not published yet.
+If you run this code in .NET Framework or .NET Core 3.1 or earlier, the text element count for the emoji shows `4`. That is due to a bug in the `StringInfo` class that won't be fixed until .NET 5.
 
 ### Example: splitting strings
 
 When splitting strings, avoid splitting surrogate pairs and grapheme clusters. Consider the following example of incorrect code, which intends to insert line breaks every 10 characters in a string:
 
-```csharp
-// THE FOLLOWING METHOD SHOWS INCORRECT CODE.
-// DO NOT DO THIS IN A PRODUCTION APPLICATION.
-static string InsertNewlinesEveryTencharsBadExample(string input)
-{
-    StringBuilder builder = new StringBuilder();
-
-    // First, append chunks in multiples of 10 chars
-    // followed by a newline.
-    int i = 0;
-    for (; i < input.Length - 10; i += 10)
-    {
-        builder.Append(input, i, 10);
-        builder.AppendLine(); // newline
-    }
-
-    // Then append any leftover data followed by
-    // a final newline.
-    builder.Append(input, i, input.Length - i);
-    builder.AppendLine(); // newline
-
-    return builder.ToString();
-}
-```
+:::code language="csharp" source="character-encoding/csharp/InsertNewlines.cs" id="SnippetBadExample":::
 
 Because this code enumerates `char`s, a surrogate pair that happens to straddle a 10-`char` boundary will be split and a newline injected between them. This insertion introduces data corruption, because surrogate code points are meaningful only as a pair with the two surrogate code units next to each other.
 
-The potential for data corruption isn't eliminated if you enumerate `Rune` instances (scalar values) instead of `char` instances. A set of `Rune` instances might make up a grapheme cluster that straddles a 10-`char` boundary. If the set is split up, it can't be interpreted correctly.
+The potential for data corruption isn't eliminated if you enumerate `Rune` instances (scalar values) instead of `char` instances. A set of `Rune` instances might make up a grapheme cluster that straddles a 10-`char` boundary. If the grapheme cluster set is split up, it can't be interpreted correctly.
 
-The solution is to break the string by counting grapheme clusters, or text elements, as in the following example:
+A better approach is to break the string by counting grapheme clusters, or text elements, as in the following example:
 
-```csharp
-static string InsertNewlinesEveryTenTextElements(string input)
-{
-    StringBuilder builder = new StringBuilder();
+:::code language="csharp" source="character-encoding/csharp/InsertNewlines.cs" id="SnippetGoodExample":::
 
-    // Append chunks in multiples of 10 grapheme clusters
-
-    TextElementEnumerator enumerator = StringInfo.GetTextElementEnumerator(input);
-
-    int textElementCount = 0;
-    while (enumerator.MoveNext())
-    {
-        builder.Append(enumerator.Current);
-        if (textElementCount % 10 == 0 && textElementCount > 0)
-        {
-            builder.AppendLine(); // newline
-        }
-        textElementCount++;
-    }
-
-    // Add a final newline.
-    builder.AppendLine();
-    return builder.ToString();
-
-}
-```
+As noted earlier, however, a bug in the `StringInfo` class will cause some grapheme clusters to be handled incorrectly.
 
 ## UTF-8 and UTF-32
 
-The preceding sections focused on UTF-16 because that's what .NET uses to encode strings. There are other encoding systems for Unicode - [UTF-8](https://www.unicode.org/faq/utf_bom.html#UTF8)and [UTF-32](https://www.unicode.org/faq/utf_bom.html#UTF32). These encodings use 8-bit code units and 32-bit code units, respectively.
+The preceding sections focused on UTF-16 because that's what .NET uses to encode strings. There are other encoding systems for Unicode - [UTF-8](https://www.unicode.org/faq/utf_bom.html#UTF8) and [UTF-32](https://www.unicode.org/faq/utf_bom.html#UTF32). These encodings use 8-bit code units and 32-bit code units, respectively.
 
 Like UTF-16, UTF-8 requires multiple code units to represent some Unicode scalar values. UTF-32 can represent any scalar value in a single 32-bit code unit.
 

@@ -1,0 +1,34 @@
+### YamlMime:Landing 
+
+title: Azure SDK for .NET documentation
+summary: Find the information you need to use .NET on Azure 
+
+metadata: 
+  title: Azure SDK for .NET documentation
+  description: .NET Core is awesome and you should be using it for all your Azure needs.
+  ms.service: multiple
+  ms.topic: landing-page
+  author: camsoper
+  ms.author: casoper
+  manager: markl
+  ms.date: 02/19/2020
+
+landingContent:
+  - title: Azure SDK for .NET
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Authentication
+            url: authentication.md
+          - text: Logging
+            url: \#azure-sdk-for-net-documentation
+      - linkListType: download 
+        links:
+          - text: Packages
+            url: https://www.nuget.org/packages?q=windowsazureofficial
+          - text: Tools
+            url: tools.md
+      - linkListType: reference
+        links:
+          - text: API reference
+            url: https://docs.microsoft.com/dotnet/api/overview/azure/?view=azure-dotnet

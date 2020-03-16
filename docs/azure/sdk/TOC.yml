@@ -1,0 +1,25 @@
+- name: Azure SDK for .NET
+  href: index.yml
+  items:
+    - name: Azure SDK for .NET
+      href: dotnet-sdk-azure-get-started.md
+    - name: Concepts
+      expanded: true
+      items:
+        - name: Authentication
+          href: authentication.md
+        - name: Logging
+          href: authentication.md
+    - name: Downloads
+      expanded: true
+      items:
+        - name: Packages
+          href: https://www.nuget.org/packages?q=windowsazureofficial
+        - name: Tools
+          href: tools.md
+        - name: Migrate an ASP.NET app to an Azure VM
+          href: dotnet-howto-migrate-to-vm.md
+        - name: Migrate a SQL Server database to Azure
+          href: dotnet-howto-migrate-sql.md
+    - name: API reference
+      href: https://docs.microsoft.com/dotnet/api/overview/azure/?view=azure-dotnet

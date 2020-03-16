@@ -29,15 +29,15 @@ These tutorials demonstrate the steps to create (or migrate) a virtual machine, 
 
 ### Benefits
 
-Virtual machines offer the easiest path to migrate an application from on-premises to the cloud.  They enable you to replicate the same environment your application uses on-premises, while removing the need to maintain your own data centers.  Virtual Machine Scale Sets provide high availability and scalability for applications running in Virtual Machines.
+Virtual machines offer the easiest path to migrate an application from on-premises to the cloud. They enable you to replicate the same environment your application uses on-premises, while removing the need to maintain your own data centers. Virtual Machine Scale Sets provide high availability and scalability for applications running in Virtual Machines.
 
 ### Virtual Machine Size
 
-Choose the virtual machine size and type that is best optimized for your workload.  See [sizes for Windows virtual machines in Azure](https://docs.microsoft.com/azure/virtual-machines/windows/sizes) for more information.
+Choose the virtual machine size and type that is best optimized for your workload. See [sizes for Windows virtual machines in Azure](https://docs.microsoft.com/azure/virtual-machines/windows/sizes) for more information.
 
 ### Maintenance
 
-Just like an on-premises machine, you are responsible for maintaining and updating the virtual machine<sup>&#42;</sup>.  If your application can run in a Platform as a Service (PaaS) environment such as [Azure App Service](https://docs.microsoft.com/azure/app-service/) or in a [container](https://docs.microsoft.com/azure/app-service/containers/), that will remove this need.
+Just like an on-premises machine, you are responsible for maintaining and updating the virtual machine<sup>&#42;</sup>. If your application can run in a Platform as a Service (PaaS) environment such as [Azure App Service](https://docs.microsoft.com/azure/app-service/) or in a [container](https://docs.microsoft.com/azure/app-service/containers/), that will remove this need.
 
 *<sup>&#42;</sup>[Automatic OS upgrades for virtual machine scale sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-automatic-upgrade) is currently available as a Preview service.*
 
@@ -53,20 +53,20 @@ Azure Virtual Networks enable you to:
 To get started, see the [Virtual Network documentation](https://docs.microsoft.com/azure/virtual-network/)
 
 ### Active Directory
-Many applications use Active Directory for authentication and identity management.  
-- Azure AD Connect enables you to integrate your on-premises directories with Azure Active Directory.  To get started, see [Integrate your on-premises directories with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).  
+Many applications use Active Directory for authentication and identity management. 
+- Azure AD Connect enables you to integrate your on-premises directories with Azure Active Directory. To get started, see [Integrate your on-premises directories with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect). 
 - Alternatively, [ExpressRoute](https://azure.microsoft.com/services/expressroute/) enables your application to access your on-premises Active Directory.
 
 ### SQL Databases
 
 If your application is using an on-premises database, your app will not be able to talk to it by default. You can either:
-- Configure a hybrid network that enables your application to access your database running on-premises.  
-- Migrate your database to the Azure.  See [Migrate your SQL Server database to Azure](dotnet-howto-migrate-sql.md) for more information.
+- Configure a hybrid network that enables your application to access your database running on-premises. 
+- Migrate your database to the Azure. See [Migrate your SQL Server database to Azure](dotnet-howto-migrate-sql.md) for more information.
 
 ### High Availability and Scalability
 
 #### Virtual Machine Scale Sets
-You want to make sure that your application is highly available and can scale, migrate your VM image to an Azure Virtual Machine Scale Set to improve the availability and scalability of your application.  VM Scale Sets provide the ability to use an existing VM you’ve already configured or set up a build pipeline to build an image with your application.  
+You want to make sure that your application is highly available and can scale, migrate your VM image to an Azure Virtual Machine Scale Set to improve the availability and scalability of your application. VM Scale Sets provide the ability to use an existing VM you’ve already configured or set up a build pipeline to build an image with your application. 
 
 To get started, see [Deploy your application on virtual machine scale sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-deploy-app).
 

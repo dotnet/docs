@@ -19,7 +19,7 @@ The fundamental areas to consider when migrating existing .NET applications to A
 
 ## Compute choices
 
-When migrating existing .NET Framework applications to Azure you have multiple choices.  However, since .NET Framework depends on Windows, the following choices are limited to Windows-based compute services.
+When migrating existing .NET Framework applications to Azure you have multiple choices. However, since .NET Framework depends on Windows, the following choices are limited to Windows-based compute services.
 
 The following table shows several comparisons and recommendations to help you choose the right compute migration path for your existing .NET application.
 
@@ -57,11 +57,11 @@ To get started building your own virtual network, see the [Azure Virtual Network
 
 A top concern of any organization moving to the cloud is security. Most companies have invested a substantial amount of time, money, and engineering into designing and developing a security model, and it’s important that they’re able to leverage existing investments such as identity stores and single sign-on solutions.
 
-Many existing enterprise B2E .NET applications running on-premises use Active Directory for authentication and identity management.  Azure AD Connect enables you to integrate your on-premises directories with Azure Active Directory.  To get started, see [Integrate your on-premises directories with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).
+Many existing enterprise B2E .NET applications running on-premises use Active Directory for authentication and identity management. Azure AD Connect enables you to integrate your on-premises directories with Azure Active Directory. To get started, see [Integrate your on-premises directories with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).
 
 See [Identity requirements for your hybrid identity solution](https://docs.microsoft.com/azure/active-directory/active-directory-hybrid-identity-design-considerations-business-needs) for further planning related to Azure Active Directory.
 
-Other authentication protocol choices are [OAuth](https://en.wikipedia.org/wiki/OAuth) and [OpenID](https://en.wikipedia.org/wiki/OpenID), which are common in consumer-facing applications.  When using autonomous identity databases, such as an ASP.NET Identity SQL database wrapped by IdentityServer4 using OAuth, no connectivity to on-premises databases or directories is usually required.
+Other authentication protocol choices are [OAuth](https://en.wikipedia.org/wiki/OAuth) and [OpenID](https://en.wikipedia.org/wiki/OpenID), which are common in consumer-facing applications. When using autonomous identity databases, such as an ASP.NET Identity SQL database wrapped by IdentityServer4 using OAuth, no connectivity to on-premises databases or directories is usually required.
 
 ## Next steps
 

@@ -9,7 +9,7 @@ helpviewer_keywords:
 ---
 # Character encoding in .NET
 
-This article provides an introduction to character encoding systems that are used by .NET.
+This article provides an introduction to character encoding systems that are used by .NET. The article explains how the <xref:System.String>, <xref:System.Char>, <xref:System.Text.Rune>, and <xref:System.Globalization.StringInfo> types work with Unicode, UTF-16, and UTF-8.
 
 ## The string and char types
 
@@ -21,6 +21,10 @@ The following sample function prints out the values in hexadecimal notation of a
 
 Pass the string "Hello" to this function, and you get the following output:
 
+```csharp
+PrintChars("Hello");
+```
+
 ```
 "Hello".Length = 5
 s[0] = 'H' ('\u0048')
@@ -30,7 +34,11 @@ s[3] = 'l' ('\u006c')
 s[4] = 'o' ('\u006f')
 ```
 
-Each character is represented by a single `char` value. That pattern holds true for most of the world's languages. For example, here are two Chinese characters that sound like *nǐ hǎo* and mean *Hello*:
+Each character is represented by a single `char` value. That pattern holds true for most of the world's languages. For example, here's the output for two Chinese characters that sound like *nǐ hǎo* and mean *Hello*:
+
+```csharp
+PrintChars("你好");
+```
 
 ```
 "你好".Length = 2
@@ -39,6 +47,10 @@ s[1] = '好' ('\u597d')
 ```
 
 However, for some languages and for some symbols and emoji, it takes two `char` instances to represent a single character. For example, compare the characters and `char` instances in the word that means *Osage* in the Osage language:
+
+```csharp
+PrintChars("𐓏𐓘𐓻𐓘𐓻𐓟 𐒻𐓟");
+```
 
 ```
 "𐓏𐓘𐓻𐓘𐓻𐓟 𐒻𐓟".Length = 17

@@ -47,9 +47,9 @@ namespace RuneSamples
                 return builder.ToString();
 
             }
-            // </InsertGoodExample>
+            // </SnippetGoodExample>
 
-            // <InsertBadExample>
+            // <SnippetBadExample>
             // THE FOLLOWING METHOD SHOWS INCORRECT CODE.
             // DO NOT DO THIS IN A PRODUCTION APPLICATION.
             static string InsertNewlinesEveryTencharsBadExample(string input)

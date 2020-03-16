@@ -25,7 +25,7 @@ Pass the string "Hello" to this function, and you get the following output:
 PrintChars("Hello");
 ```
 
-```
+```output
 "Hello".Length = 5
 s[0] = 'H' ('\u0048')
 s[1] = 'e' ('\u0065')
@@ -40,7 +40,7 @@ Each character is represented by a single `char` value. That pattern holds true 
 PrintChars("你好");
 ```
 
-```
+```output
 "你好".Length = 2
 s[0] = '你' ('\u4f60')
 s[1] = '好' ('\u597d')
@@ -52,7 +52,7 @@ However, for some languages and for some symbols and emoji, it takes two `char` 
 PrintChars("𐓏𐓘𐓻𐓘𐓻𐓟 𐒻𐓟");
 ```
 
-```
+```output
 "𐓏𐓘𐓻𐓘𐓻𐓟 𐒻𐓟".Length = 17
 s[0] = '�' ('\ud801')
 s[1] = '�' ('\udccf')
@@ -73,7 +73,9 @@ s[15] = '�' ('\ud801')
 s[16] = '�' ('\udcdf')
 ```
 
-In the preceding example, each character except the space is represented by two `char` instances. A single Unicode emoji is also represented by two `char`s, as seen in the following example showing an ox emoji:
+In the preceding example, each character except the space is represented by two `char` instances.
+
+A single Unicode emoji is also represented by two `char`s, as seen in the following example showing an ox emoji:
 
 ```
 "🐂".Length = 2
@@ -81,7 +83,7 @@ s[0] = '�' ('\ud83d')
 s[1] = '�' ('\udc02')
 ```
 
-These examples show that the value of `string.Length` doesn't necessarily indicate the number of displayed characters. A single `char` instance by itself doesn't necessarily represent a character.
+These examples show that the value of `string.Length`, which indicates the number of `char` instances, doesn't necessarily indicate the number of displayed characters. A single `char` instance by itself doesn't necessarily represent a character.
 
 The `char` pairs that map to a single character are called *surrogate pairs*. To understand how they work, you need to understand Unicode and UTF-16 encoding.
 
@@ -158,13 +160,13 @@ A *high* surrogate code point doesn't have a higher number value than a *low* su
 
 ## Unicode scalar values
 
-To refer to all code points other than the surrogate code points, the Unicode Standard uses the term [Unicode scalar value](https://www.unicode.org/glossary/#unicode_scalar_value). In other words, a scalar value is any code point that is assigned a character or can be assigned a character in the future.
+The term [Unicode scalar value](https://www.unicode.org/glossary/#unicode_scalar_value) refers to all code points other than the surrogate code points. In other words, a scalar value is any code point that is assigned a character or can be assigned a character in the future.
 
 ### The Rune type as a scalar value
 
 The `Rune` type, introduced in .NET Core 3.0, represents a Unicode scalar value. The `Rune` constructors validate that the resulting instance is a valid Unicode scalar value, otherwise they throw an exception.
 
-The term "rune" is not defined in the Unicode Standard. The term dates back to [the creation of UTF-8](https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt) in 1992 by Rob Pike and Ken Thompson. They were looking for a term to describe what would eventually become known as a code point. [They settled on the term "rune"](https://twitter.com/rob_pike/status/732353233474064384), and Rob Pike's later influence over the Go programming language helped popularize the term.
+The term "rune" is not defined in the Unicode Standard. The term dates back to [the creation of UTF-8](https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt). Rob Pike and Ken Thompson were looking for a term to describe what would eventually become known as a code point. [They settled on the term "rune"](https://twitter.com/rob_pike/status/732353233474064384), and Rob Pike's later influence over the Go programming language helped popularize the term.
 
 The following example shows code that successfully instantiates `Rune` instances because the input represents valid scalar values:
 
@@ -199,14 +201,16 @@ The `Rune` type exposes analogs of many of the `char` APIs. For example, the fol
 
 * <xref:System.Text.Rune.IsLetter%2A?displayProperty=nameWithType>
 * <xref:System.Text.Rune.IsWhiteSpace%2A?displayProperty=nameWithType>
-* <xref:System.Text.Rune.Rune.IsLetterOrDigit%2A?displayProperty=nameWithType>
+* <xref:System.Text.Rune.IsLetterOrDigit%2A?displayProperty=nameWithType>
 * <xref:System.Text.Rune.GetUnicodeCategory%2A?displayProperty=nameWithType>
 
 To get the raw scalar value from a `Rune` instance, use the <xref:System.Text.Rune.Value%2A?displayProperty=nameWithType> property.
 
-To convert a `Rune` instance back to a sequence of `char`s, use * <xref:System.Text.Rune.Rune.ToString%2A?displayProperty=nameWithType> or the * <xref:System.Text.Rune.Rune.ToUtf16%2A?displayProperty=nameWithType> method.
+To convert a `Rune` instance back to a sequence of `char`s, use <xref:System.Text.Rune.ToString%2A?displayProperty=nameWithType> or the <xref:System.Text.Rune.ToUtf16%2A?displayProperty=nameWithType> method.
 
 Since any Unicode scalar value is representable by a single `char` or by a surrogate pair, any `Rune` instance can be represented by at most 2 `char` instances. Use <xref:System.Text.Rune.Utf16SequenceLength%2A?displayProperty=nameWithType> to see how many `char` instances are required to represent a `Rune` instance.
+
+For more information about when and how to use the Rune type, see the [`Rune` API reference](xref:System.Text.Rune).
 
 ## Grapheme clusters
 
@@ -234,21 +238,19 @@ Consider the strings "a", "á". "á", and "`👩🏽‍🚒`". If your operatin
   * `U+200D ZERO WIDTH JOINER`
   * `U+1F692 FIRE ENGINE` (supplementary range, requires a surrogate pair)
 
-In some of the preceding examples - such as the combining accent modifier or the skin tone modifier - the code point does not display as a standalone element on the screen. Rather, it serves to modify the appearance of a text element that came before it.
+In some of the preceding examples - such as the combining accent modifier or the skin tone modifier - the code point does not display as a standalone element on the screen. Rather, it serves to modify the appearance of a text element that came before it. These examples show that it might take multiple scalar values to make up what we think of as a single "character," or "grapheme cluster."
 
-A scalar value code point represents a basic building block of a piece of text. But these examples show that it might take multiple scalar values to make up what we think of as a single "character," or "grapheme cluster."
-
-To enumerate the grapheme clusters of a `string`, use the <xref:System.Globalization.StringInfo> class as shown in the following example. For developers familiar with Swift, the .NET `StringInfo` type is conceptually similar to [Swift's `character` type](https://developer.apple.com/documentation/swift/character).
+To enumerate the grapheme clusters of a `string`, use the <xref:System.Globalization.StringInfo> class as shown in the following example. If you're familiar with Swift, the .NET `StringInfo` type is conceptually similar to [Swift's `character` type](https://developer.apple.com/documentation/swift/character).
 
 ### Example: count chars, runes, and text elements
 
-In .NET APIs, grapheme clusters are called *text elements*. The following method demonstrates the differences between `char` instances, `Rune` instances (scalar value code points), and text elements:
+In .NET APIs, grapheme clusters are called *text elements*. The following method demonstrates the differences between `char` instances, `Rune` instances, and text elements in a string:
 
 :::code language="csharp" source="character-encoding/csharp/CountTextElements.cs" id="SnippetCountMethod":::
 
 :::code language="csharp" source="character-encoding/csharp/CountTextElements.cs" id="SnippetCallCountMethod":::
 
-If you run this code in .NET Framework or .NET Core 3.1 or earlier, the text element count for the emoji shows `4`. That is due to a bug in the `StringInfo` class that won't be fixed until .NET 5.
+If you run this code in .NET Framework or .NET Core 3.1 or earlier, the text element count for the emoji shows `4`. That is due to a bug in the `StringInfo` class that is fixed in .NET 5.
 
 ### Example: splitting strings
 
@@ -264,7 +266,7 @@ A better approach is to break the string by counting grapheme clusters, or text 
 
 :::code language="csharp" source="character-encoding/csharp/InsertNewlines.cs" id="SnippetGoodExample":::
 
-As noted earlier, however, a bug in the `StringInfo` class will cause some grapheme clusters to be handled incorrectly.
+As noted earlier, however, in implementations of .NET other than .NET 5, the `StringInfo` class might not handle some grapheme clusters incorrectly.
 
 ## UTF-8 and UTF-32
 
@@ -272,7 +274,7 @@ The preceding sections focused on UTF-16 because that's what .NET uses to encode
 
 Like UTF-16, UTF-8 requires multiple code units to represent some Unicode scalar values. UTF-32 can represent any scalar value in a single 32-bit code unit.
 
-Here are some examples showing how the same Unicode character is represented in each of the three Unicode encoding systems:
+Here are some examples showing how the same Unicode character is represented in each of these three Unicode encoding systems:
 
 ```
 Scalar: U+0061 LATIN SMALL LETTER A ('a')
@@ -306,7 +308,7 @@ On a little-endian architecture, the string consisting of the UTF-16 code points
 
 Computer systems that communicate with each other must agree on the representation of data crossing the wire. Most network protocols use UTF-8 as a standard when transmitting text, partly to avoid issues that might result from a big-endian machine communicating with a little-endian machine. The string consisting of the UTF-8 code points `[ F0 90 93 8C ]` will always be represented as the bytes `[ 0xF0, 0x90, 0x93, 0x8C ]` regardless of endianness.
 
-To use UTF-9 for transmitting text, .NET applications often use code like the following example:
+To use UTF-8 for transmitting text, .NET applications often use code like the following example:
 
 ```csharp
 string stringToWrite = GetString();

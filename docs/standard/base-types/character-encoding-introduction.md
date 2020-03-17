@@ -105,7 +105,7 @@ Here are some examples of code point assignments, with links to Unicode charts i
 
 Code points are customarily referred to by using the syntax `U+xxxx`, where `xxxx` is the hex-encoded integer value.
 
-Within the full range of code points there are two sub-ranges:
+Within the full range of code points there are two subranges:
 
 * The **Basic Multilingual Plane (BMP)** in the range `U+0000..U+FFFF`. This 16-bit range provides 65,536 code points, enough to cover the majority of the world's writing systems.
 * **Supplementary code points** in the range `U+10000..U+10FFFF`. This 21-bit range provides more than a million additional code points that can be used for less well-known languages and other purposes such as emojis.
@@ -182,7 +182,7 @@ The `Rune` constructors validate that the resulting instance is a valid Unicode 
 
 :::code language="csharp" source="character-encoding/csharp/InstantiateRunes.cs" id="SnippetValid":::
 
-The following example throws an exception because the code point is in the surrogate range and isn't provided as part of a surrogate pair:
+The following example throws an exception because the code point is in the surrogate range and isn't part of a surrogate pair:
 
 :::code language="csharp" source="character-encoding/csharp/InstantiateRunes.cs" id="SnippetInvalidSurrogate":::
 
@@ -268,7 +268,7 @@ When splitting strings, avoid splitting surrogate pairs and grapheme clusters. C
 
 :::code language="csharp" source="character-encoding/csharp/InsertNewlines.cs" id="SnippetBadExample":::
 
-Because this code enumerates `char`s, a surrogate pair that happens to straddle a 10-`char` boundary will be split and a newline injected between them. This insertion introduces data corruption, because surrogate code points are meaningful only as a pair with the two surrogate code units next to each other.
+Because this code enumerates `char`s, a surrogate pair that happens to straddle a 10-`char` boundary will be split and a newline injected between them. This insertion introduces data corruption, because surrogate code points are meaningful only as pairs.
 
 The potential for data corruption isn't eliminated if you enumerate `Rune` instances (scalar values) instead of `char` instances. A set of `Rune` instances might make up a grapheme cluster that straddles a 10-`char` boundary. If the grapheme cluster set is split up, it can't be interpreted correctly.
 
@@ -276,7 +276,7 @@ A better approach is to break the string by counting grapheme clusters, or text 
 
 :::code language="csharp" source="character-encoding/csharp/InsertNewlines.cs" id="SnippetGoodExample":::
 
-As noted earlier, however, in implementations of .NET other than .NET 5, the `StringInfo` class might not handle some grapheme clusters incorrectly.
+As noted earlier, however, in implementations of .NET other than .NET 5, the `StringInfo` class might handle some grapheme clusters incorrectly.
 
 ## UTF-8 and UTF-32
 
@@ -360,7 +360,7 @@ In .NET, `string` instances almost always contain well-formed UTF-16 data, but t
 
 APIs like [`Encoding.UTF8.GetString`](xref:System.Text.UTF8Encoding.GetString%2A) never return ill-formed `string` instances. `Encoding.GetString` and `Encoding.GetBytes` methods detect ill-formed sequences in the input and perform character substitution when generating the output. For example, if [`Encoding.ASCII.GetString(byte[])`](xref:System.Text.ASCIIEncoding.GetString%2A) sees a non-ASCII byte in the input, it inserts a '?' into the returned `string` instance. [`Encoding.UTF8.GetString(byte[])`](xref:System.Text.UTF8Encoding.GetString%2A) replaces ill-formed UTF-8 sequences with `U+FFFD REPLACEMENT CHARACTER ('�')` in the returned `string` instance. For more information, see [the Unicode Standard](https://www.unicode.org/versions/latest/), Sections 5.22 and 3.9.
 
-The built-in `Encoding` classes can also be configured to throw an exception rather than perform character substitution when ill-formed sequences are seen. This is often used in security-sensitive applications where character substitution might not be acceptable.
+The built-in `Encoding` classes can also be configured to throw an exception rather than perform character substitution when ill-formed sequences are seen. This approach is often used in security-sensitive applications where character substitution might not be acceptable.
 
 ```csharp
 byte[] utf8Bytes = ReadFromNetwork();

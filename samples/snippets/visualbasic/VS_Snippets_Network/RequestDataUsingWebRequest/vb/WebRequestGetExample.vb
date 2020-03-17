@@ -4,6 +4,8 @@ Imports System.Net
 Namespace Examples.System.Net
     Public Class WebRequestGetExample
         Public Shared Sub Main()
+            ' If required url's protocol is TLS, set securityprotocol.
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 Or SecurityProtocolType.Tls11
             ' Create a request for the URL.   
             Dim request As WebRequest =
               WebRequest.Create("https://docs.microsoft.com")

@@ -2,7 +2,7 @@
 title: Migrate an ASP.NET Web app to an Azure VM
 description: Learn how to migrate an ASP.NET Web application from on-premises to an Azure Virtual Machine.
 ms.date: 11/15/2017
-ms.service: virtual-machines
+ms.custom: azure-dotnet
 ---
 
 # Migrate an ASP.NET Web application to an Azure Virtual Machine
@@ -64,7 +64,7 @@ Many applications use Active Directory for authentication and identity managemen
 If your application is using an on-premises database, your app will not be able to talk to it by default. You can either:
 
 - Configure a hybrid network that enables your application to access your database running on-premises.
-- Migrate your database to the Azure. See [Migrate your SQL Server database to Azure](dotnet-howto-migrate-sql.md) for more information.
+- Migrate your database to the Azure. See [Migrate your SQL Server database to Azure](sql.md) for more information.
 
 ### High Availability and Scalability
 

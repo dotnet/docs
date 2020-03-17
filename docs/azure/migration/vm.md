@@ -56,7 +56,7 @@ To get started, see the [Virtual Network documentation](https://docs.microsoft.c
 ### Active Directory
 Many applications use Active Directory for authentication and identity management.
 
-- Azure AD Connect enables you to integrate your on-premises directories with Azure Active Directory. To get started, see [Integrate your on-premises directories with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect). 
+- Azure AD Connect enables you to integrate your on-premises directories with Azure Active Directory. To get started, see [Integrate your on-premises directories with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).
 - Alternatively, [ExpressRoute](https://azure.microsoft.com/services/expressroute/) enables your application to access your on-premises Active Directory.
 
 ### SQL Databases

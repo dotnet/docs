@@ -110,6 +110,20 @@ conceptualContent:
         - itemType: tutorial
           text: Add sign-in to Microsoft to an ASP.NET web app
           url: https://docs.microsoft.com/azure/active-directory/develop/tutorial-v2-asp-webapp
+    - title: Migration
+      links:
+        - itemType: concept
+          text: Choose the right Azure hosting option
+          url: ./migration/choose.md
+        - itemType: how-to-guide
+          text: Migrate a .NET web app or service to Azure App Service
+          url: ./migration/app-service.md
+        - itemType: how-to-guide
+          text: Migrate an ASP.NET app to an Azure VM
+          url: ./migration/vm.md
+        - itemType: how-to-guide
+          text: Migrate a SQL Server database to Azure
+          url: ./migration/sql.md
     - title: Free .NET and Azure training
       links:
         - itemType: learn
@@ -123,6 +137,9 @@ conceptualContent:
           url: https://dot.net/videos
     - title: .NET architectural guides
       links:
+        - itemType: overview
+          text: Introduction to Azure and .NET
+          url: intro.md
         - itemType: learn
           text: Architect modern applications in Azure
           url: https://docs.microsoft.com/learn/paths/architect-modern-apps/

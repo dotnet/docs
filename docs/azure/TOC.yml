@@ -7,10 +7,10 @@
       expanded: true
       items:
         - name: Choose the right Azure hosting option
-          href: choose.md
+          href: ./migration/choose.md
         - name: Migrate a .NET web app or service to Azure App Service
-          href: app-service.md
+          href: ./migration/app-service.md
         - name: Migrate an ASP.NET app to an Azure VM
-          href: vm.md
+          href: ./migration/vm.md
         - name: Migrate a SQL Server database to Azure
-          href: sql.md
+          href: ./migration/sql.md

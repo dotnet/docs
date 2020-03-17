@@ -66,3 +66,5 @@ Edit and debug .NET Core apps on any operating system: Windows, Mac, and Linux.
 
 > [!div class="nextstepaction"]
 > [Download Visual Studio Code](https://code.visualstudio.com)
+
+---

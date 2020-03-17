@@ -29,6 +29,3 @@ The quickest and easiest way to install the **Azure SDK for Visual Studio 2015**
 
     ![Extensions and updates](../media/sdk/vs2015-install/ext-tools.png)
 
-## Next steps
-
-[Get started with Azure libraries for .NET](dotnet-sdk-azure-get-started.md).

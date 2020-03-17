@@ -8,6 +8,9 @@ namespace Examples.System.Net
     {
         public static void Main()
         {
+            // If required url's protocol is TLS, set securityprotocol.
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Tls11;
+            
             // Create a request for the URL.   
             WebRequest request = WebRequest.Create(
               "https://docs.microsoft.com");

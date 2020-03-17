@@ -176,11 +176,9 @@ The following diagram illustrates the scalar value code points.
 
 ### The Rune type as a scalar value
 
-The `Rune` type, introduced in .NET Core 3.0, represents a Unicode scalar value. The `Rune` constructors validate that the resulting instance is a valid Unicode scalar value, otherwise they throw an exception.
+The `Rune` type, introduced in .NET Core 3.0, represents a Unicode scalar value.
 
-The term "rune" is not defined in the Unicode Standard. The term dates back to [the creation of UTF-8](https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt). Rob Pike and Ken Thompson were looking for a term to describe what would eventually become known as a code point. [They settled on the term "rune"](https://twitter.com/rob_pike/status/732353233474064384), and Rob Pike's later influence over the Go programming language helped popularize the term.
-
-The following example shows code that successfully instantiates `Rune` instances because the input represents valid scalar values:
+The `Rune` constructors validate that the resulting instance is a valid Unicode scalar value, otherwise they throw an exception. The following example shows code that successfully instantiates `Rune` instances because the input represents valid scalar values:
 
 :::code language="csharp" source="character-encoding/csharp/InstantiateRunes.cs" id="SnippetValid":::
 
@@ -222,7 +220,7 @@ To convert a `Rune` instance back to a sequence of `char`s, use <xref:System.Tex
 
 Since any Unicode scalar value is representable by a single `char` or by a surrogate pair, any `Rune` instance can be represented by at most 2 `char` instances. Use <xref:System.Text.Rune.Utf16SequenceLength%2A?displayProperty=nameWithType> to see how many `char` instances are required to represent a `Rune` instance.
 
-For more information about when and how to use the Rune type, see the [`Rune` API reference](xref:System.Text.Rune).
+For more information about the .NET `Rune` type, see the [`Rune` API reference](xref:System.Text.Rune).
 
 ## Grapheme clusters
 

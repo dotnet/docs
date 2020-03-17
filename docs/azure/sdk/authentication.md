@@ -18,7 +18,7 @@ builder.UserID = "sampleuser@example"; // Format user ID as "user@server"
 builder.Password = password;
 builder.Encrypt = true;
 builder.TrustServerCertificate = true;
-                
+
 using (var conn = new SqlConnection(builder.ConnectionString))
 {
     conn.Open();
@@ -85,7 +85,7 @@ The first method is to build the token credential object in code. You should sto
 var credentials = SdkContext.AzureCredentialsFactory
     .FromServicePrincipal(clientId,
     clientSecret,
-    tenantId, 
+    tenantId,
     AzureEnvironment.AzureGlobalCloud);
 ```
 
@@ -109,7 +109,7 @@ File-based authentication allows you to put the service principal credentials in
 Read the contents of the file and create the entry point `Azure` object to start working with the API:
 
 ```csharp
-// pull in the location of the authentication properties file from the environment 
+// pull in the location of the authentication properties file from the environment
 var credentials = SdkContext.AzureCredentialsFactory
     .FromFile(Environment.GetEnvironmentVariable("AZURE_AUTH_LOCATION"));
 

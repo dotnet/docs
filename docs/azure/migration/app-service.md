@@ -2,7 +2,6 @@
 title: Migrate your .NET web app or service to Azure App Service
 description: Learn how to migrate a .NET web app or service from on-premises to Azure App Service.
 ms.date: 08/11/2018
-ms.service: app-service
 ---
 
 # Migrate your .NET web app or service to Azure App Service
@@ -51,10 +50,10 @@ This isn't supported. Consider copying required assemblies to the app's `\bin` f
 Everything traditionally configured via applicationHost.config in your application can now be configured through the Azure portal. This applies to AppPool bitness, enable/disable websockets, managed pipeline version, .NET Framework version (2.0/4.0), etc. To modify your [application settings](https://docs.microsoft.com/azure/app-service/web-sites-configure), navigate to the [Azure portal](https://portal.azure.com), open the blade for your web app, and then select the **Application Settings** tab.
 
 #### IIS5 Compatibility Mode
-IIS5 Compatibility Mode is not supported. In Azure App Service each Web App and all of the applications under it run in the same worker process with a specific set of [application pool](http://technet.microsoft.com/library/cc735247(v=WS.10).aspx).
+IIS5 Compatibility Mode is not supported. In Azure App Service each Web App and all of the applications under it run in the same worker process with a specific set of [application pool](https://technet.microsoft.com/library/cc735247(v=WS.10).aspx).
 
 #### IIS7+ schema compliance  
-Some elements and attributes are not defined in the Azure App Service IIS schema. If you encounter issues, consider using [XDT transforms](http://azure.microsoft.com/documentation/articles/web-sites-transform-extend/).
+Some elements and attributes are not defined in the Azure App Service IIS schema. If you encounter issues, consider using [XDT transforms](https://azure.microsoft.com/documentation/articles/web-sites-transform-extend/).
 
 #### Single application pool per site  
 In Azure App Service each Web App and all of the applications under it run in the same application pool. Consider establishing a single application pool with common settings or creating a separate Web App for each application.
@@ -62,7 +61,7 @@ In Azure App Service each Web App and all of the applications under it run in th
 ### COM and COM+ components  
 Azure App Service does not allow the registration of COM components on the platform. If your app makes use of any COM components, these would need to be rewritten in managed code and deployed with the site or application.
 
-### Physical directories 
+### Physical directories
 Azure App Service does not allow physical drive access. You may need to use a [Azure Files](https://docs.microsoft.com/azure/storage/files/storage-files-introduction) to access files via SMB. [Azure Blob Storage](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction) can store files for access via HTTPS.
 
 ### ISAPI filters  
@@ -78,7 +77,7 @@ SharePoint and FrontPage Server Extensions (FPSE) are not supported.
 Free sites have a size limit of 1 GB of content. If your site is greater than 1 GB, you must upgrade to a paid SKU. See [App Service pricing](https://azure.microsoft.com/pricing/details/app-service/windows/).
 
 ### Database size  
-For SQL Server databases, please check the current [SQL Database pricing](http://azure.microsoft.com/pricing/details/sql-database).
+For SQL Server databases, please check the current [SQL Database pricing](https://azure.microsoft.com/pricing/details/sql-database).
 
 ### Azure Active Directory (AAD) integration  
 AAD does not work with free apps. To use AAD, you must upgrade the app SKU. See [App Service pricing](https://azure.microsoft.com/pricing/details/app-service/windows/).
@@ -100,8 +99,3 @@ If your app cannot be migrated directly to App Service, consider App Service usi
 * [How to determine if your app qualifies for App Service](https://appmigration.microsoft.com/)
 * [Moving your database to the cloud](https://go.microsoft.com/fwlink/?linkid=863217)
 * [Azure Web App sandbox details and restrictions](https://github.com/projectkudu/kudu/wiki/Azure-Web-App-sandbox)
-
-## Next steps
-
-> [!div class="nextstepaction"]
-> [Deploy the app from Visual Studio](https://docs.microsoft.com/visualstudio/deployment/quickstart-deploy-to-azure?view=vs-2017)

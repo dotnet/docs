@@ -169,7 +169,7 @@ tools:
       url: https://docs.microsoft.com/dotnet/api/overview/azure/?view=azure-dotnet
     - imageSrc: https://docs.microsoft.com/en-us/media/logos/logo_visual-studio.svg
       title: "Tools"
-      url: ./dotnet-tools.md
+      url: ./tools.md
 
 additionalContent:
   sections: 
@@ -191,7 +191,7 @@ additionalContent:
               url: https://channel9.msdn.com/Shows/On-NET
             - text: ASP.NET Community Standup
               url: https://dotnet.microsoft.com/platform/community/standup
-        - title: Code
+        - title: Open Source
           links:
             - text: Azure SDK for .NET
               url: https://github.com/Azure/azure-sdk-for-net

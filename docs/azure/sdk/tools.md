@@ -19,18 +19,9 @@ These instructions install the recommended starting development environment for 
 
 ## [Windows](#tab/windows)
 
-<table>
-  <tr>
-    <td width="50">
-        <img src="https://docs.microsoft.com/media/logos/logo_vs-ide.svg" width="50" height="50"></img>
-    </td>
-    <td>
-        Visual Studio versions 2017 and later have built-in support for Azure development. The below steps describe enabling Azure development support in Visual Studio.<br />
-        <br />
-        For Visual Studio 2015 and earlier, <a href="vs2015-install.md">follow these instructions</a>.
-    </td>
-  </tr>
-</table>
+Visual Studio versions 2017 and later have built-in support for Azure development. The below steps describe enabling Azure development support in Visual Studio.
+
+For Visual Studio 2015 and earlier, <a href="vs2015-install.md">follow these instructions</a>.
 
 ### Step 1: Download Visual Studio 2019
 
@@ -48,16 +39,8 @@ In the Visual Studio installer, install Visual Studio (or modify an existing ins
 Get started by [deploying your first ASP.NET Core web app on Azure App Service](https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-dotnet).
 
 ## [macOS](#tab/macos)
-<table>
-  <tr>
-    <td width="50">
-        <img src="https://docs.microsoft.com/media/logos/logo_vs-mac.svg" width="50" height="50"></img>
-    </td>
-    <td>
-        Visual Studio for Mac has everything you need for Azure development.
-    </td>
-  </tr>
-</table>
+
+Visual Studio for Mac has everything you need for Azure development.
 
 ### Step 1: Download Visual Studio for Mac
 
@@ -68,16 +51,7 @@ During installation, Azure tools are selected by default.
 
 ## [Linux](#tab/linux)
 
-<table>
-  <tr>
-    <td width="50">
-        <img src="https://docs.microsoft.com/media/logos/logo_vs-code.svg" width="50" height="50"></img>
-    </td>
-    <td>
-        Visual Studio Code has everything you need for Azure development on Linux.
-    </td>
-  </tr>
-</table>
+Visual Studio Code has everything you need for Azure development on Linux.
 
 ### Step 1: Download the .NET Core SDK
 

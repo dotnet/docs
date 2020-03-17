@@ -12,10 +12,10 @@ This document provides multiple considerations and comparisons between the multi
 
 The fundamental areas to consider when migrating existing .NET applications to Azure are:
 
-1.	Compute choices
-2.	Database choices
-3.	Networking and security considerations
-4.	Authentication and authorization considerations
+1. Compute choices
+1. Database choices
+1. Networking and security considerations
+1. Authentication and authorization considerations
 
 ## Compute choices
 
@@ -26,14 +26,14 @@ The following table shows several comparisons and recommendations to help you ch
 |                 | Azure VMs | Azure App Service | Windows Containers |
 |-----------------|-----------|-------------------|--------------------|
 |When to use      |<ul><li>Application has strong dependencies on the server and local .msi installations.</li><li>You want the easiest application migration path</li></ul>|App has no dependencies on the server, it is just a clean ASP.NET web app (MVC, WebForm) or N-Tier app (Web API, WCf) accessing a database server. |<ul><li>Application has dependencies on the original server but those dependencies can be included in the Docker Windows image.</li><li>Want to modernize the app so it is [Cloud DevOps-Ready](https://docs.microsoft.com/dotnet/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/reasons-to-lift-and-shift-existing-net-apps-to-cloud-devops-ready-applications)</li></ul>|
-|Pros & benefits  |<ul><li>Easiest migration path</li><li>Familiar environment. Deployment environment is a VM so very similar to on-premises servers.</li></ul> |Ongoing PaaS maintenance, simplest way to manage and scale apps in Azure. |<ul><li>Prepared for the future, Cloud DevOps-Ready with dependencies included in the app’s containers.</li><li>Almost no need to re-factor .NET /C# code.</li></ul> |
-|Cons             |It is IaaS. Maintenance is costly. You have to manage VMs infrastructure about networking, load-balancer, scale-out, IIS management, etc. |<ul><li>Not all apps are [supported](http://www.migratetoazure.net/ReadinessAssessment)</li><li>Some apps might need to be refactored and even slightly re-architected, so they support Azure App Service.</li></ul> |<ul><li>Docker’s skills learning curve</li><li>Some code and app configuration settings changes</li></ul>|
+|Pros & benefits  |<ul><li>Easiest migration path</li><li>Familiar environment. Deployment environment is a VM so very similar to on-premises servers.</li></ul> |Ongoing PaaS maintenance, simplest way to manage and scale apps in Azure. |<ul><li>Prepared for the future, Cloud DevOps-Ready with dependencies included in the app's containers.</li><li>Almost no need to re-factor .NET /C# code.</li></ul> |
+|Cons             |It is IaaS. Maintenance is costly. You have to manage VMs infrastructure about networking, load-balancer, scale-out, IIS management, etc. |<ul><li>Not all apps are [supported](http://www.migratetoazure.net/ReadinessAssessment)</li><li>Some apps might need to be refactored and even slightly re-architected, so they support Azure App Service.</li></ul> |<ul><li>Docker's skills learning curve</li><li>Some code and app configuration settings changes</li></ul>|
 |Requirements |Windows Server VM with the same requirements than the app for on-premises | Azure App Service requirements specified at the [Compatibility analysis for Azure App Service](https://www.migratetoazure.net/Resources). |<ul><li>[Windows Server 2016 with Containers - Azure VM](https://azuremarketplace.microsoft.com/marketplace/apps/Microsoft.WindowsServer?tab=Overview)<br />or</li><li>[Azure Container Service (AKS)](https://azure.microsoft.com/services/container-service/) (That is Kubernetes orchestrator)<br />or<li>[Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/) orchestrator</li></ul> |
 |How to migrate |See [Migrate to Azure Virtual Machines](https://go.microsoft.com/fwlink/?linkid=862531) | See [Migrate Azure App Service](https://go.microsoft.com/fwlink/?linkid=862532) | Follow considerations, scenarios and walkthroughs explained in the [Modernizing existing .NET apps with Azure and Windows Containers eBook](https://aka.ms/liftandshiftwithcontainersebook) |
 
  The following flowchart diagram shows a decision tree when planning a migration to Azure for your existing .NET Framework applications, being option A the first option to try and perform if it is viable, but option B the easiest path to perform.
 
-![Flowchart showing hosting decision tree](media/dotnet-howto-choose-migration/decision-tree.png)
+![Flowchart showing hosting decision tree](../media/migration/choose/decision-tree.png)
 
 ## Database choices
 
@@ -50,12 +50,12 @@ Azure Virtual networks enable you to:
 - Get granular control over traffic between subnets
 - Create sophisticated network topologies using virtual appliances
 - Get an isolated and highly-secure environment for your applications
- 
+
 To get started building your own virtual network, see the [Azure Virtual Network documentation](https://docs.microsoft.com/azure/virtual-network/).
 
 ## Authentication and authorization considerations when migrating to Azure
 
-A top concern of any organization moving to the cloud is security. Most companies have invested a substantial amount of time, money, and engineering into designing and developing a security model, and it’s important that they’re able to leverage existing investments such as identity stores and single sign-on solutions.
+A top concern of any organization moving to the cloud is security. Most companies have invested a substantial amount of time, money, and engineering into designing and developing a security model, and it's important that they're able to leverage existing investments such as identity stores and single sign-on solutions.
 
 Many existing enterprise B2E .NET applications running on-premises use Active Directory for authentication and identity management. Azure AD Connect enables you to integrate your on-premises directories with Azure Active Directory. To get started, see [Integrate your on-premises directories with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).
 
@@ -66,4 +66,4 @@ Other authentication protocol choices are [OAuth](https://en.wikipedia.org/wiki/
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Migrate an ASP.NET web application to Azure App Service](dotnet-howto-migrate-app-service.md)
+> [Migrate an ASP.NET web application to Azure App Service](app-service.md)

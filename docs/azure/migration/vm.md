@@ -18,8 +18,8 @@ Learn how to create a virtual machine and publish your app to it: [Publish to an
 These tutorials demonstrate the steps to create (or migrate) a virtual machine, publish your web application to it, and other tasks that may be required to support your application in Azure.
 
 - Create a virtual machine for your ASP.NET application in Azure using one of the following two options:
-    - [Create a new virtual machine for ASP.NET Applications](https://go.microsoft.com/fwlink/?linkid=863237)
-    - [Migrate an existing on-premises virtual machine](https://docs.microsoft.com/azure/site-recovery/tutorial-migrate-on-premises-to-azure)
+  - [Create a new virtual machine for ASP.NET Applications](https://go.microsoft.com/fwlink/?linkid=863237)
+  - [Migrate an existing on-premises virtual machine](https://docs.microsoft.com/azure/site-recovery/tutorial-migrate-on-premises-to-azure)
 - [Publish your app using Visual Studio](https://go.microsoft.com/fwlink/?linkid=863240)
 - [Create a secure virtual network for your VMs](https://docs.microsoft.com/azure/virtual-network/virtual-network-get-started-vnet-subnet)
 - [Create a CI/CD pipeline for your application](https://docs.microsoft.com/vsts/build-release/apps/cd/deploy-webdeploy-iis-deploygroups)
@@ -44,6 +44,7 @@ Just like an on-premises machine, you are responsible for maintaining and updati
 ### Virtual Networks
 
 Azure Virtual Networks enable you to:
+
 - Build a hybrid infrastructure that you control
 - Bring your own IP addresses and DNS servers
 - Create an isolated and highly-secure environment for your applications
@@ -53,20 +54,22 @@ Azure Virtual Networks enable you to:
 To get started, see the [Virtual Network documentation](https://docs.microsoft.com/azure/virtual-network/)
 
 ### Active Directory
-Many applications use Active Directory for authentication and identity management. 
+Many applications use Active Directory for authentication and identity management.
+
 - Azure AD Connect enables you to integrate your on-premises directories with Azure Active Directory. To get started, see [Integrate your on-premises directories with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect). 
 - Alternatively, [ExpressRoute](https://azure.microsoft.com/services/expressroute/) enables your application to access your on-premises Active Directory.
 
 ### SQL Databases
 
 If your application is using an on-premises database, your app will not be able to talk to it by default. You can either:
-- Configure a hybrid network that enables your application to access your database running on-premises. 
+
+- Configure a hybrid network that enables your application to access your database running on-premises.
 - Migrate your database to the Azure. See [Migrate your SQL Server database to Azure](dotnet-howto-migrate-sql.md) for more information.
 
 ### High Availability and Scalability
 
 #### Virtual Machine Scale Sets
-You want to make sure that your application is highly available and can scale, migrate your VM image to an Azure Virtual Machine Scale Set to improve the availability and scalability of your application. VM Scale Sets provide the ability to use an existing VM you’ve already configured or set up a build pipeline to build an image with your application. 
+You want to make sure that your application is highly available and can scale, migrate your VM image to an Azure Virtual Machine Scale Set to improve the availability and scalability of your application. VM Scale Sets provide the ability to use an existing VM you've already configured or set up a build pipeline to build an image with your application.
 
 To get started, see [Deploy your application on virtual machine scale sets](https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-deploy-app).
 
@@ -76,4 +79,4 @@ When running your application across multiple instances, consider storing your l
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [Migrate a SQL Server database to Azure](dotnet-howto-migrate-sql.md)
+> [Migrate a SQL Server database to Azure](sql.md)

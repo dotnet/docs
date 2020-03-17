@@ -71,6 +71,6 @@ Once you deploy your application to Azure, you may run into cases where it worke
 ## Next steps
 
 * [Deploy your first ASP.NET Core web app to Azure](https://docs.microsoft.com/azure/app-service/app-service-web-get-started-dotnet)
-* [Learn about authentication in Azure APIs for .NET](dotnet-sdk-azure-authenticate.md)
+* [Learn about authentication in Azure SDK for .NET](./sdk/authenticate.md)
 * [Diagnose errors in your cloud apps](https://blogs.msdn.microsoft.com/webdev/2018/02/07/diagnosing-errors-on-your-cloud-apps)
 * Download the free e-book [Azure Quick Start Guide for .NET Developers](https://www.microsoft.com/net/download/thank-you/azure-quick-start-ebook)

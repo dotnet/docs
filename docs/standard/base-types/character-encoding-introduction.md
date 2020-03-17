@@ -110,6 +110,10 @@ Within the full range of code points there are two sub-ranges:
 * The **Basic Multilingual Plane (BMP)** in the range `U+0000..U+FFFF`. This 16-bit range provides 65,536 code points, enough to cover the majority of the world's writing systems.
 * **Supplementary code points** in the range `U+10000..U+10FFFF`. This 21-bit range provides more than a million additional code points that can be used for less well-known languages and other purposes such as emojis.
 
+The following diagram illustrates the relationship between the BMP and the supplementary code points.
+
+:::image type="content" source="media/character-encoding-introduction/bmp-and-supplementary.png" alt-text="BMP and supplementary code points":::
+
 ## UTF-16 code units
 
 16-bit Unicode Transformation Format ([UTF-16](https://www.unicode.org/faq/utf_bom.html#UTF16)) is a character encoding system that uses 16-bit *code units* to represent Unicode code points. .NET uses UTF-16 to encode the text in a `string`. A `char` instance represents a 16-bit code unit.
@@ -119,6 +123,10 @@ A single 16-bit code unit can represent any code point in the 16-bit range of th
 ## Surrogate pairs
 
 The translation of two 16-bit values to a single 21-bit value is facilitated by a special range called the *surrogate code points*, from `U+D800` to `U+DFFF` (decimal 55,296 to 57,343), inclusive.
+
+The following diagram illustrates the relationship between the BMP and the surrogate code points.
+
+:::image type="content" source="media/character-encoding-introduction/bmp-and-surrogate.png" alt-text="BMP and surrogate code points":::
 
 When a *high surrogate* code point (`U+D800..U+DBFF`) is immediately followed by a *low surrogate* code point (`U+DC00..U+DFFF`), the pair is interpreted as a supplementary code point by using the following formula:
 
@@ -135,6 +143,8 @@ code point = 65,536 +
   ((high surrogate code point - 55,296) * 1,024) +
   (low surrogate code point - 56,320)
 ```
+
+A *high* surrogate code point doesn't have a higher number value than a *low* surrogate code point. The high surrogate code point is called "high" because it's used to calculate the higher-order 11 bits of the full 21-bit code point range. The low surrogate code point is used to calculate the lower-order 10 bits.
 
 For example, the actual code point that corresponds to the surrogate pair `0xD83C` and `0xDF39`  is computed as follows:
 
@@ -154,13 +164,15 @@ actual =  65,536 + ((55,356 - 55,296) * 1,024) + (57,145 - 56320)
        = 127,801
 ```
 
-This example demonstrates that `"\ud83c\udf39"` is the UTF-16 encoding of the `U+1F339 ROSE ('🌹')` code point mentioned earlier.
-
-A *high* surrogate code point doesn't have a higher number value than a *low* surrogate code point. The high surrogate code point is called "high" because it's used to calculate the higher-order 11 bits of the full 21-bit code point range. The low surrogate code point is used to calculate the lower-order 10 bits.
+The preceding example demonstrates that `"\ud83c\udf39"` is the UTF-16 encoding of the `U+1F339 ROSE ('🌹')` code point mentioned earlier.
 
 ## Unicode scalar values
 
 The term [Unicode scalar value](https://www.unicode.org/glossary/#unicode_scalar_value) refers to all code points other than the surrogate code points. In other words, a scalar value is any code point that is assigned a character or can be assigned a character in the future.
+
+The following diagram illustrates the scalar value code points.
+
+:::image type="content" source="media/character-encoding-introduction/scalar-values.png" alt-text="Scalar values":::
 
 ### The Rune type as a scalar value
 

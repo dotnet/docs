@@ -12,6 +12,8 @@ ms.date: 03/17/2020
 
 This article describes how to use a package manager to install .NET Core on RHEL 8. Install the SDK (includes the runtime) if you want to make apps with .NET Core. Or, install the runtime if you only need to run apps. Install the SDK (includes the runtime) if you want to make apps with .NET Core. Or, install the runtime if you only need to run apps. If you're installing the runtime, we suggest you install the [ASP.NET Core runtime](#install-the-aspnet-core-runtime), as it includes both .NET Core and ASP.NET Core runtimes.
 
+If you've already installed the SDK or runtime, use the `dotnet --list-sdks` and `dotnet --list-runtimes` commands to see which versions are installed. For more information, see [How to check that .NET Core is already installed](how-to-detect-installed-versions.md?pivots=os-linux).
+
 ## Register your Red Hat subscription
 
 To install .NET Core from Red Hat on RHEL, you first need to register using the Red Hat Subscription Manager. If this hasn't been done on your system, or if you're unsure, see the [Red Hat Product Documentation for .NET Core](https://access.redhat.com/documentation/net_core/).

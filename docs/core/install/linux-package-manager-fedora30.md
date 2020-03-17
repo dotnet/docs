@@ -3,14 +3,14 @@ title: Install .NET Core on Fedora 30 - package manager - .NET Core
 description: Use a package manager to install .NET Core SDK and runtime on Fedora 30.
 author: thraka
 ms.author: adegeo
-ms.date: 12/04/2019
+ms.date: 03/17/2020
 ---
 
 # Fedora 30 Package Manager - Install .NET Core
 
 [!INCLUDE [package-manager-switcher](./includes/package-manager-switcher.md)]
 
-This article describes how to use a package manager to install .NET Core on Fedora 30. If you're installing the runtime, we suggest you install the [ASP.NET Core runtime](#install-the-aspnet-core-runtime), as it includes both .NET Core and ASP.NET Core runtimes.
+This article describes how to use a package manager to install .NET Core on Fedora 30. Install the SDK (includes the runtime) if you want to make apps with .NET Core. Or, install the runtime if you only need to run apps. If you're installing the runtime, we suggest you install the [ASP.NET Core runtime](#install-the-aspnet-core-runtime), as it includes both .NET Core and ASP.NET Core runtimes.
 
 ## Register Microsoft key and feed
 

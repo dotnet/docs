@@ -90,7 +90,7 @@ public:
       Console::WriteLine( "\r\nUsage: Try a site which requires CloneBasic(custom made) authentication as below" );
       Console::WriteLine( "   ClientCloneBasic URLname username password domainname" );
       Console::WriteLine( "\nExample:" );
-      Console::WriteLine( "\n   ClientCloneBasic http://www.microsoft.com/net/ george george123 microsoft" );
+      Console::WriteLine( "\n   ClientCloneBasic http://dotnet.microsoft.com/ george george123 microsoft" );
    }
 
    static void GetPage( String^ url, String^ username, String^ passwd, String^ domain )

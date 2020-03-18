@@ -1,8 +1,8 @@
 ---
 title: Migrate a SQL Server database to Azure
 description: Learn how to migrate a SQL Server database from on-premises SQL Server to Azure.
+ms.topic: how-to
 ms.date: 11/15/2017
-ms.custom: azure-dotnet
 ---
 
 # Migrate a SQL Server database to Azure

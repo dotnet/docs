@@ -1588,7 +1588,7 @@
         href: language-reference/keywords/by.md
       - name: in
         href: language-reference/keywords/in.md
-  - name: C# operators
+  - name: C# operators and expressions
     items:
     - name: Overview
       href: language-reference/operators/index.md
@@ -1608,7 +1608,7 @@
     - name: Comparison operators
       href: language-reference/operators/comparison-operators.md
       displayName: ">, <, >=, <=, greater, less"
-    - name: Member access operators
+    - name: Member access operators and expressions
       href: language-reference/operators/member-access-operators.md
       displayName: "., [], ?., ?[], (), indexer, null-conditional, Elvis, invocation, ^, index from end, hat, .., range"
     - name: Type-testing and cast operators
@@ -1647,21 +1647,23 @@
     - name: await operator
       href: language-reference/operators/await.md
       displayName: async
-    - name: default operator
+    - name: default value expressions
       href: language-reference/operators/default.md
-      displayName: default value, default literal, type default
+      displayName: default value, default operator, default literal, type default
     - name: delegate operator
       href: language-reference/operators/delegate-operator.md
       displayName: anonymous
-    - name: nameof operator
+    - name: nameof expression
       href: language-reference/operators/nameof.md
+      displayName: nameof operator
     - name: new operator
       href: language-reference/operators/new-operator.md
       displayName: constructor
     - name: sizeof operator
       href: language-reference/operators/sizeof.md
-    - name: stackalloc operator
+    - name: stackalloc expression
       href: language-reference/operators/stackalloc.md
+      displayName: stack allocation, span, stackalloc operator
     - name: true and false operators
       href: language-reference/operators/true-false-operators.md
     - name: Operator overloading

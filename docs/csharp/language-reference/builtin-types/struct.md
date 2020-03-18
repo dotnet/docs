@@ -37,7 +37,7 @@ When you design a structure type, you have the same capabilities as with a [clas
 
 In C#, you must initialize a declared variable before it can be used. Because a structure-type variable cannot be `null` (unless it's a variable of a [nullable value type](nullable-value-types.md)), you must instantiate an instance of the corresponding type. There are several ways to do that.
 
-Typically, you instantiate a structure type by calling an appropriate constructor with the [`new`](../operators/new-operator.md) operator. Every structure type has at least one constructor. That's an implicit parameterless constructor, which produces the [default value](default-values.md) of the type. You can also use the [default](../operators/default.md) operator or literal to produce the default value of a type.
+Typically, you instantiate a structure type by calling an appropriate constructor with the [`new`](../operators/new-operator.md) operator. Every structure type has at least one constructor. That's an implicit parameterless constructor, which produces the [default value](default-values.md) of the type. You can also use a [default value expression](../operators/default.md) to produce the default value of a type.
 
 If all instance fields of a structure type are accessible, you can also instantiate it without the `new` operator. In that case you must initialize all instance fields before the first use of the instance. The following example shows how to do that:
 

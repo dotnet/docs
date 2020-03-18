@@ -17,11 +17,11 @@ To use <xref:System.Reflection.MetadataLoadContext>, install the [System.Reflect
 
 Creating the <xref:System.Reflection.MetadataLoadContext> requires providing the instance of the <xref:System.Reflection.MetadataAssemblyResolver>. The simplest way to provide one is to use the <xref:System.Reflection.PathAssemblyResolver>, which resolves assemblies from the given collection of assembly path strings. This collection, besides assemblies you want to inspect directly, should also include all needed dependencies. For example, to read the custom attribute located in an external assembly, you should include that assembly, or an exception will be thrown. In most cases, you should include at least the *core assembly*, that is, the assembly containing built-in system types, such as <xref:System.Object?displayProperty=nameWithType>. The following code shows how to create the <xref:System.Reflection.PathAssemblyResolver> using the collection consisting of the inspected assembly and the current runtime's core assembly:
 
-[!code-csharp[](snippets/MetadataLoadContextSnippets.cs#CoreAssembly)]
+[!code-csharp[](snippets/inspect-contents-using-metadataloadcontext/MetadataLoadContextSnippets.cs#CoreAssembly)]
 
 If you need access to all BCL types, you can include all runtime assemblies into the collection. The following code shows how to create the <xref:System.Reflection.PathAssemblyResolver> using the collection consisting of the inspected assembly and all assemblies of the current runtime:
 
-[!code-csharp[](snippets/MetadataLoadContextSnippets.cs#RuntimeAssemblies)]
+[!code-csharp[](snippets/inspect-contents-using-metadataloadcontext/MetadataLoadContextSnippets.cs#RuntimeAssemblies)]
 
 ## Create MetadataLoadContext
 
@@ -31,7 +31,7 @@ After you've created the context, you can load assemblies into it using methods 
 
 The following code sample creates <xref:System.Reflection.MetadataLoadContext>, loads the assembly into it and outputs assembly attributes into the console:
 
-[!code-csharp[](snippets/MetadataLoadContextSnippets.cs#CreateContext)]
+[!code-csharp[](snippets/inspect-contents-using-metadataloadcontext/MetadataLoadContextSnippets.cs#CreateContext)]
 
 ## Example
 

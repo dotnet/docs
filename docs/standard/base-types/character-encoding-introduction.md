@@ -11,6 +11,8 @@ helpviewer_keywords:
 
 This article provides an introduction to character encoding systems that are used by .NET. The article explains how the <xref:System.String>, <xref:System.Char>, <xref:System.Text.Rune>, and <xref:System.Globalization.StringInfo> types work with Unicode, UTF-16, and UTF-8.
 
+The term *character* is used here in the general sense of *what a reader perceives as a single display element*. Common examples are the letter "a", the symbol "@", and the emoji "🐂". Sometimes what looks like one character is actually composed of multiple independent display elements, as the section on [grapheme clusters](#grapheme-clusters) explains.
+
 ## The string and char types
 
 An instance of the [string](xref:System.String) class represents some text. A `string` is logically a sequence of 16-bit values, each of which is an instance of the [char](xref:System.Char) struct. The [string.Length](xref:System.String.Length) property returns the number of `char` instances in the `string` instance.
@@ -91,7 +93,7 @@ The `char` pairs that map to a single character are called *surrogate pairs*. To
 
 Unicode is an international encoding standard for use on various platforms and with various languages and scripts.
 
-The Unicode Standard defines over 1.1 million [code points](https://www.unicode.org/glossary/#code_point). A code point is an integer value that can range from 0 to `U+10FFFF` (decimal 1,114,111). Some code points are assigned to characters, symbols, or emoji. Others are assigned to actions that control how text or characters are displayed, such as advance to a new line. Many code points are not yet assigned.
+The Unicode Standard defines over 1.1 million [code points](https://www.unicode.org/glossary/#code_point). A code point is an integer value that can range from 0 to `U+10FFFF` (decimal 1,114,111). Some code points are assigned to letters, symbols, or emoji. Others are assigned to actions that control how text or characters are displayed, such as advance to a new line. Many code points are not yet assigned.
 
 Here are some examples of code point assignments, with links to Unicode charts in which they appear:
 
@@ -168,7 +170,7 @@ The preceding example demonstrates that `"\ud83c\udf39"` is the UTF-16 encoding 
 
 ## Unicode scalar values
 
-The term [Unicode scalar value](https://www.unicode.org/glossary/#unicode_scalar_value) refers to all code points other than the surrogate code points. In other words, a scalar value is any code point that is assigned a character or can be assigned a character in the future.
+The term [Unicode scalar value](https://www.unicode.org/glossary/#unicode_scalar_value) refers to all code points other than the surrogate code points. In other words, a scalar value is any code point that is assigned a character or can be assigned a character in the future. "Character" here refers to anything that can be assigned to a code point, which includes such things as actions that control how text or characters are displayed.
 
 The following diagram illustrates the scalar value code points.
 
@@ -192,7 +194,7 @@ The following example throws an exception because the code point is beyond the s
 
 ### Rune usage example: changing letter case
 
-An API that takes a `char` and assumes it is working with a character doesn't work correctly if the `char` is from a surrogate pair. For example, consider the following method that calls <xref:System.Char.ToUpperInvariant%2A?displayProperty=nameWithType> on each char in a string:
+An API that takes a `char` and assumes it is working with a code point that is a scalar value doesn't work correctly if the `char` is from a surrogate pair. For example, consider the following method that calls <xref:System.Char.ToUpperInvariant%2A?displayProperty=nameWithType> on each char in a string:
 
 :::code language="csharp" source="character-encoding/csharp/ConvertToUpper.cs" id="SnippetBadExample":::
 
@@ -201,7 +203,7 @@ If the `input` string contains the lowercase Deseret letter `er` (`𐑉`), this 
 Here are two options for correctly converting strings to uppercase:
 
 * Call <xref:System.String.ToUpperInvariant%2A?displayProperty=nameWithType> on the input string rather than iterating `char`-by-`char`. The `string.ToUpperInvariant` method has access to both parts of each surrogate pair, so it can handle all Unicode code points correctly.
-* Iterate through the Unicode scalar values as `Rune` instances instead of `char` instances, as shown in the following example. Since a `Rune` instance is a valid Unicode scalar value, it can be passed to APIs that expect to operate on a character. For example, calling <xref:System.Text.Rune.ToUpperInvariant%2A?displayProperty=nameWithType> as shown in the following example gives correct results:
+* Iterate through the Unicode scalar values as `Rune` instances instead of `char` instances, as shown in the following example. Since a `Rune` instance is a valid Unicode scalar value, it can be passed to APIs that expect to operate on a scalar value. For example, calling <xref:System.Text.Rune.ToUpperInvariant%2A?displayProperty=nameWithType> as shown in the following example gives correct results:
 
   :::code language="csharp" source="character-encoding/csharp/ConvertToUpper.cs" id="SnippetGoodExample":::
 
@@ -224,7 +226,7 @@ For more information about the .NET `Rune` type, see the [`Rune` API reference](
 
 ## Grapheme clusters
 
-This article uses the term *character* in the sense of *what a reader perceives as a single display element*. What looks like one character might result from a combination of multiple code points, so a more descriptive term that is often used in place of "character" is [grapheme cluster](https://www.unicode.org/glossary/#grapheme_cluster). The equivalent term in .NET is [text element](xref:System.Globalization.StringInfo.GetTextElementEnumerator%2A).
+What looks like one character might result from a combination of multiple code points, so a more descriptive term that is often used in place of "character" is [grapheme cluster](https://www.unicode.org/glossary/#grapheme_cluster). The equivalent term in .NET is [text element](xref:System.Globalization.StringInfo.GetTextElementEnumerator%2A).
 
 Consider the strings "a", "á". "á", and "`👩🏽‍🚒`". If your operating system handles them as specified by the Unicode standard, each of these strings appears as a single text element or grapheme cluster. But the last two are represented by more than one scalar value code point.
 
@@ -284,7 +286,7 @@ The preceding sections focused on UTF-16 because that's what .NET uses to encode
 
 Like UTF-16, UTF-8 requires multiple code units to represent some Unicode scalar values. UTF-32 can represent any scalar value in a single 32-bit code unit.
 
-Here are some examples showing how the same Unicode character is represented in each of these three Unicode encoding systems:
+Here are some examples showing how the same Unicode code point is represented in each of these three Unicode encoding systems:
 
 ```
 Scalar: U+0061 LATIN SMALL LETTER A ('a')

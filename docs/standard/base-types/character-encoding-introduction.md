@@ -19,7 +19,7 @@ An instance of the [string](xref:System.String) class represents some text. A `s
 
 The following sample function prints out the values in hexadecimal notation of all the `char` instances in a `string`:
 
-:::code language="csharp" source="character-encoding/csharp/PrintStringChars.cs" id="SnippetPrintChars":::
+:::code language="csharp" source="snippets/character-encoding-introduction/csharp/PrintStringChars.cs" id="SnippetPrintChars":::
 
 Pass the string "Hello" to this function, and you get the following output:
 
@@ -182,21 +182,21 @@ The `Rune` type, introduced in .NET Core 3.0, represents a Unicode scalar value.
 
 The `Rune` constructors validate that the resulting instance is a valid Unicode scalar value, otherwise they throw an exception. The following example shows code that successfully instantiates `Rune` instances because the input represents valid scalar values:
 
-:::code language="csharp" source="character-encoding/csharp/InstantiateRunes.cs" id="SnippetValid":::
+:::code language="csharp" source="snippets/character-encoding-introduction/csharp/InstantiateRunes.cs" id="SnippetValid":::
 
 The following example throws an exception because the code point is in the surrogate range and isn't part of a surrogate pair:
 
-:::code language="csharp" source="character-encoding/csharp/InstantiateRunes.cs" id="SnippetInvalidSurrogate":::
+:::code language="csharp" source="snippets/character-encoding-introduction/csharp/InstantiateRunes.cs" id="SnippetInvalidSurrogate":::
 
 The following example throws an exception because the code point is beyond the supplementary range:
 
-:::code language="csharp" source="character-encoding/csharp/InstantiateRunes.cs" id="SnippetInvalidHigh":::
+:::code language="csharp" source="snippets/character-encoding-introduction/csharp/InstantiateRunes.cs" id="SnippetInvalidHigh":::
 
 ### Rune usage example: changing letter case
 
 An API that takes a `char` and assumes it is working with a code point that is a scalar value doesn't work correctly if the `char` is from a surrogate pair. For example, consider the following method that calls <xref:System.Char.ToUpperInvariant%2A?displayProperty=nameWithType> on each char in a string:
 
-:::code language="csharp" source="character-encoding/csharp/ConvertToUpper.cs" id="SnippetBadExample":::
+:::code language="csharp" source="snippets/character-encoding-introduction/csharp/ConvertToUpper.cs" id="SnippetBadExample":::
 
 If the `input` string contains the lowercase Deseret letter `er` (`𐑉`), this code won't convert it to uppercase (`𐐡`). The code calls `char.ToUpperInvariant` separately on each surrogate code point, `U+D801` and `U+DC49`. But `U+D801` doesn't have enough information by itself to identify it as a lowercase letter, so `char.ToUpperInvariant` leaves it alone. And it handles `U+DC49` the same way. The result is that lowercase '𐑉' in the `input` string doesn't get converted to uppercase '𐐡'.
 
@@ -205,7 +205,7 @@ Here are two options for correctly converting strings to uppercase:
 * Call <xref:System.String.ToUpperInvariant%2A?displayProperty=nameWithType> on the input string rather than iterating `char`-by-`char`. The `string.ToUpperInvariant` method has access to both parts of each surrogate pair, so it can handle all Unicode code points correctly.
 * Iterate through the Unicode scalar values as `Rune` instances instead of `char` instances, as shown in the following example. Since a `Rune` instance is a valid Unicode scalar value, it can be passed to APIs that expect to operate on a scalar value. For example, calling <xref:System.Text.Rune.ToUpperInvariant%2A?displayProperty=nameWithType> as shown in the following example gives correct results:
 
-  :::code language="csharp" source="character-encoding/csharp/ConvertToUpper.cs" id="SnippetGoodExample":::
+  :::code language="csharp" source="snippets/character-encoding-introduction/csharp/ConvertToUpper.cs" id="SnippetGoodExample":::
 
 ### Other Rune APIs
 
@@ -258,9 +258,9 @@ To enumerate the grapheme clusters of a `string`, use the <xref:System.Globaliza
 
 In .NET APIs, grapheme clusters are called *text elements*. The following method demonstrates the differences between `char` instances, `Rune` instances, and text elements in a string:
 
-:::code language="csharp" source="character-encoding/csharp/CountTextElements.cs" id="SnippetCountMethod":::
+:::code language="csharp" source="snippets/character-encoding-introduction/csharp/CountTextElements.cs" id="SnippetCountMethod":::
 
-:::code language="csharp" source="character-encoding/csharp/CountTextElements.cs" id="SnippetCallCountMethod":::
+:::code language="csharp" source="snippets/character-encoding-introduction/csharp/CountTextElements.cs" id="SnippetCallCountMethod":::
 
 If you run this code in .NET Framework or .NET Core 3.1 or earlier, the text element count for the emoji shows `4`. That is due to a bug in the `StringInfo` class that is fixed in .NET 5.
 
@@ -268,15 +268,15 @@ If you run this code in .NET Framework or .NET Core 3.1 or earlier, the text ele
 
 When splitting strings, avoid splitting surrogate pairs and grapheme clusters. Consider the following example of incorrect code, which intends to insert line breaks every 10 characters in a string:
 
-:::code language="csharp" source="character-encoding/csharp/InsertNewlines.cs" id="SnippetBadExample":::
+:::code language="csharp" source="snippets/character-encoding-introduction/csharp/InsertNewlines.cs" id="SnippetBadExample":::
 
-Because this code enumerates `char`s, a surrogate pair that happens to straddle a 10-`char` boundary will be split and a newline injected between them. This insertion introduces data corruption, because surrogate code points are meaningful only as pairs.
+Because this code enumerates `char` instances, a surrogate pair that happens to straddle a 10-`char` boundary will be split and a newline injected between them. This insertion introduces data corruption, because surrogate code points are meaningful only as pairs.
 
 The potential for data corruption isn't eliminated if you enumerate `Rune` instances (scalar values) instead of `char` instances. A set of `Rune` instances might make up a grapheme cluster that straddles a 10-`char` boundary. If the grapheme cluster set is split up, it can't be interpreted correctly.
 
 A better approach is to break the string by counting grapheme clusters, or text elements, as in the following example:
 
-:::code language="csharp" source="character-encoding/csharp/InsertNewlines.cs" id="SnippetGoodExample":::
+:::code language="csharp" source="snippets/character-encoding-introduction/csharp/InsertNewlines.cs" id="SnippetGoodExample":::
 
 As noted earlier, however, in implementations of .NET other than .NET 5, the `StringInfo` class might handle some grapheme clusters incorrectly.
 
@@ -337,6 +337,8 @@ In the preceding example, the method [Encoding.UTF8.GetBytes](xref:System.Text.U
 
 A well-formed Unicode encoding is a string of code units that can be decoded unambiguously and without error into a sequence of Unicode scalar values. Well-formed data can be transcoded freely back and forth between UTF-8, UTF-16, and UTF-32.
 
+The question of whether an encoding sequence is well-formed or not is unrelated to the endianness of a machine's architecture. An ill-formed UTF-8 sequence is ill-formed in the same way on both big-endian and little-endian machines.
+
 Here are some examples of ill-formed encodings:
 
 * In UTF-8, the sequence `[ 6C C2 61 ]` is ill-formed because `C2` cannot be followed by `61`.
@@ -360,7 +362,7 @@ In .NET, `string` instances almost always contain well-formed UTF-16 data, but t
   string y = x.Substring(1, 1); // "\udd70" standalone low surrogate
   ```
 
-APIs like [`Encoding.UTF8.GetString`](xref:System.Text.UTF8Encoding.GetString%2A) never return ill-formed `string` instances. `Encoding.GetString` and `Encoding.GetBytes` methods detect ill-formed sequences in the input and perform character substitution when generating the output. For example, if [`Encoding.ASCII.GetString(byte[])`](xref:System.Text.ASCIIEncoding.GetString%2A) sees a non-ASCII byte in the input, it inserts a '?' into the returned `string` instance. [`Encoding.UTF8.GetString(byte[])`](xref:System.Text.UTF8Encoding.GetString%2A) replaces ill-formed UTF-8 sequences with `U+FFFD REPLACEMENT CHARACTER ('�')` in the returned `string` instance. For more information, see [the Unicode Standard](https://www.unicode.org/versions/latest/), Sections 5.22 and 3.9.
+APIs like [`Encoding.UTF8.GetString`](xref:System.Text.UTF8Encoding.GetString%2A) never return ill-formed `string` instances. `Encoding.GetString` and `Encoding.GetBytes` methods detect ill-formed sequences in the input and perform character substitution when generating the output. For example, if [`Encoding.ASCII.GetString(byte[])`](xref:System.Text.ASCIIEncoding.GetString%2A) sees a non-ASCII byte in the input (outside the range U+0000..U+007F), it inserts a '?' into the returned `string` instance. [`Encoding.UTF8.GetString(byte[])`](xref:System.Text.UTF8Encoding.GetString%2A) replaces ill-formed UTF-8 sequences with `U+FFFD REPLACEMENT CHARACTER ('�')` in the returned `string` instance. For more information, see [the Unicode Standard](https://www.unicode.org/versions/latest/), Sections 5.22 and 3.9.
 
 The built-in `Encoding` classes can also be configured to throw an exception rather than perform character substitution when ill-formed sequences are seen. This approach is often used in security-sensitive applications where character substitution might not be acceptable.
 

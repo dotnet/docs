@@ -50,7 +50,7 @@ Use the namespace alias qualifier `::` to access a member of an aliased namespac
   > [!NOTE]
   > The `global` keyword is the global namespace alias only when it's the left-hand identifier of the `::` qualifier.
 
-You can also use the [member access `.` operator](member-access-operators.md#member-access-operator-) to access a member of an aliased namespace. However, the `.` operator is also used to access a type member. The `::` qualifier ensures that its left-hand identifier always references a namespace alias, even if there exists a type or namespace with the same name.
+You can also use the [`.` token](member-access-operators.md#member-access-expression-) to access a member of an aliased namespace. However, the `.` token is also used to access a type member. The `::` qualifier ensures that its left-hand identifier always references a namespace alias, even if there exists a type or namespace with the same name.
 
 ## C# language specification
 

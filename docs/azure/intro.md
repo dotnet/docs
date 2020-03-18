@@ -2,7 +2,6 @@
 title: Get started with Azure and .NET
 description: Learn the basics you need to know about Azure and .NET.
 ms.date: 03/15/2020
-ms.custom: azure-dotnet
 ---
 
 # Introduction to Azure and .NET

@@ -74,7 +74,7 @@ In the Azure portal, select the **HDInsight Spark cluster** you created in the p
 
 ### Start the Livy server
 
-Follow the instructions in the [Stop Livy server](#stop-livy-server) section to **Start** (rather than **Stop**) the Livy for Spark2 Server for hosts **hn0** and **hn1**.
+Follow the instructions in the [Stop Livy server](#stop-the-livy-server) section to **Start** (rather than **Stop**) the Livy for Spark2 Server for hosts **hn0** and **hn1**.
 
 ### Set up Spark default configurations
 

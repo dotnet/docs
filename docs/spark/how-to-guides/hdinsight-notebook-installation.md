@@ -21,7 +21,7 @@ To enable .NET for Apache Spark through the Jupyter Notebooks experience, you ne
 
 If you don't already have one, create an [Azure HDInsight Spark](https://docs.microsoft.com/azure/hdinsight/spark/apache-spark-jupyter-spark-sql-use-portal#create-an-hdinsight-spark-cluster) cluster.
 
-1. Visit the [Azure portal](https;//portal.azure.com) and select **+ Create a Resource**.
+1. Visit the [Azure portal](https://portal.azure.com) and select **+ Create a Resource**.
 
 1. Create a new Azure HDInsight cluster resource. Select **Spark 2.4** and **HDI 4.0** during cluster creation.
 
@@ -56,7 +56,7 @@ In the Azure portal, select the **HDInsight Spark cluster** you created in the p
 
    Create a new file named **install-interactive-notebook.sh** in your local computer and paste the contents of [install-interactive-notebook.sh contents](https://raw.githubusercontent.com/dotnet/spark/master/deployment/HDI-Spark/Notebooks/install-interactive-notebook.sh).
 
-   Upload the script to a [URI](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux#understand-script-actions) that's accessible from the HDInsight cluster. For example, `https://<my storage account>.blob.core.windows.net/<my container>/<some dir>/install-interactive-notebook.sh`.
+   Upload the script to a [URI](https://docs.microsoft.com/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux#understand-script-actions) that's accessible from the HDInsight cluster. For example, `https://<my storage account>.blob.core.windows.net/<my container>/<some dir>/install-interactive-notebook.sh`.
 
 2. Run `install-interactive-notebook.sh` on the cluster using [HDInsight Script Actions](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux).
 

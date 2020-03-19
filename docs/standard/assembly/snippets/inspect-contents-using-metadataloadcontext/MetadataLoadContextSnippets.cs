@@ -18,14 +18,14 @@ namespace AssemblySnippets
         public static void SnippetsMetadataLoadContext()
         {            
             //<SnippetRuntimeAssemblies>
-            //get the array of runtime assemblies            
+            // Get the array of runtime assemblies.
             string[] runtimeAssemblies = Directory.GetFiles(RuntimeEnvironment.GetRuntimeDirectory(), "*.dll");            
 
-            //create the list of assembly paths consisting of runtime assemblies and the inspected assembly
+            // Create the list of assembly paths consisting of runtime assemblies and the inspected assembly.
             var paths = new List<string>(runtimeAssemblies);
             paths.Add("ExampleAssembly.dll");
 
-            //create PathAssemblyResolver that can resolve assemblies using the created list
+            // Create PathAssemblyResolver that can resolve assemblies using the created list.
             var resolver = new PathAssemblyResolver(paths);
             //</SnippetRuntimeAssemblies>
 
@@ -34,11 +34,11 @@ namespace AssemblySnippets
 
             using (mlc)
             {
-                //load assembly into MetadataLoadContext
+                // Load assembly into MetadataLoadContext.
                 Assembly assembly = mlc.LoadFromAssemblyPath("ExampleAssembly.dll");
                 AssemblyName name = assembly.GetName();
 
-                //print assembly attribute information
+                // Print assembly attribute information.
                 Console.WriteLine($"{name.Name} has following attributes: ");
 
                 foreach (CustomAttributeData attr in assembly.GetCustomAttributesData())
@@ -49,7 +49,7 @@ namespace AssemblySnippets
                     }
                     catch (FileNotFoundException ex)
                     {
-                        //we are missing the required dependency assembly
+                        // We are missing the required dependency assembly.
                         Console.WriteLine($"Error while getting attribute type: {ex.Message}");
                     }
                 }

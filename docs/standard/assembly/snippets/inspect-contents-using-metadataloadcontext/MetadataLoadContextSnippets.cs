@@ -39,7 +39,7 @@ namespace AssemblySnippets
                 AssemblyName name = assembly.GetName();
 
                 //print assembly attribute information
-                Console.WriteLine(name.Name + " has following attributes: ");
+                Console.WriteLine($"{name.Name} has following attributes: ");
 
                 foreach (CustomAttributeData attr in assembly.GetCustomAttributesData())
                 {
@@ -50,7 +50,7 @@ namespace AssemblySnippets
                     catch (FileNotFoundException ex)
                     {
                         //we are missing the required dependency assembly
-                        Console.WriteLine("Error: " + ex.Message);
+                        Console.WriteLine($"Error while getting attribute type: {ex.Message}");
                     }
                 }
             }

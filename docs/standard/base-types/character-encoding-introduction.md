@@ -176,9 +176,9 @@ The following diagram illustrates the scalar value code points.
 
 :::image type="content" source="media/character-encoding-introduction/scalar-values.png" alt-text="Scalar values":::
 
-### The Rune type as a scalar value
+### The `Rune` type as a scalar value
 
-The `Rune` type, introduced in .NET Core 3.0, represents a Unicode scalar value.
+The <xref:System.Text.Rune?displayProperty=fullName> type represents a Unicode scalar value in .NET Core 3.x and .NET 5. **`Rune` is not available in .NET Core 2.x or .NET Framework 4.x.**
 
 The `Rune` constructors validate that the resulting instance is a valid Unicode scalar value, otherwise they throw an exception. The following example shows code that successfully instantiates `Rune` instances because the input represents valid scalar values:
 
@@ -192,7 +192,7 @@ The following example throws an exception because the code point is beyond the s
 
 :::code language="csharp" source="snippets/character-encoding-introduction/csharp/InstantiateRunes.cs" id="SnippetInvalidHigh":::
 
-### Rune usage example: changing letter case
+### `Rune` usage example: changing letter case
 
 An API that takes a `char` and assumes it is working with a code point that is a scalar value doesn't work correctly if the `char` is from a surrogate pair. For example, consider the following method that calls <xref:System.Char.ToUpperInvariant%2A?displayProperty=nameWithType> on each char in a string:
 
@@ -207,7 +207,7 @@ Here are two options for correctly converting strings to uppercase:
 
   :::code language="csharp" source="snippets/character-encoding-introduction/csharp/ConvertToUpper.cs" id="SnippetGoodExample":::
 
-### Other Rune APIs
+### Other `Rune` APIs
 
 The `Rune` type exposes analogs of many of the `char` APIs. For example, the following methods mirror static APIs on the `char` type:
 

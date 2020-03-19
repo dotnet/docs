@@ -179,7 +179,7 @@ The following diagram illustrates the scalar value code points.
 
 ### The Rune type as a scalar value
 
-The <xref:System.Text.Rune?displayProperty=fullName> type represents a Unicode scalar value in .NET Core 3.x and .NET 5. **`Rune` is not available in .NET Core 2.x or .NET Framework 4.x.**
+Beginning with .NET Core 3.0, the <xref:System.Text.Rune?displayProperty=fullName> type represents a Unicode scalar value. **`Rune` is not available in .NET Core 2.x or .NET Framework 4.x.**
 
 The `Rune` constructors validate that the resulting instance is a valid Unicode scalar value, otherwise they throw an exception. The following example shows code that successfully instantiates `Rune` instances because the input represents valid scalar values:
 

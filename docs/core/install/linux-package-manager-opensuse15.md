@@ -29,7 +29,7 @@ Open a terminal and run the following commands.
 ```bash
 sudo zypper install libicu
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-wget -q https://packages.microsoft.com/config/opensuse/15/prod.repo
+wget https://packages.microsoft.com/config/opensuse/15/prod.repo
 sudo mv prod.repo /etc/zypp/repos.d/microsoft-prod.repo
 sudo chown root:root /etc/zypp/repos.d/microsoft-prod.repo
 ```

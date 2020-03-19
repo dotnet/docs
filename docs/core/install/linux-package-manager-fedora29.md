@@ -28,7 +28,7 @@ Open a terminal and run the following commands.
 
 ```bash
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
-sudo wget -q -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/29/prod.repo
+sudo wget -O /etc/yum.repos.d/microsoft-prod.repo https://packages.microsoft.com/config/fedora/29/prod.repo
 ```
 
 ## Install the .NET Core SDK

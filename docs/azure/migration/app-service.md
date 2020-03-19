@@ -1,7 +1,7 @@
 ---
 title: Migrate your .NET web app or service to Azure App Service
 description: Learn about migrating a .NET web app or service from on-premises to Azure App Service.
-ms.topic: concept
+ms.topic: conceptual
 ms.date: 08/11/2018
 ---
 # Migrate your .NET web app or service to Azure App Service

@@ -6,7 +6,7 @@ dev_langs:
   - "vb"
 helpviewer_keywords: 
   - "3D transformations"
-  - "transformations [WPF], 3-D"
+  - "transformations [WPF], 3D"
 ms.assetid: e45e555d-ac1e-4b36-aced-e433afe7f27f
 ---
 # 3D Transformations Overview
@@ -23,7 +23,7 @@ Coordinate System Comparison
  The space defined by these axes is the stationary frame of reference for 3D objects in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]. As you build models in this space and create lights and cameras to view them, it's helpful to distinguish this stationary frame of reference, or "world space," from the local frame of reference you create for each model when you apply transformations to it. Remember also that objects in world space might look entirely different, or not be visible at all, depending on light and camera settings, but the position of the camera does not change the location of objects in world space.  
   
 ## Transforming Models  
- When you create models, they have a particular location in the scene. To move those models around in the scene, to rotate them, or to change their size, it's not practical to change the vertices that define the models themselves. Instead, just as in 2-D, you apply transformations to models.  
+ When you create models, they have a particular location in the scene. To move those models around in the scene, to rotate them, or to change their size, it's not practical to change the vertices that define the models themselves. Instead, just as in 2D, you apply transformations to models.  
   
  Each model object has a <xref:System.Windows.Media.Media3D.Model3D.Transform%2A> property with which you can move, re-orient, or resize the model. When you apply a transform, you effectively offset all the points of the model by whatever vector or value is specified by the transform. In other words, you've transformed the coordinate space in which the model is defined ("model space"), but you haven't changed the values that make up the model's geometry in the coordinate system of the entire scene ("world space").  
   

@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "transformations [WPF], about transformations"
   - "classes [WPF], 2D transform"
-  - "transform classes [WPF], 2-D"
+  - "transform classes [WPF], 2D"
   - "2D transform classes"
   - "FrameworkElement objects [WPF], rotating"
   - "FrameworkElement objects [WPF], skewing"

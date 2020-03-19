@@ -8,7 +8,7 @@ helpviewer_keywords:
   - "transformations [WPF], about transformations"
   - "transformations [WPF]"
   - "graphics [WPF], transformations"
-  - "transform classes [WPF], 2-D"
+  - "transform classes [WPF], 2D"
   - "scaling objects [WPF]"
   - "translating objects [WPF]"
   - "2D transform classes"

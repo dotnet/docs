@@ -5,7 +5,7 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "scenes [WPF], 3-D"
+  - "scenes [WPF], 3D"
   - "3D scenes"
 ms.assetid: adb4a598-71a2-4dd5-b677-ea3fc11b78b2
 ---

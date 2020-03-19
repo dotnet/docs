@@ -36,6 +36,8 @@ For more information about .NET Core 3.1 supported operating systems, distributi
 
 # [.NET Core 3.0](#tab/netcore30)
 
+*.NET Core 3.0 is currently out of support. For more information, see the [.NET Core Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
+
 The following Windows versions are supported with .NET Core 3.0:
 
 > [!NOTE]
@@ -51,6 +53,8 @@ The following Windows versions are supported with .NET Core 3.0:
 For more information about .NET Core 3.0 supported operating systems, distributions, and lifecycle policy, see [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md).
 
 # [.NET Core 2.2](#tab/netcore22)
+
+*.NET Core 2.2 is currently out of support. For more information, see the [.NET Core Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
 
 The following Windows versions are supported with .NET Core 2.2:
 
@@ -127,7 +131,7 @@ The requirements above are also required if you come across one of the following
 | Red Hat Enterprise Linux       | 6, 7, 8               | x64 |
 | CentOS                         | 7+                    | x64 |
 | Oracle Linux                   | 7+                    | x64 |
-| Fedora                         | 29+                   | x64 |
+| Fedora                         | 30+                   | x64 |
 | Debian                         | 9+                    | x64, ARM32, ARM64 |
 | Ubuntu                         | 16.04+                | x64, ARM32, ARM64 |
 | Linux Mint                     | 18+                   | x64 |
@@ -143,6 +147,8 @@ For more information about how to install .NET Core 3.1 on ARM64 (kernel 4.14+),
 > ARM64 support requires Linux kernel 4.14 or higher. Some linux distributions satisfy this requirement while others don't. For example, Ubuntu 18.04 is supported but Ubuntu 16.04 doesn't.
 
 # [.NET Core 3.0](#tab/netcore30)
+
+*.NET Core 3.0 is currently out of support. For more information, see the [.NET Core Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
 
 .NET Core 3.0 treats Linux as a single operating system. There's a single Linux build (per chip architecture) for supported Linux distributions.
 
@@ -169,6 +175,8 @@ For more information about .NET Core 3.0 supported operating systems, distributi
 For more information about how to install .NET Core 3.0 on ARM64, see [Installing .NET Core 3.0 on Linux ARM64](https://gist.github.com/richlander/467813274cea8abc624553ee72b28213).
 
 # [.NET Core 2.2](#tab/netcore22)
+
+*.NET Core 2.2 is currently out of support. For more information, see the [.NET Core Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
 
 .NET Core 2.2 treats Linux as a single operating system. There's a single Linux build (per chip architecture) for supported Linux distributions.
 
@@ -206,7 +214,7 @@ For more information about .NET Core 2.2 supported operating systems, distributi
 | Red Hat Enterprise Linux       |  6, 7, 8                | x64 |
 | CentOS                         |  7+                     | x64 |
 | Oracle Linux                   |  7+                     | x64 |
-| Fedora                         |  29+                    | x64 |
+| Fedora                         |  30+                    | x64 |
 | Debian                         |  9                      | x64, ARM32 |
 | Ubuntu                         |  16.04, 18.04, 19.04, 19.10    | x64, ARM32 |
 | Linux Mint                     |  17+                    | x64 |

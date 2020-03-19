@@ -1,13 +1,13 @@
 ### YamlMime:Landing
 
 title: .NET application architecture documentation
-summary: Learn how to build production-ready .NET apps from an application architecture perspective.
+summary: Learn how to build production-ready .NET apps or migrate existing apps to the cloud.
 
 metadata:
   title: .NET application architecture documentation
-  description: Learn recommended practices for architecting, designing, and building .NET software.
+  description: Learn recommended practices for architecting, building, and migrating .NET apps.
   ms.topic: landing-page
-  ms.date: 03/18/2020
+  ms.date: 03/19/2020
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -28,20 +28,6 @@ landingContent:
             url: ../azure/migration/app-service.md
             
   # Card
-  - title: Develop Microservices-based apps
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: ".NET Microservices: Architecture for containerized .NET applications"
-            url: microservices/index.md
-          - text: Architecting cloud-native .NET apps for Azure
-            url: cloud-native/index.md
-      - linkListType: learn
-        links:
-          - text: Hello World Microservice tutorial
-            url: https://dotnet.microsoft.com/learn/aspnet/microservice-tutorial/intro
-            
-  # Card
   - title: Develop .NET apps for Azure
     linkLists:
       - linkListType: concept
@@ -60,6 +46,18 @@ landingContent:
             url: modernize-with-azure-containers/index.md
           - text: Migrate your .NET web app or service to Azure App Service
             url: ../azure/migration/app-service.md
+            
+  # Card
+  - title: Develop Microservices-based apps
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: ".NET Microservices: Architecture for containerized .NET applications"
+            url: microservices/index.md
+      - linkListType: learn
+        links:
+          - text: Hello World Microservice tutorial
+            url: https://dotnet.microsoft.com/learn/aspnet/microservice-tutorial/intro
             
   # Card
   - title: Understand DevOps for .NET

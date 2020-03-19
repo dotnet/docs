@@ -6,7 +6,7 @@ ms.date: 08/11/2018
 ---
 # Migrate your .NET web app or service to Azure App Service
 
-[App Service](https://docs.microsoft.com/azure/app-service/app-service-web-overview#why-use-web-apps) is a fully-managed compute platform service that's optimized for hosting scalable websites and web applications. This article provides information on how to lift-and-shift an existing application to Azure App Service, modifications to consider, and additional resources for [moving to the cloud](https://azure.microsoft.com/migration/web-applications/). Most ASP.NET websites (Webforms, MVC) and services (Web API, WCF) can move directly to Azure App Service with no changes. Some may need minor changes while others may need some refactoring.
+[App Service](https://docs.microsoft.com/azure/app-service/app-service-web-overview#why-use-web-apps) is a fully managed compute platform service that's optimized for hosting scalable websites and web applications. This article provides information on how to lift-and-shift an existing application to Azure App Service, modifications to consider, and additional resources for [moving to the cloud](https://azure.microsoft.com/migration/web-applications/). Most ASP.NET websites (Webforms, MVC) and services (Web API, WCF) can move directly to Azure App Service with no changes. Some may need minor changes while others may need some refactoring.
 
 Ready to get started? [Publish your ASP.NET + SQL application to Azure App Service](https://tutorials.visualstudio.com/azure-webapp-migrate/intro).
 
@@ -47,7 +47,7 @@ Azure App Service supports anonymous authentication by default and Forms authent
 This isn't supported. Consider copying required assemblies to the app's *\bin* folder. Custom *.msi* files installed on the server (for example, PDF generators) cannot be used.
 
 ### IIS settings
-Everything traditionally configured via applicationHost.config in your application can now be configured through the Azure portal. This applies to AppPool bitness, enable/disable websockets, managed pipeline version, .NET Framework version (2.0/4.0), and so on. To modify your [application settings](https://docs.microsoft.com/azure/app-service/web-sites-configure), navigate to the [Azure portal](https://portal.azure.com), open the blade for your web app, and then select the **Application Settings** tab.
+Everything traditionally configured via applicationHost.config in your application can now be configured through the Azure portal. This applies to AppPool bitness, enable/disable WebSockets, managed pipeline version, .NET Framework version (2.0/4.0), and so on. To modify your [application settings](https://docs.microsoft.com/azure/app-service/web-sites-configure), navigate to the [Azure portal](https://portal.azure.com), open the blade for your web app, and then select the **Application Settings** tab.
 
 #### IIS5 Compatibility Mode
 IIS5 Compatibility Mode is not supported. In Azure App Service, each web app and all of the applications under it run in the same worker process with a specific set of [application pools](https://technet.microsoft.com/library/cc735247(v=WS.10).aspx).

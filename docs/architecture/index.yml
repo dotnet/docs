@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
-title: .NET application architecture guidance
+title: .NET application architecture documentation
 summary: Learn how to build production-ready .NET apps from an application architecture perspective.
 
 metadata:
-  title: .NET application architecture guidance
+  title: .NET application architecture documentation
   description: Learn recommended practices for architecting, designing, and building .NET software.
   ms.topic: landing-page
   ms.date: 03/18/2020
@@ -14,29 +14,59 @@ metadata:
 landingContent:
 
   # Card
-  - title: Published e-books
+  - title: Develop ASP.NET Core apps
     linkLists:
-      - linkListType: architecture
+      - linkListType: concept
         links:
-          - text: ASP.NET Core gRPC for WCF developers
-            url: grpc-for-wcf-developers/index.md
-          - text: Containerized Docker app lifecycle with the Microsoft platform and tools
-            url: containerized-lifecycle/index.md
-          - text: Modernize existing .NET apps with Azure cloud and Windows containers
-            url: modernize-with-azure-containers/index.md
           - text: Architect modern web apps with ASP.NET Core and Azure
             url: modern-web-apps-azure/index.md
-          - text: Architect container and microservice-based apps
-            url: microservices/index.md
-          - text: "Serverless apps: Architecture, patterns, and Azure implementation"
-            url: serverless/index.md
-
-  # Card
-  - title: Preview e-books
-    linkLists:
-      - linkListType: architecture
-        links:
-          - text: Architect cloud-native .NET apps for Azure
-            url: cloud-native/index.md
           - text: Blazor for ASP.NET Web Forms developers
             url: blazor-for-web-forms-developers/index.md
+          - text: ASP.NET Core gRPC for WCF developers
+            url: grpc-for-wcf-developers/index.md
+          - text: Migrate your .NET web app or service to Azure App Service
+            url: ../azure/migration/app-service.md
+            
+  # Card
+  - title: Develop Microservices-based apps
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: ".NET Microservices: Architecture for containerized .NET applications"
+            url: microservices/index.md
+          - text: Architecting cloud-native .NET apps for Azure
+            url: cloud-native/index.md
+      - linkListType: learn
+        links:
+          - text: Hello World Microservice tutorial
+            url: https://dotnet.microsoft.com/learn/aspnet/microservice-tutorial/intro
+            
+  # Card
+  - title: Develop .NET apps for Azure
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Architecting cloud-native .NET apps for Azure
+            url: cloud-native/index.md
+          - text: "Serverless apps: Architecture, patterns, and Azure implementation"
+            url: serverless/index.md
+            
+  # Card
+  - title: Migrate .NET apps to Azure
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Modernize existing .NET apps with Azure cloud and Windows containers
+            url: modernize-with-azure-containers/index.md
+          - text: Migrate your .NET web app or service to Azure App Service
+            url: ../azure/migration/app-service.md
+            
+  # Card
+  - title: Understand DevOps for .NET
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Containerized Docker application lifecycle with Microsoft platform and tools
+            url: containerized-lifecycle/index.md
+          - text: ASP.NET Core DevOps with Azure
+            url: /aspnet/core/azure/devops/

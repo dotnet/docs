@@ -18,7 +18,7 @@ ms.assetid: e467796b-d5d4-45a6-a108-8c5d7ff69a0f
 # Animation Tips and Tricks
 When working with animations in WPF, there are a number of tips and tricks that can make your animations perform better and save you frustration.  
   
-<a name="generalissuessection"></a>   
+<a name="generalissuessection"></a>
 ## General Issues  
   
 ### Animating the Position of a Scroll Bar or Slider Freezes It  
@@ -89,7 +89,7 @@ When working with animations in WPF, there are a number of tips and tricks that 
   
  That's because of the order in which WPF raises events and because property values are cached and are not recalculated unless the property is invalidated. The <xref:System.Windows.Media.Animation.Timeline.Completed> event is processed first because it was triggered by the root timeline (the first <xref:System.Windows.Media.Animation.Storyboard>). At this time, the <xref:System.Windows.Media.TranslateTransform.X%2A> property still returns its animated value because it hasn't been invalidated yet. The second <xref:System.Windows.Media.Animation.Storyboard> uses the cached value as its starting value and begins animating.  
   
-<a name="performancesection"></a>   
+<a name="performancesection"></a>
 ## Performance  
   
 ### Animations Continue to Run After Navigating Away from a Page  

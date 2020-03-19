@@ -23,15 +23,15 @@ Gets the set of properties for the assembly reference with the specified metadat
   
 ```cpp  
 HRESULT GetAssemblyRefProps (  
-    [in]  mdAssemblyRef        mdar,   
-    [out] const void          **ppbPublicKeyOrToken,   
-    [out] ULONG                *pcbPublicKeyOrToken,   
-    [out] LPWSTR               szName,   
-    [in]  ULONG                cchName,   
-    [out] ULONG                *pchName,   
-    [out] ASSEMBLYMETADATA     *pMetaData,   
-    [out] const void           **ppbHashValue,   
-    [out] ULONG                *pcbHashValue,   
+    [in]  mdAssemblyRef        mdar,
+    [out] const void          **ppbPublicKeyOrToken,
+    [out] ULONG                *pcbPublicKeyOrToken,
+    [out] LPWSTR               szName,
+    [in]  ULONG                cchName,
+    [out] ULONG                *pchName,
+    [out] ASSEMBLYMETADATA     *pMetaData,
+    [out] const void           **ppbHashValue,
+    [out] ULONG                *pcbHashValue,
     [out] DWORD                *pdwAssemblyRefFlags  
 );  
 ```  

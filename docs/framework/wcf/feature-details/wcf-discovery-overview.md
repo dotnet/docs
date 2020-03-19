@@ -95,7 +95,7 @@ class Client
   
     static void Main()
     {  
-        if (FindService()) 
+        if (FindService())
         {
             InvokeService();
         }
@@ -105,10 +105,10 @@ class Client
     static bool FindService()  
     {  
         Console.WriteLine("\nFinding Calculator Service ..");  
-        DiscoveryClient discoveryClient =   
+        DiscoveryClient discoveryClient =
             new DiscoveryClient(new UdpDiscoveryEndpoint());  
   
-        Collection<EndpointDiscoveryMetadata> calculatorServices =   
+        Collection<EndpointDiscoveryMetadata> calculatorServices =
             (Collection<EndpointDiscoveryMetadata>)discoveryClient.Find(new FindCriteria(typeof(ICalculator))).Endpoints;  
   
         discoveryClient.Close();  

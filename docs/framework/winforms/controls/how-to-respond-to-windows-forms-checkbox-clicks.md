@@ -22,7 +22,7 @@ Whenever a user clicks a Windows Forms <xref:System.Windows.Forms.CheckBox> cont
   
     ```vb  
     Private Sub CheckBox1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles CheckBox1.Click  
-       ' The CheckBox control's Text property is changed each time the   
+       ' The CheckBox control's Text property is changed each time the
        ' control is clicked, indicating a checked or unchecked state.  
        If CheckBox1.Checked = True Then  
           CheckBox1.Text = "Checked"  
@@ -35,7 +35,7 @@ Whenever a user clicks a Windows Forms <xref:System.Windows.Forms.CheckBox> cont
     ```csharp  
     private void checkBox1_Click(object sender, System.EventArgs e)  
     {  
-       // The CheckBox control's Text property is changed each time the   
+       // The CheckBox control's Text property is changed each time the
        // control is clicked, indicating a checked or unchecked state.  
        if (checkBox1.Checked)  
        {  
@@ -85,7 +85,7 @@ Whenever a user clicks a Windows Forms <xref:System.Windows.Forms.CheckBox> cont
              ' Code for unchecked state.  
           Case CheckState.Indeterminate  
              ' Code for indeterminate state.  
-       End Select   
+       End Select
     End Sub  
     ```  
   

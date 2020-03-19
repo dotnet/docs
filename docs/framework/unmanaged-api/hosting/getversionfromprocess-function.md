@@ -25,9 +25,9 @@ Gets the version number of the common language runtime (CLR) that is associated 
   
 ```cpp  
 HRESULT GetVersionFromProcess (  
-    [in]  HANDLE  hProcess,   
-    [out] LPWSTR  pVersion,   
-    [in]  DWORD   cchBuffer,   
+    [in]  HANDLE  hProcess,
+    [out] LPWSTR  pVersion,
+    [in]  DWORD   cchBuffer,
     [out] DWORD  *dwLength  
 );  
 ```  

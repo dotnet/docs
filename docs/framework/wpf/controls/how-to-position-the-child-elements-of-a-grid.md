@@ -21,8 +21,8 @@ This example shows how to use the get and set methods that are defined on <xref:
  [!code-csharp[gridGetSetMethods#2](~/samples/snippets/csharp/VS_Snippets_Wpf/gridGetSetMethods/CSharp/Window1.xaml.cs#2)]
  [!code-vb[gridGetSetMethods#2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/gridGetSetMethods/VisualBasic/Window1.xaml.vb#2)]  
  Here is the finished result!
- 
- ![a screenshot depicts a WPF user interface with two columns, the right side has a 3 x 3 grid and the left has buttons to move a colored rectangle between the columns and rows of the grid](././media/grid-methods-sample.png) 
+
+ ![a screenshot depicts a WPF user interface with two columns, the right side has a 3 x 3 grid and the left has buttons to move a colored rectangle between the columns and rows of the grid](././media/grid-methods-sample.png)
   
 ## See also
 

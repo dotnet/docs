@@ -68,7 +68,7 @@ Module Module1
   
         Dim command As New SqlCommand(commandText, connection)  
   
-        ' Read the saved XML document as a   
+        ' Read the saved XML document as a
         ' SqlXml-data typed variable.  
         Dim newXml As SqlXml = _  
          New SqlXml(New XmlTextReader("MyTestStoreData.xml"))  
@@ -84,8 +84,8 @@ Module Module1
 End Sub  
   
     Private Function GetConnectionString() As String  
-        ' To avoid storing the connection string in your code,              
-        ' you can retrieve it from a configuration file.   
+        ' To avoid storing the connection string in your code,
+        ' you can retrieve it from a configuration file.
         Return "Data Source=(local);Integrated Security=SSPI;" & _  
           "Initial Catalog=AdventureWorks"  
     End Function  
@@ -109,28 +109,28 @@ class Class1
         //  Create a sample table (dropping first if it already  
         //  exists.)  
   
-        string commandNewTable =   
-            "IF EXISTS (SELECT * FROM dbo.sysobjects " +   
+        string commandNewTable =
+            "IF EXISTS (SELECT * FROM dbo.sysobjects " +
             "WHERE id = " +  
-                  "object_id(N'[dbo].[XmlDataTypeSample]') " +   
-            "AND OBJECTPROPERTY(id, N'IsUserTable') = 1) " +   
-            "DROP TABLE [dbo].[XmlDataTypeSample];" +   
-            "CREATE TABLE [dbo].[XmlDataTypeSample](" +   
-            "[SalesID] [int] IDENTITY(1,1) NOT NULL, " +   
+                  "object_id(N'[dbo].[XmlDataTypeSample]') " +
+            "AND OBJECTPROPERTY(id, N'IsUserTable') = 1) " +
+            "DROP TABLE [dbo].[XmlDataTypeSample];" +
+            "CREATE TABLE [dbo].[XmlDataTypeSample](" +
+            "[SalesID] [int] IDENTITY(1,1) NOT NULL, " +
             "[SalesInfo] [xml])";  
-        SqlCommand commandAdd =   
+        SqlCommand commandAdd =
                    new SqlCommand(commandNewTable, connection);  
         commandAdd.ExecuteNonQuery();  
-        string commandText =   
-            "INSERT INTO [dbo].[XmlDataTypeSample] " +   
-            "([SalesInfo] ) " +   
+        string commandText =
+            "INSERT INTO [dbo].[XmlDataTypeSample] " +
+            "([SalesInfo] ) " +
             "VALUES(@xmlParameter )";  
-        SqlCommand command =   
+        SqlCommand command =
                   new SqlCommand(commandText, connection);  
   
-        //  Read the saved XML document as a   
+        //  Read the saved XML document as a
         //  SqlXml-data typed variable.  
-        SqlXml newXml =   
+        SqlXml newXml =
             new SqlXml(new XmlTextReader("MyTestStoreData.xml"));  
   
         //  Supply the SqlXml value for the value of the parameter.  
@@ -145,8 +145,8 @@ class Class1
   
     private static string GetConnectionString()  
     {  
-        // To avoid storing the connection string in your code,              
-        // you can retrieve it from a configuration file.   
+        // To avoid storing the connection string in your code,
+        // you can retrieve it from a configuration file.
         return "Data Source=(local);Integrated Security=true;" +  
         "Initial Catalog=AdventureWorks; ";  
     }  

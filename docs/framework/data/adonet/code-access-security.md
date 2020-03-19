@@ -76,8 +76,8 @@ The .NET Framework offers role-based security as well as code access security (C
   
 ```xml  
 <connectionStrings>  
-  <add name="DatabaseConnection"   
-    connectionString="Data Source=(local);Initial   
+  <add name="DatabaseConnection"
+    connectionString="Data Source=(local);Initial
     Catalog=Northwind;Integrated Security=true;" />  
 </connectionStrings>  
 ```  
@@ -87,8 +87,8 @@ The .NET Framework offers role-based security as well as code access security (C
   
 ```xml  
 <connectionStrings>  
-  <add name="DatabaseConnection"   
-    connectionString="Data Source=(local);Initial   
+  <add name="DatabaseConnection"
+    connectionString="Data Source=(local);Initial
     Catalog=Northwind;Integrated Security=true;"  
     KeyRestrictions="Encrypt=;Packet Size=;"  
     KeyRestrictionBehavior="AllowOnly" />  
@@ -100,8 +100,8 @@ The .NET Framework offers role-based security as well as code access security (C
   
 ```xml  
 <connectionStrings>  
-  <add name="DatabaseConnection"   
-    connectionString="Data Source=(local);Initial   
+  <add name="DatabaseConnection"
+    connectionString="Data Source=(local);Initial
     Catalog=Northwind;Integrated Security=true;"  
     KeyRestrictions="User Id=;Password=;Persist Security Info=;"  
     KeyRestrictionBehavior="PreventUsage" />  
@@ -113,18 +113,18 @@ The .NET Framework offers role-based security as well as code access security (C
   
 ```xml  
 <connectionStrings>  
-  <add name="DatabaseConnection"   
-    connectionString="Data Source=(local);Initial   
+  <add name="DatabaseConnection"
+    connectionString="Data Source=(local);Initial
     Catalog=Northwind;Integrated Security=true;"  
     KeyRestrictions="Initial Catalog;Connection Timeout=;  
-       Encrypt=;Packet Size=;"   
+       Encrypt=;Packet Size=;"
     KeyRestrictionBehavior="AllowOnly" />  
   
-  <add name="DatabaseConnection2"   
-    connectionString="Data Source=SqlServer2;Initial   
+  <add name="DatabaseConnection2"
+    connectionString="Data Source=SqlServer2;Initial
     Catalog=Northwind2;Integrated Security=true;"  
     KeyRestrictions="Initial Catalog;Connection Timeout=;  
-       Encrypt=;Packet Size=;"   
+       Encrypt=;Packet Size=;"
     KeyRestrictionBehavior="AllowOnly" />  
 </connectionStrings>  
 ```  
@@ -147,7 +147,7 @@ version="1"
 AllowBlankPassword="False">  
 <add ConnectionString="Data Source=(local);Integrated Security=true;"  
  KeyRestrictions="Initial Catalog=;Connection Timeout=;  
-   Encrypt=;Packet Size=;"   
+   Encrypt=;Packet Size=;"
  KeyRestrictionBehavior="AllowOnly" />  
  </IPermission>  
 </PermissionSet>  
@@ -171,7 +171,7 @@ AllowBlankPassword="False">
   
 ```output  
 Failed, as expected: <IPermission class="System.Data.SqlClient.  
-SqlClientPermission, System.Data, Version=2.0.0.0,   
+SqlClientPermission, System.Data, Version=2.0.0.0,
   Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1"  
   AllowBlankPassword="False">  
 <add ConnectionString="Data Source=(local);Initial Catalog=  

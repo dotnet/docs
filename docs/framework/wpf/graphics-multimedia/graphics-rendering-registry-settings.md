@@ -12,15 +12,15 @@ ms.assetid: f4b41b42-327d-407c-b398-3ed5f505df8b
 # Graphics Rendering Registry Settings
 This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] graphics rendering registry settings that affect [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications.  
 
-<a name="overview"></a>   
+<a name="overview"></a>
 ## When to Use Graphics Rendering Registry Settings  
  These registry settings are provided for troubleshooting, debugging, and product support purposes. Because changes to the registry affect all [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications, your application should never alter these registry keys automatically, or during installation.  
   
-<a name="xpdmandwddm"></a>   
+<a name="xpdmandwddm"></a>
 ## What are XPDM and WDDM?  
  Some of the graphics rendering registry settings have different default values, depending on whether your video card uses an XPDM or WDDM driver. XPDM is the Microsoft Windows XP Display Driver Model and WDDM is the Windows Display Driver Model. WDDM is available on computers running Windows Vista and Windows 7. XPDM is available on computers running Windows Vista, Microsoft Windows XP, and Microsoft Windows Server 2003. For more information about WDDM, see [Windows Display Driver Model (WDDM) Design Guide](/windows-hardware/drivers/display/windows-vista-display-driver-model-design-guide).  
   
-<a name="registry_settings"></a>   
+<a name="registry_settings"></a>
 ## Registry Settings  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides four registry settings for controlling [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] rendering:  
   
@@ -33,7 +33,7 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
   
  These settings can be accessed by any external configuration utility that knows how to reference the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] registry settings. These settings can also be created or modified by accessing the values directly by using the Windows Registry Editor.  
   
-<a name="disablehardwareacceleration"></a>   
+<a name="disablehardwareacceleration"></a>
 ## Disable Hardware Acceleration Option  
   
 |Registry key|Value type|  
@@ -44,7 +44,7 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
   
  The **disable hardware acceleration option** is a DWORD value that is either 0 or 1. A value of 1 disables hardware acceleration. A value of 0 enables hardware acceleration, provided the system meets hardware acceleration requirements; for more information, see [Graphics Rendering Tiers](../advanced/graphics-rendering-tiers.md).  
   
-<a name="maxmultisample"></a>   
+<a name="maxmultisample"></a>
 ## Maximum Multisample Value  
   
 |Registry key|Value type|  
@@ -57,7 +57,7 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
   
  When this registry key is not set, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] defaults to 0 for XPDM drivers and 4 for WDDM drivers.  
   
-<a name="requiredvideodriverdatesetting"></a>   
+<a name="requiredvideodriverdatesetting"></a>
 ## Required Video Driver Date Setting  
   
 |Registry key|Value type|  
@@ -76,7 +76,7 @@ This topic provides an overview of the [!INCLUDE[TLA2#tla_winclient](../../../..
   
  Where *YYYY* is the four-digit year, *MM* is the two-digit month, and *DD* is the two digit day. When this value is unset, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] uses November, 2004 as its required video driver date.  
   
-<a name="usereferencerasterizeroption"></a>   
+<a name="usereferencerasterizeroption"></a>
 ## Use Reference Rasterizer Option  
   
 |Registry key|Value type|  

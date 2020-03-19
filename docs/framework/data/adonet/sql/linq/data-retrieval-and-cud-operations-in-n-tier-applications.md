@@ -53,15 +53,15 @@ End Function
 private void GetProdsByCat_Click(object sender, EventArgs e)  
 {  
     // Create the WCF client proxy.  
-    NorthwindServiceReference.Service1Client proxy =   
+    NorthwindServiceReference.Service1Client proxy =
     new NorthwindClient.NorthwindServiceReference.Service1Client();  
   
     // Call the method on the service.  
-    NorthwindServiceReference.Product[] products =   
+    NorthwindServiceReference.Product[] products =
     proxy.GetProductsByCategory(1);  
   
-    // If the database uses original values for concurrency checks,   
-    // the client needs to store them and pass them back to the   
+    // If the database uses original values for concurrency checks,
+    // the client needs to store them and pass them back to the
     // middle tier along with the new values when updating data.  
     foreach (var v in products)  
     {  
@@ -101,7 +101,7 @@ End Function
 ```csharp  
 public IEnumerable<Product> GetProductsByCategory(int categoryID)  
 {  
-    NorthwindClasses1DataContext db =   
+    NorthwindClasses1DataContext db =
     new NorthwindClasses1DataContext(connectionString);  
   
     IEnumerable<Product> productQuery =  
@@ -109,7 +109,7 @@ public IEnumerable<Product> GetProductsByCategory(int categoryID)
     where prod.CategoryID == categoryID  
     select prod;  
   
-    return productQuery.AsEnumerable();   
+    return productQuery.AsEnumerable();
 }  
 ```  
   
@@ -363,7 +363,7 @@ public void UpdateProductInfo(Product newProd, Product originalProd)
             // is appropriate for your application.  
             // For more information, see the MSDN article  
             // How to: Manage Change Conflicts (LINQ to SQL)/  
-        }   
+        }
     }  
 }  
 ```  

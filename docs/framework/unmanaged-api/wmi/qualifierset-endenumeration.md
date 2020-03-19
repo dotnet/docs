@@ -24,9 +24,9 @@ Terminates the enumeration begun with a call to the [QualifierSet_BeginEnumerati
   
 ```cpp  
 HRESULT QualifierSet_EndEnumeration (
-   [in] int                  vFunc, 
+   [in] int                  vFunc,
    [in] IWbemQualifierSet*   ptr
-); 
+);
 ```  
 
 ## Parameters
@@ -34,7 +34,7 @@ HRESULT QualifierSet_EndEnumeration (
 `vFunc`  
 [in] This parameter is unused.
 
-`ptr`   
+`ptr`
 [in] A pointer to an [IWbemQualifierSet](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemqualifierset) instance.
 
 ## Return value

@@ -23,10 +23,10 @@ Gets an enumerator for an array of generic parameter tokens associated with the 
   
 ```cpp
 HRESULT EnumGenericParams (  
-   [in, out] HCORENUM     *phEnum,   
+   [in, out] HCORENUM     *phEnum,
    [in]  mdToken          tk,  
-   [out] mdGenericParam   rGenericParams[],   
-   [in]  ULONG            cMax,   
+   [out] mdGenericParam   rGenericParams[],
+   [in]  ULONG            cMax,
    [out] ULONG            *pcGenericParams  
 );  
 ```  

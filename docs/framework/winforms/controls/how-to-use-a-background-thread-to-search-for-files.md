@@ -663,7 +663,7 @@ namespace SampleUsage
    using System.Drawing;
    using System.Windows.Forms;
    using Microsoft.Samples.DirectorySearcher;
-   
+
    /// <summary>
    ///      Summary description for Form1.
    /// </summary>

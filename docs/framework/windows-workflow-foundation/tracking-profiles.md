@@ -320,7 +320,7 @@ To accomplish this, an annotation is added to a tracking query as shown in the f
 
 ### How to Create a Tracking Profile
 
-Tracking query elements are used to create a tracking profile using either an XML configuration file or [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)]code. Here is an example of a tracking profile created using a configuration file.
+Tracking query elements are used to create a tracking profile using either an XML configuration file or [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] code. Here is an example of a tracking profile created using a configuration file.
 
 ```xml
 <system.serviceModel>

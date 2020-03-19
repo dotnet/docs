@@ -67,7 +67,7 @@ Follow this recommendation whenever your design intent is to create an immutable
 
 ## Declare readonly members when a struct can't be immutable
 
-In C# 8.0 and later, when a struct type is mutable, you should declare members that don't cause mutation to be `readonly`. For example, the following is a mutable variation of the 3D point structure:
+In C# 8.0 and later, when a struct type is mutable, you should declare members that don't cause mutation to be `readonly`. Consider a different application that needs a 3D point structure, but must support mutability. The following version of the 3D point structure adds the `readonly` modifier only to those members that don't modify the structure. Follow this example when your design must support modifications to the struct by some members, but you still want the benefits of enforcing readonly on some members:
 
 ```csharp
 public struct Point3D
@@ -263,13 +263,13 @@ defensive copies of `in` parameters in more locations.
 
 The `in` parameter designation can also be used with reference types or numeric values. However, the benefits in both cases are minimal, if any.
 
-## Never use mutable structs as in `in` argument
+## Avoid mutable structs as an `in` argument
 
 The techniques described above explain how to avoid copies by returning references and passing values by reference. These techniques work best when the argument types are declared as `readonly struct` types. Otherwise, the compiler must create **defensive copies** in many situations to enforce the readonly-ness of any arguments. Consider the following example that calculates the distance of a 3D point from the origin:
 
 [!code-csharp[InArgument](../../samples/snippets/csharp/safe-efficient-code/ref-readonly-struct/Program.cs#InArgument "Specifying an in argument")]
 
-The `Point3D` structure is *not* a readonly struct. There are six different property access calls in the body of this method. On first examination, you may have thought these accesses were safe. After all, a `get` accessor shouldn't modify the state of the object. But there's no language rule that enforces that. It's only a common convention. Any type could implement a `get` accessor that modified the internal state. Without some language guarantee, the compiler must create a temporary copy of the argument before calling any member. The temporary storage is created on the stack, the values of the argument are copied to the temporary storage, and the value is copied to the stack for each member access as the `this` argument. In many situations, these copies harm performance enough that pass-by-value is faster than pass-by-readonly-reference when the argument type isn't a `readonly struct`.
+The `Point3D` structure is *not* a readonly struct. There are six different property access calls in the body of this method. On first examination, you may have thought these accesses were safe. After all, a `get` accessor shouldn't modify the state of the object. But there's no language rule that enforces that. It's only a common convention. Any type could implement a `get` accessor that modified the internal state. Without some language guarantee, the compiler must create a temporary copy of the argument before calling any member not marked with the `readonly` modifier. The temporary storage is created on the stack, the values of the argument are copied to the temporary storage, and the value is copied to the stack for each member access as the `this` argument. In many situations, these copies harm performance enough that pass-by-value is faster than pass-by-readonly-reference when the argument type isn't a `readonly struct` and the method calls members that aren't marked `readonly`. If you mark all methods that don't modify the struct state as `readonly`, the compiler can safely determine that the struct state isn't modified, and a defensive copy is not needed.
 
 Instead, if the distance calculation uses the immutable struct, `ReadonlyPoint3D`, temporary objects aren't needed:
 

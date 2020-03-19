@@ -239,7 +239,7 @@ public class MyDataContractResolver : DataContractResolver
        }  
   
        // Used at deserialization  
-        // Allows users to map xsi:type name to any Type   
+        // Allows users to map xsi:type name to any Type
         public override Type ResolveName(string typeName, string typeNamespace, DataContractResolver knownTypeResolver)  
        {  
            XmlDictionaryString tName;  
@@ -271,7 +271,7 @@ public class MyDataContractResolver : DataContractResolver
   
  The library of types used in this sample is shown in the following example.  
   
-```csharp 
+```csharp
  [DataContract]  
  public class ComplexNumber  
  {  
@@ -358,9 +358,9 @@ Lists combined:
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Data\KnownAssemblyAttribute`  

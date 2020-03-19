@@ -40,7 +40,7 @@ Configuring a Windows Communication Foundation (WCF) service with a configuratio
   
    <bindings>  
    <!-- Specify one or more of the system-provided binding elements,  
-    for example, <basicHttpBinding> -->   
+    for example, <basicHttpBinding> -->
    <!-- Alternatively, <customBinding> elements. -->  
       <binding>  
       <!-- For example, a <BasicHttpBinding> element. -->  
@@ -125,16 +125,16 @@ For more information about configuring services and clients, see [Configuring WC
      </bindings>  
      <services>  
       <service name="MyNamespace.myServiceType">  
-       <endpoint   
-          address="myAddress" binding="basicHttpBinding"   
+       <endpoint
+          address="myAddress" binding="basicHttpBinding"
           bindingConfiguration="myBindingConfiguration1"  
           contract="MyContract"  />  
-       <endpoint   
-          address="myAddress2" binding="basicHttpBinding"   
+       <endpoint
+          address="myAddress2" binding="basicHttpBinding"
           bindingConfiguration="myBindingConfiguration2"  
           contract="MyContract" />  
-       <endpoint   
-          address="myAddress3" binding="basicHttpBinding"   
+       <endpoint
+          address="myAddress3" binding="basicHttpBinding"
           contract="MyContract" />  
        </service>  
       </services>  
@@ -165,7 +165,7 @@ For more information about configuring services and clients, see [Configuring WC
     </behaviors>  
     <services>  
      <service name="NewServiceType">  
-       <endpoint   
+       <endpoint
           address="myAddress3" behaviorConfiguration="myBehavior"  
           binding="basicHttpBinding"  
           contract="MyContract" />  

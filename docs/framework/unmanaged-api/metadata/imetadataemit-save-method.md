@@ -22,8 +22,8 @@ Saves all metadata in the current scope to the file at the specified address.
 ## Syntax  
   
 ```cpp  
-HRESULT Save (   
-    [in]  LPCWSTR     szFile,   
+HRESULT Save (
+    [in]  LPCWSTR     szFile,
     [in]  DWORD       dwSaveFlags  
 );  
 ```  

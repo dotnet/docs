@@ -79,7 +79,7 @@ The main behavior of an application is to implement the functionality that respo
 ```
 
 ```csharp
-using System.Windows; // Window, RoutedEventArgs, MessageBox 
+using System.Windows; // Window, RoutedEventArgs, MessageBox
 
 namespace SDKSample
 {
@@ -87,7 +87,7 @@ namespace SDKSample
     {
         public AWindow()
         {
-            // InitializeComponent call is required to merge the UI 
+            // InitializeComponent call is required to merge the UI
             // that is defined in markup with this class, including  
             // setting properties and registering event handlers
             InitializeComponent();
@@ -110,21 +110,21 @@ Namespace SDKSample
 
         Public Sub New()
 
-            ' InitializeComponent call is required to merge the UI 
+            ' InitializeComponent call is required to merge the UI
             ' that is defined in markup with this class, including  
             ' setting properties and registering event handlers
             InitializeComponent()
 
-        End Sub 
+        End Sub
 
         Private Sub button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
             ' Show message box when button is clicked.
             MessageBox.Show("Hello, Windows Presentation Foundation!")
 
-        End Sub 
+        End Sub
 
-    End Class 
+    End Class
 
 End Namespace
 ```

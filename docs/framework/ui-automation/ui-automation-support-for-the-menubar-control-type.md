@@ -17,7 +17,7 @@ ms.assetid: c1202b21-c1f0-4560-853c-7b99bd73ad97
   
  The following sections define the required [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree structure, properties, control patterns, and events for the MenuBar control type. The [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] requirements apply to all list controls, whether [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)], Win32, or Windows Forms.  
   
-<a name="Required_UI_Automation_Tree_Structure"></a>   
+<a name="Required_UI_Automation_Tree_Structure"></a>
 ## Required UI Automation Tree Structure  
  The following table depicts the control view and the content view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree that pertains to menu bar controls and describes what can be contained in each view. For more information on the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree, see [UI Automation Tree Overview](ui-automation-tree-overview.md).  
   
@@ -27,7 +27,7 @@ ms.assetid: c1202b21-c1f0-4560-853c-7b99bd73ad97
   
  Menu bar controls can contain other controls such as edit controls and combo boxes within its structure. These additional controls correspond to the "other controls" listed above in the control and content views.  
   
-<a name="Required_UI_Automation_Properties"></a>   
+<a name="Required_UI_Automation_Properties"></a>
 ## Required UI Automation Properties  
  The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties whose value or definition is especially relevant to the menu bar controls. For more information on [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties, see [UI Automation Properties for Clients](ui-automation-properties-for-clients.md).  
   
@@ -47,7 +47,7 @@ ms.assetid: c1202b21-c1f0-4560-853c-7b99bd73ad97
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.AcceleratorKeyProperty>|`Null`|Menu bars never have accelerator keys.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.AccessKeyProperty>|"ALT"|Pressing the ALT key should always bring focus to the menu bar within the application.|  
   
-<a name="Required_UI_Automation_Control_Patterns"></a>   
+<a name="Required_UI_Automation_Control_Patterns"></a>
 ## Required UI Automation Control Patterns  
  The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] control patterns required to be supported by menu bar controls. For more information on control patterns, see [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md).  
   
@@ -57,7 +57,7 @@ ms.assetid: c1202b21-c1f0-4560-853c-7b99bd73ad97
 |<xref:System.Windows.Automation.Provider.IDockProvider>|Depends|If the control can be docked to different parts of the screen, implement <xref:System.Windows.Automation.Provider.IDockProvider>.|  
 |<xref:System.Windows.Automation.Provider.ITransformProvider>|Depends|If the control can be resized, rotated or moved it must implement <xref:System.Windows.Automation.Provider.ITransformProvider>.|  
   
-<a name="Required_UI_Automation_Events"></a>   
+<a name="Required_UI_Automation_Events"></a>
 ## Required UI Automation Events  
  The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] events required to be supported by all menu bar controls. For more information on events, see [UI Automation Events Overview](ui-automation-events-overview.md).  
   

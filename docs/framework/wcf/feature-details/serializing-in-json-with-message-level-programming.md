@@ -21,7 +21,7 @@ WCF supports serializing data in JSON format. This topic describes how to tell W
                              "*",                     // SOAP action, ignored since this is JSON  
                              "Response string: JSON format specified", // Message body  
                              new DataContractJsonSerializer(typeof(string))); // Specify DataContractJsonSerializer  
-      response.Properties.Add( WebBodyFormatMessageProperty.Name,   
+      response.Properties.Add( WebBodyFormatMessageProperty.Name,
                     new WebBodyFormatMessageProperty(WebContentFormat.Json)); // Use JSON format  
 ```  
   

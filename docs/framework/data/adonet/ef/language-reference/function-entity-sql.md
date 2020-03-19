@@ -10,16 +10,16 @@ Defines a function in the scope of an Entity SQL query command.
   
 ```sql  
 FUNCTION function-name  
-( [ { parameter_name <type_definition>   
+( [ { parameter_name <type_definition>
         [ ,...n ]  
   ]  
-) AS ( function_expression )   
+) AS ( function_expression )
   
 <type_definition>::=  
-    { data_type | COLLECTION ( <type_definition> )   
-                | REF ( data_type )   
-                | ROW ( row_expression )   
-        }   
+    { data_type | COLLECTION ( <type_definition> )
+                | REF ( data_type )
+                | ROW ( row_expression )
+        }
 ```  
   
 ## Arguments  

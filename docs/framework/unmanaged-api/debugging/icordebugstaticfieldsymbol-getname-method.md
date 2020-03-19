@@ -10,8 +10,8 @@ Gets the name of the static field.
   
 ```cpp  
 HRESULT GetName(  
-   [in] ULONG32 cchName,   
-   [out] ULONG32 *pcchName,   
+   [in] ULONG32 cchName,
+   [out] ULONG32 *pcchName,
    [out, size_is(cchName), length_is(*pcchName)] WCHAR szName[]  
 );  
 ```  

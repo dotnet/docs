@@ -81,7 +81,7 @@ void MethodWithCer(MyClass object)
         // Start of the CER.  
   
         // Cannot tell at analysis time whether object is a MyClass  
-        // or a MyDerivedClass, so we do not know which version of   
+        // or a MyDerivedClass, so we do not know which version of
         // VirtualMethod we are going to call.  
         object.VirtualMethod();  
     }  

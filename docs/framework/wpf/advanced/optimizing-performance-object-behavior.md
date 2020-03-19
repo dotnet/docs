@@ -15,7 +15,7 @@ ms.assetid: 73aa2f47-1d73-439a-be1f-78dc4ba2b5bd
 # Optimizing Performance: Object Behavior
 Understanding the intrinsic behavior of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] objects will help you make the right tradeoffs between functionality and performance.  
 
-<a name="Not_Removing_Event_Handlers"></a>   
+<a name="Not_Removing_Event_Handlers"></a>
 ## Not Removing Event Handlers on Objects may Keep Objects Alive  
  The delegate that an object passes to its event is effectively a reference to that object. Therefore, event handlers can keep objects alive longer than expected. When performing clean up of an object that has registered to listen to an object's event, it is essential to remove that delegate before releasing the object. Keeping unneeded objects alive increases the application's memory usage. This is especially true when the object is the root of a logical tree or a visual tree.  
   
@@ -23,7 +23,7 @@ Understanding the intrinsic behavior of [!INCLUDE[TLA2#tla_winclient](../../../.
   
  There are several tools, such as the CLR Profiler and the Working Set Viewer, that can provides information on the memory usage of a specified process. The CLR Profiler includes a number of very useful views of the allocation profile, including a histogram of allocated types, allocation and call graphs, a time line showing garbage collections of various generations and the resulting state of the managed heap after those collections, and a call tree showing per-method allocations and assembly loads. For more information, see [Performance](https://docs.microsoft.com/previous-versions/aa497289(v=msdn.10)).  
   
-<a name="DPs_and_Objects"></a>   
+<a name="DPs_and_Objects"></a>
 ## Dependency Properties and Objects  
  In general, accessing a dependency property of a <xref:System.Windows.DependencyObject> is not slower than accessing a CLR property. While there is a small performance overhead for setting a property value, getting a value is as fast as getting the value from a CLR property. Offsetting the small performance overhead is the fact that dependency properties support robust features, such as data binding, animation, inheritance, and styling. For more information, see [Dependency Properties Overview](dependency-properties-overview.md).  
   
@@ -44,7 +44,7 @@ Understanding the intrinsic behavior of [!INCLUDE[TLA2#tla_winclient](../../../.
 ### Set the PropertyMetadata Value using Register  
  When creating a <xref:System.Windows.DependencyProperty>, you have the option of setting the <xref:System.Windows.PropertyMetadata> using either the <xref:System.Windows.DependencyProperty.Register%2A> or <xref:System.Windows.DependencyProperty.OverrideMetadata%2A> methods. Although your object could have a static constructor to call <xref:System.Windows.DependencyProperty.OverrideMetadata%2A>, this is not the optimal solution and will impact performance. For best performance, set the <xref:System.Windows.PropertyMetadata> during the call to <xref:System.Windows.DependencyProperty.Register%2A>.  
   
-<a name="Freezable_Objects"></a>   
+<a name="Freezable_Objects"></a>
 ## Freezable Objects  
  A <xref:System.Windows.Freezable> is a special type of object that has two states: unfrozen and frozen. Freezing objects whenever possible improves the performance of your application and reduces its working set. For more information, see [Freezable Objects Overview](freezable-objects-overview.md).  
   
@@ -89,7 +89,7 @@ Understanding the intrinsic behavior of [!INCLUDE[TLA2#tla_winclient](../../../.
  [!code-csharp[Performance#PerformanceSnippet6](~/samples/snippets/csharp/VS_Snippets_Wpf/Performance/CSharp/Window1.xaml.cs#performancesnippet6)]
  [!code-vb[Performance#PerformanceSnippet6](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Performance/visualbasic/window1.xaml.vb#performancesnippet6)]  
   
-<a name="User_Interface_Virtualization"></a>   
+<a name="User_Interface_Virtualization"></a>
 ## User Interface Virtualization  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] also provides a variation of the <xref:System.Windows.Controls.StackPanel> element that automatically "virtualizes" data-bound child content. In this context, the word virtualize refers to a technique by which a subset of objects are generated from a larger number of data items based upon which items are visible on-screen. It is intensive, both in terms of memory and processor, to generate a large number of UI elements when only a few may be on the screen at a given time. <xref:System.Windows.Controls.VirtualizingStackPanel> (through functionality provided by <xref:System.Windows.Controls.VirtualizingPanel>) calculates visible items and works with the <xref:System.Windows.Controls.ItemContainerGenerator> from an <xref:System.Windows.Controls.ItemsControl> (such as <xref:System.Windows.Controls.ListBox> or <xref:System.Windows.Controls.ListView>) to only create elements for visible items.  
   

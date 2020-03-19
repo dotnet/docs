@@ -18,8 +18,8 @@ Hosting of WPF applications in Web browsers is facilitated by an Active Document
   
 ```cpp  
 DEFINE_GUID(CGID_PresentationHost, 0xd0288c55, 0xd6, 0x4f5e, 0xa8, 0x51, 0x79, 0xde, 0xc5, 0x1b, 0x10, 0xec);  
-enum PresentationHostCommands {   
-   PHCMDID_TABINTO = 1   
+enum PresentationHostCommands {
+   PHCMDID_TABINTO = 1
 };  
 ```  
   

@@ -23,7 +23,7 @@ When hosting a Windows Communication Foundation (WCF) service in Internet Inform
   
     private void RegisterRoutes(RouteCollection routes)  
     {  
-        routes.Add(new ServiceRoute("Customers", new WebServiceHostFactory(), typeof(Service)));   
+        routes.Add(new ServiceRoute("Customers", new WebServiceHostFactory(), typeof(Service)));
    }  
 </script>  
 ```  
@@ -54,7 +54,7 @@ When hosting a Windows Communication Foundation (WCF) service in Internet Inform
   
  The class that implements the service must enable ASP.NET compatibility requirements as shown in the following example.  
   
-```csharp 
+```csharp
 [ServiceContract]  
 [AspNetCompatibilityRequirements(RequirementsMode=AspNetCompatibilityRequirementsMode.Allowed)]  
     public class Service  

@@ -62,7 +62,7 @@ int main()
    {
       Console::WriteLine( "\nPlease enter a protected resource Url and other details as command line parameter as below:" );
       Console::WriteLine( "\nUsage: NetworkCredential_UserName_Password_Domain URLname username password domainname" );
-      Console::WriteLine( "\nExample: NetworkCredential_UserName_Password_Domain http://www.microsoft.com/net/ george george123 microsoft" );
+      Console::WriteLine( "\nExample: NetworkCredential_UserName_Password_Domain http://dotnet.microsoft.com/ george george123 microsoft" );
    }
    else
    {

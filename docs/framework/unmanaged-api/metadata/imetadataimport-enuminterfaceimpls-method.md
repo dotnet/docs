@@ -17,15 +17,15 @@ topic_type:
   - "apiref"
 ---
 # IMetaDataImport::EnumInterfaceImpls Method
-Enumerates all interfaces implemented by the specified `TypeDef`. 
+Enumerates all interfaces implemented by the specified `TypeDef`.
   
 ## Syntax  
   
 ```cpp  
 HRESULT EnumInterfaceImpls (  
-   [in, out]  HCORENUM       *phEnum,   
+   [in, out]  HCORENUM       *phEnum,
    [in]   mdTypeDef          td,  
-   [out]  mdInterfaceImpl    rImpls[],   
+   [out]  mdInterfaceImpl    rImpls[],
    [in]   ULONG              cMax,  
    [out]  ULONG*             pcImpls  
 );  

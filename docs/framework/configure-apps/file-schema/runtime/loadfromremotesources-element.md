@@ -19,7 +19,7 @@ Specifies whether assemblies loaded from remote sources should be granted full t
 ## Syntax  
   
 ```xml  
-<loadFromRemoteSources    
+<loadFromRemoteSources
    enabled="true|false"/>  
 ```  
   
@@ -56,12 +56,12 @@ In the .NET Framework 3.5 and earlier versions, if you load an assembly from a r
 Starting with the .NET Framework 4, code access security (CAS) policy is disabled and assemblies are loaded in full trust. Ordinarily, this would grant full trust to assemblies loaded with the <xref:System.Reflection.Assembly.LoadFrom%2A?displayProperty=nameWithType> method that previously had been sandboxed. To prevent this, the ability to run code in assemblies loaded from a remote source is disabled by default. By default, if you attempt to load a remote assembly, a <xref:System.IO.FileLoadException> with an exception message like the following is thrown:
 
 ```text
-System.IO.FileNotFoundException: Could not load file or assembly 'file:assem.dll' or one of its dependencies. Operation is not supported. 
+System.IO.FileNotFoundException: Could not load file or assembly 'file:assem.dll' or one of its dependencies. Operation is not supported.
 (Exception from HRESULT: 0x80131515)
-File name: 'file:assem.dll' ---> 
-System.NotSupportedException: An attempt was made to load an assembly from a network location which would have caused the assembly 
-to be sandboxed in previous versions of the .NET Framework. This release of the .NET Framework does not enable CAS policy by default, 
-so this load may be dangerous. If this load is not intended to sandbox the assembly, please enable the loadFromRemoteSources switch. 
+File name: 'file:assem.dll' --->
+System.NotSupportedException: An attempt was made to load an assembly from a network location which would have caused the assembly
+to be sandboxed in previous versions of the .NET Framework. This release of the .NET Framework does not enable CAS policy by default,
+so this load may be dangerous. If this load is not intended to sandbox the assembly, please enable the loadFromRemoteSources switch.
 ```
 
 To load the assembly and execute its code, you must either:

@@ -30,7 +30,7 @@ HRESULT ExportNestedType(
     LPCWSTR         pszTypename,  
     DWORD           dwFlags,  
     mdExportedType* pType  
-) PURE;   
+) PURE;
 ```  
   
 ## Parameters  

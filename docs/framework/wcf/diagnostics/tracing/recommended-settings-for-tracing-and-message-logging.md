@@ -78,12 +78,12 @@ This topic describes recommended tracing and message logging settings for differ
   
  <system.serviceModel>  
   <diagnostics wmiProviderEnabled="true">  
-      <messageLogging   
-           logEntireMessage="true"   
+      <messageLogging
+           logEntireMessage="true"
            logMalformedMessages="true"  
-           logMessagesAtServiceLevel="true"   
+           logMessagesAtServiceLevel="true"
            logMessagesAtTransportLevel="true"  
-           maxMessagesToLog="3000"   
+           maxMessagesToLog="3000"
        />  
   </diagnostics>  
  </system.serviceModel>  

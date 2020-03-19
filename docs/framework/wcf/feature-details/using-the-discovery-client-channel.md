@@ -35,7 +35,7 @@ bindingElement.FindCriteria = new FindCriteria(typeof(ICalculator)) { MaxResults
 // Use the UdpDiscoveryEndpoint  
 bindingElement.DiscoveryEndpoint = new UdpDiscoveryEndpoint();  
   
-// The service uses the BasicHttpBinding, so use that and insert the DiscoveryClientBindingElement at the   
+// The service uses the BasicHttpBinding, so use that and insert the DiscoveryClientBindingElement at the
 // top of the stack  
 CustomBinding binding = new CustomBinding(new BasicHttpBinding());  
 binding.Elements.Insert(0,bindingElement);  

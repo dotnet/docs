@@ -23,11 +23,11 @@ Gets an array of assemblies with the specified `szAssemblyName` parameter, using
   
 ```cpp  
 HRESULT FindAssembliesByName (  
-    [in]  LPCWSTR     szAppBase,   
-    [in]  LPCWSTR     szPrivateBin,   
-    [in]  LPCWSTR     szAssemblyName,   
-    [out] IUnknown    *ppIUnk[],   
-    [in]  ULONG       cMax,   
+    [in]  LPCWSTR     szAppBase,
+    [in]  LPCWSTR     szPrivateBin,
+    [in]  LPCWSTR     szAssemblyName,
+    [out] IUnknown    *ppIUnk[],
+    [in]  ULONG       cMax,
     [out] ULONG       *pcAssemblies  
 );  
 ```  

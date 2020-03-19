@@ -38,7 +38,7 @@ static void DisplayIdentityInformation()
 {  
     Console.WriteLine("\t\tThread Identity            :{0}",  
          WindowsIdentity.GetCurrent().Name);  
-    Console.WriteLine("\t\tThread Identity level  :{0}",   
+    Console.WriteLine("\t\tThread Identity level  :{0}",
          WindowsIdentity.GetCurrent().ImpersonationLevel);  
     Console.WriteLine("\t\thToken                     :{0}",  
          WindowsIdentity.GetCurrent().Token.ToString());  
@@ -63,8 +63,8 @@ public double Subtract(double n1, double n2)
         // Impersonate.  
         using (ServiceSecurityContext.Current.WindowsIdentity.Impersonate())  
         {  
-            // Make a system call in the caller's context and ACLs   
-            // on the system resource are enforced in the caller's context.   
+            // Make a system call in the caller's context and ACLs
+            // on the system resource are enforced in the caller's context.
             Console.WriteLine("Impersonating the caller imperatively");  
             DisplayIdentityInformation();  
         }  

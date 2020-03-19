@@ -29,7 +29,7 @@ COM methods report errors by returning HRESULTs; .NET methods report them by thr
     Class NoAccessException : public ApplicationException  
     {  
         NoAccessException () {  
-        HResult = E_ACCESSDENIED;   
+        HResult = E_ACCESSDENIED;
     }  
     }  
     CMyClass::MethodThatThrows  

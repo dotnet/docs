@@ -24,7 +24,7 @@ Notifies the profiler that an application domain has been created.
 ```cpp  
 HRESULT AppDomainCreationFinished(  
     [in] AppDomainID appDomainId,  
-    [in] HRESULT     hrStatus);   
+    [in] HRESULT     hrStatus);
 ```  
   
 ## Parameters

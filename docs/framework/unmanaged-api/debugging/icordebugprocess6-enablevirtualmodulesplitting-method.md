@@ -83,7 +83,7 @@ HRESULT EnableVirtualModuleSplitting(
   
  These objects are always cached by [ICorDebug](icordebug-interface.md), and they will have the same pointer identity regardless of whether they were created or queried from the container module or a sub-module. The sub-module provides a filtered view of these cached objects, not a separate cache with its own copies.  
   
-<a name="APIs"></a>   
+<a name="APIs"></a>
 ## Virtual module splitting and the unmanaged debugging APIs  
  The following table shows how virtual module splitting affects the behavior of other methods in the unmanaged debugging API.  
   

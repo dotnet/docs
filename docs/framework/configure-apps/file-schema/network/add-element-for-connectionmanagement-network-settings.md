@@ -22,9 +22,9 @@ Adds an IP address or DNS name to the connection management list.
 ## Syntax  
   
 ```xml  
-<add   
-  address="address expression"   
-  maxconnection="integer"   
+<add
+  address="address expression"
+  maxconnection="integer"
 />  
 ```  
   

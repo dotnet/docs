@@ -13,7 +13,7 @@ This sample demonstrates how to implement a service with a secure metadata endpo
  The service in this sample has two endpoints. The application endpoint serves the `ICalculator` contract on a `WSHttpBinding` with `ReliableSession` enabled and `Message` security using certificates. The metadata endpoint also uses `WSHttpBinding`, with the same security settings but with no `ReliableSession`. Here is the relevant configuration:  
   
 ```xml  
-<services>   
+<services>
     <service name="Microsoft.ServiceModel.Samples.CalculatorService"  
              behaviorConfiguration="CalculatorServiceBehavior">  
      <!-- use base address provided by host -->  
@@ -173,9 +173,9 @@ ChannelFactory<ICalculator> cf = new ChannelFactory<ICalculator>(endpoint.Bindin
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Metadata\CustomMexEndpoint`  

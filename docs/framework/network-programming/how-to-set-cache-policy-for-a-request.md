@@ -23,12 +23,12 @@ using System.IO;
 namespace Examples.System.Net.Cache  
 {  
     public class CacheExample  
-    {     
+    {
         public static void UseCacheForOneDay(Uri resource)  
         {  
             // Create a policy that allows items in the cache  
             // to be used if they have been cached one day or less.  
-            HttpRequestCachePolicy requestPolicy =   
+            HttpRequestCachePolicy requestPolicy =
                 new HttpRequestCachePolicy (HttpCacheAgeControl.MaxAge,  
                 TimeSpan.FromDays(1));  
   

@@ -21,15 +21,15 @@ ms.assetid: 9df6d3c9-aed3-471c-af36-6859b19d999f
   
 - [Inline Code Limitations](#Inline_Code_Limitations)  
   
-<a name="Prerequisites"></a>   
+<a name="Prerequisites"></a>
 ## Prerequisites  
  This topic assumes that you have read the [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md) and have some basic knowledge of the CLR and object-oriented programming.  
   
-<a name="codebehind_and_the_xaml_language"></a>   
+<a name="codebehind_and_the_xaml_language"></a>
 ## Code-Behind and the XAML Language  
  The XAML language includes language-level features that make it possible to associate code files with markup files, from the markup file side. Specifically, the XAML language defines the language features [x:Class Directive](../../../desktop-wpf/xaml-services/xclass-directive.md), [x:Subclass Directive](../../../desktop-wpf/xaml-services/xsubclass-directive.md), and [x:ClassModifier Directive](../../../desktop-wpf/xaml-services/xclassmodifier-directive.md). Exactly how the code should be produced, and how to integrate markup and code, is not part of what the XAML language specifies. It is left up to frameworks such as WPF to determine how to integrate the code, how to use XAML in the application and programming models, and the build actions or other support that all this requires.  
   
-<a name="Code_behind__Event_Handler__and_Partial_Class"></a>   
+<a name="Code_behind__Event_Handler__and_Partial_Class"></a>
 ## Code-behind, Event Handler, and Partial Class Requirements in WPF  
   
 - The partial class must derive from the type that backs the root element.  
@@ -42,13 +42,13 @@ ms.assetid: 9df6d3c9-aed3-471c-af36-6859b19d999f
   
 - For the Microsoft Visual Basic language specifically, you can use the language-specific `Handles` keyword to associate handlers with instances and events in the handler declaration, instead of attaching handlers with attributes in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]. However, this technique does have some limitations because the `Handles` keyword cannot support all of the specific features of the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] event system, such as certain routed event scenarios or attached events. For details, see [Visual Basic and WPF Event Handling](visual-basic-and-wpf-event-handling.md).  
   
-<a name="x_Code"></a>   
+<a name="x_Code"></a>
 ## x:Code  
  [x:Code](../../../desktop-wpf/xaml-services/xcode-intrinsic-xaml-type.md) is a directive element defined in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]. An `x:Code` directive element can contain inline programming code. The code that is defined inline can interact with the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] on the same page. The following example illustrates inline C# code. Notice that the code is inside the `x:Code` element and that the code must be surrounded by `<CDATA[`...`]]>` to escape the contents for XML, so that a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor (interpreting either the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] schema or the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] schema) will not try to interpret the contents literally as XML.  
   
  [!code-xaml[XAMLOvwSupport#ButtonWithInlineCode](~/samples/snippets/csharp/VS_Snippets_Wpf/XAMLOvwSupport/CSharp/page4.xaml#buttonwithinlinecode)]  
   
-<a name="Inline_Code_Limitations"></a>   
+<a name="Inline_Code_Limitations"></a>
 ## Inline Code Limitations  
  You should consider avoiding or limiting the use of inline code. In terms of architecture and coding philosophy, maintaining a separation between markup and code-behind keeps the designer and developer roles much more distinct. On a more technical level, the code that you write for inline code can be awkward to write, because you are always writing into the [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] generated partial class, and can only use the default XML namespace mappings. Because you cannot add `using` statements, you must fully qualify many of the API calls that you make. The default [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] mappings include most but not all CLR namespaces that are present in the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] assemblies; you will have to fully qualify calls to types and members contained within the other CLR namespaces. You also cannot define anything beyond the partial class in the inline code, and all user code entities you reference must exist as a member or variable within the generated partial class. Other language specific programming features, such as macros or `#ifdef` against global variables or build variables, are also not available. For more information, see [x:Code Intrinsic XAML Type](../../../desktop-wpf/xaml-services/xcode-intrinsic-xaml-type.md).  
   

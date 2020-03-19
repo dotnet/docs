@@ -9,30 +9,41 @@ This article covers the `switch` expression, introduced in C# 8.0. For informati
 
 ## Basic example
 
-The `switch` expression provides for `switch`-like semantics in an expression context. This provides a concise syntax when the switch arms produce a value. The following example shows the structure of a switch expression. It translates values from an `enum` representing visual directions in an online map to the corresponding cardinal direction:
+The `switch` expression provides for `switch`-like semantics in an expression context. It provides a concise syntax when the switch arms produce a value. The following example shows the structure of a switch expression. It translates values from an `enum` representing visual directions in an online map to the corresponding cardinal direction:
 
 :::code language="csharp" source="snippets/SwitchExpressions.cs" id="SnippetBasicStructure" interactive="csharp-interactive":::
 
 The preceding sample shows the basic elements of a switch expression:
 
 - The *range expression*: The preceding example uses the variable `direction` as the range expression.
-- The *switch expression arms*: Each switch expression arm contains a *pattern*, an optional *case guard* , the `=>` token, and an *expression*.
+- The *switch expression arms*: Each switch expression arm contains a *pattern*, an optional *case guard*, the `=>` token, and an *expression*.
 
-The result of the *switch expression* is the value of the expression of the first *switch expression arm* whose pattern matches the *range expression* and whose *cause guard*, if present, evaluates to `true`. The *expression* on the right of the `=>` token can't be an expression statement.
+The result of the *switch expression* is the value of the expression of the first *switch expression arm* whose *pattern* matches the *range expression* and whose *cause guard*, if present, evaluates to `true`. The *expression* on the right of the `=>` token can't be an expression statement.
 
-Each *switch expression arm* is evaluated in text order. The compiler issues an error if later switch expression arms can't be chosen because an earlier *switch expression arm* always matches first.
+Each *switch expression arm* is evaluated in text order. The compiler issues an error when later switch expression arms can't be chosen because an earlier *switch expression arm* matches all its values.
 
 ## Patterns and case guards
 
--- type pattern
--- value pattern
--- recursive patterns.
+Many patterns are supported in switch expression arms. The preceding example used a *value pattern*. A *value pattern* compares the range expression to a value. That value must be a compile time constant. The *type pattern* compares the range expression to a known type. The following example retrieves the third element from a sequence. It uses different methods based on the type of the sequence:
 
--- fluent switch expressions
+:::code language="csharp" source="snippets/SwitchExpressions.cs" id="SnippetTypePattern":::
 
--- special cases: null, _, var
+Patterns can be recursive, where a pattern tests a type, and if that type matches, the pattern matches one or more property values on the range expression. You can use recursive patterns to extend the preceding example. You add switch expression arms for arrays that have fewer than 3 elements. Recursive patterns are shown in the following example:
+
+:::code language="csharp" source="snippets/SwitchExpressions.cs" id="SnippetRecursivePattern":::
+
+Recursive patterns can examine properties of the range expression, but can't execute arbitrary code. You can use a *case guard*, specified in a `when` clause, to provide similar checks for other sequence types:
+
+:::code language="csharp" source="snippets/SwitchExpressions.cs" id="SnippetGuardCase":::
+
+Finally, you can add the `_` pattern and the `null` pattern to catch arguments that aren't processed by any other switch expression arm. That makes the switch expression *exhaustive*, meaning any possible value of the range expression is handled. The following example adds those expression arms:
+
+:::code language="csharp" source="snippets/SwitchExpressions.cs" id="SnippetExhaustive" interactive="csharp-interactive":::
+
+The preceding example adds a `null` pattern, and changes the `IEnumerable<T>` type pattern to a `_` pattern. The `null` pattern provides a null check as a switch expression arm. The expression for that arm throws a null argument exception. The `_` pattern matches all inputs that haven't been matched by a previous arm. It must come after the `null` check, or it would match `null` inputs.
 
 ## See also
 
 - [C# reference](../index.md)
 - [C# expressions and operators](index.md)
+- [Pattern matching](../../pattern-matching.md)

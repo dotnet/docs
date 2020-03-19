@@ -15,13 +15,13 @@ ms.assetid: 903bab5c-80c1-44d7-bdc2-0a418893b987
   
  The <xref:System.Windows.Automation.ScrollItemPattern> control pattern is used to support individual child controls of containers that implement <xref:System.Windows.Automation.Provider.IScrollProvider>. This control pattern acts as a communication channel between a child control and its container to ensure that the container can change the currently visible content (or region) within its viewport to display the child control. For examples of controls that implement this control pattern, see [Control Pattern Mapping for UI Automation Clients](control-pattern-mapping-for-ui-automation-clients.md).  
   
-<a name="Implementation_Guidelines_and_Conventions"></a>   
+<a name="Implementation_Guidelines_and_Conventions"></a>
 ## Implementation Guidelines and Conventions  
  When implementing the Scroll Item control pattern, note the following guidelines and conventions:  
   
 - Items contained within a Window or Canvas control are not required to implement the IScrollItemProvider interface. As an alternative, however, they must expose a valid location for the <xref:System.Windows.Automation.AutomationElementIdentifiers.BoundingRectangleProperty>. This will allow a UI Automation client application to use the <xref:System.Windows.Automation.ScrollPattern> control pattern methods on the container to display the child item.  
   
-<a name="Required_Members_for_IScrollItemProvider"></a>   
+<a name="Required_Members_for_IScrollItemProvider"></a>
 ## Required Members for IScrollItemProvider  
  The following method is required for implementing the IScrollProvider interface.  
   
@@ -31,7 +31,7 @@ ms.assetid: 903bab5c-80c1-44d7-bdc2-0a418893b987
   
  This control pattern has no associated properties or events.  
   
-<a name="Exceptions"></a>   
+<a name="Exceptions"></a>
 ## Exceptions  
  Providers must throw the following exceptions.  
   

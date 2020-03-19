@@ -115,7 +115,7 @@ public object GetObjectToSerialize(object obj, Type targetType)
  The <xref:System.Runtime.Serialization.IDataContractSurrogate.GetDeserializedObject%28System.Object%2CSystem.Type%29> method provides the reverse mapping for deserialization, as shown in the following sample code.  
   
 ```csharp
-public object GetDeserializedObject(object obj,   
+public object GetDeserializedObject(object obj,
 Type targetType)  
 {  
     if (obj is PersonSurrogated)  
@@ -134,7 +134,7 @@ Type targetType)
  To map the `PersonSurrogated` data contract to the existing `Person` class during schema import, the sample implements the <xref:System.Runtime.Serialization.IDataContractSurrogate.GetReferencedTypeOnImport%28System.String%2CSystem.String%2CSystem.Object%29> method, as shown in the following sample code.  
   
 ```csharp
-public Type GetReferencedTypeOnImport(string typeName,   
+public Type GetReferencedTypeOnImport(string typeName,
                string typeNamespace, object customData)  
 {  
 if (  
@@ -154,12 +154,12 @@ typeNamespace.Equals("http://schemas.datacontract.org/2004/07/DCSurrogateSample"
   
 ```csharp
 public System.CodeDom.CodeTypeDeclaration ProcessImportedType(  
-          System.CodeDom.CodeTypeDeclaration typeDeclaration,   
+          System.CodeDom.CodeTypeDeclaration typeDeclaration,
           System.CodeDom.CodeCompileUnit compileUnit)  
 {  
     return typeDeclaration;  
 }  
-public object GetCustomDataToExport(Type clrType,   
+public object GetCustomDataToExport(Type clrType,
                                Type dataContractType)  
 {  
     return null;  
@@ -256,9 +256,9 @@ public void ExportContract(WsdlExporter exporter, WsdlContractConversionContext 
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\DataContract`  

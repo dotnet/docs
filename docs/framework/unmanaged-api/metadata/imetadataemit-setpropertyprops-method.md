@@ -22,15 +22,15 @@ Sets the features stored in metadata for a property defined by a prior call to [
 ## Syntax  
   
 ```cpp  
-HRESULT SetPropertyProps (   
-    [in]  mdProperty      pr,   
-    [in]  DWORD           dwPropFlags,   
-    [in]  DWORD           dwCPlusTypeFlag,   
-    [in]  void const      *pValue,   
-    [in]  ULONG           cchValue,   
-    [in]  mdMethodDef     mdSetter,   
-    [in]  mdMethodDef     mdGetter,   
-    [in]  mdMethodDef     rmdOtherMethods[]   
+HRESULT SetPropertyProps (
+    [in]  mdProperty      pr,
+    [in]  DWORD           dwPropFlags,
+    [in]  DWORD           dwCPlusTypeFlag,
+    [in]  void const      *pValue,
+    [in]  ULONG           cchValue,
+    [in]  mdMethodDef     mdSetter,
+    [in]  mdMethodDef     mdGetter,
+    [in]  mdMethodDef     rmdOtherMethods[]
 );  
 ```  
   

@@ -25,11 +25,11 @@ Gets a section block of the code base.
   
 ```cpp  
 HRESULT GetSectionBlock (  
-    [in]  HCEESECTION    section,     
+    [in]  HCEESECTION    section,
     [in]  ULONG          len,  
     [in]  ULONG          align     = 1,  
     [out] void           **ppBytes = 0  
-);   
+);
 ```  
   
 ## Parameters  

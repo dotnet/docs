@@ -11,11 +11,11 @@ This sample demonstrates how to send and receive a set of related messages in qu
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\MSMQ\Session`  
   
  In queued communication, the client communicates to the service using a queue. More precisely, the client sends messages to a queue. The service receives messages from the queue. The service and client therefore, do not have to be running at the same time to communicate using a queue.  
@@ -49,7 +49,7 @@ public class OrderTakerService : IOrderTaker
 {  
     PurchaseOrder po;  
   
-    [OperationBehavior(TransactionScopeRequired = true,   
+    [OperationBehavior(TransactionScopeRequired = true,
                                  TransactionAutoComplete = false)]  
     public void OpenPurchaseOrder(string customerId)  
     {  
@@ -57,16 +57,16 @@ public class OrderTakerService : IOrderTaker
         po = new PurchaseOrder(customerId);  
     }  
   
-    [OperationBehavior(TransactionScopeRequired = true,   
+    [OperationBehavior(TransactionScopeRequired = true,
                                   TransactionAutoComplete = false)]  
     public void AddProductLineItem(string productId, int quantity)  
     {  
         po.AddProductLineItem(productId, quantity);  
-        Console.WriteLine("Product " + productId + " quantity " +   
+        Console.WriteLine("Product " + productId + " quantity " +
                             quantity + " added to purchase order");  
     }  
   
-    [OperationBehavior(TransactionScopeRequired = true,   
+    [OperationBehavior(TransactionScopeRequired = true,
                                   TransactionAutoComplete = true)]  
     public void EndPurchaseOrder()  
     {  
@@ -103,7 +103,7 @@ public static void Main()
         Console.ReadLine();  
   
         // Close the ServiceHost to shutdown the service.  
-        serviceHost.Close();   
+        serviceHost.Close();
     }  
 }  
 ```
@@ -156,7 +156,7 @@ using (TransactionScope scope = new TransactionScope(TransactionScopeOption.Requ
     client.EndPurchaseOrder();  
   
     //Closing the client gracefully closes the connection and cleans up resources.  
-    client.Close();                  
+    client.Close();
   
     // Complete the transaction.  
     scope.Complete();  
@@ -231,7 +231,7 @@ Purchase Order: 7c86fef0-2306-4c51-80e6-bcabcc1a6e5e
               binding="netMsmqBinding"  
               bindingConfiguration="Binding1"  
            contract="Microsoft.ServiceModel.Samples.IOrderTaker" />  
-          <!-- The mex endpoint is exposed at-->      
+          <!-- The mex endpoint is exposed at-->
           <!--http://localhost:8000/ServiceModelSamples/service/mex. -->  
           <endpoint address="mex"  
                     binding="mexHttpBinding"  

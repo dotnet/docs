@@ -23,8 +23,8 @@ Sets the relative virtual address of the specified method.
   
 ```cpp  
 HRESULT SetRVA (  
-    [in]  mdMethodDef  md,   
-    [in]  ULONG        ulRVA   
+    [in]  mdMethodDef  md,
+    [in]  ULONG        ulRVA
 );  
 ```  
   

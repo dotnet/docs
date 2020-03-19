@@ -61,7 +61,7 @@ TraceSource ts = new TraceSource("myTS");
 // 1. remember existing ("ambient") activity for clean up  
 Guid oldGuid = Trace.CorrelationManager.ActivityId;  
 // this will be our new activity  
-Guid newGuid = Guid.NewGuid();   
+Guid newGuid = Guid.NewGuid();
 
 // 2. call transfer, indicating that we are switching to the new AID  
 ts.TraceTransfer(667, "Transferring.", newGuid);  
@@ -81,7 +81,7 @@ ts.TraceEvent(TraceEventType.Information, 667, "Hello from activity " + i);
 // Perform Work  
 // some work.  
 // Return  
-ts.TraceEvent(TraceEventType.Information, 667, "Work complete on activity " + i);   
+ts.TraceEvent(TraceEventType.Information, 667, "Work complete on activity " + i);
 
 // 6. Emit the transfer returning to the original activity  
 ts.TraceTransfer(667, "Transferring Back.", oldGuid);  
@@ -90,7 +90,7 @@ ts.TraceTransfer(667, "Transferring Back.", oldGuid);
 ts.TraceEvent(TraceEventType.Stop, 667, "Boundary: Activity " + i);  
 
 // 8. Change the tls variable to the original AID  
-Trace.CorrelationManager.ActivityId = oldGuid;    
+Trace.CorrelationManager.ActivityId = oldGuid;
 
 // 9. Resume the old activity  
 ts.TraceEvent(TraceEventType.Resume, 667, "Resume: Activity " + i-1);  

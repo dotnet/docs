@@ -23,8 +23,8 @@ Contains details about the operating system for an assembly or module.
 ```cpp  
 typedef struct {  
     DWORD   dwOSPlatformId;  
-    DWORD   dwOSMajorVersion;   
-    DWORD   dwOSMinorVersion;   
+    DWORD   dwOSMajorVersion;
+    DWORD   dwOSMinorVersion;
 } OSINFO;  
 ```  
   

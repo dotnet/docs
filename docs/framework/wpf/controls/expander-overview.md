@@ -12,7 +12,7 @@ ms.assetid: 877bf425-0e54-49ec-8fd2-13a211377abb
 # Expander Overview
 An <xref:System.Windows.Controls.Expander> control provides a way to provide content in an expandable area that resembles a window and includes a header.  
 
-<a name="CreatinganExpanderinXAML"></a>   
+<a name="CreatinganExpanderinXAML"></a>
 ## Creating a Simple Expander  
  The following example shows how to create a simple <xref:System.Windows.Controls.Expander> control. This example creates an <xref:System.Windows.Controls.Expander> that looks like the previous illustration.  
   
@@ -20,11 +20,11 @@ An <xref:System.Windows.Controls.Expander> control provides a way to provide con
   
  The <xref:System.Windows.Controls.ContentControl.Content%2A> and <xref:System.Windows.Controls.HeaderedContentControl.Header%2A> of an <xref:System.Windows.Controls.Expander> can also contain complex content, such as <xref:System.Windows.Controls.RadioButton> and <xref:System.Windows.Controls.Image> objects.  
   
-<a name="SettingtheDirectionoftheExpandingWindow"></a>   
+<a name="SettingtheDirectionoftheExpandingWindow"></a>
 ## Setting the Direction of the Expanding Content Area  
  You can set the content area of an <xref:System.Windows.Controls.Expander> control to expand in one of four directions (<xref:System.Windows.Controls.ExpandDirection.Down>, <xref:System.Windows.Controls.ExpandDirection.Up>, <xref:System.Windows.Controls.ExpandDirection.Left>, or <xref:System.Windows.Controls.ExpandDirection.Right>) by using the <xref:System.Windows.Controls.ExpandDirection> property. When the content area is collapsed, only the <xref:System.Windows.Controls.Expander><xref:System.Windows.Controls.HeaderedContentControl.Header%2A> and its toggle button appear. A <xref:System.Windows.Controls.Button> control that displays a directional arrow is used as a toggle button to expand or collapse the content area. When expanded, the <xref:System.Windows.Controls.Expander> tries to display all of its content in a window-like area.  
   
-<a name="SettingSizeDimensionsonanExpanderinaPanel"></a>   
+<a name="SettingSizeDimensionsonanExpanderinaPanel"></a>
 ## Controlling the Size of an Expander in a Panel  
  If an <xref:System.Windows.Controls.Expander> control is inside a layout control that inherits from <xref:System.Windows.Controls.Panel>, such as <xref:System.Windows.Controls.StackPanel>, do not specify a <xref:System.Windows.FrameworkElement.Height%2A> on the <xref:System.Windows.Controls.Expander> when the <xref:System.Windows.Controls.Expander.ExpandDirection%2A> property is set to <xref:System.Windows.Controls.ExpandDirection.Down> or <xref:System.Windows.Controls.ExpandDirection.Up>. Similarly, do not specify a <xref:System.Windows.FrameworkElement.Width%2A> on the <xref:System.Windows.Controls.Expander> when the <xref:System.Windows.Controls.Expander.ExpandDirection%2A> property is set to <xref:System.Windows.Controls.ExpandDirection.Left> or <xref:System.Windows.Controls.ExpandDirection.Right>.  
   
@@ -32,7 +32,7 @@ An <xref:System.Windows.Controls.Expander> control provides a way to provide con
   
  When an <xref:System.Windows.Controls.Expander> control is the last element in a <xref:System.Windows.Controls.DockPanel>, [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] automatically sets the <xref:System.Windows.Controls.Expander> dimensions to equal the remaining area of the <xref:System.Windows.Controls.DockPanel>. To prevent this default behavior, set the <xref:System.Windows.Controls.DockPanel.LastChildFill%2A> property on the <xref:System.Windows.Controls.DockPanel> object to `false`, or make sure that the <xref:System.Windows.Controls.Expander> is not the last element in a <xref:System.Windows.Controls.DockPanel>.  
   
-<a name="CreatingScrollableContent"></a>   
+<a name="CreatingScrollableContent"></a>
 ## Creating Scrollable Content  
  If the content is too large for the size of the content area, you can wrap the content of an <xref:System.Windows.Controls.Expander> in a <xref:System.Windows.Controls.ScrollViewer> in order to provide scrollable content. The <xref:System.Windows.Controls.Expander> control does not automatically provide scrolling capability. The following illustration shows an <xref:System.Windows.Controls.Expander> control that contains a <xref:System.Windows.Controls.ScrollViewer> control.  
   
@@ -48,7 +48,7 @@ An <xref:System.Windows.Controls.Expander> control provides a way to provide con
  [!code-vb[ExpanderRichContent#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ExpanderRichContent/VisualBasic/Window1.xaml.vb#1)]
  [!code-xaml[ExpanderRichContent#1](~/samples/snippets/csharp/VS_Snippets_Wpf/ExpanderRichContent/CSharp/Window1.xaml#1)]  
   
-<a name="UsingtheAlignmentProperties"></a>   
+<a name="UsingtheAlignmentProperties"></a>
 ## Using the Alignment Properties  
  You can align content by setting the <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A> and <xref:System.Windows.Controls.Control.VerticalContentAlignment%2A> properties on the <xref:System.Windows.Controls.Expander> control. When you set these properties, the alignment applies to the header and also to the expanded content.  
   

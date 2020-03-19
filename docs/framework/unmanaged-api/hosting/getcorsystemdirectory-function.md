@@ -24,11 +24,11 @@ Returns the installation directory of the common language runtime (CLR) that is 
 ## Syntax  
   
 ```cpp  
-HRESULT GetCORSystemDirectory (   
-    [out] LPWSTR  pbuffer,     
-    [in]  DWORD   cchBuffer,   
+HRESULT GetCORSystemDirectory (
+    [out] LPWSTR  pbuffer,
+    [in]  DWORD   cchBuffer,
     [out] DWORD*  dwlength  
-);   
+);
 ```  
   
 ## Parameters  

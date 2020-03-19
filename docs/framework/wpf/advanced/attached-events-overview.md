@@ -17,11 +17,11 @@ ms.assetid: 2c40eae3-80e4-4a45-ae09-df6c9ab4d91e
 
 Extensible Application Markup Language (XAML) defines a language component and type of event called an *attached event*. The concept of an attached event enables you to add a handler for a particular event to an arbitrary element rather than to an element that actually defines or inherits the event. In this case, neither the object potentially raising the event nor the destination handling instance defines or otherwise "owns" the event.  
 
-<a name="prerequisites"></a>   
+<a name="prerequisites"></a>
 ## Prerequisites  
  This topic assumes that you have read [Routed Events Overview](routed-events-overview.md) and [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md).  
   
-<a name="Syntax"></a>   
+<a name="Syntax"></a>
 ## Attached Event Syntax  
  Attached events have a XAML syntax and a coding pattern that must be used by the backing code in order to support the attached event usage.  
   
@@ -33,12 +33,12 @@ Extensible Application Markup Language (XAML) defines a language component and t
   
  Note the `aqua:` prefix; the prefix is necessary in this case because the attached event is a custom event that comes from a custom mapped xmlns.  
   
-<a name="WPFImplements"></a>   
+<a name="WPFImplements"></a>
 ## How WPF Implements Attached Events
 
 In WPF, attached events are backed by a <xref:System.Windows.RoutedEvent> field and are routed through the tree after they are raised. Typically, the source of the attached event (the object that raises the event) is a system or service source, and the object that runs the code that raises the event is therefore not a direct part of the element tree.  
   
-<a name="Scenarios"></a>   
+<a name="Scenarios"></a>
 ## Scenarios for Attached Events  
  In WPF, attached events are present in certain feature areas where there is service-level abstraction, such as for the events enabled by the static <xref:System.Windows.Input.Mouse> class or the <xref:System.Windows.Controls.Validation> class. Classes that interact with or use the service can either use the event in the attached event syntax, or they can choose to surface the attached event as a routed event that is part of how the class integrates the capabilities of the service.  
   
@@ -46,7 +46,7 @@ In WPF, attached events are backed by a <xref:System.Windows.RoutedEvent> field 
   
  For instance, the underlying attached event <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=nameWithType> can more easily be handled on any given <xref:System.Windows.UIElement> by using <xref:System.Windows.UIElement.MouseDown> on that <xref:System.Windows.UIElement> rather than dealing with attached event syntax either in XAML or code. The attached event serves a purpose in the architecture because it allows for future expansion of input devices. The hypothetical device would only need to raise <xref:System.Windows.Input.Mouse.MouseDown?displayProperty=nameWithType> in order to simulate mouse input, and would not need to derive from <xref:System.Windows.Input.Mouse> to do so. However, this scenario involves code handling of the events, and XAML handling of the attached event is not relevant to this scenario.  
   
-<a name="Handling"></a>   
+<a name="Handling"></a>
 ## Handling an Attached Event in WPF  
  The process for handling an attached event, and the handler code that you will write, is basically the same as for a routed event.  
   
@@ -54,7 +54,7 @@ In WPF, attached events are backed by a <xref:System.Windows.RoutedEvent> field 
   
  However, as noted earlier, the existing WPF attached events are not particularly intended for handling in WPF. More often, the purpose of the event is to enable a composited element to report a state to a parent element in compositing, in which case the event is usually raised in code and also relies on class handling in the relevant parent class. For instance, items within a <xref:System.Windows.Controls.Primitives.Selector> are expected to raise the attached <xref:System.Windows.Controls.Primitives.Selector.Selected> event, which is then class handled by the <xref:System.Windows.Controls.Primitives.Selector> class and then potentially converted by the <xref:System.Windows.Controls.Primitives.Selector> class into a different routed event, <xref:System.Windows.Controls.Primitives.Selector.SelectionChanged>. For more information on routed events and class handling, see [Marking Routed Events as Handled, and Class Handling](marking-routed-events-as-handled-and-class-handling.md).  
   
-<a name="Custom"></a>   
+<a name="Custom"></a>
 ## Defining Your Own Attached Events as Routed Events  
  If you are deriving from common WPF base classes, you can implement your own attached events by including certain pattern methods in your class and by using utility methods that are already present on the base classes.  
   
@@ -79,7 +79,7 @@ In WPF, attached events are backed by a <xref:System.Windows.RoutedEvent> field 
   
  Note that the method used to establish the attached event identifier field, <xref:System.Windows.EventManager.RegisterRoutedEvent%2A>, is actually the same method that is used to register a non-attached routed event. Attached events and routed events all are registered to a centralized internal store. This event store implementation enables the "events as an interface" conceptual consideration that is discussed in [Routed Events Overview](routed-events-overview.md).  
   
-<a name="Raising"></a>   
+<a name="Raising"></a>
 ## Raising a WPF Attached Event  
  You do not typically need to raise existing WPF-defined attached events from your code. These events follow the general "service" conceptual model, and service classes such as <xref:System.Windows.Input.InputManager> are responsible for raising the events.  
   

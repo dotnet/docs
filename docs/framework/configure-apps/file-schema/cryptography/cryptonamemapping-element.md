@@ -20,7 +20,7 @@ Contains mappings of classes to friendly names.
 ## Syntax  
   
 ```xml  
-      <cryptoNameMapping>   
+      <cryptoNameMapping>
 </cryptoNameMapping>  
 ```  
   

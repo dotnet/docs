@@ -1,6 +1,6 @@
 ---
-title: Character Encoding in .NET
-description: Learn about character encoding and decoding in .NET.
+title: How to use character encoding classes in .NET
+description: Learn how to use character encoding classes in .NET.
 ms.date: "12/22/2017"
 ms.technology: dotnet-standard
 dev_langs:
@@ -12,69 +12,46 @@ helpviewer_keywords:
   - "encoding, fallback strategy"
 ms.assetid: bf6d9823-4c2d-48af-b280-919c5af66ae9
 ---
-# Character Encoding in .NET
+# How to use character encoding classes in .NET
 
-Characters are abstract entities that can be represented in many different ways. A character encoding is a system that pairs each character in a supported character set with some value that represents that character. For example, Morse code is a character encoding that pairs each character in the Roman alphabet with a pattern of dots and dashes that are suitable for transmission over telegraph lines. A character encoding for computers pairs each character in a supported character set with a numeric value that represents that character. A character encoding has two distinct components:
+This article explains how to use the classes that .NET provides for encoding and decoding text by using various encoding schemes. The instructions assume you have read [Introduction to character encoding in .NET](character-encoding-introduction.md).
 
-- An encoder, which translates a sequence of characters into a sequence of numeric values (bytes).
+## Encoders and decoders
 
-- A decoder, which translates a sequence of bytes into a sequence of characters.
+.NET provides encoding classes that encode and decode text by using various encoding systems. For example, the <xref:System.Text.UTF8Encoding> class describes the rules for encoding to, and decoding from, UTF-8. .NET uses UTF-16 encoding (represented by the <xref:System.Text.UnicodeEncoding> class) for `string` instances. Encoders and decoders are available for other encoding schemes.
 
-Character encoding describes the rules by which an encoder and a decoder operate. For example, the <xref:System.Text.UTF8Encoding> class describes the rules for encoding to, and decoding from, 8-bit Unicode Transformation Format (UTF-8), which uses one to four bytes to represent a single Unicode character. Encoding and decoding can also include validation. For example, the <xref:System.Text.UnicodeEncoding> class checks all surrogates  to make sure they constitute valid surrogate pairs. (A surrogate pair consists of a character with a code point that ranges from U+D800 to U+DBFF followed by a character with a code point that ranges from U+DC00 to U+DFFF.)  A fallback strategy determines how an encoder handles invalid characters or how a decoder handles invalid bytes.
+Encoding and decoding can also include validation. For example, the <xref:System.Text.UnicodeEncoding> class checks all `char` instances in the surrogate range to make sure they're in valid surrogate pairs. A fallback strategy determines how an encoder handles invalid characters or how a decoder handles invalid bytes.
 
 > [!WARNING]
 > .NET encoding classes provide a way to store and convert character data. They should not be used to store binary data in string form. Depending on the encoding used, converting binary data to string format with the encoding classes can introduce unexpected behavior and produce inaccurate or corrupted data. To convert binary data to a string form, use the <xref:System.Convert.ToBase64String%2A?displayProperty=nameWithType> method.
 
-.NET uses the UTF-16 encoding (represented by the <xref:System.Text.UnicodeEncoding> class) to represent characters and strings. Applications that target the common language runtime use encoders to map Unicode character representations supported by the common language runtime to other encoding schemes. They use decoders to map characters from non-Unicode encodings to Unicode.
-
-This topic consists of the following sections:
-
-- [Encodings in .NET](../../../docs/standard/base-types/character-encoding.md#Encodings)
-
-- [Selecting an Encoding Class](../../../docs/standard/base-types/character-encoding.md#Selecting)
-
-- [Using an Encoding Object](../../../docs/standard/base-types/character-encoding.md#Using)
-
-- [Choosing a Fallback Strategy](../../../docs/standard/base-types/character-encoding.md#FallbackStrategy)
-
-- [Implementing a Custom Fallback Strategy](../../../docs/standard/base-types/character-encoding.md#Custom)
-
-<a name="Encodings"></a>
-
-## Encodings in .NET
-
 All character encoding classes in .NET inherit from the <xref:System.Text.Encoding?displayProperty=nameWithType> class, which is an abstract class that defines the functionality common to all character encodings. To access the individual encoding objects implemented in .NET, do the following:
 
-- Use the static properties of the <xref:System.Text.Encoding> class, which return objects that represent the standard character encodings available in .NET (ASCII, UTF-7, UTF-8, UTF-16, and UTF-32). For example, the <xref:System.Text.Encoding.Unicode%2A?displayProperty=nameWithType> property returns a <xref:System.Text.UnicodeEncoding> object. Each object uses replacement fallback to handle strings that it cannot encode and bytes that it cannot decode. (For more information, see the [Replacement Fallback](../../../docs/standard/base-types/character-encoding.md#Replacement) section.)
+- Use the static properties of the <xref:System.Text.Encoding> class, which return objects that represent the standard character encodings available in .NET (ASCII, UTF-7, UTF-8, UTF-16, and UTF-32). For example, the <xref:System.Text.Encoding.Unicode%2A?displayProperty=nameWithType> property returns a <xref:System.Text.UnicodeEncoding> object. Each object uses replacement fallback to handle strings that it cannot encode and bytes that it cannot decode. For more information, see [Replacement fallback](../../../docs/standard/base-types/character-encoding.md#Replacement).
 
-- Call the encoding's class constructor. Objects for the ASCII, UTF-7, UTF-8, UTF-16, and UTF-32 encodings can be instantiated in this way. By default, each object uses replacement fallback to handle strings that it cannot encode and bytes that it cannot decode, but you can specify that an exception should be thrown instead. (For more information, see the [Replacement Fallback](../../../docs/standard/base-types/character-encoding.md#Replacement) and [Exception Fallback](../../../docs/standard/base-types/character-encoding.md#Exception) sections.)
+- Call the encoding's class constructor. Objects for the ASCII, UTF-7, UTF-8, UTF-16, and UTF-32 encodings can be instantiated in this way. By default, each object uses replacement fallback to handle strings that it cannot encode and bytes that it cannot decode, but you can specify that an exception should be thrown instead. For more information, see [Replacement fallback](../../../docs/standard/base-types/character-encoding.md#Replacement) and [Exception fallback](../../../docs/standard/base-types/character-encoding.md#Exception).
 
-- Call the <xref:System.Text.Encoding.%23ctor%28System.Int32%29?displayProperty=nameWithType> constructor and pass it an integer that represents the encoding. Standard encoding objects use replacement fallback, and code page and double-byte character set (DBCS) encoding objects use best-fit fallback to handle strings that they cannot encode and bytes that they cannot decode. (For more information, see the [Best-Fit Fallback](../../../docs/standard/base-types/character-encoding.md#BestFit) section.)
+- Call the <xref:System.Text.Encoding.%23ctor%28System.Int32%29?displayProperty=nameWithType> constructor and pass it an integer that represents the encoding. Standard encoding objects use replacement fallback, and code page and double-byte character set (DBCS) encoding objects use best-fit fallback to handle strings that they cannot encode and bytes that they cannot decode. For more information, see [Best-fit fallback](../../../docs/standard/base-types/character-encoding.md#BestFit).
 
 - Call the <xref:System.Text.Encoding.GetEncoding%2A?displayProperty=nameWithType> method, which returns any standard, code page, or DBCS encoding available in .NET. Overloads let you specify a fallback object for both the encoder and the decoder.
 
-> [!NOTE]
-> The Unicode Standard assigns a code point (a number) and a name to each character in every supported script. For example, the character "A" is represented by the code point U+0041 and the name "LATIN CAPITAL LETTER A". The Unicode Transformation Format (UTF) encodings define ways to encode that code point into a sequence of one or more bytes. A Unicode encoding scheme simplifies world-ready application development because it allows characters from any character set to be represented in a single encoding. Application developers no longer have to keep track of the encoding scheme that was used to produce characters for a specific language or writing system, and data can be shared among systems internationally without being corrupted.
->
-> .NET supports three encodings defined by the Unicode standard: UTF-8, UTF-16, and UTF-32. For more information, see The Unicode Standard at the [Unicode home page](https://www.unicode.org/).
+You can retrieve information about all the encodings available in .NET by calling the <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=nameWithType> method. .NET supports the character encoding schemes listed in the following table.
 
-You can retrieve information about all the encodings available in .NET by calling the <xref:System.Text.Encoding.GetEncodings%2A?displayProperty=nameWithType> method. .NET supports the character encoding systems listed in the following table.
-
-|Encoding|Class|Description|Advantages/disadvantages|
-|--------------|-----------|-----------------|-------------------------------|
-|ASCII|<xref:System.Text.ASCIIEncoding>|Encodes a limited range of characters by using the lower seven bits of a byte.|Because this encoding only supports character values from U+0000 through U+007F, in most cases it is inadequate for internationalized applications.|
-|UTF-7|<xref:System.Text.UTF7Encoding>|Represents characters as sequences of 7-bit ASCII characters. Non-ASCII Unicode characters are represented by an escape sequence of ASCII characters.|UTF-7 supports protocols such as email and newsgroup protocols. However, UTF-7 is not particularly secure or robust. In some cases, changing one bit can radically alter the interpretation of an entire UTF-7 string. In other cases, different UTF-7 strings can encode the same text. For sequences that include non-ASCII characters, UTF-7 requires more space than UTF-8, and encoding/decoding is slower. Consequently, you should use UTF-8 instead of UTF-7 if possible.|
-|UTF-8|<xref:System.Text.UTF8Encoding>|Represents each Unicode code point as a sequence of one to four bytes.|UTF-8 supports 8-bit data sizes and works well with many existing operating systems. For the ASCII range of characters, UTF-8 is identical to ASCII encoding and allows a broader set of characters. However, for Chinese-Japanese-Korean (CJK) scripts, UTF-8 can require three bytes for each character, and can potentially cause larger data sizes than UTF-16. Note that sometimes the amount of ASCII data, such as HTML tags, justifies the increased size for the CJK range.|
-|UTF-16|<xref:System.Text.UnicodeEncoding>|Represents each Unicode code point as a sequence of one or two 16-bit integers. Most common Unicode characters require only one UTF-16 code point, although Unicode supplementary characters (U+10000 and greater) require two UTF-16 surrogate code points. Both little-endian and big-endian byte orders are supported.|UTF-16 encoding is used by the common language runtime to represent <xref:System.Char> and <xref:System.String> values, and it is used by the Windows operating system to represent `WCHAR` values.|
-|UTF-32|<xref:System.Text.UTF32Encoding>|Represents each Unicode code point as a 32-bit integer. Both little-endian and big-endian byte orders are supported.|UTF-32 encoding is used when applications want to avoid the surrogate code point behavior of UTF-16 encoding on operating systems for which encoded space is too important. Single glyphs rendered on a display can still be encoded with more than one UTF-32 character.|
-|ANSI/ISO encodings||Provides support for a variety of code pages. On Windows operating systems, code pages are used to support a specific language or group of languages. For a table that lists the code pages supported by .NET, see the <xref:System.Text.Encoding> class. You can retrieve an encoding object for a particular code page by calling the <xref:System.Text.Encoding.GetEncoding%28System.Int32%29?displayProperty=nameWithType> method.|A code page contains 256 code points and is zero-based. In most code pages, code points 0 through 127 represent the ASCII character set, and code points 128 through 255 differ significantly between code pages. For example, code page 1252 provides the characters for Latin writing systems, including English, German, and French. The last 128 code points in code page 1252 contain the accent characters. Code page 1253 provides character codes that are required in the Greek writing system. The last 128 code points in code page 1253 contain the Greek characters. As a result, an application that relies on ANSI code pages cannot store Greek and German in the same text stream unless it includes an identifier that indicates the referenced code page.|
-|Double-byte character set (DBCS) encodings||Supports languages, such as Chinese, Japanese, and Korean, that contain more than 256 characters. In a DBCS, a pair of code points (a double byte) represents each character. The <xref:System.Text.Encoding.IsSingleByte%2A?displayProperty=nameWithType> property returns `false` for DBCS encodings. You can retrieve an encoding object for a particular DBCS by calling the <xref:System.Text.Encoding.GetEncoding%28System.Int32%29?displayProperty=nameWithType> method.|In a DBCS, a pair of code points (a double byte) represents each character. When an application handles DBCS data, the first byte of a DBCS character (the lead byte) is processed in combination with the trail byte that immediately follows it. Because a single pair of double-byte code points can represent different characters depending on the code page, this scheme still does not allow for the combination of two languages, such as Japanese and Chinese, in the same data stream.|
+|Encoding class|Description|
+|--------------|-----------|
+|[ASCII](xref:System.Text.ASCIIEncoding)|Encodes a limited range of characters by using the lower seven bits of a byte. Because this encoding only supports character values from U+0000 through U+007F, in most cases it is inadequate for internationalized applications.|
+|[UTF-7](xref:System.Text.UTF7Encoding)|Represents characters as sequences of 7-bit ASCII characters. Non-ASCII Unicode characters are represented by an escape sequence of ASCII characters. UTF-7 supports protocols such as email and newsgroup. However, UTF-7 is not particularly secure or robust. In some cases, changing one bit can radically alter the interpretation of an entire UTF-7 string. In other cases, different UTF-7 strings can encode the same text. For sequences that include non-ASCII characters, UTF-7 requires more space than UTF-8, and encoding/decoding is slower. Consequently, you should use UTF-8 instead of UTF-7 if possible.|
+|[UTF-8](xref:System.Text.UTF8Encoding)|Represents each Unicode code point as a sequence of one to four bytes. UTF-8 supports 8-bit data sizes and works well with many existing operating systems. For the ASCII range of characters, UTF-8 is identical to ASCII encoding and allows a broader set of characters. However, for Chinese-Japanese-Korean (CJK) scripts, UTF-8 can require three bytes for each character, and can cause larger data sizes than UTF-16. Sometimes the amount of ASCII data, such as HTML tags, justifies the increased size for the CJK range.|
+|[UTF-16](xref:System.Text.UnicodeEncoding)|Represents each Unicode code point as a sequence of one or two 16-bit integers. Most common Unicode characters require only one UTF-16 code point, although Unicode supplementary characters (U+10000 and greater) require two UTF-16 surrogate code points. Both little-endian and big-endian byte orders are supported. UTF-16 encoding is used by the common language runtime to represent <xref:System.Char> and <xref:System.String> values, and it is used by the Windows operating system to represent `WCHAR` values.|
+|[UTF-32](xref:System.Text.UTF32Encoding)|Represents each Unicode code point as a 32-bit integer. Both little-endian and big-endian byte orders are supported. UTF-32 encoding is used when applications want to avoid the surrogate code point behavior of UTF-16 encoding on operating systems for which encoded space is too important. Single glyphs rendered on a display can still be encoded with more than one UTF-32 character.|
+|ANSI/ISO encoding|Provides support for a variety of code pages. On Windows operating systems, code pages are used to support a specific language or group of languages. For a table that lists the code pages supported by .NET, see the <xref:System.Text.Encoding> class. You can retrieve an encoding object for a particular code page by calling the <xref:System.Text.Encoding.GetEncoding%28System.Int32%29?displayProperty=nameWithType> method. A code page contains 256 code points and is zero-based. In most code pages, code points 0 through 127 represent the ASCII character set, and code points 128 through 255 differ significantly between code pages. For example, code page 1252 provides the characters for Latin writing systems, including English, German, and French. The last 128 code points in code page 1252 contain the accent characters. Code page 1253 provides character codes that are required in the Greek writing system. The last 128 code points in code page 1253 contain the Greek characters. As a result, an application that relies on ANSI code pages cannot store Greek and German in the same text stream unless it includes an identifier that indicates the referenced code page.|
+|Double-byte character set (DBCS) encodings|Supports languages, such as Chinese, Japanese, and Korean, that contain more than 256 characters. In a DBCS, a pair of code points (a double byte) represents each character. The <xref:System.Text.Encoding.IsSingleByte%2A?displayProperty=nameWithType> property returns `false` for DBCS encodings. You can retrieve an encoding object for a particular DBCS by calling the <xref:System.Text.Encoding.GetEncoding%28System.Int32%29?displayProperty=nameWithType> method. When an application handles DBCS data, the first byte of a DBCS character (the lead byte) is processed in combination with the trail byte that immediately follows it. Because a single pair of double-byte code points can represent different characters depending on the code page, this scheme still does not allow for the combination of two languages, such as Japanese and Chinese, in the same data stream.|
 
 These encodings enable you to work with Unicode characters as well as with encodings that are most commonly used in legacy applications. In addition, you can create a custom encoding by defining a class that derives from <xref:System.Text.Encoding> and overriding its members.
 
-### Platform Notes: .NET Core
+## .NET Core encoding support
 
-By default, .NET Core does not make available any code page encodings other than code page 28591 and the Unicode encodings, such as UTF-8 and UTF-16. However, you can add the code page encodings found in standard Windows apps that target .NET to your app. For complete information, see the <xref:System.Text.CodePagesEncodingProvider> topic.
+By default, .NET Core does not make available any code page encodings other than code page 28591 and the Unicode encodings, such as UTF-8 and UTF-16. However, you can add the code page encodings found in standard Windows apps that target .NET to your app. For more information, see the <xref:System.Text.CodePagesEncodingProvider> topic.
 
 <a name="Selecting"></a>
 
@@ -279,6 +256,7 @@ The following code then instantiates the `CustomMapper` object and passes an ins
 
 ## See also
 
+- [Introduction to character encoding in .NET](character-encoding-introduction.md)
 - <xref:System.Text.Encoder>
 - <xref:System.Text.Decoder>
 - <xref:System.Text.DecoderFallback>

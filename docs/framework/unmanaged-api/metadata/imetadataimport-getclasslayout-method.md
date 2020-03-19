@@ -22,8 +22,8 @@ Gets layout information for the class referenced by the specified TypeDef token.
 ## Syntax  
   
 ```cpp  
-HRESULT GetClassLayout  (   
-   [in]  mdTypeDef          td,   
+HRESULT GetClassLayout  (
+   [in]  mdTypeDef          td,
    [out] DWORD              *pdwPackSize,  
    [out] COR_FIELD_OFFSET   rFieldOffset[],  
    [in]  ULONG              cMax,  

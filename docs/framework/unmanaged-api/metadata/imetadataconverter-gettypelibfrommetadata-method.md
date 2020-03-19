@@ -23,8 +23,8 @@ Gets a pointer to an `ITypeLib` instance that represents the type library that h
   
 ```cpp  
 HRESULT GetTypeLibFromMetaData (  
-    [in]  BSTR     strModule,   
-    [in]  BSTR     strTlbName,   
+    [in]  BSTR     strModule,
+    [in]  BSTR     strTlbName,
     [out] ITypeLib **ppITL  
 );  
 ```  

@@ -23,9 +23,9 @@ Gets a pointer to the manifest resource with the specified name.
   
 ```cpp
 HRESULT FindManifestResourceByName (  
-    [in]  LPCWSTR                szName,   
+    [in]  LPCWSTR                szName,
     [out] mdManifestResource     *ptkManifestResource  
-);   
+);
 ```  
   
 ## Parameters  

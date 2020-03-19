@@ -59,7 +59,7 @@ Specifies the full name of the assembly that should be dynamically loaded when a
 <configuration>  
    <runtime>  
       <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  
-         <qualifyAssembly partialName="math"   
+         <qualifyAssembly partialName="math"
                          fullName=  
 "math,version=1.0.0.0,publicKeyToken=a1690a5ea44bab32,culture=neutral"/>  
       </assemblyBinding>  

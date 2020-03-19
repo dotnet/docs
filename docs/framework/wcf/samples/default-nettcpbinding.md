@@ -13,11 +13,11 @@ This sample demonstrates the use of the <xref:System.ServiceModel.NetTcpBinding>
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\TCP\Default`  
   
  The binding is specified in the configuration files for the client and service. The binding type is specified in the `binding` attribute of the [\<endpoint>](../../configure-apps/file-schema/wcf/endpoint-element.md) element as shown in the following sample configuration.  
@@ -37,7 +37,7 @@ This sample demonstrates the use of the <xref:System.ServiceModel.NetTcpBinding>
     ...  
     <endpoint address=""  
               binding="netTcpBinding"  
-              bindingConfiguration="Binding1"   
+              bindingConfiguration="Binding1"
               contract="Microsoft.ServiceModel.Samples.ICalculator" />  
     ...  
   </service>  
@@ -45,26 +45,26 @@ This sample demonstrates the use of the <xref:System.ServiceModel.NetTcpBinding>
   
 <bindings>  
   <netTcpBinding>  
-    <binding name="Binding1"   
+    <binding name="Binding1"
              closeTimeout="00:01:00"  
-             openTimeout="00:01:00"   
-             receiveTimeout="00:10:00"   
+             openTimeout="00:01:00"
+             receiveTimeout="00:10:00"
              sendTimeout="00:01:00"  
-             transactionFlow="false"   
-             transferMode="Buffered"   
+             transactionFlow="false"
+             transferMode="Buffered"
              transactionProtocol="OleTransactions"  
-             hostNameComparisonMode="StrongWildcard"   
+             hostNameComparisonMode="StrongWildcard"
              listenBacklog="10"  
-             maxBufferPoolSize="524288"   
-             maxBufferSize="65536"   
+             maxBufferPoolSize="524288"
+             maxBufferSize="65536"
              maxConnections="10"  
              maxReceivedMessageSize="65536">  
-      <readerQuotas maxDepth="32"   
-                    maxStringContentLength="8192"   
+      <readerQuotas maxDepth="32"
+                    maxStringContentLength="8192"
                     maxArrayLength="16384"  
-                    maxBytesPerRead="4096"   
+                    maxBytesPerRead="4096"
                     maxNameTableCharCount="16384" />  
-      <reliableSession ordered="true"   
+      <reliableSession ordered="true"
                        inactivityTimeout="00:10:00"  
                        enabled="false" />  
       <security mode="Transport">  
@@ -106,8 +106,8 @@ Press ENTER to terminate client.
     ```xml  
     <client>  
       <endpoint name=""  
-          address="net.tcp://servername:9000/servicemodelsamples/service"   
-          binding="netTcpBinding"   
+          address="net.tcp://servername:9000/servicemodelsamples/service"
+          binding="netTcpBinding"
           contract="Microsoft.ServiceModel.Samples.ICalculator">  
             <identity>  
               <userPrincipalName value = "user_name@service_domain"/>  

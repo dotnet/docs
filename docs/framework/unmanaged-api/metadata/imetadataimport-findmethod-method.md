@@ -24,9 +24,9 @@ Gets a pointer to the MethodDef token for the method that is enclosed by the spe
 ```cpp  
 HRESULT FindMethod (  
    [in]  mdTypeDef          td,  
-   [in]  LPCWSTR            szName,   
-   [in]  PCCOR_SIGNATURE    pvSigBlob,   
-   [in]  ULONG              cbSigBlob,   
+   [in]  LPCWSTR            szName,
+   [in]  PCCOR_SIGNATURE    pvSigBlob,
+   [in]  ULONG              cbSigBlob,
    [out] mdMethodDef        *pmb  
 );  
 ```  

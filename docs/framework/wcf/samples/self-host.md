@@ -19,10 +19,10 @@ This sample demonstrates how to implement a self-hosted service in a console app
 public static void Main()  
 {  
     // Create a ServiceHost for the CalculatorService type.  
-    using (ServiceHost serviceHost =   
+    using (ServiceHost serviceHost =
            new ServiceHost(typeof(CalculatorService)))  
     {  
-        // Open the ServiceHost to create listeners   
+        // Open the ServiceHost to create listeners
         // and start listening for messages.  
         serviceHost.Open();  
   
@@ -38,7 +38,7 @@ public static void Main()
  When a service is hosted in Internet Information Services (IIS) or Windows Process Activation Service (WAS), the base address of the service is provided by the hosting environment. In the self-hosted case, you must specify the base address yourself. This is done using the `add` element, child of [\<baseAddresses>](../../../../docs/framework/configure-apps/file-schema/wcf/baseaddresses.md), child of [\<host>](../../../../docs/framework/configure-apps/file-schema/wcf/host.md), child of [\<service>](../../../../docs/framework/configure-apps/file-schema/wcf/service.md) as demonstrated in the following sample configuration.  
   
 ```xml  
-<service   
+<service
     name="Microsoft.ServiceModel.Samples.CalculatorService"  
     behaviorConfiguration="CalculatorServiceBehavior">  
   <host>  
@@ -62,11 +62,11 @@ public static void Main()
   
 > [!IMPORTANT]
 > The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\Hosting\SelfHost`  
   
 ## See also

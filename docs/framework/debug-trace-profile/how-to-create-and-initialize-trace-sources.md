@@ -28,13 +28,13 @@ The <xref:System.Diagnostics.TraceSource> class is used by applications to produ
     <configuration>  
       <system.diagnostics>  
         <sources>  
-          <source name="TraceSourceApp"   
-            switchName="sourceSwitch"   
+          <source name="TraceSourceApp"
+            switchName="sourceSwitch"
             switchType="System.Diagnostics.SourceSwitch">  
             <listeners>  
-              <add name="console"   
+              <add name="console"
                 type="System.Diagnostics.ConsoleTraceListener">  
-                <filter type="System.Diagnostics.EventTypeFilter"   
+                <filter type="System.Diagnostics.EventTypeFilter"
                   initializeData="Error"/>  
               </add>  
               <add name="myListener"/>  
@@ -46,10 +46,10 @@ The <xref:System.Diagnostics.TraceSource> class is used by applications to produ
           <add name="sourceSwitch" value="Error"/>  
         </switches>  
         <sharedListeners>  
-          <add name="myListener"   
-            type="System.Diagnostics.TextWriterTraceListener"   
+          <add name="myListener"
+            type="System.Diagnostics.TextWriterTraceListener"
             initializeData="myListener.log">  
-            <filter type="System.Diagnostics.EventTypeFilter"   
+            <filter type="System.Diagnostics.EventTypeFilter"
               initializeData="Error"/>  
           </add>  
         </sharedListeners>  

@@ -23,11 +23,11 @@ Creates a definition for a permission set with the specified metadata signature,
   
 ```cpp  
 HRESULT DefinePermissionSet (  
-    [in]  mdToken        tk,   
-    [in]  DWORD          dwAction,   
-    [in]  void const     *pvPermission,   
-    [in]  ULONG          cbPermission,   
-    [out] mdPermission   *ppm   
+    [in]  mdToken        tk,
+    [in]  DWORD          dwAction,
+    [in]  void const     *pvPermission,
+    [in]  ULONG          cbPermission,
+    [out] mdPermission   *ppm
 );  
 ```  
   

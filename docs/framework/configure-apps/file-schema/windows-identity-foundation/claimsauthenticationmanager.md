@@ -52,7 +52,7 @@ Registers a claims authentication manager for the incoming claims.
 ```xml  
 <system.identityModel>  
     <identityConfiguration name="MyIdentity">  
-      <claimsAuthenticationManager type="MyNamespace.CustomClaimsAuthenticationManager, MyAssembly"/>          
+      <claimsAuthenticationManager type="MyNamespace.CustomClaimsAuthenticationManager, MyAssembly"/>
     </identityConfiguration>  
 </system.identityModel>  
 ```

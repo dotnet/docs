@@ -65,14 +65,14 @@ The code produces output similar to the following:
  id: 0x320
   
  type: 2
- 
- length: 16 bytes 
+
+ length: 16 bytes
   
  Property Item 1
   
  id: 0x10f
   
- type: 2 
+ type: 2
   
  length: 17 bytes
   

@@ -18,11 +18,11 @@ public class CustomEndpoint : ServiceEndpoint
     public CustomEndpoint()
         : this(string.Empty)
     { }  
-    
+
     public CustomEndpoint(string address)
         : this(address, ContractDescription.GetContract(typeof(ICalculator)))
     { }  
-    
+
     // Create the custom endpoint with a fixed binding
     public CustomEndpoint(string address, ContractDescription contract)
         : base(contract)
@@ -30,7 +30,7 @@ public class CustomEndpoint : ServiceEndpoint
         this.Binding = new BasicHttpBinding();
         this.IsSystemEndpoint = false;
     }
-    
+
     // Definition of the additional property of this endpoint
     public bool Property { get; set; }
 }
@@ -132,7 +132,7 @@ serviceHost.AddServiceEndpoint(new CustomEndpoint());
     <endpoint isSystemEndpoint="true" kind="udpDiscoveryEndpoint" />  
   </service>  
 </services>  
-<standardEndpoints>    
+<standardEndpoints>
   <udpDiscoveryEndpoint>  
      <standardEndpoint multicastAddress="soap.udp://239.255.255.250:3702" />
   </udpDiscoveryEndpoint>

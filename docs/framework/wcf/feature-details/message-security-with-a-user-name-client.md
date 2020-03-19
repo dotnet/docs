@@ -48,9 +48,9 @@ The following illustration shows an Windows Communication Foundation (WCF) servi
       <serviceBehaviors>  
         <behavior name="ServiceCredentialsBehavior">  
           <serviceCredentials>  
-            <serviceCertificate findValue="Contoso.com"   
+            <serviceCertificate findValue="Contoso.com"
                                 storeLocation="LocalMachine"  
-                                storeName="My"     
+                                storeName="My"
                                 x509FindType="FindBySubjectName" />  
           </serviceCredentials>  
         </behavior>  
@@ -69,7 +69,7 @@ The following illustration shows an Windows Communication Foundation (WCF) servi
     <bindings>  
       <wsHttpBinding>  
         <binding name="MessageAndUserName">  
-          <security mode="Message">              
+          <security mode="Message">
             <message clientCredentialType="UserName" />  
           </security>  
         </binding>  
@@ -105,9 +105,9 @@ The following illustration shows an Windows Communication Foundation (WCF) servi
       </wsHttpBinding>  
     </bindings>  
     <client>  
-      <endpoint address="http://machineName/Calculator"   
+      <endpoint address="http://machineName/Calculator"
                 binding="wsHttpBinding"  
-                bindingConfiguration="WSHttpBinding_ICalculator"   
+                bindingConfiguration="WSHttpBinding_ICalculator"
                 contract="ICalculator"  
                 name="WSHttpBinding_ICalculator">  
         <identity>  

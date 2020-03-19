@@ -34,7 +34,7 @@ adapter.Fill(custDS)
 ```  
   
 ```csharp  
-DataTableMapping mapping =   
+DataTableMapping mapping =
   adapter.TableMappings.Add("Table", "NorthwindCustomers");  
 mapping.ColumnMappings.Add("CompanyName", "Company");  
 mapping.ColumnMappings.Add("ContactName", "Contact");  
@@ -61,7 +61,7 @@ adapter.Fill(custDS, "Customers")
 ```  
   
 ```csharp  
-ITableMapping mapping =   
+ITableMapping mapping =
   adapter.TableMappings.Add("Customers", "BizTalkSchema");  
 mapping.ColumnMappings.Add("CustomerID", "ClientID");  
 mapping.ColumnMappings.Add("CompanyName", "ClientName");  

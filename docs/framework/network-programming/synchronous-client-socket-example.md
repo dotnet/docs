@@ -84,7 +84,7 @@ public class SynchronousSocketClient {
             IPEndPoint remoteEP = new IPEndPoint(ipAddress,11000);  
   
             // Create a TCP/IP  socket.  
-            Socket sender = new Socket(ipAddress.AddressFamily,   
+            Socket sender = new Socket(ipAddress.AddressFamily,
                 SocketType.Stream, ProtocolType.Tcp );  
   
             // Connect the socket to the remote endpoint. Catch any errors.  

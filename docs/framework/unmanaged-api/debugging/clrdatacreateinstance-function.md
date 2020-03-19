@@ -23,8 +23,8 @@ Creates an interface object for the specified target item.
   
 ```cpp  
 HRESULT CLRDataCreateInstance (  
-    [in]  REFIID           iid,   
-    [in]  ICLRDataTarget  *target,   
+    [in]  REFIID           iid,
+    [in]  ICLRDataTarget  *target,
     [out] void           **iface  
 );  
 ```  

@@ -22,10 +22,10 @@ Gets the binary metadata signature associated with the specified token.
 ## Syntax  
   
 ```cpp  
-HRESULT GetSigFromToken (   
-   [in]   mdSignature        mdSig,   
-   [out]  PCCOR_SIGNATURE    *ppvSig,   
-   [out]  ULONG              *pcbSig   
+HRESULT GetSigFromToken (
+   [in]   mdSignature        mdSig,
+   [out]  PCCOR_SIGNATURE    *ppvSig,
+   [out]  ULONG              *pcbSig
 );  
 ```  
   

@@ -40,6 +40,8 @@ The .NET Core tools collect usage data in order to help us improve your experien
 Read more about .NET Core CLI Tools telemetry: https://aka.ms/dotnet-cli-telemetry
 ```
 
+To disable this message and the .NET Core welcome message, set the `DOTNET_NOLOGO` environment variable to `true`. Note that this variable has no effect on telemetry opt out.
+
 ## Data points
 
 The telemetry feature doesn't collect personal data, such as usernames or email addresses. It doesn't scan your code and doesn't extract project-level data, such as name, repository, or author. The data is sent securely to Microsoft servers using [Azure Monitor](https://azure.microsoft.com/services/monitor/) technology, held under restricted access, and published under strict security controls from secure [Azure Storage](https://azure.microsoft.com/services/storage/) systems.

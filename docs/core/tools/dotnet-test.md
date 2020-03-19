@@ -45,7 +45,7 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
   Use the custom test adapters from the specified path in the test run.
 
-- **`-blame`**
+- **`--blame`**
 
   Runs the tests in blame mode. This option is helpful in isolating problematic tests that cause the test host to crash. It creates an output file in the current directory as *Sequence.xml* that captures the order of tests execution before the crash.
 

@@ -82,11 +82,11 @@ Progress?.Invoke(this, new FileListArgs(file));
 As discussed in the section on [delegates](delegates-patterns.md), the ?.
 operator makes it easy to ensure that you do not attempt to raise the event
 when there are no subscribers to that event.
- 
+
 You subscribe to an event by using the `+=` operator:
 
 ```csharp
-EventHandler<FileListArgs> onProgress = (sender, eventArgs) => 
+EventHandler<FileListArgs> onProgress = (sender, eventArgs) =>
     Console.WriteLine(eventArgs.FoundFile);
 
 fileLister.Progress += onProgress;

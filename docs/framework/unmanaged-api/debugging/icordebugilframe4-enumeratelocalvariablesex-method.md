@@ -22,7 +22,7 @@ topic_type:
   
 ```cpp
 HRESULT EnumerateLocalVariablesEx(  
-   [in] ILCodeKind flags,   
+   [in] ILCodeKind flags,
    [out] ICorDebugValueEnum **ppValueEnum  
 );  
 ```  

@@ -102,7 +102,7 @@ class MyData
     byte[] binaryBuffer;  
     [DataMember]  
     string someStringData;  
-}   
+}
 ```  
   
  When using MTOM, the preceding data contract is serialized according to the following rules:  
@@ -212,7 +212,7 @@ public class UploadStreamMessage
    public string appRef;  
    [MessageBodyMember]  
    public Stream data;  
-}   
+}
 ```  
   
  Streamed transfers end and the message is closed when the stream reaches the end of file (EOF). When sending a message (returning a value or invoking an operation), you can pass a <xref:System.IO.FileStream> and the WCF infrastructure subsequently pulls all the data from that stream until the stream has been completely read and reached EOF. To transfer streamed data for the source that no such pre-built <xref:System.IO.Stream> derived class exists, construct such a class, overlay that class over your stream source, and use that as the argument or return value.  

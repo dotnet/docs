@@ -42,7 +42,7 @@ Imports System.Text
 
 Public Class UDPListener
    Private Const listenPort As Integer = 11000
-   
+
    Private Shared Sub StartListener()
       Dim listener As New UdpClient(listenPort)
       Dim groupEP As New IPEndPoint(IPAddress.Any, listenPort)
@@ -59,7 +59,7 @@ Public Class UDPListener
          listener.Close()
       End Try
    End Sub 'StartListener
-   
+
    Public Shared Sub Main()
       StartListener()
    End Sub 'Main
@@ -75,19 +75,19 @@ using System.Text;
 public class UDPListener
 {
     private const int listenPort = 11000;
-    
+
     private static void StartListener()
     {
         UdpClient listener = new UdpClient(listenPort);
         IPEndPoint groupEP = new IPEndPoint(IPAddress.Any, listenPort);
-        
+
         try
         {
             while (true)
             {
                 Console.WriteLine("Waiting for broadcast");
                 byte[] bytes = listener.Receive(ref groupEP);
-                
+
                 Console.WriteLine($"Received broadcast from {groupEP} :");
                 Console.WriteLine($" {Encoding.ASCII.GetString(bytes, 0, bytes.Length)}");
             }
@@ -101,7 +101,7 @@ public class UDPListener
             listener.Close();
         }
     }
-    
+
     public static void Main()
     {
         StartListener();
@@ -139,14 +139,14 @@ class Program
     static void Main(string[] args)
     {
         Socket s = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
-        
+
         IPAddress broadcast = IPAddress.Parse("192.168.1.255");
-        
+
         byte[] sendbuf = Encoding.ASCII.GetBytes(args[0]);
         IPEndPoint ep = new IPEndPoint(broadcast, 11000);
-        
+
         s.SendTo(sendbuf, ep);
-        
+
         Console.WriteLine("Message sent to the broadcast address");
     }
 }

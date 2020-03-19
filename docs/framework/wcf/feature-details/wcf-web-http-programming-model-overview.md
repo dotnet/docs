@@ -63,7 +63,7 @@ interface ICustomer
   
   //"Do It"  
     [WebInvoke]  
-  Customer UpdateCustomerName( string id,   
+  Customer UpdateCustomerName( string id,
                                string newName );  
 }  
 ```  

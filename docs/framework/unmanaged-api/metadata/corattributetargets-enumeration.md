@@ -38,15 +38,15 @@ typedef enum CorAttributeTargets
     catDelegate            = 0x1000,  
     catGenericParameter    = 0x4000,  
   
-    catAll                 =   
-        catAssembly | catModule | catClass | catStruct |   
-        catEnum | catConstructor | catMethod | catProperty |   
-        catField | catEvent | catInterface | catParameter |   
+    catAll                 =
+        catAssembly | catModule | catClass | catStruct |
+        catEnum | catConstructor | catMethod | catProperty |
+        catField | catEvent | catInterface | catParameter |
         catDelegate | catGenericParameter,  
   
-    catClassMembers        =   
-        catClass | catStruct | catEnum | catConstructor |   
-        catMethod | catProperty | catField | catEvent |   
+    catClassMembers        =
+        catClass | catStruct | catEnum | catConstructor |
+        catMethod | catProperty | catField | catEvent |
         catDelegate | catInterface  
   
 } CorAttributeTargets;  

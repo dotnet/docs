@@ -48,7 +48,7 @@ Value of e:44
  You can use the <xref:System.Xml.Linq.XElement.Value%2A> property to retrieve the contents of an element:  
   
 ```csharp  
-XElement e = new XElement("StringElement", "abcde");   
+XElement e = new XElement("StringElement", "abcde");
 Console.WriteLine(e);  
 Console.WriteLine("Value of e:" + e.Value);  
 ```  

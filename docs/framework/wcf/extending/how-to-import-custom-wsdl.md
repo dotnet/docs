@@ -51,8 +51,8 @@ This topic describes how to import custom WSDL. To handle the custom WSDL, you m
     ```xml  
     <system.serviceModel>  
           <client>  
-            <endpoint   
-              address="http://localhost:8000/Fibonacci"   
+            <endpoint
+              address="http://localhost:8000/Fibonacci"
               binding="wsHttpBinding"  
               contract="IFibonacci"  
             />  

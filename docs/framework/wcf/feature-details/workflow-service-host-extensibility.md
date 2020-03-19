@@ -34,7 +34,7 @@ host.Description.Behaviors.Add(new WorkflowUnhandledExceptionBehavior { Action =
         <behavior>  
           <serviceMetadata httpGetEnabled="True"/>  
           <serviceDebug includeExceptionDetailInFaults="False" />  
-          <workflowUnhandledExceptionBehavior action="Abandon" />        
+          <workflowUnhandledExceptionBehavior action="Abandon" />
         </behavior>  
       </serviceBehaviors>  
 ```  

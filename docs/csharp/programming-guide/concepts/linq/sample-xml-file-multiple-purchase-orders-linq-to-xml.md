@@ -102,4 +102,3 @@ The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq]
   </PurchaseOrder>  
 </PurchaseOrders>  
 ```  
- 

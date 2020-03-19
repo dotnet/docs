@@ -8,12 +8,11 @@ helpviewer_keywords:
   - "common language runtime, overview"
 ms.assetid: 29848c96-fc36-462d-8072-ba223a40b697
 ---
+# Overview of .NET Framework
 
-# Overview of the .NET Framework
+.NET Framework is a technology that supports building and running Windows apps and web services. .NET Framework is designed to fulfill the following objectives:
 
-The .NET Framework is a technology that supports building and running the next generation of apps and XML Web services. The .NET Framework is designed to fulfill the following objectives:
-
-- To provide a consistent object-oriented programming environment whether object code is stored and executed locally, executed locally but Internet-distributed, or executed remotely.
+- To provide a consistent object-oriented programming environment whether object code is stored and executed locally, executed locally but web-distributed, or executed remotely.
 
 - To provide a code-execution environment that minimizes software deployment and versioning conflicts.
 
@@ -23,16 +22,16 @@ The .NET Framework is a technology that supports building and running the next g
 
 - To make the developer experience consistent across widely varying types of apps, such as Windows-based apps and Web-based apps.
 
-- To build all communication on industry standards to ensure that code based on the .NET Framework integrates with any other code.
+- To build all communication on industry standards to ensure that code based on .NET Framework integrates with any other code.
 
 > [!NOTE]
-> For a general introduction to the .NET Framework for both users and developers, see [Getting Started](index.md).
+> For a general introduction to .NET Framework for both users and developers, see [Getting Started](index.md).
 
-The .NET Framework consists of the common language runtime (CLR) and the .NET Framework class library. The common language runtime is the foundation of the .NET Framework. Think of the runtime as an agent that manages code at execution time, providing core services such as memory management, thread management, and remoting, while also enforcing strict type safety and other forms of code accuracy that promote security and robustness. In fact, the concept of code management is a fundamental principle of the runtime. Code that targets the runtime is known as managed code, while code that doesn't target the runtime is known as unmanaged code. The class library is a comprehensive, object-oriented collection of reusable types that you use to develop apps ranging from traditional command-line or graphical user interface (GUI) apps to apps based on the latest innovations provided by ASP.NET, such as Web Forms and XML Web services.
+.NET Framework consists of the common language runtime (CLR) and the .NET Framework class library. The common language runtime is the foundation of .NET Framework. Think of the runtime as an agent that manages code at execution time, providing core services such as memory management, thread management, and remoting, while also enforcing strict type safety and other forms of code accuracy that promote security and robustness. In fact, the concept of code management is a fundamental principle of the runtime. Code that targets the runtime is known as managed code, while code that doesn't target the runtime is known as unmanaged code. The class library is a comprehensive, object-oriented collection of reusable types that you use to develop apps ranging from traditional command-line or graphical user interface (GUI) apps to apps based on the latest innovations provided by ASP.NET, such as Web Forms and XML web services.
 
-The .NET Framework can be hosted by unmanaged components that load the common language runtime into their processes and initiate the execution of managed code, thereby creating a software environment that exploits both managed and unmanaged features. The .NET Framework not only provides several runtime hosts but also supports the development of third-party runtime hosts.
+.NET Framework can be hosted by unmanaged components that load the common language runtime into their processes and initiate the execution of managed code, thereby creating a software environment that exploits both managed and unmanaged features. .NET Framework not only provides several runtime hosts but also supports the development of third-party runtime hosts.
 
-For example, ASP.NET hosts the runtime to provide a scalable, server-side environment for managed code. ASP.NET works directly with the runtime to enable ASP.NET apps and XML Web services, both of which are discussed later in this topic.
+For example, ASP.NET hosts the runtime to provide a scalable, server-side environment for managed code. ASP.NET works directly with the runtime to enable ASP.NET apps and XML web services, both of which are discussed later in this article.
 
 Internet Explorer is an example of an unmanaged app that hosts the runtime (in the form of a MIME type extension). Using Internet Explorer to host the runtime enables you to embed managed components or Windows Forms controls in HTML documents. Hosting the runtime in this way makes managed mobile code possible, but with significant improvements that only managed code offers, such as semi-trusted execution and isolated file storage.
 
@@ -40,7 +39,7 @@ The following illustration shows the relationship of the common language runtime
 
 ![Screenshot that shows how managed code operates within a larger architecture.](./media/overview/language-runtime-class-library-relationship.gif)
 
-The following sections describe the main features of the .NET Framework in greater detail.
+The following sections describe the main features of .NET Framework in greater detail.
 
 ## Features of the common language runtime
 

@@ -29,7 +29,7 @@ This topic describes how you can protect sensitive information from being expose
    <system.ServiceModel>  
       <machineSettings enableLoggingKnownPii="Boolean"/>  
    </system.ServiceModel>  
-</configuration>   
+</configuration>
 ```  
   
  An application deployer can then use the `logKnownPii` attribute in either the App.config or Web.config file to enable PII logging as follows:  
@@ -64,7 +64,7 @@ This topic describes how you can protect sensitive information from being expose
                 initializeData="c:\logs\messages.svclog" />  
           </listeners>  
       </source>  
-      <source name="System.ServiceModel"   
+      <source name="System.ServiceModel"
          logKnownPii="true">  
          <listeners>  
             <add name="xml" />  

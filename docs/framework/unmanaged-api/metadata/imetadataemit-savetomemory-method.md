@@ -22,9 +22,9 @@ Saves all metadata in the current scope to the specified area of memory.
 ## Syntax  
   
 ```cpp  
-HRESULT SaveToMemory (   
-    [out]  void        *pbData,   
-    [in]   ULONG       cbData   
+HRESULT SaveToMemory (
+    [out]  void        *pbData,
+    [in]   ULONG       cbData
 );  
 ```  
   

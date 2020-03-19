@@ -14,7 +14,7 @@ This example shows how to use LINQ to compare two lists of strings and output th
   
 ```csharp  
 class CompareLists  
-{          
+{
     static void Main()  
     {  
         // Create the IEnumerable data sources.  

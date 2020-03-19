@@ -23,10 +23,10 @@ Enumerates MethodDef tokens representing methods of the specified type.
   
 ```cpp  
 HRESULT EnumMethods (  
-   [in, out] HCORENUM   *phEnum,   
-   [in]  mdTypeDef      cl,   
-   [out] mdMethodDef    rMethods[],   
-   [in]  ULONG          cMax,   
+   [in, out] HCORENUM   *phEnum,
+   [in]  mdTypeDef      cl,
+   [out] mdMethodDef    rMethods[],
+   [in]  ULONG          cMax,
    [out] ULONG          *pcTokens  
 );  
 ```  

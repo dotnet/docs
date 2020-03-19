@@ -13,8 +13,8 @@ HRESULT DecodeEvent(
         [in, length_is(countBytes), size_is(countBytes)]  const BYTE pRecord[],  
         [in] DWORD countBytes,  
         [in] CorDebugRecordFormat format,  
-        [in] DWORD dwFlags,   
-        [in] DWORD dwThreadId,   
+        [in] DWORD dwFlags,
+        [in] DWORD dwThreadId,
         [out] ICorDebugDebugEvent **ppEvent  
 );  
 ```  

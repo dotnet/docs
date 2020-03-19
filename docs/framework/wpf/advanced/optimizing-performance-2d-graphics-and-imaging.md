@@ -9,14 +9,14 @@ helpviewer_keywords:
   - "drawing [WPF], optimizing performance"
   - "imaging [WPF], optimizing performance"
   - "shapes [WPF], optimizing performance"
-  - "2-D graphics [WPF]"
+  - "2D graphics [WPF]"
   - "images [WPF], optimizing performance"
 ms.assetid: e335601e-28c8-4d64-ba27-778fffd55f72
 ---
 # Optimizing Performance: 2D Graphics and Imaging
 [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides a wide range of 2D graphics and imaging functionality that can be optimized for your application requirements. This topic provides information about performance optimization in those areas.  
 
-<a name="Drawing_and_Shapes"></a>   
+<a name="Drawing_and_Shapes"></a>
 ## Drawing and Shapes  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides both <xref:System.Windows.Media.Drawing> and <xref:System.Windows.Shapes.Shape> objects to represent graphical drawing content. However, <xref:System.Windows.Media.Drawing> objects are simpler constructs than <xref:System.Windows.Shapes.Shape> objects and provide better performance characteristics.  
   
@@ -44,7 +44,7 @@ ms.assetid: e335601e-28c8-4d64-ba27-778fffd55f72
   
  For more information on <xref:System.Windows.Media.Drawing> objects, see [Drawing Objects Overview](../graphics-multimedia/drawing-objects-overview.md).  
   
-<a name="StreamGeometry_Objects"></a>   
+<a name="StreamGeometry_Objects"></a>
 ## StreamGeometry Objects  
  The <xref:System.Windows.Media.StreamGeometry> object is a lightweight alternative to <xref:System.Windows.Media.PathGeometry> for creating geometric shapes. Use a <xref:System.Windows.Media.StreamGeometry> when you need to describe a complex geometry. <xref:System.Windows.Media.StreamGeometry> is optimized for handling many <xref:System.Windows.Media.PathGeometry> objects and performs better when compared to using many individual <xref:System.Windows.Media.PathGeometry> objects.  
   
@@ -54,11 +54,11 @@ ms.assetid: e335601e-28c8-4d64-ba27-778fffd55f72
   
  For more information on <xref:System.Windows.Media.StreamGeometry> objects, see [Create a Shape Using a StreamGeometry](../graphics-multimedia/how-to-create-a-shape-using-a-streamgeometry.md).  
   
-<a name="DrawingVisual_Objects"></a>   
+<a name="DrawingVisual_Objects"></a>
 ## DrawingVisual Objects  
  The <xref:System.Windows.Media.DrawingVisual> object is a lightweight drawing class that is used to render shapes, images, or text. This class is considered lightweight because it does not provide layout or event handling, which improves its performance. For this reason, drawings are ideal for backgrounds and clip art. For more information, see [Using DrawingVisual Objects](../graphics-multimedia/using-drawingvisual-objects.md).  
   
-<a name="Images"></a>   
+<a name="Images"></a>
 ## Images  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] imaging provides a significant improvement over the imaging capabilities in previous versions of Windows. Imaging capabilities, such as displaying a bitmap or using an image on a common control were primarily handled by the Microsoft Windows Graphics Device Interface (GDI) or Microsoft Windows GDI+ application programming interface (API). These API provided baseline imaging functionality, but lacked features such as support for codec extensibility and high fidelity image support. WPF Imaging API have been redesigned to overcome the shortcomings of GDI and GDI+ and provide a new set of API to display and use images within your applications.  
   

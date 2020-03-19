@@ -23,7 +23,7 @@ Contains values that indicate how the [ICorProfilerInfo10::RequestReJITWithInlin
   
 ```cpp  
 typedef enum  
-{      
+{
     COR_PRF_REJIT_BLOCK_INLINING = 0x1,
     COR_PRF_REJIT_INLINING_CALLBACKS    = 0x2
 } COR_PRF_REJIT_FLAGS;  
@@ -43,7 +43,7 @@ typedef enum
   
  **Library:** CorGuids.lib  
   
- **.NET Framework Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-22-md.md)] 
+ **.NET Framework Versions:** [!INCLUDE[net_core_22](../../../../includes/net-core-22-md.md)]
   
 ## See also
 

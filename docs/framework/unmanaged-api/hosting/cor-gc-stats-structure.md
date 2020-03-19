@@ -22,10 +22,10 @@ Provides statistics about the garbage collection mechanism of the common languag
   
 ```cpp  
 typedef struct _COR_GC_STATS {  
-    ULONG   Flags;   
+    ULONG   Flags;
     SIZE_T  ExplicitGCCount;  
     SIZE_T  GenCollectionsTaken[3];  
-    SIZE_T  CommittedKBytes;   
+    SIZE_T  CommittedKBytes;
     SIZE_T  ReservedKBytes;  
     SIZE_T  Gen0HeapSizeKBytes;  
     SIZE_T  Gen1HeapSizeKBytes;  

@@ -6,7 +6,7 @@ ms.assetid: 4828a8f9-48c0-4128-9749-7fcd6bf19a06
 
 # Variance in Generic Interfaces (C#)
 
-.NET Framework 4 introduced variance support for several existing generic interfaces. Variance support enables implicit conversion of classes that implement these interfaces. 
+.NET Framework 4 introduced variance support for several existing generic interfaces. Variance support enables implicit conversion of classes that implement these interfaces.
 
 Starting with .NET Framework 4, the following interfaces are variant:
 

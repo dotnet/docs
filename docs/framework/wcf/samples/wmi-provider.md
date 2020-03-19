@@ -103,7 +103,7 @@ cscript EnumerateCustomObjects.js
   
  The script accesses the user-defined instrumentation contained in the services and produces the following output:  
   
-```console 
+```console
 1 WMIObject(s) found.  
 |-PID:           30285bfd-9d66-4c4e-9be2-310499c5cef5  
 |-InstanceId:    3839  
@@ -131,11 +131,11 @@ cscript EnumerateCustomObjects.js
   
 > [!IMPORTANT]
 > The samples may already be installed on your computer. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Management\WMIProvider`  
   
 ## See also

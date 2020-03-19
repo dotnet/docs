@@ -23,8 +23,8 @@ This method supports the .NET Framework infrastructure and is not intended to be
   
 ```cpp  
 HRESULT CorChangeTimer (  
-    [in]  HANDLE Timer,   
-    [in]  ULONG  DueTime,   
+    [in]  HANDLE Timer,
+    [in]  ULONG  DueTime,
     [in]  ULONG  Period,  
     [out] BOOL*  result  
 );  

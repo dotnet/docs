@@ -23,13 +23,13 @@ Gets metadata associated with the member referenced by the specified token.
   
 ```cpp  
 HRESULT GetMemberRefProps (  
-   [in]  mdMemberRef       mr,   
-   [out] mdToken           *ptk,   
-   [out] LPWSTR            szMember,   
-   [in]  ULONG             cchMember,   
-   [out] ULONG             *pchMember,   
-   [out] PCCOR_SIGNATURE   *ppvSigBlob,   
-   [out] ULONG             *pbSig   
+   [in]  mdMemberRef       mr,
+   [out] mdToken           *ptk,
+   [out] LPWSTR            szMember,
+   [in]  ULONG             cchMember,
+   [out] ULONG             *pchMember,
+   [out] PCCOR_SIGNATURE   *ppvSigBlob,
+   [out] ULONG             *pbSig
 );  
 ```  
   

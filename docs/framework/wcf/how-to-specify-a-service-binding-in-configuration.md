@@ -38,7 +38,7 @@ In this example, an `ICalculator` contract is defined for a basic calculator ser
       <system.serviceModel>  
         <services>  
           <service name=" CalculatorService" >  
-            
+
             <!-- Leave the address blank to be populated by default -->
             <!-- from the hosting environment,in this case IIS, so -->
             <!-- the address will just be that of the IIS Virtual -->
@@ -49,8 +49,8 @@ In this example, an `ICalculator` contract is defined for a basic calculator ser
             <!-- want to modify the properties of the binding. -->
             <!-- The bindingConfiguration name Binding1 is defined -->
             <!-- below in the bindings element. -->
-            <endpoint   
-                address=""   
+            <endpoint
+                address=""
                 binding="wsHttpBinding"  
                 bindingConfiguration="Binding1"  
                 contract="ICalculator" />  
@@ -71,7 +71,7 @@ In this example, an `ICalculator` contract is defined for a basic calculator ser
 4. Create a Service.svc file that contains the following line and place it in your Internet Information Services (IIS) virtual directory.  
   
     ```  
-    <%@ServiceHost language=c# Service="CalculatorService" %>   
+    <%@ServiceHost language=c# Service="CalculatorService" %>
     ```  
   
 ## To modify the default values of the binding properties  

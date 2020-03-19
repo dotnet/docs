@@ -30,7 +30,7 @@ public static Second ASecondRSecond(Second second)
 public static First AFirstRFirst(First first)  
 { return new First(); }  
   
-// The return type is more derived   
+// The return type is more derived
 // and the argument type is less derived.  
 public static Second AFirstRSecond(First first)  
 { return new Second(); }  
@@ -39,10 +39,10 @@ public static Second AFirstRSecond(First first)
  The following code example illustrates the implicit conversion between the method signature and the delegate type.  
   
 ```csharp  
-// Assigning a method with a matching signature   
+// Assigning a method with a matching signature
 // to a non-generic delegate. No conversion is necessary.  
 SampleDelegate dNonGeneric = ASecondRFirst;  
-// Assigning a method with a more derived return type   
+// Assigning a method with a more derived return type
 // and less derived argument type to a non-generic delegate.  
 // The implicit conversion is used.  
 SampleDelegate dNonGenericConversion = AFirstRSecond;  
@@ -50,7 +50,7 @@ SampleDelegate dNonGenericConversion = AFirstRSecond;
 // Assigning a method with a matching signature to a generic delegate.  
 // No conversion is necessary.  
 SampleGenericDelegate<Second, First> dGeneric = ASecondRFirst;  
-// Assigning a method with a more derived return type   
+// Assigning a method with a more derived return type
 // and less derived argument type to a generic delegate.  
 // The implicit conversion is used.  
 SampleGenericDelegate<Second, First> dGenericConversion = AFirstRSecond;  
@@ -75,7 +75,7 @@ public static void Test()
   
     // You can assign delegates to each other,  
     // because the type T is declared covariant.  
-    SampleGenericDelegate <Object> dObject = dString;             
+    SampleGenericDelegate <Object> dObject = dString;
 }  
 ```  
   
@@ -92,7 +92,7 @@ public static void Test()
   
     // You can assign the dObject delegate  
     // to the same lambda expression as dString delegate  
-    // because of the variance support for   
+    // because of the variance support for
     // matching method signatures with delegate types.  
     SampleGenericDelegate<Object> dObject = () => " ";  
   
@@ -186,7 +186,7 @@ public static void Test()
     // DInvariant<Object> dObject = dInt;  
     // DInvariant<long> dLong = dInt;  
     // DVariant<Object> dVariantObject = dVariantInt;  
-    // DVariant<long> dVariantLong = dVariantInt;              
+    // DVariant<long> dVariantLong = dVariantInt;
 }  
 ```  
   

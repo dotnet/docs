@@ -132,7 +132,7 @@ SqlString.Equals shared/static method:
   Two empty strings=True  
   
 String.Equals instance method:  
-  Two empty strings=True   
+  Two empty strings=True
 ```  
   
 ## See also

@@ -22,7 +22,7 @@ Gets an enumerator for the local variables in this frame.
 ## Syntax  
   
 ```cpp  
-HRESULT EnumerateLocalVariables(   
+HRESULT EnumerateLocalVariables(
     [out] ICorDebugValueEnum    **ppValueEnum  
 );  
 ```  

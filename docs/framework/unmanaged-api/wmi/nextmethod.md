@@ -24,13 +24,13 @@ Retrieves the next method in an enumeration that begins with a call to [BeginMet
   
 ```cpp  
 HRESULT NextMethod (
-   [in] int                 vFunc, 
-   [in] IWbemClassObject*   ptr, 
+   [in] int                 vFunc,
+   [in] IWbemClassObject*   ptr,
    [in] LONG                lFlags,
    [out] BSTR*              pName,
    [out] IWbemClassObject** ppInSignature,
-   [out] IWbemClassObject** ppOutSignature   
-); 
+   [out] IWbemClassObject** ppOutSignature
+);
 ```  
 
 ## Parameters
@@ -45,13 +45,13 @@ HRESULT NextMethod (
 [in] Reserved. This parameter must be 0.
 
 `pName`  
-[out] A pointer that points to `null` prior to the call. When the function returns, the address of a new `BSTR` that contains the method name. 
+[out] A pointer that points to `null` prior to the call. When the function returns, the address of a new `BSTR` that contains the method name.
 
 `ppSignatureIn`  
-[out] A pointer that receives a pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) that contains the `in` parameters for the method. 
+[out] A pointer that receives a pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) that contains the `in` parameters for the method.
 
 `ppSignatureOut`  
-[out] A pointer that receives a pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) that contains the `out` parameters for the method. 
+[out] A pointer that receives a pointer to an [IWbemClassObject](/windows/desktop/api/wbemcli/nn-wbemcli-iwbemclassobject) that contains the `out` parameters for the method.
 
 ## Return value
 

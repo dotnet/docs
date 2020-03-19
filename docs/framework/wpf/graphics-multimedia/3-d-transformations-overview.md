@@ -1,11 +1,11 @@
 ---
-title: "3-D Transformations Overview"
+title: "3D Transformations Overview"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "3-D transformations"
+  - "3D transformations"
   - "transformations [WPF], 3-D"
 ms.assetid: e45e555d-ac1e-4b36-aced-e433afe7f27f
 ---
@@ -99,6 +99,6 @@ Rotation Example
   
 ## See also
 
-- [3-D Graphics Overview](3-d-graphics-overview.md)
+- [3D Graphics Overview](3-d-graphics-overview.md)
 - [Transforms Overview](transforms-overview.md)
-- [2-D Transforms Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/2DTransforms)
+- [2D Transforms Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/2DTransforms)

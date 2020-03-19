@@ -3,7 +3,7 @@ title: "How to: Transform the Scale of a 3D Model"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "scaling [WPF], 3D objects"
-  - "3-D objects [WPF], scaling"
+  - "3D objects [WPF], scaling"
 ms.assetid: f3fdfe33-f7dc-44b0-84a5-e43b89947f35
 ---
 # How to: Transform the Scale of a 3D Model
@@ -20,4 +20,4 @@ This example shows how to scale a 3D object. To scale a 3D object, use a <xref:S
 
 - [Animate 3D Translations](how-to-animate-3-d-translations.md)
 - [Create a 3D Scene](how-to-create-a-3-d-scene.md)
-- [3-D Graphics Overview](3-d-graphics-overview.md)
+- [3D Graphics Overview](3-d-graphics-overview.md)

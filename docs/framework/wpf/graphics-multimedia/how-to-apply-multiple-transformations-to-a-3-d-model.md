@@ -5,7 +5,7 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords: 
-  - "3-D models [WPF], applying multiple transformations to"
+  - "3D models [WPF], applying multiple transformations to"
 ms.assetid: cb72245a-5560-4c96-9f58-593c66296992
 ---
 # How to: Apply Multiple Transformations to a 3D Model

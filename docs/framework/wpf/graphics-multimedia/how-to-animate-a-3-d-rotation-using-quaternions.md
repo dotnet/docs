@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "quaternions [WPF]"
   - "animation [WPF], 3D translations [WPF], with quaternions"
-  - "3-D translations [WPF], animating [WPF], with quaternions"
+  - "3D translations [WPF], animating [WPF], with quaternions"
 ms.assetid: adca9cb1-066b-4de8-abbb-6b4007579ee7
 ---
 # How to: Animate a 3D Rotation Using Quaternions
@@ -27,7 +27,7 @@ This example shows how to animate a rotation of a 3D object using quaternions.
 
 - [Animation Overview](animation-overview.md)
 - [Create a 3D Scene](how-to-create-a-3-d-scene.md)
-- [3-D Graphics Overview](3-d-graphics-overview.md)
+- [3D Graphics Overview](3-d-graphics-overview.md)
 - [Transforms Overview](transforms-overview.md)
 - [Animate a 3D Rotation Using Storyboards](how-to-animate-a-3-d-rotation-using-storyboards.md)
 - [Animate a 3D Rotation Using Rotation3DAnimation](how-to-animate-a-3-d-rotation-using-rotation3danimation.md)

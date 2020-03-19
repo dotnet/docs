@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "animation [WPF], 3D translations [WPF], with key frames (Rotation3DAnimation)"
   - "key frames [WPF], Rotation3DAnimation"
-  - "3-D translations [WPF], animating [WPF], with key frames (Rotation3DAnimation)"
+  - "3D translations [WPF], animating [WPF], with key frames (Rotation3DAnimation)"
 ms.assetid: 6f671b95-7f30-4836-9a4f-aeb7dc30121f
 ---
 # How to: Animate a 3D Rotation Using Key Frames
@@ -21,7 +21,7 @@ In the following example, <xref:System.Windows.Media.Animation.Rotation3DAnimati
   
 ## See also
 
-- [3-D Graphics Overview](3-d-graphics-overview.md)
+- [3D Graphics Overview](3-d-graphics-overview.md)
 - [Key-Frame Animations Overview](key-frame-animations-overview.md)
 - [Animate a 3D Rotation Using Storyboards](how-to-animate-a-3-d-rotation-using-storyboards.md)
 - [Animate a 3D Rotation Using Rotation3DAnimation](how-to-animate-a-3-d-rotation-using-rotation3danimation.md)

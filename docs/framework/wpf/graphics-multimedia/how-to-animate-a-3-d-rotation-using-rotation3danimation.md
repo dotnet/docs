@@ -2,7 +2,7 @@
 title: "How to: Animate a 3D Rotation Using Rotation3DAnimation"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
-  - "3-D translations [WPF], animating [WPF], with Rotation3DAnimation"
+  - "3D translations [WPF], animating [WPF], with Rotation3DAnimation"
   - "Rotation3DAnimation [WPF]"
   - "animation [WPF], 3D translations [WPF], with Rotation3DAnimation"
 ms.assetid: a92223ec-b634-4f5e-8e79-d33bc43ecfb3
@@ -15,7 +15,7 @@ The following example shows how to make a 3D object rotate while it "wobbles" by
   
 ## See also
 
-- [3-D Graphics Overview](3-d-graphics-overview.md)
+- [3D Graphics Overview](3-d-graphics-overview.md)
 - [Animate a 3D Rotation Using Key Frames (Rotation3DAnimationUsingKeyFrames)](how-to-animate-a-3-d-rotation-using-key-frames.md)
 - [Animate a 3D Rotation Using Storyboards](how-to-animate-a-3-d-rotation-using-storyboards.md)
 - [Animate a 3D Rotation Using Quaternions](how-to-animate-a-3-d-rotation-using-quaternions.md)

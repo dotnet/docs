@@ -5,7 +5,7 @@ helpviewer_keywords:
   - "transformations [WPF], about transformations"
   - "classes [WPF], 2D transform"
   - "transform classes [WPF], 2-D"
-  - "2-D transform classes"
+  - "2D transform classes"
   - "FrameworkElement objects [WPF], rotating"
   - "FrameworkElement objects [WPF], skewing"
   - "FrameworkElement objects [WPF], translating"
@@ -136,7 +136,7 @@ LayoutTransform used to rotate the button
   
  [!code-xaml[Transforms_snip#GraphicsMMAnimatedRotateButtonExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/ButtonAnimatedRotateTransformExample.xaml#graphicsmmanimatedrotatebuttonexamplewholepage)]  
   
- For the complete sample, see [2-D Transforms Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/2DTransforms). For more information about animations, see the [Animation Overview](animation-overview.md).  
+ For the complete sample, see [2D Transforms Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/2DTransforms). For more information about animations, see the [Animation Overview](animation-overview.md).  
   
 <a name="freezable_features"></a>
 ## Freezable Features  
@@ -147,4 +147,4 @@ LayoutTransform used to rotate the button
 - <xref:System.Windows.Media.Transform>
 - <xref:System.Windows.Media.Matrix>
 - [How-to Topics](transformations-how-to-topics.md)
-- [2-D Transforms Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/2DTransforms)
+- [2D Transforms Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/2DTransforms)

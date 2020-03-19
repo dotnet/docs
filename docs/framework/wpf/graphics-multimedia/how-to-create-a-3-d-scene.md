@@ -6,7 +6,7 @@ dev_langs:
   - "vb"
 helpviewer_keywords: 
   - "scenes [WPF], 3-D"
-  - "3-D scenes"
+  - "3D scenes"
 ms.assetid: adb4a598-71a2-4dd5-b677-ea3fc11b78b2
 ---
 # How to: Create a 3D Scene
@@ -33,4 +33,4 @@ This example shows how to create a 3D object that looks like a flat sheet of pap
   
 ## See also
 
-- [3-D Graphics Overview](3-d-graphics-overview.md)
+- [3D Graphics Overview](3-d-graphics-overview.md)

@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "imaging"
   - "graphics [Windows Forms], categories"
-  - "2-D vector graphics"
+  - "2D vector graphics"
   - "vector graphics"
   - "typography"
 ms.assetid: 068c0ef3-f6ee-4d58-a7b6-eb2531ead408

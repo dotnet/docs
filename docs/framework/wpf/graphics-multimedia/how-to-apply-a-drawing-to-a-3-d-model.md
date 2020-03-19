@@ -3,7 +3,7 @@ title: "How to: Apply a Drawing to a 3D Model"
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "drawings [WPF], applying to 3D models"
-  - "3-D models [WPF], applying drawings to"
+  - "3D models [WPF], applying drawings to"
 ms.assetid: 68357577-b7fc-446e-8be9-a8cc7df3a350
 ---
 # How to: Apply a Drawing to a 3D Model
@@ -28,4 +28,4 @@ The following code shows the entire sample.
 - [XAML Resources](../../../desktop-wpf/fundamentals/xaml-resources-define.md)
 - [Create a 3D Scene](how-to-create-a-3-d-scene.md)
 - [Drawing Objects Overview](drawing-objects-overview.md)
-- [3-D Graphics Overview](3-d-graphics-overview.md)
+- [3D Graphics Overview](3-d-graphics-overview.md)

@@ -4,7 +4,7 @@ ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "Material properties [WPF], animating in 3D scenes"
   - "animation [WPF], Material properties in 3D scenes"
-  - "3-D scenes [WPF], animating Material properties"
+  - "3D scenes [WPF], animating Material properties"
 ms.assetid: 229fd6eb-7401-4992-b0c9-8b28de230c0f
 ---
 # How to: Animate Material Properties in a 3D Scene
@@ -26,4 +26,4 @@ This example shows how to animate the <xref:System.Windows.Media.Brush.Opacity%2
 ## See also
 
 - [Create a 3D Scene](how-to-create-a-3-d-scene.md)
-- [3-D Graphics Overview](3-d-graphics-overview.md)
+- [3D Graphics Overview](3-d-graphics-overview.md)

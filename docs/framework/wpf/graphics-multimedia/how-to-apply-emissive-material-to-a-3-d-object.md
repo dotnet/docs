@@ -6,7 +6,7 @@ dev_langs:
   - "vb"
 helpviewer_keywords: 
   - "EmissiveMaterial [WPF], applying to 3D objects"
-  - "3-D objects [WPF], applying EmissiveMaterial"
+  - "3D objects [WPF], applying EmissiveMaterial"
 ms.assetid: fd442cc2-5adc-487a-ba70-e45ed54bb3b4
 ---
 # How to: Apply Emissive Material to a 3D Object
@@ -33,6 +33,6 @@ The following example shows how to use <xref:System.Windows.Media.Media3D.Emissi
 ## See also
 
 - [Create a 3D Scene](how-to-create-a-3-d-scene.md)
-- [3-D Graphics Overview](3-d-graphics-overview.md)
+- [3D Graphics Overview](3-d-graphics-overview.md)
 - [Animate Material Properties in a 3D Scene](how-to-animate-material-properties-in-a-3-d-scene.md)
 - [Apply Material to the Front and Back of a 3D Object](how-to-apply-material-to-the-front-and-back-of-a-3-d-object.md)

@@ -1,6 +1,6 @@
 ---
 title: "Extension Methods - C# Programming Guide"
-ms.date: 07/20/2015
+ms.date: 03/19/2020
 helpviewer_keywords: 
   - "methods [C#], adding to existing types"
   - "extension methods [C#]"
@@ -85,6 +85,8 @@ static class DomainEntityExtensions
 
 ### Extending Predefined Types
   Rather than creating new objects when reusable functionality needs to be created, we can often extend an existing type such as a .NET Framework or CLR type. As an example, if we don't use extension methods, we might create an `Engine` or `Query` class to do the work of executing a query on a SQL Server that may be called from multiple places in our code. However we can instead extend the <xref:System.Data.SqlClient.SqlConnection?displayProperty=nameWithType> class using extension methods to perform that query from anywhere we have a connection to a SQL Server. Other examples might be to add common functionality to the <xref:System.String?displayProperty=nameWithType> class, extend the data processing capabilities of the <xref:System.IO.File?displayProperty=nameWithType> and <xref:System.IO.Stream?displayProperty=nameWithType> objects, and <xref:System.Exception?displayProperty=nameWithType> objects for specific error handling functionality. These types of use-cases are limited only by your imagination and good sense.
+
+ Extending predefined types can be difficult with `struct` types because they are passed by value to methods. That means any changes to the struct are made to a copy of the struct. Those changes are not visible once the extension method exits. Beginning with C# 7.2, you can add the `ref` modifier to the first argument of an extension method. Adding the `ref` modifier means the first argument is passed by reference. This enables you to write extension methods that change the state of the struct being extended.
 
 ## General Guidelines  
  While it is still considered preferable to add functionality by modifying an object's code or deriving a new type whenever it is reasonable and possible to do so, extension methods have become a crucial option for creating reusable functionality throughout the .NET ecosystem. For those occasions when the original source is not under your control, when a derived object is inappropriate or impossible, or when the functionality should not be exposed beyond its applicable scope, Extension methods are an excellent choice.

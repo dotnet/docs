@@ -1,6 +1,6 @@
 ---
 title: "out parameter modifier - C# Reference"
-ms.date: 03/26/2019
+ms.date: 03/19/2020
 helpviewer_keywords: 
   - "parameters [C#], out"
   - "out parameters [C#]"
@@ -40,6 +40,8 @@ You can't use the `in`, `ref`, and `out` keywords for the following kinds of met
 - Async methods, which you define by using the [async](./async.md) modifier.  
   
 - Iterator methods, which include a [yield return](./yield.md) or `yield break` statement.  
+
+- Extension methods, where the first argument has the `this` modifier.
 
 ## Declaring `out` parameters
 

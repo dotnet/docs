@@ -303,7 +303,7 @@ For more information, see [WPF brushes overview](graphics-multimedia/wpf-brushes
 
 ### 3D rendering
 
-WPF also includes 3D rendering capabilities that integrate with 2-d graphics to allow the creation of more exciting and interesting user interfaces. For example, the following figure shows 2D images rendered onto 3D shapes:
+WPF also includes 3D rendering capabilities that integrate with 2D graphics to allow the creation of more exciting and interesting user interfaces. For example, the following figure shows 2D images rendered onto 3D shapes:
 
 ![Visual3D sample screen shot](media/introduction-to-wpf/wpfintrofigure13.png)
 

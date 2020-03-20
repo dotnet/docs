@@ -11,7 +11,7 @@ author: camsoper
 
 The [Azure SDK](https://azure.microsoft.com/en-us/downloads/) for .NET client libraries includes the ability to log client library operations. This allows you to monitor I/O requests and responses that client libraries are making to Azure services. Typically, the logs are used to debug or diagnose communication issues. This article describes three approaches to enable logging with the Azure SDK for .NET:
 
-- Log to the console window 
+- Log to the console window
 - Log to .NET diagnostics traces
 - Configure custom logging
 
@@ -24,7 +24,7 @@ The SDK logs the following information, sanitizing parameter query and header va
 
 HTTP request log entry:
 
-- Unique ID 
+- Unique ID
 - HTTP method
 - URI
 - Outgoing request headers
@@ -95,4 +95,4 @@ using AzureEventSourceListener listener = new AzureEventSourceListener((e, messa
 - [Enable diagnostics logging for apps in Azure App Service](https://docs.microsoft.com/en-us/azure/app-service/troubleshoot-diagnostic-logs)
 - Review [Azure security logging and auditing](https://docs.microsoft.com/en-us/azure/security/fundamentals/log-audit) options
 - Learn how to work with [Azure platform logs](https://docs.microsoft.com/en-us/azure/azure-monitor/platform/platform-logs-overview)
-- Read more about [].NET Core logging and tracing](https://docs.microsoft.com/en-us/dotnet/core/diagnostics/logging-tracing)
+- Read more about [.NET Core logging and tracing](https://docs.microsoft.com/en-us/dotnet/core/diagnostics/logging-tracing)

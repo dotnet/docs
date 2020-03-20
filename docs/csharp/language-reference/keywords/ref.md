@@ -55,7 +55,7 @@ However, methods can be overloaded when one method has a `ref`, `in`, or `out` p
 - Async methods, which you define by using the [async](async.md) modifier.  
 - Iterator methods, which include a [yield return](yield.md) or `yield break` statement.
 
-In addition, [extension methods](../../programming-guide/classes-and-structs/extensionmethods.md) have the following restrictions:
+In addition, [extension methods](../../programming-guide/classes-and-structs/extension-methods.md) have the following restrictions:
 
 - The `out` keywoard cannot be used on the first argument of an extension method.
 - The `ref` keyword cannot be used on the first argument of an extension method when the argument is not a struct, or a generic type not constrained to be a struct.

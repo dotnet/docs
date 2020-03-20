@@ -39,7 +39,7 @@ A rendering tier defines a level of graphics hardware capability and performance
 ### Rendering Tier 0  
  A rendering tier value of 0 means that there is no graphics hardware acceleration available for the application on the device. At this tier level, you should assume that all graphics will be rendered by software with no hardware acceleration. This tier's functionality corresponds to a DirectX version that is less than 9.0.  
   
-### Rendering Tier 1 and Rendering Tier 2  
+### Rendering Tier 1 and Rendering Tier 2
   
 > [!NOTE]
 > Starting in the .NET Framework 4, rendering tier 1 has been redefined to only include graphics hardware that supports DirectX 9.0 or greater. Graphics hardware that supports DirectX 7 or 8 is now defined as rendering tier 0.  

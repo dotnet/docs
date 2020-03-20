@@ -31,7 +31,7 @@ The following table shows several comparisons and recommendations to help you ch
 |Requirements |Windows Server VM with the same requirements than the app for on-premises | Azure App Service requirements specified at the [Compatibility analysis for Azure App Service](https://www.migratetoazure.net/Resources). |<ul><li>[Windows Server 2016 with Containers - Azure VM](https://azuremarketplace.microsoft.com/marketplace/apps/Microsoft.WindowsServer?tab=Overview)<br />or</li><li>[Azure Container Service (AKS)](https://azure.microsoft.com/services/container-service/) (That is Kubernetes orchestrator)<br />or<li>[Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/) orchestrator</li></ul> |
 |How to migrate |See [Migrate to Azure Virtual Machines](https://go.microsoft.com/fwlink/?linkid=862531) | See [Migrate Azure App Service](https://go.microsoft.com/fwlink/?linkid=862532) | Follow considerations, scenarios, and walkthroughs explained in the [Modernizing existing .NET apps with Azure and Windows Containers eBook](https://aka.ms/liftandshiftwithcontainersebook) |
 
- The following flowchart diagram shows a decision tree when planning a migration to Azure for your existing .NET Framework applications. If it's viable, try option A first, but option B the easiest path to perform.
+The following flowchart diagram shows a decision tree when planning a migration to Azure for your existing .NET Framework applications. If it's viable, try option A first, but option B is the easiest path to perform.
 
 ![Flowchart showing hosting decision tree](../media/migration/choose/decision-tree.png)
 
@@ -42,6 +42,7 @@ When migrating relational databases to Azure you have multiple choices. See [Mig
 ## Networking and security considerations
 
 When deploying applications to a public cloud like Microsoft Azure, you might want to isolate and secure certain networks by [creating network DMZs](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/), such as a [DMZ between Azure and on-premises](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid) or a [DMZ between Azure and the Internet](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz). DMZs can be implemented with [Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview).
+
 Azure Virtual networks enable you to:
 
 - Build a hybrid infrastructure that you control

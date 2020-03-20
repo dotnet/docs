@@ -9,27 +9,26 @@ helpviewer_keywords:
   - "documentation, .NET Framework"
 ms.assetid: f61f02f2-2f20-483d-8f56-a9c8f3a54986
 ---
-
-# .NET Framework Guide
+# .NET Framework guide
 
 > [!NOTE]
-> This .NET Framework content set includes information for .NET Framework versions 4.5 through 4.8. To download the .NET Framework, see [Installing the .NET Framework](./install/guide-for-developers.md). For a list of new features and changes in the NET Framework, see [What's New in the .NET Framework](./whats-new/index.md). For a list of supported platforms, see [.NET Framework System Requirements](./get-started/system-requirements.md). For documentation about older versions of the .NET Framework, see [.NET previous versions documentation](https://docs.microsoft.com/previous-versions/dotnet/).
+> This .NET Framework content set includes information for .NET Framework versions 4.5 through 4.8. To download .NET Framework, see [Install .NET Framework](./install/guide-for-developers.md). For a list of new features and changes in .NET Framework, see [What's New in .NET Framework](./whats-new/index.md). For a list of supported platforms, see [.NET Framework System Requirements](./get-started/system-requirements.md). For documentation about older versions of .NET Framework, see [.NET previous versions documentation](https://docs.microsoft.com/previous-versions/dotnet/).
 
-The .NET Framework is a development platform for building apps for web, Windows, Windows Phone, Windows Server, and Microsoft Azure. It consists of the common language runtime (CLR) and the .NET Framework class library, which includes a broad range of functionality and support for many industry standards.
+.NET Framework is a development platform for building apps for web, Windows, Windows Server, and Microsoft Azure. It consists of the common language runtime (CLR) and the .NET Framework class library, which includes a broad range of functionality and support for many industry standards.
 
-The .NET Framework provides many services, including memory management, type and memory safety, security, networking, and application deployment. It provides easy-to-use data structures and APIs that abstract the lower-level Windows operating system. You can use different programming languages with the .NET Framework, including C#, F#, and Visual Basic.
+.NET Framework provides many services, including memory management, type and memory safety, security, networking, and application deployment. It provides easy-to-use data structures and APIs that abstract the lower-level Windows operating system. You can use different programming languages with .NET Framework, including C#, F#, and Visual Basic.
 
-For a general introduction to the .NET Framework for both users and developers, see [Getting Started](./get-started/index.md). For an introduction to the architecture and key features of the .NET Framework, see the [overview](./get-started/overview.md).
+For a general introduction to .NET Framework for both users and developers, see [Getting Started](./get-started/index.md). For an introduction to the architecture and key features of .NET Framework, see the [overview](./get-started/overview.md).
 
-The .NET Framework can be used with Docker and with [Windows Containers](/virtualization/windowscontainers/about/).
+.NET Framework can be used with Docker and with [Windows Containers](/virtualization/windowscontainers/about/).
 
 ## Installation
 
-The .NET Framework comes with Windows, enabling you to run .NET Framework applications. You may need a later version of the .NET Framework than the one that comes with your Windows version. For more information, see [Install the .NET Framework on Windows](./install/index.md).
+.NET Framework comes with Windows, which enables you to run .NET Framework applications. You may need a later version of .NET Framework than the one that comes with your Windows version. For more information, see [Install .NET Framework on Windows](./install/index.md).
 
-See [Repair the .NET Framework](./install/repair.md) to learn how to repair your .NET Framework installation if you're experiencing errors when installing the .NET Framework.
+To learn how to repair your .NET Framework installation if you're experiencing errors during installation, see [Repair .NET Framework](./install/repair.md).
 
-For more detailed information on downloading the .NET Framework, see [Install the .NET Framework for developers](./install/guide-for-developers.md).
+For more detailed information on downloading .NET Framework, see [Install the .NET Framework for developers](./install/guide-for-developers.md).
 
 ## In this section
 

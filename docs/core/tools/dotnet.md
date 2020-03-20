@@ -249,6 +249,10 @@ dotnet myapp.dll
 
   Specifies the location of the servicing index to use by the shared host when loading the runtime.
 
+- `DOTNET_NOLOGO`
+
+  Specifies whether .NET Core welcome and telemetry messages are displayed on first run. Set to `true` to mute these messages (values `true`, `1`, or `yes` accepted) or set to `false` to allow (values `false`, `0`, or `no` accepted). If not set, the default is `false` and the messages will be displayed on first run. Note that this flag has no effect on telemetry (see `DOTNET_CLI_TELEMETRY_OPTOUT` for opting out of sending telemetry).
+
 - `DOTNET_CLI_TELEMETRY_OPTOUT`
 
   Specifies whether data about the .NET Core tools usage is collected and sent to Microsoft. Set to `true` to opt-out of the telemetry feature (values `true`, `1`, or `yes` accepted). Otherwise, set to `false` to opt into the telemetry features (values `false`, `0`, or `no` accepted). If not set, the default is `false` and the telemetry feature is active.
@@ -271,7 +275,7 @@ dotnet myapp.dll
 
 - `DOTNET_DISABLE_GUI_ERRORS`
 
-  For GUI-enabled generated executables - disables dialog popup which normally shows for certain classes of errors. It only writes to `stderr` and exits in those cases.
+  For GUI-enabled generated executables - disables dialog popup, which normally shows for certain classes of errors. It only writes to `stderr` and exits in those cases.
   
 - `DOTNET_ADDITIONAL_DEPS`
 

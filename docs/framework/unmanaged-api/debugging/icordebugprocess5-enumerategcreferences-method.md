@@ -23,7 +23,7 @@ Gets an enumerator for all objects that are to be garbage-collected in a process
   
 ```cpp  
 HRESULT EnumerateGCReferences(  
-    [in] Bool enumerateWeakReferences,   
+    [in] Bool enumerateWeakReferences,
     [out] ICorDebugGCReferenceEnum **ppEnum  
 );  
 ```  

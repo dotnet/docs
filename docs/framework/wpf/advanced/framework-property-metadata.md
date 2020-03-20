@@ -9,11 +9,11 @@ ms.assetid: 9962f380-b885-4b61-a62e-457397083fea
 # Framework Property Metadata
 Framework property metadata options are reported for the properties of object elements considered to be at the WPF framework level in the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] architecture. In general the WPF framework-level designation entails that features such as rendering, data binding, and property system refinements are handled by the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] presentation APIs and executables. Framework property metadata is queried by these systems to determine feature-specific characteristics of particular element properties.  
 
-<a name="prerequisites"></a>   
+<a name="prerequisites"></a>
 ## Prerequisites  
  This topic assumes that you understand dependency properties from the perspective of a consumer of existing dependency properties on [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] classes, and have read the [Dependency Properties Overview](dependency-properties-overview.md). You should also have read [Dependency Property Metadata](dependency-property-metadata.md).  
   
-<a name="What_Is_Communicated_by_Framework_Property"></a>   
+<a name="What_Is_Communicated_by_Framework_Property"></a>
 ## What Is Communicated by Framework Property Metadata  
  Framework property metadata can be divided into the following categories:  
   
@@ -30,11 +30,11 @@ Framework property metadata options are reported for the properties of object el
   
 - Reporting whether properties should be journaled by applications or services that support journaling (<xref:System.Windows.FrameworkPropertyMetadata.Journal%2A>). For general elements, journaling is not enabled by default, but it is selectively enabled for certain user input controls. This property is intended to be read by journaling services including the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] implementation of journaling, and is typically set on user controls such as user selections within lists that should be persisted across navigation steps. For information about the journal, see [Navigation Overview](../app-development/navigation-overview.md).  
   
-<a name="Reading_FrameworkPropertyMetadata"></a>   
+<a name="Reading_FrameworkPropertyMetadata"></a>
 ## Reading FrameworkPropertyMetadata  
  Each of the properties linked above are the specific properties that the <xref:System.Windows.FrameworkPropertyMetadata> adds to its immediate base class <xref:System.Windows.UIPropertyMetadata>. Each of these properties will be `false` by default. A metadata request for a property where knowing the value of these properties is important should attempt to cast the returned metadata to <xref:System.Windows.FrameworkPropertyMetadata>, and then check the values of the individual properties as needed.  
   
-<a name="Specifying_Metadata"></a>   
+<a name="Specifying_Metadata"></a>
 ## Specifying Metadata  
  When you create a new metadata instance for purposes of applying metadata to a new dependency property registration, you have the choice of which metadata class to use: the base <xref:System.Windows.PropertyMetadata> or some derived class such as <xref:System.Windows.FrameworkPropertyMetadata>. In general, you should use <xref:System.Windows.FrameworkPropertyMetadata>, particularly if your property has any interaction with property system and [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] functions such as layout and data binding. Another option for more sophisticated scenarios is to derive from <xref:System.Windows.FrameworkPropertyMetadata> to create your own metadata reporting class with extra information carried in its members. Or you might use <xref:System.Windows.PropertyMetadata> or <xref:System.Windows.UIPropertyMetadata> to communicate the degree of support for features of your implementation.  
   
@@ -46,7 +46,7 @@ Framework property metadata options are reported for the properties of object el
   
 2. Use one of the signatures without a `flags` parameter, and then set each reporting Boolean property on <xref:System.Windows.FrameworkPropertyMetadata> to `true` for each desired characteristic change. If you do this, you must set these properties before any elements with this dependency property are constructed; the Boolean properties are read-write in order to allow this behavior of avoiding the `flags` parameter and still populate the metadata, but the metadata must become effectively sealed before property use. Thus, attempting to set the properties after metadata is requested will be an invalid operation.  
   
-<a name="Framework_Property_Metadata_Merge_Behavior"></a>   
+<a name="Framework_Property_Metadata_Merge_Behavior"></a>
 ## Framework Property Metadata Merge Behavior  
  When you override framework property metadata, the different metadata characteristics are either merged or replaced.  
   

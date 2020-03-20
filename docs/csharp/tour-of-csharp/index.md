@@ -33,7 +33,7 @@ cd hello
 dotnet run
 ```
 
-The program produces the following output: 
+The program produces the following output:
 
 ```console
 Hello, World!

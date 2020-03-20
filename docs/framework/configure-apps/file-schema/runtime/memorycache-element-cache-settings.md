@@ -17,10 +17,10 @@ Defines an element that is used to configure a cache that is based on the <xref:
 ## Syntax  
   
 ```xml  
-<memoryCache>   
+<memoryCache>
     <namedCaches>  
         <!-- child elements -->  
-    </namedCaches>   
+    </namedCaches>
 </memoryCache>  
 ```  
   
@@ -75,8 +75,8 @@ Defines an element that is used to configure a cache that is based on the <xref:
   <system.runtime.caching>  
     <memoryCache>  
       <namedCaches>  
-          <add name="Default"   
-               cacheMemoryLimitMegabytes="0"   
+          <add name="Default"
+               cacheMemoryLimitMegabytes="0"
                physicalMemoryLimitPercentage="0"  
                pollingInterval="00:02:00" />  
       </namedCaches>  

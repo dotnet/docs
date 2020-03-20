@@ -23,7 +23,7 @@ Gets an [ICorPublishProcess](icorpublishprocess-interface.md) instance that repr
   
 ```cpp  
 HRESULT GetProcess(  
-    [in] unsigned              pid,   
+    [in] unsigned              pid,
     [out] ICorPublishProcess   **ppProcess  
 );  
 ```  

@@ -24,7 +24,7 @@ Notifies the profiler that the server-side portion of a remoting call has comple
 ```cpp  
 HRESULT RemotingClientReceivingReply(  
     [in] GUID *pCookie,  
-    [in] BOOL fIsAsync);   
+    [in] BOOL fIsAsync);
 ```  
   
 ## Parameters  

@@ -1825,14 +1825,14 @@ namespace SdkSample
         }
 
         /// <summary>
-        /// Calculates width of next TD element based on starting position of current element and it's width, which
-        /// is calculated byt he function
+        /// Calculates width of next TD element based on starting position of current element and its width, which
+        /// is calculated by the function.
         /// </summary>
         /// <param name="htmlTDElement">
-        /// XmlElement representing Html td element whose width is to be read
+        /// XmlElement representing Html td element whose width is to be read.
         /// </param>
         /// <param name="columnStart">
-        /// Starting position of current column
+        /// Starting position of current column.
         /// </param>
         private static double GetNextColumnStart(XmlElement htmlTDElement, double columnStart)
         {

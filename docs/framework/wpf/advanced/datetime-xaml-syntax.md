@@ -13,14 +13,14 @@ ms.assetid: 5901710a-609b-40c8-9d65-f0016cd9090b
 # DateTime XAML Syntax
 Some controls, such as <xref:System.Windows.Controls.Calendar> and <xref:System.Windows.Controls.DatePicker>, have properties that use the <xref:System.DateTime> type. Although you typically specify an initial date or time for these controls in the code-behind at run time, you can specify an initial date or time in XAML. The WPF XAML parser handles parsing of <xref:System.DateTime> values using a built-in XAML text syntax. This topic describes the specifics of the <xref:System.DateTime> XAML text syntax.  
 
-<a name="where_datetime_xaml_syntax_is_used"></a>   
+<a name="where_datetime_xaml_syntax_is_used"></a>
 ## When To Use DateTime XAML Syntax  
  Setting dates in XAML is not always necessary and may not even be desirable. For example, you could use the <xref:System.DateTime.Now%2A?displayProperty=nameWithType> property to initialize a date at run time, or you could do all your date adjustments for a calendar in the code-behind based on user input. However, there are scenarios where you may want to hard-code dates into a <xref:System.Windows.Controls.Calendar> and <xref:System.Windows.Controls.DatePicker> in a control template. The <xref:System.DateTime> XAML syntax must be used for these scenarios.  
   
 ### DateTime XAML Syntax is a Native Behavior  
  <xref:System.DateTime> is a class that is defined in the base class libraries of the CLR. Because of how the base class libraries relate to the rest of the CLR, it is not possible to apply <xref:System.ComponentModel.TypeConverterAttribute> to the class and use a type converter to process strings from XAML and convert them to <xref:System.DateTime> in the run time object model. There is no `DateTimeConverter` class that provides the conversion behavior; the conversion behavior described in this topic is native to the WPF XAML parser.  
   
-<a name="format_strings_for_datetime_xaml_syntax"></a>   
+<a name="format_strings_for_datetime_xaml_syntax"></a>
 ## Format Strings for DateTime XAML Syntax  
  You can specify the format of a <xref:System.DateTime> with a format string. Format strings formalize the text syntax that can be used to create a value. <xref:System.DateTime> values for the existing WPF controls generally only use the date components of <xref:System.DateTime> and not the time components.  
   

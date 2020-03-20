@@ -19,7 +19,7 @@ Whenever an attempt to execute a query is made, the query pipeline looks up its 
  ```csharp
  var query = "SELECT sp.SalesYTD FROM AdventureWorksEntities.SalesPerson as sp WHERE sp.EmployeeID = " + employeeTextBox.Text;  
  ```
- 
+
  If you do use dynamically generated queries, consider disabling query plan caching to avoid unnecessary memory consumption for cache entries that are unlikely to be reused.  
   
  Query plan caching on static queries and parameterized queries can provide performance benefits. The following is an example of a static query:  

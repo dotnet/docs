@@ -256,7 +256,7 @@ for the core statistics into a private method. That gives you a `private static`
 method that returns the tuple type with the three values of `Sum`, `SumOfSquares`, and `Count`:
 
 [!code-csharp[TupleMethodVersion](../../samples/snippets/csharp/tuples/statistics.cs#08_TupleMethodVersion "After extracting utility method")]
- 
+
 The language enables a couple more options that you can use, if you want
 to make a few quick edits by hand. First, you can use the `var`
 declaration to initialize the tuple result from the `ComputeSumAndSumOfSquares`
@@ -345,7 +345,7 @@ by using the `var` keyword outside the parentheses:
 [!code-csharp[DeconstructToVar](../../samples/snippets/csharp/tuples/statistics.cs#11_DeconstructToVar "Deconstruct to Var")]
 
 It is also legal to use the `var` keyword with any, or all of the variable
-declarations inside the parentheses. 
+declarations inside the parentheses.
 
 ```csharp
 (double sum, var sumOfSquares, var count) = ComputeSumAndSumOfSquares(sequence);
@@ -373,7 +373,7 @@ public class Point
 ### Deconstructing user-defined types
 
 Any tuple type can be deconstructed as shown above. It's also easy
-to enable deconstruction on any user-defined type (classes, structs, or 
+to enable deconstruction on any user-defined type (classes, structs, or
 even interfaces).
 
 The type author can define one or more `Deconstruct` methods that
@@ -385,7 +385,7 @@ and last name:
 
 [!code-csharp[TypeWithDeconstructMethod](../../samples/snippets/csharp/tuples/person.cs#12_TypeWithDeconstructMethod "Type with a deconstruct method")]
 
-The deconstruct method enables assignment from a `Person` to two strings, 
+The deconstruct method enables assignment from a `Person` to two strings,
 representing the `FirstName` and `LastName` properties:
 
 [!code-csharp[Deconstruct Type](../../samples/snippets/csharp/tuples/program.cs#12A_DeconstructType "Deconstruct a class type")]
@@ -403,12 +403,12 @@ A `Student` object now has two accessible `Deconstruct` methods: the extension m
 declared for `Student` types, and the member of the `Person` type. Both are in scope,
 and that enables a `Student` to be deconstructed into either two variables or three.
 If you assign a student to three variables, the first name, last name, and GPA are
-all returned. If you assign a student to two variables, only the first name and 
+all returned. If you assign a student to two variables, only the first name and
 the last name are returned.
 
 [!code-csharp[Deconstruct extension method](../../samples/snippets/csharp/tuples/program.cs#13A_DeconstructExtension "Deconstruct a class type using an extension method")]
 
-You should be careful defining multiple `Deconstruct` methods in a 
+You should be careful defining multiple `Deconstruct` methods in a
 class or a class hierarchy. Multiple `Deconstruct` methods that have the
 same number of `out` parameters can quickly cause ambiguities. Callers may
 not be able to easily call the desired `Deconstruct` method.
@@ -441,7 +441,7 @@ dict.TryGetValue(2, out (int, string) pair);
 Console.WriteLine($"{pair.Item1}: {pair.Item2}");
 ```
 
-## Conclusion 
+## Conclusion
 
 The new language and library support for named tuples makes it much easier
 to work with designs that use data structures that store multiple elements

@@ -49,7 +49,7 @@ The Windows Forms <xref:System.Windows.Forms.TreeView> control stores the top-le
     ```  
   
     ```csharp  
-    // Removes currently selected node, or root if nothing   
+    // Removes currently selected node, or root if nothing
     // is selected.  
     treeView1.Nodes.Remove(treeView1.SelectedNode);  
     // Clears all nodes.  

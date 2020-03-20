@@ -87,7 +87,7 @@ This topic shows how to implement a custom certificate validator and how to conf
         <behavior name="clientBehavior">  
          <clientCredentials>  
           <serviceCertificate>  
-           <authentication certificateValidationMode="Custom"   
+           <authentication certificateValidationMode="Custom"
                   customCertificateValidatorType=  
              "Samples.CustomX509CertificateValidator, client"/>  
           </serviceCertificate>  

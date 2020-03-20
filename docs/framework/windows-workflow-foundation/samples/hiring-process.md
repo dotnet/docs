@@ -44,11 +44,11 @@ This sample demonstrates how to implement a business process using messaging act
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WF\Application\HiringProcess`  
   
 ## Description of the Process  
@@ -56,7 +56,7 @@ This sample demonstrates how to implement a business process using messaging act
   
 1. An employee (the requester) starts the hiring process request.  
   
-2. The requester’s manager must approve the request:  
+2. The requester's manager must approve the request:  
   
     1. The manager can reject the request.  
   
@@ -66,7 +66,7 @@ This sample demonstrates how to implement a business process using messaging act
   
     3. The manager can approve.  
   
-3. After the requester’s manager approves, the department owner must approve the request:  
+3. After the requester's manager approves, the department owner must approve the request:  
   
     1. The department owner can reject.  
   
@@ -173,19 +173,19 @@ This sample demonstrates how to implement a business process using messaging act
   
 1. Michael Alexander (Software Engineer) wants to request a new position for hiring a Software Engineer in Test (SDET) in the Engineering department who has at least 3 years of experience in C#.  
   
-2. After being created, the request appears in Michael’s inbox (click **Refresh** if you do not see the request) awaiting Peter Brehm’s approval, who is Michael’s manager.  
+2. After being created, the request appears in Michael's inbox (click **Refresh** if you do not see the request) awaiting Peter Brehm's approval, who is Michael's manager.  
   
-3. Peter wants to act on Michael’s request. He thinks the position demands 5 years of C# experience instead of 3, so he sends his comments back for review.  
+3. Peter wants to act on Michael's request. He thinks the position demands 5 years of C# experience instead of 3, so he sends his comments back for review.  
   
 4. Michael sees a message in his inbox from his manager and wants to act. Michael sees the history of the position request and agrees with Peter. Michael modifies the description to require 5 years of C# experience and accepts the modification.  
   
-5. Peter acts on Michael’s modified request and accepts it. The request now must be approved by the Director of Engineering, Tsvi Reiter.  
+5. Peter acts on Michael's modified request and accepts it. The request now must be approved by the Director of Engineering, Tsvi Reiter.  
   
 6. Tsvi Reiter wants to expedite the request, so he puts in a comment to say that the request is urgent and accepts it.  
   
 7. The request now has to be approved by two HR managers or the CEO. The CEO, Brian Richard Goldstein, sees the urgent request by Tsvi. He acts on the request by accepting it, thus bypassing the approval by two HR managers.  
   
-8. The request is removed from Michael’s inbox and the process of hiring an SDET has now begun.  
+8. The request is removed from Michael's inbox and the process of hiring an SDET has now begun.  
   
 ### Start Resume Request  
   

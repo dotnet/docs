@@ -11,7 +11,7 @@ ms.assetid: adf73dde-1e52-4df3-9929-2e0670e28e16
 
 [Previous -- Executing Expressions](expression-trees-execution.md)
 
-Now, let's write some code to examine the structure of an 
+Now, let's write some code to examine the structure of an
 *expression tree*. Every node in an expression tree will be
 an object of a class that is derived from `Expression`.
 
@@ -278,7 +278,7 @@ Before you run this on the visitor algorithm, try a thought
 exercise to work out what the output might be. Remember that
 the `+` operator is a *binary operator*: it must have two
 children, representing the left and right operands. There
-are several possible ways to construct a tree that 
+are several possible ways to construct a tree that
 could be correct:
 
 ```csharp
@@ -294,11 +294,11 @@ You can see the separation into two possible answers to highlight the
 most promising. The first represents *right associative*
 expressions. The second represent *left associative* expressions.
 The advantage of both of those two formats is that the format scales
-to any arbitrary number of addition expressions. 
+to any arbitrary number of addition expressions.
 
 If you do run this expression through the visitor, you will see this
 this output, verifying that the simple addition expression is
-*left associative*. 
+*left associative*.
 
 In order to run this sample, and see the full expression tree, I had to
 make one change to the source expression tree. When the expression tree
@@ -399,8 +399,8 @@ complicated expression. Let's make it work for this:
 
 ```csharp
 Expression<Func<int, int>> factorial = (n) =>
-    n == 0 ? 
-    1 : 
+    n == 0 ?
+    1 :
     Enumerable.Range(1, n).Aggregate((product, factor) => product * factor);
 ```
 
@@ -410,7 +410,7 @@ two limitations of building expression trees by assigning lambda expressions
 to Expressions. First, statement lambdas are not allowed. That means I can't use
 loops, blocks, if / else statements, and other control structures common in C#. I'm
 limited to using expressions. Second, I can't recursively call the same expression.
-I could if it were already a delegate, but I can't call it in its expression tree 
+I could if it were already a delegate, but I can't call it in its expression tree
 form. In the section on [building expression trees](expression-trees-building.md)
 you'll learn techniques to overcome these limitations.
 
@@ -572,7 +572,7 @@ The expression body is:
 The samples in this section show the core techniques to visit and
 examine nodes in an expression tree. I glossed over many actions
 you might need in order to concentrate on the core tasks of
-visiting and accessing nodes in an expression tree. 
+visiting and accessing nodes in an expression tree.
 
 First, the visitors only handle constants
 that are integers. Constant values could be any other numeric type,
@@ -582,7 +582,7 @@ capabilities.
 
 Even the last example recognizes a subset of the possible node types.
 You can still feed it many expressions that will cause it to fail.
-A full implementation is included in the .NET Standard 
+A full implementation is included in the .NET Standard
 under the name <xref:System.Linq.Expressions.ExpressionVisitor>
 and can handle all the possible node types.
 

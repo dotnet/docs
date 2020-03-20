@@ -50,7 +50,7 @@ The naming convention of the property and its backing <xref:System.Windows.Depen
 ## Setting property values
 You can set properties either in code or in XAML.
 
-### Setting property values in XAML 
+### Setting property values in XAML
 The following XAML example specifies the background color of a button as red. This example illustrates a case where the simple string value for a XAML attribute is type-converted by the WPF XAML parser into a WPF type (a <xref:System.Windows.Media.Color>, by way of a <xref:System.Windows.Media.SolidColorBrush>) in the generated code.
 
 [!code-xaml[PropertiesOvwSupport#MostBasicProperty](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/Page1.xaml#mostbasicproperty)]

@@ -21,7 +21,7 @@ ms.assetid: b909e388-3f24-4997-b6d4-bd9c35c2dc27
   
  For a broader view of [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] events, see [UI Automation Events Overview](ui-automation-events-overview.md).  
   
-<a name="Subscribing_to_Events"></a>   
+<a name="Subscribing_to_Events"></a>
 ## Subscribing to Events  
  Client applications subscribe to events of a particular kind by registering an event handler, using one of the following methods.  
   

@@ -27,6 +27,7 @@ The following breaking changes are documented on this page:
 | [FieldInfo.SetValue throws exception for static, init-only fields](#fieldinfosetvalue-throws-exception-for-static-init-only-fields) | 3.0 |
 | [Private fields added to built-in struct types](#private-fields-added-to-built-in-struct-types) | 2.1 |
 | [Change in default value of UseShellExecute](#change-in-default-value-of-useshellexecute) | 2.1 |
+| [OpenSSL versions on macOS](#openssl-versions-on-macos) | 2.1 |
 | [UnauthorizedAccessException thrown by FileSystemInfo.Attributes](#unauthorizedaccessexception-thrown-by-filesysteminfoattributes) | 1.0 |
 
 ## .NET Core 3.0
@@ -94,6 +95,10 @@ The following breaking changes are documented on this page:
 ***
 
 [!INCLUDE[Change in default value of UseShellExecute](~/includes/core-changes/corefx/2.1/process-start-changes.md)]
+
+***
+
+[!INCLUDE [OpenSSL versions on macOS](../../../includes/core-changes/corefx/openssl-dependencies-macos.md)]
 
 ***
 

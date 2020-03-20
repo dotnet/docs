@@ -18,7 +18,7 @@ dotnet tool restore <PACKAGE_NAME>
     [--configfile] [--add-source] [tool-manifest]
     [--disable-parallel] [--ignore-failed-sources]
     [--no-cache] [-interactive] [-v|--verbosity]
-    
+
 dotnet tool restore <-h|--help>
 ```
 

@@ -77,7 +77,7 @@ The [PageSetupDialog](pagesetupdialog-component-windows-forms.md) component pres
     ```  
   
     ```cpp  
-    this->button1->Click += gcnew   
+    this->button1->Click += gcnew
        System::EventHandler(this, &Form1::button1_Click);  
     ```  
   

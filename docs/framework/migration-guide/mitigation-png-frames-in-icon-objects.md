@@ -15,7 +15,7 @@ Starting with the .NET Framework 4.6, the <xref:System.Drawing.Icon.ToBitmap%2A?
  If this behavior is undesirable, you can retain the previous behavior by adding the following element to the [\<runtime>](../configure-apps/file-schema/runtime/runtime-element.md) section of your app.config file:  
   
 ```xml  
-<AppContextSwitchOverrides   
+<AppContextSwitchOverrides
       value="Switch.System.Drawing.DontSupportPngFramesInIcons=true" />  
 ```  
   

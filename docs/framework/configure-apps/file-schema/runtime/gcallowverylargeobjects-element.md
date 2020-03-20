@@ -16,7 +16,7 @@ On 64-bit platforms, enables arrays that are greater than 2 gigabytes (GB) in to
 ## Syntax  
   
 ```xml  
-<gcAllowVeryLargeObjects    
+<gcAllowVeryLargeObjects
    enabled="true|false" />  
 ```  
   

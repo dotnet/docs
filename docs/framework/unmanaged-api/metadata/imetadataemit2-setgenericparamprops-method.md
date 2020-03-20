@@ -23,10 +23,10 @@ Sets property values for the generic parameter definition referenced by the spec
   
 ```cpp  
 HRESULT SetGenericParamProps (  
-    [in] mdGenericParam   gp,   
-    [in] DWORD            dwParamFlags,   
-    [in] LPCWSTR          szName,   
-    [in] DWORD            reserved,   
+    [in] mdGenericParam   gp,
+    [in] DWORD            dwParamFlags,
+    [in] LPCWSTR          szName,
+    [in] DWORD            reserved,
     [in] mdToken          rtkConstraints[]  
 );  
 ```  

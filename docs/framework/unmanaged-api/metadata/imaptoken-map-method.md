@@ -23,7 +23,7 @@ Maps a relationship between the assemblies using metadata signatures.
   
 ```cpp  
 HRESULT Map (  
-    [in]  mdToken tkImp,   
+    [in]  mdToken tkImp,
     [in]  mdToken tkEmit  
 );  
 ```  

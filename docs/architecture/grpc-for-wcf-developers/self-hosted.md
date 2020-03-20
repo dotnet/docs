@@ -54,7 +54,7 @@ sc create MyService binPath=C:\MyService\MyService.exe
 
 ### Log to the Windows event log
 
-The `UseWindowsService` method automatically adds a [logging](/aspnet/core/fundamentals/logging/) provider that writes log messages to the Windows event log. You can configure logging for this provider by adding an `EventLog` entry to the `Logging` section of `appsettings.json` or another configuration source. 
+The `UseWindowsService` method automatically adds a [logging](/aspnet/core/fundamentals/logging/) provider that writes log messages to the Windows event log. You can configure logging for this provider by adding an `EventLog` entry to the `Logging` section of `appsettings.json` or another configuration source.
 
 You can override the source name used in the event log by setting a `SourceName` property in these settings. If you don't specify a name, the default application name (normally the executable assembly name) will be used.
 
@@ -79,7 +79,7 @@ public static IHostBuilder CreateHostBuilder(string[] args) =>
 
 Now publish your application. The application can be either framework dependent or self-contained for the relevant Linux runtime (for example, `linux-x64`). You can publish by using one of these methods:
 
-* From Visual Studio by right-clicking the project and selecting **Publish** on the shortcut menu. 
+* From Visual Studio by right-clicking the project and selecting **Publish** on the shortcut menu.
 * From the .NET Core CLI, by using the following command:
 
   ```dotnetcli
@@ -102,7 +102,7 @@ ExecStart=/usr/sbin/myapp
 WantedBy=multi-user.target
 ```
 
-The `Type=notify` property tells `systemd` that the application will notify it on startup and shutdown. The `WantedBy=multi-user.target` setting will cause the service to start when the Linux system reaches "runlevel 2," which means a non-graphical multi-user shell is active.
+The `Type=notify` property tells `systemd` that the application will notify it on startup and shutdown. The `WantedBy=multi-user.target` setting will cause the service to start when the Linux system reaches "runlevel 2," which means a non-graphical, multi-user shell is active.
 
 Before `systemd` will recognize the service, it needs to reload its configuration. You control `systemd` by using the `systemctl` command. After reloading, use the `status` subcommand to confirm that the application has registered successfully.
 
@@ -147,7 +147,7 @@ sudo journalctl -u myapp
 > [!TIP]
 > If you have a GUI environment available on your host, a few graphical log viewers are available for Linux, such as *QJournalctl* and *gnome-logs*.
 
-To learn more about querying the `systemd` journal from the command line by using `journalctl`, see [the man pages](https://manpages.debian.org/buster/systemd/journalctl.1).
+To learn more about querying the `systemd` journal from the command line by using `journalctl`, see [the manpages](https://manpages.debian.org/buster/systemd/journalctl.1).
 
 ## HTTPS certificates for self-hosted applications
 

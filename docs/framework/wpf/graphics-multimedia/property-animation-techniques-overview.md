@@ -13,11 +13,11 @@ ms.assetid: 74f61413-f8c0-4e75-bf04-951886426c8b
 # Property Animation Techniques Overview
 This topic describes the different approaches for animating properties: storyboards, local animations, clocks, and per-frame animations.  
   
-<a name="prerequisites"></a>   
+<a name="prerequisites"></a>
 ## Prerequisites  
  To understand this topic, you should be familiar with the basic animation features described in the [Animation Overview](animation-overview.md).  
   
-<a name="summary"></a>   
+<a name="summary"></a>
 ## Different Ways to Animate  
  Because there are many different scenarios for animating properties, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides several approaches for animating properties.  
   
@@ -30,7 +30,7 @@ This topic describes the different approaches for animating properties: storyboa
 |Clock animation|Per-instance|No|Yes|  
 |Per-frame animation|Per-instance|No|N/A|  
   
-<a name="storyboard_animations"></a>   
+<a name="storyboard_animations"></a>
 ## Storyboard Animations  
  Use a <xref:System.Windows.Media.Animation.Storyboard> when you want to define and apply your animations in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], interactively control your animations after they start, create a complex tree of animations, or animate in a <xref:System.Windows.Style>, <xref:System.Windows.Controls.ControlTemplate> or <xref:System.Windows.DataTemplate>. For an object to be animated by a <xref:System.Windows.Media.Animation.Storyboard>, it must be a <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>, or it must be used to set a <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>. For more details, see the [Storyboards Overview](storyboards-overview.md).  
   

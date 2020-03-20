@@ -32,12 +32,12 @@ This topic describes how you can enable tracing, configure trace sources to emit
 <configuration>  
    <system.diagnostics>  
       <sources>  
-            <source name="System.ServiceModel"   
+            <source name="System.ServiceModel"
                     switchValue="Information, ActivityTracing"  
                     propagateActivity="true">  
             <listeners>  
-               <add name="traceListener"   
-                   type="System.Diagnostics.XmlWriterTraceListener"   
+               <add name="traceListener"
+                   type="System.Diagnostics.XmlWriterTraceListener"
                    initializeData= "c:\log\Traces.svclog" />  
             </listeners>  
          </source>  
@@ -72,7 +72,7 @@ This topic describes how you can enable tracing, configure trace sources to emit
 <configuration>  
     <system.diagnostics>  
         <sources>  
-            <source name="System.ServiceModel"   
+            <source name="System.ServiceModel"
                     switchValue="Information, ActivityTracing"  
                     propagateActivity="true">  
                 <listeners>  
@@ -123,7 +123,7 @@ This topic describes how you can enable tracing, configure trace sources to emit
           </listeners>  
        </source>  
    </sources>  
-   <trace autoflush="true" />   
+   <trace autoflush="true" />
 </system.diagnostics>  
 ```  
   

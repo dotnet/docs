@@ -1,9 +1,9 @@
 ---
-title: "switch expressions - C# reference"
+title: "switch expression - C# reference"
 description: Learn how to use the C# switch expression for pattern matching and other data introspection
 ms.date: 03/19/2020
 ---
-# switch expressions (C# reference)
+# switch expression (C# reference)
 
 This article covers the `switch` expression, introduced in C# 8.0. For information on the `switch` statement, see the article on the [`switch` statement](../statements/switch.md) in the [statements](../statements/index.md) section.
 
@@ -20,7 +20,7 @@ The preceding sample shows the basic elements of a switch expression:
 
 The result of the *switch expression* is the value of the expression of the first *switch expression arm* whose *pattern* matches the *range expression* and whose *cause guard*, if present, evaluates to `true`. The *expression* on the right of the `=>` token can't be an expression statement.
 
-Each *switch expression arm* is evaluated in text order. The compiler issues an error when later switch expression arms can't be chosen because an earlier *switch expression arm* matches all its values.
+The *switch expression arms* are evaluated in text order. The compiler issues an error when a lower *switch expression arm* can't be chosen because a higher *switch expression arm* matches all its values.
 
 ## Patterns and case guards
 
@@ -40,10 +40,10 @@ Finally, you can add the `_` pattern and the `null` pattern to catch arguments t
 
 :::code language="csharp" source="snippets/SwitchExpressions.cs" id="SnippetExhaustive" interactive="csharp-interactive":::
 
-The preceding example adds a `null` pattern, and changes the `IEnumerable<T>` type pattern to a `_` pattern. The `null` pattern provides a null check as a switch expression arm. The expression for that arm throws a null argument exception. The `_` pattern matches all inputs that haven't been matched by a previous arm. It must come after the `null` check, or it would match `null` inputs.
+The preceding example adds a `null` pattern, and changes the `IEnumerable<T>` type pattern to a `_` pattern. The `null` pattern provides a null check as a switch expression arm. The expression for that arm throws an <xref:System.ArgumentNullException>. The `_` pattern matches all inputs that haven't been matched by previous arms. It must come after the `null` check, or it would match `null` inputs.
 
 ## See also
 
 - [C# reference](../index.md)
-- [C# expressions and operators](index.md)
+- [C# operators](index.md)
 - [Pattern matching](../../pattern-matching.md)

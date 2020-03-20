@@ -123,7 +123,7 @@ namespace operators
                 IEnumerable<T> list 
                     when list.Count() < 3        => list.Last(),
                 IList<T> list                    => list[2],
-                null                             => throw new ArgumentNullException("null input"),
+                null                             => throw new ArgumentNullException(nameof(sequence)),
                 _                                => sequence.Skip(2).First(),
             };
             Console.WriteLine(third);
@@ -133,5 +133,4 @@ namespace operators
         
     }
 }
-
 

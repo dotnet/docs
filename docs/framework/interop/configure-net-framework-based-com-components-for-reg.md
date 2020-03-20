@@ -26,7 +26,7 @@ Registration-free activation for .NET Framework-based components is only slightl
   
     ```xml  
     <?xml version="1.0" encoding="UTF-8" standalone="yes"?>  
-    <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0"> 
+    <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
     </assembly>
     ```  
   

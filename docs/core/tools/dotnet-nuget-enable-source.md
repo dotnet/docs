@@ -1,8 +1,7 @@
 ---
 title: dotnet nuget enable source command
 description: The dotnet nuget enable source command enables an existing source in your NuGet configuration files. 
-author: nugetClient
-ms.date: 03/09/2020
+ms.date: 03/20/2020
 ---
 # dotnet nuget enable source
 

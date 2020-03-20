@@ -1,8 +1,7 @@
 ---
 title: dotnet nuget update source command
 description: The dotnet nuget update source command updates an existing source in your NuGet configuration files. 
-author: nugetClient
-ms.date: 03/09/2020
+ms.date: 03/20/2020
 ---
 # dotnet nuget update source
 
@@ -33,29 +32,29 @@ The `dotnet nuget update source` command updates an existing source in your NuGe
 
 ## Options
 
-- **`-s|--source`**
+- **`--configfile`**
 
-  Path to the package source.
-
-- **`-u|--username`**
-
-  Username to be used when connecting to an authenticated source.
+  The NuGet configuration file. If specified, only the settings from this file will be used. If not specified, the hierarchy of configuration files from the current directory will be used. For more information, see [Common NuGet Configurations](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior).
 
 - **`-p|--password`**
 
   Password to be used when connecting to an authenticated source.
 
+- **`-s|--source`**
+
+  Path to the package source.
+
 - **`--store-password-in-clear-text`**
 
   Enables storing portable package source credentials by disabling password encryption.
 
+- **`-u|--username`**
+
+  Username to be used when connecting to an authenticated source.
+
 - **`--valid-authentication-types`**
 
-  Comma-separated list of valid authentication types for this source. By default, all authentication types are valid. Example: basic,negotiate
-
-- **`--configfile`**
-
-  The NuGet configuration file. If specified, only the settings from this file will be used. If not specified, the hierarchy of configuration files from the current directory will be used. For more information, see [Common NuGet Configurations](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior).
+  Comma-separated list of valid authentication types for this source. Set this to basic if the server advertises NTLM or Negotiate and your credentials must be sent using the Basic mechanism, for instance when using a PAT with on-premises Azure DevOps Server. Other valid values include negotiate, kerberos, ntlm, and digest, but these values are unlikely to be useful.
 
 ## Examples
 

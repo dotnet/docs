@@ -1,8 +1,7 @@
 ---
 title: dotnet nuget list source command
 description: The dotnet nuget list source command lists all existing sources from your NuGet configuration files. 
-author: nugetClient
-ms.date: 03/09/2020
+ms.date: 03/20/2020
 ---
 # dotnet nuget list source
 
@@ -25,13 +24,13 @@ The `dotnet nuget list source` command lists all existing sources from your NuGe
 
 ## Options
 
-- **`--format`**
-
-  The format of the list command output: `Detailed` (the default) and `Short`.
-
 - **`--configfile`**
 
   The NuGet configuration file. If specified, only the settings from this file will be used. If not specified, the hierarchy of configuration files from the current directory will be used. For more information, see [Common NuGet Configurations](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior).
+
+- **`--format`**
+
+  The format of the list command output: `Detailed` (the default) and `Short`.
 
 ## Examples
 

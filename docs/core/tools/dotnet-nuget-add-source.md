@@ -22,7 +22,7 @@ dotnet nuget add source [-h|--help]
 
 ## Description
 
-The `dotnet nuget add source` command adds a new package source to your NuGet configuration files. 
+The `dotnet nuget add source` command adds a new package source to your NuGet configuration files.
 
 ## Arguments
 

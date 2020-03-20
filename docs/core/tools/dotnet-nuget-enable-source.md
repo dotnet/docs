@@ -20,7 +20,7 @@ dotnet nuget enable source [-h|--help]
 
 ## Description
 
-The `dotnet nuget enable source` command enables an existing source in your NuGet configuration files. 
+The `dotnet nuget enable source` command enables an existing source in your NuGet configuration files.
 
 ## Arguments
 

@@ -22,7 +22,7 @@ dotnet nuget update source [-h|--help]
 
 ## Description
 
-The `dotnet nuget update source` command updates an existing source in your NuGet configuration files. 
+The `dotnet nuget update source` command updates an existing source in your NuGet configuration files.
 
 ## Arguments
 

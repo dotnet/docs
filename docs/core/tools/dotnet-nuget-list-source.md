@@ -20,7 +20,7 @@ dotnet nuget list source [-h|--help]
 
 ## Description
 
-The `dotnet nuget list source` command lists all existing sources from your NuGet configuration files. 
+The `dotnet nuget list source` command lists all existing sources from your NuGet configuration files.
 
 ## Options
 

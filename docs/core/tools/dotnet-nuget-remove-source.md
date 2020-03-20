@@ -20,7 +20,7 @@ dotnet nuget remove source [-h|--help]
 
 ## Description
 
-The `dotnet nuget remove source` command removes an existing source from your NuGet configuration files. 
+The `dotnet nuget remove source` command removes an existing source from your NuGet configuration files.
 
 ## Arguments
 

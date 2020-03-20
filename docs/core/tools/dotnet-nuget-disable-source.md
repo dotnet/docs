@@ -20,7 +20,7 @@ dotnet nuget disable source [-h|--help]
 
 ## Description
 
-The `dotnet nuget disable source` command disables an existing source in your NuGet configuration files. 
+The `dotnet nuget disable source` command disables an existing source in your NuGet configuration files.
 
 ## Arguments
 

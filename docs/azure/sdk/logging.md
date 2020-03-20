@@ -16,7 +16,7 @@ The [Azure SDK](https://azure.microsoft.com/downloads/) for .NET client librarie
 - Configure custom logging
 
 > [!NOTE]
-> This article applies to client libraries that use the most recent versions of the Azure SDK for .NET. To see if a library is supported, refer to the list of [Azure SDK latest releases](https://azure.github.io/azure-sdk/releases/latest/js.html). If your application is using an older version of the Azure SDK client libraries, refer to specific instructions in the applicable service documentation.
+> This article applies to client libraries that use the most recent versions of the Azure SDK for .NET. To see if a library is supported, refer to the list of [Azure SDK latest releases](https://azure.github.io/azure-sdk/releases/latest/index.html). If your application is using an older version of the Azure SDK client libraries, refer to specific instructions in the applicable service documentation.
 
 ## Log information
 

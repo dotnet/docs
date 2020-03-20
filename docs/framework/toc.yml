@@ -2,19 +2,6 @@
   href: index.md
 - name: Overview of .NET Framework
   href: get-started/overview.md
-- name: What's new and obsolete
-  items:
-  - name: Overview
-    href: whats-new/index.md
-  - name: What's new in accessibility
-    href: whats-new/whats-new-in-accessibility.md
-  - name: What's obsolete in API ref
-    href: whats-new/whats-obsolete.md
-    items:
-    - name: Obsolete types
-      href: whats-new/obsolete-types.md
-    - name: Obsolete members
-      href: whats-new/obsolete-members.md  
 - name: Get started
   items:
   - name: Overview
@@ -31,24 +18,28 @@
     href: install/index.md
   - name: For developers
     href: install/guide-for-developers.md
-  - name: Windows 10 and Windows Server 2016
-    href: install/on-windows-10.md
-  - name: Windows 8.1 and Windows Server 2012 R2
-    href: install/on-windows-8-1.md
-  - name: Windows 8 and Windows Server 2012
-    href: install/on-windows-8.md
-  - name: Windows 7 SP1 and Windows Server 2008 R2
-    href: install/on-windows-7.md
-  - name: Windows Vista and Windows Server 2008
-    href: install/on-windows-vista.md
-  - name: Windows XP and Windows Server 2003
-    href: install/on-windows-xp.md
+  - name: By version
+    items:
+    - name: Windows 10 and Windows Server 2016
+      href: install/on-windows-10.md
+    - name: Windows 8.1 and Windows Server 2012 R2
+      href: install/on-windows-8-1.md
+    - name: Windows 8 and Windows Server 2012
+      href: install/on-windows-8.md
+    - name: Windows 7 SP1 and Windows Server 2008 R2
+      href: install/on-windows-7.md
+    - name: Windows Vista and Windows Server 2008
+      href: install/on-windows-vista.md
+    - name: Windows XP and Windows Server 2003
+      href: install/on-windows-xp.md
   - name: Repair .NET framework
     href: install/repair.md
-  - name: Troubleshoot install and uninstall
-    href: install/troubleshoot-blocked-installations-and-uninstallations.md
-  - name: Troubleshoot 'This application could not be started'
-    href: install/application-not-started.md
+  - name: Troubleshoot
+    items:
+    - name: Troubleshoot install and uninstall
+      href: install/troubleshoot-blocked-installations-and-uninstallations.md
+    - name: Troubleshoot 'This application could not be started'
+      href: install/application-not-started.md
   - name: .NET Framework 3.5 on Windows 8 through Windows 10
     href: install/dotnet-35-windows-10.md
   - name: .NET Framework 1.1 on Windows 8 through Windows 10
@@ -433,22 +424,16 @@
     href: additional-apis/index.md
   - name: Microsoft.SqlServer.Server
     items:
-    - name: SmiOrderProperty class
-      items:
-      - name: SmiOrderProperty.Item
-        href: additional-apis/microsoft.sqlserver.server.smiorderproperty.item.md
+    - name: SmiOrderProperty.Item
+      href: additional-apis/microsoft.sqlserver.server.smiorderproperty.item.md
   - name: System
     items:
-    - name: Exception class
-      items:
-      - name: Exception.PrepForRemoting method
-        href: additional-apis/system.exception.prepforremoting.md
+    - name: Exception.PrepForRemoting method
+      href: additional-apis/system.exception.prepforremoting.md
   - name: System.Data.SqlTypes
     items:
-    - name: SqlChars class
-      items:
-      - name: SqlChars.Stream property
-        href: additional-apis/system.data.sqltypes.sqlchars.stream.md
+    - name: SqlChars.Stream property
+      href: additional-apis/system.data.sqltypes.sqlchars.stream.md
     - name: SqlStreamChars class
       items:
       - name: SqlStreamChars constructor
@@ -475,10 +460,8 @@
         href: additional-apis/system.data.sqltypes.sqlstreamchars.write.md
   - name: System.IO
     items:
-    - name: MemoryStream class
-      items:
-      - name: InternalGetOriginAndLength method
-        href: additional-apis/system.io.memorystream.internalgetoriginandlength.md
+    - name: MemoryStream.InternalGetOriginAndLength method
+      href: additional-apis/system.io.memorystream.internalgetoriginandlength.md
   - name: System.Net
     items:
     - name: Connection class
@@ -491,10 +474,8 @@
       items:
       - name: m_ConnectionList field
         href: additional-apis/m_connectionlist.md
-    - name: ConnectStream class
-      items:
-      - name: Connection property
-        href: additional-apis/system.net.connectstream.connection.md
+    - name: ConnectStream.Connection property
+      href: additional-apis/system.net.connectstream.connection.md
     - name: CoreResponseData class
       href: additional-apis/coreresponsedata.md
       items:
@@ -510,10 +491,8 @@
         href: additional-apis/httpwebrequest__coreresponse.md
       - name: _HttpResponse field
         href: additional-apis/_httpresponse.md
-    - name: PooledStream class
-      items:
-      - name: NetworkStream property
-        href: additional-apis/system.net.pooledstream.networkstream.md
+    - name: PooledStream.NetworkStream property
+      href: additional-apis/system.net.pooledstream.networkstream.md
     - name: RtcState class
       href: additional-apis/system.net.rtcstate.md
     - name: ServicePoint class
@@ -522,16 +501,12 @@
         href: additional-apis/m_connectiongrouplist.md
       - name: s_ServicePointTable field
         href: additional-apis/s_servicepointtable.md
-    - name: TlsStream class
-      items:
-      - name: m_Worker field
-        href: additional-apis/system.net.tlsstream.m_worker.md
+    - name: TlsStream.m_Worker field
+      href: additional-apis/system.net.tlsstream.m_worker.md
   - name: System.Net.Security
     items:
-    - name: SslState class
-      items:
-      - name: SslProtocol property
-        href: additional-apis/system.net.security.sslstate.sslprotocol.md
+    - name: SslState.SslProtocol property
+      href: additional-apis/system.net.security.sslstate.sslprotocol.md
   - name: System.ServiceModel.Channels
     items:
     - name: Message class
@@ -542,10 +517,8 @@
         href: additional-apis/system.servicemodel.channels.message.writestartheaders.md
   - name: System.Windows.Diagnostics
     items:
-    - name: VisualDiagnostics class
-      items:
-      - name: s_isDebuggerCheckDisabledForTestPurposes field
-        href: additional-apis/s-isdebuggercheckdisabledfortestpurposes-field.md
+    - name: VisualDiagnostics.s_isDebuggerCheckDisabledForTestPurposes
+      href: additional-apis/s-isdebuggercheckdisabledfortestpurposes-field.md
   - name: System.Windows.Forms.Design
     items:
     - name: DataMemberFieldEditor class
@@ -572,10 +545,8 @@
         href: additional-apis/xpsdocumentwriter-writingprogresschanged-event-system-windows-xps.md
   - name: System.Xml
     items:
-    - name: XmlReader class
-      items:
-      - name: XmlReader.CreateSqlReader method
-        href: additional-apis/system.xml.xmlreader.createsqlreader.md
+    - name: XmlReader.CreateSqlReader method
+      href: additional-apis/system.xml.xmlreader.createsqlreader.md
   - name: adodb namespace
     items:
     - name: Connection interface

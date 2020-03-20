@@ -15,7 +15,7 @@ The [Azure SDK](https://azure.microsoft.com/downloads/) for .NET client librarie
 - Log to .NET diagnostics traces
 - Configure custom logging
 
-> [!NOTE]
+> [!IMPORTANT]
 > This article applies to client libraries that use the most recent versions of the Azure SDK for .NET. To see if a library is supported, refer to the list of [Azure SDK latest releases](https://azure.github.io/azure-sdk/releases/latest/index.html). If your application is using an older version of the Azure SDK client libraries, refer to specific instructions in the applicable service documentation.
 
 ## Log information
@@ -52,7 +52,7 @@ Event logs are output usually at one of these three levels:
 
 ## Enable logging with built-in methods
 
-The Azure SDK for .NET client libraries log events to Event Tracing for Windows (ETW) via the [`EventSource` class](/dotnet/api/system.diagnostics.tracing.eventsource), which is standard for the .NET framework. Event sources allow you to use structured logging in your application code with a minimal performance overhead. To gain access to these event logs, you need to register event listeners.
+The Azure SDK for .NET client libraries log events to Event Tracing for Windows (ETW) via the [`EventSource` class](/dotnet/api/system.diagnostics.tracing.eventsource), which is typical for .NET. Event sources allow you to use structured logging in your application code with a minimal performance overhead. To gain access to these event logs, you need to register event listeners.
 
 The SDK includes the `Azure.Core.Diagnostics.AzureEventSourceListener` class (defined in the Azure.Core NuGet package), which contains two static methods that simplify comprehensive logging for your .NET application: `CreateConsoleLogger` and `CreateTraceLogger`. These methods take an optional parameter that specifies a log level.
 

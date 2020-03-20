@@ -2,6 +2,7 @@
 title: Introduction to character encoding in .NET
 description: Learn about character encoding and decoding in .NET.
 ms.date: 03/09/2020
+no-loc: [Rune, char, string]
 dev_langs:
   - "csharp"
 helpviewer_keywords:
@@ -178,7 +179,7 @@ The following diagram illustrates the scalar value code points.
 
 ### The Rune type as a scalar value
 
-The `Rune` type, introduced in .NET Core 3.0, represents a Unicode scalar value.
+Beginning with .NET Core 3.0, the <xref:System.Text.Rune?displayProperty=fullName> type represents a Unicode scalar value. **`Rune` is not available in .NET Core 2.x or .NET Framework 4.x.**
 
 The `Rune` constructors validate that the resulting instance is a valid Unicode scalar value, otherwise they throw an exception. The following example shows code that successfully instantiates `Rune` instances because the input represents valid scalar values:
 
@@ -200,7 +201,7 @@ An API that takes a `char` and assumes it is working with a code point that is a
 
 If the `input` string contains the lowercase Deseret letter `er` (`𐑉`), this code won't convert it to uppercase (`𐐡`). The code calls `char.ToUpperInvariant` separately on each surrogate code point, `U+D801` and `U+DC49`. But `U+D801` doesn't have enough information by itself to identify it as a lowercase letter, so `char.ToUpperInvariant` leaves it alone. And it handles `U+DC49` the same way. The result is that lowercase '𐑉' in the `input` string doesn't get converted to uppercase '𐐡'.
 
-Here are two options for correctly converting strings to uppercase:
+Here are two options for correctly converting a string to uppercase:
 
 * Call <xref:System.String.ToUpperInvariant%2A?displayProperty=nameWithType> on the input string rather than iterating `char`-by-`char`. The `string.ToUpperInvariant` method has access to both parts of each surrogate pair, so it can handle all Unicode code points correctly.
 * Iterate through the Unicode scalar values as `Rune` instances instead of `char` instances, as shown in the following example. Since a `Rune` instance is a valid Unicode scalar value, it can be passed to APIs that expect to operate on a scalar value. For example, calling <xref:System.Text.Rune.ToUpperInvariant%2A?displayProperty=nameWithType> as shown in the following example gives correct results:
@@ -228,7 +229,7 @@ For more information about the .NET `Rune` type, see the [`Rune` API reference](
 
 What looks like one character might result from a combination of multiple code points, so a more descriptive term that is often used in place of "character" is [grapheme cluster](https://www.unicode.org/glossary/#grapheme_cluster). The equivalent term in .NET is [text element](xref:System.Globalization.StringInfo.GetTextElementEnumerator%2A).
 
-Consider the strings "a", "á". "á", and "`👩🏽‍🚒`". If your operating system handles them as specified by the Unicode standard, each of these strings appears as a single text element or grapheme cluster. But the last two are represented by more than one scalar value code point.
+Consider the `string` instances "a", "á". "á", and "`👩🏽‍🚒`". If your operating system handles them as specified by the Unicode standard, each of these `string` instances appears as a single text element or grapheme cluster. But the last two are represented by more than one scalar value code point.
 
 * The string "a" is represented by one scalar value and contains one `char` instance.
 
@@ -254,9 +255,9 @@ In some of the preceding examples - such as the combining accent modifier or the
 
 To enumerate the grapheme clusters of a `string`, use the <xref:System.Globalization.StringInfo> class as shown in the following example. If you're familiar with Swift, the .NET `StringInfo` type is conceptually similar to [Swift's `character` type](https://developer.apple.com/documentation/swift/character).
 
-### Example: count chars, runes, and text elements
+### Example: count char, Rune, and text element instances
 
-In .NET APIs, grapheme clusters are called *text elements*. The following method demonstrates the differences between `char` instances, `Rune` instances, and text elements in a string:
+In .NET APIs, a grapheme cluster is called a *text element*. The following method demonstrates the differences between `char`, `Rune`, and text element instances in a `string`:
 
 :::code language="csharp" source="snippets/character-encoding-introduction/csharp/CountTextElements.cs" id="SnippetCountMethod":::
 
@@ -264,9 +265,9 @@ In .NET APIs, grapheme clusters are called *text elements*. The following method
 
 If you run this code in .NET Framework or .NET Core 3.1 or earlier, the text element count for the emoji shows `4`. That is due to a bug in the `StringInfo` class that is fixed in .NET 5.
 
-### Example: splitting strings
+### Example: splitting string instances
 
-When splitting strings, avoid splitting surrogate pairs and grapheme clusters. Consider the following example of incorrect code, which intends to insert line breaks every 10 characters in a string:
+When splitting `string` instances, avoid splitting surrogate pairs and grapheme clusters. Consider the following example of incorrect code, which intends to insert line breaks every 10 characters in a string:
 
 :::code language="csharp" source="snippets/character-encoding-introduction/csharp/InsertNewlines.cs" id="SnippetBadExample":::
 
@@ -282,7 +283,7 @@ As noted earlier, however, in implementations of .NET other than .NET 5, the `St
 
 ## UTF-8 and UTF-32
 
-The preceding sections focused on UTF-16 because that's what .NET uses to encode strings. There are other encoding systems for Unicode - [UTF-8](https://www.unicode.org/faq/utf_bom.html#UTF8) and [UTF-32](https://www.unicode.org/faq/utf_bom.html#UTF32). These encodings use 8-bit code units and 32-bit code units, respectively.
+The preceding sections focused on UTF-16 because that's what .NET uses to encode `string` instances. There are other encoding systems for Unicode - [UTF-8](https://www.unicode.org/faq/utf_bom.html#UTF8) and [UTF-32](https://www.unicode.org/faq/utf_bom.html#UTF32). These encodings use 8-bit code units and 32-bit code units, respectively.
 
 Like UTF-16, UTF-8 requires multiple code units to represent some Unicode scalar values. UTF-32 can represent any scalar value in a single 32-bit code unit.
 

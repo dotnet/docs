@@ -38,7 +38,7 @@ To learn more about .NET Core, see the [.NET Core Guide](../core/index.md) and [
 
 The.NET Framework is the original .NET implementation that has existed since 2002. It's the same .NET Framework that existing .NET developers have always used. Versions 4.5 and later implement the .NET Standard, so code that targets the .NET Standard can run on those versions of the .NET Framework. It contains additional Windows-specific APIs, such as APIs for Windows desktop development with Windows Forms and WPF. The .NET Framework is optimized for building Windows desktop applications.
 
-To learn more about the .NET Framework, see the [.NET Framework Guide](../framework/index.md).
+To learn more about the .NET Framework, see the [.NET Framework Guide](../framework/index.yml).
 
 ### Mono
 
@@ -79,7 +79,7 @@ You have access to an extensive set of tools and infrastructure components that 
 
 ## Applicable standards
 
-The C# Language and the Common Language Infrastructure (CLI) specifications are standardized through [Ecma International®](https://www.ecma-international.org/). The first editions of these standards were published by Ecma in December 2001.
+The C# Language and the Common Language Infrastructure (CLI) specifications are standardized through [Ecma International&reg;](https://www.ecma-international.org/). The first editions of these standards were published by Ecma in December 2001.
 
 Subsequent revisions to the standards have been developed by the TC49-TG2 (C#) and TC49-TG3 (CLI) task groups within the Programming Languages Technical Committee ([TC49](https://www.ecma-international.org/memento/tc49.htm)), and adopted by the Ecma General Assembly and subsequently by ISO/IEC JTC 1 via the ISO Fast-Track process.
 
@@ -102,7 +102,7 @@ The official ISO/IEC documents are available from the ISO/IEC [Publicly Availabl
 - [Choosing between .NET Core and .NET Framework for server apps](choosing-core-framework-server.md)
 - [.NET Standard](net-standard.md)
 - [.NET Core Guide](../core/index.md)
-- [.NET Framework Guide](../framework/index.md)
+- [.NET Framework Guide](../framework/index.yml)
 - [C# Guide](../csharp/index.yml)
 - [F# Guide](../fsharp/index.yml)
 - [Visual Basic Guide](../visual-basic/index.yml)

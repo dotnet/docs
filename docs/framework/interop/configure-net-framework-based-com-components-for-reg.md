@@ -96,7 +96,7 @@ Registration-free activation for .NET Framework-based components is only slightl
                         publicKeyToken="8275b28176rcbbef"  
                         processorArchitecture="msil"  
            />
-    </assembly> 
+    </assembly>
     ```  
   
 4. Identify each class in the assembly. Use the `<clrClass>` element to uniquely identify each class in the managed assembly. The element, which is a subelement of the `<assembly>` element, has the attributes described in the following table.  

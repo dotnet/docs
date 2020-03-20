@@ -275,7 +275,7 @@ dotnet myapp.dll
 
 - `DOTNET_DISABLE_GUI_ERRORS`
 
-  For GUI-enabled generated executables - disables dialog popup which normally shows for certain classes of errors. It only writes to `stderr` and exits in those cases.
+  For GUI-enabled generated executables - disables dialog popup, which normally shows for certain classes of errors. It only writes to `stderr` and exits in those cases.
   
 - `DOTNET_ADDITIONAL_DEPS`
 

@@ -3,9 +3,9 @@ title: "Transforms Overview"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "transformations [WPF], about transformations"
-  - "classes [WPF], 2-D transform"
-  - "transform classes [WPF], 2-D"
-  - "2-D transform classes"
+  - "classes [WPF], 2D transform"
+  - "transform classes [WPF], 2D"
+  - "2D transform classes"
   - "FrameworkElement objects [WPF], rotating"
   - "FrameworkElement objects [WPF], skewing"
   - "FrameworkElement objects [WPF], translating"
@@ -14,7 +14,7 @@ helpviewer_keywords:
 ms.assetid: 8f153d5e-ed61-4aa5-a7cd-286f0c427a13
 ---
 # Transforms Overview
-This topic describes how to use the 2-D <xref:System.Windows.Media.Transform> classes to rotate, scale, move (translate), and skew <xref:System.Windows.FrameworkElement> objects.  
+This topic describes how to use the 2D <xref:System.Windows.Media.Transform> classes to rotate, scale, move (translate), and skew <xref:System.Windows.FrameworkElement> objects.  
 
 <a name="whatIsATransformSection"></a>
 ## What Is a Transform?  
@@ -25,7 +25,7 @@ This topic describes how to use the 2-D <xref:System.Windows.Media.Transform> cl
   
  The following table shows the structure of a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] matrix.  
   
-### A 2-D transformation matrix  
+### A 2D transformation matrix  
   
 ||||  
 |-|-|-|  
@@ -39,7 +39,7 @@ This topic describes how to use the 2-D <xref:System.Windows.Media.Transform> cl
   
 <a name="transformClassesSection"></a>
 ## Transform Classes  
- Windows Presentation Foundation (WPF) provides the following 2-D <xref:System.Windows.Media.Transform> classes for common transformation operations:  
+ Windows Presentation Foundation (WPF) provides the following 2D <xref:System.Windows.Media.Transform> classes for common transformation operations:  
   
 |Class|Description|Example|Illustration|  
 |-----------|-----------------|-------------|------------------|  
@@ -55,7 +55,7 @@ This topic describes how to use the 2-D <xref:System.Windows.Media.Transform> cl
 |<xref:System.Windows.Media.TransformGroup>|Groups multiple <xref:System.Windows.Media.TransformGroup> objects into a single <xref:System.Windows.Media.Transform> that you can then apply to transform properties.|[Apply Multiple Transforms to an Object](how-to-apply-multiple-transforms-to-an-object.md)|  
 |<xref:System.Windows.Media.MatrixTransform>|Creates custom transformations that are not provided by the other <xref:System.Windows.Media.Transform> classes. When you use a <xref:System.Windows.Media.MatrixTransform>, you manipulate a Matrix directly.|[Use a MatrixTransform to Create Custom Transforms](how-to-use-a-matrixtransform-to-create-custom-transforms.md)|  
   
- Windows Presentation Foundation (WPF) also provides 3-D transformations. For more information, see the <xref:System.Windows.Media.Media3D.Transform3D> class.  
+ Windows Presentation Foundation (WPF) also provides 3D transformations. For more information, see the <xref:System.Windows.Media.Media3D.Transform3D> class.  
   
 <a name="transformationproperties"></a>
 ## Common Transformation Properties  
@@ -136,7 +136,7 @@ LayoutTransform used to rotate the button
   
  [!code-xaml[Transforms_snip#GraphicsMMAnimatedRotateButtonExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/Transforms_snip/CS/ButtonAnimatedRotateTransformExample.xaml#graphicsmmanimatedrotatebuttonexamplewholepage)]  
   
- For the complete sample, see [2-D Transforms Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/2DTransforms). For more information about animations, see the [Animation Overview](animation-overview.md).  
+ For the complete sample, see [2D Transforms Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/2DTransforms). For more information about animations, see the [Animation Overview](animation-overview.md).  
   
 <a name="freezable_features"></a>
 ## Freezable Features  
@@ -147,4 +147,4 @@ LayoutTransform used to rotate the button
 - <xref:System.Windows.Media.Transform>
 - <xref:System.Windows.Media.Matrix>
 - [How-to Topics](transformations-how-to-topics.md)
-- [2-D Transforms Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/2DTransforms)
+- [2D Transforms Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Graphics/2DTransforms)

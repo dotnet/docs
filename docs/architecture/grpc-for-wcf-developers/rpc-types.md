@@ -120,7 +120,7 @@ In WCF, the [ServiceContract](xref:System.ServiceModel.ServiceContractAttribute)
 
 ## WCF one-way operations and gRPC client streaming
 
-WCF provides one-way operations (marked with `[OperationContract(IsOneWay = true)]`) that return a transport-specific acknowledgement. gRPC service methods always return a response, even if it's empty. The client should always await that response. For the "fire-and-forget" style of messaging in gRPC, you can create a client streaming service.
+WCF provides one-way operations (marked with `[OperationContract(IsOneWay = true)]`) that return a transport-specific acknowledgment. gRPC service methods always return a response, even if it's empty. The client should always await that response. For the "fire-and-forget" style of messaging in gRPC, you can create a client streaming service.
 
 ### thing_log.proto
 

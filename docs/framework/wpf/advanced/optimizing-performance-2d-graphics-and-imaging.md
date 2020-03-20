@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "drawing [WPF], optimizing performance"
   - "imaging [WPF], optimizing performance"
   - "shapes [WPF], optimizing performance"
-  - "2-D graphics [WPF]"
+  - "2D graphics [WPF]"
   - "images [WPF], optimizing performance"
 ms.assetid: e335601e-28c8-4d64-ba27-778fffd55f72
 ---

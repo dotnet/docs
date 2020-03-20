@@ -5,13 +5,13 @@ ms.date: 03/19/2020
 ---
 # switch expression (C# reference)
 
-This article covers the `switch` expression, introduced in C# 8.0. For information on the `switch` statement, see the article on the [`switch` statement](../statements/switch.md) in the [statements](../statements/index.md) section.
+This article covers the `switch` expression, introduced in C# 8.0. For information on the `switch` statement, see the article on the [`switch` statement](../keywords/switch.md) in the [statements](../keywords/index.md) section.
 
 ## Basic example
 
 The `switch` expression provides for `switch`-like semantics in an expression context. It provides a concise syntax when the switch arms produce a value. The following example shows the structure of a switch expression. It translates values from an `enum` representing visual directions in an online map to the corresponding cardinal direction:
 
-:::code language="csharp" source="snippets/SwitchExpressions.cs" id="SnippetBasicStructure" interactive="csharp-interactive":::
+:::code language="csharp" source="snippets/SwitchExpressions.cs" id="SnippetBasicStructure" interactive="csharp-interactive-class":::
 
 The preceding sample shows the basic elements of a switch expression:
 

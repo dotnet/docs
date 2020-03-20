@@ -4,27 +4,48 @@ using System.Linq;
 
 namespace operators
 {
-    public enum Directions
-    {
-        Up,
-        Down,
-        Right,
-        Left
-    }
 
-    public enum Orientation
+    // <SnippetBasicStructure>
+    public static class SwitchExample
     {
-        North,
-        South,
-        East,
-        West
+        public enum Directions
+        {
+            Up,
+            Down,
+            Right,
+            Left
+        }
+
+        public enum Orientation
+        {
+            North,
+            South,
+            East,
+            West
+        }
+    
+        public static void Main()
+        {
+            var direction = Directions.Right;
+            Console.WriteLine($"Map view direction is {direction}");
+
+            var orientation = direction switch
+            {
+                Directions.Up    => Orientation.North,
+                Directions.Right => Orientation.East,
+                Directions.Down  => Orientation.South,
+                Directions.Left  => Orientation.West,
+            };
+            Console.WriteLine($"Cardinal orientation is {orientation}");
+        }
     }
+    // </SnippetBasicStructure>
 
     public static class SwitchExpressions
     {
         public static void Examples()
         {
-            InitialExample();
+            SwitchExample.Main();
 
             var collection = new int[]{1,2,3,4,5,6,7,8,9};
             TypeExample(collection);
@@ -45,22 +66,6 @@ namespace operators
 
         }
 
-        private static void InitialExample()
-        {
-            // <SnippetBasicStructure>
-            var direction = Directions.Right;
-            Console.WriteLine($"Map view direction is {direction}");
-
-            var orientation = direction switch
-            {
-                Directions.Up    => Orientation.North,
-                Directions.Right => Orientation.East,
-                Directions.Down  => Orientation.South,
-                Directions.Left  => Orientation.West,
-            };
-            Console.WriteLine($"Cardinal orientation is {orientation}");
-            // </SnippetBasicStructure>
-        }
 
         private static void TypeExample<T>(IEnumerable<T> sequence)
         {

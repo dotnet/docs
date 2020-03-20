@@ -34,6 +34,10 @@ landingContent:
             url: get-started/overview.md
           - text: .NET Framework & Windows OS versions 
             url: migration-guide/versions-and-dependencies.md
+          - text: Determine which versions are installed 
+            url: migration-guide/how-to-determine-which-versions-are-installed.md
+          - text: Older versions of .NET Framework
+            url: /previous-versions/dotnet/
       - linkListType: concept
         links:
           - text: Deployment guide for developers
@@ -48,8 +52,6 @@ landingContent:
             url: install/index.md
       - linkListType: how-to-guide
         links:
-          - text: Determine which versions are installed 
-            url: migration-guide/how-to-determine-which-versions-are-installed.md
           - text: Install .NET Framework on Windows 10 
             url: install/on-windows-10.md
           - text: Install .NET Framework 3.5

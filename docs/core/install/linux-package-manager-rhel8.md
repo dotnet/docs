@@ -3,7 +3,7 @@ title: Install .NET Core on Linux RHEL 8 package manager - .NET Core
 description: Use a package manager to install .NET Core SDK and runtime on RHEL 8.
 author: thraka
 ms.author: adegeo
-ms.date: 12/03/2019
+ms.date: 03/17/2020
 ---
 
 # RHEL 8 Package Manager - Install .NET Core
@@ -11,6 +11,8 @@ ms.date: 12/03/2019
 [!INCLUDE [package-manager-switcher](includes/package-manager-switcher.md)]
 
 This article describes how to use a package manager to install .NET Core on RHEL 8.
+
+[!INCLUDE [package-manager-intro-sdk-vs-runtime](includes/package-manager-intro-sdk-vs-runtime.md)]
 
 ## Register your Red Hat subscription
 

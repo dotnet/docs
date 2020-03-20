@@ -40,7 +40,7 @@ Registration-free activation for .NET Framework-based components is only slightl
       <assemblyIdentity type="win32"   
                         name="myOrganization.myDivision.myComApp"   
                         version="1.0.0.0"   
-                        processorArchitecture="msil"   
+                        processorArchitecture="msil"
       />
     </assembly>  
     ```  

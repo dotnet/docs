@@ -1,0 +1,144 @@
+### YamlMime:Landing
+
+title: .NET Framework documentation
+summary: Learn about .NET Framework, a development platform for building apps for web, Windows, and Microsoft Azure.
+
+metadata:
+  title: .NET Framework documentation
+  description: Find information about .NET Framework, a development platform for building apps for web, Windows, and Microsoft Azure.
+  ms.topic: landing-page
+  ms.custom: updateeachrelease
+  f1_keywords: 
+    - "f61f02f2-2f20-483d-8f56-a9c8f3a54986"
+  helpviewer_keywords: 
+    - ".NET Framework guide"
+  ms.date: 03/23/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Learn about .NET Framework
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: .NET Framework overview
+            url: get-started/overview.md
+          - text: Migrate from .NET Framework to .NET Core
+            url: core/porting/index.md
+      - linkListType: reference
+        links:
+          - text: System requirements
+            url: get-started/overview.md
+          - text: .NET Framework & Windows OS versions 
+            url: migration-guide/versions-and-dependencies.md
+      - linkListType: concept
+        links:
+          - text: Deployment guide for developers
+            url: deployment/deployment-guide-for-developers.md
+
+  # Card
+  - title: Install .NET Framework
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Installation guide 
+            url: install/index.md
+      - linkListType: how-to-guide
+        links:
+          - text: Determine which versions are installed 
+            url: migration-guide/how-to-determine-which-versions-are-installed.md
+          - text: Install .NET Framework on Windows 10 
+            url: install/on-windows-10.md
+          - text: Install .NET Framework 3.5
+            url: install/dotnet-35-windows-10.md
+          - text: Install the developer pack or redistributable 
+            url: install/guide-for-developers.md
+          - text: Troubleshoot blocked installations
+            url: install/troubleshoot-blocked-installations-and-uninstallations.md
+          - text: Troubleshoot 'This application could not be started'
+            url: install/application-not-started.md
+
+  # Card
+  - title: Create Windows service apps
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Introduction to Windows service apps
+            url: windows-services/introduction-to-windows-service-applications.md
+      - linkListType: tutorial
+        links:
+          - text: Create a Windows service app 
+            url: windows-services/walkthrough-creating-a-windows-service-application-in-the-component-designer.md
+      - linkListType: how-to-guide
+        links:
+          - text: Install and uninstall Windows services 
+            url: windows-services/how-to-install-and-uninstall-services.md
+
+  # Card
+  - title: Create WPF apps
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview of WPF
+            url: wpf/index.md
+      - linkListType: tutorial
+        links:
+          - text: Create your first WPF app in Visual Studio
+            url: wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md
+
+  # Card
+  - title: Create Windows Forms apps
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview of Windows Forms
+            url: winforms/index.md
+      - linkListType: how-to-guide
+        links:
+          - text: Add and remove items from ComboBox, ListBox, and CheckedListBox controls 
+            url: winforms/controls/add-and-remove-items-from-a-wf-combobox.md
+          - text: Make thread-safe calls to controls
+            url: winforms/controls/how-to-make-thread-safe-calls-to-windows-forms-controls.md
+      - linkListType: reference
+        links:
+          - text: Design-time errors in the Windows Forms Designer 
+            url: winforms/controls/design-time-errors-in-the-windows-forms-designer.md
+
+  # Card
+  - title: Work with data using ADO.NET
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Overview of ADO.NET
+            url: data/adonet/ado-net-overview.md
+      - linkListType: concept
+        links:
+          - text: Retrieve data using a DataReader 
+            url: adonet/retrieving-data-using-a-datareader.md
+          - text: Connection strings and configuration files
+            url: data/adonet/connection-strings-and-configuration-files.md
+          - text: SQL Server connection pooling
+            url: data/adonet/sql-server-connection-pooling.md
+          - text: Add data to a DataTable
+            url: data/adonet/dataset-datatable-dataview/adding-data-to-a-datatable.md
+      - linkListType: reference
+        links:
+          - text: Connection string syntax 
+            url: data/adonet/connection-string-syntax.md
+          - text: Sample SQL Server databases
+            url: data/adonet/sql/linq/downloading-sample-databases.md
+
+  # Card
+  - title: Network programming
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Transport Layer Security (TLS) best practices 
+            url: network-programming/tls.md
+      - linkListType: how-to-guide
+        links:
+          - text: Send data by using the WebRequest class
+            url: network-programming/how-to-send-data-using-the-webrequest-class.md

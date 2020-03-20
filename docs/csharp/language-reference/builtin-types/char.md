@@ -53,3 +53,4 @@ For more information, see the [Integral types](~/_csharplang/spec/types.md#integ
 - [Value types](value-types.md)
 - [Strings](../../programming-guide/strings/index.md)
 - <xref:System.Text.Rune?displayProperty=nameWithType>
+- [Character encoding in .NET](../../../standard/base-types/character-encoding-introduction.md)

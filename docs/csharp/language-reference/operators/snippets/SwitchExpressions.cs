@@ -70,68 +70,68 @@ namespace operators
         private static void TypeExample<T>(IEnumerable<T> sequence)
         {
             // <SnippetTypePattern>
-            var third = sequence switch
+            T thirdOrDefault = sequence switch
             {
                 System.Array array => array.GetValue(2),
-                IList<T> list => list[2],
+                IList<T> list      => list[2],
                 IEnumerable<T> seq => seq.Skip(2).First(),
             };
-            Console.WriteLine(third);
+            Console.WriteLine(thirdOrDefault);
             // </SnippetTypePattern>
         }
 
         private static void RecursiveExample<T>(IEnumerable<T> sequence)
         {
             // <SnippetRecursivePattern>
-            var third = sequence switch
+            T thirdOrDefault = sequence switch
             {
-                System.Array { Length : 0}        => default,
+                System.Array { Length : 0}       => default(T),
                 System.Array { Length : 1} array => array.GetValue(0),
                 System.Array { Length : 2} array => array.GetValue(1),
                 System.Array array               => array.GetValue(2),
                 IList<T> list                    => list[2],
                 IEnumerable<T> seq               => seq.Skip(2).First(),
             };
-            Console.WriteLine(third);
+            Console.WriteLine(thirdOrDefault);
             // </SnippetRecursivePattern>
         }
 
         private static void CaseGuardExample<T>(IEnumerable<T> sequence)
         {
             // <SnippetGuardCase>
-            var third = sequence switch
+            T thirdOrDefault = sequence switch
             {
-                System.Array { Length : 0}                => default,
+                System.Array { Length : 0}                => default(T),
                 System.Array { Length : 1} array          => array.GetValue(0),
                 System.Array { Length : 2} array          => array.GetValue(1),
                 System.Array array                        => array.GetValue(2),
-                IEnumerable<T> list when !list.Any()      => default,
+                IEnumerable<T> list when !list.Any()      => default(T),
                 IEnumerable<T> list when list.Count() < 3 => list.Last(),
                 IList<T> list                             => list[2],
                 IEnumerable<T> seq                        => seq.Skip(2).First(),
             };
-            Console.WriteLine(third);
+            Console.WriteLine(thirdOrDefault);
             // </SnippetGuardCase>
         }
 
         private static void ExhaustiveExample<T>(IEnumerable<T> sequence)
         {
             // <SnippetExhaustive>
-            var third = sequence switch
+            T thirdOrDefault = sequence switch
             {
-                System.Array { Length : 0}       => default,
+                System.Array { Length : 0}       => default(T),
                 System.Array { Length : 1} array => array.GetValue(0),
                 System.Array { Length : 2} array => array.GetValue(1),
                 System.Array array               => array.GetValue(2),
                 IEnumerable<T> list 
-                    when !list.Any()             => default,
+                    when !list.Any()             => default(T),
                 IEnumerable<T> list 
                     when list.Count() < 3        => list.Last(),
                 IList<T> list                    => list[2],
                 null                             => throw new ArgumentNullException(nameof(sequence)),
                 _                                => sequence.Skip(2).First(),
             };
-            Console.WriteLine(third);
+            Console.WriteLine(thirdOrDefault);
             // </SnippetExhaustive>
         }
 

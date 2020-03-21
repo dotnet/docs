@@ -27,7 +27,7 @@ landingContent:
           - text: .NET Framework overview
             url: get-started/overview.md
           - text: Migrate from .NET Framework to .NET Core
-            url: core/porting/index.md
+            url: ../core/porting/index.md
       - linkListType: reference
         links:
           - text: System requirements
@@ -119,7 +119,7 @@ landingContent:
       - linkListType: concept
         links:
           - text: Retrieve data using a DataReader 
-            url: adonet/retrieving-data-using-a-datareader.md
+            url: data/adonet/retrieving-data-using-a-datareader.md
           - text: Connection strings and configuration files
             url: data/adonet/connection-strings-and-configuration-files.md
           - text: SQL Server connection pooling

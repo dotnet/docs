@@ -187,8 +187,14 @@ Command | Function
 Command | Function
 --- | ---
 [dotnet nuget delete](dotnet-nuget-delete.md) | Deletes or unlists a package from the server.
-[dotnet nuget locals](dotnet-nuget-locals.md) | Clears or lists local NuGet resources such as http-request cache, temporary cache, or machine-wide global packages folder.
 [dotnet nuget push](dotnet-nuget-push.md) | Pushes a package to the server and publishes it.
+[dotnet nuget locals](dotnet-nuget-locals.md) | Clears or lists local NuGet resources such as http-request cache, temporary cache, or machine-wide global packages folder.
+[dotnet nuget add source](dotnet-nuget-add-source.md) | Adds a NuGet source.
+[dotnet nuget disable source](dotnet-nuget-disable-source.md) | Disables a NuGet source.
+[dotnet nuget enable source](dotnet-nuget-enable-source.md) | Enables a NuGet source.
+[dotnet nuget list source](dotnet-nuget-list-source.md) | Lists all configured NuGet sources.
+[dotnet nuget remove source](dotnet-nuget-remove-source.md) | Removes a NuGet source.
+[dotnet nuget update source](dotnet-nuget-update-source.md) | Updates a NuGet source.
 
 ### Global, tool-path, and local tools commands
 

@@ -39,6 +39,67 @@ The code in this example assumes that you can connect to the `Northwind` sample 
  [!code-csharp[DataWorks SampleApp.SqlClient#1](../../../../samples/snippets/csharp/VS_Snippets_ADO.NET/DataWorks SampleApp.SqlClient/CS/source.cs#1)]
  [!code-vb[DataWorks SampleApp.SqlClient#1](../../../../samples/snippets/visualbasic/VS_Snippets_ADO.NET/DataWorks SampleApp.SqlClient/VB/source.vb#1)]
 
+``` VB
+Imports System
+Imports System.Data
+Imports System.Data.SqlClient
+
+Module Module1
+    Sub Main()
+        AddRecord()
+        RemoveRecord()
+        Pause()
+    End Sub
+
+    Sub Pause()
+        Console.WriteLine("Press Enter To Continue...")
+        Console.ReadLine()
+    End Sub
+
+    Sub AddRecord()
+        Dim sConnectionString As String _
+            = "User ID=<username>;Password=<strong password>;Initial Catalog=pubs;Data Source=(local)"
+        Dim objConn As New SqlConnection(sConnectionString)
+        objConn.Open()
+        Dim sSQL As String = "INSERT INTO Employee " & _
+          "(emp_id, fname, minit, lname, job_id, job_lvl, pub_id, hire_date)" & _
+          "VALUES ('MSD12923F', 'Duncan', 'W', 'Mackenzie', " & _
+                   "10, 82,'0877','2001-01-01')"
+
+        Dim objCmd As New SqlCommand(sSQL, objConn)
+        Try
+            objCmd.ExecuteNonQuery()
+        Catch e As Exception
+            Console.WriteLine(e.Message)
+        End Try
+        Console.WriteLine("Record Added")
+    End Sub
+
+    Sub RemoveRecord()
+        Dim sConnectionString As String _
+            = "User ID=<username>;Password=<strong password>;Initial Catalog=pubs;Data Source=(local)"
+        Dim objConn As New SqlConnection(sConnectionString)
+        objConn.Open()
+        Dim sSQL As String = "DELETE FROM Employee WHERE emp_id = @emp_id"
+        Dim objCmd As New SqlCommand(sSQL, objConn)
+
+        objCmd.Parameters.Add("@emp_id", SqlDbType.Char, 9)
+        objCmd.Parameters.Item("@emp_id").Value = "MSD12923F"
+
+        Try
+            objCmd.ExecuteNonQuery()
+            Console.WriteLine("Record Deleted")
+        Catch e As Exception
+            Console.WriteLine(e.ToString)
+        End Try
+        Console.WriteLine("Record Deleted")
+        Console.ReadLine()
+    End Sub
+
+End Module
+```
+
+
 ### OleDb
 The code in this example assumes that you can connect to the Microsoft Access Northwind sample database. The code creates a <xref:System.Data.OleDb.OleDbCommand> to select rows from the Products table, adding a <xref:System.Data.OleDb.OleDbParameter> to restrict the results to rows with a UnitPrice greater than the specified parameter value, in this case 5. The <xref:System.Data.OleDb.OleDbConnection> is opened inside of a `using` block, which ensures that resources are closed and disposed when the code exits. The code executes the command by using a <xref:System.Data.OleDb.OleDbDataReader>, and displays the results in the console window.
 

@@ -10,7 +10,7 @@
       href: container-docker-introduction/docker-terminology.md
     - name: Docker containers, images, and registries
       href: container-docker-introduction/docker-containers-images-registries.md
-  - name: Choose Between .NET Core and .NET Framework for Docker Containers
+  - name: Choosing Between NET Core and NET Framework for Docker Containers
     href: net-core-net-framework-containers/index.md
     items:
     - name: General guidance
@@ -25,7 +25,7 @@
       href: net-core-net-framework-containers/net-container-os-targets.md
     - name: Official .NET Docker images
       href: net-core-net-framework-containers/official-net-docker-images.md
-  - name: Architecting Container-Based and Microservice-Based Apps
+  - name: Architecting Container and Microservice Based Applications
     href: architect-microservice-container-applications/index.md
     items:
     - name: Containerizing monolithic applications
@@ -60,12 +60,12 @@
       href: architect-microservice-container-applications/resilient-high-availability-microservices.md
     - name: Orchestrating microservices and multi-container applications for high scalability and availability
       href: architect-microservice-container-applications/scalable-available-multi-container-microservice-applications.md
-  - name: Development Process for Docker-Based Apps
+  - name: Development Process for Docker Based Applications
     href: docker-application-development-process/index.md
     items:
     - name: Development workflow for Docker apps
       href: docker-application-development-process/docker-app-development-workflow.md
-  - name: Design and Develop Multi-Container and Microservice-Based .NET Apps
+  - name: Designing and Developing Multi Container and Microservice Based NET Applications
     href: multi-container-microservice-net-applications/index.md
     items:
     - name: Designing a microservice-oriented application
@@ -88,7 +88,7 @@
       href: multi-container-microservice-net-applications/background-tasks-with-ihostedservice.md
     - name: Implementing API Gateways with Ocelot
       href: multi-container-microservice-net-applications/implement-api-gateways-with-ocelot.md
-  - name: Tackle Business Complexity in a Microservice with DDD and CQRS Patterns
+  - name: Tackling Business Complexity in a Microservice with DDD and CQRS Patterns
     href: microservice-ddd-cqrs-patterns/index.md
     items:
     - name: Applying simplified CQRS and DDD patterns in a microservice
@@ -125,7 +125,7 @@
       href: microservice-ddd-cqrs-patterns/microservice-application-layer-web-api-design.md
     - name: Implementing the microservice application layer using the Web API
       href: microservice-ddd-cqrs-patterns/microservice-application-layer-implementation-web-api.md
-  - name: Implement Resilient Apps
+  - name: Implementing Resilient Applications
     href: implement-resilient-applications/index.md
     items:
     - name: Handling partial failure
@@ -144,7 +144,7 @@
       href: implement-resilient-applications/implement-circuit-breaker-pattern.md
     - name: Health monitoring
       href: implement-resilient-applications/monitor-app-health.md
-  - name: Secure .NET Microservices and Web Apps
+  - name: Securing NET Microservices and Web Applications
     href: secure-net-microservices-web-applications/index.md
     items:
     - name: About authorization in .NET microservices and web applications

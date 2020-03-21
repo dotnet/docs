@@ -45,7 +45,31 @@
         "exclude": [
           "**/README.md",
           "inactive/**",
-          "rejected/**"        ]
+          "rejected/**",
+
+          "csharp-6.0/enum-base-type.md",
+
+          "csharp-7.0/expression-bodied-everything.md",
+          "csharp-7.0/ref-locals-returns.md",
+          "csharp-7.0/tuples.md",
+          "csharp-7.0/value-task.md",
+
+          "csharp-7.2/readonly-struct.md",
+          "csharp-7.2/ref-extension-methods.md",
+          "csharp-7.2/ref-struct-and-span.md",
+
+          "csharp-7.3/enum-delegate-constraints.md",
+          "csharp-7.3/ref-loops.md",
+
+          "csharp-8.0/alternative-interpolated-verbatim.md",
+          "csharp-8.0/async-using.md",
+          "csharp-8.0/constraints-in-overrides.md",
+          "csharp-8.0/constructed-unmanaged.md",
+          "csharp-8.0/notnull-constraint.md",
+          "csharp-8.0/obsolete-accessor.md",
+          "csharp-8.0/shadowing-in-nested-functions.md",
+          "csharp-8.0/unconstrained-null-coalescing.md"
+        ]
       },
       {
         "files": [

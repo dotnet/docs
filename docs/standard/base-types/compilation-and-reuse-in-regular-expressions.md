@@ -28,9 +28,9 @@ You can optimize the performance of applications that make extensive use of regu
   
  The maximum number of cached regular expressions is determined by the value of the `static` (`Shared` in Visual Basic) <xref:System.Text.RegularExpressions.Regex.CacheSize%2A?displayProperty=nameWithType> property. By default, the regular expression engine caches up to 15 compiled regular expressions. If the number of compiled regular expressions exceeds the cache size, the least recently used regular expression is discarded and the new regular expression is cached.  
   
- Your application can take advantage of precompiled regular expressions in one of the following two ways:  
+ Your application can reuse regular expressions in one of the following two ways:  
   
-- By using a static method of the <xref:System.Text.RegularExpressions.Regex> object to define the regular expression. If you are using a regular expression pattern that has already been defined in another static method call, the regular expression engine will retrieve it from the cache. If not, the engine will compile the regular expression and add it to the cache.  
+- By using a static method of the <xref:System.Text.RegularExpressions.Regex> object to define the regular expression. If you are using a regular expression pattern that has already been defined in another static method call, the regular expression engine will retrieve it from the cache, if it's still available. If not, or if it's not still available, the engine will compile the regular expression and add it to the cache.  
   
 - By reusing an existing <xref:System.Text.RegularExpressions.Regex> object as long as its regular expression pattern is needed.  
   

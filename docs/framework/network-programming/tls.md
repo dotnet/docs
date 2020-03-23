@@ -115,7 +115,7 @@ The WCF framework automatically chooses the highest protocol available up to TLS
 
 ### For .NET Framework 3.5 - 4.5.2 and not WCF
 
-We recommend you upgrade your app to .NET Framework 4.7 or later versions. If you cannot upgrade, take the following steps. At some point in the future, your application may fail until you upgrade to .NET Framework 4.7 or later versions.
+We recommend you upgrade your app to .NET Framework 4.7 or later versions. If you cannot upgrade, take the following steps.
 
 Set the [SchUseStrongCrypto](#schusestrongcrypto) and [SystemDefaultTlsVersions](#systemdefaulttlsversions) registry keys to 1. See [Configuring security via the Windows Registry](#configuring-security-via-the-windows-registry). The .NET Framework version 3.5 supports the `SchUseStrongCrypto` flag only when an explicit TLS value is passed.
 

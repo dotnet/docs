@@ -65,7 +65,7 @@ public class FlashTrackBar : Control {
    // changed. Derived controls can override this method.
    protected virtual void OnValueChanged(EventArgs e)
    {  
-       ValueChanged?.Invoke(this, e);  
+       onValueChanged?.Invoke(this, e);  
    }  
 }  
 ```  

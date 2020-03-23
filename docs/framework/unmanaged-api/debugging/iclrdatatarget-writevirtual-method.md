@@ -24,7 +24,7 @@ Writes data from the specified buffer to the specified virtual memory address.
 ```cpp  
 HRESULT WriteVirtual (  
     [in] CLRDATA_ADDRESS    address,  
-    [in, size_is(bytesRequested)]   
+    [in, size_is(bytesRequested)]
         BYTE                *buffer,  
     [in] ULONG32            bytesRequested,  
     [out] ULONG32           *bytesWritten  

@@ -143,7 +143,7 @@ public:
         HCEESECTION section, ULONG num, ULONG size, ULONG offset = 0);  
   
     virtual HRESULT EmitMetaDataEx (HCEEFILE ceeFile,  
-        IMetaDataEmit *emitter);   
+        IMetaDataEmit *emitter);
   
     virtual HRESULT EmitLibraryNameEx (HCEEFILE ceeFile,  
         IMetaDataEmit *emitter);  

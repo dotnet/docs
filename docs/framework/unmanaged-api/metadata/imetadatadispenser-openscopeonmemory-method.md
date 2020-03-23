@@ -23,10 +23,10 @@ Opens an area of memory that contains existing metadata. That is, this method op
   
 ```cpp  
 HRESULT OpenScopeOnMemory (  
-    [in]  LPCVOID     pData,   
-    [in]  ULONG       cbData,   
-    [in]  DWORD       dwOpenFlags,   
-    [in]  REFIID      riid,   
+    [in]  LPCVOID     pData,
+    [in]  ULONG       cbData,
+    [in]  DWORD       dwOpenFlags,
+    [in]  REFIID      riid,
     [out] IUnknown    **ppIUnk  
 );  
 ```  

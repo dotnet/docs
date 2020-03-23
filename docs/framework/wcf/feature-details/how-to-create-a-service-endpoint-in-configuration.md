@@ -67,7 +67,7 @@ Endpoints provide clients with access to the functionality a Windows Communicati
  The base address is specified using the `add` element, under service/host/baseAddresses, as shown in the following sample.  
   
 ```xml  
-<service   
+<service
     name="Microsoft.ServiceModel.Samples.CalculatorService">  
   <host>  
     <baseAddresses>  
@@ -80,7 +80,7 @@ Endpoints provide clients with access to the functionality a Windows Communicati
  The first endpoint definition shown in the following sample specifies a relative address, which means the endpoint address is a combination of the base address and the relative address following the rules of Uniform Resource Identifier (URI) composition. The relative address is empty (""), so the endpoint address is the same as the base address. The actual endpoint address is `http://localhost:8000/servicemodelsamples/service`.  
   
 ```xml  
-<endpoint address=""   
+<endpoint address=""
     binding="wsHttpBinding"  
     contract="Microsoft.ServiceModel.Samples.ICalculator" />  
 ```  

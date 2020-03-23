@@ -163,5 +163,4 @@ The `dotnet publish` command's output is ready for deployment to a hosting syste
 - [Target frameworks](../../standard/frameworks.md)
 - [Runtime IDentifier (RID) catalog](../rid-catalog.md)
 - [Working with macOS Catalina Notarization](../install/macos-notarization-issues.md)
- For more information, see he following resources:
 - [Directory structure of a published application](/aspnet/core/hosting/directory-structure)

@@ -22,11 +22,11 @@ Sets or updates the feature, stored at the specified relative virtual address, o
 ## Syntax  
   
 ```cpp  
-HRESULT SetMethodProps (   
-    [in]  mdMethodDef md,   
+HRESULT SetMethodProps (
+    [in]  mdMethodDef md,
     [in]  DWORD       dwMethodFlags,  
-    [in]  ULONG       ulCodeRVA,   
-    [in]  DWORD       dwImplFlags   
+    [in]  ULONG       ulCodeRVA,
+    [in]  DWORD       dwImplFlags
 );  
 ```  
   

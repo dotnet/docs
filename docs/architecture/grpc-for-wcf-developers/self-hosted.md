@@ -102,7 +102,7 @@ ExecStart=/usr/sbin/myapp
 WantedBy=multi-user.target
 ```
 
-The `Type=notify` property tells `systemd` that the application will notify it on startup and shutdown. The `WantedBy=multi-user.target` setting will cause the service to start when the Linux system reaches "runlevel 2," which means a non-graphical multi-user shell is active.
+The `Type=notify` property tells `systemd` that the application will notify it on startup and shutdown. The `WantedBy=multi-user.target` setting will cause the service to start when the Linux system reaches "runlevel 2," which means a non-graphical, multi-user shell is active.
 
 Before `systemd` will recognize the service, it needs to reload its configuration. You control `systemd` by using the `systemctl` command. After reloading, use the `status` subcommand to confirm that the application has registered successfully.
 
@@ -147,7 +147,7 @@ sudo journalctl -u myapp
 > [!TIP]
 > If you have a GUI environment available on your host, a few graphical log viewers are available for Linux, such as *QJournalctl* and *gnome-logs*.
 
-To learn more about querying the `systemd` journal from the command line by using `journalctl`, see [the man pages](https://manpages.debian.org/buster/systemd/journalctl.1).
+To learn more about querying the `systemd` journal from the command line by using `journalctl`, see [the manpages](https://manpages.debian.org/buster/systemd/journalctl.1).
 
 ## HTTPS certificates for self-hosted applications
 

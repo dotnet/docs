@@ -12,7 +12,9 @@ Service contracts often need to be created from existing services. In .NET Frame
 
 ```xml
 <xsd:complexType>
-<xsd:simpleType>
+ <xsd:simpleType>
+ </xsd:simpleType>
+</xsd:complexType>
 ```
 
  Simple types will not be generated if they are primitives such as `Int16` or `String`; complex types will not be generated if they are of type `Collection`. Types will also not be generated if they are part of another `xsd:complexType`. In all these cases, the types will be referenced to existing types in the project instead.
@@ -90,13 +92,13 @@ Service contracts often need to be created from existing services. In .NET Frame
 - **NamespaceMappings**: This setting specifies the mappings from the XSD Target Namespaces to CLR namespaces. Each mapping should use the following format:
 
     ```xml
-    "<Schema Namespace>, <CLR Namespace>"
+    "Schema Namespace, CLR Namespace"
     ```
 
      The XML Serializer only accepts one mapping in the following format:
 
     ```xml
-    "*, <CLR Namespace>"
+    "*, CLR Namespace"
     ```
 
 - **OutputDirectory**: This setting specifies the directory where the code files will be generated.

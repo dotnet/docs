@@ -10,11 +10,11 @@ This sample demonstrates the use of reliable sessions. Reliable sessions provide
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\WS\wsReliableSession`  
   
  This sample is based on the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) that implements a calculator service. The reliable session features are enabled and configured in the application configuration files for the client and service.  
@@ -29,7 +29,7 @@ This sample demonstrates the use of reliable sessions. Reliable sessions provide
 ```xml  
 <endpoint address=""  
           binding="wsHttpBinding"  
-          bindingConfiguration="Binding1"   
+          bindingConfiguration="Binding1"
           contract="Microsoft.ServiceModel.Samples.ICalculator" />  
 ```  
   

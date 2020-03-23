@@ -23,7 +23,7 @@ Requests that the host create a new task.
   
 ```cpp  
 HRESULT CreateTask (  
-    [in]  DWORD stacksize,   
+    [in]  DWORD stacksize,
     [in]  LPTHREAD_START_ROUTINE pStartAddress,  
     [in]  PVOID pParameter,  
     [out] IHostTask **ppTask  

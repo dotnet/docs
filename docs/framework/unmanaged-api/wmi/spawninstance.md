@@ -16,7 +16,7 @@ topic_type:
   - "Reference"
 ---
 # SpawnInstance function
-Creates a new instance of a class.    
+Creates a new instance of a class.
   
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   
@@ -24,10 +24,10 @@ Creates a new instance of a class.
   
 ```cpp  
 HRESULT SpawnInstance (
-   [in] int                  vFunc, 
-   [in] IWbemClassObject*    ptr, 
+   [in] int                  vFunc,
+   [in] IWbemClassObject*    ptr,
    [in] LONG                 lFlags,
-   [out] IWbemClassObject**  ppNewInstance); 
+   [out] IWbemClassObject**  ppNewInstance);
 ```  
 
 ## Parameters

@@ -19,12 +19,12 @@ Represents a collection of queries that are used to track an activity scheduled 
   
 ## Syntax  
   
-```xml 
+```xml
 <tracking>
   <trackingProfile name="Name">
     <workflow>
       <activityScheduledQueries>
-        <activityScheduledQuery activityName="String" 
+        <activityScheduledQuery activityName="String"
                                 childActivityName="String"/>
       </activityScheduledQueries>
     </workflow>

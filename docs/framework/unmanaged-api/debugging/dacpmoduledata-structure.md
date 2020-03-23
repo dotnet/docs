@@ -28,7 +28,7 @@ Defines a transport buffer for a module's runtime information.
 struct DacpModuleData
 {
     CLRDATA_ADDRESS Address;
-    CLRDATA_ADDRESS File; 
+    CLRDATA_ADDRESS File;
     CLRDATA_ADDRESS  ilBase;
     char payLoad[132];
 };

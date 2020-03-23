@@ -14,7 +14,7 @@ Rotation in a four-dimensional color space is difficult to visualize. We can mak
   
  ![Illustration that shows rotation with red, green, and blue axes.](./media/how-to-rotate-colors/rotation-red-green-blue-axes.gif)  
   
- A color can be thought of as a point in 3-D space. For example, the point (1, 0, 0) in space represents the color red, and the point (0, 1, 0) in space represents the color green.  
+ A color can be thought of as a point in 3D space. For example, the point (1, 0, 0) in space represents the color red, and the point (0, 1, 0) in space represents the color green.  
   
  The following illustration shows what it means to rotate the color (1, 0, 0) through an angle of 60 degrees in the Red-Green plane. Rotation in a plane parallel to the Red-Green plane can be thought of as rotation about the blue axis.  
   

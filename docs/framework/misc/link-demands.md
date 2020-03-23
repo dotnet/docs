@@ -35,7 +35,7 @@ ms.assetid: a33fd5f9-2de9-4653-a4f0-d9df25082c4d
 <CustomPermissionAttribute(SecurityAction.LinkDemand)> _  
 Public Shared Function ReadData() As String  
     ' Access a custom resource.  
-End Function    
+End Function
 ```  
   
 ```csharp  

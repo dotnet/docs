@@ -132,7 +132,7 @@ namespace list_tutorial
         {
             WorkingWithStrings();
         }
-        
+
         static void WorkingWithStrings()
         {
             var names = new List<string> { "<name>", "Ana", "Felipe" };

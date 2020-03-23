@@ -28,7 +28,7 @@ The Membership and Role Provider sample demonstrates how a service can use the A
 ```xml  
 <!-- Set the connection string for SQL Server -->  
 <connectionStrings>  
-  <add name="SqlConn"   
+  <add name="SqlConn"
        connectionString="Data Source=localhost;Integrated Security=SSPI;Initial Catalog=aspnetdb;" />  
 </connectionStrings>  
   
@@ -37,9 +37,9 @@ The Membership and Role Provider sample demonstrates how a service can use the A
   <membership defaultProvider="SqlMembershipProvider" userIsOnlineTimeWindow="15">  
     <providers>  
       <clear />  
-      <add   
-        name="SqlMembershipProvider"   
-        type="System.Web.Security.SqlMembershipProvider"   
+      <add
+        name="SqlMembershipProvider"
+        type="System.Web.Security.SqlMembershipProvider"
         connectionStringName="SqlConn"  
         applicationName="MembershipAndRoleProviderSample"  
         enablePasswordRetrieval="false"  
@@ -51,12 +51,12 @@ The Membership and Role Provider sample demonstrates how a service can use the A
   </membership>  
   
   <!-- Configure the Sql Role Provider -->  
-  <roleManager enabled ="true"   
+  <roleManager enabled ="true"
                defaultProvider ="SqlRoleProvider" >  
     <providers>  
-      <add name ="SqlRoleProvider"   
-           type="System.Web.Security.SqlRoleProvider"   
-           connectionStringName="SqlConn"   
+      <add name ="SqlRoleProvider"
+           type="System.Web.Security.SqlRoleProvider"
+           connectionStringName="SqlConn"
            applicationName="MembershipAndRoleProviderSample"/>  
     </providers>  
   </roleManager>  
@@ -91,11 +91,11 @@ The Membership and Role Provider sample demonstrates how a service can use the A
                               roleProviderName ="SqlRoleProvider" />  
         <serviceCredentials>  
           <!-- Configure user name authentication to use the Membership Provider -->  
-          <userNameAuthentication userNamePasswordValidationMode ="MembershipProvider"   
+          <userNameAuthentication userNamePasswordValidationMode ="MembershipProvider"
                                   membershipProviderName ="SqlMembershipProvider"/>  
           <!-- Configure the service certificate -->  
-          <serviceCertificate storeLocation ="LocalMachine"   
-                              storeName ="My"   
+          <serviceCertificate storeLocation ="LocalMachine"
+                              storeName ="My"
                               x509FindType ="FindBySubjectName"  
                               findValue ="localhost" />  
         </serviceCredentials>  

@@ -31,9 +31,9 @@ This sample demonstrates how to configure a <xref:System.ServiceModel.WSHttpBind
 <system.serviceModel>  
   <client>  
     <endpoint address=  
-            "http://localhost/servicemodelsamples/service.svc"   
-            binding="wsHttpBinding"   
-            bindingConfiguration="Binding1"   
+            "http://localhost/servicemodelsamples/service.svc"
+            binding="wsHttpBinding"
+            bindingConfiguration="Binding1"
             contract="Microsoft.ServiceModel.Samples.ICalculator" />  
   </client>  
   

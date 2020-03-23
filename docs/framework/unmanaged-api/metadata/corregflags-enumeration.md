@@ -21,7 +21,7 @@ Provides flag values used for registration when installing a module or composite
 ## Syntax  
   
 ```cpp  
-typedef enum   
+typedef enum
 {  
     regNoCopy  = 0x00000001,  
     regConfig  = 0x00000002,  

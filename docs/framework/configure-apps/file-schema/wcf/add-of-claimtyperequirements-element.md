@@ -75,4 +75,3 @@ Specifies the types of required and optional claims expected to appear in the fe
 - <xref:System.ServiceModel.Configuration.FederatedMessageSecurityOverHttpElement.ClaimTypeRequirements%2A>
 - <xref:System.ServiceModel.Configuration.ClaimTypeElementCollection>
 - <xref:System.ServiceModel.Configuration.ClaimTypeElement>
- 

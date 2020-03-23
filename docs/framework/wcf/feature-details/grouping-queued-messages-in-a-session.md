@@ -39,7 +39,7 @@ Windows Communication Foundation (WCF) provides a session that allows you to gro
 4. Each service operation requires a transaction. Specify this with the <xref:System.ServiceModel.OperationBehaviorAttribute> attribute. The operation that completes the transaction should also set <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionAutoComplete> to `true`.  
   
     ```csharp  
-    [OperationBehavior(TransactionScopeRequired = true, TransactionAutoComplete = true)]   
+    [OperationBehavior(TransactionScopeRequired = true, TransactionAutoComplete = true)]
     ```  
   
 5. Configure an endpoint that uses the system-provided `NetMsmqBinding` binding.  

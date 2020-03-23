@@ -23,8 +23,8 @@ Opens the discretionary access token associated with the currently executing thr
   
 ```cpp  
 HRESULT OpenThreadToken (  
-    [in]  DWORD    dwDesiredAccess,   
-    [in]  BOOL     bOpenAsSelf,   
+    [in]  DWORD    dwDesiredAccess,
+    [in]  BOOL     bOpenAsSelf,
     [out] HANDLE   *phThreadToken  
 );  
 ```  

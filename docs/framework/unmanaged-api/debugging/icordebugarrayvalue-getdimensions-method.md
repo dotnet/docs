@@ -24,7 +24,7 @@ Gets the number of elements in each dimension of this array.
 ```cpp  
 HRESULT GetDimensions (  
     [in] ULONG32         cdim,  
-    [out, size_is(cdim), length_is(cdim)]   
+    [out, size_is(cdim), length_is(cdim)]
         ULONG32          dims[]  
 );  
 ```  

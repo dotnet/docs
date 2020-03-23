@@ -36,7 +36,7 @@ TREAT ( expression as type)
 ```sql  
 SELECT TREAT(p AS NamespaceName.Employee)  
 FROM ContainerName.Person AS p  
-WHERE p IS OF (NamespaceName.Employee)   
+WHERE p IS OF (NamespaceName.Employee)
 ```  
   
  This query upcasts `Person` entities to the `Employee` type. If the value of p is not actually of type `Employee`, the expression yields the value `null`.  

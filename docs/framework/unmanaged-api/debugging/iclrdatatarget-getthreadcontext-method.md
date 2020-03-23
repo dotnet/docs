@@ -26,7 +26,7 @@ HRESULT GetThreadContext (
     [in] ULONG32            threadID,  
     [in] ULONG32            contextFlags,  
     [in] ULONG32            contextSize,  
-    [out, size_is(contextSize)]   
+    [out, size_is(contextSize)]
         BYTE                *context  
 );  
 ```  

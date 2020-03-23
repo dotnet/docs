@@ -30,7 +30,7 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
    <serviceBehaviors>  
     <behavior name="ServiceBehavior1">  
      <serviceCredentials>  
-      <serviceCertificate findValue="000000000000000000000000000"   
+      <serviceCertificate findValue="000000000000000000000000000"
                           storeLocation="CurrentUser"  
       storeName="Root" x509FindType="FindByThumbprint" />  
      </serviceCredentials>  
@@ -61,8 +61,8 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
 ```xml  
 <issuedTokenAuthentication>  
    <knownCertificates>  
-      <add findValue="www.contoso.com"   
-           storeLocation="LocalMachine" storeName="My"   
+      <add findValue="www.contoso.com"
+           storeLocation="LocalMachine" storeName="My"
            X509FindType="FindBySubjectName" />  
     </knownCertificates>  
 </issuedTokenAuthentication>  
@@ -93,11 +93,11 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
  <endpointBehaviors>  
   <behavior name="EndpointBehavior1">  
    <clientCredentials>  
-    <clientCertificate findValue="cn=www.contoso.com"     
+    <clientCertificate findValue="cn=www.contoso.com"
         storeLocation="LocalMachine"  
         storeName="AuthRoot" x509FindType="FindBySubjectName" />  
     <serviceCertificate>  
-     <defaultCertificate findValue="www.cohowinery.com"   
+     <defaultCertificate findValue="www.cohowinery.com"
                     storeLocation="LocalMachine"  
                     storeName="Root" x509FindType="FindByIssuerName" />  
     <authentication revocationMode="Online"  
@@ -128,7 +128,7 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
    <issuedToken>  
       <issuerChannelBehaviors>  
          <add issuerAddress="http://www.contoso.com"  
-               behaviorConfiguration="clientBehavior1" />     
+               behaviorConfiguration="clientBehavior1" />
 ```  
   
 #### \<serviceCertificate> Element  
@@ -149,13 +149,13 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
   
 ```xml  
 <system.web>  
-  <membership defaultProvider="SqlProvider"   
+  <membership defaultProvider="SqlProvider"
    userIsOnlineTimeWindow="15">  
      <providers>  
        <clear />  
-       <add   
-          name="SqlProvider"   
-          type="System.Web.Security.SqlMembershipProvider"   
+       <add
+          name="SqlProvider"
+          type="System.Web.Security.SqlMembershipProvider"
           connectionStringName="SqlConn"  
           applicationName="MembershipProvider"  
           enablePasswordRetrieval="false"  
@@ -173,10 +173,10 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
   
 ```xml  
 <behaviors>  
- <behavior name="ServiceBehaviour">          
-  <serviceAuthorization principalPermissionMode ="UseAspNetRoles"   
+ <behavior name="ServiceBehaviour">
+  <serviceAuthorization principalPermissionMode ="UseAspNetRoles"
                         roleProviderName ="SqlProvider" />  
-</behavior>   
+</behavior>
    <!-- Other configuration code not shown. -->  
 </behaviors>  
 ```  
@@ -188,9 +188,9 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
 <system.serviceModel>  
 <serviceBehaviors>  
   <behavior name="NewBehavior">  
-    <serviceSecurityAudit auditLogLocation="Application"   
+    <serviceSecurityAudit auditLogLocation="Application"
              suppressAuditFailure="true"  
-             serviceAuthorizationAuditLevel="Success"   
+             serviceAuthorizationAuditLevel="Success"
              messageAuthenticationAuditLevel="Success" />  
     </behavior>  
   </serviceBehaviors>  
@@ -204,7 +204,7 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
 <behaviors>  
  <serviceBehaviors>  
   <behavior name="NewBehavior">  
-    <serviceMetadata httpsGetEnabled="true"   
+    <serviceMetadata httpsGetEnabled="true"
      httpsGetUrl="https://myComputerName/myEndpoint" />  
   </behavior>  
  </serviceBehaviors>  

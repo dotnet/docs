@@ -2,7 +2,7 @@
 title: "Maximize 3D Performance"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
-  - "3-D graphics [WPF]"
+  - "3D graphics [WPF]"
 ms.assetid: 4bcf949d-d92f-4d8d-8a9b-1e4c61b25bf6
 ---
 # Maximize WPF 3D Performance
@@ -55,4 +55,4 @@ As you use the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-win
   
 ## See also
 
-- [3-D Graphics Overview](3-d-graphics-overview.md)
+- [3D Graphics Overview](3-d-graphics-overview.md)

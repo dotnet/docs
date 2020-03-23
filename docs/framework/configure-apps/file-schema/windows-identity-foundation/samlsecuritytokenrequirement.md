@@ -21,7 +21,7 @@ Provides configuration for the <xref:System.IdentityModel.Tokens.SamlSecurityTok
   <identityConfiguration>  
     <securityTokenHandlers>  
       <add>  
-        <samlSecurityTokenRequirement   
+        <samlSecurityTokenRequirement
             issuerCertificateValidationMode="None||ChainTrust||PeerTrust||PeerOrChainTrust||Custom"  
             issuerCertificateRevocationMode="NoCheck||Offline||Online"  
             issuerCertificateTrustedStoreLocation="CurrentLocation||LocalMachine"  

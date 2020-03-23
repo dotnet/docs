@@ -22,9 +22,9 @@ Establishes that the specified member, as defined by a prior call to [IMetaDataE
 ## Syntax  
   
 ```cpp  
-HRESULT SetParent (   
-    [in]  mdMemberRef mr,   
-    [in]  mdToken     tk   
+HRESULT SetParent (
+    [in]  mdMemberRef mr,
+    [in]  mdToken     tk
 );  
 ```  
   

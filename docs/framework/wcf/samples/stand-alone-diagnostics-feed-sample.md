@@ -18,7 +18,7 @@ This sample demonstrates how to create an RSS/Atom feed for syndication with Win
         //(the part of the request URI after the endpoint address)  
         //using the HTTP GET method. The UriTemplate specifies a relative  
         //path of 'feed', and specifies that the format is  
-        //supplied using a query string.   
+        //supplied using a query string.
         [WebGet(UriTemplate="feed?format={format}")]  
         [ServiceKnownType(typeof(Atom10FeedFormatter))]  
         [ServiceKnownType(typeof(Rss20FeedFormatter))]  

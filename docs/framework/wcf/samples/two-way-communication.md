@@ -22,7 +22,7 @@ This sample demonstrates how to perform transacted two-way queued communication 
 public interface IOrderProcessor  
 {  
     [OperationContract(IsOneWay = true)]  
-    void SubmitPurchaseOrder(PurchaseOrder po, string   
+    void SubmitPurchaseOrder(PurchaseOrder po, string
                                   reportOrderStatusTo);  
 }
 ```
@@ -143,11 +143,11 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(OrderStatusService)))
 [ServiceBehavior]  
 public class OrderStatusService : IOrderStatus  
 {  
-    [OperationBehavior(TransactionAutoComplete = true,   
+    [OperationBehavior(TransactionAutoComplete = true,
                         TransactionScopeRequired = true)]  
     public void OrderStatus(string poNumber, string status)  
     {  
-        Console.WriteLine("Status of order {0}:{1} ", poNumber ,   
+        Console.WriteLine("Status of order {0}:{1} ", poNumber ,
                                                            status);  
     }  
 }  
@@ -164,7 +164,7 @@ public class OrderStatusService : IOrderStatus
 <system.serviceModel>  
   
   <services>  
-    <service   
+    <service
        name="Microsoft.ServiceModel.Samples.OrderStatusService">  
       <!-- Define NetMsmqEndpoint -->  
       <endpoint address="net.msmq://localhost/private/ServiceModelSamplesTwo-way/OrderStatus"  
@@ -176,8 +176,8 @@ public class OrderStatusService : IOrderStatus
   <client>  
     <!-- Define NetMsmqEndpoint -->  
     <endpoint name="OrderProcessorEndpoint"  
-              address="net.msmq://localhost/private/ServiceModelSamplesTwo-way/OrderProcessor"   
-              binding="netMsmqBinding"   
+              address="net.msmq://localhost/private/ServiceModelSamplesTwo-way/OrderProcessor"
+              binding="netMsmqBinding"
               contract="Microsoft.ServiceModel.Samples.IOrderProcessor" />  
   </client>  
   
@@ -237,12 +237,12 @@ Status of order 124a1f69-3699-4b16-9bcc-43147a8756fc:Pending
   
       <system.serviceModel>  
         <services>  
-          <service   
+          <service
               name="Microsoft.ServiceModel.Samples.OrderProcessorService">  
             <!-- Define NetMsmqEndpoint -->  
             <endpoint address="net.msmq://localhost/private/ServiceModelSamplesTwo-way/OrderProcessor"  
                       binding="netMsmqBinding"  
-                      bindingConfiguration="TransactedBinding"   
+                      bindingConfiguration="TransactedBinding"
                       contract="Microsoft.ServiceModel.Samples.IOrderProcessor" />  
           </service>  
         </services>  
@@ -273,7 +273,7 @@ Status of order 124a1f69-3699-4b16-9bcc-43147a8756fc:Pending
       <system.serviceModel>  
   
         <services>  
-          <service   
+          <service
              name="Microsoft.ServiceModel.Samples.OrderStatusService">  
             <!-- Define NetMsmqEndpoint -->  
             <endpoint address="net.msmq://localhost/private/ServiceModelSamplesTwo-way/OrderStatus"  
@@ -285,8 +285,8 @@ Status of order 124a1f69-3699-4b16-9bcc-43147a8756fc:Pending
         <client>  
           <!-- Define NetMsmqEndpoint -->  
           <endpoint name="OrderProcessorEndpoint"  
-                    address="net.msmq://localhost/private/ServiceModelSamplesTwo-way/OrderProcessor"   
-                    binding="netMsmqBinding"   
+                    address="net.msmq://localhost/private/ServiceModelSamplesTwo-way/OrderProcessor"
+                    binding="netMsmqBinding"
                     bindingConfiguration="TransactedBinding"  
                     contract="Microsoft.ServiceModel.Samples.IOrderProcessor" />  
         </client>  
@@ -318,9 +318,9 @@ Status of order 124a1f69-3699-4b16-9bcc-43147a8756fc:Pending
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Binding\Net\MSMQ\Two-Way`  

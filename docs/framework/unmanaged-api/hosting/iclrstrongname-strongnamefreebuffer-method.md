@@ -22,7 +22,7 @@ Frees memory that was allocated with a previous call to a strong name method suc
 ## Syntax  
   
 ```cpp  
-HRESULT StrongNameFreeBuffer (   
+HRESULT StrongNameFreeBuffer (
    [in] BYTE   *pbMemory  
 );  
 ```  

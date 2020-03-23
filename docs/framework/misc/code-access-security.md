@@ -32,7 +32,7 @@ ms.assetid: 859af632-c80d-4736-8d6f-1e01b09ce127
   
  All managed code that targets the common language runtime receives the benefits of code access security, even if that code does not make a single code access security call. For more information, see [Code Access Security Basics](code-access-security-basics.md).  
   
-<a name="key_functions"></a>   
+<a name="key_functions"></a>
 ## Key Functions of Code Access Security  
  Code access security helps limit the access that code has to protected resources and operations. In the .NET Framework, code access security performs the following functions:  
   
@@ -44,7 +44,7 @@ ms.assetid: 859af632-c80d-4736-8d6f-1e01b09ce127
   
 - Enforces restrictions on code at run time by comparing the granted permissions of every caller on the call stack to the permissions that callers must have.  
   
-<a name="walking_the_call_stack"></a>   
+<a name="walking_the_call_stack"></a>
 ## Walking the Call Stack  
  To determine whether code is authorized to access a resource or perform an operation, the runtime's security system walks the call stack, comparing the granted permissions of each caller to the permission being demanded. If any caller in the call stack does not have the demanded permission, a security exception is thrown and access is refused. The stack walk is designed to help prevent luring attacks, in which less-trusted code calls highly trusted code and uses it to perform unauthorized actions. Demanding permissions of all callers at run time affects performance, but it is essential to help protect code from luring attacks by less-trusted code. To optimize performance, you can have your code perform fewer stack walks; however, you must be sure that you do not expose a security weakness whenever you do this.  
   
@@ -53,7 +53,7 @@ ms.assetid: 859af632-c80d-4736-8d6f-1e01b09ce127
  ![Code access security](media/slide-10a.gif "slide_10a")  
 Security stack walk  
   
-<a name="related_topics"></a>   
+<a name="related_topics"></a>
 ## Related Topics  
   
 |Title|Description|  

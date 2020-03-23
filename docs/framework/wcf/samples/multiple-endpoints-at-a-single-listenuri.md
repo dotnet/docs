@@ -19,15 +19,15 @@ This sample demonstrates a service that hosts multiple endpoints at a single `Li
 ```xml  
 <endpoint address="urn:Stuff"  
         binding="wsHttpBinding"  
-        contract="Microsoft.ServiceModel.Samples.ICalculator"   
+        contract="Microsoft.ServiceModel.Samples.ICalculator"
         listenUri="http://localhost/servicemodelsamples/service.svc" />  
 <endpoint address="urn:Stuff"  
         binding="wsHttpBinding"  
-        contract="Microsoft.ServiceModel.Samples.IEcho"   
+        contract="Microsoft.ServiceModel.Samples.IEcho"
         listenUri="http://localhost/servicemodelsamples/service.svc" />  
 <endpoint address="urn:OtherEcho"  
         binding="wsHttpBinding"  
-        contract="Microsoft.ServiceModel.Samples.IEcho"   
+        contract="Microsoft.ServiceModel.Samples.IEcho"
         listenUri="http://localhost/servicemodelsamples/service.svc" />  
 ```  
   
@@ -66,9 +66,9 @@ calcClient.ChannelFactory.Endpoint.Behaviors.Add(
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Services\MultipleEndpointsSingleUri`  

@@ -90,7 +90,7 @@ public class Entry
     }  
   
     public static void Target()  
-    {          
+    {
     }  
   
     [DllImport("Library", CallingConvention = CallingConvention.StdCall)]  

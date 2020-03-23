@@ -50,18 +50,18 @@ The following scenario shows a Windows Communication Foundation (WCF) service an
       <serviceBehaviors>  
         <behavior name="serviceCredentialBehavior">  
           <serviceCredentials>  
-            <serviceCertificate findValue="Contoso.com"   
+            <serviceCertificate findValue="Contoso.com"
                                 storeLocation="LocalMachine"  
-                                storeName="My"   
+                                storeName="My"
                                 x509FindType="FindBySubjectName" />  
           </serviceCredentials>  
         </behavior>  
       </serviceBehaviors>  
     </behaviors>  
     <services>  
-      <service behaviorConfiguration="serviceCredentialBehavior"   
+      <service behaviorConfiguration="serviceCredentialBehavior"
                name="ServiceModel.Calculator">  
-        <endpoint address="http://localhost/Calculator"   
+        <endpoint address="http://localhost/Calculator"
                   binding="wsHttpBinding"  
                   bindingConfiguration="InteropCertificateBinding"  
                   name="WSHttpBinding_ICalculator"  
@@ -111,12 +111,12 @@ The following scenario shows a Windows Communication Foundation (WCF) service an
       <endpointBehaviors>  
         <behavior name="ClientCredentialsBehavior">  
           <clientCredentials>  
-            <clientCertificate findValue="Cohowinery.com"   
+            <clientCertificate findValue="Cohowinery.com"
                  storeLocation="CurrentUser"  
                  storeName="My"  
                  x509FindType="FindBySubjectName" />  
             <serviceCertificate>  
-              <defaultCertificate findValue="Contoso.com"   
+              <defaultCertificate findValue="Contoso.com"
                                   storeLocation="CurrentUser"  
                                   storeName="TrustedPeople"  
                                   x509FindType="FindBySubjectName" />  
@@ -129,7 +129,7 @@ The following scenario shows a Windows Communication Foundation (WCF) service an
       <wsHttpBinding>  
         <binding name="WSHttpBinding_ICalculator" >  
           <security mode="Message">  
-            <message clientCredentialType="Certificate"   
+            <message clientCredentialType="Certificate"
                      negotiateServiceCredential="false"  
                      establishSecurityContext="false" />  
           </security>  
@@ -137,9 +137,9 @@ The following scenario shows a Windows Communication Foundation (WCF) service an
       </wsHttpBinding>  
     </bindings>  
     <client>  
-      <endpoint address="http://machineName/Calculator"   
+      <endpoint address="http://machineName/Calculator"
                 behaviorConfiguration="ClientCredentialsBehavior"  
-                binding="wsHttpBinding"   
+                binding="wsHttpBinding"
                 bindingConfiguration="WSHttpBinding_ICalculator"  
                 contract="ICalculator"  
                 name="WSHttpBinding_ICalculator">  

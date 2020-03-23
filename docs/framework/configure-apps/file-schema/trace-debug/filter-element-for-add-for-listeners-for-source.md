@@ -24,8 +24,8 @@ Adds a filter to a listener in the `Listeners` collection for a trace source.
 ## Syntax  
   
 ```xml  
-<filter   
-  type="traceFilterClassName"   
+<filter
+  type="traceFilterClassName"
   initializeData="data" />  
 ```  
   
@@ -65,12 +65,12 @@ Adds a filter to a listener in the `Listeners` collection for a trace source.
 <configuration>  
   <system.diagnostics>  
     <sources>  
-      <source name="myTraceSource" switchName="SourceSwitch"   
+      <source name="myTraceSource" switchName="SourceSwitch"
         switchType="System.Diagnostics.SourceSwitch"  >  
         <listeners>  
-          <add name="console"   
+          <add name="console"
             type="System.Diagnostics.ConsoleTraceListener" >  
-            <filter type="System.Diagnostics.EventTypeFilter"   
+            <filter type="System.Diagnostics.EventTypeFilter"
               initializeData="Error" />  
           </add>  
           <remove name="Default" />  

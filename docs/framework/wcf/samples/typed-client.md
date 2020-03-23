@@ -11,7 +11,7 @@ The sample demonstrates how to obtain information from a typed client generated 
   
  The client's `Endpoint` property allows access to information about the service endpoint that the client is communicating with—including address, binding and contract information. The client's `InnerChannel` property is an instance of <xref:System.ServiceModel.IClientChannel> that allows access to information about the underlying channel, such as its state and session identifier.  
   
-```csharp   
+```csharp
 // Create a client.  
 CalculatorClient client = new CalculatorClient();  
 ...  
@@ -54,9 +54,9 @@ Press <ENTER> to terminate client.
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Client\TypedClient`  

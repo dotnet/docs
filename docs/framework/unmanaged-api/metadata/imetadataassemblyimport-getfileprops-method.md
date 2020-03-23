@@ -23,12 +23,12 @@ Gets the properties of the file with the specified metadata signature.
   
 ```cpp  
 HRESULT GetFileProps (  
-    [in]  mdFile      mdf,   
-    [out] LPWSTR      szName,   
-    [in]  ULONG       cchName,   
-    [out] ULONG       *pchName,   
-    [out] const void  **ppbHashValue,   
-    [out] ULONG       *pcbHashValue,   
+    [in]  mdFile      mdf,
+    [out] LPWSTR      szName,
+    [in]  ULONG       cchName,
+    [out] ULONG       *pchName,
+    [out] const void  **ppbHashValue,
+    [out] ULONG       *pcbHashValue,
     [out] DWORD       *pdwFileFlags  
 );  
 ```  

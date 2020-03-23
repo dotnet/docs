@@ -45,7 +45,31 @@
         "exclude": [
           "**/README.md",
           "inactive/**",
-          "rejected/**"        ]
+          "rejected/**",
+
+          "csharp-6.0/enum-base-type.md",
+
+          "csharp-7.0/expression-bodied-everything.md",
+          "csharp-7.0/ref-locals-returns.md",
+          "csharp-7.0/tuples.md",
+          "csharp-7.0/value-task.md",
+
+          "csharp-7.2/readonly-struct.md",
+          "csharp-7.2/ref-extension-methods.md",
+          "csharp-7.2/ref-struct-and-span.md",
+
+          "csharp-7.3/enum-delegate-constraints.md",
+          "csharp-7.3/ref-loops.md",
+
+          "csharp-8.0/alternative-interpolated-verbatim.md",
+          "csharp-8.0/async-using.md",
+          "csharp-8.0/constraints-in-overrides.md",
+          "csharp-8.0/constructed-unmanaged.md",
+          "csharp-8.0/notnull-constraint.md",
+          "csharp-8.0/obsolete-accessor.md",
+          "csharp-8.0/shadowing-in-nested-functions.md",
+          "csharp-8.0/unconstrained-null-coalescing.md"
+        ]
       },
       {
         "files": [
@@ -135,6 +159,8 @@
         "docs/framework/xaml-services/**/**.md": "None"
       },
       "feedback_product_url": {
+        "docs/azure/sdk/**/**.md": "https://github.com/azure/azure-sdk-for-net",
+        "docs/azure/sdk/**/**.yml": "https://github.com/azure/azure-sdk-for-net",
         "docs/fsharp/**/**.md": "https://github.com/Microsoft/visualfsharp",
         "docs/machine-learning/**/**.md": "https://github.com/dotnet/machinelearning",
         "docs/standard/data/sqlite/**/*.md": "https://github.com/aspnet/EntityFrameworkCore"
@@ -143,6 +169,8 @@
         "_csharplang/**/*.md": "dotnet-csharp",
         "_vblang/spec/*.md": "dotnet-visualbasic",
         "docs/architecture/**/**.md": "dotnet-architecture",
+        "docs/azure/**/**.md": "azure-dotnet",
+        "docs/azure/**/**.yml": "azure-dotnet",
         "docs/core/**/**.md": "dotnet-core",
         "docs/csharp/**/**.md": "dotnet-csharp",
         "docs/csharp/**/**.yml": "dotnet-csharp",
@@ -158,6 +186,7 @@
       "ms.topic": {
         "_csharplang/**/*.md": "language-reference",
         "_vblang/spec/*.md": "language-reference",
+        "docs/azure/**/**.md": "conceptual",
         "docs/csharp/language-reference/**/**.md": "language-reference",
         "docs/framework/additional-apis/**/**.md": "managed-reference",
         "docs/framework/unmanaged-api/**/**.md": "reference",
@@ -174,6 +203,8 @@
         "docs/visual-basic/**/**.md": "vb"
       },
       "author": {
+        "docs/azure/**/**.md": "camsoper",
+        "docs/azure/**/**.yml": "camsoper",
         "docs/architecture/**/**.md": "nishanil",
         "docs/architecture/grpc-for-wcf-developers/**/**.md": "shirhatti",
         "docs/core/**/**.md": "tdykstra",
@@ -260,6 +291,8 @@
         "_vblang/spec/*.md": "wiwagn",
         "docs/architecture/**/**.md": "nanil",
         "docs/architecture/grpc-for-wcf-developers/**/**.md": "soshir",
+        "docs/azure/**/**.md": "casoper",
+        "docs/azure/**/**.yml": "casoper",
         "docs/core/**/**.md": "dotnetcontent",
         "docs/core/compatibility/**/**.md": "gewarren",
         "docs/core/deploying/**/**.md": "adegeo",

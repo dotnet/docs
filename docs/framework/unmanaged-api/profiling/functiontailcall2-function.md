@@ -22,8 +22,8 @@ Notifies the profiler that the currently executing function is about to perform 
   
 ```cpp
 void __stdcall FunctionTailcall2 (  
-    [in] FunctionID         funcId,   
-    [in] UINT_PTR           clientData,   
+    [in] FunctionID         funcId,
+    [in] UINT_PTR           clientData,
     [in] COR_PRF_FRAME_INFO func  
 );  
 ```  

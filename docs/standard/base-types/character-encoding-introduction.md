@@ -115,7 +115,7 @@ Within the full range of code points there are two subranges:
 
 The following diagram illustrates the relationship between the BMP and the supplementary code points.
 
-:::image type="content" source="media/character-encoding-introduction/bmp-and-supplementary.png" alt-text="BMP and supplementary code points":::
+:::image type="content" source="media/character-encoding-introduction/bmp-and-supplementary.svg" alt-text="BMP and supplementary code points":::
 
 ## UTF-16 code units
 
@@ -129,7 +129,7 @@ The translation of two 16-bit values to a single 21-bit value is facilitated by 
 
 The following diagram illustrates the relationship between the BMP and the surrogate code points.
 
-:::image type="content" source="media/character-encoding-introduction/bmp-and-surrogate.png" alt-text="BMP and surrogate code points":::
+:::image type="content" source="media/character-encoding-introduction/bmp-and-surrogate.svg" alt-text="BMP and surrogate code points":::
 
 When a *high surrogate* code point (`U+D800..U+DBFF`) is immediately followed by a *low surrogate* code point (`U+DC00..U+DFFF`), the pair is interpreted as a supplementary code point by using the following formula:
 
@@ -175,7 +175,7 @@ The term [Unicode scalar value](https://www.unicode.org/glossary/#unicode_scalar
 
 The following diagram illustrates the scalar value code points.
 
-:::image type="content" source="media/character-encoding-introduction/scalar-values.png" alt-text="Scalar values":::
+:::image type="content" source="media/character-encoding-introduction/scalar-values.svg" alt-text="Scalar values":::
 
 ### The Rune type as a scalar value
 

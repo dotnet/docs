@@ -3,9 +3,9 @@ using System.Threading.Tasks;
 
 public class Example
 {
-   public static void Main()
+   public static async Task Main(string[] args)
    {
-      ExecuteAsyncMethods().Wait();
+      await ExecuteAsyncMethods();
    }
 
    private static async Task ExecuteAsyncMethods()

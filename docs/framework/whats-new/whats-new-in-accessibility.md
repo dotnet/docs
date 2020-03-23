@@ -562,7 +562,7 @@ Starting with .NET Framework 4.7.1, various WinForms controls offer improved re
 
 ```xml
 <!-- Windows 10 -->
-<supportedOS Id=”{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}” />
+<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />
 ```
 
 Some examples of high contrast changes include:

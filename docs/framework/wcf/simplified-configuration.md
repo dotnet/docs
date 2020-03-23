@@ -14,8 +14,8 @@ Configuring Windows Communication Foundation (WCF) services can be a complex tas
   <behaviors>  
     <serviceBehaviors>  
       <behavior name="MyServiceBehavior">  
-        <serviceMetadata httpGetEnabled="true">  
-        <serviceDebug includeExceptionDetailInFaults="false">  
+        <serviceMetadata httpGetEnabled="true" />  
+        <serviceDebug includeExceptionDetailInFaults="false" />  
       </behavior>  
     </serviceBehaviors>  
   </behaviors>  

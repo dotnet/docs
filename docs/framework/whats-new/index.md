@@ -421,7 +421,7 @@ You can add SameSite for <xref:System.Web.Security.FormsAuthentication> and <xre
       <forms cookieSameSite="Lax">
          <!-- ...   -->
       </forms>
-   <authentication />
+   </authentication>
    <sessionState cookieSameSite="Lax"></sessionState>
 </system.web>
 ```
@@ -494,7 +494,7 @@ The basic flow of enclave-based Always Encrypted is:
 Starting with .NET Framework 4.7.2, a diagnostic assistant can locate the <xref:System.Windows.Xps.Packaging.IXpsFixedPageReader.ResourceDictionaries> that have been created from a given source Uri. (This feature is for use by diagnostic assistants, not by production applications.) A diagnostic assistant such as Visual Studio’s “Edit-and-Continue” facility lets its user edit a ResourceDictionary with the intent that the changes be applied to the running application. One step in achieving this is finding all the ResourceDictionaries that the running application has created from the dictionary that’s being edited. For example, an application can declare a ResourceDictionary whose content is copied from a given source URI:
 
 ```xml
-<ResourceDictionary Source="MyRD.xaml">
+<ResourceDictionary Source="MyRD.xaml" />
 ```
 
 A diagnostic assistant that edits the original markup in *MyRD.xaml* can use the new feature to locate the dictionary. The feature is implemented by a new static method, <xref:System.Windows.Diagnostics.ResourceDictionaryDiagnostics.GetResourceDictionariesForSource%2A?displayProperty=nameWithType>. The diagnostic assistant calls the new method using an absolute Uri that identifies the original markup, as illustrated by the following code:

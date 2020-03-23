@@ -44,7 +44,7 @@ All apps that host the common language runtime (CLR) need to start, or *activate
     ```xml
     <configuration>
       <startup>
-        <supportedRuntime version="<version>"/>
+        <supportedRuntime version="version"/>
       </startup>
     </configuration>
     ```

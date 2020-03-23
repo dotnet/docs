@@ -49,7 +49,7 @@ Or you can generate a list of items using a normal C# `foreach` loop like this:
 <ul>
 @foreach (var item in items)
 {
-    <li>item.Text</li>
+    <li>@item.Text</li>
 }
 </ul>
 ```

@@ -7,9 +7,10 @@ helpviewer_keywords:
   - "System.Xaml [XAML Services], types migrated from WPF"
 ms.assetid: d79dabf5-a2ec-4e8d-a37a-67c4ba8a2b91
 ---
+
 # Types migrated from WPF to System.Xaml
 
-In .NET Framework 3.5 and .NET Framework 3.0, both [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)] and Windows Workflow Foundation included a XAML language implementation. Many of the public types that provided extensibility for the WPF XAML implementation existed in the WindowsBase, PresentationCore, and PresentationFramework assemblies. Likewise, public types that provided extensibility for Windows Workflow Foundation XAML existed in the System.Workflow.ComponentModel assembly. In the .NET Framework 4, some of the XAML-related types are migrated to the System.Xaml assembly. A common .NET Framework implementation of XAML language services enables many XAML extensibility scenarios that were originally defined by a specific framework's XAML implementation but are now part of overall .NET Framework 4 XAML language support. This topic lists the types that are migrated and discusses issues related to the migration.
+In .NET Framework 3.5 and .NET Framework 3.0, both Windows Presentation Foundation (WPF) and Windows Workflow Foundation included a XAML language implementation. Many of the public types that provided extensibility for the WPF XAML implementation existed in the WindowsBase, PresentationCore, and PresentationFramework assemblies. Likewise, public types that provided extensibility for Windows Workflow Foundation XAML existed in the System.Workflow.ComponentModel assembly. In the .NET Framework 4, some of the XAML-related types are migrated to the System.Xaml assembly. A common .NET Framework implementation of XAML language services enables many XAML extensibility scenarios that were originally defined by a specific framework's XAML implementation but are now part of overall .NET Framework 4 XAML language support. This topic lists the types that are migrated and discusses issues related to the migration.
 
 ## Assemblies and Namespaces
 
@@ -120,7 +121,3 @@ The following classes exist in both the WPF assemblies and the System.Xaml assem
 The WPF implementation is found in the <xref:System.Windows.Markup> namespace, and PresentationFramework assembly. The System.Xaml implementation is found in the <xref:System.Xaml> namespace. If you are using WPF types or are deriving from WPF types, you should typically use the WPF implementations of <xref:System.Windows.Markup.XamlReader> and <xref:System.Windows.Markup.XamlWriter> instead of the System.Xaml implementations. For more information, see Remarks in <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> and <xref:System.Windows.Markup.XamlWriter?displayProperty=nameWithType>.
 
 If you are including references to both WPF assemblies and System.Xaml, and you also are using `include` statements for both the <xref:System.Windows.Markup> and <xref:System.Xaml> namespaces, you may need to fully qualify the calls to these APIs in order to resolve the types without ambiguity.
-
-## See also
-
-- [XAML Services](../../../api/index.md)

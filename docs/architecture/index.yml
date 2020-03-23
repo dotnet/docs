@@ -20,22 +20,26 @@ landingContent:
         links:
           - text: Architect modern web apps with ASP.NET Core and Azure
             url: modern-web-apps-azure/index.md
-          - text: Blazor for ASP.NET Web Forms developers
+          - text: Blazor for ASP.NET Web Forms developers (Preview)
             url: blazor-for-web-forms-developers/index.md
           - text: ASP.NET Core gRPC for WCF developers
             url: grpc-for-wcf-developers/index.md
-          - text: Migrate your .NET web app or service to Azure App Service
-            url: ../azure/migration/app-service.md
             
   # Card
-  - title: Develop .NET apps for Azure
+  - title: Develop cloud-native .NET apps for Azure
     linkLists:
       - linkListType: concept
         links:
-          - text: Architecting cloud-native .NET apps for Azure
+          - text: Architecting cloud-native .NET apps for Azure (Preview)
             url: cloud-native/index.md
           - text: "Serverless apps: Architecture, patterns, and Azure implementation"
             url: serverless/index.md
+          - text: ".NET Microservices: Architecture for containerized .NET applications"
+            url: microservices/index.md
+      - linkListType: learn
+        links:
+          - text: Hello World Microservice tutorial
+            url: https://dotnet.microsoft.com/learn/aspnet/microservice-tutorial/intro
             
   # Card
   - title: Migrate .NET apps to Azure
@@ -44,20 +48,8 @@ landingContent:
         links:
           - text: Modernize existing .NET apps with Azure cloud and Windows containers
             url: modernize-with-azure-containers/index.md
-          - text: Migrate your .NET web app or service to Azure App Service
-            url: ../azure/migration/app-service.md
-            
-  # Card
-  - title: Develop Microservices-based apps
-    linkLists:
-      - linkListType: concept
-        links:
-          - text: ".NET Microservices: Architecture for containerized .NET applications"
-            url: microservices/index.md
-      - linkListType: learn
-        links:
-          - text: Hello World Microservice tutorial
-            url: https://dotnet.microsoft.com/learn/aspnet/microservice-tutorial/intro
+          - text: Migrate your .NET app to Azure
+            url: https://dotnet.microsoft.com/apps/cloud/migrate-to-azure
             
   # Card
   - title: Understand DevOps for .NET

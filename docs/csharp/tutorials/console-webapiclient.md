@@ -355,31 +355,19 @@ this fashion in the JSON response:
 2016-02-08T21:27:00Z
 ```
 
-That format does not follow any of the standard .NET <xref:System.DateTime> formats. Because of that, you'll need to write
-a custom conversion method. You also probably don't want the raw string exposed to users of the `Repository`
-class. Attributes can help control that as well. First, define a `public` property that will hold the
-string representation of the date and time in your `Repository` class and a `LastPush` `readonly` property that returns a formatted string that represents the returned date:
+That format is in Coordinated Universal Time (UTC) so you'll get a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Utc>. If you prefer a date represented in your time zone, you'll need to write
+a custom conversion method. First, define a `public` property that will hold the
+UTC representation of the date and time in your `Repository` class and a `LastPush` `readonly` property that returns the date converted to local time:
 
 ```csharp
 [JsonPropertyName("pushed_at")]
-public string JsonDate { get; set; }
+public DateTime LastPushUtc { get; set; }
 
-public DateTime LastPush =>
-    DateTime.ParseExact(JsonDate, "yyyy-MM-ddTHH:mm:ssZ", CultureInfo.InvariantCulture);
+public DateTime LastPush => LastPushUtc.ToLocalTime();
 ```
 
 Let's go over the new constructs we just defined. The `LastPush` property is defined using an *expression-bodied member* for the `get` accessor. There is no `set` accessor. Omitting the `set` accessor is how you define a *read-only* property in C#. (Yes,
-you can create *write-only* properties in C#, but their value is limited.) The <xref:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider)>
-method parses a string and creates a <xref:System.DateTime> object using a provided date format, and adds additional
-metadata to the `DateTime` using a `CultureInfo` object. If the parse operation fails, the
-property accessor throws an exception.
-
-To use <xref:System.Globalization.CultureInfo.InvariantCulture>, you will need to add the <xref:System.Globalization> namespace to the `using` directives
-in `repo.cs`:
-
-```csharp
-using System.Globalization;
-```
+you can create *write-only* properties in C#, but their value is limited.)
 
 Finally, add one more output statement in the console, and you're ready to build and run this app
 again:

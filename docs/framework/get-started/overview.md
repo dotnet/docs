@@ -25,7 +25,7 @@ ms.assetid: 29848c96-fc36-462d-8072-ba223a40b697
 - To build all communication on industry standards to ensure that code based on .NET Framework integrates with any other code.
 
 > [!NOTE]
-> For a general introduction to .NET Framework for both users and developers, see [Getting Started](index.md).
+> For a general introduction to .NET Framework for both users and developers, see [Get started](index.md).
 
 .NET Framework consists of the common language runtime (CLR) and the .NET Framework class library. The common language runtime is the foundation of .NET Framework. Think of the runtime as an agent that manages code at execution time, providing core services such as memory management, thread management, and remoting, while also enforcing strict type safety and other forms of code accuracy that promote security and robustness. In fact, the concept of code management is a fundamental principle of the runtime. Code that targets the runtime is known as managed code, while code that doesn't target the runtime is known as unmanaged code. The class library is a comprehensive, object-oriented collection of reusable types that you use to develop apps ranging from traditional command-line or graphical user interface (GUI) apps to apps based on the latest innovations provided by ASP.NET, such as Web Forms and XML web services.
 
@@ -65,7 +65,7 @@ The .NET Framework class library is a collection of reusable types that tightly 
 
 For example, the .NET Framework collection classes implement a set of interfaces for developing your own collection classes. Your collection classes blend seamlessly with the classes in the .NET Framework.
 
-As you would expect from an object-oriented class library, the .NET Framework types enable you to accomplish a range of common programming tasks, including tasks such as string management, data collection, database connectivity, and file access. In addition to these common tasks, the class library includes types that support a variety of specialized development scenarios. Use the .NET Framework to develop the following types of apps and services:
+As you would expect from an object-oriented class library, the .NET Framework types enable you to accomplish a range of common programming tasks, including string management, data collection, database connectivity, and file access. In addition to these common tasks, the class library includes types that support a variety of specialized development scenarios. You can use .NET Framework to develop the following types of apps and services:
 
 - Console apps. See [Building Console Applications](../../standard/building-console-apps.md).
 
@@ -87,7 +87,7 @@ The Windows Forms classes are a comprehensive set of reusable types that vastly 
 
 - [System Requirements](system-requirements.md)
 - [Installation guide](../install/index.md)
-- [Development Guide](../development-guide.md)
+- [Development guide](../development-guide.md)
 - [Tools](../tools/index.md)
 - [.NET samples and tutorials](../../samples-and-tutorials/index.md)
 - [.NET API browser](../../../api/index.md)

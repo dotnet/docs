@@ -87,7 +87,9 @@ To turn off security:
 - For the client, in the configuration file, update the **\<security>** element under the **\<binding>** element as follows:  
   
     ```xml
-    <binding name="WSHttpBinding_ICalculator" security mode="None" />
+    <binding name="WSHttpBinding_ICalculator">
+      <security mode="None" />
+    </binding
     ```  
 
 ## See also  

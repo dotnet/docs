@@ -18,6 +18,7 @@ Tracking profiles manifest themselves as XML elements within a standard .NET Fra
 <system.serviceModel>
     ...
     <tracking>
+     <profiles>
       <trackingProfile name="Sample Tracking Profile">
         <workflow activityDefinitionId="*">
           <workflowInstanceQueries>

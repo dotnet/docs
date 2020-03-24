@@ -26,7 +26,7 @@ The following examples show some of the operations you can perform with compress
 - [System.IO.Compression](https://www.nuget.org/packages/System.IO.Compression)
 - [System.IO.Compression.ZipFile](https://www.nuget.org/packages/System.IO.Compression.ZipFile)
 
-If you're using .NET Framework, add reference these two libraries to your project:
+If you're using .NET Framework, add references to these two libraries to your project:
 
 - `System.IO.Compression`
 - `System.IO.Compression.FileSystem`

@@ -38,7 +38,7 @@ This documentation covers the breadth of .NET across platforms and languages. Yo
 
 - [.NET Guide](standard/index.md)
 - [.NET Core Guide](core/index.md)
-- [.NET Framework Guide](framework/index.md)
+- [.NET Framework Guide](framework/index.yml)
 - [C# Guide](csharp/index.yml)
 - [F# Guide](fsharp/index.yml)
 - [Visual Basic Guide](visual-basic/index.yml)

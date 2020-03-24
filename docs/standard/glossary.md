@@ -20,7 +20,7 @@ See [CoreRT](#corert) and [.NET Native](#net-native).
 
 The original ASP.NET implementation that ships with the .NET Framework.
 
-Sometimes ASP.NET is an umbrella term that refers to both ASP.NET implementations including ASP.NET Core. The meaning that the term carries in any given instance is determined by context. Refer to ASP.NET 4.x when you want to make it clear that you’re not using ASP.NET to mean both implementations.
+Sometimes ASP.NET is an umbrella term that refers to both ASP.NET implementations including ASP.NET Core. The meaning that the term carries in any given instance is determined by context. Refer to ASP.NET 4.x when you want to make it clear that you're not using ASP.NET to mean both implementations.
 
 See [ASP.NET documentation](/aspnet/#pivot=aspnet).
 
@@ -173,7 +173,7 @@ See [.NET Core SDK Overview](../core/sdk.md).
 
 An implementation of .NET that runs only on Windows. Includes the Common Language Runtime (CLR), the Base Class Library, and application framework libraries such as ASP.NET, Windows Forms, and WPF.
 
-See [.NET Framework Guide](../framework/index.md).
+See [.NET Framework Guide](../framework/index.yml).
 
 ## .NET Native
 
@@ -268,7 +268,7 @@ An implementation of .NET that is used for building modern, touch-enabled Window
 ## See also
 
 - [.NET Guide](index.md)
-- [.NET Framework Guide](../framework/index.md)
+- [.NET Framework Guide](../framework/index.yml)
 - [.NET Core](../core/index.md)
 - [ASP.NET Overview](/aspnet/index#pivot=aspnet)
 - [ASP.NET Core Overview](/aspnet/index#pivot=core)

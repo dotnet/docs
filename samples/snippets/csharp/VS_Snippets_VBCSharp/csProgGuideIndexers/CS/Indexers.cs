@@ -69,46 +69,45 @@ class DayCollection
 {
     string[] days = { "Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat" };
 
-    // This method finds the day or returns an Exception if the day is not found
-    private int GetDay(string testDay)
-    {
+    // Indexer with only a get accessor with the expression-bodied definition:
+    public int this[string day] => FindDayIndex(day);
 
+    private int FindDayIndex(string day)
+    {
         for (int j = 0; j < days.Length; j++)
         {
-            if (days[j] == testDay)
+            if (days[j] == day)
             {
                 return j;
             }
         }
-
-        throw new System.ArgumentOutOfRangeException(testDay, "testDay must be in the form \"Sun\", \"Mon\", etc");
-    }
-
-    // The get accessor returns an integer for a given string
-    public int this[string day]
-    {
-        get
-        {
-            return (GetDay(day));
-        }
+        throw new System.ArgumentOutOfRangeException(
+            nameof(day), 
+            $"Day {day} is not supported. Day input must be in the form \"Sun\", \"Mon\", etc");
     }
 }
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        DayCollection week = new DayCollection();
+        var week = new DayCollection();
         System.Console.WriteLine(week["Fri"]);
 
-        // Raises ArgumentOutOfRangeException
-        System.Console.WriteLine(week["Made-up Day"]);
-
-        // Keep the console window open in debug mode.
-        System.Console.WriteLine("Press any key to exit.");
-        System.Console.ReadKey();
+        try
+        {
+            System.Console.WriteLine(week["Made-up day"]);
+        }
+        catch (System.ArgumentOutOfRangeException e)
+        {
+            System.Console.WriteLine($"Not supported input: {e.Message}");
+        }
     }
+    // Output:
+    // 5
+    // Not supported input: Day Made-up day is not supported. Day input must be in the form "Sun", "Mon", etc (Parameter 'day')
 }
+//</Snippet2>
 
 namespace Wrap2
 {

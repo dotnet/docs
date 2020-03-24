@@ -73,7 +73,7 @@ Registration-free activation for .NET Framework-based components is only slightl
   
 You can install an application manifest in the same directory as the COM application. Alternatively, you can add it as a resource to the application's .exe file. For more information, see [About Side-by-Side Assemblies](/windows/desktop/SbsCs/about-side-by-side-assemblies-).  
   
-### Create a component manifest  
+## Create a component manifest  
   
 1. Using an XML editor, create a component manifest to describe the managed assembly.  
   

@@ -48,17 +48,28 @@ namespace operators
             SwitchExample.Main();
 
             var collection = new int[]{1,2,3,4,5,6,7,8,9};
-            TypeExample(collection);
-            RecursiveExample(collection);
-            RecursiveExample(collection[0..0]);
-            RecursiveExample(collection[0..1]);
-            RecursiveExample(collection[0..2]);
-            CaseGuardExample(collection.AsEnumerable());
-            CaseGuardExample(collection[0..0].AsEnumerable());
-            CaseGuardExample(collection[0..1].AsEnumerable());
-            CaseGuardExample(collection[0..2].AsEnumerable());
+            var item = TypeExample(collection);
+            Console.WriteLine(item);
+            item = RecursiveExample(collection);
+            Console.WriteLine(item);
+
+            item = RecursiveExample(collection[0..0]);
+            Console.WriteLine(item);
+            item = RecursiveExample(collection[0..1]);
+            Console.WriteLine(item);
+            item = RecursiveExample(collection[0..2]);
+            Console.WriteLine(item);
+
+            item = CaseGuardExample(collection.AsEnumerable());
+            Console.WriteLine(item);
+            item = CaseGuardExample(collection[0..0].AsEnumerable());
+            Console.WriteLine(item);
+            item = CaseGuardExample(collection[0..1].AsEnumerable());
+            Console.WriteLine(item);
+            item = CaseGuardExample(collection[0..2].AsEnumerable());
             try {
-                ExhaustiveExample(default(List<int>));
+                item = ExhaustiveExample(default(List<int>));
+                Console.WriteLine(item);
             } catch (ArgumentNullException e)
             {
                 Console.WriteLine($"Caught expected exception: {e.Message}");
@@ -66,63 +77,52 @@ namespace operators
 
         }
 
-
-        private static void TypeExample<T>(IEnumerable<T> sequence)
-        {
-            // <SnippetTypePattern>
-            T thirdOrDefault = sequence switch
+        // <SnippetTypePattern>
+        public static T TypeExample<T>(IEnumerable<T> sequence) =>
+            sequence switch
             {
-                System.Array array => array.GetValue(2),
+                System.Array array => (T)array.GetValue(2),
                 IList<T> list      => list[2],
                 IEnumerable<T> seq => seq.Skip(2).First(),
             };
-            Console.WriteLine(thirdOrDefault);
-            // </SnippetTypePattern>
-        }
+        // </SnippetTypePattern>
 
-        private static void RecursiveExample<T>(IEnumerable<T> sequence)
-        {
-            // <SnippetRecursivePattern>
-            T thirdOrDefault = sequence switch
+        // <SnippetRecursivePattern>
+        public static T RecursiveExample<T>(IEnumerable<T> sequence) =>
+            sequence switch
             {
                 System.Array { Length : 0}       => default(T),
-                System.Array { Length : 1} array => array.GetValue(0),
-                System.Array { Length : 2} array => array.GetValue(1),
-                System.Array array               => array.GetValue(2),
+                System.Array { Length : 1} array => (T)array.GetValue(0),
+                System.Array { Length : 2} array => (T)array.GetValue(1),
+                System.Array array               => (T)array.GetValue(2),
                 IList<T> list                    => list[2],
                 IEnumerable<T> seq               => seq.Skip(2).First(),
             };
-            Console.WriteLine(thirdOrDefault);
-            // </SnippetRecursivePattern>
-        }
+        // </SnippetRecursivePattern>
 
-        private static void CaseGuardExample<T>(IEnumerable<T> sequence)
-        {
-            // <SnippetGuardCase>
-            T thirdOrDefault = sequence switch
+        // <SnippetGuardCase>
+        public static T CaseGuardExample<T>(IEnumerable<T> sequence) =>
+            sequence switch
             {
                 System.Array { Length : 0}                => default(T),
-                System.Array { Length : 1} array          => array.GetValue(0),
-                System.Array { Length : 2} array          => array.GetValue(1),
-                System.Array array                        => array.GetValue(2),
+                System.Array { Length : 1} array          => (T)array.GetValue(0),
+                System.Array { Length : 2} array          => (T)array.GetValue(1),
+                System.Array array                        => (T)array.GetValue(2),
                 IEnumerable<T> list when !list.Any()      => default(T),
                 IEnumerable<T> list when list.Count() < 3 => list.Last(),
                 IList<T> list                             => list[2],
                 IEnumerable<T> seq                        => seq.Skip(2).First(),
             };
-            Console.WriteLine(thirdOrDefault);
-            // </SnippetGuardCase>
-        }
+        // </SnippetGuardCase>
 
-        private static void ExhaustiveExample<T>(IEnumerable<T> sequence)
-        {
-            // <SnippetExhaustive>
-            T thirdOrDefault = sequence switch
+        // <SnippetExhaustive>
+        public static T ExhaustiveExample<T>(IEnumerable<T> sequence) =>
+            sequence switch
             {
                 System.Array { Length : 0}       => default(T),
-                System.Array { Length : 1} array => array.GetValue(0),
-                System.Array { Length : 2} array => array.GetValue(1),
-                System.Array array               => array.GetValue(2),
+                System.Array { Length : 1} array => (T)array.GetValue(0),
+                System.Array { Length : 2} array => (T)array.GetValue(1),
+                System.Array array               => (T)array.GetValue(2),
                 IEnumerable<T> list 
                     when !list.Any()             => default(T),
                 IEnumerable<T> list 
@@ -131,11 +131,7 @@ namespace operators
                 null                             => throw new ArgumentNullException(nameof(sequence)),
                 _                                => sequence.Skip(2).First(),
             };
-            Console.WriteLine(thirdOrDefault);
-            // </SnippetExhaustive>
-        }
-
-        
+        // </SnippetExhaustive>
     }
 }
 

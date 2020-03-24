@@ -1611,9 +1611,6 @@
     - name: Member access operators and expressions
       href: language-reference/operators/member-access-operators.md
       displayName: "., [], ?., ?[], (), indexer, null-conditional, Elvis, invocation, ^, index from end, hat, .., range"
-    - name: switch expression
-      href: language-reference/operators/switch-expression.md
-      displayName: "switch, pattern matching, patterns"
     - name: Type-testing and cast operators
       href: language-reference/operators/type-testing-and-cast.md
       displayName: "is operator, is keyword, as operator, as keyword, typeof, (), explicit, conversion"
@@ -1667,6 +1664,9 @@
     - name: stackalloc expression
       href: language-reference/operators/stackalloc.md
       displayName: stack allocation, span, stackalloc operator
+    - name: switch expression
+      href: language-reference/operators/switch-expression.md
+      displayName: "switch, pattern matching, patterns"
     - name: true and false operators
       href: language-reference/operators/true-false-operators.md
     - name: Operator overloading

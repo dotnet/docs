@@ -11,7 +11,7 @@ This article covers the `switch` expression, introduced in C# 8.0. For informati
 
 The `switch` expression provides for `switch`-like semantics in an expression context. It provides a concise syntax when the switch arms produce a value. The following example shows the structure of a switch expression. It translates values from an `enum` representing visual directions in an online map to the corresponding cardinal direction:
 
-:::code language="csharp" source="snippets/SwitchExpressions.cs" id="SnippetBasicStructure" interactive="csharp-interactive-class":::
+:::code language="csharp" source="snippets/SwitchExpressions.cs" id="SnippetBasicStructure":::
 
 The preceding sample shows the basic elements of a switch expression:
 
@@ -38,9 +38,11 @@ Recursive patterns can examine properties of the range expression, but can't exe
 
 Finally, you can add the `_` pattern and the `null` pattern to catch arguments that aren't processed by any other switch expression arm. That makes the switch expression *exhaustive*, meaning any possible value of the range expression is handled. The following example adds those expression arms:
 
-:::code language="csharp" source="snippets/SwitchExpressions.cs" id="SnippetExhaustive" interactive="csharp-interactive":::
+:::code language="csharp" source="snippets/SwitchExpressions.cs" id="SnippetExhaustive":::
 
 The preceding example adds a `null` pattern, and changes the `IEnumerable<T>` type pattern to a `_` pattern. The `null` pattern provides a null check as a switch expression arm. The expression for that arm throws an <xref:System.ArgumentNullException>. The `_` pattern matches all inputs that haven't been matched by previous arms. It must come after the `null` check, or it would match `null` inputs.
+
+You can read more in the C# language spec proposal for [recursive patterns](~/_csharplang/proposals/csharp-8.0/patterns.md#switch-expression).
 
 ## See also
 

@@ -1,6 +1,6 @@
 ---
 title: "ref keyword - C# Reference"
-ms.date: 03/26/2019
+ms.date: 03/19/2020
 f1_keywords: 
   - "ref_CSharpKeyword"
   - "ref"
@@ -19,7 +19,7 @@ The `ref` keyword indicates a value that is passed by reference. It is used in f
 
 ## Passing an argument by reference
 
-When used in a method's parameter list, the `ref` keyword indicates that an argument is passed by reference, not by value. The `ref` keyword makes the formal parameter an alias for the argument, which must be a variable. In other words, any operation on the parameter is made on the argument. For example, if the caller passes a local variable expression or an array element access expression, and the called method replaces the object to which the ref parameter refers, then the caller’s local variable or the array element now refers to the new object when the method returns.
+When used in a method's parameter list, the `ref` keyword indicates that an argument is passed by reference, not by value. The `ref` keyword makes the formal parameter an alias for the argument, which must be a variable. In other words, any operation on the parameter is made on the argument. For example, if the caller passes a local variable expression or an array element access expression, and the called method replaces the object to which the ref parameter refers, then the caller's local variable or the array element now refers to the new object when the method returns.
 
 > [!NOTE]
 > Do not confuse the concept of passing by reference with the concept of reference types. The two concepts are not the same. A method parameter can be modified by `ref` regardless of whether it is a value type or a reference type. There is no boxing of a value type when it is passed by reference.  
@@ -53,7 +53,13 @@ However, methods can be overloaded when one method has a `ref`, `in`, or `out` p
  You can't use the `ref`, `in`, and `out` keywords for the following kinds of methods:  
   
 - Async methods, which you define by using the [async](async.md) modifier.  
-- Iterator methods, which include a [yield return](yield.md) or `yield break` statement.  
+- Iterator methods, which include a [yield return](yield.md) or `yield break` statement.
+
+In addition, [extension methods](../../programming-guide/classes-and-structs/extension-methods.md) have the following restrictions:
+
+- The `out` keywoard cannot be used on the first argument of an extension method.
+- The `ref` keyword cannot be used on the first argument of an extension method when the argument is not a struct, or a generic type not constrained to be a struct.
+- The `in` keyword cannot be used unless the first argument is a struct. The `in` keyword cannot be used on any generic type, even when constrained to be a struct.
 
 ## Passing an argument by reference: An example
 

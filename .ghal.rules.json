@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "configRevision": 1,
+  "configRevision": 2,
 
   "issue": {
     "opened": {
@@ -47,6 +47,9 @@
           },
           "(?i)dotnet-architecture$": {
             "labels-add": ":books: Area - .NET Architecture Guide"
+          },
+          "(?i)azure-dotnet$": {
+            "labels-add": ":books: Area - Azure .NET SDK"
           }
         },
         "technology": {
@@ -133,7 +136,7 @@
           "(?i).*docs\/whats-new\/.*": {
             "labels-add": ":star2: What's New"
           }
-    }
+        }
       },
       "processor-meta-custom": {
         "issuetype": {
@@ -267,6 +270,9 @@
               },
               "(?i).*docs\/whats-new\/.*": {
                 "labels-add": ":star2: What's New"
+              },
+              "(?i).*docs\/azure\/.*": {
+                "labels-add": ":books: Area - Azure .NET SDK"
               }
             }
           }

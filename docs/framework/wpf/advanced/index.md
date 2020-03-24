@@ -11,23 +11,25 @@ helpviewer_keywords:
 ms.assetid: 58843391-b28c-4d32-adf5-87acaf6578a1
 ---
 # Advanced (Windows Presentation Foundation)
-This section describes some of the advanced areas in WPF.  
-  
+
+This section describes some of the advanced areas in WPF.
+
 ## In This Section
 
-[WPF Architecture](wpf-architecture.md)  
-[XAML in WPF](xaml-in-wpf.md)  
-[Base Element Classes](base-elements.md)  
-[Element Tree and Serialization](element-tree-and-serialization.md)  
-[WPF Property System](properties-wpf.md)  
-[Events in WPF](events-wpf.md)  
-[Input](input-wpf.md)  
-[Drag and Drop](drag-and-drop.md)  
-[Resources](resources-wpf.md)  
-[Documents](documents.md)  
-[Globalization and Localization](globalization-and-localization.md)  
-[Layout](layout.md)  
-[Migration and Interoperability](migration-and-interoperability.md)  
-[Performance](performance.md)  
-[Threading Model](threading-model.md)  
-[Unmanaged WPF API Reference](wpf-unmanaged-api-reference.md)  
+[WPF Architecture](wpf-architecture.md)\
+[XAML in WPF](xaml-in-wpf.md)\
+[Base Element Classes](base-elements.md)\
+[Element Tree and Serialization](element-tree-and-serialization.md)\
+[WPF Property System](properties-wpf.md)\
+[Events in WPF](events-wpf.md)\
+[Input](input-wpf.md)\
+[Drag and Drop](drag-and-drop.md)\
+[Resources](resources-wpf.md)\
+[Documents](documents.md)\
+[Globalization and Localization](globalization-and-localization.md)\
+[Layout](layout.md)\
+[Types migrated from WPF to System.Xaml](types-migrated-from-wpf-to-system.md)\
+[Migration and Interoperability](migration-and-interoperability.md)\
+[Performance](performance.md)\
+[Threading Model](threading-model.md)\
+[Unmanaged WPF API Reference](wpf-unmanaged-api-reference.md)\

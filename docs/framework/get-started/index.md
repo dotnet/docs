@@ -79,7 +79,7 @@ For more information on developing apps that target .NET Framework, see the [Dev
 
 ## See also
 
-- [.NET Framework Guide](../index.md)
-- [What's New](../whats-new/index.md)
-- [.NET API Browser](../../../api/index.md)
-- [Development Guide](../development-guide.md)
+- [.NET Framework guide](../index.yml)
+- [What's new](../whats-new/index.md)
+- [.NET API browser](../../../api/index.md)
+- [Development guide](../development-guide.md)

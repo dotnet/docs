@@ -8,7 +8,7 @@ ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
 ---
 # .NET guide
 
-The .NET guide provides information about .NET. Depending on your familiarity with .NET, you may wish to explore different sections of this guide and other guides such as [.NET Core](../core/index.md) or [.NET Framework](../framework/index.md).
+The .NET guide provides information about .NET. Depending on your familiarity with .NET, you may wish to explore different sections of this guide and other guides such as [.NET Core](../core/index.md) or [.NET Framework](../framework/index.yml).
 
 ## New to .NET
 

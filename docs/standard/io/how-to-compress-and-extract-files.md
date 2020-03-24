@@ -21,7 +21,7 @@ The <xref:System.IO.Compression> namespace contains the following types for comp
 - <xref:System.IO.Compression.DeflateStream>
 - <xref:System.IO.Compression.GZipStream>
 
-The following examples show some of the operations you can perform with compressed files. These examples require the following NuGet packages added to your project:
+The following examples show some of the operations you can perform with compressed files. These examples require the following NuGet packages to be added to your project:
 
 - [System.IO.Compression](https://www.nuget.org/packages/System.IO.Compression)
 - [System.IO.Compression.ZipFile](https://www.nuget.org/packages/System.IO.Compression.ZipFile)

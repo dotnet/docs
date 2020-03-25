@@ -16,11 +16,31 @@ SignalR hubs and connection handlers should be registered within <xref:Microsoft
 
 #### Reason for change
 
-The old methods had custom routing logic that didn't interact with other routing components in ASP.NET Core. In ASP.NET Core 3.0, a new general-purpose routing system, called endpoint routing, was introduced. Endpoint routing enabled SignalR to interact with other routing components. Switching to this model allows users to realize the full benefits of endpoint routing, so the old methods have been removed.
+The old methods had custom routing logic that didn't interact with other routing components in ASP.NET Core. In ASP.NET Core 3.0, a new general-purpose routing system, called endpoint routing, was introduced. Endpoint routing enabled SignalR to interact with other routing components. Switching to this model allows users to realize the full benefits of endpoint routing. Consequently, the old methods have been removed.
 
 #### Recommended action
 
-Remove code that calls `UseSignalR` or `UseConnections` from your project's `Startup.Configure` method. Replace it with calls to `MapHub` or `MapConnectionHandler`, respectively, within the body of a call to `UseEndpoints`. In general, your previous `MapHub` and `MapConnectionHandler` calls can be transferred directly from the body of `UseSignalR` and `UseConnections` to `UseEndpoints` with no change needed.
+Remove code that calls `UseSignalR` or `UseConnections` from your project's `Startup.Configure` method. Replace it with calls to `MapHub` or `MapConnectionHandler`, respectively, within the body of a call to `UseEndpoints`. For example:
+
+**Old code:**
+
+```csharp
+app.UseSignalR(routes =>
+{
+    routes.MapHub<SomeHub>("/path");
+});
+```
+
+**New code:**
+
+```csharp
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapHub<SomeHub>("/path");
+});
+```
+
+In general, your previous `MapHub` and `MapConnectionHandler` calls can be transferred directly from the body of `UseSignalR` and `UseConnections` to `UseEndpoints` with little-to-no change needed.
 
 #### Category
 

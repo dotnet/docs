@@ -3,29 +3,43 @@ title: Sentiment analysis with .NET for Apache Spark and ML.NET tutorial
 description: In this tutorial, you learn how to use ML.NET with .NET for Apache Spark for sentiment analysis.
 author: mamccrea
 ms.author: mamccrea
-ms.date: 03/07/2019
+ms.date: 03/25/2019
 ms.topic: tutorial
 ---
 
 # Tutorial: Sentiment analysis with .NET for Apache Spark and ML.NET
 
-This tutorial teaches you how to perform sentiment analysis of online reviews using ML.NET and .NET for Apache Spark. ML.NET is a free, cross-platform, open-source machine learning framework. You can use ML.NET with .NET for Apache Spark to scale the training and prediction of machine learning algorithms.
+This tutorial teaches you how to do sentiment analysis of online reviews using ML.NET and .NET for Apache Spark. [ML.NET](http://dot.net/ml) is a free, cross-platform, open-source machine learning framework. You can use ML.NET with .NET for Apache Spark to scale the training and prediction of machine learning algorithms.
 
 In this tutorial, you learn how to:
 
 > [!div class="checklist"]
 >
-> * Write a .NET for Apache Spark app that performs sentiment analysis.
-> * Use the ML.NET model builder in Visual Studio.
-> * 
+> * Create a sentiment analysis model using ML.NET Model Builder in Visual Studio.
+> * Create a .NET for Apache Spark console app.
+> * Write and implement a user-defined function.
+> * Run a .NET for Apache Spark console app.
 
 ## Prerequisites
 
-If this is your first .NET for Apache Spark application, start with the [Getting Started tutorial](get-started.md) to become familiar with the basics.
+* If you haven't developed a .NET for Apache Spark application before, start with the [Getting Started tutorial](get-started.md) to become familiar with the basics. Complete all of the prerequisites for the Getting Started tutorial before you continue with this tutorial.
 
-This tutorial uses the ML.NET Model Builder (preview), a visual interface available in Visual Studio. If you do not already have Visual Studio, you can [download the Community version of Visual Studio](https://visualstudio.microsoft.com/downloads/) for free.
+* This tutorial uses the ML.NET Model Builder (preview), a visual interface available in Visual Studio. If you don't already have Visual Studio, you can [download the Community version of Visual Studio](https://visualstudio.microsoft.com/downloads/) for free.
 
-[Download and install](https://marketplace.visualstudio.com/items?itemName=MLNET.07) ML.NET Model Builder (preview).
+* [Download and install](https://marketplace.visualstudio.com/items?itemName=MLNET.07) ML.NET Model Builder (preview).
+
+* Download the [yelptest.csv](https://github.com/dotnet/spark/blob/master/examples/Microsoft.Spark.CSharp.Examples/MachineLearning/Sentiment/Resources/yelptest.csv) and [yelptrain.csv](https://github.com/dotnet/spark/blob/master/examples/Microsoft.Spark.CSharp.Examples/MachineLearning/Sentiment/Resources/yelptrain.csv) Yelp review datasets.
+
+## Review the data
+
+The Yelp reviews dataset contains online Yelp reviews about various services. Open [yelptrain.csv](https://github.com/dotnet/spark/blob/master/examples/Microsoft.Spark.CSharp.Examples/MachineLearning/Sentiment/Resources/yelptrain.csv) and notice the structure of the data. The first column contains review text, and the second column contains sentiment scores. If the sentiment score is 1, the review is positive, and if the sentiment score is 0, the review is negative.
+
+The following table contains sample data:
+
+|ReviewText|Sentiment|
+|-|-|
+|Wow... Loved this place.|    1|
+|Crust is not good.|    0|
 
 ## Build your machine learning model
 
@@ -35,15 +49,15 @@ This tutorial uses the ML.NET Model Builder (preview), a visual interface availa
 
 1. From the ML.NET Model Builder, select the **Sentiment Analysis** scenario tile.
 
-1. On the **Add data** page, upload the *Yelp* reviews data set. 
+1. On the **Add data** page, upload the *yelptrain.csv* data set. 
 
 1. Choose *Sentiment* from the **Columns to Predict** dropdown.
 
 1. On the **Train** page, set the time to train to *60 seconds* and select **Start training**. Notice the status of your training under **Progress**.
 
-1. Once Model Builder is finished training, evaluate the training results. You can type phrases into the text box below **Try your model** and select **Predict** to see the output.
+1. Once Model Builder is finished training, **Evaluate** the training results. You can type phrases into the text box below **Try your model** and select **Predict** to see the output.
 
-1. Select **Code** and then select **Added Projects** to add the ML model code to the solution.
+1. Select **Code** and then select **Add Projects** to add the ML model to the solution.
 
 1. Notice that two projects are added to your solutions: **MLSparkModelML.ConsoleApp** and **MLSparkModelML.Model**.
 
@@ -57,13 +71,15 @@ This tutorial uses the ML.NET Model Builder (preview), a visual interface availa
 
 ## Create a console app
 
+Model Builder creates a console app for you.
+
 1. Right-click on **MLSparkModelML.Console** in Solution Explorer, and select **Manage NuGet Packages**.
 
-1. Search for **Microsoft.Spark** and install the package. **Microsoft.ML** was installed for you by Model Builder.
+1. Search for **Microsoft.Spark** and install the package. **Microsoft.ML** is automatically installed for you by Model Builder.
 
 ### Create a SparkSession
 
-1. Open the *Program.cs* file for **MLSparkModelML.ConsoleApp**. This file was auto-generated by Model Builder. Delete the `using` statements, the contents of the Main() method, and section for sample data generation.
+1. Open the *Program.cs* file for **MLSparkModelML.ConsoleApp**. This file was autogenerated by Model Builder. Delete the `using` statements, the contents of the Main() method, and the `CreateSingleDataSample` region.
 
 1. Add the following additional `using` statements to the top of the *Program.cs*:
 
@@ -73,7 +89,10 @@ This tutorial uses the ML.NET Model Builder (preview), a visual interface availa
    using Microsoft.ML;
    using Microsoft.ML.Data;
    using Microsoft.Spark.Sql;
+   using MLSparkModelML.Model;
    ```
+
+1. Change the `DATA_FILEPATH` to the path of your *yelptest.csv*.
 
 1. Add the following code to your `Main` method to create a new `SparkSession`. The Spark Session is the entry point to programming Spark with the Dataset and DataFrame API.
 
@@ -88,7 +107,7 @@ This tutorial uses the ML.NET Model Builder (preview), a visual interface availa
 
 ### Create a DataFrame and print to console
 
-Read in the Yelp review data from the *yelp.csv* file as a `DataFrame`. Include `header` and `inferSchema` options.
+Read in the Yelp review data from the *yelptest.csv* file as a `DataFrame`. Include `header` and `inferSchema` options.
 
 ```csharp
 DataFrame df = spark
@@ -102,16 +121,16 @@ df.Show();
 
 ### Register a user-defined function
 
-You can use UDFs, *user-defined functions*, in Spark applications to perform calculations and analysis on your data. In this how-to, you use ML.NET with a UDF to evaluate each review.
+You can use UDFs, *user-defined functions*, in Spark applications to do calculations and analysis on your data. In this tutorial, you use ML.NET with a UDF to evaluate each Yelp review.
 
 Add the following code to your `Main` method to register a UDF called `MLudf`. 
 
 ```csharp
 spark.Udf()
-    .Register<ModelInput, ModelOutput>("MLudf", (text) => ConsumeModel.Predict(text));
+    .Register<string, bool>("MLudf", predict);
 ```
 
-This UDF takes a Yelp review string as input, and outputs true or false for positive and negative sentiments, respectively. It uses the *ConsumeModel()* method that was created by Model Builder.
+This UDF takes a Yelp review string as input, and outputs true or false for positive and negative sentiments, respectively. It uses the *predict()* method that you define in a later step.
 
 ### Use Spark SQL to call the UDF
 
@@ -121,7 +140,7 @@ Now that you've read in your data and incorporated ML, use Spark SQL to call the
 // Use Spark SQL to call ML.NET UDF
 // Display results of sentiment analysis on reviews
 df.CreateOrReplaceTempView("Reviews");
-DataFrame sqlDf = spark.Sql("SELECT ReviewText, MLudf(ReviewText) FRReviews");
+DataFrame sqlDf = spark.Sql("SELECT ReviewText, MLudf(ReviewText) FROM Reviews");
 sqlDf.Show();
 
 // Print out first 20 rows of data
@@ -131,9 +150,38 @@ sqlDf.Show(20, 0, false);
 spark.Stop();
 ```
 
+### Create predict() method
+
+Add the following code before you `Main()` method. This code is similar to what is produced by Model Builder in *ConsumeModel.cs*. Moving this method to your console keeps the model loading every time you run your app.
+
+```csharp
+private static readonly PredictionEngine<ModelInput, ModelOutput> _predictionEngine;
+
+static Program()
+{
+    MLContext mlContext = new MLContext();
+    ITransformer model = mlContext.Model.Load("MLModel.zip", out DataViewSchema schema);
+    _predictionEngine = mlContext.Model.CreatePredictionEngine<ModelInput, ModelOutput>(model);
+}
+
+static bool predict(string text)
+{
+    ModelInput input = new ModelInput
+    {
+        ReviewText = text
+    };
+
+    return _predictionEngine.Predict(input).Prediction;
+}
+```
+
+## Add the model to your console app
+
+In Solution Explorer, copy the *MLModel.zip* file from the **MLSparkModelML.Model** project and paste it in the **MLSparkModelML.ConsoleApp** project. A reference is automatically added in *MLSparkModelML.ConsoleApp.csproj*. 
+
 ## Run your code
 
-You must use `spark-submit` to run your code. Navigate to your app's root folder using the command prompt and run the following commands.
+Use `spark-submit` to run your code. Navigate to your console app's root folder using the command prompt and run the following commands.
 
 First, clean and publish your app.
 
@@ -142,10 +190,10 @@ dotnet clean
 dotnet publish
 ```
 
-Then navigate to your app's publish folder and run the following `spark-submit` command. Remember to update the command with the actual path of your Microsoft Spark jar file.
+Then navigate to the console app's publish folder and run the following `spark-submit` command. Remember to update the command with the actual path of your Microsoft Spark jar file.
 
 ```dotnetcli
-spark-submit --class org.apache.spark.deploy.dotnet.DotnetRunner --master local /path/to/microsoft-spark-<version>.jar MLSparkModel.exe
+%SPARK_HOME%\bin\spark-submit --class org.apache.spark.deploy.dotnet.DotnetRunner --master local microsoft-spark-2.4.x-0.10.0.jar dotnet MLSparkModelML.ConsoleApp.dll
 ```
 
 ## Get the code

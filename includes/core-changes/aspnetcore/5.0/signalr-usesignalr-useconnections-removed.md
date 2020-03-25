@@ -16,7 +16,7 @@ SignalR hubs and connection handlers should be registered within <xref:Microsoft
 
 #### Reason for change
 
-The old methods had custom routing logic that didn't interact with other routing components in ASP.NET Core. In ASP.NET Core 3.0, a new general-purpose routing system, called endpoint routing, was introduced. Endpoint routing enabled SignalR to interact with other routing components. Switching to this model allows users to realize the full benefits of endpoint routing.
+The old methods had custom routing logic that didn't interact with other routing components in ASP.NET Core. In ASP.NET Core 3.0, a new general-purpose routing system, called endpoint routing, was introduced. Endpoint routing enabled SignalR to interact with other routing components. Switching to this model allows users to realize the full benefits of endpoint routing, so the old methods have been removed.
 
 #### Recommended action
 

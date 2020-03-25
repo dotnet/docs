@@ -1,6 +1,6 @@
 ---
-title: About .NET Core
-description: Learn about .NET Core.
+title: .NET Core details
+description: Go in-depth on the details of .NET Core and compare it to other .NET implementations.
 ms.date: 09/17/2019
 ---
 # About .NET Core

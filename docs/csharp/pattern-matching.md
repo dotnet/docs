@@ -198,7 +198,7 @@ Finally, you can add a `null` case to ensure the argument isn't `null`:
 
 The special behavior for the `null` pattern is interesting because the constant
 `null` in the pattern doesn't have a type but can be converted to any reference
-type or nullable type. Rather than convert a `null` to any type, the language
+type or nullable value type. Rather than convert a `null` to any type, the language
 defines that a `null` value won't match any type pattern, regardless of the
 compile-time type of the variable. This behavior makes the new `switch` based
 type pattern consistent with the `is` statement: `is` statements always return `false` when

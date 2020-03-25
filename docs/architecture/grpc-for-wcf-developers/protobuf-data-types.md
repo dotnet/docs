@@ -120,7 +120,7 @@ The following table shows the complete list of wrapper types with their equivale
 | `uint?`   | `google.protobuf.UInt32Value` |
 | `ulong?`  | `google.protobuf.UInt64Value` |
 
-The well-known types `Timestamp` and `Duration` are represented in .NET as classes, so there's no need for a nullable version. But it's important to check for null on properties of those types when you're converting to `DateTimeOffset` or `TimeSpan`.
+The well-known types `Timestamp` and `Duration` are represented in .NET as classes. In C# 8 and beyond, you can use nullable reference types. But it's important to check for null on properties of those types when you're converting to `DateTimeOffset` or `TimeSpan`.
 
 ## Decimals
 

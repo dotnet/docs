@@ -36,7 +36,7 @@ The following table shows the correspondence between .NET types and JSON/JavaScr
 |Collections, dictionaries, and arrays|Array|See the Collections, Dictionaries, and Arrays section of this topic.|
 |Complex types (with the <xref:System.Runtime.Serialization.DataContractAttribute> or <xref:System.SerializableAttribute> applied)|Complex type|Data members become members of the JavaScript complex type.|
 |Complex types implementing the <xref:System.Runtime.Serialization.ISerializable> interface)|Complex type|Same as other complex types but some <xref:System.Runtime.Serialization.ISerializable> types are not supported – see the ISerializable Support part of the Advanced Information section of this topic.|
-|`Null` value for any type|Null|Nullable types are also supported and map to JSON in the same way as non-nullable types.|
+|`Null` value for any type|Null|Nullable value types are also supported and map to JSON in the same way as non-nullable value types.|
 
 ### Enumerations and JSON
 

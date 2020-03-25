@@ -22,6 +22,18 @@ landingContent:
             url: about.md
           - text: NET Core SDK overview
             url: sdk.md
+      - linkListType: whats-new
+        links:
+          - text: What's new in .NET Core 3.1
+            url: whats-new/dotnet-core-3-1.md
+          - text: What's new in .NET Core 3.0
+            url: whats-new/dotnet-core-3-0.md
+
+  # Card
+  - title: Get started with .NET Core
+    linkLists:
+      - linkListType: overview
+        links:
           - text: Migrate from .NET Framework to .NET Core
             url: porting/index.md
       - linkListType: deploy
@@ -40,12 +52,6 @@ landingContent:
             url: tutorials/with-visual-studio.md
           - text: Containerize a .NET Core app
             url: docker/build-container.md
-      - linkListType: whats-new
-        links:
-          - text: What's new in .NET Core 3.1
-            url: whats-new/dotnet-core-3-1.md
-          - text: What's new in .NET Core 3.0
-            url: whats-new/dotnet-core-3-0.md
       - linkListType: concept
         links:
           - text: Select which .NET Core version to use 

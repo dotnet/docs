@@ -49,7 +49,7 @@ The following table contains sample data:
 
 1. From the ML.NET Model Builder, select the **Sentiment Analysis** scenario tile.
 
-1. On the **Add data** page, upload the *yelptrain.csv* data set. 
+1. On the **Add data** page, upload the *yelptrain.csv* data set.
 
 1. Choose *Sentiment* from the **Columns to Predict** dropdown.
 
@@ -123,7 +123,7 @@ df.Show();
 
 You can use UDFs, *user-defined functions*, in Spark applications to do calculations and analysis on your data. In this tutorial, you use ML.NET with a UDF to evaluate each Yelp review.
 
-Add the following code to your `Main` method to register a UDF called `MLudf`. 
+Add the following code to your `Main` method to register a UDF called `MLudf`.
 
 ```csharp
 spark.Udf()
@@ -177,7 +177,7 @@ static bool predict(string text)
 
 ## Add the model to your console app
 
-In Solution Explorer, copy the *MLModel.zip* file from the **MLSparkModelML.Model** project and paste it in the **MLSparkModelML.ConsoleApp** project. A reference is automatically added in *MLSparkModelML.ConsoleApp.csproj*. 
+In Solution Explorer, copy the *MLModel.zip* file from the **MLSparkModelML.Model** project and paste it in the **MLSparkModelML.ConsoleApp** project. A reference is automatically added in *MLSparkModelML.ConsoleApp.csproj*.
 
 ## Run your code
 

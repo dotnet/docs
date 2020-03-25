@@ -45,7 +45,7 @@ The following table lists `Newtonsoft.Json` features and `System.Text.Json` equi
 | Polymorphic serialization                             | ⚠️ [Not supported, workaround, sample](#polymorphic-serialization) |
 | Polymorphic deserialization                           | ⚠️ [Not supported, workaround, sample](#polymorphic-deserialization) |
 | Deserialize inferred type to `object` properties      | ⚠️ [Not supported, workaround, sample](#deserialization-of-object-properties) |
-| Deserialize JSON `null` literal to non-nullable types | ⚠️ [Not supported, workaround, sample](#deserialize-null-to-non-nullable-type) |
+| Deserialize JSON `null` literal to non-nullable value types | ⚠️ [Not supported, workaround, sample](#deserialize-null-to-non-nullable-type) |
 | Deserialize to immutable classes and structs          | ⚠️ [Not supported, workaround, sample](#deserialize-to-immutable-classes-and-structs) |
 | `[JsonConstructor]` attribute                         | ⚠️ [Not supported, workaround, sample](#specify-constructor-to-use) |
 | `Required` setting on `[JsonProperty]` attribute        | ⚠️ [Not supported, workaround, sample](#required-properties) |
@@ -236,7 +236,7 @@ To implement type inference for `object` properties, create a converter like the
 `Newtonsoft.Json` doesn't throw an exception in the following scenario:
 
 * `NullValueHandling` is set to `Ignore`, and
-* During deserialization, the JSON contains a null value for a non-nullable type.
+* During deserialization, the JSON contains a null value for a non-nullable value type.
 
 In the same scenario, <xref:System.Text.Json> does throw an exception. (The corresponding null handling setting is <xref:System.Text.Json.JsonSerializerOptions.IgnoreNullValues?displayProperty=nameWithType>.)
 
@@ -313,7 +313,7 @@ The preceding converter code is a simplified example. Additional logic would be 
 
 * A property is missing from the JSON.
 * A property for a non-nullable type is present in the JSON, but the value is the default for the type, such as zero for an `int`.
-* A property for a nullable type is present in the JSON, but the value is null.
+* A property for a nullable value type is present in the JSON, but the value is null.
 
 ### Conditionally ignore a property
 

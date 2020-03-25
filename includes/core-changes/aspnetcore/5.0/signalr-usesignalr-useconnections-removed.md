@@ -2,6 +2,8 @@
 
 In ASP.NET Core 3.0, SignalR adopted endpoint routing. As part of that change, the <xref:Microsoft.AspNetCore.Builder.SignalRAppBuilderExtensions.UseSignalR%2A>, <xref:Microsoft.AspNetCore.Builder.ConnectionsAppBuilderExtensions.UseConnections%2A>, and some related methods were marked as obsolete. In ASP.NET Core 5.0, those obsolete methods were removed. For the full list of methods, see [Affected APIs](#affected-apis).
 
+For discussion on this issue, see [dotnet/aspnetcore#20082](https://github.com/dotnet/aspnetcore/issues/20082).
+
 #### Version introduced
 
 5.0 Preview 3

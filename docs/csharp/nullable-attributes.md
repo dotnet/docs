@@ -24,7 +24,7 @@ Updating your library for nullable references requires more than sprinkling `?` 
 
 This work takes time. Let's start with strategies to make your library or application nullable-aware, while balancing other requirements and deliverables. You'll see how to balance ongoing development enabling nullable reference types. You'll learn challenges for generic type definitions. You'll learn to apply attributes to describe pre- and post-conditions on individual APIs.
 
-## Choose a nullable reference strategy
+## Choose a strategy for nullable reference types
 
 The first choice is whether nullable reference types should be on or off by default. You have two strategies:
 

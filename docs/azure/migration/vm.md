@@ -33,7 +33,7 @@ Virtual machines offer the easiest path to migrate an application from on-premis
 
 ### Virtual Machine Size
 
-Choose the virtual machine size and type that is best optimized for your workload. See [sizes for Windows virtual machines in Azure](https://docs.microsoft.com/azure/virtual-machines/windows/sizes) for more information.
+Choose the virtual machine size and type that is best optimized for your workload. For more information, see [Sizes for Windows virtual machines in Azure](https://docs.microsoft.com/azure/virtual-machines/windows/sizes).
 
 ### Maintenance
 
@@ -47,7 +47,7 @@ Azure Virtual Networks enable you to:
 
 - Build a hybrid infrastructure that you control
 - Bring your own IP addresses and DNS servers
-- Create an isolated and highly-secure environment for your applications
+- Create an isolated and highly secure environment for your applications
 - Connect your VM to your on-premises network using one of several [connectivity options](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways#s2smulti)
 - Integrate your virtual machine into your on-premises network using [ExpressRoute](https://azure.microsoft.com/services/expressroute/)
 
@@ -64,7 +64,7 @@ Many applications use Active Directory for authentication and identity managemen
 If your application is using an on-premises database, your app will not be able to talk to it by default. You can either:
 
 - Configure a hybrid network that enables your application to access your database running on-premises.
-- Migrate your database to the Azure. See [Migrate your SQL Server database to Azure](sql.md) for more information.
+- Migrate your database to the Azure. For more information, see [Migrate your SQL Server database to Azure](sql.md).
 
 ### High Availability and Scalability
 

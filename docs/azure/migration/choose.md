@@ -8,7 +8,7 @@ ms.date: 03/01/2020
 
 # Choose the right Azure hosting option
 
-This document provides multiple considerations and comparisons between the multiple choices you have in Azure when migrating your existing .NET Framework applications from on-premises to Azure.
+This article provides considerations and comparisons between the multiple choices you have in Azure when migrating your existing .NET Framework applications from on-premises to Azure.
 
 The fundamental areas to consider when migrating existing .NET applications to Azure are:
 
@@ -26,12 +26,12 @@ The following table shows several comparisons and recommendations to help you ch
 |                 | Azure VMs | Azure App Service | Windows Containers |
 |-----------------|-----------|-------------------|--------------------|
 |When to use      |<ul><li>Application has strong dependencies on the server and local .msi installations.</li><li>You want the easiest application migration path</li></ul>|App has no dependencies on the server, it is just a clean ASP.NET web app (MVC, WebForm) or N-Tier app (Web API, WCf) accessing a database server. |<ul><li>Application has dependencies on the original server but those dependencies can be included in the Docker Windows image.</li><li>Want to modernize the app so it is [Cloud DevOps-Ready](https://docs.microsoft.com/dotnet/standard/modernize-with-azure-and-containers/lift-and-shift-existing-apps-devops/reasons-to-lift-and-shift-existing-net-apps-to-cloud-devops-ready-applications)</li></ul>|
-|Pros & benefits  |<ul><li>Easiest migration path</li><li>Familiar environment. Deployment environment is a VM so very similar to on-premises servers.</li></ul> |Ongoing PaaS maintenance, simplest way to manage and scale apps in Azure. |<ul><li>Prepared for the future, Cloud DevOps-Ready with dependencies included in the app's containers.</li><li>Almost no need to re-factor .NET /C# code.</li></ul> |
-|Cons             |It is IaaS. Maintenance is costly. You have to manage VMs infrastructure about networking, load-balancer, scale-out, IIS management, etc. |<ul><li>Not all apps are [supported](http://www.migratetoazure.net/ReadinessAssessment)</li><li>Some apps might need to be refactored and even slightly re-architected, so they support Azure App Service.</li></ul> |<ul><li>Docker's skills learning curve</li><li>Some code and app configuration settings changes</li></ul>|
+|Pros & benefits  |<ul><li>Easiest migration path</li><li>Familiar environment. Deployment environment is a VM, so it's similar to on-premises servers.</li></ul> |Ongoing PaaS maintenance, simplest way to manage and scale apps in Azure. |<ul><li>Prepared for the future, Cloud DevOps-Ready with dependencies included in the app's containers.</li><li>Almost no need to refactor .NET /C# code.</li></ul> |
+|Cons             |It is IaaS. Maintenance is costly. You have to manage the VM's infrastructure about networking, load-balancer, scale-out, IIS management, and so on. |<ul><li>Not all apps are [supported](http://www.migratetoazure.net/ReadinessAssessment)</li><li>Some apps might need to be refactored and even slightly rearchitected, so they support Azure App Service.</li></ul> |<ul><li>Docker's skills learning curve</li><li>Some code and app configuration settings changes</li></ul>|
 |Requirements |Windows Server VM with the same requirements than the app for on-premises | Azure App Service requirements specified at the [Compatibility analysis for Azure App Service](https://www.migratetoazure.net/Resources). |<ul><li>[Windows Server 2016 with Containers - Azure VM](https://azuremarketplace.microsoft.com/marketplace/apps/Microsoft.WindowsServer?tab=Overview)<br />or</li><li>[Azure Container Service (AKS)](https://azure.microsoft.com/services/container-service/) (That is Kubernetes orchestrator)<br />or<li>[Azure Service Fabric](https://azure.microsoft.com/services/service-fabric/) orchestrator</li></ul> |
-|How to migrate |See [Migrate to Azure Virtual Machines](https://go.microsoft.com/fwlink/?linkid=862531) | See [Migrate Azure App Service](https://go.microsoft.com/fwlink/?linkid=862532) | Follow considerations, scenarios and walkthroughs explained in the [Modernizing existing .NET apps with Azure and Windows Containers eBook](https://aka.ms/liftandshiftwithcontainersebook) |
+|How to migrate |See [Migrate to Azure Virtual Machines](https://go.microsoft.com/fwlink/?linkid=862531) | See [Migrate Azure App Service](https://go.microsoft.com/fwlink/?linkid=862532) | Follow considerations, scenarios, and walkthroughs explained in the [Modernizing existing .NET apps with Azure and Windows Containers eBook](https://aka.ms/liftandshiftwithcontainersebook) |
 
- The following flowchart diagram shows a decision tree when planning a migration to Azure for your existing .NET Framework applications, being option A the first option to try and perform if it is viable, but option B the easiest path to perform.
+The following flowchart diagram shows a decision tree when planning a migration to Azure for your existing .NET Framework applications. If it's viable, try option A first, but option B is the easiest path to perform.
 
 ![Flowchart showing hosting decision tree](../media/migration/choose/decision-tree.png)
 
@@ -42,6 +42,7 @@ When migrating relational databases to Azure you have multiple choices. See [Mig
 ## Networking and security considerations
 
 When deploying applications to a public cloud like Microsoft Azure, you might want to isolate and secure certain networks by [creating network DMZs](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/), such as a [DMZ between Azure and on-premises](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-hybrid) or a [DMZ between Azure and the Internet](https://docs.microsoft.com/azure/architecture/reference-architectures/dmz/secure-vnet-dmz). DMZs can be implemented with [Azure Virtual Network](https://docs.microsoft.com/azure/virtual-network/virtual-networks-overview).
+
 Azure Virtual networks enable you to:
 
 - Build a hybrid infrastructure that you control
@@ -49,7 +50,7 @@ Azure Virtual networks enable you to:
 - Secure your connections with an IPsec VPN or ExpressRoute
 - Get granular control over traffic between subnets
 - Create sophisticated network topologies using virtual appliances
-- Get an isolated and highly-secure environment for your applications
+- Get an isolated and highly secure environment for your applications
 
 To get started building your own virtual network, see the [Azure Virtual Network documentation](https://docs.microsoft.com/azure/virtual-network/).
 

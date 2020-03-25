@@ -1,6 +1,6 @@
 ---
 title: "out parameter modifier - C# Reference"
-ms.date: 03/26/2019
+ms.date: 03/19/2020
 helpviewer_keywords: 
   - "parameters [C#], out"
   - "out parameters [C#]"
@@ -40,6 +40,12 @@ You can't use the `in`, `ref`, and `out` keywords for the following kinds of met
 - Async methods, which you define by using the [async](./async.md) modifier.  
   
 - Iterator methods, which include a [yield return](./yield.md) or `yield break` statement.  
+
+In addition, [extension methods](../../programming-guide/classes-and-structs/extension-methods.md) have the following restrictions:
+
+- The `out` keywoard cannot be used on the first argument of an extension method.
+- The `ref` keyword cannot be used on the first argument of an extension method when the argument is not a struct, or a generic type not constrained to be a struct.
+- The `in` keyword cannot be used unless the first argument is a struct. The `in` keyword cannot be used on any generic type, even when constrained to be a struct.
 
 ## Declaring `out` parameters
 

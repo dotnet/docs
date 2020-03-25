@@ -6,7 +6,7 @@ ms.assetid: 4228c007-07c9-4cf2-a45b-e7074c109581
 # How to retrieve the value of an element (LINQ to XML) (C#)
 This topic shows how to get the value of elements. There are two main ways to do this. One way is to cast an <xref:System.Xml.Linq.XElement> or an <xref:System.Xml.Linq.XAttribute> to the desired type. The explicit conversion operator then converts the contents of the element or attribute to the specified type and assigns it to your variable. Alternatively, you can use the <xref:System.Xml.Linq.XElement.Value%2A?displayProperty=nameWithType> property or the <xref:System.Xml.Linq.XAttribute.Value%2A?displayProperty=nameWithType> property.  
   
- With C#, however, casting is generally the better approach. If you cast the element or attribute to a nullable type, the code is simpler to write when retrieving the value of an element (or attribute) that might or might not exist. The last example in this topic demonstrates this. However, you cannot set the contents of an element through casting, as you can through <xref:System.Xml.Linq.XElement.Value%2A?displayProperty=nameWithType> property.  
+ With C#, however, casting is generally the better approach. If you cast the element or attribute to a nullable value type, the code is simpler to write when retrieving the value of an element (or attribute) that might or might not exist. The last example in this topic demonstrates this. However, you cannot set the contents of an element through casting, as you can through <xref:System.Xml.Linq.XElement.Value%2A?displayProperty=nameWithType> property.  
   
 ## Example  
  To retrieve the value of an element, you just cast the <xref:System.Xml.Linq.XElement> object to your desired type. You can always cast an element to a string, as follows:  
@@ -61,7 +61,7 @@ Value of e:abcde
 ```  
   
 ## Example  
- Sometimes you try to retrieve the value of an element even though you are not sure it exists. In this case, when you assign the casted element to a nullable type (either `string` or one of the nullable types in the .NET Framework), if the element does not exist the assigned variable is just set to `null`. The following code shows that when the element might or might not exist, it is easier to use casting than to use the <xref:System.Xml.Linq.XElement.Value%2A> property.  
+ Sometimes you try to retrieve the value of an element even though you are not sure it exists. In this case, when you assign the casted element to a nullable reference type, or nullable value type, if the element does not exist the assigned variable is just set to `null`. The following code shows that when the element might or might not exist, it is easier to use casting than to use the <xref:System.Xml.Linq.XElement.Value%2A> property.  
   
 ```csharp  
 XElement root = new XElement("Root",  

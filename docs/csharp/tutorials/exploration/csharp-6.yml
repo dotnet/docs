@@ -126,7 +126,7 @@ items:
    Console.WriteLine(s?.Length);
    ``` 
 
-   After this change, there's no output. That's because the result of `s?.Length` is an `int?` when the result of `s.Length` is an `int`. In this example, `s?.Length` is `null`. The `?.` returns `null` if its left operand is `null`. If the type of the right operand is a value type, the `?.` operator returns a nullable type for that type. In addition to `?.` you can use `?[]` for array or indexer access. Try the following code in the interactive window:
+   After this change, there's no output. That's because the result of `s?.Length` is an `int?` when the result of `s.Length` is an `int`. In this example, `s?.Length` is `null`. The `?.` returns `null` if its left operand is `null`. The `?.` operator returns a nullable type for that type, for both value types and non-nullable reference types. In addition to `?.` you can use `?[]` for array or indexer access. Try the following code in the interactive window:
 
     ```csharp
     char? c = s?[0];

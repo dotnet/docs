@@ -121,7 +121,7 @@ Embedding connection strings in your application's code can lead to security vul
     <add name="RsaProtectedConfigurationProvider"
       type="System.Configuration.RsaProtectedConfigurationProvider />  
     <add name="DataProtectionConfigurationProvider"
-      type="System.Configuration.DpapiProtectedConfigurationProvider />  
+      type="System.Configuration.DpapiProtectedConfigurationProvider" />  
   </providers>  
 </configProtectedData>  
 ```  

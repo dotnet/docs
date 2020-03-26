@@ -107,7 +107,7 @@ Model Builder creates a console app for you.
 
 ### Create a DataFrame and print to console
 
-Read in the Yelp review data from the *yelptest.csv* file as a `DataFrame`. Include `header` and `inferSchema` options. The `header` option reads the first line of *yelptest.csv* as column names instead of data. The `inferSchema` option infers column types based on the data. 
+Read in the Yelp review data from the *yelptest.csv* file as a `DataFrame`. Include `header` and `inferSchema` options. The `header` option reads the first line of *yelptest.csv* as column names instead of data. The `inferSchema` option infers column types based on the data.
 
 ```csharp
 DataFrame df = spark

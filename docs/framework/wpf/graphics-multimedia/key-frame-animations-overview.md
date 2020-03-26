@@ -283,7 +283,7 @@ A key spline with control points (0.25, 0.5) and (0.75, 1.0)
 - <xref:System.Windows.Media.Animation.KeySpline>
 - <xref:System.Windows.Media.Animation.Timeline>
 - [Key Spline Animation Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Animation/KeySplineAnimations)
-- [KeyFrame Animation Sample](https://go.microsoft.com/fwlink/?LinkID=160012)
+- [KeyFrame Animation Sample](https://github.com/microsoft/WPF-Samples/tree/master/Animation/KeyFrameAnimation)
 - [Animation Overview](animation-overview.md)
 - [Storyboards Overview](storyboards-overview.md)
 - [Key-Frame How-to Topics](key-frame-animation-how-to-topics.md)

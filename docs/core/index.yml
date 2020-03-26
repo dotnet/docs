@@ -30,6 +30,8 @@ landingContent:
         links:
           - text: .NET Core in depth
             url: about.md
+          - text: .NET Core support policy
+            url: https://dotnet.microsoft.com/platform/support/policy/dotnet-core
       - linkListType: whats-new
         links:
           - text: What's new in .NET Core 3.1
@@ -44,6 +46,10 @@ landingContent:
         links:
           - text: Select which .NET Core version to use 
             url: versions/selection.md
+      - linkListType: download
+        links:
+          - text: .NET Core downloads
+            url: https://dotnet.microsoft.com/download/dotnet-core
       - linkListType: how-to-guide
         links:
           - text: Install .NET Core SDK 
@@ -62,9 +68,13 @@ landingContent:
   # Card
   - title: Get started with .NET Core
     linkLists:
+      - linkListType: video
+        links:
+          - text: "Tutorial: Hello World in 10 minutes"
+            url: https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/intro 
       - linkListType: tutorial
         links:
-          - text: Get started with C# and Visual Studio Code
+          - text: Create a Hello World app in Visual Studio Code
             url: tutorials/with-visual-studio-code.md
           - text: Create a Hello World app in Visual Studio 
             url: tutorials/with-visual-studio.md

@@ -1,9 +1,9 @@
 ---
-title: .NET Core details
-description: Go in-depth on the details of .NET Core and compare it to other .NET implementations.
+title: .NET Core characteristics and composition
+description: Go in-depth on the characteristics and composition of .NET Core, and compare it to other .NET implementations.
 ms.date: 09/17/2019
 ---
-# About .NET Core
+# .NET Core in depth
 
 .NET Core has the following characteristics:
 
@@ -89,7 +89,7 @@ There's a mix of platform-specific and platform-neutral libraries in .NET Core. 
 
 To understand the size and shape of .NET Core, the following sections compare it to existing .NET implementations.
 
-### Comparison with .NET Framework
+### .NET Core vs. .NET Framework
 
 .NET was first announced by Microsoft in 2000 and evolved from there. .NET Framework has been the primary .NET implementation produced by Microsoft during that nearly two decade period.
 
@@ -105,7 +105,7 @@ While .NET Core is unique and has significant differences to .NET Framework and 
 
 Because .NET Core supports side-by-side installation and its runtime is completely independent of .NET Framework, it can be installed on machines that have .NET Framework installed without any issues.
 
-### Comparison with Mono
+### .NET Core vs. Mono
 
 [Mono](https://www.mono-project.com/) is the original cross-platform implementation of .NET. It started out as an [open-source](https://github.com/mono/mono) alternative to .NET Framework and transitioned to targeting mobile devices as iOS and Android devices became popular. It can be thought of as a community clone of .NET Framework. To provide a compatible implementation, the Mono project team relied on the open [.NET standards](https://github.com/dotnet/runtime/blob/master/docs/project/dotnet-standards.md) (notably ECMA 335) published by Microsoft.
 

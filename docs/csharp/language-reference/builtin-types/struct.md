@@ -35,7 +35,7 @@ All data members of a `readonly` struct must be read-only as follows:
 That guarantees that no member of a `readonly` struct modifies the state of the struct.
 
 > [!NOTE]
-> In a `readonly` struct, a data member of a mutable reference type still can mutate its own state. For example, you cannot replace an instance of a mutable collection, but you can add elements to it, if it provides corresponding API.
+> In a `readonly` struct, a data member of a mutable reference type still can mutate its own state. For example, you cannot replace a <xref:System.Collections.Generic.List%601> instance, but you can add new elements to it.
 
 ## Limitations with the design of a structure type
 

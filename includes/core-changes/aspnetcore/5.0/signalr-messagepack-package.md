@@ -1,4 +1,4 @@
-### SignalR: MessagePack Hub Protocol moved to MessagePack v2.x package
+### SignalR: MessagePack Hub Protocol moved to MessagePack 2.x package
 
 The ASP.NET Core SignalR [MessagePack Hub Protocol](/aspnet/core/signalr/messagepackhubprotocol) uses the [MessagePack NuGet package](https://www.nuget.org/packages/MessagePack) for MessagePack serialization. ASP.NET Core 5.0 upgrades from 1.x to the latest 2.x package version.
 
@@ -18,7 +18,7 @@ ASP.NET Core SignalR will use the MessagePack 2.x package to serialize and deser
 
 #### Reason for change
 
-MessagePack v2.x adds useful functionality by adopting the latest improvements in that package.
+MessagePack 2.x adds useful functionality by adopting the latest improvements in that package.
 
 #### Recommended action
 

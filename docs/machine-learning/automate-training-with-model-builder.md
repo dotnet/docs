@@ -18,7 +18,7 @@ You don't need machine learning expertise to use Model Builder. All you need is 
 > [!NOTE]
 > Model Builder is currently in Preview.
 
-## Scenarios
+## Scenario
 
 You can bring many different scenarios to Model Builder, to generate a machine learning model for your application.
 
@@ -51,7 +51,7 @@ Regression is used to predict numbers.
 
 Image classification can be used to identify images of different categories. For example, different types of terrain or animals or manufacturing defects.
 
-You can use the image classification template for your scenario if you have a set of images, and you want to classify the images into different categories.
+You can use the image classification scenario if you have a set of images, and you want to classify the images into different categories.
 
 #### Recommendation
 
@@ -59,7 +59,7 @@ The recommendation scenario predicts a list of suggested items for a particular 
 
 You can use the recommendation scenario when you have a set of users and a set of "products", such as items to purchase, movies, books, or TV shows, along with a set of users' "ratings" of those products.
 
-## Environments
+## Environment
 
 You can train your machine learning model locally on your machine or in the cloud on Azure.
 
@@ -110,7 +110,7 @@ If you don't have your own data yet, try out one of these datasets:
 ||Predict the type of issue in a GitHub repository|[GitHub issue data](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/end-to-end-apps/MulticlassClassification-GitHubLabeler/GitHubLabeler/Data/corefx-issues-train.tsv)|Area|Title, Description|
 |Value prediction|Predict taxi fare price|[taxi fare data](https://github.com/dotnet/machinelearning-samples/blob/master/datasets/taxi-fare-train.csv)|Fare|Trip time, distance|
 |Image classification|Predict the category of an issue|[flower images](http://download.tensorflow.org/example_images/flower_photos.tgz)|The type of flower: daisy, dandelion, roses, sunflowers, tulips|The image data itself|
-|Recommendation|Predict the movies that someones will like|[movie ratings](http://files.grouplens.org/datasets/movielens/ml-latest-small.zip)|Users, Movies|Ratings|
+|Recommendation|Predict movies that someone will like|[movie ratings](http://files.grouplens.org/datasets/movielens/ml-latest-small.zip)|Users, Movies|Ratings|
 
 ## Train
 
@@ -143,7 +143,7 @@ These numbers are a guide only. The exact length of training is dependent on:
 - the number of features (columns) being used to as input to the model
 - the type of columns
 - the ML task
-- the CPU, disk and memory performance of the machine used for training
+- the CPU, disk, and memory performance of the machine used for training
 
 ## Evaluate
 
@@ -186,7 +186,7 @@ For more information, see [model evaluation metrics](resources/metrics.md).
 
 If your model performance score is not as good as you want it to be, you can:
 
-- Train for a longer period of time. With more time, the automated machine learning engine to try more algorithms and settings.
+- Train for a longer period of time. With more time, the automated machine learning engine experiments with more algorithms and settings.
 
 - Add more data. Sometimes the amount of data is not sufficient to train a high-quality machine learning model.
 

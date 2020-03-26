@@ -1,9 +1,9 @@
 ---
-title: .NET Core characteristics and composition
-description: Go in-depth on the characteristics and composition of .NET Core, and compare it to other .NET implementations.
+title: .NET Core overview
+description: Learn about the characteristics and composition of .NET Core, and compare it to other .NET implementations.
 ms.date: 09/17/2019
 ---
-# .NET Core in depth
+# .NET Core overview
 
 .NET Core has the following characteristics:
 
@@ -11,7 +11,7 @@ ms.date: 09/17/2019
 - **Consistent across architectures:** Runs your code with the same behavior on multiple architectures, including x64, x86, and ARM.
 - **Command-line tools:**  Includes easy-to-use command-line tools that can be used for local development and in continuous-integration scenarios.
 - **Flexible deployment:** Can be included in your app or installed side-by-side (user-wide or system-wide installations). Can be used with [Docker containers](docker/introduction.md).
-- **Compatible:** .NET Core is compatible with the .NET Framework, Xamarin, and Mono platforms via [.NET Standard](../standard/net-standard.md).
+- **Compatible:** .NET Core is compatible with the .NET Framework, Xamarin, and Mono implementations via [.NET Standard](../standard/net-standard.md).
 - **Open source:** The .NET Core platform is open source, using MIT and Apache 2 licenses. .NET Core is a [.NET Foundation](https://dotnetfoundation.org/) project.
 - **Supported by Microsoft:** .NET Core is [supported by Microsoft](https://dotnet.microsoft.com/platform/support/policy).
 

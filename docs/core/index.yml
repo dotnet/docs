@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: .NET Core documentation
-summary: Learn about .NET Core, an open-source, general-purpose development platform for building cross-platform apps.
+summary: Learn about .NET Core, an open-source, general-purpose development framework for building cross-platform apps.
 
 metadata:
   title: .NET Core documentation
@@ -20,6 +20,8 @@ landingContent:
         links:
           - text: Introduction to .NET Core
             url: introduction.md
+          - text: .NET Core overview
+            url: about.md
           - text: .NET Core SDK overview
             url: sdk.md
       - linkListType: get-started
@@ -28,8 +30,6 @@ landingContent:
             url: get-started.md
       - linkListType: concept
         links:
-          - text: .NET Core in depth
-            url: about.md
           - text: .NET Core support policy
             url: https://dotnet.microsoft.com/platform/support/policy/dotnet-core
       - linkListType: whats-new

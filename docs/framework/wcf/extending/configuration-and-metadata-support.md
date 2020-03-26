@@ -32,7 +32,7 @@ This topic describes how to enable configuration and metadata support for bindin
   <system.serviceModel>  
     <extensions>  
       <bindingElementExtensions>  
-      <add name="udpTransport" type="Microsoft.ServiceModel.Samples.UdpTransportElement, UdpTransport />  
+      <add name="udpTransport" type="Microsoft.ServiceModel.Samples.UdpTransportElement, UdpTransport" />  
       </bindingElementExtensions>  
     </extensions>  
   </system.serviceModel>  
@@ -87,7 +87,7 @@ protected override void OnApplyConfiguration(string configurationName)
   <configSections>  
      <sectionGroup name="system.serviceModel">  
          <sectionGroup name="bindings">  
-                 <section name="sampleProfileUdpBinding" type="Microsoft.ServiceModel.Samples.SampleProfileUdpBindingCollectionElement, UdpTransport />  
+                 <section name="sampleProfileUdpBinding" type="Microsoft.ServiceModel.Samples.SampleProfileUdpBindingCollectionElement, UdpTransport" />  
          </sectionGroup>  
      </sectionGroup>  
   </configSections>  
@@ -147,7 +147,7 @@ if (soapBinding != null)
       <metadata>  
         <wsdlImporters>  
           <extension type=" Microsoft.ServiceModel.Samples.UdpBindingElementImporter, UdpTransport" />  
-        </policyImporters>  
+        </wsdlImporters>  
       </metadata>  
     </client>  
   </system.serviceModel>  

@@ -17,7 +17,7 @@ Defines settings in a custom configuration section that is defined by a \<sectio
 ## Syntax
 
 ```xml
-<sectionName key="value" key2="value2" ... />
+<sectionName key="value" key2="value2" />
 ```
 
 ## Attributes

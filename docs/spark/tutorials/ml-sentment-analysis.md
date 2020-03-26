@@ -152,7 +152,7 @@ spark.Stop();
 
 ### Create predict() method
 
-Add the following code before your `Main()` method. This code is similar to what is produced by Model Builder in *ConsumeModel.cs*. Moving this method to your console keeps the model loading every time you run your app.
+Add the following code before your `Main()` method. This code is similar to what is produced by Model Builder in *ConsumeModel.cs*. Moving this method to your console loads the model loading each time you run your app.
 
 ```csharp
 private static readonly PredictionEngine<ModelInput, ModelOutput> _predictionEngine;
@@ -198,7 +198,7 @@ Then navigate to the console app's publish folder and run the following `spark-s
 
 ## Get the code
 
-This tutorial uses code from the [Sentiment Analysis with Big Data](https://github.com/dotnet/spark/tree/master/examples/Microsoft.Spark.CSharp.Examples/MachineLearning/Sentiment) example.
+This tutorial is similar to the code from the [Sentiment Analysis with Big Data](https://github.com/dotnet/spark/tree/master/examples/Microsoft.Spark.CSharp.Examples/MachineLearning/Sentiment) example.
 
 ## Next steps
 

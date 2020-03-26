@@ -63,7 +63,7 @@ You can use the recommendation scenario when you have a set of users and a set o
 
 You can train your machine learning model locally on your machine or in the cloud on Azure.
 
-When you train locally, you work within the constraints of the resources (CPU, memory, and disk) of your computer. When you train in the cloud, you can scale up your resources to meet the demands of your scenario, especially for large datasets.
+When you train locally, you work within the constraints of your computer resources (CPU, memory, and disk). When you train in the cloud, you can scale up your resources to meet the demands of your scenario, especially for large datasets.
 
 Local training is supported for all scenarios.
 

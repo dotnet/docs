@@ -1,6 +1,6 @@
 ---
 title: "Overview - LINQ to XML"
-description: LINQ to XML provides an in-memory XML programming interface that is based on .NET capabilities, and comparable to an updated DOM API.
+description: LINQ to XML provides an in-memory XML programming interface that' based on .NET capabilities, and comparable to an updated DOM API.
 ms.date: 10/30/2018
 dev_langs:
   - "csharp"

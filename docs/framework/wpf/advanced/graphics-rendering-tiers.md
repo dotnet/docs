@@ -39,7 +39,7 @@ A rendering tier defines a level of graphics hardware capability and performance
 ### Rendering Tier 0  
  A rendering tier value of 0 means that there is no graphics hardware acceleration available for the application on the device. At this tier level, you should assume that all graphics will be rendered by software with no hardware acceleration. This tier's functionality corresponds to a DirectX version that is less than 9.0.  
   
-### Rendering Tier 1 and Rendering Tier 2  
+### Rendering Tier 1 and Rendering Tier 2
   
 > [!NOTE]
 > Starting in the .NET Framework 4, rendering tier 1 has been redefined to only include graphics hardware that supports DirectX 9.0 or greater. Graphics hardware that supports DirectX 7 or 8 is now defined as rendering tier 0.  
@@ -51,7 +51,7 @@ A rendering tier defines a level of graphics hardware capability and performance
 |Feature|Tier 1|Tier 2|  
 |-------------|------------|------------|  
 |DirectX version|Must be greater than or equal to 9.0.|Must be greater than or equal to 9.0.|  
-|Video RAM|Must be greater than or equal to 60MB.|Must be greater than or equal to 120MB.|  
+|Video RAM|Must be greater than or equal to 60 MB.|Must be greater than or equal to 120 MB.|  
 |Pixel shader|Version level must greater than or equal to 2.0.|Version level must greater than or equal to 2.0.|  
 |Vertex shader|No requirement.|Version level must greater than or equal to 2.0.|  
 |Multitexture units|No requirement.|Number of units must greater than or equal to 4.|  
@@ -66,7 +66,7 @@ A rendering tier defines a level of graphics hardware capability and performance
 |3D MIP mapping|[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] attempts to use MIP mapping when rendering 3D content. MIP mapping improves the quality of texture rendering when a texture occupies a smaller field of view in a <xref:System.Windows.Controls.Viewport3D>.|  
 |Radial gradients|While supported, avoid the use of <xref:System.Windows.Media.RadialGradientBrush> on large objects.|  
 |3D lighting calculations|[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] performs per-vertex lighting, which means that a light intensity must be calculated at each vertex for each material applied to a mesh.|  
-|Text rendering|Sub-pixel font rendering uses available pixel shaders on the graphics hardware.|  
+|Text rendering|Subpixel font rendering uses available pixel shaders on the graphics hardware.|  
   
  The following features and capabilities are hardware accelerated only for rendering tier 2:  
   
@@ -118,7 +118,7 @@ A rendering tier defines a level of graphics hardware capability and performance
   
  When you run the DirectX Diagnostic Tool, the main window contains a set of tabs that allow you to display and diagnose DirectX-related information. For example, the **System** tab provides system information about your computer and specifies the version of DirectX that is installed on your computer.  
   
- ![Screenhot: DirectX Diagnostic Tool](./media/directxdiagnostictool-01.png "DirectXDiagnosticTool_01")  
+ ![Screenshot: DirectX Diagnostic Tool](./media/directxdiagnostictool-01.png "DirectXDiagnosticTool_01")  
 DirectX Diagnostic Tool main window  
   
 ## See also

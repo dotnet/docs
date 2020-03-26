@@ -59,7 +59,7 @@ The recommendation scenario predicts a list of suggested items for a particular 
 
 You can use the recommendation scenario when you have a set of users and a set of "products", such as items to purchase, movies, books, or TV shows, along with a set of users' "ratings" of those products.
 
-## Environment
+## Environments
 
 You can train your machine learning model locally on your machine or in the cloud on Azure.
 

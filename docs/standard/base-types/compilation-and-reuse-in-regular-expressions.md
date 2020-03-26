@@ -30,7 +30,7 @@ You can optimize the performance of applications that make extensive use of regu
   
  Your application can reuse regular expressions in one of the following two ways:  
   
-- By using a static method of the <xref:System.Text.RegularExpressions.Regex> object to define the regular expression. If you are using a regular expression pattern that has already been defined in another static method call, the regular expression engine will retrieve it from the cache, if it's still available. If not, or if it's not still available, the engine will compile the regular expression and add it to the cache.  
+- By using a static method of the <xref:System.Text.RegularExpressions.Regex> object to define the regular expression. If you're using a regular expression pattern that has already been defined by another static method call, the regular expression engine will try to retrieve it from the cache. If it's not available in the cache, the engine will compile the regular expression and add it to the cache.
   
 - By reusing an existing <xref:System.Text.RegularExpressions.Regex> object as long as its regular expression pattern is needed.  
   

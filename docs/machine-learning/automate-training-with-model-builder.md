@@ -18,7 +18,7 @@ You don't need machine learning expertise to use Model Builder. All you need is 
 > [!NOTE]
 > Model Builder is currently in Preview.
 
-## Scenarios
+## Scenario
 
 You can bring many different scenarios to Model Builder, to generate a machine learning model for your application.
 

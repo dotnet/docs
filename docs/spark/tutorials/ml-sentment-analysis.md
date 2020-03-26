@@ -107,7 +107,7 @@ Model Builder creates a console app for you.
 
 ### Create a DataFrame and print to console
 
-Read in the Yelp review data from the *yelptest.csv* file as a `DataFrame`. Include `header` and `inferSchema` options.
+Read in the Yelp review data from the *yelptest.csv* file as a `DataFrame`. Include `header` and `inferSchema` options. The `header` option reads the first line of *yelptest.csv* as column names instead of data. The `inferSchema` option infers column types based on the data. 
 
 ```csharp
 DataFrame df = spark
@@ -130,7 +130,7 @@ spark.Udf()
     .Register<string, bool>("MLudf", predict);
 ```
 
-This UDF takes a Yelp review string as input, and outputs true or false for positive and negative sentiments, respectively. It uses the *predict()* method that you define in a later step.
+This UDF takes a Yelp review string as input, and outputs true or false for positive or negative sentiments, respectively. It uses the *predict()* method that you define in a later step.
 
 ### Use Spark SQL to call the UDF
 
@@ -152,7 +152,7 @@ spark.Stop();
 
 ### Create predict() method
 
-Add the following code before you `Main()` method. This code is similar to what is produced by Model Builder in *ConsumeModel.cs*. Moving this method to your console keeps the model loading every time you run your app.
+Add the following code before your `Main()` method. This code is similar to what is produced by Model Builder in *ConsumeModel.cs*. Moving this method to your console keeps the model loading every time you run your app.
 
 ```csharp
 private static readonly PredictionEngine<ModelInput, ModelOutput> _predictionEngine;

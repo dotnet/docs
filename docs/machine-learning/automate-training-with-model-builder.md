@@ -1,7 +1,7 @@
 ---
 title: What is Model Builder and how does it work?
 description: How to use the ML.NET Model Builder to automatically train a machine learning model
-ms.date: 01/07/2020
+ms.date: 03/25/2020
 ms.custom: overview, mlnet-tooling
 #Customer intent: As a developer, I want to use Model Builder to automatically train a model using a visual interface.
 ---
@@ -18,7 +18,7 @@ You don't need machine learning expertise to use Model Builder. All you need is 
 > [!NOTE]
 > Model Builder is currently in Preview.
 
-## Scenario
+## Scenarios
 
 You can bring many different scenarios to Model Builder, to generate a machine learning model for your application.
 
@@ -65,6 +65,10 @@ You can train your machine learning model locally on your machine or in the clou
 
 When you train locally, you work within the constraints of the resources (CPU, memory, and disk) of your computer. When you train in the cloud, you can scale up your resources to meet the demands of your scenario, especially for large datasets.
 
+Local training is supported for all scenarios.
+
+Azure training is supported for Image Classification.
+
 ## Data
 
 Once you have chosen your scenario, Model Builder asks you to provide a dataset. The data is used to train, evaluate, and choose the best model for your scenario.
@@ -105,8 +109,8 @@ If you don't have your own data yet, try out one of these datasets:
 ||Predict fraudulent credit card transactions|[credit card data](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/BinaryClassification_CreditCardFraudDetection/CreditCardFraudDetection.Trainer/assets/input/creditcardfraud-dataset.zip)|Class (1 when fraudulent, 0 otherwise)|Amount, V1-V28 (anonymized features)|
 ||Predict the type of issue in a GitHub repository|[GitHub issue data](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/end-to-end-apps/MulticlassClassification-GitHubLabeler/GitHubLabeler/Data/corefx-issues-train.tsv)|Area|Title, Description|
 |Value prediction|Predict taxi fare price|[taxi fare data](https://github.com/dotnet/machinelearning-samples/blob/master/datasets/taxi-fare-train.csv)|Fare|Trip time, distance|
-|Image classification|Predict the category of an issue|[Flowers images](http://download.tensorflow.org/example_images/flower_photos.tgz)|The type of flower: daisy, dandelion, roses, sunflowers, tulips|The image data itself|
-|Recommendation|Predict the movies that someones will like|[Movie ratings](http://files.grouplens.org/datasets/movielens/ml-latest-small.zip)|Users, Movies|Ratings|
+|Image classification|Predict the category of an issue|[flower images](http://download.tensorflow.org/example_images/flower_photos.tgz)|The type of flower: daisy, dandelion, roses, sunflowers, tulips|The image data itself|
+|Recommendation|Predict the movies that someones will like|[movie ratings](http://files.grouplens.org/datasets/movielens/ml-latest-small.zip)|Users, Movies|Ratings|
 
 ## Train
 
@@ -151,13 +155,13 @@ Model Builder splits the training data into a training set and a test set. The t
 
 A scenario maps to a machine learning task. Each ML task has its own set of evaluation metrics.
 
-#### Regression (for example, Price Prediction)
+#### Value prediction
 
-The default metric for regression problems is RSquared, the value of RSquared ranges between 0 and 1. 1 is the best possible value or in other words the closer the value of RSquared to 1 the better your model is performing.
+The default metric for value prediction problems is RSquared, the value of RSquared ranges between 0 and 1. 1 is the best possible value or in other words the closer the value of RSquared to 1 the better your model is performing.
 
-Other metrics reported such as absolute-loss, squared-loss, and RMS loss are additional metrics, which can be used to understand how your model is performing and comparing it against other regression models.
+Other metrics reported such as absolute-loss, squared-loss, and RMS loss are additional metrics, which can be used to understand how your model is performing and comparing it against other value prediction models.
 
-#### Binary Classification (for example, Sentiment Analysis)
+#### Classification (2 categories)
 
 The default metric for classification problems is accuracy. Accuracy defines the proportion of correct predictions your model is making over the test dataset. The closer to 100% or 1.0 the better it is.
 
@@ -165,7 +169,7 @@ Other metrics reported such as AUC (Area under the curve), which measures the tr
 
 Additional metrics like F1 score can be used to control the balance between Precision and Recall.
 
-#### Multi-Class Classification (for example, Issue Classification, Image Classification)
+#### Classification (3+ categories)
 
 The default metric for Multi-class classification is Micro Accuracy. The closer the Micro Accuracy to 100% or 1.0 the better it is.
 

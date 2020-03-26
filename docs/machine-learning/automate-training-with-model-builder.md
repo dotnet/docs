@@ -1,7 +1,7 @@
 ---
 title: What is Model Builder and how does it work?
 description: How to use the ML.NET Model Builder to automatically train a machine learning model
-ms.date: 01/07/2020
+ms.date: 03/25/2020
 ms.custom: overview, mlnet-tooling
 #Customer intent: As a developer, I want to use Model Builder to automatically train a model using a visual interface.
 ---
@@ -33,47 +33,41 @@ A scenario is a description of the type of prediction you want to make using you
 
 In Model Builder, you need to select a scenario. The type of scenario depends on what type of prediction you are trying to make.
 
-#### Predict a category (when there are only two categories)
+#### Text classification
 
-Binary classification is used to categorize data into two categories (yes/no; pass/fail; true/false; positive/negative).
+Classification is used to categorize data into categories.
 
 ![Diagram showing examples of binary classification including fraud detection, risk mitigation, and application screening](media/binary-classification-examples.png)
 
-Sentiment analysis can be used to predict positive or negative sentiment of customer feedback. It is an example of the binary classification machine learning task.
-
-If your scenario requires classification into two categories, you can use this template with your own dataset.
-
-#### Predict a category (when there are three or more categories)
-
-Multiclass classification can be used to categorize data into three or more classes.
-
 ![Examples of multiclass classification including document and product classification, support ticket routing, and customer issue prioritization](media/multiclass-classification-examples.png)
 
-Issue classification can be used to categorize customer feedback (for example, on GitHub) issues using the issue title and description. It is an example of the multi-class classification machine learning task.
-
-You can use the issue classification template for your scenario if you want to categorize data into three or more categories.
-
-#### Predict a number
+#### Value prediction
 
 Regression is used to predict numbers.
 
 ![Diagram showing regression examples such as price prediction, sales forecasting, and predictive maintenance](media/regression-examples.png)
 
-Price prediction can be used to predict house prices using location, size, and other characteristics of the house. It is an example of the regression machine learning task.
-
-You can use the price prediction template for your scenario if you want to predict a numerical value with your own dataset.
-
-#### Classify images into categories
-
-This scenario is a special case of multiclass classification, where the input data to be categorized is a set of images.
+#### Image classification
 
 Image classification can be used to identify images of different categories. For example, different types of terrain or animals or manufacturing defects.
 
 You can use the image classification template for your scenario if you have a set of images, and you want to classify the images into different categories.
 
-#### Custom scenario
+#### Recommendation
 
-The custom scenario allows you to manually choose your scenario.
+The recommendation scenario predicts a list of suggested items for a particular user, based on how similar their likes and dislikes are to other users'.
+
+You can use the recommendation scenario when you have a set of users and a set of "products", such as items to purchase, movies, books, or TV shows, along with a set of users' "ratings" of those products.
+
+## Environments
+
+You can train your machine learning model locally on your machine or in the cloud on Azure.
+
+When you train locally, you work within the constraints of your computer resources (CPU, memory, and disk). When you train in the cloud, you can scale up your resources to meet the demands of your scenario, especially for large datasets.
+
+Local training is supported for all scenarios.
+
+Azure training is supported for Image Classification.
 
 ## Data
 
@@ -108,14 +102,15 @@ The label is the historical house price for that row of square footage, bedroom,
 
 If you don't have your own data yet, try out one of these datasets:
 
-|Scenario|ML task|Data|Label|Features|
+|Scenario|Example|Data|Label|Features|
 |-|-|-|-|-|
-|Price prediction|regression|[taxi fare data](https://github.com/dotnet/machinelearning-samples/blob/master/datasets/taxi-fare-train.csv)|Fare|Trip time, distance|
-|Anomaly detection|binary classification|[product sales data](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/AnomalyDetection_Sales/SpikeDetection/Data/product-sales.csv)|Product Sales|Month|
-|Sentiment analysis|binary classification|[website comment data](https://raw.githubusercontent.com/dotnet/machinelearning/master/test/data/wikipedia-detox-250-line-data.tsv)|Label (0 when negative sentiment, 1 when positive)|Comment, Year|
-|Fraud detection|binary classification|[credit card data](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/BinaryClassification_CreditCardFraudDetection/CreditCardFraudDetection.Trainer/assets/input/creditcardfraud-dataset.zip)|Class (1 when fraudulent, 0 otherwise)|Amount, V1-V28 (anonymized features)|
-|Text classification|multiclass classification|[GitHub issue data](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/end-to-end-apps/MulticlassClassification-GitHubLabeler/GitHubLabeler/Data/corefx-issues-train.tsv)|Area|Title, Description|
-|Image classification|multiclass classification|[Flowers images](http://download.tensorflow.org/example_images/flower_photos.tgz)|The type of flower: daisy, dandelion, roses, sunflowers, tulips|The image data itself|
+|Classification|Predict sales anomalies|[product sales data](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/AnomalyDetection_Sales/SpikeDetection/Data/product-sales.csv)|Product Sales|Month|
+||Predict sentiment of website comments|[website comment data](https://raw.githubusercontent.com/dotnet/machinelearning/master/test/data/wikipedia-detox-250-line-data.tsv)|Label (0 when negative sentiment, 1 when positive)|Comment, Year|
+||Predict fraudulent credit card transactions|[credit card data](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/getting-started/BinaryClassification_CreditCardFraudDetection/CreditCardFraudDetection.Trainer/assets/input/creditcardfraud-dataset.zip)|Class (1 when fraudulent, 0 otherwise)|Amount, V1-V28 (anonymized features)|
+||Predict the type of issue in a GitHub repository|[GitHub issue data](https://github.com/dotnet/machinelearning-samples/blob/master/samples/csharp/end-to-end-apps/MulticlassClassification-GitHubLabeler/GitHubLabeler/Data/corefx-issues-train.tsv)|Area|Title, Description|
+|Value prediction|Predict taxi fare price|[taxi fare data](https://github.com/dotnet/machinelearning-samples/blob/master/datasets/taxi-fare-train.csv)|Fare|Trip time, distance|
+|Image classification|Predict the category of an issue|[flower images](http://download.tensorflow.org/example_images/flower_photos.tgz)|The type of flower: daisy, dandelion, roses, sunflowers, tulips|The image data itself|
+|Recommendation|Predict the movies that someones will like|[movie ratings](http://files.grouplens.org/datasets/movielens/ml-latest-small.zip)|Users, Movies|Ratings|
 
 ## Train
 
@@ -160,13 +155,13 @@ Model Builder splits the training data into a training set and a test set. The t
 
 A scenario maps to a machine learning task. Each ML task has its own set of evaluation metrics.
 
-#### Regression (for example, Price Prediction)
+#### Value prediction
 
-The default metric for regression problems is RSquared, the value of RSquared ranges between 0 and 1. 1 is the best possible value or in other words the closer the value of RSquared to 1 the better your model is performing.
+The default metric for value prediction problems is RSquared, the value of RSquared ranges between 0 and 1. 1 is the best possible value or in other words the closer the value of RSquared to 1 the better your model is performing.
 
-Other metrics reported such as absolute-loss, squared-loss, and RMS loss are additional metrics, which can be used to understand how your model is performing and comparing it against other regression models.
+Other metrics reported such as absolute-loss, squared-loss, and RMS loss are additional metrics, which can be used to understand how your model is performing and comparing it against other value prediction models.
 
-#### Binary Classification (for example, Sentiment Analysis)
+#### Classification (2 categories)
 
 The default metric for classification problems is accuracy. Accuracy defines the proportion of correct predictions your model is making over the test dataset. The closer to 100% or 1.0 the better it is.
 
@@ -174,7 +169,7 @@ Other metrics reported such as AUC (Area under the curve), which measures the tr
 
 Additional metrics like F1 score can be used to control the balance between Precision and Recall.
 
-#### Multi-Class Classification (for example, Issue Classification, Image Classification)
+#### Classification (3+ categories)
 
 The default metric for Multi-class classification is Micro Accuracy. The closer the Micro Accuracy to 100% or 1.0 the better it is.
 

@@ -1,16 +1,18 @@
 ---
-title:  What's new with .NET Core 3.0 for Desktop?
-description: .
+title:  What's new with .NET Core 3 for Desktop?
+description: Learn about .NET Core, differences between .NET COre and .NET Framework and the new features tht were added in the latest version of the .NET Core - version 3.
 ms.date: 09/16/2019
 ---
 
-# What's new with .NET Core 3.0 for Desktop?
+# What's new with .NET Core 3 for Desktop?
+
+From the version 3.0, .NET Core supports Windows Forms and WPF, so now you have a choice between .NET Framework and .NET Core for your desktop applications. This chapter will describe what is .NET Core and what are it's benefits for desktop applications.
 
 ## From .NET Framework to .NET Core - The motivation behind .NET Core
 
-Since its inception in 2002, .NET Framework has evolved through the years to support many technologies like Windows Forms, ASP.NET, Entity Framework, Windows Store, and many others. All of them are different in nature. Therefore, Microsoft was approaching this evolution by taking parts of the .NET Framework and creating a different application stack for each technology. That way, development capabilities could be customized for the needs of the specific stack, which maximized the potential of every platform. That lead to fragmentation on the versions of the .NET Framework maintained by different independent teams. All these stacks have a common structure, containing an App Model, a Framework, and a Runtime, but they differ in the implementation of each of these parts.
+Since its launch in 2002, .NET Framework has evolved through the years to support many technologies like Windows Forms, ASP.NET, Entity Framework, Windows Store, and many others. All of them are different in nature. Therefore, Microsoft was approaching this evolution by taking parts of the .NET Framework and creating a different application stack for each technology. That way, development capabilities could be customized for the needs of the specific stack, which maximized the potential of every platform. That lead to fragmentation on the versions of the .NET Framework maintained by different independent teams. All these stacks have a common structure, containing an App Model, a Framework, and a Runtime, but they differ in the implementation of each of these parts.
 
-![Different Microsoft technologies](./media/whats-new-dotnet-core-desktop/different-technologies.png)
+![Illustration showing the different desktop technologies and their components](./media/whats-new-dotnet-core-desktop/different-technologies.png)
 
 If you're targeting only one of these platforms, you can use this model. However, in many cases you might need more than one target platform in the same solution. For example, your application may have a desktop admin part, a customer-facing web site that shares the back-end logic running on a server, and even a mobile client. In this case, you need a unified coding experience that can span all this .NET verticals.
 
@@ -20,7 +22,7 @@ This leads to reasoning about the API differences between verticals at the assem
 
 ![Release history of .NET Framework](./media/whats-new-dotnet-core-desktop/release-history.png)
 
-With PCL, the experience of development is unified across verticals based on the API shape. And the most pressing need to create libraries running on different verticals is also addressed. But there's still a great challenge: APIs are only portable when the implementation is moved forward across all the verticals, and still verticals have independent implementations.
+With PCL, the experience of development is unified across verticals based on the API shape. And the most pressing need to create libraries running on different verticals is also addressed. But there's a great challenge: APIs are only portable when the implementation is moved forward across all the verticals.
 
 A better approach is to unify the implementations across verticals by providing a well-factored implementation instead of a well-factored view. It's a lot simpler to ask each team that owns a specific component to think about how their APIs work across all verticals than trying to retroactively provide a consistent API stack on top. This is where .NET Standard comes in. See details on the next section.
 
@@ -56,15 +58,7 @@ In .NET Core 3.0, besides the existing support for web and cloud, there's also s
 
 So now that you understand the relevance of .NET Core inside the Microsoft strategy for .NET, you might be wondering what happens with .NET Framework. You could be asking questions like: do you have to abandon it? Is it going to disappear? What are my choices to modernize the applications I have on .NET Framework?
 
-The good news is that Microsoft plans to support both .NET Framework and .NET Core. In fact, the announcement of .NET Core 3.0 was followed by exciting features in .NET Framework regarding modernization, so let's take a brief look at both paths.
-
-Listening to the .NET Framework developer's community suggestions, Microsoft have addressed three main scenarios for **.NET Core**:
-
-- **Side-by-side versions of .NET supporting Windows Forms and WPF**: This solves the problem of side effects when updating the machine's framework version. Multiple versions of .NET Core can be installed on the same machine and each application specifies which version of .NET Core it should use. Even more, now you can develop and run Windows Forms and WPF on top of .NET Core.
-- **Embed .NET directly into an application**: You can deploy .NET Core as part of your application package. This enables you to take advantage of the latest version, features, and APIs without having to wait for a specific version to be installed on the machine.
-- **Take advantage of .NET Core features**: .NET Core is the fast-moving, open-source version of .NET. Its side-by-side nature enables fast introduction of new innovative APIs and Base Class Libraries (BCL) improvements without the risk of breaking compatibility. Now Windows Forms and WPF applications can take advantage of the latest .NET Core features, which also includes more fundamental fixes for runtime performance, high-DPI support, and so on.
-
-For **.NET Framework 4.8**, Microsoft has addressed three scenarios:
+In 2019 the last version of the **.NET Framework - 4.8** was released. It included three major improvements for desktop applications: 
 
 - **Modern browser and media controls**: Today, .NET desktop applications use Internet Explorer and Windows Media Player for showing HTML and playing media files. Since these legacy controls don't show the latest HTML or play the latest media files, new controls were added that take advantage of Microsoft Edge and newer media players that support the latest standards.
 - **Access to UWP controls**: UWP contains new controls that take advantage of the latest Windows features and touch displays. You don't have to rewrite your applications to use these new features and controls, so you can use these new features in your existing WPF or Windows Forms code.
@@ -72,25 +66,26 @@ For **.NET Framework 4.8**, Microsoft has addressed three scenarios:
 
 Since .NET Framework is installed on millions of machines, Microsoft will continue to support it but won't add new features.
 
-.NET Core is the open-source, cross-platform, and fast-moving version of .NET. Because of its side-by-side nature, it can take changes without the fear of breaking any application. This means that .NET Core will get new APIs and language features over time that .NET Framework won't.
+.NET Core is the open-source, cross-platform, and fast-moving version of .NET. Because of its side-by-side nature, it can take changes without the fear of breaking any application. This means that .NET Core will get new APIs and language features over time that .NET Framework won't. Also, **.NET Core** already has features, that were impossible for .NET Framework, such as:
 
-An essential part of the roadmap is to ease developers to move applications to .NET Core. .NET Core 3.0 takes a huge step by adding WPF, Windows Forms, and Entity Framework 6 support, and we'll keep porting APIs and features to help close the gap and make migration easier for those developers who chose to do so.
+- **Side-by-side versions of .NET supporting Windows Forms and WPF**: This solves the problem of side effects when updating the machine's framework version. Multiple versions of .NET Core can be installed on the same machine and each application specifies which version of .NET Core it should use. Even more, now you can develop and run Windows Forms and WPF on top of .NET Core.
+- **Embed .NET directly into an application**: You can deploy .NET Core as part of your application package. This enables you to take advantage of the latest version, features, and APIs without having to wait for a specific version to be installed on the machine.
+- **Take advantage of .NET Core features**: .NET Core is the fast-moving, open-source version of .NET. Its side-by-side nature enables fast introduction of new innovative APIs and Base Class Libraries (BCL) improvements without the risk of breaking compatibility. Now Windows Forms and WPF applications can take advantage of the latest .NET Core features, which also includes more fundamental fixes for runtime performance, high-DPI support, and so on.
 
-If you have existing .NET Framework applications, you shouldn't feel pressured to move to .NET Core. .NET Framework will be fully supported and will always be a part of Windows. However, if you want to use the newest language features and APIs in the future, you'll need to move your applications to .NET Core.
+An essential part of the roadmap for Microsoft was to ease developers to move applications to .NET Core and in future to .NET 5. But if you have existing .NET Framework applications, you shouldn't feel pressured to move to .NET Core. .NET Framework will be fully supported and will always be a part of Windows. However, if you want to use the newest language features and APIs in the future, you'll need to move your applications to .NET Core.
 
 For your brand new desktop applications, we recommend starting directly on .NET Core. It's lightweight and cross platform, runs side by side, has high performance, and fits perfectly on containers and microservices architectures.
 
-![.NET Framework and .NET Core](./media/whats-new-dotnet-core-desktop/dotnet-framework-and-dotnet-core.png)
+![You can update your .NET Framework applications using the latest .NET Framework version or port your applications to .NET Core](./media/whats-new-dotnet-core-desktop/framework-vs-core.png)
 
 ## .NET Standard vs. PCL
 
-The [.NET Standard](https://github.com/dotnet/standard) is a formal specification of .NET APIs that are intended to be available on all .NET implementations. The motivation behind the .NET Standard is establishing greater uniformity in the .NET ecosystem. .NET Standard is a specification of .NET APIs that make up a uniform set of contracts to compile your code against. These contracts are implemented in each .NET flavor, thus enabling portability across different .NET implementations.
+The [.NET Standard](../../standard/net-standard.md) is a formal specification of .NET APIs that are intended to be available on all .NET implementations. The motivation behind the .NET Standard is establishing greater uniformity in the .NET ecosystem. .NET Standard is a specification of .NET APIs that make up a uniform set of contracts to compile your code against. These contracts are implemented in each .NET flavor, thus enabling portability across different .NET implementations.
 
 The .NET Standard enables the following key scenarios:
 
 - Defines uniform set of base class libraries APIs for all .NET implementations to implement, independent of the workload.
 - Enables developers to produce portable libraries that are usable across .NET implementations, using this same set of APIs.
-- Reduces or even eliminates conditional compilation of shared source due to .NET APIs, only for OS APIs.
 
 .NET Standard is the evolution of PCLs and here are the fundamental differences between .NET Standard and PCLs:
 
@@ -99,7 +94,7 @@ The .NET Standard enables the following key scenarios:
 - .NET Standard is platform-agnostic, it can run anywhere, on Windows, macOS, Linux, and so on.
 - PCLs can also run cross-platform, but they have a more limited reach. PCLs can only target a limited set of platforms.
 
-## .NET Core 3.0 new Desktop features
+## .NET Core 3 new Desktop features
 
 ### Support for Windows Forms and WPF
 
@@ -107,13 +102,11 @@ Windows Forms and WPF are part of .NET Core 3.0. Both presentation frameworks ar
 
 A new version of .NET Standard, version 2.1, was released at the same time. As expected, all new .NET Standard APIs are part of .NET Core 3.0.
 
-You can build desktop applications with C#, F#, and VB with .NET Core 3.0.
-
 Also, it's important to notice that both Windows Forms and WPF implementations for .NET Core 3.0 are being open sourced.
 
 ### XAML Islands
 
-XAML Islands is a set of components for developers to use the new Windows 10 controls (UWP XAML controls) in their current WPF, Windows Forms, and native Win32 apps (like MFC). You can have your "islands" of UWP XAML controls wherever you want inside your Win32 apps.
+[XAML Islands](/windows/apps/desktop/modernize/xaml-islands) is a set of components for developers to use the new Windows 10 controls (UWP XAML controls) in their current WPF, Windows Forms, and native Win32 apps (like MFC). You can have your "islands" of UWP XAML controls wherever you want inside your Win32 apps.
 
 These XAML Islands are possible because Windows 10, version 1903 introduces a set of APIs that allows hosting UWP XAML content in Win32 windows using windows handlers (HWnds). Notice that only apps running on Windows 10 1903 and above can use XAML Islands.
 

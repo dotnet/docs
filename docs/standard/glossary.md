@@ -155,7 +155,7 @@ See the [.NET Guide](index.md)
 
 A cross-platform, high-performance, open-source implementation of .NET. Includes the Core Common Language Runtime (CoreCLR), the Core AOT Runtime (CoreRT, in development), the Core Base Class Library, and the Core SDK.
 
-See [.NET Core](../core/index.md).
+See [.NET Core](../core/index.yml).
 
 ## .NET Core CLI
 
@@ -269,6 +269,6 @@ An implementation of .NET that is used for building modern, touch-enabled Window
 
 - [.NET Guide](index.md)
 - [.NET Framework Guide](../framework/index.yml)
-- [.NET Core](../core/index.md)
+- [.NET Core](../core/index.yml)
 - [ASP.NET Overview](/aspnet/index#pivot=aspnet)
 - [ASP.NET Core Overview](/aspnet/index#pivot=core)

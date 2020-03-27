@@ -39,14 +39,14 @@ highlightedContent:
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
-  title: ".NET: Free. Cross-platform. Open source." # < 60 chars (optional)
+  title: ".NET: Free. Cross platform. Open source." # < 60 chars (optional)
   summary: "A developer platform for building all your apps: web, mobile, desktop, gaming, IoT, and more. Supported on Windows, Linux, and macOS."
   items:
     # Card
     - title: Open-source .NET
       summary: Learn about .NET Core
       links:
-        - url: core/index.md
+        - url: core/index.yml
           itemType: overview
           text: .NET Core overview
         - url: core/whats-new/dotnet-core-3-1.md

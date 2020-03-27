@@ -56,18 +56,6 @@ namespace keywords
     }
     // </SnippetInitReadonlyField>
 
-    // <SnippetReadonlyStruct>
-    public readonly struct Point
-    {
-        public double X { get; }
-        public double Y { get; }
-
-        public Point(double x, double y) => (X, Y) = (x, y);
-
-        public override string ToString() => $"({X}, {Y})";
-    }
-    // </SnippetReadonlyStruct>
-
     public static class ReadonlyKeywordExamples
     {
         public static void Examples()

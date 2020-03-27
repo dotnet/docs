@@ -138,3 +138,7 @@ You can take advantage of these performance improvements when you use .NET Core 
 Just a few words about .NET Core being open source. Building a cross-platform stack is something complex that needs the interaction of specialized teams on each of the targeted platforms. This effort needs much collaboration from inside and outside of Microsoft. By making it open source and thus open to public collaboration, you get the ultimate agile development style in place, raising the quality bar since issues are detected by a huge and active community of developers.
 
 This is a key success factor of .NET Core that will continue to speed up the roadmap previously mentioned: To be the single .NET platform that any developer will ever need to build any application.
+
+>[!div class="step-by-step"]
+>[Previous](why-modern-desktop-applications.md)
+>[Next](migrating-modern-desktop-applications.md)

@@ -193,7 +193,7 @@ These events collect information about worker and I/O threads.
   
 |Event|Event ID|Raised when|  
 |-----------|--------------|-----------------|  
-|`IOThreadTerminate`|45|An I/O thread is created in the thread pool.|  
+|`IOThreadTerminate`|45|An I/O thread is terminated in the thread pool.|  
   
  The following table shows the event data.  
   

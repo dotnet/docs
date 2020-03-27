@@ -30,7 +30,7 @@ There are also ways to specify other scenarios like pre-release versions etc. wh
 ### Backwards Compatibility
 
 As you release new versions of your library, backwards compatibility with previous versions will most likely be one of your major concerns.
-A new version of your library is source compatible with a previous version if code that depends on the previous version can, when recompiled, work with the new version. 
+A new version of your library is source compatible with a previous version if code that depends on the previous version can, when recompiled, work with the new version.
 A new version of your library is binary compatible if an application that depended on the old version can, without recompilation, work with the new version.
 
 Here are some things to consider when trying to maintain backwards compatibility with older versions of your library:
@@ -79,7 +79,7 @@ You use the `new` modifier to hide inherited members of a base class. This is on
 
 Take the following example:
 
-[!code-csharp[Sample usage of the 'new' modifier](~/samples/csharp/versioning/new/Program.cs#sample)]
+[!code-csharp[Sample usage of the 'new' modifier](~/samples/snippets/csharp/versioning/new/Program.cs#sample)]
 
 **Output**
 
@@ -98,7 +98,7 @@ When no `new` modifier is specified, a derived class will by default hide confli
 The `override` modifier means a derived implementation extends the implementation of a base class member rather than
 hides it. The base class member needs to have the `virtual` modifier applied to it.
 
-[!code-csharp[Sample usage of the 'override' modifier](../../samples/csharp/versioning/override/Program.cs#sample)]
+[!code-csharp[Sample usage of the 'override' modifier](../../samples/snippets/csharp/versioning/override/Program.cs#sample)]
 
 **Output**
 

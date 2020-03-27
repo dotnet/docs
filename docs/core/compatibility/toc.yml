@@ -7,6 +7,8 @@
 - name: By version
   expanded: true
   items:
+  - name: 3.1 to 5.0
+    href: 3.1-5.0.md
   - name: 3.0 to 3.1
     href: 3.0-3.1.md
   - name: 2.2 to 3.1
@@ -36,6 +38,8 @@
     href: /ef/core/what-is-new/ef-core-3.0/breaking-changes?toc=/dotnet/core/compatibility/toc.json&bc=/dotnet/breadcrumb/toc.json
   - name: Globalization
     href: globalization.md
+  - name: MSBuild
+    href: msbuild.md
   - name: Networking
     href: networking.md
   - name: Visual Basic

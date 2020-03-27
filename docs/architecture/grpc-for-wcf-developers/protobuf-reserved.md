@@ -1,12 +1,14 @@
 ---
-title: Protobuf reserved fields - gRPC for WCF Developers
+title: Protobuf reserved fields - gRPC for WCF developers
 description: Learn about reserved fields for cross-version compatibility.
 ms.date: 09/09/2019
 ---
 
 # Protobuf reserved fields
 
-Protobuf's backward-compatibility guarantees rely on field numbers always representing the same data item. If a field is removed from a message in a new version of the service, that field number should never be reused. This can be enforced using the `reserved` keyword. If the `displayName` and `marketId` fields were removed from the `Stock` message defined earlier, their field numbers should be reserved as in the following example.
+The backward-compatibility guarantees in Protocol Buffer (Protobuf) rely on field numbers always representing the same data item. If a field is removed from a message in a new version of the service, that field number should never be reused. You can enforce this by using the `reserved` keyword.
+
+If the `displayName` and `marketId` fields were removed from the `Stock` message defined earlier, their field numbers should be reserved as in the following example.
 
 ```protobuf
 syntax "proto3";
@@ -20,7 +22,7 @@ message Stock {
 }
 ```
 
-The `reserved` keyword can also be used as a placeholder for fields that might be added in the future. Contiguous field numbers can be expressed as a range using the `to` keyword.
+You can also use the `reserved` keyword as a placeholder for fields that might be added in the future. You can express contiguous field numbers as a range by using the `to` keyword.
 
 ```protobuf
 syntax "proto3";

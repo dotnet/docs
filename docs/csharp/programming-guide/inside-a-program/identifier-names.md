@@ -32,7 +32,7 @@ In addition to the rules, there are a number of identifier [naming conventions](
 - [Inside a C# Program](./index.md)
 - [C# Reference](../../language-reference/index.md)
 - [Classes](../classes-and-structs/classes.md)
-- [Structs](../classes-and-structs/structs.md)
+- [Structure types](../../language-reference/builtin-types/struct.md)
 - [Namespaces](../namespaces/index.md)
 - [Interfaces](../interfaces/index.md)
 - [Delegates](../delegates/index.md)

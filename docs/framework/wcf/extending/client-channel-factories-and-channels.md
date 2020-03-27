@@ -22,7 +22,7 @@ A channel factory creates channels.
   
 - The <xref:System.ServiceModel.Channels.ChannelFactoryBase> class implements <xref:System.ServiceModel.Channels.ChannelManagerBase> and <xref:System.ServiceModel.Channels.IChannelFactory> and consolidates the `CreateChannel` overloads into one `OnCreateChannel` abstract method.
   
-- The <xref:System.ServiceModel.Channels.ChannelListenerBase> class implements <xref:System.ServiceModel.Channels.IChannelListener>. It takes care of basic state management. 
+- The <xref:System.ServiceModel.Channels.ChannelListenerBase> class implements <xref:System.ServiceModel.Channels.IChannelListener>. It takes care of basic state management.
   
  The following discussion is based upon the [Transport: UDP](../samples/transport-udp.md) sample.  
   
@@ -34,7 +34,7 @@ A channel factory creates channels.
   
  The override of <xref:System.ServiceModel.Channels.CommunicationObject.OnOpen%2A> creates a socket that is used to send messages to this <xref:System.Net.EndPoint>.  
   
- ```csharp 
+ ```csharp
 this.socket = new Socket(  
 this.remoteEndPoint.AddressFamily,
    SocketType.Dgram,
@@ -59,10 +59,10 @@ ArraySegment<byte> messageBuffer = EncodeMessage(message);
   
 ```csharp  
 this.socket.SendTo(  
-  messageBuffer.Array,   
-  messageBuffer.Offset,   
-  messageBuffer.Count,   
-  SocketFlags.None,   
+  messageBuffer.Array,
+  messageBuffer.Offset,
+  messageBuffer.Count,
+  SocketFlags.None,
   this.remoteEndPoint  
 );  
 ```  

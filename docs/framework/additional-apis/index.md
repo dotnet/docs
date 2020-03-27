@@ -7,8 +7,6 @@ helpviewer_keywords:
   - ".NET Framework out-of-band releases"
   - "out-of-band releases"
 ms.assetid: cf2d9006-b631-4e5d-81cd-20aab78c60f1
-author: "mairaw"
-ms.author: "mairaw"
 ms.topic: conceptual
 ---
 
@@ -24,7 +22,7 @@ In addition, some libraries target specific platforms or implementations of the 
 | ------- | ----------- |  
 | <xref:System.Collections.Immutable> | Provides collections that are thread safe and guaranteed to never change their contents. |
 | <xref:System.Net.Http.WinHttpHandler> | Provides a message handler for <xref:System.Net.Http.HttpClient> based on the WinHTTP interface of Windows. |
-| <xref:System.Numerics> | Provides a library of vector types that can take advantage of SIMD hardware-based acceleration.| 
+| <xref:System.Numerics> | Provides a library of vector types that can take advantage of SIMD hardware-based acceleration.|
 | <xref:System.Threading.Tasks.Dataflow> | The TPL Dataflow Library provides dataflow components to help increase the robustness of concurrency-enabled applications. |  
 
 ## Platform-specific libraries

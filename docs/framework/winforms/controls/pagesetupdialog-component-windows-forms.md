@@ -40,4 +40,3 @@ The Windows Forms <xref:System.Windows.Forms.PageSetupDialog> component is a pre
   
  [Dialog-Box Controls and Components](dialog-box-controls-and-components-windows-forms.md)  
  Describes a set of controls and components that allow users to perform standard interactions with the application or system.
- 

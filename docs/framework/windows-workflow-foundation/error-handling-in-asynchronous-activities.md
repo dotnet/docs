@@ -21,7 +21,7 @@ Providing error handling in an <xref:System.Activities.AsyncCodeActivity> involv
 class SendMailAsyncResult : IAsyncResult  
         {  
             …  
-            public Exception Error { get; set; }   
+            public Exception Error { get; set; }
             …  
             void SendCompleted(object sender, AsyncCompletedEventArgs e)  
             {  
@@ -38,7 +38,7 @@ class SendMailAsyncResult : IAsyncResult
         {  
             SendMailAsyncResult sendMailResult = result as SendMailAsyncResult;  
             if (sendMailResult != null && sendMailResult.Error != null)  
-                throw sendMailResult.Error;   
+                throw sendMailResult.Error;
         }  
     }  
 ```

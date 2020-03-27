@@ -37,7 +37,7 @@ The benefits of migrating WSE 3.0 Web services to Windows Communication Foundati
 ```xml  
 <customBinding>  
   <binding name="MyBinding">  
-    <security authenticationMode="UserNameForCertificate"   
+    <security authenticationMode="UserNameForCertificate"
               messageProtectionOrder="SignBeforeEncrypt"  
               requireDerivedKeys="true"/>  
   </binding>  

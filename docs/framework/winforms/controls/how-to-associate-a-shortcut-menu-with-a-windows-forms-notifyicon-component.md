@@ -56,9 +56,9 @@ ms.assetid: d68f3926-08d3-4f7d-949f-1981b29cf188
        ContextMenu1.MenuItems.Add("E&xit")  
   
        ' Set properties of NotifyIcon component.  
-       NotifyIcon1.Icon = New System.Drawing.Icon _   
-          (System.Environment.GetFolderPath _   
-          (System.Environment.SpecialFolder.Personal)  _   
+       NotifyIcon1.Icon = New System.Drawing.Icon _
+          (System.Environment.GetFolderPath _
+          (System.Environment.SpecialFolder.Personal)  _
           & "\Icon.ico")  
        NotifyIcon1.Text = "Right-click me!"  
        NotifyIcon1.Visible = True  

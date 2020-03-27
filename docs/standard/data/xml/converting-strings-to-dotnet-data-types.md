@@ -81,7 +81,7 @@ writer.WriteElementString("Number", XmlConvert.ToString(value));
   
 ```xml  
 <Boolean>true</Boolean>  
-<Boolean>1</Boolean>   
+<Boolean>1</Boolean>
 ```  
   
  Both can be understood by the following code, and **bvalue** is **System.Boolean.True**:  

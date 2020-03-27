@@ -12,7 +12,7 @@
 > - [Fedora 30 - x64](../linux-package-manager-fedora30.md)
 > - [Fedora 29 - x64](../linux-package-manager-fedora29.md)
 > - [OpenSUSE 15 - x64](../linux-package-manager-opensuse15.md)
-> - [RHEL 8.1 - x64](../linux-package-manager-rhel81.md)
+> - [RHEL 8 - x64](../linux-package-manager-rhel8.md)
 > - [RHEL 7 - x64](../linux-package-manager-rhel7.md)
 > - [SLES 15 - x64](../linux-package-manager-sles15.md)
 > - [SLES 12 - x64](../linux-package-manager-sles12.md)

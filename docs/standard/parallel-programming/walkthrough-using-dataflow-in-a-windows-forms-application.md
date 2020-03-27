@@ -29,7 +29,7 @@ This document demonstrates how to create a network of dataflow blocks that perfo
   
 - [The Complete Example](#complete)  
   
-<a name="winforms"></a>   
+<a name="winforms"></a>
 ## Creating the Windows Forms Application  
  This section describes how to create the basic Windows Forms application and add controls to the main form.  
   
@@ -45,7 +45,7 @@ This document demonstrates how to create a network of dataflow blocks that perfo
   
 5. Add a <xref:System.Windows.Forms.PictureBox> object to the main form. Set the <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>.  
   
-<a name="network"></a>   
+<a name="network"></a>
 ## Creating the Dataflow Network  
  This section describes how to create the dataflow network that performs image processing.  
   
@@ -95,7 +95,7 @@ This document demonstrates how to create a network of dataflow blocks that perfo
   
  This example uses a shared cancellation token instead of setting the <xref:System.Threading.Tasks.Dataflow.DataflowBlockOptions.CancellationToken%2A> property because the <xref:System.Threading.Tasks.Dataflow.DataflowBlockOptions.CancellationToken%2A> property permanently cancels dataflow block execution. A cancellation token enables this example to reuse the same dataflow network multiple times, even when the user cancels one or more operations. For an example that uses <xref:System.Threading.Tasks.Dataflow.DataflowBlockOptions.CancellationToken%2A> to permanently cancel the execution of a dataflow block, see [How to: Cancel a Dataflow Block](../../../docs/standard/parallel-programming/how-to-cancel-a-dataflow-block.md).  
   
-<a name="ui"></a>   
+<a name="ui"></a>
 ## Connecting the Dataflow Network to the User Interface  
  This section describes how to connect the dataflow network to the user interface. The creation of the composite image and cancellation of the operation are initiated from the **Choose Folder** and **Cancel** buttons. When the user chooses either of these buttons, the appropriate action is initiated in an asynchronous manner.  
   
@@ -113,7 +113,7 @@ This document demonstrates how to create a network of dataflow blocks that perfo
   
      [!code-csharp[TPLDataflow_CompositeImages#7](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_compositeimages/cs/compositeimages/form1.cs#7)]  
   
-<a name="complete"></a>   
+<a name="complete"></a>
 ## The Complete Example  
  The following example shows the complete code for this walkthrough.  
   

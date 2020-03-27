@@ -1,6 +1,6 @@
 ---
 title: "in parameter modifier - C# Reference"
-ms.date: 03/26/2019
+ms.date: 03/19/2020
 helpviewer_keywords: 
   - "parameters [C#], in"
   - "in parameters [C#]"
@@ -14,7 +14,7 @@ The `in` keyword causes arguments to be passed by reference. It makes the formal
 
 The preceding example demonstrates that the `in` modifier is usually unnecessary at the call site. It is only required in the method declaration.
 
-> [!NOTE] 
+> [!NOTE]
 > The `in` keyword can also be used with a generic type parameter to specify that the type parameter is contravariant, as part of a `foreach` statement, or as part of a `join` clause in a LINQ query. For more information on the use of the `in` keyword in these contexts, see [in](in.md), which provides links to all those uses.
   
 Variables passed as `in` arguments must be initialized before being passed in a method call. However, the called method may not assign a value or modify the argument.  
@@ -26,7 +26,7 @@ The `in`, `ref`, and `out` keywords are not considered part of the method signat
 ```csharp
 class CS0663_Example
 {
-    // Compiler error CS0663: "Cannot define overloaded 
+    // Compiler error CS0663: "Cannot define overloaded
     // methods that differ only on in, ref and out".
     public void SampleMethod(in int i) { }
     public void SampleMethod(ref int i) { }
@@ -45,7 +45,7 @@ class InOverloads
 
 ## Overload resolution rules
 
-You can understand the overload resolution rules for methods with by value vs. `in` arguments by understanding the motivation for `in` arguments. Defining methods using `in` parameters is a potential performance optimization. Some `struct` type arguments may be large in size, and when methods are called in tight loops or critical code paths, the cost of copying those structures is critical. Methods declare `in` parameters to specify that arguments may be passed by reference safely because the called method does not modify the state of that argument. Passing those arguments by reference avoids the (potentially) expensive copy. 
+You can understand the overload resolution rules for methods with by value vs. `in` arguments by understanding the motivation for `in` arguments. Defining methods using `in` parameters is a potential performance optimization. Some `struct` type arguments may be large in size, and when methods are called in tight loops or critical code paths, the cost of copying those structures is critical. Methods declare `in` parameters to specify that arguments may be passed by reference safely because the called method does not modify the state of that argument. Passing those arguments by reference avoids the (potentially) expensive copy.
 
 Specifying `in` for arguments at the call site is typically optional. There is no semantic difference between passing arguments by value and passing them by reference using the `in` modifier. The `in` modifier at the call site is optional because you don't need to indicate that the argument's value might be changed. You explicitly add the `in` modifier at the call site to ensure the argument is passed by reference, not by value. Explicitly using `in` has the following two effects:
 
@@ -103,14 +103,16 @@ Method(in i); // passed by readonly reference, explicitly using `in`
 The only method call where the argument is passed by reference is the final one.
 
 > [!NOTE]
-> The preceding code uses `int` as the argument type for simplicity. Because `int` is no larger than a reference in most modern machines, there is no benefit to passing a single `int` as a readonly reference. 
+> The preceding code uses `int` as the argument type for simplicity. Because `int` is no larger than a reference in most modern machines, there is no benefit to passing a single `int` as a readonly reference.
 
 ## Limitations on `in` parameters
 
 You can't use the `in`, `ref`, and `out` keywords for the following kinds of methods:  
   
 - Async methods, which you define by using the [async](async.md) modifier.  
-- Iterator methods, which include a [yield return](yield.md) or `yield break` statement.  
+- Iterator methods, which include a [yield return](yield.md) or `yield break` statement.
+- The first argument of an extension method cannot have the `in` modifier unless that argument is a struct.
+- The first argument of an extension method where that argument is a generic type (even when that type is constrained to be a struct.)
 
 ## C# Language Specification  
  [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  

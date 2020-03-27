@@ -22,7 +22,7 @@ Notifies the profiler that the given identifier of a function may be remapped to
   
 ```cpp  
 UINT_PTR __stdcall FunctionIDMapper (  
-    [in]  FunctionID  funcId,   
+    [in]  FunctionID  funcId,
     [out] BOOL       *pbHookFunction  
 );  
 ```  

@@ -17,7 +17,7 @@ ms.assetid: f8be2732-836d-4e4d-85e2-73aa39479bf4
   
  The following sections define the required [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree structure, properties, control patterns, and events for the Tab control type. The [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] requirements apply to all tab controls, whether [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)], Win32, or Windows Forms.  
   
-<a name="Required_UI_Automation_Tree_Structure"></a>   
+<a name="Required_UI_Automation_Tree_Structure"></a>
 ## Required UI Automation Tree Structure  
  The following table depicts the control view and the content view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree that pertains to tab controls and describes what can be contained in each view. For more information on the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree, see [UI Automation Tree Overview](ui-automation-tree-overview.md).  
   
@@ -31,7 +31,7 @@ ms.assetid: f8be2732-836d-4e4d-85e2-73aa39479bf4
 |------------------|------------------|  
 |Tab<br /><br /> <ul><li>TabItem (1 or more)</li><li>Group (0 or more)<br /><br /> <ul><li>TabItem (0 or more)</li></ul></li><li>ScrollBar (0 or more)<br /><br /> <ul><li>Button (0 or 2)</li></ul></li></ul>|Tab<br /><br /> <ul><li>TabItem (1 or more)</li><li>Group (0 or more)<br /><br /> <ul><li>TabItem (0 or more)</li></ul></li></ul>|  
   
-<a name="Required_UI_Automation_Properties"></a>   
+<a name="Required_UI_Automation_Properties"></a>
 ## Required UI Automation Properties  
  The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties whose value or definition is especially relevant to the Tab control type. For more information on [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties, see [UI Automation Properties for Clients](ui-automation-properties-for-clients.md).  
   
@@ -50,7 +50,7 @@ ms.assetid: f8be2732-836d-4e4d-85e2-73aa39479bf4
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.IsControlElementProperty>|True|The tab control is always included in the control view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.OrientationProperty>|See notes.|The tab control must always indicate whether it is positioned horizontally or vertically.|  
   
-<a name="Required_UI_Automation_Control_Patterns_and_Properties"></a>   
+<a name="Required_UI_Automation_Control_Patterns_and_Properties"></a>
 ## Required UI Automation Control Patterns and Properties  
  The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] control patterns required to be supported by all tab controls. For more information on control patterns, see [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md).  
   
@@ -61,7 +61,7 @@ ms.assetid: f8be2732-836d-4e4d-85e2-73aa39479bf4
 |<xref:System.Windows.Automation.Provider.ISelectionProvider.CanSelectMultiple%2A>|False|Tab controls are always single-selection containers.|  
 |<xref:System.Windows.Automation.Provider.IScrollProvider>|Depends|The Scroll pattern must be supported in the tab control has widgets that allow for a set of tab items to be scrolled through.|  
   
-<a name="Required_UI_Automation_Events"></a>   
+<a name="Required_UI_Automation_Events"></a>
 ## Required UI Automation Events  
  The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] events required to be supported by all tab controls. For more information on events, see [UI Automation Events Overview](ui-automation-events-overview.md).  
   

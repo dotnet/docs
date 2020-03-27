@@ -15,7 +15,7 @@ ms.assetid: c2caaf45-e59c-42a1-bc9b-77a6de520171
 > [!CAUTION]
 > If your client application might attempt to find elements in its own user interface, you must make all [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] calls on a separate thread. For more information, see [UI Automation Threading Issues](ui-automation-threading-issues.md).  
   
-<a name="The_Root_Element"></a>   
+<a name="The_Root_Element"></a>
 ## Root Element  
  All searches for <xref:System.Windows.Automation.AutomationElement> objects must have a starting-place. This can be any element, including the desktop, an application window, or a control.  
   
@@ -24,7 +24,7 @@ ms.assetid: c2caaf45-e59c-42a1-bc9b-77a6de520171
 > [!CAUTION]
 > In general, you should try to obtain only direct children of the <xref:System.Windows.Automation.AutomationElement.RootElement%2A>. A search for descendants may iterate through hundreds or even thousands of elements, possibly resulting in a stack overflow. If you are attempting to obtain a specific element at a lower level, you should start your search from the application window or from a container at a lower level.  
   
-<a name="Using_Conditions"></a>   
+<a name="Using_Conditions"></a>
 ## Conditions  
  For most techniques you can use to retrieve [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] elements, you must specify a <xref:System.Windows.Automation.Condition>, which is a set of criteria defining what elements you want to retrieve.  
   
@@ -36,7 +36,7 @@ ms.assetid: c2caaf45-e59c-42a1-bc9b-77a6de520171
   
  Conditions can be combined using Boolean logic by constructing objects of types <xref:System.Windows.Automation.AndCondition>, <xref:System.Windows.Automation.OrCondition>, and <xref:System.Windows.Automation.NotCondition>.  
   
-<a name="Search_Scope"></a>   
+<a name="Search_Scope"></a>
 ## Search Scope  
  Searches done by using <xref:System.Windows.Automation.AutomationElement.FindFirst%2A> or <xref:System.Windows.Automation.AutomationElement.FindAll%2A> must have a scope as well as a starting-place.  
   
@@ -44,17 +44,17 @@ ms.assetid: c2caaf45-e59c-42a1-bc9b-77a6de520171
   
  The scope of a search is defined by a bitwise combination of values from the <xref:System.Windows.Automation.TreeScope> enumeration.  
   
-<a name="Finding_a_Known_Element"></a>   
+<a name="Finding_a_Known_Element"></a>
 ## Finding a Known Element  
  To find a known element, identified by its <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.Name%2A>, <xref:System.Windows.Automation.AutomationElement.AutomationElementInformation.AutomationId%2A>, or some other property or combination of properties, it is easiest to use the <xref:System.Windows.Automation.AutomationElement.FindFirst%2A> method. If the element sought is an application window, the starting-point of the search can be the <xref:System.Windows.Automation.AutomationElement.RootElement%2A>.  
   
  This way of finding [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] elements is most useful in automated testing scenarios.  
   
-<a name="Finding_Elements_in_a_Subtree"></a>   
+<a name="Finding_Elements_in_a_Subtree"></a>
 ## Finding Elements in a Subtree  
  To find all elements meeting specific criteria that are related to a known element, you can use <xref:System.Windows.Automation.AutomationElement.FindAll%2A>. For example, you could use this method to retrieve list items or menu items from a list or menu, or to identify all controls in a dialog box.  
   
-<a name="Walking_a_Subtree"></a>   
+<a name="Walking_a_Subtree"></a>
 ## Walking a Subtree  
  If you have no prior knowledge of the applications that your client may be used with, you can construct a subtree of all elements of interest by using the <xref:System.Windows.Automation.TreeWalker> class. Your application might do this in response to a focus-changed event; that is, when an application or control receives input focus, the UI Automation client examines children and perhaps all descendants of the focused element.  
   
@@ -72,7 +72,7 @@ ms.assetid: c2caaf45-e59c-42a1-bc9b-77a6de520171
   
  The <xref:System.Windows.Automation.TreeWalker.Normalize%2A> method can be used for navigating to an element in the subtree from another element that is not part of the view. For example, suppose you have created a view of a subtree by using <xref:System.Windows.Automation.TreeWalker.ContentViewWalker>. Your application then receives notification that a scroll bar has received the input focus. Because a scroll bar is not a content element, it is not present in your view of the subtree. However, you can pass the <xref:System.Windows.Automation.AutomationElement> representing the scroll bar to <xref:System.Windows.Automation.TreeWalker.Normalize%2A> and retrieve the nearest ancestor that is in the content view.  
   
-<a name="Other_Ways_to_Retrieve_an_Element"></a>   
+<a name="Other_Ways_to_Retrieve_an_Element"></a>
 ## Other Ways to Retrieve an Element  
  In addition to searches and navigation, you can retrieve an <xref:System.Windows.Automation.AutomationElement> in the following ways.  
   

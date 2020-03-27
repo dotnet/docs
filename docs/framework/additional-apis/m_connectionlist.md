@@ -10,8 +10,6 @@ api_location:
 api_type: 
   - "Assembly"
 ms.assetid: 186083cf-8dff-4600-a2ab-6fed4b4de6af
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # ConnectionGroup.m\_ConnectionList Field
 
@@ -25,7 +23,7 @@ private ArrayList m_ConnectionList
 
 > [!WARNING]
 > The `ConnectionGroup.m_ConnectionList` field is private and is not meant to be used directly in your code.
-> 
+>
 > Microsoft does not support the use of this field in a production application under any circumstance.
 
 ## Requirements

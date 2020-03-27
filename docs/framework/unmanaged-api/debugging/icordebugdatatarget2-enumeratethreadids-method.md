@@ -10,8 +10,8 @@ Returns a list of active thread IDs.
   
 ```cpp  
 HRESULT EnumerateThreadIDs(  
-    [in] ULONG32 cThreadIds,   
-    [out] ULONG32 *pcThreadIds,   
+    [in] ULONG32 cThreadIds,
+    [out] ULONG32 *pcThreadIds,
     [out, size_is(cThreadIds), length_is(*pcThreadIds)] ULONG32 pThreadIds[]  
 );  
 ```  

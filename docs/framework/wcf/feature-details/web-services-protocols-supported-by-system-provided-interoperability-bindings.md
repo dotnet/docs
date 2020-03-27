@@ -67,9 +67,9 @@ Windows Communication Foundation (WCF) is built to interoperate with Web service
 <wsFederationHttpBinding>  
   <binding name="myBinding">  
      <security mode="Message">  
-       <message issuedKeyType="Symmetric"   
+       <message issuedKeyType="Symmetric"
                 issuedTokenType="http://docs.oasis-open.org/wss/oasis-wss-saml-token-profile-1.1#SAMLV1.1">  
-         <issuerMetadata address =   
+         <issuerMetadata address =
          'http://localhost/FederationSample/HomeRealmSTS/STS.svc/mex'>  
        </message>  
      </security>  

@@ -5,8 +5,8 @@ dev_langs:
   - "csharp"
   - "vb"
 helpviewer_keywords:
-  - "3-D visuals [WPF], hit-testing for"
-  - "hit tests [WPF], for 3-D visuals"
+  - "3D visuals [WPF], hit-testing for"
+  - "hit tests [WPF], for 3D visuals"
   - "Viewport3D [WPF]"
 ms.assetid: 42bfbd99-c7c6-43f1-940b-90448faa412e
 ---

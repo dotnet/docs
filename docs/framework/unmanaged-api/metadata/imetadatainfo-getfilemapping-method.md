@@ -23,8 +23,8 @@ Gets the memory region of the mapped file, and the type of mapping.
   
 ```cpp  
 HRESULT GetFileMapping (  
-    [out] const void           **ppvData,   
-    [out] ULONGLONG            *pcbData,   
+    [out] const void           **ppvData,
+    [out] ULONGLONG            *pcbData,
     [out] DWORD                *pdwMappingType  
 );  
 ```  

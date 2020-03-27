@@ -27,9 +27,9 @@ Only single inheritance is allowed in C#. In other words, a class can inherit im
 |Inheritance|Example|
 |-----------------|-------------|
 |None|`class ClassA { }`|
-|Single|`class DerivedClass: BaseClass { }`|
-|None, implements two interfaces|`class ImplClass: IFace1, IFace2 { }`|
-|Single, implements one interface|`class ImplDerivedClass: BaseClass, IFace1 { }`|
+|Single|`class DerivedClass : BaseClass { }`|
+|None, implements two interfaces|`class ImplClass : IFace1, IFace2 { }`|
+|Single, implements one interface|`class ImplDerivedClass : BaseClass, IFace1 { }`|
 
 Classes that you declare directly within a namespace, not nested within other classes, can be either [public](./public.md) or [internal](./internal.md). Classes are `internal` by default.
 
@@ -65,9 +65,9 @@ A class can contain declarations of the following members:
 
 - [Interfaces](../../programming-guide/interfaces/index.md)
 
-- [Structs](../../programming-guide/classes-and-structs/structs.md)
+- [Structure types](../builtin-types/struct.md)
 
-- [Enumerations](../builtin-types/enum.md)
+- [Enumeration types](../builtin-types/enum.md)
 
 ## Example
 

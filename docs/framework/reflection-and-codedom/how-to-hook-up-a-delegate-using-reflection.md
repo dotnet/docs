@@ -61,7 +61,7 @@ When you use reflection to load and run assemblies, you cannot use language feat
      [!code-csharp[HookUpDelegate#12](../../../samples/snippets/csharp/VS_Snippets_CLR/HookUpDelegate/cs/source.cs#12)]
      [!code-vb[HookUpDelegate#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/HookUpDelegate/vb/source.vb#12)]  
   
-<a name="procedureSection1"></a>   
+<a name="procedureSection1"></a>
 ### To generate an event handler at run time by using a dynamic method  
   
 1. Event-handler methods can be generated at run time, using lightweight dynamic methods and reflection emit. To construct an event handler, you need the return type and parameter types of the delegate. These can be obtained by examining the delegate's `Invoke` method. The following code uses the `GetDelegateReturnType` and `GetDelegateParameterTypes` methods to obtain this information. The code for these methods can be found in the Example section later in this topic.  

@@ -5,7 +5,8 @@ helpviewer_keywords:
   - "queues [WCF], MSMQ integration"
 ms.assetid: b8757992-ffce-40ad-9e9b-3243f6d0fce1
 ---
-# Queues Overview
+# Queues overview
+
 This section introduces the general and core concepts behind queued communication. Subsequent sections go into details about how the queuing concepts described here are manifested in Windows Communication Foundation (WCF).  
   
 ## Basic Queuing Concepts  
@@ -28,7 +29,7 @@ This section introduces the general and core concepts behind queued communicatio
  Thus, the queue manager provides the required isolation so that the sender and receiver can independently fail without affecting actual communication. The benefit of extra indirection that queues provide also enables multiple application instances to read from the same queue, so that farming work among the nodes achieves higher throughput. Therefore, it is not uncommon to see queues being used to achieve higher scale and throughput requirements.  
   
 ## Queues and Transactions  
- Transactions allow you to group a set of operations together so that if one operation fails, all of the operations fail. An example of how to use transactions is when a person uses an ATM to transfer $1,000 from his savings account to his checking account. This entails the following operations:  
+ Transactions allow you to group a set of operations together so that if one operation fails, all of the operations fail. An example of how to use transactions is when a person uses an ATM to transfer $1,000 from their savings account to their checking account. This entails the following operations:  
   
 - Withdrawing $1,000 from the savings account.  
   

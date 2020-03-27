@@ -28,15 +28,15 @@ ms.assetid: face6fc7-465b-4502-bfe5-e88d2e729a78
 # Object Lifetime Events
 This topic describes the specific [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] events that signify stages in an object lifetime of creation, use, and destruction.  
 
-<a name="prerequisites"></a>   
+<a name="prerequisites"></a>
 ## Prerequisites  
  This topic assumes that you understand dependency properties from the perspective of a consumer of existing dependency properties on [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] classes, and have read the [Dependency Properties Overview](dependency-properties-overview.md) topic. In order to follow the examples in this topic, you should also understand [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] (see [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)) and know how to write [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications.  
   
-<a name="intro"></a>   
+<a name="intro"></a>
 ## Object Lifetime Events  
  All objects in Microsoft .NET Framework managed code go through a similar set of stages of life, creation, use, and destruction. Many objects also have a finalization stage of life that occurs as part of the destruction phase. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] objects, more specifically the visual objects that [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] identifies as elements, also have a set of common stages of object life. The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] programming and application models expose these stages as a series of events. There are four main types of objects in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] with respect to lifetime events; elements in general, window elements, navigation hosts, and application objects. Windows and navigation hosts are also within the larger grouping of visual objects (elements). This topic describes the lifetime events that are common to all elements and then introduces the more specific ones that apply to application definitions, windows or navigation hosts.  
   
-<a name="common_events"></a>   
+<a name="common_events"></a>
 ## Common Lifetime Events for Elements  
  Any WPF framework-level element (those objects deriving from either <xref:System.Windows.FrameworkElement> or <xref:System.Windows.FrameworkContentElement>) has three common lifetime events: <xref:System.Windows.FrameworkElement.Initialized>, <xref:System.Windows.FrameworkElement.Loaded>, and <xref:System.Windows.FrameworkElement.Unloaded>.  
   
@@ -56,7 +56,7 @@ This topic describes the specific [!INCLUDE[TLA2#tla_winclient](../../../../incl
 ### Unloaded  
  <xref:System.Windows.FrameworkElement.Unloaded> is raised last and is initiated by either the presentation source or the visual parent being removed. When <xref:System.Windows.FrameworkElement.Unloaded> is raised and handled, the element that is the event source parent (as determined by <xref:System.Windows.FrameworkElement.Parent%2A> property) or any given element upwards in the logical or visual trees may have already been unset, meaning that data binding, resource references, and styles may not be set to their normal or last known run-time value.  
   
-<a name="application_model_elements"></a>   
+<a name="application_model_elements"></a>
 ## Lifetime Events Application Model Elements  
  Building on the common lifetime events for elements are the following application model elements: <xref:System.Windows.Application>, <xref:System.Windows.Window>, <xref:System.Windows.Controls.Page>, <xref:System.Windows.Navigation.NavigationWindow>, and <xref:System.Windows.Controls.Frame>. These extend the common lifetime events with additional events that are relevant to their specific purpose. These are discussed in detail in the following locations:  
   

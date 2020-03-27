@@ -1,16 +1,16 @@
 ---
-title: "How to: Apply a Drawing to a 3-D Model"
+title: "How to: Apply a Drawing to a 3D Model"
 ms.date: "03/30/2017"
 helpviewer_keywords:
-  - "drawings [WPF], applying to 3-D models"
-  - "3-D models [WPF], applying drawings to"
+  - "drawings [WPF], applying to 3D models"
+  - "3D models [WPF], applying drawings to"
 ms.assetid: 68357577-b7fc-446e-8be9-a8cc7df3a350
 ---
-# How to: Apply a Drawing to a 3-D Model
+# How to: Apply a Drawing to a 3D Model
 
-This example shows how to use a <xref:System.Windows.Media.DrawingBrush> as the <xref:System.Windows.Media.Media3D.Material> applied to a 3-D model.
+This example shows how to use a <xref:System.Windows.Media.DrawingBrush> as the <xref:System.Windows.Media.Media3D.Material> applied to a 3D model.
 
-The following code defines a <xref:System.Windows.Media.DrawingGroup> as the content of a <xref:System.Windows.Media.DrawingBrush>.  The <xref:System.Windows.Media.DrawingBrush> is set as the <xref:System.Windows.Media.Media3D.DiffuseMaterial.Brush%2A> property of the <xref:System.Windows.Media.Media3D.DiffuseMaterial> applied to a 3-D plane.
+The following code defines a <xref:System.Windows.Media.DrawingGroup> as the content of a <xref:System.Windows.Media.DrawingBrush>.  The <xref:System.Windows.Media.DrawingBrush> is set as the <xref:System.Windows.Media.Media3D.DiffuseMaterial.Brush%2A> property of the <xref:System.Windows.Media.Media3D.DiffuseMaterial> applied to a 3D plane.
 
 > [!NOTE]
 > It is often desirable to define complex objects and values like the drawing below as resources which can be reused and simplify your code. See [XAML Resources](../../../desktop-wpf/fundamentals/xaml-resources-define.md) for more information.
@@ -26,6 +26,6 @@ The following code shows the entire sample.
 ## See also
 
 - [XAML Resources](../../../desktop-wpf/fundamentals/xaml-resources-define.md)
-- [Create a 3-D Scene](how-to-create-a-3-d-scene.md)
+- [Create a 3D Scene](how-to-create-a-3-d-scene.md)
 - [Drawing Objects Overview](drawing-objects-overview.md)
-- [3-D Graphics Overview](3-d-graphics-overview.md)
+- [3D Graphics Overview](3-d-graphics-overview.md)

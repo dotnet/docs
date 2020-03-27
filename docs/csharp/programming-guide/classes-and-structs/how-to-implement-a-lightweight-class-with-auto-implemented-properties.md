@@ -33,7 +33,7 @@ class Contact
     }
 
     // Name isn't assignable here. This will generate a compile error.
-    //public void ChangeName(string newName) => Name = newName; 
+    //public void ChangeName(string newName) => Name = newName;
 
     // Address is assignable here.
     public void ChangeAddress(string newAddress) => Address = newAddress
@@ -142,5 +142,5 @@ The compiler creates backing fields for each auto-implemented property. The fiel
 ## See also
 
 - [Properties](./properties.md)
-- [struct](../../language-reference/keywords/struct.md)
+- [struct](../../language-reference/builtin-types/struct.md)
 - [Object and Collection Initializers](./object-and-collection-initializers.md)

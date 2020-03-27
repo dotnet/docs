@@ -1,15 +1,11 @@
 ---
 title: dotnet build-server command
 description: The dotnet build-server command interacts with servers started by a build.
-ms.date: 04/24/2019
+ms.date: 02/14/2020
 ---
 # dotnet build-server
 
 **This article applies to:** ✔️ .NET Core 2.1 SDK and later versions
-
-<!-- todo: uncomment when all CLI commands are reviewed
-[!INCLUDE [topic-appliesto-net-core-21plus](../../../includes/topic-appliesto-net-core-21plus.md)]
--->
 
 ## Name
 

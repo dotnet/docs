@@ -49,7 +49,7 @@ The provided method is part of the `IXCLRDataModule` interface and corresponds t
 **Header:** None  
 **Library:** None  
 **.NET Framework Versions:** [!INCLUDE[net_current_v47plus](../../../../includes/net-current-v47plus.md)]  
- 
+
 ## See also
 
 - [Debugging](index.md)

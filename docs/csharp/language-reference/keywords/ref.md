@@ -1,6 +1,6 @@
 ---
 title: "ref keyword - C# Reference"
-ms.date: 03/26/2019
+ms.date: 03/19/2020
 f1_keywords: 
   - "ref_CSharpKeyword"
   - "ref"
@@ -19,7 +19,7 @@ The `ref` keyword indicates a value that is passed by reference. It is used in f
 
 ## Passing an argument by reference
 
-When used in a method's parameter list, the `ref` keyword indicates that an argument is passed by reference, not by value. The `ref` keyword makes the formal parameter an alias for the argument, which must be a variable. In other words, any operation on the parameter is made on the argument. For example, if the caller passes a local variable expression or an array element access expression, and the called method replaces the object to which the ref parameter refers, then the caller’s local variable or the array element now refers to the new object when the method returns.
+When used in a method's parameter list, the `ref` keyword indicates that an argument is passed by reference, not by value. The `ref` keyword makes the formal parameter an alias for the argument, which must be a variable. In other words, any operation on the parameter is made on the argument. For example, if the caller passes a local variable expression or an array element access expression, and the called method replaces the object to which the ref parameter refers, then the caller's local variable or the array element now refers to the new object when the method returns.
 
 > [!NOTE]
 > Do not confuse the concept of passing by reference with the concept of reference types. The two concepts are not the same. A method parameter can be modified by `ref` regardless of whether it is a value type or a reference type. There is no boxing of a value type when it is passed by reference.  
@@ -35,7 +35,7 @@ Members of a class can't have signatures that differ only by `ref`, `in`, or `ou
 ```csharp
 class CS0663_Example
 {
-    // Compiler error CS0663: "Cannot define overloaded 
+    // Compiler error CS0663: "Cannot define overloaded
     // methods that differ only on ref and out".
     public void SampleMethod(out int i) { }
     public void SampleMethod(ref int i) { }
@@ -53,7 +53,13 @@ However, methods can be overloaded when one method has a `ref`, `in`, or `out` p
  You can't use the `ref`, `in`, and `out` keywords for the following kinds of methods:  
   
 - Async methods, which you define by using the [async](async.md) modifier.  
-- Iterator methods, which include a [yield return](yield.md) or `yield break` statement.  
+- Iterator methods, which include a [yield return](yield.md) or `yield break` statement.
+
+In addition, [extension methods](../../programming-guide/classes-and-structs/extension-methods.md) have the following restrictions:
+
+- The `out` keywoard cannot be used on the first argument of an extension method.
+- The `ref` keyword cannot be used on the first argument of an extension method when the argument is not a struct, or a generic type not constrained to be a struct.
+- The `in` keyword cannot be used unless the first argument is a struct. The `in` keyword cannot be used on any generic type, even when constrained to be a struct.
 
 ## Passing an argument by reference: An example
 
@@ -109,9 +115,11 @@ Note that in both examples the `ref` keyword must be used in both places, or the
 
 Beginning with C# 7.3, the iteration variable of the `foreach` statement can be ref local or ref readonly local variable. For more information, see the [foreach statement](foreach-in.md) article.
 
+Also beginning with C# 7.3, you can reassign a ref local or ref readonly local variable with the [ref assignment operator](../operators/assignment-operator.md#ref-assignment-operator).
+
 ## Ref readonly locals
 
-A ref readonly local is used to refer to values returned by the method or property that has `ref readonly` in its signature and uses `return ref`. A `ref readonly` variable combines the properties of a `ref` local variable with a `readonly` variable: it is an alias to the storage it's assigned to, and it cannot be modified. 
+A ref readonly local is used to refer to values returned by the method or property that has `ref readonly` in its signature and uses `return ref`. A `ref readonly` variable combines the properties of a `ref` local variable with a `readonly` variable: it is an alias to the storage it's assigned to, and it cannot be modified.
 
 ## A ref returns and ref locals example
 
@@ -132,7 +140,7 @@ The goal of keeping a `ref struct` type as a stack-allocated variable introduces
 
 - You can't box a `ref struct`. You cannot assign a `ref struct` type to a variable of type `object`, `dynamic`, or any interface type.
 - `ref struct` types cannot implement interfaces.
-- You can't declare a `ref struct` as a field member of a class or a normal struct. This includes declaring an auto-implemented property, which creates a compiler generated backing field. 
+- You can't declare a `ref struct` as a field member of a class or a normal struct. This includes declaring an auto-implemented property, which creates a compiler generated backing field.
 - You cannot declare local variables that are `ref struct` types in async methods. You can declare them in synchronous methods that return <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601> or `Task`-like types.
 - You cannot declare `ref struct` local variables in iterators.
 - You cannot capture `ref struct` variables in lambda expressions or local functions.
@@ -150,7 +158,6 @@ You can combine modifiers to declare a struct as `readonly ref`. A `readonly ref
 - [Write safe efficient code](../../write-safe-efficient-code.md)
 - [Ref returns and ref locals](../../programming-guide/classes-and-structs/ref-returns.md)
 - [Conditional ref expression](../operators/conditional-operator.md#conditional-ref-expression)
-- [ref assignment operator](../operators/assignment-operator.md#ref-assignment-operator)
 - [Passing Parameters](../../programming-guide/classes-and-structs/passing-parameters.md)
 - [Method Parameters](method-parameters.md)
 - [C# Reference](../index.md)

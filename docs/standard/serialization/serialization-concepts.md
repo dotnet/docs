@@ -17,7 +17,7 @@ When the serialized class is deserialized, the class is recreated and the values
 
 ## Marshal by value
 Objects are valid only in the application domain where they are created. Any attempt to pass the object as a parameter or return it as a result will fail unless the object derives from `MarshalByRefObject` or is marked as `Serializable`. If the object is marked as `Serializable`, the object will automatically be serialized, transported from the one application domain to the other, and then deserialized to produce an exact copy of the object in the second application domain. This process is typically referred to as marshal-by-value.
- 
+
 When an object derives from `MarshalByRefObject`, an object reference is passed from one application domain to another, rather than the object itself. You can also mark an object that derives from `MarshalByRefObject` as `Serializable`. When this object is used with remoting, the formatter responsible for serialization, which has been preconfigured with a surrogate selector (`SurrogateSelector`), takes control of the serialization process, and replaces all objects derived from `MarshalByRefObject` with a proxy. Without the `SurrogateSelector` in place, the serialization architecture follows the standard serialization rules described in [Steps in the Serialization Process](steps-in-the-serialization-process.md).  
 
 ## Related sections  

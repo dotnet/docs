@@ -2,7 +2,7 @@
 title: Troubleshoot .NET Core tool usage issues
 description: Discover the common issues when running .NET Core tools and possible solutions.
 author: kdollard
-ms.date: 09/23/2019
+ms.date: 02/14/2020
 ---
 
 # Troubleshoot .NET Core tool usage issues
@@ -37,16 +37,16 @@ The name of the executable determines how you invoke the tool. The following tab
 
 * Global tools
 
-    Global tools can be installed in the default directory or in a specific location. The default directories are:
+  Global tools can be installed in the default directory or in a specific location. The default directories are:
 
-    | OS          | Path                          |
-    |-------------|-------------------------------|
-    | Linux/macOS | `$HOME/.dotnet/tools`         |
-    | Windows     | `%USERPROFILE%\.dotnet\tools` |
+  | OS          | Path                          |
+  |-------------|-------------------------------|
+  | Linux/macOS | `$HOME/.dotnet/tools`         |
+  | Windows     | `%USERPROFILE%\.dotnet\tools` |
 
-    If you're trying to run a global tool, check that the `PATH` environment variable on your machine contains the path where you installed the global tool and that the executable is in that path.
+  If you're trying to run a global tool, check that the `PATH` environment variable on your machine contains the path where you installed the global tool and that the executable is in that path.
 
-    The .NET Core CLI tries to add the default locations to the PATH environment variable on its first usage. However, there are a couple of scenarios where the location might not be added to PATH automatically, so you'll have to edit PATH to configure it for the following cases:
+  The .NET Core CLI tries to add the default location to the PATH environment variable on its first usage. However, there are some scenarios where the location might not be added to PATH automatically:
 
   * If you're using Linux and you've installed the .NET Core SDK using *.tar.gz* files and not apt-get or rpm.
   * If you're using macOS 10.15 "Catalina" or later versions.
@@ -54,7 +54,7 @@ The name of the executable determines how you invoke the tool. The following tab
   * If you've installed the .NET Core 3.0 SDK and you've set the `DOTNET_ADD_GLOBAL_TOOLS_TO_PATH` environment variable to `false`.
   * If you've installed .NET Core 2.2 SDK or earlier versions, and you've set the `DOTNET_SKIP_FIRST_TIME_EXPERIENCE` environment variable to `true`.
 
-  For more information about global tools, see [.NET Core Global Tools overview](global-tools.md).
+  In these scenarios or if you specified the `--tool-path` option, the `PATH` environment variable on your machine doesn't automatically contain the path where you installed the global tool. In that case, append the tool location (for example, `$HOME/.dotnet/tools`) to the `PATH` environment variable by using whatever method your shell provides for updating environment variables. For more information, see [.NET Core tools](global-tools.md).
 
 * Local tools
 
@@ -68,7 +68,7 @@ The name of the executable determines how you invoke the tool. The following tab
 
 ### Runtime not found
 
-.NET Core tools are [framework-dependent applications](../deploying/index.md#framework-dependent-deployments-fdd), which means they rely on a .NET Core runtime installed on your machine. If the expected runtime isn't found, they follow normal .NET Core runtime roll-forward rules such as:
+.NET Core tools are [framework-dependent applications](../deploying/index.md#publish-runtime-dependent), which means they rely on a .NET Core runtime installed on your machine. If the expected runtime isn't found, they follow normal .NET Core runtime roll-forward rules such as:
 
 * An application rolls forward to the highest patch release of the specified major and minor version.
 * If there's no matching runtime with a matching major and minor version number, the next higher minor version is used.
@@ -94,7 +94,7 @@ If you install the .NET Core SDK to a non-default location, you need to set the 
 
 ## .NET Core tool installation fails
 
-There are a number of reasons the installation of a .NET Core global or local tool may fail. When the tool installation fails, you'll see a message similar to following one:
+There are a number of reasons the installation of a .NET Core global or local tool may fail. When the tool installation fails, you'll see a message similar to the following one:
 
 ```console
 Tool '{0}' failed to install. This failure may have been caused by:
@@ -132,9 +132,6 @@ As package IDs are updated, you'll need to change to the new package ID to get t
 dotnet tool install -g --version 1.1.0-pre <toolName>
 ```
 
-> [!NOTE]
-> The .NET Core CLI team is planning to add a `--preview` switch in a future release to make this easier.
-
 ### Package isn't a .NET Core tool
 
 * A NuGet package by this name was found, but it wasn't a .NET Core tool.
@@ -157,4 +154,4 @@ A common reason for failure is that the tool name isn't correct. This can happen
 
 ## See also
 
-* [.NET Core Global Tools overview](global-tools.md)
+* [.NET Core tools](global-tools.md)

@@ -7,14 +7,12 @@ helpviewer_keywords:
   - "configSections Element"
   - "<configSections> Element"
 ms.assetid: 9f963c1b-dc3f-4220-a8b6-2dd7a5a8e039
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # \<configSections> element for \<configuration>
 
 Contains configuration section and namespace declarations.
 
-[**\<configuration>**](configuration-element.md)   
+[**\<configuration>**](configuration-element.md)
 &nbsp;&nbsp;**\<configSections>**
 
 ## Attributes
@@ -50,8 +48,8 @@ The following example shows how to define a configuration section and define set
     <section name="sampleSection"
              type="System.Configuration.SingleTagSectionHandler" />
   </configSections>
-  <sampleSection setting1="Value1" 
-                 setting2="value two" 
+  <sampleSection setting1="Value1"
+                 setting2="value two"
                  setting3="third value" />
 </configuration>
 ```

@@ -60,7 +60,7 @@ This example demonstrates how delegates can be used with methods that have param
    public delegate void MouseEventHandler(object sender, MouseEventArgs e)
    ```
 
-The example defines an event handler with an <xref:System.EventArgs> parameter and uses it to handle both the `Button.KeyDown` and `Button.MouseClick` events. It can do this because <xref:System.EventArgs> is a base type of both <xref:System.Windows.Forms.KeyEventArgs>  and <xref:System.Windows.Forms.MouseEventArgs>. 
+The example defines an event handler with an <xref:System.EventArgs> parameter and uses it to handle both the `Button.KeyDown` and `Button.MouseClick` events. It can do this because <xref:System.EventArgs> is a base type of both <xref:System.Windows.Forms.KeyEventArgs>  and <xref:System.Windows.Forms.MouseEventArgs>.
   
 ### Code  
   
@@ -79,7 +79,7 @@ public Form1()
     // although the event expects the KeyEventArgs parameter.  
     this.button1.KeyDown += this.MultiHandler;  
   
-    // You can use the same method   
+    // You can use the same method
     // for an event that expects the MouseEventArgs parameter.  
     this.button1.MouseClick += this.MultiHandler;  
   

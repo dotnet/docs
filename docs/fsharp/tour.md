@@ -1,7 +1,7 @@
 ---
 title: Tour of F#
 description: Examine some of the key features of the F# programming language in this tour with code samples.
-ms.date: 11/06/2018
+ms.date: 02/09/2020
 ---
 # Tour of F\#
 
@@ -45,7 +45,7 @@ And here's what basic [string](./language-reference/strings.md) manipulation loo
 
 [!code-fsharp[Tuples](~/samples/snippets/fsharp/tour.fs#L186-L203)]
 
-As of F# 4.1, you can also create `struct` tuples.  These also interoperate fully with C#7/Visual Basic 15 tuples, which are also `struct` tuples:
+You can also create `struct` tuples.  These also interoperate fully with C#7/Visual Basic 15 tuples, which are also `struct` tuples:
 
 [!code-fsharp[Tuples](~/samples/snippets/fsharp/tour.fs#L205-L218)]
 
@@ -94,7 +94,7 @@ Record and Union types are two fundamental data types used in F# code, and are g
 
 [!code-fsharp[Records](~/samples/snippets/fsharp/tour.fs#L507-L559)]
 
-As of F# 4.1, you can also represent Records as `struct`s.  This is done with the `[<Struct>]` attribute:
+You can also represent Records as structs. This is done with the `[<Struct>]` attribute:
 
 [!code-fsharp[Records](~/samples/snippets/fsharp/tour.fs#L561-L568)]
 
@@ -132,6 +132,10 @@ Failure to follow the above will result in a compilation error.
 [!code-fsharp[PatternMatching](~/samples/snippets/fsharp/tour.fs#L705-L742)]
 
 Something you may have noticed is the use of the `_` pattern.  This is known as the [Wildcard Pattern](./language-reference/pattern-matching.md#wildcard-pattern), which is a way of saying "I don't care what something is".  Although convenient, you can accidentally bypass Exhaustive Pattern Matching and no longer benefit from compile-time enforcements if you aren't careful in using `_`.  It is best used when you don't care about certain pieces of a decomposed type when pattern matching, or the final clause when you have enumerated all meaningful cases in a pattern matching expression.
+
+In the following example, the `_` case is used when a parse operation fails.
+
+[!code-fsharp[PatternMatching](~/samples/snippets/fsharp/tour.fs#L744-L762)]
 
 [Active Patterns](./language-reference/active-patterns.md) are another powerful construct to use with pattern matching.  They allow you to partition input data into custom forms, decomposing them at the pattern match call site.  They can also be parameterized, thus allowing to define the partition as a function.  Expanding the previous example to support Active Patterns looks something like this:
 

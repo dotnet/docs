@@ -51,7 +51,7 @@ ms.assetid: 49a21470-64ca-4b5a-a889-8e24e3c0af7e
   
 - [The Individual Capture](#the_individual_capture)  
   
-<a name="Engine"></a>   
+<a name="Engine"></a>
 ## The Regular Expression Engine  
  The regular expression engine in .NET is represented by the <xref:System.Text.RegularExpressions.Regex> class. The regular expression engine is responsible for parsing and compiling a regular expression, and for performing operations that match the regular expression pattern with an input string. The engine is the central component in the .NET regular expression object model.  
   
@@ -153,11 +153,11 @@ ms.assetid: 49a21470-64ca-4b5a-a889-8e24e3c0af7e
 |`\.`|Match a period.|  
 |`\s`|Match a white-space character.|  
   
-<a name="Match_and_MCollection"></a>   
+<a name="Match_and_MCollection"></a>
 ## The MatchCollection and Match Objects  
  Regex methods return two objects that are part of the regular expression object model: the <xref:System.Text.RegularExpressions.MatchCollection> object, and the <xref:System.Text.RegularExpressions.Match> object.  
   
-<a name="the_match_collection"></a>   
+<a name="the_match_collection"></a>
 ### The Match Collection  
  The <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=nameWithType> method returns a <xref:System.Text.RegularExpressions.MatchCollection> object that contains <xref:System.Text.RegularExpressions.Match> objects that represent all the matches that the regular expression engine found, in the order in which they occur in the input string. If there are no matches, the method returns a <xref:System.Text.RegularExpressions.MatchCollection> object with no members. The <xref:System.Text.RegularExpressions.MatchCollection.Item%2A?displayProperty=nameWithType> property lets you access individual members of the collection by index, from zero to one less than the value of the <xref:System.Text.RegularExpressions.MatchCollection.Count%2A?displayProperty=nameWithType> property. <xref:System.Text.RegularExpressions.MatchCollection.Item%2A> is the collection's indexer (in C#) and default property (in Visual Basic).  
   
@@ -168,7 +168,7 @@ ms.assetid: 49a21470-64ca-4b5a-a889-8e24e3c0af7e
  [!code-csharp[Conceptual.RegularExpressions.ObjectModel#6](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.objectmodel/cs/matchcollection1.cs#6)]
  [!code-vb[Conceptual.RegularExpressions.ObjectModel#6](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.objectmodel/vb/matchcollection1.vb#6)]  
   
-<a name="the_match"></a>   
+<a name="the_match"></a>
 ### The Match  
  The <xref:System.Text.RegularExpressions.Match> class represents the result of a single regular expression match. You can access <xref:System.Text.RegularExpressions.Match> objects in two ways:  
   
@@ -222,7 +222,7 @@ ms.assetid: 49a21470-64ca-4b5a-a889-8e24e3c0af7e
   
  [Back to top](#introduction)  
   
-<a name="GroupCollection"></a>   
+<a name="GroupCollection"></a>
 ## The Group Collection  
  The <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property returns a <xref:System.Text.RegularExpressions.GroupCollection> object that contains <xref:System.Text.RegularExpressions.Group> objects that represent captured groups in a single match. The first <xref:System.Text.RegularExpressions.Group> object in the collection (at index 0) represents the entire match. Each object that follows represents the results of a single capturing group.  
   
@@ -253,7 +253,7 @@ ms.assetid: 49a21470-64ca-4b5a-a889-8e24e3c0af7e
   
  [Back to top](#introduction)  
   
-<a name="the_captured_group"></a>   
+<a name="the_captured_group"></a>
 ## The Captured Group  
  The <xref:System.Text.RegularExpressions.Group> class represents the result from a single capturing group. Group objects that represent the capturing groups defined in a regular expression are returned by the <xref:System.Text.RegularExpressions.GroupCollection.Item%2A> property of the <xref:System.Text.RegularExpressions.GroupCollection> object returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property. The <xref:System.Text.RegularExpressions.GroupCollection.Item%2A> property is the indexer (in C#) and the default property (in Visual Basic) of the <xref:System.Text.RegularExpressions.Group> class. You can also retrieve individual members by iterating the collection using the `foreach` or `For Each` construct. For an example, see the previous section.  
   
@@ -300,7 +300,7 @@ ms.assetid: 49a21470-64ca-4b5a-a889-8e24e3c0af7e
   
  [Back to top](#introduction)  
   
-<a name="CaptureCollection"></a>   
+<a name="CaptureCollection"></a>
 ## The Capture Collection  
  The <xref:System.Text.RegularExpressions.Group> object contains information only about the last capture. However, the entire set of captures made by a capturing group is still available from the <xref:System.Text.RegularExpressions.CaptureCollection> object that is returned by the <xref:System.Text.RegularExpressions.Group.Captures%2A?displayProperty=nameWithType> property. Each member of the collection is a <xref:System.Text.RegularExpressions.Capture> object that represents a capture made by that capturing group, in the order in which they were captured (and, therefore, in the order in which the captured strings were matched from left to right in the input string). You can retrieve individual <xref:System.Text.RegularExpressions.Capture> objects from the collection in either of two ways:  
   
@@ -322,7 +322,7 @@ ms.assetid: 49a21470-64ca-4b5a-a889-8e24e3c0af7e
   
  [Back to top](#introduction)  
   
-<a name="the_individual_capture"></a>   
+<a name="the_individual_capture"></a>
 ## The Individual Capture  
  The <xref:System.Text.RegularExpressions.Capture> class contains the results from a single subexpression capture. The <xref:System.Text.RegularExpressions.Capture.Value%2A?displayProperty=nameWithType> property contains the matched text, and the <xref:System.Text.RegularExpressions.Capture.Index%2A?displayProperty=nameWithType> property indicates the zero-based position in the input string at which the matched substring begins.  
   

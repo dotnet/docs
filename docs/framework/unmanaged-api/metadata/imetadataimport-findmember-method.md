@@ -24,9 +24,9 @@ Gets a pointer to the MemberDef token for field or method that is enclosed by th
 ```cpp  
 HRESULT FindMember (  
    [in]  mdTypeDef         td,  
-   [in]  LPCWSTR           szName,   
-   [in]  PCCOR_SIGNATURE   pvSigBlob,   
-   [in]  ULONG             cbSigBlob,   
+   [in]  LPCWSTR           szName,
+   [in]  PCCOR_SIGNATURE   pvSigBlob,
+   [in]  ULONG             cbSigBlob,
    [out] mdToken           *pmb  
 );  
 ```  

@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "Portable Class Library [.NET Framework], and MVVM"
   - "MVVM, and Portable Class Library"
 ms.assetid: 41a0b9f8-15a2-431a-bc35-e310b2953b03
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Using Portable Class Library with Model-View-View Model
 You can use the .NET Framework [Portable Class Library](../../../docs/standard/cross-platform/cross-platform-development-with-the-portable-class-library.md) to implement the Model-View-View Model (MVVM) pattern and share assemblies across multiple platforms.

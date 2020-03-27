@@ -19,9 +19,9 @@ Specifies configuration settings that are used by ASP.NET to manage process-wide
 ## Syntax  
   
 ```xml  
-<applicationPool   
-    maxConcurrentRequestsPerCPU="5000"   
-    maxConcurrentThreadsPerCPU="0"   
+<applicationPool
+    maxConcurrentRequestsPerCPU="5000"
+    maxConcurrentThreadsPerCPU="0"
     requestQueueLimit="5000" />  
 ```  
   
@@ -74,9 +74,9 @@ The values in the example are the default values.
 ```xml  
 <configuration>  
   <system.web>  
-    <applicationPool   
+    <applicationPool
         maxConcurrentRequestsPerCPU="5000"  
-        maxConcurrentThreadsPerCPU="0"   
+        maxConcurrentThreadsPerCPU="0"
         requestQueueLimit="5000" />  
   </system.web>  
 </configuration>  

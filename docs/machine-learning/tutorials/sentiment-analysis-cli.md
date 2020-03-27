@@ -4,7 +4,7 @@ description: Automatically generate an ML model and related C# code from a sampl
 author: cesardl
 ms.author: cesardl
 ms.date: 12/23/2019
-ms.custom: mvc
+ms.custom: mvc,mlnet-tooling
 ms.topic: tutorial
 #Customer intent: As a developer, I want to automatically generate an ML model and related C# code from my own data.
 ---
@@ -79,7 +79,7 @@ We are going to use an existing dataset used for a 'Sentiment Analysis' scenario
 1. Run the following ML.NET CLI command:
 
     ```console
-    mlnet auto-train --task binary-classification --dataset "yelp_labelled.txt" --label-column-index 1 --has-header false --max-exploration-time 10
+    mlnet auto-train --task binary-classification --dataset "yelp_labelled.txt" --label-column-index 1 --has-header false --max-exploration-time 10
     ```
 
     This command runs the **`mlnet auto-train` command**:
@@ -170,23 +170,23 @@ Those enumerated assets are explained in the following steps of the tutorial.
     }
     ```
 
-- The first line of code simply creates an `MLContext` object needed whenever you run ML.NET code.
+    - The first line of code simply creates an `MLContext` object needed whenever you run ML.NET code.
 
-- The second line of code is commented because you don't need to train the model since it was already trained for you by the CLI tool and saved into the model's serialized .ZIP file. But if you want to see *"how the model was trained"* by the CLI, you could uncomment that line and run/debug the training code used for that particular ML model.
+    - The second line of code is commented because you don't need to train the model since it was already trained for you by the CLI tool and saved into the model's serialized .ZIP file. But if you want to see *"how the model was trained"* by the CLI, you could uncomment that line and run/debug the training code used for that particular ML model.
 
-- In the third line of code, you load the model from the serialized model .ZIP file with the `mlContext.Model.Load()` API by providing the path to that model .ZIP file.
+    - In the third line of code, you load the model from the serialized model .ZIP file with the `mlContext.Model.Load()` API by providing the path to that model .ZIP file.
 
-- In the fourth line of code you load create the `PredictionEngine` object with the `mlContext.Model.CreatePredictionEngine<TSrc,TDst>(ITransformer mlModel)` API. You need the `PredictionEngine` object whenever you want to make a prediction targeting a single sample of data (In this case, a single piece of text to predict its sentiment).
+    - In the fourth line of code you load create the `PredictionEngine` object with the `mlContext.Model.CreatePredictionEngine<TSrc,TDst>(ITransformer mlModel)` API. You need the `PredictionEngine` object whenever you want to make a prediction targeting a single sample of data (In this case, a single piece of text to predict its sentiment).
 
-- The fifth line of code is where you create that *single sample data* to be used for the prediction by calling the function `CreateSingleDataSample()`. Since the CLI tool doesn't know what kind of sample data to use, within that function it is loading the first row of the dataset. However, for this case you can also create you own 'hard-coded' data instead of the current implementation of the `CreateSingleDataSample()` function by updating this simpler code implementing that function:
+    - The fifth line of code is where you create that *single sample data* to be used for the prediction by calling the function `CreateSingleDataSample()`. Since the CLI tool doesn't know what kind of sample data to use, within that function it is loading the first row of the dataset. However, for this case you can also create you own 'hard-coded' data instead of the current implementation of the `CreateSingleDataSample()` function by updating this simpler code implementing that function:
 
-    ```csharp
-    private static ModelInput CreateSingleDataSample()
-    {
-        ModelInput sampleForPrediction = new ModelInput() { Col0 = "The ML.NET CLI is great for getting started. Very cool!", Label = true };
-        return sampleForPrediction;
-    }
-    ```
+        ```csharp
+        private static ModelInput CreateSingleDataSample()
+        {
+            ModelInput sampleForPrediction = new ModelInput() { Col0 = "The ML.NET CLI is great for getting started. Very cool!", Label = true };
+            return sampleForPrediction;
+        }
+        ```
 
 1. Run the project, either using the original sample data loaded from the first row of the dataset or by providing your own custom hard-coded sample data. You should get a prediction comparable to:
 
@@ -200,12 +200,12 @@ Those enumerated assets are explained in the following steps of the tutorial.
 
     Run the console app from the command-prompt by typing the following commands:
 
-     ```bash
-     cd SampleBinaryClassification
-     cd SampleBinaryClassification.ConsoleApp
+    ```dotnetcli
+    cd SampleBinaryClassification
+    cd SampleBinaryClassification.ConsoleApp
 
-     dotnet run
-     ```
+    dotnet run
+    ```
 
     ![ML.NET CLI auto-train on PowerShell](./media/mlnet-cli/sample-cli-prediction-execution-bash.png))
 

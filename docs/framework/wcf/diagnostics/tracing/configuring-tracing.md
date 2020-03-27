@@ -32,12 +32,12 @@ This topic describes how you can enable tracing, configure trace sources to emit
 <configuration>  
    <system.diagnostics>  
       <sources>  
-            <source name="System.ServiceModel"   
+            <source name="System.ServiceModel"
                     switchValue="Information, ActivityTracing"  
                     propagateActivity="true">  
             <listeners>  
-               <add name="traceListener"   
-                   type="System.Diagnostics.XmlWriterTraceListener"   
+               <add name="traceListener"
+                   type="System.Diagnostics.XmlWriterTraceListener"
                    initializeData= "c:\log\Traces.svclog" />  
             </listeners>  
          </source>  
@@ -72,7 +72,7 @@ This topic describes how you can enable tracing, configure trace sources to emit
 <configuration>  
     <system.diagnostics>  
         <sources>  
-            <source name="System.ServiceModel"   
+            <source name="System.ServiceModel"
                     switchValue="Information, ActivityTracing"  
                     propagateActivity="true">  
                 <listeners>  
@@ -123,7 +123,7 @@ This topic describes how you can enable tracing, configure trace sources to emit
           </listeners>  
        </source>  
    </sources>  
-   <trace autoflush="true" />   
+   <trace autoflush="true" />
 </system.diagnostics>  
 ```  
   
@@ -136,7 +136,7 @@ This topic describes how you can enable tracing, configure trace sources to emit
   
  You can configure a custom trace listener to send traces on the wire, for example, to a remote database. As an application deployer, you should enforce proper access control on the trace logs in the remote machine.  
   
- You can also configure a trace listener programmatically. For more information, see [How to: Create and Initialize Trace Listeners](https://go.microsoft.com/fwlink/?LinkId=94648) and [Creating a Custom TraceListener](https://go.microsoft.com/fwlink/?LinkId=96239).  
+ You can also configure a trace listener programmatically. For more information, see [How to: Create and Initialize Trace Listeners](../../../debug-trace-profile/how-to-create-and-initialize-trace-listeners.md) and [Creating a Custom TraceListener](https://docs.microsoft.com/archive/msdn-magazine/2006/april/clr-inside-out-extending-system-diagnostics).  
   
 > [!CAUTION]
 > Because `System.Diagnostics.XmlWriterTraceListener` is not thread-safe, the trace source may lock resources exclusively when outputting traces. When many threads output traces to a trace source configured to use this listener, resource contention may occur, which results in a significant performance issue. To resolve this problem, you should implement a custom listener that is thread-safe.  
@@ -178,5 +178,5 @@ This topic describes how you can enable tracing, configure trace sources to emit
 
 - [Tracing](../../../../../docs/framework/wcf/diagnostics/tracing/index.md)
 - [Administration and Diagnostics](../../../../../docs/framework/wcf/diagnostics/index.md)
-- [How to: Create and Initialize Trace Listeners](https://go.microsoft.com/fwlink/?LinkId=94648)
-- [Creating a Custom TraceListener](https://go.microsoft.com/fwlink/?LinkId=96239)
+- [How to: Create and Initialize Trace Listeners](../../../debug-trace-profile/how-to-create-and-initialize-trace-listeners.md)
+- [Creating a Custom TraceListener](https://docs.microsoft.com/archive/msdn-magazine/2006/april/clr-inside-out-extending-system-diagnostics)

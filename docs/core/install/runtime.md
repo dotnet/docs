@@ -31,6 +31,19 @@ macOS has standalone installers that can be used to install the .NET Core 3.1 ru
 
 - [x64 (64-bit) CPUs](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 
+## Download and manually install
+
+As an alternative to the macOS installers for .NET Core, you can download and manually install the runtime.
+
+To install the runtime and enable the .NET Core CLI commands available at the terminal, first [download](#all-net-core-downloads) a .NET Core binary release. Then, open a terminal and run the following commands. It's assumed the runtime is downloaded to the `~/Downloads/dotnet-runtime.pkg` file.
+
+```bash
+mkdir -p $HOME/dotnet
+sudo installer -pkg ~/Downloads/dotnet-runtime.pkg -target $HOME/dotnet
+export DOTNET_ROOT=$HOME/dotnet
+export PATH=$PATH:$HOME/dotnet
+```
+
 ::: zone-end
 
 ::: zone pivot="os-linux"
@@ -59,10 +72,12 @@ export PATH=$PATH:$HOME/dotnet
 > - **Bash Shell**: *~/.bash_profile*, *~/.bashrc*
 > - **Korn Shell**: *~/.kshrc* or *.profile*
 > - **Z Shell**: *~/.zshrc* or *.zprofile*
-> 
+>
 > Edit the appropriate source file for your shell and add `:$HOME/dotnet` to the end of the existing `PATH` statement. If no `PATH` statement is included, add a new line with `export PATH=$PATH:$HOME/dotnet`.
 >
 > Also, add `export DOTNET_ROOT=$HOME/dotnet` to the end of the file.
+
+This approach lets you install different versions into separate locations and choose explicitly which one to use by which application.
 
 ::: zone-end
 
@@ -80,6 +95,25 @@ dotnet-install.ps1 -Channel 3.1 -Runtime aspnetcore
 
 > [!NOTE]
 > The command above installs the ASP.NET Core runtime for maximum compatability. The ASP.NET Core runtime also includes the standard .NET Core runtime.
+
+## Download and manually install
+
+To extract the runtime and make the .NET Core CLI commands available at the terminal, first [download](#all-net-core-downloads) a .NET Core binary release. Then, create a directory to install to, for example `%USERPROFILE%\dotnet`. Finally, extract the downloaded zip file into that directory.
+
+By default, .NET Core CLI commands and apps will not use .NET Core installed in this way. You have to explicitly choose to use it. To do so, change the environment variables with which an application is started:
+
+```console
+set DOTNET_ROOT=%USERPROFILE%\dotnet
+set PATH=%USERPROFILE%\dotnet;%PATH%
+```
+
+This approach lets you install multiple versions into separate locations, then explicitly choose which install location an application should use by running the application with environment variables pointing at that location.
+
+Even when these environment variables are set, .NET Core still considers the default global install location when selecting the best framework for running the application. The default is typically `C:\Program Files\dotnet`, which the installers use. You can instruct the runtime to only use the custom install location by setting this environment variable as well:
+
+```console
+set DOTNET_MULTILEVEL_LOOKUP=0
+```
 
 ::: zone-end
 
@@ -105,8 +139,6 @@ The script defaults to installing the latest [long term support (LTS)](https://d
 You can download and install .NET Core directly with one of the following links:
 
 - [.NET Core 3.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.1)
-- [.NET Core 3.0 downloads](https://dotnet.microsoft.com/download/dotnet-core/3.0)
-- [.NET Core 2.2 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.2)
 - [.NET Core 2.1 downloads](https://dotnet.microsoft.com/download/dotnet-core/2.1)
 
 ## Docker

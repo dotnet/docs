@@ -19,7 +19,7 @@
     {
       "source_path": "docs/architecture/cloud-native/distributed-data.md",
       "redirect_url": "/dotnet/architecture/cloud-native/database-per-microservice"
-    },    
+    },
     {
       "source_path": "docs/architecture/microservices/architect-microservice-container-applications/communication-between-microservices.md",
       "redirect_url": "/dotnet/architecture/microservices/architect-microservice-container-applications/communication-in-microservice-architecture",
@@ -88,6 +88,62 @@
     {
       "source_path": "docs/architecture/modernize-with-azure-containers/lift-and-shift-existing-apps-devops/microsoft-technologies-in-cloud-devops-ready-applications.md",
       "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/microsoft-technologies-in-cloud-optimized-applications"
+    },
+    {
+      "source_path": "docs/azure/dotnet-howto-choose-migration.md",
+      "redirect_url": "/dotnet/azure/migration/choose"
+    },
+    {
+      "source_path": "docs/azure/dotnet-howto-migrate-app-service.md",
+      "redirect_url": "/dotnet/azure/migration/app-service"
+    },
+    {
+      "source_path": "docs/azure/dotnet-howto-migrate-sql.md",
+      "redirect_url": "/dotnet/azure/migration/sql"
+    },
+    {
+      "source_path": "docs/azure/dotnet-howto-migrate-vm.md",
+      "redirect_url": "/dotnet/azure/migration/vm"
+    },
+    {
+      "source_path": "docs/azure/dotnet-quickstart-vs.md",
+      "redirect_url": "/visualstudio/deployment/quickstart-deploy-to-azure?view=vs-2019"
+    },
+    {
+      "source_path": "docs/azure/dotnet-quickstart-xplat.md",
+      "redirect_url": "/azure/app-service/app-service-web-tutorial-dotnetcore-sqldb"
+    },
+    {
+      "source_path": "docs/azure/dotnet-samples.md",
+      "redirect_url": "/dotnet/azure/"
+    },
+    {
+      "source_path": "docs/azure/dotnet-sdk-azure-authenticate.md",
+      "redirect_url": "/dotnet/azure/sdk/authentication"
+    },
+    {
+      "source_path": "docs/azure/dotnet-sdk-azure-concepts.md",
+      "redirect_url": "/dotnet/azure/sdk"
+    },
+    {
+      "source_path": "docs/azure/dotnet-sdk-azure-get-started.md",
+      "redirect_url": "/dotnet/azure/intro"
+    },
+    {
+      "source_path": "docs/azure/dotnet-sdk-azure-overview.md",
+      "redirect_url": "/dotnet/azure/sdk"
+    },
+    {
+      "source_path": "docs/azure/dotnet-sdk-vs2015-install.md",
+      "redirect_url": "/dotnet/azure/sdk/vs2015-install"
+    },
+    {
+      "source_path": "docs/azure/dotnet-tools.md",
+      "redirect_url": "/dotnet/azure/sdk/tools"
+    },
+    {
+      "source_path": "docs/azure/dotnet-tutorials.md",
+      "redirect_url": "/dotnet/azure/"
     },
     {
       "source_path": "docs/cli-preview3/tools/dotnet-nuget-delete.md",
@@ -163,8 +219,12 @@
     },
     {
       "source_path": "docs/core/install/linux-package-managers.md",
-      "redirect_url": "/dotnet/core/install/linux-package-manager-ubuntu-1904",
+      "redirect_url": "/dotnet/core/install/linux-package-manager-ubuntu-1910",
       "ms.custom": "updateeachrelease"
+    },
+    {
+      "source_path": "docs/core/install/linux-package-manager-rhel81.md",
+      "redirect_url": "/dotnet/core/install/linux-package-manager-rhel8"
     },
     {
       "source_path": "docs/core/migrating-from-dnx.md",
@@ -369,6 +429,10 @@
       "source_path": "docs/core/testing/using-mstest-on-windows.md",
       "redirect_url": "/dotnet/core/testing/unit-testing-with-mstest",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/core/tools/extensibility.md",
+      "redirect_url": "/dotnet/core/project-sdk/overview"
     },
     {
       "source_path": "docs/core/tools/project-json.md",
@@ -582,6 +646,10 @@
       "redirect_url": "/dotnet/csharp/language-reference/operators/await"
     },
     {
+      "source_path": "docs/csharp/language-reference/keywords/built-in-types-table.md",
+      "redirect_url": "/dotnet/csharp/language-reference/builtin-types/built-in-types"
+    },
+    {
       "source_path": "docs/csharp/language-reference/keywords/bool.md",
       "redirect_url": "/dotnet/csharp/language-reference/builtin-types/bool"
     },
@@ -652,6 +720,10 @@
     {
       "source_path": "docs/csharp/language-reference/keywords/floating-point-types-table.md",
       "redirect_url": "/dotnet/csharp/language-reference/builtin-types/floating-point-numeric-types"
+    },
+    {
+      "source_path": "docs/csharp/language-reference/keywords/formatting-numeric-results-table.md",
+      "redirect_url": "/dotnet/standard/base-types/standard-numeric-format-strings"
     },
     {
       "source_path": "docs/csharp/language-reference/keywords/global.md",
@@ -754,6 +826,10 @@
       "redirect_url": "/dotnet/csharp/language-reference/builtin-types/reference-types"
     },
     {
+      "source_path": "docs/csharp/language-reference/keywords/struct.md",
+      "redirect_url": "/dotnet/csharp/language-reference/builtin-types/struct"
+    },
+    {
       "source_path": "docs/csharp/language-reference/keywords/true.md",
       "redirect_url": "/dotnet/csharp/language-reference/builtin-types/bool"
     },
@@ -796,6 +872,10 @@
     {
       "source_path": "docs/csharp/language-reference/keywords/value-types-table.md",
       "redirect_url": "/dotnet/csharp/language-reference/builtin-types/value-types"
+    },
+    {
+      "source_path": "docs/csharp/language-reference/keywords/void.md",
+      "redirect_url": "/dotnet/csharp/language-reference/builtin-types/void"
     },
     {
       "source_path": "docs/csharp/language-reference/language-specification/index.md",
@@ -1004,6 +1084,14 @@
     {
       "source_path": "docs/csharp/programming-guide/classes-and-structs/how-to-access-a-collection-class-with-foreach.md",
       "redirect_url": "/dotnet/csharp/language-reference/keywords/foreach-in"
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/classes-and-structs/structs.md",
+      "redirect_url": "/dotnet/csharp/language-reference/builtin-types/struct"
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/classes-and-structs/using-structs.md",
+      "redirect_url": "/dotnet/csharp/language-reference/builtin-types/struct"
     },
     {
       "source_path": "docs/csharp/programming-guide/concepts/assemblies-gac/index.md",
@@ -1502,8 +1590,16 @@
       "redirect_url": "/dotnet/csharp/roslyn-sdk/"
     },
     {
+      "source_path": "docs/csharp/structs.md",
+      "redirect_url": "/dotnet/csharp/language-reference/builtin-types/struct"
+    },
+    {
       "source_path": "docs/csharp/tour-of-csharp/enums.md",
       "redirect_url": "/dotnet/csharp/language-reference/builtin-types/enum"
+    },
+    {
+      "source_path": "docs/csharp/tour-of-csharp/structs.md",
+      "redirect_url": "/dotnet/csharp/language-reference/builtin-types/struct"
     },
     {
       "source_path": "docs/csharp/tutorials/default-interface-members-versions.md",
@@ -1559,6 +1655,10 @@
     {
       "source_path": "docs/desktop-wpf/migration/index.md",
       "redirect_url": "/dotnet/desktop-wpf/migration/differences-from-net-framework"
+    },
+    {
+      "source_path": "docs/desktop-wpf/migration/types-migrated-from-wpf-to-system-xaml.md",
+      "redirect_url": "/dotnet/framework/wpf/advanced/types-migrated-from-wpf-to-system"
     },
     {
       "source_path": "docs/framework/add-ins/index.md",
@@ -2157,6 +2257,10 @@
     {
       "source_path": "docs/framework/unmanaged-api/cor-prf-allowable-after-attach-bitmask.md",
       "redirect_url": "/dotnet/framework/unmanaged-api/profiling/cor-prf-monitor-enumeration"
+    },
+    {
+      "source_path": "docs/framework/ui-automation/ui-automation-specification-and-community-promise.md",
+      "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb986605(v=vs.100)"
     },
     {
       "source_path": "docs/framework/wcf/wcf-system-requirements.md",
@@ -2760,6 +2864,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "docs/framework/winforms/controls/performing-common-tasks-using-smart-tags-on-wf-controls.md",
+      "redirect_url": "/dotnet/framework/winforms/controls/perform-common-tasks-design-actions",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "docs/framework/wpf/advanced/xaml-resources.md",
       "redirect_url": "/dotnet/desktop-wpf/fundamentals/xaml-resources-define",
       "redirect_document_id": true
@@ -2879,7 +2988,7 @@
     },
     {
       "source_path": "docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md",
-      "redirect_url": "/dotnet/desktop-wpf/xaml-services/types-migrated-from-wpf-to-system",
+      "redirect_url": "/dotnet/framework/wpf/advanced/types-migrated-from-wpf-to-system",
       "redirect_document_id": true
     },
     {

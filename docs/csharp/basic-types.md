@@ -49,7 +49,7 @@ For more information, see [Casting and type conversions](programming-guide/types
 
 ## Built-in types
 
-C# provides a standard set of built-in numeric types to represent integers, floating point values, Boolean expressions, text characters, decimal values, and other types of data. There are also built-in **string** and **object** types. These are available for you to use in any C# program. For a more information about the built-in types, see [Reference table for built-in types](language-reference/keywords/built-in-types-table.md).  
+C# provides a standard set of built-in numeric types to represent integers, floating point values, Boolean expressions, text characters, decimal values, and other types of data. There are also built-in **string** and **object** types. These are available for you to use in any C# program. For the complete list of the built-in types, see [Built-in types](language-reference/builtin-types/built-in-types.md).
   
 ## Custom types
 
@@ -77,9 +77,10 @@ It is important to understand two fundamental points about the type system in th
   
 - It supports the principle of inheritance. Types can derive from other types, called *base types*. The derived type inherits (with some restrictions) the methods, properties, and other members of the base type. The base type can in turn derive from some other type, in which case the derived type inherits the members of both base types in its inheritance hierarchy. All types, including built-in numeric types such as <xref:System.Int32> (C# keyword: `int`), derive ultimately from a single base type, which is <xref:System.Object> (C# keyword: `object`). This unified type hierarchy is called the [Common type system](../standard/common-type-system.md) (CTS). For more information about inheritance in C#, see [Inheritance](programming-guide/classes-and-structs/inheritance.md).  
   
-- Each type in the CTS is defined as either a *value type* or a *reference type*. This includes all custom types in the .NET Framework class library and also your own user-defined types. Types that you define by using the [struct](language-reference/keywords/struct.md) keyword are value types; all the built-in numeric types are **structs**. For more information about value types, see [Structs](structs.md). Types that you define by using the [class](language-reference/keywords/class.md) keyword are reference types. For more information about reference types, see [Classes](programming-guide/classes-and-structs/classes.md). Reference types and value types have different compile-time rules, and different run-time behavior.
+- Each type in the CTS is defined as either a *value type* or a *reference type*. This includes all custom types in the .NET class library and also your own user-defined types. Types that you define by using the `struct` or `enum` keyword are value types. For more information about value types, see [Value types](language-reference/builtin-types/value-types.md). Types that you define by using the [class](language-reference/keywords/class.md) keyword are reference types. For more information about reference types, see [Classes](programming-guide/classes-and-structs/classes.md). Reference types and value types have different compile-time rules, and different run-time behavior.
 
 ## See also
 
-- [Structs](structs.md)
+- [Structure types](language-reference/builtin-types/struct.md)
+- [Enumeration types](language-reference/builtin-types/enum.md)
 - [Classes](programming-guide/classes-and-structs/classes.md)

@@ -1,26 +1,26 @@
 ---
-title: About .NET Core
-description: Learn about .NET Core.
+title: .NET Core overview
+description: Learn about the characteristics and composition of .NET Core, and compare it to other .NET implementations.
 ms.date: 09/17/2019
 ---
-# About .NET Core
+# .NET Core overview
 
-.NET Core is/has:
+.NET Core has the following characteristics:
 
-- **Cross-platform:** Runs on Windows, macOS, and Linux [operating systems](https://github.com/dotnet/core/blob/master/os-lifecycle-policy.md).
-- **Open source:** The .NET Core platform is [open source](https://github.com/dotnet/core), using MIT and Apache 2 licenses. .NET Core is a [.NET Foundation](https://dotnetfoundation.org/) project.
-- **Modern:** It implements modern paradigms like asyncronous programming, no-copy patterns using structs, and resource governance for containers.
-- **Performance:**  Delivers [high performance](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-core-3-0/) with features like [hardware intrinsics](https://devblogs.microsoft.com/dotnet/hardware-intrinsics-in-net-core/), [tiered compilation](https://github.com/dotnet/coreclr/blob/master/Documentation/design-docs/tiered-compilation.md), and [Span<T>](../standard/memory-and-spans/index.md).
-- **Consistent across environments:** Runs your code with the same behavior on multiple OSes and architectures, including x64, x86, and ARM.
-- **Command-line tools:**  Includes easy-to-use command-line tools that can be used for local development and for continuous-integration.
+- **Cross platform:** Runs on Windows, macOS, and Linux [operating systems](https://github.com/dotnet/core/blob/master/os-lifecycle-policy.md).
+- **Open source:** The .NET Core framework is [open source](https://github.com/dotnet/core), using MIT and Apache 2 licenses. .NET Core is a [.NET Foundation](https://dotnetfoundation.org/) project.
+- **Modern:** It implements modern paradigms like asynchronous programming, no-copy patterns using structs, and resource governance for containers.
+- **Performance:**  Delivers [high performance](https://devblogs.microsoft.com/dotnet/performance-improvements-in-net-core-3-0/) with features like [hardware intrinsics](https://devblogs.microsoft.com/dotnet/hardware-intrinsics-in-net-core/), [tiered compilation](https://github.com/dotnet/coreclr/blob/master/Documentation/design-docs/tiered-compilation.md), and [Span\<T>](../standard/memory-and-spans/index.md).
+- **Consistent across environments:** Runs your code with the same behavior on multiple operating systems and architectures, including x64, x86, and ARM.
+- **Command-line tools:**  Includes easy-to-use command-line tools that can be used for local development and for continuous integration.
 - **Flexible deployment:** You can include .NET Core in your app or install it side-by-side (user-wide or system-wide installations). Can be used with [Docker containers](docker/introduction.md).
 
 ## Languages
 
-C#, Visual Basic, and F# languages can be used to write applications and libraries for .NET Core. These languages can be used in your favorite text editor or Integrated Development Environment (IDE), including:
+The C#, Visual Basic, and F# languages can be used to write applications and libraries for .NET Core. These languages can be used in your favorite text editor or Integrated Development Environment (IDE), including:
 
 - [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link)
-- [Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
+- [Visual Studio Code](https://code.visualstudio.com/download)
 
 Editor integration is provided, in part, by the contributors of the [OmniSharp](https://www.omnisharp.net/) and [Ionide](http://ionide.io) projects.
 
@@ -49,17 +49,17 @@ Many APIs are included that satisfy common needs, such as:
 .NET Core is composed of the following parts:
 
 - The [.NET Core runtime](https://github.com/dotnet/runtime/tree/master/src/coreclr), which provides a type system, assembly loading, a garbage collector, native interop, and other basic services. [.NET Core framework libraries](https://github.com/dotnet/runtime/tree/master/src/libraries) provide primitive data types, app composition types, and fundamental utilities.
-- The [ASP.NET Core runtime](https://github.com/dotnet/aspnetcore), which provides a framework for building modern cloud-based internet connected applications, such as web apps, IoT apps, and mobile backends.
+- The [ASP.NET Core runtime](https://github.com/dotnet/aspnetcore), which provides a framework for building modern, cloud-based, internet-connected apps, such as web apps, IoT apps, and mobile backends.
 - The [.NET Core SDK](https://github.com/dotnet/sdk) and language compilers ([Roslyn](https://github.com/dotnet/roslyn) and [F#](https://github.com/microsoft/visualfsharp)) that enable the .NET Core developer experience.
-- The [dotnet command](./tools/dotnet.md), which is used to launch .NET Core apps and CLI commands. It selects the runtime and hosts the runtime, provides an assembly loading policy, and launches apps and tools.
+- The [dotnet command](./tools/dotnet.md), which is used to launch .NET Core apps and CLI commands. It selects and hosts the runtime, provides an assembly loading policy, and launches apps and tools.
 
 ### Open source
 
-[.NET Core](https://github.com/dotnet/core) is open source ([MIT license](https://github.com/dotnet/core/blob/master/LICENSE.TXT)) and was contributed to the [.NET Foundation](https://dotnetfoundation.org) by Microsoft in 2014. It's now one of the most active .NET Foundation projects. It can be used by individuals and companies, including for personal, academic, or commercial purposes. Multiple companies use .NET Core as part of apps, tools, new platforms, and hosting services. Some of these companies make significant contributions to .NET Core on GitHub and provide guidance on the product direction as part of the [.NET Foundation Technical Steering Group](https://dotnetfoundation.org/blog/tsg-welcome).
+[.NET Core](https://github.com/dotnet/core) is open-source ([MIT license](https://github.com/dotnet/core/blob/master/LICENSE.TXT)) and was contributed to the [.NET Foundation](https://dotnetfoundation.org) by Microsoft in 2014. It's now one of the most active .NET Foundation projects. It can be used by individuals and companies, including for personal, academic, or commercial purposes. Multiple companies use .NET Core as part of apps, tools, new platforms, and hosting services. Some of these companies make significant contributions to .NET Core on GitHub and provide guidance on the product direction as part of the [.NET Foundation Technical Steering Group](https://dotnetfoundation.org/blog/tsg-welcome).
 
 ## Support
 
-.NET Core is [supported by Microsoft](https://dotnet.microsoft.com/platform/support/policy), on Windows, macOS, and Linux. It's updated for security and quality regularly (second tuesday of each month).
+.NET Core is [supported by Microsoft](https://dotnet.microsoft.com/platform/support/policy), on Windows, macOS, and Linux. It's updated for security and quality regularly (second Tuesday of each month).
 
 .NET Core binary distributions from Microsoft are built and tested on Microsoft-maintained servers in Azure and follow Microsoft engineering and security practices.
 

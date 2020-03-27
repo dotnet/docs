@@ -30,7 +30,7 @@ When using the type pattern to perform pattern matching, `is` tests whether an e
    expr is type varname
 ```
 
-where *expr* is an expression that evaluates to an instance of some type, *type* is the name of the type to which the result of *expr* is to be converted, and *varname* is the object to which the result of *expr* is converted if the `is` test is `true`. 
+Where *expr* is an expression that evaluates to an instance of some type, *type* is the name of the type to which the result of *expr* is to be converted, and *varname* is the object to which the result of *expr* is converted if the `is` test is `true`.
 
 The `is` expression is `true` if *expr* isn't `null`, and any of the following is true:
 
@@ -100,15 +100,21 @@ The following example shows a comparison of `null` checks:
 
 ### var pattern
 
-The `var` pattern is a catch-all for any type or value. The value of *expr* is always assigned to a local variable the same type as the compile time type of *expr*. The result of the `is` expression is always `true`. Its syntax is:
+A pattern match with the `var` pattern always succeeds. Its syntax is:
 
 ```csharp
    expr is var varname
 ```
 
-The following example uses the var pattern to assign an expression to a variable named `obj`. It then displays the value and the type of `obj`.
+Where the value of *expr* is always assigned to a local variable named *varname*. *varname* is a variable of the same type as the compile-time type of *expr*.
+
+If *expr* evaluates to `null`, the `is` expression produces `true` and assigns `null` to *varname*. The var pattern is one of the few uses of `is` that produces `true` for a `null` value.
+
+You can use the `var` pattern to create a temporary variable within a Boolean expression, as the following example shows:
 
 [!code-csharp[is#8](../../../../samples/snippets/csharp/language-reference/keywords/is/is-var-pattern8.cs#8)]
+
+In the preceding example, the temporary variable is used to store the result of an expensive operation. The variable can then be used multiple times.
 
 ## C# language specification
   

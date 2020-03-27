@@ -23,7 +23,7 @@ Saves changes from the current edit-and-continue session to the specified file.
   
 ```cpp  
 HRESULT SaveDelta (  
-    [in] LPCWSTR     szFile,   
+    [in] LPCWSTR     szFile,
     [in] DWORD       dwSaveFlags  
 );  
 ```  

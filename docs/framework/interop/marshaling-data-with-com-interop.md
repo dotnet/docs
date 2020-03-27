@@ -17,9 +17,9 @@ COM interop provides support for both using COM objects from managed code and ex
  The following sections link to topics that describe the processes for customizing interop wrappers when you can (or must) supply the marshaler with additional type information.  
   
 ## In This Section  
-[How to: Create Wrappers Manually](how-to-create-wrappers-manually.md)   
-Describes how to create a COM wrapper manually in managed source code. 
- 
+[How to: Create Wrappers Manually](how-to-create-wrappers-manually.md)
+Describes how to create a COM wrapper manually in managed source code.
+
  [How to: Migrate Managed-Code DCOM to WCF](how-to-migrate-managed-code-dcom-to-wcf.md)  
  Describes how to migrate managed DCOM code to WCF for the most secure solution.  
   

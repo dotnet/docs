@@ -9,8 +9,8 @@ Applies runtime reflection policy to an event.
 ## Syntax  
   
 ```xml  
-<Event Name="event_name"   
-       Browse="policy_type"   
+<Event Name="event_name"
+       Browse="policy_type"
        Dynamic="policy_type" />  
 ```  
   

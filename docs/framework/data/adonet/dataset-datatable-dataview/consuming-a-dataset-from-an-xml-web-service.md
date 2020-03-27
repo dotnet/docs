@@ -232,7 +232,7 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
   
         DataSet updateDataSet = new DataSet();  
   
-        updateDataSet =   
+        updateDataSet =
           proxySample.UpdateCustomers(customersDataSet.GetChanges());  
   
         customersDataSet.Merge(updateDataSet);  

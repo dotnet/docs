@@ -50,7 +50,7 @@ Provides configuration for the <xref:System.IdentityModel.Tokens.SessionSecurity
 ## Example  
   
 ```xml  
-<add type="System.IdentityModel.Tokens.SessionSecurityTokenHandler, System.IdentityModel">           
+<add type="System.IdentityModel.Tokens.SessionSecurityTokenHandler, System.IdentityModel">
     <sessionTokenRequirement lifetime="10:00" />  
 </add>  
 ```

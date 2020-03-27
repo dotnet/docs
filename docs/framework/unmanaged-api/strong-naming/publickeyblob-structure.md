@@ -26,7 +26,7 @@ typedef struct {
     unsigned int HashAlgId;  
     ULONG cbPublicKey;  
     BYTE PublicKey[1]  
-} PublicKeyBlob;   
+} PublicKeyBlob;
 ```  
   
 ## Members  

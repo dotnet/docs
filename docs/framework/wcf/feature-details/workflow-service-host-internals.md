@@ -8,7 +8,7 @@ ms.assetid: af44596f-bf6a-4149-9f04-08d8e8f45250
   
 ## WorkflowServiceHost Overview  
 
-The <xref:System.ServiceModel.WorkflowServiceHost> class is used to host workflow services. It listens for incoming messages and routes them to the appropriate service instance, creating new instances or loading existing instances from durable storage as needed. The following diagram illustrates on a high level how <xref:System.ServiceModel.WorkflowServiceHost> works: 
+The <xref:System.ServiceModel.WorkflowServiceHost> class is used to host workflow services. It listens for incoming messages and routes them to the appropriate service instance, creating new instances or loading existing instances from durable storage as needed. The following diagram illustrates on a high level how <xref:System.ServiceModel.WorkflowServiceHost> works:
   
  ![Diagram that shows an overview of the Workflow Service Host.](./media/workflow-service-host-internals/workflow-service-host-high-level-overview.gif)  
   

@@ -2,7 +2,7 @@
 title: ASP.NET Core breaking changes
 titleSuffix: ""
 description: Lists the breaking changes in ASP.NET Core.
-ms.date: 03/26/2020
+ms.date: 03/27/2020
 author: scottaddie
 ms.author: scaddie
 ---
@@ -65,6 +65,7 @@ The following breaking changes are documented on this page:
 - [SignalR: UseSignalR and UseConnections methods removed](#signalr-usesignalr-and-useconnections-methods-removed)
 - [SPAs: SpaServices and NodeServices console logger fallback default change](#spas-spaservices-and-nodeservices-no-longer-fall-back-to-console-logger)
 - [SPAs: SpaServices and NodeServices marked obsolete](#spas-spaservices-and-nodeservices-marked-obsolete)
+- [Static files: CSV content type changed to standards-compliant](#static-files-csv-content-type-changed-to-standards-compliant)
 - [Target framework: .NET Framework not supported](#target-framework-net-framework-support-dropped)
 
 ## ASP.NET Core 5.0
@@ -78,6 +79,10 @@ The following breaking changes are documented on this page:
 ***
 
 [!INCLUDE[SignalR: UseSignalR and UseConnections methods removed](~/includes/core-changes/aspnetcore/5.0/signalr-usesignalr-useconnections-removed.md)]
+
+***
+
+[!INCLUDE[Static files: CSV content type changed to standards-compliant](~/includes/core-changes/aspnetcore/5.0/static-files-csv-content-type-changed.md)]
 
 ***
 

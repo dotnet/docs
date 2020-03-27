@@ -17,7 +17,7 @@ ms.date: 03/26/2020
 
 ## Languages
 
-The C#, Visual Basic, and F# languages can be used to write applications and libraries for .NET Core. These languages can be used in your favorite text editor or Integrated Development Environment (IDE), including:
+The [C#](../csharp/index.yml), [Visual Basic](../visual-basic/index.yml), and [F#](../fsharp/index.yml) languages can be used to write applications and libraries for .NET Core. These languages can be used in your favorite text editor or Integrated Development Environment (IDE), including:
 
 - [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link)
 - [Visual Studio Code](https://code.visualstudio.com/download)
@@ -32,15 +32,15 @@ Editor integration is provided, in part, by the contributors of the [OmniSharp](
 * Mobile apps with [Xamarin](/xamarin)
 * IoT apps with [System.Device.GPIO](https://docs.microsoft.com/archive/msdn-magazine/2019/august/net-core-cross-platform-iot-programming-with-net-core-3-0)
 * Windows client apps with [WPF](../desktop-wpf/overview/index.md) and Windows Forms
-* Machine learning [ML.NET](../machine-learning/index.md)
+* Machine learning [ML.NET](../machine-learning/index.yml)
 
-Many APIs are included that satisfy common needs, such as:
+Many APIs are included that satisfy common needs:
 
 - Primitive types, such as <xref:System.Boolean?displayProperty=nameWithType> and <xref:System.Int32?displayProperty=nameWithType>.
 - Collections, such as <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> and <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>.
 - Utility types, such as <xref:System.Net.Http.HttpClient?displayProperty=nameWithType>, and <xref:System.IO.FileStream?displayProperty=nameWithType>.
-- Data types, such as <xref:System.Data.DataSet?displayProperty=nameWithType>, and [DbSet](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/).
-- High-performance types, such as <xref:System.Span%601?displayProperty=nameWithType>, <xref:System.Numerics.Vector?displayProperty=nameWithType> and [Pipelines](../standard/io/pipelines.md).
+- Data types, such as <xref:System.Data.DataSet?displayProperty=nameWithType>, and <xref:System.Data.Entity.DbSet?displayProperty=nameWithType>.
+- High-performance types, such as <xref:System.Span%601?displayProperty=nameWithType>, <xref:System.Numerics.Vector?displayProperty=nameWithType>, and [Pipelines](../standard/io/pipelines.md).
 
 .NET Core provides compatibility with .NET Framework and Mono APIs by implementing the [.NET Standard](../standard/net-standard.md) specification.
 
@@ -55,11 +55,11 @@ Many APIs are included that satisfy common needs, such as:
 
 ### Open source
 
-[.NET Core](about.md) is an [open-source](https://github.com/dotnet/runtime/blob/master/LICENSE.TXT), general-purpose development platform. You can create .NET Core apps for Windows, macOS, and Linux, for x64, x86, ARM32, and ARM64 processors, with [C#](../csharp/index.md), [F#](../fsharp/index.md), and [VB](../visual-basic/index.md) languages. Frameworks and APIs are provided for [cloud](/aspnet/core/), [IoT](https://docs.microsoft.com/archive/msdn-magazine/2019/august/net-core-cross-platform-iot-programming-with-net-core-3-0), [client UI](../desktop-wpf/overview/index.md), and [machine learning](../machine-learning/index.md).
+[.NET Core](about.md) is an [open-source](https://github.com/dotnet/runtime/blob/master/LICENSE.TXT), general-purpose development platform. You can create .NET Core apps for Windows, macOS, and Linux for x64, x86, ARM32, and ARM64 processors. Frameworks and APIs are provided for [cloud](/aspnet/core/), [IoT](https://docs.microsoft.com/archive/msdn-magazine/2019/august/net-core-cross-platform-iot-programming-with-net-core-3-0), [client UI](../desktop-wpf/overview/index.md), and [machine learning](../machine-learning/index.yml).
 
 ## Support
 
-.NET Core is [supported by Microsoft](https://dotnet.microsoft.com/platform/support/policy), on Windows, macOS, and Linux. It's updated for security and quality regularly (second Tuesday of each month).
+.NET Core is [supported by Microsoft](https://dotnet.microsoft.com/platform/support/policy) on Windows, macOS, and Linux. It's updated for security and quality regularly (the second Tuesday of each month).
 
 .NET Core binary distributions from Microsoft are built and tested on Microsoft-maintained servers in Azure and follow Microsoft engineering and security practices.
 

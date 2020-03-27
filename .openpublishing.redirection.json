@@ -1181,7 +1181,8 @@
     },
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/linq-to-xml-axes.md",
-      "redirect_url": "/dotnet/csharp/programming-guide/concepts/linq/linq-to-xml-axes-overview"
+      "redirect_url": "/dotnet/standard/linq/linq-xml-axes-overview",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/parsing-xml.md",
@@ -1423,6 +1424,23 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/linq-to-xml-axes-overview.md",
+      "redirect_url": "/dotnet/standard/linq/linq-xml-axes-overview",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/serializing-to-an-xmlreader-invoking-xslt.md",
+      "redirect_url": "/dotnet/standard/linq/serialize-xmlreader-invoke-xslt",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/serializing-to-files-textwriters-and-xmlwriters.md",
+      "redirect_url": "/dotnet/standard/linq/serialize-files-textwriters-xmlwriters",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/serializing-with-an-xml-declaration.md",
+      "redirect_url": "/dotnet/standard/linq/serialize-xml-declaration",
       "source_path": "docs/csharp/programming-guide/concepts/linq/how-to-chain-axis-method-calls-linq-to-xml.md",
       "redirect_url": "/dotnet/standard/linq/chain-axis-method-calls",
       "redirect_document_id": true
@@ -4568,6 +4586,28 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/linq-to-xml-axes.md",
+      "redirect_url": "/dotnet/standard/linq/linq-xml-axes-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/linq-to-xml-axes-overview.md",
+      "redirect_url": "/dotnet/standard/linq/linq-xml-axes-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/serializing-to-an-xmlreader-invoking-xslt.md",
+      "redirect_url": "/dotnet/standard/linq/serialize-xmlreader-invoke-xslt",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/serializing-to-files-textwriters-and-xmlwriters.md",
+      "redirect_url": "/dotnet/standard/linq/serialize-files-textwriters-xmlwriters",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/serializing-with-an-xml-declaration.md",
+      "redirect_url": "/dotnet/standard/linq/serialize-xml-declaration",
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-chain-axis-method-calls-linq-to-xml.md",
       "redirect_url": "/dotnet/standard/linq/chain-axis-method-calls",
       "redirect_document_id": false

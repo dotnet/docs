@@ -11,7 +11,7 @@ This article shows how to create documents in C# that have namespaces.
 
 ## Example: Declare and initialize a default namespace
 
-To create an element or an attribute that is in a namespace, you first declare and initialize an <xref:System.Xml.Linq.XNamespace> object. You then use the addition operator overload to combine the namespace with the local name, expressed as a string.
+To create an element or an attribute that's in a namespace, you first declare and initialize an <xref:System.Xml.Linq.XNamespace> object. You then use the addition operator overload to combine the namespace with the local name, expressed as a string.
 
 The following example creates a document with one namespace. By default, LINQ to XML serializes this document with a default namespace.
 

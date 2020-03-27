@@ -23,7 +23,7 @@ Microsoft's approach to modernizing existing applications is to give you the fle
 
 ## Desktop applications nowadays
 
-Before the raise of the Internet, desktop applications were the main approach to build software systems. Developers could choose any programming language, such as COBOL, Fortran, Visual Basic, or C++. But they ended up creating some sort of desktop application, from small tools to complex distributed architectures.
+Before the raise of the Internet, desktop applications were the main approach to build software systems. Developers could choose any programming language, such as COBOL, Fortran, VB6, or C++. But where they developed small tools or complex distributed architectures, they were all desktop applications.
 
 Then, Internet technologies started shocking the development world and winning over more and more engineers with advantages like easy deployment and simplified distribution processes. The fact that once a web application was deployed to production all users got automatic updates made a huge impact on the software agility.
 
@@ -59,6 +59,8 @@ You can develop in any of them using C# and Visual Basic, but let's take a close
 
 First released in 2002, Windows Forms is a managed framework and is the oldest, most used, desktop technology built on the Windows graphics device interface (GDI) engine. It offers a smooth drag-and-drop experience for developing user interfaces in Visual Studio.  At the same time, Windows Forms relies on the Visual Studio Designer as the main way you develop your UI, so creating visual components from code isn't trivial.
 
+The following list summarizes the main characteristics of Windows Forms:
+
 - Mature technology with lots of code samples and documentation.
 - Powerful and productive designer. Not so convenient to design UI "from code".
 - Easy and intuitive to learn, thanks to the designer's drag-and-drop experience.
@@ -68,6 +70,8 @@ First released in 2002, Windows Forms is a managed framework and is the oldest, 
 ### WPF
 
 Based on the XAML language specification, WPF favors a clear separation between UI and code. XAML offers such capabilities like templating, styling, and binding, which is suited for building large applications. Like Windows Forms, it's a managed framework, but the design is modular and reusable.
+
+Here are the main features of WPF:
 
 - Mature technology.
 - Designer is available, but developers usually prefer to create the design from code using declarative XAML.
@@ -85,22 +89,13 @@ UWP contains a presentation framework that is XAML-based, like WPF, but it has s
 
 - Applications are executed in app containers. App containers control what resources a UWP app can access.
 - Supported only on Windows 10.
-- Apps can be deployed through Microsoft Store for easier deployment besides sideload.
+- Apps can be deployed through Microsoft Store for easier deployment.
 - Designed as part of the Windows Runtime API.
 - Contains an extensive set of rich built-in controls and additional controls available through the Microsoft UI Library NuGet packages (WinUI library) updated every few months.
 
 ## A tale of two platforms
 
-In the last 20 years, while UI desktop technologies were growing and following
-the path from Windows Forms to UWP, the hardware was also evolving from heavy
-weight PC units with small CRT monitors to high-DPI monitors and lightweight tablets
-and phones with different data input techniques like Touch and Ink. These
-changes resulted in creating two different concepts: a Desktop Application and a
-Modern Application. A Modern Application is one that considers different device
-form factors, various input and output methods, and leverages modern desktop
-features while running on a sandboxed execution model. The (traditional) Desktop
-Application, on the other hand, is an application that needs a solid UI with
-high density of controls that is best operated with a mouse and a keyboard.
+In the last 20 years, while UI desktop technologies were growing and following the path from Windows Forms to UWP, the hardware was also evolving from heavy weight PC units with small CRT monitors to high-DPI monitors and lightweight tablets and phones with different data input techniques like Touch and Ink. These changes resulted in creating two different concepts: a Desktop Application and a Modern Application. A Modern Application is one that considers different device form factors, various input and output methods, and leverages modern desktop features while running on a sandboxed execution model. The (traditional) Desktop Application, on the other hand, is an application that needs a solid UI with high density of controls that is best operated with a mouse and a keyboard.
 
 The following table describes the differences between the two concepts:
 
@@ -176,3 +171,6 @@ Also, on the GitHub repository for this book, you'll find the results of the pro
 ## Send us your feedback
 
 We wrote this guide to help you understand your options for improving and modernizing existing .NET desktop applications. The guide and related sample applications are evolving. We welcome your feedback! If you have comments about how this guide might be more helpful, send them to [dotnet-architecture-ebooks-feedback@service.microsoft.com](mailto:dotnet-architecture-ebooks-feedback@service.microsoft.com).
+
+>[!div class="step-by-step"]
+>[Next](whats-new-dotnet-core.md)

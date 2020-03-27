@@ -2,7 +2,7 @@
 title: .NET Core intro and overview
 description: .NET Core is a modular, high-performance implementation of .NET for creating Windows, Linux, and macOS apps. Learn about .NET Core to get started.
 author: richlander
-ms.date: 03/25/2020
+ms.date: 03/26/2020
 ms.custom: "updateeachrelease"
 ---
 # Introduction to .NET Core
@@ -37,14 +37,12 @@ You should see the following output:
 Hello World!
 ```
 
-## Participate
+## Contribute
 
 .NET Core is an open platform. Everyone is welcome to participate.
 
-* Product issues and questions should be filed as issues at [dotnet/core](https://github.com/dotnet/core/issues)
-* Contributions should be made on one of the project repos, such as [dotnet/runtime](https://github.com/dotnet/runtime), [dotnet/sdk](https://github.com/dotnet/sdk), [dotnet/rosyln](https://github.com/dotnet/roslyn), or [aspnetcore](https://github.com/dotnet/aspnetcore)
-
-Thanks! .NET Core was made with love.
+* File product issues and questions at [Developer Community](https://developercommunity.visualstudio.com/spaces/61/index.html).
+* Product contributions should be made on one of the project repositories, such as [dotnet/runtime](https://github.com/dotnet/runtime), [dotnet/sdk](https://github.com/dotnet/sdk), [dotnet/rosyln](https://github.com/dotnet/roslyn), or [aspnetcore](https://github.com/dotnet/aspnetcore). For more information, see [.NET Core repos](https://github.com/dotnet/core/blob/master/Documentation/core-repos.md).
 
 ## Support
 

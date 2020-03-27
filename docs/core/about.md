@@ -1,7 +1,7 @@
 ---
 title: .NET Core overview
 description: Learn about the characteristics and composition of .NET Core, and compare it to other .NET implementations.
-ms.date: 09/17/2019
+ms.date: 03/26/2020
 ---
 # .NET Core overview
 
@@ -28,11 +28,11 @@ Editor integration is provided, in part, by the contributors of the [OmniSharp](
 
 .NET Core exposes frameworks for building any kind of app:
 
-* [Cloud apps, with ASP.NET Core](/aspnet/core/)
-* [Mobile apps, with Xamarin](/xamarin)
-* [IoT apps, with System.Device.GPIO](/archive/msdn-magazine/2019/august/net-core-cross-platform-iot-programming-with-net-core-3-0)
-* [Windows client apps, with WPF and Windows Forms](https://docs.microsoft.com/dotnet/desktop-wpf/overview/index)
-* [Machine learning, ML.NET](https://docs.microsoft.com/dotnet/machine-learning/).
+* Cloud apps with [ASP.NET Core](/aspnet/core/)
+* Mobile apps with [Xamarin](/xamarin)
+* IoT apps with [System.Device.GPIO](https://docs.microsoft.com/archive/msdn-magazine/2019/august/net-core-cross-platform-iot-programming-with-net-core-3-0)
+* Windows client apps with [WPF](../desktop-wpf/overview/index.md) and Windows Forms
+* Machine learning [ML.NET](../machine-learning/index.md)
 
 Many APIs are included that satisfy common needs, such as:
 
@@ -40,7 +40,7 @@ Many APIs are included that satisfy common needs, such as:
 - Collections, such as <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> and <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>.
 - Utility types, such as <xref:System.Net.Http.HttpClient?displayProperty=nameWithType>, and <xref:System.IO.FileStream?displayProperty=nameWithType>.
 - Data types, such as <xref:System.Data.DataSet?displayProperty=nameWithType>, and [DbSet](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore/).
-- High-performance types, such as <xref:System.Span%601?displayProperty=nameWithType>,  <xref:System.Numerics.Vector?displayProperty=nameWithType> and [Pipelines](../standard/io/pipelines.md).
+- High-performance types, such as <xref:System.Span%601?displayProperty=nameWithType>, <xref:System.Numerics.Vector?displayProperty=nameWithType> and [Pipelines](../standard/io/pipelines.md).
 
 .NET Core provides compatibility with .NET Framework and Mono APIs by implementing the [.NET Standard](../standard/net-standard.md) specification.
 
@@ -55,7 +55,7 @@ Many APIs are included that satisfy common needs, such as:
 
 ### Open source
 
-[.NET Core](https://github.com/dotnet/core) is open-source ([MIT license](https://github.com/dotnet/core/blob/master/LICENSE.TXT)) and was contributed to the [.NET Foundation](https://dotnetfoundation.org) by Microsoft in 2014. It's now one of the most active .NET Foundation projects. It can be used by individuals and companies, including for personal, academic, or commercial purposes. Multiple companies use .NET Core as part of apps, tools, new platforms, and hosting services. Some of these companies make significant contributions to .NET Core on GitHub and provide guidance on the product direction as part of the [.NET Foundation Technical Steering Group](https://dotnetfoundation.org/blog/tsg-welcome).
+[.NET Core](about.md) is an [open-source](https://github.com/dotnet/runtime/blob/master/LICENSE.TXT), general-purpose development platform. You can create .NET Core apps for Windows, macOS, and Linux, for x64, x86, ARM32, and ARM64 processors, with [C#](../csharp/index.md), [F#](../fsharp/index.md), and [VB](../visual-basic/index.md) languages. Frameworks and APIs are provided for [cloud](/aspnet/core/), [IoT](https://docs.microsoft.com/archive/msdn-magazine/2019/august/net-core-cross-platform-iot-programming-with-net-core-3-0), [client UI](../desktop-wpf/overview/index.md), and [machine learning](../machine-learning/index.md).
 
 ## Support
 

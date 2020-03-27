@@ -24,11 +24,11 @@ The C#, Visual Basic, and F# languages can be used to write applications and lib
 - Sublime Text
 - Vim
 
-This integration is provided, in part, by the contributors of the [OmniSharp](https://www.omnisharp.net/) and [Ionide](http://ionide.io) projects.
+Editor integration is provided, in part, by the contributors of the [OmniSharp](https://www.omnisharp.net/) and [Ionide](http://ionide.io) projects.
 
 ## APIs
 
-.NET Core exposes APIs for many scenarios, including:
+Many APIs are included that satisfy common needs, such as:
 
 - Primitive types, such as <xref:System.Boolean?displayProperty=nameWithType> and <xref:System.Int32?displayProperty=nameWithType>.
 - Collections, such as <xref:System.Collections.Generic.List%601?displayProperty=nameWithType> and <xref:System.Collections.Generic.Dictionary%602?displayProperty=nameWithType>.
@@ -117,12 +117,12 @@ The major differences between .NET Core and Mono are:
 - **Open Source** -- Mono and .NET Core both use the MIT license and are .NET Foundation projects.
 - **Focus** -- The primary focus of Mono in recent years is mobile platforms, while .NET Core is focused on cloud and desktop workloads.
 
-## The future
+## Support
 
-.NET 5 is the next release of .NET Core. .NET 5 represents a unification of the platform and aims to improve .NET in a few key ways:
+.NET Core is [supported by Microsoft](https://dotnet.microsoft.com/platform/support/policy) on Windows, macOS, and Linux. It's updated for security and quality regularly (second Tuesday of each month).
 
-- Produce a single .NET runtime and framework that can be used everywhere and that has uniform runtime behaviors and developer experiences.
-- Expand the capabilities of .NET by taking the best of .NET Core, .NET Framework, Xamarin, and Mono.
-- Build out of a single code-base that developers (Microsoft and the community) can work on and expand together and that improves all scenarios.
+.NET Core binary distributions from Microsoft are built and tested on Microsoft-maintained servers in Azure and follow Microsoft engineering and security practices.
 
-For more details about what's being planned for .NET 5, see the [Introducing .NET 5](https://devblogs.microsoft.com/dotnet/introducing-net-5/) blog post.
+[Red Hat supports .NET Core](http://redhatloves.net/) on Red Hat Enterprise Linux (RHEL). Red Hat builds .NET Core from source and makes it available in the [Red Hat Software Collections](https://developers.redhat.com/products/softwarecollections/overview/). Red Hat and Microsoft collaborate to ensure that .NET Core works well on RHEL.
+
+[Tizen supports .NET Core](https://developer.tizen.org/development/training/.net-application) on Tizen platforms.

@@ -45,9 +45,6 @@ Hello World!
 ## Next steps
 
 > [!div class="nextstepaction"]
-> [.NET Core overview](about.md)
-
-> [!div class="nextstepaction"]
 > [.NET Core tutorials](tutorials/index.md)
 
 > [!div class="nextstepaction"]

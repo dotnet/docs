@@ -1441,6 +1441,23 @@
     {
       "source_path": "docs/csharp/programming-guide/concepts/linq/serializing-with-an-xml-declaration.md",
       "redirect_url": "/dotnet/standard/linq/serialize-xml-declaration",
+      "source_path": "docs/csharp/programming-guide/concepts/linq/how-to-chain-axis-method-calls-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/chain-axis-method-calls",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/how-to-filter-on-element-names-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/filter-element-names",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/how-to-retrieve-a-collection-of-elements-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/retrieve-collection-elements",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/csharp/programming-guide/concepts/linq/how-to-retrieve-the-value-of-an-element-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/retrieve-value-element",
       "redirect_document_id": true
     },
     {
@@ -4365,91 +4382,113 @@
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/sample-xml-file-books-linq-to-xml.md",
-      "redirect_url": "/dotnet/standard/linq/sample-xml-file-books"
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-books",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/sample-xml-file-consolidated-purchase-orders.md",
-      "redirect_url": "/dotnet/standard/linq/sample-xml-file-consolidated-purchase-orders"
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-consolidated-purchase-orders",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-in-a-namespace.md",
-      "redirect_url": "/dotnet/standard/linq/sample-xml-file-customers-orders-namespace"
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-customers-orders-namespace",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/sample-xml-file-customers-and-orders-linq-to-xml.md",
-      "redirect_url": "/dotnet/standard/linq/sample-xml-file-customers-orders"
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-customers-orders",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-in-a-namespace.md",
-      "redirect_url": "/dotnet/standard/linq/sample-xml-file-multiple-purchase-orders-namespace"
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-multiple-purchase-orders-namespace",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md",
-      "redirect_url": "/dotnet/standard/linq/sample-xml-file-multiple-purchase-orders"
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-multiple-purchase-orders",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/sample-xml-file-numerical-data-in-a-namespace.md",
-      "redirect_url": "/dotnet/standard/linq/sample-xml-file-numerical-data-namespace"
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-numerical-data-namespace",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/sample-xml-file-numerical-data-linq-to-xml.md",
-      "redirect_url": "/dotnet/standard/linq/sample-xml-file-numerical-data"
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-numerical-data",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/sample-xml-file-test-configuration-in-a-namespace.md",
-      "redirect_url": "/dotnet/standard/linq/sample-xml-file-test-configuration-namespace"
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-test-configuration-namespace",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/sample-xml-file-test-configuration-linq-to-xml.md",
-      "redirect_url": "/dotnet/standard/linq/sample-xml-file-test-configuration"
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-test-configuration",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-in-a-namespace.md",
-      "redirect_url": "/dotnet/standard/linq/sample-xml-file-typical-purchase-order-namespace"
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-typical-purchase-order-namespace",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/sample-xml-file-typical-purchase-order-linq-to-xml.md",
-      "redirect_url": "/dotnet/standard/linq/sample-xml-file-typical-purchase-order"
+      "redirect_url": "/dotnet/standard/linq/sample-xml-file-typical-purchase-order",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/sample-xsd-file-customers-and-orders.md",
-      "redirect_url": "/dotnet/standard/linq/sample-xsd-file-customers-orders"
+      "redirect_url": "/dotnet/standard/linq/sample-xsd-file-customers-orders",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/linq-to-xml-overview.md",
-      "redirect_url": "/dotnet/standard/linq/linq-xml-overview"
+      "redirect_url": "/dotnet/standard/linq/linq-xml-overview",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/linq-to-xml-vs-dom.md",
-      "redirect_url": "/dotnet/standard/linq/linq-xml-vs-dom"
+      "redirect_url": "/dotnet/standard/linq/linq-xml-vs-dom",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/linq-to-xml-vs-other-xml-technologies.md",
-      "redirect_url": "/dotnet/standard/linq/linq-xml-vs-xml-technologies"
+      "redirect_url": "/dotnet/standard/linq/linq-xml-vs-xml-technologies",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/functional-vs-procedural-programming-linq-to-xml.md",
-      "redirect_url": "/dotnet/standard/linq/functional-vs-procedural-programming"
+      "redirect_url": "/dotnet/standard/linq/functional-vs-procedural-programming",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/linq-to-xml-classes-overview.md",
-      "redirect_url": "/dotnet/standard/linq/linq-xml-classes-overview"
+      "redirect_url": "/dotnet/standard/linq/linq-xml-classes-overview",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/xattribute-class-overview.md",
-      "redirect_url": "/dotnet/standard/linq/xattribute-class-overview"
+      "redirect_url": "/dotnet/standard/linq/xattribute-class-overview",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/xelement-class-overview.md",
-      "redirect_url": "/dotnet/standard/linq/xelement-class-overview"
+      "redirect_url": "/dotnet/standard/linq/xelement-class-overview",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/xdocument-class-overview.md",
-      "redirect_url": "/dotnet/standard/linq/xdocument-class-overview"
+      "redirect_url": "/dotnet/standard/linq/xdocument-class-overview",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-build-linq-to-xml-examples.md",
-      "redirect_url": "/dotnet/standard/linq/build-linq-xml-examples"
+      "redirect_url": "/dotnet/standard/linq/build-linq-xml-examples",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-control-namespace-prefixes-linq-to-xml.md",
@@ -4508,19 +4547,23 @@
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/functional-construction-linq-to-xml.md",
-      "redirect_url": "/dotnet/standard/linq/functional-construction"
+      "redirect_url": "/dotnet/standard/linq/functional-construction",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/creating-xml-trees.md",
-      "redirect_url": "/dotnet/standard/linq/functional-construction"
+      "redirect_url": "/dotnet/standard/linq/functional-construction",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-parse-a-string.md",
-      "redirect_url": "/dotnet/standard/linq/parse-string"
+      "redirect_url": "/dotnet/standard/linq/parse-string",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/introduction-to-xml-literals.md",
-      "redirect_url": "/dotnet/standard/linq/xml-literals"
+      "redirect_url": "/dotnet/standard/linq/xml-literals",
+      "redirect_document_id": false
     },
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-write-queries-on-xml-in-namespaces.md",
@@ -4565,6 +4608,23 @@
     {
       "source_path": "docs/visual-basic/programming-guide/concepts/linq/serializing-with-an-xml-declaration.md",
       "redirect_url": "/dotnet/standard/linq/serialize-xml-declaration",
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-chain-axis-method-calls-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/chain-axis-method-calls",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-filter-on-element-names-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/filter-element-names",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-retrieve-a-collection-of-elements-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/retrieve-collection-elements",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "docs/visual-basic/programming-guide/concepts/linq/how-to-retrieve-the-value-of-an-element-linq-to-xml.md",
+      "redirect_url": "/dotnet/standard/linq/retrieve-value-element",
       "redirect_document_id": false
     },
     {

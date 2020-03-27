@@ -6,7 +6,7 @@ For discussion on this issue, see [dotnet/aspnetcore#17385](https://github.com/d
 
 #### Version introduced
 
-5.0
+5.0 Preview 1
 
 #### Old behavior
 

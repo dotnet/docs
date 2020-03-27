@@ -18,7 +18,7 @@ ASP.NET Core SignalR uses the MessagePack 2.x package to serialize and deseriali
 
 #### Reason for change
 
-MessagePack 2.x adds useful functionality by adopting the latest improvements in that package.
+The latest improvements in the MessagePack 2.x package add useful functionality.
 
 #### Recommended action
 

@@ -1,6 +1,6 @@
 ---
 title: "Structure types - C# reference"
-ms.date: 02/24/2020
+ms.date: 03/26/2020
 f1_keywords: 
   - "struct_CSharpKeyword"
 helpviewer_keywords: 
@@ -18,6 +18,24 @@ A *structure type* (or *struct type*) is a [value type](value-types.md) that can
 Structure types have *value semantics*. That is, a variable of a structure type contains an instance of the type. By default, variable values are copied on assignment, passing an argument to a method, and returning a method result. In the case of a structure-type variable, an instance of the type is copied. For more information, see [Value types](value-types.md).
 
 Typically, you use structure types to design small data-centric types that provide little or no behavior. For example, .NET uses structure types to represent a number (both [integer](integral-numeric-types.md) and [real](floating-point-numeric-types.md)), a [Boolean value](bool.md), a [Unicode character](char.md), a [time instance](xref:System.DateTime). If you're focused on the behavior of a type, consider defining a [class](../keywords/class.md). Class types have *reference semantics*. That is, a variable of a class type contains a reference to an instance of the type, not the instance itself.
+
+Because structure types have value semantics, we recommend you to define *immutable* structure types.
+
+## `readonly` struct
+
+Beginning with C# 7.2, you use the `readonly` modifier to declare that a structure type is immutable:
+
+[!code-csharp[readonly struct](snippets/StructType.cs#ReadonlyStruct)]
+
+All data members of a `readonly` struct must be read-only as follows:
+
+- Any field declaration must have the [`readonly` modifier](../keywords/readonly.md)
+- Any property, including auto-implemented ones, must be read-only
+
+That guarantees that no member of a `readonly` struct modifies the state of the struct.
+
+> [!NOTE]
+> In a `readonly` struct, a data member of a mutable reference type still can mutate its own state. For example, you cannot replace a <xref:System.Collections.Generic.List%601> instance, but you can add new elements to it.
 
 ## Limitations with the design of a structure type
 
@@ -56,6 +74,8 @@ For any structure type, there exist [boxing and unboxing](../../programming-guid
 ## C# language specification
 
 For more information, see the [Structs](~/_csharplang/spec/structs.md) section of the [C# language specification](~/_csharplang/spec/introduction.md).
+
+For more information about `readonly` structs, see the [feature proposal note](~/_csharplang/proposals/csharp-7.2/readonly-ref.md#readonly-structs).
 
 ## See also
 

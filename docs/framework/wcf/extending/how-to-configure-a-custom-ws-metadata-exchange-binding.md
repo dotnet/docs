@@ -26,8 +26,8 @@ This topic will explain how to configure a custom WS-Metadata exchange binding. 
 2. Add a `behaviorConfiguration` attribute to the service tag that references this new behavior:  
   
     ```xml  
-    <service        name="Microsoft.ServiceModel.Samples.CalculatorService"  
-    behaviorConfiguration="CalculatorServiceBehavior">
+    <service name="Microsoft.ServiceModel.Samples.CalculatorService"  
+    behaviorConfiguration="CalculatorServiceBehavior" />
     ```  
   
 3. Add a metadata endpoint specifying mex as the address, `wsHttpBinding` as the binding, and <xref:System.ServiceModel.Description.IMetadataExchange> as the contract:  

@@ -120,7 +120,7 @@ Once you have the configuration handler class, it can be integrated into the WCF
           <add name="myClientCredentials" type="Microsoft.ServiceModel.Samples.MyClientCredentialsConfigHandler, CustomCredentials, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
         </behaviorExtensions>
       </extensions>
-    <system.serviceModel>
+    </system.serviceModel>
     ```
 
 4. After registering your configuration handler, the custom credentials element can be used inside the same configuration file instead of the system-provided <`clientCredentials`> element. You can use both the system-provided properties and any new properties that you have added to your configuration handler implementation. The following example sets the value of a custom property using the `creditCardNumber` attribute.

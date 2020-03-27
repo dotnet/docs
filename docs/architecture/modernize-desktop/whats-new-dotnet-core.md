@@ -12,8 +12,6 @@ From the version 3.0, .NET Core supports Windows Forms and WPF, so now you have 
 
 Since its launch in 2002, .NET Framework has evolved through the years to support many technologies like Windows Forms, ASP.NET, Entity Framework, Windows Store, and many others. All of them are different in nature. Therefore, Microsoft was approaching this evolution by taking parts of the .NET Framework and creating a different application stack for each technology. That way, development capabilities could be customized for the needs of the specific stack, which maximized the potential of every platform. That lead to fragmentation on the versions of the .NET Framework maintained by different independent teams. All these stacks have a common structure, containing an App Model, a Framework, and a Runtime, but they differ in the implementation of each of these parts.
 
-![Illustration showing the different desktop technologies and their components](./media/whats-new-dotnet-core-desktop/different-technologies.png)
-
 If you're targeting only one of these platforms, you can use this model. However, in many cases you might need more than one target platform in the same solution. For example, your application may have a desktop admin part, a customer-facing web site that shares the back-end logic running on a server, and even a mobile client. In this case, you need a unified coding experience that can span all this .NET verticals.
 
 By the time Windows 8 was released, the concept of the Portable Class Libraries (PCL) was born. Originally, the .NET Framework was designed around the assumption that it would always be deployed as a single unit, so [factoring](http://en.wikipedia.org/wiki/Decomposition_(computer_science)) wasn't a concern. To face the problem of code sharing between verticals, the driving force was on how to refactor the framework. The idea of contracts is to provide a well-factored API surface area. Contracts are simply assemblies that you compile against and are designed with proper factoring in mind taking care of the dependencies between them.
@@ -58,7 +56,7 @@ In .NET Core 3.0, besides the existing support for web and cloud, there's also s
 
 So now that you understand the relevance of .NET Core inside the Microsoft strategy for .NET, you might be wondering what happens with .NET Framework. You could be asking questions like: do you have to abandon it? Is it going to disappear? What are my choices to modernize the applications I have on .NET Framework?
 
-In 2019 the last version of the **.NET Framework - 4.8** was released. It included three major improvements for desktop applications: 
+In 2019 the last version of the **.NET Framework - 4.8** was released. It included three major improvements for desktop applications:
 
 - **Modern browser and media controls**: Today, .NET desktop applications use Internet Explorer and Windows Media Player for showing HTML and playing media files. Since these legacy controls don't show the latest HTML or play the latest media files, new controls were added that take advantage of Microsoft Edge and newer media players that support the latest standards.
 - **Access to UWP controls**: UWP contains new controls that take advantage of the latest Windows features and touch displays. You don't have to rewrite your applications to use these new features and controls, so you can use these new features in your existing WPF or Windows Forms code.

@@ -1,59 +1,63 @@
-- name: .NET Standard Guide
+- name: .NET documentation
   href: index.md
-- name: Get Started with .NET
+- name: Get started with .NET
   href: get-started.md
 - name: Tour of .NET
   href: tour.md
-- name: .NET Architectural Components
+- name: .NET architectural components
   href: components.md
-- name: .NET Standard
+- name: .NET Standard overview
   href: net-standard.md
-  items:
-  - name: What's new in the .NET Standard
-    href: whats-new/whats-new-in-dotnet-standard.md
-- name: Target Frameworks
+- name: What's new in .NET Standard
+  href: whats-new/whats-new-in-dotnet-standard.md
+- name: Target frameworks
   href: frameworks.md
-- name: .NET Glossary
+- name: .NET glossary
   href: glossary.md
-- name: Open-source Library Guidance
+- name: Open-source library guidance
   href: library-guidance/
-- name: Choosing between .NET Core and .NET Framework for server apps
+- name: Choose between .NET Core and .NET Framework for server apps
   href: choosing-core-framework-server.md
-- name: What is "managed code"?
-  href: managed-code.md
+- name: Managed code
   items:
-  - name: Automatic Memory Management
+  - name: What is "managed code"?
+    href: managed-code.md
+  - name: Automatic memory management
     href: automatic-memory-management.md
 - name: Common Language Runtime (CLR)
   href: clr.md
-- name: Language Independence
-  href: language-independence.md
+- name: Language independence
   items:
-  - name: Language Independence and Language-Independent Components
+  - name: Overview
+    href: language-independence.md
+  - name: Language-independent components
     href: language-independence-and-language-independent-components.md
-- name: Framework Libraries
-  href: framework-libraries.md
+- name: Framework libraries
   items:
-  - name: Class Library Overview
+  - name: Overview
+    href: framework-libraries.md
+  - name: Class library overview
     href: class-library-overview.md
-  - name: Base Types
+  - name: Base types
     href: base-types/
-- name: .NET Class libraries
+- name: .NET class libraries
   href: class-libraries.md
 - name: Analyzers
-  href: analyzers/index.md
   items:
-  - name: API Analyzer
+  - name: Overview
+    href: analyzers/index.md
+    displayName: analyzers
+  - name: API analyzer
     href: analyzers/api-analyzer.md
-  - name: Portability Analyzer
+  - name: Portability analyzer
     href: analyzers/portability-analyzer.md
-  - name: Framework Analyzer
+  - name: Framework analyzer
     href: analyzers/framework-analyzer.md
-- name: Handling and throwing exceptions
+- name: Exception handling
   href: exceptions/
 - name: Assemblies in .NET
   href: assembly/
-- name: Garbage Collection
+- name: Garbage collection
   href: garbage-collection/
 - name: Generic types
   href: generics.md
@@ -61,59 +65,69 @@
   href: delegates-lambdas.md
 - name: LINQ
   href: using-linq.md
-- name: Common Type System & Common Language Specification
+- name: Common type system & common language specification
   href: common-type-system.md
-- name: Parallel Processing, Concurrency, and Async
-  href: parallel-processing-and-concurrency.md
+- name: Parallel processing, concurrency, and async
   items:
+  - name: Overview
+    href: parallel-processing-and-concurrency.md
+    displayName: Parallel processing, concurrency, async
   - name: Asynchronous programming
-    href: async.md
     items:
+    - name: Overview
+      href: async.md
     - name: Asynchronous programming in depth
       href: async-in-depth.md
-    - name: Asynchronous Programming Patterns
+    - name: Asynchronous programming patterns
       href: asynchronous-programming-patterns/
-  - name: Parallel Programming
+  - name: Parallel programming
     href: parallel-programming/
   - name: Threading
     href: threading/
 - name: Memory and span-related types
-  href: memory-and-spans/index.md
   items:
+  - name: Overview
+    href: memory-and-spans/index.md
   - name: Memory<T> and Span<T> usage guidelines
     href: memory-and-spans/memory-t-usage-guidelines.md
 - name: Native interoperability
-  href: native-interop/index.md
   items:
+  - name: Overview
+    href: native-interop/index.md
+    displayName: Native interop
   - name: P/Invoke
     href: native-interop/pinvoke.md
   - name: Type marshaling
     href: native-interop/type-marshaling.md
-  - name: Customizing structure marshaling
+  - name: Customize structure marshaling
     href: native-interop/customize-struct-marshaling.md
-  - name: Customizing parameter marshaling
+  - name: Customize parameter marshaling
     href: native-interop/customize-parameter-marshaling.md
   - name: Interop guidance
     href: native-interop/best-practices.md
   - name: Charsets and marshaling
     href: native-interop/charset.md
-  - name: COM Interop
-    href: native-interop/cominterop.md
+  - name: COM interop
     items:
-      - name: COM Wrappers
+    - name: Overview
+      href: native-interop/cominterop.md
+      displayName: COM interop
+    - name: COM wrappers
+      items:
+      - name: Overview
         href: native-interop/com-wrappers.md
-        items:
-          - name: Runtime Callable Wrapper
-            href: native-interop/runtime-callable-wrapper.md
-          - name: COM Callable Wrapper
-            href: native-interop/com-callable-wrapper.md
-      - name: Qualifying .NET types for COM interoperation
-        href: native-interop/qualify-net-types-for-interoperation.md
-  - name: Applying Interop Attributes
+        displayName: COM wrappers
+      - name: Runtime-callable wrapper
+        href: native-interop/runtime-callable-wrapper.md
+      - name: COM-callable wrapper
+        href: native-interop/com-callable-wrapper.md
+    - name: Qualifying .NET types for COM interop
+      href: native-interop/qualify-net-types-for-interoperation.md
+  - name: Apply interop attributes
     href: native-interop/apply-interop-attributes.md
   - name: Exceptions
     href: native-interop/exceptions-interoperability.md
-- name: Collections and Data Structures
+- name: Collections and data structures
   href: collections/
 - name: Numerics in .NET
   href: numerics.md
@@ -121,29 +135,29 @@
   href: datetime/
 - name: Events
   href: events/
-- name: Managed Execution Process
+- name: Managed execution process
   href: managed-execution-process.md
-- name: Metadata and Self-Describing Components
+- name: Metadata and self-describing components
   href: metadata-and-self-describing-components.md
-- name: Building Console Applications
+- name: Create console apps
   href: building-console-apps.md
-- name: Application Essentials
+- name: Application essentials
   href: application-essentials.md
-- name: File and Stream I/O
+- name: File and stream I/O
   href: io/index.md
-- name: Globalization and Localization
+- name: Globalization and localization
   href: globalization-localization/
 - name: Attributes
   href: attributes/
-- name: Framework Design Guidelines
+- name: Framework design guidelines
   href: design-guidelines/
 - name: Microsoft.Data.Sqlite
   href: data/sqlite/
-- name: XML Documents and Data
+- name: XML documents and data
   href: data/xml/
 - name: Security
   href: security/
 - name: Serialization
   href: serialization/
-- name: Developing for Multiple Platforms
+- name: Develop for multiple platforms
   href: cross-platform/

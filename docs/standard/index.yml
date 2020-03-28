@@ -1,0 +1,58 @@
+### YamlMime:Landing
+
+title: .NET documentation
+summary: Learn about .NET, an open-source developer platform, created by Microsoft, for building many different types of applications.
+
+metadata:
+  title: .NET documentation
+  description: Learn about .NET, an open-source developer platform, created by Microsoft, for building many different types of applications.
+  ms.topic: landing-page
+  ms.date: 03/27/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+
+  # Card
+  - title: Learn about .NET
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Tour of .NET
+            url: tour.md
+          - text: .NET Standard overview
+            url: net-standard.md
+          - text: Common Language Runtime (CLR) overview 
+            url: clr/index.md
+      - linkListType: whats-new
+        links:
+          - text: What's new in .NET Standard
+            url: whats-new/whats-new-in-dotnet-standard.md
+      - linkListType: concept
+        links:
+          - text: Choose between .NET Core and .NET Framework for server apps 
+            url: choosing-core-framework-server.md
+
+  # Card
+  - title: Learn about parallel programming
+    linkLists:
+      - linkListType: 
+        links:
+          - text:
+            url:
+
+  # Card
+  - title: Serialize data
+    linkLists:
+      - linkListType: 
+        links:
+          - text:
+            url:
+
+  # Card
+  - title: Work with base types
+    linkLists:
+      - linkListType: 
+        links:
+          - text:
+            url:

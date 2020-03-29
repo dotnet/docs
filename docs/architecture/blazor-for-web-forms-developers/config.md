@@ -77,7 +77,7 @@ The next set of values loaded into your application configuration are the system
 
 To get around this limitation, ASP.NET Core will convert values that have double underscores `__` into a colon `:` when they are accessed.  The `Parent:ApiKey` value from the user secrets section above can be overridden with the environment variable `Parent__ApiKey`
 
-## Command-line Arguments
+## Command-line arguments
 
 Configuration can also be passed in on the command-line as arguments when your application is started. Use the double-dash `--` or forward-slash `/` notation to indicate the name of the configuration value to set and the value to be configured.  Syntax is similar to the following:
 

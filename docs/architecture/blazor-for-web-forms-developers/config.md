@@ -1,9 +1,9 @@
 ---
 title: App configuration
-description: Learn how to configure Blazor apps without using ConfigurationManager
+description: Learn how to configure Blazor apps without using ConfigurationManager.
 author: csharpfritz
 ms.author: jefritz
-ms.date: 09/3/2019
+ms.date: 03/09/2020
 ---
 # App configuration
 
@@ -57,7 +57,7 @@ User Secrets are configuration values that are stored outside the typical applic
 
 You can configure your application to interact with user secrets by executing the `user-secrets` command as follows:
 
-```dos
+```dotnetcli
 dotnet user-secrets init
 ```
 
@@ -81,13 +81,13 @@ To get around this limitation, ASP.NET Core will convert values that have double
 
 Configuration can also be passed in on the command-line as arguments when your application is started. Use the double-dash `--` or forward-slash `/` notation to indicate the name of the configuration value to set and the value to be configured.  Syntax is similar to the following:
 
-```dos
+```dotnetcli
 dotnet run CommandLineKey1=value1 --CommandLineKey2=value2 /CommandLineKey3=value3
 dotnet run --CommandLineKey1 value1 /CommandLineKey2 value2
 dotnet run Parent:ApiKey=67890
 ```
 
-## The Return of Web.Config
+## The return of web.config
 
 If you have deployed your application to Windows and the IIS web server, you will still be using the `web.config` file to configure IIS to manage your application.  By default, IIS will add a reference to the ASP.NET Core Module that hosts your application in place of the Kestrel web server.  This section of `web.config` looks like the following:
 
@@ -123,7 +123,7 @@ Configuration specific to your application can be defined by nesting an `environ
 </aspNetCore>
 ```
 
-## Reading Configuration in the Application
+## Reading configuration in the application
 
 ASP.NET Core provides application configuration through an interface at `Microsoft.Extensions.Configuration.IConfiguration`.  This configuration interface should be requested by your Blazor components, Blazor pages, and any other ASP.NET Core managed class that needs access to configuration.  The ASP.NET Core framework will automatically populate this interface with the resolved configuration configured earlier.  On a Blazor page or component's razor markup you can inject the IConfiguration object with an `@inject` statement at the top of the `.razor` file like this:
 
@@ -136,31 +136,33 @@ This statement will make the `IConfiguration` object available as the `Configura
 Individual configuration settings can be read by specifying the entire hierarchy of the configuration setting sought as an indexer parameter:
 
 ```csharp
-var mySetting = Configuration["section1:key0"]
+var mySetting = Configuration["section1:key0"];
 ```
 
 You can fetch entire sections of the configuration by using the `IConfiguration.GetSection` command to retrieve a collection of keys at a specific location with a syntax similar to: `GetSection("section1")` to retrieve the configuration for section1 from the earlier example.
 
 ## Strongly-Typed Configuration
 
-With Web Forms, it was possible to create a strongly-typed configuration type that inherited from the [ConfigurationSection](https://docs.microsoft.com/en-us/dotnet/api/system.configuration.configurationsection?view=netframework-4.8) type and associated types.  This would allow you to configure some business rules and processing for these configuration values.  
+With Web Forms, it was possible to create a strongly-typed configuration type that inherited from the <xref:System.Configuration.ConfigurationSection> type and associated types.  This would allow you to configure some business rules and processing for these configuration values.  
 
-In ASP.NET Core, you can specify a plain class hierarchy that will receive the configuration values.  These classes do not need to inherit from a parent-class and should be comprised of simple public properties that match the properties and type references for the structure of the configuration you wish to capture.  For the appsettings sample earlier, we could define these classes to capture the values:
+In ASP.NET Core, you can specify a plain class hierarchy that will receive the configuration values. These classes don't need to inherit from a parent-class and should be comprised of simple public properties that match the properties and type references for the structure of the configuration you wish to capture.  For the appsettings sample earlier, you could define these classes to capture the values:
 
 ```csharp
-public class MyConfig {
+public class MyConfig 
+{
 
-  public MyConfigSection section0 { get; set;}
+    public MyConfigSection section0 { get; set;}
 
-  public MyConfigSection section1 { get; set;}
+    public MyConfigSection section1 { get; set;}
 
 }
 
-public class MyConfigSection {
+public class MyConfigSection 
+{
 
-  public string key0 { get; set; }
+    public string key0 { get; set; }
 
-  public string key1 { get; set; }
+    public string key1 { get; set; }
 
 }
 ```
@@ -181,7 +183,7 @@ In the rest of the application, you can add an input parameter to classes or an 
 }
 ```
 
-More information about the Options feature can be found in the [Options Pattern in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/configuration/options?view=aspnetcore-3.1#options-interfaces) article.
+More information about the Options feature can be found in the [Options Pattern in ASP.NET Core](/aspnet/core/fundamentals/configuration/options#options-interfaces) article.
 
 >[!div class="step-by-step"]
 >[Previous](middleware.md)

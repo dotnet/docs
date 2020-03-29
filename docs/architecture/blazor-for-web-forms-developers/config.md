@@ -63,7 +63,7 @@ dotnet user-secrets init
 
 You can then set various values in your user secrets with commands similar to the following:
 
-```dos
+```dotnetcli
 dotnet user-secrets set "Parent:ApiKey" "12345"
 ```
 

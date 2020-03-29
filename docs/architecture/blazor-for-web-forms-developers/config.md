@@ -11,7 +11,7 @@ ms.date: 09/3/2019
 
 Web Forms applications have a single primary way to load application configuration: entries in the web.config file on the server or a related configuration file referenced by web.config.  You can easily use the static `ConfigurationManager` object to interact with application settings, data repository connection strings, and other extended configuration providers that are added into the application.  It's very typical to see interactions with application configuration as seen in the following code:
 
-```c#
+```csharp
 var configurationValue = ConfigurationManager.AppSettings["ConfigurationSettingName"];
 var connectionString = ConfigurationManager.ConnectionStrings["MyDatabaseConnectionName"].ConnectionString;
 ```

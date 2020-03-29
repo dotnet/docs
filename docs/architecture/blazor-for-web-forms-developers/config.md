@@ -71,7 +71,7 @@ This will make the `Parent:ApiKey` configuration value available on a developer'
 
 More information about creating, storing, and managing user secrets values can be found in the documentation about [Safe Storage of App Secrets for ASP.NET Core article](https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-3.1).
 
-## Environment Variables
+## Environment variables
 
 The next set of values loaded into your application configuration are the system's environment variables.  This means that all of your system's environment variable settings are now accessible to you through the configuration API.  Hierarchical values are flattened and separated by color `:` characters when read inside your application, but on some operating systems the colon character is not allowed in the name of an environment variable.  
 

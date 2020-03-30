@@ -1,6 +1,6 @@
 ---
 title: "Functional construction - LINQ to XML"
-description: LINQ to XML provides functional construction, which enables you to create an XML tree in a single statement. 
+description: LINQ to XML provides functional construction, which enables you to create an XML tree in a single statement.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"

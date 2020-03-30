@@ -78,7 +78,7 @@ Favor gRPC for the following scenarios:
 - Point-to-point real-time communication - gRPC can push messages in real time without polling and has excellent support for bi-directional streaming.
 - Network constrained environments – binary gRPC messages are always smaller than an equivalent text-based JSON message.
 
-At the time of this writing, gRPC is primarily used in backend services. Most modern browsers can't provide the level of HTTP/2 control required to support a front-end gRPC client. That said, there's an [early initiative](https://devblogs.microsoft.com/aspnet/grpc-web-experiment/) that enables gRPC communication from browser-based apps built with JavaScript or Blazor WebAssembly technologies. The  [gRPC-Web for .NET](https://github.com/grpc/grpc/blob/master/doc/PROTOCOL-WEB.md) enables an ASP.NET Core gRPC app to support gRPC features in browser apps:
+At the time, of this writing, gRPC is primarily used in backend services. Most modern browsers can't provide the level of HTTP/2 control required to support a front-end gRPC client. That said, there's an [early initiative](https://devblogs.microsoft.com/aspnet/grpc-web-experiment/) that enables gRPC communication from browser-based apps built with JavaScript or Blazor WebAssembly technologies. The  [gRPC-Web for .NET](https://github.com/grpc/grpc/blob/master/doc/PROTOCOL-WEB.md) enables an ASP.NET Core gRPC app to support gRPC features in browser apps:
 
 - Strongly-typed code-generated clients
 - Compact Protobuf messages
@@ -86,27 +86,27 @@ At the time of this writing, gRPC is primarily used in backend services. Most mo
 
 ## gRPC implementation
 
-The microservice reference architecture, [eShop on Containers](https://github.com/dotnet-architecture/eShopOnContainers), from Microsoft, shows how to implement gRPC services in .NET Core applications. Figure 4-22 presents the high-level architecture.
+The microservice reference architecture, [eShop on Containers](https://github.com/dotnet-architecture/eShopOnContainers), from Microsoft, shows how to implement gRPC services in .NET Core applications. Figure 4-22 presents the back-end architecture.
 
-![gRPC in eShop on Containers](./media/eshop-grpc-wide.png)
+![Backend architecture for eShop on Containers](./media/eshopWithAggregators.png)
 
-**Figure 4-22**. gRPC in eShop on Containers
+**Figure 4-22**. Backend architecture for eShop on Containers
 
-In the previous figure, note how eShop embraces the [Backend for Frontends pattern](https://docs.microsoft.com/azure/architecture/patterns/backends-for-frontends) (BFF) by exposing multiple API gateways. The bottom-most API gateway, *Web-Marketing*, launches both RESTful HTTP and gRPC services. Figure 4-23 shows a close-up view of the Web-Marketing functionality.
+In the previous figure, note how eShop embraces the [Backend for Frontends pattern](https://docs.microsoft.com/azure/architecture/patterns/backends-for-frontends) (BFF) by exposing multiple API gateways. We discussed the BFF pattern in chapter 4. Pay close attention to the Aggregator microservice (in gray) that sits between the Web-Shopping API Gateway and backend Shopping microservices. The Aggregator orchestrates operations that require interaction with multiple backend services. These calls require synchronous communication and an immediate response. In eShop, backend calls from the Aggregator are performed using gRPC as shown in Figure 4-23.
 
-![gRPC in eShop on Containers Close Up](./media/grpc-implementation.png)
+![gRPC in eShop on Containers](./media/grpc-implementation.png)
 
-**Figure 4-23**. gRPC in eShop on Containers - Close Up
+**Figure 4-23**. gRPC in eShop on Containers
 
-In the previous figure, note the Web-Marketing API Gateway. It implements RESTful HTTP services that route simple CRUD requests *directly* to the backend Ordering, Basket, and Catalog microservices. The gateway also includes calls to an Aggregator microservice that implements a gRPC client. The gRPC client makes synchronous gRPC-based calls (in red) to backend gRPC services to orchestrate more complex operations.
+gRPC communication requires both client and server components. In the previous figure, note how the Shopping Aggregator implements a gRPC client. The client makes synchronous gRPC calls (in red) to backend microservices, each of which implement a gRPC server. Both the client and server take advantage of the built-in gRPC plumbing from the .NET Core 3.0 SDK. Client-side *stubs* provide the plumbing to invoke remote gRPC calls. Server-side components provide gRPC plumbing that custom service classes can inherit and consume.
 
- Note how gRPC communication requires both client and server components. The Aggregator service implements a gRPC client, and each backend microservice, a gRPC server. Both take advantage of the built-in gRPC plumbing from the .NET Core 3.0 SDK. Client-side *stubs* provide the plumbing to invoke remote gRPC calls. Server-side components with gRPC plumbing that custom gRPC service classes can inherit and consume.
+Microservices that expose both a RESTful API and gRPC communication require multiple endpoints to manage traffic. You would open an endpoint that listens for HTTP traffic for the RESTful calls and another for gRPC calls. The gRPC endpoint must be configured for the HTTP/2 protocol that is required for gRPC communication.
 
- Microservices that expose both a RESTful API and gRPC communication require multiple endpoints to manage traffic. You would open an endpoint that listens for HTTP traffic for the RESTful calls and another for gRPC calls. The gRPC endpoint must be configured for the HTTP/2 protocol that is required for gRPC communication.
+While we strive to decouple microservices with asynchronous communication patterns, some operations require direct calls. gRPC should be the primary choice for direct synchronous communication between microservices. Its high-performance communication protocol, based on HTTP/2 and protocol buffers, make it a perfect choice.
 
 ## Looking ahead
 
-Looking ahead, gRPC will continue to gain traction for cloud-native systems. The performance benefits and ease of development are compelling. However, REST will still most likely be around for a long time. It excels for publicly exposed APIs and for backward compatibility reasons.
+Looking ahead, gRPC will continue to gain traction for cloud-native systems. The performance benefits and ease of development are compelling. However, REST will likely be around for a long time. It excels for publicly exposed APIs and for backward compatibility reasons.
 
 >[!div class="step-by-step"]
 >[Previous](service-to-service-communication.md)

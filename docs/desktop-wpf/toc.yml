@@ -1,0 +1,56 @@
+- name: Windows Presentation Foundation for .NET Core
+  href: overview/index.md
+- name: Get started
+  items:
+  - name: Create a WPF application
+    href: https://docs.microsoft.com/visualstudio/get-started/csharp/tutorial-wpf?toc=/dotnet/desktop-wpf/toc.json&bc=/dotnet/breadcrumb/toc.json
+  # - name: Create a control library
+  #  href: getting-started/how-to-create-control-library.md
+- name: Migration
+  items:
+  - name: Differences from .NET Framework
+    href: migration/differences-from-net-framework.md
+  - name: Migrate from Framework to Core
+    href: migration/convert-project-from-net-framework.md
+- name: Fundamentals
+  items:
+  - name: XAML
+    href: fundamentals/xaml.md
+  - name: Define resources
+    href: fundamentals/xaml-resources-define.md
+  - name: Styles and templates
+    items:
+    - name: Overview
+      href: fundamentals/styles-templates-overview.md
+    - name: Create and apply a style
+      href: fundamentals/styles-templates-create-apply-style.md
+    - name: Create and apply a template
+      href: themes/how-to-create-apply-template.md
+  #- name: Accessibility overview
+  #  href: fundamentals/accessibility.md
+  #- name: Localize your app
+  #  href: fundamentals/localize-app.md
+  #- name: Draw shapes
+  #  href: fundamentals/draw-shapes.md
+  #- name: Display a dialog popup
+  #  href: fundamentals/display-dialog-popup.md
+  - name: XAML Language Reference
+    href: xaml-services/
+- name: Work with data
+  items:
+  - name: Data binding overview
+    href: data/data-binding-overview.md
+  # - name: Add data binding to a control
+  #   href: data/databind-control.md
+  # - name: Add validation to a control
+  #   href: data/validate-control-input.md
+  # - name: Display data in a grid control
+  #   href: data/use-datagrid-control.md
+#  - name: Package and distribute
+#    items:
+#    - name: Package your app with MSIX
+#      href: publishing/package-app-msix.md
+#    - name: Publish a library to NuGet
+#      href: publishing/create-nuget-package.md
+#    - name: Publish to the Microsoft Store
+#      href: publishing/publish-microsoft-store.md

@@ -18,7 +18,7 @@ Registration-free activation for .NET Framework-based components is only slightl
   
  This topic describes how to associate an application manifest with an application; associate a component manifest with a component; and embed a component manifest in an assembly.  
   
-### To create an application manifest  
+## Create an application manifest  
   
 1. Using an XML editor, create (or modify) the application manifest owned by the COM application that is interoperating with one or more managed components.  
   
@@ -71,9 +71,9 @@ Registration-free activation for .NET Framework-based components is only slightl
   
 5. Save and name the manifest file. The name of an application manifest is the name of the assembly executable followed by the .manifest extension. For example, the application manifest file name for myComApp.exe is myComApp.exe.manifest.  
   
- You can install an application manifest in the same directory as the COM application. Alternatively, you can add it as a resource to the application's .exe file. For additional information, For more information, see [About Side-by-Side Assemblies](/windows/desktop/SbsCs/about-side-by-side-assemblies-).  
+You can install an application manifest in the same directory as the COM application. Alternatively, you can add it as a resource to the application's .exe file. For more information, see [About Side-by-Side Assemblies](/windows/desktop/SbsCs/about-side-by-side-assemblies-).  
   
-#### To create a component manifest  
+## Create a component manifest  
   
 1. Using an XML editor, create a component manifest to describe the managed assembly.  
   

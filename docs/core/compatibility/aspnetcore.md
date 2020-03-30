@@ -2,9 +2,9 @@
 title: ASP.NET Core breaking changes
 titleSuffix: ""
 description: Lists the breaking changes in ASP.NET Core.
-ms.date: "01/10/2020"
-author: "scottaddie"
-ms.author: "scaddie"
+ms.date: 03/27/2020
+author: scottaddie
+ms.author: scaddie
 ---
 # ASP.NET Core breaking changes
 
@@ -12,7 +12,6 @@ ASP.NET Core provides the web app development features used by .NET Core.
 
 The following breaking changes are documented on this page:
 
-- [HTTP: Browser SameSite changes impact authentication](#http-browser-samesite-changes-impact-authentication)
 - [Obsolete Antiforgery, CORS, Diagnostics, MVC, and Routing APIs removed](#obsolete-antiforgery-cors-diagnostics-mvc-and-routing-apis-removed)
 - [Authentication: Google+ deprecation](#authentication-google-deprecated-and-replaced)
 - [Authentication: HttpContext.Authentication property removed](#authentication-httpcontextauthentication-property-removed)
@@ -21,6 +20,7 @@ The following breaking changes are documented on this page:
 - [Authorization: AddAuthorization overload moved to different assembly](#authorization-addauthorization-overload-moved-to-different-assembly)
 - [Authorization: IAllowAnonymous removed from AuthorizationFilterContext.Filters](#authorization-iallowanonymous-removed-from-authorizationfiltercontextfilters)
 - [Authorization: IAuthorizationPolicyProvider implementations require new method](#authorization-iauthorizationpolicyprovider-implementations-require-new-method)
+- [Azure: Microsoft-prefixed Azure integration packages removed](#azure-microsoft-prefixed-azure-integration-packages-removed)
 - [Caching: CompactOnMemoryPressure property removed](#caching-compactonmemorypressure-property-removed)
 - [Caching: Microsoft.Extensions.Caching.SqlServer uses new SqlClient package](#caching-microsoftextensionscachingsqlserver-uses-new-sqlclient-package)
 - [Caching: ResponseCaching "pubternal" types changed to internal](#caching-responsecaching-pubternal-types-changed-to-internal)
@@ -30,6 +30,7 @@ The following breaking changes are documented on this page:
 - [Hosting: HTTPS redirection enabled for IIS out-of-process apps](#hosting-https-redirection-enabled-for-iis-out-of-process-apps)
 - [Hosting: IHostingEnvironment and IApplicationLifetime types replaced](#hosting-ihostingenvironment-and-iapplicationlifetime-types-marked-obsolete-and-replaced)
 - [Hosting: ObjectPoolProvider removed from WebHostBuilder dependencies](#hosting-objectpoolprovider-removed-from-webhostbuilder-dependencies)
+- [HTTP: Browser SameSite changes impact authentication](#http-browser-samesite-changes-impact-authentication)
 - [HTTP: DefaultHttpContext extensibility removed](#http-defaulthttpcontext-extensibility-removed)
 - [HTTP: HeaderNames fields changed to static readonly](#http-headernames-constants-changed-to-static-readonly)
 - [HTTP: Response body infrastructure changes](#http-response-body-infrastructure-changes)
@@ -59,10 +60,31 @@ The following breaking changes are documented on this page:
 - [SignalR: HubConnection methods removed](#signalr-hubconnection-resetsendping-and-resettimeout-methods-removed)
 - [SignalR: HubConnectionContext constructors changed](#signalr-hubconnectioncontext-constructors-changed)
 - [SignalR: JavaScript client package name change](#signalr-javascript-client-package-name-changed)
+- [SignalR: MessagePack Hub Protocol moved to MessagePack 2.x package](#signalr-messagepack-hub-protocol-moved-to-messagepack-2x-package)
 - [SignalR: Obsolete APIs](#signalr-usesignalr-and-useconnections-methods-marked-obsolete)
-- [SPAs: SpaServices and NodeServices marked obsolete](#spas-spaservices-and-nodeservices-marked-obsolete)
+- [SignalR: UseSignalR and UseConnections methods removed](#signalr-usesignalr-and-useconnections-methods-removed)
 - [SPAs: SpaServices and NodeServices console logger fallback default change](#spas-spaservices-and-nodeservices-no-longer-fall-back-to-console-logger)
+- [SPAs: SpaServices and NodeServices marked obsolete](#spas-spaservices-and-nodeservices-marked-obsolete)
+- [Static files: CSV content type changed to standards-compliant](#static-files-csv-content-type-changed-to-standards-compliant)
 - [Target framework: .NET Framework not supported](#target-framework-net-framework-support-dropped)
+
+## ASP.NET Core 5.0
+
+[!INCLUDE[Azure: Microsoft-prefixed Azure integration packages removed](~/includes/core-changes/aspnetcore/5.0/azure-integration-packages-removed.md)]
+
+***
+
+[!INCLUDE[SignalR: MessagePack Hub Protocol moved to MessagePack 2.x package](~/includes/core-changes/aspnetcore/5.0/signalr-messagepack-package.md)]
+
+***
+
+[!INCLUDE[SignalR: UseSignalR and UseConnections methods removed](~/includes/core-changes/aspnetcore/5.0/signalr-usesignalr-useconnections-removed.md)]
+
+***
+
+[!INCLUDE[Static files: CSV content type changed to standards-compliant](~/includes/core-changes/aspnetcore/5.0/static-files-csv-content-type-changed.md)]
+
+***
 
 ## ASP.NET Core 3.1
 

@@ -7,7 +7,7 @@ ms.assetid: 817bbe89-5979-4234-bf0c-46f63692ac8c
 
 # How to retrieve the value of an attribute (LINQ to XML)
 
-This article shows how to retrieve the value of an attribute. There are two main ways: You can cast an <xref:System.Xml.Linq.XAttribute> to the desired type, causing the explicit conversion operator to convert the contents of the attribute to the specified type. Alternatively, you can use the <xref:System.Xml.Linq.XAttribute.Value%2A> property. However, casting is generally the better approach. If you cast the attribute to a nullable type, the code is simpler to write when retrieving the value of an attribute that may not exist. For examples of this technique, see [How to retrieve the value of an element](retrieve-value-element.md).
+This article shows how to obtain the value of attributes. There are two main ways: You can cast an <xref:System.Xml.Linq.XAttribute> to the desired type; the explicit conversion operator then converts the contents of the element or attribute to the specified type. Alternatively, you can use the <xref:System.Xml.Linq.XAttribute.Value%2A> property. However, casting is generally the better approach. If you cast the attribute to a nullable value type, the code is simpler to write when retrieving the value of an attribute that might or might not exist. For examples of this technique, see [How to retrieve the value of an element](retrieve-value-element.md).
 
 ## Example: Use a cast to retrieve the value of an attribute
 

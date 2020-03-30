@@ -99,7 +99,7 @@ Some Microsoft or third-party platforms don’t support .NET Core. Some Azure se
 - [Choose between ASP.NET and ASP.NET Core](/aspnet/core/choose-aspnet-framework)
 - [ASP.NET Core targeting .NET Framework](/aspnet/core#aspnet-core-targeting-net-framework)
 - [Target frameworks](frameworks.md)
-- [.NET Core Guide](../core/index.md)
+- [.NET Core Guide](../core/index.yml)
 - [Porting from .NET Framework to .NET Core](../core/porting/index.md)
 - [Introduction to .NET and Docker](../core/docker/introduction.md)
 - [.NET Components Overview](components.md)

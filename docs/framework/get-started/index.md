@@ -12,7 +12,7 @@ ms.assetid: c693fd34-88fe-4d90-b332-19eeadf3b7e7
 .NET Framework is a run-time execution environment that manages apps that target .NET Framework. It consists of the common language runtime, which provides memory management and other system services, and an extensive class library, which enables programmers to take advantage of robust, reliable code for all major areas of app development.
 
 > [!NOTE]
-> .NET Framework is available on Windows systems only. You can use [.NET Core](../../core/index.md) to run apps on Windows, MacOS, and Linux.
+> .NET Framework is available on Windows systems only. You can use [.NET Core](../../core/index.yml) to develop and run apps on Windows, MacOS, and Linux.
 
 ## What is .NET Framework?
 
@@ -74,12 +74,12 @@ For more information on developing apps that target .NET Framework, see the [Dev
 | [.NET Framework and Out-of-Band Releases](the-net-framework-and-out-of-band-releases.md) | Describes the .NET Framework out-of-band releases and how to use them in your app. |
 | [System Requirements](system-requirements.md) | Lists the hardware and software requirements for running .NET Framework. |
 | [.NET Core and Open-Source](net-core-and-open-source.md) | Describes .NET Core in relation to .NET Framework and how to access the open-source .NET Core projects. |
-| [.NET Core documentation](../../core/index.md) | Provides the conceptual and API reference documentation for .NET Core. |
+| [.NET Core documentation](../../core/index.yml) | Provides the conceptual and API reference documentation for .NET Core. |
 | [.NET Standard](../../standard/net-standard.md) | Discusses .NET Standard, a versioned specification that individual .NET implementations support to guarantee that a consistent set of APIs is available on multiple platforms.
 
 ## See also
 
-- [.NET Framework Guide](../index.md)
-- [What's New](../whats-new/index.md)
-- [.NET API Browser](../../../api/index.md)
-- [Development Guide](../development-guide.md)
+- [.NET Framework guide](../index.yml)
+- [What's new](../whats-new/index.md)
+- [.NET API browser](../../../api/index.md)
+- [Development guide](../development-guide.md)

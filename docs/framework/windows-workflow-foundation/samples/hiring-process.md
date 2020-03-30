@@ -91,7 +91,7 @@ This sample demonstrates how to implement a business process using messaging act
   
 |Project|Description|  
 |-------------|-----------------|  
-|ContosoHR|Contains data contracts, business objects and repository classes.|  
+|ContosoHR|Contains data contracts, business objects, and repository classes.|  
 |HiringRequestService|Contains the definition of the Hiring Request Process workflow.<br /><br /> This project is implemented as a console application that self-hosts the workflow (xaml file) as a service.|  
 |ResumeRequestService|A workflow service that collects resumes from candidates until a time-out expires or someone decides that the process has to be stopped.<br /><br /> This project is implemented as a declarative workflow service (xamlx).|  
 |OrgService|A service that exposes organizational information (Employees, Positions, PositionTypes, and Departments). You can think of this service as the Company Organization module of an Enterprise Resource Plan (ERP).<br /><br /> This project is implemented as a console application that exposes a Windows Communication Foundation (WCF) service.|  
@@ -107,7 +107,7 @@ This sample demonstrates how to implement a business process using messaging act
 |Flowchart|The business process is represented as a flowchart . This flowchart description represents the process in the same way in which a business would have drawn it in a whiteboard.|HiringRequestService|  
 |Workflow services|The Flowchart with the process definition is hosted in a service (in this example, the service is hosted in a console application).|HiringRequestService|  
 |Messaging activities|The flowchart uses messaging activities in two ways:<br /><br /> -   To get information from the user (to receive the decisions and related information in each approval step).<br />-   To interact with other existing services (InboxService and OrgDataService, used through service references).|HiringRequestService|  
-|Content based correlation|Approval messages correlate on the ID property of the hiring request:<br /><br /> -   When a process is started, the correlation handle is initialized with the ID of the request.<br />-   Incoming approval messages correlate on their ID (the first parameter of each approval message is the ID of the request).|HiringRequestService / ResumeRequestService|  
+|Content-based correlation|Approval messages correlate on the ID property of the hiring request:<br /><br /> -   When a process is started, the correlation handle is initialized with the ID of the request.<br />-   Incoming approval messages correlate on their ID (the first parameter of each approval message is the ID of the request).|HiringRequestService / ResumeRequestService|  
 |Custom activities (declarative and code based)|There are several custom activities in this sample:<br /><br /> -   `SaveActionTracking`: This activity emits a custom <xref:System.Activities.Tracking.TrackingRecord> (using <xref:System.Activities.NativeActivityContext.Track%2A>). This activity has been authored using imperative code extending <xref:System.Activities.NativeActivity>.<br />-   `GetEmployeesByPositionTypes`: This activity receives a list of position type IDs and returns a list of people that have that position in Contoso. This activity has been authored declaratively (using the activity designer).<br />-   `SaveHiringRequestInfo`: This activity saves the information of a `HiringRequest` (using `HiringRequestRepository.Save`). This activity has been authored using imperative code extending <xref:System.Activities.CodeActivity>.|HiringRequestService|  
 |System-provided SQL Server Persistence|The <xref:System.ServiceModel.Activities.WorkflowServiceHost> instance that hosts the Flowchart process definition is configured to use the system-provided SQL Server persistence.|HiringRequestService / ResumeRequestService|  
 |Custom Tracking|The sample includes a custom tracking participant that saves the history of a `HiringRequestProcess` (this records what action has been done, by whom, and when). The source code is in the Tracking folder of HiringRequestService.|HiringRequestService|  
@@ -116,7 +116,7 @@ This sample demonstrates how to implement a business process using messaging act
 |Parallel Activities|-   <xref:System.Activities.Statements.ParallelForEach%601> is used to register in the Inbox of the CEO and HR Managers in parallel (Waiting for two HR Managers' Approval step).<br />-   <xref:System.Activities.Statements.Parallel> is used to do some clean-up tasks in the Completed and Rejected steps|HiringRequestService|  
 |Model Cancellation|The Flowchart uses <xref:System.Activities.Statements.CancellationScope> to create cancellation behavior (in this case it does some clean-up.)|HiringRequestService|  
 |Customer Persistence Participant|`HiringRequestPersistenceParticipant` saves data from a workflow variable to a table stored in the Contoso HR database.|HiringRequestService|  
-|Workflow Services|`ResumeRequestService` is implemented using workflow services. Workflow definition and service information is contained in ResumeRequestService.xamlx. The service is configured to use persistence and tracking.|ResumeRequestService|  
+|Workflow Services|`ResumeRequestService` is implemented using workflow services. Workflow definition and service information are contained in ResumeRequestService.xamlx. The service is configured to use persistence and tracking.|ResumeRequestService|  
 |Durable Timers|`ResumeRequestService` uses durable timers to define the duration of a Job Posting (once a time-out expires, the Job Posting is closed).|ResumeRequestService|  
 |Transactions|<xref:System.Activities.Statements.TransactionScope> is used to ensure consistency of data within the execution of several activities (when a new resume is received).|ResumeRequestService|  
 |Transactions|The custom persistence participant (`HiringRequestPersistenceParticipant`) and custom tracking participant (`HistoryFileTrackingParticipant`) use the same transaction.|HiringRequestService|  
@@ -153,7 +153,7 @@ This sample demonstrates how to implement a business process using messaging act
   
 1. After the solution builds, press CTRL+F5 to run without debugging. Verify that all services have started.  
   
-2. Right click **InternalClient** in the solution and then select **View in Browser**. The default page for `InternalClient` is displayed. Ensure that services are running, and click the link.  
+2. Right-click **InternalClient** in the solution and then select **View in Browser**. The default page for `InternalClient` is displayed. Ensure that services are running, and click the link.  
   
 3. The **HiringRequest** module is displayed. You can follow the scenario detailed here.  
   

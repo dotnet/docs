@@ -2,26 +2,29 @@
 title: .NET Core intro and overview
 description: .NET Core is a modular, high-performance implementation of .NET for creating Windows, Linux, and macOS apps. Learn about .NET Core to get started.
 author: richlander
-ms.date: 03/25/2020
+ms.date: 03/26/2020
 ms.custom: "updateeachrelease"
 ---
 # Introduction to .NET Core
 
-[.NET Core](about.md) is an [open-source](https://github.com/dotnet/runtime/blob/master/LICENSE.TXT), general-purpose development platform maintained by Microsoft and the .NET community on [GitHub](https://github.com/dotnet/core). It's cross-platform (supporting Windows, macOS, and Linux) and can be used to build device, cloud, and IoT applications.
+[.NET Core](about.md) is an [open-source](https://github.com/dotnet/runtime/blob/master/LICENSE.TXT), general-purpose development platform. You can create .NET Core apps for Windows, macOS, and Linux for x64, x86, ARM32, and ARM64 processors using multiple programming languages. Frameworks and APIs are provided for [cloud](/aspnet/core/), [IoT](/archive/msdn-magazine/2019/august/net-core-cross-platform-iot-programming-with-net-core-3-0), [client UI](/dotnet/desktop-wpf/overview/index), and [machine learning](/dotnet/machine-learning/).
+
+[Download the .NET Core SDK](https://dotnet.microsoft.com/download) to try .NET Core on your machine. The latest version is [.NET Core 3.1](https://devblogs.microsoft.com/dotnet/announcing-net-core-3-1/).
 
 ## Download .NET Core
 
-Download the [.NET Core SDK](https://dotnet.microsoft.com/download) to try .NET Core on your Windows, macOS, or Linux machine. If you prefer to use Docker containers, visit the [.NET Core Docker Hub](https://hub.docker.com/_/microsoft-dotnet-core/).
+You can get .NET Core in the following ways:
 
-## .NET Core 3.1
-
-The latest version is .NET Core 3.1. 3.1 includes minor improvements over .NET Core 3.0, however, .NET Core 3.1 is a [long-term supported release](https://dotnet.microsoft.com/platform/support/policy/dotnet-core). For more information about the .NET Core 3.1 release, see [What's new in .NET Core 3.1](./whats-new/dotnet-core-3-1.md).
-
-If you're looking for another version of .NET Core, all the versions are available at [.NET Core downloads](https://dotnet.microsoft.com/download/dotnet-core).
+* [Installers for Windows and macOS](https://dotnet.microsoft.com/download)
+* [Linux packages](https://docs.microsoft.com/dotnet/core/install/linux-package-managers)
+* [Docker containers](https://hub.docker.com/_/microsoft-dotnet-core/)
+* [Zips and tar balls](https://dotnet.microsoft.com/download/dotnet-core/3.1)
+* [Install scripts](https://dotnet.microsoft.com/download/dotnet-core/scripts)
+* [Release notes](https://github.com/dotnet/core/tree/master/release-notes)
 
 ## Create your first application
 
-After installing the .NET Core SDK, open a command prompt. Enter the following `dotnet` commands to create and run a C# application:
+After installing the .NET Core SDK, open a command prompt. Use the following commands to create and run an application:
 
 ```dotnetcli
 dotnet new console
@@ -34,13 +37,16 @@ You should see the following output:
 Hello World!
 ```
 
+## Contribute
+
+.NET Core is an open platform. Everyone is welcome to participate.
+
+* File product issues and questions at [Developer Community](https://developercommunity.visualstudio.com/spaces/61/index.html).
+* Product contributions should be made on one of the project repositories, such as [dotnet/runtime](https://github.com/dotnet/runtime), [dotnet/sdk](https://github.com/dotnet/sdk), [dotnet/rosyln](https://github.com/dotnet/roslyn), or [aspnetcore](https://github.com/dotnet/aspnetcore). For more information, see [.NET Core repos](https://github.com/dotnet/core/blob/master/Documentation/core-repos.md).
+
 ## Support
 
-.NET Core is [supported by Microsoft](https://dotnet.microsoft.com/platform/support/policy) on Windows, macOS, and Linux. It's updated for security and quality several times a year, typically monthly.
-
-.NET Core binary distributions are built and tested on Microsoft-maintained servers in Azure and supported just like any Microsoft product.
-
-[Red Hat supports .NET Core](http://redhatloves.net/) on Red Hat Enterprise Linux (RHEL). Red Hat builds .NET Core from source and makes it available in the [Red Hat Software Collections](https://developers.redhat.com/products/softwarecollections/overview/). Red Hat and Microsoft collaborate to ensure that .NET Core works well on RHEL.
+.NET Core is supported by Microsoft on Windows, macOS, and Linux and by Red Hat on Red Hat Enterprise Linux.
 
 ## Next steps
 

@@ -82,13 +82,14 @@ The <xref:System.String> class includes a number of string search and replacemen
   
  The regular expression pattern `\b(\w+?)\s\1\b` can be interpreted as follows:  
   
-|||  
-|-|-|  
-|`\b`|Start at a word boundary.|  
-|`(\w+?)`|Match one or more word characters, but as few characters as possible. Together, they form a group that can be referred to as `\1`.|  
-|`\s`|Match a white-space character.|  
-|`\1`|Match the substring that is equal to the group named `\1`.|  
-|`\b`|Match a word boundary.|  
+> [!div class="mx-tdCol2BreakAll"]
+> |Pattern|Interpretation|  
+> |-|-|
+> |`\b`|Start at a word boundary.|  
+> |`(\w+?)`|Match one or more word characters, but as few characters as possible. Together, they form a group that can be referred to as `\1`.|  
+> |`\s`|Match a white-space character.|  
+> |`\1`|Match the substring that is equal to the group named `\1`.|  
+> |`\b`|Match a word boundary.|  
   
  The <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=nameWithType> method is called with regular expression options set to <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType>. Therefore, the match operation is case-insensitive, and the example identifies the substring "This this" as a duplication.  
   
@@ -102,18 +103,19 @@ The <xref:System.String> class includes a number of string search and replacemen
  [!code-vb[Conceptual.Regex#1](~/samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex/vb/example.vb#1)]  
   
  On a computer whose current culture is English - United States (en-US), the example dynamically builds the regular expression `\$\s*[-+]?([0-9]{0,3}(,[0-9]{3})*(\.[0-9]+)?)`. This regular expression pattern can be interpreted as follows:  
-  
-|Pattern|Interpretation|  
-|-|-|  
-|`\$`|Look for a single occurrence of the dollar symbol (`$`) in the input string. The regular expression pattern string includes a backslash to indicate that the dollar symbol is to be interpreted literally rather than as a regular expression anchor. (The `$` symbol alone would indicate that the regular expression engine should try to begin its match at the end of a string.) To ensure that the current culture's currency symbol is not misinterpreted as a regular expression symbol, the example calls the <xref:System.Text.RegularExpressions.Regex.Escape%2A?displayProperty=nameWithType> method to escape the character.|  
-|`\s*`|Look for zero or more occurrences of a white-space character.|  
-|`[-+]?`|Look for zero or one occurrence of either a positive sign or a negative sign.|  
-|`([0-9]{0,3}(,[0-9]{3})*(\.[0-9]+)?)`|The outer parentheses around this expression define it as a capturing group or a subexpression. If a match is found, information about this part of the matching string can be retrieved from the second <xref:System.Text.RegularExpressions.Group> object in the <xref:System.Text.RegularExpressions.GroupCollection> object returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property. (The first element in the collection represents the entire match.)|  
-|`[0-9]{0,3}`|Look for zero to three occurrences of the decimal digits 0 through 9.|  
-|`(,[0-9]{3})*`|Look for zero or more occurrences of a group separator followed by three decimal digits.|  
-|`\.`|Look for a single occurrence of the decimal separator.|  
-|`[0-9]+`|Look for one or more decimal digits.|  
-|`(\.[0-9]+)?`|Look for zero or one occurrence of the decimal separator followed by at least one decimal digit.|  
+
+> [!div class="mx-tdCol2BreakAll"]
+> |Pattern|Interpretation|  
+> |-|-|  
+> |`\$`|Look for a single occurrence of the dollar symbol (`$`) in the input string. The regular expression pattern string includes a backslash to indicate that the dollar symbol is to be interpreted literally rather than as a regular expression anchor. (The `$` symbol alone would indicate that the regular expression engine should try to begin its match at the end of a string.) To ensure that the current culture's currency symbol is not misinterpreted as a regular expression symbol, the example calls the <xref:System.Text.RegularExpressions.Regex.Escape%2A?displayProperty=nameWithType> method to escape the character.|  
+> |`\s*`|Look for zero or more occurrences of a white-space character.|  
+> |`[-+]?`|Look for zero or one occurrence of either a positive sign or a negative sign.|  
+> |`([0-9]{0,3}(,[0-9]{3})*(\.[0-9]+)?)`|The outer parentheses around this expression define it as a capturing group or a subexpression. If a match is found, information about this part of the matching string can be retrieved from the second <xref:System.Text.RegularExpressions.Group> object in the <xref:System.Text.RegularExpressions.GroupCollection> object returned by the <xref:System.Text.RegularExpressions.Match.Groups%2A?displayProperty=nameWithType> property. (The first element in the collection represents the entire match.)|  
+> |`[0-9]{0,3}`|Look for zero to three occurrences of the decimal digits 0 through 9.|  
+> |`(,[0-9]{3})*`|Look for zero or more occurrences of a group separator followed by three decimal digits.|  
+> |`\.`|Look for a single occurrence of the decimal separator.|  
+> |`[0-9]+`|Look for one or more decimal digits.|  
+> |`(\.[0-9]+)?`|Look for zero or one occurrence of the decimal separator followed by at least one decimal digit.|  
   
  If each of these subpatterns is found in the input string, the match succeeds, and a <xref:System.Text.RegularExpressions.Match> object that contains information about the match is added to the <xref:System.Text.RegularExpressions.MatchCollection> object.  
   
@@ -124,6 +126,7 @@ The <xref:System.String> class includes a number of string search and replacemen
 |[Regular Expression Language - Quick Reference](regular-expression-language-quick-reference.md)|Provides information on the set of characters, operators, and constructs that you can use to define regular expressions.|  
 |[The Regular Expression Object Model](the-regular-expression-object-model.md)|Provides information and code examples that illustrate how to use the regular expression classes.|  
 |[Details of Regular Expression Behavior](details-of-regular-expression-behavior.md)|Provides information about the capabilities and behavior of .NET regular expressions.|
+|[Use regular expressions in Visual Studio](/visualstudio/ide/using-regular-expressions-in-visual-studio)||
   
 ## Reference  
 

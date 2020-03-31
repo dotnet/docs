@@ -9,4 +9,4 @@ Counter Name: Queued Messages Rejected.
 ## Description  
  Number of messages that are rejected by the queued transport at this service.  
   
- See [Poison-Message Handling](https://go.microsoft.com/fwlink/?LinkID=96233) for more information on when messages are rejected.
+ For more information on when messages are rejected, see [Poison-Message Handling](../../feature-details/poison-message-handling.md).

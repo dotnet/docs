@@ -48,7 +48,7 @@ This topic provides an introduction to the Microsoft Windows Presentation Founda
   
  This topic provides additional information about the managed component. For more information on the unmanaged API see the [Unmanaged WPF Imaging Component](/windows/desktop/wic/-wic-lh) documentation.  
   
-<a name="_imageformats"></a>   
+<a name="_imageformats"></a>
 ## WPF Image Formats  
 
  A codec is used to decode or encode a specific media format. WPF Imaging includes a codec  for BMP, JPEG, PNG, TIFF, Windows Media Photo, GIF, and ICON image formats. Each of these codecs enable applications to decode and, with the exception of ICON, encode their respective image formats.  
@@ -80,7 +80,7 @@ This topic provides an introduction to the Microsoft Windows Presentation Founda
  [!code-csharp[BmpBitmapDecoderEncoder#3](~/samples/snippets/csharp/VS_Snippets_Wpf/BmpBitmapDecoderEncoder/CSharp/BitmapFrame.cs#3)]
  [!code-vb[BmpBitmapDecoderEncoder#3](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BmpBitmapDecoderEncoder/VB/BitmapFrame.vb#3)]  
   
-<a name="_displayingimages"></a>   
+<a name="_displayingimages"></a>
 ## Displaying Images in WPF  
  There are several ways to display an image in a Windows Presentation Foundation (WPF) application. Images can be displayed using an <xref:System.Windows.Controls.Image> control, painted on a visual using an <xref:System.Windows.Media.ImageBrush>, or drawn using an <xref:System.Windows.Media.ImageDrawing>.  
   
@@ -155,7 +155,7 @@ Image brushes can fill shapes, controls, text, and more
   
  For additional information about <xref:System.Windows.Media.ImageBrush> and painting images see [Painting with Images, Drawings, and Visuals](painting-with-images-drawings-and-visuals.md).  
   
-<a name="_metadata"></a>   
+<a name="_metadata"></a>
 ## Image Metadata  
  Some image files contain metadata that describes the content or the characteristics of the file. For example, most digital cameras create images that contain metadata about the make and model of the camera used to capture the image. Each image format handles metadata differently but WPF Imaging provides a uniform way of storing and retrieving metadata for each supported image format.  
   
@@ -173,7 +173,7 @@ Image brushes can fill shapes, controls, text, and more
  [!code-csharp[BitmapMetadata#SetQuery](~/samples/snippets/csharp/VS_Snippets_Wpf/BitMapMetadata/CSharp/BitmapMetadata.cs#setquery)]
  [!code-vb[BitmapMetadata#SetQuery](~/samples/snippets/visualbasic/VS_Snippets_Wpf/BitMapMetadata/VB/BitmapMetadata.vb#setquery)]  
   
-<a name="_extensibility"></a>   
+<a name="_extensibility"></a>
 ## Codec Extensibility  
  A core feature of WPF Imaging is the extensibility model for new image codecs. These unmanaged interfaces enable codec developers to integrate codecs with WPF so new image formats can automatically be used by WPF applications.  
   

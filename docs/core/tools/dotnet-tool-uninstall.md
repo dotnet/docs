@@ -15,8 +15,11 @@ ms.date: 02/14/2020
 
 ```dotnetcli
 dotnet tool uninstall <PACKAGE_NAME> <-g|--global>
+
 dotnet tool uninstall <PACKAGE_NAME> <--tool-path>
+
 dotnet tool uninstall <PACKAGE_NAME>
+
 dotnet tool uninstall <-h|--help>
 ```
 
@@ -71,3 +74,5 @@ The `dotnet tool uninstall` command provides a way for you to uninstall .NET Cor
 ## See also
 
 - [.NET Core tools](global-tools.md)
+- [Tutorial: Install and use a .NET Core global tool using the .NET Core CLI](global-tools-how-to-use.md)
+- [Tutorial: Install and use a .NET Core local tool using the .NET Core CLI](local-tools-how-to-use.md)

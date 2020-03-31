@@ -111,7 +111,7 @@ This scenario shows a base interface without any implementations. Adding a metho
 
 [!code-csharp[Enumeration for power status](~/samples/snippets/csharp/tutorials/mixins-with-interfaces/ILight.cs?name=SnippetPowerStatus)]
 
-The default implementation assumes AC power:
+The default implementation assumes no power:
 
 [!code-csharp[Report a default power status](~/samples/snippets/csharp/tutorials/mixins-with-interfaces/ILight.cs?name=SnippetILightInterface)]
 

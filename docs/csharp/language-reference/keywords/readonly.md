@@ -1,6 +1,6 @@
 ---
 title: "readonly keyword - C# Reference"
-ms.date: 06/21/2018
+ms.date: 03/26/2020
 f1_keywords: 
   - "readonly_CSharpKeyword"
   - "readonly"
@@ -12,17 +12,17 @@ ms.assetid: 2f8081f6-0de2-4903-898d-99696c48d2f4
 
 The `readonly` keyword is a modifier that can be used in four contexts:
 
-- In a [field declaration](#readonly-field-example), `readonly` indicates that assignment to the field can only occur as part of the declaration or in a constructor in the same class. A readonly field can be assigned and reassigned multiple times within the field declaration and constructor. 
+- In a [field declaration](#readonly-field-example), `readonly` indicates that assignment to the field can only occur as part of the declaration or in a constructor in the same class. A readonly field can be assigned and reassigned multiple times within the field declaration and constructor.
   
   A `readonly` field can't be assigned after the constructor exits. This rule has different implications for value types and reference types:
   
-  - Because value types directly contain their data, a field that is a  `readonly` value type is immutable. 
+  - Because value types directly contain their data, a field that is a  `readonly` value type is immutable.
   - Because reference types contain a reference to their data, a field that is a `readonly` reference type must always refer to the same object. That object isn't immutable. The `readonly` modifier prevents the field from being replaced by a different instance of the reference type. However, the modifier doesn't prevent the instance data of the field from being modified through the read-only field.
 
   > [!WARNING]
   > An externally visible type that contains an externally visible read-only field that is a mutable reference type may be a security vulnerability and may trigger warning [CA2104](/visualstudio/code-quality/ca2104) : "Do not declare read only mutable reference types."
 
-- In a [`readonly struct` definition](#readonly-struct-example), `readonly` indicates that the `struct` is immutable.
+- In a `readonly struct` type definition, `readonly` indicates that the structure type is immutable. For more information, see the [`readonly` struct](../builtin-types/struct.md#readonly-struct) section of the [Structure types](../builtin-types/struct.md) article.
 - In a [`readonly` member definition](#readonly-member-examples), `readonly` indicates that a member of a `struct` doesn't mutate the struct's internal state.
 - In a [`ref readonly` method return](#ref-readonly-return-example), the `readonly` modifier indicates that method returns a reference and writes aren't allowed to that reference.
 
@@ -66,28 +66,6 @@ you'll get the compiler error message:
 
 **A readonly field cannot be assigned to (except in a constructor or a variable initializer)**
 
-## Readonly struct example
-
-The `readonly` modifier on a `struct` definition declares that the struct is **immutable**. Every instance field of the `struct` must be marked `readonly`, as shown in the following example:
-
-[!code-csharp[readonly struct example](~/samples/snippets/csharp/keywords/ReadonlyKeywordExamples.cs#ReadonlyStruct)]
-
-The preceding example uses [readonly auto properties](../../properties.md#read-only) to declare its storage. That instructs the compiler to create `readonly` backing fields for those properties. You could also declare `readonly` fields directly:
-
-```csharp
-public readonly struct Point
-{
-    public readonly double X;
-    public readonly double Y;
-
-    public Point(double x, double y) => (X, Y) = (x, y);
-
-    public override string ToString() => $"({X}, {Y})";
-}
-```
-
-Adding a field not marked `readonly` generates compiler error `CS8340`: "Instance fields of readonly structs must be readonly."
-
 ## Readonly member examples
 
 Other times, you may create a struct that supports mutation. In those cases, several of the instance members likely won't modify the internal state of the struct. You can declare those instance members with the `readonly` modifier. The compiler enforces your intent. If that member modifies state directly or accesses a member that isn't also declared with the `readonly` modifier, the result is a compile-time error. The `readonly` modifier is valid on `struct` members, not `class` or `interface` member declarations.
@@ -129,7 +107,7 @@ public readonly int Index { get; }
 // Or:
 public int Number { readonly get; }
 public string Message { readonly get; set; }
-``` 
+```
 
 You may add the `readonly` modifier in those locations, but it will have no meaningful effect. You may not add the `readonly` modifier to an auto-implemented property setter, or to a read/write auto-implemented property.
 
@@ -138,6 +116,7 @@ You may add the `readonly` modifier in those locations, but it will have no mean
 The `readonly` modifier on a `ref return` indicates that the returned reference can't be modified. The following example returns a reference to the origin. It uses the `readonly` modifier to indicate that callers can't modify the origin:
 
 [!code-csharp[readonly struct example](~/samples/snippets/csharp/keywords/ReadonlyKeywordExamples.cs#ReadonlyReturn)]
+
 The type returned doesn't need to be a `readonly struct`. Any type that can be returned by `ref` can be returned by `ref readonly`.
 
 ## C# language specification

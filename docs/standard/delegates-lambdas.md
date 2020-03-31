@@ -40,9 +40,9 @@ public class Program
 
 In order to streamline the development process, .NET includes a set of delegate types that programmers can reuse and not have to create new types. These are `Func<>`, `Action<>` and `Predicate<>`, and they can be used in various places throughout the .NET APIs without the need to define new delegate types. Of course, there are some differences between the three as you will see in their signatures which mostly have to do with the way they were meant to be used:
 
-* `Action<>` is used when there is a need to perform an action using the arguments of the delegate.
-* `Func<>` is used usually when you have a transformation on hand, that is, you need to transform the arguments of the delegate into a different result. Projections are a prime example of this.
-* `Predicate<>` is used when you need to determine if the argument satisfies the condition of the delegate. It can also be written as a `Func<T, bool>`.
+* `Action<>` is used when there is a need to perform an action using the arguments of the delegate. The method it encapsulates does not return a value.
+* `Func<>` is used usually when you have a transformation on hand, that is, you need to transform the arguments of the delegate into a different result. Projections are a prime example of this. The method it encapsulates returns a specified value.
+* `Predicate<>` is used when you need to determine if the argument satisfies the condition of the delegate. It can also be written as a `Func<T, bool>`, which means the method returns a boolean value.
 
 We can now take our example above and rewrite it using the `Func<>` delegate instead of a custom type. The program will continue running exactly the same.
 
@@ -104,7 +104,7 @@ As you can see, the body of the delegate is just a set of expressions, as any ot
 
 However, even with this approach, there is still much code that we can throw away. This is where **lambda expressions** come into play.
 
-Lambda expressions, or just "lambdas" for short, were introduced first in C# 3.0, as one of the core building blocks of Language Integrated Query (LINQ). They are just a more convenient syntax for using delegates. They declare a signature and a method body, but don’t have an formal identity of their own, unless they are assigned to a delegate. Unlike delegates, they can be directly assigned as the left-hand side of event registration or in various LINQ clauses and methods.
+Lambda expressions, or just "lambdas" for short, were introduced first in C# 3.0, as one of the core building blocks of Language Integrated Query (LINQ). They are just a more convenient syntax for using delegates. They declare a signature and a method body, but don’t have a formal identity of their own, unless they are assigned to a delegate. Unlike delegates, they can be directly assigned as the left-hand side of event registration or in various LINQ clauses and methods.
 
 Since a lambda expression is just another way of specifying a delegate, we should be able to rewrite the above sample to use a lambda expression instead of an anonymous delegate.
 

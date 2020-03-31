@@ -75,35 +75,35 @@ In *Startup.cs*, add the following code:
 ```csharp
 private void CheckSameSite(HttpContext httpContext, CookieOptions options)
 {
-    if (options.SameSite == SameSiteMode.None) 
-    { 
+    if (options.SameSite == SameSiteMode.None)
+    {
         var userAgent = httpContext.Request.Headers["User-Agent"].ToString();
-        // TODO: Use your User Agent library of choice here. 
-        if (/* UserAgent doesn't support new behavior */) 
-        { 
+        // TODO: Use your User Agent library of choice here.
+        if (/* UserAgent doesn't support new behavior */)
+        {
             options.SameSite = SameSiteMode.Unspecified;
         }
     }
 }
 
-public void ConfigureServices(IServiceCollection services) 
-{ 
-    services.Configure<CookiePolicyOptions>(options => 
-    { 
+public void ConfigureServices(IServiceCollection services)
+{
+    services.Configure<CookiePolicyOptions>(options =>
+    {
         options.MinimumSameSitePolicy = SameSiteMode.Unspecified;
         options.OnAppendCookie = cookieContext =>
             CheckSameSite(cookieContext.Context, cookieContext.CookieOptions);
         options.OnDeleteCookie = cookieContext =>
             CheckSameSite(cookieContext.Context, cookieContext.CookieOptions);
-    }); 
-} 
+    });
+}
 
-public void Configure(IApplicationBuilder app) 
-{ 
+public void Configure(IApplicationBuilder app)
+{
     // Before UseAuthentication or anything else that writes cookies.
     app.UseCookiePolicy();
 
-    app.UseAuthentication(); 
+    app.UseAuthentication();
     // code omitted for brevity
 }
 ```
@@ -113,10 +113,10 @@ public void Configure(IApplicationBuilder app)
 The `Microsoft.AspNetCore.SuppressSameSiteNone` compatibility switch enables you to temporarily opt out of the new ASP.NET Core cookie behavior. Add the following JSON to a *runtimeconfig.template.json* file in your project:
 
 ```json
-{ 
-  "configProperties": { 
-    "Microsoft.AspNetCore.SuppressSameSiteNone": "true" 
-  } 
+{
+  "configProperties": {
+    "Microsoft.AspNetCore.SuppressSameSiteNone": "true"
+  }
 }
 ```
 

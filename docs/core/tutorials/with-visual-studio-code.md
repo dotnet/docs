@@ -12,7 +12,7 @@ ms.date: 12/05/2018
 
 1. Install [Visual Studio Code](https://code.visualstudio.com/).
 2. Install the [.NET Core SDK](https://dotnet.microsoft.com/download).
-3. Install the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp) for Visual Studio Code. For more information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
+3. Install the [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code. For more information about how to install extensions on Visual Studio Code, see [VS Code Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-gallery).
 
 ## Hello World
 
@@ -73,7 +73,7 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
     ![Setting a Breakpoint](media/with-visual-studio-code/set-breakpoint-vs-code.png)
 
 6. To start debugging, press <kbd>F5</kbd> or select the green arrow. The debugger stops execution of your program when it reaches the breakpoint you set in the previous step.
-    - While debugging, you can view your local variables in the top left pane or use the debug console.
+    - While debugging, you can view your local variables in the top-left pane or use the debug console.
 
 7. Select the blue arrow at the top to continue debugging, or select the red square at the top to stop.
 
@@ -84,7 +84,7 @@ You can also watch a short video tutorial for further setup help on [Windows](ht
 
 ## Add a class
 
-1. To add a new class, right click in the VSCode Explorer and select **New File**. This adds a new file to the folder you have open in VSCode.
+1. To add a new class, right-click in the VSCode Explorer and select **New File**. This adds a new file to the folder you have open in VSCode.
 2. Name your file *MyClass.cs*. You must save it with a `.cs` extension at the end for it to be recognized as a csharp file.
 3. Add the code below to create your first class. Make sure to include the correct namespace so you can reference it from your *Program.cs* file:
 

@@ -12,7 +12,7 @@ ms.assetid: 08dd1606-02a2-4122-9351-c0afd2ec3a70
 # Graphics Rendering Tiers
 A rendering tier defines a level of graphics hardware capability and performance for a device that runs a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application.  
 
-<a name="graphics_hardware"></a>   
+<a name="graphics_hardware"></a>
 ## Graphics Hardware  
  The features of the graphics hardware that most impact the rendering tier levels are:  
   
@@ -24,7 +24,7 @@ A rendering tier defines a level of graphics hardware capability and performance
   
 - **Multitexture Support** Multitexture support refers to the ability to apply two or more distinct textures during a blending operation on a 3D graphics object. The degree of multitexture support is determined by the number of multitexture units on the graphics hardware.  
   
-<a name="rendering_tier_definitions"></a>   
+<a name="rendering_tier_definitions"></a>
 ## Rendering Tier Definitions  
  The features of the graphics hardware determine the rendering capability of a [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application. The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] system defines three rendering tiers:  
   
@@ -39,7 +39,7 @@ A rendering tier defines a level of graphics hardware capability and performance
 ### Rendering Tier 0  
  A rendering tier value of 0 means that there is no graphics hardware acceleration available for the application on the device. At this tier level, you should assume that all graphics will be rendered by software with no hardware acceleration. This tier's functionality corresponds to a DirectX version that is less than 9.0.  
   
-### Rendering Tier 1 and Rendering Tier 2  
+### Rendering Tier 1 and Rendering Tier 2
   
 > [!NOTE]
 > Starting in the .NET Framework 4, rendering tier 1 has been redefined to only include graphics hardware that supports DirectX 9.0 or greater. Graphics hardware that supports DirectX 7 or 8 is now defined as rendering tier 0.  
@@ -51,7 +51,7 @@ A rendering tier defines a level of graphics hardware capability and performance
 |Feature|Tier 1|Tier 2|  
 |-------------|------------|------------|  
 |DirectX version|Must be greater than or equal to 9.0.|Must be greater than or equal to 9.0.|  
-|Video RAM|Must be greater than or equal to 60MB.|Must be greater than or equal to 120MB.|  
+|Video RAM|Must be greater than or equal to 60 MB.|Must be greater than or equal to 120 MB.|  
 |Pixel shader|Version level must greater than or equal to 2.0.|Version level must greater than or equal to 2.0.|  
 |Vertex shader|No requirement.|Version level must greater than or equal to 2.0.|  
 |Multitexture units|No requirement.|Number of units must greater than or equal to 4.|  
@@ -66,7 +66,7 @@ A rendering tier defines a level of graphics hardware capability and performance
 |3D MIP mapping|[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] attempts to use MIP mapping when rendering 3D content. MIP mapping improves the quality of texture rendering when a texture occupies a smaller field of view in a <xref:System.Windows.Controls.Viewport3D>.|  
 |Radial gradients|While supported, avoid the use of <xref:System.Windows.Media.RadialGradientBrush> on large objects.|  
 |3D lighting calculations|[!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] performs per-vertex lighting, which means that a light intensity must be calculated at each vertex for each material applied to a mesh.|  
-|Text rendering|Sub-pixel font rendering uses available pixel shaders on the graphics hardware.|  
+|Text rendering|Subpixel font rendering uses available pixel shaders on the graphics hardware.|  
   
  The following features and capabilities are hardware accelerated only for rendering tier 2:  
   
@@ -85,7 +85,7 @@ A rendering tier defines a level of graphics hardware capability and performance
 |Any operation whose video RAM requirement exceeds the memory of the graphics hardware|You can monitor application video RAM usage by using the Perforator tool that is included in the [WPF Performance Suite](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/aa969767(v=vs.100)) in the Windows SDK.|  
 |Layered windows|Layered windows allow [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications to render content to the screen in a non-rectangular window. On operating systems that support Windows Display Driver Model (WDDM), such as Windows Vista and Windows 7, layered windows are hardware accelerated. On other systems, such as Windows XP, layered windows are rendered by software with no hardware acceleration.<br /><br /> You can enable layered windows in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] by setting the following <xref:System.Windows.Window> properties:<br /><br /> -   <xref:System.Windows.Window.WindowStyle%2A> = <xref:System.Windows.WindowStyle.None><br />-   <xref:System.Windows.Window.AllowsTransparency%2A> = `true`<br />-   <xref:System.Windows.Controls.Control.Background%2A> = <xref:System.Windows.Media.Brushes.Transparent%2A>|  
   
-<a name="other_resources"></a>   
+<a name="other_resources"></a>
 ## Other Resources  
  The following resources can help you analyze the performance characteristics of your [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application.  
   
@@ -95,7 +95,7 @@ A rendering tier defines a level of graphics hardware capability and performance
 |Setting|Description|  
 |-------------|-----------------|  
 |**Disable Hardware Acceleration Option**|Specifies whether hardware acceleration should be enabled.|  
-|**Maximum Multisample Value**|Specifies the degree of multisampling for antialiasing 3-D content.|  
+|**Maximum Multisample Value**|Specifies the degree of multisampling for antialiasing 3D content.|  
 |**Required Video Driver Date Setting**|Specifies whether the system disables hardware acceleration for drivers released before November 2004.|  
 |**Use Reference Rasterizer Option**|Specifies whether [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] should use the reference rasterizer.|  
   
@@ -118,7 +118,7 @@ A rendering tier defines a level of graphics hardware capability and performance
   
  When you run the DirectX Diagnostic Tool, the main window contains a set of tabs that allow you to display and diagnose DirectX-related information. For example, the **System** tab provides system information about your computer and specifies the version of DirectX that is installed on your computer.  
   
- ![Screenhot: DirectX Diagnostic Tool](./media/directxdiagnostictool-01.png "DirectXDiagnosticTool_01")  
+ ![Screenshot: DirectX Diagnostic Tool](./media/directxdiagnostictool-01.png "DirectXDiagnosticTool_01")  
 DirectX Diagnostic Tool main window  
   
 ## See also

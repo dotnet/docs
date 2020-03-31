@@ -26,7 +26,7 @@ The LIKE operator in SQLite doesn't honor collations. The default implementation
 You can easily make the LIKE operator case-sensitive by using the following pragma statement:
 
 ```sql
-PRAGMA case_sensitive_like = 0
+PRAGMA case_sensitive_like = 1
 ```
 
 See [User-defined functions](user-defined-functions.md) for details on overriding the implementation of the LIKE operator.

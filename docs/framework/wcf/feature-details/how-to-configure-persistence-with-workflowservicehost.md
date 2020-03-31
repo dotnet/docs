@@ -13,12 +13,12 @@ This topic describes how to configure the SQL Workflow Instance Store feature to
     ```xml  
     <serviceBehaviors>  
         <behavior name="">  
-            <sqlWorkflowInstanceStore   
+            <sqlWorkflowInstanceStore
                  connectionString="provider=System.Data.SqlClient;Data Source=(local);Initial Catalog=DefaultPersistenceProviderDb;Integrated Security=True;Async=true"  
                  instanceEncodingOption="GZip | None"  
                  instanceCompletionAction="DeleteAll | DeleteNothing"  
                  instanceLockedExceptionAction="NoRetry | SimpleRetry | AggressiveRetry"  
-                 hostLockRenewalPeriod="00:00:30"   
+                 hostLockRenewalPeriod="00:00:30"
                  runnableInstancesDetectionPeriod="00:00:05">  
             <sqlWorkflowInstanceStore/>  
         </behavior>  

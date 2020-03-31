@@ -60,8 +60,8 @@ Adds a `namedCache` entry to the `namedCaches` collection for a memory cache.
   <system.runtime.caching>  
     <memoryCache>  
       <namedCaches>  
-          <add name="Default"   
-               cacheMemoryLimitMegabytes="0"   
+          <add name="Default"
+               cacheMemoryLimitMegabytes="0"
                physicalMemoryPercentage="0"  
                pollingInterval="00:02:00" />  
       </namedCaches>  

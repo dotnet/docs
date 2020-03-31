@@ -15,6 +15,8 @@ ms.assetid: 44bae8b8-8841-4d85-826b-8a94277daecb
 ---
 # switch (C# reference)
 
+This article covers the `switch` statement. For information on the `switch` expression (introduced in C# 8.0), see the article on [`switch` expressions](../operators/switch-expression.md) in the [expressions and operators](../operators/index.md) section.
+
 `switch` is a selection statement that chooses a single *switch section* to execute from a list of candidates based on a pattern match with the *match expression*.
 
 [!code-csharp[switch#1](~/samples/snippets/csharp/language-reference/keywords/switch/switch1.cs#1)]

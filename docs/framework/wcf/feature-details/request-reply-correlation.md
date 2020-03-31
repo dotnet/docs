@@ -75,7 +75,7 @@ CorrelationScope s = new CorrelationScope
 {  
     Body = new Sequence  
     {  
-        Activities =   
+        Activities =
         {  
             StartOrder,  
             // Activities that create the reply.  

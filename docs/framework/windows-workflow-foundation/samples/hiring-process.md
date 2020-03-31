@@ -44,11 +44,11 @@ This sample demonstrates how to implement a business process using messaging act
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WF\Application\HiringProcess`  
   
 ## Description of the Process  
@@ -56,7 +56,7 @@ This sample demonstrates how to implement a business process using messaging act
   
 1. An employee (the requester) starts the hiring process request.  
   
-2. The requester’s manager must approve the request:  
+2. The requester's manager must approve the request:  
   
     1. The manager can reject the request.  
   
@@ -66,7 +66,7 @@ This sample demonstrates how to implement a business process using messaging act
   
     3. The manager can approve.  
   
-3. After the requester’s manager approves, the department owner must approve the request:  
+3. After the requester's manager approves, the department owner must approve the request:  
   
     1. The department owner can reject.  
   
@@ -91,7 +91,7 @@ This sample demonstrates how to implement a business process using messaging act
   
 |Project|Description|  
 |-------------|-----------------|  
-|ContosoHR|Contains data contracts, business objects and repository classes.|  
+|ContosoHR|Contains data contracts, business objects, and repository classes.|  
 |HiringRequestService|Contains the definition of the Hiring Request Process workflow.<br /><br /> This project is implemented as a console application that self-hosts the workflow (xaml file) as a service.|  
 |ResumeRequestService|A workflow service that collects resumes from candidates until a time-out expires or someone decides that the process has to be stopped.<br /><br /> This project is implemented as a declarative workflow service (xamlx).|  
 |OrgService|A service that exposes organizational information (Employees, Positions, PositionTypes, and Departments). You can think of this service as the Company Organization module of an Enterprise Resource Plan (ERP).<br /><br /> This project is implemented as a console application that exposes a Windows Communication Foundation (WCF) service.|  
@@ -107,7 +107,7 @@ This sample demonstrates how to implement a business process using messaging act
 |Flowchart|The business process is represented as a flowchart . This flowchart description represents the process in the same way in which a business would have drawn it in a whiteboard.|HiringRequestService|  
 |Workflow services|The Flowchart with the process definition is hosted in a service (in this example, the service is hosted in a console application).|HiringRequestService|  
 |Messaging activities|The flowchart uses messaging activities in two ways:<br /><br /> -   To get information from the user (to receive the decisions and related information in each approval step).<br />-   To interact with other existing services (InboxService and OrgDataService, used through service references).|HiringRequestService|  
-|Content based correlation|Approval messages correlate on the ID property of the hiring request:<br /><br /> -   When a process is started, the correlation handle is initialized with the ID of the request.<br />-   Incoming approval messages correlate on their ID (the first parameter of each approval message is the ID of the request).|HiringRequestService / ResumeRequestService|  
+|Content-based correlation|Approval messages correlate on the ID property of the hiring request:<br /><br /> -   When a process is started, the correlation handle is initialized with the ID of the request.<br />-   Incoming approval messages correlate on their ID (the first parameter of each approval message is the ID of the request).|HiringRequestService / ResumeRequestService|  
 |Custom activities (declarative and code based)|There are several custom activities in this sample:<br /><br /> -   `SaveActionTracking`: This activity emits a custom <xref:System.Activities.Tracking.TrackingRecord> (using <xref:System.Activities.NativeActivityContext.Track%2A>). This activity has been authored using imperative code extending <xref:System.Activities.NativeActivity>.<br />-   `GetEmployeesByPositionTypes`: This activity receives a list of position type IDs and returns a list of people that have that position in Contoso. This activity has been authored declaratively (using the activity designer).<br />-   `SaveHiringRequestInfo`: This activity saves the information of a `HiringRequest` (using `HiringRequestRepository.Save`). This activity has been authored using imperative code extending <xref:System.Activities.CodeActivity>.|HiringRequestService|  
 |System-provided SQL Server Persistence|The <xref:System.ServiceModel.Activities.WorkflowServiceHost> instance that hosts the Flowchart process definition is configured to use the system-provided SQL Server persistence.|HiringRequestService / ResumeRequestService|  
 |Custom Tracking|The sample includes a custom tracking participant that saves the history of a `HiringRequestProcess` (this records what action has been done, by whom, and when). The source code is in the Tracking folder of HiringRequestService.|HiringRequestService|  
@@ -116,7 +116,7 @@ This sample demonstrates how to implement a business process using messaging act
 |Parallel Activities|-   <xref:System.Activities.Statements.ParallelForEach%601> is used to register in the Inbox of the CEO and HR Managers in parallel (Waiting for two HR Managers' Approval step).<br />-   <xref:System.Activities.Statements.Parallel> is used to do some clean-up tasks in the Completed and Rejected steps|HiringRequestService|  
 |Model Cancellation|The Flowchart uses <xref:System.Activities.Statements.CancellationScope> to create cancellation behavior (in this case it does some clean-up.)|HiringRequestService|  
 |Customer Persistence Participant|`HiringRequestPersistenceParticipant` saves data from a workflow variable to a table stored in the Contoso HR database.|HiringRequestService|  
-|Workflow Services|`ResumeRequestService` is implemented using workflow services. Workflow definition and service information is contained in ResumeRequestService.xamlx. The service is configured to use persistence and tracking.|ResumeRequestService|  
+|Workflow Services|`ResumeRequestService` is implemented using workflow services. Workflow definition and service information are contained in ResumeRequestService.xamlx. The service is configured to use persistence and tracking.|ResumeRequestService|  
 |Durable Timers|`ResumeRequestService` uses durable timers to define the duration of a Job Posting (once a time-out expires, the Job Posting is closed).|ResumeRequestService|  
 |Transactions|<xref:System.Activities.Statements.TransactionScope> is used to ensure consistency of data within the execution of several activities (when a new resume is received).|ResumeRequestService|  
 |Transactions|The custom persistence participant (`HiringRequestPersistenceParticipant`) and custom tracking participant (`HistoryFileTrackingParticipant`) use the same transaction.|HiringRequestService|  
@@ -153,7 +153,7 @@ This sample demonstrates how to implement a business process using messaging act
   
 1. After the solution builds, press CTRL+F5 to run without debugging. Verify that all services have started.  
   
-2. Right click **InternalClient** in the solution and then select **View in Browser**. The default page for `InternalClient` is displayed. Ensure that services are running, and click the link.  
+2. Right-click **InternalClient** in the solution and then select **View in Browser**. The default page for `InternalClient` is displayed. Ensure that services are running, and click the link.  
   
 3. The **HiringRequest** module is displayed. You can follow the scenario detailed here.  
   
@@ -173,19 +173,19 @@ This sample demonstrates how to implement a business process using messaging act
   
 1. Michael Alexander (Software Engineer) wants to request a new position for hiring a Software Engineer in Test (SDET) in the Engineering department who has at least 3 years of experience in C#.  
   
-2. After being created, the request appears in Michael’s inbox (click **Refresh** if you do not see the request) awaiting Peter Brehm’s approval, who is Michael’s manager.  
+2. After being created, the request appears in Michael's inbox (click **Refresh** if you do not see the request) awaiting Peter Brehm's approval, who is Michael's manager.  
   
-3. Peter wants to act on Michael’s request. He thinks the position demands 5 years of C# experience instead of 3, so he sends his comments back for review.  
+3. Peter wants to act on Michael's request. He thinks the position demands 5 years of C# experience instead of 3, so he sends his comments back for review.  
   
 4. Michael sees a message in his inbox from his manager and wants to act. Michael sees the history of the position request and agrees with Peter. Michael modifies the description to require 5 years of C# experience and accepts the modification.  
   
-5. Peter acts on Michael’s modified request and accepts it. The request now must be approved by the Director of Engineering, Tsvi Reiter.  
+5. Peter acts on Michael's modified request and accepts it. The request now must be approved by the Director of Engineering, Tsvi Reiter.  
   
 6. Tsvi Reiter wants to expedite the request, so he puts in a comment to say that the request is urgent and accepts it.  
   
 7. The request now has to be approved by two HR managers or the CEO. The CEO, Brian Richard Goldstein, sees the urgent request by Tsvi. He acts on the request by accepting it, thus bypassing the approval by two HR managers.  
   
-8. The request is removed from Michael’s inbox and the process of hiring an SDET has now begun.  
+8. The request is removed from Michael's inbox and the process of hiring an SDET has now begun.  
   
 ### Start Resume Request  
   

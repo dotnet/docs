@@ -16,7 +16,7 @@ The many individual components of your application should also incorporate healt
 >[!IMPORTANT]
 > eShopOnContainer had been using the [Polly library](http://www.thepollyproject.org/) to implement resiliency using [Typed Clients](./use-httpclientfactory-to-implement-resilient-http-requests.md) up until the release 3.0.0.
 >
-> Starting with release 3.0.0, the HTTP calls resiliency is implemented using a [Linkerd mesh](https://linkerd.io/), that handles retries in transparent and configurable fashion, within a Kubernetes cluster, without having to handle those concerns in the code.
+> Starting with release 3.0.0, the HTTP calls resiliency is implemented using a [Linkerd mesh](https://linkerd.io/), that handles retries in a transparent and configurable fashion, within a Kubernetes cluster, without having to handle those concerns in the code.
 >
 > The Polly library is still used to add resilience to database connections, specially while starting up the services.
 

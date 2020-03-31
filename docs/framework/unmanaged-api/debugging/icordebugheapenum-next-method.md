@@ -23,7 +23,7 @@ Gets the specified number of [COR_HEAPOBJECT](cor-heapobject-structure.md) insta
   
 ```cpp  
 HRESULT Next(  
-    [in] ULONG celt,    [out, size_is(celt), length_is(*pceltFetched)] COR_HEAPOBJECT  objects[],   
+    [in] ULONG celt,    [out, size_is(celt), length_is(*pceltFetched)] COR_HEAPOBJECT  objects[],
     [out] ULONG *pceltFetched  
 );  
 ```  

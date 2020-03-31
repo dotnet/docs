@@ -26,7 +26,7 @@ There are two main characteristics for value objects:
 
 - They are immutable.
 
-The first characteristic was already discussed. Immutability is an important requirement. The values of a value object must be immutable once the object is created. Therefore, when the object is constructed, you must provide the required values, but you must not allow them to change during the object’s lifetime.
+The first characteristic was already discussed. Immutability is an important requirement. The values of a value object must be immutable once the object is created. Therefore, when the object is constructed, you must provide the required values, but you must not allow them to change during the object's lifetime.
 
 Value objects allow you to perform certain tricks for performance, thanks to their immutable nature. This is especially true in systems where there may be thousands of value object instances, many of which have the same values. Their immutable nature allows them to be reused; they can be interchangeable objects, since their values are the same and they have no identity. This type of optimization can sometimes make a difference between software that runs slowly and software with good performance. Of course, all these cases depend on the application environment and deployment context.
 
@@ -128,7 +128,7 @@ You can see how this value object implementation of Address has no identity and 
 
 Having no ID field in a class to be used by Entity Framework (EF) was not possible until EF Core 2.0, which greatly helps to implement better value objects with no ID. That is precisely the explanation of the next section.
 
-It could be argued that value objects, being immutable, should be read-only (that is, have get-only properties), and that’s indeed true. However, value objects are usually serialized and deserialized to go through message queues, and being read-only stops the deserializer from assigning values, so we just leave them as private set which is read-only enough to be practical.
+It could be argued that value objects, being immutable, should be read-only (that is, have get-only properties), and that's indeed true. However, value objects are usually serialized and deserialized to go through message queues, and being read-only stops the deserializer from assigning values, so we just leave them as private set which is read-only enough to be practical.
 
 ## How to persist value objects in the database with EF Core 2.0 and later
 
@@ -163,9 +163,9 @@ Even with some gaps between the canonical value object pattern in DDD and the ow
 
 The owned entity type feature was added to EF Core since version 2.0.
 
-An owned entity type allows you to map types that do not have their own identity explicitly defined in the domain model and are used as properties, such as a value object, within any of your entities. An owned entity type shares the same CLR type with another entity type (that is, it’s just a regular class). The entity containing the defining navigation is the owner entity. When querying the owner, the owned types are included by default.
+An owned entity type allows you to map types that do not have their own identity explicitly defined in the domain model and are used as properties, such as a value object, within any of your entities. An owned entity type shares the same CLR type with another entity type (that is, it's just a regular class). The entity containing the defining navigation is the owner entity. When querying the owner, the owned types are included by default.
 
-Just by looking at the domain model, an owned type looks like it doesn’t have any identity. However, under the covers, owned types do have identity, but the owner navigation property is part of this identity.
+Just by looking at the domain model, an owned type looks like it doesn't have any identity. However, under the covers, owned types do have identity, but the owner navigation property is part of this identity.
 
 The identity of instances of owned types is not completely their own. It consists of three components:
 
@@ -290,7 +290,7 @@ public class Address
 
 - You can't call `ModelBuilder.Entity<T>()` on owned types (currently by design).
 
-- No support for optional (that is, nullable) owned types that are mapped with the owner in the same table (that is, using table splitting). This is because mapping is done for each property, we don't have a separate sentinel for the null complex value a as whole.
+- No support for optional (that is, nullable) owned types that are mapped with the owner in the same table (that is, using table splitting). This is because mapping is done for each property, we don't have a separate sentinel for the null complex value as a whole.
 
 - No inheritance mapping support for owned types, but you should be able to map two leaf types of the same inheritance hierarchies as different owned types. EF Core will not reason about the fact that they are part of the same hierarchy.
 

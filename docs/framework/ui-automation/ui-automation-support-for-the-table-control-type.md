@@ -17,7 +17,7 @@ ms.assetid: 9050dde5-6469-4c83-abb7-f861c24ff985
   
  The following sections define the required [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree structure, properties, control patterns, and events for the Table control type. The [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] requirements apply to all table controls, whether [!INCLUDE[TLA#tla_winclient](../../../includes/tlasharptla-winclient-md.md)], Win32, or Windows Forms.  
   
-<a name="Required_UI_Automation_Tree_Structure"></a>   
+<a name="Required_UI_Automation_Tree_Structure"></a>
 ## Required UI Automation Tree Structure  
  The following table depicts the control view and the content view of the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree that pertains to table controls and describes what can be contained in each view. For more information on the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] tree, see [UI Automation Tree Overview](ui-automation-tree-overview.md).  
   
@@ -27,7 +27,7 @@ ms.assetid: 9050dde5-6469-4c83-abb7-f861c24ff985
   
  If a table control has row or column headers, they must be exposed in the Control View of the UI Automation tree. The Content View does not need to expose this information because it can be accessed using the TablePattern.  
   
-<a name="Required_UI_Automation_Properties"></a>   
+<a name="Required_UI_Automation_Properties"></a>
 ## Required UI Automation Properties  
  The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties whose value or definition is especially relevant to Table controls. For more information about [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] properties, see [UI Automation Properties for Clients](ui-automation-properties-for-clients.md).  
   
@@ -45,7 +45,7 @@ ms.assetid: 9050dde5-6469-4c83-abb7-f861c24ff985
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.IsContentElementProperty>|True|The table control must always be content.|  
 |<xref:System.Windows.Automation.AutomationElementIdentifiers.IsControlElementProperty>|True|The table control must always be a control.|  
   
-<a name="Required_UI_Automation_Control_Patterns"></a>   
+<a name="Required_UI_Automation_Control_Patterns"></a>
 ## Required UI Automation Control Patterns  
  The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] control patterns required to be supported by Table controls. For more information on control patterns, see [UI Automation Control Patterns Overview](ui-automation-control-patterns-overview.md).  
   
@@ -56,7 +56,7 @@ ms.assetid: 9050dde5-6469-4c83-abb7-f861c24ff985
 |<xref:System.Windows.Automation.Provider.ITableProvider>|Yes|The table control always has the capability of having headers associated with the content.|  
 |<xref:System.Windows.Automation.Provider.ITableItemProvider>|Yes (required with child objects)|The inner objects of a table should support both the GridItem and TableItem control patterns. The table itself need not support the GridItem or TableItem control patterns unless the table is part of another table.|  
   
-<a name="Required_UI_Automation_Events"></a>   
+<a name="Required_UI_Automation_Events"></a>
 ## Required UI Automation Events  
  The following table lists the [!INCLUDE[TLA2#tla_uiautomation](../../../includes/tla2sharptla-uiautomation-md.md)] events required to be supported by all table controls. For more information on events, see [UI Automation Events Overview](ui-automation-events-overview.md).  
   

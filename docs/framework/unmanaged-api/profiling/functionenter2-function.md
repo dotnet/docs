@@ -22,9 +22,9 @@ Notifies the profiler that control is being passed to a function and provides in
   
 ```cpp  
 void __stdcall FunctionEnter2 (  
-    [in]  FunctionID                       funcId,   
-    [in]  UINT_PTR                         clientData,   
-    [in]  COR_PRF_FRAME_INFO               func,   
+    [in]  FunctionID                       funcId,
+    [in]  UINT_PTR                         clientData,
+    [in]  COR_PRF_FRAME_INFO               func,
     [in]  COR_PRF_FUNCTION_ARGUMENT_INFO  *argumentInfo  
 );  
 ```  

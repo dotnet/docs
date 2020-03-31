@@ -14,7 +14,7 @@ The <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionB
     <behaviors>  
       <serviceBehaviors>  
         <behavior name="">  
-          <workflowUnhandledException action="abandonAndSuspend"/>   
+          <workflowUnhandledException action="abandonAndSuspend"/>
         </behavior>  
       </serviceBehaviors>  
     </behaviors>  

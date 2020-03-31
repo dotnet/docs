@@ -1,6 +1,8 @@
-- name: .NET Core guide
-  href: index.md
-- name: About .NET Core
+- name: .NET Core documentation
+  href: index.yml
+- name: Introduction to .NET Core
+  href: introduction.md
+- name: .NET Core overview
   href: about.md
 - name: Install
   items:
@@ -40,8 +42,8 @@
       href: install/linux-package-manager-fedora29.md
     - name: OpenSUSE 15
       href: install/linux-package-manager-opensuse15.md
-    - name: RHEL 8.1
-      href: install/linux-package-manager-rhel81.md
+    - name: RHEL 8
+      href: install/linux-package-manager-rhel8.md
     - name: RHEL 7
       href: install/linux-package-manager-rhel7.md
     - name: SLES 15
@@ -166,6 +168,18 @@
         href: tools/dotnet-nuget-locals.md
       - name: dotnet nuget push
         href: tools/dotnet-nuget-push.md
+      - name: dotnet nuget add source
+        href: tools/dotnet-nuget-add-source.md
+      - name: dotnet nuget disable source
+        href: tools/dotnet-nuget-disable-source.md
+      - name: dotnet nuget enable source
+        href: tools/dotnet-nuget-enable-source.md
+      - name: dotnet nuget list source
+        href: tools/dotnet-nuget-list-source.md
+      - name: dotnet nuget remove source
+        href: tools/dotnet-nuget-remove-source.md
+      - name: dotnet nuget update source
+        href: tools/dotnet-nuget-update-source.md
     - name: dotnet pack
       href: tools/dotnet-pack.md
     - name: dotnet publish
@@ -230,8 +244,6 @@
     href: tools/elevated-access.md
   - name: Enable Tab completion
     href: tools/enable-tab-autocomplete.md
-  - name: Extensibility model
-    href: tools/extensibility.md
 - name: Diagnostic tools
   items:
   - name: Overview

@@ -19,7 +19,7 @@ This API supports the Windows Presentation Foundation (WPF) infrastructure and i
   
 ```cpp  
 HRESULT LoadFromHistory_export(  
-        IStream* pHistoryStream,   
+        IStream* pHistoryStream,
         IBindCtx* pBindCtx  
 )  
 ```  

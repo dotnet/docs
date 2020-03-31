@@ -54,7 +54,7 @@ ms.assetid: c4d25b24-9c1a-4b3e-9705-97ba0d6c0289
  You can also invoke PerfView from the command line. To log only the events from your provider, open the Command Prompt window and enter the command:  
   
 ```console
-perfview -KernelEvents:Process -OnlyProviders:*MyCompany-MyApp collect outputFile   
+perfview -KernelEvents:Process -OnlyProviders:*MyCompany-MyApp collect outputFile
 ```  
   
  where:  

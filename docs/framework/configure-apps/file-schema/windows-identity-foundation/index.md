@@ -17,23 +17,23 @@ The topics in this section provide information about the Windows Identity Founda
                 <sessionSecurityTokenCache />  
                 <tokenReplayCache />  
             </caches>  
-      
+
             <certificateValidation>  
-                <certificateValidator />   
+                <certificateValidator />
             </certificateValidation>  
-      
+
             <claimsAuthenticationManager />  
-      
+
             <claimsAuthorizationManager>  
                 <optionalConfigurationElement>  
             </claimsAuthorizationManager>  
-      
+
             <claimTypeRequired>  
-                <claimType />   
+                <claimType />
             </claimTypeRequired>  
-      
+
             <tokenReplayDetection />  
-      
+
             <!-- Security Token Handler Collection Configuration -->  
             <securityTokenHandlers>  
                 <add>  
@@ -41,9 +41,9 @@ The topics in this section provide information about the Windows Identity Founda
                          the following or a custom element -->  
                     <samlSecurityTokenHandlerRequirement>  
                         <nameClaimType>  
-                        <roleClaimType>   
+                        <roleClaimType>
                     </samlSecurityTokenHandlerRequirement>  
-      
+
                     <sessionSecurityTokenHandlerRequirement />  
                     <x509SecurityTokenHandlerRequirement />  
                     <userNameSecurityTokenHandlerRequirement />  
@@ -56,16 +56,16 @@ The topics in this section provide information about the Windows Identity Founda
                         <clear>  
                         <remove>  
                     </audienceUris>  
-      
+
                     <caches>  
                         <sessionSecurityTokenCache />  
                         <tokenReplayCache />  
                     </caches>  
-      
+
                     <certificateValidation>  
-                        <certificateValidator>   
+                        <certificateValidator>
                     </certificateValidation>  
-      
+
                     <issuerNameRegistry>  
                         <!-- Can take an optional configuration element which can be   
                              the <trustedIssuers> element to configure a configuration-based  
@@ -76,7 +76,7 @@ The topics in this section provide information about the Windows Identity Founda
                             <remove>  
                         </trustedIssuers>  
                     </issuerNameRegistry>  
-      
+
                     <issuerTokenResolver />  
                     <serviceTokenResolver />  
                     <tokenReplayDetection />  
@@ -84,7 +84,7 @@ The topics in this section provide information about the Windows Identity Founda
             </securityTokenHandlers>  
         </identityConfiguration>  
     </system.identityModel>  
-      
+
     <system.identityModel.services>  
         <!-- Federation Authentication Configuration -->  
         <federatedAuthentication>  
@@ -92,11 +92,11 @@ The topics in this section provide information about the Windows Identity Founda
                 <chunkedCookieHandler />  
                 <customCookieHandler />  
             </cookieHandler>  
-      
+
             <serviceCertificate>  
                 <certificateReference>  
             </serviceCertificate>  
-      
+
             <wsFederation />  
         </federatedAuthentication>  
     </system.identityModel.services>  

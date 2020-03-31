@@ -14,11 +14,13 @@ ms.date: 02/27/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet test [<PROJECT>] [-a|--test-adapter-path] [--blame]
-    [-c|--configuration] [--collect] [-d|--diag] [-f|--framework]
-    [--filter] [-l|--logger] [--no-build] [--no-restore]
-    [-o|--output] [-r|--results-directory] [-s|--settings]
-    [-t|--list-tests] [-v|--verbosity] [-- <RunSettings arguments>]
+dotnet test [<PROJECT> | <SOLUTION>]
+    [-a|--test-adapter-path] [--blame] [-c|--configuration]
+    [--collect] [-d|--diag] [-f|--framework] [--filter]
+    [--interactive] [-l|--logger] [--no-build] [--nologo]
+    [--no-restore] [-o|--output] [-r|--results-directory]
+    [--runtime] [-s|--settings] [-t|--list-tests]
+    [-v|--verbosity] [[--] <RunSettings arguments>]
 
 dotnet test [-h|--help]
 ```
@@ -33,9 +35,9 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
 ## Arguments
 
-- **`PROJECT`**
+- **`PROJECT | SOLUTION`**
 
-  Path to the test project. If not specified, it defaults to current directory.
+  Path to the test project or solution. If not specified, it defaults to current directory.
 
 ## Options
 
@@ -43,11 +45,11 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
   Use the custom test adapters from the specified path in the test run.
 
-- **`-blame`**
+- **`--blame`**
 
   Runs the tests in blame mode. This option is helpful in isolating problematic tests that cause the test host to crash. It creates an output file in the current directory as *Sequence.xml* that captures the order of tests execution before the crash.
 
-- **`c|--configuration {Debug|Release}`**
+- **`c|--configuration <CONFIGURATION>`**
 
   Defines the build configuration. The default value is `Debug`, but your project's configuration could override this default SDK setting.
 
@@ -71,6 +73,10 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
   Prints out a short help for the command.
 
+- **`--interactive`**
+
+  Allows the command to stop and wait for user input or action. For example, to complete authentication. Available since .NET Core 3.0 SDK.
+
 - **`l|--logger <LoggerUri/FriendlyName>`**
 
   Specifies a logger for test results.
@@ -78,6 +84,10 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 - **`--no-build`**
 
   Doesn't build the test project before running it. It also implicitly sets the - `--no-restore` flag.
+
+- **`--nologo`**
+
+  Run tests without displaying the Microsoft TestPlatform banner. Available since .NET Core 3.0 SDK.
 
 - **`--no-restore`**
 
@@ -90,6 +100,10 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 - **`-r|--results-directory <PATH>`**
 
   The directory where the test results are going to be placed. If the specified directory doesn't exist, it's created.
+
+- **`--runtime <RUNTIME_IDENTIFIER>`**
+
+  The target runtime to test for.
 
 - **`-s|--settings <SETTINGS_FILE>`**
 

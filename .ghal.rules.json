@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "configRevision": 1,
+  "configRevision": 2,
 
   "issue": {
     "opened": {
@@ -47,6 +47,9 @@
           },
           "(?i)dotnet-architecture$": {
             "labels-add": ":books: Area - .NET Architecture Guide"
+          },
+          "(?i)azure-dotnet$": {
+            "labels-add": ":books: Area - Azure .NET SDK"
           }
         },
         "technology": {
@@ -74,7 +77,7 @@
             "labels-add": ":book: guide - ASP.NET Core web apps"
           },
           "(?i).*master\/docs\/architecture\/modernize-desktop.*": {
-            "labels-add": ":book: guide - Modernizing Desktop app"
+            "labels-add": ":book: guide - Modernizing Desktop apps"
           },
           "(?i).*master\/docs\/architecture\/modernize-with-azure-containers.*": {
             "labels-add": ":book: guide - Modernizing w/ Windows containers"
@@ -133,7 +136,7 @@
           "(?i).*docs\/whats-new\/.*": {
             "labels-add": ":star2: What's New"
           }
-    }
+        }
       },
       "processor-meta-custom": {
         "issuetype": {
@@ -180,6 +183,9 @@
               },
               "(?i).*docs\/architecture\/modern-web-apps-azure.*": {
                 "labels-add": ":book: guide - ASP.NET Core web apps"
+              },
+              "(?i).*master\/docs\/architecture\/modernize-desktop.*": {
+                "labels-add": ":book: guide - Modernizing Desktop apps"
               },
               "(?i).*docs\/architecture\/modernize-with-azure-containers.*": {
                 "labels-add": ":book: guide - Modernizing w/ Windows containers"
@@ -264,6 +270,9 @@
               },
               "(?i).*docs\/whats-new\/.*": {
                 "labels-add": ":star2: What's New"
+              },
+              "(?i).*docs\/azure\/.*": {
+                "labels-add": ":books: Area - Azure .NET SDK"
               }
             }
           }

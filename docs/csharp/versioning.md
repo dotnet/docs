@@ -30,7 +30,7 @@ There are also ways to specify other scenarios like pre-release versions etc. wh
 ### Backwards Compatibility
 
 As you release new versions of your library, backwards compatibility with previous versions will most likely be one of your major concerns.
-A new version of your library is source compatible with a previous version if code that depends on the previous version can, when recompiled, work with the new version. 
+A new version of your library is source compatible with a previous version if code that depends on the previous version can, when recompiled, work with the new version.
 A new version of your library is binary compatible if an application that depended on the old version can, without recompilation, work with the new version.
 
 Here are some things to consider when trying to maintain backwards compatibility with older versions of your library:

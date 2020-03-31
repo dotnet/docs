@@ -27,7 +27,7 @@ This sample extends the [Pooling](../../../../docs/framework/wcf/samples/pooling
 ```csharp
 private object GetObjectFromThePool()  
 {  
-    bool didNotTimeout =   
+    bool didNotTimeout =
        availableCount.WaitOne(creationTimeout, true);  
     if(didNotTimeout)  
     {  
@@ -50,7 +50,7 @@ private object GetObjectFromThePool()
                         WritePoolMessage(  
                              ResourceHelper.GetString("MsgNewObject"));  
                        #endif  
-                   }                          
+                   }
             }  
            idleTimer.Stop();  
       }  
@@ -73,7 +73,7 @@ public void ReleaseInstance(InstanceContext instanceContext, object instance)
 {  
     lock (poolLock)  
     {  
-        // Check whether the object can be pooled.   
+        // Check whether the object can be pooled.
         // Call the Deactivate method if possible.  
         if (instance is IObjectControl)  
         {  
@@ -87,7 +87,7 @@ public void ReleaseInstance(InstanceContext instanceContext, object instance)
                 #if(DEBUG)  
                 WritePoolMessage(  
                     ResourceHelper.GetString("MsgObjectPooled"));  
-                #endif                          
+                #endif
             }  
             else  
             {  
@@ -104,14 +104,14 @@ public void ReleaseInstance(InstanceContext instanceContext, object instance)
             #if(DEBUG)  
             WritePoolMessage(  
                 ResourceHelper.GetString("MsgObjectPooled"));  
-            #endif   
+            #endif
         }  
   
         activeObjectsCount--;  
   
         if (activeObjectsCount == 0)  
         {  
-            idleTimer.Start();                       
+            idleTimer.Start();
         }  
     }  
   
@@ -124,7 +124,7 @@ public void ReleaseInstance(InstanceContext instanceContext, object instance)
 ```csharp  
 if (activeObjectsCount == 0)  
 {  
-    idleTimer.Start();   
+    idleTimer.Start();
 }  
 ```  
   
@@ -165,7 +165,7 @@ public void ApplyDispatchBehavior(ServiceDescription description, ServiceHostBas
         instanceProvider = new ObjectPoolInstanceProvider(description.ServiceType,  
         maxPoolSize, minPoolSize, creationTimeout);  
   
-        // Assign our instance provider to Dispatch behavior in each   
+        // Assign our instance provider to Dispatch behavior in each
         // endpoint.  
         foreach (ChannelDispatcherBase cdb in serviceHostBase.ChannelDispatchers)  
         {  
@@ -179,7 +179,7 @@ public void ApplyDispatchBehavior(ServiceDescription description, ServiceHostBas
              }  
          }  
      }  
-}   
+}
 ```  
   
  In addition to an <xref:System.ServiceModel.Description.IServiceBehavior> implementation the `ObjectPoolingAttribute` class has several members to customize the object pool using the attribute arguments. These members include `MaxSize`, `MinSize`, `Enabled` and `CreationTimeout`, to match the object pooling feature set provided by .NET Enterprise Services.  
@@ -187,7 +187,7 @@ public void ApplyDispatchBehavior(ServiceDescription description, ServiceHostBas
  The object pooling behavior can now be added to a WCF service by annotating the service implementation with the newly created custom `ObjectPooling` attribute.  
   
 ```csharp  
-[ObjectPooling(MaxSize=1024, MinSize=10, CreationTimeout=30000]      
+[ObjectPooling(MaxSize=1024, MinSize=10, CreationTimeout=30000]
 public class PoolService : IPoolService  
 {  
   // …  
@@ -229,7 +229,7 @@ if (instance is IObjectControl)
 if (pool.Count > minPoolSize)  
 {  
   // Clean the surplus objects.  
-}                      
+}
 else if (pool.Count < minPoolSize)  
 {  
   // Reinitialize the missing objects.  
@@ -252,9 +252,9 @@ else if (pool.Count < minPoolSize)
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Extensibility\Instancing\Initialization`  

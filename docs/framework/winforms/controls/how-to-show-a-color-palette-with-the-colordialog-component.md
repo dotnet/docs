@@ -49,7 +49,7 @@ The [ColorDialog](colordialog-component-windows-forms.md) component displays a p
   
     ```cpp  
     private:  
-       void button1_Click(System::Object ^ sender,   
+       void button1_Click(System::Object ^ sender,
           System::EventArgs ^ e)  
        {  
           if(colorDialog1->ShowDialog() == DialogResult::OK)  
@@ -66,7 +66,7 @@ The [ColorDialog](colordialog-component-windows-forms.md) component displays a p
     ```  
   
     ```cpp  
-    this->button1->Click +=   
+    this->button1->Click +=
        gcnew System::EventHandler(this, &Form1::button1_Click);  
     ```  
   

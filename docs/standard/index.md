@@ -8,7 +8,7 @@ ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
 ---
 # .NET guide
 
-The .NET guide provides information about .NET. Depending on your familiarity with .NET, you may wish to explore different sections of this guide and other guides such as [.NET Core](../core/index.md) or [.NET Framework](../framework/index.md).
+The .NET guide provides information about .NET. Depending on your familiarity with .NET, you may wish to explore different sections of this guide and other guides such as [.NET Core](../core/index.yml) or [.NET Framework](../framework/index.yml).
 
 ## New to .NET
 
@@ -40,7 +40,6 @@ For more information about the major concepts of .NET, see:
 * [.NET Standard](net-standard.md)
 * [Native interoperability](native-interop/index.md)
 * [Garbage collection](garbage-collection/index.md)
-* [Base types in .NET](base-types/index.md)
 * [Collections](collections/index.md)
 * [Dates, times, and time zones](datetime/index.md)
 * [Asynchronous programming](async.md)

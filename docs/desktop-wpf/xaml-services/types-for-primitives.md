@@ -26,7 +26,7 @@ XAML 2009 introduces XAML language-level support for several data types that are
 
 ```xaml
 <Application xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 xmlns:sys="clr-namespace:System;assembly=mscorlib">
   <Application.Resources>
     <sys:Int32 x:Key="intMeaning">42</sys:Int32>

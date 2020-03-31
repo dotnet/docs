@@ -25,7 +25,7 @@ You can declare a single-dimensional array of five integers as shown in the foll
  [!code-csharp[csProgGuideArrays#6](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideArrays/CS/Arrays.cs#6)]  
   
  A string array can be initialized in the same way. The following is a declaration of a string array where each array element is initialized by a name of a day:  
- 
+
  ```csharp
  string[] weekDays = new string[] { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
  ```

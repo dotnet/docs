@@ -21,7 +21,7 @@ One way to increase the capacity of Windows Communication Foundation (WCF) appli
   
  <system.serviceModel>  
   <services>  
-   <service   
+   <service
      name="Microsoft.ServiceModel.Samples.CalculatorService"  
      behaviorConfiguration="CalculatorServiceBehavior">  
      <host>  
@@ -33,7 +33,7 @@ One way to increase the capacity of Windows Communication Foundation (WCF) appli
          And the customBinding -->  
      <endpoint address=""  
            binding="customBinding"  
-           bindingConfiguration="HttpBinding"   
+           bindingConfiguration="HttpBinding"
            contract="Microsoft.ServiceModel.Samples.ICalculator" />  
    </service>  
   </services>  

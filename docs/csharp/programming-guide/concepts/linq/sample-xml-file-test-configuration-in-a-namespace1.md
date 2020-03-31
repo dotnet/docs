@@ -49,4 +49,3 @@ The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq]
   </Test>  
 </Tests>  
 ```  
- 

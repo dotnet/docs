@@ -57,7 +57,7 @@ However, methods can be overloaded when one method has a `ref`, `in`, or `out` p
 
 In addition, [extension methods](../../programming-guide/classes-and-structs/extension-methods.md) have the following restrictions:
 
-- The `out` keywoard cannot be used on the first argument of an extension method.
+- The `out` keyword cannot be used on the first argument of an extension method.
 - The `ref` keyword cannot be used on the first argument of an extension method when the argument is not a struct, or a generic type not constrained to be a struct.
 - The `in` keyword cannot be used unless the first argument is a struct. The `in` keyword cannot be used on any generic type, even when constrained to be a struct.
 

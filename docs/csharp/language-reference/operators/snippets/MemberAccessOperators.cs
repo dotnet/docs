@@ -96,6 +96,24 @@ namespace operators
             // </SnippetNullConditional>
         }
 
+        private static void NullConditionalWithNullCoalescing()
+        {
+            // <SnippetNullConditionalWithNullCoalescing>
+            int GetSumOfFirstTwoOrDefault(int[] numbers)
+            {
+                if ((numbers?.Length ?? 0) < 2)
+                {
+                    return 0;
+                }
+                return numbers[0] + numbers[1];
+            }
+
+            Console.WriteLine(GetSumOfFirstTwoOrDefault(null));  // output: 0
+            Console.WriteLine(GetSumOfFirstTwoOrDefault(new int[0]));  // output: 0
+            Console.WriteLine(GetSumOfFirstTwoOrDefault(new[] { 3, 4, 5 }));  // output: 7
+            // </SnippetNullConditionalWithNullCoalescing>
+        }
+
         private static void Invocation()
         {
             // <SnippetInvocation>

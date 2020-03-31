@@ -75,8 +75,4 @@ The <xref:System.DateTime> and <xref:System.DateTimeOffset> types use the Gregor
   
 - `DisplayDate`, an overloaded public method that is passed two parameters: either a <xref:System.DateTime> or <xref:System.DateTimeOffset> value to express in the calendar represented by the `CalendarUtility` object; and the culture whose formatting rules are to be used. Its behavior in returning the string representation of a date depends on whether the target calendar is supported by the culture whose formatting rules are to be used.  
   
- Regardless of the calendar used to create a <xref:System.DateTime> or <xref:System.DateTimeOffset> value in this example, that value is typically expressed as a Gregorian date. This is because the <xref:System.DateTime> and <xref:System.DateTimeOffset> types do not preserve any calendar information. Internally, they are represented as the number of ticks that have elapsed since midnight of January 1, 0001. The interpretation of that number depends on the calendar. For most cultures, the default calendar is the Gregorian calendar.  
-  
-## See also
-
-- [Performing Formatting Operations](../../../docs/standard/base-types/performing-formatting-operations.md)
+ Regardless of the calendar used to create a <xref:System.DateTime> or <xref:System.DateTimeOffset> value in this example, that value is typically expressed as a Gregorian date. This is because the <xref:System.DateTime> and <xref:System.DateTimeOffset> types do not preserve any calendar information. Internally, they are represented as the number of ticks that have elapsed since midnight of January 1, 0001. The interpretation of that number depends on the calendar. For most cultures, the default calendar is the Gregorian calendar.

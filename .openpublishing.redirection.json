@@ -3381,6 +3381,10 @@
       "redirect_url": "/dotnet/standard/index"
     },
     {
+      "source_path": "docs/standard/application-essentials.md",
+      "redirect_url": "/dotnet/standard/index"
+    },
+    {
       "source_path": "docs/standard/assembly-format.md",
       "redirect_url": "/dotnet/standard/assembly/file-format",
       "redirect_document_id": true
@@ -3486,6 +3490,14 @@
       "redirect_url": "https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/bb882561(v=vs.100)"
     },
     {
+      "source_path": "docs/standard/base-types/index.md",
+      "redirect_url": "/dotnet/standard/base-types/common-type-system"
+    },
+    {
+      "source_path": "docs/standard/base-types/manipulating-strings.md",
+      "redirect_url": "/dotnet/standard/base-types/best-practices-strings"
+    },
+    {
       "source_path": "docs/standard/base-types/miscellaneous.md",
       "redirect_url": "/dotnet/standard/base-types/miscellaneous-constructs-in-regular-expressions"
     },
@@ -3502,6 +3514,10 @@
       "redirect_url": "/dotnet/standard/base-types/how-to-pad-a-number-with-leading-zeros"
     },
     {
+      "source_path": "docs/standard/base-types/performing-formatting-operations.md",
+      "redirect_url": "/dotnet/standard/base-types/how-to-pad-a-number-with-leading-zeros"
+    },
+    {
       "source_path": "docs/standard/base-types/quantifiers.md",
       "redirect_url": "/dotnet/standard/base-types/quantifiers-in-regular-expressions"
     },
@@ -3515,7 +3531,11 @@
     },
     {
       "source_path": "docs/standard/base-types/regex-examples.md",
-      "redirect_url": "/dotnet/standard/base-types/regular-expression-examples"
+      "redirect_url": "/dotnet/standard/base-types/regular-expression-example-scanning-for-hrefs"
+    },
+    {
+      "source_path": "docs/standard/base-types/regular-expression-examples.md",
+      "redirect_url": "/dotnet/standard/base-types/regular-expression-example-scanning-for-hrefs"
     },
     {
       "source_path": "docs/standard/base-types/roundtrip.md",

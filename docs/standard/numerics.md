@@ -89,5 +89,4 @@ The SIMD-enabled types are implemented in such a way that they can be used with 
 
 ## See also
 
-- [Application Essentials](application-essentials.md)
 - [Standard Numeric Format Strings](base-types/standard-numeric-format-strings.md)

@@ -75,7 +75,7 @@ void PrintUsage()
    Console::WriteLine( "\r\nUsage: Try a site which requires CloneBasic(custom made) authentication as below" );
    Console::WriteLine( "   Authorization_ProtectionRealm URLname username password" );
    Console::WriteLine( "\nExample:" );
-   Console::WriteLine( "\n   Authorization_ProtectionRealm http://www.microsoft.com/net/ george george123" );
+   Console::WriteLine( "\n   Authorization_ProtectionRealm http://dotnet.microsoft.com/ george george123" );
 }
 
 // The 'CloneBasic' authentication module class implements 'IAuthenticationModule*'.

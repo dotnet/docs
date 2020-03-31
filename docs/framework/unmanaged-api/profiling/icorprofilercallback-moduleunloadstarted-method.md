@@ -23,7 +23,7 @@ Notifies the profiler that a module is being unloaded.
   
 ```cpp  
 HRESULT ModuleUnloadStarted(  
-    [in] ModuleID moduleId);   
+    [in] ModuleID moduleId);
 ```  
   
 ## Parameters  

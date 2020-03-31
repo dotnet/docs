@@ -22,8 +22,8 @@ Removes a custom Web request module from the application.
 ## Syntax  
   
 ```xml  
-<remove   
-  prefix="URI prefix"   
+<remove
+  prefix="URI prefix"
 />  
 ```  
   

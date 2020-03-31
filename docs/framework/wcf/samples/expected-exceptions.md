@@ -19,7 +19,7 @@ This sample demonstrates how to catch expected exceptions when using a typed cli
   
  Code that calls a client communication method must catch the `TimeoutException` and `CommunicationException`. One way to handle such errors is to abort the client and report the communication failure.  
   
-```csharp   
+```csharp
 try  
 {  
     ...  
@@ -67,9 +67,9 @@ Got System.TimeoutException
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Client\ExpectedExceptions`  

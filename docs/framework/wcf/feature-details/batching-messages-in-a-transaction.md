@@ -61,7 +61,7 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(OrderProcessorService)))
 {
      ServiceEndpoint sep = ServiceHost.AddServiceEndpoint(typeof(IOrderProcessor), new NetMsmqBinding(), "net.msmq://localhost/private/ServiceModelSamplesTransacted");
      sep.Behaviors.Add(new TransactedBatchingBehavior(100));
-     
+
      // Open the ServiceHost to create listeners and start listening for messages.
     serviceHost.Open();
   

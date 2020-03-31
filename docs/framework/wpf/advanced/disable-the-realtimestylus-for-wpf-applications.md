@@ -15,11 +15,11 @@ Windows Presentation Foundation (WPF) has built in support for processing Window
 ```csharp  
 public static void DisableWPFTabletSupport()  
 {  
-    // Get a collection of the tablet devices for this window.    
+    // Get a collection of the tablet devices for this window.
     TabletDeviceCollection devices = System.Windows.Input.Tablet.TabletDevices;  
   
     if (devices.Count > 0)  
-    {     
+    {
         // Get the Type of InputManager.  
         Type inputManagerType = typeof(System.Windows.Input.InputManager);  
   
@@ -40,7 +40,7 @@ public static void DisableWPFTabletSupport()
                 stylusLogicType.InvokeMember("OnTabletRemoved",  
                         BindingFlags.InvokeMethod | BindingFlags.Instance | BindingFlags.NonPublic,  
                         null, stylusLogic, new object[] { (uint)0 });  
-            }                  
+            }
         }  
   
     }  

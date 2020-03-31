@@ -22,14 +22,14 @@ Creates a definition for a method or global function with the specified signatur
 ## Syntax  
   
 ```cpp  
-HRESULT DefineMethod (      
-    [in]  mdTypeDef         td,   
-    [in]  LPCWSTR           szName,   
-    [in]  DWORD             dwMethodFlags,   
-    [in]  PCCOR_SIGNATURE   pvSigBlob,   
-    [in]  ULONG             cbSigBlob,   
-    [in]  ULONG             ulCodeRVA,   
-    [in]  DWORD             dwImplFlags,   
+HRESULT DefineMethod (
+    [in]  mdTypeDef         td,
+    [in]  LPCWSTR           szName,
+    [in]  DWORD             dwMethodFlags,
+    [in]  PCCOR_SIGNATURE   pvSigBlob,
+    [in]  ULONG             cbSigBlob,
+    [in]  ULONG             ulCodeRVA,
+    [in]  DWORD             dwImplFlags,
     [out] mdMethodDef      *pmd  
 );  
 ```  

@@ -50,10 +50,10 @@ The first argument to `If` can be omitted. This enables the operator to be calle
 
 |Term|Definition|
 |---|---|
-|`argument2`|Required. `Object`. Must be a reference or nullable type. Evaluated and returned when it evaluates to anything other than `Nothing`.|
+|`argument2`|Required. `Object`. Must be a reference or nullable value type. Evaluated and returned when it evaluates to anything other than `Nothing`.|
 |`argument3`|Required. `Object`. Evaluated and returned if `argument2` evaluates to `Nothing`.|
 
-When the `Boolean` argument is omitted, the first argument must be a reference or nullable type. If the first argument evaluates to `Nothing`, the value of the second argument is returned. In all other cases, the value of the first argument is returned. The following example illustrates how this evaluation works:
+When the `Boolean` argument is omitted, the first argument must be a reference or nullable value type. If the first argument evaluates to `Nothing`, the value of the second argument is returned. In all other cases, the value of the first argument is returned. The following example illustrates how this evaluation works:
 
 [!code-vb[VbVbalrOperators#102](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbalrOperators/VB/Class4.vb#102)]
 

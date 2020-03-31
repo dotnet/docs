@@ -113,7 +113,7 @@ caspol [options]
   
  Caspol.exe must be granted the equivalent of the **Everything** permission set to function. The tool has a protective mechanism that prevents policy from being modified in ways that would prevent Caspol.exe from being granted the permissions it needs to run. If you try to make such changes, Caspol.exe notifies you that the requested policy change will break the tool, and the policy change is rejected. You can turn this protective mechanism off for a given command by using the **–force** option.  
   
-<a name="cpgrfcodeaccesssecuritypolicyutilitycaspolexeanchor1"></a>   
+<a name="cpgrfcodeaccesssecuritypolicyutilitycaspolexeanchor1"></a>
 ## Manually Editing the Security Configuration Files  
  Three security configuration files correspond to the three policy levels supported by Caspol.exe: one for the machine policy, one for a given user's policy, and one for the enterprise policy. These files are created on disk only when machine, user, or enterprise policy is changed using Caspol.exe. You can use the **–reset** option in Caspol.exe to save the default security policy to disk, if needed.  
   

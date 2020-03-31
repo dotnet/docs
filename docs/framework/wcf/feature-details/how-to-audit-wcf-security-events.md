@@ -45,8 +45,8 @@ Windows Communication Foundation (WCF) allows you to log security events to the 
     <behaviors>  
        <behavior name="myAuditBehavior">  
           <serviceSecurityAudit auditLogLocation="Application"  
-                suppressAuditFailure="false"   
-                serviceAuthorizationAuditLevel="None"   
+                suppressAuditFailure="false"
+                serviceAuthorizationAuditLevel="None"
                 messageAuthenticationAuditLevel="SuccessOrFailure" />  
           </behavior>  
     </behaviors>  
@@ -56,11 +56,11 @@ Windows Communication Foundation (WCF) allows you to log security events to the 
   
     ```xml  
     <services>  
-        <service type="WCS.Samples.Service.Echo"   
+        <service type="WCS.Samples.Service.Echo"
         behaviorConfiguration=" myAuditBehavior">  
            <endpoint address=""  
                     binding="wsHttpBinding"  
-                    bindingConfiguration="CertificateDefault"   
+                    bindingConfiguration="CertificateDefault"
                     contract="WCS.Samples.Service.IEcho" />  
         </service>  
     </services>  

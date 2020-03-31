@@ -107,7 +107,7 @@ For information about supported explicit conversions, see the [Explicit conversi
 
 ### Other usages of ()
 
-You also use parentheses to [call a method or invoke a delegate](member-access-operators.md#invocation-operator-).
+You also use parentheses to [call a method or invoke a delegate](member-access-operators.md#invocation-expression-).
 
 Other use of parentheses is to adjust the order in which to evaluate operations in an expression. For more information, see [C# operators](index.md).
 

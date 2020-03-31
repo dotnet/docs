@@ -21,7 +21,7 @@ The .NET Framework <xref:System.Net> namespace classes provide built-in support 
 
 [Transport Layer Security (TLS) best practices with .NET Framework](tls.md)  
 Describes TLS best practices with the .NET Framwork.
- 
+
 [Using Secure Sockets Layer](using-secure-sockets-layer.md)  
 Describes how to use Secure Sockets Layer (SSL) connections.  
   

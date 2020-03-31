@@ -19,7 +19,7 @@ Raises the <xref:System.Windows.Xps.XpsDocumentWriter.WritingCompleted> event.
 ## Syntax
 
 ```csharp
-public void raise__WritingCompleted (object value0, 
+public void raise__WritingCompleted (object value0,
   System.Windows.Documents.Serialization.WritingCompletedEventArgs value1);
 ```
 

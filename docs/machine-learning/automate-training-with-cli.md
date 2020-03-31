@@ -11,7 +11,7 @@ The ML.NET CLI automates model generation for .NET developers.
 
 To use the ML.NET API by itself, (without the ML.NET AutoML CLI) you need to choose a trainer (implementation of a machine learning algorithm for a particular task), and the set of data transformations (feature engineering) to apply to your data. The optimal pipeline will vary for each dataset and selecting the optimal algorithm from all the choices adds to the complexity. Even further, each algorithm has a set of hyperparameters to be tuned. Hence, you can spend weeks and sometimes months on machine learning model optimization trying to find the best combinations of feature engineering, learning algorithms, and hyperparameters.
 
-The ML.NET CLI simplifies this process using automated machine learning (AutoML). 
+The ML.NET CLI simplifies this process using automated machine learning (AutoML).
 
 > [!NOTE]
 > This topic refers to ML.NET **CLI** and ML.NET **AutoML**, which are currently in Preview, and material may be subject to change.

@@ -21,7 +21,7 @@ In a schema, you can specify a key constraint on an element or attribute using t
   
 ```xml  
 <xs:schema id="cod"  
-            xmlns:xs="http://www.w3.org/2001/XMLSchema"   
+            xmlns:xs="http://www.w3.org/2001/XMLSchema"
             xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
   <xs:element name="Customers">  
     <xs:complexType>  
@@ -45,7 +45,7 @@ In a schema, you can specify a key constraint on an element or attribute using t
      <xs:field xpath="CustomerID" />  
     </xs:key>  
  </xs:element>  
-</xs:schema>   
+</xs:schema>
 ```  
   
  The **key** element specifies that the values of the **CustomerID** child element of the **Customers** element must have unique values and cannot have null values. In translating the XML Schema definition language (XSD) schema, the mapping process creates the following table:  
@@ -64,7 +64,7 @@ TableName: customers
       Unique: True  
   ConstraintName: KeyCustID  
       Table: customers  
-      Columns: CustomerID   
+      Columns: CustomerID
       IsPrimaryKey: True  
 ```  
   

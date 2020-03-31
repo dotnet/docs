@@ -14,12 +14,12 @@ ms.assetid: 46d329b1-5b84-4537-9e17-73ca97313e4e
 ## Syntax  
   
 ```xml  
-<inheritdoc/> 
+<inheritdoc/>
 ```  
 
 ## InheritDoc
 
-Inherit XML comments from base classes, interfaces, and similar methods. This eliminates unwanted copying and pasting of duplicate XML comments and automatically keeps XML comments synchronized. 
+Inherit XML comments from base classes, interfaces, and similar methods. This eliminates unwanted copying and pasting of duplicate XML comments and automatically keeps XML comments synchronized.
   
 ## Remarks  
 Add your XML comments in base classes or interfaces and let InheritDoc copy the comments to implementing classes.

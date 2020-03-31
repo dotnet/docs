@@ -14,7 +14,7 @@ ms.date: 02/24/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet publish [<PROJECT>|<SOLUTION>] [-c|--configuration] 
+dotnet publish [<PROJECT>|<SOLUTION>] [-c|--configuration]
     [-f|--framework] [--force] [--interactive] [--manifest]
     [--no-build] [--no-dependencies] [--no-restore] [--nologo]
     [-o|--output] [-r|--runtime] [--self-contained]
@@ -88,9 +88,21 @@ The `dotnet publish` command's output is ready for deployment to a hosting syste
 
 - **`-o|--output <OUTPUT_DIRECTORY>`**
 
-  Specifies the path for the output directory. If not specified, it defaults to *./bin/[configuration]/[framework]/publish/* for a runtime-dependent executable and cross-platform binaries. It defaults to *./bin/[configuration]/[framework]/[runtime]/publish/* for a self-contained executable.
+  Specifies the path for the output directory.
+  
+  If not specified, it defaults to *[project_file_folder]./bin/[configuration]/[framework]/publish/* for a runtime-dependent executable and cross-platform binaries. It defaults to *[project_file_folder]/bin/[configuration]/[framework]/[runtime]/publish/* for a self-contained executable.
 
-  If the path is relative, the output directory generated is relative to the project file location, not to the current working directory.
+  - .NET Core 3.x SDK and later
+  
+    If a relative path is specified when publishing a project, the output directory generated is relative to the current working directory, not to the project file location.
+
+    If a relative path is specified when publishing a solution, all output for all projects go into the specified folder relative to the current working directory. To make publish output go to separate folders for each project, specify a relative path by using the msbuild `PublishDir` property instead of the `--output` option. For example, `dotnet publish -p:PublishDir=.\publish` sends publish output for each project to a `publish` folder under the folder that contains the project file.
+
+  - .NET Core 2.x SDK
+  
+    If a relative path is specified when publishing a project, the output directory generated is relative to the project file location, not to the current working directory.
+
+    If a relative path is specified when publishing a solution, each project's output goes into a separate folder relative to the project file location. If an absolute path is specified when publishing a solution, all publish output for all projects goes into the specified folder.
 
 - **`--self-contained [true|false]`**
 
@@ -106,7 +118,7 @@ The `dotnet publish` command's output is ready for deployment to a hosting syste
 
 - **`-v|--verbosity <LEVEL>`**
 
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Default value is `minimal`.
 
 - **`--version-suffix <VERSION_SUFFIX>`**
 
@@ -163,5 +175,4 @@ The `dotnet publish` command's output is ready for deployment to a hosting syste
 - [Target frameworks](../../standard/frameworks.md)
 - [Runtime IDentifier (RID) catalog](../rid-catalog.md)
 - [Working with macOS Catalina Notarization](../install/macos-notarization-issues.md)
- For more information, see he following resources:
 - [Directory structure of a published application](/aspnet/core/hosting/directory-structure)

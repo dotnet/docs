@@ -21,13 +21,13 @@ With Microsoft .NET Framework, application developers using Windows Presentation
   
  This topic contains the following sections.  
   
-<a name="introduction_to_XPS"></a>   
+<a name="introduction_to_XPS"></a>
 ## About XPS  
  XPS is an electronic document format, a spool file format and a page description language. It is an open document format that uses XML, Open Packaging Conventions (OPC), and other industry standards to create cross-platform documents. XPS simplifies the process by which digital documents are created, shared, printed, viewed, and archived. For additional information on XPS, see [XPS Documents](/windows/desktop/printdocs/documents).  
   
  Several techniques for printing XPS-based content using WPF are demonstrated in [Programmatically Print XPS Files](how-to-programmatically-print-xps-files.md). You may find it useful to reference these samples during review of content contained in this topic. (Unmanaged code developers should see documentation for the [MXDC_ESCAPE function](/windows/desktop/printdocs/mxdc-escape). Windows Forms developers must use the API in the <xref:System.Drawing.Printing> namespace which does not support the full XPS print path, but does support a hybrid GDI-to-XPS print path. See **Print Path Architecture** below.)  
   
-<a name="XPS_print_path_intro"></a>   
+<a name="XPS_print_path_intro"></a>
 ## XPS Print Path  
  The XML Paper Specification (XPS) print path is a new Windows feature that redefines how printing is handled in Windows applications. Because XPS can replace a document presentation language (such as RTF), a print spooler format (such as WMF), and a page description language (such as PCL or Postscript); the new print path maintains the XPS format from application publication to the final processing in the print driver or device.  
   
@@ -51,7 +51,7 @@ With Microsoft .NET Framework, application developers using Windows Presentation
   
 - Print Schema. The public schema is updated regularly and enables rapid extension of device capabilities. (See **PrintTicket and PrintCapabilities** below.)  
   
-- Extensible Filter Pipeline. The XPS printer driver (XPSDrv) filter pipeline was designed to enable both direct and scalable printing of XPS documents. For more information, see [XPSDrv Printer Drivers](/windows-hardware/drivers/print/xpsdrv-printer-drivers). 
+- Extensible Filter Pipeline. The XPS printer driver (XPSDrv) filter pipeline was designed to enable both direct and scalable printing of XPS documents. For more information, see [XPSDrv Printer Drivers](/windows-hardware/drivers/print/xpsdrv-printer-drivers).
   
 ### Print Path Architecture  
  While both Win32 and .NET Framework applications support XPS, Win32 and Windows Forms applications use a GDI to XPS conversion in order to create XPS formatted content for the XPS printer driver (XPSDrv). These applications are not required to use the XPS print path, and can continue to use Enhanced Metafile (EMF) based printing. However, most XPS features and enhancements are only available to applications that target the XPS print path.  
@@ -98,7 +98,7 @@ With Microsoft .NET Framework, application developers using Windows Presentation
   
  The <xref:System.Printing.PrintQueue.AddJob%2A> methods also provide ways to print. See [Programmatically Print XPS Files](how-to-programmatically-print-xps-files.md). for details.  
   
-<a name="GDI_Print_Path_intro"></a>   
+<a name="GDI_Print_Path_intro"></a>
 ## GDI Print Path  
  While WPF applications natively support the XPS print path, Win32 and Windows Forms applications can also take advantage of some XPS features. The XPS printer driver (XPSDrv) can convert GDI based output to XPS format. For advanced scenarios, custom conversion of content is supported using the [Microsoft XPS Document Converter (MXDC)](/windows/desktop/printdocs/microsoft-xps-document-converter--mxdc-). Similarly, WPF applications can also output to the GDI print path by calling one of the <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> or <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> methods of the <xref:System.Windows.Xps.XpsDocumentWriter> class and designating a non-XpsDrv printer as the target print queue.  
 
@@ -106,7 +106,7 @@ For applications that do not require XPS functionality or support, the current G
   
 - For additional reference material on the GDI print path and the various XPS conversion options, see [Microsoft XPS Document Converter (MXDC)](/windows/desktop/printdocs/microsoft-xps-document-converter--mxdc-) and [XPSDrv Printer Drivers](/windows-hardware/drivers/print/xpsdrv-printer-drivers).  
   
-<a name="XPS_Driver_Model_intro"></a>   
+<a name="XPS_Driver_Model_intro"></a>
 ## XPSDrv Driver Model  
  The XPS print path improves spooler efficiency by using XPS as the native print spool format when printing to an XPS -enabled printer or driver. The simplified spooling process eliminates the need to generate an intermediate spool file, such as an EMF data file, before the document is spooled. Through smaller spool file sizes, the XPS print path can reduce network traffic and improve print performance.  
   

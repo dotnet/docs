@@ -30,8 +30,8 @@ This topic shows how to use the EDM Generator (EdmGen.exe) tool to generate the 
 2. At the command prompt, execute the following command without line breaks:  
   
     ```console  
-    "%windir%\Microsoft.NET\Framework\v4.0.30319\edmgen.exe" /mode:fullgeneration   
-    /c:"Data Source=%datasourceserver%; Initial Catalog=School; Integrated Security=SSPI"   
+    "%windir%\Microsoft.NET\Framework\v4.0.30319\edmgen.exe" /mode:fullgeneration
+    /c:"Data Source=%datasourceserver%; Initial Catalog=School; Integrated Security=SSPI"
     /project:School /entitycontainer:SchoolEntities /namespace:SchoolModel /language:VB  
     ```  
   
@@ -42,8 +42,8 @@ This topic shows how to use the EDM Generator (EdmGen.exe) tool to generate the 
 2. At the command prompt, execute the following command without line breaks:  
   
     ```console  
-    "%windir%\Microsoft.NET\Framework\v4.0.30319\edmgen.exe" /mode:fullgeneration   
-    /c:"Data Source=%datasourceserver%; Initial Catalog=School; Integrated Security=SSPI"   
+    "%windir%\Microsoft.NET\Framework\v4.0.30319\edmgen.exe" /mode:fullgeneration
+    /c:"Data Source=%datasourceserver%; Initial Catalog=School; Integrated Security=SSPI"
     /project:School /entitycontainer:SchoolEntities /namespace:SchoolModel /language:CSharp  
     ```  
   

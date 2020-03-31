@@ -18,7 +18,7 @@ private fixed char name[30];
 
 In safe code, a C# struct that contains an array does not contain the array elements. Instead, the struct contains a reference to the elements. You can embed an array of fixed size in a [struct](../../language-reference/builtin-types/struct.md) when it is used in an [unsafe](../../language-reference/keywords/unsafe.md) code block.
 
-The following `struct` is 8 bytes in size. The `pathName` array is a reference:
+Size of the following `struct` doesn't depend on the number of elements in the array, since `pathName` is a reference:
 
 [!code-csharp[Struct with embedded array](../../../../samples/snippets/csharp/keywords/FixedKeywordExamples.cs#6)]
 

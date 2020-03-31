@@ -29,13 +29,13 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
   
 - [Localization/Globalization Support](#Panels_global_localization)  
   
-<a name="Panels_view_from_10000_feet"></a>   
+<a name="Panels_view_from_10000_feet"></a>
 ## The Panel Class  
  <xref:System.Windows.Controls.Panel> is the base class for all elements that provide layout support in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]. Derived <xref:System.Windows.Controls.Panel> elements are used to position and arrange elements in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)] and code.  
   
  The [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] includes a comprehensive suite of derived panel implementations that enable many complex layouts. These derived classes expose properties and methods that enable most standard [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] scenarios. Developers who are unable to find a child arrangement behavior that meets their needs can create new layouts by overriding the <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> and <xref:System.Windows.FrameworkElement.MeasureOverride%2A> methods. For more information on custom layout behaviors, see [Custom Panel Elements](#Panels_custom_panel_elements).  
   
-<a name="Panels_declared_members"></a>   
+<a name="Panels_declared_members"></a>
 ## Panel Common Members  
  All <xref:System.Windows.Controls.Panel> elements support the base sizing and positioning properties defined by <xref:System.Windows.FrameworkElement>, including <xref:System.Windows.FrameworkElement.Height%2A>, <xref:System.Windows.FrameworkElement.Width%2A>, <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A>, <xref:System.Windows.FrameworkElement.VerticalAlignment%2A>, <xref:System.Windows.FrameworkElement.Margin%2A>, and <xref:System.Windows.FrameworkElement.LayoutTransform%2A>. For additional information on positioning properties defined by <xref:System.Windows.FrameworkElement>, see [Alignment, Margins, and Padding Overview](../advanced/alignment-margins-and-padding-overview.md).  
   
@@ -50,7 +50,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
   
  One purpose of an attached property is to allow child elements to store unique values of a property that is actually defined by a parent element. An application of this functionality is having child elements inform the parent how they wish to be presented in the [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)], which is extremely useful for application layout. For more information, see [Attached Properties Overview](../advanced/attached-properties-overview.md).  
   
-<a name="Panels_derived_elements"></a>   
+<a name="Panels_derived_elements"></a>
 ## Derived Panel Elements  
  Many objects derive from <xref:System.Windows.Controls.Panel>, but not all of them are intended for use as root layout providers. There are six defined panel classes (<xref:System.Windows.Controls.Canvas>, <xref:System.Windows.Controls.DockPanel>, <xref:System.Windows.Controls.Grid>, <xref:System.Windows.Controls.StackPanel>, <xref:System.Windows.Controls.VirtualizingStackPanel>, and <xref:System.Windows.Controls.WrapPanel>) that are designed specifically for creating application [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)].  
   
@@ -69,7 +69,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
 |<xref:System.Windows.Controls.VirtualizingStackPanel>|Yes|Arranges and virtualizes content on a single line oriented horizontally or vertically.|  
 |<xref:System.Windows.Controls.WrapPanel>|Yes|<xref:System.Windows.Controls.WrapPanel> positions child elements in sequential position from left to right, breaking content to the next line at the edge of the containing box. Subsequent ordering happens sequentially from top to bottom or right to left, depending on the value of the <xref:System.Windows.Controls.WrapPanel.Orientation%2A> property.|  
   
-<a name="Panels_main_UI_elements"></a>   
+<a name="Panels_main_UI_elements"></a>
 ## User Interface Panels  
  There are six panel classes available in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] that are optimized to support [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] scenarios: <xref:System.Windows.Controls.Canvas>, <xref:System.Windows.Controls.DockPanel>, <xref:System.Windows.Controls.Grid>, <xref:System.Windows.Controls.StackPanel>, <xref:System.Windows.Controls.VirtualizingStackPanel>, and <xref:System.Windows.Controls.WrapPanel>. These panel elements are easy to use, versatile, and extensible enough for most applications.  
   
@@ -86,7 +86,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
   
  More detailed descriptions and usage examples of each of these elements can be found below.  
   
-<a name="Panels_overview_Canvas_subsection"></a>   
+<a name="Panels_overview_Canvas_subsection"></a>
 ### Canvas  
  The <xref:System.Windows.Controls.Canvas> element enables positioning of content according to absolute *x-* and *y-* coordinates. Elements can be drawn in a unique location; or, if elements occupy the same coordinates, the order in which they appear in markup determines the order in which the elements are drawn.  
   
@@ -108,7 +108,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
   
  ![A typical Canvas Element.](./media/panel-intro-canvas.PNG "panel_intro_canvas")  
   
-<a name="Panels_overview_DockPanel_subsection"></a>   
+<a name="Panels_overview_DockPanel_subsection"></a>
 ### DockPanel  
  The <xref:System.Windows.Controls.DockPanel> element uses the <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> attached property as set in child content elements to position content along the edges of a container. When <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> is set to <xref:System.Windows.Controls.Dock.Top> or <xref:System.Windows.Controls.Dock.Bottom>, it positions child elements above or below each other. When <xref:System.Windows.Controls.DockPanel.Dock%2A?displayProperty=nameWithType> is set to <xref:System.Windows.Controls.Dock.Left> or <xref:System.Windows.Controls.Dock.Right>, it positions child elements to the left or right of each other. The <xref:System.Windows.Controls.DockPanel.LastChildFill%2A> property determines the position of the final element added as a child of a <xref:System.Windows.Controls.DockPanel>.  
   
@@ -132,7 +132,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
   
  ![A typical DockPanel scenario.](./media/panel-intro-dockpanel.PNG "panel_intro_dockpanel")  
   
-<a name="Panels_overview_Grid_subsection"></a>   
+<a name="Panels_overview_Grid_subsection"></a>
 ### Grid  
  The <xref:System.Windows.Controls.Grid> element merges the functionality of an absolute positioning and tabular data control. A <xref:System.Windows.Controls.Grid> enables you to easily position and style elements. <xref:System.Windows.Controls.Grid> allows you to define flexible row and column groupings, and even provides a mechanism to share sizing information between multiple <xref:System.Windows.Controls.Grid> elements.  
   
@@ -152,7 +152,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
   
  ![A typical Grid Element.](./media/avalon-run-dialog.PNG "avalon_run_dialog")  
   
-<a name="Panels_overview_StackPanel_subsection"></a>   
+<a name="Panels_overview_StackPanel_subsection"></a>
 ### StackPanel  
  A <xref:System.Windows.Controls.StackPanel> enables you to "stack" elements in an assigned direction. The default stack direction is vertical. The <xref:System.Windows.Controls.StackPanel.Orientation%2A> property can be used to control content flow.  
   
@@ -180,7 +180,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
   
  ![A typical StackPanel element.](./media/panel-intro-stackpanel.PNG "panel_intro_stackpanel")  
   
-<a name="Panels_overview_VirtualizingStackPanel_subsection"></a>   
+<a name="Panels_overview_VirtualizingStackPanel_subsection"></a>
 #### VirtualizingStackPanel  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] also provides a variation of the <xref:System.Windows.Controls.StackPanel> element that automatically "virtualizes" data-bound child content. In this context, the word virtualize refers to a technique by which a subset of elements are generated from a larger number of data items based upon which items are visible on-screen. It is intensive, both in terms of memory and processor, to generate a large number of UI elements when only a few may be on the screen at a given time. <xref:System.Windows.Controls.VirtualizingStackPanel> (through functionality provided by <xref:System.Windows.Controls.VirtualizingPanel>) calculates visible items and works with the <xref:System.Windows.Controls.ItemContainerGenerator> from an <xref:System.Windows.Controls.ItemsControl> (such as <xref:System.Windows.Controls.ListBox> or <xref:System.Windows.Controls.ListView>) to only create elements for visible items.  
   
@@ -190,7 +190,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
   
  [!code-xaml[VirtualizingStackPanel_Intro#1](~/samples/snippets/csharp/VS_Snippets_Wpf/VirtualizingStackPanel_Intro/CS/default.xaml#1)]  
   
-<a name="Panels_overview_WrapPanel"></a>   
+<a name="Panels_overview_WrapPanel"></a>
 ### WrapPanel  
  <xref:System.Windows.Controls.WrapPanel> is used to position child elements in sequential position from left to right, breaking content to the next line when it reaches the edge of its parent container. Content can be oriented horizontally or vertically. <xref:System.Windows.Controls.WrapPanel> is useful for simple flowing [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] scenarios. It can also be used to apply uniform sizing to all of its child elements.  
   
@@ -205,7 +205,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
   
  ![A typical WrapPanel Element.](./media/wrappanel-element.PNG "WrapPanel_Element")  
   
-<a name="Panels_nested_panel_elements"></a>   
+<a name="Panels_nested_panel_elements"></a>
 ## Nested Panel Elements  
  <xref:System.Windows.Controls.Panel> elements can be nested within each other in order to produce complex layouts. This can prove very useful in situations where one <xref:System.Windows.Controls.Panel> is ideal for a portion of a [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)], but may not meet the needs of a different portion of the [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)].  
   
@@ -220,7 +220,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
   
  ![A UI that takes advantage of nested panels.](./media/nested-panels.PNG "nested_panels")  
   
-<a name="Panels_custom_panel_elements"></a>   
+<a name="Panels_custom_panel_elements"></a>
 ## Custom Panel Elements  
  While [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides an array of flexible layout controls, custom layout behaviors can also be achieved by overriding the <xref:System.Windows.FrameworkElement.ArrangeOverride%2A> and <xref:System.Windows.FrameworkElement.MeasureOverride%2A> methods. Custom sizing and positioning can be accomplished by defining new positioning behaviors within these override methods.  
   
@@ -234,7 +234,7 @@ ms.assetid: f73644af-9941-4611-8754-6d4cef03fc44
   
  To view a more complex custom panel implementation, see [Create a Custom Content-Wrapping Panel Sample](https://go.microsoft.com/fwlink/?LinkID=159979).  
   
-<a name="Panels_global_localization"></a>   
+<a name="Panels_global_localization"></a>
 ## Localization/Globalization Support  
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] supports a number of features that assist in the creation of localizable [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)].  
   

@@ -7,7 +7,7 @@ ms.assetid: 019657bd-1f9b-4315-ad74-eaa4e7551ff6
 This sample demonstrates unwrapped messages. By default, the message body is formatted such that the parameters to a service operation are wrapped. The following sample shows an `Add` request message to the `ICalculator` service in wrapped mode.  
   
 ```xml  
-<s:Envelope   
+<s:Envelope
     xmlns:s="http://www.w3.org/2003/05/soap-envelope"  
     xmlns:a="http://schemas.xmlsoap.org/ws/2005/08/addressing">  
     <s:Header>  
@@ -25,8 +25,8 @@ This sample demonstrates unwrapped messages. By default, the message body is for
  The `<Add>` element in the message body wraps the `n1` and `n2` parameters. In contrast, the following sample shows the equivalent message in the unwrapped mode.  
   
 ```xml  
-<s:Envelope   
-    xmlns:s="http://www.w3.org/2003/05/soap-envelope"   
+<s:Envelope
+    xmlns:s="http://www.w3.org/2003/05/soap-envelope"
     xmlns:a="http://schemas.xmlsoap.org/ws/2005/08/addressing">  
     <s:Header>  
         ….  
@@ -99,9 +99,9 @@ public class ResponseMessage
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Contract\Message\Unwrapped`  

@@ -19,7 +19,7 @@ Data binding is a common use of <xref:System.Data.DataTable> object. The <xref:S
   
 4. The cloned <xref:System.Data.DataTable> is returned after all <xref:System.Data.DataRow> objects in the input queryable table have been copied. If the source sequence does not contain any <xref:System.Data.DataRow> objects, the method returns an empty <xref:System.Data.DataTable>.  
   
- Note that calling the <xref:System.Data.DataTableExtensions.CopyToDataTable%2A> method will cause the query bound to the source table to execute.  
+Calling the <xref:System.Data.DataTableExtensions.CopyToDataTable%2A> method causes the query bound to the source table to execute.  
   
  When the <xref:System.Data.DataTableExtensions.CopyToDataTable%2A> method encounters either a null reference or nullable value type in a row in the source table, it replaces the value with <xref:System.DBNull.Value>. This way, null values are handled correctly in the returned <xref:System.Data.DataTable>.  
   

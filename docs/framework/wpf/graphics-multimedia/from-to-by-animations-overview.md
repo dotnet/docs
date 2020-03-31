@@ -12,11 +12,11 @@ ms.assetid: 516fce0a-e7f8-49b8-b018-53b3d409a8a3
 # From/To/By Animations Overview
 This topic describes how to use From/To/By animations to animate dependency properties. A From/To/By animation creates a transition between two values.  
   
-<a name="prereq"></a>   
+<a name="prereq"></a>
 ## Prerequisites  
  To understand this topic, you should be familiar with [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] animations features. For an introduction to animation features, see the [Animation Overview](animation-overview.md).  
   
-<a name="whatisanimation"></a>   
+<a name="whatisanimation"></a>
 ## What Is a From/To/By Animation?  
  A From/To/By animation is a type of <xref:System.Windows.Media.Animation.AnimationTimeline> that creates a transition between a starting value and an ending value. The amount of time that the transition takes to complete is determined by the <xref:System.Windows.Media.Animation.Timeline.Duration%2A> of that animation.  
   
@@ -24,7 +24,7 @@ This topic describes how to use From/To/By animations to animate dependency prop
   
  From/To/By animations can have no more than two target values. If you require an animation that has more than two target values, use a key-frame animation. Key-frame animations are described in the [Key-Frame Animations Overview](key-frame-animations-overview.md).  
   
-<a name="animation_types"></a>   
+<a name="animation_types"></a>
 ## From/To/By Animation Types  
  Because animations generate property values, there are different animation types for different property types. To animate a property that takes a <xref:System.Double>, such as the <xref:System.Windows.FrameworkElement.Width%2A> property of an element, use an animation that produces <xref:System.Double> values. To animate a property that takes a <xref:System.Windows.Point>, use an animation that produces <xref:System.Windows.Point> values, and so on.  
   
@@ -55,7 +55,7 @@ This topic describes how to use From/To/By animations to animate dependency prop
 |<xref:System.Windows.Media.Media3D.Vector3D>|<xref:System.Windows.Media.Animation.Vector3DAnimation>|  
 |<xref:System.Windows.Vector>|<xref:System.Windows.Media.Animation.VectorAnimation>|  
   
-<a name="anim_values"></a>   
+<a name="anim_values"></a>
 ## Target Values  
  A From/To/By animation creates a transition between two target values. It is common to specify a starting value (set it by using the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> property) and an ending value (set it by using the <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> property). However, you can also specify only a starting value, a destination value, or an offset value. In these cases, the animation obtains the missing target value from the property that is being animated. The following list describes the different ways to specify the target values of an animation.  
   
@@ -71,7 +71,7 @@ This topic describes how to use From/To/By animations to animate dependency prop
   
      The <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> property enables you to specify an offset instead of an explicit starting or ending value for the animation. The <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> property of an animation specifies by how much the animation changes a value over its duration. You can use the <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> property by itself or with the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A> property. If you specify only the <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> property, the animation adds the offset value to the base value of the property or to the output of another animation.  
   
-<a name="examples"></a>   
+<a name="examples"></a>
 ## Using From/To/By Values  
  The following sections describe how to use the <xref:System.Windows.Media.Animation.DoubleAnimation.From%2A>, <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A>, and <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> properties together or separately.  
   
@@ -124,7 +124,7 @@ This topic describes how to use From/To/By animations to animate dependency prop
 ### To/By  
  If you set both the <xref:System.Windows.Media.Animation.DoubleAnimation.To%2A> and the <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> properties of an animation, the <xref:System.Windows.Media.Animation.DoubleAnimation.By%2A> property is ignored.  
   
-<a name="otheranimationtypes"></a>   
+<a name="otheranimationtypes"></a>
 ## Other Animation Types  
  From/To/By animations are not the only type of animations that [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides: it also provides key-frame animations and path animations.  
   

@@ -21,7 +21,7 @@ Defines a proxy server.
   
 ```xml  
 <proxy
-  autoDetect="true|false|unspecified" 
+  autoDetect="true|false|unspecified"
   bypassonlocal="true|false|unspecified"
   proxyaddress="uriString"
   scriptLocation="uriString"

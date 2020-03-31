@@ -14,7 +14,7 @@ api_type:
 
 ```csharp
 [GuidAttribute("BEF6E003-A874-101A-8BBA-00AA00300CAB")]
-public interface StdFont : Font, 
+public interface StdFont : Font,
   FontEvents_Event
 ```
 

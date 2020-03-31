@@ -30,7 +30,7 @@ You can create a custom control that dynamically and statically renders ink. Tha
   
 - [Conclusion](#AdvancedInkHandling_Conclusion)  
   
-<a name="CollectingStylusPointDataAndCreatingInkStrokes"></a>   
+<a name="CollectingStylusPointDataAndCreatingInkStrokes"></a>
 ## How to: Collect Stylus Point Data and Create Ink Strokes  
  To create a control that collects and manages ink strokes do the following:  
   
@@ -61,7 +61,7 @@ You can create a custom control that dynamically and statically renders ink. Tha
   
      [!code-csharp[AdvancedInkTopicsSamples#10](~/samples/snippets/csharp/VS_Snippets_Wpf/AdvancedInkTopicsSamples/CSharp/StylusControl.cs#10)]  
   
-<a name="EnablingYourControlToAcceptInputTromTheMouse"></a>   
+<a name="EnablingYourControlToAcceptInputTromTheMouse"></a>
 ## How to: Enable Your Control to Accept Input from the Mouse  
  If you add the preceding control to your application, run it, and use the mouse as an input device, you will notice that the strokes are not persisted. To persist the strokes when the mouse is used as the input device do the following:  
   
@@ -77,18 +77,18 @@ You can create a custom control that dynamically and statically renders ink. Tha
   
      [!code-csharp[AdvancedInkTopicsSamples#13](~/samples/snippets/csharp/VS_Snippets_Wpf/AdvancedInkTopicsSamples/CSharp/StylusControl.cs#13)]  
   
-<a name="PuttingItTogether"></a>   
+<a name="PuttingItTogether"></a>
 ## Putting it together  
  The following example is a custom control that collects ink when the user uses either the mouse or the pen.  
   
  [!code-csharp[AdvancedInkTopicsSamples#20](~/samples/snippets/csharp/VS_Snippets_Wpf/AdvancedInkTopicsSamples/CSharp/StylusControl.cs#20)]  
 [!code-csharp[AdvancedInkTopicsSamples#6](~/samples/snippets/csharp/VS_Snippets_Wpf/AdvancedInkTopicsSamples/CSharp/StylusControl.cs#6)]  
   
-<a name="UsingAdditionalPluginsAndDynamicRenderers"></a>   
+<a name="UsingAdditionalPluginsAndDynamicRenderers"></a>
 ## Using Additional Plug-ins and DynamicRenderers  
  Like the InkCanvas, your custom control can have custom <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> and additional <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> objects. Add these to the <xref:System.Windows.UIElement.StylusPlugIns%2A> collection. The order of the <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> objects in the <xref:System.Windows.Input.StylusPlugIns.StylusPlugInCollection> affects the appearance of the ink when it is rendered. Suppose you have a <xref:System.Windows.Input.StylusPlugIns.DynamicRenderer> called `dynamicRenderer` and a custom <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> called `translatePlugin` that offsets the ink from the tablet pen. If `translatePlugin` is the first <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> in the <xref:System.Windows.Input.StylusPlugIns.StylusPlugInCollection>, and `dynamicRenderer` is the second, the ink that "flows" will be offset as the user moves the pen. If `dynamicRenderer` is first, and `translatePlugin` is second, the ink will not be offset until the user lifts the pen.  
   
-<a name="AdvancedInkHandling_Conclusion"></a>   
+<a name="AdvancedInkHandling_Conclusion"></a>
 ## Conclusion  
  You can create a control that collects and renders ink by overriding the stylus event methods. By creating your own control, deriving your own <xref:System.Windows.Input.StylusPlugIns.StylusPlugIn> classes, and inserting them the into <xref:System.Windows.Input.StylusPlugIns.StylusPlugInCollection>, you can implement virtually any behavior imaginable with digital ink. You have access to the <xref:System.Windows.Input.StylusPoint> data as it is generated, giving you the opportunity to  customize <xref:System.Windows.Input.Stylus> input and render it on the screen as appropriate for your application. Because you have such low-level access to the <xref:System.Windows.Input.StylusPoint> data, you can implement ink collection and render it with optimal performance for your application.  
   

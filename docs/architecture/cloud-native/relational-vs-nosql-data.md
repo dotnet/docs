@@ -67,7 +67,7 @@ High availability and massive scalability are often more critical to the busines
 
 Based upon specific data requirements, a cloud-native-based microservice can implement a relational, NoSQL datastore or both.
 
-|  Consider a NoSQL datastore when: | Consider a relational database when: | 
+|  Consider a NoSQL datastore when: | Consider a relational database when: |
 | :-------- | :-------- |
 | You have high volume workloads that require large scale | Your workload volume is consistent and requires medium to large scale |
 | Your workloads don't require ACID guarantees |  ACID guarantees are required |
@@ -75,8 +75,8 @@ Based upon specific data requirements, a cloud-native-based microservice can imp
 | Data can be expressed without relationships | Data is best expressed relationally |  
 | You need fast writes and write safety isn't critical | Write safety is a requirement |  
 | Data retrieval is simple and tends to be flat | You work with complex queries and reports|
-| Your data requires a wide geographic distribution | Your users are more centralized | 
-| Your application will be deployed to commodity hardware, such as with public clouds | Your application will be deployed to large, high-end hardware | 
+| Your data requires a wide geographic distribution | Your users are more centralized |
+| Your application will be deployed to commodity hardware, such as with public clouds | Your application will be deployed to large, high-end hardware |
 |||
 
 In the next sections, we'll explore the options available in the Azure cloud for storing and managing your cloud-native data.
@@ -106,7 +106,7 @@ You can provision an Azure database in minutes by selecting the amount of proces
 
 ## Azure SQL Database
 
-Development teams with expertise in Microsoft SQL Server should consider 
+Development teams with expertise in Microsoft SQL Server should consider
 [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/). It's a fully managed relational database-as-a-service (DBaaS) based on the Microsoft SQL Server Database Engine. The service shares many features found in the on-premises version of SQL Server and runs the latest stable version of the SQL Server Database Engine.
 
 For use with a cloud-native microservice, Azure SQL Database is available with three deployment options:
@@ -147,11 +147,11 @@ MariaDB has a strong community and is used by many large enterprises. While Orac
 
 [Azure Database for PostgreSQL](https://azure.microsoft.com/services/postgresql/) is a fully managed relational database service, based on the open-source Postgres database engine. The service supports many development platforms, including C++, Java, Python, Node, C\#, and PHP. You can migrate PostgreSQL databases to it using the [command-line interface](https://datamigration.microsoft.com/scenario/postgresql-to-azurepostgresql?step=1) tool or Azure Data Migration Service.
 
-Azure Database for PostgreSQL is available with two deployment options: 
+Azure Database for PostgreSQL is available with two deployment options:
 
 - The [Single Server](https://docs.microsoft.com/azure/postgresql/concepts-servers) deployment option is a central administrative point for multiple databases to which you can deploy many databases. The pricing is structured per-server based upon cores and storage.
 
-- The [Hyperscale (Citus) option](https://azure.microsoft.com/blog/get-high-performance-scaling-for-your-azure-database-workloads-with-hyperscale/) is powered by Citus Data technology. It enables high performance by *horizontally scaling* a single database across hundreds of nodes to deliver fast performance and scale. This option allows the engine to fit more data in memory, parallelize queries across hundreds of nodes, and index data faster. 
+- The [Hyperscale (Citus) option](https://azure.microsoft.com/blog/get-high-performance-scaling-for-your-azure-database-workloads-with-hyperscale/) is powered by Citus Data technology. It enables high performance by *horizontally scaling* a single database across hundreds of nodes to deliver fast performance and scale. This option allows the engine to fit more data in memory, parallelize queries across hundreds of nodes, and index data faster.
 
 ## NoSQL data in Azure
 
@@ -254,7 +254,7 @@ The Cloud Native Computing Foundation (CNCF) features several NewSQL database pr
 | YugabyteDB | An open source, high-performance, distributed SQL database. It supports low query latency, resilience against failures, and global data distribution. YugabyteDB is PostgressSQL-compatible and handles scale-out RDBMS and internet-scale OLTP workloads. The product also support NoSQL and is compatible with Cassandra. |
 |Vitess | Vitess is a database solution for deploying, scaling and managing large clusters of MySQL instances. It’s can run in a public or private cloud architecture. It combines and extends many important MySQL features and features both vertical and horizontal sharding support. Originated by YouTube, Vitess has been serving all YouTube database traffic since 2011 . |
 
-The open-source projects in the previous figure are available from the Cloud Native Computing Foundation. Three of the offerings are full database products, which include .NET Core support. The other, Vitess, is a database clustering system that horizontally scales large clusters of MySQL instances. 
+The open-source projects in the previous figure are available from the Cloud Native Computing Foundation. Three of the offerings are full database products, which include .NET Core support. The other, Vitess, is a database clustering system that horizontally scales large clusters of MySQL instances.
 
 A key design goal for NewSQL databases is to work natively in Kubernetes, taking advantage of the platform's resiliency and scalability.
 

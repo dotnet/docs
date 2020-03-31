@@ -12,7 +12,7 @@ ms.assetid: 190349fc-0573-49c7-bb85-8e316df7f31f
 
 This tutorial describes the last of five tasks required to create a basic Windows Communication Foundation (WCF) application. For an overview of the tutorials, see [Tutorial: Get started with Windows Communication Foundation applications](getting-started-tutorial.md).
 
-After you've created and configured a Windows Communication Foundation (WCF) proxy, you create a client instance and compile the client application. You then use it to communicate with the WCF service. 
+After you've created and configured a Windows Communication Foundation (WCF) proxy, you create a client instance and compile the client application. You then use it to communicate with the WCF service.
 
 In this tutorial, you learn how to:
 > [!div class="checklist"]
@@ -142,7 +142,7 @@ Notice the `using` (for Visual C#) or `Imports` (for Visual Basic) statement tha
 
 ### Test the application from a command prompt
 
-1. Open a command prompt as an administrator, and then navigate to your Visual Studio solution directory. 
+1. Open a command prompt as an administrator, and then navigate to your Visual Studio solution directory.
 
 2. To start the service: Enter *GettingStartedHost\bin\Debug\GettingStartedHost.exe*.
 

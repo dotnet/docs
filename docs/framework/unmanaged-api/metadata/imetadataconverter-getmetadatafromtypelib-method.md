@@ -23,7 +23,7 @@ Gets an interface pointer to an [IMetaDataImport](../../../../docs/framework/unm
   
 ```cpp  
 HRESULT GetMetaDataFromTypeLib (  
-    [in]  ITypeLib        *pITL,   
+    [in]  ITypeLib        *pITL,
     [out] IMetaDataImport **ppMDI  
 );  
 ```  

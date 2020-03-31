@@ -35,7 +35,7 @@ This topic describes the differences between [!INCLUDE[esql](../../../../../../i
 1+2 *3  
 "abc"  
 row(1 as a, 2 as b)  
-{ 1, 3, 5}   
+{ 1, 3, 5}
 e1 union all e2  
 set(e1)  
 ```  
@@ -101,7 +101,7 @@ SELET Tab.a FROM Tab
  For example, if `p` is an expression of type Person, the following is the [!INCLUDE[esql](../../../../../../includes/esql-md.md)] syntax for referencing the city of the address of this person.  
   
 ```sql  
-p.Address.City   
+p.Address.City
 ```  
   
 ## No Support for *  

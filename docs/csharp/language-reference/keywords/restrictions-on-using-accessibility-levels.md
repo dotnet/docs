@@ -65,7 +65,7 @@ public class A
 
     public B MyMethod()
     {
-        // Error: The type B is less accessible 
+        // Error: The type B is less accessible
         // than the method A.MyMethod.
         return new B();
     }
@@ -79,8 +79,8 @@ public class A
     }
 
     MyDelegate d = new MyDelegate(B.MyPrivateMethod);
-    // Even when B is declared public, you still get the error: 
-    // "The parameter B.MyPrivateMethod is not accessible due to 
+    // Even when B is declared public, you still get the error:
+    // "The parameter B.MyPrivateMethod is not accessible due to
     // protection level."
 
     public static B operator +(A m1, B m2)

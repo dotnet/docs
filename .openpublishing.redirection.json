@@ -90,6 +90,62 @@
       "redirect_url": "/dotnet/architecture/modernize-with-azure-containers/modernize-existing-apps-to-cloud-optimized/microsoft-technologies-in-cloud-optimized-applications"
     },
     {
+      "source_path": "docs/azure/dotnet-howto-choose-migration.md",
+      "redirect_url": "/dotnet/azure/migration/choose"
+    },
+    {
+      "source_path": "docs/azure/dotnet-howto-migrate-app-service.md",
+      "redirect_url": "/dotnet/azure/migration/app-service"
+    },
+    {
+      "source_path": "docs/azure/dotnet-howto-migrate-sql.md",
+      "redirect_url": "/dotnet/azure/migration/sql"
+    },
+    {
+      "source_path": "docs/azure/dotnet-howto-migrate-vm.md",
+      "redirect_url": "/dotnet/azure/migration/vm"
+    },
+    {
+      "source_path": "docs/azure/dotnet-quickstart-vs.md",
+      "redirect_url": "/visualstudio/deployment/quickstart-deploy-to-azure?view=vs-2019"
+    },
+    {
+      "source_path": "docs/azure/dotnet-quickstart-xplat.md",
+      "redirect_url": "/azure/app-service/app-service-web-tutorial-dotnetcore-sqldb"
+    },
+    {
+      "source_path": "docs/azure/dotnet-samples.md",
+      "redirect_url": "/dotnet/azure/"
+    },
+    {
+      "source_path": "docs/azure/dotnet-sdk-azure-authenticate.md",
+      "redirect_url": "/dotnet/azure/sdk/authentication"
+    },
+    {
+      "source_path": "docs/azure/dotnet-sdk-azure-concepts.md",
+      "redirect_url": "/dotnet/azure/sdk"
+    },
+    {
+      "source_path": "docs/azure/dotnet-sdk-azure-get-started.md",
+      "redirect_url": "/dotnet/azure/intro"
+    },
+    {
+      "source_path": "docs/azure/dotnet-sdk-azure-overview.md",
+      "redirect_url": "/dotnet/azure/sdk"
+    },
+    {
+      "source_path": "docs/azure/dotnet-sdk-vs2015-install.md",
+      "redirect_url": "/dotnet/azure/sdk/vs2015-install"
+    },
+    {
+      "source_path": "docs/azure/dotnet-tools.md",
+      "redirect_url": "/dotnet/azure/sdk/tools"
+    },
+    {
+      "source_path": "docs/azure/dotnet-tutorials.md",
+      "redirect_url": "/dotnet/azure/"
+    },
+    {
       "source_path": "docs/cli-preview3/tools/dotnet-nuget-delete.md",
       "redirect_url": "/dotnet/core/tools/dotnet-nuget-delete"
     },
@@ -163,7 +219,7 @@
     },
     {
       "source_path": "docs/core/install/linux-package-managers.md",
-      "redirect_url": "/dotnet/core/install/linux-package-manager-ubuntu-1904",
+      "redirect_url": "/dotnet/core/install/linux-package-manager-ubuntu-1910",
       "ms.custom": "updateeachrelease"
     },
     {
@@ -373,6 +429,10 @@
       "source_path": "docs/core/testing/using-mstest-on-windows.md",
       "redirect_url": "/dotnet/core/testing/unit-testing-with-mstest",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "docs/core/tools/extensibility.md",
+      "redirect_url": "/dotnet/core/project-sdk/overview"
     },
     {
       "source_path": "docs/core/tools/project-json.md",
@@ -1595,6 +1655,10 @@
     {
       "source_path": "docs/desktop-wpf/migration/index.md",
       "redirect_url": "/dotnet/desktop-wpf/migration/differences-from-net-framework"
+    },
+    {
+      "source_path": "docs/desktop-wpf/migration/types-migrated-from-wpf-to-system-xaml.md",
+      "redirect_url": "/dotnet/framework/wpf/advanced/types-migrated-from-wpf-to-system"
     },
     {
       "source_path": "docs/framework/add-ins/index.md",
@@ -2924,7 +2988,7 @@
     },
     {
       "source_path": "docs/framework/xaml-services/types-migrated-from-wpf-to-system-xaml.md",
-      "redirect_url": "/dotnet/desktop-wpf/xaml-services/types-migrated-from-wpf-to-system",
+      "redirect_url": "/dotnet/framework/wpf/advanced/types-migrated-from-wpf-to-system",
       "redirect_document_id": true
     },
     {
@@ -3307,6 +3371,10 @@
     {
       "source_path": "docs/scenarios/solution-authoring/target-dotnetcore-with-msbuild.md",
       "redirect_url": "/dotnet/core/tools/cli-msbuild-architecture"
+    },
+    {
+      "source_path": "docs/spark/tutorials/ml-sentment-analysis.md",
+      "redirect_url": "/dotnet/spark/tutorials/ml-sentiment-analysis"
     },
     {
       "source_path": "docs/standard/about.md",

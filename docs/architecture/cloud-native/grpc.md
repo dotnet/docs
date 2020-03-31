@@ -1,8 +1,8 @@
 ---
 title: gRPC
-description: Learn about gRPC, its role in cloud-native applications, and how it differs from HTTP REST.
+description: Learn about gRPC, its role in cloud-native applications, and how it differs from HTTP RESTful communication.
 author: robvet
-ms.date: 03/11/2020
+ms.date: 03/31/2020
 ---
 
 # gRPC
@@ -78,7 +78,7 @@ Favor gRPC for the following scenarios:
 - Point-to-point real-time communication - gRPC can push messages in real time without polling and has excellent support for bi-directional streaming.
 - Network constrained environments – binary gRPC messages are always smaller than an equivalent text-based JSON message.
 
-At the time, of this writing, gRPC is primarily used in backend services. Most modern browsers can't provide the level of HTTP/2 control required to support a front-end gRPC client. That said, there's an [early initiative](https://devblogs.microsoft.com/aspnet/grpc-web-experiment/) that enables gRPC communication from browser-based apps built with JavaScript or Blazor WebAssembly technologies. The  [gRPC-Web for .NET](https://github.com/grpc/grpc/blob/master/doc/PROTOCOL-WEB.md) enables an ASP.NET Core gRPC app to support gRPC features in browser apps:
+At the time, of this writing, gRPC is primarily used with backend services. Most modern browsers can't provide the level of HTTP/2 control required to support a front-end gRPC client. That said, there's an [early initiative](https://devblogs.microsoft.com/aspnet/grpc-web-experiment/) that enables gRPC communication from browser-based apps built with JavaScript or Blazor WebAssembly technologies. The  [gRPC-Web for .NET](https://github.com/grpc/grpc/blob/master/doc/PROTOCOL-WEB.md) enables an ASP.NET Core gRPC app to support gRPC features in browser apps:
 
 - Strongly-typed code-generated clients
 - Compact Protobuf messages
@@ -88,11 +88,11 @@ At the time, of this writing, gRPC is primarily used in backend services. Most m
 
 The microservice reference architecture, [eShop on Containers](https://github.com/dotnet-architecture/eShopOnContainers), from Microsoft, shows how to implement gRPC services in .NET Core applications. Figure 4-22 presents the back-end architecture.
 
-![Backend architecture for eShop on Containers](./media/eshopWithAggregators.png)
+![Backend architecture for eShop on Containers](./media/eshop-with-aggregators.png)
 
 **Figure 4-22**. Backend architecture for eShop on Containers
 
-In the previous figure, note how eShop embraces the [Backend for Frontends pattern](https://docs.microsoft.com/azure/architecture/patterns/backends-for-frontends) (BFF) by exposing multiple API gateways. We discussed the BFF pattern in chapter 4. Pay close attention to the Aggregator microservice (in gray) that sits between the Web-Shopping API Gateway and backend Shopping microservices. The Aggregator orchestrates operations that require interaction with multiple backend services. These calls require synchronous communication and an immediate response. In eShop, backend calls from the Aggregator are performed using gRPC as shown in Figure 4-23.
+In the previous figure, note how eShop embraces the [Backend for Frontends pattern](https://docs.microsoft.com/azure/architecture/patterns/backends-for-frontends) (BFF) by exposing multiple API gateways. We discussed the BFF pattern earlier in this chapter. Pay close attention to the Aggregator microservice (in gray) that sits between the Web-Shopping API Gateway and backend Shopping microservices. The Aggregator receives a single request from a client, dispatches it to various microservices, aggregates the results, and sends them back to the requesting client. Such operations typically require synchronous communication as to produce an immediate response. In eShop, backend calls from the Aggregator are performed using gRPC as shown in Figure 4-23.
 
 ![gRPC in eShop on Containers](./media/grpc-implementation.png)
 

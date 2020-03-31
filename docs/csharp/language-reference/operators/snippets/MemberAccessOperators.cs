@@ -14,6 +14,7 @@ namespace operators
             Arrays();
             Indexers();
             NullConditional();
+            NullConditionalWithNullCoalescing();
             Invocation();
             IndexFromEnd();
             Ranges();

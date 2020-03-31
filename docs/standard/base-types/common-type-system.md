@@ -39,15 +39,15 @@ The common type system defines how types are declared, used, and managed in the 
   
  The common type system in .NET supports the following five categories of types:  
   
-- [Classes](#Classes)  
+- [Classes](#classes)  
   
-- [Structures](#Structures)  
+- [Structures](#structures)  
   
-- [Enumerations](#Enumerations)  
+- [Enumerations](#enumerations)  
   
-- [Interfaces](#Interfaces)  
+- [Interfaces](#interfaces)  
   
-- [Delegates](#Delegates)  
+- [Delegates](#delegates)  
   
 ### Classes
 
@@ -64,7 +64,7 @@ The common type system defines how types are declared, used, and managed in the 
 |exported or not exported|Indicates whether a class is visible outside the assembly in which it is defined. This characteristic applies only to top-level classes and not to nested classes.|  
   
 > [!NOTE]
-> A class can also be nested in a parent class or structure. Nested classes also have member characteristics. For more information, see [Nested Types](#NestedTypes).  
+> A class can also be nested in a parent class or structure. Nested classes also have member characteristics. For more information, see [Nested Types](#nested-types).  
   
  Class members that have no implementation are abstract members. A class that has one or more abstract members is itself abstract; new instances of it cannot be created. Some languages that target the runtime let you mark a class as abstract even if none of its members are abstract. You can use an abstract class when you want to encapsulate a basic set of functionality that derived classes can inherit or override when appropriate. Classes that are not abstract are referred to as concrete classes.  
   
@@ -211,17 +211,17 @@ The common type system defines how types are declared, used, and managed in the 
 
  The runtime enables you to define members of your type, which specifies the behavior and state of a type. Type members include the following:  
   
-- [Fields](#Fields)  
+- [Fields](#fields)  
   
-- [Properties](#Properties)  
+- [Properties](#properties)  
   
-- [Methods](#Methods)  
+- [Methods](#methods)  
   
-- [Constructors](#Constructors)  
+- [Constructors](#constructors)  
   
-- [Events](#Events)  
+- [Events](#events)  
   
-- [Nested types](#NestedTypes)  
+- [Nested types](#nested-types)  
 
 ### Fields
 
@@ -244,13 +244,13 @@ The common type system defines how types are declared, used, and managed in the 
  [!code-vb[Conceptual.Types.Members.Properties#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.types.members.properties/vb/example.vb#1)]  
   
  In addition to including the property itself, the Microsoft intermediate language (MSIL) for a type that contains a readable property includes a `get_`*propertyname* method, and the MSIL for a type that contains a writable property includes a `set_`*propertyname* method.  
- 
+
 ### Methods
 
  A method describes operations that are available on the type. A method's signature specifies the allowable types of all its parameters and of its return value.  
   
  Although most methods define the precise number of parameters required for method calls, some methods support a variable number of parameters. The final declared parameter of these methods is marked with the <xref:System.ParamArrayAttribute> attribute. Language compilers typically provide a keyword, such as `params` in C# and `ParamArray` in Visual Basic, that makes explicit use of <xref:System.ParamArrayAttribute> unnecessary.  
- 
+
 ### Constructors
 
  A constructor is a special kind of method that creates new instances of a class or structure. Like any other method, a constructor can include parameters; however, constructors have no return value (that is, they return `void`).  

@@ -369,7 +369,7 @@
     },
     {
       "source_path": "docs/core/preview3/tools/extensibility.md",
-      "redirect_url": "/dotnet/core/tools/extensibility"
+      "redirect_url": "/dotnet/core/project-sdk/overview"
     },
     {
       "source_path": "docs/core/preview3/tools/global-json.md",
@@ -585,7 +585,7 @@
     },
     {
       "source_path": "docs/csharp/getting-started/whats-new.md",
-      "redirect_url": "/dotnet/csharp/whats-new/index"
+      "redirect_url": "/dotnet/csharp/whats-new/csharp-8"
     },
     {
       "source_path": "docs/csharp/getting-started/with-visual-studio-2017.md",
@@ -1633,7 +1633,7 @@
     },
     {
       "source_path": "docs/csharp/whats-new.md",
-      "redirect_url": "/dotnet/csharp/whats-new/index",
+      "redirect_url": "/dotnet/csharp/whats-new/csharp-8",
       "redirect_document_id": true
     },
     {
@@ -3739,6 +3739,10 @@
     {
       "source_path": "docs/standard/serialization/persistent-storage.md",
       "redirect_url": "/dotnet/standard/serialization/serialization-concepts"
+    },
+    {
+      "source_path": "docs/standard/serialization/serialization-how-to-topics.md",
+      "redirect_url": "/dotnet/standard/serialization/how-to-serialize-an-object"
     },
     {
       "source_path": "docs/standard/serialization/serialization-samples.md",

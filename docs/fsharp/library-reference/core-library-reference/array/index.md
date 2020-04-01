@@ -20,6 +20,12 @@ For an overview of arrays in F#, see [Arrays](../../../language-reference/arrays
 
 ## Functions
 
+test test test
+
+|Title|Description|
+|-----|-----------|
+|Functions|Functions are the fundamental unit of program execution in any programming language. As in other languages, an F# function has a name, can have parameters and take arguments, and has a body. F# also supports functional programming constructs such as treating functions as values, using unnamed functions in expressions, composition of functions to form new functions, curried functions, and the implicit definition of functions by way of the partial application of function arguments.|
+
 |Function|Description|
 |--------|-----------|
 | hello | there |

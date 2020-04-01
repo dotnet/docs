@@ -47,4 +47,4 @@ Do not catch an exception unless you know how to handle it so that you do not co
 ## See also
 
 - <xref:System.Linq.ParallelEnumerable>
-- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
+- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/introduction-to-plinq.md)

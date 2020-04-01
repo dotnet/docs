@@ -33,7 +33,7 @@ To use <xref:System.Threading.Tasks.Parallel.ForEach%2A?displayProperty=nameWith
 [!code-csharp[TPL_Parallel#07](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_parallel/cs/nongeneric.cs#07)]
 [!code-vb[TPL_Parallel#07](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_parallel/vb/nongeneric.vb#07)]
 
-You can also use Parallel LINQ (PLINQ) to parallelize processing of <xref:System.Collections.Generic.IEnumerable%601> data sources. PLINQ enables you to use declarative query syntax to express the loop behavior. For more information, see [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md).
+You can also use Parallel LINQ (PLINQ) to parallelize processing of <xref:System.Collections.Generic.IEnumerable%601> data sources. PLINQ enables you to use declarative query syntax to express the loop behavior. For more information, see [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/introduction-to-plinq.md).
 
 ## Compile and run the code
 
@@ -59,4 +59,4 @@ To run your console application from Visual Studio, press **F5**.
 
 - [Data parallelism](../../../docs/standard/parallel-programming/data-parallelism-task-parallel-library.md)
 - [Parallel programming](../../../docs/standard/parallel-programming/index.md)
-- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
+- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/introduction-to-plinq.md)

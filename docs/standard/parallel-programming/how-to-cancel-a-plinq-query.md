@@ -47,5 +47,5 @@ When an enumerator is disposed, for example when code breaks out of a foreach (F
 ## See also
 
 - <xref:System.Linq.ParallelEnumerable>
-- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
+- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/introduction-to-plinq.md)
 - [Cancellation in Managed Threads](../../../docs/standard/threading/cancellation-in-managed-threads.md)

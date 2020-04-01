@@ -57,7 +57,7 @@ appcmd.exe set app "Default Web Site/appOne" /enabledProtocols:net.tcp
         <virtualDirectory path="/" physicalPath="D:\inetpub\wwwroot" />  
       </application>  
       <bindings>  
-            <!-- The following two lines are added by the command. --> 
+            <!-- The following two lines are added by the command. -->
             <binding protocol="HTTP" bindingInformation="*:80:" />  
             <binding protocol="net.tcp" bindingInformation="808:*" />  
        </bindings>  

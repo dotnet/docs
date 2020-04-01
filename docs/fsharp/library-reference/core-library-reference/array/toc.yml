@@ -21,11 +21,11 @@
         - name: Array.Parallel.parition<'T> Function
           href: parallel/parallel.partition['t]-function.md
     - name: Array.append<'T> Function
-      href: array.append-function.md
-    - name: Array.averageBy<'T,^U> Function
-      href: array.averageby['t,^u]-function.md
+      href: array.append['t]-function.md
     - name: Array.average<^T> Function
       href: array.average[^t]-function.md
+    - name: Array.averageBy<'T,^U> Function
+      href: array.averageby['t,^u]-function.md
     - name: Array.blit<'T> Function
       href: array.blit['t]-function.md
     - name: Array.choose<'T,'U> Function
@@ -46,72 +46,72 @@
       href: array.countby['t,'key]-function.md
     - name: Array.create<'T> Function
       href: array.create['t]-function.md
-    - name: Array.distinctBy<'T,'Key> Function
-      href: array.distinctby['t,'key]-function.md
     - name: Array.distinct<'T> Function
       href: array.distinct['t]-function.md
+    - name: Array.distinctBy<'T,'Key> Function
+      href: array.distinctby['t,'key]-function.md
     - name: Array.empty<'T> Type Function
       href: array.empty['t]-type-function.md
     - name: Array.exactlyOne<'T> Function
       href: array.exactlyone['t]-function.md
-    - name: Array.exists2<'T1,'T2> Function
-      href: array.exists2['t1,'t2]-function.md
     - name: Array.exists<'T> Function
       href: array.exists['t]-function.md
+    - name: Array.exists2<'T1,'T2> Function
+      href: array.exists2['t1,'t2]-function.md
     - name: Array.fill<'T> Function
       href: array.fill['t]-function.md
     - name: Array.filter<'T> Function
       href: array.filter['t]-function.md
-    - name: Array.findIndex<'T> Function
-      href: array.findindex['t]-function.md
     - name: Array.find<'T> Function
       href: array.find['t]-function.md
-    - name: Array.fold2<'T1,'T2,'State> Function
-      href: array.fold2['t1,'t2,'state]-function.md
-    - name: Array.foldBack2<'T1,'T2,'State> Function
-      href: array.foldback2['t1,'t2,'state]-function.md
-    - name: Array.foldBack<'T,'State> Function
-      href: array.foldback['t,'state]-function.md
+    - name: Array.findIndex<'T> Function
+      href: array.findindex['t]-function.md
     - name: Array.fold<'T,'State> Function
       href: array.fold['t,'state]-function.md
-    - name: Array.forall2<'T1,'T2> Function
-      href: array.forall2['t1,'t2]-function.md
+    - name: Array.fold2<'T1,'T2,'State> Function
+      href: array.fold2['t1,'t2,'state]-function.md
+    - name: Array.foldBack<'T,'State> Function
+      href: array.foldback['t,'state]-function.md
+    - name: Array.foldBack2<'T1,'T2,'State> Function
+      href: array.foldback2['t1,'t2,'state]-function.md
     - name: Array.forall<'T> Function
       href: array.forall['t]-function.md
-    - name: Array.get<'T> Function
-      href: array.get['t]-function.md
+    - name: Array.forall2<'T1,'T2> Function
+      href: array.forall2['t1,'t2]-function.md
     - name: Array.head<'T> Function
       href: array.head['t]-function.md
+    - name: Array.get<'T> Function
+      href: array.get['t]-function.md
     - name: Array.init<'T> Function
       href: array.init['t]-function.md
     - name: Array.isEmpty<'T> Function
       href: array.isempty['t]-function.md
-    - name: Array.iter2<'T1,'T2> Function
-      href: array.iter2['t1,'t2]-function.md
-    - name: Array.iteri2<'T1,'T2> Function
-      href: array.iteri2['t1,'t2]-function.md
-    - name: Array.iteri<'T> Function
-      href: array.iteri['t]-function.md
     - name: Array.iter<'T> Function
       href: array.iter['t]-function.md
+    - name: Array.iter2<'T1,'T2> Function
+      href: array.iter2['t1,'t2]-function.md
+    - name: Array.iteri<'T> Function
+      href: array.iteri['t]-function.md
+    - name: Array.iteri2<'T1,'T2> Function
+      href: array.iteri2['t1,'t2]-function.md
     - name: Array.length<'T> Function
       href: array.length['t]-function.md
-    - name: Array.map2<'T1,'T2,'U> Function
-      href: array.map2['t1,'t2,'u]-function.md
-    - name: Array.mapi2<'T1,'T2,'U> Function
-      href: array.mapi2['t1,'t2,'u]-function.md
-    - name: Array.mapi<'T,'U> Function
-      href: array.mapi['t,'u]-function.md
     - name: Array.map<'T,'U> Function
       href: array.map['t,'u]-function.md
-    - name: Array.maxBy<'T,'U> Function
-      href: array.maxby['t,'u]-function.md
+    - name: Array.map2<'T1,'T2,'U> Function
+      href: array.map2['t1,'t2,'u]-function.md
+    - name: Array.mapi<'T,'U> Function
+      href: array.mapi['t,'u]-function.md
+    - name: Array.mapi2<'T1,'T2,'U> Function
+      href: array.mapi2['t1,'t2,'u]-function.md
     - name: Array.max<'T> Function
       href: array.max['t]-function.md
-    - name: Array.minBy<'T,'U> Function
-      href: array.minby['t,'u]-function.md
+    - name: Array.maxBy<'T,'U> Function
+      href: array.maxby['t,'u]-function.md
     - name: Array.min<'T> Function
       href: array.min['t]-function.md
+    - name: Array.minBy<'T,'U> Function
+      href: array.minby['t,'u]-function.md
     - name: Array.ofList<'T> Function
       href: array.oflist['t]-function.md
     - name: Array.ofSeq<'T> Function
@@ -123,18 +123,20 @@
       href: array.permute['t]-function.md
     - name: Array.pick<'T,'U> Function
       href: array.pick['t,'u]-function.md
-    - name: Array.reduceBack<'T> Function
-      href: array.reduceback['t]-function.md
     - name: Array.reduce<'T> Function
       href: array.reduce['t]-function.md
+    - name: Array.reduceBack<'T> Function
+      href: array.reduceback['t]-function.md
     - name: Array.rev<'T> Function
       href: array.rev['t]-function.md
-    - name: Array.scanBack<'T,'State> Function
-      href: array.scanback['t,'state]-function.md
     - name: Array.scan<'T,'State> Function
       href: array.scan['t,'state]-function.md
+    - name: Array.scanBack<'T,'State> Function
+      href: array.scanback['t,'state]-function.md
     - name: Array.set<'T> Function
       href: array.set['t]-function.md
+    - name: Array.sort<'T> Function
+      href: array.sort['t]-function.md
     - name: Array.sortBy<'T,'Key> Function
       href: array.sortby['t,'key]-function.md
     - name: Array.sortInPlaceBy<'T,'Key> Function
@@ -145,31 +147,29 @@
       href: array.sortinplace['t]-function.md
     - name: Array.sortWith<'T> Function
       href: array.sortwith['t]-function.md
-    - name: Array.sort<'T> Function
-      href: array.sort['t]-function.md
     - name: Array.sub<'T> Function
       href: array.sub['t]-function.md
-    - name: Array.sumBy<'T,^U> Function
-      href: array.sumby['t,^u]-function.md
     - name: Array.sum<^T> Function
       href: array.sum[^t]-function.md
+    - name: Array.sumBy<'T,^U> Function
+      href: array.sumby['t,^u]-function.md
     - name: Array.toList<'T> Function
       href: array.tolist['t]-function.md
     - name: Array.toSeq<'T> Function
       href: array.toseq['t]-function.md
-    - name: Array.tryFindIndex<'T> Function
-      href: array.tryfindindex['t]-function.md
     - name: Array.tryFind<'T> Function
       href: array.tryfind['t]-function.md
+    - name: Array.tryFindIndex<'T> Function
+      href: array.tryfindindex['t]-function.md
     - name: Array.tryPick<'T,'U> Function
       href: array.trypick['t,'u]-function.md
-    - name: Array.unzip3<'T1,'T2,'T3> Function
-      href: array.unzip3['t1,'t2,'t3]-function.md
     - name: Array.unzip<'T1,'T2> Function
       href: array.unzip['t1,'t2]-function.md
+    - name: Array.unzip3<'T1,'T2,'T3> Function
+      href: array.unzip3['t1,'t2,'t3]-function.md
     - name: Array.zeroCreate<'T> Function
       href: array.zerocreate['t]-function.md
-    - name: Array.zip3<'T1,'T2,'T3> Function
-      href: array.zip3['t1,'t2,'t3]-function.md
     - name: Array.zip<'T1,'T2> Function
       href: array.zip['t1,'t2]-function.md
+    - name: Array.zip3<'T1,'T2,'T3> Function
+      href: array.zip3['t1,'t2,'t3]-function.md

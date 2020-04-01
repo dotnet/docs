@@ -22,4 +22,4 @@ This example shows how use the <xref:System.Diagnostics.Stopwatch> class to meas
   
 ## See also
 
-- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
+- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/introduction-to-plinq.md)

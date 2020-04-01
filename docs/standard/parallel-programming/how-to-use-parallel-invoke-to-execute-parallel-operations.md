@@ -34,4 +34,4 @@ Copy and paste the entire example into a Microsoft Visual Studio project and pre
 
 - [Parallel Programming](../../../docs/standard/parallel-programming/index.md)
 - [How to: Cancel a Task and Its Children](../../../docs/standard/parallel-programming/how-to-cancel-a-task-and-its-children.md)
-- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
+- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/introduction-to-plinq.md)

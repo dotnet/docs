@@ -40,7 +40,6 @@ For more information about the major concepts of .NET, see:
 * [.NET Standard](net-standard.md)
 * [Native interoperability](native-interop/index.md)
 * [Garbage collection](garbage-collection/index.md)
-* [Base types in .NET](base-types/index.md)
 * [Collections](collections/index.md)
 * [Dates, times, and time zones](datetime/index.md)
 * [Asynchronous programming](async.md)

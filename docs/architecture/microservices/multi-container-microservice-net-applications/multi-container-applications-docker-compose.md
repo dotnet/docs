@@ -151,7 +151,7 @@ With Docker Compose, you can create and destroy that isolated environment very e
 ```console
 docker-compose -f docker-compose.yml -f docker-compose-test.override.yml up -d
 ./run_unit_tests
-docker-compose -f docker-compose.yml -f docker-compose.test.override.yml down
+docker-compose -f docker-compose.yml -f docker-compose-test.override.yml down
 ```
 
 #### Production deployments

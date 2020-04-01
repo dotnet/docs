@@ -344,7 +344,3 @@ However, if you replace the <xref:System.Globalization.CultureInfo.CurrentCultur
 08.09.1890 06:47
 18.02.1905 15:12
 ```
-
-## See also
-
-- [Manipulating Strings](manipulating-strings.md)

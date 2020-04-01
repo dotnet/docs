@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Windows Presentation Foundation (WPF) documentation
-summary: Learn about Windows Presentation Foundation, an open-source, graphical user interface for Windows.
+summary: Learn about using Windows Presentation Foundation, an open-source, graphical user interface for Windows, on .NET Core.
 
 metadata:
   title: Windows Presentation Foundation (WPF) for .NET Core documentation
-  description: Learn about Windows Presentation Foundation, an open-source, graphical user interface for Windows.
+  description: Learn about using Windows Presentation Foundation, an open-source, graphical user interface for Windows, on .NET Core.
   ms.topic: landing-page
   ms.date: 03/25/2020
 
@@ -26,7 +26,7 @@ landingContent:
   # Card
   - title: Get started with WPF
     linkLists:
-      - linkListType: overview
+      - linkListType: concept
         links:
           - text: Differences from .NET Framework
             url: migration/differences-from-net-framework.md
@@ -40,7 +40,7 @@ landingContent:
   # Card
   - title: Fundamentals - XAML
     linkLists:
-      - linkListType: overview
+      - linkListType: concept
         links:
           - text: Define XAML resources
             url: fundamentals/xaml-resources-define.md
@@ -54,7 +54,7 @@ landingContent:
             url: themes/how-to-create-apply-template.md
       - linkListType: reference
         links:
-          - text: XAML Language Reference
+          - text: XAML language reference
             url: xaml-services/index.md
 
   - title: Fundamentals - Data

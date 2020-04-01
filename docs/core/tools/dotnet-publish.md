@@ -108,6 +108,8 @@ The `dotnet publish` command's output is ready for deployment to a hosting syste
 
   Publishes the .NET Core runtime with your application so the runtime doesn't need to be installed on the target machine. Default is `true` if a runtime identifier is specified. For more information, see [.NET Core application publishing](../deploying/index.md) and [Publish .NET Core apps with the .NET Core CLI](../deploying/deploy-with-cli.md).
 
+  If this option is used without specifying `true` or `false`, the default is `true`. In that case, don't put the solution or project argument immediately after `--self-contained`, because `true` or `false` is expected in that position.
+
 - **`--no-self-contained`**
 
   Equivalent to `--self-contained false`. Available since .NET Core 3.0 SDK.

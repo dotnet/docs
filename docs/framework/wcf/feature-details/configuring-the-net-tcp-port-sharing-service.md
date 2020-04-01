@@ -39,7 +39,7 @@ Self-hosted services that use the Net.TCP transport can control several advanced
              <add securityIdentifier="S-1-5-32-568"/>  
            </allowAccounts>  
        </net.tcp>  
-    </system.serviceModel.activation> 
+    </system.serviceModel.activation>
 </configuration>  
 ```  
   

@@ -162,7 +162,7 @@ There are four major groups of configuration settings used in discovery. This to
           <textMessageEncoding messageVersion="Soap11"/>  
           <httpTransport />  
       </binding>
-   </customBinding> 
+   </customBinding>
 </bindings>  
 ```  
   
@@ -224,7 +224,7 @@ There are four major groups of configuration settings used in discovery. This to
             maxBufferPoolSize="262144"/>  
         </standardEndpoint>  
       </udpDiscoveryEndpoint>
-</standardEndpoints> 
+</standardEndpoints>
 ```  
   
  Once you’ve added the standard endpoint configuration, reference the configuration in the <`endpoint`> element for each endpoint as shown in the following sample.  

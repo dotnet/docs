@@ -145,7 +145,6 @@ The .NET Framework regular expression engine is a backtracking regular expressio
 |[Thread Safety](../../../docs/standard/base-types/thread-safety-in-regular-expressions.md)|Provides information about regular expression thread safety and explains when you should synchronize access to regular expression objects.|
 |[.NET Framework Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)|Provides an overview of the programming language aspect of regular expressions.|
 |[The Regular Expression Object Model](../../../docs/standard/base-types/the-regular-expression-object-model.md)|Provides information and code examples illustrating how to use the regular expression classes.|
-|[Regular Expression Examples](../../../docs/standard/base-types/regular-expression-examples.md)|Contains code examples that illustrate the use of regular expressions in common applications.|
 |[Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)|Provides information about the set of characters, operators, and constructs that you can use to define regular expressions.|
 
 ## Reference

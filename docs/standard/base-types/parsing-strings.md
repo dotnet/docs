@@ -28,7 +28,4 @@ A parsing operation converts a string that represents a .NET base type into that
  Describes basic formatting concepts like format specifiers and format providers.  
   
  [Type Conversion in .NET](../../../docs/standard/base-types/type-conversion.md)  
- Describes how to convert types.  
-  
- [Base Types](../../../docs/standard/base-types/index.md)  
- Describes common operations that you can perform on .NET base types.
+ Describes how to convert types.

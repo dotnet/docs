@@ -1,2 +1,9 @@
 - name: F# core library reference
   href: index.yml
+  items:
+    - name: Arithmetic Operators
+      href: arithmetic-operators-[fsharp].md
+    - name: Array module
+      href: array/index.md
+    - name: AggregateException.InnerExceptions Property
+      href: aggregateexception.innerexceptions-property-[fsharp].md

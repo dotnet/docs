@@ -42,20 +42,6 @@ landingContent:
             url: ../core/whats-new/dotnet-core-3-1.md
 
   # Card
-  - title: Design classes and libraries
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Design guidelines
-            url: design-guidelines/index.md
-      - linkListType: concept
-        links:
-          - text: Naming conventions
-            url: design-guidelines/general-naming-conventions.md
-          - text: Capitalization conventions
-            url: design-guidelines/capitalization-conventions.md
-
-  # Card
   - title: Serialize data
     linkLists:
       - linkListType: concept
@@ -108,14 +94,18 @@ landingContent:
             url: base-types/regular-expression-language-quick-reference.md
 
   # Card
-  - title: Manage memory use
+  - title: Design classes and libraries
     linkLists:
+      - linkListType: overview
+        links:
+          - text: Design guidelines
+            url: design-guidelines/index.md
       - linkListType: concept
         links:
-          - text: Garbage collection fundamentals
-            url: garbage-collection/fundamentals.md
-          - text: Implement a Dispose method
-            url: garbage-collection/implementing-dispose.md
+          - text: Naming conventions
+            url: design-guidelines/general-naming-conventions.md
+          - text: Capitalization conventions
+            url: design-guidelines/capitalization-conventions.md
 
   # Card
   - title: Use events and exceptions
@@ -152,6 +142,16 @@ landingContent:
             url: io/how-to-compress-and-extract-files.md
           - text: Open and append to a log file
             url: io/how-to-open-and-append-to-a-log-file.md
+
+  # Card
+  - title: Manage memory use
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Garbage collection fundamentals
+            url: garbage-collection/fundamentals.md
+          - text: Implement a Dispose method
+            url: garbage-collection/implementing-dispose.md
 
   # Card
   - title: Learn about parallel programming

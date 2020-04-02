@@ -93,7 +93,7 @@ The <xref:System.String> class includes a number of string search and replacemen
   
  The <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=nameWithType> method is called with regular expression options set to <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=nameWithType>. Therefore, the match operation is case-insensitive, and the example identifies the substring "This this" as a duplication.  
   
- Note that the input string includes the substring "this? This". However, because of the intervening punctuation mark, it is not identified as a duplication.  
+ The input string includes the substring "this? This". However, because of the intervening punctuation mark, it is not identified as a duplication.  
   
 ### Example 3: Dynamically build a culture-sensitive regular expression  
 

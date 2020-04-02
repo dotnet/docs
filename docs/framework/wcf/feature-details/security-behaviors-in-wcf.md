@@ -189,7 +189,7 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
  Use the [\<serviceSecurityAudit>](../../../../docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md) to specify the log written to, and what types of events to log. For more information, see [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md).  
   
 ```xml  
-<behaviors> 
+<behaviors>
  <serviceBehaviors>  
   <behavior name="NewBehavior">  
     <serviceSecurityAudit auditLogLocation="Application"

@@ -3,38 +3,38 @@ title: App configuration
 description: Learn how to configure Blazor apps without using ConfigurationManager.
 author: csharpfritz
 ms.author: jefritz
-ms.date: 03/09/2020
+ms.date: 04/01/2020
 ---
 # App configuration
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-Web Forms applications have a single primary way to load application configuration: entries in the web.config file on the server or a related configuration file referenced by web.config.  You can easily use the static `ConfigurationManager` object to interact with application settings, data repository connection strings, and other extended configuration providers that are added into the application.  It's typical to see interactions with application configuration as seen in the following code:
+The primary way to load app configuration in Web Forms is with entries in the *web.config* file&mdash;either on the server or a related configuration file referenced by *web.config*. You can use the static `ConfigurationManager` object to interact with app settings, data repository connection strings, and other extended configuration providers that are added into the app. It's typical to see interactions with app configuration as seen in the following code:
 
 ```csharp
 var configurationValue = ConfigurationManager.AppSettings["ConfigurationSettingName"];
 var connectionString = ConfigurationManager.ConnectionStrings["MyDatabaseConnectionName"].ConnectionString;
 ```
 
-With ASP.NET Core and server-side Blazor, the web.config file MAY be present if your application is hosted on a Windows IIS server.  However, there is no `ConfigurationManager` interaction with this configuration and you can receive more structured application configuration from other sources.  Let's take a look at how configuration is gathered and how you can still access configuration information from a web.config file.
+With ASP.NET Core and server-side Blazor, the *web.config* file MAY be present if your app is hosted on a Windows IIS server. However, there's no `ConfigurationManager` interaction with this configuration, and you can receive more structured app configuration from other sources. Let's take a look at how configuration is gathered and how you can still access configuration information from a *web.config* file.
 
-## Configuration Sources
+## Configuration sources
 
-ASP.NET Core recognizes that there are many configuration sources that you may want to use for your application, and attempts to offer you the best of these features by default.  Configuration is read from these various sources by ASP.NET Core and the values are aggregated from these sources with later loaded values for the same configuration key taking precedence over earlier values.
+ASP.NET Core recognizes there are many configuration sources you may want to use for your app. The framework attempts to offer you the best of these features by default. Configuration is read and aggregated from these various sources by ASP.NET Core. Later loaded values for the same configuration key take precedence over earlier values.
 
-Clever ASP.NET Core was designed to be cloud-aware and make configuration of applications easier for operators and developers.  ASP.NET Core is environment-aware, and knows if it is running in your `Production` or `Development` environment.  The definition of which environment is made by setting the `ASPNETCORE_ENVIRONMENT` system environment variable.  If no value is configured, the application defaults to running in the `Production` environment.
+ASP.NET Core was designed to be cloud-aware and to make configuration of apps easier for both operators and developers. ASP.NET Core is environment-aware and knows if it's running in your `Production` or `Development` environment. The environment indicator is set in the `ASPNETCORE_ENVIRONMENT` system environment variable. If no value is configured, the app defaults to running in the `Production` environment.
 
-With the environment name set, your application can trigger and add configuration from several different sources based on the name of that environment.  Configuration is by-default loaded from these resources in this order:
+Your app can trigger and add configuration from several sources based on the environment's name. By default, configuration is loaded from the following resources in the order listed:
 
-1. `appsettings.json` file if present  
-1. `appsettings.ENVIRONMENTNAME.json` file if present
-1. User-Secrets file on disk if present
+1. *appsettings.json* file, if present
+1. *appsettings.{ENVIRONMENT_NAME}.json* file, if present
+1. User secrets file on disk, if present
 1. Environment variables
 1. Command-line arguments
 
-## AppSettings.json format and access
+## appsettings.json format and access
 
-The `appsettings.json` file can be hierarchical with values structured something like the following JSON content:
+The *appsettings.json* file can be hierarchical with values structured like the following JSON:
 
 ```json
 {
@@ -49,37 +49,40 @@ The `appsettings.json` file can be hierarchical with values structured something
 }
 ```
 
-When these values are presented by the configuration system, child values are flattened and referenced by their entire hierarchical path separated by colon `:` characters.  For example, to access the section 1 key 0 value you would request the configuration key `section1:key0`.
+When presented with the preceding JSON, the configuration system flattens child values and references their fully qualified hierarchical paths. A colon (`:`) character separates each property in the hierarchy. For example, the configuration key `section1:key0` accesses the `section1` object literal's `key0` value.
 
-## User Secrets
+## User secrets
 
-User Secrets are configuration values that are stored outside the typical application development folder that are only loaded in the `Development` environment.  This design prevents developers from accidentally checking into a shared source control repository secret configuration values like passwords and API keys.  Secrets are normally stored in a JSON file elsewhere on a developer's workstation and managed with the `user-secrets` command-line tool.  
+User secrets are:
 
-You can configure your application to interact with user secrets by executing the `user-secrets` command as follows:
+* Configuration values that are stored in a JSON file on the developer's workstation, outside of the app development folder.
+* Only loaded when running in the `Development` environment.
+* Associated with a specific app.
+* Managed with the .NET Core CLI's `user-secrets` command.
+
+Configure your app for secrets storage by executing the `user-secrets` command:
 
 ```dotnetcli
 dotnet user-secrets init
 ```
 
-You can then set various values in your user secrets with commands similar to the following dotnet command:
+The preceding command adds a `UserSecretsId` element to the project file. The element contains a GUID, which is used to associate secrets with the app. You can then define a secret with the `set` command. For example:
 
 ```dotnetcli
 dotnet user-secrets set "Parent:ApiKey" "12345"
 ```
 
-This command will make the `Parent:ApiKey` configuration value available on a developer's workstation with the value `12345`.
+The preceding command makes the `Parent:ApiKey` configuration key available on a developer's workstation with the value `12345`.
 
-More information about creating, storing, and managing user secrets values can be found in the documentation about [Safe Storage of App Secrets for ASP.NET Core article](https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-3.1).
+For more information about creating, storing, and managing user secrets, see the [Safe storage of app secrets in development in ASP.NET Core](/aspnet/core/security/app-secrets) document.
 
 ## Environment variables
 
-The next set of values loaded into your application configuration is the system's environment variables. All of your system's environment variable settings are now accessible to you through the configuration API.  Hierarchical values are flattened and separated by color `:` characters when read inside your application, but on some operating systems the colon character is not allowed in the name of an environment variable.  
-
-ASP.NET Core gets around this limitation by converting values that have double underscores `__` into a colon `:` when they are accessed.  The `Parent:ApiKey` value from the user secrets section above can be overridden with the environment variable `Parent__ApiKey`
+The next set of values loaded into your app configuration is the system's environment variables. All of your system's environment variable settings are now accessible to you through the configuration API. Hierarchical values are flattened and separated by colon characters when read inside your app. However, some operating systems don't allow the colon character environment variable names. ASP.NET Core addresses this limitation by converting values that have double-underscores (`__`) into a colon when they're accessed. The `Parent:ApiKey` value from the user secrets section above can be overridden with the environment variable `Parent__ApiKey`.
 
 ## Command-line arguments
 
-Configuration can also be passed in on the command line as arguments when your application is started. Use the double-dash `--` or forward-slash `/` notation to indicate the name of the configuration value to set and the value to be configured.  Syntax is similar to the following commands:
+Configuration can also be provided as command-line arguments when your app is started. Use the double-dash (`--`) or forward-slash (`/`) notation to indicate the name of the configuration value to set and the value to be configured. The syntax resembles the following commands:
 
 ```dotnetcli
 dotnet run CommandLineKey1=value1 --CommandLineKey2=value2 /CommandLineKey3=value3
@@ -89,7 +92,7 @@ dotnet run Parent:ApiKey=67890
 
 ## The return of web.config
 
-If you have deployed your application to Windows and the IIS web server, you will still be using the `web.config` file to configure IIS to manage your application.  By default, IIS will add a reference to the ASP.NET Core Module that hosts your application in place of the Kestrel web server.  This section of `web.config` looks like the following XML markup:
+If you've deployed your app to Windows on IIS, the *web.config* file still configures IIS to manage your app. By default, IIS adds a reference to the ASP.NET Core Module (ANCM). ANCM is a native IIS module that hosts your app in place of the Kestrel web server. This *web.config* section resembles the following XML markup:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -108,7 +111,7 @@ If you have deployed your application to Windows and the IIS web server, you wil
 </configuration>
 ```
 
-Configuration specific to your application can be defined by nesting an `environmentVariables` element inside of the `aspNetCore` element.  The values defined in this section are presented to the ASP.NET Core application as environment variables, and load appropriately during that segment of the application startup.
+App-specific configuration can be defined by nesting an `environmentVariables` element in the `aspNetCore` element. The values defined in this section are presented to the ASP.NET Core app as environment variables. The environment variables load appropriately during that segment of app startup.
 
 ```xml
 <aspNetCore processPath="dotnet"
@@ -123,47 +126,48 @@ Configuration specific to your application can be defined by nesting an `environ
 </aspNetCore>
 ```
 
-## Reading configuration in the application
+## Read configuration in the app
 
-ASP.NET Core provides application configuration through an interface at `Microsoft.Extensions.Configuration.IConfiguration`.  This configuration interface should be requested by your Blazor components, Blazor pages, and any other ASP.NET Core managed class that needs access to configuration.  The ASP.NET Core framework will automatically populate this interface with the resolved configuration configured earlier.  On a Blazor page or component's razor markup you can inject the IConfiguration object with an `@inject` statement at the top of the `.razor` file like this:
+ASP.NET Core provides app configuration through the <xref:Microsoft.Extensions.Configuration.IConfiguration> interface. This configuration interface should be requested by your Blazor components, Blazor pages, and any other ASP.NET Core-managed class that needs access to configuration. The ASP.NET Core framework will automatically populate this interface with the resolved configuration configured earlier. On a Blazor page or a component's Razor markup, you can inject the `IConfiguration` object with an `@inject` directive at the top of the *.razor* file like this:
 
-```cshtml
+```razor
 @inject IConfiguration Configuration
 ```
 
-This statement will make the `IConfiguration` object available as the `Configuration` variable through the rest of the razor template.
+This preceding statement makes the `IConfiguration` object available as the `Configuration` variable throughout the rest of the Razor template.
 
-Individual configuration settings can be read by specifying the entire hierarchy of the configuration setting sought as an indexer parameter:
+Individual configuration settings can be read by specifying the configuration setting hierarchy sought as an indexer parameter:
 
 ```csharp
 var mySetting = Configuration["section1:key0"];
 ```
 
-You can fetch entire sections of the configuration by using the `IConfiguration.GetSection` command to retrieve a collection of keys at a specific location with a syntax similar to: `GetSection("section1")` to retrieve the configuration for section1 from the earlier example.
+You can fetch entire configuration sections by using the <xref:Microsoft.Extensions.Configuration.IConfiguration.GetSection%2A> method to retrieve a collection of keys at a specific location with a syntax similar to `GetSection("section1")` to retrieve the configuration for section1 from the earlier example.
 
-## Strongly-Typed Configuration
+## Strongly typed configuration
 
-With Web Forms, it was possible to create a strongly-typed configuration type that inherited from the <xref:System.Configuration.ConfigurationSection> type and associated types.  A ConfigurationSection would allow you to configure some business rules and processing for those configuration values.  
+With Web Forms, it was possible to create a strongly typed configuration type that inherited from the <xref:System.Configuration.ConfigurationSection> type and associated types. A `ConfigurationSection` allowed you to configure some business rules and processing for those configuration values.
 
-In ASP.NET Core, you can specify a plain class hierarchy that will receive the configuration values. These classes don't need to inherit from a parent-class and should be composed of simple public properties that match the properties and type references for the structure of the configuration you wish to capture.  For the appsettings sample earlier, you could define these classes to capture the values:
+In ASP.NET Core, you can specify a class hierarchy that will receive the configuration values. These classes:
+
+* Don't need to inherit from a parent class.
+* Should include `public` properties that match the properties and type references for the configuration structure you wish to capture.
+
+For the earlier *appsettings.json* sample, you could define the following classes to capture the values:
 
 ```csharp
 public class MyConfig
 {
-
     public MyConfigSection section0 { get; set;}
 
     public MyConfigSection section1 { get; set;}
-
 }
 
 public class MyConfigSection
 {
-
     public string key0 { get; set; }
 
     public string key1 { get; set; }
-
 }
 ```
 
@@ -173,17 +177,17 @@ This class hierarchy can be populated by adding the following line to the `Start
 services.Configure<MyConfig>(Configuration);
 ```
 
-In the rest of the application, you can add an input parameter to classes or an `@inject` directive in razor templates of type `IOptions<MyConfig>` to receive the strongly-typed configuration settings.  The `IOptions<MyConfig>.Value` property will yield the `MyConfig` value populated from the configuration settings.
+In the rest of the app, you can add an input parameter to classes or an `@inject` directive in Razor templates of type `IOptions<MyConfig>` to receive the strongly typed configuration settings. The `IOptions<MyConfig>.Value` property will yield the `MyConfig` value populated from the configuration settings.
 
-```cshtml
+```razor
 @inject IOptions<MyConfig> options
 @code {
- var MyConfiguration = options.Value;
- var theSetting = MyConfiguration.section1.key0;
+    var MyConfiguration = options.Value;
+    var theSetting = MyConfiguration.section1.key0;
 }
 ```
 
-More information about the Options feature can be found in the [Options Pattern in ASP.NET Core](/aspnet/core/fundamentals/configuration/options#options-interfaces) article.
+More information about the Options feature can be found in the [Options pattern in ASP.NET Core](/aspnet/core/fundamentals/configuration/options#options-interfaces) document.
 
 >[!div class="step-by-step"]
 >[Previous](middleware.md)

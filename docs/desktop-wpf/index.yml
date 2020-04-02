@@ -1,0 +1,65 @@
+### YamlMime:Landing
+
+title: Windows Presentation Foundation (WPF) documentation
+summary: Learn about using Windows Presentation Foundation, an open-source, graphical user interface for Windows, on .NET Core.
+
+metadata:
+  title: Windows Presentation Foundation (WPF) for .NET Core documentation
+  description: Learn about using Windows Presentation Foundation, an open-source, graphical user interface for Windows, on .NET Core.
+  ms.topic: landing-page
+  ms.date: 03/25/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+
+  # Card
+  - title: Learn about WPF
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Windows Presentation Foundation overview
+            url: overview/index.md
+          - text: XAML in Windows Presentation Foundation
+            url: fundamentals/xaml.md
+
+  # Card
+  - title: Get started with WPF
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Differences from WPF on .NET Framework
+            url: migration/differences-from-net-framework.md
+          - text: Migrate from Framework to Core
+            url: migration/convert-project-from-net-framework.md
+      - linkListType: tutorial
+        links:
+          - text: Create a WPF application
+            url: https://docs.microsoft.com/visualstudio/get-started/csharp/tutorial-wpf?toc=/dotnet/desktop-wpf/toc.json&bc=/dotnet/breadcrumb/toc.json
+
+  # Card
+  - title: Fundamentals - XAML
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Define XAML resources
+            url: fundamentals/xaml-resources-define.md
+          - text: Styles and templates
+            url: fundamentals/styles-templates-overview.md
+      - linkListType: how-to-guide
+        links:
+          - text: Create and apply a style
+            url: fundamentals/styles-templates-create-apply-style.md
+          - text: Create and apply a template
+            url: themes/how-to-create-apply-template.md
+      - linkListType: reference
+        links:
+          - text: XAML language reference
+            url: xaml-services/index.md
+
+  - title: Fundamentals - Data
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Data binding
+            url: data/data-binding-overview.md

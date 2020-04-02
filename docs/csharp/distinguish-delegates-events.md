@@ -63,6 +63,14 @@ Notice that these two heuristics may often both be present: If your
 delegate method returns a value, it will likely impact the algorithm
 in some way.
 
+## Events Have Private Invocation
+
+Classes other than the one in which an event is contained can only add
+and remove event listeners; only the class containing the event can
+invoke the event. Events are typically public class members.
+By comparison, delegates are often passed as parameters and stored as
+private class members, if they are stored at all.
+
 ## Event Listeners Often Have Longer Lifetimes
 
 This is a slightly weaker justification. However, you may find that

@@ -23,4 +23,4 @@ The following example shows how to create a simple Parallel LINQ query by using 
   
 ## See also
 
-- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
+- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/introduction-to-plinq.md)

@@ -26,4 +26,4 @@ This example shows how to use the <xref:System.Linq.ParallelEnumerable.AsSequent
   
 ## See also
 
-- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
+- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/introduction-to-plinq.md)

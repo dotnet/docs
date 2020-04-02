@@ -1,7 +1,9 @@
 - name: Windows Presentation Foundation for .NET Core
-  href: overview/index.md
+  href: index.yml
 - name: Get started
   items:
+  - name: Overview
+    href: overview/index.md
   - name: Create a WPF application
     href: https://docs.microsoft.com/visualstudio/get-started/csharp/tutorial-wpf?toc=/dotnet/desktop-wpf/toc.json&bc=/dotnet/breadcrumb/toc.json
   # - name: Create a control library

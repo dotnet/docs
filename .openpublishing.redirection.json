@@ -369,7 +369,7 @@
     },
     {
       "source_path": "docs/core/preview3/tools/extensibility.md",
-      "redirect_url": "/dotnet/core/tools/extensibility"
+      "redirect_url": "/dotnet/core/project-sdk/overview"
     },
     {
       "source_path": "docs/core/preview3/tools/global-json.md",
@@ -585,7 +585,7 @@
     },
     {
       "source_path": "docs/csharp/getting-started/whats-new.md",
-      "redirect_url": "/dotnet/csharp/whats-new/index"
+      "redirect_url": "/dotnet/csharp/whats-new/csharp-8"
     },
     {
       "source_path": "docs/csharp/getting-started/with-visual-studio-2017.md",
@@ -1633,7 +1633,7 @@
     },
     {
       "source_path": "docs/csharp/whats-new.md",
-      "redirect_url": "/dotnet/csharp/whats-new/index",
+      "redirect_url": "/dotnet/csharp/whats-new/csharp-8",
       "redirect_document_id": true
     },
     {
@@ -1647,10 +1647,6 @@
     {
       "source_path": "docs/desktop-wpf/getting-started/index.md",
       "redirect_url": "https://docs.microsoft.com/visualstudio/get-started/csharp/tutorial-wpf?toc=/dotnet/desktop-wpf/toc.json&bc=/dotnet/breadcrumb/toc.json"
-    },
-    {
-      "source_path": "docs/desktop-wpf/index.md",
-      "redirect_url": "/dotnet/desktop-wpf/overview/index"
     },
     {
       "source_path": "docs/desktop-wpf/migration/index.md",
@@ -3675,6 +3671,10 @@
       "redirect_url": "/dotnet/standard/garbage-collection/weak-references"
     },
     {
+      "source_path": "docs/standard/garbage-collection/memory-management-and-gc.md",
+      "redirect_url": "/dotnet/standard/garbage-collection/index"
+    },
+    {
       "source_path": "docs/standard/getting-started.md",
       "redirect_url": "/dotnet/standard/get-started",
       "redirect_document_id": true
@@ -3715,6 +3715,11 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "docs/standard/parallel-programming/parallel-linq-plinq.md",
+      "redirect_url": "/dotnet/standard/parallel-programming/introduction-to-plinq",
+      "redirect_document_id": true
+    },
+    {
       "source_path": "docs/standard/portability-analyzer.md",
       "redirect_url": "/dotnet/standard/analyzers/portability-analyzer",
       "redirect_document_id": true
@@ -3732,8 +3737,16 @@
       "redirect_url": "/dotnet/standard/serialization/serialization-concepts"
     },
     {
+      "source_path": "docs/standard/serialization/serialization-how-to-topics.md",
+      "redirect_url": "/dotnet/standard/serialization/how-to-serialize-an-object"
+    },
+    {
       "source_path": "docs/standard/serialization/serialization-samples.md",
       "redirect_url": "/dotnet/standard/serialization/index"
+    },
+    {
+      "source_path": "docs/standard/serialization/serialization-tools.md",
+      "redirect_url": "/dotnet/standard/serialization/xml-serializer-generator-tool-sgen-exe"
     },
     {
       "source_path": "docs/standard/serialization/web-services-ixmlserializable-technology-sample.md",

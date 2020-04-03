@@ -60,8 +60,8 @@ Supported in: 4.0, Portable
 
 
 ## See Also
-[RuntimeHelpers.Grouping&#60;'K,'T&#62; Class &#40;F&#35;&#41;](RuntimeHelpers.Grouping%5B%27K%2C%27T%5D-Class-%5BFSharp%5D.md)
+[RuntimeHelpers.Grouping&#60;'K,'T&#62; Class](RuntimeHelpers.Grouping%5B%27K%2C%27T%5D-Class-%5BFSharp%5D.md)
 
-[Microsoft.FSharp.Linq.RuntimeHelpers Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Linq.RuntimeHelpers-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Linq.RuntimeHelpers Namespace](Microsoft.FSharp.Linq.RuntimeHelpers-Namespace-%5BFSharp%5D.md)
 
 [Query Expressions (F#)](https://msdn.microsoft.com/library/ff72235c-3ad8-4215-8679-2754484823db)

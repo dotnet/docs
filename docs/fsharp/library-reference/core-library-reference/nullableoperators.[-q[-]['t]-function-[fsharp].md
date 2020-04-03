@@ -62,6 +62,6 @@ Supported in: 4.0, Portable
 
 
 ## See Also
-[Linq.NullableOperators Module &#40;F&#35;&#41;](Linq.NullableOperators-Module-%5BFSharp%5D.md)
+[Linq.NullableOperators Module](Linq.NullableOperators-Module-%5BFSharp%5D.md)
 
-[Microsoft.FSharp.Linq Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Linq-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Linq Namespace](Microsoft.FSharp.Linq-Namespace-%5BFSharp%5D.md)

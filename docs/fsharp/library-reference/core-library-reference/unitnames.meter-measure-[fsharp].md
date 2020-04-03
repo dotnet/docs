@@ -36,8 +36,8 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[SI.UnitNames Namespace &#40;F&#35;&#41;](SI.UnitNames-Namespace-%5BFSharp%5D.md)
+[SI.UnitNames Namespace](SI.UnitNames-Namespace-%5BFSharp%5D.md)
 
 [UnitSymbols.m Type Abbreviation (F#)](https://msdn.microsoft.com/library/964afe1f-446b-4bfb-b70e-df4be49b89cd )
 
-[UnitNames.metre Measure &#40;F&#35;&#41;](UnitNames.metre-Measure-%5BFSharp%5D.md)
+[UnitNames.metre Measure](UnitNames.metre-Measure-%5BFSharp%5D.md)

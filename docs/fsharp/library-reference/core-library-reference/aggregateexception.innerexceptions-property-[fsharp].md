@@ -47,6 +47,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0
 
 ## See Also
-[System.AggregateException Class &#40;F&#35;&#41;](System.AggregateException-Class-%5BFSharp%5D.md)
+[System.AggregateException Class](System.AggregateException-Class-%5BFSharp%5D.md)
 
-[System Namespace &#40;F&#35;&#41;](System-Namespace-%5BFSharp%5D.md)
+[System Namespace](System-Namespace-%5BFSharp%5D.md)

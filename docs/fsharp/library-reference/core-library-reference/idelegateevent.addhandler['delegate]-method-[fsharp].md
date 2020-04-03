@@ -47,6 +47,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Control.IDelegateEvent&#60;'Delegate&#62; Interface &#40;F&#35;&#41;](Control.IDelegateEvent%5B%27Delegate%5D-Interface-%5BFSharp%5D.md)
+[Control.IDelegateEvent&#60;'Delegate&#62; Interface](Control.IDelegateEvent%5B%27Delegate%5D-Interface-%5BFSharp%5D.md)
 
-[Microsoft.FSharp.Control Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Control-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Control Namespace](Microsoft.FSharp.Control-Namespace-%5BFSharp%5D.md)

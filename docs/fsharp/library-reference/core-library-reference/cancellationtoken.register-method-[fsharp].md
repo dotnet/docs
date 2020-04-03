@@ -61,6 +61,6 @@ Supported in: 2.0
 
 ## See Also
 
-[Threading.CancellationToken Structure &#40;F&#35;&#41;](Threading.CancellationToken-Structure-%5BFSharp%5D.md)
+[Threading.CancellationToken Structure](Threading.CancellationToken-Structure-%5BFSharp%5D.md)
 
-[System.Threading Namespace &#40;F&#35;&#41;](System.Threading-Namespace-%5BFSharp%5D.md)
+[System.Threading Namespace](System.Threading-Namespace-%5BFSharp%5D.md)

@@ -67,9 +67,9 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Collections.Seq Module &#40;F&#35;&#41;](Collections.Seq-Module-%5BFSharp%5D.md)
+[Collections.Seq Module](Collections.Seq-Module-%5BFSharp%5D.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](Microsoft.FSharp.Collections-Namespace.md)
 
 [Seq.filter&lt;'T&gt; Function (F#)](https://msdn.microsoft.com/library/7f2e9850-a660-460c-9831-3bbff5613770)
 

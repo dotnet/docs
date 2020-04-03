@@ -50,4 +50,4 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Microsoft.FSharp.NativeInterop Namespace &#40;F&#35;&#41;](Microsoft.FSharp.NativeInterop-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.NativeInterop Namespace](Microsoft.FSharp.NativeInterop-Namespace-%5BFSharp%5D.md)

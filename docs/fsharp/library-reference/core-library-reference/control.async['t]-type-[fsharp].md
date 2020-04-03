@@ -32,7 +32,7 @@ end
 ```
 
 ## Remarks
-Asynchronous computations are normally specified using an F# computation expression. When run, asynchronous computations have two modes: as a work item (executing synchronous code), or as a wait item (waiting for an event or I/O completion). When run, asynchronous computations can be governed by `System.Threading.CancellationToken`. This can usually be specified when the asynchronous computation is started. The associated `System.Threading.CancellationTokenSource` may be used to cancel the asynchronous computation. Asynchronous computations built using computation expressions can check the cancellation condition regularly. Synchronous computations within an asynchronous computation do not automatically check this condition. For more information, see [Asynchronous Workflows &#40;F&#35;&#41;](../../language-reference/asynchronous-workflows.md).
+Asynchronous computations are normally specified using an F# computation expression. When run, asynchronous computations have two modes: as a work item (executing synchronous code), or as a wait item (waiting for an event or I/O completion). When run, asynchronous computations can be governed by `System.Threading.CancellationToken`. This can usually be specified when the asynchronous computation is started. The associated `System.Threading.CancellationTokenSource` may be used to cancel the asynchronous computation. Asynchronous computations built using computation expressions can check the cancellation condition regularly. Synchronous computations within an asynchronous computation do not automatically check this condition. For more information, see [Asynchronous Workflows](../../language-reference/asynchronous-workflows.md).
 
 This type is named `FSharpAsync` in compiled assemblies. If you are accessing the type from a language other than F#, or through reflection, use this name.
 
@@ -47,8 +47,8 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Microsoft.FSharp.Control Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Control-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Control Namespace](Microsoft.FSharp.Control-Namespace-%5BFSharp%5D.md)
 
-[Control.Async Class &#40;F&#35;&#41;](Control.Async-Class-%5BFSharp%5D.md)
+[Control.Async Class](Control.Async-Class-%5BFSharp%5D.md)
 
-[Asynchronous Workflows &#40;F&#35;&#41;](../../language-reference/asynchronous-workflows.md)
+[Asynchronous Workflows](../../language-reference/asynchronous-workflows.md)

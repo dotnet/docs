@@ -56,6 +56,6 @@ Supported in: 2.0, 4.0, Portable
 
 
 ## See Also
-[Core.ExtraTopLevelOperators Module &#40;F&#35;&#41;](Core.ExtraTopLevelOperators-Module-%5BFSharp%5D.md)
+[Core.ExtraTopLevelOperators Module](Core.ExtraTopLevelOperators-Module-%5BFSharp%5D.md)
 
-[Microsoft.FSharp.Core Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Core-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Core Namespace](Microsoft.FSharp.Core-Namespace-%5BFSharp%5D.md)

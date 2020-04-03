@@ -50,4 +50,4 @@ Supported in: 2.0
 
 ## See Also
 
-[System.Collections Namespace &#40;F&#35;&#41;](System.Collections-Namespace-%5BFSharp%5D.md)
+[System.Collections Namespace](System.Collections-Namespace-%5BFSharp%5D.md)

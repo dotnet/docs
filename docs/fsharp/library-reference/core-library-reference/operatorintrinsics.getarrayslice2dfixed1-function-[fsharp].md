@@ -74,6 +74,6 @@ Supported in: 2.0, 4.0, Portable
 ## See Also
 [Arrays (F#)](https://msdn.microsoft.com/library/70ad71f0-f4bf-42d7-b1a9-44a2f4bd2c6f)
 
-[Operators.OperatorIntrinsics Module &#40;F&#35;&#41;](Operators.OperatorIntrinsics-Module-%5BFSharp%5D.md)
+[Operators.OperatorIntrinsics Module](Operators.OperatorIntrinsics-Module-%5BFSharp%5D.md)
 
-[Core.Operators Module &#40;F&#35;&#41;](Core.Operators-Module-%5BFSharp%5D.md)
+[Core.Operators Module](Core.Operators-Module-%5BFSharp%5D.md)

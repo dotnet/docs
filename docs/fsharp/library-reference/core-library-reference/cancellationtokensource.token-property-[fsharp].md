@@ -48,6 +48,6 @@ Supported in: 2.0
 
 ## See Also
 
-[Threading.CancellationTokenSource Class &#40;F&#35;&#41;](Threading.CancellationTokenSource-Class-%5BFSharp%5D.md)
+[Threading.CancellationTokenSource Class](Threading.CancellationTokenSource-Class-%5BFSharp%5D.md)
 
-[System.Threading Namespace &#40;F&#35;&#41;](System.Threading-Namespace-%5BFSharp%5D.md)
+[System.Threading Namespace](System.Threading-Namespace-%5BFSharp%5D.md)

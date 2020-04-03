@@ -98,6 +98,6 @@ For an overview of lists in F#, see [Lists](../../language-reference/lists.md).
 |[zip3](https://msdn.microsoft.com/library/003cc28e-0de3-4d99-89ed-cb19028e3c5b)<br />**: 'T1 list -&gt; 'T2 list -&gt; 'T3 list -&gt; ('T1 &#42; 'T2 &#42; 'T3) list**|Combines the three lists into a list of triples. The lists must have equal lengths.|
 
 ## See Also
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](Microsoft.FSharp.Collections-Namespace.md)
 
 [Lists](../../language-reference/lists.md)

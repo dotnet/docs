@@ -65,8 +65,8 @@ Supported in: 4.0, Portable
 
 
 ## See Also
-[Linq.QueryBuilder Class &#40;F&#35;&#41;](Linq.QueryBuilder-Class-%5BFSharp%5D.md)
+[Linq.QueryBuilder Class](Linq.QueryBuilder-Class-%5BFSharp%5D.md)
 
-[Microsoft.FSharp.Linq Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Linq-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Linq Namespace](Microsoft.FSharp.Linq-Namespace-%5BFSharp%5D.md)
 
 [How to: Handle Exceptions in Query Expressions (C# Programming Guide)](https://msdn.microsoft.com/library/4ce6c081-7731-4b8f-b4fa-d947f165a18a)

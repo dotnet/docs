@@ -46,6 +46,6 @@ The result sequence.
 This function is named `MaxBy` in compiled assemblies. If you are accessing the function from a language other than F#, or through reflection, use this name.
 
 ## See Also
-[Collections.Seq Module &#40;F&#35;&#41;](Collections.Seq-Module-%5BFSharp%5D.md)
+[Collections.Seq Module](Collections.Seq-Module-%5BFSharp%5D.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](Microsoft.FSharp.Collections-Namespace.md)

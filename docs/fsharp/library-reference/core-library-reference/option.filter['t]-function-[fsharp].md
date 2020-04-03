@@ -54,7 +54,7 @@ Supported in: 4.0, Portable
 
 
 ## See Also
-[Core.Option Module &#40;F&#35;&#41;](core.option-module-%5Bfsharp%5D.md)
+[Core.Option Module](core.option-module-%5Bfsharp%5D.md)
 
-[Microsoft.FSharp.Core Namespace &#40;F&#35;&#41;](microsoft.fsharp.core-namespace-%5Bfsharp%5D.md)
+[Microsoft.FSharp.Core Namespace](microsoft.fsharp.core-namespace-%5Bfsharp%5D.md)
 

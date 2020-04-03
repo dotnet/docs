@@ -112,4 +112,4 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0
 
 ## See Also
-[System.Numerics Namespace &#40;F&#35;&#41;](System.Numerics-Namespace-%5BFSharp%5D.md)
+[System.Numerics Namespace](System.Numerics-Namespace-%5BFSharp%5D.md)

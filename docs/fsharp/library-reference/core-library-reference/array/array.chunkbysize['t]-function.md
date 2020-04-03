@@ -80,4 +80,4 @@ Supported in: 4.0, Portable
 
 [Array Module](index.md)
 
-[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace.md)

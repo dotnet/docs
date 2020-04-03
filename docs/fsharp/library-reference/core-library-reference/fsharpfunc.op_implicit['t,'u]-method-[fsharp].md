@@ -61,6 +61,6 @@ Supported in: 2.0, 4.0
 
 
 ## See Also
-[Core.FSharpFunc&#60;'T,'U&#62; Class &#40;F&#35;&#41;](Core.FSharpFunc%5B%27T%2C%27U%5D-Class-%5BFSharp%5D.md)
+[Core.FSharpFunc&#60;'T,'U&#62; Class](Core.FSharpFunc%5B%27T%2C%27U%5D-Class-%5BFSharp%5D.md)
 
-[Microsoft.FSharp.Core Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Core-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Core Namespace](Microsoft.FSharp.Core-Namespace-%5BFSharp%5D.md)

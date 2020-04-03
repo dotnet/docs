@@ -43,6 +43,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 4.0, Portable
 
 ## See Also
-[CompilerServices.TypeProviderEditorHideMethodsAttribute Class &#40;F&#35;&#41;](CompilerServices.TypeProviderEditorHideMethodsAttribute-Class-%5BFSharp%5D.md)
+[CompilerServices.TypeProviderEditorHideMethodsAttribute Class](CompilerServices.TypeProviderEditorHideMethodsAttribute-Class-%5BFSharp%5D.md)
 
-[Microsoft.FSharp.Core.CompilerServices Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Core.CompilerServices-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Core.CompilerServices Namespace](Microsoft.FSharp.Core.CompilerServices-Namespace-%5BFSharp%5D.md)

@@ -41,6 +41,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Core.CustomOperationAttribute Class &#40;F&#35;&#41;](Core.CustomOperationAttribute-Class-%5BFSharp%5D.md)
+[Core.CustomOperationAttribute Class](Core.CustomOperationAttribute-Class-%5BFSharp%5D.md)
 
-[Microsoft.FSharp.Core Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Core-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Core Namespace](Microsoft.FSharp.Core-Namespace-%5BFSharp%5D.md)

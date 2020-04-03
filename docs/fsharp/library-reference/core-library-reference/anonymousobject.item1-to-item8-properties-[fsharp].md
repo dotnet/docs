@@ -43,6 +43,6 @@ Supported in: 4.0, Portable
 
 
 ## See Also
-[RuntimeHelpers.AnonymousObject Class &#40;F&#35;&#41;](RuntimeHelpers.AnonymousObject-Class-%5BFSharp%5D.md)
+[RuntimeHelpers.AnonymousObject Class](RuntimeHelpers.AnonymousObject-Class-%5BFSharp%5D.md)
 
-[Microsoft.FSharp.Linq.RuntimeHelpers Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Linq.RuntimeHelpers-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Linq.RuntimeHelpers Namespace](Microsoft.FSharp.Linq.RuntimeHelpers-Namespace-%5BFSharp%5D.md)

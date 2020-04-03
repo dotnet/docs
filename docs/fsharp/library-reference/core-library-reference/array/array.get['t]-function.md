@@ -72,4 +72,4 @@ Supported in: 2.0, 4
 ## See Also
 [Array Module](index.md)
 
-[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace.md)

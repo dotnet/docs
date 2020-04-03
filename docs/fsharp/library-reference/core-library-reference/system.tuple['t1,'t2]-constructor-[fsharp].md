@@ -49,6 +49,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0
 
 ## See Also
-[System.Tuple&#60;'T1,'T2&#62; Class &#40;F&#35;&#41;](System.Tuple%5B%27T1%2C%27T2%5D-Class-%5BFSharp%5D.md)
+[System.Tuple&#60;'T1,'T2&#62; Class](System.Tuple%5B%27T1%2C%27T2%5D-Class-%5BFSharp%5D.md)
 
-[System Namespace &#40;F&#35;&#41;](System-Namespace-%5BFSharp%5D.md)
+[System Namespace](System-Namespace-%5BFSharp%5D.md)

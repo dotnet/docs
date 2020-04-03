@@ -42,7 +42,7 @@ end
 ```
 
 ## Remarks
-For general information on computation expressions and builder types, see [Computation Expressions &#40;F&#35;&#41;](../../language-reference/computation-expressions.md).
+For general information on computation expressions and builder types, see [Computation Expressions](../../language-reference/computation-expressions.md).
 
 This type is named `FSharpAsyncBuilder` in compiled assemblies. If accessing the type from a language other than F#, or through reflection, use this name.
 
@@ -81,4 +81,4 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Microsoft.FSharp.Control Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Control-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Control Namespace](Microsoft.FSharp.Control-Namespace-%5BFSharp%5D.md)

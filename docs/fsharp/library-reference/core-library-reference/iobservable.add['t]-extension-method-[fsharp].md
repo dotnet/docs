@@ -52,7 +52,7 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0
 
 ## See Also
-[Control.CommonExtensions Module &#40;F&#35;&#41;](Control.CommonExtensions-Module-%5BFSharp%5D.md)
+[Control.CommonExtensions Module](Control.CommonExtensions-Module-%5BFSharp%5D.md)
 
 [IObservable.Subscribe&lt;'T&gt; Extension Method (F#)](https://msdn.microsoft.com/library/8c8702c2-caa8-4a72-94bb-025f0922e04a)
 

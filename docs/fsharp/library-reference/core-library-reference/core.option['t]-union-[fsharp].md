@@ -45,7 +45,7 @@ end
 ## Remarks
 Use the constructors `Some` and `None`to create values of this type. Use the values in the [Option module](https://msdn.microsoft.com/library/e615e4d3-bbbb-49ba-addc-6061ea2e2f4c) to manipulate values of this type, or pattern match against the values directly. `None` values appear as the value `null` to other .NET Framework languages. Instance methods of this type appear as static methods to other .NET Framework languages because of the use of `null` as a value representation.
 
-For an overview of options, see [Options &#40;F&#35;&#41;](../../language-reference/options.md).
+For an overview of options, see [Options](../../language-reference/options.md).
 
 This type is named `FSharpOption` in compiled assemblies. If you are accessing the type from a language other than F#, or through reflection, use this name.
 
@@ -85,4 +85,4 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Microsoft.FSharp.Core Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Core-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Core Namespace](Microsoft.FSharp.Core-Namespace-%5BFSharp%5D.md)

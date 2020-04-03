@@ -13,7 +13,7 @@ For background information about LINQ queries, see:
 - [Introduction to LINQ Queries (C#)](../../csharp/programming-guide/concepts/linq/introduction-to-linq-queries.md)
 - [Writing Your First LINQ Query (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/writing-your-first-linq-query.md)
 
-## In This Section
+## In this section
 
 This section of articles provides information, including examples, about LINQ to XML queries. It comprises the following subsections:
 

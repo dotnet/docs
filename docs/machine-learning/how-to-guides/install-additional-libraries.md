@@ -88,5 +88,5 @@ No extra installation steps required. The library is installed when the NuGet pa
 1. Install the library with `Homebrew`
 
     ```bash
-    brew update && brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/f5b1ac99a7fba27c19cee0bc4f036775c889b359/Formula/libomp.rb && brew link libomp --force    
+    brew update && brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/f5b1ac99a7fba27c19cee0bc4f036775c889b359/Formula/libomp.rb && brew link libomp --force
     ```

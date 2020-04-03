@@ -6,69 +6,77 @@ public class Account
     private readonly object balanceLock = new object();
     private decimal balance;
 
-    public Account(decimal initialBalance)
-    {
-        balance = initialBalance;
-    }
+    public Account(decimal initialBalance) => balance = initialBalance;
 
     public decimal Debit(decimal amount)
     {
+        if (amount < 0)
+        {
+            throw new ArgumentOutOfRangeException(nameof(amount), "The debit amount cannot be negative.");
+        }
+
+        decimal appliedAmount = 0;
         lock (balanceLock)
         {
             if (balance >= amount)
             {
-                Console.WriteLine($"Balance before debit :{balance, 5}");
-                Console.WriteLine($"Amount to remove     :{amount, 5}");
-                balance = balance - amount;
-                Console.WriteLine($"Balance after debit  :{balance, 5}");
-                return amount;
-            }
-            else
-            {
-                return 0;
+                balance -= amount;
+                appliedAmount = amount;
             }
         }
+        return appliedAmount;
     }
 
     public void Credit(decimal amount)
     {
+        if (amount < 0)
+        {
+            throw new ArgumentOutOfRangeException(nameof(amount), "The credit amount cannot be negative.");
+        }
+
         lock (balanceLock)
         {
-            Console.WriteLine($"Balance before credit:{balance, 5}");
-            Console.WriteLine($"Amount to add        :{amount, 5}");
-            balance = balance + amount;
-            Console.WriteLine($"Balance after credit :{balance, 5}");
+            balance += amount;
+        }
+    }
+
+    public decimal GetBalance()
+    {
+        lock (balanceLock)
+        {
+            return balance;
         }
     }
 }
 
 class AccountTest
 {
-    static void Main()
+    static async Task Main()
     {
         var account = new Account(1000);
         var tasks = new Task[100];
         for (int i = 0; i < tasks.Length; i++)
         {
-            tasks[i] = Task.Run(() => RandomlyUpdate(account));
+            tasks[i] = Task.Run(() => Update(account));
         }
-        Task.WaitAll(tasks);
+        await Task.WhenAll(tasks);
+        Console.WriteLine($"Account's balance is {account.GetBalance()}");
+        // Output:
+        // Account's balance is 2000
     }
 
-    static void RandomlyUpdate(Account account)
+    static void Update(Account account)
     {
-        var rnd = new Random();
-        for (int i = 0; i < 10; i++)
+        decimal[] amounts = { 0, 2, -3, 6, -2, -1, 8, -5, 11, -6 };
+        foreach (var amount in amounts)
         {
-            var amount = rnd.Next(1, 100);
-            bool doCredit = rnd.NextDouble() < 0.5;
-            if (doCredit)
+            if (amount >= 0)
             {
                 account.Credit(amount);
             }
             else
             {
-                account.Debit(amount);
+                account.Debit(Math.Abs(amount));
             }
         }
     }

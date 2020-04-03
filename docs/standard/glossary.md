@@ -149,7 +149,7 @@ To learn more about Mono, see the [Mono documentation](https://www.mono-project.
 
 The umbrella term for [.NET Standard](#net-standard) and all [.NET implementations](#implementation-of-net) and workloads. Always fully capitalized, never ".Net".
 
-See the [.NET Guide](index.md)
+See the [.NET guide](index.yml)
 
 ## .NET Core
 
@@ -267,7 +267,7 @@ An implementation of .NET that is used for building modern, touch-enabled Window
 
 ## See also
 
-- [.NET Guide](index.md)
+- [.NET Guide](index.yml)
 - [.NET Framework Guide](../framework/index.yml)
 - [.NET Core](../core/index.yml)
 - [ASP.NET Overview](/aspnet/index#pivot=aspnet)

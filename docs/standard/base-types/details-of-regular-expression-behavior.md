@@ -65,7 +65,7 @@ The .NET Framework regular expression engine is a backtracking regular expressio
 
      For more information about positive lookahead assertions, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).
 
-- Negative lookahead: `(?!`*subexpression*`)`. This feature adds the ability to match an expression only if a subexpression fails to match. This is particularly powerful for pruning a search, because it is often simpler to provide an expression for a case that should be eliminated than an expression for cases that must be included. For example, it is difficult to write an expression for words that do not begin with "non". The following example uses negative lookahead to exclude them.
+- Negative lookahead: `(?!`*subexpression*`)`. This feature adds the ability to match an expression only if a subexpression fails to match. This is powerful for pruning a search, because it is often simpler to provide an expression for a case that should be eliminated than an expression for cases that must be included. For example, it is difficult to write an expression for words that do not begin with "non". The following example uses negative lookahead to exclude them.
 
      [!code-csharp[Conceptual.RegularExpressions.Design#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.design/cs/lookahead2.cs#3)]
      [!code-vb[Conceptual.RegularExpressions.Design#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.design/vb/lookahead2.vb#3)]

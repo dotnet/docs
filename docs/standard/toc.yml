@@ -1,5 +1,5 @@
 - name: .NET documentation
-  href: index.md
+  href: index.yml
 - name: Get started with .NET
   href: get-started.md
 - name: Tour of .NET
@@ -502,7 +502,7 @@
     items:
     - name: Overview
       href: events/observer-design-pattern.md
-      displayName: Observer Design Pattern
+      displayName: Observer design pattern
     - name: Best practices
       href: events/observer-design-pattern-best-practices.md
     - name: "How to: Implement a provider"
@@ -600,7 +600,110 @@
   - name: Retrieve information stored in attributes
     href: attributes/retrieving-information-stored-in-attributes.md  
 - name: Framework design guidelines
-  href: design-guidelines/
+  items:
+  - name: Overview
+    href: design-guidelines/index.md
+  - name: Naming guidelines
+    href: design-guidelines/naming-guidelines.md
+    items:
+    - name: Capitalization conventions
+      href: design-guidelines/capitalization-conventions.md
+    - name: General naming conventions
+      href: design-guidelines/general-naming-conventions.md
+    - name: Names of assemblies and DLLs
+      href: design-guidelines/names-of-assemblies-and-dlls.md
+    - name: Names of namespaces
+      href: design-guidelines/names-of-namespaces.md
+    - name: Names of classes, structs, and interfaces
+      href: design-guidelines/names-of-classes-structs-and-interfaces.md
+    - name: Names of type members
+      href: design-guidelines/names-of-type-members.md
+    - name: Naming parameters
+      href: design-guidelines/naming-parameters.md
+    - name: Naming resources
+      href: design-guidelines/naming-resources.md
+  - name: Type design guidelines
+    href: design-guidelines/type.md
+    items:
+    - name: Choose between class and struct
+      href: design-guidelines/choosing-between-class-and-struct.md
+    - name: Abstract class design
+      href: design-guidelines/abstract-class.md
+    - name: Static class design
+      href: design-guidelines/static-class.md
+    - name: Interface design
+      href: design-guidelines/interface.md
+    - name: Struct design
+      href: design-guidelines/struct.md
+    - name: Enum design
+      href: design-guidelines/enum.md
+    - name: Nested types
+      href: design-guidelines/nested-types.md
+  - name: Member design guidelines
+    href: design-guidelines/member.md
+    items:
+    - name: Member overloading
+      href: design-guidelines/member-overloading.md
+    - name: Property design
+      href: design-guidelines/property.md
+    - name: Constructor design
+      href: design-guidelines/constructor.md
+    - name: Event design
+      href: design-guidelines/event.md
+    - name: Field design
+      href: design-guidelines/field.md
+    - name: Extension methods
+      href: design-guidelines/extension-methods.md
+    - name: Operator overloads
+      href: design-guidelines/operator-overloads.md
+    - name: Parameter design
+      href: design-guidelines/parameter-design.md
+  - name: Design for extensibility
+    href: design-guidelines/designing-for-extensibility.md
+    items:
+    - name: Unsealed classes
+      href: design-guidelines/unsealed-classes.md
+    - name: Protected members
+      href: design-guidelines/protected-members.md
+    - name: Events and callbacks
+      href: design-guidelines/events-and-callbacks.md
+    - name: Virtual members
+      href: design-guidelines/virtual-members.md
+    - name: Abstractions (abstract types and interfaces)
+      href: design-guidelines/abstractions-abstract-types-and-interfaces.md
+    - name: Base classes for implementing abstractions
+      href: design-guidelines/base-classes-for-implementing-abstractions.md
+    - name: Sealing
+      href: design-guidelines/sealing.md
+  - name: Exception design guidelines
+    href: design-guidelines/exceptions.md
+    items:
+    - name: Exception throwing
+      href: design-guidelines/exception-throwing.md
+    - name: Use standard exception types
+      href: design-guidelines/using-standard-exception-types.md
+    - name: Exceptions and performance
+      href: design-guidelines/exceptions-and-performance.md
+  - name: Usage guidelines
+    href: design-guidelines/usage-guidelines.md
+    items:
+    - name: Arrays
+      href: design-guidelines/arrays.md
+    - name: Attributes
+      href: design-guidelines/attributes.md
+    - name: Collections
+      href: design-guidelines/guidelines-for-collections.md
+    - name: Serialization
+      href: design-guidelines/serialization.md
+    - name: System.Xml usage
+      href: design-guidelines/system-xml-usage.md
+    - name: Equality operators
+      href: design-guidelines/equality-operators.md
+  - name: Common design patterns
+    href: design-guidelines/common-design-patterns.md
+    items:
+    - name: Dependency properties
+      href: design-guidelines/dependency-properties.md  
 - name: Microsoft.Data.Sqlite
   href: data/sqlite/
 - name: XML documents and data

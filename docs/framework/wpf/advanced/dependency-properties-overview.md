@@ -122,7 +122,7 @@ Dependency properties, or the <xref:System.Windows.DependencyObject> class, do n
 ### Styles
 Styles and templates are two of the chief motivating scenarios for using dependency properties. Styles are particularly useful for setting properties that define application [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)]. Styles are typically defined as resources in XAML. Styles interact with the property system because they typically contain "setters" for particular properties, as well as "triggers" that change a property value based on the real-time value for another property.
 
-The following example creates a very simple style (which would be defined inside a <xref:System.Windows.FrameworkElement.Resources%2A> dictionary, not shown), then applies that style directly to the <xref:System.Windows.FrameworkElement.Style%2A> property for a <xref:System.Windows.Controls.Button>. The setter within the style sets the <xref:System.Windows.Controls.Control.Background%2A> property for a styled <xref:System.Windows.Controls.Button> to green.
+The following example creates a simple style (which would be defined inside a <xref:System.Windows.FrameworkElement.Resources%2A> dictionary, not shown), then applies that style directly to the <xref:System.Windows.FrameworkElement.Style%2A> property for a <xref:System.Windows.Controls.Button>. The setter within the style sets the <xref:System.Windows.Controls.Control.Background%2A> property for a styled <xref:System.Windows.Controls.Button> to green.
 
 [!code-xaml[PropertiesOvwSupport#SimpleStyleDef](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page3.xaml#simplestyledef)]
 
@@ -140,7 +140,7 @@ The following example animates the <xref:System.Windows.Controls.Control.Backgro
 For more information on animating properties, see [Animation Overview](../graphics-multimedia/animation-overview.md) and [Storyboards Overview](../graphics-multimedia/storyboards-overview.md).
 
 ### Metadata overrides
-You can change certain behaviors of a dependency property by overriding the metadata for that property when you derive from the class that originally registers the dependency property. Overriding metadata relies on the <xref:System.Windows.DependencyProperty> identifier. Overriding metadata does not require re-implementing the property. The metadata change is handled natively by the property system; each class potentially holds individual metadata for all properties that are inherited from base classes, on a per-type basis.
+You can change certain behaviors of a dependency property by overriding the metadata for that property when you derive from the class that originally registers the dependency property. Overriding metadata relies on the <xref:System.Windows.DependencyProperty> identifier. Overriding metadata does not require reimplementing the property. The metadata change is handled natively by the property system; each class potentially holds individual metadata for all properties that are inherited from base classes, on a per-type basis.
 
 The following example overrides metadata for a dependency property <xref:System.Windows.FrameworkElement.DefaultStyleKey%2A>. Overriding this particular dependency property metadata is part of an implementation pattern that creates controls that can use default styles from themes.
 
@@ -177,18 +177,18 @@ In principle, for the first button, the property is set twice, but only one valu
 [!code-xaml[PropertiesOvwSupport#MiniPrecedence](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page3.xaml#miniprecedence)]  
 
 ### Why does dependency property precedence exist?
-Typically, you would not want styles to always apply and to obscure even a locally set value of an individual element (otherwise, it would be very difficult to use either styles or elements in general). Therefore, the values that come from styles operate at a lower precedent than a locally set value. For a more thorough listing of dependency properties and where a dependency property effective value might come from, see [Dependency Property Value Precedence](dependency-property-value-precedence.md).
+Typically, you would not want styles to always apply and to obscure even a locally set value of an individual element (otherwise, it would be difficult to use either styles or elements in general). Therefore, the values that come from styles operate at a lower precedent than a locally set value. For a more thorough listing of dependency properties and where a dependency property effective value might come from, see [Dependency Property Value Precedence](dependency-property-value-precedence.md).
 
 > [!NOTE]
 > There are a number of properties defined on WPF elements that are not dependency properties. By and large, properties were implemented as dependency properties only when there were needs to support at least one of the scenarios enabled by the property system: data binding, styling, animation, default value support, inheritance, attached properties, or invalidation.
 
 ## Learning more about dependency properties  
 
-- An attached property is a type of property that supports a specialized syntax in XAML. An attached property often does not have a 1:1 correspondence with a common language runtime (CLR) property, and is not necessarily a dependency property. The typical purpose of a attached property is to allow child elements to report property values to a parent element, even if the parent element and child element do not both possess that property as part of the class members listings. One primary scenario is to enable child elements to inform the parent how they should be presented in [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]; for an example, see <xref:System.Windows.Controls.DockPanel.Dock%2A> or <xref:System.Windows.Controls.Canvas.Left%2A>. For details, see [Attached Properties Overview](attached-properties-overview.md).
+- An attached property is a type of property that supports a specialized syntax in XAML. An attached property often does not have a 1:1 correspondence with a common language runtime (CLR) property, and is not necessarily a dependency property. The typical purpose of an attached property is to allow child elements to report property values to a parent element, even if the parent element and child element do not both possess that property as part of the class members listings. One primary scenario is to enable child elements to inform the parent how they should be presented in [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]; for an example, see <xref:System.Windows.Controls.DockPanel.Dock%2A> or <xref:System.Windows.Controls.Canvas.Left%2A>. For details, see [Attached Properties Overview](attached-properties-overview.md).
 
 - Component developers or application developers may wish to create their own dependency property, in order to enable capabilities such as data binding or styles support, or for invalidation and value coercion support. For details, see [Custom Dependency Properties](custom-dependency-properties.md).
 
-- Dependency properties should generally be considered to be public properties, accessible or at least discoverable by any caller that has access to an instance. For more information, see [Dependency Property Security](dependency-property-security.md).
+- Consider dependency properties to be public properties, accessible or at least discoverable by any caller that has access to an instance. For more information, see [Dependency Property Security](dependency-property-security.md).
 
 ## See also
 

@@ -105,8 +105,8 @@ For an overview of arrays in F#, see [Arrays](../../../language-reference/arrays
 
 [Arrays](../../../language-reference/arrays.md)
 
-[Collections.Array2D Module](../Collections.Array2D-Module-%5BFSharp%5D.md)
+[Array2D Module](../array2d/index.md)
 
-[Collections.Array3D Module](../index.md)
+[Array3D Module](../array2d/index.md)
 
-[Collections.Array4D Module](../Collections.Array4D-Module-%5BFSharp%5D.md)
+[Array4D Module](../array2d/index.md)

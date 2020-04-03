@@ -1,13 +1,6 @@
 ---
 title: Array4D.length1<'T> Function (F#)
 description: Array4D.length1<'T> Function (F#)
-keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
-ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: visual-studio-dev14
-ms.technology: devlang-fsharp
 ms.assetid: 32b3bbb5-4246-4fd2-a490-36aac1a35ed9 
 ---
 

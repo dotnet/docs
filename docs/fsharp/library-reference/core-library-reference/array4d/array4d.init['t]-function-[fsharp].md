@@ -1,13 +1,6 @@
 ---
 title: Array4D.init<'T> Function (F#)
 description: Array4D.init<'T> Function (F#)
-keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
-ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: visual-studio-dev14
-ms.technology: devlang-fsharp
 ms.assetid: fb831dfd-b47b-44d5-9976-065a98ccb273 
 ---
 

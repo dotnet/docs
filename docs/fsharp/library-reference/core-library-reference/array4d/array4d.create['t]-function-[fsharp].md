@@ -1,13 +1,6 @@
 ---
 title: Array4D.create<'T> Function (F#)
 description: Array4D.create<'T> Function (F#)
-keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
-ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: visual-studio-dev14
-ms.technology: devlang-fsharp
 ms.assetid: 345cc6db-36cd-4ca9-b592-855f618e2839 
 ---
 

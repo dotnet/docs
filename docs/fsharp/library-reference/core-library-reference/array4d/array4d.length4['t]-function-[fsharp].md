@@ -1,19 +1,12 @@
 ---
-title: Array4D.length2<'T> Function (F#)
-description: Array4D.length2<'T> Function (F#)
-keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
-ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: visual-studio-dev14
-ms.technology: devlang-fsharp
-ms.assetid: e5f7e754-99e0-43f9-87ab-196244b4b93c 
+title: Array4D.length4<'T> Function (F#)
+description: Array4D.length4<'T> Function (F#)
+ms.assetid: 155365b9-b6fe-4b22-bd71-23e89448dc4b 
 ---
 
-# Array4D.length2<'T> Function (F#)
+# Array4D.length4<'T> Function (F#)
 
-Returns the length of an array in the second dimension.
+Returns the length of an array in the fourth dimension.
 
 **Namespace/Module Path:** Microsoft.FSharp.Collections.Array4D
 
@@ -24,10 +17,10 @@ Returns the length of an array in the second dimension.
 
 ```fsharp
 // Signature:
-Array4D.length2 : 'T [,,,] -> int
+Array4D.length4 : 'T [,,,] -> int
 
 // Usage:
-Array4D.length2 array
+Array4D.length4 array
 ```
 
 #### Parameters
@@ -39,10 +32,10 @@ The input array.
 
 ## Return Value
 
-The length of the array in the second dimension.
+The length of the array in the fourth dimension.
 
 ## Remarks
-This function is named `Length2` in compiled assemblies. If accessing the function from a language other than F#, or through reflection, use this name.
+This function is named `Length4` in compiled assemblies. If you are accessing the function from a .NET language other than F#, or through reflection, use this name.
 
 
 ## Platforms

@@ -1,13 +1,6 @@
 ---
 title: Array4D.get<'T> Function (F#)
 description: Array4D.get<'T> Function (F#)
-keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
-ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: visual-studio-dev14
-ms.technology: devlang-fsharp
 ms.assetid: 5c67dd23-e864-4877-910e-ce3a9a76d07e 
 ---
 

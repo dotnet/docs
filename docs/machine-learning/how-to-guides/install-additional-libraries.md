@@ -1,13 +1,13 @@
 ---
-title: Install ML.NET libraries and packages
-description: Learn how to install the required libraries and packages to run ML.NET
+title: Install extra ML.NET dependencies
+description: Learn how to install any native libraries that ML.NET packages are dependent on but do not get installed with the NuGet packages
 ms.date: 04/02/2020
 author: natke
 ms.author: nakersha
 ms.custom: how-to
 ---
 
-# Install ML.NET libraries and packages
+# Install extra ML.NET dependencies
 
 In most cases, on all operating systems, installing ML.NET is as simple as referencing the appropriate NuGet package.
 

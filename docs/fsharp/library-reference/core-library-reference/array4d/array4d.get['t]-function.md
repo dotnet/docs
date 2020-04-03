@@ -1,17 +1,12 @@
 ---
 title: Array4D.get<'T> Function (F#)
 description: Array4D.get<'T> Function (F#)
-ms.assetid: 5c67dd23-e864-4877-910e-ce3a9a76d07e 
+ms.date: 4/3/2020
 ---
 
 # Array4D.get<'T> Function (F#)
 
 Fetches an element from a 4D array.
-
-**Namespace/Module Path:** Microsoft.FSharp.Collections.Array4D
-
-**Assembly:** FSharp.Core (in FSharp.Core.dll)
-
 
 ## Syntax
 
@@ -67,17 +62,7 @@ You can also use the syntax `array.[index1,index2,index3,index4]`.
 
 This function is named `Get` in compiled assemblies. If you are accessing the function from a language other than F#, or through reflection, use this name.
 
-
-## Platforms
-Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
-
-
-## Version Information
-**F# Core Library Versions**
-
-Supported in: 2.0, 4.0, Portable
-
 ## See Also
-[Collections.Array4D Module](Collections.Array4D-Module-%5BFSharp%5D.md)
+[Array4D Module](index.md)
 
 [Microsoft.FSharp.Collections Namespace](Microsoft.FSharp.Collections-Namespace.md)

@@ -1,17 +1,12 @@
 ---
 title: Array4D.set<'T> Function (F#)
 description: Array4D.set<'T> Function (F#)
-ms.assetid: 20772e86-82a1-4430-b259-5b9eda08a42f 
+ms.date: 4/3/2020
 ---
 
 # Array4D.set<'T> Function (F#)
 
 Sets the value of an element in an array.
-
-**Namespace/Module Path**: Microsoft.FSharp.Collections.Array4D
-
-**Assembly**: FSharp.Core (in FSharp.Core.dll)
-
 
 ## Syntax
 
@@ -70,17 +65,7 @@ You can also use the syntax `array.[index1,index2,index3,index4] <- value`.
 
 This function is named `Set` in compiled assemblies. If you are accessing the function from a language other than F#, or through reflection, use this name.
 
-
-## Platforms
-Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
-
-
-## Version Information
-**F# Core Library Versions**
-
-Supported in: 2.0, 4.0, Portable
-
 ## See Also
-[Collections.Array4D Module](Collections.Array4D-Module-%5BFSharp%5D.md)
+[Array4D Module](index.md)
 
 [Microsoft.FSharp.Collections Namespace](Microsoft.FSharp.Collections-Namespace.md)

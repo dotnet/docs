@@ -1,17 +1,12 @@
 ---
 title: Array4D.length2<'T> Function (F#)
 description: Array4D.length2<'T> Function (F#)
-ms.assetid: e5f7e754-99e0-43f9-87ab-196244b4b93c 
+ms.date: 4/3/2020
 ---
 
 # Array4D.length2<'T> Function (F#)
 
 Returns the length of an array in the second dimension.
-
-**Namespace/Module Path:** Microsoft.FSharp.Collections.Array4D
-
-**Assembly:** FSharp.Core (in FSharp.Core.dll)
-
 
 ## Syntax
 
@@ -37,17 +32,7 @@ The length of the array in the second dimension.
 ## Remarks
 This function is named `Length2` in compiled assemblies. If accessing the function from a language other than F#, or through reflection, use this name.
 
-
-## Platforms
-Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
-
-
-## Version Information
-**F# Core Library Versions**
-
-Supported in: 2.0, 4.0, Portable
-
 ## See Also
-[Collections.Array4D Module](Collections.Array4D-Module-%5BFSharp%5D.md)
+[Array4D Module](index.md)
 
 [Microsoft.FSharp.Collections Namespace](Microsoft.FSharp.Collections-Namespace.md)

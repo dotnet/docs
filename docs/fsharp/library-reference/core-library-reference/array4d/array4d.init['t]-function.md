@@ -1,17 +1,12 @@
 ---
 title: Array4D.init<'T> Function (F#)
 description: Array4D.init<'T> Function (F#)
-ms.assetid: fb831dfd-b47b-44d5-9976-065a98ccb273 
+ms.date: 4/3/2020
 ---
 
 # Array4D.init<'T> Function (F#)
 
 Creates an array given the dimensions and a generator function to compute the elements.
-
-**Namespace/Module Path:** Microsoft.FSharp.Collections.Array4D
-
-**Assembly:** FSharp.Core (in FSharp.Core.dll)
-
 
 ## Syntax
 
@@ -65,17 +60,7 @@ The created array.
 ## Remarks
 This function is named `Initialize` in the assembly. If you are accessing the function from a language other than F#, or through reflection, use this name.
 
-
-## Platforms
-Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
-
-
-## Version Information
-**F# Core Library Versions**
-
-Supported in: 2.0, 4.0, Portable
-
 ## See Also
-[Collections.Array4D Module](Collections.Array4D-Module-%5BFSharp%5D.md)
+[Array4D Module](index.md)
 
 [Microsoft.FSharp.Collections Namespace](Microsoft.FSharp.Collections-Namespace.md)

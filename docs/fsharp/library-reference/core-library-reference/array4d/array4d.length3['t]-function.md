@@ -1,17 +1,12 @@
 ---
 title: Array4D.length3<'T> Function (F#)
 description: Array4D.length3<'T> Function (F#)
-ms.assetid: 74d3414b-d676-4744-bfb7-0da8d71fede6 
+ms.date: 4/3/2020
 ---
 
 # Array4D.length3<'T> Function (F#)
 
 Returns the length of an array in the third dimension.
-
-**Namespace/Module Path:** Microsoft.FSharp.Collections.Array4D
-
-**Assembly:** FSharp.Core (in FSharp.Core.dll)
-
 
 ## Syntax
 
@@ -37,17 +32,7 @@ The length of the array in the third dimension.
 ## Remarks
 This function is named `Length3` in compiled assemblies. If you are accessing the function from a .NET language other than F#, or through reflection, use this name.
 
-
-## Platforms
-Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
-
-
-## Version Information
-**F# Core Library Versions**
-
-Supported in: 2.0, 4.0, Portable
-
 ## See Also
-[Collections.Array4D Module](Collections.Array4D-Module-%5BFSharp%5D.md)
+[Array4D Module](index.md)
 
 [Microsoft.FSharp.Collections Namespace](Microsoft.FSharp.Collections-Namespace.md)

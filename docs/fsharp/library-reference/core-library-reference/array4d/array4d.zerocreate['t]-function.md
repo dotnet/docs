@@ -1,17 +1,12 @@
 ---
 title: Array4D.zeroCreate<'T> Function (F#)
 description: Array4D.zeroCreate<'T> Function (F#)
-ms.assetid: 2083531d-1497-4ecb-aa32-2f73d4d0f61d 
+ms.date: 4/3/2020
 ---
 
 # Array4D.zeroCreate<'T> Function (F#)
 
 Creates an array where the entries are initially the default value.
-
-**Namespace/Module Path:** Microsoft.FSharp.Collections.Array4D
-
-**Assembly:** FSharp.Core (in FSharp.Core.dll)
-
 
 ## Syntax
 
@@ -58,17 +53,7 @@ The created array.
 ## Remarks
 This function is named `ZeroCreate` in compiled assemblies. If you are accessing the function from a language other than F#, or through reflection, use this name.
 
-
-## Platforms
-Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
-
-
-## Version Information
-**F# Core Library Versions**
-
-Supported in: 2.0, 4.0, Portable
-
 ## See Also
-[Collections.Array4D Module](Collections.Array4D-Module-%5BFSharp%5D.md)
+[Array4D Module](index.md)
 
 [Microsoft.FSharp.Collections Namespace](Microsoft.FSharp.Collections-Namespace.md)

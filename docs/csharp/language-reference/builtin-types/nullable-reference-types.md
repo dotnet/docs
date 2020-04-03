@@ -46,13 +46,13 @@ try
 
 The examples in the previous section illustrate the nature of nullable reference types: Nullable reference types are not new class types, but rather annotations on existing reference types. The compiler uses those annotations to help you find potential null reference errors in your code. There is no runtime difference between a non-nullable reference type and a nullable reference type. The compiler does not add any runtime checking for non-nullable reference types. The benefits are in the compile time analysis and warnings generated that can help you find and fix potential null errors in your code. You declare your intent, and the compiler warns you when your code violates that intent.
 
-In a nullable enabled context, the compiler performs static analysis on variables of reference type, both nullable and non-nullable. The compiler tracks the nullable state of each reference variable as either *not null* or *maybe null*. <<<START HERE>>>
+In a nullable enabled context, the compiler performs static analysis on variables of reference type, both nullable and non-nullable. The compiler tracks the nullable state of each reference variable as either *not null* or *maybe null*. The default state of a non-nullable reference is *not null*. The default state of a nullable reference is *maybe null*. The compiler issues different warnings for nullable reference types and non-nullable refernce types.
 
-- default state of nullable is "maybe null". Static analysis can determine it's not null.
-- default state of non-nullable is "not null". Static analysis warns if could be null.
+Non-nullable reference types should always be safe to dereference because their null state is *not null*. To enforce that rule, the compiler issues warnings if a non-nullable reference type is not initialized to a non-null value. Local variables must be assigned where they are declared. Every constructor must assign every field, either in its body, a called constructor, or using a field initializer. Warnings are also issued if a non-nullable reference is assigned to a reference whose state is *maybe null*. However, because a non-nullable reference is *not null*, no warnings are issued when those variables are de-referenced.
 
-Examples on warnings for non nullable:
+Nullable reference types may be initialized or assigned to `null`. Therefore, static analysis must determine that a variable is *not null* before it is dereferenced. If a nullable reference is determined to be *maybe null*, it cannot be assigned to a non-nullable reference variable.
 
+```csharp
 - When a local variable is not initialized to a non-null value.
 - When a constructor does not assign a non-null value to all fields of a non-nullable reference type. Note that these may be assigned in the body of the constructor, in a field initializer, or in a chained constructor (called using the `: this(...)` syntax).
 
@@ -60,16 +60,13 @@ Examples on warnings for nullable:
 
 - dereference when maybe-null.
 - assign to non-nullable when maybe null.
+```
 
-API instrumentation:
-
-The compiler can use the language rules to catch many nullable warnings. HOwever, many APIs that do null checks aren't known to the language. Attributes can help.
+The preceding examples demonstrate the compiler's static analysis to determine the null state of reference variables. The compiler can apply all language rules for null checks and assignments to inform its analysis. However, the compiler cannot make assumptions about the semantics of methods or properties. There are a number of attributes you can add to those APIs to inform the compiler about the semantics of arguments and return values. See the article on [Nullable attributes](../../nullable-attributes.md) for more information.
 
 ## Setting the nullable context
 
-Using the project setting
-
-Using the pragmas
+There are two ways to control the nullable context. At the project level, you can add the `<Nullable>Enable</Nullable>` project setting. In a single C# source file, you can add the `#nullable enable` pragma to enable the nullable context. See the article on [setting a nullable strategy](../../nullable-attributes.md).
 
  ## C# language specification
 

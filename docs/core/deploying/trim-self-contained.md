@@ -14,7 +14,7 @@ When it comes to deploying your application, size is often an important factor. 
 Depending on the complexity of the application, only a subset of the runtime is required to run the application. These unused parts of the runtime are unnecessary and can be trimmed from the packaged application.
 
 > [!NOTE]
-> Trimming is an experimental feature in .NET Core 3.0. This feature isn't available for framework-dependent deployments (FDDs) and framework-dependent executables (FDEs) since they don't include .NET Core assemblies.
+> Trimming is an experimental feature in .NET Core 3.1 and is _only_ available to applications that are published self-contained.
 
 ## Trim your application
 

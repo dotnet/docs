@@ -1,7 +1,7 @@
 ---
 title: Array2D.zeroCreate<'T> Function (F#)
 description: Array2D.zeroCreate<'T> Function (F#)
-ms.assetid: 121e8a99-20c1-4622-abfc-d51b01828fed 
+ms.date: 1/3/2020
 ---
 
 # Array2D.zeroCreate<'T> Function (F#)
@@ -41,16 +41,6 @@ Returns the created array.
 ## Remarks
 
 This function is named `ZeroCreate` in compiled assemblies. If you are accessing the function from a language other than F#, or through reflection, use this name.
-
-## Platforms
-
-Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
-
-## Version Information
-
-**F# Core Library Versions**
-
-Supported in: 2.0, 4.0, Portable
 
 ## See Also
 

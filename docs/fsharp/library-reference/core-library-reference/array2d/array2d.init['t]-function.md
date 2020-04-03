@@ -51,6 +51,6 @@ The following code demonstrates the use of `Array2D.init` to create a two-dimens
 
 ## See Also
 
-[Collections.Array2D Module](Collections.Array2D-Module.md)
+[Collections.Array2D Module](index.md)
 
 [Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace.md)

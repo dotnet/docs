@@ -66,6 +66,6 @@ This function is named `CopyTo` in compiled assemblies. If you are accessing the
 
 ## See Also
 
-[Collections.Array2D Module](Collections.Array2D-Module.md)
+[Collections.Array2D Module](index.md)
 
 [Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace.md)

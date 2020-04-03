@@ -34,6 +34,6 @@ This function is named `Iterate` in compiled assemblies. If you are accessing th
 
 
 ## See Also
-[Collections.Array2D Module](Collections.Array2D-Module.md)
+[Collections.Array2D Module](index.md)
 
 [Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace.md)

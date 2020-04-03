@@ -32,6 +32,6 @@ The zero-based output array.
 This function is named `Rebase` in compiled assemblies. If you are accessing the function from a .NET language other than F#, or through reflection, use this name.
 
 ## See Also
-[Collections.Array2D Module](Collections.Array2D-Module.md)
+[Collections.Array2D Module](index.md)
 
 [Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace.md)

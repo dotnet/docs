@@ -54,6 +54,6 @@ Supported in: 2.0, 4.0, Portable
 
 ## See Also
 
-[Collections.Array2D Module](Collections.Array2D-Module.md)
+[Collections.Array2D Module](index.md)
 
 [Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace.md)

@@ -55,6 +55,6 @@ This function is named `CreateBased` in compiled assemblies. If you are accessin
 
 ## See Also
 
-[Collections.Array2D Module](Collections.Array2D-Module.md)
+[Collections.Array2D Module](index.md)
 
 [Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace.md)

@@ -32,6 +32,6 @@ The base index of the second dimension of the array.
 This function is named `Base2` in the .NET assembly. If you are accessing the function from a language other than F#, or through reflection, use this name.
 
 ## See Also
-[Collections.Array2D Module](Collections.Array2D-Module.md)
+[Collections.Array2D Module](index.md)
 
 [Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace.md)

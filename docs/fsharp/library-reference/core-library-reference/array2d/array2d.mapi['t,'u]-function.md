@@ -39,6 +39,6 @@ For non-zero-based arrays the basing on an input array will be propagated to the
 This function is named `MapIndexed` in compiled assemblies. If you are accessing the member from a language other than F#, or through reflection, use this name.
 
 ## See Also
-[Collections.Array2D Module](Collections.Array2D-Module.md)
+[Collections.Array2D Module](index.md)
 
 [Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace.md)

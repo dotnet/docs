@@ -9,11 +9,11 @@ ms.custom: how-to
 
 # Install ML.NET libraries and packages
 
-In most cases, on all operating systems, installing ML.NET is as simple as referencing the appropriate nuget package.
+In most cases, on all operating systems, installing ML.NET is as simple as referencing the appropriate NuGet package.
 
 `dotnet install package Microsoft.ML`
 
-In some cases though, there are additional installation requirements, especially when native components are required. This document describes the installation requirements for those cases. The sections are broken down by the specific `Microsoft.ML.*` nuget package that has the additional dependency.
+In some cases though, there are additional installation requirements, especially when native components are required. This document describes the installation requirements for those cases. The sections are broken down by the specific `Microsoft.ML.*` NuGet package that has the additional dependency.
 
 ## Microsoft.ML.TimeSeries, Microsoft.ML.AutoML
 
@@ -21,7 +21,7 @@ Both of these packages have a dependency on `Microsoft.ML.MKL.Redist`, which has
 
 ### Windows
 
-No extra installation steps required. The library is installed when the nuget is added to the project.
+No extra installation steps required. The library is installed when the NuGet package is added to the project.
 
 ### Linux
 
@@ -85,7 +85,8 @@ No extra installation steps required. The library is installed when the nuget is
 
 ### Mac
 
+1. Install the library with `Homebrew`
+
     ```bash
     brew update && brew install https://raw.githubusercontent.com/Homebrew/homebrew-core/f5b1ac99a7fba27c19cee0bc4f036775c889b359/Formula/libomp.rb && brew link libomp --force    
     ```
-    

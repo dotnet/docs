@@ -9,7 +9,7 @@ ms.assetid: b92591aa-3cfb-490e-99f6-da8de335e362
 
 # How to find an element with a specific attribute (LINQ to XML)
 
-This topic provides examples of how to find an element whose attribute has a specific value.
+This article provides examples of how to find an element whose attribute has a specific value.
 
 ## Example: Find an element whose attribute has a specific value
 

@@ -1,13 +1,13 @@
 ---
-title: Trim self-contained deployments and executables
-description: Learn how to trim self-contained deployments and executables to reduce their size. 
+title: Trim self-contained applications
+description: Learn how to trim self-contained apps to reduce their size. .NET Core bundles the runtime with an app that is published self-contained and generally includes more of the runtime then is necessary.
 author: jamshedd
 ms.author: jamshedd
 ms.date: 01/23/2020
 ---
 # Trim self-contained deployments and executables
 
-When publishing self-contained deployments (SCD) or self-contained executables (SCE), the .NET Core runtime is bundled together with the application. This bundling adds a significant amount of content to your packaged application.
+When publishing an application self-contained, the .NET Core runtime is bundled together with the application. This bundling adds a significant amount of content to your packaged application.
 
 When it comes to deploying your application, size is often an important factor. Keeping the size of the package application as small as possible is typically a goal for application developers.
 

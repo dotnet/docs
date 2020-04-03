@@ -41,4 +41,4 @@ end
 |[remove_Invalidate](https://msdn.microsoft.com/library/222c81e5-4b1b-49bd-9d38-a89d5fbc93f2) : **System.EventHandler** -&gt; unit|Remove an event handler for the [Invalidate](https://msdn.microsoft.com/library/5a8d95dc-e462-4f07-90e4-9b8dfb82d100) event.|
 
 ## See Also
-[Microsoft.FSharp.Core.CompilerServices Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Core.CompilerServices-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Core.CompilerServices Namespace](Microsoft.FSharp.Core.CompilerServices-Namespace-%5BFSharp%5D.md)

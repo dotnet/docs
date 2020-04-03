@@ -59,7 +59,7 @@ Supported in: 2.0, 4.0, Portable
 
 
 ## See Also
-[Operators.Checked Module &#40;F&#35;&#41;](Operators.Checked-Module-%5BFSharp%5D.md)
+[Operators.Checked Module](Operators.Checked-Module-%5BFSharp%5D.md)
 
-[Core.Operators Module &#40;F&#35;&#41;](Core.Operators-Module-%5BFSharp%5D.md)
+[Core.Operators Module](Core.Operators-Module-%5BFSharp%5D.md)
 

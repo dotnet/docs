@@ -101,7 +101,7 @@ For an overview of arrays in F#, see [Arrays](../../../language-reference/arrays
 
 ## See Also
 
-[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace.md)
 
 [Arrays](../../../language-reference/arrays.md)
 

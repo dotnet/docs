@@ -23,19 +23,19 @@ The F# Core Library (`FSharp.Core.dll`) contains functions that support the core
 
 |Title|Description|
 |-----|-----------|
-|[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)|Describes the F# collection namespace, including arrays, lists, maps, sequences and sets.|
-|[Microsoft.FSharp.Control Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Control-Namespace-%5BFSharp%5D.md)|Describes the F# control namespace, including support for asynchronous programming, message passing, and event-driven programming.|
-|[Microsoft.FSharp.Core Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Core-Namespace-%5BFSharp%5D.md)|Describes the F# core namespace, including core operators, attributes, and types.|
-|[Microsoft.FSharp.Core.CompilerServices Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Core.CompilerServices-Namespace-%5BFSharp%5D.md)|Describes internal libraries used by the F# compiler.|
-|[Microsoft.FSharp.Data Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Data-Namespace-%5BFSharp%5D.md)|Describes the F# data namespace, which contains type providers for data access, as well as units of measure.|
-|[Microsoft.FSharp.Linq Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Linq-Namespace-%5BFSharp%5D.md)|Describes the F# Linq namespace, which includes types that support F# query expressions.|
-|[Microsoft.FSharp.NativeInterop Namespace &#40;F&#35;&#41;](Microsoft.FSharp.NativeInterop-Namespace-%5BFSharp%5D.md)|Describes library support for F# native interoperability.|
-|[Microsoft.FSharp.Quotations Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Quotations-Namespace-%5BFSharp%5D.md)|Describes the F# quotations library.|
-|[Microsoft.FSharp.Reflection Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Reflection-Namespace-%5BFSharp%5D.md)|Describes the F# reflection API, which extends .NET Framework reflection to support F# types.|
-|[System Namespace &#40;F&#35;&#41;](System-Namespace-%5BFSharp%5D.md)|Describes extensions to the .NET Framework **System** namespace that support F# when targeting the .NET Framework 2.0 runtime.|
-|[System.Collections Namespace &#40;F&#35;&#41;](System.Collections-Namespace-%5BFSharp%5D.md)|Describes extensions to the . NET Framework **System.Collections** namespace that support F# when targeting the .NET Framework 2.0 runtime.|
-|[System.Numerics Namespace &#40;F&#35;&#41;](System.Numerics-Namespace-%5BFSharp%5D.md)|Describes extensions to the .NET **System.Numerics** namespace that support F# when targeting the .NET Framework 2.0 runtime.|
-|[System.Threading Namespace &#40;F&#35;&#41;](System.Threading-Namespace-%5BFSharp%5D.md)|Describes extensions to the .NET Framework **System.Threading** namespace that support F# when targeting the .NET Framework 2.0 runtime.|
+|[Microsoft.FSharp.Collections Namespace](Microsoft.FSharp.Collections-Namespace.md)|Describes the F# collection namespace, including arrays, lists, maps, sequences and sets.|
+|[Microsoft.FSharp.Control Namespace](Microsoft.FSharp.Control-Namespace-%5BFSharp%5D.md)|Describes the F# control namespace, including support for asynchronous programming, message passing, and event-driven programming.|
+|[Microsoft.FSharp.Core Namespace](Microsoft.FSharp.Core-Namespace-%5BFSharp%5D.md)|Describes the F# core namespace, including core operators, attributes, and types.|
+|[Microsoft.FSharp.Core.CompilerServices Namespace](Microsoft.FSharp.Core.CompilerServices-Namespace-%5BFSharp%5D.md)|Describes internal libraries used by the F# compiler.|
+|[Microsoft.FSharp.Data Namespace](Microsoft.FSharp.Data-Namespace-%5BFSharp%5D.md)|Describes the F# data namespace, which contains type providers for data access, as well as units of measure.|
+|[Microsoft.FSharp.Linq Namespace](Microsoft.FSharp.Linq-Namespace-%5BFSharp%5D.md)|Describes the F# Linq namespace, which includes types that support F# query expressions.|
+|[Microsoft.FSharp.NativeInterop Namespace](Microsoft.FSharp.NativeInterop-Namespace-%5BFSharp%5D.md)|Describes library support for F# native interoperability.|
+|[Microsoft.FSharp.Quotations Namespace](Microsoft.FSharp.Quotations-Namespace-%5BFSharp%5D.md)|Describes the F# quotations library.|
+|[Microsoft.FSharp.Reflection Namespace](Microsoft.FSharp.Reflection-Namespace-%5BFSharp%5D.md)|Describes the F# reflection API, which extends .NET Framework reflection to support F# types.|
+|[System Namespace](System-Namespace-%5BFSharp%5D.md)|Describes extensions to the .NET Framework **System** namespace that support F# when targeting the .NET Framework 2.0 runtime.|
+|[System.Collections Namespace](System.Collections-Namespace-%5BFSharp%5D.md)|Describes extensions to the . NET Framework **System.Collections** namespace that support F# when targeting the .NET Framework 2.0 runtime.|
+|[System.Numerics Namespace](System.Numerics-Namespace-%5BFSharp%5D.md)|Describes extensions to the .NET **System.Numerics** namespace that support F# when targeting the .NET Framework 2.0 runtime.|
+|[System.Threading Namespace](System.Threading-Namespace-%5BFSharp%5D.md)|Describes extensions to the .NET Framework **System.Threading** namespace that support F# when targeting the .NET Framework 2.0 runtime.|
 
 ## See Also
 

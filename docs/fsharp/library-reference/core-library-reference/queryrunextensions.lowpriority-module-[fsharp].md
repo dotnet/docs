@@ -45,4 +45,4 @@ Supported in: 4.0, Portable
 
 
 ## See Also
-[Core.ExtraTopLevelOperators Module &#40;F&#35;&#41;](Core.ExtraTopLevelOperators-Module-%5BFSharp%5D.md)
+[Core.ExtraTopLevelOperators Module](Core.ExtraTopLevelOperators-Module-%5BFSharp%5D.md)

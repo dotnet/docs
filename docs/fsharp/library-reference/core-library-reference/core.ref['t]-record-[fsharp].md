@@ -37,7 +37,7 @@ end
 ```
 
 ## Remarks
-For an overview of reference cells, see [Reference Cells &#40;F&#35;&#41;](../../language-reference/reference-cells.md).
+For an overview of reference cells, see [Reference Cells](../../language-reference/reference-cells.md).
 
 This type is named `FSharpRef` in compiled assemblies. If you are accessing the type from a language other than F#, or through reflection, use this name.
 
@@ -66,4 +66,4 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Microsoft.FSharp.Core Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Core-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Core Namespace](Microsoft.FSharp.Core-Namespace-%5BFSharp%5D.md)

@@ -97,8 +97,8 @@ For an overview of sequences in F#, see [Sequences](../../language-reference/seq
 |[zip3](https://msdn.microsoft.com/library/ef13bebb-22ae-4eb9-873b-87dd29154d16)<br />**: seq&lt;'T1&gt; -&gt; seq&lt;'T2&gt; -&gt; seq&lt;'T3&gt; -&gt; seq&lt;'T1 &#42; 'T2 &#42; 'T3&gt;**|Combines the three sequences into a list of triples. The sequences need not have equal lengths: when one sequence is exhausted any remaining elements in the other sequences are ignored.|
 
 ## See Also
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](Microsoft.FSharp.Collections-Namespace.md)
 
 [Sequences](../../language-reference/sequences.md)
 
-[Collections.seq&#60;'T&#62; Type Abbreviation &#40;F&#35;&#41;](Collections.seq%5B%27T%5D-Type-Abbreviation-%5BFSharp%5D.md)
+[Collections.seq&#60;'T&#62; Type Abbreviation](Collections.seq%5B%27T%5D-Type-Abbreviation-%5BFSharp%5D.md)

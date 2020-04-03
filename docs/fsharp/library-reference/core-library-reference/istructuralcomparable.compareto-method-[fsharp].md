@@ -63,6 +63,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0
 
 ## See Also
-[Collections.IStructuralComparable Interface &#40;F&#35;&#41;](Collections.IStructuralComparable-Interface-%5BFSharp%5D.md)
+[Collections.IStructuralComparable Interface](Collections.IStructuralComparable-Interface-%5BFSharp%5D.md)
 
-[System.Collections Namespace &#40;F&#35;&#41;](System.Collections-Namespace-%5BFSharp%5D.md)
+[System.Collections Namespace](System.Collections-Namespace-%5BFSharp%5D.md)

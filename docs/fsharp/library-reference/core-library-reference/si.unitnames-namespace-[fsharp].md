@@ -27,7 +27,7 @@ module UnitNames
 ```
 
 ## Remarks
-This module contains SI units by name. Unit symbols are contained in [SI.UnitSymbols Namespace &#40;F&#35;&#41;](SI.UnitSymbols-Namespace-%5BFSharp%5D.md).
+This module contains SI units by name. Unit symbols are contained in [SI.UnitSymbols Namespace](SI.UnitSymbols-Namespace-%5BFSharp%5D.md).
 
 
 ## Type Definitions
@@ -78,6 +78,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Microsoft.FSharp.Data.UnitSystems.SI Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Data.UnitSystems.SI-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Data.UnitSystems.SI Namespace](Microsoft.FSharp.Data.UnitSystems.SI-Namespace-%5BFSharp%5D.md)
 
-[SI.UnitSymbols Namespace &#40;F&#35;&#41;](SI.UnitSymbols-Namespace-%5BFSharp%5D.md)
+[SI.UnitSymbols Namespace](SI.UnitSymbols-Namespace-%5BFSharp%5D.md)

@@ -61,8 +61,8 @@ Supported in: 4.0, Portable
 
 
 ## See Also
-[Linq.Nullable Module &#40;F&#35;&#41;](Linq.Nullable-Module-%5BFSharp%5D.md)
+[Linq.Nullable Module](Linq.Nullable-Module-%5BFSharp%5D.md)
 
-[Microsoft.FSharp.Linq Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Linq-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Linq Namespace](Microsoft.FSharp.Linq-Namespace-%5BFSharp%5D.md)
 
-[Operators.sbyte&#60;^T&#62; Function &#40;F&#35;&#41;](Operators.sbyte%5B%5ET%5D-Function-%5BFSharp%5D.md)
+[Operators.sbyte&#60;^T&#62; Function](Operators.sbyte%5B%5ET%5D-Function-%5BFSharp%5D.md)

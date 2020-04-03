@@ -59,6 +59,6 @@ Supported in: 4.0, Portable
 
 
 ## See Also
-[Microsoft.FSharp.Linq.RuntimeHelpers Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Linq.RuntimeHelpers-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Linq.RuntimeHelpers Namespace](Microsoft.FSharp.Linq.RuntimeHelpers-Namespace-%5BFSharp%5D.md)
 
 [Query Expressions (F#)](https://msdn.microsoft.com/library/ff72235c-3ad8-4215-8679-2754484823db)

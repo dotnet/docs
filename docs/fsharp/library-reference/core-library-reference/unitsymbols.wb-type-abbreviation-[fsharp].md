@@ -36,6 +36,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[SI.UnitSymbols Namespace &#40;F&#35;&#41;](SI.UnitSymbols-Namespace-%5BFSharp%5D.md)
+[SI.UnitSymbols Namespace](SI.UnitSymbols-Namespace-%5BFSharp%5D.md)
 
-[UnitNames.weber Type Abbreviation &#40;F&#35;&#41;](UnitNames.weber-Type-Abbreviation-%5BFSharp%5D.md)
+[UnitNames.weber Type Abbreviation](UnitNames.weber-Type-Abbreviation-%5BFSharp%5D.md)

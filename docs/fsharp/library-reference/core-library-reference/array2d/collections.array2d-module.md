@@ -1,24 +1,11 @@
 ---
 title: Collections.Array2D Module (F#)
 description: Collections.Array2D Module (F#)
-keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
-ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: visual-studio-dev14
-ms.technology: devlang-fsharp
-ms.assetid: d8ece5ed-4d80-47e5-a68a-ca330b262141 
 ---
 
 # Collections.Array2D Module (F#)
 
 Basic operations on 2-dimensional arrays.
-
-**Namespace/Module Path:** Microsoft.FSharp.Collections
-
-**Assembly:** FSharp.Core (in FSharp.Core.dll)
-
 
 ## Syntax
 
@@ -27,11 +14,9 @@ module Array2D
 ```
 
 ## Remarks
-F# and CLI multi-dimensional arrays are typically zero-based. However, CLI multi-dimensional arrays used in conjunction with external libraries (for examples, libraries associated with Visual Basic) be non-zero based, using a potentially different base for each dimension. The operations in this module will accept such arrays, and the basing on an input array will be propagated to a matching output array on the [`Array2D.map`](https://msdn.microsoft.com/library/9e0c7271-62af-4eb4-a146-1c6a1bb56294) and [Array2D.mapi](https://msdn.microsoft.com/library/a16e3775-2ebb-41bb-9fa0-212bcd7830ac) operations. Non-zero-based arrays can also be created using [`Array2D.zeroCreateBased`](https://msdn.microsoft.com/library/5b67f6b5-1dc4-4952-a8cf-241f3cc95124), [`Array2D.createBased`](https://msdn.microsoft.com/library/673f61c6-3b1c-425a-b847-7e236a03651f) and [Array2D.initBased](https://msdn.microsoft.com/library/546194f1-965f-47b9-afd8-77422e4e2d5d).
-
+F# and .NET multi-dimensional arrays are typically zero-based. However, .NET multi-dimensional arrays used in conjunction with external libraries (for examples, libraries associated with Visual Basic) be non-zero based, using a potentially different base for each dimension. The operations in this module will accept such arrays, and the basing on an input array will be propagated to a matching output array on the [`Array2D.map`](https://msdn.microsoft.com/library/9e0c7271-62af-4eb4-a146-1c6a1bb56294) and [Array2D.mapi](https://msdn.microsoft.com/library/a16e3775-2ebb-41bb-9fa0-212bcd7830ac) operations. Non-zero-based arrays can also be created using [`Array2D.zeroCreateBased`](https://msdn.microsoft.com/library/5b67f6b5-1dc4-4952-a8cf-241f3cc95124), [`Array2D.createBased`](https://msdn.microsoft.com/library/673f61c6-3b1c-425a-b847-7e236a03651f) and [Array2D.initBased](https://msdn.microsoft.com/library/546194f1-965f-47b9-afd8-77422e4e2d5d).
 
 ## Values
-
 
 |Value|Description|
 |-----|-----------|
@@ -55,16 +40,5 @@ F# and CLI multi-dimensional arrays are typically zero-based. However, CLI multi
 |[zeroCreate](https://msdn.microsoft.com/library/70384332-e76f-416f-9631-e0c1676528de)<br />**: int -&gt; int -&gt; 'T [,]**|Creates an array where the entries are initially [Unchecked.defaultof&lt;'T&gt;](https://msdn.microsoft.com/library/9ff97f2a-1bd4-4f4c-afbe-5886a74ab977).|
 |[zeroCreateBased](https://msdn.microsoft.com/library/5b67f6b5-1dc4-4952-a8cf-241f3cc95124)<br />**: int -&gt; int -&gt; int -&gt; int -&gt; 'T [,]**|Creates a based array where the entries are initially [Unchecked.defaultof&lt;'T&gt;](https://msdn.microsoft.com/library/9ff97f2a-1bd4-4f4c-afbe-5886a74ab977).|
 
-## Platforms
-Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
-
-
-## Version Information
-**F# Core Library Versions**
-
-Supported in: 2.0, 4.0, Portable
-
-
 ## See Also
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
-
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace.md)

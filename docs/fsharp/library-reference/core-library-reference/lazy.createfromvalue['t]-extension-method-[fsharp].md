@@ -72,6 +72,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0
 
 ## See Also
-[Control.LazyExtensions Module &#40;F&#35;&#41;](Control.LazyExtensions-Module-%5BFSharp%5D.md)
+[Control.LazyExtensions Module](Control.LazyExtensions-Module-%5BFSharp%5D.md)
 
-[Lazy Computations &#40;F&#35;&#41;](../../language-reference/lazy-expressions.md)
+[Lazy Computations](../../language-reference/lazy-expressions.md)

@@ -28,7 +28,7 @@ module Operators
 ```
 
 ## Remarks
-For an overview of operators in F#, see [Symbol and Operator Reference &#40;F&#35;&#41;](../../language-reference/symbol-and-operator-reference/index.md).
+For an overview of operators in F#, see [Symbol and Operator Reference](../../language-reference/symbol-and-operator-reference/index.md).
 
 
 ## Modules
@@ -172,4 +172,4 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Microsoft.FSharp.Core Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Core-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Core Namespace](Microsoft.FSharp.Core-Namespace-%5BFSharp%5D.md)

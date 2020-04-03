@@ -1,23 +1,12 @@
 ---
 title: Array2D.init<'T> Function (F#)
 description: Array2D.init<'T> Function (F#)
-keywords: visual f#, f#, functional programming
-author: dend
-manager: danielfe
-ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: visual-studio-dev14
-ms.technology: devlang-fsharp
-ms.assetid: 15a6a4cf-8c17-4222-9b93-182dc77d12dd 
+ms.date: 1/3/2020
 ---
 
 # Array2D.init<'T> Function (F#)
 
 Creates an array given the dimensions and a generator function to compute the elements.
-
-**Namespace/Module Path**: Microsoft.FSharp.Collections.Array2D
-
-**Assembly**: FSharp.Core (in FSharp.Core.dll)
 
 ## Syntax
 
@@ -60,18 +49,8 @@ The following code demonstrates the use of `Array2D.init` to create a two-dimens
 
 [!code-fsharp[Main](~/samples/snippets/fsharp/arrays/snippet21.fs)]
 
-## Platforms
-
-Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
-
-## Version Information
-
-**F# Core Library Versions**
-
-Supported in: 2.0, 4.0, Portable
-
 ## See Also
 
-[Collections.Array2D Module &#40;F&#35;&#41;](Collections.Array2D-Module-%5BFSharp%5D.md)
+[Collections.Array2D Module](Collections.Array2D-Module.md)
 
-[Microsoft.FSharp.Collections Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace.md)

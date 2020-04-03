@@ -69,6 +69,6 @@ Supported in: 2.0, 4.0, Portable
 
 
 ## See Also
-[Control.Event Module &#40;F&#35;&#41;](Control.Event-Module-%5BFSharp%5D.md)
+[Control.Event Module](Control.Event-Module-%5BFSharp%5D.md)
 
-[Microsoft.FSharp.Control Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Control-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Control Namespace](Microsoft.FSharp.Control-Namespace-%5BFSharp%5D.md)

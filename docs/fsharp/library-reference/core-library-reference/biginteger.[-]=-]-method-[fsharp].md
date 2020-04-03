@@ -53,6 +53,6 @@ Supported in: 2.0
 
 
 ## See Also
-[Numerics.BigInteger Structure &#40;F&#35;&#41;](Numerics.BigInteger-Structure-%5BFSharp%5D.md)
+[Numerics.BigInteger Structure](Numerics.BigInteger-Structure-%5BFSharp%5D.md)
 
-[System.Numerics Namespace &#40;F&#35;&#41;](System.Numerics-Namespace-%5BFSharp%5D.md)
+[System.Numerics Namespace](System.Numerics-Namespace-%5BFSharp%5D.md)

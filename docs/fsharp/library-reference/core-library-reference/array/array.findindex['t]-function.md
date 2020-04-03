@@ -69,6 +69,6 @@ Supported in: 2.0, 4.0, Portable
 ## See Also
 [Array Module](index.md)
 
-[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Collections Namespace](../Microsoft.FSharp.Collections-Namespace.md)
 
 [Array.find&#60;'T&#62; Function](array.find['t]-function.md)

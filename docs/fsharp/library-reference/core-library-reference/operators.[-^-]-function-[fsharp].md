@@ -30,7 +30,7 @@ Type: [string](https://msdn.microsoft.com/library/12b97856-ec80-4f70-a018-afb075
 Type: [string](https://msdn.microsoft.com/library/12b97856-ec80-4f70-a018-afb0753f755a)
 
 ## Remarks
-This operator is provided for compatibility with other versions of ML, and generates a warning when used unless you use the `--mlcompatibility` compiler option. For more information, see [Compiler Options &#40;F&#35;&#41;](../../language-reference/options.md).
+This operator is provided for compatibility with other versions of ML, and generates a warning when used unless you use the `--mlcompatibility` compiler option. For more information, see [Compiler Options](../../language-reference/options.md).
 
 ## Platforms
 Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
@@ -41,6 +41,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[Core.Operators Module &#40;F&#35;&#41;](Core.Operators-Module-%5BFSharp%5D.md)
+[Core.Operators Module](Core.Operators-Module-%5BFSharp%5D.md)
 
-[Microsoft.FSharp.Core Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Core-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Core Namespace](Microsoft.FSharp.Core-Namespace-%5BFSharp%5D.md)

@@ -40,6 +40,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0, Portable
 
 ## See Also
-[SI.UnitNames Namespace &#40;F&#35;&#41;](SI.UnitNames-Namespace-%5BFSharp%5D.md)
+[SI.UnitNames Namespace](SI.UnitNames-Namespace-%5BFSharp%5D.md)
 
-[UnitSymbols.V Type Abbreviation &#40;F&#35;&#41;](UnitSymbols.V-Type-Abbreviation-%5BFSharp%5D.md)
+[UnitSymbols.V Type Abbreviation](UnitSymbols.V-Type-Abbreviation-%5BFSharp%5D.md)

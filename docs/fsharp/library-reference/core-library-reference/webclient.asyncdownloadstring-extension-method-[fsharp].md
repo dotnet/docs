@@ -52,4 +52,4 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0, 4.0
 
 ## See Also
-[Control.WebExtensions Module &#40;F&#35;&#41;](Control.WebExtensions-Module-%5BFSharp%5D.md)
+[Control.WebExtensions Module](Control.WebExtensions-Module-%5BFSharp%5D.md)

@@ -56,6 +56,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2
 Supported in: 2.0
 
 ## See Also
-[Collections.IStructuralEquatable Interface &#40;F&#35;&#41;](Collections.IStructuralEquatable-Interface-%5BFSharp%5D.md)
+[Collections.IStructuralEquatable Interface](Collections.IStructuralEquatable-Interface-%5BFSharp%5D.md)
 
-[System.Collections Namespace &#40;F&#35;&#41;](System.Collections-Namespace-%5BFSharp%5D.md)
+[System.Collections Namespace](System.Collections-Namespace-%5BFSharp%5D.md)

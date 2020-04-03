@@ -40,6 +40,6 @@ Windows 8, Windows 7, Windows Server 2012, Windows Server 2008 R2Windows 8, Wind
 Supported in: 4.0Supported in: 4.0, Portable2.0, 4.0, Portable
 
 ## See Also
-[CompilerServices.ITypeProvider Interface &#40;F&#35;&#41;](CompilerServices.ITypeProvider-Interface-%5BFSharp%5D.md)
+[CompilerServices.ITypeProvider Interface](CompilerServices.ITypeProvider-Interface-%5BFSharp%5D.md)
 
-[Microsoft.FSharp.Core.CompilerServices Namespace &#40;F&#35;&#41;](Microsoft.FSharp.Core.CompilerServices-Namespace-%5BFSharp%5D.md)
+[Microsoft.FSharp.Core.CompilerServices Namespace](Microsoft.FSharp.Core.CompilerServices-Namespace-%5BFSharp%5D.md)

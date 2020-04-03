@@ -17,11 +17,7 @@ Nullable reference types are available beginning with C# 8.0, in code that has o
 
 The distinctions between a non-nullable reference type `T` and a nullable reference type `T?` are all in the compiler interpretation of the preceding rules. A variable of type `T` and a variable of type `T?` are represented by the same type. The following example declares a non-nullable string, a nullable string, and the null forgiveness operator to assign a value to a non-nullable string:
 
-```csharp
-string notNull = "Hello";
-string? nullable = default;
-notNull = nullable!; // null forgiveness
-```
+:::code language="csharp" source="snippets/NullableReferenceTypes.cs" id="SnippetCoreSyntax":::
 
 The variable `notNull` and `nullable` are both represented by the <xref:System.String> type. Because the non-nullable and nullable types are both stored as the same type, there are several locations where the nullable reference type can't be used. In general, a nullable reference cannot be used as a base class or implemented interface, in any object creation or type testing expression, or as the type of a member access expression, as the following examples show:
 
@@ -50,19 +46,15 @@ In a nullable enabled context, the compiler performs static analysis on variable
 
 Non-nullable reference types should always be safe to dereference because their null state is *not null*. To enforce that rule, the compiler issues warnings if a non-nullable reference type is not initialized to a non-null value. Local variables must be assigned where they are declared. Every constructor must assign every field, either in its body, a called constructor, or using a field initializer. Warnings are also issued if a non-nullable reference is assigned to a reference whose state is *maybe null*. However, because a non-nullable reference is *not null*, no warnings are issued when those variables are de-referenced.
 
-Nullable reference types may be initialized or assigned to `null`. Therefore, static analysis must determine that a variable is *not null* before it is dereferenced. If a nullable reference is determined to be *maybe null*, it cannot be assigned to a non-nullable reference variable.
+Nullable reference types may be initialized or assigned to `null`. Therefore, static analysis must determine that a variable is *not null* before it is dereferenced. If a nullable reference is determined to be *maybe null*, it cannot be assigned to a non-nullable reference variable. The following class shows examples of these warnings:
 
-```csharp
-- When a local variable is not initialized to a non-null value.
-- When a constructor does not assign a non-null value to all fields of a non-nullable reference type. Note that these may be assigned in the body of the constructor, in a field initializer, or in a chained constructor (called using the `: this(...)` syntax).
+:::code language="csharp" source="snippets/NullableReferenceTypes.cs" id="SnippetClassWithNullable":::
 
-Examples on warnings for nullable:
+The following snippet shows where the compiler emits warnings when using this class:
 
-- dereference when maybe-null.
-- assign to non-nullable when maybe null.
-```
+:::code language="csharp" source="snippets/NullableReferenceTypes.cs" id="SnippetLocalWarnings":::
 
-The preceding examples demonstrate the compiler's static analysis to determine the null state of reference variables. The compiler can apply all language rules for null checks and assignments to inform its analysis. However, the compiler cannot make assumptions about the semantics of methods or properties. There are a number of attributes you can add to those APIs to inform the compiler about the semantics of arguments and return values. See the article on [Nullable attributes](../../nullable-attributes.md) for more information.
+The preceding examples demonstrate the compiler's static analysis to determine the null state of reference variables. The compiler can apply all language rules for null checks and assignments to inform its analysis. However, the compiler cannot make assumptions about the semantics of methods or properties. There are a number of attributes you can add to those APIs to inform the compiler about the semantics of arguments and return values. See the article on [Nullable attributes](../../nullable-attributes.md) for more information. 
 
 ## Setting the nullable context
 

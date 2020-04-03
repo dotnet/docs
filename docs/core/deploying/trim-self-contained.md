@@ -40,6 +40,6 @@ When the code is referencing an API through reflection and you don't want the li
 </ItemGroup>
 ```
 
-## See also 
+## See also
 
 - [.NET Core application deployment](index.md)

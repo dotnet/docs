@@ -18,7 +18,7 @@ The trimming feature works by examining the application binaries to discover and
 
 ## Prevent assemblies from being trimmed
 
-There are scenarios in which the trimming functionality will fail to detect references. For example, your application, or a library referenced by your application, that uses reflection may look for an assembly that isn't directly referenced. Trimming is unaware of these indirect references and would exclude the library from the published folder.
+There are scenarios in which the trimming functionality will fail to detect references. For example, when reflection is used on a runtime assembly, either by your application or a library that is referenced by your application, the assembly isn't directly referenced. Trimming is unaware of these indirect references and would exclude the library from the published folder.
 
 When the code is indirectly referencing an assembly through reflection, you can prevent the assembly from being trimmed with the `<TrimmerRootAssembly>` setting. The following example shows how to prevent an assembly called `System.Security` assembly from being trimmed:
 

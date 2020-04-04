@@ -6,7 +6,7 @@ ms.assetid: 2e35c1ab-08c8-4378-9ca8-8ff344756eda
 
 # Query XML trees overview (LINQ to XML)
 
-After you have instantiated an XML tree, writing queries is the most effective way to extract data from the tree. Also, querying combined with functional construction enables you to generate a new XML document that has a different shape from the original document.
+After you've instantiated an XML tree, writing queries is the most effective way to extract data from the tree. Also, querying combined with functional construction enables you to generate a new XML document that has a different shape from the original document.
 
 For background information about LINQ queries, see:
 

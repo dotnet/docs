@@ -30,7 +30,7 @@ When the code is indirectly referencing an assembly through reflection, you can 
 
 ## Trim your app - dotnet
 
-The following example shows how to trim your application using the [dotnet publish](../tools/dotnet-publish.md) command. When you publish, you need to set the following three settings:
+Trim your application using the [dotnet publish](../tools/dotnet-publish.md) command. When you publish your app, set the following three settings:
 
 - Publish as self-contained: `--self-contained true`
 - Disable single-file publishing: `-p:PublishSingleFile=false`
@@ -41,6 +41,32 @@ The following example publishes an app for Windows 10 as self-contained and trim
 ```dotnetcli
 dotnet publish -c Release -r win10-x64 --self-contained true -p:PublishSingleFile=false -p:PublishTrimmed=true
 ```
+
+## Trim your app - Visual Studio
+
+Visual Studio creates reusable publishing profiles that control how your application is published.
+
+01. On the **Solution Explorer** pane, right-click on the project you want to publish. Select **Publish...**.
+
+    :::image type="content" source="media/trim-self-contained/visual-studio-solution-explorer.png" alt-text="Solution Explorer with a right-click menu highlighting the Publish option.":::
+
+    If you don't already have a publishing profile, follow the instructions to create one and choose the **Folder** target-type.
+
+01. Choose **Edit**.
+
+    :::image type="content" source="media/trim-self-contained/visual-studio-publish-edit-settings.png" alt-text="Visual studio publish profile with edit button.":::
+
+01. In the **Profile settings** dialog, set the following options:
+
+    - Set **Deployment mode** to **Self-contained**.
+    - Set **Target runtime** to the platform you want to publish to.
+    - Select **Trim unused assemblies (in preview)**.
+
+    Choose **Save** to save the settings and return to the **Publish** dialog.
+
+    :::image type="content" source="media/trim-self-contained/visual-studio-publish-properties.png" alt-text="Profile settings dialog with deployment mode, target runtime, and trim unused assemblies options highlighted.":::
+
+01. Choose **Publish** to publish your app trimmed.
 
 ## See also
 

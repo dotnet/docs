@@ -28,7 +28,7 @@ When the code is indirectly referencing an assembly through reflection, you can 
 </ItemGroup>
 ```
 
-## Trim your app - dotnet
+## Trim your app - CLI
 
 Trim your application using the [dotnet publish](../tools/dotnet-publish.md) command. When you publish your app, set the following three settings:
 

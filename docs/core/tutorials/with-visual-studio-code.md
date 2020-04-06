@@ -28,7 +28,7 @@ Let's get started with a simple "Hello World" program on .NET Core:
 
 2. Initialize a C# project:
 
-    - Open the Integrated Terminal from Visual Studio Code by selecting **View** > **Integrated Terminal** from the main menu.
+    - Open the Terminal from Visual Studio Code by selecting **View** > **Terminal** from the main menu.
     - In the terminal window, type `dotnet new console`.
     - This command creates a *Program.cs* file in your folder with a simple "Hello World" program already written, along with a C# project file named *HelloWorld.csproj*.
 

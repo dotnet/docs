@@ -21,46 +21,46 @@ namespace builtin_types
         }
 
         // <SnippetClassWithNullable>
-        public class GreetingContainer
+        public class ProductDescription
         {
-            private string greeting;
-            private string? optionalGreeting;
+            private string shortDescription;
+            private string? detailedDescription;
 
-            public GreetingContainer()
+            public ProductDescription()
             {
-                // Warning! greeting not initialize.
+                // Warning! short description not initialized.
             }
 
-            public GreetingContainer(string greeting) =>
-                this.greeting = greeting;
+            public ProductDescription(string productDescription) =>
+                this.shortDescription = productDescription;
 
-            public void SetGreetings(string greet, string? optional=null)
+            public void SetDescriptions(string productDescription, string? details=null)
             {
-                greeting = greet;
-                optionalGreeting = optional;
+                shortDescription = productDescription;
+                detailedDescription = details;
             }
 
-            public string FullGreeting()
+            public string GetDescription()
             {
-                if (optionalGreeting.Length == 0) // Warning! dereference possible null
+                if (detailedDescription.Length == 0) // Warning! dereference possible null
                 {
-                    return greeting;
+                    return shortDescription;
                 } else
                 {
-                    return $"{greeting}\n{optionalGreeting}";
+                    return $"{shortDescription}\n{detailedDescription}";
                 }
             }
 
-            public string FormatGreeting()
+            public string FullDescription()
             {
-                if (optionalGreeting == null)
+                if (detailedDescription == null)
                 {
-                    return greeting;
-                } else if (optionalGreeting.Length > 0) // OK, optionalGreeting can't be null.
+                    return shortDescription;
+                } else if (detailedDescription.Length > 0) // OK, optionalGreeting can't be null.
                 {
-                    return $"{greeting}\n{optionalGreeting}";
+                    return $"{shortDescription}\n{detailedDescription}";
                 }
-                return greeting;
+                return shortDescription;
             }
         }
         // </SnippetClassWithNullable>
@@ -68,15 +68,15 @@ namespace builtin_types
         private static void WarningsExamples()
         {
             // <SnippetLocalWarnings>
-            string greeting = default; // Warning! non-nullable set to null;
-            var container = new GreetingContainer(greeting); // Warning! static analysis knows greeting maybe null.
+            string shortDescription = default; // Warning! non-nullable set to null;
+            var product = new ProductDescription(shortDescription); // Warning! static analysis knows greeting maybe null.
 
-            string hello = "hello";
-            var item = new GreetingContainer(hello);
+            string description = "widget";
+            var item = new ProductDescription(description);
 
-            item.SetGreetings("hello", "World!");
+            item.SetDescriptions(description, "These widgets will do everything.");
             // </SnippetLocalWarnings>
-            string result = item.FormatGreeting();
+            string result = item.FullDescription();
         }
     }
     #nullable restore

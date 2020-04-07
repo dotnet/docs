@@ -88,8 +88,7 @@ you should choose between an XML format and a JSON format.
 
 If you choose XML, the
 conversion is straightforward. Since the content is the same, just rename the *app.config* file
-to a file with XML extension. Then migrate from AppSettings lines of code
-to Configuration builder, but that should be easy.
+to a file with XML extension. Then, change the code that references AppSettings to use the ConfigurationBuilder class. That should be an easy change.
 
 
 If you want to use a JSON format and you don't want to migrate by hand,

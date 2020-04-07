@@ -390,7 +390,7 @@ You can try asynchronous streams yourself in our tutorial on [creating and consu
 
 ## Asynchronous disposable
 
-Starting with C# 8.0, the language supports asynchronous disposable types that implement the <xref:System.IAsyncDisposable?displayProperty=nameWithType> interface. The operand of a `using` expression can implement either <xref:System.Disposable> or <xref:System.IAsyncDisposable>. In the case of `IAsyncDisposable`, the compiler generates code to `await` the <xref:System.Threading.Tasks.Task> returned from <xref:System.IDisposable.DisposeAsync%2A?displayProperty=nameWithType>. For more information, see the [`using` statement](../language-reference/keywords/using-statement.md).
+Starting with C# 8.0, the language supports asynchronous disposable types that implement the <xref:System.IAsyncDisposable?displayProperty=nameWithType> interface. The operand of a `using` expression can implement either <xref:System.IDisposable> or <xref:System.IAsyncDisposable>. In the case of `IAsyncDisposable`, the compiler generates code to `await` the <xref:System.Threading.Tasks.Task> returned from <xref:System.IAsyncDisposable.DisposeAsync%2A?displayProperty=nameWithType>. For more information, see the [`using` statement](../language-reference/keywords/using-statement.md).
 
 ## Indices and ranges
 

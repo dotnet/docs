@@ -8,19 +8,19 @@ ms.date: 04/06/2020
 > [!NOTE]
 > This article covers nullable reference types. You can also declare [nullable value types](nullable-value-types.md).
 
-Nullable reference types are available beginning with C# 8.0, in code that has opted in to a *nullable aware context*. Nullable reference types, the null static analysis warnings, and the null forgiveness operator are optional language features. All are turned off by default. A *nullable context* is controlled at the project level using build settings, or in code using pragmas.
+Nullable reference types are available beginning with C# 8.0, in code that has opted in to a *nullable aware context*. Nullable reference types, the null static analysis warnings, and the [null-forgiving operator](../operators/null-forgiving.md) are optional language features. All are turned off by default. A *nullable context* is controlled at the project level using build settings, or in code using pragmas.
 
  In a nullable aware context:
 
-- A reference type `T` must be initialized to non-null, and may never be assigned a value that may be `null`.
-- A reference type `T?` may be initialized or assigned to `null`, but is required to be checked against `null` before de-referencing.
-- A variable `m` of type `T?` is considered to be non-null if the *null forgiveness operator* is appended to the variable name, as in `m!`.
+- A variable of a reference type `T` must be initialized with non-null, and may never be assigned a value that may be `null`.
+- A variable of a reference type `T?` may be initialized with `null` or assigned `null`, but is required to be checked against `null` before de-referencing.
+- A variable `m` of type `T?` is considered to be non-null when you apply the null-forgiving operator, as in `m!`.
 
-The distinctions between a non-nullable reference type `T` and a nullable reference type `T?` are performed by the compiler's interpretation of the preceding rules. A variable of type `T` and a variable of type `T?` are represented by the same type in IL and at runtime. The following example declares a non-nullable string, a nullable string, and the uses the null forgiveness operator to assign a value to a non-nullable string:
+The distinctions between a non-nullable reference type `T` and a nullable reference type `T?` are performed by the compiler's interpretation of the preceding rules. A variable of type `T` and a variable of type `T?` are represented by the same .NET type. The following example declares a non-nullable string, a nullable string, and uses the null-forgiving operator to assign a value to a non-nullable string:
 
 :::code language="csharp" source="snippets/NullableReferenceTypes.cs" id="SnippetCoreSyntax":::
 
-The variable `notNull` and `nullable` are both represented by the <xref:System.String> type. Because the non-nullable and nullable types are both stored as the same type, there are several locations where using a nullable reference type isn't allowed. In general, a nullable reference type can't be used as a base class or implemented interface. A nullable reference type can't be used in any object creation or type testing expression. A nullable reference type can't be the type of a member access expression. The following examples show these constructs:
+The variables `notNull` and `nullable` are both represented by the <xref:System.String> type. Because the non-nullable and nullable types are both stored as the same type, there are several locations where using a nullable reference type isn't allowed. In general, a nullable reference type can't be used as a base class or implemented interface. A nullable reference type can't be used in any object creation or type testing expression. A nullable reference type can't be the type of a member access expression. The following examples show these constructs:
 
 ```csharp
 public MyClass : System.Object? // not allowed
@@ -41,7 +41,7 @@ try
 
 ## Nullable references and static analysis
 
-The examples in the previous section illustrate the nature of nullable reference types: Nullable reference types aren't new class types, but rather annotations on existing reference types. The compiler uses those annotations to help you find potential null reference errors in your code. There's no runtime difference between a non-nullable reference type and a nullable reference type. The compiler doesn't add any runtime checking for non-nullable reference types. The benefits are in the compile-time analysis. The compiler generates warnings that help you find and fix potential null errors in your code. You declare your intent, and the compiler warns you when your code violates that intent.
+The examples in the previous section illustrate the nature of nullable reference types. Nullable reference types aren't new class types, but rather annotations on existing reference types. The compiler uses those annotations to help you find potential null reference errors in your code. There's no runtime difference between a non-nullable reference type and a nullable reference type. The compiler doesn't add any runtime checking for non-nullable reference types. The benefits are in the compile-time analysis. The compiler generates warnings that help you find and fix potential null errors in your code. You declare your intent, and the compiler warns you when your code violates that intent.
 
 In a nullable enabled context, the compiler performs static analysis on variables of any reference type, both nullable and non-nullable. The compiler tracks the null state of each reference variable as either *not null* or *maybe null*. The default state of a non-nullable reference is *not null*. The default state of a nullable reference is *maybe null*. The compiler issues warnings for nullable reference types and non-nullable reference types.
 
@@ -59,7 +59,7 @@ The preceding examples demonstrate the compiler's static analysis to determine t
 
 ## Setting the nullable context
 
-There are two ways to control the nullable context. At the project level, you can add the `<Nullable>Enable</Nullable>` project setting. In a single C# source file, you can add the `#nullable enable` pragma to enable the nullable context. See the article on [setting a nullable strategy](../../nullable-attributes.md).
+There are two ways to control the nullable context. At the project level, you can add the `<Nullable>enable</Nullable>` project setting. In a single C# source file, you can add the `#nullable enable` pragma to enable the nullable context. See the article on [setting a nullable strategy](../../nullable-attributes.md).
 
 ## C# language specification
 

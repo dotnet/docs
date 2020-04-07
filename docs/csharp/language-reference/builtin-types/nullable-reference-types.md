@@ -16,7 +16,7 @@ Nullable reference types are available beginning with C# 8.0, in code that has o
 - A variable of a reference type `T?` may be initialized with `null` or assigned `null`, but is required to be checked against `null` before de-referencing.
 - A variable `m` of type `T?` is considered to be non-null when you apply the null-forgiving operator, as in `m!`.
 
-The distinctions between a non-nullable reference type `T` and a nullable reference type `T?` are performed by the compiler's interpretation of the preceding rules. A variable of type `T` and a variable of type `T?` are represented by the same .NET type. The following example declares a non-nullable string, a nullable string, and uses the null-forgiving operator to assign a value to a non-nullable string:
+The distinctions between a non-nullable reference type `T` and a nullable reference type `T?` are enforced by the compiler's interpretation of the preceding rules. A variable of type `T` and a variable of type `T?` are represented by the same .NET type. The following example declares a non-nullable string and a nullable string, and then uses the null-forgiving operator to assign a value to a non-nullable string:
 
 :::code language="csharp" source="snippets/NullableReferenceTypes.cs" id="SnippetCoreSyntax":::
 

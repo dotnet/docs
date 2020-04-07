@@ -26,9 +26,8 @@ namespace builtin_types
             private string shortDescription;
             private string? detailedDescription;
 
-            public ProductDescription()
+            public ProductDescription() // Warning! short description not initialized.
             {
-                // Warning! short description not initialized.
             }
 
             public ProductDescription(string productDescription) =>

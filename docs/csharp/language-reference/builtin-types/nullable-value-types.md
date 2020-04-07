@@ -114,7 +114,7 @@ You can use the code presented in the following example to determine whether an 
 [!code-csharp-interactive[whether an instance is of a nullable type](snippets/NullableValueTypes.cs#IsInstanceNullable)]
 
 > [!NOTE]
-> The methods described in this section are not applicable in the case of [nullable reference types](../../nullable-references.md).
+> The methods described in this section are not applicable in the case of [nullable reference types](nullable-reference-types.md).
 
 ## C# language specification
 

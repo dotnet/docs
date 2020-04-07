@@ -95,7 +95,7 @@ For an example, see [A ref returns and ref locals example](#a-ref-returns-and-re
 
 ## Ref locals
 
-A ref local variable is used to refer to values returned using `return ref`. A ref local variable cannot be initialized to a non-ref return value. In other words, the right hand side of the initialization must be a reference. Any modifications to the value of the ref local are reflected in the state of the object whose method returned the value by reference.
+A ref local variable is used to refer to values returned using `return ref`. A ref local variable cannot be initialized to a non-ref return value. In other words, the right-hand side of the initialization must be a reference. Any modifications to the value of the ref local are reflected in the state of the object whose method returned the value by reference.
 
 You define a ref local by using the `ref` keyword before the variable declaration, as well as immediately before the call to the method that returns the value by reference.
 
@@ -111,7 +111,7 @@ You can access a value by reference in the same way. In some cases, accessing a 
 ref VeryLargeStruct reflocal = ref veryLargeStruct;
 ```
 
-Note that in both examples the `ref` keyword must be used in both places, or the compiler generates error CS8172, "Cannot initialize a by-reference variable with a value."
+In both examples the `ref` keyword must be used in both places, or the compiler generates error CS8172, "Cannot initialize a by-reference variable with a value."
 
 Beginning with C# 7.3, the iteration variable of the `foreach` statement can be ref local or ref readonly local variable. For more information, see the [foreach statement](foreach-in.md) article.
 
@@ -140,8 +140,8 @@ The goal of keeping a `ref struct` type as a stack-allocated variable introduces
 
 - You can't box a `ref struct`. You cannot assign a `ref struct` type to a variable of type `object`, `dynamic`, or any interface type.
 - `ref struct` types cannot implement interfaces.
-- You can't declare a `ref struct` as a field member of a class or a normal struct. This includes declaring an auto-implemented property, which creates a compiler generated backing field.
-- You cannot declare local variables that are `ref struct` types in async methods. You can declare them in synchronous methods that return <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601> or `Task`-like types.
+- You can't declare a `ref struct` as a field member of a class or a normal struct. This includes declaring an auto-implemented property, which creates a compiler-generated backing field.
+- You cannot declare local variables that are `ref struct` types in async methods. You can declare them in synchronous methods that return <xref:System.Threading.Tasks.Task>, <xref:System.Threading.Tasks.Task%601>, or `Task`-like types.
 - You cannot declare `ref struct` local variables in iterators.
 - You cannot capture `ref struct` variables in lambda expressions or local functions.
 

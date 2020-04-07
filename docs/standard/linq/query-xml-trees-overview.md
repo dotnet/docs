@@ -17,7 +17,7 @@ For background information about LINQ queries, see:
 
 This section of articles provides information, including examples, about LINQ to XML queries. It comprises the following subsections:
 
-|Topic|Description|
+|Article|Description|
 |-----------|-----------------|
 |[Basic queries](find-element-specific-attribute.md)|Provides common examples of querying XML trees.|
 |[Projections and transformations](work-dictionaries-linq-xml.md)|Provides common examples of projecting from and transforming XML trees.|

@@ -128,7 +128,7 @@ You can see how this value object implementation of Address has no identity and 
 
 Having no ID field in a class to be used by Entity Framework (EF) was not possible until EF Core 2.0, which greatly helps to implement better value objects with no ID. That is precisely the explanation of the next section.
 
-It could be argued that value objects, being immutable, should be read-only (that is, have get-only properties), and that's indeed true. However, value objects are usually serialized and deserialized to go through message queues, and being read-only stops the deserializer from assigning values, so we just leave them as "private set", which is read-only enough to be practical.
+It could be argued that value objects, being immutable, should be read-only (that is, have get-only properties), and that's indeed true. However, value objects are usually serialized and deserialized to go through message queues, and being read-only stops the deserializer from assigning values, so we just leave them as `private set`, which is read-only enough to be practical.
 
 ## How to persist value objects in the database with EF Core 2.0 and later
 

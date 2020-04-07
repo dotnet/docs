@@ -149,7 +149,7 @@ namespace Microsoft.eShopOnContainers.Services.Ordering.Infrastructure.Repositor
 }
 ```
 
-The IBuyerRepository interface comes from the domain model layer as a contract. However, the repository implementation is done at the persistence and infrastructure layer.
+The `IBuyerRepository` interface comes from the domain model layer as a contract. However, the repository implementation is done at the persistence and infrastructure layer.
 
 The EF DbContext comes through the constructor through Dependency Injection. It is shared between multiple repositories within the same HTTP request scope, thanks to its default lifetime (`ServiceLifetime.Scoped`) in the IoC container (which can also be explicitly set with `services.AddDbContext<>`).
 
@@ -238,7 +238,7 @@ Using the singleton lifetime for the repository could cause you serious concurre
 
 ## Table mapping
 
-Table mapping identifies the table data to be queried from and saved to the database. Previously you saw how domain entities (for example, a product or order domain) can be used to generate a related database schema. EF is strongly designed around the concept of *conventions*. Conventions address questions like "What will the name of a table be?" or "What property is the primary key?" Conventions are typically based on conventional names—for example, it is typical for the primary key to be a property that ends with Id.
+Table mapping identifies the table data to be queried from and saved to the database. Previously you saw how domain entities (for example, a product or order domain) can be used to generate a related database schema. EF is strongly designed around the concept of *conventions*. Conventions address questions like "What will the name of a table be?" or "What property is the primary key?" Conventions are typically based on conventional names. For example, it is typical for the primary key to be a property that ends with `Id`.
 
 By convention, each entity will be set up to map to a table with the same name as the `DbSet<TEntity>` property that exposes the entity on the derived context. If no `DbSet<TEntity>` value is provided for the given entity, the class name is used.
 
@@ -417,7 +417,7 @@ public abstract class BaseSpecification<T> : ISpecification<T>
 }
 ```
 
-The following specification loads a single basket entity given either the basket's ID or the ID of the buyer to whom the basket belongs. It will [eagerly load](https://docs.microsoft.com/ef/core/querying/related-data) the basket's Items collection.
+The following specification loads a single basket entity given either the basket's ID or the ID of the buyer to whom the basket belongs. It will [eagerly load](/ef/core/querying/related-data) the basket's `Items` collection.
 
 ```csharp
 // SAMPLE QUERY SPECIFICATION IMPLEMENTATION

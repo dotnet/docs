@@ -23,25 +23,25 @@ Beginning with C# 8.0, you can use the following alternative syntax for the `usi
 
 <xref:System.IO.File> and <xref:System.Drawing.Font> are examples of managed types that access unmanaged resources (in this case file handles and device contexts). There are many other kinds of unmanaged resources and class library types that encapsulate them. All such types must implement the <xref:System.IDisposable> interface, or the <xref:System.IAsyncDisposable> interface.
 
-When the lifetime of an `IDisposable` object is limited to a single method, you should declare and instantiate it in the `using` statement. The `using` statement calls the <xref:System.IDisposable.Dispose%2A> method on the object in the correct way, and (when you use it as shown earlier) it also causes the object itself to go out of scope as soon as <xref:System.IDisposable.Dispose%2A> is called. Within the `using` block, the object is read-only and cannot be modified or reassigned. If the object implements `IAsyncDisposable` instead of `IDisposable`, the `using` statement calls the <xref:System.IAsyncDisposable.DisposeAsync%2A> and `awaits` the returned <xref:System.Threading.Tasks.Task>.
+When the lifetime of an `IDisposable` object is limited to a single method, you should declare and instantiate it in the `using` statement. The `using` statement calls the <xref:System.IDisposable.Dispose%2A> method on the object in the correct way, and (when you use it as shown earlier) it also causes the object itself to go out of scope as soon as <xref:System.IDisposable.Dispose%2A> is called. Within the `using` block, the object is read-only and can't be modified or reassigned. If the object implements `IAsyncDisposable` instead of `IDisposable`, the `using` statement calls the <xref:System.IAsyncDisposable.DisposeAsync%2A> and `awaits` the returned <xref:System.Threading.Tasks.Task>.
 
 The `using` statement ensures that <xref:System.IDisposable.Dispose%2A> (or <xref:System.IAsyncDisposable.DisposeAsync%2A>) is called even if an exception occurs within the `using` block. You can achieve the same result by putting the object inside a `try` block and then calling <xref:System.IDisposable.Dispose%2A> (or <xref:System.IAsyncDisposable.DisposeAsync%2A> in a `finally` block; in fact, this is how the `using` statement is translated by the compiler. The code example earlier expands to the following code at compile time (note the extra curly braces to create the limited scope for the object):
 
 :::code language="csharp" source="snippets/usings.cs" id="SnippetTryFinallyExample":::
 
-The newer `using` statement syntax translates to very similar code. The `try` block opens where the variable is declared. The `finally` block is added at the close of the enclosing block, typically at the end of a method.
+The newer `using` statement syntax translates to similar code. The `try` block opens where the variable is declared. The `finally` block is added at the close of the enclosing block, typically at the end of a method.
 
-For more information about the `try`-`finally` statement, see the [try-finally](try-finally.md) topic.
+For more information about the `try`-`finally` statement, see the [try-finally](try-finally.md) article.
 
 Multiple instances of a type can be declared in the `using` statement, as shown in the following example. Notice that you can't use implicitly typed variables (`var`) with multiple declarations:
 
 :::code language="csharp" source="snippets/usings.cs" id="SnippetMultipleUsings":::
 
-You can combine multiple declarations of the same type using the new syntax introduced with C# 8 as well. This is shown in the following example:
+You can combine multiple declarations of the same type using the new syntax introduced with C# 8 as well, as shown in the following example:
 
 :::code language="csharp" source="snippets/usings.cs" id="SnippetModernMultipleUsings":::
 
-You can instantiate the resource object and then pass the variable to the `using` statement, but this is not a best practice. In this case, after control leaves the `using` block, the object remains in scope but probably has no access to its unmanaged resources. In other words, it's not fully initialized anymore. If you try to use the object outside the `using` block, you risk causing an exception to be thrown. For this reason, it's generally better to instantiate the object in the `using` statement and limit its scope to the `using` block.
+You can instantiate the resource object and then pass the variable to the `using` statement, but this isn't a best practice. In this case, after control leaves the `using` block, the object remains in scope but probably has no access to its unmanaged resources. In other words, it's not fully initialized anymore. If you try to use the object outside the `using` block, you risk causing an exception to be thrown. For this reason, it's better to instantiate the object in the `using` statement and limit its scope to the `using` block.
 
 :::code language="csharp" source="snippets/usings.cs" id="SnippetDeclareBeforeUsing":::
 

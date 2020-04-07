@@ -168,4 +168,87 @@ All of these features offer cool new capabilities for developers and the opportu
 
 But C# is being put to ever broader use. .NET Core now targets any operating system and has its eyes firmly on the cloud and on portability.  These new capabilities certainly occupy the language designers' thoughts and time, in addition to coming up with new features.
 
+## C# version 7.1
+
+C# 7.1 adds the [language version selection](../language-reference/configure-language-version.md) configuration element, three new language features, and new compiler behavior.
+
+The new language features in this release are:
+
+- [`async` `Main` method](#async-main)
+  - The entry point for an application can have the `async` modifier.
+- [`default` literal expressions](#default-literal-expressions)
+  - You can use default literal expressions in default value expressions when the target type can be inferred.
+- [Inferred tuple element names](#inferred-tuple-element-names)
+  - The names of tuple elements can be inferred from tuple initialization in many cases.
+- [Pattern matching on generic type parameters](#pattern-matching-on-generic-type-parameters)
+  - You can use pattern match expressions on variables whose type is a generic type parameter.
+
+Finally, the compiler has two options `-refout` and `-refonly` that
+control [reference assembly generation](#reference-assembly-generation).
+
+## C# version 7.2
+
+The new language features in this release are:
+
+- [Techniques for writing safe efficient code](#safe-efficient-code-enhancements)
+  - A combination of syntax improvements that enable working with value types using reference semantics.
+- [Non-trailing named arguments](#non-trailing-named-arguments)
+  - Named arguments can be followed by positional arguments.
+- [Leading underscores in numeric literals](#leading-underscores-in-numeric-literals)
+  - Numeric literals can now have leading underscores before any printed digits.
+- [`private protected` access modifier](#private-protected-access-modifier)
+  - The `private protected` access modifier enables access for derived classes in the same assembly.
+- [Conditional `ref` expressions](#conditional-ref-expressions)
+  - The result of a conditional expression (`?:`) can now be a reference.
+
+## C# version 7.3
+
+There are two main themes to the C# 7.3 release. One theme provides features that enable safe code to be as performant as unsafe code. The second theme provides incremental improvements to existing features. In addition, new compiler options were added in this release.
+
+The following new features support the theme of better performance for safe code:
+
+- You can access fixed fields without pinning.
+- You can reassign `ref` local variables.
+- You can use initializers on `stackalloc` arrays.
+- You can use `fixed` statements with any type that supports a pattern.
+- You can use additional generic constraints.
+
+The following enhancements were made to existing features:
+
+- You can test `==` and `!=` with tuple types.
+- You can use expression variables in more locations.
+- You may attach attributes to the backing field of auto-implemented properties.
+- Method resolution when arguments differ by `in` has been improved.
+- Overload resolution now has fewer ambiguous cases.
+
+The new compiler options are:
+
+- `-publicsign` to enable Open Source Software (OSS) signing of assemblies.
+- `-pathmap` to provide a mapping for source directories.
+
+
+
+## C# version 8.0
+
+C# 8.0 adds the following features and enhancements to the C# language:
+
+- [Readonly members](#readonly-members)
+- [Default interface methods](#default-interface-methods)
+- [Pattern matching enhancements](#more-patterns-in-more-places):
+  - [Switch expressions](#switch-expressions)
+  - [Property patterns](#property-patterns)
+  - [Tuple patterns](#tuple-patterns)
+  - [Positional patterns](#positional-patterns)
+- [Using declarations](#using-declarations)
+- [Static local functions](#static-local-functions)
+- [Disposable ref structs](#disposable-ref-structs)
+- [Nullable reference types](#nullable-reference-types)
+- [Asynchronous streams](#asynchronous-streams)
+- [Indices and ranges](#indices-and-ranges)
+- [Null-coalescing assignment](#null-coalescing-assignment)
+- [Unmanaged constructed types](#unmanaged-constructed-types)
+- [Stackalloc in nested expressions](#stackalloc-in-nested-expressions)
+- [Enhancement of interpolated verbatim strings](#enhancement-of-interpolated-verbatim-strings)
+
+
 _Article_ [_originally published on the NDepend blog_](https://blog.ndepend.com/c-versions-look-language-history/)_, courtesy of Erik Dietrich and Patrick Smacchia._

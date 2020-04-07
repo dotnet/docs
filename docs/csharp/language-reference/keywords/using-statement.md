@@ -1,6 +1,6 @@
 ---
 title: "using statement - C# Reference"
-ms.date: 10/15/2019
+ms.date: 04/07/2020
 helpviewer_keywords:
   - "using statement [C#]"
 ms.assetid: afc355e6-f0b9-4240-94dd-0d93f17d9fc3

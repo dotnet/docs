@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 8.0 - C# Guide
 description: Get an overview of the new features available in C# 8.0.
-ms.date: 09/20/2019
+ms.date: 04/07/2020
 ---
 # What's new in C# 8.0
 

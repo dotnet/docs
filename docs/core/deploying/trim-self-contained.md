@@ -42,7 +42,7 @@ The following example publishes an app for Windows 10 as self-contained and trim
 dotnet publish -c Release -r win10-x64 --self-contained true -p:PublishSingleFile=false -p:PublishTrimmed=true
 ```
 
-For more information about publishing, see [Publish .NET Core apps with .NET Core CLI](deploy-with-cli.md).
+For more information, see [Publish .NET Core apps with .NET Core CLI](deploy-with-cli.md).
 
 ## Trim your app - Visual Studio
 
@@ -70,11 +70,11 @@ Visual Studio creates reusable publishing profiles that control how your applica
 
 01. Choose **Publish** to publish your app trimmed.
 
-For more information about publishing, see [Publish .NET Core apps with Visual Studio](deploy-with-vs.md).
+For more information, see [Publish .NET Core apps with Visual Studio](deploy-with-vs.md).
 
 ## Trim your app - Visual Studio for Mac
 
-Visual Studio for Mac doesn't provide options to trim your app during publish. You'll need to publish manually by following the instructions from the [Trim your app - CLI](#trim-your-app---cli) section. For more information about publishing, see [Publish .NET Core apps with .NET Core CLI](deploy-with-cli.md).
+Visual Studio for Mac doesn't provide options to trim your app during publish. You'll need to publish manually by following the instructions from the [Trim your app - CLI](#trim-your-app---cli) section. For more information, see [Publish .NET Core apps with .NET Core CLI](deploy-with-cli.md).
 
 ## See also
 

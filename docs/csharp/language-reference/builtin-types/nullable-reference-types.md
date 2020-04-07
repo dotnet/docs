@@ -61,7 +61,7 @@ The preceding examples demonstrate the compiler's static analysis to determine t
 
 There are two ways to control the nullable context. At the project level, you can add the `<Nullable>Enable</Nullable>` project setting. In a single C# source file, you can add the `#nullable enable` pragma to enable the nullable context. See the article on [setting a nullable strategy](../../nullable-attributes.md).
 
- ## C# language specification
+## C# language specification
 
 For more information, see the following proposals for the [C# language specification](~/_csharplang/spec/introduction.md):
 

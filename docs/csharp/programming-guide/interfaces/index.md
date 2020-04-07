@@ -20,7 +20,7 @@ The name of an interface must be a valid C# [identifier name](../inside-a-progra
 
 Any class or struct that implements the <xref:System.IEquatable%601> interface must contain a definition for an <xref:System.IEquatable%601.Equals%2A> method that matches the signature that the interface specifies. As a result, you can count on a class that implements `IEquatable<T>` to contain an `Equals` method with which an instance of the class can determine whether it's equal to another instance of the same class.
 
-The definition of `IEquatable<T>` doesn’t provide an implementation for `Equals`. A class or struct can implement multiple interfaces, but a class can only inherit from a single class.
+The definition of `IEquatable<T>` doesn't provide an implementation for `Equals`. A class or struct can implement multiple interfaces, but a class can only inherit from a single class.
 
 For more information about abstract classes, see [Abstract and Sealed Classes and Class Members](../classes-and-structs/abstract-and-sealed-classes-and-class-members.md).
 

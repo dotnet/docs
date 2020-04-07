@@ -133,4 +133,4 @@ For more information, see the following sections of the [C# language specificati
 - <xref:System.Nullable%601?displayProperty=nameWithType>
 - <xref:System.Nullable?displayProperty=nameWithType>
 - <xref:System.Nullable.GetUnderlyingType%2A?displayProperty=nameWithType>
-- [Nullable reference types](../../nullable-references.md)
+- [Nullable reference types](nullable-reference-types.md)

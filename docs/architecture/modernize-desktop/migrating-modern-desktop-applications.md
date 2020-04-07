@@ -90,7 +90,6 @@ If you choose XML, the
 conversion is straightforward. Since the content is the same, just rename the *app.config* file
 to a file with XML extension. Then, change the code that references AppSettings to use the ConfigurationBuilder class. That should be an easy change.
 
-
 If you want to use a JSON format and you don't want to migrate by hand,
 there's a tool called [dotnet-config2json](https://www.nuget.org/packages/dotnet-config2json/) available on .NET Core that
 can convert an *app.config* file to a JSON configuration file.

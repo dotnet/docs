@@ -1,5 +1,5 @@
 ---
-title: Distinguishing Delegates and Events
+title: Delegates vs. events
 description: Learn the difference between delegates and events and when to use each of these features of .NET Core.
 ms.date: 06/20/2016
 ms.technology: csharp-fundamentals
@@ -12,8 +12,8 @@ ms.assetid: 0fdc8629-2fdb-4a7c-a433-5b9d04eaf911
 
 Developers that are new to the .NET Core platform often struggle
 when deciding between a design based on `delegates` and a design
-based on `events`. This is a difficult concept, because the two
-language features are very similar. Events are even built using
+based on `events`. The choice of delegates or events is often difficult, because the two
+language features are similar. Events are even built using
 the language support for delegates.
 
 They both offer a late binding scenario: they enable scenarios
@@ -73,10 +73,9 @@ private class members, if they are stored at all.
 
 ## Event Listeners Often Have Longer Lifetimes
 
-This is a slightly weaker justification. However, you may find that
-event-based designs are more natural when the event source will be
+That event listeners have longer lifetimes is a slightly weaker justification. However, you may find that event-based designs are more natural when the event source will be
 raising events over a long period of time. You can see examples of
-this for UX controls on many systems. Once you subscribe to an event,
+event-based design for UX controls on many systems. Once you subscribe to an event,
 the event source may raise events throughout the lifetime of the program.
 (You can unsubscribe from events when you no longer need them.)
 

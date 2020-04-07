@@ -65,7 +65,7 @@ The .NET Framework regular expression engine is a backtracking regular expressio
 
      For more information about positive lookahead assertions, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).
 
-- Negative lookahead: `(?!`*subexpression*`)`. This feature adds the ability to match an expression only if a subexpression fails to match. This is particularly powerful for pruning a search, because it is often simpler to provide an expression for a case that should be eliminated than an expression for cases that must be included. For example, it is difficult to write an expression for words that do not begin with "non". The following example uses negative lookahead to exclude them.
+- Negative lookahead: `(?!`*subexpression*`)`. This feature adds the ability to match an expression only if a subexpression fails to match. This is powerful for pruning a search, because it is often simpler to provide an expression for a case that should be eliminated than an expression for cases that must be included. For example, it is difficult to write an expression for words that do not begin with "non". The following example uses negative lookahead to exclude them.
 
      [!code-csharp[Conceptual.RegularExpressions.Design#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.design/cs/lookahead2.cs#3)]
      [!code-vb[Conceptual.RegularExpressions.Design#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.design/vb/lookahead2.vb#3)]
@@ -145,7 +145,6 @@ The .NET Framework regular expression engine is a backtracking regular expressio
 |[Thread Safety](../../../docs/standard/base-types/thread-safety-in-regular-expressions.md)|Provides information about regular expression thread safety and explains when you should synchronize access to regular expression objects.|
 |[.NET Framework Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)|Provides an overview of the programming language aspect of regular expressions.|
 |[The Regular Expression Object Model](../../../docs/standard/base-types/the-regular-expression-object-model.md)|Provides information and code examples illustrating how to use the regular expression classes.|
-|[Regular Expression Examples](../../../docs/standard/base-types/regular-expression-examples.md)|Contains code examples that illustrate the use of regular expressions in common applications.|
 |[Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)|Provides information about the set of characters, operators, and constructs that you can use to define regular expressions.|
 
 ## Reference

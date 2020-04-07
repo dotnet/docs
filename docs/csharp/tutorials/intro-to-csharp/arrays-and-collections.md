@@ -223,9 +223,6 @@ You can see an example solution by [looking at the finished sample code on GitHu
 
 With each iteration of the loop, you're taking the last two integers in the list, summing them, and adding that value to the list. The loop repeats until you've added 20 items to the list.
 
-Congratulations, you've completed the list tutorial. You can continue with
-the [Introduction to classes](introduction-to-classes.md) tutorial in
-your own development environment.
+Congratulations, you've completed the list tutorial. You can continue with the [Introduction to classes](introduction-to-classes.md) tutorial in your own development environment.
 
-You can learn more about working with the `List` type in the
-[.NET Guide](../../../standard/index.md) topic on [collections](../../../standard/collections/index.md). You'll also learn about many other collection types.
+You can learn more about working with the `List` type in the [.NET guide](../../../standard/index.yml) article on [collections](../../../standard/collections/index.md). You'll also learn about many other collection types.

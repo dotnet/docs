@@ -16,7 +16,7 @@ This topic describes how you can enable tracing, configure trace sources to emit
 ## Enabling Tracing  
  Windows Communication Foundation (WCF) outputs the following data for diagnostic tracing:  
   
-- Traces for process milestones across all components of the applications, such as operation calls, code exceptions, warnings and other significant processing events.  
+- Traces for process milestones across all components of the applications, such as operation calls, code exceptions, warnings, and other significant processing events.  
   
 - Windows error events when the tracing feature malfunctions. See [Event Logging](../../../../../docs/framework/wcf/diagnostics/event-logging/index.md).  
   
@@ -26,13 +26,13 @@ This topic describes how you can enable tracing, configure trace sources to emit
   
  If you use WCF extensibility points such as custom operation invokers, you should emit your own traces. This is because if you implement an extensibility point, WCF can no longer emit the standard traces in the default path. If you do not implement manual tracing support by emitting traces, you may not see the traces you expect.  
   
- You can configure tracing by editing the application’s configuration file—either Web.config for Web-hosted applications, or Appname.exe.config for self-hosted applications. The following is an example of such edit. For more information on these settings, see the "Configuring Trace Listeners to Consume Traces" section.  
+ You can configure tracing by editing the application's configuration file—either Web.config for Web-hosted applications, or Appname.exe.config for self-hosted applications. The following is an example of such edit. For more information on these settings, see the "Configuring Trace Listeners to Consume Traces" section.  
   
 ```xml  
 <configuration>  
    <system.diagnostics>  
       <sources>  
-            <source name="System.ServiceModel"
+         <source name="System.ServiceModel"
                     switchValue="Information, ActivityTracing"  
                     propagateActivity="true">  
             <listeners>  
@@ -47,7 +47,7 @@ This topic describes how you can enable tracing, configure trace sources to emit
 ```  
   
 > [!NOTE]
-> To edit the configuration file of a WCF service project in Visual Studio, right click the application’s configuration file—either Web.config for Web-hosted applications, or Appname.exe.config for self-hosted application in **Solution Explorer**. Then choose the **Edit WCF Configuration** context menu item. This launches the [Configuration Editor Tool (SvcConfigEditor.exe)](../../../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md), which enables you to modify configuration settings for WCF services using a graphical user interface.  
+> To edit the configuration file of a WCF service project in Visual Studio, right click the application's configuration file—either Web.config for Web-hosted applications, or Appname.exe.config for self-hosted application in **Solution Explorer**. Then choose the **Edit WCF Configuration** context menu item. This launches the [Configuration Editor Tool (SvcConfigEditor.exe)](../../../../../docs/framework/wcf/configuration-editor-tool-svcconfigeditor-exe.md), which enables you to modify configuration settings for WCF services using a graphical user interface.  
   
 ## Configuring Trace Sources to Emit Traces  
  WCF defines a trace source for each assembly. Traces generated within an assembly are accessed by the listeners defined for that source. The following trace sources are defined:  
@@ -130,7 +130,7 @@ This topic describes how you can enable tracing, configure trace sources to emit
  For more information about creating user-defined trace sources, see [Extending Tracing](../../../../../docs/framework/wcf/samples/extending-tracing.md).  
   
 ## Configuring Trace Listeners to Consume Traces  
- At runtime, WCF feeds trace data to the listeners which process the data. WCF provides several predefined listeners for <xref:System.Diagnostics>, which differ in the format they use for output. You can also add custom listener types.  
+ At runtime, WCF feeds trace data to the listeners, which process the data. WCF provides several predefined listeners for <xref:System.Diagnostics>, which differ in the format they use for output. You can also add custom listener types.  
   
  You can use `add` to specify the name and type of the trace listener you want to use. In our example configuration, we named the Listener `traceListener` and added the standard .NET Framework trace listener (`System.Diagnostics.XmlWriterTraceListener`) as the type we want to use. You can add any number of trace listeners for each source. If the trace listener emits the trace to a file, you must specify the output file location and name in the configuration file. This is done by setting `initializeData` to the name of the file for that listener. If you do not specify a file name, a random file name is generated based on the listener type used. If <xref:System.Diagnostics.XmlWriterTraceListener> is used, a file name with no extension is generated. If you implement a custom listener, you can also use this attribute to receive initialization data other than a filename. For example, you can specify a database identifier for this attribute.  
   
@@ -151,7 +151,7 @@ This topic describes how you can enable tracing, configure trace sources to emit
 |Error|"Negative" events: events that indicate an unexpected processing or an error condition.|Unexpected processing has happened. The application was not able to perform a task as expected. However, the application is still up and running.|All exceptions are logged.|Administrators<br /><br /> Application developers|  
 |Warning|"Negative" events: events that indicate an unexpected processing or an error condition.|A possible problem has occurred or may occur, but the application still functions correctly. However, it may not continue to work properly.|-   The application is receiving more requests than its throttling settings allow.<br />-   The receiving queue is near its maximum configured capacity.<br />-   Timeout has exceeded.<br />-   Credentials are rejected.|Administrators<br /><br /> Application developers|  
 |Information|"Positive" events: events that mark successful milestones|Important and successful milestones of application execution, regardless of whether the application is working properly or not.|In general, messages helpful for monitoring and diagnosing system status, measuring performance or profiling are generated. You can use such information for capacity planning and performance management:<br /><br /> -   Channels are created.<br />-   Endpoint listeners are created.<br />-   Message enters/leaves transport.<br />-   Security token is retrieved.<br />-   Configuration setting is read.|Administrators<br /><br /> Application developers<br /><br /> Product developers.|  
-|Verbose|"Positive" events: events that mark successful milestones.|Low level events for both user code and servicing are emitted.|In general, you can use this level for debugging or application optimization.<br /><br /> -   Understood message header.|Administrators<br /><br /> Application developers<br /><br /> Product developers.|  
+|Verbose|"Positive" events: events that mark successful milestones.|Low-level events for both user code and servicing are emitted.|In general, you can use this level for debugging or application optimization.<br /><br /> -   Understood message header.|Administrators<br /><br /> Application developers<br /><br /> Product developers.|  
 |ActivityTracing||Flow events between processing activities and components.|This level allows administrators and developers to correlate applications in the same application domain:<br /><br /> -   Traces for activity boundaries, such as start/stop.<br />-   Traces for transfers.|All|  
 |All||Application may function properly. All events are emitted.|All previous events.|All|  
   

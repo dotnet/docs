@@ -116,5 +116,5 @@ In PLINQ, the goal is to maximize performance while maintaining correctness. A q
   
 ## See also
 
-- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
+- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/introduction-to-plinq.md)
 - [Parallel Programming](../../../docs/standard/parallel-programming/index.md)

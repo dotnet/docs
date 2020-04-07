@@ -103,7 +103,7 @@ To publish a single-file executable, set the `PublishSingleFile` in your project
 dotnet publish -r win10-x64 -p:PublishSingleFile=true
 ```
 
-For more information about single-file publishing, see the [single-file bundler design document](https://github.com/dotnet/designs/blob/master/accepted/2020/single-file/design_3_0.md).
+For more information about single-file publishing, see the [single-file bundler design document](https://github.com/dotnet/designs/blob/master/accepted/2020/single-file/design.md).
 
 ### Assembly linking
 

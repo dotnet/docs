@@ -13,11 +13,11 @@ ms.topic: reference
 - Introduced in .NET Core 3.0.
 
 | | Setting name | Values |
-| - | - |
+| - | - | - |
 | **runtimeconfig.json** | `System.Net.Http.SocketsHttpHandler.Http2Support` | `false` - disabled<br/>`true` - enabled |
 | **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_SOCKETSHTTPHANDLER_HTTP2SUPPORT` | `0` - disabled<br/>`1` - enabled |
 
-## Sockets HTTP handler
+## UseSocketsHttpHandler
 
 - Configures whether high-level networking APIs, such as <xref:System.Net.Http.HttpClient>, use <xref:System.Net.Http.SocketsHttpHandler?displayProperty=nameWithType> or the implementation of <xref:System.Net.Http.HttpClientHandler?displayProperty=nameWithType> that's based on [libcurl](https://curl.haxx.se/libcurl/).
 - Default: Use <xref:System.Net.Http.SocketsHttpHandler?displayProperty=nameWithType> (`true`).
@@ -27,3 +27,6 @@ ms.topic: reference
 | - | - | - |
 | **runtimeconfig.json** | `System.Net.Http.UseSocketsHttpHandler` | `true` - enables the use of <xref:System.Net.Http.SocketsHttpHandler><br/>`false` - enables the use of <xref:System.Net.Http.HttpClientHandler> |
 | **Environment variable** | `DOTNET_SYSTEM_NET_HTTP_USESOCKETSHTTPHANDLER` | `1` - enables the use of <xref:System.Net.Http.SocketsHttpHandler><br/>`0` - enables the use of <xref:System.Net.Http.HttpClientHandler> |
+
+> [!NOTE]
+> Starting in .NET 5, the `System.Net.Http.UseSocketsHttpHandler` setting is no longer available.

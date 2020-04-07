@@ -146,6 +146,6 @@ Congratulations! You've successfully built a machine learning model to categoriz
 
 To learn more about topics mentioned in this tutorial, visit the following resources:
 
-- [Model Builder Scenarios](../automate-training-with-model-builder.md#scenarios)
+- [Model Builder Scenarios](../automate-training-with-model-builder.md#scenario)
 - [Multiclass Classification](../resources/glossary.md#multiclass-classification)
 - [Multiclass Classification Model Metrics](../resources/metrics.md#evaluation-metrics-for-multi-class-classification)

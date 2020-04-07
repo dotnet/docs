@@ -56,7 +56,7 @@ The following example declares a custom element called **\<sampleSection>** that
 
 ## Configuration file
 
-This element can be used in the application configuration file, machine configuration file (*Machine.config*), and *Web.config* files that are not at the application directory level.
+This element can be used in the application configuration file, the machine configuration file (*Machine.config*), and *Web.config* files that aren't at the application directory level.
 
 ## See also
 

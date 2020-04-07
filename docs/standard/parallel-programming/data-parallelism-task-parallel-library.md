@@ -29,7 +29,7 @@ ms.assetid: 3f05f33f-f1da-4b16-81c2-9ceff1bef449
   
  For more information, see [Patterns for Parallel Programming: Understanding and Applying Parallel Patterns with the .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=19222).  
   
- Data parallelism with declarative, or query-like, syntax is supported by PLINQ. For more information, see [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md).  
+ Data parallelism with declarative, or query-like, syntax is supported by PLINQ. For more information, see [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/introduction-to-plinq.md).  
   
 ## Related Topics  
   

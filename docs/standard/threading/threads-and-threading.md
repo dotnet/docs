@@ -31,7 +31,7 @@ If your program performs operations that can be done in parallel, the total exec
 
 ## How to use multithreading in .NET
 
-Starting with the .NET Framework 4, the recommended way to utilize multithreading is to use [Task Parallel Library (TPL)](../parallel-programming/task-parallel-library-tpl.md) and [Parallel LINQ (PLINQ)](../parallel-programming/parallel-linq-plinq.md). For more information, see [Parallel programming](../parallel-programming/index.md).
+Starting with the .NET Framework 4, the recommended way to utilize multithreading is to use [Task Parallel Library (TPL)](../parallel-programming/task-parallel-library-tpl.md) and [Parallel LINQ (PLINQ)](../parallel-programming/introduction-to-plinq.md). For more information, see [Parallel programming](../parallel-programming/index.md).
 
 Both TPL and PLINQ rely on the <xref:System.Threading.ThreadPool> threads. The <xref:System.Threading.ThreadPool?displayProperty=nameWithType> class provides a .NET application with a pool of worker threads. You also can use thread pool threads. For more information, see [The managed thread pool](the-managed-thread-pool.md).
 

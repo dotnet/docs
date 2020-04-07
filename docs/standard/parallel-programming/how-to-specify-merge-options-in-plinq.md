@@ -26,4 +26,4 @@ This example shows how to specify the merge options that will apply to all subse
 ## See also
 
 - <xref:System.Linq.ParallelMergeOptions>
-- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
+- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/introduction-to-plinq.md)

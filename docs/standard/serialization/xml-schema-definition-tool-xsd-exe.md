@@ -3,12 +3,13 @@ title: "XML Schema Definition Tool (Xsd.exe)"
 ms.date: "03/30/2017"
 ms.assetid: a6e6e65c-347f-4494-9457-653bf29baac2
 ---
-
 # XML Schema Definition Tool (Xsd.exe)
 
 The XML Schema Definition (Xsd.exe) tool generates XML schema or common language runtime classes from XDR, XML, and XSD files, or from classes in a runtime assembly.
 
 ## Syntax
+
+Run the tool from the command line.
 
 ```console
 xsd file.xdr [-outputdir:directory][/parameters:file.xml]
@@ -19,6 +20,9 @@ xsd file.xsd {/classes | /dataset} [/element:element]
                           [/parameters:file.xml]
 xsd {file.dll | file.exe} [-outputdir:directory] [/type:typename [...]][/parameters:file.xml]
 ```
+  
+> [!TIP]
+> For .NET Framework tools to function properly, you must set your `Path`, `Include`, and `Lib` environment variables correctly. Set these environment variables by running SDKVars.bat, which is located in the \<SDK>\v2.0\Bin directory. SDKVars.bat must be executed in every command shell.
 
 ## Argument
 
@@ -91,7 +95,7 @@ By using the `/parameters` switch, you can specify a single XML file that sets v
 </xsd>
 ```
 
-If the preceding XML is contained in a file named GenerateSchemas.xml, then use the `/parameters` switch by typing the following at a command prompt and pressing ENTER:
+If the preceding XML is contained in a file named GenerateSchemas.xml, then use the `/parameters` switch by typing the following at a command prompt and pressing **Enter**:
 
 ```console
  xsd /p:GenerateSchemas.xml
@@ -108,7 +112,7 @@ On the other hand, if you are generating a schema for a single type found in the
 </xsd>
 ```
 
-But to use preceding code, you must also supply the name of the assembly at the command prompt. Type the following at a command prompt (presuming the XML file is named GenerateSchemaFromType.xml):
+But to use preceding code, you must also supply the name of the assembly at the command prompt. Enter the following at a command prompt (presuming the XML file is named GenerateSchemaFromType.xml):
 
 ```console
 xsd /p:GenerateSchemaFromType.xml ConsoleApplication1.exe

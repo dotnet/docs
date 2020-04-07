@@ -128,7 +128,7 @@ You can see how this value object implementation of Address has no identity and 
 
 Having no ID field in a class to be used by Entity Framework (EF) was not possible until EF Core 2.0, which greatly helps to implement better value objects with no ID. That is precisely the explanation of the next section.
 
-It could be argued that value objects, being immutable, should be read-only (that is, have get-only properties), and that's indeed true. However, value objects are usually serialized and deserialized to go through message queues, and being read-only stops the deserializer from assigning values, so we just leave them as private set which is read-only enough to be practical.
+It could be argued that value objects, being immutable, should be read-only (that is, have get-only properties), and that's indeed true. However, value objects are usually serialized and deserialized to go through message queues, and being read-only stops the deserializer from assigning values, so we just leave them as `private set`, which is read-only enough to be practical.
 
 ## How to persist value objects in the database with EF Core 2.0 and later
 
@@ -181,7 +181,7 @@ By convention, a shadow primary key is created for the owned type and it will be
 
 It is important to note that owned types are never discovered by convention in EF Core, so you have to declare them explicitly.
 
-In eShopOnContainers, at the OrderingContext.cs, within the OnModelCreating() method, there are multiple infrastructure configuration being applied. One of them is related to the Order entity.
+In eShopOnContainers, in the OrderingContext.cs file, within the `OnModelCreating()` method, multiple infrastructure configurations are applied. One of them is related to the Order entity.
 
 ```csharp
 // Part of the OrderingContext.cs class at the Ordering.Infrastructure project
@@ -221,7 +221,7 @@ public void Configure(EntityTypeBuilder<Order> orderConfiguration)
 
 In the previous code, the `orderConfiguration.OwnsOne(o => o.Address)` method specifies that the `Address` property is an owned entity of the `Order` type.
 
-By default, EF Core conventions name the database columns for the properties of the owned entity type as `EntityProperty_OwnedEntityProperty`. Therefore, the internal properties of `Address` will appear in the `Orders` table with the names `Address_Street`, `Address_City` (and so on for `State`, `Country` and `ZipCode`).
+By default, EF Core conventions name the database columns for the properties of the owned entity type as `EntityProperty_OwnedEntityProperty`. Therefore, the internal properties of `Address` will appear in the `Orders` table with the names `Address_Street`, `Address_City` (and so on for `State`, `Country`, and `ZipCode`).
 
 You can append the `Property().HasColumnName()` fluent method to rename those columns. In the case where `Address` is a public property, the mappings would be like the following:
 
@@ -276,7 +276,7 @@ public class Address
 
 - You can map the same CLR type as different owned types in the same owner entity through separate navigation properties.
 
-- Table splitting is setup by convention, but you can opt out by mapping the owned type to a different table using ToTable.
+- Table splitting is set up by convention, but you can opt out by mapping the owned type to a different table using ToTable.
 
 - Eager loading is performed automatically on owned types, that is, there's no need to call `.Include()` on the query.
 
@@ -292,7 +292,7 @@ public class Address
 
 - No support for optional (that is, nullable) owned types that are mapped with the owner in the same table (that is, using table splitting). This is because mapping is done for each property, we don't have a separate sentinel for the null complex value as a whole.
 
-- No inheritance mapping support for owned types, but you should be able to map two leaf types of the same inheritance hierarchies as different owned types. EF Core will not reason about the fact that they are part of the same hierarchy.
+- No inheritance-mapping support for owned types, but you should be able to map two leaf types of the same inheritance hierarchies as different owned types. EF Core will not reason about the fact that they are part of the same hierarchy.
 
 #### Main differences with EF6's complex types
 

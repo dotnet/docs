@@ -81,7 +81,7 @@ These changes are part of a wider set of Unicode and UTF-8 improvements in .NET,
 
 #### Version introduced
 
-.NET 5.0
+.NET 5.0 Preview 1
 
 ### Recommended action
 

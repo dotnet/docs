@@ -166,7 +166,7 @@ internal class DelegateTest {
   
  A formatted type is a complex type that contains information that explicitly controls the layout of its members in memory. The member layout information is provided using the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute. The layout can be one of the following <xref:System.Runtime.InteropServices.LayoutKind> enumeration values:  
   
-- **LayoutKind.Automatic**  
+- **LayoutKind.Auto**  
   
      Indicates that the common language runtime is free to reorder the members of the type for efficiency. However, when a value type is passed to unmanaged code, the layout of the members is predictable. An attempt to marshal such a structure automatically causes an exception.  
   

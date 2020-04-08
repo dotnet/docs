@@ -10,7 +10,7 @@ helpviewer_keywords:
 A *nullable value type* `T?` represents all values of its underlying [value type](value-types.md) `T` and an additional [null](../keywords/null.md) value. For example, you can assign any of the following three values to a `bool?` variable: `true`, `false`, or `null`. An underlying value type `T` cannot be a nullable value type itself.
 
 > [!NOTE]
-> C# 8.0 introduces the nullable reference types feature. For more information, see [Nullable reference types](../../nullable-references.md). The nullable value types are available beginning with C# 2.
+> C# 8.0 introduces the nullable reference types feature. For more information, see [Nullable reference types](nullable-reference-types.md). The nullable value types are available beginning with C# 2.
 
 Any nullable value type is an instance of the generic <xref:System.Nullable%601?displayProperty=nameWithType> structure. You can refer to a nullable value type with an underlying type `T` in any of the following interchangeable forms: `Nullable<T>` or `T?`.
 
@@ -114,7 +114,7 @@ You can use the code presented in the following example to determine whether an 
 [!code-csharp-interactive[whether an instance is of a nullable type](snippets/NullableValueTypes.cs#IsInstanceNullable)]
 
 > [!NOTE]
-> The methods described in this section are not applicable in the case of [nullable reference types](../../nullable-references.md).
+> The methods described in this section are not applicable in the case of [nullable reference types](nullable-reference-types.md).
 
 ## C# language specification
 
@@ -133,4 +133,4 @@ For more information, see the following sections of the [C# language specificati
 - <xref:System.Nullable%601?displayProperty=nameWithType>
 - <xref:System.Nullable?displayProperty=nameWithType>
 - <xref:System.Nullable.GetUnderlyingType%2A?displayProperty=nameWithType>
-- [Nullable reference types](../../nullable-references.md)
+- [Nullable reference types](nullable-reference-types.md)

@@ -196,7 +196,7 @@ A typical use case is when you define multiple compose files so you can target m
 
 **Figure 6-12**. Multiple docker-compose files overriding values in the base docker-compose.yml file
 
-You can combine multiple docker-compose*.yml files to handle different environments. You start with the base docker-compose.yml file. This base file has to contain the base or static configuration settings that do not change depending on the environment. For example, the eShopOnContainers has the following docker-compose.yml file (simplified with fewer services) as the base file.
+You can combine multiple docker-compose*.yml files to handle different environments. You start with the base docker-compose.yml file. This base file contains the base or static configuration settings that do not change depending on the environment. For example, the eShopOnContainers app has the following docker-compose.yml file (simplified with fewer services) as the base file.
 
 ```yml
 #docker-compose.yml (Base)

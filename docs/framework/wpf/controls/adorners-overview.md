@@ -18,10 +18,10 @@ An <xref:System.Windows.Documents.Adorner> is a custom <xref:System.Windows.Fram
 
 Common applications for adorners include:
 
-- Adding functional handles to a <xref:System.Windows.UIElement> that enable a user to manipulate the element in some way (resize, rotate, reposition, etc.).
+- Adding functional handles to an <xref:System.Windows.UIElement> that enable a user to manipulate the element in some way (resize, rotate, reposition, etc.).
 - Provide visual feedback to indicate various states, or in response to various events.
-- Overlay visual decorations on a <xref:System.Windows.UIElement>.
-- Visually mask or override part or all of a <xref:System.Windows.UIElement>.
+- Overlay visual decorations on an <xref:System.Windows.UIElement>.
+- Visually mask or override part or all of an <xref:System.Windows.UIElement>.
 
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides a basic framework for adorning visual elements. The following table lists the primary types used when adorning objects, and their purpose. Several usage examples follow:
 
@@ -38,7 +38,7 @@ The adorners framework provided by [!INCLUDE[TLA#tla_winclient](../../../../incl
 > [!NOTE]
 > The parent of an <xref:System.Windows.Documents.Adorner> is the <xref:System.Windows.Documents.AdornerLayer> that renders the <xref:System.Windows.Documents.Adorner>, not the element being adorned.
 
-The following example shows a class that implements a simple adorner. The example adorner simply adorns the corners of a <xref:System.Windows.UIElement> with circles.
+The following example shows a class that implements a simple adorner. The example adorner simply adorns the corners of an <xref:System.Windows.UIElement> with circles.
 
 [!code-csharp[Adorners_SimpleCircleAdorner#_SimpleCircleAdornerBody](~/samples/snippets/csharp/VS_Snippets_Wpf/Adorners_SimpleCircleAdorner/CSharp/Window1.xaml.cs#_simplecircleadornerbody)]
 [!code-vb[Adorners_SimpleCircleAdorner#_SimpleCircleAdornerBody](~/samples/snippets/visualbasic/VS_Snippets_Wpf/Adorners_SimpleCircleAdorner/VisualBasic/Window1.xaml.vb#_simplecircleadornerbody)]

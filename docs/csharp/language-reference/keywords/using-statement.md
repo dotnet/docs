@@ -33,13 +33,13 @@ The newer `using` statement syntax translates to similar code. The `try` block o
 
 For more information about the `try`-`finally` statement, see the [try-finally](try-finally.md) article.
 
-Multiple instances of a type can be declared in the `using` statement, as shown in the following example. Notice that you can't use implicitly typed variables (`var`) with multiple declarations:
+Multiple instances of a type can be declared in a single `using` statement, as shown in the following example. Notice that you can't use implicitly typed variables (`var`) when you declare multiple variables in a single statement:
 
-:::code language="csharp" source="snippets/usings.cs" id="SnippetMultipleUsings":::
+:::code language="csharp" source="snippets/usings.cs" id="SnippetDeclareMultipleVariables":::
 
 You can combine multiple declarations of the same type using the new syntax introduced with C# 8 as well, as shown in the following example:
 
-:::code language="csharp" source="snippets/usings.cs" id="SnippetModernMultipleUsings":::
+:::code language="csharp" source="snippets/usings.cs" id="SnippetModernMultipleVariables":::
 
 You can instantiate the resource object and then pass the variable to the `using` statement, but this isn't a best practice. In this case, after control leaves the `using` block, the object remains in scope but probably has no access to its unmanaged resources. In other words, it's not fully initialized anymore. If you try to use the object outside the `using` block, you risk causing an exception to be thrown. For this reason, it's better to instantiate the object in the `using` statement and limit its scope to the `using` block.
 

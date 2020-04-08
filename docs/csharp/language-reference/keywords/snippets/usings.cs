@@ -10,8 +10,8 @@ namespace keywords
             UsingExample();
             ModernUsing();
             TryFinallyExample();
-            MultipleUsings();
-            ModernMultipleUsings();
+            DeclareMultipleVariables();
+            ModernMultipleVariables();
             DeclareBeforeUsing();
         }
 
@@ -76,9 +76,9 @@ namespace keywords
             // </SnippetTryFinallyExample>
         }
 
-        private static void MultipleUsings()
+        private static void DeclareMultipleVariables()
         {
-            // <SnippetMultipleUsings>
+            // <SnippetDeclareMultipleVariables>
             string numbers=@"One
             Two
             Three
@@ -100,12 +100,12 @@ namespace keywords
                     Console.WriteLine(item);
                 } while(item != null);
             }
-            // </SnippetMultipleUsings>
+            // </SnippetDeclareMultipleVariables>
         }
 
-        private static void ModernMultipleUsings()
+        private static void ModernMultipleVariables()
         {
-            // <SnippetModernMultipleUsings>
+            // <SnippetModernMultipleVariables>
             string numbers=@"One
             Two
             Three
@@ -125,7 +125,7 @@ namespace keywords
                 item = right.ReadLine();
                 Console.WriteLine(item);
             } while(item != null);
-            // </SnippetModernMultipleUsings>
+            // </SnippetModernMultipleVariables>
         }
 
         private static void DeclareBeforeUsing()

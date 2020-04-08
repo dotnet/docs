@@ -2,7 +2,7 @@
 title: The history of C# - C# Guide
 description: What did the language look like in its earliest versions, and how has it evolved since?
 author: erikdietrich
-ms.date: 09/20/2017
+ms.date: 04/08/2020
 ---
 
 # The history of C\#
@@ -149,7 +149,7 @@ They did one other thing along with this version, though it's not a traditional 
 
 ## C# version 7.0
 
-The most recent major version is C# version 7.0, released with Visual Studio 2017. This version has some evolutionary and cool stuff in the vein of C# 6.0, but without the compiler as a service. Here are some of the new features:
+C# version 7.0 was released with Visual Studio 2017. This version has some evolutionary and cool stuff in the vein of C# 6.0, but without the compiler as a service. Here are some of the new features:
 
 - [Out variables](./csharp-7.md#out-variables)
 - [Tuples and deconstruction](./csharp-7.md#tuples)
@@ -170,35 +170,35 @@ But C# is being put to ever broader use. .NET Core now targets any operating sys
 
 ## C# version 7.1
 
-C# 7.1 adds the [language version selection](../language-reference/configure-language-version.md) configuration element, three new language features, and new compiler behavior.
+C# started releasing *point releases* with C# 7.1. This version added the [language version selection](../language-reference/configure-language-version.md) configuration element, three new language features, and new compiler behavior.
 
 The new language features in this release are:
 
-- [`async` `Main` method](#async-main)
+- [`async` `Main` method](./csharp-7-1.md#async-main)
   - The entry point for an application can have the `async` modifier.
-- [`default` literal expressions](#default-literal-expressions)
+- [`default` literal expressions](./csharp-7-1.md#default-literal-expressions)
   - You can use default literal expressions in default value expressions when the target type can be inferred.
-- [Inferred tuple element names](#inferred-tuple-element-names)
+- [Inferred tuple element names](./csharp-7-1.md#inferred-tuple-element-names)
   - The names of tuple elements can be inferred from tuple initialization in many cases.
-- [Pattern matching on generic type parameters](#pattern-matching-on-generic-type-parameters)
+- [Pattern matching on generic type parameters](./csharp-7-1.md#pattern-matching-on-generic-type-parameters)
   - You can use pattern match expressions on variables whose type is a generic type parameter.
 
 Finally, the compiler has two options `-refout` and `-refonly` that
-control [reference assembly generation](#reference-assembly-generation).
+control [reference assembly generation](./csharp-7-1.md#reference-assembly-generation).
 
 ## C# version 7.2
 
-The new language features in this release are:
+C# 7.2 added several small language features:
 
-- [Techniques for writing safe efficient code](#safe-efficient-code-enhancements)
+- [Techniques for writing safe efficient code](./csharp-7-2.md#safe-efficient-code-enhancements)
   - A combination of syntax improvements that enable working with value types using reference semantics.
-- [Non-trailing named arguments](#non-trailing-named-arguments)
+- [Non-trailing named arguments](./csharp-7-2.md#non-trailing-named-arguments)
   - Named arguments can be followed by positional arguments.
-- [Leading underscores in numeric literals](#leading-underscores-in-numeric-literals)
+- [Leading underscores in numeric literals](./csharp-7-2.md#leading-underscores-in-numeric-literals)
   - Numeric literals can now have leading underscores before any printed digits.
-- [`private protected` access modifier](#private-protected-access-modifier)
+- [`private protected` access modifier](./csharp-7-2.md#private-protected-access-modifier)
   - The `private protected` access modifier enables access for derived classes in the same assembly.
-- [Conditional `ref` expressions](#conditional-ref-expressions)
+- [Conditional `ref` expressions](./csharp-7-2.md#conditional-ref-expressions)
   - The result of a conditional expression (`?:`) can now be a reference.
 
 ## C# version 7.3
@@ -226,29 +226,28 @@ The new compiler options are:
 - `-publicsign` to enable Open Source Software (OSS) signing of assemblies.
 - `-pathmap` to provide a mapping for source directories.
 
-
-
 ## C# version 8.0
 
-C# 8.0 adds the following features and enhancements to the C# language:
+C# 8.0 is the first major C# release that specifically targets .NET Core. Some features rely on new CLR capabilities, others on library types added only in .NET Core. C# 8.0 adds the following features and enhancements to the C# language:
 
-- [Readonly members](#readonly-members)
-- [Default interface methods](#default-interface-methods)
-- [Pattern matching enhancements](#more-patterns-in-more-places):
-  - [Switch expressions](#switch-expressions)
-  - [Property patterns](#property-patterns)
-  - [Tuple patterns](#tuple-patterns)
-  - [Positional patterns](#positional-patterns)
-- [Using declarations](#using-declarations)
-- [Static local functions](#static-local-functions)
-- [Disposable ref structs](#disposable-ref-structs)
-- [Nullable reference types](#nullable-reference-types)
-- [Asynchronous streams](#asynchronous-streams)
-- [Indices and ranges](#indices-and-ranges)
-- [Null-coalescing assignment](#null-coalescing-assignment)
-- [Unmanaged constructed types](#unmanaged-constructed-types)
-- [Stackalloc in nested expressions](#stackalloc-in-nested-expressions)
-- [Enhancement of interpolated verbatim strings](#enhancement-of-interpolated-verbatim-strings)
+- [Readonly members](./csharp-8.md#readonly-members)
+- [Default interface methods](./csharp-8.md#default-interface-methods)
+- [Pattern matching enhancements](./csharp-8.md#more-patterns-in-more-places):
+  - [Switch expressions](./csharp-8.md#switch-expressions)
+  - [Property patterns](./csharp-8.md#property-patterns)
+  - [Tuple patterns](./csharp-8.md#tuple-patterns)
+  - [Positional patterns](./csharp-8.md#positional-patterns)
+- [Using declarations](./csharp-8.md#using-declarations)
+- [Static local functions](./csharp-8.md#static-local-functions)
+- [Disposable ref structs](./csharp-8.md#disposable-ref-structs)
+- [Nullable reference types](./csharp-8.md#nullable-reference-types)
+- [Asynchronous streams](./csharp-8.md#asynchronous-streams)
+- [Indices and ranges](./csharp-8.md#indices-and-ranges)
+- [Null-coalescing assignment](./csharp-8.md#null-coalescing-assignment)
+- [Unmanaged constructed types](./csharp-8.md#unmanaged-constructed-types)
+- [Stackalloc in nested expressions](./csharp-8.md#stackalloc-in-nested-expressions)
+- [Enhancement of interpolated verbatim strings](./csharp-8.md#enhancement-of-interpolated-verbatim-strings)
 
+Default interface members require enhancements in the CLR. Those features were added in the CLR for .NET Core 3.0. Ranges and indexes, and asynchronous streams require new types in the .NET Core 3.0 libraries. Nullable reference types, while implemented in the compiler is much more useful when libraries are annotated to provide semantic information regarding the null state of arguments and return values. Those annotations are being added in the .NET Core libraries.
 
 _Article_ [_originally published on the NDepend blog_](https://blog.ndepend.com/c-versions-look-language-history/)_, courtesy of Erik Dietrich and Patrick Smacchia._

@@ -17,7 +17,8 @@ ms.date: 02/24/2020
 dotnet publish [<PROJECT>|<SOLUTION>] [-c|--configuration]
     [-f|--framework] [--force] [--interactive] [--manifest]
     [--no-build] [--no-dependencies] [--no-restore] [--nologo]
-    [-o|--output] [-r|--runtime] [--self-contained]
+    [-o|--output] [-p:PublishSingleFile] [-p:PublishTrimmed]
+    [-r|--runtime] [--self-contained]
     [--no-self-contained] [-v|--verbosity] [--version-suffix]
 
 dotnet publish [-h|--help]
@@ -119,6 +120,18 @@ For more information, see the following resources:
     If a relative path is specified when publishing a project, the output directory generated is relative to the project file location, not to the current working directory.
 
     If a relative path is specified when publishing a solution, each project's output goes into a separate folder relative to the project file location. If an absolute path is specified when publishing a solution, all publish output for all projects goes into the specified folder.
+
+- **`-p:PublishSingleFile`**
+
+  Packages the app into a platform-specific single-file executable. The executable is self-extracting and contains all dependencies (including native) that are required to run the app. When the app is first run, the application is extracted to a directory based on the app name and build identifier. Startup is faster when the application is run again. The application doesn't need to extract itself a second time unless a new version is used. Available since .NET Core 3.0 SDK.
+
+  For more information about single-file publishing, see the [single-file bundler design document](https://github.com/dotnet/designs/blob/master/accepted/2020/single-file/design.md).
+
+- **`-p:PublishTrimmed`**
+
+  https://docs.microsoft.com/en-us/dotnet/core/whats-new/dotnet-core-3-0
+  https://www.talkingdotnet.com/create-trimmed-self-contained-executable-in-net-core-3-0/
+  Available since .NET Core 3.0 SDK.
 
 - **`--self-contained [true|false]`**
 

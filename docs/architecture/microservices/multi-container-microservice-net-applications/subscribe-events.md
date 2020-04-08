@@ -288,7 +288,7 @@ An example of an idempotent operation is a SQL statement that inserts data into 
 
 It is possible to design idempotent messages. For example, you can create an event that says "set the product price to $25" instead of "add $5 to the product price." You could safely process the first message any number of times and the result will be the same. That is not true for the second message. But even in the first case, you might not want to process the first event, because the system could also have sent a newer price-change event and you would be overwriting the new price.
 
-Another example might be an order-completed event that's propagated to multiple subscribers. It's important that order information is updated in other systems only once, even if there are duplicated message events for the same order-completed event.
+Another example might be an order-completed event that's propagated to multiple subscribers. The app has to make sure that order information is updated in other systems only once, even if there are duplicated message events for the same order-completed event.
 
 It is convenient to have some kind of identity per event so that you can create logic that enforces that each event is processed only once per receiver.
 

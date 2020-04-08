@@ -207,24 +207,24 @@ There are two main themes to the C# 7.3 release. One theme provides features tha
 
 The following new features support the theme of better performance for safe code:
 
-- You can access fixed fields without pinning.
-- You can reassign `ref` local variables.
-- You can use initializers on `stackalloc` arrays.
-- You can use `fixed` statements with any type that supports a pattern.
-- You can use additional generic constraints.
+- [You can access fixed fields without pinning.](csharp-7-3.md#indexing-fixed-fields-does-not-require-pinning)
+- [You can reassign `ref` local variables.](csharp-7-3.md#ref-local-variables-may-be-reassigned)
+- [You can use initializers on `stackalloc` arrays.](csharp-7-3.md#stackalloc-arrays-support-initializers)
+- [You can use `fixed` statements with any type that supports a pattern.](csharp-7-3.md#more-types-support-the-fixed-statement)
+- [You can use additional generic constraints.](csharp-7-3.md#enhanced-generic-constraints)
 
 The following enhancements were made to existing features:
 
-- You can test `==` and `!=` with tuple types.
-- You can use expression variables in more locations.
-- You may attach attributes to the backing field of auto-implemented properties.
-- Method resolution when arguments differ by `in` has been improved.
-- Overload resolution now has fewer ambiguous cases.
+- [You can test `==` and `!=` with tuple types.](csharp-7-3.md#tuples-support--and-)
+- [You can use expression variables in more locations.](csharp-7-3.md#extend-expression-variables-in-initializers)
+- [You may attach attributes to the backing field of auto-implemented properties.](csharp-7-3.md#attach-attributes-to-the-backing-fields-for-auto-implemented-properties)
+- [Method resolution when arguments differ by `in` has been improved.](csharp-7-3.md#in-method-overload-resolution-tiebreaker)
+- [Overload resolution now has fewer ambiguous cases.](csharp-7-3.md#improved-overload-candidates)
 
 The new compiler options are:
 
-- `-publicsign` to enable Open Source Software (OSS) signing of assemblies.
-- `-pathmap` to provide a mapping for source directories.
+- [`-publicsign` to enable Open Source Software (OSS) signing of assemblies.](csharp-7-3.md#public-or-open-source-signing)
+- [`-pathmap` to provide a mapping for source directories.](csharp-7-3.md#pathmap)
 
 ## C# version 8.0
 
@@ -240,7 +240,7 @@ C# 8.0 is the first major C# release that specifically targets .NET Core. Some f
 - [Using declarations](./csharp-8.md#using-declarations)
 - [Static local functions](./csharp-8.md#static-local-functions)
 - [Disposable ref structs](./csharp-8.md#disposable-ref-structs)
-- [Nullable reference types](./csharp-8.md#nullable-reference-types)
+- [Nullable reference types](../language-reference/builtin-types/nullable-reference-types.md)
 - [Asynchronous streams](./csharp-8.md#asynchronous-streams)
 - [Indices and ranges](./csharp-8.md#indices-and-ranges)
 - [Null-coalescing assignment](./csharp-8.md#null-coalescing-assignment)

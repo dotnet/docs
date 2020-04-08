@@ -135,13 +135,13 @@ public float GetAirfare(
 ```  
   
 ## Describing Empty Messages  
- An empty request message can be described by having no input or reference parameters. For example in C#:  
+ An empty request message can be described by having no input or reference parameters. For example, in C#:  
   
  `[OperationContract]`  
   
  `public int GetCurrentTemperature();`  
   
- For example in VB:  
+ For example, in Visual Basic:  
   
  `<OperationContract()>`  
   
@@ -215,7 +215,7 @@ End Interface
   
 <MessageContract()>  
 Public Class GetAirfareRequest  
-    <MessageHeader()>   
+    <MessageHeader()>
     Public Property date as DateTime  
     <MessageBodyMember()>  
     Public Property itinerary As Itinerary  
@@ -395,7 +395,7 @@ public bool IsLibraryItemAvailable(LibraryItem item);
 [OperationContract]  
 public bool IsLibraryItemAvailable(LibraryItem item);  
   
-// code omitted   
+// code omitted
   
 [DataContract]  
 [KnownType(typeof(Book))]  
@@ -543,7 +543,7 @@ Dim serviceHost As ServiceHost = New ServiceHost(GetType(IDataService))
         <client>  
             <endpoint address="http://example.com/myservice"  
                   behaviorConfiguration="LargeQuotaBehavior"  
-                binding="basicHttpBinding" bindingConfiguration=""   
+                binding="basicHttpBinding" bindingConfiguration=""
                             contract="IDataService"  
                 name="" />  
         </client>  

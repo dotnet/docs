@@ -46,7 +46,7 @@ After you download one of the database backup (\*.bak) files, restore the backup
 ## <a name="get_ssms"></a> Get SQL Server Management Studio
 If you want to view or modify a database that you've downloaded, you can use SQL Server Management Studio (SSMS). Download SSMS from the following page:
 
-[Download SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms) 
+[Download SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms)
 
 You can also view and manage databases in the Visual Studio integrated development environment (IDE). In [Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017), connect to the database from **SQL Server Object Explorer**, or create a Data Connection to the database in **Server Explorer**. Open these explorer panes from the **View** menu.
 

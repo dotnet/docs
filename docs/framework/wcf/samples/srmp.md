@@ -22,7 +22,7 @@ This sample demonstrates how to perform transacted queued communication by using
   
 5. If you want to be certain that HTTP is used for communication, you can enable MSMQ to run in hardened mode. This ensures that no messages to any queue hosted on the machine can arrive using any non-HTTP transport.  
   
-6. After you have selected MSMQ to run in hardened mode, the machine requires a re-boot on [!INCLUDE[ws2003](../../../../includes/ws2003-md.md)].  
+6. After you have selected MSMQ to run in hardened mode, the machine requires a re-boot on Windows Server 2003.  
   
 7. Run the service.  
   
@@ -51,9 +51,9 @@ This sample demonstrates how to perform transacted queued communication by using
       <!-- Define NetMsmqEndpoint -->  
       <endpoint name="OrderProcessorEndpoint"  
            address=  
-          "net.msmq://localhost/private/ServiceModelSamplesSrmp"   
-           bindingConfiguration="srmpBinding"   
-           binding="netMsmqBinding"   
+          "net.msmq://localhost/private/ServiceModelSamplesSrmp"
+           bindingConfiguration="srmpBinding"
+           binding="netMsmqBinding"
            contract="IOrderProcessor" />  
     </client>  
     <bindings>  
@@ -72,20 +72,20 @@ This sample demonstrates how to perform transacted queued communication by using
  Running the sample yields the following output.  
   
 ```console  
-Processing Purchase Order: 556b70be-31ee-4a3b-8df4-ed5e538015a4   
-Customer: somecustomer.com   
-OrderDetails   
-    Order LineItem: 54 of Blue Widget @unit price: $29.99   
-    Order LineItem: 890 of Red Widget @unit price: $45.89   
-    Total cost of this order: $42461.56   
+Processing Purchase Order: 556b70be-31ee-4a3b-8df4-ed5e538015a4
+Customer: somecustomer.com
+OrderDetails
+    Order LineItem: 54 of Blue Widget @unit price: $29.99
+    Order LineItem: 890 of Red Widget @unit price: $45.89
+    Total cost of this order: $42461.56
     Order status: Pending  
 ```  
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Binding\Net\MSMQ\SRMP`  

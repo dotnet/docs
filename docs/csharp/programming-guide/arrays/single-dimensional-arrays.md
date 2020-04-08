@@ -1,6 +1,5 @@
 ---
 title: "Single-Dimensional Arrays - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "single-dimensional arrays [C#]"
@@ -26,7 +25,7 @@ You can declare a single-dimensional array of five integers as shown in the foll
  [!code-csharp[csProgGuideArrays#6](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csProgGuideArrays/CS/Arrays.cs#6)]  
   
  A string array can be initialized in the same way. The following is a declaration of a string array where each array element is initialized by a name of a day:  
- 
+
  ```csharp
  string[] weekDays = new string[] { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
  ```
@@ -49,7 +48,7 @@ You can declare a single-dimensional array of five integers as shown in the foll
   
  The result of this statement depends on whether `SomeType` is a value type or a reference type. If it is a value type, the statement creates an array of 10 elements, each of which has the type `SomeType`. If `SomeType` is a reference type, the statement creates an array of 10 elements, each of which is initialized to a null reference.  
   
- For more information about value types and reference types, see [Types](/dotnet/csharp/language-reference/keywords).  
+For more information about value types and reference types, see [Value types](../../language-reference/builtin-types/value-types.md) and [Reference types](../../language-reference/keywords/reference-types.md).
   
 ## See also
 

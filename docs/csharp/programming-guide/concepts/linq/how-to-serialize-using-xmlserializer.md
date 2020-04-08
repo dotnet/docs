@@ -1,9 +1,9 @@
 ---
-title: "How to: Serialize Using XmlSerializer (C#)"
+title: "How to serialize using XmlSerializer (C#)"
 ms.date: 07/20/2015
 ms.assetid: 2e0a0bbc-c548-4fe2-8741-be5a9ccd0cbb
 ---
-# How to: Serialize Using XmlSerializer (C#)
+# How to serialize using XmlSerializer (C#)
 This topic shows an example that serializes and deserializes using <xref:System.Xml.Serialization.XmlSerializer>.  
   
 ## Example  

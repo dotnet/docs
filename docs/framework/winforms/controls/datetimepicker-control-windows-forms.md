@@ -1,5 +1,5 @@
 ---
-title: "DateTimePicker Control (Windows Forms)"
+title: "DateTimePicker Control"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "dates [Windows Forms], choosing from a list"

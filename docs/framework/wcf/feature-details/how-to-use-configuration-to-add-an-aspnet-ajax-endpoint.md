@@ -72,12 +72,12 @@ Windows Communication Foundation (WCF) allows you to create a service that makes
         <services>  
             <service name="Microsoft.Ajax.Samples.CalculatorService">  
                 <endpoint address=""  
-                    behaviorConfiguration="AspNetAjaxBehavior"   
+                    behaviorConfiguration="AspNetAjaxBehavior"
                     binding="webHttpBinding"  
                     contract="Microsoft.Ajax.Samples.ICalculator" />  
             </service>  
         </services>  
-    </system.serviceModel>   
+    </system.serviceModel>
     ```  
   
 ## To host the service in IIS  
@@ -85,9 +85,9 @@ Windows Communication Foundation (WCF) allows you to create a service that makes
 1. To host the service in IIS, create a new file named service with a .svc extension in the application. Edit this file by adding the appropriate [\@ServiceHost](../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive information for the service. For example, the content in the service file for the `CalculatorService` sample contains the following information.  
   
     ```
-    <%@ServiceHost   
-    language=c#   
-    Debug="true"   
+    <%@ServiceHost
+    language=c#
+    Debug="true"
     Service="Microsoft.Ajax.Samples.CalculatorService"  
     %>  
     ```  

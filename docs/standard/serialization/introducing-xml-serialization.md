@@ -1,5 +1,5 @@
 ---
-title: "Introducing XML Serialization"
+title: Details of XML serialization
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -13,7 +13,7 @@ helpviewer_keywords:
   - "XML Schema, serializing"
 ms.assetid: 8c63200d-db63-4a03-a93d-21641623df62
 ---
-# Introducing XML Serialization
+# XML serialization
 
 Serialization is the process of converting an object into a form that can be readily transported. For example, you can serialize an object and transport it over the Internet using HTTP between a client and a server. On the other end, deserialization reconstructs the object from the stream.
 
@@ -36,7 +36,7 @@ Serialization is the process of converting an object into a form that can be rea
 
 ## Security Considerations for XmlSerializer Applications
 
-When creating an application that uses the **XmlSerializer**, you should be aware of the following items and their implications:
+When creating an application that uses the **XmlSerializer**, be aware of the following items and their implications:
 
 - The **XmlSerializer** creates C# (.cs) files and compiles them into .dll files in the directory named by the TEMP environment variable; serialization occurs with those DLLs.
 

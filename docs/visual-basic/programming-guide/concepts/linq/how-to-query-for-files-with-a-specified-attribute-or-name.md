@@ -54,8 +54,8 @@ Module FindFileByExtension
 End Module  
 ```  
   
-## Compiling the Code  
-Create a VB.NET console application project, with an `Imports` statement for the System.Linq namespace.
+## Compile the code  
+Create a Visual Basic console application project, with an `Imports` statement for the System.Linq namespace.
   
 ## See also
 

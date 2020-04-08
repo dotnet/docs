@@ -1,5 +1,5 @@
 ---
-title: "How to: Designate a Windows Forms Button as the Accept Button"
+title: Designate a Button as the Accept Button
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -24,7 +24,7 @@ On any Windows Form, you can designate a <xref:System.Windows.Forms.Button> cont
   
     ```vb  
     Private Sub SetDefault(ByVal myDefaultBtn As Button)  
-      Me.AcceptButton = myDefaultBtn   
+      Me.AcceptButton = myDefaultBtn
     End Sub  
     ```  
   

@@ -1,5 +1,5 @@
 ---
-title: WPF data binding with LINQ to XML
+title: Data binding with LINQ to XML
 ms.date: 10/22/2019
 ms.topic: conceptual
 ---
@@ -85,4 +85,4 @@ To implement WPF dynamic binding, dynamic properties will be used with facilitie
 - [LINQ to XML Dynamic Properties](linq-to-xml-dynamic-properties.md)
 - [XAML in WPF](../advanced/xaml-in-wpf.md)
 - [Data Binding (WPF)](/dotnet/framework/wpf/data/data-binding-wpf)
-- [Using Workflow Markup](https://go.microsoft.com/fwlink/?LinkId=98685)
+- [Using Workflow Markup](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms735921(v=vs.90))

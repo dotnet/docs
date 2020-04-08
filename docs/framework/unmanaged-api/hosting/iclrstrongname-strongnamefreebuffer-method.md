@@ -22,7 +22,7 @@ Frees memory that was allocated with a previous call to a strong name method suc
 ## Syntax  
   
 ```cpp  
-HRESULT StrongNameFreeBuffer (   
+HRESULT StrongNameFreeBuffer (
    [in] BYTE   *pbMemory  
 );  
 ```  
@@ -32,7 +32,7 @@ HRESULT StrongNameFreeBuffer (
  [in] A pointer to the memory to free.  
   
 ## Return Value  
- `S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](https://go.microsoft.com/fwlink/?LinkId=213878) for a list).  
+ `S_OK` if the method completed successfully; otherwise, an HRESULT value that indicates failure (see [Common HRESULT Values](/windows/win32/seccrypto/common-hresult-values) for a list).  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

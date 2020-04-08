@@ -1,6 +1,5 @@
 ---
 title: "Events - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "classes [C#], events"
@@ -11,7 +10,7 @@ ms.assetid: a8e51b22-d294-44fb-9539-0072f06c4cb3
 # Events (C# Programming Guide)
 Events enable a [class](../../language-reference/keywords/class.md) or object to notify other classes or objects when something of interest occurs. The class that sends (or *raises*) the event is called the *publisher* and the classes that receive (or *handle*) the event are called *subscribers*.  
   
- In a typical C# Windows Forms or Web application, you subscribe to events raised by controls such as buttons and list boxes. You can use the Visual C# integrated development environment (IDE) to browse the events that a control publishes and select the ones that you want to handle. The IDE provides an easy way to automatically add an empty event handler method and the code to subscribe to the event. For more information, see [How to: Subscribe to and Unsubscribe from Events](./how-to-subscribe-to-and-unsubscribe-from-events.md).  
+In a typical C# Windows Forms or Web application, you subscribe to events raised by controls such as buttons and list boxes. You can use the Visual C# integrated development environment (IDE) to browse the events that a control publishes and select the ones that you want to handle. The IDE provides an easy way to automatically add an empty event handler method and the code to subscribe to the event. For more information, see [How to subscribe to and unsubscribe from events](./how-to-subscribe-to-and-unsubscribe-from-events.md).
   
 ## Events Overview  
  Events have the following properties:  
@@ -31,16 +30,16 @@ Events enable a [class](../../language-reference/keywords/class.md) or object to
 ## Related Sections  
  For more information, see:  
   
-- [How to: Subscribe to and Unsubscribe from Events](./how-to-subscribe-to-and-unsubscribe-from-events.md)  
-  
-- [How to: Publish Events that Conform to .NET Framework Guidelines](./how-to-publish-events-that-conform-to-net-framework-guidelines.md)  
-  
-- [How to: Raise Base Class Events in Derived Classes](./how-to-raise-base-class-events-in-derived-classes.md)  
-  
-- [How to:  Implement Interface Events](./how-to-implement-interface-events.md)  
-  
-- [How to: Implement Custom Event Accessors](./how-to-implement-custom-event-accessors.md)  
-  
+- [How to subscribe to and unsubscribe from events](./how-to-subscribe-to-and-unsubscribe-from-events.md)
+
+- [How to publish events that conform to .NET Framework Guidelines](./how-to-publish-events-that-conform-to-net-framework-guidelines.md)
+
+- [How to raise base class events in derived classes](./how-to-raise-base-class-events-in-derived-classes.md)
+
+- [How to implement interface events](./how-to-implement-interface-events.md)
+
+- [How to implement custom event accessors](./how-to-implement-custom-event-accessors.md)
+
 ## C# Language Specification  
 
 For more information, see [Events](~/_csharplang/spec/classes.md#events) in the [C# Language Specification](/dotnet/csharp/language-reference/language-specification/introduction). The language specification is the definitive source for C# syntax and usage.

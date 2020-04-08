@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Inheriting from a Windows Forms Control with Visual C#"
+title: Inherit from a Control
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "inheritance [Windows Forms], custom controls"
@@ -14,7 +14,7 @@ manager: jillfra
 ---
 # Walkthrough: Inherit from a Windows Forms Control with C\#
 
-With Visual C#, you can create powerful custom controls through *inheritance*. Through inheritance you are able to create controls that retain all of the inherent functionality of standard Windows Forms controls but also incorporate custom functionality. In this walkthrough, you will create a simple inherited control called `ValueButton`. This button will inherit functionality from the standard Windows Forms <xref:System.Windows.Forms.Button> control, and will expose a custom property called `ButtonValue`.
+With C#, you can create powerful custom controls through *inheritance*. Through inheritance you are able to create controls that retain all of the inherent functionality of standard Windows Forms controls but also incorporate custom functionality. In this walkthrough, you will create a simple inherited control called `ValueButton`. This button will inherit functionality from the standard Windows Forms <xref:System.Windows.Forms.Button> control, and will expose a custom property called `ButtonValue`.
 
 ## Create the Project
 

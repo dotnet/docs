@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Styling WPF Content"
+title: "Walkthrough: Style WPF content"
 ms.date: "03/30/2017"
 helpviewer_keywords:
   - "WPF Designer [Windows Forms], styling WPF content"

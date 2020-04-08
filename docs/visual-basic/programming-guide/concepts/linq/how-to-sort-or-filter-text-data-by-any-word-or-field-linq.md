@@ -66,9 +66,9 @@ End Class
 
 This example also demonstrates how to return a query variable from a Function.
 
-## Compiling the Code
+## Compile the code
 
-Create a VB.NET console application project, with an `Imports` statement for the System.Linq namespace.
+Create a Visual Basic console application project, with an `Imports` statement for the System.Linq namespace.
 
 ## See also
 

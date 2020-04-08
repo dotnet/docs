@@ -23,7 +23,7 @@ Notifies the profiler that a module is being unloaded.
   
 ```cpp  
 HRESULT ModuleUnloadStarted(  
-    [in] ModuleID moduleId);   
+    [in] ModuleID moduleId);
 ```  
   
 ## Parameters  
@@ -44,5 +44,5 @@ HRESULT ModuleUnloadStarted(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
-- [ModuleUnloadFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-moduleunloadfinished-method.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [ModuleUnloadFinished Method](icorprofilercallback-moduleunloadfinished-method.md)

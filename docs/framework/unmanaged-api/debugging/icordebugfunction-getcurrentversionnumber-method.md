@@ -32,7 +32,7 @@ HRESULT GetCurrentVersionNumber (
  [out] A pointer to an integer value that is the version number of the latest edit made to this function.  
   
 ## Remarks  
- The version number of the latest edit made to this function may be greater than the version number of the function itself. Use either the [ICorDebugFunction2::GetVersionNumber](../../../../docs/framework/unmanaged-api/debugging/icordebugfunction2-getversionnumber-method.md) method or the [ICorDebugCode::GetVersionNumber](../../../../docs/framework/unmanaged-api/debugging/icordebugcode-getversionnumber-method.md) method to retrieve the version number of the function.  
+ The version number of the latest edit made to this function may be greater than the version number of the function itself. Use either the [ICorDebugFunction2::GetVersionNumber](icordebugfunction2-getversionnumber-method.md) method or the [ICorDebugCode::GetVersionNumber](icordebugcode-getversionnumber-method.md) method to retrieve the version number of the function.  
   
 ## Requirements  
  **Platforms:** See [System Requirements](../../../../docs/framework/get-started/system-requirements.md).  

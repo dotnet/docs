@@ -8,6 +8,6 @@ In the Entity Framework, you can define the conceptual model, storage model, and
   
  Starting with the Entity Framework 4.1 you can also create a model programmatically using Code First development. There are two different scenarios for Code First development. In both cases, the developer defines a model by coding .NET Framework class definitions, and then optionally specifies additional mapping or configuration by using Data Annotations or the fluent API.  
   
- For more information, see [Creating and Mapping a Conceptual Model](https://go.microsoft.com/fwlink/?LinkId=235016).  
+ For more information, see [Creating a Model](/ef/ef6/modeling/).  
   
  You can also use the EDM Generator, which is included with the .NET Framework. The EdmGen.exe generates the .csdl, .ssdl, and .msl files from an existing data source. You can also manually create the model and mapping content. For more information, see [EDM Generator (EdmGen.exe)](edm-generator-edmgen-exe.md).

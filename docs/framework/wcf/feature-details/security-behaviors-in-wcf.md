@@ -30,7 +30,7 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
    <serviceBehaviors>  
     <behavior name="ServiceBehavior1">  
      <serviceCredentials>  
-      <serviceCertificate findValue="000000000000000000000000000"   
+      <serviceCertificate findValue="000000000000000000000000000"
                           storeLocation="CurrentUser"  
       storeName="Root" x509FindType="FindByThumbprint" />  
      </serviceCredentials>  
@@ -61,8 +61,8 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
 ```xml  
 <issuedTokenAuthentication>  
    <knownCertificates>  
-      <add findValue="www.contoso.com"   
-           storeLocation="LocalMachine" storeName="My"   
+      <add findValue="www.contoso.com"
+           storeLocation="LocalMachine" storeName="My"
            X509FindType="FindBySubjectName" />  
     </knownCertificates>  
 </issuedTokenAuthentication>  
@@ -93,11 +93,11 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
  <endpointBehaviors>  
   <behavior name="EndpointBehavior1">  
    <clientCredentials>  
-    <clientCertificate findValue="cn=www.contoso.com"     
+    <clientCertificate findValue="cn=www.contoso.com"
         storeLocation="LocalMachine"  
         storeName="AuthRoot" x509FindType="FindBySubjectName" />  
     <serviceCertificate>  
-     <defaultCertificate findValue="www.cohowinery.com"   
+     <defaultCertificate findValue="www.cohowinery.com"
                     storeLocation="LocalMachine"  
                     storeName="Root" x509FindType="FindByIssuerName" />  
     <authentication revocationMode="Online"  
@@ -112,7 +112,7 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
  Set the certificate used to authenticate the client with this element. For more information, see [How to: Specify Client Credential Values](../../../../docs/framework/wcf/how-to-specify-client-credential-values.md).  
   
 #### \<httpDigest>  
- This feature must be enabled with Active Directory on Windows and Internet Information Services (IIS). For more information, see [Digest Authentication in IIS 6.0](https://go.microsoft.com/fwlink/?LinkId=88443).  
+ This feature must be enabled with Active Directory on Windows and Internet Information Services (IIS). For more information, see [Digest Authentication in IIS 6.0](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc782661(v=ws.10)).  
   
 #### \<issuedToken> Element  
  The [\<issuedToken>](../../../../docs/framework/configure-apps/file-schema/wcf/issuedtoken.md) contains the elements used to configure a local issuer of tokens, or behaviors used with an security token service. For instructions on configuring a client to use a local issuer, see [How to: Configure a Local Issuer](../../../../docs/framework/wcf/feature-details/how-to-configure-a-local-issuer.md).  
@@ -128,7 +128,7 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
    <issuedToken>  
       <issuerChannelBehaviors>  
          <add issuerAddress="http://www.contoso.com"  
-               behaviorConfiguration="clientBehavior1" />     
+               behaviorConfiguration="clientBehavior1" />
 ```  
   
 #### \<serviceCertificate> Element  
@@ -149,13 +149,13 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
   
 ```xml  
 <system.web>  
-  <membership defaultProvider="SqlProvider"   
+  <membership defaultProvider="SqlProvider"
    userIsOnlineTimeWindow="15">  
      <providers>  
        <clear />  
-       <add   
-          name="SqlProvider"   
-          type="System.Web.Security.SqlMembershipProvider"   
+       <add
+          name="SqlProvider"
+          type="System.Web.Security.SqlMembershipProvider"
           connectionStringName="SqlConn"  
           applicationName="MembershipProvider"  
           enablePasswordRetrieval="false"  
@@ -173,10 +173,10 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
   
 ```xml  
 <behaviors>  
- <behavior name="ServiceBehaviour">          
-  <serviceAuthorization principalPermissionMode ="UseAspNetRoles"   
+ <behavior name="ServiceBehaviour">
+  <serviceAuthorization principalPermissionMode ="UseAspNetRoles"
                         roleProviderName ="SqlProvider" />  
-</behavior>   
+</behavior>
    <!-- Other configuration code not shown. -->  
 </behaviors>  
 ```  
@@ -188,9 +188,9 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
 <system.serviceModel>  
 <serviceBehaviors>  
   <behavior name="NewBehavior">  
-    <serviceSecurityAudit auditLogLocation="Application"   
+    <serviceSecurityAudit auditLogLocation="Application"
              suppressAuditFailure="true"  
-             serviceAuthorizationAuditLevel="Success"   
+             serviceAuthorizationAuditLevel="Success"
              messageAuthenticationAuditLevel="Success" />  
     </behavior>  
   </serviceBehaviors>  
@@ -204,7 +204,7 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
 <behaviors>  
  <serviceBehaviors>  
   <behavior name="NewBehavior">  
-    <serviceMetadata httpsGetEnabled="true"   
+    <serviceMetadata httpsGetEnabled="true"
      httpsGetUrl="https://myComputerName/myEndpoint" />  
   </behavior>  
  </serviceBehaviors>  
@@ -214,4 +214,4 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
 ## See also
 
 - [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md)
-- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+- [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))

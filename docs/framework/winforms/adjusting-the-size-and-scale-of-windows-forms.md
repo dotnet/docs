@@ -1,5 +1,5 @@
 ---
-title: "Adjusting the size and scale of Windows Forms"
+title: "Adjust the size and scale"
 ms.date: "04/07/2017"
 helpviewer_keywords: 
   - "Windows Forms, changing size"
@@ -17,8 +17,8 @@ This topic provides links to information about resizing Windows Forms.
  [Automatic Scaling in Windows Forms](automatic-scaling-in-windows-forms.md)  
  Discusses how automatic scaling enables a form and its controls to be displayed appropriately between machines.  
   
- [High DPI Support in Windows Forms](high-dpi-support-in-windows-forms.md)    
- Discusses Windows Forms' support for High DPI and dynamic scaling. 
+ [High DPI Support in Windows Forms](high-dpi-support-in-windows-forms.md)
+ Discusses Windows Forms' support for High DPI and dynamic scaling.
   
 ## Reference  
  <xref:System.Drawing.Size>  

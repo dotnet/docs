@@ -1,7 +1,5 @@
 ---
 title: "#region - C# Reference"
-ms.custom: seodec18
-
 ms.date: 07/20/2015
 f1_keywords: 
   - "#region"
@@ -14,9 +12,9 @@ ms.assetid: 672c87d1-9771-4f64-ab3f-0ad3d4ffb2b4
   
 ```csharp
 #region MyClass definition  
-public class MyClass   
+public class MyClass
 {  
-    static void Main()   
+    static void Main()
     {  
     }  
 }  

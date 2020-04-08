@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "remove Element"
   - "<remove> Element"
 ms.assetid: ae4d82e0-e8fe-468c-81ab-46d63c4d66a8
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # \<remove> element for \<configSections>
 
@@ -57,8 +55,8 @@ The following machine configuration file code declares the section **\<sampleSec
     <section name="sampleSection"
              type="System.Configuration.SingleTagSectionHandler" />
   </configSections>
-  <sampleSection setting1="Value1" 
-                 setting2="value two" 
+  <sampleSection setting1="Value1"
+                 setting2="value two"
                  setting3="third value" />
 </configuration>
 ```

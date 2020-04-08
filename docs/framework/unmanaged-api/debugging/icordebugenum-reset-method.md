@@ -36,4 +36,4 @@ HRESULT Reset ();
   
 ## See also
 
-- [ICorDebugEnum Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugenum-interface1.md)
+- [ICorDebugEnum Interface](icordebugenum-interface1.md)

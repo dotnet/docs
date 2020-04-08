@@ -7,8 +7,6 @@ helpviewer_keywords:
   - "add Element"
   - "<add> Element"
 ms.assetid: 0d4ddb53-eb2b-49c0-9c33-a8dec5c39b46
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # \<add> element for NameValueSectionHandler and DictionarySectionHandler
 

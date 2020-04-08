@@ -67,9 +67,9 @@ Module Module1
 End Module
 ```
 
-## Compiling the code
+## Compile the code
 
-Create a VB.NET console application project, copy and paste the code sample, and adjust the Startup object value in the project properties.
+Create a Visual Basic console application project, copy and paste the code sample, and adjust the Startup object value in the project properties.
 
 ## See also
 

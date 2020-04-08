@@ -31,7 +31,7 @@ This topic provides a quick reference to [!INCLUDE[esql](../../../../../../inclu
  Example:  
   
 ```sql  
-DATETIME '2006-12-25 01:01:00.000'   
+DATETIME '2006-12-25 01:01:00.000'
 --same as  
 DATETIME '2006-12-25 01:01'  
 ```  
@@ -107,9 +107,9 @@ SELECT VALUE product FROM AdventureWorksEntities.Product AS product WHERE produc
  Example:  
   
 ```sql  
-SELECT VALUE AdventureWorksModel.SalesOrderDetail (o.SalesOrderDetailID, o.CarrierTrackingNumber, o.OrderQty,   
-o.ProductID, o.SpecialOfferID, o.UnitPrice, o.UnitPriceDiscount,   
-o.rowguid, o.ModifiedDate) FROM AdventureWorksEntities.SalesOrderDetail   
+SELECT VALUE AdventureWorksModel.SalesOrderDetail (o.SalesOrderDetailID, o.CarrierTrackingNumber, o.OrderQty,
+o.ProductID, o.SpecialOfferID, o.UnitPrice, o.UnitPriceDiscount,
+o.rowguid, o.ModifiedDate) FROM AdventureWorksEntities.SalesOrderDetail
 AS o  
 ```  
   
@@ -144,7 +144,7 @@ SELECT REF(o) AS OrderID FROM Orders AS o
  Example:  
   
 ```sql  
-SELECT VALUE REF(p).Name FROM   
+SELECT VALUE REF(p).Name FROM
     AdventureWorksEntities.Product AS p
 ```  
   
@@ -163,7 +163,7 @@ SELECT VALUE REF(p).Name FROM
  Example:  
   
 ```sql  
-SELECT VALUE DEREF(REF(p)).Name FROM   
+SELECT VALUE DEREF(REF(p)).Name FROM
     AdventureWorksEntities.Product AS p
 ```  
   
@@ -182,7 +182,7 @@ SELECT VALUE DEREF(REF(p)).Name FROM
  Example:  
   
 ```sql  
-SELECT VALUE Key(CreateRef(AdventureWorksEntities.Product, row(p.ProductID)))   
+SELECT VALUE Key(CreateRef(AdventureWorksEntities.Product, row(p.ProductID)))
     FROM AdventureWorksEntities.Product AS p
 ```  
   
@@ -204,7 +204,7 @@ SELECT VALUE Key(CreateRef(AdventureWorksEntities.Product, row(p.ProductID)))
   
 ```sql  
 SELECT Length(c. FirstName) AS NameLen FROM
-    AdventureWorksEntities.Contact AS c   
+    AdventureWorksEntities.Contact AS c
     WHERE c.ContactID BETWEEN 10 AND 12  
 ```  
   
@@ -223,7 +223,7 @@ SELECT Length(c. FirstName) AS NameLen FROM
   
 ```sql  
 SELECT SqlServer.LEN(c.EmailAddress) AS EmailLen FROM
-    AdventureWorksEntities.Contact AS c WHERE   
+    AdventureWorksEntities.Contact AS c WHERE
     c.ContactID BETWEEN 10 AND 12  
 ```  
   
@@ -293,8 +293,8 @@ SELECT VALUE name FROM AdventureWorksEntities.Product AS P
  Example:  
   
 ```sql  
-SELECT a.AddressID, (SELECT VALUE DEREF(v) FROM   
-    NAVIGATE(a, AdventureWorksModel.FK_SalesOrderHeader_Address_BillToAddressID) AS v)   
+SELECT a.AddressID, (SELECT VALUE DEREF(v) FROM
+    NAVIGATE(a, AdventureWorksModel.FK_SalesOrderHeader_Address_BillToAddressID) AS v)
     FROM AdventureWorksEntities.Address AS a  
 ```  
   

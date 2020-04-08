@@ -41,7 +41,7 @@ or
   
  You can define multiple symbols with `-define` by using a comma to separate symbol definitions.  
   
-|To set /define in the Visual Studio integrated development environment|  
+|To set -define in the Visual Studio integrated development environment|  
 |---|  
 |1.  Have a project selected in **Solution Explorer**. On the **Project** menu, click **Properties**. <br />2.  Click the **Compile** tab.<br />3.  Click **Advanced**.<br />4.  Modify the value in the **Custom Constants** box.|  
   

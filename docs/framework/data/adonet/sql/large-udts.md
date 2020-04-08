@@ -16,9 +16,9 @@ User-defined types (UDTs) allow a developer to extend the server's scalar type s
   
  For the complete documentation for user-defined types, see the version of SQL Server Books Online for the version of SQL Server you are using.  
   
- **SQL Server Books Online**  
+ **SQL Server documentation**  
   
-1. [CLR User-Defined Types](https://go.microsoft.com/fwlink/?LinkId=98366)  
+1. [CLR User-Defined Types](/sql/relational-databases/clr-integration-database-objects-user-defined-types/clr-user-defined-types)  
   
 ## Retrieving UDT Schemas Using GetSchema  
  The <xref:System.Data.SqlClient.SqlConnection.GetSchema%2A> method of <xref:System.Data.SqlClient.SqlConnection> returns database schema information in a <xref:System.Data.DataTable>. For more information, see [SQL Server Schema Collections](../sql-server-schema-collections.md).  
@@ -74,7 +74,7 @@ User-defined types (UDTs) allow a developer to extend the server's scalar type s
  The following code fragment demonstrates how to retrieve large UDT data. The `connectionString` variable assumes a valid connection to a SQL Server database and the `commandString` variable assumes a valid SELECT statement with the primary key column listed first.  
   
 ```csharp  
-using (SqlConnection connection = new SqlConnection(   
+using (SqlConnection connection = new SqlConnection(
     connectionString, commandString))  
 {  
   connection.Open();  

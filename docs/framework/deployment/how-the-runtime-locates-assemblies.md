@@ -9,8 +9,6 @@ helpviewer_keywords:
   - "locating assemblies"
   - "assemblies [.NET Framework], location"
 ms.assetid: 772ac6f4-64d2-4cfb-92fd-58096dcd6c34
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How the Runtime Locates Assemblies
 
@@ -29,7 +27,7 @@ The preferred way to reference an assembly is to use a full reference, including
 
 You can also make a dynamic reference to an assembly by providing the calling method with only partial information about the assembly, such as specifying only the assembly name. In this case, only the application directory is searched for the assembly, and no other checking occurs. You make a partial reference using any of the various methods for loading assemblies such as <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> or <xref:System.AppDomain.Load%2A?displayProperty=nameWithType>.
 
-Finally, you can make a dynamic reference using a method such as <xref:System.Reflection.Assembly.Load*?displayProperty=nameWithType> and provide only partial information; you then qualify the reference using the [\<qualifyAssembly>](../configure-apps/file-schema/runtime/qualifyassembly-element.md) element in the application configuration file. This element allows you to provide the full reference information (name, version, culture and, if applicable, the public key token) in your application configuration file instead of in your code. You would use this technique if you wanted to fully qualify a reference to an assembly outside the application directory, or if you wanted to reference an assembly in the global assembly cache but you wanted the convenience of specifying the full reference in the configuration file instead of in your code.
+Finally, you can make a dynamic reference using a method such as <xref:System.Reflection.Assembly.Load%2A?displayProperty=nameWithType> and provide only partial information; you then qualify the reference using the [\<qualifyAssembly>](../configure-apps/file-schema/runtime/qualifyassembly-element.md) element in the application configuration file. This element allows you to provide the full reference information (name, version, culture and, if applicable, the public key token) in your application configuration file instead of in your code. You would use this technique if you wanted to fully qualify a reference to an assembly outside the application directory, or if you wanted to reference an assembly in the global assembly cache but you wanted the convenience of specifying the full reference in the configuration file instead of in your code.
 
 > [!NOTE]
 > This type of partial reference should not be used with assemblies that are shared among several applications. Because configuration settings are applied per application and not per assembly, a shared assembly using this type of partial reference would require each application using the shared assembly to have the qualifying information in its configuration file.
@@ -137,7 +135,7 @@ Safe mode can be set for the entire application or for selected assemblies. That
 ### Machine Configuration File
 Third, the runtime examines the machine configuration file. This file, called Machine.config, resides on the local computer in the Config subdirectory of the root directory where the runtime is installed. This file can be used by administrators to specify assembly binding restrictions that are local to that computer. The settings in the machine configuration file take precedence over all other configuration settings; however, this does not mean that all configuration settings should be put in this file. The version determined by the administrator policy file is final, and cannot be overridden. Overrides specified in the Machine.config file affect all applications. For more information about configuration files, see [Configuring Apps by using Configuration Files](../configure-apps/index.md).
 
-<a name="step2"></a> 
+<a name="step2"></a>
 
 ## Step 2: Checking for Previously Referenced Assemblies
 

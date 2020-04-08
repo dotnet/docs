@@ -1,15 +1,16 @@
 ---
-title: "Deploying a WPF Application (WPF)"
+title: "Deploy an app"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "WPF applications [WPF], deployment"
   - "deployment [WPF], applications"
 ms.assetid: 12cadca0-b32c-4064-9a56-e6a306dcc76d
 ---
-# Deploying a WPF Application (WPF)
-After Windows Presentation Foundation (WPF) applications are built, they need to be deployed. Windows and the .NET Framework include several deployment technologies. The deployment technology that is used to deploy a [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] application depends on the application type. This topic provides a brief overview of each deployment technology, and how they are used in conjunction with the deployment requirements of each [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] application type.  
+# Deploy a WPF Application
 
-<a name="Deployment_Technologies"></a>   
+After Windows Presentation Foundation (WPF) applications are built, they need to be deployed. Windows and the .NET Framework include several deployment technologies. The deployment technology that is used to deploy a WPF application depends on the application type. This topic provides a brief overview of each deployment technology, and how they are used in conjunction with the deployment requirements of each WPF application type.
+
+<a name="Deployment_Technologies"></a>
 ## Deployment Technologies  
  Windows and the .NET Framework include several deployment technologies, including:  
   
@@ -19,7 +20,7 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
   
 - ClickOnce deployment.  
   
-<a name="XCopy_Deployment"></a>   
+<a name="XCopy_Deployment"></a>
 ### XCopy Deployment  
  XCopy deployment refers to the use of the XCopy command-line program to copy files from one location to another. XCopy deployment is suitable under the following circumstances:  
   
@@ -31,7 +32,7 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
   
  Although XCopy is suitable for simple deployment scenarios, it is limited when more complex deployment capabilities are required. In particular, using XCopy often incurs the overhead for creating, executing, and maintaining scripts for managing deployment in a robust way. Furthermore, XCopy does not support versioning, uninstallation, or rollback.  
   
-<a name="Windows_Installer"></a>   
+<a name="Windows_Installer"></a>
 ### Windows Installer  
  Windows Installer allows applications to be packaged as self-contained executables that can be easily distributed to clients and run. Furthermore, Windows Installer is installed with Windows and enables integration with the desktop, the Start menu, and the Programs control panel.  
   
@@ -39,7 +40,7 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
   
  For more information about Windows Installer, see [Windows Installer Deployment](/visualstudio/deployment/deploying-applications-services-and-components#create-an-installer-package-windows-desktop).
   
-<a name="ClickOnce_Deployment"></a>   
+<a name="ClickOnce_Deployment"></a>
 ### ClickOnce Deployment  
  ClickOnce enables Web-style application deployment for non-Web applications. Applications are published to and deployed from Web or file servers. Although ClickOnce does not support the full range of client features that Windows Installer-installed applications do, it does support a subset that includes the following:  
   
@@ -55,9 +56,9 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
   
  For more information about ClickOnce, see [ClickOnce Security and Deployment](/visualstudio/deployment/clickonce-security-and-deployment).  
   
-<a name="Deploying_WPF_Applications"></a>   
+<a name="Deploying_WPF_Applications"></a>
 ## Deploying WPF Applications  
- The deployment options for a [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] application depend on the type of application. From a deployment perspective, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] has three significant application types:  
+ The deployment options for a WPF application depend on the type of application. From a deployment perspective, WPF has three significant application types:  
   
 - Standalone applications.  
   
@@ -65,21 +66,21 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
   
 - XAML browser applications (XBAPs).  
   
-<a name="Deploying_Standalone_Applications"></a>   
+<a name="Deploying_Standalone_Applications"></a>
 ### Deploying Standalone Applications  
  Standalone applications are deployed using either ClickOnce or Windows Installer. Either way, standalone applications require full trust to run. Full trust is automatically granted to standalone applications that are deployed using Windows Installer. Standalone applications that are deployed using ClickOnce are not automatically granted full trust. Instead, ClickOnce displays a security warning dialog that users must accept before a standalone application is installed. If accepted, the standalone application is installed and granted full trust. If not, the standalone application is not installed.  
   
-<a name="Deploying_Markup_Only_XAML_Applications"></a>   
+<a name="Deploying_Markup_Only_XAML_Applications"></a>
 ### Deploying Markup-Only XAML Applications  
  Markup-only [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] pages are usually published to Web servers, like HTML pages, and can be viewed using Internet Explorer. Markup-only [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] pages run within a partial-trust security sandbox with restrictions that are defined by the Internet zone permission set. This provides an equivalent security sandbox to HTML-based Web applications.  
   
- For more information about security for [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications, see [Security](../security-wpf.md).  
+ For more information about security for WPF applications, see [Security](../security-wpf.md).  
   
  Markup-only [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] pages can be installed to the local file system by using either XCopy or Windows Installer. These pages can be viewed using Internet Explorer or Windows Explorer.  
   
  For more information about XAML, see [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md).  
   
-<a name="Deploying_XAML_Browser_Applications"></a>   
+<a name="Deploying_XAML_Browser_Applications"></a>
 ### Deploying XAML Browser Applications  
  XBAPs are compiled applications that require the following three files to be deployed:  
   
@@ -104,9 +105,9 @@ After Windows Presentation Foundation (WPF) applications are built, they need to
   
  For more information about deploying XAML browser applications (XBAPs), see [WPF XAML Browser Applications Overview](wpf-xaml-browser-applications-overview.md).  
   
-<a name="Installing__NET_Framework_3_0"></a>   
+<a name="Installing__NET_Framework_3_0"></a>
 ## Installing the .NET Framework  
- To run a [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] application, the Microsoft .NET Framework must be installed on the client. Internet Explorer automatically detects whether clients are installed with .NET Framework when [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] browser-hosted applications are viewed. If the .NET Framework is not installed, Internet Explorer prompts users to install it.  
+ To run a WPF application, the Microsoft .NET Framework must be installed on the client. Internet Explorer automatically detects whether clients are installed with .NET Framework when WPF browser-hosted applications are viewed. If the .NET Framework is not installed, Internet Explorer prompts users to install it.  
   
  To detect whether the .NET Framework is installed, Internet Explorer includes a bootstrapper application that is registered as the fallback Multipurpose Internet Mail Extensions (MIME) handler for content files with the following extensions: .xaml, .xps, .xbap, and .application. If you navigate to these file types and the .NET Framework is not installed on the client, the bootstrapper application requests permission to install it. If permission is not provided, neither the .NET Framework nor the application is installed.  
   

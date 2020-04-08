@@ -55,7 +55,7 @@ This tutorial assumes that you have finished the lessons listed above.
 
 All the introductory tutorials following the Hello World lesson are available in your own local development environment. At the end of each tutorial, you decide if you want to continue
 with the next lesson online or on your own machine. There are links
-to help you setup your environment and continue with the next tutorial
+to help you set up your environment and continue with the next tutorial
 on your machine.
 
 ## Explore new features in C\#
@@ -69,7 +69,7 @@ on your machine.
 
 ## General Tutorials
 
-The following tutorials enable you to build C# programs using [.NET Core](../../core/index.md):
+The following tutorials enable you to build C# programs using [.NET Core](../../core/index.yml):
 
 * [Console Application](console-teleprompter.md): demonstrates Console I/O, the structure of a Console application, and the basics of the task-based asynchronous programming model.
 * [REST Client](console-webapiclient.md): demonstrates web communications, JSON serialization, and object-oriented features in the C# language.

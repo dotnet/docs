@@ -1,24 +1,22 @@
 ---
 title: .NET Standard
-description: Learn about .NET Standard, its versions and the .NET implementations that support it.
-author: mairaw
-ms.author: mairaw
-ms.date: 09/23/2019
+description: Learn about .NET Standard, its versions, and the .NET implementations that support it.
+ms.date: 02/13/2020
 ms.technology: dotnet-standard
 ms.custom: "updateeachrelease"
 ms.assetid: c044882c-af15-45f2-96d1-534557a5ee9b
 ---
 # .NET Standard
 
-The [.NET Standard](https://github.com/dotnet/standard) is a formal specification of .NET APIs that are intended to be available on all .NET implementations. The motivation behind the .NET Standard is establishing greater uniformity in the .NET ecosystem. [ECMA 335](https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/dotnet-standards.md) continues to establish uniformity for .NET implementation behavior, but there's no similar spec for the .NET Base Class Libraries (BCL) for .NET library implementations.
+[.NET Standard](https://github.com/dotnet/standard) is a formal specification of .NET APIs that are intended to be available on all .NET implementations. The motivation behind .NET Standard is to establish greater uniformity in the .NET ecosystem. [ECMA 335](https://github.com/dotnet/runtime/blob/master/docs/project/dotnet-standards.md) continues to establish uniformity for .NET implementation behavior, and while ECMA 335 specifies a small set of standard libraries, the .NET Standard specification encompasses a broader range of .NET APIs.
 
-The .NET Standard enables the following key scenarios:
+.NET Standard enables the following key scenarios:
 
 - Defines uniform set of BCL APIs for all .NET implementations to implement, independent of workload.
 - Enables developers to produce portable libraries that are usable across .NET implementations, using this same set of APIs.
 - Reduces or even eliminates conditional compilation of shared source due to .NET APIs, only for OS APIs.
 
-The various .NET implementations target specific versions of .NET Standard. Each .NET implementation version advertises the highest .NET Standard version it supports, a statement that means it also supports previous versions. For example, the .NET Framework 4.6 implements .NET Standard 1.3, which means that it exposes all APIs defined in .NET Standard versions 1.0 through 1.3. Similarly, the .NET Framework 4.6.1 implements .NET Standard 1.4, while .NET Core 1.0 implements .NET Standard 1.6.
+The various .NET implementations target specific versions of .NET Standard. Each .NET implementation version advertises the highest .NET Standard version it supports, a statement that means it also supports previous versions. For example, .NET Framework 4.6 implements .NET Standard 1.3, which means that it exposes all APIs defined in .NET Standard versions 1.0 through 1.3. Similarly, .NET Framework 4.6.1 implements .NET Standard 1.4, while .NET Core 1.0 implements .NET Standard 1.6.
 
 ## .NET implementation support
 
@@ -96,9 +94,9 @@ APIs added to any of the implementations (such as, .NET Framework, .NET Core and
 - Use libraries that depend on the same .NET Standard version or lower.
 - If you find a library that depends on a higher .NET Standard version, you either need to adopt that same version or decide not to use that library.
 
-## Targeting .NET Standard
+## Target .NET Standard
 
-You can [build .NET Standard Libraries](../core/tutorials/libraries.md) using a combination of the `netstandard` framework and the NETStandard.Library metapackage. You can see examples of [targeting the .NET Standard with .NET Core tools](../core/packages.md).
+You can [build .NET Standard Libraries](../core/tutorials/libraries.md) using a combination of the `netstandard` framework and the NETStandard.Library metapackage. You can see examples of [targeting .NET Standard with .NET Core tools](../core/packages.md).
 
 ## .NET Framework compatibility mode
 
@@ -114,7 +112,7 @@ If you only need to consume .NET Standard 2.0 libraries in your projects, you ca
 
 ## Comparison to Portable Class Libraries
 
-.NET Standard is the replacement for [Portable Class Libraries (PCL)](./cross-platform/cross-platform-development-with-the-portable-class-library.md). The .NET Standard improves on the experience of creating portable libraries by curating a standard BCL and establishing greater uniformity across .NET implementations as a result. A library that targets .NET Standard is a PCL or a ".NET Standard-based PCL". Existing PCLs are "profile-based PCLs".
+.NET Standard is the replacement for [Portable Class Libraries (PCL)](./cross-platform/cross-platform-development-with-the-portable-class-library.md). .NET Standard improves on the experience of creating portable libraries by curating a standard BCL and establishing greater uniformity across .NET implementations as a result. A library that targets .NET Standard is a PCL or a ".NET Standard-based PCL". Existing PCLs are "profile-based PCLs".
 
 .NET Standard and PCL profiles were created for similar purposes but also differ in key ways.
 
@@ -126,7 +124,7 @@ Differences:
 
 - .NET Standard is a curated set of APIs, while PCL profiles are defined by intersections of existing platforms.
 - .NET Standard linearly versions, while PCL profiles do not.
-- PCL profiles represents Microsoft platforms while the .NET Standard is platform-agnostic.
+- PCL profiles represents Microsoft platforms while .NET Standard is platform-agnostic.
 
 ### PCL compatibility
 
@@ -139,7 +137,7 @@ Profile-based PCL compatibility is provided by the [Microsoft.NETCore.Portable.C
 
 Profile-based PCLs packaged as `netstandard` are easier to consume than typically packaged profile-based PCLs. `netstandard` packaging is compatible with existing users.
 
-You can see the set of PCL profiles that are compatible with the .NET Standard:
+You can see the set of PCL profiles that are compatible with .NET Standard:
 
 | PCL Profile | .NET Standard | PCL Platforms
 |:-----------:|:-------------:|------------------------------------------------------------------------------

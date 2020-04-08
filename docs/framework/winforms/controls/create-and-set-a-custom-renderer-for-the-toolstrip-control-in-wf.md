@@ -1,5 +1,5 @@
 ---
-title: "How to: Create and Set a Custom Renderer for the ToolStrip Control in Windows Forms"
+title: "How to: Create and Set a Custom Renderer for the ToolStrip Control"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -29,7 +29,7 @@ ms.assetid: 88a804ba-679f-4ba3-938a-0dc396199c5b
     Public Class RedTextRenderer  
         Inherits System.Windows.Forms.ToolStripRenderer  
         Protected Overrides Sub OnRenderItemText(ByVal e As _  
-            ToolStripItemTextRenderEventArgs)   
+            ToolStripItemTextRenderEventArgs)
             e.TextColor = Color.Red  
             e.TextFont = New Font("Helvetica", 7, FontStyle.Bold)  
             MyBase.OnRenderItemText(e)  

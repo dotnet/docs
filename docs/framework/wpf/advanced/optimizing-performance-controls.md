@@ -1,5 +1,5 @@
 ---
-title: "Optimizing performance: Controls - WPF"
+title: Optimize control performance
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "controls [WPF], improving performance"

@@ -1,5 +1,5 @@
 ---
-title: "How to: Bind the Windows Forms DataGrid Control to a Data Source"
+title: Bind DataGrid Control to a Data Source
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -56,7 +56,7 @@ ms.assetid: 128cdb07-dfd3-4d60-9d6a-902847667c36
     ```  
   
     ```cpp  
-    MyProject::localhost::CategoriesService^ ws =   
+    MyProject::localhost::CategoriesService^ ws =
        new MyProject::localhost::CategoriesService();  
     ws->Credentials = System::Net::CredentialCache::DefaultCredentials;  
     dsCategories1->Merge(ws->GetCategories());  

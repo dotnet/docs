@@ -10,8 +10,8 @@ Gets the method start address and size given a relative virtual address (RVA) in
   
 ```cpp  
 HRESULT GetCodeRange(  
-   [in] ULONG32 codeRva,   
-   [out] ULONG32* pCodeStartAddress,   
+   [in] ULONG32 codeRva,
+   [out] ULONG32* pCodeStartAddress,
    [out] ULONG32* pCodeSize  
 );  
 ```  
@@ -42,5 +42,5 @@ HRESULT GetCodeRange(
   
 ## See also
 
-- [ICorDebugSymbolProvider Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugsymbolprovider-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugSymbolProvider Interface](icordebugsymbolprovider-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

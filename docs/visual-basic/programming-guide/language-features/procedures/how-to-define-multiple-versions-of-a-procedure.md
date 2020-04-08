@@ -33,7 +33,7 @@ You can define a procedure in multiple versions by *overloading* it, using the s
   
  For information on how to call these versions of the `post` procedure, see [How to: Call an Overloaded Procedure](./how-to-call-an-overloaded-procedure.md).  
   
-## Compiling the Code  
+## Compile the code  
  Make sure each of your overloaded versions has the same procedure name but a different parameter list.  
   
 ## See also

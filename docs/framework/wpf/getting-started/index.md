@@ -1,5 +1,5 @@
 ---
-title: "Getting Started (WPF)"
+title: "Getting Started"
 ms.date: "01/26/2018"
 helpviewer_keywords: 
   - "getting started [WPF]"
@@ -24,4 +24,4 @@ Windows Presentation Foundation (WPF) is a UI framework that creates desktop cli
 
 - [Class Library](../class-library-wpf.md)
 - [Application Development](../app-development/index.md)
-- [.NET Framework Developer Center](https://www.microsoft.com/net)
+- [.NET Framework Developer Center](https://dotnet.microsoft.com)

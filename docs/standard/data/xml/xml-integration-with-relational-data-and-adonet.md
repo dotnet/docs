@@ -3,8 +3,6 @@ title: "XML Integration with Relational Data and ADO.NET"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: f6ebb1a1-f2ca-49b9-92c9-0150940cf6e6
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # XML Integration with Relational Data and ADO.NET
 The **XmlDataDocument** class is a derived class of the **XmlDocument**, and contains XML data. The advantage of the **XmlDataDocument** is that it provides a bridge between relational and hierarchical data. It is an **XmlDocument** that can be bound to a **DataSet** and both classes can synchronize changes made to data contained in the two classes. An **XmlDocument** that is bound to a **DataSet** allows XML to integrate with relational data, and you do not have to have your data represented as either XML or in a relational format. You can do both and not be constrained to a single representation of the data.  
@@ -23,7 +21,7 @@ The **XmlDataDocument** class is a derived class of the **XmlDocument**, and con
   
  Because **XmlDataDocument** is inherited from an **XmlDocument**, it provides an implementation of the W3C DOM. The fact that the **XmlDataDocument** is associated with, and stores a subset of its data within, a **DataSet** does not restrict or alter its use as an **XmlDocument** in any way. Code written to consume an **XmlDocument** works unaltered against an **XmlDataDocument**. The **DataSet** provides the relational view of the same data by defining tables, columns, relations, and constraints, and is a stand-alone, in-memory user data store.  
   
- The following illustration shows the different associations that XML data has with the **DataSet** and **XmlDataDocument**: 
+ The following illustration shows the different associations that XML data has with the **DataSet** and **XmlDataDocument**:
   
  ![Diagram that shows different associations with the XML DataSet.](./media/xml-integration-with-relational-data-and-adonet/xml-integration-relational-data-adodotnet.gif)  
   

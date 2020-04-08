@@ -28,7 +28,7 @@ This topic describes how you can protect sensitive data from being exposed in me
    <system.serviceModel>  
       <machineSettings enableLoggingKnownPii="true"/>  
    </system.serviceModel>  
-</configuration>   
+</configuration>
 ```  
   
  An application deployer can then use the `logKnownPii` attribute in either the App.config or Web.config file to enable PII logging as follows:  
@@ -66,7 +66,7 @@ This topic describes how you can protect sensitive data from being exposed in me
                       initializeData="c:\logs\messages.svclog" />  
               </listeners>  
             </source>  
-      <source name="System.ServiceModel"   
+      <source name="System.ServiceModel"
               logKnownPii="true">  
               <listeners>  
                  <add name="traces"  
@@ -82,7 +82,7 @@ This topic describes how you can protect sensitive data from being exposed in me
   
  The changes are effective only when the application starts or restarts. An event is logged at startup when both attributes are set to `true`. An event is also logged if `logKnownPii` is set to `true` but `enableLoggingKnownPii` is `false`.  
   
- The machine administrator and application deployer should exercise extreme caution when using these two switches. If PII logging is enabled, security keys and PII are logged. If it is disabled, sensitive and application-specific data is still logged in message headers and bodies. For a more thorough discussion about privacy and protecting PII from being exposed, see [User Privacy](https://go.microsoft.com/fwlink/?LinkID=94647).  
+ The machine administrator and application deployer should exercise extreme caution when using these two switches. If PII logging is enabled, security keys and PII are logged. If it is disabled, sensitive and application-specific data is still logged in message headers and bodies. For a more thorough discussion about privacy and protecting PII from being exposed, see [User Privacy](https://docs.microsoft.com/previous-versions/dotnet/articles/aa480490(v=msdn.10)).  
   
 > [!CAUTION]
 > PII is not hidden in malformed messages. Such messaged are logged as-is without any modification. Attributes mentioned previously have no effect on this.  

@@ -25,7 +25,7 @@ Gets the string stored at the specified relative virtual address.
   
 ```cpp  
 HRESULT GetString (  
-    [in]  ULONG      RVA,   
+    [in]  ULONG      RVA,
     [out] LPWSTR     *lpString  
 );  
 ```  

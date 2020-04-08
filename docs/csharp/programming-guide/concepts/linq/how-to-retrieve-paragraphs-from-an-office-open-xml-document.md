@@ -1,9 +1,9 @@
 ---
-title: "How to: Retrieve Paragraphs from an Office Open XML Document (C#)"
+title: "How to retrieve paragraphs from an Office Open XML document (C#)"
 ms.date: 07/20/2015
 ms.assetid: cc2687cf-d648-451e-88ac-3847c6c967c8
 ---
-# How to: Retrieve Paragraphs from an Office Open XML Document (C#)
+# How to retrieve paragraphs from an Office Open XML document (C#)
 This topic presents an example that opens an Office Open XML document, and retrieves a collection of all of the paragraphs in the document.  
   
  For more information on Office Open XML, see [Open XML SDK](https://github.com/OfficeDev/Open-XML-SDK) and [www.ericwhite.com](http://ericwhite.com/).  

@@ -21,7 +21,7 @@ Validates managed module images, and notifies the operating system loader after 
 ## Syntax  
   
 ```cpp  
-STDAPI _CorValidateImage (   
+STDAPI _CorValidateImage (
    [in] PVOID* ImageBase,  
    [in] LPCWSTR FileName  
 );  

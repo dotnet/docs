@@ -10,7 +10,7 @@ Gets information about the managed code at a particular code address.
   
 ```cpp  
 HRESULT GetCode(  
-    [in] CORDB_ADDRESS codeAddress,   
+    [in] CORDB_ADDRESS codeAddress,
     [out] ICorDebugCode **ppCode);  
 ```  
   
@@ -37,5 +37,5 @@ HRESULT GetCode(
   
 ## See also
 
-- [ICorDebugProcess6 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugprocess6-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugProcess6 Interface](icordebugprocess6-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

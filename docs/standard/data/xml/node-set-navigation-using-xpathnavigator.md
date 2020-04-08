@@ -3,8 +3,6 @@ title: "Node Set Navigation Using XPathNavigator"
 ms.date: "03/30/2017"
 ms.technology: dotnet-standard
 ms.assetid: 1a954b41-7173-40bc-8544-d430f209b1e5
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Node Set Navigation Using XPathNavigator
 You can navigate over nodes in an <xref:System.Xml.XPath.XPathDocument> or <xref:System.Xml.XmlDocument> object using the node set navigation methods of the <xref:System.Xml.XPath.XPathNavigator> class. You can navigate over all the nodes or over a selected set of nodes returned by one of the selection methods of the <xref:System.Xml.XPath.XPathNavigator> class.  

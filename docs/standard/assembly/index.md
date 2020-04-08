@@ -58,7 +58,7 @@ Assemblies can be static or dynamic. Static assemblies are stored on disk in por
 
 There are several ways to create assemblies. You can use development tools, such as Visual Studio, that can create *.dll* or *.exe* files. You can use tools in the Windows SDK to create assemblies with modules from other development environments. You can also use common language runtime APIs, such as <xref:System.Reflection.Emit?displayProperty=nameWithType>, to create dynamic assemblies.
 
-Compile assemblies by building them in Visual Studio, building them with .NET Core command-line interface tools, or building .NET Framework assemblies with a command-line compiler. For more information about building assemblies using .NET Core command-line interface tools, see [.NET Core command-line interface tools](../../core/tools/index.md). For building assemblies with the command-line compilers, see [Command-line build with csc.exe](../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md) for C#, or [Build from the command line](../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) for Visual Basic.
+Compile assemblies by building them in Visual Studio, building them with .NET Core command-line interface tools, or building .NET Framework assemblies with a command-line compiler. For more information about building assemblies using .NET Core CLI, see [.NET Core CLI overview](../../core/tools/index.md). For building assemblies with the command-line compilers, see [Command-line build with csc.exe](../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md) for C#, or [Build from the command line](../../visual-basic/reference/command-line-compiler/building-from-the-command-line.md) for Visual Basic.
 
 > [!NOTE]
 > To build an assembly in Visual Studio, on the **Build** menu, select **Build**.
@@ -80,7 +80,7 @@ Because assemblies contain information about content, versioning, and dependenci
 To use an assembly in an application, you must add a reference to it. Once an assembly is referenced, all the accessible types, properties, methods, and other members of its namespaces are available to your application as if their code were part of your source file.
 
 > [!NOTE]
-> Most assemblies from the .NET Class Library are referenced automatically. If a system assembly isn't automatically referenced, for .NET Core, you can add a reference to the NuGet package that contains the assembly. Either use the NuGet Package Manager in Visual Studio, or add a [\<PackageReference>](../../core/tools/dependencies.md#the-new-packagereference-element) element for the assembly to the *.csproj* or *.vbproj* project. In .NET Framework, you can add a reference to the assembly by using the **Add Reference** dialog in Visual Studio, or by using the `-reference` command line option for the [C#](../../csharp/language-reference/compiler-options/reference-compiler-option.md) or [Visual Basic](../../visual-basic/reference/command-line-compiler/reference.md) compilers.
+> Most assemblies from the .NET Class Library are referenced automatically. If a system assembly isn't automatically referenced, for .NET Core, you can add a reference to the NuGet package that contains the assembly. Either use the NuGet Package Manager in Visual Studio, or add a [\<PackageReference>](../../core/tools/dependencies.md#the-packagereference-element) element for the assembly to the *.csproj* or *.vbproj* project. In .NET Framework, you can add a reference to the assembly by using the **Add Reference** dialog in Visual Studio, or by using the `-reference` command line option for the [C#](../../csharp/language-reference/compiler-options/reference-compiler-option.md) or [Visual Basic](../../visual-basic/reference/command-line-compiler/reference.md) compilers.
 
 In C#, you can use two versions of the same assembly in a single application. For more information, see [extern alias](../../csharp/language-reference/keywords/extern-alias.md).
 
@@ -106,9 +106,9 @@ In C#, you can use two versions of the same assembly in a single application. Fo
 ## See also
 
 - [.NET assembly file format](file-format.md)
-- [Assemblies in .NET](index.md)
 - [Friend assemblies](friend.md)
 - [Reference assemblies](reference-assemblies.md)
 - [How to: Load and unload assemblies](load-unload.md)
 - [How to: Use and debug assembly unloadability in .NET Core](unloadability.md)
 - [How to: Determine if a file is an assembly](identify.md)
+- [How to: Inspect assembly contents using MetadataLoadContext](inspect-contents-using-metadataloadcontext.md)

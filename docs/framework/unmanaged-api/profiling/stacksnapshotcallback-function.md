@@ -16,7 +16,7 @@ topic_type:
   - "apiref"
 ---
 # StackSnapshotCallback Function
-Provides the profiler with information about each managed frame and each run of unmanaged frames on the stack during a stack walk, which is initiated by the [ICorProfilerInfo2::DoStackSnapshot](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-dostacksnapshot-method.md) method.  
+Provides the profiler with information about each managed frame and each run of unmanaged frames on the stack during a stack walk, which is initiated by the [ICorProfilerInfo2::DoStackSnapshot](icorprofilerinfo2-dostacksnapshot-method.md) method.  
   
 ## Syntax  
   
@@ -68,5 +68,5 @@ HRESULT __stdcall StackSnapshotCallback (
   
 ## See also
 
-- [DoStackSnapshot Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-dostacksnapshot-method.md)
-- [Profiling Global Static Functions](../../../../docs/framework/unmanaged-api/profiling/profiling-global-static-functions.md)
+- [DoStackSnapshot Method](icorprofilerinfo2-dostacksnapshot-method.md)
+- [Profiling Global Static Functions](profiling-global-static-functions.md)

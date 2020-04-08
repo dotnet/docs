@@ -6,8 +6,6 @@ dev_langs:
   - "csharp"
   - "vb"
 ms.assetid: 097b0cb1-5743-4c3a-86ef-caf5cbe6750d
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Saving and Writing a Document
 When you load and save an <xref:System.Xml.XmlDocument>, the saved document may differ from the original in the following ways:  

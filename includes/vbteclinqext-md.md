@@ -1,1 +1,0 @@
-Language-Integrated Query (LINQ)

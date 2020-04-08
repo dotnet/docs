@@ -6,8 +6,6 @@ helpviewer_keywords:
   - "encryption [.NET Framework], creating cryptographic schemes"
   - "cryptography [.NET Framework], creating cryptographic schemes"
 ms.assetid: d40c509f-5a5e-46cc-94cb-a951e9ab6843
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Creating a Cryptographic Scheme
 The cryptographic components of the .NET Framework can be combined to create different schemes to encrypt and decrypt data.  

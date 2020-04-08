@@ -23,11 +23,11 @@ helpviewer_keywords:
 ---
 # Built-in reference types (C# reference)
 
-C# has a number of built-in reference types. They have keywords or operators that are synonyms for a type in the .NET library. 
+C# has a number of built-in reference types. They have keywords or operators that are synonyms for a type in the .NET library.
 
 ## The object type
 
-The `object` type is an alias for <xref:System.Object?displayProperty=nameWithType> in .NET. In the unified type system of C#, all types, predefined and user-defined, reference types and value types, inherit directly or indirectly from <xref:System.Object?displayProperty=nameWithType>. You can assign values of any type to variables of type `object`. Any `object` variable can be assigned to its default value using the literal `null`. When a variable of a value type is converted to object, it is said to be *boxed*. When a variable of type object is converted to a value type, it is said to be *unboxed*. For more information, see [Boxing and Unboxing](../../programming-guide/types/boxing-and-unboxing.md). 
+The `object` type is an alias for <xref:System.Object?displayProperty=nameWithType> in .NET. In the unified type system of C#, all types, predefined and user-defined, reference types and value types, inherit directly or indirectly from <xref:System.Object?displayProperty=nameWithType>. You can assign values of any type to variables of type `object`. Any `object` variable can be assigned to its default value using the literal `null`. When a variable of a value type is converted to object, it is said to be *boxed*. When a variable of type `object` is converted to a value type, it is said to be *unboxed*. For more information, see [Boxing and Unboxing](../../programming-guide/types/boxing-and-unboxing.md).
 
 ## The string type
 
@@ -61,14 +61,14 @@ string b = "h";
 b += "ello";
 ```
 
-The `[]` [operator](../operators/member-access-operators.md#indexer-operator-) can be used for readonly access to individual characters of a `string`. Valid values start at `0` and must be less than the length of the `string`:
+The `[]` [operator](../operators/member-access-operators.md#indexer-operator-) can be used for readonly access to individual characters of a string. Valid index values start at `0` and must be less than the length of the string:
 
 ```csharp
 string str = "test";
 char x = str[2];  // x = 's';
 ```
 
-In similar fashion, the `[]` operator can also be used for iterating over each character in a `string`:
+In similar fashion, the `[]` operator can also be used for iterating over each character in a string:
 
 ```csharp-interactive
 string str = "test";
@@ -78,7 +78,7 @@ for (int i = 0; i < str.Length; i++)
   Console.Write(str[i] + " ");
 }
 // Output: t e s t
-``` 
+```
 
 String literals are of type `string` and can be written in two forms, quoted and `@`-quoted. Quoted string literals are enclosed in double quotation marks ("):
 
@@ -91,9 +91,9 @@ String literals can contain any character literal. Escape sequences are included
 ```csharp-interactive
 string a = "\\\u0066\n F";
 Console.WriteLine(a);
-\\ Output:
-\\ \f
-\\  F
+// Output:
+// \f
+//  F
 ```
 
 > [!NOTE]
@@ -130,7 +130,7 @@ In .NET, `System.Action` and `System.Func` types provide generic definitions for
 
 A `delegate` is a reference type that can be used to encapsulate a named or an anonymous method. Delegates are similar to function pointers in C++; however, delegates are type-safe and secure. For applications of delegates, see [Delegates](../../programming-guide/delegates/index.md) and [Generic Delegates](../../programming-guide/generics/generic-delegates.md). Delegates are the basis for [Events](../../programming-guide/events/index.md). A delegate can be instantiated by associating it either with a named or anonymous method.
 
-The delegate must be instantiated with a method or lambda expression that has a compatible return type and input parameters. For more information on the degree of variance that is allowed in the method signature, see [Variance in Delegates](../../programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md). For use with anonymous methods, the delegate and the code to be associated with it are declared together. 
+The delegate must be instantiated with a method or lambda expression that has a compatible return type and input parameters. For more information on the degree of variance that is allowed in the method signature, see [Variance in Delegates](../../programming-guide/concepts/covariance-contravariance/using-variance-in-delegates.md). For use with anonymous methods, the delegate and the code to be associated with it are declared together.
 
 ## The dynamic type
 

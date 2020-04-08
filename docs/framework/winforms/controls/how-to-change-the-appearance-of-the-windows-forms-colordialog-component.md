@@ -1,5 +1,5 @@
 ---
-title: "How to: Change the Appearance of the Windows Forms ColorDialog Component"
+title: Change the Appearance of ColorDialog Component
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"

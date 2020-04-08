@@ -16,7 +16,7 @@ topic_type:
   - "apiref"
 ---
 # CorDebugPlatform Enumeration
-Provides target platform values that are used by the [ICorDebugDataTarget::GetPlatform](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget-getplatform-method.md) method.  
+Provides target platform values that are used by the [ICorDebugDataTarget::GetPlatform](icordebugdatatarget-getplatform-method.md) method.  
   
 ## Syntax  
   
@@ -58,4 +58,4 @@ typedef enum CorDebugPlatform
   
 ## See also
 
-- [Debugging Enumerations](../../../../docs/framework/unmanaged-api/debugging/debugging-enumerations.md)
+- [Debugging Enumerations](debugging-enumerations.md)

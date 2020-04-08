@@ -12,7 +12,7 @@ api_type:
 # ICorProfilerCallback8 Interface
 [Supported in the .NET Framework 4.7 and later versions]  
 
- A subclass of [ICorProfilerCallback7](icorprofilercallback7-interface.md) that provides callback methods used by the common language runtime to notify the profiler that JIT compilation of a dynamic method has started and finished. 
+ A subclass of [ICorProfilerCallback7](icorprofilercallback7-interface.md) that provides callback methods used by the common language runtime to notify the profiler that JIT compilation of a dynamic method has started and finished.
   
 ## Methods  
   

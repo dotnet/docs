@@ -1,7 +1,5 @@
 ---
 title: "Query keywords - C# Reference"
-ms.custom: seodec18
-
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "query keywords [C#]"
@@ -36,4 +34,3 @@ This section contains the contextual keywords used in query expressions.
 - [C# Keywords](index.md)
 - [LINQ (Language-Integrated Query)](../../programming-guide/concepts/linq/index.md)
 - [LINQ in C#](../../linq/index.md)
-- [Getting Started with LINQ in C#](/dotnet/csharp/programming-guide/concepts/linq/)

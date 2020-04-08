@@ -17,7 +17,7 @@ Workflows go idle when they encounter a bookmark that must be resumed by some ex
     <behaviors>  
       <serviceBehaviors>  
         <behavior name="">  
-          <workflowIdle timeToUnload="0:05:0" timeToPersist="0:04:0"/>   
+          <workflowIdle timeToUnload="0:05:0" timeToPersist="0:04:0"/>
         </behavior>  
       </serviceBehaviors>  
     </behaviors>  

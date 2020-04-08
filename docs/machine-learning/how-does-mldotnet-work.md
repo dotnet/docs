@@ -4,20 +4,18 @@ description: ML.NET gives you the ability to add machine learning to .NET applic
 ms.date: 11/5/2019
 ms.topic: overview
 ms.custom: mvc
-ms.author: nakersha
-author: natke
 #Customer intent: As a developer, I want to learn how ML.NET works so that I can leverage machine learning in my applications.
 ---
 
 # What is ML.NET and how does it work?
 
-ML.NET gives you the ability to add machine learning to .NET applications, in either online or offline scenarios. With this capability, you can make automatic predictions using the data available to your application.
+ML.NET gives you the ability to add machine learning to .NET applications, in either online or offline scenarios. With this capability, you can make automatic predictions using the data available to your application. Machine learning applications make use of patterns in the data to make predictions rather than needing to be explicitly programmed.
 
 Central to ML.NET is a machine learning **model**. The model specifies the steps needed to transform your input data into a prediction. With ML.NET, you can train a custom model by specifying an algorithm, or you can import pre-trained TensorFlow and ONNX models.
 
 Once you have a model, you can add it to your application to make the predictions.
 
-ML.NET runs on Windows, Linux, and macOS using .NET Core, or Windows using .NET Framework. 64 bit is supported on all platforms. 32 bit is supported on Windows, except for TensorFlow, LightGBM, and ONNX related functionality.
+ML.NET runs on Windows, Linux, and macOS using .NET Core, or Windows using .NET Framework. 64 bit is supported on all platforms. 32 bit is supported on Windows, except for TensorFlow, LightGBM, and ONNX-related functionality.
 
 Examples of the type of predictions that you can make with ML.NET:
 
@@ -32,7 +30,7 @@ Examples of the type of predictions that you can make with ML.NET:
 
 ## Hello ML.NET World
 
-The code in the following snippet demonstrates the simplest ML.NET application. This example constructs a linear regression model to predict house prices using house size and price data. 
+The code in the following snippet demonstrates the simplest ML.NET application. This example constructs a linear regression model to predict house prices using house size and price data.
 
  ```csharp
     using System;
@@ -210,7 +208,7 @@ Once the objects in the pipeline have been created, data can be used to train th
 
 Calling `Fit()` uses the input training data to estimate the parameters of the model. This is known as training the model. Remember, the linear regression model above had two model parameters: **bias** and **weight**. After the `Fit()` call, the values of the parameters are known. Most models will have many more parameters than this.
 
-You can learn more about model training in [How to train your model](./how-to-guides/train-machine-learning-model-ml-net.md)
+You can learn more about model training in [How to train your model](./how-to-guides/train-machine-learning-model-ml-net.md).
 
 The resulting model object implements the <xref:Microsoft.ML.ITransformer> interface. That is, the model transforms input data into predictions.
 
@@ -238,7 +236,7 @@ Each transformation in the pipeline has an input schema (data names, types, and 
 
 If the output schema from one transform in the pipeline doesn't match the input schema of the next transform, ML.NET will throw an exception.
 
-A data view object has columns and rows. Each column has a name and a type and a length. For example the input columns in the house price example are **Size** and **Price**. They are both type and they are scalar quantities rather than vector ones.
+A data view object has columns and rows. Each column has a name and a type and a length. For example, the input columns in the house price example are **Size** and **Price**. They are both type and they are scalar quantities rather than vector ones.
 
    ![ML.NET Data View example with house price prediction data](./media/ml-net-dataview.png)
 

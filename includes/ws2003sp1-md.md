@@ -1,1 +1,0 @@
-Windows Server 2003 SP1

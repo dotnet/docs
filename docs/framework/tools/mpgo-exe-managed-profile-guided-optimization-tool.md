@@ -8,8 +8,6 @@ helpviewer_keywords:
   - "Ngen.exe"
   - "Ngen.exe, profilers and native images"
 ms.assetid: f6976502-a000-4fbe-aaf5-a7aab9ce4ec2
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Mpgo.exe (Managed Profile Guided Optimization Tool)
 
@@ -100,7 +98,7 @@ mpgo –Scenario <packageName> -AppID <appId> -Timeout <seconds>
   
 - By default, Mpgo.exe is not on the Visual Studio build path. You must either add the path to Visual Studio or specify the full path on the Mpgo command line. You can use either the `–Scenario` or the `–Import` parameter in the post-build event in Visual Studio. However, the typical process is to use `–Scenario` one time from a Developer Command Prompt for Visual Studio, and then use `–Import` to update the optimized assemblies after each build; for example:  `"C:\Program Files\Microsoft Visual Studio 11.0\Team Tools\Performance Tools\mpgo.exe" -import "$(OutDir)tmp" -assemblylist "$(TargetPath)" -outdir "$(OutDir)\"`.  
   
-<a name="samples"></a>   
+<a name="samples"></a>
 ## Examples  
  The following Mpgo.exe command from a Developer Command Prompt for Visual Studio optimizes a tax application:  
   

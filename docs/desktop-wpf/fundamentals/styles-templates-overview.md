@@ -102,7 +102,7 @@ You may have noticed that the template resource defined in the previous section 
 
 ### ContentControl and ItemsControl
 
-If a <xref:System.Windows.Controls.ContentPresenter> is declared in the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Controls.ContentControl>, the <xref:System.Windows.Controls.ContentPresenter> will automatically bind to the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> and <xref:System.Windows.Controls.ContentControl.Content%2A> properties. Likewise, an <xref:System.Windows.Controls.ItemsPresenter> that is in the <xref:System.Windows.Controls.ControlTemplate> of an <xref:System.Windows.Controls.ItemsControl> will automatically bind to the <xref:System.Windows.Controls.ItemsControl.Items%2A> and <xref:System.Windows.Controls.ItemsPresenter> properties.
+If a <xref:System.Windows.Controls.ContentPresenter> is declared in the <xref:System.Windows.Controls.ControlTemplate> of a <xref:System.Windows.Controls.ContentControl>, the <xref:System.Windows.Controls.ContentPresenter> will automatically bind to the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> and <xref:System.Windows.Controls.ContentControl.Content%2A> properties. Likewise, an <xref:System.Windows.Controls.ItemsPresenter> that is in the <xref:System.Windows.Controls.ControlTemplate> of an <xref:System.Windows.Controls.ItemsControl> will automatically bind to the <xref:System.Windows.Controls.ItemsControl.ItemTemplate%2A> and <xref:System.Windows.Controls.ItemsControl.Items%2A> properties.
 
 ## DataTemplates
 
@@ -190,15 +190,15 @@ For example, the following XAML code watches the `CommonStates.MouseOver` state 
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup Name="CommonStates">
                 <VisualState Name="Normal">
-                    <ColorAnimation Storyboard.TargetName="backgroundElement" 
+                    <ColorAnimation Storyboard.TargetName="backgroundElement"
                                     Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)"
                                     To="{TemplateBinding Background}"
                                     Duration="0:0:0.3"/>
                 </VisualState>
                 <VisualState Name="MouseOver">
-                    <ColorAnimation Storyboard.TargetName="backgroundElement" 
-                                    Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" 
-                                    To="Yellow" 
+                    <ColorAnimation Storyboard.TargetName="backgroundElement"
+                                    Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)"
+                                    To="Yellow"
                                     Duration="0:0:0.3"/>
                 </VisualState>
             </VisualStateGroup>
@@ -233,7 +233,7 @@ It is the sharing of `shared.xaml`, which itself defines a <xref:System.Windows.
 
 For more information, see [Merged resource dictionaries](../../framework/wpf/advanced/merged-resource-dictionaries.md).
 
-If you are creating a theme for your custom control, see the External control library section of the [Control authoring overview](../../framework/wpf/controls/control-authoring-overview.md).
+If you are creating a theme for your custom control, see the **Defining resources at the theme level** section of the [Control authoring overview](../../framework/wpf/controls/control-authoring-overview.md#defining-resources-at-the-theme-level).
 
 ## See also
 

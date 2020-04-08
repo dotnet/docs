@@ -1,9 +1,9 @@
 ---
-title: "How to: Load XML from a File (C#)"
+title: "How to load XML from a file (C#)"
 ms.date: 07/20/2015
 ms.assetid: 3ed38487-8028-4209-9872-c8dce0ed4dfe
 ---
-# How to: Load XML from a File (C#)
+# How to load XML from a file (C#)
 This topic shows how to load XML from a URI by using the <xref:System.Xml.Linq.XElement.Load%2A?displayProperty=nameWithType> method.  
   
 ## Example  
@@ -26,7 +26,7 @@ Console.WriteLine(booksFromFile);
     <Genre>Computer</Genre>  
     <Price>44.95</Price>  
     <PublishDate>2000-10-01</PublishDate>  
-    <Description>An in-depth look at creating applications   
+    <Description>An in-depth look at creating applications
       with XML.</Description>  
   </Book>  
   <Book id="bk102">  
@@ -35,8 +35,8 @@ Console.WriteLine(booksFromFile);
     <Genre>Fantasy</Genre>  
     <Price>5.95</Price>  
     <PublishDate>2000-12-16</PublishDate>  
-    <Description>A former architect battles corporate zombies,   
-      an evil sorceress, and her own childhood to become queen   
+    <Description>A former architect battles corporate zombies,
+      an evil sorceress, and her own childhood to become queen
       of the world.</Description>  
   </Book>  
 </Catalog>  

@@ -1,6 +1,6 @@
 ### APIs that report version now report product and not file version
 
-Many of the APIs that return versions in .NET Core now returned the product version rather than the file version.
+Many of the APIs that return versions in .NET Core now return the product version rather than the file version.
 
 #### Change description
 

@@ -1,5 +1,5 @@
 ---
-title: F# Language Reference
+title: Language Reference
 description: Find F# language feature information from this reference to language tokens, concepts, types, expressions, and compiler-supported construct topics.
 ms.date: 05/16/2016
 ---

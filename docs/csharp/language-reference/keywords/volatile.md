@@ -1,7 +1,5 @@
 ---
 title: "volatile - C# Reference"
-ms.custom: seodec18
-
 ms.date: 10/24/2018
 f1_keywords: 
   - "volatile_CSharpKeyword"

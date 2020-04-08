@@ -37,7 +37,7 @@ interface ICorDebugRemoteTarget  : IUnknown
   
 |Method|Description|  
 |------------|-----------------|  
-|[ICorDebugRemoteTarget::GetHostName Method](../../../../docs/framework/unmanaged-api/debugging/icordebugremotetarget-gethostname-method.md)|Returns the host name or the IP address of a remote machine.|  
+|[ICorDebugRemoteTarget::GetHostName Method](icordebugremotetarget-gethostname-method.md)|Returns the host name or the IP address of a remote machine.|  
   
 ## Remarks  
  Mixed-mode (that is, managed and native code) debugging is not supported on Windows 95, Windows 98, or Windows ME, or on non-x86 platforms (such as IA-64 and AMD64).  
@@ -53,6 +53,6 @@ interface ICorDebugRemoteTarget  : IUnknown
   
 ## See also
 
-- [ICorDebugRemote Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugremote-interface.md)
-- [ICorDebug Interface](../../../../docs/framework/unmanaged-api/debugging/icordebug-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugRemote Interface](icordebugremote-interface.md)
+- [ICorDebug Interface](icordebug-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

@@ -25,7 +25,7 @@ You can combine the declaration and assignment by initializing the variable as p
 Dim thisObject As Object= "This is an Object"
 ```
 
-## Compiling the Code
+## Compile the code
 
 This example requires:
 

@@ -25,18 +25,18 @@ Provides methods that allow developers to debug applications in the common langu
   
 |Method|Description|  
 |------------|-----------------|  
-|[CanLaunchOrAttach Method](../../../../docs/framework/unmanaged-api/debugging/icordebug-canlaunchorattach-method.md)|Determines whether launching a new process or attaching to the given process is possible within the context of the current machine and runtime configuration.|  
-|[CreateProcess Method](../../../../docs/framework/unmanaged-api/debugging/icordebug-createprocess-method.md)|Launches a process and its primary thread under the control of the debugger.|  
-|[DebugActiveProcess Method](../../../../docs/framework/unmanaged-api/debugging/icordebug-debugactiveprocess-method.md)|Attaches the debugger to an existing process.|  
-|[EnumerateProcesses Method](../../../../docs/framework/unmanaged-api/debugging/icordebug-enumerateprocesses-method.md)|Gets an enumerator for the processes that are being debugged.|  
-|[GetProcess Method](../../../../docs/framework/unmanaged-api/debugging/icordebug-getprocess-method.md)|Returns the "ICorDebugProcess" object with the given process ID.|  
-|[Initialize Method](../../../../docs/framework/unmanaged-api/debugging/icordebug-initialize-method.md)|Initializes the `ICorDebug` object.|  
-|[SetManagedHandler Method](../../../../docs/framework/unmanaged-api/debugging/icordebug-setmanagedhandler-method.md)|Specifies the event handler object for managed events.|  
-|[SetUnmanagedHandler Method](../../../../docs/framework/unmanaged-api/debugging/icordebug-setunmanagedhandler-method.md)|Specifies the event handler object for unmanaged events.|  
-|[Terminate Method](../../../../docs/framework/unmanaged-api/debugging/icordebug-terminate-method.md)|Terminates the `ICorDebug` object.|  
+|[CanLaunchOrAttach Method](icordebug-canlaunchorattach-method.md)|Determines whether launching a new process or attaching to the given process is possible within the context of the current machine and runtime configuration.|  
+|[CreateProcess Method](icordebug-createprocess-method.md)|Launches a process and its primary thread under the control of the debugger.|  
+|[DebugActiveProcess Method](icordebug-debugactiveprocess-method.md)|Attaches the debugger to an existing process.|  
+|[EnumerateProcesses Method](icordebug-enumerateprocesses-method.md)|Gets an enumerator for the processes that are being debugged.|  
+|[GetProcess Method](icordebug-getprocess-method.md)|Returns the "ICorDebugProcess" object with the given process ID.|  
+|[Initialize Method](icordebug-initialize-method.md)|Initializes the `ICorDebug` object.|  
+|[SetManagedHandler Method](icordebug-setmanagedhandler-method.md)|Specifies the event handler object for managed events.|  
+|[SetUnmanagedHandler Method](icordebug-setunmanagedhandler-method.md)|Specifies the event handler object for unmanaged events.|  
+|[Terminate Method](icordebug-terminate-method.md)|Terminates the `ICorDebug` object.|  
   
 ## Remarks  
- `ICorDebug` represents an event processing loop for a debugger process. The debugger must wait for the [ICorDebugManagedCallback::ExitProcess](../../../../docs/framework/unmanaged-api/debugging/icordebugmanagedcallback-exitprocess-method.md) callback from all processes being debugged before releasing this interface.  
+ `ICorDebug` represents an event processing loop for a debugger process. The debugger must wait for the [ICorDebugManagedCallback::ExitProcess](icordebugmanagedcallback-exitprocess-method.md) callback from all processes being debugged before releasing this interface.  
   
  The `ICorDebug` object is the initial object to control all further managed debugging. In the .NET Framework versions 1.0 and 1.1, this object was a `CoClass` object created from COM. In the .NET Framework version 2.0, this object is no longer a `CoClass` object. It must be created by the [CreateDebuggingInterfaceFromVersion](../../../../docs/framework/unmanaged-api/hosting/createdebugginginterfacefromversion-function.md) function, which is more version-aware. This new creation function enables clients to get a specific implementation of `ICorDebug`, which also emulates a specific version of the debugging API.  
   
@@ -54,4 +54,4 @@ Provides methods that allow developers to debug applications in the common langu
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

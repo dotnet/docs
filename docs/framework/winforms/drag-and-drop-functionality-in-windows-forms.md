@@ -1,5 +1,5 @@
 ---
-title: "Drag-and-Drop Functionality in Windows Forms"
+title: "Drag-and-Drop Functionality"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "drag and drop [Windows Forms], Windows Forms"

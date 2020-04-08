@@ -21,7 +21,7 @@ Contains listeners that collect, store, and route tracing messages.
 ## Syntax  
   
 ```xml  
-<trace autoflush="true|false"   
+<trace autoflush="true|false"
        indentsize="indent value"  
        useGlobalLock="true| false"/>  
 ```  

@@ -1,5 +1,5 @@
 ---
-title: "High DPI support in Windows Forms"
+title: "High DPI support"
 ms.date: "05/16/2017"
 helpviewer_keywords:
   - "High DPI in Windows Forms"

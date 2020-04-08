@@ -50,7 +50,7 @@ This section describes the context exchange protocol introduced in Windows Commu
 - For <xref:System.ServiceModel.Channels.ContextExchangeMechanism.ContextSoapHeader>, the following assertion is generated:  
   
     ```xml  
-    <IncludeContext   
+    <IncludeContext
     xmlns="http://schemas.microsoft.com/ws/2006/05/context"  
     protectionLevel="Sign" />  
     ```  

@@ -1,20 +1,24 @@
 ---
-title: "default operator - C# reference"
-ms.custom: seodec18
-description: "Use the default operator to produce the default value of a type"
-ms.date: 08/01/2019
+title: "default value expressions - C# reference"
+description: "Use the default value expressions to obtain the default value of a type"
+ms.date: 03/13/2020
+f1_keywords:
+  - "default_CSharpKeyword"
+  - "default"
 helpviewer_keywords: 
   - "default keyword [C#]"
 ---
-# default operator (C# reference)
+# default value expressions (C# reference)
 
-The `default` operator produces the [default value](../keywords/default-values-table.md) of a type. The argument to the `default` operator must be the name of a type or a type parameter.
-
-The following example shows the usage of the `default` operator:
-
-[!code-csharp-interactive[default of T](~/samples/csharp/language-reference/operators/DefaultOperator.cs#WithOperand)]
+A default value expression produces the [default value](../builtin-types/default-values.md) of a type. There are two kinds of default value expressions: the [default operator](#default-operator) call and a [default literal](#default-literal).
 
 You also use the `default` keyword as the default case label within a [`switch` statement](../keywords/switch.md).
+
+## default operator
+
+The argument to the `default` operator must be the name of a type or a type parameter, as the following example shows:
+
+[!code-csharp-interactive[default of T](snippets/DefaultOperator.cs#WithOperand)]
 
 ## default literal
 
@@ -27,7 +31,7 @@ Beginning with C# 7.1, you can use the `default` literal to produce the default 
 
 The following example shows the usage of the `default` literal:
 
-[!code-csharp-interactive[default literal](~/samples/csharp/language-reference/operators/DefaultOperator.cs#DefaultLiteral)]
+[!code-csharp-interactive[default literal](snippets/DefaultOperator.cs#DefaultLiteral)]
 
 ## C# language specification
 
@@ -39,5 +43,5 @@ For more information about the `default` literal, see the [feature proposal note
 
 - [C# reference](../index.md)
 - [C# operators](index.md)
-- [Default values table](../keywords/default-values-table.md)
+- [Default values of C# types](../builtin-types/default-values.md)
 - [Generics in .NET](../../../standard/generics/index.md)

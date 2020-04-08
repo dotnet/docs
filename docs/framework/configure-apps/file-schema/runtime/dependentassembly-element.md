@@ -21,7 +21,7 @@ Encapsulates binding policy and assembly location for each assembly. Use one `de
 ## Syntax  
   
 ```xml  
-<dependentAssembly>   
+<dependentAssembly>
 </dependentAssembly>  
 ```  
   

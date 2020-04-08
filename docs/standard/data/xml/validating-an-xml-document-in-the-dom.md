@@ -7,8 +7,6 @@ dev_langs:
   - "vb"
   - "cpp"
 ms.assetid: 2c61c920-d0f8-4c72-bfcc-6524570f3060
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Validating an XML Document in the DOM
 

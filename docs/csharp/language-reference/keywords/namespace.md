@@ -1,6 +1,5 @@
 ---
 title: "namespace keyword - C# Reference"
-ms.custom: seoapril2019
 ms.date: 07/20/2015
 f1_keywords: 
   - "namespace_CSharpKeyword"
@@ -26,7 +25,7 @@ Within a namespace, you can declare zero or more of the following types:
 
 - [interface](interface.md)
 
-- [struct](struct.md)
+- [struct](../builtin-types/struct.md)
 
 - [enum](../builtin-types/enum.md)
 

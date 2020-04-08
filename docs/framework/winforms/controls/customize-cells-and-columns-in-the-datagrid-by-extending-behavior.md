@@ -1,5 +1,5 @@
 ---
-title: "How to: Customize Cells and Columns in the Windows Forms DataGridView Control by Extending Their Behavior and Appearance"
+title: Customize Cells and Columns in DataGridView Control by Extending Their Behavior and Appearance
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -61,7 +61,7 @@ The <xref:System.Windows.Forms.DataGridView> control provides a number of ways t
  This example requires:  
   
 - References to the System, System.Windows.Forms, and System.Drawing assemblies.  
- 
+
 ## See also
 
 - <xref:System.Windows.Forms.DataGridView>

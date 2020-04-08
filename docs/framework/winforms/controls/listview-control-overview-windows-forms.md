@@ -1,5 +1,5 @@
 ---
-title: "ListView Control Overview (Windows Forms)"
+title: "ListView Control Overview"
 ms.date: "03/30/2017"
 f1_keywords: 
   - "ListView"

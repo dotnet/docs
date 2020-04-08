@@ -10,8 +10,8 @@ Gets the assembly's public key.
   
 ```cpp  
 HRESULT GetPublicKey(  
-   [in] ULONG32 cbPublicKey,   
-   [out] ULONG32 *pcbPublicKey,   
+   [in] ULONG32 cbPublicKey,
+   [out] ULONG32 *pcbPublicKey,
    [out, size_is(cbPublicKey), length_is(*pcbPublicKey)] BYTE pbPublicKey[]);  
 ```  
   
@@ -41,5 +41,5 @@ HRESULT GetPublicKey(
   
 ## See also
 
-- [ICorDebugMergedAssemblyRecord Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugmergedassemblyrecord-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugMergedAssemblyRecord Interface](icordebugmergedassemblyrecord-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

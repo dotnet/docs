@@ -1,5 +1,5 @@
 ---
-title: "How to: Enable AutoComplete in ToolStrip Controls in Windows Forms"
+title: "How to: Enable AutoComplete in ToolStrip Controls"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -31,7 +31,7 @@ The following procedure combines a <xref:System.Windows.Forms.ToolStripLabel> wi
   
     ```csharp  
     toolStrip1 = new System.Windows.Forms.ToolStrip();  
-    toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[]   
+    toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[]
         {toolStripLabel1, toolStripComboBox1});  
     ```  
   

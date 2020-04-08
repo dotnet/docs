@@ -1,5 +1,5 @@
 ---
-title: "Automatic Scaling in Windows Forms"
+title: "Automatic Scaling"
 ms.date: "06/15/2017"
 helpviewer_keywords:
   - "scalability [Windows Forms], automatic in Windows Forms"

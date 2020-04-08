@@ -31,6 +31,19 @@ macOS has standalone installers that can be used to install the .NET Core 3.1 SD
 
 - [x64 (64-bit) CPUs](https://dotnet.microsoft.com/download/dotnet-core/3.1)
 
+## Download and manually install
+
+As an alternative to the macOS installers for .NET Core, you can download and manually install the SDK.
+
+To extract the SDK and make the .NET Core CLI commands available at the terminal, first [download](#all-net-core-downloads) a .NET Core binary release. Then, open a terminal and run the following commands. It's assumed the runtime is downloaded to the `~/Downloads/dotnet-sdk.pkg` file.
+
+```bash
+mkdir -p $HOME/dotnet
+sudo installer -pkg ~/Downloads/dotnet-sdk.pkg -target $HOME/dotnet
+export DOTNET_ROOT=$HOME/dotnet
+export PATH=$PATH:$HOME/dotnet
+```
+
 ::: zone-end
 
 ::: zone pivot="os-linux"
@@ -39,9 +52,11 @@ macOS has standalone installers that can be used to install the .NET Core 3.1 SD
 
 You can install the .NET Core SDK with many of the common Linux package managers. For more information, see [Linux Package Manager - Install .NET Core](linux-package-managers.md).
 
+Installing with a package manager is only supported on the x64 architecture. If you're installing the .NET Core SDK with a different architecture, such as ARM, follow the [Download and manually install](#download-and-manually-install) instructions below. For more information about what architectures are supported, see [.NET Core dependencies and requirements](dependencies.md).
+
 ## Download and manually install
 
-To extract the SDK and make the commands available at the terminal, first [download](#all-net-core-downloads) a .NET Core binary release. Then, open a terminal and run the following commands.
+To extract the SDK and make the .NET Core CLI commands available at the terminal, first [download](#all-net-core-downloads) a .NET Core binary release. Then, open a terminal and run the following commands.
 
 ```bash
 mkdir -p $HOME/dotnet && tar zxf dotnet-sdk-3.1.100-linux-x64.tar.gz -C $HOME/dotnet
@@ -50,14 +65,14 @@ export PATH=$PATH:$HOME/dotnet
 ```
 
 > [!TIP]
-> The above commands will only make the .NET SDK commands available for the terminal session in which it was run.
+> The preceding `export` commands only make the .NET Core CLI commands available for the terminal session in which it was run.
 >
 > You can edit your shell profile to permanently add the commands. There are a number of different shells available for Linux and each has a different profile. For example:
 >
 > - **Bash Shell**: *~/.bash_profile*, *~/.bashrc*
 > - **Korn Shell**: *~/.kshrc* or *.profile*
 > - **Z Shell**: *~/.zshrc* or *.zprofile*
-> 
+>
 > Edit the appropriate source file for your shell and add `:$HOME/dotnet` to the end of the existing `PATH` statement. If no `PATH` statement is included, add a new line with `export PATH=$PATH:$HOME/dotnet`.
 >
 > Also, add `export DOTNET_ROOT=$HOME/dotnet` to the end of the file.
@@ -89,7 +104,7 @@ Visual Studio can install the latest .NET Core SDK and runtime.
 
 ### Select a workload
 
-When installing or modifying Visual Studio, select one of the following workloads, depending on the kind of application you're building:
+When installing or modifying Visual Studio, select one or more of the following workloads, depending on the kind of application you're building:
 
 - The **.NET Core cross-platform development** workload in the **Other Toolsets** section.
 - The **ASP.NET and web development** workload in the **Web & Cloud** section.
@@ -97,6 +112,25 @@ When installing or modifying Visual Studio, select one of the following workload
 - The **.NET desktop development** workload in the **Desktop & Mobile** section.
 
 [![Windows Visual Studio 2019 with .NET Core workload](media/install-sdk/windows-install-visual-studio-2019.png)](media/install-sdk/windows-install-visual-studio-2019.png#lightbox)
+
+## Download and manually install
+
+To extract the runtime and make the .NET Core CLI commands available at the terminal, first [download](#all-net-core-downloads) a .NET Core binary release. Then, create a directory to install to, for example `%USERPROFILE%\dotnet`. Finally, extract the downloaded zip file into that directory.
+
+By default, .NET Core CLI commands and apps will not use .NET Core installed in this way. You have to explicitly choose to use it. To do so, change the environment variables with which an application is started:
+
+```console
+set DOTNET_ROOT=%USERPROFILE%\dotnet
+set PATH=%USERPROFILE%\dotnet;%PATH%
+```
+
+This approach lets you install multiple versions into separate locations, then explicitly choose which install location an application should use by running the application with environment variables pointing at that location.
+
+Even when these environment variables are set, .NET Core still considers the default global install location when selecting the best framework for running the application. The default is typically `C:\Program Files\dotnet`, which the installers use. You can instruct the runtime to only use the custom install location by setting this environment variable as well:
+
+```console
+set DOTNET_MULTILEVEL_LOOKUP=0
+```
 
 ::: zone-end
 
@@ -118,7 +152,7 @@ While Visual Studio Code doesn't come with an automated .NET Core installer like
 
 01. [Download and install Visual Studio Code](https://code.visualstudio.com/Download).
 01. [Download and install the .NET Core SDK](https://dotnet.microsoft.com/download/dotnet-core).
-01. [Install the C# extension from the Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp).
+01. [Install the C# extension from the Visual Studio Code marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp).
 
 ::: zone pivot="os-windows"
 
@@ -126,7 +160,7 @@ While Visual Studio Code doesn't come with an automated .NET Core installer like
 
 The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for automation and non-admin installs of the SDK. You can download the script from the [dotnet-install script reference page](../tools/dotnet-install-script.md).
 
-The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET Core 2.1. To install the current release of .NET Core, run the script with the following switch.
+The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET Core 3.1. To install the current release of .NET Core, run the script with the following switch.
 
 ```powershell
 dotnet-install.ps1 -Channel Current
@@ -140,7 +174,7 @@ dotnet-install.ps1 -Channel Current
 
 The [dotnet-install scripts](../tools/dotnet-install-script.md) are used for automation and non-admin installs of the SDK. You can download the script from the [dotnet-install script reference page](../tools/dotnet-install-script.md).
 
-The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET Core 2.1. To install the current release of .NET Core, run the script with the following switch.
+The script defaults to installing the latest [long term support (LTS)](https://dotnet.microsoft.com/platform/support/policy/dotnet-core) version, which is .NET Core 3.1. To install the current release of .NET Core, run the script with the following switch.
 
 ```bash
 ./dotnet-install.sh -c Current
@@ -171,8 +205,7 @@ For more information about using .NET Core in a Docker container, see [Introduct
 
 ::: zone pivot="os-windows"
 
-- [Tutorial: C# Hello World tutorial](../tutorials/with-visual-studio.md).
-- [Tutorial: Visual Basic Hello World tutorial](../tutorials/vb-with-visual-studio.md).
+- [Tutorial: Hello World tutorial](../tutorials/with-visual-studio.md).
 - [Tutorial: Create a new app with Visual Studio Code](../tutorials/with-visual-studio-code.md).
 - [Tutorial: Containerize a .NET Core app](../docker/build-container.md).
 
@@ -180,6 +213,7 @@ For more information about using .NET Core in a Docker container, see [Introduct
 
 ::: zone pivot="os-macos"
 
+- [Working with macOS Catalina notarization](macos-notarization-issues.md).
 - [Tutorial: Get started on macOS](../tutorials/using-on-mac-vs.md).
 - [Tutorial: Create a new app with Visual Studio Code](../tutorials/with-visual-studio-code.md).
 - [Tutorial: Containerize a .NET Core app](../docker/build-container.md).

@@ -79,6 +79,6 @@ This structure lives inside the runtime and is not exposed through any headers o
 
 ## See also
 
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
-- [Debugging Structures](../../../../docs/framework/unmanaged-api/debugging/debugging-structures.md)
+- [Debugging](index.md)
+- [Debugging Structures](debugging-structures.md)
 - [Common Data Types](../../../../docs/framework/unmanaged-api/common-data-types-unmanaged-api-reference.md)

@@ -22,10 +22,10 @@ Contains information about a region of memory in the managed heap.
   
 ```cpp  
 typedef struct _COR_SEGMENT {  
-    CORDB_ADDRESS start;            
-    CORDB_ADDRESS end;              
-    CorDebugGenerationTypes gen;    
-    ULONG heap;                     
+    CORDB_ADDRESS start;
+    CORDB_ADDRESS end;
+    CorDebugGenerationTypes gen;
+    ULONG heap;
 } COR_SEGMENT;  
 ```  
   

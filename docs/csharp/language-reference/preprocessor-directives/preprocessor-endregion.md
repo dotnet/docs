@@ -1,7 +1,5 @@
 ---
 title: "#endregion - C# Reference"
-ms.custom: seodec18
-
 ms.date: 07/20/2015
 f1_keywords: 
   - "#endregion"
@@ -14,9 +12,9 @@ ms.assetid: 16099660-91b2-49e5-9646-77f9ef069526
   
 ```csharp
 #region MyClass definition  
-class MyClass   
+class MyClass
 {  
-    static void Main()   
+    static void Main()
     {  
     }  
 }  

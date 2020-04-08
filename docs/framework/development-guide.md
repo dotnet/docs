@@ -24,7 +24,7 @@ This section explains how to create, configure, debug, secure, and deploy your .
  [Service-Oriented Applications with WCF](./wcf/index.md)  
  Describes how to use Windows Communication Foundation (WCF) to build service-oriented apps that are secure and reliable.  
   
- [Building workflows with Windows Workflow Foundation](windows-workflow-foundation/index.md)     
+ [Building workflows with Windows Workflow Foundation](windows-workflow-foundation/index.md)
  Provides information about the programming model, samples, and tools for using Windows Workflow Foundation (WF).  
 
  [Windows Service Applications](./windows-services/index.md)  
@@ -36,7 +36,7 @@ This section explains how to create, configure, debug, secure, and deploy your .
  [Network Programming in the .NET Framework](./network-programming/index.md)  
  Describes the layered, extensible, and managed implementation of Internet services that you can quickly and easily integrate into your apps.  
   
- [Configuring .NET Framework Apps](configure-apps/index.md)    
+ [Configuring .NET Framework Apps](configure-apps/index.md)
  Explains how you can use configuration files to change settings without having to recompile your .NET Framework apps.  
   
  [Compiling Apps with .NET Native](./net-native/index.md)  
@@ -56,7 +56,7 @@ This section explains how to create, configure, debug, secure, and deploy your .
   
  [Performance](./performance/index.md)  
  Provides information about caching, lazy initialization, reliability, and ETW events.  
- 
+
 ## Reference  
  [.NET Framework Class Library](/dotnet/api/?view=netframework-4.7)  
  Supplies syntax, code examples, and usage information for each class that is contained in the .NET Framework namespaces.  

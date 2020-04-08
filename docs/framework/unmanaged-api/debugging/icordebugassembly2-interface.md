@@ -23,7 +23,7 @@ Represents an assembly. This interface is an extension of the ICorDebugAssembly 
   
 |Method|Description|  
 |------------|-----------------|  
-|[IsFullyTrusted Method](../../../../docs/framework/unmanaged-api/debugging/icordebugassembly2-isfullytrusted-method.md)|Gets a value that indicates whether the assembly has been granted full trust by the runtime security system.|  
+|[IsFullyTrusted Method](icordebugassembly2-isfullytrusted-method.md)|Gets a value that indicates whether the assembly has been granted full trust by the runtime security system.|  
   
 ## Remarks  
   
@@ -41,4 +41,4 @@ Represents an assembly. This interface is an extension of the ICorDebugAssembly 
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

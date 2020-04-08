@@ -1,24 +1,22 @@
 ---
 title: Implement HTTP call retries with exponential backoff with Polly
-description: Learn how to handle HTTP failures with Polly and HttpClientFactory.
-ms.date: 01/07/2019
+description: Learn how to handle HTTP failures with Polly and IHttpClientFactory.
+ms.date: 03/03/2020
 ---
 
-# Implement HTTP call retries with exponential backoff with HttpClientFactory and Polly policies
+# Implement HTTP call retries with exponential backoff with IHttpClientFactory and Polly policies
 
 The recommended approach for retries with exponential backoff is to take advantage of more advanced .NET libraries like the open-source [Polly library](https://github.com/App-vNext/Polly).
 
 Polly is a .NET library that provides resilience and transient-fault handling capabilities. You can implement those capabilities by applying Polly policies such as Retry, Circuit Breaker, Bulkhead Isolation, Timeout, and Fallback. Polly targets .NET Framework 4.x and .NET Standard 1.0, 1.1, and 2.0 (which supports .NET Core).
 
-However, writing your own custom code to use Polly’s library with HttpClient can be significantly complex. In the original version of eShopOnContainers, there was a [ResilientHttpClient building-block](https://github.com/dotnet-architecture/eShopOnContainers/commit/0c317d56f3c8937f6823cf1b45f5683397274815#diff-e6532e623eb606a0f8568663403e3a10) based on Polly. But with the release of [HttpClientFactory](use-httpclientfactory-to-implement-resilient-http-requests.md), implementing resilient HTTP communication with Polly has become much simpler, so that building-block was deprecated from eShopOnContainers.
+The following steps show how you can use Http retries with Polly integrated into `IHttpClientFactory`, which is explained in the previous section.
 
-The following steps show how you can use Http retries with Polly integrated into HttpClientFactory, which is explained in the previous section.
+**Reference the ASP.NET Core 3.1 packages**
 
-**Reference the ASP.NET Core 2.2 packages**
+`IHttpClientFactory` is available since .NET Core 2.1 however we recommend you to use the latest ASP.NET Core 3.1 packages from NuGet in your project. You typically also need to reference the extension package `Microsoft.Extensions.Http.Polly`.
 
-`HttpClientFactory` is available since .NET Core 2.1 however we recommend you to use the latest ASP.NET Core 2.2 packages from NuGet in your project. You typically need the `AspNetCore` metapackage, and the extension package `Microsoft.Extensions.Http.Polly`.
-
-**Configure a client with Polly’s Retry policy, in Startup**
+**Configure a client with Polly's Retry policy, in Startup**
 
 As shown in previous sections, you need to define a named or typed client HttpClient configuration in your standard Startup.ConfigureServices(...) method, but now, you add incremental code specifying the policy for the Http retries with exponential backoff, as below:
 
@@ -29,7 +27,7 @@ services.AddHttpClient<IBasketService, BasketService>()
         .AddPolicyHandler(GetRetryPolicy());
 ```
 
-The **AddPolicyHandler()** method is what adds policies to the `HttpClient` objects you'll use. In this case, it's adding a Polly’s policy for Http Retries with exponential backoff.
+The **AddPolicyHandler()** method is what adds policies to the `HttpClient` objects you'll use. In this case, it's adding a Polly's policy for Http Retries with exponential backoff.
 
 To have a more modular approach, the Http Retry Policy can be defined in a separate method within the `Startup.cs` file, as shown in the following code:
 
@@ -68,7 +66,7 @@ Polly provides production-ready jitter algorithms via the project website.
 - **Retry pattern**  
   [https://docs.microsoft.com/azure/architecture/patterns/retry](/azure/architecture/patterns/retry)
 
-- **Polly and HttpClientFactory**  
+- **Polly and IHttpClientFactory**  
   <https://github.com/App-vNext/Polly/wiki/Polly-and-HttpClientFactory>
 
 - **Polly (.NET resilience and transient-fault-handling library)**  
@@ -81,5 +79,5 @@ Polly provides production-ready jitter algorithms via the project website.
   <https://brooker.co.za/blog/2015/03/21/backoff.html>
 
 >[!div class="step-by-step"]
->[Previous](explore-custom-http-call-retries-exponential-backoff.md)
+>[Previous](use-httpclientfactory-to-implement-resilient-http-requests.md)
 >[Next](implement-circuit-breaker-pattern.md)

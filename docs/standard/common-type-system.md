@@ -11,7 +11,7 @@ Again, two terms that are freely used in the .NET world, they actually are cruci
 
 ## Common Type System
 
-To start from the beginning, remember that a .NET implementation is _language agnostic_. This doesn’t just mean that a programmer can write her code in any language that can be compiled to IL. It also means that she needs to be able to interact with code written in other languages that are able to be used on a .NET implementation.
+To start from the beginning, remember that a .NET implementation is _language agnostic_. This doesn't just mean that a programmer can write their code in any language that can be compiled to IL. It also means that they need to be able to interact with code written in other languages that are able to be used on a .NET implementation.
 
 In order to do this transparently, there has to be a common way to describe all supported types. This is what the Common Type System (CTS) is in charge of doing. It was made to do several things:
 
@@ -22,7 +22,7 @@ In order to do this transparently, there has to be a common way to describe all 
 
 CTS defines two main kinds of types that should be supported: reference and value types. Their names point to their definitions.
 
-Reference types’ objects are represented by a reference to the object’s actual value; a reference here is similar to a pointer in C/C++. It simply refers to a memory location where the objects’ values are. This has a profound impact on how these types are used. If you assign a reference type to a variable and then pass that variable into a method, for instance, any changes to the object will be reflected on the main object; there is no copying.
+Reference types' objects are represented by a reference to the object's actual value; a reference here is similar to a pointer in C/C++. It simply refers to a memory location where the objects' values are. This has a profound impact on how these types are used. If you assign a reference type to a variable and then pass that variable into a method, for instance, any changes to the object will be reflected on the main object; there is no copying.
 
 Value types are the opposite, where the objects are represented by their values. If you assign a value type to a variable, you are essentially copying a value of the object.
 

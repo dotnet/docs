@@ -5,8 +5,6 @@ helpviewer_keywords:
   - "configuring apps to support .NET Framework"
   - ".NET Framework, configuring apps"
 ms.assetid: 63c6b9a8-0088-4077-9aa3-521ab7290f79
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Configure an App to Support .NET Framework 4 or later versions
 
@@ -46,7 +44,7 @@ All apps that host the common language runtime (CLR) need to start, or *activate
     ```xml
     <configuration>
       <startup>
-        <supportedRuntime version="<version>"/>
+        <supportedRuntime version="version"/>
       </startup>
     </configuration>
     ```

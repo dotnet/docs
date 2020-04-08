@@ -1,5 +1,5 @@
 ---
-title: "DataGridView Control Code Directory (Windows Forms)"
+title: "DataGridView Control Code Directory"
 ms.date: "03/30/2017"
 helpviewer_keywords: 
   - "data grids [Windows Forms], examples"

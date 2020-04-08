@@ -36,6 +36,8 @@ For more information about .NET Core 3.1 supported operating systems, distributi
 
 # [.NET Core 3.0](#tab/netcore30)
 
+*.NET Core 3.0 is currently out of support. For more information, see the [.NET Core Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
+
 The following Windows versions are supported with .NET Core 3.0:
 
 > [!NOTE]
@@ -51,6 +53,8 @@ The following Windows versions are supported with .NET Core 3.0:
 For more information about .NET Core 3.0 supported operating systems, distributions, and lifecycle policy, see [.NET Core 3.0 Supported OS Versions](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md).
 
 # [.NET Core 2.2](#tab/netcore22)
+
+*.NET Core 2.2 is currently out of support. For more information, see the [.NET Core Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
 
 The following Windows versions are supported with .NET Core 2.2:
 
@@ -127,7 +131,7 @@ The requirements above are also required if you come across one of the following
 | Red Hat Enterprise Linux       | 6, 7, 8               | x64 |
 | CentOS                         | 7+                    | x64 |
 | Oracle Linux                   | 7+                    | x64 |
-| Fedora                         | 29+                   | x64 |
+| Fedora                         | 30+                   | x64 |
 | Debian                         | 9+                    | x64, ARM32, ARM64 |
 | Ubuntu                         | 16.04+                | x64, ARM32, ARM64 |
 | Linux Mint                     | 18+                   | x64 |
@@ -143,6 +147,8 @@ For more information about how to install .NET Core 3.1 on ARM64 (kernel 4.14+),
 > ARM64 support requires Linux kernel 4.14 or higher. Some linux distributions satisfy this requirement while others don't. For example, Ubuntu 18.04 is supported but Ubuntu 16.04 doesn't.
 
 # [.NET Core 3.0](#tab/netcore30)
+
+*.NET Core 3.0 is currently out of support. For more information, see the [.NET Core Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
 
 .NET Core 3.0 treats Linux as a single operating system. There's a single Linux build (per chip architecture) for supported Linux distributions.
 
@@ -170,6 +176,8 @@ For more information about how to install .NET Core 3.0 on ARM64, see [Installin
 
 # [.NET Core 2.2](#tab/netcore22)
 
+*.NET Core 2.2 is currently out of support. For more information, see the [.NET Core Support Policy](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).*
+
 .NET Core 2.2 treats Linux as a single operating system. There's a single Linux build (per chip architecture) for supported Linux distributions.
 
 .NET Core 2.2 is supported on the following Linux distributions/versions:
@@ -184,7 +192,7 @@ For more information about how to install .NET Core 3.0 on ARM64, see [Installin
 | Oracle Linux                   |  7                      | x64 |
 | Fedora                         |  29, 30                 | x64 |
 | Debian                         |  9                      | x64, ARM32 |
-| Ubuntu                         |  16.04, 18.04, 18.10, 19.04    | x64, ARM32 |
+| Ubuntu                         |  16.04, 18.04, 18.10    | x64, ARM32 |
 | Linux Mint                     |  17, 18                 | x64 |
 | openSUSE                       |  15+                    | x64 |
 | SUSE Enterprise Linux (SLES)   |  12 SP2+                | x64 |
@@ -206,7 +214,7 @@ For more information about .NET Core 2.2 supported operating systems, distributi
 | Red Hat Enterprise Linux       |  6, 7, 8                | x64 |
 | CentOS                         |  7+                     | x64 |
 | Oracle Linux                   |  7+                     | x64 |
-| Fedora                         |  29+                    | x64 |
+| Fedora                         |  30+                    | x64 |
 | Debian                         |  9                      | x64, ARM32 |
 | Ubuntu                         |  16.04, 18.04, 19.04, 19.10    | x64, ARM32 |
 | Linux Mint                     |  17+                    | x64 |
@@ -293,6 +301,14 @@ For .NET Core apps that use the *System.Drawing.Common* assembly, you'll also ne
 | 3.0               | High Sierra (10.13+)  | x64 | [More information](https://github.com/dotnet/core/blob/master/release-notes/3.0/3.0-supported-os.md) |
 | 2.2               | Sierra (10.12+)       | x64 | [More information](https://github.com/dotnet/core/blob/master/release-notes/2.2/2.2-supported-os.md) |
 | 2.1               | Sierra (10.12+)       | x64 | [More information](https://github.com/dotnet/core/blob/master/release-notes/2.1/2.1-supported-os.md) |
+
+Beginning with macOS Catalina (version 10.15), all software built after June 1, 2019 that is distributed with Developer ID, must be notarized. This requirement applies to the .NET Core runtime, .NET Core SDK, and software created with .NET Core.
+
+The installers for .NET Core (both runtime and SDK) versions 3.1, 3.0, and 2.1, have been notarized since February 18, 2020. Prior released versions aren't notarized. If you run a non-notarized app, you'll see an error similar to the following image:
+
+![macOS Catalina notarization alert](media/dependencies/macos-notarized-pkg-warning.png)
+
+For more information about how enforced-notarization affects .NET Core (and your .NET Core apps), see [Working with macOS Catalina Notarization](macos-notarization-issues.md).
 
 ## libgdiplus
 

@@ -4,7 +4,6 @@ description: Learn unit test concepts in C# and .NET Core through an interactive
 author: ardalis
 ms.author: wiwagn
 ms.date: 12/04/2019
-ms.custom: "seodec18"
 ---
 # Unit testing C# in .NET Core using dotnet test and xUnit
 
@@ -202,7 +201,7 @@ public void IsPrime_InputIs1_ReturnFalse()
 
 with the following code:
 
-[!code-csharp[Sample_TestCode](../../../samples/core/getting-started/unit-testing-using-dotnet-test/PrimeService.Tests/PrimeService_IsPrimeShould.cs?name=Sample_TestCode)]
+[!code-csharp[Sample_TestCode](../../../samples/snippets/core/testing/unit-testing-using-dotnet-test/csharp/PrimeService.Tests/PrimeService_IsPrimeShould.cs?name=Sample_TestCode)]
 
 In the preceding code, `[Theory]` and `[InlineData]` enable testing several values less than two. Two is the smallest prime number.
 

@@ -17,15 +17,15 @@ topic_type:
   - "apiref"
 ---
 # ICorPublishProcess::GetDisplayName Method
-Gets the full path of the executable for the process referenced by this [ICorPublishProcess](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md).  
+Gets the full path of the executable for the process referenced by this [ICorPublishProcess](icorpublishprocess-interface.md).  
   
 ## Syntax  
   
 ```cpp  
 HRESULT GetDisplayName (  
-    [in]  ULONG32                    cchName,   
+    [in]  ULONG32                    cchName,
     [out] ULONG32                    *pcchName,  
-    [out, size_is(cchName), length_is(*pcchName)]   
+    [out, size_is(cchName), length_is(*pcchName)]
         WCHAR                        *szName  
 );  
 ```  
@@ -51,4 +51,4 @@ HRESULT GetDisplayName (
   
 ## See also
 
-- [ICorPublishProcess Interface](../../../../docs/framework/unmanaged-api/debugging/icorpublishprocess-interface.md)
+- [ICorPublishProcess Interface](icorpublishprocess-interface.md)

@@ -18,7 +18,6 @@ helpviewer_keywords:
   - "comparing strings"
   - "strings [.NET Framework],comparing"
 ms.assetid: b9f0bf53-e2de-4116-8ce9-d4f91a1df4f7
-ms.custom: seodec18
 ---
 # Best Practices for Using Strings in .NET
 
@@ -345,7 +344,3 @@ However, if you replace the <xref:System.Globalization.CultureInfo.CurrentCultur
 08.09.1890 06:47
 18.02.1905 15:12
 ```
-
-## See also
-
-- [Manipulating Strings](manipulating-strings.md)

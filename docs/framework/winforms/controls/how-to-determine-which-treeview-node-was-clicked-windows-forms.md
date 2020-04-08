@@ -1,5 +1,5 @@
 ---
-title: "How to: Determine Which TreeView Node Was Clicked (Windows Forms)"
+title: "How to: Determine Which TreeView Node Was Clicked"
 ms.date: "03/30/2017"
 dev_langs: 
   - "csharp"
@@ -31,7 +31,7 @@ When working with the Windows Forms <xref:System.Windows.Forms.TreeView> control
     ```  
   
     ```csharp  
-    protected void treeView1_AfterSelect (object sender,   
+    protected void treeView1_AfterSelect (object sender,
     System.Windows.Forms.TreeViewEventArgs e)  
     {  
        // Determine by checking the Text property.  

@@ -16,8 +16,6 @@ WCF Data Services includes a set of providers that enables you to define a data 
 |Paging provider|This provider is used with the custom data service provider to enable server-driven paging support. A paging provider for a custom data service is created by implementing the <xref:System.Data.Services.Providers.IDataServicePagingProvider> interface.|  
 |Streaming provider|This provider enables you to expose binary large object data types as a stream. A streaming provider is created by implementing the <xref:System.Data.Services.Providers.IDataServiceStreamProvider> interface. The streaming provider can also be used with Entity Framework and reflection data source providers. For more information, see [Streaming Provider](streaming-provider-wcf-data-services.md).|  
   
- For more information, see the article [Custom Data Service Providers](https://go.microsoft.com/fwlink/?LinkID=186850) and the Open Data Protocol (OData) Provider Toolkit in the [OData SDK](https://go.microsoft.com/fwlink/?LinkId=186069).  
-  
 ## See also
 
 - [Data Services Providers](data-services-providers-wcf-data-services.md)

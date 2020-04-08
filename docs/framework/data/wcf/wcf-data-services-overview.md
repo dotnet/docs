@@ -19,7 +19,7 @@ WCF Data Services enables creation and consumption of data services for the Web 
 ## Interoperable Data Access  
  OData builds on standard Internet protocols to make data services interoperable with applications that do not use the .NET Framework. Because you can use standard URIs to address data, your application can access and change data by using the semantics of representational state transfer (REST), specifically the standard HTTP verbs of GET, PUT, POST, and DELETE. This enables you to access these services from any client that can parse and access data that is transmitted over standard HTTP protocols.  
   
- OData defines a set of extensions to the Atom Publishing Protocol (AtomPub). It supports HTTP requests and responses in more than one data format to accommodate various client applications and platforms. An OData feed can represent data in Atom, JavaScript Object Notation (JSON), and as plain XML. While Atom is the default format, the format of the feed is specified in the header of the HTTP request. For more information, see [OData: Atom Format](https://go.microsoft.com/fwlink/?LinkID=185794) and [OData: JSON Format](https://go.microsoft.com/fwlink/?LinkID=185795).  
+OData defines a set of extensions to the Atom Publishing Protocol (AtomPub). It supports HTTP requests and responses in more than one data format to accommodate various client applications and platforms. An OData feed can represent data in Atom, JavaScript Object Notation (JSON), and as plain XML. While Atom is the default format, the format of the feed is specified in the header of the HTTP request. For more information, see [OData: Atom Format](https://www.odata.org/documentation/odata-version-2-0/atom-format/) and [OData: JSON Format](https://www.odata.org/documentation/odata-version-2-0/json-format/).  
   
  When publishing data as an OData feed, WCF Data Services relies on other existing Internet facilities for such operations as caching and authentication. To accomplish this, WCF Data Services integrates with existing hosting applications and services, such as ASP.NET, Windows Communication Foundation (WCF), and Internet Information Services (IIS).  
   
@@ -42,7 +42,7 @@ WCF Data Services enables creation and consumption of data services for the Web 
   
  WCF Data Services includes client libraries for both .NET Framework-based and Silverlight-based client applications. These client libraries enable you to interact with data services by using .NET Framework objects. They also support object-based queries and LINQ queries, loading related objects, change tracking, and identity resolution. For more information, see [WCF Data Services Client Library](wcf-data-services-client-library.md).  
   
- In addition to the OData client libraries included with the .NET Framework and with Silverlight, there are other client libraries that enable you to consume an OData feed in client applications, such as PHP, AJAX, and Java applications. For more information, see the [OData SDK](https://go.microsoft.com/fwlink/?LinkID=185796).  
+ In addition to the OData client libraries included with the .NET Framework and with Silverlight, there are other client libraries that enable you to consume an OData feed in client applications, such as PHP, AJAX, and Java applications. For more information on OData SDK, see [OData SDK - Sample Code](https://www.odata.org/ecosystem/#sdk).
   
 ## Architecture Overview  
  The following diagram illustrates the WCF Data Services architecture for exposing OData feeds and using these feeds in OData-enabled client libraries:  
@@ -56,4 +56,4 @@ WCF Data Services enables creation and consumption of data services for the Web 
 - [Defining WCF Data Services](defining-wcf-data-services.md)
 - [Accessing Data Service Resources (WCF Data Services)](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/dd728283(v=vs.100))
 - [WCF Data Services Client Library](wcf-data-services-client-library.md)
-- [Representational State Transfer (REST)](https://go.microsoft.com/fwlink/?LinkId=113919)
+- [Representational State Transfer (REST)](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm)

@@ -1,6 +1,5 @@
 ---
 title: "Unsafe code and pointers - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "security [C#], type safety"

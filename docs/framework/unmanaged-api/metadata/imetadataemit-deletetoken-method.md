@@ -22,8 +22,8 @@ Deletes the specified token from the current metadata scope.
 ## Syntax  
   
 ```cpp  
-HRESULT DeleteToken (   
-    [in]  mdToken     tkObj   
+HRESULT DeleteToken (
+    [in]  mdToken     tkObj
 );  
 ```  
   

@@ -52,9 +52,9 @@ End Class
 ' 3 occurrence(s) of the search term "data" were found.
 ```
 
-## Compiling the Code
+## Compile the code
 
-Create a VB.NET console application project, with an `Imports` statement for the System.Linq namespace.
+Create a Visual Basic console application project, with an `Imports` statement for the System.Linq namespace.
 
 ## See also
 

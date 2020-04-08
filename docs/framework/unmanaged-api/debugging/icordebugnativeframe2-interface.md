@@ -22,9 +22,9 @@ Provides methods that test for child and parent frame relationships.
   
 |Method|Description|  
 |------------|-----------------|  
-|[IsChild Method](../../../../docs/framework/unmanaged-api/debugging/icordebugnativeframe2-ischild-method.md)|Determines whether the current frame is a child frame.|  
-|[IsMatchingParentFrame Method](../../../../docs/framework/unmanaged-api/debugging/icordebugnativeframe2-ismatchingparentframe-method.md)|Determines whether the specified frame is the parent of the current frame.|  
-|[GetStackParameterSize Method](../../../../docs/framework/unmanaged-api/debugging/icordebugnativeframe2-getstackparametersize-method.md)|Returns the cumulative size of the parameters on the stack on x86 operating systems.|  
+|[IsChild Method](icordebugnativeframe2-ischild-method.md)|Determines whether the current frame is a child frame.|  
+|[IsMatchingParentFrame Method](icordebugnativeframe2-ismatchingparentframe-method.md)|Determines whether the specified frame is the parent of the current frame.|  
+|[GetStackParameterSize Method](icordebugnativeframe2-getstackparametersize-method.md)|Returns the cumulative size of the parameters on the stack on x86 operating systems.|  
   
 ## Remarks  
  This interface logically extends the "ICorDebugNativeFrame" interface.  
@@ -43,5 +43,5 @@ Provides methods that test for child and parent frame relationships.
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
-- [Debugging](../../../../docs/framework/unmanaged-api/debugging/index.md)
+- [Debugging Interfaces](debugging-interfaces.md)
+- [Debugging](index.md)

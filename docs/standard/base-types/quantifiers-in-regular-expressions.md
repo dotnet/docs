@@ -216,7 +216,7 @@ Quantifiers specify how many instances of a character, group, or character class
 |`{1,10}`|Match the previous pattern between 1 and 10 times.|  
 |`[.!?]`|Match any one of the punctuation characters ".", "!", or "?".|  
   
-<a name="Greedy"></a>   
+<a name="Greedy"></a>
 ## Greedy and Lazy Quantifiers  
  A number of the quantifiers have two versions:  
   

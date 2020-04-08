@@ -1,7 +1,5 @@
 ---
 title: "select clause - C# Reference"
-ms.custom: seodec18
-
 ms.date: 07/20/2015
 f1_keywords: 
   - "select_CSharpKeyword"
@@ -41,4 +39,4 @@ At compile time, the `select` clause is translated to a method call to the <xref
 - [partial (Method) (C# Reference)](partial-method.md)
 - [Anonymous Types](../../programming-guide/classes-and-structs/anonymous-types.md)
 - [LINQ in C#](../../linq/index.md)
-- [Getting Started with LINQ in C#](/dotnet/csharp/programming-guide/concepts/linq/)
+- [Language Integrated Query (LINQ)](../../programming-guide/concepts/linq/index.md)

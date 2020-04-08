@@ -10,8 +10,8 @@ Returns a list of active thread IDs.
   
 ```cpp  
 HRESULT EnumerateThreadIDs(  
-    [in] ULONG32 cThreadIds,   
-    [out] ULONG32 *pcThreadIds,   
+    [in] ULONG32 cThreadIds,
+    [out] ULONG32 *pcThreadIds,
     [out, size_is(cThreadIds), length_is(*pcThreadIds)] ULONG32 pThreadIds[]  
 );  
 ```  
@@ -40,5 +40,5 @@ HRESULT EnumerateThreadIDs(
   
 ## See also
 
-- [ICorDebugDataTarget2 Interface](../../../../docs/framework/unmanaged-api/debugging/icordebugdatatarget2-interface.md)
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [ICorDebugDataTarget2 Interface](icordebugdatatarget2-interface.md)
+- [Debugging Interfaces](debugging-interfaces.md)

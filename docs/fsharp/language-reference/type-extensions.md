@@ -1,7 +1,7 @@
 ---
 title: Type Extensions
 description: Learn how F# type extensions allow you add new members to a previously defined object type.
-ms.date: 11/04/2019
+ms.date: 02/05/2020
 ---
 # Type extensions
 
@@ -27,7 +27,8 @@ open System.Runtime.CompilerServices
 
 [<Extension>]
 type Extensions() =
-    [static] member self-identifier.extension-name (ty: typename, [args]) =
+    [<Extension>]
+    static member self-identifier.extension-name (ty: typename, [args]) =
         body
     ...
 ```
@@ -92,7 +93,7 @@ Optional extensions do not appear on the extended type when examined by reflecti
 
 Optional extension members are compiled to static members for which the object instance is passed implicitly as the first parameter. However, they act as if they're instance members or static members according to how they're declared.
 
-Optional extension members are also not visible to C# or VB consumers. They can only be consumed in other F# code.
+Optional extension members are also not visible to C# or Visual Basic consumers. They can only be consumed in other F# code.
 
 ## Generic limitation of intrinsic and optional type extensions
 
@@ -130,12 +131,21 @@ namespace Extensions
 open System.Runtime.CompilerServices
 
 [<Extension>]
-type IEnumerableExtensions() =
+type IEnumerableExtensions =
     [<Extension>]
     static member inline Sum(xs: IEnumerable<'T>) = Seq.sum xs
 ```
 
 When used, this code will make it appear as if `Sum` is defined on <xref:System.Collections.Generic.IEnumerable%601>, so long as `Extensions` has been opened or is in scope.
+
+For the extension to be available to VB.NET code, an extra `ExtensionAttribute` is required at the assembly level:
+
+```fsharp
+module AssemblyInfo
+open System.Runtime.CompilerServices
+[<assembly:Extension>]
+do ()
+```
 
 ## Other remarks
 

@@ -16,7 +16,7 @@ topic_type:
   - "Reference"
 ---
 # ResetSecurity function
-Assigns the supplied impersonation token to the current thread.   
+Assigns the supplied impersonation token to the current thread.
   
 [!INCLUDE[internalonly-unmanaged](../../../../includes/internalonly-unmanaged.md)]
   
@@ -25,13 +25,13 @@ Assigns the supplied impersonation token to the current thread.
 ```cpp  
 HRESULT ResetSecurity (
    [in] HANDLE token
-); 
+);
 ```  
 
 ## Parameters
 
 `token`  
-[in] The impersonation token to associate with the current thread. Its value can be `null`. 
+[in] The impersonation token to associate with the current thread. Its value can be `null`.
 
 ## Return value
 

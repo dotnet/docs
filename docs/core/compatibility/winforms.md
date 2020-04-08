@@ -1,11 +1,38 @@
 ---
-title: Windows Forms breaking changes - .NET Core
+title: Windows Forms breaking changes
 description: Lists the breaking changes in Windows Forms for .NET Core.
-ms.date: 11/27/2019
+ms.date: 01/08/2020
 ---
-# Breaking changes in Windows Forms (.NET Core to .NET Core)
+# Breaking changes in Windows Forms
 
-Windows Forms support was added to .NET Core in version 3.0. This articles lists breaking changes for Windows Forms by the .NET Core version in which they were introduced. If you're upgrading a Windows Forms app from a previous version of .NET Core (3.0 or later), this article is applicable to you. If you're migrating a Windows Forms app from .NET Framework to .NET Core, see [Breaking changes for Windows Forms (.NET Framework to .NET Core)](../porting/winforms-breaking-changes.md).
+Windows Forms support was added to .NET Core in version 3.0. This article lists breaking changes for Windows Forms by the .NET Core version in which they were introduced. If you're upgrading a Windows Forms app from .NET Framework or from a previous version of .NET Core (3.0 or later), this article is applicable to you.
+
+The following breaking changes are documented on this page:
+
+| Breaking change | Version introduced |
+| - | :-: |
+| [WinForms APIs now throw ArgumentNullException](#winforms-apis-now-throw-argumentnullexception) | 5.0 |
+| [Removed controls](#removed-controls) | 3.1 |
+| [CellFormatting event not raised if tooltip is shown](#cellformatting-event-not-raised-if-tooltip-is-shown) | 3.1 |
+| [Control.DefaultFont changed to Segoe UI 9 pt](#default-control-font-changed-to-segoe-ui-9-pt) | 3.0 |
+| [Modernization of the FolderBrowserDialog](#modernization-of-the-folderbrowserdialog) | 3.0 |
+| [SerializableAttribute removed from some Windows Forms types](#serializableattribute-removed-from-some-windows-forms-types) | 3.0 |
+| [AllowUpdateChildControlIndexForTabControls compatibility switch not supported](#allowupdatechildcontrolindexfortabcontrols-compatibility-switch-not-supported) | 3.0 |
+| [DomainUpDown.UseLegacyScrolling compatibility switch not supported](#domainupdownuselegacyscrolling-compatibility-switch-not-supported) | 3.0 |
+| [DoNotLoadLatestRichEditControl compatibility switch not supported](#donotloadlatestricheditcontrol-compatibility-switch-not-supported) | 3.0 |
+| [DoNotSupportSelectAllShortcutInMultilineTextBox compatibility switch not supported](#donotsupportselectallshortcutinmultilinetextbox-compatibility-switch-not-supported) | 3.0 |
+| [DontSupportReentrantFilterMessage compatibility switch not supported](#dontsupportreentrantfiltermessage-compatibility-switch-not-supported) | 3.0 |
+| [EnableVisualStyleValidation compatibility switch not supported](#enablevisualstylevalidation-compatibility-switch-not-supported) | 3.0 |
+| [UseLegacyContextMenuStripSourceControlValue compatibility switch not supported](#uselegacycontextmenustripsourcecontrolvalue-compatibility-switch-not-supported) | 3.0 |
+| [UseLegacyImages compatibility switch not supported](#uselegacyimages-compatibility-switch-not-supported) | 3.0 |
+| [Change of access for AccessibleObject.RuntimeIDFirstItem](#change-of-access-for-accessibleobjectruntimeidfirstitem) | 3.0 |
+| [Duplicated APIs removed from Windows Forms](#duplicated-apis-removed-from-windows-forms) | 3.0 |
+
+## .NET 5.0
+
+[!INCLUDE [null-args-cause-argumentnullexception](../../../includes/core-changes/windowsforms/5.0/null-args-cause-argumentnullexception.md)]
+
+***
 
 ## .NET Core 3.1
 
@@ -15,6 +42,62 @@ Windows Forms support was added to .NET Core in version 3.0. This articles lists
 
 [!INCLUDE[CellFormatting event](~/includes/core-changes/windowsforms/3.1/cellformatting-event-not-raised.md)]
 
+***
+
+## .NET Core 3.0
+
+[!INCLUDE[Control.DefaultFont changed to Segoe UI 9pt](~/includes/core-changes/windowsforms/3.0/control-defaultfont-changed.md)]
+
+***
+
+[!INCLUDE[Modernization of the FolderBrowserDialog](~/includes/core-changes/windowsforms/3.0/modernized-folderbrowserdialog.md)]
+
+***
+
+[!INCLUDE[SerializableAttribute removed from some Windows Forms types](~/includes/core-changes/windowsforms/3.0/remove-serializationattribute.md)]
+
+***
+
+[!INCLUDE[Switch.System.Windows.Forms.AllowUpdateChildControlIndexForTabControls compatibility switch not supported](~/includes/core-changes/windowsforms/3.0/deprecate-allowupdatechildcontrolindexfortabcontrols.md)]
+
+***
+
+[!INCLUDE[Switch.System.Windows.Forms.DomainUpDown.UseLegacyScrolling compatibility switch not supported](~/includes/core-changes/windowsforms/3.0/deprecate-uselegacyscrolling.md)]
+
+***
+
+[!INCLUDE[Switch.System.Windows.Forms.DoNotLoadLatestRichEditControl compatibility switch not supported](~/includes/core-changes/windowsforms/3.0/deprecate-donotloadlatestricheditcontrol.md)]
+
+***
+
+[!INCLUDE[Switch.System.Windows.Forms.DoNotSupportSelectAllShortcutInMultilineTextBox compatibility switch not supported](~/includes/core-changes/windowsforms/3.0/deprecate-donotsupportselectallshortcutinmultilinetextbox.md)]
+
+***
+
+[!INCLUDE[Switch.System.Windows.Forms.DontSupportReentrantFilterMessage compatibility switch not supported](~/includes/core-changes/windowsforms/3.0/deprecate-dontsupportreentrantfiltermessage.md)]
+
+***
+
+[!INCLUDE[Switch.System.Windows.Forms.EnableVisualStyleValidation compatibility switch not supported](~/includes/core-changes/windowsforms/3.0/deprecate-enablevisualstylevalidation.md)]
+
+***
+
+[!INCLUDE[Switch.System.Windows.Forms.UseLegacyContextMenuStripSourceControlValue compatibility switch not supported](~/includes/core-changes/windowsforms/3.0/deprecate-uselegacycontextmenustripsourcecontrolvalue.md)]
+
+***
+
+[!INCLUDE[Switch.System.Windows.Forms.UseLegacyImages compatibility switch not supported](~/includes/core-changes/windowsforms/3.0/deprecate-uselegacyimages.md)]
+
+***
+
+[!INCLUDE[Change of access for AccessibleObject.RuntimeIDFirstItem](~/includes/core-changes/windowsforms/3.0/changed-access-for-runtimeidfirstitem.md)]
+
+***
+
+[!INCLUDE[Duplicated APIs removed from Windows Forms](~/includes/core-changes/windowsforms/3.0/remove-duplicated-apis.md)]
+
+***
+
 ## See also
 
-- [Breaking changes for Windows Forms (.NET Framework to .NET Core)](../porting/winforms-breaking-changes.md)
+- [Port a Windows Forms app to .NET Core](../porting/winforms.md)

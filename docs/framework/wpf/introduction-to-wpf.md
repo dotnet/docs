@@ -1,5 +1,6 @@
 ---
 title: Introduction to WPF
+titleSuffix: ""
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b8d7cf43-d1f2-4f3d-adb0-4f3a6428edc0
@@ -78,7 +79,7 @@ The main behavior of an application is to implement the functionality that respo
 ```
 
 ```csharp
-using System.Windows; // Window, RoutedEventArgs, MessageBox 
+using System.Windows; // Window, RoutedEventArgs, MessageBox
 
 namespace SDKSample
 {
@@ -86,7 +87,7 @@ namespace SDKSample
     {
         public AWindow()
         {
-            // InitializeComponent call is required to merge the UI 
+            // InitializeComponent call is required to merge the UI
             // that is defined in markup with this class, including  
             // setting properties and registering event handlers
             InitializeComponent();
@@ -109,21 +110,21 @@ Namespace SDKSample
 
         Public Sub New()
 
-            ' InitializeComponent call is required to merge the UI 
+            ' InitializeComponent call is required to merge the UI
             ' that is defined in markup with this class, including  
             ' setting properties and registering event handlers
             InitializeComponent()
 
-        End Sub 
+        End Sub
 
         Private Sub button_Click(ByVal sender As Object, ByVal e As RoutedEventArgs)
 
             ' Show message box when button is clicked.
             MessageBox.Show("Hello, Windows Presentation Foundation!")
 
-        End Sub 
+        End Sub
 
-    End Class 
+    End Class
 
 End Namespace
 ```
@@ -302,7 +303,7 @@ For more information, see [WPF brushes overview](graphics-multimedia/wpf-brushes
 
 ### 3D rendering
 
-WPF also includes 3D rendering capabilities that integrate with 2-d graphics to allow the creation of more exciting and interesting user interfaces. For example, the following figure shows 2D images rendered onto 3D shapes:
+WPF also includes 3D rendering capabilities that integrate with 2D graphics to allow the creation of more exciting and interesting user interfaces. For example, the following figure shows 2D images rendered onto 3D shapes:
 
 ![Visual3D sample screen shot](media/introduction-to-wpf/wpfintrofigure13.png)
 

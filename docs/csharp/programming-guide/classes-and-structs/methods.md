@@ -1,6 +1,5 @@
 ---
 title: "Methods - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords:
   - "methods [C#]"
@@ -16,7 +15,7 @@ A method is a code block that contains a series of statements. A program causes 
 
 ## Method signatures
 
-Methods are declared in a [class](../../language-reference/keywords/class.md) or [struct](../../language-reference/keywords/struct.md) by specifying the access level such as `public` or `private`, optional modifiers such as `abstract` or `sealed`, the return value, the name of the method, and any method parameters. These parts together are the signature of the method.
+Methods are declared in a [class](../../language-reference/keywords/class.md), [struct](../../language-reference/builtin-types/struct.md), or [interface](../interfaces/index.md) by specifying the access level such as `public` or `private`, optional modifiers such as `abstract` or `sealed`, the return value, the name of the method, and any method parameters. These parts together are the signature of the method.
 
 > [!NOTE]
 > A return type of a method is not part of the signature of the method for the purposes of method overloading. However, it is part of the signature of the method when determining the compatibility between a delegate and the method that it points to.
@@ -39,7 +38,7 @@ The method definition specifies the names and types of any parameters that are r
 
 ## Passing by reference vs. passing by value
 
-By default, when a value type is passed to a method, a copy is passed instead of the object itself. Therefore, changes to the argument have no effect on the original copy in the calling method. You can pass a value-type by reference by using the ref keyword. For more information, see [Passing Value-Type Parameters](./passing-value-type-parameters.md). For a list of built-in value types, see [Value Types Table](../../language-reference/keywords/value-types-table.md).
+By default, when an instance of a [value type](../../language-reference/builtin-types/value-types.md) is passed to a method, its copy is passed instead of the instance itself. Therefore, changes to the argument have no effect on the original instance in the calling method. To pass a value-type instance by reference, use the `ref` keyword. For more information, see [Passing Value-Type Parameters](./passing-value-type-parameters.md).
 
 When an object of a reference type is passed to a method, a reference to the object is passed. That is, the method receives not the object itself but an argument that indicates the location of the object. If you change a member of the object by using this reference, the change is reflected in the argument in the calling method, even if you pass the object by value.
 

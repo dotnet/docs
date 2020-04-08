@@ -17,7 +17,7 @@ This method checks for some strong-password characteristics and updates a string
 ### Code  
  [!code-vb[VbVbcnRegEx#1](~/samples/snippets/visualbasic/VS_Snippets_VBCSharp/VbVbcnRegEx/VB/Class1.vb#1)]  
   
-## Compiling the Code  
+## Compile the code  
  Call this method by passing the string that contains that password.  
   
  This example requires:  

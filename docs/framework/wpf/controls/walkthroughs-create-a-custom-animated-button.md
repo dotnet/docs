@@ -26,10 +26,10 @@ As its name suggests, Windows Presentation Foundation (WPF) is great for making 
  Describes how styles and templates can be used to determine the appearance and behavior of controls.
 
  [Animation Overview](../graphics-multimedia/animation-overview.md)
- Describes how objects can be animated by using the [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] animation and timing system.
+ Describes how objects can be animated by using the WPF animation and timing system.
 
  [Painting with Solid Colors and Gradients Overview](../graphics-multimedia/painting-with-solid-colors-and-gradients-overview.md)
  Describes how to use brush objects to paint with solid colors, linear gradients, and radial gradients.
 
  [Bitmap Effects Overview](../graphics-multimedia/bitmap-effects-overview.md)
- Describes the bitmap effects supported by [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] and explains how to apply them.
+ Describes the bitmap effects supported by WPF and explains how to apply them.

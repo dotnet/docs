@@ -15,7 +15,6 @@ helpviewer_keywords:
   - "constructs, alternation"
   - ".NET Framework regular expressions, alternation constructs"
 ms.assetid: 071e22e9-fbb0-4ecf-add1-8d2424f9f2d1
-ms.custom: seodec18
 ---
 # Alternation Constructs in Regular Expressions
 
@@ -57,7 +56,7 @@ The regular expression `\b(\d{2}-\d{7}|\d{3}-\d{2}-\d{4})\b` is interpreted as s
 |<code>(\d{2}-\d{7}&#124;\d{3}-\d{2}-\d{4})</code>|Match either of the following: two decimal digits followed by a hyphen followed by seven decimal digits; or three decimal digits, a hyphen, two decimal digits, another hyphen, and four decimal digits.|  
 |`\d`|End the match at a word boundary.|  
   
-<a name="Conditional_Expr"></a>   
+<a name="Conditional_Expr"></a>
 ## Conditional matching with an expression
 
 This language element attempts to match one of two patterns depending on whether it can match an initial pattern. Its syntax is:  

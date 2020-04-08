@@ -1,6 +1,5 @@
 ---
 title: "How to declare and use read write properties - C# Programming Guide"
-ms.custom: seodec18
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "get accessor [C#], declaring properties"
@@ -40,7 +39,7 @@ Properties provide the convenience of public data members without the risks that
  If separate `set` and `get` methods were used to model properties, the equivalent code might look like this:  
   
 ```csharp  
-person.SetAge(person.GetAge() + 1);   
+person.SetAge(person.GetAge() + 1);
 ```  
   
  The `ToString` method is overridden in this example:  

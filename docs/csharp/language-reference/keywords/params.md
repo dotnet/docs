@@ -1,6 +1,5 @@
 ---
 title: "params keyword for parameter arrays - C# reference"
-ms.custom: seodec18
 ms.date: 07/20/2015
 f1_keywords: 
   - "params_CSharpKeyword"
@@ -29,7 +28,7 @@ When you call a method with a `params` parameter, you can pass in:
 
 The following example demonstrates various ways in which arguments can be sent to a `params` parameter.
 
-[!code-csharp[csrefKeywordsMethodParams#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsMethodParams/CS/csrefKeywordsMethodParams.cs#5)] 
+[!code-csharp[csrefKeywordsMethodParams#5](~/samples/snippets/csharp/VS_Snippets_VBCSharp/csrefKeywordsMethodParams/CS/csrefKeywordsMethodParams.cs#5)]
 
 ## C# language specification
 

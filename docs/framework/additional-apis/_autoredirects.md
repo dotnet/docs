@@ -10,8 +10,6 @@ api_location:
 api_type: 
   - "Assembly"
 ms.assetid: bd58e91c-4e35-4866-9d55-75ff58c3ed73
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # HttpWebRequest.\_AutoRedirects Field
 
@@ -25,7 +23,7 @@ private int _AutoRedirects
 
 > [!WARNING]
 > The `HttpWebRequest._AutoRedirects` field is internal and is not meant to be used directly in your code.
-> 
+>
 > Microsoft does not support the use of this field in a production application under any circumstance.
 
 ## Requirements

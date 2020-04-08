@@ -17,8 +17,8 @@ Traces are the publishing of specific messages that are generated during applica
      <sources>  
           <source name="System.Transactions" switchValue="Warning">  
                <listeners>  
-                    <add name="tx"   
-                     type="System.Diagnostics.XmlWriterTraceListener"   
+                    <add name="tx"
+                     type="System.Diagnostics.XmlWriterTraceListener"
                      initializeData= "tx.log" />  
                </listeners>  
           </source>  

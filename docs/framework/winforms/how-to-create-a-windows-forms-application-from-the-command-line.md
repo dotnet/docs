@@ -1,5 +1,6 @@
 ---
-title: "How to: Create a Windows Forms application from the command line"
+title: Create a Windows Forms application from the command line
+titleSuffix: ""
 ms.date: "03/14/2018"
 dev_langs: 
   - "csharp"
@@ -98,7 +99,7 @@ The previous procedure steps demonstrated how to just create a basic Windows For
 7. Compile and run the application as described in the previous procedure.  
   
 ## Example  
- 
+
 The following code example is the complete example from the previous procedures:
   
  [!code-csharp[System.Windows.Forms.FormWithButton#1](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.FormWithButton/CS/Form1.cs#1)]

@@ -44,9 +44,9 @@ The following illustration shows an example of a public, unsecured Windows Commu
     <behaviors />  
     <services>  
       <service behaviorConfiguration="" name="ServiceModel.Calculator">  
-        <endpoint address="http://localhost/Calculator"   
+        <endpoint address="http://localhost/Calculator"
                   binding="basicHttpBinding"  
-                  bindingConfiguration="Basic_Unsecured"   
+                  bindingConfiguration="Basic_Unsecured"
                   name="BasicHttp_ICalculator"  
                   contract="ServiceModel.ICalculator" />  
       </service>  
@@ -94,9 +94,9 @@ The following illustration shows an example of a public, unsecured Windows Commu
     </bindings>  
     <client>  
       <endpoint address="http://localhost/Calculator/Unsecured"  
-          binding="basicHttpBinding"   
+          binding="basicHttpBinding"
           bindingConfiguration="BasicHttpBinding_ICalculator"  
-          contract="ICalculator"   
+          contract="ICalculator"
           name="BasicHttpBinding_ICalculator" />  
     </client>  
   </system.serviceModel>  
@@ -107,4 +107,4 @@ The following illustration shows an example of a public, unsecured Windows Commu
 
 - [Common Security Scenarios](../../../../docs/framework/wcf/feature-details/common-security-scenarios.md)
 - [Security Overview](../../../../docs/framework/wcf/feature-details/security-overview.md)
-- [Security Model for Windows Server App Fabric](https://go.microsoft.com/fwlink/?LinkID=201279&clcid=0x409)
+- [Security Model for Windows Server App Fabric](https://docs.microsoft.com/previous-versions/appfabric/ee677202(v=azure.10))

@@ -22,11 +22,11 @@ Provides methods that manage a value that is a reference to an object. (That is,
   
 |Method|Description|  
 |------------|-----------------|  
-|[Dereference Method](../../../../docs/framework/unmanaged-api/debugging/icordebugreferencevalue-dereference-method.md)|Gets the object that is referenced.|  
-|[DereferenceStrong Method](../../../../docs/framework/unmanaged-api/debugging/icordebugreferencevalue-dereferencestrong-method.md)|Not implemented. Do not call this method.|  
-|[GetValue Method](../../../../docs/framework/unmanaged-api/debugging/icordebugreferencevalue-getvalue-method.md)|Gets the current memory address of the referenced object.|  
-|[IsNull Method](../../../../docs/framework/unmanaged-api/debugging/icordebugreferencevalue-isnull-method.md)|Gets a value that indicates whether this `ICorDebugReferenceValue` is a null value, in which case the `ICorDebugReferenceValue` does not point to an object.|  
-|[SetValue Method](../../../../docs/framework/unmanaged-api/debugging/icordebugreferencevalue-setvalue-method.md)|Sets the current memory address. That is, this method sets this `ICorDebugReferenceValue` to point to an object.|  
+|[Dereference Method](icordebugreferencevalue-dereference-method.md)|Gets the object that is referenced.|  
+|[DereferenceStrong Method](icordebugreferencevalue-dereferencestrong-method.md)|Not implemented. Do not call this method.|  
+|[GetValue Method](icordebugreferencevalue-getvalue-method.md)|Gets the current memory address of the referenced object.|  
+|[IsNull Method](icordebugreferencevalue-isnull-method.md)|Gets a value that indicates whether this `ICorDebugReferenceValue` is a null value, in which case the `ICorDebugReferenceValue` does not point to an object.|  
+|[SetValue Method](icordebugreferencevalue-setvalue-method.md)|Sets the current memory address. That is, this method sets this `ICorDebugReferenceValue` to point to an object.|  
   
 ## Remarks  
  The common language runtime (CLR) may do a garbage collection on objects when the debugged process is continued. The garbage collection may move objects around in memory. An `ICorDebugReferenceValue` will either cooperate with the garbage collection so that its information is updated after the garbage collection, or it will be invalidated implicitly before the garbage collection.  
@@ -47,4 +47,4 @@ Provides methods that manage a value that is a reference to an object. (That is,
   
 ## See also
 
-- [Debugging Interfaces](../../../../docs/framework/unmanaged-api/debugging/debugging-interfaces.md)
+- [Debugging Interfaces](debugging-interfaces.md)

@@ -5,7 +5,7 @@ ms.date: 11/21/2019
 author: luisquintanilla
 ms.author: luquinta
 ms.topic: tutorial
-ms.custom: mvc
+ms.custom: mvc,mlnet-tooling
 #Customer intent: As a developer, I want to use Model Builder to apply a binary classification task so that I can understand how to use sentiment prediction to take appropriate action.
 ---
 
@@ -298,6 +298,6 @@ In this tutorial, you learned how to:
 
 To learn more about topics mentioned in this tutorial, visit the following resources:
 
-- [Model Builder Scenarios](../automate-training-with-model-builder.md#scenarios)
+- [Model Builder Scenarios](../automate-training-with-model-builder.md#scenario)
 - [Binary Classification](../resources/glossary.md#binary-classification)
-- [Binary Classification Model Metrics](../resources/metrics.md#metrics-for-binary-classification)
+- [Binary Classification Model Metrics](../resources/metrics.md#evaluation-metrics-for-binary-classification)

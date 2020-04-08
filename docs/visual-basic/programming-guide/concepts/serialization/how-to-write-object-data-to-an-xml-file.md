@@ -31,7 +31,7 @@ Public Module XMLWrite
 End Module  
 ```  
   
-## Compiling the Code  
+## Compile the code  
  The class must have a public constructor without parameters.  
   
 ## Robust Programming  

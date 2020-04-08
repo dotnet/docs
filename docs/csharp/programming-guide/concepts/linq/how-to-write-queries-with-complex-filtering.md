@@ -1,9 +1,9 @@
 ---
-title: "How to: Write Queries with Complex Filtering (C#)"
+title: "How to write queries with complex filtering (C#)"
 ms.date: 07/20/2015
 ms.assetid: 4065d901-cf89-4e47-8bf9-abb65acfb003
 ---
-# How to: Write Queries with Complex Filtering (C#)
+# How to write queries with complex filtering (C#)
 Sometimes you want to write LINQ to XML queries with complex filters. For example, you might have to find all elements that have a child element with a particular name and value. This topic gives an example of writing a query with complex filtering.  
   
 ## Example  
@@ -17,7 +17,7 @@ Sometimes you want to write LINQ to XML queries with complex filters. For exampl
 XElement root = XElement.Load("PurchaseOrders.xml");  
 IEnumerable<XElement> purchaseOrders =  
     from el in root.Elements("PurchaseOrder")  
-    where   
+    where
         (from add in el.Elements("Address")  
         where  
             (string)add.Attribute("Type") == "Shipping" &&  

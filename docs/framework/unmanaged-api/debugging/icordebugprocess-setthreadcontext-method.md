@@ -42,7 +42,7 @@ HRESULT SetThreadContext(
  The context specifies the architecture of the processor on which the thread is executing.  
   
 ## Remarks  
- The debugger should call this method rather than the Win32 `SetThreadContext` function, because the thread may actually be in a "hijacked" state, in which its context has been temporarily changed. This method should be used only when a thread is in native code. Use [ICorDebugRegisterSet](../../../../docs/framework/unmanaged-api/debugging/icordebugregisterset-interface.md) for threads in managed code. You should never need to modify the context of a thread during an out-of-band (OOB) debug event.  
+ The debugger should call this method rather than the Win32 `SetThreadContext` function, because the thread may actually be in a "hijacked" state, in which its context has been temporarily changed. This method should be used only when a thread is in native code. Use [ICorDebugRegisterSet](icordebugregisterset-interface.md) for threads in managed code. You should never need to modify the context of a thread during an out-of-band (OOB) debug event.  
   
  The data passed must be a context structure for the current platform.  
   

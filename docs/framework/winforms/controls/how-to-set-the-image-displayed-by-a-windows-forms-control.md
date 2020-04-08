@@ -1,5 +1,5 @@
 ---
-title: "How to: Set the Image Displayed by a Windows Forms Control"
+title: Set the Image Displayed by a Control
 ms.date: 08/20/2019
 dev_langs:
   - "csharp"

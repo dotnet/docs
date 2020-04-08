@@ -1,5 +1,5 @@
 ---
-title: "How to: Read a Text File One Line at a Time (Visual C#)"
+title: "How to read a text file one line at a time - C# Programming Guide"
 ms.date: 07/20/2015
 helpviewer_keywords: 
   - "ReadLine method [C#]"
@@ -7,7 +7,7 @@ helpviewer_keywords:
   - "text files [C#]"
 ms.assetid: d62e22c5-a13c-48db-af9b-f10c801b0cb1
 ---
-# How to: Read a Text File One Line at a Time (Visual C#)
+# How to read a text file one line at a time (C# Programming Guide)
 This example reads the contents of a text file, one line at a time, into a string using the `ReadLine` method of the `StreamReader` class. Each text line is stored into the string `line` and displayed on the screen.  
   
 ## Example  
@@ -17,7 +17,7 @@ int counter = 0;
 string line;  
   
 // Read the file and display it line by line.  
-System.IO.StreamReader file =   
+System.IO.StreamReader file =
     new System.IO.StreamReader(@"c:\test.txt");  
 while((line = file.ReadLine()) != null)  
 {  

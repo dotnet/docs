@@ -21,7 +21,7 @@ Provides values that indicate the type linked in native code.
 ## Syntax  
   
 ```cpp  
-typedef enum   
+typedef enum
 {  
     nltNone       = 1,  
     nltAnsi       = 2,  

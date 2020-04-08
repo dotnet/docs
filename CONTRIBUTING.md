@@ -21,6 +21,10 @@ This repository contains the conceptual documentation for .NET. The .NET documen
 - [.NET Compiler Platform SDK reference](https://github.com/dotnet/roslyn-api-docs)
     Issues and tasks for this repo are tracked in [dotnet/docs/issues](https://github.com/dotnet/docs/issues).
 
+### Contributing to International content
+
+Contributions for Machine Translated (MT) content are currently not accepted for now. In an effort to improve the quality of MT content, we've transitioned to a Neural MT engine. We accept and encourage contributions for Human Translated (HT) content, which is used to train the Neural MT engine. So over time, contributions to HT content will improve the quality of both HT and MT. MT topics will have a disclaimer stating that part of the topic may be MT, and the **Edit** button won't be displayed as its disabled.
+
 ## DOs and DON'Ts
 
 The following list shows some guiding rules that you should keep in mind when you're contributing to the .NET documentation:

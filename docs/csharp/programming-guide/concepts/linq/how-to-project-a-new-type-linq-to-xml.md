@@ -1,9 +1,9 @@
 ---
-title: "How to: Project a New Type (LINQ to XML) (C#)"
+title: "How to project a new type (LINQ to XML) (C#)"
 ms.date: 07/20/2015
 ms.assetid: 48145cf9-1e0b-4e73-bbfd-28fc04800dc4
 ---
-# How to: Project a New Type (LINQ to XML) (C#)
+# How to project a new type (LINQ to XML) (C#)
 
 Other examples in this section have shown queries that return results as <xref:System.Collections.Generic.IEnumerable%601> of <xref:System.Xml.Linq.XElement>, <xref:System.Collections.Generic.IEnumerable%601> of `string`, and <xref:System.Collections.Generic.IEnumerable%601> of `int`. These are common result types, but they are not appropriate for every scenario. In many cases you will want your queries to return an <xref:System.Collections.Generic.IEnumerable%601> of some other type.
 
@@ -14,19 +14,19 @@ This example shows how to instantiate objects in the `select` clause. The code f
 This example uses the following XML document: [Sample XML File: Typical Purchase Order (LINQ to XML)](./sample-xml-file-typical-purchase-order-linq-to-xml-1.md).
 
 ```csharp
-class NameQty 
+class NameQty
 {
     public string name;
     public int qty;
     public NameQty(string n, int q)
     {
         name = n;
-        qty = q; 
+        qty = q;
     }
 };
 
 class Program {
-    public static void Main() 
+    public static void Main()
     {
         XElement po = XElement.Load("PurchaseOrder.xml");
   
@@ -43,7 +43,7 @@ class Program {
 }
 ```
 
-This example uses the <xref:System.Xml.Linq.XContainer.Element%2A> method that was introduced in the topic [How to: Retrieve a Single Child Element (LINQ to XML) (C#)](how-to-retrieve-a-single-child-element-linq-to-xml.md). It also uses casts to retrieve the values of the elements that are returned by the <xref:System.Xml.Linq.XContainer.Element%2A> method.  
+This example uses the <xref:System.Xml.Linq.XContainer.Element%2A> method that was introduced in the topic [How to retrieve a single child element (LINQ to XML) (C#)](how-to-retrieve-a-single-child-element-linq-to-xml.md). It also uses casts to retrieve the values of the elements that are returned by the <xref:System.Xml.Linq.XContainer.Element%2A> method.  
 
 This example produces the following output:
 

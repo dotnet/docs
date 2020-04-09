@@ -60,7 +60,7 @@ Beginning with C# 7.3, you can use `System.Enum` in a base class constraint (tha
 
 ## Conversions
 
-For any enumeration type, there exist explicit conversions between the enumeration type and its underlying integral type. If you [cast](../operators/type-testing-and-cast.md#cast-operator-) an enum value to its underlying type, the result is the associated integral value of an enum member.
+For any enumeration type, there exist explicit conversions between the enumeration type and its underlying integral type. If you [cast](../operators/type-testing-and-cast.md#cast-expression) an enum value to its underlying type, the result is the associated integral value of an enum member.
 
 [!code-csharp[enum conversions](snippets/EnumType.cs#Conversions)]
 

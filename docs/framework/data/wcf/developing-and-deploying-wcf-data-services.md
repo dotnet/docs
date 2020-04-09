@@ -10,7 +10,7 @@ ms.assetid: 6557c0e3-5aea-4f6e-bc14-77ad317a168b
 ---
 # Develop and Deploy WCF Data Services
 
-This topic provides information about developing and deploying WCF Data Services. For more basic information about WCF Data Services, see [Getting Started](getting-started-with-wcf-data-services.md) and [Overview](wcf-data-services-overview.md).
+This article provides information about developing and deploying WCF Data Services. For more basic information about WCF Data Services, see [Getting Started](getting-started-with-wcf-data-services.md) and [Overview](wcf-data-services-overview.md).
 
 ## Develop WCF Data Services
 
@@ -28,7 +28,7 @@ When you use WCF Data Services to create a data service that supports the Open D
 
      By default, WCF Data Services disables access to resources that are exposed by an entity container. The <xref:System.Data.Services.DataServiceConfiguration> interface enables you to configure access to resources and service operations, specify the supported version of OData, and to define other service-wide behaviors, such as batching behaviors or the maximum number of entities that can be returned in a single response feed. For more information, see [Configuring the Data Service](configuring-the-data-service-wcf-data-services.md).
 
-This topic covers primarily the development and deployment of data services by using Visual Studio. For information about the flexibility provided by WCF Data Services for exposing your data as OData feeds, see [Defining WCF Data Services](defining-wcf-data-services.md).
+This article primarily covers the development and deployment of data services by using Visual Studio. For information about the flexibility provided by WCF Data Services for exposing your data as OData feeds, see [Defining WCF Data Services](defining-wcf-data-services.md).
 
 ### Choose a Development Web Server
 
@@ -64,7 +64,7 @@ When you develop a WCF Data Service as an ASP.NET application or ASP.NET Web sit
 
 3. **Windows Azure Development Environment**
 
-     Windows Azure Tools for Visual Studio includes an integrated set of tools for developing Windows Azure services in Visual Studio. With these tools, you can develop a data service that can be deployed to Windows Azure, and you can test the data service on the local computer before deployment. Use these tools when using Visual Studio to develop a data service that runs on the Windows Azure platform. You can download the Windows Azure Tools for Visual Studio from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkID=201848). For more information about developing a data service that runs on Windows Azure, see the post [Deploying an OData Service in Windows Azure](https://docs.microsoft.com/archive/blogs/astoriateam/deploying-an-odata-service-in-windows-azure).
+     Windows Azure Tools for Visual Studio includes an integrated set of tools for developing Windows Azure services in Visual Studio. With these tools, you can develop a data service that can be deployed to Windows Azure, and you can test the data service on the local computer before deployment. Use these tools when using Visual Studio to develop a data service that runs on the Windows Azure platform. For information about installing the tools, see [Azure tools for Visual Studio 2015](../../../azure/sdk/vs2015-install.md). For more information about developing a data service that runs on Windows Azure, see the post [Deploying an OData Service in Windows Azure](https://docs.microsoft.com/archive/blogs/astoriateam/deploying-an-odata-service-in-windows-azure).
 
 ### Development Tips
 

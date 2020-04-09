@@ -112,7 +112,7 @@ var longVariable = (long)42;
 
 ## Conversions
 
-You can convert any integral numeric type to any other integral numeric type. If the destination type can store all values of the source type, the conversion is implicit. Otherwise, you need to use the [cast operator `()`](../operators/type-testing-and-cast.md#cast-operator-) to invoke an explicit conversion. For more information, see [Built-in numeric conversions](numeric-conversions.md).
+You can convert any integral numeric type to any other integral numeric type. If the destination type can store all values of the source type, the conversion is implicit. Otherwise, you need to use a [cast expression](../operators/type-testing-and-cast.md#cast-expression) to perform an explicit conversion. For more information, see [Built-in numeric conversions](numeric-conversions.md).
 
 ## C# language specification
 

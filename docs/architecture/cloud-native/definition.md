@@ -8,7 +8,7 @@ ms.date: 08/20/2019
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-Stop what you're doing and text 10 of your colleagues. Ask them to define the term "Cloud Native". Good chance you'll get eight different answers. Interestingly, six months from now, as cloud-native technologies and practices evolve, so will their definition.
+Stop what you're doing and text ten of your colleagues. Ask them to define the term "Cloud Native". Good chance you'll get eight different answers.
 
 Cloud native is all about changing the way we think about constructing critical business systems.
 

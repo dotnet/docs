@@ -172,7 +172,7 @@ public class GracePeriodManagerService : BackgroundService
                                      IEventBus eventBus,
                                      ILogger<GracePeriodManagerService> logger)
     {
-        //Constructor's parameters validations...
+        // Constructor's parameters validations...
     }
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -243,6 +243,6 @@ The `IHostedService` interface provides a convenient way to start background tas
 - **GenericHost Sample using ASP.NET Core 2.1** \
   <https://github.com/aspnet/Hosting/tree/release/2.1/samples/GenericHostSample>
 
->[!div class="step-by-step"]
->[Previous](test-aspnet-core-services-web-apps.md)
->[Next](implement-api-gateways-with-ocelot.md)
+> [!div class="step-by-step"]
+> [Previous](test-aspnet-core-services-web-apps.md)
+> [Next](implement-api-gateways-with-ocelot.md)

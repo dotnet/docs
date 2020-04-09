@@ -26,16 +26,16 @@ foreach (XElement el in tests)
     Console.WriteLine((string)el.Attribute("TestId"));
 ```
 
-```vb  
-Dim root As XElement = XElement.Load("TestConfig.xml")  
-Dim tests As IEnumerable(Of XElement) = _  
-    From el In root.<Test> _  
-    Where el.<CommandLine>.Value = "Examp2.EXE" _  
-    Select el  
-For Each el as XElement In tests  
-    Console.WriteLine(el.@TestId)  
-Next  
-```  
+```vb
+Dim root As XElement = XElement.Load("TestConfig.xml")
+Dim tests As IEnumerable(Of XElement) = _
+    From el In root.<Test> _
+    Where el.<CommandLine>.Value = "Examp2.EXE" _
+    Select el
+For Each el as XElement In tests
+    Console.WriteLine(el.@TestId)
+Next
+```
 
 The example produces this output:
 
@@ -44,11 +44,11 @@ The example produces this output:
 0006
 ```
 
-Note that the Visual Basic version of the code uses the [XML Child axis property](../../visual-basic/language-reference/xml-axis/xml-child-axis-property.md), the [XML Attribute axis property](../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md), and the [XML Value property](../../visual-basic/language-reference/xml-axis/xml-value-property.md).  
+Note that the Visual Basic version of the code uses the [XML Child axis property](../../visual-basic/language-reference/xml-axis/xml-child-axis-property.md), the [XML Attribute axis property](../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md), and the [XML Value property](../../visual-basic/language-reference/xml-axis/xml-value-property.md).
 
 ## Example: Find when the XML is in a namespace
 
-The following example does the same as the previous one, but for XML that is in a namespace. The example uses XML document [Sample XML file: Test configuration in a namespace](sample-xml-file-test-configuration-namespace.md).
+The following example does the same as the previous one, but for XML that's  in a namespace. The example uses XML document [Sample XML file: Test configuration in a namespace](sample-xml-file-test-configuration-namespace.md).
 
 For more information, see [Namespaces overview](namespaces-overview.md).
 
@@ -62,23 +62,23 @@ IEnumerable<XElement> tests =
 foreach (XElement el in tests)
     Console.WriteLine((string)el.Attribute("TestId"));
 ```
-  
-```vb  
-Imports <xmlns='http://www.adatum.com'>  
-  
-Module Module1  
-    Sub Main()  
-        Dim root As XElement = XElement.Load("TestConfigInNamespace.xml")  
-        Dim tests As IEnumerable(Of XElement) = _  
-            From el In root.<Test> _  
-            Where el.<CommandLine>.Value = "Examp2.EXE" _  
-            Select el  
-        For Each el As XElement In tests  
-            Console.WriteLine(el.@TestId)  
-        Next  
-    End Sub  
-End Module  
-```  
+
+```vb
+Imports <xmlns='http://www.adatum.com'>
+
+Module Module1
+    Sub Main()
+        Dim root As XElement = XElement.Load("TestConfigInNamespace.xml")
+        Dim tests As IEnumerable(Of XElement) = _
+            From el In root.<Test> _
+            Where el.<CommandLine>.Value = "Examp2.EXE" _
+            Select el
+        For Each el As XElement In tests
+            Console.WriteLine(el.@TestId)
+        Next
+    End Sub
+End Module
+```
 
 The example produces this output:
 

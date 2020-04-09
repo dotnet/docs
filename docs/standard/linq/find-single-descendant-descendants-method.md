@@ -67,7 +67,7 @@ GC3 Value
 
 ## Example: Find when the XML is in a namespace
 
-The following example does the same as the previous one, but for XML that is in a namespace. For more information, see [Namespaces overview](namespaces-overview.md).
+The following example does the same as the previous one, but for XML that's  in a namespace. For more information, see [Namespaces overview](namespaces-overview.md).
 
 ```csharp
 XElement root = XElement.Parse(@"<aw:Root xmlns:aw='http://www.adventure-works.com'>

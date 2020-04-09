@@ -21,7 +21,7 @@ XElement root = XElement.Parse(@"<root>
     </r>
     <n>
       <r>
-        <t>that is broken up into </t>
+        <t>that's  broken up into </t>
       </r>
     </n>
     <n>
@@ -43,47 +43,47 @@ string str = textSegs.Aggregate(new StringBuilder(),
 Console.WriteLine(str);
 ```
 
-```vb  
-Dim root As XElement = _  
-    <root>  
-        <para>  
-            <r>  
-                <t>Some text </t>  
-            </r>  
-            <n>  
-                <r>  
-                    <t>that is broken up into </t>  
-                </r>  
-            </n>  
-            <n>  
-                <r>  
-                    <t>multiple segments.</t>  
-                </r>  
-            </n>  
-        </para>  
-    </root>  
-  
-Dim textSegs As IEnumerable(Of String) = _  
-    From seg In root...<t> _  
-    Select seg.Value  
-  
-Dim str As String = textSegs.Aggregate( _  
-    New StringBuilder, _  
-    Function(sb, i) sb.Append(i), _  
-    Function(sb) sb.ToString)  
-  
-Console.WriteLine(str)  
-```  
+```vb
+Dim root As XElement = _
+    <root>
+        <para>
+            <r>
+                <t>Some text </t>
+            </r>
+            <n>
+                <r>
+                    <t>that's  broken up into </t>
+                </r>
+            </n>
+            <n>
+                <r>
+                    <t>multiple segments.</t>
+                </r>
+            </n>
+        </para>
+    </root>
+
+Dim textSegs As IEnumerable(Of String) = _
+    From seg In root...<t> _
+    Select seg.Value
+
+Dim str As String = textSegs.Aggregate( _
+    New StringBuilder, _
+    Function(sb, i) sb.Append(i), _
+    Function(sb) sb.ToString)
+
+Console.WriteLine(str)
+```
 
 The example produces this output:
 
 ```output
-Some text that is broken up into multiple segments.
+Some text that's  broken up into multiple segments.
 ```
 
 ## Example: Find when the XML is in a namespace
 
-The following example shows the same query for XML that is in a namespace. For more information, see [Namespaces overview](namespaces-overview.md).
+The following example shows the same query for XML that's  in a namespace. For more information, see [Namespaces overview](namespaces-overview.md).
 
 ```csharp
 XElement root = XElement.Parse(@"<root xmlns='http://www.adatum.com'>
@@ -93,7 +93,7 @@ XElement root = XElement.Parse(@"<root xmlns='http://www.adatum.com'>
     </r>
     <n>
       <r>
-        <t>that is broken up into </t>
+        <t>that's  broken up into </t>
       </r>
     </n>
     <n>
@@ -116,48 +116,48 @@ string str = textSegs.Aggregate(new StringBuilder(),
 Console.WriteLine(str);
 ```
 
-```vb  
-Imports <xmlns='http://www.adatum.com'>  
-  
-Module Module1  
-    Sub Main()  
-        Dim root As XElement = _  
-            <root>  
-                <para>  
-                    <r>  
-                        <t>Some text </t>  
-                    </r>  
-                    <n>  
-                        <r>  
-                            <t>that is broken up into </t>  
-                        </r>  
-                    </n>  
-                    <n>  
-                        <r>  
-                            <t>multiple segments.</t>  
-                        </r>  
-                    </n>  
-                </para>  
-            </root>  
-  
-        Dim textSegs As IEnumerable(Of String) = _  
-            From seg In root...<t> _  
-            Select seg.Value  
-  
-        Dim str As String = textSegs.Aggregate( _  
-            New StringBuilder, _  
-            Function(sb, i) sb.Append(i), _  
-            Function(sb) sb.ToString)  
-  
-        Console.WriteLine(str)  
-    End Sub  
-End Module  
-```  
-  
+```vb
+Imports <xmlns='http://www.adatum.com'>
+
+Module Module1
+    Sub Main()
+        Dim root As XElement = _
+            <root>
+                <para>
+                    <r>
+                        <t>Some text </t>
+                    </r>
+                    <n>
+                        <r>
+                            <t>that's  broken up into </t>
+                        </r>
+                    </n>
+                    <n>
+                        <r>
+                            <t>multiple segments.</t>
+                        </r>
+                    </n>
+                </para>
+            </root>
+
+        Dim textSegs As IEnumerable(Of String) = _
+            From seg In root...<t> _
+            Select seg.Value
+
+        Dim str As String = textSegs.Aggregate( _
+            New StringBuilder, _
+            Function(sb, i) sb.Append(i), _
+            Function(sb) sb.ToString)
+
+        Console.WriteLine(str)
+    End Sub
+End Module
+```
+
 The example produces this output:
 
 ```output
-Some text that is broken up into multiple segments.
+Some text that's  broken up into multiple segments.
 ```
 
 ## See also

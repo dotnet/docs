@@ -629,7 +629,7 @@ namespace LINQGettingStarted_1
               IEnumerable<Customer> queryLondonCustomers2 = 
                                         from cust in customers
               //<snippet25>
-                  where cust.City=="London" && cust.Name == "Devon"
+                  where cust.City == "London" && cust.Name == "Devon"
               //</snippet25>
               //<snippet26>
                   where cust.City == "London" || cust.City == "Paris"

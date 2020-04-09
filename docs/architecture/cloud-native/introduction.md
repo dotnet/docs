@@ -62,13 +62,13 @@ Note how the application is decomposed across a set of small isolated microservi
 
 ### Cloud-native computing
 
-Hmm... We just used the term, "*Cloud Native*." You first thought might be, “What exactly does that mean?” Another industry buzzword concocted by software vendors to market more stuff?”
+Hmm... We just used the term, "*Cloud Native*." You first thought might be, "What exactly does that mean?" Another industry buzzword concocted by software vendors to market more stuff?"
 
-Fortunately it’s far different and hopefully this book will help convince you.
+Fortunately it's far different and hopefully this book will help convince you.
 
-Within a short time, cloud native has become a driving trend in the software industry. It’s a new way to think about building large, complex systems, an approach that takes full advantage of modern software development practices, technologies, and cloud infrastructure. The approach changes the way you design, implement, deploy, and operationalize systems.
+Within a short time, cloud native has become a driving trend in the software industry. It's a new way to think about building large, complex systems, an approach that takes full advantage of modern software development practices, technologies, and cloud infrastructure. The approach changes the way you design, implement, deploy, and operationalize systems.
 
-Unlike the continuous hype that drives our industry, cloud native is “*for-real*.” Consider the [Cloud Native Computing Foundation](https://www.cncf.io/) (CNCF), a consortium of over 300 major corporations with a charter to make cloud-native computing ubiquitous across technology and cloud stacks. As one of the most influential open-source groups, it hosts many of the fastest-growing open source-projects in GitHub. They include projects such as [Kubernetes](https://kubernetes.io/), [Prometheus](https://prometheus.io/), [Helm](https://helm.sh/), [Envoy](https://www.envoyproxy.io/), and [gRPC](https://grpc.io/).
+Unlike the continuous hype that drives our industry, cloud native is "*for-real*". Consider the [Cloud Native Computing Foundation](https://www.cncf.io/) (CNCF), a consortium of over 300 major corporations with a charter to make cloud-native computing ubiquitous across technology and cloud stacks. As one of the most influential open-source groups, it hosts many of the fastest-growing open source-projects in GitHub. They include projects such as [Kubernetes](https://kubernetes.io/), [Prometheus](https://prometheus.io/), [Helm](https://helm.sh/), [Envoy](https://www.envoyproxy.io/), and [gRPC](https://grpc.io/).
 
 The CNCF fosters an ecosystem of open-source and vendor-neutrality. Following that lead, we present cloud-native principles, patterns, and best practices that are technology agnostic. At the same time, we discuss the services and infrastructure available in the Microsoft Azure cloud for constructing cloud-native systems.
 

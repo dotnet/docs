@@ -1,7 +1,7 @@
 ---
 title: What's new in C# 8.0 - C# Guide
 description: Get an overview of the new features available in C# 8.0.
-ms.date: 09/20/2019
+ms.date: 04/07/2020
 ---
 # What's new in C# 8.0
 
@@ -19,6 +19,7 @@ C# 8.0 adds the following features and enhancements to the C# language:
 - [Disposable ref structs](#disposable-ref-structs)
 - [Nullable reference types](#nullable-reference-types)
 - [Asynchronous streams](#asynchronous-streams)
+- [Asynchronous disposable](#asynchronous-disposable)
 - [Indices and ranges](#indices-and-ranges)
 - [Null-coalescing assignment](#null-coalescing-assignment)
 - [Unmanaged constructed types](#unmanaged-constructed-types)
@@ -386,6 +387,10 @@ await foreach (var number in GenerateSequence())
 ```
 
 You can try asynchronous streams yourself in our tutorial on [creating and consuming async streams](../tutorials/generate-consume-asynchronous-stream.md). By default, stream elements are processed in the captured context. If you want to disable capturing of the context, use the <xref:System.Threading.Tasks.TaskAsyncEnumerableExtensions.ConfigureAwait%2A?displayProperty=nameWithType> extension method. For more information about synchronization contexts and capturing the current context, see the article on [consuming the Task-based asynchronous pattern](../../standard/asynchronous-programming-patterns/consuming-the-task-based-asynchronous-pattern.md).
+
+## Asynchronous disposable
+
+Starting with C# 8.0, the language supports asynchronous disposable types that implement the <xref:System.IAsyncDisposable?displayProperty=nameWithType> interface. The operand of a `using` expression can implement either <xref:System.IDisposable> or <xref:System.IAsyncDisposable>. In the case of `IAsyncDisposable`, the compiler generates code to `await` the <xref:System.Threading.Tasks.Task> returned from <xref:System.IAsyncDisposable.DisposeAsync%2A?displayProperty=nameWithType>. For more information, see the [`using` statement](../language-reference/keywords/using-statement.md).
 
 ## Indices and ranges
 

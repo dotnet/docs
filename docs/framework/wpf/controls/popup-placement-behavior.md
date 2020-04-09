@@ -36,7 +36,7 @@ A <xref:System.Windows.Controls.Primitives.Popup> control displays content in a 
   
 - Target origin  
   
-- Popup alignment point  
+- Popup alignment point  ''
   
  These terms provide a convenient way to refer to various aspects of the <xref:System.Windows.Controls.Primitives.Popup> and the control that it is associated with.  
   
@@ -199,4 +199,4 @@ A <xref:System.Windows.Controls.Primitives.Popup> control displays content in a 
   
 ## See also
 
-- [Popup Placement Sample](https://github.com/dotnet/samples/tree/master/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS)
+- [Popup Placement Sample](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/VS_Snippets_Wpf/PopupPositionSnippet/CS)

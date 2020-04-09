@@ -20,7 +20,7 @@ During the 1990s, the emphasis was mainly on improving internal networks that us
 
 The focus soon shifted to how best to optimize communication across multiple platforms by promoting a language-agnostic approach. Service-oriented architecture (SOA) provided a structure for loosely coupling a broad collection of services that could be provided to an application.
 
-The development of *web services* occurred when all major platforms could access the internet, but they still couldn’t interact with each other. Web services have open standards and protocols, including:
+The development of *web services* occurred when all major platforms could access the internet, but they still couldn't interact with each other. Web services have open standards and protocols, including:
 
 - XML to tag and code data.
 - Simple Object Access Protocol (SOAP) to transfer data.
@@ -44,7 +44,7 @@ Advantages to microservices include:
 
 The move towards increasing virtualization, cloud computing, containers, and the Internet of Things has contributed to the ongoing rise of microservices. But microservices aren't without their challenges. The fragmented/decentralized infrastructure put more emphasis on the need for simplicity and speed when communicating between services. This in turn drew attention to the sometimes laborious and contorted nature of SOAP.
 
-It was into this environment that gRPC was launched, 10 years after Microsoft first released WCF. Evolved directly from Google’s internal infrastructure RPC (Stubby), gRPC was never based on the same standards and protocols that had informed the parameters of many earlier RPCs. And gRPC was only ever based on HTTP/2. That's why it could draw on the new capabilities that advanced transport protocol provided. In particular, bidirectional streaming, binary messaging, and multiplexing.
+It was into this environment that gRPC was launched, 10 years after Microsoft first released WCF. Evolved directly from Google's internal infrastructure RPC (Stubby), gRPC was never based on the same standards and protocols that had informed the parameters of many earlier RPCs. And gRPC was only ever based on HTTP/2. That's why it could draw on the new capabilities that advanced transport protocol provided. In particular, bidirectional streaming, binary messaging, and multiplexing.
 
 ## About this guide
 

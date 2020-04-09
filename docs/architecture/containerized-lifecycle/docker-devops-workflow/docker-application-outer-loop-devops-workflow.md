@@ -180,7 +180,7 @@ From a CD point of view, and Azure DevOps Services specifically, you can run spe
 
 **Figure 5-9**. Deploying distributed applications to Container Service
 
-Initially, when deploying to certain clusters or orchestrators, you would traditionally use specific deployment scripts and mechanisms per each orchestrator (that is, Kubernetes and Service Fabric have different deployment mechanisms) instead of the simpler and easy-to-use `docker-compose` tool based on the `docker-compose.yml` definition file. However, thanks to the Azure DevOps Services Docker Deploy task, shown in Figure 5-10, you now also can deploy to the supported orchestrators by just using your familiar `docker-compose.yml` file because the tool performs that “translation” for you (from your `docker-compose.yml` file to the format needed by the orchestrator).
+Initially, when deploying to certain clusters or orchestrators, you would traditionally use specific deployment scripts and mechanisms per each orchestrator (that is, Kubernetes and Service Fabric have different deployment mechanisms) instead of the simpler and easy-to-use `docker-compose` tool based on the `docker-compose.yml` definition file. However, thanks to the Azure DevOps Services Docker Deploy task, shown in Figure 5-10, you now also can deploy to the supported orchestrators by just using your familiar `docker-compose.yml` file because the tool performs that "translation" for you (from your `docker-compose.yml` file to the format needed by the orchestrator).
 
 ![Screenshot showing the Deploy to Kubernetes task.](./media/docker-application-outer-loop-devops-workflow/add-deploy-to-kubernetes-task.png)
 

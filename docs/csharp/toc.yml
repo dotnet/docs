@@ -1683,6 +1683,17 @@
       href: language-reference/tokens/interpolated.md
     - name: "@ -- verbatim identifier"
       href: language-reference/tokens/verbatim.md
+  - name: Attributes read by the compiler
+    items:
+    - name: General
+      displayName: Conditional, Obsolete, AttributeUsage
+      href: language-reference/attributes/general.md
+    - name: Caller information
+      displayName: CallerFilePath, CallerLineNumber, CallerMemberName
+      href: language-reference/attributes/caller-information.md
+    - name: Nullable static analysis
+      displayName: AllowNull, DisallowNull, MaybeNull, NotNull, MaybeNullWhen, NotNullWhen, NotNullIfNotNull, DoesNotReturn, DoesNotReturnIf
+      href: language-reference/attributes/nullable-analysis.md
   - name: C# preprocessor directives
     items:
     - name: Overview

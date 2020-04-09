@@ -2,8 +2,7 @@
 title: About authorization in .NET microservices and web applications
 description: Security in .NET Microservices and Web Applications - Get an overview of the main authorization options in ASP.NET Core applications - role-based and policy-based.
 author: mjrousos
-ms.author: wiwagn
-ms.date: 10/19/2018
+ms.date: 01/30/2020
 ---
 # About authorization in .NET microservices and web applications
 
@@ -80,8 +79,10 @@ services.AddAuthorization(options =>
 {
     options.AddPolicy("AdministratorsOnly", policy =>
         policy.RequireRole("Administrator"));
+
     options.AddPolicy("EmployeesOnly", policy =>
         policy.RequireClaim("EmployeeNumber"));
+
     options.AddPolicy("Over21", policy =>
         policy.Requirements.Add(new MinimumAgeRequirement(21)));
 });

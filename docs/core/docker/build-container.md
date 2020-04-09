@@ -22,8 +22,8 @@ You'll learn to:
 
 You'll understand the Docker container build and deploy tasks for a .NET Core application. The *Docker platform* uses the *Docker engine* to quickly build and package apps as *Docker images*. These images are written in the *Dockerfile* format to be deployed and run in a layered container.
 
-> [!TIP]
-> If you're working with an existing ASP.NET Core application, see the [Learn how to containerize an ASP.NET Core application](/aspnet/core/host-and-deploy/docker/building-net-docker-images) tutorial.
+> [!WARNING]
+> **This tutorial isn't for ASP.NET Core apps.** If you're using ASP.NET Core, read the [Learn how to containerize an ASP.NET Core application](/aspnet/core/host-and-deploy/docker/building-net-docker-images) tutorial.
 
 ## Prerequisites
 
@@ -137,7 +137,7 @@ dotnet publish -c Release
 
 This command compiles your app to the *publish* folder. The path to the *publish* folder from the working folder should be `.\app\bin\Release\netcoreapp3.1\publish\`
 
-From the *app* folder, get a directory listing of the publish folder to verify that the *myapp.dll* file was created. 
+From the *app* folder, get a directory listing of the publish folder to verify that the *myapp.dll* file was created.
 
 ```console
 > dir bin\Release\netcoreapp3.1\publish

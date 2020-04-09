@@ -9,18 +9,16 @@ helpviewer_keywords:
   - "configuration schema [.NET Framework], custom settings in configuration files"
   - "elements [.NET Framework], custom settings in configuration files"
 ms.assetid: 6e4cc793-c526-4007-b4e9-37d56295f2cb
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Configuration sections schema
 
 The configuration sections schema contains elements that define custom settings in configuration files. For general information on configuration files and schemas, see [Configuration file schema for the .NET Framework](index.md).
 
-[**\<configuration>**](configuration-element.md)   
-[**\<configSections>**](configsections-element-for-configuration.md)   
-[**\<clear>**](clear-element-for-configsections.md)   
-[**\<remove>**](remove-element-for-configsections.md)   
-[**\<section>**](section-element.md)   
+[**\<configuration>**](configuration-element.md)
+[**\<configSections>**](configsections-element-for-configuration.md)
+[**\<clear>**](clear-element-for-configsections.md)
+[**\<remove>**](remove-element-for-configsections.md)
+[**\<section>**](section-element.md)
 [**\<sectionGroup>**](sectiongroup-element-for-configsections.md)
 
 |     | Description |

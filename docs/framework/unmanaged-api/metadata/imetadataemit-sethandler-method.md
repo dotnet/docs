@@ -22,7 +22,7 @@ Sets the method referenced by the specified `IUnknown` pointer as a notification
 ## Syntax  
   
 ```cpp  
-HRESULT SetHandler (   
+HRESULT SetHandler (
     [in]  IUnknown    *pUnk  
 );  
 ```  

@@ -121,8 +121,8 @@ This command dumps all objects with a type name containing `LoaderAllocator` tha
 
 ```console
          Address               MT     Size
-000002b78000ce40 00007ffadc93a288       48     
-000002b78000ceb0 00007ffadc93a218       24     
+000002b78000ce40 00007ffadc93a288       48
+000002b78000ceb0 00007ffadc93a218       24
 
 Statistics:
               MT    Count    TotalSize Class Name
@@ -190,35 +190,35 @@ OS Thread Id: 0x6ba8 (0)
 0000001fc697d5c8 00007ffb50d9de12 [HelperMethodFrame: 0000001fc697d5c8] System.Diagnostics.Debugger.BreakInternal()
 0000001fc697d6d0 00007ffa864765fa System.Diagnostics.Debugger.Break()
 0000001fc697d700 00007ffa864736bc example.Program.Main(System.String[]) [E:\unloadability\example\Program.cs @ 70]
-0000001fc697d998 00007ffae5fdc1e3 [GCFrame: 0000001fc697d998] 
-0000001fc697df28 00007ffae5fdc1e3 [GCFrame: 0000001fc697df28] 
+0000001fc697d998 00007ffae5fdc1e3 [GCFrame: 0000001fc697d998]
+0000001fc697df28 00007ffae5fdc1e3 [GCFrame: 0000001fc697df28]
 OS Thread Id: 0x2ae4 (1)
-Unable to walk the managed stack. The current thread is likely not a 
+Unable to walk the managed stack. The current thread is likely not a
 managed thread. You can run !threads to get a list of managed threads in
 the process
 Failed to start stack walk: 80070057
 OS Thread Id: 0x61a4 (2)
-Unable to walk the managed stack. The current thread is likely not a 
+Unable to walk the managed stack. The current thread is likely not a
 managed thread. You can run !threads to get a list of managed threads in
 the process
 Failed to start stack walk: 80070057
 OS Thread Id: 0x7fdc (3)
-Unable to walk the managed stack. The current thread is likely not a 
+Unable to walk the managed stack. The current thread is likely not a
 managed thread. You can run !threads to get a list of managed threads in
 the process
 Failed to start stack walk: 80070057
 OS Thread Id: 0x5390 (4)
-Unable to walk the managed stack. The current thread is likely not a 
+Unable to walk the managed stack. The current thread is likely not a
 managed thread. You can run !threads to get a list of managed threads in
 the process
 Failed to start stack walk: 80070057
 OS Thread Id: 0x5ec8 (5)
         Child SP               IP Call Site
-0000001fc70ff6e0 00007ffb5437f6e4 [DebuggerU2MCatchHandlerFrame: 0000001fc70ff6e0] 
+0000001fc70ff6e0 00007ffb5437f6e4 [DebuggerU2MCatchHandlerFrame: 0000001fc70ff6e0]
 OS Thread Id: 0x4624 (6)
         Child SP               IP Call Site
 GetFrameContext failed: 1
-0000000000000000 0000000000000000 
+0000000000000000 0000000000000000
 OS Thread Id: 0x60bc (7)
         Child SP               IP Call Site
 0000001fc727f158 00007ffb5437fce4 [HelperMethodFrame: 0000001fc727f158] System.Threading.Thread.SleepInternal(Int32)
@@ -226,8 +226,8 @@ OS Thread Id: 0x60bc (7)
 0000001fc727f290 00007ffa865005b3 test.Program.ThreadProc() [E:\unloadability\test\Program.cs @ 17]
 0000001fc727f2c0 00007ffb37ea6a5b System.Threading.Thread.ThreadMain_ThreadStart()
 0000001fc727f2f0 00007ffadbc4cbe3 System.Threading.ExecutionContext.RunInternal(System.Threading.ExecutionContext, System.Threading.ContextCallback, System.Object)
-0000001fc727f568 00007ffae5fdc1e3 [GCFrame: 0000001fc727f568] 
-0000001fc727f7f0 00007ffae5fdc1e3 [DebuggerU2MCatchHandlerFrame: 0000001fc727f7f0] 
+0000001fc727f568 00007ffae5fdc1e3 [GCFrame: 0000001fc727f568]
+0000001fc727f7f0 00007ffae5fdc1e3 [DebuggerU2MCatchHandlerFrame: 0000001fc727f7f0]
 
 ```
 

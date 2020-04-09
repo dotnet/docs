@@ -12,11 +12,11 @@ ms.assetid: 0b4e711d-e640-40cb-81c3-8f5c59909b7d
 # Using DrawingVisual Objects
 This topic provides an overview of how to use <xref:System.Windows.Media.DrawingVisual> objects in the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] visual layer.  
   
-<a name="drawingvisual_object"></a>   
+<a name="drawingvisual_object"></a>
 ## DrawingVisual Object  
  The <xref:System.Windows.Media.DrawingVisual> is a lightweight drawing class that is used to render shapes, images, or text. This class is considered lightweight because it does not provide layout or event handling, which improves its performance. For this reason, drawings are ideal for backgrounds and clip art.  
   
-<a name="drawingvisual_host_container"></a>   
+<a name="drawingvisual_host_container"></a>
 ## DrawingVisual Host Container  
  In order to use <xref:System.Windows.Media.DrawingVisual> objects, you need to create a host container for the objects. The host container object must derive from the <xref:System.Windows.FrameworkElement> class, which provides the layout and event handling support that the <xref:System.Windows.Media.DrawingVisual> class lacks. The host container object does not display any visible properties, since its main purpose is to contain child objects. However, the <xref:System.Windows.UIElement.Visibility%2A> property of the host container must be set to <xref:System.Windows.Visibility.Visible>; otherwise, none of its child elements will be visible.  
   
@@ -26,9 +26,9 @@ This topic provides an overview of how to use <xref:System.Windows.Media.Drawing
  [!code-vb[DrawingVisualSample#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingVisualSample/visualbasic/window1.xaml.vb#100)]  
   
 > [!NOTE]
-> For the complete code sample from which the preceding code example was extracted, see [Hit Test Using DrawingVisuals Sample](https://go.microsoft.com/fwlink/?LinkID=159994).  
+> For the complete code sample from which the preceding code example was extracted, see [Hit Test Using DrawingVisuals Sample](https://github.com/Microsoft/WPF-Samples/tree/master/Visual%20Layer/DrawingVisual).  
   
-<a name="creating_drawingvisual_objects"></a>   
+<a name="creating_drawingvisual_objects"></a>
 ## Creating DrawingVisual Objects  
  When you create a <xref:System.Windows.Media.DrawingVisual> object, it has no drawing content. You can add text, graphics, or image content by retrieving the object's <xref:System.Windows.Media.DrawingContext> and drawing into it. A <xref:System.Windows.Media.DrawingContext> is returned by calling the <xref:System.Windows.Media.DrawingVisual.RenderOpen%2A> method of a <xref:System.Windows.Media.DrawingVisual> object.  
   
@@ -39,7 +39,7 @@ This topic provides an overview of how to use <xref:System.Windows.Media.Drawing
  [!code-csharp[DrawingVisualSample#101](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingVisualSample/CSharp/Window1.xaml.cs#101)]
  [!code-vb[DrawingVisualSample#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingVisualSample/visualbasic/window1.xaml.vb#101)]  
   
-<a name="creating_overrides"></a>   
+<a name="creating_overrides"></a>
 ## Creating Overrides for FrameworkElement Members  
  The host container object is responsible for managing its collection of visual objects. This requires that the host container implement member overrides for the derived <xref:System.Windows.FrameworkElement> class.  
   
@@ -54,7 +54,7 @@ This topic provides an overview of how to use <xref:System.Windows.Media.Drawing
  [!code-csharp[DrawingVisualSample#102](~/samples/snippets/csharp/VS_Snippets_Wpf/DrawingVisualSample/CSharp/Window1.xaml.cs#102)]
  [!code-vb[DrawingVisualSample#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DrawingVisualSample/visualbasic/window1.xaml.vb#102)]  
   
-<a name="providing_hit_testing_support"></a>   
+<a name="providing_hit_testing_support"></a>
 ## Providing Hit Testing Support  
  The host container object can provide event handling even if it does not display any visible properties—however, its <xref:System.Windows.UIElement.Visibility%2A> property must be set to <xref:System.Windows.Visibility.Visible>. This allows you to create an event handling routine for the host container that can trap mouse events, such as the release of the left mouse button. The event handling routine can then implement hit testing by invoking the <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A> method. The method's <xref:System.Windows.Media.HitTestResultCallback> parameter refers to a user-defined procedure that you can use to determine the resulting action of a hit test.  
   

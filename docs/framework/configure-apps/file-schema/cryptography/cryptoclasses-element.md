@@ -21,7 +21,7 @@ Contains a list of cryptography classes that have a mapping to a friendly name i
 ## Syntax  
   
 ```xml  
-<cryptoClasses>   
+<cryptoClasses>
 </cryptoClasses>  
 ```  
   

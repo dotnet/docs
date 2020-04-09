@@ -25,8 +25,15 @@ Starting with .NET Core 2.1, the .NET CLI has options you can use to list the ve
 
 # [Windows](#tab/windows)
 
+By running the following command:
+
+```dotnetcli
+dotnet --list-sdks
+```
+
+You get output similar to the following:
+
 ```console
-C:\> dotnet --list-sdks
 2.1.200-preview-007474 [C:\Program Files\dotnet\sdk]
 2.1.200-preview-007480 [C:\Program Files\dotnet\sdk]
 2.1.200-preview-007509 [C:\Program Files\dotnet\sdk]
@@ -42,8 +49,17 @@ C:\> dotnet --list-sdks
 2.1.400-preview-009063 [C:\Program Files\dotnet\sdk]
 2.1.400-preview-009088 [C:\Program Files\dotnet\sdk]
 2.1.400-preview-009171 [C:\Program Files\dotnet\sdk]
+```
 
-C:\> dotnet --list-runtimes
+And by running the following command:
+
+```dotnetcli
+dotnet --list-runtimes
+```
+
+You get output similar to the following:
+
+```console
 Microsoft.AspNetCore.All 2.1.0-preview2-final [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.All]
 Microsoft.AspNetCore.All 2.1.0 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.All]
 Microsoft.AspNetCore.All 2.1.1 [C:\Program Files\dotnet\shared\Microsoft.AspNetCore.All]
@@ -63,8 +79,15 @@ Microsoft.NETCore.App 2.1.2 [C:\Program Files\dotnet\shared\Microsoft.NETCore.Ap
 
 # [Linux](#tab/linux)
 
+By running the following command:
+
+```dotnetcli
+dotnet --list-sdks
+```
+
+You get output similar to the following:
+
 ```console
-$ dotnet --list-sdks
 1.0.1 [/usr/share/dotnet/sdk]
 1.0.4 [/usr/share/dotnet/sdk]
 2.0.0-preview1-005977 [/usr/share/dotnet/sdk]
@@ -74,8 +97,17 @@ $ dotnet --list-sdks
 2.1.300-preview2-008530 [/usr/share/dotnet/sdk]
 2.1.300 [/usr/share/dotnet/sdk]
 2.1.301 [/usr/share/dotnet/sdk]
+```
 
-$ dotnet --list-runtimes
+And by running the following command:
+
+```dotnetcli
+dotnet --list-runtimes
+```
+
+You get output similar to the following:
+
+```console
 Microsoft.AspNetCore.All 2.1.0-preview2-final [/usr/share/dotnet/shared/Microsoft.AspNetCore.All]
 Microsoft.AspNetCore.All 2.1.0 [/usr/share/dotnet/shared/Microsoft.AspNetCore.All]
 Microsoft.AspNetCore.All 2.1.1 [/usr/share/dotnet/shared/Microsoft.AspNetCore.All]
@@ -97,8 +129,15 @@ Microsoft.NETCore.App 2.1.1 [/usr/share/dotnet/shared/Microsoft.NETCore.App]
 
 # [macOS](#tab/macos)
 
+By running the following command:
+
+```dotnetcli
+dotnet --list-sdks
+```
+
+You get output similar to the following:
+
 ```console
-$ dotnet --list-sdks
 1.0.1 [/usr/local/share/dotnet/sdk]
 1.0.4 [/usr/local/share/dotnet/sdk]
 2.0.0-preview1-005977 [/usr/local/share/dotnet/sdk]
@@ -108,8 +147,17 @@ $ dotnet --list-sdks
 2.1.300-preview2-008530 [/usr/local/share/dotnet/sdk]
 2.1.300 [/usr/local/share/dotnet/sdk]
 2.1.301 [/usr/local/share/dotnet/sdk]
+```
 
-$ dotnet --list-runtimes
+And by running the following command:
+
+```dotnetcli
+dotnet --list-runtimes
+```
+
+You get output similar to the following:
+
+```console
 Microsoft.AspNetCore.All 2.1.0-preview2-final [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.All]
 Microsoft.AspNetCore.All 2.1.0 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.All]
 Microsoft.AspNetCore.All 2.1.1 [/usr/local/share/dotnet/shared/Microsoft.AspNetCore.All]
@@ -131,7 +179,7 @@ Microsoft.NETCore.App 2.1.1 [/usr/local/share/dotnet/shared/Microsoft.NETCore.Ap
 
 ---
 
-## Uninstalling .NET Core
+## Uninstall .NET Core
 
 # [Windows](#tab/windows)
 
@@ -201,7 +249,7 @@ The parent directories for the SDK and runtime are listed in the output from the
 
 ## .NET Core Uninstall Tool
 
-The [.NET Core Uninstall Tool](../additional-tools/uninstall-tool.md) (`dotnet-core-uninstall`) lets you remove .NET Core SDKs and Runtimes from a system. A collection of options is available to specify which versions should be uninstalled.
+The [.NET Core Uninstall Tool](../additional-tools/uninstall-tool.md) (`dotnet-core-uninstall`) lets you remove .NET Core SDKs and runtimes from a system. A collection of options is available to specify which versions should be uninstalled.
 
 ## Visual Studio dependency on .NET Core SDK versions
 
@@ -215,7 +263,7 @@ Before Visual Studio 2019 version 16.3, Visual Studio installers called the stan
 | Visual Studio 2017 version 15.9 | .NET Core SDK 2.2.1xx, 2.1.5xx |
 | Visual Studio 2017 version 15.8 | .NET Core SDK 2.1.4xx |
 
-Starting with Visual Studio 2019 16.3, Visual Studio is in charge of its own copy of the .NET Core SDK. For that reason, you no longer see those SDK versions in the **Add/Remove Programs** dialog.
+Starting with Visual Studio 2019 version 16.3, Visual Studio is in charge of its own copy of the .NET Core SDK. For that reason, you no longer see those SDK versions in the **Add/Remove Programs** dialog.
 
 ## Remove the NuGet fallback folder
 

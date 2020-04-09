@@ -18,7 +18,7 @@ Raises the <xref:System.Windows.Xps.XpsDocumentWriter.WritingPrintTicketRequired
 ## Syntax
 
 ```csharp
-public void raise__WritingPrintTicketRequired (object value0, 
+public void raise__WritingPrintTicketRequired (object value0,
   System.Windows.Documents.Serialization.WritingPrintTicketRequiredEventArgs value1);
 ```
 

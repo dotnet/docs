@@ -9,7 +9,7 @@ ms.assetid: feb25b15-d741-4ac3-818f-1b19f63a3562
 # Multimedia Overview
 The multimedia features in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] enable you to integrate audio and video into your applications to enhance the user experience. This topic introduces the multimedia features of [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)].  
 
-<a name="mediaapi"></a>   
+<a name="mediaapi"></a>
 ## Media API  
  The <xref:System.Windows.Controls.MediaElement> and <xref:System.Windows.Media.MediaPlayer> classes are used to present audio or video content. These classes can be controlled interactively or by a clock. These classes can use on the Microsoft Windows Media Player 10 control for media playback. Which class you use, depends on the scenario.  
   
@@ -20,7 +20,7 @@ The multimedia features in [!INCLUDE[TLA#tla_winclient](../../../../includes/tla
 > [!NOTE]
 > When distributing media with your application, you cannot use a media file as a project resource. In your project file, you must instead set the media type to `Content` and set `CopyToOutputDirectory` to `PreserveNewest` or `Always`.  
   
-<a name="mediaplaybackmodes"></a>   
+<a name="mediaplaybackmodes"></a>
 ## Media Playback Modes  
   
 > [!NOTE]
@@ -58,7 +58,7 @@ The multimedia features in [!INCLUDE[TLA#tla_winclient](../../../../includes/tla
   
  See [Control a MediaElement by Using a Storyboard](how-to-control-a-mediaelement-by-using-a-storyboard.md) for an example of clock mode.  
   
-<a name="mediaelement"></a>   
+<a name="mediaelement"></a>
 ## MediaElement Class  
  Adding media to an application is as simple as adding a <xref:System.Windows.Controls.MediaElement> control to the [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] of the application and providing a <xref:System.Uri> to the media you wish to include. All media types supported by Microsoft Windows Media Player 10 are supported in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]. The following example shows a simple usage of the <xref:System.Windows.Controls.MediaElement> in [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)].  
   
@@ -86,7 +86,7 @@ The multimedia features in [!INCLUDE[TLA#tla_winclient](../../../../includes/tla
   
  To avoid having a fixed size element which, [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] can preroll the media. This is done by setting the <xref:System.Windows.Controls.MediaElement.LoadedBehavior%2A> to either <xref:System.Windows.Controls.MediaState.Play> or <xref:System.Windows.Controls.MediaState.Pause>. In a <xref:System.Windows.Controls.MediaState.Pause> state, the media will preroll and will present the first frame. In a <xref:System.Windows.Controls.MediaState.Play> state, the media will preroll and begin to play.  
   
-<a name="mediaplayer"></a>   
+<a name="mediaplayer"></a>
 ## MediaPlayer Class  
  Where as the <xref:System.Windows.Controls.MediaElement> class is a framework element, the <xref:System.Windows.Media.MediaPlayer> class is designed to be used in <xref:System.Windows.Media.Drawing> objects. Drawing objects are used when you can sacrifice framework level features to gain performance benefits or when you need <xref:System.Windows.Freezable> features. <xref:System.Windows.Media.MediaPlayer> enables you to take advantage of these features while providing media content in your applications. Like <xref:System.Windows.Controls.MediaElement>, <xref:System.Windows.Media.MediaPlayer> can be used in independent or clock mode but does not have the <xref:System.Windows.Controls.MediaElement> object's unloaded and loaded states. This reduces the playback control complexity of the <xref:System.Windows.Media.MediaPlayer>.  
   

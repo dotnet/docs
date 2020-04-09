@@ -21,7 +21,7 @@ Receive approveExpense = new Receive
             };  
 ```  
   
-  Known types can be specified on Workflow services as well. For more information about Known Types, see [Data Contract Known Types](data-contract-known-types.md). Known types can be specified in the designer or in code. To specify known types in the designer, click the ellipsis button next to the KnownTypes property in the **Properties Window** for a <xref:System.ServiceModel.Activities.Receive> activity as shown in the following illustration.   
+  Known types can be specified on Workflow services as well. For more information about Known Types, see [Data Contract Known Types](data-contract-known-types.md). Known types can be specified in the designer or in code. To specify known types in the designer, click the ellipsis button next to the KnownTypes property in the **Properties Window** for a <xref:System.ServiceModel.Activities.Receive> activity as shown in the following illustration.
   
  ![Screenshot of the KnownTypes property dialog box.](./media/configuring-serialization-in-a-workflow-service/known-types-properties.png)  
   

@@ -6,11 +6,11 @@ ms.assetid: ddb2539c-c898-48c1-ad92-245e4a996df8
 # Async Return Types (C#)
 Async methods can have the following return types:
 
-- <xref:System.Threading.Tasks.Task%601>, for an async method that returns a value. 
- 
+- <xref:System.Threading.Tasks.Task%601>, for an async method that returns a value.
+
 - <xref:System.Threading.Tasks.Task>, for an async method that performs an operation but returns no value.
 
-- `void`, for an event handler. 
+- `void`, for an event handler.
 
 - Starting with C# 7.0, any type that has an accessible `GetAwaiter` method. The object returned by the `GetAwaiter` method must implement the <xref:System.Runtime.CompilerServices.ICriticalNotifyCompletion?displayProperty=nameWithType> interface.
   
@@ -46,9 +46,9 @@ In the following example, the `WaitAndApologize` async method doesn't contain a 
 As in the previous <xref:System.Threading.Tasks.Task%601> example, you can separate the call to `WaitAndApologize` from the application of an await operator, as the following code shows. However, remember that a `Task` doesn't have a `Result` property, and that no value is produced when an await operator is applied to a `Task`.  
   
 The following code separates calling the `WaitAndApologize` method from awaiting the task that the method returns.  
- 
+
 [!code-csharp[return-value](../../../../../samples/snippets/csharp/programming-guide/async/async-returns2a.cs#1)]  
- 
+
 ## <a name="BKMK_VoidReturnType"></a> Void return type
 
 You use the `void` return type in asynchronous event handlers, which require a `void` return type. For methods other than event handlers that don't return a value, you should return a <xref:System.Threading.Tasks.Task> instead, because an async method that returns `void` can't be awaited. Any caller of such a method must be able to continue to completion without waiting for the called async method to finish, and the caller must be independent of any values or exceptions that the async method generates.  
@@ -58,16 +58,16 @@ The caller of a void-returning async method can't catch exceptions that are thro
 For more information about how to catch exceptions in async methods, see the [Exceptions in Async Methods](../../../language-reference/keywords/try-catch.md#exceptions-in-async-methods) section of the [try-catch](../../../language-reference/keywords/try-catch.md) topic.  
   
 The following example shows the behavior of an async event handler. Note that in the example code, an async event handler must let the main thread know when it finishes. Then the main thread can wait for an async event handler to complete before exiting the program.
- 
+
 [!code-csharp[return-value](../../../../../samples/snippets/csharp/programming-guide/async/async-returns3.cs)]  
- 
+
 ## Generalized async return types and ValueTask\<TResult\>
 
 Starting with C# 7.0, an async method can return any type that has an accessible `GetAwaiter` method.
- 
-Because <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> are reference types, memory allocation in performance-critical paths, particularly when allocations occur in tight loops, can adversely affect performance. Support for generalized return types means that you can return a lightweight value type instead of a reference type to avoid additional memory allocations. 
 
-.NET provides the <xref:System.Threading.Tasks.ValueTask%601?displayProperty=nameWithType> structure as a lightweight implementation of a generalized task-returning value. To use the <xref:System.Threading.Tasks.ValueTask%601?displayProperty=nameWithType> type, you must add the `System.Threading.Tasks.Extensions` NuGet package to your project. The following example uses the <xref:System.Threading.Tasks.ValueTask%601> structure to retrieve the value of two dice rolls. 
+Because <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> are reference types, memory allocation in performance-critical paths, particularly when allocations occur in tight loops, can adversely affect performance. Support for generalized return types means that you can return a lightweight value type instead of a reference type to avoid additional memory allocations.
+
+.NET provides the <xref:System.Threading.Tasks.ValueTask%601?displayProperty=nameWithType> structure as a lightweight implementation of a generalized task-returning value. To use the <xref:System.Threading.Tasks.ValueTask%601?displayProperty=nameWithType> type, you must add the `System.Threading.Tasks.Extensions` NuGet package to your project. The following example uses the <xref:System.Threading.Tasks.ValueTask%601> structure to retrieve the value of two dice rolls.
   
 [!code-csharp[return-value](../../../../../samples/snippets/csharp/programming-guide/async/async-valuetask.cs)]
 

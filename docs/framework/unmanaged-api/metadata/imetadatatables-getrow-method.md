@@ -22,7 +22,7 @@ Gets the row at the specified row index, in the table at the specified table ind
 ## Syntax  
   
 ```cpp  
-HRESULT GetRow (   
+HRESULT GetRow (
     [in]  ULONG   ixTbl,  
     [in]  ULONG   rid,  
     [out] void    **ppRow  

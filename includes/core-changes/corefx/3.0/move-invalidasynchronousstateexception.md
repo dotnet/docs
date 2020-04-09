@@ -22,7 +22,7 @@ CoreFx
 
 #### Affected APIs
 
-- None
+None.
 
 <!--
 

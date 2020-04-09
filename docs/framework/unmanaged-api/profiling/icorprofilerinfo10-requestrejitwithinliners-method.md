@@ -29,7 +29,7 @@ HRESULT RequestReJITWithInliners( [in]                       DWORD       dwRejit
 
 - `dwRejitFlags`
 
-  \[in] A bitmask of [COR_PRF_REJIT_FLAGS](../../../../docs/framework/unmanaged-api/profiling/cor-prf-rejit-flags-enumeration.md).
+  \[in] A bitmask of [COR_PRF_REJIT_FLAGS](cor-prf-rejit-flags-enumeration.md).
 
 - `cFunctions`
 
@@ -45,11 +45,11 @@ HRESULT RequestReJITWithInliners( [in]                       DWORD       dwRejit
 
 ## Remarks
 
-[RequestReJIT](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo4-requestrejit-method.md) does not do any tracking of inlined methods. The profiler was expected to either block inlining or track inlining and call `RequestReJIT` for all inliners to make sure every instance of an inlined method was ReJITted. This poses a problem with ReJIT on attach, since the profiler is not present to monitor inlining. This method can be called to guarantee that the full set of inliners will be ReJITted as well.
+[RequestReJIT](icorprofilerinfo4-requestrejit-method.md) does not do any tracking of inlined methods. The profiler was expected to either block inlining or track inlining and call `RequestReJIT` for all inliners to make sure every instance of an inlined method was ReJITted. This poses a problem with ReJIT on attach, since the profiler is not present to monitor inlining. This method can be called to guarantee that the full set of inliners will be ReJITted as well.
 
 ## Requirements
 
-**Platforms:** See [.NET Core supported operating systems](../../../core/install/dependencies.md?tabs=netcore30&pivots=os-windows).
+**Platforms:** See [.NET Core supported operating systems](../../../core/install/dependencies.md?pivots=os-windows).
 
 **Header:** CorProf.idl, CorProf.h
 
@@ -59,4 +59,4 @@ HRESULT RequestReJITWithInliners( [in]                       DWORD       dwRejit
 
 ## See also
 
-- [ICorProfilerInfo10 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo10-interface.md)
+- [ICorProfilerInfo10 Interface](icorprofilerinfo10-interface.md)

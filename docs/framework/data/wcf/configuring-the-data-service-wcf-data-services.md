@@ -41,7 +41,7 @@ With WCF Data Services, you can create data services that expose Open Data Proto
 |<xref:System.Data.Services.DataServiceConfiguration.SetServiceOperationAccessRule%2A>|Sets the access rights for service operations that are defined on the data service. For more information, see [Service Operations](service-operations-wcf-data-services.md). An asterisk (`*`) value can be supplied for the name parameter to set access for all service operations to the same level. We recommend that you set access to service operations to provide the least privilege access to data service resources that are required by client applications. For more information, see [Securing WCF Data Services](securing-wcf-data-services.md).|  
 |<xref:System.Data.Services.DataServiceConfiguration.UseVerboseErrors%2A>|This configuration property enables you to more easily troubleshoot a data service by returning more information in the error response message. This option is not intended to be used in a production environment. For more information, see [Developing and Deploying WCF Data Services](developing-and-deploying-wcf-data-services.md).|  
   
-<a name="accessRequirements"></a>   
+<a name="accessRequirements"></a>
 ## Minimum Resource Access Requirements  
  The following table details the minimum entity set rights that must be granted to execute a specific operation. Path examples are based on the Northwind data service that is created when you complete the [quickstart](quickstart-wcf-data-services.md). Because both the <xref:System.Data.Services.EntitySetRights> enumeration and the <xref:System.Data.Services.ServiceOperationRights> enumeration are defined by using the <xref:System.FlagsAttribute>, you can use a logical OR operator to specify multiple permissions for a single entity set or operation. For more information, see [How to: Enable Access to the Data Service](how-to-enable-access-to-the-data-service-wcf-data-services.md).  
   
@@ -67,7 +67,7 @@ With WCF Data Services, you can create data services that expose Open Data Proto
   
  <sup>2</sup> This URI is supported when a property that returns a binary large object (BLOB) is defined as the media resource that belongs to an entity that is a media link entry, which in this case, is `Customers`. For more information, see [Streaming Provider](streaming-provider-wcf-data-services.md).  
   
-<a name="versioning"></a>   
+<a name="versioning"></a>
 ## Versioning Requirements  
  The following data service configuration behaviors require version 2 of the OData protocol, or later versions:  
   

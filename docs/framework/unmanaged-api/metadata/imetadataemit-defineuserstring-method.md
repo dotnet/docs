@@ -22,10 +22,10 @@ Gets a metadata token for the specified literal string.
 ## Syntax  
   
 ```cpp  
-HRESULT DefineUserString (   
-    [in]  LPCWSTR     szString,   
-    [in]  ULONG       cchString,   
-    [out] mdString    *pstk   
+HRESULT DefineUserString (
+    [in]  LPCWSTR     szString,
+    [in]  ULONG       cchString,
+    [out] mdString    *pstk
 );  
 ```  
   

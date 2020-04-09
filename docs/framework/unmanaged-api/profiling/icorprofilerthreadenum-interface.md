@@ -22,11 +22,11 @@ Provides methods to sequentially iterate through a collection of threads in the 
   
 |Method|Description|  
 |------------|-----------------|  
-|[Clone Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerthreadenum-clone-method.md)|Gets an interface pointer to a copy of this `ICorProfilerThreadEnum` interface.|  
-|[GetCount Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerthreadenum-getcount-method.md)|Gets the number of threads that are used by the application.|  
-|[Next Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerthreadenum-next-method.md)|Gets the specified number of contiguous threads from a sequential collection of threads, starting at the enumerator's current position in the sequence.|  
-|[Reset Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerthreadenum-reset-method.md)|Moves the enumerator's cursor to the starting position of the sequence.|  
-|[Skip Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerthreadenum-skip-method.md)|Advances the enumerator's cursor from its current position to skip the specified number of elements.|  
+|[Clone Method](icorprofilerthreadenum-clone-method.md)|Gets an interface pointer to a copy of this `ICorProfilerThreadEnum` interface.|  
+|[GetCount Method](icorprofilerthreadenum-getcount-method.md)|Gets the number of threads that are used by the application.|  
+|[Next Method](icorprofilerthreadenum-next-method.md)|Gets the specified number of contiguous threads from a sequential collection of threads, starting at the enumerator's current position in the sequence.|  
+|[Reset Method](icorprofilerthreadenum-reset-method.md)|Moves the enumerator's cursor to the starting position of the sequence.|  
+|[Skip Method](icorprofilerthreadenum-skip-method.md)|Advances the enumerator's cursor from its current position to skip the specified number of elements.|  
   
 ## Remarks  
  The `ICorProfilerThreadEnum` interface is an enumerator. It allows the receiver of an array to pull elements from the sender at a rate that is appropriate for the receiver. In other words, the receiver is able to explicitly control the flow of array elements, thereby avoiding the problems associated with passing large arrays as method parameters.  
@@ -42,5 +42,5 @@ Provides methods to sequentially iterate through a collection of threads in the 
   
 ## See also
 
-- [ICorProfilerInfo Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo-interface.md)
-- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+- [ICorProfilerInfo Interface](icorprofilerinfo-interface.md)
+- [Profiling Interfaces](profiling-interfaces.md)

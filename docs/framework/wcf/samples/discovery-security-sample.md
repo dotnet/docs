@@ -18,14 +18,14 @@ The Discovery specification does not require that endpoints that participate in 
  The secure channel factory creates output or duplex channels that add a compact signature to message headers. To keep messages as small as possible the compact signature format is used. The structure of a compact signature is shown in the following example.  
   
 ```xml  
-<d:Security ... >   
-  [<d:Sig Scheme="xs:anyURI"   
+<d:Security ... >
+  [<d:Sig Scheme="xs:anyURI"
          [KeyId="xs:base64Binary"]?  
           Refs="..."  
-         [PrefixList]="xs:NMTOKENS"   
-          Sig="xs:base64Binary"   
+         [PrefixList]="xs:NMTOKENS"
+          Sig="xs:base64Binary"
           ... />]?  
-  ...   
+  ...
 </d:Security>  
 ```  
   
@@ -63,9 +63,9 @@ The Discovery specification does not require that endpoints that participate in 
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Scenario\DiscoveryScenario`  

@@ -94,7 +94,7 @@ value2.Real = 3;
 value2.Imaginary = 4;  
 ComplexNumber result = client.Add(value1, value2);  
 Console.WriteLine("Add({0} + {1}i, {2} + {3}i) = {4} + {5}i",  
-    value1.Real, value1.Imaginary, value2.Real, value2.Imaginary,   
+    value1.Real, value1.Imaginary, value2.Real, value2.Imaginary,
     result.Real, result.Imaginary);  
     …  
 }  
@@ -121,9 +121,9 @@ Press <ENTER> to terminate client.
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WCF\Basic\Client\Interop\XmlSerializer`  

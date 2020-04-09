@@ -22,7 +22,7 @@ Classes and structs are two of the basic constructs of the common type system in
   
  In general, classes are used to model more complex behavior, or data that is intended to be modified after a class object is created. Structs are best suited for small data structures that contain primarily data that is not intended to be modified after the struct is created.  
   
- For more information, see [Classes](./classes.md), [Objects](./objects.md), and [Structs](./structs.md).  
+ For more information, see [Classes](./classes.md), [Objects](./objects.md), and [Structure types](../../language-reference/builtin-types/struct.md).  
   
 ## Example  
  In the following example, `CustomClass` in the `ProgrammingGuide` namespace has three members: an instance constructor, a property named `Number`, and a method named `Multiply`. The `Main` method in the `Program` class creates an instance (object) of `CustomClass`, and the object’s method and property are accessed by using dot notation.

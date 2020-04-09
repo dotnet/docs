@@ -15,7 +15,7 @@ topic_type:
 
 # XpsDocumentWriter.\_WritingCompleted Event
 
-Occurs when a write operation finishes. 
+Occurs when a write operation finishes.
 
 ## Syntax
 

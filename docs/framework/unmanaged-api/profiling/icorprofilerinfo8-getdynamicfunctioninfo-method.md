@@ -76,4 +76,4 @@ This API can be used to retrieve information about dynamic methods, including a 
 
 ## See also
 
-- [ICorProfilerInfo8 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo8-interface.md)
+- [ICorProfilerInfo8 Interface](icorprofilerinfo8-interface.md)

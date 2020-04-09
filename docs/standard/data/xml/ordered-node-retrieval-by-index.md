@@ -41,10 +41,10 @@ doc.Load("books.xml");
 XmlElement root = doc.DocumentElement;  
 XmlNodeList elemList = root.GetElementsByTagName("title");  
 for (int i=0; i < elemList.Count; i++)  
-{     
+{
    // Display all book titles in the Node List.  
    Console.WriteLine(elemList[i].InnerXml);  
-}   
+}
 ```  
   
  In addition to the **Count** property, there is a **GetEnumerator** method that provides a, `foreach` style iteration over the collection of nodes in the **XmlNodeList**. The following code example shows the use of the `foreach` statement.  
@@ -57,7 +57,7 @@ doc.Load("books.xml")
 Dim root As XmlElement = doc.DocumentElement  
 Dim elemList As XmlNodeList = root.GetElementsByTagName("title")  
 Dim ienum As IEnumerator = elemList.GetEnumerator()  
-' Loop over the XmlNodeList using the enumerator ienum          
+' Loop over the XmlNodeList using the enumerator ienum
 While ienum.MoveNext()  
     ' Display the book title.  
     Dim title As XmlNode = CType(ienum.Current, XmlNode)  
@@ -73,8 +73,8 @@ End While
      // Get book titles.  
      XmlElement root = doc.DocumentElement;  
      XmlNodeList elemList = root.GetElementsByTagName("title");  
-     IEnumerator ienum = elemList.GetEnumerator();    
-     // Loop over the XmlNodeList using the enumerator ienum          
+     IEnumerator ienum = elemList.GetEnumerator();
+     // Loop over the XmlNodeList using the enumerator ienum
      while (ienum.MoveNext())  
      {  
           // Display the book title.  

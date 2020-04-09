@@ -51,5 +51,5 @@ HRESULT ClassUnloadFinished(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
-- [ClassUnloadStarted Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-classunloadstarted-method.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [ClassUnloadStarted Method](icorprofilercallback-classunloadstarted-method.md)

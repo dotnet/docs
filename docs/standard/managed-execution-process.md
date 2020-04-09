@@ -30,7 +30,7 @@ ms.assetid: 476b03dc-2b12-49a7-b067-41caeaa2f533
   
      The common language runtime provides the infrastructure that enables execution to take place and services that can be used during execution.  
   
-<a name="choosing_a_compiler"></a>   
+<a name="choosing_a_compiler"></a>
 ## Choosing a Compiler  
  To obtain the benefits provided by the common language runtime (CLR), you must use one or more language compilers that target the runtime, such as Visual Basic, C#, Visual C++, F#, or one of many third-party compilers such as an Eiffel, Perl, or COBOL compiler.  
   
@@ -38,7 +38,7 @@ ms.assetid: 476b03dc-2b12-49a7-b067-41caeaa2f533
   
  [Back to top](#introduction)  
   
-<a name="compiling_to_msil"></a>   
+<a name="compiling_to_msil"></a>
 ## Compiling to MSIL  
  When compiling to managed code, the compiler translates your source code into Microsoft intermediate language (MSIL), which is a CPU-independent set of instructions that can be efficiently converted to native code. MSIL includes instructions for loading, storing, initializing, and calling methods on objects, as well as instructions for arithmetic and logical operations, control flow, direct memory access, exception handling, and other operations. Before code can be run, MSIL must be converted to CPU-specific code, usually by a [just-in-time (JIT) compiler](#compiling_msil_to_native_code). Because the common language runtime supplies one or more JIT compilers for each computer architecture it supports, the same set of MSIL can be JIT-compiled and run on any supported architecture.  
   
@@ -46,7 +46,7 @@ ms.assetid: 476b03dc-2b12-49a7-b067-41caeaa2f533
   
  [Back to top](#introduction)  
   
-<a name="compiling_msil_to_native_code"></a>   
+<a name="compiling_msil_to_native_code"></a>
 ## Compiling MSIL to Native Code  
  Before you can run Microsoft intermediate language (MSIL), it must be compiled against the common language runtime to native code for the target machine architecture. The .NET Framework provides two ways to perform this conversion:  
   
@@ -83,7 +83,7 @@ ms.assetid: 476b03dc-2b12-49a7-b067-41caeaa2f533
   
  [Back to top](#introduction)  
   
-<a name="running_code"></a>   
+<a name="running_code"></a>
 ## Running Code  
  The common language runtime provides the infrastructure that enables managed execution to take place and services that can be used during execution. Before a method can be run, it must be compiled to processor-specific code. Each method for which MSIL has been generated is JIT-compiled when it is called for the first time, and then run. The next time the method is run, the existing JIT-compiled native code is run. The process of JIT-compiling and then running the code is repeated until execution is complete.  
   

@@ -53,5 +53,5 @@ HRESULT ClassLoadFinished(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
-- [ClassLoadStarted Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-classloadstarted-method.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [ClassLoadStarted Method](icorprofilercallback-classloadstarted-method.md)

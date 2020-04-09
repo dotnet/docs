@@ -73,7 +73,7 @@ The `ReadOnlySequence<T>` exposes data as an enumerable of `ReadOnlyMemory<T>`. 
 
 [!code-csharp[](~/samples/snippets/csharp/buffers/MyClass.cs?name=snippet3)]
 
-The preceding method searches each segment for a specific byte. If you need to keep track of each segment's `SequencePosition`, 
+The preceding method searches each segment for a specific byte. If you need to keep track of each segment's `SequencePosition`,
 <xref:System.Buffers.ReadOnlySequence%601.TryGet%2A?displayProperty=nameWithType> is more appropriate. The next sample changes the preceding code to return a `SequencePosition` instead of an integer. Returning a `SequencePosition` has the benefit of allowing the caller to avoid a second scan to get the data at a specific index.
 
 [!code-csharp[](~/samples/snippets/csharp/buffers/MyClass.cs?name=snippet4)]
@@ -110,6 +110,8 @@ The following example parses a 4-byte big-endian integer length from the start o
 
 [!code-csharp[](~/samples/snippets/csharp/buffers/MyClass.cs?name=snippet5)]
 
+[!INCLUDE [localized code comments](../../../includes/code-comments-loc.md)]
+
 ##### Process text data
 
 The following example:
@@ -141,7 +143,7 @@ There are several unusual outcomes when dealing with a `ReadOnlySequence<T>`/`Se
 - Two `SequencePosition` can't be compared, making it difficult to:
   - Know if one position is greater than or less than another position.
   - Write some parsing algorithms.
-- `ReadOnlySequence<T>` is bigger than an object reference and should be passed by [in](../../csharp/language-reference/keywords/in-parameter-modifier.md) or [ref](../../csharp/language-reference/keywords/ref.md) where possible. Passing `ReadOnlySequence<T>` by `in` or `ref` reduces copies of the [struct](../../csharp/language-reference/keywords/struct.md).
+- `ReadOnlySequence<T>` is bigger than an object reference and should be passed by [in](../../csharp/language-reference/keywords/in-parameter-modifier.md) or [ref](../../csharp/language-reference/keywords/ref.md) where possible. Passing `ReadOnlySequence<T>` by `in` or `ref` reduces copies of the [struct](../../csharp/language-reference/builtin-types/struct.md).
 - Empty segments:
   - Are valid within a `ReadOnlySequence<T>`.
   - Can appear when iterating using the `ReadOnlySequence<T>.TryGet` method.

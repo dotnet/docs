@@ -67,7 +67,7 @@ aximp [options]{file.dll | file.ocx}
 ## Example  
  The following command generates MediaPlayer.dll and AxMediaPlayer.dll for the Media Player control `msdxm.ocx`.  
   
-```console 
+```console
 aximp c:\systemroot\system32\msdxm.ocx  
 ```  
   

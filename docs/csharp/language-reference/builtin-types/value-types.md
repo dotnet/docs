@@ -11,15 +11,15 @@ ms.assetid: 471eb994-2958-49d5-a6be-19b4313f80a3
 ---
 # Value types (C# reference)
 
-*Value types* and [reference types](../keywords/reference-types.md) are the two main categories of C# types. A variable of a value type contains an instance of the type. This differs from a variable of a reference type, which contains a reference to an instance of the type. By default, on [assignment](../operators/assignment-operator.md), passing an argument to a method, or returning a method result, variable values are copied. In the case of value-type variables, the corresponding type instances are copied. The following example demonstrates that behavior:
+*Value types* and [reference types](../keywords/reference-types.md) are the two main categories of C# types. A variable of a value type contains an instance of the type. This differs from a variable of a reference type, which contains a reference to an instance of the type. By default, on [assignment](../operators/assignment-operator.md), passing an argument to a method, and returning a method result, variable values are copied. In the case of value-type variables, the corresponding type instances are copied. The following example demonstrates that behavior:
 
-[!code-csharp[copy of values](~/samples/csharp/language-reference/builtin-types/ValueTypes.cs#ValueTypeCopied)]
+[!code-csharp[copy of values](snippets/ValueTypes.cs#ValueTypeCopied)]
 
 As the preceding example shows, operations on a value-type variable affect only that instance of the value type, stored in the variable.
 
 If a value type contains a data member of a reference type, only the reference to the instance of the reference type is copied when a value-type instance is copied. Both the copy and original value-type instance have access to the same reference-type instance. The following example demonstrates that behavior:
 
-[!code-csharp[shallow copy](~/samples/csharp/language-reference/builtin-types/ValueTypes.cs#ShallowCopy)]
+[!code-csharp[shallow copy](snippets/ValueTypes.cs#ShallowCopy)]
 
 > [!NOTE]
 > To make your code less error-prone and more robust, define and use immutable value types. This article uses mutable value types only for demonstration purposes.
@@ -28,7 +28,7 @@ If a value type contains a data member of a reference type, only the reference t
 
 A value type can be one of the two following kinds:
 
-- a [structure type](../keywords/struct.md), which encapsulates data and related functionality
+- a [structure type](struct.md), which encapsulates data and related functionality
 - an [enumeration type](enum.md), which is defined by a set of named constants and represents a choice or a combination of choices
 
 A [nullable value type](nullable-value-types.md) `T?` represents all values of its underlying value type `T` and an additional [null](../keywords/null.md) value. You cannot assign `null` to a variable of a value type, unless it's a nullable value type.

@@ -74,7 +74,7 @@ dataSet.Relations.Add("CustOrders", _
 dataSet.Tables("Customers").Columns("CustomerID"), _  
 dataSet.Tables("Orders").Columns("CustomerID")).Nested = true  
   
-Dim xmlDoc As XmlDataDocument = New XmlDataDocument(dataSet)   
+Dim xmlDoc As XmlDataDocument = New XmlDataDocument(dataSet)
   
 Dim xslTran As XslTransform = New XslTransform  
 xslTran.Load("transform.xsl")  
@@ -106,12 +106,12 @@ custDS.Relations.Add("CustOrders",
   custDS.Tables["Customers"].Columns["CustomerID"],  
                      custDS.Tables["Orders"].Columns["CustomerID"]).Nested = true;  
   
-XmlDataDocument xmlDoc = new XmlDataDocument(custDS);   
+XmlDataDocument xmlDoc = new XmlDataDocument(custDS);
   
 XslTransform xslTran = new XslTransform();  
 xslTran.Load("transform.xsl");  
   
-XmlTextWriter writer = new XmlTextWriter("xslt_output.html",   
+XmlTextWriter writer = new XmlTextWriter("xslt_output.html",
   System.Text.Encoding.UTF8);  
   
 xslTran.Transform(xmlDoc, null, writer);  

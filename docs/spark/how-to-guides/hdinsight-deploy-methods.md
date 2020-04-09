@@ -13,7 +13,7 @@ There are two ways to deploy your .NET for Apache Spark job to HDInsight: `spark
 ## Deploy using spark-submit
 
 You can use the [spark-submit](https://spark.apache.org/docs/latest/submitting-applications.html) command to submit .NET for Apache Spark jobs to Azure HDInsight.
- 
+
 1. Navigate to your HDInsight Spark cluster in Azure portal, and then select **SSH + Cluster login**.
 
 2. Copy the ssh login information and paste the login into a terminal. Sign in to your cluster using the password you set during cluster creation. You should see messages welcoming you to Ubuntu and Spark.
@@ -23,7 +23,7 @@ You can use the [spark-submit](https://spark.apache.org/docs/latest/submitting-a
    ```bash
    $SPARK_HOME/bin/spark-submit \
    --master yarn \
-   --class org.apache.spark.deploy.DotnetRunner \
+   --class org.apache.spark.deploy.dotnet.DotnetRunner \
    wasbs://mycontainer@mystorageaccount.blob.core.windows.net/microsoft-spark-2.3.x-0.6.0.jar \
    wasbs://mycontainer@mystorageaccount.blob.core.windows.net/publish.zip mySparkApp
    ```

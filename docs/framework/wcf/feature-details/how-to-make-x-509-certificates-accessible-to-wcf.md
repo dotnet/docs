@@ -54,13 +54,13 @@ To make an X.509 certificate accessible to Windows Communication Foundation (WCF
         |Client (console or WinForms application).|Currently logged in user.|  
         |Service that is self-hosted.|Currently logged in user.|  
         |Service that is hosted in IIS 6.0 (Windows Server 2003) or IIS 7.0 (Windows Vista).|NETWORK SERVICE|  
-        |Service that is hosted in IIS 5.X ([!INCLUDE[wxp](../../../../includes/wxp-md.md)]).|Controlled by the `<processModel>` element in the Machine.config file. The default account is ASPNET.|  
+        |Service that is hosted in IIS 5.X (Windows XP).|Controlled by the `<processModel>` element in the Machine.config file. The default account is ASPNET.|  
   
     5. Grant read access to the file that contains the private key to the account that WCF is running under, using a tool such as icacls.exe.  
   
          The following code example edits the discretionary access control list (DACL) for the specified file to grant the NETWORK SERVICE account read (:R) access to the file.  
   
-        ```console 
+        ```console
         icacls.exe "C:\Documents and Settings\All Users\Application Data\Microsoft\Crypto\RSA\MachineKeys\8aeda5eb81555f14f8f9960745b5a40d_38f7de48-5ee9-452d-8a5a-92789d7110b1" /grant "NETWORK SERVICE":R  
         ```  
   

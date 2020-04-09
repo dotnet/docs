@@ -95,7 +95,7 @@ Grouping constructs delineate subexpressions of a regular expression and typical
 |`(?!` *subexpression* `)`|Zero-width negative lookahead assertion.|`\b(?!un)\w+\b`|`"sure"`, `"used"` in `"unsure sure unity used"`|
 |`(?<=` *subexpression* `)`|Zero-width positive lookbehind assertion.|`(?<=19)\d{2}\b`|`"99"`, `"50"`, `"05"` in `"1851 1999 1950 1905 2003"`|
 |`(?<!` *subexpression* `)`|Zero-width negative lookbehind assertion.|`(?<!19)\d{2}\b`|`"51"`, `"03"` in `"1851 1999 1950 1905 2003"`|
-|`(?>` *subexpression* `)`|Nonbacktracking (or "greedy") subexpression.|`[13579](?>A+B+)`|`"1ABB"`, `"3ABB"`, and `"5AB"` in `"1ABB 3ABBC 5AB 5AC"`|
+|`(?>` *subexpression* `)`|Atomic group.|`[13579](?>A+B+)`|`"1ABB"`, `"3ABB"`, and `"5AB"` in `"1ABB 3ABBC 5AB 5AC"`|
 
 ## Quantifiers
 
@@ -185,6 +185,5 @@ Miscellaneous constructs either modify a regular expression pattern or provide i
 - <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType>
 - [Regular Expressions](regular-expressions.md)
 - [Regular Expression Classes](the-regular-expression-object-model.md)
-- [Regular Expression Examples](regular-expression-examples.md)
 - [Regular Expressions - Quick Reference (download in Word format)](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.docx)
 - [Regular Expressions - Quick Reference (download in PDF format)](https://download.microsoft.com/download/D/2/4/D240EBF6-A9BA-4E4F-A63F-AEB6DA0B921C/Regular%20expressions%20quick%20reference.pdf)

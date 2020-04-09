@@ -23,8 +23,8 @@ Gets the relative virtual address (RVA) and the implementation flags of the meth
   
 ```cpp  
 HRESULT GetRVA (  
-   [in]  mdToken     tk,   
-   [out] ULONG       *pulCodeRVA,   
+   [in]  mdToken     tk,
+   [out] ULONG       *pulCodeRVA,
    [out]  DWORD      *pdwImplFlags  
 );  
 ```  

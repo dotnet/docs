@@ -39,7 +39,7 @@ class Program
     {  
         IEnumerable<Employee> employees = new List<Employee>();  
   
-        // You can pass IEnumerable<Employee>,   
+        // You can pass IEnumerable<Employee>,
         // although the method expects IEnumerable<Person>.  
   
         PrintFullName(employees);  
@@ -67,11 +67,11 @@ public class Employee : Person { }
 class PersonComparer : IEqualityComparer<Person>  
 {  
     public bool Equals(Person x, Person y)  
-    {              
+    {
         if (Object.ReferenceEquals(x, y)) return true;  
         if (Object.ReferenceEquals(x, null) ||  
             Object.ReferenceEquals(y, null))  
-            return false;              
+            return false;
         return x.FirstName == y.FirstName && x.LastName == y.LastName;  
     }  
     public int GetHashCode(Person person)  
@@ -94,7 +94,7 @@ class Program
                new Employee() {FirstName = "Jeff", LastName = "Price"}  
             };  
   
-        // You can pass PersonComparer,   
+        // You can pass PersonComparer,
         // which implements IEqualityComparer<Person>,  
         // although the method expects IEqualityComparer<Employee>.  
   

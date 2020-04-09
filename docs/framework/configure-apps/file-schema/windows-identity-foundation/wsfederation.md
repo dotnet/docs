@@ -83,13 +83,13 @@ Provides configuration for the <xref:System.IdentityModel.Services.WSFederationA
 > In this example, the WSFAM is not required to use HTTPS. This is because the `requireHttps` attribute on the `<wsFederation>` element is set `false`. This setting is not recommended for most production environments as it may present a security risk.  
   
 ```xml
-<wsFederation passiveRedirectEnabled="true"   
-              issuer="http://localhost:15839/wsFederationSTS/Issue"   
-              realm="http://localhost:50969/"   
-              reply="http://localhost:50969/"   
-              requireHttps="false"   
-              signOutReply="http://localhost:50969/SignedOutPage.html"   
-              signOutQueryString="Param1=value2&Param2=value2"   
+<wsFederation passiveRedirectEnabled="true"
+              issuer="http://localhost:15839/wsFederationSTS/Issue"
+              realm="http://localhost:50969/"
+              reply="http://localhost:50969/"
+              requireHttps="false"
+              signOutReply="http://localhost:50969/SignedOutPage.html"
+              signOutQueryString="Param1=value2&Param2=value2"
               persistentCookiesOnPassiveRedirects="true" />
 ```  
   

@@ -32,7 +32,7 @@ public delegate void EventHandler(object sender, EventArgs e);
         public string Message  
         {  
             get { return msg; }  
-        }   
+        }
     }  
     ```  
   

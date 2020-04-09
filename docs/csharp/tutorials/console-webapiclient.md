@@ -7,11 +7,9 @@ ms.assetid: 51033ce2-7a53-4cdd-966d-9da15c8204d2
 
 # REST client
 
-## Introduction
-
 This tutorial teaches you a number of features in .NET Core and the C# language. You’ll learn:
 
-* The basics of the .NET Core Command Line Interface (CLI).
+* The basics of the .NET Core CLI.
 * An overview of C# Language features.
 * Managing dependencies with NuGet
 * HTTP Communications
@@ -67,7 +65,7 @@ so your application can process JSON responses.
 
 You'll need the `System.Runtime.Serialization.Json` package for this application. Add it to your project by running the following [.NET CLI](../../core/tools/dotnet-add-package.md) command:
 
-```console
+```dotnetcli
 dotnet add package System.Text.Json
 ```
 
@@ -196,7 +194,7 @@ namespace WebAPIClient
 {
     public class Repository
     {
-        public string name { get; set; };
+        public string name { get; set; }
     }
 }
 ```
@@ -210,15 +208,14 @@ The JSON serializer will ignore information that is not included in the class ty
 This feature makes it easier to create types that work with only a subset of the fields in
 the JSON packet.
 
-Now that you've created the type, let's deserialize it. 
+Now that you've created the type, let's deserialize it.
 
 Next, you'll use the serializer to convert JSON into C# objects. Replace the call to
-<xref:System.Net.Http.HttpClient.GetStringAsync(System.String)> in your `ProcessRepositories` method with the following three lines:
+<xref:System.Net.Http.HttpClient.GetStringAsync(System.String)> in your `ProcessRepositories` method with the following lines:
 
 ```csharp
 var streamTask = client.GetStreamAsync("https://api.github.com/orgs/dotnet/repos");
 var repositories = await JsonSerializer.DeserializeAsync<List<Repository>>(await streamTask);
-return repositories;
 ```
 
 You're using a new namespace, so you'll need to add it at the top of the file as well:
@@ -291,6 +288,7 @@ Then, just return the repositories after processing the JSON response:
 
 ```csharp
 var streamTask = client.GetStreamAsync("https://api.github.com/orgs/dotnet/repos");
+var repositories = await JsonSerializer.DeserializeAsync<List<Repository>>(await streamTask);
 return repositories;
 ```
 
@@ -357,31 +355,19 @@ this fashion in the JSON response:
 2016-02-08T21:27:00Z
 ```
 
-That format does not follow any of the standard .NET <xref:System.DateTime> formats. Because of that, you'll need to write
-a custom conversion method. You also probably don't want the raw string exposed to users of the `Repository`
-class. Attributes can help control that as well. First, define a `public` property that will hold the
-string representation of the date and time in your `Repository` class and a `LastPush` `readonly` property that returns a formatted string that represents the returned date:
+That format is in Coordinated Universal Time (UTC) so you'll get a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Utc>. If you prefer a date represented in your time zone, you'll need to write
+a custom conversion method. First, define a `public` property that will hold the
+UTC representation of the date and time in your `Repository` class and a `LastPush` `readonly` property that returns the date converted to local time:
 
 ```csharp
 [JsonPropertyName("pushed_at")]
-public string JsonDate { get; set; }
+public DateTime LastPushUtc { get; set; }
 
-public DateTime LastPush =>
-    DateTime.ParseExact(JsonDate, "yyyy-MM-ddTHH:mm:ssZ", CultureInfo.InvariantCulture);
+public DateTime LastPush => LastPushUtc.ToLocalTime();
 ```
 
 Let's go over the new constructs we just defined. The `LastPush` property is defined using an *expression-bodied member* for the `get` accessor. There is no `set` accessor. Omitting the `set` accessor is how you define a *read-only* property in C#. (Yes,
-you can create *write-only* properties in C#, but their value is limited.) The <xref:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider)>
-method parses a string and creates a <xref:System.DateTime> object using a provided date format, and adds additional
-metadata to the `DateTime` using a `CultureInfo` object. If the parse operation fails, the
-property accessor throws an exception.
-
-To use <xref:System.Globalization.CultureInfo.InvariantCulture>, you will need to add the <xref:System.Globalization> namespace to the `using` directives
-in `repo.cs`:
-
-```csharp
-using System.Globalization;
-```
+you can create *write-only* properties in C#, but their value is limited.)
 
 Finally, add one more output statement in the console, and you're ready to build and run this app
 again:

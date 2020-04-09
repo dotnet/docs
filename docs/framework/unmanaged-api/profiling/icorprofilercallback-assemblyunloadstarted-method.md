@@ -46,5 +46,5 @@ HRESULT AssemblyUnloadStarted(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
-- [AssemblyUnloadFinished Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-assemblyunloadfinished-method.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [AssemblyUnloadFinished Method](icorprofilercallback-assemblyunloadfinished-method.md)

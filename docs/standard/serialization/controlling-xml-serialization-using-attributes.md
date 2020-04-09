@@ -244,7 +244,7 @@ Another way to differentiate the two XML streams is to use the XML Schema Defini
 When the <xref:System.Xml.Serialization.XmlElementAttribute> is applied to the field, the resulting schema describes the element as follows.
 
 ```xml
-<xs:element minOccurs="0" maxOccurs="unbounded" name="Employees" type="Employee" /> 
+<xs:element minOccurs="0" maxOccurs="unbounded" name="Employees" type="Employee" />
 ```
 
 ## Serializing an ArrayList
@@ -261,7 +261,7 @@ End Class
 
 ```csharp
 public class Group {
-    [XmlElement(Type = typeof(Employee)), 
+    [XmlElement(Type = typeof(Employee)),
     XmlElement(Type = typeof(Manager))]
     public ArrayList Info;
 }
@@ -294,7 +294,7 @@ public class Group {
 If this class is compiled, and the XML Schema Definition tool is used to generate its schema, you would find the following XML describing `Group`.
 
 ```xml
-<xs:element name="NewGroupName" type="NewTypeName">
+<xs:element name="NewGroupName" type="NewTypeName" />
 ```
 
 In contrast, if you were to serialize an instance of the class, only `NewGroupName` would be found in the XML document.

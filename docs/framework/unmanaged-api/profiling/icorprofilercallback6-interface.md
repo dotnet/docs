@@ -15,13 +15,13 @@ topic_type:
 # ICorProfilerCallback6 Interface
 [Supported in the .NET Framework 4.5.2 and later versions]  
   
- A subclass of [ICorProfilerCallback5](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback5-interface.md) that provides a callback method that the common language runtime uses to notify a profiler that an assembly is loading.  
+ A subclass of [ICorProfilerCallback5](icorprofilercallback5-interface.md) that provides a callback method that the common language runtime uses to notify a profiler that an assembly is loading.  
   
 ## Methods  
   
 |Method|Description|  
 |------------|-----------------|  
-|[GetAssemblyReferences Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback6-getassemblyreferences-method.md)|Notifies the profiler that an assembly is in a very early loading stage, when the common language runtime performs an assembly reference closure walk.|  
+|[GetAssemblyReferences Method](icorprofilercallback6-getassemblyreferences-method.md)|Notifies the profiler that an assembly is in a very early loading stage, when the common language runtime performs an assembly reference closure walk.|  
   
 ## Remarks  
   
@@ -34,4 +34,4 @@ topic_type:
   
 ## See also
 
-- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
+- [Profiling Interfaces](profiling-interfaces.md)

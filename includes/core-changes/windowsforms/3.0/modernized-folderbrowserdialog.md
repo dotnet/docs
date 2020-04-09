@@ -40,6 +40,6 @@ Windows Forms
 
 ### Affected APIs
 
-- `System.Windows.Forms.FolderBrowserDialog`
+- `T:System.Windows.Forms.FolderBrowserDialog`
 
 -->

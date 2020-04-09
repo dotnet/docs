@@ -65,7 +65,7 @@ new SendMail
   
 ```csharp  
 new SendMail  
-{    
+{
     From = new LambdaValue<MailAddress>(ctx => new MailAddress("john.doe@contoso.com")),  
     To = new LambdaValue<MailAddressCollection>(  
                     ctx => new MailAddressCollection() { new MailAddress("someone@microsoft.com") }),  
@@ -73,7 +73,7 @@ new SendMail
     Host = "localhost",  
     Port = 25,  
     Tokens = new LambdaValue<IDictionary<string, string>>(ctx => tokens),  
-    BodyTemplateFilePath = @"..\..\..\SendMail\Templates\MailTemplateBody.htm",   
+    BodyTemplateFilePath = @"..\..\..\SendMail\Templates\MailTemplateBody.htm",
 };  
 ```  
   
@@ -82,7 +82,7 @@ new SendMail
   
 ```csharp  
 new SendMail  
-{    
+{
    From = new LambdaValue<MailAddress>(ctx => new MailAddress("john.doe@contoso.com")),  
    To = new LambdaValue<MailAddressCollection>(  
                     ctx => new MailAddressCollection() { new MailAddress("someone@microsoft.com") }),  
@@ -101,13 +101,11 @@ new SendMail
   
  For more information about setting up a SMTP server, see the following links.  
   
-- [Microsoft Technet](https://go.microsoft.com/fwlink/?LinkId=166060)  
+- [Configuring the SMTP Service (IIS 6.0)](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc784968(v=ws.10))  
   
-- [Configuring the SMTP Service (IIS 6.0)](https://go.microsoft.com/fwlink/?LinkId=150456)  
+- [IIS 7.0: Configure SMTP E-Mail](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772058(v=ws.10))  
   
-- [IIS 7.0: Configure SMTP E-Mail](https://go.microsoft.com/fwlink/?LinkId=150457)  
-  
-- [How to Install the SMTP Service](https://go.microsoft.com/fwlink/?LinkId=150458)  
+- [How to Install the SMTP Service](https://docs.microsoft.com/previous-versions/tn-archive/aa997480(v=exchg.65))  
   
  SMTP emulators provided by third parties are available for download.  
   
@@ -127,9 +125,9 @@ new SendMail
   
 > [!IMPORTANT]
 > The samples may already be installed on your machine. Check for the following (default) directory before continuing.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples`  
->   
+>
 > If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](https://www.microsoft.com/download/details.aspx?id=21459) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
->   
+>
 > `<InstallDrive>:\WF_WCF_Samples\WF\Scenario\ActivityLibrary\SendMail`

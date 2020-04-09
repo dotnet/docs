@@ -1,5 +1,6 @@
 ---
 title: "Exposing .NET Core components to COM"
+description: "This tutorial shows you how to expose a class to COM from .NET Core. You generate a COM server and a side-by-side server manifest for Registry-Free COM."
 ms.date: "07/12/2019"
 helpviewer_keywords: 
   - "exposing .NET Core components to COM"
@@ -27,7 +28,7 @@ In .NET Core, the process for exposing your .NET objects to COM has been signifi
 The first step is to create the library.
 
 1. Create a new folder, and in that folder run the following command:
-    
+
     ```dotnetcli
     dotnet new classlib
     ```
@@ -36,7 +37,21 @@ The first step is to create the library.
 3. Add `using System.Runtime.InteropServices;` to the top of the file.
 4. Create an interface named `IServer`. For example:
 
-   [!code-csharp[The IServer interface](~/samples/core/extensions/COMServerDemo/COMContract/IServer.cs)]
+   ```csharp
+   using System;
+   using System.Runtime.InteropServices;
+
+   [ComVisible(true)]
+   [Guid(ContractGuids.ServerInterface)]
+   [InterfaceType(ComInterfaceType.InterfaceIsIUnknown)]
+   public interface IServer
+   {
+       /// <summary>
+       /// Compute the value of the constant Pi.
+       /// </summary>
+       double ComputePi();
+   }
+   ```
 
 5. Add the `[Guid("<IID>")]` attribute to the interface, with the interface GUID for the COM interface you're implementing. For example, `[Guid("fe103d6e-e71b-414c-80bf-982f18f6c1c7")]`. Note that this GUID needs to be unique since it is the only identifier of this interface for COM. In Visual Studio, you can generate a GUID by going to Tools > Create GUID to open the Create GUID tool.
 6. Add the `[InterfaceType]` attribute to the interface and specify what base COM interfaces your interface should implement.

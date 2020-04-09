@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 11
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompositeImages", "CompositeImages\CompositeImages.csproj", "{57B65013-9276-41A6-BE9E-48437F5BF827}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57B65013-9276-41A6-BE9E-48437F5BF827}.Debug|x86.ActiveCfg = Debug|x86
+		{57B65013-9276-41A6-BE9E-48437F5BF827}.Debug|x86.Build.0 = Debug|x86
+		{57B65013-9276-41A6-BE9E-48437F5BF827}.Release|x86.ActiveCfg = Release|x86
+		{57B65013-9276-41A6-BE9E-48437F5BF827}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

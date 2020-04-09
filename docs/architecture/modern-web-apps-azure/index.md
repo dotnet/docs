@@ -3,12 +3,14 @@ title: Architect modern web applications with ASP.NET Core and Azure
 description: A guide that provides end-to-end guidance on building monolithic web applications using ASP.NET Core and Azure.
 author: ardalis
 ms.author: wiwagn
-ms.date: 01/30/2019
+ms.date: 12/4/2019
 ---
 
 # Architect Modern Web Applications with ASP.NET Core and Azure
 
-![Cover image of the Architect Modern Web Applications guide.](./media/index/web-application-guide-cover-image.png)
+![Book cover image of the Architect Modern Web Applications guide.](./media/index/web-application-guide-cover-image.png)
+
+**EDITION v3.1** - Updated to ASP.NET Core 3.1
 
 PUBLISHED BY
 
@@ -20,7 +22,7 @@ One Microsoft Way
 
 Redmond, Washington 98052-6399
 
-Copyright © 2019 by Microsoft Corporation
+Copyright © 2020 by Microsoft Corporation
 
 All rights reserved. No part of the contents of this book may be reproduced or transmitted in any form or by any means without the written permission of the publisher.
 

@@ -23,9 +23,9 @@ Dim custDV As DataView = New DataView(custDS.Tables("Customers"), _
 ```  
   
 ```csharp  
-DataView custDV = new DataView(custDS.Tables["Customers"],   
-    "Country = 'USA'",   
-    "ContactName",   
+DataView custDV = new DataView(custDS.Tables["Customers"],
+    "Country = 'USA'",
+    "ContactName",
     DataViewRowState.CurrentRows);  
 ```  
   

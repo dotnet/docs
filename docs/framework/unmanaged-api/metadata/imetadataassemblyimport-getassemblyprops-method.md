@@ -24,7 +24,7 @@ Gets the set of properties for the assembly with the specified metadata signatur
 ```cpp  
 HRESULT GetAssemblyProps (  
     [in]  mdAssembly          mda,  
-    [out] const void          **ppbPublicKey,   
+    [out] const void          **ppbPublicKey,
     [out] ULONG               *pcbPublicKey,  
     [out] ULONG               *pulHashAlgId,  
     [out] LPWSTR              szName,  

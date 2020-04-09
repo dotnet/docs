@@ -66,7 +66,7 @@ However, although you can use overloads of the <xref:System.DateTime.Parse%2A> m
 
 [!code-csharp[Parsing.DateAndTime#3](../../../samples/snippets/csharp/how-to/conversions/StringToDateTime.cs#3)]
 [!code-vb[Parsing.DateAndTime#3](../../../samples/snippets/visualbasic/how-to/conversions/Program.vb#3)]
- 
+
 ## ParseExact
 
 The <xref:System.DateTime.ParseExact%2A?displayProperty=nameWithType> method converts a string to a <xref:System.DateTime> object if it conforms to one of the specified string patterns. When a string that is not one of the forms specified is passed to this method, a <xref:System.FormatException> is thrown. You can specify one of the standard date and time format specifiers or a combination of the custom format specifiers. Using the custom format specifiers, it is possible for you to construct a custom recognition string. For an explanation of the specifiers, see the topics on [standard date and time format strings](standard-date-and-time-format-strings.md) and [custom date and time format strings](custom-date-and-time-format-strings.md).  

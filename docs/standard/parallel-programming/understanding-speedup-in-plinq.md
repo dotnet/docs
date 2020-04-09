@@ -78,4 +78,4 @@ The primary purpose of PLINQ is to speed up the execution of LINQ to Objects que
   
 ## See also
 
-- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/parallel-linq-plinq.md)
+- [Parallel LINQ (PLINQ)](../../../docs/standard/parallel-programming/introduction-to-plinq.md)

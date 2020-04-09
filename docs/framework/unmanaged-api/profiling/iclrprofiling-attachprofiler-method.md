@@ -51,7 +51,7 @@ HRESULT AttachProfiler(
 
 - `pvClientData`
 
-  \[in] A pointer to data to be passed to the profiler by the [ICorProfilerCallback3::InitializeForAttach](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback3-initializeforattach-method.md) method. The trigger process can reuse this memory after `AttachProfiler` returns. If `pvClientData` is null, `cbClientData` must be 0 (zero).
+  \[in] A pointer to data to be passed to the profiler by the [ICorProfilerCallback3::InitializeForAttach](icorprofilercallback3-initializeforattach-method.md) method. The trigger process can reuse this memory after `AttachProfiler` returns. If `pvClientData` is null, `cbClientData` must be 0 (zero).
 
 - `cbClientData`
 
@@ -73,7 +73,7 @@ HRESULT AttachProfiler(
 |HRESULT_FROM_WIN32(ERROR_TIMEOUT)|The timeout expired without beginning to load the profiler. You can retry the attach operation. Timeouts occur when a finalizer in the target process runs for a longer time than the timeout value.|  
 |E_INVALIDARG|One or more parameters have invalid values.|  
 |E_FAIL|Some other, unspecified failure occurred.|  
-|Other error codes|If the profiler’s [ICorProfilerCallback3::InitializeForAttach](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback3-initializeforattach-method.md) method returns an HRESULT that indicates failure, `AttachProfiler` returns that same HRESULT. In this case, E_NOTIMPL is converted to CORPROF_E_PROFILER_NOT_ATTACHABLE.|  
+|Other error codes|If the profiler’s [ICorProfilerCallback3::InitializeForAttach](icorprofilercallback3-initializeforattach-method.md) method returns an HRESULT that indicates failure, `AttachProfiler` returns that same HRESULT. In this case, E_NOTIMPL is converted to CORPROF_E_PROFILER_NOT_ATTACHABLE.|  
   
 ## Remarks  
   
@@ -91,7 +91,7 @@ HRESULT AttachProfiler(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
-- [ICorProfilerInfo3 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo3-interface.md)
-- [Profiling Interfaces](../../../../docs/framework/unmanaged-api/profiling/profiling-interfaces.md)
-- [Profiling](../../../../docs/framework/unmanaged-api/profiling/index.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [ICorProfilerInfo3 Interface](icorprofilerinfo3-interface.md)
+- [Profiling Interfaces](profiling-interfaces.md)
+- [Profiling](index.md)

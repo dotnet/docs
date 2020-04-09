@@ -1,7 +1,5 @@
 ---
 title: XmlReader.CreateSqlReader Method (System.Xml)
-author: mairaw
-ms.author: mairaw
 ms.date: 10/17/2019
 topic_type:
   - "apiref"
@@ -17,7 +15,7 @@ api_type:
 Creates a new <xref:System.Xml.XmlReader> instance using the specified stream, settings, and context information for parsing.
 
 ```csharp
-internal static XmlReader CreateSqlReader(Stream input, 
+internal static XmlReader CreateSqlReader(Stream input,
   XmlReaderSettings settings, XmlParserContext inputContext)
 ```
 

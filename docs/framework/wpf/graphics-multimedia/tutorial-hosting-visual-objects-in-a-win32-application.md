@@ -13,16 +13,16 @@ ms.assetid: f0e1600c-3217-43d5-875d-1864fa7fe628
 # Tutorial: Hosting Visual Objects in a Win32 Application
 [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] provides a rich environment for creating applications. However, when you have a substantial investment in Win32 code, it might be more effective to add [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] functionality to your application rather than rewrite your code. To provide support for Win32 and [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] graphics subsystems used concurrently in an application, [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provides a mechanism for hosting objects in a Win32 window.  
   
- This tutorial describes how to write a sample application, [Hit Test with Win32 Interoperation Sample](https://go.microsoft.com/fwlink/?LinkID=159995), that hosts [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] visual objects in a Win32 window.  
+ This tutorial describes how to write a sample application, [Hit Test with Win32 Interoperation Sample](https://github.com/microsoft/WPF-Samples/tree/master/Visual%20Layer/VisualsHitTesting), that hosts [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] visual objects in a Win32 window.  
 
-<a name="requirements"></a>   
+<a name="requirements"></a>
 ## Requirements  
  This tutorial assumes a basic familiarity with both [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] and Win32 programming. For a basic introduction to [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] programming, see [Walkthrough: My first WPF desktop application](../getting-started/walkthrough-my-first-wpf-desktop-application.md). For an introduction to Win32 programming, see any of the numerous books on the subject, in particular *Programming Windows* by Charles Petzold.  
   
 > [!NOTE]
-> This tutorial includes a number of code examples from the associated sample. However, for readability, it does not include the complete sample code. For the complete sample code, see [Hit Test with Win32 Interoperation Sample](https://go.microsoft.com/fwlink/?LinkID=159995).  
+> This tutorial includes a number of code examples from the associated sample. However, for readability, it does not include the complete sample code. For the complete sample code, see [Hit Test with Win32 Interoperation Sample](https://github.com/microsoft/WPF-Samples/tree/master/Visual%20Layer/VisualsHitTesting).  
   
-<a name="creating_the_host_win32_window"></a>   
+<a name="creating_the_host_win32_window"></a>
 ## Creating the Host Win32 Window  
  The key to hosting [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] objects in a Win32 window is the <xref:System.Windows.Interop.HwndSource> class. This class wraps the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] objects in a Win32 window, allowing them to be incorporated into your [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)] as a child window.  
   
@@ -34,7 +34,7 @@ ms.assetid: f0e1600c-3217-43d5-875d-1864fa7fe628
 > [!NOTE]
 > The value of the <xref:System.Windows.Interop.HwndSourceParameters.ExtendedWindowStyle%2A> property cannot be set to WS_EX_TRANSPARENT. This means that the host Win32 window cannot be transparent. For this reason, the background color of the host Win32 window is set to the same background color as its parent window.  
   
-<a name="adding_visual_objects_to_the_host_win32_window"></a>   
+<a name="adding_visual_objects_to_the_host_win32_window"></a>
 ## Adding Visual Objects to the Host Win32 Window  
  Once you have created a host Win32 container window for the visual objects, you can add visual objects to it. You will want to ensure that any transformations of the visual objects, such as animations, do not extend beyond the bounds of the host Win32 window's bounding rectangle.  
   
@@ -46,7 +46,7 @@ ms.assetid: f0e1600c-3217-43d5-875d-1864fa7fe628
  [!code-csharp[VisualsHitTesting#100](~/samples/snippets/csharp/VS_Snippets_Wpf/VisualsHitTesting/CSharp/MyWindow.cs#100)]
  [!code-vb[VisualsHitTesting#100](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VisualsHitTesting/VisualBasic/MyWindow.vb#100)]  
   
-<a name="implementing_the_win32_message_filter"></a>   
+<a name="implementing_the_win32_message_filter"></a>
 ## Implementing the Win32 Message Filter  
  The host Win32 window for the visual objects requires a window message filter procedure to handle messages that are sent to the window from the application queue. The window procedure receives messages from the Win32 system. These may be input messages or window-management messages. You can optionally handle a message in your window procedure or pass the message to the system for default processing.  
   
@@ -60,7 +60,7 @@ ms.assetid: f0e1600c-3217-43d5-875d-1864fa7fe628
  [!code-csharp[VisualsHitTesting#103](~/samples/snippets/csharp/VS_Snippets_Wpf/VisualsHitTesting/CSharp/MyWindow.cs#103)]
  [!code-vb[VisualsHitTesting#103](~/samples/snippets/visualbasic/VS_Snippets_Wpf/VisualsHitTesting/VisualBasic/MyWindow.vb#103)]  
   
-<a name="processing_the_win32_messages"></a>   
+<a name="processing_the_win32_messages"></a>
 ## Processing the Win32 Messages  
  The code in the following example shows how a hit test is performed against the hierarchy of visual objects contained in the host Win32 window. You can identify whether a point is within the geometry of a visual object, by using the <xref:System.Windows.Media.VisualTreeHelper.HitTest%2A> method to specify the root visual object and the coordinate value to hit test against. In this case, the root visual object is the value of the <xref:System.Windows.Interop.HwndSource.RootVisual%2A> property of the <xref:System.Windows.Interop.HwndSource> object.  
   
@@ -72,5 +72,5 @@ ms.assetid: f0e1600c-3217-43d5-875d-1864fa7fe628
 ## See also
 
 - <xref:System.Windows.Interop.HwndSource>
-- [Hit Test with Win32 Interoperation Sample](https://go.microsoft.com/fwlink/?LinkID=159995)
+- [Hit Test with Win32 Interoperation Sample](https://github.com/microsoft/WPF-Samples/tree/master/Visual%20Layer/VisualsHitTesting)
 - [Hit Testing in the Visual Layer](hit-testing-in-the-visual-layer.md)

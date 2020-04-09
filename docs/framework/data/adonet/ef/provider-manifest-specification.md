@@ -204,7 +204,7 @@ public DbProviderManifest GetProviderManifest(string manifestToken);
       <xs:enumeration value="Decimal"/>  
       <xs:enumeration value="DateTime"/>  
       <xs:enumeration value="Time"/>  
-      <xs:enumeration value="DateTimeOffset"/>          
+      <xs:enumeration value="DateTimeOffset"/>
       <xs:enumeration value="Double"/>  
       <xs:enumeration value="Guid"/>  
       <xs:enumeration value="Single"/>  

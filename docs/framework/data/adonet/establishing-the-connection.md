@@ -73,7 +73,7 @@ End Using
   
 ```csharp  
 // Assumes connectionString is a valid connection string.  
-using (OleDbConnection connection =   
+using (OleDbConnection connection =
   new OleDbConnection(connectionString))  
 {  
     connection.Open();  
@@ -101,7 +101,7 @@ End Using
   
 ```csharp  
 // Assumes connectionString is a valid connection string.  
-using (OdbcConnection connection =   
+using (OdbcConnection connection =
   new OdbcConnection(connectionString))  
 {  
     connection.Open();  
@@ -126,7 +126,7 @@ End Using
   
 ```csharp  
 // Assumes connectionString is a valid connection string.  
-using (OracleConnection connection =   
+using (OracleConnection connection =
   new OracleConnection(connectionString))  
 {  
     connection.Open();  

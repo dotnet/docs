@@ -2,7 +2,6 @@
 title: Choose between .NET Core and .NET Framework for server apps
 description: A guide on which implementation of .NET you should consider when building a server app in .NET.
 author: cartermp
-ms.author: mairaw
 ms.date: 06/19/2018
 ---
 # Choosing between .NET Core and .NET Framework for server apps
@@ -32,7 +31,7 @@ The following sections give a more detailed explanation of the previously stated
 
 If your application (web/service) needs to run on multiple platforms (Windows, Linux, and macOS), use .NET Core.
 
-.NET Core supports the previously mentioned operating systems as your development workstation. Visual Studio provides an Integrated Development Environment (IDE) for Windows and macOS. You can also use Visual Studio Code, which runs on macOS, Linux, and Windows. Visual Studio Code supports .NET Core, including IntelliSense and debugging. Most third-party editors, such as Sublime, Emacs, and VI, work with .NET Core. These third-party editors get editor IntelliSense using [Omnisharp](https://www.omnisharp.net/). You can also avoid any code editor and directly use the [.NET Core CLI tools](../core/tools/index.md), available for all supported platforms.
+.NET Core supports the previously mentioned operating systems as your development workstation. Visual Studio provides an Integrated Development Environment (IDE) for Windows and macOS. You can also use Visual Studio Code, which runs on macOS, Linux, and Windows. Visual Studio Code supports .NET Core, including IntelliSense and debugging. Most third-party editors, such as Sublime, Emacs, and VI, work with .NET Core. These third-party editors get editor IntelliSense using [Omnisharp](https://www.omnisharp.net/). You can also avoid any code editor and directly use the [.NET Core CLI](../core/tools/index.md), available for all supported platforms.
 
 ### Microservices architecture
 
@@ -70,7 +69,7 @@ In most cases, you don’t need to migrate your existing applications to .NET Co
 
 Libraries are quickly embracing .NET Standard. .NET Standard enables sharing code across all .NET implementations including .NET Core. With .NET Standard 2.0, this is even easier:
 
-- The API surface became much larger. 
+- The API surface became much larger.
 - Introduced a .NET Framework compatibility mode. This compatibility mode allows .NET Standard/.NET Core projects to reference .NET Framework libraries. To learn more about the compatibility mode, see [Announcing .NET Standard 2.0](https://devblogs.microsoft.com/dotnet/announcing-net-standard-2-0/).
 
 So only in cases where the libraries or NuGet packages use technologies that aren't available in .NET Standard/.NET Core, you need to use the .NET Framework.
@@ -81,7 +80,7 @@ Some .NET Framework technologies aren't available in .NET Core. Some of them mig
 
 - ASP.NET Web Forms applications: ASP.NET Web Forms are only available in the .NET Framework. ASP.NET Core cannot be used for ASP.NET Web Forms. There are no plans to bring ASP.NET Web Forms to .NET Core.
 
-- ASP.NET Web Pages applications: ASP.NET Web Pages aren't included in ASP.NET Core. 
+- ASP.NET Web Pages applications: ASP.NET Web Pages aren't included in ASP.NET Core.
 
 - WCF services implementation. Even when there’s a [WCF-Client library](https://github.com/dotnet/wcf) to consume WCF services from .NET Core, WCF server implementation is currently only available in the .NET Framework. This scenario is not part of the current plan for .NET Core but it’s being considered for the future.
 
@@ -100,7 +99,7 @@ Some Microsoft or third-party platforms don’t support .NET Core. Some Azure se
 - [Choose between ASP.NET and ASP.NET Core](/aspnet/core/choose-aspnet-framework)
 - [ASP.NET Core targeting .NET Framework](/aspnet/core#aspnet-core-targeting-net-framework)
 - [Target frameworks](frameworks.md)
-- [.NET Core Guide](../core/index.md)
+- [.NET Core Guide](../core/index.yml)
 - [Porting from .NET Framework to .NET Core](../core/porting/index.md)
 - [Introduction to .NET and Docker](../core/docker/introduction.md)
 - [.NET Components Overview](components.md)

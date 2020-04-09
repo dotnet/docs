@@ -339,16 +339,16 @@ t.AddMembersDelayed(fun () ->
       [
           for i in 1 .. 100 ->
               let valueOfTheProperty = "I am string "  + string i
-    
+
               let p =
                 ProvidedProperty(propertyName = "StaticProperty" + string i,
                   propertyType = typeof<string>,
                   isStatic = true,
                   getterCode= (fun args -> <@@ valueOfTheProperty @@>))
-    
+
               p.AddXmlDocDelayed(fun () ->
                   sprintf "This is StaticProperty%d on NestedType" i)
-    
+
               p
       ]
 

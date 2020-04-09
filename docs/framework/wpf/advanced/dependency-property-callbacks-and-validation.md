@@ -15,11 +15,11 @@ ms.assetid: 48db5fb2-da7f-49a6-8e81-3540e7b25825
 # Dependency Property Callbacks and Validation
 This topic describes how to create dependency properties using alternative custom implementations for property-related features such as validation determination, callbacks that are invoked whenever the property's effective value is changed, and overriding possible outside influences on value determination. This topic also discusses scenarios where expanding on the default property system behaviors by using these techniques is appropriate.  
 
-<a name="prerequisites"></a>   
+<a name="prerequisites"></a>
 ## Prerequisites  
  This topic assumes that you understand the basic scenarios of implementing a dependency property, and how metadata is applied to a custom dependency property. See [Custom Dependency Properties](custom-dependency-properties.md) and [Dependency Property Metadata](dependency-property-metadata.md) for context.  
   
-<a name="Validation_Callbacks"></a>   
+<a name="Validation_Callbacks"></a>
 ## Validation Callbacks  
  Validation callbacks can be assigned to a dependency property when you first register it. The validation callback is not part of property metadata; it is a direct input of the <xref:System.Windows.DependencyProperty.Register%2A> method. Therefore, once a validation callback is created for a dependency property, it cannot be overridden by a new implementation.  
   
@@ -35,7 +35,7 @@ This topic describes how to create dependency properties using alternative custo
  [!code-csharp[DPCallbackOverride#ValidateValueCallback](~/samples/snippets/csharp/VS_Snippets_Wpf/DPCallbackOverride/CSharp/SDKSampleLibrary/class1.cs#validatevaluecallback)]
  [!code-vb[DPCallbackOverride#ValidateValueCallback](~/samples/snippets/visualbasic/VS_Snippets_Wpf/DPCallbackOverride/visualbasic/sdksamplelibrary/class1.vb#validatevaluecallback)]  
   
-<a name="Coerce_Value_Callbacks_and_Property_Changed_Events"></a>   
+<a name="Coerce_Value_Callbacks_and_Property_Changed_Events"></a>
 ## Coerce Value Callbacks and Property Changed Events  
  Coerce value callbacks do pass the specific <xref:System.Windows.DependencyObject> instance for properties, as do <xref:System.Windows.PropertyChangedCallback> implementations that are invoked by the property system whenever the value of a dependency property changes. Using these two callbacks in combination, you can create a series of properties on elements where changes in one property will force a coercion or reevaluation of another property.  
   
@@ -61,7 +61,7 @@ This topic describes how to create dependency properties using alternative custo
   
  The coerce value and property changed callbacks are part of property metadata. Therefore, you can change the callbacks for a particular dependency property as it exists on a type that you derive from the type that owns the dependency property, by overriding the metadata for that property on your type.  
   
-<a name="Advanced"></a>   
+<a name="Advanced"></a>
 ## Advanced Coercion and Callback Scenarios  
   
 ### Constraints and Desired Values  

@@ -7,7 +7,7 @@ ms.date: 12/04/2019
 ms.topic: tutorial
 ---
 
-# Tutorial: Structured Streaming with .NET for Apache Spark 
+# Tutorial: Structured Streaming with .NET for Apache Spark
 
 This tutorial teaches you how to invoke Spark Structured Streaming using .NET for Apache Spark. Spark Structured Streaming is Apache Spark's support for processing real-time data streams. Stream processing means analyzing live data as it's being produced.
 
@@ -27,7 +27,7 @@ If this is your first .NET for Apache Spark application, start with the [Getting
 
 1. In your command prompt, run the following commands to create a new console application:
 
-   ```console
+   ```dotnetcli
    dotnet new console -o mySparkStreamingApp
    cd mySparkStreamingApp
    ```
@@ -36,13 +36,13 @@ If this is your first .NET for Apache Spark application, start with the [Getting
 
 1. To use .NET for Apache Spark in an app, install the Microsoft.Spark package. In your console, run the following command:
 
-   ```console
+   ```dotnetcli
    dotnet add package Microsoft.Spark
    ```
 
 ## Establish and connect to a data stream
 
-One popular way to test stream processing is through **netcat**. netcat (also known as *nc*) allows you to read from and write to network connections. You establish a network connection with netcat through a terminal window. 
+One popular way to test stream processing is through **netcat**. netcat (also known as *nc*) allows you to read from and write to network connections. You establish a network connection with netcat through a terminal window.
 
 ### Create a data stream with netcat
 
@@ -103,14 +103,14 @@ DataFrame lines = spark
 
 You can use UDFs, *user-defined functions*, in Spark applications to perform calculations and analysis on your data.
 
-Add the following code to your `Main` method to register a UDF called `udfArray`. 
+Add the following code to your `Main` method to register a UDF called `udfArray`.
 
 ```csharp
 Func<Column, Column> udfArray =
     Udf<string, string[]>((str) => new string[] { str, $"{str} {str.Length}" });
 ```
 
-This UDF processes each string it receives from the netcat terminal to produce an array that includes the original string (contained in *str*), followed by the original string concatenated with the length of the original string. 
+This UDF processes each string it receives from the netcat terminal to produce an array that includes the original string (contained in *str*), followed by the original string concatenated with the length of the original string.
 
 For example, entering *Hello world* in the netcat terminal produces an array where:
 

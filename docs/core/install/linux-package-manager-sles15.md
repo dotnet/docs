@@ -3,14 +3,16 @@ title: Install .NET Core on SLES 15 - package manager - .NET Core
 description: Use a package manager to install .NET Core SDK and runtime on SLES 15.
 author: thraka
 ms.author: adegeo
-ms.date: 12/04/2019
+ms.date: 03/17/2020
 ---
 
 # SLES 15 Package Manager - Install .NET Core
 
 [!INCLUDE [package-manager-switcher](./includes/package-manager-switcher.md)]
 
-This article describes how to use a package manager to install .NET Core on SLES 15. If you're installing the runtime, we suggest you install the [ASP.NET Core runtime](#install-the-aspnet-core-runtime), as it includes both .NET Core and ASP.NET Core runtimes.
+This article describes how to use a package manager to install .NET Core on SLES 15.
+
+[!INCLUDE [package-manager-intro-sdk-vs-runtime](includes/package-manager-intro-sdk-vs-runtime.md)]
 
 ## Register Microsoft key and feed
 
@@ -55,3 +57,11 @@ sudo zypper install dotnet-runtime-3.1
 ## How to install other versions
 
 [!INCLUDE [package-manager-switcher](./includes/package-manager-heading-hack-pkgname.md)]
+
+## Troubleshoot the package manager
+
+This section provides information on common errors you may get while using the package manager to install .NET Core.
+
+### Failed to fetch
+
+[!INCLUDE [package-manager-failed-to-fetch-deb](includes/package-manager-failed-to-fetch-rpm.md)]

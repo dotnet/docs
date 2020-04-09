@@ -6,20 +6,18 @@ f1_keywords:
 helpviewer_keywords: 
   - "custom element"
 ms.assetid: e62056c6-b351-40eb-afc0-cc13fc44e45e
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # Custom element for SingleTagSectionHandler
 
 Defines settings in a custom configuration section that is defined by a \<section> element and uses the <xref:System.Configuration.SingleTagSectionHandler> class.
 
-[**\<configuration>**](configuration-element.md)   
+[**\<configuration>**](configuration-element.md)
 &nbsp;&nbsp;*\<sectionName>*
 
 ## Syntax
 
 ```xml
-<sectionName key="value" key2="value2" ... />
+<sectionName key="value" key2="value2" />
 ```
 
 ## Attributes
@@ -47,18 +45,18 @@ The following example declares a custom element called **\<sampleSection>** that
 ```xml
 <configuration>
   <configSections>
-    <section name="sampleSection" 
+    <section name="sampleSection"
              type="System.Configuration.SingleTagSectionHandler" />
   </configSections>
-  <sampleSection setting1="Value1" 
-                 setting2="value two" 
+  <sampleSection setting1="Value1"
+                 setting2="value two"
                  setting3="third value" />
 </configuration>
 ```
 
 ## Configuration file
 
-This element can be used in the application configuration file, machine configuration file (*Machine.config*), and *Web.config* files that are not at the application directory level.
+This element can be used in the application configuration file, the machine configuration file (*Machine.config*), and *Web.config* files that aren't at the application directory level.
 
 ## See also
 

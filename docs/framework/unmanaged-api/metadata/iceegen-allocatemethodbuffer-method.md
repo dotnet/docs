@@ -24,8 +24,8 @@ Creates a buffer of the specified size for a method, and gets the relative virtu
 ## Syntax  
   
 ```cpp  
-HRESULT AllocateMethodBuffer (   
-    [in]  ULONG    cchBuffer,   
+HRESULT AllocateMethodBuffer (
+    [in]  ULONG    cchBuffer,
     [out] UCHAR    **lpBuffer,  
     [out] ULONG    *RVA  
 );  

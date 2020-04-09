@@ -2,11 +2,12 @@
 title: ML.NET CLI Command Reference
 description: Overview, samples, and reference for the auto-train command in the ML.NET CLI tool.
 ms.date: 12/18/2019
+ms.custom: mlnet-tooling
 ---
 
 # The ML.NET CLI command reference
 
-The `auto-train` command is the main command provided by the ML.NET CLI tool. The command allows you to generate a good quality ML.NET model using automated machine learning (AutoML) as well as the the example C# code to run/score that model. In addition, the C# code to train the model is generated for you to research the algorithm and settings of the model.
+The `auto-train` command is the main command provided by the ML.NET CLI tool. The command allows you to generate a good quality ML.NET model using automated machine learning (AutoML) as well as the example C# code to run/score that model. In addition, the C# code to train the model is generated for you to research the algorithm and settings of the model.
 
 > [!NOTE]
 > This topic refers to ML.NET CLI and ML.NET AutoML, which are currently in Preview, and material may be subject to change.

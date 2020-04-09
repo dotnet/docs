@@ -65,7 +65,7 @@ The .NET Framework regular expression engine is a backtracking regular expressio
 
      For more information about positive lookahead assertions, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).
 
-- Negative lookahead: `(?!`*subexpression*`)`. This feature adds the ability to match an expression only if a subexpression fails to match. This is particularly powerful for pruning a search, because it is often simpler to provide an expression for a case that should be eliminated than an expression for cases that must be included. For example, it is difficult to write an expression for words that do not begin with "non". The following example uses negative lookahead to exclude them.
+- Negative lookahead: `(?!`*subexpression*`)`. This feature adds the ability to match an expression only if a subexpression fails to match. This is powerful for pruning a search, because it is often simpler to provide an expression for a case that should be eliminated than an expression for cases that must be included. For example, it is difficult to write an expression for words that do not begin with "non". The following example uses negative lookahead to exclude them.
 
      [!code-csharp[Conceptual.RegularExpressions.Design#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.design/cs/lookahead2.cs#3)]
      [!code-vb[Conceptual.RegularExpressions.Design#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.design/vb/lookahead2.vb#3)]
@@ -100,7 +100,7 @@ The .NET Framework regular expression engine is a backtracking regular expressio
 
 - Balancing group definitions: `(?<`*name1*`-`*name2*`>` *subexpression*`)`. This feature allows the regular expression engine to keep track of nested constructs such as parentheses or opening and closing brackets. For an example, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).
 
-- Nonbacktracking subexpressions (also known as greedy subexpressions): `(?>`*subexpression*`)`. This feature allows the backtracking engine to guarantee that a subexpression matches only the first match found for that subexpression, as if the expression were running independent of its containing expression. If you do not use this construct, backtracking searches from the larger expression can change the behavior of a subexpression. For example, the regular expression `(a+)\w` matches one or more "a" characters, along with a word character that follows the sequence of "a" characters, and assigns the sequence of "a" characters to the first capturing group, However, if the final character of the input string is also an "a", it is matched by the `\w` language element and is not included in the captured group.
+- Atomic groups: `(?>`*subexpression*`)`. This feature allows the backtracking engine to guarantee that a subexpression matches only the first match found for that subexpression, as if the expression were running independent of its containing expression. If you do not use this construct, backtracking searches from the larger expression can change the behavior of a subexpression. For example, the regular expression `(a+)\w` matches one or more "a" characters, along with a word character that follows the sequence of "a" characters, and assigns the sequence of "a" characters to the first capturing group. However, if the final character of the input string is also an "a", it is matched by the `\w` language element and is not included in the captured group.
 
      [!code-csharp[Conceptual.RegularExpressions.Design#7](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.design/cs/nonbacktracking2.cs#7)]
      [!code-vb[Conceptual.RegularExpressions.Design#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.design/vb/nonbacktracking2.vb#7)]
@@ -110,7 +110,7 @@ The .NET Framework regular expression engine is a backtracking regular expressio
      [!code-csharp[Conceptual.RegularExpressions.Design#8](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.design/cs/nonbacktracking1.cs#8)]
      [!code-vb[Conceptual.RegularExpressions.Design#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.design/vb/nonbacktracking1.vb#8)]
 
-     For more information about nonbacktracking subexpressions, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).
+     For more information about atomic groups, see [Grouping Constructs](../../../docs/standard/base-types/grouping-constructs-in-regular-expressions.md).
 
 - Right-to-left matching, which is specified by supplying the <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft?displayProperty=nameWithType> option to a <xref:System.Text.RegularExpressions.Regex> class constructor or static instance matching method. This feature is useful when searching from right to left instead of from left to right, or in cases where it is more efficient to begin a match at the right part of the pattern instead of the left. As the following example illustrates, using right-to-left matching can change the behavior of greedy quantifiers. The example conducts two searches for a sentence that ends in a number. The left-to-right search that uses the greedy quantifier `+` matches one of the six digits in the sentence, whereas the right-to-left search matches all six digits. For a description of the regular expression pattern, see the example that illustrates lazy quantifiers earlier in this section.
 
@@ -145,7 +145,6 @@ The .NET Framework regular expression engine is a backtracking regular expressio
 |[Thread Safety](../../../docs/standard/base-types/thread-safety-in-regular-expressions.md)|Provides information about regular expression thread safety and explains when you should synchronize access to regular expression objects.|
 |[.NET Framework Regular Expressions](../../../docs/standard/base-types/regular-expressions.md)|Provides an overview of the programming language aspect of regular expressions.|
 |[The Regular Expression Object Model](../../../docs/standard/base-types/the-regular-expression-object-model.md)|Provides information and code examples illustrating how to use the regular expression classes.|
-|[Regular Expression Examples](../../../docs/standard/base-types/regular-expression-examples.md)|Contains code examples that illustrate the use of regular expressions in common applications.|
 |[Regular Expression Language - Quick Reference](../../../docs/standard/base-types/regular-expression-language-quick-reference.md)|Provides information about the set of characters, operators, and constructs that you can use to define regular expressions.|
 
 ## Reference

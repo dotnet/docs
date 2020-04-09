@@ -22,7 +22,7 @@ The [.NET Framework 4.8](https://github.com/Microsoft/dotnet/tree/master/release
 
 ## .NET Framework 3.5
 
-The [.NET Framework 3.5](https://www.microsoft.com/download/details.aspx?id=21) is included with Windows 7.
+The [.NET Framework 3.5](https://dotnet.microsoft.com/download/dotnet-framework/net35-sp1) is included with Windows 7.
 
 The .NET Framework 3.5 supports apps built for .NET Framework 1.0 through 3.5.
 

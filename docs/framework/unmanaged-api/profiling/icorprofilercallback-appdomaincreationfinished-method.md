@@ -24,7 +24,7 @@ Notifies the profiler that an application domain has been created.
 ```cpp  
 HRESULT AppDomainCreationFinished(  
     [in] AppDomainID appDomainId,  
-    [in] HRESULT     hrStatus);   
+    [in] HRESULT     hrStatus);
 ```  
   
 ## Parameters
@@ -53,4 +53,4 @@ HRESULT AppDomainCreationFinished(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)

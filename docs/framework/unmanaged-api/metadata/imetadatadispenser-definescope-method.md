@@ -25,7 +25,7 @@ Creates a new area in memory in which you can create new metadata.
 HRESULT DefineScope (  
     [in]  REFCLSID    rclsid,  
     [in]  DWORD       dwCreateFlags,  
-    [in]  REFIID      riid,   
+    [in]  REFIID      riid,
     [out] IUnknown    **ppIUnk  
 );  
 ```  

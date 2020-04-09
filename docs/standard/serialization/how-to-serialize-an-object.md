@@ -36,7 +36,7 @@ To serialize an object, first create the object that is to be serialized and set
     ```csharp  
     MySerializableClass myObject = new MySerializableClass();  
     // Insert code to set properties and fields of the object.  
-    XmlSerializer mySerializer = new   
+    XmlSerializer mySerializer = new
     XmlSerializer(typeof(MySerializableClass));  
     // To write to a file, create a StreamWriter object.  
     StreamWriter myWriter = new StreamWriter("myFileName.xml");  

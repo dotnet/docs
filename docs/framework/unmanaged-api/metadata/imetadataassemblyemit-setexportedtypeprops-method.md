@@ -23,7 +23,7 @@ Modifies the specified `ExportedType` metadata structure.
   
 ```cpp  
 HRESULT SetExportedTypeProps (  
-    [in] mdExportedType   ct,   
+    [in] mdExportedType   ct,
     [in] mdToken          tkImplementation,  
     [in] mdTypeDef        tkTypeDef,  
     [in] DWORD            dwExportedTypeFlags  

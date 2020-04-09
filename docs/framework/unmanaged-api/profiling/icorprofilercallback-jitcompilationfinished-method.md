@@ -55,5 +55,5 @@ HRESULT JITCompilationFinished(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
-- [JITCompilationStarted Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-jitcompilationstarted-method.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [JITCompilationStarted Method](icorprofilercallback-jitcompilationstarted-method.md)

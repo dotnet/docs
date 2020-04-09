@@ -126,7 +126,7 @@ In Windows Communication Foundation (WCF), creating a client for a *federated se
   
     ```xml  
     <scopedCertificates>  
-     <add targetUri="http://fabrikam.com/sts"   
+     <add targetUri="http://fabrikam.com/sts"
           storeLocation="CurrentUser"  
           storeName="TrustedPeople"  
           x509FindType="FindBySubjectName"  

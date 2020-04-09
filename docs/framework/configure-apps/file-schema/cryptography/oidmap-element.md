@@ -20,7 +20,7 @@ Contains ASN.1 object identifier (OID) mappings to classes.
 ## Syntax  
   
 ```xml  
-<oidMap>   
+<oidMap>
 </oidMap>  
 ```  
   

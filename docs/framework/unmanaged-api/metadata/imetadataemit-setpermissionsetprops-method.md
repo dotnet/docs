@@ -22,12 +22,12 @@ Sets or updates features of the metadata signature of a permission set defined b
 ## Syntax  
   
 ```cpp  
-HRESULT SetPermissionSetProps (   
-    [in]  mdToken         tk,   
-    [in]  DWORD           dwAction,   
-    [in]  void const      *pvPermission,   
-    [in]  ULONG           cbPermission,   
-    [out] mdPermission    *ppm   
+HRESULT SetPermissionSetProps (
+    [in]  mdToken         tk,
+    [in]  DWORD           dwAction,
+    [in]  void const      *pvPermission,
+    [in]  ULONG           cbPermission,
+    [out] mdPermission    *ppm
 );  
 ```  
   

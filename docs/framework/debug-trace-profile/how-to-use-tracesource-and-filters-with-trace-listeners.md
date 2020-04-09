@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "trace listeners, filters"
   - "trace listeners, initializing"
 ms.assetid: 21dc2169-947d-453a-b0e2-3dac3ba0cc9f
-author: "mairaw"
-ms.author: "mairaw"
 ---
 # How to: Use TraceSource and Filters with Trace Listeners
 One of the new features in the .NET Framework version 2.0 is an enhanced tracing system. The basic premise is unchanged: tracing messages are sent through switches to listeners, which report the data to an associated output medium. A primary difference for version 2.0 is that traces can be initiated through instances of the <xref:System.Diagnostics.TraceSource> class. <xref:System.Diagnostics.TraceSource> is intended to function as an enhanced tracing system and can be used in place of the static methods of the older <xref:System.Diagnostics.Trace> and <xref:System.Diagnostics.Debug> tracing classes. The familiar <xref:System.Diagnostics.Trace> and <xref:System.Diagnostics.Debug> classes still exist, but the recommended practice is to use the <xref:System.Diagnostics.TraceSource> class for tracing.  
@@ -35,7 +33,7 @@ One of the new features in the .NET Framework version 2.0 is an enhanced tracing
     {  
         class Program  
         {  
-            private static TraceSource mySource =   
+            private static TraceSource mySource =
                 new TraceSource("TraceSourceApp");  
             static void Main(string[] args)  
             {  
@@ -45,9 +43,9 @@ One of the new features in the .NET Framework version 2.0 is an enhanced tracing
             }  
             static void Activity1()  
             {  
-                mySource.TraceEvent(TraceEventType.Error, 1,   
+                mySource.TraceEvent(TraceEventType.Error, 1,
                     "Error message.");  
-                mySource.TraceEvent(TraceEventType.Warning, 2,   
+                mySource.TraceEvent(TraceEventType.Warning, 2,
                     "Warning message.");  
             }  
         }  
@@ -62,13 +60,13 @@ One of the new features in the .NET Framework version 2.0 is an enhanced tracing
     <configuration>  
       <system.diagnostics>  
         <sources>  
-          <source name="TraceSourceApp"   
-            switchName="sourceSwitch"   
+          <source name="TraceSourceApp"
+            switchName="sourceSwitch"
             switchType="System.Diagnostics.SourceSwitch">  
             <listeners>  
-              <add name="console"   
+              <add name="console"
                 type="System.Diagnostics.ConsoleTraceListener">  
-                <filter type="System.Diagnostics.EventTypeFilter"   
+                <filter type="System.Diagnostics.EventTypeFilter"
                   initializeData="Warning"/>  
               </add>  
               <add name="myListener"/>  
@@ -80,10 +78,10 @@ One of the new features in the .NET Framework version 2.0 is an enhanced tracing
           <add name="sourceSwitch" value="Warning"/>  
         </switches>  
         <sharedListeners>  
-          <add name="myListener"   
-            type="System.Diagnostics.TextWriterTraceListener"   
+          <add name="myListener"
+            type="System.Diagnostics.TextWriterTraceListener"
             initializeData="myListener.log">  
-            <filter type="System.Diagnostics.EventTypeFilter"   
+            <filter type="System.Diagnostics.EventTypeFilter"
               initializeData="Error"/>  
           </add>  
         </sharedListeners>  
@@ -104,27 +102,27 @@ One of the new features in the .NET Framework version 2.0 is an enhanced tracing
     {  
         class Program  
         {  
-            private static TraceSource mySource =   
+            private static TraceSource mySource =
                 new TraceSource("TraceSourceApp");  
             static void Main(string[] args)  
             {  
                 Activity1();  
   
                 // Change the event type for which tracing occurs.  
-                // The console trace listener must be specified   
+                // The console trace listener must be specified
                 // in the configuration file. First, save the original  
                 // settings from the configuration file.  
-                EventTypeFilter configFilter =   
+                EventTypeFilter configFilter =
                     (EventTypeFilter)mySource.Listeners["console"].Filter;  
   
-                // Then create a new event type filter that ensures   
+                // Then create a new event type filter that ensures
                 // critical messages will be written.  
                 mySource.Listeners["console"].Filter =  
                     new EventTypeFilter(SourceLevels.Critical);  
                 Activity2();  
   
-                // Allow the trace source to send messages to listeners   
-                // for all event types. This statement will override   
+                // Allow the trace source to send messages to listeners
+                // for all event types. This statement will override
                 // any settings in the configuration file.  
                 mySource.Switch.Level = SourceLevels.All;  
   
@@ -136,20 +134,20 @@ One of the new features in the .NET Framework version 2.0 is an enhanced tracing
             }  
             static void Activity1()  
             {  
-                mySource.TraceEvent(TraceEventType.Error, 1,   
+                mySource.TraceEvent(TraceEventType.Error, 1,
                     "Error message.");  
-                mySource.TraceEvent(TraceEventType.Warning, 2,   
+                mySource.TraceEvent(TraceEventType.Warning, 2,
                     "Warning message.");  
             }  
             static void Activity2()  
             {  
-                mySource.TraceEvent(TraceEventType.Critical, 3,   
+                mySource.TraceEvent(TraceEventType.Critical, 3,
                     "Critical message.");  
                 mySource.TraceInformation("Informational message.");  
             }  
             static void Activity3()  
             {  
-                mySource.TraceEvent(TraceEventType.Error, 4,   
+                mySource.TraceEvent(TraceEventType.Error, 4,
                     "Error message.");  
                 mySource.TraceInformation("Informational message.");  
             }  

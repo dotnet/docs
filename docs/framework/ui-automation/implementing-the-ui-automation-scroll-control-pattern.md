@@ -20,7 +20,7 @@ Example of a Scrolling Control that Does Not Use Scrollbars
   
  For examples of controls that implement this control, see [Control Pattern Mapping for UI Automation Clients](control-pattern-mapping-for-ui-automation-clients.md).  
   
-<a name="Implementation_Guidelines_and_Conventions"></a>   
+<a name="Implementation_Guidelines_and_Conventions"></a>
 ## Implementation Guidelines and Conventions  
  When implementing the Scroll control pattern, note the following guidelines and conventions:  
   
@@ -36,7 +36,7 @@ Example of a Scrolling Control that Does Not Use Scrollbars
   
 - <xref:System.Windows.Automation.Provider.IScrollProvider.HorizontalScrollPercent%2A> is locale-specific. Setting HorizontalScrollPercent = 100.0 must set the scrolling location of the control to the equivalent of its rightmost position for languages such as English that read left to right. Alternately, for languages such as Arabic that read right to left, setting HorizontalScrollPercent = 100.0 must set the scroll location to the leftmost position.  
   
-<a name="Required_Members_for_IScrollProvider"></a>   
+<a name="Required_Members_for_IScrollProvider"></a>
 ## Required Members for IScrollProvider  
  The following properties and methods are required for implementing <xref:System.Windows.Automation.Provider.IScrollProvider>.  
   
@@ -53,7 +53,7 @@ Example of a Scrolling Control that Does Not Use Scrollbars
   
  This control pattern has no associated events.  
   
-<a name="Exceptions"></a>   
+<a name="Exceptions"></a>
 ## Exceptions  
  Providers must throw the following exceptions.  
   

@@ -36,7 +36,7 @@ End If
 ```  
   
 ```csharp  
-DataView custView = new DataView(custDS.Tables["Customers"], "",   
+DataView custView = new DataView(custDS.Tables["Customers"], "",
   "CompanyName", DataViewRowState.CurrentRows);  
   
 int rowIndex = custView.Find("The Cracker Box");  
@@ -76,14 +76,14 @@ DataView custView = new DataView(custDS.Tables["Customers"], "",
   "CompanyName, ContactName",  
   DataViewRowState.CurrentRows);  
   
-DataRowView[] foundRows =   
+DataRowView[] foundRows =
   custView.FindRows(new object[] {"The Cracker Box", "Liu Wong"});  
   
 if (foundRows.Length == 0)  
   Console.WriteLine("No match found.");  
 else  
   foreach (DataRowView myDRV in foundRows)  
-    Console.WriteLine("{0}, {1}", myDRV["CompanyName"].ToString(),   
+    Console.WriteLine("{0}, {1}", myDRV["CompanyName"].ToString(),
       myDRV["ContactName"].ToString());  
 ```  
   

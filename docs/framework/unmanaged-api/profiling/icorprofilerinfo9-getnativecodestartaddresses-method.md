@@ -54,7 +54,7 @@ When tiered compilation is enabled, a function may have more than one native cod
 
 ## Requirements
 
-**Platforms:** See [.NET Core supported operating systems](../../../core/install/dependencies.md?tabs=netcore30&pivots=os-windows).
+**Platforms:** See [.NET Core supported operating systems](../../../core/install/dependencies.md?pivots=os-windows).
 
 **Header:** CorProf.idl, CorProf.h
 
@@ -64,4 +64,4 @@ When tiered compilation is enabled, a function may have more than one native cod
 
 ## See also
 
-- [ICorProfilerInfo9 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo9-interface.md)
+- [ICorProfilerInfo9 Interface](icorprofilerinfo9-interface.md)

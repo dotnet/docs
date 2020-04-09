@@ -39,14 +39,14 @@ highlightedContent:
 # conceptualContent section (optional)
 conceptualContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
-  title: ".NET: Free. Cross-platform. Open source." # < 60 chars (optional)
+  title: ".NET: Free. Cross platform. Open source." # < 60 chars (optional)
   summary: "A developer platform for building all your apps: web, mobile, desktop, gaming, IoT, and more. Supported on Windows, Linux, and macOS."
   items:
     # Card
     - title: Open-source .NET
       summary: Learn about .NET Core
       links:
-        - url: core/index.md
+        - url: core/index.yml
           itemType: overview
           text: .NET Core overview
         - url: core/whats-new/dotnet-core-3-1.md
@@ -71,7 +71,7 @@ conceptualContent:
         - url: https://channel9.msdn.com/Series/NET-Core-101/What-is-NET
           itemType: video
           text: What is .NET?
-        - url: standard/index.md
+        - url: standard/index.yml
           itemType: overview
           text: Overview of .NET
         - url: standard/net-standard.md
@@ -89,7 +89,7 @@ conceptualContent:
         - url: standard/components.md
           itemType: concept
           text: .NET architectural components
-        - url: framework/index.md
+        - url: framework/index.yml
           itemType: overview
           text: .NET Framework (Windows) apps
     # Card
@@ -203,7 +203,7 @@ additionalContent:
         links:
           - url: /uwp
             text: Universal Windows apps
-          - url: desktop-wpf/index.md
+          - url: desktop-wpf/index.yml
             text: Windows Presentation Foundation (.NET Core)
           - url: framework/wpf/index.md
             text: Windows Presentation Foundation (.NET Framework)
@@ -256,6 +256,10 @@ additionalContent:
       - title: ".NET Framework API reference"
         summary: API reference documentation for .NET Framework
         url: https://docs.microsoft.com/dotnet/api/?view=netframework-4.8
+      # Card
+      - title: "ASP.NET Core API reference"
+        summary: API reference documentation for ASP.NET Core
+        url: https://docs.microsoft.com/dotnet/api/?view=aspnetcore-3.1
       # Card
       - title: "ML.NET API reference"
         summary: API reference documentation for ML.NET

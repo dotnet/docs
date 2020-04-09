@@ -54,6 +54,7 @@ The `switchValue` attribute of a `source` is only valid for tracing. If you spec
 
 ```xml
 <source name="System.ServiceModel.MessageLogging" switchValue="Verbose">
+</source>
 ```
 
 If you want to disable the trace source, you should use the `logMessagesAtServiceLevel`, `logMalformedMessages`, and `logMessagesAtTransportLevel` attributes of the `messageLogging` element instead. You should set all these attributes to `false`. This can be done by using the configuration file in the previous code example, through the Configuration Editor UI interface, or using WMI. For more information about the Configuration Editor tool, see [Configuration Editor Tool (SvcConfigEditor.exe)](../configuration-editor-tool-svcconfigeditor-exe.md). For more information about WMI, see [Using Windows Management Instrumentation for Diagnostics](./wmi/index.md).

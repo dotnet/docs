@@ -27,7 +27,7 @@ Gets the last error code that was raised by one of the strong name functions.
 ## Syntax  
   
 ```cpp  
-HRESULT StrongNameErrorInfo ();   
+HRESULT StrongNameErrorInfo ();
 ```  
   
 ## Return Value  

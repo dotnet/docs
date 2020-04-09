@@ -34,7 +34,7 @@ Objects larger than the large object heap threshold will be allocated on the lar
 
 ## Requirements
 
-**Platforms:** See [.NET Core supported operating systems](../../../core/install/dependencies.md?tabs=netcore30&pivots=os-windows).
+**Platforms:** See [.NET Core supported operating systems](../../../core/install/dependencies.md?pivots=os-windows).
 
 **Header:** CorProf.idl, CorProf.h
 
@@ -44,4 +44,4 @@ Objects larger than the large object heap threshold will be allocated on the lar
 
 ## See also
 
-- [ICorProfilerInfo10 Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo10-interface.md)
+- [ICorProfilerInfo10 Interface](icorprofilerinfo10-interface.md)

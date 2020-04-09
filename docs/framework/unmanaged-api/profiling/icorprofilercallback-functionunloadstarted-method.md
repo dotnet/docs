@@ -23,7 +23,7 @@ Notifies the profiler that the runtime has started to unload a function.
   
 ```cpp  
 HRESULT FunctionUnloadStarted(  
-    [in] FunctionID functionId);   
+    [in] FunctionID functionId);
 ```  
   
 ## Parameters
@@ -46,4 +46,4 @@ HRESULT FunctionUnloadStarted(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)

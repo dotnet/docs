@@ -18,7 +18,7 @@ Raises the <xref:System.Windows.Xps.XpsDocumentWriter.WritingProgressChanged> ev
 ## Syntax
 
 ```csharp
-public void raise__WritingProgressChanged (object value0, 
+public void raise__WritingProgressChanged (object value0,
   System.Windows.Documents.Serialization.WritingProgressChangedEventArgs value1);
 ```
 

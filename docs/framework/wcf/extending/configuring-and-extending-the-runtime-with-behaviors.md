@@ -129,7 +129,7 @@ protected override object CreateBehavior()
 <configuration>  
   <system.serviceModel>  
     <services>  
-      <service   
+      <service
         name="Microsoft.WCF.Documentation.SampleService"  
         behaviorConfiguration="metadataSupport"  
       >  
@@ -141,7 +141,7 @@ protected override object CreateBehavior()
         <endpoint  
           address="/SampleService"  
           binding="wsHttpBinding"  
-          behaviorConfiguration="withMessageInspector"   
+          behaviorConfiguration="withMessageInspector"
           contract="Microsoft.WCF.Documentation.ISampleService"  
         />  
         <endpoint  
@@ -165,7 +165,7 @@ protected override object CreateBehavior()
     </behaviors>  
     <extensions>  
       <behaviorExtensions>  
-        <add   
+        <add
           name="endpointMessageInspector"  
           type="Microsoft.WCF.Documentation.EndpointBehaviorMessageInspector, HostApplication, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"  
         />  

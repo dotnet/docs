@@ -48,6 +48,6 @@ HRESULT ExceptionUnwindFinallyEnter(
   
 ## See also
 
-- [ICorProfilerCallback Interface](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-interface.md)
-- [GetNotifiedExceptionClauseInfo Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilerinfo2-getnotifiedexceptionclauseinfo-method.md)
-- [ExceptionUnwindFinallyLeave Method](../../../../docs/framework/unmanaged-api/profiling/icorprofilercallback-exceptionunwindfinallyleave-method.md)
+- [ICorProfilerCallback Interface](icorprofilercallback-interface.md)
+- [GetNotifiedExceptionClauseInfo Method](icorprofilerinfo2-getnotifiedexceptionclauseinfo-method.md)
+- [ExceptionUnwindFinallyLeave Method](icorprofilercallback-exceptionunwindfinallyleave-method.md)

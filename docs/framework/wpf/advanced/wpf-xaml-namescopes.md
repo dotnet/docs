@@ -14,7 +14,7 @@ ms.assetid: 52bbf4f2-15fc-40d4-837b-bb4c21ead7d4
 # WPF XAML Namescopes
 XAML namescopes are a concept that identifies objects that are defined in XAML. The names in a XAML namescope can be used to establish relationships between the XAML-defined names of objects and their instance equivalents in an object tree. Typically, XAML namescopes in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] managed code are created when loading the individual XAML page roots for a XAML application. XAML namescopes as the programming object are defined by the <xref:System.Windows.Markup.INameScope> interface and are also implemented by the practical class <xref:System.Windows.NameScope>.  
 
-<a name="Namescopes_in_Loaded_XAML_Applications"></a>   
+<a name="Namescopes_in_Loaded_XAML_Applications"></a>
 ## Namescopes in Loaded XAML Applications  
  In a broader programming or computer science context, programming concepts often include the principle of a unique identifier or name that can be used to access an object. For systems that use identifiers or names, the namescope defines the boundaries within which a process or technique will search if an object of that name is requested, or the boundaries wherein uniqueness of identifying names is enforced. These general principles are true for XAML namescopes. In WPF, XAML namescopes are created on the root element for a XAML page when the page is loaded. Each name specified within the XAML page starting at the page root is added to a pertinent XAML namescope.  
   
@@ -43,7 +43,7 @@ XAML namescopes are a concept that identifies objects that are defined in XAML. 
   
  For an example of using XAML namescope APIs in code, see [Define a Name Scope](../graphics-multimedia/how-to-define-a-name-scope.md).  
   
-<a name="Namescopes_in_Styles_and_Templates"></a>   
+<a name="Namescopes_in_Styles_and_Templates"></a>
 ## XAML Namescopes in Styles and Templates  
  Styles and templates in [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] provide the ability to reuse and reapply content in a straightforward way. However, styles and templates might also include elements with XAML names defined at the template level. That same template might be used multiple times in a page. For this reason, styles and templates both define their own XAML namescopes, independent of whatever location in an object tree where the style or template is applied.  
   
@@ -61,7 +61,7 @@ XAML namescopes are a concept that identifies objects that are defined in XAML. 
   
  If you are working from within a template, and need to get to the XAML namescope where the template is applied, get the value of <xref:System.Windows.FrameworkElement.TemplatedParent%2A>, and then call <xref:System.Windows.FrameworkElement.FindName%2A> there. An example of working within the template would be if you are writing the event handler implementation where the event will be raised from an element in an applied template.  
   
-<a name="Namescopes_and_Name_related_APIs"></a>   
+<a name="Namescopes_and_Name_related_APIs"></a>
 ## XAML Namescopes and Name-related APIs  
  <xref:System.Windows.FrameworkElement> has <xref:System.Windows.FrameworkElement.FindName%2A>, <xref:System.Windows.FrameworkElement.RegisterName%2A> and <xref:System.Windows.FrameworkElement.UnregisterName%2A> methods. If the object you call these methods on owns a XAML namescope, the methods call into the methods of the relevant XAML namescope. Otherwise, the parent element is checked to see if it owns a XAML namescope, and this process continues recursively until a XAML namescope is found (because of the XAML processor behavior, there is guaranteed to be a XAML namescope at the root). <xref:System.Windows.FrameworkContentElement> has analogous behaviors, with the exception that no <xref:System.Windows.FrameworkContentElement> will ever own a XAML namescope. The methods exist on <xref:System.Windows.FrameworkContentElement> so that the calls can be forwarded eventually to a <xref:System.Windows.FrameworkElement> parent element.  
   

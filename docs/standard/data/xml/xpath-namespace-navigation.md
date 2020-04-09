@@ -21,7 +21,7 @@ To use XPath queries with XML documents, you have to correctly address XML names
 <e:Envelope xmlns:e="http://schemas.xmlsoap.org/soap/envelope/">  
   <e:Body>  
     <s:Search xmlns:s="http://schemas.microsoft.com/v1/Search">  
-      <r:request xmlns:r="http://schemas.microsoft.com/v1/Search/metadata"   
+      <r:request xmlns:r="http://schemas.microsoft.com/v1/Search/metadata"
                  xmlns:i="http://www.w3.org/2001/XMLSchema-instance">  
       </r:request>  
     </s:Search>  
@@ -48,7 +48,7 @@ using (XmlReader reader = XmlReader.Create("response.xml"))
   
     XPathNavigator element = nav.SelectSingleNode(xpath, nsmgr);  
   
-    Console.WriteLine("Element Prefix:" + element.Prefix +   
+    Console.WriteLine("Element Prefix:" + element.Prefix +
     " Local name:" + element.LocalName);  
     Console.WriteLine("Namespace URI: " + element.NamespaceURI);  
 }  

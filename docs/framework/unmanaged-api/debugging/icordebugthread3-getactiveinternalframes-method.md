@@ -21,7 +21,7 @@ Returns an array of internal frames ([ICorDebugInternalFrame2](icordebuginternal
   
 ## Syntax  
   
-```cpp 
+```cpp
 HRESULT GetActiveInternalFrames  
       (  
       [in] ULONG32 cInternalFrames,  

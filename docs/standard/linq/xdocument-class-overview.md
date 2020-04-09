@@ -1,6 +1,6 @@
 ---
 title: XDocument class overview
-description: The LINQ to XML XDocument class contains the information necessary for a valid XML document. In many cases you don't require the functionality of an XDocument object and can use an XElement object instead.
+description: The LINQ to XML XDocument class contains the information necessary for a valid XML document. In many cases, you don't need the functionality of an XDocument object and can use an XElement object instead.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"

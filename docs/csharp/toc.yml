@@ -1685,6 +1685,8 @@
       href: language-reference/tokens/verbatim.md
   - name: Attributes read by the compiler
     items:
+    - name: Global attributes
+      displayName: AssemblyName, AssemblyVersion, AssemblyCulture, AssemblyFlags, AssemblyProduct, AssemblyTrademark, AssemblyInformationalVersion, AssemblyCompany, AssemblyCopyright, AssemblyFileVersion, CLSCompliant, AssemblyTitle, AssemblyDescription, AssemblyConfiguration, AssemblyDefaultAlias
     - name: General
       displayName: Conditional, Obsolete, AttributeUsage
       href: language-reference/attributes/general.md

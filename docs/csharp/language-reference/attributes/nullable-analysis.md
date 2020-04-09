@@ -22,4 +22,3 @@ description: These attributes are interpreted by the compiler to provide better 
 ## DoesNotReturn
 
 ## DoesNotReturnIf
-

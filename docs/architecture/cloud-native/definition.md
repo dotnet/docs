@@ -8,7 +8,7 @@ ms.date: 08/20/2019
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-Stop what you’re doing and text 10 of your colleagues. Ask them to define the term “Cloud Native.” Good chance you’ll get eight different answers. Interestingly, six months from now, as cloud-native technologies and practices evolve, so will their definition.
+Stop what you're doing and text ten of your colleagues. Ask them to define the term "Cloud Native". Good chance you'll get eight different answers.
 
 Cloud native is all about changing the way we think about constructing critical business systems.
 
@@ -22,7 +22,7 @@ The Cloud Native Computing Foundation provides an [official definition](https://
 
 Applications have become increasingly complex with users demanding more and more. Users expect rapid responsiveness, innovative features, and zero downtime. Performance problems, recurring errors, and the inability to move fast are no longer acceptable. They'll easily move to your competitor.
 
-Cloud native is much about *speed* and *agility*. Business systems are evolving from enabling business capabilities to weapons of strategic transformation, accelerating business velocity and growth. It’s imperative to get ideas to market immediately.
+Cloud native is much about *speed* and *agility*. Business systems are evolving from enabling business capabilities to weapons of strategic transformation, accelerating business velocity and growth. It's imperative to get ideas to market immediately.
 
 Here are some companies who have implemented these techniques. Think about the speed, agility, and scalability they've achieved.
 
@@ -40,7 +40,7 @@ The speed and agility of cloud native come about from a number of factors. Forem
 
 **Figure 1-3**. Cloud-native foundational pillars
 
-Let’s take some time to better understand the significance of each pillar.
+Let's take some time to better understand the significance of each pillar.
 
 ## The cloud…
 
@@ -157,7 +157,7 @@ Microservices provide agility.
 
 Earlier in the chapter, we compared an eCommerce application built as a monolith to that with microservices. In the example, we saw some clear benefits:
 
-- Each microservice has an autonomous lifecycle and can evolve independently and deploy frequently. You don’t have to wait for a quarterly release to deploy a new features or update. You can update a small area of a complex application with less risk of disrupting the entire system.
+- Each microservice has an autonomous lifecycle and can evolve independently and deploy frequently. You don't have to wait for a quarterly release to deploy a new features or update. You can update a small area of a complex application with less risk of disrupting the entire system.
 
 - Each microservice can scale independently. Instead of scaling the entire application as a single unit, you scale out only those services that require more processing power or network bandwidth. This  fine-grained approach to scaling provides for greater control of your system and helps to reduce overall costs as you scale portions of your system, not everything.
 

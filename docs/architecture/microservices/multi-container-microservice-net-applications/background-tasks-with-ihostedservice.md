@@ -27,7 +27,7 @@ Each approach has pros and cons depending on your business and scalability needs
 
 ## Registering hosted services in your WebHost or Host
 
-Let’s drill down further on the `IHostedService` interface since its usage is pretty similar in a `WebHost` or in a `Host`.
+Let's drill down further on the `IHostedService` interface since its usage is pretty similar in a `WebHost` or in a `Host`.
 
 SignalR is one example of an artifact using hosted services, but you can also use it for much simpler things like:
 
@@ -58,7 +58,7 @@ In that code, the `GracePeriodManagerService` hosted service is real code from t
 
 The `IHostedService` background task execution is coordinated with the lifetime of the application (host or microservice, for that matter). You register tasks when the application starts and you have the opportunity to do some graceful action or clean-up when the application is shutting down.
 
-Without using `IHostedService`, you could always start a background thread to run any task. The difference is precisely at the app’s shutdown time when that thread would simply be killed without having the opportunity to run graceful clean-up actions.
+Without using `IHostedService`, you could always start a background thread to run any task. The difference is precisely at the app's shutdown time when that thread would simply be killed without having the opportunity to run graceful clean-up actions.
 
 ## The IHostedService interface
 
@@ -172,7 +172,7 @@ public class GracePeriodManagerService : BackgroundService
                                      IEventBus eventBus,
                                      ILogger<GracePeriodManagerService> logger)
     {
-        //Constructor’s parameters validations...
+        // Constructor's parameters validations...
     }
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
@@ -228,7 +228,7 @@ Class diagram: IWebHost and IHost can host many services, which inherit from Bac
 
 It is important to note that the way you deploy your ASP.NET Core `WebHost` or .NET Core `Host` might impact the final solution. For instance, if you deploy your `WebHost` on IIS or a regular Azure App Service, your host can be shut down because of app pool recycles. But if you are deploying your host as a container into an orchestrator like Kubernetes, you can control the assured number of live instances of your host. In addition, you could consider other approaches in the cloud especially made for these scenarios, like Azure Functions. Finally, if you need the service to be running all the time and are deploying on a Windows Server you could use a Windows Service.
 
-But even for a `WebHost` deployed into an app pool, there are scenarios like repopulating or flushing application’s in-memory cache that would be still applicable.
+But even for a `WebHost` deployed into an app pool, there are scenarios like repopulating or flushing application's in-memory cache that would be still applicable.
 
 The `IHostedService` interface provides a convenient way to start background tasks in an ASP.NET Core web application (in .NET Core 2.0 and later versions) or in any process/host (starting in .NET Core 2.1 with `IHost`). Its main benefit is the opportunity you get with the graceful cancellation to clean-up code of your background tasks when the host itself is shutting down.
 
@@ -243,6 +243,6 @@ The `IHostedService` interface provides a convenient way to start background tas
 - **GenericHost Sample using ASP.NET Core 2.1** \
   <https://github.com/aspnet/Hosting/tree/release/2.1/samples/GenericHostSample>
 
->[!div class="step-by-step"]
->[Previous](test-aspnet-core-services-web-apps.md)
->[Next](implement-api-gateways-with-ocelot.md)
+> [!div class="step-by-step"]
+> [Previous](test-aspnet-core-services-web-apps.md)
+> [Next](implement-api-gateways-with-ocelot.md)

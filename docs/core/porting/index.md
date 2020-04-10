@@ -13,7 +13,30 @@ You might have code that currently runs on the .NET Framework that you're intere
 
 ## Overview of the porting process
 
-We recommend you use the following process when porting your project to .NET Core. Each of these steps introduce potential places for behavior changes, so ensure that you adequately test your library or application before continuing on to later steps. The first steps are to get your project ready for a switch to .NET Standard/.NET Core. If you have unit tests, it is best to convert them first so that you can continue testing changes in the product you are working on. Because porting to .NET Core is such a significant change to your codebase, it's highly recommended to port your test projects so that you can run tests as you port your code over. MSTest, xUnit, and NUnit all work on .NET Core.
+Porting to .NET Core (or .NET Standard) from .NET Framework can become complicated very quickly depending on the complexity of the project. This document should help with identifying the main strategies that have been employed by users to successfully convert their code bases. This will address the conversion at two levels: solution-wide and project specific.
+
+Each of these steps introduce potential places for behavior changes, so ensure that you adequately test your library or application before continuing on to later steps. The first steps are to get your project ready for a switch to .NET Standard/.NET Core. If you have unit tests, it is best to convert them first so that you can continue testing changes in the product you are working on. Because porting to .NET Core is such a significant change to your codebase, it's highly recommended to port your test projects so that you can run tests as you port your code over. MSTest, xUnit, and NUnit all work on .NET Core.
+
+## Getting started
+
+The following tools will be used throughout the process:
+
+- Visual Studio 2019
+- Download [.NET Portability Analyzer](../../standard/analyzers/portability-analyzer.md)
+- _Optional_ Install [dotnet try-convert](https://github.com/dotnet/try-convert)
+
+## Porting a solution
+
+When there are multiple projects in a solution the porting can seem more complicated because you must address projects in a specific order. The conversion process should be a bottom-up approach, where the projects with no dependencies on other projects in the solution are converted first, and continue up through the whole solution.
+
+In order to identify the order projects should be identified, you can use the following tools:
+
+- [Dependency Diagrams in Visual Studio](https://docs.microsoft.com/en-us/visualstudio/modeling/create-layer-diagrams-from-your-code?view=vs-2019) can create a directed graph of the code in a solution.
+- Run `msbuild _SolutionPath_ /t:GenerateRestoreGraphFile /p:RestoreGraphOutputPath=graph.dg.json` to generate a json document that includes list of project references.
+
+## Per project steps
+
+We recommend you use the following process when porting your project to .NET Core:
 
 1. Convert your project file to the new SDK-style files structure. You can create new projects for .NET Core and copy over source files, or attempt to convert your existing project file with a tool.
 

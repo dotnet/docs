@@ -18,7 +18,7 @@ dotnet publish [<PROJECT>|<SOLUTION>] [-c|--configuration]
     [-f|--framework] [--force] [--interactive] [--manifest]
     [--no-build] [--no-dependencies] [--no-restore] [--nologo]
     [-o|--output] [-p:PublishSingleFile] [-p:PublishTrimmed]
-    [-r|--runtime] [--self-contained]
+    [-p:PublishReadyToRun] [-r|--runtime] [--self-contained]
     [--no-self-contained] [-v|--verbosity] [--version-suffix]
 
 dotnet publish [-h|--help]
@@ -127,6 +127,10 @@ For more information, see the following resources:
 
     If a relative path is specified when publishing a solution, each project's output goes into a separate folder relative to the project file location. If an absolute path is specified when publishing a solution, all publish output for all projects goes into the specified folder.
 
+- **`-p:PublishReadyToRun`**
+
+  Compiles application assemblies as ReadyToRun (R2R) format. R2R is a form of ahead-of-time (AOT) compilation. For more information, see [ReadyToRun images](../whats-new/dotnet-core-3-0.md#readytorun-images). Available since .NET Core 3.0 SDK.
+
 - **`-p:PublishSingleFile`**
 
   Packages the app into a platform-specific single-file executable. The executable is self-extracting and contains all dependencies (including native) that are required to run the app. When the app is first run, the application is extracted to a directory based on the app name and build identifier. Startup is faster when the application is run again. The application doesn't need to extract itself a second time unless a new version is used. Available since .NET Core 3.0 SDK.
@@ -214,3 +218,4 @@ For more information, see the following resources:
 - [MSBuild command-line reference](/visualstudio/msbuild/msbuild-command-line-reference)
 - [Visual Studio publish profiles (.pubxml) for ASP.NET Core app deployment](/aspnet/core/host-and-deploy/visual-studio-publish-profiles)
 - [dotnet msbuild](dotnet-msbuild.md)
+- [ILLInk.Tasks](https://aka.ms/dotnet-illink)

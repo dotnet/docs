@@ -121,7 +121,7 @@ The example produces this output:
 - [Projection Operations (C#)](../../csharp/programming-guide/concepts/linq/projection-operations.md)
 - [Quantifier Operations (C#)](../../csharp/programming-guide/concepts/linq/quantifier-operations.md)
 - [XML Child Axis Property (Visual Basic)](../../visual-basic/language-reference/xml-axis/xml-child-axis-property.md)
-- [XML Attribute Axis Property](../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)
+- [XML Attribute Axis Property (Visual Basic)](../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)
 - [XML Value Property](../../visual-basic/language-reference/xml-axis/xml-value-property.md)
 - [Projection Operations (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/projection-operations.md)
 - [Quantifier Operations (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/quantifier-operations.md)

@@ -164,7 +164,7 @@ You also use parentheses when you invoke a [constructor](../../programming-guide
 
 You also use parentheses to adjust the order in which to evaluate operations in an expression. For more information, see [C# operators](index.md).
 
-[Cast expressions](type-testing-and-cast.md#cast-operator-), which perform explicit type conversions, also use parentheses.
+[Cast expressions](type-testing-and-cast.md#cast-expression), which perform explicit type conversions, also use parentheses.
 
 ## Index from end operator ^
 

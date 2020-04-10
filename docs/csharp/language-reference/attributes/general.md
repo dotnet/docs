@@ -94,5 +94,5 @@ In this case `NonInheritedAttribute` isn't applied to `DClass` via inheritance.
 
 - <xref:System.Attribute>
 - <xref:System.Reflection>
-- [Attributes](../../../../standard/attributes/index.md)
+- [Attributes](../../../standard/attributes/index.md)
 - [Reflection (C#)](../../programming-guide/concepts/reflection.md)

@@ -109,6 +109,12 @@ For more information, see the following resources:
   
   If not specified, it defaults to *[project_file_folder]./bin/[configuration]/[framework]/publish/* for a runtime-dependent executable and cross-platform binaries. It defaults to *[project_file_folder]/bin/[configuration]/[framework]/[runtime]/publish/* for a self-contained executable.
 
+  In a web project, if the output folder is in the project folder, successive `dotnet publish` commands result in nested output folders. For example, if the project folder is *myproject*, and the publish output folder is *myproject/publish*, and you run `dotnet publish` twice, the second run puts content files such as *.config* and *.json* files in *myproject/publish/publish*. To avoid nesting publish folders, specify a publish folder that is not directly under the project folder, or exclude the publish folder from the project. To exclude a publish folder named *publishoutput*, add the following element to a `PropertyGroup` element in the *.csproj* file:
+
+  ```xml
+  <DefaultItemExcludes>$(DefaultItemExcludes);publishoutput**</DefaultItemExcludes>
+  ```
+
   - .NET Core 3.x SDK and later
   
     If a relative path is specified when publishing a project, the output directory generated is relative to the current working directory, not to the project file location.
@@ -129,9 +135,7 @@ For more information, see the following resources:
 
 - **`-p:PublishTrimmed`**
 
-  https://docs.microsoft.com/en-us/dotnet/core/whats-new/dotnet-core-3-0
-  https://www.talkingdotnet.com/create-trimmed-self-contained-executable-in-net-core-3-0/
-  Available since .NET Core 3.0 SDK.
+  Trims unused libraries to reduce the deployment size of an app when publishing a self-contained executable. For more information, see [Trim self-contained deployments and executables](../deploying/trim-self-contained.md). Available since .NET Core 3.0 SDK.
 
 - **`--self-contained [true|false]`**
 

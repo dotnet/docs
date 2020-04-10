@@ -21,7 +21,7 @@ Because XML resource (.resx) files must consist of well-defined XML, including a
 
 You can use the <xref:System.Resources.ResXResourceWriter?displayProperty=nameWithType> class to create a .resx file programmatically, by following these steps:
 
-1. Instantiate a <xref:System.Resources.ResXResourceWriter> object by calling the <xref:System.Resources.ResXResourceWriter.%23ctor%28System.String%29?displayProperty=nameWithType> method and supplying the name of the .resx file. The file name must include the .resx extension. If you instantiate the <xref:System.Resources.ResXResourceWriter> object in a `using` block, you do not explicitly have to call the <xref:System.Resources.ResXResourceWriter.Close%2A?displayProperty=nameWithType> method in step 3.
+1. Instantiate a <xref:System.Resources.ResXResourceWriter> object by calling the <xref:System.Resources.ResXResourceWriter.%23ctor%28System.String%29> method and supplying the name of the .resx file. The file name must include the .resx extension. If you instantiate the <xref:System.Resources.ResXResourceWriter> object in a `using` block, you do not explicitly have to call the <xref:System.Resources.ResXResourceWriter.Close%2A?displayProperty=nameWithType> method in step 3.
 
 2. Call the <xref:System.Resources.ResXResourceWriter.AddResource%2A?displayProperty=nameWithType> method for each resource you want to add to the file. Use the overloads of this method to add string, object, and binary (byte array) data. If the resource is an object, it must be serializable.
 
@@ -53,7 +53,7 @@ You cannot embed a .resx file in a runtime executable or compile it into a satel
 ## Retrieve a specific resource
  In addition to enumerating the items in a .resx file, you can retrieve a specific resource by name by using the <xref:System.Resources.ResXResourceSet?displayProperty=nameWithType> class. The <xref:System.Resources.ResourceSet.GetString%28System.String%29?displayProperty=nameWithType> method retrieves the value of a named string resource. The <xref:System.Resources.ResourceSet.GetObject%28System.String%29?displayProperty=nameWithType> method retrieves the value of a named object or binary data. The method returns an object that must then be cast (in C#) or converted (in Visual Basic) to an object of the appropriate type.
 
- The following example retrieves a form's caption string and icon by their resource names. It also retrieves the application-defined `Automobile` objects used in the previous example and displays them in a <xref:System.Windows.Forms.DataGridView> control.
+ The following examp'e retrieves a form's caption string and icon by their resource names. It also retrieves the application-defined `Automobile` objects used in the previous example and displays them in a <xref:System.Windows.Forms.DataGridView> control.
 
  [!code-csharp[Conceptual.Resources.ResX#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.resx/cs/retrieve1.cs#3)]
  [!code-vb[Conceptual.Resources.ResX#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.resx/vb/retrieve1.vb#3)]
@@ -82,3 +82,4 @@ You cannot embed a .resx file in a runtime executable or compile it into a satel
 - [Creating Resource Files](creating-resource-files-for-desktop-apps.md)
 - [Resgen.exe (Resource File Generator)](../tools/resgen-exe-resource-file-generator.md)
 - [Al.exe (Assembly Linker)](../tools/al-exe-assembly-linker.md)
+'

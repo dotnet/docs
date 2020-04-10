@@ -38,8 +38,7 @@ production with a different one.
 ### Configuration on .NET Framework
 
 If you have a working .NET Framework desktop application, chances are you have an
-*app.config* file accessed through the <xref:System.Configuration.AppSettingsSection> class from 
-the `System.Configuration` namespace.
+*app.config* file accessed through the <xref:System.Configuration.AppSettingsSection> class from the `System.Configuration` namespace.
 
 Within the .NET Framework infrastructure, there's a hierarchy of configuration
 files that inherit properties from its parents. You can find a *machine.config* file
@@ -80,14 +79,12 @@ environments, and manage them on a single function inside your code.
 
 ### Migrating Configuration files
 
-You can continue to use your existing app.config XML file. However, you could take this opportunity 
-to migrate your configuration to benefit from the several enhancements made on .NET Core.
+You can continue to use your existing app.config XML file. However, you could take this opportunity to migrate your configuration to benefit from the several enhancements made on .NET Core.
 
 To migrate from an old-style *app.config* to a new configuration file,
-you should choose between an XML format and a JSON format. 
+you should choose between an XML format and a JSON format.
 
-If you choose XML, the
-conversion is straightforward. Since the content is the same, just rename the *app.config* file
+If you choose XML, the conversion is straightforward. Since the content is the same, just rename the *app.config* file
 to a file with XML extension. Then, change the code that references AppSettings to use the ConfigurationBuilder class. That should be an easy change.
 
 If you want to use a JSON format and you don't want to migrate by hand,
@@ -170,8 +167,7 @@ just need to update some NuGet packages.
 
 ### EF Core vs. EF6
 
-There are two currently supported versions of Entity Framework (EF), 
-Entity Framework 6 (EF6) and EF Core.
+There are two currently supported versions of Entity Framework (EF), Entity Framework 6 (EF6) and EF Core.
 
 The latest technology released as part of the .NET Framework world is Entity
 Framework, with 6.4 being the latest version. With the launch of .NET Core,

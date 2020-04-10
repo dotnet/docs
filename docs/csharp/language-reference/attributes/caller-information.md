@@ -6,19 +6,15 @@ description: These attributes instruct the compiler to generate information abou
 
 # Reserved attributes: Determine caller information
 
-By using Caller Info attributes, you can obtain information about the caller to a method. You can obtain the file path of the source code, the line number in the source code, and the member name of the caller.
-
-To obtain member caller information, you use attributes that are applied to optional parameters. Each optional parameter specifies a default value. The following table lists the Caller Info attributes that are defined in the <xref:System.Runtime.CompilerServices?displayProperty=nameWithType> namespace:
+Using info attributes, you obtain information about the caller to a method. You obtain the file path of the source code, the line number in the source code, and the member name of the caller. To obtain member caller information, you use attributes that are applied to optional parameters. Each optional parameter specifies a default value. The following table lists the Caller Info attributes that are defined in the <xref:System.Runtime.CompilerServices?displayProperty=nameWithType> namespace:
 
 |Attribute|Description|Type|
 |---|---|---|
-|<xref:System.Runtime.CompilerServices.CallerFilePathAttribute>|Full path of the source file that contains the caller. This is the path at compile time.|`String`|
+|<xref:System.Runtime.CompilerServices.CallerFilePathAttribute>|Full path of the source file that contains the caller. The full path is the path at compile time.|`String`|
 |<xref:System.Runtime.CompilerServices.CallerLineNumberAttribute>|Line number in the source file from which the method is called.|`Integer`|
-|<xref:System.Runtime.CompilerServices.CallerMemberNameAttribute>|Method name or property name of the caller. For more information, see [Caller Information (C#)](../caller-information.md).|`String`|
+|<xref:System.Runtime.CompilerServices.CallerMemberNameAttribute>|Method name or property name of the caller.|`String`|
 
-For more information about the Caller Info attributes, see [Caller Information (C#)](../caller-information.md).
-
-By using Caller Info attributes, you can obtain information about the caller to a method. You can obtain file path of the source code, the line number in the source code, and the member name of the caller. This information is helpful for tracing, debugging, and creating diagnostic tools. The following example shows how to use Caller Info attributes. On each call to the `TraceMessage` method, the caller information is substituted as arguments to the optional parameters.
+This information helps you write tracing, debugging, and create diagnostic tools. The following example shows how to use caller info attributes. On each call to the `TraceMessage` method, the caller information is substituted as arguments to the optional parameters.
 
 ```csharp
 public void DoProcessing()
@@ -27,14 +23,14 @@ public void DoProcessing()
 }
 
 public void TraceMessage(string message,
-        [System.Runtime.CompilerServices.CallerMemberName] string memberName = "",
-        [System.Runtime.CompilerServices.CallerFilePath] string sourceFilePath = "",
-        [System.Runtime.CompilerServices.CallerLineNumber] int sourceLineNumber = 0)
+        [CallerMemberName] string memberName = "",
+        [CallerFilePath] string sourceFilePath = "",
+        [CallerLineNumber] int sourceLineNumber = 0)
 {
-    System.Diagnostics.Trace.WriteLine("message: " + message);
-    System.Diagnostics.Trace.WriteLine("member name: " + memberName);
-    System.Diagnostics.Trace.WriteLine("source file path: " + sourceFilePath);
-    System.Diagnostics.Trace.WriteLine("source line number: " + sourceLineNumber);
+    Trace.WriteLine("message: " + message);
+    Trace.WriteLine("member name: " + memberName);
+    Trace.WriteLine("source file path: " + sourceFilePath);
+    Trace.WriteLine("source line number: " + sourceLineNumber);
 }
 
 // Sample Output:
@@ -44,13 +40,7 @@ public void TraceMessage(string message,
 //  source line number: 31
 ```
 
-You must specify an explicit default value for each optional parameter. You can't apply Caller Info attributes to parameters that aren't specified as optional.
-
-The Caller Info attributes don't make a parameter optional. Instead, they affect the default value that's passed in when the argument is omitted.
-
-Caller Info values are emitted as literals into the Intermediate Language (IL) at compile time. Unlike the results of the <xref:System.Exception.StackTrace%2A> property for exceptions, the results aren't affected by obfuscation.
-
-You can explicitly supply the optional arguments to control the caller information or to hide caller information.
+You specify an explicit default value for each optional parameter. You can't apply caller info attributes to parameters that aren't specified as optional. The caller info attributes don't make a parameter optional. Instead, they affect the default value that's passed in when the argument is omitted. Caller info values are emitted as literals into the Intermediate Language (IL) at compile time. Unlike the results of the <xref:System.Exception.StackTrace%2A> property for exceptions, the results aren't affected by obfuscation. You can explicitly supply the optional arguments to control the caller information or to hide caller information.
 
 ### Member names
 
@@ -61,7 +51,7 @@ You can use the `CallerMemberName` attribute to avoid specifying the member name
 
 The following chart shows the member names that are returned when you use the `CallerMemberName` attribute.
 
-|Calls occurs within|Member name result|
+|Calls occur within|Member name result|
 |-|-|
 |Method, property, or event|The name of the method, property, or event from which the call originated.|
 |Constructor|The string ".ctor"|
@@ -73,13 +63,7 @@ The following chart shows the member names that are returned when you use the `C
 
 ## See also
 
-- [Attributes (C#)](./attributes/index.md)
-- [Common Attributes (C#)](./attributes/common-attributes.md)
-- [Named and Optional Arguments](../classes-and-structs/named-and-optional-arguments.md)
-- [Programming Concepts (C#)](./index.md)
+- [Named and Optional Arguments](../../programming-guide/classes-and-structs/named-and-optional-arguments.md)
 - <xref:System.Reflection>
 - <xref:System.Attribute>
-- [C# Programming Guide](../../index.md)
-- [Attributes](../../../../standard/attributes/index.md)
-- [Reflection (C#)](../reflection.md)
-- [Accessing Attributes by Using Reflection (C#)](./accessing-attributes-by-using-reflection.md)
+- [Attributes](../../../standard/attributes/index.md)

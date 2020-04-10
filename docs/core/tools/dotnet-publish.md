@@ -17,8 +17,8 @@ ms.date: 02/24/2020
 dotnet publish [<PROJECT>|<SOLUTION>] [-c|--configuration]
     [-f|--framework] [--force] [--interactive] [--manifest]
     [--no-build] [--no-dependencies] [--no-restore] [--nologo]
-    [-o|--output] [-p:PublishSingleFile] [-p:PublishTrimmed]
-    [-p:PublishReadyToRun] [-r|--runtime] [--self-contained]
+    [-o|--output] [-p:PublishReadyToRun] [-p:PublishSingleFile]
+    [-p:PublishTrimmed] [-r|--runtime] [--self-contained]
     [--no-self-contained] [-v|--verbosity] [--version-suffix]
 
 dotnet publish [-h|--help]

@@ -19,6 +19,8 @@ We recommend you use the following process when porting your project to .NET Cor
 
    .NET Core uses a simplified (and different) [project file format](../tools/csproj.md) than .NET Framework. You'll need to convert your project files into this format to continue. This project style allows you to also target .NET Framework, which at this point you'll still want to target.
 
+   You can attempt to port smaller solutions or individual projects in one operation to the .NET Core project file format with the [dotnet try-convert](https://github.com/dotnet/try-convert) tool. `dotnet try-convert` is not guaranteed to work for all your projects, and it may cause subtle changes in behavior that you depended on. Use it as a _starting point_ that automates the basic things that can be automated. It isn't a guaranteed solution to migrating a project, as there a number of differences in the targets used by the SDK style projects compared to the old-style project files.
+
 1. Convert all of your `packages.config` dependencies to the [PackageReference](/nuget/consume-packages/package-references-in-project-files) format with the [conversion tool in Visual Studio](/nuget/consume-packages/migrate-packages-config-to-package-reference).
 
    This step involves converting your dependencies from the legacy `packages.config` format. `packages.config` doesn't work on .NET Core, so this conversion is required if you have package dependencies. It also only requires the dependencies you are directly using in a project which will make later steps easier by reducing the amount of dependencies you must manage.
@@ -70,8 +72,6 @@ We recommend you use the following process when porting your project to .NET Cor
    ```xml
    <TargetFrameworks>net472;netstandard2.0</TargetFrameworks>
    ```
-
-Additionally, you can attempt to port smaller solutions or individual projects in one operation to the .NET Core project file format with the [dotnet try-convert](https://github.com/dotnet/try-convert) tool. `dotnet try-convert` is not guaranteed to work for all your projects, and it may cause subtle changes in behavior that you depended on. Use it as a _starting point_ that automates the basic things that can be automated. It isn't a guaranteed solution to migrating a project.
 
 ## Next steps
 

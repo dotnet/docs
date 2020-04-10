@@ -45,4 +45,4 @@ for (int i = 0; i < myFeatureBins.Length; i++)
 
 ![Generalized Additive Models shape function graph](./media/use-gams-for-model-explainability/gam-shape-function-graph.png)
 
-For a sample of how to train a GAM model and inspect and interpret the results, see [the dotnet/machinelearning GitHub repository](https://github.com/dotnet/machinelearning/blob/master/docs/samples/Microsoft.ML.Samples/Dynamic/GeneralizedAdditiveModels.cs).
+For an example of how to train a GAM model and inspect and interpret the results, see the [binary classification trainer sample](https://github.com/dotnet/machinelearning/blob/master/docs/samples/Microsoft.ML.Samples/Dynamic/Trainers/BinaryClassification/Gam.cs).

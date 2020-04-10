@@ -52,7 +52,7 @@ The <xref:System.Text.StringBuilder.ToString%2A?displayProperty=nameWithType> me
 
 You can produce a character array from a string, modify the contents of the array, and then create a new string from the modified contents of the array.
 
-The following example shows how to replace a set of characters in a string. First, it uses the <xref:System.String.ToCharArray?displayProperty=nameWithName> method to create an array of characters. It uses the <xref:System.String.IndexOf%2A> method to find the starting index of the word "fox." The next three characters are replaced with a different word. Finally, a new string is constructed from the updated character array.
+The following example shows how to replace a set of characters in a string. First, it uses the <xref:System.String.ToCharArray?displayProperty=nameWithType> method to create an array of characters. It uses the <xref:System.String.IndexOf%2A> method to find the starting index of the word "fox." The next three characters are replaced with a different word. Finally, a new string is constructed from the updated character array.
 
 [!code-csharp-interactive[replace creates a new string](../../../samples/snippets/csharp/how-to/strings/ModifyStrings.cs#6)]
 

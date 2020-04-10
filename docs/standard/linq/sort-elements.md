@@ -1,6 +1,6 @@
 ---
 title: How to sort elements - LINQ to XML
-description: Wite a query that sorts its results
+description: Write a query that sorts its results.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"

@@ -9,7 +9,7 @@ helpviewer_keywords:
   - "authoring overview for controls [WPF]"
 ms.assetid: 3d864748-cff0-4e63-9b23-d8e5a635b28f
 ---
-# Control Authoring Overview
+# Control authoring overview
 
 The extensibility of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] control model greatly reduces the need to create a new control. However, in certain cases you may still need to create a custom control. This topic discusses the features that minimize your need to create a custom control and the different control authoring models in [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)]. This topic also demonstrates how to create a new control.
 
@@ -221,7 +221,7 @@ When your control is in an assembly that is separate from the application, you m
 
 #### Defining Resources at the Element Level
 
-You can define shared resources at the element level by creating a custom resource dictionary and merging it with your control’s resource dictionary.  When you use this method, you can name your resource file anything you want, and it can be in the same folder as your controls. Resources at the element level can also use simple strings as keys. The following example creates a <xref:System.Windows.Media.LinearGradientBrush> resource file named Dictionary1.xaml.
+You can define shared resources at the element level by creating a custom resource dictionary and merging it with your control's resource dictionary.  When you use this method, you can name your resource file anything you want, and it can be in the same folder as your controls. Resources at the element level can also use simple strings as keys. The following example creates a <xref:System.Windows.Media.LinearGradientBrush> resource file named Dictionary1.xaml.
 
 [!code-xaml[SharedResources#1](~/samples/snippets/csharp/VS_Snippets_Wpf/SharedResources/CS/Dictionary1.xaml#1)]
 
@@ -258,7 +258,7 @@ Resources that are specific to a theme are kept in a resource dictionary with a 
 
 You do not need to define a resource for every theme. If a resource is not defined for a specific theme, then the control checks `Classic.xaml` for the resource. If the resource is not defined in the file that corresponds to the current theme or in `Classic.xaml`, the control uses the generic resource, which is in a resource dictionary file named `generic.xaml`.  The `generic.xaml` file is located in the same folder as the theme-specific resource dictionary files. Although `generic.xaml` does not correspond to a specific Windows theme, it is still a theme-level dictionary.
 
-The [C#](https://github.com/dotnet/samples/tree/master/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp) or [Visual Basic](https://github.com/dotnet/samples/tree/master/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic) NumericUpDown custom control with theme and UI automation support sample contains two resource dictionaries for the `NumericUpDown` control: one is in generic.xaml, and the other is in Luna.NormalColor.xaml.
+The [C#](https://github.com/dotnet/docs/tree/master/samples/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp) or [Visual Basic](https://github.com/dotnet/docs/tree/master/samples/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic) NumericUpDown custom control with theme and UI automation support sample contains two resource dictionaries for the `NumericUpDown` control: one is in generic.xaml, and the other is in Luna.NormalColor.xaml.
 
 When you put a <xref:System.Windows.Controls.ControlTemplate> in any of the theme-specific resource dictionary files, you must create a static constructor for your control and call the <xref:System.Windows.DependencyProperty.OverrideMetadata%28System.Type%2CSystem.Windows.PropertyMetadata%29> method on the <xref:System.Windows.FrameworkElement.DefaultStyleKey%2A>, as shown in the following example.
 

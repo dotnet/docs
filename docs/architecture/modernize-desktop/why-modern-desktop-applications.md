@@ -17,7 +17,7 @@ You might find yourself in the same boat, where you have mature Windows Forms or
 
 ### About this guide
 
-This guide is about strategies you can adopt to move your existing desktop applications through the path of modernization and incorporate the latest runtime, language, and platform features. You'll discover that there is no unique recipe as each application is different, and so are your requirements and preferences. The good news is that there are common approaches you can apply to add new features and capabilities to your applications. Some of them won't even require major modifications of your code. In this book, we'll reveal how all those features work behind the scenes and explain the mechanics of their implementations. Moreover, you'll find some common scenarios for modernizing existing desktop applications shown in detail so you can find inspiration for evolving your projects.
+This guide is about strategies you can adopt to move your existing desktop applications through the path of modernization and incorporate the latest runtime, language, and platform features. You'll discover that there's no unique recipe as each application is different, and so are your requirements and preferences. The good news is that there are common approaches you can apply to add new features and capabilities to your applications. Some of them won't even require major modifications of your code. In this book, we'll reveal how all those features work behind the scenes and explain the mechanics of their implementations. Moreover, you'll find some common scenarios for modernizing existing desktop applications shown in detail so you can find inspiration for evolving your projects.
 
 Microsoft's approach to modernizing existing applications is to give you the flexibility to create your own customized path. All the modernization strategies described in this book are mostly independent. You can choose ones that are relevant for your application and skip others that aren't important for you. In other words, you can mix and match the strategies to best address your application needs.
 
@@ -41,7 +41,7 @@ Here are some reasons for choosing desktop applications in your development:
 - It's easy to start coding and testing your algorithms without the need to set up a server infrastructure or to care about connectivity problems, firewalls, and browser compatibility.
 - Debugging is powerful as compared to web debugging.
 - Access to hardware devices, such as camera, Bluetooth, or card readers, is easy.
-- Since the technology has been around for a while, there's a large number of experts and a knowledge base available to develop desktop applications.
+- Since the technology has been around for a while, there are many experts and a knowledge base available to develop desktop applications.
 
 So, as you can see, developing for desktop is great for many reasons. The technology is mature and time tested, the development cycle is fast, the debugging is powerful and arguably, desktop apps have less complexity and easier to get started with.
 
@@ -81,7 +81,14 @@ Here are the main features of WPF:
 
 ### UWP
 
-UWP isn't only a presentation framework like WPF and Windows Forms, but it's also a platform itself. This platform has its own API set (the Windows Runtime API), a new deployment system (MSIX), a modern application lifecycle model (for low battery consumption), a new Resource Management System (based on PRI files), among other things. The platform was created to support all kind of input systems (like ink, touch, gamepad, mouse, keyboard, gaze, and so on) in all form-factors with performance and low battery consumption in mind. For these reasons, the shell of the Windows 10 OS uses parts of the UWP platform.
+UWP isn't only a presentation framework like WPF and Windows Forms, but it's also a platform itself. This platform has:
+
+- Its own API set (the Windows Runtime API).
+- A new deployment system (MSIX)
+- A modern application lifecycle model (for low battery consumption).
+- A new Resource Management System (based on PRI files). 
+ 
+The platform was created to support all kind of input systems (like ink, touch, gamepad, mouse, keyboard, gaze, and so on) in all form-factors with performance and low battery consumption in mind. For these reasons, the shell of the Windows 10 OS uses parts of the UWP platform.
 
 ![UWP structure](./media/why-modern-desktop-applications/uwp-structure.png)
 
@@ -142,7 +149,7 @@ With the launch of .NET Core 3.0, you can leverage a new approach of deploying m
 
 Desktop applications always rely on some sort of installation process before the user can start using them. This fact brought into the game a set of technologies, from MSI and ClickOnce to custom installers or even XCOPY deployment. Any of these methods deals with delicate problems because applications need a way to access shared resources on the machine. Sometimes installation needs to access the Registry to insert or update new Key Values, sometimes to update shared DLLs referenced by the main application. This causes a continuous headache for users, creating this perception that once you install some application, your computer will never be the same, even if you uninstall it afterwards.
 
-In this book, we'll introduce a new way of installing applications with MSIX that solves the problem described earlier. You'll learn how you can easy set up a packaging, installation, and updates for your application.
+In this book, we'll introduce a new way of installing applications with MSIX that solves the problem described earlier. You'll learn how you can easily set up a packaging, installation, and updates for your application.
 
 ## What this guide does not cover
 

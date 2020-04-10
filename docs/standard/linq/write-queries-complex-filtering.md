@@ -19,7 +19,7 @@ This example shows how to find all `PurchaseOrder` elements that have:
 - A child `Address` element whose `Type` attribute equals "Shipping".
 - A child `State` element that equals "NY".
 
- It uses a nested query in the `Where` clause, and the `Any` operator returns `true` if the collection has any elements in it. The example uses XML document [Sample XML file: Multiple purchase orders](sample-xml-file-multiple-purchase-orders.md).
+It uses a nested query in the `Where` clause, and the `Any` operator returns `true` if the collection has any elements in it. The example uses XML document [Sample XML file: Multiple purchase orders](sample-xml-file-multiple-purchase-orders.md).
 
 For more information about the `Any` operator, see [Quantifier Operations (C#)](../../../docs/csharp/programming-guide/concepts/linq/quantifier-operations.md) and [Quantifier Operations (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/quantifier-operations.md).
 

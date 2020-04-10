@@ -1,12 +1,12 @@
 ---
-title:  What's new with .NET Core 3 for Desktop?
-description: Learn about .NET Core, differences between .NET COre and .NET Framework and the new features tht were added in the latest version of the .NET Core - version 3.
+title:  What's new with .NET Core 3.0 for Desktop?
+description: Learn about .NET Core, differences between .NET Core and .NET Framework and the new features that were added in .NET Core 3.0.
 ms.date: 09/16/2019
 ---
 
-# What's new with .NET Core 3 for Desktop?
+# What's new with .NET Core 3.0 for Desktop?
 
-From the version 3.0, .NET Core supports Windows Forms and WPF, so now you have a choice between .NET Framework and .NET Core for your desktop applications. This chapter will describe what is .NET Core and what are it's benefits for desktop applications.
+Starting with .NET Core 3.0, .NET Core supports Windows Forms and WPF. So, now you have a choice between .NET Framework and .NET Core for your desktop applications. This chapter will describe what is .NET Core and what are its benefits for desktop applications.
 
 ## From .NET Framework to .NET Core - The motivation behind .NET Core
 
@@ -14,11 +14,11 @@ Since its launch in 2002, .NET Framework has evolved through the years to suppor
 
 If you're targeting only one of these platforms, you can use this model. However, in many cases you might need more than one target platform in the same solution. For example, your application may have a desktop admin part, a customer-facing web site that shares the back-end logic running on a server, and even a mobile client. In this case, you need a unified coding experience that can span all this .NET verticals.
 
-By the time Windows 8 was released, the concept of the Portable Class Libraries (PCL) was born. Originally, the .NET Framework was designed around the assumption that it would always be deployed as a single unit, so [factoring](http://en.wikipedia.org/wiki/Decomposition_(computer_science)) wasn't a concern. To face the problem of code sharing between verticals, the driving force was on how to refactor the framework. The idea of contracts is to provide a well-factored API surface area. Contracts are simply assemblies that you compile against and are designed with proper factoring in mind taking care of the dependencies between them.
+By the time Windows 8 was released, the concept of Portable Class Libraries (PCLs) was born. Originally, the .NET Framework was designed around the assumption that it would always be deployed as a single unit, so [factoring](http://en.wikipedia.org/wiki/Decomposition_(computer_science)) wasn't a concern. To face the problem of code sharing between verticals, the driving force was on how to refactor the framework. The idea of contracts is to provide a well-factored API surface area. Contracts are simply assemblies that you compile against and are designed with proper factoring in mind taking care of the dependencies between them.
 
 This leads to reasoning about the API differences between verticals at the assembly level, as opposed to the individual API level that we had before. This aspect enabled a class library experience that can target multiple verticals, also known as portable class libraries.
 
-![Release history of .NET Framework](./media/whats-new-dotnet-core-desktop/release-history.png)
+![Release history of .NET Framework](./media/whats-new-dotnet-core/release-history.png)
 
 With PCL, the experience of development is unified across verticals based on the API shape. And the most pressing need to create libraries running on different verticals is also addressed. But there's a great challenge: APIs are only portable when the implementation is moved forward across all the verticals.
 
@@ -50,7 +50,7 @@ The benefits of .NET Core come from these three characteristics:
 
 In .NET Core 3.0, besides the existing support for web and cloud, there's also support for desktop, IoT, and AI domains. The goal for this framework is impressive: to target every type of .NET development present and future. Microsoft plans to complete this vision with .NET 5 at the end of 2020. The "Core" name was removed to reinforce its uniqueness in the .NET world.
 
-![All domains of .NET 5](./media/whats-new-dotnet-core-desktop/all-domains-of-dotnet5.png)
+![All domains of .NET 5](./media/whats-new-dotnet-core/all-domains-of-dotnet5.png)
 
 ## .NET Framework vs. .NET Core
 
@@ -64,7 +64,7 @@ In 2019 the last version of the **.NET Framework - 4.8** was released. It includ
 
 Since .NET Framework is installed on millions of machines, Microsoft will continue to support it but won't add new features.
 
-.NET Core is the open-source, cross-platform, and fast-moving version of .NET. Because of its side-by-side nature, it can take changes without the fear of breaking any application. This means that .NET Core will get new APIs and language features over time that .NET Framework won't. Also, **.NET Core** already has features, that were impossible for .NET Framework, such as:
+.NET Core is the open-source, cross-platform, and fast-moving version of .NET. Because of its side-by-side nature, it can take changes without the fear of breaking any application. This means that .NET Core will get new APIs and language features over time that .NET Framework won't. Also, **.NET Core** already has features that were impossible for .NET Framework, such as:
 
 - **Side-by-side versions of .NET supporting Windows Forms and WPF**: This solves the problem of side effects when updating the machine's framework version. Multiple versions of .NET Core can be installed on the same machine and each application specifies which version of .NET Core it should use. Even more, now you can develop and run Windows Forms and WPF on top of .NET Core.
 - **Embed .NET directly into an application**: You can deploy .NET Core as part of your application package. This enables you to take advantage of the latest version, features, and APIs without having to wait for a specific version to be installed on the machine.
@@ -72,9 +72,9 @@ Since .NET Framework is installed on millions of machines, Microsoft will contin
 
 An essential part of the roadmap for Microsoft was to ease developers to move applications to .NET Core and in future to .NET 5. But if you have existing .NET Framework applications, you shouldn't feel pressured to move to .NET Core. .NET Framework will be fully supported and will always be a part of Windows. However, if you want to use the newest language features and APIs in the future, you'll need to move your applications to .NET Core.
 
-For your brand new desktop applications, we recommend starting directly on .NET Core. It's lightweight and cross platform, runs side by side, has high performance, and fits perfectly on containers and microservices architectures.
+For your brand-new desktop applications, we recommend starting directly on .NET Core. It's lightweight and cross platform, runs side by side, has high performance, and fits perfectly on containers and microservices architectures.
 
-![You can update your .NET Framework applications using the latest .NET Framework version or port your applications to .NET Core](./media/whats-new-dotnet-core-desktop/framework-vs-core.png)
+![You can update your .NET Framework applications using the latest .NET Framework version or port your applications to .NET Core](./media/whats-new-dotnet-core/framework-vs-core.png)
 
 ## .NET Standard vs. PCL
 
@@ -85,18 +85,18 @@ The .NET Standard enables the following key scenarios:
 - Defines uniform set of base class libraries APIs for all .NET implementations to implement, independent of the workload.
 - Enables developers to produce portable libraries that are usable across .NET implementations, using this same set of APIs.
 
-.NET Standard is the evolution of PCLs and here are the fundamental differences between .NET Standard and PCLs:
+.NET Standard is the evolution of PCLs and the following list shows the fundamental differences between .NET Standard and PCLs:
 
 - .NET Standard is a set of curated APIs, picked by Microsoft. PCLs aren't.
-- The APIs that a PCL contains are dependent on the platforms that you choose to target when you create a PCL. This makes a PCL only sharable for the specific targets that you choose.
+- The APIs that a PCL contains are dependent on the platforms that you choose to target when you create it. This makes a PCL only sharable for the specific targets that you choose.
 - .NET Standard is platform-agnostic, it can run anywhere, on Windows, macOS, Linux, and so on.
 - PCLs can also run cross-platform, but they have a more limited reach. PCLs can only target a limited set of platforms.
 
-## .NET Core 3 new Desktop features
+## New Desktop features in .NET Core 3.0
 
 ### Support for Windows Forms and WPF
 
-Windows Forms and WPF are part of .NET Core 3.0. Both presentation frameworks are for Windows only, so they aren't cross platform. You can think of WPF as a rich layer over DirectX and Windows Forms as a thinner layer over GDI+. WPF and Windows Forms do a great job of exposing and exercising much of the desktop application functionality in Windows. With .NET Core 3.0. Windows Forms and WPF are available for .NET Core and .NET Framework. Now you can start your new desktop applications targeting .NET Core and migrate your existing ones from .NET Framework to .NET Core.
+Windows Forms and WPF are part of .NET Core 3.0. Both presentation frameworks are for Windows only, so they aren't cross platform. You can think of WPF as a rich layer over DirectX and Windows Forms as a thinner layer over GDI+. WPF and Windows Forms do a great job of exposing and exercising much of the desktop application functionality in Windows. With .NET Core 3.0, Windows Forms and WPF are available for .NET Core and .NET Framework. Now you can start your new desktop applications targeting .NET Core and migrate your existing ones from .NET Framework to .NET Core.
 
 A new version of .NET Standard, version 2.1, was released at the same time. As expected, all new .NET Standard APIs are part of .NET Core 3.0.
 
@@ -141,4 +141,4 @@ This is a key success factor of .NET Core that will continue to speed up the roa
 
 >[!div class="step-by-step"]
 >[Previous](why-modern-desktop-applications.md)
->[Next](migrating-modern-desktop-applications.md)
+>[Next](migrate-modern-applications.md)

@@ -11,7 +11,7 @@ When publishing an application self-contained, the .NET Core runtime is bundled 
 
 Depending on the complexity of the application, only a subset of the runtime is required to run the application. These unused parts of the runtime are unnecessary and can be trimmed from the packaged application.
 
-The trimming feature works by examining the application binaries to discover and build a graph of the required runtime assemblies. The remaining runtime assemblies that aren't referenced are trimmed.
+The trimming feature works by examining the application binaries to discover and build a graph of the required runtime assemblies. The remaining runtime assemblies that aren't referenced are excluded.
 
 > [!NOTE]
 > Trimming is an experimental feature in .NET Core 3.1 and is _only_ available to applications that are published self-contained.

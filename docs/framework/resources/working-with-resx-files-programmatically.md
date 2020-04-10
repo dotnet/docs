@@ -9,10 +9,11 @@ helpviewer_keywords:
   - ".resx files"
 ms.assetid: 168f941a-2b84-43f8-933f-cf4a8548d824
 ---
-# Working with .resx files programmatically
-Because XML resource (.resx) files must consist of well-defined XML, including a header that must follow a specific schema followed by data in name/value pairs, you may find that creating these files manually is error-prone. As an alternative, you can create .resx files programmatically by using types and members in the .NET Class Library. You can also use the .NET Class Library to retrieve resources that are stored in .resx files. This topic explains how you can use the types and members in the <xref:System.Resources> namespace to work with .resx files.
+# Work with .resx files programmatically
 
- Note that this article discusses working with XML (.resx) files that contain resources. For information on working with binary resource files that have been embedded in assemblies, see the <xref:System.Resources.ResourceManager> topic.
+Because XML resource (.resx) files must consist of well-defined XML, including a header that must follow a specific schema followed by data in name/value pairs, you may find that creating these files manually is error-prone. As an alternative, you can create .resx files programmatically by using types and members in the .NET Class Library. You can also use the .NET Class Library to retrieve resources that are stored in .resx files. This article explains how you can use the types and members in the <xref:System.Resources> namespace to work with .resx files.
+
+This article discusses working with XML (.resx) files that contain resources. For information on working with binary resource files that have been embedded in assemblies, see <xref:System.Resources.ResourceManager>.
 
 > [!WARNING]
 > There are also ways to work with .resx files other than programmatically. When you add a resource file to a [Visual Studio](https://visualstudio.microsoft.com/vs/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link) project, Visual Studio provides an interface for creating and maintaining a .resx file, and automatically converts the .resx file to a .resources file at compile time. You can also use a text editor to manipulate a .resx file directly. However, to avoid corrupting the file, be careful not to modify any binary information that is stored in the file.
@@ -32,7 +33,7 @@ The resulting .resx file has the appropriate header and a `data` tag for each re
 > [!WARNING]
 > Do not use resource files to store passwords, security-sensitive information, or private data.
 
-The following example creates a .resx file named CarResources.resx that stores six strings, an icon, and two application-defined objects (two `Automobile` objects). Note that the `Automobile` class, which is defined and instantiated in the example, is tagged with the <xref:System.SerializableAttribute> attribute.
+The following example creates a .resx file named CarResources.resx that stores six strings, an icon, and two application-defined objects (two `Automobile` objects). The `Automobile` class, which is defined and instantiated in the example, is tagged with the <xref:System.SerializableAttribute> attribute.
 
 [!code-csharp[Conceptual.Resources.ResX#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.resx/cs/create1.cs#1)]
 [!code-vb[Conceptual.Resources.ResX#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.resx/vb/create1.vb#1)]
@@ -53,7 +54,7 @@ You cannot embed a .resx file in a runtime executable or compile it into a satel
 ## Retrieve a specific resource
  In addition to enumerating the items in a .resx file, you can retrieve a specific resource by name by using the <xref:System.Resources.ResXResourceSet?displayProperty=nameWithType> class. The <xref:System.Resources.ResourceSet.GetString%28System.String%29?displayProperty=nameWithType> method retrieves the value of a named string resource. The <xref:System.Resources.ResourceSet.GetObject%28System.String%29?displayProperty=nameWithType> method retrieves the value of a named object or binary data. The method returns an object that must then be cast (in C#) or converted (in Visual Basic) to an object of the appropriate type.
 
- The following examp'e retrieves a form's caption string and icon by their resource names. It also retrieves the application-defined `Automobile` objects used in the previous example and displays them in a <xref:System.Windows.Forms.DataGridView> control.
+ The following example retrieves a form's caption string and icon by their resource names. It also retrieves the application-defined `Automobile` objects used in the previous example and displays them in a <xref:System.Windows.Forms.DataGridView> control.
 
  [!code-csharp[Conceptual.Resources.ResX#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.resources.resx/cs/retrieve1.cs#3)]
  [!code-vb[Conceptual.Resources.ResX#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.resources.resx/vb/retrieve1.vb#3)]
@@ -82,4 +83,3 @@ You cannot embed a .resx file in a runtime executable or compile it into a satel
 - [Creating Resource Files](creating-resource-files-for-desktop-apps.md)
 - [Resgen.exe (Resource File Generator)](../tools/resgen-exe-resource-file-generator.md)
 - [Al.exe (Assembly Linker)](../tools/al-exe-assembly-linker.md)
-'

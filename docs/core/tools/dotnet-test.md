@@ -79,7 +79,7 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
 - **`l|--logger <LoggerUri/FriendlyName>`**
 
-  Specifies a logger for test results.
+  Specifies a logger for test results. Unlike MSBuild, dotnet test doesn't accept abbreviations: instead of `-l "console;v=d"` use `-l "console;verbosity=detailed"`.
 
 - **`--no-build`**
 
@@ -115,7 +115,7 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
 - **`-v|--verbosity <LEVEL>`**
 
-  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
+  Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. The default is `minimal`. For more information, see <xref:Microsoft.Build.Framework.LoggerVerbosity>.
 
 - `RunSettings` arguments
 
@@ -139,10 +139,16 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
   dotnet test ~/projects/test1/test1.csproj
   ```
 
-- Run the tests in the project in the current directory and generate a test results file in the trx format:
+- Run the tests in the project in the current directory, and generate a test results file in the trx format:
 
   ```dotnetcli
   dotnet test --logger trx
+  ```
+
+- Run the tests in the project in the current directory, and log with detailed verbosity to the console:
+
+  ```dotnetcli
+  dotnet test --logger "console;verbosity=detailed"
   ```
 
 ## Filter option details
@@ -186,3 +192,4 @@ For more information and examples on how to use selective unit test filtering, s
 
 - [Frameworks and Targets](../../standard/frameworks.md)
 - [.NET Core Runtime IDentifier (RID) catalog](../rid-catalog.md)
+- [Passing runsettings arguments through commandline](https://github.com/Microsoft/vstest-docs/blob/master/docs/RunSettingsArguments.md)

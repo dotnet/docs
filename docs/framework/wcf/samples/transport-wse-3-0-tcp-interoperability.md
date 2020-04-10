@@ -166,7 +166,7 @@ Symbols:
   
 #### To set up, build, and run the sample  
   
-1. To run this sample, you must have WSE 3.0 and the WSE `TcpSyncStockService` sample installed. You can download [WSE 3.0 from MSDN](https://go.microsoft.com/fwlink/?LinkId=95000).  
+1. To run this sample, you must have [Web Services Enhancements (WSE) 3.0 for Microsoft .NET](https://www.microsoft.com/download/details.aspx?id=14089) and the WSE `TcpSyncStockService` sample installed.
   
 > [!NOTE]
 > Because WSE 3.0 is not supported on Windows Server 2008, you cannot install or run the `TcpSyncStockService` sample on that operating system.  

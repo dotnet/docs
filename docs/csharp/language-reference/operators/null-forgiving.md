@@ -13,7 +13,7 @@ Available in C# 8.0 and later, the unary postfix `!` operator is the null-forgiv
 
 The null-forgiving operator has no effect at run time. It only affects the compiler's static flow analysis by changing the null state of the expression. At run time, expression `x!` evaluates to the result of the underlying expression `x`.
 
-For more information about the nullable reference types feature, see [Nullable reference types](../../nullable-references.md).
+For more information about the nullable reference types feature, see [Nullable reference types](../builtin-types/nullable-reference-types.md).
 
 ## Examples
 

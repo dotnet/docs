@@ -44,7 +44,7 @@ You can use a <xref:System.Threading.Mutex> object to provide exclusive access t
 ## See also
 
 - <xref:System.Threading.Mutex?displayProperty=nameWithType>
-- <xref:System.Threading.Mutex.%23ctor%2A?displayProperty=nameWithType>
+- <xref:System.Threading.Mutex.%23ctor%2A>
 - <xref:System.Security.AccessControl.MutexSecurity?displayProperty=nameWithType>
 - <xref:System.Security.AccessControl.MutexAccessRule?displayProperty=nameWithType>
 - <xref:System.Threading.Monitor?displayProperty=nameWithType>

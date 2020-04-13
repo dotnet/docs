@@ -36,7 +36,7 @@ When you develop a WCF Data Service as an ASP.NET application or ASP.NET Web sit
 
 1. **Local IIS Server**
 
-     When you create a data service that is an ASP.NET application or ASP.NET Web site that runs on Internet Information Services (IIS), we recommend that you develop and test your data service by using IIS on the local computer. Running the data service on IIS makes it easier to trace HTTP requests during debugging. This also enables you to pre-determine the necessary rights required by IIS to access files, databases, and other resources required by the data service. To run your data service on IIS, you must makes sure that both IIS and Windows Communication Foundation (WCF) are installed and configured correctly and grant access to IIS accounts in the file system and databases. For more information, see [How to: Develop a WCF Data Service Running on IIS](how-to-develop-a-wcf-data-service-running-on-iis.md).
+     When you create a data service that is an ASP.NET application or ASP.NET Web site that runs on Internet Information Services (IIS), we recommend that you develop and test your data service by using IIS on the local computer. Running the data service on IIS makes it easier to trace HTTP requests during debugging. This also enables you to pre-determine the necessary rights required by IIS to access files, databases, and other resources required by the data service. To run your data service on IIS, make sure that both IIS and Windows Communication Foundation (WCF) are installed and configured correctly and grant access to IIS accounts in the file system and databases. For more information, see [How to: Develop a WCF Data Service Running on IIS](how-to-develop-a-wcf-data-service-running-on-iis.md).
 
     > [!NOTE]
     > You must run Visual Studio with administrator rights to enable the develop environment to configure the local IIS server.
@@ -55,7 +55,7 @@ When you develop a WCF Data Service as an ASP.NET application or ASP.NET Web sit
 
     - This server does not include the extra facilities of IIS, such as authentication.
 
-    - This server cannot handle chunked HTTP streams, which are sent be default by the WCF Data Services client when accessing large binary data from the data service. For more information, see [Streaming Provider](streaming-provider-wcf-data-services.md).
+    - This server cannot handle chunked HTTP streams, which are sent by default by the WCF Data Services client when accessing large binary data from the data service. For more information, see [Streaming Provider](streaming-provider-wcf-data-services.md).
 
     - This server has issues with processing the period (`.`) character in a URL, even though this character is supported by WCF Data Services in key values.
 
@@ -68,11 +68,11 @@ When you develop a WCF Data Service as an ASP.NET application or ASP.NET Web sit
 
 ### Development Tips
 
-You should consider the following when you develop a data service:
+Consider the following when you develop a data service:
 
-- Determine the security requirements of your data service, if you plan authenticate users or restrict access for specific users. For more information, see [Securing WCF Data Services](securing-wcf-data-services.md).
+- If you plan to authenticate users or restrict access for specific users, determine the security requirements of your data service. For more information, see [Securing WCF Data Services](securing-wcf-data-services.md).
 
-- An HTTP inspection program can be very helpful when debugging a data service by enabling you to inspect the contents of request and response messages. Any network packet analyzer that can display raw packets can be used to inspect HTTP requests to and responses from the data service.
+- An HTTP inspection program can be helpful when debugging a data service by enabling you to inspect the contents of request and response messages. Any network packet analyzer that can display raw packets can be used to inspect HTTP requests to and responses from the data service.
 
 - When debugging a data service, you may want to get more information about an error from the data service than during regular operation. You can get additional error information from the data service by setting the <xref:System.Data.Services.DataServiceConfiguration.UseVerboseErrors%2A> property in the <xref:System.Data.Services.DataServiceConfiguration> to `true` and by setting the <xref:System.ServiceModel.Description.ServiceDebugBehavior.IncludeExceptionDetailInFaults%2A> property of the <xref:System.ServiceModel.Description.ServiceDebugBehavior> attribute on the data service class to `true`. For more information, see the post [Debugging WCF Data Services](https://docs.microsoft.com/archive/blogs/phaniraj/debugging-wcf-data-services). You can also enable tracing in WCF to view exceptions raised in the HTTP messaging layer. For more information, see [Configuring Tracing](../../wcf/diagnostics/tracing/configuring-tracing.md).
 
@@ -113,7 +113,7 @@ WCF Data Service provides flexibility in choosing the process that hosts the dat
 
 ### Deployment Considerations
 
-You should consider the following when deploying a data service:
+Consider the following when deploying a data service:
 
 - When you deploy a data service that uses the Entity Framework provider to access a SQL Server database, you might also have to propagate data structures, data, or both with your data service deployment. Visual Studio can automatically create scripts (.sql files) to do this in the destination database, and these scripts can be included in the Web deployment package of an ASP.NET application. For more information, see [How to: Deploy a Database With a Web Application Project](https://docs.microsoft.com/previous-versions/dd465343(v=vs.100)). For an ASP.NET Web site, you can do this by using the **Database Publishing Wizard** in Visual Studio. For more information, see [Publishing a SQL Database](https://docs.microsoft.com/previous-versions/aspnet/bb907585(v=vs.100)).
 

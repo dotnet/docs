@@ -3,7 +3,7 @@ title: "C# Reserved attributes: Nullable static analysis"
 ms.date: 04/14/2020
 description: These attributes are interpreted by the compiler to provide better static analysis for nullable and non-nullable reference types.
 ---
-# Reserved attributes contribute to the compiler's null state static analysis.
+# Reserved attributes contribute to the compiler's null state static analysis
 
 In a nullable context, the compiler performs static analysis of code to determine the null state of all reference type variables:
 

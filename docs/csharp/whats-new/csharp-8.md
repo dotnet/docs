@@ -70,7 +70,7 @@ The compiler warns you when it needs to create a defensive copy.  The `Distance`
 public readonly double Distance => Math.Sqrt(X * X + Y * Y);
 ```
 
-Notice that the `readonly` modifier is necessary on a read-only property. The compiler doesn't assume `get` accessors don't modify state; you must declare `readonly` explicitly. Auto-implemented properties are an exception; the compiler will treat all auto-implemented getters as readonly, so here there's no need to add the `readonly` modifier to the `X` and `Y` properties.
+Notice that the `readonly` modifier is necessary on a read-only property. The compiler doesn't assume `get` accessors don't modify state; you must declare `readonly` explicitly. Auto-implemented properties are an exception; the compiler will treat all auto-implemented getters as `readonly`, so here there's no need to add the `readonly` modifier to the `X` and `Y` properties.
 
 The compiler does enforce the rule that `readonly` members don't modify state. The following method won't compile unless you remove the `readonly` modifier:
 
@@ -82,7 +82,9 @@ public readonly void Translate(int xOffset, int yOffset)
 }
 ```
 
-This feature lets you specify your design intent so the compiler can enforce it, and make optimizations based on that intent. You can learn more about readonly members in the language reference article on [`readonly`](../language-reference/keywords/readonly.md#readonly-member-examples).
+This feature lets you specify your design intent so the compiler can enforce it, and make optimizations based on that intent.
+
+For more information, see the [`readonly` instance members](../language-reference/builtin-types/struct.md#readonly-instance-members) section of the [Structure types](../language-reference/builtin-types/struct.md) article.
 
 ## Default interface methods
 

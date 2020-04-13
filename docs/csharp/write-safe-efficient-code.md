@@ -1,7 +1,7 @@
 ---
 title: Write safe and efficient C# code
 description: Recent enhancements to the C# language enable you to write verifiable safe code that the performance previously associated with unsafe code. 
-ms.date: 10/23/2018
+ms.date: 03/17/2020
 ms.technology: csharp-advanced-concepts
 ms.custom: mvc
 ---
@@ -17,7 +17,7 @@ This article focuses on techniques for efficient resource management. One advant
 This article focuses on the following resource management techniques:
 
 - Declare a [`readonly struct`](language-reference/builtin-types/struct.md#readonly-struct) to express that a type is **immutable**. That enables the compiler to save defensive copies when using [`in`](language-reference/keywords/in-parameter-modifier.md) parameters.
-- If a type can't be immutable, declare `struct` members `readonly` to indicate that the member doesn't modify state.
+- If a type can't be immutable, declare `struct` members [`readonly`](language-reference/builtin-types/struct.md#readonly-instance-members) to indicate that the member doesn't modify state.
 - Use a [`ref readonly`](language-reference/keywords/ref.md#reference-return-values) return when the return value is a `struct` larger than <xref:System.IntPtr.Size?displayProperty=nameWithType> and the storage lifetime is greater than the method returning the value.
 - When the size of a `readonly struct` is bigger than <xref:System.IntPtr.Size?displayProperty=nameWithType>, you should pass it as an `in` parameter for performance reasons.
 - Never pass a `struct` as an `in` parameter unless it's declared with the `readonly` modifier or the method calls only `readonly` members of the struct. Violating this guidance may negatively affect performance and could lead to an obscure behavior.

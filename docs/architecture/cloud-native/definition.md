@@ -109,7 +109,7 @@ Communication is covered in detail Chapter 4, *Cloud-Native Communication Patter
 
 *Resiliency*
 
-A microservices architecture moves your system from in-process to network communication. In a distributed environment, what will you do when Service B isn't responding to a call from Service A? What happens when Service C becomes up temporarily unavailable and other services calling it stack and degrade system performance?
+A microservices architecture moves your system from in-process to out-of-process network communication. In a distributed architecture, what happens when Service B isn't responding to a network call from Service A? Or, what happens when Service C becomes temporarily unavailable and other services calling it are blocked?
 
 Resiliency is covered in detail Chapter 6, *Cloud-Native Resiliency*.
 

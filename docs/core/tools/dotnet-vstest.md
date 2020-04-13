@@ -91,8 +91,6 @@ The `dotnet-vstest` command runs the `VSTest.Console` command-line application t
 
   Specifies the port for the socket connection and receiving the event messages.
 
-    [--TestCaseFilter] [--Tests] [[--] <args>...]] [-?|--Help]
-
 - **`--ResultsDirectory:<PathToResulsDirectory>`**
 
   Test results directory will be created in specified path if not exists.

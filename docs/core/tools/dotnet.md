@@ -51,7 +51,7 @@ The `dotnet` command has two functions:
 
 - It runs .NET Core applications.
 
-  You specify the path to an application `.dll` file to run the application. For example, `dotnet myapp.dll` runs the `myapp` application. See [.NET Core application deployment](../deploying/index.md) to learn about deployment options.
+  You specify the path to an application `.dll` file to run the application.  To run the application means to find and execute the entry point, which in the case of console apps is the `Main` method. For example, `dotnet myapp.dll` runs the `myapp` application. See [.NET Core application deployment](../deploying/index.md) to learn about deployment options.
 
 ## Options
 
@@ -71,7 +71,7 @@ The following options are for `dotnet` by itself. For example, `dotnet --info`. 
 
 - **`--list-runtimes`**
 
-  Prints out a list of the installed .NET Core runtimes.
+  Prints out a list of the installed .NET Core runtimes. An x86 version of the SDK lists only x86 runtimes, and an x64 version of the SDK lists only x64 runtimes.
 
 - **`--list-sdks`**
 

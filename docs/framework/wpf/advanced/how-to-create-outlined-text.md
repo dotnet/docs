@@ -14,7 +14,7 @@ ms.assetid: 4aa3cf6e-1953-4f26-8230-7c1409e5f28d
 ---
 # How to: Create outlined text
 
-In most cases, when you are adding ornamentation to text strings in your [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] application, you are using text in terms of a collection of discrete characters, or glyphs. For example, you could create a linear gradient brush and apply it to the <xref:System.Windows.Controls.Control.Foreground%2A> property of a <xref:System.Windows.Controls.TextBox> object. When you display or edit the text box, the linear gradient brush is automatically applied to the current set of characters in the text string.  
+In most cases, when you're adding ornamentation to text strings in your [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] application, you are using text in terms of a collection of discrete characters, or glyphs. For example, you could create a linear gradient brush and apply it to the <xref:System.Windows.Controls.Control.Foreground%2A> property of a <xref:System.Windows.Controls.TextBox> object. When you display or edit the text box, the linear gradient brush is automatically applied to the current set of characters in the text string.  
   
  ![Text displayed with a linear gradient brush](./media/how-to-create-outlined-text/text-linear-gradient.jpg)
   
@@ -30,7 +30,7 @@ In most cases, when you are adding ornamentation to text strings in your [!INCLU
   
  ![Text with image brush applied to stroke](./media/how-to-create-outlined-text/image-brush-application.jpg)
   
- It is also possible to modify the bounding box rectangle, or highlight, of the converted text. The following example illustrates a way to creating visual effects by modifying the stroke and highlight of converted text.  
+ It is also possible to modify the bounding box rectangle, or highlight, of the converted text. The following example illustrates a way to create visual effects by modifying the stroke and highlight of converted text.  
   
  ![Text with image brush applied to stroke and highlight](./media/how-to-create-outlined-text/image-brush-text-application.jpg)
 
@@ -40,7 +40,7 @@ In most cases, when you are adding ornamentation to text strings in your [!INCLU
  [!code-csharp[OutlineTextControlViewer#CreateText](~/samples/snippets/csharp/VS_Snippets_Wpf/OutlineTextControlViewer/CSharp/OutlineTextControl.cs#createtext)]
  [!code-vb[OutlineTextControlViewer#CreateText](~/samples/snippets/visualbasic/VS_Snippets_Wpf/OutlineTextControlViewer/visualbasic/outlinetextcontrol.vb#createtext)]  
   
- In order to display the retrieved the <xref:System.Windows.Media.Geometry> objects, you need to access the <xref:System.Windows.Media.DrawingContext> of the object that is displaying the converted text. In these code examples, this is done by creating a custom control object that is derived from a class that supports user-defined rendering.  
+ In order to display the retrieved the <xref:System.Windows.Media.Geometry> objects, you need to access the <xref:System.Windows.Media.DrawingContext> of the object that's displaying the converted text. In these code examples, this access is achieved by creating a custom control object that's derived from a class that supports user-defined rendering.  
   
  To display <xref:System.Windows.Media.Geometry> objects in the custom control, provide an override for the <xref:System.Windows.UIElement.OnRender%2A> method. Your overridden method should use the <xref:System.Windows.Media.DrawingContext.DrawGeometry%2A> method to draw the <xref:System.Windows.Media.Geometry> objects.  
   

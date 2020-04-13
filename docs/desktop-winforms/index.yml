@@ -1,0 +1,22 @@
+### YamlMime:Landing
+
+title: Windows Forms documentation
+summary: Learn about using Windows Forms, an open-source, graphical user interface for Windows, on .NET 5.
+
+metadata:
+  title: Windows Forms for .NET 5 documentation
+  description: Learn about using Windows Forms, an open-source, graphical user interface for Windows, on .NET 5.
+  ms.topic: landing-page
+  ms.date: 04/05/2020
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+landingContent:
+
+  # Card
+  - title: Learn about Windows Forms
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Windows Forms overview
+            url: overview/index.md

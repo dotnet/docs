@@ -13,14 +13,14 @@ As mentioned previously, the application layer can be implemented as part of the
 For instance, the application layer code of the ordering microservice is directly implemented as part of the **Ordering.API** project (an ASP.NET Core Web API project), as shown in Figure 7-23.
 
 :::image type="complex" source="./media/microservice-application-layer-implementation-web-api/ordering-api-microservice.png" alt-text="Screenshot of the Ordering.API microservice in the Solution Explorer.":::
-The Solution Explorer view of the Ordering.API microservice, showing the sub-folders under the Application folder: Behaviors, Commands, DomainEventHandlers, IntegrationEvents, Models, Queries and Validations.
+The Solution Explorer view of the Ordering.API microservice, showing the subfolders under the Application folder: Behaviors, Commands, DomainEventHandlers, IntegrationEvents, Models, Queries, and Validations.
 :::image-end:::
 
 **Figure 7-23**. The application layer in the Ordering.API ASP.NET Core Web API project
 
 ASP.NET Core includes a simple [built-in IoC container](https://docs.microsoft.com/aspnet/core/fundamentals/dependency-injection) (represented by the IServiceProvider interface) that supports constructor injection by default, and ASP.NET makes certain services available through DI. ASP.NET Core uses the term *service* for any of the types you register that will be injected through DI. You configure the built-in container's services in the ConfigureServices method in your application's Startup class. Your dependencies are implemented in the services that a type needs and that you register in the IoC container.
 
-Typically, you want to inject dependencies that implement infrastructure objects. A very typical dependency to inject is a repository. But you could inject any other infrastructure dependency that you may have. For simpler implementations, you could directly inject your Unit of Work pattern object (the EF DbContext object), because the DBContext is also the implementation of your infrastructure persistence objects.
+Typically, you want to inject dependencies that implement infrastructure objects. A typical dependency to inject is a repository. But you could inject any other infrastructure dependency that you may have. For simpler implementations, you could directly inject your Unit of Work pattern object (the EF DbContext object), because the DBContext is also the implementation of your infrastructure persistence objects.
 
 In the following example, you can see how .NET Core is injecting the required repository objects through the constructor. The class is a command handler, which we will cover in the next section.
 
@@ -145,7 +145,7 @@ public class ApplicationModule : Autofac.Module
 
 Autofac also has a feature to [scan assemblies and register types by name conventions](https://autofac.readthedocs.io/en/latest/register/scanning.html).
 
-The registration process and concepts are very similar to the way you can register types with the built-in ASP.NET Core IoC container, but the syntax when using Autofac is a bit different.
+The registration process and concepts are similar to the way you can register types with the built-in ASP.NET Core IoC container, but the syntax when using Autofac is a bit different.
 
 In the example code, the abstraction IOrderRepository is registered along with the implementation class OrderRepository. This means that whenever a constructor is declaring a dependency through the IOrderRepository abstraction or interface, the IoC container will inject an instance of the OrderRepository class.
 
@@ -428,7 +428,7 @@ The above diagram shows a zoom-in from image 7-24: the ASP.NET Core controller s
 
 The reason that using the Mediator pattern makes sense is that in enterprise applications, the processing requests can get complicated. You want to be able to add an open number of cross-cutting concerns like logging, validations, audit, and security. In these cases, you can rely on a mediator pipeline (see [Mediator pattern](https://en.wikipedia.org/wiki/Mediator_pattern)) to provide a means for these extra behaviors or cross-cutting concerns.
 
-A mediator is an object that encapsulates the "how" of this process: it coordinates execution based on state, the way a command handler is invoked, or the payload you provide to the handler. With a mediator component you can apply cross-cutting concerns in a centralized and transparent way by applying decorators (or [pipeline behaviors](https://github.com/jbogard/MediatR/wiki/Behaviors) since [MediatR 3](https://www.nuget.org/packages/MediatR/3.0.0)). For more information, see the [Decorator pattern](https://en.wikipedia.org/wiki/Decorator_pattern).
+A mediator is an object that encapsulates the "how" of this process: it coordinates execution based on state, the way a command handler is invoked, or the payload you provide to the handler. With a mediator component, you can apply cross-cutting concerns in a centralized and transparent way by applying decorators (or [pipeline behaviors](https://github.com/jbogard/MediatR/wiki/Behaviors) since [MediatR 3](https://www.nuget.org/packages/MediatR/3.0.0)). For more information, see the [Decorator pattern](https://en.wikipedia.org/wiki/Decorator_pattern).
 
 Decorators and behaviors are similar to [Aspect Oriented Programming (AOP)](https://en.wikipedia.org/wiki/Aspect-oriented_programming), only applied to a specific process pipeline managed by the mediator component. Aspects in AOP that implement cross-cutting concerns are applied based on *aspect weavers* injected at compilation time or based on object call interception. Both typical AOP approaches are sometimes said to work "like magic," because it is not easy to see how AOP does its work. When dealing with serious issues or bugs, AOP can be difficult to debug. On the other hand, these decorators/behaviors are explicit and applied only in the context of the mediator, so debugging is much more predictable and easy.
 
@@ -472,7 +472,7 @@ Another good reason to use the Mediator pattern was explained by Jimmy Bogard wh
 
 > I think it might be worth mentioning testing here – it provides a nice consistent window into the behavior of your system. Request-in, response-out. We've found that aspect quite valuable in building consistently behaving tests.
 
-First, let's look at a sample WebAPI controller where you actually would use the mediator object. If you weren't using the mediator object, you'd need to inject all the dependencies for that controller, things like a logger object and others. Therefore, the constructor would be quite complicated. On the other hand, if you use the mediator object, the constructor of your controller can be a lot simpler, with just a few dependencies instead of many dependencies if you had one per cross-cutting operation, as in the following example:
+First, let's look at a sample WebAPI controller where you actually would use the mediator object. If you weren't using the mediator object, you'd need to inject all the dependencies for that controller, for example, a logger object. The constructor would be quite complicated. On the other hand, if you use the mediator object, the constructor of your controller can be a lot simpler, with just a few dependencies instead of many dependencies if you had one per cross-cutting operation, as in the following example:
 
 ```csharp
 public class MyMicroserviceController : Controller
@@ -503,7 +503,7 @@ public async Task<IActionResult> ExecuteBusinessOperation([FromBody]RunOpCommand
 
 In **eShopOnContainers**, a more advanced example than the above is submitting a CreateOrderCommand object from the Ordering microservice. But since the Ordering business process is a bit more complex and, in our case, it actually starts in the Basket microservice, this action of submitting the CreateOrderCommand object is performed from an integration-event handler named [UserCheckoutAcceptedIntegrationEventHandler](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Application/IntegrationEvents/EventHandling/UserCheckoutAcceptedIntegrationEventHandler.cs) instead of a simple WebAPI controller called from the client App as in the previous simpler example.
 
-Nevertheless, the action of submitting the Command to MediatR is pretty similar, as shown in the following code.
+Nevertheless, the action of submitting the Command to MediatR is similar, as shown in the following code.
 
 ```csharp
 var createOrderCommand = new CreateOrderCommand(eventMsg.Basket.Items,
@@ -521,11 +521,11 @@ var requestCreateOrder = new IdentifiedCommand<CreateOrderCommand,bool>(createOr
 result = await _mediator.Send(requestCreateOrder);
 ```
 
-However, this case is also a little bit more advanced because we're also implementing idempotent commands. The CreateOrderCommand process should be idempotent, so if the same message comes duplicated through the network, because of any reason, like retries, the same business order will be processed just once.
+However, this case is slightly more advanced because we're also implementing idempotent commands. The CreateOrderCommand process should be idempotent, so if the same message comes duplicated through the network for any reason, like retries, the same business order will be processed just once.
 
-This is implemented by wrapping the business command (in this case CreateOrderCommand) and embedding it into a generic IdentifiedCommand which is tracked by an ID of every message coming through the network that has to be idempotent.
+This is implemented by wrapping the business command (in this case CreateOrderCommand) and embedding it into a generic `IdentifiedCommand`. Each `IdentifiedCommand` is tracked by an ID of every message coming through the network that must be idempotent.
 
-In the code below, you can see that the IdentifiedCommand is nothing more than a DTO with and ID plus the wrapped business command object.
+In the code below, you can see that `IdentifiedCommand` is nothing more than a DTO with an ID plus the wrapped business command object.
 
 ```csharp
 public class IdentifiedCommand<T, R> : IRequest<R>
@@ -585,9 +585,9 @@ public class IdentifiedCommandHandler<T, R> :
 }
 ```
 
-Since the IdentifiedCommand acts like a business command's envelope, when the business command needs to be processed because it is not a repeated Id, then it takes that inner business command and re-submits it to Mediator, as in the last part of the code shown above when running `_mediator.Send(message.Command)`, from the [IdentifiedCommandHandler.cs](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Application/Commands/IdentifiedCommandHandler.cs).
+Since the `IdentifiedCommand` acts like a business command's envelope, when the business command needs to be processed because it is not a repeated ID, then it takes that inner business command and resubmits it to Mediator. This is shown in the last part of the previous code snippet when running `_mediator.Send(message.Command)`. That snippet is from the [IdentifiedCommandHandler.cs](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Application/Commands/IdentifiedCommandHandler.cs) file.
 
-When doing that, it will link and run the business command handler, in this case, the [CreateOrderCommandHandler](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Application/Commands/CreateOrderCommandHandler.cs) which is running transactions against the Ordering database, as shown in the following code.
+When resubmitting to Mediator, it links and runs the business command handler, which, in this case, is the [CreateOrderCommandHandler](https://github.com/dotnet-architecture/eShopOnContainers/blob/dev/src/Services/Ordering/Ordering.API/Application/Commands/CreateOrderCommandHandler.cs) that's running transactions against the Ordering database. This is shown in the following code.
 
 ```csharp
 // CreateOrderCommandHandler.cs
@@ -788,7 +788,7 @@ public class CreateOrderCommandValidator : AbstractValidator<CreateOrderCommand>
 
 ```
 
-You could create additional validations. This is a very clean and elegant way to implement your command validations.
+You could create additional validations. This is a clean and elegant way to implement your command validations.
 
 In a similar way, you could implement other behaviors for additional aspects or cross-cutting concerns that you want to apply to commands when handling them.
 

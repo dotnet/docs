@@ -29,11 +29,11 @@ Monolithic applications are hosted entirely on a single machine instance. This m
 
 ### Environment
 
-Monolithic applications are typically deployed into an existing hosting environment (operating system, installed frameworks, etc.). This environment may not match the environment in which the application was developed or tested. Inconsistencies in the application's environment are a common source of problems for monolithic deployments.
+Monolithic applications are typically deployed into an existing hosting environment (operating system, installed frameworks, etc.). The hosting environment may not match the environment in which the application was developed or tested. Inconsistencies in the application's environment are a common source of problems for monolithic deployments.
 
 ### Coupling
 
-Monolithic applications are likely to have a great deal of coupling between different parts of the application, and between the application and its environment. This can make it difficult to factor out a particular service or concern later, in order to increase its scalability or swap in an alternative implementation. This coupling also leads to much larger potential impacts for changes to the system, requiring extensive testing in larger applications.
+Monolithic applications are likely to have a great deal of coupling between different parts of the application, and between the application and its environment. Coupling can make it difficult to factor out a particular service or concern later, for example, to increase its scalability or swap in an alternative implementation. Coupling also leads to much larger potential impacts for changes to the system, requiring extensive testing in larger applications.
 
 ### Technology choice
 
@@ -59,11 +59,11 @@ Services built on containers can leverage scaling benefits provided by orchestra
 ![Kubernetes cluster components.](./media/kubernetes-cluster-components.png)
 **Figure 3-3**. Kubernetes cluster components.
 
-Kubernetes has built-in support for scaling clusters to meet demand. Combined with containerized micro-services, this provides cloud-native applications with the ability to quickly and efficiently respond to spikes in demand with additional resources when and where they're needed.
+Kubernetes has built-in support for scaling clusters to meet demand. Combined with containerized micro-services, scaling support provides cloud-native applications with the ability to quickly and efficiently respond to spikes in demand with additional resources when and where they're needed.
 
 ### Declarative versus imperative
 
-Kubernetes supports both declarative and imperative object configuration. The imperative approach involves running various commands that tell Kubernetes what to do each step of the way. *Run* this image. *Delete* this pod. *Expose* this port. With the declarative approach, you use a configuration file that describes *what you want* instead of *what to do* and Kubernetes figures out what to do to achieve the desired end state. If you've already configured your cluster using imperative commands, you can export a declarative manifest by using `kubectl get svc SERVICENAME -o yaml > service.yaml`. This will produce a manifest file like this one:
+Kubernetes supports both declarative and imperative object configuration. The imperative approach involves running various commands that tell Kubernetes what to do each step of the way. *Run* this image. *Delete* this pod. *Expose* this port. With the declarative approach, you use a configuration file that describes *what you want* instead of *what to do*, and Kubernetes figures out how to achieve the desired end state. If you've already configured your cluster using imperative commands, you can export a declarative manifest by using `kubectl get svc SERVICENAME -o yaml > service.yaml`. This command produces a manifest file like this one:
 
 ```yaml
 apiVersion: v1
@@ -137,7 +137,7 @@ After installing Minikube, you can quickly start using it by running the `miniku
 
 ### Docker Desktop
 
-You can also work with Kubernetes directly from Docker Desktop on Windows. This is your only option if you're using Windows Containers, and is a great choice for non-Windows containers as well. The standard Docker Desktop configuration app is used to configure Kubernetes running from Docker Desktop.
+You can also work with Kubernetes directly from Docker Desktop on Windows. Docker Desktop is your only option if you're using Windows Containers, and it's a great choice for non-Windows containers as well. The standard Docker Desktop configuration app is used to configure Kubernetes running from Docker Desktop.
 
 ![Configuring Kubernetes in Docker Desktop](./media/docker-desktop-kubernetes.png)
 

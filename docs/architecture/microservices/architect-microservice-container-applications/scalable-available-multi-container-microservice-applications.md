@@ -15,7 +15,7 @@ Figure 4-23 illustrates deployment into a cluster of an application composed of 
 
 You use one container for each service instance. Docker containers are "units of deployment" and a container is an instance of a Docker. A host handles many containers. It looks like a logical approach. But how are you handling load-balancing, routing, and orchestrating these composed applications?
 
-The plain Docker Engine in single Docker hosts meets the needs of managing single image instances on one host, but it falls short when it comes to managing multiple containers deployed on multiple hosts for more complex distributed applications. In most cases, you need a management platform that will automatically start containers, scale-out containers with multiple instances per image, suspend them or shut them down when needed, and ideally also control how they access resources like the network and data storage.
+The plain Docker Engine in single Docker hosts meets the needs of managing single image instances on one host, but it falls short when it comes to managing multiple containers deployed on multiple hosts for more complex distributed applications. In most cases, you need a management platform that will automatically start containers, scale out containers with multiple instances per image, suspend them or shut them down when needed, and ideally also control how they access resources like the network and data storage.
 
 To go beyond the management of individual containers or very simple composed apps and move toward larger enterprise applications with microservices, you must turn to orchestration and clustering platforms.
 
@@ -50,7 +50,7 @@ Azure Kubernetes Service optimizes the configuration of popular Docker clusterin
 
 **Figure 4-24**. Kubernetes cluster's simplified structure and topology
 
-In figure 4-24 you can see the structure of a Kubernetes cluster where a master node (VM) controls most of the coordination of the cluster and you can deploy containers to the rest of the nodes which are managed as a single pool from an application point of view and allows you to scale to thousands or even tens of thousands of containers.
+In figure 4-24, you can see the structure of a Kubernetes cluster where a master node (VM) controls most of the coordination of the cluster. You can deploy containers to the rest of the nodes, which are managed as a single pool from an application point of view. A Kubernetes cluster allows you to scale to thousands or even tens of thousands of containers.
 
 ## Development environment for Kubernetes
 
@@ -66,17 +66,17 @@ To begin using AKS, you deploy an AKS cluster from the Azure portal or by using 
 
 There are no fees for any of the software installed by default as part of AKS. All default options are implemented with open-source software. AKS is available for multiple virtual machines in Azure. You're charged only for the compute instances you choose, as well as the other underlying infrastructure resources consumed, such as storage and networking. There are no incremental charges for AKS itself.
 
-The default production deployment option for Kubernetes is to use Helm charts, which is introduced in the next section.
+The default production deployment option for Kubernetes is to use Helm charts, which are introduced in the next section.
 
 ## Deploy with Helm charts into Kubernetes clusters
 
 When deploying an application to a Kubernetes cluster, you can use the original kubectl.exe CLI tool using deployment files based on the native format (.yaml files), as already mentioned in the previous section. However, for more complex Kubernetes applications such as when deploying complex microservice-based applications, it's recommended to use [Helm](https://helm.sh/).
 
-Helm Charts helps you define, version, install, share, upgrade or rollback even the most complex Kubernetes application.
+Helm Charts helps you define, version, install, share, upgrade, or rollback even the most complex Kubernetes application.
 
 Going further, Helm usage is also recommended because additional Kubernetes environments in Azure, such as [Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/azure-dev-spaces) are also based on Helm charts.
 
-Helm is maintained by the [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) - in collaboration with Microsoft, Google, Bitnami and the Helm contributor community.
+Helm is maintained by the [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) - in collaboration with Microsoft, Google, Bitnami, and the Helm contributor community.
 
 For more implementation information on Helm charts and Kubernetes, see the [Using Helm Charts to deploy eShopOnContainers to AKS](https://github.com/dotnet-architecture/eShopOnContainers/wiki/Deploy-to-Azure-Kubernetes-Service-(AKS)) post.
 
@@ -94,7 +94,7 @@ As shown in figure 4-26, the most differential feature in Azure Dev Spaces is ca
 
 **Figure 4-26**. Using multiple spaces in Azure Dev Spaces
 
-Basically you can set up a shared dev space in Azure. Each developer can focus on just their part of the application, and can iteratively develop pre-commit code in a dev space that already contains all the other services and cloud resources that their scenarios depend on. Dependencies are always up-to-date, and developers are working in a way that mirrors production.
+Basically you can set up a shared dev space in Azure. Each developer can focus on just their part of the application and can iteratively develop pre-commit code in a dev space that already contains all the other services and cloud resources that their scenarios depend on. Dependencies are always up-to-date, and developers are working in a way that mirrors production.
 
 Azure Dev Spaces provides the concept of a space, which allows you to work in relative isolation, and without the fear of breaking your team's work. Each dev space is part of a hierarchical structure that allows you to override one microservice (or many), from the "top" master dev space, with your own work-in-progress microservice.
 
@@ -102,7 +102,7 @@ This feature is based on URL prefixes, so when using any dev space prefix in the
 
 To get a practical view on a concrete example, see the [eShopOnContainers wiki page on Azure Dev Spaces](https://github.com/dotnet-architecture/eShopOnContainers/wiki/Azure-Dev-Spaces).
 
-For further information check the article on [Team Development with Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/team-development-netcore).
+For further information, check the article on [Team Development with Azure Dev Spaces](https://docs.microsoft.com/azure/dev-spaces/team-development-netcore).
 
 ## Additional resources
 

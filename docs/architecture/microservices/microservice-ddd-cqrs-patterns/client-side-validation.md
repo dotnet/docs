@@ -43,7 +43,7 @@ The implementation of client-side validation depends on what kind of client appl
 - **Validation.** Breeze documentation. \
   <https://breeze.github.io/doc-js/validation.html>
 
-In summary, these are the most important concepts in regards to validation:
+In summary, the following concepts are the most important with regard to validation:
 
 - Entities and aggregates should enforce their own consistency and be "always valid". Aggregate roots are responsible for multi-entity consistency within the same aggregate.
 

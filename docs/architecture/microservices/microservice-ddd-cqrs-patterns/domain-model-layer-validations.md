@@ -10,9 +10,9 @@ In DDD, validation rules can be thought as invariants. The main responsibility o
 
 Domain entities should always be valid entities. There are a certain number of invariants for an object that should always be true. For example, an order item object always has to have a quantity that must be a positive integer, plus an article name and price. Therefore, invariants enforcement is the responsibility of the domain entities (especially of the aggregate root) and an entity object should not be able to exist without being valid. Invariant rules are simply expressed as contracts, and exceptions or notifications are raised when they are violated.
 
-The reasoning behind this is that many bugs occur because objects are in a state they should never have been in. The following is a good explanation from Greg Young in an [online discussion](https://jeffreypalermo.com/2009/05/the-fallacy-of-the-always-valid-entity/):
+The reasoning behind this is that many bugs occur because objects are in a state they should never have been in. The following excerpt is a good explanation from Greg Young in an [online discussion](https://jeffreypalermo.com/2009/05/the-fallacy-of-the-always-valid-entity/):
 
-Let's propose we now have a SendUserCreationEmailService that takes a UserProfile ... how can we rationalize in that service that Name is not null? Do we check it again? Or more likely ... you just don't bother to check and "hope for the best"—you hope that someone bothered to validate it before sending it to you. Of course, using TDD one of the first tests we should be writing is that if I send a customer with a null name that it should raise an error. But once we start writing these kinds of tests over and over again we realize ... "wait if we never allowed name to become null we wouldn't have all of these tests"
+Let's propose we now have a SendUserCreationEmailService that takes a UserProfile. How can we rationalize in that service that Name is not null? Do we check it again? Or more likely, you just don't bother to check and "hope for the best"&mdash;you hope that someone bothered to validate it before sending it to you. Of course, using TDD, one of the first tests we should be writing is that if I send a customer with a null name, it should raise an error. But once we start writing these kinds of tests over and over again, we realize that if we'd never allowed name to become null, we wouldn't have all of these tests.
 
 ## Implement validations in the domain model layer
 
@@ -20,7 +20,7 @@ Validations are usually implemented in domain entity constructors or in methods 
 
 ### Validate conditions and throw exceptions
 
-The following code example shows the simplest approach to validation in a domain entity by raising an exception. In the references table at the end of this section you can see links to more advanced implementations based on the patterns we have discussed previously.
+The following code example shows the simplest approach to validation in a domain entity by raising an exception. In the references table at the end of this section, you can see links to more advanced implementations based on the patterns we have discussed previously.
 
 ```csharp
 public void SetAddress(Address address)
@@ -42,7 +42,7 @@ public void SetAddress(string line1, string line2,
 }
 ```
 
-If the value of the state is invalid, the first address line and the city have already been changed. That might make the address invalid.
+When setting the state, if the value of the state is invalid, the first address line and the city have already been changed. Those changes might make the address invalid.
 
 A similar approach can be used in the entity's constructor, raising an exception to make sure that the entity is valid once it is created.
 
@@ -60,7 +60,7 @@ You can see a sample implementation for validating `IValidatableObject` entities
 
 However, from a DDD point of view, the domain model is best kept lean with the use of exceptions in your entity's behavior methods, or by implementing the Specification and Notification patterns to enforce validation rules.
 
-It can make sense to use data annotations at the application layer in ViewModel classes (instead of domain entities) that will accept input, to allow for model validation within the UI layer. However, this should not be done at the exclusion of validation within the domain model.
+To allow for model validation within the UI layer, it can make sense to use data annotations at the application layer in ViewModel classes (instead of domain entities) that accept input. However, this validation should not be done at the exclusion of validation within the domain model.
 
 ### Validate entities by implementing the Specification pattern and the Notification pattern
 
@@ -70,7 +70,7 @@ It is worth mentioning that you can also use just one of those patterns—for ex
 
 ### Use deferred validation in the domain
 
-There are various approaches to deal with deferred validations in the domain. In his book [Implementing Domain-Driven Design](https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577), Vaughn Vernon discusses these in the section on validation.
+There are various approaches to deal with deferred validations in the domain. In his book [Implementing Domain-Driven Design](https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577), Vaughn Vernon discusses these approaches in the section on validation.
 
 ### Two-step validation
 

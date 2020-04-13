@@ -105,7 +105,7 @@ The `dotnet-vstest` command runs the `VSTest.Console` command-line application t
 
 - **`--TestCaseFilter <Expression>`**
 
-  Run tests that match the given expression. `<Expression>` is of the format `<property>Operator<value>[|&<Expression>]`, where Operator is one of `=`, `!=`, or `~`. Operator `~` has 'contains' semantics and is applicable for string properties like `DisplayName`. Parenthesis `()` are used to group subexpressions.
+  Run tests that match the given expression. `<Expression>` is of the format `<property>Operator<value>[|&<Expression>]`, where Operator is one of `=`, `!=`, or `~`. Operator `~` has 'contains' semantics and is applicable for string properties like `DisplayName`. Parentheses `()` are used to group subexpressions. For more information, see [TestCase filter](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).
 
 - **`--Tests <Test Names>`**
 
@@ -154,3 +154,7 @@ Run `TestMethod1` and `TestMethod2` tests:
 ```dotnetcli
 dotnet vstest /Tests:TestMethod1,TestMethod2
 ```
+
+## See also
+
+- [VSTest.Console.exe command-line options](/visualstudio/test/vstest-console-options)

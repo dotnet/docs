@@ -97,7 +97,7 @@ We recommend you use the following process when porting your project to .NET Cor
    ```xml
    <TargetFrameworks>net472;netstandard2.0</TargetFrameworks>
    ```
-   
+
    If you're using Windows-specific APIs (such as registry access), you should install the [Windows Compatibility Pack](./windows-compat-pack.md).
 
 ## Next steps

@@ -20,7 +20,7 @@ Namespaces: <xref:System.Web>, <xref:System.Web.Mobile>, <xref:System.Web.Securi
 
 Assembly: System.Web (in System.Web.dll)
 
-> [!div class="mx-tdBreakAll"]
+> [!div class="mx-tdCol2BreakAll"]
 > | Feature | Differences from 3.5 SP1 | Recommended changes |
 > | ------- | ------------------------ | ------------------- |
 > | **Browser definition files** | The browser definition files have been updated to include information about new and updated browsers and devices. Older browsers and devices such as Netscape Navigator have been removed, and newer browsers and devices such as Google Chrome and Apple iPhone have been added.<br><br>If your application contains custom browser definitions that inherit from one of the browser definitions that have been removed, you will see an error.<br><br>The <xref:System.Web.HttpBrowserCapabilities> object (which is exposed by the page's `Request.Browse` property) is driven by the browser definition files. Therefore, the information that is returned by accessing a property of this object in ASP.NET 4 might be different than the information that was returned in an earlier version of ASP.NET. | If your application relies on the old browser definition files, you can copy them from the following folder:<br><br>*Windows\\Microsoft.NET\\Framework\\v2.0.50727\\CONFIG\\Browsers*<br><br>Copy the files into the corresponding *\\CONFIG\\Browsers* folder for ASP.NET 4. After you copy the files, run the [Aspnet_regbrowsers.exe](https://docs.microsoft.com/previous-versions/dotnet/netframework-3.5/ms229858(v=vs.90)) command-line tool. For more information, see the [https://www.asp.net/mobile](/aspnet/mobile/overview) Web site. |

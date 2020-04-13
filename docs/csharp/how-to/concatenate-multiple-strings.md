@@ -31,7 +31,7 @@ In some expressions, it's easier to concatenate strings using string interpolati
 
 Other method to concatenate strings is <xref:System.String.Format%2A?displayProperty=nameWithType>. This method works well when you are building a string from a small number of component strings.
 
-In other cases, you may be combining strings in a loop where you don't know how many source strings you are combining, and the actual number of source strings may be large. The <xref:System.Text.StringBuilder> class was designed for these scenarios. The following code uses the <xref:System.Text.StringBuilder.Append%2A> method of the <xref:System.Text.StringBuilder> class to concatenate strings.  
+In other cases, you may be combining strings in a loop where you don't know how many source strings you're combining, and the actual number of source strings may be large. The <xref:System.Text.StringBuilder> class was designed for these scenarios. The following code uses the <xref:System.Text.StringBuilder.Append%2A> method of the <xref:System.Text.StringBuilder> class to concatenate strings.  
   
 [!code-csharp-interactive[string concatenation using string builder](../../../samples/snippets/csharp/how-to/strings/Concatenate.cs#4)]  
 

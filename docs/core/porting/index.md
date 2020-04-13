@@ -31,7 +31,7 @@ When there are multiple projects in a solution the porting can seem more complic
 
 In order to identify the order projects should be migrated, you can use the following tools:
 
-- [Dependency Diagrams in Visual Studio](https://docs.microsoft.com/en-us/visualstudio/modeling/create-layer-diagrams-from-your-code?view=vs-2019) can create a directed graph of the code in a solution.
+- [Dependency Diagrams in Visual Studio](https://docs.microsoft.com/visualstudio/modeling/create-layer-diagrams-from-your-code) can create a directed graph of the code in a solution.
 - Run `msbuild _SolutionPath_ /t:GenerateRestoreGraphFile /p:RestoreGraphOutputPath=graph.dg.json` to generate a json document that includes list of project references.
 
 ## Per project steps
@@ -92,7 +92,7 @@ We recommend you use the following process when porting your project to .NET Cor
    <TargetFramework>netcoreapp3.1</TargetFramework>
    ```
 
-   However, if this is a library that you want to continue supporting .NET Framework specific builds for some reason, you can [multi-target](../..//library-guidance/cross-platform-targeting.md) by replacing it with the following:
+   However, if this is a library that you want to continue supporting .NET Framework specific builds for some reason, you can [multi-target](../../standard/library-guidance/cross-platform-targeting.md) by replacing it with the following:
 
    ```xml
    <TargetFrameworks>net472;netstandard2.0</TargetFrameworks>
@@ -105,4 +105,4 @@ We recommend you use the following process when porting your project to .NET Cor
 >[!div class="nextstepaction"]
 >[Analyze dependencies](third-party-deps.md)
 >[Package NuGet Package](../deploying/creating-nuget-packages.md)
->[ASP.NET to ASP.NET Core Migration](https://docs.microsoft.com/en-us/aspnet/core/migration/proper-to-2x)
+>[ASP.NET to ASP.NET Core Migration](https://docs.microsoft.com/aspnet/core/migration/proper-to-2x)

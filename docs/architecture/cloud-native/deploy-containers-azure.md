@@ -7,7 +7,8 @@ ms.date: 06/30/2019
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-Containers provide many benefits, one of which is portability. You can easily take the same container you've developed and tested locally and deploy it to Azure where it can run your app in staging and production environments. Azure provides a number of options for container-based app hosting and likewise supports several different means of deployment. The most common and most flexible approach is to deploy your containers to Azure Container Registry (ACR), where they're accessible by whatever services you wish to use to host them. Azure Web App for Containers, Azure Kubernetes Services (AKS), and Azure Container Instance (ACI) all can access container images that have been pushed to ACR.
+Containers provide many benefits, one of which is portability. You can deploy 
+a container image you've developed and tested locally to other staging and production environments, including Azure. Azure provides a number of options for container-based app hosting and supports several different means of deployment. The most common approach is to deploy your container images to Azure Container Registry (ACR). From there, they're accessible by whatever Azure services you wish to use to host them. Azure Web App for Containers, Azure Kubernetes Services (AKS), and Azure Container Instance (ACI) all can access container images that have been pushed to ACR.
 
 ## Azure Container Registry
 
@@ -43,6 +44,10 @@ docker rmi myregistry.azurecr.io/mycontainer:v1
 ```
 
 Developers should rarely push directly from their machines to a container registry. Instead, a build pipeline defined in a tool like Azure DevOps should be responsible for this process. Learn more in the [Cloud-Native DevOps chapter](devops.md).
+
+## ACR Tasks
+
+ACR Tasks is a suite of features available in Azure Container Registry. They extend the "inner-loop" development cycle to automatically build and push container images to the Azure cloud. These operations can be done on a development machine without the need for installing Docker Desktop. Additionally, you can configure ACR Task triggers to rebuild containers images on both source code and base image updates. The following AZ CLI command both builds a container image and pushes it to ACR.
 
 ## Azure Kubernetes Service
 

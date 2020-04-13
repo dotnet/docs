@@ -12,7 +12,7 @@ ms.assetid: 51f0edc3-993d-4051-b7f2-77753694d3d1
 The XML Schema Definition tool (Xsd.exe) allows you to generate an XML schema that describes a class or to generate the class defined by an XML schema. The following procedures show how to perform these operations.
 
 The XML Schema Definition tool (Xsd.exe) usually can be found in the following path:\
-*C:\Program Files (x86)\Microsoft SDKs\Windows\{version}\bin\NETFX {version} Tools\*
+_C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\{version}\\bin\\NETFX {version} Tools\\_
 
 ### To generate classes that conform to a specific schema  
   

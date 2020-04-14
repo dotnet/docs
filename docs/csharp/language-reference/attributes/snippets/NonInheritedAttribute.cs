@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace attributes
 {
-    // <Snippet1>
+    // <SnippetNonInherited>
     [AttributeUsage(AttributeTargets.Class, Inherited = false)]
     class NonInheritedAttribute : Attribute { }
 
@@ -12,5 +10,5 @@ namespace attributes
     class BClass { }
 
     class DClass : BClass { }
-    // </Snippet1>
+    // </SnippetNonInherited>
 }

@@ -65,4 +65,4 @@ class SampleClass
 - [Reflection (C#)](../reflection.md)
 - [Attributes (C#)](./index.md)
 - [Accessing Attributes by Using Reflection (C#)](./accessing-attributes-by-using-reflection.md)
-- [AttributeUsage (C#)](./attributeusage.md)
+- [AttributeUsage (C#)](../../../language-reference/attributes/general.md)

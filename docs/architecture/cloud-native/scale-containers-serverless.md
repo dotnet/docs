@@ -3,6 +3,7 @@ title: Scaling containers and serverless applications
 description: Scaling cloud-native applications with Azure Kubernetes Service to meet user demand.
 ms.date: 04/13/2020
 ---
+
 # Scaling containers and serverless applications
 
 There are two ways to scale an application: up or out. The former refers to adding capacity to a single resource, while the latter refers to adding more resources to increase capacity.
@@ -15,7 +16,7 @@ Serverless apps scale up by choosing the [premium Functions plan](https://docs.m
 
 ## Scaling out cloud-native apps
 
-Cloud-native applications often experience large fluctuations in demand and require scale on a moment's notice. They favor scaling out. Scaling out is done horizontally by adding additional machines (called nodes) or application instances to an existing cluster. In Kubernetes, you can scale manually by adjusting configuration settings for the app (for example, [scaling a node pool](https://docs.microsoft.com/azure/aks/use-multiple-node-pools#scale-a-node-pool-manually)), or through autoscaling. 
+Cloud-native applications often experience large fluctuations in demand and require scale on a moment's notice. They favor scaling out. Scaling out is done horizontally by adding additional machines (called nodes) or application instances to an existing cluster. In Kubernetes, you can scale manually by adjusting configuration settings for the app (for example, [scaling a node pool](https://docs.microsoft.com/azure/aks/use-multiple-node-pools#scale-a-node-pool-manually)), or through autoscaling.
 
 AKS clusters can autoscale in one of two ways:
 
@@ -35,7 +36,7 @@ Working together, both ensure an optimal number of container instances and compu
 
 Azure Functions automatically scale out upon demand. Server resources are dynamically allocated and removed based on the number of triggered events. You're only charged for compute resources consumed when your functions run. Billing is based upon the number of executions, execution time, and memory used.
 
-While the default consumption plan provides an economical and scalable solution for most apps, the premium option allows developers flexibility for custom Azure Functions requirements. Upgrading to the premium plan provides control over instance sizes, pre-warmed instances (to avoid cold start delays), and dedicated VMs. 
+While the default consumption plan provides an economical and scalable solution for most apps, the premium option allows developers flexibility for custom Azure Functions requirements. Upgrading to the premium plan provides control over instance sizes, pre-warmed instances (to avoid cold start delays), and dedicated VMs.
 
 >[!div class="step-by-step"]
 >[Previous](deploy-containers-azure.md)

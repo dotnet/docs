@@ -3,6 +3,7 @@ title: Deploying containers in Azure
 description: Deploying Containers in Azure with Azure Container Registry, Azure Kubernetes Service, and Azure Dev Spaces.
 ms.date: 04/13/2020
 ---
+
 # Deploying containers in Azure
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
@@ -32,7 +33,6 @@ az acr login --name *registryname*
 ```
 
 Once authenticated, you can use docker commands to push container images to it. Before you can do so, however, you must tag your image with the fully qualified name (URL) of your ACR login server. It will have the format *registryname*.azurecr.io.
-
 
 ```console
 docker tag mycontainer myregistry.azurecr.io/mycontainer:v1

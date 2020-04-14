@@ -3,6 +3,7 @@ title: Leveraging containers and orchestrators
 description: Leveraging Docker Containers and Kubernetes Orchestrators in Azure
 ms.date: 04/13/2020
 ---
+
 # Leveraging containers and orchestrators
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
@@ -57,11 +58,11 @@ Each cloud-native service is built and deployed in a separate container. Each ca
 Containerized services require automated management. It wouldn't be feasible to manually administer a large set of independently deployed containers. For example, consider the following tasks:
 
 - How will container instances be provisioned across a cluster of many machines?
--	Once deployed, how will containers discover and communicate with each other?
--	How can containers scale in or out on-demand?
--	How do you monitor the health of each container?
--	How do you protect a container against hardware and software failures?
--	How do upgrade containers for a live application with zero downtime?
+- Once deployed, how will containers discover and communicate with each other?
+- How can containers scale in or out on-demand?
+- How do you monitor the health of each container?
+- How do you protect a container against hardware and software failures?
+- How do upgrade containers for a live application with zero downtime?
 
 Container orchestrators address and automate these and other concerns.
 
@@ -86,8 +87,7 @@ Kubernetes supports both declarative and imperative configuration. The imperativ
 
 Imperative commands are great for learning and interactive experimentation. However, you'll want to declaratively create Kubernetes manifest files to embrace an infrastructure as code approach, providing for reliable and repeatable deployments. The manifest file becomes a project artifact and is used in your CI/CD pipeline for automating Kubernetes deployments.
 
-If you've already configured your cluster using imperative commands, you can export a declarative manifest by using `kubectl get svc SERVICENAME -o yaml > service.yaml`. 
-This command produces a manifest similar to one shown below:
+If you've already configured your cluster using imperative commands, you can export a declarative manifest by using `kubectl get svc SERVICENAME -o yaml > service.yaml`. This command produces a manifest similar to one shown below:
 
 ```yaml
 apiVersion: v1
@@ -161,7 +161,7 @@ After installing Minikube, you can quickly start using it by running the `miniku
 
 ### Docker Desktop
 
-You can also work with Kubernetes directly from Docker Desktop on Windows. It is your only option if you're using Windows Containers, and is a great choice for non-Windows containers as well. Figure 3.4 shows how to enable local Kubernetes support when running Docker Desktop.
+You can also work with Kubernetes directly from Docker Desktop on Windows. It is your only option if you're using Windows Containers, and is a great choice for non-Windows containers as well. Figure 3-4 shows how to enable local Kubernetes support when running Docker Desktop.
 
 ![Configuring Kubernetes in Docker Desktop](./media/docker-desktop-kubernetes.png)
 
@@ -177,7 +177,7 @@ Visual Studio supports Docker development for web-based applications. When you c
 
 **Figure 3-5**. Visual Studio Enable Docker Support
 
-When this option is selected, the project is created with a `Dockerfile` in its root, which can be used to build and host the app in a Docker container. An example Dockerfile is shown in Figure 3-6.
+When this option is selected, the project is created with a `Dockerfile` in its root, which can be used to build and host the app in a Docker container. An example Dockerfile is shown in Figure 3-6.git
 
 ```docker
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.0-stretch-slim AS base

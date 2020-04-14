@@ -3,6 +3,7 @@ title: Combining containers and serverless approaches for cloud-native services
 description: Combining Containers and Kubernetes with Serverless Approaches
 ms.date: 04/13/2020
 ---
+
 # Combining containers and serverless approaches
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
@@ -36,7 +37,6 @@ When the project is created, it will include a Dockerfile. Now, you can create a
 When creating Azure functions, you'll want to reference version 3 of the Azure Functions runtime, which targets .NET Core 3.1 and later. Version 2 targets the .NET Core 2.2 framework. Version 1 targets the .NET Framework 4.7.2 and shouldn't be considered for modern services.
 
 For detailed steps to get started building Azure Functions with Docker support, see the [Create a function on Linux using a custom image](https://docs.microsoft.com/azure/azure-functions/functions-create-function-linux-custom-image) tutorial.
-
 
 ## How to combine serverless and Kubernetes with KEDA
 

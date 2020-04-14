@@ -3,6 +3,7 @@ title: Leveraging serverless functions
 description: Leveraging Serverless and Azure Functions in Cloud-Native Applications
 ms.date: 04/13/2020
 ---
+
 # Leveraging serverless functions
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]

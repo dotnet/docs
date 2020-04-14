@@ -72,7 +72,7 @@ Because <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task
 
 Starting with C# 8.0, an async method may return an *async stream*, represented by <xref:System.Collections.Generic.IAsyncEnumerable%601>. An async stream provides a way to enumerate a stream when elements are generated in chunks with repeated asynchronous calls. The following example shows an async method that generates an async stream:
 
-:::code language="csharp" source="s./snippets/AsyncStreams.cs" id="SnippetGenerateAsyncStream":::
+:::code language="csharp" source="./snippets/AsyncStreams.cs" id="SnippetGenerateAsyncStream":::
 
 The preceding example reads lines from a string asynchronously. Once each line is read, the code enumerates each word in the string. Callers would enumerate each word using the `await foreach` statement. The method awaits when it needs to asynchronously read the next line from the source string.
 

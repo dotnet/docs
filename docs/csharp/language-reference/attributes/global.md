@@ -1,5 +1,5 @@
 ---
-title: "C# Reserved attributes: Global attributes"
+title: "C# reserved attributes: Global attributes"
 ms.date: 04/09/2020
 description: Attributes provide metadata the compiler uses to understand more semantics of your program
 ---
@@ -19,7 +19,7 @@ Assembly attributes are values that provide information about an assembly. They 
 - Informational attributes
 - Assembly manifest attributes
 
-## Assembly Identity Attributes
+## Assembly identity attributes
 
 Three attributes (with a strong name, if applicable) determine the identity of an assembly: name, version, and culture. These attributes form the full name of the assembly and are required when you reference it in code. You can set an assembly's version and culture using attributes. However, the name value is set by the compiler, the Visual Studio IDE in the [Assembly Information Dialog Box](/visualstudio/ide/reference/assembly-information-dialog-box), or the Assembly Linker (Al.exe) when the assembly is created. The assembly name is based on the assembly manifest. The <xref:System.Reflection.AssemblyFlagsAttribute> attribute specifies whether multiple copies of the assembly can coexist.
 
@@ -31,7 +31,7 @@ The following table shows the identity attributes.
 |<xref:System.Reflection.AssemblyCultureAttribute>|Specifies which culture the assembly supports.|
 |<xref:System.Reflection.AssemblyFlagsAttribute>|Specifies whether an assembly supports side-by-side execution on the same computer, in the same process, or in the same application domain.|
 
-## Informational Attributes
+## Informational attributes
 
 You use informational attributes to provide additional company or product information for an assembly. The following table shows the informational attributes defined in the <xref:System.Reflection?displayProperty=nameWithType> namespace.
 
@@ -45,7 +45,7 @@ You use informational attributes to provide additional company or product inform
 |<xref:System.Reflection.AssemblyFileVersionAttribute>|Sets a specific version number for the Win32 file version resource.|
 |<xref:System.CLSCompliantAttribute>|Indicates whether the assembly is compliant with the Common Language Specification (CLS).|
 
-## Assembly Manifest Attributes
+## Assembly manifest attributes
 
 You can use assembly manifest attributes to provide information in the assembly manifest. The attributes include title, description, default alias, and configuration. The following table shows the assembly manifest attributes defined in the <xref:System.Reflection?displayProperty=nameWithType> namespace.
 

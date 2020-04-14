@@ -21,9 +21,11 @@ This tutorial shows you how to create a Universal Windows Platform (UWP) applica
 > - Prepare and understand the data
 > - Choose a scenario
 > - Load the data
+> - Create an experiment in Azure
 > - Train the model
 > - Evaluate the model
 > - Use the model for predictions
+> - Consume the model in UWP application
 
 > [NOTE]
 > Model Builder is currently in Preview.
@@ -81,6 +83,8 @@ To train your model, you need to select from the list of available machine learn
 1. In the data step of the Model Builder tool, select **File** from the data source dropdown.
 1. Select the button next to the **Select a file** text box and use File Explorer to browse and select the unzipped directory containing the images.
 1. Select the **Train** link to move to the next step in the Model Builder tool.
+
+## Create experiment in Azure
 
 ## Train the model
 
@@ -231,13 +235,16 @@ Two projects will be created as a result of the training process.
     return prediction;
     ```
 
-## Build UWP application
+## Consume the model in UWP application
 
 The UWP application is the interface users interact with. When a user searches for an address, a satellite image of the location renders and is categorized by the model hosted in the ASP.NET Core Web API.
 
 ### Create UWP Application
 
-
+1. From the File menu, select **New > Project** to open the New Project dialog.
+1. From the list of templates on the left, choose **Installed > Visual C# > Windows Universal** to see the list of UWP project templates.
+1. Choose the **Blank App (Universal Windows)** template, and enter "LandUseUWP" as the Name. Select **OK**.
+1. The target version/minimum version dialog appears. The default settings are fine for this tutorial, so select **OK** to create the project.
 
 ### Design the layout of the main page
 

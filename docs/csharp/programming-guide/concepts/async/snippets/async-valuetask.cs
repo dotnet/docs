@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 class Program
 {
-   static Random rnd;
+   static Random? rnd;
    
    static void Main()
    {

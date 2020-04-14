@@ -11,7 +11,7 @@ Async methods can have the following return types:
 - <xref:System.Threading.Tasks.Task>, for an async method that performs an operation but returns no value.
 - `void`, for an event handler.
 - Starting with C# 7.0, any type that has an accessible `GetAwaiter` method. The object returned by the `GetAwaiter` method must implement the <xref:System.Runtime.CompilerServices.ICriticalNotifyCompletion?displayProperty=nameWithType> interface.
-- Starting with C# 8.0, a method that returns <xref:System.Collections.Generic.IAsyncEnumerable%601>. These methods return an *async stream*.
+- Starting with C# 8.0, <xref:System.Collections.Generic.IAsyncEnumerable%601>, for an async method that returns an *async stream*.
 
 For more information about async methods, see [Asynchronous Programming with async and await (C#)](./index.md).  
   

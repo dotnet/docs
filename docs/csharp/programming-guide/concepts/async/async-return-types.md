@@ -70,7 +70,7 @@ Because <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task
 
 ## Async streams with IAsyncEnumerable\<T\>
 
-Starting with C# 8.0, an async method may return an *async stream*, represented by <xref:System.Collections.Generic.IAsyncEnumerable%601>. An async stream provides a way to enumerate a stream when elements are generated in chunks with repeated asynchronous calls. The following example shows an async method that generates an async stream:
+Starting with C# 8.0, an async method may return an *async stream*, represented by <xref:System.Collections.Generic.IAsyncEnumerable%601>. An async stream provides a way to enumerate items read from a stream when elements are generated in chunks with repeated asynchronous calls. The following example shows an async method that generates an async stream:
 
 :::code language="csharp" source="./snippets/AsyncStreams.cs" id="SnippetGenerateAsyncStream":::
 

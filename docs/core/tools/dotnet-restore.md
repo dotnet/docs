@@ -15,9 +15,10 @@ ms.date: 02/27/2020
 
 ```dotnetcli
 dotnet restore [<ROOT>] [--configfile] [--disable-parallel]
-    [--force] [--ignore-failed-sources] [--no-cache]
-    [--no-dependencies] [--packages] [-r|--runtime]
-    [-s|--source] [-v|--verbosity] [--interactive]
+    [-f|--force] [--force-evaluate] [--ignore-failed-sources]
+    [--interactive] [--lock-file-path] [--locked-mode]
+    [--no-cache] [--no-dependencies] [--packages] [-r|--runtime]
+    [-s|--source] [--use-lockfile] [-v|--verbosity]
 
 dotnet restore [-h|--help]
 ```
@@ -86,6 +87,10 @@ Sometimes, it might be inconvenient to run `dotnet restore` implicitly. For exam
 
   Forces all dependencies to be resolved even if the last restore was successful. Specifying this flag is the same as deleting the *project.assets.json* file.
 
+- **`--force-evaluate`**
+
+  Forces restore to reevaluate all dependencies even if a lock file already exists.
+
 - **`-h|--help`**
 
   Prints out a short help for the command.
@@ -93,6 +98,18 @@ Sometimes, it might be inconvenient to run `dotnet restore` implicitly. For exam
 - **`--ignore-failed-sources`**
 
   Only warn about failed sources if there are packages meeting the version requirement.
+
+- **`--interactive`**
+
+  Allows the command to stop and wait for user input or action (for example to complete authentication). Since .NET Core 2.1.400.
+
+- **`--lock-file-path <LOCK_FILE_PATH>`**
+
+  Output location where project lock file is written. By default, this is *PROJECT_ROOT\packages.lock.json*.
+
+- **`--locked-mode`**
+
+  Don't allow updating project lock file.
 
 - **`--no-cache`**
 
@@ -114,13 +131,13 @@ Sometimes, it might be inconvenient to run `dotnet restore` implicitly. For exam
 
   Specifies a NuGet package source to use during the restore operation. This setting overrides all of the sources specified in the *nuget.config* files. Multiple sources can be provided by specifying this option multiple times.
 
-- **`--verbosity <LEVEL>`**
+- **`--use-lockfile`**
+
+  Enables project lock file to be generated and used with restore.
+
+- **`-v|--verbosity <LEVEL>`**
 
   Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`. Default value is `minimal`.
-
-- **`--interactive`**
-
-  Allows the command to stop and wait for user input or action (for example to complete authentication). Since .NET Core 2.1.400.
 
 ## Examples
 

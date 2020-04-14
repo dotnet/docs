@@ -48,14 +48,14 @@ For information on the support lifecycle of .NET Framework versions, see [Micros
 
 | Operating system | Supported editions | Preinstalled with the OS | Installable separately |
 | ---------------- | ------------------ | ------------------------ | ---------------------- |
-| Windows 10 May 2019 Update | 32-bit and 64-bit | .NET Framework 4.8 | -- |
-| Windows 10 October 2018 Update | 32-bit and 64-bit | .NET Framework 4.7.2 | .NET Framework 4.8 |
-| Windows 10 April 2018 Update | 32-bit and 64-bit | .NET Framework 4.7.2 |.NET Framework 4.8|
-| Windows 10 Fall Creators Update | 32-bit and 64-bit | .NET Framework 4.7.1 | .NET Framework 4.7.2<br/><br/>.NET Framework 4.8 |
-| Windows 10 Creators Update | 32-bit and 64-bit | .NET Framework 4.7 | .NET Framework 4.7.1<br/><br/>.NET Framework 4.7.2<br/><br/>.NET Framework 4.8 |
-| Windows 10 Anniversary Update | 32-bit and 64-bit | .NET Framework 4.6.2 |.NET Framework 4.7<br/><br/>.NET Framework 4.7.1<br/><br/>.NET Framework 4.7.2<br/><br/>.NET Framework 4.8  |
-| Windows 10 November Update | 32-bit and 64-bit | .NET Framework 4.6.1 | .NET Framework 4.6.2 |
-| Windows 10 | 32-bit and 64-bit | .NET Framework 4.6 | .NET Framework 4.6.1 <br/><br/> .NET Framework 4.6.2 |
+| Windows 10 May 2019 Update<br/> (version 1903) | 32-bit and 64-bit | .NET Framework 4.8 | -- |
+| Windows 10 October 2018 Update<br/> (version 1809) | 32-bit and 64-bit | .NET Framework 4.7.2 | .NET Framework 4.8 |
+| Windows 10 April 2018 Update<br/> (version 1803) | 32-bit and 64-bit | .NET Framework 4.7.2 |.NET Framework 4.8|
+| Windows 10 Fall Creators Update<br/> (version 1709) | 32-bit and 64-bit | .NET Framework 4.7.1 | .NET Framework 4.7.2<br/><br/>.NET Framework 4.8 |
+| Windows 10 Creators Update<br/> (version 1703) | 32-bit and 64-bit | .NET Framework 4.7 | .NET Framework 4.7.1<br/><br/>.NET Framework 4.7.2<br/><br/>.NET Framework 4.8 |
+| Windows 10 Anniversary Update<br/> (version 1607) | 32-bit and 64-bit | .NET Framework 4.6.2 |.NET Framework 4.7<br/><br/>.NET Framework 4.7.1<br/><br/>.NET Framework 4.7.2<br/><br/>.NET Framework 4.8  |
+| Windows 10 November Update<br/> (version 1511) | 32-bit and 64-bit | .NET Framework 4.6.1 | .NET Framework 4.6.2 |
+| Windows 10<br/> (version 1507) | 32-bit and 64-bit | .NET Framework 4.6 | .NET Framework 4.6.1 <br/><br/> .NET Framework 4.6.2 |
 | Windows 8.1 | 32-bit, 64-bit, and ARM | .NET Framework 4.5.1 | .NET Framework 4.5.2<br /><br /> .NET Framework 4.6<br /><br /> .NET Framework 4.6.1<br /><br /> .NET Framework 4.6.2<br /><br />.NET Framework 4.7<br/><br/>.NET Framework 4.7.1<br/><br/>.NET Framework 4.7.2<br/><br/>.NET Framework 4.8 |
 | Windows 8 | 32-bit, 64-bit, and ARM | .NET Framework 4.5 | .NET Framework 4.5.1<br /><br />.NET Framework 4.5.2<br /><br /> .NET Framework 4.6<br /><br /> .NET Framework 4.6.1 |
 | Windows 7 SP1|32-bit and 64-bit | -- | .NET Framework 4<br /><br /> .NET Framework 4.5<br /><br /> .NET Framework 4.5.1<br /><br /> .NET Framework 4.5.2<br /><br /> .NET Framework 4.6<br /><br /> .NET Framework 4.6.1<br /><br /> .NET Framework 4.6.2<br /><br />.NET Framework 4.7<br/><br/>.NET Framework 4.7.1<br/><br/>.NET Framework 4.7.2<br/><br/>.NET Framework 4.8 |

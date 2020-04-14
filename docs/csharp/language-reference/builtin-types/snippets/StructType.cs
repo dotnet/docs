@@ -66,4 +66,33 @@ namespace builtin_types
         }
         // </SnippetReadonlyStruct>
     }
+
+    namespace readonly_members
+    {
+        public struct Example
+        {
+            // <SnippetReadonlyProperty>
+            private int counter;
+            public int Counter
+            {
+                readonly get => counter;
+                set => counter = value;
+            }
+            // </SnippetReadonlyProperty>
+
+            public double X { get; }
+            public double Y { get; }
+
+            // <SnippetReadonlyMethod>
+            public readonly double Sum()
+            {
+                return X + Y;
+            }
+            // </SnippetReadonlyMethod>
+
+            // <SnippetReadonlyOverride>
+            public readonly override string ToString() => $"({X}, {Y})";
+            // </SnippetReadonlyOverride>
+        }
+    }
 }

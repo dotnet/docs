@@ -39,9 +39,9 @@ All other marks and logos are property of their respective owners.
 
 Authors:
 
-> **Steve "ardalis" Smith** - Software Architect and Trainer - [Ardalis.com](https://ardalis.com)
->
 > **Rob Vettor** - Microsoft - Principal Cloud System Architect/IP Architect - [thinkingincloudnative.com](http://thinkingincloudnative.com/about/)
+>
+> **Steve "ardalis" Smith** - Software Architect and Trainer - [Ardalis.com](https://ardalis.com)
 
 Participants and Reviewers:
 

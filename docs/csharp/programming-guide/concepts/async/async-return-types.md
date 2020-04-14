@@ -1,19 +1,18 @@
 ---
 title: "Async Return Types (C#)"
-ms.date: 05/29/2017
+ms.date: 04/14/202
 ms.assetid: ddb2539c-c898-48c1-ad92-245e4a996df8
 ---
 # Async Return Types (C#)
+
 Async methods can have the following return types:
 
 - <xref:System.Threading.Tasks.Task%601>, for an async method that returns a value.
-
 - <xref:System.Threading.Tasks.Task>, for an async method that performs an operation but returns no value.
-
 - `void`, for an event handler.
-
 - Starting with C# 7.0, any type that has an accessible `GetAwaiter` method. The object returned by the `GetAwaiter` method must implement the <xref:System.Runtime.CompilerServices.ICriticalNotifyCompletion?displayProperty=nameWithType> interface.
-  
+- Starting with C# 8.0, a method that returns <xref:System.Collections.Generic.IAsyncEnumerable%601>. These methods return an *async stream*.
+
 For more information about async methods, see [Asynchronous Programming with async and await (C#)](./index.md).  
   
 Each return type is examined in one of the following sections, and you can find a full example that uses all three types at the end of the topic.  
@@ -70,6 +69,14 @@ Because <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task
 .NET provides the <xref:System.Threading.Tasks.ValueTask%601?displayProperty=nameWithType> structure as a lightweight implementation of a generalized task-returning value. To use the <xref:System.Threading.Tasks.ValueTask%601?displayProperty=nameWithType> type, you must add the `System.Threading.Tasks.Extensions` NuGet package to your project. The following example uses the <xref:System.Threading.Tasks.ValueTask%601> structure to retrieve the value of two dice rolls.
   
 [!code-csharp[return-value](../../../../../samples/snippets/csharp/programming-guide/async/async-valuetask.cs)]
+
+## Async streams with IAsyncEnumerable\<T\>
+
+Starting with C# 8.0, an async method may return an *async stream*, represented by <xref:System.Collections.Generic.IAsyncEnumerable%601>. An async stream provides a way to enumerate a stream when elements are generated in chunks with repeated asynchronous calls. The following example shows an async method that generates an async stream:
+
+:::code language="csharp" source="s./snippets/AsyncStreams.cs" id="SnippetGenerateAsyncStream":::
+
+The preceding example reads lines from a string asynchronously. Once each line is read, the code enumerates each word in the string. Callers would enumerate each word using the `await foreach` statement. The method awaits when it needs to asynchronously read the next line from the source string.
 
 ## See also
 

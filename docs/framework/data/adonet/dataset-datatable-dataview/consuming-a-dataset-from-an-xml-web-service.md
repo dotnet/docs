@@ -185,7 +185,7 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
 3. Create an XML Web service client.  
   
      If you want to have Visual Studio generate the Web service proxy class for you, simply create the client project, and, in the Solution Explorer window, right-click the project, and then select **Add** > **Service Reference**. In the **Add Service Reference** dialog box, select **Advanced**, and then select **Add Web Reference**. Select the Web service from the list of available Web services (this may require supplying the address of the Web service endpoint if the Web service isn't available within the current solution or on the current computer). If you create the XML Web service proxy yourself (as described in the previous step), you can import it into your client code and consume the XML Web service methods.
-     
+
      The following sample code imports the proxy library, calls **GetCustomers** to get a list of customers, adds a new customer, and then returns a **DataSet** with the updates to **UpdateCustomers**.  
   
      The example passes the **DataSet** returned by **DataSet.GetChanges** to **UpdateCustomers** because only modified rows need to be passed to **UpdateCustomers**. **UpdateCustomers** returns the resolved **DataSet**, which you can then **Merge** into the existing **DataSet** to incorporate the resolved changes and any row error information from the update. The following code assumes that you have used Visual Studio to create the Web reference, and that you have renamed the Web reference to DsSample in the **Add Web Reference** dialog box.  

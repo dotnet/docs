@@ -1,14 +1,10 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-public class Example
+public class ExampleTask
 {
-   public static void Main()
-   {
-      DisplayCurrentInfo().Wait();
-   }
-
-   static async Task DisplayCurrentInfo()
+    // <SnippetTaskReturn>
+   public static async Task DisplayCurrentInfo()
    {
       await WaitAndApologize();
       Console.WriteLine($"Today is {DateTime.Now:D}");
@@ -23,10 +19,11 @@ public class Example
       // Task.Delay delays the following line by two seconds.  
       Console.WriteLine("\nSorry for the delay. . . .\n");  
    }
+    // The example displays the following output:
+    //       Sorry for the delay. . . .
+    //       
+    //       Today is Wednesday, May 24, 2017
+    //       The current time is 15:25:16.2935649
+    //       The current temperature is 76 degrees.
+    // </SnippetTaskReturn>
 }
-// The example displays the following output:
-//       Sorry for the delay. . . .
-//       
-//       Today is Wednesday, May 24, 2017
-//       The current time is 15:25:16.2935649
-//       The current temperature is 76 degrees.

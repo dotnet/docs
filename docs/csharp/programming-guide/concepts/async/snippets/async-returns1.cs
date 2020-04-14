@@ -2,14 +2,10 @@
 using System.Linq;
 using System.Threading.Tasks;
 
-public class Example
+public class FirstExample
 {
-   public static void Main()
-   {
-      Console.WriteLine(ShowTodaysInfo().Result);
-   }
-
-   private static async Task<string> ShowTodaysInfo()
+    // <SnippetFirstExample>
+   public static async Task<string> ShowTodaysInfo()
    {
       string ret = $"Today is {DateTime.Today:D}\n" +
                    "Today's hours of leisure: " +
@@ -30,9 +26,9 @@ public class Example
            leisureHours = 5;  
      
        return leisureHours;  
-   }  
+   }
+    // The example displays output like the following:
+    //       Today is Wednesday, May 24, 2017
+    //       Today's hours of leisure: 5
+    // </SnippetFirstExample>
 }
-// The example displays output like the following:
-//       Today is Wednesday, May 24, 2017
-//       Today's hours of leisure: 5
-// </Snippet >

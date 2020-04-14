@@ -140,5 +140,5 @@ Just a few words about .NET Core being open source. Building a cross-platform st
 This is a key success factor of .NET Core that will continue to speed up the roadmap previously mentioned: To be the single .NET platform that any developer will ever need to build any application.
 
 >[!div class="step-by-step"]
->[Previous](why-modern-desktop-applications.md)
+>[Previous](why-modern-applications.md)
 >[Next](migrate-modern-applications.md)

@@ -51,7 +51,6 @@ Participants and Reviewers:
 >
 > **Jeremy Likeness**, Senior Program Manager for .NET Data, .NET Team, Microsoft
 
-
 Editors:
 
 > **Maira Wenzel**, Sr. Content Developer, .NET team, Microsoft

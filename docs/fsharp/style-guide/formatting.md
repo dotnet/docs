@@ -422,7 +422,7 @@ type PostalAddress =
         Address: string
         City: string
         Zip: string
-    } with
+    }
     member x.ZipAndCity = sprintf "%s %s" x.Zip x.City
 
 type MyRecord =

@@ -1,6 +1,6 @@
 ---
 title: "Structure types - C# reference"
-ms.date: 03/26/2020
+ms.date: 04/14/2020
 f1_keywords: 
   - "struct_CSharpKeyword"
 helpviewer_keywords: 
@@ -36,6 +36,35 @@ That guarantees that no member of a `readonly` struct modifies the state of the 
 
 > [!NOTE]
 > In a `readonly` struct, a data member of a mutable reference type still can mutate its own state. For example, you cannot replace a <xref:System.Collections.Generic.List%601> instance, but you can add new elements to it.
+
+## `readonly` instance members
+
+Beginning with C# 8.0, you can also use the `readonly` modifier to declare that an instance member doesn't modify the state of a struct. If you cannot declare the whole structure type as `readonly`, use the `readonly` modifier to mark the instance members that don't modify the state of the struct. In a `readonly` struct, every instance member is implicitly `readonly`.
+
+Within a `readonly` instance member, you cannot assign to structure's instance fields. However, a `readonly` member can call a non-`readonly` member. In that case the compiler creates a copy of the structure instance and calls the non-`readonly` member on that copy. As a result, the original structure instance is not modified.
+
+Typically, you apply the `readonly` modifier to the following kinds of instance members:
+
+- methods:
+
+  [!code-csharp[readonly method](snippets/StructType.cs#ReadonlyMethod)]
+
+  You can also apply the `readonly` modifier to methods that override methods declared in <xref:System.Object?displayProperty=nameWithType>:
+
+  [!code-csharp[readonly override](snippets/StructType.cs#ReadonlyOverride)]
+
+- properties and indexers:
+
+  [!code-csharp[readonly property get](snippets/StructType.cs#ReadonlyProperty)]
+
+  If you need to apply the `readonly` modifier to both accessors of a property or indexer, apply it in the declaration of the property or indexer.
+
+  > [!NOTE]
+  > The compiler declares a `get` accessor of an [auto-implemented property](../../programming-guide/classes-and-structs/auto-implemented-properties.md) as `readonly`, regardless of presence of the `readonly` modifier in a property declaration.
+
+You cannot apply the `readonly` modifier to static members of a structure type.
+
+The compiler may make use of the `readonly` modifier for performance optimizations. For more information, see [Write safe and efficient C# code](../../write-safe-efficient-code.md).
 
 ## Limitations with the design of a structure type
 
@@ -75,7 +104,10 @@ For any structure type, there exist [boxing and unboxing](../../programming-guid
 
 For more information, see the [Structs](~/_csharplang/spec/structs.md) section of the [C# language specification](~/_csharplang/spec/introduction.md).
 
-For more information about `readonly` structs, see the [feature proposal note](~/_csharplang/proposals/csharp-7.2/readonly-ref.md#readonly-structs).
+For more information about features introduced in C# 7.2 and later, see the following feature proposal notes:
+
+- [Readonly structs](~/_csharplang/proposals/csharp-7.2/readonly-ref.md#readonly-structs)
+- [Readonly instance members](~/_csharplang/proposals/csharp-8.0/readonly-instance-members.md)
 
 ## See also
 

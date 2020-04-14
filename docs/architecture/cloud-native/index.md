@@ -48,6 +48,9 @@ Participants and Reviewers:
 > **Cesar De la Torre**, Principal Program Manager, .NET team, Microsoft
 >
 > **Nish Anil**, Sr. Program Manager, .NET team, Microsoft
+>
+> **Jeremy Likeness**, Senior Program Manager for .NET Data, .NET Team, Microsoft
+
 
 Editors:
 

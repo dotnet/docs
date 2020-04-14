@@ -1,7 +1,7 @@
 ---
 title: Other container deployment options
 description: Other Container Deployment Options using Azure
-ms.date: 04/10/2020
+ms.date: 04/13/2020
 ---
 # Other container deployment options
 
@@ -36,6 +36,28 @@ Once the deployment completes, find the newly deployed container's IP address an
 Azure Container Instances offers the fastest way to run simple container workloads in Azure. You don't need to configure an app service, orchestrator, or virtual machine. For scenarios where you require full container orchestration, service discovery, automatic scaling, or coordinated upgrades, we recommend Azure Kubernetes Service (AKS).
 
 ## References
+
+- [What is Kubernetes?](https://blog.newrelic.com/engineering/what-is-kubernetes/)
+- [Installing Kubernetes with Minikube](https://kubernetes.io/docs/setup/learning-environment/minikube/)
+- [MiniKube vs Docker Desktop](https://medium.com/containers-101/local-kubernetes-for-windows-minikube-vs-docker-desktop-25a1c6d3b766)
+- [Visual Studio Tools for Docker](https://docs.microsoft.com/dotnet/standard/containerized-lifecycle-architecture/design-develop-containerized-apps/visual-studio-tools-for-docker)
+
+- [Understanding serverless cold start](https://azure.microsoft.com/blog/understanding-serverless-cold-start/)
+- [Pre-warmed Azure Functions instances](https://docs.microsoft.com/azure/azure-functions/functions-premium-plan#pre-warmed-instances)
+- [Create a function on Linux using a custom image](https://docs.microsoft.com/azure/azure-functions/functions-create-function-linux-custom-image)
+
+- [Run Azure Functions in a Docker Container](https://markheath.net/post/azure-functions-docker)
+- [Create a function on Linux using a custom image](https://docs.microsoft.com/azure/azure-functions/functions-create-function-linux-custom-image)
+- [Azure Functions with Kubernetes Event Driven Autoscaling](https://docs.microsoft.com/azure/azure-functions/functions-kubernetes-keda)
+
+- [Canary Release](https://martinfowler.com/bliki/CanaryRelease.html)
+- [Azure Dev Spaces with VS Code](https://docs.microsoft.com/azure/dev-spaces/quickstart-netcore)
+- [Azure Dev Spaces with Visual Studio](https://docs.microsoft.com/azure/dev-spaces/quickstart-netcore-visualstudio)
+
+- [AKS Multiple Node Pools](https://docs.microsoft.com/azure/aks/use-multiple-node-pools)
+- [AKS Cluster Autoscaler](https://docs.microsoft.com/azure/aks/cluster-autoscaler)
+- [Tutorial: Scale applications in AKS](https://docs.microsoft.com/azure/aks/tutorial-kubernetes-scale)
+- [Azure Functions scale and hosting](https://docs.microsoft.com/azure/azure-functions/functions-scale)
 
 - [Azure Container Instances Docs](https://docs.microsoft.com/azure/container-instances/)
 - [Deploy Container Instance from ACR](https://docs.microsoft.com/azure/container-instances/container-instances-using-azure-container-registry#deploy-with-azure-portal)

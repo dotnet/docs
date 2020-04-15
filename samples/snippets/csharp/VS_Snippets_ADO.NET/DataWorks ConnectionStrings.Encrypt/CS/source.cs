@@ -8,7 +8,7 @@ class Program
     {
     }
     // <Snippet1>
-    static void ToggleConfigEncryption(string exeConfigName)
+    static void ToggleConfigEncryption(string exeFile)
     {
         // Takes the executable file name without the
         // .config extension.

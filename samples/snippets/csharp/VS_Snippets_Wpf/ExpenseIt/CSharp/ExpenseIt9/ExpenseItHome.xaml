@@ -49,18 +49,20 @@
             <ImageBrush ImageSource="watermark.png"  />
         </Grid.Background>
        
+        <!-- <NewColumn> -->
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="230" />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        
+        <!-- </NewColumn> -->
+        <!-- <NewRows> -->
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition Height="Auto"/>
             <RowDefinition />
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-     
+        <!-- </NewRows> -->
         <!-- People list -->
        
         <Label Grid.Column="1" Style="{StaticResource headerTextStyle}" >

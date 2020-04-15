@@ -35,7 +35,7 @@ You can use the Windows Communication Foundation (WCF) client configuration to s
               <servicePrincipalName value="host/localhost" />  
             </identity>  
           </endpoint>  
-            // Add another endpoint by adding another <endpoint> element.  
+            <!-- Add another endpoint by adding another <endpoint> element. -->
           <endpoint  
             name="endpoint2">  
            //Configure another endpoint here.  

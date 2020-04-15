@@ -610,26 +610,26 @@ This application only contains a single page.
 
 1. The complete `QueryLocation_Click` method should look like the code below:
 
-        ```csharp
-        private async void QueryLocation_Click(object sender, RoutedEventArgs e)
-        {
-            // 1. Reverse geocode 
-            var coordinates = await GetCoordinatesAsync(AddressBar.Text);
-        
-            // 2. Update map with new address location
-            await UpdateMapLocation(SatelliteMap, coordinates);
-        
-            // 3. Convert map display into an image
-            var satelliteImage = await GetMapAsImageAsync();
-        
-            // 4. Make a prediction
-            PredictionText.Text = "Inspecting Image";
-            var prediction = await ClassifyImageAsync(satelliteImage);
-        
-            // 5. Display prediction
-            PredictionText.Text = $"Prediction: {prediction}";
-        }
-        ```
+    ```csharp
+    private async void QueryLocation_Click(object sender, RoutedEventArgs e)
+    {
+        // 1. Reverse geocode 
+        var coordinates = await GetCoordinatesAsync(AddressBar.Text);
+
+        // 2. Update map with new address location
+        await UpdateMapLocation(SatelliteMap, coordinates);
+
+        // 3. Convert map display into an image
+        var satelliteImage = await GetMapAsImageAsync();
+
+        // 4. Make a prediction
+        PredictionText.Text = "Inspecting Image";
+        var prediction = await ClassifyImageAsync(satelliteImage);
+
+        // 5. Display prediction
+        PredictionText.Text = $"Prediction: {prediction}";
+    }
+    ```
 
 ## Test the application
 
@@ -640,7 +640,7 @@ This application only contains a single page.
 1. When the application launches, replace the default text in the address bar with "11 Times Square".
 1. Select the **Query Location** button. The image is inspected and the text "Prediction: Industrial" should appear below the map.
 
-![Land Use UWP Application](media/land-use-uwp-application.png)
+![Land Use UWP Application](media/image-classification-model-builder/land-use-uwp-application.png)
 
 Congratulations! You have now build an application that uses Model Builder to train an image classification model in Azure.
 

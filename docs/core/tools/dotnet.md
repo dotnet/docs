@@ -16,26 +16,27 @@ ms.date: 02/13/2020
 To get information about the available commands and the environment:
 
 ```dotnetcli
-dotnet [-h|--help] [--version] [--info]
-    [--list-runtimes] [--list-sdks]
+dotnet [--version] [--info] [--list-runtimes] [--list-sdks]
+
+dotnet -h|--help
 ```
 
 To run a command (requires SDK installation):
 
 ```dotnetcli
-dotnet <COMMAND> [-d|--diagnostics] [-h|--help] [--verbosity]
+dotnet <COMMAND> [-d|--diagnostics] [-h|--help] [--verbosity <LEVEL>]
     [command-options] [arguments]
 ```
 
 To run an application:
 
 ```dotnetcli
-dotnet [--additionalprobingpath] [--additional-deps]
-    [--fx-version]  [--roll-forward]
+dotnet [--additionalprobingpath <PATH>] [--additional-deps <PATH>]
+    [--fx-version <VERSION>]  [--roll-forward <SETTING>]
     <PATH_TO_APPLICATION> [arguments]
 
-dotnet exec [--additionalprobingpath] [--additional-deps]
-    [--fx-version]  [--roll-forward]
+dotnet exec [--additionalprobingpath] [--additional-deps <PATH>]
+    [--fx-version <VERSION>]  [--roll-forward <SETTING>]
     <PATH_TO_APPLICATION> [arguments]
 ```
 

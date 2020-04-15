@@ -16,11 +16,11 @@ ms.date: 02/14/2020
 ```dotnetcli
 dotnet tool uninstall <PACKAGE_NAME> <-g|--global>
 
-dotnet tool uninstall <PACKAGE_NAME> <--tool-path>
+dotnet tool uninstall <PACKAGE_NAME> <--tool-path <PATH>>
 
 dotnet tool uninstall <PACKAGE_NAME>
 
-dotnet tool uninstall <-h|--help>
+dotnet tool uninstall -h|--help
 ```
 
 ## Description

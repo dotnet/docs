@@ -14,7 +14,7 @@ ms.date: 02/14/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet msbuild <msbuild_arguments>
+dotnet msbuild <MSBUILD_ARGUMENTS>
 
 dotnet msbuild -h
 ```

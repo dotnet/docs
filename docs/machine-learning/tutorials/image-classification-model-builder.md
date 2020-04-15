@@ -640,6 +640,8 @@ This application only contains a single page.
 1. When the application launches, replace the default text in the address bar with "11 Times Square".
 1. Select the **Query Location** button. The image is inspected and the text "Prediction: Industrial" should appear below the map.
 
+![Land Use UWP Application](media/land-use-uwp-application.png)
+
 Congratulations! You have now build an application that uses Model Builder to train an image classification model in Azure.
 
 ## Next steps

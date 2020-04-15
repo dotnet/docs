@@ -10,7 +10,7 @@ ms.assetid: 3b2760b6-d607-4ac7-b784-5c6524e2a0e0
 
 # How to sort elements on multiple keys (LINQ to XML)
 
-This article shows how to sort on multiple keys.
+This article shows how to sort on multiple keys in C# and Visual Basic.
 
 ## Example: Sort XML elements on multiple keys
 

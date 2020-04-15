@@ -10,7 +10,7 @@ ms.assetid: 7fd3001f-f8f9-4bce-879f-d4c7af8a04fe
 
 # How to calculate intermediate values (LINQ to XML)
 
-This article shows how to calculate intermediate values for use in sorting, filtering, and selecting.
+This article shows how to calculate intermediate values for use in sorting, filtering, and selecting in C# and Visual Basic.
 
 ## Example: Use the `let` clause to calculate based on element data
 

@@ -106,6 +106,7 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
    </clientCredentials>  
   </behavior>  
  </endpointBehaviors>  
+</behaviors>  
 ```  
   
 #### \<clientCertificate> Element  
@@ -129,6 +130,9 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
       <issuerChannelBehaviors>  
          <add issuerAddress="http://www.contoso.com"  
                behaviorConfiguration="clientBehavior1" />
+      </issuerChannelBehaviors>  
+   </issuedToken>  
+</clientCredentials>
 ```  
   
 #### \<serviceCertificate> Element  
@@ -185,15 +189,15 @@ In Windows Communication Foundation (WCF), behaviors modify run-time behavior at
  Use the [\<serviceSecurityAudit>](../../../../docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md) to specify the log written to, and what types of events to log. For more information, see [Auditing](../../../../docs/framework/wcf/feature-details/auditing-security-events.md).  
   
 ```xml  
-<system.serviceModel>  
-<serviceBehaviors>  
+<behaviors>
+ <serviceBehaviors>  
   <behavior name="NewBehavior">  
     <serviceSecurityAudit auditLogLocation="Application"
              suppressAuditFailure="true"  
              serviceAuthorizationAuditLevel="Success"
              messageAuthenticationAuditLevel="Success" />  
-    </behavior>  
-  </serviceBehaviors>  
+  </behavior>  
+ </serviceBehaviors>  
 </behaviors>  
 ```  
   

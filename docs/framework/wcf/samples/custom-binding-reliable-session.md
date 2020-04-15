@@ -114,7 +114,6 @@ Press <ENTER> to terminate client.
 
     ```xml
     <endpoint name = ""
-    address="http://service_machine_name/servicemodelsamples/service.svc"
-    ... />
+    address="http://service_machine_name/servicemodelsamples/service.svc" />
     <compositeDuplex clientBaseAddress="http://client_machine_name:8000/myClient/" />
     ```

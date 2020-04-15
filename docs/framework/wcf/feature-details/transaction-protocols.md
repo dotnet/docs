@@ -148,8 +148,8 @@ Windows Communication Foundation (WCF) implements WS-Atomic Transaction and WS-C
     <a:To>https://...</a:To>  
     <wsse:Security>  
       <u:Timestamp>  
-        <wsu:Created>2005-12-15T23:36:09.921Z</u:Created>  
-        <wsu:Expires>2005-12-15T23:41:09.921Z</u:Expires>  
+        <wsu:Created>2005-12-15T23:36:09.921Z</wsu:Created>  
+        <wsu:Expires>2005-12-15T23:41:09.921Z</wsu:Expires>  
       </u:Timestamp>  
     </wsse:Security>  
   </s:Header>  
@@ -174,8 +174,8 @@ Windows Communication Foundation (WCF) implements WS-Atomic Transaction and WS-C
 <a:To>https://...</a:To>
 <wsse:Security>  
  <u:Timestamp>  
-<wsu:Created>2005-12-15T23:36:09.921Z</u:Created>  
-<wsu:Expires>2005-12-15T23:41:09.921Z</u:Expires>  
+<wsu:Created>2005-12-15T23:36:09.921Z</wsu:Created>  
+<wsu:Expires>2005-12-15T23:41:09.921Z</wsu:Expires>  
 </u:Timestamp>
 </wsse:Security>
 </s:Header>
@@ -616,10 +616,10 @@ xmlns:wssu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-u
         <!-- signature over Addressing headers, Timestamp, and Body -->  
       </Signature>  
     </wsse:Security>  
-    <wsse11:EncryptedHeader >  
+    <wsse11:EncryptedHeader>  
      <!-- encrypted wscoor:CoordinationContext header containing CCi -->  
     </wsse11:EncryptedHeader>  
-    <wsse11:EncryptedHeader
+    <wsse11:EncryptedHeader>
       <!-- encrypted wst:IssuedTokens header containing SCTi -->  
       <!-- wst:IssuedTokens header is taken verbatim from message #2 above, omitted for brevity -->  
     </wsse11:EncryptedHeader>  

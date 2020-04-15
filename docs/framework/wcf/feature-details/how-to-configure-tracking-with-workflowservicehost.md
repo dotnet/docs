@@ -17,7 +17,7 @@ This topic explains how to configure tracking for a [!INCLUDE[netfx_current_long
            <etwTracking profileName="Sample Tracking Profile" />  
          </behavior>
        </serviceBehaviors>  
-    <behaviors>  
+    </behaviors>  
     ```  
   
     > [!NOTE]

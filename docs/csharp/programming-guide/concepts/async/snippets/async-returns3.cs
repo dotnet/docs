@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 public class NaiveButton
 {
-    public event EventHandler Clicked;
+    public event EventHandler? Clicked;
 
     public void Click()
     {
@@ -15,9 +15,9 @@ public class NaiveButton
 
 public class AsyncVoidExample
 {
-    static TaskCompletionSource<bool> tcs;
+    static TaskCompletionSource<bool> tcs = new TaskCompletionSource<bool>();
 
-    static async Task Main()
+    public static async Task Main()
     {
         tcs = new TaskCompletionSource<bool>();
         var secondHandlerFinished = tcs.Task;
@@ -34,14 +34,14 @@ public class AsyncVoidExample
         await secondHandlerFinished;
     }
 
-    private static void Button_Clicked_1(object sender, EventArgs e)
+    private static void Button_Clicked_1(object? sender, EventArgs e)
     {
         Console.WriteLine("   Handler 1 is starting...");
         Task.Delay(100).Wait();
         Console.WriteLine("   Handler 1 is done.");
     }
 
-    private static async void Button_Clicked_2_Async(object sender, EventArgs e)
+    private static async void Button_Clicked_2_Async(object? sender, EventArgs e)
     {
         Console.WriteLine("   Handler 2 is starting...");
         Task.Delay(100).Wait();
@@ -51,7 +51,7 @@ public class AsyncVoidExample
         tcs.SetResult(true);
     }
 
-    private static void Button_Clicked_3(object sender, EventArgs e)
+    private static void Button_Clicked_3(object? sender, EventArgs e)
     {
         Console.WriteLine("   Handler 3 is starting...");
         Task.Delay(100).Wait();

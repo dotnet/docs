@@ -7,6 +7,9 @@ ms.assetid: a6e6e65c-347f-4494-9457-653bf29baac2
 
 The XML Schema Definition (Xsd.exe) tool generates XML schema or common language runtime classes from XDR, XML, and XSD files, or from classes in a runtime assembly.
 
+The XML Schema Definition tool (Xsd.exe) usually can be found in the following path:\
+_C:\\Program Files (x86)\\Microsoft SDKs\\Windows\\{version}\\bin\\NETFX {version} Tools\\_
+
 ## Syntax
 
 Run the tool from the command line.

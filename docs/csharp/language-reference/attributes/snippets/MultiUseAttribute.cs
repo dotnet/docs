@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace attributes
+namespace AttributeExamples
 {
-    // <Snippet1>
+    // <SnippetMultiUse>
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]
     class MultiUse : Attribute { }
 
@@ -14,5 +12,5 @@ namespace attributes
 
     [MultiUse, MultiUse]
     class Class2 { }
-    // </Snippet1>
+    // </SnippetMultiUse>
 }

@@ -1,15 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace attributes
+namespace AttributeExamples
 {
-    // <Snippet1>
+    // <SnippetDefinePropertyAttribute>
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field)]
     class NewPropertyOrFieldAttribute : Attribute { }
-    // </Snippet1>
+    // </SnippetDefinePropertyAttribute>
 
-    // <Snippet2>
+    // <SnippetUsePropertyAttribute>
     class MyClass
     {
         // Attribute attached to property:
@@ -20,5 +18,5 @@ namespace attributes
         [field:NewPropertyOrField]
         public string Description { get; set; }
     }
-    // </Snippet2>
+    // </SnippetUsePropertyAttribute>
 }

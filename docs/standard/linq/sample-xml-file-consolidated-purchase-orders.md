@@ -90,7 +90,7 @@ The following XML file is used in various examples in the LINQ to XML documentat
       <Zip>98112</Zip>
       <Country>USA</Country>
     </Address>
-    <DeliveryNotes>Please do not deliver on Saturday.</DeliveryNotes>
+    <DeliveryNotes>Please don't deliver on Saturday.</DeliveryNotes>
     <Items>
       <Item PartNumber="898-AZ">
         <ProductName>Computer Keyboard</ProductName>

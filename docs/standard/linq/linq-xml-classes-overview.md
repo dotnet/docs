@@ -94,4 +94,4 @@ it's possible, if necessary, to control namespace prefixes. In some circumstance
 
 ### XText class
 
-<xref:System.Xml.Linq.XText> represents a text node. In most cases, you do not have to use this class. This class is primarily used for mixed content.
+<xref:System.Xml.Linq.XText> represents a text node. In most cases, you don't have to use this class. This class is primarily used for mixed content.

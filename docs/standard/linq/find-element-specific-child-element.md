@@ -48,7 +48,7 @@ Note that the Visual Basic version of the code uses the [XML Child axis property
 
 ## Example: Find when the XML is in a namespace
 
-The following example does the same as the previous one, but for XML that's  in a namespace. The example uses XML document [Sample XML file: Test configuration in a namespace](sample-xml-file-test-configuration-namespace.md).
+The following example does the same as the previous one, but for XML that's in a namespace. The example uses XML document [Sample XML file: Test configuration in a namespace](sample-xml-file-test-configuration-namespace.md).
 
 For more information, see [Namespaces overview](namespaces-overview.md).
 

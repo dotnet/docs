@@ -13,7 +13,7 @@ You can serialize any XML component, including <xref:System.Xml.Linq.XDocument> 
 
 If you want to suppress formatting when serializing to a string, you can use the <xref:System.Xml.Linq.XNode.ToString%2A?displayProperty=nameWithType> method.
 
-The default behavior when serializing to a file is to format (indent) the resulting XML document. When you indent, the insignificant white space in the XML tree isn't preserved. To serialize with formatting, use one of the overloads of the following methods that do not take <xref:System.Xml.Linq.SaveOptions> as an argument:
+The default behavior when serializing to a file is to format (indent) the resulting XML document. When you indent, the insignificant white space in the XML tree isn't preserved. To serialize with formatting, use one of the overloads of the following methods that don't take <xref:System.Xml.Linq.SaveOptions> as an argument:
 
 - <xref:System.Xml.Linq.XDocument.Save%2A?displayProperty=nameWithType>
 - <xref:System.Xml.Linq.XElement.Save%2A?displayProperty=nameWithType>

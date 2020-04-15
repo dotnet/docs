@@ -49,9 +49,9 @@ The example produces this output:
 </Address>
 ```
 
-## Example: Find an element in XML that's  in a namespace
+## Example: Find an element in XML that's in a namespace
 
-The following example shows the same query, but for XML that's  in a namespace. It uses XML document [Sample XML file: typical purchase order in a namespace](sample-xml-file-typical-purchase-order-namespace.md).
+The following example shows the same query, but for XML that's in a namespace. It uses XML document [Sample XML file: typical purchase order in a namespace](sample-xml-file-typical-purchase-order-namespace.md).
 
 For more information about namespaces, see [Namespaces overview](namespaces-overview.md).
 

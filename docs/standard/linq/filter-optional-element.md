@@ -89,7 +89,7 @@ Child Four Text
 
 ## Example: Same search but for XML in a namespace
 
-The following example is the same query but for XML that's  in a namespace. For more information, see [Namespaces overview](namespaces-overview.md).
+The following example is the same query but for XML that's in a namespace. For more information, see [Namespaces overview](namespaces-overview.md).
 
 ```csharp
 XElement root = XElement.Parse(@"<Root xmlns='http://www.adatum.com'>
@@ -177,8 +177,8 @@ Child Four Text
 - [Standard Query Operators Overview (C#)](../../csharp/programming-guide/concepts/linq/standard-query-operators-overview.md)
 - [Projection Operations (C#)](../../csharp/programming-guide/concepts/linq/projection-operations.md)
 - [Basic Queries (LINQ to XML) (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/basic-queries-linq-to-xml.md)
-- [XML Child Axis Property](../../visual-basic/language-reference/xml-axis/xml-child-axis-property.md)
-- [XML Attribute Axis Property](../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)
+- [XML Child Axis Property (Visual Basic)](../../visual-basic/language-reference/xml-axis/xml-child-axis-property.md)
+- [XML Attribute Axis Property (Visual Basic)](../../visual-basic/language-reference/xml-axis/xml-attribute-axis-property.md)
 - [XML Value Property](../../visual-basic/language-reference/xml-axis/xml-value-property.md)
 - [Standard Query Operators Overview (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/standard-query-operators-overview.md)
 - [Projection Operations (Visual Basic)](../../visual-basic/programming-guide/concepts/linq/projection-operations.md)

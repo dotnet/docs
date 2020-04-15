@@ -1,6 +1,6 @@
 ---
 title: How to retrieve the shallow value of an element - LINQ to XML
-description: Use the `ShallowValue` extension method to retrieve the shallow value of an element. The shallow value is the value of that element only; that is, it does not include the values of descendant elements.
+description: Use the `ShallowValue` extension method to retrieve the shallow value of an element. The shallow value is the value of that element only; that is, it doesn't include the values of descendant elements.
 ms.date: 07/20/2015
 dev_langs:
   - "csharp"

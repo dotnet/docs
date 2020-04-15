@@ -21,7 +21,7 @@ XElement root = XElement.Parse(@"<root>
     </r>
     <n>
       <r>
-        <t>that's  broken up into </t>
+        <t>that's broken up into </t>
       </r>
     </n>
     <n>
@@ -52,7 +52,7 @@ Dim root As XElement = _
             </r>
             <n>
                 <r>
-                    <t>that's  broken up into </t>
+                    <t>that's broken up into </t>
                 </r>
             </n>
             <n>
@@ -78,12 +78,11 @@ Console.WriteLine(str)
 The example produces this output:
 
 ```output
-Some text that's  broken up into multiple segments.
-```
+Some text that's broken up into multiple segments.
 
 ## Example: Find when the XML is in a namespace
 
-The following example shows the same query for XML that's  in a namespace. For more information, see [Namespaces overview](namespaces-overview.md).
+The following example shows the same query for XML that's in a namespace. For more information, see [Namespaces overview](namespaces-overview.md).
 
 ```csharp
 XElement root = XElement.Parse(@"<root xmlns='http://www.adatum.com'>
@@ -93,7 +92,7 @@ XElement root = XElement.Parse(@"<root xmlns='http://www.adatum.com'>
     </r>
     <n>
       <r>
-        <t>that's  broken up into </t>
+        <t>that's broken up into </t>
       </r>
     </n>
     <n>
@@ -129,7 +128,7 @@ Module Module1
                     </r>
                     <n>
                         <r>
-                            <t>that's  broken up into </t>
+                            <t>that's broken up into </t>
                         </r>
                     </n>
                     <n>
@@ -157,7 +156,7 @@ End Module
 The example produces this output:
 
 ```output
-Some text that's  broken up into multiple segments.
+Some text that's broken up into multiple segments.
 ```
 
 ## See also

@@ -50,7 +50,7 @@ WCF includes the following set of features. For more information, see [WCF Featu
 
 - **Security**
 
-     Messages can be encrypted to protect privacy and you can require users to authenticate themselves before being allowed to receive messages. Security can be implemented using well-known standards such as SSL or WS-SecureConversation. For more information, see [Security](./feature-details/security.md).
+     Messages can be encrypted to protect privacy and you can require users to authenticate themselves before being allowed to receive messages. Security can be implemented using well-known standards such as TLS or WS-SecureConversation. For more information, see [Security](./feature-details/security.md).
 
 - **Multiple Transports and Encodings**
 

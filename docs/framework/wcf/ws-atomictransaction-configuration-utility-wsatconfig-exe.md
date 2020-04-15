@@ -25,7 +25,7 @@ wsatConfig [Options]
  The following table shows the options that can be used with WS-AtomicTransaction Configuration Utility (wsatConfig.exe).  
   
 > [!NOTE]
-> When you set an SSL certificate for a selected port, you overwrite the original SSL certificate associated with that port if one exists.  
+> When you set a TLS/SSL certificate for a selected port, you overwrite the original TLS/SSL certificate associated with that port if one exists.  
   
 |Options|Description|  
 |-------------|-----------------|  

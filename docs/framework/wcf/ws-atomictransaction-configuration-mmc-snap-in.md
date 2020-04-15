@@ -25,7 +25,7 @@ If you are running Windows XP or Windows Server 2003, the MMC snap-in can be fou
 regasm.exe /codebase WsatUI.dll
 ```
 
- You can use this tool to modify the basic WS-AtomicTransaction settings. For example, you can enable and disable the WS-AtomicTransaction protocol support, configure the HTTP ports for WS-AT, bind an SSL Certificate to the HTTP port, configure certificates by specifying certificate subject names, select the Tracing mode and set default and maximum timeouts.
+ You can use this tool to modify the basic WS-AtomicTransaction settings. For example, you can enable and disable the WS-AtomicTransaction protocol support, configure the HTTP ports for WS-AT, bind a TLS/SSL Certificate to the HTTP port, configure certificates by specifying certificate subject names, select the Tracing mode and set default and maximum timeouts.
 
  If you must configure WS-AtomicTransaction support on the local machine only, you can use the command-line version of this tool. For more information about the command-line tool, see the [WS-AtomicTransaction Configuration Utility (wsatConfig.exe)](ws-atomictransaction-configuration-utility-wsatconfig-exe.md) topic.
 
@@ -41,11 +41,11 @@ regasm.exe /codebase WsatUI.dll
 
 #### Network Group Box
 
-You can specify the HTTPS port and additional security settings such as SSL encryption in the Network group. This group is disabled (grayed out) if DTC Network Transactions are not enabled.
+You can specify the HTTPS port and additional security settings such as TLS encryption in the Network group. This group is disabled (grayed out) if DTC Network Transactions are not enabled.
 
  **HTTPS Port**
 
- This is the value of the HTTPS port used for WS-AT. The value must be a number in the range 1-65535 (as to represent a valid port). Changing the HTTP Port modifies the HTTP Service Configuration, which means that the previously used WS-AT Service Address is released, and a new WS-AT Service Address is registered based on the new port. In addition, the newly selected port is encrypted with the currently selected certificate for SSL Encryption.
+ This is the value of the HTTPS port used for WS-AT. The value must be a number in the range 1-65535 (as to represent a valid port). Changing the HTTP Port modifies the HTTP Service Configuration, which means that the previously used WS-AT Service Address is released, and a new WS-AT Service Address is registered based on the new port. In addition, the newly selected port is encrypted with the currently selected certificate for TLS Encryption.
 
 > [!NOTE]
 > If you have already enabled the firewall before running this tool, the port is automatically registered in the exception list. If the firewall is disabled before running this tool, nothing additional is configured regarding the firewall.
@@ -54,10 +54,10 @@ You can specify the HTTPS port and additional security settings such as SSL encr
 
  **Endpoint Certificate**
 
- Clicking the **Select** button displays a list with the currently available certificates on the Local Machine, allowing the user to select the certificate that can be used for SSL encryption. The certificates must have a private key. Otherwise, you receive an error message.
+ Clicking the **Select** button displays a list with the currently available certificates on the Local Machine, allowing the user to select the certificate that can be used for TLS encryption. The certificates must have a private key. Otherwise, you receive an error message.
 
 > [!NOTE]
-> When you set an SSL certificate for a selected port, you overwrite the original SSL certificate associated with that port if one exists.
+> When you set a TLS/SSL certificate for a selected port, you overwrite the original TLS/SSL certificate associated with that port if one exists.
 
  **Authorized Accounts**
 

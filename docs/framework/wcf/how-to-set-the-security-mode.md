@@ -106,13 +106,13 @@ Setting the mode to one of the three values determines how you set the `ClientCr
 
 ### Using TransportWithMessageCredential
 
-When setting the security mode to `TransportWithMessageCredential`, the transport determines the actual mechanism that provides the transport-level security. For example, the HTTP protocol uses Secure Sockets Layer (SSL) over HTTP (HTTPS). Therefore, setting the `ClientCredentialType` property of any transport security object (such as <xref:System.ServiceModel.HttpTransportSecurity>) is ignored.  In other words, you can only set the `ClientCredentialType` of the message security object (for the `WSHttpBinding` binding, the <xref:System.ServiceModel.NonDualMessageSecurityOverHttp> object).
+When setting the security mode to `TransportWithMessageCredential`, the transport determines the actual mechanism that provides the transport-level security. For example, the HTTP protocol uses Transport Layer Security (TLS), previously known as Secure Sockets Layer (SSL), over HTTP (HTTPS). Therefore, setting the `ClientCredentialType` property of any transport security object (such as <xref:System.ServiceModel.HttpTransportSecurity>) is ignored.  In other words, you can only set the `ClientCredentialType` of the message security object (for the `WSHttpBinding` binding, the <xref:System.ServiceModel.NonDualMessageSecurityOverHttp> object).
 
 For more information, see [How to: Use Transport Security and Message Credentials](./feature-details/how-to-use-transport-security-and-message-credentials.md).
 
 ## See also
 
-- [How to: Configure a Port with an SSL Certificate](./feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)
+- [How to: Configure a Port with a TLS/SSL Certificate](./feature-details/how-to-configure-a-port-with-an-ssl-certificate.md)
 - [How to: Use Transport Security and Message Credentials](./feature-details/how-to-use-transport-security-and-message-credentials.md)
 - [Transport Security](./feature-details/transport-security.md)
 - [Message Security](./feature-details/message-security-in-wcf.md)

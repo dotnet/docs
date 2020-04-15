@@ -59,7 +59,7 @@ Added support for true asynchronous streaming where the send side now does not b
 
 ## Simplifying Exposing an Endpoint Over HTTPS with IIS
 
-An HTTPS protocol mapping has been added to simplify exposing an endpoint over HTTPS. To enable an HTTPS endpoint, ensure your website has an HTTPS binding and SSL certificate configured, and then simply enable HTTPS for the virtual directory that hosts the service. If metadata is enabled for the service, it will be exposed over HTTPS as well.
+An HTTPS protocol mapping has been added to simplify exposing an endpoint over HTTPS. To enable an HTTPS endpoint, ensure your website has an HTTPS binding and TLS/SSL certificate configured, and then simply enable HTTPS for the virtual directory that hosts the service. If metadata is enabled for the service, it will be exposed over HTTPS as well.
 
 ## Generating a Single WSDL Document
 

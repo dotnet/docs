@@ -56,7 +56,7 @@ You can use the Windows Communication Foundation (WCF) client configuration to s
           </security>  
         </binding>  
         <binding name="Another Binding"  
-          //Configure this binding here.  
+          <!-- Configure this binding here. -->  
         </binding>  
           </wsHttpBinding>  
      </bindings>  

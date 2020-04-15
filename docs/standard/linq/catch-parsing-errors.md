@@ -12,7 +12,7 @@ ms.assetid: bfb612d4-5605-48ef-8c93-915cf9d5dcfb
 
 This article shows how to detect badly formed or invalid XML in C# or Visual Basic.
 
-LINQ to XML is implemented using <xref:System.Xml.XmlReader>. If badly formed or invalid XML is passed to LINQ to XML, the underlying <xref:System.Xml.XmlReader> class will throw an exception. The various methods that parse XML, such as <xref:System.Xml.Linq.XElement.Parse%2A?displayProperty=nameWithType>, do not catch the exception; the exception can then be caught by your application.
+LINQ to XML is implemented using <xref:System.Xml.XmlReader>. If badly formed or invalid XML is passed to LINQ to XML, the underlying <xref:System.Xml.XmlReader> class will throw an exception. The various methods that parse XML, such as <xref:System.Xml.Linq.XElement.Parse%2A?displayProperty=nameWithType>, don't catch the exception; the exception can then be caught by your application.
 
 ## Example: Parse invalid XML
 

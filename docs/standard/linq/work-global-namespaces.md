@@ -67,7 +67,7 @@ The example produces this output:
 
 ## Example: Declare a default namespace and use an embedded expression for the `Child` element
 
-Namespaces that are declared in XML literals do not carry over into embedded expressions. The following example declares a default namespace, and then uses an embedded expression for the `Child` element.
+Namespaces that are declared in XML literals don't carry over into embedded expressions. The following example declares a default namespace, and then uses an embedded expression for the `Child` element.
 
 ```vb
 Dim root As XElement = _

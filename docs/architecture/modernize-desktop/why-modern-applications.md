@@ -121,11 +121,11 @@ As a part of the commitment to provide developers with the best tools to build a
 
 1. Move Desktop Application scenarios into Modern Application platform. The traditional desktop development is still popular because it addresses certain scenarios well. It makes sense to take these common desktop scenarios and bring them into the modern desktop platform to make the platform fully capable.
 
-    ![Move Desktop Application scenarios into Modern Application platform](./media/why-desktop-applications/desktop-to-modern.png)
+    ![Move Desktop Application scenarios into Modern Application platform](./media/why-modern-applications/desktop-to-modern.png)
 
 1. Move Modern Application features into Desktop Applications. For existing desktop apps that need a way to leverage modern capabilities without rewriting from scratch, features from the Modern Application platform are pushed into the Desktop Application.
 
-    ![Move Modern Application features into Desktop Applications](./media/why-desktop-applications/modern-to-desktop.png)
+    ![Move Modern Application features into Desktop Applications](./media/why-modern-applications/modern-to-desktop.png)
 
 In this book, we'll focus on the second part and show how you can modernize your existing desktop applications.
 

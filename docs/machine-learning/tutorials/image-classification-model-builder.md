@@ -15,6 +15,8 @@ Learn how to train an image classification model in Azure using Model Builder to
 
 This tutorial shows you how to create a Universal Windows Platform (UWP) application that uses model hosted in an ASP.NET Core Web API to categorize land use based on satellite images.
 
+In this tutorial you:
+
 > [!div class="checklist"]
 >
 > - Create an ASP.NET Core Web API
@@ -30,32 +32,33 @@ This tutorial shows you how to create a Universal Windows Platform (UWP) applica
 > [!NOTE]
 > Model Builder is currently in Preview.
 
-You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples) repository.
-
 ## Prerequisites
 
 - For a list of pre-requisites and installation instructions, visit the [Model Builder installation guide](https://docs.microsoft.com/dotnet/machine-learning/how-to-guides/install-model-builder).
+- Azure account. If you don't have one, [create a free Azure account](https://aka.ms/AMLFree) today.
 - ASP.NET and web development workload.
 - Universal Windows Platform development workload.
 
 ## Model Builder image classification overview
 
+This sample creates a UWP application that categorizes land use using map satellite imagery using a machine learning model trained on Azure with Model Builder. The model itself is hosted as a web service in an ASP.NET Core Web API. You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples) Github repository
+
 ## Create solution
 
-1. On the menu bar, choose **File > New > Project**.
-1. On the **Create a new project** page, type **solution** into the search box.
-1. Select the **Blank Solution** template, and then click Next.
-1. Enter **Name** and **Location** values for your solution, and then choose Create.
+1. In Visual Studio, select **File > New > Project** from the menu bar.
+1. In the New Project dialog, type **Solution** into the search box.
+1. Select the **Blank Solution** template, then select the **Next** button.
+1. In the **Name** text box, type "LandUse".
+1. Select **Create**.
 
 ## Create ASP.NET Core Web API
 
-1. Open Visual Studio and select **File > New > Project** from the menu bar.
-1. In the New Project dialog, select the **Visual C#** node followed by the Web node.
-1. Then select the **ASP.NET Core Web Application** project template.
+1. In Solution Explorer, right-click the **LandUse** solution, and select **Add > New Project**.
+1. In the New Project dialog, type **ASP.NET Core Web Application** into the search box.
+1. Select the **ASP.NET Core Web Application** C# project template, then select the **Next** button.
 1. In the **Name** text box, type "LandUseAPI".
-1. Make sure P**lace solution and project in the same directory** is unchecked (VS 2019), or **Create directory for solution** is checked (VS 2017).
-1. Select the **OK** button.
-1. Choose **Web API** in the window that displays the different types of ASP.NET Core Projects, and then select the **OK** button.
+1. Select **Create**.
+1. Choose **API** in the window that displays the different types of ASP.NET Core Projects, and then select the **Create** button.
 
 ## Prepare and understand the data
 
@@ -76,82 +79,93 @@ It contains images a collection of satellite images divided into ten categories 
 To train your model, you need to select from the list of available machine learning scenarios provided by Model Builder.
 
 1. In Solution Explorer, right-click the **LandUseAPI** project, and select **Add > Machine Learning**.
-1. For this sample, the scenario is image classification. In the scenario step of the Model Builder tool, select the Sentiment Analysis scenario.
+1. For this sample, the scenario is image classification. In the scenario step of the Model Builder tool, select the **Image Classification** scenario.
 
 ## Load the data
 
-1. In the data step of the Model Builder tool, select **File** from the data source dropdown.
-1. Select the button next to the **Select a file** text box and use File Explorer to browse and select the unzipped directory containing the images.
-1. Select the **Train** link to move to the next step in the Model Builder tool.
+1. In the data step of the Model Builder tool, select the button next to the **Select a folder** text box and use File Explorer to browse and select the unzipped directory containing the images.
+1. Select the **Train** button to move to the next step in the Model Builder tool.
 
-## Create experiment in Azure
+## Train the model
+
+Training on Azure is only available for the Model Builder image classification scenario. The algorithm used to train these models is a Deep Neural Network based on the ResNet50 architecture. During the model training process, Model Builder trains separate models using ResNet50 algorithm and settings to find the best performing model for your dataset.
+
+### Create experiment in Azure
 
 An Azure Machine Learning experiment is a resource that needs to be created before running Model Builder training on Azure.
 
 The experiment encapsulates the configuration and results for one or more machine learning training runs. Experiments belong to a specific workspace. The first time an experiment is created, its name is registered in the workspace. Any subsequent runs - if the same experiment name is used - are logged as part of the same experiment. Otherwise, a new experiment is created.
 
+1. From the Choose Your Training Environment set of options, select **Azure**.
+1. Then, select *Create Experiment**.
+1. In the Create New Experiment dialog, choose your subscription from the **Subscription** dropdown.
+
 ### Create workspace
 
 A workspace is an Azure Machine Learning resource that provides a central place for all Azure Machine Learning resources and artifacts created as part of training run.
 
-To create an Azure Machine Learning workspace, the following are required:
+1. In the Create New Experiment dialog, select the **New** link next to the **Machine Learning Workspace name** dropdown.
+1. In the Create A New Workspace dialog, type "landuse-wkspc" in the **Machine Learning Workspace name** text box.
+1. Choose **East US** from the **Regions** dropdown. A region is the geographic location of the data center where your workspace and resources are deployed to. It is recommended that you choose a location close to where you or your customers are.
+1. Select the **New** next to the **Resource Groups** dropdown.
+    1. In the Create New Resource Group dialog, type "landuse-rg" in the **Resource Group name** text box.
+    1. Select **OK**.
+1. Choose your newly created resource group form the **Resource Groups** dropdown.
+1. Select **Create**.
 
-- Name: A name for your workspace between 3-33 characters. Names may only contain alphanumeric characters and hyphens.
-- Region: The geographic location of the data center where your workspace and resources are deployed to. It is recommended that you choose a location close to where you or your customers are.
-- Resource group: A container that contains all related resources for an Azure solution.
+    The provisioning process takes a few minutes. A request is made to Azure to provision the following cloud resources:
+
+    - Enterprise Azure Machine Learning workspace
+    - Azure storage account
+    - Azure Application Insights
+    - Azure Container Registry
+    - Azure Key Vault
+
+1. Once the provisioning process is complete, choose your newly created workspace from the **Machine Learning Workspace name** dropdown in the Create New Experiment dialog.
 
 ### Create compute
 
 An Azure Machine Learning compute is a cloud-based Linux VM used for training.
 
-To create an Azure Machine Learning compute, the following are required:
+1. In the Create New Experiment dialog, select the **New** link next to the **Compute name** dropdown.
+1. In the Create New Compute dialog, type "landuse-cpt" in the **Compute name** text box.
+1. Choose **Standard_NC24** from the **Compute size** dropdown. Model Builder uses GPU-optimized compute types. Visit the [NC-series Linux VM documentation](https://docs.microsoft.com/azure/virtual-machines/nc-series?toc=/azure/virtual-machines/linux/toc.json&bc=/azure/virtual-machines/linux/breadcrumb/toc.json) for more details on GPU optimized compute types.
+1. Select **Create**. The compute resources may take a few minutes to provision.
+1. Once the provisioning process is complete, choose your newly created workspace from the **Compute name** dropdown in the Create New Experiment dialog.
 
-- Name: A name for your workspace between 2-16 characters. Names may only contain alphanumeric characters and hyphens.
-- Compute size
+### Start training
 
-    Model Builder can use one of the following GPU-optimized compute types:
+Now it's time to finish creating the experiment and start training.
 
-    | Size | vCPU | Memory: GiB | Temp storage (SSD) GiB | GPU | GPU memory: GiB | Max data disks | Max NICs |
-    |---|---|---|---|---|---|---|---|
-    | Standard_NC12   | 12 | 112 | 680  | 2 | 24 | 48 | 2 |
-    | Standard_NC24   | 24 | 224 | 1440 | 4 | 48 | 64 | 4 |
-
-    Visit the [NC-series Linux VM documentation](https://docs.microsoft.com/azure/virtual-machines/nc-series?toc=/azure/virtual-machines/linux/toc.json&bc=/azure/virtual-machines/linux/breadcrumb/toc.json) for more details on GPU optimized compute types.
-
-## Train the model
-
-Training on Azure is only available for the Model Builder image classification scenario. The algorithm used to train these models is a Deep Neural Network based on the ResNet50 architecture. The training process takes some time and the amount of time may vary depending on the size of compute selected as well as amount of data. The first time a model is trained, you can expect a slightly longer training time because resources have to be provisioned. You can track the progress of your runs by selecting the "Monitor current run in Azure portal" link in Visual Studio.
-
-The machine learning task used to train the model in this tutorial is image classification. During the model training process, Model Builder trains separate models using ResNet50 algorithm and settings to find the best performing model for your dataset.
-
-The time required for the model to train is proportionate to the amount of data. Model Builder automatically selects a default value for Time to train (seconds) based on the size of your data source.
-
-1. Although Model Builder sets the value of **Time to train (seconds)** to 10 seconds, increase it to 30 seconds. Training for a longer period of time allows Model Builder to explore a larger number of algorithms and combination of parameters in search of the best model.
+1. In the Create New Experiment dialog, leave the default value in the **Experiment name** text box.
+1. Select **Create**. Once created, your experiment details appears in the Model Builder train step.
 1. Select **Start Training**.
+
+    The training process takes some time and the amount of time may vary depending on the size of compute selected as well as amount of data. The first time a model is trained, you can expect a slightly longer training time because resources have to be provisioned. You can track the progress of your runs by selecting the "Monitor current run in Azure portal" link in Visual Studio.
 
     Throughout the training process, progress data is displayed in the Progress section of the train step.
 
     - Status displays the completion status of the training process.
     - Best accuracy displays the accuracy of the best performing model found by Model Builder so far. Higher accuracy means the model predicted more correctly on test data.
-    - Best algorithm displays the name of the best performing algorithm performed found by Model Builder so far.
-    - Last algorithm displays the name of the algorithm most recently used by Model Builder to train the model.
-    - Once training is complete, select the evaluate link to move to the next step.
+    - Algorithm displays the name of the best performing algorithm performed found by Model Builder so far.
+
+1. Once training is complete, select the **Evaluate** button to move to the next step.
 
 ## Evaluate the model
 
-The result of the training step will be one model which had the best performance. In the evaluate step of the Model Builder tool, the output section, will contain the algorithm used by the best performing model in the **Best Model** entry along with metrics in **Best Model Accuracy**. Additionally, a summary table containing top five models and their metrics.
+The result of the training step will be one model which had the best performance. In the evaluate step of the Model Builder tool, the **Details** tab in the output section, will contain the algorithm used by the best performing model in the **Algorithm** entry along with metrics in **Best model Accuracy** entry.
 
-If you're not satisfied with your accuracy metrics, some easy ways to try and improve model accuracy are to increase the amount of time to train the model or use more data. Otherwise, select the code link to move to the final step in the Model Builder tool.
+If you're not satisfied with your accuracy metrics, some easy ways to try and improve model accuracy are to use more data or augment the existing data. Otherwise, select the **Code** button to move to the final step in the Model Builder tool.
 
 ## Add the code to make predictions
 
-Two projects will be created as a result of the training process.
+Two projects are created as a result of the training process.
 
 ### Reference the trained model
 
 1. In the code step of the Model Builder tool, select **Add Projects** to add the autogenerated projects to the solution.
 
-    Once training is complete, two projects are added to your solution with the following suffixes:
+    Two projects are added to your solution with the following suffixes:
 
     - *ConsoleApp*: A C# .NET Core console application that provides starter code to build the prediction pipeline and make predictions.
     - *Model*: A C# .NET Standard application that contains the data models that define the schema of input and output model data as well as the following assets:
@@ -170,15 +184,30 @@ Two projects will be created as a result of the training process.
     The `ModelOutput` contains two columns:
 
     - `Prediction`: The image's predicted category.
-    - `Score`: The list of probabilities for all categories (the highest belongs to the `Prediction`).      
+    - `Score`: The list of probabilities for all categories (the highest belongs to the `Prediction`).
+
+### Install NuGet packages
+
+To work with images in this application, install the **System.Drawing.Common** NuGet package.
+
+1. In Solution Explorer, right-click the `LandUseAPI` project and select **Manage NuGet Packages**.
+Choose "nuget.org" as the Package source.
+1. Select the **Browse** tab and search for **System.Drawing.Common**.
+1. Select the package in the list, and select the **Install** button.
+1. Select the **OK** button on the Preview Changes dialog
+1. Select the **I Accept** button on the License Acceptance dialog if you agree with the license terms for the packages listed.
 
 ### Configure the prediction engine
+
+The [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) is a convenience API, makes predictions on a single data instance. To use it in your application, you have to create aan instance of it everywhere it's needed. As your application grows, this process can become unmanageable. By configuring the [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) in the *Startup.cs* class, you leverage dependency injection to make it easier to create instances of it throughout your application.
 
 1. Open the *Startup.cs* file.
 1. Add the following using statements to the top of the file.
 
     ```csharp
+    using System.IO;
     using Microsoft.ML;
+    using LandUseML.Model;
     ```
 
 1. Add the following code inside the `ConfigureService` method.
@@ -209,7 +238,19 @@ Two projects will be created as a result of the training process.
 
 ### Create image classification handler
 
-1. Create a new controller called `ClassificationController`.
+To process your incoming HTTP requests, create a controller.
+
+1. In Solution Explorer, right-click the *Controllers* directory in the `LandUseAPI` project, and then select **Add > Controller**.
+1. In the Add New Item dialog box, select **API Controller Empty** and select Add.
+1. In the prompt change the Controller Name field to *ClassificationController.cs*. Then, select the **Add** button. The *ClassificationController.cs* file opens in the code editor. Add the following using statement to the top of *ClassificationController.cs*:
+
+    ```csharp
+    using System.IO;
+    using System.Drawing;
+    using Microsoft.ML;
+    using LandUseML.Model;
+    ```
+
 1. Add the following inside the `ClassificationController` class.
 
     ```csharp
@@ -249,7 +290,7 @@ Two projects will be created as a result of the training process.
     var imageBytes = Convert.FromBase64String(input["data"]);
     ```
 
-1. Create a new stream from the `imageBytes`.
+1. Create a new [`MemoryStream`](xref:System.IO.MemoryStream) from the `imageBytes`.
 
     ```csharp
     using(var ms = new MemoryStream(imageBytes))
@@ -258,7 +299,7 @@ Two projects will be created as a result of the training process.
     }
     ```
 
-1. Inside the using statement, save the image.
+1. Inside the `using` statement, save the image.
 
     ```csharp
     using (var img = await Task.Run(() => Image.FromStream(ms)))
@@ -275,7 +316,7 @@ Two projects will be created as a result of the training process.
     }
     ```
 
-    Because `PredictionEngine` is not thread safe, make sure to use the `lock` statement to safely make predictions.
+    Because [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) is not thread safe, make sure to use the [`lock`](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/lock-statement) statement to safely make predictions.
 
 1. Finally, return the prediction.
 
@@ -289,10 +330,12 @@ The UWP application is the interface users interact with. When a user searches f
 
 ### Create UWP Application
 
-1. From the File menu, select **New > Project** to open the New Project dialog.
-1. From the list of templates on the left, choose **Installed > Visual C# > Windows Universal** to see the list of UWP project templates.
-1. Choose the **Blank App (Universal Windows)** template, and enter "LandUseUWP" as the Name. Select **OK**.
-1. The target version/minimum version dialog appears. The default settings are fine for this tutorial, so select **OK** to create the project.
+1. In Solution Explorer, right-click the **LandUse** solution, and select **Add > New Project**.
+1. In the New Project dialog, type "Universal Windows" into the search box.
+1. Select the **Blank App (Universal Windows)** C# project template, then select the **Next** button.
+1. In the **Name** text box, type "LandUseUWP".
+1. Select **Create**.
+1. The target version/minimum version dialog appears. Keep the default settings and select **OK**.
 
 ### Design the layout of the main page
 
@@ -302,13 +345,13 @@ This application only contains a single page.
 
     ```xaml
     <Page
+        x:Class="LandUseUWP.MainPage"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="using:MappingImageSampleUWP"
+        xmlns:local="using:LandUseUWP"
+        xmlns:Custom="using:Windows.UI.Xaml.Controls.Maps"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:Custom="using:Windows.UI.Xaml.Controls.Maps"
-        x:Class="MappingImageSampleUWP.MainPage"
         mc:Ignorable="d"
         Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
@@ -344,10 +387,9 @@ This application only contains a single page.
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
                 ZoomLevel="19"
-                Loaded="MapControl_Loaded"/>
+                Loaded="SatelliteMap_Loaded"/>
             <TextBlock
                 x:Name="PredictionText"
-                Text="Prediction: Industrial"
                 HorizontalAlignment="Center"
                 Grid.Row="2"
                 Grid.ColumnSpan="2"
@@ -359,25 +401,35 @@ This application only contains a single page.
 ### Add interactivity to the application
 
 1. Open the *MainPage.xaml.cs* file.
-1. Start by defining the initialization logic for the map control. Create a new method called `SatelliteMap_Loaded` inside the `MainPage` class.
+1. Add the following using statements at the top of the page.
+
+    ```csharp
+    using Windows.Devices.Geolocation;
+    using Windows.UI.Xaml.Controls.Maps;
+    using System.Net.Http;
+    using System.Threading.Tasks;
+    using System.Web;
+    using System.Text.Json;
+    using Windows.UI.Popups;
+    using System.Text;
+    using Windows.UI.Xaml.Media.Imaging;
+    using Windows.Storage.Streams;
+    using Windows.Graphics.Imaging;
+    ```
+
+1. Start by setting a starting point for the the map control. Create a new method called `SatelliteMap_Loaded` inside the `MainPage` class.
 
     ```csharp
     private async void SatelliteMap_Loaded(object sender, RoutedEventArgs e)
     {
+        BasicGeoposition cityPosition = new BasicGeoposition() { Latitude = 47.604, Longitude = -122.329 };
+        Geopoint cityCenter = new Geopoint(cityPosition);
 
+        await (sender as MapControl).TrySetViewAsync(cityCenter);
     }
     ```
 
-1. Set the initial position for the map inside the `SatelliteMap_Loaded` method.
-
-    ```csharp
-    BasicGeoposition cityPosition = new BasicGeoposition() { Latitude = 47.604, Longitude = -122.329 };
-    Geopoint cityCenter = new Geopoint(cityPosition);
-
-    await (sender as MapControl).TrySetViewAsync(cityCenter);
-    ```
-
-1. Under the `SatelliteMap_Loaded` add a new method called `QueryLocation_Click`. This method performs a series of actions when the user clicks the `QueryLocation` button in the application.
+1. Under the `SatelliteMap_Loaded` method, add a new method called `QueryLocation_Click`. This method performs a series of actions when the user clicks the `QueryLocation` button in the application.
 
     ```csharp
     private async void QueryLocation_Click(object sender, RoutedEventArgs e)
@@ -386,7 +438,20 @@ This application only contains a single page.
     }
     ```
 
-1. When the `QueryLocation` button is clicked, the first thing that happens is, the address is reverse geo-coded using the Nominatim API to get the latitude and longitude of the location. Inside the UWP project create a new `Coordinates` class.
+1. When the `QueryLocation` button is clicked, the first thing that happens is, the address is reverse geo-coded using the [Nominatim API](https://nominatim.org/) to get the latitude and longitude of the location the user provides. Install the **System.Text.Json** NuGet package.
+
+    1. In Solution Explorer, right-click the `LandUseUWP` project and select **Manage NuGet Packages**.
+    Choose "nuget.org" as the Package source.
+    1. Select the **Browse** tab and search for **System.Text.Json**.
+    1. Select the package in the list, and select the **Install** button.
+    1. Select the **OK** button on the Preview Changes dialog
+    1. Select the **I Accept** button on the License Acceptance dialog if you agree with the license terms for the packages listed.
+
+1. Next, define a class to store the geo-coded coordinates.
+
+    1. In Solution Explorer, right-click the **LandUseUWP** project, and select **Add > Class**.
+    1. In the **Name** text box, type "Coordinates".
+    1. Select **Add**. The *Coordinates.cs* file opens in the editor.
 
     Add the following using statements
 
@@ -407,7 +472,7 @@ This application only contains a single page.
     }
     ```
 
-1. Below the `QueryLocation_Click` method, create a new method called `GetCoordinatesAsync` with the following contents.
+1. In the *MainPage.xaml.cs* file, create a new method called `GetCoordinatesAsync` below the `QueryLocation_Click` method and add the following code.
 
     ```csharp
     private async Task<Coordinates> GetCoordinatesAsync(string address)
@@ -422,7 +487,7 @@ This application only contains a single page.
 
             // Build request
             var request = new HttpRequestMessage(HttpMethod.Get, uri);
-            request.Headers.Add("User-Agent", "MappingImageSampleUWP/1.0");
+            request.Headers.Add("User-Agent", "LandUseUWP/1.0");
 
             // Get coordinates
             var response = await client.SendAsync(request);
@@ -447,13 +512,15 @@ This application only contains a single page.
     }
     ```
 
+    The application tries to find the coordinates for the provided address. If address is not found, a default location is returned and a dialog opens informing the user the address was not found.
+
 1. Call the `GetCoordinatesAsync` method inside the `QueryLocation_Clicked` method using the user provided address as input.
 
     ```csharp
     var coordinates = await GetCoordinatesAsync(AddressBar.Text);
     ```
 
-1. Update the map with the coordinates of the new location. Create a new method called `UpdateMapLocationAsync` inside the `MainPage` class.
+1. Then, update the map using the coordinates of the new location. Create a new method called `UpdateMapLocationAsync` below the `GetCoordinatesAsync` method.
 
     ```csharp
     private async Task UpdateMapLocationAsync(MapControl map, Coordinates coordinates)
@@ -471,10 +538,10 @@ This application only contains a single page.
 1. Call the `UpdateMapLocationAsync` method inside the `QueryLocation_Clicked` by supplying the coordinates of the new location to the `SatelliteMap` control.
 
     ```csharp
-    await UpdateMapLocation(SatelliteMap, coordinates);
+    await UpdateMapLocationAsync(SatelliteMap, coordinates);
     ```
 
-1. The model requires an image as input. When the application updates the map, take a screenshot of the control. Create a new method called `GetMapAsImageAsync` to create an image of the map control inside the `MainPage` class.
+1. The model requires an image as input. When the application updates the map, take a snapshot of the control. Create a new method called `GetMapAsImageAsync` to create an image of the map control below the `UpdateMapLocationAsync` method.
 
     ```csharp
     private async Task<byte[]> GetMapAsImageAsync()
@@ -505,7 +572,7 @@ This application only contains a single page.
     var satelliteImage = await GetMapAsImageAsync();
     ```
 
-1. Now that you have the an satellite image, you can use the ASP.NET Core Web API to classify it. Create a new method called `ClassifyImageAsync` inside the `MainPage` class.
+1. Now that you have the an satellite image, you can consume the ASP.NET Core Web API to classify it. Create a new method called `ClassifyImageAsync` below the `GetMapAsImageAsync` method.
 
     ```csharp
     private async Task<string> ClassifyImageAsync(byte[] imageBytes)
@@ -520,7 +587,7 @@ This application only contains a single page.
 
         using (var client = new HttpClient(new HttpClientHandler { ServerCertificateCustomValidationCallback = (a,b,c,d) => true}))
         {
-            var res = await client.PostAsync("https://localhost:44335/api/classification", new StringContent(content,Encoding.UTF8,"application/json"));
+            var res = await client.PostAsync("https://localhost:5001/api/classification", new StringContent(content,Encoding.UTF8,"application/json"));
             prediction = await res.Content.ReadAsStringAsync();
         }
 
@@ -566,6 +633,33 @@ This application only contains a single page.
 
 ## Test the application
 
+1. In the toolbar, open the **Debug Target** context menu
+1. Choose the **LandUseAPI** debug target.
+1. Click the **Debug Target** button to start the web API server.
+1. Once the LandUseAPI application is running, in Solution Explorer, right-click **LandUseUWP** and select **Debug > Start New Instance**.
+1. When the application launches, replace the default text in the address bar with "11 Times Square".
+1. Select the **Query Location** button. The image is inspected and the text "Prediction: Industrial" should appear below the map.
 
+Congratulations! You have now build an application that uses Model Builder to train an image classification model in Azure.
 
-## Next Steps
+## Next steps
+
+In this tutorial you:
+
+> [!div class="checklist"]
+>
+> - Create an ASP.NET Core Web API
+> - Prepare and understand the data
+> - Choose a scenario
+> - Load the data
+> - Create an experiment in Azure
+> - Train the model
+> - Evaluate the model
+> - Use the model for predictions
+> - Consume the model in UWP application
+
+Try one of the other Model Builder scenarios:
+
+- [Predict NYC taxi fares](predict-prices-model-builder.md)
+- [Analyze sentiment of website comments in a Razor Pages application](sentiment-analysis-model-builder.md)
+- [Categorize the severity of restaurant violations](health-violation-classification-model-builder.md)

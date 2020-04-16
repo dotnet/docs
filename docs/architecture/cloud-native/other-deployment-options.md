@@ -16,7 +16,7 @@ Simple production applications that don't require orchestration are well suited 
 
 ## How to deploy to App Service for Containers
 
-To deploy to [Azure App Service for Containers](https://azure.microsoft.com/services/app-service/containers/), you'll need an Azure Container Registry (ACR) instance and credentials to access it. Push you container image to the ACR repository so it's available to pull into your Azure App Service. Once complete, you can configure the app for Continuous Deployment. Doing so will automatically deploy updates whenever the image changes in ACR.
+To deploy to [Azure App Service for Containers](https://azure.microsoft.com/services/app-service/containers/), you'll need an Azure Container Registry (ACR) instance and credentials to access it. Push your container image to the ACR repository so it can pulled into your Azure App Service. Once complete, you can configure the app for Continuous Deployment. Doing so will automatically deploy updates whenever the image changes in ACR.
 
 ## When does it make sense to deploy to Azure Container Instances?
 

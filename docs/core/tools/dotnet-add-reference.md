@@ -7,17 +7,18 @@ ms.date: 02/14/2020
 
 **This article applies to:** ✔️ .NET Core 2.x SDK and later versions
 
-<!-- todo: uncomment when all CLI commands are reviewed
-[!INCLUDE [topic-appliesto-net-core-all](../../../includes/topic-appliesto-net-core-all.md)]
--->
-
 ## Name
 
 `dotnet add reference` - Adds project-to-project (P2P) references.
 
 ## Synopsis
 
-`dotnet add [<PROJECT>] reference [-f|--framework] <PROJECT_REFERENCES> [-h|--help] [--interactive]`
+```dotnetcli
+dotnet add [<PROJECT>] reference [-f|--framework <FRAMEWORK>]
+     [--interactive] <PROJECT_REFERENCES>
+
+dotnet add reference -h|--help
+```
 
 ## Description
 
@@ -43,13 +44,13 @@ The `dotnet add reference` command provides a convenient option to add project r
 
 ## Options
 
-- **`-h|--help`**
-
-  Prints out a short help for the command.
-
 - **`-f|--framework <FRAMEWORK>`**
 
   Adds project references only when targeting a specific [framework](../../standard/frameworks.md).
+
+- **`-h|--help`**
+
+  Prints out a short help for the command.
 
 - **`--interactive`**
 

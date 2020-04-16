@@ -13,7 +13,14 @@ ms.date: 02/14/2020
 
 ## Synopsis
 
-`dotnet add [<PROJECT>] package <PACKAGE_NAME> [-h|--help] [-f|--framework] [--interactive] [-n|--no-restore] [--package-directory] [-s|--source] [-v|--version]`
+```dotnetcli
+dotnet add [<PROJECT>] package <PACKAGE_NAME>
+    [-f|--framework <FRAMEWORK>] [--interactive]
+    [-n|--no-restore] [--package-directory <PACKAGE_DIRECTORY>]
+    [-s|--source <SOURCE>] [-v|--version <VERSION>]
+
+dotnet add package -h|--help
+```
 
 ## Description
 

@@ -14,10 +14,14 @@ ms.date: 02/14/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet pack [<PROJECT>|<SOLUTION>] [-c|--configuration] [--force] [--include-source] [--include-symbols] [--interactive]
-    [--no-build] [--no-dependencies] [--no-restore] [--nologo] [-o|--output] [--runtime] [-s|--serviceable]
-    [-v|--verbosity] [--version-suffix]
-dotnet pack [-h|--help]
+dotnet pack [<PROJECT>|<SOLUTION>] [-c|--configuration <CONFIGURATION>]
+    [--force] [--include-source] [--include-symbols] [--interactive]
+    [--no-build] [--no-dependencies] [--no-restore] [--nologo]
+    [-o|--output <OUTPUT_DIRECTORY>] [--runtime <RUNTIME_IDENTIFIER>]
+    [-s|--serviceable] [-v|--verbosity <LEVEL>]
+    [--version-suffix <VERSION_SUFFIX>]
+
+dotnet pack -h|--help
 ```
 
 ## Description

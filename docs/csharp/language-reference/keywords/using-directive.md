@@ -29,7 +29,7 @@ The `using` directive has three uses:
     using Project = PC.MyCompany.Project;
     ```
 
-The `using` keyword is also used to create *using statements*, which help ensure that <xref:System.IDisposable> objects such as files and fonts are handled correctly. See [using Statement](using-statement.md) for more information.
+The `using` keyword is used to create *using statements*, which help ensure that <xref:System.IDisposable> objects such as files and fonts are handled correctly. See [using Statement](using-statement.md) for more information.
 
 ## Using static type
 

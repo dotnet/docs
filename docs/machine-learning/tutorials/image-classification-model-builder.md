@@ -3,7 +3,7 @@ title: 'Tutorial: Train an image classification model in Azure using Model Build
 description: Learn how to train an image classification model to recognize land use from satellite images in Azure using Model Builder
 author: luisquintanilla
 ms.author: luquinta
-ms.date: 04/13/2020
+ms.date: 04/15/2020
 ms.topic: tutorial
 ms.custom: mvc,mlnet-tooling
 #Customer intent: As a non-developer, I want to use Model Builder to automatically train a model in Azure to classify images using Model Builder.
@@ -41,7 +41,7 @@ In this tutorial you:
 
 ## Model Builder image classification overview
 
-This sample creates a UWP application that categorizes land use using map satellite imagery using a machine learning model trained on Azure with Model Builder. The model itself is hosted as a web service in an ASP.NET Core Web API. You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples) Github repository
+This sample creates a UWP application that categorizes land use using map satellite imagery using a machine learning model trained on Azure with Model Builder. The model itself is hosted as a web service in an ASP.NET Core Web API. You can find the source code for this tutorial at the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/modelbuilder/ImageClassification_Azure_LandUse) Github repository
 
 ## Create solution
 
@@ -69,7 +69,7 @@ The data used for this tutorial is from:
 
 It contains images a collection of satellite images divided into ten categories (rural, industrial, river, etc). The original dataset contains 27,000 images. For convenience, this tutorial only uses 2,000 of those images.
 
-1. Download the subset of the [EuroSAT dataset](http://madm.dfki.de/files/sentinel/EuroSAT.zip) and save it anywhere on your computer.
+1. Download the subset of the [EuroSAT dataset](https://github.com/dotnet/machinelearning-samples/blob/master/samples/modelbuilder/ImageClassification_Azure_LandUse/assets.zip) and save it anywhere on your computer.
 1. Unzip it.
 
 ## Choose a scenario
@@ -337,11 +337,24 @@ The UWP application is the interface users interact with. When a user searches f
 1. Select **Create**.
 1. The target version/minimum version dialog appears. Keep the default settings and select **OK**.
 
+### Install NuGet packages
+
+Install the **System.Text.Json** NuGet package.
+
+1. In Solution Explorer, right-click the `LandUseUWP` project and select **Manage NuGet Packages**.
+Choose "nuget.org" as the Package source.
+1. Select the **Browse** tab and search for **System.Text.Json**.
+1. Select the package in the list, and select the **Install** button.
+1. Select the **OK** button on the Preview Changes dialog
+1. Select the **I Accept** button on the License Acceptance dialog if you agree with the license terms for the packages listed.
+
 ### Design the layout of the main page
 
 This application only contains a single page.
 
 1. Open the *MainPage.xaml* file and replace the contents of the file with the following.
+
+    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage.xaml.cs":::
 
     ```xaml
     <Page
@@ -438,16 +451,7 @@ This application only contains a single page.
     }
     ```
 
-1. When the `QueryLocation` button is clicked, the first thing that happens is, the address is reverse geo-coded using the [Nominatim API](https://nominatim.org/) to get the latitude and longitude of the location the user provides. Install the **System.Text.Json** NuGet package.
-
-    1. In Solution Explorer, right-click the `LandUseUWP` project and select **Manage NuGet Packages**.
-    Choose "nuget.org" as the Package source.
-    1. Select the **Browse** tab and search for **System.Text.Json**.
-    1. Select the package in the list, and select the **Install** button.
-    1. Select the **OK** button on the Preview Changes dialog
-    1. Select the **I Accept** button on the License Acceptance dialog if you agree with the license terms for the packages listed.
-
-1. Next, define a class to store the geo-coded coordinates.
+1. When the `QueryLocation` button is clicked, the first thing that happens is, the address is reverse geo-coded using the [Nominatim API](https://nominatim.org/) to get the latitude and longitude of the location the user provides. Define a class to store the geo-coded coordinates.
 
     1. In Solution Explorer, right-click the **LandUseUWP** project, and select **Add > Class**.
     1. In the **Name** text box, type "Coordinates".
@@ -631,14 +635,14 @@ This application only contains a single page.
     }
     ```
 
-## Test the application
+## Run the application
 
-1. In the toolbar, open the **Debug Target** context menu
+1. In the Visual Studio toolbar menu, open the **Debug Target** context menu.
 1. Choose the **LandUseAPI** debug target.
 1. Click the **Debug Target** button to start the web API server.
-1. Once the LandUseAPI application is running, in Solution Explorer, right-click **LandUseUWP** and select **Debug > Start New Instance**.
-1. When the application launches, replace the default text in the address bar with "11 Times Square".
-1. Select the **Query Location** button. The image is inspected and the text "Prediction: Industrial" should appear below the map.
+1. Once the LandUseAPI application is running, in Solution Explorer, right-click the **LandUseUWP** project and select **Debug > Start New Instance**.
+1. When the UWP application launches, replace the default text in the address bar with "11 Times Square".
+1. Select the **Query Location** button. The image is inspected and the text **Prediction: Industrial** should appear below the map.
 
     ![Land Use UWP Application](media/image-classification-model-builder/land-use-uwp-application.png)
 

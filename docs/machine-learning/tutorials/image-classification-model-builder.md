@@ -206,39 +206,9 @@ The [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) is a convenienc
 
     :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseAPI/Startup.cs" range="1-9":::
 
-    ```csharp
-    using System.IO;
-    using Microsoft.ML;
-    using LandUseML.Model;
-    ```
-
 1. Add the following code inside the `ConfigureService` method.
 
     :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseAPI/Startup.cs" range="25-46":::
-
-    ```csharp
-    services.AddSingleton<PredictionEngine<ModelInput, ModelOutput>>(sp =>
-    {
-        MLContext ctx = new MLContext();
-
-        // Register NormalizeMapping
-        ctx.ComponentCatalog.RegisterAssembly(typeof(NormalizeMapping).Assembly);
-
-        // Register LabelMapping
-        ctx.ComponentCatalog.RegisterAssembly(typeof(LabelMapping).Assembly);
-
-        // Define model path
-        var modelPath = Path.Join("bin/Debug/netcoreapp3.1/","MLModel.zip");
-
-        //Load model
-        ITransformer mlModel = ctx.Model.Load(modelPath, out var modelInputSchema);
-
-        // Create prediction engine
-        var predEngine = ctx.Model.CreatePredictionEngine<ModelInput, ModelOutput>(mlModel);
-
-        return predEngine;
-    });
-    ```
 
 ### Create image classification handler
 
@@ -254,21 +224,9 @@ To process your incoming HTTP requests, create a controller.
 
     :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseAPI/Controllers/ClassificationController.cs" range="17-18":::
 
-    ```csharp
-    private readonly PredictionEngine<ModelInput, ModelOutput> _predictionEngine;
-    private readonly object _predictionEngineLock = new object();
-    ```
-
 1. Create a constructor for the controller and initialize the `_predictionEngine`.
 
     :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseAPI/Controllers/ClassificationController.cs" range="20-23":::
-
-    ```csharp
-    public ClassificationController(PredictionEngine<ModelInput,ModelOutput> predictionEngine)
-    {
-        _predictionEngine = predictionEngine;
-    }
-    ```
 
 1. Create a new method called `ClassifyImage` to handle POST requests.
 
@@ -284,18 +242,9 @@ To process your incoming HTTP requests, create a controller.
 
     :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseAPI/Controllers/ClassificationController.cs" range="28-29":::
 
-    ```csharp
-    string prediction;
-    string imagePath = "inputimage.jpeg";
-    ```
-
 1. Then, convert the base64 string representation of the image in the request body to a `byte[]`.
 
     :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseAPI/Controllers/ClassificationController.cs" range="32":::
-
-    ```csharp
-    var imageBytes = Convert.FromBase64String(input["data"]);
-    ```
 
 1. Create a new [`MemoryStream`](xref:System.IO.MemoryStream) from the `imageBytes`.
 
@@ -310,32 +259,15 @@ To process your incoming HTTP requests, create a controller.
 
     :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseAPI/Controllers/ClassificationController.cs" range="37-38":::
 
-    ```csharp
-    using (var img = await Task.Run(() => Image.FromStream(ms)))
-        await Task.Run(() => img.Save(imagePath));
-    ```
-
 1. Outside the using statement, use the prediction engine to classify the input image.
 
     :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseAPI/Controllers/ClassificationController.cs" range="41-46":::
-
-    ```csharp
-    lock (_predictionEngineLock)
-    {
-        ModelOutput output = _predictionEngine.Predict(new ModelInput { ImageSource = imagePath });
-        prediction = output.Prediction;
-    }
-    ```
 
     Because [`PredictionEngine`](xref:Microsoft.ML.PredictionEngine%602) is not thread safe, make sure to use the [`lock`](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/lock-statement) statement to safely make predictions.
 
 1. Finally, return the prediction.
 
     :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseAPI/Controllers/ClassificationController.cs" range="48":::
-
-    ```csharp
-    return prediction;
-    ```
 
 ## Consume the model in UWP application
 
@@ -369,95 +301,16 @@ This application only contains a single page.
 
     :::code language="xaml" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage.xaml":::
 
-    ```xaml
-    <Page
-        x:Class="LandUseUWP.MainPage"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="using:LandUseUWP"
-        xmlns:Custom="using:Windows.UI.Xaml.Controls.Maps"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d"
-        Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="2*"/>
-                <ColumnDefinition Width="Auto"/>
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition />
-                <RowDefinition Height="7*"/>
-                <RowDefinition Height="1*"/>
-            </Grid.RowDefinitions>
-            <TextBox 
-                x:Name="AddressBar" 
-                Text="Address Bar" 
-                VerticalAlignment="Top"
-                Margin="10" 
-                FontSize="20"/>
-            <Button 
-                x:Name="QueryLocation"
-                Content="Query Location"
-                VerticalAlignment="Top"
-                Margin="10"
-                Grid.Column="1"
-                FontSize="20"
-                Click="QueryLocation_Click"/>
-            <Custom:MapControl 
-                x:Name="SatelliteMap"
-                Margin="10"
-                Style="Aerial"
-                Grid.Row="1"
-                Grid.Column="0"
-                Grid.ColumnSpan="2"
-                ZoomLevel="19"
-                Loaded="SatelliteMap_Loaded"/>
-            <TextBlock
-                x:Name="PredictionText"
-                HorizontalAlignment="Center"
-                Grid.Row="2"
-                Grid.ColumnSpan="2"
-                FontSize="24"/>
-        </Grid>
-    </Page>
-    ```
-
 ### Add interactivity to the application
 
 1. Open the *MainPage.xaml.cs* file.
-1. Replace the using statements at the top of the page with the following.
+1. Replace the using statements at the top of the file with the following:
 
     :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage.xaml.cs" range="1-17":::
-
-    ```csharp
-    using Windows.Devices.Geolocation;
-    using Windows.UI.Xaml.Controls.Maps;
-    using System.Net.Http;
-    using System.Threading.Tasks;
-    using System.Web;
-    using System.Text.Json;
-    using Windows.UI.Popups;
-    using System.Text;
-    using Windows.UI.Xaml.Media.Imaging;
-    using Windows.Storage.Streams;
-    using Windows.Graphics.Imaging;
-    ```
 
 1. Start by setting a starting point for the the map control. Create a new method called `SatelliteMap_Loaded` inside the `MainPage` class.
 
     :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage.xaml.cs" range="34-40":::
-
-    ```csharp
-    private async void SatelliteMap_Loaded(object sender, RoutedEventArgs e)
-    {
-        BasicGeoposition cityPosition = new BasicGeoposition() { Latitude = 47.604, Longitude = -122.329 };
-        Geopoint cityCenter = new Geopoint(cityPosition);
-
-        await (sender as MapControl).TrySetViewAsync(cityCenter);
-    }
-    ```
 
 1. Under the `SatelliteMap_Loaded` method, add a new method called `QueryLocation_Click`. This method performs a series of actions when the user clicks the `QueryLocation` button in the application.
 
@@ -474,9 +327,9 @@ This application only contains a single page.
     1. In the **Name** text box, type "Coordinates".
     1. Select **Add**. The *Coordinates.cs* file opens in the editor.
 
-    Add the following using statements
+    Replace the using statements at the top of the file with the following:
 
-    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/Coordinates.cs" range="1":::
+    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/Coordinates.cs" range="1-6":::
 
     ```csharp
     using System.Text.Json.Serialization;
@@ -486,58 +339,9 @@ This application only contains a single page.
 
     :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/Coordinates.cs" range="10-17":::
 
-    ```csharp
-    class Coordinates
-    {
-        [JsonPropertyName("lat")]
-        public string Latitude { get; set; }
-
-        [JsonPropertyName("lon")]
-        public string Longitude { get; set; }
-    }
-    ```
-
 1. In the *MainPage.xaml.cs* file, create a new method called `GetCoordinatesAsync` below the `QueryLocation_Click` method and add the following code.
 
     :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage.xaml.cs" range="61-95":::
-
-    ```csharp
-    private async Task<Coordinates> GetCoordinatesAsync(string address)
-    {
-        Coordinates result;
-
-        using (HttpClient client = new HttpClient())
-        {
-            //Generate URL
-            string urlEncodedAddress = HttpUtility.UrlEncode(address);
-            var uri = new Uri($"https://nominatim.openstreetmap.org/search?q={urlEncodedAddress}&format=json");
-
-            // Build request
-            var request = new HttpRequestMessage(HttpMethod.Get, uri);
-            request.Headers.Add("User-Agent", "LandUseUWP/1.0");
-
-            // Get coordinates
-            var response = await client.SendAsync(request);
-            var body = await response.Content.ReadAsStringAsync();
-
-            //Parse results
-            var coordinates = JsonSerializer.Deserialize<IEnumerable<Coordinates>>(body).FirstOrDefault();
-
-            //Return results
-            if (coordinates == null)
-            {
-                result = new Coordinates { Latitude = "47.604", Longitude = "-122.329" };
-                await new MessageDialog("Could not find address provided.", "Address Not Found").ShowAsync();
-            }
-            else
-            {
-                result = coordinates;
-            }
-        }
-
-        return result;
-    }
-    ```
 
     The application tries to find the coordinates for the provided address. If address is not found, a default location is returned and a dialog opens informing the user the address was not found.
 
@@ -545,136 +349,37 @@ This application only contains a single page.
 
     :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage.xaml.cs" range="45":::
 
-    ```csharp
-    var coordinates = await GetCoordinatesAsync(AddressBar.Text);
-    ```
-
 1. Then, update the map using the coordinates of the new location. Create a new method called `UpdateMapLocationAsync` below the `GetCoordinatesAsync` method.
 
     :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage.xaml.cs" range="97-106":::
-
-    ```csharp
-    private async Task UpdateMapLocationAsync(MapControl map, Coordinates coordinates)
-    {
-        BasicGeoposition newPosition = new BasicGeoposition()
-        {
-            Latitude = float.Parse(coordinates.Latitude),
-            Longitude = float.Parse(coordinates.Longitude)
-        };
-
-        await map.TrySetViewAsync(new Geopoint(newPosition));
-    }
-    ```
 
 1. Call the `UpdateMapLocationAsync` method inside the `QueryLocation_Clicked` by supplying the coordinates of the new location to the `SatelliteMap` control.
 
     :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage.xaml.cs" range="48":::
 
-    ```csharp
-    await UpdateMapLocationAsync(SatelliteMap, coordinates);
-    ```
-
 1. The model requires an image as input. When the application updates the map, take a snapshot of the control. Create a new method called `GetMapAsImageAsync` to create an image of the map control below the `UpdateMapLocationAsync` method.
 
     :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage.xaml.cs" range="108-127":::
-
-    ```csharp
-    private async Task<byte[]> GetMapAsImageAsync()
-    {
-        RenderTargetBitmap renderBitmap = new RenderTargetBitmap();
-        await renderBitmap.RenderAsync(SatelliteMap);
-        IBuffer pixelBuffer = await renderBitmap.GetPixelsAsync();
-
-        var softwareBitmap = SoftwareBitmap.CreateCopyFromBuffer(pixelBuffer, BitmapPixelFormat.Bgra8, renderBitmap.PixelWidth, renderBitmap.PixelHeight, BitmapAlphaMode.Ignore);
-
-        byte[] array;
-        using(var stream = new InMemoryRandomAccessStream())
-        {
-            var encoder = await BitmapEncoder.CreateAsync(BitmapEncoder.JpegEncoderId, stream);
-            encoder.SetSoftwareBitmap(softwareBitmap);
-            await encoder.FlushAsync();
-            array = new byte[stream.Size];
-            await stream.ReadAsync(array.AsBuffer(), (uint)stream.Size, InputStreamOptions.None);
-        }
-
-        return array;
-    }
-    ```
 
 1. Call the `GetMapAsImageAsync` method inside the `QueryLocation_Clicked`.
 
     :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage.xaml.cs" range="51":::
 
-    ```csharp
-    var satelliteImage = await GetMapAsImageAsync();
-    ```
-
 1. Now that you have the an satellite image, you can consume the ASP.NET Core Web API to classify it. Create a new method called `ClassifyImageAsync` below the `GetMapAsImageAsync` method.
 
     :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage.xaml.cs" range="129-149":::
-
-    ```csharp
-    private async Task<string> ClassifyImageAsync(byte[] imageBytes)
-    {
-        string prediction;
-        string base64image = Convert.ToBase64String(imageBytes);
-        string content = JsonSerializer.Serialize(
-            new Dictionary<string, string>
-            {
-                { "data", base64image }
-            });
-
-        using (var client = new HttpClient(new HttpClientHandler { ServerCertificateCustomValidationCallback = (a,b,c,d) => true}))
-        {
-            var res = await client.PostAsync("https://localhost:5001/api/classification", new StringContent(content,Encoding.UTF8,"application/json"));
-            prediction = await res.Content.ReadAsStringAsync();
-        }
-
-        return prediction;
-    }
-    ```
 
 1. Call the `ClassifyImageAsync` method from the `QueryLocation_Click` method.
 
     :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage.xaml.cs" range="54-55":::
 
-    ```csharp
-    PredictionText.Text = "Inspecting Image";
-    var prediction = await ClassifyImageAsync(satelliteImage);
-    ```
-
 1. Finally, display the prediction in the application.
 
     :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage.xaml.cs" range="58":::
 
-    ```csharp
-    PredictionText.Text = $"Prediction: {prediction}";
-    ```
-
 1. The complete `QueryLocation_Click` method should look like the code below:
 
     :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage.xaml.cs" range="42-59":::
-
-    ```csharp
-    private async void QueryLocation_Click(object sender, RoutedEventArgs e)
-    {
-        // 1. Reverse geocode 
-        var coordinates = await GetCoordinatesAsync(AddressBar.Text);
-
-        // 2. Update map with new address location
-        await UpdateMapLocation(SatelliteMap, coordinates);
-
-        // 3. Convert map display into an image
-        var satelliteImage = await GetMapAsImageAsync();
-
-        // 4. Make a prediction
-        PredictionText.Text = "Inspecting Image";
-        var prediction = await ClassifyImageAsync(satelliteImage);
-
-        // 5. Display prediction
-        PredictionText.Text = $"Prediction: {prediction}";
-    }
-    ```
 
 ## Run the application
 

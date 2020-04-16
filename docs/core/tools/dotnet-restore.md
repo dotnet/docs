@@ -14,13 +14,14 @@ ms.date: 02/27/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet restore [<ROOT>] [--configfile] [--disable-parallel]
+dotnet restore [<ROOT>] [--configfile <FILE>] [--disable-parallel]
     [-f|--force] [--force-evaluate] [--ignore-failed-sources]
-    [--interactive] [--lock-file-path] [--locked-mode]
-    [--no-cache] [--no-dependencies] [--packages] [-r|--runtime]
-    [-s|--source] [--use-lockfile] [-v|--verbosity]
+    [--interactive] [--lock-file-path <LOCK_FILE_PATH>] [--locked-mode]
+    [--no-cache] [--no-dependencies] [--packages <PACKAGES_DIRECTORY>]
+    [-r|--runtime <RUNTIME_IDENTIFIER>] [-s|--source <SOURCE>]
+    [--use-lockfile] [-v|--verbosity <LEVEL>]
 
-dotnet restore [-h|--help]
+dotnet restore -h|--help
 ```
 
 ## Description

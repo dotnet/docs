@@ -14,8 +14,9 @@ ms.date: 03/20/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet nuget list source [--format] [--configfile]
-dotnet nuget list source [-h|--help]
+dotnet nuget list source [--format [Detailed|Short]] [--configfile <FILE>]
+
+dotnet nuget list source -h|--help
 ```
 
 ## Description
@@ -24,11 +25,11 @@ The `dotnet nuget list source` command lists all existing sources from your NuGe
 
 ## Options
 
-- **`--configfile`**
+- **`--configfile <FILE>`**
 
   The NuGet configuration file. If specified, only the settings from this file will be used. If not specified, the hierarchy of configuration files from the current directory will be used. For more information, see [Common NuGet Configurations](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior).
 
-- **`--format`**
+- **`--format [Detailed|Short]`**
 
   The format of the list command output: `Detailed` (the default) and `Short`.
 

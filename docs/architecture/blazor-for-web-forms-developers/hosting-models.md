@@ -40,7 +40,7 @@ The Blazor Server hosting model may sound familiar if you've used ASP.NET AJAX a
 
 ## How to choose the right Blazor hosting model
 
-As described in the [Blazor hosting model docs](https://docs.microsoft.com/aspnet/core/blazor/hosting-models#server-side), the different Blazor hosting models have different tradeoffs.
+As described in the [Blazor hosting model docs](/aspnet/core/blazor/hosting-models), the different Blazor hosting models have different tradeoffs.
 
 The Blazor WebAssembly hosting model has the following benefits:
 

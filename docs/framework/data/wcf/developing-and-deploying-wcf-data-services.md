@@ -109,7 +109,7 @@ WCF Data Service provides flexibility in choosing the process that hosts the dat
 
 - **Windows Azure**
 
-     You can deploy a data service to Windows Azure by using Windows Azure Tools for Visual Studio. You can download the Windows Azure Tools for Visual Studio from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkID=201848). For more information about deploying a data service to Windows Azure, see the post [Deploying an OData Service in Windows Azure](https://docs.microsoft.com/archive/blogs/astoriateam/deploying-an-odata-service-in-windows-azure).
+     You can deploy a data service to Windows Azure by using [Windows Azure Tools for Visual Studio](../../../azure/sdk/vs2015-install.md). For more information about deploying a data service to Windows Azure, see the post [Deploying an OData Service in Windows Azure](https://docs.microsoft.com/archive/blogs/astoriateam/deploying-an-odata-service-in-windows-azure).
 
 ### Deployment Considerations
 

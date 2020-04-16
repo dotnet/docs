@@ -15,7 +15,7 @@ namespace UXComponents
                 if (value != lastName)
                 {
                     lastName = value;
-                    PropertyChanged?.Invoke(this, 
+                    PropertyChanged?.Invoke(this,
                         new PropertyChangedEventArgs(nameof(LastName)));
                 }
             }
@@ -32,7 +32,7 @@ namespace UXComponents
                 if (value != firstName)
                 {
                     firstName = value;
-                    PropertyChanged?.Invoke(this, 
+                    PropertyChanged?.Invoke(this,
                         new PropertyChangedEventArgs(nameof(UXComponents.ViewModel.FirstName)));
                 }
             }

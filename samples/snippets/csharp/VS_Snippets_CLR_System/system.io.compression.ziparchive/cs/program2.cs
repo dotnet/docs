@@ -13,12 +13,12 @@ namespace ConsoleApplication1
 
             Console.WriteLine("Provide path where to extract the zip file:");
             string extractPath = Console.ReadLine();
-            
+
             // Normalizes the path.
             extractPath = Path.GetFullPath(extractPath);
 
             // Ensures that the last character on the extraction path
-            // is the directory separator char. 
+            // is the directory separator char.
             // Without this, a malicious zip file could try to traverse outside of the expected
             // extraction path.
             if (!extractPath.EndsWith(Path.DirectorySeparatorChar))
@@ -32,11 +32,11 @@ namespace ConsoleApplication1
                     {
                         // Gets the full path to ensure that relative segments are removed.
                         string destinationPath = Path.GetFullPath(Path.Combine(extractPath, entry.FullName));
- 
+
                         // Ordinal match is safest, case-sensitive volumes can be mounted within volumes that
                         // are case-insensitive.
                         if (destinationPath.StartsWith(extractPath, StringComparison.Ordinal))
-                            entry.ExtractToFile(destinationPath, true);                        
+                            entry.ExtractToFile(destinationPath, true);
                     }
                 }
             }

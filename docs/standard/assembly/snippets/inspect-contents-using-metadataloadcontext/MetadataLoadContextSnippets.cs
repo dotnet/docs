@@ -16,10 +16,10 @@ namespace AssemblySnippets
         }
 
         public static void SnippetsMetadataLoadContext()
-        {            
+        {
             //<SnippetRuntimeAssemblies>
             // Get the array of runtime assemblies.
-            string[] runtimeAssemblies = Directory.GetFiles(RuntimeEnvironment.GetRuntimeDirectory(), "*.dll");            
+            string[] runtimeAssemblies = Directory.GetFiles(RuntimeEnvironment.GetRuntimeDirectory(), "*.dll");
 
             // Create the list of assembly paths consisting of runtime assemblies and the inspected assembly.
             var paths = new List<string>(runtimeAssemblies);

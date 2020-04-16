@@ -12,9 +12,9 @@ public class Example
    static void CallCtor1()
    {
       // <Snippet1>
-      ResourceManager rm = new ResourceManager("MyCompany.StringResources", 
+      ResourceManager rm = new ResourceManager("MyCompany.StringResources",
                                                typeof(Example).Assembly);
-      // </Snippet1>                              
+      // </Snippet1>
    }
 
    static void CallCtor2()

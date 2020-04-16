@@ -32,7 +32,7 @@ namespace PhotoService
                 // Return the stream provider to the data service.
                 return new PhotoServiceStreamProvider(this.CurrentDataSource);
             }
-            
+
             return null;
         }
     }

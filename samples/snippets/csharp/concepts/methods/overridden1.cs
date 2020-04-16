@@ -7,7 +7,7 @@ public class Person
 
    public override bool Equals(object obj)
    {
-      var p2 = obj as Person; 
+      var p2 = obj as Person;
       if (p2 == null)
          return false;
       else
@@ -17,7 +17,7 @@ public class Person
    public override int GetHashCode()
    {
       return FirstName.GetHashCode();
-   } 
+   }
 }
 
 public class Example

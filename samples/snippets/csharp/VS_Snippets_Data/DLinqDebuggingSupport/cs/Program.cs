@@ -37,7 +37,7 @@ namespace cs_debuggingsupport
                 from cust in db.Customers
                 where cust.City == "London"
                 select cust;
-              
+
             foreach (Customer custObj in custQuery)
             {
                 Console.WriteLine("CustomerID: {0}", custObj.CustomerID);
@@ -45,7 +45,7 @@ namespace cs_debuggingsupport
                 custObj.City = "Paris";
                 Console.WriteLine("\tUpdated value: {0}", custObj.City);
             }
-                       
+
             ChangeSet cs = db.GetChangeSet();
             Console.Write("Total changes: {0}", cs);
             // Freeze the console window.

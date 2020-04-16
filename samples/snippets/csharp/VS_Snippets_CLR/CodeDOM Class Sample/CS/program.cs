@@ -9,20 +9,20 @@ using Microsoft.CSharp;
 namespace SampleCodeDom
 {
     /// <summary>
-    /// This code example creates a graph using a CodeCompileUnit and  
+    /// This code example creates a graph using a CodeCompileUnit and
     /// generates source code for the graph using the CSharpCodeProvider.
     /// </summary>
     //<Snippet10>
     class Sample
     {
         /// <summary>
-        /// Define the compile unit to use for code generation. 
+        /// Define the compile unit to use for code generation.
         /// </summary>
         CodeCompileUnit targetUnit;
 
         /// <summary>
         /// The only class in the compile unit. This class contains 2 fields,
-        /// 3 properties, a constructor, an entry point, and 1 simple method. 
+        /// 3 properties, a constructor, an entry point, and 1 simple method.
         /// </summary>
         CodeTypeDeclaration targetClass;
 
@@ -120,7 +120,7 @@ namespace SampleCodeDom
             areaProperty.Comments.Add(new CodeCommentStatement(
                 "The Area property for the object."));
 
-            // Create an expression to calculate the area for the get accessor 
+            // Create an expression to calculate the area for the get accessor
             // of the Area property.
             CodeBinaryOperatorExpression areaExpression =
                 new CodeBinaryOperatorExpression(
@@ -136,7 +136,7 @@ namespace SampleCodeDom
         //</Snippet4>
 
         /// <summary>
-        /// Adds a method to the class. This method multiplies values stored 
+        /// Adds a method to the class. This method multiplies values stored
         /// in both fields.
         /// </summary>
         //<Snippet5>
@@ -225,7 +225,7 @@ namespace SampleCodeDom
                 new CodePrimitiveExpression(6.9));
 
             // Add the statement:
-            // "CodeDOMCreatedClass testClass = 
+            // "CodeDOMCreatedClass testClass =
             //     new CodeDOMCreatedClass(5.3, 6.9);"
             start.Statements.Add(new CodeVariableDeclarationStatement(
                 new CodeTypeReference("CodeDOMCreatedClass"), "testClass",
@@ -237,7 +237,7 @@ namespace SampleCodeDom
                 new CodeMethodInvokeExpression(
                 new CodeVariableReferenceExpression("testClass"), "ToString");
 
-            // Add a System.Console.WriteLine statement with the previous 
+            // Add a System.Console.WriteLine statement with the previous
             // expression as a parameter.
             start.Statements.Add(new CodeMethodInvokeExpression(
                 new CodeTypeReferenceExpression("System.Console"),

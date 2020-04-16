@@ -7,7 +7,7 @@ class Example
 {
     static void Main()
     {
-        AppDomain.CurrentDomain.FirstChanceException += 
+        AppDomain.CurrentDomain.FirstChanceException +=
             (object source, FirstChanceExceptionEventArgs e) =>
             {
                 Console.WriteLine("FirstChanceException event raised in {0}: {1}",
@@ -22,7 +22,7 @@ class Example
         }
         catch (ArgumentException ex)
         {
-            Console.WriteLine("ArgumentException caught in {0}: {1}", 
+            Console.WriteLine("ArgumentException caught in {0}: {1}",
                 AppDomain.CurrentDomain.FriendlyName, ex.Message);
         }
         //</Snippet3>

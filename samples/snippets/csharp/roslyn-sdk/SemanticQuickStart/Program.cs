@@ -13,7 +13,7 @@ namespace SemanticQuickStart
 @"using System;
 using System.Collections.Generic;
 using System.Text;
- 
+
 namespace HelloWorld
 {
     class Program
@@ -91,7 +91,7 @@ namespace HelloWorld
             // </Snippet10>
             // <Snippet11>
             var publicStringReturningMethods = methods
-                .Where(m => m.ReturnType.Equals(stringTypeSymbol) && 
+                .Where(m => m.ReturnType.Equals(stringTypeSymbol) &&
                 m.DeclaredAccessibility == Accessibility.Public);
             // </Snippet11>
             // <Snippet12>

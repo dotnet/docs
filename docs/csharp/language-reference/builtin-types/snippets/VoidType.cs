@@ -17,7 +17,7 @@ namespace builtin_types
             {
                 return;
             }
-            
+
             Console.WriteLine(string.Join(" ", numbers));
         }
         // </SnippetVoidExample>

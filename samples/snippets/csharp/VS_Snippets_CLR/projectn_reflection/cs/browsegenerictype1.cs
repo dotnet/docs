@@ -36,7 +36,7 @@ namespace GenericBrowsing
             b.Text += String.Format("   {0} ({1})\n", prop.Name, prop.PropertyType.Name);
             nProps++;
          }
-         if (nProps == 0) b.Text += "   None\n"; 
+         if (nProps == 0) b.Text += "   None\n";
 
          // Get methods.
          b.Text += "\nMethods:\n";
@@ -45,7 +45,7 @@ namespace GenericBrowsing
          foreach (var method in methods)
          {
             if (method.IsSpecialName) continue;
-            b.Text += String.Format("   {0}({1}) ({2})\n", method.Name, 
+            b.Text += String.Format("   {0}({1}) ({2})\n", method.Name,
                                     GetSignature(method), method.ReturnType.Name);
             nMethods++;
          }
@@ -72,8 +72,8 @@ namespace Windows.UI.Xaml.Controls
 internal class TextBlock
 {
    private String s;
-   
-   public String Text 
+
+   public String Text
    {
       get { return s; }
       set { s = value; }
@@ -81,7 +81,7 @@ internal class TextBlock
 }
 }
 
-public class App 
+public class App
 {
    public static void Main()
    {

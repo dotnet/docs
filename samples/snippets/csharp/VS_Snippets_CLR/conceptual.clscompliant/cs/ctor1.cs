@@ -6,35 +6,35 @@ using System;
 public class Person
 {
    private string fName, lName, _id;
-   
+
    public Person(string firstName, string lastName, string id)
    {
       if (String.IsNullOrEmpty(firstName + lastName))
-         throw new ArgumentNullException("Either a first name or a last name must be provided.");    
-      
+         throw new ArgumentNullException("Either a first name or a last name must be provided.");
+
       fName = firstName;
       lName = lastName;
       _id = id;
    }
-   
-   public string FirstName 
+
+   public string FirstName
    {
       get { return fName; }
    }
 
-   public string LastName 
+   public string LastName
    {
       get { return lName; }
    }
-   
-   public string Id 
+
+   public string Id
    {
       get { return _id; }
    }
 
    public override string ToString()
    {
-      return String.Format("{0}{1}{2}", fName, 
+      return String.Format("{0}{1}{2}", fName,
                            String.IsNullOrEmpty(fName) ?  "" : " ",
                            lName);
    }

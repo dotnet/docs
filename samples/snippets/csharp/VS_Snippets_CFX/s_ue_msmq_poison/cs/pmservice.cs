@@ -120,7 +120,7 @@ namespace Microsoft.ServiceModel.Samples
         }
     }
 
-    // Define a service contract. 
+    // Define a service contract.
     [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples")]
     public interface IOrderProcessor
     {
@@ -143,7 +143,7 @@ namespace Microsoft.ServiceModel.Samples
         // Host the service within this EXE console application.
         public static void Main()
         {
-   
+
             // Create a ServiceHost for the OrderProcessorService type.
             using (ServiceHost serviceHost = new ServiceHost(typeof(OrderProcessorService)))
             {

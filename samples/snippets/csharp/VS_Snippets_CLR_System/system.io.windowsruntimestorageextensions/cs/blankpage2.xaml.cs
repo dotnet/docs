@@ -27,7 +27,7 @@ namespace ExampleApplication
             using (StreamReader reader = new StreamReader(
                 await ApplicationData.Current.LocalFolder.OpenStreamForReadAsync("testfile.txt")))
             {
-                string contents = await reader.ReadToEndAsync();   
+                string contents = await reader.ReadToEndAsync();
                 DisplayContentsBlock.Text = contents;
             }
         }

@@ -8,7 +8,7 @@
         public static readonly Color Green = new Color(0, 255, 0);
         public static readonly Color Blue = new Color(0, 0, 255);
         private byte r, g, b;
-        public Color(byte r, byte g, byte b) 
+        public Color(byte r, byte g, byte b)
         {
             this.r = r;
             this.g = g;

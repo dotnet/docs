@@ -10,8 +10,8 @@ public class Example
       string pattern = @"\d+";
       string substitution = "$_";
       Console.WriteLine("Original string:          {0}", input);
-      Console.WriteLine("String with substitution: {0}", 
-                        Regex.Replace(input, pattern, substitution));      
+      Console.WriteLine("String with substitution: {0}",
+                        Regex.Replace(input, pattern, substitution));
    }
 }
 // The example displays the following output:

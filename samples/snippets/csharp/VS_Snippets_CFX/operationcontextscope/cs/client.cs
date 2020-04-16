@@ -3,7 +3,7 @@ using System;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
 using System.Threading;
- 
+
 public class Client : ISampleServiceCallback
 {
   ManualResetEvent wait = null;
@@ -52,7 +52,7 @@ public class Client : ISampleServiceCallback
         wcfClient.Push(greeting);
         this.wait.WaitOne();
 
-        // Done with service. 
+        // Done with service.
         wcfClient.Close();
         Console.WriteLine("Done!");
         Console.ReadLine();

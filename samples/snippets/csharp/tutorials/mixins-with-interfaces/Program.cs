@@ -44,7 +44,7 @@ namespace mixins_with_interfaces
                 Console.WriteLine("\tTesting timer function");
                 await timer.TurnOnFor(1000);
                 Console.WriteLine("\tTimer function completed");
-            } 
+            }
             else
             {
                 Console.WriteLine("\tTimer function not supported.");

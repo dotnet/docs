@@ -11,20 +11,20 @@ public class Example
       try {
          sr = new StreamReader("file1.txt");
          String contents = sr.ReadToEnd();
-         Console.WriteLine("The file has {0} text elements.", 
-                           new StringInfo(contents).LengthInTextElements);    
-      }      
+         Console.WriteLine("The file has {0} text elements.",
+                           new StringInfo(contents).LengthInTextElements);
+      }
       catch (FileNotFoundException) {
          Console.WriteLine("The file cannot be found.");
-      }   
+      }
       catch (IOException) {
          Console.WriteLine("An I/O error has occurred.");
       }
       catch (OutOfMemoryException) {
-         Console.WriteLine("There is insufficient memory to read the file.");   
+         Console.WriteLine("There is insufficient memory to read the file.");
       }
       finally {
-         if (sr != null) sr.Dispose();     
+         if (sr != null) sr.Dispose();
       }
    }
 }

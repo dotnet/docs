@@ -10,9 +10,9 @@ using System.Collections.ObjectModel;
 // An enumeration used by the ExampleAttribute class.
 public enum ExampleKind
 {
-    FirstKind, 
-    SecondKind, 
-    ThirdKind, 
+    FirstKind,
+    SecondKind,
+    ThirdKind,
     FourthKind
 };
 
@@ -29,7 +29,7 @@ public class ExampleAttribute : Attribute
     private int[] arrayNumbers;
 
     // Constructors. The parameterless constructor (.ctor) calls
-    // the constructor that specifies ExampleKind and an array of 
+    // the constructor that specifies ExampleKind and an array of
     // strings, and supplies the default values.
     //
     public ExampleAttribute(ExampleKind initKind, string[] initStrings)
@@ -45,7 +45,7 @@ public class ExampleAttribute : Attribute
     //
     public ExampleKind Kind { get { return kindValue; }}
     public string[] Strings { get { return arrayStrings; }}
-    public string Note    
+    public string Note
     {
         get { return noteValue; }
         set { noteValue = value; }
@@ -59,12 +59,12 @@ public class ExampleAttribute : Attribute
 
 // The example attribute is applied to the test class.
 //
-[Example(ExampleKind.SecondKind, 
-         new string[] { "String array argument, line 1", 
-                        "String array argument, line 2", 
-                        "String array argument, line 3" }, 
+[Example(ExampleKind.SecondKind,
+         new string[] { "String array argument, line 1",
+                        "String array argument, line 2",
+                        "String array argument, line 3" },
          Note="This is a note on the class.",
-         Numbers = new int[] { 53, 57, 59 })] 
+         Numbers = new int[] { 53, 57, 59 })]
 public class Test
 {
     // The example attribute is applied to a method, using the
@@ -104,17 +104,17 @@ public class Test
             Console.WriteLine("      Constructor: '{0}'", cad.Constructor);
 
             Console.WriteLine("      Constructor arguments:");
-            foreach( CustomAttributeTypedArgument cata 
+            foreach( CustomAttributeTypedArgument cata
                 in cad.ConstructorArguments )
             {
                 ShowValueOrArray(cata);
             }
 
             Console.WriteLine("      Named arguments:");
-            foreach( CustomAttributeNamedArgument cana 
+            foreach( CustomAttributeNamedArgument cana
                 in cad.NamedArguments )
             {
-                Console.WriteLine("         MemberInfo: '{0}'", 
+                Console.WriteLine("         MemberInfo: '{0}'",
                     cana.MemberInfo);
                 ShowValueOrArray(cana.TypedValue);
             }
@@ -127,7 +127,7 @@ public class Test
         {
             Console.WriteLine("         Array of '{0}':", cata.ArgumentType);
 
-            foreach (CustomAttributeTypedArgument cataElement in 
+            foreach (CustomAttributeTypedArgument cataElement in
                 (ReadOnlyCollection<CustomAttributeTypedArgument>) cata.Value)
             {
                 Console.WriteLine("             Type: '{0}'  Value: '{1}'",
@@ -136,7 +136,7 @@ public class Test
         }
         else
         {
-            Console.WriteLine("         Type: '{0}'  Value: '{1}'", 
+            Console.WriteLine("         Type: '{0}'  Value: '{1}'",
                 cata.ArgumentType, cata.Value);
         }
     }

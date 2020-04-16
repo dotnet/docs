@@ -10,7 +10,7 @@ public class Example
       string input = "aaaaaaaaaaaaaaaaaaaaaa.";
       bool result;
       Stopwatch sw;
-      
+
       string pattern = @"^(([A-Z]\w*)+\.)*[A-Z]\w*$";
       sw = Stopwatch.StartNew();
       result = Regex.IsMatch(input, pattern, RegexOptions.IgnoreCase);

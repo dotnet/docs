@@ -12,38 +12,38 @@
 
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
 [System.ServiceModel.ServiceContractAttribute(
-  Namespace="http://microsoft.wcf.documentation", 
+  Namespace="http://microsoft.wcf.documentation",
   ConfigurationName="ISampleService"
 )]
 public interface ISampleService
 {
-    
+
     [System.ServiceModel.OperationContractAttribute(
-      Action="http://microsoft.wcf.documentation/ISampleService/SampleMethod", 
+      Action="http://microsoft.wcf.documentation/ISampleService/SampleMethod",
       ReplyAction="http://microsoft.wcf.documentation/ISampleService/SampleMethodResponse"
     )]
     string SampleMethod(string msg);
-    
+
     [System.ServiceModel.OperationContractAttribute(
-      AsyncPattern=true, 
-      Action="http://microsoft.wcf.documentation/ISampleService/SampleMethod", 
+      AsyncPattern=true,
+      Action="http://microsoft.wcf.documentation/ISampleService/SampleMethod",
       ReplyAction="http://microsoft.wcf.documentation/ISampleService/SampleMethodResponse"
     )]
     System.IAsyncResult BeginSampleMethod(string msg, System.AsyncCallback callback, object asyncState);
-    
+
     string EndSampleMethod(System.IAsyncResult result);
-    
+
     [System.ServiceModel.OperationContractAttribute(
-      Action="http://microsoft.wcf.documentation/ISampleService/ServiceAsyncMethod", 
+      Action="http://microsoft.wcf.documentation/ISampleService/ServiceAsyncMethod",
       ReplyAction="http://microsoft.wcf.documentation/ISampleService/ServiceAsyncMethodResponse")]
     string ServiceAsyncMethod(string msg);
-    
+
     [System.ServiceModel.OperationContractAttribute(
-      AsyncPattern=true, 
-      Action="http://microsoft.wcf.documentation/ISampleService/ServiceAsyncMethod", 
+      AsyncPattern=true,
+      Action="http://microsoft.wcf.documentation/ISampleService/ServiceAsyncMethod",
       ReplyAction="http://microsoft.wcf.documentation/ISampleService/ServiceAsyncMethodResponse")]
     System.IAsyncResult BeginServiceAsyncMethod(string msg, System.AsyncCallback callback, object asyncState);
-    
+
     string EndServiceAsyncMethod(System.IAsyncResult result);
 }
 
@@ -56,56 +56,56 @@ public interface ISampleServiceChannel : ISampleService, System.ServiceModel.ICl
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
 public partial class SampleServiceClient : System.ServiceModel.ClientBase<ISampleService>, ISampleService
 {
-    
+
     public SampleServiceClient()
     {
     }
-    
-    public SampleServiceClient(string endpointConfigurationName) : 
+
+    public SampleServiceClient(string endpointConfigurationName) :
             base(endpointConfigurationName)
     {
     }
-    
-    public SampleServiceClient(string endpointConfigurationName, string remoteAddress) : 
+
+    public SampleServiceClient(string endpointConfigurationName, string remoteAddress) :
             base(endpointConfigurationName, remoteAddress)
     {
     }
-    
-    public SampleServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+    public SampleServiceClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) :
             base(endpointConfigurationName, remoteAddress)
     {
     }
-    
-    public SampleServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+    public SampleServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
             base(binding, remoteAddress)
     {
     }
-    
+
     public string SampleMethod(string msg)
     {
         return base.Channel.SampleMethod(msg);
     }
-    
+
     public System.IAsyncResult BeginSampleMethod(string msg, System.AsyncCallback callback, object asyncState)
     {
         return base.Channel.BeginSampleMethod(msg, callback, asyncState);
     }
-    
+
     public string EndSampleMethod(System.IAsyncResult result)
     {
         return base.Channel.EndSampleMethod(result);
     }
-    
+
     public string ServiceAsyncMethod(string msg)
     {
         return base.Channel.ServiceAsyncMethod(msg);
     }
-    
+
     public System.IAsyncResult BeginServiceAsyncMethod(string msg, System.AsyncCallback callback, object asyncState)
     {
         return base.Channel.BeginServiceAsyncMethod(msg, callback, asyncState);
     }
-    
+
     public string EndServiceAsyncMethod(System.IAsyncResult result)
     {
         return base.Channel.EndServiceAsyncMethod(result);

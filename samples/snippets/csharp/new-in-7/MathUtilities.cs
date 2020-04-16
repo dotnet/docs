@@ -13,7 +13,7 @@ namespace new_in_7
         {
             return nthFactorial(n);
 
-            int nthFactorial(int number) => (number < 2) ? 
+            int nthFactorial(int number) => (number < 2) ?
                 1 : number * nthFactorial(number - 1);
         }
         #endregion
@@ -23,7 +23,7 @@ namespace new_in_7
         {
             Func<int, int> nthFactorial = default(Func<int, int>);
 
-            nthFactorial = (number) => (number < 2) ? 
+            nthFactorial = (number) => (number < 2) ?
                 1 : number * nthFactorial(number - 1);
 
             return nthFactorial(n);

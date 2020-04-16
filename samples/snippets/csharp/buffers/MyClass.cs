@@ -60,7 +60,7 @@ namespace MyBuffers
             }
             else
             {
-                // There are 4 bytes split across multiple segments. Since it's so small, it 
+                // There are 4 bytes split across multiple segments. Since it's so small, it
                 // can be copied to a stack allocated buffer. This avoids a heap allocation.
                 Span<byte> stackBuffer = stackalloc byte[4];
                 lengthSlice.CopyTo(stackBuffer);
@@ -158,7 +158,7 @@ namespace MyBuffers
             // sequence1.FirstSpan.Length=1
             Console.WriteLine($"sequence1.FirstSpan.Length={sequence1.FirstSpan.Length}");
 
-            // Slicing using SequencePosition will Slice the ReadOnlySequence<byte> directly 
+            // Slicing using SequencePosition will Slice the ReadOnlySequence<byte> directly
             // on the empty segment!
             // sequence2.FirstSpan.Length=0
             Console.WriteLine($"sequence2.FirstSpan.Length={sequence2.FirstSpan.Length}");
@@ -280,7 +280,7 @@ namespace MyBuffers
         #region snippet10
         static ReadOnlySpan<byte> NewLine => new byte[] { (byte)'\r', (byte)'\n' };
 
-        static bool TryParseLine(ref ReadOnlySequence<byte> buffer, 
+        static bool TryParseLine(ref ReadOnlySequence<byte> buffer,
                                  out ReadOnlySequence<byte> line)
         {
             var reader = new SequenceReader<byte>(buffer);

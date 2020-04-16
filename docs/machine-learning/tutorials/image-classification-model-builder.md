@@ -707,6 +707,6 @@ In this tutorial you:
 
 Try one of the other Model Builder scenarios:
 
-- [Predict NYC taxi fares](predict-prices-model-builder.md)
+- [Predict NYC taxi fares](predict-prices-with-model-builder.md)
 - [Analyze sentiment of website comments in a Razor Pages application](sentiment-analysis-model-builder.md)
 - [Categorize the severity of restaurant violations](health-violation-classification-model-builder.md)

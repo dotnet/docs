@@ -13,9 +13,9 @@ ms.custom: mvc,mlnet-tooling
 
 Learn how to train an image classification model in Azure using Model Builder to categorize land use from satellite images.
 
-This tutorial shows you how to create a Universal Windows Platform (UWP) application that hosts a in an C# ASP.NET Core Web API to categorize land use based on satellite images.
+This tutorial shows you how to create a Universal Windows Platform (UWP) application that hosts a model in an C# ASP.NET Core Web API to categorize land use based on satellite images.
 
-In this tutorial you:
+In this tutorial, you:
 
 > [!div class="checklist"]
 >
@@ -41,7 +41,7 @@ In this tutorial you:
 
 ## Model Builder image classification overview
 
-This sample creates a UWP application that categorizes land use from map satellite imagery using a deep learning model trained on Azure with Model Builder. The model itself is hosted as a web service in an ASP.NET Core Web API. You can find the source code for this tutorial in the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/modelbuilder/ImageClassification_Azure_LandUse) Github repository
+This sample creates a UWP application that categorizes land use from map satellite imagery using a deep learning model trained on Azure with Model Builder. The model itself is hosted as a web service in an ASP.NET Core Web API. You can find the source code for this tutorial in the [dotnet/machinelearning-samples](https://github.com/dotnet/machinelearning-samples/tree/master/samples/modelbuilder/ImageClassification_Azure_LandUse) GitHub repository
 
 ## Create solution
 
@@ -68,7 +68,7 @@ This sample creates a UWP application that categorizes land use from map satelli
 > - Eurosat: A novel dataset and deep learning benchmark for land use and land cover classification. Patrick Helber, Benjamin Bischke, Andreas Dengel, Damian Borth. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 2019.
 > - Eurosat: A novel dataset and deep learning benchmark for land use and land cover classification. Patrick Helber, Benjamin Bischke, Andreas Dengel, Damian Borth. IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing, 2019.
 
-The EuroSAT dataset contains a collection of satellite images divided into ten categories (rural, industrial, river, etc). The original dataset contains 27,000 images. For convenience, this tutorial only uses 2,000 of those images.
+The EuroSAT dataset contains a collection of satellite images divided into ten categories (rural, industrial, river, etc.). The original dataset contains 27,000 images. For convenience, this tutorial only uses 2,000 of those images.
 
 ![Model Builder Scenario Screen](media/sentiment-analysis-model-builder/dataset-images.png)
 
@@ -86,7 +86,8 @@ To train your model, you need to select from the list of available machine learn
 
 ## Load the data
 
-1. In the data step of the Model Builder tool, select the button next to the **Select a folder** text box and use File Explorer to browse and select the unzipped directory containing the images.
+1. In the data step of the Model Builder tool, select the button next to the **Select a folder** text box.
+1. Use File Explorer to browse and select the unzipped directory containing the images.
 1. Select the **Train** button to move to the next step in the Model Builder tool.
 
 ## Train the model
@@ -141,7 +142,7 @@ An Azure Machine Learning compute is a cloud-based Linux VM used for training.
 Once you've configured your workspace and compute type, it's time to finish creating the experiment and start training.
 
 1. In the Create New Experiment dialog, leave the default value in the **Experiment name** text box.
-1. Select **Create**. Once created, your experiment details appears in the Model Builder train step.
+1. Select **Create**. Once created, your experiment details appear in the Model Builder train step.
 1. Select **Start Training**.
 
     The training process takes some time and the amount of time may vary depending on the size of compute selected as well as amount of data. The first time a model is trained, you can expect a slightly longer training time because resources have to be provisioned. You can track the progress of your runs by selecting the **Monitor current run in Azure portal** link in Visual Studio.
@@ -156,7 +157,7 @@ Once you've configured your workspace and compute type, it's time to finish crea
 
 ## Evaluate the model
 
-The result of the training step is one model which had the best performance. In the evaluate step of the Model Builder tool, the **Details** tab in the output section, will contain the algorithm used by the best performing model in the **Algorithm** entry along with metrics in the **Best model Accuracy** entry.
+The result of the training step is one model that had the best performance. In the evaluate step of the Model Builder tool, the **Details** tab in the output section, will contain the algorithm used by the best performing model in the **Algorithm** entry along with metrics in the **Best model Accuracy** entry.
 
 If you're not satisfied with your accuracy metrics, some easy ways to try and improve model accuracy are to use more data or augment the existing data. Otherwise, select the **Code** button to move to the final step in the Model Builder tool.
 
@@ -173,7 +174,7 @@ Two projects are added to your solution:
 - *LandUseML.ConsoleApp*: A C# .NET Core console application that provides starter code to build the prediction pipeline and make predictions.
 - *LandUseML.Model*: A C# .NET Standard application that contains the data models that define the schema of input and output model data as well as the following assets:
 
-  - *bestModel.onnx*: A serialized version of the model in Open Neural Network Exchange (ONNX) format. ONNX is an open source format for AI models that supports interoperability between frameworks like ML.NET, PyTorch and TensorFlow.
+  - *bestModel.onnx*: A serialized version of the model in Open Neural Network Exchange (ONNX) format. ONNX is an open-source format for AI models that supports interoperability between frameworks like ML.NET, PyTorch, and TensorFlow.
   - *bestModelMap.json*: A list of categories used when making predictions to map the model output to a text category.
   - *MLModel.zip*: A serialized version of the ML.NET prediction pipeline that uses the serialized version of the model *bestModel.onnx* to make predictions and maps outputs using the *bestModelMap.json* file.
 
@@ -219,7 +220,7 @@ To process your incoming HTTP requests, create a controller.
 
 1. In Solution Explorer, right-click the **Controllers** directory in the `LandUseAPI` project, and then select **Add > Controller**.
 1. In the Add New Item dialog box, select **API Controller Empty**, then select **Add**.
-1. In the prompt change the Controller Name text box to *ClassificationController.cs*. 
+1. In the prompt, change the Controller Name text box to *ClassificationController.cs*.
 1. Select **Add**.
 
     The *ClassificationController.cs* file opens in the code editor. Replace the using statements at the top of the file with the following:
@@ -314,7 +315,7 @@ This application only contains a single page.
 
     :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage.xaml.cs" range="1-17":::
 
-1. Start by setting a starting point for the the map control. Create a new method called `SatelliteMap_Loaded` inside the `MainPage` class.
+1. Start by setting a starting point for the map control. Create a new method called `SatelliteMap_Loaded` inside the `MainPage` class.
 
     :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage.xaml.cs" range="34-40":::
 
@@ -367,7 +368,7 @@ This application only contains a single page.
 
     :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage.xaml.cs" range="51":::
 
-1. Now that you have the an satellite image, you can consume the ASP.NET Core Web API to classify it. Create a new method called `ClassifyImageAsync` below the `GetMapAsImageAsync` method.
+1. Now that you have a satellite image, you can consume the ASP.NET Core Web API to classify it. Create a new method called `ClassifyImageAsync` below the `GetMapAsImageAsync` method.
 
     :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage.xaml.cs" range="129-149":::
 

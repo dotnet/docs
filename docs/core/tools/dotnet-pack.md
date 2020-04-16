@@ -33,6 +33,9 @@ NuGet dependencies of the packed project are added to the *.nuspec* file, so the
 
 By default, `dotnet pack` builds the project first. If you wish to avoid this behavior, pass the `--no-build` option. This option is often useful in Continuous Integration (CI) build scenarios where you know the code was previously built.
 
+> [!NOTE]
+> In some cases, the implicit build cannot be performed. This can occur when `GeneratePackageOnBuild` is set, to avoid a cyclic dependency between build and pack targets. The build can also fail if there is a locked file or other issue.
+
 You can provide MSBuild properties to the `dotnet pack` command for the packing process. For more information, see [NuGet metadata properties](csproj.md#nuget-metadata-properties) and the [MSBuild Command-Line Reference](/visualstudio/msbuild/msbuild-command-line-reference). The [Examples](#examples) section shows how to use the MSBuild -p switch for a couple of different scenarios.
 
 Web projects aren't packable by default. To override the default behavior, add the following property to your *.csproj* file:

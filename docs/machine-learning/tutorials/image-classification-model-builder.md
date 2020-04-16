@@ -70,7 +70,7 @@ This sample creates a UWP application that categorizes land use from map satelli
 
 The EuroSAT dataset contains a collection of satellite images divided into ten categories (rural, industrial, river, etc.). The original dataset contains 27,000 images. For convenience, this tutorial only uses 2,000 of those images.
 
-![Model Builder Scenario Screen](media/sentiment-analysis-model-builder/dataset-images.png)
+![Model Builder Scenario Screen](media/image-classification-model-builder/dataset-images.png)
 
 1. Download the subset of the [EuroSAT dataset](https://github.com/dotnet/machinelearning-samples/blob/master/samples/modelbuilder/ImageClassification_Azure_LandUse/assets.zip) and save it anywhere on your computer.
 1. Unzip it.

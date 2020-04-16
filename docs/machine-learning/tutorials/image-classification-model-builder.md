@@ -331,10 +331,6 @@ This application only contains a single page.
 
     :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/Coordinates.cs" range="1-6":::
 
-    ```csharp
-    using System.Text.Json.Serialization;
-    ```
-
     Replace the contents of the class with the following
 
     :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/Coordinates.cs" range="10-17":::

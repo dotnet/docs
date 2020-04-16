@@ -315,7 +315,7 @@ You can read more about implementing filters and download a working sample from 
 
 ## Security
 
-Securing web applications is a large topic, with many considerations. At its most basic level, security involves ensuring you know who a given request is coming from, and then ensuring that the request only has access to resources it should. Authentication is the process of comparing credentials provided with a request to those in a trusted data store, to see if the request should be treated as coming from a known entity. Authorization is the process of restricting access to certain resources based on user identity. A third security concern is protecting requests from eavesdropping by third parties, for which you should at least [ensure that SSL is used by your application](/aspnet/core/security/enforcing-ssl).
+Securing web applications is a large topic, with many considerations. At its most basic level, security involves ensuring you know who a given request is coming from, and then ensuring that the request only has access to resources it should. Authentication is the process of comparing credentials provided with a request to those in a trusted data store, to see if the request should be treated as coming from a known entity. Authorization is the process of restricting access to certain resources based on user identity. A third security concern is protecting requests from eavesdropping by third parties, for which you should at least [ensure that TLS/SSL is used by your application](/aspnet/core/security/enforcing-ssl).
 
 ### Authentication
 
@@ -417,7 +417,7 @@ Be especially careful about "rolling your own" implementation of cryptography, u
 >
 > - **Security Docs Overview**  
 >   https://docs.microsoft.com/aspnet/core/security/
-> - **Enforcing SSL in an ASP.NET Core App**  
+> - **Enforcing TLS/SSL in an ASP.NET Core App**  
 >   <https://docs.microsoft.com/aspnet/core/security/enforcing-ssl>
 > - **Introduction to Identity**  
 >   <https://docs.microsoft.com/aspnet/core/security/authentication/identity>
@@ -550,7 +550,7 @@ In addition to a process manager, ASP.NET Core applications may use a reverse pr
 
 **Figure 7-5**. ASP.NET hosted in Kestrel behind a reverse proxy server
 
-Another scenario in which a reverse proxy can be helpful is to secure multiple applications using SSL/HTTPS. In this case, only the reverse proxy would need to have SSL configured. Communication between the reverse proxy server and Kestrel could take place over HTTP, as shown in Figure 7-6.
+Another scenario in which a reverse proxy can be helpful is to secure multiple applications using TLS/HTTPS. In this case, only the reverse proxy would need to have TLS configured. Communication between the reverse proxy server and Kestrel could take place over HTTP, as shown in Figure 7-6.
 
 ![ASP.NET hosted behind an HTTPS-secured reverse proxy server](./media/image7-6.png)
 
@@ -562,9 +562,9 @@ If you're hosting your application on Azure, you can use Microsoft Azure Applica
 
 - HTTP load balancing
 
-- SSL offload (SSL only to Internet)
+- TLS offload (TLS only to Internet)
 
-- End to End SSL
+- End to End TLS
 
 - Multi-site routing (consolidate up to 20 sites on a single Application Gateway)
 

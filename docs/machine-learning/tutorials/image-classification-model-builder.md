@@ -448,7 +448,7 @@ This application only contains a single page.
 1. Start by setting a starting point for the the map control. Create a new method called `SatelliteMap_Loaded` inside the `MainPage` class.
 
     :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage.xaml.cs" range="34-40":::
-    
+
     ```csharp
     private async void SatelliteMap_Loaded(object sender, RoutedEventArgs e)
     {
@@ -499,7 +499,7 @@ This application only contains a single page.
 
 1. In the *MainPage.xaml.cs* file, create a new method called `GetCoordinatesAsync` below the `QueryLocation_Click` method and add the following code.
 
-    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage/xaml.cs" range="61-95":::
+    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage.xaml.cs" range="61-95":::
 
     ```csharp
     private async Task<Coordinates> GetCoordinatesAsync(string address)
@@ -543,7 +543,7 @@ This application only contains a single page.
 
 1. Call the `GetCoordinatesAsync` method inside the `QueryLocation_Clicked` method using the user provided address as input.
 
-    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage/xaml.cs" range="45":::
+    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage.xaml.cs" range="45":::
 
     ```csharp
     var coordinates = await GetCoordinatesAsync(AddressBar.Text);
@@ -551,7 +551,7 @@ This application only contains a single page.
 
 1. Then, update the map using the coordinates of the new location. Create a new method called `UpdateMapLocationAsync` below the `GetCoordinatesAsync` method.
 
-    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage/xaml.cs" range="97-106":::
+    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage.xaml.cs" range="97-106":::
 
     ```csharp
     private async Task UpdateMapLocationAsync(MapControl map, Coordinates coordinates)
@@ -568,7 +568,7 @@ This application only contains a single page.
 
 1. Call the `UpdateMapLocationAsync` method inside the `QueryLocation_Clicked` by supplying the coordinates of the new location to the `SatelliteMap` control.
 
-    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage/xaml.cs" range="48":::
+    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage.xaml.cs" range="48":::
 
     ```csharp
     await UpdateMapLocationAsync(SatelliteMap, coordinates);
@@ -576,7 +576,7 @@ This application only contains a single page.
 
 1. The model requires an image as input. When the application updates the map, take a snapshot of the control. Create a new method called `GetMapAsImageAsync` to create an image of the map control below the `UpdateMapLocationAsync` method.
 
-    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage/xaml.cs" range="108-127":::
+    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage.xaml.cs" range="108-127":::
 
     ```csharp
     private async Task<byte[]> GetMapAsImageAsync()
@@ -603,7 +603,7 @@ This application only contains a single page.
 
 1. Call the `GetMapAsImageAsync` method inside the `QueryLocation_Clicked`.
 
-    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage/xaml.cs" range="51":::
+    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage.xaml.cs" range="51":::
 
     ```csharp
     var satelliteImage = await GetMapAsImageAsync();
@@ -611,7 +611,7 @@ This application only contains a single page.
 
 1. Now that you have the an satellite image, you can consume the ASP.NET Core Web API to classify it. Create a new method called `ClassifyImageAsync` below the `GetMapAsImageAsync` method.
 
-    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage/xaml.cs" range="129-149":::
+    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage.xaml.cs" range="129-149":::
 
     ```csharp
     private async Task<string> ClassifyImageAsync(byte[] imageBytes)
@@ -636,7 +636,7 @@ This application only contains a single page.
 
 1. Call the `ClassifyImageAsync` method from the `QueryLocation_Click` method.
 
-    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage/xaml.cs" range="54-55":::
+    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage.xaml.cs" range="54-55":::
 
     ```csharp
     PredictionText.Text = "Inspecting Image";
@@ -645,7 +645,7 @@ This application only contains a single page.
 
 1. Finally, display the prediction in the application.
 
-    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage/xaml.cs" range="58":::
+    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage.xaml.cs" range="58":::
 
     ```csharp
     PredictionText.Text = $"Prediction: {prediction}";
@@ -653,7 +653,7 @@ This application only contains a single page.
 
 1. The complete `QueryLocation_Click` method should look like the code below:
 
-    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage/xaml.cs" range="42-59":::
+    :::code language="csharp" source="~/machinelearning-samples/samples/modelbuilder/ImageClassification_Azure_LandUse/LandUseUWP/MainPage.xaml.cs" range="42-59":::
 
     ```csharp
     private async void QueryLocation_Click(object sender, RoutedEventArgs e)

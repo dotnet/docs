@@ -108,11 +108,11 @@ You can install a specific version using the `-Version|--version` argument. The 
 
 - **`-ProxyAddress`**
 
-  If set, the installer uses the proxy when making web requests. (Only valid for Windows)
+  If set, the installer uses the proxy when making web requests. (Only valid for Windows.)
 
 - **`ProxyUseDefaultCredentials`**
 
-  If set, the installer uses the credentials of the current user when using proxy address. (Only valid for Windows)
+  If set, the installer uses the credentials of the current user when using proxy address. (Only valid for Windows.)
 
 - **`-Runtime|--runtime <RUNTIME>`**
 
@@ -124,7 +124,7 @@ You can install a specific version using the `-Version|--version` argument. The 
 
 - **`--runtime-id <RID>`**
 
-  Specifies the [runtime identifier](../rid-catalog.md) for which the tools are being installed. Use `linux-x64` for portable Linux. (Only valid for Linux/macOS)
+  Specifies the [runtime identifier](../rid-catalog.md) for which the tools are being installed. Use `linux-x64` for portable Linux. (Only valid for Linux/macOS.)
 
 - **`-SharedRuntime|--shared-runtime`**
 

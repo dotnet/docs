@@ -14,9 +14,9 @@ ms.date: 02/14/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet tool uninstall <PACKAGE_NAME> <-g|--global>
+dotnet tool uninstall <PACKAGE_NAME> -g|--global
 
-dotnet tool uninstall <PACKAGE_NAME> <--tool-path <PATH>>
+dotnet tool uninstall <PACKAGE_NAME> --tool-path <PATH>
 
 dotnet tool uninstall <PACKAGE_NAME>
 

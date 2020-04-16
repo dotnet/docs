@@ -14,11 +14,11 @@ ms.date: 02/14/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet tool update <PACKAGE_NAME> <-g|--global>
+dotnet tool update <PACKAGE_NAME> -g|--global
     [--configfile <FILE>] [--framework <FRAMEWORK>]
     [-v|--verbosity <LEVEL>] [--add-source <SOURCE>]
 
-dotnet tool update <PACKAGE_NAME> <--tool-path <PATH>>
+dotnet tool update <PACKAGE_NAME> --tool-path <PATH>
     [--configfile <FILE>] [--framework <FRAMEWORK>]
     [-v|--verbosity <LEVEL>] [--add-source <SOURCE>]
 

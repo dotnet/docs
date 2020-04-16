@@ -15,10 +15,10 @@ ms.date: 02/19/2020
 
 ```dotnetcli
 dotnet run [-c|--configuration <CONFIGURATION>] [-f|--framework <FRAMEWORK>]
-[--force] [--interactive] [--launch-profile <NAME>] [--no-build]
-[--no-dependencies] [--no-launch-profile] [--no-restore]
-[-p|--project <PATH>] [-r|--runtime <RUNTIME_IDENTIFIER>]
-[-v|--verbosity <LEVEL>] [[--] [application arguments]]
+    [--force] [--interactive] [--launch-profile <NAME>] [--no-build]
+    [--no-dependencies] [--no-launch-profile] [--no-restore]
+    [-p|--project <PATH>] [-r|--runtime <RUNTIME_IDENTIFIER>]
+    [-v|--verbosity <LEVEL>] [[--] [application arguments]]
 
 dotnet run -h|--help
 ```

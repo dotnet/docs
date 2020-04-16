@@ -14,7 +14,9 @@ ms.date: 02/14/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet remove [<PROJECT>] reference [-f|--framework] <PROJECT_REFERENCES> [-h|--help]
+dotnet remove [<PROJECT>] reference [-f|--framework <FRAMEWORK>] <PROJECT_REFERENCES>
+
+dotnet remove reference -h|--help
 ```
 
 ## Description

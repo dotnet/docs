@@ -23,7 +23,7 @@ The following features are new in the .NET Framework Data Provider for SQL Serve
 
 - A password can be passed as a <xref:System.Security.SecureString> when using SQL Server Authentication. See <xref:System.Data.SqlClient.SqlCredential> for more information.
 
-- When `TrustServerCertificate` is false and `Encrypt` is true, the server name (or IP address) in a SQL Server SSL certificate must exactly match the server name (or IP address) specified in the connection string. Otherwise, the connection attempt will fail. For more information, see the description of the `Encrypt` connection option in <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>.
+- When `TrustServerCertificate` is false and `Encrypt` is true, the server name (or IP address) in a SQL Server TLS/SSL certificate must exactly match the server name (or IP address) specified in the connection string. Otherwise, the connection attempt will fail. For more information, see the description of the `Encrypt` connection option in <xref:System.Data.SqlClient.SqlConnection.ConnectionString%2A>.
 
   If this change causes an existing application to no longer connect, you can fix the application using one of the following:
 

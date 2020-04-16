@@ -87,7 +87,7 @@ You can also set the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.Data
  For more information on working with user instances, see [SQL Server Express User Instances](./sql/sql-server-express-user-instances.md).  
   
 ## Using TrustServerCertificate  
- The `TrustServerCertificate` keyword is valid only when connecting to a SQL Server instance with a valid certificate. When `TrustServerCertificate` is set to `true`, the transport layer will use SSL to encrypt the channel and bypass walking the certificate chain to validate trust.  
+ The `TrustServerCertificate` keyword is valid only when connecting to a SQL Server instance with a valid certificate. When `TrustServerCertificate` is set to `true`, the transport layer will use TLS to encrypt the channel and bypass walking the certificate chain to validate trust.  
   
 ```csharp  
 "TrustServerCertificate=true;"

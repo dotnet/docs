@@ -36,7 +36,7 @@ namespace Margin_Padding_Alignment_Sample
             myGrid = new Grid();
             myGrid.Background = Brushes.White;
             myGrid.ShowGridLines = true;
-            
+
             // Define the Columns.
             ColumnDefinition myColDef1 = new ColumnDefinition();
             myColDef1.Width = new GridLength(1, GridUnitType.Auto);

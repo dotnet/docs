@@ -13,7 +13,7 @@ public class Example
                          int taskNo = ctr;
                          Task.Factory.StartNew((x) => {
                                                   Thread.SpinWait(5000000);
-                                                  Console.WriteLine("Attached child #{0} completed.", 
+                                                  Console.WriteLine("Attached child #{0} completed.",
                                                                     x);
                                                },
                                                taskNo, TaskCreationOptions.AttachedToParent);

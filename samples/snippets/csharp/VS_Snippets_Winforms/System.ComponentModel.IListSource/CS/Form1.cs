@@ -51,9 +51,9 @@ namespace IListSourceCS
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
+            //
             // flowLayoutPanel1
-            // 
+            //
             this.flowLayoutPanel1.AutoSize = true;
             this.flowLayoutPanel1.Controls.Add(this.label2);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -61,9 +61,9 @@ namespace IListSourceCS
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(416, 51);
             this.flowLayoutPanel1.TabIndex = 11;
-            // 
+            //
             // label2
-            // 
+            //
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(3, 6);
             this.label2.Margin = new System.Windows.Forms.Padding(3, 6, 3, 6);
@@ -73,9 +73,9 @@ namespace IListSourceCS
             this.label2.Text = "This sample demonstrates how to implement the IListSource interface.  In this sam" +
                 "ple, a DataGridView is bound at design time to a Component (employeeListSource1)" +
                 " that implements IListSource.";
-            // 
+            //
             // dataGridView1
-            // 
+            //
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -94,33 +94,33 @@ namespace IListSourceCS
             this.dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(416, 215);
             this.dataGridView1.TabIndex = 12;
-            // 
+            //
             // nameDataGridViewTextBoxColumn
-            // 
+            //
             this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
             this.nameDataGridViewTextBoxColumn.FillWeight = 131.7987F;
             this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
             this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            // 
+            //
             // salaryDataGridViewTextBoxColumn
-            // 
+            //
             this.salaryDataGridViewTextBoxColumn.DataPropertyName = "ParkingID";
             this.salaryDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
             this.salaryDataGridViewTextBoxColumn.FillWeight = 121.8274F;
             this.salaryDataGridViewTextBoxColumn.HeaderText = "Parking ID";
             this.salaryDataGridViewTextBoxColumn.Name = "salaryDataGridViewTextBoxColumn";
-            // 
+            //
             // iDDataGridViewTextBoxColumn
-            // 
+            //
             this.iDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
             this.iDDataGridViewTextBoxColumn.FillWeight = 46.37391F;
             this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
             this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
             this.iDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
+            //
             // Form1
-            // 
+            //
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(416, 266);
@@ -139,7 +139,7 @@ namespace IListSourceCS
     }
 
     static class Program
-    {   
+    {
         [STAThread]
         static void Main()
         {

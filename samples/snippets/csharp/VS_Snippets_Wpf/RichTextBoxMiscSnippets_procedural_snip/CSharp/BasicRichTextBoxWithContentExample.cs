@@ -31,7 +31,7 @@ namespace SDKSample
 
             // Add initial content to the RichTextBox.
             myRichTextBox.Document = myFlowDoc;
-            
+
             myStackPanel.Children.Add(myRichTextBox);
             this.Content = myStackPanel;
         }

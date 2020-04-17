@@ -11,11 +11,11 @@ namespace SDKSample
     {
         public FigureExample()
         {
- 
+
             // Create strings to use as content.
             string strFigure = "A Figure embeds content into flow content with" +
                                " placement properties that can be customized" +
-                               " independently from the primary content flow"; 
+                               " independently from the primary content flow";
             string strOther = "Lorem ipsum dolor sit amet, consectetuer adipiscing" +
                               " elit, sed diam nonummy nibh euismod tincidunt ut laoreet" +
                               " dolore magna aliquam erat volutpat. Ut wisi enim ad" +

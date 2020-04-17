@@ -28,7 +28,7 @@ namespace SDKSamples
 
         //<SnippetThreadingMultiBrowserNewWindow>
         private void NewWindowHandler(object sender, RoutedEventArgs e)
-        {       
+        {
             Thread newWindowThread = new Thread(new ThreadStart(ThreadStartingPoint));
             newWindowThread.SetApartmentState(ApartmentState.STA);
             newWindowThread.IsBackground = true;
@@ -40,7 +40,7 @@ namespace SDKSamples
         private void ThreadStartingPoint()
         {
             Window1 tempWindow = new Window1();
-            tempWindow.Show();       
+            tempWindow.Show();
             System.Windows.Threading.Dispatcher.Run();
         }
         //</SnippetThreadingMultiBrowserThreadStart>

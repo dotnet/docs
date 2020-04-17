@@ -55,7 +55,7 @@ namespace SDKSample
             }
         }
 
-        // Gets a fresh context menu. 
+        // Gets a fresh context menu.
         private ContextMenu GetContextMenu()
         {
             ContextMenu cm = new ContextMenu();

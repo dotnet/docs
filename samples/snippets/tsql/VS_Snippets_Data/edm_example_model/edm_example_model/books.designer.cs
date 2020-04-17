@@ -38,7 +38,7 @@ namespace EDM_Spec
         {
             OnContextCreated();
         }
-    
+
         /// <summary>
         /// Initialize a new BooksContainer object.
         /// </summary>
@@ -46,7 +46,7 @@ namespace EDM_Spec
         {
             OnContextCreated();
         }
-    
+
         /// <summary>
         /// Initialize a new BooksContainer object.
         /// </summary>
@@ -55,11 +55,11 @@ namespace EDM_Spec
             OnContextCreated();
         }
         #endregion
-        
+
         #region Partial Methods
         partial void OnContextCreated();
         #endregion
-        
+
         #region ObjectSet Properties
         /// <summary>
         /// No Metadata Documentation available.
@@ -76,7 +76,7 @@ namespace EDM_Spec
             }
         }
         private ObjectSet<Book> _Books;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -92,7 +92,7 @@ namespace EDM_Spec
             }
         }
         private ObjectSet<Publisher> _Publishers;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -108,10 +108,10 @@ namespace EDM_Spec
             }
         }
         private ObjectSet<Author> _Authors;
-    
+
         #endregion
         #region AddTo Methods
-            
+
         /// <summary>
         /// Deprecated Method for adding a new object to the Books EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -119,7 +119,7 @@ namespace EDM_Spec
         {
             base.AddObject("Books", book);
         }
-            
+
         /// <summary>
         /// Deprecated Method for adding a new object to the Publishers EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -127,7 +127,7 @@ namespace EDM_Spec
         {
             base.AddObject("Publishers", publisher);
         }
-            
+
         /// <summary>
         /// Deprecated Method for adding a new object to the Authors EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -137,10 +137,10 @@ namespace EDM_Spec
         }
         #endregion
     }
-    
+
     #endregion
-    
-    
+
+
     #region Entities
     /// <summary>
     /// No Metadata Documentation available.
@@ -160,9 +160,9 @@ namespace EDM_Spec
         {
             Author author = new Author();
             author.Name = name;
-            
+
             author.Address = address;
-            
+
             return author;
         }
         #endregion
@@ -190,12 +190,12 @@ namespace EDM_Spec
                     OnNameChanged();
                 }
             }
-                
+
         }
         private global::System.String _Name;
         partial void OnNameChanging(global::System.String value);
         partial void OnNameChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -218,14 +218,14 @@ namespace EDM_Spec
                     OnAddressChanged();
                 }
             }
-                
+
         }
         private global::System.String _Address;
         partial void OnAddressChanging(global::System.String value);
         partial void OnAddressChanged();
-        
+
         #endregion
-    
+
         #region Navigation Properties
         /// <summary>
         /// No Metadata Documentation available.
@@ -233,7 +233,7 @@ namespace EDM_Spec
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("Books", "BookAuthor", "Book")] 
+        [EdmRelationshipNavigationPropertyAttribute("Books", "BookAuthor", "Book")]
         public EntityCollection<Book> Books
         {
             get
@@ -250,7 +250,7 @@ namespace EDM_Spec
         }
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -270,11 +270,11 @@ namespace EDM_Spec
         {
             Book book = new Book();
             book.ISBN = iSBN;
-            
+
             book.Title = title;
-            
+
             book.Revision = revision;
-            
+
             return book;
         }
         #endregion
@@ -302,12 +302,12 @@ namespace EDM_Spec
                     OnISBNChanged();
                 }
             }
-                
+
         }
         private global::System.String _ISBN;
         partial void OnISBNChanging(global::System.String value);
         partial void OnISBNChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -327,12 +327,12 @@ namespace EDM_Spec
                 ReportPropertyChanged("Title");
                 OnTitleChanged();
             }
-                
+
         }
         private global::System.String _Title;
         partial void OnTitleChanging(global::System.String value);
         partial void OnTitleChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -352,14 +352,14 @@ namespace EDM_Spec
                 ReportPropertyChanged("Revision");
                 OnRevisionChanged();
             }
-                
+
         }
         private global::System.Decimal _Revision;
         partial void OnRevisionChanging(global::System.Decimal value);
         partial void OnRevisionChanged();
-        
+
         #endregion
-    
+
         #region Navigation Properties
         /// <summary>
         /// No Metadata Documentation available.
@@ -367,7 +367,7 @@ namespace EDM_Spec
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("Books", "PublishedBy", "Publisher")] 
+        [EdmRelationshipNavigationPropertyAttribute("Books", "PublishedBy", "Publisher")]
         public Publisher Publisher
         {
             get
@@ -404,7 +404,7 @@ namespace EDM_Spec
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("Books", "BookAuthor", "Author")] 
+        [EdmRelationshipNavigationPropertyAttribute("Books", "BookAuthor", "Author")]
         public EntityCollection<Author> Authors
         {
             get
@@ -421,7 +421,7 @@ namespace EDM_Spec
         }
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -441,11 +441,11 @@ namespace EDM_Spec
         {
             Publisher publisher = new Publisher();
             publisher.Id = id;
-            
+
             publisher.Name = name;
-            
+
             publisher.Address = address;
-            
+
             return publisher;
         }
         #endregion
@@ -473,12 +473,12 @@ namespace EDM_Spec
                     OnIdChanged();
                 }
             }
-                
+
         }
         private global::System.Int32 _Id;
         partial void OnIdChanging(global::System.Int32 value);
         partial void OnIdChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -498,12 +498,12 @@ namespace EDM_Spec
                 ReportPropertyChanged("Name");
                 OnNameChanged();
             }
-                
+
         }
         private global::System.String _Name;
         partial void OnNameChanging(global::System.String value);
         partial void OnNameChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -523,14 +523,14 @@ namespace EDM_Spec
                 ReportPropertyChanged("Address");
                 OnAddressChanged();
             }
-                
+
         }
         private global::System.String _Address;
         partial void OnAddressChanging(global::System.String value);
         partial void OnAddressChanged();
-        
+
         #endregion
-    
+
         #region Navigation Properties
         /// <summary>
         /// No Metadata Documentation available.
@@ -538,7 +538,7 @@ namespace EDM_Spec
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("Books", "PublishedBy", "Book")] 
+        [EdmRelationshipNavigationPropertyAttribute("Books", "PublishedBy", "Book")]
         public EntityCollection<Book> Books
         {
             get
@@ -555,7 +555,7 @@ namespace EDM_Spec
         }
         #endregion
     }
-    
+
     #endregion
-    
+
 }

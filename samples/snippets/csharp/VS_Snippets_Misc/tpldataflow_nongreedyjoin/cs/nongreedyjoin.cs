@@ -7,26 +7,26 @@ using System.Threading.Tasks.Dataflow;
 // resources among a dataflow network.
 class Program
 {
-   // Represents a resource. A derived class might represent 
+   // Represents a resource. A derived class might represent
    // a limited resource such as a memory, network, or I/O
    // device.
    abstract class Resource
    {
    }
 
-   // Represents a memory resource. For brevity, the details of 
+   // Represents a memory resource. For brevity, the details of
    // this class are omitted.
    class MemoryResource : Resource
    {
    }
 
-   // Represents a network resource. For brevity, the details of 
+   // Represents a network resource. For brevity, the details of
    // this class are omitted.
    class NetworkResource : Resource
    {
    }
 
-   // Represents a file resource. For brevity, the details of 
+   // Represents a file resource. For brevity, the details of
    // this class are omitted.
    class FileResource : Resource
    {
@@ -40,8 +40,8 @@ class Program
       var fileResources = new BufferBlock<FileResource>();
       var memoryResources = new BufferBlock<MemoryResource>();
 
-      // Create two non-greedy JoinBlock<T1, T2> objects. 
-      // The first join works with network and memory resources; 
+      // Create two non-greedy JoinBlock<T1, T2> objects.
+      // The first join works with network and memory resources;
       // the second pool works with file and memory resources.
 
       var joinNetworkAndMemoryResources =
@@ -58,7 +58,7 @@ class Program
                Greedy = false
             });
 
-      // Create two ActionBlock<T> objects. 
+      // Create two ActionBlock<T> objects.
       // The first block acts on a network resource and a memory resource.
       // The second block acts on a file resource and a memory resource.
 
@@ -118,7 +118,7 @@ class Program
       joinNetworkAndMemoryResources.LinkTo(networkMemoryAction);
       joinFileAndMemoryResources.LinkTo(fileMemoryAction);
 
-      // Populate the resource pools. In this example, network and 
+      // Populate the resource pools. In this example, network and
       // file resources are more abundant than memory resources.
 
       networkResources.Post(new NetworkResource());

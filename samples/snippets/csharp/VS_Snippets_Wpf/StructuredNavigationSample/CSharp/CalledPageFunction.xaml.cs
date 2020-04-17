@@ -38,7 +38,7 @@ namespace StructuredNavigationSample
 
         void cancelButton_Click(object sender, RoutedEventArgs e)
         {
-            // Cancel 
+            // Cancel
             OnReturn(null);
         }
         //<SnippetAcceptsInitialDataCODEBEHIND4>

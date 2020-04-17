@@ -18,7 +18,7 @@ namespace Microsoft.Samples.MatrixExamples
        public SampleViewer()
        {
             InitializeComponent();
-            
+
             MatrixExampleFrame.Content = new MatrixExample();
        }
     }

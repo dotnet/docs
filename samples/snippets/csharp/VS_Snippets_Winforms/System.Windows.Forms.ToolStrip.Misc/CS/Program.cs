@@ -49,7 +49,7 @@ namespace WindowsApplication2
             tspLeft.Dock = DockStyle.Left;
             tspRight.Dock = DockStyle.Right;
 
-            // Create ToolStrip controls to move among the 
+            // Create ToolStrip controls to move among the
             // ToolStripPanel controls.
 
             // Create the "Top" ToolStrip control and add
@@ -86,7 +86,7 @@ namespace WindowsApplication2
             ((ToolStripDropDownMenu)(windowMenu.DropDown)).ShowImageMargin = false;
             ((ToolStripDropDownMenu)(windowMenu.DropDown)).ShowCheckMargin = true;
 
-            // Assign the ToolStripMenuItem that displays 
+            // Assign the ToolStripMenuItem that displays
             // the list of child forms.
             ms.MdiWindowListItem = windowMenu;
 
@@ -111,9 +111,9 @@ namespace WindowsApplication2
             this.Controls.Add(ms);
         }
 
-        // This event handler is invoked when 
+        // This event handler is invoked when
         // the "New" ToolStripMenuItem is clicked.
-        // It creates a new Form and sets its MdiParent 
+        // It creates a new Form and sets its MdiParent
         // property to the main form.
         void windowNewMenu_Click(object sender, EventArgs e)
         {
@@ -141,8 +141,8 @@ namespace WindowsApplication2
             ts.Items.Add("Oranges");
             ts.Items.Add("Pears");
             ts.Items.Add(
-                "Change Colors", 
-                null, 
+                "Change Colors",
+                null,
                 new EventHandler(ChangeColors_Click));
 
             // Create a new MenuStrip.
@@ -174,14 +174,14 @@ namespace WindowsApplication2
         // property for the ToolStrip control.
         void ChangeColors_Click(object sender, EventArgs e)
         {
-            ToolStripManager.Renderer = 
+            ToolStripManager.Renderer =
                 new ToolStripProfessionalRenderer(new CustomProfessionalColors());
         }
         // </snippet22>
     }
-    
+
     // <snippet30>
-    // This class defines the gradient colors for 
+    // This class defines the gradient colors for
     // the MenuStrip and the ToolStrip.
     class CustomProfessionalColors : ProfessionalColorTable
     {
@@ -205,7 +205,7 @@ namespace WindowsApplication2
 
     // <snippet40>
     // This code example demonstrates how to handle the Opening event.
-    // It also demonstrates dynamic item addition and dynamic 
+    // It also demonstrates dynamic item addition and dynamic
     // SourceControl determination with reuse.
     class Form3 : Form
     {
@@ -217,7 +217,7 @@ namespace WindowsApplication2
             // Create a new ContextMenuStrip control.
             fruitContextMenuStrip = new ContextMenuStrip();
 
-            // Attach an event handler for the 
+            // Attach an event handler for the
             // ContextMenuStrip control's Opening event.
             fruitContextMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(cms_Opening);
 
@@ -232,7 +232,7 @@ namespace WindowsApplication2
             // Dock the ToolStrip control to the top of the form.
             ts.Dock = DockStyle.Top;
 
-            // Assign the ContextMenuStrip control as the 
+            // Assign the ContextMenuStrip control as the
             // ToolStripDropDownButton control's DropDown menu.
             fruitToolStripDropDownButton.DropDown = fruitContextMenuStrip;
 
@@ -244,11 +244,11 @@ namespace WindowsApplication2
             // Dock the MenuStrip control to the top of the form.
             ms.Dock = DockStyle.Top;
 
-            // Assign the MenuStrip control as the 
+            // Assign the MenuStrip control as the
             // ToolStripMenuItem's DropDown menu.
             fruitToolStripMenuItem.DropDown = fruitContextMenuStrip;
 
-            // Assign the ContextMenuStrip to the form's 
+            // Assign the ContextMenuStrip to the form's
             // ContextMenuStrip property.
             this.ContextMenuStrip = fruitContextMenuStrip;
 
@@ -269,7 +269,7 @@ namespace WindowsApplication2
         // <snippet42>
         // This event handler is invoked when the ContextMenuStrip
         // control's Opening event is raised. It demonstrates
-        // dynamic item addition and dynamic SourceControl 
+        // dynamic item addition and dynamic SourceControl
         // determination with reuse.
         void cms_Opening(object sender, System.ComponentModel.CancelEventArgs e)
         {
@@ -298,7 +298,7 @@ namespace WindowsApplication2
             fruitContextMenuStrip.Items.Add("Oranges");
             fruitContextMenuStrip.Items.Add("Pears");
 
-            // Set Cancel to false. 
+            // Set Cancel to false.
             // It is optimized to true based on empty entry.
             e.Cancel = false;
         }
@@ -307,7 +307,7 @@ namespace WindowsApplication2
     // </snippet40>
 
     // <snippet50>
-    // This code example demonstrates using the Spring property 
+    // This code example demonstrates using the Spring property
     // to interactively center a ToolStripStatusLabel in a StatusStrip.
     class Form4 : Form
     {
@@ -336,7 +336,7 @@ namespace WindowsApplication2
         }
 
         // <snippet51>
-        // This event hadler is invoked when the 
+        // This event hadler is invoked when the
         // middleLabel control is clicked. It toggles
         // the value of the Spring property.
         void middleLabel_Click(object sender, EventArgs e)
@@ -345,8 +345,8 @@ namespace WindowsApplication2
             middleLabel.Spring ^= true;
 
             // Set the Text property according to the
-            // value of the Spring property. 
-            middleLabel.Text = 
+            // value of the Spring property.
+            middleLabel.Text =
                 middleLabel.Spring ? "Middle (Spring - True)" : "Middle (Spring - False)";
         }
         // </snippet51>
@@ -375,7 +375,7 @@ namespace WindowsApplication2
             ToolStripMenuItem noMargins = new ToolStripMenuItem("NoMargins");
 
             // Customize the DropDowns menus.
-            // This ToolStripMenuItem has an image margin 
+            // This ToolStripMenuItem has an image margin
             // and a check margin.
             bothMargins.DropDown = CreateCheckImageContextMenuStrip();
             ((ContextMenuStrip)bothMargins.DropDown).ShowImageMargin = true;
@@ -411,7 +411,7 @@ namespace WindowsApplication2
         }
         // </snippet61>
 
-        // This utility method creates a Bitmap for use in 
+        // This utility method creates a Bitmap for use in
         // a ToolStripMenuItem's image margin.
         internal Bitmap CreateSampleBitmap()
         {
@@ -426,8 +426,8 @@ namespace WindowsApplication2
 
                 // Set up the mouth geometry.
                 Point[] curvePoints = new Point[]{
-                    new Point(4,14), 
-                    new Point(16,24), 
+                    new Point(4,14),
+                    new Point(16,24),
                     new Point(28,14)};
 
                 // Draw the mouth.
@@ -443,7 +443,7 @@ namespace WindowsApplication2
 
         // <snippet62>
         // This utility method creates a ContextMenuStrip control
-        // that has four ToolStripMenuItems showing the four 
+        // that has four ToolStripMenuItems showing the four
         // possible combinations of image and check margins.
         internal ContextMenuStrip CreateCheckImageContextMenuStrip()
         {
@@ -452,27 +452,27 @@ namespace WindowsApplication2
 
             // Create a ToolStripMenuItem with a
             // check margin and an image margin.
-            ToolStripMenuItem yesCheckYesImage = 
+            ToolStripMenuItem yesCheckYesImage =
                 new ToolStripMenuItem("Check, Image");
             yesCheckYesImage.Checked = true;
             yesCheckYesImage.Image = CreateSampleBitmap();
 
             // Create a ToolStripMenuItem with no
             // check margin and with an image margin.
-            ToolStripMenuItem noCheckYesImage = 
+            ToolStripMenuItem noCheckYesImage =
                 new ToolStripMenuItem("No Check, Image");
             noCheckYesImage.Checked = false;
             noCheckYesImage.Image = CreateSampleBitmap();
 
             // Create a ToolStripMenuItem with a
             // check margin and without an image margin.
-            ToolStripMenuItem yesCheckNoImage = 
+            ToolStripMenuItem yesCheckNoImage =
                 new ToolStripMenuItem("Check, No Image");
             yesCheckNoImage.Checked = true;
 
             // Create a ToolStripMenuItem with no
             // check margin and no image margin.
-            ToolStripMenuItem noCheckNoImage = 
+            ToolStripMenuItem noCheckNoImage =
                 new ToolStripMenuItem("No Check, No Image");
             noCheckNoImage.Checked = false;
 
@@ -489,7 +489,7 @@ namespace WindowsApplication2
     // </snippet60>
 
     // <snippet70>
-    // This example demonstrates how to apply a 
+    // This example demonstrates how to apply a
     // custom professional renderer to an individual
     // ToolStrip or to the application as a whole.
     class Form6 : Form
@@ -566,12 +566,12 @@ namespace WindowsApplication2
         }
 
         // <snippet80>
-        // This event handler is invoked when 
+        // This event handler is invoked when
         // the "Apply Renderers" button is clicked.
         // Depending on the value selected in a ComboBox control,
         // it applies a custom renderer selectively to
         // individual MenuStrip or ToolStrip controls,
-        // or it applies a custom renderer to the 
+        // or it applies a custom renderer to the
         // application as a whole.
         void applyButton_Click(object sender, EventArgs e)
         {

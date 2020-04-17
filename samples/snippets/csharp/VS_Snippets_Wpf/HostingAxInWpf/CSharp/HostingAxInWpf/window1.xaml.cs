@@ -17,7 +17,7 @@ namespace HostingAxInWpf
         }
 
         //<snippet11>
-        private void Window_Loaded(object sender, RoutedEventArgs e) 
+        private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             // Create the interop host control.
             System.Windows.Forms.Integration.WindowsFormsHost host =

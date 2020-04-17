@@ -1,4 +1,4 @@
-﻿// <Snippet201> 
+﻿// <Snippet201>
 using System;
 using System.Windows.Automation;
 using System.Windows.Automation.Provider;
@@ -21,7 +21,7 @@ namespace CSClientProviderImplementation
 
             IntPtr hwnd = GetConsoleWindow();
 
-            // Get an AutomationElement that represents the window. 
+            // Get an AutomationElement that represents the window.
             AutomationElement elementWindow = AutomationElement.FromHandle(hwnd);
             Console.WriteLine("Found UI Automation client-side provider for:");
 
@@ -37,15 +37,15 @@ namespace CSClientProviderImplementation
     class UIAutomationClientSideProviders
     {
         /// <summary>
-        /// Implementation of the static ClientSideProviderDescriptionTable field. 
+        /// Implementation of the static ClientSideProviderDescriptionTable field.
         /// In this case,only a single provider is listed in the table.
         /// </summary>
-        public static ClientSideProviderDescription[] ClientSideProviderDescriptionTable = 
+        public static ClientSideProviderDescription[] ClientSideProviderDescriptionTable =
             { new ClientSideProviderDescription(
                 // Method that creates the provider object.
-                WindowProvider.Create,    
+                WindowProvider.Create,
                 // Class of window that will be served by the provider.
-                "ConsoleWindowClass") };  
+                "ConsoleWindowClass") };
     }
 
     class WindowProvider : IRawElementProviderSimple
@@ -73,8 +73,8 @@ namespace CSClientProviderImplementation
 
         #region IRawElementProviderSimple
 
-        // This is a skeleton implementation. The only real functionality at this stage 
-        // is to return the name of the element and the host window provider, which can 
+        // This is a skeleton implementation. The only real functionality at this stage
+        // is to return the name of the element and the host window provider, which can
         // supply other properties.
 
         ProviderOptions IRawElementProviderSimple.ProviderOptions

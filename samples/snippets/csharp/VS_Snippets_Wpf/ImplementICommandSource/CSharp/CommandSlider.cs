@@ -28,11 +28,11 @@ namespace SDKSamples
 
         public ICommand Command
         {
-            get 
+            get
             {
                 return (ICommand)GetValue(CommandProperty);
             }
-            set 
+            set
             {
                 SetValue(CommandProperty, value);
             }

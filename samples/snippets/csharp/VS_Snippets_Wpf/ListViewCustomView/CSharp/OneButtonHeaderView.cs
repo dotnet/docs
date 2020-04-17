@@ -26,7 +26,7 @@ namespace SDKSample
         {
           get
           {
-            return new ComponentResourceKey(this.GetType(), 
+            return new ComponentResourceKey(this.GetType(),
                              "OneButtonHeaderViewDSK");
           }
         }
@@ -35,7 +35,7 @@ namespace SDKSample
         {
           get
           {
-            return new ComponentResourceKey(this.GetType(), 
+            return new ComponentResourceKey(this.GetType(),
                             "OneButtonHeaderViewItemDSK");
           }
         }
@@ -80,7 +80,7 @@ namespace SDKSample
 
         Object IViewAutomationPeer.GetPattern(PatternInterface patternInterface)
         {
-            // we can invoke the banner button 
+            // we can invoke the banner button
             if (patternInterface == PatternInterface.Invoke)
             {
                 Button b = (Button)m_lv.Template.FindName("BannerButton", m_lv);

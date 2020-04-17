@@ -38,7 +38,7 @@ public class Form1 : System.Windows.Forms.Form
     private void dataGridView1_DataError(object sender,
         DataGridViewDataErrorEventArgs e)
     {
-        // If the data source raises an exception when a cell value is 
+        // If the data source raises an exception when a cell value is
         // commited, display an error message.
         if (e.Exception != null &&
             e.Context == DataGridViewDataErrorContexts.Commit)
@@ -55,8 +55,8 @@ public class Form1 : System.Windows.Forms.Form
             "Integrated Security=SSPI;Persist Security Info=False;" +
             "Initial Catalog=Northwind;Data Source=localhost;Packet Size=4096";
 
-        // Connect to the database and fill a data table, including the 
-        // schema information that contains the CustomerID column 
+        // Connect to the database and fill a data table, including the
+        // schema information that contains the CustomerID column
         // constraint.
         SqlDataAdapter adapter =
             new SqlDataAdapter(selectCommand, connectionString);

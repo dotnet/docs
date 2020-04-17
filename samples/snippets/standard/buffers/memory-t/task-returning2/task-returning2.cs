@@ -28,7 +28,7 @@ public class Example
             while (true)
             {
                 int value = Int32.Parse(Console.ReadLine());
-                if (value < 0) 
+                if (value < 0)
                     return;
 
                 int numCharsWritten = ToBuffer(value, span);
@@ -42,6 +42,6 @@ public class Example
         string strValue = value.ToString();
         int length = strValue.Length;
         strValue.AsSpan().CopyTo(span.Slice(0, length));
-        return length;    
+        return length;
     }
 }

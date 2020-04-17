@@ -45,7 +45,7 @@ namespace GitHubActivityReport
         private class progressStatus : IProgress<int>
         {
             Action<int> action;
-            public progressStatus(Action<int> progressAction) => 
+            public progressStatus(Action<int> progressAction) =>
                 action = progressAction;
 
             public void Report(int value) => action(value);
@@ -140,7 +140,7 @@ namespace GitHubActivityReport
                 {
                     return defaultValue;
                 }
-                
+
                 if (!string.IsNullOrWhiteSpace(error))
                 {
                     Console.WriteLine(error);

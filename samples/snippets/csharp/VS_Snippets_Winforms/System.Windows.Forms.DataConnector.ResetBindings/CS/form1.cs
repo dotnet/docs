@@ -75,7 +75,7 @@ namespace System_Windows_Forms_UpdateBinding
         //<snippet3>
         private void button1_Click(object sender, EventArgs e)
         {
-            // If items remain in the list, remove the first item. 
+            // If items remain in the list, remove the first item.
             if (states.Count > 0)
             {
                 states.RemoveAt(0);
@@ -92,18 +92,18 @@ namespace System_Windows_Forms_UpdateBinding
             Application.EnableVisualStyles();
             Application.Run(new Form1());
         }
-    
+
         // The State class to add to the ArrayList.
 		private class State
 		{
 			private string stateName;
-			public string Name 
+			public string Name
 			{
 				get {return stateName;}
 			}
 
 			private string stateCapital;
-			public string Capital 
+			public string Capital
 			{
 				get {return stateCapital;}
 			}

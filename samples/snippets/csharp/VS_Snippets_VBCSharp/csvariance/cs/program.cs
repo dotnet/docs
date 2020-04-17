@@ -17,7 +17,7 @@ namespace WindowsFormsApplication1
             //<Snippet1>
             IEnumerable<String> strings = new List<String>();
             IEnumerable<Object> objects = strings;
-            //</Snippet1>   
+            //</Snippet1>
 
             //<Snippet204>
             Action<object> actObj = x => Console.WriteLine("object: {0}", x);
@@ -52,30 +52,30 @@ namespace WindowsFormsApplication1
             //</Snippet103>
         }
 
-        static void SetObject(object o) { } 
+        static void SetObject(object o) { }
 
         static void Test2()
         {
             //<Snippet205>
-            // Assignment compatibility. 
+            // Assignment compatibility.
             string str = "test";
-            // An object of a more derived type is assigned to an object of a less derived type. 
+            // An object of a more derived type is assigned to an object of a less derived type.
             object obj = str;
 
-            // Covariance. 
+            // Covariance.
             IEnumerable<string> strings = new List<string>();
-            // An object that is instantiated with a more derived type argument 
-            // is assigned to an object instantiated with a less derived type argument. 
-            // Assignment compatibility is preserved. 
+            // An object that is instantiated with a more derived type argument
+            // is assigned to an object instantiated with a less derived type argument.
+            // Assignment compatibility is preserved.
             IEnumerable<object> objects = strings;
 
-            // Contravariance.           
-            // Assume that the following method is in the class: 
-            // static void SetObject(object o) { } 
+            // Contravariance.
+            // Assume that the following method is in the class:
+            // static void SetObject(object o) { }
             Action<object> actObject = SetObject;
-            // An object that is instantiated with a less derived type argument 
-            // is assigned to an object instantiated with a more derived type argument. 
-            // Assignment compatibility is reversed. 
+            // An object that is instantiated with a less derived type argument
+            // is assigned to an object instantiated with a more derived type argument.
+            // Assignment compatibility is reversed.
             Action<string> actString = actObject;
             //</Snippet205>
 
@@ -96,7 +96,7 @@ namespace n101
     class DerivedClass : BaseClass { }
 
     // Comparer class.
-    class BaseComparer : IEqualityComparer<BaseClass> 
+    class BaseComparer : IEqualityComparer<BaseClass>
     {
         public int GetHashCode(BaseClass baseInstance)
         {
@@ -113,7 +113,7 @@ namespace n101
         {
             IEqualityComparer<BaseClass> baseComparer = new BaseComparer();
 
-            // Implicit conversion of IEqualityComparer<BaseClass> to 
+            // Implicit conversion of IEqualityComparer<BaseClass> to
             // IEqualityComparer<DerivedClass>.
             IEqualityComparer<DerivedClass> childComparer = baseComparer;
         }
@@ -160,7 +160,7 @@ namespace n3
         void SetSomething(A sampleArg);
         void DoSomething<T>() where T : A;
         // The following statement generates a compiler error.
-        // A GetSomething();            
+        // A GetSomething();
     }
     //</Snippet6>
 
@@ -309,7 +309,7 @@ namespace n9
         {
             IEnumerable<Employee> employees = new List<Employee>();
 
-            // You can pass IEnumerable<Employee>, 
+            // You can pass IEnumerable<Employee>,
             // although the method expects IEnumerable<Person>.
 
             PrintFullName(employees);
@@ -336,11 +336,11 @@ namespace n10
     class PersonComparer : IEqualityComparer<Person>
     {
         public bool Equals(Person x, Person y)
-        {            
+        {
             if (Object.ReferenceEquals(x, y)) return true;
             if (Object.ReferenceEquals(x, null) ||
                 Object.ReferenceEquals(y, null))
-                return false;            
+                return false;
             return x.FirstName == y.FirstName && x.LastName == y.LastName;
         }
         public int GetHashCode(Person person)
@@ -363,7 +363,7 @@ namespace n10
                    new Employee() {FirstName = "Jeff", LastName = "Price"}
                 };
 
-            // You can pass PersonComparer, 
+            // You can pass PersonComparer,
             // which implements IEqualityComparer<Person>,
             // although the method expects IEqualityComparer<Employee>.
 
@@ -416,7 +416,7 @@ namespace n104
 
             // You can assign the dObject delegate
             // to the same lambda expression as dString delegate
-            // because of the variance support for 
+            // because of the variance support for
             // matching method signatures with delegate types.
             SampleGenericDelegate<Object> dObject = () => " ";
 
@@ -435,14 +435,14 @@ namespace n105
         //<Snippet105>
         // Type T is declared covariant by using the out keyword.
         public delegate T SampleGenericDelegate <out T>();
-        
+
         public static void Test()
         {
             SampleGenericDelegate <String> dString = () => " ";
-            
+
             // You can assign delegates to each other,
             // because the type T is declared covariant.
-            SampleGenericDelegate <Object> dObject = dString;           
+            SampleGenericDelegate <Object> dObject = dString;
         }
         //</Snippet105>
      }
@@ -464,14 +464,14 @@ namespace n106
             int i = 0;
             DInvariant<int> dInt = () => i;
             DVariant<int> dVariantInt = () => i;
-            
+
             // All of the following statements generate a compiler error
             // because type variance in generic parameters is not supported
             // for value types, even if generic type parameters are declared variant.
             // DInvariant<Object> dObject = dInt;
             // DInvariant<long> dLong = dInt;
             // DVariant<Object> dVariantObject = dVariantInt;
-            // DVariant<long> dVariantLong = dVariantInt;            
+            // DVariant<long> dVariantLong = dVariantInt;
         }
         //</Snippet106>
     }
@@ -501,17 +501,17 @@ namespace n12
         public static First AFirstRFirst(First first)
         { return new First(); }
 
-        // The return type is more derived 
+        // The return type is more derived
         // and the argument type is less derived.
         public static Second AFirstRSecond(First first)
         { return new Second(); }
         //</Snippet21>
-   
+
         //<Snippet22>
-        // Assigning a method with a matching signature 
+        // Assigning a method with a matching signature
         // to a non-generic delegate. No conversion is necessary.
         SampleDelegate dNonGeneric = ASecondRFirst;
-        // Assigning a method with a more derived return type 
+        // Assigning a method with a more derived return type
         // and less derived argument type to a non-generic delegate.
         // The implicit conversion is used.
         SampleDelegate dNonGenericConversion = AFirstRSecond;
@@ -519,7 +519,7 @@ namespace n12
         // Assigning a method with a matching signature to a generic delegate.
         // No conversion is necessary.
         SampleGenericDelegate<Second, First> dGeneric = ASecondRFirst;
-        // Assigning a method with a more derived return type 
+        // Assigning a method with a more derived return type
         // and less derived argument type to a generic delegate.
         // The implicit conversion is used.
         SampleGenericDelegate<Second, First> dGenericConversion = AFirstRSecond;
@@ -551,8 +551,8 @@ namespace n13
             // but you can assign it a method that returns Employee.
             Func<String, Person> findPerson = FindByTitle;
 
-            // You can also assign a delegate 
-            // that returns a more derived type 
+            // You can also assign a delegate
+            // that returns a more derived type
             // to a delegate that returns a less derived type.
             findPerson = findEmployee;
         }
@@ -578,14 +578,14 @@ namespace n14
             // Create an instance of the delegate without using variance.
             Action<Person> addPersonToContacts = AddToContacts;
 
-            // The Action delegate expects 
+            // The Action delegate expects
             // a method that has an Employee parameter,
             // but you can assign it a method that has a Person parameter
             // because Employee derives from Person.
             Action<Employee> addEmployeeToContacts = AddToContacts;
 
-            // You can also assign a delegate 
-            // that accepts a less derived parameter to a delegate 
+            // You can also assign a delegate
+            // that accepts a less derived parameter to a delegate
             // that accepts a more derived parameter.
             addEmployeeToContacts = addPersonToContacts;
         }

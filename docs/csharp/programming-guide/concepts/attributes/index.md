@@ -75,7 +75,7 @@ The list of possible `target` values is shown in the following table.
 
 You would specify the `field` target value to apply an attribute to the backing field created for an [auto-implemented property](../../../properties.md).
 
-The following example shows how to apply attributes to assemblies and modules. For more information, see [Common Attributes (C#)](common-attributes.md).
+The following example shows how to apply attributes to assemblies and modules. For more information, see [Common Attributes (C#)](../../../language-reference/attributes/global.md).
 
 ```csharp
 using System;
@@ -114,7 +114,7 @@ For more information, see:
 - [Creating Custom Attributes (C#)](creating-custom-attributes.md)  
 - [Accessing Attributes by Using Reflection (C#)](accessing-attributes-by-using-reflection.md)  
 - [How to create a C/C++ union by using attributes (C#)](how-to-create-a-c-cpp-union-by-using-attributes.md)  
-- [Common Attributes (C#)](common-attributes.md)  
+- [Common Attributes (C#)](../../../language-reference/attributes/global.md)  
 - [Caller Information (C#)](../../../language-reference/attributes/caller-information.md)  
 
 ## See also

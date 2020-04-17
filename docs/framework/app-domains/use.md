@@ -51,7 +51,7 @@ Represents an application domain. Provides methods for creating and controlling 
 [Assemblies in .NET](../../standard/assembly/index.md)  
 Provides an overview of the functions performed by assemblies.  
   
-[Programming with Assemblies](../../standard/assembly/program.md)  
+[Programming with Assemblies](../../standard/assembly/index.md)  
 Describes how to create, sign, and set attributes on assemblies.  
   
 [Emitting Dynamic Methods and Assemblies](../reflection-and-codedom/emitting-dynamic-methods-and-assemblies.md)  

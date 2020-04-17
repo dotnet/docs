@@ -111,8 +111,8 @@ For more information about some of these settings, see the [Middle ground betwee
 
 - Limits the number of heaps created by the garbage collector.
 - Applies to server garbage collection only.
-- If GC processor affinity is enabled, which is the default, the heap count setting affinitizes `n` GC heaps/threads to the first `n` processors. (Use the affinitize mask or affinitize ranges settings to specify exactly which processors to affinitize.)
-- If GC processor affinity is disabled, this setting limits the number of GC heaps.
+- If [GC processor affinity](#systemgcnoaffinitizecomplus_gcnoaffinitize) is enabled, which is the default, the heap count setting affinitizes `n` GC heaps/threads to the first `n` processors. (Use the [affinitize mask](#systemgcheapaffinitizemaskcomplus_gcheapaffinitizemask) or [affinitize ranges](#systemgcgcheapaffinitizerangescomplus_gcheapaffinitizeranges) settings to specify exactly which processors to affinitize.)
+- If [GC processor affinity](#systemgcnoaffinitizecomplus_gcnoaffinitize) is disabled, this setting limits the number of GC heaps.
 - For more information, see the [GCHeapCount remarks](../../framework/configure-apps/file-schema/runtime/gcheapcount-element.md#remarks).
 
 | | Setting name | Values | Version introduced |
@@ -139,7 +139,7 @@ Example:
 ### System.GC.HeapAffinitizeMask/COMPlus_GCHeapAffinitizeMask
 
 - Specifies the exact processors that garbage collector threads should use.
-- If processor affinity is disabled by setting `System.GC.NoAffinitize` to `true`, this setting is ignored.
+- If [GC processor affinity](#systemgcnoaffinitizecomplus_gcnoaffinitize) is disabled, this setting is ignored.
 - Applies to server garbage collection only.
 - The value is a bit mask that defines the processors that are available to the process. For example, a decimal value of 1023 (or a hexadecimal value of 0x3FF or 3FF if you're using the environment variable) is 0011 1111 1111 in binary notation. This specifies that the first 10 processors are to be used. To specify the next 10 processors, that is, processors 10-19, specify a decimal value of 1047552 (or a hexadecimal value of 0xFFC00 or FFC00), which is equivalent to a binary value of 1111 1111 1100 0000 0000.
 
@@ -164,9 +164,9 @@ Example:
 ### System.GC.GCHeapAffinitizeRanges/COMPlus_GCHeapAffinitizeRanges
 
 - Specifies the list of processors to use for garbage collector threads.
-- This setting is similar to `System.GC.HeapAffinitizeMask`, except it allows you to specify more than 64 processors.
+- This setting is similar to [System.GC.HeapAffinitizeMask](#systemgcheapaffinitizemaskcomplus_gcheapaffinitizemask), except it allows you to specify more than 64 processors.
 - For Windows operating systems, prefix the processor number or range with the corresponding [CPU group](/windows/win32/procthread/processor-groups), for example, "0:1-10,0:12,1:50-52,1:70".
-- If processor affinity is disabled by setting `System.GC.NoAffinitize` to `true`, this setting is ignored.
+- If [GC processor affinity](#systemgcnoaffinitizecomplus_gcnoaffinitize) is disabled, this setting is ignored.
 - Applies to server garbage collection only.
 - For more information, see [Making CPU configuration better for GC on machines with > 64 CPUs](https://devblogs.microsoft.com/dotnet/making-cpu-configuration-better-for-gc-on-machines-with-64-cpus/) on Maoni Stephens' blog.
 
@@ -233,6 +233,11 @@ Example:
 ### System.GC.HeapHardLimit/COMPlus_GCHeapHardLimit
 
 - Specifies the maximum commit size, in bytes, for the GC heap and GC bookkeeping.
+- This setting only applies to 64-bit computers.
+- The default value, which only applies in certain cases, is the lesser of 20 MB or 75% of the memory limit on the container. The default value applies if:
+
+  - The process is running inside a container that has a specified memory limit.
+  - [System.GC.HeapHardLimitPercent](#systemgcheaphardlimitpercentcomplus_gcheaphardlimitpercent) is not set.
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |
@@ -256,7 +261,14 @@ Example:
 
 ### System.GC.HeapHardLimitPercent/COMPlus_GCHeapHardLimitPercent
 
-- Specifies the GC heap usage as a percentage of the total memory.
+- Specifies the allowable GC heap usage as a percentage of the total physical memory.
+- If [System.GC.HeapHardLimit](#systemgcheaphardlimitcomplus_gcheaphardlimit) is also set, this setting is ignored.
+- This setting only applies to 64-bit computers.
+- If the process is running inside a container that has a specified memory limit, the percentage is calculated as a percentage of that memory limit.
+- The default value, which only applies in certain cases, is the lesser of 20 MB or 75% of the memory limit on the container. The default value applies if:
+
+  - The process is running inside a container that has a specified memory limit.
+  - [System.GC.HeapHardLimit](#systemgcheaphardlimitcomplus_gcheaphardlimit) is not set.
 
 | | Setting name | Values | Version introduced |
 | - | - | - | - |

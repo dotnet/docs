@@ -15,8 +15,10 @@ ms.date: 02/14/2020
 
 ```dotnetcli
 dotnet build-server shutdown [--msbuild] [--razor] [--vbcscompiler]
-dotnet build-server shutdown [-h|--help]
-dotnet build-server [-h|--help]
+
+dotnet build-server shutdown -h|--help
+
+dotnet build-server -h|--help
 ```
 
 ## Commands

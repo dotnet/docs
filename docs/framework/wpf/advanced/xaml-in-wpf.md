@@ -14,7 +14,7 @@ ms.assetid: 5d858575-a83b-42df-ad3f-047ed2d6e3c8
   
 ## In This Section  
 
-[XAML Overview (WPF)](xaml-overview-wpf.md)  
+[XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)  
 [XAML Syntax In Detail](xaml-syntax-in-detail.md)  
 [Code-Behind and XAML in WPF](code-behind-and-xaml-in-wpf.md)  
 [XAML and Custom Classes for WPF](xaml-and-custom-classes-for-wpf.md)  

@@ -117,7 +117,7 @@ The following example sets the <xref:System.Windows.Controls.ContentControl.Cont
 > [!NOTE]
 > Bindings are treated as a local value, which means that if you set another local value, you will eliminate the binding. For details, see [Dependency Property Value Precedence](dependency-property-value-precedence.md).
 
-Dependency properties, or the <xref:System.Windows.DependencyObject> class, do not natively support <xref:System.ComponentModel.INotifyPropertyChanged> for purposes of producing notifications of changes in <xref:System.Windows.DependencyObject> source property value for data binding operations. For more information on how to create properties for use in data binding that can report changes to a data binding target, see [Data Binding Overview](../data/data-binding-overview.md).
+Dependency properties, or the <xref:System.Windows.DependencyObject> class, do not natively support <xref:System.ComponentModel.INotifyPropertyChanged> for purposes of producing notifications of changes in <xref:System.Windows.DependencyObject> source property value for data binding operations. For more information on how to create properties for use in data binding that can report changes to a data binding target, see [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md).
 
 ### Styles
 Styles and templates are two of the chief motivating scenarios for using dependency properties. Styles are particularly useful for setting properties that define application [!INCLUDE[TLA#tla_ui](../../../../includes/tlasharptla-ui-md.md)]. Styles are typically defined as resources in XAML. Styles interact with the property system because they typically contain "setters" for particular properties, as well as "triggers" that change a property value based on the real-time value for another property.
@@ -128,7 +128,7 @@ The following example creates a simple style (which would be defined inside a <x
 
 [!code-xaml[PropertiesOvwSupport#SimpleStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/PropertiesOvwSupport/CSharp/page3.xaml#simplestyle)]
 
-For more information, see [Styling and Templating](../controls/styling-and-templating.md).
+For more information, see [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md).
 
 ### Animations
 Dependency properties can be animated. When an animation is applied and is running, the animated value operates at a higher precedence than any value (such as a local value) that the property otherwise has.

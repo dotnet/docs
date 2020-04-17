@@ -5,7 +5,7 @@ using System;
 public class Info : Attribute
 {
    private string information;
-   
+
    public Info(string info)
    {
       information = info;
@@ -16,14 +16,14 @@ public class Info : Attribute
 public class InfoAttribute : Attribute
 {
    private string information;
-   
+
    public InfoAttribute(string info)
    {
       information = info;
    }
 }
 
-[Info("A simple executable.")] // Generates compiler error CS1614. Ambiguous Info and InfoAttribute. 
+[Info("A simple executable.")] // Generates compiler error CS1614. Ambiguous Info and InfoAttribute.
 // Prepend '@' to select 'Info'. Specify the full name 'InfoAttribute' to select it.
 public class Example
 {

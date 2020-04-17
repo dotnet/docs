@@ -129,7 +129,7 @@ namespace NorthwindService
             SubmitChanges();
         }
 
-        // Returns the actual instance of the resource represented 
+        // Returns the actual instance of the resource represented
         // by the resource object.
         object IUpdatable.ResolveResource(object resource)
         {

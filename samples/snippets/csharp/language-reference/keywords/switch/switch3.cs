@@ -17,11 +17,11 @@ public class Example
             Console.WriteLine("The color is green");
             break;
          case Color.Blue:
-            Console.WriteLine("The color is blue");   
+            Console.WriteLine("The color is blue");
             break;
          default:
             Console.WriteLine("The color is unknown.");
-            break;   
+            break;
       }
    }
 }

@@ -33,7 +33,7 @@ namespace operators
             // <SnippetWithoutParameterList>
             Action greet = delegate { Console.WriteLine("Hello!"); };
             greet();
-            
+
             Action<int, double> introduce = delegate { Console.WriteLine("This is world!"); };
             introduce(42, 2.7);
 

@@ -20,7 +20,7 @@ namespace Examples
         }
 
         //<snippet1>
-        // This method returns a custom binding created from a WSHttpBinding. Alter the method 
+        // This method returns a custom binding created from a WSHttpBinding. Alter the method
         // to use the appropriate binding for your service, with the appropriate settings.
         public static Binding CreateCustomBinding(TimeSpan clockSkew)
         {
@@ -30,7 +30,7 @@ namespace Examples
                 myCustomBinding.Elements.Find<SymmetricSecurityBindingElement>();
             security.LocalClientSettings.MaxClockSkew = clockSkew;
             security.LocalServiceSettings.MaxClockSkew = clockSkew;
-            // Get the System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters 
+            // Get the System.ServiceModel.Security.Tokens.SecureConversationSecurityTokenParameters
             SecureConversationSecurityTokenParameters secureTokenParams =
                 (SecureConversationSecurityTokenParameters)security.ProtectionTokenParameters;
             // From the collection, get the bootstrap element.
@@ -40,12 +40,12 @@ namespace Examples
             bootstrap.LocalServiceSettings.MaxClockSkew = clockSkew;
             return myCustomBinding;
         }
-        
+
         private void Run()
         {
-            // Create a custom binding using the method defined above. The MaxClockSkew is set to 30 minutes. 
+            // Create a custom binding using the method defined above. The MaxClockSkew is set to 30 minutes.
             Binding customBinding= CreateCustomBinding(TimeSpan.FromMinutes(30));
-            
+
             // Create a ServiceHost instance, and add a metadata endpoint.
             // NOTE  When using Visual Studio, you must run as administrator.
             Uri baseUri = new Uri("http://localhost:1008/");
@@ -56,7 +56,7 @@ namespace Examples
 
             // Add an endpoint using the binding, and open the service.
             sh.AddServiceEndpoint(typeof(ICalculator), customBinding, "myCalculator");
-           
+
             sh.Open();
             Console.WriteLine("Listening...");
             Console.ReadLine();

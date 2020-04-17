@@ -10,7 +10,7 @@ public class Example
       string output = null;
       output = "Time of Travel: " + duration.ToString("%d") + " days";
       Console.WriteLine(output);
-      output = "Time of Travel: " + duration.ToString(@"dd\.hh\:mm\:ss"); 
+      output = "Time of Travel: " + duration.ToString(@"dd\.hh\:mm\:ss");
       Console.WriteLine(output);
 
       Console.WriteLine("Time of Travel: {0:%d} day(s)", duration);

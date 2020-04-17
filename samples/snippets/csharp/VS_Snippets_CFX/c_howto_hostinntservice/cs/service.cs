@@ -86,11 +86,11 @@ namespace Microsoft.ServiceModel.Samples
                 serviceHost.Close();
             }
 
-            // Create a ServiceHost for the CalculatorService type and 
+            // Create a ServiceHost for the CalculatorService type and
             // provide the base address.
             serviceHost = new ServiceHost(typeof(CalculatorService));
 
-            // Open the ServiceHostBase to create listeners and start 
+            // Open the ServiceHostBase to create listeners and start
             // listening for messages.
             serviceHost.Open();
         }
@@ -109,7 +109,7 @@ namespace Microsoft.ServiceModel.Samples
     }
 
     // <Snippet6>
-    // Provide the ProjectInstaller class which allows 
+    // Provide the ProjectInstaller class which allows
     // the service to be installed by the Installutil.exe tool
     [RunInstaller(true)]
     public class ProjectInstaller : Installer
@@ -127,6 +127,6 @@ namespace Microsoft.ServiceModel.Samples
             Installers.Add(service);
         }
     }
-    // </Snippet6>  
+    // </Snippet6>
 }
 // </Snippet8>

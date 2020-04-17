@@ -12,15 +12,15 @@ public class IntervalArithmetic
       // Instantiate DateTimeOffset value to have correct CST offset
       try
       {
-         DateTimeOffset centralTime1 = new DateTimeOffset(generalTime, 
+         DateTimeOffset centralTime1 = new DateTimeOffset(generalTime,
                     TimeZoneInfo.FindSystemTimeZoneById(tzName).GetUtcOffset(generalTime));
-      
-         // Add two and a half hours      
+
+         // Add two and a half hours
          DateTimeOffset centralTime2 = centralTime1.Add(twoAndAHalfHours);
          // Display result
-         Console.WriteLine("{0} + {1} hours = {2}", centralTime1, 
-                                                    twoAndAHalfHours.ToString(), 
-                                                    centralTime2);  
+         Console.WriteLine("{0} + {1} hours = {2}", centralTime1,
+                                                    twoAndAHalfHours.ToString(),
+                                                    centralTime2);
       }
       catch (TimeZoneNotFoundException)
       {

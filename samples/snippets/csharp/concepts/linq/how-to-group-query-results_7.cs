@@ -2,7 +2,7 @@
         {
             var queryHighScoreGroups =
                 from student in students
-                group student by new { FirstLetter = student.LastName[0], 
+                group student by new { FirstLetter = student.LastName[0],
                     Score = student.ExamScores[0] > 85 } into studentGroup
                 orderby studentGroup.Key.FirstLetter
                 select studentGroup;
@@ -18,7 +18,7 @@
                 }
             }
         }
-        
+
         /* Output:
             Group and order by a compound key:
             Name starts with A who scored more than 85

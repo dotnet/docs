@@ -26,7 +26,7 @@ namespace InRefOutModifier
             // </Snippet1>
         }
     }
-    
+
     // <Snippet2>
     class InOverloadExample
     {

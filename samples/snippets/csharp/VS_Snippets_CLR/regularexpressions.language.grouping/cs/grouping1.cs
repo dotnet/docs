@@ -9,7 +9,7 @@ public class Example
       string pattern = @"(\w+)\s(\1)";
       string input = "He said that that was the the correct answer.";
       foreach (Match match in Regex.Matches(input, pattern, RegexOptions.IgnoreCase))
-         Console.WriteLine("Duplicate '{0}' found at positions {1} and {2}.", 
+         Console.WriteLine("Duplicate '{0}' found at positions {1} and {2}.",
                            match.Groups[1].Value, match.Groups[1].Index, match.Groups[2].Index);
    }
 }

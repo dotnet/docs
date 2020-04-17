@@ -13,11 +13,11 @@ public class Class1
       // Open the NETFramework key
       Microsoft.Win32.RegistryKey nf = lm.CreateSubKey(@"Software\Microsoft\.NETFramework");
       // Set the value to 1. This overwrites any existing setting.
-      nf.SetValue("String_LegacyCompareMode", 1, 
+      nf.SetValue("String_LegacyCompareMode", 1,
                   Microsoft.Win32.RegistryValueKind.DWord);
       // </Snippet16>
    }
-   
+
    // <Snippet17>
    private static bool IsStringLegacyCompareMode()
    {
@@ -25,7 +25,7 @@ public class Class1
       // Open the NETFramework key
       Microsoft.Win32.RegistryKey nf = lm.OpenSubKey(@"Software\Microsoft\.NETFramework");
       if (nf == null) return false;
-         
+
       // Get the String_LegacyCompareMode setting.
       return (bool) nf.GetValue("String_LegacyCompareMode", 0);
    }

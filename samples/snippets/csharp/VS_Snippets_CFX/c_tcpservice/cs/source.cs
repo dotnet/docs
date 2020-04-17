@@ -48,8 +48,8 @@ namespace TcpService
             // shown here.
             ServiceHost sh = new ServiceHost(typeof(Calculator), baseAddresses);
 
-            // Add an endpoint to the service. Insert the thumbprint of an X.509 
-            // certificate found on your computer. 
+            // Add an endpoint to the service. Insert the thumbprint of an X.509
+            // certificate found on your computer.
             Type c = typeof(ICalculator);
             sh.AddServiceEndpoint(c, b, "MyCalculator");
             sh.Credentials.ServiceCertificate.SetCertificate(
@@ -61,7 +61,7 @@ namespace TcpService
             // This next line is optional. It specifies that the client's certificate
             // does not have to be issued by a trusted authority, but can be issued
             // by a peer if it is in the Trusted People store. Do not use this setting
-            // for production code. The default is PeerTrust, which specifies that 
+            // for production code. The default is PeerTrust, which specifies that
             // the certificate must originate from a trusted certificate authority.
 
             // sh.Credentials.ClientCertificate.Authentication.CertificateValidationMode =
@@ -117,8 +117,8 @@ namespace TcpService
             // shown here.
             ServiceHost sh = new ServiceHost(typeof(Calculator), baseAddresses);
 
-            // Add an endpoint to the service. The code to define the service 
-            // type (ICalculator) is not shown here. The code also requires 
+            // Add an endpoint to the service. The code to define the service
+            // type (ICalculator) is not shown here. The code also requires
             // you to insert the thumbprint of an X.509 certificate on your
             // computer. The SetCertificate method specifies where the certificate
             // is stored, and how to find it, as well as the value to find.
@@ -200,7 +200,7 @@ namespace TcpService
             // Create a binding using Transport and a certificate.
             NetTcpBinding b = new NetTcpBinding();
             b.Security.Mode = SecurityMode.Transport;
-            b.Security.Transport.ClientCredentialType = 
+            b.Security.Transport.ClientCredentialType =
                 TcpClientCredentialType.Certificate;
 
             // Create an EndPointAddress.
@@ -232,7 +232,7 @@ namespace TcpService
             {
                 Console.WriteLine(exc.Message);
                 Console.ReadLine();
-            }          
+            }
             //</snippet4>
         }
     }

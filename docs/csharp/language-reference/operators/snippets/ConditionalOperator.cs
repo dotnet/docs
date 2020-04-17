@@ -49,7 +49,7 @@ namespace operators
         {
             // <SnippetCompareWithIf>
             int input = new Random().Next(-5, 5);
-            
+
             string classify;
             if (input >= 0)
             {

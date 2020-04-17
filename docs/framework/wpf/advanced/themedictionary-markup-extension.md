@@ -59,7 +59,7 @@ Provides a way for custom control authors or applications that integrate third-p
   
 ## See also
 
-- [Styling and Templating](../controls/styling-and-templating.md)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)
 - [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)
 - [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)
 - [WPF Application Resource, Content, and Data Files](../app-development/wpf-application-resource-content-and-data-files.md)

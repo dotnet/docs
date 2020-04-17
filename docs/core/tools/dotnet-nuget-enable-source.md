@@ -14,8 +14,9 @@ ms.date: 03/20/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet nuget enable source <NAME> [--configfile]
-dotnet nuget enable source [-h|--help]
+dotnet nuget enable source <NAME> [--configfile <FILE>]
+
+dotnet nuget enable source -h|--help
 ```
 
 ## Description
@@ -30,7 +31,7 @@ The `dotnet nuget enable source` command enables an existing source in your NuGe
 
 ## Options
 
-- **`--configfile`**
+- **`--configfile <FILE>`**
 
   The NuGet configuration file. If specified, only the settings from this file will be used. If not specified, the hierarchy of configuration files from the current directory will be used. For more information, see [Common NuGet Configurations](https://docs.microsoft.com/nuget/consume-packages/configuring-nuget-behavior).
 

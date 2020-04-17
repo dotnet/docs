@@ -4,7 +4,7 @@ description: A guide on which implementation of .NET you should consider when bu
 author: cartermp
 ms.date: 06/19/2018
 ---
-# Choosing between .NET Core and .NET Framework for server apps
+# Choose between .NET Core and .NET Framework for server apps
 
 There are two supported implementations for building server-side applications with .NET: .NET Framework and .NET Core. Both share many of the same components and you can share code across the two. However, there are fundamental differences between the two and your choice depends on what you want to accomplish.  This article provides guidance on when to use each.
 
@@ -97,7 +97,7 @@ Some Microsoft or third-party platforms don’t support .NET Core. Some Azure se
 ## See also
 
 - [Choose between ASP.NET and ASP.NET Core](/aspnet/core/choose-aspnet-framework)
-- [ASP.NET Core targeting .NET Framework](/aspnet/core#aspnet-core-targeting-net-framework)
+- [ASP.NET Core targeting .NET Framework](/aspnet/core/introduction-to-aspnet-core#aspnet-core-targeting-net-framework)
 - [Target frameworks](frameworks.md)
 - [.NET Core Guide](../core/index.yml)
 - [Porting from .NET Framework to .NET Core](../core/porting/index.md)

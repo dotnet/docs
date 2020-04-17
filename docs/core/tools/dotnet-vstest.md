@@ -14,11 +14,15 @@ ms.date: 02/27/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet vstest [<TEST_FILE_NAMES>] [--Blame] [--Diag]
-    [--Framework] [--InIsolation] [-lt|--ListTests] [--logger]
-    [--Parallel] [--ParentProcessId] [--Platform] [--Port]
-    [--ResultsDirectory] [--Settings] [--TestAdapterPath]
-    [--TestCaseFilter] [--Tests] [[--] <args>...]] [-?|--Help]
+dotnet vstest [<TEST_FILE_NAMES>] [--Blame] [--Diag <PATH_TO_LOG_FILE>]
+    [--Framework <FRAMEWORK>] [--InIsolation] [-lt|--ListTests <FILE_NAME>]
+    [--logger <LOGGER_URI/FRIENDLY_NAME>] [--Parallel]
+    [--ParentProcessId <PROCESS_ID>] [--Platform] <PLATFORM_TYPE>
+    [--Port <PORT>] [--ResultsDirectory<PATH>] [--Settings <SETTINGS_FILE>]
+    [--TestAdapterPath <PATH>] [--TestCaseFilter <EXPRESSION>]
+    [--Tests <TEST_NAMES>] [[--] <args>...]]
+
+dotnet vstest -?|--Help
 ```
 
 ## Description
@@ -37,11 +41,11 @@ The `dotnet-vstest` command runs the `VSTest.Console` command-line application t
 
   Runs the tests in blame mode. This option is helpful in isolating the problematic tests causing test host to crash. It creates an output file in the current directory as *Sequence.xml* that captures the order of tests execution before the crash.
 
-- **`--Diag <Path to log file>`**
+- **`--Diag <PATH_TO_LOG_FILE>`**
 
   Enables verbose logs for the test platform. Logs are written to the provided file.
 
-- **`--Framework <Framework Version>`**
+- **`--Framework <FRAMEWORK>`**
 
   Target .NET Framework version used for test execution. Examples of valid values are `.NETFramework,Version=v4.6` or `.NETCoreApp,Version=v1.0`. Other supported values are `Framework40`, `Framework45`, `FrameworkCore10`, and `FrameworkUap10`.
 
@@ -49,11 +53,11 @@ The `dotnet-vstest` command runs the `VSTest.Console` command-line application t
 
   Runs the tests in an isolated process. This makes *vstest.console.exe* process less likely to be stopped on an error in the tests, but tests may run slower.
 
-- **`-lt|--ListTests <File Name>`**
+- **`-lt|--ListTests <FILE_NAME>`**
 
   Lists all discovered tests from the given test container.
 
-- **`--logger <Logger Uri/FriendlyName>`**
+- **`--logger <LOGGER_URI/FRIENDLY_NAME>`**
 
   Specify a logger for test results.
 
@@ -79,35 +83,35 @@ The `dotnet-vstest` command runs the `VSTest.Console` command-line application t
 
   Run tests in parallel. By default, all available cores on the machine are available for use. Specify an explicit number of cores by setting the `MaxCpuCount` property under the `RunConfiguration` node in the *runsettings* file.
 
-- **`--ParentProcessId <ParentProcessId>`**
+- **`--ParentProcessId <PROCESS_ID>`**
 
   Process ID of the parent process responsible for launching the current process.
 
-- **`--Platform <Platform type>`**
+- **`--Platform <PLATFORM_TYPE>`**
 
   Target platform architecture used for test execution. Valid values are `x86`, `x64`, and `ARM`.
 
-- **`--Port <Port>`**
+- **`--Port <PORT>`**
 
   Specifies the port for the socket connection and receiving the event messages.
 
-- **`--ResultsDirectory:<PathToResulsDirectory>`**
+- **`--ResultsDirectory:<PATH>`**
 
   Test results directory will be created in specified path if not exists.
 
-- **`--Settings <Settings File>`**
+- **`--Settings <SETTINGS_FILE>`**
 
   Settings to use when running tests.
 
-- **`--TestAdapterPath`**
+- **`--TestAdapterPath <PATH>`**
 
   Use custom test adapters from a given path (if any) in the test run.
 
-- **`--TestCaseFilter <Expression>`**
+- **`--TestCaseFilter <EXPRESSION>`**
 
-  Run tests that match the given expression. `<Expression>` is of the format `<property>Operator<value>[|&<Expression>]`, where Operator is one of `=`, `!=`, or `~`. Operator `~` has 'contains' semantics and is applicable for string properties like `DisplayName`. Parentheses `()` are used to group subexpressions. For more information, see [TestCase filter](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).
+  Run tests that match the given expression. `<EXPRESSION>` is of the format `<property>Operator<value>[|&<EXPRESSION>]`, where Operator is one of `=`, `!=`, or `~`. Operator `~` has 'contains' semantics and is applicable for string properties like `DisplayName`. Parentheses `()` are used to group subexpressions. For more information, see [TestCase filter](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md).
 
-- **`--Tests <Test Names>`**
+- **`--Tests <TEST_NAMES>`**
 
   Run tests with names that match the provided values. Separate multiple values with commas.
 

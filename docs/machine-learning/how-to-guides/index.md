@@ -13,7 +13,7 @@ In the How to section of the ML.NET Guide, you can find quick answers to common 
 
 ### Prepare the data
 
-* [Preprocess training data with normalizers to use in data processing.](normalizers-preprocess-data-ml-net.md)
+* [Preprocess training data with normalizers to use in data processing.](prepare-data-ml-net.md)
 
 ## Train the model
 

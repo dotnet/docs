@@ -10,17 +10,17 @@ public class Temperature : IFormattable
    {
       this.m_Temp = temperature;
    }
-   
+
    public decimal Celsius
    {
       get { return this.m_Temp; }
    }
-   
+
    public decimal Kelvin
    {
-      get { return this.m_Temp + 273.15m; }   
+      get { return this.m_Temp + 273.15m; }
    }
-   
+
    public decimal Fahrenheit
    {
       get { return Math.Round((decimal) this.m_Temp * 9 / 5 + 32, 2); }
@@ -30,13 +30,13 @@ public class Temperature : IFormattable
    {
       return this.ToString("G", null);
    }
-   
+
    public string ToString(string format)
    {
       return this.ToString(format, null);
    }
-   
-   public string ToString(string format, IFormatProvider provider)  
+
+   public string ToString(string format, IFormatProvider provider)
    {
       // Handle null or empty arguments.
       if (String.IsNullOrEmpty(format))
@@ -46,7 +46,7 @@ public class Temperature : IFormattable
 
       if (provider == null)
          provider = NumberFormatInfo.CurrentInfo;
-            
+
       switch (format)
       {
          // Convert temperature to Fahrenheit and return string.
@@ -61,7 +61,7 @@ public class Temperature : IFormattable
             return this.Celsius.ToString("N2", provider) + "°C";
          default:
             throw new FormatException(String.Format("The '{0}' format string is not supported.", format));
-      }      
+      }
    }
 }
 // </Snippet12>

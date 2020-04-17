@@ -14,7 +14,7 @@ public class Example
       ShowDayInfo();
       Console.WriteLine();
       Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-GB");
-      ShowDayInfo(); 
+      ShowDayInfo();
    }
 
    private static void ShowDayInfo()
@@ -28,7 +28,7 @@ public class Example
 //       Date: 11. listopada 2012.
 //          Sunrise: 7:06:00
 //          Sunset:  18:19:00
-//       
+//
 //       Date: 11 October 2012
 //          Sunrise: 07:06:00
 //          Sunset:  18:19:00

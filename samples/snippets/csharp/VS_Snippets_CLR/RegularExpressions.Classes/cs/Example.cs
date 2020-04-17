@@ -26,9 +26,9 @@ public class Example
     {
         // <Snippet1>
         // Declare object variable of type Regex.
-        Regex r; 
+        Regex r;
         // Create a Regex object and define its regular expression.
-        r = new Regex(@"\s2000"); 
+        r = new Regex(@"\s2000");
         // </Snippet1>
     }
 
@@ -36,16 +36,16 @@ public class Example
     {
         // <Snippet2>
         // Create a new Regex object.
-        var r = new Regex("abc"); 
+        var r = new Regex("abc");
         // Find a single match in the string.
-        Match m = r.Match("123abc456"); 
-        if (m.Success) 
+        Match m = r.Match("123abc456");
+        if (m.Success)
         {
-            // Print out the character position where a match was found. 
+            // Print out the character position where a match was found.
             Console.WriteLine("Found match at position " + m.Index);
         }
        // The example displays the following output:
-       //       Found match at position 3      
+       //       Found match at position 3
        // </Snippet2>
     }
 
@@ -60,14 +60,14 @@ public class Example
         var r = new Regex("abc");
         // Use the Matches method to find all matches in the input string.
         mc = r.Matches("123abc4abcd");
-        // Loop through the match collection to retrieve all 
+        // Loop through the match collection to retrieve all
         // matches and positions.
-        for (int i = 0; i < mc.Count; i++) 
+        for (int i = 0; i < mc.Count; i++)
         {
             // Add the match string to the string array.
             results.Add(mc[i].Value);
             // Record the character position where the match was found.
-            matchposition.Add(mc[i].Index);   
+            matchposition.Add(mc[i].Index);
         }
         // List the results.
         for (int ctr = 0; ctr <= results.Count - 1; ctr++)
@@ -83,7 +83,7 @@ public class Example
     {
         // <Snippet4>
         // Define groups "abc", "ab", and "b".
-        var r = new Regex("(a(b))c"); 
+        var r = new Regex("(a(b))c");
         Match m = r.Match("abdabc");
         Console.WriteLine("Number of groups found = " + m.Groups.Count);
         // The example displays the following output:
@@ -100,9 +100,9 @@ public class Example
         GroupCollection gc;
 
         // Look for groupings of "Abc".
-        var r = new Regex("(Abc)+"); 
+        var r = new Regex("(Abc)+");
         // Define the string to search.
-        m = r.Match("XYZAbcAbcAbcXYZAbcAb"); 
+        m = r.Match("XYZAbcAbcAbcXYZAbcAb");
         gc = m.Groups;
 
         // Display the number of groups.
@@ -118,10 +118,10 @@ public class Example
             Console.WriteLine("Captures count = " + counter.ToString());
 
             // Loop through each capture in the group.
-            for (int ii = 0; ii < counter; ii++) 
+            for (int ii = 0; ii < counter; ii++)
             {
                 // Display the capture and its position.
-                Console.WriteLine(cc[ii] + "   Starts at character " + 
+                Console.WriteLine(cc[ii] + "   Starts at character " +
                      cc[ii].Index);
             }
         }
@@ -142,9 +142,9 @@ public class Example
         var matchposition = new List<int>();
         var results = new List<string>();
         // Define substrings abc, ab, b.
-        var r = new Regex("(a(b))c"); 
+        var r = new Regex("(a(b))c");
         Match m = r.Match("abdabc");
-        for (int i = 0; m.Groups[i].Value != ""; i++) 
+        for (int i = 0; m.Groups[i].Value != ""; i++)
         {
             // Add groups to string array.
             results.Add(m.Groups[i].Value);
@@ -154,7 +154,7 @@ public class Example
 
         // Display the capture groups.
         for (int ctr = 0; ctr < results.Count; ctr++)
-            Console.WriteLine("{0} at position {1}", 
+            Console.WriteLine("{0} at position {1}",
                               results[ctr], matchposition[ctr]);
         // The example displays the following output:
         //       abc at position 3
@@ -173,18 +173,18 @@ public class Example
 
         r = new Regex("(abc)+");
         m = r.Match("bcabcabc");
-        for (int i = 0; m.Groups[i].Value != ""; i++) 
+        for (int i = 0; m.Groups[i].Value != ""; i++)
         {
             Console.WriteLine(m.Groups[i].Value);
             // Capture the Collection for Group(i).
-            cc = m.Groups[i].Captures; 
+            cc = m.Groups[i].Captures;
             for (int j = 0; j < cc.Count; j++)
             {
                 Console.WriteLine($"   Capture at position {cc[j].Index} for {cc[j].Length} characters.");
                 // Position of Capture object.
-                posn = cc[j].Index; 
+                posn = cc[j].Index;
                 // Length of Capture object.
-                length = cc[j].Length; 
+                length = cc[j].Length;
             }
         }
         // The example displays the following output:

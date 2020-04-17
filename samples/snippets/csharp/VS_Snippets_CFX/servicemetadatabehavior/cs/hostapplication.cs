@@ -26,8 +26,8 @@ namespace Microsoft.WCF.Documentation
     {
         // see C_HowToSecureEndpoint\cs
         //<snippet1>
-        // Create a new metadata behavior object and set its properties to 
-        // create a secure endpoint. 
+        // Create a new metadata behavior object and set its properties to
+        // create a secure endpoint.
         ServiceMetadataBehavior sb = new ServiceMetadataBehavior();
         //sb.EnableHelpPage= true;
         //sb.HttpsGetUrl = new Uri("https://myMachineName:8036/myEndpoint");
@@ -36,13 +36,13 @@ namespace Microsoft.WCF.Documentation
 
       private void SnippetServiceMetadataBehavior()
       {
-          // service for which <<indigo2>> automatically adds a 
-          // ServiceMetadataBehavior to publish metadata as well as 
+          // service for which <<indigo2>> automatically adds a
+          // ServiceMetadataBehavior to publish metadata as well as
           // an HTML service help page
 
           // from C_HowToSecureEndpoint\cs
-          // Create a new metadata behavior object and set its properties to 
-          // create a secure endpoint. 
+          // Create a new metadata behavior object and set its properties to
+          // create a secure endpoint.
           ServiceMetadataBehavior sb = new ServiceMetadataBehavior();
 /*          sb.EnableHelpPage = true;
           sb.enableMetadataExchange = true;
@@ -62,15 +62,15 @@ namespace Microsoft.WCF.Documentation
       try
       {
         // <snippet10>
-        ServiceMetadataBehavior metad 
+        ServiceMetadataBehavior metad
           = host.Description.Behaviors.Find<ServiceMetadataBehavior>();
         if (metad == null)
           metad = new ServiceMetadataBehavior();
         metad.HttpGetEnabled = true;
         host.Description.Behaviors.Add(metad);
         host.AddServiceEndpoint(
-          ServiceMetadataBehavior.MexContractName, 
-          MetadataExchangeBindings.CreateMexHttpBinding(), 
+          ServiceMetadataBehavior.MexContractName,
+          MetadataExchangeBindings.CreateMexHttpBinding(),
           "mex"
         );
         // </snippet10>

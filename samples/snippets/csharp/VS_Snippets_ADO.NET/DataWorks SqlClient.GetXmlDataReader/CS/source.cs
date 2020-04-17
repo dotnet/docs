@@ -25,10 +25,10 @@ class Class1
         {
             connection.Open();
 
-            // The query includes two specific customers for simplicity's 
+            // The query includes two specific customers for simplicity's
             // sake. A more realistic approach would use a parameter
             // for the CustomerID criteria. The example selects two rows
-            // in order to demonstrate reading first from one row to 
+            // in order to demonstrate reading first from one row to
             // another, then from one node to another within the xml column.
             string commandText =
                 "SELECT Demographics from Sales.Store WHERE " +
@@ -39,24 +39,24 @@ class Class1
             SqlDataReader salesReaderData = commandSales.ExecuteReader();
 
             //  Multiple rows are returned by the SELECT, so each row
-            //  is read and an XmlReader (an xml data type) is set to the 
-            //  value of its first (and only) column. 
+            //  is read and an XmlReader (an xml data type) is set to the
+            //  value of its first (and only) column.
             int countRow = 1;
             while (salesReaderData.Read())
-            //  Must use GetSqlXml here to get a SqlXml type. 
-            //  GetValue returns a string instead of SqlXml. 
+            //  Must use GetSqlXml here to get a SqlXml type.
+            //  GetValue returns a string instead of SqlXml.
             {
                 SqlXml salesXML =
                     salesReaderData.GetSqlXml(0);
                 XmlReader salesReaderXml = salesXML.CreateReader();
                 Console.WriteLine("-----Row " + countRow + "-----");
 
-                //  Move to the root. 
+                //  Move to the root.
                 salesReaderXml.MoveToContent();
 
                 //  We know each node type is either Element or Text.
-                //  All elements within the root are string values. 
-                //  For this simple example, no elements are empty. 
+                //  All elements within the root are string values.
+                //  For this simple example, no elements are empty.
                 while (salesReaderXml.Read())
                 {
                     if (salesReaderXml.NodeType == XmlNodeType.Element)

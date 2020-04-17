@@ -3,7 +3,7 @@
     using System;
     class EntityExample
     {
-        public static void Usage() 
+        public static void Usage()
         {
             Entity.SetNextSerialNo(1000);
             Entity e1 = new Entity();
@@ -17,19 +17,19 @@
     {
         static int nextSerialNo;
         int serialNo;
-        public Entity() 
+        public Entity()
         {
             serialNo = nextSerialNo++;
         }
-        public int GetSerialNo() 
+        public int GetSerialNo()
         {
             return serialNo;
         }
-        public static int GetNextSerialNo() 
+        public static int GetNextSerialNo()
         {
             return nextSerialNo;
         }
-        public static void SetNextSerialNo(int value) 
+        public static void SetNextSerialNo(int value)
         {
             nextSerialNo = value;
         }

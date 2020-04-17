@@ -13,7 +13,7 @@ public class Example
 
       DateTime dateValue = new DateTime(2008, 6, 11);
       // Display the DayOfWeek string representation
-      Console.WriteLine(dateValue.DayOfWeek.ToString());   
+      Console.WriteLine(dateValue.DayOfWeek.ToString());
       // Restore original current culture
       Thread.CurrentThread.CurrentCulture = originalCulture;
    }

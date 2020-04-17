@@ -124,7 +124,7 @@ public class Client
 /*
 <snippet5>
 The output of the program is:
- 
+
 Trying all available WS-Transfer metadata endpoints...
 The service greets you: Client used the http://localhost:9090/SampleService address.
 The service greets you: Client used the net.tcp://localhost:30000/SampleService address.

@@ -104,13 +104,13 @@ namespace TupleEquality
 
         // <SnippetEqualityTests>
         public override bool Equals(object other) =>
-            (other is Person p) 
-            ? (FirstName, LastName) == (p.FirstName, p.LastName) 
+            (other is Person p)
+            ? (FirstName, LastName) == (p.FirstName, p.LastName)
             : false;
 
-        public static bool operator ==(Person left, Person right) => 
-            (object.ReferenceEquals(left, null)) 
-            ? (object.ReferenceEquals(right, null)) 
+        public static bool operator ==(Person left, Person right) =>
+            (object.ReferenceEquals(left, null))
+            ? (object.ReferenceEquals(right, null))
             : left.Equals(right);
 
         public static bool operator !=(Person left, Person right) => !(left == right);

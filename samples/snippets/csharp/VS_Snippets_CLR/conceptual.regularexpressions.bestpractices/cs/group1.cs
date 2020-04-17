@@ -8,9 +8,9 @@ public class Example
    {
       string input = "This is one sentence. This is another.";
       string pattern = @"\b(\w+[;,]?\s?)+[.?!]";
-      
+
       foreach (Match match in Regex.Matches(input, pattern)) {
-         Console.WriteLine("Match: '{0}' at index {1}.", 
+         Console.WriteLine("Match: '{0}' at index {1}.",
                            match.Value, match.Index);
          int grpCtr = 0;
          foreach (Group grp in match.Groups) {
@@ -23,8 +23,8 @@ public class Example
                capCtr++;
             }
             grpCtr++;
-         }          
-         Console.WriteLine();        
+         }
+         Console.WriteLine();
       }
    }
 }
@@ -37,7 +37,7 @@ public class Example
 //             Capture 1: 'is ' at 5.
 //             Capture 2: 'one ' at 8.
 //             Capture 3: 'sentence' at 12.
-//       
+//
 //       Match: 'This is another.' at index 22.
 //          Group 0: 'This is another.' at index 22.
 //             Capture 0: 'This is another.' at 22.

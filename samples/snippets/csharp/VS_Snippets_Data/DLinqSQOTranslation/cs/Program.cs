@@ -12,7 +12,7 @@ namespace cs_sqotranslation
             Northwnd db = new Northwnd(@"c:\northwnd.mdf");
 
             // <Snippet1>
-            var custQuery = 
+            var custQuery =
                 (from cust in db.Customers
                 where cust.City == "London"
                 orderby cust.CustomerID

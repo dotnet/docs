@@ -8,20 +8,20 @@ namespace GCNotify
 {
     class Program
     {
-        // Variable for continual checking in the 
+        // Variable for continual checking in the
         // While loop in the WaitForFullGCProc method.
         static bool checkForNotify = false;
 
-        // Variable for suspending work 
+        // Variable for suspending work
         // (such servicing allocated server requests)
-        // after a notification is received and then 
+        // after a notification is received and then
         // resuming allocation after inducing a garbage collection.
         static bool bAllocate = false;
 
         // Variable for ending the example.
         static bool finalExit = false;
 
-        // Collection for objects that  
+        // Collection for objects that
         // simulate the server request workload.
         static List<byte[]> load = new List<byte[]>();
 
@@ -29,7 +29,7 @@ namespace GCNotify
         {
             try
             {
-                // Register for a notification. 
+                // Register for a notification.
                 GC.RegisterForFullGCNotification(10, 10);
                 Console.WriteLine("Registered for GC notification.");
 
@@ -60,7 +60,7 @@ namespace GCNotify
                                 Console.WriteLine("Gen 2 collection count: {0}", GC.CollectionCount(2).ToString());
                                 lastCollCount = newCollCount;
                             }
-                           
+
                             // For ending the example (arbitrary).
                             if (newCollCount == 500)
                             {
@@ -96,12 +96,12 @@ namespace GCNotify
 
             Console.WriteLine("Redirecting requests.");
 
-            // Method that tells the request queuing  
-            // server to not direct requests to this server. 
+            // Method that tells the request queuing
+            // server to not direct requests to this server.
             RedirectRequests();
 
-            // Method that provides time to 
-            // finish processing pending requests. 
+            // Method that provides time to
+            // finish processing pending requests.
             FinishExistingRequests();
 
             // This is a good time to induce a GC collection
@@ -148,9 +148,9 @@ namespace GCNotify
                     else
                     {
                         // This can occur if a timeout period
-                        // is specified for WaitForFullGCApproach(Timeout) 
-                        // or WaitForFullGCComplete(Timeout)  
-                        // and the time out period has elapsed. 
+                        // is specified for WaitForFullGCApproach(Timeout)
+                        // or WaitForFullGCComplete(Timeout)
+                        // and the time out period has elapsed.
                         Console.WriteLine("GC Notification not applicable.");
                         break;
                     }
@@ -179,7 +179,7 @@ namespace GCNotify
                 }
 
                 Thread.Sleep(500);
-                // FinalExit is set to true right before  
+                // FinalExit is set to true right before
                 // the main thread cancelled notification.
                 if (finalExit)
                 {

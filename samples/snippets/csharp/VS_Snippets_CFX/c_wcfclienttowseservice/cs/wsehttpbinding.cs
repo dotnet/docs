@@ -50,7 +50,7 @@ namespace Microsoft.ServiceModel.Samples
                 case WseSecurityAssertion.UsernameForCertificate:
                     transport = new HttpTransportBindingElement();
                     securityBinding = (SymmetricSecurityBindingElement)SecurityBindingElement.CreateUserNameForCertificateBindingElement();
-                    // We want signatureconfirmation on the bootstrap process 
+                    // We want signatureconfirmation on the bootstrap process
                     // either for the application messages or for the RST/RSTR
                     ((SymmetricSecurityBindingElement)securityBinding).RequireSignatureConfirmation = requireSignatureConfirmation;
                     ((SymmetricSecurityBindingElement)securityBinding).MessageProtectionOrder = messageProtectionOrder;
@@ -83,7 +83,7 @@ namespace Microsoft.ServiceModel.Samples
             // set the preference for derived keys before creating SecureConversationBindingElement
             securityBinding.SetKeyDerivation(requireDerivedKeys);
 
-            //Secure Conversation 
+            //Secure Conversation
             if (establishSecurityContext == true)
             {
                 SymmetricSecurityBindingElement secureconversation =
@@ -94,7 +94,7 @@ namespace Microsoft.ServiceModel.Samples
 
                 //Set defaults for the secure conversation binding
                 secureconversation.DefaultAlgorithmSuite = SecurityAlgorithmSuite.Basic256;
-                // We do not want signature confirmation on the application level messages 
+                // We do not want signature confirmation on the application level messages
                 // when secure conversation is enabled.
                 secureconversation.RequireSignatureConfirmation = false;
                 secureconversation.MessageProtectionOrder = messageProtectionOrder;
@@ -105,7 +105,7 @@ namespace Microsoft.ServiceModel.Samples
             // Add the security binding to the binding collection
             bec.Add(securityBinding);
 
-            // Add the message encoder. 
+            // Add the message encoder.
             TextMessageEncodingBindingElement textelement = new TextMessageEncodingBindingElement();
             textelement.MessageVersion = MessageVersion.Soap11WSAddressingAugust2004;
             //These are the defaults required for WSE

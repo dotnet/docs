@@ -15,6 +15,6 @@ public class Example
       // <Snippet20>
       if (rgx.Options == RegexOptions.None)
          Console.WriteLine("No options have been set.");
-      // </Snippet20>   
+      // </Snippet20>
    }
 }

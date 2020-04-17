@@ -11,9 +11,9 @@ public class Example
       string[] inputs = { "aaaaaa", "aaaaa!" };
       Regex rgx = new Regex(pattern);
       Stopwatch sw;
-      
+
       foreach (string input in inputs) {
-         sw = Stopwatch.StartNew();   
+         sw = Stopwatch.StartNew();
          Match match = rgx.Match(input);
          sw.Stop();
          if (match.Success)

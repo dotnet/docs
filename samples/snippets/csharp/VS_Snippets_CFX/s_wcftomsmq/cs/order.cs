@@ -10,7 +10,7 @@ namespace Microsoft.ServiceModel.Samples
     [Serializable]
     public class PurchaseOrderLineItem
     {
-        
+
         public string productId;
         public float unitCost;
         public int quantity;
@@ -26,7 +26,7 @@ namespace Microsoft.ServiceModel.Samples
             get { return unitCost * quantity; }
         }
     }
-    
+
     public enum OrderStates
     {
         Pending,

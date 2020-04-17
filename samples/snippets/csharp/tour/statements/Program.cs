@@ -36,7 +36,7 @@ namespace Statements
             {
                 Console.WriteLine("No arguments");
             }
-            else 
+            else
             {
                 Console.WriteLine("One or more arguments");
             }
@@ -45,7 +45,7 @@ namespace Statements
         static void SwitchStatement(string[] args)
         {
             int n = args.Length;
-            switch (n) 
+            switch (n)
             {
                 case 0:
                     Console.WriteLine("No arguments");
@@ -62,7 +62,7 @@ namespace Statements
         static void WhileStatement(string[] args)
         {
             int i = 0;
-            while (i < args.Length) 
+            while (i < args.Length)
             {
                 Console.WriteLine(args[i]);
                 i++;
@@ -72,17 +72,17 @@ namespace Statements
         static void DoStatement(string[] args)
         {
             string s;
-            do 
+            do
             {
                 s = Console.ReadLine();
                 Console.WriteLine(s);
             } while (!string.IsNullOrEmpty(s));
         }
-        
+
 
         static void ForStatement(string[] args)
         {
-            for (int i = 0; i < args.Length; i++) 
+            for (int i = 0; i < args.Length; i++)
             {
                 Console.WriteLine(args[i]);
             }
@@ -90,7 +90,7 @@ namespace Statements
 
         static void ForEachStatement(string[] args)
         {
-            foreach (string s in args) 
+            foreach (string s in args)
             {
                 Console.WriteLine(s);
             }
@@ -98,10 +98,10 @@ namespace Statements
 
         static void BreakStatement(string[] args)
         {
-            while (true) 
+            while (true)
             {
                 string s = Console.ReadLine();
-                if (string.IsNullOrEmpty(s)) 
+                if (string.IsNullOrEmpty(s))
                     break;
                 Console.WriteLine(s);
             }
@@ -109,9 +109,9 @@ namespace Statements
 
         static void ContinueStatement(string[] args)
         {
-            for (int i = 0; i < args.Length; i++) 
+            for (int i = 0; i < args.Length; i++)
             {
-                if (args[i].StartsWith("/")) 
+                if (args[i].StartsWith("/"))
                     continue;
                 Console.WriteLine(args[i]);
             }
@@ -124,11 +124,11 @@ namespace Statements
             loop:
             Console.WriteLine(args[i++]);
             check:
-            if (i < args.Length) 
+            if (i < args.Length)
                 goto loop;
         }
 
-        static int Add(int a, int b) 
+        static int Add(int a, int b)
         {
             return a + b;
         }
@@ -138,9 +138,9 @@ namespace Statements
            return;
         }
 
-        static System.Collections.Generic.IEnumerable<int> Range(int start, int end) 
+        static System.Collections.Generic.IEnumerable<int> Range(int start, int end)
         {
-            for (int i = start; i < end; i++) 
+            for (int i = start; i < end; i++)
             {
                 yield return i;
             }
@@ -148,23 +148,23 @@ namespace Statements
         }
         static void YieldStatement(string[] args)
         {
-            foreach (int i in Range(-10,10)) 
+            foreach (int i in Range(-10,10))
             {
                 Console.WriteLine(i);
             }
         }
 
-        static double Divide(double x, double y) 
+        static double Divide(double x, double y)
         {
-            if (y == 0) 
+            if (y == 0)
                 throw new DivideByZeroException();
             return x / y;
         }
-        static void TryCatch(string[] args) 
+        static void TryCatch(string[] args)
         {
-            try 
+            try
             {
-                if (args.Length != 2) 
+                if (args.Length != 2)
                 {
                     throw new InvalidOperationException("Two numbers required");
                 }
@@ -172,32 +172,32 @@ namespace Statements
                 double y = double.Parse(args[1]);
                 Console.WriteLine(Divide(x, y));
             }
-            catch (InvalidOperationException e) 
+            catch (InvalidOperationException e)
             {
                 Console.WriteLine(e.Message);
             }
-            finally 
+            finally
             {
                 Console.WriteLine("Good bye!");
             }
         }
 
-        static void CheckedUnchecked(string[] args) 
+        static void CheckedUnchecked(string[] args)
         {
             int x = int.MaxValue;
-            unchecked 
+            unchecked
             {
                 Console.WriteLine(x + 1);  // Overflow
             }
-            checked 
+            checked
             {
                 Console.WriteLine(x + 1);  // Exception
-            }     
+            }
         }
 
-        static void UsingStatement(string[] args) 
+        static void UsingStatement(string[] args)
         {
-            using (TextWriter w = File.CreateText("test.txt")) 
+            using (TextWriter w = File.CreateText("test.txt"))
             {
                 w.WriteLine("Line one");
                 w.WriteLine("Line two");
@@ -221,18 +221,18 @@ namespace Statements
 
             Console.WriteLine("Type Mesages. Enter a blank line to end");
             DoStatement(args);
-            
+
             ForStatement(args);
 
             ForEachStatement(args);
 
             Console.WriteLine("Type Mesages. Enter a blank line to end");
             BreakStatement(args);
-            
+
             ContinueStatement(args);
 
             GoToStatement(args);
-           
+
            ReturnStatement(args);
 
            YieldStatement(args);
@@ -258,11 +258,11 @@ namespace Statements
     {
         decimal balance;
         private readonly object sync = new object();
-        public void Withdraw(decimal amount) 
+        public void Withdraw(decimal amount)
         {
-            lock (sync) 
+            lock (sync)
             {
-                if (amount > balance) 
+                if (amount > balance)
                 {
                     throw new Exception(
                         "Insufficient funds");

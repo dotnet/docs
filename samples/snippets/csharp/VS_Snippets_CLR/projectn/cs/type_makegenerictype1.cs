@@ -5,10 +5,10 @@ namespace App1
    public class AppClass<T>
    {
 //      private T type;
-      
+
       public AppClass()
       {
-//         this.type = type; 
+//         this.type = type;
       }
    }
 }

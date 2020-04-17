@@ -17,7 +17,7 @@ namespace Microsoft.WCF.Documentation
       {
         // Set the client credentials to permit impersonation. You can do this programmatically or in the configuration file.
         wcfClient.ClientCredentials.Windows.AllowedImpersonationLevel = TokenImpersonationLevel.Impersonation;
-        
+
         // Make calls using the proxy.
         Console.ForegroundColor = ConsoleColor.White;
         Console.WriteLine("Enter a greeting to send and press ENTER: ");

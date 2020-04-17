@@ -48,7 +48,7 @@ ms.assetid: 3f255a8a-35a8-4712-9065-472ff7d75599
   
  [!code-xaml[ControlsOverview#5](~/samples/snippets/csharp/VS_Snippets_Wpf/ControlsOverview/CSharp/AppInCode.xaml#5)]  
   
- You can also apply a style to only certain controls of a specific type by assigning a key to the style and specifying that key in the `Style` property of your control.  For more information about styles, see [Styling and Templating](styling-and-templating.md).  
+ You can also apply a style to only certain controls of a specific type by assigning a key to the style and specifying that key in the `Style` property of your control.  For more information about styles, see [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md).  
   
 ### Creating a ControlTemplate  
  A <xref:System.Windows.Style> allows you to set properties on multiple controls at a time, but sometimes you might want to customize the appearance of a <xref:System.Windows.Controls.Control> beyond what you can do by creating a <xref:System.Windows.Style>. Classes that inherit from the <xref:System.Windows.Controls.Control> class have a <xref:System.Windows.Controls.ControlTemplate>, which defines the structure and appearance of a <xref:System.Windows.Controls.Control>. The <xref:System.Windows.Controls.Control.Template%2A> property of a <xref:System.Windows.Controls.Control> is public, so you can give a <xref:System.Windows.Controls.Control> a <xref:System.Windows.Controls.ControlTemplate> that is different than its default. You can often specify a new <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.Control> instead of inheriting from a control to customize the appearance of a <xref:System.Windows.Controls.Control>.  
@@ -93,7 +93,7 @@ ms.assetid: 3f255a8a-35a8-4712-9065-472ff7d75599
   
 ## See also
 
-- [Styling and Templating](styling-and-templating.md)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)
 - [Controls by Category](controls-by-category.md)
 - [Control Library](control-library.md)
 - [Data Templating Overview](../data/data-templating-overview.md)

@@ -14,8 +14,9 @@ ms.date: 03/20/2020
 ## Synopsis
 
 ```dotnetcli
-dotnet nuget remove source <NAME> [--configfile]
-dotnet nuget remove source [-h|--help]
+dotnet nuget remove source <NAME> [--configfile <FILE>]
+
+dotnet nuget remove source -h|--help
 ```
 
 ## Description

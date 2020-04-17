@@ -13,7 +13,11 @@ ms.date: 02/14/2020
 
 ## Synopsis
 
-`dotnet msbuild <msbuild_arguments> [-h]`
+```dotnetcli
+dotnet msbuild <MSBUILD_ARGUMENTS>
+
+dotnet msbuild -h
+```
 
 ## Description
 

@@ -141,7 +141,7 @@ Starts a child computation within an asynchronous computation. This allows multi
 Signature:
 
 ```fsharp
-computation: Async<'T> - timeout: ?int -> Async<Async<'T>>
+computation: Async<'T> * timeout: ?int -> Async<Async<'T>>
 ```
 
 When to use:

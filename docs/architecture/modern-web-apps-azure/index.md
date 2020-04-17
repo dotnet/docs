@@ -80,7 +80,7 @@ Building web applications with ASP.NET Core, hosted in Azure, offers many compet
 
 This guide provides end-to-end guidance on building *monolithic* web applications using ASP.NET Core and Azure. In this context, "monolithic" refers to the fact that these applications are deployed as a single unit, not as a collection of interacting services and applications.
 
-This guide is complementary to ["_.NET Microservices. Architecture for Containerized .NET Applications_"](../microservices/index.md), which focuses more on Docker, Microservices, and deployment of containers to host enterprise applications.
+This guide is complementary to ["_.NET Microservices. Architecture for Containerized .NET Applications_"](../microservices/index.md), which focuses more on Docker, microservices, and deployment of containers to host enterprise applications.
 
 ### .NET Microservices. Architecture for Containerized .NET Applications
 

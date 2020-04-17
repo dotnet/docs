@@ -176,7 +176,7 @@ _C:\\program files\\dotnet\\dotnet.exe_
 _C:\\program files\\dotnet\\sdk\\{version}\\_
 
 - **.NET Runtime**\
-C:\\program files\\dotnet\\shared\\{runtime-type}\\{version}\\
+_C:\\program files\\dotnet\\shared\\{runtime-type}\\{version}\\_
 
 ::: zone-end
 
@@ -186,10 +186,10 @@ C:\\program files\\dotnet\\shared\\{runtime-type}\\{version}\\
 _/home/user/share/dotnet/dotnet_
 
 - **.NET SDK**\
-_/home/user/share/dotnet/sdk/{version}_
+_/home/user/share/dotnet/sdk/{version}/_
 
 - **.NET Runtime**\
-_/home/user/share/dotnet/shared/{runtime-type}/{version}_
+_/home/user/share/dotnet/shared/{runtime-type}/{version}/_
 
 ::: zone-end
 
@@ -199,10 +199,10 @@ _/home/user/share/dotnet/shared/{runtime-type}/{version}_
 _/usr/local/share/dotnet/dotnet_
 
 - **.NET SDK**\
-_/usr/local/share/dotnet/sdk/{version}_
+_/usr/local/share/dotnet/sdk/{version}/_
 
 - **.NET Runtime**\
-_/usr/local/share/dotnet/shared/{runtime-type}/{version}_
+_/usr/local/share/dotnet/shared/{runtime-type}/{version}/_
 
 ::: zone-end
 

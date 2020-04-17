@@ -19,7 +19,7 @@ This example uses serverless to do a map/reduce operation on a big data set. It 
 
 ## Create serverless applications: hands-on lab
 
-Learn how to use functions to execute server-side logic and build serverless architectures. 
+Learn how to use functions to execute server-side logic and build serverless architectures.
 
 - Choosing the best Azure service for your business
 - Creating Azure Functions

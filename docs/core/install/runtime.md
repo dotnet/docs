@@ -50,7 +50,7 @@ export PATH=$PATH:$HOME/dotnet
 
 ## Install with a package manager
 
-You can install the .NET Core Runtime with many of the common Linux package managers. For more information, see [Linux Package Manager - Install .NET Core](linux-package-managers.md).
+You can install the .NET Core Runtime with many of the common Linux package managers. For more information, see [Linux Package Manager - Install .NET Core](linux-package-manager-ubuntu-1910.md).
 
 Installing it with a package manager is only supported on the x64 architecture. If you're installing the .NET Core Runtime with a different architecture, such as ARM, follow the instructions on the [Download and manually install](#download-and-manually-install) section. For more information about what architectures are supported, see [.NET Core dependencies and requirements](dependencies.md).
 

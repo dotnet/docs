@@ -138,7 +138,7 @@ items:
     ```csharp
     string s = null;
     bool? hasMore = s?.ToCharArray()?.GetEnumerator()?.MoveNext();
-    Console.WriteLine(hasMore.HasValue);
+    Console.WriteLine(hasMore.HasValue && hasMore.Value);
     ```
 
     The preceding example can be simplified by using the **null coalescing operator** to provide a default value:

@@ -36,7 +36,7 @@ When you develop a WCF Data Service as an ASP.NET application or ASP.NET Web sit
 
 1. **Local IIS Server**
 
-     When you create a data service that is an ASP.NET application or ASP.NET Web site that runs on Internet Information Services (IIS), we recommend that you develop and test your data service by using IIS on the local computer. Running the data service on IIS makes it easier to trace HTTP requests during debugging. This also enables you to pre-determine the necessary rights required by IIS to access files, databases, and other resources required by the data service. To run your data service on IIS, make sure that both IIS and Windows Communication Foundation (WCF) are installed and configured correctly and grant access to IIS accounts in the file system and databases. For more information, see [How to: Develop a WCF Data Service Running on IIS](how-to-develop-a-wcf-data-service-running-on-iis.md).
+     When you create a data service that is an ASP.NET application or ASP.NET Web site that runs on Internet Information Services (IIS), we recommend that you develop and test your data service by using IIS on the local computer. Running the data service on IIS makes it easier to trace HTTP requests during debugging. This also enables you to predetermine the necessary rights required by IIS to access files, databases, and other resources required by the data service. To run your data service on IIS, make sure that both IIS and Windows Communication Foundation (WCF) are installed and configured correctly and grant access to IIS accounts in the file system and databases. For more information, see [How to: Develop a WCF Data Service Running on IIS](how-to-develop-a-wcf-data-service-running-on-iis.md).
 
     > [!NOTE]
     > You must run Visual Studio with administrator rights to enable the develop environment to configure the local IIS server.
@@ -45,7 +45,7 @@ When you develop a WCF Data Service as an ASP.NET application or ASP.NET Web sit
 
      Visual Studio includes a built-in Web server, the Visual Studio Development Server, which is the default Web server for ASP.NET projects. This Web server is designed to run ASP.NET projects on the local computer during development. The [WCF Data Services quickstart](quickstart-wcf-data-services.md) shows how to create a data service that runs in the Visual Studio Development Server.
 
-     You should be aware of the following limitations when you use the Visual Studio Development Server to develop the data service:
+     Be aware of the following limitations when you use the Visual Studio Development Server to develop the data service:
 
     - This server can only be accessed on the local computer.
 
@@ -62,9 +62,9 @@ When you develop a WCF Data Service as an ASP.NET application or ASP.NET Web sit
     > [!TIP]
     > Even though you can use the Visual Studio Development Server to test your data services during development, you should test them again after deploying to a Web server that is running IIS.
 
-3. **Windows Azure Development Environment**
+3. **Azure Development Environment**
 
-     Windows Azure Tools for Visual Studio includes an integrated set of tools for developing Windows Azure services in Visual Studio. With these tools, you can develop a data service that can be deployed to Windows Azure, and you can test the data service on the local computer before deployment. Use these tools when using Visual Studio to develop a data service that runs on the Windows Azure platform. For information about installing the tools, see [Azure tools for Visual Studio 2015](../../../azure/sdk/vs2015-install.md). For more information about developing a data service that runs on Windows Azure, see the post [Deploying an OData Service in Windows Azure](https://docs.microsoft.com/archive/blogs/astoriateam/deploying-an-odata-service-in-windows-azure).
+     Windows Azure Tools for Visual Studio includes an integrated set of tools for developing Azure services in Visual Studio. With these tools, you can develop a data service that can be deployed to Azure, and you can test the data service on the local computer before deployment. Use these tools when using Visual Studio to develop a data service that runs on the Azure platform. For information about installing the tools, see [Azure tools for Visual Studio 2015](../../../azure/sdk/vs2015-install.md). For more information about developing a data service that runs on Azure, see the post [Deploying an OData Service in Azure](https://docs.microsoft.com/archive/blogs/astoriateam/deploying-an-odata-service-in-windows-azure).
 
 ### Development Tips
 
@@ -86,7 +86,7 @@ WCF Data Service provides flexibility in choosing the process that hosts the dat
 
 - **IIS-Hosted Web Server**
 
-    When a data service is developed as an ASP.NET project, it can be deployed to an IIS Web server by using the standard ASP.NET deployment processes.  Visual Studio provides the following deployment technologies for ASP.NET, depending on the kind of ASP.NET project that hosts the data service that you are deploying.
+    When a data service is developed as an ASP.NET project, it can be deployed to an IIS Web server by using the standard ASP.NET deployment processes. Visual Studio provides the following deployment technologies for ASP.NET, depending on the kind of ASP.NET project that hosts the data service that you are deploying.
 
   - **Deployment Technologies for ASP.NET Web Applications**
 
@@ -107,9 +107,9 @@ WCF Data Service provides flexibility in choosing the process that hosts the dat
     > [!TIP]
     > Before you attempt to deploy the data service to IIS, make sure that you have tested the deployment to a Web server that is running IIS. For more information, see [How to: Develop a WCF Data Service Running on IIS](how-to-develop-a-wcf-data-service-running-on-iis.md).
 
-- **Windows Azure**
+- **Azure**
 
-     You can deploy a data service to Windows Azure by using Windows Azure Tools for Visual Studio. You can download the Windows Azure Tools for Visual Studio from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?LinkID=201848). For more information about deploying a data service to Windows Azure, see the post [Deploying an OData Service in Windows Azure](https://docs.microsoft.com/archive/blogs/astoriateam/deploying-an-odata-service-in-windows-azure).
+     You can deploy a data service to Azure by using [Azure Tools for Visual Studio](../../../azure/sdk/vs2015-install.md). For more information about deploying a data service to Azure, see [Deploying an OData Service in Azure](https://docs.microsoft.com/archive/blogs/astoriateam/deploying-an-odata-service-in-windows-azure).
 
 ### Deployment Considerations
 

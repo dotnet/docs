@@ -15,14 +15,18 @@ ms.date: 02/27/2020
 
 ```dotnetcli
 dotnet test [<PROJECT> | <SOLUTION>]
-    [-a|--test-adapter-path] [--blame] [-c|--configuration]
-    [--collect] [-d|--diag] [-f|--framework] [--filter]
-    [--interactive] [-l|--logger] [--no-build] [--nologo]
-    [--no-restore] [-o|--output] [-r|--results-directory]
-    [--runtime] [-s|--settings] [-t|--list-tests]
-    [-v|--verbosity] [[--] <RunSettings arguments>]
+    [-a|--test-adapter-path <PATH_TO_ADAPTER>] [--blame]
+    [-c|--configuration <CONFIGURATION>]
+    [--collect <DATA_COLLECTOR_FRIENDLY_NAME>]
+    [-d|--diag <PATH_TO_DIAGNOSTICS_FILE>] [-f|--framework <FRAMEWORK>]
+    [--filter <EXPRESSION>] [--interactive]
+    [-l|--logger <LOGGER_URI/FRIENDLY_NAME>] [--no-build]
+    [--nologo] [--no-restore] [-o|--output <OUTPUT_DIRECTORY>]
+    [-r|--results-directory <PATH>] [--runtime <RUNTIME_IDENTIFIER>]
+    [-s|--settings <SETTINGS_FILE>] [-t|--list-tests]
+    [-v|--verbosity <LEVEL>] [[--] <RunSettings arguments>]
 
-dotnet test [-h|--help]
+dotnet test -h|--help
 ```
 
 ## Description
@@ -77,7 +81,7 @@ Test projects specify the test runner using an ordinary `<PackageReference>` ele
 
   Allows the command to stop and wait for user input or action. For example, to complete authentication. Available since .NET Core 3.0 SDK.
 
-- **`l|--logger <LoggerUri/FriendlyName>`**
+- **`l|--logger <LOGGER_URI/FRIENDLY_NAME>`**
 
   Specifies a logger for test results. Unlike MSBuild, dotnet test doesn't accept abbreviations: instead of `-l "console;v=d"` use `-l "console;verbosity=detailed"`.
 

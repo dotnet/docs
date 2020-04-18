@@ -1,6 +1,6 @@
 ---
 title: "Structure types - C# reference"
-ms.date: 04/14/2020
+ms.date: 04/21/2020
 f1_keywords: 
   - "struct_CSharpKeyword"
 helpviewer_keywords: 
@@ -96,9 +96,32 @@ In the case of the [built-in value types](value-types.md#built-in-value-types), 
 
 When you pass a structure-type variable to a method as an argument or return a structure-type value from a method, the whole instance of a structure type is copied. That can affect the performance of your code in high-performance scenarios that involve large structure types. You can avoid value copying by passing a structure-type variable by reference. Use the [`ref`](../keywords/ref.md#passing-an-argument-by-reference), [`out`](../keywords/out-parameter-modifier.md), or [`in`](../keywords/in-parameter-modifier.md) method parameter modifiers to indicate that an argument must be passed by reference. Use [ref returns](../../programming-guide/classes-and-structs/ref-returns.md) to return a method result by reference. For more information, see [Write safe and efficient C# code](../../write-safe-efficient-code.md).
 
+## `ref` struct
+
+Beginning with C# 7.2, you use the `ref` modifier in the declaration of a structure type to indicate that instances of that type can be allocated only on the stack. In .NET, examples of a `ref` struct are <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>.
+
+Because instances of a `ref` struct can be allocated only on the stack and cannot escape to the managed heap, the compiler limits the usage of `ref` struct types as follows:
+
+- A `ref` struct cannot be the element type of an array.
+- A `ref` struct cannot implement interfaces.
+- A `ref` struct cannot be boxed to <xref:System.ValueType?displayProperty=nameWithType> or <xref:System.Object?displayProperty=nameWithType>.
+- A `ref` struct cannot be a type argument.
+- A `ref` struct cannot be a declared type of a field of a class or a non-`ref` struct.
+- A `ref` struct variable cannot be captured by a [lambda expression](../../programming-guide/statements-expressions-operators/lambda-expressions.md) or a [local function](../../programming-guide/classes-and-structs/local-functions.md).
+- A `ref` struct variable cannot be used in an [`async`](../keywords/async.md) method. You can use `ref` struct variables in synchronous methods, for example, in those that return <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>.
+- A `ref` struct variable cannot be used in [iterators](../../iterators.md).
+
+In particular, you must use a `ref` struct type if you want to encapsulate other `ref` struct types:
+
+[!code-csharp[ref struct](snippets/StructType.cs#RefStruct)]
+
+To declare a `ref` struct as [`readonly`](#readonly-struct), combine the `readonly` and `ref` modifiers in the type declaration (the `readonly` modifier must come before the `ref` modifier):
+
+[!code-csharp[readonly ref struct](snippets/StructType.cs#ReadonlyRef)]
+
 ## Conversions
 
-For any structure type, there exist [boxing and unboxing](../../programming-guide/types/boxing-and-unboxing.md) conversions to and from the <xref:System.ValueType?displayProperty=nameWithType> and <xref:System.Object?displayProperty=nameWithType> types. There exist also boxing and unboxing conversions between a structure type and any interface that it implements.
+For any structure type (except [`ref` struct](#ref-struct) types), there exist [boxing and unboxing](../../programming-guide/types/boxing-and-unboxing.md) conversions to and from the <xref:System.ValueType?displayProperty=nameWithType> and <xref:System.Object?displayProperty=nameWithType> types. There exist also boxing and unboxing conversions between a structure type and any interface that it implements.
 
 ## C# language specification
 
@@ -108,6 +131,7 @@ For more information about features introduced in C# 7.2 and later, see the foll
 
 - [Readonly structs](~/_csharplang/proposals/csharp-7.2/readonly-ref.md#readonly-structs)
 - [Readonly instance members](~/_csharplang/proposals/csharp-8.0/readonly-instance-members.md)
+- [Compile-time safety for ref-like types](~/_csharplang/proposals/csharp-7.2/span-safety.md)
 
 ## See also
 

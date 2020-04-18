@@ -95,4 +95,19 @@ namespace builtin_types
             // </SnippetReadonlyOverride>
         }
     }
+
+    namespace ref_struct
+    {
+        // <SnippetRefStruct>
+        public ref struct CustomRef
+        {
+            public Span<int> Inputs;
+            public Span<int> Outputs;
+        }
+        // </SnippetRefStruct>
+
+        // <SnippetReadonlyRef>
+        public readonly ref struct Example { }
+        // </SnippetReadonlyRef>
+    }
 }

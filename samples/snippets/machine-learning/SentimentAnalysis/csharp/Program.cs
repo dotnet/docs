@@ -20,8 +20,8 @@ namespace SentimentAnalysis
 
         static void Main(string[] args)
         {
-            // Create ML.NET context/local environment - allows you to add steps in order to keep everything together 
-            // as you discover the ML.NET trainers and transforms 
+            // Create ML.NET context/local environment - allows you to add steps in order to keep everything together
+            // as you discover the ML.NET trainers and transforms
             // <SnippetCreateMLContext>
             MLContext mlContext = new MLContext();
             // </SnippetCreateMLContext>
@@ -52,8 +52,8 @@ namespace SentimentAnalysis
 
         public static TrainTestData LoadData(MLContext mlContext)
         {
-            // Note that this case, loading your training data from a file, 
-            // is the easiest way to get started, but ML.NET also allows you 
+            // Note that this case, loading your training data from a file,
+            // is the easiest way to get started, but ML.NET also allows you
             // to load data from databases or in-memory collections.
             // <SnippetLoadData>
             IDataView dataView = mlContext.Data.LoadFromTextFile<SentimentData>(_dataPath, hasHeader: false);
@@ -66,21 +66,21 @@ namespace SentimentAnalysis
             TrainTestData splitDataView = mlContext.Data.TrainTestSplit(dataView, testFraction: 0.2);
             // </SnippetSplitData>
 
-            // <SnippetReturnSplitData>        
+            // <SnippetReturnSplitData>
             return splitDataView;
-            // </SnippetReturnSplitData>           
+            // </SnippetReturnSplitData>
         }
 
         public static ITransformer BuildAndTrainModel(MLContext mlContext, IDataView splitTrainSet)
         {
             // Create a flexible pipeline (composed by a chain of estimators) for creating/training the model.
-            // This is used to format and clean the data.  
-            // Convert the text column to numeric vectors (Features column) 
+            // This is used to format and clean the data.
+            // Convert the text column to numeric vectors (Features column)
             // <SnippetFeaturizeText>
             var estimator = mlContext.Transforms.Text.FeaturizeText(outputColumnName: "Features", inputColumnName: nameof(SentimentData.SentimentText))
             //</SnippetFeaturizeText>
             // append the machine learning task to the estimator
-            // <SnippetAddTrainer> 
+            // <SnippetAddTrainer>
             .Append(mlContext.BinaryClassification.Trainers.SdcaLogisticRegression(labelColumnName: "Label", featureColumnName: "Features"));
             // </SnippetAddTrainer>
 
@@ -102,7 +102,7 @@ namespace SentimentAnalysis
         {
             // Evaluate the model and show accuracy stats
 
-            //Take the data in, make transformations, output the data. 
+            //Take the data in, make transformations, output the data.
             // <SnippetTransformData>
             Console.WriteLine("=============== Evaluating Model accuracy with Test data===============");
             IDataView predictions = model.Transform(splitTestSet);
@@ -114,7 +114,7 @@ namespace SentimentAnalysis
             CalibratedBinaryClassificationMetrics metrics = mlContext.BinaryClassification.Evaluate(predictions, "Label");
             // </SnippetEvaluate>
 
-            // The Accuracy metric gets the accuracy of a model, which is the proportion 
+            // The Accuracy metric gets the accuracy of a model, which is the proportion
             // of correct predictions in the test set.
 
             // The AreaUnderROCCurve metric is equal to the probability that the algorithm ranks
@@ -181,7 +181,7 @@ namespace SentimentAnalysis
             };
             // </SnippetCreateTestIssues>
 
-            // Load batch comments just created 
+            // Load batch comments just created
             // <SnippetPrediction>
             IDataView batchComments = mlContext.Data.LoadFromEnumerable(sentiments);
 
@@ -198,14 +198,14 @@ namespace SentimentAnalysis
             // </SnippetAddInfoMessage>
 
             Console.WriteLine();
-   
+
             // <SnippetDisplayResults>
             foreach (SentimentPrediction prediction  in predictedResults)
             {
                 Console.WriteLine($"Sentiment: {prediction.SentimentText} | Prediction: {(Convert.ToBoolean(prediction.Prediction) ? "Positive" : "Negative")} | Probability: {prediction.Probability} ");
             }
             Console.WriteLine("=============== End of predictions ===============");
-            // </SnippetDisplayResults>       
+            // </SnippetDisplayResults>
         }
     }
 }

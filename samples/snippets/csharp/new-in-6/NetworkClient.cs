@@ -29,7 +29,7 @@ namespace NewStyle
 
         // <AwaitFinally>
         public static async Task<string> MakeRequestAndLogFailures()
-        { 
+        {
             await logMethodEntrance();
             var client = new System.Net.Http.HttpClient();
             var streamTask = client.GetStringAsync("https://localHost:10000");
@@ -70,7 +70,7 @@ namespace OldStyle
     {
         // <ExceptionFilterOld>
         public static async Task<string> MakeRequest()
-        { 
+        {
             var client = new System.Net.Http.HttpClient();
             var streamTask = client.GetStringAsync("https://localHost:10000");
             try {

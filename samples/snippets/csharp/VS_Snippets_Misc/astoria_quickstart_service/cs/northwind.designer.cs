@@ -35,14 +35,14 @@ using System.Runtime.Serialization;
 namespace NorthwindService
 {
     #region Contexts
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
     public partial class NorthwindEntities : ObjectContext
     {
         #region Constructors
-    
+
         /// <summary>
         /// Initializes a new NorthwindEntities object using the connection string found in the 'NorthwindEntities' section of the application configuration file.
         /// </summary>
@@ -51,7 +51,7 @@ namespace NorthwindService
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
         }
-    
+
         /// <summary>
         /// Initialize a new NorthwindEntities object.
         /// </summary>
@@ -60,7 +60,7 @@ namespace NorthwindService
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
         }
-    
+
         /// <summary>
         /// Initialize a new NorthwindEntities object.
         /// </summary>
@@ -69,17 +69,17 @@ namespace NorthwindService
             this.ContextOptions.LazyLoadingEnabled = true;
             OnContextCreated();
         }
-    
+
         #endregion
-    
+
         #region Partial Methods
-    
+
         partial void OnContextCreated();
-    
+
         #endregion
-    
+
         #region ObjectSet Properties
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -95,7 +95,7 @@ namespace NorthwindService
             }
         }
         private ObjectSet<Category> _Categories;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -111,7 +111,7 @@ namespace NorthwindService
             }
         }
         private ObjectSet<CustomerDemographic> _CustomerDemographics;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -127,7 +127,7 @@ namespace NorthwindService
             }
         }
         private ObjectSet<Customer> _Customers;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>

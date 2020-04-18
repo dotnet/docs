@@ -20,8 +20,8 @@ class Example
          CultureInfo newCulture = new CultureInfo(cultures[cultureNdx]);
          Thread.CurrentThread.CurrentCulture = newCulture;
          Thread.CurrentThread.CurrentUICulture = newCulture;
-         ResourceManager rm = new ResourceManager("Example.Greetings", 
-                                                  typeof(Example).Assembly); 
+         ResourceManager rm = new ResourceManager("Example.Greetings",
+                                                  typeof(Example).Assembly);
          string greeting = String.Format("The current culture is {0}.\n{1}",
                                          Thread.CurrentThread.CurrentUICulture.Name,
                                          rm.GetString("HelloString"));

@@ -9,10 +9,10 @@ namespace operators
             Console.WriteLine("==== ++ and -- operators");
             Increment();
             Decrement();
-            
+
             Console.WriteLine("==== Unary + and - operators");
             UnaryPlusAndMinus();
-            
+
             Console.WriteLine("==== *, /, %, +, and - operators");
             Multiplication();
             IntegerDivision();
@@ -22,14 +22,14 @@ namespace operators
             FloatingPointRemainder();
             Addition();
             Subtraction();
-            
+
             Console.WriteLine("==== Precedence and associativity examples");
             PrecedenceAndAssociativity();
-            
+
             Console.WriteLine("==== Compound assignment");
             CompoundAssignment();
             CompoundAssignmentWithCast();
-            
+
             Console.WriteLine("==== Special cases");
             CheckedUnchecked();
             FloatingPointOverflow();
@@ -200,7 +200,7 @@ namespace operators
             // <SnippetCompoundAssignmentWithCast>
             byte a = 200;
             byte b = 100;
-            
+
             var c = a + b;
             Console.WriteLine(c.GetType());  // output: System.Int32
             Console.WriteLine(c);  // output: 300

@@ -140,7 +140,7 @@ namespace operators
             var lines = new List<string> { "one", "two", "three", "four" };
             string prelast = lines[^2];
             Console.WriteLine(prelast);  // output: three
-            
+
             string word = "Twenty";
             Index toFirst = ^word.Length;
             char first = word[toFirst];

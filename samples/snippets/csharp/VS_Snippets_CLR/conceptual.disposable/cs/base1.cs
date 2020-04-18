@@ -13,31 +13,31 @@ public class DisposableStreamResource : IDisposable
    protected const uint FILE_ATTRIBUTE_NORMAL = 0x80;
    protected IntPtr INVALID_HANDLE_VALUE = new IntPtr(-1);
    private const int INVALID_FILE_SIZE = unchecked((int) 0xFFFFFFFF);
-   
+
    // Define Windows APIs.
    [DllImport("kernel32.dll", EntryPoint = "CreateFileW", CharSet = CharSet.Unicode)]
    protected static extern IntPtr CreateFile (
-                                  string lpFileName, uint dwDesiredAccess, 
-                                  uint dwShareMode, IntPtr lpSecurityAttributes, 
-                                  uint dwCreationDisposition, uint dwFlagsAndAttributes, 
+                                  string lpFileName, uint dwDesiredAccess,
+                                  uint dwShareMode, IntPtr lpSecurityAttributes,
+                                  uint dwCreationDisposition, uint dwFlagsAndAttributes,
                                   IntPtr hTemplateFile);
-   
+
    [DllImport("kernel32.dll")]
    private static extern int GetFileSize(SafeFileHandle hFile, out int lpFileSizeHigh);
-    
+
    // Define locals.
    private bool disposed = false;
-   private SafeFileHandle safeHandle; 
+   private SafeFileHandle safeHandle;
    private long bufferSize;
    private int upperWord;
-   
+
    public DisposableStreamResource(string filename)
    {
       if (filename == null)
          throw new ArgumentNullException("The filename cannot be null.");
       else if (filename == "")
          throw new ArgumentException("The filename cannot be an empty string.");
-            
+
       IntPtr handle = CreateFile(filename, GENERIC_READ, FILE_SHARE_READ,
                                  IntPtr.Zero, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL,
                                  IntPtr.Zero);
@@ -45,23 +45,23 @@ public class DisposableStreamResource : IDisposable
          safeHandle = new SafeFileHandle(handle, true);
       else
          throw new FileNotFoundException(String.Format("Cannot open '{0}'", filename));
-      
+
       // Get file size.
-      bufferSize = GetFileSize(safeHandle, out upperWord); 
+      bufferSize = GetFileSize(safeHandle, out upperWord);
       if (bufferSize == INVALID_FILE_SIZE)
          bufferSize = -1;
-      else if (upperWord > 0) 
+      else if (upperWord > 0)
          bufferSize = (((long)upperWord) << 32) + bufferSize;
    }
-   
-   public long Size 
+
+   public long Size
    { get { return bufferSize; } }
 
    public void Dispose()
    {
       Dispose(true);
       GC.SuppressFinalize(this);
-   }           
+   }
 
    protected virtual void Dispose(bool disposing)
    {
@@ -70,11 +70,11 @@ public class DisposableStreamResource : IDisposable
       // Dispose of managed resources here.
       if (disposing)
          safeHandle.Dispose();
-      
+
       // Dispose of any unmanaged resources not wrapped in safe handles.
-      
+
       disposed = true;
-   }  
+   }
 }
 // </Snippet9>
 

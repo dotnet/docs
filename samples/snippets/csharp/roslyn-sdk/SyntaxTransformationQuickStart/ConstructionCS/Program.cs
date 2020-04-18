@@ -13,12 +13,12 @@ namespace ConstructionCS
     class Program
     {
         // <SnippetDeclareSampleCode>
-        private const string sampleCode = 
+        private const string sampleCode =
 @"using System;
 using System.Collections;
 using System.Linq;
 using System.Text;
- 
+
 namespace HelloWorld
 {
     class Program

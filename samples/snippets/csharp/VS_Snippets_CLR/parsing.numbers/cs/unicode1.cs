@@ -13,11 +13,11 @@ public class Example
       // Define a string of Fullwidth digits 1-5.
       value = "\uFF11\uFF12\uFF13\uFF14\uFF15";
       ParseDigits(value);
-      
+
       // Define a string of Arabic-Indic digits 1-5.
       value = "\u0661\u0662\u0663\u0664\u0665";
       ParseDigits(value);
-      
+
       // Define a string of Bangla digits 1-5.
       value = "\u09e7\u09e8\u09e9\u09ea\u09eb";
       ParseDigits(value);
@@ -28,10 +28,10 @@ public class Example
       try {
          int number = Int32.Parse(value);
          Console.WriteLine("'{0}' --> {1}", value, number);
-      }   
+      }
       catch (FormatException) {
-         Console.WriteLine("Unable to parse '{0}'.", value);      
-      }     
+         Console.WriteLine("Unable to parse '{0}'.", value);
+      }
    }
 }
 // The example displays the following output:

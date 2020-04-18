@@ -27,7 +27,7 @@ namespace Reflection
             IEnumerable<MethodInfo> mList = t.DeclaredMethods;
 
             StringBuilder sb = new StringBuilder();
-           
+
             sb.Append("Properties:");
             foreach (PropertyInfo p in pList)
             {
@@ -39,7 +39,7 @@ namespace Reflection
             {
                 sb.Append("\n" + m.DeclaringType.Name + ": " + m.Name);
             }
-            
+
             textblock1.Text = sb.ToString();
         }
     }

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using System.Reflection.Emit;
 
-// Declare a generic delegate that can be used to execute the 
+// Declare a generic delegate that can be used to execute the
 // finished method.
 //
 //<Snippet24>
@@ -19,12 +19,12 @@ class GenericMethodBuilder
     // (class), must have a parameterless constructor (new()), and must
     // implement ICollection<TInput>. This interface constraint
     // ensures that ICollection<TInput>.Add can be used to add
-    // elements to the TOutput object the method creates. The method 
-    // has one formal parameter, input, which is an array of TInput. 
+    // elements to the TOutput object the method creates. The method
+    // has one formal parameter, input, which is an array of TInput.
     // The elements of this array are copied to the new TOutput.
     //
     //<Snippet20>
-    public static TOutput Factory<TInput, TOutput>(TInput[] tarray) 
+    public static TOutput Factory<TInput, TOutput>(TInput[] tarray)
         where TOutput : class, ICollection<TInput>, new()
     {
         TOutput ret = new TOutput();
@@ -42,14 +42,14 @@ class GenericMethodBuilder
     {
         // The following shows the usage syntax of the C#
         // version of the generic method emitted by this program.
-        // Note that the generic parameters must be specified 
-        // explicitly, because the compiler does not have enough 
+        // Note that the generic parameters must be specified
+        // explicitly, because the compiler does not have enough
         // context to infer the type of TOutput. In this case, TOutput
         // is a generic List containing strings.
-        // 
+        //
         //<Snippet17>
         string[] arr = {"a", "b", "c", "d", "e"};
-        List<string> list1 = 
+        List<string> list1 =
             GenericMethodBuilder.Factory<string, List <string>>(arr);
         Console.WriteLine("The first element is: {0}", list1[0]);
         //</Snippet17>
@@ -60,33 +60,33 @@ class GenericMethodBuilder
         //<Snippet2>
         AssemblyName asmName = new AssemblyName("DemoMethodBuilder1");
         AppDomain domain = AppDomain.CurrentDomain;
-        AssemblyBuilder demoAssembly = 
-            domain.DefineDynamicAssembly(asmName, 
+        AssemblyBuilder demoAssembly =
+            domain.DefineDynamicAssembly(asmName,
                 AssemblyBuilderAccess.RunAndSave);
 
-        // Define the module that contains the code. For an 
-        // assembly with one module, the module name is the 
+        // Define the module that contains the code. For an
+        // assembly with one module, the module name is the
         // assembly name plus a file extension.
-        ModuleBuilder demoModule = 
-            demoAssembly.DefineDynamicModule(asmName.Name, 
+        ModuleBuilder demoModule =
+            demoAssembly.DefineDynamicModule(asmName.Name,
                 asmName.Name+".dll");
         //</Snippet2>
-      
+
         // Define a type to contain the method.
         //<Snippet3>
-        TypeBuilder demoType = 
+        TypeBuilder demoType =
             demoModule.DefineType("DemoType", TypeAttributes.Public);
         //</Snippet3>
 
         // Define a public static method with standard calling
         // conventions. Do not specify the parameter types or the
-        // return type, because type parameters will be used for 
+        // return type, because type parameters will be used for
         // those types, and the type parameters have not been
         // defined yet.
         //
         //<Snippet4>
-        MethodBuilder factory = 
-            demoType.DefineMethod("Factory", 
+        MethodBuilder factory =
+            demoType.DefineMethod("Factory",
                 MethodAttributes.Public | MethodAttributes.Static);
         //</Snippet4>
 
@@ -96,7 +96,7 @@ class GenericMethodBuilder
         //
         //<Snippet5>
         string[] typeParameterNames = {"TInput", "TOutput"};
-        GenericTypeParameterBuilder[] typeParameters = 
+        GenericTypeParameterBuilder[] typeParameters =
             factory.DefineGenericParameters(typeParameterNames);
 
         GenericTypeParameterBuilder TInput = typeParameters[0];
@@ -107,10 +107,10 @@ class GenericMethodBuilder
         // The type parameter TOutput is constrained to be a reference
         // type, and to have a parameterless constructor. This ensures
         // that the Factory method can create the collection type.
-        // 
+        //
         //<Snippet6>
         TOutput.SetGenericParameterAttributes(
-            GenericParameterAttributes.ReferenceTypeConstraint | 
+            GenericParameterAttributes.ReferenceTypeConstraint |
             GenericParameterAttributes.DefaultConstructorConstraint);
         //</Snippet6>
 
@@ -119,7 +119,7 @@ class GenericMethodBuilder
         // implement the ICollection<T> interface, to ensure that
         // they have an Add method that can be used to add elements.
         //
-        // To create the constraint, first use MakeGenericType to bind 
+        // To create the constraint, first use MakeGenericType to bind
         // the type parameter TInput to the ICollection<T> interface,
         // returning the type ICollection<TInput>, then pass
         // the newly created type to the SetInterfaceConstraints
@@ -146,7 +146,7 @@ class GenericMethodBuilder
         factory.SetReturnType(TOutput);
         //</Snippet9>
 
-        // Generate a code body for the method. 
+        // Generate a code body for the method.
         // -----------------------------------
         // Get a code generator and declare local variables and
         // labels. Save the input array to a local variable.
@@ -166,19 +166,19 @@ class GenericMethodBuilder
         ilgen.Emit(OpCodes.Stloc_S, input);
         //</Snippet10>
 
-        // Create an instance of TOutput, using the generic method 
-        // overload of the Activator.CreateInstance method. 
+        // Create an instance of TOutput, using the generic method
+        // overload of the Activator.CreateInstance method.
         // Using this overload requires the specified type to have
-        // a parameterless constructor, which is the reason for adding 
+        // a parameterless constructor, which is the reason for adding
         // that constraint to TOutput. Create the constructed generic
         // method by passing TOutput to MakeGenericMethod. After
         // emitting code to call the method, emit code to store the
-        // new TOutput in a local variable. 
+        // new TOutput in a local variable.
         //
         //<Snippet11>
-        MethodInfo createInst = 
+        MethodInfo createInst =
             typeof(Activator).GetMethod("CreateInstance", Type.EmptyTypes);
-        MethodInfo createInstOfTOutput = 
+        MethodInfo createInstOfTOutput =
             createInst.MakeGenericMethod(TOutput);
 
         ilgen.Emit(OpCodes.Call, createInstOfTOutput);
@@ -197,7 +197,7 @@ class GenericMethodBuilder
 
         // Loop through the array, adding each element to the new
         // instance of TOutput. Note that in order to get a MethodInfo
-        // for ICollection<TInput>.Add, it is necessary to first 
+        // for ICollection<TInput>.Add, it is necessary to first
         // get the Add method for the generic type defintion,
         // ICollection<T>.Add. This is because it is not possible
         // to call GetMethod on icollOfTInput. The static overload of
@@ -218,13 +218,13 @@ class GenericMethodBuilder
 
         // Mark the beginning of the loop. Push the ICollection
         // reference on the stack, so it will be in position for the
-        // call to Add. Then push the array and the index on the 
+        // call to Add. Then push the array and the index on the
         // stack, get the array element, and call Add (represented
         // by the MethodInfo mAdd) to add it to the collection.
         //
         // The other ten instructions just increment the index
         // and test for the end of the loop. Note the MarkLabel
-        // method, which sets the point in the code where the 
+        // method, which sets the point in the code where the
         // loop is entered. (See the earlier Br_S to enterLoop.)
         //
         //<Snippet13>
@@ -263,24 +263,24 @@ class GenericMethodBuilder
         //</Snippet14>
 
         // To create a constructed generic method that can be
-        // executed, first call the GetMethod method on the completed 
+        // executed, first call the GetMethod method on the completed
         // type to get the generic method definition. Call MakeGenericType
         // on the generic method definition to obtain the constructed
         // method, passing in the type arguments. In this case, the
         // constructed method has string for TInput and List<string>
-        // for TOutput. 
+        // for TOutput.
         //
         //<Snippet21>
         MethodInfo m = dt.GetMethod("Factory");
-        MethodInfo bound = 
+        MethodInfo bound =
             m.MakeGenericMethod(typeof(string), typeof(List<string>));
 
         // Display a string representing the bound method.
         Console.WriteLine(bound);
         //</Snippet21>
 
-        // Once the generic method is constructed, 
-        // you can invoke it and pass in an array of objects 
+        // Once the generic method is constructed,
+        // you can invoke it and pass in an array of objects
         // representing the arguments. In this case, there is only
         // one element in that array, the argument 'arr'.
         //
@@ -292,14 +292,14 @@ class GenericMethodBuilder
         //</Snippet22>
 
         // You can get better performance from multiple calls if
-        // you bind the constructed method to a delegate. The 
-        // following code uses the generic delegate D defined 
+        // you bind the constructed method to a delegate. The
+        // following code uses the generic delegate D defined
         // earlier.
         //
         //<Snippet23>
         Type dType = typeof(D<string, List <string>>);
         D<string, List <string>> test;
-        test = (D<string, List <string>>) 
+        test = (D<string, List <string>>)
             Delegate.CreateDelegate(dType, bound);
 
         List<string> list3 = test(arr);

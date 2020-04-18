@@ -52,7 +52,7 @@ namespace Samples2
             ProtectionLevel = ProtectionLevel.EncryptAndSign)]
         double Add(double a, double b);
     }
-    //</snippet4> 
+    //</snippet4>
 }
 namespace Samples3
 {

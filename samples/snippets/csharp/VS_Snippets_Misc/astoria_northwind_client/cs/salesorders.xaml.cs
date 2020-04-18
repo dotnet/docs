@@ -51,13 +51,13 @@ namespace NorthwindClient
                 // Instantiate the DataServiceContext.
                 context = new NorthwindEntities(svcUri);
 
-                // Define a query that returns Orders and 
+                // Define a query that returns Orders and
                 // Order_Details for a specific customer.
                 var ordersQuery = from o in context.Orders.Expand("Order_Details")
                                   where o.Customer.CustomerID == customerId
                                   select o;
 
-                // Create an DataServiceCollection<T> based on 
+                // Create an DataServiceCollection<T> based on
                 // execution of the query for Orders.
                 DataServiceCollection<Order> customerOrders =
                     new DataServiceCollection<Order>(ordersQuery);

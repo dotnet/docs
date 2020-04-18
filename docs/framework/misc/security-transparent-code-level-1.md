@@ -125,4 +125,4 @@ public class B
 ## See also
 
 - [Security-Transparent Code, Level 2](security-transparent-code-level-2.md)
-- [Security Changes](../security/security-changes.md)
+- [Security Changes](https://docs.microsoft.com/previous-versions/dotnet/framework/security/security-changes)

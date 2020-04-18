@@ -7,7 +7,7 @@ class Program
 {
     static void Main()
     {
-        string connectionString = 
+        string connectionString =
             "Data Source=ThisOracleServer;Integrated Security=yes;";
         string queryString =
             "SELECT CUSTOMER_ID, NAME FROM DEMO.CUSTOMER";

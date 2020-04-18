@@ -16,7 +16,7 @@ using System.Security.Principal;
 
 namespace Microsoft.ServiceModel.Samples
 {
-    // Define a service contract. 
+    // Define a service contract.
     // <Snippet1>
     [ServiceContract(Namespace = "http://Microsoft.ServiceModel.Samples")]
     [ServiceKnownType(typeof(PurchaseOrder))]

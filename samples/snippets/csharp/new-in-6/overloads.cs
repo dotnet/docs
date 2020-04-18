@@ -5,16 +5,16 @@ namespace NewStyle
     public class Example
     {
         // <AsyncMethod>
-        static Task DoThings() 
+        static Task DoThings()
         {
-             return Task.FromResult(0); 
+             return Task.FromResult(0);
         }
         // </AsyncMethod>
 
         public static void TestMethod()
         {
             // <MethodGroup>
-            Task.Run(DoThings); 
+            Task.Run(DoThings);
             // </MethodGroup>
 
             // <Lambda>

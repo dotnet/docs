@@ -8,20 +8,20 @@ public class Example
    {
       Char[] buffer = new Char[50];
       {
-         StreamReader s = new StreamReader("File1.txt"); 
+         StreamReader s = new StreamReader("File1.txt");
          try {
             int charsRead = 0;
             while (s.Peek() != -1) {
                charsRead = s.Read(buffer, 0, buffer.Length);
                //
                // Process characters read.
-               //   
+               //
             }
          }
          finally {
             if (s != null)
-               ((IDisposable)s).Dispose();     
-         }       
+               ((IDisposable)s).Dispose();
+         }
       }
    }
 }

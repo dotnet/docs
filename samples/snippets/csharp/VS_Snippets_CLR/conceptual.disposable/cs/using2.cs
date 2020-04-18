@@ -9,13 +9,13 @@ public class Example
       Char[] buffer = new Char[50];
       StreamReader s = null;
       try {
-         s = new StreamReader("File1.txt"); 
+         s = new StreamReader("File1.txt");
          int charsRead = 0;
          while (s.Peek() != -1) {
             charsRead = s.Read(buffer, 0, buffer.Length);
             //
             // Process characters read.
-            //   
+            //
          }
       }
       finally {

@@ -14,7 +14,7 @@ public class InvoiceItem
       if (sku <= 0)
          throw new ArgumentOutOfRangeException("The item number is zero or negative.");
       itemId = (uint) sku;
-      
+
       qty = quantity;
    }
 
@@ -27,7 +27,7 @@ public class InvoiceItem
    public int InvoiceId
    {
       get { return (int) invId; }
-      set { 
+      set {
          if (value <= 0)
             throw new ArgumentOutOfRangeException("The invoice number is zero or negative.");
          invId = (uint) value; }

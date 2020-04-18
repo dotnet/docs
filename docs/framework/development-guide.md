@@ -5,12 +5,11 @@ helpviewer_keywords:
   - ".NET Framework, development guide"
 ms.assetid: 26e3d285-24c3-435c-a797-9fe5affb8525
 ---
-# .NET Framework Development Guide
+# .NET Framework development guide
+
 This section explains how to create, configure, debug, secure, and deploy your .NET Framework apps. The section also provides information about technology areas such as dynamic programming, interoperability, extensibility, memory management, and threading.  
   
-## In This Section  
- [Application Essentials](../standard/application-essentials.md)  
- Provides information about basic app development tasks, such as programming with app domains and assemblies, using attributes, formatting and parsing base types, using collections, handling events and exceptions, using files and data streams, and using generics.  
+## In This Section
   
  [Data and Modeling](./data/index.md)  
  Provides information about how to access data using ADO.NET, Language Integrated Query (LINQ), WCF Data Services, and XML.  

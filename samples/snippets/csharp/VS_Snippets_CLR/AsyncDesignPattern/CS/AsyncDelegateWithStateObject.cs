@@ -12,7 +12,7 @@ using System.Collections;
 
 namespace Examples.AdvancedProgramming.AsynchronousOperations
 {
-// Create a state object that holds each requested host name, 
+// Create a state object that holds each requested host name,
 // an associated IPHostEntry object or a SocketException.
     public class HostRequest
     {
@@ -27,22 +27,22 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
         {
             hostName = name;
         }
-        
+
         public string HostName
         {
-            get 
+            get
             {
                 return hostName;
             }
         }
-        
+
         public SocketException ExceptionObject
         {
-            get 
+            get
             {
                 return e;
             }
-            set 
+            set
             {
                  e = value;
             }
@@ -50,17 +50,17 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
 
         public IPHostEntry HostEntry
         {
-            get 
+            get
             {
                 return entry;
             }
-            set 
+            set
             {
                 entry = value;
             }
         }
     }
-    
+
     public class UseDelegateAndStateForAsyncCallback
     {
         // The number of pending requests.
@@ -74,7 +74,7 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
         }
         public static void Main()
         {
-            // Create the delegate that will process the results of the 
+            // Create the delegate that will process the results of the
             // asynchronous request.
             AsyncCallback callBack = new AsyncCallback(ProcessDnsInformation);
             string host;
@@ -104,7 +104,7 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
             {
                     if (r.ExceptionObject != null)
                     {
-                        Console.WriteLine("Request for host {0} returned the following error: {1}.", 
+                        Console.WriteLine("Request for host {0} returned the following error: {1}.",
                             r.HostName, r.ExceptionObject.Message);
                     }
                     else
@@ -138,7 +138,7 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
         {
            // Get the state object associated with this request.
            HostRequest request = (HostRequest) result.AsyncState;
-            try 
+            try
             {
                 // Get the results and store them in the state object.
                 IPHostEntry host = Dns.EndGetHostEntry(result);
@@ -149,7 +149,7 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
                 // Store any SocketExceptions.
                 request.ExceptionObject = e;
             }
-            finally 
+            finally
             {
                 // Decrement the request counter in a thread-safe manner.
                 Interlocked.Decrement(ref requestCounter);

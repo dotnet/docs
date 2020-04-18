@@ -11,7 +11,7 @@ namespace SystemTextJsonSamples
             string jsonString;
             WeatherForecastWithDictionary weatherForecast = WeatherForecastFactories.CreateWeatherForecastWithDictionary();
             weatherForecast.DisplayPropertyValues();
-           
+
             // <SnippetSerialize>
             var options = new JsonSerializerOptions
             {

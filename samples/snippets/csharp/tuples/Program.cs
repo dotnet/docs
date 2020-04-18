@@ -94,7 +94,7 @@ namespace tuples
         }
 
         private static void MemberNameConversions()
-        { 
+        {
             // <SnippetMemberNames>
             (int a, string b) pair = (1, "Hello");
             (int z, string y) another = (1, "Hello");
@@ -144,7 +144,7 @@ namespace tuples
 
             var xCoords = (pt1.X, pt2.X);
             // There are no semantic names for the fields
-            // of xCoords. 
+            // of xCoords.
 
             // Accessing the first field:
             Console.WriteLine(xCoords.Item1);
@@ -156,7 +156,7 @@ namespace tuples
         private static void AssignmentStatements()
         {
             #region 03_VariableCreation
-            // The 'arity' and 'shape' of all these tuples are compatible. 
+            // The 'arity' and 'shape' of all these tuples are compatible.
             // The only difference is the field names being used.
             var unnamed = (42, "The meaning of life");
             var anonymous = (16, "a perfect square");
@@ -174,10 +174,10 @@ namespace tuples
 
             // unnamed to unnamed:
             anonymous = unnamed;
-            
+
             // named tuples.
             named = differentNamed;
-            // The field names are not assigned. 'named' still has 
+            // The field names are not assigned. 'named' still has
             // fields that can be referred to as 'answer' and 'message':
             Console.WriteLine($"{named.Answer}, {named.Message}");
 

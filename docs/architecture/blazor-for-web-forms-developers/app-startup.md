@@ -13,7 +13,7 @@ Applications that are written for ASP.NET typically have a `global.asax.cs` file
 
 ## Application_Start and Web Forms
 
-The default web forms `Application_Start` method has grown in purpose over the last 10 years of development to contain pointers to many configuration methods.  A fresh web forms project with the default template in Visual Studio 2019 now contains pointers to the following configuration tasks:
+The default web forms `Application_Start` method has grown in purpose over the last 10 years of development to handle many configuration task.  A fresh web forms project with the default template in Visual Studio 2019 now contains the following configuration logic:
 
 - `RouteConfig` - Application URL routing
 - `BundleConfig` - CSS and JavaScript bundling and minification 

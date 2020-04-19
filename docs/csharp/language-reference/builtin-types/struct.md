@@ -35,13 +35,13 @@ All data members of a `readonly` struct must be read-only as follows:
 That guarantees that no member of a `readonly` struct modifies the state of the struct.
 
 > [!NOTE]
-> In a `readonly` struct, a data member of a mutable reference type still can mutate its own state. For example, you cannot replace a <xref:System.Collections.Generic.List%601> instance, but you can add new elements to it.
+> In a `readonly` struct, a data member of a mutable reference type still can mutate its own state. For example, you can't replace a <xref:System.Collections.Generic.List%601> instance, but you can add new elements to it.
 
 ## `readonly` instance members
 
-Beginning with C# 8.0, you can also use the `readonly` modifier to declare that an instance member doesn't modify the state of a struct. If you cannot declare the whole structure type as `readonly`, use the `readonly` modifier to mark the instance members that don't modify the state of the struct. In a `readonly` struct, every instance member is implicitly `readonly`.
+Beginning with C# 8.0, you can also use the `readonly` modifier to declare that an instance member doesn't modify the state of a struct. If you can't declare the whole structure type as `readonly`, use the `readonly` modifier to mark the instance members that don't modify the state of the struct. In a `readonly` struct, every instance member is implicitly `readonly`.
 
-Within a `readonly` instance member, you cannot assign to structure's instance fields. However, a `readonly` member can call a non-`readonly` member. In that case the compiler creates a copy of the structure instance and calls the non-`readonly` member on that copy. As a result, the original structure instance is not modified.
+Within a `readonly` instance member, you can't assign to structure's instance fields. However, a `readonly` member can call a non-`readonly` member. In that case the compiler creates a copy of the structure instance and calls the non-`readonly` member on that copy. As a result, the original structure instance is not modified.
 
 Typically, you apply the `readonly` modifier to the following kinds of instance members:
 
@@ -62,7 +62,7 @@ Typically, you apply the `readonly` modifier to the following kinds of instance 
   > [!NOTE]
   > The compiler declares a `get` accessor of an [auto-implemented property](../../programming-guide/classes-and-structs/auto-implemented-properties.md) as `readonly`, regardless of presence of the `readonly` modifier in a property declaration.
 
-You cannot apply the `readonly` modifier to static members of a structure type.
+You can't apply the `readonly` modifier to static members of a structure type.
 
 The compiler may make use of the `readonly` modifier for performance optimizations. For more information, see [Write safe and efficient C# code](../../write-safe-efficient-code.md).
 
@@ -70,19 +70,19 @@ The compiler may make use of the `readonly` modifier for performance optimizatio
 
 When you design a structure type, you have the same capabilities as with a [class](../keywords/class.md) type, with the following exceptions:
 
-- You cannot declare a parameterless constructor. Every structure type already provides an implicit parameterless constructor that produces the [default value](default-values.md) of the type.
+- You can't declare a parameterless constructor. Every structure type already provides an implicit parameterless constructor that produces the [default value](default-values.md) of the type.
 
-- You cannot initialize an instance field or property at its declaration. However, you can initialize a [static](../keywords/static.md) or [const](../keywords/const.md) field or a static property at its declaration.
+- You can't initialize an instance field or property at its declaration. However, you can initialize a [static](../keywords/static.md) or [const](../keywords/const.md) field or a static property at its declaration.
 
 - A constructor of a structure type must initialize all instance fields of the type.
 
-- A structure type cannot inherit from other class or structure type and it cannot be the base of a class. However, a structure type can implement [interfaces](../keywords/interface.md).
+- A structure type can't inherit from other class or structure type and it can't be the base of a class. However, a structure type can implement [interfaces](../keywords/interface.md).
 
-- You cannot declare a [finalizer](../../programming-guide/classes-and-structs/destructors.md) within a structure type.
+- You can't declare a [finalizer](../../programming-guide/classes-and-structs/destructors.md) within a structure type.
 
 ## Instantiation of a structure type
 
-In C#, you must initialize a declared variable before it can be used. Because a structure-type variable cannot be `null` (unless it's a variable of a [nullable value type](nullable-value-types.md)), you must instantiate an instance of the corresponding type. There are several ways to do that.
+In C#, you must initialize a declared variable before it can be used. Because a structure-type variable can't be `null` (unless it's a variable of a [nullable value type](nullable-value-types.md)), you must instantiate an instance of the corresponding type. There are several ways to do that.
 
 Typically, you instantiate a structure type by calling an appropriate constructor with the [`new`](../operators/new-operator.md) operator. Every structure type has at least one constructor. That's an implicit parameterless constructor, which produces the [default value](default-values.md) of the type. You can also use a [default value expression](../operators/default.md) to produce the default value of a type.
 
@@ -98,26 +98,26 @@ When you pass a structure-type variable to a method as an argument or return a s
 
 ## `ref` struct
 
-Beginning with C# 7.2, you use the `ref` modifier in the declaration of a structure type to indicate that instances of that type can be allocated only on the stack. In .NET, examples of a `ref` struct are <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>.
+Beginning with C# 7.2, you can use the `ref` modifier in the declaration of a structure type. Instances of a `ref` struct type are allocated on the stack and can't escape to the managed heap. To ensure that, the compiler limits the usage of `ref` struct types as follows:
 
-Because instances of a `ref` struct can be allocated only on the stack and cannot escape to the managed heap, the compiler limits the usage of `ref` struct types as follows:
+- A `ref` struct can't be the element type of an array.
+- A `ref` struct can't be a declared type of a field of a class or a non-`ref` struct.
+- A `ref` struct can't implement interfaces.
+- A `ref` struct can't be boxed to <xref:System.ValueType?displayProperty=nameWithType> or <xref:System.Object?displayProperty=nameWithType>.
+- A `ref` struct can't be a type argument.
+- A `ref` struct variable can't be captured by a [lambda expression](../../programming-guide/statements-expressions-operators/lambda-expressions.md) or a [local function](../../programming-guide/classes-and-structs/local-functions.md).
+- A `ref` struct variable can't be used in an [`async`](../keywords/async.md) method. However, you can use `ref` struct variables in synchronous methods, for example, in those that return <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>.
+- A `ref` struct variable can't be used in [iterators](../../iterators.md).
 
-- A `ref` struct cannot be the element type of an array.
-- A `ref` struct cannot implement interfaces.
-- A `ref` struct cannot be boxed to <xref:System.ValueType?displayProperty=nameWithType> or <xref:System.Object?displayProperty=nameWithType>.
-- A `ref` struct cannot be a type argument.
-- A `ref` struct cannot be a declared type of a field of a class or a non-`ref` struct.
-- A `ref` struct variable cannot be captured by a [lambda expression](../../programming-guide/statements-expressions-operators/lambda-expressions.md) or a [local function](../../programming-guide/classes-and-structs/local-functions.md).
-- A `ref` struct variable cannot be used in an [`async`](../keywords/async.md) method. You can use `ref` struct variables in synchronous methods, for example, in those that return <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>.
-- A `ref` struct variable cannot be used in [iterators](../../iterators.md).
-
-In particular, you must use a `ref` struct type if you want to encapsulate other `ref` struct types:
+In particular, you use a `ref` struct type if you want to encapsulate other `ref` struct types:
 
 [!code-csharp[ref struct](snippets/StructType.cs#RefStruct)]
 
 To declare a `ref` struct as [`readonly`](#readonly-struct), combine the `readonly` and `ref` modifiers in the type declaration (the `readonly` modifier must come before the `ref` modifier):
 
 [!code-csharp[readonly ref struct](snippets/StructType.cs#ReadonlyRef)]
+
+In .NET, examples of a `ref` struct are <xref:System.Span%601?displayProperty=nameWithType> and <xref:System.ReadOnlySpan%601?displayProperty=nameWithType>.
 
 ## Conversions
 

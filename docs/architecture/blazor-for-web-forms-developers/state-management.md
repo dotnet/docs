@@ -1,22 +1,98 @@
 ---
 title: State management
 description: Learn about different approaches for managing state in ASP.NET Web Forms and Blazor.
-author: danroth27
-ms.author: daroth
-ms.date: 09/11/2019
+author: csharpfritz
+ms.author: jefritz
+ms.date: 15/04/2020
 ---
 # State management
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
 
-*This content is coming soon.*
+State management is a key concept of Web Forms applications, facilitated through View State, Session State, Application State, and Postback features. These stateful features of the framework helped to hide the state management required for an application and allowed application developers to focus on delivering their functionality.  With ASP.NET Core and Blazor, some of these features have been relocated and some have been removed altogether.  In this chapter, we will review how to maintain state and deliver the same functionality with the new features in Blazor.
 
-<!--
-- View state
-- Session state
-- Local storage
-- App state
--->
+## Request State Management with ViewState
+
+When discussing state management regarding a Web Forms application, many developers will instantly flash to the concept of ViewState. In Web Forms, ViewState managed the state of the content between HTTP requests by sending a large encoded block of text back and forth to the browser. The ViewState field could be overwhelmed with content from a page containing many elements, expanding as large as several megabytes in size.
+
+With Blazor Server, each requested component's state  is persisted in memory on the server between requests. It will only be disposed when the user navigates away from the component.  All in-scope field values of the component are available between interactions with the server.
+
+There are several advantages of this feature:
+
+- Component's state is always known and not rebuilt between requests
+- State is not transmitted to the browser
+
+However, there are a few disadvantages to component state persisted in-memory that you need to be aware of:
+
+- If the server restarts between request, state is lost
+- Your application web-server load-balancing solution must include sticky sessions in order to ensure that all requests from the same browser return to the same server.  If a request goes to a different server, state will be lost.
+- Persistence of component state on the server can lead to memory pressure on the web service
+
+For these reasons, you should not rely on just the state of the component to reside in memory on the server. Your application should also include some backing data store for data between requests.  Some simple examples of this strategy:
+
+- In a shopping cart application, persist the content of new items added to the cart in a database record.  If the state on the server is lost, you can reconstitute it from the database records
+- In a multi-part web form, your users will expect your application to remember values between each request.  Write the data between each of your user's posts to a data store so that they can be fetched and assembled into the final form response structure when the multi-part form is completed.
+
+The signature of the .NET Framework `Session` object is not the same as the ASP.NET Core `Session` object.  Consider [the documentation for the new ASP.NET Core Session](https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.http.isession?view=aspnetcore-3.1) before deciding to migrate and use the new session state feature.
+
+Performance considerations and recommendations for application architecture in larger applications with Blazor Server can be found in the [Secure ASP.NET Core Blazor Server Apps article](https://docs.microsoft.com/aspnet/core/security/blazor/server?view=aspnetcore-3.1)
+
+## Maintaining state with Session
+
+Web Forms developers could maintain information about the currently acting user with the `Session` dictionary object.  It is easy enough to add an object with a string key to the `Session` and that object would be available at a later time during the user's interactions with the application.  In the attempt to eliminate managing interacting with HTTP, the Session object made it easy to maintain state.
+
+Session is available in ASP.NET Core and Blazor Server, but is discouraged from use in favor of storing data in a data repository appropriately.  Session state is also not functional when GDPR support is activated and your visitors decline HTTP cookies in your application.
+
+Configuration for ASP.NET Core and Session state is available in the [Session and state management in ASP.NET Core article](https://docs.microsoft.com/aspnet/core/fundamentals/app-state?view=aspnetcore-3.1)
+
+## Application State
+
+The `Application` object in the Web Forms framework provides a massive cross-request repository for interacting with application-scope configuration and state.  Application state was an ideal place to store various application configuration properties that would be referenced by all requests, regardless of the user making the request.  The problem with the `Application` object was that data did not persist across multiple servers and you would lose the state of the application object between restarts.
+
+As with `Session`, it is recommended that data move to a persistent backing store that could be accessed by multiple server instances.  If there is volatile data that you would like to be able to access across requests and users, you could easily store it in a static property or in a singleton object that can be injected into components that require this information or interaction.
+
+The construction of a simple object to maintain application state and its consumption could be as simple as the following implementation:
+
+```csharp
+public class MyApplicationState
+{
+
+    public int VisitorCounter { get; private set; } = 0;
+
+    public void IncrementCounter()
+    {
+
+        VisitorCounter += 1;
+
+    }
+
+}
+```
+
+```csharp
+
+    app.AddSingleton<MyApplicationState>();
+
+```
+
+```cshtml
+@inject MyApplicationState AppState
+
+<label>Total Visitors: @AppState.VisitorCounter</label>
+```
+
+The `MyApplicationState` object is maintained only once on the server, and the value `VisitorCounter` is fetched and output in the component's label.  The above code is a simple example, and the `VisitorCounter` value should be persisted and retrieved from a backing data store for durability and scalability.
+
+## In the browser
+
+With single-page-application (SPA) architecture, developers grew accustomed to storing data in variables or in page state and they would be available later in the application.  There are two browser features that allow for persistence of data in different scopes of the user's browser:
+
+- `localStorage` - scoped to the user's entire browser.  If the page is reloaded, the browser is closed and reopened, or another tab is opened with the same URL then the same `localStorage` is provided by the browser
+- `sessionStorage` - scoped to the user's current browser tab.  If the tab is reloaded, the state persists.  However, if the user opens another tab to your application or closes and reopens the browser the state is lost.
+
+You can write some custom JavaScript code to interact with these features, or there are a number of NuGet packages that you can use that provide this functionality.  One such package is [Microsoft.AspNetCore.ProtectedBrowserStorage](https://www.nuget.org/packages/Microsoft.AspNetCore.ProtectedBrowserStorage)
+
+You can find instructions for how to utilize this package to interact with `localStorage` and `sessionStorage` in the [Blazor State Management](https://docs.microsoft.com/aspnet/core/blazor/state-management?view=aspnetcore-3.1#installation) article.
 
 >[!div class="step-by-step"]
 >[Previous](pages-routing-layouts.md)

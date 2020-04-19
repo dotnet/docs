@@ -24,7 +24,7 @@ With ASP.NET Core and Blazor, these methods are either simplified and consolidat
 
 ## Blazor Server Startup Structure
 
-Server-Side Blazor applications reside on top of an ASP.NET Core 3.0 or later application.  ASP.NET Core web applications are configured through a pair of methods in the `Startup.cs` class on the root folder of the application.  The Startup class's default content is listed below
+Blazor Server applications reside on top of an ASP.NET Core 3.0 or later application.  ASP.NET Core web applications are configured through a pair of methods in the `Startup.cs` class on the root folder of the application.  The Startup class's default content is listed below
 
 ```csharp
 public class Startup

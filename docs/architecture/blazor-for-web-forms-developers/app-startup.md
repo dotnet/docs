@@ -16,7 +16,7 @@ Applications that are written for ASP.NET typically have a `global.asax.cs` file
 The default web forms `Application_Start` method has grown in purpose over the last 10 years of development to handle many configuration task.  A fresh web forms project with the default template in Visual Studio 2019 now contains the following configuration logic:
 
 - `RouteConfig` - Application URL routing
-- `BundleConfig` - CSS and JavaScript bundling and minification 
+- `BundleConfig` - CSS and JavaScript bundling and minification
 
 Each of these individual files reside in the `App_Start` folder and run only once at the start of our application.  `RouteConfig` in the default project template adds the `FriendlyUrlSettings` for web forms to allow application URLs to omit the `.ASPX` file extension.  The default template also contains a directive that provides permanent HTTP redirect status codes (HTTP 301) for the `.ASPX` pages to the friendly URL with the file name that omits the extension.
 
@@ -85,7 +85,7 @@ Next, an unexpected configuration method is listed to `UseStaticFiles`.  In ASP.
 
 The next line is the first that replicates one of the configuration options from web forms: `UseRouting`.  This method adds the ASP.NET Core router to the pipeline and it can be either configured here or in the individual files that it can consider routing to.  More information about routing configuration can be found in the [Routing section](page-routing-layouts.md).
 
-The final statement in this method defines the endpoints that ASP.NET Core is listening on.  These are the web accessible locations that you can access on the web server and receive some content handled by .NET and returned to you.  The first entry, `MapBlazorHub` configures a SignalR hub for use in providing the real-time and persistent connection to the server where the state and rendering of Blazor components will take place.  The `MapFallbackToPage` method call indicates the web-accessible location of the page that starts the Blazor application.
+The final statement in this method defines the endpoints that ASP.NET Core is listening on.  These are the web accessible locations that you can access on the web server and receive some content handled by .NET and returned to you.  The first entry, `MapBlazorHub` configures a SignalR hub for use in providing the real-time and persistent connection to the server where the state and rendering of Blazor components will take place.  The `MapFallbackToPage` method call indicates the web-accessible location of the page that starts the Blazor application and also configures the application to handle deep-linking requests from the client-side.  You will see this feature at work if you open a browser and navigate directly to your application and a Blazor handled route, such as `/counter` in the default project template.
 
 ## Upgrading the BundleConfig Process
 

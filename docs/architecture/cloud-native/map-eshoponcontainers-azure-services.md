@@ -1,8 +1,9 @@
 ---
 title: Mapping eShopOnContainers to Azure Services
 description: Mapping eShopOnContainers to Azure Services like Azure Kubernetes Service, API Gateway, and Azure Service Bus.
-ms.date: 06/30/2019
+ms.date: 04/20/2020
 ---
+
 # Mapping eShopOnContainers to Azure Services
 
 [!INCLUDE [book-preview](../../../includes/book-preview.md)]
@@ -57,17 +58,6 @@ The application uses events to communicate changes between different services. T
 ## Resiliency
 
 Once deployed to production, the eShopOnContainers application would be able to take advantage of several Azure services available to improve its resiliency. The application publishes health checks, which can be integrated with Application Insights to provide reporting and alerts based on the app's availability. Azure resources also provide diagnostic logs that can be used to identify and correct bugs and performance issues. Resource logs provide detailed information on when and how different Azure resources are used by the application. You'll learn more about cloud-native resiliency features in [chapter 6](resiliency.md).
-
-## References
-
-- [The eShopOnContainers Architecture](https://github.com/dotnet-architecture/eShopOnContainers/wiki/Architecture)
-- [Orchestrating microservices and multi-container applications for high scalability and availability](https://docs.microsoft.com/dotnet/architecture/microservices/architect-microservice-container-applications/scalable-available-multi-container-microservice-applications)
-- [Azure API Management](https://docs.microsoft.com/azure/api-management/api-management-key-concepts)
-- [Azure SQL Database Overview](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)
-- [Azure Cache for Redis](https://azure.microsoft.com/services/cache/)
-- [Azure Cosmos DB's API for MongoDB](https://docs.microsoft.com/azure/cosmos-db/mongodb-introduction)
-- [Azure Service Bus](https://docs.microsoft.com/azure/service-bus-messaging/service-bus-messaging-overview)
-- [Azure Monitor overview](https://docs.microsoft.com/azure/azure-monitor/overview)
 
 >[!div class="step-by-step"]
 >[Previous](introduce-eshoponcontainers-reference-app.md)

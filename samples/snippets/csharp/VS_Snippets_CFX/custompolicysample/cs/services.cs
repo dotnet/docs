@@ -6,13 +6,13 @@ using System.Text;
 namespace Microsoft.WCF.Documentation
 {
   [ServiceContract(
-    Namespace="http://microsoft.wcf.documentation", 
+    Namespace="http://microsoft.wcf.documentation",
     SessionMode=SessionMode.Required
   )]
   public interface IStatefulService
   {
     [OperationContract]
-    string GetSessionID(); 
+    string GetSessionID();
   }
 
   [ServiceBehavior(

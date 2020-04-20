@@ -15,7 +15,7 @@ using Windows.Storage;
 
 namespace TestUri
 {
-   
+
     public sealed partial class MainPage : Page
     {
         public MainPage()

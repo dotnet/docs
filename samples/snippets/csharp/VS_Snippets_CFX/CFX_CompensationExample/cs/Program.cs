@@ -39,7 +39,7 @@ namespace CompensationExample
 
             Activity wf = new Sequence()
             {
-                Variables = 
+                Variables =
                 {
                     token1
                 },
@@ -82,7 +82,7 @@ namespace CompensationExample
 
             Activity wf = new TryCatch()
             {
-                Variables = 
+                Variables =
                 {
                     token1
                 },
@@ -166,7 +166,7 @@ namespace CompensationExample
                     {
                         Body = new Sequence
                         {
-                            Activities = 
+                            Activities =
                             {
                                 new ReserveFlight(),
                                 new SimulatedErrorCondition()
@@ -227,7 +227,7 @@ namespace CompensationExample
 
             // Create the Xaml for the first file
             StreamWriter sw = File.CreateText(inFile);
-            
+
             XamlServices.Save(sw, wf);
             sw.Close();
 

@@ -14,7 +14,7 @@ class Program
         // .config extension.
         try
         {
-            // Open the configuration file and retrieve 
+            // Open the configuration file and retrieve
             // the connectionStrings section.
             Configuration config = ConfigurationManager.
                 OpenExeConfiguration(exeConfigName);

@@ -1,4 +1,4 @@
-﻿// <Snippet1> 
+﻿// <Snippet1>
 using System;
 using System.Resources;
 using MyCompany.Employees;
@@ -13,7 +13,7 @@ namespace MyCompany.Employees
 
       public static string GetTitle()
       {
-         string retval = LibResources.Born; 
+         string retval = LibResources.Born;
          if (String.IsNullOrEmpty(retval))
             retval = "";
 
@@ -43,18 +43,18 @@ namespace MyCompany.Employees
 }
 // </Snippet1>
 
-namespace MyCompany.Employees 
+namespace MyCompany.Employees
 {
    public class LibResources {
-        
+
         private static global::System.Resources.ResourceManager resourceMan;
-        
+
         private static global::System.Globalization.CultureInfo resourceCulture;
-        
+
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal LibResources() {
         }
-        
+
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
@@ -68,7 +68,7 @@ namespace MyCompany.Employees
                 return resourceMan;
             }
         }
-        
+
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
@@ -82,7 +82,7 @@ namespace MyCompany.Employees
                 resourceCulture = value;
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Birthdate.
         /// </summary>
@@ -91,7 +91,7 @@ namespace MyCompany.Employees
                 return ResourceManager.GetString("Born", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 12.
         /// </summary>
@@ -100,7 +100,7 @@ namespace MyCompany.Employees
                 return ResourceManager.GetString("BornLength", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Hire Date.
         /// </summary>
@@ -109,7 +109,7 @@ namespace MyCompany.Employees
                 return ResourceManager.GetString("Hired", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 12.
         /// </summary>
@@ -118,7 +118,7 @@ namespace MyCompany.Employees
                 return ResourceManager.GetString("HiredLength", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to ID.
         /// </summary>
@@ -127,7 +127,7 @@ namespace MyCompany.Employees
                 return ResourceManager.GetString("ID", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 12.
         /// </summary>
@@ -136,7 +136,7 @@ namespace MyCompany.Employees
                 return ResourceManager.GetString("IDLength", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Name.
         /// </summary>
@@ -145,7 +145,7 @@ namespace MyCompany.Employees
                 return ResourceManager.GetString("Name", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to 25.
         /// </summary>
@@ -154,7 +154,7 @@ namespace MyCompany.Employees
                 return ResourceManager.GetString("NameLength", resourceCulture);
             }
         }
-        
+
         /// <summary>
         ///   Looks up a localized string similar to Employee Database.
         /// </summary>

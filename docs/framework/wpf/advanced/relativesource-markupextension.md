@@ -107,8 +107,8 @@ In the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient
 ## See also
 
 - <xref:System.Windows.Data.Binding>
-- [Styling and Templating](../controls/styling-and-templating.md)
-- [XAML Overview (WPF)](xaml-overview-wpf.md)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)
+- [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)
 - [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)
 - [Data Binding Overview](../../../desktop-wpf/data/data-binding-overview.md)
 - [Binding Declarations Overview](../data/binding-declarations-overview.md)

@@ -7,13 +7,13 @@ public class WordCount
 {
    private String filename = String.Empty;
    private int nWords = 0;
-   private String pattern = @"\b\w+\b"; 
+   private String pattern = @"\b\w+\b";
 
    public WordCount(string filename)
    {
       if (! File.Exists(filename))
          throw new FileNotFoundException("The file does not exist.");
-      
+
       this.filename = filename;
       string txt = String.Empty;
       using (StreamReader sr = new StreamReader(filename)) {
@@ -21,16 +21,16 @@ public class WordCount
       }
       nWords = Regex.Matches(txt, pattern).Count;
    }
-   
+
    public string FullName
    { get { return filename; } }
-   
+
    public string Name
    { get { return Path.GetFileName(filename); } }
-   
-   public int Count 
+
+   public int Count
    { get { return nWords; } }
-}   
+}
 // </Snippet1>
 
 public class Example
@@ -38,7 +38,7 @@ public class Example
    public static void Main()
    {
       WordCount wc = new WordCount(@"C:\users\ronpet\documents\Fr_Mike_Mass.txt");
-      Console.WriteLine("File {0} ({1}) has {2} words", 
+      Console.WriteLine("File {0} ({1}) has {2} words",
                         wc.Name, wc.FullName, wc.Count);
    }
 }

@@ -25,8 +25,8 @@ namespace ActivityLibrary1
             context.CreateBookmark(name, new BookmarkCallback(OnReadComplete));
         }
 
-        // NativeActivity derived activities that do asynchronous operations by calling 
-        // one of the CreateBookmark overloads defined on System.Activities.NativeActivityContext 
+        // NativeActivity derived activities that do asynchronous operations by calling
+        // one of the CreateBookmark overloads defined on System.Activities.NativeActivityContext
         // must override the CanInduceIdle property and return true.
         protected override bool CanInduceIdle
         {

@@ -14,23 +14,23 @@ class Program
         {
             sourceConnection.Open();
 
-            //  Delete all from the destination table.         
+            //  Delete all from the destination table.
             SqlCommand commandDelete = new SqlCommand();
             commandDelete.Connection = sourceConnection;
             commandDelete.CommandText =
                 "DELETE FROM dbo.BulkCopyDemoMatchingColumns";
             commandDelete.ExecuteNonQuery();
 
-            //  Add a single row that will result in duplicate key         
-            //  when all rows from source are bulk copied.         
-            //  Note that this technique will only be successful in          
-            //  illustrating the point if a row with ProductID = 446           
-            //  exists in the AdventureWorks Production.Products table.          
-            //  If you have made changes to the data in this table, change         
-            //  the SQL statement in the code to add a ProductID that         
-            //  does exist in your version of the Production.Products         
-            //  table. Choose any ProductID in the middle of the table         
-            //  (not first or last row) to best illustrate the result.         
+            //  Add a single row that will result in duplicate key
+            //  when all rows from source are bulk copied.
+            //  Note that this technique will only be successful in
+            //  illustrating the point if a row with ProductID = 446
+            //  exists in the AdventureWorks Production.Products table.
+            //  If you have made changes to the data in this table, change
+            //  the SQL statement in the code to add a ProductID that
+            //  does exist in your version of the Production.Products
+            //  table. Choose any ProductID in the middle of the table
+            //  (not first or last row) to best illustrate the result.
             SqlCommand commandInsert = new SqlCommand();
             commandInsert.Connection = sourceConnection;
             commandInsert.CommandText =
@@ -49,7 +49,7 @@ class Program
                 commandRowCount.ExecuteScalar());
             Console.WriteLine("Starting row count = {0}", countStart);
 
-            //  Get data from the source table as a SqlDataReader.         
+            //  Get data from the source table as a SqlDataReader.
             SqlCommand commandSourceData = new SqlCommand(
                 "SELECT ProductID, Name, ProductNumber " +
                 "FROM Production.Product;", sourceConnection);
@@ -60,7 +60,7 @@ class Program
             // option, you cannot also specify an external transaction.
             // Therefore, you must use the SqlBulkCopy construct that
             // requires a string for the connection, rather than an
-            // existing SqlConnection object. 
+            // existing SqlConnection object.
             using (SqlBulkCopy bulkCopy = new SqlBulkCopy(
                        connectionString, SqlBulkCopyOptions.KeepIdentity |
                        SqlBulkCopyOptions.UseInternalTransaction))
@@ -86,7 +86,7 @@ class Program
                 }
             }
 
-            // Perform a final count on the destination 
+            // Perform a final count on the destination
             // table to see how many rows were added.
             long countEnd = System.Convert.ToInt32(
                 commandRowCount.ExecuteScalar());
@@ -98,8 +98,8 @@ class Program
     }
 
     private static string GetConnectionString()
-        // To avoid storing the sourceConnection string in your code, 
-        // you can retrieve it from a configuration file. 
+        // To avoid storing the sourceConnection string in your code,
+        // you can retrieve it from a configuration file.
     {
         return "Data Source=(local); " +
             " Integrated Security=true;" +

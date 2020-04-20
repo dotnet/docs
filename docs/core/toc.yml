@@ -351,7 +351,7 @@
   - name: Port Windows Forms projects
     href: porting/winforms.md
   - name: Port WPF projects
-    href: porting/wpf.md
+    href: ../desktop-wpf/migration/convert-project-from-net-framework.md
   - name: Port C++/CLI projects
     href: porting/cpp-cli.md
 - name: Unit testing
@@ -418,7 +418,7 @@
     - name: Create a .NET Core application with plugins
       href: tutorials/creating-app-with-plugin-support.md
     - name: How to use and debug assembly unloadability in .NET Core
-      href: ../standard/assembly/unloadability-howto.md
+      href: ../standard/assembly/unloadability.md
 - name: .NET Core distribution packaging
   href: distribution-packaging.md
 - name: Expose .NET Core components to COM

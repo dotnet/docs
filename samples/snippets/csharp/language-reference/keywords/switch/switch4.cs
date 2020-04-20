@@ -6,22 +6,22 @@ public class Example
    {
       int caseSwitch = 1;
       // <Snippet1>
-      switch (caseSwitch)  
+      switch (caseSwitch)
       {
-          case 1:  
-              Console.WriteLine("Case 1...");  
-              break;  
-          case 2:  
-          case 3:
-              Console.WriteLine("... and/or Case 2");  
+          case 1:
+              Console.WriteLine("Case 1...");
               break;
-          case 4:  
-              while (true)  
-                 Console.WriteLine("Endless looping. . . ."); 
+          case 2:
+          case 3:
+              Console.WriteLine("... and/or Case 2");
+              break;
+          case 4:
+              while (true)
+                 Console.WriteLine("Endless looping. . . .");
           default:
               Console.WriteLine("Default value...");
-              break;                 
-      }  
+              break;
+      }
       // </Snippet1>
    }
 }

@@ -18,6 +18,6 @@ public class Example
 }
 // The example displays the following output:
 //       This\ is\ one\ line\ and\r
-//       
+//
 //       This\ is\ one\ line\ and\r\nthis\ is\ the\ second\.
 // </Snippet5>

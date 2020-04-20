@@ -18,7 +18,7 @@ public class VerifyXML
             cspParams.KeyContainerName = "XML_DSIG_RSA_KEY";
             // </snippet2>
 
-            // Create a new RSA signing key and save it in the container. 
+            // Create a new RSA signing key and save it in the container.
             // <snippet3>
             RSACryptoServiceProvider rsaKey = new RSACryptoServiceProvider(cspParams);
             // </snippet3>
@@ -36,7 +36,7 @@ public class VerifyXML
             Console.WriteLine("Verifying signature...");
             bool result = VerifyXml(xmlDoc, rsaKey);
 
-            // Display the results of the signature verification to 
+            // Display the results of the signature verification to
             // the console.
             if (result)
             {
@@ -53,7 +53,7 @@ public class VerifyXML
         }
     }
 
-    // Verify the signature of an XML file against an asymmetric 
+    // Verify the signature of an XML file against an asymmetric
     // algorithm and return the result.
     public static Boolean VerifyXml(XmlDocument xmlDoc, RSA key)
     {
@@ -82,14 +82,14 @@ public class VerifyXML
         }
 
         // This example only supports one signature for
-        // the entire XML document.  Throw an exception 
+        // the entire XML document.  Throw an exception
         // if more than one signature was found.
         if (nodeList.Count >= 2)
         {
             throw new CryptographicException("Verification failed: More that one signature was found for the document.");
         }
 
-        // Load the first <signature> node.  
+        // Load the first <signature> node.
         // <snippet7>
         signedXml.LoadXml((XmlElement)nodeList[0]);
         // </snippet7>

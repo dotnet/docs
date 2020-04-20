@@ -16,7 +16,7 @@ public class Example
       StreamReader inFile = new StreamReader(@".\Dreiser_TheFinancier.txt");
       string input = inFile.ReadToEnd();
       inFile.Close();
-      
+
       // Read first ten sentences with interpreted regex.
       Console.WriteLine("10 Sentences with Interpreted Regex:");
       sw = Stopwatch.StartNew();
@@ -31,11 +31,11 @@ public class Example
       }
       sw.Stop();
       Console.WriteLine("   {0} matches in {1}", ctr, sw.Elapsed);
-      
+
       // Read first ten sentences with compiled regex.
       Console.WriteLine("10 Sentences with Compiled Regex:");
       sw = Stopwatch.StartNew();
-      Regex comp10 = new Regex(pattern, 
+      Regex comp10 = new Regex(pattern,
                    RegexOptions.Singleline | RegexOptions.Compiled);
       match = comp10.Match(input);
       for (ctr = 0; ctr <= 9; ctr++) {
@@ -47,7 +47,7 @@ public class Example
       }
       sw.Stop();
       Console.WriteLine("   {0} matches in {1}", ctr, sw.Elapsed);
-      
+
       // Read all sentences with interpreted regex.
       Console.WriteLine("All Sentences with Interpreted Regex:");
       sw = Stopwatch.StartNew();
@@ -61,11 +61,11 @@ public class Example
       }
       sw.Stop();
       Console.WriteLine("   {0:N0} matches in {1}", matches, sw.Elapsed);
-      
+
       // Read all sentences with compiled regex.
       Console.WriteLine("All Sentences with Compiled Regex:");
       sw = Stopwatch.StartNew();
-      Regex compAll = new Regex(pattern, 
+      Regex compAll = new Regex(pattern,
                       RegexOptions.Singleline | RegexOptions.Compiled);
       match = compAll.Match(input);
       matches = 0;
@@ -75,7 +75,7 @@ public class Example
          match = match.NextMatch();
       }
       sw.Stop();
-      Console.WriteLine("   {0:N0} matches in {1}", matches, sw.Elapsed);      
+      Console.WriteLine("   {0:N0} matches in {1}", matches, sw.Elapsed);
    }
 }
 // The example displays the following output:
@@ -87,7 +87,7 @@ public class Example
 //          13,443 matches in 00:00:01.1929928
 //       All Sentences with Compiled Regex:
 //          13,443 matches in 00:00:00.7635869
-//       
+//
 //       >compare1
 //       10 Sentences with Interpreted Regex:
 //          10 matches in 00:00:00.0046914

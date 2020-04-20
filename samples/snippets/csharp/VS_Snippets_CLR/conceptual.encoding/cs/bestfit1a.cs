@@ -6,10 +6,10 @@ public class Example
 {
    public static void Main()
    {
-      Encoding cp1252r = Encoding.GetEncoding(1252, 
+      Encoding cp1252r = Encoding.GetEncoding(1252,
                                   new EncoderReplacementFallback("*"),
                                   new DecoderReplacementFallback("*"));
-      
+
       string str1 = "\u24C8 \u2075 \u221E";
       Console.WriteLine(str1);
       foreach (var ch in str1)
@@ -26,7 +26,7 @@ public class Example
             Console.Write("{0} ", Convert.ToUInt16(ch).ToString("X4"));
 
          Console.WriteLine();
-      } 
+      }
    }
 }
 // The example displays the following output:

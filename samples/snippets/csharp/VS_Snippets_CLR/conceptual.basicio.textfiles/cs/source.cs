@@ -22,7 +22,7 @@ class WriteTextFiles
         WriteTextAsync();
 
         // Example 4: Shows how to synchronously write and
-        // append to a text file using File  
+        // append to a text file using File
         WriteFile();
     }
 
@@ -30,7 +30,7 @@ class WriteTextFiles
     static void WriteLineByLine()
     {
         // <SnippetWriteLine>
-        
+
         // Create a string array with the lines of text
         string[] lines = { "First line", "Second line", "Third line" };
 
@@ -50,7 +50,7 @@ class WriteTextFiles
     static void AppendTextSW()
     {
         // <SnippetAppendText>
-        
+
         // Set a variable to the Documents path.
         string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
@@ -65,7 +65,7 @@ class WriteTextFiles
     static async void WriteTextAsync()
     {
         // <SnippetWriteAsync>
-        
+
         // Set a variable to the Documents path.
         string docPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
@@ -80,7 +80,7 @@ class WriteTextFiles
     static void WriteFile()
     {
         // <SnippetWriteFile>
-        
+
         // Create a string array with the lines of text
         string text = "First line" + Environment.NewLine;
 
@@ -95,7 +95,7 @@ class WriteTextFiles
 
         // Append new lines of text to the file
         File.AppendAllLines(Path.Combine(docPath,"WriteFile.txt"), lines);
-        
+
         // </SnippetWriteFile>
     }
 }

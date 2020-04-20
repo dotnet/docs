@@ -44,7 +44,7 @@
             var query2 = from person in people
                          join pet in pets on person equals pet.Owner
                          select new { OwnerName = person.FirstName, PetName = pet.Name };
-                
+
             Console.WriteLine("\nThe equivalent operation using Join():");
             foreach (var v in query2)
                 Console.WriteLine($"{v.OwnerName} - {v.PetName}");

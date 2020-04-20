@@ -161,7 +161,7 @@ Runs an asynchronous computation, starting immediately on the current operating 
 Signature:
 
 ```fsharp
-computation: Async<unit> - cancellationToken: ?CancellationToken -> unit
+computation: Async<unit> * cancellationToken: ?CancellationToken -> unit
 ```
 
 When to use:
@@ -179,7 +179,7 @@ Executes a computation in the thread pool. Returns a <xref:System.Threading.Task
 Signature:
 
 ```fsharp
-computation: Async<'T> - taskCreationOptions: ?TaskCreationOptions - cancellationToken: ?CancellationToken -> Task<'T>
+computation: Async<'T> * taskCreationOptions: ?TaskCreationOptions * cancellationToken: ?CancellationToken -> Task<'T>
 ```
 
 When to use:
@@ -197,7 +197,7 @@ Schedules a sequence of asynchronous computations to be executed in parallel. Th
 Signature:
 
 ```fsharp
-computations: seq<Async<'T>> - ?maxDegreesOfParallelism: int -> Async<'T[]>
+computations: seq<Async<'T>> * ?maxDegreesOfParallelism: int -> Async<'T[]>
 ```
 
 When to use it:
@@ -236,7 +236,7 @@ Returns an asynchronous computation that waits for the given <xref:System.Thread
 Signature:
 
 ```fsharp
-task: Task<'T>  -> Async<'T>
+task: Task<'T> -> Async<'T>
 ```
 
 When to use:
@@ -290,7 +290,7 @@ Runs an asynchronous computation and awaits its result on the calling thread. Th
 Signature:
 
 ```fsharp
-computation: Async<'T> - timeout: ?int - cancellationToken: ?CancellationToken -> 'T
+computation: Async<'T> * timeout: ?int * cancellationToken: ?CancellationToken -> 'T
 ```
 
 When to use it:
@@ -309,7 +309,7 @@ Starts an asynchronous computation in the thread pool that returns `unit`. Doesn
 Signature:
 
 ```fsharp
-computation: Async<unit> - cancellationToken: ?CancellationToken -> unit
+computation: Async<unit> * cancellationToken: ?CancellationToken -> unit
 ```
 
 Use only when:

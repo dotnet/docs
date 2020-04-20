@@ -4,14 +4,14 @@ using System;
 [assembly: CLSCompliant(true)]
 
 public class ErrorClass : Exception
-{ 
+{
    string msg;
-   
+
    public ErrorClass(string errorMessage)
    {
       msg = errorMessage;
    }
-   
+
    public override string Message
    {
       get { return msg; }
@@ -26,7 +26,7 @@ public static class StringUtilities
          ErrorClass badIndex = new ErrorClass("The index is not within the string.");
          throw badIndex;
       }
-      string[] retVal = { value.Substring(0, index - 1), 
+      string[] retVal = { value.Substring(0, index - 1),
                           value.Substring(index) };
       return retVal;
    }

@@ -63,8 +63,8 @@ Provides a value for any [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharp
   
 ## See also
 
-- [Styling and Templating](../controls/styling-and-templating.md)
-- [XAML Overview (WPF)](xaml-overview-wpf.md)
+- [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)
+- [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)
 - [Markup Extensions and WPF XAML](markup-extensions-and-wpf-xaml.md)
 - [XAML Resources](../../../desktop-wpf/fundamentals/xaml-resources-define.md)
 - [Resources and Code](resources-and-code.md)

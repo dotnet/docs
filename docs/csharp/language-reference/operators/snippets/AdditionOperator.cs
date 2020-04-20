@@ -64,7 +64,7 @@ namespace operators
 
             Action printer = () => Console.Write("a");
             printer();  // output: a
-            
+
             Console.WriteLine();
             printer += () => Console.Write("b");
             printer();  // output: ab

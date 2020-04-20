@@ -18,7 +18,7 @@ class ThreadLocalForWithOptions
 
       // This example limits the degree of parallelism to four.
       // You might limit the degree of parallelism when your algorithm
-      // does not scale beyond a certain number of cores or when you 
+      // does not scale beyond a certain number of cores or when you
       // enforce a particular quality of service in your application.
 
       Parallel.For(0, N, new ParallelOptions { MaxDegreeOfParallelism = 4 },

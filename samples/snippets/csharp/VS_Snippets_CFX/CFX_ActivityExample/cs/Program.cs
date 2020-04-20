@@ -66,7 +66,7 @@ namespace ActivityExample
 
             // Output:
             // Hello World with activity action.
-            // Handler of: Hello World with activity action. 
+            // Handler of: Hello World with activity action.
             //</snippet2>
         }
 
@@ -170,7 +170,7 @@ namespace ActivityExample
         {
             this.Implementation = () => new Sequence
             {
-                Activities = 
+                Activities =
                 {
                     new WriteLine
                     {
@@ -202,7 +202,7 @@ namespace ActivityExample
         {
             this.Implementation = () => new Sequence
             {
-                Variables = 
+                Variables =
                 {
                     text
                 },

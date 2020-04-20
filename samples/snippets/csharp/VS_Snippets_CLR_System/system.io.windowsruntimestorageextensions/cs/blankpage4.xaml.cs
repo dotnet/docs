@@ -16,7 +16,7 @@ namespace ExampleApplication
 
         private async void CreateButton_Click(object sender, RoutedEventArgs e)
         {
-            using (StreamWriter writer = 
+            using (StreamWriter writer =
                 new StreamWriter(await ApplicationData.Current.LocalFolder.OpenStreamForWriteAsync(
                 "testfile.txt",  CreationCollisionOption.OpenIfExists)))
             {

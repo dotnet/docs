@@ -135,5 +135,5 @@ You can apply different styling to a WPF control to change its appearance and be
 - [Migration and Interoperability](../../wpf/advanced/migration-and-interoperability.md)
 - [Using WPF Controls](using-wpf-controls.md)
 - [Design XAML in Visual Studio](/visualstudio/xaml-tools/designing-xaml-in-visual-studio)
-- [XAML Overview (WPF)](../../wpf/advanced/xaml-overview-wpf.md)
+- [XAML Overview (WPF)](../../../desktop-wpf/fundamentals/xaml.md)
 - [Styling and Templating](../../../desktop-wpf/fundamentals/styles-templates-overview.md)

@@ -9,7 +9,7 @@ public class Example
    }
 
    private static void CallEII()
-   {   
+   {
       // <Snippet7>
       int codePoint = 1067;
       IConvertible iConv = codePoint;

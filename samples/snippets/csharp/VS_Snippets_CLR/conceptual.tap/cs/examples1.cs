@@ -12,39 +12,39 @@ public class Example
    }
 
    // <Snippet1>
-   public Task ReadAsync(byte [] buffer, int offset, int count, 
+   public Task ReadAsync(byte [] buffer, int offset, int count,
                          CancellationToken cancellationToken)
    // </Snippet1>
    {
       return Task.Factory.StartNew( () => Thread.Sleep(100));
-   }                      
+   }
 
    // <Snippet2>
-   public Task ReadAsync(byte[] buffer, int offset, int count, 
+   public Task ReadAsync(byte[] buffer, int offset, int count,
                          IProgress<long> progress)
    // </Snippet2>
    {
       return Task.Factory.StartNew( () => Thread.Sleep(100));
-   }                      
+   }
 
    // <Snippet3>
    public Task<ReadOnlyCollection<FileInfo>> FindFilesAsync(
-               string pattern, 
-               IProgress<Tuple<double, 
+               string pattern,
+               IProgress<Tuple<double,
                ReadOnlyCollection<List<FileInfo>>>> progress)
    // </Snippet3>
    {
-      return Task.Factory.StartNew( () => { FileInfo[] fi = new FileInfo[10]; 
+      return Task.Factory.StartNew( () => { FileInfo[] fi = new FileInfo[10];
                                           return new ReadOnlyCollection<FileInfo>(fi); } );
-   }               
+   }
 
    // <Snippet4>
    public Task<ReadOnlyCollection<FileInfo>> FindFilesAsync(
-       string pattern, 
+       string pattern,
        IProgress<FindFilesProgressInfo> progress)
    // </Snippet4>
    {
-      return Task.Factory.StartNew( () => { FileInfo[] fi = new FileInfo[10]; 
+      return Task.Factory.StartNew( () => { FileInfo[] fi = new FileInfo[10];
                                           return new ReadOnlyCollection<FileInfo>(fi); } );
    }
 }

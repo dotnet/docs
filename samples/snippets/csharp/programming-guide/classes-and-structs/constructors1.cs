@@ -16,13 +16,13 @@ public class Person
 {
    private string last;
    private string first;
-   
+
    public Person(string lastName, string firstName)
    {
       last = lastName;
       first = firstName;
    }
-   
+
    // Remaining implementation of Person class.
 }
 // </Snippet1>
@@ -31,7 +31,7 @@ public class Person
 public class Adult : Person
 {
    private static int minimumAge;
-   
+
    public Adult(string lastName, string firstName) : base(lastName, firstName)
    { }
 
@@ -48,7 +48,7 @@ public class Adult : Person
 public class Child : Person
 {
    private static int maximumAge;
-   
+
    public Child(string lastName, string firstName) : base(lastName, firstName)
    { }
 

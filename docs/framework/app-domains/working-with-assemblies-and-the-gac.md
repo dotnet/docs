@@ -65,5 +65,5 @@ Explains how to use the [Ildasm.exe (IL Disassembler)](../tools/ildasm-exe-il-di
 [How the Runtime Locates Assemblies](../deployment/how-the-runtime-locates-assemblies.md)  
 Describes how the common language runtime locates and loads the assemblies that make up your application.  
   
-[Programming with Assemblies](../../standard/assembly/program.md)  
+[Programming with Assemblies](../../standard/assembly/index.md)  
 Describes assemblies, the building blocks of managed applications.

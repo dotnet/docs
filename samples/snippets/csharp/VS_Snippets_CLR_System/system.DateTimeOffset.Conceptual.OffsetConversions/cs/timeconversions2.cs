@@ -13,12 +13,12 @@ public class TimeConversions
    public DateTimeOffset ReturnTimeOnServer(string clientString)
    {
       string format = @"M/d/yyyy H:m:s zzz";
-      
+
       try
-      {      
-         DateTimeOffset clientTime = DateTimeOffset.ParseExact(clientString, format, 
+      {
+         DateTimeOffset clientTime = DateTimeOffset.ParseExact(clientString, format,
                                      CultureInfo.InvariantCulture);
-         DateTimeOffset serverTime = TimeZoneInfo.ConvertTime(clientTime, 
+         DateTimeOffset serverTime = TimeZoneInfo.ConvertTime(clientTime,
                                      TimeZoneInfo.Local);
          return serverTime;
       }

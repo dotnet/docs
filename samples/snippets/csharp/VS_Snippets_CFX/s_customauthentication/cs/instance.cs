@@ -42,7 +42,7 @@ namespace Microsoft.ServiceModel.Samples
 		string issuerThumbprint;
 //instance.cs(48,30): error CS0115: 'Microsoft.ServiceModel.Samples.IssuerBasedValidator.Validate
 //(System.Security.Cryptography.X509Certificates.X509Certificate2)':
-//No suitable method found to override.	 
+//No suitable method found to override.	
 /*        public IssuerBasedValidator(X509Certificate2 issuer)
         {
             if(issuer == null)
@@ -74,7 +74,7 @@ namespace Microsoft.ServiceModel.Samples
 			string issuerName = ConfigurationManager.AppSettings["issuer"];
 
 	    // <Snippet1>
-	    // Construct InstanceContext to handle messages on the callback interface. 
+	    // Construct InstanceContext to handle messages on the callback interface.
 	    // An instance of ChatApp is created and passed to the InstanceContext.
 			InstanceContext site = new InstanceContext(new ChatApp());
 
@@ -108,7 +108,7 @@ namespace Microsoft.ServiceModel.Samples
 					ostat.Offline += new EventHandler(OnOffline);
 
 					Console.WriteLine("{0} is ready", member);
-					Console.WriteLine("Press <ENTER> to send the chat message.");                   
+					Console.WriteLine("Press <ENTER> to send the chat message.");
 
 		    // Announce self to other participants.
 					participant.Join(member);

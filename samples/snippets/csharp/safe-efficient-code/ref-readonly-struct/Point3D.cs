@@ -31,5 +31,5 @@ namespace SafeEfficientCode
         private static readonly ReadonlyPoint3D origin = new ReadonlyPoint3D();
         public static ref readonly ReadonlyPoint3D Origin => ref origin;
     }
-#endregion    
+#endregion
 }

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace AsyncExamples
 {
-    
+
     public static class AsyncStreamExample
     {
 
@@ -17,7 +17,7 @@ namespace AsyncExamples
 
         // <SnippetGenerateAsyncStream>
         private static async IAsyncEnumerable<string> ReadWordsFromStream()
-        { 
+        {
             string data =
             @"This is a line of text.
               Here is the second line of text.

@@ -19,10 +19,10 @@ namespace keywords
         }
 
         // <Snippet1>
-        class Point 
-        { 
+        class Point
+        {
             public int x;
-            public int y; 
+            public int y;
         }
 
         unsafe private static void ModifyFixedStorage()
@@ -80,15 +80,15 @@ namespace keywords
             // You can initialize a pointer by using an array.
             fixed (double* p = arr) { /*...*/ }
 
-            // You can initialize a pointer by using the address of a variable. 
+            // You can initialize a pointer by using the address of a variable.
             fixed (double* p = &arr[0]) { /*...*/ }
 
             // The following assignment initializes p by using a string.
             fixed (char* p = str) { /*...*/ }
 
-            // The following assignment is not valid, because str[0] is a char, 
+            // The following assignment is not valid, because str[0] is a char,
             // which is a value, not a variable.
-            //fixed (char* p = &str[0]) { /*...*/ } 
+            //fixed (char* p = &str[0]) { /*...*/ }
             // </Snippet2>
         }
 
@@ -240,9 +240,9 @@ namespace keywords
                 throw new System.ArgumentException();
             }
 
-            // If the number of bytes from the offset to the end of the array is 
+            // If the number of bytes from the offset to the end of the array is
             // less than the number of bytes you want to copy, you cannot complete
-            // the copy. 
+            // the copy.
             if ((source.Length - sourceOffset < count) ||
                 (target.Length - targetOffset < count))
             {
@@ -294,7 +294,7 @@ namespace keywords
             }
             System.Console.WriteLine("\n");
 
-            // Copy the contents of the last 10 elements of byteArray1 to the 
+            // Copy the contents of the last 10 elements of byteArray1 to the
             // beginning of byteArray2.
             // The offset specifies where the copying begins in the source array.
             int offset = length - 10;

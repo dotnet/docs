@@ -6,7 +6,7 @@ public class StringConversion
     {
         var str = "  10FFxxx";
         string numericString = String.Empty;
-        foreach (var c in str) 
+        foreach (var c in str)
         {
             // Check for numeric characters (hex in this case) or leading or trailing spaces.
             if ((c >= '0' && c <= '9') || (Char.ToUpperInvariant(c) >= 'A' && Char.ToUpperInvariant(c) <= 'F') || c == ' ') {
@@ -25,7 +25,7 @@ public class StringConversion
         numericString = "";
         foreach (char c in str) {
             // Check for numeric characters (0-9), a negative sign, or leading or trailing spaces.
-            if ((c >= '0' && c <= '9') || c == ' ' || c == '-') 
+            if ((c >= '0' && c <= '9') || c == ' ' || c == '-')
             {
                 numericString = String.Concat(numericString, c);
             } else

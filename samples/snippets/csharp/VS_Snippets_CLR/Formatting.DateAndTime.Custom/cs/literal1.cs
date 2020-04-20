@@ -6,7 +6,7 @@ public class Example
    {
       // <Snippet16>
       DateTime dat1 = new DateTime(2009, 6, 15, 13, 45, 0);
-      
+
       Console.WriteLine("'{0:%h}'", dat1);
       Console.WriteLine("'{0: h}'", dat1);
       Console.WriteLine("'{0:h }'", dat1);

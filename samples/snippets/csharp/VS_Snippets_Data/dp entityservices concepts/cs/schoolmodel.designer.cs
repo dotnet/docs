@@ -41,7 +41,7 @@ namespace Microsoft.Samples.Entity
         {
             OnContextCreated();
         }
-    
+
         /// <summary>
         /// Initialize a new SchoolEntities object.
         /// </summary>
@@ -49,7 +49,7 @@ namespace Microsoft.Samples.Entity
         {
             OnContextCreated();
         }
-    
+
         /// <summary>
         /// Initialize a new SchoolEntities object.
         /// </summary>
@@ -58,11 +58,11 @@ namespace Microsoft.Samples.Entity
             OnContextCreated();
         }
         #endregion
-        
+
         #region Partial Methods
         partial void OnContextCreated();
         #endregion
-        
+
         #region ObjectSet Properties
         /// <summary>
         /// No Metadata Documentation available.
@@ -79,7 +79,7 @@ namespace Microsoft.Samples.Entity
             }
         }
         private ObjectSet<Course> _Courses;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -95,7 +95,7 @@ namespace Microsoft.Samples.Entity
             }
         }
         private ObjectSet<Department> _Departments;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -111,7 +111,7 @@ namespace Microsoft.Samples.Entity
             }
         }
         private ObjectSet<OfficeAssignment> _OfficeAssignments;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -127,7 +127,7 @@ namespace Microsoft.Samples.Entity
             }
         }
         private ObjectSet<Person> _People;
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -143,10 +143,10 @@ namespace Microsoft.Samples.Entity
             }
         }
         private ObjectSet<StudentGrade> _StudentGrades;
-    
+
         #endregion
         #region AddTo Methods
-            
+
         /// <summary>
         /// Deprecated Method for adding a new object to the Courses EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -154,7 +154,7 @@ namespace Microsoft.Samples.Entity
         {
             base.AddObject("Courses", course);
         }
-            
+
         /// <summary>
         /// Deprecated Method for adding a new object to the Departments EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -162,7 +162,7 @@ namespace Microsoft.Samples.Entity
         {
             base.AddObject("Departments", department);
         }
-            
+
         /// <summary>
         /// Deprecated Method for adding a new object to the OfficeAssignments EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -170,7 +170,7 @@ namespace Microsoft.Samples.Entity
         {
             base.AddObject("OfficeAssignments", officeAssignment);
         }
-            
+
         /// <summary>
         /// Deprecated Method for adding a new object to the People EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -178,7 +178,7 @@ namespace Microsoft.Samples.Entity
         {
             base.AddObject("People", person);
         }
-            
+
         /// <summary>
         /// Deprecated Method for adding a new object to the StudentGrades EntitySet. Consider using the .Add method of the associated ObjectSet&lt;T&gt; property instead.
         /// </summary>
@@ -188,14 +188,14 @@ namespace Microsoft.Samples.Entity
         }
         #endregion
         #region Function Imports
-    
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
         /// <param name="studentID">No Metadata Documentation available.</param>
         public ObjectResult<StudentGrade> GetStudentGrades(Nullable<global::System.Int32> studentID)
         {
-    
+
             ObjectParameter studentIDParameter;
             if (studentID.HasValue)
             {
@@ -207,15 +207,15 @@ namespace Microsoft.Samples.Entity
             }
             return base.ExecuteFunction<StudentGrade>("GetStudentGrades", studentIDParameter);
         }
-    
+
         /// <summary>
-        /// No Metadata Documentation available. 
+        /// No Metadata Documentation available.
         /// </summary>
         /// <param name="mergeOption"></param>
         /// <param name="studentID">No Metadata Documentation available.</param>
         public ObjectResult<StudentGrade> GetStudentGrades(Nullable<global::System.Int32> studentID, MergeOption mergeOption)
         {
-    
+
             ObjectParameter studentIDParameter;
             if (studentID.HasValue)
             {
@@ -229,10 +229,10 @@ namespace Microsoft.Samples.Entity
         }
         #endregion
     }
-    
+
     #endregion
-    
-    
+
+
     #region Entities
     /// <summary>
     /// No Metadata Documentation available.
@@ -267,12 +267,12 @@ namespace Microsoft.Samples.Entity
                     OnCourseIDChanged();
                 }
             }
-                
+
         }
         private global::System.Int32 _CourseID;
         partial void OnCourseIDChanging(global::System.Int32 value);
         partial void OnCourseIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -292,12 +292,12 @@ namespace Microsoft.Samples.Entity
                 ReportPropertyChanged("Title");
                 OnTitleChanged();
             }
-                
+
         }
         private global::System.String _Title;
         partial void OnTitleChanging(global::System.String value);
         partial void OnTitleChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -317,12 +317,12 @@ namespace Microsoft.Samples.Entity
                 ReportPropertyChanged("Credits");
                 OnCreditsChanged();
             }
-                
+
         }
         private global::System.Int32 _Credits;
         partial void OnCreditsChanging(global::System.Int32 value);
         partial void OnCreditsChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -342,14 +342,14 @@ namespace Microsoft.Samples.Entity
                 ReportPropertyChanged("DepartmentID");
                 OnDepartmentIDChanged();
             }
-                
+
         }
         private global::System.Int32 _DepartmentID;
         partial void OnDepartmentIDChanging(global::System.Int32 value);
         partial void OnDepartmentIDChanged();
-        
+
         #endregion
-    
+
         #region Navigation Properties
         /// <summary>
         /// No Metadata Documentation available.
@@ -357,7 +357,7 @@ namespace Microsoft.Samples.Entity
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_Course_Department", "Department")] 
+        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_Course_Department", "Department")]
         public Department Department
         {
             get
@@ -394,7 +394,7 @@ namespace Microsoft.Samples.Entity
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_StudentGrade_Course", "StudentGrade")] 
+        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_StudentGrade_Course", "StudentGrade")]
         public EntityCollection<StudentGrade> StudentGrades
         {
             get
@@ -415,7 +415,7 @@ namespace Microsoft.Samples.Entity
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "CourseInstructor", "Person")] 
+        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "CourseInstructor", "Person")]
         public EntityCollection<Person> People
         {
             get
@@ -432,7 +432,7 @@ namespace Microsoft.Samples.Entity
         }
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -453,13 +453,13 @@ namespace Microsoft.Samples.Entity
         {
             Department department = new Department();
             department.DepartmentID = departmentID;
-            
+
             department.Name = name;
-            
+
             department.Budget = budget;
-            
+
             department.StartDate = startDate;
-            
+
             return department;
         }
         #endregion
@@ -487,12 +487,12 @@ namespace Microsoft.Samples.Entity
                     OnDepartmentIDChanged();
                 }
             }
-                
+
         }
         private global::System.Int32 _DepartmentID;
         partial void OnDepartmentIDChanging(global::System.Int32 value);
         partial void OnDepartmentIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -512,12 +512,12 @@ namespace Microsoft.Samples.Entity
                 ReportPropertyChanged("Name");
                 OnNameChanged();
             }
-                
+
         }
         private global::System.String _Name;
         partial void OnNameChanging(global::System.String value);
         partial void OnNameChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -537,12 +537,12 @@ namespace Microsoft.Samples.Entity
                 ReportPropertyChanged("Budget");
                 OnBudgetChanged();
             }
-                
+
         }
         private global::System.Decimal _Budget;
         partial void OnBudgetChanging(global::System.Decimal value);
         partial void OnBudgetChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -562,12 +562,12 @@ namespace Microsoft.Samples.Entity
                 ReportPropertyChanged("StartDate");
                 OnStartDateChanged();
             }
-                
+
         }
         private global::System.DateTime _StartDate;
         partial void OnStartDateChanging(global::System.DateTime value);
         partial void OnStartDateChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -587,14 +587,14 @@ namespace Microsoft.Samples.Entity
                 ReportPropertyChanged("Administrator");
                 OnAdministratorChanged();
             }
-                
+
         }
         private Nullable<global::System.Int32> _Administrator;
         partial void OnAdministratorChanging(Nullable<global::System.Int32> value);
         partial void OnAdministratorChanged();
-        
+
         #endregion
-    
+
         #region Navigation Properties
         /// <summary>
         /// No Metadata Documentation available.
@@ -602,7 +602,7 @@ namespace Microsoft.Samples.Entity
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_Course_Department", "Course")] 
+        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_Course_Department", "Course")]
         public EntityCollection<Course> Courses
         {
             get
@@ -619,7 +619,7 @@ namespace Microsoft.Samples.Entity
         }
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -639,11 +639,11 @@ namespace Microsoft.Samples.Entity
         {
             OfficeAssignment officeAssignment = new OfficeAssignment();
             officeAssignment.InstructorID = instructorID;
-            
+
             officeAssignment.Location = location;
-            
+
             officeAssignment.Timestamp = timestamp;
-            
+
             return officeAssignment;
         }
         #endregion
@@ -671,12 +671,12 @@ namespace Microsoft.Samples.Entity
                     OnInstructorIDChanged();
                 }
             }
-                
+
         }
         private global::System.Int32 _InstructorID;
         partial void OnInstructorIDChanging(global::System.Int32 value);
         partial void OnInstructorIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -696,12 +696,12 @@ namespace Microsoft.Samples.Entity
                 ReportPropertyChanged("Location");
                 OnLocationChanged();
             }
-                
+
         }
         private global::System.String _Location;
         partial void OnLocationChanging(global::System.String value);
         partial void OnLocationChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -721,14 +721,14 @@ namespace Microsoft.Samples.Entity
                 ReportPropertyChanged("Timestamp");
                 OnTimestampChanged();
             }
-                
+
         }
         private global::System.Byte[] _Timestamp;
         partial void OnTimestampChanging(global::System.Byte[] value);
         partial void OnTimestampChanged();
-        
+
         #endregion
-    
+
         #region Navigation Properties
         /// <summary>
         /// No Metadata Documentation available.
@@ -736,7 +736,7 @@ namespace Microsoft.Samples.Entity
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_OfficeAssignment_Person", "Person")] 
+        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_OfficeAssignment_Person", "Person")]
         public Person Person
         {
             get
@@ -769,7 +769,7 @@ namespace Microsoft.Samples.Entity
         }
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -791,15 +791,15 @@ namespace Microsoft.Samples.Entity
         {
             OnlineCourse onlineCourse = new OnlineCourse();
             onlineCourse.CourseID = courseID;
-            
+
             onlineCourse.Title = title;
-            
+
             onlineCourse.Credits = credits;
-            
+
             onlineCourse.DepartmentID = departmentID;
-            
+
             onlineCourse.URL = uRL;
-            
+
             return onlineCourse;
         }
         #endregion
@@ -824,16 +824,16 @@ namespace Microsoft.Samples.Entity
                 ReportPropertyChanged("URL");
                 OnURLChanged();
             }
-                
+
         }
         private global::System.String _URL;
         partial void OnURLChanging(global::System.String value);
         partial void OnURLChanged();
-        
+
         #endregion
-    
+
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -857,19 +857,19 @@ namespace Microsoft.Samples.Entity
         {
             OnsiteCourse onsiteCourse = new OnsiteCourse();
             onsiteCourse.CourseID = courseID;
-            
+
             onsiteCourse.Title = title;
-            
+
             onsiteCourse.Credits = credits;
-            
+
             onsiteCourse.DepartmentID = departmentID;
-            
+
             onsiteCourse.Location = location;
-            
+
             onsiteCourse.Days = days;
-            
+
             onsiteCourse.Time = time;
-            
+
             return onsiteCourse;
         }
         #endregion
@@ -894,12 +894,12 @@ namespace Microsoft.Samples.Entity
                 ReportPropertyChanged("Location");
                 OnLocationChanged();
             }
-                
+
         }
         private global::System.String _Location;
         partial void OnLocationChanging(global::System.String value);
         partial void OnLocationChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -919,12 +919,12 @@ namespace Microsoft.Samples.Entity
                 ReportPropertyChanged("Days");
                 OnDaysChanged();
             }
-                
+
         }
         private global::System.String _Days;
         partial void OnDaysChanging(global::System.String value);
         partial void OnDaysChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -944,16 +944,16 @@ namespace Microsoft.Samples.Entity
                 ReportPropertyChanged("Time");
                 OnTimeChanged();
             }
-                
+
         }
         private global::System.DateTime _Time;
         partial void OnTimeChanging(global::System.DateTime value);
         partial void OnTimeChanged();
-        
+
         #endregion
-    
+
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -973,11 +973,11 @@ namespace Microsoft.Samples.Entity
         {
             Person person = new Person();
             person.PersonID = personID;
-            
+
             person.LastName = lastName;
-            
+
             person.FirstName = firstName;
-            
+
             return person;
         }
         #endregion
@@ -1005,12 +1005,12 @@ namespace Microsoft.Samples.Entity
                     OnPersonIDChanged();
                 }
             }
-                
+
         }
         private global::System.Int32 _PersonID;
         partial void OnPersonIDChanging(global::System.Int32 value);
         partial void OnPersonIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1030,12 +1030,12 @@ namespace Microsoft.Samples.Entity
                 ReportPropertyChanged("LastName");
                 OnLastNameChanged();
             }
-                
+
         }
         private global::System.String _LastName;
         partial void OnLastNameChanging(global::System.String value);
         partial void OnLastNameChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1055,12 +1055,12 @@ namespace Microsoft.Samples.Entity
                 ReportPropertyChanged("FirstName");
                 OnFirstNameChanged();
             }
-                
+
         }
         private global::System.String _FirstName;
         partial void OnFirstNameChanging(global::System.String value);
         partial void OnFirstNameChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1080,12 +1080,12 @@ namespace Microsoft.Samples.Entity
                 ReportPropertyChanged("HireDate");
                 OnHireDateChanged();
             }
-                
+
         }
         private Nullable<global::System.DateTime> _HireDate;
         partial void OnHireDateChanging(Nullable<global::System.DateTime> value);
         partial void OnHireDateChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1105,14 +1105,14 @@ namespace Microsoft.Samples.Entity
                 ReportPropertyChanged("EnrollmentDate");
                 OnEnrollmentDateChanged();
             }
-                
+
         }
         private Nullable<global::System.DateTime> _EnrollmentDate;
         partial void OnEnrollmentDateChanging(Nullable<global::System.DateTime> value);
         partial void OnEnrollmentDateChanged();
-        
+
         #endregion
-    
+
         #region Navigation Properties
         /// <summary>
         /// No Metadata Documentation available.
@@ -1120,7 +1120,7 @@ namespace Microsoft.Samples.Entity
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_OfficeAssignment_Person", "OfficeAssignment")] 
+        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_OfficeAssignment_Person", "OfficeAssignment")]
         public OfficeAssignment OfficeAssignment
         {
             get
@@ -1157,7 +1157,7 @@ namespace Microsoft.Samples.Entity
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_StudentGrade_Student", "StudentGrade")] 
+        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_StudentGrade_Student", "StudentGrade")]
         public EntityCollection<StudentGrade> StudentGrades
         {
             get
@@ -1178,7 +1178,7 @@ namespace Microsoft.Samples.Entity
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "CourseInstructor", "Course")] 
+        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "CourseInstructor", "Course")]
         public EntityCollection<Course> Courses
         {
             get
@@ -1195,7 +1195,7 @@ namespace Microsoft.Samples.Entity
         }
         #endregion
     }
-    
+
     /// <summary>
     /// No Metadata Documentation available.
     /// </summary>
@@ -1215,11 +1215,11 @@ namespace Microsoft.Samples.Entity
         {
             StudentGrade studentGrade = new StudentGrade();
             studentGrade.EnrollmentID = enrollmentID;
-            
+
             studentGrade.CourseID = courseID;
-            
+
             studentGrade.StudentID = studentID;
-            
+
             return studentGrade;
         }
         #endregion
@@ -1247,12 +1247,12 @@ namespace Microsoft.Samples.Entity
                     OnEnrollmentIDChanged();
                 }
             }
-                
+
         }
         private global::System.Int32 _EnrollmentID;
         partial void OnEnrollmentIDChanging(global::System.Int32 value);
         partial void OnEnrollmentIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1272,12 +1272,12 @@ namespace Microsoft.Samples.Entity
                 ReportPropertyChanged("CourseID");
                 OnCourseIDChanged();
             }
-                
+
         }
         private global::System.Int32 _CourseID;
         partial void OnCourseIDChanging(global::System.Int32 value);
         partial void OnCourseIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1297,12 +1297,12 @@ namespace Microsoft.Samples.Entity
                 ReportPropertyChanged("StudentID");
                 OnStudentIDChanged();
             }
-                
+
         }
         private global::System.Int32 _StudentID;
         partial void OnStudentIDChanging(global::System.Int32 value);
         partial void OnStudentIDChanged();
-        
+
         /// <summary>
         /// No Metadata Documentation available.
         /// </summary>
@@ -1322,14 +1322,14 @@ namespace Microsoft.Samples.Entity
                 ReportPropertyChanged("Grade");
                 OnGradeChanged();
             }
-                
+
         }
         private Nullable<global::System.Decimal> _Grade;
         partial void OnGradeChanging(Nullable<global::System.Decimal> value);
         partial void OnGradeChanged();
-        
+
         #endregion
-    
+
         #region Navigation Properties
         /// <summary>
         /// No Metadata Documentation available.
@@ -1337,7 +1337,7 @@ namespace Microsoft.Samples.Entity
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_StudentGrade_Course", "Course")] 
+        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_StudentGrade_Course", "Course")]
         public Course Course
         {
             get
@@ -1374,7 +1374,7 @@ namespace Microsoft.Samples.Entity
         [XmlIgnoreAttribute()]
         [SoapIgnoreAttribute()]
         [DataMemberAttribute()]
-        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_StudentGrade_Student", "Person")] 
+        [EdmRelationshipNavigationPropertyAttribute("SchoolModel", "FK_StudentGrade_Student", "Person")]
         public Person Person
         {
             get
@@ -1407,7 +1407,7 @@ namespace Microsoft.Samples.Entity
         }
         #endregion
     }
-    
+
     #endregion
-    
+
 }

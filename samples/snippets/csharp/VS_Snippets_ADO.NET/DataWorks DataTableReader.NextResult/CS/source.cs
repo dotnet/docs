@@ -36,11 +36,11 @@ class DataTableReaderConstructor
         // Create sample Customers table, in order
         // to demonstrate the behavior of the DataTableReader.
         DataTable table = new DataTable();
-      
+
         // Create two columns, ID and Name.
         DataColumn idColumn = table.Columns.Add("ID", typeof(int));
         table.Columns.Add("Name", typeof(string ));
-      
+
         // Set the ID column as the primary key column.
         table.PrimaryKey = new DataColumn[] { idColumn };
 
@@ -56,11 +56,11 @@ class DataTableReaderConstructor
         // Create sample Products table, in order
         // to demonstrate the behavior of the DataTableReader.
         DataTable table = new DataTable();
-      
+
         // Create two columns, ID and Name.
         DataColumn idColumn = table.Columns.Add("ID", typeof(int));
         table.Columns.Add("Name", typeof(string ));
-      
+
         // Set the ID column as the primary key column.
         table.PrimaryKey = new DataColumn[] { idColumn };
 

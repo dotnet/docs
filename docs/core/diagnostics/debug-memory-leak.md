@@ -140,7 +140,7 @@ dotnet-dump analyze core_20190430_185145
 Where `core_20190430_185145` is the name of the core dump you want to analyze.
 
 > [!NOTE]
-> If you see an error complaining that *libdl.so* cannot be found, you may have to install the *libc6-dev* package. For more information, see [Prerequisites for .NET Core on Linux](../linux-prerequisites.md).
+> If you see an error complaining that *libdl.so* cannot be found, you may have to install the *libc6-dev* package. For more information, see [Prerequisites for .NET Core on Linux](../install/dependencies.md?pivots=os-linux).
 
 You'll be presented with a prompt where you can enter SOS commands. Commonly, the first thing you want to look at is the overall state of the managed heap:
 

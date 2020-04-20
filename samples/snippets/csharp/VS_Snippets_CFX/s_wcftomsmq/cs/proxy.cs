@@ -15,12 +15,12 @@ namespace Microsoft.ServiceModel.Samples
         [OperationContract(IsOneWay = true, Action = "*")]
         void SubmitPurchaseOrder(MsmqMessage<PurchaseOrder> msg);
     }
-   
+
     public interface IOrderProcessorChannel : IOrderProcessor, System.ServiceModel.IClientChannel
     {
     }
     // </Snippet6>
-    
+
     // <Snippet7>
     public partial class OrderProcessorProxy : System.ServiceModel.ClientBase<IOrderProcessor>, IOrderProcessor
     {

@@ -8,7 +8,7 @@ ms.date: 09/20/2016
 
 Azure File storage is a service that offers file shares in the cloud using the standard [Server Message Block (SMB) Protocol](https://msdn.microsoft.com/library/windows/desktop/aa365233.aspx). Both SMB 2.1 and SMB 3.0 are supported. With Azure File storage, you can migrate legacy applications that rely on file shares to Azure quickly and without costly rewrites. Applications running in Azure virtual machines or cloud services or from on-premises clients can mount a file share in the cloud, just as a desktop application mounts a typical SMB share. Any number of application components can then mount and access the File storage share simultaneously.
 
-For a conceptual overview of file storage, please see [the .NET guide for file storage](https://docs.microsoft.com/azure/storage/storage-dotnet-how-to-use-files).
+For a conceptual overview of file storage, see [the .NET guide for file storage](https://docs.microsoft.com/azure/storage/storage-dotnet-how-to-use-files).
 
 ## Prerequisites
 
@@ -35,7 +35,7 @@ For the tutorial, you'll enter your connection string in your script, like this:
 
 [!code-fsharp[FileStorage](~/samples/snippets/fsharp/azure/file-storage.fsx#L11-L11)]
 
-However, this is **not recommended** for real projects. Your storage account key is similar to the root password for your storage account. Always be careful to protect your storage account key. Avoid distributing it to other users, hard-coding it, or saving it in a plain-text file that is accessible to others. You can regenerate your key using the Azure Portal if you believe it may have been compromised.
+However, this is **not recommended** for real projects. Your storage account key is similar to the root password for your storage account. Always be careful to protect your storage account key. Avoid distributing it to other users, hard-coding it, or saving it in a plain-text file that is accessible to others. You can regenerate your key using the Azure portal if you believe it may have been compromised.
 
 For real applications, the best way to maintain your storage connection string is in a configuration file. To fetch the connection string from a configuration file, you can do this:
 
@@ -67,7 +67,7 @@ This example shows how to create a file share if it does not already exist:
 
 ## Create a root directory and a subdirectory
 
-Here, you get the root directory and get a sub-directory of the root. You create both if they don't already exist.
+Here, you get the root directory and get a subdirectory of the root. You create both if they don't already exist.
 
 [!code-fsharp[FileStorage](~/samples/snippets/fsharp/azure/file-storage.fsx#L41-L43)]
 
@@ -121,13 +121,13 @@ You can copy a blob to a file in the same way. If the source object is a blob, t
 
 Azure Storage Analytics supports metrics for File storage. With metrics data, you can trace requests and diagnose issues.
 
-You can enable metrics for File storage from the [Azure Portal](https://portal.azure.com), or you can do it from F# like this:
+You can enable metrics for File storage from the [Azure portal](https://portal.azure.com), or you can do it from F# like this:
 
 [!code-fsharp[FileStorage](~/samples/snippets/fsharp/azure/file-storage.fsx#L126-L140)]
 
 ## Next steps
 
-See these links for more information about Azure File storage.
+For more information about Azure File storage, see these links.
 
 ### Conceptual articles and videos
 

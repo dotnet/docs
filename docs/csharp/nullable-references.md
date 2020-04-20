@@ -2,7 +2,7 @@
 title: Nullable reference types
 description: This article provides an overview of nullable reference types, added in C# 8.0. You'll learn how the feature provides safety against null reference exceptions, for new and existing projects.
 ms.technology: csharp-null-safety
-ms.date: 02/19/2019
+ms.date: 04/21/2020
 ---
 # Nullable reference types
 
@@ -17,8 +17,10 @@ C# 8.0 introduces **nullable reference types** and **non-nullable reference type
 
 This new feature provides significant benefits over the handling of reference variables in earlier versions of C# where the design intent couldn't be determined from the variable declaration. The compiler didn't provide safety against null reference exceptions for reference types:
 
-- **A reference can be null**. No warning is issued when a reference type is initialized to null, or null is later assigned to it.
-- **A reference is assumed to be not null**. The compiler doesn't issue any warnings when reference types are dereferenced. (With nullable references,  the compiler issues warnings whenever you dereference a variable that may be null).
+- **A reference can be null**. No warning is issued when a reference type is initialized to null, or null is later assigned to it. Warnings are issued when these variables are dereferenced without null checks.
+- **A reference is assumed to be not null**. The compiler doesn't issue any warnings when reference types are dereferenced. The compiler issues warnings if a variable is set to an expression that may be null.
+
+These warnings are emitted at compile time. The compiler does not add any null checks or other runtime constructs in a nullable context. At runtime, a nullable reference and a non-nullable reference are equivalent.
 
 With the addition of nullable reference types, you can declare your intent more clearly. The `null` value is the correct way to represent that a variable doesn't refer to a value. Don't use this feature to remove all `null` values from your code. Rather, you should declare your intent to the compiler and other developers that read your code. By declaring your intent, the compiler informs you when you write code that is inconsistent with that intent.
 
@@ -80,7 +82,7 @@ You can also use directives to set these same contexts anywhere in your project:
 - `#nullable enable annotations`: Set the nullable annotation context to **enabled**.
 - `#nullable restore annotations`: Restores the annotation warning context to the project settings.
 
-By default, nullable annotation and warning contexts are **disabled**. That means that your existing code compiles without changes and without generating any new warnings.
+By default, nullable annotation and warning contexts are **disabled**, including new projects. That means that your existing code compiles without changes and without generating any new warnings.
 
 ## Nullable annotation context
 
@@ -110,6 +112,12 @@ The nullable warning context is distinct from the nullable annotation context. W
 1. The variable or expression has been checked against null before de-referencing it.
 
 The compiler generates warnings whenever you dereference a variable or expression in a **maybe null** state when the nullable warning context is enabled. Furthermore, warnings are generated when a **maybe null** variable or expression is assigned to a nonnullable reference type in an enabled nullable annotation context.
+
+## Attributes describe APIs
+ 
+
+
+
 
 ## See also
 

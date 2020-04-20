@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
- 
+
 namespace BindToWebService {
 	class Form1: Form
 
@@ -62,33 +62,33 @@ namespace BindToWebService {
 	{
 		
 		public ZipCodeResolver() : base()
-		{        
-			this.Url = 
+		{
+			this.Url =
 				"http://webservices.eraserver.net/zipcoderesolver/zipcoderesolver.asmx";
 		}
 
 		//''<remarks/>
 		[System.Web.Services.Protocols.SoapDocumentMethodAttribute
-			("http://webservices.eraserver.net/CorrectedAddressXml", 
-			RequestNamespace="http://webservices.eraserver.net/", 
-			ResponseNamespace="http://webservices.eraserver.net/", 
-			Use=System.Web.Services.Description.SoapBindingUse.Literal, 
+			("http://webservices.eraserver.net/CorrectedAddressXml",
+			RequestNamespace="http://webservices.eraserver.net/",
+			ResponseNamespace="http://webservices.eraserver.net/",
+			Use=System.Web.Services.Description.SoapBindingUse.Literal,
 			ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-		public USPSAddress CorrectedAddressXml(string accessCode, 
+		public USPSAddress CorrectedAddressXml(string accessCode,
 			string address, string city, string state)
 		{
-			object[] results = this.Invoke("CorrectedAddressXml", 
+			object[] results = this.Invoke("CorrectedAddressXml",
 				new object[]{accessCode, address, city, state});
 			return ((USPSAddress) results[0]);
 		}
 
 		//''<remarks/>
 		public System.IAsyncResult BeginCorrectedAddressXml(string accessCode,
-			string address, string city, string state, 
+			string address, string city, string state,
 			System.AsyncCallback callback, object asyncState)
 		{
 
-			return this.BeginInvoke("CorrectedAddressXml", 
+			return this.BeginInvoke("CorrectedAddressXml",
 				new object[]{accessCode, address, city, state}, callback, asyncState);
 		}
 
@@ -115,7 +115,7 @@ namespace BindToWebService {
 
 		private string fullZIPField;
 
-		public string Street    
+		public string Street
 		{
 			get
 			{
@@ -127,7 +127,7 @@ namespace BindToWebService {
 			}
 		}
 
-		public string City    
+		public string City
 		{
 			get
 			{
@@ -139,7 +139,7 @@ namespace BindToWebService {
 			}
 		}
 
-		public string State    
+		public string State
 		{
 			get
 			{
@@ -151,7 +151,7 @@ namespace BindToWebService {
 			}
 		}
 
-		public string ShortZIP    
+		public string ShortZIP
 		{
 			get
 			{
@@ -163,7 +163,7 @@ namespace BindToWebService {
 			}
 		}
 
-		public string FullZIP    
+		public string FullZIP
 		{
 			get
 			{
@@ -189,11 +189,11 @@ namespace BindToWebService {
 		internal CorrectedAddressXmlCompletedEventArgs(object[] results,
 			System.Exception exception, bool cancelled, object userState) :
 			base(exception, cancelled, userState)
-		{        
+		{
 			this.results = results;
 		}
 
-		public USPSAddress Result    
+		public USPSAddress Result
 		{
 			get
 			{

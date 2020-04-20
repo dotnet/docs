@@ -1,5 +1,5 @@
 ﻿// Contact.cs
-// The type of the items in the Contacts collection property 
+// The type of the items in the Contacts collection property
 //in QuickContacts.
 
 using System;

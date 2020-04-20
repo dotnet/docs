@@ -68,7 +68,7 @@ namespace Microsoft.Samples.KeyFrameExamples
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(2.0))) // KeyTime
                 );
 
-            // In the next half second, go to yellow. DiscreteColorKeyFrame creates a 
+            // In the next half second, go to yellow. DiscreteColorKeyFrame creates a
             // sudden jump between values.
             colorAnimation.KeyFrames.Add(
                 new DiscreteColorKeyFrame(
@@ -76,7 +76,7 @@ namespace Microsoft.Samples.KeyFrameExamples
                     KeyTime.FromTimeSpan(TimeSpan.FromSeconds(2.5))) // KeyTime
                 );
 
-            // In the final 2 seconds of the animation, go from yellow back to green. SplineColorKeyFrame 
+            // In the final 2 seconds of the animation, go from yellow back to green. SplineColorKeyFrame
             // creates a variable transition between values depending on the KeySpline property. In this example,
             // the animation starts off slow but toward the end of the time segment, it speeds up exponentially.
             colorAnimation.KeyFrames.Add(
@@ -87,7 +87,7 @@ namespace Microsoft.Samples.KeyFrameExamples
                     )
                 );
 
-            // Set the animation to repeat forever. 
+            // Set the animation to repeat forever.
             colorAnimation.RepeatBehavior = RepeatBehavior.Forever;
 
             // Set the animation to target the Color property

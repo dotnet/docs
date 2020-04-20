@@ -21,7 +21,7 @@ namespace SDKSample
             // Create a new InlineUIContainer to contain the Button.
             InlineUIContainer myInlineUIContainer = new InlineUIContainer();
 
-            // Set the BaselineAlignment property to "Bottom" so that the 
+            // Set the BaselineAlignment property to "Bottom" so that the
             // Button aligns properly with the text.
             myInlineUIContainer.BaselineAlignment = BaselineAlignment.Bottom;
 

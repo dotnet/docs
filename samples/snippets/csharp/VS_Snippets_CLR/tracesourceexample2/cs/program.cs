@@ -26,15 +26,15 @@ namespace TraceSourceApp
             mySource.Listeners.Add(textListener);
             Activity1();
 
-            // Allow the trace source to send messages to 
-            // listeners for all event types. Currently only 
+            // Allow the trace source to send messages to
+            // listeners for all event types. Currently only
             // error messages or higher go to the listeners.
-            // Messages must get past the source switch to 
-            // get to the listeners, regardless of the settings 
+            // Messages must get past the source switch to
+            // get to the listeners, regardless of the settings
             // for the listeners.
             mySource.Switch.Level = SourceLevels.All;
 
-            // Set the filter settings for the 
+            // Set the filter settings for the
             // console trace listener.
             mySource.Listeners["console"].Filter =
                 new EventTypeFilter(SourceLevels.Critical);

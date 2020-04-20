@@ -87,7 +87,7 @@ namespace WPF_Hosting_Win32_Control
       WM_COMMAND = 0x00000111,
       LB_GETCURSEL = 0x00000188,
       LB_GETTEXTLEN = 0x0000018A,
-      LB_ADDSTRING = 0x00000180, 
+      LB_ADDSTRING = 0x00000180,
       LB_GETTEXT = 0x00000189,
       LB_DELETESTRING = 0x00000182,
       LB_GETCOUNT = 0x0000018B;
@@ -101,7 +101,7 @@ namespace WPF_Hosting_Win32_Control
     [DllImport("user32.dll", EntryPoint = "SendMessage", CharSet = CharSet.Unicode)]
     internal static extern int SendMessage(IntPtr hwnd,
                                            int msg,
-                                           int wParam, 
+                                           int wParam,
                                            [MarshalAs(UnmanagedType.LPWStr)] StringBuilder lParam);
 
     [DllImport("user32.dll", EntryPoint = "SendMessage", CharSet = CharSet.Unicode)]

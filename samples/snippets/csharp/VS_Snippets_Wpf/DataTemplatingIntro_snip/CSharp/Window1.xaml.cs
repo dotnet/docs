@@ -8,7 +8,7 @@ using System.Windows.Media;
 using System.Collections.ObjectModel;
 
 namespace SDKSample
-{    
+{
     public partial class Window1 : Window
     {
         public Window1()

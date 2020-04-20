@@ -31,7 +31,7 @@ namespace SDKSample
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
-        
+
         private void OnPropertyChanged(string info)
         {
             PropertyChangedEventHandler handler = PropertyChanged;

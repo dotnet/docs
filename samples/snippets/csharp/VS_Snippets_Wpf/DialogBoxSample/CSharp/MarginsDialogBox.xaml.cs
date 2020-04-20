@@ -10,7 +10,7 @@ namespace SDKSample
         {
             InitializeComponent();
         }
-        
+
         public Thickness DocumentMargin
         {
             get { return (Thickness)this.DataContext; }
@@ -39,7 +39,7 @@ namespace SDKSample
             if (node != null)
             {
                 // Check if dependency object is valid.
-                // NOTE: Validation.GetHasError works for controls that have validation rules attached 
+                // NOTE: Validation.GetHasError works for controls that have validation rules attached
                 bool isValid = !Validation.GetHasError(node);
                 if (!isValid)
                 {
@@ -54,7 +54,7 @@ namespace SDKSample
             foreach (object subnode in LogicalTreeHelper.GetChildren(node))
             {
                 if (subnode is DependencyObject)
-                {   
+                {
                     // If a child dependency object is invalid, return false immediately,
                     // otherwise keep checking
                     if (IsValid((DependencyObject)subnode) == false) return false;

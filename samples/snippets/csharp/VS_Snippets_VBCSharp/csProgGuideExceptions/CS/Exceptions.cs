@@ -2,7 +2,7 @@
 using System.IO;
 namespace CsCsrefProgrammingExceptions
 {
-    
+
     //-------------------------------------------------------------------------
     class UsingExceptions
     {
@@ -51,24 +51,24 @@ namespace CsCsrefProgrammingExceptions
                     using (var sw = new StreamWriter(@"C:\test\test.txt"))
                     {
                         sw.WriteLine("Hello");
-                    }   
+                    }
                 }
                 // Put the more specific exceptions first.
                 catch (DirectoryNotFoundException ex)
                 {
-                    Console.WriteLine(ex);  
+                    Console.WriteLine(ex);
                 }
                 catch (FileNotFoundException ex)
                 {
-                    Console.WriteLine(ex);  
+                    Console.WriteLine(ex);
                 }
                 // Put the least specific exception last.
                 catch (IOException ex)
                 {
-                    Console.WriteLine(ex);  
+                    Console.WriteLine(ex);
                 }
 
-                Console.WriteLine("Done"); 
+                Console.WriteLine("Done");
             }
         }
         //</Snippet3>
@@ -133,7 +133,7 @@ namespace CsCsrefProgrammingExceptions
         }
     }
     //</Snippet5>
-    
+
     // TODO MOVE THIS EXAMPLE INTO EXCEPTIONS AND EXCEPTION HANDLING TOPIC AFTER JAN CPUB
     //-------------------------------------------------------------------------
     class Exceptions
@@ -150,7 +150,7 @@ namespace CsCsrefProgrammingExceptions
             // to see exception handling behavior.
             double a = 98, b = 0;
             double result = 0;
-            
+
             try
             {
                 result = SafeDivision(a, b);
@@ -205,7 +205,7 @@ namespace CsCsrefProgrammingExceptions
             }
             finally
             {
-                // Code to execute after the try (and possibly catch) blocks 
+                // Code to execute after the try (and possibly catch) blocks
                 // goes here.
             }
             //</Snippet8>
@@ -220,7 +220,7 @@ namespace CsCsrefProgrammingExceptions
                 // Call a custom error logging procedure.
                 LogError(e);
                 // Re-throw the error.
-                throw;     
+                throw;
             }
             //</Snippet10>
 
@@ -262,8 +262,8 @@ namespace CsCsrefProgrammingExceptions
     }
 
     //-------------------------------------------------------------------------
-    
-    class CreatingAndThrowing 
+
+    class CreatingAndThrowing
     {
         class SampleClass
         {
@@ -320,7 +320,7 @@ namespace CsCsrefProgrammingExceptions
         public InvalidDepartmentException(string message, System.Exception inner) : base(message, inner) { }
 
         // A constructor is needed for serialization when an
-        // exception propagates from a remoting server to the client. 
+        // exception propagates from a remoting server to the client.
         protected InvalidDepartmentException(System.Runtime.Serialization.SerializationInfo info,
             System.Runtime.Serialization.StreamingContext context) : base(info, context) { }
     }
@@ -376,7 +376,7 @@ namespace CsCsrefProgrammingExceptions
         }
     }
 
-    //<snippet18>   
+    //<snippet18>
     class ExceptionTest
     {
         static double SafeDivision(double x, double y)

@@ -61,7 +61,7 @@ namespace BrushesIntroduction
             offsetAnimation.Duration = TimeSpan.FromSeconds(1.5);
             offsetAnimation.AutoReverse = true;
             Storyboard.SetTargetName(offsetAnimation, "GradientStop1");
-            Storyboard.SetTargetProperty(offsetAnimation, 
+            Storyboard.SetTargetProperty(offsetAnimation,
                 new PropertyPath(GradientStop.OffsetProperty));
 
             //
@@ -87,7 +87,7 @@ namespace BrushesIntroduction
             //
             ColorAnimation opacityAnimation = new ColorAnimation();
 
-            // Reduces the target color's alpha value by 1, 
+            // Reduces the target color's alpha value by 1,
             // making the color transparent.
             opacityAnimation.By = Color.FromScRgb(-1.0F, 0F, 0F, 0F);
             opacityAnimation.Duration = TimeSpan.FromSeconds(1.5);
@@ -97,7 +97,7 @@ namespace BrushesIntroduction
                 new PropertyPath(GradientStop.ColorProperty));
 
             // Set the animation to begin after the first two
-            // animations have ended. 
+            // animations have ended.
             opacityAnimation.BeginTime = TimeSpan.FromSeconds(6);
 
             // Create a Storyboard to apply the animations.

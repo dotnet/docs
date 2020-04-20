@@ -22,7 +22,7 @@ namespace Microsoft.Samples.Graphics.UsingImageBrush
             // to fill the output area while still
             // preserving its aspect ratio.
             ImageBrush uniformBrush = new ImageBrush();
-            uniformBrush.ImageSource = 
+            uniformBrush.ImageSource =
                 new BitmapImage(new Uri("sampleImages\\square.jpg", UriKind.Relative));
             uniformBrush.Stretch = Stretch.Uniform;
 

@@ -40,7 +40,7 @@ namespace DictionaryHowTo
             LastQueryDate = DateTime.Now;
             RecentHighTemperatures = new int[] { 0 };
         }
-        
+
         public bool Equals(CityInfo x, CityInfo y)
         {
             return x.Name == y.Name && x.Longitude == y.Longitude && x.Latitude == y.Latitude;
@@ -60,7 +60,7 @@ namespace DictionaryHowTo
 
         static void Main(string[] args)
         {
-            CityInfo[] data = 
+            CityInfo[] data =
             {
                 new CityInfo(){ Name = "Boston", Latitude = 42.358769M, Longitude = -71.057806M, RecentHighTemperatures = new int[] {56, 51, 52, 58, 65, 56,53}},
                 new CityInfo(){ Name = "Miami", Latitude = 25.780833M, Longitude = -80.195556M, RecentHighTemperatures = new int[] {86,87,88,87,85,85,86}},
@@ -81,7 +81,7 @@ namespace DictionaryHowTo
                 {
                     if (cities.TryAdd(data[i].Name, data[i]))
                         Console.WriteLine($"Added {data[i]} on thread {Thread.CurrentThread.ManagedThreadId}");
-                    else 
+                    else
                         Console.WriteLine($"Could not add {data[i]}");
                 }
             });
@@ -110,7 +110,7 @@ namespace DictionaryHowTo
 
             AddOrUpdateWithoutRetrieving();
             RetrieveValueOrAdd();
-            RetrieveAndUpdateOrAdd();  
+            RetrieveAndUpdateOrAdd();
 
             Console.WriteLine("Press any key.");
             Console.ReadKey();
@@ -127,7 +127,7 @@ namespace DictionaryHowTo
                                             RecentHighTemperatures = new int[] { 54, 59, 67, 82, 87, 55, -14 } };
 
             // Try to add data. If it doesn't exist, the object ci is added. If it does
-            // already exist, update existingVal according to the custom logic in the 
+            // already exist, update existingVal according to the custom logic in the
             // delegate.
             cities.AddOrUpdate(ci.Name, ci,
                 (key, existingVal) =>
@@ -184,7 +184,7 @@ namespace DictionaryHowTo
         {
             CityInfo retrievedValue;
             string searchKey = "Buenos Aires";
-            
+
             if (cities.TryGetValue(searchKey, out retrievedValue))
             {
                 // Use the data.
@@ -197,7 +197,7 @@ namespace DictionaryHowTo
                                                 retrievedValue.Longitude,
                                                 retrievedValue.Latitude,
                                                 retrievedValue.RecentHighTemperatures);
-                
+
                 // Replace the old value with the new value.
                 if (!cities.TryUpdate(searchKey, newValue, retrievedValue))
                 {
@@ -208,7 +208,7 @@ namespace DictionaryHowTo
             else
             {
                 // Add the new key and value. Here we call a method to retrieve
-                // the data. Another option is to add a default value here and 
+                // the data. Another option is to add a default value here and
                 // update with real data later on some other thread.
                 CityInfo newValue = GetDataForCity(searchKey);
                 if (cities.TryAdd(searchKey, newValue))
@@ -230,14 +230,14 @@ namespace DictionaryHowTo
         {
             // Real implementation left as exercise for the reader.
             if (String.CompareOrdinal(name, "Caracas") == 0)
-                return new CityInfo() { Name = "Caracas", 
-                                        Longitude = 10.5M, 
+                return new CityInfo() { Name = "Caracas",
+                                        Longitude = 10.5M,
                                         Latitude = -66.916667M,
                                         RecentHighTemperatures = new int[] { 91, 89, 91, 91, 87, 90, 91 } };
             else if (String.CompareOrdinal(name, "Buenos Aires") == 0)
-                return new CityInfo() { Name = "Buenos Aires", 
-                                        Longitude = -34.61M, 
-                                        Latitude = -58.369997M, 
+                return new CityInfo() { Name = "Buenos Aires",
+                                        Longitude = -34.61M,
+                                        Latitude = -58.369997M,
                                         RecentHighTemperatures = new int[] { 80, 86, 89, 91, 84, 86, 88 } };
             else
                 throw new ArgumentException($"Cannot find any data for {name}");

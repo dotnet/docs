@@ -139,7 +139,7 @@ namespace PrintTicketSample
                     PrintQueue queue = new PrintQueue(server, args[1]);
                     ChangePrintTicketSetting(queue);
                 }//end if -l
-                    
+
                 else if ((args.Length == 2) && (args[0] == "-r"))
                 {
                     //
@@ -151,7 +151,7 @@ namespace PrintTicketSample
                     PrintQueue queue = new PrintQueue(ps, printerName);
                     ChangePrintTicketSetting(queue);
                  }//end if -r
-               
+
                 else
                 {
                     //

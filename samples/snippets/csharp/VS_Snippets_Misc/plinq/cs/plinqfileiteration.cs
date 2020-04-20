@@ -29,7 +29,7 @@ class PLINQ_Files
     }
     // Use Directory.GetFiles to get the source sequence of file names.
     public static void FileIteration_1(string path)
-    {       
+    {
         var sw = Stopwatch.StartNew();
         int count = 0;
         string[] files = null;
@@ -52,7 +52,7 @@ class PLINQ_Files
                 let extension = Path.GetExtension(file)
                 where extension == ".txt" || extension == ".htm"
                 let text = File.ReadAllText(file)
-                select new FileResult { Text = text , FileName = file }; //Or ReadAllBytes, ReadAllLines, etc.              
+                select new FileResult { Text = text , FileName = file }; //Or ReadAllBytes, ReadAllLines, etc.
 
         try
         {
@@ -74,12 +74,12 @@ class PLINQ_Files
                     return false;
                 });
         }
-       
+
         Console.WriteLine("FileIteration_1 processed {0} files in {1} milliseconds", count, sw.ElapsedMilliseconds);
         }
     //</snippet33>
         //q.ForAll((s) =>
-        //    { 
+        //    {
 
         //        // ...Do work here.
 
@@ -99,7 +99,7 @@ class PLINQ_Files
         //        Interlocked.Increment(ref c);
 
         //    });
-       
+
   //<snippet34>
 
     struct FileResult

@@ -12,7 +12,7 @@ namespace columndefinitions_grid
         ColumnDefinition colDef1;
 
         // <Snippet11>
-        private void addCol(object sender, RoutedEventArgs e) 
+        private void addCol(object sender, RoutedEventArgs e)
         {
             colDef1 = new ColumnDefinition();
             grid1.ColumnDefinitions.Add(colDef1);

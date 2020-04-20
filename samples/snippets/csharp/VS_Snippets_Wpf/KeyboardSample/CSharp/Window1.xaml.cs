@@ -66,11 +66,11 @@ namespace SDKSamples
         // If they are the same, updates a label which keeps track
         // of the number of times the target key has been pressed.
         private void SourceTextKeyDown(object sender, KeyEventArgs e)
-        { 
+        {
             // The key converter.
             KeyConverter converter = new KeyConverter();
             Key target = Key.None;
-            
+
             // Verifying there is only one character in the string.
             if (txtTargetKey.Text.Length == 1)
             {
@@ -78,7 +78,7 @@ namespace SDKSamples
                 target = (Key)converter.ConvertFromString(txtTargetKey.Text);
             }
 
-            // If the pressed key is equal to the target key. 
+            // If the pressed key is equal to the target key.
             if(e.Key == target)
             {
                 // Incrementing  the number of hits, and updating

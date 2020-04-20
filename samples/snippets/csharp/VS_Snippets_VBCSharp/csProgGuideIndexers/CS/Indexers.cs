@@ -4,10 +4,10 @@
 class TempRecord
 {
     // Array of temperature values
-    private float[] temps = new float[10] { 56.2F, 56.7F, 56.5F, 56.9F, 58.8F, 
+    private float[] temps = new float[10] { 56.2F, 56.7F, 56.5F, 56.9F, 58.8F,
                                             61.3F, 65.9F, 62.1F, 59.2F, 57.5F };
 
-    // To enable client code to validate input 
+    // To enable client code to validate input
     // when accessing your indexer.
     public int Length
     {
@@ -82,7 +82,7 @@ class DayCollection
             }
         }
         throw new System.ArgumentOutOfRangeException(
-            nameof(day), 
+            nameof(day),
             $"Day {day} is not supported. Day input must be in the form \"Sun\", \"Mon\", etc");
     }
 }
@@ -276,7 +276,7 @@ namespace WrapProgram
 
         // Define the indexer, which will allow client code
         // to use [] notation on the class instance itself.
-        // (See line 2 of code in Main below.)        
+        // (See line 2 of code in Main below.)
         public T this[int i]
         {
             get

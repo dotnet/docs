@@ -1,33 +1,33 @@
 ﻿/******************************************************************************
  * File: InvokePatternApp.cs
  *
- * Description: 
- *    This sample demonstrates the UI Automation ExpandCollapse, Invoke, and 
+ * Description:
+ *    This sample demonstrates the UI Automation ExpandCollapse, Invoke, and
  *    Toggle control pattern classes.
- * 
- *    The sample consists of a Windows Presentation Foundation (WPF) client and 
- *    a WPF target containing a variety of TreeView controls. The client uses the 
- *    ExpandCollapse, Invoke, and Toggle control patterns to interact with the  
- *    controls in the target.  
- * 
- *    The functionality demonstrated by the sample includes the ability to 
- *    report target control properties and call the supported methods exposed 
+ *
+ *    The sample consists of a Windows Presentation Foundation (WPF) client and
+ *    a WPF target containing a variety of TreeView controls. The client uses the
+ *    ExpandCollapse, Invoke, and Toggle control patterns to interact with the
+ *    controls in the target.
+ *
+ *    The functionality demonstrated by the sample includes the ability to
+ *    report target control properties and call the supported methods exposed
  *    by the respective control patterns such as invoke, toggle, expand or collapse.
- * 
+ *
  * Notes:
- *    1. Hidden child controls are not present in the UI Automation tree until 
- *       they are created and displayed by expanding the top-level TreeViewItem. 
+ *    1. Hidden child controls are not present in the UI Automation tree until
+ *       they are created and displayed by expanding the top-level TreeViewItem.
  *    2. Unless a menu item performs an action other than expanding/collapsing,
- *       it does not support the Invoke pattern (ie, the 'Help' menu item in 
- *       notepad supports ExpandCollapse but does not support Invoke, however, 
- *       the 'About Notepad' menu item under the 'Help' menu supports  
+ *       it does not support the Invoke pattern (ie, the 'Help' menu item in
+ *       notepad supports ExpandCollapse but does not support Invoke, however,
+ *       the 'About Notepad' menu item under the 'Help' menu supports
  *       InvokePattern as it creates an instance of the 'About Notepad' dialog).
- *         
+ *
  *
  * This file is part of the Microsoft .NET Framework SDK Code Samples.
- * 
+ *
  * Copyright (C) Microsoft Corporation.  All rights reserved.
- * 
+ *
  * This source code is intended only as a supplement to Microsoft
  * Development Tools and/or on-line documentation.  See these other
  * materials for detailed information regarding Microsoft code samples.
@@ -148,11 +148,11 @@ namespace SDKSample
             CreateWindow();
 
             // Get the root element from our target application.
-            // In general, you should try to obtain only direct children of 
-            // the RootElement. A search for descendants may iterate through 
-            // hundreds or even thousands of elements, possibly resulting in 
-            // a stack overflow. If you are attempting to obtain a specific 
-            // element at a lower level, you should start your search from the 
+            // In general, you should try to obtain only direct children of
+            // the RootElement. A search for descendants may iterate through
+            // hundreds or even thousands of elements, possibly resulting in
+            // a stack overflow. If you are attempting to obtain a specific
+            // element at a lower level, you should start your search from the
             // application window or from a container at a lower level.
             targetApp =
                 System.Windows.Forms.Application.StartupPath + "\\Target.exe";
@@ -178,7 +178,7 @@ namespace SDKSample
         /// </summary>
         /// <param name="app">The target appliation.</param>
         /// <remarks>
-        /// Starts the application that we are going to use for as our 
+        /// Starts the application that we are going to use for as our
         /// root element for this sample.
         /// </remarks>
         ///--------------------------------------------------------------------
@@ -254,7 +254,7 @@ namespace SDKSample
             StackPanel clientStackPanel = new StackPanel();
             StackPanel statusPanel = new StackPanel();
             statusPanel.HorizontalAlignment = HorizontalAlignment.Center;
-            treeviewPanel = new StackPanel();            
+            treeviewPanel = new StackPanel();
 
             statusText = new TextBlock();
             statusText.FontWeight = FontWeights.Bold;
@@ -296,7 +296,7 @@ namespace SDKSample
             }
             // Create an area in the client to report each TreeView in the target.
             clientTreeViews = new StackPanel[targetTreeViewElements.Count];
-            for (int elementIndex = 0; 
+            for (int elementIndex = 0;
                 elementIndex < targetTreeViewElements.Count; elementIndex++)
             {
                 clientTreeViews[elementIndex] = new StackPanel();
@@ -316,7 +316,7 @@ namespace SDKSample
         //<Snippet1100>
         ///--------------------------------------------------------------------
         /// <summary>
-        /// Walks the UI Automation tree of the target and reports the control 
+        /// Walks the UI Automation tree of the target and reports the control
         /// type of each element it finds in the control view to the client.
         /// </summary>
         /// <param name="targetTreeViewElement">
@@ -326,12 +326,12 @@ namespace SDKSample
         /// The TreeView index for this iteration.
         /// </param>
         /// <remarks>
-        /// This is a recursive function that maps out the structure of the 
-        /// subtree of the target beginning at the AutomationElement passed in 
+        /// This is a recursive function that maps out the structure of the
+        /// subtree of the target beginning at the AutomationElement passed in
         /// as the rootElement on the first call. This could be, for example,
         /// an application window.
-        /// CAUTION: Do not pass in AutomationElement.RootElement. Attempting 
-        /// to map out the entire subtree of the desktop could take a very 
+        /// CAUTION: Do not pass in AutomationElement.RootElement. Attempting
+        /// to map out the entire subtree of the desktop could take a very
         /// long time and even lead to a stack overflow.
         /// </remarks>
         ///--------------------------------------------------------------------
@@ -420,7 +420,7 @@ namespace SDKSample
                 // elementNode - Current element.
                 // treeviewIndex - Index of parent TreeView.
                 FindTreeViewDescendants(elementNode, treeviewIndex);
-                elementNode = 
+                elementNode =
                     TreeWalker.ControlViewWalker.GetNextSibling(elementNode);
             }
         }
@@ -446,14 +446,14 @@ namespace SDKSample
         //<Snippet1102>
         ///--------------------------------------------------------------------
         /// <summary>
-        /// Handles the Invoke click event on the client control. 
+        /// Handles the Invoke click event on the client control.
         /// The client click handler calls Invoke() on the equivalent target control.
         /// </summary>
         /// <param name="sender">The object that raised the event.</param>
         /// <param name="e">Event arguments.</param>
         /// <remarks>
-        /// The Tag property of the FrameworkElement, the client button in this 
-        /// case, is used to store the InvokePattern object previously obtained 
+        /// The Tag property of the FrameworkElement, the client button in this
+        /// case, is used to store the InvokePattern object previously obtained
         /// from the associated target control.
         /// </remarks>
         ///--------------------------------------------------------------------
@@ -484,7 +484,7 @@ namespace SDKSample
             ExpandCollapseState currentState = ec.Current.ExpandCollapseState;
             try
             {
-                if ((currentState == ExpandCollapseState.Collapsed) || 
+                if ((currentState == ExpandCollapseState.Collapsed) ||
                     (currentState == ExpandCollapseState.PartiallyExpanded))
                 {
                     ec.Expand();
@@ -542,7 +542,7 @@ namespace SDKSample
             [STAThread()]
             static void Main()
             {
-                // Create an instance of the sample class 
+                // Create an instance of the sample class
                 // and call its Run() method to start it.
                 InvokePatternApp app = new InvokePatternApp();
 

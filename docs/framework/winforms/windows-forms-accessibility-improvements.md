@@ -14,10 +14,9 @@ Windows Forms is continuing to improve how it works with accessibility technolog
 - Changes in the Accessible hierarchy (improving navigation through the UI Automation tree).
 - Changes in keyboard navigation.
 
-- [x] The quirks which were used in .NET Framework 4.7.1 - 4.8 to opt-in/out new accessibility features have been removed, so previously quirked behavior is now enabled by default.
 
-### Recommended Action
-__The changes which could be opted in or out in .NET Framework 4.7.1 - 4.8 are now enabled by default and cannot be opted out__
+> [!IMPORTANT]
+>  Accessibility changes made in .NET Framework 4.7.1 through .NET Framework 4.8 are included in .NET Core 3.0 and are enabled by default. The .NET Framework supported compatibility switches that allowed applications to opt out of the new accessibility behavior. .NET Core, on the other hand, does not support these settings and does not allow applications to opt out of accessibility behavior.
   
 Starting with .NET Core 3.0, Windows Forms applications benefit from all the new accessibility features (introduced in .NET Framework 4.7.1 - 4.8) without additional configuration.
 

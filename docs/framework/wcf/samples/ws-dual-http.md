@@ -90,7 +90,7 @@ When you run the sample, you see the messages returned to the client on the call
           address=
          "http://service_machine_name/servicemodelsamples/service.svc"
         />
-    </client>      
+    </client>
     <wsDualHttpBinding>
         <binding name="DuplexBinding" clientBaseAddress=
             "http://client_machine_name:8000/myClient/">

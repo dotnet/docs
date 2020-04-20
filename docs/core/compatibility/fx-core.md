@@ -11,7 +11,7 @@ If you're migrating an app from .NET Framework to .NET Core, the breaking change
 > [!NOTE]
 > This article is not a complete list of breaking changes between .NET Framework and .NET Core. The most important breaking changes are added here as we become aware of them.
 
-## CoreFx
+## Core .NET libraries
 
 - [Change in default value of UseShellExecute](#change-in-default-value-of-useshellexecute)
 - [UnauthorizedAccessException thrown by FileSystemInfo.Attributes](#unauthorizedaccessexception-thrown-by-filesysteminfoattributes)

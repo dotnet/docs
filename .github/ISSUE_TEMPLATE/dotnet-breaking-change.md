@@ -43,7 +43,7 @@ Also, remove this comment before submitting the issue.
 - ASP.NET Core
 - C#
 - Core
-- CoreFx
+- Core .NET libraries
 - Data
 - Debugger
 - Deployment for .NET Core
